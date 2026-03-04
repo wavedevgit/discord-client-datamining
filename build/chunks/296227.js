@@ -1,6 +1,6 @@
 /** chunk id: 296227, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -12,17 +12,17 @@ var i = n(627968),
     d = n(985018),
     u = n(418843);
 
-function m(e) {
+function g(e) {
     let {
         widget: t,
         userId: n,
         className: a,
-        menuItems: m
-    } = e, g = l.useRef(null), x = () => {
+        menuItems: g
+    } = e, m = l.useRef(null), x = () => {
         (0, c.GJ)(n, t)
     };
     return (0, i.jsx)(r.YNO, {
-        targetElementRef: g,
+        targetElementRef: m,
         align: "top",
         position: "right",
         disablePointerEvents: !1,
@@ -39,7 +39,7 @@ function m(e) {
                 onSelect: () => {},
                 "aria-label": d.intl.string(d.t.xpSHSk),
                 children: (0, i.jsxs)(r.rXV, {
-                    children: [m, (0, i.jsx)(r.Drp, {
+                    children: [g, (0, i.jsx)(r.Drp, {
                         id: "flag-widget",
                         label: d.intl.string(d.t.D4GvHE),
                         action: x,
@@ -55,7 +55,7 @@ function m(e) {
         },
         children: e => (0, i.jsx)(r.DUT, {
             ...e,
-            innerRef: g,
+            innerRef: m,
             "aria-label": d.intl.string(d.t.xpSHSk),
             className: s()(u.x, a),
             children: (0, i.jsx)(r.jNK, {

@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(735321),
     d = n(384377),
     u = n(605694),
-    m = n(518477),
-    g = n(49999),
+    g = n(518477),
+    m = n(49999),
     x = n(985018);
 
 function f(e) {
@@ -28,7 +28,7 @@ function f(e) {
         null != h && ((0, c.Y5)(h), p({
             action: "WIDGET_ADDED",
             ...h.getProfileEditAnalyticsOptions()
-        }), (0, d.XA)(m.jM.WIDGET_ADDED))
+        }), (0, d.XA)(g.jM.WIDGET_ADDED))
     }, [h, p]);
     return (0, i.jsx)(u.A, {
         user: t,
@@ -52,7 +52,7 @@ function f(e) {
                         icon: s.PGe,
                         "aria-label": x.intl.string(x.t.WAI6xu),
                         onClick: () => {
-                            f(g.i.USER_DISMISS)
+                            f(m.i.USER_DISMISS)
                         }
                     })
                 }), (0, i.jsx)(a.m, {
@@ -66,7 +66,7 @@ function f(e) {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            f(g.i.TAKE_ACTION), _()
+                            f(m.i.TAKE_ACTION), _()
                         }
                     })
                 })]

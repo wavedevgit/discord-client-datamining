@@ -12,8 +12,8 @@ var i = n(627968),
     c = n(384904),
     d = n(395332),
     u = n(566605),
-    m = n(429913),
-    g = n(379848),
+    g = n(429913),
+    m = n(379848),
     x = n(840387),
     f = n(201718),
     p = n(961350),
@@ -26,8 +26,8 @@ var i = n(627968),
     E = n(605694),
     T = n(357541),
     b = n(236599),
-    y = n(192),
-    N = n(128988),
+    N = n(192),
+    y = n(128988),
     S = n(795755),
     C = n(53977),
     k = n(982599),
@@ -72,7 +72,7 @@ function G() {
     } = (0, u.A)({
         location: "ApplicationWidgetUpsell"
     });
-    return e ? null : (0, i.jsx)(g.Ay, {
+    return e ? null : (0, i.jsx)(m.Ay, {
         contentTypes: t.map(e => e.dismissibleContent),
         bypassAutoDismiss: !0,
         children: e => {
@@ -99,12 +99,12 @@ function M(e) {
         return l.useEffect(() => {
             null == e && null == t && n && (0, c.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), g = (0, d.JY)({
+    })(), m = (0, d.JY)({
         location: "UserProfileModalV2Widgets"
     }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, E), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
-        (0, m.A)(n);
+        (0, g.A)(n);
         let {
             data: i,
             refetch: a
@@ -113,11 +113,11 @@ function M(e) {
             s.current && (s.current = !1, a())
         }, [a])
     })(t.id, T);
-    let N = () => (0, i.jsxs)(i.Fragment, {
+    let y = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: L.cG
-            }), u && (0, i.jsx)(D, {}), g && (0, i.jsx)(G, {})]
+            }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
@@ -127,11 +127,11 @@ function M(e) {
         }, e.getUniqueKey()))]
     });
     if (j)
-        if (g) return (0, i.jsx)(C.A, {});
+        if (m) return (0, i.jsx)(C.A, {});
         else return (0, i.jsx)(w.A, {});
-    return o ? (0, i.jsx)(y.D, {
-        children: N()
-    }) : N()
+    return o ? (0, i.jsx)(N.D, {
+        children: y()
+    }) : y()
 }
 
 function U(e) {
@@ -150,7 +150,7 @@ function U(e) {
             [L.az]: r
         }),
         fade: !0,
-        children: [(0, i.jsx)(N.A, {
+        children: [(0, i.jsx)(y.A, {
             scrollerRef: a
         }), (0, i.jsx)(M, {
             user: t,

@@ -42,11 +42,11 @@ let j = {
             handleTransition: s,
             category: r,
             heroBlock: k,
-            tab: T,
-            onVisibilityChange: O
-        } = e, N = (0, i.K)(e => {
-            O?.(e)
-        }, .1, null != O), y = l.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = l.useMemo(() => null != k ? k : null == r ? j : {
+            tab: O,
+            onVisibilityChange: T
+        } = e, y = (0, i.K)(e => {
+            T?.(e)
+        }, .1, null != T), N = l.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = l.useMemo(() => null != k ? k : null == r ? j : {
             rankedSkuIds: r.heroRanking ?? [],
             name: r.name,
             unpublishedAt: r.unpublishedAt,
@@ -66,8 +66,8 @@ let j = {
             heroBannerStatic: U,
             heroBannerAnimated: G,
             heroBannerRive: F
-        } = (0, x.Kk)(P), V = D?.responsive ?? !1, K = D?.backgroundStyle, W = null != F, z = T === S.G2.ORBS, Y = null != r && r.isOrbsExclusive, $ = z ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
-            z ? ((0, g.Y)({
+        } = (0, x.Kk)(P), V = D?.responsive ?? !1, K = D?.backgroundStyle, z = null != F, W = O === S.G2.ORBS, Y = null != r && r.isOrbsExclusive, $ = W ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
+            W ? ((0, g.Y)({
                 pageType: v.liQ.SHOP_ORBS_TAB,
                 sectionType: v.JJy.ORBS_SHOP_HERO_BLOCK,
                 ctaObject: v.ZSU.CTA_TO_QUEST_HOME
@@ -81,22 +81,22 @@ let j = {
             }), h.default.track(v.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: M?.sessionId,
                 sku_id: P.categorySkuId,
-                page_type: T,
+                page_type: O,
                 page_section: M?.pageSection,
                 page_category: M?.pageCategory,
                 cta_name: "shop latest category hero button"
             }))
         };
         return null != B && (t || P !== j) ? (0, n.jsxs)("div", {
-            ref: N,
+            ref: y,
             className: L.os,
-            children: [W ? (0, E.VA)({
+            children: [z ? (0, E.VA)({
                 isCustomCursorEnabled: R,
                 className: L.Xt,
-                riveEventTargetRef: y
+                riveEventTargetRef: N
             }) : null, (0, n.jsx)("div", {
                 className: a()(L.vK, {
-                    [L.cN]: W,
+                    [L.cN]: z,
                     [L.no]: V
                 }),
                 style: null != K ? {
@@ -107,11 +107,11 @@ let j = {
                     bannerAnimated: G,
                     bannerRive: F,
                     isResponsive: V,
-                    eventTargetRef: y
+                    eventTargetRef: N
                 })
             }), (0, n.jsxs)("div", {
                 className: L.xX,
-                children: [W ? (0, n.jsx)("div", {
+                children: [z ? (0, n.jsx)("div", {
                     className: L.fy,
                     children: !t && (0, n.jsx)(u.Button, {
                         variant: "overlay-primary",
@@ -144,7 +144,7 @@ let j = {
                                 children: P.title
                             }), null != P.summary && "" !== P.summary && (0, n.jsx)(u.Text, {
                                 variant: "text-md/normal",
-                                className: z ? L.h4 : L.Tm,
+                                className: W ? L.h4 : L.Tm,
                                 style: null != P.bannerTextColor ? {
                                     color: P.bannerTextColor
                                 } : void 0,
@@ -161,9 +161,9 @@ let j = {
                     })]
                 }), (0, n.jsx)(A.A, {
                     heroBlockRecord: P,
-                    tab: T,
+                    tab: O,
                     isBlockLoading: t,
-                    layout: T === S.G2.HOME ? "hscroll" : "feed"
+                    layout: O === S.G2.HOME ? "hscroll" : "feed"
                 })]
             })]
         }) : null

@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(915089),
     d = n(961350),
     u = n(183555),
-    m = n(735321),
-    g = n(94343),
+    g = n(735321),
+    m = n(94343),
     x = n(789290),
     f = n(451395),
     p = n(716804),
@@ -30,7 +30,7 @@ function v(e) {
         children: r
     } = e, o = l.useRef(null), d = l.useRef(null), {
         registerManageWidgetButtonRef: u,
-        manageFocusOnReorder: g
+        manageFocusOnReorder: m
     } = (0, A.r)();
     l.useLayoutEffect(() => {
         let e = u(n.type);
@@ -50,8 +50,8 @@ function v(e) {
             itemPreviewProps: {
                 widget: n
             },
-            onReorder: m.R_,
-            onEnd: () => g(n.type)
+            onReorder: g.R_,
+            onEnd: () => m(n.type)
         }),
         v = null != _,
         E = v && t < _,
@@ -81,7 +81,7 @@ function E(e) {
         widget: n,
         children: l,
         disableInteraction: a,
-        className: m,
+        className: g,
         index: f,
         trailingContent: h,
         headerTitle: A,
@@ -89,19 +89,19 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, y = (0, c.GV)(), N = (0, o.bG)([d.default], () => d.default.getId() === t), S = (0, p.g)(), {
+    } = e, N = (0, c.GV)(), y = (0, o.bG)([d.default], () => d.default.getId() === t), S = (0, p.g)(), {
         trackUserProfileAction: C
     } = (0, u.NJ)(), k = (0, x.A)({
         widget: n,
         onAction: C
     }), R = S === n.type;
-    (0, g.A)(k, R);
-    let w = N && null != f && !a,
+    (0, m.A)(k, R);
+    let w = y && null != f && !a,
         O = () => (0, i.jsxs)("div", {
-            className: s()(j.kL, m),
+            className: s()(j.kL, g),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
-                headingId: y,
+                headingId: N,
                 title: A,
                 subtitle: I,
                 actionButtons: E,
@@ -114,7 +114,7 @@ function E(e) {
         });
     return (0, i.jsx)("section", {
         ref: k,
-        "aria-labelledby": y,
+        "aria-labelledby": N,
         children: w ? (0, i.jsx)(v, {
             index: f ?? 0,
             widget: n,

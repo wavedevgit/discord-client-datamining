@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(397927),
     d = n(775602),
     u = n(203982),
-    m = n(183555),
-    g = n(289173),
+    g = n(183555),
+    m = n(289173),
     x = n(958805),
     f = n(61881),
     p = n(384377),
@@ -26,7 +26,7 @@ function j(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, m.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), y = (0, o.bG)([f.A], () => f.A.canSaveChanges()), N = (0, o.bG)([f.A], () => f.A.isSubmitting), S = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
+    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), N = (0, o.bG)([f.A], () => f.A.canSaveChanges()), y = (0, o.bG)([f.A], () => f.A.isSubmitting), S = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
         from: {
             opacity: 0,
             y: 80 * !S
@@ -65,7 +65,7 @@ function j(e) {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
                     };
-                    (0, g.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
+                    (0, m.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
                 }
                 for (let e of T) n({
                     widgetEdited: e.type,
@@ -96,14 +96,14 @@ function j(e) {
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
                     onClick: R,
-                    disabled: !b || N
+                    disabled: !b || y
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
                     onClick: k,
-                    loading: N,
-                    disabled: !y || !b || N
+                    loading: y,
+                    disabled: !N || !b || y
                 })]
             })]
         })

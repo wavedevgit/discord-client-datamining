@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(793574),
     d = n(688810),
     u = n(183555),
-    m = n(808247),
-    g = n(146423),
+    g = n(808247),
+    m = n(146423),
     x = n(460442),
     f = n(699976),
     p = n(652215),
@@ -30,7 +30,7 @@ function j(e) {
         setIsHoveringOrFocusing: o,
         onClick: c,
         wishlistId: d,
-        children: m
+        children: g
     } = e, {
         trackUserProfileWishlistAction: x
     } = (0, u.NJ)(), f = l.useCallback(() => {
@@ -41,7 +41,7 @@ function j(e) {
             productLines: new Set([t.productLine])
         }), c()
     }, [c, t.id, t.productLine, x, d]);
-    return (0, i.jsx)(g.A, {
+    return (0, i.jsx)(m.A, {
         sku: t,
         user: n,
         spec: I,
@@ -49,7 +49,7 @@ function j(e) {
         skuPreviewStyle: s()(A.ev, r),
         onHoverOrFocusChange: o,
         onClick: f,
-        children: m
+        children: g
     })
 }
 
@@ -61,12 +61,12 @@ function v(e) {
         handleOpenUserProfileModal: c,
         skuPreviewStyle: d,
         wishlistOwner: u,
-        ...g
+        ...m
     } = e, [f, p] = l.useState(!1), I = l.useCallback(async () => {
         if (!f) {
             p(!0);
             try {
-                await m.A.addSkuToWishlist(t.id, n), c?.({
+                await g.A.addSkuToWishlist(t.id, n), c?.({
                     tabSection: h.RP.WISHLIST
                 })
             } catch (e) {
@@ -89,7 +89,7 @@ function v(e) {
                 skuPreviewStyle: v,
                 onClick: I,
                 isHoveringOrFocusing: a,
-                ...g,
+                ...m,
                 children: (0, i.jsx)(x.oU, {
                     isHoveringOrFocusing: a,
                     loading: f

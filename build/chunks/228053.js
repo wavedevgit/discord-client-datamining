@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(435371),
     d = n(397927),
     u = n(688810),
-    m = n(429913),
-    g = n(576030),
+    g = n(429913),
+    m = n(576030),
     x = n(713517),
     f = n(492518),
     p = n(808247),
@@ -25,23 +25,23 @@ var i = n(627968),
     E = n(188275),
     T = n(518477),
     b = n(985018),
-    y = n(30621);
+    N = n(30621);
 
-function N(e) {
+function y(e) {
     let {
         application: t,
         sku: n,
         handleOpenUserProfileModal: a,
         analyticsLocations: s
     } = e, o = l.useRef(null), {
-        analyticsLocations: m
+        analyticsLocations: g
     } = (0, u.Ay)(s ?? []), {
         isHoveringOrFocusing: h
     } = (0, x.A)(o), [A, I] = l.useState(!1), j = l.useCallback(async e => {
         if (e.stopPropagation(), !A) {
             I(!0);
             try {
-                await p.A.addSkuToWishlist(n.id, m), a?.({
+                await p.A.addSkuToWishlist(n.id, g), a?.({
                     tabSection: T.RP.WISHLIST
                 })
             } catch (e) {
@@ -50,30 +50,30 @@ function N(e) {
                 I(!1)
             }
         }
-    }, [n.id, m, a, A]);
+    }, [n.id, g, a, A]);
     return (0, i.jsx)(c.un, {
         title: b.intl.string(b.t["8DkMEQ"]),
         body: n.name,
-        asset: (0, i.jsx)(g.mW, {
+        asset: (0, i.jsx)(m.mW, {
             application: t
         }),
         assetSize: _.Q8,
         children: (0, i.jsxs)(r.sqX, {
-            className: y.Nr,
+            className: N.Nr,
             ref: o,
             "aria-label": n.name,
             onClick: j,
             children: [(0, i.jsx)(v.e, {
                 shape: "custom",
-                containerClassName: y.Nr,
-                foregroundImageClassName: y.wP,
-                backgroundImageClassName: y.GC,
+                containerClassName: N.Nr,
+                foregroundImageClassName: N.wP,
+                backgroundImageClassName: N.GC,
                 sku: n
             }, n.id), (h || A) && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: y.p0
+                    className: N.p0
                 }), (0, i.jsx)("div", {
-                    className: y.R$,
+                    className: N.R$,
                     children: A ? (0, i.jsx)(f.k, {}) : (0, i.jsx)(r.pa$, {
                         size: "lg",
                         color: d.LU0.unsafe_rawColors.WHITE_500
@@ -92,7 +92,7 @@ function S(e) {
         numWishlistItemsToRecommend: r,
         maxWishlistItemsToShow: c = r,
         className: d
-    } = e, u = (0, m.h)(E.XR), g = (0, o.bG)([I.default], () => I.default.getCurrentUser()), x = (0, o.bG)([I.default], () => I.default.getUser(t?.userId)), p = l.useMemo(() => null == t ? null != g ? [g.id] : void 0 : [t.userId], [t, g]), _ = (0, h.G)("add_to_wishlist_grid"), v = (0, j.A)({
+    } = e, u = (0, g.h)(E.XR), m = (0, o.bG)([I.default], () => I.default.getCurrentUser()), x = (0, o.bG)([I.default], () => I.default.getUser(t?.userId)), p = l.useMemo(() => null == t ? null != m ? [m.id] : void 0 : [t.userId], [t, m]), _ = (0, h.G)("add_to_wishlist_grid"), v = (0, j.A)({
         numWishlistItems: r,
         location: "SocialLayerAddToWishlistGrid",
         applicationId: E.XR,
@@ -100,17 +100,17 @@ function S(e) {
         includeWishlists: !1
     }), T = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), b = v.recommendations.filter(e => !T.has(e.skuId)).slice(0, c);
     return "success" !== v.state ? (0, i.jsx)("div", {
-        className: y.g4,
+        className: N.g4,
         children: (0, i.jsx)(f.k, {})
     }) : 0 === b.length ? null : (0, i.jsx)("ul", {
-        className: s()(y.Vg, d),
+        className: s()(N.Vg, d),
         children: b.map(e => _ ? (0, i.jsx)(A.J, {
             sku: e.sku,
             wishlistId: t?.id,
             wishlistOwner: x,
             handleOpenUserProfileModal: n,
             analyticsLocations: a
-        }, e.skuId) : (0, i.jsx)(N, {
+        }, e.skuId) : (0, i.jsx)(y, {
             application: u,
             sku: e.sku,
             handleOpenUserProfileModal: n,

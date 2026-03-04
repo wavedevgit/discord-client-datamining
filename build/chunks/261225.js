@@ -109,18 +109,18 @@ let u = 6,
             perPage: t,
             paginationPosition: n = "bottom",
             children: i
-        } = e, d = Math.max(1, Math.min(u, Math.floor(l))), [s, h] = o.useState(0), [m, _] = o.useState(t), [b, S] = o.useState(o.Children.count(i)), T = o.Children.count(i), C = null == t || t < 1 ? 0 : Math.ceil(T / t), A = null != t && t > 0, g = A && C > 1;
-        (m !== t || b !== T) && (_(t), S(T), h(0));
-        let k = o.useMemo(() => A ? o.Children.toArray(i).slice(t * s, t * (s + 1)) : i, [s, t, i, A]);
+        } = e, d = Math.max(1, Math.min(u, Math.floor(l))), [s, h] = o.useState(0), [m, _] = o.useState(t), [S, b] = o.useState(o.Children.count(i)), T = o.Children.count(i), C = null == t || t < 1 ? 0 : Math.ceil(T / t), A = null != t && t > 0, E = A && C > 1;
+        (m !== t || S !== T) && (_(t), b(T), h(0));
+        let g = o.useMemo(() => A ? o.Children.toArray(i).slice(t * s, t * (s + 1)) : i, [s, t, i, A]);
         return (0, r.jsxs)(r.Fragment, {
-            children: [g && "top" === n && (0, r.jsx)(p, {
+            children: [E && "top" === n && (0, r.jsx)(p, {
                 page: s,
                 pages: C,
                 setPage: h
             }), (0, r.jsx)("div", {
                 className: a()(c.grid, c[`columns${d}`]),
-                children: k
-            }), g && "bottom" === n && (0, r.jsx)(p, {
+                children: g
+            }), E && "bottom" === n && (0, r.jsx)(p, {
                 page: s,
                 pages: C,
                 setPage: h

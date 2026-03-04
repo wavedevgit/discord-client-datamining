@@ -36,15 +36,15 @@ let E = e => {
         j = l.useMemo(() => !C && 0 !== b.rankedSkuIds.length && !(L.length > 0) && b.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, b.rankedSkuIds, L.length]),
         k = C || j,
         {
-            readyToClaim: T
+            readyToClaim: O
         } = (0, f.K)(v, b.rewardSkuId),
-        O = null == I && null != b.rewardSkuId && null != v;
+        T = null == I && null != b.rewardSkuId && null != v;
     return (0, n.jsx)(a.A, {
         gap: "xl",
         children: k ? (0, n.jsx)(n.Fragment, {
             children: [void 0, void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(h.A, {}, t))
         }) : (0, n.jsxs)(n.Fragment, {
-            children: [O && T && (0, n.jsx)(i.R9, {
+            children: [T && O && (0, n.jsx)(i.R9, {
                 newValue: {
                     tilePosition: 0,
                     pageSection: "top 4",

@@ -14,15 +14,15 @@ function d(e) {
         includePricing: t = !1,
         includeUnpublished: d = !1,
         ignoreCache: s = !1
-    } = e, [c, u, h] = (0, o.yK)([i.A], () => [i.A.getProduct(l), i.A.isFetching(l), i.A.getApiError(l)]), p = (0, n.A)(t), m = (0, n.A)(d), _ = (0, n.A)(s), b = !!l && !u && h?.status !== 404 && h?.status !== 429, S = null == c || t !== p || d !== m || s !== _;
+    } = e, [c, u, h] = (0, o.yK)([i.A], () => [i.A.getProduct(l), i.A.isFetching(l), i.A.getApiError(l)]), p = (0, n.A)(t), m = (0, n.A)(d), _ = (0, n.A)(s), S = !!l && !u && h?.status !== 404 && h?.status !== 429, b = null == c || t !== p || d !== m || s !== _;
     return (0, r.useEffect)(() => {
-        b && S && (0, a.M0)({
+        S && b && (0, a.M0)({
             productId: l,
             includePricing: t,
             includeUnpublished: d,
             ignoreCache: s
         })
-    }, [b, S, l, t, d, s]), {
+    }, [S, b, l, t, d, s]), {
         product: c,
         isFetching: u,
         apiError: h

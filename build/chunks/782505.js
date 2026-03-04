@@ -2,7 +2,7 @@
 n.d(t, {
     IA: () => v,
     jB: () => E,
-    qv: () => y,
+    qv: () => N,
     zf: () => T
 });
 var i = n(627968),
@@ -14,8 +14,8 @@ var i = n(627968),
     c = n(573648),
     d = n(780964),
     u = n(840065),
-    m = n(562153),
-    g = n(993401),
+    g = n(562153),
+    m = n(993401),
     x = n(652215),
     f = n(985018),
     p = n(308497);
@@ -73,7 +73,7 @@ function T(e) {
         guildId: n,
         channelId: o,
         onClose: c
-    } = e, d = m.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
+    } = e, d = g.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
         name: d
     }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(d)), h = l.useCallback(() => {
         r.A.openPrivateChannel({
@@ -85,7 +85,7 @@ function T(e) {
         bodyText: x,
         children: (0, i.jsx)("div", {
             className: p.v0,
-            children: (0, i.jsx)(g.FD, {
+            children: (0, i.jsx)(m.FD, {
                 icon: s.oyn,
                 text: f.intl.string(f.t["g33r/P"]),
                 onClick: h
@@ -111,7 +111,7 @@ function b() {
     })
 }
 
-function y(e) {
+function N(e) {
     let {
         onClose: t
     } = e, n = l.useCallback(() => {
@@ -129,10 +129,10 @@ function y(e) {
         bodyText: f.intl.string(f.t.KpjsU9),
         children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
             className: p.v0,
-            children: [(0, i.jsx)(g.FD, {
+            children: [(0, i.jsx)(m.FD, {
                 text: f.intl.string(f.t["/Hl24U"]),
                 onClick: n
-            }), (0, i.jsx)(g.FD, {
+            }), (0, i.jsx)(m.FD, {
                 text: f.intl.string(f.t.GTCx0p),
                 onClick: a
             })]

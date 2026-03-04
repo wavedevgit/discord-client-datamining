@@ -29,7 +29,7 @@ let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = l.useRef(null), L = l.useRef(null), [j, k] = l.useState(), [T, O] = l.useState(!1);
+    } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = l.useRef(null), L = l.useRef(null), [j, k] = l.useState(), [O, T] = l.useState(!1);
     l.useEffect(() => {
         let e = L.current;
         if (null == e) return;
@@ -40,10 +40,10 @@ let I = e => {
             e.onload = null
         }
     }, []);
-    let N = r?.skuId ?? "",
+    let y = r?.skuId ?? "",
         {
-            handleCardVisibilityChange: y
-        } = (0, f.Z)(N, "home", "marketing wide banner"),
+            handleCardVisibilityChange: N
+        } = (0, f.Z)(y, "home", "marketing wide banner"),
         R = (0, h.uM)(),
         {
             bannerURL: B
@@ -53,7 +53,7 @@ let I = e => {
         D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || P),
         w = null != t.logoURL && "" !== t.logoURL,
         H = l.useCallback(() => {
-            if (O(!0), t.isDismissible) {
+            if (T(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
                     dismissAction: b.i.USER_DISMISS
@@ -63,7 +63,7 @@ let I = e => {
         U = l.useCallback(e => {
             g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
-                sku_id: N,
+                sku_id: y,
                 page_type: s,
                 page_section: R?.pageSection,
                 page_category: R?.pageCategory,
@@ -71,7 +71,7 @@ let I = e => {
                 tile_position: String(R?.tilePosition),
                 cta_name: e
             })
-        }, [R, N, s]),
+        }, [R, y, s]),
         G = l.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
             if (U(e), null != t.ctaRoute && "" !== t.ctaRoute) {
@@ -89,7 +89,7 @@ let I = e => {
                 } else(0, u.pX)(e)
             }
         }, [t.ctaRoute, U]);
-    if (null == B || T) return null;
+    if (null == B || O) return null;
     let F = a()(v.nM, v.Tq, v.TS, v.YB, {
             [v._1]: M,
             [v.vb]: P
@@ -165,7 +165,7 @@ let I = e => {
         theme: M ? void 0 : A.NJ.DARK,
         children: e => (0, n.jsx)(o.L, {
             innerRef: I,
-            onChange: y,
+            onChange: N,
             threshold: 0,
             children: P ? (0, n.jsx)(c.DUT, {
                 innerRef: I,

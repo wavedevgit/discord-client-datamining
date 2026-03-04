@@ -11,8 +11,8 @@ var i = n(627968),
     c = n(192308),
     d = n(990078),
     u = n(397927),
-    m = n(793574),
-    g = n(688810),
+    g = n(793574),
+    m = n(688810),
     x = n(979286),
     f = n(871123),
     p = n(690946),
@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(183555),
     T = n(622543),
     b = n(600761),
-    y = n(535089),
-    N = n(128988),
+    N = n(535089),
+    y = n(128988),
     S = n(515054),
     C = n(203647),
     k = n(383430),
@@ -135,8 +135,8 @@ function U(e) {
         wishlist: a,
         socialLayerStorefrontApplicationId: s,
         isEligibleForSocialLayerMarketingInWishlist: c,
-        handleOpenShop: m,
-        handleOpenGameShop: g
+        handleOpenShop: g,
+        handleOpenGameShop: m
     } = e, x = a.id, f = (0, o.bG)([T.A], () => T.A.getWishlistSettings(n.id, x)), {
         trackUserProfileWishlistAction: p
     } = (0, E.NJ)(), h = !1 === n.nsfwAllowed, [_, A] = l.useState(!0);
@@ -155,7 +155,7 @@ function U(e) {
                 productLines: i
             })
         }, [p]),
-        v = (0, y.A)({
+        v = (0, N.A)({
             wishlistId: x,
             onAction: j,
             productLines: a?.getProductLines() ?? null
@@ -212,14 +212,14 @@ function U(e) {
         }), t ? (0, i.jsx)(G, {
             isSocialLayerStorefrontEnabled: c,
             isWishlistPublic: _,
-            handleOpenShop: m,
-            handleOpenGameShop: g,
+            handleOpenShop: g,
+            handleOpenGameShop: m,
             handleToggleWishlistVisibility: b,
             socialLayerStorefrontApplicationId: s
         }) : (0, i.jsx)(D, {
             isSocialLayerStorefrontEnabled: c,
-            handleOpenShop: m,
-            handleOpenGameShop: g
+            handleOpenShop: g,
+            handleOpenGameShop: m
         })]
     })
 }
@@ -240,9 +240,9 @@ function F(e) {
         currentUser: v.default.getCurrentUser()
     })), {
         analyticsLocations: d
-    } = (0, g.Ay)(), u = r?.id === t.id, I = O.XR, {
+    } = (0, m.Ay)(), u = r?.id === t.id, I = O.XR, {
         wishlist: E,
-        wasFetched: y,
+        wasFetched: N,
         error: k
     } = (0, j.fw)({
         wishlistId: a,
@@ -257,7 +257,7 @@ function F(e) {
     }), L = u && R && w, D = l.useCallback(() => {
         (0, c.closeAllModals)(), (0, x.Cz)({
             analyticsLocations: d,
-            analyticsSource: m.A.USER_PROFILE_WISHLIST
+            analyticsSource: g.A.USER_PROFILE_WISHLIST
         })
     }, [d]), G = l.useCallback(() => {
         (0, _.X)({
@@ -284,7 +284,7 @@ function F(e) {
             handleOpenGameShop: F,
             handleOpenGameShopMouseDown: G
         }) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(N.A, {
+            children: [(0, i.jsx)(y.A, {
                 scrollerRef: n
             }), (0, i.jsx)(U, {
                 isOwner: u,
@@ -302,7 +302,7 @@ function F(e) {
         }), L && (0, i.jsx)(A.A, {
             user: t,
             wishlist: E,
-            hasFetchedWishlist: y,
+            hasFetchedWishlist: N,
             analyticsLocations: d,
             className: W ? P._E : P.HZ
         })]

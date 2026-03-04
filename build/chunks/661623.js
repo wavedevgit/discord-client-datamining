@@ -36,9 +36,9 @@ let L = l.memo(function(e) {
         isHoveringOrFocusing: j
     } = (0, _.A)(L), {
         readyToClaim: k,
-        collectibleProductSkuIds: T,
-        collectedSkuIds: O
-    } = (0, E.K)(t, s), N = (0, o.bG)([p.A], () => p.A.isClaiming === s);
+        collectibleProductSkuIds: O,
+        collectedSkuIds: T
+    } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: r,
         threshold: 0,
@@ -78,7 +78,7 @@ let L = l.memo(function(e) {
                                 children: C.intl.string(C.t["0mDmg/"])
                             }), (0, n.jsx)(d.m, {
                                 text: k ? C.intl.string(C.t.cKH3tk) : C.intl.formatToPlainString(C.t["8aMDPc"], {
-                                    totalCount: T.length
+                                    totalCount: O.length
                                 }),
                                 align: "right",
                                 caretConfig: {
@@ -100,8 +100,8 @@ let L = l.memo(function(e) {
                                 className: A.L$,
                                 children: [(0, n.jsx)(g.Ay, {
                                     variant: g.qP.BLUE,
-                                    progress: O.length,
-                                    maximum: T.length
+                                    progress: T.length,
+                                    maximum: O.length
                                 }), (0, n.jsxs)("div", {
                                     className: a()(A.__, {
                                         [A.gF]: k
@@ -113,8 +113,8 @@ let L = l.memo(function(e) {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
                                         children: C.intl.formatToPlainString(C.t["5TwASM"], {
-                                            collectedCount: O.length,
-                                            totalCount: T.length
+                                            collectedCount: T.length,
+                                            totalCount: O.length
                                         })
                                     })]
                                 })]
@@ -163,7 +163,7 @@ let L = l.memo(function(e) {
                                 text: C.intl.string(C.t.VnVTNc),
                                 fullWidth: !0,
                                 disabled: !k,
-                                loading: N
+                                loading: y
                             })
                         })
                     })]

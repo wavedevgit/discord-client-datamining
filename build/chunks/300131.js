@@ -1,6 +1,6 @@
 /** chunk id: 300131, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -11,15 +11,15 @@ var i = n(627968),
     c = n(993401),
     d = n(652215),
     u = n(985018);
-let m = o.A.getArticleURL(d.MVz.CUSTOM_PROFILES_WISHLIST);
+let g = o.A.getArticleURL(d.MVz.CUSTOM_PROFILES_WISHLIST);
 
-function g(e) {
+function m(e) {
     let {
         isOwner: t,
         isWishlistPublic: n,
         onToggleVisibility: o
     } = e, d = l.useRef(null), {
-        analyticsLocations: g
+        analyticsLocations: m
     } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), x = l.useMemo(() => t ? (0, i.jsxs)(a.rXV, {
         children: [(0, i.jsx)(a.fPC, {
             id: "wishlist-privacy-setting",
@@ -35,11 +35,11 @@ function g(e) {
                 type: "icon",
                 icon: a.I9m
             },
-            action: () => window.open(m)
+            action: () => window.open(g)
         })]
     }) : null, [t, n, o]);
     return null == x ? null : (0, i.jsx)(r.f5, {
-        value: g,
+        value: m,
         children: (0, i.jsx)(a.YNO, {
             targetElementRef: d,
             renderPopout: e => {

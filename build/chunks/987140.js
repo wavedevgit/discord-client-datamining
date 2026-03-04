@@ -18,21 +18,21 @@ function d(e) {
         games: d,
         onAddGame: u
     } = (0, r.S)(t), {
-        setExpanded: m
+        setExpanded: g
     } = (0, o.B)(), {
-        trackUserProfileEditAction: g
+        trackUserProfileEditAction: m
     } = (0, a.NJ)(), x = l.useCallback(e => {
-        u(e), m(!0), (0, s.ew)({
+        u(e), g(!0), (0, s.ew)({
             widgetType: t,
             game: {
                 applicationId: e
             }
-        }), g({
+        }), m({
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
         })
-    }, [u, t, g, m]);
+    }, [u, t, m, g]);
     return (0, i.jsx)(c.A, {
         games: d,
         onClick: x,

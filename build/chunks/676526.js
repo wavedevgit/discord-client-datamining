@@ -12,8 +12,8 @@ var l = n(503698),
     c = n(735321),
     d = n(451395),
     u = n(823016),
-    m = n(788593),
-    g = n(858808),
+    g = n(788593),
+    m = n(858808),
     x = n(685049),
     f = n(617086),
     p = n(985018),
@@ -70,15 +70,15 @@ function I(e) {
     } = e, {
         coverImageUrl: T,
         gameName: b,
-        isLoading: y
+        isLoading: N
     } = (0, r.A)(t.applicationId), {
-        registerDragHandleRef: N
+        registerDragHandleRef: y
     } = (0, u.r)(), S = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), k = C?.id === n, R = !I && k, {
         isDragging: w
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
     })), O = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m.A, {
+        children: [(0, i.jsx)(g.A, {
             imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
@@ -88,7 +88,7 @@ function I(e) {
             hideTooltip: w,
             coverRef: E
         }), R && (0, i.jsx)(d.jV, {
-            buttonRef: N(t.applicationId),
+            buttonRef: y(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
             userId: n,
@@ -96,7 +96,7 @@ function I(e) {
             guildId: c,
             channelId: p,
             className: _.Ez
-        }), R && (0, i.jsx)(g.A, {
+        }), R && (0, i.jsx)(m.A, {
             game: t,
             widgetType: l,
             className: _.vS,
@@ -104,7 +104,7 @@ function I(e) {
             onRemove: () => v?.(t.applicationId)
         })]
     });
-    return y ? (0, i.jsx)("div", {
+    return N ? (0, i.jsx)("div", {
         className: h.mD
     }) : R ? (0, i.jsx)(A, {
         widgetType: l,

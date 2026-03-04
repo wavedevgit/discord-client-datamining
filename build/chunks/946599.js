@@ -12,8 +12,8 @@ var r = n(990078),
     c = n(147925),
     d = n(183555),
     u = n(735321),
-    m = n(122338),
-    g = n(394245),
+    g = n(122338),
+    m = n(394245),
     x = n(985018),
     f = n(542467);
 
@@ -25,13 +25,13 @@ function p(e) {
         applicationId: r,
         className: o,
         disableInteraction: c = !1
-    } = e, p = t?.filter(e => null != (0, g.W3)(e)) ?? [], _ = p.length > 0, A = n && !c && (0, u.mS)(a) && p.length < 20, {
+    } = e, p = t?.filter(e => null != (0, m.W3)(e)) ?? [], _ = p.length > 0, A = n && !c && (0, u.mS)(a) && p.length < 20, {
         trackUserProfileAction: v
-    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [y, N] = (0, l.useState)(0), [S, C] = (0, l.useState)(!1), k = j(T, b, p, E, N);
+    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, y] = (0, l.useState)(0), [S, C] = (0, l.useState)(!1), k = j(T, b, p, E, y);
     if ((0, l.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
             window.removeEventListener("resize", k)
         }), [k, p?.join("")]), !_ && !A) return null;
-    let R = S ? p : p.slice(0, p.length - y);
+    let R = S ? p : p.slice(0, p.length - N);
     return (0, i.jsxs)("div", {
         className: s()(f.I4, o),
         children: [_ && (0, i.jsxs)(i.Fragment, {
@@ -48,10 +48,10 @@ function p(e) {
                     },
                     disableInteraction: c
                 }, e))
-            }), y > 0 && (0, i.jsx)(I, {
+            }), N > 0 && (0, i.jsx)(I, {
                 buttonRef: T,
                 isExpanded: S,
-                numberOfOverflowingTags: y,
+                numberOfOverflowingTags: N,
                 onExpandTags: () => {
                     C(!0), v({
                         action: "EXPAND_GAME_TAGS"
@@ -64,7 +64,7 @@ function p(e) {
                 },
                 disableInteraction: c
             })]
-        }), A && (0, i.jsx)(m.A, {
+        }), A && (0, i.jsx)(g.A, {
             tags: t,
             widgetType: a,
             applicationId: r,
@@ -81,8 +81,8 @@ let h = e => {
         disableInteraction: s,
         ref: c
     } = e, {
-        trackUserProfileEditAction: m
-    } = (0, d.NJ)(), p = (0, g.W3)(t);
+        trackUserProfileEditAction: g
+    } = (0, d.NJ)(), p = (0, m.W3)(t);
     if (null == p) return null;
     let {
         getText: h,
@@ -102,7 +102,7 @@ let h = e => {
             ariaHidden: !0,
             children: (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    (0, u.tg)(a, l, t), m({
+                    (0, u.tg)(a, l, t), g({
                         action: "TAG_REMOVED",
                         widgetEdited: a,
                         gameId: l

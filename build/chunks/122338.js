@@ -1,6 +1,6 @@
 /** chunk id: 122338, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -55,12 +55,12 @@ let u = l.memo(function(e) {
     })
 });
 
-function m(e) {
+function g(e) {
     let {
         tags: t,
         widgetType: n,
-        applicationId: m,
-        ref: g
+        applicationId: g,
+        ref: m
     } = e, x = (0, l.useRef)(null), {
         trackUserProfileEditAction: f
     } = (0, s.NJ)(), p = (0, l.useMemo)(() => null != t ? t : [], [t]), h = (0, l.useCallback)(function(e) {
@@ -73,28 +73,28 @@ function m(e) {
             }), i.add(e), f({
                 action: "TAG_ADDED",
                 widgetEdited: n,
-                gameId: m
+                gameId: g
             }))
         } else i.has(e) ? (i.delete(e), f({
             action: "TAG_REMOVED",
             widgetEdited: n,
-            gameId: m
+            gameId: g
         })) : (i.add(e), f({
             action: "TAG_ADDED",
             widgetEdited: n,
-            gameId: m
+            gameId: g
         }));
-        (0, r.s1)(n, m, Array.from(i))
-    }, [p, f, n, m]), _ = (0, l.useCallback)(e => {
+        (0, r.s1)(n, g, Array.from(i))
+    }, [p, f, n, g]), _ = (0, l.useCallback)(e => {
         let t = new Set(p);
         e.forEach(e => {
             t.delete(e)
         }), f({
             action: "TAG_REMOVED",
             widgetEdited: n,
-            gameId: m
-        }), (0, r.s1)(n, m, Array.from(t))
-    }, [p, f, n, m]);
+            gameId: g
+        }), (0, r.s1)(n, g, Array.from(t))
+    }, [p, f, n, g]);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: x,
         position: "right",
@@ -117,8 +117,8 @@ function m(e) {
             })
         },
         children: e => (0, i.jsx)("div", {
-            ref: e => (null != e && (x.current = e, g.current = e), () => {
-                x.current = null, g.current = null
+            ref: e => (null != e && (x.current = e, m.current = e), () => {
+                x.current = null, m.current = null
             }),
             children: (0, i.jsx)(a.DUT, {
                 ...e,

@@ -1,7 +1,7 @@
 /** chunk id: 565057, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => T
+    A: () => O
 });
 var n = s(627968),
     l = s(64700),
@@ -29,15 +29,15 @@ var n = s(627968),
     L = s(652215),
     j = s(985018),
     k = s(201073);
-let T = e => {
+let O = e => {
     let {
         isLoading: t,
         title: s,
         sortedSkuIds: r,
-        numVisibleItems: T,
-        prioritizeUserDiscounts: O,
-        tab: N,
-        buttonContainerClassName: y,
+        numVisibleItems: O,
+        prioritizeUserDiscounts: T,
+        tab: y,
+        buttonContainerClassName: N,
         orbsSupportedOnly: R
     } = e, B = (0, i.bG)([_.default], () => _.default.getCurrentUser()), M = p.Ay.canUseCollectibles(B), P = (0, v.yB)("FeedBlock"), {
         sortType: D,
@@ -49,10 +49,10 @@ let T = e => {
     } = (0, S.A)({
         sortedSkuIds: r,
         isPremiumUser: M,
-        prioritizeUserDiscounts: O,
+        prioritizeUserDiscounts: T,
         orbsSupportedOnly: R
-    }), V = (0, i.bG)([u.A], () => u.A.useReducedMotion), K = (0, i.bG)([g.A], () => g.A.isFocused()), W = !V && K, {
-        animationPhase: z,
+    }), V = (0, i.bG)([u.A], () => u.A.useReducedMotion), K = (0, i.bG)([g.A], () => g.A.isFocused()), z = !V && K, {
+        animationPhase: W,
         startAnimation: Y
     } = (0, A.s)(), $ = (0, f.uM)(), Z = $?.sessionId ?? "", q = l.useRef(null), X = l.useCallback(e => {
         Y({
@@ -92,7 +92,7 @@ let T = e => {
                     variant: "text-md/medium",
                     children: j.intl.string(j.t.uaX705)
                 }), (0, n.jsx)("div", {
-                    className: a()(y, k.pI),
+                    className: a()(N, k.pI),
                     children: (0, n.jsx)(c.l6P, {
                         label: j.intl.string(j.t.uaX705),
                         hideLabel: !0,
@@ -114,7 +114,7 @@ let T = e => {
                         fullWidth: !0
                     })
                 }), (0, n.jsx)("div", {
-                    className: y,
+                    className: N,
                     children: (0, n.jsx)(c.Button, {
                         variant: "secondary",
                         text: j.intl.string(j.t.X3tnc4),
@@ -128,7 +128,7 @@ let T = e => {
                                 page_session_id: Z
                             })
                         },
-                        disabled: z !== A.J.MOUNTED && z !== A.J.FINISHED
+                        disabled: W !== A.J.MOUNTED && W !== A.J.FINISHED
                     })
                 })]
             })]
@@ -136,17 +136,17 @@ let T = e => {
             className: k.hm,
             children: t ? (0, n.jsx)(n.Fragment, {
                 children: [...Array(12)].map((e, t) => (0, n.jsx)(b.A, {}, t + 1))
-            }) : H.slice(0, T).map((e, t) => {
+            }) : H.slice(0, O).map((e, t) => {
                 let s, l = x.A.getCategoryForProduct(e.skuId);
                 if (null == e || null == l) return null;
-                if (W)
-                    if (z === A.J.SHUFFLE_OUT) return (0, n.jsx)("div", {
+                if (z)
+                    if (W === A.J.SHUFFLE_OUT) return (0, n.jsx)("div", {
                         className: k.Z2,
                         children: (0, n.jsx)(b.A, {
                             skipPulseAnimation: !0
                         })
                     }, `${e.skuId}-${t}`);
-                    else z === A.J.SORT_OUT ? s = k.MW : z === A.J.SHUFFLE_IN ? s = k.aS : z === A.J.SORT_IN && (s = k.F7);
+                    else W === A.J.SORT_OUT ? s = k.MW : W === A.J.SHUFFLE_IN ? s = k.aS : W === A.J.SORT_IN && (s = k.F7);
                 return (0, n.jsx)(f.R9, {
                     newValue: {
                         tilePosition: t,
@@ -157,8 +157,8 @@ let T = e => {
                         className: s,
                         children: (0, n.jsx)(E.A, {
                             skuId: e.skuId,
-                            prioritizedCurrency: N === I.G2.ORBS ? C.Hi.ORBS : void 0,
-                            onClickAnalytics: (0, C.UU)(e, N, $)
+                            prioritizedCurrency: y === I.G2.ORBS ? C.Hi.ORBS : void 0,
+                            onClickAnalytics: (0, C.UU)(e, y, $)
                         })
                     })
                 }, e.skuId)

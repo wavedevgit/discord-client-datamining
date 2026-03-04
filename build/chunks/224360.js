@@ -12,8 +12,8 @@ var l = n(503698),
     c = n(915089),
     d = n(152621),
     u = n(61881),
-    m = n(788593),
-    g = n(507247),
+    g = n(788593),
+    m = n(507247),
     x = n(985018),
     f = n(461349),
     p = n(105778);
@@ -26,11 +26,11 @@ function h(e) {
     } = e, {
         coverImageUrl: a,
         gameName: c,
-        isLoading: g
+        isLoading: m
     } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
         game: c
     });
-    return g || h ? (0, i.jsx)("div", {
+    return m || h ? (0, i.jsx)("div", {
         className: f.mD
     }) : (0, i.jsx)(r.m, {
         text: _,
@@ -39,7 +39,7 @@ function h(e) {
             className: p.c9,
             onClick: l,
             "aria-label": _,
-            children: [(0, i.jsx)(m.A, {
+            children: [(0, i.jsx)(g.A, {
                 className: p.Iv,
                 imageSrc: a,
                 gameName: c,
@@ -82,7 +82,7 @@ function _(e) {
                 color: "text-subtle",
                 children: x.intl.string(x.t.zMUr6Z)
             })]
-        }), (0, i.jsx)(g.A, {
+        }), (0, i.jsx)(m.A, {
             games: n,
             renderGame: e => {
                 let {

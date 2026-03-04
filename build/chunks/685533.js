@@ -36,16 +36,16 @@ function I(e) {
     } = e, I = (0, u.uM)(), L = I?.sessionId ?? "", {
         noCache: j,
         includeUnpublished: k
-    } = (0, C.A)(), T = (0, i.bG)([c.default], () => c.default.getCurrentUser()), {
-        skus: O,
-        currentPage: N,
-        totalCount: y,
+    } = (0, C.A)(), O = (0, i.bG)([c.default], () => c.default.getCurrentUser()), {
+        skus: T,
+        currentPage: y,
+        totalCount: N,
         isFetchingResults: R
-    } = (0, h.S)(), B = (0, i.yK)([_.A], () => _.A.getProductsBySkus(O)), M = l.useCallback(() => {
+    } = (0, h.S)(), B = (0, i.yK)([_.A], () => _.A.getProductsBySkus(T)), M = l.useCallback(() => {
         s?.current?.scrollToTop({
             animate: !0
         })
-    }, [s]), P = O?.join("");
+    }, [s]), P = T?.join("");
     l.useEffect(() => {
         M()
     }, [P, M]);
@@ -67,11 +67,11 @@ function I(e) {
             queryPageSize: F
         } = (0, m.v)(),
         [V, K] = l.useState(!1),
-        W = t || R || null == T;
+        z = t || R || null == O;
     l.useEffect(() => {
-        W ? K(!1) : w.length > 0 && K(!0)
-    }, [W, w.length]);
-    let z = F > 0 && !W && 0 === w.length;
+        z ? K(!1) : w.length > 0 && K(!0)
+    }, [z, w.length]);
+    let W = F > 0 && !z && 0 === w.length;
     l.useEffect(() => {
         let e = new ResizeObserver(() => {
             null == H.current || U(Math.floor(5 * getComputedStyle(H.current).gridTemplateColumns.split(/\s+/).length))
@@ -93,14 +93,14 @@ function I(e) {
         value: v,
         children: [(0, n.jsxs)("div", {
             className: a()({
-                [S.oE]: z
+                [S.oE]: W
             }),
-            children: [z && (0, n.jsx)(b.A, {}), (0, n.jsxs)("div", {
+            children: [W && (0, n.jsx)(b.A, {}), (0, n.jsxs)("div", {
                 className: a()(S.ZE, {
                     [S.Kp]: V
                 }),
                 ref: H,
-                children: [W && [...Array(F)].map((e, t) => (0, n.jsx)(E.A, {}, t)), !W && w.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
+                children: [z && [...Array(F)].map((e, t) => (0, n.jsx)(E.A, {}, t)), !z && w.map((e, t) => null == _.A.getCategory(e.categorySkuId) ? null : (0, n.jsx)(u.R9, {
                     newValue: {
                         tilePosition: t
                     },
@@ -110,12 +110,12 @@ function I(e) {
                     }, e.skuId)
                 }, e.skuId))]
             })]
-        }), y > F && (0, n.jsx)("div", {
+        }), N > F && (0, n.jsx)("div", {
             className: S.Ej,
             children: (0, n.jsx)("div", {
                 children: (0, n.jsx)(o.mgR, {
-                    currentPage: N,
-                    totalCount: y,
+                    currentPage: y,
+                    totalCount: N,
                     pageSize: F,
                     onPageChange: Y,
                     disablePaginationGap: !0

@@ -34,18 +34,18 @@ let S = {
             tab: v
         } = e, I = (0, o.bG)([p.A], () => s.every(e => null != p.A.get(e)), [s]), L = (0, x.uM)(), {
             analyticsLocations: j
-        } = (0, d.Ay)(), k = l.useRef(null), T = l.useRef(!1), O = l.useRef(null);
+        } = (0, d.Ay)(), k = l.useRef(null), O = l.useRef(!1), T = l.useRef(null);
         l.useEffect(() => {
             for (let e of s)(0, u.qf)(C.Kf, e)
         }, [s]);
-        let N = l.useMemo(() => {
+        let y = l.useMemo(() => {
                 let e = a()(),
                     t = Math.max(a()(r).diff(e, "days"), 1);
                 return b.intl.formatToPlainString(b.t.BXpdIg, {
                     days: t
                 })
             }, [r]),
-            y = l.useCallback((e, t) => {
+            N = l.useCallback((e, t) => {
                 f.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: L?.sessionId,
                     page_type: v,
@@ -64,35 +64,35 @@ let S = {
                 })
             }, []),
             B = l.useCallback(() => {
-                y("go_to_game_shop"), (0, g.default)({
+                N("go_to_game_shop"), (0, g.default)({
                     guildId: C.Kf
                 })
-            }, [y]),
+            }, [N]),
             M = l.useCallback(e => {
-                y("card_click", e), (0, m.R)({
+                N("card_click", e), (0, m.R)({
                     skuId: e,
                     applicationId: C.XR,
                     guildId: C.Kf,
                     isStorefront: !1,
                     analyticsLocations: j
                 })
-            }, [y, j]),
+            }, [N, j]),
             P = l.useCallback(() => {
-                y("dismiss"), t()
-            }, [y, t]),
+                N("dismiss"), t()
+            }, [N, t]),
             D = l.useCallback(e => {
-                T.current || (e ? null === O.current && (O.current = setTimeout(() => {
-                    T.current = !0, O.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+                O.current || (e ? null === T.current && (T.current = setTimeout(() => {
+                    O.current = !0, T.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                         collectibles_shop_session_id: L?.sessionId,
                         page_type: v,
                         page_category: L?.pageCategory,
                         page_section: L?.pageSection,
                         type: "marvel_rivals_promotional_banner"
                     })
-                }, 1e3)) : null !== O.current && (clearTimeout(O.current), O.current = null))
+                }, 1e3)) : null !== T.current && (clearTimeout(T.current), T.current = null))
             }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]);
         return (l.useEffect(() => () => {
-            null !== O.current && (clearTimeout(O.current), O.current = null)
+            null !== T.current && (clearTimeout(T.current), T.current = null)
         }, []), I) ? (0, n.jsx)(c.L, {
             innerRef: k,
             onChange: D,
@@ -111,11 +111,11 @@ let S = {
                         })
                     }), (0, n.jsxs)("div", {
                         className: A.xf,
-                        children: [null != N && (0, n.jsx)("div", {
+                        children: [null != y && (0, n.jsx)("div", {
                             className: A.qw,
                             children: (0, n.jsx)(i.Exy, {
                                 type: {
-                                    text: `${b.intl.string(b.t.yYEZGi)} (${N})`
+                                    text: `${b.intl.string(b.t.yYEZGi)} (${y})`
                                 },
                                 variant: "brand"
                             })

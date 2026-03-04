@@ -12,8 +12,8 @@ var r = n(397927),
     c = n(152621),
     d = n(409626),
     u = n(692969),
-    m = n(287809),
-    g = n(562153),
+    g = n(287809),
+    m = n(562153),
     x = n(183555),
     f = n(735321),
     p = n(451395),
@@ -27,7 +27,7 @@ var r = n(397927),
     T = n(461349),
     b = n(8208);
 
-function y(e) {
+function N(e) {
     let {
         index: t,
         widgetType: n,
@@ -58,7 +58,7 @@ function y(e) {
     })
 }
 
-function N(e) {
+function y(e) {
     let {
         applicationId: t,
         userId: n,
@@ -94,7 +94,7 @@ function S(e) {
     return (0, i.jsx)(r.AC4, {
         id: a,
         children: E.intl.format(E.t.TM0XDY, {
-            name: g.Ay.getName(n, l, t)
+            name: m.Ay.getName(n, l, t)
         })
     })
 }
@@ -145,9 +145,9 @@ function R(e) {
         channelId: c,
         widgetType: d,
         applicationId: u
-    } = e, m = (0, o.GV)(), g = (0, o.GV)(), {
+    } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
         trackUserProfileEditAction: p
-    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), y = null != t && "" !== t.trim(), N = l.useCallback(() => {
+    } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), N = null != t && "" !== t.trim(), y = l.useCallback(() => {
         p({
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: d
@@ -171,10 +171,10 @@ function R(e) {
         className: b.kS,
         children: [(0, i.jsx)(r.AC4, {
             tag: "label",
-            htmlFor: m,
+            htmlFor: g,
             children: E.intl.string(E.t.JxKXeT)
         }), (0, i.jsx)(r.fs1, {
-            id: m,
+            id: g,
             value: A,
             placeholder: T,
             onChange: R,
@@ -189,8 +189,8 @@ function R(e) {
     }) : (0, i.jsxs)("div", {
         ref: v,
         role: "group",
-        "aria-labelledby": g,
-        onClick: N,
+        "aria-labelledby": m,
+        onClick: y,
         className: b.Vg,
         children: [(0, i.jsx)(r.R2l, {
             size: "xxs",
@@ -200,15 +200,15 @@ function R(e) {
             user: n,
             guildId: a,
             channelId: c,
-            id: g
+            id: m
         }), (0, i.jsx)(C, {
             text: t ?? T,
-            className: s()(b.qC, !y && b.qf)
+            className: s()(b.qC, !N && b.qf)
         }), (0, i.jsx)(r.DUT, {
             innerRef: j,
             "aria-label": E.intl.string(E.t.ppb9MJ),
             onClick: e => {
-                e.stopPropagation(), N()
+                e.stopPropagation(), y()
             },
             focusProps: {
                 ringTarget: v
@@ -226,7 +226,7 @@ function w(e) {
         widgetType: o,
         disableInteraction: d = !1,
         index: u,
-        onRemoveGame: g,
+        onRemoveGame: m,
         coverRef: x,
         className: E
     } = e, {
@@ -240,7 +240,7 @@ function w(e) {
     } = (0, c.A)(S), D = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, G = m.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, f.cv)(o), F = !d && M, W = F && (0, f.y9)(o), H = F && !U, {
+    }, G = g.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, f.cv)(o), F = !d && M, W = F && (0, f.y9)(o), H = F && !U, {
         registerDragHandleRef: B
     } = (0, h.r)();
     if (P) return (0, i.jsx)(A.E, {});
@@ -267,7 +267,7 @@ function w(e) {
                 children: [d ? (0, i.jsx)(r.Heading, {
                     ...D,
                     children: L
-                }) : (0, i.jsx)(N, {
+                }) : (0, i.jsx)(y, {
                     applicationId: S,
                     userId: t.id,
                     gameName: L,
@@ -301,10 +301,10 @@ function w(e) {
                 game: a,
                 widgetType: o,
                 className: b.vS,
-                onRemove: () => g?.(a.applicationId)
+                onRemove: () => m?.(a.applicationId)
             })]
         });
-    return H ? (0, i.jsx)(y, {
+    return H ? (0, i.jsx)(N, {
         index: u ?? 0,
         widgetType: o,
         game: a,
