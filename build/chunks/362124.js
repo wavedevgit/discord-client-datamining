@@ -24,7 +24,7 @@ let d = {
                 p(!0)
             }, []), x = o.useCallback(() => {
                 p(!1)
-            }, []), v = o.useCallback(() => {
+            }, []), h = o.useCallback(() => {
                 p(e => !e)
             }, []);
             return (0, t.jsxs)(i.BJc, {
@@ -61,7 +61,7 @@ let d = {
                         variant: "primary",
                         size: "sm",
                         text: "Toggle",
-                        onClick: v,
+                        onClick: h,
                         disabled: d
                     })]
                 })]

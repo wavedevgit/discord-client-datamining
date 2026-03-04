@@ -44,7 +44,7 @@ let c = [{
                 let {
                     disabled: l,
                     placeholder: a
-                } = e, [b, p] = o.useState(void 0), [m, x] = o.useState(void 0), [v, h] = o.useState(void 0);
+                } = e, [b, p] = o.useState(void 0), [m, x] = o.useState(void 0), [h, v] = o.useState(void 0);
                 return (0, t.jsxs)(u.BJc, {
                     gap: 8,
                     children: [(0, t.jsx)(d.Te, {
@@ -67,8 +67,8 @@ let c = [{
                         value: m,
                         disabled: l
                     }), (0, t.jsx)(s.c, {
-                        onChange: h,
-                        value: v,
+                        onChange: v,
+                        value: h,
                         disabled: l
                     })]
                 })

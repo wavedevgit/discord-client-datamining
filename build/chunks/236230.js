@@ -1,18 +1,18 @@
 /** chunk id: 236230, original params: e,a,t (module,exports,require) **/
 t.d(a, {
-    p: () => o
+    p: () => l
 });
 var r = t(99478),
     n = t(526531);
 let i = [0, 31, 62, 93, 124, 155, 186, 216, 246, 276, 306, 336];
-class o {
+class l {
     fromJulianDay(e) {
         let a = e - 1948320,
             t = 1 + Math.floor((33 * a + 3) / 12053),
             n = a - (365 * (t - 1) + Math.floor((8 * t + 21) / 33)),
-            o = n < 216 ? Math.floor(n / 31) : Math.floor((n - 6) / 30),
-            u = n - i[o] + 1;
-        return new(0, r.ng)(this, t, o + 1, u)
+            l = n < 216 ? Math.floor(n / 31) : Math.floor((n - 6) / 30),
+            o = n - i[l] + 1;
+        return new(0, r.ng)(this, t, l + 1, o)
     }
     toJulianDay(e) {
         let a = 1948319 + 365 * (e.year - 1) + Math.floor((8 * e.year + 21) / 33);

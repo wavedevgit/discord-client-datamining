@@ -353,8 +353,8 @@ let c = [{
                     placeholder: p,
                     ...x
                 } = e, {
-                    required: v,
-                    disabled: h
+                    required: h,
+                    disabled: v
                 } = x, y = m(b, x.asyncOptions), [f, g] = o.useState(null);
                 return (0, t.jsxs)(r.iS, {
                     selectionMode: l,
@@ -366,8 +366,8 @@ let c = [{
                         label: a,
                         hideLabel: n,
                         placeholder: p,
-                        required: v,
-                        disabled: h,
+                        required: h,
+                        disabled: v,
                         description: i,
                         helperText: s,
                         errorMessage: d,

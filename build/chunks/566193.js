@@ -43,13 +43,13 @@ let d = {
                 p(b.filter(l => !e.has(l.id)))
             }, [b]), x = o.useCallback(() => {
                 p(c)
-            }, [c]), v = (0, t.jsx)(n.CR_, {
+            }, [c]), h = (0, t.jsx)(n.CR_, {
                 label: "Categories",
                 selectionMode: l,
                 layout: d,
                 items: b,
                 onRemove: a ? m : void 0
-            }), h = a && (0, t.jsx)(s.Button, {
+            }), v = a && (0, t.jsx)(s.Button, {
                 disabled: b.length === c.length,
                 text: "Reset",
                 onClick: x
@@ -61,11 +61,11 @@ let d = {
                         display: "flex",
                         gap: 4
                     },
-                    children: v
-                }), h]
+                    children: h
+                }), v]
             }) : (0, t.jsxs)(s.BJc, {
                 gap: 24,
-                children: [v, h]
+                children: [h, v]
             })
         },
         controls: {

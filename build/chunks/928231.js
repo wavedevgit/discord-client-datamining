@@ -2,26 +2,26 @@
 t.d(a, {
     $T: () => m,
     DP: () => s,
-    _U: () => l,
-    e6: () => D,
+    _U: () => u,
+    e6: () => y,
     ot: () => c,
     qk: () => h
 });
 var r = t(99478),
     n = t(376472),
     i = t(142922);
-let o = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})$/,
-    u = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})(?:T(\d{2}))?(?::(\d{2}))?(?::(\d{2}))?(\.\d+)?$/;
+let l = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})$/,
+    o = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})(?:T(\d{2}))?(?::(\d{2}))?(?::(\d{2}))?(\.\d+)?$/;
 
-function l(e) {
-    let a = e.match(o);
+function u(e) {
+    let a = e.match(l);
     if (!a) throw Error("Invalid ISO 8601 date string: " + e);
     let t = new(0, r.ng)(d(a[1], 0, 9999), d(a[2], 1, 12), 1);
     return t.day = d(a[3], 1, t.calendar.getDaysInMonth(t)), t
 }
 
 function s(e) {
-    let a = e.match(u);
+    let a = e.match(o);
     if (!a) throw Error("Invalid ISO 8601 date time string: " + e);
     let t = d(a[1], -9999, 9999),
         n = new(0, r._l)(t < 1 ? "BC" : "AD", t < 1 ? -t + 1 : t, d(a[2], 1, 12), 1, a[4] ? d(a[4], 0, 23) : 0, a[5] ? d(a[5], 0, 59) : 0, a[6] ? d(a[6], 0, 59) : 0, a[7] ? 1e3 * d(a[7], 0, 1 / 0) : 0);
@@ -47,8 +47,8 @@ function h(e) {
     return `${m(e)}T${c(e)}`
 }
 
-function D(e) {
+function y(e) {
     var a;
-    let t, r, n, i, o;
-    return `${h(e)}${t=0>Math.sign(a=e.offset)?"-":"+",r=Math.floor((a=Math.abs(a))/36e5),n=Math.floor(a%36e5/6e4),i=Math.floor(a%36e5%6e4/1e3),o=`${t}${String(r).padStart(2,"0")}:${String(n).padStart(2,"0")}`,0!==i&&(o+=`:${String(i).padStart(2,"0")}`),o}[${e.timeZone}]`
+    let t, r, n, i, l;
+    return `${h(e)}${t=0>Math.sign(a=e.offset)?"-":"+",r=Math.floor((a=Math.abs(a))/36e5),n=Math.floor(a%36e5/6e4),i=Math.floor(a%36e5%6e4/1e3),l=`${t}${String(r).padStart(2,"0")}:${String(n).padStart(2,"0")}`,0!==i&&(l+=`:${String(i).padStart(2,"0")}`),l}[${e.timeZone}]`
 }

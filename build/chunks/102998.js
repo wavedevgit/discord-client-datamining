@@ -51,9 +51,9 @@ let r = {
                 desc: null == u || "" === u ? void 0 : u,
                 leadingIcon: c ? n.CircleInformationIcon : void 0,
                 disabled: !b && void 0
-            }].slice(0, Math.max(1, Math.min(5, a))), [a, d, u, c, b]), v = o.useCallback(e => {
+            }].slice(0, Math.max(1, Math.min(5, a))), [a, d, u, c, b]), h = o.useCallback(e => {
                 m(e)
-            }, []), h = o.useCallback(() => {
+            }, []), v = o.useCallback(() => {
                 x.length > 0 && m(x[0].value)
             }, [x]), y = o.useCallback(() => {
                 x.length > 0 && m(x[x.length - 1].value)
@@ -66,7 +66,7 @@ let r = {
                 children: [(0, t.jsx)(s.z6M, {
                     value: p,
                     label: r,
-                    onChange: v,
+                    onChange: h,
                     options: x,
                     disabled: l
                 }), (0, t.jsxs)(i.EYj, {
@@ -79,7 +79,7 @@ let r = {
                         variant: "secondary",
                         size: "sm",
                         text: "Select First",
-                        onClick: h,
+                        onClick: v,
                         disabled: l || 0 === x.length
                     }), (0, t.jsx)(s.$nd, {
                         variant: "secondary",

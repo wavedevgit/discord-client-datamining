@@ -1,28 +1,28 @@
 /** chunk id: 360970, original params: e,a,t (module,exports,require) **/
 t.d(a, {
-    N: () => l
+    N: () => u
 });
 var r = t(928231),
     n = t(64700),
     i = t(126031);
-let o = ["day", "month", "year"],
-    u = {
+let l = ["day", "month", "year"],
+    o = {
         hour: 1,
         minute: 2,
         second: 3
     };
 
-function l(e) {
+function u(e) {
     let {
         state: a
     } = e, {
         containerProps: t,
-        inputProps: l
+        inputProps: u
     } = function(e, a) {
         let {
             autoComplete: t,
             isDisabled: n,
-            name: l
+            name: u
         } = e, {
             visuallyHiddenProps: s
         } = (0, i.B)({
@@ -36,8 +36,8 @@ function l(e) {
         let c = null == a.value ? "" : a.value.toString(),
             m = "day" === a.granularity ? "date" : "datetime-local",
             h = ["hour", "minute", "second"],
-            D = 0;
-        return h.includes(a.granularity) && (D = u[a.granularity], h = h.slice(0, D)), {
+            y = 0;
+        return h.includes(a.granularity) && (y = o[a.granularity], h = h.slice(0, y)), {
             containerProps: {
                 ...s,
                 "aria-hidden": !0,
@@ -50,7 +50,7 @@ function l(e) {
                 disabled: n,
                 type: m,
                 form: "",
-                name: l,
+                name: u,
                 step: d,
                 value: c,
                 onChange: e => {
@@ -58,7 +58,7 @@ function l(e) {
                     if (t) try {
                         let e = (0, r.DP)(t);
                         if ("day" === a.granularity && (e = (0, r._U)(t)), "setSegment" in a)
-                            for (let t in e) o.includes(t) && a.setSegment(t, e[t]), h.includes(t) && a.setSegment(t, e[t]);
+                            for (let t in e) l.includes(t) && a.setSegment(t, e[t]), h.includes(t) && a.setSegment(t, e[t]);
                         a.setValue(e)
                     } catch {}
                 }
@@ -70,5 +70,5 @@ function l(e) {
     return n.createElement("div", {
         ...t,
         "data-testid": "hidden-dateinput-container"
-    }, n.createElement("input", l))
+    }, n.createElement("input", u))
 }

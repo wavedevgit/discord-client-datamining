@@ -34,13 +34,13 @@ class n {
     }
     resolvedOptions() {
         let e = this.formatter.resolvedOptions();
-        return null == l && (l = "h12" === new Intl.DateTimeFormat("fr", {
+        return null == u && (u = "h12" === new Intl.DateTimeFormat("fr", {
             hour: "numeric",
             hour12: !1
-        }).resolvedOptions().hourCycle), l && (this.resolvedHourCycle || (this.resolvedHourCycle = function(e, a) {
+        }).resolvedOptions().hourCycle), u && (this.resolvedHourCycle || (this.resolvedHourCycle = function(e, a) {
             if (!a.timeStyle && !a.hour) return;
             e = e.replace(/(-u-)?-nu-[a-zA-Z0-9]+/, "");
-            let t = o(e += (e.includes("-u-") ? "" : "-u") + "-nu-latn", {
+            let t = l(e += (e.includes("-u-") ? "" : "-u") + "-nu-latn", {
                     ...a,
                     timeZone: void 0
                 }),
@@ -54,7 +54,7 @@ class n {
         }(e.locale, this.options)), e.hourCycle = this.resolvedHourCycle, e.hour12 = "h11" === this.resolvedHourCycle || "h12" === this.resolvedHourCycle), "ethiopic-amete-alem" === e.calendar && (e.calendar = "ethioaa"), e
     }
     constructor(e, a = {}) {
-        this.formatter = o(e, a), this.options = a
+        this.formatter = l(e, a), this.options = a
     }
 }
 let i = {
@@ -64,11 +64,11 @@ let i = {
     false: {}
 };
 
-function o(e, a = {}) {
-    if ("boolean" == typeof a.hour12 && (null == u && (u = "24" === new Intl.DateTimeFormat("en-US", {
+function l(e, a = {}) {
+    if ("boolean" == typeof a.hour12 && (null == o && (o = "24" === new Intl.DateTimeFormat("en-US", {
             hour: "numeric",
             hour12: !1
-        }).format(new Date(2020, 2, 3, 0))), u)) {
+        }).format(new Date(2020, 2, 3, 0))), o)) {
         let t = i[String((a = {
                 ...a
             }).hour12)][e.split("-")[0]],
@@ -80,5 +80,5 @@ function o(e, a = {}) {
     let n = new Intl.DateTimeFormat(e, a);
     return r.set(t, n), n
 }
-let u = null,
-    l = null
+let o = null,
+    u = null

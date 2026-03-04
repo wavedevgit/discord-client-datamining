@@ -12,7 +12,7 @@ function i(e) {
         }),
         t = (0, n.useCallback)((e, t) => 0 === t.length || (e = e.normalize("NFC"), t = t.normalize("NFC"), 0 === a.compare(e.slice(0, t.length), t)), [a]),
         i = (0, n.useCallback)((e, t) => 0 === t.length || (e = e.normalize("NFC"), t = t.normalize("NFC"), 0 === a.compare(e.slice(-t.length), t)), [a]),
-        o = (0, n.useCallback)((e, t) => {
+        l = (0, n.useCallback)((e, t) => {
             if (0 === t.length) return !0;
             e = e.normalize("NFC");
             let r = 0,
@@ -26,6 +26,6 @@ function i(e) {
     return (0, n.useMemo)(() => ({
         startsWith: t,
         endsWith: i,
-        contains: o
-    }), [t, i, o])
+        contains: l
+    }), [t, i, l])
 }

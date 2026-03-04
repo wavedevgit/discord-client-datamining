@@ -1,6 +1,6 @@
 /** chunk id: 330741, original params: e,l,a (module,exports,require) **/
 a.d(l, {
-    v: () => v
+    v: () => h
 });
 var t = a(332897),
     o = a(859287),
@@ -15,7 +15,7 @@ var t = a(332897),
     p = a(255479),
     m = a(11645),
     x = a(29848);
-let v = {
+let h = {
     id: "void",
     name: "Void",
     groups: [s.a, m.S, o.N, b.U, u.Y, c.F, p.S, t.p, n.y, d._, x.t, i.s, r.$]

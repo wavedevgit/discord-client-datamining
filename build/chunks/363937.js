@@ -24,15 +24,15 @@ let c = {
                 radioPosition: p,
                 withTransparentBackground: m,
                 label: x,
-                description: v,
-                withDescriptions: h,
+                description: h,
+                withDescriptions: v,
                 withIcons: y
             } = e, [f, g] = o.useState("option1"), V = [n.A, i.x, s.q, r.Z, d.d], C = Array.from({
                 length: l
             }, (e, l) => ({
                 value: `option${l+1}`,
                 name: `Option ${l+1}`,
-                description: h ? `This is a description for option ${l+1}` : void 0,
+                description: v ? `This is a description for option ${l+1}` : void 0,
                 icon: y ? V[l % V.length] : void 0
             }));
             return (0, t.jsx)(u.$d, {
@@ -51,7 +51,7 @@ let c = {
                 radioPosition: p,
                 withTransparentBackground: m,
                 label: x,
-                description: v
+                description: h
             })
         },
         controls: {

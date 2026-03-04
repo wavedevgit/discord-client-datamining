@@ -11,13 +11,13 @@ class i extends n.FG {
         return new(0, r.ng)(this, t - -543, a.month, a.day)
     }
     toJulianDay(e) {
-        return super.toJulianDay(o(e))
+        return super.toJulianDay(l(e))
     }
     getEras() {
         return ["BE"]
     }
     getDaysInMonth(e) {
-        return super.getDaysInMonth(o(e))
+        return super.getDaysInMonth(l(e))
     }
     balanceDate() {}
     constructor(...e) {
@@ -25,7 +25,7 @@ class i extends n.FG {
     }
 }
 
-function o(e) {
+function l(e) {
     let [a, t] = (0, n.f5)(e.year + -543);
     return new(0, r.ng)(a, t, e.month, e.day)
 }

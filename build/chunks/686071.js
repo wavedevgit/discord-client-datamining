@@ -53,9 +53,9 @@ let i = {
                 b(e)
             }, []), x = o.useCallback(() => {
                 b(p.map(e => e.value))
-            }, [p]), v = o.useCallback(() => {
+            }, [p]), h = o.useCallback(() => {
                 b([])
-            }, []), h = o.useCallback(() => {
+            }, []), v = o.useCallback(() => {
                 p.length > 0 && b([p[0].value])
             }, [p]);
             return (0, t.jsxs)(n.BJc, {
@@ -83,13 +83,13 @@ let i = {
                         variant: "secondary",
                         size: "sm",
                         text: "Select First",
-                        onClick: h,
+                        onClick: v,
                         disabled: l || 0 === p.length
                     }), (0, t.jsx)(n.$nd, {
                         variant: "primary",
                         size: "sm",
                         text: "Clear All",
-                        onClick: v,
+                        onClick: h,
                         disabled: l
                     })]
                 })]

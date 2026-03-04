@@ -1,20 +1,20 @@
 /** chunk id: 841680, original params: e,a,t (module,exports,require) **/
 t.d(a, {
-    s: () => l
+    s: () => u
 });
 var r = t(723906),
     n = t(290424),
     i = t(805447),
-    o = t(64700),
-    u = t(925573);
+    l = t(64700),
+    o = t(925573);
 
-function l(e, a) {
+function u(e, a) {
     let {
         role: t = "dialog"
-    } = e, l = (0, r.X1)();
-    l = e["aria-label"] ? void 0 : l;
-    let s = (0, o.useRef)(!1);
-    return (0, o.useEffect)(() => {
+    } = e, u = (0, r.X1)();
+    u = e["aria-label"] ? void 0 : u;
+    let s = (0, l.useRef)(!1);
+    return (0, l.useEffect)(() => {
         if (a.current && !a.current.contains(document.activeElement)) {
             (0, i.l)(a.current);
             let e = setTimeout(() => {
@@ -24,20 +24,20 @@ function l(e, a) {
                 clearTimeout(e)
             }
         }
-    }, [a]), (0, u.Se)(), {
+    }, [a]), (0, o.Se)(), {
         dialogProps: {
             ...(0, n.$)(e, {
                 labelable: !0
             }),
             role: t,
             tabIndex: -1,
-            "aria-labelledby": e["aria-labelledby"] || l,
+            "aria-labelledby": e["aria-labelledby"] || u,
             onBlur: e => {
                 s.current && e.stopPropagation()
             }
         },
         titleProps: {
-            id: l
+            id: u
         }
     }
 }

@@ -26,7 +26,7 @@ let u = {
                 size: p,
                 position: m,
                 ...x
-            } = e, [v, h] = o.useState(!1), y = o.useRef(null);
+            } = e, [h, v] = o.useState(!1), y = o.useRef(null);
             return (0, t.jsxs)("div", {
                 style: {
                     display: "flex",
@@ -41,8 +41,8 @@ let u = {
                     align: b,
                     alignmentStrategy: c,
                     targetElementRef: y,
-                    shouldShow: v,
-                    onRequestClose: () => h(!1),
+                    shouldShow: h,
+                    onRequestClose: () => v(!1),
                     graphic: l ? {
                         type: "image",
                         src: "sm" === p ? r.A : s.A
@@ -52,7 +52,7 @@ let u = {
                     },
                     actions: a ? [{
                         text: "Close",
-                        onClick: () => h(!1)
+                        onClick: () => v(!1)
                     }] : void 0,
                     textLink: d ? {
                         text: "Learn More",
@@ -63,7 +63,7 @@ let u = {
                     variant: "primary",
                     text: "Toggle Popover",
                     buttonRef: y,
-                    onClick: () => h(!v)
+                    onClick: () => v(!h)
                 })]
             })
         },

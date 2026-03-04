@@ -2,7 +2,7 @@
 t.d(a, {
     lf: () => s,
     pG: () => d,
-    yB: () => l
+    yB: () => u
 });
 var r = t(99478);
 
@@ -17,30 +17,30 @@ function i(e, a) {
     return [t, r, i]
 }
 
-function o(e) {
+function l(e) {
     return Math.floor(e % 4 / 3)
 }
 
-function u(e, a) {
-    return a % 13 != 0 ? 30 : o(e) + 5
+function o(e, a) {
+    return a % 13 != 0 ? 30 : l(e) + 5
 }
-class l {
+class u {
     fromJulianDay(e) {
-        let [a, t, n] = i(1723856, e), o = "AM";
-        return a <= 0 && (o = "AA", a += 5500), new(0, r.ng)(this, o, a, t, n)
+        let [a, t, n] = i(1723856, e), l = "AM";
+        return a <= 0 && (l = "AA", a += 5500), new(0, r.ng)(this, l, a, t, n)
     }
     toJulianDay(e) {
         let a = e.year;
         return "AA" === e.era && (a -= 5500), n(1723856, a, e.month, e.day)
     }
     getDaysInMonth(e) {
-        return u(e.year, e.month)
+        return o(e.year, e.month)
     }
     getMonthsInYear() {
         return 13
     }
     getDaysInYear(e) {
-        return 365 + o(e.year)
+        return 365 + l(e.year)
     }
     getYearsInEra(e) {
         return "AA" === e.era ? 9999 : 9991
@@ -52,7 +52,7 @@ class l {
         this.identifier = "ethiopic"
     }
 }
-class s extends l {
+class s extends u {
     fromJulianDay(e) {
         let [a, t, n] = i(1723856, e);
         return a += 5500, new(0, r.ng)(this, "AA", a, t, n)
@@ -67,10 +67,10 @@ class s extends l {
         super(...e), this.identifier = "ethioaa"
     }
 }
-class d extends l {
+class d extends u {
     fromJulianDay(e) {
-        let [a, t, n] = i(1824665, e), o = "CE";
-        return a <= 0 && (o = "BCE", a = 1 - a), new(0, r.ng)(this, o, a, t, n)
+        let [a, t, n] = i(1824665, e), l = "CE";
+        return a <= 0 && (l = "BCE", a = 1 - a), new(0, r.ng)(this, l, a, t, n)
     }
     toJulianDay(e) {
         let a = e.year;
@@ -78,7 +78,7 @@ class d extends l {
     }
     getDaysInMonth(e) {
         let a = e.year;
-        return "BCE" === e.era && (a = 1 - a), u(a, e.month)
+        return "BCE" === e.era && (a = 1 - a), o(a, e.month)
     }
     isInverseEra(e) {
         return "BCE" === e.era

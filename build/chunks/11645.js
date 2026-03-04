@@ -47,13 +47,13 @@ let r = [{
                 closeOnSelect: b,
                 popoutPosition: p,
                 variant: m
-            } = e, [x, v] = o.useState("blue");
+            } = e, [x, h] = o.useState("blue");
             return (0, t.jsx)(s.Te, {
                 variant: m,
                 label: l,
                 description: a,
                 value: x,
-                onChange: v,
+                onChange: h,
                 options: r,
                 placeholder: d,
                 isDisabled: n,
@@ -156,7 +156,7 @@ let r = [{
                 clearQueryOnSelect: c,
                 filter: b,
                 ...p
-            } = e, [m, x] = o.useState("blue"), [v, h] = o.useState(["blue"]);
+            } = e, [m, x] = o.useState("blue"), [h, v] = o.useState(["blue"]);
             return (0, t.jsxs)(n.BJc, {
                 gap: 24,
                 children: [(0, t.jsx)(i.p, {
@@ -173,8 +173,8 @@ let r = [{
                 }), (0, t.jsx)(i.p, {
                     ...p,
                     multi: !0,
-                    value: v,
-                    onChange: h,
+                    value: h,
+                    onChange: v,
                     options: r,
                     placeholder: l,
                     isDisabled: a,

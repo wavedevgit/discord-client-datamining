@@ -23,9 +23,9 @@ let s = {
                 label: b
             } = e, [p, m] = o.useState(!1), x = o.useCallback((e, l) => {
                 m(l)
-            }, []), v = o.useCallback(() => {
-                m(!0)
             }, []), h = o.useCallback(() => {
+                m(!0)
+            }, []), v = o.useCallback(() => {
                 m(!1)
             }, []), y = o.useCallback(() => {
                 m(e => !e)
@@ -58,13 +58,13 @@ let s = {
                         variant: "secondary",
                         size: "sm",
                         text: "Check",
-                        onClick: v,
+                        onClick: h,
                         disabled: l || a
                     }), (0, t.jsx)(i.Button, {
                         variant: "secondary",
                         size: "sm",
                         text: "Uncheck",
-                        onClick: h,
+                        onClick: v,
                         disabled: l || a
                     }), (0, t.jsx)(i.Button, {
                         variant: "primary",

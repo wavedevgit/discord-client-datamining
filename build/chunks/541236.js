@@ -319,8 +319,8 @@ let r = [{
                     value: p = "",
                     readOnly: m,
                     helperText: x,
-                    successMessage: v,
-                    showCharacterCount: h
+                    successMessage: h,
+                    showCharacterCount: v
                 } = e, y = {
                     label: l,
                     hideLabel: a,
@@ -332,8 +332,8 @@ let r = [{
                     placeholder: b,
                     readOnly: m,
                     helperText: x,
-                    showCharacterCount: h,
-                    successMessage: v
+                    showCharacterCount: v,
+                    successMessage: h
                 };
                 return (0, t.jsxs)(i.BJc, {
                     gap: 24,

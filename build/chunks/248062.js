@@ -7,9 +7,9 @@ t.d(a, {
 var r = t(650682),
     n = t(825913),
     i = t(257537),
-    o = t(841680),
-    u = t(290424),
-    l = t(803082),
+    l = t(841680),
+    o = t(290424),
+    u = t(803082),
     s = t(64700);
 let d = (0, s.createContext)(null),
     c = (0, s.createContext)(null),
@@ -19,25 +19,25 @@ let d = (0, s.createContext)(null),
         let {
             dialogProps: m,
             titleProps: h
-        } = (0, o.s)({
+        } = (0, l.s)({
             ...e,
             "aria-labelledby": t
-        }, a), D = (0, s.useContext)(c);
+        }, a), y = (0, s.useContext)(c);
         m["aria-label"] || m["aria-labelledby"] || e["aria-labelledby"] && (m["aria-labelledby"] = e["aria-labelledby"]);
-        let y = (0, n.Sl)({
+        let D = (0, n.Sl)({
                 defaultClassName: "react-aria-Dialog",
                 className: e.className,
                 style: e.style,
                 children: e.children,
                 values: {
-                    close: (null == D ? void 0 : D.close) || (() => {})
+                    close: (null == y ? void 0 : y.close) || (() => {})
                 }
             }),
-            p = (0, u.$)(e, {
+            p = (0, o.$)(e, {
                 global: !0
             });
         return s.createElement("section", {
-            ...(0, l.v)(p, y, m),
+            ...(0, u.v)(p, D, m),
             ref: a,
             slot: e.slot || void 0
         }, s.createElement(n.Kq, {
@@ -55,10 +55,10 @@ let d = (0, s.createContext)(null),
                     slots: {
                         [n.P_]: {},
                         close: {
-                            onPress: () => null == D ? void 0 : D.close()
+                            onPress: () => null == y ? void 0 : y.close()
                         }
                     }
                 }]
             ]
-        }, y.children))
+        }, D.children))
     })

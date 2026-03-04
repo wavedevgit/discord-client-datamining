@@ -1,6 +1,6 @@
 /** chunk id: 471936, original params: e,l,a (module,exports,require) **/
 a.d(l, {
-    t: () => h
+    t: () => v
 }), a(321073);
 var t = a(627968),
     o = a(64700),
@@ -58,7 +58,7 @@ function x(e) {
     })
 }
 
-function v(e) {
+function h(e) {
     let {
         callbackDelay: l,
         failOnNext: a,
@@ -68,7 +68,7 @@ function v(e) {
         customErrorNotice: d,
         errorNoticeType: u,
         ...c
-    } = e, [b, v] = o.useState("intro"), [h, y] = o.useState(!1), [f, g] = o.useState(!1), [V, C] = o.useState(!1), [j, S] = o.useState(null), k = o.useCallback(async () => {
+    } = e, [b, h] = o.useState("intro"), [v, y] = o.useState(!1), [f, g] = o.useState(!1), [V, C] = o.useState(!1), [j, S] = o.useState(null), k = o.useCallback(async () => {
         if (S(null), l > 0 && await new Promise(e => setTimeout(e, 1e3 * l)), r && alert("onNext callback fired"), a) {
             if ("" !== d.trim()) return S({
                 message: d,
@@ -117,7 +117,7 @@ function v(e) {
             setIsSafetyAccepted: y,
             setIsHelmetSelected: C
         }),
-        nextEnabled: h,
+        nextEnabled: v,
         onNext: k
     }, {
         stepKey: "passcode",
@@ -141,12 +141,12 @@ function v(e) {
         steps: T,
         currentStepKey: b,
         numberedSteps: M,
-        onStepChange: v,
+        onStepChange: h,
         onComplete: w,
         ...c
     })
 }
-let h = {
+let v = {
     title: "Modal",
     stories: [{
         name: "Modal",
@@ -706,7 +706,7 @@ let h = {
                 }), (0, t.jsx)(d.Button, {
                     variant: "primary",
                     text: "Open MultiStepModal",
-                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(v, {
+                    onClick: () => (0, d.qfG)(e => (0, t.jsx)(h, {
                         ...e,
                         callbackDelay: l,
                         failOnNext: a,

@@ -153,8 +153,8 @@ let d = {
                 caretAlign: p,
                 customOffset: m,
                 delay: x,
-                spacing: v,
-                forceOpen: h,
+                spacing: h,
+                forceOpen: v,
                 ...y
             } = e, f = o.useMemo(() => {
                 if ("center" !== p && null != p) return "custom" === p ? {
@@ -175,11 +175,11 @@ let d = {
                 align: b,
                 padding: u,
                 delay: x,
-                spacing: v,
+                spacing: h,
                 caretConfig: f,
                 asset: g,
                 assetSize: d,
-                forceOpen: h,
+                forceOpen: v,
                 ...y,
                 children: (0, t.jsx)(n.Button, {
                     variant: "primary",
