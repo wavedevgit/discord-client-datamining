@@ -13,17 +13,17 @@ function d(e) {
         productId: l,
         includePricing: t = !1,
         includeUnpublished: d = !1,
-        ignoreCache: c = !1
-    } = e, [s, u, h] = (0, o.yK)([i.A], () => [i.A.getProduct(l), i.A.isFetching(l), i.A.getApiError(l)]), p = (0, n.A)(t), m = (0, n.A)(d), _ = (0, n.A)(c), b = !!l && !u && h?.status !== 404 && h?.status !== 429, S = null == s || t !== p || d !== m || c !== _;
+        ignoreCache: s = !1
+    } = e, [c, u, h] = (0, o.yK)([i.A], () => [i.A.getProduct(l), i.A.isFetching(l), i.A.getApiError(l)]), p = (0, n.A)(t), m = (0, n.A)(d), _ = (0, n.A)(s), b = !!l && !u && h?.status !== 404 && h?.status !== 429, S = null == c || t !== p || d !== m || s !== _;
     return (0, r.useEffect)(() => {
         b && S && (0, a.M0)({
             productId: l,
             includePricing: t,
             includeUnpublished: d,
-            ignoreCache: c
+            ignoreCache: s
         })
-    }, [b, S, l, t, d, c]), {
-        product: s,
+    }, [b, S, l, t, d, s]), {
+        product: c,
         isFetching: u,
         apiError: h
     }

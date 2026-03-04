@@ -8,8 +8,8 @@ let n = {},
     a = {},
     i = {},
     d = {},
-    c = new Set,
-    s = {};
+    s = new Set,
+    c = {};
 class u extends r.Ay.Store {
     static displayName = "StorefrontStore";
     getCollection(e) {
@@ -29,10 +29,10 @@ class u extends r.Ay.Store {
         return null != e ? d[e] : null
     }
     isFetching(e) {
-        return null != e && c.has(e)
+        return null != e && s.has(e)
     }
     getApiError(e) {
-        return null != e ? s[e] : null
+        return null != e ? c[e] : null
     }
 }
 let h = new u(o.h, {
@@ -42,9 +42,9 @@ let h = new u(o.h, {
         } = e, t = n[l];
         t?.products?.forEach(e => {
             e.skuIds.forEach(e => {
-                c.add(e)
-            }), c.add(e.id)
-        }), c.add(l)
+                s.add(e)
+            }), s.add(e.id)
+        }), s.add(l)
     },
     STOREFRONT_COLLECTION_WITH_PRODUCTS_FETCH_SUCCESS: e => {
         let {
@@ -52,9 +52,9 @@ let h = new u(o.h, {
         } = e;
         l.products?.forEach(e => {
             e.skus.forEach(e => {
-                i[e.id] = e, delete s[e.id], c.delete(e.id)
-            }), a[e.id] = e, delete s[e.id], c.delete(e.id)
-        }), n[l.id] = l, delete s[l.id], c.delete(l.id)
+                i[e.id] = e, delete c[e.id], s.delete(e.id)
+            }), a[e.id] = e, delete c[e.id], s.delete(e.id)
+        }), n[l.id] = l, delete c[l.id], s.delete(l.id)
     },
     STOREFRONT_COLLECTION_WITH_PRODUCTS_FETCH_FAILURE: e => {
         let {
@@ -63,25 +63,25 @@ let h = new u(o.h, {
         } = e, r = n[l];
         r?.products?.forEach(e => {
             e.skuIds.forEach(e => {
-                c.delete(e)
-            }), c.delete(e.id)
-        }), s[l] = t, c.delete(l)
+                s.delete(e)
+            }), s.delete(e.id)
+        }), c[l] = t, s.delete(l)
     },
     STOREFRONT_PRODUCT_WITH_SKUS_FETCH: e => {
         let {
             productId: l
         } = e, t = a[l];
         t?.skuIds.forEach(e => {
-            c.add(e)
-        }), c.add(l)
+            s.add(e)
+        }), s.add(l)
     },
     STOREFRONT_PRODUCT_WITH_SKUS_FETCH_SUCCESS: e => {
         let {
             product: l
         } = e;
         l.skus.forEach(e => {
-            i[e.id] = e, delete s[e.id], c.delete(e.id)
-        }), a[l.id] = l, c.delete(l.id), delete s[l.id]
+            i[e.id] = e, delete c[e.id], s.delete(e.id)
+        }), a[l.id] = l, s.delete(l.id), delete c[l.id]
     },
     STOREFRONT_PRODUCT_WITH_SKUS_FETCH_FAILURE: e => {
         let {
@@ -89,24 +89,24 @@ let h = new u(o.h, {
             apiError: t
         } = e, r = a[l];
         r?.skuIds.forEach(e => {
-            c.delete(e)
-        }), s[l] = t, c.delete(l)
+            s.delete(e)
+        }), c[l] = t, s.delete(l)
     },
     STOREFRONT_PRODUCT_BY_SKU_ID_FETCH: e => {
         let {
             skuId: l
         } = e, t = i[l], r = t?.productId != null ? a[t.productId] : null;
         r?.skuIds.forEach(e => {
-            c.add(e)
-        }), null != r && c.add(r.id), c.add(l)
+            s.add(e)
+        }), null != r && s.add(r.id), s.add(l)
     },
     STOREFRONT_PRODUCT_BY_SKU_ID_FETCH_SUCCESS: e => {
         let {
             product: l
         } = e;
         l.skus.forEach(e => {
-            i[e.id] = e, delete s[e.id], c.delete(e.id)
-        }), a[l.id] = l, delete s[l.id], c.delete(l.id)
+            i[e.id] = e, delete c[e.id], s.delete(e.id)
+        }), a[l.id] = l, delete c[l.id], s.delete(l.id)
     },
     STOREFRONT_PRODUCT_BY_SKU_ID_FETCH_FAILURE: e => {
         let {
@@ -114,8 +114,8 @@ let h = new u(o.h, {
             apiError: t
         } = e, r = i[l], o = r?.productId != null ? a[r.productId] : null;
         o?.skuIds.forEach(e => {
-            c.delete(e)
-        }), null != o && c.delete(o.id), s[l] = t, c.delete(l)
+            s.delete(e)
+        }), null != o && s.delete(o.id), c[l] = t, s.delete(l)
     },
     STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH: e => {
         let {
@@ -125,8 +125,8 @@ let h = new u(o.h, {
             let l = i[e],
                 t = l?.productId != null ? a[l.productId] : null;
             t?.skuIds.forEach(e => {
-                c.add(e)
-            }), null != t && c.add(t.id), c.add(e)
+                s.add(e)
+            }), null != t && s.add(t.id), s.add(e)
         })
     },
     STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_SUCCESS: e => {
@@ -135,8 +135,8 @@ let h = new u(o.h, {
         } = e;
         l.forEach(e => {
             e.skus.forEach(e => {
-                i[e.id] = e, delete s[e.id], c.delete(e.id)
-            }), a[e.id] = e, delete s[e.id], c.delete(e.id)
+                i[e.id] = e, delete c[e.id], s.delete(e.id)
+            }), a[e.id] = e, delete c[e.id], s.delete(e.id)
         })
     },
     STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_FAILURE: e => {
@@ -148,8 +148,8 @@ let h = new u(o.h, {
             let l = i[e],
                 r = l?.productId != null ? a[l.productId] : null;
             r?.skuIds.forEach(e => {
-                c.delete(e)
-            }), null != r && c.delete(r.id), s[e] = t, c.delete(e)
+                s.delete(e)
+            }), null != r && s.delete(r.id), c[e] = t, s.delete(e)
         })
     },
     STOREFRONT_SKU_PRICES_FETCH: e => {
@@ -157,7 +157,7 @@ let h = new u(o.h, {
             skuIds: l
         } = e;
         l.forEach(e => {
-            c.add(e)
+            s.add(e)
         })
     },
     STOREFRONT_SKU_PRICES_FETCH_SUCCESS: e => {
@@ -166,7 +166,7 @@ let h = new u(o.h, {
         } = e;
         Object.entries(l).forEach(e => {
             let [l, t] = e;
-            d[l] = t, delete s[l], c.delete(l)
+            d[l] = t, delete c[l], s.delete(l)
         })
     },
     STOREFRONT_SKU_PRICES_FETCH_FAILURE: e => {
@@ -175,10 +175,10 @@ let h = new u(o.h, {
             apiError: t
         } = e;
         l.forEach(e => {
-            c.delete(e), s[e] = t
+            s.delete(e), c[e] = t
         })
     },
     LOGOUT: e => {
-        n = {}, a = {}, i = {}, d = {}, c = new Set, s = {}
+        n = {}, a = {}, i = {}, d = {}, s = new Set, c = {}
     }
 })

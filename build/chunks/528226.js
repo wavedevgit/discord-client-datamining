@@ -13,12 +13,12 @@ let i = e => {
         logoSrc: t,
         backgroundColor: i,
         href: d,
-        children: c
-    } = e, s = (0, o.A)(l.src), u = (0, o.A)(t?.src);
+        children: s
+    } = e, c = (0, o.A)(l.src), u = (0, o.A)(t?.src);
     return (0, r.jsxs)("div", {
         className: a.ZK,
         style: {
-            backgroundImage: `url(${s})`,
+            backgroundImage: `url(${c})`,
             backgroundColor: i
         },
         children: [(0, r.jsxs)("div", {
@@ -32,9 +32,9 @@ let i = e => {
                 href: d,
                 ctaText: "COLLECTIBLES_SHOP_THE_COLLECTION"
             })]
-        }), null != c && (0, r.jsx)("div", {
+        }), null != s && (0, r.jsx)("div", {
             className: a.Y_,
-            children: c
+            children: s
         })]
     })
 }

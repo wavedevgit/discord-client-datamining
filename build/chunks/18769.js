@@ -12,8 +12,8 @@ let d = e => {
         backgroundImage: l,
         logoSrc: t,
         supplementalImage: d,
-        href: c,
-        ctaText: s
+        href: s,
+        ctaText: c
     } = e, u = (0, o.A)(l.src), h = (0, o.A)(t?.src), p = (0, o.A)(d?.src);
     return (0, r.jsxs)("div", {
         className: i.rJ,
@@ -30,10 +30,10 @@ let d = e => {
                         className: i.wm,
                         src: h,
                         alt: t?.alt ?? ""
-                    }), null != s && (0, r.jsx)(a.ar, {
-                        ctaText: s,
+                    }), null != c && (0, r.jsx)(a.ar, {
+                        ctaText: c,
                         variant: "overlay-primary",
-                        href: c
+                        href: s
                     })]
                 })
             })

@@ -1,6 +1,6 @@
 /** chunk id: 304973, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => s
+    A: () => c
 });
 var r = t(627968),
     o = t(397927),
@@ -8,16 +8,16 @@ var r = t(627968),
     a = t(53566),
     i = t(506456),
     d = t(653793),
-    c = t(494213);
-let s = e => {
+    s = t(494213);
+let c = e => {
     let {
         backgroundImage: l,
         href: t,
-        ctaText: s
-    } = e, u = (0, i.A)(l.src), h = (0, a.S)(s);
+        ctaText: c
+    } = e, u = (0, i.A)(l.src), h = (0, a.S)(c);
     return (0, r.jsx)(d.A, {
         children: (0, r.jsx)(o.DUT, {
-            className: c.j,
+            className: s.j,
             style: {
                 backgroundImage: `url(${u})`
             },

@@ -14,18 +14,18 @@ let i = (0, n.m6)() ? {
         }
     } : {},
     d = (0, n.m6)() ? ["dummy-skeleton"] : [],
-    c = (0, n.m6)() ? {
+    s = (0, n.m6)() ? {
         [a.C8]: {
             "dummy-popular-picks": a.Ot
         }
     } : {},
-    s = (0, n.m6)() ? ["dummy-skeleton-template"] : [],
+    c = (0, n.m6)() ? ["dummy-skeleton-template"] : [],
     u = (e, l) => `${e}/${l}`,
     h = i,
     p = new Set(d),
     m = {},
-    _ = c,
-    b = new Set(s),
+    _ = s,
+    b = new Set(c),
     S = {};
 class T extends r.Ay.Store {
     static displayName = "CmsLayoutStore";

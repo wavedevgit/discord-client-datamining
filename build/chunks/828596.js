@@ -1,7 +1,7 @@
 /** chunk id: 828596, original params: e,l,t (module,exports,require) **/
 t.d(l, {
     M0: () => u,
-    vZ: () => s
+    vZ: () => c
 });
 var r = t(73153),
     o = t(198982);
@@ -10,13 +10,13 @@ var n = t(371794),
     a = t(124338),
     i = t(631467),
     d = t(507832),
-    c = t(652215);
-async function s(e) {
+    s = t(652215);
+async function c(e) {
     let {
         collectionId: l,
         includeUnpublishedProducts: t = !1,
         includeUnpublishedCollection: d = !1,
-        includePricing: s = !1,
+        includePricing: c = !1,
         ignoreCache: u = !1
     } = e;
     if (!l || a.A.isFetching(l)) return;
@@ -27,12 +27,12 @@ async function s(e) {
             collectionId: l
         });
         let e = await (0, n.aP)({
-            url: c.Rsh.STOREFRONT_COLLECTION_WITH_PRODUCTS(l),
+            url: s.Rsh.STOREFRONT_COLLECTION_WITH_PRODUCTS(l),
             query: {
                 collection_id: l,
                 include_unpublished_products: t,
                 include_unpublished_collection: d,
-                include_pricing: s,
+                include_pricing: c,
                 ignore_cache: u
             },
             rejectWithError: !0
@@ -55,7 +55,7 @@ async function u(e) {
         productId: l,
         includePricing: t = !1,
         includeUnpublished: i = !1,
-        ignoreCache: s = !1
+        ignoreCache: c = !1
     } = e;
     if (!l || a.A.isFetching(l)) return;
     let u = a.A.getApiError(l);
@@ -65,11 +65,11 @@ async function u(e) {
             productId: l
         });
         let e = await (0, n.aP)({
-            url: c.Rsh.STOREFRONT_PRODUCT_WITH_SKUS(l),
+            url: s.Rsh.STOREFRONT_PRODUCT_WITH_SKUS(l),
             query: {
                 include_pricing: t,
                 include_unpublished: i,
-                ignore_cache: s
+                ignore_cache: c
             },
             rejectWithError: !0
         });

@@ -15,13 +15,13 @@ let d = e => {
     } = (0, n.q)(l, !0), d = o.useContext(i.v3);
     if (null == t) return null;
     let {
-        flattenProductVariants: c,
-        ...s
+        flattenProductVariants: s,
+        ...c
     } = d;
     return (0, r.jsx)(i.v3.Provider, {
         value: {
-            flattenProductVariants: c ?? !0,
-            ...s
+            flattenProductVariants: s ?? !0,
+            ...c
         },
         children: (0, r.jsx)(a.A, {
             skuId: l

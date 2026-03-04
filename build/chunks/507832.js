@@ -1,6 +1,6 @@
 /** chunk id: 507832, original params: e,l,t (module,exports,require) **/
 t.d(l, {
-    A: () => s
+    A: () => c
 });
 var r = t(575593),
     o = t(696444),
@@ -8,8 +8,8 @@ var r = t(575593),
     a = t(986630),
     i = t(260811),
     d = t(652215),
-    c = t(758836);
-class s {
+    s = t(758836);
+class c {
     id;
     skuIds;
     name;
@@ -32,7 +32,7 @@ class s {
             tenant_metadata: a,
             ...d
         } = e;
-        return new s({
+        return new c({
             ...d,
             skuIds: l,
             options: t.map(e => ({
@@ -53,7 +53,7 @@ class s {
         let t = this.skus.length > 1 ? r.R.VARIANTS_GROUP : l.type,
             {
                 items: i,
-                item: s
+                item: c
             } = (0, n.T)(e) ?? {};
         return new a.A({
             storeListingId: e.id,
@@ -64,9 +64,9 @@ class s {
             styles: void 0,
             type: t,
             premiumType: l.premiumType === d.oA2 ? null : l.premiumType,
-            items: i ?? [s].filter(e => null != e),
+            items: i ?? [c].filter(e => null != e),
             categorySkuId: l.categorySkuId ?? "",
-            isCategoryReward: c.MS.some(l => {
+            isCategoryReward: s.MS.some(l => {
                 let {
                     rewardSkuId: t
                 } = l;
@@ -95,7 +95,7 @@ class s {
                     premiumType: t.premiumType === d.oA2 ? null : t.premiumType,
                     items: r ?? [o].filter(e => null != e),
                     categorySkuId: t.categorySkuId ?? "",
-                    isCategoryReward: c.MS.some(e => {
+                    isCategoryReward: s.MS.some(e => {
                         let {
                             rewardSkuId: t
                         } = e;
