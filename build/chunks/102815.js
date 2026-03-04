@@ -147,7 +147,7 @@ let g = e => {
                             variant: "text-sm/normal",
                             color: "text-default",
                             className: C.XV,
-                            "aria-hidden": "true",
+                            inert: !0,
                             children: s
                         })]
                     }), null != T && (0, r.jsx)("div", {

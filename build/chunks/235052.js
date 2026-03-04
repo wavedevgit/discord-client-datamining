@@ -1,6 +1,6 @@
 /** chunk id: 235052, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => E,
+    A: () => f,
     u: () => g
 });
 var i = n(627968);
@@ -26,8 +26,8 @@ function g(t, e, n) {
         location: n
     }, {
         autoTrackExposure: !1
-    }), r = (0, l.bG)([d.default], () => d.default.getId()), m = (0, A.Ay)(t, e.guild_id)[0], h = (0, l.bG)([o.A], () => null != o.A.getStreamForUser(t, e.getGuildId())), g = (0, s.YY)(m?.application_id).data, E = (0, c.A)(t, e.id);
-    return r !== t && null != m && null != g && i && E && !h ? {
+    }), r = (0, l.bG)([d.default], () => d.default.getId()), m = (0, A.Ay)(t, e.guild_id)[0], h = (0, l.bG)([o.A], () => null != o.A.getStreamForUser(t, e.getGuildId())), g = (0, s.YY)(m?.application_id).data, f = (0, c.A)(t, e.id);
+    return r !== t && null != m && null != g && i && f && !h ? {
         playingApplication: g,
         handleRequestToStream: function(n) {
             a.A.sendActivityInvite({
@@ -42,7 +42,7 @@ function g(t, e, n) {
     } : null
 }
 
-function E(t, e) {
+function f(t, e) {
     let n = g(t, e, "useRequestToStreamItem");
     return null == n ? null : (0, i.jsx)(r.Drp, {
         id: "request-to-stream",

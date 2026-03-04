@@ -7,7 +7,7 @@ var i, l, r = n(627968),
     s = n(499979),
     o = n(451988),
     d = n(985018),
-    u = ((i = u || {}).ACTIVITY_FEED = "ACTIVITY_FEED", i.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", i.USER_ACTIVITY = "USER_ACTIVITY", i.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", i.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", i.VOICE_CHANNEL_HISTORY = "VOICE_CHANNEL_HISTORY", i),
+    u = ((i = u || {}).ACTIVITY_FEED = "ACTIVITY_FEED", i.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", i.USER_ACTIVITY = "USER_ACTIVITY", i.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", i.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", i),
     c = ((l = c || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
 let A = t => (e, n) => null == n ? "" : d.intl.format(t(), {
         time: e,
@@ -146,20 +146,6 @@ let A = t => (e, n) => null == n ? "" : d.intl.format(t(), {
                 }),
                 [s.pJ.YEARS]: t => d.intl.formatToPlainString(d.t["9Yr3NW"], {
                     time: t
-                })
-            }
-        },
-        VOICE_CHANNEL_HISTORY: {
-            END: {
-                [s.pJ.SECONDS]: () => d.intl.string(d.t["1QsMmY"]),
-                [s.pJ.MINUTES]: t => d.intl.formatToPlainString(d.t.LRNgHp, {
-                    count: t
-                }),
-                [s.pJ.HOURS]: t => d.intl.formatToPlainString(d.t.raJpz3, {
-                    count: t
-                }),
-                [s.pJ.DAYS]: t => d.intl.formatToPlainString(d.t.KkvKhi, {
-                    count: t
                 })
             }
         }
