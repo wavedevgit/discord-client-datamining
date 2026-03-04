@@ -1,30 +1,33 @@
 /** chunk id: 98254, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968),
     s = n(397927),
-    a = n(244242);
+    a = n(791498),
+    l = n(244242);
 
-function l(e) {
+function r(e) {
     let {
         node: t
     } = e, {
         useValue: n,
-        useTitle: l,
-        useSubtitle: r,
-        useOptions: o,
-        clearable: c
-    } = t, d = t.setValue, u = l(), _ = r?.(), m = n(), A = o();
-    return (0, i.jsx)(a.L, {
+        useTitle: r,
+        useSubtitle: o,
+        useOptions: c,
+        clearable: d
+    } = t, u = t.setValue, _ = r(), m = o?.(), A = n(), g = c(), h = (0, a.q)(t);
+    return (0, i.jsx)(l.L, {
         children: (0, i.jsx)(s.l6P, {
             selectionMode: "single",
-            label: u,
-            description: _,
-            options: A,
-            value: m,
-            clearable: c,
-            onSelectionChange: d,
+            label: _,
+            description: m,
+            options: g,
+            value: A,
+            clearable: d,
+            onSelectionChange: e => {
+                h(), u(e)
+            },
             layout: "horizontal-responsive",
             fullWidth: !0
         })

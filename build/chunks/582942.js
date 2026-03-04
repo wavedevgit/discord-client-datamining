@@ -1,6 +1,6 @@
 /** chunk id: 582942, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -8,8 +8,8 @@ var l = n(503698),
     a = n.n(l),
     s = n(735438),
     r = n.n(s),
-    c = n(311907),
-    o = n(990078),
+    o = n(311907),
+    c = n(990078),
     d = n(397927),
     u = n(587895),
     m = n(136086),
@@ -19,20 +19,20 @@ var l = n(503698),
     f = n(611656),
     j = n(459746),
     p = n(225732),
-    I = n(985018),
-    v = n(851822),
-    E = n(799864);
-let A = e => {
+    _ = n(985018),
+    I = n(851822),
+    v = n(799864);
+let E = e => {
     let {
         game: t,
         onClose: n,
         trackClick: l
-    } = e, a = (0, c.bG)([u.A], () => u.A.getApplication(t.applicationId));
-    return (0, i.jsx)(o.m, {
+    } = e, a = (0, o.bG)([u.A], () => u.A.getApplication(t.applicationId));
+    return (0, i.jsx)(c.m, {
         asContainer: !0,
         text: t.name,
         children: (0, i.jsx)(d.DUT, {
-            className: E.fS,
+            className: v.fS,
             onClick: async () => {
                 l(g.Ws.ClickSimilarGame, t.applicationId), (0, d.mMO)(() => Promise.resolve(e => (0, i.jsx)(p.default, {
                     applicationId: t.applicationId,
@@ -43,43 +43,43 @@ let A = e => {
             children: (0, i.jsx)(j.A, {
                 game: t,
                 application: a,
-                className: E.n1,
+                className: v.n1,
                 size: j.w.SMALL
             })
         })
     })
 };
 
-function _(e) {
+function A(e) {
     let {
         applicationId: t,
         onClose: n,
         trackAction: l,
         similarGames: s,
-        similarGamesError: o
-    } = e, u = (0, c.bG)([h.A, m.A], () => {
+        similarGamesError: c
+    } = e, u = (0, o.bG)([h.A, m.A], () => {
         let e = void 0 === h.A.getSimilarGames(t) && null == h.A.getSimilarGamesError(t),
             n = s.some(e => m.A.isFetching(e));
         return e || n
-    }), g = (0, c.yK)([m.A], () => s.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, f.oS)(e.applicationId)).slice(0, 5));
-    return ((0, x.k)(t), (0, x.W)(s), u && null == o) ? (0, i.jsxs)("div", {
+    }), g = (0, o.yK)([m.A], () => s.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, f.oS)(e.applicationId)).slice(0, 5));
+    return ((0, x.k)(t), (0, x.W)(s), u && null == c) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
-            className: a()(E.vM, v.bV)
+            className: a()(v.vM, I.bV)
         }), (0, i.jsx)("div", {
-            className: a()(v.nM, v.iH),
+            className: a()(I.nM, I.iH),
             children: r().range(0, 5).map(e => (0, i.jsx)("div", {
-                className: E.nn
+                className: v.nn
             }, e))
         })]
-    }) : (u || 0 !== g.length) && null == o ? (0, i.jsxs)("div", {
+    }) : (u || 0 !== g.length) && null == c ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(d.Heading, {
-            className: v.bV,
+            className: I.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: I.intl.string(I.t["6rLyQB"])
+            children: _.intl.string(_.t["6rLyQB"])
         }), (0, i.jsx)("div", {
-            className: E.D$,
-            children: g.map(e => null != e.supplementalData ? (0, i.jsx)(A, {
+            className: v.D$,
+            children: g.map(e => null != e.supplementalData ? (0, i.jsx)(E, {
                 game: e.supplementalData,
                 onClose: n,
                 trackClick: l

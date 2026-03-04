@@ -1,38 +1,40 @@
 /** chunk id: 578598, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    D: () => r
+    D: () => o
 });
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    l = n(244242);
+    l = n(791498),
+    r = n(244242);
 
-function r(e) {
+function o(e) {
     let {
         node: t
     } = e, {
         useLabel: n,
-        useTitle: r,
-        useSubtitle: o,
-        useVariant: c,
-        useDisabled: d,
-        onClick: u
-    } = t, [_, m] = s.useState(!1), A = s.useCallback(() => {
-        let e = u();
-        e instanceof Promise && (m(!0), e.finally(() => m(!1)))
-    }, [u]), g = r(), h = o?.(), x = n(), p = c?.(), E = d?.();
-    return (0, i.jsx)(l.L, {
+        useTitle: o,
+        useSubtitle: c,
+        useVariant: d,
+        useDisabled: u,
+        onClick: _
+    } = t, [m, A] = s.useState(!1), g = (0, l.q)(t), h = o(), x = c?.(), p = n(), E = d?.(), C = u?.();
+    return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(a.D0$, {
-            label: g,
-            description: h,
-            disabled: E,
+            label: h,
+            description: x,
+            disabled: C,
             layout: "horizontal",
             children: (0, i.jsx)(a.Button, {
-                onClick: A,
-                text: x,
-                variant: p,
-                disabled: E,
-                loading: _
+                onClick: () => {
+                    g();
+                    let e = _();
+                    e instanceof Promise && (A(!0), e.finally(() => A(!1)))
+                },
+                text: p,
+                variant: E,
+                disabled: C,
+                loading: m
             })
         })
     })

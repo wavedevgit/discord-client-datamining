@@ -1,55 +1,58 @@
 /** chunk id: 915953, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => o
 });
 var i = n(627968),
     s = n(64700),
     a = n(397927),
-    l = n(244242);
+    l = n(791498),
+    r = n(244242);
 
-function r(e) {
+function o(e) {
     let {
         node: t
     } = e, {
         setValue: n,
-        getInitialValue: r,
-        minValue: o,
-        maxValue: c,
-        useDefaultValue: d,
-        useTitle: u,
-        useSubtitle: _,
-        useHintText: m,
-        useDisabled: A,
-        useExternalValue: g,
-        onValueRender: h,
-        asValueChanges: x,
-        markers: p,
-        onMarkerRender: E,
-        stickToMarkers: C,
-        fieldLayout: T
-    } = t, [S] = s.useState(() => r()), I = g?.(), f = u(), N = _?.(), b = m?.(), j = A?.(), v = d?.();
-    return (0, i.jsxs)(l.L, {
+        getInitialValue: o,
+        minValue: c,
+        maxValue: d,
+        useDefaultValue: u,
+        useTitle: _,
+        useSubtitle: m,
+        useHintText: A,
+        useDisabled: g,
+        useExternalValue: h,
+        onValueRender: x,
+        asValueChanges: p,
+        markers: E,
+        onMarkerRender: C,
+        stickToMarkers: T,
+        fieldLayout: S
+    } = t, [I] = s.useState(() => o()), f = h?.(), N = _(), b = m?.(), j = A?.(), v = g?.(), O = u?.(), R = (0, l.q)(t);
+    return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(a.Apm, {
-            label: f,
-            description: N,
-            disabled: j,
-            initialValue: S,
-            value: I,
-            minValue: o,
-            maxValue: c,
-            defaultValue: v,
-            onValueRender: h,
-            asValueChanges: x,
-            onValueChange: n,
+            label: N,
+            description: b,
+            disabled: v,
+            initialValue: I,
+            value: f,
+            minValue: c,
+            maxValue: d,
+            defaultValue: O,
+            onValueRender: x,
+            asValueChanges: p,
+            onValueChange: e => {
+                R(), n?.(e)
+            },
             orientation: "horizontal",
-            markers: p,
-            onMarkerRender: E,
-            stickToMarkers: C,
-            layout: T
-        }), null != b && (0, i.jsx)(a.Text, {
+            markers: E,
+            onMarkerRender: C,
+            stickToMarkers: T,
+            layout: S
+        }), null != j && (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: b
+            children: j
         })]
     })
 }

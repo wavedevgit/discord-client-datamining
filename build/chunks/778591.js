@@ -7,16 +7,16 @@ var i = n(792216),
     a = n(311907),
     s = n(587895),
     r = n(223273),
-    c = n(136086),
-    o = n(760751),
+    o = n(136086),
+    c = n(760751),
     d = n(240248),
     u = n(652215);
 
 function m(e) {
-    return (0, a.bG)([o.A, c.A, s.A], () => {
+    return (0, a.bG)([c.A, o.A, s.A], () => {
         if (null == e) return null;
-        let t = o.A.getDetectableGame(e),
-            n = c.A.getGame(e),
+        let t = c.A.getDetectableGame(e),
+            n = o.A.getGame(e),
             a = n?.supplementalData,
             m = s.A.getApplication(e);
         if (a?.steamReleaseStatus === i.Y.RETIRED_ABANDONED) return null;

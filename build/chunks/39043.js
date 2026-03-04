@@ -1,6 +1,6 @@
 /** chunk id: 39043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -9,15 +9,16 @@ var i = n(627968),
     r = n(770178),
     o = n(894858),
     c = n(641324),
-    d = n(78837);
-let u = s.memo(function(e) {
+    d = n(791498),
+    u = n(78837);
+let _ = s.memo(function(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
-        layout: u,
-        useCollapsedSubtitle: _
-    } = t, [m, A] = s.useState(!1), [g, h] = s.useState(!0), x = s.useRef(m);
+        layout: _,
+        useCollapsedSubtitle: m
+    } = t, [A, g] = s.useState(!1), [h, x] = s.useState(!0), p = s.useRef(A);
     s.useEffect(() => o.A.subscribe(e => {
         let {
             navTransition: t
@@ -25,18 +26,18 @@ let u = s.memo(function(e) {
         return t
     }, e => {
         let n = e?.targetAccordionKey === t.key;
-        n && !m && (x.current = !0, A(!0), h(!1)), n && m && (o.A.setState({
+        n && !A && (p.current = !0, g(!0), x(!1)), n && A && (o.A.setState({
             navTransition: {
                 ...e,
                 targetAccordionKey: void 0
             }
-        }), h(!0))
+        }), x(!0))
     }, {
         equalityFn: l.x,
         fireImmediately: !0
-    }), [m, t.key]);
-    let p = s.useCallback(e => {
-            null == e.target || x.current === m || (x.current = m, m && o.A.setState({
+    }), [A, t.key]);
+    let E = s.useCallback(e => {
+            null == e.target || p.current === A || (p.current = A, A && o.A.setState({
                 navTransition: {
                     targetKey: t.key,
                     targetAccordionKey: t.key,
@@ -44,19 +45,22 @@ let u = s.memo(function(e) {
                     scrollBlock: "nearest"
                 }
             }))
-        }, [m, t.key]),
-        E = s.useMemo(() => (0, a.debounce)(p, 50), [p]),
-        C = (0, r.w)(E),
-        T = n?.(m),
-        S = _?.();
-    return (0, i.jsx)(d.f, {
-        ref: C,
-        title: T,
-        collapsedSubtitle: S,
-        isExpanded: m,
-        onExpandedChange: A,
-        animate: g,
-        children: u.map(e => (0, i.jsx)(c.A, {
+        }, [A, t.key]),
+        C = s.useMemo(() => (0, a.debounce)(E, 50), [E]),
+        T = (0, r.w)(C),
+        S = n?.(A),
+        I = m?.(),
+        f = (0, d.q)(t);
+    return (0, i.jsx)(u.f, {
+        ref: T,
+        title: S,
+        collapsedSubtitle: I,
+        isExpanded: A,
+        onExpandedChange: e => {
+            f(), g(e)
+        },
+        animate: h,
+        children: _.map(e => (0, i.jsx)(c.A, {
             node: e
         }, e.key))
     })

@@ -1,36 +1,39 @@
 /** chunk id: 43146, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => l
+    v: () => r
 });
 var i = n(627968),
     s = n(397927),
-    a = n(244242);
+    a = n(791498),
+    l = n(244242);
 
-function l(e) {
+function r(e) {
     let {
         node: t
     } = e, {
         useValue: n,
-        setValue: l,
-        useTitle: r,
-        useSubtitle: o,
-        useDisabled: c,
-        useDisabledMessage: d,
-        useBadge: u,
-        hasIcon: _
-    } = t, m = r(), A = o?.(), g = n(), h = c?.() ?? !1, x = d?.(), p = u?.();
-    return (0, i.jsxs)(a.L, {
+        setValue: r,
+        useTitle: o,
+        useSubtitle: c,
+        useDisabled: d,
+        useDisabledMessage: u,
+        useBadge: _,
+        hasIcon: m
+    } = t, A = o(), g = c?.(), h = n(), x = d?.() ?? !1, p = u?.(), E = _?.(), C = (0, a.q)(t);
+    return (0, i.jsxs)(l.L, {
         children: [(0, i.jsx)(s.dOG, {
-            label: m,
-            description: A,
-            badge: p,
-            checked: g,
-            hasIcon: _,
-            onChange: e => l(e),
-            disabled: h
-        }), h && null != x ? (0, i.jsx)(s.po8, {
+            label: A,
+            description: g,
+            badge: E,
+            checked: h,
+            hasIcon: m,
+            onChange: e => {
+                C(), r(e)
+            },
+            disabled: x
+        }), x && null != p ? (0, i.jsx)(s.po8, {
             messageType: s.YCn.WARNING,
-            children: x
+            children: p
         }) : null]
     })
 }

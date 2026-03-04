@@ -1,6 +1,6 @@
 /** chunk id: 422069, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => o
 });
 var i = n(311907),
     l = n(73153);
@@ -15,7 +15,7 @@ class r extends i.Ay.Store {
         return s[e]
     }
 }
-let c = new r(l.h, {
+let o = new r(l.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,

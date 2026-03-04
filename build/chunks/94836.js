@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(397927),
     s = n(256905),
     r = n(409626),
-    c = n(985018),
-    o = n(851822),
+    o = n(985018),
+    c = n(851822),
     d = n(351886);
 
 function u(e) {
@@ -37,10 +37,10 @@ function u(e) {
     }
     return 0 === m.length ? null : (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.Heading, {
-            className: o.bV,
+            className: c.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: c.intl.string(c.t.bNdK5x)
+            children: o.intl.string(o.t.bNdK5x)
         }), (0, i.jsxs)("div", {
             className: x ? d.DA : d.pZ,
             children: [(0, i.jsx)(a.zCo, {
@@ -64,7 +64,7 @@ function u(e) {
                     children: (0, i.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
-                        alt: c.intl.formatToPlainString(c.t.COYYrn, {
+                        alt: o.intl.formatToPlainString(o.t.COYYrn, {
                             game: name
                         })
                     })
@@ -99,7 +99,7 @@ function m(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, u = l.useRef(null), m = l.useMemo(() => {
+    } = e, c = l.useRef(null), u = l.useMemo(() => {
         let e = t.artwork.map(e => ({
             url: e,
             type: "IMAGE"
@@ -108,29 +108,24 @@ function m(e) {
             url: e,
             type: "IMAGE"
         })), ...e]
-    }, [t.artwork, t.screenshots]), x = m.length > 2;
+    }, [t.artwork, t.screenshots]), m = u.length > 2;
 
-    function g(e) {
-        if (null == u.current) return;
-        let t = u.current.getScrollerState().scrollLeft;
-        u.current.scrollTo({
+    function x(e) {
+        if (null == c.current) return;
+        let t = c.current.getScrollerState().scrollLeft;
+        c.current.scrollTo({
             to: t + 280 * e,
             animate: !0
         })
     }
-    return 0 === m.length ? null : (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(a.Heading, {
-            className: o.bV,
-            variant: "text-md/semibold",
-            color: "text-strong",
-            children: c.intl.string(c.t.bNdK5x)
-        }), (0, i.jsxs)("div", {
-            className: x ? d.DA : d.pZ,
+    return 0 === u.length ? null : (0, i.jsx)("div", {
+        children: (0, i.jsxs)("div", {
+            className: m ? d.DA : d.pZ,
             children: [(0, i.jsx)(a.zCo, {
-                ref: u,
+                ref: c,
                 className: d.ec,
                 orientation: "horizontal",
-                children: m.map((e, l) => (0, i.jsx)(a.DUT, {
+                children: u.map((e, l) => (0, i.jsx)(a.DUT, {
                     className: d.gw,
                     focusProps: {
                         offset: 4,
@@ -138,7 +133,7 @@ function m(e) {
                     },
                     onClick: () => {
                         n(r.Ws.ClickImage), (0, s.R)({
-                            items: m,
+                            items: u,
                             startingIndex: l,
                             shouldHideMediaOptions: !0,
                             location: "GameProfileMedia"
@@ -147,18 +142,18 @@ function m(e) {
                     children: (0, i.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
-                        alt: c.intl.formatToPlainString(c.t.COYYrn, {
+                        alt: o.intl.formatToPlainString(o.t.COYYrn, {
                             game: t.name
                         })
                     })
                 }, l))
-            }), x && (0, i.jsxs)("div", {
+            }), m && (0, i.jsxs)("div", {
                 className: d.NA,
                 children: [(0, i.jsx)("div", {
                     className: d.EJ
                 }), (0, i.jsx)(a.DUT, {
                     className: d.G9,
-                    onClick: () => g(-1),
+                    onClick: () => x(-1),
                     children: (0, i.jsx)(a.rJJ, {
                         className: d.UE,
                         color: "currentColor"
@@ -167,13 +162,13 @@ function m(e) {
                     className: d.Pj
                 }), (0, i.jsx)(a.DUT, {
                     className: d.G9,
-                    onClick: () => g(1),
+                    onClick: () => x(1),
                     children: (0, i.jsx)(a.EdP, {
                         className: d.UE,
                         color: "currentColor"
                     })
                 })]
             })]
-        })]
+        })
     })
 }

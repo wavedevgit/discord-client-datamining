@@ -1,14 +1,14 @@
 /** chunk id: 942528, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
     a = n(503698),
     s = n.n(a),
     r = n(311907),
-    c = n(397927),
-    o = n(734057),
+    o = n(397927),
+    c = n(734057),
     d = n(309010),
     u = n(287809),
     m = n(562153),
@@ -18,36 +18,36 @@ var i = n(627968),
     f = n(985018),
     j = n(505502),
     p = n(851822);
-let I = e => {
+let _ = e => {
     let {
         entry: t,
         onClose: n,
         onReaction: a,
-        onRequestOpen: I,
-        disableActivityProfileLinks: v,
-        customCTA: E,
-        popoutClassname: A,
-        popoutPosition: _ = "right"
-    } = e, N = l.useRef(null), T = (0, r.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), S = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
-        nick: C,
+        onRequestOpen: _,
+        disableActivityProfileLinks: I,
+        customCTA: v,
+        popoutClassname: E,
+        popoutPosition: A = "right"
+    } = e, N = l.useRef(null), C = (0, r.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), T = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        nick: S,
         avatar: b
     } = l.useMemo(() => {
-        let e = S?.getAvatarURL(T?.guild_id, 48, !1);
+        let e = T?.getAvatarURL(C?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(T?.guild_id, T?.id, S),
+            nick: m.Ay.getName(C?.guild_id, C?.id, T),
             avatar: e
         }
-    }, [S, T]);
-    return null == S ? null : (0, i.jsx)(c.YNO, {
+    }, [T, C]);
+    return null == T ? null : (0, i.jsx)(o.YNO, {
         targetElementRef: N,
-        position: _,
+        position: A,
         renderPopout: e => {
             let {
                 closePopout: l,
                 updatePosition: s
             } = e;
             return (0, i.jsx)("div", {
-                className: A,
+                className: E,
                 children: (0, i.jsx)(x.Oo, {
                     entry: t,
                     closePopout: l,
@@ -57,19 +57,19 @@ let I = e => {
                     },
                     onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
-                    disableActivityProfileLinks: v
+                    disableActivityProfileLinks: I
                 })
             })
         },
         positionKey: `'content-entry-${t.id}`,
         onRequestOpen: () => {
-            I?.()
+            _?.()
         },
-        children: e => (0, i.jsx)(c.DUT, {
+        children: e => (0, i.jsx)(o.DUT, {
             innerRef: N,
             ...e,
             className: j.GA,
-            children: (0, i.jsx)(c.vN3, {
+            children: (0, i.jsx)(o.vN3, {
                 offset: {
                     top: 4,
                     bottom: 4,
@@ -81,17 +81,17 @@ let I = e => {
                         className: j.my,
                         src: b,
                         alt: f.intl.formatToPlainString(f.t.IzVXxY, {
-                            userName: C
+                            userName: S
                         })
                     }), (0, i.jsx)("div", {
                         className: j.Su,
                         children: (0, i.jsxs)("div", {
                             className: s()(p.fi, p.Kt),
-                            children: [(0, i.jsx)(c.Text, {
+                            children: [(0, i.jsx)(o.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
-                                children: C
+                                children: S
                             }), (0, i.jsx)(h.mG, {
                                 location: h.N5.APP_LAUNCHER,
                                 children: g.n.map((e, n) => (0, i.jsx)(e, {
@@ -99,9 +99,9 @@ let I = e => {
                                 }, n))
                             })]
                         })
-                    }), null != E ? E : (0, i.jsx)("div", {
+                    }), null != v ? v : (0, i.jsx)("div", {
                         className: j.Br,
-                        children: (0, i.jsx)(c.W4J, {
+                        children: (0, i.jsx)(o.W4J, {
                             size: "sm"
                         })
                     })]

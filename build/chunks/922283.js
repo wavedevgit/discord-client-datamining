@@ -7,8 +7,8 @@ var i = n(627968),
     a = n(990078),
     s = n(397927),
     r = n(223273),
-    c = n(317607),
-    o = n(880405),
+    o = n(317607),
+    c = n(880405),
     d = n(778591),
     u = n(985018),
     m = n(719187);
@@ -21,7 +21,7 @@ let x = function(e) {
     } = t, g = n?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, h = (0, d.I)(x), f = (0, c.j)(g.rating, g.ratingCount), j = function(e) {
+    }, h = (0, d.I)(x), f = (0, o.j)(g.rating, g.ratingCount), j = function(e) {
         switch (e) {
             case r.vI.NO_USER_REVIEWS:
                 return "text-subtle";
@@ -40,12 +40,12 @@ let x = function(e) {
             default:
                 return "text-subtle"
         }
-    }(f), [p, I] = l.useState(!1), v = l.useCallback(() => {
-        I(!0)
+    }(f), [p, _] = l.useState(!1), I = l.useCallback(() => {
+        _(!0)
+    }, []), v = l.useCallback(() => {
+        _(!1)
     }, []), E = l.useCallback(() => {
-        I(!1)
-    }, []), A = l.useCallback(() => {
-        null != h && window.open((0, o.L)(h), "_blank", "noreferrer noopener")
+        null != h && window.open((0, c.L)(h), "_blank", "noreferrer noopener")
     }, [h]);
     return null == h ? null : (0, i.jsxs)("div", {
         className: m.uW,
@@ -60,7 +60,7 @@ let x = function(e) {
             text: u.intl.string(u.t.YNC5Di),
             shouldShow: !p,
             children: (0, i.jsx)(s.DUT, {
-                onClick: A,
+                onClick: E,
                 className: m.nf,
                 role: "link",
                 "aria-label": u.intl.string(u.t.YNC5Di),
@@ -85,8 +85,8 @@ let x = function(e) {
                                     rating: g.rating,
                                     rating_count: g.ratingCount?.toLocaleString()
                                 }).toString(),
-                                onTooltipShow: v,
-                                onTooltipHide: E,
+                                onTooltipShow: I,
+                                onTooltipHide: v,
                                 children: (0, i.jsxs)("div", {
                                     className: m.Z0,
                                     children: [(0, i.jsx)(s.Text, {

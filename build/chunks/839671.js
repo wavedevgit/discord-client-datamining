@@ -9,8 +9,8 @@ var l = n(503698),
     a = n.n(l),
     s = n(505779),
     r = n(990078),
-    c = n(397927),
-    o = n(409626),
+    o = n(397927),
+    c = n(409626),
     d = n(985018),
     u = n(851822),
     m = n(307291);
@@ -20,19 +20,19 @@ function g(e) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
-                icon: (0, i.jsx)(c.L_e, {
+                icon: (0, i.jsx)(o.L_e, {
                     colorClass: m.wP
-                }), action: o.Ws.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
+                }), action: c.Ws.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
             };
         case s.V.TWITTER:
             return {
-                icon: (0, i.jsx)(c.p3p, {
+                icon: (0, i.jsx)(o.p3p, {
                     colorClass: m.wP
-                }), action: o.Ws.XLink, title: d.intl.string(d.t.INic4y)
+                }), action: c.Ws.XLink, title: d.intl.string(d.t.INic4y)
             };
         case s.V.YOUTUBE:
             return {
-                action: o.Ws.YouTubeLink, icon: (0, i.jsx)(c.CiD, {
+                action: c.Ws.YouTubeLink, icon: (0, i.jsx)(o.CiD, {
                     colorClass: m.wP
                 }), title: d.intl.string(d.t.lNmxbE)
             };
@@ -52,7 +52,7 @@ function h(e) {
     } = g(t);
     return (0, i.jsx)(r.m, {
         text: s,
-        children: (0, i.jsx)(c.MzZ, {
+        children: (0, i.jsx)(o.MzZ, {
             onClick: () => {
                 n(l)
             },
@@ -77,7 +77,7 @@ let f = function(e) {
         return x.includes(t)
     }).sort((e, t) => e.category - t.category);
     return 0 === l.length ? null : (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(c.Heading, {
+        children: [(0, i.jsx)(o.Heading, {
             className: u.bV,
             variant: "text-xs/semibold",
             color: "text-default",
@@ -103,7 +103,7 @@ function j(e) {
     } = g(t);
     return (0, i.jsx)(r.m, {
         __unsupportedReactNodeAsText: t.url,
-        children: (0, i.jsx)(c.DUT, {
+        children: (0, i.jsx)(o.DUT, {
             tag: "a",
             onClick: () => {
                 n(l)
@@ -131,7 +131,7 @@ function p(e) {
         return x.includes(t)
     }).sort((e, t) => e.category - t.category);
     return 0 === l.length ? null : (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(c.Heading, {
+        children: [(0, i.jsx)(o.Heading, {
             className: u.bV,
             variant: "text-xs/semibold",
             color: "text-default",

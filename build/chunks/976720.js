@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(158954),
     s = n(44724),
     r = n(409626),
-    c = n(652215),
-    o = n(985018);
+    o = n(652215),
+    c = n(985018);
 
 function d(e) {
     let {
@@ -25,9 +25,9 @@ function d(e) {
             invite: t
         }), d(), n(r.Ws.GameShop))
     }, [d, t, n]);
-    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
+    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
         variant: "primary",
-        text: o.intl.string(o.t.v8UpgE),
+        text: c.intl.string(c.t.v8UpgE),
         icon: a.U1X,
         onClick: m,
         onMouseDown: u,
@@ -49,9 +49,9 @@ function u(e) {
             invite: t
         }), d(), n(r.Ws.GameShop))
     }, [d, t, n]);
-    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
+    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
         variant: "primary",
-        text: o.intl.string(o.t.v8UpgE),
+        text: c.intl.string(c.t.v8UpgE),
         icon: a.U1X,
         onClick: m,
         onMouseDown: u,

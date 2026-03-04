@@ -11,5 +11,6 @@ var n = i(419954),
     o = i(843956),
     d = i(50641);
 let A = (0, n.Hr)({
-    buildLayout: () => [u.r, o.K, a.i, s.$, l.I, r.N, d.n]
+    buildLayout: () => [u.r, o.K, a.i, s.$, l.I, r.N, d.n],
+    analyticsKey: "user_settings"
 })

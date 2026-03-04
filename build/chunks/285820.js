@@ -7,8 +7,8 @@ var i = n(627968),
     a = n(505779),
     s = n(60465),
     r = n(778591),
-    c = n(145963),
-    o = n(985018);
+    o = n(145963),
+    c = n(985018);
 let d = new Set(["1402418703554842694", "356877880938070016"]),
     u = function(e) {
         let {
@@ -28,11 +28,11 @@ let d = new Set(["1402418703554842694", "356877880938070016"]),
                 }), null != e[a.V.ROBLOX] && l.push(e[a.V.ROBLOX]), null != e[a.V.BATTLENET] && l.push(e[a.V.BATTLENET]), null != e[a.V.RIOT] && l.push(e[a.V.RIOT]), null != e[a.V.MINECRAFT] && l.push(e[a.V.MINECRAFT]), l
             }, [t, i, n])
         }(t);
-        return 0 === n.length ? null : 1 === n.length ? (0, i.jsx)(c.uC, {
+        return 0 === n.length ? null : 1 === n.length ? (0, i.jsx)(o.uC, {
             website: n[0]
-        }) : (0, i.jsx)(c.rZ, {
-            text: o.intl.string(o.t["/hMurx"]),
-            "aria-label": o.intl.string(o.t.nK60cc),
+        }) : (0, i.jsx)(o.rZ, {
+            text: c.intl.string(c.t["/hMurx"]),
+            "aria-label": c.intl.string(c.t.nK60cc),
             onClick: () => s.A.openGameProfileStoreLinksModal({
                 detectedGame: t,
                 storeWebsites: n
