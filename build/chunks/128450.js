@@ -1,6 +1,6 @@
 /** chunk id: 128450, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => h
+    A: () => m
 });
 var r = t(627968),
     i = t(64700),
@@ -28,35 +28,35 @@ function f(e) {
         }, n))
     })
 }
-let h = i.forwardRef(function(e, n) {
+let m = i.forwardRef(function(e, n) {
     let {
         title: t,
         titleIcon: i,
         titleId: a,
         description: c,
-        children: h,
-        className: m,
+        children: m,
+        className: h,
         errors: g,
         disabled: p = !1,
-        hideDivider: v = !1,
-        showBorder: x = !1,
+        hideDivider: x = !1,
+        showBorder: v = !1,
         borderType: _,
         hasBackground: A = !1,
         forcedDivider: b = !1,
         showPremiumIcon: j = !1
     } = e;
     return (0, r.jsx)("div", {
-        className: l()(o.fz, m, {
+        className: l()(o.fz, h, {
             [o.r9]: p,
-            [o.Ai]: v,
-            [o.Ac]: x,
+            [o.Ai]: x,
+            [o.Ac]: v,
             [o.Cx]: b
         }),
         ref: n,
         children: (0, r.jsxs)(u.A, {
             className: o.D6,
             backgroundClassName: o.fr,
-            isShown: x,
+            isShown: v,
             type: _,
             hasBackground: A,
             children: [(0, r.jsxs)(d.zEo, {
@@ -71,7 +71,7 @@ let h = i.forwardRef(function(e, n) {
                 className: o.yV,
                 "data-migration-pending": !0,
                 children: c
-            }) : null, h, null != g && (0, r.jsx)(f, {
+            }) : null, m, null != g && (0, r.jsx)(f, {
                 errors: g
             })]
         })

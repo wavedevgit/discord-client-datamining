@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(73153),
     r = n(824865),
     l = n(976860),
-    s = n(954571),
-    a = n(545167),
+    a = n(954571),
+    s = n(545167),
     o = n(729904),
     c = n(652215);
 
@@ -22,10 +22,10 @@ function d(e, t) {
 
 function u(e) {
     if (!(0, l.TX)()) return;
-    if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+    if (a.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: -1,
             nav_trigger: e
-        }), !(0, a.v)({
+        }), !(0, s.v)({
             location: "navigatingBackForward"
         })) return void(0, l.aX)();
     let t = o.A.backDestination;
@@ -36,10 +36,10 @@ function u(e) {
 
 function h(e) {
     if (!(0, l.TX)()) return;
-    if (s.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+    if (a.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: 1,
             nav_trigger: e
-        }), !(0, a.v)({
+        }), !(0, s.v)({
             location: "navigatingBackForward"
         })) return void(0, l.sY)();
     let t = o.A.forwardDestination;

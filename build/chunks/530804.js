@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(64700),
     r = n(735438),
     l = n(311907),
-    s = n(568598),
-    a = n(313961),
+    a = n(568598),
+    s = n(313961),
     o = n(288737),
     c = n(961350),
     d = n(734057),
@@ -21,8 +21,8 @@ var i = n(64700),
 
 function g(e, t) {
     let n = (0, l.bG)([h.A, C.A], () => e === C.A.getChannelId() ? h.A.getDesyncedVoiceStates() : null),
-        s = (0, l.yK)([a.A], () => null == e ? [] : [...a.A.getGuildRingingUsers(e)]),
-        c = (0, l.yK)([E.default], () => s.map(e => E.default.getUser(e)).filter(_.Vq)),
+        a = (0, l.yK)([s.A], () => null == e ? [] : [...s.A.getGuildRingingUsers(e)]),
+        c = (0, l.yK)([E.default], () => a.map(e => E.default.getUser(e)).filter(_.Vq)),
         A = (0, l.bG)([d.A], () => d.A.getBasicChannel(e)),
         g = i.useMemo(() => c.map(e => ({
             voiceState: new o.A(e.id),
@@ -61,7 +61,7 @@ function p(e, t) {
         if (null == e || 0 === e.length) return t;
         let n = [...t];
         return e.forEach(e => {
-            n.splice((0, r.sortedIndexBy)(n, e, e => (0, s.KU)(e)), 0, e)
+            n.splice((0, r.sortedIndexBy)(n, e, e => (0, a.KU)(e)), 0, e)
         }), n
     })(n, t), [n, t])
 }
@@ -69,8 +69,8 @@ function p(e, t) {
 function m(e, t) {
     let n = (0, l.bG)([c.default], () => c.default.getId() === t),
         r = (0, l.bG)([C.A], () => C.A.getChannelId()),
-        s = i.useRef(null),
-        [a, o] = i.useState(!1),
+        a = i.useRef(null),
+        [s, o] = i.useState(!1),
         [d, u] = i.useState(!1),
         h = (0, l.bG)([C.A, A.A], () => null != t && null != e && C.A.getChannelId() === e && null != A.A.isInChannel(e, t) && C.A.isUserConnected(t)),
         E = (0, l.bG)([C.A, A.A], () => null != t && null != e && C.A.getChannelId() === e && null != A.A.isInChannel(e, t) && !C.A.isUserConnected(t));
@@ -78,9 +78,9 @@ function m(e, t) {
         h && u(!0)
     }, [h]), i.useEffect(() => {
         r !== e && u(!1)
-    }, [e, r]), i.useEffect(() => (E && null == s.current ? s.current = setTimeout(() => {
-        s.current = null, o(!0)
-    }, 250) : (clearTimeout(s.current), s.current = null, o(!1)), () => {
-        clearTimeout(s.current), s.current = null
-    }), [E]), !n && d && a
+    }, [e, r]), i.useEffect(() => (E && null == a.current ? a.current = setTimeout(() => {
+        a.current = null, o(!0)
+    }, 250) : (clearTimeout(a.current), a.current = null, o(!1)), () => {
+        clearTimeout(a.current), a.current = null
+    }), [E]), !n && d && s
 }

@@ -40,9 +40,11 @@ let g = e => {
         progressGlowing: L = !1,
         featured: M,
         className: U,
-        blurTint: w
-    } = e, B = (0, m.DP)(), {
-        fractionalState: k
+        containerClassName: w,
+        tabIndex: B = 0,
+        blurTint: k
+    } = e, G = (0, m.DP)(), {
+        fractionalState: W
     } = (0, R.A)();
     (0, _.A)({
         type: d.ImpressionTypes.VIEW,
@@ -51,37 +53,40 @@ let g = e => {
             name: t
         }
     });
-    let G = a.useMemo(() => (0, i.debounce)(() => {
+    let V = a.useMemo(() => (0, i.debounce)(() => {
             p.default.track(f.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
                 card_type: (0, i.snakeCase)(n)
             })
         }, 800), [n]),
-        W = a.useCallback(() => {
+        H = a.useCallback(() => {
             null != P && (P(), p.default.track(f.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
                 card_type: (0, i.snakeCase)(n),
                 function_name: (0, i.snakeCase)(P.name)
             }))
         }, [P, n]),
-        V = j && k === E.xc.FP_ONLY,
-        H = !(0, i.isEmpty)(S),
-        Y = H && (0, o.q)(B),
-        F = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(),
-        K = V || !(0, i.isEmpty)(O);
+        Y = j && W === E.xc.FP_ONLY,
+        F = !(0, i.isEmpty)(S),
+        K = F && (0, o.q)(G),
+        $ = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(),
+        q = Y || !(0, i.isEmpty)(O);
     return (0, r.jsx)(u.NPJ, {
-        theme: Y ? f.NJ8.DARKER : void 0,
+        theme: K ? f.NJ8.DARKER : void 0,
         children: e => (0, r.jsxs)(x.A, {
-            onMouseEnter: G,
+            id: t,
+            tabIndex: B,
+            onMouseEnter: V,
             cardType: c.sl2.PRIMARY,
             hueRotate: 25,
-            glowAmount: y ? (0, o.M)(B) ? 2 : 8 : 0,
+            glowAmount: y ? (0, o.M)(G) ? 2 : 8 : 0,
             blurAmount: 10 * !!y,
-            className: C.Ui,
+            className: l()(C.Ui, w, {
+                [C.Tn]: F
+            }),
             cardClassName: l()(C.Nr, e, U, {
-                [C.j8]: M,
-                [C.Tn]: H
+                [C.j8]: M
             }),
             cardStyle: {
-                backgroundImage: H ? `url(${S})` : void 0,
+                backgroundImage: F ? `url(${S})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
@@ -110,13 +115,12 @@ let g = e => {
                 children: [(0, r.jsx)("div", {
                     className: C.u_,
                     style: {
-                        "--custom-tint-color": w ?? F
+                        "--custom-tint-color": k ?? $
                     },
                     "aria-hidden": !0
                 }), (0, r.jsxs)("div", {
                     className: C.P_,
-                    tabIndex: 0,
-                    children: [V && (0, r.jsxs)("div", {
+                    children: [Y && (0, r.jsxs)("div", {
                         className: C.d_,
                         children: [(0, r.jsx)(c.tvc, {
                             size: "sm",
@@ -158,18 +162,18 @@ let g = e => {
                             maximum: 1,
                             glowing: L
                         })
-                    }), K && (0, r.jsx)("div", {
+                    }), q && (0, r.jsx)("div", {
                         className: C.Cj
                     })]
-                }), K && (0, r.jsxs)("div", {
+                }), q && (0, r.jsxs)("div", {
                     className: C.yk,
-                    children: [V && (0, r.jsx)(A.A, {
+                    children: [Y && (0, r.jsx)(A.A, {
                         fullWidth: !0,
                         defaultTextOverride: N.intl.string(N.t.sEAnVH)
-                    }), !V && (0, r.jsx)(u.$nd, {
+                    }), !Y && (0, r.jsx)(u.$nd, {
                         text: O,
-                        variant: !H && (0, o.q)(B) ? "primary" : "overlay-primary",
-                        onClick: W
+                        variant: !F && (0, o.q)(G) ? "primary" : "overlay-primary",
+                        onClick: H
                     })]
                 })]
             })]

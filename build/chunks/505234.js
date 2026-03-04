@@ -19,7 +19,7 @@ let i = e => {
         handleRightClick: e => (0, a.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([s.e("64719"), s.e("10178")]).then(s.bind(s, 44536));
+            } = await Promise.all([s.e("94989"), s.e("23016")]).then(s.bind(s, 44536));
             return t => (0, n.jsx)(e, {
                 ...t,
                 channel: r

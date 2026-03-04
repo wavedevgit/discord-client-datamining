@@ -1,48 +1,48 @@
-/** chunk id: 307623, original params: t,n,e (module,exports,require) **/
-e.d(n, {
+/** chunk id: 307623, original params: t,n,i (module,exports,require) **/
+i.d(n, {
     A: () => p
 });
-var i = e(627968);
-e(64700);
-var l = e(311907),
-    r = e(397927),
-    a = e(435183),
-    d = e(843472),
-    s = e(608226),
-    o = e(969043),
-    u = e(715757),
-    c = e(456874),
-    g = e(961350),
-    A = e(576705),
-    h = e(661191),
-    b = e(652215),
-    m = e(985018);
+var e = i(627968);
+i(64700);
+var l = i(311907),
+    r = i(397927),
+    a = i(435183),
+    s = i(843472),
+    d = i(608226),
+    o = i(969043),
+    u = i(715757),
+    c = i(456874),
+    g = i(961350),
+    A = i(576705),
+    h = i(661191),
+    m = i(652215),
+    b = i(985018);
 
 function p(t) {
     let n = t.isForumPost(),
-        e = (0, l.bG)([g.default], () => t.isOwner(g.default.getId()), [t]),
+        i = (0, l.bG)([g.default], () => t.isOwner(g.default.getId()), [t]),
         p = (0, u.V)(t),
         {
             canManageChannel: f,
             canAccessChannel: v
         } = (0, l.cf)([A.A], () => ({
             canAccessChannel: A.A.can(t.accessPermissions, t),
-            canManageChannel: A.A.can(t.isThread() ? b.xBc.MANAGE_THREADS : b.xBc.MANAGE_CHANNELS, t)
+            canManageChannel: A.A.can(t.isThread() ? m.xBc.MANAGE_THREADS : m.xBc.MANAGE_CHANNELS, t)
         }), [t]),
-        _ = (0, l.bG)([c.A], () => c.A.getCount(t.id) ?? 0, [t.id]),
+        j = (0, l.bG)([c.A], () => c.A.getCount(t.id) ?? 0, [t.id]),
         {
-            firstMessage: j
+            firstMessage: _
         } = (0, l.bG)([o.A], () => o.A.getMessage(t.id), [t.id]),
-        C = p && f && null == j,
-        x = n && (f || e && _ < 1 || C),
-        D = n && e && !f && _ > 0 && null != j;
-    return v && (!p || C) && (f || x || D) ? (0, i.jsx)(r.Drp, {
+        x = p && f && null == _,
+        C = n && (f || i && j < 1 || x),
+        D = n && i && !f && j > 0 && null != _;
+    return v && (!p || x) && (f || C || D) ? (0, e.jsx)(r.Drp, {
         id: "delete-channel",
-        label: t.type === b.rbe.GUILD_CATEGORY ? m.intl.string(m.t.ifbXnL) : t.isForumPost() ? x ? m.intl.string(m.t.nEOg1N) : m.intl.string(m.t.xwMqD7) : t.isThread() ? m.intl.string(m.t.H7vTe2) : m.intl.string(m.t["8D8Rsb"]),
+        label: t.type === m.rbe.GUILD_CATEGORY ? b.intl.string(b.t.ifbXnL) : t.isForumPost() ? C ? b.intl.string(b.t.nEOg1N) : b.intl.string(b.t.xwMqD7) : t.isThread() ? b.intl.string(b.t.H7vTe2) : b.intl.string(b.t["8D8Rsb"]),
         color: "danger",
         action: () => {
-            (0, s.O)(t, function() {
-                D ? d.A.deleteMessage(t.id, h.default.castChannelIdAsMessageId(t.id)) : a.Ay.deleteChannel(t.id)
+            (0, d.O)(t, function() {
+                D ? s.A.deleteMessage(t.id, h.default.castChannelIdAsMessageId(t.id)) : a.Ay.deleteChannel(t.id)
             })
         }
     }) : null

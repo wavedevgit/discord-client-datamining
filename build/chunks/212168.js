@@ -31,13 +31,13 @@ let u = {
         if (!a) return t;
         let {
             border: f,
-            background: h
+            background: m
         } = u[r];
         return (0, i.jsx)("div", {
             ref: n,
             className: d()(f, s),
             children: (0, i.jsx)("div", {
-                className: d()(l ? h : c.Tp, o),
+                className: d()(l ? m : c.Tp, o),
                 children: t
             })
         })

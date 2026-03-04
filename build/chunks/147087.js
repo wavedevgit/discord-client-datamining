@@ -1,11 +1,10 @@
-/** chunk id: 147087, original params: t,e,s (module,exports,require) **/
-"use strict";
-s.d(e, {
-    b: () => r
+/** chunk id: 147087, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    b: () => l
 });
-var n = s(311907),
-    a = s(287809);
+var r = t(311907),
+    i = t(287809);
 
-function r() {
-    return (0, n.bG)([a.default], () => a.default.getCurrentUser()?.isStaff() ?? !1)
+function l() {
+    return (0, r.bG)([i.default], () => i.default.getCurrentUser()?.isStaff() ?? !1)
 }

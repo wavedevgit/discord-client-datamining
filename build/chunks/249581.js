@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     l = n(503698),
-    s = n.n(l),
-    a = n(397927),
+    a = n.n(l),
+    s = n(397927),
     o = n(927018),
     c = n(64585),
     d = n(906688),
@@ -85,9 +85,9 @@ function C(e) {
         }
     }, []);
     let p = null != _ && n,
-        m = p ? a.DUT : "div";
+        m = p ? s.DUT : "div";
     return (0, i.jsxs)(m, {
-        className: s()(u.kL, p && u.b),
+        className: a()(u.kL, p && u.b),
         onClick: () => {
             p && _()
         },
@@ -100,11 +100,11 @@ function C(e) {
             })
         }), (0, i.jsxs)("div", {
             className: u.__invalid_nameContainer,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: l()
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: A && !n ? "?????" : C()

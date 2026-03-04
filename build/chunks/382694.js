@@ -26,18 +26,12 @@ function u(e) {
             children: n.map((e, n) => {
                 if (null == e) return;
                 let s = 0 === n && !0 === e.featured;
-                return (0, i.jsx)("div", {
-                    id: e.id,
-                    className: a()({
+                return (0, i.jsx)(r.S, {
+                    ...e,
+                    glowing: t === e.id,
+                    featured: s,
+                    containerClassName: a()(d.Nr, {
                         [d.Nq]: s
-                    }),
-                    style: {
-                        scrollMarginTop: 30
-                    },
-                    children: (0, i.jsx)(r.S, {
-                        ...e,
-                        glowing: t === e.id,
-                        featured: s
                     })
                 }, e.id)
             })

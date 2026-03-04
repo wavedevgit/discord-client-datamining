@@ -1,6 +1,6 @@
 /** chunk id: 545167, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    v: () => s
+    v: () => a
 });
 var i = n(945810),
     r = n(723702);
@@ -17,7 +17,7 @@ let l = (0, i.mj)({
     }
 });
 
-function s(e) {
+function a(e) {
     if (!(0, r.isDesktop)()) return !1;
     let {
         allowEnhancedNav: t

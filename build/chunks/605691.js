@@ -1,50 +1,50 @@
-/** chunk id: 605691, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** chunk id: 605691, original params: n,t,e (module,exports,require) **/
+e.d(t, {
+    A: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(397927),
-    a = n(308528),
-    d = n(994500),
-    u = n(287809),
-    s = n(47167),
-    o = n(985018);
+var i = e(627968),
+    l = e(64700),
+    r = e(397927),
+    a = e(308528),
+    d = e(994500),
+    s = e(287809),
+    o = e(47167),
+    c = e(985018);
 
-function c(e, t) {
-    let c = i.useCallback(() => {
-        let i = (0, s.m1)(e, u.default, d.A),
-            c = o.intl.formatToPlainString(o.t.hJ5Ap4, {
-                name: i
+function u(n, t) {
+    let u = l.useCallback(() => {
+        let l = (0, o.m1)(n, s.default, d.A),
+            u = c.intl.formatToPlainString(c.t.hJ5Ap4, {
+                name: l
             }),
-            A = o.intl.format(o.t.SSIVOu, {
-                name: i
+            h = c.intl.format(c.t.SSIVOu, {
+                name: l
             });
-        e.isManaged() && (c = o.intl.formatToPlainString(o.t.hVGjEW, {
-            name: i
-        }), A = o.intl.format(o.t.IK1Qvs, {
-            name: i
+        n.isManaged() && (u = c.intl.formatToPlainString(c.t.hVGjEW, {
+            name: l
+        }), h = c.intl.format(c.t.IK1Qvs, {
+            name: l
         }));
-        let E = function(n) {
-            let r = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-            a.A.closePrivateChannel(e.id, t, r)
+        let A = function(e) {
+            let i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+            a.A.closePrivateChannel(n.id, t, i)
         };
-        (0, l.mMO)(async () => {
+        (0, r.mMO)(async () => {
             let {
-                default: e
-            } = await n.e("37803").then(n.bind(n, 148166));
-            return t => (0, r.jsx)(e, {
-                title: c,
-                body: A,
-                onSubmit: E,
+                default: n
+            } = await e.e("37803").then(e.bind(e, 148166));
+            return t => (0, i.jsx)(n, {
+                title: u,
+                body: h,
+                onSubmit: A,
                 ...t
             })
         })
-    }, [e, t]);
-    return (0, r.jsx)(l.Drp, {
+    }, [n, t]);
+    return (0, i.jsx)(r.Drp, {
         id: "leave-channel",
-        label: o.intl.string(o.t["26C4oi"]),
-        action: c,
+        label: c.intl.string(c.t["26C4oi"]),
+        action: u,
         color: "danger"
     })
 }

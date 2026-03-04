@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     r = n(73153),
     l = n(463347),
-    s = n(824865),
-    a = n(334465),
+    a = n(824865),
+    s = n(334465),
     o = n(545167),
     c = n(652215);
 let d = [c.BVt.CHANNEL_THREAD_VIEW(l.pv.guildId(), l.pv.channelId({
@@ -62,17 +62,17 @@ let g = new _(r.h, {
                 return
             }
         }
-        if (t.source === s.A.USER_NAVIGATED_BACK) {
+        if (t.source === a.A.USER_NAVIGATED_BACK) {
             h < u.length - 1 && h++;
             return
         }
-        if (t.source === s.A.USER_NAVIGATED_FORWARD) {
+        if (t.source === a.A.USER_NAVIGATED_FORWARD) {
             h > 0 && h--;
             return
         }
         let {
             pathname: i
-        } = t, r = (0, a.B)(i, d);
+        } = t, r = (0, s.B)(i, d);
         if (null != r) {
             if ("REPLACE" === n && u.length > 0) {
                 u[h] = {

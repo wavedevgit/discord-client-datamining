@@ -1,21 +1,21 @@
-/** chunk id: 200273, original params: t,n,e (module,exports,require) **/
-e.d(n, {
-    A: () => s
+/** chunk id: 200273, original params: t,n,i (module,exports,require) **/
+i.d(n, {
+    A: () => d
 });
-var i = e(627968);
-e(64700);
-var l = e(397927),
-    r = e(435183),
-    a = e(406704),
-    d = e(985018);
+var e = i(627968);
+i(64700);
+var l = i(397927),
+    r = i(435183),
+    a = i(406704),
+    s = i(985018);
 
-function s(t) {
+function d(t) {
     let n = (0, a.NI)(t),
-        e = (0, a.Id)(t),
-        s = (0, a.s5)(t);
-    return !n || !e || s || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, i.jsx)(l.Drp, {
+        i = (0, a.Id)(t),
+        d = (0, a.s5)(t);
+    return !n || !i || d || t.isModeratorReportChannel() || __OVERLAY__ ? null : (0, e.jsx)(l.Drp, {
         id: "edit-thread",
-        label: t.isForumPost() ? d.intl.string(d.t.NP1yHG) : d.intl.string(d.t["2Mk1TP"]),
+        label: t.isForumPost() ? s.intl.string(s.t.NP1yHG) : s.intl.string(s.t["2Mk1TP"]),
         action: () => {
             (0, l.s7G)(), r.Ay.open(t.id)
         }

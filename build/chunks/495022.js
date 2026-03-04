@@ -37,13 +37,10 @@ function u(e) {
             gap: 20,
             className: d.jG,
             children: A.map(e => {
-                if (null != e) return (0, i.jsx)("div", {
-                    id: e.id,
-                    className: d.Nr,
-                    children: (0, i.jsx)(r.S, {
-                        ...e,
-                        glowing: t === e.id
-                    })
+                if (null != e) return (0, i.jsx)(r.S, {
+                    ...e,
+                    glowing: t === e.id,
+                    containerClassName: d.Ui
                 }, e.id)
             })
         }, _)]

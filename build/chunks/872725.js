@@ -30,44 +30,48 @@ let _ = {
     h = e => {
         let {
             children: t,
-            className: n,
-            cardClassName: s,
-            cardStyle: h = R,
-            cardType: p,
-            artboard: x = "BaseGlowRemapped",
-            fit: A = "layout",
-            glowAmount: E = 8,
-            blurAmount: f = 30,
-            hueRotate: N = 0,
-            isReducedMotion: C,
-            onMouseEnter: g
-        } = e, b = a.useRef(null), D = a.useRef(null), {
-            status: I,
-            buffer: v
-        } = (0, o.CE)(i.A), S = a.useContext(d.C), T = C ?? S.reducedMotion.enabled, O = {
-            "--custom-glow-amount": `${E}px`,
-            "--custom-blur-amount": `${f}px`,
-            "--custom-hue-rotate": `${N}deg`,
-            "--custom-glow-opacity": +(0 !== E)
+            id: n,
+            tabIndex: s,
+            className: h,
+            cardClassName: p,
+            cardStyle: x = R,
+            cardType: A,
+            artboard: E = "BaseGlowRemapped",
+            fit: f = "layout",
+            glowAmount: N = 8,
+            blurAmount: C = 30,
+            hueRotate: g = 0,
+            isReducedMotion: b,
+            onMouseEnter: D
+        } = e, I = a.useRef(null), v = a.useRef(null), {
+            status: S,
+            buffer: T
+        } = (0, o.CE)(i.A), O = a.useContext(d.C), P = b ?? O.reducedMotion.enabled, j = {
+            "--custom-glow-amount": `${N}px`,
+            "--custom-blur-amount": `${C}px`,
+            "--custom-hue-rotate": `${g}deg`,
+            "--custom-glow-opacity": +(0 !== N)
         };
         return (0, r.jsxs)("div", {
-            ref: b,
-            className: l()(m.k, n),
-            style: O,
-            onMouseEnter: g,
-            children: [I !== o.BW.Loading && (0, r.jsx)(u.w, {
-                buffer: v,
-                artboard: x,
+            id: n,
+            ref: I,
+            tabIndex: s,
+            className: l()(m.k, h),
+            style: j,
+            onMouseEnter: D,
+            children: [S !== o.BW.Loading && (0, r.jsx)(u.w, {
+                buffer: T,
+                artboard: E,
                 artboardProperties: _,
-                eventTargetRef: b,
+                eventTargetRef: I,
                 className: m.Q,
-                ref: D,
-                fit: A,
-                withReducedMotion: T ? "halt" : "play"
+                ref: v,
+                fit: f,
+                withReducedMotion: P ? "halt" : "play"
             }), (0, r.jsx)(c.ZpM, {
-                type: p ?? c.sl2.CUSTOM,
-                className: s,
-                style: h,
+                type: A ?? c.sl2.CUSTOM,
+                className: p,
+                style: x,
                 children: t
             })]
         })

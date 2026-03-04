@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var r = n(607399),
     l = n(793574),
-    s = n(688810),
-    a = n(966597),
+    a = n(688810),
+    s = n(966597),
     o = n(922281),
     c = n(907745),
     d = n(723702),
@@ -28,7 +28,7 @@ function _(e) {
         children: t,
         className: n,
         channelId: l,
-        guildId: s,
+        guildId: a,
         innerClassname: d,
         transparent: u = !1,
         hidden: _ = !1,
@@ -36,16 +36,16 @@ function _(e) {
         mobileToolbar: p,
         "aria-label": m,
         "aria-labelledby": L,
-        scrollable: O,
-        role: f,
+        scrollable: f,
+        role: O,
         hideSearch: T,
-        hideForLater: I,
-        showDivider: R,
-        disableDoubleClick: v
+        hideForLater: v,
+        showDivider: I,
+        disableDoubleClick: R
     } = e, {
         enabled: N,
         inInbox: S
-    } = a.A.useExperiment({
+    } = s.A.useExperiment({
         location: "HeaderBar"
     });
     return (0, i.jsx)(h.Ay, {
@@ -56,19 +56,19 @@ function _(e) {
             let e = null != l && !T;
             return r.Fr ? p : (0, i.jsxs)(i.Fragment, {
                 children: [g, e && !(0, C.jq)(l) ? (0, i.jsx)(c.Ay, {
-                    guildId: s,
+                    guildId: a,
                     channelId: l,
                     className: E.$P
-                }, s ?? l) : null, R && (0, i.jsx)(h.Ay.Divider, {}), I || !N || S ? null : (0, i.jsx)(o.A, {})]
+                }, a ?? l) : null, I && (0, i.jsx)(h.Ay.Divider, {}), v || !N || S ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
         transparent: u,
         hidden: _,
-        onDoubleClick: () => A(v),
+        onDoubleClick: () => A(R),
         "aria-label": m,
         "aria-labelledby": L,
-        role: f,
-        scrollable: O,
+        role: O,
+        scrollable: f,
         children: t
     })
 }
@@ -79,15 +79,15 @@ function g(e) {
         className: n,
         "aria-label": r,
         "aria-labelledby": l,
-        role: s,
-        disableDoubleClick: a
+        role: a,
+        disableDoubleClick: s
     } = e;
     return (0, i.jsx)(h.Ay, {
         className: n,
-        onDoubleClick: () => A(a),
+        onDoubleClick: () => A(s),
         "aria-label": r,
         "aria-labelledby": l,
-        role: s,
+        role: a,
         children: t
     })
 }
@@ -98,8 +98,8 @@ function p(e) {
         ...n
     } = e, {
         analyticsLocations: r
-    } = (0, s.Ay)(l.A.HEADER_BAR);
-    return (0, i.jsx)(s.f5, {
+    } = (0, a.Ay)(l.A.HEADER_BAR);
+    return (0, i.jsx)(a.f5, {
         value: r,
         children: t ? (0, i.jsx)(_, {
             ...n,
