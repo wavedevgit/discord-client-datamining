@@ -484,7 +484,8 @@ class ej extends i.PureComponent {
                 })
             }) : null,
             z = null != g && (0, F.wh)(g),
-            J = H.LE.has(e.type) ? (0, l.jsxs)("div", {
+            J = H.LE.has(e.type) ? (0, l.jsxs)(A.BJc, {
+                gap: 4,
                 children: [(0, l.jsx)(A.dOG, {
                     label: eo.intl.string(eo.t.Es25Yf),
                     description: eo.intl.string(eo.t["9eUgwR"]),

@@ -53,11 +53,11 @@ function m(e, t, n) {
     switch (t) {
         case "links":
             return {
-                author_id: e, has: ["link"], ...l
+                author_id: [e], has: ["link"], ...l
             };
         case "media":
             return {
-                author_id: e, attachment_extension: ["png", "jpg", "webp", "mov", "mp4", "qt", "gif", "mp3", "wav", "flac", "ogg", "opus"], ...l
+                author_id: [e], attachment_extension: ["png", "jpg", "webp", "mov", "mp4", "qt", "gif", "mp3", "wav", "flac", "ogg", "opus"], ...l
             };
         case "all_counts":
             return {
@@ -65,7 +65,7 @@ function m(e, t, n) {
             };
         default:
             return {
-                author_id: e, ...l
+                author_id: [e], ...l
             }
     }
 }

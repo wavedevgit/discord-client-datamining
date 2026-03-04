@@ -4,61 +4,63 @@ i.d(t, {
 });
 var n = i(627968),
     l = i(64700),
-    a = i(505779),
-    s = i(990078),
-    r = i(397927),
-    c = i(524799),
-    o = i(223273),
-    d = i(880405),
+    a = i(990078),
+    s = i(397927),
+    r = i(524799),
+    c = i(223273),
+    o = i(880405),
+    d = i(778591),
     u = i(985018),
     m = i(719187);
 let x = function(e) {
     let {
-        websites: t,
-        reviews: i
-    } = e, x = i?.steam ?? {
+        detectedGame: t
+    } = e, {
+        reviews: i,
+        applicationId: x
+    } = t, g = i?.steam ?? {
         rating: void 0,
         ratingCount: void 0
-    }, g = t.find(e => e.category === a.V.STEAM), h = (0, c.j)(x.rating, x.ratingCount), f = function(e) {
+    }, h = (0, d.I)(x), f = (0, r.j)(g.rating, g.ratingCount), j = function(e) {
         switch (e) {
-            case o.vI.NO_USER_REVIEWS:
+            case c.vI.NO_USER_REVIEWS:
                 return "text-subtle";
-            case o.vI.OVERWHELMINGLY_POSITIVE:
-            case o.vI.VERY_POSITIVE:
-            case o.vI.POSITIVE:
-            case o.vI.MOSTLY_POSITIVE:
+            case c.vI.OVERWHELMINGLY_POSITIVE:
+            case c.vI.VERY_POSITIVE:
+            case c.vI.POSITIVE:
+            case c.vI.MOSTLY_POSITIVE:
                 return "steam-review-text-positive";
-            case o.vI.MIXED:
+            case c.vI.MIXED:
                 return "steam-review-text-mixed";
-            case o.vI.MOSTLY_NEGATIVE:
-            case o.vI.NEGATIVE:
-            case o.vI.VERY_NEGATIVE:
-            case o.vI.OVERWHELMINGLY_NEGATIVE:
+            case c.vI.MOSTLY_NEGATIVE:
+            case c.vI.NEGATIVE:
+            case c.vI.VERY_NEGATIVE:
+            case c.vI.OVERWHELMINGLY_NEGATIVE:
                 return "steam-review-text-negative";
             default:
                 return "text-subtle"
         }
-    }(h), [j, p] = l.useState(!1), v = l.useCallback(() => {
-        p(!0)
-    }, []), A = l.useCallback(() => {
-        p(!1)
+    }(f), [p, A] = l.useState(!1), v = l.useCallback(() => {
+        A(!0)
     }, []), E = l.useCallback(() => {
-        null != g && window.open((0, d.L)(g.url), "_blank", "noreferrer noopener")
-    }, [g]);
-    return null == g ? null : (0, n.jsxs)("div", {
+        A(!1)
+    }, []), I = l.useCallback(() => {
+        null != h && window.open((0, o.L)(h), "_blank", "noreferrer noopener")
+    }, [h]);
+    return null == h ? null : (0, n.jsxs)("div", {
         className: m.uW,
         children: [(0, n.jsx)("div", {
             className: m.Gf,
-            children: (0, n.jsx)(r.Heading, {
+            children: (0, n.jsx)(s.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: u.intl.string(u.t.GaAQXP)
             })
-        }), (0, n.jsx)(s.m, {
+        }), (0, n.jsx)(a.m, {
             text: u.intl.string(u.t.YNC5Di),
-            shouldShow: !j,
-            children: (0, n.jsx)(r.DUT, {
-                onClick: E,
+            shouldShow: !p,
+            children: (0, n.jsx)(s.DUT, {
+                onClick: I,
                 className: m.nf,
                 role: "link",
                 "aria-label": u.intl.string(u.t.YNC5Di),
@@ -70,57 +72,57 @@ let x = function(e) {
                             className: m.U6,
                             children: [(0, n.jsxs)("div", {
                                 className: m.tN,
-                                children: [(0, n.jsx)(r.NXQ, {
+                                children: [(0, n.jsx)(s.NXQ, {
                                     size: "sm",
-                                    color: r.LU0.colors.ICON_STRONG.css
-                                }), (0, n.jsx)(r.Heading, {
+                                    color: s.LU0.colors.ICON_STRONG.css
+                                }), (0, n.jsx)(s.Heading, {
                                     variant: "heading-sm/medium",
                                     color: "text-strong",
                                     children: u.intl.string(u.t.whmopT)
                                 })]
-                            }), (0, n.jsx)(s.m, {
-                                text: h === o.vI.NO_USER_REVIEWS ? u.intl.string(u.t.CLMt8J) : u.intl.format(u.t["lzANJ/"], {
-                                    rating: x.rating,
-                                    rating_count: x.ratingCount?.toLocaleString()
+                            }), (0, n.jsx)(a.m, {
+                                text: f === c.vI.NO_USER_REVIEWS ? u.intl.string(u.t.CLMt8J) : u.intl.format(u.t["lzANJ/"], {
+                                    rating: g.rating,
+                                    rating_count: g.ratingCount?.toLocaleString()
                                 }).toString(),
                                 onTooltipShow: v,
-                                onTooltipHide: A,
+                                onTooltipHide: E,
                                 children: (0, n.jsxs)("div", {
                                     className: m.Z0,
-                                    children: [(0, n.jsx)(r.Text, {
+                                    children: [(0, n.jsx)(s.Text, {
                                         variant: "text-xs/medium",
-                                        color: f,
+                                        color: j,
                                         children: function(e) {
                                             switch (e) {
-                                                case o.vI.NO_USER_REVIEWS:
+                                                case c.vI.NO_USER_REVIEWS:
                                                     return u.intl.string(u.t.CLMt8J);
-                                                case o.vI.OVERWHELMINGLY_POSITIVE:
+                                                case c.vI.OVERWHELMINGLY_POSITIVE:
                                                     return u.intl.string(u.t["75sx1S"]);
-                                                case o.vI.VERY_POSITIVE:
+                                                case c.vI.VERY_POSITIVE:
                                                     return u.intl.string(u.t["EkOVg+"]);
-                                                case o.vI.POSITIVE:
+                                                case c.vI.POSITIVE:
                                                     return u.intl.string(u.t.ZUkFtr);
-                                                case o.vI.MOSTLY_POSITIVE:
+                                                case c.vI.MOSTLY_POSITIVE:
                                                     return u.intl.string(u.t.M7Z09a);
-                                                case o.vI.MIXED:
+                                                case c.vI.MIXED:
                                                     return u.intl.string(u.t.c8yuHR);
-                                                case o.vI.MOSTLY_NEGATIVE:
+                                                case c.vI.MOSTLY_NEGATIVE:
                                                     return u.intl.string(u.t.H0MSjG);
-                                                case o.vI.NEGATIVE:
+                                                case c.vI.NEGATIVE:
                                                     return u.intl.string(u.t.vpLrgz);
-                                                case o.vI.VERY_NEGATIVE:
+                                                case c.vI.VERY_NEGATIVE:
                                                     return u.intl.string(u.t["5spYuX"]);
-                                                case o.vI.OVERWHELMINGLY_NEGATIVE:
+                                                case c.vI.OVERWHELMINGLY_NEGATIVE:
                                                     return u.intl.string(u.t.A8uk5J);
                                                 default:
                                                     return null
                                             }
-                                        }(h)
-                                    }), null != x.ratingCount && h !== o.vI.NO_USER_REVIEWS && (0, n.jsx)(r.Text, {
+                                        }(f)
+                                    }), null != g.ratingCount && f !== c.vI.NO_USER_REVIEWS && (0, n.jsx)(s.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-subtle",
                                         children: u.intl.format(u.t.sgIoin, {
-                                            rating_count: x.ratingCount?.toLocaleString()
+                                            rating_count: g.ratingCount?.toLocaleString()
                                         }).toString()
                                     })]
                                 })

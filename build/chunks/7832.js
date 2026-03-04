@@ -13,7 +13,7 @@ var i = n(64700),
 function c() {
     let e = (0, r.bG)([o.A], () => o.A.getQuestHomeHeroConfig()),
         t = i.useMemo(() => e?.startsAt != null ? s.default.fromTimestamp(new Date(e?.startsAt).valueOf()) : null, [e?.startsAt]),
-        [n, c] = (0, a.Cc)(null != t ? l.M.QUEST_HOME_ENTRYPOINT_TAKEOVER_BADGE : null, t ?? "", d.m.PRIVATE_CHANNELS_LIST, !0),
+        [n, c] = (0, a.Cc)(null != t && e?.questHomeEntrypoint != null ? l.M.QUEST_HOME_ENTRYPOINT_TAKEOVER_BADGE : null, t ?? "", d.m.PRIVATE_CHANNELS_LIST, !0),
         u = i.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d.i.TAKE_ACTION;
             c(e)

@@ -18,8 +18,8 @@ var n = r(627968),
     A = r(562153),
     f = r(917592),
     g = r(828904),
-    F = r(522278),
-    v = r(974175),
+    v = r(522278),
+    F = r(974175),
     C = r(731854),
     b = r(985018),
     x = r(518959),
@@ -40,7 +40,7 @@ class D extends a.PureComponent {
                 hostname: a
             },
             l = s().map(i, (e, t) => {
-                if ("receiverReports" !== t && (!r || "localAddress" !== t)) return (0, n.jsx)(v.q7, {
+                if ("receiverReports" !== t && (!r || "localAddress" !== t)) return (0, n.jsx)(F.q7, {
                     label: t,
                     value: e
                 }, t)
@@ -75,7 +75,7 @@ class D extends a.PureComponent {
                     }), (0, n.jsxs)("span", {
                         children: [a.toFixed(0), "%"]
                     })]
-                }), (0, n.jsx)(F.A, {
+                }), (0, n.jsx)(v.A, {
                     label: t,
                     valueRendered: [i, s],
                     children: t

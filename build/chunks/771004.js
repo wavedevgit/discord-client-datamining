@@ -1,6 +1,6 @@
 /** chunk id: 771004, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => v,
+    A: () => A,
     h: () => p
 });
 var n = i(627968),
@@ -23,7 +23,7 @@ function p(e) {
     let {
         detectedGame: t,
         trackAction: i
-    } = e, [a, x] = l.useState(t?.summaryLocalized != null), [p, v] = l.useState(!0), [A, E] = l.useState(!1), I = l.useRef(null), {
+    } = e, [a, x] = l.useState(t?.summaryLocalized != null), [p, A] = l.useState(!0), [v, E] = l.useState(!1), I = l.useRef(null), {
         width: _,
         height: N
     } = (0, u.A)();
@@ -51,10 +51,10 @@ function p(e) {
             lineClamp: p ? 8 : void 0,
             variant: "text-sm/normal",
             children: a ? t.summaryLocalized : t.summary
-        }), A && (0, n.jsx)(d.DUT, {
+        }), v && (0, n.jsx)(d.DUT, {
             className: f.vk,
             onClick: () => {
-                i(p ? m.Ws.ShowMore : m.Ws.ShowLess), v(!p)
+                i(p ? m.Ws.ShowMore : m.Ws.ShowLess), A(!p)
             },
             children: (0, n.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
@@ -67,11 +67,11 @@ function p(e) {
     })
 }
 
-function v(e) {
+function A(e) {
     let {
         detectedGame: t,
         trackAction: i
-    } = e, [a, g] = l.useState(t?.summaryLocalized != null), [j, p] = l.useState(!0), [v, A] = l.useState(!1), E = l.useRef(null), {
+    } = e, [a, g] = l.useState(t?.summaryLocalized != null), [j, p] = l.useState(!0), [A, v] = l.useState(!1), E = l.useRef(null), {
         width: I,
         height: _
     } = (0, u.A)(), {
@@ -79,7 +79,7 @@ function v(e) {
     } = (0, x.c)();
     return (l.useEffect(() => {
         let e = E.current;
-        null != e && A(e.scrollHeight - e.clientHeight > 1 || !j)
+        null != e && v(e.scrollHeight - e.clientHeight > 1 || !j)
     }, [E, I, _, j, N]), null == t.summary) ? null : (0, n.jsxs)("div", {
         className: s()(f.fi, f.mX),
         children: [null != t.summaryLocalized && (0, n.jsxs)("div", {
@@ -101,7 +101,7 @@ function v(e) {
             lineClamp: j ? N ? 8 : 5 : void 0,
             variant: "text-sm/normal",
             children: a ? t.summaryLocalized : t.summary
-        }), v && (0, n.jsx)(d.DUT, {
+        }), A && (0, n.jsx)(d.DUT, {
             className: f.vk,
             onClick: () => {
                 i(j ? m.Ws.ShowMore : m.Ws.ShowLess), p(!j)

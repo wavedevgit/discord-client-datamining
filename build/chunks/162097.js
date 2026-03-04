@@ -1,82 +1,65 @@
 /** chunk id: 162097, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    b: () => v
+    b: () => f
 });
 var a = l(627968),
     n = l(64700),
     r = l(503698),
     i = l.n(r),
-    s = l(311907),
-    o = l(732955),
-    u = l(397927),
-    c = l(775602),
-    d = l(607470),
-    p = l(975571),
-    m = l(318346),
-    h = l(652215),
-    x = l(985018),
-    b = l(186541),
-    g = l(266770),
-    y = l(268920),
-    f = l(633217);
-let E = () => {
-        let e = (0, s.bG)([c.A], () => c.A.useReducedMotion);
-        return (0, a.jsx)("div", {
-            className: b.s,
-            children: e ? (0, a.jsx)("img", {
-                src: y.A,
-                className: b.Cb,
-                alt: "Orb"
-            }) : (0, a.jsxs)(d.A, {
-                autoPlay: !0,
-                loop: !0,
-                className: b.Cb,
-                children: [(0, a.jsx)("source", {
-                    src: f.A,
-                    type: "video/webm"
-                }), (0, a.jsx)("img", {
-                    src: y.A,
-                    className: b.Cb,
-                    alt: "Orb"
-                })]
-            })
+    s = l(732955),
+    o = l(397927),
+    u = l(303136),
+    c = l(975571),
+    d = l(318346),
+    p = l(652215),
+    m = l(985018),
+    h = l(186541),
+    x = l(266770),
+    b = l(268920),
+    g = l(633217);
+let y = () => (0, a.jsx)("div", {
+        className: h.s,
+        children: (0, a.jsx)(u.A, {
+            src: g.A,
+            fallbackImage: b.A,
+            className: h.Cb
         })
-    },
-    v = e => {
+    }),
+    f = e => {
         let {
             ctaText: t,
             ctaOnClick: l,
             analyticsPage: r,
-            linkPreText: s = x.intl.string(x.t["5qZv9E"]),
-            linkText: c = x.intl.string(x.t.XRdyjz)
-        } = e, d = n.useCallback(() => {
-            null != r && (0, m.Y)({
+            linkPreText: u = m.intl.string(m.t["5qZv9E"]),
+            linkText: b = m.intl.string(m.t.XRdyjz)
+        } = e, g = n.useCallback(() => {
+            null != r && (0, d.Y)({
                 pageType: r,
-                sectionType: h.JJy.ORBS_BALANCE_MENU,
-                ctaObject: h.ZSU.ORBS_LEARN_MORE_LINK
+                sectionType: p.JJy.ORBS_BALANCE_MENU,
+                ctaObject: p.ZSU.ORBS_LEARN_MORE_LINK
             })
         }, [r]);
         return (0, a.jsxs)("div", {
-            className: i()(b.kL, g.O),
-            children: [(0, a.jsx)(E, {}), (0, a.jsx)(o.$nd, {
+            className: i()(h.kL, x.O),
+            children: [(0, a.jsx)(y, {}), (0, a.jsx)(s.$nd, {
                 text: t,
                 variant: "primary",
                 size: "sm",
                 onClick: l,
                 fullWidth: !0
             }), (0, a.jsxs)("div", {
-                className: b.kx,
-                children: [void 0 !== s && (0, a.jsxs)(u.Text, {
+                className: h.kx,
+                children: [void 0 !== u && (0, a.jsxs)(o.Text, {
                     variant: "text-xs/normal",
-                    className: b.D5,
-                    children: [s, "\xa0"]
-                }), (0, a.jsx)(u.MzZ, {
+                    className: h.D5,
+                    children: [u, "\xa0"]
+                }), (0, a.jsx)(o.MzZ, {
                     target: "_blank",
                     rel: "author",
-                    href: p.A.getArticleURL(h.MVz.ORBS_FAQ),
-                    className: b.CU,
-                    onClick: d,
-                    children: c
+                    href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
+                    className: h.CU,
+                    onClick: g,
+                    children: b
                 })]
             })]
         })

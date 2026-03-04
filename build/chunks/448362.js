@@ -29,15 +29,15 @@ let p = () => (0, a.jsx)("img", {
             disabled: g,
             isInModalOverlay: y,
             className: f
-        } = e, [E, v] = (0, n.useState)(!1), S = (0, n.useMemo)(() => m === o.k.SELECTED ? d.wH : E ? d.mr : d.Ay, [m, E]), [j, T] = (0, n.useState)(!1), [C, R] = (0, n.useState)(!1), [P, A] = (0, n.useState)(2700), _ = null === r;
+        } = e, [E, v] = (0, n.useState)(!1), S = (0, n.useMemo)(() => m === o.k.SELECTED ? d.wH : E ? d.mr : d.Ay, [m, E]), [j, T] = (0, n.useState)(!1), [C, R] = (0, n.useState)(!1), [P, _] = (0, n.useState)(2700), A = null === r;
         (0, n.useEffect)(() => {
-            _ && !j && (T(!0), setTimeout(() => {
+            A && !j && (T(!0), setTimeout(() => {
                 R(!0)
             }, 500))
-        }, [_, T, j]), (0, n.useEffect)(() => {
-            C && !_ && T(!1)
-        }, [_, C]);
-        let I = _ || j,
+        }, [A, T, j]), (0, n.useEffect)(() => {
+            C && !A && T(!1)
+        }, [A, C]);
+        let I = A || j,
             N = j ? null : r,
             [k, D] = (0, n.useState)(null),
             M = (0, n.useRef)(null),
@@ -69,7 +69,7 @@ let p = () => (0, a.jsx)("img", {
                     children: (0, a.jsx)(c.Ay, {
                         currentAnimationType: k,
                         animationTypeRef: M,
-                        onSetAnimationDurationMS: A
+                        onSetAnimationDurationMS: _
                     })
                 }), (0, a.jsx)(u.A, {
                     value: N,

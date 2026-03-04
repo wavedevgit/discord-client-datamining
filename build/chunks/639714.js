@@ -1,6 +1,6 @@
 /** chunk id: 639714, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => A,
+    A: () => v,
     o: () => E
 });
 var n = i(627968),
@@ -19,14 +19,14 @@ var n = i(627968),
     f = i(652215),
     j = i(985018),
     p = i(851822),
-    v = i(921380);
+    A = i(921380);
 
-function A(e) {
+function v(e) {
     let {
         detectedGame: t,
         trackClick: i,
         onInviteResolved: a,
-        closeModal: A
+        closeModal: v
     } = e, [E, I] = l.useState(), _ = (0, c.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)), N = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
@@ -59,15 +59,15 @@ function A(e) {
         }), (0, n.jsxs)("div", {
             className: s()(p.nM, p.mX),
             children: [(0, n.jsx)("img", {
-                className: v.$f,
+                className: A.$f,
                 src: T,
                 alt: j.intl.formatToPlainString(j.t.xm6W9D, {
                     guildName: E.guild.name
                 })
             }), (0, n.jsxs)("div", {
-                className: v.U5,
+                className: A.U5,
                 children: [(0, n.jsxs)("div", {
-                    className: v.YS,
+                    className: A.YS,
                     children: [(0, n.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: E.guild.name
@@ -87,7 +87,7 @@ function A(e) {
             variant: "secondary",
             text: _ ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
             onClick: () => {
-                A(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
+                v(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",
                     invite: E,
                     code: E.code,
@@ -104,7 +104,7 @@ function E(e) {
         detectedGame: t,
         trackClick: i,
         onInviteResolved: a,
-        closeModal: A
+        closeModal: v
     } = e, [E, I] = l.useState(), _ = l.useRef(null), N = l.useRef(a);
     l.useEffect(() => {
         N.current = a
@@ -142,15 +142,15 @@ function E(e) {
         }), (0, n.jsxs)("div", {
             className: s()(p.nM, p.mX),
             children: [(0, n.jsx)("img", {
-                className: v.$f,
+                className: A.$f,
                 src: S,
                 alt: j.intl.formatToPlainString(j.t.xm6W9D, {
                     guildName: E.guild.name
                 })
             }), (0, n.jsxs)("div", {
-                className: v.U5,
+                className: A.U5,
                 children: [(0, n.jsxs)("div", {
-                    className: v.YS,
+                    className: A.YS,
                     children: [(0, n.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: E.guild.name
@@ -170,7 +170,7 @@ function E(e) {
             variant: "secondary",
             text: T ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
             onClick: () => {
-                A(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
+                v(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",
                     invite: E,
                     code: E.code,

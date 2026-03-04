@@ -35,19 +35,19 @@ let E = {
             className: T
         } = e, {
             balance: C
-        } = (0, m.W)(), R = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [P, A] = n.useState(h.k.DEFAULT), [_, I] = n.useState(!1), [N, k] = n.useState(!1), D = n.useRef(null);
-        (0, o.j)(!_);
+        } = (0, m.W)(), R = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [P, _] = n.useState(h.k.DEFAULT), [A, I] = n.useState(!1), [N, k] = n.useState(!1), D = n.useRef(null);
+        (0, o.j)(!A);
         let M = n.useCallback(() => {
-                let e = !_;
+                let e = !A;
                 e && null != v && (0, p.Y)({
                     pageType: v,
                     sectionType: g.JJy.ORBS_BALANCE_MENU,
                     ctaObject: g.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
-                }), A(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
-            }, [_, v]),
+                }), _(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
+            }, [A, v]),
             O = n.useCallback(() => {
-                _ && M()
-            }, [_, M]),
+                A && M()
+            }, [A, M]),
             B = (0, s.A)(null, O),
             w = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: v,
@@ -59,13 +59,13 @@ let E = {
             }), [v, l, S, M, r]),
             V = n.useMemo(() => (0, a.jsx)(u.A, {
                 targetElementRef: D,
-                shouldShow: _,
+                shouldShow: A,
                 onRequestClose: M,
                 ctaText: l,
                 ctaOnClick: () => {
                     M(), r()
                 }
-            }), [_, M, l, r]);
+            }), [A, M, l, r]);
         return (0, a.jsxs)("div", {
             className: i()(f.kL, T, {
                 [f.R]: N,
@@ -80,7 +80,7 @@ let E = {
                 },
                 onClick: M,
                 showNotificationBadge: t
-            }), R ? V : _ && (0, a.jsx)("div", {
+            }), R ? V : A && (0, a.jsx)("div", {
                 className: i()(f.Ui, j, {
                     [f.R]: N,
                     [f.RK]: !N

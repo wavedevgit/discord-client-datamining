@@ -12,7 +12,7 @@ var r = n(627968),
     o = n(397927),
     c = n(241524),
     m = n(736653),
-    _ = n(607470),
+    _ = n(303136),
     R = n(649032),
     h = n(320118),
     p = n(976860),
@@ -29,8 +29,8 @@ var r = n(627968),
     v = n(49370),
     S = n(985018),
     T = n(970466),
-    P = n(909340),
-    O = n(455482);
+    O = n(909340),
+    P = n(455482);
 let j = E.A.getArticleURL(b.MVz.ORBS_REWARDS_FAQ);
 
 function y(e) {
@@ -153,16 +153,12 @@ let L = e => {
             cardClassName: T.Nr,
             ...M,
             children: [(0, r.jsx)(_.A, {
-                muted: !0,
-                autoPlay: !0,
-                playsInline: !0,
-                loop: !0,
                 className: T.Ki,
-                src: P.A
+                src: O.A
             }), (0, r.jsxs)("div", {
                 className: T.zK,
                 children: [(0, r.jsx)("img", {
-                    src: O.A,
+                    src: P.A,
                     className: T._e,
                     alt: "",
                     "aria-hidden": !0

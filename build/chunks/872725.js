@@ -44,7 +44,7 @@ let _ = {
         } = e, b = a.useRef(null), D = a.useRef(null), {
             status: I,
             buffer: v
-        } = (0, o.CE)(i.A), S = a.useContext(d.C), T = C ?? S.reducedMotion.enabled, P = {
+        } = (0, o.CE)(i.A), S = a.useContext(d.C), T = C ?? S.reducedMotion.enabled, O = {
             "--custom-glow-amount": `${E}px`,
             "--custom-blur-amount": `${f}px`,
             "--custom-hue-rotate": `${N}deg`,
@@ -53,7 +53,7 @@ let _ = {
         return (0, r.jsxs)("div", {
             ref: b,
             className: l()(m.k, n),
-            style: P,
+            style: O,
             onMouseEnter: g,
             children: [I !== o.BW.Loading && (0, r.jsx)(u.w, {
                 buffer: v,

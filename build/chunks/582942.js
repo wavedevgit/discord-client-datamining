@@ -18,8 +18,8 @@ var n = i(627968),
     f = i(422069),
     j = i(611656),
     p = i(459746),
-    v = i(225732),
-    A = i(985018),
+    A = i(225732),
+    v = i(985018),
     E = i(851822),
     I = i(799864);
 let _ = e => {
@@ -34,7 +34,7 @@ let _ = e => {
         children: (0, n.jsx)(u.DUT, {
             className: I.fS,
             onClick: async () => {
-                l(h.Ws.ClickSimilarGame, t.applicationId), (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(v.default, {
+                l(h.Ws.ClickSimilarGame, t.applicationId), (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(A.default, {
                     applicationId: t.applicationId,
                     source: h.Ob.SimilarGames,
                     ...e
@@ -78,7 +78,7 @@ function N(e) {
             className: E.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: A.intl.string(A.t["6rLyQB"])
+            children: v.intl.string(v.t["6rLyQB"])
         }), (0, n.jsx)("div", {
             className: I.D$,
             children: h.map(e => (0, n.jsx)(_, {

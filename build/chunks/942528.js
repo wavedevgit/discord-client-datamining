@@ -1,6 +1,6 @@
 /** chunk id: 942528, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => v
+    A: () => A
 });
 var n = i(627968),
     l = i(64700),
@@ -18,13 +18,13 @@ var n = i(627968),
     f = i(985018),
     j = i(505502),
     p = i(851822);
-let v = e => {
+let A = e => {
     let {
         entry: t,
         onClose: i,
         onReaction: a,
-        onRequestOpen: v,
-        disableActivityProfileLinks: A,
+        onRequestOpen: A,
+        disableActivityProfileLinks: v,
         customCTA: E,
         popoutClassname: I,
         popoutPosition: _ = "right"
@@ -57,13 +57,13 @@ let v = e => {
                     },
                     onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
-                    disableActivityProfileLinks: A
+                    disableActivityProfileLinks: v
                 })
             })
         },
         positionKey: `'content-entry-${t.id}`,
         onRequestOpen: () => {
-            v?.()
+            A?.()
         },
         children: e => (0, n.jsx)(c.DUT, {
             innerRef: N,

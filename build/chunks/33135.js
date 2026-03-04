@@ -18,8 +18,8 @@ var n = r(627968),
     A = r(696451),
     f = r(383501),
     g = r(412780),
-    F = r(287809),
-    v = r(427262),
+    v = r(287809),
+    F = r(427262),
     C = r(817006),
     b = r(121614),
     x = r(663272),
@@ -75,7 +75,7 @@ function P(e, t, r, a, i) {
         }), null != p && !s().isEmpty(p)) {
         let t = [];
         Object.keys(p).forEach(s => {
-            let l, u = F.default.getUser(s),
+            let l, u = v.default.getUser(s),
                 c = A.Ay.getNick(i, s),
                 h = (0, g.Xi)(e, s, r);
             null != p[s] && p[s].length > 0 && t.push({
@@ -92,7 +92,7 @@ function P(e, t, r, a, i) {
                                 className: I.my
                             }), (0, n.jsx)("span", {
                                 className: I.Xh,
-                                children: c ?? v.Ay.getName(u)
+                                children: c ?? F.Ay.getName(u)
                             })]
                         })
                     })
@@ -134,7 +134,7 @@ function k() {
     } = (0, l.bG)([g.Ay], () => ({
         defaultStats: g.Ay.getAllStats(j.x.DEFAULT),
         streamStats: g.Ay.getAllStats(j.x.STREAM)
-    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), F = (0, l.bG)([g.Ay], () => g.Ay.getSection()), v = function(e) {
+    }), [], l.My), r = (0, l.bG)([f.A, y.A], () => y.A.getChannel(f.A.getChannelId())), i = e.concat(t).find(e => null != e.screenshare)?.screenshare, s = t.find(e => null != e.clips)?.clips, m = (0, l.bG)([h.A], () => h.A.theme), A = (0, p.NC)(), v = (0, l.bG)([g.Ay], () => g.Ay.getSection()), F = function(e) {
         let {
             defaultStats: t,
             streamStats: r,
@@ -191,8 +191,8 @@ function k() {
     }, []), (0, n.jsx)(u.Ay, {
         theme: m,
         sidebarTheme: A,
-        section: F,
+        section: v,
         onSetSection: d.c4,
-        sections: v
+        sections: F
     })
 }

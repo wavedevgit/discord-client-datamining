@@ -33,8 +33,8 @@ let g = e => {
         primaryAssetClassName: v,
         backgroundAssetUrl: S,
         progress: T,
-        ctaText: P,
-        onCtaClick: O,
+        ctaText: O,
+        onCtaClick: P,
         subscriptionRequired: j,
         glowing: y,
         progressGlowing: L = !1,
@@ -57,16 +57,16 @@ let g = e => {
             })
         }, 800), [n]),
         W = a.useCallback(() => {
-            null != O && (O(), p.default.track(f.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+            null != P && (P(), p.default.track(f.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
                 card_type: (0, i.snakeCase)(n),
-                function_name: (0, i.snakeCase)(O.name)
+                function_name: (0, i.snakeCase)(P.name)
             }))
-        }, [O, n]),
+        }, [P, n]),
         V = j && k === E.xc.FP_ONLY,
         H = !(0, i.isEmpty)(S),
         Y = H && (0, o.q)(B),
         F = (0, c.rdh)(c.LU0.colors.BACKGROUND_BASE_LOW).hex(),
-        K = V || !(0, i.isEmpty)(P);
+        K = V || !(0, i.isEmpty)(O);
     return (0, r.jsx)(u.NPJ, {
         theme: Y ? f.NJ8.DARKER : void 0,
         children: e => (0, r.jsxs)(x.A, {
@@ -167,7 +167,7 @@ let g = e => {
                         fullWidth: !0,
                         defaultTextOverride: N.intl.string(N.t.sEAnVH)
                     }), !V && (0, r.jsx)(u.$nd, {
-                        text: P,
+                        text: O,
                         variant: !H && (0, o.q)(B) ? "primary" : "overlay-primary",
                         onClick: W
                     })]

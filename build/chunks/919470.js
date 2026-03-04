@@ -81,7 +81,7 @@ let p = {
             if (null == C) return "";
             let e = c.VD[C];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-        }, [C]), A = n.useMemo(() => {
+        }, [C]), _ = n.useMemo(() => {
             if (!r || null == R) return;
             let e = x ? {
                 progressCircleText: b,
@@ -98,10 +98,10 @@ let p = {
                     ...e
                 }
             }
-        }, [r, R, P, x, b, g, y]), _ = {
+        }, [r, R, P, x, b, g, y]), A = {
             title: t,
             body: l,
-            graphic: A,
+            graphic: _,
             actions: n.useMemo(() => {
                 if (m) return [{
                     text: "Got it",
@@ -129,7 +129,7 @@ let p = {
                 },
                 children: [(0, a.jsx)(o.L, {
                     targetElementRef: j,
-                    ..._,
+                    ...A,
                     children: (0, a.jsx)(s.Button, {
                         buttonRef: j,
                         variant: "primary",
@@ -137,7 +137,7 @@ let p = {
                     })
                 }), (0, a.jsx)(o.L, {
                     targetElementRef: T,
-                    ..._,
+                    ...A,
                     children: (0, a.jsx)(s.Button, {
                         buttonRef: T,
                         variant: "primary",

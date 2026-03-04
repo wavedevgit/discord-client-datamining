@@ -19,8 +19,8 @@ var n = r(627968),
     A = r(383501),
     f = r(412780),
     g = r(287809),
-    F = r(427262),
-    v = r(974175),
+    v = r(427262),
+    F = r(974175),
     C = r(731854),
     b = r(518959),
     x = r(473169);
@@ -63,7 +63,7 @@ function S(e) {
         type: d.y$y.Type.SPINNING_CIRCLE
     });
     let L = N;
-    I && null != G && (L = `${N} — ${T??F.Ay.getName(G)}`);
+    I && null != G && (L = `${N} — ${T??v.Ay.getName(G)}`);
     let M = t.map((e, t) => {
             let r, a;
             return (0, n.jsx)(d.VQ0.Item, {
@@ -81,7 +81,7 @@ function S(e) {
                     return r !== n ? void 0 === r ? 1 : void 0 === n ? -1 : r - n : f.iA[e] !== f.iA[t] ? f.iA[e] ? 1 : -1 : e > t ? 1 : -1
                 })) {
                 let r = e[t];
-                v.R[t] || void 0 === r || o.push((0, n.jsx)(v.q7, {
+                F.R[t] || void 0 === r || o.push((0, n.jsx)(F.q7, {
                     section: a,
                     label: t,
                     value: r

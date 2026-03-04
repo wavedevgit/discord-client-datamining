@@ -45,33 +45,33 @@ async function j(e, t) {
 }
 
 function T() {
-    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [d, b] = n.useState(null), [T, C] = n.useState(null), [R, P] = n.useState(E.defaultValue), [A, _] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), N = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), k = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
+    let [e, t] = n.useState(!1), [l, i] = n.useState(!1), [d, b] = n.useState(null), [T, C] = n.useState(null), [R, P] = n.useState(E.defaultValue), [_, A] = n.useState(null), I = (0, r.bG)([m.A], () => m.A.paymentSources), N = (0, r.bG)([m.A], () => m.A.hasFetchedPaymentSources), k = (0, r.bG)([m.A], () => m.A.defaultPaymentSourceId);
     n.useEffect(() => {
         N || (0, u.$o)()
     }, [N]), n.useEffect(() => {
-        null != k && null == A && _(k)
-    }, [k, A]);
+        null != k && null == _ && A(k)
+    }, [k, _]);
     let D = n.useRef(null);
     n.useEffect(() => {
         if (null == T || "" === T) {
-            D.current = A;
+            D.current = _;
             return
         }
-        if (A !== D.current) {
-            if (null == A || "" === A) {
-                D.current = A;
+        if (_ !== D.current) {
+            if (null == _ || "" === _) {
+                D.current = _;
                 return
             }
-            j(T, A).then(() => {
+            j(T, _).then(() => {
                 b(`Order updated successfully!
 Order ID: ${T}
 Payment source changed.`)
             }).catch(e => {
                 let t = e instanceof Error ? e.message : String(e);
                 b(`Failed to update order: ${t}`)
-            }), D.current = A
+            }), D.current = _
         }
-    }, [T, A]);
+    }, [T, _]);
     let M = n.useMemo(() => Object.values(I).map(e => {
             var t;
             let l, a = (t = e.type, null != (l = p.w[t]) ? l() : String(t));
@@ -87,11 +87,11 @@ Payment source changed.`)
             }
         }), [I]),
         O = async () => {
-            if (null == A || "" === A) return void b("Please select a payment source first.");
+            if (null == _ || "" === _) return void b("Please select a payment source first.");
             if (null == R || "" === R || R === g.dJq) return void b("Please select a SKU ID.");
             t(!0), b(null), C(null);
             try {
-                let e = await (0, c.Aj)(R, A, "US", !1, {
+                let e = await (0, c.Aj)(R, _, "US", !1, {
                     gift_style: null,
                     recipient_id: void 0,
                     custom_message: void 0,
@@ -264,8 +264,8 @@ Error: ${t}`)
                     },
                     children: [(0, a.jsx)(o.l6P, {
                         selectionMode: "single",
-                        value: A,
-                        onSelectionChange: _,
+                        value: _,
+                        onSelectionChange: A,
                         options: M,
                         placeholder: "Select a payment source...",
                         disabled: !N,
@@ -290,7 +290,7 @@ Error: ${t}`)
                     size: "sm",
                     text: e ? "Creating Order..." : "Create Order",
                     onClick: O,
-                    disabled: e || null == A || "" === A || null == R || "" === R || R === g.dJq
+                    disabled: e || null == _ || "" === _ || null == R || "" === R || R === g.dJq
                 }), (0, a.jsx)(s.$nd, {
                     variant: "secondary",
                     size: "sm",
