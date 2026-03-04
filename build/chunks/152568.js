@@ -4,10 +4,10 @@ s.d(t, {
     A: () => I
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
-    i = s(554146),
+    r = s(64700),
+    l = s(503698),
+    i = s.n(l),
+    a = s(554146),
     o = s(230109),
     c = s(397927),
     d = s(367727),
@@ -29,8 +29,8 @@ let I = e => {
     let {
         wideBannerBlock: t,
         tab: s
-    } = e, r = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = l.useRef(null), L = l.useRef(null), [j, k] = l.useState(), [O, T] = l.useState(!1);
-    l.useEffect(() => {
+    } = e, l = p.A.getCategoryByStoreListingId(t.categoryStoreListingId), I = r.useRef(null), L = r.useRef(null), [j, k] = r.useState(), [T, O] = r.useState(!1);
+    r.useEffect(() => {
         let e = L.current;
         if (null == e) return;
         let t = () => {
@@ -40,7 +40,7 @@ let I = e => {
             e.onload = null
         }
     }, []);
-    let y = r?.skuId ?? "",
+    let y = l?.skuId ?? "",
         {
             handleCardVisibilityChange: N
         } = (0, f.Z)(y, "home", "marketing wide banner"),
@@ -52,15 +52,15 @@ let I = e => {
         P = null != t.ctaRoute && "" !== t.ctaRoute,
         D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || P),
         w = null != t.logoURL && "" !== t.logoURL,
-        H = l.useCallback(() => {
-            if (T(!0), t.isDismissible) {
+        H = r.useCallback(() => {
+            if (O(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
-                (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
+                (0, d.$l)(a.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
                     dismissAction: b.i.USER_DISMISS
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
-        U = l.useCallback(e => {
+        U = r.useCallback(e => {
             g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
                 sku_id: y,
@@ -72,7 +72,7 @@ let I = e => {
                 cta_name: e
             })
         }, [R, y, s]),
-        G = l.useCallback(function() {
+        F = r.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
             if (U(e), null != t.ctaRoute && "" !== t.ctaRoute) {
                 let e = t.ctaRoute;
@@ -89,8 +89,8 @@ let I = e => {
                 } else(0, u.pX)(e)
             }
         }, [t.ctaRoute, U]);
-    if (null == B || O) return null;
-    let F = a()(v.nM, v.Tq, v.TS, v.YB, {
+    if (null == B || T) return null;
+    let G = i()(v.nM, v.Tq, v.TS, v.YB, {
             [v._1]: M,
             [v.vb]: P
         }),
@@ -105,7 +105,7 @@ let I = e => {
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
             }), (0, n.jsx)("div", {
-                className: a()(v.zK, {
+                className: i()(v.zK, {
                     [v._1]: M
                 }),
                 style: null != j ? {
@@ -115,12 +115,12 @@ let I = e => {
                     ref: L,
                     src: B,
                     alt: t.title,
-                    className: a()(v.LN, {
+                    className: i()(v.LN, {
                         [v.d5]: M
                     })
                 })
             }), (0, n.jsx)("div", {
-                className: a()(v.Ep, {
+                className: i()(v.Ep, {
                     [v.Qq]: D
                 }),
                 style: {
@@ -149,7 +149,7 @@ let I = e => {
                         children: [(0, n.jsx)(c.Button, {
                             variant: "overlay-primary",
                             onClick: e => {
-                                e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
+                                e.stopPropagation(), F(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
                         }), w && (0, n.jsx)("img", {
@@ -169,12 +169,12 @@ let I = e => {
             threshold: 0,
             children: P ? (0, n.jsx)(c.DUT, {
                 innerRef: I,
-                onClick: () => G(null),
-                className: a()(e, F),
+                onClick: () => F(null),
+                className: i()(e, G),
                 children: V
             }) : (0, n.jsx)("div", {
                 ref: I,
-                className: a()(e, F),
+                className: i()(e, G),
                 children: V
             })
         })

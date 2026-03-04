@@ -30,12 +30,11 @@ function p() {
         I = m.hD.useSetting(),
         f = m.rs.useSetting(),
         N = m.jW.useSetting(),
-        b = m.ng.useSetting(),
-        j = m.Hu.useSetting(),
+        b = m.Hu.useSetting(),
         {
-            analyticsLocations: v
+            analyticsLocations: j
         } = (0, r.Ay)(l.A.TEXT_AND_IMAGES),
-        O = s.useCallback(e => {
+        v = s.useCallback(e => {
             let t = 1 === e;
             t ? c.A.cleanUpPrivateChannelSearchState() : c.A.cleanUpSearchState({
                 type: h.I4_.DMS
@@ -130,7 +129,7 @@ function p() {
                                     location: {
                                         section: h.JJy.SETTINGS_TEXT_AND_IMAGES
                                     },
-                                    location_stack: v
+                                    location_stack: j
                                 }), m.ML.updateSetting(e)
                             },
                             label: x.intl.string(x.t["29xPVZ"])
@@ -160,9 +159,9 @@ function p() {
                 })]
             }), (0, i.jsxs)(u.x, {
                 setting: g.H.CHAT_TEXT_BOX,
-                children: [(0, i.jsx)(a.cGx, {}), (0, i.jsxs)(a.nVY, {
+                children: [(0, i.jsx)(a.cGx, {}), (0, i.jsx)(a.nVY, {
                     label: x.intl.string(x.t.afR0pI),
-                    children: [(0, i.jsx)(u.x, {
+                    children: (0, i.jsx)(u.x, {
                         setting: g.H.CHAT_TEXT_BOX_PREVIEW,
                         children: (0, i.jsx)(a.dOG, {
                             checked: n,
@@ -176,17 +175,7 @@ function p() {
                             },
                             label: x.intl.string(x.t.AqGrEI)
                         })
-                    }), (0, i.jsx)(u.x, {
-                        setting: g.H.CHAT_MENTION_SUGGESTIONS,
-                        children: (0, i.jsx)(a.dOG, {
-                            checked: b,
-                            description: x.intl.string(x.t.AaXigo),
-                            onChange: e => {
-                                m.ng.updateSetting(e)
-                            },
-                            label: x.intl.string(x.t.uXQ2xT)
-                        })
-                    })]
+                    })
                 })]
             }), (0, i.jsxs)(u.x, {
                 setting: g.H.CHAT_THREADS,
@@ -214,8 +203,8 @@ function p() {
                             name: x.intl.string(x.t.MwlEGN),
                             value: 1
                         }],
-                        onChange: O,
-                        value: +!!j
+                        onChange: v,
+                        value: +!!b
                     })
                 })]
             }), (0, i.jsxs)(u.x, {

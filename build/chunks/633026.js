@@ -5,10 +5,10 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var l = s(503698),
-    r = s.n(l),
-    a = s(172218),
-    i = s(651162),
+var r = s(503698),
+    l = s.n(r),
+    i = s(172218),
+    a = s(651162),
     o = s(311907),
     c = s(397927),
     d = s(287809),
@@ -24,7 +24,7 @@ let p = {
         unpublishedAt: void 0,
         categorySkuId: void 0,
         summary: "",
-        type: i.g.REWARD_HERO,
+        type: a.g.REWARD_HERO,
         categoryStoreListingId: "",
         rewardSkuId: void 0
     },
@@ -32,11 +32,11 @@ let p = {
         let {
             isLoading: t = !1,
             heroBlock: s,
-            tab: l,
-            onVisibilityChange: i
-        } = e, u = (0, a.K)(e => {
-            i?.(e)
-        }, .1, null != i), f = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
+            tab: r,
+            onVisibilityChange: a
+        } = e, u = (0, i.K)(e => {
+            a?.(e)
+        }, .1, null != a), f = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
             bannerDisplayConfig: x,
             logoDisplayConfig: E,
             heroLogo: C,
@@ -47,7 +47,7 @@ let p = {
             ref: u,
             className: h.os,
             children: [(0, n.jsx)("div", {
-                className: r()(h.vK, {
+                className: l()(h.vK, {
                     [h.no]: S
                 }),
                 style: null != v ? {
@@ -61,7 +61,7 @@ let p = {
             }), (0, n.jsxs)("div", {
                 className: h.xX,
                 children: [(0, n.jsx)("div", {
-                    className: r()(h.bC, {
+                    className: l()(h.bC, {
                         [h.no]: S
                     }),
                     children: t ? (0, n.jsx)("div", {
@@ -93,7 +93,7 @@ let p = {
                 }), (0, n.jsx)(m.A, {
                     isBlockLoading: t,
                     heroBlock: s,
-                    tab: l
+                    tab: r
                 })]
             })]
         }) : null

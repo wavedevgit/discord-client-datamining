@@ -204,10 +204,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
         expressionPickerView: eQ,
         shouldHideExpressionPicker: e0,
         handleOuterClick: e1
-    } = (0, V.MD)(v, eT, y.id), e2 = (0, V.BX)(s), {
-        currentAutocompleteType: e3,
-        handleAutocompleteVisibilityChange: e7
-    } = (0, V.uW)(v, y.id), e5 = (0, V.NO)(eT), e6 = (0, V.Vu)(eB, v, eT), e9 = (0, V.C)({
+    } = (0, V.MD)(v, eT, y.id), {
+        handleAutocompleteVisibilityChange: e2
+    } = (0, V.uW)(v, y.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, v, eT), e5 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
@@ -216,30 +215,30 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eH
     });
     (0, G.R)(eG, y.guild_id, y.id);
-    let [e4, e8] = l.useState(!1), te = j || e4 || s.length > 0 || null != e_ || ef.length > 0, {
-        editorHeaderHeight: tt,
-        paddingTop: tn
+    let [e6, e9] = l.useState(!1), e4 = j || e6 || s.length > 0 || null != e_ || ef.length > 0, {
+        editorHeaderHeight: e8,
+        paddingTop: te
     } = (0, A.zhh)({
-        editorHeaderHeight: 122 * !!te,
-        paddingTop: 16 * !!te,
+        editorHeaderHeight: 122 * !!e4,
+        paddingTop: 16 * !!e4,
         config: {
             tension: 120,
             friction: 15,
             clamp: !0
         }
-    }), ti = l.useRef(null), [tl, ts] = l.useState(!1), ta = l.useRef(!1), tr = l.useCallback(() => {
-        ta.current = !0;
+    }), tt = l.useRef(null), [tn, ti] = l.useState(!1), tl = l.useRef(!1), ts = l.useCallback(() => {
+        tl.current = !0;
         let e = setTimeout(() => {
-            ta.current && ts(!0)
+            tl.current && ti(!0)
         }, 100);
         return () => clearTimeout(e)
-    }, []), to = l.useCallback(() => {
-        ta.current = !1;
+    }, []), ta = l.useCallback(() => {
+        tl.current = !1;
         let e = setTimeout(() => {
-            ta.current || ts(!1)
+            tl.current || ti(!1)
         }, 100);
         return () => clearTimeout(e)
-    }, []), tc = l.useCallback(() => {
+    }, []), tr = l.useCallback(() => {
         if (null == e_) return;
         let e = P.A.getUploads(y.id, v.drafts.type),
             t = e.find(e => e.filename === e_.name)?.id;
@@ -268,21 +267,21 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             children: [(0, i.jsxs)(c.animated.div, {
                                 className: J.ov,
                                 style: {
-                                    height: tt,
-                                    paddingTop: tn
+                                    height: e8,
+                                    paddingTop: te
                                 },
                                 children: [null != e_ ? (0, i.jsx)(ee, {
                                     file: e_,
-                                    onRemoveHeroImage: tc
+                                    onRemoveHeroImage: tr
                                 }) : null, null != e_ ? null : (0, i.jsx)(en, {
                                     channel: y,
                                     onImageUploaded: e => (0, I.x)(y.id, {
                                         heroFile: e
                                     }),
-                                    onFocus: () => e8(!0)
+                                    onFocus: () => e9(!0)
                                 }), (0, i.jsx)("input", {
-                                    onFocus: () => e8(!0),
-                                    onBlur: () => e8(!1),
+                                    onFocus: () => e9(!0),
+                                    onBlur: () => e9(!1),
                                     maxLength: 140,
                                     className: J.hz,
                                     placeholder: q.intl.string(q.t.Z8fYjO),
@@ -331,8 +330,6 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         fontSize: ek,
                                         spellcheckEnabled: ew,
                                         canOnlyUseTextCommands: !1,
-                                        isEditorIdle: e2,
-                                        currentAutocompleteType: e3,
                                         "aria-labelledby": ed
                                     })
                                 })
@@ -367,17 +364,17 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     }), (0, i.jsx)("div", {
                         className: J.j4,
                         children: (0, i.jsx)("div", {
-                            ref: ti,
+                            ref: tt,
                             className: J.Qo,
-                            onMouseEnter: tr,
-                            onMouseLeave: to,
+                            onMouseEnter: ts,
+                            onMouseLeave: ta,
                             children: (0, i.jsx)(A.YNO, {
-                                targetElementRef: ti,
+                                targetElementRef: tt,
                                 renderPopout: () => (0, i.jsx)(Q, {
                                     channelId: y.id,
                                     canCreateThread: eU
                                 }),
-                                shouldShow: tl,
+                                shouldShow: tn,
                                 autoInvert: !0,
                                 nudgeAlignIntoViewport: !0,
                                 position: "top",
@@ -425,13 +422,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     canSendStickers: !0,
                     textValue: s,
                     focused: j,
-                    isEditorIdle: e2,
                     expressionPickerView: eQ,
                     type: v,
                     editorRef: eT,
                     onSendMessage: eB,
                     onSendSticker: () => {},
-                    onVisibilityChange: e7,
+                    onVisibilityChange: e2,
                     editorHeight: eq,
                     setValue: (e, t) => k?.(null, e, t),
                     position: eh
@@ -439,9 +435,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
             }), e0 ? null : (0, i.jsx)(b.A, {
                 positionTargetRef: eS,
                 type: v,
-                onSelectGIF: e6,
-                onSelectEmoji: e5,
-                onSelectSticker: e9,
+                onSelectGIF: e7,
+                onSelectEmoji: e3,
+                onSelectSticker: e5,
                 channel: y,
                 closeOnModalOuterClick: eA,
                 parentModalKey: eg,

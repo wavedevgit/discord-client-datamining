@@ -1,71 +1,73 @@
 /** chunk id: 695413, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => E
+    A: () => C
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(311907),
-    a = s(720462),
-    i = s(440938),
+    r = s(64700),
+    l = s(311907),
+    i = s(720462),
+    a = s(440938),
     o = s(590180),
     c = s(4227),
-    d = s(511265),
-    u = s(313276),
-    _ = s(206077),
-    g = s(751304),
-    m = s(561769),
-    h = s(484469),
-    p = s(661623),
-    f = s(357704),
-    x = s(758836);
-let E = e => {
-    let t, s, E, {
-            isBlockLoading: C = !1,
-            heroBlock: b,
-            tab: A
+    d = s(940980),
+    u = s(511265),
+    _ = s(313276),
+    g = s(206077),
+    m = s(751304),
+    h = s(561769),
+    p = s(484469),
+    f = s(661623),
+    x = s(357704),
+    E = s(758836);
+let C = e => {
+    let t, s, C, {
+            isBlockLoading: b = !1,
+            heroBlock: A,
+            tab: S
         } = e,
-        S = (0, i.uM)(),
-        v = l.useMemo(() => o.A.getCategoryForProduct(b.rewardSkuId), [b.rewardSkuId]),
-        I = (0, r.bG)([c.A], () => c.A.getPurchase(b.rewardSkuId)),
+        v = (0, a.uM)(),
+        I = (0, d.W)("RewardHeroBlockCards"),
+        L = r.useMemo(() => o.A.getCategoryForProduct(A.rewardSkuId), [A.rewardSkuId]),
+        j = (0, l.bG)([c.A], () => c.A.getPurchase(A.rewardSkuId)),
         {
-            products: L
-        } = (t = (0, u.A)(), s = l.useMemo(() => C ? [] : t(b.rankedSkuIds).filter(e => e.skuId !== b.rewardSkuId || null != I), [C, t, b.rankedSkuIds, I, b.rewardSkuId]), E = (0, d.p)()(s), {
-            products: (0, _.X)(E)
+            products: k
+        } = (t = (0, _.A)(), s = r.useMemo(() => b ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != j), [b, t, A.rankedSkuIds, j, A.rewardSkuId]), C = (0, u.p)()(s), {
+            products: (0, g.X)(C)
         }),
-        j = l.useMemo(() => !C && 0 !== b.rankedSkuIds.length && !(L.length > 0) && b.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, b.rankedSkuIds, L.length]),
-        k = C || j,
+        T = r.useMemo(() => !b && 0 !== A.rankedSkuIds.length && !(k.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [b, A.rankedSkuIds, k.length]),
+        O = b || T,
         {
-            readyToClaim: O
-        } = (0, f.K)(v, b.rewardSkuId),
-        T = null == I && null != b.rewardSkuId && null != v;
-    return (0, n.jsx)(a.A, {
+            readyToClaim: y
+        } = (0, x.K)(L, A.rewardSkuId),
+        N = null == j && null != A.rewardSkuId && null != L;
+    return (0, n.jsx)(i.A, {
         gap: "xl",
-        children: k ? (0, n.jsx)(n.Fragment, {
-            children: [void 0, void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(h.A, {}, t))
+        children: O ? (0, n.jsx)(n.Fragment, {
+            children: [void 0, void 0, void 0, void 0, void 0].map((e, t) => (0, n.jsx)(p.A, {}, t))
         }) : (0, n.jsxs)(n.Fragment, {
-            children: [T && O && (0, n.jsx)(i.R9, {
+            children: [N && y && (0, n.jsx)(a.R9, {
                 newValue: {
                     tilePosition: 0,
                     pageSection: "top 4",
                     categoryPosition: 0
                 },
-                children: (0, n.jsx)(p.A, {
-                    category: v,
-                    rewardSkuId: b.rewardSkuId
+                children: (0, n.jsx)(f.A, {
+                    category: L,
+                    rewardSkuId: A.rewardSkuId
                 })
-            }, b.rewardSkuId), L.map((e, t) => {
+            }, A.rewardSkuId), k.map((e, t) => {
                 let s = o.A.getCategoryForProduct(e.skuId);
-                return null == e || null == s ? null : (0, n.jsx)(i.R9, {
+                return null == e || null == s ? null : (0, n.jsx)(a.R9, {
                     newValue: {
                         tilePosition: t,
                         pageSection: "top 4",
                         categoryPosition: 0
                     },
-                    children: (0, n.jsx)(g.A, {
+                    children: (0, n.jsx)(m.A, {
                         skuId: e?.skuId,
-                        prioritizedCurrency: A === x.G2.ORBS ? m.Hi.ORBS : void 0,
-                        onClickAnalytics: (0, m.UU)(e, A, S)
+                        prioritizedCurrency: S === E.G2.ORBS ? h.Hi.ORBS : I ? h.Hi.FIAT : void 0,
+                        onClickAnalytics: (0, h.UU)(e, S, v)
                     }, e.skuId)
                 }, e?.skuId)
             })]

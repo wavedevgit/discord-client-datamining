@@ -1,18 +1,18 @@
 /** chunk id: 357704, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    K: () => a
+    K: () => i
 });
 var n = s(64700),
-    l = s(311907),
-    r = s(4227);
+    r = s(311907),
+    l = s(4227);
 
-function a(e, t) {
+function i(e, t) {
     let s = n.useMemo(() => e?.products.filter(e => e.skuId !== t).map(e => e.skuId) ?? [], [e?.products, t]),
-        a = (0, l.bG)([r.A], () => r.A.getPurchases(s));
+        i = (0, r.bG)([l.A], () => l.A.getPurchases(s));
     return {
-        readyToClaim: n.useMemo(() => a.length === s.length, [a, s]),
+        readyToClaim: n.useMemo(() => i.length === s.length, [i, s]),
         collectibleProductSkuIds: s,
-        collectedSkuIds: a
+        collectedSkuIds: i
     }
 }

@@ -115,8 +115,7 @@ let eg = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
             hasIgnoredUsers: eM,
             hasBlockedUsers: eG,
             hasAgeGatedFeature: eU,
-            isChatMentionSuggestionsSettingEnabled: ek,
-            isHDRAccessibilitySettingExperimentEnabled: eV
+            isHDRAccessibilitySettingExperimentEnabled: ek
         } = e;
         return Object.freeze({
             [ec.H.SEARCH_NO_RESULTS]: {
@@ -810,7 +809,7 @@ let eg = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ed.nc_.ACCESSIBILITY,
                 searchableTitles: [eu.intl.string(eu.t.nemtgW), "HDR", eu.intl.string(eu.t["O/Gjvn"])],
                 parent: ec.H.ACCESSIBILITY,
-                predicate: () => eV
+                predicate: () => ek
             },
             [ec.H.ACCESSIBILITY_APPEARANCE_UPSELL]: {
                 section: ed.nc_.ACCESSIBILITY,
@@ -958,12 +957,6 @@ let eg = () => [a.M.CLIENT_THEMES_SETTINGS_BADGE, a.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ed.nc_.TEXT,
                 searchableTitles: [eu.intl.string(eu.t.QgwmVz)],
                 parent: ec.H.CHAT
-            },
-            [ec.H.CHAT_MENTION_SUGGESTIONS]: {
-                section: ed.nc_.TEXT,
-                searchableTitles: [eu.intl.string(eu.t.uXQ2xT)],
-                parent: ec.H.CHAT_TEXT_BOX,
-                predicate: () => ek
             },
             [ec.H.KEYBINDS]: {
                 section: ed.nc_.KEYBINDS,

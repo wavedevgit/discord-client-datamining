@@ -4,10 +4,10 @@ s.d(t, {
     A: () => x
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
-    i = s(401864),
+    r = s(64700),
+    l = s(503698),
+    i = s.n(l),
+    a = s(401864),
     o = s(124987),
     c = s(397927),
     d = s(954571),
@@ -23,7 +23,7 @@ let x = () => {
         sort: e,
         onSetSort: t,
         hasRelevanceFilters: s
-    } = (0, _.v)(), r = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), C = l.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), b = l.useCallback(e => {
+    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), C = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), b = r.useCallback(e => {
         let {
             sortType: t,
             sortDirection: s
@@ -32,7 +32,7 @@ let x = () => {
             label: p.intl.string(p.t["51Bhiz"]),
             value: "recent",
             id: "recent"
-        } : t === o.$.PRICE ? s === i.A.ASC ? {
+        } : t === o.$.PRICE ? s === a.A.ASC ? {
             label: p.intl.string(p.t.m8RVU2),
             value: "price-asc",
             id: "price-asc"
@@ -49,41 +49,41 @@ let x = () => {
             value: "popularity",
             id: "popularity"
         }
-    }, []), A = l.useCallback(e => ({
+    }, []), A = r.useCallback(e => ({
         recent: {
             sortType: o.$.RECENCY,
-            sortDirection: i.A.DESC
+            sortDirection: a.A.DESC
         },
         "price-asc": {
             sortType: o.$.PRICE,
-            sortDirection: i.A.ASC
+            sortDirection: a.A.ASC
         },
         "price-desc": {
             sortType: o.$.PRICE,
-            sortDirection: i.A.DESC
+            sortDirection: a.A.DESC
         },
         popularity: {
             sortType: o.$.POPULARITY,
-            sortDirection: i.A.DESC
+            sortDirection: a.A.DESC
         },
         relevance: {
             sortType: o.$.RELEVANCE,
-            sortDirection: i.A.DESC
+            sortDirection: a.A.DESC
         }
-    })[e], []), S = l.useCallback(e => {
+    })[e], []), S = r.useCallback(e => {
         let s = b(A(e));
         d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: r?.sessionId,
-            page_section: r?.pageSection,
-            page_category: r?.pageCategory,
-            page_index: r?.pageIndex,
-            page_size: r?.pageSize,
+            collectibles_shop_session_id: l?.sessionId,
+            page_section: l?.pageSection,
+            page_category: l?.pageCategory,
+            page_index: l?.pageIndex,
+            page_size: l?.pageSize,
             cta_name: `sort by ${s.label.toLowerCase()}`,
             page_type: "catalog"
         }), t(A(e))
-    }, [r, b, A, t]), v = b(e);
+    }, [l, b, A, t]), v = b(e);
     return (0, n.jsx)("div", {
-        className: a()(f.k, {
+        className: i()(f.k, {
             [g.jP]: x
         }),
         children: (0, n.jsx)(c.l6P, {

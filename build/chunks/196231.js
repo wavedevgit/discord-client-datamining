@@ -4,10 +4,10 @@ s.d(t, {
     S: () => h
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(230109),
-    a = s(397927),
-    i = s(954571),
+    r = s(64700),
+    l = s(230109),
+    i = s(397927),
+    a = s(954571),
     o = s(440938),
     c = s(590180),
     d = s(597783),
@@ -28,14 +28,14 @@ let h = e => {
             handleCardVisibilityChange: E
         } = (0, d.Z)(x, "home", "marketing featured block"),
         C = (0, u.s4)(s, h),
-        b = l.useRef(null),
+        b = r.useRef(null),
         A = h?.bodyText,
         S = (0, o.uM)();
-    return (0, n.jsx)(r.L, {
+    return (0, n.jsx)(l.L, {
         innerRef: b,
         onChange: E,
         threshold: 0,
-        children: (0, n.jsxs)(a.DUT, {
+        children: (0, n.jsxs)(i.DUT, {
             className: m.oT,
             innerRef: b,
             style: {
@@ -49,7 +49,7 @@ let h = e => {
                     categorySkuId: x,
                     isInternalShopDeeplink: !0,
                     isOrbsExclusive: s?.isOrbsExclusive
-                }), i.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                }), a.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: S?.sessionId,
                     sku_id: x,
                     page_type: "home",
@@ -60,13 +60,13 @@ let h = e => {
                     cta_name: null
                 })
             },
-            children: [null != p && (0, n.jsx)(a.LpS, {
+            children: [null != p && (0, n.jsx)(i.LpS, {
                 disableColor: !0,
                 text: p,
                 className: m.pv
             }), (0, n.jsx)("div", {
                 className: m.Gh,
-                children: null != A && (0, n.jsx)(a.Heading, {
+                children: null != A && (0, n.jsx)(i.Heading, {
                     lineClamp: 4,
                     className: m.BN,
                     style: {
@@ -77,7 +77,7 @@ let h = e => {
                 })
             }), (0, n.jsx)("div", {
                 className: m.b2,
-                children: (0, n.jsx)(a.Button, {
+                children: (0, n.jsx)(i.Button, {
                     variant: "overlay-primary",
                     text: g.intl.string(g.t.jVcuVY),
                     onClick: e => {
@@ -86,7 +86,7 @@ let h = e => {
                             categorySkuId: x,
                             isInternalShopDeeplink: !0,
                             isOrbsExclusive: s?.isOrbsExclusive
-                        }), e.stopPropagation(), i.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                        }), e.stopPropagation(), a.default.track(_.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                             collectibles_shop_session_id: S?.sessionId,
                             sku_id: x,
                             page_type: "home",

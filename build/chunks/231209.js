@@ -1,13 +1,13 @@
 /** chunk id: 231209, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => F
+    A: () => G
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
-    i = s(651162),
+    r = s(64700),
+    l = s(503698),
+    i = s.n(l),
+    a = s(651162),
     o = s(311907),
     c = s(554146),
     d = s(397927),
@@ -29,8 +29,8 @@ var n = s(627968),
     L = s(565057),
     j = s(227205),
     k = s(457414),
-    O = s(761218),
-    T = s(633026),
+    T = s(761218),
+    O = s(633026),
     y = s(251191),
     N = s(166489),
     R = s(613258),
@@ -43,38 +43,38 @@ let H = [M.G2.HOME, M.G2.ORBS],
     U = e => {
         let {
             tab: t
-        } = e, s = (0, o.bG)([x.A], () => x.A.getShopLayoutUrlOverride()), [r, i] = l.useState(null);
-        return (l.useEffect(() => {
-            null != s && "" !== s && fetch(s).then(e => e.json()).then(e => i(e)).catch(() => i(null))
+        } = e, s = (0, o.bG)([x.A], () => x.A.getShopLayoutUrlOverride()), [l, a] = r.useState(null);
+        return (r.useEffect(() => {
+            null != s && "" !== s && fetch(s).then(e => e.json()).then(e => a(e)).catch(() => a(null))
         }, [s]), t === M.G2.ORBS) ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)(N.A, {}), (0, n.jsx)("div", {
-                className: a()(w.YB, w.GS),
+                className: i()(w.YB, w.GS),
                 children: (0, n.jsx)(g.Qs, {
                     tenantId: P.FYj,
                     layoutId: "1478495181551440044"
                 })
             })]
         }) : (0, n.jsx)("div", {
-            className: a()(w.YB, w.GS),
-            children: null != s && "" !== s && null != r ? (0, n.jsx)(g.Ay, {
-                layout: r
+            className: i()(w.YB, w.GS),
+            children: null != s && "" !== s && null != l ? (0, n.jsx)(g.Ay, {
+                layout: l
             }) : (0, n.jsx)(g.Qs, {
                 tenantId: P.FYj,
                 layoutId: "1465939725649973269"
             })
         })
     },
-    G = e => {
+    F = e => {
         let {
             handleTransition: t,
             numVisibleItems: s,
-            isFetchingCategories: r,
+            isFetchingCategories: l,
             tab: o
         } = e, {
             noCache: d,
             includeUnpublished: u
-        } = (0, S.A)(), [_, g] = l.useState(!1), h = (0, p.uM)(), x = h?.sessionId ?? "";
-        l.useEffect(() => {
+        } = (0, S.A)(), [_, g] = r.useState(!1), h = (0, p.uM)(), x = h?.sessionId ?? "";
+        r.useEffect(() => {
             (0, C.z)({
                 sessionId: x,
                 checkpoint: C.t.SHOP_MOUNTED,
@@ -96,10 +96,10 @@ let H = [M.G2.HOME, M.G2.ORBS],
         }, {
             sessionId: x,
             tab: o
-        }), H = l.useCallback(() => {
+        }), H = r.useCallback(() => {
             P()
         }, [P]);
-        return (l.useEffect(() => {
+        return (r.useEffect(() => {
             null != N || A || 0 === R.length || (0, C.z)({
                 sessionId: x,
                 checkpoint: C.t.SHOP_RENDERED,
@@ -112,7 +112,7 @@ let H = [M.G2.HOME, M.G2.ORBS],
             errorOrigin: b.A.SHOP_PAGE,
             errorMessage: N.message
         }) : A || 0 === R.length ? (0, n.jsxs)("div", {
-            className: a()(w.g4, w.Of),
+            className: i()(w.g4, w.Of),
             children: [(0, n.jsx)(j.A, {
                 isLoading: A,
                 handleTransition: t,
@@ -128,12 +128,12 @@ let H = [M.G2.HOME, M.G2.ORBS],
                 tab: o
             })]
         }) : (0, n.jsx)(n.Fragment, {
-            children: R.map((e, l) => ((e, l, d) => {
+            children: R.map((e, r) => ((e, r, d) => {
                 if (null == e) return null;
                 let u = null,
                     h = !1;
                 switch (e.type) {
-                    case i.g.HERO:
+                    case a.g.HERO:
                         u = (0, n.jsx)(j.A, {
                             isLoading: A,
                             handleTransition: t,
@@ -141,27 +141,27 @@ let H = [M.G2.HOME, M.G2.ORBS],
                             tab: o
                         }, d);
                         break;
-                    case i.g.FEATURED:
+                    case a.g.FEATURED:
                         u = (0, n.jsx)(I.A, {
                             isLoading: A,
                             handleTransition: t,
                             featuredBlockRecord: e
                         }, d);
                         break;
-                    case i.g.FEED:
+                    case a.g.FEED:
                         let p = e.sortedSkuIds;
                         u = (0, n.jsx)(L.A, {
                             title: o === M.G2.ORBS ? D.intl.string(D.t.dFgeuZ) : D.intl.string(D.t.NSv5KV),
-                            isLoading: A || r,
+                            isLoading: A || l,
                             numVisibleItems: s,
                             sortedSkuIds: p,
-                            buttonContainerClassName: l?.type === i.g.IMMERSIVE_BANNER ? w.w : void 0,
+                            buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? w.w : void 0,
                             prioritizeUserDiscounts: o === M.G2.HOME,
                             tab: o,
                             orbsSupportedOnly: o === M.G2.ORBS
                         }, d);
                         break;
-                    case i.g.WIDE_BANNER:
+                    case a.g.WIDE_BANNER:
                         if (e.isDismissible) {
                             let t = e.dismissibleContentVersion ?? 0,
                                 {
@@ -174,41 +174,41 @@ let H = [M.G2.HOME, M.G2.ORBS],
                             tab: o
                         }, d);
                         break;
-                    case i.g.SHELF:
+                    case a.g.SHELF:
                         u = (0, n.jsx)(y.A, {
                             handleTransition: t,
                             shelf: e,
                             tab: o
                         }, d);
                         break;
-                    case i.g.COUNTDOWN_TIMER:
+                    case a.g.COUNTDOWN_TIMER:
                         u = (0, n.jsx)(v.S, {
                             countdownTimerBlock: e,
                             isVisible: _
                         }, d), h = !0;
                         break;
-                    case i.g.IMMERSIVE_BANNER:
+                    case a.g.IMMERSIVE_BANNER:
                         u = (0, n.jsx)(k.A, {
                             immersiveBannerBlock: e,
                             onVisibilityChange: e => g(!e)
                         }, d);
                         break;
-                    case i.g.REWARD_HERO:
-                        u = (0, n.jsx)(T.A, {
+                    case a.g.REWARD_HERO:
+                        u = (0, n.jsx)(O.A, {
                             isLoading: A,
                             handleTransition: t,
                             heroBlock: e,
                             tab: o
                         }, d);
                         break;
-                    case i.g.MARVEL_RIVALS_PROMOTIONAL_BANNER: {
+                    case a.g.MARVEL_RIVALS_PROMOTIONAL_BANNER: {
                         let {
                             isDismissed: t
                         } = (0, m.En)(c.M.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD);
                         if (t) return null;
                         return (0, n.jsx)(f.rW, {
                             blockType: e.type,
-                            children: (0, n.jsx)(O.A, {
+                            children: (0, n.jsx)(T.A, {
                                 onDismiss: () => {
                                     (0, m.d6)(c.M.COLLECTIBLES_SHOP_MARVEL_RIVALS_ORBS_REWARD, {})
                                 },
@@ -224,46 +224,46 @@ let H = [M.G2.HOME, M.G2.ORBS],
                 return (0, n.jsx)(f.rW, {
                     blockType: e.type,
                     children: (0, n.jsx)("div", {
-                        className: a()(w.v1, w.Of, {
+                        className: i()(w.v1, w.Of, {
                             [w.J1]: 0 === d || h
                         }),
                         children: u
                     }, d)
                 })
-            })(e, l > 0 ? R[l - 1] : null, l))
+            })(e, r > 0 ? R[r - 1] : null, r))
         })
     },
-    F = e => {
+    G = e => {
         let {
             handleTransition: t,
             tab: s,
-            transitionState: r
-        } = e, a = l.useRef(null), {
-            handleScroll: i
-        } = (0, u.X)(a, s), o = (0, A.U)(), c = (0, _.f)("Shop Home"), g = (0, p.uM)(), [m, f] = l.useState(M.md), [x, E] = l.useState(!1);
-        return l.useEffect(() => {
-            if (null != a.current) {
+            transitionState: l
+        } = e, i = r.useRef(null), {
+            handleScroll: a
+        } = (0, u.X)(i, s), o = (0, A.U)(), c = (0, _.f)("Shop Home"), g = (0, p.uM)(), [m, f] = r.useState(M.md), [x, E] = r.useState(!1);
+        return r.useEffect(() => {
+            if (null != i.current) {
                 let e = () => {
-                        if (null == a.current) return;
-                        let e = a.current.getDistanceFromBottom();
+                        if (null == i.current) return;
+                        let e = i.current.getDistanceFromBottom();
                         m >= 36 ? E(e < 20) : e <= 200 && f(e => e + M.md)
                     },
-                    t = a.current.getScrollerNode();
+                    t = i.current.getScrollerNode();
                 return t?.addEventListener("scroll", e), () => {
                     t?.removeEventListener("scroll", e)
                 }
             }
-        }, [a, m, f, E]), (0, n.jsx)(d.T7Y, {
+        }, [i, m, f, E]), (0, n.jsx)(d.T7Y, {
             className: w.OW,
-            ref: a,
-            onScroll: i,
+            ref: i,
+            onScroll: a,
             children: (0, n.jsxs)("div", {
                 className: w.bx,
                 children: [(0, n.jsxs)("div", {
                     className: w.rb,
                     children: [c && H.includes(s) ? (0, n.jsx)(U, {
                         tab: s
-                    }) : (0, n.jsx)(G, {
+                    }) : (0, n.jsx)(F, {
                         handleTransition: t,
                         numVisibleItems: m,
                         isFetchingCategories: o,
@@ -292,7 +292,7 @@ let H = [M.G2.HOME, M.G2.ORBS],
                     })]
                 }), (0, n.jsx)(R.A, {
                     peaking: x,
-                    transitioning: r === M.Pf.OUT
+                    transitioning: l === M.Pf.OUT
                 })]
             })
         })

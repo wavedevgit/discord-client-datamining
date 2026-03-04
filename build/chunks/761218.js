@@ -4,10 +4,10 @@ s.d(t, {
     A: () => v
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(989349),
-    a = s.n(r),
-    i = s(158954),
+    r = s(64700),
+    l = s(989349),
+    i = s.n(l),
+    a = s(158954),
     o = s(311907),
     c = s(230109),
     d = s(688810),
@@ -30,22 +30,22 @@ let S = {
         let {
             onDismiss: t,
             skuIds: s,
-            endTime: r,
+            endTime: l,
             tab: v
         } = e, I = (0, o.bG)([p.A], () => s.every(e => null != p.A.get(e)), [s]), L = (0, x.uM)(), {
             analyticsLocations: j
-        } = (0, d.Ay)(), k = l.useRef(null), O = l.useRef(!1), T = l.useRef(null);
-        l.useEffect(() => {
+        } = (0, d.Ay)(), k = r.useRef(null), T = r.useRef(!1), O = r.useRef(null);
+        r.useEffect(() => {
             for (let e of s)(0, u.qf)(C.Kf, e)
         }, [s]);
-        let y = l.useMemo(() => {
-                let e = a()(),
-                    t = Math.max(a()(r).diff(e, "days"), 1);
+        let y = r.useMemo(() => {
+                let e = i()(),
+                    t = Math.max(i()(l).diff(e, "days"), 1);
                 return b.intl.formatToPlainString(b.t.BXpdIg, {
                     days: t
                 })
-            }, [r]),
-            N = l.useCallback((e, t) => {
+            }, [l]),
+            N = r.useCallback((e, t) => {
                 f.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: L?.sessionId,
                     page_type: v,
@@ -58,17 +58,17 @@ let S = {
                     } : void 0
                 })
             }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]),
-            R = l.useCallback(() => {
+            R = r.useCallback(() => {
                 (0, g.X)({
                     guildId: C.Kf
                 })
             }, []),
-            B = l.useCallback(() => {
+            B = r.useCallback(() => {
                 N("go_to_game_shop"), (0, g.default)({
                     guildId: C.Kf
                 })
             }, [N]),
-            M = l.useCallback(e => {
+            M = r.useCallback(e => {
                 N("card_click", e), (0, m.R)({
                     skuId: e,
                     applicationId: C.XR,
@@ -77,22 +77,22 @@ let S = {
                     analyticsLocations: j
                 })
             }, [N, j]),
-            P = l.useCallback(() => {
+            P = r.useCallback(() => {
                 N("dismiss"), t()
             }, [N, t]),
-            D = l.useCallback(e => {
-                O.current || (e ? null === T.current && (T.current = setTimeout(() => {
-                    O.current = !0, T.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+            D = r.useCallback(e => {
+                T.current || (e ? null === O.current && (O.current = setTimeout(() => {
+                    T.current = !0, O.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                         collectibles_shop_session_id: L?.sessionId,
                         page_type: v,
                         page_category: L?.pageCategory,
                         page_section: L?.pageSection,
                         type: "marvel_rivals_promotional_banner"
                     })
-                }, 1e3)) : null !== T.current && (clearTimeout(T.current), T.current = null))
+                }, 1e3)) : null !== O.current && (clearTimeout(O.current), O.current = null))
             }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]);
-        return (l.useEffect(() => () => {
-            null !== T.current && (clearTimeout(T.current), T.current = null)
+        return (r.useEffect(() => () => {
+            null !== O.current && (clearTimeout(O.current), O.current = null)
         }, []), I) ? (0, n.jsx)(c.L, {
             innerRef: k,
             onChange: D,
@@ -104,7 +104,7 @@ let S = {
                     className: A.kL,
                     children: [(0, n.jsx)("div", {
                         className: A.b,
-                        children: (0, n.jsx)(i.JnF, {
+                        children: (0, n.jsx)(a.JnF, {
                             size: "sm",
                             variant: "icon-only",
                             onClick: P
@@ -113,7 +113,7 @@ let S = {
                         className: A.xf,
                         children: [null != y && (0, n.jsx)("div", {
                             className: A.qw,
-                            children: (0, n.jsx)(i.Exy, {
+                            children: (0, n.jsx)(a.Exy, {
                                 type: {
                                     text: `${b.intl.string(b.t.yYEZGi)} (${y})`
                                 },
@@ -121,13 +121,13 @@ let S = {
                             })
                         }), (0, n.jsxs)("div", {
                             className: A.B5,
-                            children: [(0, n.jsx)(i.DZT, {
+                            children: [(0, n.jsx)(a.DZT, {
                                 variant: "heading-xl/semibold",
                                 color: "always-white",
                                 children: b.intl.string(b.t["z/QEIP"])
-                            }), (0, n.jsx)(i.$nd, {
+                            }), (0, n.jsx)(a.$nd, {
                                 variant: "overlay-primary",
-                                icon: i.I9m,
+                                icon: a.I9m,
                                 iconPosition: "end",
                                 text: b.intl.string(b.t["kq/75v"]),
                                 onMouseDown: R,

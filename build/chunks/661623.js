@@ -4,10 +4,10 @@ s.d(t, {
     A: () => L
 });
 var n = s(627968),
-    l = s(64700),
-    r = s(503698),
-    a = s.n(r),
-    i = s(158954),
+    r = s(64700),
+    l = s(503698),
+    i = s.n(l),
+    a = s(158954),
     o = s(311907),
     c = s(230109),
     d = s(990078),
@@ -26,26 +26,26 @@ var n = s(627968),
     S = s(68465),
     v = s(165530),
     I = s(871237);
-let L = l.memo(function(e) {
+let L = r.memo(function(e) {
     let {
         category: t,
         rewardSkuId: s
     } = e, {
-        handleCardVisibilityChange: r
-    } = (0, f.Z)(s), L = l.useRef(null), {
+        handleCardVisibilityChange: l
+    } = (0, f.Z)(s), L = r.useRef(null), {
         isHoveringOrFocusing: j
     } = (0, _.A)(L), {
         readyToClaim: k,
-        collectibleProductSkuIds: O,
-        collectedSkuIds: T
+        collectibleProductSkuIds: T,
+        collectedSkuIds: O
     } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
-        onChange: r,
+        onChange: l,
         threshold: 0,
         innerRef: L,
         children: (0, n.jsx)("div", {
             ref: L,
-            className: a()(b.ty, A.Q3, {
+            className: i()(b.ty, A.Q3, {
                 [b.yo]: j
             }),
             "aria-label": C.intl.formatToPlainString(C.t.Ez6aHE, {
@@ -78,7 +78,7 @@ let L = l.memo(function(e) {
                                 children: C.intl.string(C.t["0mDmg/"])
                             }), (0, n.jsx)(d.m, {
                                 text: k ? C.intl.string(C.t.cKH3tk) : C.intl.formatToPlainString(C.t["8aMDPc"], {
-                                    totalCount: O.length
+                                    totalCount: T.length
                                 }),
                                 align: "right",
                                 caretConfig: {
@@ -88,7 +88,7 @@ let L = l.memo(function(e) {
                                 position: "top",
                                 children: (0, n.jsx)("span", {
                                     className: A.ZB,
-                                    children: (0, n.jsx)(i.cBN, {
+                                    children: (0, n.jsx)(a.cBN, {
                                         size: "xs"
                                     })
                                 })
@@ -100,21 +100,21 @@ let L = l.memo(function(e) {
                                 className: A.L$,
                                 children: [(0, n.jsx)(g.Ay, {
                                     variant: g.qP.BLUE,
-                                    progress: T.length,
-                                    maximum: O.length
+                                    progress: O.length,
+                                    maximum: T.length
                                 }), (0, n.jsxs)("div", {
-                                    className: a()(A.__, {
+                                    className: i()(A.__, {
                                         [A.gF]: k
                                     }),
-                                    children: [k ? (0, n.jsx)(i.Uzd, {
+                                    children: [k ? (0, n.jsx)(a.Uzd, {
                                         size: "xs",
                                         color: "currentColor"
-                                    }) : null, (0, n.jsx)(i.EYj, {
+                                    }) : null, (0, n.jsx)(a.EYj, {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
                                         children: C.intl.formatToPlainString(C.t["5TwASM"], {
-                                            collectedCount: T.length,
-                                            totalCount: O.length
+                                            collectedCount: O.length,
+                                            totalCount: T.length
                                         })
                                     })]
                                 })]
@@ -122,11 +122,11 @@ let L = l.memo(function(e) {
                         })]
                     }), (0, n.jsx)("div", {
                         className: b.Vs,
-                        children: (0, n.jsx)(i.e2v, {
+                        children: (0, n.jsx)(a.e2v, {
                             wrap: !1,
                             className: b.Ld,
                             fullWidth: !0,
-                            children: (0, n.jsx)(i.$nd, {
+                            children: (0, n.jsx)(a.$nd, {
                                 variant: "primary",
                                 onClick: e => {
                                     e.stopPropagation(), k && (0, m.BX)(t.skuId, s).then(() => {
@@ -144,7 +144,7 @@ let L = l.memo(function(e) {
                                             }
                                         })
                                     }).catch(() => {
-                                        (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(i.Modal, {
+                                        (0, u.mMO)(() => Promise.resolve(e => (0, n.jsx)(a.Modal, {
                                             transitionState: e.transitionState,
                                             onClose: e.onClose,
                                             size: "sm",

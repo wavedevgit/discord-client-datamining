@@ -5,10 +5,10 @@ s.d(t, {
 });
 var n = s(627968);
 s(64700);
-var l = s(172218),
-    r = s(397927),
-    a = s(854818),
-    i = s(212407),
+var r = s(172218),
+    l = s(397927),
+    i = s(854818),
+    a = s(212407),
     o = s(815280),
     c = s(985018),
     d = s(922868);
@@ -16,12 +16,12 @@ let u = e => {
     let {
         immersiveBannerBlock: t,
         onVisibilityChange: s
-    } = e, u = (0, l.K)(e => {
+    } = e, u = (0, r.K)(e => {
         s?.(e)
     }, .33, null != s), {
         bannerUrl: _,
         bannerAnimatedUrl: g
-    } = (0, i.qY)(t), m = null != t.textColor ? {
+    } = (0, a.qY)(t), m = null != t.textColor ? {
         color: t.textColor
     } : void 0, h = null != t.body && "" !== t.body, p = null != t.helpCenterUrl && "" !== t.helpCenterUrl;
     return (0, n.jsxs)("div", {
@@ -37,10 +37,10 @@ let u = e => {
             className: d.HQ,
             children: (0, n.jsxs)("div", {
                 className: d.Yn,
-                children: [null != t.endTime ? (0, n.jsx)(a.e, {
+                children: [null != t.endTime ? (0, n.jsx)(i.e, {
                     endDate: t.endTime,
                     size: "lg"
-                }) : null, (0, n.jsx)(r.Heading, {
+                }) : null, (0, n.jsx)(l.Heading, {
                     variant: "heading-xxl/bold",
                     className: d.DD,
                     color: "text-strong",
@@ -48,12 +48,12 @@ let u = e => {
                         ...m
                     },
                     children: t.title
-                }), h || p ? (0, n.jsxs)(r.Text, {
+                }), h || p ? (0, n.jsxs)(l.Text, {
                     variant: "text-md/medium",
                     style: {
                         ...m
                     },
-                    children: [h && t.body, h && p && " ", p && (0, n.jsx)(r.MzZ, {
+                    children: [h && t.body, h && p && " ", p && (0, n.jsx)(l.MzZ, {
                         href: t.helpCenterUrl,
                         className: d.CU,
                         style: {
