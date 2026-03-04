@@ -26,7 +26,7 @@ function m(e) {
     }), [t]), p = l.useMemo(() => ({
         [n.guild_id]: [t.author.id]
     }), [n.guild_id, t.author.id]);
-    (0, a.E)(p, "ThreadMessageAccessoryMessage");
+    (0, a.Eq)(p, "ThreadMessageAccessoryMessage");
     let g = l.useMemo(() => null != t.content && "" !== t.content ? (0, s.Ay)(t, {
         formatInline: !0
     }).content : null, [t]);

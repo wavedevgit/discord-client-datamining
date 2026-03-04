@@ -110,11 +110,11 @@ function H(e) {
                     children: [(0, i.jsx)("div", {
                         className: w.R4,
                         children: (0, i.jsx)(h.nFg, {
-                            size: "xs",
+                            size: "custom",
                             className: w.Kk
                         })
                     }), (0, i.jsx)(h.Text, {
-                        variant: m ? "text-sm/medium" : "text-md/medium",
+                        variant: "text-sm/medium",
                         className: w.UU,
                         lineClamp: 1,
                         children: P.intl.string(P.t.NOP3Ry)
@@ -242,7 +242,7 @@ function F(e) {
         }), (0, i.jsxs)("div", {
             className: w.VW,
             children: [(0, i.jsx)(h.Text, {
-                variant: l ? "text-sm/medium" : "text-md/medium",
+                variant: "text-sm/medium",
                 className: w.UU,
                 lineClamp: 1,
                 children: el
@@ -279,7 +279,7 @@ function F(e) {
             className: w.SB,
             children: (0, i.jsx)(h.Rvf, {
                 color: "currentColor",
-                size: "xs",
+                size: "sm",
                 className: w.Kk
             })
         }), l && !H && (0, i.jsx)(u.m_, {

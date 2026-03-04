@@ -55,10 +55,10 @@ let W = (0, s.A)((0, d.A)(function(e) {
         showChannelCallItems: W = !1,
         showModalItems: H = !0,
         showStageChannelItems: Y = !1,
-        context: J,
-        onSelect: Q,
-        onHeightUpdate: Z,
-        viewingChannelId: q,
+        context: q,
+        onSelect: J,
+        onHeightUpdate: Q,
+        viewingChannelId: Z,
         onInteraction: z
     } = e, $ = d.id, ee = {
         page: K.liQ.GUILD_CHANNEL,
@@ -69,14 +69,14 @@ let W = (0, s.A)((0, d.A)(function(e) {
         guildId: n,
         channelId: $,
         showGuildProfile: !0
-    }), en = (0, R.A)(t, n, J), el = (0, B.A)(t.id, J), ei = (0, w.A)(t.id), er = (0, _.A)({
+    }), en = (0, R.A)(t, n, q), el = (0, B.A)(t.id, q), ei = (0, w.A)(t.id), er = (0, _.A)({
         user: t,
-        context: J
+        context: q
     }), ea = (0, G.A)({
         user: t,
         guildId: n,
         channelId: $,
-        context: J
+        context: q
     }), ed = (0, y.A)({
         user: t
     }), es = (0, F.A)(t.id), eo = (0, L.A)(t.id), eu = (0, m.u)({
@@ -87,7 +87,7 @@ let W = (0, s.A)((0, d.A)(function(e) {
         guildId: n,
         userId: t.id,
         analyticsLocation: ee,
-        context: J
+        context: q
     }), eA = (0, U.A)({
         user: t,
         guildId: n
@@ -106,20 +106,20 @@ let W = (0, s.A)((0, d.A)(function(e) {
     }), eC = (0, N.A)(t, n, $), eb = (0, k.A)(t.id, n), eM = (0, D.A)(t, n), ex = (0, C.A)({
         id: t.id,
         label: X.intl.string(X.t["/AXYnE"])
-    }), ef = (0, j.A)(t.id, $), eI = (0, E.A)(t.id), eS = (0, g.A)($), ep = (0, x.A)(t), ey = (0, f.A)(t, n, $), eG = (0, A.A)($, t.id), eN = (0, i.bG)([I.A], () => null != q ? I.A.getChannel(q) : null), eO = (0, O.A)({
+    }), ef = (0, j.A)(t.id, $), eI = (0, E.A)(t.id), eS = (0, g.A)($), ep = (0, x.A)(t), ey = (0, f.A)(t, n, $), eG = (0, A.A)($, t.id), eN = (0, i.bG)([I.A], () => null != Z ? I.A.getChannel(Z) : null), eO = (0, O.A)({
         commandType: o.kc.USER,
         commandTargetId: t.id,
         channel: eN ?? d,
         guildId: n,
-        onHeightUpdate: Z,
-        context: J
+        onHeightUpdate: Q,
+        context: q
     }), eT = (0, h.A)(t.id), e_ = (0, i.bG)([S.A], () => S.A.getVoiceChannelId()), ej = (0, P.A)(t, e_), ev = (0, M.A)(t.id, d), eU = t.isNonUserBot();
     return (0, l.jsxs)(r.W1t, {
         "data-menu-needs-review": !0,
         navId: "user-context",
         onClose: a.Z_,
         "aria-label": X.intl.string(X.t.liqwPJ),
-        onSelect: Q,
+        onSelect: J,
         onInteraction: z,
         children: [!eU && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)(r.rXV, {

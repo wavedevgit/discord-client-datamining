@@ -33,7 +33,7 @@ function D(e, t, D, O, T) {
             [t]: [e.id]
         }), [t, e.id]),
         L = null != O ? [O] : [];
-    (0, u.E)(_, "useAdminActionItems"), (0, r.bG)([x.A], () => x.A.getGuildVersion(t), [t]);
+    (0, u.Eq)(_, "useAdminActionItems"), (0, r.bG)([x.A], () => x.A.getGuildVersion(t), [t]);
     let U = (0, r.bG)([h.A], () => h.A.getGuild(t), [t]),
         N = (0, r.bG)([M.default], () => M.default.getCurrentUser()?.id === e.id, [e.id]),
         R = (0, r.bG)([f.Ay], () => f.Ay.isGuestOrLurker(t, e.id), [t, e.id]),

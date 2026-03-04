@@ -58,10 +58,10 @@ function V(e) {
         Y = null == l && null != J,
         z = [];
     K && Y && z.push(o.M.VANITY_URL_POWERUP_ROLLBACK_MODAL);
-    let [X, $] = (0, c.kn)(z), H = (0, j.MO)(t, V), q = H.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), Q = (0, L.g)(q, t);
+    let [X, $] = (0, c.kn)(z), q = (0, j.MO)(t, V), H = q.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), Q = (0, L.g)(H, t);
     return (i.useEffect(() => {
         if (null != l && !F.current)
-            for (let e of H)
+            for (let e of q)
                 for (let n of e.listings) {
                     if (("singleLevel" === n.type || "singlePerk" === n.type) && n.powerup.skuId === l) {
                         (0, k.A)(t, n.powerup), F.current = !0;
@@ -89,7 +89,7 @@ function V(e) {
                         return
                     }
                 }
-    }, [t, l, H, Q]), i.useEffect(() => {
+    }, [t, l, q, Q]), i.useEffect(() => {
         if (null != X && null != J) {
             let e = {
                 onCloseCallback: () => {
@@ -124,7 +124,7 @@ function V(e) {
             className: U.hQ,
             children: [(0, r.jsx)(d.IpV, {
                 className: U.DO,
-                children: H.map(e => {
+                children: q.map(e => {
                     let {
                         type: n,
                         listings: i

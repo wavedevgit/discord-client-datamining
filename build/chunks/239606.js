@@ -111,7 +111,7 @@ function ed(e) {
         eS = n.useMemo(() => null != ed ? {
             [ed]: [t.id]
         } : {}, [ed, t.id]);
-    (0, o.E)(eS, "UserProfileModalV2");
+    (0, o.Eq)(eS, "UserProfileModalV2");
     let eL = (0, _.Ay)(t.id, ej ? ed : void 0),
         eD = N.Ay.useName(eL?.guildId, ec, t),
         {

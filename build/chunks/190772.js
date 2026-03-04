@@ -62,7 +62,7 @@ function I(e) {
         channel: t,
         message: s
     } = e;
-    (0, o.E)({
+    (0, o.Eq)({
         [t.guild_id]: [s.author.id]
     }, "ThreadBrowserRowSubtext");
     let d = (0, a.bG)([f.default], () => f.default.getUser(s.author.id) ?? s.author),
@@ -120,7 +120,7 @@ function k(e) {
     let {
         channel: t
     } = e, s = (0, a.bG)([x.Ay], () => x.Ay.lastMessageId(t.id)), n = null == s ? new Date(t.threadMetadata?.archiveTimestamp ?? Date.now()).getTime() : j.default.extractTimestamp(s);
-    (0, o.E)({
+    (0, o.Eq)({
         [t.guild_id]: [t.ownerId]
     }, "ThreadBrowserRowSubtext");
     let c = (0, a.bG)([f.default], () => f.default.getUser(t.ownerId)),

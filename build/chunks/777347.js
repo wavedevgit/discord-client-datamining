@@ -25,10 +25,13 @@ function m(e, t) {
     r.useEffect(() => {
         p.length > 0 && p.forEach(t => o.A.requestMember(e, t))
     }, [e, p]);
-    let _ = r.useMemo(() => p.length > 0 ? {
-        [e]: p
-    } : {}, [e, p]);
-    (0, s.E)(_, "GuildPowerupsRecentActivity");
+    let _ = r.useMemo(() => {
+        let t = p.slice(0, s.JM / 2);
+        return t.length > 0 ? {
+            [e]: t
+        } : {}
+    }, [e, p]);
+    (0, s.Eq)(_, "GuildPowerupsRecentActivity");
     let x = (0, i.bG)([u.A], () => u.A.getGuild(e)?.premiumSubscriberCount);
     return r.useEffect(() => {
         x !== n.length && (0, l.VU)(e)

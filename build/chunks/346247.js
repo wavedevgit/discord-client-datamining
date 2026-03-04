@@ -31,7 +31,7 @@ function b(e) {
     let N = i.useMemo(() => ({
         [t]: [b]
     }), [t, b]);
-    (0, d.E)(N, "useChangeIdentityItem");
+    (0, d.Eq)(N, "useChangeIdentityItem");
     let O = f === m.BRT.POPOUT,
         T = (0, o.A)({
             guild: S,

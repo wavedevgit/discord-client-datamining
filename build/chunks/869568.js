@@ -110,7 +110,7 @@ function G(e) {
             })
         })
     }
-    return (0, g.E)(h, "GuildSettingsRolesEditMembers"), (0, i.jsx)("div", {
+    return (0, g.Eq)(h, "GuildSettingsRolesEditMembers"), (0, i.jsx)("div", {
         className: R.Q,
         children: (0, i.jsx)(_.A, {
             targetElementRef: x,

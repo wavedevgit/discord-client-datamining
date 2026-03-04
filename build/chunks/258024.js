@@ -494,7 +494,7 @@ class T {
         let {
             channel: t
         } = this.props;
-        if (this.isPinned()) r.A.updateChannelDimensions(t.id, 1, 1, 0, e);
+        if (this.isPinned()) r.A.updateChannelDimensions(t.id, Date.now(), 1, 1, 0, e);
         else {
             let {
                 placeholderHeight: n
@@ -503,7 +503,7 @@ class T {
                 scrollHeight: l,
                 offsetHeight: s
             } = this.getScrollerState();
-            r.A.updateChannelDimensions(t.id, i - n, l - n, s, e)
+            r.A.updateChannelDimensions(t.id, Date.now(), i - n, l - n, s, e)
         }
     }
     scrollIntoViewRect() {}

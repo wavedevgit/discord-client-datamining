@@ -48,7 +48,7 @@ function C(e) {
         return !U && e && (F.current = window.setTimeout(a, 500)), () => {
             null != F.current && window.clearTimeout(F.current)
         }
-    }, [U, p, a]), (0, _.E)({
+    }, [U, p, a]), (0, _.Eq)({
         [n]: [t]
     }, "GuildMemberModViewSidebar"), r.useEffect(() => {
         !async function() {
