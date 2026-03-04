@@ -46,7 +46,8 @@ let s = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
         [i.RN.MOBILE_HERO]: c,
         [i.RN.PDP_BACKGROUND]: u,
         [i.RN.LOGO]: u,
-        [i.RN.COACHTIP_AVATAR]: u
+        [i.RN.COACHTIP_AVATAR]: u,
+        [i.RN.TAB_TOOLTIP]: u
     },
     h = async e => {
         let t = Object.values(i.Kx),

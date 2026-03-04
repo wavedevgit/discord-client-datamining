@@ -26,11 +26,11 @@ function C(e) {
     let {
         onDismiss: t
     } = e, C = (0, l.bG)([d.A], () => d.A.getGuildId()), p = (0, l.bG)([_.A], () => null != C ? _.A.getChannelId(C) : null, [C]), P = C ?? null, D = (0, l.bG)([c.A], () => null != P ? c.A.getGuild(P) : null, [P]), {
-        shouldShowIncidentActions: U,
+        shouldShowIncidentActions: M,
         incidentData: g,
-        isUnderLockdown: M
+        isUnderLockdown: U
     } = (0, u.Li)(P), m = (0, o.fw)(D?.id ?? N.dJq), h = r.useCallback(() => null != D && (0, E.aZ)(D.id), [D]);
-    if (null == D || null == g || !U) return null;
+    if (null == D || null == g || !M) return null;
     let y = e => {
             e && m && p !== R.VV.MEMBER_SAFETY && h() ? A.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
@@ -56,7 +56,7 @@ function C(e) {
             size: a.Ay.Sizes.MINI
         }),
         k = (0, I.ql)(g, D.name);
-    if (null != (g.dmsDisabledUntil ?? g.invitesDisabledUntil) && M) return (0, i.jsxs)(s.$Td, {
+    if (null != (g.dmsDisabledUntil ?? g.invitesDisabledUntil) && U) return (0, i.jsxs)(s.$Td, {
         className: O.lm,
         color: s.Hv$.NEUTRAL,
         children: [(0, i.jsx)(s.PMB, {

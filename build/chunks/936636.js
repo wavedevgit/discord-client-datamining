@@ -7,8 +7,8 @@ var n = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(808380),
-    o = i(934551),
-    c = i(990078),
+    c = i(934551),
+    o = i(990078),
     d = i(985018),
     u = i(851822);
 let m = [r.Y.DESKTOP, r.Y.XBOX, r.Y.PLAYSTATION, r.Y.NINTENDO];
@@ -20,22 +20,22 @@ function x(e) {
     } = e;
     switch (t) {
         case r.Y.DESKTOP:
-            return (0, n.jsx)(o.ScreenIcon, {
+            return (0, n.jsx)(c.ScreenIcon, {
                 size: "xs",
                 ...i
             });
         case r.Y.XBOX:
-            return (0, n.jsx)(o.XboxNeutralIcon, {
+            return (0, n.jsx)(c.XboxNeutralIcon, {
                 size: "xs",
                 ...i
             });
         case r.Y.PLAYSTATION:
-            return (0, n.jsx)(o.PlaystationNeutralIcon, {
+            return (0, n.jsx)(c.PlaystationNeutralIcon, {
                 size: "xs",
                 ...i
             });
         case r.Y.NINTENDO:
-            return (0, n.jsx)(o.NintendoSwitchNeutralIcon, {
+            return (0, n.jsx)(c.NintendoSwitchNeutralIcon, {
                 size: "xs",
                 ...i
             });
@@ -53,7 +53,7 @@ function g(e) {
         style: {
             alignItems: "center"
         },
-        children: t.map(e => (0, n.jsx)(c.m, {
+        children: t.map(e => (0, n.jsx)(o.m, {
             text: function(e) {
                 switch (e) {
                     case r.Y.DESKTOP:

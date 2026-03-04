@@ -8,8 +8,8 @@ var n = i(627968),
     a = i(397927),
     s = i(256905),
     r = i(409626),
-    o = i(985018),
-    c = i(851822),
+    c = i(985018),
+    o = i(851822),
     d = i(351886);
 
 function u(e) {
@@ -37,10 +37,10 @@ function u(e) {
     }
     return 0 === m.length ? null : (0, n.jsxs)("div", {
         children: [(0, n.jsx)(a.Heading, {
-            className: c.bV,
+            className: o.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: o.intl.string(o.t.bNdK5x)
+            children: c.intl.string(c.t.bNdK5x)
         }), (0, n.jsxs)("div", {
             className: x ? d.DA : d.pZ,
             children: [(0, n.jsx)(a.zCo, {
@@ -64,7 +64,7 @@ function u(e) {
                     children: (0, n.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
-                        alt: o.intl.formatToPlainString(o.t.COYYrn, {
+                        alt: c.intl.formatToPlainString(c.t.COYYrn, {
                             game: name
                         })
                     })
@@ -120,10 +120,10 @@ function m(e) {
     }
     return 0 === m.length ? null : (0, n.jsxs)("div", {
         children: [(0, n.jsx)(a.Heading, {
-            className: c.bV,
+            className: o.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: o.intl.string(o.t.bNdK5x)
+            children: c.intl.string(c.t.bNdK5x)
         }), (0, n.jsxs)("div", {
             className: x ? d.DA : d.pZ,
             children: [(0, n.jsx)(a.zCo, {
@@ -147,7 +147,7 @@ function m(e) {
                     children: (0, n.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
-                        alt: o.intl.formatToPlainString(o.t.COYYrn, {
+                        alt: c.intl.formatToPlainString(c.t.COYYrn, {
                             game: t.name
                         })
                     })

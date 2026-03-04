@@ -1,7 +1,7 @@
 /** chunk id: 310721, original params: e,t,i (module,exports,require) **/
 i.d(t, {
     A: () => r,
-    v: () => o
+    v: () => c
 });
 var n = i(627968);
 i(64700);
@@ -26,7 +26,7 @@ function r(e) {
     })
 }
 
-function o(e) {
+function c(e) {
     let {
         detectedGame: t
     } = e;

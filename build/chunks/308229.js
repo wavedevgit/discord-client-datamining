@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(413339),
     v = n(430452),
     b = n(287809),
-    k = n(954571),
-    h = n(745317),
+    h = n(954571),
+    k = n(745317),
     C = n(652215),
     I = n(985018),
     O = n(682225);
@@ -33,7 +33,7 @@ function x(e) {
         analyticsLocations: T
     } = (0, _.Ay)(d.A.CAMERA_PREVIEW);
     a.useEffect(() => {
-        k.default.track(C.HAw.OPEN_MODAL, {
+        h.default.track(C.HAw.OPEN_MODAL, {
             type: "Camera Preview Modal"
         })
     }, []);
@@ -68,7 +68,7 @@ function x(e) {
                     labelType: "secondary",
                     checked: A,
                     onChange: () => {
-                        u.bm.updateSetting(!A), k.default.track(C.HAw.UPDATE_USER_SETTINGS_LOCAL, {
+                        u.bm.updateSetting(!A), h.default.track(C.HAw.UPDATE_USER_SETTINGS_LOCAL, {
                             always_preview_video: !A
                         })
                     }
@@ -76,7 +76,7 @@ function x(e) {
                 actions: N,
                 onClose: D,
                 transitionState: t,
-                children: (0, i.jsx)(h.A, {
+                children: (0, i.jsx)(k.A, {
                     hidePreviewToggle: !0,
                     hideDeviceHeader: !0,
                     hideCameraSettingsLink: !0,
@@ -93,7 +93,7 @@ function x(e) {
                                 width: 430,
                                 height: 242
                             })
-                        }), (0, i.jsx)(h.k, {})]
+                        }), (0, i.jsx)(k.k, {})]
                     }),
                     onLearnMore: D
                 })

@@ -21,8 +21,8 @@ var n = i(627968),
     _ = i(383501),
     x = i(954571),
     T = i(652215),
-    f = i(985018),
-    D = i(265891);
+    D = i(985018),
+    f = i(265891);
 class I extends s.PureComponent {
     _initTimeout = new d.Ep;
     _silenceTimeout = new d.Ep;
@@ -119,7 +119,7 @@ class I extends s.PureComponent {
         return null == e && null == t ? null : (0, n.jsx)(m.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
-            className: D.Qe,
+            className: f.Qe,
             children: i ? s ? e : t : void 0
         })
     }
@@ -143,23 +143,23 @@ class I extends s.PureComponent {
             isMicTesting: x,
             volume: T,
             isDetectingInput: I
-        } = this.state, b = e && !x ? f.intl.string(f.t["9viE2A"]) : null;
+        } = this.state, b = e && !x ? D.intl.string(D.t["9viE2A"]) : null;
         x && e && !u && this._micTestStop();
         let C = o.length >= l.length ? o : l;
         return (0, n.jsxs)("div", {
-            className: a()(D.kL, A),
+            className: a()(f.kL, A),
             children: [(0, n.jsx)(m.D0$, {
                 label: t ?? void 0,
                 hideLabel: v,
                 description: v ? null : i,
                 children: (0, n.jsxs)("div", {
-                    className: a()(D.ak, {
-                        [D.mi]: v,
-                        [D.EX]: "sm" === c
+                    className: a()(f.ak, {
+                        [f.mi]: v,
+                        [f.EX]: "sm" === c
                     }),
                     children: [!v && (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
-                            className: D.km,
+                            className: f.km,
                             "aria-hidden": !0,
                             children: (0, n.jsx)(m.Button, {
                                 buttonRef: p,

@@ -1,14 +1,14 @@
 /** chunk id: 942528, original params: e,t,i (module,exports,require) **/
 i.d(t, {
-    A: () => p
+    A: () => v
 });
 var n = i(627968),
     l = i(64700),
     a = i(503698),
     s = i.n(a),
     r = i(311907),
-    o = i(397927),
-    c = i(734057),
+    c = i(397927),
+    o = i(734057),
     d = i(309010),
     u = i(287809),
     m = i(562153),
@@ -17,28 +17,28 @@ var n = i(627968),
     h = i(506326),
     f = i(985018),
     j = i(505502),
-    v = i(851822);
-let p = e => {
+    p = i(851822);
+let v = e => {
     let {
         entry: t,
         onClose: i,
         onReaction: a,
-        onRequestOpen: p,
+        onRequestOpen: v,
         disableActivityProfileLinks: A,
         customCTA: E,
         popoutClassname: I,
         popoutPosition: _ = "right"
-    } = e, N = l.useRef(null), C = (0, r.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), T = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, N = l.useRef(null), T = (0, r.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: b
     } = l.useMemo(() => {
-        let e = T?.getAvatarURL(C?.guild_id, 48, !1);
+        let e = C?.getAvatarURL(T?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(C?.guild_id, C?.id, T),
+            nick: m.Ay.getName(T?.guild_id, T?.id, C),
             avatar: e
         }
-    }, [T, C]);
-    return null == T ? null : (0, n.jsx)(o.YNO, {
+    }, [C, T]);
+    return null == C ? null : (0, n.jsx)(c.YNO, {
         targetElementRef: N,
         position: _,
         renderPopout: e => {
@@ -63,13 +63,13 @@ let p = e => {
         },
         positionKey: `'content-entry-${t.id}`,
         onRequestOpen: () => {
-            p?.()
+            v?.()
         },
-        children: e => (0, n.jsx)(o.DUT, {
+        children: e => (0, n.jsx)(c.DUT, {
             innerRef: N,
             ...e,
             className: j.GA,
-            children: (0, n.jsx)(o.vN3, {
+            children: (0, n.jsx)(c.vN3, {
                 offset: {
                     top: 4,
                     bottom: 4,
@@ -86,8 +86,8 @@ let p = e => {
                     }), (0, n.jsx)("div", {
                         className: j.Su,
                         children: (0, n.jsxs)("div", {
-                            className: s()(v.fi, v.Kt),
-                            children: [(0, n.jsx)(o.Text, {
+                            className: s()(p.fi, p.Kt),
+                            children: [(0, n.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
@@ -101,7 +101,7 @@ let p = e => {
                         })
                     }), null != E ? E : (0, n.jsx)("div", {
                         className: j.Br,
-                        children: (0, n.jsx)(o.W4J, {
+                        children: (0, n.jsx)(c.W4J, {
                             size: "sm"
                         })
                     })]

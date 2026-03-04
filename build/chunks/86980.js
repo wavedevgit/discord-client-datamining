@@ -25,24 +25,24 @@ async function R(e) {
             applicationId: p,
             skuId: P,
             initialPlanId: D,
-            analyticsLocations: U,
+            analyticsLocations: M,
             analyticsLocationObject: g
         } = e,
-        M = I.A.get(P);
-    if (null == M) {
+        U = I.A.get(P);
+    if (null == U) {
         let e = (await (0, a.JI)(p)).find(e => e.sku.id === P);
         l()(null != e, "Could not find store listing for sku"), e.sku.type === N.Puh.SUBSCRIPTION_GROUP && await (0, u.vz)(p, e.id)
     }
-    M = M ?? I.A.get(P), l()(null != M && M.applicationId === p, "SKU must belong to application"), M.type !== N.Puh.SUBSCRIPTION || (0, c.B)([M.id]) || await (0, o.ur)(M.id);
+    U = U ?? I.A.get(P), l()(null != U && U.applicationId === p, "SKU must belong to application"), U.type !== N.Puh.SUBSCRIPTION || (0, c.B)([U.id]) || await (0, o.ur)(U.id);
     let m = null == (C = null != (O = (0, E.LU)({
         applicationId: p
     })) ? A.A.getWindow(O) : void 0) || C.closed ? s.SYi : s.KX8;
-    if (M.type !== N.Puh.SUBSCRIPTION) return new Promise((e, t) => {
+    if (U.type !== N.Puh.SUBSCRIPTION) return new Promise((e, t) => {
         (0, d.A)({
             applicationId: p,
             skuId: P,
             analyticsLocationObject: g,
-            analyticsLocations: U,
+            analyticsLocations: M,
             contextKey: m,
             onComplete: t => {
                 e(t?.entitlements ?? [])
@@ -52,7 +52,7 @@ async function R(e) {
             }
         })
     });
-    await (t = p, n = P, r = D, R = g, S = U, (0, _.l)({
+    await (t = p, n = P, r = D, R = g, S = M, (0, _.l)({
         applicationId: t,
         skuId: n,
         initialPlanId: r,

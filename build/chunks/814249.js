@@ -27,9 +27,9 @@ function T(e) {
         getSurveyResponses: T,
         setResponse: I,
         trackDisplayedQuestions: N
-    } = (0, E.i)(), R = T(t), S = (0, _.i)(n), [O, C] = r.useState(S.blockId), [p, P] = r.useState(S.pageIndex), [D, U] = r.useState(!1), g = (e, n) => {
+    } = (0, E.i)(), R = T(t), S = (0, _.i)(n), [O, C] = r.useState(S.blockId), [p, P] = r.useState(S.pageIndex), [D, M] = r.useState(!1), g = (e, n) => {
         I(t, e, n)
-    }, M = r.useCallback(() => (D ? s() : (0, a.qfG)(e => (0, i.jsx)(l.Modal, {
+    }, U = r.useCallback(() => (D ? s() : (0, a.qfG)(e => (0, i.jsx)(l.Modal, {
         title: A.intl.string(A.t.T9Sx3z),
         actions: [{
             variant: "secondary",
@@ -58,7 +58,7 @@ function T(e) {
             pageIndex: p,
             responses: R
         });
-        N(t, m), e.isComplete && o.Ay.submitSurveyResponse(t, R), C(e.blockId), P(e.pageIndex), U(e.isComplete)
+        N(t, m), e.isComplete && o.Ay.submitSurveyResponse(t, R), C(e.blockId), P(e.pageIndex), M(e.isComplete)
     }, [n, O, p, R, t, m, N]);
     r.useEffect(() => {
         0 === m.length && h()
@@ -93,7 +93,7 @@ function T(e) {
         })]
     }) : (0, i.jsx)(l.Modal, {
         transitionState: c,
-        onClose: M,
+        onClose: U,
         title: A.intl.string(A.t.OSqLUF),
         size: "md",
         actions: [{

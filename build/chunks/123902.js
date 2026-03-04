@@ -37,16 +37,16 @@ function g(e) {
         children: _
     } = e, x = p[n], {
         ref: T,
-        width: f
-    } = (0, c.Ay)(), D = l.useMemo(() => null != f ? v(f) : 0, [f]), I = l.useMemo(() => {
-        let e = Math.abs(v(D * (100 - Math.max(0, Math.min(100, i))) / 100) - D);
+        width: D
+    } = (0, c.Ay)(), f = l.useMemo(() => null != D ? v(D) : 0, [D]), I = l.useMemo(() => {
+        let e = Math.abs(v(f * (100 - Math.max(0, Math.min(100, i))) / 100) - f);
         return {
             transform: `translateX(${e}px)`
         }
-    }, [i, D]), b = l.useMemo(() => ({
-        width: `${D}px`,
+    }, [i, f]), b = l.useMemo(() => ({
+        width: `${f}px`,
         background: i <= 0 ? "none" : `linear-gradient(to right, ${a}, ${h})`
-    }), [h, a, i, D]);
+    }), [h, a, i, f]);
     return (0, s.jsxs)("div", {
         className: d.iE,
         ref: T,
@@ -59,8 +59,8 @@ function g(e) {
             children: [(0, s.jsx)("div", {
                 className: d.qB,
                 style: I
-            }), 0 !== D && (0, s.jsx)(u.A, {
-                width: D,
+            }), 0 !== f && (0, s.jsx)(u.A, {
+                width: f,
                 height: x,
                 className: o()(d.DR, m[t], A)
             })]

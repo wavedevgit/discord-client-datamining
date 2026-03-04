@@ -8,7 +8,7 @@ n.d(t, {
     W5: () => D,
     nV: () => C,
     s6: () => R,
-    wu: () => U
+    wu: () => M
 });
 var i = n(562465),
     r = n(73153),
@@ -134,7 +134,7 @@ function D(e, t, n) {
     })
 }
 
-function U(e) {
+function M(e) {
     r.h.dispatch({
         type: "AUTO_MODERATION_MENTION_RAID_NOTICE_DISMISS",
         guildId: e

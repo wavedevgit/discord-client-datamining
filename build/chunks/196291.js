@@ -91,6 +91,7 @@ function G(e) {
             isShown: !0,
             hasBackground: !0,
             children: [(0, i.jsx)(f.A, {
+                stickyPreview: !1,
                 layoutClassName: M.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(l.tvc, {

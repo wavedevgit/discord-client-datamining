@@ -8,8 +8,8 @@ var n = i(627968),
     a = i(503698),
     s = i.n(a),
     r = i(505779),
-    o = i(311907),
-    c = i(397927),
+    c = i(311907),
+    o = i(397927),
     d = i(73153),
     u = i(714991),
     m = i(970163),
@@ -18,8 +18,8 @@ var n = i(627968),
     h = i(409626),
     f = i(652215),
     j = i(985018),
-    v = i(851822),
-    p = i(921380);
+    p = i(851822),
+    v = i(921380);
 
 function A(e) {
     let {
@@ -27,7 +27,7 @@ function A(e) {
         trackClick: i,
         onInviteResolved: a,
         closeModal: A
-    } = e, [E, I] = l.useState(), _ = (0, o.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)), N = l.useMemo(() => t.websites?.find(e => {
+    } = e, [E, I] = l.useState(), _ = (0, c.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)), N = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
@@ -44,38 +44,38 @@ function A(e) {
             };
             null != N && e(N.url)
         }, [N, a, E]), null == E || null == E.guild || !E.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
-    let C = g.Ay.getGuildIconURL({
+    let T = g.Ay.getGuildIconURL({
         id: E.guild.id,
         icon: E.guild.icon,
         size: 32
     });
     return (0, n.jsxs)("div", {
-        className: v.fi,
-        children: [(0, n.jsx)(c.Heading, {
-            className: v.bV,
+        className: p.fi,
+        children: [(0, n.jsx)(o.Heading, {
+            className: p.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: j.intl.string(j.t.kBDZSL)
         }), (0, n.jsxs)("div", {
-            className: s()(v.nM, v.mX),
+            className: s()(p.nM, p.mX),
             children: [(0, n.jsx)("img", {
-                className: p.$f,
-                src: C,
+                className: v.$f,
+                src: T,
                 alt: j.intl.formatToPlainString(j.t.xm6W9D, {
                     guildName: E.guild.name
                 })
             }), (0, n.jsxs)("div", {
-                className: p.U5,
+                className: v.U5,
                 children: [(0, n.jsxs)("div", {
-                    className: p.YS,
-                    children: [(0, n.jsx)(c.Text, {
+                    className: v.YS,
+                    children: [(0, n.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: E.guild.name
                     }), (0, n.jsx)(u.A, {
                         guild: E.guild,
                         size: 16
                     })]
-                }), null != E.approximate_member_count && (0, n.jsx)(c.Text, {
+                }), null != E.approximate_member_count && (0, n.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: j.intl.format(j.t.zRl6XR, {
@@ -83,7 +83,7 @@ function A(e) {
                     })
                 })]
             })]
-        }), (0, n.jsx)(c.Button, {
+        }), (0, n.jsx)(o.Button, {
             variant: "secondary",
             text: _ ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
             onClick: () => {
@@ -109,8 +109,8 @@ function E(e) {
     l.useEffect(() => {
         N.current = a
     }, [a]);
-    let C = (0, o.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)),
-        T = l.useMemo(() => t.websites?.find(e => {
+    let T = (0, c.bG)([x.A], () => E?.guild?.id != null && x.A.isMember(E?.guild?.id)),
+        C = l.useMemo(() => t.websites?.find(e => {
             let {
                 category: t
             } = e;
@@ -125,40 +125,40 @@ function E(e) {
                     !0 !== e.banned && (_.current = t, I(e.invite), null != e.invite && N.current?.(e.invite))
                 }
             };
-            null != T && e(T.url)
-        }, [T]), null == E || null == E.guild || !E.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
+            null != C && e(C.url)
+        }, [C]), null == E || null == E.guild || !E.guild.features.includes(f.GuildFeatures.VERIFIED)) return null;
     let S = g.Ay.getGuildIconURL({
         id: E.guild.id,
         icon: E.guild.icon,
         size: 32
     });
     return (0, n.jsxs)("div", {
-        className: v.fi,
-        children: [(0, n.jsx)(c.Heading, {
-            className: v.bV,
+        className: p.fi,
+        children: [(0, n.jsx)(o.Heading, {
+            className: p.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: j.intl.string(j.t.kBDZSL)
         }), (0, n.jsxs)("div", {
-            className: s()(v.nM, v.mX),
+            className: s()(p.nM, p.mX),
             children: [(0, n.jsx)("img", {
-                className: p.$f,
+                className: v.$f,
                 src: S,
                 alt: j.intl.formatToPlainString(j.t.xm6W9D, {
                     guildName: E.guild.name
                 })
             }), (0, n.jsxs)("div", {
-                className: p.U5,
+                className: v.U5,
                 children: [(0, n.jsxs)("div", {
-                    className: p.YS,
-                    children: [(0, n.jsx)(c.Text, {
+                    className: v.YS,
+                    children: [(0, n.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: E.guild.name
                     }), (0, n.jsx)(u.A, {
                         guild: E.guild,
                         size: 16
                     })]
-                }), null != E.approximate_member_count && (0, n.jsx)(c.Text, {
+                }), null != E.approximate_member_count && (0, n.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: j.intl.format(j.t.zRl6XR, {
@@ -166,9 +166,9 @@ function E(e) {
                     })
                 })]
             })]
-        }), (0, n.jsx)(c.Button, {
+        }), (0, n.jsx)(o.Button, {
             variant: "secondary",
-            text: C ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
+            text: T ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
             onClick: () => {
                 A(), i(h.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",

@@ -50,7 +50,7 @@ let S = 21552 == n.j ? function(e) {
             intervalType: O.subscription_trial?.interval,
             intervalCount: O.subscription_trial?.interval_count
         }),
-        U = _.A.getArticleURL(O.trial_id === I.yo ? N.MVz.NITRO_TRIAL_FOR_ALL : N.MVz.PREMIUM_TRIAL);
+        M = _.A.getArticleURL(O.trial_id === I.yo ? N.MVz.NITRO_TRIAL_FOR_ALL : N.MVz.PREMIUM_TRIAL);
     return (0, i.jsxs)(u.T0, {
         onClick: () => {
             t(), c.default.track(N.HAw.APP_NOTICE_CLOSED, {
@@ -59,7 +59,7 @@ let S = 21552 == n.j ? function(e) {
             })
         },
         children: [(0, i.jsx)(u.In, {
-            children: (0, T.GZ)(n, C, D, U)
+            children: (0, T.GZ)(n, C, D, M)
         }), (0, i.jsx)(u.fY, {
             onClick: () => {
                 (0, E.A)({

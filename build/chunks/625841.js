@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(347481),
     v = n(430452),
     b = n(954571),
-    k = n(74848),
-    h = n(652215),
+    h = n(74848),
+    k = n(652215),
     C = n(731854),
     I = n(985018),
     O = n(534393);
@@ -62,33 +62,33 @@ function D(e) {
         [C.oh.VIDEO_INPUT]: {
             setDevice: _.A.setVideoDevice,
             Icon: d.xpe,
-            getCanSetDevice: e => e.isVideoAvailable(),
+            getCanSetDevice: e => e.isVideoAvailable() || !e.hasVideoDevice(),
             getWarningMessage: () => I.intl.format(I.t["1iK6UW"], {
                 onDownloadClick: () => (0, p._)("Help Text Video Devices")
             }),
             getLocation: e => `${e}.SingleSelectVideoDevices`
         }
     } [t], {
-        analyticsLocations: y
-    } = (0, u.Ay)(), M = (0, c.bG)([g.A], () => g.A.theme), [P, V] = a.useState(D), B = L(o), [R, W] = (0, k.tR)(t, {
+        analyticsLocations: V
+    } = (0, u.Ay)(), y = (0, c.bG)([g.A], () => g.A.theme), [M, P] = a.useState(D), B = L(o), [R, W] = (0, h.tR)(t, {
         location: B
     }), {
         id: H
-    } = (0, k.x5)(t), K = (0, c.bG)([v.Ay], () => j(v.Ay)), G = (0, i.jsx)(d.po8, {
+    } = (0, h.x5)(t), K = (0, c.bG)([v.Ay], () => j(v.Ay)), G = (0, i.jsx)(d.po8, {
         messageType: d.YCn.WARNING,
         children: N()
     }), Q = a.useCallback(e => {
-        e === x ? (V(!0), b.default.track(h.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
+        e === x ? (P(!0), b.default.track(k.HAw.DEVICES_LIST_SHOW_MORE_CLICKED, {
             device_type: t,
             location: B,
-            location_stack: y,
+            location_stack: V,
             shown_device_count: R.length,
             hidden_device_count: W.length
         })) : (A?.(e) ?? !0) && T(e, {
             location: B,
-            analyticsLocations: y
+            analyticsLocations: V
         })
-    }, [t, B, R.length, W.length, y, A, T]);
+    }, [t, B, R.length, W.length, V, A, T]);
 
     function $(e) {
         let t, a, {
@@ -97,11 +97,11 @@ function D(e) {
             } = e,
             s = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             _ = o,
-            u = (0, k.d)(o);
+            u = (0, h.d)(o);
         null != u && (_ = u.prefix, t = u.subName);
         let g = m.A.getCertifiedDeviceName(c, _);
         if (m.A.isCertified(c)) {
-            let e = (0, r.qB)(M) ? n(961392) : n(848672);
+            let e = (0, r.qB)(y) ? n(961392) : n(848672);
             a = (0, i.jsx)("img", {
                 src: e,
                 alt: I.intl.string(I.t.smSKsj)
@@ -155,7 +155,7 @@ function D(e) {
                         }
                     },
                     t = R.map(e);
-                if (P || 0 === W.length) {
+                if (M || 0 === W.length) {
                     let n = W.map(e);
                     return t.concat(n)
                 } {

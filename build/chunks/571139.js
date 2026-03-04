@@ -31,14 +31,14 @@ let P = 21552 == n.j ? () => {
         P = (0, s.zy)(),
         D = (0, c.B)(P.pathname, R.BVt.CHANNEL(t?.id, S.VV.GUILD_ONBOARDING))?.isExact === !0;
     if (null == t || !(0, I.Qd)(t) || D) return null;
-    let U = r?.applicationStatus ?? T.B5.STARTED,
+    let M = r?.applicationStatus ?? T.B5.STARTED,
         g = null,
-        M = null,
+        U = null,
         m = null,
         h = [C.lm, p.lm];
-    switch (U) {
+    switch (M) {
         case T.B5.SUBMITTED:
-            g = O.intl.string(O.t["5iLvSx"]), M = O.intl.string(O.t.mqtdmQ), m = () => {
+            g = O.intl.string(O.t["5iLvSx"]), U = O.intl.string(O.t.mqtdmQ), m = () => {
                 (0, o.A)({
                     title: O.intl.string(O.t.aIz1oV),
                     subtitle: O.intl.string(O.t["13tjTU"]),
@@ -49,7 +49,7 @@ let P = 21552 == n.j ? () => {
             };
             break;
         case T.B5.REJECTED:
-            g = O.intl.string(O.t.lk30cY), M = O.intl.string(O.t["8RrsHr"]), m = () => {
+            g = O.intl.string(O.t.lk30cY), U = O.intl.string(O.t["8RrsHr"]), m = () => {
                 (0, E.mMO)(async () => {
                     let {
                         default: e
@@ -62,7 +62,7 @@ let P = 21552 == n.j ? () => {
             }, h.push(C.z3);
             break;
         default:
-            g = O.intl.string(O.t.G5YKXP), M = O.intl.string(O.t["r8/DT+"]), m = () => {
+            g = O.intl.string(O.t.G5YKXP), U = O.intl.string(O.t["r8/DT+"]), m = () => {
                 (0, u.Ze)(t.id)
             }
     }
@@ -76,7 +76,7 @@ let P = 21552 == n.j ? () => {
             variant: "overlay-primary",
             size: "sm",
             onClick: m,
-            text: M
+            text: U
         })]
     })
 } : null

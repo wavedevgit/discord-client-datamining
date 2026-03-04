@@ -26,9 +26,9 @@ var i = n(627968),
     p = n(723702),
     P = n(529942),
     D = n(164956),
-    U = n(311127),
+    M = n(311127),
     g = n(652215),
-    M = n(746080);
+    U = n(746080);
 n(500208);
 var m = n(2242),
     h = n(985018),
@@ -92,7 +92,7 @@ function L() {
             }
         }(s),
         x = s === g.BEX.ROLE_SUBSCRIPTIONS ? h.intl.string(h.t.hZUCzd) : h.intl.string(h.t["/djIh7"]),
-        G = n === M.VV.GUILD_ONBOARDING,
+        G = n === U.VV.GUILD_ONBOARDING,
         j = e => {
             let {
                 backToSettings: n
@@ -131,7 +131,7 @@ function L() {
             }), (0, i.jsx)(_.YNO, {
                 targetElementRef: e,
                 position: "bottom",
-                renderPopout: () => (0, i.jsx)(U.A, {
+                renderPopout: () => (0, i.jsx)(M.A, {
                     guildId: t
                 }),
                 children: t => {
