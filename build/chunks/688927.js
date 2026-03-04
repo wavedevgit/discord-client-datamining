@@ -17,22 +17,23 @@ let c = e => {
             button: c
         },
         isModeratorReport: u,
-        isTidaReport: _ = !1
-    } = e, m = c?.type === "submit", x = a.useMemo(() => r.A.reactParserFor({
+        isTidaReport: _ = !1,
+        hideTitle: m = !1
+    } = e, x = c?.type === "submit", p = a.useMemo(() => r.A.reactParserFor({
         ...r.A.defaultRules,
         link: s.B
     }), []);
     return (0, l.jsxs)("div", {
         className: o.N,
-        children: [null != t && "" !== t ? (0, l.jsx)(i.Heading, {
-            variant: "heading-xl/semibold",
+        children: [m || null == t || "" === t ? null : (0, l.jsx)(i.Heading, {
+            variant: "heading-lg/semibold",
             color: "text-strong",
             children: t
-        }) : null, null != n && "" !== t ? (0, l.jsx)(i.Text, {
+        }), null != n && "" !== t ? (0, l.jsx)(i.Text, {
             variant: "text-md/normal",
-            color: "text-default",
-            children: x(n)
-        }) : null, m && !u && !_ && (0, l.jsx)(i.Text, {
+            color: "text-subtle",
+            children: p(n)
+        }) : null, x && !u && !_ && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: d.intl.format(d.t.Q0tSKT, {})
         })]

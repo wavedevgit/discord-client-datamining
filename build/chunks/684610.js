@@ -3,13 +3,13 @@ n.d(t, {
     A: () => v
 });
 var a = n(627968),
-    i = n(64700),
-    s = n(397927),
-    r = n(442433),
-    l = n(793574),
+    s = n(64700),
+    i = n(397927),
+    l = n(442433),
+    r = n(793574),
     d = n(307600),
-    o = n(363487),
-    c = n(365003),
+    c = n(363487),
+    o = n(365003),
     u = n(843095),
     _ = n(800007),
     m = n(294726),
@@ -32,8 +32,8 @@ function v(e) {
     let {
         guildId: t,
         instance: n
-    } = e, _ = i.useRef(null), v = (0, c.A)(n.providerType, n.gameServerPanelUrl);
-    return (0, o.A)(t) ? (0, a.jsx)(s.YNO, {
+    } = e, _ = s.useRef(null), v = (0, o.A)(n.providerType, n.gameServerPanelUrl);
+    return (0, c.A)(t) ? (0, a.jsx)(i.YNO, {
         targetElementRef: _,
         align: "top",
         position: "right",
@@ -41,23 +41,23 @@ function v(e) {
         disablePointerEvents: !1,
         renderPopout: e => {
             let {
-                closePopout: i
+                closePopout: s
             } = e;
-            return (0, a.jsx)(s.W1t, {
+            return (0, a.jsx)(i.W1t, {
                 "data-menu-migrated": !0,
                 navId: "game_server-popout-context-menu",
                 onClose: () => {
-                    (0, r.Z_)(), i()
+                    (0, l.Z_)(), s()
                 },
                 "aria-label": x.intl.string(m.default["yb+ork"]),
                 onSelect: void 0,
-                children: (0, a.jsxs)(s.rXV, {
-                    children: [null != v && (0, a.jsx)(s.Drp, {
+                children: (0, a.jsxs)(i.rXV, {
+                    children: [null != v && (0, a.jsx)(i.Drp, {
                         id: "get-support",
-                        icon: s.oyn,
+                        icon: i.oyn,
                         leadingAccessory: {
                             type: "icon",
-                            icon: s.oyn
+                            icon: i.oyn
                         },
                         label: x.intl.string(m.default.bBkeMs),
                         action: () => {
@@ -65,12 +65,12 @@ function v(e) {
                                 href: v
                             })
                         }
-                    }), (0, a.jsx)(s.Drp, {
+                    }), (0, a.jsx)(i.Drp, {
                         id: "settings",
-                        icon: s.Zes,
+                        icon: i.Zes,
                         leadingAccessory: {
                             type: "icon",
-                            icon: s.Zes
+                            icon: i.Zes
                         },
                         label: x.intl.string(m.default["feUiM/"]),
                         action: () => {
@@ -78,19 +78,19 @@ function v(e) {
                                 guildId: t,
                                 stepConfig: f,
                                 initialGameServerInstance: n,
-                                analyticsLocation: l.A.GAME_SERVER_PAGE
+                                analyticsLocation: r.A.GAME_SERVER_PAGE
                             })
                         }
                     })]
                 })
             })
         },
-        children: e => (0, a.jsx)(s.DUT, {
+        children: e => (0, a.jsx)(i.DUT, {
             "aria-label": x.intl.string(x.t["UKOtz+"]),
             className: g.v,
             ...e,
             innerRef: _,
-            children: (0, a.jsx)(s.jNK, {
+            children: (0, a.jsx)(i.jNK, {
                 color: "currentColor",
                 size: "sm"
             })

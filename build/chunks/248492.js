@@ -1,6 +1,6 @@
 /** chunk id: 248492, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var l = n(627968),
     a = n(64700),
@@ -16,18 +16,18 @@ var l = n(627968),
     x = n(985018),
     p = n(449154),
     g = n(532406);
-let A = e => {
+let h = e => {
     let {
         entry: t
     } = e, {
         name: n
-    } = t, A = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), h = t.getIconURL(40) ?? g, b = (0, c.A)({
+    } = t, h = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? g, b = (0, c.A)({
         application: t
     }), v = a.useRef(!1);
     a.useEffect(() => {
         v.current || (d.A.fetch(), v.current = !0)
     }, []);
-    let f = null != A ? m.default.extractTimestamp(A.id) : void 0;
+    let f = null != h ? m.default.extractTimestamp(h.id) : void 0;
     return (0, l.jsxs)("div", {
         className: p.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -44,7 +44,7 @@ let A = e => {
                     height: 40,
                     className: p.VE,
                     children: (0, l.jsx)("img", {
-                        src: h,
+                        src: A,
                         alt: "",
                         className: p.Z2
                     })

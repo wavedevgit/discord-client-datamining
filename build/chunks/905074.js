@@ -1,6 +1,6 @@
 /** chunk id: 905074, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => A
 }), n(323874), n(14289), n(35956);
 var l = n(627968),
     a = n(64700),
@@ -34,7 +34,7 @@ function g(e) {
         }
     }(e)
 }
-let A = e => {
+let h = e => {
         let {
             data: {
                 title: t,
@@ -43,56 +43,56 @@ let A = e => {
                 message_link_title: _,
                 message_link_placeholder: m
             },
-            onChange: A,
-            initialContentUrl: h,
+            onChange: h,
+            initialContentUrl: A,
             initialMessageUrl: b,
             isRequired: v
         } = e, f = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: d.B
-        }), []), [T, C] = a.useState(""), [j, I] = a.useState(""), [S, N] = a.useState(null), [y, k] = a.useState(null), [E, M] = a.useState(!1);
+        }), []), [T, C] = a.useState(""), [j, I] = a.useState(""), [N, S] = a.useState(null), [y, k] = a.useState(null), [E, M] = a.useState(!1);
         a.useEffect(() => {
-            C(h?.value ?? ""), I(b?.value ?? ""), h?.value != null && "" !== h.value && M(g(h.value))
-        }, [h, b]);
+            C(A?.value ?? ""), I(b?.value ?? ""), A?.value != null && "" !== A.value && M(g(A.value))
+        }, [A, b]);
         let R = a.useCallback(e => {
                 if (C(e), "" === e) {
-                    N(null), M(!1), I(""), k(null), A({
+                    S(null), M(!1), I(""), k(null), h({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    N(o.intl.string(o.t["24xrGb"])), M(!1), I(""), k(null), A({
+                    S(o.intl.string(o.t["24xrGb"])), M(!1), I(""), k(null), h({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = g(e);
-                M(t), N(null), t ? "" === j ? A({
+                M(t), S(null), t ? "" === j ? h({
                     value: e,
                     isValid: !1
-                }) : x.test(j) ? A({
+                }) : x.test(j) ? h({
                     value: e,
                     isValid: !0
                 }, {
                     value: j,
                     isValid: !0
-                }) : A({
+                }) : h({
                     value: e,
                     isValid: !1
                 }, {
                     value: j,
                     isValid: !1
-                }) : (I(""), k(null), A({
+                }) : (I(""), k(null), h({
                     value: e,
                     isValid: !0
                 }))
-            }, [A, j]),
+            }, [h, j]),
             O = a.useCallback(e => {
                 if (I(e), "" === e || !x.test(e)) {
-                    k(o.intl.string(o.t["24xrGb"])), A({
+                    k(o.intl.string(o.t["24xrGb"])), h({
                         value: T,
                         isValid: !1
                     }, {
@@ -101,14 +101,14 @@ let A = e => {
                     });
                     return
                 }
-                k(null), A({
+                k(null), h({
                     value: T,
                     isValid: !0
                 }, {
                     value: e,
                     isValid: !0
                 })
-            }, [A, T]);
+            }, [h, T]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)(i.BJc, {
                 gap: 16,
@@ -126,7 +126,7 @@ let A = e => {
                     }), (0, l.jsx)(i.ksK, {
                         onChange: R,
                         value: T,
-                        error: S,
+                        error: N,
                         placeholder: s,
                         autoFocus: !0
                     })]
@@ -154,7 +154,7 @@ let A = e => {
             })]
         })
     },
-    h = e => {
+    A = e => {
         let {
             element: t,
             onChange: n,
@@ -162,7 +162,7 @@ let A = e => {
         } = e, r = t.name, s = `${t.name}_message_link`, d = a.useCallback((e, t) => {
             null != t ? n(r, e.value, e.isValid && t.isValid, s, t.value) : n(r, e.value, e.isValid, s, void 0)
         }, [n, r, s]);
-        return (0, l.jsx)(A, {
+        return (0, l.jsx)(h, {
             data: t.data,
             onChange: d,
             initialContentUrl: i?.[r],

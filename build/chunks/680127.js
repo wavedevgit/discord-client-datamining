@@ -1,16 +1,16 @@
 /** chunk id: 680127, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => i
 });
 var a = n(627968),
-    i = n(397927);
+    s = n(397927);
 
-function s(e, t) {
-    return (0, i.mMO)(async () => {
+function i(e, t) {
+    return (0, s.mMO)(async () => {
         let {
-            default: i
+            default: s
         } = await n.e("5490").then(n.bind(n, 826153));
-        return n => (0, a.jsx)(i, {
+        return n => (0, a.jsx)(s, {
             ...n,
             guildId: e,
             instance: t

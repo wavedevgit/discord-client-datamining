@@ -23,29 +23,29 @@ let x = s.memo(function(e) {
     let {
         guildId: t,
         selected: x
-    } = e, [, C] = (0, c.kn)([l.M.EMPTY_GAME_SERVER_TAB], void 0, !0), [E, I] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), N = E === l.M.GAME_SERVER_HOSTING_NEW_BADGE, S = s.useCallback(() => {
-        I(p.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
-    }, [t, I]), b = s.useCallback(e => {
+    } = e, [C, E] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), I = C === l.M.GAME_SERVER_HOSTING_NEW_BADGE, N = s.useCallback(() => {
+        E(p.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
+    }, [t, E]), S = s.useCallback(e => {
         e.stopPropagation(), (0, a.openModalLazy)(async () => {
             let {
                 default: e
             } = await n.e("2872").then(n.bind(n, 128459));
-            return t => (0, i.jsx)(e, {
-                ...t,
-                onConfirm: () => C(p.i.USER_DISMISS)
+            return n => (0, i.jsx)(e, {
+                ...n,
+                guildId: t
             })
         })
-    }, [C]), T = (0, i.jsxs)("div", {
+    }, [t]), b = (0, i.jsxs)("div", {
         className: _.c,
         children: [(0, i.jsx)("div", {
             className: f.Xs,
             children: (0, i.jsx)(o.w_, {
-                onClick: b,
+                onClick: S,
                 "aria-label": g.intl.string(g.t.cpT0Cq),
                 icon: r.PGe,
                 forceShow: !0
             })
-        }), N && (0, i.jsx)("div", {
+        }), I && (0, i.jsx)("div", {
             className: f.yW,
             children: (0, i.jsx)(r.LpS, {
                 disableColor: !0,
@@ -64,7 +64,7 @@ let x = s.memo(function(e) {
         }),
         text: g.intl.string(m.default.vCzwM7),
         selected: x,
-        onClick: S,
-        trailing: T
+        onClick: N,
+        trailing: b
     })
 })

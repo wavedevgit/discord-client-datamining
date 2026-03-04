@@ -21,24 +21,24 @@ let x = e => {
     a.useEffect(() => {
         null != g && p(!0)
     }, [g]);
-    let A = a.useRef(!1);
+    let h = a.useRef(!1);
     a.useEffect(() => {
-        A.current || (r.A.fetch(), A.current = !0)
+        h.current || (r.A.fetch(), h.current = !0)
     }, []);
-    let h = (0, i.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
+    let A = (0, i.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
         b = a.useCallback(() => {
             if (p(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
                     application_id: t.id,
                     report_id: n
                 }), null == g) return;
             r.A.delete(g.id);
-            let e = h.get(t.id);
+            let e = A.get(t.id);
             null != e && d.A.leaveActivity({
                 location: e.location,
                 applicationId: t.id,
                 showFeedback: !1
             })
-        }, [t.id, g, h, n]);
+        }, [t.id, g, A, n]);
     return null == t ? null : (0, l.jsx)(c.PQ, {
         title: m.intl.string(m.t.ygG62M),
         description: m.intl.string(m.t.S51EKg),

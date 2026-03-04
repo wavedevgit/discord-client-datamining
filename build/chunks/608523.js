@@ -22,15 +22,15 @@ let u = e => {
                 pattern: p
             },
             onChange: g,
-            initialText: A,
-            isRequired: h
+            initialText: h,
+            isRequired: A
         } = e, b = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: s.B
         }), []), [v, f] = a.useState(""), [T, C] = a.useState(null);
         a.useEffect(() => {
-            f(A?.value ?? "")
-        }, [A]);
+            f(h?.value ?? "")
+        }, [h]);
         let j = a.useCallback(e => {
             let t = null != p ? new RegExp(p) : null;
             null == t || t.test(e) ? null != e && (C(null), f(e), g({
@@ -47,7 +47,7 @@ let u = e => {
                 className: c.QB,
                 children: [null != t && (0, l.jsxs)(i.Text, {
                     variant: "text-sm/bold",
-                    children: [t, h && (0, l.jsx)("span", {
+                    children: [t, A && (0, l.jsx)("span", {
                         className: o.m,
                         children: "*"
                     })]

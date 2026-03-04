@@ -3,13 +3,13 @@ n.d(t, {
     A: () => p
 });
 var a = n(627968),
-    i = n(64700),
-    s = n(158954),
-    r = n(311907),
-    l = n(990078),
+    s = n(64700),
+    i = n(158954),
+    l = n(311907),
+    r = n(990078),
     d = n(397927),
-    o = n(793574),
-    c = n(665171),
+    c = n(793574),
+    o = n(665171),
     u = n(522055),
     _ = n(895770),
     m = n(355609),
@@ -27,18 +27,18 @@ function p(e) {
     let {
         guildId: t
     } = e;
-    i.useEffect(() => {
-        (0, c.z9)(t)
+    s.useEffect(() => {
+        (0, o.z9)(t)
     }, [t]);
-    let n = (0, r.bG)([u.A], () => u.A.getStateForGuild(t)),
+    let n = (0, l.bG)([u.A], () => u.A.getStateForGuild(t)),
         {
             catalog: p,
-            instances: C
-        } = i.useMemo(() => ({
+            instances: A
+        } = s.useMemo(() => ({
             catalog: Object.values(n?.catalog ?? {}),
             instances: Object.values(n?.instances ?? {})
         }), [n?.catalog, n?.instances]),
-        I = C.length >= g.ZI;
+        b = A.length >= g.ZI;
     return 0 === p.length ? (0, a.jsx)("div", {
         className: h.kL,
         children: (0, a.jsx)(d.y$y, {
@@ -47,18 +47,18 @@ function p(e) {
         })
     }) : (0, a.jsxs)("div", {
         className: h.kL,
-        children: [(0, a.jsx)(s.DZT, {
+        children: [(0, a.jsx)(i.DZT, {
             className: h.R_,
             variant: "heading-md/semibold",
             children: v.intl.string(f.default["3vWDMz"])
-        }), I && (0, a.jsx)("div", {
+        }), b && (0, a.jsx)("div", {
             className: h.Bq,
             children: (0, a.jsx)(m.k, {})
-        }), (0, a.jsx)(s.IpV, {
+        }), (0, a.jsx)(i.IpV, {
             className: h.nd,
             children: (0, a.jsx)("div", {
                 className: h.Y_,
-                children: p.map((e, n) => (0, a.jsx)(l.m, {
+                children: p.map((e, n) => (0, a.jsx)(r.m, {
                     asContainer: !0,
                     text: e.disabled ? v.intl.formatToPlainString(f.default.uVpJYf, {
                         gameName: e.name
@@ -71,12 +71,12 @@ function p(e) {
                             guildId: t,
                             stepConfig: j,
                             initialGameServerGame: e,
-                            analyticsLocation: o.A.GAME_SERVER_PAGE_SIDEBAR
+                            analyticsLocation: c.A.GAME_SERVER_PAGE_SIDEBAR
                         }),
                         imageClassName: h.Sl,
                         titleClassName: h.DD,
-                        disabled: I || e.disabled,
-                        location: o.A.GAME_SERVER_PAGE_SIDEBAR
+                        disabled: b || e.disabled,
+                        location: c.A.GAME_SERVER_PAGE_SIDEBAR
                     })
                 }, `sidebar-game-${n}-${e.id}`))
             })

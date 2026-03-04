@@ -20,18 +20,18 @@ let o = e => {
         } = e,
         p = a.useRef(null),
         g = null != n && "cancel" !== n.type,
-        A = _ && n?.type !== "done",
-        h = g || A;
+        h = _ && n?.type !== "done",
+        A = g || h;
     if (a.useEffect(() => {
             (n?.type === "submit" || n?.type === "done") && p.current?.focus()
-        }, [n?.type]), !h) return null;
+        }, [n?.type]), !A) return null;
     let b = s.intl.string(s.t.i4jeWR);
     return n?.type === "submit" ? (t = "critical-primary", b = x ? s.intl.string(d.default.ZUyreS) : s.intl.string(s.t["G+vU89"])) : n?.type === "next" ? b = s.intl.string(s.t.PDTjLN) : n?.type === "cancel" && (b = s.intl.string(s.t["ETE/oC"]), t = "secondary"), (0, l.jsx)(i.jlY, {
         "data-migration-pending": !0,
         direction: r.A.Direction.HORIZONTAL,
         children: (0, l.jsxs)(i.ButtonGroup, {
             fullWidth: !0,
-            children: [A && (0, l.jsx)(i.Button, {
+            children: [h && (0, l.jsx)(i.Button, {
                 onClick: m,
                 variant: "secondary",
                 disabled: o,

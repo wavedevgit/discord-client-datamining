@@ -20,14 +20,14 @@ let g = e => {
         user: t,
         channelId: n,
         reportId: g
-    } = e, A = c.A.getDMFromUserId(t.id), h = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(h?.guild_id, h?.id, t), [h, t]), v = (0, i.bG)([u.Ay], () => null == A ? null : u.Ay.isChannelMuted(null, A)), [f, T] = a.useState(v ?? !1), C = a.useCallback(() => {
-        null != A && (T(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
+    } = e, h = c.A.getDMFromUserId(t.id), A = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), v = (0, i.bG)([u.Ay], () => null == h ? null : u.Ay.isChannelMuted(null, h)), [f, T] = a.useState(v ?? !1), C = a.useCallback(() => {
+        null != h && (T(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: g
-        }), r.A.updateChannelOverrideSettings(null, A, {
+        }), r.A.updateChannelOverrideSettings(null, h, {
             muted: !0
         }, m.fd.Muted), d.A.showMuteSuccessToast(t.id, n))
-    }, [A, n, t, g]);
+    }, [h, n, t, g]);
     return (0, l.jsx)(o.PQ, {
         title: p.intl.formatToPlainString(p.t.TRp5wR, {
             username: b

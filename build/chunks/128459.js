@@ -1,34 +1,38 @@
-/** chunk id: 128459, original params: t,e,a (module,exports,require) **/
-a.d(e, {
-    default: () => l
+/** chunk id: 128459, original params: t,i,a (module,exports,require) **/
+a.d(i, {
+    default: () => d
 });
-var i = a(627968),
+var n = a(627968),
     s = a(64700),
-    r = a(158954),
-    n = a(985018);
+    e = a(158954),
+    r = a(554146),
+    l = a(826673),
+    o = a(345942),
+    c = a(294726),
+    u = a(985018);
 
-function l(t) {
+function d(t) {
     let {
-        onConfirm: e,
-        onClose: a,
-        ...l
-    } = t, c = s.useCallback(() => {
-        e(), a()
-    }, [e, a]);
-    return (0, i.jsx)(r.Modal, {
-        title: "Hide Game Servers tab",
-        subtitle: "This will hide the Game Servers tab unless a server has an activated Game Server.",
+        onClose: i,
+        guildId: a,
+        ...d
+    } = t, p = s.useCallback(() => {
+        (0, l.Dr)(r.M.EMPTY_GAME_SERVER_TAB), i(), (0, o.u)(a)
+    }, [i, a]);
+    return (0, n.jsx)(e.Modal, {
+        title: u.intl.string(c.default["6/Uhx+"]),
+        subtitle: u.intl.string(c.default.QREY9x),
         size: "sm",
         actions: [{
-            text: n.intl.string(n.t["ETE/oC"]),
-            onClick: a,
+            text: u.intl.string(u.t["ETE/oC"]),
+            onClick: i,
             variant: "secondary"
         }, {
-            text: "Hide Tab",
-            onClick: c,
+            text: u.intl.string(c.default.OfopNQ),
+            onClick: p,
             variant: "critical-primary"
         }],
-        transitionState: l.transitionState,
-        onClose: a
+        transitionState: d.transitionState,
+        onClose: i
     })
 }

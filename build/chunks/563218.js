@@ -16,9 +16,9 @@ var l = n(627968),
     x = n(369053),
     p = n(652215),
     g = n(985018),
-    A = n(71561);
+    h = n(71561);
 
-function h(e) {
+function A(e) {
     let {
         title: t,
         description: n,
@@ -48,20 +48,20 @@ function b(e) {
         reportSubType: b
     } = e, v = (0, i.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, v?.type), T = (0, x.Mw)(o, b, s);
     return 0 === f.length ? null : (0, l.jsxs)("div", {
-        className: A.kL,
+        className: h.kL,
         children: [(0, l.jsx)(r.Heading, {
             variant: "text-sm/semibold",
-            className: A.wx,
+            className: h.wx,
             children: g.intl.string(g.t["1yxTIJ"])
         }), (0, l.jsx)("div", {
-            className: A.uk,
+            className: h.uk,
             children: f.map((e, n) => {
                 let {
                     getTitle: a,
                     getDescription: i,
                     onApply: r
                 } = e;
-                return (0, l.jsx)(h, {
+                return (0, l.jsx)(A, {
                     title: a(),
                     description: i(),
                     onButtonClick: r,

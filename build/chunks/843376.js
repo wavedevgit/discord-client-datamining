@@ -48,7 +48,7 @@ function c(e, t) {
                 onSuccess: c,
                 headerText: d.intl.string(d.t.ZLRYGU),
                 confirmButtonText: d.intl.string(d.t.PDTjLN),
-                helperText: e === l.tY.MEDIA_TAKEDOWN ? d.intl.string(d.t.jt3z8f) : void 0
+                subtitle: e === l.tY.MEDIA_TAKEDOWN ? d.intl.string(d.t.jt3z8f) : void 0
             })
         }, {
             onCloseCallback: t

@@ -16,8 +16,8 @@ var l = n(627968),
     x = n(253932),
     p = n(734057),
     g = n(838541),
-    A = n(985018),
-    h = n(205435);
+    h = n(985018),
+    A = n(205435);
 let b = e => {
     let {
         message: t
@@ -30,12 +30,12 @@ let b = e => {
             leadingIcon: e,
             trailingIcon: n
         } = (0, _.o)(t, f, !1, !1, "", {
-            leadingIconClass: h.$r,
-            trailingIconClass: h.$r,
+            leadingIconClass: A.$r,
+            trailingIconClass: A.$r,
             iconSize: g.eJ
         });
         return (0, l.jsxs)("div", {
-            className: h.hQ,
+            className: A.hQ,
             children: [e, (0, l.jsx)(c.Ay, {
                 message: t,
                 content: f,
@@ -44,13 +44,13 @@ let b = e => {
         })
     }, [t, f, T]);
     return null == b ? null : (0, l.jsxs)("div", {
-        className: h.kL,
+        className: A.kL,
         children: [(0, l.jsx)(r.Heading, {
-            className: h.wx,
+            className: A.wx,
             variant: "heading-sm/semibold",
-            children: A.intl.string(A.t.iouM3a)
+            children: h.intl.string(h.t.iouM3a)
         }), (0, l.jsx)(r.HOs, {
-            className: h.PI,
+            className: A.PI,
             children: (0, l.jsx)(o.A, {
                 childrenMessageContent: C(),
                 childrenHeader: (0, l.jsx)(u.Ay, {

@@ -1,6 +1,6 @@
 /** chunk id: 316862, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 });
 var l = n(627968),
     a = n(64700),
@@ -16,13 +16,13 @@ var l = n(627968),
     x = n(309010),
     p = n(652215),
     g = n(985018);
-let A = e => {
+let h = e => {
     let {
         application: t,
         reportId: n
-    } = e, [A, h] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [T, C] = a.useState(null);
+    } = e, [h, A] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [T, C] = a.useState(null);
     a.useEffect(() => {
-        null != T && (h(!0), v(!0))
+        null != T && (A(!0), v(!0))
     }, [T]), a.useEffect(() => {
         if (null == f) return;
         let e = !1;
@@ -57,7 +57,7 @@ let A = e => {
                 l = null == t.bot || m.A.canManageUser(p.xBc.MANAGE_GUILD, t.bot.id, e);
             return n && l
         });
-    return null != t && null != f && A && I ? (0, l.jsx)(c.PQ, {
+    return null != t && null != f && h && I ? (0, l.jsx)(c.PQ, {
         title: g.intl.string(g.t["WV/CsH"]),
         description: g.intl.string(g.t["FlcC+3"]),
         buttonText: b ? g.intl.string(g.t.aCJlq4) : g.intl.string(g.t["6I1F3i"]),

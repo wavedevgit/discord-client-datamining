@@ -1,6 +1,6 @@
 /** chunk id: 779735, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => A
+    default: () => h
 }), n(321073);
 var l = n(627968),
     a = n(64700),
@@ -16,12 +16,12 @@ var l = n(627968),
     x = n(598131),
     p = n(652215),
     g = n(575119);
-let A = e => {
+let h = e => {
     let {
         reportType: t,
         menu: n,
-        modalProps: A,
-        onSubmit: h,
+        modalProps: h,
+        onSubmit: A,
         onNavigate: b,
         emailToken: v,
         isAuthenticated: f = !0
@@ -29,8 +29,8 @@ let A = e => {
         nodes: C,
         root_node_id: j,
         success_node_id: I,
-        fail_node_id: S
-    } = n, [N, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [O, G] = a.useState([]), [w, L] = a.useState(void 0), [D, B] = a.useState(void 0), [U, P] = a.useState(void 0);
+        fail_node_id: N
+    } = n, [S, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [O, G] = a.useState([]), [w, L] = a.useState(void 0), [D, U] = a.useState(void 0), [B, P] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -51,7 +51,7 @@ let A = e => {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: a.report_type,
-                    current_node: C[N].id,
+                    current_node: C[S].id,
                     next_node: a.id
                 })
             }
@@ -60,7 +60,7 @@ let A = e => {
         V = async e => {
             let l = f ? await (0, m.zC)(n, t, [...O, e]) : await (0, m.bo)(n, t, [...O, e], v),
                 a = l?.body?.report_id;
-            null != a && L(a), B(C[e.nodeRef].report_type), h?.(a)
+            null != a && L(a), U(C[e.nodeRef].report_type), A?.(a)
         }, F = () => {
             if (O.length < 1) return;
             let e = [...O],
@@ -72,7 +72,7 @@ let A = e => {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: C[l].report_type,
-                    current_node: C[N].id,
+                    current_node: C[S].id,
                     next_node: C[l].id
                 })
             }
@@ -96,14 +96,14 @@ let A = e => {
             P(t), y(n.id)
         }, [C, O]);
     a.useEffect(() => {
-        null != U && P(void 0)
-    }, [U]);
+        null != B && P(void 0)
+    }, [B]);
     let z = a.useMemo(() => {
         let e = [],
             t = [];
         for (let n in C) {
             let l = C[n];
-            if (l.id !== I && l.id !== S && l.id !== j) {
+            if (l.id !== I && l.id !== N && l.id !== j) {
                 if (l.key.endsWith("_SUBMIT") || l.button?.type === "submit") {
                     t.push(l);
                     continue
@@ -114,16 +114,16 @@ let A = e => {
                 }
             }
         }
-        return [C[j], ...e, ...t, C[I], C[S]]
-    }, [C, j, S, I]);
+        return [C[j], ...e, ...t, C[I], C[N]]
+    }, [C, j, N, I]);
     return (0, l.jsx)(r.EOs, {
         "data-migration-pending": !0,
-        transitionState: A.transitionState,
+        transitionState: h.transitionState,
         "aria-labelledby": T,
         parentComponent: "InAppReportModal",
         children: (0, l.jsx)(r.tN_, {
             width: 440,
-            activeSlide: N,
+            activeSlide: S,
             centered: !1,
             children: z.map(e => (0, l.jsx)(r.q7S, {
                 id: e.id,
@@ -134,18 +134,18 @@ let A = e => {
                         reportType: t,
                         reportSubType: D,
                         history: O,
-                        onModalClose: A.onClose,
+                        onModalClose: h.onClose,
                         onSelectChild: H,
                         onNavigateBack: F,
                         onNavigateToNode: W,
                         multiSelect: k,
                         textInput: M,
                         successNodeId: I,
-                        failNodeId: S,
+                        failNodeId: N,
                         onSubmit: V,
                         reportId: w,
                         nodeMap: C,
-                        initialErrorMessage: e.id === N ? U : void 0
+                        initialErrorMessage: e.id === S ? B : void 0
                     })
                 })
             }, e.id))
