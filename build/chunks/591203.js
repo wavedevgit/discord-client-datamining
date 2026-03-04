@@ -1,6 +1,6 @@
 /** chunk id: 591203, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    L: () => p
+    L: () => L
 });
 var n = i(627968),
     l = i(64700),
@@ -24,7 +24,7 @@ i(980504);
 var O = i(985018),
     b = i(17786);
 
-function D(t) {
+function p(t) {
     return (0, s.bG)([S.A], () => {
         if (null == t) return null;
         let {
@@ -35,10 +35,10 @@ function D(t) {
     })
 }
 
-function L(t) {
+function D(t) {
     let {
         guildId: e
-    } = t, i = (0, s.bG)([C.A], () => C.A.settings.guilds?.guilds?.[e]?.joinSound), l = D(i);
+    } = t, i = (0, s.bG)([C.A], () => C.A.settings.guilds?.guilds?.[e]?.joinSound), l = p(i);
     if (null == i || null == l) return null;
     let {
         emojiId: u,
@@ -61,12 +61,12 @@ function L(t) {
         })]
     })
 }
-let p = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
+let L = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
     useSearchTerms: () => [O.intl.string(O.t.nzUc3B)],
     Component: function() {
         let {
             analyticsLocations: t
-        } = (0, u.Ay)(), [e, i] = l.useState("0"), r = (0, g.mz)(e), A = D(r), I = r?.type === g.PP.GLOBAL, C = (0, s.bG)([S.A], () => S.A.hasFetchedAllSounds()) && null != r && null == A;
+        } = (0, u.Ay)(), [e, i] = l.useState("0"), r = (0, g.mz)(e), A = p(r), I = r?.type === g.PP.GLOBAL, C = (0, s.bG)([S.A], () => S.A.hasFetchedAllSounds()) && null != r && null == A;
         l.useEffect(() => {
             C && (0, E.ND)({
                 location: t
@@ -74,11 +74,11 @@ let p = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
         }, [C, t]), l.useEffect(() => {
             (0, T.E7)()
         }, []);
-        let p = l.useCallback((t, e) => {
+        let L = l.useCallback((t, e) => {
             let {
                 inDropdown: i
             } = e;
-            return null == t ? null : i ? (0, n.jsx)(L, {
+            return null == t ? null : i ? (0, n.jsx)(D, {
                 guildId: t.value
             }) : null
         }, []);
@@ -97,7 +97,7 @@ let p = (0, A.E2)(I.X.ENTRANCE_SOUNDS_SETTING, {
                 onChange: t => {
                     i(null == t ? "0" : t.id)
                 },
-                renderOptionSuffix: p,
+                renderOptionSuffix: L,
                 hideDivider: !0
             }), (0, n.jsxs)(d.A, {
                 title: O.intl.format(O.t.I2TsYN, {

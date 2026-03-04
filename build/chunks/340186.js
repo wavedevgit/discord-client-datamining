@@ -1,6 +1,6 @@
 /** chunk id: 340186, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    g: () => D
+    g: () => p
 });
 var n = i(934551),
     l = i(419954),
@@ -22,14 +22,14 @@ var n = i(934551),
     N = i(985018);
 let O = (0, l.t_)(s.X.CHAT_PANEL, {
         useTitle: () => N.intl.string(N.t["/VQax8"]),
-        buildLayout: () => [T.M, o.f, d.z, c.J, E.n, _.p, A.c, I.U, S.W, g.o]
+        buildLayout: () => [T.M, o.f, d.z, c.J, E.n, _.p, I.U, S.W, g.o, A.c]
     }),
     b = (0, l.t_)(s.X.CHAT_PANEL, {
         useTitle: () => N.intl.string(N.t["/VQax8"]),
         StronglyDiscouragedCustomComponent: r.A,
         buildLayout: () => []
     }),
-    D = (0, l.i4)(s.X.CHAT_SIDEBAR_ITEM, {
+    p = (0, l.i4)(s.X.CHAT_SIDEBAR_ITEM, {
         useTitle: () => N.intl.string(N.t["/VQax8"]),
         getLegacySearchKey: () => (0, a.WJ)("ChatPanel") ? void 0 : C.H.CHAT,
         icon: n.ChatIcon,

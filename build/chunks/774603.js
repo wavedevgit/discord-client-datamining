@@ -1,6 +1,6 @@
 /** chunk id: 774603, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    OX: () => l,
+    OX: () => s,
     Yo: () => a
 });
 var i = n(203982),
@@ -12,7 +12,7 @@ let a = {
             if (i._.hasSubscribers(r.jej.CALL_ACCEPT)) return i._.dispatch(r.jej.CALL_ACCEPT), !1
         }
     },
-    l = {
+    s = {
         binds: ["ctrl+'", "ctrl+shift+'"],
         comboKeysBindGlobal: !0,
         action(e) {

@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     Ay: () => m,
-    de: () => g,
-    sI: () => f
+    de: () => _,
+    sI: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -21,10 +21,10 @@ let h = e => e.stopPropagation(),
         onMouseEnter: h,
         onMouseOver: h
     }),
-    A = () => (0, i.jsx)("div", {
+    f = () => (0, i.jsx)("div", {
         className: c.yF
     }),
-    f = (e, t, n) => (0, i.jsx)("div", {
+    A = (e, t, n) => (0, i.jsx)("div", {
         className: c.qD,
         children: d.intl.format(n, {
             keybind: t,
@@ -34,11 +34,11 @@ let h = e => e.stopPropagation(),
             }, n)
         })
     }),
-    g = (e, t) => (0, i.jsx)("div", {
+    _ = (e, t) => (0, i.jsx)("div", {
         className: c.g2,
         children: t
     });
-class _ extends s.PureComponent {
+class g extends s.PureComponent {
     static defaultProps = {
         maxBodyLines: void 0,
         expand: !1,
@@ -127,11 +127,11 @@ class _ extends s.PureComponent {
         if ("function" == typeof e) {
             let l = e(n, t);
             return null != l ? (0, i.jsxs)(s.Fragment, {
-                children: [(0, i.jsx)(A, {}), l]
+                children: [(0, i.jsx)(f, {}), l]
             }, "hint-custom") : null
         }
         return (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(A, {}), (0, i.jsx)("div", {
+            children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
                 className: "string" == typeof e ? c.dx : void 0,
                 children: e
             }, "hint-text")]
@@ -154,11 +154,11 @@ class _ extends s.PureComponent {
         if (null != this.props.renderFooter) {
             let e = this.props.renderFooter(o);
             return null != e ? (0, i.jsxs)(s.Fragment, {
-                children: [(0, i.jsx)(A, {}), e]
+                children: [(0, i.jsx)(f, {}), e]
             }, "footer-custom-content") : null
         }
         return null != n || null != l ? (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(A, {}), (0, i.jsxs)(r.ButtonGroup, {
+            children: [(0, i.jsx)(f, {}), (0, i.jsxs)(r.ButtonGroup, {
                 fullWidth: !0,
                 children: [null != n ? (0, i.jsx)(r.Button, {
                     variant: "active",
@@ -234,4 +234,4 @@ class _ extends s.PureComponent {
         })
     }
 }
-let m = _
+let m = g

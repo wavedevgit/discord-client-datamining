@@ -1,5 +1,5 @@
-/** chunk id: 690990, original params: t,e,n (module,exports,require) **/
-t.exports = {
+/** chunk id: 690990, original params: e,t,n (module,exports,require) **/
+e.exports = {
     RP: "confirmationContainer_f473af",
     RS: "confirmationHeader_f473af",
     sT: "confirmationSubtitle_f473af",

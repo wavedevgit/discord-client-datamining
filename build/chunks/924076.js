@@ -1,5 +1,5 @@
-/** chunk id: 924076, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 924076, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => h
 }), n(938796);
 var i = n(627968),
@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(241524),
     s = n(163437),
     o = n(490744),
-    d = n(594508),
-    c = n(71393),
+    c = n(594508),
+    d = n(71393),
     u = n(156312),
     m = n(166532),
     p = n(19311),
@@ -17,21 +17,21 @@ var i = n(627968),
     x = n(376747),
     g = n(985018);
 
-function h(t) {
+function h(e) {
     let {
-        handleStepChange: e,
+        handleStepChange: t,
         handleClose: n
-    } = t, {
+    } = e, {
         subscriptionMetadataRequest: h,
         selectedSku: b,
         selectedStoreListing: A,
         application: j
-    } = (0, u.P5)(), S = (0, a.A)(x.Y), v = (0, l.bG)([c.A], () => c.A.getGuild(h?.guild_id)), C = r.useCallback(() => e(m.pn.REVIEW), [e]);
+    } = (0, u.P5)(), v = (0, a.A)(x.Y), S = (0, l.bG)([d.A], () => d.A.getGuild(h?.guild_id)), C = r.useCallback(() => t(m.pn.REVIEW), [t]);
     if (null == b) return null;
     let N = (0, s.bg)(b.flags);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(f.dZ, {
-            children: S ? (0, i.jsx)(d.E, {
+            children: v ? (0, i.jsx)(c.E, {
                 confirmCta: g.intl.string(g.t.PBHFSq),
                 onConfirm: C,
                 onCancel: n,
@@ -39,7 +39,7 @@ function h(t) {
                     tier: b.name
                 }),
                 subtitle: N ? g.intl.string(g.t.lzAoKB) : g.intl.formatToPlainString(g.t["GqaY/j"], {
-                    guildName: v?.name
+                    guildName: S?.name
                 }),
                 showOpenDiscord: !1
             }) : (0, i.jsx)(o.Uf, {
@@ -54,7 +54,7 @@ function h(t) {
                     applicationName: j?.name
                 }) : g.intl.string(g.t.n1Pu8C)
             })
-        }), !S && (0, i.jsx)(f.UX, {
+        }), !v && (0, i.jsx)(f.UX, {
             children: (0, i.jsx)(p.Ay, {
                 onBack: n,
                 backText: g.intl.string(g.t.TQBY1J),

@@ -1,8 +1,8 @@
 /** chunk id: 855790, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => y,
-    q0: () => A
+    Ay: () => v,
+    q0: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -15,24 +15,24 @@ var i = n(627968),
     u = n(652215),
     h = n(484932);
 let p = u.UVF.DEFAULT,
-    A = 1,
-    f = s.createContext({
+    f = 1,
+    A = s.createContext({
         type: p,
-        opacity: A
+        opacity: f
     }),
-    g = s.createContext(void 0),
-    _ = e => {
+    _ = s.createContext(void 0),
+    g = e => {
         let {
             children: t,
             className: n,
             ...s
         } = e;
-        return (0, i.jsx)(f.Consumer, {
+        return (0, i.jsx)(A.Consumer, {
             children: e => {
                 let {
                     type: l
                 } = e;
-                return (0, i.jsx)(g.Consumer, {
+                return (0, i.jsx)(_.Consumer, {
                     children: e => (0, i.jsx)("div", {
                         className: a()(h.bar, h[o()(l)], n),
                         style: e,
@@ -53,8 +53,8 @@ class m extends s.PureComponent {
             children: t,
             className: n
         } = this.props;
-        return (0, i.jsx)(g.Consumer, {
-            children: s => (0, i.jsx)(f.Consumer, {
+        return (0, i.jsx)(_.Consumer, {
+            children: s => (0, i.jsx)(A.Consumer, {
                 children: l => {
                     let r = a()(h.body, h[o()(l.type)], n);
                     return e ? (0, i.jsx)("div", {
@@ -71,17 +71,17 @@ class m extends s.PureComponent {
         })
     }
 }
-let x = e => {
+let E = e => {
         let {
             type: t = p,
             width: n,
             height: s,
             children: l,
             className: r,
-            opacity: d = A,
+            opacity: d = f,
             onClick: c
         } = e;
-        return (0, i.jsx)(f.Provider, {
+        return (0, i.jsx)(A.Provider, {
             value: {
                 type: t,
                 opacity: d
@@ -97,13 +97,13 @@ let x = e => {
             })
         })
     },
-    E = e => {
+    x = e => {
         let {
             children: t,
             className: n,
             dynamicSize: s = !1
         } = e;
-        return (0, i.jsx)(g.Consumer, {
+        return (0, i.jsx)(_.Consumer, {
             children: e => (0, i.jsx)("div", {
                 className: a()(h.content, {
                     [h.staticSize]: !s
@@ -113,14 +113,14 @@ let x = e => {
             })
         })
     };
-x.Background = e => {
+E.Background = e => {
     let {
         children: t,
         opacityOverride: n
     } = e;
     if (null == t) return null;
-    let l = [_, m, E];
-    return (0, i.jsx)(f.Consumer, {
+    let l = [g, m, x];
+    return (0, i.jsx)(A.Consumer, {
         children: e => {
             let {
                 opacity: a
@@ -131,7 +131,7 @@ x.Background = e => {
                 style: r
             });
             {
-                if (l.includes(t.type)) return (0, i.jsx)(g.Provider, {
+                if (l.includes(t.type)) return (0, i.jsx)(_.Provider, {
                     value: r,
                     children: t
                 });
@@ -140,7 +140,7 @@ x.Background = e => {
             }
         }
     })
-}, x.Body = m, x.Content = E, x.Icon = e => {
+}, E.Body = m, E.Content = x, E.Icon = e => {
     let {
         ref: t,
         icon: n,
@@ -175,5 +175,5 @@ x.Background = e => {
             })
         })
     })
-}, x.Bar = _;
-let y = x
+}, E.Bar = g;
+let v = E

@@ -22,11 +22,11 @@ var n = i(627968),
     N = i(633817),
     O = i(531525),
     b = i(652215),
-    D = i(985018),
-    L = i(722125);
-let p = (0, T.t_)(_.X.PROFILE_PANEL, {
+    p = i(985018),
+    D = i(722125);
+let L = (0, T.t_)(_.X.PROFILE_PANEL, {
         usePredicate: () => !(0, I.dk)("LegacyProfilePanel"),
-        useTitle: () => D.intl.string(D.t["vi7f+q"]),
+        useTitle: () => p.intl.string(p.t["vi7f+q"]),
         notice: {
             stores: [E.A],
             element: d.A
@@ -39,7 +39,7 @@ let p = (0, T.t_)(_.X.PROFILE_PANEL, {
     }),
     m = (0, T.t_)(_.X.PROFILE_PANEL, {
         usePredicate: () => (0, I.dk)("ProfilePanel"),
-        useTitle: () => D.intl.string(D.t["vi7f+q"]),
+        useTitle: () => p.intl.string(p.t["vi7f+q"]),
         notice: {
             stores: [E.A],
             element: d.A
@@ -50,7 +50,7 @@ let p = (0, T.t_)(_.X.PROFILE_PANEL, {
         buildLayout: () => [N.I]
     }),
     R = (0, T.i4)(_.X.PROFILE_SIDEBAR_ITEM, {
-        useTitle: () => D.intl.string(D.t["vi7f+q"]),
+        useTitle: () => p.intl.string(p.t["vi7f+q"]),
         getLegacySearchKey: () => (0, I.WJ)("ProfilePanel") ? void 0 : O.H.PROFILE_CUSTOMIZATION,
         icon: function() {
             let t = (0, s.bG)([c.default], () => c.default.getCurrentUser()),
@@ -78,26 +78,26 @@ let p = (0, T.t_)(_.X.PROFILE_PANEL, {
                     size: a._3J.SIZE_48
                 });
             return null == t ? null : (0, n.jsxs)("div", {
-                className: L.a5,
+                className: D.a5,
                 children: [(0, n.jsx)(a.euF, {
                     src: e,
                     avatarDecoration: i,
                     size: a._3J.SIZE_48,
-                    "aria-label": D.intl.string(D.t.lqaIxI)
+                    "aria-label": p.intl.string(p.t.lqaIxI)
                 }), (0, n.jsxs)("div", {
-                    className: L.FS,
+                    className: D.FS,
                     children: [(0, n.jsx)(a.Text, {
                         color: "text-strong",
                         variant: "text-md/medium",
                         lineClamp: 1,
                         children: t.globalName ?? t.username
                     }), (0, n.jsxs)("div", {
-                        className: L.Fk,
+                        className: D.Fk,
                         children: [(0, n.jsx)(a.Text, {
                             variant: "text-sm/normal",
                             color: "currentColor",
                             lineClamp: 1,
-                            children: D.intl.string(D.t.Ip9nBS)
+                            children: p.intl.string(p.t.Ip9nBS)
                         }), (0, n.jsx)(l.PencilIcon, {
                             size: "xxs",
                             color: "currentColor"
@@ -110,5 +110,5 @@ let p = (0, T.t_)(_.X.PROFILE_PANEL, {
             type: S.Si.BADGE_NEW,
             getDismissibleContentTypes: C.Jn
         },
-        buildLayout: () => (0, I.WJ)("ProfilePanel") ? [m] : [p]
+        buildLayout: () => (0, I.WJ)("ProfilePanel") ? [m] : [L]
     })

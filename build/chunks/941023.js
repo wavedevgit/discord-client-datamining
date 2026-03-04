@@ -1,7 +1,7 @@
 /** chunk id: 941023, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(64700),
     s = n(735438),
@@ -14,31 +14,31 @@ var i = n(64700),
     u = n(899699),
     h = n(456797),
     p = n(723702);
-let A = {
+let f = {
         x: 0,
         y: 0
     },
-    f = !1;
+    A = !1;
 
-function g(e) {
+function _(e) {
     let {
         clientX: t,
         clientY: n
     } = e;
-    f = !0, A.x = t, A.y = n
+    A = !0, f.x = t, f.y = n
 }
-let _ = new Map;
+let g = new Map;
 
 function m(e, t) {
-    if (null == t) _.delete(e), 0 === _.size && (window.removeEventListener("mousemove", g), f = !1);
+    if (null == t) g.delete(e), 0 === g.size && (window.removeEventListener("mousemove", _), A = !1);
     else {
-        let n = _.get(e);
+        let n = g.get(e);
         if (null != n && (0, r.A)(n.zone, t.zone)) return;
-        0 === _.size && window.addEventListener("mousemove", g), _.set(e, t)
+        0 === g.size && window.addEventListener("mousemove", _), g.set(e, t)
     }
     if (p.isPlatformEmbedded)
         if (c.default.isCurrentPidOutOfProcess()) {
-            let e = Array.from(_.values()).map(e => {
+            let e = Array.from(g.values()).map(e => {
                 let {
                     zone: t
                 } = e;
@@ -57,20 +57,20 @@ function m(e, t) {
             if (null == e) return;
             e.broadcastCommand({
                 message: "set_click_zones",
-                zones: Array.from(_.values()).map(e => {
+                zones: Array.from(g.values()).map(e => {
                     let {
                         zone: t
                     } = e;
                     return t
                 })
-            }), n = e, x || (n.setClickZoneCallback((e, t, n) => {
-                let i = _.get(e);
-                null != i && (f || (A.x = t, A.y = n), i.instance.click())
-            }), x = !0)
+            }), n = e, E || (n.setClickZoneCallback((e, t, n) => {
+                let i = g.get(e);
+                null != i && (A || (f.x = t, f.y = n), i.instance.click())
+            }), E = !0)
         }
 }
-let x = !1;
-class E extends i.PureComponent {
+let E = !1;
+class x extends i.PureComponent {
     static defaultProps = {
         observe: !0,
         observeInterval: 1e3
@@ -117,7 +117,7 @@ class E extends i.PureComponent {
         }
     };
     click() {
-        let e = (0, h._)("click", A.x, A.y);
-        (0, h.K)(e, A.x, A.y)
+        let e = (0, h._)("click", f.x, f.y);
+        (0, h.K)(e, f.x, f.y)
     }
 }

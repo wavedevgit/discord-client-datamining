@@ -1,5 +1,5 @@
-/** chunk id: 107854, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 107854, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     getApplicationPaymentSteps: () => m
 });
 var i = n(627968);
@@ -9,34 +9,34 @@ var r = n(166532),
     a = n(721252),
     s = n(924076),
     o = n(984742),
-    d = n(155301),
-    c = n(758655),
+    c = n(155301),
+    d = n(758655),
     u = n(985018);
 
-function m(t) {
+function m(e) {
     let {
-        guildId: e,
+        guildId: t,
         showBenefitsFirst: n
-    } = t;
+    } = e;
     return [{
         key: null,
-        renderStep: t => (0, i.jsx)(d.A, {
+        renderStep: e => (0, i.jsx)(c.A, {
             initialStep: n ? r.pn.BENEFITS : r.pn.REVIEW,
-            guildId: e,
-            ...t
+            guildId: t,
+            ...e
         })
     }, {
         key: r.pn.BENEFITS,
-        renderStep: t => (0, i.jsx)(s.A, {
-            ...t
+        renderStep: e => (0, i.jsx)(s.A, {
+            ...e
         }),
         options: {
             useBreadcrumbLabel: () => u.intl.string(u.t["5LD2+B"])
         }
     }, {
         key: r.pn.ADD_PAYMENT_STEPS,
-        renderStep: t => (0, i.jsx)(l.x, {
-            ...t,
+        renderStep: e => (0, i.jsx)(l.x, {
+            ...e,
             breadcrumbSteps: [r.pn.ADD_PAYMENT_STEPS, r.pn.REVIEW, r.pn.CONFIRM]
         }),
         options: {
@@ -44,10 +44,10 @@ function m(t) {
         }
     }, ...a.hh, {
         key: r.pn.REVIEW,
-        renderStep: t => (0, i.jsx)(c.A, {
+        renderStep: e => (0, i.jsx)(d.A, {
             backButtonEligible: !!n || void 0,
             prevStep: n ? r.pn.BENEFITS : void 0,
-            ...t
+            ...e
         }),
         options: {
             renderHeader: !0,
@@ -55,9 +55,9 @@ function m(t) {
         }
     }, {
         key: r.pn.CONFIRM,
-        renderStep: t => (0, i.jsx)(o.A, {
+        renderStep: e => (0, i.jsx)(o.A, {
             showBenefits: !n,
-            ...t
+            ...e
         })
     }]
 }

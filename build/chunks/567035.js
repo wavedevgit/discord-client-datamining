@@ -1,7 +1,7 @@
 /** chunk id: 567035, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => f
 }), n(321073);
 var i = n(735438),
     s = n.n(i),
@@ -15,7 +15,7 @@ var i = n(735438),
     h = n(652215),
     p = n(790782);
 
-function A(e, t, n) {
+function f(e, t, n) {
     let i = s().flatMap(e, e => {
         let t = o.Ay.getSelectableChannelIds(e),
             n = [...t, ...o.Ay.getVocalChannelIds(e)],

@@ -1,4 +1,5 @@
-/** chunk id: 935606, original params: e,t,n (module,exports,require) **/
+/** chunk id: 935606, original params: e,t,r (module,exports,require) **/
+"use strict";
 e.exports = {
     DB: "itemContainer__971b5",
     AS: "item__971b5",

@@ -1,7 +1,7 @@
 /** chunk id: 503062, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
+    A: () => v
 });
 var i = n(627968),
     s = n(64700),
@@ -14,30 +14,30 @@ var i = n(627968),
     u = n(729551),
     h = n(178418),
     p = n(87664),
-    A = n(290863),
-    f = n(939496),
-    g = n(652215),
-    _ = n(996988),
+    f = n(290863),
+    A = n(939496),
+    _ = n(652215),
+    g = n(996988),
     m = n(794904);
-let x = a._3J.SIZE_40,
-    E = (0, a.FT9)(x);
+let E = a._3J.SIZE_40,
+    x = (0, a.FT9)(E);
 
-function y(e) {
+function v(e) {
     let {
         user: t,
-        status: y,
-        guildId: v,
+        status: v,
+        guildId: y,
         channelId: S,
         onSelect: C
     } = e, {
         theme: I,
         themeType: N
-    } = (0, f.E)(), T = s.useMemo(() => t.isNonUserBot() || (0, h.c)(t, S), [t, S]), {
+    } = (0, A.E)(), T = s.useMemo(() => t.isNonUserBot() || (0, h.c)(t, S), [t, S]), {
         activities: O,
         isMobileOnline: b
-    } = (0, l.cf)([A.A], () => ({
-        activities: A.A.getActivities(t.id),
-        isMobileOnline: A.A.isMobileOnline(t.id)
+    } = (0, l.cf)([f.A], () => ({
+        activities: f.A.getActivities(t.id),
+        isMobileOnline: f.A.isMobileOnline(t.id)
     })), j = (0, p.A)(t.id), {
         voiceActivityStatusEnabled: D
     } = (0, d.g)({
@@ -46,10 +46,10 @@ function y(e) {
         voiceChannel: R
     } = (0, c.A)({
         userId: D ? t.id : void 0,
-        guildId: v
+        guildId: y
     });
     return (0, i.jsxs)(a.DUT, {
-        focusProps: N === _.d.MODAL_V2 ? {
+        focusProps: N === g.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -74,10 +74,10 @@ function y(e) {
             })
         },
         children: [(0, i.jsx)(a.euF, {
-            src: t.getAvatarURL(v, E),
+            src: t.getAvatarURL(y, x),
             "aria-label": t.username,
-            size: x,
-            status: T ? g.clD.UNKNOWN : y,
+            size: E,
+            status: T ? _.clD.UNKNOWN : v,
             statusBackdropColor: T ? void 0 : (0, a.C$5)(I),
             isMobile: b,
             className: m.my

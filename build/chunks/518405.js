@@ -1,24 +1,17 @@
 /** chunk id: 518405, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    t: () => S
+    t: () => o
 });
-var n = i(311907),
-    l = i(181079),
-    s = i(422258),
-    a = i(419954),
-    r = i(287809),
-    u = i(474090),
-    o = i(780964),
-    d = i(788868),
-    A = i(985018),
-    T = i(665606);
-let S = (0, a.zD)(o.X.CHAT_FAVORITES_TOGGLE, {
-    useTitle: () => A.intl.string(T.default["0h2CcM"]),
-    useSubtitle: () => A.intl.string(T.default.IF7iE0),
-    useValue: () => (0, n.bG)([l.A], () => l.A.favoriteGuildEnabled),
-    useDisabled: () => (0, n.bG)([r.default], () => {
-        let t = r.default.getCurrentUser();
-        return null == t || !u.Ay.isPremiumExactly(t, d.PremiumTypes.TIER_2)
-    }),
-    setValue: s.tV
+var n = i(379587),
+    l = i(158583),
+    s = i(419954),
+    a = i(780964),
+    r = i(985018),
+    u = i(665606);
+let o = (0, s.E2)(a.X.CHAT_FAVORITES_TOGGLE, {
+    usePredicate: () => (0, n.m)({
+        location: "FavoritesGuildToggle"
+    }).enabled,
+    useSearchTerms: () => [r.intl.string(u.default["0h2CcM"]), r.intl.string(u.default.IF7iE0)],
+    Component: l.T
 })

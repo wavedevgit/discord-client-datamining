@@ -1,6 +1,6 @@
 /** chunk id: 338795, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    J: () => L
+    J: () => D
 });
 var n = i(934551),
     l = i(98207),
@@ -48,14 +48,14 @@ let N = (0, a.dT)(d.X.ACCOUNT_STANDING_TAB, {
         hideInStreamerMode: !0,
         buildLayout: () => [O, N]
     }),
-    D = (0, a.t_)(d.X.ACCOUNT_PANEL, {
+    p = (0, a.t_)(d.X.ACCOUNT_PANEL, {
         useTitle: () => C.intl.string(C.t["JAIM/m"]),
         StronglyDiscouragedCustomComponent: T.A,
         buildLayout: () => []
     }),
-    L = (0, a.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
+    D = (0, a.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t["JAIM/m"]),
         getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : _.H.ACCOUNT,
         icon: n.UserIcon,
-        buildLayout: () => (0, A.WJ)("AccountPanel") ? [b] : [D]
+        buildLayout: () => (0, A.WJ)("AccountPanel") ? [b] : [p]
     })

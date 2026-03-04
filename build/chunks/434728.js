@@ -1,11 +1,11 @@
 /** chunk id: 434728, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    O: () => l
+    O: () => s
 });
 var i = n(186111),
     r = n(203982),
     a = n(652215);
-let l = {
+let s = {
     binds: ["mod+f"],
     comboKeysBindGlobal: !0,
     action() {

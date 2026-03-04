@@ -1,5 +1,5 @@
-/** chunk id: 984742, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 984742, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => A
 }), n(938796);
 var i = n(627968),
@@ -8,8 +8,8 @@ var i = n(627968),
     a = n(775602),
     s = n(21161),
     o = n(163437),
-    d = n(490744),
-    c = n(594508),
+    c = n(490744),
+    d = n(594508),
     u = n(156312),
     m = n(166532),
     p = n(19311),
@@ -19,33 +19,33 @@ var i = n(627968),
     h = n(376747),
     b = n(985018);
 
-function A(t) {
-    let e, n, {
+function A(e) {
+    let t, n, {
             showBenefits: A,
             handleClose: j,
-            onSubscriptionConfirmation: S
-        } = t,
+            onSubscriptionConfirmation: v
+        } = e,
         {
-            updatedSubscription: v,
+            updatedSubscription: S,
             readySlideId: C,
             selectedSku: N,
             selectedStoreListing: _,
             application: y
         } = (0, u.P5)(),
-        T = (0, l.A)(h.Y),
+        E = (0, l.A)(h.Y),
         {
-            createMultipleConfettiAt: E
+            createMultipleConfettiAt: T
         } = r.useContext(s.x),
         P = N?.name ?? "",
         I = () => {
-            j(), S?.()
+            j(), v?.()
         },
         k = C === m.pn.CONFIRM,
         w = (0, o.bg)(N?.flags ?? 0),
         R = null != _ && _.benefits.length > 0 ? b.intl.formatToPlainString(b.t["+IQQVM"], {
             benefitCount: _.benefits.length
         }) : null;
-    return A ? T ? e = (0, i.jsx)(c.E, {
+    return A ? E ? t = (0, i.jsx)(d.E, {
         title: b.intl.format(b.t.ea6tZr, {
             tierName: P
         }),
@@ -54,7 +54,7 @@ function A(t) {
         }) : null,
         onConfirm: I,
         confirmCta: b.intl.string(b.t.nlkywz)
-    }) : (e = null != _ && null != y ? (0, i.jsx)(d.Uf, {
+    }) : (t = null != _ && null != y ? (0, i.jsx)(c.Uf, {
         icon: _.thumbnail,
         storeListingBenefits: _.benefits,
         application: y,
@@ -71,19 +71,19 @@ function A(t) {
         onPrimary: I,
         primaryCTA: p.ti.CONTINUE,
         primaryText: b.intl.string(b.t["JtWl+a"])
-    })) : e = T ? (0, i.jsx)(c.v, {
+    })) : t = E ? (0, i.jsx)(d.v, {
         tierName: P,
         onConfirm: I,
-        subscription: v
-    }) : (0, i.jsx)(d.XG, {
+        subscription: S
+    }) : (0, i.jsx)(c.XG, {
         tierName: P,
         onConfirm: I,
-        subscription: v
+        subscription: S
     }), r.useEffect(() => {
-        a.A.useReducedMotion && k && E(window.innerWidth / 2, window.innerHeight / 2)
-    }, [E, k]), (0, i.jsxs)(i.Fragment, {
+        a.A.useReducedMotion && k && T(window.innerWidth / 2, window.innerHeight / 2)
+    }, [T, k]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(x.dZ, {
-            children: [(0, i.jsx)(g.A, {}), e]
+            children: [(0, i.jsx)(g.A, {}), t]
         }), null != n && (0, i.jsx)(x.UX, {
             children: n
         })]

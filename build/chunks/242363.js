@@ -1,7 +1,7 @@
 /** chunk id: 242363, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var s = n(397927),
     h = n(985018),
     p = n(821700);
 
-function A() {
+function f() {
     return (0, i.jsx)("div", {
         className: p.q,
         children: (0, i.jsx)(s.Button, {
@@ -28,15 +28,15 @@ function A() {
     })
 }
 
-function f(e) {
+function A(e) {
     switch (e.type) {
         case u.Jr.GO_LIVE_VOICE: {
             let {
                 game: t,
                 voiceGuild: p
             } = e, {
-                trackView: f,
-                trackClick: g
+                trackView: A,
+                trackClick: _
             } = (0, c.Y)(u.KS.GoLiveNudge, {
                 notif_type: u.KS.GoLiveNudge
             });
@@ -47,13 +47,13 @@ function f(e) {
                     game: t.name,
                     server: p.name
                 }),
-                hint: () => (0, i.jsx)(A, {}),
-                renderFooter: () => (0, i.jsx)(A, {}),
+                hint: () => (0, i.jsx)(f, {}),
+                renderFooter: () => (0, i.jsx)(f, {}),
                 onNotificationShow: () => {
-                    f()
+                    A()
                 },
                 onNotificationClick: (e, t) => {
-                    g("unlock");
+                    _("unlock");
                     let c = (0, d.getPID)();
                     l.A.updateNotificationStatus(t);
                     let u = r.default.isOverlayOOPEnabledForPid(c);
@@ -74,7 +74,7 @@ function f(e) {
                     }, h)
                 },
                 onDismissClick: () => {
-                    g("dismiss")
+                    _("dismiss")
                 }
             }
         }
@@ -93,8 +93,8 @@ function f(e) {
                 body: h.intl.formatToPlainString(h.t["0SVWgF"], {
                     game: t.name
                 }),
-                hint: () => (0, i.jsx)(A, {}),
-                renderFooter: () => (0, i.jsx)(A, {}),
+                hint: () => (0, i.jsx)(f, {}),
+                renderFooter: () => (0, i.jsx)(f, {}),
                 onNotificationShow: () => {
                     o()
                 },

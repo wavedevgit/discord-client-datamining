@@ -1,6 +1,6 @@
 /** chunk id: 404096, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    w: () => L
+    w: () => D
 });
 var n = i(421380),
     l = i(935649),
@@ -22,13 +22,13 @@ var n = i(421380),
     N = i(355097),
     O = i(652215),
     b = i(985018);
-let D = (t, e) => {
+let p = (t, e) => {
         o.default.track(O.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
             default_guilds_restricted: t,
             applied_to_existing_guilds: e
         })
     },
-    L = (0, r.zD)(g.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+    D = (0, r.zD)(g.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
         useTitle: () => b.intl.string(b.t["3o2ojh"]),
         useSubtitle: () => (0, _.q9)() ? b.intl.format(b.t.WpnWLc, {
             helpdeskArticle: d.A.getArticleURL(O.MVz.MESSAGE_REQUESTS)
@@ -64,10 +64,10 @@ let D = (t, e) => {
                     cancelText: b.intl.string(b.t.p89ACt),
                     confirmButtonColor: n.$n.Colors.BRAND,
                     onConfirm: () => {
-                        E.YX.updateSetting(i), D(i, !1)
+                        E.YX.updateSetting(i), p(i, !1)
                     },
                     onCancel: () => {
-                        E.YX.updateSetting(i), E.Zr.updateSetting(i ? u.A.getGuildIds() : []), D(i, !0)
+                        E.YX.updateSetting(i), E.Zr.updateSetting(i ? u.A.getGuildIds() : []), p(i, !0)
                     }
                 })
             } else {

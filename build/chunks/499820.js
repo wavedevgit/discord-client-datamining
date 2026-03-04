@@ -1,7 +1,7 @@
 /** chunk id: 499820, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -27,13 +27,13 @@ let h = 0,
                 return d.intl.string(d.t.AlY4Za)
         }
     },
-    A = [o.G6Q.DISABLED, o.G6Q.TOP_LEFT, o.G6Q.TOP_RIGHT, o.G6Q.BOTTOM_LEFT, o.G6Q.BOTTOM_RIGHT];
+    f = [o.G6Q.DISABLED, o.G6Q.TOP_LEFT, o.G6Q.TOP_RIGHT, o.G6Q.BOTTOM_LEFT, o.G6Q.BOTTOM_RIGHT];
 
-function f(e) {
+function A(e) {
     let {
         position: t,
         onChange: n
-    } = e, [l] = s.useState(() => `notification-position-selector-${h++}`), f = t === o.G6Q.DISABLED ? d.intl.string(d.t.R6LxVf) : d.intl.formatToPlainString(d.t["XXHDM/"], {
+    } = e, [l] = s.useState(() => `notification-position-selector-${h++}`), A = t === o.G6Q.DISABLED ? d.intl.string(d.t.R6LxVf) : d.intl.formatToPlainString(d.t["XXHDM/"], {
         position: p(t)
     });
     return (0, i.jsxs)("div", {
@@ -44,7 +44,7 @@ function f(e) {
                 className: a()(c.iE, {
                     [c.wX]: t === o.G6Q.DISABLED
                 }),
-                children: A.map(e => (0, i.jsxs)("label", {
+                children: f.map(e => (0, i.jsxs)("label", {
                     className: a()({
                         [c.wH]: e === t,
                         [c.r9]: e === o.G6Q.DISABLED,
@@ -69,9 +69,9 @@ function f(e) {
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             className: u.Ot,
-            children: f
+            children: A
         })]
     })
 }
-f.Positions = o.G6Q;
-let g = f
+A.Positions = o.G6Q;
+let _ = A

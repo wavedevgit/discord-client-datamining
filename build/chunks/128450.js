@@ -63,7 +63,9 @@ let h = i.forwardRef(function(e, n) {
                 className: o.DD,
                 id: a,
                 "data-migration-pending": !0,
-                children: [t, j && (0, r.jsx)(s.A, {}), i]
+                children: [t, j && (0, r.jsx)(s.A, {
+                    size: "xs"
+                }), i]
             }), null != c ? (0, r.jsx)(d.ayl, {
                 type: d.ayl.Types.DESCRIPTION,
                 className: o.yV,

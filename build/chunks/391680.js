@@ -43,10 +43,10 @@ function E() {
         disableAppCollectionsCache: o.default.disableAppCollectionsCache
     })), {
         horizontalSpacing: b,
-        verticalSpacing: D
+        verticalSpacing: p
     } = (0, r.Or)(), {
-        setHorizontalSpacing: L,
-        setVerticalSpacing: p
+        setHorizontalSpacing: D,
+        setVerticalSpacing: L
     } = r.Or.getState(), m = d.HZ.useSetting();
     return e ? [(0, n.jsxs)(s.Drp, {
         id: "overrides",
@@ -181,7 +181,7 @@ function E() {
                     value: b,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: t => L(t),
+                    onChange: t => D(t),
                     renderValue: t => `${Math.round(t)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -191,10 +191,10 @@ function E() {
                 control: (t, e) => (0, n.jsx)(s.i42, {
                     ...t,
                     ref: e,
-                    value: D,
+                    value: p,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: t => p(t),
+                    onChange: t => L(t),
                     "aria-label": "Vertical Spacing",
                     renderValue: t => `${Math.round(t)}px`
                 })

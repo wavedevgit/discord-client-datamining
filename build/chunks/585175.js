@@ -1,6 +1,6 @@
 /** chunk id: 585175, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    O: () => L
+    O: () => D
 });
 var n = i(627968),
     l = i(64700),
@@ -45,7 +45,7 @@ function b(t) {
     })
 }
 
-function D(t) {
+function p(t) {
     let {
         volume: e,
         id: i,
@@ -96,7 +96,7 @@ function D(t) {
         })
     })
 }
-let L = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
+let D = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
     useSearchTerms: () => [I.intl.string(I.t["sqUm+k"]), I.intl.string(I.t.I1Zuq0), I.intl.string(I.t.nuFtHH)],
     usePredicate: () => (0, r.bG)([g.Ay], () => g.Ay.isInputProfileCustom()),
     Component: function() {
@@ -168,7 +168,7 @@ let L = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     ariaDescribedBy: O,
                     ariaLabelledBy: N,
                     disabled: e
-                }) : (0, n.jsx)(D, {
+                }) : (0, n.jsx)(p, {
                     volume: a,
                     ariaDescribedBy: O,
                     ariaLabelledBy: N,
@@ -189,7 +189,7 @@ let L = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     ariaDescribedBy: i.describedById,
                     ariaLabelledBy: i.labelId,
                     disabled: e
-                }) : (0, n.jsx)(D, {
+                }) : (0, n.jsx)(p, {
                     volume: a,
                     id: i.controlId,
                     ariaDescribedBy: i.describedById,

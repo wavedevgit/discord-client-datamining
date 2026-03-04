@@ -22,19 +22,19 @@ var n = i(934551),
     N = i(556710),
     O = i(305290),
     b = i(8187),
-    D = i(531525),
-    L = i(985018);
-let p = (0, l.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => L.intl.string(L.t.G0neg7),
+    p = i(531525),
+    D = i(985018);
+let L = (0, l.t_)(a.X.ACCESSIBILITY_PANEL, {
+        useTitle: () => D.intl.string(D.t.G0neg7),
         StronglyDiscouragedCustomComponent: u.Ay,
         buildLayout: () => []
     }),
     m = (0, l.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => L.intl.string(L.t.G0neg7),
+        useTitle: () => D.intl.string(D.t.G0neg7),
         buildLayout: () => [A.s, N._, _.b, C.T, g.V, I.G, T.v, S.T]
     }),
     R = (0, l.t_)(a.X.ACCESSIBILITY_PANEL, {
-        useTitle: () => L.intl.string(L.t.G0neg7),
+        useTitle: () => D.intl.string(D.t.G0neg7),
         buildLayout: () => [O.U, b.P, c.l, C.T, E.X],
         decoration: {
             type: s.t9.STRONGLY_DISCOURAGED_CUSTOM,
@@ -43,9 +43,9 @@ let p = (0, l.t_)(a.X.ACCESSIBILITY_PANEL, {
         }
     }),
     y = (0, l.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
-        useTitle: () => L.intl.string(L.t.G0neg7),
-        getLegacySearchKey: () => (0, r.WJ)("AccessibilityPanel") ? void 0 : D.H.ACCESSIBILITY,
+        useTitle: () => D.intl.string(D.t.G0neg7),
+        getLegacySearchKey: () => (0, r.WJ)("AccessibilityPanel") ? void 0 : p.H.ACCESSIBILITY,
         icon: n.AccessibilityIcon,
         useMenu: d.A,
-        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [R] : (0, r.WJ)("AccessibilityPanel") ? [m] : [p]
+        buildLayout: () => (0, r.Ci)("AccessibilityPanel") ? [R] : (0, r.WJ)("AccessibilityPanel") ? [m] : [L]
     })

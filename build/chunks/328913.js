@@ -1,7 +1,7 @@
 /** chunk id: 328913, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -14,10 +14,10 @@ var i = n(627968),
     u = n(855790),
     h = n(335022),
     p = n(714977),
-    A = n(266244),
-    f = n(439817),
-    g = n(985018),
-    _ = n(90901);
+    f = n(266244),
+    A = n(439817),
+    _ = n(985018),
+    g = n(90901);
 
 function m(e) {
     let {
@@ -27,7 +27,7 @@ function m(e) {
         onClose: t
     })
 }
-class x extends s.PureComponent {
+class E extends s.PureComponent {
     static defaultProps = {
         contained: !1
     };
@@ -46,15 +46,15 @@ class x extends s.PureComponent {
         } = this.props, l = null != e ? (0, i.jsx)(h.A, {
             guildId: e,
             onDragStart: this.onDragStart
-        }, e) : (0, i.jsx)(f.A, {
-            title: g.intl.string(g.t.YUU0RF),
+        }, e) : (0, i.jsx)(A.A, {
+            title: _.intl.string(_.t.YUU0RF),
             renderSettings: m,
             onDragStart: this.onDragStart,
-            children: (0, i.jsx)(A.A, {})
+            children: (0, i.jsx)(f.A, {})
         }), r = n ? "div" : u.Ay;
         return (0, i.jsxs)(r, {
-            className: a()(_.E, {
-                [_.H]: !n
+            className: a()(g.E, {
+                [g.H]: !n
             }, s),
             children: [(0, i.jsx)(d.A, {
                 isOverlay: !0,
@@ -64,6 +64,6 @@ class x extends s.PureComponent {
         })
     }
 }
-let E = r.Ay.connectStores([c.A], () => ({
+let x = r.Ay.connectStores([c.A], () => ({
     selectedGuildId: c.A.getGuildId()
-}))(x)
+}))(E)

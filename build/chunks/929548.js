@@ -22,16 +22,16 @@ var n = i(627968),
     N = i(652215),
     O = i(731854),
     b = i(985018);
-let D = (0, S.D)(() => ({
+let p = (0, S.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function L() {
+async function D() {
     let t = await T.A.fileManager.getLogPath();
     T.A.fileManager.showItemInFolder(t)
 }
 
-function p(t) {
+function L(t) {
     (0, u.A)({
         title: b.intl.string(b.t["7UXEF2"]),
         subtitle: b.intl.string(b.t.IYPrRl),
@@ -90,10 +90,10 @@ async function m(t) {
 }
 async function R() {
     await m({
-        onUploadStart: () => D.setState({
+        onUploadStart: () => p.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => D.setState({
+        onUploadFinish: () => p.setState({
             isUploading: !1,
             isDisabled: !0
         })
@@ -107,8 +107,8 @@ let y = (0, c.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     },
     Component: function() {
         let t = (0, a.bG)([_.Ay], () => _.Ay.getDebugLogging()),
-            e = D.useField("isUploading"),
-            i = D.useField("isDisabled"),
+            e = p.useField("isUploading"),
+            i = p.useField("isDisabled"),
             s = l.useId();
         return (0, n.jsxs)("fieldset", {
             children: [(0, n.jsx)(d.AC4, {
@@ -122,7 +122,7 @@ let y = (0, c.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     label: b.intl.string(b.t["726JHL"]),
                     description: b.intl.string(b.t["/7ak9Q"]),
                     checked: t,
-                    onChange: p
+                    onChange: L
                 }), (0, n.jsx)("div", {
                     role: "group",
                     "aria-labelledby": s,
@@ -137,7 +137,7 @@ let y = (0, c.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         }), (0, n.jsx)(d.Button, {
                             variant: "secondary",
                             text: b.intl.string(b.t.nuPtYi),
-                            onClick: L,
+                            onClick: D,
                             "aria-label": b.intl.string(b.t["L/hFOe"])
                         })]
                     })

@@ -14,15 +14,15 @@ var i = n(627968),
     u = n(487401),
     h = n(952790),
     p = n(846930),
-    A = n(355205),
-    f = n(366811),
-    g = n(924985),
-    _ = n(945886),
+    f = n(355205),
+    A = n(366811),
+    _ = n(924985),
+    g = n(945886),
     m = n(72314),
-    x = n(769765),
-    E = n(808728),
-    y = n(458294),
-    v = n(71393),
+    E = n(769765),
+    x = n(808728),
+    v = n(458294),
+    y = n(71393),
     S = n(576705),
     C = n(584569),
     I = n(383501),
@@ -172,7 +172,7 @@ class M extends s.PureComponent {
             }), null != n && (0, i.jsx)("section", {
                 className: k.C3,
                 "aria-label": L.intl.string(L.t.StREWK),
-                children: (0, i.jsx)(A.A, {
+                children: (0, i.jsx)(f.A, {
                     guildId: n.id
                 })
             })]
@@ -183,20 +183,20 @@ class M extends s.PureComponent {
 function P(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([E.Ay], () => E.Ay.getChannels(t)), l = (0, a.bG)([x.A], () => x.A.getCategories(t)), {
+    } = e, n = (0, a.bG)([y.A], () => y.A.getGuild(t)), s = (0, a.bG)([x.Ay], () => x.Ay.getChannels(t)), l = (0, a.bG)([E.A], () => E.A.getCategories(t)), {
         mutedChannels: r,
         collapseMuted: c
     } = (0, a.cf)([T.Ay], () => ({
         mutedChannels: T.Ay.getMutedChannels(t),
         collapseMuted: T.Ay.isGuildCollapsed(t)
-    })), u = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStates(t)), h = (0, a.bG)([_.A], () => _.A.getCollapsed()), {
+    })), u = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStates(t)), h = (0, a.bG)([g.A], () => g.A.getCollapsed()), {
         scrollTo: p
-    } = (0, a.bG)([m.A], () => m.A.getGuildDimensions(t)), A = (0, f.A)(e => {
+    } = (0, a.bG)([m.A], () => m.A.getGuildDimensions(t)), f = (0, A.A)(e => {
         let {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), w = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), L = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([_.A], () => _.A.version), w = (0, a.bG)([v.default], () => v.default.getGuildChangeSentinel(t)), L = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
     return (0, i.jsx)(M, {
         guildId: t,
         guild: n,
@@ -204,7 +204,7 @@ function P(e) {
         categories: l,
         mutedChannels: r,
         scrollToChannel: p,
-        selectedChannelId: A,
+        selectedChannelId: f,
         selectedVoiceChannelId: b,
         voiceStates: u,
         rtcConnectedChannelId: G,

@@ -1,7 +1,7 @@
-/** chunk id: 594508, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    E: () => d,
-    v: () => c
+/** chunk id: 594508, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => c,
+    v: () => d
 });
 var i = n(627968);
 n(64700);
@@ -10,26 +10,26 @@ var r = n(732955),
     a = n(701273),
     s = n(985018),
     o = n(690990);
-let d = t => {
+let c = e => {
     let {
-        onConfirm: e,
+        onConfirm: t,
         onCancel: n,
-        title: d,
-        subtitle: c,
+        title: c,
+        subtitle: d,
         confirmCta: u,
         showOpenDiscord: m = !0
-    } = t;
+    } = e;
     return (0, i.jsxs)("div", {
         className: o.RP,
         children: [(0, i.jsx)(l.Heading, {
             className: o.RS,
             variant: "heading-lg/extrabold",
-            children: d
-        }), null != c ? (0, i.jsx)(l.Text, {
+            children: c
+        }), null != d ? (0, i.jsx)(l.Text, {
             className: o.sT,
             variant: "text-sm/normal",
             color: "text-default",
-            children: c
+            children: d
         }) : null, (0, i.jsxs)("div", {
             className: o.UD,
             children: [m && (0, i.jsx)(r.$nd, {
@@ -41,7 +41,7 @@ let d = t => {
                 variant: "secondary",
                 text: u,
                 fullWidth: !0,
-                onClick: e
+                onClick: t
             }), null != n && (0, i.jsx)(r.$nd, {
                 variant: "secondary",
                 text: s.intl.string(s.t.iAfxo3),
@@ -52,12 +52,12 @@ let d = t => {
     })
 };
 
-function c(t) {
+function d(e) {
     let {
-        onConfirm: e,
+        onConfirm: t,
         tierName: n,
-        subscription: d
-    } = t;
+        subscription: c
+    } = e;
     return (0, i.jsxs)("div", {
         className: o.RP,
         children: [(0, i.jsx)(l.Heading, {
@@ -71,7 +71,7 @@ function c(t) {
             variant: "text-sm/normal",
             color: "text-default",
             children: s.intl.format(s.t.OsAK9h, {
-                timestamp: d?.currentPeriodEnd
+                timestamp: c?.currentPeriodEnd
             })
         }), (0, i.jsxs)("div", {
             className: o.UD,
@@ -86,7 +86,7 @@ function c(t) {
             }), (0, i.jsx)(r.$nd, {
                 variant: "secondary",
                 text: s.intl.string(s.t.nlkywz),
-                onClick: e
+                onClick: t
             })]
         })]
     })
