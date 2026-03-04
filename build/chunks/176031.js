@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(717807),
     F = n(385327),
     Y = n(727949),
-    q = n(466336),
-    W = n(615003),
+    W = n(466336),
+    q = n(615003),
     K = n(442802),
     z = n(67173),
     $ = n(793322),
@@ -308,7 +308,7 @@ let eN = r.memo(function(e) {
         selectedChannelId: _,
         path: m
     } = e, g = r.useRef(null), I = r.useRef(null), f = r.useRef(null), C = r.useRef(null), N = (0, R.c)("PrivateChannels"), S = null;
-    return d ? S = (0, i.jsx)(q.V, {
+    return d ? S = (0, i.jsx)(W.V, {
         targetElementRef: C
     }) : u && (S = (0, i.jsx)(H.A, {
         targetElementRef: C
@@ -352,7 +352,7 @@ let eN = r.memo(function(e) {
             }, "library") : null, A ? (0, i.jsx)(eE, {
                 selected: null == m ? null != l && l.startsWith(es.BVt.MESSAGE_REQUESTS) : m === es.BVt.MESSAGE_REQUESTS
             }, "message-requests") : null, o ? (0, i.jsxs)("div", {
-                children: [(0, i.jsx)(W.o, {
+                children: [(0, i.jsx)(q.o, {
                     nitroTabButtonRef: C,
                     selected: null == m ? s : m.startsWith(es.BVt.APPLICATION_STORE),
                     route: es.BVt.APPLICATION_STORE,
@@ -411,7 +411,7 @@ function ex() {
             } = e;
             return [t, n]
         }, s.x),
-        _ = (0, W.P)({
+        _ = (0, q.P)({
             selected: null == h ? r : h.startsWith(es.BVt.APPLICATION_STORE)
         }),
         m = (0, Y.Tp)(),

@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(574381),
-    r = i(311907),
-    a = i(139033),
+    a = i(311907),
+    r = i(139033),
     u = i(314116),
     o = i(421380),
     d = i(397927),
@@ -21,25 +21,25 @@ var n = i(627968),
     C = i(780964),
     N = i(652215),
     O = i(731854),
-    L = i(985018);
-let b = (0, S.D)(() => ({
+    b = i(985018);
+let D = (0, S.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function D() {
+async function L() {
     let t = await T.A.fileManager.getLogPath();
     T.A.fileManager.showItemInFolder(t)
 }
 
 function p(t) {
     (0, u.A)({
-        title: L.intl.string(L.t["7UXEF2"]),
-        subtitle: L.intl.string(L.t.IYPrRl),
-        confirmText: L.intl.string(L.t.BddRzS),
+        title: b.intl.string(b.t["7UXEF2"]),
+        subtitle: b.intl.string(b.t.IYPrRl),
+        confirmText: b.intl.string(b.t.BddRzS),
         onConfirm: () => A.A.setDebugLogging(t)
     })
 }
-async function R(t) {
+async function m(t) {
     let {
         onUploadStart: e,
         onUploadFinish: i
@@ -51,19 +51,19 @@ async function R(t) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, E.a)(N.Umv.RTC), t = L.intl.string(L.t["fKBB8+"]), e = L.intl.string(L.t.BvyxE7), (0, a.A)({
+        }), await (0, E.a)(N.Umv.RTC), t = b.intl.string(b.t["fKBB8+"]), e = b.intl.string(b.t.BvyxE7), (0, r.A)({
             title: t,
             subtitle: e
         })
-    } catch (r) {
+    } catch (a) {
         var l;
         let t, e, i, s;
-        l = r.displayMessage, t = L.intl.string(L.t.QZg0J7), e = l ?? L.intl.string(L.t.VzHcSm), i = (0, g.B1)(g.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, s = L.intl.formatToPlainString(L.t.ejOT95, {
+        l = a.displayMessage, t = b.intl.string(b.t.QZg0J7), e = l ?? b.intl.string(b.t.VzHcSm), i = (0, g.B1)(g.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, s = b.intl.formatToPlainString(b.t.ejOT95, {
             errorCode: i
         }), (0, d.qfG)(i => (0, n.jsx)(d.VoidConfirmModal, {
             header: t,
             confirmButtonColor: o.$n.Colors.BRAND,
-            confirmText: L.intl.string(L.t.BddRzS),
+            confirmText: b.intl.string(b.t.BddRzS),
             ...i,
             children: (0, n.jsxs)("div", {
                 style: {
@@ -88,39 +88,39 @@ async function R(t) {
         i?.()
     }
 }
-async function m() {
-    await R({
-        onUploadStart: () => b.setState({
+async function R() {
+    await m({
+        onUploadStart: () => D.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => b.setState({
+        onUploadFinish: () => D.setState({
             isUploading: !1,
             isDisabled: !0
         })
     })
 }
 let y = (0, c.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
-    useSearchTerms: () => [L.intl.string(L.t["726JHL"]), L.intl.string(L.t.EbwFfR), L.intl.string(L.t.nuPtYi)],
+    useSearchTerms: () => [b.intl.string(b.t["726JHL"]), b.intl.string(b.t.EbwFfR), b.intl.string(b.t.nuPtYi)],
     usePredicate: function() {
-        let t = (0, r.bG)([_.Ay], () => _.Ay.supports(O.O5.DEBUG_LOGGING));
+        let t = (0, a.bG)([_.Ay], () => _.Ay.supports(O.O5.DEBUG_LOGGING));
         return s.Av && t && null != T.A.fileManager.readLogFiles
     },
     Component: function() {
-        let t = (0, r.bG)([_.Ay], () => _.Ay.getDebugLogging()),
-            e = b.useField("isUploading"),
-            i = b.useField("isDisabled"),
+        let t = (0, a.bG)([_.Ay], () => _.Ay.getDebugLogging()),
+            e = D.useField("isUploading"),
+            i = D.useField("isDisabled"),
             s = l.useId();
         return (0, n.jsxs)("fieldset", {
             children: [(0, n.jsx)(d.AC4, {
                 tag: "legend",
                 id: s,
-                children: L.intl.string(L.t["FjN+et"])
+                children: b.intl.string(b.t["FjN+et"])
             }), (0, n.jsxs)(d.BJc, {
                 direction: "vertical",
                 gap: 4,
                 children: [(0, n.jsx)(d.dOG, {
-                    label: L.intl.string(L.t["726JHL"]),
-                    description: L.intl.string(L.t["/7ak9Q"]),
+                    label: b.intl.string(b.t["726JHL"]),
+                    description: b.intl.string(b.t["/7ak9Q"]),
                     checked: t,
                     onChange: p
                 }), (0, n.jsx)("div", {
@@ -129,16 +129,16 @@ let y = (0, c.E2)(C.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     children: (0, n.jsxs)(d.ButtonGroup, {
                         children: [(0, n.jsx)(d.Button, {
                             variant: "secondary",
-                            text: L.intl.string(L.t.EbwFfR),
-                            onClick: m,
+                            text: b.intl.string(b.t.EbwFfR),
+                            onClick: R,
                             loading: e,
                             disabled: i,
-                            "aria-label": L.intl.string(L.t.aY1OH2)
+                            "aria-label": b.intl.string(b.t.aY1OH2)
                         }), (0, n.jsx)(d.Button, {
                             variant: "secondary",
-                            text: L.intl.string(L.t.nuPtYi),
-                            onClick: D,
-                            "aria-label": L.intl.string(L.t["L/hFOe"])
+                            text: b.intl.string(b.t.nuPtYi),
+                            onClick: L,
+                            "aria-label": b.intl.string(b.t["L/hFOe"])
                         })]
                     })
                 })]

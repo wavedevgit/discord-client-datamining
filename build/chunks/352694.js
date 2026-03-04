@@ -5,9 +5,9 @@ i.d(e, {
 var n = i(419954),
     l = i(780964),
     s = i(302871),
-    r = i(794126),
-    a = i(985018);
+    a = i(794126),
+    r = i(985018);
 let u = (0, n.zZ)(l.X.APPEARANCE_THEME_CATEGORY, {
-    useSubnavLabel: () => a.intl.string(a.t.Ksh3ik),
-    buildLayout: () => [r.v, s.u]
+    useSubnavLabel: () => r.intl.string(r.t.Ksh3ik),
+    buildLayout: () => [a.v, s.u]
 })

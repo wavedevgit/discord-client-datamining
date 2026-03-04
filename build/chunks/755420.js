@@ -12,16 +12,19 @@ let s = [];
 function o(e) {
     let {
         platforms: t,
-        currentPlatform: n
+        currentPlatform: n,
+        isGameLaunchable: i
     } = e;
     return l.useMemo(() => (function(e) {
         let {
             platforms: t,
-            currentPlatform: n
-        } = e, i = new Set(t), l = [];
-        return null == t || 0 === t.length || null != n && i.has(n) ? s : (i.has(r.yTV.ANDROID) && i.has(r.yTV.IOS) ? l.push("mobile") : i.has(r.yTV.ANDROID) ? l.push("android") : i.has(r.yTV.IOS) && l.push("ios"), (i.has(r.yTV.PS4) || i.has(r.yTV.PS5)) && l.push("playstation"), i.has(r.yTV.XBOX) && l.push("xbox"), i.has(r.yTV.DESKTOP) && l.push("desktop"), i.has(r.yTV.META_QUEST) && l.push("vr"), l)
+            currentPlatform: n,
+            isGameLaunchable: i
+        } = e, l = new Set(t), a = [];
+        return null == t || 0 === t.length || null != n && l.has(n) && i ? s : (l.has(r.yTV.ANDROID) && l.has(r.yTV.IOS) ? a.push("mobile") : l.has(r.yTV.ANDROID) ? a.push("android") : l.has(r.yTV.IOS) && a.push("ios"), (l.has(r.yTV.PS4) || l.has(r.yTV.PS5)) && a.push("playstation"), l.has(r.yTV.XBOX) && a.push("xbox"), l.has(r.yTV.DESKTOP) && a.push("desktop"), l.has(r.yTV.META_QUEST) && a.push("vr"), a)
     })({
         platforms: t,
-        currentPlatform: n
-    }), [n, t])
+        currentPlatform: n,
+        isGameLaunchable: i
+    }), [n, t, i])
 }

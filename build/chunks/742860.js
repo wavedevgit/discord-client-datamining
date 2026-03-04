@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(582754),
     m = n(397927),
     h = n(736653),
-    x = n(775602),
-    p = n(607470),
+    p = n(775602),
+    x = n(607470),
     g = n(409626),
     _ = n(829219),
     f = n(859703),
@@ -36,8 +36,8 @@ var a = n(627968),
     D = n(79545),
     M = n(646764),
     P = n(398025),
-    L = n(545986),
-    U = n(568329),
+    U = n(545986),
+    L = n(568329),
     B = n(207869),
     G = n(158265),
     F = n(933378),
@@ -60,10 +60,10 @@ let X = i.forwardRef(function(e, t) {
         autoPlay: o = !1
     } = e, {
         isExpanded: c
-    } = i.useContext(W.T), u = (0, d.bG)([x.A], () => x.A.useReducedMotion), m = i.useRef(null);
+    } = i.useContext(W.T), u = (0, d.bG)([p.A], () => p.A.useReducedMotion), m = i.useRef(null);
     return i.useEffect(() => {
         null != m.current && (c && (!u || n) ? (m.current.currentTime = 0, m.current.play()) : m.current.pause())
-    }, [m, c, n, u]), (0, a.jsx)(p.A, {
+    }, [m, c, n, u]), (0, a.jsx)(x.A, {
         ref: e => {
             m.current = e, null != t && ("function" == typeof t ? t(e) : t.current = e)
         },
@@ -86,7 +86,7 @@ function Z(e) {
         onClick: t
     } = e, {
         quest: n
-    } = i.useContext(W.T), s = (0, d.bG)([x.A], () => x.A.useReducedMotion), [r, o] = i.useState(!1), u = (0, S.tW)(n, S.fY.QUEST_BAR_HERO_VIDEO, void 0, !1), h = (0, S.tW)(n, S.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), p = (0, v.Kr)(e => e.getVideoProgressState)(n.id), g = n.userStatus?.completedAt != null && p === v.K2.COMPLETED, _ = !g && (!s || r);
+    } = i.useContext(W.T), s = (0, d.bG)([p.A], () => p.A.useReducedMotion), [r, o] = i.useState(!1), u = (0, S.tW)(n, S.fY.QUEST_BAR_HERO_VIDEO, void 0, !1), h = (0, S.tW)(n, S.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), x = (0, v.Kr)(e => e.getVideoProgressState)(n.id), g = n.userStatus?.completedAt != null && x === v.K2.COMPLETED, _ = !g && (!s || r);
     return (0, a.jsxs)(m.DUT, {
         className: J.QO,
         onClick: t,
@@ -150,12 +150,12 @@ function et(e) {
         onAcceptQuest: o
     } = e, {
         quest: c,
-        onGameSheetOpen: x,
-        onGameSheetClose: p,
+        onGameSheetOpen: p,
+        onGameSheetClose: x,
         taskDetails: _
     } = i.useContext(W.T), {
         expansionSpring: v
-    } = i.useContext(U.PW), I = i.useRef(null), k = (0, d.bG)([f.A], () => f.A.isEnrolling(c.id), [c]), R = i.useMemo(() => (0, S.tW)(c, t ? S.fY.QUEST_BAR_HERO_IMAGE : S.fY.QUEST_BAR_HERO), [c, t]), M = (0, T.NA)({
+    } = i.useContext(L.PW), I = i.useRef(null), k = (0, d.bG)([f.A], () => f.A.isEnrolling(c.id), [c]), R = i.useMemo(() => (0, S.tW)(c, t ? S.fY.QUEST_BAR_HERO_IMAGE : S.fY.QUEST_BAR_HERO), [c, t]), M = (0, T.NA)({
         quest: c
     }), B = i.useMemo(() => (0, S.tW)(c, S.fY.HERO_IMAGE), [c]), G = i.useMemo(() => null == B ? {} : {
         backgroundImage: `url(${B.url})`
@@ -168,8 +168,8 @@ function et(e) {
         taskDetails: _,
         sourceQuestContent: b.uF.QUEST_BAR_V2,
         popoutTargetElementRef: I,
-        onGameSheetOpened: x,
-        onGameSheetClosed: p,
+        onGameSheetOpened: p,
+        onGameSheetClosed: x,
         gameProfileSource: g.Ob.QuestBar
     }), z = (0, D.Pd)(c), {
         primaryCtaButtonVariant: $
@@ -227,7 +227,7 @@ function et(e) {
                             loading: k,
                             text: M,
                             size: "sm",
-                            icon: (0, L.Oz)(c),
+                            icon: (0, U.Oz)(c),
                             fullWidth: !0
                         })]
                     })
@@ -282,10 +282,10 @@ function en(e) {
         taskDetails: d
     } = i.useContext(W.T), {
         expansionSpring: c
-    } = i.useContext(U.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(s), [x, p, g] = (0, y.Qo)(s, d), _ = i.useRef(null), f = i.useRef(null), v = (0, y.RR)({
+    } = i.useContext(L.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(s), [p, x, g] = (0, y.Qo)(s, d), _ = i.useRef(null), f = i.useRef(null), v = (0, y.RR)({
         quest: s
     }), j = (0, k.vv)(s), A = (0, y.I3)(s), C = i.useCallback(() => {
-        (0, L.d5)({
+        (0, U.d5)({
             quest: s,
             questContent: b.uF.QUEST_BAR_V2,
             sourceQuestContent: b.uF.QUEST_BAR_V2,
@@ -318,10 +318,10 @@ function en(e) {
                 progressBarRef: _,
                 isExpanded: !0,
                 percentComplete: T,
-                activeScreen: x,
+                activeScreen: p,
                 popoutTargetElementRef: f
             }), (0, a.jsx)(V.T, {
-                children: !u && !(0, I.W1)(s) && (0, o.YW)(x).with(b.X0.SELECT, () => (0, a.jsx)($.A, {
+                children: !u && !(0, I.W1)(s) && (0, o.YW)(p).with(b.X0.SELECT, () => (0, a.jsx)($.A, {
                     onConsole: () => g(q.fO.CONSOLE),
                     onDesktop: () => g(q.fO.DESKTOP)
                 })).with(b.X0.DESKTOP, () => (0, a.jsx)(H.A, {
@@ -337,8 +337,8 @@ function en(e) {
                     awaitingConsoleConnections: v,
                     hasMadeProgress: m,
                     isProgressing: h,
-                    activeScreen: x,
-                    showBackButton: x !== b.X0.SELECT && p.length > 1 && !m && !h,
+                    activeScreen: p,
+                    showBackButton: p !== b.X0.SELECT && x.length > 1 && !m && !h,
                     onBack: () => g(null),
                     sourceQuestContent: b.uF.QUEST_BAR_V2
                 })]
@@ -352,7 +352,7 @@ function en(e) {
     })
 }
 async function ea(e, t, n, a) {
-    (0, k.vv)(e) ? await (0, L.e0)(e, {
+    (0, k.vv)(e) ? await (0, U.e0)(e, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a,
@@ -379,13 +379,13 @@ let ei = i.forwardRef(function(e, t) {
         isExpansionAnimationComplete: m,
         quest: h
     } = i.useContext(W.T), {
-        expansionSpring: x
-    } = i.useContext(U.PW), {
-        launchInGameActivity: p
+        expansionSpring: p
+    } = i.useContext(L.PW), {
+        launchInGameActivity: x
     } = (0, y.zW)(h), g = (0, R.vA)(h), _ = i.useCallback(async () => {
         let e = g ? E.Cy.START_QUEST : E.Cy.ACCEPT_QUEST;
-        await ea(h, b.uF.QUEST_BAR_V2, e, b.uF.QUEST_BAR_V2), g && p()
-    }, [h, p, g]), f = h.userStatus?.enrolledAt != null, v = u && m;
+        await ea(h, b.uF.QUEST_BAR_V2, e, b.uF.QUEST_BAR_V2), g && x()
+    }, [h, x, g]), f = h.userStatus?.enrolledAt != null, v = u && m;
     return (0, a.jsxs)(r.animated.div, {
         "aria-hidden": !v,
         className: l()(s, J.Rh, {
@@ -393,10 +393,10 @@ let ei = i.forwardRef(function(e, t) {
             [J.iH]: f
         }),
         style: {
-            transform: (0, r.to)([x.to({
+            transform: (0, r.to)([p.to({
                 range: [0, 1],
                 output: [0, -100]
-            }), x.to({
+            }), p.to({
                 range: [0, 1],
                 output: [0, c]
             })], (e, t) => `translateY(calc(${e}% + ${t}px))`)

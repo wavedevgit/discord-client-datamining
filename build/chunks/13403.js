@@ -184,6 +184,7 @@ function M(e) {
         partyStatusElement: V,
         analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
+        canPromptAuth: en && !ei,
         startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec

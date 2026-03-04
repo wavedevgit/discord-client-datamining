@@ -7,7 +7,7 @@ var i = n(627968);
 n(64700);
 var l = n(503698),
     a = n.n(l),
-    s = n(585958),
+    s = n(885151),
     r = n(788593),
     o = n(461349),
     c = n(640830);
@@ -16,12 +16,12 @@ function d(e) {
     let {
         applicationId: t
     } = e, {
-        coverImageUrl: n
-    } = (0, s.n)(t);
-    return null != n && "" !== n ? (0, i.jsx)("div", {
+        data: n
+    } = (0, s.k)(t), l = n?.supplementalData?.coverImageUrl;
+    return null != l && "" !== l ? (0, i.jsx)("div", {
         className: a()(o.PY, c.LH),
         children: (0, i.jsx)(r.R, {
-            imageSrc: n
+            imageSrc: l
         })
     }) : (0, i.jsx)("div", {
         className: a()(o.mD, c.LH)

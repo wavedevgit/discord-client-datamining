@@ -1,5 +1,7 @@
 /** chunk id: 22705, original params: e,t,n (module,exports,require) **/
-"use strict";
+n.d(t, {
+    A: () => i
+});
 
 function i(e) {
     return null != e ? {
@@ -7,6 +9,3 @@ function i(e) {
         name: e.name ?? ""
     } : null
 }
-n.d(t, {
-    A: () => i
-})

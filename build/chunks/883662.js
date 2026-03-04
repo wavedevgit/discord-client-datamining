@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => m
 });
-var a = n(627968),
-    r = n(64700),
+var r = n(627968),
+    a = n(64700),
     i = n(311907),
     s = n(521489),
     l = n(397927),
@@ -20,13 +20,13 @@ function m(e) {
         target: n,
         defaultTarget: m,
         onPanelChange: g,
-        sidebarFooter: p,
-        emptyState: b,
-        searchQuery: f,
-        onSearchChange: h,
+        sidebarFooter: b,
+        emptyState: p,
+        searchQuery: h,
+        onSearchChange: f,
         ...x
-    } = e, [y, C] = r.useState(!1), [A, v] = r.useState(1.4), S = r.useRef(null), T = (0, i.bG)([o.A], () => o.A.useReducedMotion), I = (0, i.bG)([c.A], () => c.A.isFocused());
-    return r.useEffect(() => {
+    } = e, [y, C] = a.useState(!1), [A, v] = a.useState(1.4), S = a.useRef(null), T = (0, i.bG)([o.A], () => o.A.useReducedMotion), I = (0, i.bG)([c.A], () => c.A.isFocused());
+    return a.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
@@ -37,21 +37,21 @@ function m(e) {
         return u._.subscribe(_.jej.SHAKE_SETTINGS_MODAL, e), () => {
             u._.unsubscribe(_.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(S.current)
         }
-    }, [T, I]), (0, a.jsx)(l.bfh, {
+    }, [T, I]), (0, r.jsx)(l.bfh, {
         isShaking: y,
         intensity: A,
-        children: (0, a.jsx)(s.N, {
+        children: (0, r.jsx)(s.N, {
             ...x,
-            children: (0, a.jsx)(d.A, {
+            children: (0, r.jsx)(d.A, {
                 onClose: x.onClose,
                 partialRoot: t,
                 target: n,
                 defaultTarget: m,
                 onPanelChange: g,
-                emptyState: b,
-                sidebarFooter: p,
-                searchQuery: f,
-                onSearchChange: h
+                emptyState: p,
+                sidebarFooter: b,
+                searchQuery: h,
+                onSearchChange: f
             })
         })
     })

@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(935399),
     s = i(158954),
-    r = i(311907),
-    a = i(793574),
+    a = i(311907),
+    r = i(793574),
     u = i(526162),
     o = i(848971),
     d = i(915089),
@@ -28,11 +28,11 @@ let I = (0, A.E2)(S.X.DISPLAY_IN_APP_ICON, {
                 orientation: "horizontal",
                 labelledBy: t
             }),
-            A = (0, r.bG)([u.A], () => u.A.isUpsellPreview);
+            A = (0, a.bG)([u.A], () => u.A.isUpsellPreview);
         return (0, l.Ay)(() => {
             A && T.default.track(E.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: c.e.APP_ICON_UPSELL,
-                location_stack: [a.A.USER_SETTINGS]
+                location_stack: [r.A.USER_SETTINGS]
             })
         }), (0, n.jsx)("div", {
             ...i,

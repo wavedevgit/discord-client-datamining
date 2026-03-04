@@ -5,12 +5,12 @@ i.d(e, {
 var n = i(311907),
     l = i(172272),
     s = i(419954),
-    r = i(111162),
-    a = i(780964);
-let u = (0, s.sN)(a.X.LAYOUT_DEBUGGING_HORIZONTAL_SPACING, {
+    a = i(111162),
+    r = i(780964);
+let u = (0, s.sN)(r.X.LAYOUT_DEBUGGING_HORIZONTAL_SPACING, {
     useTitle: () => "Horizontal Grid Spacing",
     useSubtitle: () => "Adjust the spacing between horizontal grid lines. Set to 0 to disable horizontal grid lines.",
-    usePredicate: () => (0, n.bG)([r.default], () => r.default.layoutDebuggingEnabled),
+    usePredicate: () => (0, n.bG)([a.default], () => a.default.layoutDebuggingEnabled),
     minValue: 0,
     maxValue: l.YR,
     markers: Array.from({

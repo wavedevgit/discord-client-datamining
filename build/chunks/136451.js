@@ -6,19 +6,19 @@ i.d(e, {
 var n = i(873298),
     l = i(419954),
     s = i(253932),
-    r = i(780964),
-    a = i(985018);
-let u = (0, l.Qx)(r.X.APPEARANCE_UI_DENSITY, {
-        useTitle: () => a.intl.string(a.t["C/5V0A"]),
-        useSubtitle: () => a.intl.string(a.t.QLZhYk),
+    a = i(780964),
+    r = i(985018);
+let u = (0, l.Qx)(a.X.APPEARANCE_UI_DENSITY, {
+        useTitle: () => r.intl.string(r.t["C/5V0A"]),
+        useSubtitle: () => r.intl.string(r.t.QLZhYk),
         useOptions: () => [{
-            name: a.intl.string(a.t["7iegX4"]),
+            name: r.intl.string(r.t["7iegX4"]),
             value: n.NS.COMPACT
         }, {
-            name: a.intl.string(a.t.bBvAEH),
+            name: r.intl.string(r.t.bBvAEH),
             value: n.NS.DEFAULT
         }, {
-            name: a.intl.string(a.t["4cuYHx"]),
+            name: r.intl.string(r.t["4cuYHx"]),
             value: n.NS.COZY
         }],
         useValue: () => s.Xi.useSetting(),
@@ -26,7 +26,7 @@ let u = (0, l.Qx)(r.X.APPEARANCE_UI_DENSITY, {
             t !== n.NS.UNSET_UI_DENSITY && s.Xi.updateSetting(t)
         }
     }),
-    o = (0, l.zZ)(r.X.APPEARANCE_UI_DENSITY_CATEGORY, {
-        useSubnavLabel: () => a.intl.string(a.t["C/5V0A"]),
+    o = (0, l.zZ)(a.X.APPEARANCE_UI_DENSITY_CATEGORY, {
+        useSubnavLabel: () => r.intl.string(r.t["C/5V0A"]),
         buildLayout: () => [u]
     })

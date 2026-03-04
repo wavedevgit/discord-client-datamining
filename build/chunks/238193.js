@@ -1,7 +1,7 @@
 /** chunk id: 238193, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    cD: () => p,
-    gs: () => x,
+    cD: () => x,
+    gs: () => p,
     sl: () => h
 });
 var a = n(110259),
@@ -28,7 +28,7 @@ function h(e, t) {
         source: "generated_test_user"
     }).catch(() => (l.A.showFailedToast(m.OB.GENERIC_ERROR), null))
 }
-async function x(e, t) {
+async function p(e, t) {
     return await o.A.get({
         url: u.Rsh.GENERATED_POOL_BY_ID(e),
         trackedActionData: {
@@ -53,7 +53,7 @@ async function x(e, t) {
     }).catch(() => (l.A.showFailedToast(m.OB.GENERIC_ERROR), null))
 }
 
-function p(e) {
+function x(e) {
     i.h.dispatch({
         type: "GENERATED_POOL_REMOVE_FROM_LIST",
         poolId: e

@@ -5,16 +5,16 @@ i.d(e, {
 var n = i(419954),
     l = i(253932),
     s = i(780964),
-    r = i(358776),
-    a = i(840065),
+    a = i(358776),
+    r = i(840065),
     u = i(652215),
     o = i(985018);
 let d = (0, n.zD)(s.X.TEXT_TO_SPEECH_COMMAND, {
     useTitle: () => o.intl.string(o.t["btbS+Z"]),
     useSubtitle: () => {
-        let t = (0, r.dk)("TextToSpeechCommandSetting");
+        let t = (0, a.dk)("TextToSpeechCommandSetting");
         return o.intl.format(o.t.Q5crhR, {
-            onClick: () => (0, a.openUserSettings)(t ? s.X.TTS_PLAYBACK_RATE : s.X.ACCESSIBILITY_PANEL, {
+            onClick: () => (0, r.openUserSettings)(t ? s.X.TTS_PLAYBACK_RATE : s.X.ACCESSIBILITY_PANEL, {
                 section: u.nc_.ACCESSIBILITY
             })
         })

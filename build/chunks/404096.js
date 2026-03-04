@@ -1,12 +1,12 @@
 /** chunk id: 404096, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    w: () => D
+    w: () => L
 });
 var n = i(421380),
     l = i(935649),
     s = i(847599),
-    r = i(171316),
-    a = i(419954),
+    a = i(171316),
+    r = i(419954),
     u = i(71393),
     o = i(954571),
     d = i(975571),
@@ -21,18 +21,18 @@ var n = i(421380),
     C = i(542457),
     N = i(355097),
     O = i(652215),
-    L = i(985018);
-let b = (t, e) => {
+    b = i(985018);
+let D = (t, e) => {
         o.default.track(O.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
             default_guilds_restricted: t,
             applied_to_existing_guilds: e
         })
     },
-    D = (0, a.zD)(g.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
-        useTitle: () => L.intl.string(L.t["3o2ojh"]),
-        useSubtitle: () => (0, _.q9)() ? L.intl.format(L.t.WpnWLc, {
+    L = (0, r.zD)(g.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+        useTitle: () => b.intl.string(b.t["3o2ojh"]),
+        useSubtitle: () => (0, _.q9)() ? b.intl.format(b.t.WpnWLc, {
             helpdeskArticle: d.A.getArticleURL(O.MVz.MESSAGE_REQUESTS)
-        }) : L.intl.format(L.t.wkm9a3, {
+        }) : b.intl.format(b.t.wkm9a3, {
             helpdeskArticle: d.A.getArticleURL(O.MVz.MESSAGE_REQUESTS)
         }),
         useValue: () => {
@@ -45,7 +45,7 @@ let b = (t, e) => {
         },
         useDisabled: () => {
             let t = (0, _.Tx)(),
-                e = (0, r.uM)(),
+                e = (0, a.uM)(),
                 i = (0, S.K)(),
                 n = E.$s.useSetting().includes(t);
             return t === c.YG ? i || e : n
@@ -58,16 +58,16 @@ let b = (t, e) => {
             if (e === c.YG) {
                 var i;
                 i = !t, (0, I.O)({
-                    header: L.intl.string(L.t.yAfu1p),
-                    body: L.intl.string(L.t.Ry2z74),
-                    confirmText: L.intl.string(L.t.gm1Vej),
-                    cancelText: L.intl.string(L.t.p89ACt),
+                    header: b.intl.string(b.t.yAfu1p),
+                    body: b.intl.string(b.t.Ry2z74),
+                    confirmText: b.intl.string(b.t.gm1Vej),
+                    cancelText: b.intl.string(b.t.p89ACt),
                     confirmButtonColor: n.$n.Colors.BRAND,
                     onConfirm: () => {
-                        E.YX.updateSetting(i), b(i, !1)
+                        E.YX.updateSetting(i), D(i, !1)
                     },
                     onCancel: () => {
-                        E.YX.updateSetting(i), E.Zr.updateSetting(i ? u.A.getGuildIds() : []), b(i, !0)
+                        E.YX.updateSetting(i), E.Zr.updateSetting(i ? u.A.getGuildIds() : []), D(i, !0)
                     }
                 })
             } else {

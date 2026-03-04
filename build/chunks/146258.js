@@ -1,4 +1,4 @@
-/** chunk id: 146258, original params: e,t,i (module,exports,require) **/
+/** chunk id: 146258, original params: e,t,n (module,exports,require) **/
 e.exports = {
     bo: "gameProfileModalTwoColumn__81040",
     Rm: "gameProfileModalOneColumn__81040",

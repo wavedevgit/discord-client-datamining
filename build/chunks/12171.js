@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(295405),
     m = n(815907),
     h = n(206467),
-    x = n(661251);
-let p = [{
+    p = n(661251);
+let x = [{
         label: "3DS and Failed Cards",
         value: "",
         disabled: !0
@@ -1138,7 +1138,7 @@ function b() {
     return i.useEffect(() => {
         (0, o.$o)()
     }, []), (0, a.jsx)(r.IpV, {
-        className: x.nd,
+        className: p.nd,
         children: (0, a.jsxs)("div", {
             className: m.l$,
             children: [(0, a.jsxs)(r.Text, {
@@ -1153,7 +1153,7 @@ function b() {
                     selectionMode: "single",
                     label: "Card Type",
                     value: e,
-                    options: p.filter(e => !("disabled" in e && e.disabled)).map(e => {
+                    options: x.filter(e => !("disabled" in e && e.disabled)).map(e => {
                         let {
                             value: t,
                             label: n

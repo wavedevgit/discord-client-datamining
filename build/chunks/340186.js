@@ -1,12 +1,12 @@
 /** chunk id: 340186, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    g: () => b
+    g: () => D
 });
 var n = i(934551),
     l = i(419954),
     s = i(780964),
-    r = i(358776),
-    a = i(16986),
+    a = i(358776),
+    r = i(16986),
     u = i(850060),
     o = i(176817),
     d = i(74973),
@@ -24,16 +24,16 @@ let O = (0, l.t_)(s.X.CHAT_PANEL, {
         useTitle: () => N.intl.string(N.t["/VQax8"]),
         buildLayout: () => [T.M, o.f, d.z, c.J, E.n, _.p, A.c, I.U, S.W, g.o]
     }),
-    L = (0, l.t_)(s.X.CHAT_PANEL, {
+    b = (0, l.t_)(s.X.CHAT_PANEL, {
         useTitle: () => N.intl.string(N.t["/VQax8"]),
-        StronglyDiscouragedCustomComponent: a.A,
+        StronglyDiscouragedCustomComponent: r.A,
         buildLayout: () => []
     }),
-    b = (0, l.i4)(s.X.CHAT_SIDEBAR_ITEM, {
+    D = (0, l.i4)(s.X.CHAT_SIDEBAR_ITEM, {
         useTitle: () => N.intl.string(N.t["/VQax8"]),
-        getLegacySearchKey: () => (0, r.WJ)("ChatPanel") ? void 0 : C.H.CHAT,
+        getLegacySearchKey: () => (0, a.WJ)("ChatPanel") ? void 0 : C.H.CHAT,
         icon: n.ChatIcon,
-        usePredicate: () => !(0, r.Ci)("ChatSidebarItem"),
+        usePredicate: () => !(0, a.Ci)("ChatSidebarItem"),
         useMenu: u.A,
-        buildLayout: () => [(0, r.WJ)("ChatPanel") ? O : L]
+        buildLayout: () => [(0, a.WJ)("ChatPanel") ? O : b]
     })

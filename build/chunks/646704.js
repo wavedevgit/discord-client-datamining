@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(934551),
     s = i(158954),
-    r = i(827734),
-    a = i(155984),
+    a = i(827734),
+    r = i(155984),
     u = i(682829),
     o = i(419954),
     d = i(933297),
@@ -30,9 +30,9 @@ let c = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
         icon: l.SubscriptionIcon,
         trailing: {
             type: d.Si.STRONGLY_DISCOURAGED_CUSTOM,
-            useCustomDecoration: () => (0, a.l)() ? (0, n.jsx)(s.EpV, {
+            useCustomDecoration: () => (0, r.l)() ? (0, n.jsx)(s.EpV, {
                 size: "xs",
-                color: r.A.unsafe_rawColors.YELLOW_300
+                color: a.A.unsafe_rawColors.YELLOW_300
             }) : null
         },
         buildLayout: () => (0, T.WJ)("SubscriptionsPanel") ? [_] : [c]

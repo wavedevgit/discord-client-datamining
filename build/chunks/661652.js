@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(793574),
     m = n(688810),
     h = n(975460),
-    x = n(362490),
-    p = n(587895),
+    p = n(362490),
+    x = n(587895),
     g = n(429913),
     _ = n(15285),
     f = n(905552),
@@ -51,14 +51,14 @@ function y() {
         [S, E] = i.useState(""),
         N = (0, r.bG)([_.Ay, j.A], () => (0, f.A)(_.Ay, j.A)),
         I = (0, g.h)(S),
-        k = (0, r.yK)([p.A], () => I?.linkedGames?.map(e => p.A.getApplication(e.id)).filter(e => null != e) ?? []),
-        R = (0, x.RD)(I, {
-            allowedFlows: [x._M.RPC]
+        k = (0, r.yK)([x.A], () => I?.linkedGames?.map(e => x.A.getApplication(e.id)).filter(e => null != e) ?? []),
+        R = (0, p.RD)(I, {
+            allowedFlows: [p._M.RPC]
         }),
-        O = (0, x.RD)(I, {
-            allowedFlows: [x._M.WEB]
+        O = (0, p.RD)(I, {
+            allowedFlows: [p._M.WEB]
         }),
-        w = (0, x.RD)(I),
+        w = (0, p.RD)(I),
         {
             canDeauthorize: D,
             deauthorize: M

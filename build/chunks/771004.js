@@ -1,43 +1,43 @@
-/** chunk id: 771004, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => A,
+/** chunk id: 771004, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => I,
     h: () => p
 });
-var n = i(627968),
-    l = i(64700),
-    a = i(503698),
-    s = i.n(a),
-    r = i(934551),
-    c = i(158954),
-    o = i(827734),
-    d = i(397927),
-    u = i(981355),
-    m = i(409626),
-    x = i(305080),
-    g = i(936636),
-    h = i(985018),
-    f = i(851822),
-    j = i(812254);
+var i = n(627968),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
+    r = n(934551),
+    c = n(158954),
+    o = n(827734),
+    d = n(397927),
+    u = n(981355),
+    m = n(409626),
+    x = n(305080),
+    g = n(936636),
+    h = n(985018),
+    f = n(851822),
+    j = n(812254);
 
 function p(e) {
     let {
         detectedGame: t,
-        trackAction: i
-    } = e, [a, x] = l.useState(t?.summaryLocalized != null), [p, A] = l.useState(!0), [v, E] = l.useState(!1), I = l.useRef(null), {
+        trackAction: n
+    } = e, [a, x] = l.useState(t?.summaryLocalized != null), [p, I] = l.useState(!0), [v, E] = l.useState(!1), A = l.useRef(null), {
         width: _,
         height: N
     } = (0, u.A)();
     return (l.useEffect(() => {
-        let e = I.current;
+        let e = A.current;
         null != e && E(e.scrollHeight - e.clientHeight > 1 || !p)
-    }, [I, _, N, p]), null == t.summary) ? null : (0, n.jsxs)("div", {
+    }, [A, _, N, p]), null == t.summary) ? null : (0, i.jsxs)("div", {
         className: s()(f.fi, f.mX),
-        children: [null != t.summaryLocalized && (0, n.jsxs)("div", {
+        children: [null != t.summaryLocalized && (0, i.jsxs)("div", {
             className: s()(f.nM, f.Lc),
-            children: [(0, n.jsx)(r.PencilSparkleIcon, {
+            children: [(0, i.jsx)(r.PencilSparkleIcon, {
                 color: o.A.colors.TEXT_DEFAULT,
                 size: "xs"
-            }), (0, n.jsx)(c.EYj, {
+            }), (0, i.jsx)(c.EYj, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: a ? h.intl.format(h.t.aZ2iIp, {
@@ -46,33 +46,33 @@ function p(e) {
                     onShowTranslated: () => x(!0)
                 })
             })]
-        }), (0, n.jsx)(c.EYj, {
-            ref: I,
+        }), (0, i.jsx)(c.EYj, {
+            ref: A,
             lineClamp: p ? 8 : void 0,
             variant: "text-sm/normal",
             children: a ? t.summaryLocalized : t.summary
-        }), v && (0, n.jsx)(d.DUT, {
+        }), v && (0, i.jsx)(d.DUT, {
             className: f.vk,
             onClick: () => {
-                i(p ? m.Ws.ShowMore : m.Ws.ShowLess), A(!p)
+                n(p ? m.Ws.ShowMore : m.Ws.ShowLess), I(!p)
             },
-            children: (0, n.jsx)(c.EYj, {
+            children: (0, i.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
                 children: p ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
             })
-        }), (0, n.jsx)(g.A, {
+        }), (0, i.jsx)(g.A, {
             className: j.B,
             detectedGame: t
         })]
     })
 }
 
-function A(e) {
+function I(e) {
     let {
         detectedGame: t,
-        trackAction: i
-    } = e, [a, g] = l.useState(t?.summaryLocalized != null), [j, p] = l.useState(!0), [A, v] = l.useState(!1), E = l.useRef(null), {
-        width: I,
+        trackAction: n
+    } = e, [a, g] = l.useState(t?.summaryLocalized != null), [j, p] = l.useState(!0), [I, v] = l.useState(!1), E = l.useRef(null), {
+        width: A,
         height: _
     } = (0, u.A)(), {
         isTwoColumn: N
@@ -80,14 +80,14 @@ function A(e) {
     return (l.useEffect(() => {
         let e = E.current;
         null != e && v(e.scrollHeight - e.clientHeight > 1 || !j)
-    }, [E, I, _, j, N]), null == t.summary) ? null : (0, n.jsxs)("div", {
+    }, [E, A, _, j, N]), null == t.summary) ? null : (0, i.jsxs)("div", {
         className: s()(f.fi, f.mX),
-        children: [null != t.summaryLocalized && (0, n.jsxs)("div", {
+        children: [null != t.summaryLocalized && (0, i.jsxs)("div", {
             className: s()(f.nM, f.Lc),
-            children: [(0, n.jsx)(r.PencilSparkleIcon, {
+            children: [(0, i.jsx)(r.PencilSparkleIcon, {
                 color: o.A.colors.TEXT_DEFAULT,
                 size: "xs"
-            }), (0, n.jsx)(c.EYj, {
+            }), (0, i.jsx)(c.EYj, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: a ? h.intl.format(h.t.aZ2iIp, {
@@ -96,17 +96,17 @@ function A(e) {
                     onShowTranslated: () => g(!0)
                 })
             })]
-        }), (0, n.jsx)(c.EYj, {
+        }), (0, i.jsx)(c.EYj, {
             ref: E,
             lineClamp: j ? N ? 8 : 5 : void 0,
             variant: "text-sm/normal",
             children: a ? t.summaryLocalized : t.summary
-        }), A && (0, n.jsx)(d.DUT, {
+        }), I && (0, i.jsx)(d.DUT, {
             className: f.vk,
             onClick: () => {
-                i(j ? m.Ws.ShowMore : m.Ws.ShowLess), p(!j)
+                n(j ? m.Ws.ShowMore : m.Ws.ShowLess), p(!j)
             },
-            children: (0, n.jsx)(c.EYj, {
+            children: (0, i.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
                 children: j ? h.intl.string(h.t.lBeKY2) : h.intl.string(h.t["6MwJo/"])
             })

@@ -5,25 +5,25 @@ i.d(e, {
 var n = i(934551),
     l = i(419954),
     s = i(780964),
-    r = i(358776),
-    a = i(224515),
+    a = i(358776),
+    r = i(224515),
     u = i(435757),
     o = i(531525),
     d = i(985018);
 let A = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-        usePredicate: () => !(0, r.dk)("LegacyPremiumGuildSubscriptionsPanel"),
+        usePredicate: () => !(0, a.dk)("LegacyPremiumGuildSubscriptionsPanel"),
         useTitle: () => d.intl.string(d.t["+CbP2v"]),
-        StronglyDiscouragedCustomComponent: a.A,
+        StronglyDiscouragedCustomComponent: r.A,
         buildLayout: () => []
     }),
     T = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-        usePredicate: () => (0, r.dk)("PremiumGuildSubscriptionsPanel"),
+        usePredicate: () => (0, a.dk)("PremiumGuildSubscriptionsPanel"),
         useTitle: () => d.intl.string(d.t["+CbP2v"]),
         buildLayout: () => [u.t]
     }),
     S = (0, l.i4)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_SIDEBAR_ITEM, {
         useTitle: () => d.intl.string(d.t["+CbP2v"]),
-        getLegacySearchKey: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? void 0 : o.H.GUILD_BOOSTING,
+        getLegacySearchKey: () => (0, a.WJ)("PremiumGuildSubscriptionsPanel") ? void 0 : o.H.GUILD_BOOSTING,
         icon: n.BoostGemIcon,
-        buildLayout: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? [T] : [A]
+        buildLayout: () => (0, a.WJ)("PremiumGuildSubscriptionsPanel") ? [T] : [A]
     })

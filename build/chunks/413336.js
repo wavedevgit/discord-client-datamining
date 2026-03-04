@@ -5,13 +5,13 @@ i.d(e, {
 var n = i(419954),
     l = i(780964),
     s = i(246161),
-    r = i(340889),
-    a = i(897208),
+    a = i(340889),
+    r = i(897208),
     u = i(985018);
 
 function o(t) {
     return (0, n.zZ)(l.X.STREAMER_MODE_CATEGORY, {
         useTitle: t ? () => u.intl.string(u.t.S5GfOW) : void 0,
-        buildLayout: () => [r.U, s.c, a.p]
+        buildLayout: () => [a.U, s.c, r.p]
     })
 }

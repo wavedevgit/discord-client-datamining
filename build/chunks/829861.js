@@ -16,7 +16,7 @@ var i = n(627968),
     A = n(775602),
     p = n(58149),
     m = n(587837),
-    g = n(201805),
+    g = n(473553),
     _ = n(964404),
     f = n(709562),
     x = n(383831),
@@ -117,7 +117,7 @@ function W(e) {
             }, [o, e, n, t])
         }(ee, et, t),
         eg = (0, P.G)();
-    if ((0, g.ns)(W?.id), null == W) return null;
+    if (null == W) return null;
     let e_ = [];
     null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => S.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
@@ -141,7 +141,9 @@ function W(e) {
             className: a()(H.iE, K[Z], e),
             ref: $,
             style: em,
-            children: [l?.(), (0, i.jsxs)("div", {
+            children: [l?.(), (0, i.jsx)(g.A, {
+                applicationId: W.id
+            }), (0, i.jsxs)("div", {
                 className: H.lq,
                 children: [ee ? null : (0, i.jsx)("div", {
                     className: H.wx,

@@ -17,12 +17,12 @@ function d(e, t, r) {
     "function" != typeof e && ((0, n.V)((0, s.NE)(e, !0), 'Expected "type" provided as the first argument to DropTarget to be a string, an array of strings, or a function that returns either given the current props. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', e), p = function() {
         return e
     }), (0, n.V)((0, s.Qd)(t), 'Expected "spec" provided as the second argument to DropTarget to be a plain object. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', t);
-    var f = (0, u.i)(t);
+    var l = (0, u.i)(t);
     return (0, n.V)("function" == typeof r, 'Expected "collect" provided as the third argument to DropTarget to be a function that returns a plain object of props to inject. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', r), (0, n.V)((0, s.Qd)(d), 'Expected "options" provided as the fourth argument to DropTarget to be a plain object when specified. Instead, received %s. Read more: http://react-dnd.github.io/react-dnd/docs/api/drop-target', r),
         function(e) {
             return (0, c.A)({
                 containerDisplayName: "DropTarget",
-                createHandler: f,
+                createHandler: l,
                 registerHandler: o.l,
                 createMonitor: function(e) {
                     return new i.b(e)

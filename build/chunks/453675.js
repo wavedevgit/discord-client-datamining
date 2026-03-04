@@ -1,6 +1,6 @@
 /** chunk id: 453675, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(64700),
@@ -19,19 +19,19 @@ let h = (0, r.D)(() => ({
     errorMessage: null
 }));
 
-function x() {
+function p() {
     let e = h.useField("isRecording"),
         t = h.useField("isUploading"),
         n = h.useField("isSuccess"),
         r = h.useField("errorMessage"),
-        x = i.useRef([]),
-        p = i.useRef(""),
+        p = i.useRef([]),
+        x = i.useRef(""),
         g = i.useCallback(() => {
             let {
                 results: e,
                 query: t
             } = d.A.getProps();
-            (x.current !== e || p.current !== t) && (x.current = e, p.current = t, (0, c._S)())
+            (p.current !== e || x.current !== t) && (p.current = e, x.current = t, (0, c._S)())
         }, []);
     i.useEffect(() => {
         if (e) return d.A.addChangeListener(g), () => d.A.removeChangeListener(g)

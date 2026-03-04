@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(186111),
     m = n(859703),
     h = n(341915),
-    x = n(921517),
-    p = n(677402),
+    p = n(921517),
+    x = n(677402),
     g = n(943849),
     _ = n(890687),
     f = n(792620),
@@ -39,7 +39,7 @@ var a = n(627968),
 n(272111);
 var P = n(419548);
 
-function L(e) {
+function U(e) {
     let {
         isExpanded: t,
         questId: n
@@ -52,7 +52,7 @@ function L(e) {
     }), null
 }
 
-function U() {
+function L() {
     return i.useEffect(() => {
         c.l.trigger()
     }, []), null
@@ -66,7 +66,7 @@ function B(e) {
     } = e, c = (0, g.L)({
         quest: t,
         location: M.rE.QUESTS_BAR
-    }), x = (0, p.H)({
+    }), p = (0, x.H)({
         location: M.rE.QUESTS_BAR
     }), B = (0, o.bG)([m.A], () => null != m.A.questEnrollmentBlockedUntil), {
         isQuestBarVisible: G,
@@ -77,7 +77,7 @@ function B(e) {
     }), V = (0, o.bG)([u.A], () => u.A.hasLayers()), W = i.useRef(null), H = i.useMemo(() => (0, f.vv)(t), [t]), K = t.id, z = t.userStatus?.enrolledAt != null, $ = (0, d.A)(z), q = t.userStatus?.completedAt != null, {
         hasError: Q,
         isLoading: Y
-    } = (0, b.Gk)(), J = i.useContext(I.Z) || x && G && !Y && !B, {
+    } = (0, b.Gk)(), J = i.useContext(I.Z) || p && G && !Y && !B, {
         hasSeenUnfurl: X,
         handleUnfurlDismissed: Z
     } = (0, D.a)(K), {
@@ -103,8 +103,8 @@ function B(e) {
     }), {
         handleCtxMenuOpened: em,
         handleCtxMenuClosed: eh,
-        handleCtxMenuSelection: ex,
-        handleGameSheetOpened: ep,
+        handleCtxMenuSelection: ep,
+        handleGameSheetOpened: ex,
         handleGameSheetClosed: eg,
         handleFocusWithoutDelay: e_,
         handleBlur: ef,
@@ -124,7 +124,7 @@ function B(e) {
     (0, w.S)({
         quest: t,
         hasAssetsError: Q,
-        isEligibleForQuests: x,
+        isEligibleForQuests: p,
         isQuestBarVisible: J,
         isVisibilityAnimationAtRest: ei,
         isLoadingAssets: Y,
@@ -139,7 +139,7 @@ function B(e) {
         eT = (0, _.fc)(t);
     if (i.useEffect(() => {
             H && (0, A.l9)()
-        }, [H]), !x || !J && ei && !Y || Q) return Q ? c.log("Not rendered due to asset error") : x || c.log("Not rendered due to ineligibility"), null;
+        }, [H]), !p || !J && ei && !Y || Q) return Q ? c.log("Not rendered due to asset error") : p || c.log("Not rendered due to ineligibility"), null;
     let ey = 70 + 78 * !!q;
     return (0, a.jsx)(v.R, {
         questOrQuests: t,
@@ -149,10 +149,10 @@ function B(e) {
         children: (e, n) => (W.current = n.current, (0, a.jsxs)("div", {
             className: P.dK,
             children: [J && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(L, {
+                children: [(0, a.jsx)(U, {
                     questId: K,
                     isExpanded: ee
-                }), (0, a.jsx)(U, {})]
+                }), (0, a.jsx)(L, {})]
             }), (0, a.jsx)(r.animated.div, {
                 "aria-hidden": !J,
                 onMouseLeave: ev,
@@ -188,8 +188,8 @@ function B(e) {
                                 isExpansionAnimationComplete: ea,
                                 onCtxMenuClose: eh,
                                 onCtxMenuOpen: em,
-                                onCtxMenuSelect: ex,
-                                onGameSheetOpen: ep,
+                                onCtxMenuSelect: ep,
+                                onGameSheetOpen: ex,
                                 onGameSheetClose: eg,
                                 collapsedHeight: ey,
                                 children: [(0, a.jsx)(y.A, {
@@ -227,7 +227,7 @@ function G(e) {
     } = e, {
         unfurlEnabled: n,
         unfurlDurationInMilliseconds: i
-    } = (0, x.sH)();
+    } = (0, p.sH)();
     return (0, a.jsx)(B, {
         quest: t,
         unfurlEnabled: n,
@@ -237,7 +237,7 @@ function G(e) {
 let F = 21552 == n.j ? function() {
     let e = (0, j.dN)();
     if (null == e) return null;
-    let t = (0, x.RL)(e.config) ? (0, a.jsx)(G, {
+    let t = (0, p.RL)(e.config) ? (0, a.jsx)(G, {
         quest: e
     }) : (0, a.jsx)(B, {
         quest: e

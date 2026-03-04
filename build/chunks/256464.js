@@ -5,12 +5,12 @@ i.d(e, {
 var n = i(379587),
     l = i(419954),
     s = i(780964),
-    r = i(518405),
-    a = i(985018);
+    a = i(518405),
+    r = i(985018);
 let u = (0, l.zZ)(s.X.CHAT_FAVORITES_CATEGORY, {
-    useTitle: () => a.intl.string(a.t.k8fFjp),
+    useTitle: () => r.intl.string(r.t.k8fFjp),
     usePredicate: () => (0, n.m)({
         location: "FavoritesCategory"
     }).enabled,
-    buildLayout: () => [r.t]
+    buildLayout: () => [a.t]
 })

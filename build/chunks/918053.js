@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(391973),
     l = i(395011),
     s = i(897720),
-    r = i(419954),
-    a = i(555528),
+    a = i(419954),
+    r = i(555528),
     u = i(780964),
     o = i(790076),
     d = i(652215);
@@ -16,10 +16,10 @@ var A = i(985018);
 function T() {
     let t = l.A.getWidgetByType(d.uss.VOICE_V3);
     if (null == t) return null;
-    let e = a.A.getWidget(t.id);
+    let e = r.A.getWidget(t.id);
     return null != e && (0, s.ZO)(e) ? e : null
 }
-let S = (0, r.sN)(u.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
+let S = (0, a.sN)(u.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
     useTitle: () => A.intl.string(A.t["X/Uyzc"]),
     minValue: o.G6 - 1,
     maxValue: o.PP,

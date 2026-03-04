@@ -1,6 +1,6 @@
 /** chunk id: 56853, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => L
 }), n(134528), n(947204);
 var a = n(627968),
     i = n(64700),
@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(765671),
     h = n(736653),
-    x = n(496885),
-    p = n(859703),
+    p = n(496885),
+    x = n(859703),
     g = n(341915),
     _ = n(245853),
     f = n(890687),
@@ -55,7 +55,7 @@ function P(e) {
     })
 }
 
-function L(e) {
+function U(e) {
     let {
         quest: t,
         errorHints: n,
@@ -65,10 +65,10 @@ function L(e) {
     } = e, {
         ref: d,
         height: c = 0
-    } = (0, m.Ay)([n]), h = t.userStatus?.completedAt != null, x = (0, f.Vn)(t), {
-        type: p,
+    } = (0, m.Ay)([n]), h = t.userStatus?.completedAt != null, p = (0, f.Vn)(t), {
+        type: x,
         hints: g
-    } = i.useMemo(() => h || x ? {
+    } = i.useMemo(() => h || p ? {
         type: 2,
         hints: []
     } : n.length > 0 ? {
@@ -80,11 +80,11 @@ function L(e) {
     } : {
         type: 2,
         hints: []
-    }, [n, h, x, s]), _ = 2 !== p, b = (0, u.zhh)({
+    }, [n, h, p, s]), _ = 2 !== x, b = (0, u.zhh)({
         opacity: +!!_,
         height: _ ? c : 0,
         config: O.N
-    }), v = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
+    }), v = 0 === x ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === x ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
     return (0, a.jsx)(r.animated.div, {
         style: {
             height: b.height,
@@ -103,7 +103,7 @@ function L(e) {
                     color: l ? "text-muted" : "always-white",
                     children: g.at(0)
                 })]
-            }), 0 === p && (0, a.jsx)(u.QWc, {
+            }), 0 === x && (0, a.jsx)(u.QWc, {
                 text: D.intl.string(D.t["yKJi+/"]),
                 onClick: () => (0, C.i)({
                     quest: t,
@@ -117,7 +117,7 @@ function L(e) {
     })
 }
 
-function U(e) {
+function L(e) {
     let {
         quest: t,
         isHovering: n,
@@ -127,7 +127,7 @@ function U(e) {
         onCtxMenuClose: C,
         onCtxMenuOpen: E,
         onCtxMenuSelect: O,
-        sourceQuestContent: U
+        sourceQuestContent: L
     } = e, B = (0, j.IO)(t), G = (0, h.Ay)(), F = ((0, c.Mw)(G) ? w.NJ8.DARK : w.NJ8.LIGHT) === w.NJ8.DARK, V = (0, f.LS)(t), W = t.userStatus?.claimedAt != null, H = (0, f.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
@@ -137,16 +137,16 @@ function U(e) {
         B && (0, N.d5)({
             quest: t,
             questContent: g.uF.QUEST_HOME_DESKTOP,
-            sourceQuestContent: U,
+            sourceQuestContent: L,
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
-    }, [B, t, U]), Y = (0, o.bG)([p.A], () => p.A.getQuestHomeHeroConfig()), J = i.useMemo(() => null != Y && (0, A.I0)(Y, t.id), [Y, t.id]), X = _.wK.useConfig({
+    }, [B, t, L]), Y = (0, o.bG)([x.A], () => x.A.getQuestHomeHeroConfig()), J = i.useMemo(() => null != Y && (0, A.I0)(Y, t.id), [Y, t.id]), X = _.wK.useConfig({
         location: R.rE.QUESTS_CARD
     }), Z = X.enabled && X.variant === _.dF.NEXT_TO_CONTEXT_MENU_CTA, ee = (0, f.do)({
         quest: t,
         content: g.uF.QUEST_HOME_DESKTOP,
         ctaContent: b.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_TWO,
-        sourceQuestContent: U
+        sourceQuestContent: L
     });
     return (0, a.jsxs)("div", {
         className: M.kL,
@@ -216,7 +216,7 @@ function U(e) {
                         hideLearnMore: !0,
                         shouldShowDisclosure: !0,
                         showShareLink: !0,
-                        sourceQuestContent: U,
+                        sourceQuestContent: L,
                         children: e => (0, a.jsx)(u.DUT, {
                             ...e,
                             className: M.iI,
@@ -249,7 +249,7 @@ function U(e) {
                             variant: "text-sm/medium",
                             color: q,
                             children: D.intl.string(D.t.VAbKhK)
-                        }), (0, a.jsx)(x.A, {
+                        }), (0, a.jsx)(p.A, {
                             className: M.w$,
                             size: 16,
                             color: u.LU0.unsafe_rawColors.GREEN_360.css,
@@ -273,12 +273,12 @@ function U(e) {
                         })
                     })]
                 })]
-            }), (0, a.jsx)(L, {
+            }), (0, a.jsx)(U, {
                 quest: t,
                 errorHints: s,
                 warningHints: r,
                 isDarkTheme: F,
-                sourceQuestContent: U
+                sourceQuestContent: L
             })]
         })]
     })

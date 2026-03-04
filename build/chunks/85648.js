@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(934551),
     l = i(419954),
     s = i(933297),
-    r = i(780964),
-    a = i(358776),
+    a = i(780964),
+    r = i(358776),
     u = i(368631),
     o = i(227542),
     d = i(274835),
@@ -17,11 +17,11 @@ var n = i(934551),
     g = i(114074),
     c = i(413336),
     _ = i(985018);
-let I = (0, l.t_)(r.X.DISPLAY_PANEL, {
+let I = (0, l.t_)(a.X.DISPLAY_PANEL, {
         useTitle: () => _.intl.string(_.t.DVatCa),
         buildLayout: () => [g.K, T.S, S.X, A.S, E.f, (0, c.$)(!0), d.J]
     }),
-    C = (0, l.i4)(r.X.DISPLAY_SIDEBAR_ITEM, {
+    C = (0, l.i4)(a.X.DISPLAY_SIDEBAR_ITEM, {
         useTitle: () => _.intl.string(_.t.DVatCa),
         icon: n.PaintPaletteIcon,
         trailing: {
@@ -29,7 +29,7 @@ let I = (0, l.t_)(r.X.DISPLAY_PANEL, {
             getDismissibleContentTypes: u.p_,
             stronglyDiscouragedBadgeComponent: u.AW
         },
-        usePredicate: () => (0, a.bp)("DisplaySidebarItem"),
+        usePredicate: () => (0, r.bp)("DisplaySidebarItem"),
         useMenu: o.A,
         buildLayout: () => [I]
     })

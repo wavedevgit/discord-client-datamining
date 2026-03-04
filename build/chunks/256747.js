@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(574381),
     l = i(311907),
     s = i(827343),
-    r = i(480862),
-    a = i(729410),
+    a = i(480862),
+    r = i(729410),
     u = i(419954),
     o = i(430452),
     d = i(780964),
@@ -16,10 +16,10 @@ let T = (0, u.zD)(d.X.VOICE_AND_VIDEO_OPENH264, {
     useSubtitle: () => A.intl.string(A.t.cQfwyY),
     usePredicate: function() {
         if (!(0, n.j9)()) return !1;
-        let t = (0, a.b)({
+        let t = (0, r.b)({
                 location: "OpenH264Setting"
             }),
-            e = (0, r.n)({
+            e = (0, a.n)({
                 location: "OpenH264Setting"
             });
         return t.enabled || e.enabled

@@ -5,15 +5,15 @@ i.d(e, {
 var n = i(311907),
     l = i(264686),
     s = i(100767),
-    r = i(419954),
-    a = i(803224),
+    a = i(419954),
+    r = i(803224),
     u = i(780964),
     o = i(652215),
     d = i(985018);
-let A = (0, r.Qx)(u.X.TEXT_TO_SPEECH_NOTIFICATIONS, {
+let A = (0, a.Qx)(u.X.TEXT_TO_SPEECH_NOTIFICATIONS, {
     useTitle: () => d.intl.string(d.t.JZxxGx),
     useSubtitle: () => d.intl.string(d.t.HDLtJl),
-    useValue: () => (0, n.bG)([a.A], () => a.A.getTTSType()),
+    useValue: () => (0, n.bG)([r.A], () => r.A.getTTSType()),
     setValue: t => l.default.setTTSType(t),
     useOptions: () => [{
         name: d.intl.string(d.t.B1AGeJ),

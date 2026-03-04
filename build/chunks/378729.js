@@ -1,6 +1,6 @@
 /** chunk id: 378729, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    e8: () => r
+    e8: () => a
 });
 var n = i(600975),
     l = i(428835);
@@ -19,7 +19,7 @@ let s = (0, n.C)({
             }
         }]
     }),
-    r = t => (0, l.u5)(s, {
+    a = t => (0, l.u5)(s, {
         ...t,
         autoTrackExposure: !1
     })

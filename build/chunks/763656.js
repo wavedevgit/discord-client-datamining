@@ -1,12 +1,12 @@
 /** chunk id: 763656, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    k: () => a
+    k: () => r
 });
 var n = i(419954),
     l = i(780964),
     s = i(790076),
-    r = i(985018);
-let a = (0, n.E2)(l.X.OVERLAY_LEGACY_SETTING, {
+    a = i(985018);
+let r = (0, n.E2)(l.X.OVERLAY_LEGACY_SETTING, {
     Component: s.fE,
-    useSearchTerms: () => [r.intl.string(r.t.BfFpW1)]
+    useSearchTerms: () => [a.intl.string(a.t.BfFpW1)]
 })

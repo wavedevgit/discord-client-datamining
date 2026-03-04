@@ -5,19 +5,19 @@ i.d(e, {
 var n = i(627968),
     l = i(934551),
     s = i(734066),
-    r = i(953336),
-    a = i(419954),
+    a = i(953336),
+    r = i(419954),
     u = i(780964),
     o = i(467758),
     d = i(269420),
     A = i(985018);
-let T = (0, a.t_)(u.X.CLIPS_PANEL, {
+let T = (0, r.t_)(u.X.CLIPS_PANEL, {
         useTitle: () => A.intl.string(A.t.z2jK6X),
-        useBadge: () => (0, n.jsx)(r.A, {}),
+        useBadge: () => (0, n.jsx)(a.A, {}),
         usePredicate: s.sw,
         buildLayout: () => [d.K, o.W]
     }),
-    S = (0, a.i4)(u.X.CLIPS_SIDEBAR_ITEM, {
+    S = (0, r.i4)(u.X.CLIPS_SIDEBAR_ITEM, {
         useTitle: () => A.intl.string(A.t.z2jK6X),
         icon: l.ClipsIcon,
         buildLayout: () => [T]

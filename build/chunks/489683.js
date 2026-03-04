@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(643501),
     F = n(857253),
     Y = n(41261),
-    q = n(880144),
-    W = n(338771),
+    W = n(880144),
+    q = n(338771),
     K = n(421838),
     z = n(891540),
     $ = n(164956),
@@ -98,8 +98,8 @@ var i = n(627968),
     eH = n(806931),
     eF = n(49999),
     eY = n(897513),
-    eq = n(509381),
-    eW = n(985018),
+    eW = n(509381),
+    eq = n(985018),
     eK = n(255259);
 let ez = {
     offset: {
@@ -136,12 +136,12 @@ function eQ() {
         systemMicrophoneMode: ey.Ay.getSystemMicrophoneMode()
     })), l = !(0, X.A)(!0, n, {
         location: "NoiseCancellationPopout"
-    }), a = (0, c.bG)([ey.Ay], () => ey.Ay.getActiveInputProfile()), s = null != a && a !== eq.m.CUSTOM, o = eW.intl.string(eW.t.uKdWn6), d = eW.intl.string(eW.t.uKdWn6);
-    return l ? (o = eW.intl.string(eW.t.mXZgC9), d = eW.intl.format(eW.t.F6lrb4, {
+    }), a = (0, c.bG)([ey.Ay], () => ey.Ay.getActiveInputProfile()), s = null != a && a !== eW.m.CUSTOM, o = eq.intl.string(eq.t.uKdWn6), d = eq.intl.string(eq.t.uKdWn6);
+    return l ? (o = eq.intl.string(eq.t.mXZgC9), d = eq.intl.format(eq.t.F6lrb4, {
         onSettingsClick: () => {
             ey.Ay.getMediaEngine().showSystemCaptureConfigurationUI("microphone_modes")
         }
-    })) : s && (o = eW.intl.formatToPlainString(eW.t["/tqmfM"], {
+    })) : s && (o = eq.intl.formatToPlainString(eq.t["/tqmfM"], {
         enabled: t ? "true" : "false",
         inputProfile: a
     })), (0, i.jsxs)("div", {
@@ -153,7 +153,7 @@ function eQ() {
             align: "right",
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(I.dOG, {
-                    label: eW.intl.string(eW.t["WGWHv/"]),
+                    label: eq.intl.string(eq.t["WGWHv/"]),
                     checked: t && !l,
                     disabled: s || l,
                     onChange: () => f.A.setNoiseCancellation(!t, {
@@ -165,15 +165,15 @@ function eQ() {
             variant: "text-sm/normal",
             children: d
         }), (0, i.jsx)(D.A, {
-            title: eW.intl.string(eW.t.JdUas1),
+            title: eq.intl.string(eq.t.JdUas1),
             notchBackground: D.V.BLACK,
-            buttonTest: eW.intl.string(eW.t["sG+MGg"]),
-            buttonStop: eW.intl.string(eW.t.Yp3SbJ),
+            buttonTest: eq.intl.string(eq.t["sG+MGg"]),
+            buttonStop: eq.intl.string(eq.t.Yp3SbJ),
             location: {
                 section: eB.JJy.NOISE_CANCELLATION_POPOUT
             }
         }), (0, i.jsx)(I.D0$, {
-            label: eW.intl.string(eW.t.k6h1F4),
+            label: eq.intl.string(eq.t.k6h1F4),
             children: (0, i.jsxs)(k.A, {
                 justify: k.A.Justify.BETWEEN,
                 className: eK.__invalid_footer,
@@ -187,7 +187,7 @@ function eQ() {
                     href: eM.A.getArticleURL(eB.MVz.NOISE_SUPPRESSION),
                     className: eK.W,
                     onClick: e => e$(e),
-                    children: eW.intl.string(eW.t.hvVgAZ)
+                    children: eq.intl.string(eq.t.hvVgAZ)
                 })]
             })
         })]
@@ -197,7 +197,7 @@ function eQ() {
 function eX() {
     let {
         parentAnalyticsLocation: e
-    } = (0, P.Ay)(), t = (0, c.bG)([ec.A], () => ec.A.isMuted()), n = t ? eW.intl.string(eW.t.ScHlfl) : eW.intl.string(eW.t.zqxfrf);
+    } = (0, P.Ay)(), t = (0, c.bG)([ec.A], () => ec.A.isMuted()), n = t ? eq.intl.string(eq.t.ScHlfl) : eq.intl.string(eq.t.zqxfrf);
     return (0, i.jsx)(eU.A, {
         tooltipText: n,
         icon: t ? I.CIB : I.T7G,
@@ -306,7 +306,7 @@ function eZ(e) {
                             focusProps: ez,
                             children: S ? u : (0, i.jsxs)(k.A, {
                                 align: k.A.Align.CENTER,
-                                children: [u, eW.intl.string(eW.t.FlNoSV)]
+                                children: [u, eq.intl.string(eq.t.FlNoSV)]
                             })
                         })
                     })
@@ -428,7 +428,7 @@ function e0(e) {
         onRequestClose: C,
         renderPopout: T,
         children: () => (0, i.jsx)(g.m_, {
-            text: eW.intl.string(eW.t.PEjaCx),
+            text: eq.intl.string(eq.t.PEjaCx),
             targetElementRef: n,
             shouldShow: !_,
             onTooltipShow: d,
@@ -481,9 +481,9 @@ function e1(e) {
         }, [f, n.id, A]),
         S = m.find(e => e.ownerId === h?.id),
         v = (0, ep.T)(n, h, m);
-    t = null == S ? l ? N : eE.A : () => (0, W.A)(S);
+    t = null == S ? l ? N : eE.A : () => (0, q.A)(S);
     let y = null != S || v.length > 0,
-        b = p ? eW.intl.string(eW.t.fjBNo1) : eW.intl.string(eW.t.uQn9B8),
+        b = p ? eq.intl.string(eq.t.fjBNo1) : eq.intl.string(eq.t.uQn9B8),
         O = C || s || T,
         L = null != S,
         {
@@ -551,7 +551,7 @@ function e1(e) {
                     focusProps: ez,
                     children: O ? M : (0, i.jsxs)(k.A, {
                         align: k.A.Align.CENTER,
-                        children: [M, eW.intl.string(eW.t["r0/+v7"])]
+                        children: [M, eq.intl.string(eq.t["r0/+v7"])]
                     })
                 })
             })
@@ -637,13 +637,13 @@ class e7 extends r.PureComponent {
             voiceStates: a
         } = this.props;
         return null != r ? null : l?.isGuildStageVoice() && null == a.find(e => e.user.id === eN.default.getId() && (0, eu.eY)(e.voiceState) === eu.zF.ON_STAGE) && (0, ed.Zl)(l.id) ? (0, i.jsx)(eX, {}) : !n && t ? (0, i.jsx)(g.m_, {
-            text: eW.intl.string(eW.t["i+SO/U"]),
+            text: eq.intl.string(eq.t["i+SO/U"]),
             forceOpen: !0,
             children: (0, i.jsx)(eU.A, {
                 tooltipText: null,
                 disabled: !0,
                 icon: I.mXj,
-                "aria-label": eW.intl.string(eW.t["i+SO/U"])
+                "aria-label": eq.intl.string(eq.t["i+SO/U"])
             })
         }) : (0, i.jsx)(I.YNO, {
             targetElementRef: this.krispButtonRef,
@@ -725,15 +725,15 @@ class e7 extends r.PureComponent {
         children: [(0, i.jsx)(I.Heading, {
             className: eK.oN,
             variant: "heading-md/semibold",
-            children: eW.intl.string(eW.t["ba/rL2"])
+            children: eq.intl.string(eq.t["ba/rL2"])
         }), (0, i.jsx)(I.Text, {
             className: eK.uf,
             variant: "text-sm/normal",
-            children: eW.intl.string(eW.t.Ne1Eew)
+            children: eq.intl.string(eq.t.Ne1Eew)
         }), (0, i.jsx)(I.Button, {
             fullWidth: !0,
             onClick: this.handleCloseVoicePanelIntroduction,
-            text: eW.intl.string(eW.t.shaBeH),
+            text: eq.intl.string(eq.t.shaBeH),
             focusProps: ez
         })]
     });
@@ -798,7 +798,7 @@ function e6(e) {
         onMouseLeave: () => {
             c.onMouseLeave()
         },
-        tooltipText: n ? null : eW.intl.string(eW.t.vFiCSx),
+        tooltipText: n ? null : eq.intl.string(eq.t.vFiCSx),
         icon: (0, i.jsx)(d, {
             size: "refresh_sm"
         })
@@ -831,7 +831,7 @@ let e9 = (0, N.A)(function(e) {
                 location: "RTCConnection"
             }),
             noiseCancellationError: ey.Ay.isNoiseCancellationError(),
-            canGoLive: (0, q.A)(ey.Ay)
+            canGoLive: (0, W.A)(ey.Ay)
         })),
         h = (0, c.bG)([ey.Ay, z.A], () => z.A.hasHotspot(eY._.VOICE_PANEL_INTRODUCTION) && (0, ew.mv)(l) && !ey.Ay.isInteractionRequired() && !o?.isGuildStageVoice()),
         _ = (0, c.bG)([eP.A], () => null != a && eP.A.hasVideo(a), [a]),
@@ -894,14 +894,14 @@ let e9 = (0, N.A)(function(e) {
                 children: [(0, i.jsx)(I.Text, {
                     variant: "text-sm/normal",
                     className: eK.u0,
-                    children: E ? eW.intl.string(eW.t.efjuQJ) : eW.intl.string(eW.t.br8H2N)
+                    children: E ? eq.intl.string(eq.t.efjuQJ) : eq.intl.string(eq.t.br8H2N)
                 }), (0, i.jsx)(I.Button, {
                     size: "sm",
                     fullWidth: !0,
                     onClick: () => {
                         y(!0)
                     },
-                    text: eW.intl.string(eW.t.WAI6xu),
+                    text: eq.intl.string(eq.t.WAI6xu),
                     focusProps: ez
                 })]
             }) : null]

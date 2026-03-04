@@ -17,8 +17,8 @@ let h = e => {
         isExpanded: t,
         contentLocation: n,
         progressBarRef: h,
-        percentComplete: x,
-        activeScreen: p,
+        percentComplete: p,
+        activeScreen: x,
         popoutTargetElementRef: g
     } = e, {
         quest: _,
@@ -27,7 +27,7 @@ let h = e => {
     } = i.useContext(u.T), v = (0, r.VX)(_), j = (0, r.tH)({
         quest: _,
         isExpanded: t,
-        activeScreen: p,
+        activeScreen: x,
         sourceQuestContent: l.uF.QUEST_BAR_V2,
         popoutTargetElementRef: g,
         onGameSheetOpened: f,
@@ -42,7 +42,7 @@ let h = e => {
             children: e => (0, a.jsx)(c.A, {
                 ref: e,
                 style: "small",
-                percentComplete: x,
+                percentComplete: p,
                 size: 42,
                 children: (0, a.jsx)(o.A, {
                     fullWidth: !0,

@@ -1,12 +1,12 @@
 /** chunk id: 197614, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    B: () => a
+    B: () => r
 });
 var n = i(419954),
     l = i(780964),
     s = i(790076),
-    r = i(985018);
-let a = (0, n.E2)(l.X.OVERLAY_KEYBIND_SETTING, {
+    a = i(985018);
+let r = (0, n.E2)(l.X.OVERLAY_KEYBIND_SETTING, {
     Component: s.Gk,
-    useSearchTerms: () => [r.intl.string(r.t.VsAZcC)]
+    useSearchTerms: () => [a.intl.string(a.t.VsAZcC)]
 })

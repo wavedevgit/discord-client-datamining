@@ -5,9 +5,9 @@ n.d(e, {
 var a = n(627968);
 n(64700);
 var r = n(397927),
-    i = n(900549),
+    l = n(900549),
     s = n(985018),
-    l = n(117816);
+    i = n(117816);
 
 function o(t) {
     let {
@@ -19,7 +19,7 @@ function o(t) {
         transitionState: o,
         onClose: n,
         graphic: {
-            src: l.A,
+            src: i.A,
             type: "image"
         },
         gradientColor: "blue",
@@ -29,7 +29,7 @@ function o(t) {
             text: s.intl.string(s.t["/g10LC"]),
             onClick: n
         }],
-        children: (0, a.jsx)(i.w, {
+        children: (0, a.jsx)(l.w, {
             url: e
         })
     })

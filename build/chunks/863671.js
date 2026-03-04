@@ -6,8 +6,8 @@ i.d(e, {
 var n = i(64700),
     l = i(934551),
     s = i(554146),
-    r = i(200921),
-    a = i(419954),
+    a = i(200921),
+    r = i(419954),
     u = i(933297),
     o = i(780964),
     d = i(358776),
@@ -16,10 +16,10 @@ var n = i(64700),
     S = i(766761),
     E = i(531525),
     g = i(985018);
-let c = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
+let c = (0, r.zZ)(o.X.SESSIONS_CATEGORY, {
         buildLayout: () => [T.I, S.A],
-        initialize: () => ((0, r.GY)(), () => {
-            (0, r.ZQ)()
+        initialize: () => ((0, a.GY)(), () => {
+            (0, a.ZQ)()
         }),
         useInlineNotice: function() {
             return n.useMemo(() => ({
@@ -28,20 +28,20 @@ let c = (0, a.zZ)(o.X.SESSIONS_CATEGORY, {
             }), [])
         }
     }),
-    _ = (0, a.t_)(o.X.SESSIONS_PANEL, {
+    _ = (0, r.t_)(o.X.SESSIONS_PANEL, {
         usePredicate: () => !(0, d.dk)("LegacySessionsPanel"),
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
         StronglyDiscouragedCustomComponent: A.Ay,
         buildLayout: () => []
     }),
-    I = (0, a.t_)(o.X.SESSIONS_PANEL, {
+    I = (0, r.t_)(o.X.SESSIONS_PANEL, {
         usePredicate: () => (0, d.dk)("SessionsPanel"),
         useTitle: () => (0, d._A)("SessionsPanel") ? g.intl.string(g.t.mEndXM) : g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
         buildLayout: () => [c]
     }),
-    C = (0, a.i4)(o.X.SESSIONS_SIDEBAR_ITEM, {
+    C = (0, r.i4)(o.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         getLegacySearchKey: () => (0, d.WJ)("SessionsPanel") ? void 0 : E.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
         icon: l.LaptopPhoneIcon,

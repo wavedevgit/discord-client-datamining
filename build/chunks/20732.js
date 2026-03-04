@@ -18,8 +18,8 @@ function u(e) {
         isEligibleForQuests: u,
         isQuestBarVisible: m,
         isVisibilityAnimationAtRest: h,
-        isLoadingAssets: x,
-        currentQuestVisibleReason: p,
+        isLoadingAssets: p,
+        currentQuestVisibleReason: x,
         shouldShowQuestBar: g,
         isQuestEnrollmentBlocked: _,
         impressionRef: f
@@ -52,18 +52,18 @@ function u(e) {
             sourceQuestContent: r.uF.QUEST_BAR_V2
         })
     }, [u, f, t.id]), a.useEffect(() => {
-        m || !h || x || (0, o.av)({
+        m || !h || p || (0, o.av)({
             questId: t.id,
             event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
             properties: {
                 content_id: r.uF.QUEST_BAR,
                 content_name: (0, d.jO)(r.uF.QUEST_BAR),
-                reason: p,
+                reason: x,
                 impression_id: f.current?.getId()
             },
             sourceQuestContent: r.uF.QUEST_BAR_V2
         })
-    }, [m, h, x, t.id, p, f]), a.useEffect(() => {
-        (!g || _) && l.A.clearTracking(), m && h && !x && !n && u && l.A.stopTracking(t.id)
-    }, [g, _, m, h, x, n, u, t.id])
+    }, [m, h, p, t.id, x, f]), a.useEffect(() => {
+        (!g || _) && l.A.clearTracking(), m && h && !p && !n && u && l.A.stopTracking(t.id)
+    }, [g, _, m, h, p, n, u, t.id])
 }

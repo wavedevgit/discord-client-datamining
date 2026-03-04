@@ -6,8 +6,8 @@ var n = i(627968);
 i(64700);
 var l = i(311907),
     s = i(990078),
-    r = i(397927),
-    a = i(964486),
+    a = i(397927),
+    r = i(964486),
     u = i(745317),
     o = i(430452),
     d = i(948641),
@@ -19,7 +19,7 @@ function S() {
         e = (0, l.bG)([o.Ay], () => o.Ay.getVideoDeviceId()),
         i = d.A.useField("previewEnabled"),
         S = (0, l.bG)([o.Ay], () => o.Ay.isVideoAvailable());
-    return ((0, a.l0)(() => {
+    return ((0, r.l0)(() => {
         d.A.setState({
             previewEnabled: !1
         })
@@ -38,7 +38,7 @@ function S() {
         className: T.T,
         children: (0, n.jsx)(s.m, {
             text: S ? null : A.intl.string(A.t["8jSzSe"]),
-            children: (0, n.jsx)(r.Button, {
+            children: (0, n.jsx)(a.Button, {
                 variant: "primary",
                 text: A.intl.string(A.t.JIf4v7),
                 onClick: () => d.A.setState({

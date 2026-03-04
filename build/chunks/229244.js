@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(668824),
     m = n(397927),
     h = n(341915),
-    x = n(92246),
-    p = n(792620),
+    p = n(92246),
+    x = n(792620),
     g = n(241124),
     _ = n(947926),
     f = n(717695),
@@ -37,7 +37,7 @@ let D = ["png", "gif", "webp"],
     M = [...D, "jpg", "jpeg"],
     P = Array.from(new Set([...M, "gif", "mp4", "webm"]));
 
-function L() {
+function U() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         {
             streamProgressSeconds: t = 0,
@@ -58,12 +58,12 @@ function L() {
         progress: {}
     }
 }
-let U = "1193992107035983872",
+let L = "1193992107035983872",
     B = {
-        id: U,
+        id: L,
         preview: !0,
         config: {
-            id: U,
+            id: L,
             configVersion: 2,
             startsAt: "2024-01-01T00:00:00+00:00",
             expiresAt: "2030-01-01T00:00:00+00:00",
@@ -138,7 +138,7 @@ function G() {
             ...e,
             preview: !0
         })
-    }, []), [u, U] = i.useState(k.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
+    }, []), [u, L] = i.useState(k.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
         configVersion: 2
     }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -267,7 +267,7 @@ function G() {
     }
 
     function X() {
-        (0, x.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, p.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
@@ -287,11 +287,11 @@ function G() {
             className: w.OA,
             children: (0, a.jsx)(E.A, {
                 onSelect: function(e) {
-                    K(e), null == e || (U(function(e) {
+                    K(e), null == e || (L(function(e) {
                         if (null == e.userStatus) return k.b.UNENROLLED;
                         if (null != e.userStatus.claimedAt) return k.b.CLAIMED;
                         if (null != e.userStatus.completedAt) return k.b.COMPLETED_100;
-                        let t = (0, p.Yh)(e),
+                        let t = (0, x.Yh)(e),
                             n = t.progressSeconds,
                             a = t.targetSeconds;
                         return n / a >= 1 ? k.b.COMPLETED_100 : n / a >= .75 ? k.b.COMPLETED_75 : n / a >= .5 ? k.b.COMPLETED_50 : n / a >= .25 ? k.b.COMPLETED_25 : k.b.ENROLLED
@@ -515,7 +515,7 @@ function G() {
                 children: (0, a.jsx)(I.A, {})
             }), (0, a.jsx)(k.A, {
                 onChange: function(e) {
-                    switch (U(e), e) {
+                    switch (L(e), e) {
                         case k.b.UNENROLLED:
                             c({
                                 ...t,
@@ -525,7 +525,7 @@ function G() {
                         case k.b.ENROLLED:
                             c({
                                 ...t,
-                                userStatus: L({
+                                userStatus: U({
                                     enrolledAt: new Date().toISOString()
                                 })
                             });
@@ -533,7 +533,7 @@ function G() {
                         case k.b.COMPLETED_25:
                             c({
                                 ...t,
-                                userStatus: L({
+                                userStatus: U({
                                     enrolledAt: new Date().toISOString(),
                                     streamProgressSeconds: .25 * Z
                                 })
@@ -542,7 +542,7 @@ function G() {
                         case k.b.COMPLETED_50:
                             c({
                                 ...t,
-                                userStatus: L({
+                                userStatus: U({
                                     enrolledAt: new Date().toISOString(),
                                     streamProgressSeconds: .5 * Z
                                 })
@@ -551,7 +551,7 @@ function G() {
                         case k.b.COMPLETED_75:
                             c({
                                 ...t,
-                                userStatus: L({
+                                userStatus: U({
                                     enrolledAt: new Date().toISOString(),
                                     streamProgressSeconds: .75 * Z
                                 })
@@ -560,7 +560,7 @@ function G() {
                         case k.b.COMPLETED_100:
                             c({
                                 ...t,
-                                userStatus: L({
+                                userStatus: U({
                                     completedAt: new Date().toISOString(),
                                     enrolledAt: new Date().toISOString(),
                                     streamProgressSeconds: Z
@@ -570,7 +570,7 @@ function G() {
                         case k.b.CLAIMED:
                             c({
                                 ...t,
-                                userStatus: L({
+                                userStatus: U({
                                     claimedAt: new Date().toISOString(),
                                     completedAt: new Date().toISOString(),
                                     enrolledAt: new Date().toISOString(),

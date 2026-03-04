@@ -13,8 +13,8 @@ var a = n(582754),
     u = n(915880),
     m = n(203683),
     h = n(187446),
-    x = n(935495),
-    p = n(651714),
+    p = n(935495),
+    x = n(651714),
     g = n(416307),
     _ = n(497783),
     f = n(39579),
@@ -83,11 +83,11 @@ let T = {
             light: j.A
         },
         [r.Ac.PREMIUM_TENURE_60_MONTH]: {
-            dark: x.A,
+            dark: p.A,
             light: A.A
         },
         [r.Ac.PREMIUM_TENURE_72_MONTH]: {
-            dark: p.A,
+            dark: x.A,
             light: C.A
         }
     };

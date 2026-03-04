@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(574381),
     l = i(311907),
     s = i(314116),
-    r = i(827343),
-    a = i(77729),
+    a = i(827343),
+    r = i(77729),
     u = i(419954),
     o = i(430452),
     d = i(780964),
@@ -23,10 +23,10 @@ let T = (0, u.zD)(d.X.STREAMING_OS_MENU_SCREEN_CAPTURE, {
             subtitle: A.intl.string(A.t.uBd6JW),
             variant: "primary",
             onConfirm: () => {
-                r.A.setUseSystemScreensharePicker(t), a.A.app.relaunch()
+                a.A.setUseSystemScreensharePicker(t), r.A.app.relaunch()
             },
             confirmText: A.intl.string(A.t.BddRzS)
-        }) : r.A.setUseSystemScreensharePicker(t)
+        }) : a.A.setUseSystemScreensharePicker(t)
     },
     usePredicate: function() {
         return (0, l.bG)([o.Ay], () => o.Ay.supportsSystemScreensharePicker() && (0, n.cX)())

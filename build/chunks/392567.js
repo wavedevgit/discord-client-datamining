@@ -1,12 +1,11 @@
 /** chunk id: 392567, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => r,
+    A: () => o,
     M: () => a
 });
 var i = n(627968);
 n(64700);
-var s = n(397927),
+var r = n(397927),
     l = n(985018);
 
 function a(e) {
@@ -20,12 +19,12 @@ function a(e) {
     })
 }
 
-function r(e) {
+function o(e) {
     let {
         muteConfig: t,
         className: n
     } = e, l = a(t);
-    return null != l ? (0, i.jsx)(s.Text, {
+    return null != l ? (0, i.jsx)(r.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         className: n,

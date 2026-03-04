@@ -1,6 +1,6 @@
 /** chunk id: 213750, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => W
+    i: () => q
 });
 var i = n(627968),
     r = n(64700),
@@ -294,7 +294,7 @@ let w = e => {
             })]
         })
     },
-    q = e => {
+    W = e => {
         let {
             dismissContent: t,
             ...n
@@ -311,7 +311,7 @@ let w = e => {
             })]
         })
     },
-    W = e => {
+    q = e => {
         let {
             selected: t,
             onClick: n,
@@ -350,7 +350,7 @@ let w = e => {
                     displayOptions: a
                 })
         }
-        return d === u.M.WISHLIST_SHOP_BUTTON_POPOVER ? (0, i.jsx)(q, {
+        return d === u.M.WISHLIST_SHOP_BUTTON_POPOVER ? (0, i.jsx)(W, {
             ...A,
             dismissContent: c
         }) : (0, i.jsx)(G, {

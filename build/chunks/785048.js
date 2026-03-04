@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(419954),
     l = i(954571),
     s = i(975571),
-    r = i(115063),
-    a = i(253932),
+    a = i(115063),
+    r = i(253932),
     u = i(780964),
     o = i(612025),
     d = i(112469),
@@ -21,12 +21,12 @@ let g = (0, n.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
     }),
     useValue: () => {
         let t = (0, d.Tx)();
-        return !a.pE.useSetting().includes(t)
+        return !r.pE.useSetting().includes(t)
     },
     setValue: t => {
         let e = o.xk.getState().selectedGuildId,
-            i = (0, r.CN)();
-        t ? i.delete(e) : i.add(e), a.pE.updateSetting([...i]), l.default.track(S.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+            i = (0, a.CN)();
+        t ? i.delete(e) : i.add(e), r.pE.updateSetting([...i]), l.default.track(S.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: A.m.RESTRICT_GUILD_ACTIVITY_JOIN_TOGGLE,
             ingress: T.bf.USER_SETTINGS_PRIVACY_SAFETY,
             guild_id: e

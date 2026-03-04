@@ -5,15 +5,15 @@ i.d(e, {
 var n = i(652961),
     l = i(419954),
     s = i(253932),
-    r = i(780964),
-    a = i(358776),
+    a = i(780964),
+    r = i(358776),
     u = i(823894),
     o = i(985018);
-let d = (0, l.Qx)(r.X.ANIMATE_STICKERS, {
-    useTitle: () => (0, a.bp)("AnimateStickers") ? o.intl.string(o.t.sBHIh0) : o.intl.string(o.t["6NtAuJ"]),
+let d = (0, l.Qx)(a.X.ANIMATE_STICKERS, {
+    useTitle: () => (0, r.bp)("AnimateStickers") ? o.intl.string(o.t.sBHIh0) : o.intl.string(o.t["6NtAuJ"]),
     useSubtitle: () => {
         let t = (0, n.F)("animateStickers"),
-            e = (0, a.bp)("AnimateStickers");
+            e = (0, r.bp)("AnimateStickers");
         return t ?? (e ? void 0 : o.intl.string(o.t.GRa6U7))
     },
     useOptions: () => [{

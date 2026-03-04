@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(490358),
     F = n(961973),
     Y = n(140354),
-    q = n(551036),
-    W = n(46533),
+    W = n(551036),
+    q = n(46533),
     K = n(467627),
     z = n(379610),
     $ = n(920113),
@@ -134,13 +134,13 @@ let eU = (0, c.Fe)({
         name: "ChannelsAndRolesPage",
         renderLoader: eG
     }),
-    eq = (0, c.Fe)({
+    eW = (0, c.Fe)({
         createPromise: () => Promise.all([n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("16939"), n.e("39579")]).then(n.bind(n, 57858)),
         webpackId: 57858,
         name: "GuildOnboardingPage",
         renderLoader: eG
     }),
-    eW = (0, c.Fe)({
+    eq = (0, c.Fe)({
         createPromise: () => Promise.all([n.e("63379"), n.e("88615")]).then(n.bind(n, 126076)),
         webpackId: 126076,
         name: "GuildPowerupsPage",
@@ -189,7 +189,7 @@ let eU = (0, c.Fe)({
                 return I ? (0, i.jsx)(ek, {
                     guildId: l,
                     initialTab: D.B.GUILD_ROLE_SUBSCRIPTIONS
-                }) : (0, i.jsx)(q.A, {
+                }) : (0, i.jsx)(W.A, {
                     guildId: l
                 });
             case eP.VV.SERVER_MONETIZATION_ONBOARDING:
@@ -220,7 +220,7 @@ let eU = (0, c.Fe)({
                     selectedSection: eD.qC.BROWSE
                 });
             case eP.VV.GUILD_ONBOARDING:
-                return (0, i.jsx)(eq, {
+                return (0, i.jsx)(eW, {
                     guildId: l
                 });
             case eP.VV.CUSTOMIZE_COMMUNITY:
@@ -233,7 +233,7 @@ let eU = (0, c.Fe)({
                     guildId: l
                 });
             case eP.VV.GUILD_BOOSTS:
-                return (0, i.jsx)(eW, {
+                return (0, i.jsx)(eq, {
                     guildId: l,
                     powerupListingId: n.get("powerupId") ?? n.get("powerupSkuId")
                 });
@@ -273,7 +273,7 @@ let eU = (0, c.Fe)({
         }), r = (0, A.bG)([ex.A], () => t ?? ex.A.getChannelId(e));
         return window.location.pathname.startsWith(eR.BVt.CHANNEL(eR.gNP)) ? ("sidebar" !== n && (0, eI.bG)(eT.A.defaultRoute), (0, i.jsx)(el.A, {
             includePanelSpacing: !0
-        })) : window.location.pathname.startsWith(eR.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eR.BVt.GUILD_DISCOVERY) || (0, eu.r$)() ? (0, i.jsx)(V.A, {}) : null != e ? (0, i.jsx)(W.A, {
+        })) : window.location.pathname.startsWith(eR.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eR.BVt.GUILD_DISCOVERY) || (0, eu.r$)() ? (0, i.jsx)(V.A, {}) : null != e ? (0, i.jsx)(q.A, {
             selectedChannelId: r,
             guildId: e
         }, e) : (0, i.jsx)(ec.A, {})

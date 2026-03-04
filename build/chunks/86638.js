@@ -30,7 +30,7 @@ var i = n(627968),
     y = n(894100);
 let C = T.Z.SIZE_133;
 
-function R(e) {
+function k(e) {
     let {
         item: t,
         wishlistOwner: n,
@@ -60,29 +60,29 @@ function R(e) {
         }
     }, []);
     let {
-        trackUserProfileWishlistAction: R
-    } = (0, p.NJ)(), k = l.useCallback(() => {
-        null != f && (R({
+        trackUserProfileWishlistAction: k
+    } = (0, p.NJ)(), R = l.useCallback(() => {
+        null != f && (k({
             wishlistId: f,
             action: S.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), m())
-    }, [m, t.sku, f, R]), w = l.useCallback(() => {
-        null != f && (R({
+    }, [m, t.sku, f, k]), w = l.useCallback(() => {
+        null != f && (k({
             wishlistId: f,
             action: S.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), x())
-    }, [x, t.sku, f, R]), L = null != c ? (0, i.jsx)("div", {
+    }, [x, t.sku, f, k]), L = null != c ? (0, i.jsx)("div", {
         ref: E,
         className: y.BU,
         children: c
     }) : null, {
         label: O,
-        icon: P,
-        isPromptingPurchase: D
+        icon: D,
+        isPromptingPurchase: P
     } = (0, v.hB)({
         sku: t.sku,
         wishlistOwner: n,
@@ -104,13 +104,13 @@ function R(e) {
                 }, d),
                 disableHoverOrFocus: o,
                 onHoverOrFocusChange: g,
-                onClick: k,
+                onClick: R,
                 children: [(0, i.jsx)(v.AJ, {
                     spec: C,
-                    onClick: D ? w : k,
+                    onClick: P ? w : R,
                     isHoveringOrFocusing: u,
                     label: O,
-                    icon: P
+                    icon: D
                 }), _ && (0, i.jsx)(j.gS, {
                     isHoveringOrFocusing: u
                 })]
@@ -126,7 +126,7 @@ function R(e) {
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         item: t,
         isItemOwned: n,
@@ -152,7 +152,7 @@ function k(e) {
             analyticsLocations: [...r, d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
         })
     }, [t.sku, a, s.id, r]);
-    return (0, i.jsx)(R, {
+    return (0, i.jsx)(k, {
         item: t,
         wishlistOwner: a,
         isItemOwned: n,
@@ -189,7 +189,7 @@ function w(e) {
             variantsReturnStyle: o.g.VARIANTS_GROUP
         })
     }, [t.sku, n, c.id, s]);
-    return (0, i.jsx)(R, {
+    return (0, i.jsx)(k, {
         item: t,
         wishlistOwner: n,
         isItemOwned: a,
@@ -216,7 +216,7 @@ function L(e) {
     if (null == t.sku || null == g) return null;
     switch (t.sku.productLine) {
         case b.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, i.jsx)(k, {
+            return (0, i.jsx)(R, {
                 item: t,
                 analyticsLocations: o,
                 isHoveringOrFocusing: m,

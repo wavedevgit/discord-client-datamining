@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(873298),
-    r = i(397927),
-    a = i(334726),
+    a = i(397927),
+    r = i(334726),
     u = i(365258),
     o = i(419954),
     d = i(253932),
@@ -14,9 +14,9 @@ var n = i(627968),
     T = i(985018),
     S = i(536482);
 let E = (0, o.Qx)(A.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
-    useTitle: () => (0, a.i)("GuildActivitySharingDefaultSetting") ? T.intl.string(T.t.vpgck1) : T.intl.string(S.default["/LHVbt"]),
+    useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? T.intl.string(T.t.vpgck1) : T.intl.string(S.default["/LHVbt"]),
     useOptions: function() {
-        let t = (0, a.i)("GuildActivitySharingDefaultSetting");
+        let t = (0, r.i)("GuildActivitySharingDefaultSetting");
         return l.useMemo(() => t ? [{
             value: s.Qd.ACTIVITY_STATUS_OFF,
             name: T.intl.string(T.t.FzgQna),
@@ -42,11 +42,11 @@ let E = (0, o.Qx)(A.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
     useValue: d._Z.useSetting,
     setValue: function(t) {
         let e = d._Z.getSetting();
-        if (d._Z.updateSetting(t), !(0, a.r)("GuildActivitySharingDefaultSetting")) return;
+        if (d._Z.updateSetting(t), !(0, r.r)("GuildActivitySharingDefaultSetting")) return;
         let l = (0, u.g8)(e, t);
         if (null == l) return;
         let s = (0, u.Xc)(t);
-        (0, r.mMO)(async () => {
+        (0, a.mMO)(async () => {
             let {
                 default: t
             } = await i.e("41996").then(i.bind(i, 32167));

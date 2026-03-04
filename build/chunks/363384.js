@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(827343),
     l = i(793574),
     s = i(419954),
-    r = i(430452),
-    a = i(824744),
+    a = i(430452),
+    r = i(824744),
     u = i(780964),
     o = i(985018);
 let d = (0, s.sN)(u.X.VOICE_INPUT_VOLUME_SETTING, {
@@ -15,12 +15,12 @@ let d = (0, s.sN)(u.X.VOICE_INPUT_VOLUME_SETTING, {
     minValue: 0,
     maxValue: 100,
     getInitialValue: function() {
-        let t = r.Ay.getInputVolume();
-        return (0, a.M)(t)
+        let t = a.Ay.getInputVolume();
+        return (0, r.M)(t)
     },
     asValueChanges: function(t) {
         let e = [l.A.USER_SETTINGS_VOICE_AND_VIDEO],
-            i = (0, a.w)(t);
+            i = (0, r.w)(t);
         n.A.setInputVolume(i, {
             analyticsLocations: e
         })

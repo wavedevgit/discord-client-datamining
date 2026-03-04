@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(64700),
     l = n(311907),
-    a = n(544420),
-    s = n(524799),
+    a = n(136086),
+    s = n(885151),
     r = n(958805),
     o = n(61881),
     c = n(911498);
@@ -22,16 +22,15 @@ function d(e) {
             remove: t,
             peekedGameIds: n
         } = (0, c.s)(), r = i.useMemo(() => n[e] ?? [], [n, e]);
-        i.useEffect(() => {
-            let e = r.filter(e => s.A.canFetch(e));
-            e.length > 0 && a.A.getDetectableGamesSupplemental(e)
-        }, [r]);
-        let o = (0, l.yK)([s.A], () => r.map(e => s.A.isFetching(e)));
+        (0, s.W)(r);
+        let o = (0, l.yK)([a.A], () => r.map(e => a.A.isFetching(e)));
         i.useEffect(() => {
             for (let n of r) {
-                let i = !s.A.canFetch(n) && !s.A.isFetching(n),
-                    l = null != s.A.getCoverImageUrl(n);
-                i && !l && t(n, e)
+                let i = a.A.didFetchingFail(n),
+                    l = a.A.hasNoData(n),
+                    s = !!a.A.getGame(n),
+                    r = null != a.A.getCoverImageUrl(n);
+                (i || l || s && !r) && t(n, e)
             }
         }, [r, t, e, o])
     }(e);
@@ -39,12 +38,14 @@ function d(e) {
         d = i.useCallback(n => {
             t(n, e)
         }, [t, e]),
-        u = (0, l.yK)([s.A], () => o.map(e => s.A.isFetching(e)));
+        u = (0, l.yK)([a.A], () => o.map(e => a.A.isFetching(e)));
     i.useEffect(() => {
         let t = o.filter(e => {
-            let t = !s.A.canFetch(e) && !s.A.isFetching(e),
-                n = null != s.A.getCoverImageUrl(e);
-            return t && !n
+            let t = a.A.didFetchingFail(e),
+                n = a.A.hasNoData(e),
+                i = !!a.A.getGame(e),
+                l = null != a.A.getCoverImageUrl(e);
+            return t || n || i && !l
         });
         t.length > 0 && n(t, e)
     }, [o, e, n, u]);

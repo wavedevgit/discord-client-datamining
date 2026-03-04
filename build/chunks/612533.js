@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(419954),
     l = i(780964),
     s = i(664962),
-    r = i(753082),
-    a = i(995812),
+    a = i(753082),
+    r = i(995812),
     u = i(927629),
     o = i(286480),
     d = i(749253),
@@ -14,5 +14,5 @@ var n = i(419954),
 let T = (0, n.zZ)(l.X.DESIGN_TOOLS, {
     useTitle: () => "Design & A11y Tools",
     useSearchTerms: () => ["accessibility tools"],
-    buildLayout: () => [r.g, d.V, o.q, A.u, a.g, u.H, s.K]
+    buildLayout: () => [a.g, d.V, o.q, A.u, r.g, u.H, s.K]
 })

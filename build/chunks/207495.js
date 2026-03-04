@@ -4,13 +4,13 @@ t.a(e, async function(e, r) {
         t.d(n, {
             q: () => u
         });
-        var i = t(619974),
-            o = e([i]);
+        var o = t(619974),
+            i = e([o]);
 
         function u(e, n) {
-            return JSON.parse((0, i.qg)(e, n))
+            return JSON.parse((0, o.qg)(e, n))
         }
-        i = (o.then ? (await o)() : o)[0], r()
+        o = (i.then ? (await i)() : i)[0], r()
     } catch (e) {
         r(e)
     }

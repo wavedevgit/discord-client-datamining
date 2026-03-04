@@ -1,6 +1,6 @@
 /** chunk id: 568834, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
@@ -13,9 +13,9 @@ var a = n(627968),
     u = n(64343),
     m = n(821052),
     h = n(594061),
-    x = n(304932);
+    p = n(304932);
 
-function p() {
+function x() {
     let {
         dailyCapReached: e,
         dailyCapOverridden: t,
@@ -24,14 +24,14 @@ function p() {
         dailyCapReached: d.A.hasUserHitDCCap(),
         dailyCapOverridden: d.A.dailyCapOverridden,
         newUserMinAgeRequiredOverridden: d.A.newUserMinAgeRequiredOverridden
-    })), [p, g] = i.useState(""), [_, f] = i.useState(20), b = i.useMemo(() => Object.keys(l.M).filter(e => e.toLowerCase().includes(p.toLowerCase())).reverse(), [p]), v = i.useCallback(e => {
+    })), [x, g] = i.useState(""), [_, f] = i.useState(20), b = i.useMemo(() => Object.keys(l.M).filter(e => e.toLowerCase().includes(x.toLowerCase())).reverse(), [x]), v = i.useCallback(e => {
         let t = e.currentTarget;
         t.scrollHeight - t.scrollTop <= t.clientHeight + 100 && _ < b.length && f(e => e + 100)
     }, [_, b.length]);
     return (0, a.jsx)(r.ChK, {
         onScroll: v,
         children: (0, a.jsxs)("div", {
-            className: x.KE,
+            className: p.KE,
             children: [(0, a.jsxs)(r.nVY, {
                 label: "Dismissible Content Overrides",
                 children: [(0, a.jsxs)(r.BJc, {
@@ -69,7 +69,7 @@ function p() {
             }), (0, a.jsx)(m.A, {}), (0, a.jsx)(u.A, {}), (0, a.jsxs)(r.nVY, {
                 label: "All Dismissible Contents",
                 children: [(0, a.jsx)(r.IWV, {
-                    query: p,
+                    query: x,
                     onChange: g,
                     onClear: () => g("")
                 }), (0, a.jsx)(c.A, {

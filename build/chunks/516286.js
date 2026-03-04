@@ -20,13 +20,13 @@ function h(e) {
     return !!m(e) || !!(0, r.nW)(e) && e.layout.some(e => h(e))
 }
 
-function x(e) {
+function p(e) {
     let {
         setting: t,
         depth: n,
         highlightMode: s
     } = e, l = i.useContext(g)?.get(t), r = null;
-    return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(x, {
+    return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(p, {
         setting: e,
         depth: n + 1,
         highlightMode: s
@@ -38,7 +38,7 @@ function x(e) {
     })
 }
 
-function p(e) {
+function x(e) {
     let {
         setting: t,
         depth: n,
@@ -59,11 +59,11 @@ function p(e) {
     }(t, i), l = "migrated" === s ? "migrated" : void 0, o = null;
     if ((0, r.nW)(t)) {
         let e = t.parent?.parent?.getLegacySearchKey?.();
-        0 === t.layout.length && null != e ? o = (0, a.jsx)(x, {
+        0 === t.layout.length && null != e ? o = (0, a.jsx)(p, {
             setting: e,
             depth: n + 1,
             highlightMode: l ?? "legacy"
-        }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(p, {
+        }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(x, {
             setting: e,
             depth: n + 1,
             inheritedHighlightMode: l
@@ -99,10 +99,10 @@ function _() {
             value: n,
             children: (0, a.jsxs)("div", {
                 className: u.B2,
-                children: [e && (0, a.jsx)(x, {
+                children: [e && (0, a.jsx)(p, {
                     setting: "root",
                     depth: 1
-                }, "root"), !e && (0, a.jsx)(p, {
+                }, "root"), !e && (0, a.jsx)(x, {
                     setting: r,
                     depth: 1
                 }, r.key)]

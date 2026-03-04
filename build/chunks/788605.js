@@ -5,13 +5,13 @@ i.d(e, {
 var n = i(311907),
     l = i(684013),
     s = i(419954),
-    r = i(256415),
-    a = i(780964),
+    a = i(256415),
+    r = i(780964),
     u = i(652215),
     o = i(985018);
-let d = (0, s.Hn)(a.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
+let d = (0, s.Hn)(r.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
     useTitle: () => o.intl.string(o.t.swsWWC),
-    useValue: () => (0, n.bG)([r.default], () => r.default.getDisplayUserMode()),
+    useValue: () => (0, n.bG)([a.default], () => a.default.getDisplayUserMode()),
     setValue: t => {
         l.A.setDisplayUserMode(t)
     },

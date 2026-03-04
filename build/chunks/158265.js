@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(475743),
     m = n(775602),
     h = n(186111),
-    x = n(398025),
-    p = n(568329),
+    p = n(398025),
+    x = n(568329),
     g = n(963713),
     _ = n(772244),
     f = n(272111),
@@ -31,17 +31,17 @@ let A = e => {
         isExpanded: C
     } = i.useContext(g.T), {
         expansionSpring: T
-    } = i.useContext(p.PW), {
+    } = i.useContext(x.PW), {
         completionSpring: y,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), L = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
-    })), U = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
+    })), L = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
             t = k.current;
-        if (null != t && null != e && U.isReady) {
+        if (null != t && null != e && L.isReady) {
             var a, i, s, l;
             let {
                 x: n,
@@ -50,7 +50,7 @@ let A = e => {
                 x: o,
                 y: d
             } = t.getBoundingClientRect();
-            U.createMultipleConfetti((a = n - o, i = r - d, s = e.clientHeight, l = e.clientWidth, {
+            L.createMultipleConfetti((a = n - o, i = r - d, s = e.clientHeight, l = e.clientWidth, {
                 ...b.Mw,
                 position: {
                     type: "static-random",
@@ -90,7 +90,7 @@ let A = e => {
                 }
             }), 100)
         }
-    }, [n, k, U, I]), F = (0, u.A)(C);
+    }, [n, k, L, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
         E && C && !F && (S(), G())
     }, [C, E, S, G, F]), i.useEffect(() => {
@@ -98,8 +98,8 @@ let A = e => {
             S(), G()
         }, 200)
     }, [E, O, R, S, G]), i.useEffect(() => {
-        U.isReady && (!N.current && E && (S(), G()), N.current = E)
-    }, [E, N, G, S, U]), i.useEffect(() => {
+        L.isReady && (!N.current && E && (S(), G()), N.current = E)
+    }, [E, N, G, S, L]), i.useEffect(() => {
         s && E && (S(), G())
     }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: v.iE,
@@ -108,12 +108,12 @@ let A = e => {
         children: [(0, a.jsx)(d.animated.div, {
             className: v.Tp,
             style: {
-                opacity: (0, x.a)(y)
+                opacity: (0, p.a)(y)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(v.sJ, v.ix),
             style: {
-                opacity: (0, x.a)(y)
+                opacity: (0, p.a)(y)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: v.KG,
@@ -126,7 +126,7 @@ let A = e => {
             children: [(0, a.jsx)(r.Fk, {
                 ref: D,
                 className: v.t_,
-                environment: L.current
+                environment: U.current
             }), (0, a.jsx)(r.K_, {
                 ref: P,
                 sprites: [j],
@@ -136,7 +136,7 @@ let A = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(v.sJ, v.d7),
                 style: {
-                    opacity: (0, x.a)(y)
+                    opacity: (0, p.a)(y)
                 }
             }), t.current)]
         })]

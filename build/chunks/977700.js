@@ -14,8 +14,8 @@ var i = n(397927),
     u = n(223567),
     m = n(552122),
     h = n(41280),
-    x = n(652215),
-    p = n(49999),
+    p = n(652215),
+    x = n(49999),
     g = n(985018),
     _ = n(653246);
 
@@ -34,9 +34,9 @@ function f(e) {
         })
     }, T = () => {
         (0, c.openUserSettings)(d.X.NOTIFICATIONS_PANEL, {
-            section: x.nc_.NOTIFICATIONS,
+            section: p.nc_.NOTIFICATIONS,
             analyticsLocations: A
-        }), C(p.i.TAKE_ACTION)
+        }), C(x.i.TAKE_ACTION)
     };
     return f && !b ? (0, a.jsx)(o.Ay, {
         children: (0, a.jsxs)("div", {
@@ -77,7 +77,7 @@ function f(e) {
                     })]
                 }), (0, a.jsx)(i.DUT, {
                     className: _.l2,
-                    onClick: () => C(p.i.USER_DISMISS),
+                    onClick: () => C(x.i.USER_DISMISS),
                     children: (0, a.jsx)(i.PGe, {
                         color: "currentColor",
                         size: "xs"

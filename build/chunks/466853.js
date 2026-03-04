@@ -91,11 +91,11 @@ function E(e) {
         additionalManageWidgetMenuItems: b
     } = e, N = (0, c.GV)(), S = (0, o.bG)([d.default], () => d.default.getId() === t), y = (0, p.g)(), {
         trackUserProfileAction: C
-    } = (0, u.NJ)(), R = (0, x.A)({
+    } = (0, u.NJ)(), k = (0, x.A)({
         widget: n,
         onAction: C
-    }), k = y === n.type;
-    (0, m.A)(R, k);
+    }), R = y === n.type;
+    (0, m.A)(k, R);
     let w = S && null != f && !a,
         L = () => (0, i.jsxs)("div", {
             className: s()(j.kL, g),
@@ -113,7 +113,7 @@ function E(e) {
             })]
         });
     return (0, i.jsx)("section", {
-        ref: R,
+        ref: k,
         "aria-labelledby": N,
         children: w ? (0, i.jsx)(v, {
             index: f ?? 0,

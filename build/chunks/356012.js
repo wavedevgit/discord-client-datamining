@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(419117),
     l = i(419954),
     s = i(780964),
-    r = i(744149),
-    a = i(784086),
+    a = i(744149),
+    r = i(784086),
     u = i(783440),
     o = i(790337),
     d = i(800056),
@@ -14,5 +14,5 @@ var n = i(419117),
 let T = (0, l.bd)(s.X.STREAMING_ADVANCED_ACCORDION, {
     useTitle: t => t ? A.intl.string(A.t.qrMyvm) : A.intl.string(A.t.LEtTNl),
     useCollapsedSubtitle: () => (0, n.A)(s.X.STREAMING_ADVANCED_ACCORDION),
-    buildLayout: () => [u.n, o.K, d.r, a.L, r.S]
+    buildLayout: () => [u.n, o.K, d.r, r.L, a.S]
 })

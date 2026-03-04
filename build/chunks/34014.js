@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(311907),
     l = i(964486),
     s = i(839214),
-    r = i(955572),
-    a = i(775602),
+    a = i(955572),
+    r = i(775602),
     u = i(502229),
     o = i(419954),
     d = i(975571),
@@ -23,10 +23,10 @@ let E = (0, s.D)(() => ({
             learnMoreLink: d.A.getArticleURL(T.MVz.FORCED_COLORS)
         }),
         useValue: () => {
-            let t = (0, n.bG)([a.A], () => a.A.syncForcedColors);
+            let t = (0, n.bG)([r.A], () => r.A.syncForcedColors);
             return (0, l.Ay)(() => {
                 E.setState({
-                    syncEnabled: a.A.syncForcedColors
+                    syncEnabled: r.A.syncForcedColors
                 })
             }), E.useState(t => t.syncEnabled) ?? t
         },
@@ -41,11 +41,11 @@ let E = (0, s.D)(() => ({
                 });
                 return
             }
-            if (t === a.A.syncForcedColors) return void E.setState({
+            if (t === r.A.syncForcedColors) return void E.setState({
                 syncEnabled: t
             });
             let i = setTimeout(() => {
-                (0, r.D3)(t), E.setState({
+                (0, a.D3)(t), E.setState({
                     updateTimeout: null
                 })
             }, 150);

@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(793574),
     h = n(688810),
-    x = n(993719),
-    p = n(14059),
+    p = n(993719),
+    x = n(14059),
     g = n(362823),
     _ = n(980923),
     f = n(206018),
@@ -41,8 +41,8 @@ function D(e) {
             suppress: D,
             awaitingRemote: M,
             iconForeground: P,
-            onMouseEnter: L,
-            onMouseLeave: U,
+            onMouseEnter: U,
+            onMouseLeave: L,
             onClick: B,
             nameplate: G,
             shouldShowSpeakingWhileMutedTooltip: F,
@@ -59,7 +59,7 @@ function D(e) {
         }),
         q = (0, o.bG)([T.Ay], () => T.Ay.getMode() === N.TB.PUSH_TO_TALK),
         Q = (0, o.bG)([T.Ay], () => T.Ay.getSettings().modeOptions.shortcut),
-        Y = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
+        Y = (0, o.bG)([x.A], () => x.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
         J = (0, o.bG)([y.A], () => null != y.A.getChannelId()),
         {
             name: X
@@ -99,7 +99,7 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Y && x.N(g.v.MUTE_TUTORIAL)
+            B(), Y && p.N(g.v.MUTE_TUTORIAL)
         }, [B, Y]);
     return (0, a.jsxs)(h.f5, {
         value: ea,
@@ -154,10 +154,10 @@ function D(e) {
                         onClick: eu,
                         onContextMenu: i,
                         onMouseEnter: () => {
-                            L(), es.onMouseEnter()
+                            U(), es.onMouseEnter()
                         },
                         onMouseLeave: () => {
-                            U(), es.onMouseLeave()
+                            L(), es.onMouseLeave()
                         },
                         plated: null != G,
                         redGlow: et,
@@ -185,8 +185,8 @@ function D(e) {
                         }),
                         onClick: i,
                         onContextMenu: i,
-                        onMouseEnter: L,
-                        onMouseLeave: U,
+                        onMouseEnter: U,
+                        onMouseLeave: L,
                         plated: null != G,
                         redGlow: et,
                         tooltipType: W ? "green_void_do_not_use" : void 0,
@@ -209,7 +209,7 @@ function D(e) {
                 src: w.A
             },
             onRequestClose: () => {
-                x.N(g.v.MUTE_TUTORIAL)
+                p.N(g.v.MUTE_TUTORIAL)
             },
             position: "top",
             title: I.intl.string(k.default.VG4zAf),

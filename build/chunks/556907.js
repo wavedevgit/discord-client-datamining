@@ -5,17 +5,17 @@ i.d(e, {
 var n = i(64700),
     l = i(665260),
     s = i(171316),
-    r = i(419954),
-    a = i(115063),
+    a = i(419954),
+    r = i(115063),
     u = i(253932),
     o = i(780964),
     d = i(652215),
     A = i(985018);
-let T = (0, r.zD)(o.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_FRIENDS_SETTING, {
+let T = (0, a.zD)(o.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_FRIENDS_SETTING, {
     useTitle: () => A.intl.string(A.t.NfeuZ3),
     useValue: () => {
         let t = u.FA.useSetting(),
-            e = n.useMemo(() => (0, a.Lx)(t), [t]);
+            e = n.useMemo(() => (0, r.Lx)(t), [t]);
         return e.all || e.mutualFriends
     },
     setValue: t => {

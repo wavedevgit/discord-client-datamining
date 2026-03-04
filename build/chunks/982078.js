@@ -1,6 +1,6 @@
 /** chunk id: 982078, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(158954),
@@ -22,19 +22,19 @@ let m = [5793266, 2303016],
         value: "non-nitro"
     }];
 
-function x() {
+function p() {
     let {
         themeOverride: e,
         setThemeOverride: t,
         savedClientTheme: n,
-        setSavedClientTheme: x
-    } = (0, d.Zt)(), p = (0, o.Ay)(), g = (0, s.bG)([c.A], () => c.A.settings.appearance?.clientThemeSettings), _ = g?.customUserThemeSettings != null && null != g.customUserThemeSettings.colors && g.customUserThemeSettings.colors.length > 0;
+        setSavedClientTheme: p
+    } = (0, d.Zt)(), x = (0, o.Ay)(), g = (0, s.bG)([c.A], () => c.A.settings.appearance?.clientThemeSettings), _ = g?.customUserThemeSettings != null && null != g.customUserThemeSettings.colors && g.customUserThemeSettings.colors.length > 0;
 
     function f() {
         null != n && ((0, r.u_)({
             theme: n.theme,
             customUserThemeSettings: n.customUserThemeSettings
-        }), x(null))
+        }), p(null))
     }
     return (0, a.jsx)(i.ArX, {
         children: (0, a.jsxs)(i.BJc, {
@@ -176,8 +176,8 @@ function x() {
                             size: "sm",
                             text: "Use System Theme",
                             onClick: function() {
-                                g?.customUserThemeSettings != null && x({
-                                    theme: p,
+                                g?.customUserThemeSettings != null && p({
+                                    theme: x,
                                     customUserThemeSettings: g.customUserThemeSettings
                                 }), (0, r.u_)({
                                     theme: "system"

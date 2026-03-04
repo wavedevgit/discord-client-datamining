@@ -30,8 +30,8 @@ let d = i.createContext({
             isTextTransition: m = !1
         } = e, {
             recalculateAnimationPositions: h,
-            registerComponent: x,
-            unregisterComponent: p,
+            registerComponent: p,
+            unregisterComponent: x,
             expansionSpring: g,
             mountPoints: _
         } = i.useContext(d), f = i.useRef(null), b = i.useRef(null), v = i.useRef(void 0);
@@ -39,10 +39,10 @@ let d = i.createContext({
             h()
         }, [h]), i.useLayoutEffect(() => {
             let e = f.current;
-            return null != e && x(e, c, u), () => {
-                null != e && p(c, u)
+            return null != e && p(e, c, u), () => {
+                null != e && x(c, u)
             }
-        }, [c, u, x, p]);
+        }, [c, u, p, x]);
         let j = i.useCallback(e => {
             let {
                 height: t
@@ -86,7 +86,7 @@ let d = i.createContext({
             expandedContentRef: n,
             collapsedContentRef: s,
             expansionSpring: l
-        } = e, [r, o] = i.useState({}), [c, u] = i.useState([]), [m, h] = i.useState(() => new Map), x = i.useCallback((e, t, n) => {
+        } = e, [r, o] = i.useState({}), [c, u] = i.useState([]), [m, h] = i.useState(() => new Map), p = i.useCallback((e, t, n) => {
             o(a => {
                 let i = a[t] ?? {
                     expanded: null,
@@ -103,7 +103,7 @@ let d = i.createContext({
                 let n = new Map(e);
                 return n.set(t, i.createRef()), n
             })
-        }, []), p = i.useCallback((e, t) => {
+        }, []), x = i.useCallback((e, t) => {
             let n = !1;
             o(a => {
                 let i = a[e] ?? {
@@ -132,15 +132,15 @@ let d = i.createContext({
                     u = l.top - o.top + 12,
                     m = d.top - c.top,
                     h = l.left - o.left + 12,
-                    x = d.left - c.left,
-                    p = -l.right + o.right + 12,
+                    p = d.left - c.left,
+                    x = -l.right + o.right + 12,
                     g = -d.right + c.right;
                 e.push({
                     id: t,
-                    collapsedLeft: x,
+                    collapsedLeft: p,
                     expandedLeft: h,
                     collapsedRight: g,
-                    expandedRight: p,
+                    expandedRight: x,
                     collapsedTop: m,
                     expandedTop: u,
                     width: l.width
@@ -150,8 +150,8 @@ let d = i.createContext({
         }, [r, n, s, u]);
         return (0, a.jsx)(d.Provider, {
             value: {
-                registerComponent: x,
-                unregisterComponent: p,
+                registerComponent: p,
+                unregisterComponent: x,
                 animatedComponents: r,
                 expandedContentRef: n,
                 collapsedContentRef: s,

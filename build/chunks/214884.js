@@ -50,12 +50,12 @@ function w(e) {
         isEventNoticeHidden: p.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
-    }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, q = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
+    }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
     r.useEffect(() => {
         null != Y && (0, c.wz)(Y)
     }, [Y]);
     let {
-        noticeType: W,
+        noticeType: q,
         title: K,
         location: z,
         locationIcon: $,
@@ -250,14 +250,14 @@ function w(e) {
         activeChannel: l,
         canConnect: H,
         myRole: F,
-        eventCreator: q,
+        eventCreator: W,
         speakers: V,
         listenerCount: B,
         isEventNoticeHidden: G,
         isStageNoticeHidden: w,
         isStudyRoomNotice: n
-    }), [u, b, l, H, F, q, V, B, G, w, n]);
-    return null == W ? null : (0, i.jsxs)("div", {
+    }), [u, b, l, H, F, W, V, B, G, w, n]);
+    return null == q ? null : (0, i.jsxs)("div", {
         className: M.kL,
         children: [null != ee ? (0, i.jsx)(d.DUT, {
             onClick: ee,
@@ -298,7 +298,7 @@ function w(e) {
                 className: M.C5,
                 children: z
             })]
-        }), Q || 1 === W ? (0, i.jsx)("div", {
+        }), Q || 1 === q ? (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
             className: M.x6,
             children: (0, i.jsx)(d.Button, {

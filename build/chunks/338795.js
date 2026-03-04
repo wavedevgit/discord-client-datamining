@@ -1,12 +1,12 @@
 /** chunk id: 338795, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    J: () => D
+    J: () => L
 });
 var n = i(934551),
     l = i(98207),
     s = i(631670),
-    r = i(419954),
-    a = i(576622),
+    a = i(419954),
+    r = i(576622),
     u = i(287809),
     o = i(954571),
     d = i(780964),
@@ -19,7 +19,7 @@ var n = i(934551),
     _ = i(531525),
     I = i(652215),
     C = i(985018);
-let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
+let N = (0, a.dT)(d.X.ACCOUNT_STANDING_TAB, {
         getTitle: () => C.intl.string(C.t["Vov/9o"]),
         onItemSelect: () => {
             o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
@@ -28,7 +28,7 @@ let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [c.Q]
     }),
-    O = (0, r.dT)(d.X.ACCOUNT_SECURITY_TAB, {
+    O = (0, a.dT)(d.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => C.intl.string(C.t.Am9YHi),
         onItemSelect: () => {
             o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
@@ -37,25 +37,25 @@ let N = (0, r.dT)(d.X.ACCOUNT_STANDING_TAB, {
         },
         buildLayout: () => [E.P, S.o, g.s]
     }),
-    L = (0, r.t_)(d.X.ACCOUNT_PANEL, {
+    b = (0, a.t_)(d.X.ACCOUNT_PANEL, {
         useTitle: () => C.intl.string(C.t["JAIM/m"]),
         initialize: function() {
             let t = u.default.getCurrentUser();
-            return null != t && (0, a.A)(t.id, t.getAvatarURL(void 0, 80)), () => {
+            return null != t && (0, r.A)(t.id, t.getAvatarURL(void 0, 80)), () => {
                 l.A.clearBackupCodes(), (0, s.Uo)()
             }
         },
         hideInStreamerMode: !0,
         buildLayout: () => [O, N]
     }),
-    b = (0, r.t_)(d.X.ACCOUNT_PANEL, {
+    D = (0, a.t_)(d.X.ACCOUNT_PANEL, {
         useTitle: () => C.intl.string(C.t["JAIM/m"]),
         StronglyDiscouragedCustomComponent: T.A,
         buildLayout: () => []
     }),
-    D = (0, r.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
+    L = (0, a.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t["JAIM/m"]),
         getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : _.H.ACCOUNT,
         icon: n.UserIcon,
-        buildLayout: () => (0, A.WJ)("AccountPanel") ? [L] : [b]
+        buildLayout: () => (0, A.WJ)("AccountPanel") ? [b] : [D]
     })

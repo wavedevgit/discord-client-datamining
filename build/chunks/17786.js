@@ -1,5 +1,4 @@
 /** chunk id: 17786, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Dt: "guildSelector__673eb",
     ax: "nitroWheel__673eb",

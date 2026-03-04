@@ -1,38 +1,38 @@
-/** chunk id: 839671, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 839671, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => f,
     R: () => p
 });
-var n = i(627968);
-i(64700);
-var l = i(503698),
-    a = i.n(l),
-    s = i(505779),
-    r = i(990078),
-    c = i(397927),
-    o = i(409626),
-    d = i(985018),
-    u = i(851822),
-    m = i(307291);
+var i = n(627968);
+n(64700);
+var l = n(503698),
+    a = n.n(l),
+    s = n(505779),
+    r = n(990078),
+    c = n(397927),
+    o = n(409626),
+    d = n(985018),
+    u = n(851822),
+    m = n(307291);
 let x = [s.V.OFFICIAL, s.V.TWITTER, s.V.YOUTUBE];
 
 function g(e) {
     switch (e.category) {
         case s.V.OFFICIAL:
             return {
-                icon: (0, n.jsx)(c.L_e, {
+                icon: (0, i.jsx)(c.L_e, {
                     colorClass: m.wP
                 }), action: o.Ws.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
             };
         case s.V.TWITTER:
             return {
-                icon: (0, n.jsx)(c.p3p, {
+                icon: (0, i.jsx)(c.p3p, {
                     colorClass: m.wP
                 }), action: o.Ws.XLink, title: d.intl.string(d.t.INic4y)
             };
         case s.V.YOUTUBE:
             return {
-                action: o.Ws.YouTubeLink, icon: (0, n.jsx)(c.CiD, {
+                action: o.Ws.YouTubeLink, icon: (0, i.jsx)(c.CiD, {
                     colorClass: m.wP
                 }), title: d.intl.string(d.t.lNmxbE)
             };
@@ -44,17 +44,17 @@ function g(e) {
 function h(e) {
     let {
         website: t,
-        trackClick: i
+        trackClick: n
     } = e, {
         action: l,
         icon: a,
         title: s
     } = g(t);
-    return (0, n.jsx)(r.m, {
+    return (0, i.jsx)(r.m, {
         text: s,
-        children: (0, n.jsx)(c.MzZ, {
+        children: (0, i.jsx)(c.MzZ, {
             onClick: () => {
-                i(l)
+                n(l)
             },
             className: m.yO,
             href: t.url,
@@ -67,7 +67,7 @@ function h(e) {
 let f = function(e) {
     let {
         detectedGame: t,
-        trackClick: i
+        trackClick: n
     } = e;
     if (null == t.websites) return null;
     let l = t.websites.filter(e => {
@@ -76,17 +76,17 @@ let f = function(e) {
         } = e;
         return x.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === l.length ? null : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(c.Heading, {
+    return 0 === l.length ? null : (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(c.Heading, {
             className: u.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: d.intl.string(d.t["Oj3o1/"])
-        }), (0, n.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: a()(u.nM, u.mX),
-            children: l.map(e => (0, n.jsx)(h, {
+            children: l.map(e => (0, i.jsx)(h, {
                 website: e,
-                trackClick: i
+                trackClick: n
             }, e.url))
         })]
     })
@@ -95,18 +95,18 @@ let f = function(e) {
 function j(e) {
     let {
         website: t,
-        trackClick: i
+        trackClick: n
     } = e, {
         action: l,
         icon: a,
         title: s
     } = g(t);
-    return (0, n.jsx)(r.m, {
+    return (0, i.jsx)(r.m, {
         __unsupportedReactNodeAsText: t.url,
-        children: (0, n.jsx)(c.DUT, {
+        children: (0, i.jsx)(c.DUT, {
             tag: "a",
             onClick: () => {
-                i(l)
+                n(l)
             },
             className: m.yO,
             title: s,
@@ -121,7 +121,7 @@ function j(e) {
 function p(e) {
     let {
         detectedGame: t,
-        trackClick: i
+        trackClick: n
     } = e;
     if (null == t.websites) return null;
     let l = t.websites.filter(e => {
@@ -130,17 +130,17 @@ function p(e) {
         } = e;
         return x.includes(t)
     }).sort((e, t) => e.category - t.category);
-    return 0 === l.length ? null : (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(c.Heading, {
+    return 0 === l.length ? null : (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(c.Heading, {
             className: u.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: d.intl.string(d.t["Oj3o1/"])
-        }), (0, n.jsx)("div", {
+        }), (0, i.jsx)("div", {
             className: a()(u.nM, u.mX),
-            children: l.map(e => (0, n.jsx)(j, {
+            children: l.map(e => (0, i.jsx)(j, {
                 website: e,
-                trackClick: i
+                trackClick: n
             }, e.url))
         })]
     })

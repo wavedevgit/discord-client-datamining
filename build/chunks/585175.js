@@ -1,12 +1,12 @@
 /** chunk id: 585175, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    O: () => D
+    O: () => L
 });
 var n = i(627968),
     l = i(64700),
     s = i(503698),
-    r = i.n(s),
-    a = i(311907),
+    a = i.n(s),
+    r = i(311907),
     u = i(205693),
     o = i(451988),
     d = i(827734),
@@ -22,22 +22,22 @@ var n = i(627968),
     N = i(785294);
 let O = (0, S.Ld)();
 
-function L(t) {
+function b(t) {
     let {
         isSpeaking: e,
         className: i,
         id: l,
         ariaDescribedBy: s,
-        ariaLabelledBy: a,
+        ariaLabelledBy: r,
         disabled: u
     } = t;
     return (0, n.jsx)("div", {
-        className: r()(C.$I, i),
+        className: a()(C.$I, i),
         id: l,
         "aria-describedby": s,
-        "aria-labelledby": a,
+        "aria-labelledby": r,
         children: (0, n.jsx)("div", {
-            className: r()(C.Jx, C.NU, {
+            className: a()(C.Jx, C.NU, {
                 [C.zY]: e && !u,
                 [C.r9]: u
             })
@@ -45,7 +45,7 @@ function L(t) {
     })
 }
 
-function b(t) {
+function D(t) {
     let {
         volume: e,
         id: i,
@@ -55,12 +55,12 @@ function b(t) {
     } = t, {
         threshold: o,
         autoThreshold: S
-    } = (0, a.cf)([g.Ay], () => ({
+    } = (0, r.cf)([g.Ay], () => ({
         threshold: g.Ay.getModeOptions().threshold,
         autoThreshold: g.Ay.getModeOptions().autoThreshold
-    })), E = (0, a.bG)([g.Ay], () => g.Ay.getMode());
+    })), E = (0, r.bG)([g.Ay], () => g.Ay.getMode());
     return (0, n.jsx)("section", {
-        className: r()(C.Mo, C.jW),
+        className: a()(C.Mo, C.jW),
         id: i,
         "aria-describedby": l,
         "aria-labelledby": s,
@@ -83,9 +83,9 @@ function b(t) {
             "aria-labelledby": O,
             disabled: u,
             children: (0, n.jsxs)("div", {
-                className: r()(C.NU, C.TL, C.Jx, N.bar),
+                className: a()(C.NU, C.TL, C.Jx, N.bar),
                 children: [(0, n.jsx)("div", {
-                    className: r()(C.GS, C.SH),
+                    className: a()(C.GS, C.SH),
                     style: {
                         width: u ? 0 : e + 100 + "%"
                     }
@@ -96,14 +96,14 @@ function b(t) {
         })
     })
 }
-let D = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
+let L = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
     useSearchTerms: () => [I.intl.string(I.t["sqUm+k"]), I.intl.string(I.t.I1Zuq0), I.intl.string(I.t.nuFtHH)],
-    usePredicate: () => (0, a.bG)([g.Ay], () => g.Ay.isInputProfileCustom()),
+    usePredicate: () => (0, r.bG)([g.Ay], () => g.Ay.isInputProfileCustom()),
     Component: function() {
         let {
             autoThreshold: t,
             disabled: e
-        } = (0, a.cf)([g.Ay], () => ({
+        } = (0, r.cf)([g.Ay], () => ({
             autoThreshold: g.Ay.getModeOptions().autoThreshold,
             disabled: g.Ay.getMode() !== _.TB.VOICE_ACTIVITY
         })), i = l.useCallback(t => {
@@ -115,8 +115,8 @@ let D = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 autoThreshold: t,
                 threshold: i
             })
-        }, []), s = (0, a.bG)([g.Ay], () => g.Ay.supports(_.O5.AUTOMATIC_VAD)), {
-            volume: r,
+        }, []), s = (0, r.bG)([g.Ay], () => g.Ay.supports(_.O5.AUTOMATIC_VAD)), {
+            volume: a,
             isSpeaking: d
         } = function() {
             let [t, e] = l.useState(-100), [i, n] = l.useState(!1);
@@ -135,7 +135,7 @@ let D = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 volume: t,
                 isSpeaking: i
             }
-        }(), S = (0, a.bG)([g.Ay], () => g.Ay.isEnabled()), E = l.useMemo(() => !S && (0, n.jsx)("div", {
+        }(), S = (0, r.bG)([g.Ay], () => g.Ay.isEnabled()), E = l.useMemo(() => !S && (0, n.jsx)("div", {
             className: C.B4,
             children: (0, n.jsx)(A.wx6, {
                 type: "warning",
@@ -162,14 +162,14 @@ let D = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                     description: c,
                     checked: t,
                     onChange: i
-                }), t ? (0, n.jsx)(L, {
+                }), t ? (0, n.jsx)(b, {
                     isSpeaking: d,
                     className: C.UJ,
                     ariaDescribedBy: O,
                     ariaLabelledBy: N,
                     disabled: e
-                }) : (0, n.jsx)(b, {
-                    volume: r,
+                }) : (0, n.jsx)(D, {
+                    volume: a,
                     ariaDescribedBy: O,
                     ariaLabelledBy: N,
                     disabled: e
@@ -182,15 +182,15 @@ let D = (0, E.E2)(c.X.VOICE_INPUT_SENSITIVITY_FIELD_SET, {
                 label: I.intl.string(I.t["sqUm+k"]),
                 description: c,
                 layout: "vertical",
-                children: i => t ? (0, n.jsx)(L, {
+                children: i => t ? (0, n.jsx)(b, {
                     isSpeaking: d,
                     className: C.UJ,
                     id: i.controlId,
                     ariaDescribedBy: i.describedById,
                     ariaLabelledBy: i.labelId,
                     disabled: e
-                }) : (0, n.jsx)(b, {
-                    volume: r,
+                }) : (0, n.jsx)(D, {
+                    volume: a,
                     id: i.controlId,
                     ariaDescribedBy: i.describedById,
                     ariaLabelledBy: i.labelId,

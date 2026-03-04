@@ -1,7 +1,7 @@
 /** chunk id: 463259, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => U,
-    u: () => P
+    u: () => D
 });
 var i = n(627968),
     l = n(64700),
@@ -30,13 +30,13 @@ var i = n(627968),
     S = n(128988),
     y = n(795755),
     C = n(53977),
-    R = n(982599),
-    k = n(515054),
+    k = n(982599),
+    R = n(515054),
     w = n(266713),
     L = n(985018),
     O = n(368379);
 
-function P(e) {
+function D(e) {
     let {
         widget: t,
         ...n
@@ -50,7 +50,7 @@ function P(e) {
     }) : null
 }
 
-function D() {
+function P() {
     return (0, i.jsxs)("div", {
         className: O.mJ,
         children: [(0, i.jsx)(o.mir, {
@@ -117,8 +117,8 @@ function M(e) {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: O.cG
-            }), u && (0, i.jsx)(D, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, l) => (0, i.jsx)(P, {
+            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
+        }), s.map((e, l) => (0, i.jsx)(D, {
             widget: e,
             user: t,
             guildId: n,
@@ -142,8 +142,8 @@ function U(e) {
     (0, j.i)({
         containerRef: a
     });
-    let r = (0, R.k)(t.id);
-    return (0, i.jsxs)(k.K, {
+    let r = (0, k.k)(t.id);
+    return (0, i.jsxs)(R.K, {
         "data-scroller": !0,
         scrollerRef: a,
         className: s()(O.XG, {

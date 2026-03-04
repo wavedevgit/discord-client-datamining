@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(245853),
     F = n(807876),
     Y = n(890687),
-    q = n(590202),
-    W = n(885459),
+    W = n(590202),
+    q = n(885459),
     K = n(545986),
     z = n(419818),
     $ = n(203879),
@@ -180,7 +180,7 @@ function eE(e) {
                     }),
                     children: [n, s ? A === Y.NC.CLAIMED ? (0, i.jsx)(X.A, {
                         onSelectTab: c
-                    }) : A === Y.NC.PREVIEW_TOOL ? (0, i.jsx)(W.A, {}) : (0, i.jsx)(Q.A, {
+                    }) : A === Y.NC.PREVIEW_TOOL ? (0, i.jsx)(q.A, {}) : (0, i.jsx)(Q.A, {
                         ref: g
                     }) : null]
                 })
@@ -206,9 +206,9 @@ let eI = function(e) {
     let {
         onScroll: U,
         scrollPosition: H
-    } = (0, S.G)(), W = z.A.getState().getUtmCurrentContext(), $ = (0, Z.W)(e => e.registerAssetLoad), Q = r.useRef(W);
+    } = (0, S.G)(), q = z.A.getState().getUtmCurrentContext(), $ = (0, Z.W)(e => e.registerAssetLoad), Q = r.useRef(q);
     r.useEffect(() => {
-        Q.current = W
+        Q.current = q
     }), r.useEffect(() => {
         let {
             current: e
@@ -294,10 +294,10 @@ let eI = function(e) {
             (0, K.navigateToQuestHome)({
                 fromContent: V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
             }), w.default.track(er.HAw.QUEST_CONTENT_CLICKED, {
-                cta_name: q.Cy.VIEW_QUESTS,
+                cta_name: W.Cy.VIEW_QUESTS,
                 click_id: (0, o.A)(),
                 is_targeted: !1,
-                ...(0, q.fF)(V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)
+                ...(0, W.fF)(V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER)
             })
         }, []),
         e_ = r.useCallback(e => {

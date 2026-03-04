@@ -5,17 +5,17 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(311907),
-    r = i(397927),
-    a = i(274372),
+    a = i(397927),
+    r = i(274372),
     u = i(399925),
     o = i(419954),
     d = i(780964),
     A = i(985018);
 let T = (0, o.E2)(d.X.CLIPS_PHRASES, {
     useSearchTerms: () => [A.intl.string(A.t.JIze0o)],
-    usePredicate: () => (0, s.bG)([a.A], () => a.A.getSettings().clipSignals).enablePhraseSignals,
+    usePredicate: () => (0, s.bG)([r.A], () => r.A.getSettings().clipSignals).enablePhraseSignals,
     Component: function() {
-        let t = (0, s.bG)([a.A], () => a.A.getSettings().autoClipPhrases),
+        let t = (0, s.bG)([r.A], () => r.A.getSettings().autoClipPhrases),
             [e, i] = l.useState(""),
             o = l.useMemo(() => t.map(t => ({
                 id: t,
@@ -39,7 +39,7 @@ let T = (0, o.E2)(d.X.CLIPS_PHRASES, {
                     n = t.filter(t => t !== i);
                 u.pM(n)
             }, [t]);
-        return (0, n.jsx)(r.ksK, {
+        return (0, n.jsx)(a.ksK, {
             value: e,
             onChange: d,
             onKeyDown: T,

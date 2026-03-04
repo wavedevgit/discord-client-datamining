@@ -1,12 +1,12 @@
 /** chunk id: 945928, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    Q: () => b
+    Q: () => D
 });
 var n = i(64700),
     l = i(311907),
     s = i(827343),
-    r = i(793574),
-    a = i(419954),
+    a = i(793574),
+    r = i(419954),
     u = i(933297),
     o = i(347481),
     d = i(430452),
@@ -21,7 +21,7 @@ var n = i(64700),
     C = i(903427),
     N = i(509381),
     O = i(985018);
-let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
+let b = (0, r.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
         useTitle: () => O.intl.string(O.t.LM3U3k),
         usePredicate: function() {
             let {
@@ -36,7 +36,7 @@ let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
             return (0, l.bG)([d.Ay], () => d.Ay.getActiveInputProfile() ?? N.m.CUSTOM)
         },
         setValue: function(t) {
-            let e = [r.A.USER_SETTINGS_VOICE_AND_VIDEO];
+            let e = [a.A.USER_SETTINGS_VOICE_AND_VIDEO];
             s.A.setActiveInputProfile(t, {
                 analyticsLocations: e
             })
@@ -67,7 +67,7 @@ let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
             })
         }
     }),
-    b = (0, a.zZ)(A.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    D = (0, r.zZ)(A.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
             let t = (0, l.bG)([o.A, d.Ay], () => {
                 let t = d.Ay.getInputDeviceId();
@@ -81,5 +81,5 @@ let L = (0, a.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
                 }
             }, [t])
         },
-        buildLayout: () => [L, g.O, c.w, E.h, C.K, _.C, I.m, S.U]
+        buildLayout: () => [b, g.O, c.w, E.h, C.K, _.C, I.m, S.U]
     })

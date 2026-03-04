@@ -6,8 +6,8 @@ var n = i(627968);
 i(64700);
 var l = i(397927),
     s = i(688810),
-    r = i(485873),
-    a = i(813977),
+    a = i(485873),
+    r = i(813977),
     u = i(964592);
 
 function o() {
@@ -15,8 +15,8 @@ function o() {
         analyticsLocations: t
     } = (0, s.Ay)();
     return [(0, n.jsx)(l.rXV, {
-        children: (0, a.A)(t)
+        children: (0, r.A)(t)
     }, "input-mode-items"), (0, n.jsxs)(l.rXV, {
-        children: [(0, r.A)(t), (0, u.A)(t)]
+        children: [(0, a.A)(t), (0, u.A)(t)]
     }, "input-output")]
 }

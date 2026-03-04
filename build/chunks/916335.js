@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(311907),
-    r = i(397927),
-    a = i(775602),
+    a = i(397927),
+    r = i(775602),
     u = i(141468),
     o = i(963852),
     d = i(763754),
@@ -24,13 +24,13 @@ let I = new T.nA({
         name: "preview"
     }),
     C = [{
-        status: r.clD.IDLE,
+        status: a.clD.IDLE,
         discriminator: "2"
     }, {
-        status: r.clD.DND,
+        status: a.clD.DND,
         discriminator: "3"
     }, {
-        status: r.clD.ONLINE,
+        status: a.clD.ONLINE,
         mobile: !0,
         discriminator: "4"
     }];
@@ -71,9 +71,9 @@ function O() {
             me_burst: !1,
             burst_count: 0
         }] : []), N(c.intl.formatToPlainString(c.t["4rDfgM"], {}))], [e]),
-        u = (0, s.bG)([a.A], () => a.A.messageGroupSpacing);
-    return (0, n.jsx)(r.M1G, {
-        children: (0, n.jsxs)(r.IpV, {
+        u = (0, s.bG)([r.A], () => r.A.messageGroupSpacing);
+    return (0, n.jsx)(a.M1G, {
+        children: (0, n.jsxs)(a.IpV, {
             className: _.VH,
             children: [(0, n.jsx)("div", {
                 className: _.DZ,
@@ -97,14 +97,14 @@ function O() {
                         discriminator: i,
                         mobile: l = !1
                     } = t;
-                    return (0, n.jsx)(r.euF, {
+                    return (0, n.jsx)(a.euF, {
                         status: e,
                         isMobile: l,
-                        size: r._3J.SIZE_32,
+                        size: a._3J.SIZE_32,
                         src: S.Ay.getDefaultAvatarURL(void 0, i),
                         "aria-hidden": !0
                     }, e)
-                }), (0, n.jsx)(r.Button, {
+                }), (0, n.jsx)(a.Button, {
                     text: c.intl.string(c.t["2RHHgz"]),
                     size: "sm",
                     variant: "primary"

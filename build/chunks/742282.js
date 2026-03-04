@@ -1,5 +1,4 @@
-/** chunk id: 742282, original params: e,t,a (module,exports,require) **/
-"use strict";
+/** chunk id: 742282, original params: e,t,n (module,exports,require) **/
 e.exports = {
     f: "orbIconAligned__18bf6"
 }

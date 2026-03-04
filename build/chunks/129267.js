@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(419117),
     l = i(419954),
     s = i(780964),
-    r = i(931852),
-    a = i(528237),
+    a = i(931852),
+    r = i(528237),
     u = i(693804),
     o = i(985018);
 let d = s.X.NOTIFICATIONS_ADVANCED_ACCORDION,
@@ -23,7 +23,7 @@ let d = s.X.NOTIFICATIONS_ADVANCED_ACCORDION,
                 }
             })
         },
-        buildLayout: () => [r.z, a.m, u.j]
+        buildLayout: () => [a.z, r.m, u.j]
     }),
     T = (0, l.zZ)(s.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
         useTitle: () => o.intl.string(o.t["31DySj"]),

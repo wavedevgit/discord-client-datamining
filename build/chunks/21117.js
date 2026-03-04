@@ -5,12 +5,12 @@ i.d(e, {
 var n = i(64700),
     l = i(311907),
     s = i(955572),
-    r = i(406360),
-    a = i(419954),
+    a = i(406360),
+    r = i(419954),
     u = i(964404),
     o = i(780964),
     d = i(985018);
-let A = (0, a.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
+let A = (0, r.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
     useTitle: () => d.intl.string(d.t.nemtgW),
     useSubtitle: () => d.intl.string(d.t["O/Gjvn"]),
     useBadge: () => "beta",
@@ -26,7 +26,7 @@ let A = (0, a.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
         }], [])
     },
     usePredicate: function() {
-        return (0, r.i)("HDRDynamicRangeSetting")
+        return (0, a.i)("HDRDynamicRangeSetting")
     },
     setValue: function(t) {
         (0, s.FU)(t)

@@ -74,7 +74,7 @@ function S() {
         F = r.useRef(new A.A(b)),
         {
             onGuildCardSeen: Y,
-            onGuildCardClick: q
+            onGuildCardClick: W
         } = (0, m.p)({
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
@@ -123,12 +123,12 @@ function S() {
             })]
         }), D ? (0, i.jsx)(I.A, {
             loadId: e.current,
-            onGuildCardClick: q,
+            onGuildCardClick: W,
             onGuildCardSeen: Y
         }) : (0, i.jsx)(E.A, {
             selectedTab: v,
             onScroll: t,
-            onGuildCardClick: q,
+            onGuildCardClick: W,
             onGuildCardSeen: Y
         })]
     })

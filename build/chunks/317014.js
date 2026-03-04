@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(945276),
     l = i(639555),
     s = i(617641),
-    r = i(546140),
-    a = i(776038),
+    a = i(546140),
+    r = i(776038),
     u = i(419954),
     o = i(975571),
     d = i(780964),
@@ -17,8 +17,8 @@ let S = (0, u.zD)(d.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
     useSubtitle: () => T.intl.format(T.t.lunaRv, {
         learnMoreLink: o.A.getArticleURL(A.MVz.SAFETY_ALERTS)
     }),
-    useValue: r.L,
-    setValue: a.a,
+    useValue: a.L,
+    setValue: r.a,
     usePredicate: function() {
         let t = (0, s.Lc)({
                 location: "DMSafetyAlertsSetting"

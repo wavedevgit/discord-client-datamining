@@ -18,8 +18,8 @@ function o(e) {
         isQuestAccepted: u,
         prevIsQuestAccepted: m,
         impressionRef: h,
-        onQuestBarFocus: x
-    } = e, p = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
+        onQuestBarFocus: p
+    } = e, x = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
         f(!0)
     }, []), A = a.useCallback(() => {
         f(!1), g.current || c || o(!1)
@@ -31,15 +31,15 @@ function o(e) {
         v(!1), o(!1)
     }, [o]), S = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-        if (x(), n) return;
+        if (p(), n) return;
         let {
             withDelay: t = !1
         } = e;
-        t ? p.current = window.setTimeout(d, 75) : d()
-    }, [d, n, x]), E = a.useCallback(() => {
+        t ? x.current = window.setTimeout(d, 75) : d()
+    }, [d, n, p]), E = a.useCallback(() => {
         S()
     }, [S]), N = a.useCallback(() => {
-        window.clearTimeout(p.current), _ || b || g.current || o(!1)
+        window.clearTimeout(x.current), _ || b || g.current || o(!1)
     }, [_, b, o]), I = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,

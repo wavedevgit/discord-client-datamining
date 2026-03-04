@@ -1,95 +1,94 @@
-/** chunk id: 11550, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** chunk id: 11550, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => A
 });
-var i = n(311907),
-    s = n(73153),
-    l = n(961350),
+var l = n(311907),
+    i = n(73153),
+    r = n(961350),
     a = n(698441),
-    r = n(357801),
-    o = n(988794);
-let c = {},
-    d = {};
+    d = n(357801),
+    s = n(988794);
+let u = {},
+    o = {};
 
-function u(e) {
-    let t = {
-        ...c
+function c(t) {
+    let e = {
+        ...u
     };
-    delete t[e], c = t;
+    delete e[t], u = e;
     let n = {
-        ...d
+        ...o
     };
-    delete n[e], d = n
+    delete n[t], o = n
 }
-class h extends i.Ay.PersistedStore {
+class E extends l.Ay.PersistedStore {
     static displayName = "UpcomingEventNoticesStore";
     static persistKey = "UpcomingEventNotices";
-    initialize(e) {
-        this.waitFor(l.default, a.Ay), null != e && (c = e.upcomingEventDismissals ?? {}, d = e.upcomingEventSeenTimestamps ?? {})
+    initialize(t) {
+        this.waitFor(r.default, a.Ay), null != t && (u = t.upcomingEventDismissals ?? {}, o = t.upcomingEventSeenTimestamps ?? {})
     }
-    getGuildEventNoticeDismissalTime(e) {
-        return c[e]
+    getGuildEventNoticeDismissalTime(t) {
+        return u[t]
     }
     getAllEventDismissals() {
-        return c
+        return u
     }
-    getUpcomingNoticeSeenTime(e) {
-        return d[e]
+    getUpcomingNoticeSeenTime(t) {
+        return o[t]
     }
     getAllUpcomingNoticeSeenTimes() {
-        return d
+        return o
     }
     getState() {
         return {
-            upcomingEventDismissals: c,
-            upcomingEventSeenTimestamps: d
+            upcomingEventDismissals: u,
+            upcomingEventSeenTimestamps: o
         }
     }
 }
-let A = new h(s.h, {
-    UPCOMING_GUILD_EVENT_NOTICE_HIDE: function(e) {
+let A = new E(i.h, {
+    UPCOMING_GUILD_EVENT_NOTICE_HIDE: function(t) {
         let {
-            eventId: t
-        } = e, n = {
-            ...c
+            eventId: e
+        } = t, n = {
+            ...u
         };
-        n[t] = Date.now(), c = n
+        n[e] = Date.now(), u = n
     },
-    GUILD_SCHEDULED_EVENT_UPDATE: function(e) {
+    GUILD_SCHEDULED_EVENT_UPDATE: function(t) {
         let {
-            guildScheduledEvent: t
-        } = e;
-        (t.status === o.XG.CANCELED || t.status === o.XG.COMPLETED) && u(t.id)
+            guildScheduledEvent: e
+        } = t;
+        (e.status === s.XG.CANCELED || e.status === s.XG.COMPLETED) && c(e.id)
     },
-    GUILD_SCHEDULED_EVENT_DELETE: function(e) {
+    GUILD_SCHEDULED_EVENT_DELETE: function(t) {
         let {
-            guildScheduledEvent: t
-        } = e;
-        u(t.id)
+            guildScheduledEvent: e
+        } = t;
+        c(e.id)
     },
-    GUILD_SCHEDULED_EVENT_USER_ADD: function(e) {
+    GUILD_SCHEDULED_EVENT_USER_ADD: function(t) {
         let {
-            userId: t,
+            userId: e,
             guildEventId: n
-        } = e;
-        if (t !== l.default.getId()) return;
-        let i = a.Ay.getGuildScheduledEvent(n);
-        if (null == i || i.status !== o.XG.SCHEDULED || null != c[n]) return;
-        let s = d[n];
-        if ((0, r.F)(i, void 0, s, !1) === o.w0.NEW_EVENT) {
-            let e = {
-                ...c
+        } = t;
+        if (e !== r.default.getId()) return;
+        let l = a.Ay.getGuildScheduledEvent(n);
+        if (null == l || l.status !== s.XG.SCHEDULED || null != u[n]) return;
+        let i = o[n];
+        if ((0, d.F)(l, void 0, i, !1) === s.w0.NEW_EVENT) {
+            let t = {
+                ...u
             };
-            e[n] = Date.now(), c = e
+            t[n] = Date.now(), u = t
         }
     },
-    UPCOMING_GUILD_EVENT_NOTICE_SEEN: function(e) {
+    UPCOMING_GUILD_EVENT_NOTICE_SEEN: function(t) {
         let {
-            guildEventId: t
-        } = e, n = {
-            ...d
+            guildEventId: e
+        } = t, n = {
+            ...o
         };
-        n[t] = Date.now(), d = n
+        n[e] = Date.now(), o = n
     }
 })

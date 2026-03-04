@@ -5,11 +5,11 @@ i.d(e, {
 var n = i(311907),
     l = i(274372),
     s = i(399925),
-    r = i(419954),
-    a = i(780964),
+    a = i(419954),
+    r = i(780964),
     u = i(753070),
     o = i(985018);
-let d = (0, r.Hn)(a.X.CLIPS_RESOLUTION, {
+let d = (0, a.Hn)(r.X.CLIPS_RESOLUTION, {
     useTitle: () => o.intl.string(o.t.aFudZJ),
     useSubtitle: () => o.intl.string(o.t.nIrkW5),
     useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipsQuality.resolution),

@@ -3,8 +3,8 @@
 n.d(t, {
     L: () => x
 }), n(321073);
-var a = n(627968),
-    r = n(64700),
+var r = n(627968),
+    a = n(64700),
     i = n(503698),
     s = n.n(i),
     l = n(837381),
@@ -15,20 +15,20 @@ var a = n(627968),
     _ = n(379848),
     m = n(97469),
     g = n(933297),
-    p = n(894858),
-    b = n(188180),
-    f = n(985018),
-    h = n(658646);
+    b = n(894858),
+    p = n(188180),
+    h = n(985018),
+    f = n(658646);
 
 function x(e) {
     let {
         root: t,
         footer: n,
         onClose: i,
-        emptyState: b,
+        emptyState: p,
         searchQuery: x,
         onSearchChange: A
-    } = e, v = p.A.useField("showNavigationMobile"), S = r.useRef(null), T = r.useMemo(() => {
+    } = e, v = b.A.useField("showNavigationMobile"), S = a.useRef(null), T = a.useMemo(() => {
         let e = [];
         return t.layout.forEach(t => {
             let {
@@ -44,15 +44,15 @@ function x(e) {
                 }
             })
         }), e
-    }, [t.layout]), [I, N] = r.useMemo(() => {
+    }, [t.layout]), [I, N] = a.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
     }, [t.layout]), j = (0, m.NC)(), k = (0, d.A)("settings-sidebar", S);
-    return r.useEffect(() => {
-        let e = p.A.subscribe(e => {
+    return a.useEffect(() => {
+        let e = b.A.subscribe(e => {
             let {
                 currentPanelKey: t
             } = e;
@@ -61,7 +61,7 @@ function x(e) {
             if (null == S.current || null == e) return;
             let t = S.current.getScrollerNode()?.querySelector(`[data-settings-sidebar-item="${e}"]`);
             if (null == t) return;
-            let n = p.A.getField("disableSidebarScrollAnimate");
+            let n = b.A.getField("disableSidebarScrollAnimate");
             requestAnimationFrame(() => {
                 S.current?.scrollIntoViewNode({
                     node: t,
@@ -74,66 +74,66 @@ function x(e) {
             fireImmediately: !0
         });
         return () => {
-            e(), p.A.setState({
+            e(), b.A.setState({
                 disableSidebarScrollAnimate: !0
             })
         }
-    }, []), (0, a.jsx)(c.NPJ, {
+    }, []), (0, r.jsx)(c.NPJ, {
         theme: j,
-        children: e => (0, a.jsx)(_.Ay, {
+        children: e => (0, r.jsx)(_.Ay, {
             contentTypes: T,
             children: t => {
                 let {
-                    visibleContent: r
+                    visibleContent: a
                 } = t;
-                return (0, a.jsxs)("div", {
-                    className: s()(h.pz, e, {
-                        [h.Hw]: o.Fr,
-                        [h.n7]: v
+                return (0, r.jsxs)("div", {
+                    className: s()(f.pz, e, {
+                        [f.Hw]: o.Fr,
+                        [f.n7]: v
                     }),
-                    children: [(0, a.jsxs)("div", {
-                        className: h.gM,
-                        children: [o.Fr && (0, a.jsx)("div", {
-                            className: h.hg,
-                            children: (0, a.jsx)(c.K0, {
+                    children: [(0, r.jsxs)("div", {
+                        className: f.gM,
+                        children: [o.Fr && (0, r.jsx)("div", {
+                            className: f.hg,
+                            children: (0, r.jsx)(c.K0, {
                                 icon: c.d$L,
                                 onClick: i,
                                 variant: "icon-only",
                                 size: "sm",
-                                "aria-label": f.intl.string(f.t.cpT0Cq)
+                                "aria-label": h.intl.string(h.t.cpT0Cq)
                             })
-                        }), (0, a.jsx)("div", {
-                            children: I.map(e => (0, a.jsx)(y, {
+                        }), (0, r.jsx)("div", {
+                            children: I.map(e => (0, r.jsx)(y, {
                                 section: e,
-                                visibleContent: r,
+                                visibleContent: a,
                                 hoisted: !0
                             }, e.key))
-                        }), null != x && null != A && (0, a.jsx)(C, {
+                        }), null != x && null != A && (0, r.jsx)(C, {
                             searchQuery: x,
                             onSearchChange: A
-                        }), null != b && 0 === N.length && (0, a.jsx)(b, {})]
-                    }), (0, a.jsx)(l.hD, {
+                        }), null != p && 0 === N.length && (0, r.jsx)(p, {})]
+                    }), (0, r.jsx)(l.hD, {
                         navigator: k,
-                        children: (0, a.jsx)(l.PR, {
+                        children: (0, r.jsx)(l.PR, {
                             children: e => {
                                 let {
                                     ref: t,
                                     ...i
                                 } = e;
-                                return (0, a.jsxs)(c.ChK, {
+                                return (0, r.jsxs)(c.ChK, {
                                     ref: e => {
                                         S.current = e, t.current = e?.getScrollerNode() ?? null
                                     },
-                                    className: h.Mt,
+                                    className: f.Mt,
                                     fade: !0,
                                     ...i,
-                                    children: [(0, a.jsx)("nav", {
-                                        className: h.C$,
-                                        children: N.map(e => (0, a.jsx)(y, {
+                                    children: [(0, r.jsx)("nav", {
+                                        className: f.C$,
+                                        children: N.map(e => (0, r.jsx)(y, {
                                             section: e,
-                                            visibleContent: r
+                                            visibleContent: a
                                         }, e.key))
-                                    }), null != n && (0, a.jsx)(n, {})]
+                                    }), null != n && (0, r.jsx)(n, {})]
                                 })
                             }
                         })
@@ -148,23 +148,23 @@ function y(e) {
     let {
         section: t,
         visibleContent: n,
-        hoisted: r = !1
+        hoisted: a = !1
     } = e, i = t.useTitle?.();
-    return (0, a.jsxs)("ul", {
-        className: h.uW,
+    return (0, r.jsxs)("ul", {
+        className: f.uW,
         "aria-label": i,
-        children: [null != i && (0, a.jsx)("div", {
-            className: h.a9,
-            children: (0, a.jsx)(c.Heading, {
-                className: h.Pf,
+        children: [null != i && (0, r.jsx)("div", {
+            className: f.a9,
+            children: (0, r.jsx)(c.Heading, {
+                className: f.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
                 children: i
             })
-        }), t.layout.map(e => (0, a.jsx)(b.X, {
+        }), t.layout.map(e => (0, r.jsx)(p.X, {
             node: e,
             visibleContent: n,
-            hoisted: r
+            hoisted: a
         }, e.key))]
     })
 }
@@ -173,12 +173,12 @@ function C(e) {
     let {
         searchQuery: t,
         onSearchChange: n
-    } = e, i = r.useCallback(() => {
+    } = e, i = a.useCallback(() => {
         n("")
     }, [n]);
-    return (0, a.jsx)("div", {
-        className: h.PP,
-        children: (0, a.jsx)(c.IWV, {
+    return (0, r.jsx)("div", {
+        className: f.PP,
+        children: (0, r.jsx)(c.IWV, {
             size: "md",
             query: t,
             onChange: n,

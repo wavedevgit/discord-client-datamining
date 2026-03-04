@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(290595),
     l = i(419954),
     s = i(153488),
-    r = i(780964),
-    a = i(589641),
+    a = i(780964),
+    r = i(589641),
     u = i(766850),
     o = i(165279),
     d = i(937966),
@@ -14,9 +14,9 @@ var n = i(290595),
     T = i(789643),
     S = i(719587),
     E = i(985018);
-let g = (0, l.zZ)(r.X.DATA_USAGE_CATEGORY, {
+let g = (0, l.zZ)(a.X.DATA_USAGE_CATEGORY, {
     useTitle: () => E.intl.string(E.t.bvw42E),
-    useInlineNotice: a.I,
+    useInlineNotice: r.I,
     initialize: () => {
         s.A.fetchedConsents || (0, n.Q)()
     },

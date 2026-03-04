@@ -6,8 +6,8 @@ var n = i(627968);
 i(64700);
 var l = i(311907),
     s = i(397927),
-    r = i(926919),
-    a = i(172272),
+    a = i(926919),
+    r = i(172272),
     u = i(540999),
     o = i(111162),
     d = i(253932),
@@ -42,12 +42,12 @@ function E() {
         onlyShowPreviewAppCollections: o.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: o.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: L,
-        verticalSpacing: b
-    } = (0, a.Or)(), {
-        setHorizontalSpacing: D,
+        horizontalSpacing: b,
+        verticalSpacing: D
+    } = (0, r.Or)(), {
+        setHorizontalSpacing: L,
         setVerticalSpacing: p
-    } = a.Or.getState(), R = d.HZ.useSetting();
+    } = r.Or.getState(), m = d.HZ.useSetting();
     return e ? [(0, n.jsxs)(s.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -59,16 +59,16 @@ function E() {
         children: [(0, n.jsx)(s.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: R,
+            checked: m,
             action: () => {
-                d.HZ.updateSetting(!R)
+                d.HZ.updateSetting(!m)
             }
         }, "always-deliver"), (0, n.jsx)(s.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
             checked: _,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     canary: !_
                 })
             }
@@ -77,7 +77,7 @@ function E() {
             label: "Preview Unpublished Collections",
             checked: N,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     onlyShowPreviewAppCollections: !N
                 })
             }
@@ -86,7 +86,7 @@ function E() {
             label: "Disable Collections Cache",
             checked: O,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     disableAppCollectionsCache: !O
                 })
             }
@@ -104,7 +104,7 @@ function E() {
             label: "Gateway Events",
             checked: i,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     logGatewayEvents: !i
                 })
             }
@@ -113,7 +113,7 @@ function E() {
             label: "Overlay RPC Events",
             checked: E,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     logOverlayEvents: !E
                 })
             }
@@ -122,7 +122,7 @@ function E() {
             label: "Analytics Events",
             checked: g,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     logAnalyticsEvents: !g
                 })
             }
@@ -131,7 +131,7 @@ function E() {
             label: "Tracing Requests",
             checked: c,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     trace: !c
                 })
             }
@@ -140,7 +140,7 @@ function E() {
             label: "Prevent Popouts From Closing",
             checked: C,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     preventPopoutClose: !C
                 })
             }
@@ -158,7 +158,7 @@ function E() {
             label: "Accessibility Auditing",
             checked: I,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     axeEnabled: !I
                 })
             }
@@ -167,7 +167,7 @@ function E() {
             label: "Enable Layout Debugging",
             checked: t,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     layoutDebuggingEnabled: !t
                 })
             }
@@ -178,10 +178,10 @@ function E() {
                 control: (t, e) => (0, n.jsx)(s.i42, {
                     ...t,
                     ref: e,
-                    value: L,
+                    value: b,
                     minValue: 0,
-                    maxValue: a.YR,
-                    onChange: t => D(t),
+                    maxValue: r.YR,
+                    onChange: t => L(t),
                     renderValue: t => `${Math.round(t)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -191,9 +191,9 @@ function E() {
                 control: (t, e) => (0, n.jsx)(s.i42, {
                     ...t,
                     ref: e,
-                    value: b,
+                    value: D,
                     minValue: 0,
-                    maxValue: a.YR,
+                    maxValue: r.YR,
                     onChange: t => p(t),
                     "aria-label": "Vertical Spacing",
                     renderValue: t => `${Math.round(t)}px`

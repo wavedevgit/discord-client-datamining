@@ -1,6 +1,6 @@
 /** chunk id: 686267, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968);
 n(64700);
@@ -18,7 +18,7 @@ let h = {
         [r.wP.REFRESH_APP]: u.intl.string(c.default.SzfxQ3),
         [r.wP.AGE_VERIFICATION]: u.intl.string(c.default["dSkE/A"])
     },
-    x = function() {
+    p = function() {
         let {
             task: e
         } = (0, l.Z)(), t = e.flow_context.tasks.findIndex(t => t.task_type === e.task_type);

@@ -73,7 +73,7 @@ function I(e) {
         isLoading: N
     } = (0, r.A)(t.applicationId), {
         registerDragHandleRef: S
-    } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
+    } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), k = C?.id === n, R = !I && k, {
         isDragging: w
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
@@ -87,7 +87,7 @@ function I(e) {
             className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
             hideTooltip: w,
             coverRef: E
-        }), k && (0, i.jsx)(d.jV, {
+        }), R && (0, i.jsx)(d.jV, {
             buttonRef: S(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
@@ -96,7 +96,7 @@ function I(e) {
             guildId: c,
             channelId: p,
             className: _.Ez
-        }), k && (0, i.jsx)(m.A, {
+        }), R && (0, i.jsx)(m.A, {
             game: t,
             widgetType: l,
             className: _.vS,
@@ -106,7 +106,7 @@ function I(e) {
     });
     return N ? (0, i.jsx)("div", {
         className: h.mD
-    }) : k ? (0, i.jsx)(A, {
+    }) : R ? (0, i.jsx)(A, {
         widgetType: l,
         index: j ?? 0,
         game: t,

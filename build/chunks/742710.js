@@ -112,7 +112,7 @@ function C(e) {
     })
 }
 
-function R(e) {
+function k(e) {
     let {
         text: t,
         user: n,
@@ -137,7 +137,7 @@ function R(e) {
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         text: t,
         user: n,
@@ -152,7 +152,7 @@ function k(e) {
             action: "PRESS_ADD_COMMENTARY",
             widgetEdited: d
         }), _("editing")
-    }, [d, p]), R = l.useCallback(() => {
+    }, [d, p]), k = l.useCallback(() => {
         let e = A.trim(),
             n = e !== (t ?? "").trim();
         (0, f.oc)(d, u, "" !== e ? e : void 0), _("completed"), n && p({
@@ -160,7 +160,7 @@ function k(e) {
             widgetEdited: d,
             gameId: u
         })
-    }, [d, u, A, t, p]), k = l.useCallback(e => {
+    }, [d, u, A, t, p]), R = l.useCallback(e => {
         I(e)
     }, []);
     return l.useEffect(() => {
@@ -177,12 +177,12 @@ function k(e) {
             id: g,
             value: A,
             placeholder: T,
-            onChange: k,
-            onBlur: R,
+            onChange: R,
+            onBlur: k,
             rows: 3,
             autoFocus: "editing" === h,
             onKeyDown: e => {
-                "Enter" !== e.key || e.shiftKey || (e.preventDefault(), R())
+                "Enter" !== e.key || e.shiftKey || (e.preventDefault(), k())
             },
             maxLength: 200
         })]
@@ -236,14 +236,14 @@ function w(e) {
     } = a, {
         coverImageUrl: L,
         gameName: O,
-        isLoading: P
-    } = (0, c.A)(y), D = {
+        isLoading: D
+    } = (0, c.A)(y), P = {
         variant: "heading-sm/medium",
         color: "text-default"
     }, G = g.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, f.cv)(o), F = !d && M, W = F && (0, f.y9)(o), H = F && !U, {
         registerDragHandleRef: B
     } = (0, h.r)();
-    if (P) return (0, i.jsx)(A.E, {});
+    if (D) return (0, i.jsx)(A.E, {});
     let X = () => (0, i.jsx)(_.A, {
             coverRef: x,
             className: null == L || d ? void 0 : T.iL,
@@ -265,21 +265,21 @@ function w(e) {
             }) : X(), (0, i.jsxs)("div", {
                 className: b.zH,
                 children: [d ? (0, i.jsx)(r.Heading, {
-                    ...D,
+                    ...P,
                     children: O
                 }) : (0, i.jsx)(S, {
                     applicationId: y,
                     userId: t.id,
                     gameName: O,
-                    ...D
-                }), W ? (0, i.jsx)(k, {
+                    ...P
+                }), W ? (0, i.jsx)(R, {
                     text: C,
                     user: t,
                     guildId: n,
                     channelId: l,
                     widgetType: o,
                     applicationId: y
-                }) : (0, i.jsx)(R, {
+                }) : (0, i.jsx)(k, {
                     text: C,
                     user: t,
                     guildId: n,

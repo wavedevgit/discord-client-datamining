@@ -1,6 +1,6 @@
 /** chunk id: 495242, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Z: () => p
+    Z: () => x
 });
 var a = n(627968);
 n(64700);
@@ -41,7 +41,7 @@ function h(e) {
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         xboxAndPlaystationAccounts: t,
         quest: n,
@@ -54,13 +54,13 @@ function x(e) {
     }) : null
 }
 
-function p(e) {
+function x(e) {
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(i.Text, {
             color: "text-muted",
             variant: "text-xs/medium",
             children: u.intl.string(u.t.EJFSvD)
-        }), (0, a.jsx)(x, {
+        }), (0, a.jsx)(p, {
             ...e
         })]
     })

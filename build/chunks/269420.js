@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(419954),
     l = i(780964),
     s = i(907218),
-    r = i(311453),
-    a = i(812757),
+    a = i(311453),
+    r = i(812757),
     u = i(424305),
     o = i(256199),
     d = i(229823),
@@ -18,5 +18,5 @@ var n = i(419954),
     c = i(985018);
 let _ = (0, n.zZ)(l.X.CLIPS_RECORDING_CATEGORY, {
     useTitle: () => c.intl.string(c.t.iIwmV5),
-    buildLayout: () => [o.e, r.X, S.T, E.B, g.Z, u.R, d.j, s.k, a.t, A.N, T.$]
+    buildLayout: () => [o.e, a.X, S.T, E.B, g.Z, u.R, d.j, s.k, r.t, A.N, T.$]
 })

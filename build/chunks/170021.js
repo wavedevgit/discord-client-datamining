@@ -5,20 +5,20 @@ i.d(e, {
 var n = i(864145),
     l = i(419954),
     s = i(824744),
-    r = i(253932),
-    a = i(780964),
+    a = i(253932),
+    r = i(780964),
     u = i(985018);
-let o = (0, l.sN)(a.X.SOUNDMOJI_VOLUME_SETTING, {
+let o = (0, l.sN)(r.X.SOUNDMOJI_VOLUME_SETTING, {
     useTitle: () => u.intl.string(u.t["2JbvKw"]),
     useSubtitle: () => u.intl.string(u.t.INenzY),
     setValue: function(t) {
         let e = (0, s.w)(t);
-        r.HO.updateSetting(e)
+        a.HO.updateSetting(e)
     },
     minValue: 0,
     maxValue: 100,
     getInitialValue: function() {
-        let t = r.HO.getSetting();
+        let t = a.HO.getSetting();
         return (0, s.M)(t)
     },
     onValueRender: function(t) {

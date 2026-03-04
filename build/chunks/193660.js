@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(311907),
     l = i(955572),
     s = i(775602),
-    r = i(688810),
-    a = i(259065),
+    a = i(688810),
+    r = i(259065),
     u = i(419954),
     o = i(780964),
     d = i(358776),
@@ -17,10 +17,10 @@ let S = (0, u.zD)(o.X.DISPLAY_NAME_STYLES, {
     useSubtitle: () => {
         let {
             analyticsLocations: t
-        } = (0, r.Ay)(), e = (0, d.bp)("DisplayNameStyles");
+        } = (0, a.Ay)(), e = (0, d.bp)("DisplayNameStyles");
         return A.intl.format(e ? T.default.aEax6P : T.default.L8U56h, {
             onClickOpenModal() {
-                (0, a.L)({
+                (0, r.L)({
                     analyticsLocations: t
                 })
             }

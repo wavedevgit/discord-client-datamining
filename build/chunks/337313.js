@@ -6,8 +6,8 @@ i.d(e, {
 var n = i(311907),
     l = i(233545),
     s = i(419954),
-    r = i(430452),
-    a = i(412780),
+    a = i(430452),
+    r = i(412780),
     u = i(287809),
     o = i(837921),
     d = i(780964),
@@ -15,11 +15,11 @@ var n = i(311907),
     T = i(985018);
 
 function S() {
-    return (0, n.bG)([u.default, r.Ay], () => {
+    return (0, n.bG)([u.default, a.Ay], () => {
         let t = u.default.getCurrentUser(),
             e = t?.isStaff() ?? !1,
             i = "canary" === o.Ay.releaseChannel || "development" === o.Ay.releaseChannel,
-            n = r.Ay.supports(A.O5.CONNECTION_REPLAY);
+            n = a.Ay.supports(A.O5.CONNECTION_REPLAY);
         return e && i && n
     })
 }
@@ -27,7 +27,7 @@ let E = (0, s.zD)(d.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
     useTitle: () => T.intl.string(T.t.U4FgFK),
     useSubtitle: () => T.intl.string(T.t.Lm72RU),
     useValue: function() {
-        return (0, n.bG)([a.Ay], () => a.Ay.shouldRecordNextConnection())
+        return (0, n.bG)([r.Ay], () => r.Ay.shouldRecordNextConnection())
     },
     setValue: l.Et,
     usePredicate: S

@@ -233,7 +233,7 @@ function Y(e) {
     }
     throw Error("Invalid Dispatch stage")
 }
-class q extends r.PureComponent {
+class W extends r.PureComponent {
     get isFocused() {
         let {
             cellProps: e
@@ -440,7 +440,7 @@ class q extends r.PureComponent {
         return null
     }
 }
-let W = () => (0, i.jsx)(V, {
+let q = () => (0, i.jsx)(V, {
         icon: _.udU,
         tooltip: w.intl.string(w.t.YGm6SZ),
         onClick: () => g.U()
@@ -489,7 +489,7 @@ let W = () => (0, i.jsx)(V, {
         cellClassName: U.Ay,
         headerCellClassName: U.VD,
         bodyCellClassName: U.so,
-        render: (e, t) => (0, i.jsx)(q, {
+        render: (e, t) => (0, i.jsx)(W, {
             item: e,
             cellProps: t
         })
@@ -504,7 +504,7 @@ let W = () => (0, i.jsx)(V, {
                 source: M.ThZ.APPLICATION_LIBRARY_UPDATES
             }) : null : null != e.state ? e.state.type !== M.WTw.UP_TO_DATE && (n = e.index > 0 ? (0, i.jsx)(z, {
                 item: e
-            }) : null != t && t.paused ? (0, i.jsx)(W, {}) : (0, i.jsx)(K, {
+            }) : null != t && t.paused ? (0, i.jsx)(q, {}) : (0, i.jsx)(K, {
                 item: e
             }), r = (0, i.jsx)($, {
                 item: e

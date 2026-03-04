@@ -1,10 +1,10 @@
 /** chunk id: 418829, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => b
 });
-var a = n(627968),
-    r = n(64700),
+var r = n(627968),
+    a = n(64700),
     i = n(942381),
     s = n(964486),
     l = n(250703),
@@ -20,17 +20,17 @@ function g(e) {
         partialRoot: t,
         target: n,
         defaultTarget: g,
-        onClose: p,
-        sidebarFooter: b,
-        onPanelChange: f,
-        emptyState: h,
+        onClose: b,
+        sidebarFooter: p,
+        onPanelChange: h,
+        emptyState: f,
         searchQuery: x,
         onSearchChange: y
     } = e, C = _.A.useField("currentPanelKey"), {
         node: A,
         visibleDirectory: v,
         accessibleDirectory: S
-    } = (0, d.Ay)(t, x ?? ""), T = null != n && v.entry(n)?.parentPanelKey != null ? n : g, I = r.useMemo(() => {
+    } = (0, d.Ay)(t, x ?? ""), T = null != n && v.entry(n)?.parentPanelKey != null ? n : g, I = a.useMemo(() => {
         let e = S.entry(C ?? T)?.parentPanelKey;
         if (null != e) return S.getPanelOrThrow(e)
     }, [C, S, T]), {
@@ -39,22 +39,22 @@ function g(e) {
     (0, s.Ay)(() => {
         let e = v.entry(T).parentPanelKey,
             t = v.entry(T)?.parentTabKey,
-            a = v.entry(T)?.parentCategoryKey,
-            r = v.entry(T)?.parentAccordionKey;
+            r = v.entry(T)?.parentCategoryKey,
+            a = v.entry(T)?.parentAccordionKey;
         return _.A.setState({
             currentPanelKey: e,
             currentTabKeys: null != t ? new Map([
                 [e, t]
             ]) : new Map,
-            currentCategoryKey: a,
+            currentCategoryKey: r,
             navTransition: {
                 targetKey: T,
-                targetAccordionKey: r,
+                targetAccordionKey: a,
                 animateScroll: !1
             },
             showNavigationMobile: null == n
         }), () => _.A.resetState()
-    }), r.useEffect(() => _.A.subscribe(e => ({
+    }), a.useEffect(() => _.A.subscribe(e => ({
         requestedTargetKey: e.requestedTargetKey,
         currentPanelKey: e.currentPanelKey
     }), e => {
@@ -63,52 +63,52 @@ function g(e) {
             currentPanelKey: n
         } = e;
         if (null == t) return;
-        let a = v.entry(t);
-        if (null == a) return void y?.("");
-        let r = a.parentPanelKey;
-        if (null == r) return void _.A.setState({
+        let r = v.entry(t);
+        if (null == r) return void y?.("");
+        let a = r.parentPanelKey;
+        if (null == a) return void _.A.setState({
             requestedTargetKey: void 0
         });
         let i = _.A.getField("currentTabKeys"),
-            s = null != a.parentTabKey ? new Map(i).set(r, a.parentTabKey) : i,
-            l = a.parentPanelKey === n && (null == a.parentTabKey || a.parentTabKey === i.get(r)),
+            s = null != r.parentTabKey ? new Map(i).set(a, r.parentTabKey) : i,
+            l = r.parentPanelKey === n && (null == r.parentTabKey || r.parentTabKey === i.get(a)),
             o = () => {
                 _.A.setState({
                     requestedTargetKey: void 0,
-                    currentPanelKey: a.parentPanelKey,
+                    currentPanelKey: r.parentPanelKey,
                     currentTabKeys: s,
-                    currentCategoryKey: a.parentCategoryKey,
+                    currentCategoryKey: r.parentCategoryKey,
                     navTransition: {
                         targetKey: t,
-                        targetAccordionKey: a.parentAccordionKey,
+                        targetAccordionKey: r.parentAccordionKey,
                         animateScroll: l
                     }
                 })
             };
-        a.parentPanelKey !== n ? N(() => {
-            o(), f?.(r)
+        r.parentPanelKey !== n ? N(() => {
+            o(), h?.(a)
         }) : o()
     }, {
         equalityFn: i.x
-    }), [v, N, f, y]);
-    let j = r.useMemo(() => ({
+    }), [v, N, h, y]);
+    let j = a.useMemo(() => ({
             visibleDirectory: v,
             accessibleDirectory: S
         }), [v, S]),
-        k = r.useMemo(() => () => N(p), [N, p]),
+        k = a.useMemo(() => () => N(b), [N, b]),
         E = null != C ? v.get(C) : void 0;
-    return (0, a.jsx)(u.x.Provider, {
+    return (0, r.jsx)(u.x.Provider, {
         value: j,
-        children: (0, a.jsxs)("div", {
+        children: (0, r.jsxs)("div", {
             className: m.k,
-            children: [(0, a.jsx)(o.L, {
+            children: [(0, r.jsx)(o.L, {
                 root: A,
-                footer: b,
+                footer: p,
                 onClose: k,
-                emptyState: h,
+                emptyState: f,
                 searchQuery: x,
                 onSearchChange: y
-            }), (0, a.jsx)(l.A, {
+            }), (0, r.jsx)(l.A, {
                 onClose: k,
                 setting: E ?? I
             })]
@@ -116,9 +116,9 @@ function g(e) {
     })
 }
 
-function p(e) {
-    return (0, a.jsx)(c.ms, {
-        children: (0, a.jsx)(g, {
+function b(e) {
+    return (0, r.jsx)(c.ms, {
+        children: (0, r.jsx)(g, {
             ...e
         })
     })

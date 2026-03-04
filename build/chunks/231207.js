@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(384904),
     h = n(73825),
-    x = n(86980),
-    p = n(793574),
+    p = n(86980),
+    x = n(793574),
     g = n(688810),
     _ = n(541689),
     f = n(721923),
@@ -50,12 +50,12 @@ let D = function() {
         id: e.id,
         value: e,
         label: e.name
-    })), [P, L] = i.useState(M.length > 0 ? M[0].value : null), [U, B] = i.useState(""), [G, F] = i.useState({
+    })), [P, U] = i.useState(M.length > 0 ? M[0].value : null), [L, B] = i.useState(""), [G, F] = i.useState({
         plan_id: R.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
     }), V = "true" !== G.gift && null != D, [W, H] = i.useState(M.length > 0 ? M[0].value : null), {
         analyticsLocations: K
-    } = (0, g.Ay)(p.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
+    } = (0, g.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [z, $] = i.useState(""), [q, Q] = i.useState(k.dJq), {
         balance: Y,
         isFetching: J,
         error: X
@@ -146,7 +146,7 @@ let D = function() {
                         label: "Boost",
                         value: P,
                         options: M,
-                        onSelectionChange: e => L(e),
+                        onSelectionChange: e => U(e),
                         selectionMode: "single",
                         fullWidth: !0
                     }), null != P ? (0, a.jsx)(f.A, {
@@ -168,17 +168,17 @@ let D = function() {
                         children: [(0, a.jsx)(u.ksK, {
                             label: "Standalone: Trial Promotion Redemption",
                             placeholder: "Promotion Code",
-                            value: U,
+                            value: L,
                             onChange: e => B(e)
                         }), (0, a.jsx)(d.m_, {
                             text: "Need Promotion Code",
-                            shouldShow: U.length < 1,
+                            shouldShow: L.length < 1,
                             children: (0, a.jsx)(u.Button, {
                                 variant: "primary",
                                 text: "Open Link",
-                                disabled: U.length < 1,
+                                disabled: L.length < 1,
                                 onClick: () => {
-                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(U))
+                                    window.open(k.BVt.BILLING_PROMOTION_REDEMPTION(L))
                                 }
                             })
                         })]
@@ -315,7 +315,7 @@ let D = function() {
                     }), (0, a.jsx)(u.Button, {
                         variant: "primary",
                         text: "Open App Subs Modal for Activity",
-                        onClick: () => (0, x.j)({
+                        onClick: () => (0, p.j)({
                             applicationId: z,
                             skuId: q,
                             openPremiumPaymentModal: () => !0,

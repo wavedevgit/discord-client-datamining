@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(311907),
     l = i(10094),
     s = i(683760),
-    r = i(419954),
-    a = i(780964),
+    a = i(419954),
+    r = i(780964),
     u = i(788868);
 let o = [{
         id: "none",
@@ -25,7 +25,7 @@ let o = [{
         label: "Nitro Standard",
         value: u.PremiumTypes.TIER_2
     }],
-    d = (0, r.Hn)(a.X.PREMIUM_TYPE_OVERRIDE, {
+    d = (0, a.Hn)(r.X.PREMIUM_TYPE_OVERRIDE, {
         useTitle: () => "Premium Type Override",
         useSearchTerms: () => ["nitro override"],
         useSubtitle: () => "Overrides the client's local premium type.",

@@ -5,11 +5,11 @@ i.d(e, {
 var n = i(419954),
     l = i(100406),
     s = i(878460),
-    r = i(780964),
-    a = i(342002),
+    a = i(780964),
+    r = i(342002),
     u = i(297147),
     o = i(985018);
-let d = (0, n.zZ)(r.X.NOTIFICATIONS_EMAIL_CATEGORY, {
+let d = (0, n.zZ)(a.X.NOTIFICATIONS_EMAIL_CATEGORY, {
     useTitle: () => o.intl.string(o.t["w/qqKK"]),
     initialize: function() {
         let {
@@ -17,5 +17,5 @@ let d = (0, n.zZ)(r.X.NOTIFICATIONS_EMAIL_CATEGORY, {
         } = s.A.getEmailSettings();
         t || (0, l.cR)()
     },
-    buildLayout: () => [...a.P, u.Q]
+    buildLayout: () => [...r.P, u.Q]
 })

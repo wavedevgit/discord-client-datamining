@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(64700),
     l = i(311907),
     s = i(419954),
-    r = i(933297),
-    a = i(803224),
+    a = i(933297),
+    r = i(803224),
     u = i(780964),
     o = i(840065),
     d = i(856134),
@@ -16,10 +16,10 @@ var n = i(64700),
 let E = (0, s.zZ)(u.X.SOUNDS_CATEGORY, {
     useTitle: () => S.intl.string(S.t.MKWyKc),
     useInlineNotice: function() {
-        let t = (0, l.bG)([a.A], () => a.A.getDisableAllSounds());
+        let t = (0, l.bG)([r.A], () => r.A.getDisableAllSounds());
         return n.useMemo(() => {
             if (t) return {
-                type: r.lT.INLINE_NOTICE,
+                type: a.lT.INLINE_NOTICE,
                 noticeType: "warning",
                 useText: () => S.intl.format(S.t.fRvixS, {
                     onClick: () => (0, o.openUserSettings)(u.X.NOTIFICATIONS_SOUNDS_CATEGORY)

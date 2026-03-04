@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(158954),
-    r = i(311907),
-    a = i(397927),
+    a = i(311907),
+    r = i(397927),
     u = i(827343),
     o = i(419954),
     d = i(430452),
@@ -23,7 +23,7 @@ let c = i(993830),
     };
 
 function C() {
-    let t = (0, r.bG)([T.A], () => (0, s.qB1)(T.A.theme));
+    let t = (0, a.bG)([T.A], () => (0, s.qB1)(T.A.theme));
     return (0, n.jsx)("img", {
         src: t ? c : _,
         width: 48,
@@ -34,7 +34,7 @@ function C() {
 let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t.t8Qhib), g.intl.string(g.t.hmfkCi)],
     usePredicate: function() {
-        return (0, r.bG)([d.Ay], () => d.Ay.isInputProfileCustom() && d.Ay.isNoiseSuppressionSupported())
+        return (0, a.bG)([d.Ay], () => d.Ay.isInputProfileCustom() && d.Ay.isNoiseSuppressionSupported())
     },
     Component: function() {
         let t = l.useCallback(t => {
@@ -45,7 +45,7 @@ let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 noiseSuppression: i,
                 isNoiseSuppressionSupported: o,
                 isNoiseCancellationSupported: T
-            } = (0, r.cf)([d.Ay], () => ({
+            } = (0, a.cf)([d.Ay], () => ({
                 noiseCancellation: d.Ay.getNoiseCancellation(),
                 noiseSuppression: d.Ay.getNoiseSuppression(),
                 isNoiseSuppressionSupported: d.Ay.isNoiseSuppressionSupported(),
@@ -73,7 +73,7 @@ let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
         return (0, n.jsxs)(s.BJc, {
             direction: "vertical",
             gap: 0,
-            children: [(0, n.jsx)(a.l6P, {
+            children: [(0, n.jsx)(r.l6P, {
                 label: g.intl.string(g.t.t8Qhib),
                 description: c,
                 layout: "horizontal",

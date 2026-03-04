@@ -3,44 +3,44 @@
 n.d(t, {
     u: () => s
 }), n(321073);
-var a = n(64700),
-    r = n(894858),
+var r = n(64700),
+    a = n(894858),
     i = n(397274);
 
 function s(e) {
-    let t = a.useRef(null),
-        n = a.useRef(new Set);
-    a.useEffect(() => {
+    let t = r.useRef(null),
+        n = r.useRef(new Set);
+    r.useEffect(() => {
         let e = i.A.getPanelScrollerNode();
         if (null == e) return;
-        let a = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
+        let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
             s = new Map,
             l = [];
-        return a.forEach(e => {
+        return r.forEach(e => {
             let t = e.getAttribute("data-settings-category-key");
             null != t && (s.set(e, t), l.push(t))
         }), t.current = new IntersectionObserver(e => {
             if (e.forEach(e => {
                     let {
                         isIntersecting: t,
-                        target: a
-                    } = e, r = s.get(a);
-                    null != r && (t ? n.current.add(r) : n.current.delete(r))
-                }), r.A.getField("disableSidebarCategoryAutoSelect")) return;
+                        target: r
+                    } = e, a = s.get(r);
+                    null != a && (t ? n.current.add(a) : n.current.delete(a))
+                }), a.A.getField("disableSidebarCategoryAutoSelect")) return;
             let t = [];
             if (l.forEach(e => {
                     n.current.has(e) && t.push(e)
                 }), 0 === t.length) return;
-            let a = t[0];
-            r.A.getField("currentCategoryKey") !== a && r.A.setState({
-                currentCategoryKey: a
+            let r = t[0];
+            a.A.getField("currentCategoryKey") !== r && a.A.setState({
+                currentCategoryKey: r
             })
         }, {
             root: e,
             rootMargin: "0px 100000px 0px 100000px",
             threshold: 1
-        }), a.forEach(e => t.current?.observe(e)), () => {
-            a.forEach(e => t.current?.unobserve(e)), t.current?.disconnect(), t.current = null
+        }), r.forEach(e => t.current?.observe(e)), () => {
+            r.forEach(e => t.current?.unobserve(e)), t.current?.disconnect(), t.current = null
         }
     }, [e])
 }

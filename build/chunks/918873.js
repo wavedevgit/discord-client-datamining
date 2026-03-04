@@ -5,16 +5,16 @@ i.d(e, {
 var n = i(64700),
     l = i(311907),
     s = i(827343),
-    r = i(419954),
-    a = i(430452),
+    a = i(419954),
+    r = i(430452),
     u = i(780964),
     o = i(593942),
     d = i(731854),
     A = i(985018);
-let T = (0, r.Hn)(u.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
+let T = (0, a.Hn)(u.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
     useTitle: () => A.intl.string(A.t.wVBHr0),
     useValue: function() {
-        return (0, l.bG)([a.Ay], () => a.Ay.getAudioSubsystem())
+        return (0, l.bG)([r.Ay], () => r.Ay.getAudioSubsystem())
     },
     setValue: function(t) {
         (0, o.A)(A.intl.string(A.t.uY7AcQ), A.intl.string(A.t.gBqik6), () => s.A.setAudioSubsystem(t))
@@ -24,10 +24,10 @@ let T = (0, r.Hn)(u.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
             legacyAudioSubsystemSupported: t,
             experimentalAudioSubsystemSupported: e,
             automaticAudioSubsystemSupported: i
-        } = (0, l.cf)([a.Ay], () => ({
-            legacyAudioSubsystemSupported: a.Ay.supports(d.O5.LEGACY_AUDIO_SUBSYSTEM),
-            experimentalAudioSubsystemSupported: a.Ay.supports(d.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-            automaticAudioSubsystemSupported: a.Ay.supports(d.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
+        } = (0, l.cf)([r.Ay], () => ({
+            legacyAudioSubsystemSupported: r.Ay.supports(d.O5.LEGACY_AUDIO_SUBSYSTEM),
+            experimentalAudioSubsystemSupported: r.Ay.supports(d.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+            automaticAudioSubsystemSupported: r.Ay.supports(d.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
         }));
         return n.useMemo(() => {
             let n;
@@ -51,6 +51,6 @@ let T = (0, r.Hn)(u.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
         }, [i, e, t])
     },
     usePredicate: function() {
-        return (0, l.bG)([a.Ay], () => a.Ay.shouldOfferManualSubsystemSelection())
+        return (0, l.bG)([r.Ay], () => r.Ay.shouldOfferManualSubsystemSelection())
     }
 })

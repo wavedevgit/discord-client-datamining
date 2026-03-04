@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(293495),
     F = n(811917),
     Y = n(746094),
-    q = n(257402),
-    W = n(216954),
+    W = n(257402),
+    q = n(216954),
     K = n(735831),
     z = n(913953),
     $ = n(142120),
@@ -98,8 +98,8 @@ var i = n(627968),
     eH = n(849823),
     eF = n(840065),
     eY = n(32294),
-    eq = n(639823),
-    eW = n(961350),
+    eW = n(639823),
+    eq = n(961350),
     eK = n(761640),
     ez = n(734057),
     e$ = n(650048),
@@ -193,11 +193,11 @@ let ti = (0, p.z)(e => {
             })
         })
     }),
-    tl = s.Ay.connectStores([$.A, e$.A, eW.default], () => ({
+    tl = s.Ay.connectStores([$.A, e$.A, eq.default], () => ({
         isConnected: $.A.isConnected(),
         defaultRoute: e$.A.defaultRoute,
         defaultRouteFallback: e$.A.fallbackRoute,
-        token: eW.default.getToken()
+        token: eq.default.getToken()
     }))(class extends r.Component {
         render() {
             let {
@@ -245,7 +245,7 @@ function td(e) {
 let tc = [{
     path: [e4.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e9.wR)() || eW.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eW.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
+        return (0, e9.wR)() || eq.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eq.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
             applicationId: e.match.params.applicationId
         })
     }
@@ -517,10 +517,10 @@ class th extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), q.A.initialize(), eq.A.initialize(), W.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
+        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), W.A.initialize(), eW.A.initialize(), q.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eb.A.terminate(), eq.A.terminate(), ef.A.terminate(), eg.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), ep.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eb.A.terminate(), eW.A.terminate(), ef.A.terminate(), eg.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), ep.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e, t) {
         let {
@@ -529,7 +529,7 @@ class th extends r.PureComponent {
         } = e;
         ! function(e) {
             if ($.A.isConnected() || $.A.isTryingToConnect()) return;
-            let t = eW.default.getToken();
+            let t = eq.default.getToken();
             null == t || (0, ey.Q)(e) && d.A.startSession(t)
         }(n),
         function(e, t) {

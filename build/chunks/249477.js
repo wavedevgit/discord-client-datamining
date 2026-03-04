@@ -44,8 +44,8 @@ var i = n(627968),
     H = n(430452),
     F = n(320501),
     Y = n(383501),
-    q = n(309010),
-    W = n(967198),
+    W = n(309010),
+    q = n(967198),
     K = n(461213),
     z = n(543465),
     $ = n(287809),
@@ -282,7 +282,7 @@ class er extends r.PureComponent {
 }
 
 function el() {
-    let [e, t] = (0, o.yK)([q.A], () => [q.A.getVoiceChannelId(), q.A.getChannelId()], []), n = (0, o.bG)([G.A], () => G.A.getChannel(t), [t]), l = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), a = n?.nsfw, s = (0, o.bG)([G.A], () => G.A.getChannel(e), [e]), d = (0, o.bG)([W.A], () => W.A.getGuildId(), []), c = (0, o.bG)([B.A], () => B.A.getGuild(d), [d]), u = (0, o.bG)([$.default], () => $.default.getCurrentUser(), []), E = (0, o.bG)([V.Ay], () => null != u && null != d && (V.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([X.Ay], () => X.Ay.getState().section, []), C = (0, o.bG)([Q.A], () => Q.A.getHomeLink(), []), T = (0, o.bG)([x.A], () => x.A.isConnected(), []), [N, b] = (0, o.yK)([H.Ay], () => [H.Ay.isVideoEnabled(), H.Ay.isScreenSharing()], []), R = (0, o.bG)([K.A], () => K.A.getPrimaryActivity(), []), {
+    let [e, t] = (0, o.yK)([W.A], () => [W.A.getVoiceChannelId(), W.A.getChannelId()], []), n = (0, o.bG)([G.A], () => G.A.getChannel(t), [t]), l = (0, o.bG)([f.A], () => n?.id != null && f.A.getChatOpen(n.id), [n]), a = n?.nsfw, s = (0, o.bG)([G.A], () => G.A.getChannel(e), [e]), d = (0, o.bG)([q.A], () => q.A.getGuildId(), []), c = (0, o.bG)([B.A], () => B.A.getGuild(d), [d]), u = (0, o.bG)([$.default], () => $.default.getCurrentUser(), []), E = (0, o.bG)([V.Ay], () => null != u && null != d && (V.Ay.getMember(d, u.id)?.isPending ?? !1), [u, d]), I = (0, o.bG)([X.Ay], () => X.Ay.getState().section, []), C = (0, o.bG)([Q.A], () => Q.A.getHomeLink(), []), T = (0, o.bG)([x.A], () => x.A.isConnected(), []), [N, b] = (0, o.yK)([H.Ay], () => [H.Ay.isVideoEnabled(), H.Ay.isScreenSharing()], []), R = (0, o.bG)([K.A], () => K.A.getPrimaryActivity(), []), {
         currentGame: P,
         currentNonGame: j
     } = (0, o.cf)([S.Ay], () => ({
@@ -349,7 +349,7 @@ function el() {
                         is_pending: a,
                         preview_enabled: t.current.hasPreviewEnabled
                     } : {},
-                    n = B.A.getGuild(W.A.getGuildId()),
+                    n = B.A.getGuild(q.A.getGuildId()),
                     i = {
                         ...e,
                         postable_channels: t.current.postableChannelCount,

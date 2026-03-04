@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(311907),
     l = i(775602),
     s = i(502229),
-    r = i(47671),
-    a = i(419954),
+    a = i(47671),
+    r = i(419954),
     u = i(933297),
     o = i(780964),
     d = i(70040),
@@ -17,7 +17,7 @@ var n = i(311907),
     g = i(866352),
     c = i(652215),
     _ = i(985018);
-let I = (0, a.zZ)(o.X.DISPLAY_THEME_CATEGORY, {
+let I = (0, r.zZ)(o.X.DISPLAY_THEME_CATEGORY, {
     useTitle: () => _.intl.string(_.t.Ksh3ik),
     useInlineNotice: function() {
         return (0, n.bG)([l.A], () => l.A.useForcedColors) ? {
@@ -33,7 +33,7 @@ let I = (0, a.zZ)(o.X.DISPLAY_THEME_CATEGORY, {
         } : null
     },
     useHeaderDecoration: function() {
-        return (0, n.bG)([r.A, l.A], () => l.A.useForcedColors || r.A.isPreview) ? null : {
+        return (0, n.bG)([a.A, l.A], () => l.A.useForcedColors || a.A.isPreview) ? null : {
             type: u.WX.BUTTON_GROUP,
             buttons: [{
                 id: "open-client-themes-button",

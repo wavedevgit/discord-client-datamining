@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(64700),
     s = i(158954),
-    r = i(74848),
-    a = i(419954),
+    a = i(74848),
+    r = i(419954),
     u = i(933297),
     o = i(843401),
     d = i(723702),
@@ -33,12 +33,12 @@ function C(t) {
         })]
     })
 }
-let N = (0, a.zZ)(A.X.VOICE_CATEGORY, {
+let N = (0, r.zZ)(A.X.VOICE_CATEGORY, {
     useTitle: () => _.intl.string(_.t.K3lovD),
     useInlineNotice: function() {
         let t = (0, o.I)("voice"),
-            e = (0, r.x5)(c.oh.AUDIO_INPUT),
-            i = (0, r.x5)(c.oh.AUDIO_OUTPUT),
+            e = (0, a.x5)(c.oh.AUDIO_INPUT),
+            i = (0, a.x5)(c.oh.AUDIO_OUTPUT),
             s = l.useMemo(() => {
                 let t = I.some(t => e?.hardwareId?.startsWith(t)),
                     n = I.some(t => i?.hardwareId?.startsWith(t));

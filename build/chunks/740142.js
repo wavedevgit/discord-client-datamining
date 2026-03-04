@@ -18,12 +18,12 @@ function u(e) {
         height: u
     } = e, m = (0, d.yy)(t), h = (0, r.A)({
         location: "AccountProfilePopoutUpsell"
-    }), x = i.useMemo(() => {
+    }), p = i.useMemo(() => {
         let e = [];
         return m || e.push(s.M.GAME_WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), h && e.push(s.M.WISHLIST_USER_PROFILE_ACCOUNT_POPOUT_UPSELL), e
     }, [m, h]);
     return (0, a.jsx)(l.Ay, {
-        contentTypes: x,
+        contentTypes: p,
         bypassAutoDismiss: !0,
         children: e => {
             let {

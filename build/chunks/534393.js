@@ -1,5 +1,4 @@
 /** chunk id: 534393, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     OS: "singleSelectOption__12eef",
     Mg: "deviceContainer__12eef",

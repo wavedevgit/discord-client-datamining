@@ -101,7 +101,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 0,
                 delay: 0
             }), H.handleMouseLeave()
-        }, [B, k, H]), q = r.useCallback(() => {
+        }, [B, k, H]), W = r.useCallback(() => {
             B({
                 shineSpring: 1,
                 delay: 500
@@ -109,7 +109,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 1,
                 delay: 700
             }), H.handleOnboardingPopoutRender()
-        }, [B, k, H]), [W, K] = r.useState(-1), z = r.useCallback(e => {
+        }, [B, k, H]), [q, K] = r.useState(-1), z = r.useCallback(e => {
             K(e.contentRect.width)
         }, []), $ = (0, p.w)(z, [], {
             fireOnMount: !0
@@ -171,7 +171,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                     children: [(0, i.jsx)(s.animated.div, {
                         className: b.q2,
                         style: {
-                            transform: V.to(e => `translateX(calc(${e*W}px + ${e*O}px)) translateY(-50%) rotate(45deg)`)
+                            transform: V.to(e => `translateX(calc(${e*q}px + ${e*O}px)) translateY(-50%) rotate(45deg)`)
                         }
                     }), (0, i.jsx)(s.animated.div, {
                         className: b.ys,
@@ -206,7 +206,7 @@ let O = Math.ceil(Math.sqrt(115200)),
             }) : et, X && (0, i.jsx)(T.A, {
                 targetElementRef: l,
                 onNavigateToQuestHome: U,
-                onRender: q,
+                onRender: W,
                 onRequestClose: j
             })]
         })

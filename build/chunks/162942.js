@@ -19,15 +19,15 @@ function h(e) {
         markAsDismissed: n,
         ...h
     } = e, {
-        trackUserProfileEditAction: x
-    } = (0, l.NJ)(), p = i.useMemo(() => d.Zc.filter(r.hL).map(e => new r.Yy({
+        trackUserProfileEditAction: p
+    } = (0, l.NJ)(), x = i.useMemo(() => d.Zc.filter(r.hL).map(e => new r.Yy({
         type: e,
         games: []
     })), []), g = i.useCallback(() => {
-        n(c.i.TAKE_ACTION), x({
+        n(c.i.TAKE_ACTION), p({
             action: "PRESS_ADD_WIDGET"
         }), t()
-    }, [t, n, x]);
+    }, [t, n, p]);
     return (0, a.jsx)(s.A, {
         heading: u.intl.string(u.t["oqalC+"]),
         subheading: u.intl.string(u.t.O9SQ1c),
@@ -36,11 +36,11 @@ function h(e) {
         children: (0, a.jsx)("ul", {
             "aria-label": u.intl.string(u.t["+EIBSA"]),
             className: m.f,
-            children: p.map(e => (0, a.jsx)(o.A, {
+            children: x.map(e => (0, a.jsx)(o.A, {
                 widget: e,
                 size: "medium",
                 onAddWidget: g,
-                trackUserProfileEditAction: x
+                trackUserProfileEditAction: p
             }, e.getUniqueKey()))
         })
     })

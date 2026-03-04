@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(627968),
     l = i(934551),
     s = i(554146),
-    r = i(397927),
-    a = i(834981),
+    a = i(397927),
+    r = i(834981),
     u = i(793998),
     o = i(419954),
     d = i(933297),
@@ -35,10 +35,10 @@ let _ = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
             type: d.Si.STRONGLY_DISCOURAGED_CUSTOM,
             getDismissibleContentTypes: () => [s.M.FAMILY_CENTER_NEW_BADGE],
             useCustomDecoration: function(t) {
-                let e = (0, a.VT)();
-                return t === s.M.FAMILY_CENTER_NEW_BADGE ? (0, n.jsx)(r.LpS, {
+                let e = (0, r.VT)();
+                return t === s.M.FAMILY_CENTER_NEW_BADGE ? (0, n.jsx)(a.LpS, {
                     text: g.intl.string(g.t.y2b7CA)
-                }) : e > 0 ? (0, n.jsx)(r.hVq, {
+                }) : e > 0 ? (0, n.jsx)(a.hVq, {
                     count: e
                 }) : null
             }

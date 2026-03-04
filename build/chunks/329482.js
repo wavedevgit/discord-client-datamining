@@ -14,8 +14,8 @@ var i = n(503698),
     u = n(71393),
     m = n(576705),
     h = n(309010),
-    x = n(967198),
-    p = n(558393),
+    p = n(967198),
+    x = n(558393),
     g = n(737045),
     _ = n(574068),
     f = n(661251);
@@ -44,14 +44,14 @@ function b(e) {
 
 function v() {
     let e = (0, r.bG)([h.A], () => h.A.getChannelId()),
-        t = (0, r.bG)([x.A], () => x.A.getGuildId()),
+        t = (0, r.bG)([p.A], () => p.A.getGuildId()),
         n = (0, r.bG)([c.A], () => c.A.getChannel(e)),
         i = (0, r.bG)([u.A], () => u.A.getGuild(t)),
         v = (0, r.bG)([m.A], () => m.A.computePermissions(n)),
         j = (0, r.bG)([m.A], () => m.A.computePermissions(i)),
         A = (0, d.Ay)(n, !0),
         C = null != n ? (0, g.mW)(n, !1) : null,
-        T = null != i ? p.A.getGuildPermissionSpecMap(i) : null,
+        T = null != i ? x.A.getGuildPermissionSpecMap(i) : null,
         y = Object.values(C ?? {}).map(e => {
             let {
                 title: t,

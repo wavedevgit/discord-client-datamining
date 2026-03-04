@@ -1,6 +1,6 @@
 /** chunk id: 922316, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
@@ -19,13 +19,13 @@ let h = [{
         id: "nitro",
         name: "Nitro Components"
     }],
-    x = {
+    p = {
         "virtual-currency": c.B,
         nitro: d.$
     };
 
-function p() {
-    let [e, t] = i.useState("virtual-currency"), n = i.useMemo(() => x[e], [e]);
+function x() {
+    let [e, t] = i.useState("virtual-currency"), n = i.useMemo(() => p[e], [e]);
     return (0, a.jsxs)("div", {
         className: l()(u.nd, m.kL),
         children: [(0, a.jsx)(o.VQ0, {

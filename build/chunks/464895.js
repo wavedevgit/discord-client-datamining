@@ -5,10 +5,10 @@ i.d(e, {
 var n = i(311907),
     l = i(274372),
     s = i(399925),
-    r = i(419954),
-    a = i(780964),
+    a = i(419954),
+    r = i(780964),
     u = i(985018);
-let o = (0, r.zD)(a.X.CLIPS_ENABLE_GAME_SIGNALS, {
+let o = (0, a.zD)(r.X.CLIPS_ENABLE_GAME_SIGNALS, {
     useTitle: () => u.intl.string(u.t.iV6KcI),
     useSubtitle: () => u.intl.string(u.t["dJ2tX+"]),
     useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipSignals.enableGameSignals),

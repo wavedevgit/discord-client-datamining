@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(793574),
     m = n(688810),
     h = n(617354),
-    x = n(206018),
-    p = n(480890),
+    p = n(206018),
+    x = n(480890),
     g = n(74848),
     _ = n(42473),
     f = n(731854),
@@ -54,8 +54,8 @@ function A(e) {
                 } = e;
                 return S(), (0, a.jsx)(m.f5, {
                     value: M,
-                    children: (0, a.jsx)(x.A, {
-                        onInteraction: (0, p.s)("AudioDeviceMenu", u.A.ACCOUNT),
+                    children: (0, a.jsx)(p.A, {
+                        onInteraction: (0, x.s)("AudioDeviceMenu", u.A.ACCOUNT),
                         onClose: t,
                         renderOutputDevices: !0,
                         renderOutputVolume: !0,

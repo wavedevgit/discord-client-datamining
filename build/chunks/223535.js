@@ -2,20 +2,20 @@
 t.a(e, async function(e, r) {
     try {
         t.d(n, {
-            Ay: () => a,
+            Ay: () => f,
             ER: () => c
         });
-        var i = t(627968),
-            o = t(207495),
+        var o = t(627968),
+            i = t(207495),
             u = t(64700),
-            _ = e([o]);
-        o = (_.then ? (await _)() : _)[0];
+            _ = e([i]);
+        i = (_.then ? (await _)() : _)[0];
         let d = (0, u.createContext)(null);
 
         function c() {
             return (0, u.useContext)(d)
         }
-        let b = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
+        let s = new Set(["bold", "italic", "underline", "strikethrough", "spoiler", "emoji", "timestamp", "mention", "link", "code", "code_block", "heading", "list", "quote", "small"]);
 
         function l({
             node: e,
@@ -25,10 +25,10 @@ t.a(e, async function(e, r) {
             let r = n[e.type];
             if (! function(e, n) {
                     if (null == e) throw Error(`Attempted to render "${n}" but no renderer was provided`)
-                }(r, e.type), Array.isArray(e.value)) return (0, i.jsx)(r, {
+                }(r, e.type), Array.isArray(e.value)) return (0, o.jsx)(r, {
                 node: e,
                 ...t,
-                children: (0, i.jsx)(f, {
+                children: (0, o.jsx)(a, {
                     nodes: e.value,
                     renderers: n
                 })
@@ -38,27 +38,27 @@ t.a(e, async function(e, r) {
                 case "timestamp":
                 case "emoji":
                 case "code_block":
-                    return (0, i.jsx)(r, {
+                    return (0, o.jsx)(r, {
                         node: e,
                         ...e.value,
                         ...t
                     });
                 case "link": {
-                    let o = e.value,
+                    let i = e.value,
                         u = null;
-                    if ("normal" === o.type) {
+                    if ("normal" === i.type) {
                         let {
                             value: {
                                 text: e,
                                 url: t
                             }
-                        } = o;
-                        u = e ? (0, i.jsx)(f, {
+                        } = i;
+                        u = e ? (0, o.jsx)(a, {
                             nodes: e,
                             renderers: n
                         }) : t
                     }
-                    return (0, i.jsx)(r, {
+                    return (0, o.jsx)(r, {
                         node: e,
                         ...e.value,
                         ...t,
@@ -67,32 +67,32 @@ t.a(e, async function(e, r) {
                 }
                 case "text":
                 case "code":
-                    return (0, i.jsx)(r, {
+                    return (0, o.jsx)(r, {
                         node: e,
                         ...t,
                         children: e.value
                     });
                 case "heading":
-                    return (0, i.jsx)(r, {
+                    return (0, o.jsx)(r, {
                         node: e,
                         level: e.value.level,
                         ...t,
-                        children: (0, i.jsx)(f, {
+                        children: (0, o.jsx)(a, {
                             nodes: e.value.content,
                             renderers: n
                         })
                     });
                 case "list": {
-                    let o = n.listItem ?? "li";
-                    return (0, i.jsx)(r, {
+                    let i = n.listItem ?? "li";
+                    return (0, o.jsx)(r, {
                         node: e,
                         ...e.value,
                         ...t,
-                        children: e.value.items.map((t, r) => (0, i.jsx)(o, {
+                        children: e.value.items.map((t, r) => (0, o.jsx)(i, {
                             node: t,
                             siblings: e.value.items,
                             index: r,
-                            children: (0, i.jsx)(f, {
+                            children: (0, o.jsx)(a, {
                                 nodes: t.content,
                                 renderers: n
                             })
@@ -100,14 +100,14 @@ t.a(e, async function(e, r) {
                     })
                 }
                 case "empty":
-                    return (0, i.jsx)(r, {
+                    return (0, o.jsx)(r, {
                         ...t
                     });
                 case "small":
-                    return (0, i.jsx)(r, {
+                    return (0, o.jsx)(r, {
                         node: e,
                         ...t,
-                        children: (0, i.jsx)(f, {
+                        children: (0, o.jsx)(a, {
                             nodes: e.value.content,
                             renderers: n
                         })
@@ -117,12 +117,12 @@ t.a(e, async function(e, r) {
             }
         }
 
-        function f({
+        function a({
             nodes: e,
             renderers: n
         }) {
-            return (0, i.jsx)(i.Fragment, {
-                children: e.map((t, r) => (0, i.jsx)(l, {
+            return (0, o.jsx)(o.Fragment, {
+                children: e.map((t, r) => (0, o.jsx)(l, {
                     node: t,
                     renderers: n,
                     siblings: e,
@@ -131,18 +131,18 @@ t.a(e, async function(e, r) {
             })
         }
 
-        function a({
+        function f({
             content: e,
             renderers: n
         }) {
             let t = (0, u.useMemo)(() => {
-                    let e = Object.keys(n).filter(e => b.has(e));
+                    let e = Object.keys(n).filter(e => s.has(e));
                     return e.length > 0 ? e : null
                 }, [n]),
-                r = (0, u.useMemo)(() => (0, o.q)(e, t), [e, t]);
-            return (0, i.jsx)(d.Provider, {
+                r = (0, u.useMemo)(() => (0, i.q)(e, t), [e, t]);
+            return (0, o.jsx)(d.Provider, {
                 value: r,
-                children: (0, i.jsx)(f, {
+                children: (0, o.jsx)(a, {
                     nodes: r,
                     renderers: n
                 })

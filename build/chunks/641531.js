@@ -5,8 +5,8 @@ i.d(e, {
 var n = i(349941),
     l = i(311907),
     s = i(955572),
-    r = i(775602),
-    a = i(47671),
+    a = i(775602),
+    r = i(47671),
     u = i(419954),
     o = i(97469),
     d = i(544028),
@@ -19,24 +19,24 @@ let g = (0, u.zD)(T.X.DISPLAY_DARK_SIDEBAR, {
     useSearchTerms: () => [E.intl.string(E.t.Ksh3ik)],
     useValue: function() {
         let t = (0, o.qo)();
-        return (0, l.bG)([d.A, r.A], () => {
+        return (0, l.bG)([d.A, a.A], () => {
             let e = d.A.theme,
-                i = r.A.useForcedColors;
+                i = a.A.useForcedColors;
             return t && (0, n.qB)(e) && !i
         })
     },
     usePredicate: function() {
         let t = null != A.eh.useSetting().customUserThemeSettings;
-        return (0, l.bG)([d.A, a.A], () => {
+        return (0, l.bG)([d.A, r.A], () => {
             let e = d.A.theme,
-                i = a.A.gradientPreset;
+                i = r.A.gradientPreset;
             return (0, n.qB)(e) && null == i && !t
         })
     },
     useDisabled: function() {
-        return (0, l.bG)([d.A, r.A], () => {
+        return (0, l.bG)([d.A, a.A], () => {
             let t = d.A.theme,
-                e = r.A.useForcedColors;
+                e = a.A.useForcedColors;
             return t !== S.NJ.LIGHT || e
         })
     },

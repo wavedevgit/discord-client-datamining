@@ -36,17 +36,17 @@ function T(e) {
     } = e, {
         live: y,
         recent: C,
-        stream: R
+        stream: k
     } = (0, u.A)(t.id), {
-        voiceChannel: k,
+        voiceChannel: R,
         voiceActivity: w
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
+    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, D = (0, l.bG)([c.A, o.A], () => {
         let e = O ? c.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), D = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == w && null != k, M = !P && (D || G), U = C.length > 0;
+    }), P = y.length > 0 || null != k, G = T?.private !== !0 && null == k && null == w && null != R, M = !D && (P || G), U = C.length > 0;
     return M || U || !L ? M || U || L ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
@@ -54,11 +54,11 @@ function T(e) {
             heading: v.intl.string(v.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: E.kR,
-                children: [null != R && (0, i.jsx)("li", {
+                children: [null != k && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
-                        stream: R,
+                        stream: k,
                         onClose: S
                     })
                 }), y.map((e, l) => (0, i.jsx)("li", {
@@ -72,7 +72,7 @@ function T(e) {
                     children: (0, i.jsx)(p.A, {
                         user: t,
                         currentUser: n,
-                        voiceChannel: k,
+                        voiceChannel: R,
                         onClose: S
                     })
                 })]

@@ -25,9 +25,9 @@ t.a(e, async function(e, r) {
                 }
             }
         });
-        var i = t(544904),
-            o = e([i]);
-        i = (o.then ? (await o)() : o)[0], r()
+        var o = t(544904),
+            i = e([o]);
+        o = (i.then ? (await i)() : i)[0], r()
     } catch (e) {
         r(e)
     }

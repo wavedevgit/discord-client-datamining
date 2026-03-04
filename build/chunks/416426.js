@@ -5,14 +5,14 @@ i.d(e, {
 var n = i(574381),
     l = i(314116),
     s = i(419954),
-    r = i(837921),
-    a = i(780964),
+    a = i(837921),
+    r = i(780964),
     u = i(985018);
-let o = (0, s.zD)(a.X.ADVANCED_HARDWARE_ACCELERATION, {
+let o = (0, s.zD)(r.X.ADVANCED_HARDWARE_ACCELERATION, {
     useTitle: () => u.intl.string(u.t["/HIxyY"]),
     useSubtitle: () => u.intl.string(u.t.B0hqpb),
     usePredicate: () => n.Av && !(0, n.cX)(),
-    useValue: () => r.Ay.getEnableHardwareAcceleration(),
+    useValue: () => a.Ay.getEnableHardwareAcceleration(),
     setValue: t => {
         var e;
         let i;
@@ -21,7 +21,7 @@ let o = (0, s.zD)(a.X.ADVANCED_HARDWARE_ACCELERATION, {
             subtitle: i,
             confirmText: u.intl.string(u.t.vT7ckk),
             onConfirm: () => {
-                r.Ay.setEnableHardwareAcceleration(e)
+                a.Ay.setEnableHardwareAcceleration(e)
             }
         })
     }
