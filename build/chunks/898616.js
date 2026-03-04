@@ -25,10 +25,7 @@ function u(e) {
     }), A = (0, c.K6)({
         gameIds: d.sQ,
         userIds: f
-    }), I = (0, c.l1)({
-        userIds: f,
-        guildIdsWithGameStores: d.tC
-    }), j = (0, c.hJ)({
+    }), I = (0, c.l1)(f), j = (0, c.hJ)({
         gameIds: d.sQ
     }), v = (0, c.ok)({
         gameIds: d.sQ

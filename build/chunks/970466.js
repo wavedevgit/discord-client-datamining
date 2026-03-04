@@ -1,4 +1,5 @@
-/** chunk id: 970466, original params: e,t,n (module,exports,require) **/
+/** chunk id: 970466, original params: e,t,a (module,exports,require) **/
+"use strict";
 e.exports = {
     Hc: "baseContainer__40d5b",
     Nr: "card__40d5b",

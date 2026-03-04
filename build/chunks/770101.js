@@ -1,6 +1,6 @@
 /** chunk id: 770101, original params: t,e,l (module,exports,require) **/
 l.d(e, {
-    default: () => f
+    default: () => S
 }), l(321073);
 var n = l(627968),
     i = l(64700),
@@ -9,17 +9,17 @@ var n = l(627968),
     a = l(158954),
     o = l(311907),
     d = l(397927),
-    u = l(398590),
-    c = l(263063),
-    x = l(976860),
-    m = l(71393),
+    c = l(398590),
+    u = l(263063),
+    m = l(976860),
+    x = l(71393),
     h = l(711014),
-    C = l(473145),
-    g = l(652215),
+    g = l(473145),
+    C = l(652215),
     j = l(985018),
-    p = l(197161);
+    v = l(197161);
 
-function v(t) {
+function p(t) {
     let {
         setQuery: e,
         query: l
@@ -33,57 +33,57 @@ function v(t) {
     })
 }
 
-function S(t) {
+function f(t) {
     let {
         isTransfer: e = !1,
         selectedSlotGuilds: l,
         onClose: i,
         onSelectGuild: s,
         query: a
-    } = t, v = (0, o.bG)([h.Ay], () => h.Ay.getFlattenedGuildIds()), S = (0, o.yK)([m.A], () => v.reduce((t, e) => {
-        let n = m.A.getGuild(e);
+    } = t, p = (0, o.bG)([h.Ay], () => h.Ay.getFlattenedGuildIds()), f = (0, o.yK)([x.A], () => p.reduce((t, e) => {
+        let n = x.A.getGuild(e);
         return null == n || null != l && l.some(t => t.id === e) || (a.length <= 0 || r()(a.toLowerCase(), n?.name.toLowerCase())) && t.push(n), t
     }, []));
 
-    function f() {
-        i(), (0, u.jH)(), (0, x.pX)(g.BVt.GUILD_DISCOVERY)
+    function S() {
+        i(), (0, c.jH)(), (0, m.pX)(C.BVt.GUILD_DISCOVERY)
     }
     return (0, n.jsxs)(n.Fragment, {
-        children: [0 === S.length && (0, n.jsx)("div", {
-            className: p.Kl,
+        children: [0 === f.length && (0, n.jsx)("div", {
+            className: v.Kl,
             children: (0, n.jsx)(d.Text, {
                 variant: "text-md/normal",
-                children: 0 === v.length ? j.intl.format(j.t["E3tB6+"], {
+                children: 0 === p.length ? j.intl.format(j.t["E3tB6+"], {
                     publicGuildDirectoryHook: (t, e) => (0, n.jsx)(d.DUT, {
-                        onClick: f,
+                        onClick: S,
                         tag: "a",
                         children: t
                     }, e)
                 }) : j.intl.string(j.t.w3GLl9)
             })
-        }), S.map(t => (0, n.jsxs)(d.DUT, {
-            className: p.Ss,
+        }), f.map(t => (0, n.jsxs)(d.DUT, {
+            className: v.Ss,
             onClick: () => {
                 s(t)
             },
-            children: [(0, n.jsx)(c.Ay, {
-                className: p.Bq,
+            children: [(0, n.jsx)(u.Ay, {
+                className: v.Bq,
                 guild: t,
-                size: c.Ay.Sizes.SMALL
+                size: u.Ay.Sizes.SMALL
             }), (0, n.jsxs)("div", {
-                className: p.Vi,
+                className: v.Vi,
                 children: [(0, n.jsx)(d.Text, {
-                    className: p.tD,
+                    className: v.tD,
                     variant: "text-md/normal",
                     children: t.name
                 }), (0, n.jsx)(d.Text, {
-                    className: p.w2,
+                    className: v.w2,
                     color: "text-muted",
                     variant: "text-xs/normal",
-                    children: (0, C.gb)(t.premiumTier)
+                    children: (0, g.gb)(t.premiumTier)
                 })]
             }), (0, n.jsx)(d.Text, {
-                className: p.qW,
+                className: v.qW,
                 color: "always-white",
                 variant: "text-sm/medium",
                 children: e ? j.intl.string(j.t.dUgaF8) : j.intl.string(j.t.Uj0md3)
@@ -92,27 +92,27 @@ function S(t) {
     })
 }
 
-function f(t) {
+function S(t) {
     let {
         onClose: e,
         onSelectGuild: l,
         transitionState: s,
         isTransfer: r = !1,
         selectedSlotGuilds: o
-    } = t, [d, u] = i.useState(""), c = async () => {
+    } = t, [d, c] = i.useState(""), u = async () => {
         await e()
-    }, x = r ? j.intl.string(j.t.IB13DV) : j.intl.string(j.t.cQYceV);
+    }, m = r ? j.intl.string(j.t.IB13DV) : j.intl.string(j.t.cQYceV);
     return (0, n.jsx)(a.Modal, {
         transitionState: s,
-        onClose: c,
+        onClose: u,
         size: "md",
-        title: x,
-        input: (0, n.jsx)(v, {
+        title: m,
+        input: (0, n.jsx)(p, {
             query: d,
-            setQuery: u
+            setQuery: c
         }),
         actions: [],
-        children: (0, n.jsx)(S, {
+        children: (0, n.jsx)(f, {
             onClose: e,
             onSelectGuild: l,
             query: d,

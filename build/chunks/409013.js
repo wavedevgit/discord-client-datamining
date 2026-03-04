@@ -58,11 +58,12 @@ let s = ["request_params"],
             abortSignal: r,
             requestParams: s
         } = e;
-        if (!i.A.isFetchingTemplate(l, t)) try {
+        if (!i.A.isFetchingTemplate(l, t, s)) try {
             n.h.dispatch({
                 type: "CMS_TEMPLATE_FETCH",
                 tenantId: l,
-                templateId: t
+                templateId: t,
+                requestParams: s
             });
             let e = await o.Bo.get({
                 url: d.Rsh.CMS_TEMPLATE(l, t),
@@ -74,6 +75,7 @@ let s = ["request_params"],
                 type: "CMS_TEMPLATE_FETCH_SUCCESS",
                 tenantId: l,
                 templateId: t,
+                requestParams: s,
                 layout: c(e.body)
             })
         } catch (r) {
@@ -82,6 +84,7 @@ let s = ["request_params"],
                 type: "CMS_TEMPLATE_FETCH_FAILURE",
                 tenantId: l,
                 templateId: t,
+                requestParams: s,
                 apiError: e
             }), e
         }
