@@ -1,6 +1,6 @@
 /** chunk id: 228053, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(985018),
     N = n(30621);
 
-function y(e) {
+function S(e) {
     let {
         application: t,
         sku: n,
@@ -84,7 +84,7 @@ function y(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         wishlist: t,
         handleOpenUserProfileModal: n,
@@ -110,7 +110,7 @@ function S(e) {
             wishlistOwner: x,
             handleOpenUserProfileModal: n,
             analyticsLocations: a
-        }, e.skuId) : (0, i.jsx)(y, {
+        }, e.skuId) : (0, i.jsx)(S, {
             application: u,
             sku: e.sku,
             handleOpenUserProfileModal: n,

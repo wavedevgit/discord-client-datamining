@@ -26,14 +26,14 @@ var i = n(627968),
     T = n(371068),
     b = n(61266),
     N = n(731068),
-    y = n(619517),
-    S = n(339580),
+    S = n(619517),
+    y = n(339580),
     C = n(961350),
-    k = n(760751),
-    R = n(403362),
+    R = n(760751),
+    k = n(403362),
     w = n(183555),
-    O = n(622543),
-    L = n(466853),
+    L = n(622543),
+    O = n(466853),
     P = n(985018),
     D = n(442716);
 let G = /{{(.*?)}}/g,
@@ -292,7 +292,7 @@ function H(e) {
             })]
         }), (0, h.c)(l) ? (0, i.jsx)("div", {
             className: D.Xr,
-            children: (0, i.jsx)(y.Ay, {
+            children: (0, i.jsx)(S.Ay, {
                 src: l.proxyUrl,
                 alt: "",
                 width: l.width,
@@ -355,7 +355,7 @@ function V(e) {
     } = e, a = (0, E.X)(), r = (0, h.c)(n) ? (0, i.jsx)("div", {
         className: s()(D.Sl, a.className),
         "data-position": l,
-        children: (0, i.jsx)(y.Ay, {
+        children: (0, i.jsx)(S.Ay, {
             src: n.proxyUrl,
             alt: "",
             width: n.width,
@@ -478,12 +478,12 @@ let Z = Object.assign(function(e) {
             user: E,
             widget: T,
             cta: b,
-            subtle: y = !1
+            subtle: S = !1
         } = e,
         G = (0, d.bG)([C.default], () => C.default.getId()) === E.id,
         F = (0, _.h)(T.applicationId),
         W = F?.getIconURL(16),
-        H = (0, d.bG)([k.A], () => null != F ? k.A.getGameByApplication(F) : null),
+        H = (0, d.bG)([R.A], () => null != F ? R.A.getGameByApplication(F) : null),
         B = (0, I.A)({
             location: "UserProfileApplicationWidget",
             applicationId: H?.id,
@@ -539,7 +539,7 @@ let Z = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = E.id, n = T.applicationId, a = (0, p.A)(), r = (0, d.bG)([S.A], () => S.A.getUserIdentityByApplication(t, n)), g = (0, d.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([S.A, O.A], () => null == S.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = E.id, n = T.applicationId, a = (0, p.A)(), r = (0, d.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, d.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([y.A, L.A], () => null == y.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = M[g.widgetTemplateId];
@@ -559,10 +559,10 @@ let Z = Object.assign(function(e) {
                 }] : e.type === c.f.MEDIA ? [e.name, {
                     type: "unfurled_media",
                     media: (0, N.Uv)(e.value)
-                }] : (0, R.xb)(e)) ?? [], ...Object.entries({
+                }] : (0, k.xb)(e)) ?? [], ...Object.entries({
                     username: e.profile?.username,
                     ...e.profile?.data?.primary
-                }).filter(R.QE).map(e => {
+                }).filter(k.QE).map(e => {
                     let [t, n] = e;
                     if ("object" == typeof n) {
                         if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -578,7 +578,7 @@ let Z = Object.assign(function(e) {
                         value: n
                     }];
                     return null
-                }).filter(R.Vq)]),
+                }).filter(k.Vq)]),
                 config: t,
                 numberFormat: a
             });
@@ -613,11 +613,11 @@ let Z = Object.assign(function(e) {
             hasData: null != r,
             components: j
         });
-    return null == er ? null : (0, i.jsxs)(L.A, {
+    return null == er ? null : (0, i.jsxs)(O.A, {
         ...e,
         userId: E.id,
         widget: T,
-        className: s()(D.Y5, y && D.aK),
+        className: s()(D.Y5, S && D.aK),
         headerTitle: el,
         headerClassName: D.wx,
         additionalManageWidgetMenuItems: null != H ? (0, i.jsx)(u.Drp, {

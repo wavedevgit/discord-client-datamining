@@ -8,8 +8,8 @@ var a = n(397927),
     i = n(263063),
     r = n(734057),
     s = n(71393),
-    o = n(985018),
-    d = n(611090);
+    d = n(985018),
+    o = n(611090);
 let c = e => {
     let {
         entry: t
@@ -17,19 +17,19 @@ let c = e => {
     if (null == n) return null;
     let c = s.A.getGuild(n.guild_id);
     return null == c ? null : (0, l.jsxs)("div", {
-        className: d.kL,
+        className: o.kL,
         children: [(0, l.jsx)(a.Heading, {
-            className: d.wx,
+            className: o.wx,
             variant: "heading-sm/semibold",
-            children: o.intl.string(o.t.nTe4HC)
+            children: d.intl.string(d.t.nTe4HC)
         }), (0, l.jsxs)("div", {
-            className: d.bo,
+            className: o.bo,
             children: [(0, l.jsxs)("div", {
-                className: d.mo,
+                className: o.mo,
                 children: [(0, l.jsx)(i.Ay, {
                     guild: c,
                     size: i.Ay.Sizes.MINI,
-                    className: d.xG
+                    className: o.xG
                 }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",

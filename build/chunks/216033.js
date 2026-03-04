@@ -1,36 +1,36 @@
 /** chunk id: 216033, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
 var l = n(627968),
     a = n(64700),
     i = n(397927),
     r = n(46054),
     s = n(861662),
-    o = n(232409);
+    d = n(232409);
 
-function d(e) {
+function o(e) {
     let {
         element: {
             data: {
                 header: t,
                 body: n,
-                is_localized: d
+                is_localized: o
             }
         }
     } = e, c = a.useMemo(() => r.A.reactParserFor({
         ...r.A.defaultRules,
         link: s.B
     }), []);
-    return d && (null != t || null != n) ? (0, l.jsxs)("div", {
+    return o && (null != t || null != n) ? (0, l.jsxs)("div", {
         children: [null != t && (0, l.jsx)(i.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
-            className: o.w,
+            className: d.w,
             children: t
         }), null != n && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
-            className: o.r,
+            className: d.r,
             children: c(n)
         })]
     }) : null

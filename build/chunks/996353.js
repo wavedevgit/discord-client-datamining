@@ -17,51 +17,51 @@ function u(e) {
         user: t,
         numItems: n,
         location: u
-    } = e, _ = (0, l.G)("use_unowned_wishlist_items_and_recommendations"), I = (0, a.Ay)(t.id), A = Math.max(n, (0, c.KQ)(_)), {
-        defaultWishlistId: g,
-        wishlist: f,
-        popularCollectiblesProducts: S,
-        isFetchingWishlist: p,
-        isValidatingPopularProducts: E,
-        isFetchingPopularProducts: m,
-        wishlistError: T
+    } = e, _ = (0, l.G)("use_unowned_wishlist_items_and_recommendations"), I = (0, a.Ay)(t.id), g = Math.max(n, (0, c.KQ)(_)), {
+        defaultWishlistId: A,
+        wishlist: S,
+        popularCollectiblesProducts: f,
+        isFetchingWishlist: m,
+        isValidatingPopularProducts: p,
+        isFetchingPopularProducts: T,
+        wishlistError: E
     } = (0, c.eT)({
         giftRecipient: t,
-        minNumItems: A,
+        minNumItems: g,
         source: c.B5.USER_PROFILE
     }), L = (0, s.A)({
         displayProfile: I,
         location: u
-    }), C = i.useMemo(() => [t.id], [t.id]), {
+    }), R = i.useMemo(() => [t.id], [t.id]), {
         recommendations: O
     } = (0, r.A)({
-        numWishlistItems: A,
+        numWishlistItems: g,
         location: u,
         applicationId: d.XR,
-        userIds: C,
+        userIds: R,
         includeWishlists: !0
-    }), h = i.useMemo(() => (f?.items ?? []).filter(e => !0 !== e.isOwned && (0, o.$)(e)).length > 0 || L ? O : [], [f?.items, L, O]), {
+    }), h = i.useMemo(() => (S?.items ?? []).filter(e => !0 !== e.isOwned && (0, o.$)(e)).length > 0 || L ? O : [], [S?.items, L, O]), {
         displayItems: N,
-        totalUnownedWishlistItemCount: R
+        totalUnownedWishlistItemCount: b
     } = (0, c.mk)({
-        wishlist: f,
-        popularCollectiblesProducts: S,
+        wishlist: S,
+        popularCollectiblesProducts: f,
         popularSocialLayerStorefrontItems: h,
-        wishlistError: T,
-        numItems: A
+        wishlistError: E,
+        numItems: g
     });
     return {
         displayItems: N,
-        totalUnownedWishlistItemCount: R,
-        fetchState: i.useMemo(() => p || E || m ? {
+        totalUnownedWishlistItemCount: b,
+        fetchState: i.useMemo(() => m || p || T ? {
             status: "loading"
-        } : null != T ? {
+        } : null != E ? {
             status: "error",
-            error: T
+            error: E
         } : {
             status: "success"
-        }, [p, E, m, T]),
-        defaultWishlistId: g,
-        wishlist: f
+        }, [m, p, T, E]),
+        defaultWishlistId: A,
+        wishlist: S
     }
 }

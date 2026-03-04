@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(843472),
     r = n(58149),
     s = n(632738),
-    o = n(734057),
-    d = n(576705),
+    d = n(734057),
+    o = n(576705),
     c = n(652215),
     u = n(985018);
 let _ = e => {
@@ -20,8 +20,8 @@ let _ = e => {
             report_id: n
         }), i.A.deleteMessage(t.getChannelId(), t.id)
     }, [t, n]), p = a.useMemo(() => {
-        let e = o.A.getChannel(t.getChannelId());
-        return null != e && e.type !== c.rbe.DM && e.type !== c.rbe.GROUP_DM && d.A.canWithPartialContext(c.xBc.MANAGE_MESSAGES, {
+        let e = d.A.getChannel(t.getChannelId());
+        return null != e && e.type !== c.rbe.DM && e.type !== c.rbe.GROUP_DM && o.A.canWithPartialContext(c.xBc.MANAGE_MESSAGES, {
             channelId: e.id
         })
     }, [t]);

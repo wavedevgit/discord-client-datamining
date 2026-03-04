@@ -1,14 +1,14 @@
 /** chunk id: 132318, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
 var l = n(627968),
     a = n(64700),
     i = n(397927),
     r = n(46054),
     s = n(861662),
-    o = n(967972);
-let d = e => {
+    d = n(967972);
+let o = e => {
     let {
         node: {
             info: t
@@ -18,7 +18,7 @@ let d = e => {
         link: s.B
     }), []);
     return null == t ? null : (0, l.jsx)(i.po8, {
-        className: o.e,
+        className: d.e,
         messageType: i.YCn.INFO,
         children: n(t)
     })

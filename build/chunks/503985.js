@@ -1,6 +1,6 @@
 /** chunk id: 503985, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968);
 n(64700);
@@ -8,7 +8,7 @@ var a = n(397927),
     i = n(730134),
     r = n(985018),
     s = n(388889);
-let o = e => {
+let d = e => {
     let {
         user: t
     } = e;

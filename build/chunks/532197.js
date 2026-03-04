@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     d = n(262633);
 let o = {
         UP: "up",
@@ -27,10 +27,10 @@ class u extends s.PureComponent {
             direction: e,
             className: t
         } = this.props;
-        return (0, i.jsx)(r.z$m, {
+        return (0, i.jsx)(a.z$m, {
             size: "md",
             color: "currentColor",
-            className: a()(t, {
+            className: r()(t, {
                 [c[e]]: !0
             })
         })

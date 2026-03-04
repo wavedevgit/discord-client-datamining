@@ -27,18 +27,18 @@ function p(e) {
         disableInteraction: c = !1
     } = e, p = t?.filter(e => null != (0, m.W3)(e)) ?? [], _ = p.length > 0, A = n && !c && (0, u.mS)(a) && p.length < 20, {
         trackUserProfileAction: v
-    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, y] = (0, l.useState)(0), [S, C] = (0, l.useState)(!1), k = j(T, b, p, E, y);
-    if ((0, l.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
-            window.removeEventListener("resize", k)
-        }), [k, p?.join("")]), !_ && !A) return null;
-    let R = S ? p : p.slice(0, p.length - N);
+    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, p, E, S);
+    if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
+            window.removeEventListener("resize", R)
+        }), [R, p?.join("")]), !_ && !A) return null;
+    let k = y ? p : p.slice(0, p.length - N);
     return (0, i.jsxs)("div", {
         className: s()(f.I4, o),
         children: [_ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("ul", {
                 className: f.Tw,
                 "aria-label": x.intl.string(x.t.EfjTi4),
-                children: R.map(e => (0, i.jsx)(h, {
+                children: k.map(e => (0, i.jsx)(h, {
                     tag: e,
                     isCurrentUser: n,
                     applicationId: r,
@@ -50,7 +50,7 @@ function p(e) {
                 }, e))
             }), N > 0 && (0, i.jsx)(I, {
                 buttonRef: T,
-                isExpanded: S,
+                isExpanded: y,
                 numberOfOverflowingTags: N,
                 onExpandTags: () => {
                     C(!0), v({

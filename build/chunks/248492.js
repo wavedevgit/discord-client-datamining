@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(311907),
     r = n(692617),
     s = n(397927),
-    o = n(824552),
-    d = n(573435),
+    d = n(824552),
+    o = n(573435),
     c = n(973172),
     u = n(186272),
     _ = n(546183),
@@ -25,7 +25,7 @@ let A = e => {
         application: t
     }), v = a.useRef(!1);
     a.useEffect(() => {
-        v.current || (o.A.fetch(), v.current = !0)
+        v.current || (d.A.fetch(), v.current = !0)
     }, []);
     let f = null != A ? m.default.extractTimestamp(A.id) : void 0;
     return (0, l.jsxs)("div", {
@@ -38,8 +38,8 @@ let A = e => {
             className: p.vU,
             children: (0, l.jsxs)("div", {
                 className: p.qi,
-                children: [(0, l.jsx)(d.Ay, {
-                    mask: d.Ay.Masks.AVATAR_DEFAULT,
+                children: [(0, l.jsx)(o.Ay, {
+                    mask: o.Ay.Masks.AVATAR_DEFAULT,
                     width: 40,
                     height: 40,
                     className: p.VE,

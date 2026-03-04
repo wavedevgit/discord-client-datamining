@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(397927),
     r = n(46054),
     s = n(861662),
-    o = n(985018),
-    d = n(888791);
+    d = n(985018),
+    o = n(888791);
 let c = e => {
     let {
         node: {
@@ -23,7 +23,7 @@ let c = e => {
         link: s.B
     }), []);
     return (0, l.jsxs)("div", {
-        className: d.N,
+        className: o.N,
         children: [null != t && "" !== t ? (0, l.jsx)(i.Heading, {
             variant: "heading-xl/semibold",
             color: "text-strong",
@@ -34,7 +34,7 @@ let c = e => {
             children: x(n)
         }) : null, m && !u && !_ && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: o.intl.format(o.t.Q0tSKT, {})
+            children: d.intl.format(d.t.Q0tSKT, {})
         })]
     })
 }

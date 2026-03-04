@@ -7,15 +7,15 @@ var l = n(627968),
     i = n(314116),
     r = n(58149),
     s = n(997509),
-    o = n(632738),
-    d = n(71393),
+    d = n(632738),
+    o = n(71393),
     c = n(652215),
     u = n(985018);
 let _ = e => {
     let {
         guildId: t,
         reportId: n
-    } = e, [_, m] = a.useState(!1), x = d.A.getGuild(t), p = null != x;
+    } = e, [_, m] = a.useState(!1), x = o.A.getGuild(t), p = null != x;
     a.useEffect(() => {
         m(!p)
     }, [p]);
@@ -25,7 +25,7 @@ let _ = e => {
             report_id: n
         }), s.A.leaveGuild(t)
     }, [t, n]);
-    return null == x ? null : (0, l.jsx)(o.PQ, {
+    return null == x ? null : (0, l.jsx)(d.PQ, {
         title: u.intl.string(u.t.cU96ip),
         description: u.intl.formatToPlainString(u.t["26mR6/"], {
             guildName: x?.name

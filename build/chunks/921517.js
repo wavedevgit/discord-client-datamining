@@ -1,12 +1,12 @@
 /** chunk id: 921517, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    RL: () => _,
+    RL: () => o,
     sH: () => c
 });
 var n = a(933681),
     r = a(945810),
     i = a(654487);
-let o = (0, r.mj)({
+let _ = (0, r.mj)({
     name: "2026-01-quest-bar-unfurl",
     kind: "user",
     defaultConfig: {
@@ -25,7 +25,7 @@ let o = (0, r.mj)({
     }
 });
 
-function _(e) {
+function o(e) {
     return !0
 }
 
@@ -33,7 +33,7 @@ function c() {
     let {
         enabled: e,
         variant: t
-    } = o.useConfig({
+    } = _.useConfig({
         location: i.rE.QUESTS_BAR
     });
     return {

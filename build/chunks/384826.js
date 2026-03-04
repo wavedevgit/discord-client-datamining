@@ -1,21 +1,21 @@
 /** chunk id: 384826, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968),
     a = n(64700),
     i = n(397927),
     r = n(518977),
     s = n(473169);
-let o = e => {
+let d = e => {
     let {
         element: t,
         onChange: n,
-        state: o
-    } = e, d = t.name, {
+        state: d
+    } = e, o = t.name, {
         title: c,
         options: u
-    } = t.data, _ = o?.[d]?.value ?? void 0, [m, x] = a.useState(_);
+    } = t.data, _ = d?.[o]?.value ?? void 0, [m, x] = a.useState(_);
     a.useEffect(() => {
         x(_)
     }, [_]);
@@ -31,8 +31,8 @@ let o = e => {
             }
         }).sort((e, t) => e.label.localeCompare(t.label)), [u]),
         g = a.useCallback(e => {
-            null != e && (x(e), n(d, e))
-        }, [n, d]);
+            null != e && (x(e), n(o, e))
+        }, [n, o]);
     return (0, l.jsx)("div", {
         className: s.QB,
         children: (0, l.jsx)(i.ZiE, {

@@ -1,21 +1,21 @@
 /** chunk id: 916217, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => O
 });
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(793574),
-    r = n(688810),
+    r = n(793574),
+    a = n(688810),
     d = n(915089),
     o = n(713517),
     c = n(182592),
     u = n(562153),
     A = n(183555),
-    _ = n(950191),
-    x = n(718019),
-    p = n(31432),
-    m = n(915614),
+    x = n(950191),
+    _ = n(718019),
+    m = n(31432),
+    p = n(915614),
     f = n(389996),
     h = n(743987),
     I = n(900179),
@@ -23,38 +23,38 @@ var i = n(627968),
     j = n(810396),
     b = n(35241),
     N = n(587168),
-    C = n(518477),
+    v = n(518477),
     E = n(652215),
-    v = n(996988),
-    T = n(985018),
+    T = n(996988),
+    C = n(985018),
     y = n(763563),
     L = n(195723),
-    O = n(368519);
+    S = n(368519);
 
-function S(e) {
+function O(e) {
     let {
         user: t,
         guildId: n,
-        channelId: S,
+        channelId: O,
         messageId: P,
-        roleId: M,
-        sessionId: R,
+        roleId: R,
+        sessionId: M,
         transitionState: G,
         openedAt: k,
         onClose: D,
         sourceAnalyticsLocations: U = []
-    } = e, B = n === E.ME ? void 0 : n, F = (0, _.Ay)(t.id, B), V = u.Ay.getName(B, S, t), w = (0, d.GV)(), {
+    } = e, B = n === E.ME ? void 0 : n, F = (0, x.Ay)(t.id, B), V = u.Ay.getName(B, O, t), w = (0, d.GV)(), {
         analyticsLocations: z
-    } = (0, r.Ay)([...U, a.A.USER_PROFILE_MODAL]), H = (0, A.pb)({
+    } = (0, a.Ay)([...U, r.A.USER_PROFILE_MODAL]), H = (0, A.pb)({
         layout: "MODAL",
         userId: t.id,
-        sourceSessionId: R,
+        sourceSessionId: M,
         guildId: B,
-        channelId: S,
+        channelId: O,
         messageId: P,
-        roleId: M
+        roleId: R
     }), W = s.useRef(null), Y = (0, o.M)(W);
-    return (0, i.jsx)(r.f5, {
+    return (0, i.jsx)(a.f5, {
         value: z,
         children: (0, i.jsx)(A.of, {
             value: H,
@@ -73,7 +73,7 @@ function S(e) {
                     component: (0, i.jsx)(l.AC4, {
                         children: (0, i.jsx)(l.H, {
                             id: w,
-                            children: T.intl.format(T.t.KRe1Fk, {
+                            children: C.intl.format(C.t.KRe1Fk, {
                                 name: V
                             })
                         })
@@ -81,25 +81,25 @@ function S(e) {
                     children: (0, i.jsxs)(g.A, {
                         user: t,
                         displayProfile: F,
-                        themeType: v.d.MODAL,
+                        themeType: T.d.MODAL,
                         ref: F?.profileEffect != null ? W : void 0,
                         children: [(0, i.jsx)(N.A, {
                             children: (0, i.jsx)(b.A, {
                                 user: t
                             })
                         }), (0, i.jsxs)("div", {
-                            children: [(0, i.jsx)(m.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 user: t,
                                 displayProfile: F,
-                                themeType: v.d.MODAL
+                                themeType: T.d.MODAL
                             }), (0, i.jsx)("div", {
                                 className: y.El,
-                                children: (0, i.jsx)(x.A, {
+                                children: (0, i.jsx)(_.A, {
                                     user: t,
                                     displayProfile: F,
                                     guildId: B,
-                                    channelId: S,
-                                    themeType: v.d.MODAL
+                                    channelId: O,
+                                    themeType: T.d.MODAL
                                 })
                             })]
                         }), (0, i.jsxs)("div", {
@@ -111,27 +111,27 @@ function S(e) {
                                 nickname: V,
                                 pronouns: F?.pronouns,
                                 nicknameVariant: "heading-xl/bold",
-                                tags: (0, i.jsx)(p.A, {
+                                tags: (0, i.jsx)(m.A, {
                                     displayProfile: F,
-                                    themeType: v.d.MODAL,
+                                    themeType: T.d.MODAL,
                                     onClose: D
                                 })
                             }), (0, i.jsxs)("div", {
-                                className: O.kL,
+                                className: S.kL,
                                 children: [(0, i.jsx)(l.VQ0, {
-                                    className: O.$H,
+                                    className: S.$H,
                                     type: "top",
-                                    selectedItem: C.RP.BOT_INFO,
+                                    selectedItem: v.RP.BOT_INFO,
                                     onItemSelect: E.tEg,
                                     children: (0, i.jsx)(l.VQ0.Item, {
-                                        className: O.YU,
-                                        id: C.RP.BOT_INFO,
-                                        "aria-label": T.intl.string(T.t.ZzAR2Y),
+                                        className: S.YU,
+                                        id: v.RP.BOT_INFO,
+                                        "aria-label": C.intl.string(C.t.ZzAR2Y),
                                         children: (0, i.jsx)(l.Text, {
                                             variant: "text-sm/normal",
-                                            children: T.intl.string(T.t.ZzAR2Y)
+                                            children: C.intl.string(C.t.ZzAR2Y)
                                         })
-                                    }, C.RP.BOT_INFO)
+                                    }, v.RP.BOT_INFO)
                                 }), (0, i.jsxs)(l.IpV, {
                                     fade: !0,
                                     className: L.XG,
@@ -140,11 +140,11 @@ function S(e) {
                                         userBio: F?.bio,
                                         setLineClamp: !1
                                     }), (0, i.jsx)(I.A, {
-                                        heading: T.intl.string(T.t["A//N4k"]),
+                                        heading: C.intl.string(C.t["A//N4k"]),
                                         children: (0, i.jsx)(h.A, {
                                             userId: t.id,
                                             guildId: B,
-                                            tooltipDelay: C.In
+                                            tooltipDelay: v.In
                                         })
                                     })]
                                 })]

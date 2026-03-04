@@ -72,23 +72,23 @@ function I(e) {
         gameName: b,
         isLoading: N
     } = (0, r.A)(t.applicationId), {
-        registerDragHandleRef: y
-    } = (0, u.r)(), S = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), k = C?.id === n, R = !I && k, {
+        registerDragHandleRef: S
+    } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
         isDragging: w
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
-    })), O = () => (0, i.jsxs)(i.Fragment, {
+    })), L = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(g.A, {
             imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
             userId: n,
             disableInteraction: I,
-            className: a()(S ? _.kO : void 0, null == T || I ? void 0 : h.iL),
+            className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
             hideTooltip: w,
             coverRef: E
-        }), R && (0, i.jsx)(d.jV, {
-            buttonRef: y(t.applicationId),
+        }), k && (0, i.jsx)(d.jV, {
+            buttonRef: S(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
             userId: n,
@@ -96,7 +96,7 @@ function I(e) {
             guildId: c,
             channelId: p,
             className: _.Ez
-        }), R && (0, i.jsx)(m.A, {
+        }), k && (0, i.jsx)(m.A, {
             game: t,
             widgetType: l,
             className: _.vS,
@@ -106,15 +106,15 @@ function I(e) {
     });
     return N ? (0, i.jsx)("div", {
         className: h.mD
-    }) : R ? (0, i.jsx)(A, {
+    }) : k ? (0, i.jsx)(A, {
         widgetType: l,
         index: j ?? 0,
         game: t,
         coverImageUrl: T,
         gameName: b,
-        children: O()
+        children: L()
     }) : (0, i.jsx)("div", {
         className: _.kL,
-        children: O()
+        children: L()
     })
 }

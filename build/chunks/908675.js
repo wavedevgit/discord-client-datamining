@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(503698),
     r = n.n(i),
     s = n(397927),
-    o = n(46054),
-    d = n(957565),
+    d = n(46054),
+    o = n(957565),
     c = n(985018),
     u = n(38776);
 
@@ -22,7 +22,7 @@ function _(e) {
                 is_localized: _
             }
         }
-    } = e, [m, x] = a.useState(!1), p = a.useRef(o.A.reactParserFor(o.A.defaultRules));
+    } = e, [m, x] = a.useState(!1), p = a.useRef(d.A.reactParserFor(d.A.defaultRules));
     return _ ? (0, l.jsxs)("div", {
         className: u.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -52,7 +52,7 @@ function _(e) {
                         size: "sm",
                         text: m ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
                         onClick: () => {
-                            (0, d.C)(i, () => x(!0))
+                            (0, o.C)(i, () => x(!0))
                         }
                     })
                 })]

@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(311907),
     r = n(824552),
     s = n(933958),
-    o = n(869003),
-    d = n(58149),
+    d = n(869003),
+    o = n(58149),
     c = n(632738),
     u = n(546183),
     _ = n(652215),
@@ -27,13 +27,13 @@ let x = e => {
     }, []);
     let h = (0, i.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
         b = a.useCallback(() => {
-            if (p(!1), d.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
+            if (p(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
                     application_id: t.id,
                     report_id: n
                 }), null == g) return;
             r.A.delete(g.id);
             let e = h.get(t.id);
-            null != e && o.A.leaveActivity({
+            null != e && d.A.leaveActivity({
                 location: e.location,
                 applicationId: t.id,
                 showFeedback: !1

@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(731738),
     r = n(397927),
     s = n(964486),
-    o = n(58149),
-    d = n(915089),
+    d = n(58149),
+    o = n(915089),
     c = n(831062),
     u = n(923531),
     _ = n(17372),
@@ -25,19 +25,19 @@ let A = e => {
         onNavigate: b,
         emailToken: v,
         isAuthenticated: f = !0
-    } = e, C = (0, d.GV)(), {
-        nodes: T,
-        root_node_id: I,
-        success_node_id: j,
+    } = e, T = (0, o.GV)(), {
+        nodes: C,
+        root_node_id: j,
+        success_node_id: I,
         fail_node_id: S
-    } = n, [N, k] = a.useState(I), [y, E] = a.useState(void 0), [M, O] = a.useState(void 0), [R, w] = a.useState([]), [G, L] = a.useState(void 0), [D, U] = a.useState(void 0), [B, P] = a.useState(void 0);
+    } = n, [N, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [O, G] = a.useState([]), [w, L] = a.useState(void 0), [D, B] = a.useState(void 0), [U, P] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
     let H = e => {
             let {
                 destination: n
-            } = e, [, l] = n, a = T[l];
+            } = e, [, l] = n, a = C[l];
             if (void 0 === a) return void c.A.increment({
                 name: i.K.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
             });
@@ -45,81 +45,81 @@ let A = e => {
                 ...e,
                 destination: ["", a.button.target]
             });
-            if (w([...R, e]), null != a.key && b?.(a.key), E(void 0), O(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
+            if (G([...O, e]), null != a.key && b?.(a.key), E(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
-                o.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
+                d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: a.report_type,
-                    current_node: T[N].id,
+                    current_node: C[N].id,
                     next_node: a.id
                 })
             }
-            k(l)
+            y(l)
         },
         V = async e => {
-            let l = f ? await (0, m.zC)(n, t, [...R, e]) : await (0, m.bo)(n, t, [...R, e], v),
+            let l = f ? await (0, m.zC)(n, t, [...O, e]) : await (0, m.bo)(n, t, [...O, e], v),
                 a = l?.body?.report_id;
-            null != a && L(a), U(T[e.nodeRef].report_type), h?.(a)
+            null != a && L(a), B(C[e.nodeRef].report_type), h?.(a)
         }, F = () => {
-            if (R.length < 1) return;
-            let e = [...R],
+            if (O.length < 1) return;
+            let e = [...O],
                 n = e.pop(),
-                l = n?.nodeRef ?? I;
+                l = n?.nodeRef ?? j;
             if (t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
-                o.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
+                d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
-                    report_sub_type: T[l].report_type,
-                    current_node: T[N].id,
-                    next_node: T[l].id
+                    report_sub_type: C[l].report_type,
+                    current_node: C[N].id,
+                    next_node: C[l].id
                 })
             }
-            E(n?.multiSelect?.state), O(n?.textInput), k(l), w(e), b?.("..")
+            E(n?.multiSelect?.state), R(n?.textInput), y(l), G(e), b?.("..")
         }, W = a.useCallback((e, t) => {
             let n;
-            for (let t in T) {
-                let l = T[t];
+            for (let t in C) {
+                let l = C[t];
                 if (l.key === e) {
                     n = l;
                     break
                 }
             }
             if (null == n) return;
-            let l = R.findIndex(e => e.nodeRef === n.id);
+            let l = O.findIndex(e => e.nodeRef === n.id);
             if (l >= 0) {
-                let e = R.slice(0, l),
-                    t = R[l];
-                O(t?.textInput), E(t?.multiSelect?.state), w(e)
-            } else w([]), O(void 0), E(void 0);
-            P(t), k(n.id)
-        }, [T, R]);
+                let e = O.slice(0, l),
+                    t = O[l];
+                R(t?.textInput), E(t?.multiSelect?.state), G(e)
+            } else G([]), R(void 0), E(void 0);
+            P(t), y(n.id)
+        }, [C, O]);
     a.useEffect(() => {
-        null != B && P(void 0)
-    }, [B]);
+        null != U && P(void 0)
+    }, [U]);
     let z = a.useMemo(() => {
         let e = [],
             t = [];
-        for (let n in T) {
-            let l = T[n];
-            if (l.id !== j && l.id !== S && l.id !== I) {
+        for (let n in C) {
+            let l = C[n];
+            if (l.id !== I && l.id !== S && l.id !== j) {
                 if (l.key.endsWith("_SUBMIT") || l.button?.type === "submit") {
                     t.push(l);
                     continue
                 }
                 if (e.push(l), l.button?.type === "next") {
                     let t = l.button?.target,
-                        n = e.indexOf(T[t]); - 1 !== n && (e.splice(n, 1), e.push(T[t]))
+                        n = e.indexOf(C[t]); - 1 !== n && (e.splice(n, 1), e.push(C[t]))
                 }
             }
         }
-        return [T[I], ...e, ...t, T[j], T[S]]
-    }, [T, I, S, j]);
+        return [C[j], ...e, ...t, C[I], C[S]]
+    }, [C, j, S, I]);
     return (0, l.jsx)(r.EOs, {
         "data-migration-pending": !0,
         transitionState: A.transitionState,
-        "aria-labelledby": C,
+        "aria-labelledby": T,
         parentComponent: "InAppReportModal",
         children: (0, l.jsx)(r.tN_, {
             width: 440,
@@ -133,19 +133,19 @@ let A = e => {
                         node: e,
                         reportType: t,
                         reportSubType: D,
-                        history: R,
+                        history: O,
                         onModalClose: A.onClose,
                         onSelectChild: H,
                         onNavigateBack: F,
                         onNavigateToNode: W,
-                        multiSelect: y,
+                        multiSelect: k,
                         textInput: M,
-                        successNodeId: j,
+                        successNodeId: I,
                         failNodeId: S,
                         onSubmit: V,
-                        reportId: G,
-                        nodeMap: T,
-                        initialErrorMessage: e.id === N ? B : void 0
+                        reportId: w,
+                        nodeMap: C,
+                        initialErrorMessage: e.id === N ? U : void 0
                     })
                 })
             }, e.id))

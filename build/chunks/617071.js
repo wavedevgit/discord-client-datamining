@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(857250),
     r = n(397927),
     s = n(899847),
-    o = n(662502),
-    d = n(632738),
+    d = n(662502),
+    o = n(632738),
     c = n(985018);
 let u = e => {
     let {
@@ -22,7 +22,7 @@ let u = e => {
                 parent3: t[2]?.username
             }), r.ToastType.SUCCESS)), u(!0)
         }).catch(() => {
-            o.A.showFailedToast()
+            d.A.showFailedToast()
         })
     }, [t]);
     if (0 === t.length) return null;
@@ -32,7 +32,7 @@ let u = e => {
         parent2: t[1]?.username,
         parent3: t[2]?.username
     });
-    return (0, l.jsx)(d.PQ, {
+    return (0, l.jsx)(o.PQ, {
         title: m,
         description: c.intl.string(c.t["5l/hlt"]),
         buttonText: n ? c.intl.string(c.t.ntuuk7) : c.intl.string(c.t["sYdX/H"]),

@@ -5,8 +5,8 @@ a.d(t, {
 var n = a(64700),
     r = a(311907),
     i = a(451988),
-    o = a(964486),
-    _ = a(430452),
+    _ = a(964486),
+    o = a(430452),
     c = a(383501),
     l = a(927813),
     s = a(340913),
@@ -15,7 +15,7 @@ let u = 2.5 * l.A.Millis.SECOND,
     p = +l.A.Millis.HOUR;
 
 function g() {
-    let [e, t] = n.useState(!1), a = (0, r.bG)([_.Ay], () => _.Ay.getMode() === d.TB.PUSH_TO_TALK), l = (0, r.bG)([c.A], () => null != c.A.getChannelId() && (c.A.getDuration() ?? Number.MAX_VALUE) < u), [g, b] = n.useState(!1), {
+    let [e, t] = n.useState(!1), a = (0, r.bG)([o.Ay], () => o.Ay.getMode() === d.TB.PUSH_TO_TALK), l = (0, r.bG)([c.A], () => null != c.A.getChannelId() && (c.A.getDuration() ?? Number.MAX_VALUE) < u), [g, b] = n.useState(!1), {
         showPTTJoinTooltip: m
     } = s.A.useConfig({
         location: "usePTTJoinTooltip"
@@ -36,7 +36,7 @@ function g() {
     let C = n.useCallback(() => {
         b(!1), f.current.stop()
     }, []);
-    return (0, o.l0)(() => {
+    return (0, _.l0)(() => {
         f.current.stop(), A.current.stop()
     }), {
         shouldShowTooltip: g,

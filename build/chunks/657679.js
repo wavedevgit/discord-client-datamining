@@ -1,6 +1,6 @@
 /** chunk id: 657679, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968),
     a = n(64700),
@@ -11,9 +11,9 @@ let s = e => {
             element: t,
             onChange: n,
             initialOption: s
-        } = e, [o, d] = a.useState("");
+        } = e, [d, o] = a.useState("");
         a.useEffect(() => {
-            d(s ?? "")
+            o(s ?? "")
         }, [s]);
         let c = t.name,
             {
@@ -25,13 +25,13 @@ let s = e => {
                 id: e.id ?? e.value
             })), [_]),
             x = a.useCallback(e => {
-                null != e && (d(e), n(e))
+                null != e && (o(e), n(e))
             }, [n]);
         return (0, l.jsx)("div", {
             className: r.QB,
             children: (0, l.jsx)(i.l6P, {
                 label: u,
-                value: o,
+                value: d,
                 required: t.should_submit_data,
                 onSelectionChange: x,
                 options: m,
@@ -40,7 +40,7 @@ let s = e => {
             })
         }, c)
     },
-    o = e => {
+    d = e => {
         let {
             elements: t,
             onChange: n,

@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(397927),
     r = n(46054),
     s = n(861662),
-    o = n(985018),
-    d = n(322367),
+    d = n(985018),
+    o = n(322367),
     c = n(473169);
 let u = e => {
         let {
@@ -27,16 +27,16 @@ let u = e => {
         } = e, b = a.useMemo(() => r.A.reactParserFor({
             ...r.A.defaultRules,
             link: s.B
-        }), []), [v, f] = a.useState(""), [C, T] = a.useState(null);
+        }), []), [v, f] = a.useState(""), [T, C] = a.useState(null);
         a.useEffect(() => {
             f(A?.value ?? "")
         }, [A]);
-        let I = a.useCallback(e => {
+        let j = a.useCallback(e => {
             let t = null != p ? new RegExp(p) : null;
-            null == t || t.test(e) ? null != e && (T(null), f(e), g({
+            null == t || t.test(e) ? null != e && (C(null), f(e), g({
                 value: e,
                 isValid: !0
-            })) : (T(o.intl.string(o.t["24xrGb"])), g({
+            })) : (C(d.intl.string(d.t["24xrGb"])), g({
                 value: e,
                 isValid: !1
             }))
@@ -48,7 +48,7 @@ let u = e => {
                 children: [null != t && (0, l.jsxs)(i.Text, {
                     variant: "text-sm/bold",
                     children: [t, h && (0, l.jsx)("span", {
-                        className: d.m,
+                        className: o.m,
                         children: "*"
                     })]
                 }), null != u && (0, l.jsx)("div", {
@@ -61,16 +61,16 @@ let u = e => {
                 })]
             }), 1 === m ? (0, l.jsx)(i.ksK, {
                 maxLength: x,
-                onChange: I,
+                onChange: j,
                 value: v,
-                error: C,
+                error: T,
                 placeholder: _,
                 autoFocus: !0
             }) : (0, l.jsx)(i.fs1, {
                 maxLength: x,
-                onChange: I,
+                onChange: j,
                 value: v,
-                error: C,
+                error: T,
                 rows: m,
                 placeholder: _,
                 autoFocus: !0

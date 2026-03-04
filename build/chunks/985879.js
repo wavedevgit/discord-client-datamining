@@ -1,6 +1,6 @@
 /** chunk id: 985879, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = n(627968);
 n(64700);
@@ -11,7 +11,7 @@ let s = i.A.reactParserFor({
         ...i.A.defaultRules,
         link: r.B
     }),
-    o = e => {
+    d = e => {
         let {
             element: t
         } = e, {

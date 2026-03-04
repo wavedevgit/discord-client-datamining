@@ -7,8 +7,8 @@ var l = n(627968),
     i = n(311907),
     r = n(49229),
     s = n(58149),
-    o = n(662502),
-    d = n(632738),
+    d = n(662502),
+    o = n(632738),
     c = n(734057),
     u = n(994500),
     _ = n(562153),
@@ -27,10 +27,10 @@ let p = e => {
         }), r.A.blockUser(t.id, {
             location: "ReportMenuBlockUser-iOS"
         }).then(() => {
-            o.A.showBlockSuccessToast(t.id, n)
+            d.A.showBlockSuccessToast(t.id, n)
         })
     }, [t, p, n]);
-    return (0, l.jsx)(d.PQ, {
+    return (0, l.jsx)(o.PQ, {
         title: x.intl.formatToPlainString(x.t["Q1o/f3"], {
             username: b
         }),

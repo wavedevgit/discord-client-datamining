@@ -35,12 +35,12 @@ let r = e => {
         } = t;
         return (0, l.jsx)("div", {
             children: i.map((e, t) => {
-                let [i, s, o] = e;
+                let [i, s, d] = e;
                 return (0, l.jsx)(r, {
                     onChange: () => a(i, s),
                     selected: i in n,
                     label: s,
-                    subtitle: o
+                    subtitle: d
                 }, `${t}+button`)
             })
         })

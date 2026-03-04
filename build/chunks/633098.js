@@ -26,10 +26,10 @@ function j(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), N = (0, o.bG)([f.A], () => f.A.canSaveChanges()), y = (0, o.bG)([f.A], () => f.A.isSubmitting), S = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
+    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), N = (0, o.bG)([f.A], () => f.A.canSaveChanges()), S = (0, o.bG)([f.A], () => f.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
         from: {
             opacity: 0,
-            y: 80 * !S
+            y: 80 * !y
         },
         enter: {
             opacity: 1,
@@ -37,7 +37,7 @@ function j(e) {
         },
         leave: {
             opacity: 0,
-            y: 80 * !S
+            y: 80 * !y
         }
     });
     l.useEffect(() => {
@@ -52,7 +52,7 @@ function j(e) {
     }, []), l.useEffect(() => {
         b && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [b]);
-    let k = l.useCallback(async () => {
+    let R = l.useCallback(async () => {
             if (f.A.canSaveChanges()) {
                 try {
                     await x.A.savePendingWidgets(v)
@@ -73,7 +73,7 @@ function j(e) {
                 })
             }
         }, [v, E, T, n]),
-        R = l.useCallback(() => {
+        k = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return C((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -95,15 +95,15 @@ function j(e) {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: R,
-                    disabled: !b || y
+                    onClick: k,
+                    disabled: !b || S
                 }), (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
-                    onClick: k,
-                    loading: y,
-                    disabled: !N || !b || y
+                    onClick: R,
+                    loading: S,
+                    disabled: !N || !b || S
                 })]
             })]
         })

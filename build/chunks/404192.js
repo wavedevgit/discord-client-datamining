@@ -8,8 +8,8 @@ var a = n(503698),
     i = n.n(a),
     r = n(397927),
     s = n(975807),
-    o = n(985018),
-    d = n(212335),
+    d = n(985018),
+    o = n(212335),
     c = n(606566);
 let u = e => {
     let {
@@ -17,12 +17,12 @@ let u = e => {
             url: t,
             link_text: n,
             link_description: a,
-            is_localized: o
+            is_localized: d
         }
     } = e;
-    return o ? (0, l.jsxs)(r.DUT, {
+    return d ? (0, l.jsxs)(r.DUT, {
         role: "link",
-        className: i()(c.$J, d.lD),
+        className: i()(c.$J, o.lD),
         onClick: () => {
             (0, s.A)(t)
         },
@@ -70,12 +70,12 @@ function _(e) {
             return t.is_header_hidden
         });
     return (0, l.jsxs)("div", {
-        className: i()(c.nV, d.E8),
+        className: i()(c.nV, o.E8),
         children: [!a && (0, l.jsx)(r.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
             className: c.wx,
-            children: o.intl.string(o.t.hvVgAZ)
+            children: d.intl.string(d.t.hvVgAZ)
         }), n]
     })
 }

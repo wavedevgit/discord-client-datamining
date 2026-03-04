@@ -8,8 +8,8 @@ var a = n(503698),
     i = n.n(a),
     r = n(311907),
     s = n(397927),
-    o = n(865116),
-    d = n(147925),
+    d = n(865116),
+    o = n(147925),
     c = n(212335),
     u = n(357905);
 let _ = e => {
@@ -17,7 +17,7 @@ let _ = e => {
             child: t,
             onClick: n,
             nodeMap: a
-        } = e, [_, m] = t, x = (0, r.bG)([o.Ay], () => o.Ay.get("iar_show_report_sub_type_labels")), p = a[m], g = p?.report_type;
+        } = e, [_, m] = t, x = (0, r.bG)([d.Ay], () => d.Ay.get("iar_show_report_sub_type_labels")), p = a[m], g = p?.report_type;
         return (0, l.jsxs)(s.DUT, {
             className: i()(u.Zm, c.lD),
             onClick: () => n(t),
@@ -33,9 +33,9 @@ let _ = e => {
                     color: "text-muted",
                     children: g
                 })]
-            }), (0, l.jsx)(d.A, {
+            }), (0, l.jsx)(o.A, {
                 className: u._2,
-                direction: d.A.Directions.RIGHT
+                direction: o.A.Directions.RIGHT
             })]
         })
     },
