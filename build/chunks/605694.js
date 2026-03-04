@@ -138,9 +138,6 @@ let D = /{{(.*?)}}/g,
             body: [{
                 type: "TEXT",
                 content: "Server: {{server_name}}"
-            }, {
-                type: "TEXT",
-                content: "UID: {{user_id}}"
             }]
         }, {
             type: "SEPARATOR",
