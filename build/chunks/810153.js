@@ -6,10 +6,10 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(187508),
-    a = n(927813),
-    r = n(661191),
+    r = n(927813),
+    a = n(661191),
     o = n(322387);
-let c = 90 * a.A.Millis.DAY,
+let c = 90 * r.A.Millis.DAY,
     d = {
         tab: null,
         localItemAcks: {},
@@ -34,7 +34,7 @@ class u extends i.Ay.PersistedStore {
         return d.tab ?? o.$w.ForYou
     }
     isLocalItemAcked(e) {
-        return null != e.local_id && (null != d.localItemAcks[e.local_id] || r.default.age(e.id) > c)
+        return null != e.local_id && (null != d.localItemAcks[e.local_id] || a.default.age(e.id) > c)
     }
     hasNewMentions() {
         return d.hasNewMentions

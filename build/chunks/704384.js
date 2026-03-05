@@ -1,19 +1,19 @@
 /** chunk id: 704384, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(175203),
     l = n(430452),
-    a = n(348702);
+    r = n(348702);
 
-function r(e) {
+function a(e) {
     let {
         aspectRatio: t,
         className: n,
-        children: r,
+        children: a,
         width: o,
         ...c
     } = e, d = l.Ay.getVideoComponent();
@@ -21,9 +21,9 @@ function r(e) {
         style: {
             width: o
         },
-        className: a.A,
+        className: r.A,
         children: (0, i.jsxs)("div", {
-            className: a.e,
+            className: r.e,
             style: {
                 aspectRatio: t
             },
@@ -32,7 +32,7 @@ function r(e) {
                 videoComponent: d,
                 width: o,
                 ...c
-            }), r]
+            }), a]
         })
     })
 }

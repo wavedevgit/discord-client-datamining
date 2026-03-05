@@ -6,24 +6,24 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(956793),
-    r = n(164617),
+    r = n(956793),
+    a = n(164617),
     o = n(47167),
     c = n(202384),
     d = n(51758),
     u = n(141035),
     h = n(175203),
     A = n(426660),
-    p = n(806931),
-    m = n(985018),
+    m = n(806931),
+    p = n(985018),
     g = n(852887);
 let _ = function(e) {
     let {
         participants: t,
         channel: n,
         hasConnectPermission: _
-    } = e, f = t.filter(p.Xw), x = (0, d.H)(n.guild_id), C = s.useCallback(() => {
-        x ? (0, c.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+    } = e, f = t.filter(m.Xw), x = (0, d.H)(n.guild_id), C = s.useCallback(() => {
+        x ? (0, c.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, x]), E = 4 === f.length ? 2 : 3, I = (0, o.Ay)(n);
     return (0, i.jsxs)("div", {
         className: g.kL,
@@ -38,7 +38,7 @@ let _ = function(e) {
                 className: g.Vs,
                 inCall: !0,
                 noVideoRender: !0,
-                popoutType: r.N.NO_POPOUT,
+                popoutType: a.N.NO_POPOUT,
                 width: 48
             }, e.id))
         }), (0, i.jsx)(l.Heading, {
@@ -50,12 +50,12 @@ let _ = function(e) {
             children: (0, i.jsx)(l.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: 0 === f.length ? m.intl.string(m.t.zSqdrS) : 1 === f.length ? m.intl.formatToPlainString(m.t.BUyJIG, {
+                children: 0 === f.length ? p.intl.string(p.t.zSqdrS) : 1 === f.length ? p.intl.formatToPlainString(p.t.BUyJIG, {
                     a: (0, u.A)(n, f[0])
-                }) : 2 === f.length ? m.intl.formatToPlainString(m.t["dcyZf/"], {
+                }) : 2 === f.length ? p.intl.formatToPlainString(p.t["dcyZf/"], {
                     a: (0, u.A)(n, f[0]),
                     b: (0, u.A)(n, f[1])
-                }) : f.length > 2 ? m.intl.formatToPlainString(m.t["44/Obu"], {
+                }) : f.length > 2 ? p.intl.formatToPlainString(p.t["44/Obu"], {
                     a: (0, u.A)(n, f[0]),
                     b: (0, u.A)(n, f[1]),
                     n: f.length - 2
@@ -65,7 +65,7 @@ let _ = function(e) {
             className: g.PD,
             children: (0, i.jsx)(l.Button, {
                 variant: "overlay-primary",
-                text: _ ? m.intl.string(m.t["96ANUN"]) : m.intl.string(m.t.TVBCKZ),
+                text: _ ? p.intl.string(p.t["96ANUN"]) : p.intl.string(p.t.TVBCKZ),
                 onClick: C,
                 disabled: !_
             })

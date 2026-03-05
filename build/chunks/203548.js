@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(396181),
-    a = n(397927),
-    r = n(770178),
+    r = n(397927),
+    a = n(770178),
     o = n(180686);
 let c = Math.ceil(Math.sqrt(115200)),
     d = (c - 240) / 2,
@@ -16,11 +16,11 @@ let c = Math.ceil(Math.sqrt(115200)),
             children: n
         } = e, [u, h] = s.useState(-1), A = s.useCallback(e => {
             h(e.contentRect.width)
-        }, []), p = (0, r.w)(A, [], {
+        }, []), m = (0, a.w)(A, [], {
             fireOnMount: !0
         }), [{
-            shineSpring: m
-        }, g] = (0, a.zhh)(() => ({
+            shineSpring: p
+        }, g] = (0, r.zhh)(() => ({
             from: {
                 shineSpring: 0
             },
@@ -44,11 +44,11 @@ let c = Math.ceil(Math.sqrt(115200)),
             let e = (0, i.jsx)(l.animated.div, {
                 className: o.q2,
                 style: {
-                    transform: m.to(e => `translateX(calc(${e*u}px + ${e*c}px)) translateY(-50%) rotate(45deg)`)
+                    transform: p.to(e => `translateX(calc(${e*u}px + ${e*c}px)) translateY(-50%) rotate(45deg)`)
                 }
             });
             return n(o.VU, o.Qq, o.Kk, e)
-        }, [n, u, m]);
+        }, [n, u, p]);
         return s.useImperativeHandle(t, () => ({
             onMouseEnter: _,
             onMouseLeave: f
@@ -58,7 +58,7 @@ let c = Math.ceil(Math.sqrt(115200)),
             onMouseLeave: f,
             onFocus: _,
             onBlur: f,
-            ref: p,
+            ref: m,
             style: {
                 "--custom-shine-dimensions": "240px",
                 "--custom-shine-rotated-dimensions-delta": `${d}px`

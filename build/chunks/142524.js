@@ -49,13 +49,11 @@ class v extends l.PureComponent {
             currentUserId: u,
             canWatch: c,
             unavailableReason: A,
-            streamApplication: p,
-            isStandardGap: m
+            streamApplication: p
         } = this.props;
         return null == n ? null : (0, i.jsx)("div", {
             className: a()(T.yt, {
-                [T.P0]: l,
-                [T.iA]: !0 === m
+                [T.P0]: l
             }),
             children: (0, i.jsx)(C.Z, {
                 stream: n,
@@ -68,8 +66,7 @@ class v extends l.PureComponent {
                 unavailableReason: A,
                 onWatchStream: o,
                 onAction: r,
-                hideTip: s,
-                className: T.Rh
+                hideTip: s
             })
         })
     }

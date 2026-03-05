@@ -1,14 +1,14 @@
 /** chunk id: 582904, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Z: () => p,
+    Z: () => m,
     k: () => A
 }), n(839272);
 var i = n(64700),
     s = n(311907),
     l = n(394577),
-    a = n(21119),
-    r = n(696451),
+    r = n(21119),
+    a = n(696451),
     o = n(287809),
     c = n(607567),
     d = n(403362),
@@ -25,18 +25,18 @@ function A(e) {
         location: "useVoiceInviteSuggestions"
     }, {
         autoTrackExposure: !1
-    }), h = (0, s.bG)([a.A], () => a.A.getUserAffinitiesMap(), []), A = new Set((0, s.bG)([c.Ay], () => null == t ? [] : c.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), p = (0, s.yK)([r.Ay, o.default], () => r.Ay.getMembers(n).map(e => o.default.getUser(e.userId)).filter(d.Vq).filter(e => !A.has(e.id)), [n, A]);
-    return i.useMemo(() => p.toSorted((e, t) => {
+    }), h = (0, s.bG)([r.A], () => r.A.getUserAffinitiesMap(), []), A = new Set((0, s.bG)([c.Ay], () => null == t ? [] : c.Ay.getVoiceStatesForChannel(t).map(e => e.user.id), [t])), m = (0, s.yK)([a.Ay, o.default], () => a.Ay.getMembers(n).map(e => o.default.getUser(e.userId)).filter(d.Vq).filter(e => !A.has(e.id)), [n, A]);
+    return i.useMemo(() => m.toSorted((e, t) => {
         let {
             id: n
         } = e, {
             id: i
         } = t;
         return (h.get(i)?.vcProbability ?? 0) - (h.get(n)?.vcProbability ?? 0)
-    }), [p, h]).slice(0, u)
+    }), [m, h]).slice(0, u)
 }
 
-function p(e) {
+function m(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
             collapsed: n = !1

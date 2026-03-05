@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(837381),
-    a = n(311907),
-    r = n(827734),
+    r = n(311907),
+    a = n(827734),
     o = n(397927),
     c = n(701785),
     d = n(65995),
     u = n(976860),
     h = n(147925),
     A = n(652215),
-    p = n(746080),
-    m = n(985018),
+    m = n(746080),
+    p = n(985018),
     g = n(949684);
 
 function _(e, t) {
@@ -28,7 +28,7 @@ function _(e, t) {
 let f = s.memo(function(e) {
     let {
         guild: t
-    } = e, n = (0, a.bG)([c.h], () => c.h.getNewMemberActions(t.id), [t.id]), f = (0, a.bG)([d.A], () => d.A.getCompletedActions(t.id)), x = s.useMemo(() => {
+    } = e, n = (0, r.bG)([c.h], () => c.h.getNewMemberActions(t.id), [t.id]), f = (0, r.bG)([d.A], () => d.A.getCompletedActions(t.id)), x = s.useMemo(() => {
         if (null == n || null == f) return 0;
         let e = 0;
         return n.forEach(t => {
@@ -46,20 +46,20 @@ let f = s.memo(function(e) {
             },
             className: g.G9,
             onClick: function() {
-                (0, u.pX)(A.BVt.CHANNEL(t.id, p.VV.GUILD_HOME))
+                (0, u.pX)(A.BVt.CHANNEL(t.id, m.VV.GUILD_HOME))
             },
             children: [(0, i.jsxs)("div", {
                 className: g.A1,
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-sm/bold",
-                    children: m.intl.string(m.t.SnrR3x)
+                    children: p.intl.string(p.t.SnrR3x)
                 }), (0, i.jsxs)("div", {
                     className: g.Ib,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-xs/medium",
                         color: "text-muted",
                         className: g.Cv,
-                        children: m.intl.format(m.t.eqZ1lW, {
+                        children: p.intl.format(p.t.eqZ1lW, {
                             numberHook: _,
                             total: C.toString(),
                             completed: x.toString()
@@ -73,7 +73,7 @@ let f = s.memo(function(e) {
                 })]
             }), (0, i.jsx)(o.iCB, {
                 className: g.hr,
-                foregroundGradientColor: [r.A.unsafe_rawColors.GREEN_300.css, r.A.unsafe_rawColors.GREEN_230.css],
+                foregroundGradientColor: [a.A.unsafe_rawColors.GREEN_300.css, a.A.unsafe_rawColors.GREEN_230.css],
                 percent: x / C * 100 + 3,
                 animate: !0
             })]

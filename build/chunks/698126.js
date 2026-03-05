@@ -1,21 +1,21 @@
 /** chunk id: 698126, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(308528),
     c = n(442433),
     d = n(676002),
     u = n(963027),
     h = n(976860),
     A = n(734057),
-    p = n(71393),
-    m = n(576705),
+    m = n(71393),
+    p = n(576705),
     g = n(557534),
     _ = n(166444),
     f = n(652215),
@@ -31,7 +31,7 @@ class I extends g.Ay {
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = p.A.getGuild(t.getGuildId());
+        } = this.props, s = m.A.getGuild(t.getGuildId());
         null != s && (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -63,9 +63,9 @@ class I extends g.Ay {
             connectChannelDropTarget: n,
             connectChannelDragSource: s,
             connectDragPreview: l,
-            canReorderChannel: r
+            canReorderChannel: a
         } = this.props, o = (0, i.jsx)("li", {
-            className: a()(this.getClassName(), {
+            className: r()(this.getClassName(), {
                 [C.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
@@ -76,7 +76,7 @@ class I extends g.Ay {
                 onClick: this.handleClick,
                 onMouseDown: E,
                 onContextMenu: this.handleContextMenu,
-                connectDragPreview: r ? l : null,
+                connectDragPreview: a ? l : null,
                 "aria-label": (0, u.Ay)({
                     channel: e
                 }),
@@ -84,20 +84,20 @@ class I extends g.Ay {
                 children: [this.renderInviteButton(), this.renderEditButton()]
             })
         });
-        return r ? n(s(o)) : o
+        return a ? n(s(o)) : o
     }
 }
 let N = (0, d.a)(I),
-    S = s.memo(function(e) {
+    b = s.memo(function(e) {
         let {
             channel: t,
             guild: n,
             disableSorting: s
-        } = e, l = (0, r.cf)([A.A, m.A], () => {
+        } = e, l = (0, a.cf)([A.A, p.A], () => {
             let e = A.A.getChannel(t.parent_id);
             return {
-                canManageChannel: m.A.can(f.xBc.MANAGE_CHANNELS, t),
-                canReorderChannel: !0 !== s && null != e ? m.A.can(f.xBc.MANAGE_CHANNELS, e) : m.A.can(f.xBc.MANAGE_CHANNELS, n)
+                canManageChannel: p.A.can(f.xBc.MANAGE_CHANNELS, t),
+                canReorderChannel: !0 !== s && null != e ? p.A.can(f.xBc.MANAGE_CHANNELS, e) : p.A.can(f.xBc.MANAGE_CHANNELS, n)
             }
         });
         return (0, i.jsx)(N, {

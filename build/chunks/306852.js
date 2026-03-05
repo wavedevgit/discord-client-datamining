@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(506774),
     c = n(31728),
     d = n(164617),
     u = n(205297),
     h = n(334463),
     A = n(175203),
-    p = n(652215),
-    m = n(806931),
+    m = n(652215),
+    p = n(806931),
     g = n(697166),
     _ = n(976092);
 let f = "CameraPreviewPosition";
@@ -29,20 +29,20 @@ function x(e) {
         participants: C,
         onSelectParticipant: E
     } = e, [I, N] = function() {
-        let [e, t] = s.useState(() => o.w.get(f, p.CUs.BOTTOM_RIGHT));
+        let [e, t] = s.useState(() => o.w.get(f, m.CUs.BOTTOM_RIGHT));
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), S = s.useRef(null), b = null == x.getGuildId() ? 70 : 50, T = (0, r.bG)([h.A], () => h.A.pipWidth(m.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
-        minWidth: m.mn[m.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
-        maxWidth: m.cF[m.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
+    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, a.bG)([h.A], () => h.A.pipWidth(p.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+        minWidth: p.mn[p.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
+        maxWidth: p.cF[p.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
     }), [v]);
     s.useLayoutEffect(() => {
-        S.current?.ensureIsInPosition()
+        b.current?.ensureIsInPosition()
     }, [C.length]);
     let R = s.useCallback(e => {
             let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
-            c.EB(t, m.R8.CAMERA_PREVIEW)
+            c.EB(t, p.R8.CAMERA_PREVIEW)
         }, [v]),
         O = s.useCallback((e, t) => {
             N(t)
@@ -53,12 +53,12 @@ function x(e) {
             position: I,
             id: 0,
             width: y,
-            ref: S,
+            ref: b,
             onMove: O,
             onResize: R,
             maxX: t,
             maxY: l,
-            edgeOffsetTop: b,
+            edgeOffsetTop: S,
             edgeOffsetBottom: 70,
             edgeOffsetLeft: 16,
             edgeOffsetRight: 16,
@@ -69,7 +69,7 @@ function x(e) {
                     participant: e,
                     channel: x,
                     onContextMenu: n,
-                    className: a()(g.Vs, _.a8),
+                    className: r()(g.Vs, _.a8),
                     fit: A.Yl.COVER,
                     inCall: !0,
                     popoutType: d.N.NO_POPOUT,

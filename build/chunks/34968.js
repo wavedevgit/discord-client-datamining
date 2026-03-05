@@ -2,22 +2,22 @@
 "use strict";
 n.d(t, {
     CJ: () => N,
-    dY: () => S,
-    y8: () => b
+    dY: () => b,
+    y8: () => S
 });
 var i = n(774603),
     s = n(430086),
     l = n(64460),
-    a = n(92960),
-    r = n(739008),
+    r = n(92960),
+    a = n(739008),
     o = n(314519),
     c = n(967497),
     d = n(806964),
     u = n(552049),
     h = n(877991),
     A = n(904828),
-    p = n(251494),
-    m = n(82038),
+    m = n(251494),
+    p = n(82038),
     g = n(14214),
     _ = n(151199),
     f = n(512513),
@@ -46,10 +46,10 @@ let N = {
         [C.IWg.MENTION_CHANNEL_PREV]: x.X8,
         [C.IWg.TOGGLE_PREVIOUS_GUILD]: s.Fv,
         [C.IWg.JUMP_TO_GUILD]: l.J,
-        [C.IWg.SUBMIT]: p.X,
-        [C.IWg.TEXTAREA_FOCUS]: m.c,
-        [C.IWg.MARK_CHANNEL_READ]: a.D,
-        [C.IWg.MARK_SERVER_READ]: r.P,
+        [C.IWg.SUBMIT]: m.X,
+        [C.IWg.TEXTAREA_FOCUS]: p.c,
+        [C.IWg.MARK_CHANNEL_READ]: r.D,
+        [C.IWg.MARK_SERVER_READ]: a.P,
         [C.IWg.TOGGLE_MUTE]: g.VT,
         [C.IWg.TOGGLE_DEAFEN]: g.rR,
         [C.IWg.TOGGLE_CATEGORY_COLLAPSED]: _.y,
@@ -63,11 +63,11 @@ let N = {
         [C.IWg.CALL_START]: i.OX,
         [C.IWg.QUICKSWITCHER_SHOW]: c.R
     },
-    S = {
+    b = {
         [C.IWg.QUICKSWITCHER_SHOW]: c.R
     };
 
-function b() {
+function S() {
     return [{
         description: E.intl.string(E.t.bx4Uyz),
         binds: I(C.IWg.SERVER_PREV, C.IWg.SERVER_NEXT)

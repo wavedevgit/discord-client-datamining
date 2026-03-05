@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(311907),
-    r = n(554146),
+    r = n(311907),
+    a = n(554146),
     o = n(397927),
     c = n(932001),
     d = n(625180),
     u = n(544028),
     h = n(859703),
     A = n(341915),
-    p = n(759366),
-    m = n(245853),
+    m = n(759366),
+    p = n(245853),
     g = n(714510),
     _ = n(890687),
     f = n(639214),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(713081),
     I = n(73473),
     N = n(646764),
-    S = n(654487),
-    b = n(49999),
+    b = n(654487),
+    S = n(49999),
     T = n(165610),
     v = n(985018),
     y = n(453561);
@@ -34,13 +34,13 @@ function j(e) {
     let {
         quest: t,
         applicationId: n
-    } = e, a = (0, _.fc)(t), u = (0, g.mU)({
+    } = e, r = (0, _.fc)(t), u = (0, g.mU)({
         quest: t,
-        taskDetails: a,
-        location: S.rE.QUEST_ACTIVITY_HEADER,
+        taskDetails: r,
+        location: b.rE.QUEST_ACTIVITY_HEADER,
         questContent: A.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: A.uF.RUNNING_ACTIVITY
-    }), [h, p] = s.useState(!1), m = s.useRef(null), f = s.useRef(null), [I, j] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [h, m] = s.useState(!1), p = s.useRef(null), f = s.useRef(null), [I, j] = (0, c.kn)([a.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: R,
         completedRatioDisplay: O,
         percentComplete: L
@@ -53,8 +53,8 @@ function j(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: y.wx,
-            onMouseEnter: () => p(!0),
-            onMouseLeave: () => p(!1),
+            onMouseEnter: () => m(!0),
+            onMouseLeave: () => m(!1),
             children: [(0, i.jsxs)(l.BJc, {
                 className: y.P9,
                 direction: "horizontal",
@@ -62,7 +62,7 @@ function j(e) {
                 gap: 8,
                 children: [(0, i.jsx)("div", {
                     className: y.v0,
-                    ref: m,
+                    ref: p,
                     children: (0, i.jsx)(N.A, {
                         quest: t,
                         questContent: A.uF.QUEST_ACTIVITY_HEADER,
@@ -137,9 +137,9 @@ function j(e) {
                 })]
             })]
         }), null != I && (0, i.jsx)(x.A, {
-            onDismiss: () => j(b.i.USER_DISMISS),
-            onCTAClick: () => j(b.i.TAKE_ACTION),
-            targetElementRef: m
+            onDismiss: () => j(S.i.USER_DISMISS),
+            onCTAClick: () => j(S.i.TAKE_ACTION),
+            targetElementRef: p
         })]
     })
 }
@@ -147,11 +147,11 @@ function j(e) {
 function R(e) {
     let {
         applicationId: t
-    } = e, r = (0, a.bG)([h.A], () => h.A.quests), c = (0, a.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, f.jm)(r, t, !0)[0], [r, t]), {
+    } = e, a = (0, r.bG)([h.A], () => h.A.quests), c = (0, r.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, f.jm)(a, t, !0)[0], [a, t]), {
         enabled: g
-    } = m.Ym.useConfig({
-        location: S.rE.QUEST_ACTIVITY_HEADER
-    }), _ = (0, a.bG)([p.A], () => p.A.getState().autoEnroll), x = d?.id, C = (0, a.bG)([p.A], () => p.A.isDismissed(x), [x]);
+    } = p.Ym.useConfig({
+        location: b.rE.QUEST_ACTIVITY_HEADER
+    }), _ = (0, r.bG)([m.A], () => m.A.getState().autoEnroll), x = d?.id, C = (0, r.bG)([m.A], () => m.A.isDismissed(x), [x]);
     return (s.useEffect(() => {
         !g || null == d || d.userStatus?.enrolledAt != null || _ || C || (0, o.mMO)(async () => {
             let {

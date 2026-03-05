@@ -5,16 +5,16 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(396181),
     c = n(696292),
     d = n(397927),
     u = n(753845),
     h = n(849269),
     A = n(881343),
-    p = n(697675),
-    m = n(869003),
+    m = n(697675),
+    p = n(869003),
     g = n(652215),
     _ = n(985018),
     f = n(279240);
@@ -30,13 +30,13 @@ function I(e) {
         context: t,
         activityItem: n,
         onClick: i,
-        aspectRatio: a = 0,
+        aspectRatio: r = 0,
         animatedDivClass: E,
         commandOrigin: I
     } = e, {
         onActivityItemSelected: N,
-        imageBackground: S,
-        activityAction: b,
+        imageBackground: b,
+        activityAction: S,
         labelType: T
     } = (0, h.Ay)({
         context: t,
@@ -44,7 +44,7 @@ function I(e) {
         guildId: t.channel.getGuildId() ?? void 0,
         locationObject: {},
         onActivityItemSelected: i,
-        embeddedActivitiesManager: m.A,
+        embeddedActivitiesManager: p.A,
         assetNames: x,
         commandOrigin: I
     }), [v, y] = l.useState(!1), j = l.useCallback(() => {
@@ -55,12 +55,12 @@ function I(e) {
         className: f.Gz,
         children: (0, s.jsx)("div", {
             className: f.fC,
-            children: (0, s.jsx)(p.A, {
+            children: (0, s.jsx)(m.A, {
                 labelType: T
             })
         })
     }), [T]), L = l.useMemo(() => {
-        switch (b) {
+        switch (S) {
             case h.o6.JOIN:
                 return (0, s.jsx)("div", {
                     className: f.m9,
@@ -77,7 +77,7 @@ function I(e) {
                 return (0, s.jsx)("div", {
                     className: f.m9,
                     children: (0, s.jsx)("div", {
-                        className: r()(f.aF, f.pS),
+                        className: a()(f.aF, f.pS),
                         children: (0, s.jsx)(d.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
@@ -89,7 +89,7 @@ function I(e) {
             default:
                 return null
         }
-    }, [b]);
+    }, [S]);
     return (0, s.jsx)(d.DUT, {
         onClick: N,
         onFocus: j,
@@ -116,15 +116,15 @@ function I(e) {
                         questContent: c.u.ACTIVITY_SUGGESTION,
                         children: i => (0, s.jsxs)(o.animated.div, {
                             ref: i,
-                            className: r()(e, f.LM, E, {
-                                [f.$g]: 0 === a,
-                                [f.J3]: 1 === a
+                            className: a()(e, f.LM, E, {
+                                [f.$g]: 0 === r,
+                                [f.J3]: 1 === r
                             }),
                             style: {
                                 transform: t.to([0, 1], [1, 1.05]).to(e => `scale(${e})`)
                             },
                             children: [(0, s.jsx)(A.A, {
-                                imageBackground: S,
+                                imageBackground: b,
                                 applicationName: n.application.name,
                                 imageClassName: f.jj,
                                 imageNotFoundClassName: f.v_

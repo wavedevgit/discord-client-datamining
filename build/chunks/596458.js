@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(342494),
-    a = n(686956),
-    r = n(688810),
+    r = n(686956),
+    a = n(688810),
     o = n(954571),
     c = n(652215),
     d = n(49999),
@@ -19,25 +19,25 @@ function h(e) {
         gameId: n,
         gameName: h,
         gameCommunityGuildId: A,
-        markAsDismissed: p
+        markAsDismissed: m
     } = e, {
-        analyticsLocations: m
-    } = (0, r.Ay)();
+        analyticsLocations: p
+    } = (0, a.Ay)();
     return s.useEffect(() => {
         o.default.track(c.HAw.GAME_COMMUNITY_UPSELL_VIEWED, {
-            location_stack: m,
+            location_stack: p,
             application_id: n,
             guild_id: A
         })
-    }, [n, A, m]), (0, i.jsx)(l.AM, {
+    }, [n, A, p]), (0, i.jsx)(l.AM, {
         targetElementRef: t,
         position: "top",
         onRequestClose: () => {
             o.default.track(c.HAw.GAME_COMMUNITY_UPSELL_DISMISSED, {
-                location_stack: m,
+                location_stack: p,
                 application_id: n,
                 guild_id: A
-            }), p(d.i.USER_DISMISS)
+            }), m(d.i.USER_DISMISS)
         },
         title: u.intl.formatToPlainString(u.t.ry9SJw, {
             gameName: h
@@ -47,10 +47,10 @@ function h(e) {
             text: u.intl.string(u.t.RVfNGU),
             onClick: () => {
                 o.default.track(c.HAw.GAME_COMMUNITY_UPSELL_ACCEPTED, {
-                    location_stack: m,
+                    location_stack: p,
                     application_id: n,
                     guild_id: A
-                }), p(d.i.TAKE_ACTION), a.A.joinGuild(A, {
+                }), m(d.i.TAKE_ACTION), r.A.joinGuild(A, {
                     source: c.Q4z.ACTIVITY_PANEL_GAME_COMMUNITY_UPSELL
                 })
             }

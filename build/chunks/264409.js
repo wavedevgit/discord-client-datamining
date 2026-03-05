@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(396181),
-    r = n(827734),
+    r = n(396181),
+    a = n(827734),
     o = n(397927),
     c = n(263063),
     d = n(211170);
@@ -20,14 +20,14 @@ function u(e) {
         active: s,
         onAnimationStart: u,
         onAnimationRest: h
-    } = e, A = {}, p = {};
-    A.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", p.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-    let m = (0, o.rdh)(r.A.unsafe_rawColors.BRAND_500).hex(),
-        g = (0, o.rdh)(r.A.unsafe_rawColors.PRIMARY_630).hex();
-    s && null == t.icon && (A.backgroundColor = m, p.backgroundColor = g);
+    } = e, A = {}, m = {};
+    A.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", m.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
+    let p = (0, o.rdh)(a.A.unsafe_rawColors.BRAND_500).hex(),
+        g = (0, o.rdh)(a.A.unsafe_rawColors.PRIMARY_630).hex();
+    s && null == t.icon && (A.backgroundColor = p, m.backgroundColor = g);
     let _ = (0, o.pnh)(n, {
         from: A,
-        enter: p,
+        enter: m,
         leave: A,
         config: {
             duration: 100
@@ -43,7 +43,7 @@ function u(e) {
                 style: {
                     margin: 0
                 },
-                children: (0, i.jsx)(a.animated.div, {
+                children: (0, i.jsx)(r.animated.div, {
                     className: d.NG,
                     style: e,
                     children: (0, i.jsx)("div", {

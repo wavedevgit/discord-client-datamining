@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(837381),
-    a = n(311907),
-    r = n(506774),
+    r = n(311907),
+    a = n(506774),
     o = n(397927),
     c = n(509963),
     d = n(704761),
     u = n(531260),
     h = n(793943),
     A = n(411976),
-    p = n(912309),
-    m = n(400492),
+    m = n(912309),
+    p = n(400492),
     g = n(728321),
     _ = n(309010),
     f = n(287809),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(194871),
     I = n(966846),
     N = n(674378),
-    S = n(87941),
-    b = n(941971),
+    b = n(87941),
+    S = n(941971),
     T = n(900848),
     v = n(550591),
     y = n(65611),
@@ -51,27 +51,27 @@ function G(e) {
     let {
         selected: t,
         user: n,
-        badge: a,
+        badge: r,
         link: u,
         showProgressBadge: A
-    } = e, [p, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), S = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
+    } = e, [m, _] = s.useState(!1), [f, x] = s.useState(!1), [C, E] = s.useState(null), [I, N] = s.useState(0), b = (0, l.Vd)("home"), R = (0, h.fy)().activePanel === h.HP.APP_ICON, G = () => {
         E(null), N(0), clearTimeout(C)
     };
     if (null == n) return null;
     let U = L.intl.string(L.t.YUU0RF);
-    f && (U = r.w.get(j.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
+    f && (U = a.w.get(j.wqg) ? L.intl.string(L.t["nkq1l+"]) : L.intl.string(L.t.Be8Q5E));
     let P = null;
     !t && A && (P = (0, i.jsx)(c.A, {
         className: M.Cp,
         determineOwnVisibility: !1
     }));
-    let w = t || p || R,
+    let w = t || m || R,
         k = (0, i.jsx)(o.Qk9, {
             selected: !0,
-            lowerBadge: a > 0 ? (0, y.wN)(a) : null,
+            lowerBadge: r > 0 ? (0, y.wN)(r) : null,
             upperBadge: P,
             lowerBadgeSize: {
-                width: (0, o.o6S)(a)
+                width: (0, o.o6S)(r)
             },
             children: (0, i.jsx)(o.jlP, {
                 onMouseEnter: () => _(!0),
@@ -79,8 +79,8 @@ function G(e) {
                 onClick: () => {
                     if (!__OVERLAY__ && (null != C && clearTimeout(C), E(setTimeout(G, 500)), N(I + 1), 15 === I)) {
                         G();
-                        let e = !r.w.get(j.wqg);
-                        r.w.set(j.wqg, e), e && r.w.set(O.L, !0), e ? (0, m.Ak)("discodo") : (0, m.Ak)("user_leave"), x(!0), setTimeout(() => {
+                        let e = !a.w.get(j.wqg);
+                        a.w.set(j.wqg, e), e && a.w.set(O.L, !0), e ? (0, p.Ak)("discodo") : (0, p.Ak)("user_leave"), x(!0), setTimeout(() => {
                             x(!1)
                         }, 1e3)
                     }
@@ -89,7 +89,7 @@ function G(e) {
                 ariaLabel: L.intl.string(L.t.YUU0RF),
                 "aria-owns": "guild-list-unread-dms",
                 "aria-selected": t,
-                ...S,
+                ...b,
                 to: {
                     pathname: u,
                     state: {
@@ -110,9 +110,9 @@ function G(e) {
             tutorialId: "friends-list",
             position: "right",
             children: (0, i.jsxs)(T.c, {
-                children: [(0, i.jsx)(b.A, {
+                children: [(0, i.jsx)(S.A, {
                     selected: t,
-                    hovered: p,
+                    hovered: m,
                     className: M.Io
                 }), (0, i.jsx)(v.A, {
                     hideOnClick: !0,
@@ -126,8 +126,8 @@ function G(e) {
 }
 
 function U() {
-    let e = (0, S.q)(),
-        t = (0, a.bG)([I.A, E.A], () => {
+    let e = (0, b.q)(),
+        t = (0, r.bG)([I.A, E.A], () => {
             let e = (0, c.v)(I.A.activeItems, E.A),
                 {
                     total: t,
@@ -136,23 +136,23 @@ function U() {
                 i = N.uA(n, t);
             return i > 0 && i < 100
         }),
-        n = (0, p.kX)(),
+        n = (0, m.kX)(),
         s = Object.keys(R.TP),
         l = (0, u.A)(),
         {
-            unviewedTrialCount: r,
+            unviewedTrialCount: a,
             unviewedDiscountCount: o
-        } = (0, a.cf)([x.A], () => ({
+        } = (0, r.cf)([x.A], () => ({
             unviewedTrialCount: x.A.getUnacknowledgedOffers(s).length,
             unviewedDiscountCount: x.A.getUnacknowledgedDiscountOffers().length
         })),
-        d = l.fractionalState === R.xc.NONE ? r + o : 0,
-        h = (0, a.bG)([f.default], () => f.default.getCurrentUser()),
-        m = (0, A.W)(),
-        g = n + d + m,
-        b = g === d && d > 0 && n + m === 0,
+        d = l.fractionalState === R.xc.NONE ? a + o : 0,
+        h = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
+        p = (0, A.W)(),
+        g = n + d + p,
+        S = g === d && d > 0 && n + p === 0,
         T = C.A.getHomeLink();
-    return b && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
+    return S && (T = j.BVt.APPLICATION_STORE), (0, i.jsx)(G, {
         selected: e,
         user: h,
         selectedChannelId: _.A.getChannelId(j.ME),

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(847599),
-    r = n(263518);
+    r = n(847599),
+    a = n(263518);
 let o = function(e) {
     let {
         title: t,
@@ -18,23 +18,23 @@ let o = function(e) {
         onDisagree: u,
         modalType: h,
         channelId: A,
-        guildId: p
+        guildId: m
     } = e;
     s.useEffect(() => {
-        (0, a.Bf)(h, A, p)
-    }, [h, A, p]);
-    let m = s.useCallback(() => {
-            (0, a.mU)(a.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, p), u?.()
-        }, [u, h, A, p]),
+        (0, r.Bf)(h, A, m)
+    }, [h, A, m]);
+    let p = s.useCallback(() => {
+            (0, r.mU)(r.IY.NSFW_CHANNEL_DISAGREE_CTA, h, A, m), u?.()
+        }, [u, h, A, m]),
         g = s.useCallback(() => {
-            (0, a.mU)(a.IY.NSFW_CHANNEL_AGREE_CTA, h, A, p), d?.()
-        }, [d, h, A, p]);
+            (0, r.mU)(r.IY.NSFW_CHANNEL_AGREE_CTA, h, A, m), d?.()
+        }, [d, h, A, m]);
     return (0, i.jsxs)(l.BJc, {
         justify: "center",
         align: "center",
         direction: "vertical",
         gap: 16,
-        className: r.XG,
+        className: a.XG,
         children: [(0, i.jsxs)(l.BJc, {
             gap: 8,
             justify: "center",
@@ -42,11 +42,11 @@ let o = function(e) {
             direction: "vertical",
             children: [(0, i.jsx)(l.Text, {
                 variant: "text-lg/semibold",
-                className: r.DD,
+                className: a.DD,
                 children: t
             }), (0, i.jsx)(l.Text, {
                 variant: "text-md/medium",
-                className: r.h_,
+                className: a.h_,
                 color: "text-muted",
                 children: n
             })]
@@ -58,7 +58,7 @@ let o = function(e) {
             children: [null != c && null != u ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 text: c,
-                onClick: m
+                onClick: p
             }) : null, null != o && null != d ? (0, i.jsx)(l.Button, {
                 onClick: g,
                 text: o

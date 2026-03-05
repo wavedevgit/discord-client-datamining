@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(435371),
+    r = n.n(l),
+    a = n(435371),
     o = n(397927),
     c = n(594832),
     d = n(183555),
@@ -19,8 +19,8 @@ let A = s.forwardRef(function(e, t) {
         tooltipConfig: s,
         shouldScalePreview: l = !0,
         renderPreview: A,
-        moreCount: p,
-        isSingleCard: m = !1,
+        moreCount: m,
+        isSingleCard: p = !1,
         wishlistId: g,
         wishlistItem: _,
         cardSize: f = u.Y.MEDIUM
@@ -29,16 +29,16 @@ let A = s.forwardRef(function(e, t) {
         skuProductLine: C
     } = _, {
         trackUserProfileWishlistAction: E
-    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = m ? h.pr : h.Nr, S = null != p && p > 0, b = (0, i.jsxs)(o.DUT, {
+    } = (0, d.NJ)(), I = l ? h.ho : h.C8, N = p ? h.pr : h.Nr, b = null != m && m > 0, S = (0, i.jsxs)(o.DUT, {
         onClick: () => {
             n(), E({
-                action: S ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
-                skuId: S ? null : x,
+                action: b ? "PRESS_WISHLIST_BREADCRUMB_OVERFLOW_CARD" : "PRESS_WISHLIST_BREADCRUMB_CARD",
+                skuId: b ? null : x,
                 wishlistId: g,
                 productLines: new Set([C])
             })
         },
-        className: a()(N, {
+        className: r()(N, {
             [h.ax]: f === u.Y.SMALL
         }),
         "aria-label": s.title ?? "",
@@ -46,21 +46,21 @@ let A = s.forwardRef(function(e, t) {
         children: [(0, i.jsx)("div", {
             className: I,
             children: A()
-        }), S && (0, i.jsx)("div", {
+        }), b && (0, i.jsx)("div", {
             className: h.sv,
             children: (0, i.jsxs)(o.Text, {
                 variant: "text-xs/medium",
                 color: "always-white",
-                children: ["+", p]
+                children: ["+", m]
             })
         })]
     });
-    return (0, i.jsx)(r.un, {
+    return (0, i.jsx)(a.un, {
         asContainer: !0,
         asset: s.renderIcon?.(_),
         assetSize: c.Q8,
         title: s.title,
         body: s.body ?? "",
-        children: b
+        children: S
     })
 })

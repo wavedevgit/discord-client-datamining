@@ -7,16 +7,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(284009),
-    a = n.n(l),
-    r = n(110259),
+    r = n.n(l),
+    a = n(110259),
     o = n(311907),
     c = n(397927),
     d = n(367513),
     u = n(442433),
     h = n(401843),
     A = n(793574),
-    p = n(688810),
-    m = n(139286),
+    m = n(688810),
+    p = n(139286),
     g = n(313961),
     _ = n(480890),
     f = n(643501),
@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(267102),
     I = n(401901),
     N = n(326567),
-    S = n(342296),
-    b = n(616356),
+    b = n(342296),
+    S = n(616356),
     T = n(961350),
     v = n(71393),
     y = n(576705),
@@ -43,23 +43,23 @@ let U = 16 / 9,
             stageParticipant: t,
             rtcParticipant: n,
             channel: l,
-            guildId: a,
-            user: r,
+            guildId: r,
+            user: a,
             width: o,
             isModerator: d,
             onContextMenu: u,
             popoutType: h
         } = e, A = s.useRef(null), {
-            reducedMotion: p
+            reducedMotion: m
         } = s.useContext(c.CZY), {
-            blocked: m,
+            blocked: p,
             ignored: g,
             id: _
         } = t;
-        return (0, i.jsx)(S.A, {
+        return (0, i.jsx)(b.A, {
             targetElementRef: A,
-            user: r,
-            guildId: a,
+            user: a,
+            guildId: r,
             channelId: l.id,
             clickTrap: !0,
             children: e => (0, i.jsx)(c.DUT, {
@@ -69,13 +69,13 @@ let U = 16 / 9,
                 children: (0, i.jsx)(O.A, {
                     participant: n,
                     aspectRatio: U,
-                    blocked: m,
+                    blocked: p,
                     ignored: g,
                     channel: l,
                     className: G.V,
                     inCall: !0,
                     popoutType: h,
-                    pulseSpeakingIndicator: !p.enabled,
+                    pulseSpeakingIndicator: !m.enabled,
                     width: o,
                     onContextMenu: u,
                     children: d && (0, i.jsx)(L.A, {})
@@ -88,18 +88,18 @@ let U = 16 / 9,
             stageParticipant: t,
             rtcParticipant: n,
             channel: l,
-            width: a,
-            isModerator: r,
+            width: r,
+            isModerator: a,
             onContextMenu: u,
             popoutType: A
         } = e, {
-            reducedMotion: p
+            reducedMotion: m
         } = s.useContext(c.CZY), {
-            id: m,
+            id: p,
             blocked: _,
             ignored: E
-        } = t, N = (0, o.yK)([b.A], () => b.A.getAllActiveStreams(), []), {
-            selectedParticipant: S,
+        } = t, N = (0, o.yK)([S.A], () => S.A.getAllActiveStreams(), []), {
+            selectedParticipant: b,
             largeStream: T
         } = (0, o.cf)([g.A], () => ({
             selectedParticipant: null != l ? g.A.getSelectedParticipant(l.id) : null,
@@ -111,8 +111,8 @@ let U = 16 / 9,
                     forceMultiple: t.shiftKey
                 })
             }
-            S?.id === e.id ? T ? (d.A.selectParticipant(l.id, null), d.A.updateStageStreamSize(l.id, !1)) : d.A.updateStageStreamSize(l.id, !0) : (d.A.updateStageStreamSize(l.id, !1), d.A.selectParticipant(l.id, e.id))
-        }, [N, l, S, T]);
+            b?.id === e.id ? T ? (d.A.selectParticipant(l.id, null), d.A.updateStageStreamSize(l.id, !1)) : d.A.updateStageStreamSize(l.id, !0) : (d.A.updateStageStreamSize(l.id, !1), d.A.selectParticipant(l.id, e.id))
+        }, [N, l, b, T]);
         return (0, i.jsx)(O.A, {
             participant: n,
             aspectRatio: U,
@@ -125,10 +125,10 @@ let U = 16 / 9,
             popoutType: A,
             onClick: R,
             onContextMenu: u,
-            pulseSpeakingIndicator: !p.enabled,
-            width: a,
-            children: r && n.type === D.lp.USER && (0, i.jsx)(L.A, {})
-        }, m)
+            pulseSpeakingIndicator: !m.enabled,
+            width: r,
+            children: a && n.type === D.lp.USER && (0, i.jsx)(L.A, {})
+        }, p)
     },
     k = s.memo(function(e) {
         let {
@@ -138,16 +138,16 @@ let U = 16 / 9,
             popoutType: c
         } = e, {
             newestAnalyticsLocation: d
-        } = (0, p.Ay)(A.A.STAGE_TILE), h = (0, E.Us)(), f = s.getGuildId(), x = T.default.getId();
-        a()(null != f, "Channel cannot be guildless");
+        } = (0, m.Ay)(A.A.STAGE_TILE), h = (0, E.Us)(), f = s.getGuildId(), x = T.default.getId();
+        r()(null != f, "Channel cannot be guildless");
         let {
             user: C
-        } = t, I = (0, o.bG)([g.A], () => g.A.getParticipant(s.id, t.id), [s.id, t.id]), S = (0, o.bG)([R.Ay], () => R.Ay.isModerator(C.id, s.id), [s.id, C.id]);
+        } = t, I = (0, o.bG)([g.A], () => g.A.getParticipant(s.id, t.id), [s.id, t.id]), b = (0, o.bG)([R.Ay], () => R.Ay.isModerator(C.id, s.id), [s.id, C.id]);
         if (null == I || I.type === D.lp.ACTIVITY) return null;
-        let b = e => {
-                (0, m.x)({
-                    type: r.ImpressionTypes.MENU,
-                    name: r.ImpressionNames.CALL_TILE_CONTEXT_MENU,
+        let S = e => {
+                (0, p.x)({
+                    type: a.ImpressionTypes.MENU,
+                    name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                     properties: {
                         location: "StageTile",
                         is_tile_owner: C.id === x,
@@ -155,11 +155,11 @@ let U = 16 / 9,
                     }
                 })
             },
-            v = (e, t, l, a) => {
+            v = (e, t, l, r) => {
                 switch (e.type) {
                     case D.lp.HIDDEN_STREAM:
                     case D.lp.STREAM:
-                        b(D.qs.STREAM), (0, u.L3)(t, async () => {
+                        S(D.qs.STREAM), (0, u.L3)(t, async () => {
                             let {
                                 default: t
                             } = await n.e("66692").then(n.bind(n, 796175));
@@ -169,7 +169,7 @@ let U = 16 / 9,
                                 appContext: h,
                                 exitFullscreen: () => {},
                                 onInteraction: (0, _.s)("StreamContextMenu", d, {
-                                    entrypoint: a,
+                                    entrypoint: r,
                                     targetUserId: C.id,
                                     tileType: D.qs.STREAM
                                 })
@@ -180,7 +180,7 @@ let U = 16 / 9,
                         return;
                     case D.lp.USER:
                     default:
-                        if (b(D.qs.USER), l) return (0, N.r)(t, C, s, {
+                        if (S(D.qs.USER), l) return (0, N.r)(t, C, s, {
                             context: h
                         }, (e, t) => (0, _.Y)({
                             menuName: e,
@@ -219,7 +219,7 @@ let U = 16 / 9,
             guildId: f,
             user: C,
             width: l,
-            isModerator: S,
+            isModerator: b,
             onContextMenu: v,
             popoutType: c
         }) : (0, i.jsx)(P, {
@@ -229,7 +229,7 @@ let U = 16 / 9,
             guildId: f,
             user: C,
             width: l,
-            isModerator: S,
+            isModerator: b,
             onContextMenu: v,
             popoutType: c
         })

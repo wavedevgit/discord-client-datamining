@@ -6,31 +6,31 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(456412),
-    r = n(878549),
+    r = n(456412),
+    a = n(878549),
     o = n(313961),
     c = n(493387),
     d = n(235986),
     u = n(808124),
     h = n(203982),
     A = n(484191),
-    p = n(665450),
-    m = n(526369),
+    m = n(665450),
+    p = n(526369),
     g = n(699707),
     _ = n(713397),
     f = n(652215),
     x = n(806931),
     C = n(403264);
-let E = (0, a.A)(e => {
+let E = (0, r.A)(e => {
     let {
         participants: t,
         filteredParticipants: n,
-        selectedParticipant: a,
+        selectedParticipant: r,
         participantsVersion: E,
         layout: I,
         onSelectParticipant: N,
-        onContextMenuParticipant: S,
-        onFullscreenParticipant: b,
+        onContextMenuParticipant: b,
+        onFullscreenParticipant: S,
         channel: T,
         hasConnectPermission: v,
         className: y,
@@ -47,9 +47,9 @@ let E = (0, a.A)(e => {
     s.useEffect(() => {
         h._.dispatch(f.jej.REMEASURE_TARGET)
     }, [O, L, P.width, P.height]);
-    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, r.S)(e))), [n, E]),
+    let w = s.useMemo(() => n.filter(e => e.type !== x.lp.ACTIVITY || !e.participants.some(e => (0, a.S)(e))), [n, E]),
         k = (0, l.bG)([o.A], () => o.A.getVoiceParticipantsHidden(T.id), [T.id]);
-    if (U?.channelId === T.id) return (0, i.jsx)(p.A, {
+    if (U?.channelId === T.id) return (0, i.jsx)(m.A, {
         height: L
     });
     if (T?.isGuildVocalOrThread() && !j) return (0, i.jsx)(A.A, {
@@ -67,9 +67,9 @@ let E = (0, a.A)(e => {
         width: O,
         className: C.Er,
         participants: t,
-        onContextMenu: S
+        onContextMenu: b
     });
-    if (null == a) {
+    if (null == r) {
         if (0 === n.length) {
             let e = t.length > 0 && !k;
             return (0, i.jsx)(_.A, {
@@ -81,24 +81,24 @@ let E = (0, a.A)(e => {
             className: C.HA,
             justify: d.A.Justify.CENTER,
             align: d.A.Align.CENTER,
-            children: (0, i.jsx)(m.A, {
+            children: (0, i.jsx)(p.A, {
                 channel: T,
                 className: C.g9,
                 participants: w,
                 totalNumberOfParticipants: t.length,
                 onClick: N,
-                onDoubleClick: b,
-                onContextMenu: S,
+                onDoubleClick: S,
+                onContextMenu: b,
                 inCall: j,
                 popoutType: G
             })
         })
     }
     return (0, i.jsx)(g.A, {
-        onFullscreenParticipant: b,
-        onContextMenuParticipant: S,
+        onFullscreenParticipant: S,
+        onContextMenuParticipant: b,
         onSelectParticipant: N,
-        selectedParticipant: a,
+        selectedParticipant: r,
         filteredParticipants: w,
         participants: t,
         popoutType: G,

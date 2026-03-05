@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(686956),
     c = n(935649),
     d = n(847599),
     u = n(36149),
     h = n(323073),
     A = n(506164),
-    p = n(204925),
-    m = n(985018),
+    m = n(204925),
+    p = n(985018),
     g = n(635510);
 
 function _(e) {
@@ -24,8 +24,8 @@ function _(e) {
         channelId: n
     } = e, {
         modalType: l,
-        ...a
-    } = (0, h.k$)(t), r = s.useCallback(() => {
+        ...r
+    } = (0, h.k$)(t), a = s.useCallback(() => {
         null != t && o.A.nsfwReturnToSafety(t.id)
     }, [t]), g = s.useCallback(() => {
         null != t && o.A.nsfwAgree(t.id)
@@ -34,26 +34,26 @@ function _(e) {
             entryPoint: d.q1.NSFW_GUILD
         })
     }, []);
-    (0, u.I7)(p.w_.NSFW_SERVER);
+    (0, u.I7)(m.w_.NSFW_SERVER);
     let f = {
-        ...a,
+        ...r,
         guildId: t?.id,
         channelId: n,
-        disagreement: m.intl.string(m.t["/g10LC"])
+        disagreement: p.intl.string(p.t["/g10LC"])
     };
     switch (l) {
         case d.A5.NSFW_CHANNEL_AGE_VERIFY:
         case d.A5.GUILD_LARGE_SERVER:
             return (0, i.jsx)(A.A, {
                 onAgree: _,
-                onDisagree: r,
+                onDisagree: a,
                 modalType: l,
                 ...f
             });
         default:
             return (0, i.jsx)(A.A, {
                 onAgree: g,
-                onDisagree: r,
+                onDisagree: a,
                 modalType: l,
                 ...f
             })
@@ -70,11 +70,11 @@ let f = function(e) {
             current: e
         } = o;
         e?.scrollToBottom()
-    }, []), (0, i.jsx)(r.T7Y, {
+    }, []), (0, i.jsx)(a.T7Y, {
         ref: o,
         className: g.X,
         children: (0, i.jsx)("div", {
-            className: a()(l, g.i),
+            className: r()(l, g.i),
             children: (0, i.jsx)(_, {
                 guild: t,
                 channelId: n

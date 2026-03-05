@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(792831),
-    a = n(226694),
-    r = n(985018),
+    r = n(226694),
+    a = n(985018),
     o = n(10544),
     c = n(898876),
     d = n(578576);
@@ -18,8 +18,8 @@ let u = e => {
         setSearchQuery: u,
         mostRecentQuery: h,
         handleClearSearch: A,
-        handleSearchKeyPress: p,
-        handleCreateOrAddGuild: m,
+        handleSearchKeyPress: m,
+        handleCreateOrAddGuild: p,
         searchResults: g,
         searchFetching: _
     } = e;
@@ -30,14 +30,14 @@ let u = e => {
         })
     });
     else if (0 === g.length) {
-        let e = null != m ? r.intl.format(r.t.qWFupn, {
+        let e = null != p ? a.intl.format(a.t.qWFupn, {
             addServerHook: function(e, t) {
                 return (0, i.jsx)(s.MzZ, {
-                    onClick: m,
+                    onClick: p,
                     children: e
                 }, t)
             }
-        }) : r.intl.string(r.t.vYyEnv);
+        }) : a.intl.string(a.t.vYyEnv);
         t = (0, i.jsxs)("div", {
             className: c.Je,
             children: [(0, i.jsx)("img", {
@@ -48,7 +48,7 @@ let u = e => {
                 variant: "heading-xl/semibold",
                 color: "text-strong",
                 className: c.gR,
-                children: r.intl.string(r.t["6HXiuE"])
+                children: a.intl.string(a.t["6HXiuE"])
             }), (0, i.jsx)(s.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
@@ -58,7 +58,7 @@ let u = e => {
         })
     } else t = (0, i.jsx)("div", {
         className: o.vY,
-        children: g.map(e => (0, i.jsx)(a.A, {
+        children: g.map(e => (0, i.jsx)(r.A, {
             entry: e
         }, e.guildId))
     });
@@ -79,18 +79,18 @@ let u = e => {
                     }), (0, i.jsx)(s.Heading, {
                         variant: "heading-xl/semibold",
                         className: c.s7,
-                        children: r.intl.format(r.t.UkOHRd, {
+                        children: a.intl.format(a.t.UkOHRd, {
                             numResults: g.length,
                             query: h
                         })
                     })]
                 }), (0, i.jsx)(s.IWV, {
                     query: n,
-                    "aria-label": r.intl.string(r.t.nL2wKD),
-                    placeholder: r.intl.string(r.t.nL2wKD),
+                    "aria-label": a.intl.string(a.t.nL2wKD),
+                    placeholder: a.intl.string(a.t.nL2wKD),
                     onChange: u,
                     onClear: A,
-                    onKeyDown: p
+                    onKeyDown: m
                 })]
             }), t]
         })

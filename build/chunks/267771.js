@@ -1,13 +1,13 @@
 /** chunk id: 267771, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(64700),
     s = n(568065),
     l = n(652215);
 
-function a(e) {
+function r(e) {
     return (0, i.useMemo)(() => {
         if (null == e) return 0;
         let t = e?.features.has(l.GuildFeatures.PREMIUM_TIER_3_OVERRIDE) === !0 ? 0 : l.M2T[l.TVA.TIER_3],

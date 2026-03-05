@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(793574),
     u = n(688810),
     h = n(402216),
     A = n(689874),
-    p = n(872363),
-    m = n(966597),
+    m = n(872363),
+    p = n(966597),
     g = n(922281),
     _ = n(51082),
     f = n(275731),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(977851),
     I = n(772475),
     N = n(481947),
-    S = n(485296),
-    b = n(313961),
+    b = n(485296),
+    S = n(313961),
     T = n(195007),
     v = n(806931),
     y = n(985018),
@@ -35,9 +35,9 @@ function R(e) {
     let {
         channelId: t,
         guildId: n
-    } = e, s = (0, r.yK)([S.A, b.A], () => {
+    } = e, s = (0, a.yK)([b.A, S.A], () => {
         let e = Date.now();
-        return a()(S.A.getSpeakers()).map(e => b.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -S.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
+        return r()(b.A.getSpeakers()).map(e => S.A.getParticipant(t, e)).filter(e => null != e && e.type === v.lp.USER && e.speaking && !(0, _.Ay)(e)).sortBy(t => -b.A.getSpeakingDuration(t.user.id, e)).slice(0, 3).value()
     });
     return 0 === s.length ? null : (0, i.jsx)("div", {
         className: j.$U,
@@ -61,19 +61,19 @@ function O(e) {
         channel: t,
         isChatOpen: n
     } = e, l = s.useRef(null), {
-        analyticsLocations: a
+        analyticsLocations: r
     } = (0, u.Ay)(d.A.VOICE_CHANNEL_HEADER), o = t.id, {
         voiceParticipantsHidden: _,
         selectedParticipant: N,
-        userParticipantCount: S
-    } = (0, r.cf)([b.A], () => ({
-        selectedParticipant: b.A.getSelectedParticipant(o),
-        voiceParticipantsHidden: b.A.getVoiceParticipantsHidden(o),
-        userParticipantCount: b.A.getUserParticipantCount(o)
+        userParticipantCount: b
+    } = (0, a.cf)([S.A], () => ({
+        selectedParticipant: S.A.getSelectedParticipant(o),
+        voiceParticipantsHidden: S.A.getVoiceParticipantsHidden(o),
+        userParticipantCount: S.A.getUserParticipantCount(o)
     }), [o]), y = t.isGuildVoiceOrThread() && !n, {
         enabled: O,
         inInbox: L
-    } = m.A.useExperiment({
+    } = p.A.useExperiment({
         location: "ChannelCallHeaderToolbar"
     }), M = [];
     return _ && M.push((0, i.jsx)(R, {
@@ -85,7 +85,7 @@ function O(e) {
     }, "clips-enabled-indicator")), N?.type === v.lp.STREAM && (M.push((0, i.jsx)(f.A, {
         className: j.x6,
         participant: N
-    }, "warning")), M.push((0, i.jsx)(p.A, {
+    }, "warning")), M.push((0, i.jsx)(m.A, {
         size: h.Ay.Sizes.LARGE,
         className: j.x6,
         participant: N,
@@ -110,7 +110,7 @@ function O(e) {
                 ...e,
                 buttonRef: l,
                 isActive: n,
-                count: S,
+                count: b,
                 key: "call-members",
                 className: j.x6
             })
@@ -122,7 +122,7 @@ function O(e) {
         className: j.x6,
         disabled: n
     }, "chat-spacer")), (0, i.jsx)(u.f5, {
-        value: a,
+        value: r,
         children: M
     })
 }

@@ -1,14 +1,14 @@
 /** chunk id: 781862, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => m
 });
 var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(652793),
-    r = n(855725),
+    r = n(652793),
+    a = n(855725),
     o = n(976860),
     c = n(309010),
     d = n(64071),
@@ -60,7 +60,7 @@ let A = [{
             })
         })
     }],
-    p = e => {
+    m = e => {
         let {
             guild: t,
             channel: n
@@ -73,13 +73,13 @@ let A = [{
                     handler: d,
                     renderIcon: u
                 } = e, h = l && "JOIN_SERVERS" === s, A = `${s}-${t.id}`;
-                return (0, i.jsx)(a.G, {
+                return (0, i.jsx)(r.G, {
                     id: A,
                     renderIcon: u,
                     text: c(),
                     selected: h,
                     onClick: null != n ? () => d(t, n) : void 0,
-                    trailing: "JOIN_SERVERS" === s && o > 0 ? (0, r.w)(o) : null
+                    trailing: "JOIN_SERVERS" === s && o > 0 ? (0, a.w)(o) : null
                 }, A)
             })
         })

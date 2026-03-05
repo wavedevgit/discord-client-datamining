@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(396181),
-    a = n(837381),
-    r = n(311907),
+    r = n(837381),
+    a = n(311907),
     o = n(397927),
     c = n(442433),
     d = n(313961),
     u = n(571694),
     h = n(47167),
     A = n(598104),
-    p = n(616356),
-    m = n(383501),
+    m = n(616356),
+    p = n(383501),
     g = n(222823),
     _ = n(309010),
     f = n(287809),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(941971),
     I = n(375855),
     N = n(900848),
-    S = n(65611),
-    b = n(652215),
+    b = n(65611),
+    S = n(652215),
     T = n(985018),
     v = n(308294);
 let y = {
@@ -127,13 +127,13 @@ class R extends s.PureComponent {
     getChannelIcon() {
         let {
             channel: e
-        } = this.props, t = e.type === b.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
+        } = this.props, t = e.type === S.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
         return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, u.Y)(e)
     }
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = t.type === b.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
+        } = this.props, s = t.type === S.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
         null != s ? (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -160,24 +160,24 @@ class R extends s.PureComponent {
             channelName: t,
             selected: n,
             badge: s,
-            audio: a,
-            video: r,
+            audio: r,
+            video: a,
             stream: c,
             isCurrentUserInThisDMCall: d,
             unread: u,
             treeItemProps: h
         } = this.props, {
-            hovered: p,
-            animating: m
+            hovered: m,
+            animating: p
         } = this.state, g = e.isMultiUserDM() && null == e.icon, _ = () => (0, i.jsx)(o.jlP, {
-            to: b.BVt.CHANNEL(b.ME, e.id),
+            to: S.BVt.CHANNEL(S.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
             }),
             onMouseLeave: () => this.setState({
                 hovered: !1
             }),
-            selected: n || p,
+            selected: n || m,
             ariaLabel: null != t ? T.intl.formatToPlainString(T.t.hKarnZ, {
                 mentions: s,
                 name: t
@@ -197,19 +197,19 @@ class R extends s.PureComponent {
             style: this.getAnimatedStyle(),
             children: (0, i.jsxs)(N.c, {
                 children: [(0, i.jsx)(E.A, {
-                    hovered: !m && p,
-                    selected: !m && n,
-                    unread: !m && u,
+                    hovered: !p && m,
+                    selected: !p && n,
+                    unread: !p && u,
                     className: v.I
                 }), (0, i.jsx)(I.A, {
                     channel: e,
                     children: (0, i.jsx)(o.Qk9, {
                         rounded: !0,
                         selected: !1,
-                        lowerBadge: s > 0 ? (0, S.wN)(s, void 0, !0) : null,
-                        upperBadge: (0, S.oi)({
-                            audio: a,
-                            video: r,
+                        lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
+                        upperBadge: (0, b.oi)({
+                            audio: r,
+                            video: a,
                             screenshare: c,
                             isCurrentUserConnected: d
                         }),
@@ -226,17 +226,17 @@ class R extends s.PureComponent {
 let O = s.forwardRef(function(e, t) {
     let n = e.channel.id,
         s = (0, h.Ay)(e.channel),
-        l = (0, a.Vd)(n, 2),
-        c = (0, r.bG)([m.A], () => m.A.getChannelId(), []),
-        u = (0, r.bG)([d.A], () => d.A.getMode(n), [n]),
-        A = (0, r.bG)([p.A], () => p.A.getAllApplicationStreamsForChannel(n).length > 0),
-        f = (0, r.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
-        C = (0, r.bG)([_.A], () => _.A.getChannelId(), []),
-        E = (0, r.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
+        l = (0, r.Vd)(n, 2),
+        c = (0, a.bG)([p.A], () => p.A.getChannelId(), []),
+        u = (0, a.bG)([d.A], () => d.A.getMode(n), [n]),
+        A = (0, a.bG)([m.A], () => m.A.getAllApplicationStreamsForChannel(n).length > 0),
+        f = (0, a.bG)([x.Ay], () => x.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        C = (0, a.bG)([_.A], () => _.A.getChannelId(), []),
+        E = (0, a.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
-        S = !1;
-    (I || f) && (N = u === b._Of.VOICE, S = u === b._Of.VIDEO);
+        b = !1;
+    (I || f) && (N = u === S._Of.VOICE, b = u === S._Of.VIDEO);
     let T = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(R, {
         ...e,
@@ -246,7 +246,7 @@ let O = s.forwardRef(function(e, t) {
         selected: C === n,
         badge: E,
         audio: N,
-        video: S,
+        video: b,
         stream: A,
         isCurrentUserInThisDMCall: I,
         size: T,

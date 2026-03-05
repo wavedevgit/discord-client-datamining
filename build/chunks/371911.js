@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(484030),
+    r = n.n(l),
+    a = n(484030),
     o = n(311907),
     c = n(873298),
     d = n(397927),
     u = n(793574),
     h = n(688810),
     A = n(966597),
-    p = n(85109),
-    m = n(44022),
+    m = n(85109),
+    p = n(44022),
     g = n(566908),
     _ = n(594061),
     f = n(617617),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(492498),
     I = n(765627),
     N = n(547945),
-    S = n(412484),
-    b = n(652215),
+    b = n(412484),
+    S = n(652215),
     T = n(985018),
     v = n(98938);
 
@@ -68,13 +68,13 @@ function y(e) {
         K = s.useCallback(() => {
             w(!P), P ? y?.() : l?.()
         }, [y, l, P]);
-    s.useEffect(() => (x._.subscribe(b.jej.TOGGLE_INBOX, K), () => void x._.unsubscribe(b.jej.TOGGLE_INBOX, K)), [K]);
+    s.useEffect(() => (x._.subscribe(S.jej.TOGGLE_INBOX, K), () => void x._.unsubscribe(S.jej.TOGGLE_INBOX, K)), [K]);
     let {
         enabled: W,
         inInbox: Y
     } = A.A.useExperiment({
         location: "RecentsPopout"
-    }), z = (0, o.bG)([p.A], () => p.A.hasOverdueReminder(), []) && W && Y;
+    }), z = (0, o.bG)([m.A], () => m.A.hasOverdueReminder(), []) && W && Y;
     s.useEffect(() => {
         k !== c.Y2.BOOKMARKS || W || Y || V(c.Y2.MENTIONS), k === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
     });
@@ -99,7 +99,7 @@ function y(e) {
                     "aria-label": T.intl.string(T.t.GSmTKJ),
                     className: G,
                     children: (0, i.jsx)("div", {
-                        className: a()(v.k, {
+                        className: r()(v.k, {
                             [v.q]: X
                         }),
                         children: (0, i.jsx)(d.Fmo, {
@@ -111,11 +111,11 @@ function y(e) {
                             }),
                             children: k === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: q
-                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(m.J, {
+                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(p.J, {
                                 closePopout: F
-                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
-                                fallback: (0, i.jsx)(S.T, {}),
-                                children: (0, i.jsx)(S.Ay, {
+                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
+                                fallback: (0, i.jsx)(b.T, {}),
+                                children: (0, i.jsx)(b.Ay, {
                                     onJump: q,
                                     showTutorial: B,
                                     setSeenTutorial: H,

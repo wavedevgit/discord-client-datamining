@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(554146),
     c = n(827734),
     d = n(192308),
     u = n(397927),
     h = n(442433),
     A = n(932001),
-    p = n(361158),
-    m = n(976860),
+    m = n(361158),
+    p = n(976860),
     g = n(871123),
     _ = n(733391),
     f = n(832163),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(94484),
     I = n(849134),
     N = n(203548),
-    S = n(186111),
-    b = n(371794),
+    b = n(186111),
+    S = n(371794),
     T = n(998218),
     v = n(652793),
     y = n(652215),
@@ -36,13 +36,13 @@ let L = s.memo(function(e) {
     let {
         guild: t,
         selected: l
-    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, r.bG)([S.A], () => S.A.hasLayers()), U = (0, p.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([b.A], () => b.A.hasLayers()), U = (0, m.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
         (0, _.Kh)(t.id)
     }, [t.id]);
-    let w = (0, r.bG)([f.A], () => f.A.getAnnouncement(t.id)),
+    let w = (0, a.bG)([f.A], () => f.A.getAnnouncement(t.id)),
         k = w?.state === "success" ? w.announcement : void 0,
         [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
         H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
@@ -57,7 +57,7 @@ let L = s.memo(function(e) {
     let X = s.useCallback(() => {
             q(j.i.TAKE_ACTION);
             let e = f.A.getStorefrontState(t.id)?.activePage ?? 0;
-            (0, m.pX)(y.BVt.CHANNELS_GAME_SHOP(t.id, e))
+            (0, p.pX)(y.BVt.CHANNELS_GAME_SHOP(t.id, e))
         }, [t.id, q]),
         J = s.useCallback(() => {
             (0, C.X)({
@@ -82,7 +82,7 @@ let L = s.memo(function(e) {
         Z = s.useCallback(() => {
             L.current?.onMouseEnter(null, 500)
         }, [L]),
-        ee = s.useCallback((e, n, s, r) => (0, i.jsx)(v.G, {
+        ee = s.useCallback((e, n, s, a) => (0, i.jsx)(v.G, {
             innerClassName: e,
             ref: M,
             id: `game-shop-${t.id}`,
@@ -91,11 +91,11 @@ let L = s.memo(function(e) {
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                className: a()(e, s)
+                className: r()(e, s)
             }),
             text: (0, i.jsx)(u.Text, {
                 variant: "text-md/medium",
-                className: a()(O.UU, n),
+                className: r()(O.UU, n),
                 children: t?.id === (0, g.zf)() ? R.intl.string(R.t.xFQAPs) : R.intl.string(R.t.vyaWs7)
             }),
             selected: l,
@@ -106,13 +106,13 @@ let L = s.memo(function(e) {
                 children: [H && (0, i.jsx)(u.LpS, {
                     text: R.intl.string(R.t.y2b7CA),
                     color: c.A.colors.BACKGROUND_BRAND.css
-                }), r]
+                }), a]
             })
         }), [t.id, l, J, X, $, H]),
         et = s.useMemo(() => {
             if (null == k) return;
-            let e = null != k.assetId ? T.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
-                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, b.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
+            let e = null != k.assetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
+                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t

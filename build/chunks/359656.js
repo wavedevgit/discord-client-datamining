@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(183555),
     c = n(752458);
 
@@ -20,20 +20,20 @@ function d(e) {
         onExpand: u
     } = e, {
         trackUserProfileAction: h
-    } = (0, o.NJ)(), A = s.useId(), [p, m] = s.useState(!1), g = p ? r.abt : r._BQ;
+    } = (0, o.NJ)(), A = s.useId(), [m, p] = s.useState(!1), g = m ? a.abt : a._BQ;
     return (0, i.jsxs)("section", {
         className: c.uW,
-        children: [(0, i.jsxs)(r.DUT, {
-            className: a()(c.wx, c.vk),
+        children: [(0, i.jsxs)(a.DUT, {
+            className: r()(c.wx, c.vk),
             "aria-controls": A,
-            "aria-expanded": p,
+            "aria-expanded": m,
             onClick: () => {
-                m(!p), p || (h({
+                p(!m), m || (h({
                     action: "PRESS_SECTION",
                     section: t
                 }), u?.())
             },
-            children: [(0, i.jsxs)(r.Heading, {
+            children: [(0, i.jsxs)(a.Heading, {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: [n, " — ", l.length]
@@ -42,8 +42,8 @@ function d(e) {
             })]
         }), l.length > 0 && (0, i.jsx)("ul", {
             id: A,
-            hidden: !p,
-            className: a()(c.p_, d),
+            hidden: !m,
+            className: r()(c.p_, d),
             children: l
         })]
     })

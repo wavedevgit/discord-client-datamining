@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(735438),
+    o = n.n(a),
     c = n(775121),
     d = n(203982),
     u = n(652215),
@@ -22,7 +22,7 @@ let A = () => (0, i.jsxs)("div", {
         src: n(24160)
     })]
 }, "symbol");
-class p extends s.PureComponent {
+class m extends s.PureComponent {
     _renderSecondaryTimeout = null;
     _doneTimeout = null;
     state = {
@@ -121,9 +121,9 @@ class p extends s.PureComponent {
             offsetY: n,
             animating: s,
             scale: l
-        } = this.state, r = [this.renderPrimary()];
-        return e && r.push(this.renderSecondary(t, n)), (0, i.jsx)("div", {
-            className: a()(h.kL, {
+        } = this.state, a = [this.renderPrimary()];
+        return e && a.push(this.renderSecondary(t, n)), (0, i.jsx)("div", {
+            className: r()(h.kL, {
                 [h.i0]: s
             }),
             style: {
@@ -131,11 +131,11 @@ class p extends s.PureComponent {
                 left: this.props.left,
                 transform: `scale(${l})`
             },
-            children: r
+            children: a
         })
     }
 }
-class m extends s.PureComponent {
+class p extends s.PureComponent {
     _timeouts = [];
     children = [];
     state = {
@@ -161,7 +161,7 @@ class m extends s.PureComponent {
     removeExplosion = e => {
         let t = this.children,
             n = t.findIndex(t => {
-                if (t.type !== p) return !1;
+                if (t.type !== m) return !1;
                 let n = t.props;
                 return null != n.componentId && n.componentId === e
             });
@@ -173,7 +173,7 @@ class m extends s.PureComponent {
             n = window.innerHeight / 2 | 0;
         if (this.state.explosions < 8) {
             let s = `expl-${this.state.explosions}`;
-            e.push((0, i.jsx)(p, {
+            e.push((0, i.jsx)(m, {
                 componentId: s,
                 top: o().random(n - 100, n + 100, !1),
                 left: o().random(t - 200, t + 200, !1),
@@ -191,11 +191,11 @@ class m extends s.PureComponent {
     };
     render() {
         return (0, i.jsx)("div", {
-            className: a()(h.QO, {
+            className: r()(h.QO, {
                 [h.RK]: this.state.visible
             }),
             children: this.children
         })
     }
 }
-let g = m
+let g = p

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(837381),
-    r = n(672117),
+    r = n(837381),
+    a = n(672117),
     o = n(397927),
     c = n(69813),
     d = n(728444),
@@ -21,13 +21,13 @@ function h(e) {
         innerClassName: s,
         renderIcon: h,
         text: A,
-        selected: p,
-        trailing: m,
+        selected: m,
+        trailing: p,
         background: g,
         showUnread: _ = !1,
         ref: f,
         ...x
-    } = e, C = (0, a.rm)(t), E = (0, r.O)(A) ?? "";
+    } = e, C = (0, r.rm)(t), E = (0, a.O)(A) ?? "";
     return (0, i.jsx)("li", {
         ref: f,
         children: (0, i.jsxs)(o.sqX, {
@@ -50,7 +50,7 @@ function h(e) {
                 e.stopPropagation()
             },
             className: l()(d.fx, u.iE, {
-                [u.J1]: p
+                [u.J1]: m
             }, n),
             children: [g, _ ? (0, i.jsx)("div", {
                 className: l()(u.gy, u.WS)
@@ -65,7 +65,7 @@ function h(e) {
                         className: u.UU,
                         "aria-hidden": !0,
                         children: A
-                    }), m]
+                    }), p]
                 })
             })]
         })

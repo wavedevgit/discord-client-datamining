@@ -6,14 +6,14 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(397927),
-    a = n(253932),
-    r = n(461213),
+    r = n(253932),
+    a = n(461213),
     o = n(954571),
     c = n(652215);
 
 function d() {
-    let e = a.tz.useSetting(),
-        t = (0, s.bG)([r.A], () => r.A.getStatus());
+    let e = r.tz.useSetting(),
+        t = (0, s.bG)([a.A], () => a.A.getStatus());
     (0, i.useEffect)(() => {
         o.default.track(c.HAw.RUNNING_GAME_CARD_STATE_CHANGED, {
             show_current_game: e,

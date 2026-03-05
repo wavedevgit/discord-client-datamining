@@ -6,8 +6,8 @@ n.d(t, {
 var i, s = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(709562),
     c = n(639939),
     d = ((i = d || {})[i.UP = 0] = "UP", i[i.DOWN = 1] = "DOWN", i);
@@ -20,10 +20,10 @@ function u(e) {
         ...l
     } = e;
     return (0, s.jsx)(o.A, {
-        className: a()(n, c.U, {
+        className: r()(n, c.U, {
             [c.up]: 0 === t
         }),
-        iconComponent: r.abt,
+        iconComponent: a.abt,
         themeable: i,
         ...l
     })

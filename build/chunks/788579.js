@@ -6,23 +6,23 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(262763),
     d = n(753727),
     u = n(721592),
     h = n(406704),
     A = n(576705),
-    p = n(977997),
-    m = n(203982),
+    m = n(977997),
+    p = n(203982),
     g = n(58736),
     _ = n(652215),
     f = n(985018);
 let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, n = (0, d.A)(), l = (0, r.bG)([p.A], () => p.A.isInChannel(t.id)), x = (0, r.bG)([p.A], () => !a().isEmpty(p.A.getVoiceStatesForChannel(t.id))), C = (0, r.bG)([A.A], () => A.A.can(_.xBc.CONNECT, t)), {
+    } = e, n = (0, d.A)(), l = (0, a.bG)([m.A], () => m.A.isInChannel(t.id)), x = (0, a.bG)([m.A], () => !r().isEmpty(m.A.getVoiceStatesForChannel(t.id))), C = (0, a.bG)([A.A], () => A.A.can(_.xBc.CONNECT, t)), {
         needSubscriptionToAccess: E
     } = (0, u.A)(t.id), I = (0, h.Id)(t), N = s.useCallback(() => {
         c.A.handleVoiceConnect({
@@ -32,8 +32,8 @@ let x = s.memo(function(e) {
             locked: !1
         })
     }, [t, l, E]);
-    return (s.useEffect(() => (m._.subscribe(_.jej.CALL_START, N), () => {
-        m._.unsubscribe(_.jej.CALL_START, N)
+    return (s.useEffect(() => (p._.subscribe(_.jej.CALL_START, N), () => {
+        p._.unsubscribe(_.jej.CALL_START, N)
     }), [N]), h.io.useExperiment({
         guildId: t.guild_id,
         location: "63250c_1"

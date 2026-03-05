@@ -1,24 +1,24 @@
 /** chunk id: 682557, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(283354);
-let a = e => {
+let r = e => {
     let {
         entry: t,
         hideEditButton: n,
-        children: a,
-        onRequestOpen: r,
+        children: r,
+        onRequestOpen: a,
         onRequestClose: o,
         targetElementRef: c
     } = e;
     return (0, i.jsx)(s.YNO, {
         targetElementRef: c,
-        onRequestOpen: r,
+        onRequestOpen: a,
         onRequestClose: o,
         animation: s.YNO.Animation.NONE,
         position: "bottom",
@@ -34,6 +34,6 @@ let a = e => {
                 hideEditButton: n
             })
         },
-        children: a
+        children: r
     })
 }

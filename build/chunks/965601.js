@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(562465),
-    a = n(990078),
-    r = n(397927),
+    r = n(990078),
+    a = n(397927),
     o = n(147087),
     c = n(320501),
     d = n(652215),
@@ -35,9 +35,9 @@ function A(e) {
         updateThreadSettings: l,
         threadSettings: d,
         textAreaState: A
-    } = e, [p, m] = s.useState(!1), [g, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
+    } = e, [m, p] = s.useState(!1), [g, _] = s.useState(!1), f = (0, o.b)(), x = s.useCallback(async () => {
         if (f) {
-            m(!0);
+            p(!0);
             try {
                 let e = null;
                 if (null != n) {
@@ -51,12 +51,12 @@ function A(e) {
                     })
                 }
             } finally {
-                m(!1)
+                p(!1)
             }
         }
     }, [t.id, n, l, f, A.textValue]);
     s.useEffect(() => {
-        _(!1), m(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
+        _(!1), p(!1), t.id === d.parentChannelId && n !== d.parentMessageId && l({
             name: ""
         })
     }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), s.useEffect(() => {
@@ -65,32 +65,32 @@ function A(e) {
     let C = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
             if (f) return {
-                icon: r.Dud,
+                icon: a.Dud,
                 onClick: x,
                 "aria-label": u.intl.string(u.t.ZF2oBs),
-                disabled: e || p || null == n && A.textValue.trim().length < 10,
+                disabled: e || m || null == n && A.textValue.trim().length < 10,
                 tooltip: u.intl.string(u.t.ZF2oBs),
-                loading: p
+                loading: m
             }
-        }, [f, x, p, n, A.textValue]),
+        }, [f, x, m, n, A.textValue]),
         E = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-            return f ? (0, i.jsx)(a.m, {
+            return f ? (0, i.jsx)(r.m, {
                 text: u.intl.string(u.t.ZF2oBs),
-                children: (0, i.jsx)(r.K0, {
-                    icon: r.Dud,
+                children: (0, i.jsx)(a.K0, {
+                    icon: a.Dud,
                     variant: "secondary",
                     size: "sm",
                     "aria-label": u.intl.string(u.t.ZF2oBs),
                     onClick: x,
-                    disabled: e || p || null == n && A.textValue.trim().length < 10,
-                    loading: p,
+                    disabled: e || m || null == n && A.textValue.trim().length < 10,
+                    loading: m,
                     type: "button"
                 })
             }) : null
-        }, [f, p, n, A.textValue, x]);
+        }, [f, m, n, A.textValue, x]);
     return {
-        isGeneratingAI: p,
+        isGeneratingAI: m,
         generateAIName: x,
         enableAIFeatures: f,
         renderAiGenerateButton: E,

@@ -7,16 +7,16 @@ n.d(t, {
     xB: () => k
 }), n(321073);
 var i, s, l = n(64700),
-    a = n(143236),
-    r = n(284009),
-    o = n.n(r),
+    r = n(143236),
+    a = n(284009),
+    o = n.n(a),
     c = n(735438),
     d = n.n(c),
     u = n(73153),
     h = n(843472),
     A = n(334738),
-    p = n(775602),
-    m = n(323073),
+    m = n(775602),
+    p = n(323073),
     g = n(181079),
     _ = n(567035),
     f = n(455234),
@@ -25,8 +25,8 @@ var i, s, l = n(64700),
     E = n(152007),
     I = n(607508),
     N = n(594061),
-    S = n(617617),
-    b = n(95701),
+    b = n(617617),
+    S = n(95701),
     T = n(734057),
     v = n(808728),
     y = n(71393),
@@ -43,7 +43,7 @@ var i, s, l = n(64700),
     k = ((i = {})[i.Favorite = 0] = "Favorite", i[i.PrivateChannel = 1] = "PrivateChannel", i[i.HighImportanceMentioned = 2] = "HighImportanceMentioned", i[i.LowImportanceMentioned = 3] = "LowImportanceMentioned", i[i.AllMessagesNotifications = 4] = "AllMessagesNotifications", i[i.GuildChannel = 5] = "GuildChannel", i[i.OldChannel = 6] = "OldChannel", i[i.NoNotifications = 7] = "NoNotifications", i[i.ReallyOldChannel = 8] = "ReallyOldChannel", i),
     V = ((s = {}).Loading = "loading", s.Loaded = "loaded", s.Done = "done", s);
 let B = 25;
-class H extends a.EventEmitter {
+class H extends r.EventEmitter {
     state;
     scrollerRef;
     undoStack = [];
@@ -115,7 +115,7 @@ class H extends a.EventEmitter {
                 ...e,
                 deleted: !0
             }))
-        }), p.A.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore())
+        }), m.A.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore())
     };
     undoMarkChannelRead = () => {
         if (0 === this.undoStack.length) return;
@@ -160,18 +160,18 @@ class H extends a.EventEmitter {
             channels: i,
             collapsedChannels: s,
             loadState: l
-        } = this.state, a = d().findIndex(i, e => e.channelId === t), r = i[a], o = !r.collapsed;
+        } = this.state, r = d().findIndex(i, e => e.channelId === t), a = i[r], o = !a.collapsed;
         s[t] = o, (0, N.ji)(n, t, e => {
             e.collapsedInInbox = o
         }, N.Sb.FREQUENT_USER_ACTION), this.setState({
-            scrollToChannelIndex: a,
+            scrollToChannelIndex: r,
             collapsedChannels: s,
-            loadState: "done" !== l || o || r.isFullyLoaded ? l : "loaded",
+            loadState: "done" !== l || o || a.isFullyLoaded ? l : "loaded",
             channels: this.updateChannel(t, e => ({
                 ...e,
                 collapsed: o
             }))
-        }), r.collapsed ? r.isFullyLoaded || this.loadMore() : this.maybeLoadMore()
+        }), a.collapsed ? a.isFullyLoaded || this.loadMore() : this.maybeLoadMore()
     };
     clearScrollToChannelIndex() {
         this.setState({
@@ -267,14 +267,14 @@ function F(e, t) {
         s = i.toArray().filter(t => U.default.compare(t.id, e.oldestReadMessageId) > 0 && 0 >= U.default.compare(t.id, e.newestUnreadMessageId));
     if (s.length === e.messages.length && s.every((t, n) => e.messages[n] === t) && n) return e;
     let l = null != i.getAfter(e.oldestReadMessageId) || s[0]?.id === e.oldestUnreadMessageId,
-        a = s[s.length - 1],
-        r = U.default.compare(a?.id, e.newestUnreadMessageId) >= 0 || s.length >= B;
+        r = s[s.length - 1],
+        a = U.default.compare(r?.id, e.newestUnreadMessageId) >= 0 || s.length >= B;
     return {
         ...e,
         messages: s,
         hasLoadedAnything: e.hasLoadedAnything || l || t,
         hasLoadedFirst: e.hasLoadedFirst || l || t,
-        isFullyLoaded: e.isFullyLoaded || l && r || t && !i.hasMoreAfter
+        isFullyLoaded: e.isFullyLoaded || l && a || t && !i.hasMoreAfter
     }
 }
 
@@ -282,7 +282,7 @@ function K() {
     var e;
     let t, n = function() {
             let e = {},
-                t = S.A.settings.guilds?.guilds ?? {};
+                t = b.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
                     let s = T.A.getChannel(i);
@@ -315,28 +315,28 @@ function K() {
 function W(e, t, n, i) {
     if (null == i) return;
     let s = T.A.getChannel(i);
-    if (null == s || !b.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
+    if (null == s || !S.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
     if (s.isPrivate()) {
         if (0 === O.Ay.getMentionCount(i)) return
     } else if (!(0, f.Y)(s) && 0 === O.Ay.getMentionCount(i)) return;
-    if (!s.isPrivate() && !R.A.can(P.xBc.READ_MESSAGE_HISTORY, s) || (0, m.qR)(s)) return;
+    if (!s.isPrivate() && !R.A.can(P.xBc.READ_MESSAGE_HISTORY, s) || (0, p.qR)(s)) return;
     let l = O.Ay.ackMessageId(i);
     if (null == l) {
         let e = y.A.getGuild(s.guild_id);
         if (null == e || null == e.joinedAt) return;
         l = U.default.fromTimestamp(e.joinedAt.getTime())
     }
-    let a = O.Ay.getOldestUnreadMessageId(i),
-        r = O.Ay.lastMessageId(i),
+    let r = O.Ay.getOldestUnreadMessageId(i),
+        a = O.Ay.lastMessageId(i),
         o = O.Ay.getMentionCount(i),
         c = o > 0 || s.isPrivate();
-    if (null == r || U.default.compare(l, r) >= 0) return;
+    if (null == a || U.default.compare(l, a) >= 0) return;
     let d = {
         guildId: n,
         channelId: i,
         oldestReadMessageId: l,
-        oldestUnreadMessageId: a,
-        newestUnreadMessageId: r,
+        oldestUnreadMessageId: r,
+        newestUnreadMessageId: a,
         collapsed: !0 === e[i],
         hasLoadedAnything: !1,
         hasLoadedFirst: !1,
@@ -362,10 +362,10 @@ function W(e, t, n, i) {
                     i = n === P.orn.NULL ? M.Ay.getMessageNotifications(e) : n;
                 return i === P.orn.ALL_MESSAGES ? 4 : i === P.orn.NO_MESSAGES ? 7 : 5
             }
-        }(n, i, r),
+        }(n, i, a),
         order: 0
     };
-    (0, m.qR)(s) ? t.push({
+    (0, p.qR)(s) ? t.push({
         ...d,
         type: "nsfw"
     }): s.isForumLikeChannel() ? t.push({
@@ -381,22 +381,22 @@ let Y = 2 * D.A.Millis.DAY,
     z = 10 * D.A.Millis.DAY;
 
 function q(e) {
-    let [t, n] = l.useState(() => new H(K(), e)), [i, s] = l.useState(!1), a = l.useRef(Date.now()), [r, o] = l.useState(() => K());
+    let [t, n] = l.useState(() => new H(K(), e)), [i, s] = l.useState(!1), r = l.useRef(Date.now()), [a, o] = l.useState(() => K());
     l.useEffect(() => {
         let e = e => o(e);
         return t.on("change", e), o(t.state), () => {
             t.off("change", e)
         }
     }, [t]), l.useEffect(() => {
-        if (null == r || r.channels.length > 0 || i) return;
+        if (null == a || a.channels.length > 0 || i) return;
         let t = Date.now(),
             l = K();
-        0 === l.channels.length || t - a.current < 10 * D.A.Millis.SECOND ? s(!0) : (a.current = Date.now(), n(new H(l, e)))
-    }, [r, i, e]);
+        0 === l.channels.length || t - r.current < 10 * D.A.Millis.SECOND ? s(!0) : (r.current = Date.now(), n(new H(l, e)))
+    }, [a, i, e]);
     let c = l.useRef(t);
     return l.useLayoutEffect(() => {
         c.current = t
     }), l.useLayoutEffect(() => {
-        r?.channels, r?.loadState, c.current.maybeLoadMore()
-    }, [r?.channels, r?.loadState]), l.useEffect(() => (j.A.addChangeListener(t.reloadMessages), () => j.A.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (M.Ay.addChangeListener(t.handleUserGuildSettingsStoreChange), () => M.Ay.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (E.A.addChangeListener(t.handleJoinedThreadsStoreChange), () => E.A.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (C.A.addChangeListener(t.handleActiveThreadsStoreChange), () => C.A.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [r, t]
+        a?.channels, a?.loadState, c.current.maybeLoadMore()
+    }, [a?.channels, a?.loadState]), l.useEffect(() => (j.A.addChangeListener(t.reloadMessages), () => j.A.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (M.Ay.addChangeListener(t.handleUserGuildSettingsStoreChange), () => M.Ay.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (E.A.addChangeListener(t.handleJoinedThreadsStoreChange), () => E.A.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (C.A.addChangeListener(t.handleActiveThreadsStoreChange), () => C.A.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [a, t]
 }

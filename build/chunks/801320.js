@@ -1,19 +1,19 @@
 /** chunk id: 801320, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(342494),
     l = n(985018),
-    a = n(374313);
+    r = n(374313);
 
-function r(e) {
+function a(e) {
     let {
         onDismiss: t,
         onCTAClick: n,
-        targetElementRef: r
+        targetElementRef: a
     } = e;
     return (0, i.jsx)(s.AM, {
         actions: [{
@@ -27,12 +27,12 @@ function r(e) {
         },
         graphic: {
             type: "image",
-            src: a.A
+            src: r.A
         },
         onRequestClose: t,
         position: "bottom",
         size: "lg",
-        targetElementRef: r,
+        targetElementRef: a,
         title: l.intl.string(l.t.y0cRrO)
     })
 }

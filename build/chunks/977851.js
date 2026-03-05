@@ -1,21 +1,21 @@
 /** chunk id: 977851, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => S
+    V: () => b
 }), n(321073);
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
+    r = n.n(l),
+    a = n(735438),
     o = n(311907),
     c = n(367513),
     d = n(688810),
     u = n(313961),
     h = n(384059),
     A = n(222823),
-    p = n(309010),
-    m = n(741961),
+    m = n(309010),
+    p = n(741961),
     g = n(234320),
     _ = n(20465),
     f = n(108460),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(985018);
 
 function I(e) {
-    let t = (0, o.bG)([m.A], () => !(0, r.isEmpty)(m.A.getTypingUsers(e)), [e]),
-        n = (0, o.bG)([p.A], () => p.A.getVoiceChannelId() === e, [e]),
+    let t = (0, o.bG)([p.A], () => !(0, a.isEmpty)(p.A.getTypingUsers(e)), [e]),
+        n = (0, o.bG)([m.A], () => m.A.getVoiceChannelId() === e, [e]),
         {
             unreadCount: i,
             mentionCount: s
@@ -48,35 +48,35 @@ function N(e) {
     } = e, {
         unreadCount: s,
         mentionCount: l,
-        isTyping: a,
-        voiceChannelIsSelected: r
+        isTyping: r,
+        voiceChannelIsSelected: a
     } = I(n);
     return (0, i.jsx)(f.A, {
         className: t,
         unreadCount: s,
         mentionCount: l,
-        isTyping: a,
-        canBadge: r
+        isTyping: r,
+        canBadge: a
     })
 }
 
-function S(e) {
+function b(e) {
     let t, {
             channelId: n,
             className: l,
-            showingClassName: r,
+            showingClassName: a,
             onClick: A,
-            inPopout: p,
-            showRequestToSpeakSidebar: m,
+            inPopout: m,
+            showRequestToSpeakSidebar: p,
             toggleRequestToSpeakSidebar: f,
-            ...S
+            ...b
         } = e,
         {
-            parentAnalyticsLocation: b
+            parentAnalyticsLocation: S
         } = (0, d.Ay)(),
         {
             disabled: T
-        } = S,
+        } = b,
         v = s.useRef(null),
         y = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
@@ -88,14 +88,14 @@ function S(e) {
                 unreadCount: t,
                 mentionCount: n,
                 isTyping: i
-            } = I(e), [l, a] = s.useState(!1);
+            } = I(e), [l, r] = s.useState(!1);
             return s.useEffect(() => {
-                a(t > 0);
+                r(t > 0);
                 let e = setTimeout(() => {
-                    a(!1)
+                    r(!1)
                 }, _.R);
                 return () => {
-                    clearTimeout(e), a(!1)
+                    clearTimeout(e), r(!1)
                 }
             }, [t]), {
                 isShowing: l || n > 0 || i,
@@ -104,8 +104,8 @@ function S(e) {
             }
         }(n),
         L = s.useCallback(() => {
-            (0, h.X)(b, h.O.CHAT, !y), A?.(), !y && m && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
-        }, [n, y, A, m, f, b]),
+            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && p && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
+        }, [n, y, A, p, f, S]),
         M = s.useCallback(e => {
             let {
                 className: t
@@ -123,8 +123,8 @@ function S(e) {
         handler: T ? null : D
     });
     let [G, U] = s.useState(!1), P = s.useCallback(() => {
-        p && U(!0)
-    }, [p]);
+        m && U(!0)
+    }, [m]);
     (0, g.Vo)({
         event: C.jej.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
         handler: P
@@ -136,7 +136,7 @@ function S(e) {
             clearTimeout(e)
         }
     }, [G]);
-    let w = [t = p && T ? E.intl.string(E.t.DPgc5h) : y ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
+    let w = [t = m && T ? E.intl.string(E.t.DPgc5h) : y ? E.intl.string(E.t.nthdxB) : E.intl.string(E.t["5KxXrK"])];
     return O > 0 && w.push(E.intl.formatToPlainString(E.t["3l1GOx"], {
         mentionCount: O
     })), R > 0 && w.push(E.intl.string(E.t.x5zAGZ)), (0, i.jsx)(x.A, {
@@ -146,10 +146,10 @@ function S(e) {
         "aria-label": w.join(", "),
         iconComponent: M,
         tooltipPosition: "bottom",
-        wrapperClassName: a()(l, null != r && {
-            [r]: j
+        wrapperClassName: r()(l, null != a && {
+            [a]: j
         }),
         forceTooltipOpen: G,
-        ...S
+        ...b
     })
 }

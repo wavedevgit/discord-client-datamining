@@ -1,13 +1,13 @@
 /** chunk id: 152535, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
     l = n(533781),
-    a = n(265872),
-    r = n(688810),
+    r = n(265872),
+    a = n(688810),
     o = n(384059),
     c = n(421773),
     d = n(729081),
@@ -15,15 +15,15 @@ var i = n(627968),
     h = n(376086),
     A = n(985018);
 
-function p(e) {
+function m(e) {
     let {
         channel: t,
         themeable: n,
-        whichPopoutIsOpen: p,
-        setWhichPopoutIsOpen: m
+        whichPopoutIsOpen: m,
+        setWhichPopoutIsOpen: p
     } = e, {
         parentAnalyticsLocation: g
-    } = (0, r.Ay)(), _ = s.useRef(null), {
+    } = (0, a.Ay)(), _ = s.useRef(null), {
         isHovered: f,
         setIsHovered: x,
         onMouseEnter: C,
@@ -32,26 +32,26 @@ function p(e) {
         Component: I,
         play: N,
         events: {
-            onMouseEnter: S,
-            onMouseLeave: b
+            onMouseEnter: b,
+            onMouseLeave: S
         }
     } = (0, l.T)(), T = s.useCallback(e => {
-        "focus" !== e.type && (C(), S())
-    }, [C, S]), v = s.useCallback(() => {
-        null == p && (E(), b())
-    }, [E, b, p]), y = s.useCallback(() => {
-        (0, o.X)(g, o.O.GIFTING), p === h.P.GIFTING ? (m?.(void 0), E()) : (null != p ? (N(), C()) : N(), m?.(h.P.GIFTING))
-    }, [C, E, g, N, m, p]);
-    return (0, i.jsx)(a.Y, {
+        "focus" !== e.type && (C(), b())
+    }, [C, b]), v = s.useCallback(() => {
+        null == m && (E(), S())
+    }, [E, S, m]), y = s.useCallback(() => {
+        (0, o.X)(g, o.O.GIFTING), m === h.P.GIFTING ? (p?.(void 0), E()) : (null != m ? (N(), C()) : N(), p?.(h.P.GIFTING))
+    }, [C, E, g, N, p, m]);
+    return (0, i.jsx)(r.Y, {
         targetElementRef: _,
-        shouldShow: f && (p === h.P.GIFTING || null == p) || p === h.P.GIFTING,
-        animation: a.Y.Animation.FADE,
+        shouldShow: f && (m === h.P.GIFTING || null == m) || m === h.P.GIFTING,
+        animation: r.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
         align: "center",
         spacing: 16,
         onRequestClose: () => {
-            x(!1), m?.(void 0)
+            x(!1), p?.(void 0)
         },
         renderPopout: e => {
             let {
@@ -74,8 +74,8 @@ function p(e) {
             onClick: y,
             onMouseEnter: T,
             onMouseLeave: v,
-            isActive: f || p === h.P.GIFTING,
-            color: f || p === h.P.GIFTING ? "primaryDark" : void 0
+            isActive: f || m === h.P.GIFTING,
+            color: f || m === h.P.GIFTING ? "primaryDark" : void 0
         })
     })
 }

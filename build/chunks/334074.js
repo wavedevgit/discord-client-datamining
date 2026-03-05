@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(932001),
-    a = n(269918),
-    r = n(355898),
+    r = n(269918),
+    a = n(355898),
     o = n(574560),
     c = n(652215);
 
@@ -19,9 +19,9 @@ function d(e) {
         dismissibleContent: u,
         dismissibleContentGroupName: h,
         bypassAutoDismiss: A = !1
-    } = e, p = a.A.useConfig(n), m = (0, s.bG)([o.A], () => null != t ? o.A.getGameUpsellDismissal(t.id, u) : null), [g, _] = (0, i.useState)(!1);
+    } = e, m = r.A.useConfig(n), p = (0, s.bG)([o.A], () => null != t ? o.A.getGameUpsellDismissal(t.id, u) : null), [g, _] = (0, i.useState)(!1);
     (0, i.useEffect)(() => {
-        let e = null != m ? m.dismissedAt + Math.min(864e5 * Math.pow(2, m.timesDismissed - 1), 24192e5) : 0,
+        let e = null != p ? p.dismissedAt + Math.min(864e5 * Math.pow(2, p.timesDismissed - 1), 24192e5) : 0,
             t = 0,
             n = () => {
                 _(Date.now() >= e);
@@ -29,16 +29,16 @@ function d(e) {
                 i > 0 && (t = setTimeout(n, i))
             };
         return n(), () => clearTimeout(t)
-    }, [m]);
-    let f = !d && null != t && p.enabled && g,
+    }, [p]);
+    let f = !d && null != t && m.enabled && g,
         [x, C] = (0, l.Wl)(f ? u : null, {
             cooldownDurationMs: 864e5
         }, h, A);
     return {
         shouldShow: x === u,
         markAsDismissed: e => {
-            null != t && ((0, r.M)(t.id, u), C(e))
+            null != t && ((0, a.M)(t.id, u), C(e))
         },
-        isRecurringExperimentEnabled: p.enabled
+        isRecurringExperimentEnabled: m.enabled
     }
 }

@@ -1,19 +1,19 @@
 /** chunk id: 168754, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(697744),
     l = n(709562);
 
-function a(e) {
+function r(e) {
     let {
         isActivityActive: t,
         onMouseEnter: n,
-        onMouseLeave: a,
-        onClick: r,
+        onMouseLeave: r,
+        onClick: a,
         ...o
     } = e, {
         Component: c,
@@ -29,10 +29,10 @@ function a(e) {
             n?.(e), d.onMouseEnter()
         },
         onMouseLeave: e => {
-            a?.(e), d.onMouseLeave()
+            r?.(e), d.onMouseLeave()
         },
         onClick: e => {
-            r?.(e), u()
+            a?.(e), u()
         },
         ...o
     })

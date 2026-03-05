@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(111956),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(111956),
+    o = n.n(a),
     c = n(615300),
     d = n(52133),
     u = n(397927),
@@ -17,7 +17,7 @@ let A = {
     friction: 10,
     tension: 300
 };
-class p extends s.Component {
+class m extends s.Component {
     _timeout;
     constructor(e) {
         super(e), this.state = {
@@ -73,7 +73,7 @@ class p extends s.Component {
             onClick: s
         } = this.props;
         return (0, i.jsx)(c.A.div, {
-            className: a()(h.M0, e, {
+            className: r()(h.M0, e, {
                 [h.R]: n
             }),
             onClick: s,
@@ -101,7 +101,7 @@ class p extends s.Component {
         }
     }
 }
-class m extends s.PureComponent {
+class p extends s.PureComponent {
     static contextType = u.CZY;
     static defaultProps = {
         className: h.kL,
@@ -130,13 +130,13 @@ class m extends s.PureComponent {
             isUnread: i,
             isMentioned: s,
             reverse: l,
-            onCalculate: a
-        } = this.props, r = null, o = null, c = [];
+            onCalculate: r
+        } = this.props, a = null, o = null, c = [];
         e.forEach(e => {
             "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push(`folder:${e.folderId}`), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
         });
         let d = e => {
-                null == r && s(e, l, c) && (r = e), null == o && i(e, l, c) && (o = e)
+                null == a && s(e, l, c) && (a = e), null == o && i(e, l, c) && (o = e)
             },
             u = l ? c.length - 1 : 0,
             h = c[u];
@@ -157,8 +157,8 @@ class m extends s.PureComponent {
             }
             u += l ? -1 : 1, h = c[u]
         }
-        null != a && a(r, o, l), this.setState({
-            mention: r,
+        null != r && r(a, o, l), this.setState({
+            mention: a,
             unread: o
         })
     }, 200);
@@ -180,7 +180,7 @@ class m extends s.PureComponent {
             textMention: n,
             textUnread: s,
             reverse: l,
-            className: r,
+            className: a,
             barClassName: o,
             hide: c,
             animate: d
@@ -188,10 +188,10 @@ class m extends s.PureComponent {
             reducedMotion: u
         } = this.context;
         return (0, i.jsx)("div", {
-            className: r ?? void 0,
-            children: (0, i.jsx)(p, {
+            className: a ?? void 0,
+            children: (0, i.jsx)(m, {
                 hide: !0 === c || null == e && null == t,
-                className: a()(o, null != t ? h.lE : h.gy),
+                className: r()(o, null != t ? h.lE : h.gy),
                 text: null != t ? n : s,
                 reverse: l,
                 animate: d && !u.enabled,
@@ -200,4 +200,4 @@ class m extends s.PureComponent {
         })
     }
 }
-let g = m
+let g = p

@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(158954),
+    r = n.n(l),
+    a = n(158954),
     o = n(311907),
     c = n(990078),
     d = n(397927),
     u = n(442433),
     h = n(390435),
     A = n(775121),
-    p = n(629357),
-    m = n(599677),
+    m = n(629357),
+    p = n(599677),
     g = n(12351),
     _ = n(915089),
     f = n(734057),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(290863),
     I = n(222823),
     N = n(309010),
-    S = n(607567),
-    b = n(234320),
+    b = n(607567),
+    S = n(234320),
     T = n(203982),
     v = n(975571),
     y = n(793322),
@@ -74,13 +74,13 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             category: f.A.getChannel(t.parent_id)
         }
     })(U),
-    w = o.Ay.connectStores([S.Ay], e => {
+    w = o.Ay.connectStores([b.Ay], e => {
         let {
             channel: t
         } = e;
         if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
         return {
-            voiceStates: S.Ay.getVoiceStates(t.guild_id)[t.id]
+            voiceStates: b.Ay.getVoiceStates(t.guild_id)[t.id]
         }
     })(U),
     k = o.Ay.connectStores([x.default], e => {
@@ -177,12 +177,12 @@ class F extends s.PureComponent {
         this.state.mouseFocusDisabled || (0, y.wf)(this.props.results.indexOf(e))
     };
     selectResult = e => {
-        (0, y.F6)(e, this.props.queryMode === p.rD.TEXT_CHANNEL)
+        (0, y.F6)(e, this.props.queryMode === m.rD.TEXT_CHANNEL)
     };
     handleContextMenu = e => {
         let t = this.props.results[this.props.selectedIndex];
         switch (t.type) {
-            case p.rD.GUILD:
+            case m.rD.GUILD:
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
@@ -194,8 +194,8 @@ class F extends s.PureComponent {
                         hideSettings: !0
                     })
                 });
-            case p.rD.TEXT_CHANNEL:
-            case p.rD.VOICE_CHANNEL:
+            case m.rD.TEXT_CHANNEL:
+            case m.rD.VOICE_CHANNEL:
                 let s = t.record,
                     l = C.A.getGuild(s.getGuildId());
                 if (null == l) return;
@@ -265,7 +265,7 @@ class F extends s.PureComponent {
                         })
                 }
                 break;
-            case p.rD.GROUP_DM:
+            case m.rD.GROUP_DM:
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
@@ -277,7 +277,7 @@ class F extends s.PureComponent {
                         onSelect: y.jD
                     })
                 });
-            case p.rD.USER:
+            case m.rD.USER:
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
@@ -320,18 +320,18 @@ class F extends s.PureComponent {
                 return
             }
             case "arrowup":
-                l = (0, p.Vv)(p.vB.UP, l, i);
+                l = (0, m.Vv)(m.vB.UP, l, i);
                 break;
             case "arrowdown":
-                l = (0, p.Vv)(p.vB.DOWN, l, i);
+                l = (0, m.Vv)(m.vB.DOWN, l, i);
                 break;
             case "n":
                 if (!e.ctrlKey) return;
-                l = (0, p.Vv)(p.vB.DOWN, l, i);
+                l = (0, m.Vv)(m.vB.DOWN, l, i);
                 break;
             case "p":
                 if (!e.ctrlKey) return;
-                l = (0, p.Vv)(p.vB.UP, l, i);
+                l = (0, m.Vv)(m.vB.UP, l, i);
                 break;
             default:
                 return
@@ -352,7 +352,7 @@ class F extends s.PureComponent {
             query: n
         } = this.state, s = t.length > 0 && "" !== n;
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(b.EG, {
+            children: [(0, i.jsx)(S.EG, {
                 event: L.jej.GLOBAL_CLIPBOARD_PASTE,
                 handler: this.handleGlobalPaste
             }), (0, i.jsx)(d.vN3, {
@@ -420,17 +420,17 @@ class F extends s.PureComponent {
             selectedIndex: s
         } = this.props, {
             showScores: l
-        } = m.A.getCurrentConfig({
+        } = p.A.getCurrentConfig({
             location: "62f4be_1"
         }, {
             autoTrackExposure: !1
         });
         switch (n.type) {
-            case p.rD.HEADER:
+            case m.rD.HEADER:
                 return (0, i.jsx)(R.Y9, {
                     children: n.record.text
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.TEXT_CHANNEL:
+            case m.rD.TEXT_CHANNEL:
                 return (0, i.jsx)(P, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
@@ -441,7 +441,7 @@ class F extends s.PureComponent {
                     channel: n.record,
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.VOICE_CHANNEL:
+            case m.rD.VOICE_CHANNEL:
                 return (0, i.jsx)(w, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
@@ -452,7 +452,7 @@ class F extends s.PureComponent {
                     channel: n.record,
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.GUILD:
+            case m.rD.GUILD:
                 return (0, i.jsx)(k, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
@@ -463,7 +463,7 @@ class F extends s.PureComponent {
                     guild: n.record,
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.USER:
+            case m.rD.USER:
                 return (0, i.jsx)(B, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
@@ -475,7 +475,7 @@ class F extends s.PureComponent {
                     comparator: n.comparator,
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.GROUP_DM:
+            case m.rD.GROUP_DM:
                 return (0, i.jsx)(V, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
@@ -486,7 +486,7 @@ class F extends s.PureComponent {
                     channel: n.record,
                     score: l ? n.score : void 0
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.APPLICATION:
+            case m.rD.APPLICATION:
                 return (0, i.jsx)(R.lg, {
                     id: this.getRowId(t),
                     focused: s >= 0 && t === s,
@@ -495,7 +495,7 @@ class F extends s.PureComponent {
                     onFocus: this.focusNode,
                     application: n.record
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.LINK:
+            case m.rD.LINK:
                 return (0, i.jsx)(R.N_, {
                     focused: s >= 0 && t === s,
                     onClick: () => this.selectResult(n),
@@ -506,7 +506,7 @@ class F extends s.PureComponent {
                     score: l ? n.score : void 0,
                     id: this.getRowId(t)
                 }, `${n.type}-${n.record.id}`);
-            case p.rD.IN_APP_NAVIGATION:
+            case m.rD.IN_APP_NAVIGATION:
                 return (0, i.jsx)(R.vw, {
                     focused: s >= 0 && t === s,
                     onClick: () => this.selectResult(n),
@@ -523,15 +523,15 @@ class F extends s.PureComponent {
     };
     renderProtip() {
         return (0, i.jsx)(g.A, {
-            className: a()(D.PP, {
+            className: r()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
             type: g.A.Types.INLINE,
             children: M.intl.format(M.t.wukqXQ, {
-                userSymbolHook: (e, t) => H(t, p.AT.USER, M.intl.string(M.t.GQRCGn)),
-                textChannelSymbolHook: (e, t) => H(t, p.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),
-                voiceChannelSymbolHook: (e, t) => H(t, p.AT.VOICE_CHANNEL, M.intl.string(M.t["jz+hJp"])),
-                guildSymbolHook: (e, t) => H(t, p.AT.GUILD, M.intl.string(M.t.WuwCWi)),
+                userSymbolHook: (e, t) => H(t, m.AT.USER, M.intl.string(M.t.GQRCGn)),
+                textChannelSymbolHook: (e, t) => H(t, m.AT.TEXT_CHANNEL, M.intl.string(M.t.wrwhuZ)),
+                voiceChannelSymbolHook: (e, t) => H(t, m.AT.VOICE_CHANNEL, M.intl.string(M.t["jz+hJp"])),
+                guildSymbolHook: (e, t) => H(t, m.AT.GUILD, M.intl.string(M.t.WuwCWi)),
                 helpdeskArticle: v.A.getArticleURL(L.MVz.QUICK_SWITCHER_TUTORIAL)
             })
         })
@@ -548,7 +548,7 @@ class F extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsx)(r.dWK, {
+        return (0, i.jsx)(a.dWK, {
             "aria-label": M.intl.string(M.t.ZvKwYa),
             size: "lg",
             transitionState: this.props.transitionState,

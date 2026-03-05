@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(660273),
-    a = n(57907),
-    r = n(867455),
+    r = n(57907),
+    a = n(867455),
     o = n(607508),
     c = n(37411);
 
@@ -19,7 +19,7 @@ function d(e) {
         onSelect: d,
         navId: u,
         label: h
-    } = e, A = (0, l.A)(t, "Notifications Bell"), p = (0, a.A)(t), m = (0, o.X)(t);
+    } = e, A = (0, l.A)(t, "Notifications Bell"), m = (0, r.A)(t), p = (0, o.X)(t);
     return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated-auto": !0,
         navId: u,
@@ -27,7 +27,7 @@ function d(e) {
         "aria-label": h,
         onSelect: d,
         children: [(0, i.jsxs)(s.rXV, {
-            children: [t.isForumPost() ? A : null, p]
+            children: [t.isForumPost() ? A : null, m]
         }), (0, i.jsx)(s.rXV, {
             children: (0, c.EU)().map(e => {
                 let {
@@ -38,10 +38,10 @@ function d(e) {
                     group: "thread-notifications",
                     id: `${n}`,
                     label: l,
-                    action: () => r.A.setNotificationSettings(t, {
+                    action: () => a.A.setNotificationSettings(t, {
                         flags: n
                     }),
-                    checked: n === m
+                    checked: n === p
                 }, n)
             })
         })]

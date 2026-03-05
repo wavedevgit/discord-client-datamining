@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(696292),
-    a = n(397927),
-    r = n(533129),
+    r = n(397927),
+    a = n(533129),
     o = n(726845),
     c = n(837057),
     d = n(310419),
     u = n(606256),
     h = n(488995),
     A = n(324580),
-    p = n(654487),
-    m = n(985018);
+    m = n(654487),
+    p = n(985018);
 let g = s.forwardRef(function(e, t) {
     let {
         selected: n,
@@ -23,7 +23,7 @@ let g = s.forwardRef(function(e, t) {
         questId: _,
         className: f
     } = e, x = s.useCallback(() => {
-        (0, r.WL)({
+        (0, a.WL)({
             source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
         let e = void 0 !== _ ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
@@ -31,7 +31,7 @@ let g = s.forwardRef(function(e, t) {
             case h.GlobalDiscoveryTab.QUESTS:
                 return (0, c.transitionToGlobalDiscovery)({
                     tab: h.GlobalDiscoveryTab.QUESTS,
-                    location: p.rE.DISCOVERY_COMPASS,
+                    location: m.rE.DISCOVERY_COMPASS,
                     questContent: l.u.DISCOVERY_COMPASS,
                     questId: _
                 });
@@ -64,7 +64,7 @@ let g = s.forwardRef(function(e, t) {
             x(), void 0 !== g && g()
         },
         selected: n,
-        tooltip: m.intl.string(m.t["4nEZLk"]),
-        icon: a.QGJ
+        tooltip: p.intl.string(p.t["4nEZLk"]),
+        icon: r.QGJ
     })
 })

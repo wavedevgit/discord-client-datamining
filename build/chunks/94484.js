@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(342494),
-    a = n(985018),
-    r = n(282222);
+    r = n(985018),
+    a = n(282222);
 
 function o(e) {
     let {
@@ -21,14 +21,14 @@ function o(e) {
         caretConfig: A = {
             align: "start"
         },
-        applicationName: p
+        applicationName: m
     } = e;
     s.useEffect(() => {
         n?.()
     }, [n]);
-    let m = {
+    let p = {
         type: "image",
-        src: r.A,
+        src: a.A,
         aspectRatio: "16/9"
     };
     return (0, i.jsx)(l.AM, {
@@ -41,18 +41,18 @@ function o(e) {
         align: h,
         onRequestClose: o,
         actions: [{
-            text: a.intl.string(a.t.RzWDqY),
+            text: r.intl.string(r.t.RzWDqY),
             variant: "primary",
             onClick: c,
             onMouseDown: d
         }],
         targetElementRef: t,
-        title: a.intl.format(a.t.TpuAkN, {
-            applicationName: p
+        title: r.intl.format(r.t.TpuAkN, {
+            applicationName: m
         }),
-        body: a.intl.format(a.t.TlwPZw, {
-            applicationName: p
+        body: r.intl.format(r.t.TlwPZw, {
+            applicationName: m
         }),
-        graphic: m
+        graphic: p
     })
 }

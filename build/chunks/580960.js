@@ -7,18 +7,18 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(73153),
-    a = n(272355),
-    r = n(793574),
+    r = n(272355),
+    a = n(793574),
     o = n(532794),
     c = n(219271),
     d = n(287809),
     u = n(816733),
     h = n(927578),
     A = n(882442),
-    p = n(869968),
-    m = n(694080),
+    m = n(869968),
+    p = n(694080),
     g = n(70730);
-class _ extends a.A {
+class _ extends r.A {
     _premiumPaymentModalCloseResolve = null;
     _premiumPaymentModalCloseReject = null;
     _initialize() {
@@ -47,7 +47,7 @@ class _ extends a.A {
         let e = d.default.getCurrentUser();
         if (null != e && e.verified) {
             let t = (u.A.canFractionalPremiumUserUseOffer() || !(0, h.TW)(e)) && !u.A.isFetchingOffer();
-            await (0, m._D)("PremiumManager", t)
+            await (0, p._D)("PremiumManager", t)
         }
         l.h.dispatch({
             type: "PREMIUM_MARKETING_DATA_READY"
@@ -55,7 +55,7 @@ class _ extends a.A {
     };
     _maybeFetchCheckoutRecovery = async () => {
         let e = d.default.getCurrentUser();
-        null != e && e.verified && !(0, h.TW)(e) && p.A.shouldFetchCheckoutRecovery() && await (0, A.c)()
+        null != e && e.verified && !(0, h.TW)(e) && m.A.shouldFetchCheckoutRecovery() && await (0, A.c)()
     };
     _maybeFetchUserAffinities = () => {
         let {
@@ -68,7 +68,7 @@ class _ extends a.A {
     _handlePremiumPaymentModalOpen = e => {
         (0, o.A)({
             ...e,
-            analyticsLocations: [r.A.OVERLAY],
+            analyticsLocations: [a.A.OVERLAY],
             onClose: e => {
                 l.h.dispatch({
                     type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -102,8 +102,8 @@ class _ extends a.A {
             followupSKUInfo: i,
             analyticsObject: s
         } = e ?? {};
-        return new Promise((e, a) => {
-            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, l.h.dispatch({
+        return new Promise((e, r) => {
+            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = r, l.h.dispatch({
                 type: "PREMIUM_PAYMENT_MODAL_OPEN",
                 initialPlanId: t,
                 subscriptionTier: n,

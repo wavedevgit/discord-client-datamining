@@ -1,21 +1,21 @@
 /** chunk id: 533978, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(554146),
-    r = n(621956),
+    r = n(554146),
+    a = n(621956),
     o = n(265872),
     c = n(442433),
     d = n(688810),
     u = n(384059),
     h = n(480890),
     A = n(160761),
-    p = n(421773),
-    m = n(536432),
+    m = n(421773),
+    p = n(536432),
     g = n(674168),
     _ = n(989799),
     f = n(173660),
@@ -25,11 +25,11 @@ var i = n(627968),
     I = n(376086),
     N = n(985018);
 
-function S(e) {
+function b(e) {
     let {
         channel: t,
-        themeable: S,
-        whichPopoutIsOpen: b,
+        themeable: b,
+        whichPopoutIsOpen: S,
         setWhichPopoutIsOpen: T
     } = e, {
         parentAnalyticsLocation: v
@@ -40,10 +40,10 @@ function S(e) {
             onMouseEnter: R,
             onMouseLeave: O
         }
-    } = (0, r.E)(), L = t.getGuildId(), {
+    } = (0, a.E)(), L = t.getGuildId(), {
         mute: M,
         suppress: D
-    } = (0, f.A)(t), G = (0, l.bG)([x.Ay], () => x.Ay.isDeaf()), U = M || D || G, P = (0, m.VE)({
+    } = (0, f.A)(t), G = (0, l.bG)([x.Ay], () => x.Ay.isDeaf()), U = M || D || G, P = (0, p.VE)({
         isSoundboardButtonDisabled: U
     }), [w, k] = (0, A.DP)(P), {
         analyticsLocations: V
@@ -52,7 +52,7 @@ function S(e) {
         setIsHovered: H,
         onMouseEnter: F,
         onMouseLeave: K
-    } = (0, p.A)(200, 300);
+    } = (0, m.A)(200, 300);
 
     function W(e) {
         null != L && (0, c.L3)(e, async () => {
@@ -69,12 +69,12 @@ function S(e) {
     }
 
     function Y() {
-        (0, u.X)(v, u.O.SOUNDBOARD), b === I.P.SOUNDBOARD ? (T?.(void 0), K()) : (null != b ? (j(), F()) : j(), T?.(I.P.SOUNDBOARD))
+        (0, u.X)(v, u.O.SOUNDBOARD), S === I.P.SOUNDBOARD ? (T?.(void 0), K()) : (null != S ? (j(), F()) : j(), T?.(I.P.SOUNDBOARD))
     }
     let z = s.useRef(null);
     return (0, i.jsx)(o.Y, {
         targetElementRef: z,
-        shouldShow: B && (b === I.P.SOUNDBOARD || null == b) || b === I.P.SOUNDBOARD,
+        shouldShow: B && (S === I.P.SOUNDBOARD || null == S) || S === I.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
@@ -95,7 +95,7 @@ function S(e) {
                         guildId: L,
                         channel: t,
                         onClose: n,
-                        gridNotice: w === a.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.m, {
+                        gridNotice: w === r.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, i.jsx)(g.m, {
                             onClose: n,
                             markAsDismissed: k
                         }),
@@ -107,7 +107,7 @@ function S(e) {
         children: () => (0, i.jsx)(E.l, {
             ref: z,
             isTrayButton: !0,
-            themeable: S,
+            themeable: b,
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : G ? N.intl.string(N.t.X1lQli) : void 0,
             iconComponent: y,
             disabled: U,
@@ -117,10 +117,10 @@ function S(e) {
                 R(), "focus" !== e.type && F()
             },
             onMouseLeave: () => {
-                null == b && (K(), O())
+                null == S && (K(), O())
             },
-            isActive: B || b === I.P.SOUNDBOARD,
-            color: B || b === I.P.SOUNDBOARD ? "primaryDark" : void 0
+            isActive: B || S === I.P.SOUNDBOARD,
+            color: B || S === I.P.SOUNDBOARD ? "primaryDark" : void 0
         })
     })
 }

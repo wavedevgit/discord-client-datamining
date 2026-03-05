@@ -7,16 +7,16 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(837381),
-    r = n(311907),
+    r = n(837381),
+    a = n(311907),
     o = n(827734),
     c = n(435371),
     d = n(397927),
     u = n(397244),
     h = n(714114),
     A = n(729551),
-    p = n(58149),
-    m = n(571694),
+    m = n(58149),
+    p = n(571694),
     g = n(47167),
     _ = n(713654),
     f = n(915089),
@@ -25,8 +25,8 @@ var s = n(503698),
     E = n(734057),
     I = n(71393),
     N = n(290863),
-    S = n(222823),
-    b = n(287809),
+    b = n(222823),
+    S = n(287809),
     T = n(147925),
     v = n(652215),
     y = n(985018),
@@ -51,7 +51,7 @@ function O(e) {
                 [j.yZ]: t?.collapsed
             }),
             onClick: function() {
-                null != t && null != n && (n(t), (0, p.zV)(v.HAw.INBOX_CHANNEL_COLLAPSED, {
+                null != t && null != n && (n(t), (0, m.zV)(v.HAw.INBOX_CHANNEL_COLLAPSED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     num_unread_channels_remaining: s?.() ?? 0,
@@ -71,17 +71,17 @@ function L(e) {
         channel: t,
         children: n,
         gotoChannel: s,
-        mentionCount: r,
+        mentionCount: a,
         channelState: o,
         toggleCollapsed: c,
         showCollapseButton: u = !1,
         getNumUnreadChannels: h
-    } = e, A = (0, a.rm)(`recents-header-${t.id}-${(0,f.GV)()}`), p = u && !t.isNSFW() && null != o && "nsfw" !== o.type;
+    } = e, A = (0, r.rm)(`recents-header-${t.id}-${(0,f.GV)()}`), m = u && !t.isNSFW() && null != o && "nsfw" !== o.type;
     return (0, i.jsx)(d.vN3, {
         offset: R,
         children: (0, i.jsxs)("div", {
             className: l()(j.ZO, {
-                [j.b4]: p
+                [j.b4]: m
             }),
             ...A,
             tabIndex: 0,
@@ -89,7 +89,7 @@ function L(e) {
             onKeyDown: function(e) {
                 null != c && null != o && ("ArrowRight" === e.key && o.collapsed || "ArrowLeft" === e.key && !o.collapsed) && c?.(o)
             },
-            children: [p && null != o ? (0, i.jsx)(O, {
+            children: [m && null != o ? (0, i.jsx)(O, {
                 channelState: o,
                 toggle: c,
                 getNumUnreadChannels: h
@@ -99,7 +99,7 @@ function L(e) {
             }), (0, i.jsx)(U, {
                 channel: t,
                 gotoChannel: s,
-                mentionCount: r
+                mentionCount: a
             }), n]
         })
     })
@@ -123,7 +123,7 @@ function D(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([b.default], () => t.isDM() ? b.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, m.Y)(t) : s.getAvatarURL(void 0, 40);
+    } = e, s = (0, a.bG)([S.default], () => t.isDM() ? S.default.getUser(t.getRecipientId()) : null), l = null == s ? (0, p.Y)(t) : s.getAvatarURL(void 0, 40);
     return (0, i.jsx)(d.DUT, {
         onClick: n,
         tabIndex: -1,
@@ -140,7 +140,7 @@ function G(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, s = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id));
+    } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id));
     return null == s ? null : (0, i.jsx)(x.Ay, {
         "aria-hidden": !0,
         className: j.$f,
@@ -157,14 +157,14 @@ function U(e) {
         channel: t,
         gotoChannel: n,
         mentionCount: s
-    } = e, a = (0, r.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, r.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, r.bG)([S.Ay], () => S.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, a), A = (0, g.Ay)(t, !1), p = null == c ? a?.name : `${a?.name} › ${c.name}`, m = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
+    } = e, r = (0, a.bG)([I.A], () => I.A.getGuild(t.guild_id)), c = (0, a.bG)([E.A], () => E.A.getChannel(t.parent_id)), u = (0, a.bG)([b.Ay], () => b.Ay.getIsMentionLowImportance(t.id)), h = (0, _.gU)(t, r), A = (0, g.Ay)(t, !1), m = null == c ? r?.name : `${r?.name} › ${c.name}`, p = t.isMultiUserDM() ? y.intl.formatToPlainString(y.t.CxSA5N, {
         members: t.recipients.length + 1
     }) : t.isPrivate() ? (0, i.jsx)(P, {
         channel: t
     }) : (0, i.jsx)(d.DUT, {
         className: l()(j.W$, j.J5),
         onClick: n,
-        children: p
+        children: m
     });
     return (0, i.jsxs)("div", {
         className: j.yP,
@@ -195,7 +195,7 @@ function U(e) {
             color: "text-default",
             variant: "text-xs/normal",
             className: j.PL,
-            children: m
+            children: p
         })]
     })
 }
@@ -207,9 +207,9 @@ function P(e) {
         user: n,
         status: s,
         activities: l,
-        applicationStream: a
-    } = (0, r.cf)([b.default, N.A, C.A], () => {
-        let e = b.default.getUser(t.getRecipientId());
+        applicationStream: r
+    } = (0, a.cf)([S.default, N.A, C.A], () => {
+        let e = S.default.getUser(t.getRecipientId());
         return {
             user: e,
             status: null != e ? N.A.getStatus(e.id) : null,
@@ -224,12 +224,12 @@ function P(e) {
     return (0, u.A)({
         activities: l,
         status: s,
-        applicationStream: a,
+        applicationStream: r,
         voiceChannel: o
     }) ? (0, i.jsx)(A.A, {
         user: n,
         activities: l,
-        applicationStream: a,
+        applicationStream: r,
         voiceChannel: o,
         hideTooltip: !0
     }) : null

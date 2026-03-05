@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(735438),
+    o = n.n(a),
     c = n(837381),
     d = n(311907),
     u = n(397927),
     h = n(928039),
     A = n(793574),
-    p = n(688810),
-    m = n(222823),
+    m = n(688810),
+    p = n(222823),
     g = n(203982),
     _ = n(661191),
     f = n(851109),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(320697),
     I = n(394953),
     N = n(628325),
-    S = n(524628),
-    b = n(849077),
+    b = n(524628),
+    S = n(849077),
     T = n(652215),
     v = n(228160),
     y = n(985018),
@@ -44,7 +44,7 @@ function O(e) {
     return (0, i.jsx)(u.DUT, {
         "aria-expanded": n,
         onClick: s,
-        className: a()(j.TP, {
+        className: r()(j.TP, {
             [j.yZ]: !n
         }),
         children: (0, i.jsxs)(u.BJc, {
@@ -55,7 +55,7 @@ function O(e) {
                 variant: "text-sm/medium",
                 color: "text-subtle",
                 className: j.P7,
-                children: (0, r.capitalize)(y.intl.string(b.v7[t]).toLowerCase())
+                children: (0, a.capitalize)(y.intl.string(S.v7[t]).toLowerCase())
             }), (0, i.jsx)(u.abt, {
                 size: "xxs",
                 className: j.ai
@@ -63,12 +63,12 @@ function O(e) {
         })
     })
 }
-let L = [b.Ur.UNREAD, b.Ur.TODAY, b.Ur.YESTERDAY, b.Ur.OLDER];
+let L = [S.Ur.UNREAD, S.Ur.TODAY, S.Ur.YESTERDAY, S.Ur.OLDER];
 
 function M() {
     let {
         analyticsLocations: e
-    } = (0, p.Ay)(A.A.NOTIFICATIONS_INBOX);
+    } = (0, m.Ay)(A.A.NOTIFICATIONS_INBOX);
     return (0, i.jsx)("div", {
         className: j.y7,
         children: (0, i.jsxs)(u.BJc, {
@@ -103,9 +103,9 @@ function D(e) {
     let t, {
             messages: n,
             unreadMessages: l,
-            loadMore: r,
+            loadMore: a,
             renderLoadingState: A,
-            renderMessageGroup: p,
+            renderMessageGroup: m,
             scrollerClassName: v,
             className: y,
             listName: D,
@@ -134,11 +134,11 @@ function D(e) {
             messageCategoryOpenStates: W,
             toggleOpenState: Y
         } = (0, C.A)(),
-        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, m.Ay], () => {
+        z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, p.Ay], () => {
             let e = E.A.getChannelInfoMap();
             for (let n of t) {
                 let t = e[n];
-                if ((null == t || t.loadState === b.Ve.UNLOADED) && m.Ay.hasUnread(n)) return !0
+                if ((null == t || t.loadState === S.Ve.UNLOADED) && p.Ay.hasUnread(n)) return !0
             }
             return !1
         }, [t]));
@@ -162,32 +162,32 @@ function D(e) {
             let e = P.current?.getScrollerState();
             if (null == e) return;
             let t = .5 * e.offsetHeight;
-            e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && r?.(b.VA.USER_SCROLL)
-        }, [r]),
+            e.scrollHeight - (e.scrollTop + e.offsetHeight) <= t && a?.(S.VA.USER_SCROLL)
+        }, [a]),
         X = s.useMemo(() => {
             let e = {
-                    [b.Ur.UNREAD]: [],
-                    [b.Ur.TODAY]: [],
-                    [b.Ur.YESTERDAY]: [],
-                    [b.Ur.OLDER]: []
+                    [S.Ur.UNREAD]: [],
+                    [S.Ur.TODAY]: [],
+                    [S.Ur.YESTERDAY]: [],
+                    [S.Ur.OLDER]: []
                 },
                 t = {
-                    [b.Ur.UNREAD]: [],
-                    [b.Ur.TODAY]: [],
-                    [b.Ur.YESTERDAY]: [],
-                    [b.Ur.OLDER]: []
+                    [S.Ur.UNREAD]: [],
+                    [S.Ur.TODAY]: [],
+                    [S.Ur.YESTERDAY]: [],
+                    [S.Ur.OLDER]: []
                 },
                 i = {
-                    [b.Ur.UNREAD]: {},
-                    [b.Ur.TODAY]: {},
-                    [b.Ur.YESTERDAY]: {},
-                    [b.Ur.OLDER]: {}
+                    [S.Ur.UNREAD]: {},
+                    [S.Ur.TODAY]: {},
+                    [S.Ur.YESTERDAY]: {},
+                    [S.Ur.OLDER]: {}
                 };
             return (n.length > 0 || l.length > 0) && (o().each(l, e => {
-                e.kind === b.yL.MENTION ? t[b.Ur.UNREAD].push(e) : e.channelId in i[b.Ur.UNREAD] ? i[b.Ur.UNREAD][e.channelId].push(e) : i[b.Ur.UNREAD][e.channelId] = [e]
+                e.kind === S.yL.MENTION ? t[S.Ur.UNREAD].push(e) : e.channelId in i[S.Ur.UNREAD] ? i[S.Ur.UNREAD][e.channelId].push(e) : i[S.Ur.UNREAD][e.channelId] = [e]
             }), o().each(n, e => {
                 let n = (0, I.i7)(e);
-                e.kind === b.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
+                e.kind === S.yL.MENTION ? t[n].push(e) : e.channelId in i[n] ? i[n][e.channelId].push(e) : i[n][e.channelId] = [e]
             }), o().each(L, n => {
                 [...Object.values(i[n]).map(e => e.reverse()), ...t[n].map(e => [e])].sort((e, t) => _.default.compare(t[0].id, e[0].id)).forEach(t => {
                     e[n].push(t)
@@ -198,7 +198,7 @@ function D(e) {
         Q = 0 === n.length && 0 === l.length && !F && B,
         $ = s.useMemo(() => {
             let e = [];
-            return Q ? e.push(A()) : J ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => p([e], !0))), e.push(...n.map(e => p([e], !1)))) : o().each(L, t => {
+            return Q ? e.push(A()) : J ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => m([e], !0))), e.push(...n.map(e => m([e], !1)))) : o().each(L, t => {
                 0 !== X[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
                     isOpen: W[t],
@@ -210,26 +210,26 @@ function D(e) {
                             viewId: U
                         })
                     }
-                }, t)), W[t] && e.push(...X[t].map(e => p(e, t === b.Ur.UNREAD))))
+                }, t)), W[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, l, A, W, Y, X, G, p, J, Q, U]),
+        }, [n, l, A, W, Y, X, G, m, J, Q, U]),
         Z = $[$.length - 1],
         ee = s.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     s.useEffect(() => {
         Q || et(0 === X.UNREAD.length)
     }, [X, Q, et]);
-    let en = (n.length > 0 || l.length > 0) && null != r && B;
+    let en = (n.length > 0 || l.length > 0) && null != a && B;
     ! function(e) {
         let {
             loadingInitial: t,
             messagesByCategory: n
         } = e, i = s.useRef(!1), l = n.UNREAD.length > 0, {
-            setOpenStateFromUnreads: a
+            setOpenStateFromUnreads: r
         } = (0, C.A)();
         s.useEffect(() => {
-            t || i.current || (a(l), i.current = !0)
-        }, [a, l, t])
+            t || i.current || (r(l), i.current = !0)
+        }, [r, l, t])
     }({
         messagesByCategory: X,
         loadingInitial: K
@@ -240,11 +240,11 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [W, X]);
     s.useEffect(() => {
-        Q || B || 0 >= ei() || (!ee || z) && r?.(b.VA.FILL_SCROLLER)
-    }, [ei, r, Q, B, ee, z]);
+        Q || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
+    }, [ei, a, Q, B, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
-        return (0, i.jsx)(S.A, {
+        return (0, i.jsx)(b.A, {
             withHeader: !1,
             size: e
         })
@@ -257,7 +257,7 @@ function D(e) {
         messagesByCategory: X,
         viewId: U
     }), (0, i.jsx)("div", {
-        className: a()(y, j.KQ),
+        className: r()(y, j.KQ),
         onClick: R,
         onDoubleClick: R,
         "aria-label": e["aria-label"],
@@ -273,7 +273,7 @@ function D(e) {
                         ref: e => {
                             P.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        className: a()(j.m4, v),
+                        className: r()(j.m4, v),
                         onScroll: q,
                         fade: !0,
                         ...n,

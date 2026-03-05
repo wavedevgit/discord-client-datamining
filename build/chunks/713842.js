@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(442433),
-    r = n(738876),
+    r = n(442433),
+    a = n(738876),
     o = n(47167),
     c = n(698718),
     d = n(355622),
     u = n(58736),
     h = n(353428),
     A = n(976860),
-    p = n(823471),
-    m = n(734057),
+    m = n(823471),
+    p = n(734057),
     g = n(31717),
     _ = n(71393),
     f = n(853742),
@@ -25,15 +25,15 @@ var i = n(627968),
 function E(e) {
     let {
         channelId: t
-    } = e, E = (0, l.bG)([m.A], () => m.A.getChannel(t)), I = (0, l.bG)([m.A], () => m.A.getChannel(E?.parent_id)), N = (0, l.bG)([_.A], () => _.A.getGuild(E?.getGuildId())), S = (0, o.Ay)(E), b = s.useRef(!1);
+    } = e, E = (0, l.bG)([p.A], () => p.A.getChannel(t)), I = (0, l.bG)([p.A], () => p.A.getChannel(E?.parent_id)), N = (0, l.bG)([_.A], () => _.A.getGuild(E?.getGuildId())), b = (0, o.Ay)(E), S = s.useRef(!1);
     if (s.useEffect(() => {
-            null == E || b.current || (b.current = !0, (0, f.rH)(E))
+            null == E || S.current || (S.current = !0, (0, f.rH)(E))
         }, [E]), null == E || null == N) return null;
-    let T = (0, i.jsx)(p.A, {
+    let T = (0, i.jsx)(m.A, {
         channel: E
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.A, {
+        children: [(0, i.jsx)(a.A, {
             channel: E,
             draftType: g.C.ChannelMessage
         }), (0, i.jsx)(u.Ay, {
@@ -42,11 +42,11 @@ function E(e) {
             children: (0, h.zF)({
                 channel: E,
                 parentChannel: I,
-                channelName: S,
+                channelName: b,
                 guild: N,
                 inSidebar: !0,
                 handleContextMenu: function(e) {
-                    (0, a.L3)(e, async () => {
+                    (0, r.L3)(e, async () => {
                         let {
                             default: e
                         } = await n.e("33").then(n.bind(n, 44536));

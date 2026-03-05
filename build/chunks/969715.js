@@ -1,13 +1,13 @@
 /** chunk id: 969715, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => m
 }), n(321073);
 var i = n(311907),
     s = n(570209),
     l = n(457699),
-    a = n(352505),
-    r = n(465364),
+    r = n(352505),
+    a = n(465364),
     o = n(383233),
     c = n(994500),
     d = n(517381),
@@ -15,19 +15,19 @@ var i = n(311907),
     h = n(65600);
 let A = [];
 
-function p(e) {
+function m(e) {
     let {
         searchContext: t
-    } = e, n = a.m.useExperiment({
+    } = e, n = r.m.useExperiment({
         location: "useMessageRenderedContent"
-    }).enabled, p = (0, i.bG)([h.A, d.A, l.A], () => {
+    }).enabled, m = (0, i.bG)([h.A, d.A, l.A], () => {
         let e = (0, u.bS)(t),
             i = h.A.getSearchResultsQuery(e),
-            a = d.A.getMessages(e);
-        if (null == i || null == a || 0 === a.length) return A;
+            r = d.A.getMessages(e);
+        if (null == i || null == r || 0 === r.length) return A;
         let c = (0, s.wG)((0, u.dX)(i) ?? ""),
-            p = [];
-        return a.forEach(e => {
+            m = [];
+        return r.forEach(e => {
             let t = new o.Ay(e);
             t = (t = function(e, t) {
                 let [n] = t, i = n.getMessage(e.id, e.channel_id);
@@ -35,20 +35,20 @@ function p(e) {
                     attachments: i.attachments,
                     embeds: i.embeds
                 })), e
-            }(t, [l.A])).set("customRenderedContent", (0, r.Ay)(t, {
+            }(t, [l.A])).set("customRenderedContent", (0, a.Ay)(t, {
                 postProcessor: c,
                 allowHeading: !0,
                 allowList: !0,
                 allowGameMentions: n
-            })), p.push(t)
-        }), p
+            })), m.push(t)
+        }), m
     }, [n, t], i.My), {
-        blockCount: m,
+        blockCount: p,
         ignoreCount: g
     } = (0, i.cf)([c.A], () => {
         let e = 0,
             t = 0;
-        return p.forEach(n => {
+        return m.forEach(n => {
             let i = c.A.isBlockedForMessage(n),
                 s = c.A.isIgnoredForMessage(n);
             i ? e++ : s && t++
@@ -58,8 +58,8 @@ function p(e) {
         }
     });
     return {
-        renderedMessages: p,
-        blockCount: m,
+        renderedMessages: m,
+        blockCount: p,
         ignoreCount: g
     }
 }

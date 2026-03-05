@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(284009),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(284009),
+    o = n.n(a),
     c = n(311907),
     d = n(990078),
     u = n(397927),
     h = n(442433),
     A = n(730134),
-    p = n(964486),
-    m = n(80682),
+    m = n(964486),
+    p = n(80682),
     g = n(58736),
     _ = n(967144),
     f = n(342296),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(290863),
     I = n(849736),
     N = n(113783),
-    S = n(925931),
-    b = n(105530),
+    b = n(925931),
+    S = n(105530),
     T = n(699970),
     v = n(345687),
     y = n(818348),
@@ -42,7 +42,7 @@ let O = s.memo(function(e) {
         });
         return (0, i.jsxs)(g.Ay, {
             toolbar: s,
-            className: a()(R.N1, {
+            className: r()(R.N1, {
                 [R.X_]: n
             }),
             children: [(0, i.jsx)(g.Ay.Icon, {
@@ -58,9 +58,9 @@ let O = s.memo(function(e) {
         let {
             channel: t,
             participant: l,
-            tempDisableOnInit: a = !1
-        } = e, r = s.useRef(null), [g, C] = s.useState(a);
-        (0, p.Ay)(() => {
+            tempDisableOnInit: r = !1
+        } = e, a = s.useRef(null), [g, C] = s.useState(r);
+        (0, m.Ay)(() => {
             if (!g) return;
             let e = setTimeout(() => C(!1), 1e3);
             return () => clearTimeout(e)
@@ -76,8 +76,8 @@ let O = s.memo(function(e) {
         })), y = (0, c.bG)([x.Ay], () => x.Ay.getMember(N, l.user.id)), O = (0, _.gn)(t.guild_id, y?.userId, y?.colorStrings ?? null), L = s.useMemo(() => ({
             [N]: [l.user.id]
         }), [N, l.user.id]);
-        (0, m.Eq)(L, "RequestToSpeakSidebar");
-        let M = l.rtsState === b.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
+        (0, p.Eq)(L, "RequestToSpeakSidebar");
+        let M = l.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
                 (0, h.L3)(e, async () => {
                     let {
@@ -95,7 +95,7 @@ let O = s.memo(function(e) {
         return (0, i.jsxs)("div", {
             className: R.fn,
             children: [(0, i.jsx)(f.A, {
-                targetElementRef: r,
+                targetElementRef: a,
                 user: l.user,
                 guildId: t.guild_id,
                 channelId: t.id,
@@ -103,7 +103,7 @@ let O = s.memo(function(e) {
                 spacing: 16,
                 clickTrap: !0,
                 children: e => (0, i.jsxs)(u.DUT, {
-                    innerRef: r,
+                    innerRef: a,
                     className: R.$u,
                     onContextMenu: D,
                     ...e,
@@ -123,7 +123,7 @@ let O = s.memo(function(e) {
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            children: (0, S.g)(l)
+                            children: (0, b.g)(l)
                         })]
                     })]
                 })
@@ -188,9 +188,9 @@ function G(e) {
         channel: t,
         toggleRequestToSpeakSidebar: n,
         chatOpen: s
-    } = e, l = (0, N.J2)(t.id), r = [+!!(0, c.bG)([C.A], () => C.A.can(y.xB.MANAGE_CHANNELS, t) || C.A.can(y.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
+    } = e, l = (0, N.J2)(t.id), a = [+!!(0, c.bG)([C.A], () => C.A.can(y.xB.MANAGE_CHANNELS, t) || C.A.can(y.xB.MANAGE_ROLES, t)), Math.max(1, l.length)];
     return (0, i.jsxs)("div", {
-        className: a()(R.kL, {
+        className: r()(R.kL, {
             [R.X_]: s
         }),
         children: [(0, i.jsx)(O, {
@@ -198,7 +198,7 @@ function G(e) {
             chatOpen: s
         }), (0, i.jsx)(u.B8B, {
             className: R.hQ,
-            sections: r,
+            sections: a,
             sectionHeight: function(e) {
                 return 40 * (1 === e)
             },

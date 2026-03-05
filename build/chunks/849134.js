@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(342494),
-    a = n(486318),
-    r = n(985018),
+    r = n(486318),
+    a = n(985018),
     o = n(549724),
     c = n(585048);
 
@@ -19,8 +19,8 @@ function d(e) {
         onActionClick: u,
         onActionMouseDown: h,
         position: A = "right",
-        align: p = "top",
-        caretConfig: m = {
+        align: m = "top",
+        caretConfig: p = {
             align: "start"
         },
         skuImageDetails: g,
@@ -34,10 +34,10 @@ function d(e) {
         type: "image",
         src: c.A,
         aspectRatio: "6/4"
-    } : (0, a.e)({
+    } : (0, r.e)({
         imageUrl: g?.imageUrl,
         backgroundImageUrl: g?.backgroundImageUrl,
-        altText: r.intl.string(r.t["ulQB+t"]),
+        altText: a.intl.string(a.t["ulQB+t"]),
         customClassNames: {
             containerClassName: o.z,
             foregroundImageClassName: o._
@@ -47,24 +47,24 @@ function d(e) {
         size: "lg",
         shouldShow: !0,
         position: A,
-        caretConfig: m,
+        caretConfig: p,
         gradientColor: "purple",
         alignmentStrategy: "edge",
-        align: p,
+        align: m,
         badge: {
             type: "new",
             variant: "default"
         },
         onRequestClose: d,
         actions: [{
-            text: r.intl.string(r.t.RzWDqY),
+            text: a.intl.string(a.t.RzWDqY),
             variant: "primary",
             onClick: u,
             onMouseDown: h
         }],
         targetElementRef: t,
-        title: _ ?? r.intl.string(r.t.Ylu2JM),
-        body: f ?? r.intl.string(r.t.vgylLQ),
+        title: _ ?? a.intl.string(a.t.Ylu2JM),
+        body: f ?? a.intl.string(a.t.vgylLQ),
         graphic: x
     })
 }

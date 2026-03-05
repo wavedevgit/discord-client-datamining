@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(396181),
-    a = n(158954),
-    r = n(311907),
+    r = n(158954),
+    a = n(311907),
     o = n(397927),
     c = n(736653),
     d = n(793574),
     u = n(688810),
     h = n(713517),
     A = n(182592),
-    p = n(594832),
-    m = n(183555),
+    m = n(594832),
+    p = n(183555),
     g = n(672385),
     _ = n(622543),
     f = n(950191),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(718019),
     I = n(915614),
     N = n(439053),
-    S = n(312381),
-    b = n(379654),
+    b = n(312381),
+    S = n(379654),
     T = n(946356),
     v = n(490752),
     y = n(587168),
@@ -47,7 +47,7 @@ function k(e) {
         channel: g
     } = e, k = __OVERLAY__, B = (0, f.Ay)(t.id), H = (0, c.Ay)(), F = s.useRef(Date.now()), {
         analyticsLocations: K
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, m.pb)({
+    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, p.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: g.id
@@ -68,17 +68,17 @@ function k(e) {
         })
     }, $ = B?.widgets != null && B.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, r.cf)([_.A], () => ({
+    } = (0, a.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
-    } = (0, p.fw)({
+    } = (0, m.fw)({
         wishlistId: Z,
         userId: t.id
     }), et = s.useMemo(() => null == ee ? null : ee.items.filter(e => !e.isOwned), [ee]);
     return (0, i.jsx)(u.f5, {
         value: K,
-        children: (0, i.jsx)(m.of, {
+        children: (0, i.jsx)(p.of, {
             value: W,
             openedAt: F.current,
             fetchStartedAt: B?.fetchStartedAt,
@@ -92,11 +92,11 @@ function k(e) {
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
                     themeOverride: H,
-                    privateBanner: B?.private === !0 ? (0, i.jsx)(S.A, {}) : void 0,
+                    privateBanner: B?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
-                    }), (0, i.jsxs)(a.d_W, {
+                    }), (0, i.jsxs)(r.d_W, {
                         children: [(0, i.jsxs)(y.A, {
                             children: [(0, i.jsx)(j.A, {
                                 user: t,
@@ -138,7 +138,7 @@ function k(e) {
                             onOpenProfile: k ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
                             className: w.sJ,
-                            children: (0, i.jsx)(b.A, {
+                            children: (0, i.jsx)(S.A, {
                                 user: t,
                                 widgets: B.widgets,
                                 onOpenUserProfileModal: Q
@@ -178,12 +178,12 @@ let V = e => {
         handleOpenProfile: t,
         analyticsLocations: n,
         context: l
-    } = e, [a, r] = s.useState("interactive-text-default");
+    } = e, [r, a] = s.useState("interactive-text-default");
     return (0, i.jsx)("div", {
         className: w.qr,
         children: (0, i.jsx)(o.DUT, {
-            onMouseEnter: () => r("interactive-text-hover"),
-            onMouseLeave: () => r("interactive-text-default"),
+            onMouseEnter: () => a("interactive-text-hover"),
+            onMouseLeave: () => a("interactive-text-default"),
             onClick: () => {
                 t(), (0, g.Wn)({
                     action: "PRESS_VIEW_PROFILE",
@@ -193,7 +193,7 @@ let V = e => {
             },
             className: w.wC,
             children: (0, i.jsx)(o.Text, {
-                color: a,
+                color: r,
                 variant: "text-sm/normal",
                 children: P.intl.string(P.t["+Xp3hq"])
             })
