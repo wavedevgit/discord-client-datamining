@@ -11,7 +11,7 @@ function i(e, t) {
     return e / 100 * t.width
 }
 
-function s(e) {
+function a(e) {
     let t = 0 | e,
         n = Math.floor(t / 3600),
         r = Math.floor(t % 3600 / 60),
@@ -22,5 +22,5 @@ n.d(t, {
     DX: () => l,
     TO: () => i,
     hc: () => r,
-    rB: () => s
+    rB: () => a
 })

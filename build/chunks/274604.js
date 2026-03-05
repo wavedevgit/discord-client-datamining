@@ -1,40 +1,40 @@
 /** chunk id: 274604 params = (module,exports,require) **/
 n.d(t, {
-    X: () => a
+    X: () => s
 });
 var r = n(627968),
     l = n(64700),
     i = n(397927),
-    s = n(221190);
+    a = n(221190);
 
-function a(e) {
+function s(e) {
     let {
         text: t,
         isLoading: n = !1,
-        onClose: a
+        onClose: s
     } = e, o = l.useMemo(() => (t ?? "").split("\n").map(e => e.trim()).filter(e => e.length > 0), [t]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-            className: s.Mm,
+            className: a.Mm,
             children: [(0, r.jsx)(i.Heading, {
                 variant: "heading-md/semibold",
                 color: "currentColor",
                 children: "Transcript"
             }), (0, r.jsx)(i.DUT, {
-                onClick: a,
-                className: s.GI,
+                onClick: s,
+                className: a.GI,
                 children: (0, r.jsx)(i.PGe, {
                     color: "currentColor"
                 })
             })]
         }), (0, r.jsx)(i.vN3, {
             children: (0, r.jsx)(i.ArX, {
-                className: s.j5,
+                className: a.j5,
                 fade: !0,
                 children: (0, r.jsx)("div", {
-                    className: s.FN,
+                    className: a.FN,
                     children: n ? (0, r.jsx)("div", {
-                        className: s.Cw,
+                        className: a.Cw,
                         children: (0, r.jsx)(i.y$y, {
                             type: i.y$y.Type.WANDERING_CUBES
                         })

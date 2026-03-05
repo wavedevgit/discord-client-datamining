@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => f
 }), n(321073);
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(808380),
@@ -21,22 +21,22 @@ function x(e) {
     } = e;
     switch (t) {
         case s.Y.DESKTOP:
-            return (0, l.jsx)(c.ScreenIcon, {
+            return (0, a.jsx)(c.ScreenIcon, {
                 size: "xs",
                 ...n
             });
         case s.Y.XBOX:
-            return (0, l.jsx)(c.XboxNeutralIcon, {
+            return (0, a.jsx)(c.XboxNeutralIcon, {
                 size: "xs",
                 ...n
             });
         case s.Y.PLAYSTATION:
-            return (0, l.jsx)(c.PlaystationNeutralIcon, {
+            return (0, a.jsx)(c.PlaystationNeutralIcon, {
                 size: "xs",
                 ...n
             });
         case s.Y.NINTENDO:
-            return (0, l.jsx)(c.NintendoSwitchNeutralIcon, {
+            return (0, a.jsx)(c.NintendoSwitchNeutralIcon, {
                 size: "xs",
                 ...n
             });
@@ -49,12 +49,12 @@ function h(e) {
     let {
         platforms: t
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, a.jsx)("div", {
         className: r()(u.nM, u.Lc),
         style: {
             alignItems: "center"
         },
-        children: t.map(e => (0, l.jsx)(o.m, {
+        children: t.map(e => (0, a.jsx)(o.m, {
             text: function(e) {
                 switch (e) {
                     case s.Y.DESKTOP:
@@ -69,7 +69,7 @@ function h(e) {
                         return null
                 }
             }(e),
-            children: (0, l.jsx)(x, {
+            children: (0, a.jsx)(x, {
                 platform: e
             })
         }, e))
@@ -80,14 +80,14 @@ function f(e) {
     let {
         detectedGame: t,
         className: n
-    } = e, i = a.useMemo(() => {
+    } = e, i = l.useMemo(() => {
         let e = new Set(t.platforms),
             n = [...e];
         return !e.has(s.Y.DESKTOP) && (e.has(s.Y.MACOS) || e.has(s.Y.LINUX)) && n.push(s.Y.DESKTOP), n.filter(e => m.includes(e))
     }, [t.platforms]);
-    return 0 === i.length ? null : (0, l.jsx)("div", {
+    return 0 === i.length ? null : (0, a.jsx)("div", {
         className: r()(u.fi, u.iH, n),
-        children: i.length > 0 && (0, l.jsx)(h, {
+        children: i.length > 0 && (0, a.jsx)(h, {
             platforms: i
         })
     })

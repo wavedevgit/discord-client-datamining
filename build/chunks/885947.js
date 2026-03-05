@@ -1,12 +1,12 @@
 /** chunk id: 885947 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => S
 });
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    s = n.n(i),
-    a = n(435371),
+    a = n.n(i),
+    s = n(435371),
     o = n(397927),
     u = n(713517),
     c = n(240248),
@@ -20,28 +20,28 @@ var r = n(627968),
     x = n(407481),
     g = n(221190);
 
-function A() {
+function S() {
     let {
         quest: e,
         sourceQuestContent: t,
         isPortrait: n,
         onClose: i
-    } = l.useContext(E.VideoQuestModalContext), A = (0, f.go)(), S = (0, m.LS)(e), C = l.useRef(null), {
+    } = l.useContext(E.VideoQuestModalContext), S = (0, f.go)(), A = (0, m.LS)(e), C = l.useRef(null), {
         isHoveringOrFocusing: _
     } = (0, u.A)(C), b = (0, h.H)({
         quest: e,
         onClose: i,
         sourceQuestContent: t,
-        impressionId: A
+        impressionId: S
     }), y = e.config.ctaConfig.subtitle, T = void 0 !== y && !(0, c.uJ)(y);
-    return (0, r.jsx)(a.m_, {
+    return (0, r.jsx)(s.m_, {
         text: v.intl.string(v.t.EuHF34),
         children: (0, r.jsx)(o.DUT, {
             onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
             className: x._S,
             children: (0, r.jsxs)("div", {
-                className: s()(g.hA, x.t8, {
-                    [x.Mc]: S
+                className: a()(g.hA, x.t8, {
+                    [x.Mc]: A
                 }),
                 ref: C,
                 children: [(0, r.jsx)("div", {
@@ -49,7 +49,7 @@ function A() {
                     children: (0, r.jsx)(o.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: s()(x.xw, {
+                        className: a()(x.xw, {
                             [x._L]: n
                         }),
                         lineClamp: n ? void 0 : 1,
@@ -58,11 +58,11 @@ function A() {
                         })
                     })
                 }), (0, r.jsxs)("div", {
-                    className: s()(x.sB, {
+                    className: a()(x.sB, {
                         [x.fi]: n
                     }),
                     children: [(0, r.jsx)("div", {
-                        className: s()(x.PV, {
+                        className: a()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
@@ -72,7 +72,7 @@ function A() {
                         })
                     }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
-                        className: s()(x.PV, {
+                        className: a()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
@@ -82,11 +82,11 @@ function A() {
                     }), T ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
-                            className: s()(x.SC, {
+                            className: a()(x.SC, {
                                 [x.b2]: n
                             })
                         }), (0, r.jsx)(o.Heading, {
-                            className: s()(x.xw, {
+                            className: a()(x.xw, {
                                 [x._L]: n
                             }),
                             variant: "heading-sm/medium",

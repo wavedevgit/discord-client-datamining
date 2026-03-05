@@ -1,22 +1,22 @@
 /** chunk id: 13229 params = (module,exports,require) **/
 n.d(t, {
-    i: () => a
+    i: () => s
 });
 var r = n(627968);
 n(64700);
 var l = n(827734),
     i = n(260612),
-    s = n(953727);
-let a = e => {
+    a = n(953727);
+let s = e => {
     let {
         size: t = "md",
         width: n,
-        height: a,
+        height: s,
         color: o = l.A.colors.INTERACTIVE_TEXT_DEFAULT,
         ...u
-    } = e, c = (0, i.J)(t), d = c?.width ?? n, m = c?.height ?? a;
+    } = e, c = (0, i.J)(t), d = c?.width ?? n, m = c?.height ?? s;
     return (0, r.jsxs)("svg", {
-        ...(0, s.A)(u),
+        ...(0, a.A)(u),
         xmlns: "http://www.w3.org/2000/svg",
         width: d,
         height: m,

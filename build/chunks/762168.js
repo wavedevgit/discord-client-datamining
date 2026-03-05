@@ -2,14 +2,14 @@
 r.d(t, {
     DX: () => m,
     _v: () => x,
-    cs: () => T,
+    cs: () => y,
     ec: () => v,
     kK: () => g,
     sn: () => S
 });
 var o = r(627968),
-    a = r(64700),
-    n = r(412703),
+    n = r(64700),
+    a = r(412703),
     i = r(440703),
     s = r(267548),
     l = r(668824),
@@ -26,12 +26,12 @@ function m(e) {
         url: t,
         width: r = 640,
         height: o = 360,
-        target: a = 60,
+        target: n = 60,
         videoTitle: i = "Test Video Quest"
     } = e;
     return {
-        type: n.n.WATCH_VIDEO,
-        target: a,
+        type: a.n.WATCH_VIDEO,
+        target: n,
         assets: {
             video: {
                 url: t,
@@ -51,14 +51,14 @@ function g() {
             streamProgressSeconds: t = 0,
             completedAt: r = null,
             enrolledAt: o = null,
-            claimedAt: a = null
+            claimedAt: n = null
         } = e;
     return {
         userId: "123",
         questId: C,
         enrolledAt: o,
         completedAt: r,
-        claimedAt: a,
+        claimedAt: n,
         claimedTier: null,
         lastStreamHeartbeatAt: null,
         streamProgressSeconds: t,
@@ -118,7 +118,7 @@ function v(e) {
             taskConfigV2: {
                 joinOperator: l.K.AND,
                 tasks: {
-                    [n.n.WATCH_VIDEO]: e
+                    [a.n.WATCH_VIDEO]: e
                 }
             },
             features: [],
@@ -139,11 +139,11 @@ function S(e) {
     let {
         quest: t,
         isPortrait: r,
-        children: n,
+        children: a,
         isFullscreenEnabled: i = !1,
         useNewStyling: s = !1,
         setIsFullscreenEnabled: l = b.tEg
-    } = e, d = a.useMemo(() => ({
+    } = e, d = n.useMemo(() => ({
         quest: t,
         sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
@@ -152,7 +152,7 @@ function S(e) {
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: l,
         useNewProgressBarStyling: s
-    }), [t, r, i, l, s]), c = a.useMemo(() => ({
+    }), [t, r, i, l, s]), c = n.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
     return (0, o.jsx)(_.R, {
@@ -163,7 +163,7 @@ function S(e) {
             value: c,
             children: (0, o.jsx)(p.VideoQuestModalContext.Provider, {
                 value: d,
-                children: n
+                children: a
             })
         })
     })
@@ -173,15 +173,15 @@ function h(e) {
     let {
         orientation: t,
         autoplay: r,
-        questCompleted: n,
+        questCompleted: a,
         useNewStyling: i,
         videoUrl: s
-    } = e, l = "portrait" === t, [c, u] = a.useState(!1), _ = m({
+    } = e, l = "portrait" === t, [c, u] = n.useState(!1), _ = m({
         url: s,
         width: l ? 360 : 640,
         height: l ? 640 : 360,
         videoTitle: l ? "Test Portrait Video" : "Test Landscape Video"
-    }), p = v(_), C = n ? {
+    }), p = v(_), C = a ? {
         ...p,
         userStatus: g({
             enrolledAt: p.userStatus?.enrolledAt ?? null,
@@ -251,7 +251,7 @@ let x = {
             defaultValue: c.kz
         }
     },
-    T = {
+    y = {
         title: "Video Player",
         stories: [{
             name: "Landscape Video (Quests)",

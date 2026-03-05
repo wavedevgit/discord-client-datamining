@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => v
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(311907),
@@ -29,34 +29,34 @@ let v = e => {
         customCTA: A,
         popoutClassname: I,
         popoutPosition: E = "right"
-    } = e, b = a.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, b = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
         avatar: T
-    } = a.useMemo(() => {
+    } = l.useMemo(() => {
         let e = C?.getAvatarURL(N?.guild_id, 48, !1);
         return {
             nick: m.Ay.getName(N?.guild_id, N?.id, C),
             avatar: e
         }
     }, [C, N]);
-    return null == C ? null : (0, l.jsx)(c.YNO, {
+    return null == C ? null : (0, a.jsx)(c.YNO, {
         targetElementRef: b,
         position: E,
         renderPopout: e => {
             let {
-                closePopout: a,
+                closePopout: l,
                 updatePosition: r
             } = e;
-            return (0, l.jsx)("div", {
+            return (0, a.jsx)("div", {
                 className: I,
-                children: (0, l.jsx)(x.Oo, {
+                children: (0, a.jsx)(x.Oo, {
                     entry: t,
-                    closePopout: a,
+                    closePopout: l,
                     updatePopoutPosition: r,
                     onReaction: () => {
-                        i?.(), n(), a()
+                        i?.(), n(), l()
                     },
-                    onUserPopoutClosed: () => a(),
+                    onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
                     disableActivityProfileLinks: j
                 })
@@ -66,43 +66,43 @@ let v = e => {
         onRequestOpen: () => {
             v?.()
         },
-        children: e => (0, l.jsx)(c.DUT, {
+        children: e => (0, a.jsx)(c.DUT, {
             innerRef: b,
             ...e,
             className: p.GA,
-            children: (0, l.jsx)(c.vN3, {
+            children: (0, a.jsx)(c.vN3, {
                 offset: {
                     top: 4,
                     bottom: 4,
                     left: 4,
                     right: 4
                 },
-                children: (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)("img", {
+                children: (0, a.jsxs)(a.Fragment, {
+                    children: [(0, a.jsx)("img", {
                         className: p.my,
                         src: T,
                         alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: S
                         })
-                    }), (0, l.jsx)("div", {
+                    }), (0, a.jsx)("div", {
                         className: p.Su,
-                        children: (0, l.jsxs)("div", {
+                        children: (0, a.jsxs)("div", {
                             className: r()(_.fi, _.Kt),
-                            children: [(0, l.jsx)(c.Text, {
+                            children: [(0, a.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: S
-                            }), (0, l.jsx)(f.mG, {
+                            }), (0, a.jsx)(f.mG, {
                                 location: f.N5.APP_LAUNCHER,
-                                children: h.n.map((e, n) => (0, l.jsx)(e, {
+                                children: h.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]
                         })
-                    }), null != A ? A : (0, l.jsx)("div", {
+                    }), null != A ? A : (0, a.jsx)("div", {
                         className: p.Br,
-                        children: (0, l.jsx)(c.W4J, {
+                        children: (0, a.jsx)(c.W4J, {
                             size: "sm"
                         })
                     })]

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    s = n.n(i),
-    a = n(380278),
+    a = n.n(i),
+    s = n(380278),
     o = n(876230),
     u = n(61491),
     c = n(397927),
@@ -29,8 +29,8 @@ function E(e) {
         playerState: v,
         preloadedBuffers: x,
         duration: g,
-        maxSeekableTime: A,
-        onClick: S,
+        maxSeekableTime: S,
+        onClick: A,
         onScrubBack: C,
         onScrubForward: _,
         "data-testid": b
@@ -49,11 +49,11 @@ function E(e) {
     } = (0, m.A)({
         onScrubBack: C,
         onScrubForward: _,
-        maxSeekableTime: A,
+        maxSeekableTime: S,
         interactionEnabled: E,
         duration: g,
         percent: n,
-        onClick: S
+        onClick: A
     }), O = l.useMemo(() => null == I || null == T ? null : (0, u.rB)((0, u.hc)(I, T, g)), [I, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{
@@ -84,7 +84,7 @@ function E(e) {
             "--custom-initial-timeline-height": "4px"
         },
         children: (0, r.jsxs)(c.DUT, {
-            className: s()(p.KF, {
+            className: a()(p.KF, {
                 [p.uc]: E
             }),
             ignoreKeyPress: !0,
@@ -118,7 +118,7 @@ function E(e) {
                     left: null != I ? `${I}px` : "auto"
                 },
                 children: O
-            }), M && E && null != P && (0, r.jsx)(a.animated.div, {
+            }), M && E && null != P && (0, r.jsx)(s.animated.div, {
                 className: p.Ub,
                 style: {
                     left: Q.to(e => `${e}px`)

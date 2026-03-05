@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    s = n.n(i),
-    a = n(380278),
+    a = n.n(i),
+    s = n(380278),
     o = n(397927),
     u = n(892358),
     c = n(341915),
@@ -26,8 +26,8 @@ let E = {
             sourceQuestContent: v,
             expansionSpring: x,
             onClick: g,
-            onMouseEnter: A,
-            onMouseLeave: S
+            onMouseEnter: S,
+            onMouseLeave: A
         } = e, {
             label: C,
             targetSec: _,
@@ -48,8 +48,8 @@ let E = {
                 R(!0)
             }
         });
-        return (0, r.jsxs)(a.animated.div, {
-            className: s()(f.ck, {
+        return (0, r.jsxs)(s.animated.div, {
+            className: a()(f.ck, {
                 [f.a]: j && D,
                 [f.C9]: !j && D
             }),
@@ -63,8 +63,8 @@ let E = {
                 onClick: null != g ? e => {
                     e.stopPropagation(), g()
                 } : void 0,
-                onMouseEnter: A,
-                onMouseLeave: S,
+                onMouseEnter: S,
+                onMouseLeave: A,
                 children: (0, r.jsx)(m.A, {
                     fullWidth: !0,
                     quest: h,

@@ -186,7 +186,7 @@ function Y(e) {
             (0, g.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("40556"), n.e("44986")]).then(n.bind(n, 6503));
+                } = await Promise.all([n.e("40556"), n.e("44986")]).then(n.bind(n, 228884));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     guildId: t.id
@@ -347,7 +347,7 @@ function K(e) {
                     e.stopPropagation(), (0, g.mMO)(async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("40556"), n.e("44986")]).then(n.bind(n, 6503));
+                        } = await Promise.all([n.e("40556"), n.e("44986")]).then(n.bind(n, 228884));
                         return n => (0, i.jsx)(e, {
                             ...n,
                             guildId: o.id,

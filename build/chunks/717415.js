@@ -7,9 +7,9 @@ n.r(t), n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    s = n.n(i),
-    a = n(284009),
-    o = n.n(a),
+    a = n.n(i),
+    s = n(284009),
+    o = n.n(s),
     u = n(412703),
     c = n(311907),
     d = n(397927),
@@ -21,8 +21,8 @@ var r = n(627968),
     v = n(245853),
     x = n(890687),
     g = n(971649),
-    A = n(792620),
-    S = n(753386),
+    S = n(792620),
+    A = n(753386),
     C = n(73473),
     _ = n(922623),
     b = n(60040),
@@ -53,27 +53,27 @@ function k(e) {
         transitionState: t,
         onClose: n,
         quest: i,
-        autoplay: a,
+        autoplay: s,
         videoSessionId: c,
         impressionRef: f,
         parentModalOpenStartClockTime: E,
         sourceQuestContent: h
-    } = e, C = (0, A.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
+    } = e, C = (0, S.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
     o()(null != F, "VideoQuestModal: videoTask must not be null");
-    let G = (0, S.eG)(F),
-        $ = "portrait" === G,
-        Y = (0, p.A)(e => {
+    let G = (0, A.eG)(F),
+        K = "portrait" === G,
+        $ = (0, p.A)(e => {
             V(e.target.offsetHeight)
         }),
-        K = (0, m.w)(Y),
+        Y = (0, m.w)($),
         H = i.config.features.includes(R.Li.FULL_EPISODE_VIDEO_QUEST),
         {
-            enabled: W
+            enabled: z
         } = v.jS.useConfig({
             location: R.rE.VIDEO_MODAL
         }),
-        q = W || H,
-        z = (0, D.H)({
+        W = z || H,
+        q = (0, D.H)({
             quest: i,
             onClose: n,
             sourceQuestContent: h,
@@ -83,28 +83,28 @@ function k(e) {
             quest: i,
             sourceQuestContent: h,
             videoSessionId: c,
-            isPortrait: $,
+            isPortrait: K,
             onClose: n,
             isFullscreenEnabled: U,
-            useNewProgressBarStyling: q,
+            useNewProgressBarStyling: W,
             setIsFullscreenEnabled: B
-        }), [i, h, c, $, n, U, q, B]);
+        }), [i, h, c, K, n, U, W, B]);
     return (0, r.jsx)(M.Provider, {
         value: X,
         children: (0, r.jsx)("div", {
-            style: $ ? {
+            style: K ? {
                 "--custom-portrait-footer-height": `${Q}px`
             } : void 0,
             children: (0, r.jsxs)(d.EOs, {
                 "data-migration-pending": !0,
                 transitionState: t,
                 size: d.rIJ.DYNAMIC,
-                className: s()(j.CR, {
+                className: a()(j.CR, {
                     [j.VX]: "landscape" === G,
                     [j.Zy]: "portrait" === G
                 }),
                 parentComponent: "Modal",
-                children: [!q && (0, r.jsx)("div", {
+                children: [!W && (0, r.jsx)("div", {
                     className: j.z6,
                     children: (0, r.jsx)(d.K0, {
                         variant: "icon-only",
@@ -123,7 +123,7 @@ function k(e) {
                     children: (0, r.jsx)("div", {
                         className: j.S3,
                         style: {
-                            "--custom-footer-horizontal-padding": `${q?20:16}px`
+                            "--custom-footer-horizontal-padding": `${W?20:16}px`
                         },
                         children: (0, r.jsxs)("div", {
                             className: j.jE,
@@ -131,11 +131,11 @@ function k(e) {
                                 targetTimeSec: F.target,
                                 parentTransitionState: t,
                                 onOptimisticProgressUpdate: P,
-                                autoplay: a,
+                                autoplay: s,
                                 performanceClockStartTime: E,
                                 orientation: G
-                            }), $ ? (0, r.jsxs)("div", {
-                                ref: K,
+                            }), K ? (0, r.jsxs)("div", {
+                                ref: Y,
                                 className: I.uh,
                                 children: [(0, r.jsxs)("div", {
                                     className: I.Df,
@@ -149,7 +149,7 @@ function k(e) {
                                             children: (0, r.jsx)(b.A, {})
                                         })
                                     }), (0, r.jsx)(_.A, {
-                                        handlePrimaryCtaClick: z
+                                        handlePrimaryCtaClick: q
                                     })]
                                 })]
                             }) : (0, r.jsxs)("div", {
@@ -160,7 +160,7 @@ function k(e) {
                                 }), (0, r.jsxs)("div", {
                                     className: I.NY,
                                     children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(_.A, {
-                                        handlePrimaryCtaClick: z
+                                        handlePrimaryCtaClick: q
                                     })]
                                 })]
                             })]
@@ -177,8 +177,8 @@ function O(e) {
         questId: t,
         overrideQuest: n,
         autoplay: i,
-        openStartClockTime: s,
-        ...a
+        openStartClockTime: a,
+        ...s
     } = e, o = (0, c.bG)([E.A], () => E.A.getQuest(t)), u = (0, c.bG)([E.A], () => E.A.getQuestConfig(t)), d = n ?? o, m = null != n ? n.config : u, p = l.useMemo(() => null != m ? {
         questConfig: m
     } : null, [m]);
@@ -189,10 +189,10 @@ function O(e) {
             questContent: h.uF.VIDEO_MODAL,
             minViewTimeSeconds: f.bq,
             trackGuildAndChannelMetadata: !0,
-            sourceQuestContent: a.sourceQuestContent,
+            sourceQuestContent: s.sourceQuestContent,
             children: e => (0, r.jsx)(k, {
-                ...a,
-                parentModalOpenStartClockTime: s,
+                ...s,
+                parentModalOpenStartClockTime: a,
                 impressionRef: e,
                 quest: d,
                 autoplay: i

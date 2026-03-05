@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(349941),
     i = n(158954),
-    s = n(311907),
-    a = n(544028),
+    a = n(311907),
+    s = n(544028),
     o = n(651892),
     u = n(221190);
 let c = function(e) {
@@ -14,7 +14,7 @@ let c = function(e) {
         hasVideoAsset: t,
         playerState: n,
         pauseReason: c
-    } = e, d = (0, s.bG)([a.A], () => a.A.getState().theme), m = (0, o.oK)({
+    } = e, d = (0, a.bG)([s.A], () => s.A.getState().theme), m = (0, o.oK)({
         hasVideoAsset: t,
         playerState: n,
         pauseReason: c

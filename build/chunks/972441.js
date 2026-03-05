@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(64700),
     l = n(158954),
     i = n(61491),
-    s = n(770178),
-    a = n(765548),
+    a = n(770178),
+    s = n(765548),
     o = n(650583);
 
 function u(e) {
@@ -19,16 +19,16 @@ function u(e) {
         onClick: m,
         percent: p
     } = e, [f, E] = r.useState(null), [h, v] = r.useState(null), [x, g] = r.useState(!1), {
-        i18n: A
-    } = (0, l.G98)(), S = r.useMemo(() => {
+        i18n: S
+    } = (0, l.G98)(), A = r.useMemo(() => {
         let e = {
             role: "progressbar",
             "aria-label": "Progress Bar"
         };
-        return null != p && "number" == typeof p && (e["aria-valuenow"] = p, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = A.PERCENT_COMPLETE(Math.round(p))), e
-    }, [p, A]), C = r.useMemo(() => null == f || null == u ? null : (0, i.DX)(u, d, f), [f, u, d]), _ = (0, a.A)(e => {
+        return null != p && "number" == typeof p && (e["aria-valuenow"] = p, e["aria-valuemin"] = 0, e["aria-valuemax"] = 100, e["aria-label"] = S.PERCENT_COMPLETE(Math.round(p))), e
+    }, [p, S]), C = r.useMemo(() => null == f || null == u ? null : (0, i.DX)(u, d, f), [f, u, d]), _ = (0, s.A)(e => {
         E(e.contentRect)
-    }), b = (0, s.w)(_), y = e => {
+    }), b = (0, a.w)(_), y = e => {
         null != b.current && v(e.clientX - b.current.getBoundingClientRect().left)
     };
     return {
@@ -58,6 +58,6 @@ function u(e) {
                 n = e.clientX - t.left;
             m((0, i.hc)(n, t, d))
         },
-        ariaProps: S
+        ariaProps: A
     }
 }

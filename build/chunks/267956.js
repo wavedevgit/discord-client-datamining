@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(349941),
     i = n(158954),
-    s = n(311907),
-    a = n(876230),
+    a = n(311907),
+    s = n(876230),
     o = n(544028),
     u = n(221190);
 
@@ -16,18 +16,18 @@ function c(e) {
         playerState: n,
         pauseReason: r
     } = e;
-    return t ? n === a.Q6.PAUSED && "visibility" === r ? "Video paused because the window is not visible" : n === a.Q6.PAUSED && "focus" === r ? "Video paused because the window lost focus" : null : "Loading video..."
+    return t ? n === s.Q6.PAUSED && "visibility" === r ? "Video paused because the window is not visible" : n === s.Q6.PAUSED && "focus" === r ? "Video paused because the window lost focus" : null : "Loading video..."
 }
 let d = function(e) {
     let {
         hasVideoAsset: t,
         playerState: n,
-        pauseReason: a,
+        pauseReason: s,
         getStatusMessage: d = c
-    } = e, m = (0, s.bG)([o.A], () => o.A.getState().theme), p = d({
+    } = e, m = (0, a.bG)([o.A], () => o.A.getState().theme), p = d({
         hasVideoAsset: t,
         playerState: n,
-        pauseReason: a
+        pauseReason: s
     });
     return null == p ? null : (0, r.jsxs)(r.Fragment, {
         children: [!t && (0, r.jsx)("div", {
