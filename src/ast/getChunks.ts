@@ -56,9 +56,7 @@ export default function getChunksByCode(
                         const chunkCode = code.slice(chunk.start, chunk.end);
                         const codeFormatted = formatCode(chunkCode);
                         result[key] =
-                            `/** chunk id: ${key}, original params: ${prop.value.params
-                                .map((p) => p.name || p.value)
-                                .join(',')} (module,exports,require) **/\n` +
+                            `/** chunk id: ${key} params = (module,exports,require) **/\n` +
                             codeFormatted;
                     }
                 }
