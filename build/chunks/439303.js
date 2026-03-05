@@ -1,31 +1,31 @@
 /** chunk id: 439303, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    E9: () => d,
+    E9: () => u,
     jM: () => o
 });
-var i = n(627968),
-    l = n(64700),
-    r = n(812729),
-    a = n.n(r);
-let s = l.createContext({});
+var a = n(627968),
+    r = n(64700),
+    l = n(812729),
+    s = n.n(l);
+let i = r.createContext({});
 
 function o() {
-    return l.useContext(s)
+    return r.useContext(i)
 }
 
-function d(e) {
+function u(e) {
     let {
         newValue: t,
         children: n
-    } = e, r = o(), d = l.useMemo(() => {
+    } = e, l = o(), u = r.useMemo(() => {
         let e = {
-            ...r,
+            ...l,
             ...t
         };
-        return a()(r, e) ? r ?? e : e
-    }, [r, t]);
-    return (0, i.jsx)(s.Provider, {
-        value: d,
+        return s()(l, e) ? l ?? e : e
+    }, [l, t]);
+    return (0, a.jsx)(i.Provider, {
+        value: u,
         children: n
     })
 }

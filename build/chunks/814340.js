@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(158954),
+    r = n.n(l),
+    a = n(158954),
     o = n(311907),
     c = n(990078),
     d = n(397927),
@@ -523,7 +523,7 @@ class F extends s.PureComponent {
     };
     renderProtip() {
         return (0, i.jsx)(g.A, {
-            className: a()(D.PP, {
+            className: r()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
             type: g.A.Types.INLINE,
@@ -548,7 +548,7 @@ class F extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsx)(r.dWK, {
+        return (0, i.jsx)(a.dWK, {
             "aria-label": M.intl.string(M.t.ZvKwYa),
             size: "lg",
             transitionState: this.props.transitionState,

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(985623),
-    a = n.n(l),
-    r = n(837381),
+    r = n.n(l),
+    a = n(837381),
     o = n(884362),
     c = n(311907),
     d = n(52133),
@@ -238,22 +238,22 @@ class P extends s.Component {
         let i = s.Children.count(this.props.children);
         if (null == e) return;
         let l = Math.round((e.offsetHeight - 44 * i) / 44),
-            a = l > t.length ? t.slice(0, l + 1) : t,
-            r = a.map(e => null != n[e] ? n[e].getRecipientId() : null),
+            r = l > t.length ? t.slice(0, l + 1) : t,
+            a = r.map(e => null != n[e] ? n[e].getRecipientId() : null),
             o = t.some(e => (0, f.A)(e)),
             c = {
-                num_users_visible: a.length,
-                num_users_visible_with_mobile_indicator: r.filter(e => null != e && R.A.isMobileOnline(e)).length
+                num_users_visible: r.length,
+                num_users_visible_with_mobile_indicator: a.filter(e => null != e && R.A.isMobileOnline(e)).length
             };
         this.hasReportedAnalytics = !0, p.Ay.trackWithMetadata(M.HAw.DM_LIST_VIEWED, {
             ...c,
             ...(0, _.F)(),
-            visible_user_ids: r.filter(e => null != e),
+            visible_user_ids: a.filter(e => null != e),
             changelog_dm_visible: o
         })
     };
     getSectionHeight = e => 24 * (0 !== e);
-    handleScroll = a()(() => {
+    handleScroll = r()(() => {
         if (null != this._list) {
             let e = this._list.getScrollerNode();
             null != e && h.A.updateChannelListScroll(M.ME, e.scrollTop)
@@ -266,14 +266,14 @@ class P extends s.Component {
             channels: s,
             selectedChannelId: l
         } = this.props, {
-            totalRowCount: a,
-            preRenderedChildren: r
+            totalRowCount: r,
+            preRenderedChildren: a
         } = this.state, o = s[n[t]];
         return null == o ? null : (0, i.jsx)(L.Ay, {
             channel: o,
             selected: o.id === l,
-            "aria-posinset": r + t + 1,
-            "aria-setsize": a
+            "aria-posinset": a + t + 1,
+            "aria-setsize": r
         }, o.id)
     };
     renderChild = e => {
@@ -324,12 +324,12 @@ class P extends s.Component {
             density: i
         } = this.props, {
             nonNullChildren: l
-        } = this.state, a = 44;
+        } = this.state, r = 44;
         if (0 === e) {
             let e = l[t];
-            s.isValidElement(e) && (a = e.key?.startsWith("section-divider") ? 25 : "dm-quick-launcher" === e.key ? 67 : 40)
-        } else a = "compact" === i ? 40 : "default" === i ? 44 : 50;
-        return 1 === e && 0 === t && 0 === n.length ? 428 : a
+            s.isValidElement(e) && (r = e.key?.startsWith("section-divider") ? 25 : "dm-quick-launcher" === e.key ? 67 : 40)
+        } else r = "compact" === i ? 40 : "default" === i ? 44 : 50;
+        return 1 === e && 0 === t && 0 === n.length ? 428 : r
     };
     render() {
         let {
@@ -338,17 +338,17 @@ class P extends s.Component {
         } = this.props, {
             preRenderedChildren: n
         } = this.state;
-        return (0, i.jsx)(r.PR, {
+        return (0, i.jsx)(a.PR, {
             children: s => {
                 let {
                     ref: l,
-                    role: a,
-                    ...r
+                    role: r,
+                    ...a
                 } = s;
                 return (0, i.jsx)(u.skg, {
                     children: s => (0, i.jsx)(u.B8B, {
                         fade: !0,
-                        innerRole: a,
+                        innerRole: r,
                         innerAriaLabel: D.intl.string(D.t.YUU0RF),
                         innerTag: "ul",
                         ref: e => {
@@ -363,7 +363,7 @@ class P extends s.Component {
                         renderSection: this.renderSection,
                         renderRow: this.renderRow,
                         sections: [n, Math.max(e.length, 1)],
-                        ...r,
+                        ...a,
                         ...s
                     })
                 })
@@ -377,9 +377,9 @@ let w = e => {
     } = (0, u.wRf)(), {
         version: n,
         theme: l,
-        children: a,
+        children: r,
         listScrollerRef: d
-    } = e, h = s.Children.count(a), p = N.A.useConfig({
+    } = e, h = s.Children.count(r), p = N.A.useConfig({
         location: "PrivateChannelsList"
     }).enabled, _ = j.A.getMutablePrivateChannels(), f = (0, T.uX)(_), x = (0, c.yK)([O.default, S.A, v.A], () => {
         let e = O.default.getPrivateChannelIds();
@@ -429,7 +429,7 @@ let w = e => {
     });
     return (0, i.jsx)(g.f5, {
         value: b,
-        children: (0, i.jsx)(r.hD, {
+        children: (0, i.jsx)(a.hD, {
             navigator: B,
             children: (0, i.jsx)(P, {
                 ...e,

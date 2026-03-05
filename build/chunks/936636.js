@@ -1,17 +1,18 @@
 /** chunk id: 936636, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => h
+    A: () => f
 }), n(321073);
 var i = n(627968),
     l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    r = n(808380),
-    o = n(934551),
-    c = n(990078),
+    r = n.n(a),
+    s = n(808380),
+    c = n(934551),
+    o = n(990078),
     d = n(985018),
     u = n(851822);
-let m = [r.Y.DESKTOP, r.Y.XBOX, r.Y.PLAYSTATION, r.Y.NINTENDO];
+let m = [s.Y.DESKTOP, s.Y.XBOX, s.Y.PLAYSTATION, s.Y.NINTENDO];
 
 function x(e) {
     let {
@@ -19,23 +20,23 @@ function x(e) {
         ...n
     } = e;
     switch (t) {
-        case r.Y.DESKTOP:
-            return (0, i.jsx)(o.ScreenIcon, {
+        case s.Y.DESKTOP:
+            return (0, i.jsx)(c.ScreenIcon, {
                 size: "xs",
                 ...n
             });
-        case r.Y.XBOX:
-            return (0, i.jsx)(o.XboxNeutralIcon, {
+        case s.Y.XBOX:
+            return (0, i.jsx)(c.XboxNeutralIcon, {
                 size: "xs",
                 ...n
             });
-        case r.Y.PLAYSTATION:
-            return (0, i.jsx)(o.PlaystationNeutralIcon, {
+        case s.Y.PLAYSTATION:
+            return (0, i.jsx)(c.PlaystationNeutralIcon, {
                 size: "xs",
                 ...n
             });
-        case r.Y.NINTENDO:
-            return (0, i.jsx)(o.NintendoSwitchNeutralIcon, {
+        case s.Y.NINTENDO:
+            return (0, i.jsx)(c.NintendoSwitchNeutralIcon, {
                 size: "xs",
                 ...n
             });
@@ -44,25 +45,25 @@ function x(e) {
     }
 }
 
-function g(e) {
+function h(e) {
     let {
         platforms: t
     } = e;
     return (0, i.jsx)("div", {
-        className: s()(u.nM, u.Lc),
+        className: r()(u.nM, u.Lc),
         style: {
             alignItems: "center"
         },
-        children: t.map(e => (0, i.jsx)(c.m, {
+        children: t.map(e => (0, i.jsx)(o.m, {
             text: function(e) {
                 switch (e) {
-                    case r.Y.DESKTOP:
+                    case s.Y.DESKTOP:
                         return d.intl.string(d.t.KT6uCJ);
-                    case r.Y.XBOX:
+                    case s.Y.XBOX:
                         return d.intl.string(d.t.DDWUJp);
-                    case r.Y.PLAYSTATION:
+                    case s.Y.PLAYSTATION:
                         return d.intl.string(d.t.fzMz2s);
-                    case r.Y.NINTENDO:
+                    case s.Y.NINTENDO:
                         return d.intl.string(d.t.AMW8je);
                     default:
                         return null
@@ -75,18 +76,18 @@ function g(e) {
     })
 }
 
-function h(e) {
+function f(e) {
     let {
         detectedGame: t,
         className: n
     } = e, a = l.useMemo(() => {
         let e = new Set(t.platforms),
             n = [...e];
-        return !e.has(r.Y.DESKTOP) && (e.has(r.Y.MACOS) || e.has(r.Y.LINUX)) && n.push(r.Y.DESKTOP), n.filter(e => m.includes(e))
+        return !e.has(s.Y.DESKTOP) && (e.has(s.Y.MACOS) || e.has(s.Y.LINUX)) && n.push(s.Y.DESKTOP), n.filter(e => m.includes(e))
     }, [t.platforms]);
     return 0 === a.length ? null : (0, i.jsx)("div", {
-        className: s()(u.fi, u.iH, n),
-        children: a.length > 0 && (0, i.jsx)(g, {
+        className: r()(u.fi, u.iH, n),
+        children: a.length > 0 && (0, i.jsx)(h, {
             platforms: a
         })
     })

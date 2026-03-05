@@ -7,8 +7,8 @@ n.d(t, {
 var i, s = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(139033),
     c = n(397927),
     d = n(830215),
@@ -34,13 +34,13 @@ let I = e => {
         notPhoneVerified: b,
         newAccount: S,
         newMember: T
-    } = (0, r.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
+    } = (0, a.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
     return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : b ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
         min: g.$8o.MEMBER_AGE
     }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
         min: g.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
-        className: a()(C.popover, x.kL),
+        className: r()(C.popover, x.kL),
         "aria-labelledby": E,
         children: [(0, s.jsx)("img", {
             alt: "",

@@ -1,17 +1,18 @@
 /** chunk id: 760459, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => r
 });
 var i = n(627968),
     l = n(942528),
     a = n(409626);
 
-function s(e) {
+function r(e) {
     let {
         entry: t,
         viewId: n,
-        officialGuildId: s,
-        source: r
+        officialGuildId: r,
+        source: s
     } = e;
     return (0, i.jsx)(l.A, {
         ...e,
@@ -22,8 +23,8 @@ function s(e) {
                 gameName: t.extra.game_name,
                 recipientUserId: t.author_id,
                 viewId: n,
-                officialGuildId: s,
-                source: r
+                officialGuildId: r,
+                source: s
             })
         },
         onRequestOpen: () => {
@@ -33,8 +34,8 @@ function s(e) {
                 gameName: t.extra.game_name,
                 recipientUserId: t.author_id,
                 viewId: n,
-                officialGuildId: s,
-                source: r
+                officialGuildId: r,
+                source: s
             })
         }
     })

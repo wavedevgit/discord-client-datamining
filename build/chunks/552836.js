@@ -1,12 +1,12 @@
 /** chunk id: 552836, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(311907),
     s = n(73153);
 let l = {};
-class a extends i.Ay.PersistedStore {
+class r extends i.Ay.PersistedStore {
     static displayName = "GuildBoostingProgressBarPersistedStore";
     static persistKey = "PremiumGuildProgressBarPersistedStore";
     initialize(e) {
@@ -19,7 +19,7 @@ class a extends i.Ay.PersistedStore {
         return l[e]
     }
 }
-let r = new a(s.h, {
+let a = new r(s.h, {
     APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
         let {
             guildId: t,

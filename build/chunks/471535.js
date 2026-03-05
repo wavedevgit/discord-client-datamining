@@ -31,8 +31,8 @@ var r = n(627968),
     R = n(818049),
     L = n(717415),
     I = n(661417),
-    M = n(882291),
-    j = n(224284),
+    j = n(882291),
+    M = n(224284),
     w = n(261331),
     k = n(602871),
     O = n(246465),
@@ -74,7 +74,7 @@ function $(e) {
         targetRef: eu
     } = (0, h.O7)(), [ec, ed] = l.useState(!0 === i ? w.Q6.PLAYING : w.Q6.PAUSED), [em, ep] = l.useState(!1), [ef, eE] = l.useState(!1), eh = (0, T.Yh)(q), [ev, ex] = l.useState(eh.percentComplete), eg = l.useCallback(e => {
         eV(null), ex(e)
-    }, []), [eA, eS] = l.useState(!1), [eC, e_] = l.useState(!0), [eb, ey] = l.useState(!1), [eT, eN] = l.useState([]), [eD, eR] = l.useState(v.A.getEffectiveConnectionSpeed()), [eL, eI] = l.useState(0), [eM, ej] = l.useState(0), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(null), eU = l.useRef(!0), eB = l.useRef(null), eF = l.useRef(null), eG = (0, S.Kr)(e => e.videoProgress[q.id] ?? S.yc, u.x), e$ = (0, S.Kr)(e => e.setVideoProgress), eY = (0, S.Kr)(e => e.muted), eK = (0, S.Kr)(e => e.volume), eH = (0, c.bG)([f.A], () => f.A.useReducedMotion), eW = (0, l.useRef)(null), eq = (0, l.useRef)(null), ez = l.useRef(!0), eX = q.userStatus?.completedAt != null, eJ = l.useMemo(() => q.config.features.includes(V.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), eZ = l.useRef(!1), [e0, e1] = l.useState(null), [e6, e2] = l.useState(!1), [e7, e4] = l.useState(!1), [e8, e9] = l.useState(!1), [e3, e5] = l.useState(null), te = eX ? eW.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, eh.progressSeconds), tt = l.useMemo(() => (0, C.L)({
+    }, []), [eA, eS] = l.useState(!1), [eC, e_] = l.useState(!0), [eb, ey] = l.useState(!1), [eT, eN] = l.useState([]), [eD, eR] = l.useState(v.A.getEffectiveConnectionSpeed()), [eL, eI] = l.useState(0), [ej, eM] = l.useState(0), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(null), eU = l.useRef(!0), eB = l.useRef(null), eF = l.useRef(null), eG = (0, S.Kr)(e => e.videoProgress[q.id] ?? S.yc, u.x), e$ = (0, S.Kr)(e => e.setVideoProgress), eY = (0, S.Kr)(e => e.muted), eK = (0, S.Kr)(e => e.volume), eH = (0, c.bG)([f.A], () => f.A.useReducedMotion), eW = (0, l.useRef)(null), eq = (0, l.useRef)(null), ez = l.useRef(!0), eX = q.userStatus?.completedAt != null, eJ = l.useMemo(() => q.config.features.includes(V.Li.FULL_EPISODE_VIDEO_QUEST), [q.config.features]), eZ = l.useRef(!1), [e0, e1] = l.useState(null), [e6, e2] = l.useState(!1), [e7, e4] = l.useState(!1), [e8, e9] = l.useState(!1), [e3, e5] = l.useState(null), te = eX ? eW.current?.duration ?? 0 : Math.max(eG.maxTimestampSec, eh.progressSeconds), tt = l.useMemo(() => (0, C.L)({
         quest: q,
         location: V.rE.VIDEO_MODAL
     }), [q]), tn = (0, d.g)(eX, eG, eh.progressSeconds), [tr, tl] = l.useState(w.oA.MD), ti = {
@@ -167,20 +167,20 @@ function $(e) {
     }, [$, ei, es, ea, eo, ec, eX, tD, tR, tt, eJ]), l.useEffect(() => {
         e0 === A.Yg.ANOTHER_MODAL_OPENED && $ === m.ip4.ENTERED && ec === w.Q6.PAUSED && eJ && ei && (tt.info("[QV] | Resuming full episode video after modal re-entered"), tD(w.Q6.PLAYING))
     }, [$, ec, tt, tD, e0, eJ, ei]);
-    let [tL, tI] = l.useState(!1), tM = l.useRef(null), tj = l.useRef(performance.now()), tw = l.useCallback(() => {
-        null != tM.current && clearTimeout(tM.current), ec !== w.Q6.PLAYING || (tM.current = setTimeout(() => {
+    let [tL, tI] = l.useState(!1), tj = l.useRef(null), tM = l.useRef(performance.now()), tw = l.useCallback(() => {
+        null != tj.current && clearTimeout(tj.current), ec !== w.Q6.PLAYING || (tj.current = setTimeout(() => {
             ec === w.Q6.PLAYING && tI(!0)
-        }, Math.max(0, 3e3 - (performance.now() - tj.current))))
+        }, Math.max(0, 3e3 - (performance.now() - tM.current))))
     }, [ec]), tk = () => {
-        tI(!1), tj.current = performance.now(), tw()
+        tI(!1), tM.current = performance.now(), tw()
     };
     l.useEffect(() => {
         if (ec !== w.Q6.PLAYING) {
-            tI(!1), null != tM.current && clearTimeout(tM.current);
+            tI(!1), null != tj.current && clearTimeout(tj.current);
             return
         }
         return tw(), () => {
-            null != tM.current && clearTimeout(tM.current)
+            null != tj.current && clearTimeout(tj.current)
         }
     }, [ec, tw]);
     let tO = !tL && (ef || em || ec === w.Q6.ENDED),
@@ -320,7 +320,7 @@ function $(e) {
         "data-testid": "discord-web-video-player-container",
         tabIndex: -1,
         onMouseEnter: () => {
-            ep(!0), tI(!1), tj.current = performance.now(), null != tM.current && clearTimeout(tM.current)
+            ep(!0), tI(!1), tM.current = performance.now(), null != tj.current && clearTimeout(tj.current)
         },
         onMouseLeave: () => {
             ep(!1), tI(!1)
@@ -361,7 +361,7 @@ function $(e) {
                         var l;
                         tt.info(`[QV] | handleTimeUpdate: capturing server time update: currentTime: ${eW.current.currentTime}`), (l = eW.current.currentTime) >= t && (eZ.current = !0), eI(l + V.aA + Math.random() * V.A6), tR(l)
                     }
-                    eW.current.currentTime >= eM && (ej(eW.current.currentTime + 1), (0, g.Gn)(q.id, eh.taskType, eW.current.currentTime), n(eW.current.currentTime)), e$(q.id, eW.current.currentTime, eW.current.duration), eg(eW.current.currentTime / eW.current.duration * 100)
+                    eW.current.currentTime >= ej && (eM(eW.current.currentTime + 1), (0, g.Gn)(q.id, eh.taskType, eW.current.currentTime), n(eW.current.currentTime)), e$(q.id, eW.current.currentTime, eW.current.duration), eg(eW.current.currentTime / eW.current.duration * 100)
                 },
                 onEnded: e => {
                     null != eW.current && (tR(eW.current.duration + 1), tt.info(`[QV] | handleEnded: sending progress update: ${eW.current.duration+1}`), e$(q.id, eW.current.duration, eW.current.duration)), tD(w.Q6.ENDED), ey(!1)
@@ -476,7 +476,7 @@ function $(e) {
                     style: {
                         marginBottom: (0, o.to)([tW, tX], (e, t) => `${e*ti[tr]+t}px`)
                     },
-                    children: (0, r.jsx)(j.y, {
+                    children: (0, r.jsx)(M.y, {
                         quest: q,
                         onClose: () => {
                             en(!1), th(A.uF.VIDEO_MODAL, y.Cy.TRANSCRIPT_DISABLE)
@@ -535,7 +535,7 @@ function $(e) {
                             output: [0, 1]
                         })], e => `translateY(-${e*t4}px)`)
                     },
-                    children: (0, r.jsx)(M.A, {
+                    children: (0, r.jsx)(j.A, {
                         percent: null != eQ ? eQ : ev,
                         animate: !0 !== ez.current && !eA,
                         interactionEnabled: t8,

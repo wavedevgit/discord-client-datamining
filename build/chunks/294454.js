@@ -1,26 +1,27 @@
 /** chunk id: 294454, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Be: () => o,
-    aU: () => r,
-    fO: () => l,
-    vK: () => u
+    aU: () => s,
+    fO: () => i,
+    vK: () => c
 });
 var a = n(627968);
 n(64700);
-var s = n(397927),
-    i = n(530912);
-let r = "forward-modal";
+var l = n(397927),
+    r = n(530912);
+let s = "forward-modal";
 
-function l(e) {
+function i(e) {
     let {
         message: t,
-        source: l,
+        source: i,
         initialSelectedDestinations: o = [],
-        forwardOptions: u,
+        forwardOptions: c,
         onRequestSent: d,
-        customSendHandler: c
+        customSendHandler: u
     } = e;
-    (0, i.pp)(t.channel_id, t.id, l), (0, s.mMO)(async () => {
+    (0, r.pp)(t.channel_id, t.id, i), (0, l.mMO)(async () => {
         let {
             ForwardModal: e
         } = await Promise.all([n.e("96758"), n.e("43622"), n.e("79996")]).then(n.bind(n, 911269));
@@ -28,35 +29,35 @@ function l(e) {
             ...n,
             message: t,
             initialSelectedDestinations: o,
-            forwardOptions: u,
+            forwardOptions: c,
             onRequestSent: d,
-            customSendHandler: c,
-            source: l
+            customSendHandler: u,
+            source: i
         })
     }, {
-        modalKey: r
+        modalKey: s
     })
 }
 
 function o() {
-    (0, s.OoC)(r)
+    (0, l.OoC)(s)
 }
 
-function u(e) {
+function c(e) {
     let {
         message: t,
-        failedDestinations: i,
-        forwardOptions: r
+        failedDestinations: r,
+        forwardOptions: s
     } = e;
-    (0, s.mMO)(async () => {
+    (0, l.mMO)(async () => {
         let {
             ForwardFailedAlertModal: e
         } = await n.e("66139").then(n.bind(n, 181622));
         return n => (0, a.jsx)(e, {
             ...n,
             message: t,
-            failedDestinations: i,
-            forwardOptions: r
+            failedDestinations: r,
+            forwardOptions: s
         })
     })
 }

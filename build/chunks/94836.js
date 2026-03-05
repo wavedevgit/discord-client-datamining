@@ -1,4 +1,5 @@
 /** chunk id: 94836, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => u,
     a: () => m
@@ -6,10 +7,10 @@ n.d(t, {
 var i = n(627968),
     l = n(64700),
     a = n(397927),
-    s = n(256905),
-    r = n(409626),
-    o = n(985018),
-    c = n(851822),
+    r = n(256905),
+    s = n(409626),
+    c = n(985018),
+    o = n(851822),
     d = n(351886);
 
 function u(e) {
@@ -27,7 +28,7 @@ function u(e) {
         })), ...e]
     }, [t.artwork, t.screenshots]), x = m.length > 2;
 
-    function g(e) {
+    function h(e) {
         if (null == u.current) return;
         let t = u.current.getScrollerState().scrollLeft;
         u.current.scrollTo({
@@ -37,10 +38,10 @@ function u(e) {
     }
     return 0 === m.length ? null : (0, i.jsxs)("div", {
         children: [(0, i.jsx)(a.Heading, {
-            className: c.bV,
+            className: o.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: o.intl.string(o.t.bNdK5x)
+            children: c.intl.string(c.t.bNdK5x)
         }), (0, i.jsxs)("div", {
             className: x ? d.DA : d.pZ,
             children: [(0, i.jsx)(a.zCo, {
@@ -54,7 +55,7 @@ function u(e) {
                         ringClassName: d.jR
                     },
                     onClick: () => {
-                        n(r.Ws.ClickImage), (0, s.R)({
+                        n(s.Ws.ClickImage), (0, r.R)({
                             items: m,
                             startingIndex: t,
                             shouldHideMediaOptions: !0,
@@ -64,7 +65,7 @@ function u(e) {
                     children: (0, i.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
-                        alt: o.intl.formatToPlainString(o.t.COYYrn, {
+                        alt: c.intl.formatToPlainString(c.t.COYYrn, {
                             game: name
                         })
                     })
@@ -75,7 +76,7 @@ function u(e) {
                     className: d.EJ
                 }), (0, i.jsx)(a.DUT, {
                     className: d.G9,
-                    onClick: () => g(-1),
+                    onClick: () => h(-1),
                     children: (0, i.jsx)(a.rJJ, {
                         className: d.UE,
                         color: "currentColor"
@@ -84,7 +85,7 @@ function u(e) {
                     className: d.Pj
                 }), (0, i.jsx)(a.DUT, {
                     className: d.G9,
-                    onClick: () => g(1),
+                    onClick: () => h(1),
                     children: (0, i.jsx)(a.EdP, {
                         className: d.UE,
                         color: "currentColor"
@@ -99,7 +100,7 @@ function m(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, c = l.useRef(null), u = l.useMemo(() => {
+    } = e, o = l.useRef(null), u = l.useMemo(() => {
         let e = t.artwork.map(e => ({
             url: e,
             type: "IMAGE"
@@ -111,9 +112,9 @@ function m(e) {
     }, [t.artwork, t.screenshots]), m = u.length > 2;
 
     function x(e) {
-        if (null == c.current) return;
-        let t = c.current.getScrollerState().scrollLeft;
-        c.current.scrollTo({
+        if (null == o.current) return;
+        let t = o.current.getScrollerState().scrollLeft;
+        o.current.scrollTo({
             to: t + 280 * e,
             animate: !0
         })
@@ -122,7 +123,7 @@ function m(e) {
         children: (0, i.jsxs)("div", {
             className: m ? d.DA : d.pZ,
             children: [(0, i.jsx)(a.zCo, {
-                ref: c,
+                ref: o,
                 className: d.ec,
                 orientation: "horizontal",
                 children: u.map((e, l) => (0, i.jsx)(a.DUT, {
@@ -132,7 +133,7 @@ function m(e) {
                         ringClassName: d.jR
                     },
                     onClick: () => {
-                        n(r.Ws.ClickImage), (0, s.R)({
+                        n(s.Ws.ClickImage), (0, r.R)({
                             items: u,
                             startingIndex: l,
                             shouldHideMediaOptions: !0,
@@ -142,7 +143,7 @@ function m(e) {
                     children: (0, i.jsx)("img", {
                         src: e.url,
                         className: d.Zm,
-                        alt: o.intl.formatToPlainString(o.t.COYYrn, {
+                        alt: c.intl.formatToPlainString(c.t.COYYrn, {
                             game: t.name
                         })
                     })

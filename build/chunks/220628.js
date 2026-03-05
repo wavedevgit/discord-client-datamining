@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(397927),
-    a = n(688810),
-    r = n(987144),
+    r = n(688810),
+    a = n(987144),
     o = n(71393),
     c = n(485970),
     d = n(181940),
@@ -22,7 +22,7 @@ function m(e, t, n) {
 function p(e, t) {
     let {
         analyticsLocations: n
-    } = (0, a.Ay)(), {
+    } = (0, r.Ay)(), {
         onToggle: l,
         isLoading: u,
         error: p
@@ -33,7 +33,7 @@ function p(e, t) {
                 {
                     shouldCloseAllModals: i = !0
                 } = e;
-            if (null != g && null != t) return _ < t.cost ? void(0, r.g)({
+            if (null != g && null != t) return _ < t.cost ? void(0, a.g)({
                 analyticsLocation: {
                     page: A.liQ.GUILD_POWERUPS_OVERVIEW,
                     section: A.JJy.GUILD_POWERUPS_OVERVIEW_CARD

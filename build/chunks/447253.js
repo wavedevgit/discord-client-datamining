@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(263063),
     d = n(71393),
@@ -19,9 +19,9 @@ function m(e) {
     let {
         guildId: t,
         animate: n
-    } = e, s = (0, r.bG)([d.A], () => d.A.getGuild(t), [t]), l = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
+    } = e, s = (0, a.bG)([d.A], () => d.A.getGuild(t), [t]), l = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return null == s ? (0, i.jsx)("div", {
-        className: a()(A.VL, A.zU),
+        className: r()(A.VL, A.zU),
         children: (0, i.jsx)(o.EpV, {
             color: "currentColor"
         })
@@ -43,7 +43,7 @@ function p(e) {
         sorting: s
     } = e, {
         children: l
-    } = t, r = n && s, c = (0, i.jsx)("div", {
+    } = t, a = n && s, c = (0, i.jsx)("div", {
         className: A.hJ,
         children: (0, i.jsx)("div", {
             className: A.Eh,
@@ -64,11 +64,11 @@ function p(e) {
     });
     return (0, i.jsxs)("div", {
         "aria-hidden": !0,
-        className: a()({
-            [A.NG]: r,
-            [A.yd]: !r
+        className: r()({
+            [A.NG]: a,
+            [A.yd]: !a
         }),
-        children: [!r && c, d]
+        children: [!a && c, d]
     })
 }
 
@@ -77,8 +77,8 @@ function g(e) {
         folderNode: t,
         expanded: n,
         sorting: l,
-        mediaState: a,
-        mentionCount: r = 0,
+        mediaState: r,
+        mentionCount: a = 0,
         isMentionLowImportance: c,
         tooltipName: d,
         folderGroupId: m,
@@ -97,7 +97,7 @@ function g(e) {
         l || T(!0), x?.(!0)
     }, [l, x]), y = s.useCallback(() => {
         l || T(!1), x?.(!1)
-    }, [l, x]), j = n || null == a ? null : (0, u.oi)(a), R = !n && r > 0 ? (0, u.wN)(r, c ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
+    }, [l, x]), j = n || null == r ? null : (0, u.oi)(r), R = !n && a > 0 ? (0, u.wN)(a, c ? o.LU0.colors.BACKGROUND_MOD_STRONG.css : o.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) : null;
     return (0, i.jsx)(o.vN3, {
         children: (0, i.jsxs)(o.DUT, {
             className: A.H3,
@@ -119,7 +119,7 @@ function g(e) {
             children: [(0, i.jsx)(o.AC4, {
                 children: h.intl.formatToPlainString(h.t["90/DwM"], {
                     folderName: d,
-                    mentions: r
+                    mentions: a
                 })
             }), (0, i.jsx)(o.Qk9, {
                 "aria-hidden": !0,
@@ -127,7 +127,7 @@ function g(e) {
                 upperBadge: j,
                 lowerBadge: R,
                 lowerBadgeSize: {
-                    width: (0, o.o6S)(r)
+                    width: (0, o.o6S)(a)
                 },
                 children: (0, i.jsx)("div", {
                     className: A.vA,

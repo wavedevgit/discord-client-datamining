@@ -1,21 +1,22 @@
 /** chunk id: 422069, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => o
+    A: () => c
 });
 var i = n(311907),
     l = n(73153);
 let a = {},
-    s = {};
-class r extends i.Ay.Store {
+    r = {};
+class s extends i.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
         return a[e]
     }
     getSimilarGamesError(e) {
-        return s[e]
+        return r[e]
     }
 }
-let o = new r(l.h, {
+let c = new s(l.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
@@ -28,6 +29,6 @@ let o = new r(l.h, {
             applicationId: t,
             error: n
         } = e;
-        s[t] = n
+        r[t] = n
     }
 })

@@ -1,57 +1,57 @@
 /** chunk id: 914887, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    a: () => a
+    a: () => s
 });
-var i = n(64700),
-    l = n(954571),
-    r = n(652215);
+var a = n(64700),
+    r = n(954571),
+    l = n(652215);
 
-function a(e, t, n, a) {
-    let s = i.useRef(null),
-        o = i.useRef(t),
-        d = i.useRef({
+function s(e, t, n, s) {
+    let i = a.useRef(null),
+        o = a.useRef(t),
+        u = a.useRef({
             positionInSection: n,
-            analyticsLocations: a
+            analyticsLocations: s
         });
-    i.useEffect(() => {
+    a.useEffect(() => {
         o.current = t
     }, [t]);
-    let c = i.useCallback(() => {
+    let c = a.useCallback(() => {
             let {
                 sessionId: t,
                 guildId: n,
-                pageIndex: i,
-                pageTitle: a,
-                pageSection: s,
+                pageIndex: a,
+                pageTitle: s,
+                pageSection: i,
                 pageSectionTitle: c,
-                isUserGuildMember: u,
+                isUserGuildMember: d,
                 pageHasLeaderboard: _
             } = o.current, {
                 positionInSection: m,
-                analyticsLocations: h
-            } = d.current;
-            l.default.track(r.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+                analyticsLocations: f
+            } = u.current;
+            r.default.track(l.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
                 slayer_storefront_session_id: t,
                 sku_id: e,
                 guild_id: n,
-                page_index: i,
-                page_title: a,
-                page_section: s,
+                page_index: a,
+                page_title: s,
+                page_section: i,
                 page_section_title: c,
                 position_in_section: m,
-                is_user_guild_member: u,
+                is_user_guild_member: d,
                 page_has_leaderboard: _,
-                location_stack: h
+                location_stack: f
             })
         }, [e]),
-        u = i.useCallback(e => {
-            e ? null === s.current && (s.current = window.setTimeout(() => {
-                c(), s.current = null
-            }, 1e3)) : null !== s.current && (clearTimeout(s.current), s.current = null)
+        d = a.useCallback(e => {
+            e ? null === i.current && (i.current = window.setTimeout(() => {
+                c(), i.current = null
+            }, 1e3)) : null !== i.current && (clearTimeout(i.current), i.current = null)
         }, [c]);
-    return i.useEffect(() => () => {
-        null !== s.current && (clearTimeout(s.current), s.current = null)
+    return a.useEffect(() => () => {
+        null !== i.current && (clearTimeout(i.current), i.current = null)
     }, []), {
-        handleCardVisibilityChange: u
+        handleCardVisibilityChange: d
     }
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(565645),
+    r = n(397927),
+    a = n(565645),
     o = n(730134),
     c = n(688810),
     d = n(587895),
@@ -47,8 +47,8 @@ function G(e) {
         className: L.PI,
         children: [(0, i.jsx)(o.A, {
             user: s,
-            size: a._3J.SIZE_24
-        }), (0, i.jsx)(a.Text, {
+            size: r._3J.SIZE_24
+        }), (0, i.jsx)(r.Text, {
             className: L.Bp,
             variant: "text-sm/normal",
             lineClamp: 2,
@@ -67,7 +67,7 @@ function U(e) {
     let n = h.A.parse(t);
     return (0, i.jsx)("div", {
         className: L.CD,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             lineClamp: 2,
             children: n
@@ -85,7 +85,7 @@ function P(e) {
             className: L.kv,
             alt: "",
             src: n
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             className: L.mc,
             variant: "text-xs/bold",
             color: "text-default",
@@ -109,7 +109,7 @@ let k = s.memo(function(e) {
         } = e, {
             analyticsLocations: o
         } = (0, c.Ay)(), d = (0, T.t)(t, l), A = s.useCallback(async () => {
-            if (d || (0, E.R7)(t), null != t.item_enum && t.item_enum === I.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
+            if (d || (0, E.R7)(t), null != t.item_enum && t.item_enum === I.r_.FIND_FRIENDS) return void(0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("67248").then(n.bind(n, 911539));
@@ -157,14 +157,14 @@ let k = s.memo(function(e) {
                 emoji_id: S,
                 emoji_name: O
             } = t,
-            M = null != S || null != O ? (0, i.jsx)(r.A, {
+            M = null != S || null != O ? (0, i.jsx)(a.A, {
                 className: L.Zg,
                 emojiId: S,
                 emojiName: O
             }) : null;
         return (0, i.jsxs)("div", {
             className: L.nM,
-            children: [(0, i.jsxs)(a.sqX, {
+            children: [(0, i.jsxs)(r.sqX, {
                 className: L.u4,
                 focusProps: {
                     offset: 4
@@ -179,7 +179,7 @@ let k = s.memo(function(e) {
                     className: L.rf,
                     children: ["lifecycle_item" === t.type && null != t.item_enum && (0, i.jsx)(P, {
                         item: t
-                    }), (0, i.jsxs)(a.Text, {
+                    }), (0, i.jsxs)(r.Text, {
                         variant: "text-md/normal",
                         color: d ? "text-muted" : "text-default",
                         children: ["string" != typeof _ ? _ : h.A.parse(_), M]
@@ -187,7 +187,7 @@ let k = s.memo(function(e) {
                         item: t
                     }) : null, null != t.callout ? (0, i.jsx)(U, {
                         item: t
-                    }) : null, (0, i.jsx)(a.Text, {
+                    }) : null, (0, i.jsx)(r.Text, {
                         variant: "text-xs/medium",
                         color: d ? "text-muted" : "text-default",
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))

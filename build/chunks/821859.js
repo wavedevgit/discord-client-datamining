@@ -42,8 +42,8 @@ function E(e) {
         handleMouseMove: R,
         handleKeyDown: L,
         hoveredAtX: I,
-        maxSeekableX: M,
-        isHovering: j,
+        maxSeekableX: j,
+        isHovering: M,
         handleClick: w,
         ariaProps: k
     } = (0, m.A)({
@@ -103,14 +103,14 @@ function E(e) {
                     backgroundColor: h,
                     timelineWidth: U,
                     preloadedBuffers: x,
-                    maxSeekableX: M,
+                    maxSeekableX: j,
                     interactionEnabled: E,
                     useNewStyles: !0,
                     progressFillClassName: p.UA,
                     glowClassName: p.pN,
                     showGlow: v !== o.Q6.ENDED
                 }, t))
-            }), j && null != O && t && (0, r.jsx)(c.Text, {
+            }), M && null != O && t && (0, r.jsx)(c.Text, {
                 className: p.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
@@ -118,7 +118,7 @@ function E(e) {
                     left: null != I ? `${I}px` : "auto"
                 },
                 children: O
-            }), j && E && null != P && (0, r.jsx)(a.animated.div, {
+            }), M && E && null != P && (0, r.jsx)(a.animated.div, {
                 className: p.Ub,
                 style: {
                     left: Q.to(e => `${e}px`)

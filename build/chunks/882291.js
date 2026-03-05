@@ -42,8 +42,8 @@ function g(e) {
         "data-testid": L
     } = e, {
         quest: I,
-        sourceQuestContent: M,
-        useNewProgressBarStyling: j
+        sourceQuestContent: j,
+        useNewProgressBarStyling: M
     } = l.useContext(m.VideoQuestModalContext), {
         contRef: w,
         boundingRect: k,
@@ -81,7 +81,7 @@ function g(e) {
         timelineRect: k,
         videoDuration: b,
         targetSec: t
-    }), Z = l.useMemo(() => q(K), [K, q]), ee = l.useMemo(() => q(U), [U, q]), et = !S && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = l.useMemo(() => q(K), [K, q]), ee = l.useMemo(() => q(U), [U, q]), et = !S && M, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -110,8 +110,8 @@ function g(e) {
         ref: w,
         "data-testid": L,
         style: {
-            "--custom-timeline-height": `${j||F?4:2}px`,
-            "--custom-initial-timeline-height": `${j?4:2}px`
+            "--custom-timeline-height": `${M||F?4:2}px`,
+            "--custom-initial-timeline-height": `${M?4:2}px`
         },
         children: (0, r.jsxs)(u.DUT, {
             className: s()(v.KF, {
@@ -138,7 +138,7 @@ function g(e) {
                     preloadedBuffers: _,
                     maxSeekableX: B,
                     interactionEnabled: A,
-                    useNewStyles: j,
+                    useNewStyles: M,
                     progressFillClassName: et ? h.QR : h.UA,
                     glowClassName: et ? h.Um : h.U5
                 }, t))
@@ -151,7 +151,7 @@ function g(e) {
                     isAnimated: n,
                     expansionSpring: J,
                     quest: I,
-                    sourceQuestContent: M,
+                    sourceQuestContent: j,
                     onMouseEnter: () => z(e.index),
                     onMouseLeave: () => z(null),
                     onClick: null != N ? () => N(l) : void 0

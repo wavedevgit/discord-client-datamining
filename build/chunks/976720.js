@@ -1,15 +1,15 @@
 /** chunk id: 976720, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d,
-    Y: () => u
+    A: () => d
 });
 var i = n(627968),
     l = n(64700),
     a = n(158954),
-    s = n(44724),
-    r = n(409626),
-    o = n(652215),
-    c = n(985018);
+    r = n(44724),
+    s = n(409626),
+    c = n(652215),
+    o = n(985018);
 
 function d(e) {
     let {
@@ -17,41 +17,17 @@ function d(e) {
         trackClick: n,
         closeModal: d
     } = e, u = l.useCallback(() => {
-        t?.guild != null && (0, s.X)({
+        t?.guild != null && (0, r.X)({
             guildId: t.guild.id
         })
     }, [t]), m = l.useCallback(() => {
-        t?.guild != null && ((0, s.default)({
+        t?.guild != null && ((0, r.default)({
             invite: t
-        }), d(), n(r.Ws.GameShop))
+        }), d(), n(s.Ws.GameShop))
     }, [d, t, n]);
-    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
+    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
         variant: "primary",
-        text: c.intl.string(c.t.v8UpgE),
-        icon: a.U1X,
-        onClick: m,
-        onMouseDown: u,
-        fullWidth: !0
-    }) : null
-}
-
-function u(e) {
-    let {
-        invite: t,
-        trackClick: n,
-        closeModal: d
-    } = e, u = l.useCallback(() => {
-        t?.guild != null && (0, s.X)({
-            guildId: t.guild.id
-        })
-    }, [t]), m = l.useCallback(() => {
-        t?.guild != null && ((0, s.default)({
-            invite: t
-        }), d(), n(r.Ws.GameShop))
-    }, [d, t, n]);
-    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, i.jsx)(a.$nd, {
-        variant: "primary",
-        text: c.intl.string(c.t.v8UpgE),
+        text: o.intl.string(o.t.v8UpgE),
         icon: a.U1X,
         onClick: m,
         onMouseDown: u,

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(837381),
+    r = n.n(l),
+    a = n(837381),
     o = n(311907),
     c = n(554146),
     d = n(342494),
@@ -49,7 +49,7 @@ let V = {
 };
 
 function B() {
-    let e, t, l, B, H, F, K, W, Y, z, q, X, J = (0, r.Vd)("favorites"),
+    let e, t, l, B, H, F, K, W, Y, z, q, X, J = (0, a.Vd)("favorites"),
         {
             favoriteAdded: Q,
             clearFavoriteAdded: $
@@ -65,9 +65,9 @@ function B() {
         })),
         es = (0, o.bG)([S.A], () => S.A.getChannelId(G.YYv)),
         el = (0, o.bG)([b.A], () => b.A.getChannel(es)),
-        ea = (0, I.A)(e => e.guildId) === G.YYv,
+        er = (0, I.A)(e => e.guildId) === G.YYv,
         {
-            badge: er,
+            badge: ea,
             unread: eo
         } = (0, L.A)(ei),
         ec = (t = null != (e = (0, o.bG)([S.A], () => S.A.getVoiceChannelId())) && null != ei[e], l = (0, o.bG)([N.A], () => {
@@ -87,7 +87,7 @@ function B() {
             isCurrentUserConnected: t,
             activity: X
         })),
-        ed = er > 0 ? (0, C.w)(er) : null,
+        ed = ea > 0 ? (0, C.w)(ea) : null,
         eu = (0, j.m)({
             location: "FavoritesButton"
         }).enabled,
@@ -110,7 +110,7 @@ function B() {
     }, [$]);
     return (0, i.jsxs)(f.c, {
         children: [(0, i.jsx)(_.A, {
-            selected: ea,
+            selected: er,
             hovered: ee,
             unread: eo && !en,
             className: k.Io
@@ -125,14 +125,14 @@ function B() {
                         ...J,
                         ariaLabel: w.intl.formatToPlainString(w.t["/uzRss"], {
                             guildName: w.intl.string(w.t.wMWyci),
-                            mentions: er
+                            mentions: ea
                         }),
-                        "aria-selected": ea,
+                        "aria-selected": er,
                         to: {
                             pathname: G.BVt.CHANNEL(G.YYv, es),
                             state: V
                         },
-                        selected: ea || ee,
+                        selected: er || ee,
                         onMouseEnter: () => et(!0),
                         onMouseLeave: () => et(!1),
                         onMouseDown: function() {
@@ -154,7 +154,7 @@ function B() {
                         },
                         children: (0, i.jsx)("div", {
                             ref: Z,
-                            className: a()(k.hN, {
+                            className: r()(k.hN, {
                                 [k.b1]: Q
                             }),
                             children: (0, i.jsx)(u.Gg5, {

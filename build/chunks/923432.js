@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(380278),
+    r = n.n(l),
+    a = n(380278),
     o = n(311907),
     c = n(397927),
     d = n(250719),
@@ -26,16 +26,16 @@ function f(e) {
     let {
         guildChannels: t,
         jumpToVoiceChannels: n
-    } = e, l = t.getCategoryFromSection(t.voiceChannelsSectionNumber), r = (0, d.A)(t.id), o = s.useCallback(e => {
+    } = e, l = t.getCategoryFromSection(t.voiceChannelsSectionNumber), a = (0, d.A)(t.id), o = s.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), n()
     }, [n]), h = l?.getChannelRecords() ?? [], m = (0, A.fK)({
         channels: h,
         selectedChannelId: null,
         selectedVoiceChannelId: null,
-        voiceStates: r
+        voiceStates: a
     });
     return (0, i.jsxs)(c.DUT, {
-        className: a()(g.M0, g.OF),
+        className: r()(g.M0, g.OF),
         onClick: o,
         children: [(0, i.jsx)(c.HKD, {
             size: "custom",
@@ -83,16 +83,16 @@ function x(e) {
         e.preventDefault(), e.stopPropagation(), null != N && u(N)
     }, [u, N]);
     return (0, i.jsx)("div", {
-        className: a()(g.kL, {
+        className: r()(g.kL, {
             [g.Mn]: "top" === t,
             [g.sQ]: "bottom" === t
         }),
-        children: (0, i.jsx)(r.animated.div, {
+        children: (0, i.jsx)(a.animated.div, {
             className: g.pK,
             style: S,
             "aria-hidden": b,
             children: E === m.k.HIDDEN ? (0, i.jsx)("div", {
-                className: a()(g.M0, g.Te)
+                className: r()(g.M0, g.Te)
             }) : E === m.k.UNREAD ? (0, i.jsxs)(c.DUT, {
                 className: g.M0,
                 onClick: T,
@@ -115,7 +115,7 @@ function x(e) {
                     children: p.intl.string(p.t.FCRiT3)
                 })]
             }) : E === m.k.MENTIONS ? (0, i.jsx)(c.DUT, {
-                className: a()(g.M0, g.vU),
+                className: r()(g.M0, g.vU),
                 onClick: T,
                 children: (0, i.jsx)(c.Text, {
                     variant: "text-xs/semibold",

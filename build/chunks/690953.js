@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     l = n(397927),
-    a = n(882997),
-    r = n(731474),
+    r = n(882997),
+    a = n(731474),
     o = n(383501),
     c = n(977997),
     d = n(458829),
@@ -22,8 +22,8 @@ function g(e) {
     let t = (0, s.bG)([o.A], () => o.A.getChannelId() === e.id),
         g = (0, u.A)(),
         _ = g?.channelId === e.id,
-        f = (0, r.J)(e) && !e.isPrivate(),
-        x = (0, r.A)(e),
+        f = (0, a.J)(e) && !e.isPrivate(),
+        x = (0, a.A)(e),
         C = !(0, s.bG)([c.A], () => c.A.isInChannel(e.id)) && x || f,
         E = (0, h.A)();
     if (!_ && 0 === E.length) return null;
@@ -41,13 +41,13 @@ function g(e) {
         },
         disabled: C
     }) : E.map(s => {
-        var r, o;
+        var a, o;
         let c = (0, A.A)(s.type);
         return (0, i.jsx)(l.Drp, {
             id: `transfer-${s.type}-${s.id}`,
-            label: (r = s.type, o = t, r === m.fg2.XBOX ? o ? p.intl.string(p.t["qVE/VF"]) : p.intl.string(p.t.E8euSk) : r === m.fg2.PLAYSTATION ? o ? p.intl.string(p.t.vzfxmY) : p.intl.string(p.t.QxEYDj) : r === m.fg2.PLAYSTATION_STAGING ? o ? p.intl.string(p.t.BDiXtV) : p.intl.string(p.t["bhdB9+"]) : void 0),
+            label: (a = s.type, o = t, a === m.fg2.XBOX ? o ? p.intl.string(p.t["qVE/VF"]) : p.intl.string(p.t.E8euSk) : a === m.fg2.PLAYSTATION ? o ? p.intl.string(p.t.vzfxmY) : p.intl.string(p.t.QxEYDj) : a === m.fg2.PLAYSTATION_STAGING ? o ? p.intl.string(p.t.BDiXtV) : p.intl.string(p.t["bhdB9+"]) : void 0),
             action: () => {
-                !s.twoWayLink || s.revoked ? (0, a.A)({
+                !s.twoWayLink || s.revoked ? (0, r.A)({
                     platformType: s.type,
                     location: "Console Transfer Item"
                 }) : s.type === m.fg2.XBOX ? (0, l.mMO)(async () => {

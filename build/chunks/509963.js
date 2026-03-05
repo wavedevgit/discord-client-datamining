@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(615300),
+    r = n.n(l),
+    a = n(615300),
     o = n(311907),
     c = n(827734),
     d = n(73939),
@@ -85,13 +85,13 @@ class b extends s.PureComponent {
         } = this.props, {
             stage: s,
             progress: l,
-            total: a,
-            type: r
+            total: r,
+            type: a
         } = n;
-        if (null == l || null == a || null == s) return null;
+        if (null == l || null == r || null == s) return null;
         let o = e[e.length - 1] / t * 1e3,
-            c = 0 !== o ? Math.max(1, (a - l) / o) : null,
-            d = N[r],
+            c = 0 !== o ? Math.max(1, (r - l) / o) : null,
+            d = N[a],
             u = null != d ? Object.keys(d) : [],
             {
                 unit: h,
@@ -128,19 +128,19 @@ class S extends s.PureComponent {
         strokeSize: h.a3E.StrokeSizes.MEDIUM
     };
     state = {
-        animationScale: new r.A.Value(0)
+        animationScale: new a.A.Value(0)
     };
     componentWillAppear(e) {
         this.state.animationScale.setValue(1), e()
     }
     componentWillEnter(e) {
-        r.A.spring(this.state.animationScale, {
+        a.A.spring(this.state.animationScale, {
             toValue: 1,
             duration: 200
         }).start(e)
     }
     componentWillLeave(e) {
-        r.A.spring(this.state.animationScale, {
+        a.A.spring(this.state.animationScale, {
             toValue: 0,
             duration: 200
         }).start(e)
@@ -169,13 +169,13 @@ class S extends s.PureComponent {
             isPaused: t,
             className: n
         } = this.props;
-        return (0, i.jsx)(r.A.div, {
+        return (0, i.jsx)(a.A.div, {
             style: {
                 transform: [{
                     scale: this.state.animationScale
                 }]
             },
-            className: a()(n, I.L),
+            className: r()(n, I.L),
             onClick: this.handleOnClick,
             children: (0, i.jsx)(u.m, {
                 __unsupportedReactNodeAsText: this.getTooltipText(),

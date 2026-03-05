@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(311907),
     s = n(570209),
     l = n(457699),
-    a = n(352505),
-    r = n(465364),
+    r = n(352505),
+    a = n(465364),
     o = n(383233),
     c = n(994500),
     d = n(517381),
@@ -18,16 +18,16 @@ let A = [];
 function m(e) {
     let {
         searchContext: t
-    } = e, n = a.m.useExperiment({
+    } = e, n = r.m.useExperiment({
         location: "useMessageRenderedContent"
     }).enabled, m = (0, i.bG)([h.A, d.A, l.A], () => {
         let e = (0, u.bS)(t),
             i = h.A.getSearchResultsQuery(e),
-            a = d.A.getMessages(e);
-        if (null == i || null == a || 0 === a.length) return A;
+            r = d.A.getMessages(e);
+        if (null == i || null == r || 0 === r.length) return A;
         let c = (0, s.wG)((0, u.dX)(i) ?? ""),
             m = [];
-        return a.forEach(e => {
+        return r.forEach(e => {
             let t = new o.Ay(e);
             t = (t = function(e, t) {
                 let [n] = t, i = n.getMessage(e.id, e.channel_id);
@@ -35,7 +35,7 @@ function m(e) {
                     attachments: i.attachments,
                     embeds: i.embeds
                 })), e
-            }(t, [l.A])).set("customRenderedContent", (0, r.Ay)(t, {
+            }(t, [l.A])).set("customRenderedContent", (0, a.Ay)(t, {
                 postProcessor: c,
                 allowHeading: !0,
                 allowList: !0,

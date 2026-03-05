@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(451988),
     c = n(990078),
     d = n(397927),
@@ -80,17 +80,17 @@ class ee extends K.Ay {
             unverifiedAccount: i,
             needSubscriptionToAccess: s,
             enableOpenTIVForPing: l,
-            mentionCount: a
+            mentionCount: r
         } = this.props;
         i && this.setState({
             shouldShowGuildVerificationPopout: !0
         });
-        let r = l && a > 0;
-        r && u.A.updateChatOpen(n.id, !0), I.A.handleVoiceConnect({
+        let a = l && r > 0;
+        a && u.A.updateChatOpen(n.id, !0), I.A.handleVoiceConnect({
             channel: n,
             connected: t,
             needSubscriptionToAccess: s,
-            routeDirectlyToChannel: r,
+            routeDirectlyToChannel: a,
             locked: e
         })
     };
@@ -223,9 +223,9 @@ class ee extends K.Ay {
             sorting: n,
             isUserOver: s,
             selected: l,
-            guild: a
+            guild: r
         } = this.props, {
-            shouldShowActivities: r,
+            shouldShowActivities: a,
             shouldShowGuildVerificationPopout: o
         } = this.state, {
             enableUserHoverActivities: c
@@ -238,11 +238,11 @@ class ee extends K.Ay {
             guildId: e.guild_id,
             closePopout: this.closeGuildVerificationPopout
         });
-        if (!c && r && !n && !s) {
-            let n = D.JG.getSetting().includes(a.id);
+        if (!c && a && !n && !s) {
+            let n = D.JG.getSetting().includes(r.id);
             return (0, i.jsx)(z.A, {
                 onAction: this.closePopout,
-                guild: a,
+                guild: r,
                 channel: e,
                 voiceStates: t,
                 isChannelSelected: l,
@@ -261,7 +261,7 @@ class ee extends K.Ay {
             asContainer: !0,
             text: $.intl.string($.t.ZXxLQg),
             children: (0, i.jsx)(d.DUT, {
-                className: a()(Z.Xs, n ? Z.Tf : null),
+                className: r()(Z.Xs, n ? Z.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), (0, L.iN)(e.id)
                 },
@@ -296,7 +296,7 @@ class ee extends K.Ay {
             connected: n,
             unread: s,
             resolvedUnreadSetting: l,
-            mentionCount: r,
+            mentionCount: a,
             locked: o,
             sorting: u,
             isUserOver: h,
@@ -324,7 +324,7 @@ class ee extends K.Ay {
             location: "VoiceChannel"
         }), L = y || j, D = this.getVoiceStatesCount(), G = (0, i.jsxs)("li", {
             ref: this.ref,
-            className: a()(this.getModeClass(), {
+            className: r()(this.getModeClass(), {
                 [Z.r9]: this.isDisabled(),
                 [Z.fy]: y
             }),
@@ -350,7 +350,7 @@ class ee extends K.Ay {
                         children: (0, i.jsxs)(Y.Ay, {
                             ref: this.channelItemRef,
                             className: Z.Ki,
-                            iconClassName: a()({
+                            iconClassName: r()({
                                 [Z.Gj]: I || v || L
                             }),
                             hasActiveEvent: I,
@@ -359,7 +359,7 @@ class ee extends K.Ay {
                             connected: n,
                             unread: n ? s : void 0,
                             resolvedUnreadSetting: l,
-                            mentionCount: r,
+                            mentionCount: a,
                             locked: o,
                             subtitle: this.renderSubtitle(),
                             onClick: () => {
@@ -373,7 +373,7 @@ class ee extends K.Ay {
                             "aria-label": (0, x.Ay)({
                                 channel: e,
                                 unread: s,
-                                mentionCount: r,
+                                mentionCount: a,
                                 userCount: D,
                                 embeddedActivitiesCount: N.length,
                                 isSubscriptionGated: b
@@ -410,13 +410,13 @@ function en(e) {
         channel: n,
         disableSorting: s,
         isFavoriteCategory: l,
-        selected: a,
+        selected: r,
         collapsed: o,
         voiceStates: c
-    } = e, d = (0, r.cf)([k.Ay], () => ({
+    } = e, d = (0, a.cf)([k.Ay], () => ({
         unread: k.Ay.hasUnread(n.id),
         mentionCount: k.Ay.getMentionCount(n.id)
-    })), u = (0, r.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), h = (0, r.cf)([G.A, P.A, w.A], () => {
+    })), u = (0, a.bG)([V.Ay], () => V.Ay.resolveUnreadSetting(n)), h = (0, a.cf)([G.A, P.A, w.A], () => {
         let e = G.A.getChannel(n.parent_id),
             i = P.A.getCheck(n.guild_id);
         return {
@@ -427,10 +427,10 @@ function en(e) {
             bypassLimit: w.A.can(J.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), A = (0, r.bG)([B.A], () => B.A.hasVideo(n.id)), m = (0, p.Ay)(n), g = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, r.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
+    }), A = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), m = (0, p.Ay)(n), g = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
-    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, r.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
         enableHangStatus: L,
         showEmptyChannelTopic: M
     } = (0, R.$j)({
@@ -448,7 +448,7 @@ function en(e) {
         enableWaveformIcon: H
     } = (0, _.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = U && F, Y = H && F, z = (0, W.A)({
         channel: n,
-        isChannelSelected: a,
+        isChannelSelected: r,
         isChannelCollapsed: o,
         voiceStates: c,
         isSubscriptionGated: I,

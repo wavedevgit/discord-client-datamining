@@ -1,57 +1,58 @@
 /** chunk id: 942528, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => _
+    A: () => v
 });
 var i = n(627968),
     l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    r = n(311907),
-    o = n(397927),
-    c = n(734057),
+    r = n.n(a),
+    s = n(311907),
+    c = n(397927),
+    o = n(734057),
     d = n(309010),
     u = n(287809),
     m = n(562153),
     x = n(420706),
-    g = n(322789),
-    h = n(506326),
-    f = n(985018),
-    j = n(505502),
+    h = n(322789),
+    f = n(506326),
+    g = n(985018),
+    _ = n(505502),
     p = n(851822);
-let _ = e => {
+let v = e => {
     let {
         entry: t,
         onClose: n,
         onReaction: a,
-        onRequestOpen: _,
+        onRequestOpen: v,
         disableActivityProfileLinks: I,
-        customCTA: v,
-        popoutClassname: E,
-        popoutPosition: A = "right"
-    } = e, N = l.useRef(null), C = (0, r.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), T = (0, r.bG)([u.default], () => u.default.getUser(t.author_id)), {
+        customCTA: j,
+        popoutClassname: A,
+        popoutPosition: E = "right"
+    } = e, b = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: S,
-        avatar: b
+        avatar: T
     } = l.useMemo(() => {
-        let e = T?.getAvatarURL(C?.guild_id, 48, !1);
+        let e = C?.getAvatarURL(N?.guild_id, 48, !1);
         return {
-            nick: m.Ay.getName(C?.guild_id, C?.id, T),
+            nick: m.Ay.getName(N?.guild_id, N?.id, C),
             avatar: e
         }
-    }, [T, C]);
-    return null == T ? null : (0, i.jsx)(o.YNO, {
-        targetElementRef: N,
-        position: A,
+    }, [C, N]);
+    return null == C ? null : (0, i.jsx)(c.YNO, {
+        targetElementRef: b,
+        position: E,
         renderPopout: e => {
             let {
                 closePopout: l,
-                updatePosition: s
+                updatePosition: r
             } = e;
             return (0, i.jsx)("div", {
-                className: E,
+                className: A,
                 children: (0, i.jsx)(x.Oo, {
                     entry: t,
                     closePopout: l,
-                    updatePopoutPosition: s,
+                    updatePopoutPosition: r,
                     onReaction: () => {
                         a?.(), n(), l()
                     },
@@ -63,13 +64,13 @@ let _ = e => {
         },
         positionKey: `'content-entry-${t.id}`,
         onRequestOpen: () => {
-            _?.()
+            v?.()
         },
-        children: e => (0, i.jsx)(o.DUT, {
-            innerRef: N,
+        children: e => (0, i.jsx)(c.DUT, {
+            innerRef: b,
             ...e,
-            className: j.GA,
-            children: (0, i.jsx)(o.vN3, {
+            className: _.GA,
+            children: (0, i.jsx)(c.vN3, {
                 offset: {
                     top: 4,
                     bottom: 4,
@@ -78,30 +79,30 @@ let _ = e => {
                 },
                 children: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("img", {
-                        className: j.my,
-                        src: b,
-                        alt: f.intl.formatToPlainString(f.t.IzVXxY, {
+                        className: _.my,
+                        src: T,
+                        alt: g.intl.formatToPlainString(g.t.IzVXxY, {
                             userName: S
                         })
                     }), (0, i.jsx)("div", {
-                        className: j.Su,
+                        className: _.Su,
                         children: (0, i.jsxs)("div", {
-                            className: s()(p.fi, p.Kt),
-                            children: [(0, i.jsx)(o.Text, {
+                            className: r()(p.fi, p.Kt),
+                            children: [(0, i.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: S
-                            }), (0, i.jsx)(h.mG, {
-                                location: h.N5.APP_LAUNCHER,
-                                children: g.n.map((e, n) => (0, i.jsx)(e, {
+                            }), (0, i.jsx)(f.mG, {
+                                location: f.N5.APP_LAUNCHER,
+                                children: h.n.map((e, n) => (0, i.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]
                         })
-                    }), null != v ? v : (0, i.jsx)("div", {
-                        className: j.Br,
-                        children: (0, i.jsx)(o.W4J, {
+                    }), null != j ? j : (0, i.jsx)("div", {
+                        className: _.Br,
+                        children: (0, i.jsx)(c.W4J, {
                             size: "sm"
                         })
                     })]

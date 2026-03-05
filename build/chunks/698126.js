@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(308528),
     c = n(442433),
     d = n(676002),
@@ -63,9 +63,9 @@ class I extends g.Ay {
             connectChannelDropTarget: n,
             connectChannelDragSource: s,
             connectDragPreview: l,
-            canReorderChannel: r
+            canReorderChannel: a
         } = this.props, o = (0, i.jsx)("li", {
-            className: a()(this.getClassName(), {
+            className: r()(this.getClassName(), {
                 [C.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
@@ -76,7 +76,7 @@ class I extends g.Ay {
                 onClick: this.handleClick,
                 onMouseDown: E,
                 onContextMenu: this.handleContextMenu,
-                connectDragPreview: r ? l : null,
+                connectDragPreview: a ? l : null,
                 "aria-label": (0, u.Ay)({
                     channel: e
                 }),
@@ -84,7 +84,7 @@ class I extends g.Ay {
                 children: [this.renderInviteButton(), this.renderEditButton()]
             })
         });
-        return r ? n(s(o)) : o
+        return a ? n(s(o)) : o
     }
 }
 let N = (0, d.a)(I),
@@ -93,7 +93,7 @@ let N = (0, d.a)(I),
             channel: t,
             guild: n,
             disableSorting: s
-        } = e, l = (0, r.cf)([A.A, p.A], () => {
+        } = e, l = (0, a.cf)([A.A, p.A], () => {
             let e = A.A.getChannel(t.parent_id);
             return {
                 canManageChannel: p.A.can(f.xBc.MANAGE_CHANNELS, t),

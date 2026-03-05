@@ -1,7 +1,7 @@
 /** chunk id: 717415, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
     VideoQuestConfigContext: () => w,
-    VideoQuestModalContext: () => j,
+    VideoQuestModalContext: () => M,
     default: () => O
 });
 var r = n(627968),
@@ -33,8 +33,8 @@ var r = n(627968),
     R = n(654487),
     L = n(985018),
     I = n(438655),
-    M = n(681636);
-let j = l.createContext({
+    j = n(681636);
+let M = l.createContext({
         quest: null,
         sourceQuestContent: null,
         videoSessionId: "",
@@ -89,7 +89,7 @@ function k(e) {
             useNewProgressBarStyling: q,
             setIsFullscreenEnabled: B
         }), [i, h, c, $, n, U, q, B]);
-    return (0, r.jsx)(j.Provider, {
+    return (0, r.jsx)(M.Provider, {
         value: X,
         children: (0, r.jsx)("div", {
             style: $ ? {
@@ -99,13 +99,13 @@ function k(e) {
                 "data-migration-pending": !0,
                 transitionState: t,
                 size: d.rIJ.DYNAMIC,
-                className: s()(M.CR, {
-                    [M.VX]: "landscape" === G,
-                    [M.Zy]: "portrait" === G
+                className: s()(j.CR, {
+                    [j.VX]: "landscape" === G,
+                    [j.Zy]: "portrait" === G
                 }),
                 parentComponent: "Modal",
                 children: [!q && (0, r.jsx)("div", {
-                    className: M.z6,
+                    className: j.z6,
                     children: (0, r.jsx)(d.K0, {
                         variant: "icon-only",
                         icon: e => (0, r.jsx)(d.PGe, {
@@ -119,14 +119,14 @@ function k(e) {
                     ref: e => {
                         f.current = e
                     },
-                    className: M.NE,
+                    className: j.NE,
                     children: (0, r.jsx)("div", {
-                        className: M.S3,
+                        className: j.S3,
                         style: {
                             "--custom-footer-horizontal-padding": `${q?20:16}px`
                         },
                         children: (0, r.jsxs)("div", {
-                            className: M.jE,
+                            className: j.jE,
                             children: [(0, r.jsx)(N.A, {
                                 targetTimeSec: F.target,
                                 parentTransitionState: t,

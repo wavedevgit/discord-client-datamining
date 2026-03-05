@@ -1,4 +1,5 @@
 /** chunk id: 719247, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     cd: "eventStatusContainer__29021",
     AD: "isRecurring__29021",

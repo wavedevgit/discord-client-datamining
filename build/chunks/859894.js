@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(827734),
     l = n(397927),
-    a = n(267102),
-    r = n(993838),
+    r = n(267102),
+    a = n(993838),
     o = n(418208),
     c = n(47868),
     d = n(985018);
@@ -18,7 +18,7 @@ function u(e) {
         className: t,
         channel: n,
         highlight: u
-    } = e, h = (0, a.Us)();
+    } = e, h = (0, r.Us)();
     return (0, o.zU)() ? null : (0, i.jsx)(c.A, {
         highlight: u ?? !1,
         className: t,
@@ -32,7 +32,7 @@ function u(e) {
         title: d.intl.string(d.t.OYbHfv),
         description: d.intl.string(d.t.yXwLMQ),
         onClick: function() {
-            (0, r.tQ)(n, h)
+            (0, a.tQ)(n, h)
         }
     })
 }

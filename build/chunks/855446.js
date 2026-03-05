@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(380278),
     c = n(696292),
     d = n(397927),
@@ -30,7 +30,7 @@ function I(e) {
         context: t,
         activityItem: n,
         onClick: i,
-        aspectRatio: a = 0,
+        aspectRatio: r = 0,
         animatedDivClass: E,
         commandOrigin: I
     } = e, {
@@ -77,7 +77,7 @@ function I(e) {
                 return (0, s.jsx)("div", {
                     className: f.m9,
                     children: (0, s.jsx)("div", {
-                        className: r()(f.aF, f.pS),
+                        className: a()(f.aF, f.pS),
                         children: (0, s.jsx)(d.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
@@ -116,9 +116,9 @@ function I(e) {
                         questContent: c.u.ACTIVITY_SUGGESTION,
                         children: i => (0, s.jsxs)(o.animated.div, {
                             ref: i,
-                            className: r()(e, f.LM, E, {
-                                [f.$g]: 0 === a,
-                                [f.J3]: 1 === a
+                            className: a()(e, f.LM, E, {
+                                [f.$g]: 0 === r,
+                                [f.J3]: 1 === r
                             }),
                             style: {
                                 transform: t.to([0, 1], [1, 1.05]).to(e => `scale(${e})`)

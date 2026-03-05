@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(575593),
+    r = n.n(l),
+    a = n(575593),
     o = n(635358),
     c = n(417597),
     d = n(554146),
@@ -40,7 +40,7 @@ let G = T.Z.SIZE_90,
         let {
             sku: n,
             wishlistOwner: l,
-            wishlistId: r,
+            wishlistId: a,
             style: o,
             skuPreviewStyle: c,
             onDetailsClick: d,
@@ -51,17 +51,17 @@ let G = T.Z.SIZE_90,
             h({
                 action: O.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
                 skuId: n.id,
-                wishlistId: r,
+                wishlistId: a,
                 productLines: new Set([n.productLine])
             }), d()
-        }, [n, r, d, h]), m = s.useCallback(() => {
+        }, [n, a, d, h]), m = s.useCallback(() => {
             h({
                 action: O.Mq.PRESS_WISHLIST_BREADCRUMB_CARD,
                 skuId: n.id,
-                wishlistId: r,
+                wishlistId: a,
                 productLines: new Set([n.productLine])
             }), u()
-        }, [u, n.id, r, n.productLine, h]), {
+        }, [u, n.id, a, n.productLine, h]), {
             label: p,
             icon: g,
             isPromptingPurchase: _
@@ -79,8 +79,8 @@ let G = T.Z.SIZE_90,
                 sku: n,
                 user: l,
                 spec: G,
-                cardStyle: a()(M.Nr, M.Q1, o),
-                skuPreviewStyle: a()(M.ho, c),
+                cardStyle: r()(M.Nr, M.Q1, o),
+                skuPreviewStyle: r()(M.ho, c),
                 onClick: A,
                 onHoverOrFocusChange: x,
                 children: (0, i.jsx)(b.AJ, {
@@ -130,12 +130,12 @@ function w(e) {
         sku: t,
         wishlistOwner: n,
         index: l,
-        onViewWishlist: a,
-        analyticsLocations: r,
+        onViewWishlist: r,
+        analyticsLocations: a,
         ...o
     } = e, h = (0, c.bG)([p.A], () => p.A.getApplication(t.applicationId)), {
         analyticsLocations: _
-    } = (0, m.Ay)(...r ?? [], A.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), E = (0, f.Jw)({
+    } = (0, m.Ay)(...a ?? [], A.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), E = (0, f.Jw)({
         location: "dm-side-panel-social-layer-storefront-wishlist-item-card"
     }), N = (0, u.useHasAnyModalOpen)(), b = (0, c.bG)([I.A], () => I.A.hasLayers()), [S, T] = (0, g.kn)(!E || 0 !== l || t.applicationId !== R.XR || N || b ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], y.m.SIDEBAR, !0), v = s.useRef(null), O = s.useCallback(() => {
         T(y.i.USER_DISMISS), (0, C.a)(t, {
@@ -156,14 +156,14 @@ function w(e) {
     }, [h?.guildId, T, t.id, t.applicationId, _]), M = s.useCallback(() => {
         T(y.i.USER_DISMISS)
     }, [T]), D = s.useCallback(() => {
-        T(y.i.USER_DISMISS), a()
-    }, [a, T]);
+        T(y.i.USER_DISMISS), r()
+    }, [r, T]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(U, {
             ref: v,
             sku: t,
             index: l,
-            onViewWishlist: a,
+            onViewWishlist: r,
             analyticsLocations: _,
             wishlistOwner: n,
             onDetailsClick: L,
@@ -197,12 +197,12 @@ function k(e) {
         analyticsLocations: l
     }), h = s.useMemo(() => {
         switch (t?.tenantMetadata?.collectibles?.type) {
-            case r.R.PROFILE_EFFECT:
+            case a.R.PROFILE_EFFECT:
                 return;
-            case r.R.AVATAR_DECORATION:
-                return a()(M.ML, M._P);
+            case a.R.AVATAR_DECORATION:
+                return r()(M.ML, M._P);
             default:
-                return a()(M.ML, M.ZY)
+                return r()(M.ML, M.ZY)
         }
     }, [t?.tenantMetadata?.collectibles?.type]);
     return (0, i.jsx)(U, {

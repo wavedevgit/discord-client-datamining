@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     T4: () => o,
-    fo: () => r,
-    uW: () => a,
+    fo: () => a,
+    uW: () => r,
     vr: () => d,
     z0: () => c
 });
@@ -17,11 +17,11 @@ function l(e, t) {
     }
 }
 
-function a() {
+function r() {
     return l(0, s.intl.string(s.t.uXA573))
 }
 
-function r() {
+function a() {
     return l(0, s.intl.string(s.t.kesTVT))
 }
 

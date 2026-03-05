@@ -7,10 +7,10 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(73153),
-    a = n(272355),
-    r = n(296838),
+    r = n(272355),
+    a = n(296838),
     o = n(946974);
-class c extends a.A {
+class c extends r.A {
     _initialize() {
         l.h.subscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.h.subscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
     }
@@ -18,7 +18,7 @@ class c extends a.A {
         l.h.unsubscribe("SHOW_KEYBOARD_SHORTCUTS", this.showKeyboardShortcuts), l.h.unsubscribe("HIDE_KEYBOARD_SHORTCUTS", this.hideKeyboardShortcuts)
     }
     showKeyboardShortcuts() {
-        (0, s.qfG)(e => (0, i.jsx)(r.A, {
+        (0, s.qfG)(e => (0, i.jsx)(a.A, {
             ...e
         }), {
             modalKey: o.P

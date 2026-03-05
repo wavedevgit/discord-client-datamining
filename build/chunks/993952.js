@@ -8,8 +8,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(284009),
-    r = n.n(a),
+    r = n(284009),
+    a = n.n(r),
     o = n(311907),
     c = n(397927),
     d = n(698441),
@@ -25,8 +25,8 @@ function _(e) {
         guild: t,
         channel: s,
         streamUserId: l,
-        applicationId: a,
-        appContext: r,
+        applicationId: r,
+        appContext: a,
         exitFullScreen: o,
         analyticsLocation: d,
         guildScheduledEvent: u,
@@ -41,14 +41,14 @@ function _(e) {
             guild: t,
             channel: s,
             streamUserId: l,
-            applicationId: a,
+            applicationId: r,
             analyticsLocation: d,
             source: h ?? (s.isGuildStageVoice() ? m.PE1.STAGE_CHANNEL : m.PE1.STREAM_INVITE),
             guildScheduledEvent: u
         })
     }, {
         modalKey: "stream-invite-modal",
-        contextKey: r === m.BRT.POPOUT ? c.KX8 : c.SYi
+        contextKey: a === m.BRT.POPOUT ? c.KX8 : c.SYi
     })
 }
 
@@ -57,7 +57,7 @@ function f(e) {
         stream: t,
         applicationId: n,
         channel: s,
-        exitFullScreen: a,
+        exitFullScreen: r,
         appContext: f,
         analyticsLocation: x,
         className: C,
@@ -73,13 +73,13 @@ function f(e) {
                 variant: "secondary",
                 text: T,
                 onClick: () => {
-                    r()(null != b, "guild cannot be null"), r()(null != s, "channel cannot be null"), _({
+                    a()(null != b, "guild cannot be null"), a()(null != s, "channel cannot be null"), _({
                         guild: b,
                         channel: s,
                         streamUserId: t?.ownerId,
                         applicationId: n,
                         appContext: f,
-                        exitFullScreen: a,
+                        exitFullScreen: r,
                         analyticsLocation: x,
                         guildScheduledEvent: S,
                         source: m.PE1.VOICE_CHANNEL_UI_INVITE_BUTTON
@@ -91,7 +91,7 @@ function f(e) {
             stream: t,
             appContext: f,
             className: l()(C, g.gb),
-            exitFullScreen: a,
+            exitFullScreen: r,
             analyticsLocation: x,
             guildScheduledEvent: S
         })]

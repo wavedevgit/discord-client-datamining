@@ -215,8 +215,8 @@ function L(e) {
         }
         n(e, p.Cy.LEARN_MORE), L(e, p.Cy.OPEN_GAME_LINK)
     }, [D, t, L, n]), {
-        title: M,
-        subtitle: j
+        title: j,
+        subtitle: M
     } = {
         title: (0, E.wr)(x),
         subtitle: x.config.ctaConfig.subtitle ?? S.intl.string(S.t.mxaHfx)
@@ -241,8 +241,8 @@ function L(e) {
                 sourceQuestContent: h,
                 orientation: i
             }), (0, r.jsx)(N, {
-                title: M,
-                subtitle: j,
+                title: j,
+                subtitle: M,
                 ctaBtnLabel: x.config.ctaConfig.buttonLabel,
                 onCTAClick: () => I(c.uF.VIDEO_MODAL),
                 orientation: i
@@ -256,8 +256,8 @@ function L(e) {
             className: C.MT,
             "data-testid": "discord-web-video-player-end-screen"
         }), (0, r.jsx)(b, {
-            title: M,
-            subtitle: j,
+            title: j,
+            subtitle: M,
             icon: a.KS6,
             className: C.mT,
             onClick: () => I(c.uF.VIDEO_MODAL)
