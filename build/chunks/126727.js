@@ -25,12 +25,12 @@ function d(e) {
         {
             state: N,
             executeStateUpdate: I,
-            error: _
+            error: f
         } = (0, i.At)(e, null != C ? {
             type: n,
             value: C
         } : void 0),
-        f = (0, o.FG)(e.id);
+        _ = (0, o.FG)(e.id);
     a.useEffect(() => {
         N?.type === n && x(N.value)
     }, [n, N]);
@@ -46,7 +46,7 @@ function d(e) {
                 value: e
             })
         },
-        autoFocus: f
+        autoFocus: _
     };
     switch (d) {
         case s.qz.SMALL:
@@ -64,7 +64,7 @@ function d(e) {
         title: u,
         required: h,
         className: c.k,
-        error: _,
+        error: f,
         children: t
     }) : t
 }

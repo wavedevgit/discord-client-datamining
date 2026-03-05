@@ -44,8 +44,8 @@ function I(e) {
     } = e, {
         type: N,
         maxValues: I,
-        disabled: _
-    } = t, f = (0, h.c7)(t), [g, T] = r.useState(!1), [v, j] = r.useState(!1), [S, O] = r.useState(new Map(o?.map(e => [e.value, e]))), [R, y] = r.useState(new Set(S.keys())), b = r.useRef((o ?? []).map(e => e.value)), P = r.useRef(N), [L, D] = r.useState(0);
+        disabled: f
+    } = t, _ = (0, h.c7)(t), [g, T] = r.useState(!1), [v, j] = r.useState(!1), [S, O] = r.useState(new Map(o?.map(e => [e.value, e]))), [R, y] = r.useState(new Set(S.keys())), b = r.useRef((o ?? []).map(e => e.value)), P = r.useRef(N), [L, D] = r.useState(0);
     r.useEffect(() => {
         let e = (o ?? []).map(e => e.value);
         if (e.every(e => b.current.includes(e)) && b.current.every(t => e.includes(t)) && N === P.current) return;
@@ -83,14 +83,14 @@ function I(e) {
     let Y = 0 === S.size || g,
         z = {
             isProcessing: G,
-            isDisabled: _ || M === A.BB.DISABLED || H,
+            isDisabled: f || M === A.BB.DISABLED || H,
             wrapperClassName: i()(C.Lt, {
                 [C.zE]: F
             }),
             options: e => new Promise(t => {
                 t(n(e))
             }),
-            placeholder: Y ? f : void 0,
+            placeholder: Y ? _ : void 0,
             onClose: () => T(!1),
             onOpen: () => T(!0),
             onBlur: () => j(!1),

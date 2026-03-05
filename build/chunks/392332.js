@@ -3,10 +3,10 @@
 n.d(t, {
     A: () => x
 });
-var i = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+var l = n(627968),
+    a = n(64700),
+    i = n(503698),
+    r = n.n(i),
     s = n(158954),
     c = n(397927),
     o = n(760459),
@@ -18,44 +18,44 @@ function x(e) {
     let {
         entries: t,
         viewId: n,
-        officialGuildId: a,
+        officialGuildId: i,
         onClose: x,
         source: h
-    } = e, f = t.length > 7, [g, _] = l.useState(!1), p = l.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
-    return (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(s.DZT, {
+    } = e, f = t.length > 7, [g, p] = a.useState(!1), _ = a.useMemo(() => t.slice(0, f && !g ? 6 : void 0), [t, f, g]);
+    return (0, l.jsxs)("div", {
+        children: [(0, l.jsx)(s.DZT, {
             className: u.bV,
             variant: "text-md/semibold",
             color: "text-strong",
             children: d.intl.string(d.t.ak8OHk)
-        }), 0 === t.length ? (0, i.jsx)(s.EYj, {
+        }), 0 === t.length ? (0, l.jsx)(s.EYj, {
             variant: "text-xs/semibold",
             color: "text-strong",
             className: m.p$,
             children: d.intl.string(d.t.R5fYVO)
-        }) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)("div", {
+        }) : (0, l.jsxs)(l.Fragment, {
+            children: [(0, l.jsx)("div", {
                 className: r()(m.yz, {
                     [m.T6]: f && !g
                 }),
-                children: (0, i.jsx)("div", {
+                children: (0, l.jsx)("div", {
                     className: u.fi,
-                    children: p.map(e => (0, i.jsx)(o.A, {
+                    children: _.map(e => (0, l.jsx)(o.A, {
                         entry: e,
                         viewId: n,
                         onClose: x,
-                        officialGuildId: a,
+                        officialGuildId: i,
                         source: h
                     }, e.id))
                 })
-            }), f && !g && (0, i.jsxs)(c.DUT, {
+            }), f && !g && (0, l.jsxs)(c.DUT, {
                 className: m.ND,
-                onClick: () => _(!0),
-                children: [(0, i.jsx)(s.EYj, {
+                onClick: () => p(!0),
+                children: [(0, l.jsx)(s.EYj, {
                     variant: "text-xs/semibold",
                     color: "interactive-text-default",
                     children: d.intl.string(d.t.yohc6E)
-                }), (0, i.jsx)(c.abt, {
+                }), (0, l.jsx)(c.abt, {
                     size: "xs"
                 })]
             })]

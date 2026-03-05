@@ -48,15 +48,15 @@ function I(e) {
             disabled: p,
             emoji: E,
             url: I,
-            skuId: _
+            skuId: f
         } = e,
         {
-            executeStateUpdate: f,
+            executeStateUpdate: _,
             visualState: g,
             isDisabled: T
         } = (0, h.At)(e),
-        v = (0, m.Q)(_),
-        j = null != _ && a === u.in.PREMIUM,
+        v = (0, m.Q)(f),
+        j = null != f && a === u.in.PREMIUM,
         S = j && v?.disabled,
         O = j ? v?.label : n,
         R = null != E,
@@ -68,7 +68,7 @@ function I(e) {
             href: I ?? "",
             shouldConfirm: !0
         })
-    } : j ? null != v && !1 === v.disabled ? v.onClick : s.noop : () => f(), (0, l.jsxs)(i.$n, {
+    } : j ? null != v && !1 === v.disabled ? v.onClick : s.noop : () => _(), (0, l.jsxs)(i.$n, {
         "data-migration-pending": !0,
         color: function(e) {
             switch (e) {

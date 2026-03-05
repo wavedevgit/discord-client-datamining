@@ -22,8 +22,8 @@ var l = n(64700),
     x = n(31717),
     N = n(696451),
     I = n(967198),
-    _ = n(522602),
-    f = n(486020),
+    f = n(522602),
+    _ = n(486020),
     g = n(927813),
     T = n(661191),
     v = n(292348),
@@ -44,7 +44,7 @@ function L(e) {
     return l.useMemo(() => {
         let t = I.A.getGuildId(),
             n = null != t && null != e.bot ? N.Ay.getMember(t, e.bot.id) : void 0,
-            l = f.Ay.getApplicationIconURL({
+            l = _.Ay.getApplicationIconURL({
                 id: e.id,
                 icon: e.icon,
                 botIconFirst: !0,
@@ -64,7 +64,7 @@ function D(e, t) {
         application: n,
         customId: a,
         components: r
-    } = e, i = (0, m.A)(), [d, p] = l.useState(null), [A, h] = l.useState(null), [C, E] = l.useState({}), N = (0, s.bG)([O.A], () => O.A.getModalState(A), [A]), I = (0, u.A)(() => new Set), _ = l.useCallback(async () => {
+    } = e, i = (0, m.A)(), [d, p] = l.useState(null), [A, h] = l.useState(null), [C, E] = l.useState({}), N = (0, s.bG)([O.A], () => O.A.getModalState(A), [A]), I = (0, u.A)(() => new Set), f = l.useCallback(async () => {
         let t;
         if (p(null), h(null), t = !0, I.forEach(e => {
                 e() || (t = !1)
@@ -80,19 +80,19 @@ function D(e, t) {
         }), c.A.removeFiles(e.channelId, w(e.channelId, a).map(e => e.id), x.C.InteractionModal), t()), N === O.Z.ERRORED && p(b.intl.string(b.t.uJgdEu))
     }, [A, N, t, a, e.channelId]);
     let {
-        applicationIconURL: f,
+        applicationIconURL: _,
         applicationName: g
     } = L(n);
     return {
         components: r,
-        applicationIconURL: f,
+        applicationIconURL: _,
         applicationName: g,
         submissionState: N,
         error: d,
         validators: I,
         validationErrors: C,
         setValidationErrors: E,
-        onSubmit: _
+        onSubmit: f
     }
 }
 
@@ -201,7 +201,7 @@ let k = (e, t, n) => t.map(t => {
 });
 
 function w(e, t) {
-    return _.A.getUploads(e, x.C.InteractionModal).filter(e => (0, S.j2)(e.id)?.containerId === t)
+    return f.A.getUploads(e, x.C.InteractionModal).filter(e => (0, S.j2)(e.id)?.containerId === t)
 }
 async function M(e, t, n) {
     let l = e.channelId,

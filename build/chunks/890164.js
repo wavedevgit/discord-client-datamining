@@ -1,9 +1,11 @@
 /** chunk id: 890164 params = (module,exports,require) **/
 n.d(t, {
-    W1: () => l,
-    lX: () => s
+    W1: () => r,
+    lX: () => a
 });
-let i = (0, n(945810).mj)({
+var i = n(945810),
+    s = n(945939);
+let l = (0, i.mj)({
         name: "2026-02-private-profiles",
         kind: "user",
         defaultConfig: {
@@ -18,9 +20,13 @@ let i = (0, n(945810).mj)({
             }
         }
     }),
-    s = e => i.useConfig({
+    a = e => {
+        let t = l.useConfig({
+                location: e
+            }).enabled,
+            n = (0, s.Q6)(e);
+        return t || n
+    },
+    r = e => l.getConfig({
         location: e
-    }).enabled,
-    l = e => i.getConfig({
-        location: e
-    }).enabled
+    }).enabled || (0, s.De)(e)

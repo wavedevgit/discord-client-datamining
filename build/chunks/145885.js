@@ -26,8 +26,8 @@ function x(e) {
         shouldHideMediaOptions: x,
         enabledContentHarmTypeFlags: N,
         gifAutoPlay: I,
-        getGifFavButton: _,
-        getOnMediaItemContextMenu: f
+        getGifFavButton: f,
+        getOnMediaItemContextMenu: _
     } = (0, m.X)();
     if (null == t || null == n) return null;
     let g = e.items.map(e => (0, i.FX)(e.media, t)).filter(e => "INVALID" !== e.type),
@@ -48,7 +48,7 @@ function x(e) {
     }
     let S = e.items.map((e, n) => {
         let l = e.media,
-            r = f?.(l),
+            r = _?.(l),
             i = {
                 message: t,
                 item: {
@@ -72,7 +72,7 @@ function x(e) {
                 renderPlaintextFilePreview: E.tEg,
                 renderGenericFileComponent: E.tEg,
                 renderMosaicItemFooter: E.tEg,
-                gifFavoriteButton: _(l),
+                gifFavoriteButton: f(l),
                 onPlay: (e, t, n) => {},
                 canRemoveItem: !1,
                 onRemoveItem: E.tEg

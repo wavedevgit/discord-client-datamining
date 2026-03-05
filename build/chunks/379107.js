@@ -104,7 +104,7 @@ function I(e) {
         maxValues: i,
         minValues: d,
         disabled: I
-    } = e, _ = (0, h.c7)(e), f = a.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), g = (0, p.jc)();
+    } = e, f = (0, h.c7)(e), _ = a.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), g = (0, p.jc)();
     o()(null != g, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
     let {
         state: T,
@@ -112,19 +112,19 @@ function I(e) {
         visualState: j,
         isDisabled: S,
         error: O
-    } = g.useComponentState(e, f.length > 0 ? {
+    } = g.useComponentState(e, _.length > 0 ? {
         type: t,
-        values: f
+        values: _
     } : void 0), R = null != g.modal, y = i > 1, b = j === A.BB.LOADING, [P, L] = a.useState(!1), [D, U] = a.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [k, w] = a.useState(D), M = a.useMemo(() => n.some(e => null != e.emoji), [n]);
     a.useEffect(() => {
         if (T?.type === u.I5.STRING_SELECT) {
             let e = new Set(T.values);
             U(e), w(e)
         } else {
-            let e = new Set(f);
+            let e = new Set(_);
             U(e), w(e)
         }
-    }, [r, f, T]);
+    }, [r, _, T]);
     let H = a.useCallback(() => {
         k !== D && v({
             type: u.I5.STRING_SELECT,
@@ -154,7 +154,7 @@ function I(e) {
                     ...e,
                     disabled: y && !D.has(e.value) && D.size === i
                 })),
-                placeholder: _,
+                placeholder: f,
                 onClose: () => L(!1),
                 onOpen: () => L(!0),
                 maxVisibleItems: 5,

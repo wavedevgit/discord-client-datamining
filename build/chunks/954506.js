@@ -3,10 +3,10 @@
 n.d(t, {
     A: () => s
 });
-var i = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(158954),
-    a = n(985018),
+var a = n(158954),
+    i = n(985018),
     r = n(847890);
 
 function s(e) {
@@ -15,20 +15,20 @@ function s(e) {
         title: n,
         onClickViewAll: s
     } = e;
-    return (0, i.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: r.k,
-        children: [(0, i.jsxs)("div", {
+        children: [(0, l.jsxs)("div", {
             className: r.w,
-            children: [(0, i.jsx)(l.DZT, {
+            children: [(0, l.jsx)(a.DZT, {
                 variant: "heading-lg/medium",
                 children: n
-            }), null != s && (0, i.jsx)(l.$nd, {
+            }), null != s && (0, l.jsx)(a.$nd, {
                 size: "sm",
-                icon: l._BQ,
+                icon: a._BQ,
                 iconPosition: "end",
                 variant: "secondary",
                 onClick: s,
-                text: a.intl.string(a.t.budhsM)
+                text: i.intl.string(i.t.budhsM)
             })]
         }), t]
     })

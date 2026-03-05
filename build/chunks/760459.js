@@ -3,9 +3,9 @@
 n.d(t, {
     A: () => r
 });
-var i = n(627968),
-    l = n(942528),
-    a = n(409626);
+var l = n(627968),
+    a = n(942528),
+    i = n(409626);
 
 function r(e) {
     let {
@@ -14,11 +14,11 @@ function r(e) {
         officialGuildId: r,
         source: s
     } = e;
-    return (0, i.jsx)(l.A, {
+    return (0, l.jsx)(a.A, {
         ...e,
         onReaction: () => {
-            (0, a.Tn)({
-                action: a.Ws.SendMessageUser,
+            (0, i.Tn)({
+                action: i.Ws.SendMessageUser,
                 applicationId: t.extra.application_id,
                 gameName: t.extra.game_name,
                 recipientUserId: t.author_id,
@@ -28,8 +28,8 @@ function r(e) {
             })
         },
         onRequestOpen: () => {
-            (0, a.Tn)({
-                action: a.Ws.ClickMessageUser,
+            (0, i.Tn)({
+                action: i.Ws.ClickMessageUser,
                 applicationId: t.extra.application_id,
                 gameName: t.extra.game_name,
                 recipientUserId: t.author_id,

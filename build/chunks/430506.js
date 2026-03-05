@@ -1,6 +1,6 @@
 /** chunk id: 430506 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => _
 }), n(321073);
 var l = n(627968),
     a = n(64700),
@@ -20,14 +20,14 @@ var l = n(627968),
     x = n(241522),
     N = n(756362),
     I = n(626715),
-    _ = n(427401);
+    f = n(427401);
 
-function f(e) {
+function _(e) {
     let {
         checkpointData: t
     } = e, {
         cardId: n,
-        numMessagesSent: f = 0,
+        numMessagesSent: _ = 0,
         totalVoiceMinutes: g = 0,
         numEmojisSent: T = 0,
         topEmoji: v,
@@ -39,7 +39,7 @@ function f(e) {
         notation: "compact",
         compactDisplay: "short",
         maximumFractionDigits: 2
-    }).format(f), b = new Intl.NumberFormat(C.intl.currentLocale, {
+    }).format(_), b = new Intl.NumberFormat(C.intl.currentLocale, {
         notation: "compact",
         compactDisplay: "short",
         maximumFractionDigits: 2
@@ -50,7 +50,7 @@ function f(e) {
         compactDisplay: "short"
     }), H = (0, u._V)(R ?? 0), K = (0, a.useMemo)(() => {
         let e = [];
-        e.push(_);
+        e.push(f);
         for (let t = 0; t < 8; t++) e.push(I);
         return e.push(N), e
     }, []);

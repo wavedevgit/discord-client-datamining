@@ -20,8 +20,8 @@ var l = n(627968),
     x = n(101555),
     N = n(734057),
     I = n(31717),
-    _ = n(255438),
-    f = n(453771),
+    f = n(255438),
+    _ = n(453771),
     g = n(518960),
     T = n(382287),
     v = n(207963),
@@ -37,7 +37,7 @@ function y(e) {
         minValues: a,
         maxValues: r,
         guildId: i
-    } = e, o = (0, f.o2)(i), c = (0, _.Xq)(o / _.XF, {
+    } = e, o = (0, _.o2)(i), c = (0, f.Xq)(o / f.XF, {
         useKibibytes: !0,
         useSpace: !0
     });
@@ -149,8 +149,8 @@ function L(e) {
     let x = C.modal?.customId;
     o()(null != x, "FileUploadActionComponent requires modalCustomId from context");
     let {
-        uploadIds: _,
-        setUploadIds: f,
+        uploadIds: f,
+        setUploadIds: _,
         currentUploads: L,
         error: D
     } = (0, S.j)(e), U = (0, c.bG)([N.A], () => N.A.getBasicChannel(E));
@@ -163,7 +163,7 @@ function L(e) {
         }, []),
         M = a.useCallback((e, t) => {
             if (0 === e.length) return;
-            if (_.length + e.length > n) return (0, p.openUploadError)({
+            if (f.length + e.length > n) return (0, p.openUploadError)({
                 title: O.intl.string(O.t.wOr6hB),
                 help: O.intl.formatToPlainString(O.t.dy6viJ, {
                     maxValues: n
@@ -186,13 +186,13 @@ function L(e) {
                     allowOptimization: !1
                 }), n
             });
-            f(_.concat(l))
-        }, [_, n, U, f, x, E]),
+            _(f.concat(l))
+        }, [f, n, U, _, x, E]),
         H = a.useCallback(e => {
             e.preventDefault(), h(!1), M(Array.from(e.dataTransfer?.files ?? []), "drag_drop")
         }, [M]),
         K = e => {
-            u.A.remove(E, e, I.C.InteractionModal), f(_.filter(t => t !== e))
+            u.A.remove(E, e, I.C.InteractionModal), _(f.filter(t => t !== e))
         };
     return (a.useEffect(() => {
         let e = i.current;
@@ -209,7 +209,7 @@ function L(e) {
             [R.Ke]: d,
             [R.z3]: null != D
         }),
-        children: [_.length >= n ? (0, l.jsx)(b, {}) : (0, l.jsx)(y, {
+        children: [f.length >= n ? (0, l.jsx)(b, {}) : (0, l.jsx)(y, {
             dropping: d,
             fileInputRef: r,
             minValues: t,

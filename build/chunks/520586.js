@@ -22,8 +22,8 @@ var a = n(503698),
     x = n(379107),
     N = n(126727),
     I = n(430506),
-    _ = n(620513),
-    f = n(145885),
+    f = n(620513),
+    _ = n(145885),
     g = n(371068),
     T = n(61266),
     v = n(324877),
@@ -77,7 +77,7 @@ function D(e) {
                         ...t
                     }, n);
                 case i.I5.MEDIA_GALLERY:
-                    return (0, l.jsx)(f.A, {
+                    return (0, l.jsx)(_.A, {
                         ...t
                     }, n);
                 case i.I5.THUMBNAIL:
@@ -85,7 +85,7 @@ function D(e) {
                         ...t
                     }, n);
                 case i.I5.FILE:
-                    return (0, l.jsx)(_.A, {
+                    return (0, l.jsx)(f.A, {
                         ...t
                     }, n);
                 case i.I5.SEPARATOR:

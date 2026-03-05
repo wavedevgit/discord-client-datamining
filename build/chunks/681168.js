@@ -83,8 +83,8 @@ function N(e) {
         subtitle: C,
         thumbnailUrl: N,
         titleClickable: I,
-        subtitleClickable: _,
-        thumbnailClickable: f,
+        subtitleClickable: f,
+        thumbnailClickable: _,
         providerIconProps: g,
         style: T = {}
     } = e, v = (0, m.GV)(), {
@@ -102,7 +102,7 @@ function N(e) {
             children: [(0, l.jsx)(E, {
                 className: h.iT,
                 clickableClassName: h.vk,
-                clickable: f,
+                clickable: _,
                 children: (0, l.jsx)(o.V, {
                     src: N,
                     constrain: "width",
@@ -132,7 +132,7 @@ function N(e) {
                     children: [(0, l.jsx)(s.hKd, {
                         size: 2
                     }), (0, l.jsx)(x, {
-                        clickable: _,
+                        clickable: f,
                         className: h.sd,
                         children: (0, l.jsx)(s.Text, {
                             variant: "text-sm/normal",
