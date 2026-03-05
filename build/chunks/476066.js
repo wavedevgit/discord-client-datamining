@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     i = n(503698),
     s = n.n(i),
-    a = n(162160),
+    a = n(380278),
     o = n(311907),
     u = n(876230),
     c = n(397927),
@@ -81,14 +81,14 @@ let b = {
             src: Z,
             initialTimeSec: M,
             onError: eW
-        }), [ez, eX] = l.useState(!1), [eJ, eZ] = l.useState(null), e0 = O ?? eG.current?.duration ?? 0, [e1, e6] = l.useState(u.oA.MD), e2 = {
+        }), [ez, eX] = l.useState(!1), [eJ, eZ] = l.useState(null), e0 = O ?? eG.current?.duration ?? 0, [e1, e6] = l.useState(u.oA.MD), e7 = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
         (0, d.u5)(() => {
             eY.current && (eY.current = !1)
         });
-        let e7 = l.useCallback(function(e) {
+        let e2 = l.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
             if (es(e), B?.(e, t), null != eG.current) switch (e) {
                 case u.Q6.PLAYING:
@@ -107,32 +107,32 @@ let b = {
                 n = et && !ee;
             if ((e || t || n) && null != eG.current && ei === u.Q6.PLAYING) {
                 let n = e || t ? "visibility" : "focus";
-                eH(n), e7(u.Q6.PAUSED, n)
+                eH(n), e2(u.Q6.PAUSED, n)
             }
-        }, [i, ee, et, en, er, ei, e7]), l.useEffect(() => {
+        }, [i, ee, et, en, er, ei, e2]), l.useEffect(() => {
             et && q?.(ee, ei)
         }, [ee, et, ei, q]), l.useEffect(() => {
             er && z?.(en, ei)
         }, [en, er, ei, z]);
-        let [e4, e9] = l.useState(!1), e8 = l.useRef(null), e3 = l.useRef(0);
+        let [e4, e8] = l.useState(!1), e9 = l.useRef(null), e3 = l.useRef(0);
         l.useLayoutEffect(() => {
             e3.current = performance.now()
         }, []);
         let e5 = l.useCallback(() => {
-                null != e8.current && clearTimeout(e8.current), ei !== u.Q6.PLAYING || (e8.current = setTimeout(() => {
-                    ei === u.Q6.PLAYING && e9(!0)
+                null != e9.current && clearTimeout(e9.current), ei !== u.Q6.PLAYING || (e9.current = setTimeout(() => {
+                    ei === u.Q6.PLAYING && e8(!0)
                 }, Math.max(0, 3e3 - (performance.now() - e3.current))))
             }, [ei]),
             te = () => {
-                e9(!1), e3.current = performance.now(), e5()
+                e8(!1), e3.current = performance.now(), e5()
             };
         l.useEffect(() => {
             if (ei !== u.Q6.PLAYING) {
-                e9(!1), null != e8.current && clearTimeout(e8.current);
+                e8(!1), null != e9.current && clearTimeout(e9.current);
                 return
             }
             return e5(), () => {
-                null != e8.current && clearTimeout(e8.current)
+                null != e9.current && clearTimeout(e9.current)
             }
         }, [ei, e5]);
         let tt = !e4 && (eu || ea || ei === u.Q6.ENDED),
@@ -141,12 +141,12 @@ let b = {
                 null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tn), eB(!1), F?.(!1), e6(u.oA.MD))
             }, [F]),
             tr = () => {
-                null == eG.current || (ti(Math.max(eG.current.currentTime - 10, 0)), ei === u.Q6.ENDED && e7(u.Q6.PAUSED, "seek"))
+                null == eG.current || (ti(Math.max(eG.current.currentTime - 10, 0)), ei === u.Q6.ENDED && e2(u.Q6.PAUSED, "seek"))
             },
             tl = () => {
                 if (null == eG.current || P) return;
                 let e = Math.min(eG.current.currentTime + 10, e0);
-                ti(e), ei !== u.Q6.ENDED && e >= eG.current.duration && e7(u.Q6.ENDED, "seek")
+                ti(e), ei !== u.Q6.ENDED && e >= eG.current.duration && e2(u.Q6.ENDED, "seek")
             };
         l.useEffect(() => {
             let e = eG.current;
@@ -164,13 +164,13 @@ let b = {
             ts = () => {
                 if (null != eG.current) switch (ei) {
                     case u.Q6.ENDED:
-                        ti(0), e7(u.Q6.PLAYING, "user");
+                        ti(0), e2(u.Q6.PLAYING, "user");
                         break;
                     case u.Q6.PLAYING:
-                        eH("user"), e7(u.Q6.PAUSED, "user");
+                        eH("user"), e2(u.Q6.PAUSED, "user");
                         break;
                     default:
-                        e7(u.Q6.PLAYING, "user")
+                        e2(u.Q6.PLAYING, "user")
                 }
             },
             ta = e => {
@@ -201,7 +201,7 @@ let b = {
                     let e = null != eL.current ? performance.now() - eL.current : null;
                     W?.(e), eS(!1)
                 }
-                e7(u.Q6.PLAYING, "buffering_recovery")
+                e2(u.Q6.PLAYING, "buffering_recovery")
             }
         };
         l.useEffect(() => {
@@ -250,10 +250,10 @@ let b = {
             "data-testid": "discord-web-video-player-container",
             tabIndex: -1,
             onMouseEnter: () => {
-                eo(!0), e9(!1), e3.current = performance.now(), null != e8.current && clearTimeout(e8.current)
+                eo(!0), e8(!1), e3.current = performance.now(), null != e9.current && clearTimeout(e9.current)
             },
             onMouseLeave: () => {
-                eo(!1), e9(!1)
+                eo(!1), e8(!1)
             },
             onMouseMove: te,
             onKeyDown: te,
@@ -285,7 +285,7 @@ let b = {
                         null != eG.current && (j?.(eG.current.currentTime, eG.current.duration), eE(eG.current.currentTime / eG.current.duration * 100))
                     },
                     onEnded: e => {
-                        e7(u.Q6.ENDED, "playback_complete"), eS(!1), w?.()
+                        e2(u.Q6.ENDED, "playback_complete"), eS(!1), w?.()
                     },
                     onLoadedData: e => {
                         if (ex) {
@@ -376,7 +376,7 @@ let b = {
                 }), eO && ei !== u.Q6.ENDED && null != V && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(c.DUT, {
                         onClick: () => {
-                            ei === u.Q6.PAUSED && e7(u.Q6.PLAYING, "user"), eP(!1)
+                            ei === u.Q6.PAUSED && e2(u.Q6.PLAYING, "user"), eP(!1)
                         },
                         tabIndex: -1,
                         children: (0, r.jsx)("div", {
@@ -388,7 +388,7 @@ let b = {
                         }),
                         "data-testid": "discord-web-video-player-transcript",
                         style: {
-                            marginBottom: (0, a.to)([td, tf], (e, t) => `${e*e2[e1]+t}px`)
+                            marginBottom: (0, a.to)([td, tf], (e, t) => `${e*e7[e1]+t}px`)
                         },
                         children: (0, r.jsx)(v.X, {
                             text: V,
@@ -425,7 +425,7 @@ let b = {
                     style: {
                         translateY: (0, a.to)([td.to({
                             range: [0, 1],
-                            output: [-20, -e2[e1]]
+                            output: [-20, -e7[e1]]
                         })], e => `${e}px`)
                     },
                     children: (0, r.jsx)(c.Text, {
@@ -439,7 +439,7 @@ let b = {
                     style: {
                         height: (0, a.to)([td.to({
                             range: [0, 1],
-                            output: [0, e2[e1]]
+                            output: [0, e7[e1]]
                         })], e => `${e}px`)
                     },
                     children: [(0, r.jsx)(a.animated.div, {
@@ -460,7 +460,7 @@ let b = {
                             isFullyVisible: tt && eT,
                             maxSeekableTime: tt && eT ? e0 : void 0,
                             onClick: e => {
-                                ti(e), ei === u.Q6.ENDED && e7(u.Q6.PLAYING, "user")
+                                ti(e), ei === u.Q6.ENDED && e2(u.Q6.PLAYING, "user")
                             },
                             onScrubBack: tr,
                             onScrubForward: tl,

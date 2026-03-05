@@ -1,6 +1,6 @@
 /** chunk id: 489683, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => e9
+    A: () => e5
 });
 var i = n(627968),
     r = n(64700),
@@ -804,7 +804,7 @@ function e6(e) {
         })
     })
 }
-let e9 = (0, N.A)(function(e) {
+let e5 = (0, N.A)(function(e) {
     let t = (0, F.A)(),
         n = (0, c.bG)([H.default], () => H.default.getAwaitingRemoteSessionInfo()),
         l = (0, c.bG)([eR.default], () => eR.default.getCurrentUser()),

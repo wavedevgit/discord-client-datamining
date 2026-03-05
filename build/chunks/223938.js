@@ -8,7 +8,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(162160),
+    c = n(380278),
     d = n(835245),
     u = n(311907),
     h = n(827734),
@@ -215,12 +215,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eH
     });
     (0, G.R)(eG, y.guild_id, y.id);
-    let [e6, e9] = l.useState(!1), e4 = j || e6 || s.length > 0 || null != e_ || ef.length > 0, {
-        editorHeaderHeight: e8,
+    let [e6, e9] = l.useState(!1), e8 = j || e6 || s.length > 0 || null != e_ || ef.length > 0, {
+        editorHeaderHeight: e4,
         paddingTop: te
     } = (0, A.zhh)({
-        editorHeaderHeight: 122 * !!e4,
-        paddingTop: 16 * !!e4,
+        editorHeaderHeight: 122 * !!e8,
+        paddingTop: 16 * !!e8,
         config: {
             tension: 120,
             friction: 15,
@@ -267,7 +267,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             children: [(0, i.jsxs)(c.animated.div, {
                                 className: J.ov,
                                 style: {
-                                    height: e8,
+                                    height: e4,
                                     paddingTop: te
                                 },
                                 children: [null != e_ ? (0, i.jsx)(ee, {
