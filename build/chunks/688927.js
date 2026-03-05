@@ -1,6 +1,6 @@
 /** chunk id: 688927, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var l = n(627968),
     a = n(64700),
@@ -9,17 +9,17 @@ var l = n(627968),
     s = n(861662),
     d = n(985018),
     o = n(888791);
-let c = e => {
+let u = e => {
     let {
         node: {
             header: t,
             subheader: n,
-            button: c
+            button: u
         },
-        isModeratorReport: u,
+        isModeratorReport: c,
         isTidaReport: _ = !1,
         hideTitle: m = !1
-    } = e, x = c?.type === "submit", p = a.useMemo(() => r.A.reactParserFor({
+    } = e, x = u?.type === "submit", p = a.useMemo(() => r.A.reactParserFor({
         ...r.A.defaultRules,
         link: s.B
     }), []);
@@ -33,7 +33,7 @@ let c = e => {
             variant: "text-md/normal",
             color: "text-subtle",
             children: p(n)
-        }) : null, x && !u && !_ && (0, l.jsx)(i.Text, {
+        }) : null, x && !c && !_ && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: d.intl.format(d.t.Q0tSKT, {})
         })]

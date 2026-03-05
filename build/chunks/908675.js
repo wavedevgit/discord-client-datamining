@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(397927),
     d = n(46054),
     o = n(957565),
-    c = n(985018),
-    u = n(38776);
+    u = n(985018),
+    c = n(38776);
 
 function _(e) {
     let {
@@ -24,33 +24,33 @@ function _(e) {
         }
     } = e, [m, x] = a.useState(!1), p = a.useRef(d.A.reactParserFor(d.A.defaultRules));
     return _ ? (0, l.jsxs)("div", {
-        className: u.kL,
+        className: c.kL,
         children: [(0, l.jsx)(s.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
-            className: u.wx,
+            className: c.wx,
             children: t
         }), (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
-            className: u.G3,
+            className: c.G3,
             children: p.current(n)
         }), (0, l.jsx)("div", {
             children: (0, l.jsxs)("div", {
-                className: r()(u.GH, {
-                    [u.pG]: m
+                className: r()(c.GH, {
+                    [c.pG]: m
                 }),
                 children: [(0, l.jsx)(s.Text, {
                     variant: "text-md/normal",
                     selectable: !0,
-                    className: u.Kk,
+                    className: c.Kk,
                     children: i
                 }), (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: u.__invalid_trailingButton,
+                    className: c.__invalid_trailingButton,
                     children: (0, l.jsx)(s.Button, {
                         variant: "secondary",
                         size: "sm",
-                        text: m ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
+                        text: m ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
                         onClick: () => {
                             (0, o.C)(i, () => x(!0))
                         }

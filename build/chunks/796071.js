@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(58149),
     d = n(632738),
     o = n(734057),
-    c = n(994500),
-    u = n(562153),
+    u = n(994500),
+    c = n(562153),
     _ = n(652215),
     m = n(985018);
 let x = e => {
@@ -21,10 +21,10 @@ let x = e => {
     } = e, {
         isIgnored: p,
         isBlocked: g
-    } = (0, i.cf)([c.A], () => ({
-        isIgnored: c.A.isIgnored(t.id),
-        isBlocked: c.A.isBlocked(t.id)
-    }), [t]), h = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => u.Ay.getName(h?.guild_id, h?.id, t), [h, t]), b = a.useCallback(() => {
+    } = (0, i.cf)([u.A], () => ({
+        isIgnored: u.A.isIgnored(t.id),
+        isBlocked: u.A.isBlocked(t.id)
+    }), [t]), h = (0, i.bG)([o.A], () => o.A.getChannel(n), [n]), A = a.useMemo(() => c.Ay.getName(h?.guild_id, h?.id, t), [h, t]), b = a.useCallback(() => {
         s.Ay.trackWithMetadata(_.HAw.IAR_IGNORE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: x

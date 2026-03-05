@@ -15,9 +15,9 @@ let s = e => {
         a.useEffect(() => {
             o(s ?? "")
         }, [s]);
-        let c = t.name,
+        let u = t.name,
             {
-                title: u,
+                title: c,
                 options: _
             } = t.data,
             m = a.useMemo(() => _.map(e => ({
@@ -30,7 +30,7 @@ let s = e => {
         return (0, l.jsx)("div", {
             className: r.QB,
             children: (0, l.jsx)(i.l6P, {
-                label: u,
+                label: c,
                 value: d,
                 required: t.should_submit_data,
                 onSelectionChange: x,
@@ -38,7 +38,7 @@ let s = e => {
                 selectionMode: "single",
                 fullWidth: !0
             })
-        }, c)
+        }, u)
     },
     d = e => {
         let {

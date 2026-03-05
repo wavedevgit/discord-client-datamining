@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(964486),
     d = n(58149),
     o = n(915089),
-    c = n(831062),
-    u = n(923531),
+    u = n(831062),
+    c = n(923531),
     _ = n(17372),
     m = n(369053),
     x = n(598131),
@@ -30,22 +30,22 @@ let h = e => {
         root_node_id: j,
         success_node_id: I,
         fail_node_id: N
-    } = n, [S, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [O, G] = a.useState([]), [w, L] = a.useState(void 0), [D, U] = a.useState(void 0), [B, P] = a.useState(void 0);
+    } = n, [S, y] = a.useState(j), [k, E] = a.useState(void 0), [M, R] = a.useState(void 0), [O, w] = a.useState([]), [G, L] = a.useState(void 0), [D, U] = a.useState(void 0), [B, P] = a.useState(void 0);
     (0, s.Ay)(() => {
-        (0, u.VE)()
+        (0, c.VE)()
     });
     let H = e => {
             let {
                 destination: n
             } = e, [, l] = n, a = C[l];
-            if (void 0 === a) return void c.A.increment({
+            if (void 0 === a) return void u.A.increment({
                 name: i.K.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
             });
             if (a.elements.some(e => "skip" === e.type) && a.button?.type === "next") return H({
                 ...e,
                 destination: ["", a.button.target]
             });
-            if (G([...O, e]), null != a.key && b?.(a.key), E(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
+            if (w([...O, e]), null != a.key && b?.(a.key), E(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
                 d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
@@ -76,7 +76,7 @@ let h = e => {
                     next_node: C[l].id
                 })
             }
-            E(n?.multiSelect?.state), R(n?.textInput), y(l), G(e), b?.("..")
+            E(n?.multiSelect?.state), R(n?.textInput), y(l), w(e), b?.("..")
         }, W = a.useCallback((e, t) => {
             let n;
             for (let t in C) {
@@ -91,8 +91,8 @@ let h = e => {
             if (l >= 0) {
                 let e = O.slice(0, l),
                     t = O[l];
-                R(t?.textInput), E(t?.multiSelect?.state), G(e)
-            } else G([]), R(void 0), E(void 0);
+                R(t?.textInput), E(t?.multiSelect?.state), w(e)
+            } else w([]), R(void 0), E(void 0);
             P(t), y(n.id)
         }, [C, O]);
     a.useEffect(() => {
@@ -143,7 +143,7 @@ let h = e => {
                         successNodeId: I,
                         failNodeId: N,
                         onSubmit: V,
-                        reportId: w,
+                        reportId: G,
                         nodeMap: C,
                         initialErrorMessage: e.id === S ? B : void 0
                     })

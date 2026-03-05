@@ -10,26 +10,26 @@ var r = e(311907),
     d = e(884569),
     s = e(846577),
     u = e(695192),
-    c = e(87746),
-    o = e(287809);
+    o = e(87746),
+    c = e(287809);
 
 function A(n) {
     let {
         channel: t
-    } = n, e = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(t), h = (0, a.y)(t), f = (0, c.Q)(t), _ = (0, u.m)(t), g = (0, d.B)(t);
+    } = n, e = (0, r.bG)([c.default], () => c.default.getCurrentUser()), A = (0, s.P)(t), f = (0, a.y)(t), h = (0, o.Q)(t), g = (0, u.m)(t), _ = (0, d.B)(t);
     return e?.isStaff() !== !0 ? null : (0, i.jsxs)(l.Drp, {
         id: "dev tools",
         label: "Dev Tools",
         children: [(0, i.jsx)(l.rXV, {
             children: A
         }), (0, i.jsx)(l.rXV, {
-            children: _
-        }), (0, i.jsx)(l.rXV, {
-            children: f
+            children: g
         }), (0, i.jsx)(l.rXV, {
             children: h
         }), (0, i.jsx)(l.rXV, {
-            children: g
+            children: f
+        }), (0, i.jsx)(l.rXV, {
+            children: _
         })]
     })
 }

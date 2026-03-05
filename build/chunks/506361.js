@@ -1,32 +1,32 @@
-/** chunk id: 506361, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => l
+/** chunk id: 506361, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => c
 });
-var a = r(627968);
-r(64700);
-var s = r(158954),
-    n = r(827734),
-    o = r(309326),
-    i = r(337322),
-    c = r(640073);
+var r = a(627968);
+a(64700);
+var s = a(158954),
+    n = a(827734),
+    o = a(309326),
+    i = a(337322),
+    l = a(640073);
 
-function l(e) {
+function c(e) {
     let {
         powerup: t
-    } = e, r = (0, i.A)(t);
-    return (0, a.jsx)("div", {
-        className: c.kL,
-        children: r.map(e => {
+    } = e, a = (0, i.A)(t);
+    return (0, r.jsx)("div", {
+        className: l.kL,
+        children: a.map(e => {
             let {
                 Icon: t
             } = (0, o.a)(e.perkIcon, !1);
-            return (0, a.jsxs)("div", {
-                className: c.d_,
-                children: [(0, a.jsx)(t, {
+            return (0, r.jsxs)("div", {
+                className: l.d_,
+                children: [(0, r.jsx)(t, {
                     color: n.A.colors.TEXT_MUTED,
-                    className: c.Kk
-                }), (0, a.jsx)(s.EYj, {
-                    className: c.Qq,
+                    className: l.Kk
+                }), (0, r.jsx)(s.EYj, {
+                    className: l.Qq,
                     color: "text-muted",
                     variant: "text-sm/medium",
                     children: e.description

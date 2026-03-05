@@ -1,6 +1,6 @@
 /** chunk id: 325272, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var l = n(627968);
 n(64700);
@@ -10,7 +10,7 @@ var a = n(311907),
     s = n(71393),
     d = n(985018),
     o = n(715134);
-let c = e => {
+let u = e => {
     let {
         event: t
     } = e, n = (0, a.bG)([s.A], () => s.A.getGuild(t.guild_id));

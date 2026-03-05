@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(964486),
     d = n(58149),
     o = n(632738),
-    c = n(780964),
-    u = n(840065),
+    u = n(780964),
+    c = n(840065),
     _ = n(734057),
     m = n(319582),
     x = n(369053),
@@ -24,7 +24,7 @@ function A(e) {
         description: n,
         onButtonClick: i,
         trackSettingsUpsellsAction: r
-    } = e, [d, c] = a.useState(!1);
+    } = e, [d, u] = a.useState(!1);
     return (0, s.Ay)(() => {
         r(x.lJ.SETTINGS_UPSELLS_VIEWED)
     }), (0, l.jsx)(o.PQ, {
@@ -33,7 +33,7 @@ function A(e) {
         buttonText: d ? g.intl.string(g.t["h+WsPb"]) : g.intl.string(g.t.A8t4Nf),
         buttonDisabled: d,
         onButtonPress: () => {
-            i(), c(!0), r(x.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
+            i(), u(!0), r(x.lJ.SETTINGS_UPSELLS_APPLY_CLICKED)
         }
     })
 }
@@ -71,7 +71,7 @@ function b(e) {
         }), (0, l.jsx)(r.QWc, {
             text: g.intl.string(g.t.olebGx),
             onClick: () => {
-                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
+                (0, c.openUserSettings)(u.X.CONTENT_AND_SOCIAL_PANEL, {
                     section: p.nc_.CONTENT_AND_SOCIAL
                 }), a(), d.Ay.trackWithMetadata(p.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
                     report_id: s,

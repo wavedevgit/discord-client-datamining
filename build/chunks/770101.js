@@ -69,7 +69,8 @@ function f(t) {
             children: [(0, n.jsx)(u.Ay, {
                 className: v.Bq,
                 guild: t,
-                size: u.Ay.Sizes.SMALL
+                size: u.Ay.Sizes.SMALL,
+                active: !0
             }), (0, n.jsxs)("div", {
                 className: v.Vi,
                 children: [(0, n.jsx)(d.Text, {

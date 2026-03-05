@@ -1,10 +1,53 @@
-/** chunk id: 671470, original params: n,i,t (module,exports,require) **/
-t.d(i, {
-    A: () => l
-}), t(321073), t(627968), t(64700), t(397927), t(422258);
-var e = t(93055);
+/** chunk id: 671470, original params: n,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => c
+}), i(321073);
+var e = i(627968);
+i(64700);
+var l = i(397927),
+    r = i(422258),
+    a = i(93055),
+    d = i(985018);
 
-function l(n) {
-    return (0, e.Fe)(), (0, e.Af)(n.id), (0, e.Rm)(), __OVERLAY__, null
+function c(n) {
+    let t = (0, a.Fe)(),
+        i = (0, a.Af)(n.id),
+        c = (0, a.Rm)();
+    if (__OVERLAY__ || !t || null == i) return null;
+    let [o, s] = function(n) {
+        let t = [],
+            i = null;
+        for (let e of n) null == e.id ? i = e : t.push(e);
+        return [i, t]
+    }(c.filter(n => n.id !== i?.parentId));
+
+    function u(n) {
+        null != i && (0, r.JD)(i.id, n)
+    }
+    if (null == o && 0 === s.length) return null;
+    let A = o?.id ?? null,
+        _ = o?.name ?? d.intl.string(d.t.GSfOoo);
+    return (0, e.jsxs)(l.Drp, {
+        id: "move-to-category",
+        label: d.intl.string(d.t.FAplms),
+        children: [null != o && (0, e.jsx)(l.rXV, {
+            children: (0, e.jsx)(l.Drp, {
+                id: "favorite-uncategorized",
+                label: _,
+                action: () => u(A)
+            })
+        }), s.length > 0 && (0, e.jsx)(l.rXV, {
+            children: s.map(n => {
+                let {
+                    id: t,
+                    name: i
+                } = n;
+                return (0, e.jsx)(l.Drp, {
+                    id: `favorite-${t}`,
+                    label: i,
+                    action: () => u(t)
+                }, t)
+            })
+        })]
+    })
 }
-t(985018)

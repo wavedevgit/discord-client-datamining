@@ -13,15 +13,15 @@ let s = e => {
         state: s
     } = e, d = t.name, {
         title: o,
-        options: c
-    } = t.data, u = s?.[d]?.value ?? void 0, [_, m] = a.useState(u);
+        options: u
+    } = t.data, c = s?.[d]?.value ?? void 0, [_, m] = a.useState(c);
     a.useEffect(() => {
-        m(u)
-    }, [u]);
-    let x = a.useMemo(() => c.map(e => ({
+        m(c)
+    }, [c]);
+    let x = a.useMemo(() => u.map(e => ({
             name: e.label,
             value: e.value
-        })), [c]),
+        })), [u]),
         p = a.useCallback(e => {
             null != e && (m(e), n(d, e))
         }, [n, d]);

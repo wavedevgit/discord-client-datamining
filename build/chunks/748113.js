@@ -15,8 +15,8 @@ let o = e => {
     } = e, {
         id: n,
         icon: o,
-        name: c
-    } = t, u = r.Ay.getGuildIconURL({
+        name: u
+    } = t, c = r.Ay.getGuildIconURL({
         id: n,
         icon: o,
         size: 32
@@ -37,14 +37,14 @@ let o = e => {
                     height: 32,
                     className: d.$d,
                     children: (0, l.jsx)("img", {
-                        src: u,
+                        src: c,
                         alt: "",
                         className: d.$f
                     })
                 }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
-                    children: c
+                    children: u
                 })]
             })
         })]

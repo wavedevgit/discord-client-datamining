@@ -1,6 +1,6 @@
 /** chunk id: 717612, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var l = n(627968);
 n(64700);
@@ -10,13 +10,13 @@ var a = n(397927),
     s = n(71393),
     d = n(985018),
     o = n(611090);
-let c = e => {
+let u = e => {
     let {
         entry: t
     } = e, n = r.A.getChannel(t.channelId);
     if (null == n) return null;
-    let c = s.A.getGuild(n.guild_id);
-    return null == c ? null : (0, l.jsxs)("div", {
+    let u = s.A.getGuild(n.guild_id);
+    return null == u ? null : (0, l.jsxs)("div", {
         className: o.kL,
         children: [(0, l.jsx)(a.Heading, {
             className: o.wx,
@@ -27,13 +27,13 @@ let c = e => {
             children: [(0, l.jsxs)("div", {
                 className: o.mo,
                 children: [(0, l.jsx)(i.Ay, {
-                    guild: c,
+                    guild: u,
                     size: i.Ay.Sizes.MINI,
                     className: o.xG
                 }), (0, l.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-sm/normal",
-                    children: c.name
+                    children: u.name
                 })]
             }), (0, l.jsx)(a.Text, {
                 variant: "text-md/semibold",

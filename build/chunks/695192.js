@@ -1,6 +1,6 @@
 /** chunk id: 695192, original params: n,t,e (module,exports,require) **/
 e.d(t, {
-    m: () => o
+    m: () => c
 });
 var i = e(627968);
 e(64700);
@@ -10,19 +10,19 @@ var r = e(311907),
     d = e(349435),
     s = e(178186),
     u = e(287809),
-    c = e(985018);
+    o = e(985018);
 
-function o(n) {
+function c(n) {
     let t = (0, r.bG)([u.default], () => u.default.getCurrentUser()),
         e = (0, r.bG)([d.Ay], () => d.Ay.getChannelSafetyWarnings(n.id));
     return t?.isStaff() !== !0 || null == e || 0 === e.length ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Drp, {
             id: "delete-safety-warnings",
-            label: c.intl.string(c.t.g7o9bs),
+            label: o.intl.string(o.t.g7o9bs),
             action: () => (0, s.Ey)(n.id)
         }), (0, i.jsx)(l.Drp, {
             id: "clear-safety-warnings",
-            label: c.intl.string(c.t.VuSvGu),
+            label: o.intl.string(o.t.VuSvGu),
             action: () => (0, a.WJ)(n.id)
         })]
     })

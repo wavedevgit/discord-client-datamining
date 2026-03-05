@@ -9,13 +9,13 @@ var l = n(627968),
     s = n(861662),
     d = n(985018),
     o = n(322367),
-    c = n(473169);
-let u = e => {
+    u = n(473169);
+let c = e => {
         let {
             data: {
                 title: t,
                 subtitle: n,
-                description: u,
+                description: c,
                 placeholder: _,
                 rows: m,
                 character_limit: x,
@@ -42,21 +42,21 @@ let u = e => {
             }))
         }, [g, p]);
         return (0, l.jsxs)("div", {
-            className: c.QB,
+            className: u.QB,
             children: [(0, l.jsxs)("div", {
-                className: c.QB,
+                className: u.QB,
                 children: [null != t && (0, l.jsxs)(i.Text, {
                     variant: "text-sm/bold",
                     children: [t, A && (0, l.jsx)("span", {
                         className: o.m,
                         children: "*"
                     })]
-                }), null != u && (0, l.jsx)("div", {
-                    className: c.a5,
+                }), null != c && (0, l.jsx)("div", {
+                    className: u.a5,
                     children: (0, l.jsx)(i.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: u
+                        children: c
                     })
                 })]
             }), 1 === m ? (0, l.jsx)(i.ksK, {
@@ -75,7 +75,7 @@ let u = e => {
                 placeholder: _,
                 autoFocus: !0
             }), null != n && (0, l.jsx)("div", {
-                className: c.a5,
+                className: u.a5,
                 children: (0, l.jsx)(i.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
@@ -91,7 +91,7 @@ let u = e => {
             state: a
         } = e, i = t.map(e => {
             let t = e.name;
-            return (0, l.jsx)(u, {
+            return (0, l.jsx)(c, {
                 data: e.data,
                 onChange: e => n(t, e.value, e.isValid),
                 initialText: a?.[t] ?? void 0,

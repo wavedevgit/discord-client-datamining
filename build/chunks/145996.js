@@ -1,6 +1,6 @@
 /** chunk id: 145996, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var l = n(627968);
 n(64700);
@@ -10,12 +10,12 @@ var a = n(311907),
     s = n(287809),
     d = n(985018),
     o = n(395618);
-let c = e => {
+let u = e => {
     let {
         widget: t,
         userId: n
-    } = e, c = (0, a.bG)([s.default], () => s.default.getUser(n));
-    return null == c ? null : (0, l.jsxs)("div", {
+    } = e, u = (0, a.bG)([s.default], () => s.default.getUser(n));
+    return null == u ? null : (0, l.jsxs)("div", {
         className: o.k,
         children: [(0, l.jsx)(i.Heading, {
             className: o.w,
@@ -23,7 +23,7 @@ let c = e => {
             children: d.intl.string(d.t.SpsnDY)
         }), (0, l.jsx)(r.u, {
             widget: t,
-            user: c,
+            user: u,
             disableInteraction: !0
         })]
     })

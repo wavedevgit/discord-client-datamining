@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(58149),
     d = n(997509),
     o = n(794967),
-    c = n(632738),
-    u = n(734057),
+    u = n(632738),
+    c = n(734057),
     _ = n(71393),
     m = n(576705),
     x = n(309010),
@@ -20,7 +20,7 @@ let h = e => {
     let {
         application: t,
         reportId: n
-    } = e, [h, A] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, u.A], () => u.A.getChannel(x.A.getChannelId())?.guild_id), [T, C] = a.useState(null);
+    } = e, [h, A] = a.useState(!1), [b, v] = a.useState(!1), f = (0, i.bG)([x.A, c.A], () => c.A.getChannel(x.A.getChannelId())?.guild_id), [T, C] = a.useState(null);
     a.useEffect(() => {
         null != T && (A(!0), v(!0))
     }, [T]), a.useEffect(() => {
@@ -57,7 +57,7 @@ let h = e => {
                 l = null == t.bot || m.A.canManageUser(p.xBc.MANAGE_GUILD, t.bot.id, e);
             return n && l
         });
-    return null != t && null != f && h && I ? (0, l.jsx)(c.PQ, {
+    return null != t && null != f && h && I ? (0, l.jsx)(u.PQ, {
         title: g.intl.string(g.t["WV/CsH"]),
         description: g.intl.string(g.t["FlcC+3"]),
         buttonText: b ? g.intl.string(g.t.aCJlq4) : g.intl.string(g.t["6I1F3i"]),

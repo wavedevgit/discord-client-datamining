@@ -10,8 +10,8 @@ var a = n(503698),
     s = n(975807),
     d = n(985018),
     o = n(212335),
-    c = n(606566);
-let u = e => {
+    u = n(606566);
+let c = e => {
     let {
         data: {
             url: t,
@@ -22,14 +22,14 @@ let u = e => {
     } = e;
     return d ? (0, l.jsxs)(r.DUT, {
         role: "link",
-        className: i()(c.$J, o.lD),
+        className: i()(u.$J, o.lD),
         onClick: () => {
             (0, s.A)(t)
         },
         children: [(0, l.jsxs)("div", {
-            className: c.xU,
+            className: u.xU,
             children: [(0, l.jsx)(r.Text, {
-                className: c.__invalid_linkText,
+                className: u.__invalid_linkText,
                 variant: "text-md/semibold",
                 children: n
             }), null != a && "" !== a && (0, l.jsx)(r.Text, {
@@ -40,7 +40,7 @@ let u = e => {
         }), (0, l.jsx)(r.I9m, {
             size: "sm",
             color: "currentColor",
-            className: c.wP
+            className: u.wP
         })]
     }) : null
 };
@@ -59,7 +59,7 @@ function _(e) {
             let {
                 data: n
             } = e;
-            return (0, l.jsx)(u, {
+            return (0, l.jsx)(c, {
                 data: n
             }, `external-link+${t}`)
         }),
@@ -70,11 +70,11 @@ function _(e) {
             return t.is_header_hidden
         });
     return (0, l.jsxs)("div", {
-        className: i()(c.nV, o.E8),
+        className: i()(u.nV, o.E8),
         children: [!a && (0, l.jsx)(r.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
-            className: c.wx,
+            className: u.wx,
             children: d.intl.string(d.t.hvVgAZ)
         }), n]
     })

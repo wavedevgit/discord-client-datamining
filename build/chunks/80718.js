@@ -9,15 +9,15 @@ var l = n(627968),
     s = n(933958),
     d = n(869003),
     o = n(58149),
-    c = n(632738),
-    u = n(546183),
+    u = n(632738),
+    c = n(546183),
     _ = n(652215),
     m = n(985018);
 let x = e => {
     let {
         application: t,
         reportId: n
-    } = e, [x, p] = a.useState(!1), g = (0, i.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
+    } = e, [x, p] = a.useState(!1), g = (0, i.bG)([c.default], () => c.default.getNewestTokenForApplication(t.id));
     a.useEffect(() => {
         null != g && p(!0)
     }, [g]);
@@ -39,7 +39,7 @@ let x = e => {
                 showFeedback: !1
             })
         }, [t.id, g, A, n]);
-    return null == t ? null : (0, l.jsx)(c.PQ, {
+    return null == t ? null : (0, l.jsx)(u.PQ, {
         title: m.intl.string(m.t.ygG62M),
         description: m.intl.string(m.t.S51EKg),
         buttonText: x ? m.intl.string(m.t.xXpoGV) : m.intl.string(m.t.JsiUnL),

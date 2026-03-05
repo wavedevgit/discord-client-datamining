@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(387408),
     d = n(763754),
     o = n(491182),
-    c = n(291812),
-    u = n(643204),
+    u = n(291812),
+    c = n(643204),
     _ = n(448368),
     m = n(538355),
     x = n(253932),
@@ -36,7 +36,7 @@ let b = e => {
         });
         return (0, l.jsxs)("div", {
             className: A.hQ,
-            children: [e, (0, l.jsx)(c.Ay, {
+            children: [e, (0, l.jsx)(u.Ay, {
                 message: t,
                 content: f,
                 compact: T
@@ -53,7 +53,7 @@ let b = e => {
             className: A.PI,
             children: (0, l.jsx)(o.A, {
                 childrenMessageContent: C(),
-                childrenHeader: (0, l.jsx)(u.Ay, {
+                childrenHeader: (0, l.jsx)(c.Ay, {
                     message: t,
                     channel: b,
                     author: n,

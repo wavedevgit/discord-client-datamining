@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(403362),
     d = n(861662),
     o = n(985018),
-    c = n(322367),
-    u = n(473169);
+    u = n(322367),
+    c = n(473169);
 let _ = ["cdn.discordapp.com", "media.discordapp.net"],
     m = /^(?:localhost|127\.0\.0\.1|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})$/,
     x = (0, s.m6)() ? /^https?:\/\/(?:(?:ptb\.|canary\.)?discord(?:app)?\.com|localhost(?::\d+)?|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(?::\d+)?)\/channels\/(?:@me|\d+)\/\d+\/\d+$/ : /^https:\/\/(?:ptb\.|canary\.)?discord(?:app)?\.com\/channels\/(?:@me|\d+)\/\d+\/\d+$/;
@@ -113,13 +113,13 @@ let h = e => {
             children: [(0, l.jsxs)(i.BJc, {
                 gap: 16,
                 children: [(0, l.jsxs)("div", {
-                    className: u.QB,
+                    className: c.QB,
                     children: [null != t && (0, l.jsx)("div", {
-                        className: u.QB,
+                        className: c.QB,
                         children: (0, l.jsxs)(i.Text, {
                             variant: "text-sm/bold",
                             children: [t, v && (0, l.jsx)("span", {
-                                className: c.m,
+                                className: u.m,
                                 children: "*"
                             })]
                         })
@@ -131,13 +131,13 @@ let h = e => {
                         autoFocus: !0
                     })]
                 }), E && null != _ && (0, l.jsxs)("div", {
-                    className: u.QB,
+                    className: c.QB,
                     children: [(0, l.jsx)("div", {
-                        className: u.QB,
+                        className: c.QB,
                         children: (0, l.jsxs)(i.Text, {
                             variant: "text-sm/bold",
                             children: [_, v && (0, l.jsx)("span", {
-                                className: c.m,
+                                className: u.m,
                                 children: "*"
                             })]
                         })

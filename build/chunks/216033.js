@@ -18,7 +18,7 @@ function o(e) {
                 is_localized: o
             }
         }
-    } = e, c = a.useMemo(() => r.A.reactParserFor({
+    } = e, u = a.useMemo(() => r.A.reactParserFor({
         ...r.A.defaultRules,
         link: s.B
     }), []);
@@ -31,7 +31,7 @@ function o(e) {
         }), null != n && (0, l.jsx)(i.Text, {
             variant: "text-sm/normal",
             className: d.r,
-            children: c(n)
+            children: u(n)
         })]
     }) : null
 }

@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(58149),
     d = n(662502),
     o = n(632738),
-    c = n(734057),
-    u = n(994500),
+    u = n(734057),
+    c = n(994500),
     _ = n(562153),
     m = n(652215),
     x = n(985018);
@@ -20,7 +20,7 @@ let p = e => {
         channelId: n,
         reportId: p,
         reportType: g
-    } = e, h = (0, i.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), A = (0, i.bG)([c.A], () => c.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), v = a.useCallback(() => {
+    } = e, h = (0, i.bG)([c.A], () => c.A.isBlocked(t.id), [t.id]), A = (0, i.bG)([u.A], () => u.A.getChannel(n), [n]), b = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), v = a.useCallback(() => {
         s.Ay.trackWithMetadata(m.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: p

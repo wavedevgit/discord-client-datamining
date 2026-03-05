@@ -1,6 +1,6 @@
 /** chunk id: 87746, original params: n,t,e (module,exports,require) **/
 e.d(t, {
-    Q: () => c
+    Q: () => o
 });
 var i = e(627968);
 e(64700);
@@ -11,7 +11,7 @@ var r = e(311907),
     s = e(287809),
     u = e(985018);
 
-function c(n) {
+function o(n) {
     let t = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
         e = (0, d.l)(n.id);
     return t?.isStaff() === !0 && n.isDM() && null == e ? (0, i.jsx)(l.Drp, {

@@ -9,8 +9,8 @@ var l = n(627968),
     s = n(397927),
     d = n(824552),
     o = n(573435),
-    c = n(973172),
-    u = n(186272),
+    u = n(973172),
+    c = n(186272),
     _ = n(546183),
     m = n(661191),
     x = n(985018),
@@ -21,7 +21,7 @@ let h = e => {
         entry: t
     } = e, {
         name: n
-    } = t, h = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? g, b = (0, c.A)({
+    } = t, h = (0, i.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? g, b = (0, u.A)({
         application: t
     }), v = a.useRef(!1);
     a.useEffect(() => {
@@ -58,7 +58,7 @@ let h = e => {
                         children: [(0, l.jsx)(s.Text, {
                             color: "text-default",
                             variant: "text-md/normal",
-                            children: (0, u.A)(b.length)
+                            children: (0, c.A)(b.length)
                         }), (0, l.jsx)(r.A, {
                             className: p.uM,
                             guilds: b,

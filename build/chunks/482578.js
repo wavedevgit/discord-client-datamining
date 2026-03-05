@@ -12,8 +12,8 @@ let o = e => {
     let t, {
             button: n,
             submitting: o,
-            disableNext: c,
-            onClick: u,
+            disableNext: u,
+            onClick: c,
             canNavigateBack: _,
             onBackClicked: m,
             isModeratorReport: x
@@ -38,10 +38,10 @@ let o = e => {
                 text: s.intl.string(s.t["13/7kX"])
             }), g && (0, l.jsx)(i.Button, {
                 onClick: () => {
-                    null != n && u(n)
+                    null != n && c(n)
                 },
                 variant: t,
-                disabled: o || c,
+                disabled: o || u,
                 buttonRef: p,
                 text: b
             })]

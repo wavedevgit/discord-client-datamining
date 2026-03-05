@@ -1,7 +1,7 @@
 /** chunk id: 319582, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    MR: () => u,
-    fY: () => c
+    MR: () => c,
+    fY: () => u
 }), n(321073);
 var l = n(64700),
     a = n(403362),
@@ -15,7 +15,7 @@ let o = {
     [d.Wb.SAFETY_SC_FILTERS_GRAPHIC_MEDIA]: r.A
 };
 
-function c(e) {
+function u(e) {
     return l.useMemo(() => {
         var t;
         let n;
@@ -26,7 +26,7 @@ function c(e) {
     }, [e])
 }
 
-function u(e, t) {
+function c(e, t) {
     return l.useMemo(() => e.map(e => {
         var n, l;
         let a;
