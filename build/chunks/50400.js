@@ -5,7 +5,7 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(396181),
+    l = n(162160),
     r = n(837381),
     a = n(311907),
     o = n(397927),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(941971),
     I = n(375855),
     N = n(900848),
-    b = n(65611),
-    S = n(652215),
+    S = n(65611),
+    b = n(652215),
     T = n(985018),
     v = n(308294);
 let y = {
@@ -127,17 +127,17 @@ class R extends s.PureComponent {
     getChannelIcon() {
         let {
             channel: e
-        } = this.props, t = e.type === S.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
+        } = this.props, t = e.type === b.rbe.DM ? f.default.getUser(e.getRecipientId()) : null;
         return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, u.Y)(e)
     }
     handleContextMenu = e => {
         let {
             channel: t
-        } = this.props, s = t.type === S.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
+        } = this.props, s = t.type === b.rbe.DM ? f.default.getUser(t.getRecipientId()) : null;
         null != s ? (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("96429")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("31885")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -146,7 +146,7 @@ class R extends s.PureComponent {
         }) : (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("93057")]).then(n.bind(n, 4027));
+            } = await Promise.all([n.e("97262"), n.e("15438")]).then(n.bind(n, 4027));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -170,7 +170,7 @@ class R extends s.PureComponent {
             hovered: m,
             animating: p
         } = this.state, g = e.isMultiUserDM() && null == e.icon, _ = () => (0, i.jsx)(o.jlP, {
-            to: S.BVt.CHANNEL(S.ME, e.id),
+            to: b.BVt.CHANNEL(b.ME, e.id),
             onMouseEnter: () => this.setState({
                 hovered: !0
             }),
@@ -206,8 +206,8 @@ class R extends s.PureComponent {
                     children: (0, i.jsx)(o.Qk9, {
                         rounded: !0,
                         selected: !1,
-                        lowerBadge: s > 0 ? (0, b.wN)(s, void 0, !0) : null,
-                        upperBadge: (0, b.oi)({
+                        lowerBadge: s > 0 ? (0, S.wN)(s, void 0, !0) : null,
+                        upperBadge: (0, S.oi)({
                             audio: r,
                             video: a,
                             screenshare: c,
@@ -235,8 +235,8 @@ let O = s.forwardRef(function(e, t) {
         E = (0, a.bG)([g.Ay], () => g.Ay.getMentionCount(n), [n]),
         I = c === n,
         N = !1,
-        b = !1;
-    (I || f) && (N = u === S._Of.VOICE, b = u === S._Of.VIDEO);
+        S = !1;
+    (I || f) && (N = u === b._Of.VOICE, S = u === b._Of.VIDEO);
     let T = (0, o.rdh)(o.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, i.jsx)(R, {
         ...e,
@@ -246,7 +246,7 @@ let O = s.forwardRef(function(e, t) {
         selected: C === n,
         badge: E,
         audio: N,
-        video: b,
+        video: S,
         stream: A,
         isCurrentUserInThisDMCall: I,
         size: T,

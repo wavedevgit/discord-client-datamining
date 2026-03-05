@@ -29,8 +29,8 @@ function N(e) {
         hangStatusActivity: t,
         channel: n,
         userId: N,
-        isSelf: b = !1,
-        analyticsSource: S,
+        isSelf: S = !1,
+        analyticsSource: b,
         onAction: T,
         className: v,
         iconClassName: y,
@@ -38,19 +38,19 @@ function N(e) {
     } = e, R = (0, l.bG)([u.A], () => u.A.getVoiceChannelId() === n.id, [n]), O = (0, l.bG)([d.A], () => d.A.can(C.xBc.CONNECT, n), [n]), L = null == t.emoji || (0, p.n)(t.emoji, n);
     s.useEffect(() => {
         h.default.track(C.HAw.VIEW_HANG_STATUS, {
-            source: S,
+            source: b,
             other_user_id: N,
             ...(0, g.A)(n.id)
         })
-    }, [S, n.id, N]);
+    }, [b, n.id, N]);
     let M = s.useCallback(() => {
             !R && O && (c.default.selectVoiceChannel(n.id), T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
-                source: S,
+                source: b,
                 ...(0, g.A)(n.id),
                 other_user_id: N,
                 cta_type: "join"
             }))
-        }, [R, O, n.id, N, S, T]),
+        }, [R, O, n.id, N, b, T]),
         D = s.useCallback(() => {
             if (!R || !L || null == t.state) return;
             let [e] = (0, _.e)(N, t.state);
@@ -60,13 +60,13 @@ function N(e) {
                     (0, A.hS)(t.details, t.emoji, !0)
                 } else(0, A.Iq)(e, !0);
                 T?.(), h.default.track(C.HAw.HANG_STATUS_CTA_CLICKED, {
-                    source: S,
+                    source: b,
                     ...(0, g.A)(n.id),
                     other_user_id: N,
                     cta_type: "swipe"
                 })
             }
-        }, [R, L, t, n.id, N, S, T]),
+        }, [R, L, t, n.id, N, b, T]),
         G = (0, m.Au)(N, t);
     return (0, i.jsxs)("div", {
         className: v ?? I.kL,
@@ -82,7 +82,7 @@ function N(e) {
                 delay: 0,
                 children: G
             })
-        }), R && !b ? (0, i.jsx)(a.m_, {
+        }), R && !S ? (0, i.jsx)(a.m_, {
             text: L ? void 0 : E.intl.string(E.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {
@@ -93,7 +93,7 @@ function N(e) {
                     disabled: !L
                 })
             })
-        }) : !b && O && (0, i.jsx)(o.Button, {
+        }) : !S && O && (0, i.jsx)(o.Button, {
             size: "sm",
             variant: "secondary",
             text: E.intl.string(E.t["B/dHXL"]),

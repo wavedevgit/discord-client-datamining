@@ -1,12 +1,37 @@
 /** chunk id: 849867, original params: n,t,e (module,exports,require) **/
 e.d(t, {
-    A: () => a
-}), e(627968), e(64700);
-var i = e(311907),
-    r = (e(397927), e(967198)),
-    l = e(652215);
+    A: () => A
+});
+var i = e(627968),
+    r = e(64700),
+    l = e(311907),
+    a = e(397927),
+    d = e(967198),
+    s = e(652215),
+    c = e(665606),
+    o = e(985018);
 
-function a(n) {
-    return (0, i.bG)([r.A], () => r.A.getGuildId()), n.type, l.rbe.GUILD_CATEGORY, __OVERLAY__ || l.YYv, null
+function A(n) {
+    let t = (0, l.bG)([d.A], () => d.A.getGuildId()),
+        A = n.type === s.rbe.GUILD_CATEGORY,
+        u = r.useCallback(() => {
+            (0, a.mMO)(async () => {
+                let {
+                    default: t
+                } = await e.e("59839").then(e.bind(e, 889186));
+                return e => (0, i.jsx)(t, {
+                    ...e,
+                    parentId: n.id
+                })
+            })
+        }, [n.id]);
+    return __OVERLAY__ || t !== s.YYv || !A ? null : (0, i.jsx)(a.Drp, {
+        id: "add-channel-to-category",
+        trailingIndicator: {
+            type: "icon",
+            icon: a.TIR
+        },
+        label: o.intl.string(c.default["1QJmIL"]),
+        action: u
+    })
 }
-e(985018)

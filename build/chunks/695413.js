@@ -1,7 +1,7 @@
 /** chunk id: 695413, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => C
+    A: () => E
 });
 var n = s(627968),
     r = s(64700),
@@ -19,9 +19,9 @@ var n = s(627968),
     p = s(484469),
     f = s(661623),
     x = s(357704),
-    E = s(758836);
-let C = e => {
-    let t, s, C, {
+    C = s(758836);
+let E = e => {
+    let t, s, E, {
             isBlockLoading: b = !1,
             heroBlock: A,
             tab: S
@@ -32,8 +32,8 @@ let C = e => {
         j = (0, l.bG)([c.A], () => c.A.getPurchase(A.rewardSkuId)),
         {
             products: k
-        } = (t = (0, _.A)(), s = r.useMemo(() => b ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != j), [b, t, A.rankedSkuIds, j, A.rewardSkuId]), C = (0, u.p)()(s), {
-            products: (0, g.X)(C)
+        } = (t = (0, _.A)(), s = r.useMemo(() => b ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != j), [b, t, A.rankedSkuIds, j, A.rewardSkuId]), E = (0, u.p)()(s), {
+            products: (0, g.X)(E)
         }),
         T = r.useMemo(() => !b && 0 !== A.rankedSkuIds.length && !(k.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [b, A.rankedSkuIds, k.length]),
         O = b || T,
@@ -66,7 +66,7 @@ let C = e => {
                     },
                     children: (0, n.jsx)(m.A, {
                         skuId: e?.skuId,
-                        prioritizedCurrency: S === E.G2.ORBS ? h.Hi.ORBS : I ? h.Hi.FIAT : void 0,
+                        prioritizedCurrency: S === C.G2.ORBS ? h.Hi.ORBS : I ? h.Hi.FIAT : void 0,
                         onClickAnalytics: (0, h.UU)(e, S, v)
                     }, e.skuId)
                 }, e?.skuId)

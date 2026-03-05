@@ -1,8 +1,8 @@
 /** chunk id: 292103, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => S,
+    Ay: () => _,
     S_: () => b,
-    zo: () => _
+    zo: () => S
 });
 var i = n(627968);
 n(64700);
@@ -23,7 +23,7 @@ var l = n(311907),
     y = n(985018),
     E = n(641131);
 
-function S(e) {
+function _(e) {
     let t = (0, l.bG)([m.A], () => m.A.getGuildId()),
         n = (0, A.Qo)(t);
     return (0, f.ul)(e) ? (0, i.jsx)(r.Drp, {
@@ -39,7 +39,7 @@ function S(e) {
     }) : null
 }
 
-function _(e) {
+function S(e) {
     let t = (0, l.bG)([u.A], () => u.A.hasReportedMessage(e.channel_id, e.id)),
         n = (0, g.KB)(e),
         o = n ? [a.M.REPORT_TO_MOD_NEW_TAG] : [],

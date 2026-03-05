@@ -30,7 +30,7 @@ function f(e) {
         reducedMotion: E
     } = s.useContext(o.CZY), I = (0, d.A)({
         userId: l.id
-    }), N = null != l.member ? (0, g.xT)(l.member) : null, b = e => {
+    }), N = null != l.member ? (0, g.xT)(l.member) : null, S = e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -65,7 +65,7 @@ function f(e) {
                 onClick: t => {
                     t.stopPropagation(), e.onClick(t)
                 },
-                onContextMenu: b,
+                onContextMenu: S,
                 children: (0, i.jsx)(o.euF, {
                     src: N ?? l.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,

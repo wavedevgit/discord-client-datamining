@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(725323),
     I = n(611924),
     N = n(392135),
-    b = n(95550),
-    S = n(380335),
+    S = n(95550),
+    b = n(380335),
     T = n(309199),
     v = n(157550),
     y = n(97469),
@@ -308,7 +308,7 @@ class P extends s.Component {
             children: [(0, i.jsx)("span", {
                 className: G.TK,
                 children: D.intl.string(D.t.YUU0RF)
-            }), (0, i.jsx)(b.Ay, {
+            }), (0, i.jsx)(S.Ay, {
                 tooltip: D.intl.string(n ? D.t.bA875g : D.t["6Urw1t"]),
                 tooltipPosition: "top",
                 className: G.U2,
@@ -381,13 +381,13 @@ let w = e => {
         listScrollerRef: d
     } = e, h = s.Children.count(r), p = N.A.useConfig({
         location: "PrivateChannelsList"
-    }).enabled, _ = j.A.getMutablePrivateChannels(), f = (0, T.uX)(_), x = (0, c.yK)([O.default, S.A, v.A], () => {
+    }).enabled, _ = j.A.getMutablePrivateChannels(), f = (0, T.uX)(_), x = (0, c.yK)([O.default, b.A, v.A], () => {
         let e = O.default.getPrivateChannelIds();
-        return (0, T.eh)(e, [S.A, v.A])
+        return (0, T.eh)(e, [b.A, v.A])
     });
     (0, I.P)(E._);
     let {
-        analyticsLocations: b
+        analyticsLocations: S
     } = (0, g.Ay)(m.A.CONTACTS_LIST), R = (0, y.NC)(), {
         keyboardModeEnabled: L,
         version: M
@@ -428,7 +428,7 @@ let w = e => {
         setFocus: U
     });
     return (0, i.jsx)(g.f5, {
-        value: b,
+        value: S,
         children: (0, i.jsx)(a.hD, {
             navigator: B,
             children: (0, i.jsx)(P, {

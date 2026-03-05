@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(440938),
     f = s(344011),
     x = s(295811),
-    E = s(335657),
-    C = s(100057),
+    C = s(335657),
+    E = s(100057),
     b = s(599062),
     A = s(159439),
     S = s(998694),
@@ -38,8 +38,8 @@ var n = s(627968),
     M = s(758836),
     P = s(652215),
     D = s(985018),
-    w = s(201073);
-let H = [M.G2.HOME, M.G2.ORBS],
+    H = s(201073);
+let w = [M.G2.HOME, M.G2.ORBS],
     U = e => {
         let {
             tab: t
@@ -48,14 +48,14 @@ let H = [M.G2.HOME, M.G2.ORBS],
             null != s && "" !== s && fetch(s).then(e => e.json()).then(e => a(e)).catch(() => a(null))
         }, [s]), t === M.G2.ORBS) ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)(N.A, {}), (0, n.jsx)("div", {
-                className: i()(w.YB, w.GS),
+                className: i()(H.YB, H.GS),
                 children: (0, n.jsx)(g.Qs, {
                     tenantId: P.FYj,
                     layoutId: "1478495181551440044"
                 })
             })]
         }) : (0, n.jsx)("div", {
-            className: i()(w.YB, w.GS),
+            className: i()(H.YB, H.GS),
             children: null != s && "" !== s && null != l ? (0, n.jsx)(g.Ay, {
                 layout: l
             }) : (0, n.jsx)(g.Qs, {
@@ -75,9 +75,9 @@ let H = [M.G2.HOME, M.G2.ORBS],
             includeUnpublished: u
         } = (0, S.A)(), [_, g] = r.useState(!1), h = (0, p.uM)(), x = h?.sessionId ?? "";
         r.useEffect(() => {
-            (0, C.z)({
+            (0, E.z)({
                 sessionId: x,
-                checkpoint: C.t.SHOP_MOUNTED,
+                checkpoint: E.t.SHOP_MOUNTED,
                 tab: o,
                 unpublishedCategoriesShown: u,
                 cacheDisabled: d
@@ -88,7 +88,7 @@ let H = [M.G2.HOME, M.G2.ORBS],
             fetchShopHomeError: N,
             shopBlocks: R,
             refreshShopHome: P
-        } = (0, E.y)(o, {
+        } = (0, C.y)(o, {
             noCache: d,
             includeUnpublished: u,
             includeBundles: !0,
@@ -96,23 +96,23 @@ let H = [M.G2.HOME, M.G2.ORBS],
         }, {
             sessionId: x,
             tab: o
-        }), H = r.useCallback(() => {
+        }), w = r.useCallback(() => {
             P()
         }, [P]);
         return (r.useEffect(() => {
-            null != N || A || 0 === R.length || (0, C.z)({
+            null != N || A || 0 === R.length || (0, E.z)({
                 sessionId: x,
-                checkpoint: C.t.SHOP_RENDERED,
+                checkpoint: E.t.SHOP_RENDERED,
                 tab: o,
                 unpublishedCategoriesShown: u,
                 cacheDisabled: d
             })
         }, [N, A, R.length, u, d, x, o]), null != N) ? (0, n.jsx)(b.h, {
-            onRetry: H,
+            onRetry: w,
             errorOrigin: b.A.SHOP_PAGE,
             errorMessage: N.message
         }) : A || 0 === R.length ? (0, n.jsxs)("div", {
-            className: i()(w.g4, w.Of),
+            className: i()(H.g4, H.Of),
             children: [(0, n.jsx)(j.A, {
                 isLoading: A,
                 handleTransition: t,
@@ -155,7 +155,7 @@ let H = [M.G2.HOME, M.G2.ORBS],
                             isLoading: A || l,
                             numVisibleItems: s,
                             sortedSkuIds: p,
-                            buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? w.w : void 0,
+                            buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? H.w : void 0,
                             prioritizeUserDiscounts: o === M.G2.HOME,
                             tab: o,
                             orbsSupportedOnly: o === M.G2.ORBS
@@ -224,8 +224,8 @@ let H = [M.G2.HOME, M.G2.ORBS],
                 return (0, n.jsx)(f.rW, {
                     blockType: e.type,
                     children: (0, n.jsx)("div", {
-                        className: i()(w.v1, w.Of, {
-                            [w.J1]: 0 === d || h
+                        className: i()(H.v1, H.Of, {
+                            [H.J1]: 0 === d || h
                         }),
                         children: u
                     }, d)
@@ -240,28 +240,28 @@ let H = [M.G2.HOME, M.G2.ORBS],
             transitionState: l
         } = e, i = r.useRef(null), {
             handleScroll: a
-        } = (0, u.X)(i, s), o = (0, A.U)(), c = (0, _.f)("Shop Home"), g = (0, p.uM)(), [m, f] = r.useState(M.md), [x, E] = r.useState(!1);
+        } = (0, u.X)(i, s), o = (0, A.U)(), c = (0, _.f)("Shop Home"), g = (0, p.uM)(), [m, f] = r.useState(M.md), [x, C] = r.useState(!1);
         return r.useEffect(() => {
             if (null != i.current) {
                 let e = () => {
                         if (null == i.current) return;
                         let e = i.current.getDistanceFromBottom();
-                        m >= 36 ? E(e < 20) : e <= 200 && f(e => e + M.md)
+                        m >= 36 ? C(e < 20) : e <= 200 && f(e => e + M.md)
                     },
                     t = i.current.getScrollerNode();
                 return t?.addEventListener("scroll", e), () => {
                     t?.removeEventListener("scroll", e)
                 }
             }
-        }, [i, m, f, E]), (0, n.jsx)(d.T7Y, {
-            className: w.OW,
+        }, [i, m, f, C]), (0, n.jsx)(d.T7Y, {
+            className: H.OW,
             ref: i,
             onScroll: a,
             children: (0, n.jsxs)("div", {
-                className: w.bx,
+                className: H.bx,
                 children: [(0, n.jsxs)("div", {
-                    className: w.rb,
-                    children: [c && H.includes(s) ? (0, n.jsx)(U, {
+                    className: H.rb,
+                    children: [c && w.includes(s) ? (0, n.jsx)(U, {
                         tab: s
                     }) : (0, n.jsx)(F, {
                         handleTransition: t,
@@ -269,7 +269,7 @@ let H = [M.G2.HOME, M.G2.ORBS],
                         isFetchingCategories: o,
                         tab: s
                     }), s !== M.G2.CATALOG && m >= 36 && (0, n.jsxs)("div", {
-                        className: w.R$,
+                        className: H.R$,
                         children: [(0, n.jsx)(d.Heading, {
                             variant: "heading-md/semibold",
                             children: D.intl.string(D.t.Yr70c4)

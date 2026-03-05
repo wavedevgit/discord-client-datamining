@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(389996),
     I = n(743987),
     N = n(900179),
-    b = n(946356),
-    S = n(810396),
+    S = n(946356),
+    b = n(810396),
     T = n(35241),
     v = n(587168),
     y = n(996988),
@@ -61,7 +61,7 @@ function L(e) {
             fetchStartedAt: M?.fetchStartedAt,
             fetchEndedAt: M?.fetchEndedAt,
             isLoaded: M?.isLoaded,
-            children: (0, i.jsxs)(b.A, {
+            children: (0, i.jsxs)(S.A, {
                 ref: w,
                 user: t,
                 displayProfile: M,
@@ -88,7 +88,7 @@ function L(e) {
                         })]
                     }), (0, i.jsxs)("div", {
                         className: O.rf,
-                        children: [(0, i.jsx)(S.A, {
+                        children: [(0, i.jsx)(b.A, {
                             user: t,
                             guildId: n.guild_id,
                             nickname: A.Ay.getName(null, n.id, t),
@@ -98,7 +98,7 @@ function L(e) {
                                 displayProfile: M,
                                 themeType: y.d.SIDEBAR
                             })
-                        }), (0, i.jsxs)(b.A.Overlay, {
+                        }), (0, i.jsxs)(S.A.Overlay, {
                             className: O.Lw,
                             children: [(0, i.jsx)(N.A, {
                                 heading: j.intl.string(j.t.ZzAR2Y),

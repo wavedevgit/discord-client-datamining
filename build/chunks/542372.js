@@ -30,7 +30,7 @@ function C(e) {
         currentWindow: I
     } = e, {
         parentAnalyticsLocation: N
-    } = (0, c.Ay)(), b = n === x.BRT.POPOUT, S = s.useRef(null), {
+    } = (0, c.Ay)(), S = n === x.BRT.POPOUT, b = s.useRef(null), {
         currentLayout: T,
         mode: v
     } = (0, l.cf)([d.A], () => {
@@ -44,22 +44,22 @@ function C(e) {
         }
     }, [t, n]), y = (0, l.bG)([m.A], () => m.A.getVoiceChannelId() === t.id, [t.id]);
     s.useEffect(() => {
-        S.current = v
+        b.current = v
     });
     let j = s.useRef(T),
         {
             currentDocument: R,
             rootNode: O
         } = s.useMemo(() => {
-            let e = null != E && b ? E.document : document,
+            let e = null != E && S ? E.document : document,
                 t = I.document.getElementById("app-mount");
             return {
                 currentWindow: I,
                 currentDocument: e,
                 rootNode: t
             }
-        }, [E, b, I]),
-        L = C && !b,
+        }, [E, S, I]),
+        L = C && !S,
         M = v === x._Of.VIDEO && y && !L,
         D = s.useCallback((e, i) => {
             i !== e && (a.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && g._.dispatch(x.jej.TEXTAREA_BLUR))
@@ -93,16 +93,16 @@ function C(e) {
             maybeLeaveFullScreen: t
         } = w.current;
         return p.default.track(x.HAw.VIDEO_LAYOUT_TOGGLED, {
-            video_layout: b ? "popout" : T,
+            video_layout: S ? "popout" : T,
             ...(0, o.QS)(e.id)
         }), () => {
-            b && (0, _.isMac)() || t(T)
+            S && (0, _.isMac)() || t(T)
         }
-    }, [T, b]), s.useEffect(() => {
-        null != O && S.current === x._Of.VIDEO && v === x._Of.VOICE && (0, f.sP)(O, R)
-    }, [R, v, S, O]), s.useEffect(() => {
-        !y && b && r.h.wait(() => h.close(x.MLl.CHANNEL_CALL_POPOUT))
-    }, [y, b]), M) ? (0, i.jsx)(A.A, {
+    }, [T, S]), s.useEffect(() => {
+        null != O && b.current === x._Of.VIDEO && v === x._Of.VOICE && (0, f.sP)(O, R)
+    }, [R, v, b, O]), s.useEffect(() => {
+        !y && S && r.h.wait(() => h.close(x.MLl.CHANNEL_CALL_POPOUT))
+    }, [y, S]), M) ? (0, i.jsx)(A.A, {
         themeable: !1,
         node: O,
         guestWindow: E,

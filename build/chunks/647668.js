@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(164956),
     I = n(392567),
     N = n(63995),
-    b = n(69407),
-    S = n(624265),
+    S = n(69407),
+    b = n(624265),
     T = n(970278),
     v = n(21119),
     y = n(907459),
@@ -90,7 +90,7 @@ function V(e) {
                 channel: t
             } = e;
             return t.id
-        }), ...Object.values(T.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, S.Ay)(t), a = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([D.Ay], () => D.Ay.getVoiceStates(t), [t]), p = (0, c.yK)([O.A], () => O.A.getBlockedOrIgnoredIDs()), g = o().flatMap(n, e => {
+        }), ...Object.values(T.A.getThreadsForGuild(t)).flatMap(e => Object.keys(e))], [t]), l = (0, b.Ay)(t), a = s.useMemo(() => l.map(e => e.id), [l]), d = (0, c.bG)([D.Ay], () => D.Ay.getVoiceStates(t), [t]), p = (0, c.yK)([O.A], () => O.A.getBlockedOrIgnoredIDs()), g = o().flatMap(n, e => {
             if (e === Y.afkChannelId) return [];
             let t = (d[e] ?? []).map(e => {
                 let {
@@ -101,7 +101,7 @@ function V(e) {
             return (0, m.aw)(t, p)
         }), _ = (0, c.yK)([N.A], () => o().flatMap(a, e => {
             if (e === Y.afkChannelId) return [];
-            let t = N.A.getMutableParticipants(e, b.ip.SPEAKER).filter(e => e.type === b.wY.VOICE).map(e => {
+            let t = N.A.getMutableParticipants(e, S.ip.SPEAKER).filter(e => e.type === S.wY.VOICE).map(e => {
                 let {
                     user: t
                 } = e;
@@ -110,7 +110,7 @@ function V(e) {
             return (0, m.aw)(t, p)
         })), f = (0, c.bG)([N.A], () => {
             let e = 0;
-            for (let t of a) e += N.A.getParticipantCount(t, b.ip.AUDIENCE);
+            for (let t of a) e += N.A.getParticipantCount(t, S.ip.AUDIENCE);
             return e
         }), x = (0, c.yK)([j.A], () => {
             let e = j.A.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);

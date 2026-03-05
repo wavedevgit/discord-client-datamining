@@ -8,7 +8,7 @@ var i = n(627968),
     l = n(503698),
     r = n.n(l),
     a = n(131346),
-    o = n(396181),
+    o = n(162160),
     c = n(837381),
     d = n(607399),
     u = n(417597),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(696451),
     I = n(711014),
     N = n(676279),
-    b = n(263715),
-    S = n(941971),
+    S = n(263715),
+    b = n(941971),
     T = n(264409),
     v = n(531053),
     y = n(647668),
@@ -90,7 +90,7 @@ let P = s.memo(function(e) {
         [{
             dragging: el
         }, er] = (0, a.i)({
-            type: b.PJ.GUILD,
+            type: S.PJ.GUILD,
             item: () => (requestAnimationFrame(() => {
                 l?.()
             }), {
@@ -139,10 +139,10 @@ let P = s.memo(function(e) {
         q || ec(!0)
     }
 
-    function eb() {
+    function eS() {
         q || ec(!1)
     }
-    let eS = s.useCallback(e => {
+    let eb = s.useCallback(e => {
             n?.(ee, e)
         }, [ee, n]),
         eT = (0, A.rdh)(A.LU0.modules.guildbar.AVATAR_SIZE);
@@ -166,7 +166,7 @@ let P = s.memo(function(e) {
             name: w.name,
             onClick: e_,
             onMouseEnter: eN,
-            onMouseLeave: eb,
+            onMouseLeave: eS,
             onMouseDown: ef,
             onContextMenu: eC,
             onKeyDown: eE,
@@ -192,7 +192,7 @@ let P = s.memo(function(e) {
                     name: w.name,
                     onClick: e_,
                     onMouseEnter: eN,
-                    onMouseLeave: eb,
+                    onMouseLeave: eS,
                     onMouseDown: ef,
                     onContextMenu: eC,
                     onKeyDown: eE,
@@ -249,8 +249,8 @@ let P = s.memo(function(e) {
             })
         });
     return (0, i.jsxs)(R.c, {
-        ref: eS,
-        children: [(0, i.jsx)(S.A, {
+        ref: eb,
+        children: [(0, i.jsx)(b.A, {
             hovered: !el && ed,
             selected: !el && V,
             unread: !el && B,

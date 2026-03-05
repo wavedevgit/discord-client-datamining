@@ -1,6 +1,6 @@
 /** chunk id: 982308, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -20,8 +20,8 @@ var l = n(503698),
     h = n(652215),
     y = n(307731),
     E = n(985018),
-    S = n(852620);
-let _ = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+    _ = n(852620);
+let S = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
 function b(e) {
     let {
@@ -45,14 +45,14 @@ function b(e) {
             "aria-label": E.intl.formatToPlainString(E.t["/iYSo6"], {
                 emojiName: t.name
             }),
-            className: a()(S.x6, {
-                [S.in]: n
+            className: a()(_.x6, {
+                [_.in]: n
             }),
             children: null == r || "" === r.trim() ? (0, i.jsx)("span", {
-                className: a()("emoji", "emoji-text", S.Kk),
+                className: a()("emoji", "emoji-text", _.Kk),
                 children: o
             }) : (0, i.jsx)("img", {
-                className: S.Kk,
+                className: _.Kk,
                 src: r,
                 alt: ""
             })
@@ -60,8 +60,8 @@ function b(e) {
     })
 }
 
-function I(e, t) {
-    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && _.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
+function v(e, t) {
+    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && S.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,
         intention: y.b_.REACTION
@@ -70,7 +70,7 @@ function I(e, t) {
     let l = A.jW.useSetting(),
         a = (0, g.Id)(t);
     return (0, r.bG)([m.A], () => l && a && (t.isPrivate() || m.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
-        className: S.iE,
+        className: _.iE,
         children: n.map((n, l) => (0, i.jsx)(o.Drp, {
             id: `quickreact-${n.id??l}`,
             render: e => {

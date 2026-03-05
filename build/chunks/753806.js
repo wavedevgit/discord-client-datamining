@@ -13,8 +13,8 @@ var s = r(627968),
     d = r(614690),
     h = r(256796),
     _ = r(822382),
-    E = r(23667),
-    S = r(956467),
+    S = r(23667),
+    E = r(956467),
     f = r(408730),
     g = r(771650),
     A = r(616252),
@@ -24,12 +24,12 @@ var s = r(627968),
     y = r(921242),
     T = r(652215);
 
-function I(e) {
+function x(e) {
     let t = (0, _.bS)(e);
-    A.A.clearSearchEditorState(e), h.A.clearSearchMessages(t), E.A.cleanUp(t), S.A.cleanUp(t)
+    A.A.clearSearchEditorState(e), h.A.clearSearchMessages(t), S.A.cleanUp(t), E.A.cleanUp(t)
 }
 
-function x(e) {
+function I(e) {
     let {
         searchContext: t,
         searchQueryString: r,
@@ -62,7 +62,7 @@ function L(e) {
                 searchQueryString: r,
                 searchQuery: s
             } = e;
-            x({
+            I({
                 searchContext: t,
                 searchQueryString: r,
                 searchQuery: s,
@@ -80,7 +80,7 @@ function L(e) {
                 searchQueryString: r,
                 searchQuery: s
             } = e;
-            x({
+            I({
                 searchContext: t,
                 searchQueryString: r,
                 searchQuery: s,
@@ -109,7 +109,7 @@ function C(e) {
     u._.dispatch(T.jej.SET_SEARCH_QUERY, e)
 }
 let v = {
-    cleanUpSearchState: I,
+    cleanUpSearchState: x,
     fetchMessages: L,
     setSearchInputText: N,
     appendToSearchInputText: function(e, t) {
@@ -174,13 +174,13 @@ let v = {
             searchQueryString: a,
             offset: 0
         });
-        let E = (0, _.bS)(t);
-        i.A.setSelectedSearchContext(E), A.A.clearSearchEditorState(e), h.A.clearSearchMessages(s), r?.()
+        let S = (0, _.bS)(t);
+        i.A.setSelectedSearchContext(S), A.A.clearSearchEditorState(e), h.A.clearSearchMessages(s), r?.()
     },
     cleanUpPrivateChannelSearchState: function() {
         p.A.getSearchStateIds().forEach(e => {
             let t = o.A.getChannel(e);
-            null != t && t.isPrivate() && I({
+            null != t && t.isPrivate() && x({
                 type: T.I4_.CHANNEL,
                 channelId: t.id
             })

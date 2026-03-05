@@ -13,8 +13,8 @@ var s = r(627968),
     d = r(734057),
     h = r(309010),
     _ = r(692986),
-    E = r(822382),
-    S = r(753806),
+    S = r(822382),
+    E = r(753806),
     f = r(424913),
     g = r(65600),
     A = r(145331),
@@ -23,9 +23,9 @@ var s = r(627968),
     m = r(768570),
     y = r(652215),
     T = r(996316);
-let I = o()("2015-05-15").local();
+let x = o()("2015-05-15").local();
 
-function x(e) {
+function I(e) {
     let {
         items: t,
         navId: r,
@@ -82,7 +82,7 @@ let L = n.forwardRef(function(e, t) {
                 performSearch: r,
                 replace: s
             } = e;
-            S.A.setSearchQuery({
+            E.A.setSearchQuery({
                 query: t,
                 performSearch: r,
                 replace: s,
@@ -90,7 +90,7 @@ let L = n.forwardRef(function(e, t) {
                 searchQuerySource: m.Q_.SEARCH_POPOUT
             }), h(-1)
         }, [a, h]), {
-            items: E,
+            items: S,
             itemsData: g
         } = (0, f.A)({
             resultsState: a,
@@ -155,9 +155,9 @@ let L = n.forwardRef(function(e, t) {
             id: l,
             tabIndex: -1,
             "aria-activedescendant": `${l}-${u}`,
-            className: E.length > 0 ? T.kL : void 0,
-            children: (0, s.jsx)(x, {
-                items: E,
+            className: S.length > 0 ? T.kL : void 0,
+            children: (0, s.jsx)(I, {
+                items: S,
                 navId: l,
                 selectedIndex: u
             })
@@ -185,11 +185,11 @@ let L = n.forwardRef(function(e, t) {
             className: a()(T.kL, T.Wl),
             children: (0, s.jsx)(c.xuO, {
                 onSelect: e => {
-                    let t = (0, E.bS)(i);
+                    let t = (0, S.bS)(i);
                     (0, A.kc)({
                         searchContext: i,
                         searchQuery: g.A.getSearchResultsQuery(t),
-                        searchQueryString: S.A.getSearchInputText(i),
+                        searchQueryString: E.A.getSearchInputText(i),
                         searchTokenType: l.mode.filter,
                         searchAutocompleteGroup: y.x2k.DATES,
                         searchAutocompleteMode: l.mode,
@@ -197,7 +197,7 @@ let L = n.forwardRef(function(e, t) {
                         isSearchFilterAnswer: !0,
                         isSearchFilterComplete: !1,
                         searchAutocompleteSelectAction: m.oi.CLICK
-                    }), S.A.setSearchQuery({
+                    }), E.A.setSearchQuery({
                         query: e.format(y.ump) + " ",
                         performSearch: !0,
                         replace: !1,
@@ -206,7 +206,7 @@ let L = n.forwardRef(function(e, t) {
                     })
                 },
                 maxDate: o()().local(),
-                minDate: I,
+                minDate: x,
                 calendarClassName: T.BJ
             })
         })
@@ -221,7 +221,7 @@ let L = n.forwardRef(function(e, t) {
                 t = h.A.getChannelId();
             return [e, d.A.getChannel(t)]
         });
-        return (0, E.av)(a.mode.filter) ? (0, s.jsx)(b, {
+        return (0, S.av)(a.mode.filter) ? (0, s.jsx)(b, {
             navId: n,
             resultsState: a,
             searchContext: r

@@ -25,13 +25,13 @@ function f(e) {
         catalogBannerStatic: _,
         catalogBannerAnimated: f,
         catalogBannerRive: x
-    } = (0, m.MV)(t), E = r.useRef(null), C = null != x;
+    } = (0, m.MV)(t), C = r.useRef(null), E = null != x;
     return (0, n.jsxs)("div", {
-        ref: E,
+        ref: C,
         className: i()(p.sW, {
-            [p.by]: C
+            [p.by]: E
         }),
-        children: [C ? (0, n.jsx)(o._, {
+        children: [E ? (0, n.jsx)(o._, {
             src: x,
             fit: "cover",
             alignment: "center-left",
@@ -39,7 +39,7 @@ function f(e) {
                 width: "100%",
                 height: "100%"
             },
-            eventTargetRef: E,
+            eventTargetRef: C,
             autoplay: !0
         }) : (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)("img", {

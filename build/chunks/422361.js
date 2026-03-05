@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(47167),
     I = n(262763),
     N = n(5932),
-    b = n(857253),
-    S = n(202384),
+    S = n(857253),
+    b = n(202384),
     T = n(51758),
     v = n(721592),
     y = n(508654),
@@ -101,7 +101,7 @@ class ee extends K.Ay {
         null != s && (0, h.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("81107")]).then(n.bind(n, 698193));
+            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("18159")]).then(n.bind(n, 698193));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -170,7 +170,7 @@ class ee extends K.Ay {
         let {
             channel: e
         } = this.props, t = e.getGuildId();
-        null != t && (0, T.V)(t) && (0, S.Ze)(t), this.handleVoiceConnect()
+        null != t && (0, T.V)(t) && (0, b.Ze)(t), this.handleVoiceConnect()
     };
     handleVoiceStatusClick = e => {
         let {
@@ -309,8 +309,8 @@ class ee extends K.Ay {
             showTutorial: E,
             hasActiveEvent: I,
             embeddedApps: N,
-            isSubscriptionGated: b,
-            isFavoriteSuggestion: S,
+            isSubscriptionGated: S,
+            isFavoriteSuggestion: b,
             withGuildIcon: T,
             hasStartTime: v,
             shouldHighlightChannel: y,
@@ -355,7 +355,7 @@ class ee extends K.Ay {
                             }),
                             hasActiveEvent: I,
                             channel: e,
-                            selected: !S && t,
+                            selected: !b && t,
                             connected: n,
                             unread: n ? s : void 0,
                             resolvedUnreadSetting: l,
@@ -369,23 +369,23 @@ class ee extends K.Ay {
                                 this.handleContextMenu(e)
                             },
                             connectDragPreview: g,
-                            isFavoriteSuggestion: S,
+                            isFavoriteSuggestion: b,
                             "aria-label": (0, x.Ay)({
                                 channel: e,
                                 unread: s,
                                 mentionCount: a,
                                 userCount: D,
                                 embeddedActivitiesCount: N.length,
-                                isSubscriptionGated: b
+                                isSubscriptionGated: S
                             }),
                             "aria-describedby": (0, C.A)({
                                 channel: e,
                                 embeddedApps: N
                             }),
                             withGuildIcon: T,
-                            children: [S && (0, i.jsxs)(i.Fragment, {
+                            children: [b && (0, i.jsxs)(i.Fragment, {
                                 children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-                            }), !S && (0, i.jsxs)(i.Fragment, {
+                            }), !b && (0, i.jsxs)(i.Fragment, {
                                 children: [this.renderOpenChatButton(), this.renderInviteButton(), this.renderEditButton(), this.renderChannelInfo()]
                             })]
                         })
@@ -430,7 +430,7 @@ function en(e) {
     }), A = (0, a.bG)([B.A], () => B.A.hasVideo(n.id)), m = (0, p.Ay)(n), g = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
         isSubscriptionGated: I,
         needSubscriptionToAccess: N
-    } = (0, v.A)(n.id), S = (0, b.A)(), T = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || S?.channelId === n.id, {
+    } = (0, v.A)(n.id), b = (0, S.A)(), T = (0, a.bG)([V.Ay], () => V.Ay.isFavorite(t.id, n.id)), j = e.connected || b?.channelId === n.id, {
         enableHangStatus: L,
         showEmptyChannelTopic: M
     } = (0, R.$j)({

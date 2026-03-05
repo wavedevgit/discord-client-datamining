@@ -19,15 +19,15 @@ var i = n(627968),
     h = n(690521),
     y = n(652215),
     E = n(307731),
-    S = n(985018),
-    _ = n(451590);
+    _ = n(985018),
+    S = n(451590);
 
 function b(e, t) {
     let {
         reducedMotion: n
     } = l.useContext(o.CZY), a = (0, g.Id)(t), r = (0, s.bG)([m.A], () => (t.isPrivate() || m.A.can(y.xBc.ADD_REACTIONS, t)) && a, [t, a]), p = (0, d.D6)(t.getGuildId());
     if (!A.jW.getSetting() || !r) return null;
-    let _ = p.filter(e => !h.Ay.isEmojiFilteredOrLocked({
+    let S = p.filter(e => !h.Ay.isEmojiFilteredOrLocked({
         emoji: e,
         channel: t,
         intention: E.b_.REACTION
@@ -35,7 +35,7 @@ function b(e, t) {
         color: "default",
         id: l.id ?? l.optionallyDiverseSequence ?? l.name,
         label: `:${l.name}:`,
-        icon: e => (0, i.jsx)(I, {
+        icon: e => (0, i.jsx)(v, {
             ...e,
             reducedMotionEnabled: n.enabled,
             emoji: l
@@ -53,7 +53,7 @@ function b(e, t) {
     }, a));
     return (0, i.jsx)(o.Drp, {
         id: "add-reaction",
-        label: S.intl.string(S.t.lfIHs4),
+        label: _.intl.string(_.t.lfIHs4),
         leadingAccessory: {
             type: "icon",
             icon: o.nm2
@@ -65,10 +65,10 @@ function b(e, t) {
         },
         color: "default",
         children: (0, i.jsxs)(i.Fragment, {
-            children: [_, (0, i.jsx)(o.bXX, {}), (0, i.jsx)(o.Drp, {
+            children: [S, (0, i.jsx)(o.bXX, {}), (0, i.jsx)(o.Drp, {
                 color: "default",
                 id: "other-reactions",
-                label: S.intl.string(S.t["OBCR+p"]),
+                label: _.intl.string(_.t["OBCR+p"]),
                 icon: o.nm2,
                 leadingAccessory: {
                     type: "icon",
@@ -84,7 +84,7 @@ function b(e, t) {
     })
 }
 
-function I(e) {
+function v(e) {
     let {
         emoji: t,
         reducedMotionEnabled: n,
@@ -92,7 +92,7 @@ function I(e) {
         isFocused: a = !1
     } = e;
     return (0, i.jsx)("img", {
-        className: r()(l, _.Z),
+        className: r()(l, S.Z),
         src: null != t.id ? p.Ay.getEmojiURL({
             id: t.id,
             animated: t.animated && (!n || a),

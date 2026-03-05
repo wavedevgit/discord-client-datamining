@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(396181),
+    a = n(162160),
     o = n(311907),
     c = n(827734);
 n(990078);
@@ -26,8 +26,8 @@ var m = n(952790),
     E = n(851109),
     I = n(706341),
     N = n(932883),
-    b = n(599486),
-    S = n(320697),
+    S = n(599486),
+    b = n(320697),
     T = n(394953),
     v = n(628325),
     y = n(524628),
@@ -57,19 +57,19 @@ function P(e) {
         includePanelSpacing: t
     } = e, n = (0, N.op)(), {
         selectedFilter: l
-    } = (0, b.A)(), a = (0, o.bG)([S.A], () => S.A.oldestDisplayedMessageId), c = (0, o.yK)([S.A], () => S.A.getInboxMessages()), v = (0, o.yK)([x.Ay, _.A, S.A], () => c.filter(e => !(0, T.EJ)({
+    } = (0, S.A)(), a = (0, o.bG)([b.A], () => b.A.oldestDisplayedMessageId), c = (0, o.yK)([b.A], () => b.A.getInboxMessages()), v = (0, o.yK)([x.Ay, _.A, b.A], () => c.filter(e => !(0, T.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
         ReadStateStore_: x.Ay,
         GuildStore_: _.A
-    }) && !(0, T.zo)(e, S.A.selectedItemInfo))), y = (0, o.yK)([x.Ay, _.A, S.A], () => c.filter(e => (0, T.EJ)({
+    }) && !(0, T.zo)(e, b.A.selectedItemInfo))), y = (0, o.yK)([x.Ay, _.A, b.A], () => c.filter(e => (0, T.EJ)({
         messageId: e.id,
         channelId: e.channelId,
         guildId: e.guildId,
         ReadStateStore_: x.Ay,
         GuildStore_: _.A
-    }) || (0, T.zo)(e, S.A.selectedItemInfo))), j = s.useCallback(e => {
+    }) || (0, T.zo)(e, b.A.selectedItemInfo))), j = s.useCallback(e => {
         l !== O.Io.BOOKMARKS && I.A.loadMoreInbox({
             viewId: n,
             loadingTrigger: e
@@ -77,9 +77,9 @@ function P(e) {
     }, [l, n]), {
         hasLoadedEver: M,
         canLoadMore: P
-    } = (0, o.cf)([S.A], () => ({
-        hasLoadedEver: S.A.hasLoadedEver,
-        canLoadMore: S.A.canLoadMore({})
+    } = (0, o.cf)([b.A], () => ({
+        hasLoadedEver: b.A.hasLoadedEver,
+        canLoadMore: b.A.canLoadMore({})
     }));
     s.useEffect(() => {
             P && !M && j(O.VA.ON_OPEN)
@@ -124,7 +124,7 @@ function P(e) {
         let e = (0, E.GE)({
                 location: "NotificationsInboxSidebar"
             }).notificationCenterVariant,
-            t = S.A.getDevOverrides().navOnClick ?? !0;
+            t = b.A.getDevOverrides().navOnClick ?? !0;
         if (e !== E.U5.SIDEBAR || !1 === t) return;
         let {
             message: i,
@@ -137,7 +137,7 @@ function P(e) {
                 message: s,
                 isUnread: null != i
             };
-            let l = S.A.getNotifyingChannelIds();
+            let l = b.A.getNotifyingChannelIds();
             if (null == l || 0 === l.length) return {
                 message: null,
                 isUnread: !1

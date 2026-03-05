@@ -31,8 +31,8 @@ function x(e) {
         className: I,
         onError: N
     } = e, {
-        onActivate: b,
-        isLoading: S,
+        onActivate: S,
+        isLoading: b,
         error: T
     } = (0, A.A)(t, n), {
         isLoading: v,
@@ -106,9 +106,9 @@ function x(e) {
                     "aria-label": _.intl.string(O ? g.default.TZsu1U : g.default.gSxlHf),
                     disabled: L,
                     onClick: e => {
-                        e.stopPropagation(), O ? j() : b()
+                        e.stopPropagation(), O ? j() : S()
                     },
-                    loading: S || v,
+                    loading: b || v,
                     fullWidth: E,
                     size: C ?? (l ? "md" : void 0),
                     text: e,

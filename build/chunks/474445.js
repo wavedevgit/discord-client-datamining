@@ -70,7 +70,7 @@ function p(e, t) {
                 isTranslated: m.has(e.id)
             }
         }(e),
-        S = (p = (0, g.getAvailableLocales)(), l.useMemo(() => p.map(e => {
+        _ = (p = (0, g.getAvailableLocales)(), l.useMemo(() => p.map(e => {
             let t;
             try {
                 t = n(579832)(`./${e.value}.png`)
@@ -93,8 +93,8 @@ function p(e, t) {
                 disabled: y
             }, e.value)
         }), [f, y, p])),
-        _ = (0, d.b)();
-    return null != e.content && "" !== e.content.trim() && _ ? E ? (0, i.jsx)(s.Drp, {
+        S = (0, d.b)();
+    return null != e.content && "" !== e.content.trim() && S ? E ? (0, i.jsx)(s.Drp, {
         id: "revert-translation",
         label: g.intl.string(g.t.JC9BXn),
         leadingAccessory: {
@@ -113,6 +113,6 @@ function p(e, t) {
             icon: s.UaP
         },
         disabled: y,
-        children: S
+        children: _
     }) : null
 }

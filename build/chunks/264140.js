@@ -25,8 +25,8 @@ var f = n(483270),
     E = n(432371),
     I = n(475743),
     N = n(933958),
-    b = n(156579),
-    S = n(108959),
+    S = n(156579),
+    b = n(108959),
     T = n(480720),
     v = n(323073),
     y = n(793574),
@@ -79,8 +79,8 @@ var f = n(483270),
     eE = n(323443),
     eI = n(566388),
     eN = n(168675),
-    eb = n(170428),
-    eS = n(494208),
+    eS = n(170428),
+    eb = n(494208),
     eT = n(933057),
     ev = n(328808),
     ey = n(415586),
@@ -221,7 +221,7 @@ class tt extends s.PureComponent {
         o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, _.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("96429")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("31885")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: s,
@@ -312,9 +312,9 @@ class tt extends s.PureComponent {
             case e1.rbe.ANNOUNCEMENT_THREAD:
             case e1.rbe.PRIVATE_THREAD:
             case e1.rbe.PUBLIC_THREAD:
-                e.isModeratorReportChannel() && a.push((0, i.jsx)(eb.A, {
+                e.isModeratorReportChannel() && a.push((0, i.jsx)(eS.A, {
                     channel: e
-                })), null == t || t.isForumLikeChannel() || a.push((0, i.jsx)(eS.A, {
+                })), null == t || t.isForumLikeChannel() || a.push((0, i.jsx)(eb.A, {
                     channel: t
                 }, "browser")), e.isVocalThread() && a.push((0, i.jsx)(ea.A, {
                     channel: e
@@ -332,7 +332,7 @@ class tt extends s.PureComponent {
                 break;
             case e1.rbe.GUILD_ANNOUNCEMENT:
             case e1.rbe.GUILD_TEXT:
-                a.push((0, i.jsx)(eS.A, {
+                a.push((0, i.jsx)(eb.A, {
                     channel: e
                 }, "browser")), n || a.push((0, i.jsx)($.A, {
                     channel: e
@@ -526,7 +526,7 @@ class tt extends s.PureComponent {
         } = this.props, t = this.shouldRenderCall();
         if (o()(null != e, "Missing channel in Channel.renderEmbeddedActivityPanel"), t) return null;
         let n = this.props.height - 200;
-        return (0, i.jsx)(b.A, {
+        return (0, i.jsx)(S.A, {
             maxHeight: n,
             renderExternalHeader: this.renderHeaderBar
         })
@@ -784,7 +784,7 @@ let tn = (0, C.A)(tt),
             let e = null != r ? R.A.getParticipants(r) : [],
                 t = null != r ? R.A.getActivityParticipants(r) : [];
             return e.length - t.length > 0
-        }, [r]), b = (0, B.A)(), y = (0, h.bG)([eF.A], () => (b?.channelId ?? eF.A.getVoiceChannelId()) === o?.id), O = (0, h.bG)([N.Ay], () => null != o ? N.Ay.getSelfEmbeddedActivityForChannel(o.id) : null, [o]), L = (0, h.bG)([eH.A], () => eH.A.isConnected()), M = (0, I.A)(L), D = L && !1 === M;
+        }, [r]), S = (0, B.A)(), y = (0, h.bG)([eF.A], () => (S?.channelId ?? eF.A.getVoiceChannelId()) === o?.id), O = (0, h.bG)([N.Ay], () => null != o ? N.Ay.getSelfEmbeddedActivityForChannel(o.id) : null, [o]), L = (0, h.bG)([eH.A], () => eH.A.isConnected()), M = (0, I.A)(L), D = L && !1 === M;
         s.useEffect(() => {
             y && D && null != O && null != o && g.A.selectParticipant(o.id, (0, j.Qt)({
                 applicationId: O.applicationId,
@@ -793,7 +793,7 @@ let tn = (0, C.A)(tt),
         }, [D, o, y, O]);
         let G = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
             U = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
-            P = null != G && !(0, S.A)(o?.id) && U === e9.Gd.PANEL,
+            P = null != G && !(0, b.A)(o?.id) && U === e9.Gd.PANEL,
             k = (0, h.bG)([eY.A], () => null != o && o.isVocalThread() && !d().isEmpty(eY.A.getVoiceStatesForChannel(o.id)), [o]),
             H = null != o && o.isPrivate() && !P && C,
             F = o?.isGuildVocal() || H || k,
@@ -860,7 +860,7 @@ let tn = (0, C.A)(tt),
             })
         }, [o?.id, eI, ex, eC]);
         let eN = (0, m.useHasAnyModalOpen)(),
-            eb = J.A.useConfig({
+            eS = J.A.useConfig({
                 location: "Channel"
             }).enabled;
         return (0, i.jsx)(tn, {
@@ -899,6 +899,6 @@ let tn = (0, C.A)(tt),
             premiumIndicatorEnabled: !1,
             hasTextActivityInPanelMode: P,
             embeddedActivity: G,
-            isGdmCopyExperimentEnabled: eb
+            isGdmCopyExperimentEnabled: eS
         })
     })

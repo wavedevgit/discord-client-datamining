@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
     CJ: () => N,
-    dY: () => b,
-    y8: () => S
+    dY: () => S,
+    y8: () => b
 });
 var i = n(774603),
     s = n(430086),
@@ -63,11 +63,11 @@ let N = {
         [C.IWg.CALL_START]: i.OX,
         [C.IWg.QUICKSWITCHER_SHOW]: c.R
     },
-    b = {
+    S = {
         [C.IWg.QUICKSWITCHER_SHOW]: c.R
     };
 
-function S() {
+function b() {
     return [{
         description: E.intl.string(E.t.bx4Uyz),
         binds: I(C.IWg.SERVER_PREV, C.IWg.SERVER_NEXT)

@@ -164,7 +164,7 @@ let G = i.memo(function() {
                         }) : (0, h.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("77666")]).then(n.bind(n, 370372));
+                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("55285")]).then(n.bind(n, 370372));
                             return t => (0, l.jsx)(e, {
                                 ...t,
                                 channel: i,

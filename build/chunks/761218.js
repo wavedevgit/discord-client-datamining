@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(67480),
     f = s(954571),
     x = s(440938),
-    E = s(652215),
-    C = s(188275),
+    C = s(652215),
+    E = s(188275),
     b = s(985018),
     A = s(27112);
 let S = {
@@ -36,7 +36,7 @@ let S = {
             analyticsLocations: j
         } = (0, d.Ay)(), k = r.useRef(null), T = r.useRef(!1), O = r.useRef(null);
         r.useEffect(() => {
-            for (let e of s)(0, u.qf)(C.Kf, e)
+            for (let e of s)(0, u.qf)(E.Kf, e)
         }, [s]);
         let y = r.useMemo(() => {
                 let e = i()(),
@@ -46,7 +46,7 @@ let S = {
                 })
             }, [l]),
             N = r.useCallback((e, t) => {
-                f.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                f.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: L?.sessionId,
                     page_type: v,
                     page_category: L?.pageCategory,
@@ -60,19 +60,19 @@ let S = {
             }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]),
             R = r.useCallback(() => {
                 (0, g.X)({
-                    guildId: C.Kf
+                    guildId: E.Kf
                 })
             }, []),
             B = r.useCallback(() => {
                 N("go_to_game_shop"), (0, g.default)({
-                    guildId: C.Kf
+                    guildId: E.Kf
                 })
             }, [N]),
             M = r.useCallback(e => {
                 N("card_click", e), (0, m.R)({
                     skuId: e,
-                    applicationId: C.XR,
-                    guildId: C.Kf,
+                    applicationId: E.XR,
+                    guildId: E.Kf,
                     isStorefront: !1,
                     analyticsLocations: j
                 })
@@ -82,7 +82,7 @@ let S = {
             }, [N, t]),
             D = r.useCallback(e => {
                 T.current || (e ? null === O.current && (O.current = setTimeout(() => {
-                    T.current = !0, O.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+                    T.current = !0, O.current = null, f.default.track(C.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                         collectibles_shop_session_id: L?.sessionId,
                         page_type: v,
                         page_category: L?.pageCategory,
@@ -140,8 +140,8 @@ let S = {
                             className: A.$2,
                             children: s.map((e, t) => (0, n.jsx)(h.A, {
                                 skuId: e,
-                                applicationId: C.XR,
-                                guildId: C.Kf,
+                                applicationId: E.XR,
+                                guildId: E.Kf,
                                 positionInSection: t,
                                 onClick: () => M(e)
                             }, e))

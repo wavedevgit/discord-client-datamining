@@ -28,15 +28,15 @@ function N(e) {
     let {
         guild: t,
         selected: N
-    } = e, b = (0, h.A)(t), S = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, l.bG)([p.Ay], () => p.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), y = T.length > _.rR, j = (0, l.bG)([u.A, p.Ay], () => {
+    } = e, S = (0, h.A)(t), b = (0, d.JZ)(r.M.CHANNEL_BROWSER_NEW_BADGE_NUX), T = (0, l.yK)([A.A], () => Array.from(A.A.getNewChannelIds(t.id)).filter(e => A.A.shouldIndicateNewChannel(t.id, e))), v = (0, l.bG)([p.Ay], () => p.Ay.hasUnread(t.id, E.P.GUILD_ONBOARDING_QUESTION)), y = T.length > _.rR, j = (0, l.bG)([u.A, p.Ay], () => {
         let e = u.A.lastFetchedAt(t.id),
             n = p.Ay.lastMessageId(t.id, E.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
         let i = g.default.extractTimestamp(n);
         return null != e && e > i
     }), R = s.useCallback(() => {
-        (0, m.pX)(x.BVt.CHANNEL(t.id, b ? C.VV.CUSTOMIZE_COMMUNITY : C.VV.CHANNEL_BROWSER))
-    }, [t.id, b]), O = s.useCallback(e => {
+        (0, m.pX)(x.BVt.CHANNEL(t.id, S ? C.VV.CUSTOMIZE_COMMUNITY : C.VV.CHANNEL_BROWSER))
+    }, [t.id, S]), O = s.useCallback(e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -47,7 +47,7 @@ function N(e) {
             })
         })
     }, [t]), L = null;
-    return S && !v && !y || N || j || (L = (0, i.jsx)(o.LpS, {
+    return b && !v && !y || N || j || (L = (0, i.jsx)(o.LpS, {
         color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
         text: I.intl.string(I.t.y2b7CA)
     })), (0, i.jsx)(f.G, {
@@ -57,7 +57,7 @@ function N(e) {
             color: "currentColor",
             className: e
         }),
-        text: b ? I.intl.string(I.t.h9mGOP) : I.intl.string(I.t.et6wav),
+        text: S ? I.intl.string(I.t.h9mGOP) : I.intl.string(I.t.et6wav),
         selected: N,
         onClick: R,
         onContextMenu: O,

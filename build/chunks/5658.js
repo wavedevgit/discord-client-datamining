@@ -5,7 +5,7 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(396181),
+    l = n(162160),
     r = n(311283),
     a = n(311907),
     o = n(435371),
@@ -105,7 +105,7 @@ let I = s.memo(function(e) {
                         className: E.GC,
                         children: [(0, i.jsx)(p.A, {
                             channel: o
-                        }), (0, i.jsx)(b, {
+                        }), (0, i.jsx)(S, {
                             ...e
                         })]
                     })
@@ -123,7 +123,7 @@ let I = s.memo(function(e) {
         })
     });
 
-function b(e) {
+function S(e) {
     let {
         channel: t,
         markChannelRead: n,

@@ -1,6 +1,6 @@
 /** chunk id: 64585, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => v
 }), n(321073);
 var i = n(73153),
     r = n(272355),
@@ -26,21 +26,21 @@ let E = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
             t = u.A.comboSoundsEnabled;
         return !!e && !!t && null != c.A.getChannelId()
     },
-    f = () => {
+    O = () => {
         if (0 === g.length || !L() || _) return;
         _ = !0;
         let [e, t] = g[g.length - 1];
-        (0, l.Ak)(e, t), p = setTimeout(O, 1e3)
+        (0, l.Ak)(e, t), p = setTimeout(f, 1e3)
     },
-    O = () => {
-        g.pop(), _ = !1, f()
+    f = () => {
+        g.pop(), _ = !1, O()
     },
     T = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
             n = o.A.isConnected();
-        g.push([e, t * (n ? .1 : 1)]), f()
+        g.push([e, t * (n ? .1 : 1)]), O()
     };
-class v extends r.A {
+class I extends r.A {
     _initialize() {
         h.Ay.addChangeListener(this.startAudio), i.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.subscribe("TYPING_STOP", this.stopAudio), i.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.subscribe("CHANNEL_SELECT", this.stopAudio), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
     }
@@ -76,4 +76,4 @@ class v extends r.A {
         L() && T("poggermode_achievement_unlock")
     }
 }
-let I = new v
+let v = new I

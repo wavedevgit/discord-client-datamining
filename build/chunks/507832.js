@@ -102,7 +102,7 @@ class c {
                         return t === l.id
                     }),
                     prices: l.prices,
-                    googleSkuIds: {
+                    googleSkuIds: l.googleSkuIds ?? {
                         [d.lid.MOBILE]: "",
                         [d.lid.MOBILE_PREMIUM_TIER_2]: ""
                     },
@@ -111,7 +111,7 @@ class c {
                     bundledProducts: void 0
                 })
             }).filter(e => null != e) : void 0,
-            googleSkuIds: {
+            googleSkuIds: e.googleSkuIds ?? {
                 [d.lid.MOBILE]: "",
                 [d.lid.MOBILE_PREMIUM_TIER_2]: ""
             },

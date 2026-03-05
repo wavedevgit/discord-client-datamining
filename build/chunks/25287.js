@@ -1,6 +1,6 @@
 /** chunk id: 25287, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -20,21 +20,21 @@ var i = n(627968),
     y = n(287809),
     E = n(985018);
 
-function S(e) {
+function _(e) {
     let {
         analyticsLocations: t
-    } = (0, c.Ay)(), n = e.interactionMetadata?.authorizing_integration_owners[a.b.USER_INSTALL], S = e.interactionMetadata?.authorizing_integration_owners[a.b.GUILD_INSTALL], _ = e.interactionMetadata?.user.id, b = (0, r.bG)([y.default], () => y.default.getUser(n)), I = (0, r.bG)([h.A], () => h.A.getGuild(S)), v = f.A.getChannel(e.channel_id), x = v?.getGuildId(), j = (0, r.bG)([y.default], () => y.default.getUser(_));
+    } = (0, c.Ay)(), n = e.interactionMetadata?.authorizing_integration_owners[a.b.USER_INSTALL], _ = e.interactionMetadata?.authorizing_integration_owners[a.b.GUILD_INSTALL], S = e.interactionMetadata?.user.id, b = (0, r.bG)([y.default], () => y.default.getUser(n)), v = (0, r.bG)([h.A], () => h.A.getGuild(_)), x = f.A.getChannel(e.channel_id), I = x?.getGuildId(), j = (0, r.bG)([y.default], () => y.default.getUser(S));
     if (l.useEffect(() => {
             null == b && null != n && (0, o.wz)(n)
         }, [b, n]), !(0, u._)(e)) return null;
     null == j && (j = new p.A(e.interactionMetadata?.user));
     let T = null;
-    if (null != I) {
-        let t = (0, m.Iv)(I, 18, !0);
+    if (null != v) {
+        let t = (0, m.Iv)(v, 18, !0);
         T = (0, i.jsx)(s.Drp, {
             disabled: !0,
             iconLeft: () => (0, i.jsx)(g.Ay, {
-                guild: I,
+                guild: v,
                 size: g.Ay.Sizes.MINI
             }),
             leadingAccessory: null != t ? {
@@ -42,7 +42,7 @@ function S(e) {
                 src: t
             } : void 0,
             id: "integration-owner",
-            label: I.name,
+            label: v.name,
             subtext: E.intl.formatToPlainString(E.t.ShLXXB, {
                 application: e.author.username
             })
@@ -50,13 +50,13 @@ function S(e) {
     } else null != b && (T = (0, i.jsx)(s.Drp, {
         action: () => (0, A.openUserProfileModal)({
             userId: b.id,
-            guildId: x,
+            guildId: I,
             channelId: e.channel_id,
             sourceAnalyticsLocations: t
         }),
         leadingAccessory: {
             type: "avatar",
-            src: b.getAvatarURL(x, 18)
+            src: b.getAvatarURL(I, 18)
         },
         id: "integration-owner",
         label: b.username,
@@ -78,13 +78,13 @@ function S(e) {
         children: [T, null != j ? (0, i.jsx)(s.Drp, {
             action: () => (0, A.openUserProfileModal)({
                 userId: j.id,
-                guildId: x,
+                guildId: I,
                 channelId: e.channel_id,
                 sourceAnalyticsLocations: t
             }),
             leadingAccessory: {
                 type: "avatar",
-                src: j.getAvatarURL(x, 18)
+                src: j.getAvatarURL(I, 18)
             },
             iconLeft: () => (0, i.jsx)(d.A, {
                 user: j,

@@ -35,7 +35,7 @@ function N(e) {
         documentsIndexed: A,
         selectedChannelId: _
     } = e, N = (0, g.H)(t), {
-        totalFilters: S
+        totalFilters: b
     } = (0, f.vj)(N, t), T = s.useMemo(() => {
         if (t.type === x.I4_.DMS) {
             let e = (0, m.Zf)(N),
@@ -51,9 +51,9 @@ function N(e) {
         M("user:explicit" === e ? C.i.USER_DISMISS : C.i.AUTO_DISMISS)
     }, [M]), P = s.useCallback(() => {
         G(null), p.A.openSearchFiltersModal(t)
-    }, [G, t]), w = s.useMemo(() => S > 0 ? E.intl.format(E.t.uaR4sI, {
-        filterCount: S
-    }) : E.intl.string(E.t.UdhTtk), [S]), k = t.type === x.I4_.DMS || t.type === x.I4_.CHANNEL;
+    }, [G, t]), w = s.useMemo(() => b > 0 ? E.intl.format(E.t.uaR4sI, {
+        filterCount: b
+    }) : E.intl.string(E.t.UdhTtk), [b]), k = t.type === x.I4_.DMS || t.type === x.I4_.CHANNEL;
     return (0, i.jsxs)("header", {
         className: r()(I.wL, {
             [I.g$]: null != T
@@ -61,7 +61,7 @@ function N(e) {
         children: [(0, i.jsx)("div", {
             className: I.TN,
             role: "status",
-            children: (0, i.jsx)(b, {
+            children: (0, i.jsx)(S, {
                 totalResults: o,
                 subtitle: T,
                 isIndexing: c,
@@ -93,7 +93,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         totalResults: t,
         subtitle: n,
@@ -109,7 +109,7 @@ function b(e) {
     })
 }
 
-function S() {
+function b() {
     return (0, i.jsx)("div", {
         className: I.zp,
         children: (0, i.jsx)(d.y$y, {
@@ -139,7 +139,7 @@ function T(e) {
                     href: A.A.getArticleURL(x.MVz.SEARCH_INDEXING),
                     children: E.intl.string(E.t["G3EA+4"])
                 })
-            }), (0, i.jsx)(S, {})]
+            }), (0, i.jsx)(b, {})]
         })
     })
 }
@@ -150,7 +150,7 @@ function v() {
             variant: "text-md/medium",
             color: "text-default",
             children: E.intl.string(E.t.uixzLf)
-        }), (0, i.jsx)(S, {})]
+        }), (0, i.jsx)(b, {})]
     })
 }
 

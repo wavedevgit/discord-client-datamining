@@ -1,19 +1,19 @@
 /** chunk id: 519222, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $b: () => O,
-    DT: () => v,
+    DT: () => x,
     Io: () => N,
     Le: () => C,
     Nw: () => R,
     RC: () => j,
-    S: () => x,
+    S: () => I,
     Z4: () => P,
     cl: () => D,
     mF: () => G,
     r7: () => w,
     rS: () => M,
     u_: () => T,
-    vc: () => I,
+    vc: () => v,
     wF: () => L
 }), n(627968), n(64700), n(397927);
 var i = n(687709),
@@ -34,20 +34,20 @@ var o = n(118517),
     h = n(661191),
     y = n(965407),
     E = n(439147),
-    S = n(249700),
-    _ = n(145530),
+    _ = n(249700),
+    S = n(145530),
     b = n(652215);
 
-function I(e) {
+function v(e) {
     let t = e.getGuildId();
     null != t && s.A.open(t, b.BEX.ENGAGEMENT)
 }
 
-function v(e, t, n) {
+function x(e, t, n) {
     (0, p.C)(n.shiftKey ? `${t.channel_id}-${t.id}` : t.id)
 }
 
-function x(e, t) {
+function I(e, t) {
     A.default.track(b.HAw.MESSAGE_LINK_COPIED, {
         message_id: t.id,
         channel: t.channel_id
@@ -55,7 +55,7 @@ function x(e, t) {
 }
 
 function j(e, t, n) {
-    t.state === b.cmJ.SEND_FAILED || n.shiftKey ? l.A.deleteMessage(e.id, t.id, t.state === b.cmJ.SEND_FAILED) : _.A.confirmDelete(e, t)
+    t.state === b.cmJ.SEND_FAILED || n.shiftKey ? l.A.deleteMessage(e.id, t.id, t.state === b.cmJ.SEND_FAILED) : S.A.confirmDelete(e, t)
 }
 
 function T(e, t) {
@@ -67,7 +67,7 @@ function D(e, t) {
 }
 
 function M(e, t, n) {
-    !1 === t.pinned ? n.shiftKey ? i.A.pinMessage(e, t.id) : _.A.confirmPin(e, t) : n.shiftKey ? i.A.unpinMessage(e, t.id) : _.A.confirmUnpin(e, t)
+    !1 === t.pinned ? n.shiftKey ? i.A.pinMessage(e, t.id) : S.A.confirmPin(e, t) : n.shiftKey ? i.A.unpinMessage(e, t.id) : S.A.confirmUnpin(e, t)
 }
 
 function C(e, t) {
@@ -75,7 +75,7 @@ function C(e, t) {
 }
 
 function N(e, t) {
-    (0, S.A)(e, t, void 0, y.A.getOptions(t.id))
+    (0, _.A)(e, t, void 0, y.A.getOptions(t.id))
 }
 
 function O(e, t, n) {

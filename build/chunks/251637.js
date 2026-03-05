@@ -19,7 +19,7 @@ let d = function(e) {
         isInventory: d
     } = e, m = (0, o.aC)(e.quest), {
         percentComplete: A,
-        completedRatioDisplay: x
+        completedRatioDisplay: p
     } = (0, o.O9)(n);
     return !d && m.length > 0 ? (0, l.jsx)(u.A, {
         children: m.at(0)
@@ -34,7 +34,7 @@ let d = function(e) {
                 variant: "text-xs/semibold",
                 className: c.Df,
                 color: "none",
-                children: x
+                children: p
             }), (0, l.jsx)("div", {
                 className: c.Cj,
                 style: {

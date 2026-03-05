@@ -5,14 +5,14 @@ r.d(t, {
     L9: () => U,
     Le: () => D,
     ON: () => b,
-    Rg: () => F,
-    Tj: () => W,
+    Rg: () => O,
+    Tj: () => M,
     UO: () => k,
-    Xq: () => O,
+    Xq: () => F,
     a4: () => P,
-    aB: () => M,
+    aB: () => W,
     e_: () => v,
-    le: () => x,
+    le: () => I,
     mQ: () => w,
     pe: () => N,
     t7: () => j,
@@ -31,8 +31,8 @@ var s = r(271830),
     d = r.n(c),
     h = r(288598),
     _ = r.n(h),
-    E = r(832368),
-    S = r.n(E),
+    S = r(832368),
+    E = r.n(S),
     f = r(692807),
     g = r.n(f),
     A = r(907014),
@@ -42,7 +42,7 @@ var s = r(271830),
     y = r(1214),
     T = r.n(y);
 
-function I(e, t, r, n) {
+function x(e, t, r, n) {
     let l = n.getCurrentContent(),
         a = null;
     null != e && (a = (l = l.createEntity(...e)).getLastCreatedEntityKey());
@@ -58,7 +58,7 @@ function I(e, t, r, n) {
     })
 }
 
-function x(e, t, r, n) {
+function I(e, t, r, n) {
     let l, a, o = t.getCurrentContent(),
         u = o.getFirstBlock(),
         c = u.getText();
@@ -97,7 +97,7 @@ function b(e, t) {
         case "move-selection-to-start-of-block":
             return g()(t);
         case "move-selection-to-end-of-block":
-            return S()(t);
+            return E()(t);
         default:
             return t
     }
@@ -131,14 +131,14 @@ function C(e, t) {
                     start: l,
                     end: a
                 } = e, i = e.getFullMatch();
-                !r.processed && (r.type === n && r.start === l && r.text === i ? (r.processed = !0, s = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = I(null, r.start, r.end, t)))
+                !r.processed && (r.type === n && r.start === l && r.text === i ? (r.processed = !0, s = !0) : (l >= r.start && l < r.end || a > r.start && a <= r.end) && (r.processed = !0, t = x(null, r.start, r.end, t)))
             }), s) return;
         let n = r[e.type];
-        t = I([e.type, null != n && n.mutable ? "MUTABLE" : "IMMUTABLE", {
+        t = x([e.type, null != n && n.mutable ? "MUTABLE" : "IMMUTABLE", {
             token: e
         }], e.start, e.end, t)
     }), a.forEach(e => {
-        e.processed || (t = I(null, e.start, e.end, t))
+        e.processed || (t = x(null, e.start, e.end, t))
     }), t
 }
 
@@ -146,11 +146,11 @@ function v(e) {
     return s.EditorState.createEmpty(new s.CompositeDecorator(e))
 }
 
-function F(e, t) {
+function O(e, t) {
     return s.EditorState.createWithContent(t, new s.CompositeDecorator(e))
 }
 
-function O(e) {
+function F(e) {
     let t = s.EditorState.push(e, s.ContentState.createFromText("")),
         r = e.getSelection();
     return null != r && r.hasFocus && (t = s.EditorState.moveFocusToEnd(t)), t
@@ -158,7 +158,7 @@ function O(e) {
 
 function j(e, t) {
     let r = N(t);
-    return x(e, t, 0, r.length)
+    return I(e, t, 0, r.length)
 }
 
 function k(e, t) {
@@ -166,11 +166,11 @@ function k(e, t) {
     return r = (r = r.set("focusOffset", e)).set("anchorOffset", e), s.EditorState.forceSelection(t, r)
 }
 
-function W(e) {
+function M(e) {
     return k(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
-function M(e) {
+function W(e) {
     return k(0, e)
 }
 
@@ -201,7 +201,7 @@ function P(e) {
         r = N(e);
     if (r.length > t) {
         let n = e.getSelection();
-        e = x("", e, t, r.length), n.getAnchorOffset() > t && (n = n.set("anchorOffset", t)), n.getFocusOffset() > t && (n = n.set("focusOffset", t)), e = s.EditorState.forceSelection(e, n)
+        e = I("", e, t, r.length), n.getAnchorOffset() > t && (n = n.set("anchorOffset", t)), n.getFocusOffset() > t && (n = n.set("focusOffset", t)), e = s.EditorState.forceSelection(e, n)
     }
     return e
 }

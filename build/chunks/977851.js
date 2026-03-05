@@ -1,7 +1,7 @@
 /** chunk id: 977851, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => b
+    V: () => S
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -60,7 +60,7 @@ function N(e) {
     })
 }
 
-function b(e) {
+function S(e) {
     let t, {
             channelId: n,
             className: l,
@@ -69,14 +69,14 @@ function b(e) {
             inPopout: m,
             showRequestToSpeakSidebar: p,
             toggleRequestToSpeakSidebar: f,
-            ...b
+            ...S
         } = e,
         {
-            parentAnalyticsLocation: S
+            parentAnalyticsLocation: b
         } = (0, d.Ay)(),
         {
             disabled: T
-        } = b,
+        } = S,
         v = s.useRef(null),
         y = (0, o.bG)([u.A], () => u.A.getChatOpen(n), [n]),
         {
@@ -104,8 +104,8 @@ function b(e) {
             }
         }(n),
         L = s.useCallback(() => {
-            (0, h.X)(S, h.O.CHAT, !y), A?.(), !y && p && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
-        }, [n, y, A, p, f, S]),
+            (0, h.X)(b, h.O.CHAT, !y), A?.(), !y && p && f?.(), c.A.updateChatOpen(n, !y, "toggle chat button")
+        }, [n, y, A, p, f, b]),
         M = s.useCallback(e => {
             let {
                 className: t
@@ -150,6 +150,6 @@ function b(e) {
             [a]: j
         }),
         forceTooltipOpen: G,
-        ...b
+        ...S
     })
 }

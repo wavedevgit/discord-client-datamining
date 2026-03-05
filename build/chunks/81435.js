@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(812299),
     I = n(943220),
     N = n(538355),
-    b = n(995273),
-    S = n(854627),
+    S = n(995273),
+    b = n(854627),
     T = n(95701),
     v = n(260509),
     y = n(734057),
@@ -55,8 +55,8 @@ function B(e) {
         colorString: C
     } = (0, f.Ay)(t), {
         avatarSrc: N,
-        eventHandlers: b
-    } = (0, S.A)({
+        eventHandlers: S
+    } = (0, b.A)({
         userId: t.author.id,
         size: u._3J.SIZE_32,
         guildId: _?.id,
@@ -83,8 +83,8 @@ function B(e) {
     }, [_, t.author.id]), (0, i.jsx)(u.vN3, {
         ...l,
         children: (0, i.jsxs)("div", {
-            onMouseLeave: b.onMouseLeave,
-            onMouseEnter: b.onMouseEnter,
+            onMouseLeave: S.onMouseLeave,
+            onMouseEnter: S.onMouseEnter,
             className: V.zC,
             children: [o && !a && (0, i.jsx)("div", {
                 className: V.Zm
@@ -227,7 +227,7 @@ function H(e) {
 function F(e) {
     let {
         message: t
-    } = e, n = (0, b.jb)(t.timestamp.getTime());
+    } = e, n = (0, S.jb)(t.timestamp.getTime());
     return (0, i.jsx)(C.A, {
         timestamp: t.timestamp,
         className: V.vE,

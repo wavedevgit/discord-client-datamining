@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(915089),
     I = n(314307),
     N = n(58736),
-    b = n(636922),
-    S = n(931664),
+    S = n(636922),
+    b = n(931664),
     T = n(631576),
     v = n(253932),
     y = n(734057),
@@ -164,7 +164,7 @@ function X(e) {
         E = (0, P.EN)(n),
         {
             isGeneratingAI: N,
-            enableAIFeatures: b,
+            enableAIFeatures: S,
             getThreadNameInputAccessory: v
         } = (0, V.C)({
             parentChannel: n,
@@ -204,7 +204,7 @@ function X(e) {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    m(!0), null == e && (e = r.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
+                    m(!0), null == e && (e = r.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = b.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
                     let a = (i.name ?? "").trim(),
                         c = (o || null == n) && 0 === a.length,
                         u = "" === e && (null == s || 0 === s.length) && 0 === l.length;
@@ -247,7 +247,7 @@ function X(e) {
             privateThreadMode: E,
             textAreaState: x,
             location: d,
-            enableAIFeatures: b
+            enableAIFeatures: S
         }),
         w = (0, P.Iy)(p, E) ? o.tn0 : o.ysw;
     return (0, i.jsx)("div", {
@@ -282,7 +282,7 @@ function X(e) {
                                     error: y,
                                     disabled: G,
                                     isGeneratingAI: N,
-                                    enableAIFeatures: b,
+                                    enableAIFeatures: S,
                                     getThreadNameInputAccessory: v
                                 }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
                                     startedFromMessage: null != l,
@@ -440,7 +440,7 @@ function Z(e) {
         parentChannel: t,
         parentMessageId: n
     } = e, s = (0, a.bG)([R.A], () => null == n ? null : R.A.getMessage(t.id, n)), l = v.hH.useSetting();
-    return null != s ? (0, i.jsx)(b.A, {
+    return null != s ? (0, i.jsx)(S.A, {
         className: K.IL,
         message: s,
         channel: t,

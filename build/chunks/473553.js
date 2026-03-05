@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(713081),
     I = n(73473),
     N = n(646764),
-    b = n(654487),
-    S = n(49999),
+    S = n(654487),
+    b = n(49999),
     T = n(165610),
     v = n(985018),
     y = n(453561);
@@ -37,7 +37,7 @@ function j(e) {
     } = e, r = (0, _.fc)(t), u = (0, g.mU)({
         quest: t,
         taskDetails: r,
-        location: b.rE.QUEST_ACTIVITY_HEADER,
+        location: S.rE.QUEST_ACTIVITY_HEADER,
         questContent: A.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: A.uF.RUNNING_ACTIVITY
     }), [h, m] = s.useState(!1), p = s.useRef(null), f = s.useRef(null), [I, j] = (0, c.kn)([a.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
@@ -137,8 +137,8 @@ function j(e) {
                 })]
             })]
         }), null != I && (0, i.jsx)(x.A, {
-            onDismiss: () => j(S.i.USER_DISMISS),
-            onCTAClick: () => j(S.i.TAKE_ACTION),
+            onDismiss: () => j(b.i.USER_DISMISS),
+            onCTAClick: () => j(b.i.TAKE_ACTION),
             targetElementRef: p
         })]
     })
@@ -150,7 +150,7 @@ function R(e) {
     } = e, a = (0, r.bG)([h.A], () => h.A.quests), c = (0, r.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, f.jm)(a, t, !0)[0], [a, t]), {
         enabled: g
     } = p.Ym.useConfig({
-        location: b.rE.QUEST_ACTIVITY_HEADER
+        location: S.rE.QUEST_ACTIVITY_HEADER
     }), _ = (0, r.bG)([m.A], () => m.A.getState().autoEnroll), x = d?.id, C = (0, r.bG)([m.A], () => m.A.isDismissed(x), [x]);
     return (s.useEffect(() => {
         !g || null == d || d.userStatus?.enrolledAt != null || _ || C || (0, o.mMO)(async () => {

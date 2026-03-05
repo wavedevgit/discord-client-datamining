@@ -1,7 +1,7 @@
 /** chunk id: 60140, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => C
+    A: () => E
 });
 var n = s(627968),
     r = s(64700),
@@ -19,17 +19,17 @@ var n = s(627968),
     p = s(201073);
 let f = e => (0, n.jsx)("div", {
         className: p.hm,
-        children: (0, n.jsx)(E, {
+        children: (0, n.jsx)(C, {
             ...e
         })
     }),
     x = e => (0, n.jsx)(l.A, {
         gap: "xl",
-        children: (0, n.jsx)(E, {
+        children: (0, n.jsx)(C, {
             ...e
         })
     }),
-    E = e => {
+    C = e => {
         let {
             isLoading: t,
             products: s,
@@ -61,7 +61,7 @@ let f = e => (0, n.jsx)("div", {
             })
         })
     },
-    C = e => {
+    E = e => {
         let t, s, l, {
                 heroBlockRecord: i,
                 layout: o,

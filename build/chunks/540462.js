@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(765671),
     I = n(475743),
     N = n(646865),
-    b = n(10716),
-    S = n(795816),
+    S = n(10716),
+    b = n(795816),
     T = n(933958),
     v = n(967812),
     y = n(47294),
@@ -78,8 +78,8 @@ var i = n(627968),
     eE = n(723702),
     eI = n(837921),
     eN = n(475815),
-    eb = n(134047),
-    eS = n(313961),
+    eS = n(134047),
+    eb = n(313961),
     eT = n(520698),
     ev = n(43189),
     ey = n(518530),
@@ -371,7 +371,7 @@ class eB extends s.PureComponent {
             channel: e,
             connectedEmbeddedActivity: t
         } = this.props, n = async () => {
-            t?.applicationId != null && await (0, S.od)(t.applicationId, e.id);
+            t?.applicationId != null && await (0, b.od)(t.applicationId, e.id);
             let n = e.getGuildId();
             null == n || ed.Ay.isCurrentUserGuest(n) || (0, K.pX)((0, ex.vJ)(n)), H.openChannelCallPopout(e)
         };
@@ -700,7 +700,7 @@ let eH = function(e) {
         ref: g
     } = (0, E.Ay)(), {
         ref: _
-    } = (0, E.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), S = (0, d.bG)([em.A], () => (N?.channelId ?? em.A.getVoiceChannelId()) === t.id), {
+    } = (0, E.Ay)(), f = (0, B.Us)(), N = (0, U.A)(), b = (0, d.bG)([em.A], () => (N?.channelId ?? em.A.getVoiceChannelId()) === t.id), {
         participants: y,
         filteredParticipants: R,
         participantsVersion: L,
@@ -709,21 +709,21 @@ let eH = function(e) {
         participantsOpen: w,
         chatOpen: k,
         selectedParticipant: H
-    } = (0, d.cf)([eS.A], () => {
+    } = (0, d.cf)([eb.A], () => {
         let e = f === eU.BRT.POPOUT,
-            n = eS.A.getMode(t.id),
-            i = eS.A.getLayout(t.id, f);
+            n = eb.A.getMode(t.id),
+            i = eb.A.getLayout(t.id, f);
         e && (n = eU._Of.VIDEO);
         let s = n === eU._Of.VIDEO ? i : eU.DUB.MINIMUM;
         return e && s !== eU.DUB.FULL_SCREEN && (s = eU.DUB.NO_CHAT), i === eU.DUB.HAVEN && (s = i), {
             mode: n,
             layout: s,
-            selectedParticipant: n !== eU._Of.VOICE ? eS.A.getSelectedParticipant(t.id) : null,
-            participants: eS.A.getParticipants(t.id),
-            filteredParticipants: eS.A.getFilteredParticipants(t.id),
-            participantsOpen: eS.A.getParticipantsOpen(t.id),
-            chatOpen: eS.A.getChatOpen(t.id),
-            participantsVersion: eS.A.getParticipantsVersion(t.id)
+            selectedParticipant: n !== eU._Of.VOICE ? eb.A.getSelectedParticipant(t.id) : null,
+            participants: eb.A.getParticipants(t.id),
+            filteredParticipants: eb.A.getFilteredParticipants(t.id),
+            participantsOpen: eb.A.getParticipantsOpen(t.id),
+            chatOpen: eb.A.getChatOpen(t.id),
+            participantsVersion: eb.A.getParticipantsVersion(t.id)
         }
     }, [f, t.id]), K = (0, d.yK)([ea.A], () => ea.A.getAllActiveStreams()), {
         selectedStream: W
@@ -739,20 +739,20 @@ let eH = function(e) {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
-    }, []), ei = z?.id ?? null, es = (0, v.A)(ei, t.id), el = (0, d.bG)([b.A], () => b.A.getFetchState(), []), er = (0, I.A)(el);
+    }, []), ei = z?.id ?? null, es = (0, v.A)(ei, t.id), el = (0, d.bG)([S.A], () => S.A.getFetchState(), []), er = (0, I.A)(el);
     s.useEffect(() => {
-        el === b.$.ERROR && er !== b.$.ERROR && (0, A.showToast)((0, A.createToast)(eP.intl.string(eP.t["AlJyI+"]), A.ToastType.FAILURE))
+        el === S.$.ERROR && er !== S.$.ERROR && (0, A.showToast)((0, A.createToast)(eP.intl.string(eP.t["AlJyI+"]), A.ToastType.FAILURE))
     }, [el, er]);
     let ed = (0, d.bG)([T.Ay], () => T.Ay.getSelfEmbeddedActivityForChannel(t.id), [t]);
     s.useEffect(() => {
         let e = !1,
             t = null;
         return (async () => {
-            S && M === eU._Of.VIDEO && (t = await eI.Ay.blockDisplaySleep(), e && null != t && eI.Ay.unblockDisplaySleep(t))
+            b && M === eU._Of.VIDEO && (t = await eI.Ay.blockDisplaySleep(), e && null != t && eI.Ay.unblockDisplaySleep(t))
         })(), () => {
             null != t ? eI.Ay.unblockDisplaySleep(t) : e = !0
         }
-    }, [S, M]);
+    }, [b, M]);
     let ep = (0, D.mB)(u.M.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK),
         {
             analyticsLocations: eg
@@ -764,18 +764,18 @@ let eH = function(e) {
         } = V.s.useConfig({
             location: "ChannelCall"
         }),
-        eE = (0, eb.T)({
+        eE = (0, eS.T)({
             channel: t,
             location: "ChannelCall"
         });
     s.useEffect(() => {
-        if (!eE || !S || null != eS.A.getAllChatOpen()[t.id] || o <= 0) return;
+        if (!eE || !b || null != eb.A.getAllChatOpen()[t.id] || o <= 0) return;
         let e = !(0, ef.P)({
             maxWidth: e_,
             minWidth: 450
         });
         p.A.updateChatOpen(t.id, e, "auto open screen width")
-    }, [eE, e_, o, t.id, S]);
+    }, [eE, e_, o, t.id, b]);
     let {
         theme: eN
     } = (0, A.wRf)();
@@ -797,7 +797,7 @@ let eH = function(e) {
                         mentionCount: q,
                         selectedStream: W,
                         mode: M,
-                        inCall: S,
+                        inCall: b,
                         participants: y,
                         filteredParticipants: R,
                         participantsVersion: L,

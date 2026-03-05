@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(396181),
+    a = n(162160),
     o = n(397927),
     c = n(475743),
     d = n(216418),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(806931),
     I = n(403264),
     N = n(542411);
-let b = 16 / 9,
-    S = 8 + x.Vp;
+let S = 16 / 9,
+    b = 8 + x.Vp;
 
 function T(e) {
     let t, {
@@ -54,7 +54,7 @@ function T(e) {
         q = L.type === E.lp.ACTIVITY,
         X = (0, d.A)(q ? L.applicationId : void 0),
         J = !q && null != L.streamId,
-        Q = U <= 2 * S + 144,
+        Q = U <= 2 * b + 144,
         $ = M && !Q,
         Z = (0, c.A)($),
         ee = P === C.DUB.MINIMUM || P === C.DUB.NORMAL,
@@ -62,12 +62,12 @@ function T(e) {
         en = (0, p.A)(et, 100),
         ei = ((0, c.A)(L.id) ?? L.id) !== L.id,
         es = 0;
-    (q || $) && (es += 72), q && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * S + 8);
-    let el = s.useMemo(() => q && X ? G / (U - 2 * es) : J && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : b, [J, B, q, G, U, es, X]),
+    (q || $) && (es += 72), q && !$ && (et ? es += 48 : es += 8), $ && (es += .5 * b + 8);
+    let el = s.useMemo(() => q && X ? G / (U - 2 * es) : J && null != B && B.width > 0 && B.height > 0 ? B.width / B.height : S, [J, B, q, G, U, es, X]),
         er = U - 2 * es,
         ea = q && X ? G : er * el,
         eo = Math.floor(Math.min(G, ea) / el),
-        ec = U > G / el + 72 + S + 8;
+        ec = U > G / el + 72 + b + 8;
     t = $ || q ? $ ? -16 : -8 : 40 + Math.max(0, 72 - (U - eo) / 2);
     let ed = Math.max(0, 72 - (U - eo) / 2);
     s.useEffect(() => {
@@ -149,7 +149,7 @@ function T(e) {
             children: [(0, i.jsxs)(a.animated.div, {
                 className: N.pc,
                 style: {
-                    top: em.value.to(e => -e * S / 2)
+                    top: em.value.to(e => -e * b / 2)
                 },
                 children: [(0, i.jsx)(a.animated.div, {
                     style: {
@@ -203,7 +203,7 @@ function T(e) {
             }), (0, i.jsx)(a.animated.div, {
                 className: N.Vx,
                 style: {
-                    translateY: eA.value.to(e => e * S / 2),
+                    translateY: eA.value.to(e => e * b / 2),
                     opacity: eA.value,
                     visibility: eA.value.to(e => 0 === e ? "hidden" : "visible")
                 },

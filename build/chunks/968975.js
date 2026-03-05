@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(524380),
     I = n(652215),
     N = n(49999),
-    b = n(985018),
-    S = n(250783);
+    S = n(985018),
+    b = n(250783);
 
 function T(e) {
     let {
@@ -127,24 +127,24 @@ function T(e) {
         onViewWishlist: T
     }))), (0, i.jsxs)(x.A.Overlay, {
         ref: V,
-        className: S.kL,
+        className: b.kL,
         children: [(0, i.jsxs)("div", {
-            className: S.wx,
+            className: b.wx,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
-                children: j ?? b.intl.string(b.t["7lZ31J"])
+                children: j ?? S.intl.string(S.t["7lZ31J"])
             }), L && (0, i.jsx)(r.QWc, {
                 variant: "secondary",
                 textVariant: "text-sm/medium",
                 onClick: T,
-                text: b.intl.string(b.t.y6PSA3)
+                text: S.intl.string(S.t.y6PSA3)
             })]
         }), (0, i.jsx)("div", {
-            className: S.vY,
+            className: b.vY,
             children: L ? B : W
         }), !K && k.has(I.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(u.A, {
             location: "user_profile_sidebar_wishlist_breadcrumb",
-            className: S.EK,
+            className: b.EK,
             onDismiss: () => F(N.i.USER_DISMISS)
         })]
     })

@@ -7,7 +7,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(396181),
+    a = n(162160),
     o = n(607399),
     c = n(311907),
     d = n(990078),
@@ -24,9 +24,9 @@ var i = n(627968),
     E = n(652215),
     I = n(349828),
     N = n(985018),
-    b = n(668560);
+    S = n(668560);
 
-function S(e) {
+function b(e) {
     let {
         guild: t,
         controller: n,
@@ -36,21 +36,21 @@ function S(e) {
         value: c
     } = n.springs;
     return (0, i.jsx)(a.animated.div, {
-        className: b.nI,
+        className: S.nI,
         style: {
             opacity: c,
             transform: c.to(e => `translateY(-${(1-e)*90}px)`)
         },
         children: (0, i.jsx)(a.animated.div, {
-            className: r()(b._e, {
-                [b.fr]: o.Fr
+            className: r()(S._e, {
+                [S.fr]: o.Fr
             }),
             style: {
                 transform: c.to(e => `translateY(${(1-e)*90}px)`)
             },
             children: (0, i.jsx)("img", {
-                className: r()(b.Q, {
-                    [b.fr]: o.Fr
+                className: r()(S.Q, {
+                    [S.fr]: o.Fr
                 }),
                 src: f.Ay.getGuildBannerURL({
                     id: t.id,
@@ -72,18 +72,18 @@ function T(e) {
     } = e, {
         value: o
     } = n.springs, c = t.features.has(E.GuildFeatures.DISCOVERABLE), h = (0, i.jsx)("div", {
-        className: b.WV,
+        className: S.WV,
         children: c && (0, i.jsx)(d.m, {
             text: N.intl.string(N.t.O8lDI2),
             position: "right",
             children: (0, i.jsxs)("div", {
-                className: b.Pl,
+                className: S.Pl,
                 children: [(0, i.jsx)(u.L_e, {
                     size: "custom",
                     color: "currentColor",
                     width: 12,
                     height: 12,
-                    className: b.ju
+                    className: S.ju
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-xs/normal",
                     color: "none",
@@ -93,10 +93,10 @@ function T(e) {
         })
     });
     return l ? (0, i.jsx)("div", {
-        className: r()(b.pS, b.W$),
+        className: r()(S.pS, S.W$),
         children: h
     }) : (0, i.jsx)(a.animated.div, {
-        className: b.pS,
+        className: S.pS,
         style: s ? {
             opacity: o
         } : {
@@ -110,7 +110,7 @@ function v() {
     return (0, i.jsx)(u.Gg5, {
         size: "custom",
         color: "currentColor",
-        className: b.PA,
+        className: S.PA,
         height: 20,
         width: 20
     })
@@ -123,7 +123,7 @@ function y(e) {
     return (0, i.jsx)(u.Heading, {
         variant: "text-md/semibold",
         lineClamp: 1,
-        className: b.UU,
+        className: S.UU,
         children: t.name
     })
 }
@@ -159,7 +159,7 @@ function R(e) {
     }, [g, l]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(u.DUT, {
-            className: b.Vm,
+            className: S.Vm,
             "aria-label": N.intl.formatToPlainString(N.t.xMXpl3, {
                 guildName: l?.name ?? ""
             }),
@@ -168,7 +168,7 @@ function R(e) {
             onContextMenu: a,
             onClick: r,
             children: [(0, i.jsxs)("div", {
-                className: b.LO,
+                className: S.LO,
                 children: [(0, i.jsx)(C.A, {
                     guild: l,
                     isBannerVisible: t
@@ -176,7 +176,7 @@ function R(e) {
                     guild: l
                 })]
             }), (0, i.jsx)("div", {
-                className: b.dx,
+                className: S.dx,
                 children: p
             })]
         }), !j.includes(l.id) && (0, i.jsx)(d.m, {
@@ -184,7 +184,7 @@ function R(e) {
             position: "bottom",
             asContainer: !0,
             children: (0, i.jsx)(u.DUT, {
-                className: b.ak,
+                className: S.ak,
                 onClick: () => {
                     f()
                 },
@@ -240,20 +240,20 @@ let O = s.memo(function(e) {
                 "data-banner-visible": n,
                 ref: K,
                 className: r()(a, {
-                    [b.kL]: !0,
-                    [b.r9]: q(),
-                    [b.Pi]: n,
+                    [S.kL]: !0,
+                    [S.r9]: q(),
+                    [S.Pi]: n,
                     [e]: !1,
-                    [b.Iv]: w || D && P
+                    [S.Iv]: w || D && P
                 }),
                 onMouseDown: m,
                 onContextMenu: A,
                 children: [(0, i.jsxs)("header", {
-                    className: r()(b.wx, O, {
-                        [b.jD]: o.Fr
+                    className: r()(S.wx, O, {
+                        [S.jD]: o.Fr
                     }),
                     children: [(0, i.jsx)("div", {
-                        className: r()(b.VW, b.Nk),
+                        className: r()(S.VW, S.Nk),
                         children: (0, i.jsx)(R, {
                             bannerVisible: n,
                             guild: N,
@@ -269,7 +269,7 @@ let O = s.memo(function(e) {
                         hasBanner: null != v,
                         hasSubheader: D ?? !1
                     })]
-                }), null != v ? (0, i.jsx)(S, {
+                }), null != v ? (0, i.jsx)(b, {
                     guild: N,
                     controller: l,
                     guildBanner: v,
@@ -278,7 +278,7 @@ let O = s.memo(function(e) {
                     controller: l
                 })]
             }), k && q() ? (0, i.jsx)("div", {
-                className: b.rt,
+                className: S.rt,
                 onMouseEnter: () => {
                     B(!0), clearTimeout(W.current)
                 },
@@ -299,17 +299,17 @@ function L(e) {
     } = (0, u.wRf)(), s = t.springs.value;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.animated.div, {
-            className: b.UL,
+            className: S.UL,
             style: {
                 opacity: s.to(e => .5 * e)
             }
         }), (0, i.jsx)(a.animated.div, {
-            className: b.ze,
+            className: S.ze,
             style: {
                 opacity: s.to(e => e)
             }
         }), (0, i.jsx)(a.animated.div, {
-            className: b.iI,
+            className: S.iI,
             style: {
                 opacity: s.to(e => (1 - e) * 6),
                 filter: (0, u.qB1)(n) ? s.to(e => `brightness(${.75+.25*e})`) : void 0

@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(183555),
     I = n(186111),
     N = n(146423),
-    b = n(662349),
-    S = n(479026),
+    S = n(662349),
+    b = n(479026),
     T = n(699976),
     v = n(652215),
     y = n(49999),
@@ -65,7 +65,7 @@ let G = T.Z.SIZE_90,
             label: p,
             icon: g,
             isPromptingPurchase: _
-        } = (0, b.hB)({
+        } = (0, S.hB)({
             sku: n,
             wishlistOwner: l,
             isOwned: !1,
@@ -83,7 +83,7 @@ let G = T.Z.SIZE_90,
                 skuPreviewStyle: r()(M.ho, c),
                 onClick: A,
                 onHoverOrFocusChange: x,
-                children: (0, i.jsx)(b.AJ, {
+                children: (0, i.jsx)(S.AJ, {
                     spec: G,
                     onClick: _ ? m : A,
                     isHoveringOrFocusing: f,
@@ -137,7 +137,7 @@ function w(e) {
         analyticsLocations: _
     } = (0, m.Ay)(...a ?? [], A.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON), E = (0, f.Jw)({
         location: "dm-side-panel-social-layer-storefront-wishlist-item-card"
-    }), N = (0, u.useHasAnyModalOpen)(), b = (0, c.bG)([I.A], () => I.A.hasLayers()), [S, T] = (0, g.kn)(!E || 0 !== l || t.applicationId !== R.XR || N || b ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], y.m.SIDEBAR, !0), v = s.useRef(null), O = s.useCallback(() => {
+    }), N = (0, u.useHasAnyModalOpen)(), S = (0, c.bG)([I.A], () => I.A.hasLayers()), [b, T] = (0, g.kn)(!E || 0 !== l || t.applicationId !== R.XR || N || S ? [] : [d.M.GAME_SHOP_WISHLIST_POPOVER], y.m.SIDEBAR, !0), v = s.useRef(null), O = s.useCallback(() => {
         T(y.i.USER_DISMISS), (0, C.a)(t, {
             isGift: !0,
             giftRecipient: n,
@@ -169,7 +169,7 @@ function w(e) {
             onDetailsClick: L,
             onPurchaseClick: O,
             ...o
-        }), S === d.M.GAME_SHOP_WISHLIST_POPOVER && (0, i.jsx)(P, {
+        }), b === d.M.GAME_SHOP_WISHLIST_POPOVER && (0, i.jsx)(P, {
             targetElementRef: v,
             onRequestClose: M,
             onActionClick: D
@@ -192,7 +192,7 @@ function k(e) {
             giftRecipient: n,
             variantsReturnStyle: o.g.VARIANTS_GROUP
         })
-    }, [t.id, n, l]), u = (0, S.e)({
+    }, [t.id, n, l]), u = (0, b.e)({
         sku: t,
         analyticsLocations: l
     }), h = s.useMemo(() => {

@@ -7,14 +7,14 @@ e(64700);
 var r = e(311907),
     l = e(397927),
     a = e(576705),
-    s = e(652215),
-    d = e(985018);
+    d = e(652215),
+    s = e(985018);
 
 function c(n, t) {
     let c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : n.type,
-        A = (0, r.bG)([a.A], () => a.A.can(s.xBc.MANAGE_CHANNELS, n), [n]);
-    if (__OVERLAY__ || !A) return null;
-    let o = () => {
+        o = (0, r.bG)([a.A], () => a.A.can(d.xBc.MANAGE_CHANNELS, n), [n]);
+    if (__OVERLAY__ || !o) return null;
+    let A = () => {
         (0, l.mMO)(async () => {
             let {
                 default: t
@@ -28,17 +28,17 @@ function c(n, t) {
         })
     };
     switch (c) {
-        case s.rbe.GUILD_TEXT:
+        case d.rbe.GUILD_TEXT:
             return (0, i.jsx)(l.Drp, {
                 id: "create-text-channel",
-                label: d.intl.string(d.t.HHkTJP),
-                action: o
+                label: s.intl.string(s.t.HHkTJP),
+                action: A
             });
-        case s.rbe.GUILD_VOICE:
+        case d.rbe.GUILD_VOICE:
             return (0, i.jsx)(l.Drp, {
                 id: "create-voice-channel",
-                label: d.intl.string(d.t.AlbZaI),
-                action: o
+                label: s.intl.string(s.t.AlbZaI),
+                action: A
             });
         default:
             return null

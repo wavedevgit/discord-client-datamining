@@ -11,8 +11,8 @@ var r = t(64700),
     l = t(843472),
     a = t(803306),
     d = t(71393),
-    s = t(320501),
-    o = t(376708),
+    o = t(320501),
+    s = t(376708),
     u = t(272720),
     c = t(56595);
 
@@ -25,17 +25,17 @@ function A(e) {
 }
 
 function h(e) {
-    return (0, o.uW)(e)
+    return (0, s.uW)(e)
 }
 
 function f(e) {
-    return (0, o.xJ)(e)
+    return (0, s.xJ)(e)
 }
 
 function _(e) {
     let {
         messageReference: n
-    } = e, t = (0, i.bG)([s.A], () => null != n ? s.A.getMessage(n.channel_id, n.message_id) : null);
+    } = e, t = (0, i.bG)([o.A], () => null != n ? o.A.getMessage(n.channel_id, n.message_id) : null);
     (0, r.useEffect)(() => {
         null == t && null != n && l.A.fetchMessages({
             channelId: n.channel_id,

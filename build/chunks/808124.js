@@ -1,7 +1,7 @@
 /** chunk id: 808124, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
@@ -29,11 +29,11 @@ let N = e => {
             idle: n,
             className: l,
             participants: a
-        } = e, h = (0, m.A)(t.id), [A, N] = s.useState(!1), b = s.useCallback(e => {
+        } = e, h = (0, m.A)(t.id), [A, N] = s.useState(!1), S = s.useCallback(e => {
             u.Ay.update(t.id, {
                 seat: e
             })
-        }, [t.id]), [S, T] = (0, c.V)("haven-show-chat", !1);
+        }, [t.id]), [b, T] = (0, c.V)("haven-show-chat", !1);
         s.useEffect(() => {
             setTimeout(() => {
                 N(!0)
@@ -149,7 +149,7 @@ let N = e => {
                         channel: t,
                         idle: n,
                         skipNewUserEducation: !A,
-                        onSeatClick: b
+                        onSeatClick: S
                     })
                 }), (0, i.jsxs)("div", {
                     className: r()(I.nM, I.vf),
@@ -171,16 +171,16 @@ let N = e => {
                         }), (0, i.jsx)(o.K0, {
                             variant: "icon-only",
                             "aria-label": E.intl.string(C.default.O7EDNk),
-                            icon: S ? o._mZ : o.oyn,
+                            icon: b ? o._mZ : o.oyn,
                             disabled: n,
                             onClick: e => {
-                                e.preventDefault(), e.stopPropagation(), T(!S)
+                                e.preventDefault(), e.stopPropagation(), T(!b)
                             }
                         })]
                     }), (0, i.jsx)(g.A, {
                         channel: t,
                         idle: n,
-                        showChat: S ?? !1
+                        showChat: b ?? !1
                     }), (0, i.jsxs)("div", {
                         className: r()(I.nM, {
                             [I.R]: n
@@ -229,7 +229,7 @@ let N = e => {
             })
         })
     },
-    b = e => {
+    S = e => {
         let t = h.s.useConfig({
                 location: "Haven"
             }).enabled,

@@ -30,48 +30,50 @@ function I(e) {
         targetDestination: t,
         selectedDestinations: s,
         originDestination: n,
-        includeMissingDMs: h = !1
-    } = e, I = (0, i.bG)([A.default], () => A.default.getId()), o = l.useMemo(() => ({
+        channelFilter: h,
+        includeMissingDMs: I = !1
+    } = e, o = (0, i.bG)([A.default], () => A.default.getId()), L = l.useMemo(() => ({
         searchOptions: {
-            blacklist: new Set([`user:${I}`]),
+            blacklist: new Set([`user:${o}`]),
             frecencyBoosters: !0,
             userFilters: null
         }
-    }), [I]), {
-        search: L,
-        query: E,
-        results: N
-    } = (0, c.A)(o), [C, f] = l.useState(d("")), g = l.useCallback(e => f(d(e)), [f]), {
-        queryMode: b
-    } = C, P = l.useRef(null), m = l.useRef(s), x = E !== P.current ? s : m.current;
+    }), [o]), {
+        search: E,
+        query: N,
+        results: C
+    } = (0, c.A)(L), [f, g] = l.useState(d("")), b = l.useCallback(e => g(d(e)), [g]), {
+        queryMode: P
+    } = f, m = l.useRef(null), x = l.useRef(s), G = N !== m.current ? s : x.current;
     l.useEffect(() => {
-        E !== P.current && (m.current = s), P.current = E
-    }, [E, s]), l.useLayoutEffect(() => {
+        N !== m.current && (x.current = s), m.current = N
+    }, [N, s]), l.useLayoutEffect(() => {
         let {
             query: e,
             resultTypes: t
-        } = C;
-        L({
+        } = f;
+        E({
             query: e,
             resultTypes: t
         })
-    }, [L, C]), (0, r.k)();
-    let G = (0, i.bG)([u.A], () => u.A.getFrequentlyWithoutFetchingLatest()),
-        D = (0, i.bG)([a.A], () => a.A.isConnected()),
-        T = "" !== E;
+    }, [E, f]), (0, r.k)();
+    let D = (0, i.bG)([u.A], () => u.A.getFrequentlyWithoutFetchingLatest()),
+        T = (0, i.bG)([a.A], () => a.A.isConnected()),
+        S = "" !== N;
     return {
         results: l.useMemo(() => (0, _.Ay)({
-            results: N,
-            hasQuery: T,
-            queryMode: b,
+            results: C,
+            hasQuery: S,
+            queryMode: P,
             targetDestination: t,
-            frequentChannels: G,
+            frequentChannels: D,
             selectedDestinations: s,
-            pinnedDestinations: x,
+            pinnedDestinations: G,
             originDestination: n,
-            includeMissingDMs: h,
-            isConnected: D
-        }), [N, T, b, t, G, s, x, n, h, D]),
-        updateSearchText: g
+            channelFilter: h,
+            includeMissingDMs: I,
+            isConnected: T
+        }), [C, S, P, t, D, s, G, n, h, I, T]),
+        updateSearchText: b
     }
 }

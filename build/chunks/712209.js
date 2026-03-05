@@ -25,8 +25,8 @@ var i, s, l = n(64700),
     E = n(152007),
     I = n(607508),
     N = n(594061),
-    b = n(617617),
-    S = n(95701),
+    S = n(617617),
+    b = n(95701),
     T = n(734057),
     v = n(808728),
     y = n(71393),
@@ -282,7 +282,7 @@ function K() {
     var e;
     let t, n = function() {
             let e = {},
-                t = b.A.settings.guilds?.guilds ?? {};
+                t = S.A.settings.guilds?.guilds ?? {};
             for (let n in t)
                 for (let i in t[n].channels) {
                     let s = T.A.getChannel(i);
@@ -315,7 +315,7 @@ function K() {
 function W(e, t, n, i) {
     if (null == i) return;
     let s = T.A.getChannel(i);
-    if (null == s || !S.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
+    if (null == s || !b.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
     if (s.isPrivate()) {
         if (0 === O.Ay.getMentionCount(i)) return
     } else if (!(0, f.Y)(s) && 0 === O.Ay.getMentionCount(i)) return;

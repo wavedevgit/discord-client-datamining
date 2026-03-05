@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(440938),
     f = s(993408),
     x = s(212407),
-    E = s(521e3),
-    C = s(938191),
+    C = s(521e3),
+    E = s(938191),
     b = s(815280),
     A = s(60140),
     S = s(758836),
@@ -46,7 +46,7 @@ let j = {
             onVisibilityChange: O
         } = e, y = (0, a.K)(e => {
             O?.(e)
-        }, .1, null != O), N = r.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
+        }, .1, null != O), N = r.useRef(null), R = (0, E.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -61,8 +61,8 @@ let j = {
             heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
         }, [k, l]), {
             bannerDisplayConfig: D,
-            logoDisplayConfig: w,
-            heroLogo: H,
+            logoDisplayConfig: H,
+            heroLogo: w,
             heroBannerStatic: U,
             heroBannerAnimated: F,
             heroBannerRive: G
@@ -90,7 +90,7 @@ let j = {
         return null != B && (t || P !== j) ? (0, n.jsxs)("div", {
             ref: y,
             className: L.os,
-            children: [z ? (0, E.VA)({
+            children: [z ? (0, C.VA)({
                 isCustomCursorEnabled: R,
                 className: L.Xt,
                 riveEventTargetRef: N
@@ -132,11 +132,11 @@ let j = {
                             className: L.v0
                         }), (0, n.jsxs)("div", {
                             className: L.Wq,
-                            children: [null != H && (0, n.jsx)("img", {
+                            children: [null != w && (0, n.jsx)("img", {
                                 className: L.rm,
-                                src: H,
+                                src: w,
                                 alt: P.name,
-                                style: w?.toDesktopStyles()
+                                style: H?.toDesktopStyles()
                             }), null != P.title && (0, n.jsx)(u.Heading, {
                                 variant: "heading-xxl/bold",
                                 className: L.DD,

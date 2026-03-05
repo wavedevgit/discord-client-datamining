@@ -1,6 +1,6 @@
 /** chunk id: 385913, original params: n,t,e (module,exports,require) **/
 e.d(t, {
-    default: () => W
+    default: () => k
 });
 var i = e(627968);
 e(64700);
@@ -14,8 +14,8 @@ var r = e(397927),
     o = e(810845),
     A = e(854182),
     h = e(734337),
-    _ = e(855187),
-    f = e(479335),
+    f = e(855187),
+    _ = e(479335),
     g = e(343328),
     j = e(848977),
     p = e(995102),
@@ -32,8 +32,8 @@ var r = e(397927),
     D = e(239211),
     U = e(707378),
     O = e(486524),
-    S = e(631637),
-    G = e(984894),
+    G = e(631637),
+    S = e(984894),
     M = e(399476),
     N = e(889460),
     V = e(460597),
@@ -42,17 +42,17 @@ var r = e(397927),
     Y = e(243949),
     F = e(972432),
     L = e(77544),
-    k = e(652215),
-    w = e(985018);
-let W = (0, d.A)((0, a.A)(function(n) {
+    w = e(652215),
+    W = e(985018);
+let k = (0, d.A)((0, a.A)(function(n) {
     let {
         user: t,
         channel: e,
         channelSelected: a = !1,
         showMute: d = !0,
         showMediaItems: c = !1,
-        showChannelCallItems: k = !1,
-        showModalItems: W = !0,
+        showChannelCallItems: w = !1,
+        showModalItems: k = !0,
         targetIsUser: B = !1,
         context: J,
         onSelect: K,
@@ -78,36 +78,36 @@ let W = (0, d.A)((0, a.A)(function(n) {
         user: t
     }), nu = (0, V.A)({
         user: t
-    }), nc = (0, X.A)(t.id), no = (0, f.u)({
+    }), nc = (0, X.A)(t.id), no = (0, _.u)({
         userId: t.id,
         channelId: e.id,
         guildId: e.getGuildId()
-    }), nA = (0, G.A)(t.id, e.id), nh = (0, D.A)({
+    }), nA = (0, S.A)(t.id, e.id), nh = (0, D.A)({
         user: t,
         location: "DMUserContextMenu"
-    }), n_ = (0, M.A)({
+    }), nf = (0, M.A)({
         user: t,
         location: "DMUserContextMenu"
-    }), nf = (0, p.Ay)(e), ng = (0, x.A)({
+    }), n_ = (0, p.Ay)(e), ng = (0, x.A)({
         id: t.id,
-        label: w.intl.string(w.t["/AXYnE"])
+        label: W.intl.string(W.t["/AXYnE"])
     }), nj = (0, x.A)({
         id: e.id,
-        label: w.intl.string(w.t.gFHI3k)
-    }), np = (0, j.A)(e), nx = (0, h.A)(t.id), nb = (0, A.A)(e.id), nI = (0, m.A)(t), nE = (0, _.A)(t.id), nm = (0, o.A)(e.id, t.id), nv = (0, C.A)({
+        label: W.intl.string(W.t.gFHI3k)
+    }), np = (0, j.A)(e), nx = (0, h.A)(t.id), nb = (0, A.A)(e.id), nI = (0, m.A)(t), nE = (0, f.A)(t.id), nm = (0, o.A)(e.id, t.id), nv = (0, C.A)({
         commandType: s.kc.USER,
         commandTargetId: t.id,
         channel: e,
         guildId: void 0,
         onHeightUpdate: q
-    }), nT = (0, b.m)(e), ny = (0, b.y)(e), nR = (0, I.A)(e), nC = (0, E.A)(e), nD = (0, S.A)({
+    }), nT = (0, b.m)(e), ny = (0, b.y)(e), nR = (0, I.A)(e), nC = (0, E.A)(e), nD = (0, G.A)({
         channel: e
     }), nU = e.isManaged(), nO = t.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: l.Z_,
-        "aria-label": w.intl.string(w.t.liqwPJ),
+        "aria-label": W.intl.string(W.t.liqwPJ),
         onSelect: K,
         onInteraction: H,
         children: [(0, i.jsx)(r.rXV, {
@@ -118,22 +118,22 @@ let W = (0, d.A)((0, a.A)(function(n) {
             children: !nO && nI
         }), (0, i.jsxs)(r.rXV, {
             children: [!nO && (0, i.jsxs)(i.Fragment, {
-                children: [W && Z, $, !nU && na, W && z, W && Q, nn]
+                children: [k && Z, $, !nU && na, k && z, k && Q, nn]
             }), (0, g.A)(e.id) && Z, nt]
         }), !nO && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(r.rXV, {
                 children: c && nr
             }), (0, i.jsx)(r.rXV, {
-                children: W && ni
+                children: k && ni
             }), (0, i.jsxs)(r.rXV, {
-                children: [nv, c && nE, c && nc, W && no, c && nA, W && ne, nd, ns, nu, W && n_, W && nh]
+                children: [nv, c && nE, c && nc, k && no, c && nA, k && ne, nd, ns, nu, k && nf, k && nh]
             }), (0, i.jsx)(r.rXV, {
-                children: d && nf
-            }), k && (0, i.jsxs)(r.rXV, {
+                children: d && n_
+            }), w && (0, i.jsxs)(r.rXV, {
                 children: [nm, nb, nx]
             })]
         }), (0, g.A)(e.id) && (0, i.jsx)(r.rXV, {
-            children: d && nf
+            children: d && n_
         }), (0, i.jsx)(r.rXV, {
             children: ny
         }), (0, i.jsx)(r.rXV, {
@@ -143,5 +143,5 @@ let W = (0, d.A)((0, a.A)(function(n) {
         })]
     })
 }, {
-    object: k.ZSU.CONTEXT_MENU
+    object: w.ZSU.CONTEXT_MENU
 }), [c.A.CONTEXT_MENU, c.A.DM_USER_MENU])

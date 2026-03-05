@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(788868),
     I = n(985018),
     N = n(407494),
-    b = n(101616),
-    S = n(585048);
+    S = n(101616),
+    b = n(585048);
 
 function T(e) {
     let {
@@ -54,7 +54,7 @@ function T(e) {
         body: I.intl.string(I.t.iM6fxV),
         graphic: {
             type: "image",
-            src: S.A
+            src: b.A
         }
     })
 }
@@ -142,9 +142,9 @@ function j(e) {
         data: r
     } = (0, u.YY)(t.sku.applicationId);
     return (0, i.jsxs)("div", {
-        className: b.D5,
+        className: S.D5,
         children: [n, (0, i.jsx)("div", {
-            className: b.S7,
+            className: S.S7,
             children: (0, i.jsxs)(c.DUT, {
                 onClick: () => {
                     (0, _.a)(t.sku, {
@@ -155,7 +155,7 @@ function j(e) {
                         analyticsLocations: [...s, d.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
                     })
                 },
-                className: b.Hh,
+                className: S.Hh,
                 "aria-label": I.intl.string(I.t.pLPjsb),
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/semibold",

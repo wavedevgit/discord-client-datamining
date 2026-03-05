@@ -1,7 +1,7 @@
 /** chunk id: 676002, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    a: () => S
+    a: () => b
 });
 var i = n(627968);
 n(64700);
@@ -26,7 +26,7 @@ var s = n(205369),
     I = n(652215);
 let N = "DRAGGABLE_GUILD_CHANNEL";
 
-function b(e, t) {
+function S(e, t) {
     if (null == e || null == t) return null;
     if (e !== I.YYv) return m.A.getChannel(t);
     let n = g.Ay.getChannels(e),
@@ -34,21 +34,21 @@ function b(e, t) {
     return i?.channel
 }
 
-function S(e) {
+function b(e) {
     return (0, s.T)(N, {
         drop(e, t) {
             let n, s = x.A.getGuildId(),
                 l = t.getItem(),
-                o = (0, C.QO)(b(s, l.id), l.position, e.channel, e.position, l.channelList);
+                o = (0, C.QO)(S(s, l.id), l.position, e.channel, e.position, l.channelList);
             if (null == o) return;
-            let u = b(s, l.id);
+            let u = S(s, l.id);
             if (null == u) return;
             let h = p.A.getCategories(s),
                 A = _.A.getGuild(s);
             if (null == A) return;
-            let g = (0, C.Zj)(u, b(s, o.referenceId), o.parentId, h);
+            let g = (0, C.Zj)(u, S(s, o.referenceId), o.parentId, h);
             if (0 !== g.length) {
-                if (s === I.YYv) return void(0, d.S_)(g);
+                if (s === I.YYv) return void(0, d.zN)(g);
                 if (g = g.filter(e => {
                         let {
                             id: t

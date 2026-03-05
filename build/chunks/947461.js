@@ -25,7 +25,7 @@ let x = s.memo(function(e) {
         selected: x
     } = e, [C, E] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), I = C === l.M.GAME_SERVER_HOSTING_NEW_BADGE, N = s.useCallback(() => {
         E(m.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
-    }, [t, E]), b = s.useCallback(e => {
+    }, [t, E]), S = s.useCallback(e => {
         e.stopPropagation(), (0, r.openModalLazy)(async () => {
             let {
                 default: e
@@ -35,12 +35,12 @@ let x = s.memo(function(e) {
                 guildId: t
             })
         })
-    }, [t]), S = (0, i.jsxs)("div", {
+    }, [t]), b = (0, i.jsxs)("div", {
         className: _.c,
         children: [(0, i.jsx)("div", {
             className: f.Xs,
             children: (0, i.jsx)(o.w_, {
-                onClick: b,
+                onClick: S,
                 "aria-label": g.intl.string(g.t.cpT0Cq),
                 icon: a.PGe,
                 forceShow: !0
@@ -65,6 +65,6 @@ let x = s.memo(function(e) {
         text: g.intl.string(p.default.vCzwM7),
         selected: x,
         onClick: N,
-        trailing: S
+        trailing: b
     })
 })

@@ -23,7 +23,7 @@ function h(e) {
         location: "ForLaterCoachmarkWeb"
     }, {
         autoTrackExposure: !1
-    }), [_, E] = (0, a.kn)(n && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], void 0);
+    }), [_, S] = (0, a.kn)(n && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], void 0);
     return _ !== d ? null : (0, s.jsx)(l.AM, {
         targetElementRef: r,
         gradientColor: "purple",
@@ -33,12 +33,12 @@ function h(e) {
         caretConfig: {
             align: "end"
         },
-        onRequestClose: () => E(o.i.USER_DISMISS),
+        onRequestClose: () => S(o.i.USER_DISMISS),
         title: u.intl.string(u.t.qPbFK2),
         body: u.intl.string(u.t.URrJq1),
         actions: [{
             text: u.intl.string(u.t["NX+WJN"]),
-            onClick: () => E(o.i.USER_DISMISS)
+            onClick: () => S(o.i.USER_DISMISS)
         }],
         graphic: {
             type: "image",

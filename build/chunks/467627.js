@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(688810),
     I = n(313961),
     N = n(838432),
-    b = n(832275),
-    S = n(730253),
+    S = n(832275),
+    b = n(730253),
     T = n(633965),
     v = n(857071),
     y = n(851109),
@@ -173,13 +173,13 @@ function el(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: s
-    } = e, l = (0, b.A)("TopSection"), r = (0, h.yK)([D.A, M.Ay], () => D.A.getGuildIds().filter(e => M.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
+    } = e, l = (0, S.A)("TopSection"), r = (0, h.yK)([D.A, M.Ay], () => D.A.getGuildIds().filter(e => M.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
         entrypoint: o
     } = (0, y.X8)({
         location: "GuildsBar"
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Y.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(j.A, {}), l ? (0, i.jsx)(S.A, {}) : null, !t && (0, i.jsx)(B.A, {}), a.map(e => (0, i.jsx)($.A, {
+        children: [(0, i.jsx)(Y.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(j.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(B.A, {}), a.map(e => (0, i.jsx)($.A, {
             guildId: e
         }, e)), (0, i.jsx)(Q.A, {
             onActivate: n
@@ -228,12 +228,12 @@ function ea(e) {
         return [e, e.version]
     }), u = (0, h.bG)([v.A], () => v.A.lurkingGuildIds()), A = s.useMemo(() => n ? [] : u, [u, n]), _ = (0, h.bG)([I.A], () => I.A.isFullscreenInContext()), {
         isSorting: x,
-        startSorting: S,
+        startSorting: b,
         stopSorting: T
     } = (0, P.A)(), L = s.useRef(!1), [M] = s.useState(() => new m.Ep), D = s.useRef(null), B = s.useRef(null), {
         ref: H,
         ...F
-    } = (0, d.$y)(), K = (0, g.R7z)(), [Y, q] = s.useState(!1), Q = (0, g.rdh)(p.A.modules.guildbar.AVATAR_SIZE), $ = (0, g.rdh)(p.A.space.SPACE_XS), ea = (0, b.A)("GuildsBar"), {
+    } = (0, d.$y)(), K = (0, g.R7z)(), [Y, q] = s.useState(!1), Q = (0, g.rdh)(p.A.modules.guildbar.AVATAR_SIZE), $ = (0, g.rdh)(p.A.space.SPACE_XS), ea = (0, S.A)("GuildsBar"), {
         pathname: eo
     } = (0, c.zy)(), {
         entrypoint: ec
@@ -298,7 +298,7 @@ function ea(e) {
                         setNodeRef: eu.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: S,
+                        onDragStart: b,
                         onDragEnd: T,
                         renderChildNode: e,
                         "aria-setsize": s,
@@ -310,7 +310,7 @@ function ea(e) {
                         setRef: eu.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: S,
+                        onDragStart: b,
                         onDragEnd: T,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -318,7 +318,7 @@ function ea(e) {
                 default:
                     return null
             }
-        }, [S, T, x, eu.setNodeRef]),
+        }, [b, T, x, eu.setNodeRef]),
         eg = (0, i.jsx)(W.A, {
             selected: eA,
             className: et.ai

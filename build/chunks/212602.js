@@ -23,7 +23,7 @@ let x = () => {
         sort: e,
         onSetSort: t,
         hasRelevanceFilters: s
-    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), C = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), b = r.useCallback(e => {
+    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), C = s(), E = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || C), [C]), b = r.useCallback(e => {
         let {
             sortType: t,
             sortDirection: s
@@ -89,7 +89,7 @@ let x = () => {
         children: (0, n.jsx)(c.l6P, {
             label: p.intl.string(p.t.uaX705),
             hideLabel: !0,
-            options: C.map(b),
+            options: E.map(b),
             onSelectionChange: S,
             value: v.value,
             selectionMode: "single",

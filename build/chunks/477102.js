@@ -763,7 +763,7 @@ let b = {
     AddFavoriteChannelModal: async () => {
         let {
             default: e
-        } = await n.e("59839").then(n.bind(n, 889186));
+        } = await n.e("82220").then(n.bind(n, 889186));
         return t => (0, a.jsx)(e, {
             ...t,
             parentId: null
@@ -1073,7 +1073,7 @@ let b = {
     FamilyCenterQRCodeModal: async () => {
         let {
             default: e
-        } = await Promise.all([n.e("17027"), n.e("72875")]).then(n.bind(n, 320742));
+        } = await Promise.all([n.e("93570"), n.e("72875")]).then(n.bind(n, 320742));
         return t => (0, a.jsx)(e, {
             ...t
         })

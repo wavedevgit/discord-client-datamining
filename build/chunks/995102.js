@@ -1,5 +1,5 @@
-/** chunk id: 995102, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 995102, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     Ay: () => m,
     gv: () => C,
     pB: () => h
@@ -7,16 +7,16 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(989349),
-    r = n.n(a),
-    l = n(311907),
-    u = n(397927),
-    o = n(914430),
+    l = n.n(a),
+    r = n(311907),
+    o = n(397927),
+    u = n(914430),
     d = n(832712),
     s = n(392567),
     c = n(543465),
     f = n(477427),
-    A = n(47167),
-    v = n(652215),
+    v = n(47167),
+    A = n(652215),
     p = n(815968),
     _ = n(985018);
 let C = () => [{
@@ -38,69 +38,69 @@ let C = () => [{
         value: p.Xx.ALWAYS,
         label: _.intl.string(_.t.r3LawO)
     }],
-    h = e => {
-        let t = e > 0 ? r()().add(e, "second").toISOString() : null;
+    h = t => {
+        let e = t > 0 ? l()().add(t, "second").toISOString() : null;
         return {
             muted: !0,
             mute_config: {
-                selected_time_window: e,
-                end_time: t
+                selected_time_window: t,
+                end_time: e
             }
         }
     };
 
-function m(e, t) {
+function m(t, e) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-        [a, r] = (0, l.yK)([c.Ay], () => [c.Ay.isChannelMuted(e.guild_id, e.id), c.Ay.getChannelMuteConfig(e.guild_id, e.id)]),
-        p = (0, s.M)(r),
-        m = (0, A.Ay)(e, !0);
+        [a, l] = (0, r.yK)([c.Ay], () => [c.Ay.isChannelMuted(t.guild_id, t.id), c.Ay.getChannelMuteConfig(t.guild_id, t.id)]),
+        p = (0, s.M)(l),
+        m = (0, v.Ay)(t, !0);
 
-    function E(t) {
-        t && e.type === v.rbe.GUILD_CATEGORY && (0, o.Gv)(e.id), d.A.updateChannelOverrideSettings(e.guild_id, e.id, {
-            muted: t
-        }, f.G_.muted(t))
+    function E(e) {
+        e && t.type === A.rbe.GUILD_CATEGORY && (0, u.Gv)(t.id), d.A.updateChannelOverrideSettings(t.guild_id, t.id, {
+            muted: e
+        }, f.G_.muted(e))
     }
-    let g = _.intl.string(_.t.tbeRRJ),
-        b = _.intl.string(_.t.OYefme);
-    switch (e.type) {
-        case v.rbe.GUILD_CATEGORY:
-            g = _.intl.string(_.t.pNMCg2), b = _.intl.string(_.t.olaBeG);
+    let b = _.intl.string(_.t.tbeRRJ),
+        g = _.intl.string(_.t.OYefme);
+    switch (t.type) {
+        case A.rbe.GUILD_CATEGORY:
+            b = _.intl.string(_.t.pNMCg2), g = _.intl.string(_.t.olaBeG);
             break;
-        case v.rbe.GROUP_DM:
-            g = _.intl.string(_.t.LO3kaK), b = _.intl.string(_.t["s5/5fm"]);
+        case A.rbe.GROUP_DM:
+            b = _.intl.string(_.t.LO3kaK), g = _.intl.string(_.t["s5/5fm"]);
             break;
-        case v.rbe.DM:
-            g = n ? _.intl.format(_.t.byjuJm, {
+        case A.rbe.DM:
+            b = n ? _.intl.format(_.t.byjuJm, {
                 name: m
-            }) : _.intl.string(_.t.LO3kaK), b = n ? _.intl.format(_.t["eC+9rj"], {
+            }) : _.intl.string(_.t.LO3kaK), g = n ? _.intl.format(_.t["eC+9rj"], {
                 name: m
             }) : _.intl.string(_.t["s5/5fm"]);
             break;
         default:
-            g = _.intl.string(_.t.tbeRRJ), b = _.intl.string(_.t.OYefme)
+            b = _.intl.string(_.t.tbeRRJ), g = _.intl.string(_.t.OYefme)
     }
-    return a ? (0, i.jsx)(u.Drp, {
+    return a ? (0, i.jsx)(o.Drp, {
         id: "unmute-channel",
-        label: b,
+        label: g,
         subtext: p,
         action: () => E(!1)
-    }) : (0, i.jsx)(u.Drp, {
+    }) : (0, i.jsx)(o.Drp, {
         id: "mute-channel",
-        label: g,
+        label: b,
         action: () => {
             E(!0)
         },
         children: C().map(n => {
             let {
                 value: a,
-                label: r
+                label: l
             } = n;
-            return (0, i.jsx)(u.Drp, {
+            return (0, i.jsx)(o.Drp, {
                 id: `${a}`,
-                label: r,
+                label: l,
                 action: () => {
                     let n;
-                    return e.type === v.rbe.GUILD_CATEGORY && (0, o.Gv)(e.id), n = h(a), void d.A.updateChannelOverrideSettings(e.guild_id, e.id, n, f.fd.Muted, t)
+                    return t.type === A.rbe.GUILD_CATEGORY && (0, u.Gv)(t.id), n = h(a), void d.A.updateChannelOverrideSettings(t.guild_id, t.id, n, f.fd.Muted, e)
                 }
             }, a)
         })

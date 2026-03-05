@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(323443),
     I = n(113783),
     N = n(69407),
-    b = n(446600),
-    S = n(96566),
+    S = n(446600),
+    b = n(96566),
     T = n(175452),
     v = n(924985),
     y = n(734057),
@@ -105,7 +105,7 @@ class W extends U.Ay {
         null != s && (0, h.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("81107")]).then(n.bind(n, 698193));
+            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("18159")]).then(n.bind(n, 698193));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,
@@ -202,7 +202,7 @@ class W extends U.Ay {
             isFavoriteSuggestion: E
         } = this.props, {
             shouldShowGuildVerificationPopout: I
-        } = this.state, N = this.getVoiceStatesCount(), b = (0, i.jsxs)("li", {
+        } = this.state, N = this.getVoiceStatesCount(), S = (0, i.jsxs)("li", {
             className: r()(this.getModeClass(), {
                 [F.r9]: this.isDisabled()
             }),
@@ -251,7 +251,7 @@ class W extends U.Ay {
                 })
             }), this.renderVoiceUsers()]
         });
-        return A && (b = o(b)), h && (b = l(a(b))), b
+        return A && (S = o(S)), h && (S = l(a(S))), S
     }
 }
 let Y = (0, A.a)((0, m.F)(W));
@@ -278,10 +278,10 @@ function z(e) {
             bypassLimit: O.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, a.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, a.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), p = (0, I.zy)(n.id, N.ip.AUDIENCE), {
+    }), h = (0, a.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, a.bG)([S.A], () => S.A.getStageInstanceByChannel(n.id), [n.id]), p = (0, I.zy)(n.id, N.ip.AUDIENCE), {
         isSubscriptionGated: g,
         needSubscriptionToAccess: _
-    } = (0, f.A)(n.id), x = (0, a.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({
+    } = (0, f.A)(n.id), x = (0, a.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, b.xn)(n.id), E = (0, P.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: r,

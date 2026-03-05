@@ -7,7 +7,7 @@ var i, s = n(627968),
     l = n(64700),
     r = n(503698),
     a = n.n(r),
-    o = n(396181),
+    o = n(162160),
     c = n(696292),
     d = n(397927),
     u = n(753845),
@@ -35,8 +35,8 @@ function I(e) {
         commandOrigin: I
     } = e, {
         onActivityItemSelected: N,
-        imageBackground: b,
-        activityAction: S,
+        imageBackground: S,
+        activityAction: b,
         labelType: T
     } = (0, h.Ay)({
         context: t,
@@ -60,7 +60,7 @@ function I(e) {
             })
         })
     }), [T]), L = l.useMemo(() => {
-        switch (S) {
+        switch (b) {
             case h.o6.JOIN:
                 return (0, s.jsx)("div", {
                     className: f.m9,
@@ -89,7 +89,7 @@ function I(e) {
             default:
                 return null
         }
-    }, [S]);
+    }, [b]);
     return (0, s.jsx)(d.DUT, {
         onClick: N,
         onFocus: j,
@@ -124,7 +124,7 @@ function I(e) {
                                 transform: t.to([0, 1], [1, 1.05]).to(e => `scale(${e})`)
                             },
                             children: [(0, s.jsx)(A.A, {
-                                imageBackground: b,
+                                imageBackground: S,
                                 applicationName: n.application.name,
                                 imageClassName: f.jj,
                                 imageNotFoundClassName: f.v_

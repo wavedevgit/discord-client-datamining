@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(143413),
     I = n(763754),
     N = n(467073),
-    b = n(491182),
-    S = n(860227),
+    S = n(491182),
+    b = n(860227),
     T = n(756369),
     v = n(538355),
     y = n(522871),
@@ -86,7 +86,7 @@ let k = s.memo(function e(t) {
         eo = (0, c.P)(l),
         ec = (0, f._f)(l.id, l.channel_id),
         ed = (0, h.A)(l),
-        eu = (0, S.fF)(l);
+        eu = (0, b.fF)(l);
     return el ? (0, i.jsx)(e, {
         ...t,
         message: W.message,
@@ -97,7 +97,7 @@ let k = s.memo(function e(t) {
         compact: o,
         count: 1,
         collapsedReason: n
-    }) : (0, i.jsx)(b.A, {
+    }) : (0, i.jsx)(S.A, {
         compact: o,
         className: r()(D, {
             [w.M1]: (0, x.ec)(l),
@@ -156,7 +156,7 @@ function V(e) {
         compact: s,
         collapsedReason: l
     } = e;
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(S.A, {
         className: t,
         compact: s,
         role: "group",

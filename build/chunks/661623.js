@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(4227),
     f = s(597783),
     x = s(61750),
-    E = s(357704),
-    C = s(985018),
+    C = s(357704),
+    E = s(985018),
     b = s(514294),
     A = s(620399),
     S = s(68465),
@@ -38,7 +38,7 @@ let L = r.memo(function(e) {
         readyToClaim: k,
         collectibleProductSkuIds: T,
         collectedSkuIds: O
-    } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
+    } = (0, C.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: l,
         threshold: 0,
@@ -48,7 +48,7 @@ let L = r.memo(function(e) {
             className: i()(b.ty, A.Q3, {
                 [b.yo]: j
             }),
-            "aria-label": C.intl.formatToPlainString(C.t.Ez6aHE, {
+            "aria-label": E.intl.formatToPlainString(E.t.Ez6aHE, {
                 category: t.name
             }),
             children: (0, n.jsxs)("div", {
@@ -60,7 +60,7 @@ let L = r.memo(function(e) {
                 }), (0, n.jsx)("div", {
                     className: b.N1,
                     children: (0, n.jsx)(u.LpS, {
-                        text: C.intl.string(C.t.rykAJ9),
+                        text: E.intl.string(E.t.rykAJ9),
                         disableColor: !0,
                         className: A.HZ
                     })
@@ -75,9 +75,9 @@ let L = r.memo(function(e) {
                                 color: "text-strong",
                                 lineClamp: 1,
                                 className: b.tZ,
-                                children: C.intl.string(C.t["0mDmg/"])
+                                children: E.intl.string(E.t["0mDmg/"])
                             }), (0, n.jsx)(d.m, {
-                                text: k ? C.intl.string(C.t.cKH3tk) : C.intl.formatToPlainString(C.t["8aMDPc"], {
+                                text: k ? E.intl.string(E.t.cKH3tk) : E.intl.formatToPlainString(E.t["8aMDPc"], {
                                     totalCount: T.length
                                 }),
                                 align: "right",
@@ -112,7 +112,7 @@ let L = r.memo(function(e) {
                                     }) : null, (0, n.jsx)(a.EYj, {
                                         variant: "text-xs/medium",
                                         color: "currentColor",
-                                        children: C.intl.formatToPlainString(C.t["5TwASM"], {
+                                        children: E.intl.formatToPlainString(E.t["5TwASM"], {
                                             collectedCount: O.length,
                                             totalCount: T.length
                                         })
@@ -148,19 +148,19 @@ let L = r.memo(function(e) {
                                             transitionState: e.transitionState,
                                             onClose: e.onClose,
                                             size: "sm",
-                                            title: C.intl.string(C.t.SRTlyA),
+                                            title: E.intl.string(E.t.SRTlyA),
                                             actions: [{
-                                                text: C.intl.string(C.t.TyCVIq),
+                                                text: E.intl.string(E.t.TyCVIq),
                                                 onClick: e.onClose,
                                                 variant: "primary"
                                             }],
                                             children: (0, n.jsx)("div", {
-                                                children: C.intl.string(C.t["0YpIF/"])
+                                                children: E.intl.string(E.t["0YpIF/"])
                                             })
                                         })))
                                     })
                                 },
-                                text: C.intl.string(C.t.VnVTNc),
+                                text: E.intl.string(E.t.VnVTNc),
                                 fullWidth: !0,
                                 disabled: !k,
                                 loading: y

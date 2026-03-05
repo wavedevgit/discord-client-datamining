@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(667936),
     I = n(879349),
     N = n(884415),
-    b = n(611330),
-    S = n(652215),
+    S = n(611330),
+    b = n(652215),
     T = n(188275),
     v = n(699976),
     y = n(985018),
@@ -53,13 +53,13 @@ function L(e) {
     let C = (0, u.Ay)(l),
         I = Array.from((0, u.Rz)(C).values()),
         N = (0, m.W)(),
-        b = (0, d.mM)(g),
+        S = (0, d.mM)(g),
         R = (0, A.m)({
             location: "voice_channel_activities"
         }),
-        L = b.length + I.length > 0;
+        L = S.length + I.length > 0;
     return (s.useEffect(() => {
-        L && x.default.track(S.HAw.OPEN_POPOUT, {
+        L && x.default.track(b.HAw.OPEN_POPOUT, {
             type: "Voice Channel Activities",
             channel_id: l.id
         })
@@ -76,7 +76,7 @@ function L(e) {
             presenceActivity: e.presenceActivity ?? void 0,
             channel: l,
             onAction: h
-        }, t)), b.map((e, t) => {
+        }, t)), S.map((e, t) => {
             let {
                 members: n,
                 activity: r
@@ -136,7 +136,7 @@ function M(e) {
         channel: t,
         isChannelSelected: n,
         voiceStatesCount: s
-    } = e, l = (0, a.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), o = (0, a.bG)([f.A], () => f.A.hasVideo(t.id)), c = (0, C.Ay)({
+    } = e, l = (0, a.bG)([_.A], () => !_.A.can(b.xBc.CONNECT, t)), o = (0, a.bG)([f.A], () => f.A.hasVideo(t.id)), c = (0, C.Ay)({
         channel: t,
         locked: l,
         video: o,
@@ -150,7 +150,7 @@ function M(e) {
             userCount: s,
             video: o,
             channel: t
-        }) : (0, i.jsx)(b.A, {
+        }) : (0, i.jsx)(S.A, {
             userCount: s
         })]
     })

@@ -22,14 +22,14 @@ let _ = s.memo(function(e) {
         guildNode: t,
         lowerBadge: n
     } = e, _ = t.id, f = (0, l.bG)([h.A], () => h.A.getGuild(_)), x = (0, a.a)(f), C = (0, l.bG)([A.A], () => A.A.isFocused()), E = (0, l.bG)([d.A], () => d.A.isUnavailable(_)), I = (0, c.A)(e => e.guildId), N = (0, m.A)(_), {
-        badge: b,
-        unread: S,
+        badge: S,
+        unread: b,
         isMentionLowImportance: T
     } = (0, l.cf)([u.default], () => ({
         badge: u.default.getMentionCount(_),
         isMentionLowImportance: u.default.getIsMentionLowImportance(_),
         unread: u.default.hasUnread(_)
-    })), v = (0, o.Ig)(f) && 0 === b, y = s.useMemo(() => null != n ? n : v ? (0, i.jsx)("div", {
+    })), v = (0, o.Ig)(f) && 0 === S, y = s.useMemo(() => null != n ? n : v ? (0, i.jsx)("div", {
         className: g.j,
         children: (0, i.jsx)(r.E$n, {
             size: "custom",
@@ -45,10 +45,10 @@ let _ = s.memo(function(e) {
         unavailable: E,
         animatable: C,
         selected: I === _,
-        badge: b,
+        badge: S,
         isMentionLowImportance: T,
         lowerBadge: y,
-        unread: S,
+        unread: b,
         mediaState: N,
         guildJoinRequestStatus: x
     })

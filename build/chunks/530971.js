@@ -1,7 +1,7 @@
 /** chunk id: 530971, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => E
+    A: () => C
 });
 var n = s(627968),
     r = s(64700),
@@ -20,7 +20,7 @@ var n = s(627968),
     f = s(758836);
 let x = [f.G2.HOME, f.G2.ORBS];
 
-function E(e) {
+function C(e) {
     let {
         tab: t,
         categories: s,
@@ -28,9 +28,9 @@ function E(e) {
         transitionState: o,
         updateAnalyticsState: c,
         refreshCategories: d
-    } = e, m = C();
+    } = e, m = E();
     b(m);
-    let E = (0, l.bG)([i.A], () => i.A.useReducedMotion),
+    let C = (0, l.bG)([i.A], () => i.A.useReducedMotion),
         [A, S] = r.useState(void 0),
         [v, I] = r.useState(!0),
         L = r.useMemo(() => s.filter(e => !f.MS.some(t => {
@@ -48,10 +48,10 @@ function E(e) {
                 isOrbsExclusive: l
             } = e;
             c(t, s);
-            let i = n && !E,
+            let i = n && !C,
                 o = l ? f.G2.ORBS : f.G2.CATALOG;
             S(s), I(!r), a(o, i)
-        }, [E, a, c]),
+        }, [C, a, c]),
         {
             searchError: k
         } = (0, u.S)();
@@ -73,7 +73,7 @@ function E(e) {
         }
     })
 }
-let C = () => (0, l.bG)([c.A, d.A], () => null != c.A.error ? `shop load fetch categories error: ${c.A.error.message}` : null != d.A.claimError ? `shop load claim error: ${d.A.claimError.message}` : null != d.A.fetchError ? `shop load fetch purchase error: ${d.A.fetchError.message}` : void 0),
+let E = () => (0, l.bG)([c.A, d.A], () => null != c.A.error ? `shop load fetch categories error: ${c.A.error.message}` : null != d.A.claimError ? `shop load claim error: ${d.A.claimError.message}` : null != d.A.fetchError ? `shop load fetch purchase error: ${d.A.fetchError.message}` : void 0),
     b = e => {
         let t = (0, l.bG)([a.default], () => a.default.getCurrentUser()),
             {

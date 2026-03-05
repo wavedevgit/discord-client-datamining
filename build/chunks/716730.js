@@ -30,7 +30,7 @@ function x(e) {
         (0, A.i5)(e)
     }, [E]), {
         unreadCount: N,
-        mentionCount: b
+        mentionCount: S
     } = function(e) {
         let t = (0, r.bG)([u.A], () => !(0, l.isEmpty)(u.A.getTypingUsers(e)), [e]),
             {
@@ -45,20 +45,20 @@ function x(e) {
             mentionCount: i,
             isTyping: t
         }
-    }(t), S = s.useCallback(() => {
+    }(t), b = s.useCallback(() => {
         C.current?.focus()
     }, []);
     (0, h.Vo)({
         event: g.jej.FOCUS_CHAT_BUTTON,
-        handler: S
+        handler: b
     });
     let T = E ? _.intl.string(_.t["5MstTl"]) : _.intl.string(_.t.kkKapG),
         v = [T];
-    b > 0 && v.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
-        mentionCount: b
+    S > 0 && v.push(_.intl.formatToPlainString(_.t["3l1GOx"], {
+        mentionCount: S
     })), N > 0 && v.push(_.intl.string(_.t.x5zAGZ));
     let y = (0, r.bG)([m.Ay], () => m.Ay.getFocusedLayout()),
-        j = b > 0 ? b : N,
+        j = S > 0 ? S : N,
         R = j > 0;
     return (0, i.jsxs)("div", {
         className: f.iE,
@@ -74,7 +74,7 @@ function x(e) {
             className: n,
             ...x
         }), R ? (0, i.jsx)(o.A, {
-            hasMentions: b > 0,
+            hasMentions: S > 0,
             truncatedCount: j > 99 ? "99+" : j,
             className: f.qS
         }) : null]

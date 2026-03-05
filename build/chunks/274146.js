@@ -28,8 +28,8 @@ let N = e => {
         channel: t,
         guild: N
     } = e, {
-        currentCategoryId: b,
-        directoryEntries: S,
+        currentCategoryId: S,
+        directoryEntries: b,
         categoryCounts: T,
         allEntriesCount: v,
         isLoading: y
@@ -54,7 +54,7 @@ let N = e => {
             }, !0, !0, e)
         })
     }, [t.id]);
-    let j = s.useMemo(() => null != S ? (0, _._)(Object.values(S), b) : null, [S, b]),
+    let j = s.useMemo(() => null != b ? (0, _._)(Object.values(b), S) : null, [b, S]),
         {
             mostRecentQuery: R,
             searchFetching: O,
@@ -87,9 +87,9 @@ let N = e => {
         d.default.track(C.HAw.GUILD_DIRECTORY_CHANNEL_VIEWED, {
             directory_channel_id: t.id,
             directory_guild_id: N.id,
-            primary_category_id: b
+            primary_category_id: S
         })
-    }, [t.id, N.id, b]);
+    }, [t.id, N.id, S]);
     let w = (0, m.b)(t),
         k = s.useMemo(() => w ? () => {
             (0, r.mMO)(async () => {
@@ -101,10 +101,10 @@ let N = e => {
                     directoryGuildName: N.name,
                     directoryGuildId: N.id,
                     directoryChannelId: t.id,
-                    currentCategoryId: b === x.mU.ALL ? null : b
+                    currentCategoryId: S === x.mU.ALL ? null : S
                 })
             })
-        } : void 0, [w, N.name, N.id, t.id, b]),
+        } : void 0, [w, N.name, N.id, t.id, S]),
         V = e => {
             0 !== M.trim().length && e.key === E.dh.ENTER && (u.Se(t.id, M), d.default.track(C.HAw.GUILD_DIRECTORY_SEARCH, {
                 directory_channel_id: t.id,
@@ -123,12 +123,12 @@ let N = e => {
         handleCreateOrAddGuild: k,
         searchResults: L,
         searchFetching: O
-    }) : null == j && null == b ? (0, i.jsx)("div", {
+    }) : null == j && null == S ? (0, i.jsx)("div", {
         className: I.$$,
         children: (0, i.jsx)(r.y$y, {
             className: I.u1
         })
-    }) : j?.length === 0 && null == b ? (0, i.jsx)("div", {
+    }) : j?.length === 0 && null == S ? (0, i.jsx)("div", {
         className: I.$$,
         children: (0, i.jsx)(p.A, {
             guild: N,
@@ -141,7 +141,7 @@ let N = e => {
         handleSearchKeyPress: V,
         handleClearSearch: B,
         handleCreateOrAddGuild: k,
-        currentCategoryId: b,
+        currentCategoryId: S,
         handleSelectCategory: e => {
             u.uU(t.id, e)
         },

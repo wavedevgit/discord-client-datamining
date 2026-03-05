@@ -13,8 +13,8 @@ var s = r(627968),
     d = r(465794),
     h = r(927578),
     _ = r(226017),
-    E = r(652215),
-    S = r(788868),
+    S = r(652215),
+    E = r(788868),
     f = r(985018),
     g = r(316163),
     A = r(7410),
@@ -63,7 +63,7 @@ function R() {
 }
 
 function m() {
-    let e = (0, h.Dd)(S.PremiumTypes.TIER_2),
+    let e = (0, h.Dd)(E.PremiumTypes.TIER_2),
         t = n.useCallback(() => (0, o.mMO)(async () => {
             let {
                 default: e
@@ -91,9 +91,9 @@ function m() {
             className: g.Oy,
             size: i.lO.TINY,
             shinyButtonClassName: g.Oy,
-            subscriptionTier: S.pe.TIER_2,
+            subscriptionTier: E.pe.TIER_2,
             premiumModalAnalyticsLocation: {
-                section: E.JJy.FOR_LATER_POPOUT_UPSELL
+                section: S.JJy.FOR_LATER_POPOUT_UPSELL
             }
         })]
     })

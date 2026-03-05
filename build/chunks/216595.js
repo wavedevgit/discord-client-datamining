@@ -13,8 +13,8 @@ var s = r(627968),
     d = r(713654),
     h = r(598104),
     _ = r(263063),
-    E = r(71393),
-    S = r(985018),
+    S = r(71393),
+    E = r(985018),
     f = r(348635);
 let g = {
     top: 8,
@@ -47,7 +47,7 @@ function A(e) {
 function p(e) {
     let {
         channel: t
-    } = e, r = (0, o.bG)([E.A], () => E.A.getGuild(t.guild_id));
+    } = e, r = (0, o.bG)([S.A], () => S.A.getGuild(t.guild_id));
     return null != r ? (0, s.jsx)(_.Ay, {
         className: f.Kk,
         guild: r,
@@ -67,7 +67,7 @@ function p(e) {
 function R(e) {
     let {
         channel: t
-    } = e, r = (0, o.bG)([E.A], () => E.A.getGuild(t.guild_id)), n = (0, c.Ay)(t, !1), l = (0, d.gU)(t, r), a = t.isPrivate() || null == l, i = t.isDM() ? S.intl.formatToPlainString(S.t.smD7XV, {
+    } = e, r = (0, o.bG)([S.A], () => S.A.getGuild(t.guild_id)), n = (0, c.Ay)(t, !1), l = (0, d.gU)(t, r), a = t.isPrivate() || null == l, i = t.isDM() ? E.intl.formatToPlainString(E.t.smD7XV, {
         username: n
     }) : n;
     return (0, s.jsxs)("div", {

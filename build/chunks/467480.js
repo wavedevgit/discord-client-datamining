@@ -22,7 +22,7 @@ var i = n(627968),
 let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, r.useHasAnyModalOpen)(), N = (0, l.bG)([p.A], () => p.A.hasLayers()), b = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(b());
+    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, r.useHasAnyModalOpen)(), N = (0, l.bG)([p.A], () => p.A.hasLayers()), S = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), b = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(S());
     s.useEffect(() => {
         null != E && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
             (0, d.xi)(t.id, [E.id])
@@ -46,9 +46,9 @@ let x = s.memo(function(e) {
             viewName: m.gN.SAFETY_TOOLS_BUTTON
         })
     }), s.useEffect(() => {
-        let e = b();
+        let e = S();
         null != e && v(e)
-    }, [C, E, b]);
+    }, [C, E, S]);
     let y = s.useCallback(() => {
         null != E && (0, d.xi)(t.id, [E.id]), null != x && ((0, o.mMO)(async () => {
             let {
@@ -80,7 +80,7 @@ let x = s.memo(function(e) {
         }))
     }, [E, x, t]);
     return null == x ? null : (0, i.jsx)(a.m_, {
-        forceOpen: S,
+        forceOpen: b,
         text: T,
         position: "bottom",
         children: (0, i.jsx)(g.Ay.Icon, {

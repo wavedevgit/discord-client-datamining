@@ -33,12 +33,12 @@ function x(e) {
         return [e, s.useCallback(e => {
             o.w.set(f, e), t(e)
         }, [])]
-    }(), b = s.useRef(null), S = null == x.getGuildId() ? 70 : 50, T = (0, a.bG)([h.A], () => h.A.pipWidth(p.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
+    }(), S = s.useRef(null), b = null == x.getGuildId() ? 70 : 50, T = (0, a.bG)([h.A], () => h.A.pipWidth(p.R8.CAMERA_PREVIEW)), v = C.length, y = T * v + 8 * (v - 1), j = s.useMemo(() => ({
         minWidth: p.mn[p.R8.CAMERA_PREVIEW] * v + 8 * (v - 1),
         maxWidth: p.cF[p.R8.CAMERA_PREVIEW] * v + 8 * (v - 1)
     }), [v]);
     s.useLayoutEffect(() => {
-        b.current?.ensureIsInPosition()
+        S.current?.ensureIsInPosition()
     }, [C.length]);
     let R = s.useCallback(e => {
             let t = 0 === v ? e : (e - 8 * (v - 1)) / v;
@@ -53,12 +53,12 @@ function x(e) {
             position: I,
             id: 0,
             width: y,
-            ref: b,
+            ref: S,
             onMove: O,
             onResize: R,
             maxX: t,
             maxY: l,
-            edgeOffsetTop: S,
+            edgeOffsetTop: b,
             edgeOffsetBottom: 70,
             edgeOffsetLeft: 16,
             edgeOffsetRight: 16,

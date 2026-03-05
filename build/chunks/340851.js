@@ -26,8 +26,8 @@ var i = n(627968),
     E = n(279250),
     I = n(346846),
     N = n(142524),
-    b = n(958140),
-    S = n(721931),
+    S = n(958140),
+    b = n(721931),
     T = n(766319),
     v = n(342296),
     y = n(481947),
@@ -127,7 +127,7 @@ let K = (0, m.J)(function(e) {
     } = (0, U.fC)({
         guildId: m.guild_id,
         location: "VoiceUser"
-    }), eE = s.useRef(null), [eI, eN] = s.useState(!1), eb = s.useRef(null), [eS, eT] = s.useState(!1), [ev, ey] = s.useState(!1), [ej, eR] = s.useState(!1), [eO, eL] = s.useState(!1), eM = ev || eO || ej, eD = eS || eM, eG = ef?.session_id != null, eU = (0, a.bG)([R.A], () => R.A.hasVoiceDareForUserId(l.id), [l.id]), eP = (0, j.Uk)("VoiceUser") && eU, ew = () => {
+    }), eE = s.useRef(null), [eI, eN] = s.useState(!1), eS = s.useRef(null), [eb, eT] = s.useState(!1), [ev, ey] = s.useState(!1), [ej, eR] = s.useState(!1), [eO, eL] = s.useState(!1), eM = ev || eO || ej, eD = eb || eM, eG = ef?.session_id != null, eU = (0, a.bG)([R.A], () => R.A.hasVoiceDareForUserId(l.id), [l.id]), eP = (0, j.Uk)("VoiceUser") && eU, ew = () => {
         eN(!eI)
     }, ek = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
@@ -135,11 +135,11 @@ let K = (0, m.J)(function(e) {
     }, eV = () => {
         ea?.(l.id)
     }, eB = e => {
-        (!eC || ep) && (e ? eb.current = setTimeout(() => {
+        (!eC || ep) && (e ? eS.current = setTimeout(() => {
             eT(!0)
-        }, 150 * !!ec) : clearTimeout(eb.current))
+        }, 150 * !!ec) : clearTimeout(eS.current))
     };
-    s.useEffect(() => () => clearTimeout(eb.current), []);
+    s.useEffect(() => () => clearTimeout(eS.current), []);
     let eH = e => {
             e && eT(!1)
         },
@@ -171,12 +171,12 @@ let K = (0, m.J)(function(e) {
                 })
             })
         },
-        eW = e => ep ? (0, i.jsx)(b.h, {
+        eW = e => ep ? (0, i.jsx)(S.h, {
             ...e,
             channel: m,
             setIsHangStatusInputFocused: ey,
             setIsEmojiPickerOpen: eL
-        }) : null != e_ ? (0, i.jsx)(S.E, {
+        }) : null != e_ ? (0, i.jsx)(b.E, {
             ...e,
             hangStatusActivity: e_,
             channel: m,

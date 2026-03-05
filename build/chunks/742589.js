@@ -36,11 +36,11 @@ function _(e) {
         mobileToolbar: p,
         "aria-label": m,
         "aria-labelledby": L,
-        scrollable: f,
-        role: O,
+        scrollable: O,
+        role: f,
         hideSearch: T,
-        hideForLater: v,
-        showDivider: I,
+        hideForLater: I,
+        showDivider: v,
         disableDoubleClick: R
     } = e, {
         enabled: N,
@@ -59,7 +59,7 @@ function _(e) {
                     guildId: a,
                     channelId: l,
                     className: E.$P
-                }, a ?? l) : null, I && (0, i.jsx)(h.Ay.Divider, {}), v || !N || S ? null : (0, i.jsx)(o.A, {})]
+                }, a ?? l) : null, v && (0, i.jsx)(h.Ay.Divider, {}), I || !N || S ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
         transparent: u,
@@ -67,8 +67,8 @@ function _(e) {
         onDoubleClick: () => A(R),
         "aria-label": m,
         "aria-labelledby": L,
-        role: O,
-        scrollable: f,
+        role: f,
+        scrollable: O,
         children: t
     })
 }

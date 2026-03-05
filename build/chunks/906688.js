@@ -39,14 +39,14 @@ function C(e) {
         } = (0, c.ag)(g),
         m = (0, l.Mw)(C) ? u : h,
         L = (A.size - A.offset - 2 * A.stroke) * .8,
-        f = A.size - A.stroke,
-        O = {
+        O = A.size - A.stroke,
+        f = {
             width: .4 * L,
             height: .4 * L
         },
         T = {
-            width: O.width + 1,
-            height: O.height + 1,
+            width: f.width + 1,
+            height: f.height + 1,
             right: A.stroke + 1,
             bottom: A.stroke + 1,
             padding: 0
@@ -54,8 +54,8 @@ function C(e) {
     return (0, i.jsxs)("div", {
         className: d.kL,
         style: {
-            width: f,
-            height: f,
+            width: O,
+            height: O,
             padding: A.stroke
         },
         "aria-label": `${_()??""}`,
@@ -73,14 +73,14 @@ function C(e) {
             children: (0, i.jsx)(a.XAi, {
                 size: "custom",
                 color: m.locked,
-                ...O
+                ...f
             })
         }), n && g === c.md.LEGENDARY && (0, i.jsx)("div", {
             className: d.dq,
             style: T,
             children: (0, i.jsx)(o.A, {
                 className: d.ox,
-                ...O
+                ...f
             })
         })]
     })

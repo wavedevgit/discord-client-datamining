@@ -44,13 +44,13 @@ function _(e, t) {
         body: E ? A.intl.string(A.t.ilhtIa) : void 0,
         renderIcon: E ? a.GM : void 0,
         shouldShow: !0
-    }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
+    }, S = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(u.A, {
         onCardClick: () => {
             C ? c() : g(e, l, r)
         },
         tooltipConfig: N,
-        shouldScalePreview: x || !b,
+        shouldScalePreview: x || !S,
         renderPreview: () => {
             if (x) {
                 let t = {

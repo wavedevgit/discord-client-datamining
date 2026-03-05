@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(290863),
     I = n(849736),
     N = n(113783),
-    b = n(925931),
-    S = n(105530),
+    S = n(925931),
+    b = n(105530),
     T = n(699970),
     v = n(345687),
     y = n(818348),
@@ -77,7 +77,7 @@ let O = s.memo(function(e) {
             [N]: [l.user.id]
         }), [N, l.user.id]);
         (0, p.Eq)(L, "RequestToSpeakSidebar");
-        let M = l.rtsState === S.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
+        let M = l.rtsState === b.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK,
             D = e => {
                 (0, h.L3)(e, async () => {
                     let {
@@ -123,7 +123,7 @@ let O = s.memo(function(e) {
                         }), (0, i.jsx)(u.Text, {
                             variant: "text-xs/normal",
                             color: "text-default",
-                            children: (0, b.g)(l)
+                            children: (0, S.g)(l)
                         })]
                     })]
                 })

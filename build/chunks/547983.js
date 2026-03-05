@@ -20,12 +20,12 @@ var i = n(627968),
     h = n(51512),
     y = n(773699),
     E = n(954571),
-    S = n(363398),
-    _ = n(880457),
+    _ = n(363398),
+    S = n(880457),
     b = n(840088),
-    I = n(276887),
-    v = n(345254),
-    x = n(734495),
+    v = n(276887),
+    x = n(345254),
+    I = n(734495),
     j = n(483768),
     T = n(522333),
     D = n(692457),
@@ -39,8 +39,8 @@ var i = n(627968),
     w = n(207115),
     P = n(614323),
     U = n(292103),
-    k = n(878956),
-    F = n(389889),
+    F = n(878956),
+    k = n(389889),
     X = n(729883),
     V = n(474445),
     B = n(25287),
@@ -65,8 +65,8 @@ function z(e) {
         } = (0, c.Ay)([d.A.MESSAGE_CONTEXT_MENU]),
         y = g,
         E = g.getAttribute("data-type"),
-        S = g.getAttribute("data-id"),
-        _ = g.getAttribute("data-name");
+        _ = g.getAttribute("data-id"),
+        S = g.getAttribute("data-name");
     if (null != A) n = t = l = A.url;
     else
         for (;
@@ -80,8 +80,8 @@ function z(e) {
             mediaItem: A,
             textSelection: b,
             favoriteableType: E,
-            favoriteableId: S,
-            favoriteableName: _,
+            favoriteableId: _,
+            favoriteableName: S,
             itemHref: t,
             itemSrc: n,
             itemSafeSrc: l,
@@ -158,10 +158,10 @@ function W(e) {
         ep = (0, P.A)(t, n),
         ef = (0, C.A)(t, n),
         eh = (0, X.A)(t, n),
-        ey = (0, x.A)(t),
+        ey = (0, I.A)(t),
         eE = (0, V.A)(t, n),
-        eS = (0, O.A)(t, n),
-        e_ = (0, _.A)(t),
+        e_ = (0, O.A)(t, n),
+        eS = (0, S.A)(t),
         eb = (0, y.A)({
             commandType: o.kc.MESSAGE,
             commandTargetId: t.id,
@@ -170,11 +170,11 @@ function W(e) {
             onHeightUpdate: et,
             showIcon: !0
         }),
-        eI = (0, k.A)(t, n),
-        ev = (0, N.A)(t, n),
-        ex = (0, I.A)(t, n),
-        ej = (0, v.A)(t, n),
-        eT = (0, F.A)(t, n),
+        ev = (0, F.A)(t, n),
+        ex = (0, N.A)(t, n),
+        eI = (0, v.A)(t, n),
+        ej = (0, x.A)(t, n),
+        eT = (0, k.A)(t, n),
         eD = (0, G.A)(t),
         eM = (0, h.A)(t),
         eC = (0, B.A)(t),
@@ -189,13 +189,13 @@ function W(e) {
             id: c,
             name: z
         }),
-        eU = (0, S.A)(s, n.getGuildId()),
-        ek = (0, m.A)($, t, {
+        eU = (0, _.A)(s, n.getGuildId()),
+        eF = (0, m.A)($, t, {
             shouldHideMediaOptions: er,
             contentType: a?.contentType,
             originalContentType: a?.originalContentType
         }),
-        eF = (0, H.A)(t, a),
+        ek = (0, H.A)(t, a),
         eX = (0, K.A)(t),
         eV = (0, q.A)(a, {
             shouldHideMediaOptions: er
@@ -218,7 +218,7 @@ function W(e) {
             children: eK ?? eH
         }),
         eJ = (0, i.jsxs)(r.rXV, {
-            children: [eP, eU, ek, eF, eX, eV]
+            children: [eP, eU, eF, ek, eX, eV]
         });
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
@@ -235,7 +235,7 @@ function W(e) {
         }), (0, i.jsxs)(r.rXV, {
             children: [em, ep, ef, eh]
         }), (0, i.jsxs)(r.rXV, {
-            children: [ey, eE, eS, e_, eb, eI, ev, ex, ej, eT, eM, eC]
+            children: [ey, eE, e_, eS, eb, ev, ex, eI, ej, eT, eM, eC]
         }), (0, i.jsxs)(r.rXV, {
             children: [eN, eO, eR, ee && eG, ee && eL, ew]
         }), ed ? (0, i.jsxs)(i.Fragment, {

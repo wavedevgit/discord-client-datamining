@@ -77,7 +77,7 @@ let N = {
         })
     }
 };
-class b extends s.PureComponent {
+class S extends s.PureComponent {
     renderProgressBody = (e, t) => {
         let {
             state: n,
@@ -123,7 +123,7 @@ class b extends s.PureComponent {
         return null != e ? e : E.intl.string(E.t.cw57ar)
     }
 }
-class S extends s.PureComponent {
+class b extends s.PureComponent {
     static defaultProps = {
         strokeSize: h.a3E.StrokeSizes.MEDIUM
     };
@@ -157,7 +157,7 @@ class S extends s.PureComponent {
             firstState: t,
             isPaused: n
         } = this.props;
-        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(b, {
+        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(S, {
             application: e,
             state: t,
             isPaused: n
@@ -226,10 +226,10 @@ let v = o.Ay.connectStores([_.A, g.A, A.A], () => {
     } = e;
     return t ? (0, i.jsx)(d.F, {
         component: s.Fragment,
-        children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, {
+        children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(b, {
             ...n
         }) : null
-    }) : (0, i.jsx)(S, {
+    }) : (0, i.jsx)(b, {
         ...n
     })
 })

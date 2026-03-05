@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(886019),
     I = n(806246),
     N = n(60821),
-    b = n(391786),
-    S = n(50122),
+    S = n(391786),
+    b = n(50122),
     T = n(132970),
     v = n(129104),
     y = n(559405),
@@ -45,13 +45,13 @@ function P(e) {
         setIsHangStatusInputFocused: n,
         setIsEmojiPickerOpen: l,
         setPopoutRef: a
-    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, S.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
+    } = e, P = s.useRef(null), w = (0, d.bG)([C.A], () => C.A.getCustomHangStatus()), k = (0, b.A)(), V = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses()), {
         defaultStatusVariant: B,
         allowPermanentClear: H
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, q] = s.useState(w?.emoji ?? null), [X, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = W.length > 0 || null != z, [ea, eo] = (0, p.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, q] = s.useState(w?.emoji ?? null), [X, J] = s.useState(!1), Q = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[Q], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, S.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = W.length > 0 || null != z, [ea, eo] = (0, p.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         _.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),

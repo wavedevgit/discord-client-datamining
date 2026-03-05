@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(94484),
     I = n(849134),
     N = n(203548),
-    b = n(186111),
-    S = n(371794),
+    S = n(186111),
+    b = n(371794),
     T = n(998218),
     v = n(652793),
     y = n(652215),
@@ -36,7 +36,7 @@ let L = s.memo(function(e) {
     let {
         guild: t,
         selected: l
-    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([b.A], () => b.A.hasLayers()), U = (0, m.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([S.A], () => S.A.hasLayers()), U = (0, m.xr)(e => e.fullScreenLayers.length > 0), P = (0, x.n)({
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
@@ -111,8 +111,8 @@ let L = s.memo(function(e) {
         }), [t.id, l, J, X, $, H]),
         et = s.useMemo(() => {
             if (null == k) return;
-            let e = null != k.assetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
-                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, S.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
+            let e = null != k.assetId ? T.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
+                t = null != k.backgroundImageAssetId ? T.A.toURLSafe((0, b.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t

@@ -1,14 +1,14 @@
 /** chunk id: 816288, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S,
+    A: () => b,
     n: () => N
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(396181),
+    a = n(162160),
     o = n(158954),
     c = n(311907),
     d = n(397927),
@@ -87,7 +87,7 @@ let N = s.forwardRef((e, t) => {
     })
 });
 
-function b(e) {
+function S(e) {
     let {
         guild: t,
         withMargin: l
@@ -97,7 +97,7 @@ function b(e) {
     s.useEffect(() => {
         E !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
     }, [t.id, E, t.premiumSubscriberCount]);
-    let b = s.useCallback(e => {
+    let S = s.useCallback(e => {
         p && (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -122,7 +122,7 @@ function b(e) {
             className: r()(I.kL, {
                 [I.aF]: l
             }),
-            onContextMenu: b,
+            onContextMenu: S,
             children: (0, i.jsx)(N, {
                 ref: a,
                 appliedBoostCount: E,
@@ -136,12 +136,12 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         guild: t,
         withMargin: n
     } = e;
-    return (0, i.jsx)(b, {
+    return (0, i.jsx)(S, {
         guild: t,
         withMargin: n
     })

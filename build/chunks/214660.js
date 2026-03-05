@@ -31,13 +31,13 @@ let I = e => {
     } = e, E = (0, h.GV)(), {
         notClaimed: I,
         notEmailVerified: N,
-        notPhoneVerified: b,
-        newAccount: S,
+        notPhoneVerified: S,
+        newAccount: b,
         newMember: T
     } = (0, a.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
-    return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : b ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
+    return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : S ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
         min: g.$8o.MEMBER_AGE
-    }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
+    }), j = f.intl.string(f.t.BddRzS)) : b && (y = f.intl.formatToPlainString(f.t.sncw41, {
         min: g.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
         className: r()(C.popover, x.kL),
@@ -65,7 +65,7 @@ let I = e => {
                         variant: "primary",
                         text: j,
                         onClick: () => {
-                            I ? u.R() : b ? (0, c.mMO)(async () => {
+                            I ? u.R() : S ? (0, c.mMO)(async () => {
                                 let {
                                     default: e
                                 } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
@@ -83,7 +83,7 @@ let I = e => {
                             })), l()
                         }
                     })
-                }) : null, I || b || N ? (0, s.jsx)(c.QWc, {
+                }) : null, I || S || N ? (0, s.jsx)(c.QWc, {
                     onClick: l,
                     text: f.intl.string(f.t.oEAioF),
                     variant: "secondary"

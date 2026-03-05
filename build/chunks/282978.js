@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(58736),
     I = n(518477),
     N = n(985018),
-    b = n(940688);
-class S {
+    S = n(940688);
+class b {
     userId;
     user;
     channelId;
@@ -63,12 +63,12 @@ class S {
         text: N.intl.string(N.t["UTjRE/"]),
         position: "bottom",
         children: (0, i.jsx)(d.DUT, {
-            className: b.OZ,
+            className: S.OZ,
             onClick: this.handleClick,
             children: (0, i.jsx)(d.U1e, {
                 size: "xs",
                 color: "currentColor",
-                className: b.WW
+                className: S.WW
             })
         })
     }, "more-avatars");
@@ -112,7 +112,7 @@ function T(e) {
             userId: t,
             channelId: n,
             analyticsLocations: i
-        } = e, l = (0, a.bG)([f.default], () => f.default.getUser(t), [t]), [r] = s.useState(() => new S({
+        } = e, l = (0, a.bG)([f.default], () => f.default.getUser(t), [t]), [r] = s.useState(() => new b({
             user: l,
             userId: t,
             channelId: n,
@@ -134,15 +134,15 @@ function T(e) {
         C(!1)
     }, [C]);
     return 0 === g.getNicknameGuildPairs().length && 0 === l.length ? (0, i.jsx)("div", {
-        className: b.jH
+        className: S.jH
     }) : (0, i.jsxs)(A.f5, {
         value: p,
         children: [(0, i.jsx)(E.cG, {
-            className: b.yF
+            className: S.yF
         }), (0, i.jsx)(d.LpS, {
             text: N.intl.string(N.t.l1QVfj),
             disableColor: !0,
-            className: b.RV
+            className: S.RV
         }), l.length > 0 ? (0, i.jsx)(u.Ay, {
             size: 16,
             users: r,
@@ -156,7 +156,7 @@ function T(e) {
                     position: "bottom",
                     children: (0, i.jsx)("img", {
                         alt: "",
-                        className: b.my,
+                        className: S.my,
                         onClick: g.handleClick,
                         src: s.getAvatarURL(r, 16),
                         "aria-hidden": !0
@@ -166,10 +166,10 @@ function T(e) {
             renderMoreUsers: g.renderMoreAvatars,
             guildId: void 0,
             max: 3,
-            className: b.HD
+            className: S.HD
         }) : null, g.getNicknameGuildPairs().length > 0 ? (0, i.jsx)(o.A, {
             position: "bottom",
-            className: b.wm,
+            className: S.wm,
             delay: 0,
             onTooltipShow: I,
             onTooltipHide: T,

@@ -30,8 +30,8 @@ function f(e) {
         analyticsLocation: E,
         guildScheduledEvent: I,
         shouldPrioritizeGroupPlusIcon: N = !1,
-        isRichPresenceInvite: b = !1,
-        iconClassName: S,
+        isRichPresenceInvite: S = !1,
+        iconClassName: b,
         look: T,
         size: v,
         buttonText: y,
@@ -40,13 +40,13 @@ function f(e) {
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
     } = (0, c.Ay)(), M = f?.getGuildId(), D = (0, r.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, r.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? a.DpX : a.dCJ, P = null != t ? _.intl.string(_.t["OzOM/q"]) : _.intl.string(_.t["6F9ivu"]);
-    return null != G && b ? (0, i.jsx)(p.A, {
+    return null != G && S ? (0, i.jsx)(p.A, {
         onClick: () => {
             null != L && (0, d.X)(L, d.O.INVITE), o.qf(G, !1, O)
         },
         iconComponent: U,
         label: P,
-        iconClassName: S,
+        iconClassName: b,
         look: T,
         size: v,
         buttonText: y,
@@ -96,7 +96,7 @@ function f(e) {
         },
         iconComponent: U,
         label: P,
-        iconClassName: S,
+        iconClassName: b,
         look: T,
         size: v,
         color: j,

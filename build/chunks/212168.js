@@ -1,44 +1,44 @@
-/** chunk id: 212168, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => o,
-    i: () => s
+/** chunk id: 212168, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => c,
+    i: () => d
 });
-var r, i = t(627968),
-    a = t(64700),
-    l = t(503698),
-    d = t.n(l),
-    c = t(446958),
-    s = ((r = {}).PREMIUM = "premium", r.LIMITED = "limited", r);
-let u = {
+var i, r = n(627968),
+    a = n(64700),
+    s = n(503698),
+    l = n.n(s),
+    o = n(446958),
+    d = ((i = {}).PREMIUM = "premium", i.LIMITED = "limited", i);
+let _ = {
         premium: {
-            border: c.wU,
-            background: c.gI
+            border: o.wU,
+            background: o.gI
         },
         limited: {
-            border: c.rY,
-            background: c.pm
+            border: o.rY,
+            background: o.pm
         }
     },
-    o = a.forwardRef(function(e, n) {
+    c = a.forwardRef(function(e, t) {
         let {
-            children: t,
-            type: r = "premium",
+            children: n,
+            type: i = "premium",
             isShown: a,
-            hasBackground: l = !1,
-            className: s,
-            backgroundClassName: o
+            hasBackground: s = !1,
+            className: d,
+            backgroundClassName: c
         } = e;
-        if (!a) return t;
+        if (!a) return n;
         let {
-            border: f,
-            background: m
-        } = u[r];
-        return (0, i.jsx)("div", {
-            ref: n,
-            className: d()(f, s),
-            children: (0, i.jsx)("div", {
-                className: d()(l ? m : c.Tp, o),
-                children: t
+            border: u,
+            background: A
+        } = _[i];
+        return (0, r.jsx)("div", {
+            ref: t,
+            className: l()(u, d),
+            children: (0, r.jsx)("div", {
+                className: l()(s ? A : o.Tp, c),
+                children: n
             })
         })
     })

@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(246356),
     I = n(111162),
     N = n(954571),
-    b = n(795816),
-    S = n(887700),
+    S = n(795816),
+    b = n(887700),
     T = n(855446),
     v = n(652215),
     y = n(985018),
@@ -63,7 +63,7 @@ function L(e) {
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
         }, [C?.application_directory_collection_items]),
         {
-            trackItemImpressionRef: b
+            trackItemImpressionRef: S
         } = (0, m.A)({
             applicationId: N?.application.id ?? "",
             applicationFlags: N?.application.flags,
@@ -78,7 +78,7 @@ function L(e) {
         containerWidth: 584
     })), (0, i.jsxs)(d.DUT, {
         className: j.V8,
-        innerRef: b,
+        innerRef: S,
         onClick: () => {
             h(), (0, p.A)({
                 context: {
@@ -129,11 +129,11 @@ let M = s.forwardRef(function(e, t) {
             newestAnalyticsLocation: R
         } = (0, h.Ay)(u.A.ACTIVITIES_MINI_SHELF),
         M = x === v.BRT.POPOUT,
-        D = (n = l.getGuildId(), (0, S.A)({
+        D = (n = l.getGuildId(), (0, b.A)({
             guildId: n
         }).slice(0, 5));
     s.useEffect(() => {
-        let e = setTimeout(() => b.LK(), 1e3);
+        let e = setTimeout(() => S.LK(), 1e3);
         return () => clearTimeout(e)
     }, []);
     let G = s.useCallback(() => {

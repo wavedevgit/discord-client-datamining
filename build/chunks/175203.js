@@ -8,7 +8,7 @@ var i = n(627968),
     s = n(64700),
     l = n(503698),
     r = n.n(l),
-    a = n(396181),
+    a = n(162160),
     o = n(934551),
     c = n(311907),
     d = n(827734),
@@ -25,8 +25,8 @@ var i = n(627968),
     E = n(66004),
     I = n(958005),
     N = n(384059),
-    b = n(609425),
-    S = n(73392),
+    S = n(609425),
+    b = n(73392),
     T = n(529020),
     v = n(401901),
     y = n(40056),
@@ -76,8 +76,8 @@ let eh = [ea.lp.ACTIVITY],
                 onDoubleClick: C,
                 onContextMenu: I,
                 onClick: N,
-                onMouseDown: b,
-                onKeyDown: S,
+                onMouseDown: S,
+                onKeyDown: b,
                 className: j,
                 style: L,
                 containerStyle: M,
@@ -98,7 +98,7 @@ let eh = [ea.lp.ACTIVITY],
                 controlsBottom: eI
             } = e,
             eN = s.useContext(P.vG) || eE,
-            [eb, eS] = s.useState(!1),
+            [eS, eb] = s.useState(!1),
             eT = U.Q_.useSetting(),
             ev = (0, c.bG)([H.default], () => H.default.isStreamInfoOverlayEnabled),
             [ey, ej] = s.useState(!1),
@@ -164,7 +164,7 @@ let eh = [ea.lp.ACTIVITY],
             }),
             eQ = s.useMemo(() => u.type === ea.lp.STREAM ? eJ ?? !1 : u.type === ea.lp.USER && (eX ?? !1), [eJ, eX, u.type]);
         s.useEffect(() => {
-            eS(em)
+            eb(em)
         }, [em]);
         let e$ = s.useCallback(() => {
                 null != eL && A.A.toggleLocalMute(eL, ec.x.STREAM)
@@ -292,8 +292,8 @@ let eh = [ea.lp.ACTIVITY],
                                 onDoubleClick: e0,
                                 onContextMenu: e => e1(e, u.type === ea.lp.STREAM),
                                 onClick: eZ,
-                                onMouseDown: b,
-                                onKeyDown: S,
+                                onMouseDown: S,
+                                onKeyDown: b,
                                 focusProps: {
                                     offset: 1
                                 },
@@ -360,7 +360,7 @@ let eh = [ea.lp.ACTIVITY],
                             currentUserId: eR,
                             participant: u
                         }), (0, i.jsx)(R.A, {
-                            isFiring: eb,
+                            isFiring: eS,
                             callTileRef: e2.current
                         })]
                     })
@@ -482,10 +482,10 @@ let e_ = s.memo(e => {
         paused: H,
         controlsBottom: K,
         streamId: W
-    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), q = (0, b.A)({
+    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), q = (0, S.A)({
         userId: T,
         guildId: v.getGuildId()
-    }), X = (0, S.a)({
+    }), X = (0, b.a)({
         displayNameStyles: q
     }), J = (0, es.Y)(l), Q = (0, es.V)(l), [$, Z] = s.useState(!1);
     s.useEffect(() => {

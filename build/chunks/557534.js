@@ -5,7 +5,7 @@ n.d(t, {
     Jd: () => v,
     O6: () => T,
     gQ: () => y,
-    h$: () => S
+    h$: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -28,14 +28,14 @@ var i = n(627968),
     E = n(343360),
     I = n(652215),
     N = n(985018),
-    b = n(728444);
+    S = n(728444);
 
-function S(e, t, n) {
+function b(e, t, n) {
     return null != t && !!t && !(0, E.ws)(n, e.type)
 }
 
 function T(e, t) {
-    return null == t ? b.fx : e > t ? b.mU : b.TR
+    return null == t ? S.fx : e > t ? S.mU : S.TR
 }
 
 function v(e) {
@@ -50,7 +50,7 @@ function v(e) {
         asContainer: !0,
         text: N.intl.string(N.t["3gUsJb"]),
         children: (0, i.jsx)(c.DUT, {
-            className: r()(b.Xs, l ? b.Tf : void 0, u ? b.bw : b.UI),
+            className: r()(S.Xs, l ? S.Tf : void 0, u ? S.bw : S.UI),
             onClick: function() {
                 d.Ay.open(t.id)
             },
@@ -59,7 +59,7 @@ function v(e) {
             children: (0, i.jsx)(c.Zes, {
                 size: "xs",
                 color: "currentColor",
-                className: b.gE
+                className: S.gE
             })
         })
     })
@@ -73,11 +73,11 @@ function y(e) {
         tabIndex: A,
         forceShowButtons: g,
         hasChannelInfo: C = !1
-    } = e, E = (0, a.bG)([f.A], () => f.A.getGuild(t.getGuildId())), S = (0, a.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, a.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, a.bG)([x.A], () => (0, h.K)(x.A, E, t, S)), y = (0, a.bG)([], () => t?.type === I.rbe.GUILD_VOICE ? N.intl.string(N.t["EE+P0H"]) : N.intl.string(N.t["0jeAXt"])), j = s.useRef(null);
+    } = e, E = (0, a.bG)([f.A], () => f.A.getGuild(t.getGuildId())), b = (0, a.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, a.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, a.bG)([x.A], () => (0, h.K)(x.A, E, t, b)), y = (0, a.bG)([], () => t?.type === I.rbe.GUILD_VOICE ? N.intl.string(N.t["EE+P0H"]) : N.intl.string(N.t["0jeAXt"])), j = s.useRef(null);
     if (d || !v || t.isModeratorReportChannel()) return null;
     let R = (0, i.jsx)(c.Rvf, {
         size: "xs",
-        className: b.gE,
+        className: S.gE,
         "aria-hidden": !0,
         color: "currentColor"
     });
@@ -93,7 +93,7 @@ function y(e) {
         asContainer: !0,
         text: y,
         children: (0, i.jsx)(c.DUT, {
-            className: r()(b.Xs, g ? b.Tf : void 0, C ? b.bw : b.UI),
+            className: r()(S.Xs, g ? S.Tf : void 0, C ? S.bw : S.UI),
             onClick: function() {
                 if (null != E) {
                     let e = _.A.getAllActiveStreams().filter(e => e.state !== I.XYD.ENDED && e.channelId === t.id);
@@ -127,7 +127,7 @@ function j(e) {
         asContainer: !0,
         text: N.intl.string(N.t["ROh4T+"]),
         children: (0, i.jsx)(c.DUT, {
-            className: b.Xs,
+            className: S.Xs,
             onClick: () => {
                 (0, A.Ol)(t.guild_id, t.id)
             },
@@ -135,7 +135,7 @@ function j(e) {
             children: (0, i.jsx)(c.PGe, {
                 size: "xs",
                 color: "currentColor",
-                className: b.gE
+                className: S.gE
             })
         })
     })
@@ -149,7 +149,7 @@ function R(e) {
         asContainer: !0,
         text: N.intl.string(N.t["N2c/Un"]),
         children: (0, i.jsx)(c.DUT, {
-            className: b.Xs,
+            className: S.Xs,
             onClick: () => {
                 (0, A.jA)(t.guild_id, t.id, !0, {
                     section: I.JJy.CHANNEL_LIST
@@ -159,7 +159,7 @@ function R(e) {
             children: (0, i.jsx)(c.A9s, {
                 size: "xs",
                 color: "currentColor",
-                className: b.gE
+                className: S.gE
             })
         })
     })
@@ -201,6 +201,6 @@ class O extends s.PureComponent {
             sorting: t,
             sortingType: n
         } = this.props;
-        return S(e, t, n)
+        return b(e, t, n)
     }
 }

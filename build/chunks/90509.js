@@ -1,6 +1,6 @@
 /** chunk id: 90509, original params: n,t,e (module,exports,require) **/
 e.d(t, {
-    A: () => s
+    A: () => d
 });
 var i = e(627968);
 e(64700);
@@ -8,7 +8,7 @@ var r = e(397927),
     l = e(422258),
     a = e(985018);
 
-function s(n) {
+function d(n) {
     return (0, i.jsx)(r.Drp, {
         id: "delete-channel",
         label: a.intl.string(a.t.Jg0R7Q),

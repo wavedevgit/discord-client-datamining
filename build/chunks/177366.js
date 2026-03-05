@@ -2,7 +2,7 @@
 "use strict";
 s.d(t, {
     XU: () => b,
-    Yr: () => C,
+    Yr: () => E,
     k0: () => A
 });
 var n = s(64700),
@@ -21,11 +21,11 @@ var n = s(64700),
     p = s(652215);
 let f = "#itemSkuId=",
     x = RegExp(`^${f}(\\d+)$`),
-    E = [p.BVt.COLLECTIBLES_SHOP],
-    C = e => {
+    C = [p.BVt.COLLECTIBLES_SHOP],
+    E = e => {
         let t = (0, r.zy)();
         n.useEffect(() => {
-            if (null != e && E.includes(t.pathname)) return () => {
+            if (null != e && C.includes(t.pathname)) return () => {
                 window.location.hash.startsWith(f) && window.location.replace("#")
             }
         }, [e, t.pathname])
@@ -38,16 +38,16 @@ let f = "#itemSkuId=",
             {
                 analyticsLocations: f
             } = (0, o.Ay)(i),
-            E = (0, _.A)();
+            C = (0, _.A)();
         n.useEffect(() => {
             let e = x.exec(s.hash);
             null != e ? t.current = e[1] : t.current = null
-        }, [E, s.hash]);
-        let C = (0, l.bG)([d.A], () => d.A.initialProductSkuId);
+        }, [C, s.hash]);
+        let E = (0, l.bG)([d.A], () => d.A.initialProductSkuId);
         n.useEffect(() => {
             if (e) return;
             let s = null;
-            if (null != C ? s = C : null != t.current && (s = t.current), null != s) {
+            if (null != E ? s = E : null != t.current && (s = t.current), null != s) {
                 let e = setTimeout(() => {
                     (e => {
                         let {
@@ -82,12 +82,12 @@ let f = "#itemSkuId=",
                         productSkuId: s,
                         analyticsLocations: f,
                         analyticsSource: i,
-                        tab: E
+                        tab: C
                     })
                 }, 250);
                 return () => clearTimeout(e)
             }
-        }, [f, i, e, C, E])
+        }, [f, i, e, E, C])
     },
     A = e => {
         let t = n.useRef({}),

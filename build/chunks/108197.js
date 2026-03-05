@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(775946),
     I = n(588224),
     N = n(652215),
-    b = n(37411),
-    S = n(985018),
+    S = n(37411),
+    b = n(985018),
     T = n(728444),
     v = n(811094),
     y = n(316945);
@@ -112,7 +112,7 @@ let R = s.memo(function(e) {
         mentionCount: g.Ay.getMentionCount(t.id),
         isMentionLowImportance: g.Ay.getIsMentionLowImportance(t.id)
     })), P = (0, o.bG)([A.A], () => A.A.isMuted(t.id)), w = s.useCallback(e => {
-        (0, m.JA)(t, !e.shiftKey, b.H9.CHANNEL_LIST)
+        (0, m.JA)(t, !e.shiftKey, S.H9.CHANNEL_LIST)
     }, [t]), k = s.useCallback(() => {
         u.A.preload(t.guild_id, t.id)
     }, [t.guild_id, t.id]), V = s.useCallback(e => {
@@ -129,12 +129,12 @@ let R = s.memo(function(e) {
     }, [t.id]), B = null == L ? 0 : L.length, {
         role: H,
         ...F
-    } = (0, a.rm)(t.id), K = s.useRef(null), W = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
+    } = (0, a.rm)(t.id), K = s.useRef(null), W = G > 0 ? b.intl.formatToPlainString(b.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: G
-    }) : D ? S.intl.formatToPlainString(S.t.YlVvmc, {
+    }) : D ? b.intl.formatToPlainString(b.t.YlVvmc, {
         channelName: t.name
-    }) : S.intl.formatToPlainString(S.t["0nZpiF"], {
+    }) : b.intl.formatToPlainString(b.t["0nZpiF"], {
         channelName: t.name
     });
     return (0, i.jsxs)("li", {

@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(187508),
     I = n(576456),
     N = n(572448),
-    b = n(963702),
-    S = n(652215),
+    S = n(963702),
+    b = n(652215),
     T = n(985018),
     v = n(318136);
 let y = {
@@ -40,9 +40,9 @@ function j(e, t, n) {
         s = t ? E.Ay.roleFilter : null,
         l = t ? E.Ay.everyoneFilter : null,
         r = null;
-    null != e && null != i && (r = i === S.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
+    null != e && null != i && (r = i === b.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
         before: n,
-        limit: S.Ue3,
+        limit: b.Ue3,
         guildId: r,
         roles: s,
         everyone: l
@@ -68,13 +68,13 @@ function R(e) {
         everyoneFilter: E.Ay.everyoneFilter
     })), I = (0, g.Sc)({
         location: "RecentMentions"
-    }), N = (0, u.A)(m), b = (0, u.A)(_), y = (0, u.A)(x);
+    }), N = (0, u.A)(m), S = (0, u.A)(_), y = (0, u.A)(x);
     s.useEffect(() => {
-        E.Ay.hasLoadedEver ? (null != N && m !== N || null != b && _ !== b || null != y && x !== y) && j(n, !0) : j(n, !0)
-    }, [N, m, b, _, y, x, n, !0]), (0, d.Ay)(() => {
+        E.Ay.hasLoadedEver ? (null != N && m !== N || null != S && _ !== S || null != y && x !== y) && j(n, !0) : j(n, !0)
+    }, [N, m, S, _, y, x, n, !0]), (0, d.Ay)(() => {
         l?.some(A.$r) && (c.A.clearMentions(), j(n, !0))
     }), s.useEffect(() => () => {
-        c.A.truncateMentions(S.Ue3)
+        c.A.truncateMentions(b.Ue3)
     }, []);
     let R = s.useCallback(() => null, []);
     return (0, i.jsx)(p.Ay, {
@@ -152,7 +152,7 @@ function L(e) {
 }
 
 function M() {
-    return (0, i.jsx)(b.A, {
+    return (0, i.jsx)(S.A, {
         Icon: o.XxR,
         header: T.intl.string(T.t.bgDz74),
         tip: T.intl.string(T.t.NS15vk)

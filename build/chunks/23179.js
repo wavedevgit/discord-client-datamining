@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(616252),
     I = n(753806),
     N = n(775427),
-    b = n(969715),
-    S = n(477654),
+    S = n(969715),
+    b = n(477654),
     T = n(65600),
     v = n(145331),
     y = n(976966),
@@ -198,7 +198,7 @@ let V = [],
             dismissFeedbackEntrypoint: x,
             onSearchModeChange: E,
             onPageChange: N,
-            searchMode: b,
+            searchMode: S,
             onBlockedResultsClick: j,
             searchResultsQuery: R,
             isFavoritesSearch: O,
@@ -231,7 +231,7 @@ let V = [],
                 paginationTotalCount: F,
                 paginationMaxIndex: K,
                 isPaginationTotalCountLimited: W
-            } = (0, S.o)({
+            } = (0, b.o)({
                 totalResults: n.totalResults,
                 isSearching: n.isSearching
             }),
@@ -250,12 +250,12 @@ let V = [],
                 }
             }, [W, K]),
             z = s.useCallback(e => {
-                e === b || n.isSearching || ((0, v.L6)({
+                e === S || n.isSearching || ((0, v.L6)({
                     searchContext: t,
                     searchRequestAnalyticsId: r,
                     mode: e
                 }), E(e))
-            }, [E, n.isSearching, t, b, r]),
+            }, [E, n.isSearching, t, S, r]),
             q = s.useCallback((e, i) => {
                 let s = p.A.getChannel(e.channel_id),
                     l = null != s ? s.getGuildId() : null,
@@ -314,7 +314,7 @@ let V = [],
             "aria-label": D.intl.string(D.t["zkoeq/"]),
             children: [(0, i.jsx)(y.A, {
                 searchContext: t,
-                searchMode: b,
+                searchMode: S,
                 onSearchModeChange: z,
                 totalResults: n.totalResults,
                 isSearching: n.isSearching,
@@ -394,7 +394,7 @@ function H(e) {
         renderedMessages: h,
         ignoreCount: p,
         blockCount: g
-    } = (0, b.A)({
+    } = (0, S.A)({
         searchContext: t
     }), C = (0, a.bG)([T.A], () => T.A.getSearchMode(o) ?? L.BBH.NEWEST), N = s.useCallback(e => {
         if (c.isSearching) return;
@@ -405,7 +405,7 @@ function H(e) {
             searchQueryString: n,
             offset: 0
         })
-    }, [c.isSearching, t]), S = s.useCallback(e => {
+    }, [c.isSearching, t]), b = s.useCallback(e => {
         if (c.isSearching) return;
         let n = I.A.getSearchInputText(t);
         null != n && I.A.fetchMessages({
@@ -428,7 +428,7 @@ function H(e) {
             renderEmbeds: m.rs.useSetting(),
             isFeedbackVisible: l,
             dismissFeedbackEntrypoint: r,
-            onPageChange: S,
+            onPageChange: b,
             onSearchModeChange: N,
             searchMode: C,
             onBlockedResultsClick: j,

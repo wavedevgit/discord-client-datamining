@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(79871),
     I = n(592356),
     N = n(568751),
-    b = n(620406),
-    S = n(84511),
+    S = n(620406),
+    b = n(84511),
     T = n(188275),
     v = n(652215),
     y = n(806931),
@@ -93,8 +93,8 @@ function L(e) {
                     showIcons: s,
                     userIdsForGifting: P,
                     userIdsForRecommendation: n
-                }, t.skuId) : (0, i.jsx)(b.A, {
-                    variant: n.length > 0 ? b.$.WISHLIST : b.$.POPULAR,
+                }, t.skuId) : (0, i.jsx)(S.A, {
+                    variant: n.length > 0 ? S.$.WISHLIST : S.$.POPULAR,
                     wishlistItem: t,
                     userIdsForRecommendation: n,
                     userIdsForGifting: P,
@@ -141,7 +141,7 @@ function L(e) {
                     children: "loading" === w || 0 === k.length ? (0, i.jsx)(c.y$y, {
                         className: R.Lq
                     }) : B
-                }), (0, i.jsx)(S.A, {
+                }), (0, i.jsx)(b.A, {
                     location: "social_layer_gifting_mini_shelf",
                     className: R.Ij
                 })]

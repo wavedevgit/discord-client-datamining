@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(751304),
     f = s(561769),
     x = s(758836),
-    E = s(985018),
-    C = s(201073);
+    C = s(985018),
+    E = s(201073);
 let b = e => {
     let {
         shelf: t,
@@ -28,15 +28,15 @@ let b = e => {
         tab: l
     } = e, b = (0, a.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, a.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, u.uM)(), I = (0, m.A)(), L = r.useMemo(() => I(t.rankedSkuIds), [t.rankedSkuIds, I]), j = (0, h.X)(L);
     return null == b ? null : (0, n.jsxs)("div", {
-        className: i()(C.Vp, C.YB),
+        className: i()(E.Vp, E.YB),
         children: [(0, n.jsxs)("div", {
-            className: C.$6,
+            className: E.$6,
             children: [(0, n.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 children: t.name
             }), (0, n.jsx)(o.Button, {
                 variant: "secondary",
-                text: E.intl.formatToPlainString(E.t.bc9RBE, {
+                text: C.intl.formatToPlainString(C.t.bc9RBE, {
                     category_name: t.name
                 }),
                 onClick: () => {

@@ -1,23 +1,24 @@
-/** chunk id: 429635, original params: e,l,t (module,exports,require) **/
-t.d(l, {
+/** chunk id: 429635, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
     A: () => o
 });
-var n = t(64700),
-    s = t(311907),
-    i = t(733391),
-    a = t(832163),
-    r = t(916023);
+var l = n(64700),
+    a = n(311907),
+    r = n(733391),
+    s = n(832163),
+    i = n(916023);
 
 function o(e) {
     let {
-        guildId: l,
-        location: t
-    } = e, o = (0, r.kt)({
-        location: t
-    }), d = (0, s.bG)([a.A], () => null != l ? a.A.getStorefrontData(l) : void 0, [l]);
-    return n.useEffect(() => {
-        null != l && o && (0, i.Rw)(l, {
+        guildId: t,
+        location: n
+    } = e, o = (0, i.kt)({
+        location: n
+    }), c = (0, a.bG)([s.A], () => null != t ? s.A.getStorefrontData(t) : void 0, [t]);
+    return l.useEffect(() => {
+        null != t && o && (0, r.Rw)(t, {
             eager: !1
         })
-    }, [l, d, o]), d
+    }, [t, c, o]), c
 }

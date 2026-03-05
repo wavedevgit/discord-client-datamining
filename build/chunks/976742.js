@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(751304),
     f = s(561769),
     x = s(159439),
-    E = s(998694),
-    C = s(758836),
+    C = s(998694),
+    E = s(758836),
     b = s(157884);
 
 function A(e) {
@@ -37,7 +37,7 @@ function A(e) {
                 skuId: e.skuId,
                 skipLimitedTimeCheck: !0,
                 prioritizedCurrency: a ? f.Hi.FIAT : void 0,
-                onClickAnalytics: (0, f.UU)(e, C.G2.CATALOG, g)
+                onClickAnalytics: (0, f.UU)(e, E.G2.CATALOG, g)
             }, e.skuId)
         }, e.skuId))
     })
@@ -70,7 +70,7 @@ function v(e) {
     } = e, d = (0, c.uM)(), u = (0, x.U)(), _ = d?.sessionId ?? "", {
         noCache: m,
         includeUnpublished: p
-    } = (0, E.A)(), f = r.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    } = (0, C.A)(), f = r.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
         let {
             products: t
         } = e;
@@ -84,18 +84,18 @@ function v(e) {
         if (o === A.current) return;
         let e = f.findIndex(e => e.skuId === o);
         if (-1 === e) return;
-        let t = Math.floor(e / C.l5) + 1;
+        let t = Math.floor(e / E.l5) + 1;
         t !== l && i(t), A.current = o
     }, [o, f, i, l]);
     let v = r.useMemo(() => {
-        let e = (l - 1) * C.l5;
-        return f.slice(e, e + C.l5)
+        let e = (l - 1) * E.l5;
+        return f.slice(e, e + E.l5)
     }, [f, l]);
     return (r.useEffect(() => {
         (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_MOUNTED,
-            tab: C.G2.CATALOG,
+            tab: E.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
@@ -103,7 +103,7 @@ function v(e) {
         u || 0 === v.length || (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_RENDERED,
-            tab: C.G2.CATALOG,
+            tab: E.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
@@ -124,7 +124,7 @@ function v(e) {
             children: (0, n.jsx)(a.mgR, {
                 currentPage: l,
                 totalCount: f.length,
-                pageSize: C.l5,
+                pageSize: E.l5,
                 onPageChange: i,
                 disablePaginationGap: !0
             })

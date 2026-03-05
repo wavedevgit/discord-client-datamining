@@ -1,7 +1,7 @@
 /** chunk id: 737630, original params: e,t,s (module,exports,require) **/
 "use strict";
 s.r(t), s.d(t, {
-    default: () => H
+    default: () => w
 });
 var n = s(627968),
     r = s(64700),
@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(594832),
     f = s(287809),
     x = s(440938),
-    E = s(590180),
-    C = s(161918),
+    C = s(590180),
+    E = s(161918),
     b = s(790297),
     A = s(338769),
     S = s(841702),
@@ -38,7 +38,7 @@ var n = s(627968),
     M = s(652215),
     P = s(650583),
     D = s(157884);
-let w = e => {
+let H = e => {
         let {
             children: t,
             shouldAddEventListener: s,
@@ -52,7 +52,7 @@ let w = e => {
             return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
         }, [s, l, n]), t
     },
-    H = function(e) {
+    w = function(e) {
         let {
             tab: t = B.G2.HOME
         } = e;
@@ -65,10 +65,10 @@ let w = e => {
                 onClose: P
             } = (0, O.tR)(),
             {
-                currentTab: H,
+                currentTab: w,
                 hasFilters: U
             } = (0, L.v)(),
-            F = r.useMemo(() => t === B.G2.HOME && H && U() ? H : t, [t, H, U]),
+            F = r.useMemo(() => t === B.G2.HOME && w && U() ? w : t, [t, w, U]),
             {
                 categories: G,
                 refreshCategories: V
@@ -80,7 +80,7 @@ let w = e => {
             }),
             K = r.useMemo(() => [...G.values()], [G]),
             [z, W] = r.useState(),
-            Y = (0, o.bG)([E.A], () => E.A.getCategory(z)?.name),
+            Y = (0, o.bG)([C.A], () => C.A.getCategory(z)?.name),
             [$, Z] = r.useState();
         (0, k.XU)();
         let q = r.useCallback((e, t) => {
@@ -116,9 +116,9 @@ let w = e => {
                     pageCategory: Y,
                     pageSize: B.l5
                 },
-                children: (0, n.jsx)(C.iM, {
+                children: (0, n.jsx)(E.iM, {
                     tab: X,
-                    children: (0, n.jsx)(w, {
+                    children: (0, n.jsx)(H, {
                         onClose: P,
                         shouldAddEventListener: !1,
                         children: (0, n.jsxs)("div", {

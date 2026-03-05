@@ -71,7 +71,7 @@ function N(e) {
     })) : _
 }
 
-function b(e) {
+function S(e) {
     let {
         activity: t,
         embeddedApp: n,
@@ -97,7 +97,7 @@ function b(e) {
     })
 }
 
-function S(e) {
+function b(e) {
     let {
         activity: t,
         user: n,
@@ -181,11 +181,11 @@ function y(e) {
                 onOpenSpotifyAlbum: p
             }), (0, i.jsxs)("div", {
                 className: E.X0,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(S, {
                     activity: t,
                     embeddedApp: n,
                     onOpenSpotifyTrack: u
-                }), (0, i.jsx)(S, {
+                }), (0, i.jsx)(b, {
                     activity: t,
                     user: l,
                     onOpenSpotifyArtist: A
@@ -251,12 +251,12 @@ function j(e) {
                 compact: !0
             }), (0, i.jsxs)("div", {
                 className: E.Be,
-                children: [(0, i.jsx)(b, {
+                children: [(0, i.jsx)(S, {
                     activity: t,
                     embeddedApp: n,
                     onOpenSpotifyTrack: l,
                     compact: !0
-                }), (0, i.jsx)(S, {
+                }), (0, i.jsx)(b, {
                     activity: t,
                     user: s,
                     onOpenSpotifyArtist: r,

@@ -7,11 +7,11 @@ e(64700);
 var r = e(397927),
     l = e(442433),
     a = e(358367),
-    s = e(793574),
-    d = e(50268),
+    d = e(793574),
+    s = e(50268),
     c = e(515610),
-    A = e(849867),
-    o = e(795144),
+    o = e(849867),
+    A = e(795144),
     u = e(769591),
     g = e(134725),
     h = e(23724),
@@ -30,7 +30,7 @@ function G(n) {
     let {
         channel: t,
         onSelect: e
-    } = n, a = (0, y.A)(t), s = (0, C.Ay)(t), c = (0, f.A)(t), _ = (0, h.A)(t), p = (0, g.A)(t), b = (0, o.A)(t), j = (0, A.A)(t), G = (0, v.A)(t), O = (0, d.A)({
+    } = n, a = (0, y.A)(t), d = (0, C.Ay)(t), c = (0, f.A)(t), _ = (0, h.A)(t), p = (0, g.A)(t), b = (0, A.A)(t), j = (0, o.A)(t), G = (0, v.A)(t), O = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
     }), N = (0, u.os)("ChannelCategoryFavoritesMenu"), T = (0, x.Ay)(t);
@@ -43,7 +43,7 @@ function G(n) {
         children: [(0, i.jsxs)(r.rXV, {
             children: [a, j, b]
         }), (0, i.jsxs)(r.rXV, {
-            children: [s, N ? T : c]
+            children: [d, N ? T : c]
         }), (0, i.jsxs)(r.rXV, {
             children: [_, p]
         }), (0, i.jsx)(r.rXV, {
@@ -59,10 +59,10 @@ function O(n) {
         channel: t,
         guild: e,
         onSelect: a
-    } = n, s = (0, y.A)(t), c = (0, C.Ay)(t), A = (0, f.A)(t), v = (0, h.A)(t), G = (0, g.A)(t), O = (0, b.A)(t), N = (0, o.A)(t), T = (0, _.A)(t, e), M = (0, p.A)(t), m = (0, d.A)({
+    } = n, d = (0, y.A)(t), c = (0, C.Ay)(t), o = (0, f.A)(t), v = (0, h.A)(t), G = (0, g.A)(t), O = (0, b.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, p.A)(t), M = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
-    }), U = (0, j.A)(t), L = (0, u.os)("ChannelCategoryNormalMenu"), D = (0, x.Ay)(t);
+    }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), L = (0, x.Ay)(t);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
@@ -70,15 +70,15 @@ function O(n) {
         "aria-label": E.intl.string(E.t.Xm41aV),
         onSelect: a,
         children: [(0, i.jsx)(r.rXV, {
-            children: s
+            children: d
         }, "mark-as-read"), (0, i.jsxs)(r.rXV, {
-            children: [U, v, G]
+            children: [I, v, G]
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
-            children: [c, L ? D : A]
+            children: [c, U ? L : o]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [O, N, T, M]
+            children: [O, N, T, m]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
-            children: m
+            children: M
         }, "developer-actions")]
     })
 }
@@ -88,4 +88,4 @@ let N = (0, a.A)(function(n) {
     }) : (0, i.jsx)(O, {
         ...n
     })
-}, [s.A.CONTEXT_MENU, s.A.CHANNEL_CATEGORY_MENU])
+}, [d.A.CONTEXT_MENU, d.A.CHANNEL_CATEGORY_MENU])

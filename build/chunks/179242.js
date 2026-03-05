@@ -32,15 +32,15 @@ function x(e) {
     } = (0, o.NJ)(), E = (0, s.A)(), {
         mutualFriendsCount: I,
         mutualFriends: N,
-        mutualGuilds: b
-    } = (0, c.A)(t), S = !t.bot && null != I && I > 0, T = null != b && b.length > 0;
-    return S || T ? (0, i.jsxs)(p.A.Overlay, {
+        mutualGuilds: S
+    } = (0, c.A)(t), b = !t.bot && null != I && I > 0, T = null != S && S.length > 0;
+    return b || T ? (0, i.jsxs)(p.A.Overlay, {
         className: f.Lw,
         children: [T && (0, i.jsx)(g.A, {
             section: "MUTUAL_GUILDS",
             header: _.intl.string(_.t["4lTDZq"]),
             listClassName: f.p_,
-            items: b.map(e => {
+            items: S.map(e => {
                 let {
                     guild: n,
                     nick: s
@@ -52,9 +52,9 @@ function x(e) {
                     onSelect: () => (0, a.u)(n.id)
                 }, n.id)
             })
-        }), T && S && (0, i.jsx)(h.A, {
+        }), T && b && (0, i.jsx)(h.A, {
             className: f.yF
-        }), S && (0, i.jsx)(g.A, {
+        }), b && (0, i.jsx)(g.A, {
             section: "MUTUAL_FRIENDS",
             header: _.intl.string(_.t["0mTJ3j"]),
             listClassName: f.p_,

@@ -25,8 +25,8 @@ var i = n(64700),
     E = n(229548),
     I = n(139032),
     N = n(52260),
-    b = n(294384),
-    S = n(864310),
+    S = n(294384),
+    b = n(864310),
     T = n(553103),
     v = n(568065),
     y = n(652215),
@@ -39,7 +39,7 @@ function R(e) {
             indicator: m,
             showUnread: j
         } = function(e, t, n) {
-            let s = (0, S.A)(e).available,
+            let s = (0, b.A)(e).available,
                 {
                     shouldShow: o
                 } = (0, T.A)(e, "useGuildPowerupsNotificationIndicator"),
@@ -76,7 +76,7 @@ function R(e) {
                 T = g === r.M.GUILD_POWERUP_PERKS_COACHMARK,
                 {
                     available: j
-                } = (0, S.A)(e),
+                } = (0, b.A)(e),
                 R = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(y.GuildFeatures.GAME_SERVERS) ?? !1),
                 O = (0, l.bG)([A.A], () => A.A.getLowestGameCostForGuild(e)),
                 L = (n = (0, x.gz)(e, "GuildPowerupsChannelRow"), a = (0, h.C$)(e, "GuildPowerupsChannelRow"), m = (0, f.RA)(e, "GuildPowerupsChannelRow"), p = (0, l.bG)([c.A], () => c.A.getGuild(e)?.features.has(y.GuildFeatures.GAME_SERVERS)), i.useMemo(() => {
@@ -131,7 +131,7 @@ function R(e) {
                                 return null != n && !!(i >= n)
                             }) ? [] : s.map(i => {
                                 let s = t.allPowerups[i];
-                                return null == s || n < s.cost || !s.dependencies.every(e => null != t.unlockedPowerups[e]) || (0, b.t)(e, s, "maybeGetPerkPurchaseablePopoutDCF") ? null : s
+                                return null == s || n < s.cost || !s.dependencies.every(e => null != t.unlockedPowerups[e]) || (0, S.t)(e, s, "maybeGetPerkPurchaseablePopoutDCF") ? null : s
                             })).filter(d.Vq);
                         if (0 !== s.length) {
                             if (1 === s.length && !(0, o.zs)(r.V.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
