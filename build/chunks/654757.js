@@ -1,22 +1,22 @@
-/** chunk id: 654757, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    T: () => E
+/** chunk id: 654757, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    T: () => m
 });
-var n = i(419954),
-    l = i(975571),
-    s = i(780964),
-    a = i(358776),
-    r = i(240194),
-    u = i(419882),
-    o = i(266057),
-    d = i(815669),
-    A = i(246743),
-    T = i(652215),
-    S = i(985018);
-let E = (0, n.zZ)(s.X.MOTION_CATEGORY, {
-    useTitle: () => S.intl.string(S.t.e3TR1b),
-    useSubtitle: (0, a.Ci)("Motion") ? void 0 : () => S.intl.format(S.t["2l9U2j"], {
-        helpdeskArticle: l.A.getArticleURL(T.MVz.REDUCED_MOTION)
+var i = n(419954),
+    s = n(975571),
+    l = n(780964),
+    a = n(358776),
+    r = n(240194),
+    o = n(419882),
+    d = n(266057),
+    c = n(815669),
+    u = n(246743),
+    _ = n(652215),
+    g = n(985018);
+let m = (0, i.zZ)(l.X.MOTION_CATEGORY, {
+    useTitle: () => g.intl.string(g.t.e3TR1b),
+    useSubtitle: (0, a.Ci)("Motion") ? void 0 : () => g.intl.format(g.t["2l9U2j"], {
+        helpdeskArticle: s.A.getArticleURL(_.MVz.REDUCED_MOTION)
     }),
-    buildLayout: () => (0, a.Ci)("Motion") ? [d.z, A.W, u.R, r.b, o.S] : [A.W, d.z, u.R, r.b, o.S]
+    buildLayout: () => (0, a.Ci)("Motion") ? [c.z, u.W, o.R, r.b, d.S] : [u.W, c.z, o.R, r.b, d.S]
 })

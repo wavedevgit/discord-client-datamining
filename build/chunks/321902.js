@@ -1,12 +1,12 @@
-/** chunk id: 321902, original params: e,t,n (module,exports,require) **/
+/** chunk id: 321902, original params: t,e,i (module,exports,require) **/
 "use strict";
-n.d(t, {
-    T: () => a
+i.d(e, {
+    T: () => l
 });
-var i = n(64700),
-    s = n(652215),
-    r = n(188275);
+var n = i(64700),
+    s = i(652215),
+    r = i(188275);
 
-function a(e) {
-    return i.useMemo(() => e ? [s.FYj, r.XR] : [s.FYj], [e])
+function l(t) {
+    return n.useMemo(() => t ? [s.FYj, r.XR] : [s.FYj], [t])
 }

@@ -1,20 +1,20 @@
-/** chunk id: 694307, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    F: () => o
+/** chunk id: 694307, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    F: () => d
 });
-var n = i(419954),
-    l = i(954571),
-    s = i(253932),
-    a = i(780964),
-    r = i(652215),
-    u = i(985018);
-let o = (0, n.zD)(a.X.CAMERA_PREVIEW_PREFERENCE, {
-    useTitle: () => u.intl.string(u.t["3Ppr1h"]),
-    useSubtitle: () => u.intl.string(u.t.WNbX4O),
-    useValue: s.bm.useSetting,
-    setValue: t => {
-        s.bm.updateSetting(t), l.default.track(r.HAw.UPDATE_USER_SETTINGS_LOCAL, {
-            always_preview_video: t
+var i = n(419954),
+    s = n(954571),
+    l = n(253932),
+    a = n(780964),
+    r = n(652215),
+    o = n(985018);
+let d = (0, i.zD)(a.X.CAMERA_PREVIEW_PREFERENCE, {
+    useTitle: () => o.intl.string(o.t["3Ppr1h"]),
+    useSubtitle: () => o.intl.string(o.t.WNbX4O),
+    useValue: l.bm.useSetting,
+    setValue: e => {
+        l.bm.updateSetting(e), s.default.track(r.HAw.UPDATE_USER_SETTINGS_LOCAL, {
+            always_preview_video: e
         })
     }
 })

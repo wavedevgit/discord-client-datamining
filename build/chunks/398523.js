@@ -1,10 +1,10 @@
 /** chunk id: 398523, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(600975),
     s = n(688151);
-let a = (0, i.C)({
+let l = (0, i.C)({
     kind: "user",
     id: "2025-10_recurring_3p_promotion",
     label: "Recurring 3P Promotion Experiment",

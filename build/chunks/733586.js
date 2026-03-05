@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(962125),
+    a = n.n(l),
+    r = n(962125),
     o = n(591329);
 let c = 16 / 9;
 
@@ -42,21 +42,21 @@ function h(e) {
         tileStyle: E,
         tileWidth: I,
         rows: N,
-        columns: S
+        columns: b
     } = s.useMemo(() => (function(e, t, n) {
         var i, s, l;
-        let r, a, o, h, {
+        let a, r, o, h, {
             rows: A,
             columns: m,
             tileWidth: p
-        } = (i = e, s = t, l = n, a = Math.floor(s / 25), r = i > 25 ? u(a, s, e => {
+        } = (i = e, s = t, l = n, r = Math.floor(s / 25), a = i > 25 ? u(r, s, e => {
             let t;
             return d(e, s) * (Math.ceil((l - (t = e / c)) / (8 + t)) + 1) > 25
-        }) : u(a, s, e => {
+        }) : u(r, s, e => {
             let t;
             return d(e, s) * (Math.floor((l - (t = e / c)) / (8 + t)) + 1) >= i
-        }) - 1, h = Math.ceil(i / (o = d(r, s))), {
-            tileWidth: r,
+        }) - 1, h = Math.ceil(i / (o = d(a, s))), {
+            tileWidth: a,
             columns: Math.max(1, o),
             rows: h
         });
@@ -68,23 +68,23 @@ function h(e) {
             rows: A,
             columns: m
         }
-    })(f, x, C), [f, x, C]), b = S + 1, T = b * I + (b - 1) * 8 <= g, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
-    return (0, i.jsx)(a.A, {
+    })(f, x, C), [f, x, C]), S = b + 1, T = S * I + (S - 1) * 8 <= g, v = Math.floor(I / c) + 8, y = Math.max(0, C - v * N) / 2;
+    return (0, i.jsx)(r.A, {
         fade: !0,
         className: t,
         listPadding: [h + y, 0, A + y - 8, 8],
         renderRow: function(e) {
-            let t = e * S;
+            let t = e * b;
             return (0, i.jsx)("div", {
                 className: o.nM,
-                children: n?.slice(t, t + S)?.map((e, n) => {
+                children: n?.slice(t, t + b)?.map((e, n) => {
                     let s = t + n;
                     return (0, i.jsx)("div", {
                         style: E,
-                        className: r()(o.Vs, {
+                        className: a()(o.Vs, {
                             [o.E3]: T,
-                            [o.k4]: s >= (N - 1) * S,
-                            [o.Kk]: (s + 1) % S == 0 || s === f - 1
+                            [o.k4]: s >= (N - 1) * b,
+                            [o.Kk]: (s + 1) % b == 0 || s === f - 1
                         }),
                         children: (0, i.jsx)("div", {
                             className: o.eP,

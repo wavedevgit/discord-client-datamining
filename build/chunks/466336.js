@@ -1,6 +1,6 @@
 /** chunk id: 466336, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    V: () => p
+    V: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,14 +16,14 @@ var r = n(311907),
     h = n(652215),
     _ = n(985018),
     m = n(954457);
-let p = e => {
+let g = e => {
     let {
         targetElementRef: t
-    } = e, p = (0, A.Tp)(), g = (0, r.bG)([u.A], () => u.A.getReminderStateId()), E = (0, r.bG)([u.A], () => u.A.getReferralsRemaining()), I = (0, r.bG)([d.A], () => {
+    } = e, g = (0, A.Tp)(), p = (0, r.bG)([u.A], () => u.A.getReminderStateId()), E = (0, r.bG)([u.A], () => u.A.getReferralsRemaining()), I = (0, r.bG)([d.A], () => {
         let e = d.A.settings.userContent?.recurringDismissibleContentStates[l.M.REFERRAL_PROGRAM_POPOVER_V2];
         return e?.numTimesDismissed ?? 0
     }), f = () => {
-        (0, A.ne)(g)
+        (0, A.ne)(p)
     };
     return (0, i.jsx)(a.AM, {
         targetElementRef: t,
@@ -34,7 +34,7 @@ let p = e => {
             src: m.A
         },
         size: "md",
-        shouldShow: p,
+        shouldShow: g,
         align: "top",
         position: "right",
         gradientColor: "nitro-pink",
@@ -46,7 +46,7 @@ let p = e => {
             onClick: () => {
                 c.default.track(h.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                     location_stack: [o.A.HOME_PAGE_PREMIUM_TAB],
-                    times_dismissed: null != g ? I + 1 : null,
+                    times_dismissed: null != p ? I + 1 : null,
                     referrals_remaining: E
                 }), f(), (0, s.mMO)(async () => {
                     let {

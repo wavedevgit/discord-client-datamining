@@ -1,13 +1,13 @@
-/** chunk id: 492684, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 492684, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     A: () => o
 });
-var i = n(627968),
-    l = n(64700),
-    r = n(451988),
-    a = n(985018);
+var n = i(627968),
+    l = i(64700),
+    r = i(451988),
+    s = i(985018);
 
-function s(t) {
+function a(t) {
     return `${t}`.length < 13 ? 1e3 * t : t
 }
 
@@ -32,7 +32,7 @@ function o(t) {
             let {
                 timestamps: t
             } = this.props, e = Date.now() / 1e3;
-            return null != t.end ? this.getDiff(e, s(t.end) / 1e3) : null != t.start ? this.getDiff(s(t.start) / 1e3, e) : {
+            return null != t.end ? this.getDiff(e, a(t.end) / 1e3) : null != t.start ? this.getDiff(a(t.start) / 1e3, e) : {
                 hours: 0,
                 minutes: 0,
                 seconds: 0
@@ -43,28 +43,28 @@ function o(t) {
             return e && t <= 0 ? -1 : t < 10 ? `0${t}` : t
         }
         getDiff(t, e) {
-            let n = Math.max(e - t, 0),
-                i = Math.floor(n) % 60,
-                l = Math.floor(n / 60) % 60;
+            let i = Math.max(e - t, 0),
+                n = Math.floor(i) % 60,
+                l = Math.floor(i / 60) % 60;
             return {
-                hours: Math.floor(n / 3600) % 24,
+                hours: Math.floor(i / 3600) % 24,
                 minutes: l,
-                seconds: i
+                seconds: n
             }
         }
         render() {
             let {
                 timestamps: e,
-                ...n
-            } = this.props, l = this.renderTime(this.state.hours, !0), r = this.renderTime(this.state.minutes), s = this.renderTime(this.state.seconds), o = -1 === l ? `${r}:${s}` : `${l}:${r}:${s}`;
-            return null != e.end ? (0, i.jsx)(t, {
-                ...n,
-                message: a.intl.formatToPlainString(a.t["I/J7vI"], {
+                ...i
+            } = this.props, l = this.renderTime(this.state.hours, !0), r = this.renderTime(this.state.minutes), a = this.renderTime(this.state.seconds), o = -1 === l ? `${r}:${a}` : `${l}:${r}:${a}`;
+            return null != e.end ? (0, n.jsx)(t, {
+                ...i,
+                message: s.intl.formatToPlainString(s.t["I/J7vI"], {
                     duration: o
                 })
-            }) : null != e.start ? (0, i.jsx)(t, {
-                ...n,
-                message: a.intl.formatToPlainString(a.t.M9Fexd, {
+            }) : null != e.start ? (0, n.jsx)(t, {
+                ...i,
+                message: s.intl.formatToPlainString(s.t.M9Fexd, {
                     duration: o
                 })
             }) : null

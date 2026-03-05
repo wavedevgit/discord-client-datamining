@@ -1,6 +1,6 @@
 /** chunk id: 619921, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => I
 });
 var i = n(311907),
     r = n(73153),
@@ -28,7 +28,7 @@ class A extends i.Ay.Store {
         return c ?? s.A.fallbackRoute
     }
 }
-let g = new A(r.h, {
+let I = new A(r.h, {
     OVERLAY_INITIALIZE: function() {
         let e = d.default.getPrivateChannelIds(),
             t = o.A.getChannelId(_.ME);

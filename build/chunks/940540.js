@@ -29,8 +29,8 @@ function h() {
         n = m.useField("includeDMs"),
         r = m.useField("includeGDMs"),
         h = m.useField("includeQuickSwitcherState"),
-        p = m.useField("includeUserSearchWorkerState"),
-        x = m.useField("isUploading"),
+        x = m.useField("includeUserSearchWorkerState"),
+        p = m.useField("isUploading"),
         g = m.useField("isSuccess"),
         _ = m.useField("errorMessage"),
         f = i.useCallback(async () => {
@@ -104,12 +104,12 @@ function h() {
         }), (0, a.jsx)(s.dOG, {
             label: "User Search Worker",
             description: "Includes all users that your client knows about. For each user, includes the user id, username, nickname, and any guild nicknames.",
-            checked: p,
+            checked: x,
             onChange: () => m.setState({
-                includeUserSearchWorkerState: !p
+                includeUserSearchWorkerState: !x
             })
         }), (0, a.jsx)(c.q, {
-            isUploading: x,
+            isUploading: p,
             isSuccess: g,
             errorMessage: _,
             onClick: f,

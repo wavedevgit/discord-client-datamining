@@ -1,44 +1,44 @@
-/** chunk id: 907218, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    k: () => d
+/** chunk id: 907218, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    k: () => c
 });
-var n = i(311907),
-    l = i(274372),
-    s = i(399925),
-    a = i(419954),
-    r = i(780964),
-    u = i(753070),
-    o = i(985018);
-let d = (0, a.Hn)(r.X.CLIPS_FRAME_RATE, {
-    useTitle: () => o.intl.string(o.t["2wScL1"]),
-    useSubtitle: () => o.intl.string(o.t["Rf9+fy"]),
-    useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipsQuality.frameRate),
-    setValue: t => {
+var i = n(311907),
+    s = n(274372),
+    l = n(399925),
+    a = n(419954),
+    r = n(780964),
+    o = n(753070),
+    d = n(985018);
+let c = (0, a.Hn)(r.X.CLIPS_FRAME_RATE, {
+    useTitle: () => d.intl.string(d.t["2wScL1"]),
+    useSubtitle: () => d.intl.string(d.t["Rf9+fy"]),
+    useValue: () => (0, i.bG)([s.A], () => s.A.getSettings().clipsQuality.frameRate),
+    setValue: e => {
         let {
-            clipsQuality: e
-        } = l.A.getSettings();
-        s.GS({
-            resolution: e.resolution,
-            frameRate: t
+            clipsQuality: t
+        } = s.A.getSettings();
+        l.GS({
+            resolution: t.resolution,
+            frameRate: e
         })
     },
     useOptions: () => [{
         id: "15",
-        value: u.kn.FPS_15,
-        label: o.intl.formatToPlainString(o.t.Qb44XH, {
-            fps: u.kn.FPS_15
+        value: o.kn.FPS_15,
+        label: d.intl.formatToPlainString(d.t.Qb44XH, {
+            fps: o.kn.FPS_15
         })
     }, {
         id: "30",
-        value: u.kn.FPS_30,
-        label: o.intl.formatToPlainString(o.t.Qb44XH, {
-            fps: u.kn.FPS_30
+        value: o.kn.FPS_30,
+        label: d.intl.formatToPlainString(d.t.Qb44XH, {
+            fps: o.kn.FPS_30
         })
     }, {
         id: "60",
-        value: u.kn.FPS_60,
-        label: o.intl.formatToPlainString(o.t.Qb44XH, {
-            fps: u.kn.FPS_60
+        value: o.kn.FPS_60,
+        label: d.intl.formatToPlainString(d.t.Qb44XH, {
+            fps: o.kn.FPS_60
         })
     }]
 })

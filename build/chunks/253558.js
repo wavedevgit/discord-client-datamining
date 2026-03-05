@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(503698),
-    a = n.n(s),
-    l = n(397927),
+    l = n.n(s),
+    a = n(397927),
     r = n(574788);
 let o = e => {
     let {
@@ -14,8 +14,8 @@ let o = e => {
         responsive: s = !0,
         children: o
     } = e;
-    return (0, i.jsx)(l.Heading, {
-        className: a()(r.w, t, s && r.n),
+    return (0, i.jsx)(a.Heading, {
+        className: l()(r.w, t, s && r.n),
         variant: "display-md",
         color: n,
         children: o

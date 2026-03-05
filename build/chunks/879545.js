@@ -1,16 +1,16 @@
-/** chunk id: 879545, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    D: () => A
+/** chunk id: 879545, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    D: () => u
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(700435),
-    a = i(89073),
-    r = i(788605),
-    u = i(918053),
-    o = i(380067),
-    d = i(985018);
-let A = (0, n.zZ)(l.X.OVERLAY_VOICE_WIDGET_CATEGORY, {
-    useTitle: () => d.intl.string(d.t.r1TZfh),
-    buildLayout: () => [o.X, s.Z, a.p, r.p, u.$]
+var i = n(419954),
+    s = n(780964),
+    l = n(700435),
+    a = n(89073),
+    r = n(788605),
+    o = n(918053),
+    d = n(380067),
+    c = n(985018);
+let u = (0, i.zZ)(s.X.OVERLAY_VOICE_WIDGET_CATEGORY, {
+    useTitle: () => c.intl.string(c.t.r1TZfh),
+    buildLayout: () => [d.X, l.Z, a.p, r.p, o.$]
 })

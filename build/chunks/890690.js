@@ -1,34 +1,34 @@
 /** chunk id: 890690, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => s
+    u: () => l
 }), n(321073);
 var r = n(64700),
     a = n(894858),
     i = n(397274);
 
-function s(e) {
+function l(e) {
     let t = r.useRef(null),
         n = r.useRef(new Set);
     r.useEffect(() => {
         let e = i.A.getPanelScrollerNode();
         if (null == e) return;
         let r = Array.from(e.querySelectorAll("[data-settings-category-key]")).filter(e => null != e.getAttribute("data-settings-category-key")),
-            s = new Map,
-            l = [];
+            l = new Map,
+            s = [];
         return r.forEach(e => {
             let t = e.getAttribute("data-settings-category-key");
-            null != t && (s.set(e, t), l.push(t))
+            null != t && (l.set(e, t), s.push(t))
         }), t.current = new IntersectionObserver(e => {
             if (e.forEach(e => {
                     let {
                         isIntersecting: t,
                         target: r
-                    } = e, a = s.get(r);
+                    } = e, a = l.get(r);
                     null != a && (t ? n.current.add(a) : n.current.delete(a))
                 }), a.A.getField("disableSidebarCategoryAutoSelect")) return;
             let t = [];
-            if (l.forEach(e => {
+            if (s.forEach(e => {
                     n.current.has(e) && t.push(e)
                 }), 0 === t.length) return;
             let r = t[0];

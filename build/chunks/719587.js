@@ -1,34 +1,34 @@
-/** chunk id: 719587, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    L: () => S
+/** chunk id: 719587, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    L: () => g
 });
-var n = i(311907),
-    l = i(290595),
-    s = i(171316),
-    a = i(419954),
-    r = i(153488),
-    u = i(975571),
-    o = i(780964),
-    d = i(997913),
-    A = i(652215),
-    T = i(985018);
-let S = (0, a.zD)(o.X.DATA_USAGE_STATISTICS_SETTING, {
-    useTitle: () => T.intl.string(T.t.XuADY2),
-    useSubtitle: () => T.intl.format(T.t["igTSG/"], {
-        helpdeskArticle: u.A.getArticleURL(A.MVz.DATA_PRIVACY_CONTROLS)
+var i = n(311907),
+    s = n(290595),
+    l = n(171316),
+    a = n(419954),
+    r = n(153488),
+    o = n(975571),
+    d = n(780964),
+    c = n(997913),
+    u = n(652215),
+    _ = n(985018);
+let g = (0, a.zD)(d.X.DATA_USAGE_STATISTICS_SETTING, {
+    useTitle: () => _.intl.string(_.t.XuADY2),
+    useSubtitle: () => _.intl.format(_.t["igTSG/"], {
+        helpdeskArticle: o.A.getArticleURL(u.MVz.DATA_PRIVACY_CONTROLS)
     }),
     useValue: function() {
-        return (0, n.bG)([r.A], () => r.A.hasConsented(A.YAq.USAGE_STATISTICS))
+        return (0, i.bG)([r.A], () => r.A.hasConsented(u.YAq.USAGE_STATISTICS))
     },
-    setValue: function(t) {
-        t ? (0, l.U)([A.YAq.USAGE_STATISTICS], []).catch(d.i) : (0, d.O)({
-            header: T.intl.string(T.t.OdPCbN),
-            body: T.intl.string(T.t.MGWabA),
-            confirmText: T.intl.string(T.t["D3+rU4"]),
-            cancelText: T.intl.string(T.t.kYpG0u),
-            onConfirm: () => (0, l.U)([], [A.YAq.USAGE_STATISTICS]).catch(d.i)
+    setValue: function(e) {
+        e ? (0, s.U)([u.YAq.USAGE_STATISTICS], []).catch(c.i) : (0, c.O)({
+            header: _.intl.string(_.t.OdPCbN),
+            body: _.intl.string(_.t.MGWabA),
+            confirmText: _.intl.string(_.t["D3+rU4"]),
+            cancelText: _.intl.string(_.t.kYpG0u),
+            onConfirm: () => (0, s.U)([], [u.YAq.USAGE_STATISTICS]).catch(c.i)
         })
     },
-    useSearchTerms: () => [T.intl.string(T.t.XuADY2)],
-    useDisabled: s.uM
+    useSearchTerms: () => [_.intl.string(_.t.XuADY2)],
+    useDisabled: l.uM
 })

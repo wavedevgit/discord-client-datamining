@@ -1,25 +1,25 @@
-/** chunk id: 811131, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    B: () => A
+/** chunk id: 811131, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    B: () => u
 });
-var n = i(955572),
-    l = i(775602),
-    s = i(419954),
-    a = i(780964),
-    r = i(358776),
-    u = i(652215),
-    o = i(985018);
-let d = t => `${t.toFixed(0)}px`,
-    A = (0, s.sN)(a.X.APPEARANCE_FONT_SCALING, {
-        useTitle: () => (0, r.bp)("FontScaling") ? o.intl.string(o.t.rT3Pq5) : o.intl.string(o.t.qPOqoK),
-        useSubtitle: () => (0, r.bp)("FontScaling") ? o.intl.string(o.t.LXUhen) : o.intl.string(o.t.XrtbPo),
-        markers: u.hH7.FONT_SIZES,
+var i = n(955572),
+    s = n(775602),
+    l = n(419954),
+    a = n(780964),
+    r = n(358776),
+    o = n(652215),
+    d = n(985018);
+let c = e => `${e.toFixed(0)}px`,
+    u = (0, l.sN)(a.X.APPEARANCE_FONT_SCALING, {
+        useTitle: () => (0, r.bp)("FontScaling") ? d.intl.string(d.t.rT3Pq5) : d.intl.string(d.t.qPOqoK),
+        useSubtitle: () => (0, r.bp)("FontScaling") ? d.intl.string(d.t.LXUhen) : d.intl.string(d.t.XrtbPo),
+        markers: o.hH7.FONT_SIZES,
         stickToMarkers: !0,
-        minValue: u.hH7.FONT_SIZES["0"],
-        maxValue: u.hH7.FONT_SIZES[u.hH7.FONT_SIZES.length - 1],
-        useDefaultValue: () => u.hH7.FONT_SIZE_DEFAULT,
-        getInitialValue: () => l.A.fontSize,
-        onValueRender: d,
-        onMarkerRender: d,
-        asValueChanges: t => (0, n.XS)(t)
+        minValue: o.hH7.FONT_SIZES["0"],
+        maxValue: o.hH7.FONT_SIZES[o.hH7.FONT_SIZES.length - 1],
+        useDefaultValue: () => o.hH7.FONT_SIZE_DEFAULT,
+        getInitialValue: () => s.A.fontSize,
+        onValueRender: c,
+        onMarkerRender: c,
+        asValueChanges: e => (0, i.XS)(e)
     })

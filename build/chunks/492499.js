@@ -1,33 +1,33 @@
 /** chunk id: 492499, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    M: () => m
+    M: () => g
 });
 var i = n(64700),
     s = n(379197),
-    a = n(488430),
-    l = n(311907),
+    l = n(488430),
+    a = n(311907),
     r = n(457421),
     o = n(940622),
-    c = n(559474),
-    d = n(985018),
+    d = n(559474),
+    c = n(985018),
     u = n(795056),
     _ = n(996613);
-let m = () => {
-    let e = (0, o.mb)(c.RN.UPSELL_BANNER),
-        t = (0, o.mb)(c.RN.UPSELL_BANNER_POPOUT),
-        n = (0, l.bG)([r.A], () => r.A.getMarketingBySurface(s.R.EDIT_PROFILE_SETTINGS)),
-        m = i.useMemo(() => null != n ? n : {
+let g = () => {
+    let e = (0, o.mb)(d.RN.UPSELL_BANNER),
+        t = (0, o.mb)(d.RN.UPSELL_BANNER_POPOUT),
+        n = (0, a.bG)([r.A], () => r.A.getMarketingBySurface(s.R.EDIT_PROFILE_SETTINGS)),
+        g = i.useMemo(() => null != n ? n : {
             asset: _,
             popoutAsset: u,
-            title: d.intl.string(d.t.QZVVBh),
-            body: d.intl.string(d.t.sajmAq),
+            title: c.intl.string(c.t.QZVVBh),
+            body: c.intl.string(c.t.sajmAq),
             version: 0,
             revertTextColor: !1
         }, [n]);
     return i.useMemo(() => ({
-        ...m,
-        type: a.G.BANNER,
-        asset: e ?? m.asset,
-        popoutAsset: t ?? m.popoutAsset
-    }), [e, t, m])
+        ...g,
+        type: l.G.BANNER,
+        asset: e ?? g.asset,
+        popoutAsset: t ?? g.popoutAsset
+    }), [e, t, g])
 }

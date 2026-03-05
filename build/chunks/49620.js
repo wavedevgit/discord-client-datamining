@@ -1,39 +1,39 @@
-/** chunk id: 49620, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 49620, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     c: () => d
 });
-var a = n(627968);
-n(64700);
-var r = n(503698),
-    i = n.n(r),
-    s = n(990078),
-    l = n(397927),
-    c = n(985018),
-    o = n(988573);
+var n = a(627968);
+a(64700);
+var r = a(503698),
+    i = a.n(r),
+    s = a(990078),
+    l = a(397927),
+    c = a(985018),
+    o = a(988573);
 let d = e => {
     let {
         className: t,
-        isPartiallyPurchased: n
+        isPartiallyPurchased: a
     } = e;
-    return n ? (0, a.jsx)(s.m, {
+    return a ? (0, n.jsx)(s.m, {
         position: "top",
         align: "left",
         text: c.intl.string(c.t.y1VWkZ),
-        children: (0, a.jsxs)("div", {
+        children: (0, n.jsxs)("div", {
             className: i()(o.GX, t),
-            children: [(0, a.jsx)("span", {
+            children: [(0, n.jsx)("span", {
                 className: o.P0,
-                children: (0, a.jsx)(l.mir, {
+                children: (0, n.jsx)(l.mir, {
                     size: "md",
                     color: "currentColor",
                     className: o.G
                 })
-            }), (0, a.jsx)(l.Text, {
+            }), (0, n.jsx)(l.Text, {
                 variant: "text-md/semibold",
                 children: c.intl.string(c.t.BEjTij)
             })]
         })
-    }) : (0, a.jsx)(l.Text, {
+    }) : (0, n.jsx)(l.Text, {
         variant: "text-md/semibold",
         className: t,
         children: c.intl.string(c.t["6cfuDj"])

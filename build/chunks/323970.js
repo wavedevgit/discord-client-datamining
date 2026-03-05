@@ -13,17 +13,17 @@ var a = n(582754),
     u = n(915880),
     m = n(203683),
     h = n(187446),
-    p = n(935495),
-    x = n(651714),
+    x = n(935495),
+    p = n(651714),
     g = n(416307),
     _ = n(497783),
     f = n(39579),
-    b = n(673554),
-    v = n(719401),
+    v = n(673554),
+    b = n(719401),
     j = n(128640),
     A = n(146925),
     C = n(789996);
-let T = {
+let y = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: " #D76C1F, #F79C53",
             light: " #8E2A0B, #D4681C"
@@ -57,7 +57,7 @@ let T = {
             light: " #6881D4, #956CB8, #5491A0"
         }
     },
-    y = {
+    T = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: o.A,
             light: g.A
@@ -72,22 +72,22 @@ let T = {
         },
         [r.Ac.PREMIUM_TENURE_12_MONTH]: {
             dark: u.A,
-            light: b.A
+            light: v.A
         },
         [r.Ac.PREMIUM_TENURE_24_MONTH]: {
             dark: m.A,
-            light: v.A
+            light: b.A
         },
         [r.Ac.PREMIUM_TENURE_36_MONTH]: {
             dark: h.A,
             light: j.A
         },
         [r.Ac.PREMIUM_TENURE_60_MONTH]: {
-            dark: p.A,
+            dark: x.A,
             light: A.A
         },
         [r.Ac.PREMIUM_TENURE_72_MONTH]: {
-            dark: x.A,
+            dark: p.A,
             light: C.A
         }
     };
@@ -96,8 +96,8 @@ function S() {
     let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
-    let n = T[e],
-        o = y[e],
+    let n = y[e],
+        o = T[e],
         d = {
             currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,
@@ -106,7 +106,7 @@ function S() {
         c = r.sp.indexOf(e);
     if (c > 0) {
         let e = r.sp[c - 1],
-            n = T[e];
+            n = y[e];
         d.prevBadge = (0, s.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
     }
     return d

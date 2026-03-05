@@ -1,8 +1,8 @@
 /** chunk id: 430086, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Fv: () => A,
-    GY: () => g,
-    M$: () => I,
+    GY: () => I,
+    M$: () => E,
     Oc: () => u,
     kF: () => c
 });
@@ -37,12 +37,12 @@ let c = {
             return null != e && (0, s.u)(e), !1
         }
     },
-    g = {
+    I = {
         binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+["] : ["alt+left"],
         comboKeysBindGlobal: !0,
         action: () => ((0, a.OE)("keybind"), !1)
     },
-    I = {
+    E = {
         binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+]"] : ["alt+right"],
         comboKeysBindGlobal: !0,
         action: () => ((0, a.Qb)("keybind"), !1)

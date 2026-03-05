@@ -1,11 +1,11 @@
-/** chunk id: 380067, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 380067, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     X: () => a
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(790076);
-let a = (0, n.E2)(l.X.OVERLAY_VOICE_WIDGET_PREVIEW, {
-    Component: s.VQ,
+var i = n(419954),
+    s = n(780964),
+    l = n(790076);
+let a = (0, i.E2)(s.X.OVERLAY_VOICE_WIDGET_PREVIEW, {
+    Component: l.VQ,
     useSearchTerms: () => []
 })

@@ -1,24 +1,24 @@
-/** chunk id: 41598, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    s: () => g
+/** chunk id: 41598, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    s: () => A
 });
-var n = i(419954),
-    l = i(933297),
-    s = i(780964),
-    a = i(805577),
-    r = i(903718),
-    u = i(193660),
-    o = i(379897),
-    d = i(21117),
-    A = i(617110),
-    T = i(937551),
-    S = i(31118),
-    E = i(985018);
-let g = (0, n.zZ)(s.X.ACCESSIBILITY_OVERVIEW, {
-    useSubnavLabel: () => E.intl.string(E.t.fTNxW7),
+var i = n(419954),
+    s = n(933297),
+    l = n(780964),
+    a = n(805577),
+    r = n(903718),
+    o = n(193660),
+    d = n(379897),
+    c = n(21117),
+    u = n(617110),
+    _ = n(937551),
+    g = n(31118),
+    m = n(985018);
+let A = (0, i.zZ)(l.X.ACCESSIBILITY_OVERVIEW, {
+    useSubnavLabel: () => m.intl.string(m.t.fTNxW7),
     useInlineNotice: () => ({
-        type: l.lT.STRONGLY_DISCOURAGED_CUSTOM,
+        type: s.lT.STRONGLY_DISCOURAGED_CUSTOM,
         notice: a.YD
     }),
-    buildLayout: () => [T.V, r.E, S.k, o.j, A.G, d.b, u.w]
+    buildLayout: () => [_.V, r.E, g.k, d.j, u.G, c.b, o.w]
 })

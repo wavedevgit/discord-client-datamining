@@ -106,8 +106,8 @@ function w() {
         setName: w,
         planId: M,
         setPlanId: U,
-        planCost: L,
-        stepLoading: O,
+        planCost: O,
+        stepLoading: L,
         error: V,
         gameProvider: y
     } = (0, j.bv)();
@@ -168,7 +168,7 @@ function w() {
                         onChange: w,
                         placeholder: I.intl.string(T.default.ElVYr3),
                         maxLength: C.XF,
-                        disabled: O || !Y,
+                        disabled: L || !Y,
                         error: D.name
                     })]
                 }), (0, l.jsxs)("div", {
@@ -209,7 +209,7 @@ function w() {
                     }) : (0, l.jsx)(d.Pw, {
                         serialize: e => e.id,
                         isSelected: e => e.id === n,
-                        isDisabled: O || Q || !Y,
+                        isDisabled: L || Q || !Y,
                         options: P,
                         optionClassName: G.uK,
                         select: e => i(e.id),
@@ -247,7 +247,7 @@ function w() {
                     }), (0, l.jsx)(d.Pw, {
                         serialize: e => e.id,
                         isSelected: e => e.id === M,
-                        isDisabled: O || !Y,
+                        isDisabled: L || !Y,
                         options: W,
                         optionClassName: G.uK,
                         select: e => U(e.id),
@@ -268,14 +268,14 @@ function w() {
                 className: G.sA,
                 children: (0, l.jsx)(h.A, {})
             })]
-        }), null != a && 0 !== L && (0, l.jsx)(u.A, {
+        }), null != a && 0 !== O && (0, l.jsx)(u.A, {
             className: G.et,
             children: (0, l.jsx)(c.Text, {
                 variant: "text-xs/medium",
-                children: L < 0 ? I.intl.format(T.default.SorKas, {
-                    boostCount: Math.abs(L)
+                children: O < 0 ? I.intl.format(T.default.SorKas, {
+                    boostCount: Math.abs(O)
                 }) : I.intl.format(T.default.n2wpym, {
-                    boostCount: L
+                    boostCount: O
                 })
             })
         }), !Y && (0, l.jsx)(u.A, {

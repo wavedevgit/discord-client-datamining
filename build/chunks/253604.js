@@ -1,60 +1,60 @@
-/** chunk id: 253604, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 253604, original params: e,n,t (module,exports,require) **/
+t.d(n, {
     A: () => u
 });
-var i = n(627968),
-    s = n(64700),
-    a = n(311907),
-    l = n(397927),
-    r = n(101058),
-    o = n(836602),
-    c = n(287070),
-    d = n(83118);
+var a = t(627968),
+    i = t(64700),
+    s = t(311907),
+    r = t(397927),
+    o = t(101058),
+    l = t(836602),
+    d = t(287070),
+    c = t(83118);
 
 function u(e) {
     let {
-        user: t,
+        user: n,
         disabledInputs: u,
-        containerClassName: _
+        containerClassName: p
     } = e, {
-        reducedMotion: m
-    } = s.useContext(l.CZY), {
-        pendingAvatar: A,
-        pendingBanner: g,
-        pendingAvatarDecoration: h,
-        pendingProfileEffect: x,
-        pendingDisplayNameStyles: p,
-        pendingThemeColors: E,
-        pendingPronouns: C,
-        pendingBio: T,
-        tryItOutThemeColors: S,
-        tryItOutAvatar: I,
-        tryItOutBanner: f,
-        tryItOutAvatarDecoration: N,
-        tryItOutDisplayNameStyles: b
-    } = (0, a.cf)([o.A], () => {
-        let e = o.A.getPendingChanges(),
-            t = o.A.getTryItOutChanges();
+        reducedMotion: g
+    } = i.useContext(r.CZY), {
+        pendingAvatar: C,
+        pendingBanner: m,
+        pendingAvatarDecoration: b,
+        pendingProfileEffect: f,
+        pendingDisplayNameStyles: y,
+        pendingThemeColors: h,
+        pendingPronouns: A,
+        pendingBio: _,
+        tryItOutThemeColors: v,
+        tryItOutAvatar: T,
+        tryItOutBanner: x,
+        tryItOutAvatarDecoration: P,
+        tryItOutDisplayNameStyles: j
+    } = (0, s.cf)([l.A], () => {
+        let e = l.A.getPendingChanges(),
+            n = l.A.getTryItOutChanges();
         return {
             ...e,
-            ...t
+            ...n
         }
-    }), j = (0, r.V7)({
-        userId: t.id,
-        image: I ?? A
+    }), w = (0, o.V7)({
+        userId: n.id,
+        image: T ?? C
     });
-    return (0, i.jsx)(c.A, {
-        containerClassName: _,
-        user: t,
-        pendingPronouns: C,
-        pendingBio: T,
-        pendingBanner: f ?? g ?? n(636763),
-        pendingDisplayNameStyles: b ?? p,
-        pendingAvatar: j,
-        pendingThemeColors: S ?? E,
-        pendingAvatarDecoration: void 0 !== N ? N : h,
-        pendingProfileEffect: x,
-        avatarClassName: null != I || null != A || m.enabled ? void 0 : d.W,
+    return (0, a.jsx)(d.A, {
+        containerClassName: p,
+        user: n,
+        pendingPronouns: A,
+        pendingBio: _,
+        pendingBanner: x ?? m ?? t(636763),
+        pendingDisplayNameStyles: j ?? y,
+        pendingAvatar: w,
+        pendingThemeColors: v ?? h,
+        pendingAvatarDecoration: void 0 !== P ? P : b,
+        pendingProfileEffect: f,
+        avatarClassName: null != T || null != C || g.enabled ? void 0 : c.W,
         canUsePremiumCustomization: !0,
         isTryItOut: !0,
         disabledInputs: u,

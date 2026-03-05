@@ -1,27 +1,27 @@
-/** chunk id: 700435, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Z: () => d
+/** chunk id: 700435, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Z: () => c
 });
-var n = i(311907),
-    l = i(684013),
-    s = i(419954),
-    a = i(256415),
-    r = i(780964),
-    u = i(652215),
-    o = i(985018);
-let d = (0, s.Hn)(r.X.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
-    useTitle: () => o.intl.string(o.t.dnvZSg),
-    useValue: () => (0, n.bG)([a.default], () => a.default.getAvatarSizeMode()),
-    setValue: t => {
-        l.A.setAvatarSizeMode(t)
+var i = n(311907),
+    s = n(684013),
+    l = n(419954),
+    a = n(256415),
+    r = n(780964),
+    o = n(652215),
+    d = n(985018);
+let c = (0, l.Hn)(r.X.OVERLAY_VOICE_WIDGET_AVATAR_SIZE, {
+    useTitle: () => d.intl.string(d.t.dnvZSg),
+    useValue: () => (0, i.bG)([a.default], () => a.default.getAvatarSizeMode()),
+    setValue: e => {
+        s.A.setAvatarSizeMode(e)
     },
     useOptions: () => [{
         id: "large",
-        label: o.intl.string(o.t.YcOxtr),
-        value: u.OSZ.LARGE
+        label: d.intl.string(d.t.YcOxtr),
+        value: o.OSZ.LARGE
     }, {
         id: "small",
-        label: o.intl.string(o.t.BKIKqx),
-        value: u.OSZ.SMALL
+        label: d.intl.string(d.t.BKIKqx),
+        value: o.OSZ.SMALL
     }]
 })

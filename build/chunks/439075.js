@@ -13,23 +13,23 @@ var a = n(627968),
     u = n(792620),
     m = n(73473),
     h = n(545986),
-    p = n(203879),
-    x = n(321503),
+    x = n(203879),
+    p = n(321503),
     g = n(56853),
     _ = n(515038),
     f = n(652215),
-    b = n(348655);
+    v = n(348655);
 
-function v(e) {
+function b(e) {
     let {
         quest: t,
         className: n,
         questContent: s,
         contentPosition: r,
         rowIndex: m,
-        impressionRef: v,
+        impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [T, y] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [y, T] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER,
@@ -51,7 +51,7 @@ function v(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), R = i.useContext(x.X), {
+    }, [N, t.id, s, j, r]), R = i.useContext(p.X), {
         visibilityElementRef: O,
         almostVisibleInViewport: w
     } = function(e) {
@@ -59,7 +59,7 @@ function v(e) {
             e.isIntersecting && n(!0)
         }, []);
         return {
-            visibilityElementRef: (0, p.B)(a, {
+            visibilityElementRef: (0, x.B)(a, {
                 root: e ?? null,
                 threshold: 0,
                 rootMargin: "900px 0px 900px 0px"
@@ -70,9 +70,9 @@ function v(e) {
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
-            v.current = e, O.current = e
+            b.current = e, O.current = e
         },
-        className: l()(b.k, n),
+        className: l()(v.k, n),
         onMouseEnter: I,
         onMouseLeave: k,
         onFocus: I,
@@ -80,7 +80,7 @@ function v(e) {
         children: [(0, a.jsx)(g.A, {
             quest: t,
             isHovering: A,
-            errorHints: T,
+            errorHints: y,
             warningHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
@@ -90,7 +90,7 @@ function v(e) {
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: y,
+            onReceiveErrorHints: T,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]
@@ -105,7 +105,7 @@ function j(e) {
         questContentRowIndex: e.rowIndex,
         trackGuildAndChannelMetadata: e.questContent === r.uF.QUESTS_EMBED,
         sourceQuestContent: e.sourceQuestContent,
-        children: t => (0, a.jsx)(v, {
+        children: t => (0, a.jsx)(b, {
             ...e,
             impressionRef: t
         })

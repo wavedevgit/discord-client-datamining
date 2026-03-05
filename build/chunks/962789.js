@@ -1,32 +1,32 @@
 /** chunk id: 962789, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v,
-    T: () => j
+    A: () => j,
+    T: () => v
 }), n(321073);
 var i = n(627968),
     s = n(64700),
-    a = n(873298),
-    l = n(990078),
+    l = n(873298),
+    a = n(990078),
     r = n(397927),
     o = n(486020),
-    c = n(975571),
-    d = n(661191),
+    d = n(975571),
+    c = n(661191),
     u = n(253932),
     _ = n(780964),
-    m = n(978304),
-    A = n(840065),
-    g = n(744479),
+    g = n(978304),
+    m = n(840065),
+    A = n(744479),
     h = n(871930),
-    x = n(578746),
-    p = n(531525),
+    p = n(578746),
+    x = n(531525),
     E = n(652215),
-    C = n(985018),
-    T = n(419205);
+    T = n(985018),
+    S = n(419205);
 
-function S(e) {
+function C(e) {
     let {
         applications: t
-    } = e, n = s.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), a = s.useMemo(() => {
+    } = e, n = s.useMemo(() => t.sort((e, t) => c.default.compare(t.id, e.id)), [t]), l = s.useMemo(() => {
         let e = [];
         for (let t = 0; t < 3; t++) {
             let i = n[t];
@@ -35,42 +35,42 @@ function S(e) {
         }
         let t = e.join(", "),
             s = n.length - 3;
-        return s > 0 ? C.intl.format(C.t.sHFdTg, {
+        return s > 0 ? T.intl.format(T.t.sHFdTg, {
             gameList: t,
             plusMoreHook: (e, t) => (0, i.jsx)(r.Text, {
                 tag: "span",
                 variant: "text-sm/medium",
                 color: "text-muted",
-                children: C.intl.format(C.t["EADv+4"], {
+                children: T.intl.format(T.t["EADv+4"], {
                     count: s
                 })
             }, t)
         }) : e.join(", ")
-    }, [n]), c = s.useMemo(() => {
+    }, [n]), d = s.useMemo(() => {
         let e = [];
         for (let t = 0; t < 3; t++) {
             let s = n[t];
             if (null == s) break;
             let {
-                icon: a,
+                icon: l,
                 name: r,
-                id: c
-            } = s, d = o.Ay.getApplicationIconURL({
-                id: c,
-                icon: a
+                id: d
+            } = s, c = o.Ay.getApplicationIconURL({
+                id: d,
+                icon: l
             });
-            e.push((0, i.jsx)(l.m, {
+            e.push((0, i.jsx)(a.m, {
                 __unsupportedReactNodeAsText: r,
                 children: (0, i.jsx)("img", {
-                    src: d,
+                    src: c,
                     "aria-label": r,
-                    className: T.Kk
+                    className: S.Kk
                 })
-            }, c))
+            }, d))
         }
         let t = n.length - 3;
         return t > 0 && e.push((0, i.jsx)("div", {
-            className: T.lK,
+            className: S.lK,
             children: (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
@@ -79,35 +79,35 @@ function S(e) {
         }, "omitted")), e
     }, [n]);
     return (0, i.jsxs)("div", {
-        className: T.wx,
+        className: S.wx,
         children: [(0, i.jsxs)("div", {
-            className: T.kX,
+            className: S.kX,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
-                children: a
+                children: l
             }), (0, i.jsxs)(r.DUT, {
                 onClick: () => {
-                    (0, A.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
+                    (0, m.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
                         section: E.nc_.AUTHORIZED_APPS
                     })
                 },
-                className: T.bJ,
+                className: S.bJ,
                 children: [(0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "interactive-text-default",
-                    children: C.intl.format(C.t.oYaYOe, {})
+                    children: T.intl.format(T.t.oYaYOe, {})
                 }), (0, i.jsx)(r._BQ, {
                     size: "xxs",
                     color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                    className: T.g7
+                    className: S.g7
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: T.yF
+            className: S.yF
         }), (0, i.jsx)("div", {
-            className: T.lJ,
-            children: c
+            className: S.lJ,
+            children: d
         })]
     })
 }
@@ -115,11 +115,11 @@ function S(e) {
 function I() {
     let e = u.Zk.useSetting();
     return (0, i.jsx)(h.h, {
-        setting: p.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-        children: (0, i.jsx)(x.Ay, {
-            title: C.intl.string(C.t.XpBObB),
-            note: C.intl.format(C.t.oZsHTD, {
-                helpdeskArticle: c.A.getArticleURL(E.MVz.SLAYER_GAME_FRIENDS)
+        setting: x.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+        children: (0, i.jsx)(p.Ay, {
+            title: T.intl.string(T.t.XpBObB),
+            note: T.intl.format(T.t.oZsHTD, {
+                helpdeskArticle: d.A.getArticleURL(E.MVz.SLAYER_GAME_FRIENDS)
             }),
             value: e,
             onChange: u.Zk.updateSetting
@@ -129,22 +129,22 @@ function I() {
 
 function f() {
     let e = u.TA.useSetting(),
-        t = e === a.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? a.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
+        t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
-            name: C.intl.string(C.t.JIFnN9),
-            value: a.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
+            name: T.intl.string(T.t.JIFnN9),
+            value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
         }, {
-            name: C.intl.string(C.t.rRdsk1),
-            value: a.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
+            name: T.intl.string(T.t.rRdsk1),
+            value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
         }, {
-            name: C.intl.string(C.t.AolKwN),
-            value: a.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
+            name: T.intl.string(T.t.AolKwN),
+            value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
         }];
     return (0, i.jsxs)(h.h, {
-        setting: p.H.PRIVACY_AND_SAFETY_IN_GAME_DMS,
+        setting: x.H.PRIVACY_AND_SAFETY_IN_GAME_DMS,
         children: [(0, i.jsx)(h._, {
-            header: C.intl.string(C.t["ms+Tme"]),
-            description: C.intl.string(C.t["4NN4+/"])
+            header: T.intl.string(T.t["ms+Tme"]),
+            description: T.intl.string(T.t["4NN4+/"])
         }), (0, i.jsx)(r.z6M, {
             value: t,
             options: n,
@@ -153,55 +153,55 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     return (0, i.jsxs)("div", {
-        className: T.do,
+        className: S.do,
         children: [(0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: T.xV,
-            children: C.intl.string(C.t["+0U77d"])
+            className: S.xV,
+            children: T.intl.string(T.t["+0U77d"])
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: C.intl.format(C.t.V8wClM, {
-                helpdeskArticle: c.A.getArticleURL(E.MVz.SOCIAL_LAYER_CONNECTIONS)
+            children: T.intl.format(T.t.V8wClM, {
+                helpdeskArticle: d.A.getArticleURL(E.MVz.SOCIAL_LAYER_CONNECTIONS)
             })
         })]
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         applications: t
     } = e;
-    return t.length > 0 ? (0, i.jsx)(S, {
+    return t.length > 0 ? (0, i.jsx)(C, {
         applications: t
-    }) : (0, i.jsx)(N, {})
-}
-
-function j() {
-    let {
-        showLoadingIndicator: e,
-        slayerSdkApplications: t
-    } = (0, m.A)(!0);
-    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(b, {
-        applications: t
-    })
+    }) : (0, i.jsx)(b, {})
 }
 
 function v() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t
-    } = (0, m.A)(!0);
-    return (0, i.jsx)(g.A, {
+    } = (0, g.A)(!0);
+    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(N, {
+        applications: t
+    })
+}
+
+function j() {
+    let {
+        showLoadingIndicator: e,
+        slayerSdkApplications: t
+    } = (0, g.A)(!0);
+    return (0, i.jsx)(A.A, {
         children: e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(b, {
+            children: [(0, i.jsx)(N, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(I, {}), (0, i.jsx)("div", {
-                    className: T.yF
+                    className: S.yF
                 }), (0, i.jsx)(f, {})]
             })]
         })

@@ -42,11 +42,11 @@ function c() {
 }
 
 function u() {
-    let [e, t] = i.useState(null), [n, s] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), p = i.useRef(null), [x, g] = i.useState(400), [_, f] = i.useState(400), b = i.useCallback(() => {
+    let [e, t] = i.useState(null), [n, s] = i.useState(null), [r, o] = i.useState(null), [c, u] = i.useState([]), x = i.useRef(null), [p, g] = i.useState(400), [_, f] = i.useState(400), v = i.useCallback(() => {
         setTimeout(() => {
-            o(p.current?.getProperties() ?? {}), u(p.current?.getArtboards() ?? []), s({})
+            o(x.current?.getProperties() ?? {}), u(x.current?.getArtboards() ?? []), s({})
         }, 1e3)
-    }, []), v = i.useCallback((e, t) => {
+    }, []), b = i.useCallback((e, t) => {
         null != n && s(n => ({
             ...n,
             [e]: {
@@ -64,13 +64,13 @@ function u() {
             onRiveLoad: j
         }), null != e && (0, a.jsx)("div", {
             style: {
-                width: x,
+                width: p,
                 height: _
             },
             children: (0, a.jsx)(d._7m, {
                 src: e,
-                ref: p,
-                onLoad: b,
+                ref: x,
+                onLoad: v,
                 dynamicDataBinding: n ?? {}
             })
         }), null != e && null == n ? (0, a.jsx)(l.y$y, {}) : null, null != n && (0, a.jsxs)(l.BJc, {
@@ -82,7 +82,7 @@ function u() {
                 }), (0, a.jsx)(d.ksK, {
                     type: "number",
                     label: "width",
-                    value: x.toString(),
+                    value: p.toString(),
                     onChange: e => g(parseInt(e))
                 }), (0, a.jsx)(d.ksK, {
                     type: "number",
@@ -99,7 +99,7 @@ function u() {
                     property: e,
                     type: r?.[e]?.type,
                     value: n?.[e]?.value ?? r?.[e]?.value,
-                    onChange: t => v(e, t),
+                    onChange: t => b(e, t),
                     artboards: c
                 }, e))]
             })]

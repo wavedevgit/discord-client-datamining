@@ -1,27 +1,27 @@
-/** chunk id: 788605, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    p: () => d
+/** chunk id: 788605, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    p: () => c
 });
-var n = i(311907),
-    l = i(684013),
-    s = i(419954),
-    a = i(256415),
-    r = i(780964),
-    u = i(652215),
-    o = i(985018);
-let d = (0, s.Hn)(r.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
-    useTitle: () => o.intl.string(o.t.swsWWC),
-    useValue: () => (0, n.bG)([a.default], () => a.default.getDisplayUserMode()),
-    setValue: t => {
-        l.A.setDisplayUserMode(t)
+var i = n(311907),
+    s = n(684013),
+    l = n(419954),
+    a = n(256415),
+    r = n(780964),
+    o = n(652215),
+    d = n(985018);
+let c = (0, l.Hn)(r.X.OVERLAY_VOICE_WIDGET_DISPLAY_USERS, {
+    useTitle: () => d.intl.string(d.t.swsWWC),
+    useValue: () => (0, i.bG)([a.default], () => a.default.getDisplayUserMode()),
+    setValue: e => {
+        s.A.setDisplayUserMode(e)
     },
     useOptions: () => [{
         id: "always",
-        label: o.intl.string(o.t.nBmDrT),
-        value: u.f5z.ALWAYS
+        label: d.intl.string(d.t.nBmDrT),
+        value: o.f5z.ALWAYS
     }, {
         id: "speaking",
-        label: o.intl.string(o.t["2OvIZY"]),
-        value: u.f5z.ONLY_WHILE_SPEAKING
+        label: d.intl.string(d.t["2OvIZY"]),
+        value: o.f5z.ONLY_WHILE_SPEAKING
     }]
 })

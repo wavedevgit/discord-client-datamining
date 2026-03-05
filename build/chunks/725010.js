@@ -1,14 +1,14 @@
-/** chunk id: 725010, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    s: () => l
+/** chunk id: 725010, original params: E,_,I (module,exports,require) **/
+I.d(_, {
+    s: () => C
 });
-var i = n(64700),
-    s = n(193658);
-let a = {
+var S = I(64700),
+    A = I(193658);
+let T = {
     block: "center"
 };
 
-function l(e) {
-    let t = i.useRef(null);
-    return (0, s.A)(t, e, a, 400), t
+function C(E) {
+    let _ = S.useRef(null);
+    return (0, A.A)(_, E, T, 400), _
 }

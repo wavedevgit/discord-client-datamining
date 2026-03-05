@@ -6,14 +6,14 @@ i.d(t, {
 });
 var r = i(397927),
     n = i(927578),
-    s = i(788868),
-    a = i(88001),
+    a = i(788868),
+    s = i(88001),
     l = i(519412),
     o = i(985018);
 let c = [{
         Icon: r.$yI,
         getText: () => o.intl.formatToPlainString(l.default.eP3Ar7, {
-            totalSeats: a.aw
+            totalSeats: s.aw
         })
     }, {
         Icon: r.tvc,
@@ -28,12 +28,12 @@ let c = [{
     d = [{
         Icon: r.$yI,
         getText: () => o.intl.formatToPlainString(l.default.eP3Ar7, {
-            totalSeats: a.aw
+            totalSeats: s.aw
         })
     }, {
         Icon: r.JMY,
         getText: () => o.intl.formatToPlainString(o.t.p8QVLT, {
-            maxUploadPremium: (0, n.EJ)(s.PremiumTypes.TIER_2, {
+            maxUploadPremium: (0, n.EJ)(a.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
@@ -49,7 +49,7 @@ let c = [{
     }, {
         Icon: r._Jp,
         getText: () => o.intl.formatToPlainString(l.default.HVCRVf, {
-            numBoosts: s.M4
+            numBoosts: a.M4
         })
     }, {
         Icon: r.clX,
@@ -58,7 +58,7 @@ let c = [{
     m = [{
         Icon: r.JMY,
         getText: () => o.intl.formatToPlainString(o.t.p8QVLT, {
-            maxUploadPremium: (0, n.EJ)(s.PremiumTypes.TIER_2, {
+            maxUploadPremium: (0, n.EJ)(a.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })

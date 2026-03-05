@@ -1,23 +1,23 @@
-/** chunk id: 815657, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    P: () => d
+/** chunk id: 815657, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    P: () => c
 });
-var n = i(574381),
-    l = i(419954),
-    s = i(837921),
-    a = i(780964),
-    r = i(358776),
-    u = i(604095),
-    o = i(985018);
-let d = (0, l.zD)(a.X.OS_OPEN_ON_STARTUP, {
-    useTitle: () => (0, r.bp)("OpenOnStartup") ? o.intl.string(o.t["3BeZti"]) : o.intl.string(o.t.WQm4p1),
-    useSubtitle: () => (0, r.bp)("OpenOnStartup") ? void 0 : o.intl.string(o.t["s/cQrU"]),
-    usePredicate: () => n.Av && !(0, n.cX)(),
-    useValue: () => u.fk.useState(t => t.openOnStartup),
-    setValue: u.Cp,
+var i = n(574381),
+    s = n(419954),
+    l = n(837921),
+    a = n(780964),
+    r = n(358776),
+    o = n(604095),
+    d = n(985018);
+let c = (0, s.zD)(a.X.OS_OPEN_ON_STARTUP, {
+    useTitle: () => (0, r.bp)("OpenOnStartup") ? d.intl.string(d.t["3BeZti"]) : d.intl.string(d.t.WQm4p1),
+    useSubtitle: () => (0, r.bp)("OpenOnStartup") ? void 0 : d.intl.string(d.t["s/cQrU"]),
+    usePredicate: () => i.Av && !(0, i.cX)(),
+    useValue: () => o.fk.useState(e => e.openOnStartup),
+    setValue: o.Cp,
     initialize: () => {
-        s.Ay.getOpenOnStart().then(t => u.fk.setState({
-            openOnStartup: t
+        l.Ay.getOpenOnStart().then(e => o.fk.setState({
+            openOnStartup: e
         }))
     }
 })

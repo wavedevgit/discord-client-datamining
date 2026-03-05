@@ -1,13 +1,13 @@
 /** chunk id: 491057, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    Qt: () => i,
-    cG: () => _
+    Qt: () => o,
+    cG: () => i
 });
 var a = r(627968);
 r(64700);
-let [n, _] = (0, r(786300).A)();
+let [n, i] = (0, r(786300).A)();
 
-function i(e) {
+function o(e) {
     let {
         children: t,
         ...r

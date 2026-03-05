@@ -1,11 +1,11 @@
-/** chunk id: 268359, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 268359, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     t: () => a
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(513664);
-let a = (0, n.E2)(l.X.ACTIVITY_PRIVACY_TERMS, {
+var i = n(419954),
+    s = n(780964),
+    l = n(513664);
+let a = (0, i.E2)(s.X.ACTIVITY_PRIVACY_TERMS, {
     useSearchTerms: () => [],
-    Component: s.lD
+    Component: l.lD
 })

@@ -1,18 +1,18 @@
 /** chunk id: 791498, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    q: () => l
+    q: () => a
 });
 var i = n(64700),
     s = n(954571),
-    a = n(652215);
+    l = n(652215);
 
-function l(e) {
+function a(e) {
     return i.useCallback(() => {
         let t = e;
         for (;
             "parent" in t && null != t.parent;) t = t.parent;
         let n = "analyticsKey" in e ? e.analyticsKey : e.key;
-        null != n && s.default.track(a.HAw.UI_SETTING_INTERACTED, {
+        null != n && s.default.track(l.HAw.UI_SETTING_INTERACTED, {
             key: n,
             setting_type: t.analyticsKey ?? t.key
         })

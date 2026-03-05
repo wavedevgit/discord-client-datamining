@@ -1,29 +1,21 @@
-/** chunk id: 836799, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    $: () => E
+/** chunk id: 836799, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    $: () => u
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(723702),
-    a = i(780964),
-    r = i(358776),
-    u = i(62218),
-    o = i(477908),
-    d = i(531525),
-    A = i(985018);
-let T = (0, l.t_)(a.X.WINDOWS_PANEL, {
-        useTitle: () => A.intl.string(A.t.ZkDZov),
+var i = n(934551),
+    s = n(419954),
+    l = n(723702),
+    a = n(780964),
+    r = n(358776),
+    o = n(477908),
+    d = n(985018);
+let c = (0, s.t_)(a.X.WINDOWS_PANEL, {
+        useTitle: () => d.intl.string(d.t.ZkDZov),
         buildLayout: () => [o.w]
     }),
-    S = (0, l.t_)(a.X.WINDOWS_PANEL, {
-        useTitle: () => A.intl.string(A.t.ZkDZov),
-        StronglyDiscouragedCustomComponent: u.A,
-        buildLayout: () => []
-    }),
-    E = (0, l.i4)(a.X.WINDOWS_SIDEBAR_ITEM, {
-        useTitle: () => A.intl.string(A.t.ZkDZov),
-        getLegacySearchKey: () => (0, r.WJ)("WindowsPanel") ? void 0 : d.H.WINDOW_SETTINGS,
-        icon: n.ScreenIcon,
-        usePredicate: () => !(0, r.bp)("WindowsSidebarItem") && s.isPlatformEmbedded && (0, s.isWindows)(),
-        buildLayout: () => [(0, r.WJ)("WindowsPanel") ? T : S]
+    u = (0, s.i4)(a.X.WINDOWS_SIDEBAR_ITEM, {
+        useTitle: () => d.intl.string(d.t.ZkDZov),
+        icon: i.ScreenIcon,
+        usePredicate: () => !(0, r.bp)("WindowsSidebarItem") && l.isPlatformEmbedded && (0, l.isWindows)(),
+        buildLayout: () => [c]
     })

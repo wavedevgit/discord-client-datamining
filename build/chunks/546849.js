@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(128450),
-    l = n(985018);
+    l = n(128450),
+    a = n(985018);
 
 function r(e) {
     let {
@@ -14,20 +14,20 @@ function r(e) {
         errors: n,
         onPronounsChange: r,
         pendingPronouns: o,
-        placeholder: c,
-        currentPronouns: d,
+        placeholder: d,
+        currentPronouns: c,
         disabled: u = !1
     } = e;
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(l.A, {
         title: t,
         errors: n,
         disabled: u,
         children: (0, i.jsx)(s.ksK, {
-            placeholder: c ?? l.intl.string(l.t.NPEUUu),
+            placeholder: d ?? a.intl.string(a.t.NPEUUu),
             maxLength: 40,
-            value: o ?? d,
+            value: o ?? c,
             onChange: function(e) {
-                r(e === d ? void 0 : e)
+                r(e === c ? void 0 : e)
             },
             disabled: u
         })

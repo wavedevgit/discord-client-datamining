@@ -13,13 +13,13 @@ var a = n(627968),
     u = n(278466),
     m = n(805866),
     h = n(627575),
-    p = n(870341),
-    x = n(686267),
+    x = n(870341),
+    p = n(686267),
     g = n(231723),
     _ = n(818348),
     f = n(646284),
-    b = n(985018),
-    v = n(36303);
+    v = n(985018),
+    b = n(36303);
 let j = n(843020);
 
 function A(e) {
@@ -35,7 +35,7 @@ function A(e) {
         r(t)
     }, [t]), (0, a.jsxs)(u.h.Provider, {
         value: o,
-        children: [(0, a.jsx)(x.A, {}), (0, a.jsx)(p.A, {
+        children: [(0, a.jsx)(p.A, {}), (0, a.jsx)(x.A, {
             onSubmit: n,
             disabled: s
         })]
@@ -45,12 +45,12 @@ let C = function(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [u, p] = i.useState(null), [x, C] = i.useState(!0), [T, y] = i.useState(null), [S, E] = i.useState(!1), N = i.useCallback(async () => {
-        C(!0), y(null);
+    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, T] = i.useState(null), [S, E] = i.useState(!1), N = i.useCallback(async () => {
+        C(!0), T(null);
         try {
             let e = await (0, c.$R)();
             if (null == e) return void n();
-            !(0, d.uJ)(e.ui_component?.component.type) && m.Vn.has(e.ui_component.component.type) ? p(e) : p({
+            !(0, d.uJ)(e.ui_component?.component.type) && m.Vn.has(e.ui_component.component.type) ? x(e) : x({
                 task_id: e.task_id,
                 task_type: m.wP.REFRESH_APP,
                 assignment_id: e.assignment_id,
@@ -66,7 +66,7 @@ let C = function(e) {
                 }
             })
         } catch {
-            y(b.intl.string(f.default["/f++3g"]))
+            T(v.intl.string(f.default["/f++3g"]))
         } finally {
             C(!1)
         }
@@ -81,7 +81,7 @@ let C = function(e) {
                 };
                 await (0, c.Rt)(t), N()
             } catch (e) {
-                y(b.intl.string(f.default["+QRSxc"]))
+                T(v.intl.string(f.default["+QRSxc"]))
             } finally {
                 E(!1)
             }
@@ -92,9 +92,9 @@ let C = function(e) {
     });
     let k = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
     return (0, a.jsxs)("div", {
-        className: v.Tp,
+        className: b.Tp,
         children: [(0, a.jsx)("img", {
-            className: v.xX,
+            className: b.xX,
             src: j,
             alt: ""
         }), k ? (0, a.jsx)(o.default, {
@@ -108,31 +108,31 @@ let C = function(e) {
             },
             dismissable: !1
         }) : (0, a.jsx)("div", {
-            className: v.nA,
-            children: x ? (0, a.jsx)(s.y$y, {
+            className: b.nA,
+            children: p ? (0, a.jsx)(s.y$y, {
                 type: s.y$y.Type.SPINNING_CIRCLE
             }) : (0, a.jsx)("div", {
-                className: v.kL,
+                className: b.kL,
                 children: (0, a.jsxs)(s.BJc, {
                     direction: "horizontal",
                     justify: "start",
-                    className: v.rf,
-                    children: [null !== T && (0, a.jsxs)(s.BJc, {
+                    className: b.rf,
+                    children: [null !== y && (0, a.jsxs)(s.BJc, {
                         direction: "vertical",
                         justify: "space-between",
                         align: "center",
-                        className: v.Nj,
+                        className: b.Nj,
                         padding: 16,
                         children: [(0, a.jsxs)(s.BJc, {
                             direction: "vertical",
                             gap: 4,
                             children: [(0, a.jsx)(s.Heading, {
                                 variant: "heading-xl/semibold",
-                                children: b.intl.string(b.t.c6kn6F)
+                                children: v.intl.string(v.t.c6kn6F)
                             }), (0, a.jsx)(s.Text, {
                                 variant: "text-md/normal",
                                 color: "text-muted",
-                                children: b.intl.string(b.t.ZUEGFn)
+                                children: v.intl.string(v.t.ZUEGFn)
                             })]
                         }), (0, a.jsxs)(s.BJc, {
                             direction: "horizontal",
@@ -141,19 +141,19 @@ let C = function(e) {
                             children: [(0, a.jsx)(s.Button, {
                                 fullWidth: !0,
                                 variant: "secondary",
-                                text: b.intl.string(b.t["2jxGer"]),
+                                text: v.intl.string(v.t["2jxGer"]),
                                 onClick: () => {
                                     (0, h.k)("safety_flows_modal")
                                 }
                             }), (0, a.jsx)(s.Button, {
                                 fullWidth: !0,
-                                text: b.intl.string(b.t["7NqTJn"]),
+                                text: v.intl.string(v.t["7NqTJn"]),
                                 onClick: () => {
                                     N()
                                 }
                             })]
                         })]
-                    }), null === T && null != u && (0, a.jsx)(A, {
+                    }), null === y && null != u && (0, a.jsx)(A, {
                         task: u,
                         handleSubmit: I,
                         disabled: S

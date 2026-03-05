@@ -1,13 +1,13 @@
-/** chunk id: 827315, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    g: () => u
+/** chunk id: 827315, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    g: () => o
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(407711),
-    a = i(26186),
-    r = i(985018);
-let u = (0, n.FW)(l.X.CHAT_INLINE_MEDIA_CATEGORY, {
+var i = n(419954),
+    s = n(780964),
+    l = n(407711),
+    a = n(26186),
+    r = n(985018);
+let o = (0, i.FW)(s.X.CHAT_INLINE_MEDIA_CATEGORY, {
     useTitle: () => r.intl.string(r.t["9nyle0"]),
-    buildLayout: () => [s.q, a.H]
+    buildLayout: () => [l.q, a.H]
 })

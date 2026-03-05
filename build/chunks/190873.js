@@ -6,8 +6,8 @@ r.d(t, {
 });
 var a = r(225191),
     n = r(198812),
-    s = r(840456),
-    o = r(988042),
+    o = r(840456),
+    s = r(988042),
     i = r(274331),
     c = r.n(i),
     l = r(213841),
@@ -36,19 +36,19 @@ function d(e) {
     }
     return e
 }
-var h = o.default,
+var h = s.default,
     p = Object.keys(h),
     y = function(e) {
         var t = c()(e),
             r = (0, b.o)(t.array()),
-            a = (0, s.A)(r, 3),
+            a = (0, o.A)(r, 3),
             n = a[0],
-            o = a[1],
+            s = a[1],
             i = a[2],
-            l = (0, b.I)([n < .25 ? 1 : n < .5 ? .9 - n : 1.1 - n, o, i]);
+            l = (0, b.I)([n < .25 ? 1 : n < .5 ? .9 - n : 1.1 - n, s, i]);
         return c().rgb(l).hex()
     },
-    g = function(e) {
+    v = function(e) {
         return function(t) {
             return {
                 className: [t.className, e.className].filter(Boolean).join(" "),
@@ -56,7 +56,7 @@ var h = o.default,
             }
         }
     },
-    v = function(e, t) {
+    g = function(e, t) {
         if (void 0 === e) return t;
         if (void 0 === t) return e;
         var r = (0, a.A)(e),
@@ -67,14 +67,14 @@ var h = o.default,
                     case "string":
                         return [t, e].filter(Boolean).join(" ");
                     case "object":
-                        return g({
+                        return v({
                             className: e,
                             style: t
                         });
                     case "function":
                         return function(r) {
-                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), s = 1; s < a; s++) n[s - 1] = arguments[s];
-                            return g({
+                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), o = 1; o < a; o++) n[o - 1] = arguments[o];
+                            return v({
                                 className: e
                             })(t.apply(void 0, [r].concat(n)))
                         }
@@ -83,7 +83,7 @@ var h = o.default,
             case "object":
                 switch (n) {
                     case "string":
-                        return g({
+                        return v({
                             className: t,
                             style: e
                         });
@@ -91,8 +91,8 @@ var h = o.default,
                         return d(d({}, t), e);
                     case "function":
                         return function(r) {
-                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), s = 1; s < a; s++) n[s - 1] = arguments[s];
-                            return g({
+                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), o = 1; o < a; o++) n[o - 1] = arguments[o];
+                            return v({
                                 style: e
                             })(t.apply(void 0, [r].concat(n)))
                         }
@@ -102,21 +102,21 @@ var h = o.default,
                 switch (n) {
                     case "string":
                         return function(r) {
-                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), s = 1; s < a; s++) n[s - 1] = arguments[s];
-                            return e.apply(void 0, [g(r)({
+                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), o = 1; o < a; o++) n[o - 1] = arguments[o];
+                            return e.apply(void 0, [v(r)({
                                 className: t
                             })].concat(n))
                         };
                     case "object":
                         return function(r) {
-                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), s = 1; s < a; s++) n[s - 1] = arguments[s];
-                            return e.apply(void 0, [g(r)({
+                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), o = 1; o < a; o++) n[o - 1] = arguments[o];
+                            return e.apply(void 0, [v(r)({
                                 style: t
                             })].concat(n))
                         };
                     case "function":
                         return function(r) {
-                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), s = 1; s < a; s++) n[s - 1] = arguments[s];
+                            for (var a = arguments.length, n = Array(a > 1 ? a - 1 : 0), o = 1; o < a; o++) n[o - 1] = arguments[o];
                             return e.apply(void 0, [t.apply(void 0, [r].concat(n))].concat(n))
                         }
                 }
@@ -126,14 +126,14 @@ var h = o.default,
         var r = Object.keys(t);
         for (var a in e) - 1 === r.indexOf(a) && r.push(a);
         return r.reduce(function(r, a) {
-            return r[a] = v(e[a], t[a]), r
+            return r[a] = g(e[a], t[a]), r
         }, {})
     },
     A = function(e, t) {
-        for (var r = arguments.length, n = Array(r > 2 ? r - 2 : 0), s = 2; s < r; s++) n[s - 2] = arguments[s];
+        for (var r = arguments.length, n = Array(r > 2 ? r - 2 : 0), o = 2; o < r; o++) n[o - 2] = arguments[o];
         if (null === t) return e;
         Array.isArray(t) || (t = [t]);
-        var o = t.map(function(t) {
+        var s = t.map(function(t) {
             return e[t]
         }).filter(Boolean).reduce(function(e, t) {
             return "string" == typeof t ? e.className = [e.className, t].filter(Boolean).join(" ") : "object" === (0, a.A)(t) ? e.style = d(d({}, e.style), t) : "function" == typeof t && (e = d(d({}, e), t.apply(void 0, [e].concat(n)))), e
@@ -141,7 +141,7 @@ var h = o.default,
             className: "",
             style: {}
         });
-        return o.className || delete o.className, 0 === Object.keys(o.style).length && delete o.style, o
+        return s.className || delete s.className, 0 === Object.keys(s.style).length && delete s.style, s
     },
     w = function(e) {
         return Object.keys(e).reduce(function(t, r) {
@@ -153,9 +153,9 @@ var h = o.default,
             r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
             a = t.defaultBase16,
             n = void 0 === a ? h : a,
-            s = t.base16Themes,
-            o = E(r, void 0 === s ? null : s);
-        o && (r = d(d({}, o), r));
+            o = t.base16Themes,
+            s = E(r, void 0 === o ? null : o);
+        s && (r = d(d({}, s), r));
         for (var i = p.reduce(function(e, t) {
                 return e[t] = r[t] || n[t], e
             }, {}), c = m(Object.keys(r).reduce(function(e, t) {
@@ -169,10 +169,10 @@ var h = o.default,
     E = function(e, t) {
         if (e && k(e) && e.extend && (e = e.extend), "string" == typeof e) {
             var r = e.split(":"),
-                a = (0, s.A)(r, 2),
+                a = (0, o.A)(r, 2),
                 n = a[0],
                 i = a[1];
-            e = t ? t[n] : o[n], "inverted" === i && (e = w(e))
+            e = t ? t[n] : s[n], "inverted" === i && (e = w(e))
         }
         return e && Object.prototype.hasOwnProperty.call(e, "base00") ? e : void 0
     },

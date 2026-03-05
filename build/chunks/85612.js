@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(652215),
     L = n(806931),
     P = n(788868),
-    k = n(731854),
-    w = n(734317),
+    w = n(731854),
+    k = n(734317),
     U = n(985018),
     G = n(632998);
 
@@ -49,15 +49,15 @@ function F(e) {
     } = e, [H, B] = l.useState(""), {
         analyticsLocations: V,
         newestAnalyticsLocation: K
-    } = (0, m.Ay)(h.A.VOICE_FILTER_POPOUT), z = l.useRef(null), W = (0, u.A)({
+    } = (0, m.Ay)(h.A.VOICE_FILTER_POPOUT), W = l.useRef(null), z = (0, u.A)({
         minDimension: 400,
         maxDimension: 600,
-        resizableDomNodeRef: z,
+        resizableDomNodeRef: W,
         onElementResize: (e, t) => {},
         onElementResizeEnd: e => {},
         orientation: u.R.VERTICAL_TOP
     });
-    (0, U.useSyncMessages)(w.messagesLoader);
+    (0, U.useSyncMessages)(k.messagesLoader);
     let Y = (0, o.bG)([C.default], () => (0, I.ki)(C.default.getCurrentUser())),
         q = (0, o.bG)([N.A], () => N.A.getCatalogUpdateTime()),
         [J, $] = l.useState(!1),
@@ -106,7 +106,7 @@ function F(e) {
     return (0, i.jsx)(m.f5, {
         value: V,
         children: (0, i.jsxs)("div", {
-            ref: z,
+            ref: W,
             className: a()(G.ZO, {
                 [G.U]: n,
                 [G.Fd]: !ea
@@ -116,7 +116,7 @@ function F(e) {
             },
             children: [ea && (0, i.jsx)("div", {
                 className: G.Di,
-                onMouseDown: W,
+                onMouseDown: z,
                 children: (0, i.jsx)("div", {
                     className: G.YC
                 })
@@ -178,7 +178,7 @@ function F(e) {
                     [G.rd]: null != Q
                 }),
                 children: [(0, i.jsx)(f.U, {
-                    deviceType: k.oh.AUDIO_INPUT,
+                    deviceType: w.oh.AUDIO_INPUT,
                     location: "VoiceFiltersPopout",
                     onOpen: () => {
                         S.default.track(O.HAw.VOICE_FILTER_MIC_SELECTOR_OPENED, {
@@ -187,7 +187,7 @@ function F(e) {
                     },
                     popoutPosition: "top"
                 }), s && (0, i.jsx)(f.U, {
-                    deviceType: k.oh.AUDIO_OUTPUT,
+                    deviceType: w.oh.AUDIO_OUTPUT,
                     location: "VoiceFiltersPopout",
                     popoutPosition: "top"
                 }), (0, i.jsx)(c.YNO, {

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(397927),
-    r = n(473169);
+    r = n(397927),
+    i = n(473169);
 let s = e => {
         let {
             element: t,
@@ -15,9 +15,9 @@ let s = e => {
         a.useEffect(() => {
             o(s ?? "")
         }, [s]);
-        let u = t.name,
+        let c = t.name,
             {
-                title: c,
+                title: u,
                 options: _
             } = t.data,
             m = a.useMemo(() => _.map(e => ({
@@ -28,9 +28,9 @@ let s = e => {
                 null != e && (o(e), n(e))
             }, [n]);
         return (0, l.jsx)("div", {
-            className: r.QB,
-            children: (0, l.jsx)(i.l6P, {
-                label: c,
+            className: i.QB,
+            children: (0, l.jsx)(r.l6P, {
+                label: u,
                 value: d,
                 required: t.should_submit_data,
                 onSelectionChange: x,
@@ -38,14 +38,14 @@ let s = e => {
                 selectionMode: "single",
                 fullWidth: !0
             })
-        }, u)
+        }, c)
     },
     d = e => {
         let {
             elements: t,
             onChange: n,
             state: a
-        } = e, i = t.map(e => {
+        } = e, r = t.map(e => {
             let t = e.name;
             return (0, l.jsx)(s, {
                 element: e,
@@ -54,6 +54,6 @@ let s = e => {
             }, t)
         });
         return (0, l.jsx)("div", {
-            children: i
+            children: r
         })
     }

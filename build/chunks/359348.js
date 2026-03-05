@@ -1,13 +1,13 @@
 /** chunk id: 359348, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => S
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
     l = n(417597),
-    r = n(342494),
-    a = n(397927),
+    a = n(342494),
+    r = n(397927),
     o = n(442433),
     c = n(688810),
     d = n(384059),
@@ -38,7 +38,7 @@ let N = e => {
             keybindString: t,
             targetElementRef: n
         } = e, [l, o] = s.useState(!1), c = s.useCallback(() => o(!1), []);
-        return (0, i.jsx)(r.AM, {
+        return (0, i.jsx)(a.AM, {
             shouldShow: l,
             targetElementRef: n,
             position: "top",
@@ -46,7 +46,7 @@ let N = e => {
                 keybind: t,
                 keybindHook: () => (0, i.jsx)("span", {
                     className: C.E,
-                    children: (0, i.jsx)(a.e7I, {
+                    children: (0, i.jsx)(r.e7I, {
                         className: C.d,
                         shortcut: t
                     })
@@ -66,16 +66,16 @@ let N = e => {
             onRequestClose: c
         })
     },
-    S = () => {
+    b = () => {
         let e = s.useRef(null),
             {
                 parentAnalyticsLocation: t
             } = (0, c.Ay)(),
             n = (0, l.bG)([h.A], () => h.A.hasLayers()),
-            r = (0, g.Et)(),
+            a = (0, g.Et)(),
             o = (0, l.bG)([p.A], () => p.A.getIsAtMaxSaveClipOperations()),
             C = (0, l.bG)([A.Ay], () => A.Ay.getKeybindForAction(f.hCu.SAVE_CLIP));
-        if (!r || null == C || n) return null;
+        if (!a || null == C || n) return null;
         let E = m.dI(C.shortcut, !0);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(N, {
@@ -91,7 +91,7 @@ let N = e => {
                     (0, _.l0)(), (0, d.X)(t, d.O.CLIP)
                 },
                 onContextMenu: I,
-                icon: a.xgA
+                icon: r.xgA
             })]
         })
     }

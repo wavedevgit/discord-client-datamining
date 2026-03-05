@@ -11,13 +11,13 @@ var a = n(627968),
     c = n(363487),
     o = n(365003),
     u = n(843095),
-    _ = n(800007),
-    m = n(294726),
+    m = n(800007),
+    _ = n(294726),
     x = n(985018),
-    g = n(396936);
-let f = {
+    f = n(396936);
+let g = {
     steps: {
-        [_.HS.SERVER_SETTINGS]: {
+        [m.HS.SERVER_SETTINGS]: {
             onBack: {
                 type: "close"
             },
@@ -32,9 +32,9 @@ function v(e) {
     let {
         guildId: t,
         instance: n
-    } = e, _ = s.useRef(null), v = (0, o.A)(n.providerType, n.gameServerPanelUrl);
+    } = e, m = s.useRef(null), v = (0, o.A)(n.providerType, n.gameServerPanelUrl);
     return (0, c.A)(t) ? (0, a.jsx)(i.YNO, {
-        targetElementRef: _,
+        targetElementRef: m,
         align: "top",
         position: "right",
         animationPosition: "bottom",
@@ -49,7 +49,7 @@ function v(e) {
                 onClose: () => {
                     (0, l.Z_)(), s()
                 },
-                "aria-label": x.intl.string(m.default["yb+ork"]),
+                "aria-label": x.intl.string(_.default["yb+ork"]),
                 onSelect: void 0,
                 children: (0, a.jsxs)(i.rXV, {
                     children: [null != v && (0, a.jsx)(i.Drp, {
@@ -59,7 +59,7 @@ function v(e) {
                             type: "icon",
                             icon: i.oyn
                         },
-                        label: x.intl.string(m.default.bBkeMs),
+                        label: x.intl.string(_.default.bBkeMs),
                         action: () => {
                             (0, d.h)({
                                 href: v
@@ -72,11 +72,11 @@ function v(e) {
                             type: "icon",
                             icon: i.Zes
                         },
-                        label: x.intl.string(m.default["feUiM/"]),
+                        label: x.intl.string(_.default["feUiM/"]),
                         action: () => {
                             (0, u.A)({
                                 guildId: t,
-                                stepConfig: f,
+                                stepConfig: g,
                                 initialGameServerInstance: n,
                                 analyticsLocation: r.A.GAME_SERVER_PAGE
                             })
@@ -87,9 +87,9 @@ function v(e) {
         },
         children: e => (0, a.jsx)(i.DUT, {
             "aria-label": x.intl.string(x.t["UKOtz+"]),
-            className: g.v,
+            className: f.v,
             ...e,
-            innerRef: _,
+            innerRef: m,
             children: (0, a.jsx)(i.jNK, {
                 color: "currentColor",
                 size: "sm"

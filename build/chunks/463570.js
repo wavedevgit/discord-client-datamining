@@ -1,23 +1,23 @@
-/** chunk id: 463570, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    y: () => d
+/** chunk id: 463570, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    y: () => c
 });
-var n = i(574381),
-    l = i(419954),
-    s = i(837921),
-    a = i(780964),
-    r = i(358776),
-    u = i(604095),
-    o = i(985018);
-let d = (0, l.zD)(a.X.OS_MINIMIZE_TO_TRAY, {
-    useTitle: () => (0, r.bp)("OsMinimizeToTray") ? o.intl.string(o.t.dJ5MUh) : o.intl.string(o.t.abLFes),
-    useSubtitle: () => (0, r.bp)("OsMinimizeToTray") ? o.intl.string(o.t.nQavHr) : o.intl.string(o.t["mVuX+j"]),
-    usePredicate: () => n.Av && !(0, n.cX)(),
-    useValue: () => u.fk.useState(t => t.minimizeToTray),
-    setValue: u.tA,
+var i = n(574381),
+    s = n(419954),
+    l = n(837921),
+    a = n(780964),
+    r = n(358776),
+    o = n(604095),
+    d = n(985018);
+let c = (0, s.zD)(a.X.OS_MINIMIZE_TO_TRAY, {
+    useTitle: () => (0, r.bp)("OsMinimizeToTray") ? d.intl.string(d.t.dJ5MUh) : d.intl.string(d.t.abLFes),
+    useSubtitle: () => (0, r.bp)("OsMinimizeToTray") ? d.intl.string(d.t.nQavHr) : d.intl.string(d.t["mVuX+j"]),
+    usePredicate: () => i.Av && !(0, i.cX)(),
+    useValue: () => o.fk.useState(e => e.minimizeToTray),
+    setValue: o.tA,
     initialize: () => {
-        s.Ay.getSetting("MINIMIZE_TO_TRAY", !0).then(t => u.fk.setState({
-            minimizeToTray: t
+        l.Ay.getSetting("MINIMIZE_TO_TRAY", !0).then(e => o.fk.setState({
+            minimizeToTray: e
         }))
     }
 })

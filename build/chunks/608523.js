@@ -4,18 +4,18 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(397927),
-    r = n(46054),
+    r = n(397927),
+    i = n(46054),
     s = n(861662),
     d = n(985018),
     o = n(322367),
-    u = n(473169);
-let c = e => {
+    c = n(473169);
+let u = e => {
         let {
             data: {
                 title: t,
                 subtitle: n,
-                description: c,
+                description: u,
                 placeholder: _,
                 rows: m,
                 character_limit: x,
@@ -24,62 +24,62 @@ let c = e => {
             onChange: g,
             initialText: h,
             isRequired: A
-        } = e, b = a.useMemo(() => r.A.reactParserFor({
-            ...r.A.defaultRules,
+        } = e, v = a.useMemo(() => i.A.reactParserFor({
+            ...i.A.defaultRules,
             link: s.B
-        }), []), [v, f] = a.useState(""), [T, C] = a.useState(null);
+        }), []), [b, f] = a.useState(""), [C, j] = a.useState(null);
         a.useEffect(() => {
             f(h?.value ?? "")
         }, [h]);
-        let j = a.useCallback(e => {
+        let T = a.useCallback(e => {
             let t = null != p ? new RegExp(p) : null;
-            null == t || t.test(e) ? null != e && (C(null), f(e), g({
+            null == t || t.test(e) ? null != e && (j(null), f(e), g({
                 value: e,
                 isValid: !0
-            })) : (C(d.intl.string(d.t["24xrGb"])), g({
+            })) : (j(d.intl.string(d.t["24xrGb"])), g({
                 value: e,
                 isValid: !1
             }))
         }, [g, p]);
         return (0, l.jsxs)("div", {
-            className: u.QB,
+            className: c.QB,
             children: [(0, l.jsxs)("div", {
-                className: u.QB,
-                children: [null != t && (0, l.jsxs)(i.Text, {
+                className: c.QB,
+                children: [null != t && (0, l.jsxs)(r.Text, {
                     variant: "text-sm/bold",
                     children: [t, A && (0, l.jsx)("span", {
                         className: o.m,
                         children: "*"
                     })]
-                }), null != c && (0, l.jsx)("div", {
-                    className: u.a5,
-                    children: (0, l.jsx)(i.Text, {
+                }), null != u && (0, l.jsx)("div", {
+                    className: c.a5,
+                    children: (0, l.jsx)(r.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: c
+                        children: u
                     })
                 })]
-            }), 1 === m ? (0, l.jsx)(i.ksK, {
+            }), 1 === m ? (0, l.jsx)(r.ksK, {
                 maxLength: x,
-                onChange: j,
-                value: v,
-                error: T,
+                onChange: T,
+                value: b,
+                error: C,
                 placeholder: _,
                 autoFocus: !0
-            }) : (0, l.jsx)(i.fs1, {
+            }) : (0, l.jsx)(r.fs1, {
                 maxLength: x,
-                onChange: j,
-                value: v,
-                error: T,
+                onChange: T,
+                value: b,
+                error: C,
                 rows: m,
                 placeholder: _,
                 autoFocus: !0
             }), null != n && (0, l.jsx)("div", {
-                className: u.a5,
-                children: (0, l.jsx)(i.Text, {
+                className: c.a5,
+                children: (0, l.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-muted",
-                    children: b(n)
+                    children: v(n)
                 })
             })]
         })
@@ -89,9 +89,9 @@ let c = e => {
             elements: t,
             onChange: n,
             state: a
-        } = e, i = t.map(e => {
+        } = e, r = t.map(e => {
             let t = e.name;
-            return (0, l.jsx)(c, {
+            return (0, l.jsx)(u, {
                 data: e.data,
                 onChange: e => n(t, e.value, e.isValid),
                 initialText: a?.[t] ?? void 0,
@@ -99,6 +99,6 @@ let c = e => {
             }, t)
         });
         return (0, l.jsx)("div", {
-            children: i
+            children: r
         })
     }

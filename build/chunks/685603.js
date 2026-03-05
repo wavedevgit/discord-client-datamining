@@ -15,7 +15,7 @@ var i, s = n(627968),
     h = ((i = {}).MOVE = "MOVE", i.RESIZE_NORTH = "RESIZE_NORTH", i.RESIZE_WEST = "RESIZE_WEST", i.RESIZE_EAST = "RESIZE_EAST", i.RESIZE_SOUTH = "RESIZE_SOUTH", i.RESIZE_NORTH_WEST = "RESIZE_NORTH_WEST", i.RESIZE_NORTH_EAST = "RESIZE_NORTH_EAST", i.RESIZE_SOUTH_WEST = "RESIZE_SOUTH_WEST", i.RESIZE_SOUTH_EAST = "RESIZE_SOUTH_EAST", i);
 let p = new Set(["RESIZE_NORTH", "RESIZE_WEST", "RESIZE_EAST", "RESIZE_SOUTH", "RESIZE_NORTH_WEST", "RESIZE_NORTH_EAST", "RESIZE_SOUTH_WEST", "RESIZE_SOUTH_EAST"]);
 
-function f(e, t, n) {
+function A(e, t, n) {
     let {
         width: i,
         height: s
@@ -26,7 +26,7 @@ function f(e, t, n) {
     }
 }
 
-function A(e) {
+function f(e) {
     let {
         top: t,
         left: n,
@@ -41,11 +41,11 @@ function A(e) {
     }
 }
 
-function _(e) {
+function g(e) {
     return "auto" === e || null == e ? "auto" : `${e}px`
 }
 
-function g(e, t) {
+function _(e, t) {
     let n = 0;
     return {
         width: n = "auto" === t.width ? null != e ? e.clientWidth : 0 : t.width,
@@ -122,13 +122,13 @@ class E extends l.Component {
         operationStarted: !1
     };
     constructor(e) {
-        super(e), this.anchor = A(e.anchor), this.size = f(e.size, e.minSize.width, e.minSize.height)
+        super(e), this.anchor = f(e.anchor), this.size = A(e.size, e.minSize.width, e.minSize.height)
     }
     shouldComponentUpdate(e, t) {
         return !(0, o.A)(t, this.state) || !(0, o.A)(e, this.props, ["anchor", "size", "minSize", "container"]) || !(0, o.A)(e.anchor, this.props.anchor) || !(0, o.A)(e.size, this.props.size) || !(0, o.A)(e.minSize, this.props.minSize) || !(0, o.A)(e.container, this.props.container)
     }
     componentDidUpdate(e, t) {
-        null == t.operation && ((0, o.A)(this.props.anchor, e.anchor) || this.setDOMPositions(A(this.props.anchor)), (0, o.A)(this.props.size, e.size) || this.setDOMSize(f(this.props.size, this.props.minSize.width, this.props.minSize.height)))
+        null == t.operation && ((0, o.A)(this.props.anchor, e.anchor) || this.setDOMPositions(f(this.props.anchor)), (0, o.A)(this.props.size, e.size) || this.setDOMSize(A(this.props.size, this.props.minSize.width, this.props.minSize.height)))
     }
     componentWillUnmount() {
         this.handleOperationEnd()
@@ -184,7 +184,7 @@ class E extends l.Component {
         let {
             width: o,
             height: c
-        } = g(i, this.size), u = (0, d.Ly)(this.anchor, a, r, o, c);
+        } = _(i, this.size), u = (0, d.Ly)(this.anchor, a, r, o, c);
         if ("MOVE" === e) {
             let {
                 x: e,
@@ -245,21 +245,21 @@ class E extends l.Component {
                 offsetY: p
             },
             state: {
-                operationStarted: f
+                operationStarted: A
             }
         } = this;
         if (null == n) return null;
         e = Math.max(Math.min(s, e), a), t = Math.max(Math.min(l, t), r);
         let {
-            width: A,
-            height: _
-        } = g(n, this.size), E = t - p, x = e - h, v = (0, d.fh)((0, d.Ly)({
+            width: f,
+            height: g
+        } = _(n, this.size), E = t - p, x = e - h, y = (0, d.fh)((0, d.Ly)({
             top: E,
             left: x,
             bottom: void 0,
             right: void 0
-        }, s, l, A, _)), y = u ? (0, d.h1)(v) : m("RESIZE_SOUTH_EAST", v);
-        this.setDOMPositions(y), f || (null != o && o(), this.setState({
+        }, s, l, f, g)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
+        this.setDOMPositions(v), A || (null != o && o(), this.setState({
             operationStarted: !0
         })), null != c && c(i, "MOVE", this.anchor, this.size)
     }
@@ -284,35 +284,35 @@ class E extends l.Component {
         } = this, {
             startX: h,
             startY: p,
-            offsetWidth: f,
-            offsetHeight: A
-        } = this.dragState, _ = 0, g = 0;
+            offsetWidth: A,
+            offsetHeight: f
+        } = this.dragState, g = 0, _ = 0;
         if (null != c) {
             switch (e = Math.max(Math.min(s, e), a), t = Math.max(Math.min(l, t), r), c) {
                 case "RESIZE_EAST":
                 case "RESIZE_SOUTH_EAST":
                 case "RESIZE_NORTH_EAST":
-                    _ -= h - e;
+                    g -= h - e;
                     break;
                 case "RESIZE_WEST":
                 case "RESIZE_SOUTH_WEST":
                 case "RESIZE_NORTH_WEST":
-                    _ += h - e
+                    g += h - e
             }
             switch (c) {
                 case "RESIZE_SOUTH":
                 case "RESIZE_SOUTH_WEST":
                 case "RESIZE_SOUTH_EAST":
-                    g -= p - t;
+                    _ -= p - t;
                     break;
                 case "RESIZE_NORTH":
                 case "RESIZE_NORTH_WEST":
                 case "RESIZE_NORTH_EAST":
-                    g += p - t
+                    _ += p - t
             }
-            f = Math.max(f + _, i.width), A = Math.max(A + g, i.height), this.setDOMSize({
-                width: f,
-                height: A
+            A = Math.max(A + g, i.width), f = Math.max(f + _, i.height), this.setDOMSize({
+                width: A,
+                height: f
             }), u || (null != o && o(), this.setState({
                 operationStarted: !0
             })), null != d && d(n, c, this.anchor, this.size)
@@ -332,7 +332,7 @@ class E extends l.Component {
                 onUpdate: t,
                 id: n
             } = this.props;
-            t(e, n, this.anchor, this.size, g(this.ref.current, this.size))
+            t(e, n, this.anchor, this.size, _(this.ref.current, this.size))
         } : void 0;
         if (t) {
             let {
@@ -341,7 +341,7 @@ class E extends l.Component {
             } = this.props.container, {
                 width: n,
                 height: s
-            } = g(this.ref.current, this.size), l = (0, d.Ly)(this.anchor, e, t, n, s), a = (0, d.h1)(l);
+            } = _(this.ref.current, this.size), l = (0, d.Ly)(this.anchor, e, t, n, s), a = (0, d.h1)(l);
             this.setDOMPositions(a), this.setDOMSize({
                 width: n,
                 height: s
@@ -366,7 +366,7 @@ class E extends l.Component {
             left: n,
             bottom: i,
             right: s
-        }, null != l && (l.style.top = _(t), l.style.bottom = _(i), l.style.left = _(n), l.style.right = _(s))
+        }, null != l && (l.style.top = g(t), l.style.bottom = g(i), l.style.left = g(n), l.style.right = g(s))
     }
     setDOMSize(e) {
         let {
@@ -378,7 +378,7 @@ class E extends l.Component {
         t = "auto" === this.size.width ? "auto" : t, n = "auto" === this.size.height ? "auto" : n, this.size = {
             width: t,
             height: n
-        }, null != i && (i.style.width = _(t), i.style.height = _(n))
+        }, null != i && (i.style.width = g(t), i.style.height = g(n))
     }
     renderResizeHandles() {
         let {

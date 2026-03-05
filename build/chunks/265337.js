@@ -1,12 +1,12 @@
 /** chunk id: 265337, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => s
 });
 var n = r(685357),
     a = r(597807),
     l = r(763424),
     i = r(292177);
-let o = {
+let s = {
     id: "button-name",
     selector: 'button, [role="button"], [role="link"], [role="menuitem"], [role="tab"]',
     tags: ["wcag2a", "wcag412", "section508", "section508.22.a", "ACT"],

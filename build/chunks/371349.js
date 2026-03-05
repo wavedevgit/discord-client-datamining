@@ -2,8 +2,8 @@
 r.d(t, {
     A: () => i
 });
-var s = r(627968),
-    n = r(397927),
+var n = r(627968),
+    s = r(397927),
     l = r(704456),
     a = r(252645);
 
@@ -20,18 +20,18 @@ function i(e) {
         type: l.kh.SHORT
     });
     if (null == t.saveData.dueAt) return null;
-    let u = o ? "text-feedback-critical" : "text-default";
-    return (0, s.jsxs)("div", {
+    let c = o ? "text-feedback-critical" : "text-default";
+    return (0, n.jsxs)("div", {
         className: a.k,
-        children: [(0, s.jsx)("div", {
+        children: [(0, n.jsx)("div", {
             className: a.K,
-            children: (0, s.jsx)(n.O4, {
+            children: (0, n.jsx)(s.O4, {
                 size: "xxs",
-                color: "text-feedback-critical" === u ? n.LU0.colors.TEXT_FEEDBACK_CRITICAL : n.LU0.colors.INTERACTIVE_TEXT_ACTIVE
+                color: "text-feedback-critical" === c ? s.LU0.colors.TEXT_FEEDBACK_CRITICAL : s.LU0.colors.INTERACTIVE_TEXT_ACTIVE
             })
-        }), (0, s.jsx)(n.Heading, {
+        }), (0, n.jsx)(s.Heading, {
             variant: "text-md/semibold",
-            color: u,
+            color: c,
             children: i
         })]
     })

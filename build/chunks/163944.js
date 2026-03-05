@@ -1,37 +1,37 @@
-/** chunk id: 163944, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    S: () => T
-}), i(321073);
-var n = i(64700),
-    l = i(311907),
-    s = i(526162),
-    a = i(419954),
-    r = i(933297),
-    u = i(780964),
-    o = i(961154),
-    d = i(685896),
-    A = i(985018);
-let T = (0, a.zZ)(u.X.DISPLAY_IN_APP_ICON_CATEGORY, {
-    useTitle: () => A.intl.string(A.t.RPh2ou),
-    useSubtitle: () => A.intl.string(A.t.IgENJo),
+/** chunk id: 163944, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    S: () => _
+}), n(321073);
+var i = n(64700),
+    s = n(311907),
+    l = n(526162),
+    a = n(419954),
+    r = n(933297),
+    o = n(780964),
+    d = n(961154),
+    c = n(685896),
+    u = n(985018);
+let _ = (0, a.zZ)(o.X.DISPLAY_IN_APP_ICON_CATEGORY, {
+    useTitle: () => u.intl.string(u.t.RPh2ou),
+    useSubtitle: () => u.intl.string(u.t.IgENJo),
     useHeaderDecoration: function() {
-        let t = (0, l.bG)([s.A], () => s.A.isUpsellPreview);
-        return n.useMemo(() => {
-            let e = [];
-            return e.push({
+        let e = (0, s.bG)([l.A], () => l.A.isUpsellPreview);
+        return i.useMemo(() => {
+            let t = [];
+            return t.push({
                 id: "preview-icon-button",
                 type: r.UV.BUTTON,
-                useText: () => A.intl.string(A.t["6acvnZ"]),
-                onClick: o.U6
-            }), t && e.push({
+                useText: () => u.intl.string(u.t["6acvnZ"]),
+                onClick: d.U6
+            }), e && t.push({
                 id: "upsell-button",
                 type: r.UV.STRONGLY_DISCOURAGED_CUSTOM,
-                button: o.kp
+                button: d.kp
             }), {
                 type: r.WX.BUTTON_GROUP,
-                buttons: e
+                buttons: t
             }
-        }, [t])
+        }, [e])
     },
-    buildLayout: () => [d.C]
+    buildLayout: () => [c.C]
 })

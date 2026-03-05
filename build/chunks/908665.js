@@ -1,12 +1,12 @@
 /** chunk id: 908665, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => s
 }), r(321073);
 var n = r(944181),
     a = r(685357),
     l = r(597807),
     i = r(763424);
-let o = {
+let s = {
     id: "nested-interactive",
     selector: `button, a, ${Array.from(n.roles.entries()).reduce((e,t)=>{let[r,n]=t;return!0===n.childrenPresentational&&e.push(`[role="${r}"]`),e},[]).join(", ")}`,
     tags: [],

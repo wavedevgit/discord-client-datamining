@@ -1,78 +1,78 @@
 /** chunk id: 188180, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    X: () => p
+    X: () => y
 });
 var r = n(627968),
     a = n(64700),
     i = n(503698),
-    s = n.n(i),
-    l = n(837381),
+    l = n.n(i),
+    s = n(837381),
     o = n(397927),
-    c = n(199966),
-    u = n(963935),
+    u = n(199966),
+    c = n(963935),
     d = n(894858),
-    _ = n(942596),
-    m = n(362205),
-    g = n(71862);
+    h = n(942596),
+    g = n(362205),
+    f = n(71862);
 
-function b(e) {
+function m(e) {
     let {
         tag: t,
         onClick: n,
         active: a,
         node: i,
-        visibleContent: l,
-        panelKey: c,
-        listItemProps: u,
+        visibleContent: s,
+        panelKey: u,
+        listItemProps: c,
         children: d
     } = e, {
-        icon: m,
-        StronglyDiscouragedCustomComponent: b,
-        trailing: p,
-        useTitle: h,
-        variant: f = "default"
-    } = i, x = h?.(), y = function(e) {
+        icon: g,
+        StronglyDiscouragedCustomComponent: m,
+        trailing: y,
+        useTitle: p,
+        variant: v = "default"
+    } = i, x = p?.(), b = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return "text-feedback-critical"
         }
-    }(f), C = function(e) {
+    }(v), A = function(e) {
         switch (e) {
             case "default":
                 return "currentColor";
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(f);
+    }(v);
     return (0, r.jsxs)(t, {
-        "data-settings-sidebar-item": c,
-        className: g.DB,
+        "data-settings-sidebar-item": u,
+        className: f.DB,
         children: [(0, r.jsxs)(o.DUT, {
-            ...u,
-            className: s()(g.AS, {
-                [g.vu]: a,
-                [g.RD]: "destructive" === f
+            ...c,
+            className: l()(f.AS, {
+                [f.vu]: a,
+                [f.RD]: "destructive" === v
             }),
             onClick: n,
-            children: [null != b ? (0, r.jsx)(b, {}) : (0, r.jsxs)("div", {
-                className: g.Ly,
-                children: [(0, r.jsx)(m, {
-                    color: C,
+            children: [null != m ? (0, r.jsx)(m, {}) : (0, r.jsxs)("div", {
+                className: f.Ly,
+                children: [(0, r.jsx)(g, {
+                    color: A,
                     size: "refresh_sm",
-                    className: g.Kk
+                    className: f.Kk
                 }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
-                    color: y,
+                    color: b,
                     children: x
                 })]
-            }), null != p && (0, r.jsx)("div", {
-                className: g.Ly,
-                children: (0, r.jsx)(_.Z, {
-                    trailing: p,
-                    visibleContent: l,
+            }), null != y && (0, r.jsx)("div", {
+                className: f.Ly,
+                children: (0, r.jsx)(h.Z, {
+                    trailing: y,
+                    visibleContent: s,
                     isSelected: a
                 })
             })]
@@ -80,50 +80,50 @@ function b(e) {
     })
 }
 
-function p(e) {
+function y(e) {
     let {
         node: t,
         visibleContent: n,
         hoisted: i = !1
-    } = e, s = a.useMemo(() => t.layout[0], [t]), o = d.A.useField("currentPanelKey"), {
-        accessibleDirectory: _
-    } = (0, c._)(), g = a.useMemo(() => {
+    } = e, l = a.useMemo(() => t.layout[0], [t]), o = d.A.useField("currentPanelKey"), {
+        accessibleDirectory: h
+    } = (0, u._)(), f = a.useMemo(() => {
         if (null == o) return !1;
-        let e = _.entry(o);
+        let e = h.entry(o);
         return e?.parentSidebarItemKey === t.key
-    }, [o, t.key, _]), p = a.useMemo(() => {
-        if (null == s || !(0, u.Iu)(s.layout)) return null;
-        let e = s.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
+    }, [o, t.key, h]), y = a.useMemo(() => {
+        if (null == l || !(0, c.Iu)(l.layout)) return null;
+        let e = l.layout.filter(e => null != e.useTitle || null != e.useSubnavLabel);
         return e.length > 1 ? e : null
-    }, [s]), h = null != s ? () => {
-        let e = o === s.key && null != p ? p[0].key : s.key;
+    }, [l]), p = null != l ? () => {
+        let e = o === l.key && null != y ? y[0].key : l.key;
         d.A.setState({
             requestedTargetKey: e,
             disableSidebarScrollAnimate: !1,
             showNavigationMobile: !1
         })
-    } : t.onClick, f = a.useMemo(() => g && null != p ? (0, r.jsx)(m.A, {
-        categories: p
-    }) : null, [g, p]), x = i ? "li" : "div";
-    return i ? (0, r.jsx)(b, {
+    } : t.onClick, v = a.useMemo(() => f && null != y ? (0, r.jsx)(g.A, {
+        categories: y
+    }) : null, [f, y]), x = i ? "li" : "div";
+    return i ? (0, r.jsx)(m, {
         tag: x,
-        panelKey: s?.key,
-        onClick: h,
-        active: g,
+        panelKey: l?.key,
+        onClick: p,
+        active: f,
         node: t,
         visibleContent: n,
-        children: f
-    }) : (0, r.jsx)(l.tG, {
+        children: v
+    }) : (0, r.jsx)(s.tG, {
         id: t.key,
-        children: e => (0, r.jsx)(b, {
+        children: e => (0, r.jsx)(m, {
             tag: x,
-            panelKey: s?.key,
-            onClick: h,
-            active: g,
+            panelKey: l?.key,
+            onClick: p,
+            active: f,
             node: t,
             visibleContent: n,
             listItemProps: e,
-            children: f
+            children: v
         })
     })
 }

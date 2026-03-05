@@ -2,43 +2,43 @@
 a.d(t, {
     A: () => b
 });
-var n = a(64700),
-    r = a(311907),
-    i = a(205693),
-    _ = a(451988),
-    o = a(430452),
-    c = a(383501),
+var r = a(64700),
+    n = a(311907),
+    _ = a(205693),
+    o = a(451988),
+    i = a(430452),
+    s = a(383501),
     l = a(485296),
-    s = a(927813),
-    d = a(340913),
-    u = a(731854);
-let p = 3 * s.A.Millis.SECOND,
-    g = +s.A.Millis.DAY;
+    u = a(927813),
+    c = a(340913),
+    d = a(731854);
+let p = 3 * u.A.Millis.SECOND,
+    f = +u.A.Millis.DAY;
 
 function b() {
     let {
         showPTTSpeakingIndicator: e
-    } = d.A.useConfig({
+    } = c.A.useConfig({
         location: "useSpeakingWhilePTT"
-    }), [t, a] = n.useState(!1), s = (0, r.bG)([o.Ay], () => o.Ay.getMode() === u.TB.PUSH_TO_TALK), b = (0, r.bG)([c.A], () => c.A.getRTCConnectionId()), m = (0, r.bG)([o.Ay], () => {
-        let e = o.Ay.getModeOptions().updatedAt;
-        return null != e && Date.now() - e < g
-    }), f = n.useRef(new _.Ep);
-    return n.useEffect(() => {
+    }), [t, a] = r.useState(!1), u = (0, n.bG)([i.Ay], () => i.Ay.getMode() === d.TB.PUSH_TO_TALK), b = (0, n.bG)([s.A], () => s.A.getRTCConnectionId()), g = (0, n.bG)([i.Ay], () => {
+        let e = i.Ay.getModeOptions().updatedAt;
+        return null != e && Date.now() - e < f
+    }), A = r.useRef(new o.Ep);
+    return r.useEffect(() => {
         a(!1)
-    }, [b]), n.useEffect(() => {
+    }, [b]), r.useEffect(() => {
         let t = 0,
-            n = f.current;
+            r = A.current;
 
-        function r(e, r) {
-            let i = (r & u.ME.VOICE) === u.ME.VOICE,
-                _ = l.A.isCurrentUserPTTActive();
-            i && !_ ? ++t >= 6 && (a(!0), n.start(p, () => {
+        function n(e, n) {
+            let _ = (n & d.ME.VOICE) === d.ME.VOICE,
+                o = l.A.isCurrentUserPTTActive();
+            _ && !o ? ++t >= 6 && (a(!0), r.start(p, () => {
                 a(!1)
             })) : t = 0
         }
-        return m && e && s && null != b && o.Ay.getMediaEngine().on(i.bg.VoiceActivity, r), () => {
-            o.Ay.getMediaEngine().removeListener(i.bg.VoiceActivity, r), n.stop()
+        return g && e && u && null != b && i.Ay.getMediaEngine().on(_.bg.VoiceActivity, n), () => {
+            i.Ay.getMediaEngine().removeListener(_.bg.VoiceActivity, n), r.stop()
         }
-    }, [e, s, m, b]), t
+    }, [e, u, g, b]), t
 }

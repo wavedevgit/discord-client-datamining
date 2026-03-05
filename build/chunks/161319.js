@@ -2,44 +2,44 @@
 n.d(t, {
     PR: () => P,
     Recurring3PModal: () => D,
-    uE: () => M
+    uE: () => G
 }), n(321073);
 var i = n(627968),
     s = n(64700),
-    a = n(158954),
-    l = n(311907),
+    l = n(158954),
+    a = n(311907),
     r = n(397927),
     o = n(544028),
-    c = n(287809),
-    d = n(954571),
+    d = n(287809),
+    c = n(954571),
     u = n(975571),
     _ = n(927578),
-    m = n(728458),
-    A = n(792656),
-    g = n(264779),
+    g = n(728458),
+    m = n(792656),
+    A = n(264779),
     h = n(597758),
-    x = n(35587),
-    p = n(412260),
+    p = n(35587),
+    x = n(412260),
     E = n(852218),
-    C = n(699443),
-    T = n(934204),
-    S = n(788868),
+    T = n(699443),
+    S = n(934204),
+    C = n(788868),
     I = n(652215),
     f = n(985018),
-    N = n(342087),
-    b = n(870378),
-    j = n(8496);
-let v = {
+    b = n(342087),
+    N = n(870378),
+    v = n(8496);
+let j = {
         [E.KS]: {
             title: f.t.sfGgOG,
             body: f.t.igiSKe,
             bodyWithExpiration: f.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
-                dark: (0, i.jsx)(C.a1, {}),
-                light: (0, i.jsx)(C.Gn, {})
+                dark: (0, i.jsx)(T.a1, {}),
+                light: (0, i.jsx)(T.Gn, {})
             },
-            asset: j.A
+            asset: v.A
         },
         [E.Cs]: {
             title: f.t["9N8obd"],
@@ -47,81 +47,81 @@ let v = {
             bodyWithExpiration: f.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
-                dark: (0, i.jsx)(C.WF, {}),
-                light: (0, i.jsx)(C.s, {})
+                dark: (0, i.jsx)(T.WF, {}),
+                light: (0, i.jsx)(T.s, {})
             },
-            asset: b.A
+            asset: N.A
         }
     },
     O = e => {
         let {
             recurrence: t
-        } = e, n = (0, i.jsx)(a.rOg, {
+        } = e, n = (0, i.jsx)(l.rOg, {
             color: r.LU0.colors.CONTROL_CONNECTED_BACKGROUND_DEFAULT
-        }), l = (0, i.jsx)(a.K0, {
-            icon: a.TdU,
+        }), a = (0, i.jsx)(l.K0, {
+            icon: l.TdU,
             size: "sm",
             variant: "secondary",
             "aria-label": "",
             color: "icon-feedback-positive",
             onClick: () => {
-                navigator.clipboard.writeText(t.code), c(n)
+                navigator.clipboard.writeText(t.code), d(n)
             }
-        }), [o, c] = s.useState(() => l);
+        }), [o, d] = s.useState(() => a);
         if (null != t.code) return (0, i.jsx)("div", {
-            className: N.oP,
+            className: b.oP,
             children: (0, i.jsxs)("div", {
-                className: N.t0,
+                className: b.t0,
                 children: [(0, i.jsx)("div", {
-                    className: N.cD,
-                    children: (0, i.jsx)(a.EYj, {
+                    className: b.cD,
+                    children: (0, i.jsx)(l.EYj, {
                         variant: "text-md/medium",
                         color: "text-strong",
                         children: t.code
                     })
-                }), o, (0, i.jsx)(a.$nd, {
+                }), o, (0, i.jsx)(l.$nd, {
                     variant: "overlay-primary",
                     size: "sm",
                     text: f.intl.formatToPlainString(f.t.DF68t7, {
                         redemptionURL: t.redemptionURL
                     }),
                     onClick: () => {
-                        window.open(t.redemptionURL, "_blank"), d.default.track(I.HAw.RECURRING_PROMOTION_CLAIMED)
+                        window.open(t.redemptionURL, "_blank"), c.default.track(I.HAw.RECURRING_PROMOTION_CLAIMED)
                     }
                 })]
             })
         })
     },
-    R = () => Object.entries(v).map(e => {
+    R = () => Object.entries(j).map(e => {
         let [t, n] = e;
         return (0, i.jsx)("div", {
-            className: N.lA,
+            className: b.lA,
             children: (0, i.jsxs)("div", {
-                className: N.LV,
+                className: b.LV,
                 children: [(0, i.jsxs)("div", {
-                    className: N.JN,
+                    className: b.JN,
                     children: [(0, i.jsx)("div", {
-                        className: N.MC,
-                        children: (0, i.jsx)(a.XAi, {
+                        className: b.MC,
+                        children: (0, i.jsx)(l.XAi, {
                             size: "refresh_sm"
                         })
                     }), (0, i.jsxs)("div", {
-                        className: N.yO,
-                        children: [(0, i.jsx)(a.DZT, {
+                        className: b.yO,
+                        children: [(0, i.jsx)(l.DZT, {
                             variant: "heading-lg/semibold",
                             color: "text-strong",
                             children: f.intl.string(n.title)
-                        }), (0, i.jsx)(a.DZT, {
+                        }), (0, i.jsx)(l.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
                             children: f.intl.string(n.body)
                         })]
                     })]
                 }), (0, i.jsx)("div", {
-                    className: N.R4,
+                    className: b.R4,
                     children: (0, i.jsx)(r._V3, {
                         src: n.asset,
-                        className: N.Ys,
+                        className: b.Ys,
                         width: 100,
                         height: 100,
                         zoomable: !1
@@ -132,40 +132,40 @@ let v = {
     }),
     y = e => {
         var t;
-        let n, c, {
-                promotionRecurrences: d
+        let n, d, {
+                promotionRecurrences: c
             } = e,
-            [_, A] = s.useState(d.length > 1),
-            [h, x] = s.useState([]),
-            [p, E] = s.useState(new Set);
+            [_, m] = s.useState(c.length > 1),
+            [h, p] = s.useState([]),
+            [x, E] = s.useState(new Set);
         s.useEffect(() => {
-            x([d.sort((e, t) => t.startDate > e.startDate ? 1 : -1)[0]])
-        }, [d]);
-        let C = (t = d[0].partnerId, n = (0, l.bG)([o.A], () => (0, a.Mwr)(o.A.theme)), null == (c = v[t]) ? null : n ? c.logos.dark : c.logos.light),
-            T = (0, i.jsx)(r._V3, {
-                src: d[0].asset,
-                className: N.Ys,
+            p([c.sort((e, t) => t.startDate > e.startDate ? 1 : -1)[0]])
+        }, [c]);
+        let T = (t = c[0].partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = j[t]) ? null : n ? d.logos.dark : d.logos.light),
+            S = (0, i.jsx)(r._V3, {
+                src: c[0].asset,
+                className: b.Ys,
                 width: 100,
                 height: 100,
                 zoomable: !1
             });
         return (0, i.jsxs)("div", {
             children: [h.map((e, t) => {
-                let n = p.has(e.id),
+                let n = x.has(e.id),
                     s = null == e.code;
                 return (0, i.jsxs)("div", {
-                    className: N.lA,
+                    className: b.lA,
                     children: [(0, i.jsxs)("div", {
-                        className: N.LV,
+                        className: b.LV,
                         children: [(0, i.jsxs)("div", {
-                            className: N.JN,
-                            children: [C, (0, i.jsxs)("div", {
-                                className: N.yO,
-                                children: [(0, i.jsx)(a.DZT, {
+                            className: b.JN,
+                            children: [T, (0, i.jsxs)("div", {
+                                className: b.yO,
+                                children: [(0, i.jsx)(l.DZT, {
                                     variant: "heading-lg/semibold",
                                     color: "text-strong",
                                     children: f.intl.string(e.title)
-                                }), (0, i.jsx)(a.DZT, {
+                                }), (0, i.jsx)(l.DZT, {
                                     variant: "heading-sm/medium",
                                     color: "text-subtle",
                                     children: n ? f.intl.format(f.t.i2EuFO, {
@@ -174,45 +174,45 @@ let v = {
                                         date: e.endDate
                                     })
                                 })]
-                            }), s && (n ? (0, i.jsx)(a.$nd, {
-                                icon: a.EpV,
+                            }), s && (n ? (0, i.jsx)(l.$nd, {
+                                icon: l.EpV,
                                 variant: "critical-secondary",
                                 size: "sm",
                                 disabled: !0,
                                 text: f.intl.string(f.t["8LKchl"])
-                            }) : (0, i.jsx)(a.$nd, {
-                                icon: a.XAi,
+                            }) : (0, i.jsx)(l.$nd, {
+                                icon: l.XAi,
                                 variant: "overlay-primary",
                                 size: "sm",
                                 text: f.intl.string(f.t.vwASIl),
                                 onClick: () => {
-                                    (0, g.kd)({
+                                    (0, A.kd)({
                                         promotionId: e.id,
                                         analyticsLocations: []
                                     }).then(n => {
-                                        x([...h.slice(0, t), {
+                                        p([...h.slice(0, t), {
                                             ...e,
                                             code: n.code
                                         }, ...h.slice(t + 1)])
                                     }).catch(t => {
-                                        E(t => new Set([...t, e.id])), m.A.captureException(t)
+                                        E(t => new Set([...t, e.id])), g.A.captureException(t)
                                     })
                                 }
                             }))]
                         }), (0, i.jsx)("div", {
-                            className: N.R4,
-                            children: T
+                            className: b.R4,
+                            children: S
                         })]
                     }), null != e.code && (0, i.jsx)(O, {
                         recurrence: e
                     })]
                 }, e.id)
-            }), _ && (0, i.jsx)(a.DUT, {
-                className: N.K8,
+            }), _ && (0, i.jsx)(l.DUT, {
+                className: b.K8,
                 onClick: () => {
-                    A(!1), x([...h, ...d.slice(1)])
+                    m(!1), p([...h, ...c.slice(1)])
                 },
-                children: (0, i.jsx)(a.EYj, {
+                children: (0, i.jsx)(l.EYj, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     children: f.intl.string(f.t.rjjZxV)
@@ -225,15 +225,15 @@ let v = {
             percentage: t
         } = e;
         return (0, i.jsxs)("div", {
-            className: N.hr,
+            className: b.hr,
             children: [t > 0 && t < 100 && (0, i.jsx)(() => (0, i.jsx)("div", {
-                className: N.ML,
+                className: b.ML,
                 style: {
                     left: `calc(${t}% - 5px)`
                 },
-                children: (0, i.jsx)(T.z, {})
+                children: (0, i.jsx)(S.z, {})
             }), {}), (0, i.jsx)("div", {
-                className: N.SX,
+                className: b.SX,
                 style: {
                     width: `${t}%`
                 }
@@ -247,21 +247,21 @@ let v = {
                 onClose: o
             } = e,
             {
-                promotionsLoaded: d,
-                claimedOutboundPromotionCodeMap: m
-            } = (0, x.y7)(),
-            E = (0, l.yK)([p.A], () => p.A.outboundRecurringPromotions),
-            C = (0, l.bG)([c.default], () => c.default.getCurrentUser()),
-            T = !1 === _.Ay.isPremiumExactly(C, S.PremiumTypes.TIER_2),
-            b = C?.isFractionalPremiumWithNoStandardSub(),
-            j = null == C || T || b;
-        if (!1 === d) return (0, i.jsx)(a.y$y, {});
+                promotionsLoaded: c,
+                claimedOutboundPromotionCodeMap: g
+            } = (0, p.y7)(),
+            E = (0, a.yK)([x.A], () => x.A.outboundRecurringPromotions),
+            T = (0, a.bG)([d.default], () => d.default.getCurrentUser()),
+            S = !1 === _.Ay.isPremiumExactly(T, C.PremiumTypes.TIER_2),
+            N = T?.isFractionalPremiumWithNoStandardSub(),
+            v = null == T || S || N;
+        if (!1 === c) return (0, i.jsx)(l.y$y, {});
         let O = (e => {
             let {
                 promotions: t,
                 codesByPromotion: n
             } = e, i = {};
-            return t.filter(e => !0 === (0, g.HB)({
+            return t.filter(e => !0 === (0, A.HB)({
                 promotionPartner: e.outboundTitle,
                 promotionType: e.promotionType
             })).forEach(e => {
@@ -270,13 +270,13 @@ let v = {
                         let {
                             promotion: t
                         } = e, n = L(t);
-                        return null == n ? null : v[n] ?? null
+                        return null == n ? null : j[n] ?? null
                     })({
                         promotion: e
                     });
                 if (null == t || null == s) return;
                 t in i || (i[t] = []);
-                let a = {
+                let l = {
                     id: e.id,
                     partnerId: t,
                     startDate: e.startDate,
@@ -284,21 +284,21 @@ let v = {
                     code: n[e.id] ?? null,
                     ...s
                 };
-                i[t].push(a)
+                i[t].push(l)
             }), i
         })({
             promotions: E,
-            codesByPromotion: m
+            codesByPromotion: g
         });
-        return (0, i.jsx)(a.Modal, {
+        return (0, i.jsx)(l.Modal, {
             title: f.intl.string(f.t["7ioAjs"]),
             subtitle: f.intl.format(f.t.LOYRxB, {
                 helpCenterLink: u.A.getArticleURL(I.MVz.RECURRING_PROMOTION)
             }),
             actions: [],
             preview: (() => {
-                if (!0 === j) return (0, i.jsx)(A.A, {
-                    subscriptionTier: S.pe.TIER_2,
+                if (!0 === v) return (0, i.jsx)(m.A, {
+                    subscriptionTier: C.pe.TIER_2,
                     fullWidth: !0,
                     onClick: () => {
                         o()
@@ -312,11 +312,11 @@ let v = {
             onClose: o,
             children: (n = new Date((t = new Date(new Date().toLocaleString("en-US", {
                 timeZone: "America/New_York"
-            }))).getFullYear(), t.getMonth() + 1, 0).getDate(), s = t.getDate() / n * 100, j ? (0, i.jsx)(R, {}) : (0, i.jsxs)("div", {
-                className: N.kL,
+            }))).getFullYear(), t.getMonth() + 1, 0).getDate(), s = t.getDate() / n * 100, v ? (0, i.jsx)(R, {}) : (0, i.jsxs)("div", {
+                className: b.kL,
                 children: [(0, i.jsx)("div", {
-                    className: N.Ps,
-                    children: (0, i.jsx)(a.EYj, {
+                    className: b.Ps,
+                    children: (0, i.jsx)(l.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: f.intl.format(f.t["43kZKL"], {
@@ -324,12 +324,12 @@ let v = {
                         })
                     })
                 }), (0, i.jsx)("div", {
-                    className: N.G9,
+                    className: b.G9,
                     children: (0, i.jsx)(P, {
                         percentage: s
                     })
                 }), (0, i.jsx)("div", {
-                    className: N.kR,
+                    className: b.kR,
                     children: Object.entries(O).sort((e, t) => {
                         let [n] = e, [i] = t;
                         return i.localeCompare(n)
@@ -343,11 +343,11 @@ let v = {
             }))
         })
     },
-    M = e => {
+    G = e => {
         let {
             analyticsLocations: t
         } = e;
-        d.default.track(I.HAw.RECURRING_PROMOTION_MODAL_OPENED, {
+        c.default.track(I.HAw.RECURRING_PROMOTION_MODAL_OPENED, {
             location_stack: t
         }), h.Ay.fetchActivePromotions(), (0, r.mMO)(async () => {
             let {

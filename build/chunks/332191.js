@@ -1,47 +1,47 @@
 /** chunk id: 332191, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    J: () => A
+    J: () => m
 });
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     r = n(15285),
     o = n(942405),
-    c = n(403362),
-    d = n(975571),
+    d = n(403362),
+    c = n(975571),
     u = n(652215),
     _ = n(985018),
-    m = n(476555);
+    g = n(476555);
 
-function A() {
+function m() {
     let e = (0, o.XQ)(),
         [t, n] = s.useState(!1),
-        [A, g] = s.useState(() => (0, o.TC)()),
-        h = (0, a.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
-        x = s.useCallback(async () => {
-            n(!0), A ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), g((0, o.TC)())
-        }, [A]);
+        [m, A] = s.useState(() => (0, o.TC)()),
+        h = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
+        p = s.useCallback(async () => {
+            n(!0), m ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), A((0, o.TC)())
+        }, [m]);
     if (!e) return null;
-    let p = "running" === h.state;
+    let x = "running" === h.state;
     return (0, i.jsxs)("div", {
-        className: m.q,
+        className: g.q,
         children: [(0, i.jsxs)("div", {
-            className: m.L,
-            children: [(0, i.jsx)(l.Text, {
+            className: g.L,
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 children: _.intl.string(_.t.roHq80)
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: _.intl.format(_.t["8CAL+D"], {
-                    helpCenterLink: d.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
+                    helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), A ? (0, i.jsx)(l.Text, {
+            }), m ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                color: p ? "text-feedback-positive" : "text-feedback-warning",
-                children: p ? _.intl.string(_.t.KHVMkW) : _.intl.format(_.t["5Rlr0b"], {
+                color: x ? "text-feedback-positive" : "text-feedback-warning",
+                children: x ? _.intl.string(_.t.KHVMkW) : _.intl.format(_.t["5Rlr0b"], {
                     status: function(e) {
                         switch (e.state) {
                             case "unknown":
@@ -63,16 +63,16 @@ function A() {
                             case "failure":
                                 return _.intl.string(_.t.Ic0nkd);
                             default:
-                                (0, c.xb)(e.state)
+                                (0, d.xb)(e.state)
                         }
                     }(h)
                 })
             }) : null]
-        }), (0, i.jsx)(l.Button, {
-            variant: A ? "critical-secondary" : "primary",
+        }), (0, i.jsx)(a.Button, {
+            variant: m ? "critical-secondary" : "primary",
             loading: t,
-            onClick: x,
-            text: A ? _.intl.string(_.t.pAwbdL) : _.intl.string(_.t["1iI46O"])
+            onClick: p,
+            text: m ? _.intl.string(_.t.pAwbdL) : _.intl.string(_.t["1iI46O"])
         })]
     })
 }

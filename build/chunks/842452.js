@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(131346),
+    a = n.n(l),
+    r = n(131346),
     o = n(380278),
     c = n(837381),
     d = n(317097),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(107385),
     I = n(900848),
     N = n(550591),
-    S = n(114329),
-    b = n(985018),
+    b = n(114329),
+    S = n(985018),
     T = n(211170),
     v = n(837021);
 let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
@@ -68,7 +68,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         }, [w]);
         let [{
             dragging: ei
-        }, es] = (0, a.i)({
+        }, es] = (0, r.i)({
             type: _.PJ.FOLDER,
             item: () => (k?.(), {
                 type: _.PJ.FOLDER,
@@ -82,9 +82,9 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             })
         }), el = s.useCallback(e => {
             ee(e)
-        }, []), er = s.useCallback(e => {
+        }, []), ea = s.useCallback(e => {
             ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && B()
-        }, [B, O]), ea = null != X && "" !== X ? X : null != U && "" !== U ? U : b.intl.string(b.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+        }, [B, O]), er = null != X && "" !== X ? X : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -105,7 +105,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 unread: G,
                 className: v.Io
             }), (0, i.jsx)(N.A, {
-                text: ea,
+                text: er,
                 disabled: w,
                 selected: R,
                 disableWrapper: !0,
@@ -113,11 +113,11 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     ref: P ? e => {
                         es(e)
                     } : void 0,
-                    className: r()(T.MJ, {
+                    className: a()(T.MJ, {
                         [T.L0]: "icon" === K || en,
                         [v.oR]: !ei && Z && !O
                     }),
-                    "data-dnd-name": ea,
+                    "data-dnd-name": er,
                     children: ei ? (0, i.jsx)(E.A, {
                         isFolder: !0
                     }) : (0, i.jsx)(x.A, {
@@ -127,12 +127,12 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         mediaState: L,
                         mentionCount: M,
                         isMentionLowImportance: D,
-                        tooltipName: ea,
+                        tooltipName: er,
                         folderGroupId: ec,
                         onClick: B,
                         onContextMenu: H,
                         onHoverChange: $,
-                        onKeyDown: er,
+                        onKeyDown: ea,
                         treeItemProps: eo,
                         folderButtonContent: W,
                         "aria-setsize": Y,
@@ -140,14 +140,14 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     })
                 })
             }), P ? (0, i.jsx)(C.Ay, {
-                name: ea,
+                name: er,
                 targetNode: u,
                 onDragOverChanged: el
             }) : null]
-        }), em = null != u.color ? u.color : S.DO, ep = em === S.DO ? void 0 : (0, d.Hl)(em);
+        }), em = null != u.color ? u.color : b.DO, ep = em === b.DO ? void 0 : (0, d.Hl)(em);
         return (0, i.jsxs)("div", {
             ref: eh,
-            className: r()(T.qc, {
+            className: a()(T.qc, {
                 [T.Av]: O,
                 [T.Lg]: et
             }),
@@ -174,7 +174,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                     children: J.map((t, n) => F(t, n, J.length, e.height))
                 }, s)
             }), P && O ? (0, i.jsx)(C.qv, {
-                name: ea,
+                name: er,
                 targetNode: u
             }) : null]
         })

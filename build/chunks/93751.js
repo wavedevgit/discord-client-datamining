@@ -13,7 +13,7 @@ function l(e) {
     (0, r.mMO)(async () => {
         let {
             default: e
-        } = await n.e("78723").then(n.bind(n, 199630));
+        } = await n.e("1104").then(n.bind(n, 199630));
         return n => (0, i.jsx)(e, {
             ...n,
             upsellType: t,

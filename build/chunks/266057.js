@@ -1,32 +1,32 @@
-/** chunk id: 266057, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    S: () => d
+/** chunk id: 266057, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    S: () => c
 });
-var n = i(652961),
-    l = i(419954),
-    s = i(253932),
-    a = i(780964),
-    r = i(358776),
-    u = i(823894),
-    o = i(985018);
-let d = (0, l.Qx)(a.X.ANIMATE_STICKERS, {
-    useTitle: () => (0, r.bp)("AnimateStickers") ? o.intl.string(o.t.sBHIh0) : o.intl.string(o.t["6NtAuJ"]),
+var i = n(652961),
+    s = n(419954),
+    l = n(253932),
+    a = n(780964),
+    r = n(358776),
+    o = n(823894),
+    d = n(985018);
+let c = (0, s.Qx)(a.X.ANIMATE_STICKERS, {
+    useTitle: () => (0, r.bp)("AnimateStickers") ? d.intl.string(d.t.sBHIh0) : d.intl.string(d.t["6NtAuJ"]),
     useSubtitle: () => {
-        let t = (0, n.F)("animateStickers"),
-            e = (0, r.bp)("AnimateStickers");
-        return t ?? (e ? void 0 : o.intl.string(o.t.GRa6U7))
+        let e = (0, i.F)("animateStickers"),
+            t = (0, r.bp)("AnimateStickers");
+        return e ?? (t ? void 0 : d.intl.string(d.t.GRa6U7))
     },
     useOptions: () => [{
-        name: o.intl.string(o.t["Xp+X2U"]),
-        value: u.BJ.ALWAYS_ANIMATE
+        name: d.intl.string(d.t["Xp+X2U"]),
+        value: o.BJ.ALWAYS_ANIMATE
     }, {
-        name: o.intl.string(o.t.IlLT7e),
-        desc: o.intl.string(o.t.bIW9Tl),
-        value: u.BJ.ANIMATE_ON_INTERACTION
+        name: d.intl.string(d.t.IlLT7e),
+        desc: d.intl.string(d.t.bIW9Tl),
+        value: o.BJ.ANIMATE_ON_INTERACTION
     }, {
-        name: o.intl.string(o.t.IGu8x3),
-        value: u.BJ.NEVER_ANIMATE
+        name: d.intl.string(d.t.IGu8x3),
+        value: o.BJ.NEVER_ANIMATE
     }],
-    useValue: () => s.S0.useSetting(),
-    setValue: t => s.S0.updateSetting(t)
+    useValue: () => l.S0.useSetting(),
+    setValue: e => l.S0.updateSetting(e)
 })

@@ -1,18 +1,18 @@
-/** chunk id: 268272, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    w: () => o
+/** chunk id: 268272, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    w: () => d
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(780964),
-    a = i(23901),
-    r = i(985018);
-let u = (0, l.t_)(s.X.LANGUAGE_AND_TIME_PANEL, {
+var i = n(934551),
+    s = n(419954),
+    l = n(780964),
+    a = n(23901),
+    r = n(985018);
+let o = (0, s.t_)(l.X.LANGUAGE_AND_TIME_PANEL, {
         useTitle: () => r.intl.string(r.t.KyFVyi),
         buildLayout: () => [a.F]
     }),
-    o = (0, l.i4)(s.X.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
-        icon: n.LanguageIcon,
+    d = (0, s.i4)(l.X.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
+        icon: i.LanguageIcon,
         useTitle: () => r.intl.string(r.t.KyFVyi),
-        buildLayout: () => [u]
+        buildLayout: () => [o]
     })

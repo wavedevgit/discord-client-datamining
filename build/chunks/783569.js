@@ -34,9 +34,9 @@ function h(e) {
         springConfig: n,
         isExpanded: m
     } = i.useContext(u), h = (0, l.bG)([c.A], () => c.A.useReducedMotion), {
-        ref: p,
-        height: x = null
-    } = (0, o.Ay)(), g = (0, d.A)(x) ?? null, [{
+        ref: x,
+        height: p = null
+    } = (0, o.Ay)(), g = (0, d.A)(p) ?? null, [{
         height: _
     }, f] = (0, r.zhh)(() => ({
         from: {
@@ -45,11 +45,11 @@ function h(e) {
         config: n
     }));
     return i.useLayoutEffect(() => {
-        null !== x && f({
-            height: x,
+        null !== p && f({
+            height: p,
             immediate: !m || h || null === g
         })
-    }, [x, f, m, h, g]), (0, a.jsx)(s.animated.div, {
+    }, [p, f, m, h, g]), (0, a.jsx)(s.animated.div, {
         style: {
             height: null === g ? "auto" : _,
             overflow: "hidden"
@@ -58,7 +58,7 @@ function h(e) {
             style: {
                 overflow: "hidden"
             },
-            ref: p,
+            ref: x,
             children: t
         })
     })

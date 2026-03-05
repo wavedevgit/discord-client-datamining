@@ -4,82 +4,82 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(380278),
     o = n(397927),
-    c = n(180022),
-    d = n(915693);
+    d = n(180022),
+    c = n(915693);
 let u = e => {
     let {
         cards: t,
         className: n,
-        cardType: a
-    } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [_, m] = s.useState(0), [A, g] = s.useState(u()), h = t.length;
+        cardType: l
+    } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [_, g] = s.useState(0), [m, A] = s.useState(u()), h = t.length;
     s.useEffect(() => {
         let e = () => {
-            g(u())
+            A(u())
         };
         return window.addEventListener("resize", e), () => {
             window.removeEventListener("resize", e)
         }
     }, []), s.useEffect(() => {
-        m(e => h > A && e > h - A ? h - A : h <= A ? 0 : e)
-    }, [h, A]);
-    let x = _ > 0,
-        p = s.useCallback(e => ({
+        g(e => h > m && e > h - m ? h - m : h <= m ? 0 : e)
+    }, [h, m]);
+    let p = _ > 0,
+        x = s.useCallback(e => ({
             x: (e - _) * 100
         }), [_]),
-        [E, C] = (0, o.mX6)(t.length, p);
+        [E, T] = (0, o.mX6)(t.length, x);
     return s.useEffect(() => {
-        C(p)
-    }, [C, p]), (0, i.jsx)("div", {
+        T(x)
+    }, [T, x]), (0, i.jsx)("div", {
         className: n,
         children: (0, i.jsxs)("div", {
-            className: d.Ui,
-            children: [h > A && (0, i.jsx)(o.DUT, {
-                onClick: x ? () => {
-                    m(e => 0 === e ? h - A : e - 1)
+            className: c.Ui,
+            children: [h > m && (0, i.jsx)(o.DUT, {
+                onClick: p ? () => {
+                    g(e => 0 === e ? h - m : e - 1)
                 } : void 0,
-                className: l()({
-                    [d.v5]: x,
-                    [d.$T]: !x
+                className: a()({
+                    [c.v5]: p,
+                    [c.$T]: !p
                 }),
                 children: (0, i.jsx)(o.rJJ, {
-                    className: d.D6,
-                    colorClass: d.D6
+                    className: c.D6,
+                    colorClass: c.D6
                 })
             }), (0, i.jsx)("div", {
-                className: d.C8,
+                className: c.C8,
                 children: E.map((e, n) => {
                     let {
                         x: s
                     } = e;
                     return (0, i.jsx)(r.animated.div, {
-                        className: d.Nr,
+                        className: c.Nr,
                         style: {
                             transform: s?.to(e => `translate3d(${e}%,0,0)`)
                         },
-                        children: (0, i.jsx)(c.A, {
+                        children: (0, i.jsx)(d.A, {
                             ...t[n],
-                            cardType: a
+                            cardType: l
                         }, `${t[n].name}_${n}_perks_card`)
                     }, `${t[n].name}_${n}_animated_div`)
                 })
-            }), h > A && (0, i.jsx)(o.DUT, {
+            }), h > m && (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    m(e => e >= h - A ? 0 : e + 1)
+                    g(e => e >= h - m ? 0 : e + 1)
                 },
-                className: d.Ox,
+                className: c.Ox,
                 children: (0, i.jsx)(o.EdP, {
-                    className: d.D6,
-                    colorClass: d.D6
+                    className: c.D6,
+                    colorClass: c.D6
                 })
-            }), h > A && (0, i.jsx)("div", {
-                className: d.$$,
+            }), h > m && (0, i.jsx)("div", {
+                className: c.$$,
                 children: t.map((e, t) => {
-                    if (!(t > h - A)) return (0, i.jsx)("div", {
-                        className: t === _ ? d.fc : d.Om
+                    if (!(t > h - m)) return (0, i.jsx)("div", {
+                        className: t === _ ? c.fc : c.Om
                     }, `progress_bar_dot_${t}`)
                 })
             })]

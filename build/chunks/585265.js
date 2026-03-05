@@ -1,64 +1,64 @@
-/** chunk id: 585265, original params: i,t,s (module,exports,require) **/
-s.d(t, {
-    default: () => x
+/** chunk id: 585265, original params: t,i,s (module,exports,require) **/
+s.d(i, {
+    default: () => p
 });
 var e = s(627968);
 s(64700);
-var n = s(158954),
-    r = s(397927),
-    l = s(744479),
-    d = s(772538),
-    a = s(61610),
-    o = s(751461),
-    c = s(638324),
-    u = s(355097),
-    A = s(985018);
+var r = s(158954),
+    n = s(397927),
+    d = s(744479),
+    l = s(772538),
+    o = s(61610),
+    a = s(751461),
+    _ = s(638324),
+    c = s(355097),
+    u = s(985018);
 
-function R(i) {
+function g(t) {
     let {
-        guildId: t
-    } = i;
-    return (0, e.jsxs)(l.A, {
-        children: [(0, e.jsx)(o.A, {
-            ingress: u.bf.SERVER_PRIVACY_MODAL,
-            guildId: t
-        }), (0, e.jsx)(c.A, {
-            ingress: u.bf.SERVER_PRIVACY_MODAL,
-            guildId: t
-        }), (0, e.jsx)(a.A, {
-            ingress: u.bf.SERVER_PRIVACY_MODAL,
-            guildId: t
-        }), (0, e.jsx)(d.A, {
-            ingress: u.bf.SERVER_PRIVACY_MODAL,
-            guildId: t
-        }), (0, e.jsx)(r.Text, {
+        guildId: i
+    } = t;
+    return (0, e.jsxs)(d.A, {
+        children: [(0, e.jsx)(a.A, {
+            ingress: c.bf.SERVER_PRIVACY_MODAL,
+            guildId: i
+        }), (0, e.jsx)(_.A, {
+            ingress: c.bf.SERVER_PRIVACY_MODAL,
+            guildId: i
+        }), (0, e.jsx)(o.A, {
+            ingress: c.bf.SERVER_PRIVACY_MODAL,
+            guildId: i
+        }), (0, e.jsx)(l.A, {
+            ingress: c.bf.SERVER_PRIVACY_MODAL,
+            guildId: i
+        }), (0, e.jsx)(n.Text, {
             color: "text-default",
             variant: "text-sm/normal",
-            children: A.intl.format(A.t.LNsV04, {
+            children: u.intl.format(u.t.LNsV04, {
                 policyLink: "https://discord.com/safety/360043709612-our-policies"
             })
         })]
     })
 }
 
-function x(i) {
+function p(t) {
     let {
-        guild: t,
+        guild: i,
         transitionState: s,
-        onClose: r
-    } = i, l = `${A.intl.string(A.t.BayiAo)}—${null!=t?t.name:"??"}`;
-    return (0, e.jsx)(n.Modal, {
+        onClose: n
+    } = t, d = `${u.intl.string(u.t.BayiAo)}—${null!=i?i.name:"??"}`;
+    return (0, e.jsx)(r.Modal, {
         transitionState: s,
         size: "sm",
-        title: l,
+        title: d,
         actions: [{
-            onClick: () => r(),
+            onClick: () => n(),
             variant: "primary",
-            text: A.intl.string(A.t.i4jeWR)
+            text: u.intl.string(u.t.i4jeWR)
         }],
-        onClose: () => Promise.resolve(r()),
-        children: (0, e.jsx)(R, {
-            guildId: t.id
+        onClose: () => Promise.resolve(n()),
+        children: (0, e.jsx)(g, {
+            guildId: i.id
         })
     })
 }

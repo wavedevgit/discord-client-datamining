@@ -1,6 +1,6 @@
 /** chunk id: 971203, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(64700),
@@ -16,10 +16,10 @@ var i = n(627968),
     _ = n(652215),
     m = n(985018);
 
-function p(e) {
+function g(e) {
     let t = r.useContext(h.AnalyticsContext),
         n = e.voiceChannels[0],
-        p = (0, l.bG)([u.A], () => null != n && u.A.can(_.xBc.CONNECT, n.channel));
+        g = (0, l.bG)([u.A], () => null != n && u.A.can(_.xBc.CONNECT, n.channel));
     return null == n ? null : [(0, i.jsx)(a.Drp, {
         id: "join-voice",
         action: function() {
@@ -34,7 +34,7 @@ function p(e) {
             })
         },
         label: m.intl.string(m.t["8yOlh9"]),
-        disabled: !p
+        disabled: !g
     }, "join-voice"), (0, i.jsx)(a.Drp, {
         id: "goto-server",
         action: function() {

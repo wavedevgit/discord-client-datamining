@@ -14,15 +14,15 @@ var i = n(627968),
     u = n(951001),
     h = n(956793),
     p = n(47167),
-    f = n(235986),
-    A = n(42473),
-    _ = n(994314),
-    g = n(241847),
+    A = n(235986),
+    f = n(42473),
+    g = n(994314),
+    _ = n(241847),
     m = n(178442),
     E = n(71393),
     x = n(430452),
-    v = n(994500),
-    y = n(287809),
+    y = n(994500),
+    v = n(287809),
     S = n(977997),
     C = n(572487),
     I = n(855790),
@@ -57,7 +57,7 @@ class j extends s.PureComponent {
         let {
             lobbyId: t
         } = this.props;
-        return (0, i.jsx)(g.A, {
+        return (0, i.jsx)(_.A, {
             channelId: e,
             lobbyId: t,
             isOverlay: !0
@@ -66,13 +66,13 @@ class j extends s.PureComponent {
     renderChannelLink(e) {
         let {
             guild: t
-        } = this.props, n = (0, p.m1)(e, y.default, v.A), s = null != t ? `${n} / ${t.name}` : n, l = null != t ? t.id : N.ME;
+        } = this.props, n = (0, p.m1)(e, v.default, y.A), s = null != t ? `${n} / ${t.name}` : n, l = null != t ? t.id : N.ME;
         return (0, i.jsx)(r.N_, {
             to: N.BVt.CHANNEL(l),
             onClick: t => {
                 t.stopPropagation(), u.A.channelListScrollTo(l, e.id)
             },
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(g.A, {
                 className: b.Ix,
                 children: s
             })
@@ -118,19 +118,19 @@ class j extends s.PureComponent {
                             })
                         })
                     })
-                }), (0, i.jsxs)(f.A, {
+                }), (0, i.jsxs)(A.A, {
                     grow: 0,
-                    children: [(0, i.jsx)(A.A, {
+                    children: [(0, i.jsx)(f.A, {
                         tooltipText: p ? T.intl.string(T.t.YqAjXy) : T.intl.string(T.t.w4m945),
                         icon: p ? d.z0P : d.cNw,
                         iconForeground: p ? O.of : null,
                         onClick: this.handleToggleSelfMute
-                    }), (0, i.jsx)(A.A, {
+                    }), (0, i.jsx)(f.A, {
                         tooltipText: h ? T.intl.string(T.t["2US872"]) : T.intl.string(T.t.wjcRFX),
                         icon: h ? d.cQT : d.LoC,
                         onClick: this.handleToggleSelfDeaf,
                         iconForeground: h ? O.of : null
-                    }), null == s && (0, i.jsx)(A.A, {
+                    }), null == s && (0, i.jsx)(f.A, {
                         tooltipText: T.intl.string(T.t["6vrfgt"]),
                         onClick: this.handleDisconnect,
                         icon: d.zWQ

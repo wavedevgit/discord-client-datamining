@@ -1,32 +1,32 @@
-/** chunk id: 317014, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    t: () => S
+/** chunk id: 317014, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    t: () => g
 });
-var n = i(945276),
-    l = i(639555),
-    s = i(617641),
-    a = i(546140),
-    r = i(776038),
-    u = i(419954),
-    o = i(975571),
-    d = i(780964),
-    A = i(652215),
-    T = i(985018);
-let S = (0, u.zD)(d.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
-    useTitle: () => T.intl.string(T.t.qFsx5q),
-    useSubtitle: () => T.intl.format(T.t.lunaRv, {
-        learnMoreLink: o.A.getArticleURL(A.MVz.SAFETY_ALERTS)
+var i = n(945276),
+    s = n(639555),
+    l = n(617641),
+    a = n(546140),
+    r = n(776038),
+    o = n(419954),
+    d = n(975571),
+    c = n(780964),
+    u = n(652215),
+    _ = n(985018);
+let g = (0, o.zD)(c.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
+    useTitle: () => _.intl.string(_.t.qFsx5q),
+    useSubtitle: () => _.intl.format(_.t.lunaRv, {
+        learnMoreLink: d.A.getArticleURL(u.MVz.SAFETY_ALERTS)
     }),
     useValue: a.L,
     setValue: r.a,
     usePredicate: function() {
-        let t = (0, s.Lc)({
+        let e = (0, l.Lc)({
                 location: "DMSafetyAlertsSetting"
             }),
-            e = (0, l.Rv)({
+            t = (0, s.Rv)({
                 location: "DMSafetyAlertsSetting"
             }),
-            i = (0, n.A)() ?? !0;
-        return t && !i && !e
+            n = (0, i.A)() ?? !0;
+        return e && !n && !t
     }
 })

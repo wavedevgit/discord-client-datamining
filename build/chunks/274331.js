@@ -2,17 +2,17 @@
 "use strict";
 var a = r(359470),
     n = r(466208),
-    s = [].slice,
-    o = ["keyword", "gray", "hex"],
+    o = [].slice,
+    s = ["keyword", "gray", "hex"],
     i = {};
 Object.keys(n).forEach(function(e) {
-    i[s.call(n[e].labels).sort().join("")] = e
+    i[o.call(n[e].labels).sort().join("")] = e
 });
 var c = {};
 
 function l(e, t) {
     if (!(this instanceof l)) return new l(e, t);
-    if (t && t in o && (t = null), t && !(t in n)) throw Error("Unknown model: " + t);
+    if (t && t in s && (t = null), t && !(t in n)) throw Error("Unknown model: " + t);
     if (null == e) this.model = "rgb", this.color = [0, 0, 0], this.valpha = 1;
     else if (e instanceof l) this.model = e.model, this.color = e.color.slice(), this.valpha = e.valpha;
     else if ("string" == typeof e) {
@@ -21,7 +21,7 @@ function l(e, t) {
         this.model = b.model, u = n[this.model].channels, this.color = b.value.slice(0, u), this.valpha = "number" == typeof b.value[u] ? b.value[u] : 1
     } else if (e.length) {
         this.model = t || "rgb", u = n[this.model].channels;
-        var d = s.call(e, 0, u);
+        var d = o.call(e, 0, u);
         this.color = f(d, u), this.valpha = "number" == typeof e[u] ? e[u] : 1
     } else if ("number" == typeof e) e &= 0xffffff, this.model = "rgb", this.color = [e >> 16 & 255, e >> 8 & 255, 255 & e], this.valpha = 1;
     else {
@@ -32,14 +32,14 @@ function l(e, t) {
         if (!(p in i)) throw Error("Unable to parse color from object: " + JSON.stringify(e));
         this.model = i[p];
         var y = n[this.model].labels,
-            g = [];
-        for (r = 0; r < y.length; r++) g.push(e[y[r]]);
-        this.color = f(g)
+            v = [];
+        for (r = 0; r < y.length; r++) v.push(e[y[r]]);
+        this.color = f(v)
     }
     if (c[this.model])
         for (r = 0, u = n[this.model].channels; r < u; r++) {
-            var v = c[this.model][r];
-            v && (this.color[r] = v(this.color[r]))
+            var g = c[this.model][r];
+            g && (this.color[r] = g(this.color[r]))
         }
     this.valpha = Math.max(0, Math.min(1, this.valpha)), Object.freeze && Object.freeze(this)
 }
@@ -211,14 +211,14 @@ l.prototype = {
         var r = e.rgb(),
             a = this.rgb(),
             n = void 0 === t ? .5 : t,
-            s = 2 * n - 1,
-            o = r.alpha() - a.alpha(),
-            i = ((s * o == -1 ? s : (s + o) / (1 + s * o)) + 1) / 2,
+            o = 2 * n - 1,
+            s = r.alpha() - a.alpha(),
+            i = ((o * s == -1 ? o : (o + s) / (1 + o * s)) + 1) / 2,
             c = 1 - i;
         return l.rgb(i * r.red() + c * a.red(), i * r.green() + c * a.green(), i * r.blue() + c * a.blue(), r.alpha() * n + a.alpha() * (1 - n))
     }
 }, Object.keys(n).forEach(function(e) {
-    if (-1 === o.indexOf(e)) {
+    if (-1 === s.indexOf(e)) {
         var t = n[e].channels;
         l.prototype[e] = function() {
             if (this.model === e) return new l(this);
@@ -226,7 +226,7 @@ l.prototype = {
             var r, a = "number" == typeof arguments[t] ? t : this.valpha;
             return new l((Array.isArray(r = n[this.model][e].raw(this.color)) ? r : [r]).concat(a), e)
         }, l[e] = function(r) {
-            return "number" == typeof r && (r = f(s.call(arguments), t)), new l(r, e)
+            return "number" == typeof r && (r = f(o.call(arguments), t)), new l(r, e)
         }
     }
 }), e.exports = l

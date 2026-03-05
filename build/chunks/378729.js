@@ -1,10 +1,10 @@
-/** chunk id: 378729, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 378729, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     e8: () => a
 });
-var n = i(600975),
-    l = i(428835);
-let s = (0, n.C)({
+var i = n(600975),
+    s = n(428835);
+let l = (0, i.C)({
         id: "2025-11_game_update_notification",
         kind: "user",
         label: "Game Update Notification",
@@ -19,7 +19,7 @@ let s = (0, n.C)({
             }
         }]
     }),
-    a = t => (0, l.u5)(s, {
-        ...t,
+    a = e => (0, s.u5)(l, {
+        ...e,
         autoTrackExposure: !1
     })

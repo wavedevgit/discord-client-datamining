@@ -1,35 +1,35 @@
-/** chunk id: 424305, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    R: () => d
+/** chunk id: 424305, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    R: () => c
 });
-var n = i(311907),
-    l = i(274372),
-    s = i(399925),
-    a = i(419954),
-    r = i(780964),
-    u = i(696016),
-    o = i(985018);
-let d = (0, a.Hn)(r.X.CLIPS_LENGTH, {
-    useTitle: () => o.intl.string(o.t.OgfUio),
-    useSubtitle: () => o.intl.string(o.t.H7j4tY),
-    useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipsLength),
-    setValue: t => s.h$(t),
+var i = n(311907),
+    s = n(274372),
+    l = n(399925),
+    a = n(419954),
+    r = n(780964),
+    o = n(696016),
+    d = n(985018);
+let c = (0, a.Hn)(r.X.CLIPS_LENGTH, {
+    useTitle: () => d.intl.string(d.t.OgfUio),
+    useSubtitle: () => d.intl.string(d.t.H7j4tY),
+    useValue: () => (0, i.bG)([s.A], () => s.A.getSettings().clipsLength),
+    setValue: e => l.h$(e),
     useOptions: () => [{
         id: "30s",
-        value: u.LX.SECONDS_30,
-        label: o.intl.formatToPlainString(o.t["bTFv/3"], {
+        value: o.LX.SECONDS_30,
+        label: d.intl.formatToPlainString(d.t["bTFv/3"], {
             count: 30
         })
     }, {
         id: "1m",
-        value: u.LX.MINUTES_1,
-        label: o.intl.formatToPlainString(o.t.ICo9Nk, {
+        value: o.LX.MINUTES_1,
+        label: d.intl.formatToPlainString(d.t.ICo9Nk, {
             count: 1
         })
     }, {
         id: "2m",
-        value: u.LX.MINUTES_2,
-        label: o.intl.formatToPlainString(o.t.ICo9Nk, {
+        value: o.LX.MINUTES_2,
+        label: d.intl.formatToPlainString(d.t.ICo9Nk, {
             count: 2
         })
     }]

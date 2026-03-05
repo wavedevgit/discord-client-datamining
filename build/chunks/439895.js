@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(841702),
     m = n(751304),
     h = n(61750),
-    p = n(841015);
-let x = e => {
+    x = n(841015);
+let p = e => {
         let [t, n] = i.useState(0);
         return i.useLayoutEffect(() => {
             let e = c.A.getPurchase;
@@ -22,7 +22,7 @@ let x = e => {
                 c.A.getPurchase = e, c.A.emitChange()
             }
         }, []), (0, a.jsx)("div", {
-            className: p.Do,
+            className: x.Do,
             children: (0, a.jsx)(m.A, {
                 ...e
             }, t)
@@ -42,64 +42,64 @@ let x = e => {
                 stalePurchasesOK: !0,
                 noOp: g
             }),
-            b = g ? t : f,
-            v = g || !_ && b.size > 0,
+            v = g ? t : f,
+            b = g || !_ && v.size > 0,
             [j, A] = i.useState(""),
-            [C, T] = i.useState(null),
-            [y, S] = i.useState(null);
+            [C, y] = i.useState(null),
+            [T, S] = i.useState(null);
         return (i.useEffect(() => {
-            if ("" === j.trim() || !v) {
-                T(null), S(null);
+            if ("" === j.trim() || !b) {
+                y(null), S(null);
                 return
             }
             let e = d.A.getProduct(j),
                 t = d.A.getCategoryForProduct(j);
-            null != e && null != t ? (T(e), S(t)) : (T(null), S(null))
-        }, [j, v]), _) ? (0, a.jsx)(l.Text, {
+            null != e && null != t ? (y(e), S(t)) : (y(null), S(null))
+        }, [j, b]), _) ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "Loading categories and collectibles..."
         }) : null == e ? (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: "No user found"
         }) : (0, a.jsxs)("div", {
-            className: p.kL,
+            className: x.kL,
             children: [(0, a.jsxs)("div", {
-                className: p.uW,
+                className: x.uW,
                 children: [(0, a.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Product Configuration"
                 }), (0, a.jsxs)("div", {
-                    className: p.qp,
+                    className: x.qp,
                     children: [(0, a.jsx)(l.Text, {
                         variant: "text-md/semibold",
-                        className: p.NB,
+                        className: x.NB,
                         children: "Primary Product SKU ID"
                     }), (0, a.jsx)(l.ksK, {
                         value: j,
                         onChange: A,
                         placeholder: "Enter product SKU ID"
-                    }), !v && "" !== j.trim() && (0, a.jsx)(l.Text, {
+                    }), !b && "" !== j.trim() && (0, a.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        className: p.KQ,
+                        className: x.KQ,
                         children: "Loading products..."
-                    }), v && "" !== j.trim() && null == C && (0, a.jsx)(l.Text, {
+                    }), b && "" !== j.trim() && null == C && (0, a.jsx)(l.Text, {
                         variant: "text-sm/normal",
-                        className: p.kc,
+                        className: x.kc,
                         children: "Product not found"
                     }), null != C && (0, a.jsxs)(l.Text, {
                         variant: "text-sm/normal",
-                        className: p.xT,
+                        className: x.xT,
                         children: ["Found: ", C.name]
                     })]
                 })]
             }), (0, a.jsxs)("div", {
-                className: p.uW,
+                className: x.uW,
                 children: [(0, a.jsx)(l.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Product Preview"
-                }), null != C && null != y ? (0, a.jsxs)("div", {
-                    className: p.i1,
-                    children: [(0, a.jsx)(x, {
+                }), null != C && null != T ? (0, a.jsxs)("div", {
+                    className: x.i1,
+                    children: [(0, a.jsx)(p, {
                         skuId: C.skuId
                     }), (0, a.jsx)(l.Button, {
                         variant: "primary",
@@ -112,10 +112,10 @@ let x = e => {
                         text: "Show Collectibles Collected Modal"
                     })]
                 }) : (0, a.jsx)("div", {
-                    className: p.qf,
+                    className: x.qf,
                     children: (0, a.jsx)(l.Text, {
                         variant: "text-md/normal",
-                        className: p.X2,
+                        className: x.X2,
                         children: "Enter a valid product SKU ID to see the preview"
                     })
                 })]

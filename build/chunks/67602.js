@@ -1,6 +1,6 @@
 /** chunk id: 67602, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(311907),
@@ -16,15 +16,15 @@ var i = n(627968),
     _ = n(985018),
     m = n(318624);
 
-function p(e) {
+function g(e) {
     let {
         guild: t,
         markAsDismissed: n
-    } = e, p = ((0, r.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
-        coverImageUrl: g,
+    } = e, g = ((0, r.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
+        coverImageUrl: p,
         gameName: E
-    } = (0, o.A)(p, _.intl.string(_.t.VQq92a));
-    if (null == g) return null;
+    } = (0, o.A)(g, _.intl.string(_.t.VQq92a));
+    if (null == p) return null;
     let I = t.features.has(A.GuildFeatures.VERIFIED) ? _.intl.string(_.t.uUARXe) : _.intl.string(_.t["0Dx29f"]);
     return (0, i.jsx)(s.A, {
         guild: t,
@@ -42,7 +42,7 @@ function p(e) {
         }),
         type: A.n5X.GAME_CLAIM,
         image: (0, i.jsx)(u.A, {
-            imageSrc: g
+            imageSrc: p
         }),
         imageMarginX: 60,
         onClick: async () => {

@@ -5,43 +5,43 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(311907),
-    a = n(397927),
-    l = n(775602),
+    l = n(397927),
+    a = n(775602),
     r = n(235986),
     o = n(899343),
-    c = n(796012),
-    d = n(752472);
+    d = n(796012),
+    c = n(752472);
 
 function u(e) {
     let {
         purchaseState: t,
         currentStep: n,
         onClose: u
-    } = e, [_, m] = (0, o.f)({
+    } = e, [_, g] = (0, o.f)({
         purchaseState: t,
         currentStep: n,
-        initialScene: c.V1.Scenes.ENTRY,
-        purchaseScene: c.V1.Scenes.STARS,
-        errorScene: c.V1.Scenes.ERROR,
-        successScene: c.V1.Scenes.SUCCESS
-    }), A = (0, s.bG)([l.A], () => l.A.useReducedMotion);
-    return (0, i.jsxs)(a.rQ0, {
+        initialScene: d.V1.Scenes.ENTRY,
+        purchaseScene: d.V1.Scenes.STARS,
+        errorScene: d.V1.Scenes.ERROR,
+        successScene: d.V1.Scenes.SUCCESS
+    }), m = (0, s.bG)([a.A], () => a.A.useReducedMotion);
+    return (0, i.jsxs)(l.rQ0, {
         "data-migration-pending": !0,
         align: r.A.Align.START,
-        className: d.wx,
+        className: c.wx,
         separator: !1,
-        children: [(0, i.jsx)(c.V1, {
-            className: d.lY,
+        children: [(0, i.jsx)(d.V1, {
+            className: c.lY,
             nextScene: _,
-            onScenePlay: e => m(c.V1.getNextScene(e)),
+            onScenePlay: e => g(d.V1.getNextScene(e)),
             pauseWhileUnfocused: !1,
-            pause: A
+            pause: m
         }), (0, i.jsx)("div", {
-            className: d.qd
-        }), (0, i.jsx)(a.s_y, {
+            className: c.qd
+        }), (0, i.jsx)(l.s_y, {
             "data-migration-pending": !0,
             onClick: u,
-            className: d.b
+            className: c.b
         })]
     })
 }

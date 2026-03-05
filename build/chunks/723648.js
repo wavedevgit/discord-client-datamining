@@ -1,24 +1,24 @@
-/** chunk id: 723648, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    I: () => o
+/** chunk id: 723648, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    I: () => d
 });
-var n = i(934551),
-    l = i(314116),
-    s = i(830215),
-    a = i(419954),
-    r = i(780964),
-    u = i(985018);
-let o = (0, a.i4)(r.X.LOGOUT_SIDEBAR_ITEM, {
+var i = n(934551),
+    s = n(314116),
+    l = n(830215),
+    a = n(419954),
+    r = n(780964),
+    o = n(985018);
+let d = (0, a.i4)(r.X.LOGOUT_SIDEBAR_ITEM, {
     variant: "destructive",
-    useTitle: () => u.intl.string(u.t["2jxGer"]),
-    icon: n.DoorExitIcon,
+    useTitle: () => o.intl.string(o.t["2jxGer"]),
+    icon: i.DoorExitIcon,
     onClick: () => {
-        (0, l.A)({
-            title: u.intl.string(u.t["2jxGer"]),
-            subtitle: u.intl.string(u.t.SUnWBB),
-            confirmText: u.intl.string(u.t["2jxGer"]),
+        (0, s.A)({
+            title: o.intl.string(o.t["2jxGer"]),
+            subtitle: o.intl.string(o.t.SUnWBB),
+            confirmText: o.intl.string(o.t["2jxGer"]),
             onConfirm: () => {
-                s.A.logout("settings")
+                l.A.logout("settings")
             }
         })
     },

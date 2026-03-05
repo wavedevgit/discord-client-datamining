@@ -1,17 +1,17 @@
-/** chunk id: 8086, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 8086, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => r
 });
-var n = i(627968);
-i(64700);
-var l = i(397927),
-    s = i(725177),
-    a = i(523418);
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    l = n(725177),
+    a = n(523418);
 
 function r() {
-    return (0, a.b)().map(t => (0, n.jsx)(l.Drp, {
-        id: t.id,
-        label: t.title,
-        action: () => (0, s.A)(t.id)
-    }, t.id))
+    return (0, a.b)().map(e => (0, i.jsx)(s.Drp, {
+        id: e.id,
+        label: e.title,
+        action: () => (0, l.A)(e.id)
+    }, e.id))
 }

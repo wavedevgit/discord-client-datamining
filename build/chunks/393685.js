@@ -1,34 +1,34 @@
-/** chunk id: 393685, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => A
+/** chunk id: 393685, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => u
 });
-var n = i(311907),
-    l = i(827343),
-    s = i(419954),
-    a = i(347481),
-    r = i(430452),
-    u = i(780964),
-    o = i(652215),
-    d = i(985018);
-let A = (0, s.zD)(u.X.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, {
-    useTitle: () => d.intl.string(d.t.cUMdH0),
-    useSubtitle: () => d.intl.string(d.t["6EjbvA"]),
+var i = n(311907),
+    s = n(827343),
+    l = n(419954),
+    a = n(347481),
+    r = n(430452),
+    o = n(780964),
+    d = n(652215),
+    c = n(985018);
+let u = (0, l.zD)(o.X.VOICE_AUTOMATIC_GAIN_CONTROL_SETTING, {
+    useTitle: () => c.intl.string(c.t.cUMdH0),
+    useSubtitle: () => c.intl.string(c.t["6EjbvA"]),
     useValue: function() {
-        return (0, n.bG)([r.Ay], () => r.Ay.getAutomaticGainControl())
+        return (0, i.bG)([r.Ay], () => r.Ay.getAutomaticGainControl())
     },
-    setValue: function(t) {
-        l.A.setAutomaticGainControl(t, {
-            page: o.liQ.USER_SETTINGS,
-            section: o.JJy.SETTINGS_VOICE_AND_VIDEO
+    setValue: function(e) {
+        s.A.setAutomaticGainControl(e, {
+            page: d.liQ.USER_SETTINGS,
+            section: d.JJy.SETTINGS_VOICE_AND_VIDEO
         })
     },
     useDisabled: function() {
-        return (0, n.bG)([r.Ay, a.A], () => {
-            let t = r.Ay.getInputDeviceId();
-            return a.A.hasAutomaticGainControl(t)
+        return (0, i.bG)([r.Ay, a.A], () => {
+            let e = r.Ay.getInputDeviceId();
+            return a.A.hasAutomaticGainControl(e)
         })
     },
     usePredicate: function() {
-        return (0, n.bG)([r.Ay], () => r.Ay.isAutomaticGainControlSupported() && r.Ay.isInputProfileCustom())
+        return (0, i.bG)([r.Ay], () => r.Ay.isAutomaticGainControlSupported() && r.Ay.isInputProfileCustom())
     }
 })

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(267102),
+    a = n(397927),
+    r = n(267102),
     o = n(931991),
     c = n(246356),
     d = n(404355),
@@ -22,46 +22,46 @@ function _(e) {
     let {
         channelId: t,
         onClick: n
-    } = e, _ = (0, a.Us)(), f = (0, p.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
+    } = e, _ = (0, r.Us)(), f = (0, p.Qs)(t), x = (0, l.bG)([u.A], () => u.A.getChannel(t), [t]), {
         canManageGuildEvent: C
     } = (0, o.nr)(x), E = C(f), I = s.useRef(null);
     if (null == f) return null;
     let N = () => {
             null != x && (0, m.A)(x) ? (0, h.Py)(x, _) : n()
         },
-        S = () => {
+        b = () => {
             A.A.endEvent(f.id, f.guild_id)
         };
-    return E ? (0, i.jsx)(r.YNO, {
+    return E ? (0, i.jsx)(a.YNO, {
         targetElementRef: I,
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
             return (0, i.jsx)(c.A, {
-                children: (0, i.jsx)(r.W1t, {
+                children: (0, i.jsx)(a.W1t, {
                     "data-menu-migrated": !0,
                     navId: "exit-options",
                     onSelect: () => {},
                     "aria-label": g.intl.string(g.t["K6/mk3"]),
                     onClose: t,
-                    children: (0, i.jsx)(r.Drp, {
+                    children: (0, i.jsx)(a.Drp, {
                         id: "end-voice-event",
                         color: "danger",
-                        action: S,
+                        action: b,
                         label: g.intl.string(g.t.qaYzPA),
                         leadingAccessory: {
                             type: "icon",
-                            icon: r.aXh
+                            icon: a.aXh
                         },
-                        icon: r.aXh
+                        icon: a.aXh
                     })
                 })
             })
         },
         align: "center",
         position: "top",
-        animation: r.YNO.Animation.FADE,
+        animation: a.YNO.Animation.FADE,
         children: e => {
             let {
                 onClick: t

@@ -1,7 +1,7 @@
 /** chunk id: 658, original params: e,t,r (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => s
+    A: () => o
 });
 var a = r(684401);
 
@@ -12,7 +12,7 @@ function n(e, t) {
     }
 }
 
-function s(e, t, r) {
+function o(e, t, r) {
     return t && n(e.prototype, t), r && n(e, r), Object.defineProperty(e, "prototype", {
         writable: !1
     }), e

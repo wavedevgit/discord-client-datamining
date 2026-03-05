@@ -5,8 +5,8 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(735438),
-    i = n(397927),
-    r = n(985018),
+    r = n(397927),
+    i = n(985018),
     s = n(641131),
     d = n(821596);
 let o = e => {
@@ -19,16 +19,16 @@ let o = e => {
     }).filter(e => null != e);
     return 0 === t.length ? null : (0, l.jsxs)("div", {
         className: d.kL,
-        children: [(0, l.jsx)(i.Heading, {
+        children: [(0, l.jsx)(r.Heading, {
             className: d.MR,
             color: "text-default",
             variant: "heading-sm/semibold",
-            children: e.isModeratorReport ? r.intl.string(s.default["6mx/DP"]) : r.intl.string(r.t["+3V9Tp"])
+            children: e.isModeratorReport ? i.intl.string(s.default["6mx/DP"]) : i.intl.string(i.t["+3V9Tp"])
         }), t.map((e, t) => (0, l.jsxs)("div", {
             className: d.P,
             children: [(0, l.jsx)("div", {
                 className: d.RL
-            }), (0, l.jsx)(i.Text, {
+            }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: d.b,
                 children: e

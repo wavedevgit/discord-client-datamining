@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(934551),
     l = n(311907),
-    r = n(827734),
-    a = n(922590),
+    a = n(827734),
+    r = n(922590),
     o = n(821269),
     c = n(437774),
     d = n(994500),
@@ -25,8 +25,8 @@ var s = n(934551),
     E = n(383448),
     I = n(900179),
     N = n(646986),
-    S = n(946356),
-    b = n(810396),
+    b = n(946356),
+    S = n(810396),
     T = n(243166),
     v = n(652215),
     y = n(996988),
@@ -47,14 +47,14 @@ function O(e) {
     } = (0, l.cf)([d.A], () => ({
         relationshipType: d.A.getRelationshipType(t.id),
         originApplicationId: d.A.getOriginApplicationId(t.id)
-    })), P = (0, a.fi)(t.id), w = (0, o.q)({
+    })), P = (0, r.fi)(t.id), w = (0, o.q)({
         userId: t.id
     }), k = (0, l.bG)([u.A], () => u.A.hidePersonalInformation), V = (0, l.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
     return (0, i.jsxs)("div", {
         className: R.rf,
         children: [(0, i.jsx)(_.A, {
             userId: t.id
-        }), (0, i.jsx)(b.A, {
+        }), (0, i.jsx)(S.A, {
             user: t,
             guildId: L.guild_id,
             nickname: h.Ay.getName(null, L.id, t),
@@ -69,13 +69,13 @@ function O(e) {
                 isVisible: M,
                 onOpenProfile: D
             })
-        }), G === v.eA$.PENDING_INCOMING && (0, i.jsx)(S.A.Overlay, {
+        }), G === v.eA$.PENDING_INCOMING && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 channelId: L.id,
                 applicationId: U
             })
-        }), P.map(e => (0, i.jsx)(S.A.Overlay, {
+        }), P.map(e => (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(x.A, {
                 user: t,
                 isGameRelationship: !0,
@@ -84,12 +84,12 @@ function O(e) {
             })
         }, e.applicationId)), (0, i.jsx)(E.A, {
             user: t
-        }), t.isProvisional && (0, i.jsx)(S.A.Overlay, {
+        }), t.isProvisional && (0, i.jsx)(b.A.Overlay, {
             children: (0, i.jsx)(I.A, {
                 heading: j.intl.string(j.t.Iyka0U),
                 headingIcon: (0, i.jsx)(s.CircleErrorIcon, {
                     size: "xxs",
-                    color: r.A.colors.TEXT_STRONG
+                    color: a.A.colors.TEXT_STRONG
                 }),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(c.T, {
@@ -100,7 +100,7 @@ function O(e) {
             user: t,
             currentUser: n,
             onOpenUserProfileModal: D
-        }), (0, i.jsxs)(S.A.Overlay, {
+        }), (0, i.jsxs)(b.A.Overlay, {
             className: R.Lw,
             children: [!k && O?.bio != null && O?.bio !== "" && (0, i.jsx)(I.A, {
                 heading: j.intl.string(j.t.ZzAR2Y),

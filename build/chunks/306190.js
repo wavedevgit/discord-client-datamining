@@ -1,6 +1,6 @@
 /** chunk id: 306190, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(667532);
 var i = n(627968),
     r = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     h = n(767521),
     _ = n(818348),
     m = n(985018),
-    p = n(883088);
-let g = function(e) {
+    g = n(883088);
+let p = function(e) {
     let {
         questId: t,
         setQuestId: n,
-        quest: g,
+        quest: p,
         refreshQuest: E
     } = e, [I, f] = r.useState(!1), [C, T] = r.useState(!1), N = r.useRef(null), S = (0, u.pT)(), x = (0, l.bG)([c.A], () => null != t ? c.A.getFetchQuestPreviewError(t) : null, [t]), v = (0, l.bG)([c.A], () => null != t && c.A.isFetchingQuestPreview(t), [t]), y = r.useMemo(() => {
         let e = S.map(e => ({
@@ -65,14 +65,14 @@ let g = function(e) {
         (0, o.uJ)(e) || null == n || n(e)
     }, [n]);
     return (0, i.jsxs)("div", {
-        className: p.Fr,
+        className: g.Fr,
         children: [(0, i.jsx)("div", {
             children: (0, i.jsx)("div", {
-                className: p.Br,
+                className: g.Br,
                 children: (0, i.jsxs)("div", {
-                    className: p.bo,
+                    className: g.bo,
                     children: [(0, i.jsx)(h.A, {}), (0, i.jsxs)("div", {
-                        className: p.b8,
+                        className: g.b8,
                         children: [(0, i.jsx)(a.ZiE, {
                             selectionMode: "single",
                             label: "Quest ID",
@@ -90,7 +90,7 @@ let g = function(e) {
                                     value: t.trim()
                                 }] : n
                             }
-                        }, `${t}-${g?.config?.messages?.questName??""}`), (0, i.jsx)(a.K0, {
+                        }, `${t}-${p?.config?.messages?.questName??""}`), (0, i.jsx)(a.K0, {
                             onClick: E,
                             "aria-label": m.intl.string(m.t.wzzjk9),
                             icon: a.fNY,
@@ -99,10 +99,10 @@ let g = function(e) {
                     })]
                 })
             })
-        }), null != t && null != g && (0, i.jsx)("div", {
-            className: p.in,
+        }), null != t && null != p && (0, i.jsx)("div", {
+            className: g.in,
             children: (0, i.jsxs)(a.ButtonGroup, {
-                className: p.xv,
+                className: g.xv,
                 children: [(0, i.jsx)(a.Button, {
                     onClick: b,
                     disabled: I,
@@ -128,9 +128,9 @@ let g = function(e) {
                     position: "bottom",
                     align: "center",
                     renderPopout: () => (0, i.jsx)("div", {
-                        className: p.PP,
+                        className: g.PP,
                         children: (0, i.jsx)("div", {
-                            className: p.sH,
+                            className: g.sH,
                             children: (0, i.jsx)(s.A, {
                                 value: _.Sb.QUEST_PREVIEW_TOOL_2(t),
                                 text: m.intl.string(m.t.WqhZss)

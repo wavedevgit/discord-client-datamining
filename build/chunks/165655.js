@@ -1,11 +1,11 @@
 /** chunk id: 165655, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    T: () => i
+    T: () => l
 });
 var a = n(627968),
     s = n(583087);
 
-function i(e) {
+function l(e) {
     let {
         imageUrl: t
     } = e;

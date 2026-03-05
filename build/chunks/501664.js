@@ -1,20 +1,20 @@
-/** chunk id: 501664, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 501664, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     A: () => d
 });
-var a = n(627968);
-n(64700);
-var r = n(503698),
-    i = n.n(r),
-    s = n(993408),
-    l = n(506742),
-    c = n(219103),
-    o = n(258470);
+var n = a(627968);
+a(64700);
+var r = a(503698),
+    i = a.n(r),
+    s = a(993408),
+    l = a(506742),
+    c = a(219103),
+    o = a(258470);
 
 function d(e) {
     let {
         product: t,
-        isPremiumUser: n,
+        isPremiumUser: a,
         discount: r,
         className: d,
         discountOfferAmount: u,
@@ -22,39 +22,39 @@ function d(e) {
         nitroIconType: p,
         nitroIconSize: _ = "md"
     } = e, h = (0, s.WD)(t, {
-        isPremiumUser: n,
+        isPremiumUser: a,
         discount: r
     });
     if (null == h) return null;
     let {
         defaultPrice: x,
-        showDefaultPriceOnly: g
+        showDefaultPriceOnly: f
     } = h;
-    if (g) return (0, a.jsx)("div", {
+    if (f) return (0, n.jsx)("div", {
         className: i()(o.kG, d),
-        children: (0, a.jsx)(c.x, {
+        children: (0, n.jsx)(c.x, {
             priceAmount: x.amount,
             priceCurrency: x.currency
         })
     });
     let {
-        showNitroPrice: f,
+        showNitroPrice: g,
         originalPrice: v,
         finalPrice: A
     } = h;
-    return (0, a.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: i()(o.kG, d),
-        children: [m ? null : (0, a.jsx)(l.a, {
+        children: [m ? null : (0, n.jsx)(l.a, {
             price: v,
             className: o.q9
-        }), (0, a.jsx)(c.x, {
+        }), (0, n.jsx)(c.x, {
             priceAmount: A.amount,
             priceCurrency: A.currency,
             discount: r,
             className: i()({
                 [o.q9]: null == u
             }),
-            nitroIconType: f ? p : void 0,
+            nitroIconType: g ? p : void 0,
             nitroIconSize: _,
             discountOfferAmount: u
         })]

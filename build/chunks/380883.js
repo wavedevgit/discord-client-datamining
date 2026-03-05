@@ -1,12 +1,12 @@
 /** chunk id: 380883, original params: e,t,r (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => v
+    A: () => g
 });
 var a = r(1139),
     n = r(416886),
-    s = r(106526),
-    o = r(64700),
+    o = r(106526),
+    s = r(64700),
     i = r(223108),
     c = r.n(i),
     l = r(189776),
@@ -38,16 +38,16 @@ function y(e) {
     }
     return e
 }
-var g = function(e) {
+var v = function(e) {
     var t = e.getItemString,
         r = e.keyPath,
         n = e.labelRenderer,
         i = e.styling,
         c = e.value,
         p = e.valueRenderer,
-        g = e.isCustomNode,
-        v = (0, s.A)(e, h),
-        m = g(c) ? "Custom" : (0, l.A)(c),
+        v = e.isCustomNode,
+        g = (0, o.A)(e, h),
+        m = v(c) ? "Custom" : (0, l.A)(c),
         A = {
             getItemString: t,
             key: r[0],
@@ -58,71 +58,71 @@ var g = function(e) {
             value: c,
             valueRenderer: p
         },
-        w = y(y(y({}, v), A), {}, {
+        w = y(y(y({}, g), A), {}, {
             data: c,
-            isCustomNode: g
+            isCustomNode: v
         });
     switch (m) {
         case "Object":
         case "Error":
         case "WeakMap":
         case "WeakSet":
-            return o.createElement(u.A, w);
+            return s.createElement(u.A, w);
         case "Array":
-            return o.createElement(b.A, w);
+            return s.createElement(b.A, w);
         case "Iterable":
         case "Map":
         case "Set":
-            return o.createElement(f.A, w);
+            return s.createElement(f.A, w);
         case "String":
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function(e) {
                     return '"'.concat(e, '"')
                 }
             }));
         case "Number":
         case "Custom":
-            return o.createElement(d.A, A);
+            return s.createElement(d.A, A);
         case "Boolean":
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function(e) {
                     return e ? "true" : "false"
                 }
             }));
         case "Date":
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function(e) {
                     return e.toISOString()
                 }
             }));
         case "Null":
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function() {
                     return "null"
                 }
             }));
         case "Undefined":
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function() {
                     return "undefined"
                 }
             }));
         case "Function":
         case "Symbol":
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function(e) {
                     return e.toString()
                 }
             }));
         default:
-            return o.createElement(d.A, (0, a.A)({}, A, {
+            return s.createElement(d.A, (0, a.A)({}, A, {
                 valueGetter: function() {
                     return "<".concat(m, ">")
                 }
             }))
     }
 };
-g.propTypes = {
+v.propTypes = {
     getItemString: c().func.isRequired,
     keyPath: c().arrayOf(c().oneOfType([c().string, c().number]).isRequired).isRequired,
     labelRenderer: c().func.isRequired,
@@ -131,4 +131,4 @@ g.propTypes = {
     valueRenderer: c().func.isRequired,
     isCustomNode: c().func.isRequired
 };
-let v = g
+let g = v

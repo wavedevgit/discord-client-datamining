@@ -1,6 +1,6 @@
 /** chunk id: 27126, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var a = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var i = n(989349),
     u = n(275759),
     m = n(21119),
     h = n(594061),
-    p = n(617617),
-    x = n(287809),
+    x = n(617617),
+    p = n(287809),
     g = n(105040),
     _ = n(661251);
 
@@ -32,16 +32,16 @@ function f(e) {
     })
 }
 
-function b() {
+function v() {
     let e = (0, l.bG)([u.Ay], () => u.Ay.getDevToolTotalFriendAnniversaries()),
         t = (0, l.bG)([u.Ay], () => u.Ay.getDevToolCurrentDate()),
         n = (0, l.bG)([u.Ay], () => u.Ay.getGiftUnreadNotificationLastDismissedTimes()),
         i = (0, l.bG)([u.Ay], () => u.Ay.getMessageGiftIntentLastShownMap()),
-        b = (0, l.bG)([u.Ay], () => u.Ay.getHighestAffinityFriendAnniversaries()),
-        v = (0, l.bG)([u.Ay], () => u.Ay.getHighAffinityFriendAnniversaries()),
+        v = (0, l.bG)([u.Ay], () => u.Ay.getHighestAffinityFriendAnniversaries()),
+        b = (0, l.bG)([u.Ay], () => u.Ay.getHighAffinityFriendAnniversaries()),
         j = (0, l.bG)([u.Ay], () => u.Ay.getProfilePopoutGiftIntentsDismissMap()),
-        A = (0, l.bG)([p.A], () => {
-            let e = p.A.settings.userContent?.recurringDismissibleContentStates[r.M.GIFT_INTENT_MESSAGE]?.lastDismissedAtMs;
+        A = (0, l.bG)([x.A], () => {
+            let e = x.A.settings.userContent?.recurringDismissibleContentStates[r.M.GIFT_INTENT_MESSAGE]?.lastDismissedAtMs;
             if (null == e || "0" === e) return null;
             let t = Number(e);
             return Number.isNaN(t) ? null : t
@@ -52,7 +52,7 @@ function b() {
                 total: e
             })
         },
-        T = e => {
+        y = e => {
             let t = m.A.getUserAffinity(e);
             return t?.dmProbability != null ? `${(100*t.dmProbability).toFixed(3)}%` : "N/A"
         };
@@ -131,30 +131,30 @@ function b() {
                     }), (0, a.jsx)(o.Text, {
                         variant: "text-xs/normal",
                         children: "The devtool automatically assigns users as high affinity regardless of actual affinity for testing."
-                    }), b.length > 0 && (0, a.jsxs)(o.BJc, {
-                        gap: 4,
-                        children: [(0, a.jsx)(o.Text, {
-                            variant: "text-xs/semibold",
-                            children: "Highest Affinity Friend Anniversaries (Eligible for Notification):"
-                        }), b.map(e => {
-                            let t = x.default.getUser(e),
-                                n = t?.username ?? `Unknown User (${e})`;
-                            return (0, a.jsxs)(o.Text, {
-                                variant: "text-xs/normal",
-                                children: [n, " (", T(e), ")"]
-                            }, e)
-                        })]
                     }), v.length > 0 && (0, a.jsxs)(o.BJc, {
                         gap: 4,
                         children: [(0, a.jsx)(o.Text, {
                             variant: "text-xs/semibold",
-                            children: "High Affinity Friend Anniversaries:"
+                            children: "Highest Affinity Friend Anniversaries (Eligible for Notification):"
                         }), v.map(e => {
-                            let t = x.default.getUser(e),
+                            let t = p.default.getUser(e),
                                 n = t?.username ?? `Unknown User (${e})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
-                                children: [n, " (", T(e), ")"]
+                                children: [n, " (", y(e), ")"]
+                            }, e)
+                        })]
+                    }), b.length > 0 && (0, a.jsxs)(o.BJc, {
+                        gap: 4,
+                        children: [(0, a.jsx)(o.Text, {
+                            variant: "text-xs/semibold",
+                            children: "High Affinity Friend Anniversaries:"
+                        }), b.map(e => {
+                            let t = p.default.getUser(e),
+                                n = t?.username ?? `Unknown User (${e})`;
+                            return (0, a.jsxs)(o.Text, {
+                                variant: "text-xs/normal",
+                                children: [n, " (", y(e), ")"]
                             }, e)
                         })]
                     })]
@@ -235,7 +235,7 @@ function b() {
                             variant: "text-xs/semibold",
                             children: "Gift Message Intent Last Shown:"
                         }), Object.entries(i).map(e => {
-                            let [t, n] = e, i = x.default.getUser(t), s = i?.username ?? `Unknown User (${t})`;
+                            let [t, n] = e, i = p.default.getUser(t), s = i?.username ?? `Unknown User (${t})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
                                 children: [s, ": ", f(n)]
@@ -328,7 +328,7 @@ function b() {
                             variant: "text-xs/semibold",
                             children: "Profile Popout Gift Intents Dismissed:"
                         }), Object.entries(j).map(e => {
-                            let [t, n] = e, i = x.default.getUser(t), s = i?.username ?? `Unknown User (${t})`;
+                            let [t, n] = e, i = p.default.getUser(t), s = i?.username ?? `Unknown User (${t})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
                                 children: [s, ": ", f(n)]

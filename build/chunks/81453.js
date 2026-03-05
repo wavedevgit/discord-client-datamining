@@ -1,12 +1,12 @@
-/** chunk id: 81453, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 81453, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     n: () => r
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(456518),
-    a = i(985018);
-let r = (0, n.zZ)(l.X.CHAT_SOUNDMOJI_CATEGORY, {
+var i = n(419954),
+    s = n(780964),
+    l = n(456518),
+    a = n(985018);
+let r = (0, i.zZ)(s.X.CHAT_SOUNDMOJI_CATEGORY, {
     useTitle: () => a.intl.string(a.t.EHlAMc),
-    buildLayout: () => [s.T]
+    buildLayout: () => [l.T]
 })

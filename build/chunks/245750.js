@@ -16,22 +16,22 @@ var a = n(627968),
 function h(e) {
     let t, n, {
             webBuildOverride: h,
-            onClick: p,
-            onContextMenu: x,
+            onClick: x,
+            onContextMenu: p,
             iconForeground: g,
             nameplate: _
         } = e,
         f = i.useRef(null),
-        [b, v] = i.useState(!1);
+        [v, b] = i.useState(!1);
     (0, s.Ay)(() => {
-        let e = () => v(!0);
+        let e = () => b(!0);
         return d._.subscribe(u.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e), () => {
             d._.unsubscribe(u.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED, e)
         }
     });
     let j = i.useCallback(() => {
-        v(!1), p()
-    }, [p]);
+        b(!1), x()
+    }, [x]);
     t = null != h ? m.intl.formatToPlainString(m.t.Gzh6ZP, {
         webBuildOverride: h.id
     }) : m.intl.string(m.t.cduTBL);
@@ -43,7 +43,7 @@ function h(e) {
             tooltipText: t,
             tooltipPositionKey: n,
             onClick: j,
-            onContextMenu: x,
+            onContextMenu: p,
             "aria-label": m.intl.string(m.t.cduTBL),
             icon: (0, a.jsx)(A, {
                 size: "refresh_sm",
@@ -54,8 +54,8 @@ function h(e) {
             plated: null != _
         }), (0, a.jsx)(o.V, {
             targetElementRef: f,
-            shouldShow: b,
-            onDismiss: () => v(!1)
+            shouldShow: v,
+            onDismiss: () => b(!1)
         })]
     })
 }

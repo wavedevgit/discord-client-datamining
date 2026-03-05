@@ -1,18 +1,18 @@
-/** chunk id: 755130, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Z: () => o
+/** chunk id: 755130, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Z: () => d
 });
-var n = i(627968),
-    l = i(625841),
-    s = i(419954),
-    a = i(780964),
-    r = i(731854),
-    u = i(985018);
-let o = (0, s.E2)(a.X.VOICE_MICROPHONE_INPUT_SELECT, {
-    useSearchTerms: () => [u.intl.string(u.t.hHMYbb), u.intl.string(u.t.nuFtHH)],
+var i = n(627968),
+    s = n(625841),
+    l = n(419954),
+    a = n(780964),
+    r = n(731854),
+    o = n(985018);
+let d = (0, l.E2)(a.X.VOICE_MICROPHONE_INPUT_SELECT, {
+    useSearchTerms: () => [o.intl.string(o.t.hHMYbb), o.intl.string(o.t.nuFtHH)],
     Component: function() {
-        return (0, n.jsx)(l.U, {
-            label: u.intl.string(u.t.UTM8VP),
+        return (0, i.jsx)(s.U, {
+            label: o.intl.string(o.t.UTM8VP),
             deviceType: r.oh.AUDIO_INPUT,
             location: "UserSettingsVoiceVideo",
             hideDeviceTypeIcon: !0

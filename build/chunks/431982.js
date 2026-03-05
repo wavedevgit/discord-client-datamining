@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(688810),
+    l = n(397927),
+    a = n(688810),
     r = n(590547),
     o = n(919395),
-    c = n(128450),
-    d = n(985018),
+    d = n(128450),
+    c = n(985018),
     u = n(888920);
 
 function _(e) {
@@ -18,36 +18,36 @@ function _(e) {
         guild: n,
         titleIcon: _
     } = e, {
-        analyticsLocations: m
-    } = (0, l.Ay)(), A = null != n, {
-        userNameplate: g,
+        analyticsLocations: g
+    } = (0, a.Ay)(), m = null != n, {
+        userNameplate: A,
         guildNameplate: h,
-        pendingNameplate: x,
-        pendingErrors: p
+        pendingNameplate: p,
+        pendingErrors: x
     } = (0, o.rv)(t, n?.id), E = s.useCallback(() => {
         (0, r.p)({
-            analyticsLocations: m,
+            analyticsLocations: g,
             guildId: n?.id
         })
-    }, [m, n?.id]), C = s.useCallback(() => {
+    }, [g, n?.id]), T = s.useCallback(() => {
         (0, o.pX)(null, n?.id)
     }, [n?.id]);
-    return (0, i.jsx)(c.A, {
-        title: d.intl.string(d.t.x5CoXR),
+    return (0, i.jsx)(d.A, {
+        title: c.intl.string(c.t.x5CoXR),
         titleIcon: _,
-        errors: p,
+        errors: x,
         children: (0, i.jsxs)("div", {
             className: u.u,
-            children: [(0, i.jsx)(a.Button, {
+            children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
-                text: d.intl.string(d.t.BwdeM1),
+                text: c.intl.string(c.t.BwdeM1),
                 onClick: E
-            }), (void 0 === x ? (A ? h : g) != null : null != x) && (0, i.jsx)(a.Button, {
+            }), (void 0 === p ? (m ? h : A) != null : null != p) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: A ? d.intl.string(d.t.CHf9iJ) : d.intl.string(d.t["9zwziY"]),
-                onClick: C
+                text: m ? c.intl.string(c.t.CHf9iJ) : c.intl.string(c.t["9zwziY"]),
+                onClick: T
             })]
         })
     })

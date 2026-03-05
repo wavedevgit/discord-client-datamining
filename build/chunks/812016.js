@@ -1,31 +1,31 @@
-/** chunk id: 812016, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 812016, original params: e,t,a (module,exports,require) **/
+a.d(t, {
     I: () => o
 });
-var a = n(627968);
-n(64700);
-var r = n(397927),
-    i = n(224016),
-    s = n(985018),
-    l = n(646682),
-    c = n(461727);
+var n = a(627968);
+a(64700);
+var r = a(397927),
+    i = a(224016),
+    s = a(985018),
+    l = a(646682),
+    c = a(461727);
 let o = () => {
     let e = [s.t.E1NP2x, s.t.kpMomJ, s.t.xT1Vfn, s.t.myyAEr, s.t.zTk8Ul];
-    return (0, a.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: l.kL,
-        children: [(0, a.jsx)("img", {
+        children: [(0, n.jsx)("img", {
             src: c.A,
             alt: "",
             className: l.ym
-        }), (0, a.jsx)(i.A, {
+        }), (0, n.jsx)(i.A, {
             color: "white"
-        }), (0, a.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: l.PX,
-            children: e.map((e, t) => (0, a.jsxs)("div", {
+            children: e.map((e, t) => (0, n.jsxs)("div", {
                 className: l.UJ,
-                children: [(0, a.jsx)(r.Uzd, {
+                children: [(0, n.jsx)(r.Uzd, {
                     color: r.LU0.colors.WHITE
-                }), (0, a.jsx)(r.Text, {
+                }), (0, n.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "always-white",
                     children: s.intl.string(e)

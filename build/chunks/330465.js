@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(131346),
+    a = n.n(l),
+    r = n(131346),
     o = n(380278),
     c = n(837381),
     d = n(607399),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(696451),
     I = n(711014),
     N = n(676279),
-    S = n(263715),
-    b = n(941971),
+    b = n(263715),
+    S = n(941971),
     T = n(264409),
     v = n(531053),
     y = n(647668),
@@ -47,7 +47,7 @@ function U(e, t) {
     (0, p.L3)(e, async () => {
         let {
             default: e
-        } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("67231"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("56475"), n.e("54469"), n.e("57498")]).then(n.bind(n, 544676));
+        } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("41538"), n.e("56475"), n.e("54469"), n.e("67109")]).then(n.bind(n, 544676));
         return n => (0, i.jsx)(e, {
             ...n,
             guild: t
@@ -89,8 +89,8 @@ let P = s.memo(function(e) {
         },
         [{
             dragging: el
-        }, er] = (0, a.i)({
-            type: S.PJ.GUILD,
+        }, ea] = (0, r.i)({
+            type: b.PJ.GUILD,
             item: () => (requestAnimationFrame(() => {
                 l?.()
             }), {
@@ -104,7 +104,7 @@ let P = s.memo(function(e) {
                 dragging: e.isDragging()
             })
         }),
-        ea = (0, c.Vd)(ee ?? L.dJq, null != et ? 2 : 1),
+        er = (0, c.Vd)(ee ?? L.dJq, null != et ? 2 : 1),
         [eo, ec] = s.useState(!1),
         ed = !q && eo,
         [eu, eh] = s.useState(!1),
@@ -139,10 +139,10 @@ let P = s.memo(function(e) {
         q || ec(!0)
     }
 
-    function eS() {
+    function eb() {
         q || ec(!1)
     }
-    let eb = s.useCallback(e => {
+    let eS = s.useCallback(e => {
             n?.(ee, e)
         }, [ee, n]),
         eT = (0, A.rdh)(A.LU0.modules.guildbar.AVATAR_SIZE);
@@ -166,13 +166,13 @@ let P = s.memo(function(e) {
             name: w.name,
             onClick: e_,
             onMouseEnter: eN,
-            onMouseLeave: eS,
+            onMouseLeave: eb,
             onMouseDown: ef,
             onContextMenu: eC,
             onKeyDown: eE,
             icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
             selected: V || ed,
-            ...ea,
+            ...er,
             "aria-setsize": $,
             "aria-posinset": Z,
             "aria-selected": V
@@ -180,7 +180,7 @@ let P = s.memo(function(e) {
             selected: V,
             children: (0, i.jsx)("div", {
                 ref: z ? e => {
-                    er(e)
+                    ea(e)
                 } : void 0,
                 "data-dnd-name": w.name,
                 "data-drop-hovering": eA,
@@ -192,13 +192,13 @@ let P = s.memo(function(e) {
                     name: w.name,
                     onClick: e_,
                     onMouseEnter: eN,
-                    onMouseLeave: eS,
+                    onMouseLeave: eb,
                     onMouseDown: ef,
                     onContextMenu: eC,
                     onKeyDown: eE,
                     icon: (0, C.Iv)(w, 2 * eT, ed && k, !0),
                     selected: V || ed,
-                    ...ea,
+                    ...er,
                     "aria-setsize": $,
                     "aria-posinset": Z,
                     "aria-selected": V
@@ -211,14 +211,14 @@ let P = s.memo(function(e) {
         }),
         eO = eg ? (0, i.jsx)(o.animated.div, {
             ref: z ? e => {
-                er(e)
+                ea(e)
             } : void 0,
             "data-dnd-name": w.name,
             style: {
                 scale: null == Q ? 1 : Q
             },
             "data-drop-hovering": eA,
-            className: r()(D.rN, {
+            className: a()(D.rN, {
                 [D.p9]: q,
                 [D.oR]: eA,
                 [D.wH]: eA || V
@@ -234,7 +234,7 @@ let P = s.memo(function(e) {
             style: {
                 scale: null == Q ? 1 : Q
             },
-            className: r()(D.rN, {
+            className: a()(D.rN, {
                 [D.p9]: q,
                 [D.oR]: eA,
                 [D.wH]: eA || V
@@ -249,8 +249,8 @@ let P = s.memo(function(e) {
             })
         });
     return (0, i.jsxs)(R.c, {
-        ref: eb,
-        children: [(0, i.jsx)(b.A, {
+        ref: eS,
+        children: [(0, i.jsx)(S.A, {
             hovered: !el && ed,
             selected: !el && V,
             unread: !el && B,

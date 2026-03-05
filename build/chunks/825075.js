@@ -4,79 +4,79 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(311907),
     o = n(421380),
-    c = n(397927),
-    d = n(775602),
+    d = n(397927),
+    c = n(775602),
     u = n(793574),
     _ = n(688810),
-    m = n(607470),
-    A = n(676279),
-    g = n(560138),
+    g = n(607470),
+    m = n(676279),
+    A = n(560138),
     h = n(526292),
-    x = n(89366),
-    p = n(236834),
+    p = n(89366),
+    x = n(236834),
     E = n(194509),
-    C = n(224850),
-    T = n(797255),
-    S = n(288351),
+    T = n(224850),
+    S = n(797255),
+    C = n(288351),
     I = n(320908),
     f = n(693591),
-    N = n(985018),
-    b = n(986970),
-    j = n(182514),
-    v = n(619947),
+    b = n(985018),
+    N = n(986970),
+    v = n(182514),
+    j = n(619947),
     O = n(733907);
 let R = s.forwardRef((e, t) => {
     let {
         className: n,
         buttonClassName: s,
-        subscriptionTier: a,
+        subscriptionTier: l,
         isDarkMode: R,
         isEligibleForBogoPromotion: y,
         videoRef: P
     } = e, {
         analyticsLocations: L
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, x.QQ)(), M = (0, h.ar)(), G = (0, r.bG)([g.A], () => g.A.affinities), U = (0, p.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = G.length > 0, H = N.intl.string(N.t.YCZldK), B = (0, A.TM)(), Y = (0, r.bG)([d.A], () => d.A.useReducedMotion);
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, p.QQ)(), G = (0, h.ar)(), M = (0, r.bG)([A.A], () => A.A.affinities), U = (0, x.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = M.length > 0, H = b.intl.string(b.t.YCZldK), B = (0, m.TM)(), Y = (0, r.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsx)(_.f5, {
         value: L,
         children: (0, i.jsxs)("div", {
-            className: l()(b.kL, b.qY, n),
+            className: a()(N.kL, N.qY, n),
             ref: t,
             "data-testid": "marketing-page-hero-header",
             children: [(0, i.jsx)("div", {
-                className: b.kL,
+                className: N.kL,
                 children: (0, i.jsxs)("div", {
-                    className: b.s8,
-                    children: [M && (0, i.jsx)(S.A, {}), (0, i.jsx)(c.Heading, {
-                        className: b.WT,
+                    className: N.s8,
+                    children: [G && (0, i.jsx)(C.A, {}), (0, i.jsx)(d.Heading, {
+                        className: N.WT,
                         variant: "display-sm",
                         color: "text-strong",
                         children: H
-                    }), k ? (0, i.jsx)(T.A, {
+                    }), k ? (0, i.jsx)(S.A, {
                         referrer: U
                     }) : w && (0, i.jsx)("div", {
-                        className: b.kb,
-                        children: (0, i.jsx)(C.A, {
+                        className: N.kb,
+                        children: (0, i.jsx)(T.A, {
                             textColor: "text-default",
                             smallerText: !1,
                             isApplicationHome: !0
                         })
                     }), D ? (0, i.jsx)("div", {
-                        className: l()(b.UD, b.$F, {
-                            [b.In]: !(w || k)
+                        className: a()(N.UD, N.$F, {
+                            [N.In]: !(w || k)
                         }),
                         children: (0, i.jsx)(E.A, {
-                            className: l()(b.x6, s),
+                            className: a()(N.x6, s),
                             color: V
                         })
                     }) : (0, i.jsx)(I.KN, {
-                        subscriptionTier: a,
-                        inOfferExperience: M,
-                        containerClassName: l()(b.$F, {
-                            [b.In]: !(w || k)
+                        subscriptionTier: l,
+                        inOfferExperience: G,
+                        containerClassName: a()(N.$F, {
+                            [N.In]: !(w || k)
                         }),
                         buttonClassName: s,
                         isApplicationHome: !0,
@@ -89,17 +89,17 @@ let R = s.forwardRef((e, t) => {
                     })]
                 })
             }), (0, i.jsx)("div", {
-                className: b.TT,
-                children: (0, i.jsx)(m.A, {
+                className: N.TT,
+                children: (0, i.jsx)(g.A, {
                     autoPlay: !Y,
                     playsInline: !0,
                     preload: Y ? "none" : "auto",
-                    poster: v.A,
+                    poster: j.A,
                     loop: !0,
-                    className: b.gm,
+                    className: N.gm,
                     ref: P,
                     children: (0, i.jsx)("source", {
-                        src: B ? j.A : O.A,
+                        src: B ? v.A : O.A,
                         type: B ? f.a.MP4 : f.a.WEBM
                     })
                 })

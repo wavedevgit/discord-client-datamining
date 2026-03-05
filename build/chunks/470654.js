@@ -2,11 +2,11 @@
 r.d(t, {
     A: () => l
 });
-var s = r(64700),
-    n = r(216623);
+var n = r(64700),
+    s = r(216623);
 
 function l() {
-    s.useEffect(() => {
-        (0, n.AX)()
+    n.useEffect(() => {
+        (0, s.AX)()
     }, [])
 }

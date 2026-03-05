@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(253932),
     _ = n(576705),
     m = n(994500),
-    p = n(978914),
-    g = n(652215),
+    g = n(978914),
+    p = n(652215),
     E = n(838541),
     I = n(985018),
     f = n(536791),
@@ -28,13 +28,13 @@ let T = r.memo(function(e) {
         loaded: n,
         error: l,
         message: T
-    } = (0, p.I)(t), {
+    } = (0, g.I)(t), {
         isBlocked: N,
         isIgnored: S
     } = (0, s.cf)([m.A], () => ({
         isBlocked: null != T && m.A.isBlockedForMessage(T),
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
-    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(g.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
+    }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
         content: y
     } = r.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,

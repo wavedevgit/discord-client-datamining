@@ -1,25 +1,25 @@
-/** chunk id: 570874, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => g
+/** chunk id: 570874, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => A
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(612025),
-    a = i(112469),
-    r = i(380587),
-    u = i(589641),
-    o = i(657875),
-    d = i(785048),
-    A = i(705013),
-    T = i(794145),
-    S = i(404096),
-    E = i(985018);
-let g = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
-    useTitle: () => E.intl.string(E.t.eYaT7L),
+var i = n(419954),
+    s = n(780964),
+    l = n(612025),
+    a = n(112469),
+    r = n(380587),
+    o = n(589641),
+    d = n(657875),
+    c = n(785048),
+    u = n(705013),
+    _ = n(794145),
+    g = n(404096),
+    m = n(985018);
+let A = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
+    useTitle: () => m.intl.string(m.t.eYaT7L),
     useInlineNotice: function() {
-        let t = (0, u.I)(),
-            e = (0, r.Xj)();
-        if ((0, a.Tx)() === s.YG) return t ?? e
+        let e = (0, o.I)(),
+            t = (0, r.Xj)();
+        if ((0, a.Tx)() === l.YG) return e ?? t
     },
-    buildLayout: () => [o.a, T.V, S.w, A.H, d.U]
+    buildLayout: () => [d.a, _.V, g.w, u.H, c.U]
 })

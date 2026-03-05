@@ -1,11 +1,11 @@
 /** chunk id: 468946, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => g
 });
 var a = n(627968),
     s = n(281445),
-    i = n(158954),
-    l = n(736653),
+    l = n(158954),
+    i = n(736653),
     r = n(27023),
     d = n(818348),
     o = n(294726),
@@ -14,9 +14,9 @@ var a = n(627968),
     m = n(391637),
     x = n(588979);
 
-function g() {
-    let e = (0, l.Ay)();
-    return (0, a.jsx)(i.EYj, {
+function v() {
+    let e = (0, i.Ay)();
+    return (0, a.jsx)(l.EYj, {
         variant: "text-sm/medium",
         className: u.Q,
         children: c.intl.format(o.default.fcJiY8, {
@@ -29,9 +29,9 @@ function g() {
     })
 }
 
-function v() {
+function g() {
     let {
         gameProvider: e
     } = (0, r.bv)();
-    return e === s.X.SHOCKBYTE ? (0, a.jsx)(g, {}) : null
+    return e === s.X.SHOCKBYTE ? (0, a.jsx)(v, {}) : null
 }

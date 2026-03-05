@@ -1,12 +1,12 @@
-/** chunk id: 766172, original params: t,e,a (module,exports,require) **/
-a.d(e, {
-    Y: () => l
+/** chunk id: 766172, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    Y: () => i
 });
-var n = a(575593);
-let l = t => {
+var t = a(575593);
+let i = e => {
     let {
-        product: e,
+        product: n,
         selectedVariantIndex: a
-    } = t;
-    return e.type === n.R.VARIANTS_GROUP && null != a ? e.variants?.[a]?.skuId ?? e.skuId : e.skuId
+    } = e;
+    return n.type === t.R.VARIANTS_GROUP && null != a ? n.variants?.[a]?.skuId ?? n.skuId : n.skuId
 }

@@ -23,18 +23,18 @@ function u(e) {
         })
     }, []), h = i.useCallback(e => {
         m("handle-verify"), s(e)
-    }, [s, m]), p = i.useCallback(() => {
+    }, [s, m]), x = i.useCallback(() => {
         window?.grecaptcha?.enterprise?.ready(async () => {
             m("recaptcha-ready"), h(await (window?.grecaptcha).enterprise.execute(t, null != n ? {
                 action: n
             } : void 0)), u("loaded")
         })
-    }, [t, n, h, m]), x = i.useCallback(() => {
-        u("running"), m("recaptcha-loading"), d.Z.loadRecaptchaScript(t, p, m)
-    }, [t, p, m]);
+    }, [t, n, h, m]), p = i.useCallback(() => {
+        u("running"), m("recaptcha-loading"), d.Z.loadRecaptchaScript(t, x, m)
+    }, [t, x, m]);
     return i.useEffect(() => {
-        "uninitialized" === l && x()
-    }, [x, l]), i.useEffect(() => () => {
+        "uninitialized" === l && p()
+    }, [p, l]), i.useEffect(() => () => {
         m("recaptcha-unloading"), document.querySelectorAll('script[src*="recaptcha/enterprise.js"],.grecaptcha-badge').forEach(e => e.parentNode?.removeChild(e)), null != window.grecaptcha && delete window.grecaptcha
     }, [m]), (0, a.jsx)(r.y$y, {})
 }

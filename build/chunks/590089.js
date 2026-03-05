@@ -1,27 +1,27 @@
 /** chunk id: 590089, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    U: () => c
+    U: () => d
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(158954),
+    l = n.n(s),
+    a = n(158954),
     r = n(397927),
     o = n(411809);
 
-function c(e) {
+function d(e) {
     let {
         ref: t,
         leadingElement: n,
         trailingElement: s,
-        title: c,
-        description: d,
+        title: d,
+        description: c,
         onClick: u,
         style: _
     } = e;
     return (0, i.jsxs)(r.DUT, {
-        className: a()(o.EA, {
+        className: l()(o.EA, {
             [o.vk]: null != u
         }),
         onClick: u,
@@ -34,15 +34,15 @@ function c(e) {
             className: o.jw,
             children: [(0, i.jsx)("div", {
                 className: o.eg,
-                children: (0, i.jsx)(l.DZT, {
+                children: (0, i.jsx)(a.DZT, {
                     variant: "heading-md/medium",
                     color: "text-strong",
-                    children: c
+                    children: d
                 })
-            }), null != d && (0, i.jsx)(l.EYj, {
+            }), null != c && (0, i.jsx)(a.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: d
+                children: c
             })]
         }), null != s && (0, i.jsx)("div", {
             className: o.EY,

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(163126),
     l = n(688810),
-    r = n(114212),
-    a = n(345942),
+    a = n(114212),
+    r = n(345942),
     o = n(183555),
     c = n(913453),
     d = n(229187),
@@ -32,15 +32,15 @@ function x(e) {
     } = (0, o.NJ)(), E = (0, s.A)(), {
         mutualFriendsCount: I,
         mutualFriends: N,
-        mutualGuilds: S
-    } = (0, c.A)(t), b = !t.bot && null != I && I > 0, T = null != S && S.length > 0;
-    return b || T ? (0, i.jsxs)(p.A.Overlay, {
+        mutualGuilds: b
+    } = (0, c.A)(t), S = !t.bot && null != I && I > 0, T = null != b && b.length > 0;
+    return S || T ? (0, i.jsxs)(p.A.Overlay, {
         className: f.Lw,
         children: [T && (0, i.jsx)(g.A, {
             section: "MUTUAL_GUILDS",
             header: _.intl.string(_.t["4lTDZq"]),
             listClassName: f.p_,
-            items: S.map(e => {
+            items: b.map(e => {
                 let {
                     guild: n,
                     nick: s
@@ -49,12 +49,12 @@ function x(e) {
                     user: t,
                     guild: n,
                     nick: s,
-                    onSelect: () => (0, a.u)(n.id)
+                    onSelect: () => (0, r.u)(n.id)
                 }, n.id)
             })
-        }), T && b && (0, i.jsx)(h.A, {
+        }), T && S && (0, i.jsx)(h.A, {
             className: f.yF
-        }), b && (0, i.jsx)(g.A, {
+        }), S && (0, i.jsx)(g.A, {
             section: "MUTUAL_FRIENDS",
             header: _.intl.string(_.t["0mTJ3j"]),
             listClassName: f.p_,
@@ -63,10 +63,10 @@ function x(e) {
                 length: I
             }).map((e, t) => (0, i.jsxs)("div", {
                 className: f.nC,
-                children: [(0, i.jsx)(r.FQ, {
+                children: [(0, i.jsx)(a.FQ, {
                     width: 40,
                     opacity: .08
-                }), (0, i.jsx)(r.FQ, {
+                }), (0, i.jsx)(a.FQ, {
                     width: 135,
                     opacity: .08
                 })]

@@ -1,38 +1,38 @@
-/** chunk id: 345007, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    o: () => A
+/** chunk id: 345007, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    o: () => u
 });
-var n = i(955572),
-    l = i(775602),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(381941),
-    o = i(985018);
-let d = t => `${t.toFixed(0)}px`,
-    A = (0, s.sN)(r.X.APPEARANCE_MESSAGE_GROUP_SPACING, {
-        useTitle: () => o.intl.string(o.t.Q6lKkg),
-        useSubtitle: () => o.intl.string(o.t.p7eUrb),
-        markers: u.qh,
+var i = n(955572),
+    s = n(775602),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(381941),
+    d = n(985018);
+let c = e => `${e.toFixed(0)}px`,
+    u = (0, l.sN)(r.X.APPEARANCE_MESSAGE_GROUP_SPACING, {
+        useTitle: () => d.intl.string(d.t.Q6lKkg),
+        useSubtitle: () => d.intl.string(d.t.p7eUrb),
+        markers: o.qh,
         stickToMarkers: !0,
-        minValue: u.qh["0"],
-        maxValue: u.qh[u.qh.length - 1],
-        useDefaultValue: () => a.hH.useSetting() ? u.y5 : u.ES,
+        minValue: o.qh["0"],
+        maxValue: o.qh[o.qh.length - 1],
+        useDefaultValue: () => a.hH.useSetting() ? o.y5 : o.ES,
         getInitialValue: () => {
-            let t = l.A.messageGroupSpacing,
-                e = a.hH.getSetting();
-            return null != t ? t : e ? u.y5 : u.ES
+            let e = s.A.messageGroupSpacing,
+                t = a.hH.getSetting();
+            return null != e ? e : t ? o.y5 : o.ES
         },
-        onValueRender: d,
-        onMarkerRender: d,
-        asValueChanges: t => {
-            switch (t) {
+        onValueRender: c,
+        onMarkerRender: c,
+        asValueChanges: e => {
+            switch (e) {
                 case 0:
                 case 4:
                 case 8:
                 case 16:
                 case 24:
-                    (0, n.AC)(t)
+                    (0, i.AC)(e)
             }
         }
     })

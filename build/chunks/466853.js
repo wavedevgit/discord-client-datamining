@@ -96,8 +96,8 @@ function E(e) {
         onAction: C
     }), R = y === n.type;
     (0, m.A)(k, R);
-    let w = S && null != f && !a,
-        L = () => (0, i.jsxs)("div", {
+    let L = S && null != f && !a,
+        O = () => (0, i.jsxs)("div", {
             className: s()(j.kL, g),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
@@ -115,11 +115,11 @@ function E(e) {
     return (0, i.jsx)("section", {
         ref: k,
         "aria-labelledby": N,
-        children: w ? (0, i.jsx)(v, {
+        children: L ? (0, i.jsx)(v, {
             index: f ?? 0,
             widget: n,
             additionalManageWidgetMenuItems: b,
-            children: L()
-        }) : L()
+            children: O()
+        }) : O()
     })
 }

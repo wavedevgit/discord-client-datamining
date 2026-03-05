@@ -1,8 +1,8 @@
-/** chunk id: 49111, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    _9: () => l
+/** chunk id: 49111, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    _9: () => s
 });
-let n = (0, i(945810).mj)({
+let i = (0, n(945810).mj)({
     name: "2025-12-server-trending-notification",
     kind: "user",
     defaultConfig: {
@@ -18,8 +18,8 @@ let n = (0, i(945810).mj)({
     }
 });
 
-function l(t) {
-    return n.useConfig({
-        location: t
+function s(e) {
+    return i.useConfig({
+        location: e
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 20737, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -35,22 +35,22 @@ var i = n(627968),
     O = n(652215),
     L = n(696016),
     P = n(985018),
-    k = n(275825);
-let w = l.memo(function(e) {
+    w = n(275825);
+let k = l.memo(function(e) {
     let {
         className: t,
         channel: s,
-        draftType: w,
+        draftType: k,
         editorTextContent: U,
         setValue: G,
         canOnlyUseTextCommands: F
-    } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([b.A], () => b.A.getActivities()), z = (0, A.Et)(), W = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), {
+    } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([b.A], () => b.A.getActivities()), W = (0, A.Et)(), z = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), {
         showClipsHeaderEntrypoint: J
     } = h.L_.useConfig({
         location: "ChannelAttachButton"
     }), {
         onShareClick: $
-    } = (0, p.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([T.A], () => T.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (z || ee), el = s.isPrivate(), es = (0, r.bG)([N.A], () => el || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(W);
+    } = (0, p.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([T.A], () => T.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (W || ee), el = s.isPrivate(), es = (0, r.bG)([N.A], () => el || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(z);
 
     function er() {
         (0, o.mMO)(async () => {
@@ -68,7 +68,7 @@ let w = l.memo(function(e) {
             modalKey: L.nm
         }), en(null)
     }
-    ea?.newClipIds.length !== W?.newClipIds.length && (W?.newClipIds.length ?? 0) > 0 && null == et && Z && q && !X && !J && !Q && en("recentClips"), l.useEffect(() => {
+    ea?.newClipIds.length !== z?.newClipIds.length && (z?.newClipIds.length ?? 0) > 0 && null == et && Z && q && !X && !J && !Q && en("recentClips"), l.useEffect(() => {
         let e = e => {
             let {
                 channelId: t
@@ -106,7 +106,7 @@ let w = l.memo(function(e) {
     let ep = (0, i.jsx)(o.pa$, {
             size: "refresh_sm",
             color: "currentColor",
-            colorClass: k.dW
+            colorClass: w.dW
         }),
         ef = (0, i.jsx)(o.YNO, {
             targetElementRef: V,
@@ -127,7 +127,7 @@ let w = l.memo(function(e) {
                         return (0, i.jsx)(g.A, {
                             ...e,
                             onOpenClips: er,
-                            lastClipsSession: W
+                            lastClipsSession: z
                         });
                     case "attachMenu":
                         return (0, i.jsx)(M.A, {
@@ -136,7 +136,7 @@ let w = l.memo(function(e) {
                             options: eg,
                             channel: s,
                             onFileUpload: () => B.current?.activateUploadDialogue(),
-                            draftType: w,
+                            draftType: k,
                             editorTextContent: U,
                             setValue: G,
                             openClips: er
@@ -147,8 +147,8 @@ let w = l.memo(function(e) {
             },
             children: e => (0, i.jsx)(R.A, {
                 ref: V,
-                className: a()(k.g$, t),
-                childClassName: k.wh,
+                className: a()(w.g$, t),
+                childClassName: w.wh,
                 isActive: !1,
                 "aria-label": P.intl.string(P.t.d56gCa),
                 onDoubleClick: es ? () => B.current?.activateUploadDialogue() : void 0,
@@ -159,12 +159,12 @@ let w = l.memo(function(e) {
         });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: k.EJ,
+            className: w.EJ,
             children: (0, i.jsx)(c.A, {
                 ref: B,
                 onChange: e => {
                     var t, n;
-                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, j.V)(s, []) : (0, j.R)(t, s, w, {
+                    t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, j.V)(s, []) : (0, j.R)(t, s, k, {
                         requireConfirm: !0,
                         origin: "file_picker"
                     }), y._.dispatchToLastSubscribed(O.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
@@ -174,7 +174,7 @@ let w = l.memo(function(e) {
                 "aria-hidden": !0
             })
         }), (0, i.jsx)("div", {
-            className: k.Jd,
+            className: w.Jd,
             children: ef
         })]
     })

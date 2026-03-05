@@ -1,22 +1,22 @@
-/** chunk id: 856134, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    F: () => d
+/** chunk id: 856134, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    F: () => c
 });
-var n = i(627968),
-    l = i(158954),
-    s = i(552122),
-    a = i(419954),
-    r = i(780964),
-    u = i(840065),
-    o = i(985018);
-let d = (0, a.E2)(r.X.SOUNDS_HOLIDAY_NOTICE, {
-    useSearchTerms: () => [o.intl.string(o.t.fgSHf8)],
-    usePredicate: () => null != s.A.useHolidaySoundpack(),
-    Component: () => (0, n.jsx)(l.EYj, {
+var i = n(627968),
+    s = n(158954),
+    l = n(552122),
+    a = n(419954),
+    r = n(780964),
+    o = n(840065),
+    d = n(985018);
+let c = (0, a.E2)(r.X.SOUNDS_HOLIDAY_NOTICE, {
+    useSearchTerms: () => [d.intl.string(d.t.fgSHf8)],
+    usePredicate: () => null != l.A.useHolidaySoundpack(),
+    Component: () => (0, i.jsx)(s.EYj, {
         variant: "text-md/normal",
         color: "text-subtle",
-        children: o.intl.format(o.t.Eup6Wv, {
-            onClick: () => (0, u.openUserSettings)(r.X.NOTIFICATIONS_SOUNDS_CATEGORY)
+        children: d.intl.format(d.t.Eup6Wv, {
+            onClick: () => (0, o.openUserSettings)(r.X.NOTIFICATIONS_SOUNDS_CATEGORY)
         })
     })
 })

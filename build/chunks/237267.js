@@ -1,28 +1,28 @@
 /** chunk id: 237267, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(975571),
-    l = n(927578),
+    l = n(975571),
+    a = n(927578),
     r = n(580630),
     o = n(780964),
-    c = n(840065),
-    d = n(652215),
+    d = n(840065),
+    c = n(652215),
     u = n(788868),
     _ = n(985018),
-    m = n(689507);
-let A = function(e) {
+    g = n(689507);
+let m = function(e) {
     let {
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: A,
-        subscriptionIsPausedOrPausePending: g
+        hasGuildAffinitiesOrInGuild: m,
+        subscriptionIsPausedOrPausePending: A
     } = e, {
         subtitle: h,
-        flavor: x
+        flavor: p
     } = function(e) {
         let {
             hasAppliedGuildBoosts: t,
@@ -32,8 +32,8 @@ let A = function(e) {
         } = e;
         if (s) return {
             flavor: _.intl.format(_.t.doslJu, {
-                onClick: () => (0, c.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
-                    section: d.nc_.SUBSCRIPTIONS
+                onClick: () => (0, d.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
+                    section: c.nc_.SUBSCRIPTIONS
                 })
             })
         };
@@ -43,33 +43,33 @@ let A = function(e) {
         if (t) return {
             subtitle: _.intl.string(_.t.W5rDjW),
             flavor: _.intl.format(_.t.cUHcaQ, {
-                helpdeskArticle: a.A.getArticleURL(d.MVz.GUILD_SUBSCRIPTIONS)
+                helpdeskArticle: l.A.getArticleURL(c.MVz.GUILD_SUBSCRIPTIONS)
             })
         };
-        let m = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            A = l.Ay.getDefaultPrice(m.id, n),
-            g = (0, r.CE)((0, r.$g)(A.amount, A.currency), m.interval, m.intervalCount);
+        let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
+            m = a.Ay.getDefaultPrice(g.id, n),
+            A = (0, r.CE)((0, r.$g)(m.amount, m.currency), g.interval, g.intervalCount);
         return {
             subtitle: n ? _.intl.string(_.t.bhPzXR) : _.intl.string(_.t.Zs9h9Z),
             flavor: _.intl.formatToPlainString(_.t.PGgTdA, {
-                monthlyGuildBoostPrice: g
+                monthlyGuildBoostPrice: A
             })
         }
     }({
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: A,
-        subscriptionIsPausedOrPausePending: g
+        hasGuildAffinitiesOrInGuild: m,
+        subscriptionIsPausedOrPausePending: A
     });
     return (0, i.jsxs)("div", {
-        className: m.i,
+        className: g.i,
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-lg/bold",
-            className: m.V,
+            className: g.V,
             children: h
-        }), null != x && (0, i.jsx)(s.Text, {
+        }), null != p && (0, i.jsx)(s.Text, {
             variant: "text-sm/normal",
-            children: x
+            children: p
         })]
     })
 }

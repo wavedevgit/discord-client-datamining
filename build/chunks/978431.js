@@ -1,25 +1,25 @@
-/** chunk id: 978431, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    e: () => S
+/** chunk id: 978431, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    e: () => g
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(380587),
-    a = i(589641),
-    r = i(660353),
-    u = i(360055),
-    o = i(319436),
-    d = i(317014),
-    A = i(39218),
-    T = i(985018);
-let S = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
-    useTitle: () => T.intl.string(T.t.xVRG4P),
+var i = n(419954),
+    s = n(780964),
+    l = n(380587),
+    a = n(589641),
+    r = n(660353),
+    o = n(360055),
+    d = n(319436),
+    c = n(317014),
+    u = n(39218),
+    _ = n(985018);
+let g = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
+    useTitle: () => _.intl.string(_.t.xVRG4P),
     useInlineNotice: function() {
-        let t = (0, a.I)(),
-            e = (0, s.aK)(),
-            i = (0, s.m3)(),
-            n = (0, s.Xj)();
-        return t ?? n ?? i ?? e
+        let e = (0, a.I)(),
+            t = (0, l.aK)(),
+            n = (0, l.m3)(),
+            i = (0, l.Xj)();
+        return e ?? i ?? n ?? t
     },
-    buildLayout: () => [o.v, A.x, d.t, r.u, u.a]
+    buildLayout: () => [d.v, u.x, c.t, r.u, o.a]
 })

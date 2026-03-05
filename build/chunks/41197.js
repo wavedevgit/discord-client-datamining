@@ -1,18 +1,18 @@
-/** chunk id: 41197, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    X: () => T
+/** chunk id: 41197, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    X: () => _
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(805060),
-    a = i(962180),
-    r = i(120051),
-    u = i(100549),
-    o = i(827315),
-    d = i(898560),
-    A = i(985018);
-let T = (0, n.zZ)(l.X.DISPLAY_MESSAGES_CATEGORY, {
-    useTitle: () => A.intl.string(A.t.OIgYlQ),
-    useSearchTerms: () => [A.intl.string(A.t["/VQax8"])],
-    buildLayout: () => [o.g, s.r, a.j, d.z, r.z, u.$]
+var i = n(419954),
+    s = n(780964),
+    l = n(805060),
+    a = n(962180),
+    r = n(120051),
+    o = n(100549),
+    d = n(827315),
+    c = n(898560),
+    u = n(985018);
+let _ = (0, i.zZ)(s.X.DISPLAY_MESSAGES_CATEGORY, {
+    useTitle: () => u.intl.string(u.t.OIgYlQ),
+    useSearchTerms: () => [u.intl.string(u.t["/VQax8"])],
+    buildLayout: () => [d.g, l.r, a.j, c.z, r.z, o.$]
 })

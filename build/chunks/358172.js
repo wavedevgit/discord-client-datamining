@@ -1,54 +1,54 @@
 /** chunk id: 358172, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(417597),
+    l = n.n(s),
+    a = n(417597),
     r = n(421380),
     o = n(397927),
-    c = n(263063),
-    d = n(509536),
+    d = n(263063),
+    c = n(509536),
     u = n(721923),
     _ = n(864310),
-    m = n(71393),
-    A = n(473145),
-    g = n(652215),
+    g = n(71393),
+    m = n(473145),
+    A = n(652215),
     h = n(985018),
-    x = n(246930);
-let p = function(e) {
+    p = n(246930);
+let x = function(e) {
     let {
         className: t,
         guildId: n,
         boostingVariant: s
-    } = e, p = (0, l.bG)([m.A], () => m.A.getGuild(n), [n]), E = (0, _.A)(p?.id).total;
-    return null == p ? (0, i.jsx)("div", {
-        className: a()(t, x.bo),
+    } = e, x = (0, a.bG)([g.A], () => g.A.getGuild(n), [n]), E = (0, _.A)(x?.id).total;
+    return null == x ? (0, i.jsx)("div", {
+        className: l()(t, p.bo),
         children: (0, i.jsx)("div", {
-            className: x.$g,
+            className: p.$g,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-lg/bold",
                 children: h.intl.string(h.t["6Kwwuo"])
             })
         })
     }) : (0, i.jsxs)("div", {
-        className: a()(t, x.bo),
-        children: [(0, i.jsx)(c.Ay, {
-            className: x.__invalid_guildIcon,
-            guild: p,
-            size: c.Ay.Sizes.LARGER
+        className: l()(t, p.bo),
+        children: [(0, i.jsx)(d.Ay, {
+            className: p.__invalid_guildIcon,
+            guild: x,
+            size: d.Ay.Sizes.LARGER
         }), (0, i.jsxs)("div", {
-            className: x.$g,
+            className: p.$g,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-lg/bold",
-                children: p.name
+                children: x.name
             }), (0, i.jsxs)("div", {
-                className: x.TZ,
+                className: p.TZ,
                 children: [(0, i.jsx)(o._Jp, {
                     color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-                    className: x.Me
+                    className: p.Me
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
@@ -56,22 +56,22 @@ let p = function(e) {
                         subscriptions: E
                     })
                 }), (0, i.jsx)("div", {
-                    className: x.me
+                    className: p.me
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
-                    children: (0, A.gb)(p.premiumTier, {
+                    children: (0, m.gb)(x.premiumTier, {
                         useLevels: !1
                     })
                 })]
             })]
         }), s ? (0, i.jsx)(u.A, {
-            guild: p,
+            guild: x,
             analyticsLocation: {
-                page: g.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                section: g.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-                object: g.ZSU.BUTTON_CTA,
-                objectType: g.AnalyticsObjectTypes.BUY
+                page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                section: A.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+                object: A.ZSU.BUTTON_CTA,
+                objectType: A.AnalyticsObjectTypes.BUY
             },
             pauseAnimation: !0,
             size: r.$n.Sizes.MEDIUM,
@@ -81,10 +81,10 @@ let p = function(e) {
             variant: "secondary",
             text: h.intl.string(h.t.KLOhbO),
             onClick: () => {
-                (0, d.K)({
-                    guildId: p.id,
+                (0, c.K)({
+                    guildId: x.id,
                     location: {
-                        section: g.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+                        section: A.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
                     }
                 })
             }

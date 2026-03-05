@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(735438),
-    l = n(942381),
+    l = n(735438),
+    a = n(942381),
     r = n(770178),
     o = n(894858),
-    c = n(641324),
-    d = n(791498),
+    d = n(641324),
+    c = n(791498),
     u = n(78837);
 let _ = s.memo(function(e) {
     let {
@@ -17,8 +17,8 @@ let _ = s.memo(function(e) {
     } = e, {
         useTitle: n,
         layout: _,
-        useCollapsedSubtitle: m
-    } = t, [A, g] = s.useState(!1), [h, x] = s.useState(!0), p = s.useRef(A);
+        useCollapsedSubtitle: g
+    } = t, [m, A] = s.useState(!1), [h, p] = s.useState(!0), x = s.useRef(m);
     s.useEffect(() => o.A.subscribe(e => {
         let {
             navTransition: t
@@ -26,18 +26,18 @@ let _ = s.memo(function(e) {
         return t
     }, e => {
         let n = e?.targetAccordionKey === t.key;
-        n && !A && (p.current = !0, g(!0), x(!1)), n && A && (o.A.setState({
+        n && !m && (x.current = !0, A(!0), p(!1)), n && m && (o.A.setState({
             navTransition: {
                 ...e,
                 targetAccordionKey: void 0
             }
-        }), x(!0))
+        }), p(!0))
     }, {
-        equalityFn: l.x,
+        equalityFn: a.x,
         fireImmediately: !0
-    }), [A, t.key]);
+    }), [m, t.key]);
     let E = s.useCallback(e => {
-            null == e.target || p.current === A || (p.current = A, A && o.A.setState({
+            null == e.target || x.current === m || (x.current = m, m && o.A.setState({
                 navTransition: {
                     targetKey: t.key,
                     targetAccordionKey: t.key,
@@ -45,22 +45,22 @@ let _ = s.memo(function(e) {
                     scrollBlock: "nearest"
                 }
             }))
-        }, [A, t.key]),
-        C = s.useMemo(() => (0, a.debounce)(E, 50), [E]),
-        T = (0, r.w)(C),
-        S = n?.(A),
-        I = m?.(),
-        f = (0, d.q)(t);
+        }, [m, t.key]),
+        T = s.useMemo(() => (0, l.debounce)(E, 50), [E]),
+        S = (0, r.w)(T),
+        C = n?.(m),
+        I = g?.(),
+        f = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
-        ref: T,
-        title: S,
+        ref: S,
+        title: C,
         collapsedSubtitle: I,
-        isExpanded: A,
+        isExpanded: m,
         onExpandedChange: e => {
-            f(), g(e)
+            f(), A(e)
         },
         animate: h,
-        children: _.map(e => (0, i.jsx)(c.A, {
+        children: _.map(e => (0, i.jsx)(d.A, {
             node: e
         }, e.key))
     })

@@ -1,15 +1,15 @@
 /** chunk id: 548392, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    AI: () => j,
-    N4: () => p,
-    cp: () => f
+    AI: () => f,
+    N4: () => j,
+    cp: () => b
 });
 var a = n(627968);
 n(64700);
 var s = n(503698),
-    i = n.n(s),
-    l = n(284009),
-    r = n.n(l),
+    l = n.n(s),
+    i = n(284009),
+    r = n.n(i),
     d = n(340287),
     o = n(397927),
     c = n(27023),
@@ -17,7 +17,7 @@ var s = n(503698),
     m = n(985018),
     x = n(227530);
 
-function g(e) {
+function v(e) {
     let {
         onNext: t
     } = (0, c.bv)();
@@ -31,36 +31,36 @@ function g(e) {
     })
 }
 
-function v(e) {
+function g(e) {
     let {
         onNext: t,
         stepLoading: n,
         gameServerInstance: s,
-        availableBoostCount: i,
-        planCost: l
-    } = (0, c.bv)(), r = l > 0 && i < l, d = l > 0 ? null != s ? m.intl.string(u.default.e3Q5Kz) : m.intl.string(u.default["cmSy/b"]) : m.intl.string(m.t.K344S7);
+        availableBoostCount: l,
+        planCost: i
+    } = (0, c.bv)(), r = i > 0 && l < i, d = i > 0 ? null != s ? m.intl.string(u.default.e3Q5Kz) : m.intl.string(u.default["cmSy/b"]) : m.intl.string(m.t.K344S7);
     return (0, a.jsx)(o.Button, {
-        variant: r || l > 0 ? "expressive" : "primary",
+        variant: r || i > 0 ? "expressive" : "primary",
         text: d,
         onClick: t,
-        icon: r || l > 0 ? o._Jp : void 0,
+        icon: r || i > 0 ? o._Jp : void 0,
         iconPosition: "start",
         loading: n,
         ...e
     })
 }
 
-function f(e) {
+function b(e) {
     let {
         stepAction: t
     } = (0, c.bv)(), n = t?.onNext?.type;
     switch (n) {
         case "go-to-step":
-            return (0, a.jsx)(g, {
+            return (0, a.jsx)(v, {
                 ...e
             });
         case "save":
-            return (0, a.jsx)(v, {
+            return (0, a.jsx)(g, {
                 ...e
             });
         default:
@@ -68,40 +68,40 @@ function f(e) {
     }
 }
 
-function j(e) {
+function f(e) {
     let t, {
             onBack: n,
             stepAction: s
         } = (0, c.bv)(),
-        i = s?.onBack?.type;
-    switch (i) {
+        l = s?.onBack?.type;
+    switch (l) {
         case "go-to-step":
             t = m.intl.string(m.t["13/7kX"]);
             break;
         case "close":
             t = m.intl.string(m.t.cpT0Cq)
     }
-    return r()(null != t, `Invalid stepType ${i}`), (0, a.jsx)(o.Button, {
+    return r()(null != t, `Invalid stepType ${l}`), (0, a.jsx)(o.Button, {
         ...e,
         variant: "secondary",
         text: t,
         onClick: n,
-        icon: "go-to-step" === i ? o.rJJ : void 0,
+        icon: "go-to-step" === l ? o.rJJ : void 0,
         iconPosition: "start"
     })
 }
 
-function p(e) {
+function j(e) {
     let {
         step: t,
         className: n,
         children: s
     } = e, {
-        footerNode: l,
+        footerNode: i,
         step: r
     } = (0, c.bv)();
-    return null == l || r !== t ? null : d.createPortal((0, a.jsx)("div", {
-        className: i()(x.q, n),
+    return null == i || r !== t ? null : d.createPortal((0, a.jsx)("div", {
+        className: l()(x.q, n),
         children: s
-    }), l, t)
+    }), i, t)
 }

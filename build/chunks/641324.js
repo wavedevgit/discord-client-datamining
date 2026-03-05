@@ -5,49 +5,49 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(963935),
-    a = n(347606),
-    l = n(244242),
+    l = n(347606),
+    a = n(244242),
     r = n(578598),
     o = n(318903),
-    c = n(44909),
-    d = n(98254),
+    d = n(44909),
+    c = n(98254),
     u = n(915953),
     _ = n(39216),
-    m = n(43146),
-    A = n(112715),
-    g = n(39043),
+    g = n(43146),
+    m = n(112715),
+    A = n(39043),
     h = n(743961),
-    x = n(896005),
-    p = n(388773),
+    p = n(896005),
+    x = n(388773),
     E = n(691116),
-    C = n(353667),
-    T = n(182884),
-    S = n(115617);
+    T = n(353667),
+    S = n(182884),
+    C = n(115617);
 
 function I(e) {
     let {
         node: t
     } = e;
-    switch ((0, A.Z)(t.initialize), t.type) {
+    switch ((0, m.Z)(t.initialize), t.type) {
         case s.Z6.ROOT:
         case s.Z6.SECTION:
         case s.Z6.SIDEBAR_ITEM:
         case s.Z6.TAB_ITEM:
             throw Error(`${t.type} nodes should never be rendered directly`);
         case s.Z6.PANEL:
-            return (0, i.jsx)(C.j, {
+            return (0, i.jsx)(T.j, {
                 node: t
             });
         case s.Z6.LIST:
-            return (0, i.jsx)(p.A, {
-                node: t
-            });
-        case s.Z6.FIELD_SET:
             return (0, i.jsx)(x.A, {
                 node: t
             });
+        case s.Z6.FIELD_SET:
+            return (0, i.jsx)(p.A, {
+                node: t
+            });
         case s.Z6.RELATED:
-            return (0, i.jsx)(T.A, {
+            return (0, i.jsx)(S.A, {
                 node: t
             });
         case s.Z6.CATEGORY:
@@ -55,15 +55,15 @@ function I(e) {
                 node: t
             });
         case s.Z6.ACCORDION:
-            return (0, i.jsx)(g.A, {
+            return (0, i.jsx)(A.A, {
                 node: t
             });
         case s.Z6.SPLIT:
-            return (0, i.jsx)(S.A, {
+            return (0, i.jsx)(C.A, {
                 node: t
             });
         case s.Z6.TOGGLE:
-            return (0, i.jsx)(m.v, {
+            return (0, i.jsx)(g.v, {
                 node: t
             });
         case s.Z6.STATIC:
@@ -75,11 +75,11 @@ function I(e) {
                 node: t
             });
         case s.Z6.SELECT:
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 node: t
             });
         case s.Z6.RADIO:
-            return (0, i.jsx)(c.A, {
+            return (0, i.jsx)(d.A, {
                 node: t
             });
         case s.Z6.SLIDER:
@@ -95,7 +95,7 @@ function I(e) {
                 node: t
             });
         case s.Z6.CUSTOM:
-            return (0, i.jsx)(l.L, {
+            return (0, i.jsx)(a.L, {
                 children: (0, i.jsx)(t.Component, {})
             })
     }
@@ -107,7 +107,7 @@ function f(e) {
     } = e;
     return t.type === s.Z6.PANEL ? (0, i.jsx)(I, {
         node: t
-    }) : (0, i.jsx)(a.A, {
+    }) : (0, i.jsx)(l.A, {
         node: t,
         children: (0, i.jsx)(I, {
             node: t

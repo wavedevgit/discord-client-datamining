@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(582754),
     _ = n(397927),
     m = n(73153),
-    p = n(442433),
-    g = n(92077),
+    g = n(442433),
+    p = n(92077),
     E = n(979604),
     I = n(707606),
     f = n(456412),
@@ -285,7 +285,7 @@ class W extends r.PureComponent {
         } = this.props;
         return this.renderBody({
             message: w.intl.format(w.t.z1oxGO, {
-                remove: () => g.Vt(e.applicationId, e.branchId)
+                remove: () => p.Vt(e.applicationId, e.branchId)
             }),
             foregroundColor: (0, h.qB)(e.theme) ? u.A.unsafe_rawColors.PRIMARY_300.css : u.A.unsafe_rawColors.PRIMARY_500.css,
             percent: 100
@@ -443,12 +443,12 @@ class W extends r.PureComponent {
 let q = () => (0, i.jsx)(V, {
         icon: _.udU,
         tooltip: w.intl.string(w.t.YGm6SZ),
-        onClick: () => g.U()
+        onClick: () => p.U()
     }),
     K = () => (0, i.jsx)(V, {
         icon: _.E$n,
         tooltip: w.intl.string(w.t.TVAd5J),
-        onClick: () => g.v7()
+        onClick: () => p.v7()
     }),
     z = e => {
         let {
@@ -457,7 +457,7 @@ let q = () => (0, i.jsx)(V, {
         return (0, i.jsx)(V, {
             icon: _.z$m,
             tooltip: w.intl.string(w.t["Eqb+LN"]),
-            onClick: () => g.BO(t.applicationId, t.branchId)
+            onClick: () => p.BO(t.applicationId, t.branchId)
         })
     },
     $ = e => {
@@ -467,7 +467,7 @@ let q = () => (0, i.jsx)(V, {
         return (0, i.jsx)(V, {
             icon: _.PGe,
             tooltip: w.intl.string(w.t["0lFmC9"]),
-            onClick: () => g.ZT(t.applicationId, t.branchId)
+            onClick: () => p.ZT(t.applicationId, t.branchId)
         })
     },
     Q = [{
@@ -531,7 +531,7 @@ class X extends r.PureComponent {
         } = this.props;
         e.forEach(e => {
             e.finished && m.h.wait(() => {
-                g.Vt(e.applicationId, e.branchId)
+                p.Vt(e.applicationId, e.branchId)
             })
         }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = !0
     }
@@ -586,7 +586,7 @@ class X extends r.PureComponent {
                 },
                 rowProps: {
                     onContextMenu: (e, t) => {
-                        p.L3(e, async () => {
+                        g.L3(e, async () => {
                             let {
                                 default: e
                             } = await n.e("881").then(n.bind(n, 163368));

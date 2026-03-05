@@ -6,65 +6,65 @@ n.d(t, {
 var r = n(627968),
     a = n(64700),
     i = n(503698),
-    s = n.n(i),
-    l = n(284009),
-    o = n.n(l),
-    c = n(380278),
-    u = n(837381),
+    l = n.n(i),
+    s = n(284009),
+    o = n.n(s),
+    u = n(380278),
+    c = n(837381),
     d = n(397927),
-    _ = n(964486),
-    m = n(775602),
-    g = n(253932),
-    b = n(894858),
-    p = n(890690),
-    h = n(637577);
+    h = n(964486),
+    g = n(775602),
+    f = n(253932),
+    m = n(894858),
+    y = n(890690),
+    p = n(637577);
 
-function f(e) {
+function v(e) {
     let {
         category: t,
         onClick: n,
         active: a
     } = e, {
         useTitle: i,
-        useSubnavLabel: l,
-        key: c
-    } = t, _ = i?.(), m = l?.() ?? _;
-    return o()(null != m, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(u.tG, {
-        id: c,
+        useSubnavLabel: s,
+        key: u
+    } = t, h = i?.(), g = s?.() ?? h;
+    return o()(null != g, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(c.tG, {
+        id: u,
         children: e => (0, r.jsx)(d.DUT, {
             onClick: n,
-            className: s()(h.AS, {
-                [h.vu]: a
+            className: l()(p.AS, {
+                [p.vu]: a
             }),
             ...e,
-            children: m
-        }, c)
+            children: g
+        }, u)
     })
 }
 
 function x(e) {
     let {
         categories: t
-    } = e, n = b.A.useField("currentCategoryKey");
-    (0, _.Ay)(() => {
-        t.some(e => e.key === n) || b.A.setState({
+    } = e, n = m.A.useField("currentCategoryKey");
+    (0, h.Ay)(() => {
+        t.some(e => e.key === n) || m.A.setState({
             currentCategoryKey: t[0].key
         })
     });
     let i = a.useMemo(() => Math.max(t.findIndex(e => e.key === n), 0), [t, n]),
         {
-            thumbRef: s,
-            trackRef: l,
+            thumbRef: l,
+            trackRef: s,
             thumbAnchorRef: o,
-            springs: u
+            springs: c
         } = function(e) {
-            let t = g.Xi.useSetting(),
+            let t = f.Xi.useSetting(),
                 n = a.useRef(null),
                 r = a.useRef(null),
                 i = a.useRef(null),
-                s = a.useRef(!0),
-                l = a.useRef(t),
-                [o, c] = (0, d.zhh)(() => ({
+                l = a.useRef(!0),
+                s = a.useRef(t),
+                [o, u] = (0, d.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -74,30 +74,30 @@ function x(e) {
                     }
                 }));
             return a.useLayoutEffect(() => {
-                let e = l.current !== t,
+                let e = s.current !== t,
                     a = () => {
                         if (null == n.current || null == r.current || null == i.current) return;
-                        let [a, u] = [n.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = a.width / 2, _ = (u.y - a.y) / d, g = u.height / d;
-                        s.current || e || m.A.useReducedMotion ? (o.y.set(_), o.height.set(g)) : c({
-                            y: _,
-                            height: g
-                        }), s.current = !1, l.current = t
+                        let [a, c] = [n.current.getBoundingClientRect(), i.current.getBoundingClientRect()], d = a.width / 2, h = (c.y - a.y) / d, f = c.height / d;
+                        l.current || e || g.A.useReducedMotion ? (o.y.set(h), o.height.set(f)) : u({
+                            y: h,
+                            height: f
+                        }), l.current = !1, s.current = t
                     },
-                    u = null;
-                return e ? u = requestAnimationFrame(() => {
-                    u = null, a()
+                    c = null;
+                return e ? c = requestAnimationFrame(() => {
+                    c = null, a()
                 }) : a(), () => {
-                    null != u && cancelAnimationFrame(u)
+                    null != c && cancelAnimationFrame(c)
                 }
-            }, [e, c, o.y, o.height, t]), {
+            }, [e, u, o.y, o.height, t]), {
                 thumbRef: r,
                 trackRef: n,
                 thumbAnchorRef: i,
                 springs: o
             }
         }(i);
-    return (0, p.u)(t), (0, r.jsxs)("div", {
-        className: h.o8,
+    return (0, y.u)(t), (0, r.jsxs)("div", {
+        className: p.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
@@ -105,22 +105,22 @@ function x(e) {
             "--custom-nav-width": "2px"
         },
         children: [(0, r.jsx)("div", {
-            className: h.u4,
+            className: p.u4,
             "aria-hidden": "true",
-            ref: l,
-            children: (0, r.jsx)(c.animated.div, {
-                className: h.FF,
-                style: u,
-                ref: s
+            ref: s,
+            children: (0, r.jsx)(u.animated.div, {
+                className: p.FF,
+                style: c,
+                ref: l
             })
         }), (0, r.jsx)("div", {
-            className: h.gu,
+            className: p.gu,
             "aria-hidden": "true",
             ref: o
-        }), t.map(e => (0, r.jsx)(f, {
+        }), t.map(e => (0, r.jsx)(v, {
             onClick: () => {
                 var t;
-                return t = e.key, void b.A.setState({
+                return t = e.key, void m.A.setState({
                     requestedTargetKey: t,
                     showNavigationMobile: !1
                 })

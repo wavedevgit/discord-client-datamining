@@ -25,19 +25,19 @@ function m(e) {
         guildIds: n,
         loading: A,
         onScroll: m,
-        onGuildCardClick: p,
-        onGuildCardSeen: g
+        onGuildCardClick: g,
+        onGuildCardSeen: p
     } = e, E = (0, c.kc)(t), I = (0, c.Ot)(t), f = (0, c.UW)(t), C = (0, c.Ub)(t), T = r.useMemo(() => {
         let e = A ? 30 : n.length,
             t = [];
         for (let r = 0; r < e; r++) t.push((0, i.jsx)(u.jO, {
             guildId: n[r] ?? null,
             index: r,
-            onClick: e => p(e, r, C, _),
-            onView: e => g(e, C)
+            onClick: e => g(e, r, C, _),
+            onView: e => p(e, C)
         }, n[r] ?? r));
         return t
-    }, [C, n, A, p, g]);
+    }, [C, n, A, g, p]);
     return (0, i.jsxs)(d.A, {
         onScroll: m,
         children: [(0, i.jsx)(s.A, {

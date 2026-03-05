@@ -1,25 +1,25 @@
-/** chunk id: 440938, original params: t,e,a (module,exports,require) **/
-a.d(e, {
-    R9: () => i,
-    uM: () => s
+/** chunk id: 440938, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    R9: () => s,
+    uM: () => r
 });
-var n = a(627968),
-    l = a(64700);
-let r = l.createContext(null);
+var t = a(627968),
+    i = a(64700);
+let l = i.createContext(null);
 
-function s() {
-    return l.useContext(r)
+function r() {
+    return i.useContext(l)
 }
 
-function i(t) {
+function s(e) {
     let {
-        newValue: e,
+        newValue: n,
         children: a
-    } = t, i = s(), o = l.useMemo(() => ({
-        ...i,
-        ...e
-    }), [i, e]);
-    return (0, n.jsx)(r.Provider, {
+    } = e, s = r(), o = i.useMemo(() => ({
+        ...s,
+        ...n
+    }), [s, n]);
+    return (0, t.jsx)(l.Provider, {
         value: o,
         children: a
     })

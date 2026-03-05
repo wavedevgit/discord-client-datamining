@@ -80,7 +80,7 @@ let m = [{
         getTooltip: () => h.intl.string(h.t.VudViJ),
         IconComponent: u.A
     }],
-    p = e => {
+    g = e => {
         let {
             IconComponent: t,
             text: n,
@@ -103,7 +103,7 @@ let m = [{
             })]
         })
     };
-class g extends r.PureComponent {
+class p extends r.PureComponent {
     render() {
         let {
             sku: e
@@ -119,7 +119,7 @@ class g extends r.PureComponent {
                 getText: r,
                 getTooltip: l
             } = e;
-            return (0, i.jsx)(p, {
+            return (0, i.jsx)(g, {
                 IconComponent: n,
                 text: r(),
                 tooltip: l()
@@ -133,4 +133,4 @@ class g extends r.PureComponent {
         })
     }
 }
-let E = g
+let E = p

@@ -15,9 +15,9 @@ var i = n(537569),
     h = n(704591),
     _ = n(531181),
     m = n(500094),
-    p = n(840251),
-    g = n(688151);
+    g = n(840251),
+    p = n(688151);
 let E = [l.s2, s.m, h.ks, A.UL, u.qe, a.LA, r.t4, d.A, m.A, i.v, r.ds, c.q, o.A, _.o],
-    I = new p.E(E, g.$G.CONNECTION_OPEN, {
+    I = new g.E(E, p.$G.CONNECTION_OPEN, {
         location: "app open"
     })

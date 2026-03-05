@@ -48,8 +48,8 @@ let x = l.memo(function(e) {
         videoAspectRatio: O,
         wrapperRef: L,
         panOffset: P,
-        setPanOffset: k,
-        clampPanOffset: w
+        setPanOffset: w,
+        clampPanOffset: k
     } = l.useContext(A.e9), [U, G] = l.useState(!1), F = l.useRef(null), H = T > N, B = l.useCallback(() => {
         C("interact")
     }, [C]), V = l.useCallback(() => {
@@ -60,28 +60,28 @@ let x = l.memo(function(e) {
             "--custom-zoom-minimap-width": `${e}px`,
             "--custom-zoom-minimap-height": "120px"
         }
-    }, [O]), z = l.useCallback(e => {
+    }, [O]), W = l.useCallback(e => {
         if (null == F.current || null == L.current) return;
         let t = F.current.getBoundingClientRect(),
             n = L.current.clientWidth,
             i = L.current.clientHeight,
             l = e.x - t.left,
             s = e.y - t.top;
-        k(w({
+        w(k({
             x: (.5 - l / t.width) * n * T,
             y: (.5 - s / t.height) * i * T
         }))
-    }, [w, T, L, k]), W = l.useCallback(e => {
-        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), z({
+    }, [k, T, L, w]), z = l.useCallback(e => {
+        E(e) && (e.preventDefault(), e.stopPropagation(), G(!0), W({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [z]), Y = l.useCallback(e => {
-        U && (e.preventDefault(), e.stopPropagation(), z({
+    }, [W]), Y = l.useCallback(e => {
+        U && (e.preventDefault(), e.stopPropagation(), W({
             x: e.clientX,
             y: e.clientY
         }))
-    }, [U, z]), q = l.useCallback(e => {
+    }, [U, W]), q = l.useCallback(e => {
         !U || E(e) || (e.preventDefault(), e.stopPropagation(), G(!1))
     }, [U]), J = m.Ay.getVideoComponent(), $ = l.useMemo(() => {
         let e = null != L.current ? L.current.clientWidth : 1,
@@ -123,7 +123,7 @@ let x = l.memo(function(e) {
                 ref: F,
                 className: f.Wc,
                 style: K,
-                onMouseDown: W,
+                onMouseDown: z,
                 onMouseMove: Y,
                 onMouseUp: q,
                 children: [(0, i.jsx)(J, {

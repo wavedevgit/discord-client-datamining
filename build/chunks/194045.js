@@ -16,8 +16,8 @@ var r = n(397927),
     h = n(518647),
     _ = n(796774),
     m = n(209932),
-    p = n(123973),
-    g = n(646202),
+    g = n(123973),
+    p = n(646202),
     E = n(102597),
     I = n(904054),
     f = n(857179),
@@ -65,7 +65,7 @@ class S extends h.A {
         let {
             state: t
         } = e;
-        t === C.S7L.RTC_CONNECTED && (0, g.fN)("SoundboardManager") && (0, _.E7)({
+        t === C.S7L.RTC_CONNECTED && (0, p.fN)("SoundboardManager") && (0, _.E7)({
             disableAnalytics: !0
         })
     };
@@ -76,7 +76,7 @@ class S extends h.A {
         if (null == e) return;
         let l = d.A.getChannel(t),
             a = A.Ay.getKeybindForAction(C.hCu.SOUNDBOARD_HOLD);
-        null != l && (0, p.Ay)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, r.mMO)(async () => {
+        null != l && (0, g.Ay)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, r.mMO)(async () => {
             let {
                 default: t
             } = await n.e("51143").then(n.bind(n, 888762));

@@ -1,33 +1,33 @@
 /** chunk id: 608416, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    $G: () => d,
-    Ay: () => g,
-    MN: () => A,
+    $G: () => c,
+    Ay: () => A,
+    MN: () => m,
     Mp: () => u,
     XN: () => _,
-    aV: () => m
+    aV: () => g
 });
-var i, s, a = n(627968),
-    l = n(64700),
+var i, s, l = n(627968),
+    a = n(64700),
     r = n(380278),
     o = n(397927),
-    c = n(396583);
-let d = 3e3,
+    d = n(396583);
+let c = 3e3,
     u = 4e3,
     _ = 6e3;
-var m = ((i = {}).SINE = "sine", i.COSINE = "cosine", i),
-    A = ((s = {}).UP = "up", s.DOWN = "down", s);
-let g = e => {
+var g = ((i = {}).SINE = "sine", i.COSINE = "cosine", i),
+    m = ((s = {}).UP = "up", s.DOWN = "down", s);
+let A = e => {
     let {
         blurAnimationData: t,
         scaleAnimationData: n,
         yAxisAnimationData: i,
         parallaxAnimationData: s,
-        animateXAxisWiggle: d = !1,
+        animateXAxisWiggle: c = !1,
         isMotionReduced: u = !1,
         animationSpeedScale: _ = 1,
-        children: m
-    } = e, A = (0, o.zhh)(null != i ? {
+        children: g
+    } = e, m = (0, o.zhh)(null != i ? {
         from: {
             y: 0
         },
@@ -40,7 +40,7 @@ let g = e => {
         loop: !0
     } : {
         y: 0
-    }), g = i?.path === "sine" ? Math.sin : Math.cos, [h, x] = (0, l.useState)(1), p = (0, o.zhh)(null != n ? {
+    }), A = i?.path === "sine" ? Math.sin : Math.cos, [h, p] = (0, a.useState)(1), x = (0, o.zhh)(null != n ? {
         from: {
             scale: h > 0 ? n.startScale : n.endScale
         },
@@ -50,10 +50,10 @@ let g = e => {
         config: {
             duration: n.duration * _
         },
-        onRest: () => x(e => -1 * e)
+        onRest: () => p(e => -1 * e)
     } : {
         scale: 1
-    }), [E, C] = (0, l.useState)(1), T = (0, o.zhh)(null != t ? {
+    }), [E, T] = (0, a.useState)(1), S = (0, o.zhh)(null != t ? {
         from: {
             blur: E > 0 ? t.startBlurRadius : t.endBlurRadius
         },
@@ -63,24 +63,24 @@ let g = e => {
         config: {
             duration: t.duration * _
         },
-        onRest: () => C(e => -1 * e)
+        onRest: () => T(e => -1 * e)
     } : {
         blur: 0
-    }), S = (0, l.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, l.useState)(0), [N, b] = (0, l.useState)(1), j = (0, o.zhh)({
+    }), C = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, a.useState)(0), [b, N] = (0, a.useState)(1), v = (0, o.zhh)({
         xOffset: I,
         config: {
             tension: 10,
             friction: 10,
-            duration: S
+            duration: C
         }
     });
-    return ((0, c.A)(() => {
-        f(N * (.5 * Math.random() * 5 + 2.5)), b(e => -1 * e)
-    }, S), u) ? m : (0, a.jsx)(r.animated.div, {
+    return ((0, d.A)(() => {
+        f(b * (.5 * Math.random() * 5 + 2.5)), N(e => -1 * e)
+    }, C), u) ? g : (0, l.jsx)(r.animated.div, {
         style: {
-            transform: A.y?.to(e => {
+            transform: m.y?.to(e => {
                 if (null == i) return "translateY(0px)";
-                let t = g(e * Math.PI * 2) * i.range,
+                let t = A(e * Math.PI * 2) * i.range,
                     n = 0;
                 if (null != s) {
                     let e = s.range * (1 - s.containerVisibilityPercentage);
@@ -88,11 +88,11 @@ let g = e => {
                 }
                 return `translateY(${t+n}px)`
             }),
-            translateX: d ? j.xOffset.to(e => `${e}px`) : 0,
-            scale: p.scale,
-            filter: T.blur?.to(e => `blur(${e}px)`),
+            translateX: c ? v.xOffset.to(e => `${e}px`) : 0,
+            scale: x.scale,
+            filter: S.blur?.to(e => `blur(${e}px)`),
             opacity: null != s && s.changeOpacity ? s.containerVisibilityPercentage : 1
         },
-        children: m
+        children: g
     })
 }

@@ -1,49 +1,49 @@
 /** chunk id: 508971, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(989349),
-    r = n.n(l),
+    l = n.n(s),
+    a = n(989349),
+    r = n.n(a),
     o = n(397927),
-    c = n(405269),
-    d = n(927018),
+    d = n(405269),
+    c = n(927018),
     u = n(906688),
     _ = n(869295);
 
-function m(e) {
+function g(e) {
     let {
         achievementId: t,
         dateUnlocked: n
-    } = e, s = (0, d.vM)(t);
+    } = e, s = (0, c.vM)(t);
     if (null == s) return null;
-    let l = null != n,
+    let a = null != n,
         {
-            name: m,
-            description: A,
-            hideDescriptionUntilUnlock: g,
+            name: g,
+            description: m,
+            hideDescriptionUntilUnlock: A,
             onAction: h
         } = s,
-        x = g && !l,
-        p = l ? "text-strong" : "text-muted",
-        E = l ? "text-default" : "text-muted",
-        C = r()(n),
-        T = null != h && l,
-        S = T ? o.DUT : "div";
-    return (0, i.jsxs)(S, {
-        className: a()(_.kL, T && _.b),
+        p = A && !a,
+        x = a ? "text-strong" : "text-muted",
+        E = a ? "text-default" : "text-muted",
+        T = r()(n),
+        S = null != h && a,
+        C = S ? o.DUT : "div";
+    return (0, i.jsxs)(C, {
+        className: l()(_.kL, S && _.b),
         onClick: () => {
-            T && h()
+            S && h()
         },
         children: [(0, i.jsx)("div", {
             className: _.zc,
             children: (0, i.jsx)(u.A, {
                 achievementId: t,
                 size: u.A.Sizes.SIZE_40,
-                unlocked: l
+                unlocked: a
             })
         }), (0, i.jsxs)("div", {
             className: _.VW,
@@ -51,15 +51,15 @@ function m(e) {
                 variant: "text-xxs/semibold",
                 color: "text-muted",
                 className: _.YR,
-                children: (0, c.mk)(C)
+                children: (0, d.mk)(T)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-md/medium",
-                color: p,
-                children: m()
+                color: x,
+                children: g()
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: E,
-                children: x ? "?????" : A()
+                children: p ? "?????" : m()
             })]
         })]
     })

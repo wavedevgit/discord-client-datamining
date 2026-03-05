@@ -1,12 +1,12 @@
-/** chunk id: 956651, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 956651, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     M: () => r
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(768908),
-    a = i(985018);
-let r = (0, n.E2)(l.X.REGISTERED_GAMES_ADD_GAME_SETTING, {
+var i = n(419954),
+    s = n(780964),
+    l = n(768908),
+    a = n(985018);
+let r = (0, i.E2)(s.X.REGISTERED_GAMES_ADD_GAME_SETTING, {
     useSearchTerms: () => [a.intl.string(a.t.GTCx0p)],
-    Component: s.Wx
+    Component: l.Wx
 })

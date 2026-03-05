@@ -1,13 +1,13 @@
-/** chunk id: 74973, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    z: () => u
+/** chunk id: 74973, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    z: () => o
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(400442),
-    a = i(962180),
-    r = i(985018);
-let u = (0, n.zZ)(l.X.CHAT_EMOJI_CATEGORY, {
+var i = n(419954),
+    s = n(780964),
+    l = n(400442),
+    a = n(962180),
+    r = n(985018);
+let o = (0, i.zZ)(s.X.CHAT_EMOJI_CATEGORY, {
     useTitle: () => r.intl.string(r.t.sMOuuS),
-    buildLayout: () => [a.j, s.j]
+    buildLayout: () => [a.j, l.j]
 })

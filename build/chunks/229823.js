@@ -1,54 +1,54 @@
-/** chunk id: 229823, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    j: () => d
+/** chunk id: 229823, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    j: () => c
 });
-var n = i(311907),
-    l = i(274372),
-    s = i(399925),
-    a = i(419954),
-    r = i(780964),
-    u = i(753070),
-    o = i(985018);
-let d = (0, a.Hn)(r.X.CLIPS_RESOLUTION, {
-    useTitle: () => o.intl.string(o.t.aFudZJ),
-    useSubtitle: () => o.intl.string(o.t.nIrkW5),
-    useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipsQuality.resolution),
-    setValue: t => {
+var i = n(311907),
+    s = n(274372),
+    l = n(399925),
+    a = n(419954),
+    r = n(780964),
+    o = n(753070),
+    d = n(985018);
+let c = (0, a.Hn)(r.X.CLIPS_RESOLUTION, {
+    useTitle: () => d.intl.string(d.t.aFudZJ),
+    useSubtitle: () => d.intl.string(d.t.nIrkW5),
+    useValue: () => (0, i.bG)([s.A], () => s.A.getSettings().clipsQuality.resolution),
+    setValue: e => {
         let {
-            clipsQuality: e
-        } = l.A.getSettings();
-        s.GS({
-            resolution: t,
-            frameRate: e.frameRate
+            clipsQuality: t
+        } = s.A.getSettings();
+        l.GS({
+            resolution: e,
+            frameRate: t.frameRate
         })
     },
     useOptions: () => [{
         id: "480p",
-        value: u.on.RESOLUTION_480,
-        label: o.intl.formatToPlainString(o.t.TEOC0I, {
-            resolution: u.on.RESOLUTION_480
+        value: o.on.RESOLUTION_480,
+        label: d.intl.formatToPlainString(d.t.TEOC0I, {
+            resolution: o.on.RESOLUTION_480
         })
     }, {
         id: "720p",
-        value: u.on.RESOLUTION_720,
-        label: o.intl.formatToPlainString(o.t.TEOC0I, {
-            resolution: u.on.RESOLUTION_720
+        value: o.on.RESOLUTION_720,
+        label: d.intl.formatToPlainString(d.t.TEOC0I, {
+            resolution: o.on.RESOLUTION_720
         })
     }, {
         id: "1080p",
-        value: u.on.RESOLUTION_1080,
-        label: o.intl.formatToPlainString(o.t.TEOC0I, {
-            resolution: u.on.RESOLUTION_1080
+        value: o.on.RESOLUTION_1080,
+        label: d.intl.formatToPlainString(d.t.TEOC0I, {
+            resolution: o.on.RESOLUTION_1080
         })
     }, {
         id: "1440p",
-        value: u.on.RESOLUTION_1440,
-        label: o.intl.formatToPlainString(o.t.TEOC0I, {
-            resolution: u.on.RESOLUTION_1440
+        value: o.on.RESOLUTION_1440,
+        label: d.intl.formatToPlainString(d.t.TEOC0I, {
+            resolution: o.on.RESOLUTION_1440
         })
     }, {
         id: "source",
-        value: u.on.RESOLUTION_SOURCE,
-        label: o.intl.string(o.t.XjXqzh)
+        value: o.on.RESOLUTION_SOURCE,
+        label: d.intl.string(d.t.XjXqzh)
     }]
 })

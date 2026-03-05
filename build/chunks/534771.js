@@ -1,16 +1,16 @@
-/** chunk id: 534771, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => o
+/** chunk id: 534771, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => d
 });
-var n = i(479715),
-    l = i(81335),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.PROFILE_UPDATES_NOTIFICATIONS, {
-    useTitle: () => u.intl.string(u.t.xBLMhQ),
+var i = n(479715),
+    s = n(81335),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.PROFILE_UPDATES_NOTIFICATIONS, {
+    useTitle: () => o.intl.string(o.t.xBLMhQ),
     useValue: a.T3.useSetting,
-    setValue: l.T,
-    usePredicate: () => (0, n.ZA)("user_settings.ProfileUpdatesNotifications").showSettingsToggle
+    setValue: s.T,
+    usePredicate: () => (0, i.ZA)("user_settings.ProfileUpdatesNotifications").showSettingsToggle
 })

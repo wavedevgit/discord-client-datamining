@@ -1,15 +1,15 @@
 /** chunk id: 128450, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(397927),
     o = n(453771),
-    c = n(450232),
-    d = n(212168),
+    d = n(450232),
+    c = n(212168),
     u = n(317448);
 
 function _(e) {
@@ -28,42 +28,42 @@ function _(e) {
         }, t))
     })
 }
-let m = s.forwardRef(function(e, t) {
+let g = s.forwardRef(function(e, t) {
     let {
         title: n,
         titleIcon: s,
-        titleId: a,
+        titleId: l,
         description: o,
-        children: m,
-        className: A,
-        errors: g,
+        children: g,
+        className: m,
+        errors: A,
         disabled: h = !1,
-        hideDivider: x = !1,
-        showBorder: p = !1,
+        hideDivider: p = !1,
+        showBorder: x = !1,
         borderType: E,
-        hasBackground: C = !1,
-        forcedDivider: T = !1,
-        showPremiumIcon: S = !1
+        hasBackground: T = !1,
+        forcedDivider: S = !1,
+        showPremiumIcon: C = !1
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(u.fz, A, {
+        className: a()(u.fz, m, {
             [u.r9]: h,
-            [u.Ai]: x,
-            [u.Ac]: p,
-            [u.Cx]: T
+            [u.Ai]: p,
+            [u.Ac]: x,
+            [u.Cx]: S
         }),
         ref: t,
-        children: (0, i.jsxs)(d.A, {
+        children: (0, i.jsxs)(c.A, {
             className: u.D6,
             backgroundClassName: u.fr,
-            isShown: p,
+            isShown: x,
             type: E,
-            hasBackground: C,
+            hasBackground: T,
             children: [(0, i.jsxs)(r.zEo, {
                 className: u.DD,
-                id: a,
+                id: l,
                 "data-migration-pending": !0,
-                children: [n, S && (0, i.jsx)(c.A, {
+                children: [n, C && (0, i.jsx)(d.A, {
                     size: "xs"
                 }), s]
             }), null != o ? (0, i.jsx)(r.ayl, {
@@ -71,8 +71,8 @@ let m = s.forwardRef(function(e, t) {
                 className: u.yV,
                 "data-migration-pending": !0,
                 children: o
-            }) : null, m, null != g && (0, i.jsx)(_, {
-                errors: g
+            }) : null, g, null != A && (0, i.jsx)(_, {
+                errors: A
             })]
         })
     })

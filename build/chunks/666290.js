@@ -16,9 +16,9 @@ var r = n(284009),
     h = n(290987),
     _ = n(427262),
     m = n(516085),
-    p = n(928636);
+    g = n(928636);
 n(595);
-var g = n(652215),
+var p = n(652215),
     E = n(985018);
 
 function I(e) {
@@ -85,11 +85,11 @@ function I(e) {
             let t = m.Ij(I);
             if (null != t) return t;
             switch (I.type) {
-                case g.$pd.PLAYING:
+                case p.$pd.PLAYING:
                     if ((0, o.A)(I)) return {
                         subtitle: E.intl.string(E.t.tO8wOx),
-                        icon: (0, i.jsx)(p.A.Header.Icon, {
-                            src: p.A.Header.Icon.Src.XBOX
+                        icon: (0, i.jsx)(g.A.Header.Icon, {
+                            src: g.A.Header.Icon.Src.XBOX
                         })
                     };
                     return {
@@ -97,23 +97,23 @@ function I(e) {
                             start: f,
                             location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                             messageProps: C
-                        }), icon: null != e ? (0, i.jsx)(p.A.Header.Icon, {
+                        }), icon: null != e ? (0, i.jsx)(g.A.Header.Icon, {
                             src: null != e.getIconURL(64) ? e.getIconURL(64) : n(960648)
                         }) : null
                     };
-                case g.$pd.STREAMING:
+                case p.$pd.STREAMING:
                     return {
-                        subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                        subtitle: E.intl.string(E.t.HyGHj7), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                             src: e.getIconURL(64)
                         }) : null
                     };
-                case g.$pd.LISTENING:
+                case p.$pd.LISTENING:
                     let r;
-                    return r = (0, s.A)(I) ? (0, i.jsx)(p.A.Header.Icon, {
-                        src: p.A.Header.Icon.Src.SPOTIFY
-                    }) : null != e.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                    return r = (0, s.A)(I) ? (0, i.jsx)(g.A.Header.Icon, {
+                        src: g.A.Header.Icon.Src.SPOTIFY
+                    }) : null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                         src: e.getIconURL(64)
-                    }) : (0, i.jsx)(p.A.Header.Icon, {
+                    }) : (0, i.jsx)(g.A.Header.Icon, {
                         src: n(960648)
                     }), {
                         subtitle: E.intl.formatToPlainString(E.t.NF5xop, {
@@ -121,11 +121,11 @@ function I(e) {
                         }),
                         icon: r
                     };
-                case g.$pd.WATCHING:
+                case p.$pd.WATCHING:
                     return {
                         subtitle: E.intl.formatToPlainString(E.t.pW3Ip3, {
                             name: I.name
-                        }), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                        }), icon: null != e && null != e.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                             src: e.getIconURL(64)
                         }) : null
                     };
@@ -149,10 +149,10 @@ function I(e) {
                     let e = m.Ij(t);
                     if (null != e) return e
                 }
-                if (null != t && t.type === g.$pd.LISTENING) return {
+                if (null != t && t.type === p.$pd.LISTENING) return {
                     subtitle: E.intl.string(E.t.rmnkz4),
-                    icon: (0, i.jsx)(p.A.Header.Icon, {
-                        src: p.A.Header.Icon.Src.SPOTIFY
+                    icon: (0, i.jsx)(g.A.Header.Icon, {
+                        src: g.A.Header.Icon.Src.SPOTIFY
                     })
                 }
             }
@@ -173,15 +173,15 @@ function I(e) {
                     location: h.Ay.Locations.ACTIVITY_FEED_NEW,
                     messageProps: C
                 }),
-                icon: null != n && null != n.getIconURL(64) ? (0, i.jsx)(p.A.Header.Icon, {
+                icon: null != n && null != n.getIconURL(64) ? (0, i.jsx)(g.A.Header.Icon, {
                     src: n.getIconURL(64)
                 }) : null
             }
         }
         return {
             subtitle: E.intl.string(E.t.sau5tt),
-            icon: (0, i.jsx)(p.A.Header.Icon, {
-                src: p.A.Header.Icon.Src.MULTIPLE
+            icon: (0, i.jsx)(g.A.Header.Icon, {
+                src: g.A.Header.Icon.Src.MULTIPLE
             })
         }
     }(t), v = (0, A.A)({
@@ -194,7 +194,7 @@ function I(e) {
     }), b = (0, c.a)({
         displayNameStyles: y
     });
-    return (0, i.jsx)(p.A.Header, {
+    return (0, i.jsx)(g.A.Header, {
         priorityUser: T,
         guildId: C?.id,
         title: N,

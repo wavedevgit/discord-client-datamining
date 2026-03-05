@@ -1,4 +1,5 @@
-/** chunk id: 960016, original params: e,t,i (module,exports,require) **/
+/** chunk id: 960016, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     WM: "facepile_aaa08b",
     Iu: "facepileItemContainer_aaa08b",

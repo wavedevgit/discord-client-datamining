@@ -18,29 +18,29 @@ function o(e) {
         isQuestAccepted: u,
         prevIsQuestAccepted: m,
         impressionRef: h,
-        onQuestBarFocus: p
-    } = e, x = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [b, v] = a.useState(!1), j = a.useCallback(() => {
+        onQuestBarFocus: x
+    } = e, p = a.useRef(-1), g = a.useRef(!1), [_, f] = a.useState(!1), [v, b] = a.useState(!1), j = a.useCallback(() => {
         f(!0)
     }, []), A = a.useCallback(() => {
         f(!1), g.current || c || o(!1)
     }, [c, o]), C = a.useCallback(() => {
         f(!1), c || o(!1), g.current = !1
-    }, [c, o]), T = a.useCallback(() => {
-        v(!0)
-    }, []), y = a.useCallback(() => {
-        v(!1), o(!1)
+    }, [c, o]), y = a.useCallback(() => {
+        b(!0)
+    }, []), T = a.useCallback(() => {
+        b(!1), o(!1)
     }, [o]), S = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-        if (p(), n) return;
+        if (x(), n) return;
         let {
             withDelay: t = !1
         } = e;
-        t ? x.current = window.setTimeout(d, 75) : d()
-    }, [d, n, p]), E = a.useCallback(() => {
+        t ? p.current = window.setTimeout(d, 75) : d()
+    }, [d, n, x]), E = a.useCallback(() => {
         S()
     }, [S]), N = a.useCallback(() => {
-        window.clearTimeout(x.current), _ || b || g.current || o(!1)
-    }, [_, b, o]), I = a.useCallback(() => {
+        window.clearTimeout(p.current), _ || v || g.current || o(!1)
+    }, [_, v, o]), I = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER,
@@ -67,19 +67,19 @@ function o(e) {
         }), g.current = !1, N()
     }, [N, h, t.id]);
     return a.useEffect(() => {
-        b && k()
-    }, [b, k]), a.useLayoutEffect(() => {
+        v && k()
+    }, [v, k]), a.useLayoutEffect(() => {
         u && !m && g.current && d()
     }, [d, u, m]), a.useLayoutEffect(() => {
         c || !u || m || g.current || o(!1)
     }, [u, c, m, o]), {
         ctxMenuOpen: _,
-        gameSheetOpen: b,
+        gameSheetOpen: v,
         handleCtxMenuOpened: j,
         handleCtxMenuClosed: A,
         handleCtxMenuSelection: C,
-        handleGameSheetOpened: T,
-        handleGameSheetClosed: y,
+        handleGameSheetOpened: y,
+        handleGameSheetClosed: T,
         handleFocus: S,
         handleFocusWithoutDelay: E,
         handleBlur: N,

@@ -1,17 +1,17 @@
 /** chunk id: 481354, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968);
 n(64700);
 var s = n(953727);
 
-function a(e) {
+function l(e) {
     let {
         width: t = 106,
         height: n = 43,
-        color: a = "currentColor",
-        foreground: l,
+        color: l = "currentColor",
+        foreground: a,
         ...r
     } = e;
     return (0, i.jsx)("svg", {
@@ -20,8 +20,8 @@ function a(e) {
         height: n,
         viewBox: "0 0 106 43",
         children: (0, i.jsxs)("g", {
-            fill: a,
-            className: l,
+            fill: l,
+            className: a,
             fillRule: "evenodd",
             "aria-hidden": !0,
             children: [(0, i.jsx)("path", {

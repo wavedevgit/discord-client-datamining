@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(397927),
-    a = n(790114),
-    l = n(295057);
+    l = n(790114),
+    a = n(295057);
 let r = e => {
     let {
         children: t,
         header: n,
         notice: r
-    } = e, o = (0, a.A)();
+    } = e, o = (0, l.A)();
     return (0, i.jsxs)("div", {
-        className: l.r,
+        className: a.r,
         children: [r, !o && (0, i.jsx)(s.Fmo, {
             children: (0, i.jsx)(s.Heading, {
                 variant: "heading-xl/semibold",

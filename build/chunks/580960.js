@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(73153),
-    r = n(272355),
-    a = n(793574),
+    a = n(272355),
+    r = n(793574),
     o = n(532794),
     c = n(219271),
     d = n(287809),
@@ -18,7 +18,7 @@ var s = n(397927),
     m = n(869968),
     p = n(694080),
     g = n(70730);
-class _ extends r.A {
+class _ extends a.A {
     _premiumPaymentModalCloseResolve = null;
     _premiumPaymentModalCloseReject = null;
     _initialize() {
@@ -68,7 +68,7 @@ class _ extends r.A {
     _handlePremiumPaymentModalOpen = e => {
         (0, o.A)({
             ...e,
-            analyticsLocations: [a.A.OVERLAY],
+            analyticsLocations: [r.A.OVERLAY],
             onClose: e => {
                 l.h.dispatch({
                     type: "PREMIUM_PAYMENT_MODAL_CLOSE",
@@ -102,8 +102,8 @@ class _ extends r.A {
             followupSKUInfo: i,
             analyticsObject: s
         } = e ?? {};
-        return new Promise((e, r) => {
-            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = r, l.h.dispatch({
+        return new Promise((e, a) => {
+            this._premiumPaymentModalCloseResolve = e, this._premiumPaymentModalCloseReject = a, l.h.dispatch({
                 type: "PREMIUM_PAYMENT_MODAL_OPEN",
                 initialPlanId: t,
                 subscriptionTier: n,

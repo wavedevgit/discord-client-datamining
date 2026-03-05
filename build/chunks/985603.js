@@ -16,8 +16,8 @@ var r = n(835245),
     h = n(933958),
     _ = n(956549),
     m = n(257269),
-    p = n(793574),
-    g = n(627363),
+    g = n(793574),
+    p = n(627363),
     E = n(121623),
     I = n(200330),
     f = n(708281),
@@ -226,7 +226,7 @@ let G = {
                                     failure_reason: "activity_already_running",
                                     attempt_id: n
                                 });
-                                let r = await g.Ay.fetchApplication(e),
+                                let r = await p.Ay.fetchApplication(e),
                                     l = r?.bot?.id;
                                 if (null == l) return void b.default.track(M.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
@@ -245,7 +245,7 @@ let G = {
                                 await (0, _.A)({
                                     targetApplicationId: e,
                                     channelId: a,
-                                    analyticsLocations: [p.A.DEEPLINK],
+                                    analyticsLocations: [g.A.DEEPLINK],
                                     customId: d,
                                     referrerId: o
                                 }), b.default.track(M.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(15285),
     _ = n(651743),
     m = n(780964),
-    p = n(840065),
-    g = n(962173),
+    g = n(840065),
+    p = n(962173),
     E = n(134861),
     I = n(189081),
     f = n(194871),
@@ -33,7 +33,7 @@ function y(e) {
     } = e, n = t.length > 1, y = function(e) {
         let {
             currentActivities: t
-        } = e, n = (0, l.bG)([g.A], () => g.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), r = t.some(e => {
+        } = e, n = (0, l.bG)([p.A], () => p.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), r = t.some(e => {
             let {
                 activity: t
             } = e;
@@ -41,7 +41,7 @@ function y(e) {
         });
         return n || !r ? null : (0, i.jsx)(a.Drp, {
             id: "xbox-connect",
-            action: () => (0, p.openUserSettings)(m.X.CONNECTIONS_PANEL, {
+            action: () => (0, g.openUserSettings)(m.X.CONNECTIONS_PANEL, {
                 section: S.nc_.CONNECTIONS
             }),
             label: x.intl.formatToPlainString(x.t.XWSHTb, {

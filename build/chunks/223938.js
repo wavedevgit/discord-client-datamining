@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(31717),
     L = n(638128),
     P = n(522602),
-    k = n(515718),
-    w = n(723702),
+    w = n(515718),
+    k = n(723702),
     U = n(518960),
     G = n(486319),
     F = n(355622),
@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(147025),
     V = n(133343),
     K = n(851023),
-    z = n(171593),
-    W = n(652215);
+    W = n(171593),
+    z = n(652215);
 n(827669), n(294920);
 var Y = n(478644),
     q = n(985018),
@@ -82,7 +82,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             channel: y,
             type: v,
             focused: j,
-            onChange: k,
+            onChange: w,
             onResize: U,
             onBlur: K,
             onFocus: Y,
@@ -122,12 +122,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
         disabled: eR,
         canAttachFiles: eM,
         canEveryoneSendMessages: eD
-    } = (0, V.Sk)(y, v, ey, f), eO = !D.D_.useSetting() && !(0, w.isAndroidWeb)() && null != window.ResizeObserver, eL = !eO || !v.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
-        fontSize: ek
+    } = (0, V.Sk)(y, v, ey, f), eO = !D.D_.useSetting() && !(0, k.isAndroidWeb)() && null != window.ResizeObserver, eL = !eO || !v.commands?.enabled || !j || "/" !== s, eP = (0, R.A)(), {
+        fontSize: ew
     } = (0, u.cf)([_.A], () => ({
         fontSize: _.A.fontSize,
         isSubmitButtonEnabled: _.A.isSubmitButtonEnabled
-    })), ew = (0, u.bG)([L.A], () => L.A.isEnabled()), eU = (0, M.n)(y);
+    })), ek = (0, u.bG)([L.A], () => L.A.isEnabled()), eU = (0, M.n)(y);
     (0, V.N_)(v, eR, y.id);
     let {
         eventEmitter: eG,
@@ -187,8 +187,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleSubmit: eV
     } = (0, V.Zx)(eH, v, eT, eb, y.id), {
         autocompleteRef: eK,
-        handleMaybeShowAutocomplete: ez,
-        handleHideAutocomplete: eW
+        handleMaybeShowAutocomplete: eW,
+        handleHideAutocomplete: ez
     } = (0, V.v7)(), eY = l.useCallback(() => eb?.current?.hide(), []), {
         editorHeight: eq,
         handleResize: eJ
@@ -215,12 +215,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eH
     });
     (0, G.R)(eG, y.guild_id, y.id);
-    let [e6, e9] = l.useState(!1), e8 = j || e6 || s.length > 0 || null != e_ || ef.length > 0, {
-        editorHeaderHeight: e4,
+    let [e6, e9] = l.useState(!1), e4 = j || e6 || s.length > 0 || null != e_ || ef.length > 0, {
+        editorHeaderHeight: e8,
         paddingTop: te
     } = (0, A.zhh)({
-        editorHeaderHeight: 122 * !!e8,
-        paddingTop: 16 * !!e8,
+        editorHeaderHeight: 122 * !!e4,
+        paddingTop: 16 * !!e4,
         config: {
             tension: 120,
             friction: 15,
@@ -267,7 +267,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             children: [(0, i.jsxs)(c.animated.div, {
                                 className: J.ov,
                                 style: {
-                                    height: e4,
+                                    height: e8,
                                     paddingTop: te
                                 },
                                 children: [null != e_ ? (0, i.jsx)(ee, {
@@ -310,11 +310,11 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         channel: y,
                                         type: F.oU.CREATE_ANNOUNCEMENT_POST,
                                         canPasteFiles: eM,
-                                        uploadPromptCharacterCount: W.CS1,
+                                        uploadPromptCharacterCount: z.CS1,
                                         maxCharacterCount: er ?? eP,
                                         allowNewLines: !0,
                                         "aria-describedby": ec,
-                                        onChange: k,
+                                        onChange: w,
                                         onResize: eJ,
                                         onBlur: K,
                                         onFocus: Y,
@@ -324,11 +324,11 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                         onEnter: eZ,
                                         onMoveSelection: eX,
                                         onSelectionChanged: eF,
-                                        onMaybeShowAutocomplete: ez,
-                                        onHideAutocomplete: eW,
+                                        onMaybeShowAutocomplete: eW,
+                                        onHideAutocomplete: ez,
                                         promptToUpload: el,
-                                        fontSize: ek,
-                                        spellcheckEnabled: ew,
+                                        fontSize: ew,
+                                        spellcheckEnabled: ek,
                                         canOnlyUseTextCommands: !1,
                                         "aria-labelledby": ed
                                     })
@@ -336,7 +336,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: J.KK,
-                            children: (0, i.jsx)(z.A, {
+                            children: (0, i.jsx)(W.A, {
                                 channelId: y.id,
                                 type: v,
                                 canAttachFiles: eM,
@@ -429,7 +429,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     onSendSticker: () => {},
                     onVisibilityChange: e2,
                     editorHeight: eq,
-                    setValue: (e, t) => k?.(null, e, t),
+                    setValue: (e, t) => w?.(null, e, t),
                     position: eh
                 })]
             }), e0 ? null : (0, i.jsx)(b.A, {
@@ -458,8 +458,8 @@ function Q(e) {
         "data-menu-migrated": !0,
         "aria-label": q.intl.string(q.t["9WnJyo"]),
         navId: "send-announcement-options",
-        onClose: W.tEg,
-        onSelect: W.tEg,
+        onClose: z.tEg,
+        onSelect: z.tEg,
         children: [(0, i.jsx)(A.sLh, {
             id: "create-thread",
             label: q.intl.string(q.t.rBIGBL),
@@ -552,7 +552,7 @@ function en(e) {
         onImageUploaded: n,
         onFocus: s
     } = e, a = l.useRef(null), r = async (e, i) => {
-        let l = await (0, k.bX)(e, i.name, i.type),
+        let l = await (0, w.bX)(e, i.name, i.type),
             s = {
                 id: (0, d.A)(),
                 file: l,

@@ -1,60 +1,60 @@
-/** chunk id: 199630, original params: e,t,s (module,exports,require) **/
-s.d(t, {
+/** chunk id: 199630, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     default: () => b
 });
-var a = s(627968),
-    n = s(64700),
-    i = s(877227),
-    r = s(554146),
-    o = s(793574),
-    _ = s(688810),
-    c = s(932001),
-    l = s(244975),
-    u = s(652215),
-    A = s(49999),
-    S = s(985018),
-    C = s(123568),
-    d = s(888283);
+var s = n(627968),
+    a = n(64700),
+    r = n(877227),
+    i = n(554146),
+    o = n(793574),
+    u = n(688810),
+    c = n(932001),
+    l = n(244975),
+    _ = n(652215),
+    d = n(49999),
+    A = n(985018),
+    S = n(123568),
+    C = n(888283);
 
 function b(e) {
     let {
         upsellType: t,
-        onClose: s,
+        onClose: n,
         transitionState: b
-    } = e, [E, T] = (0, c.kn)([r.M.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL]);
-    return (0, _.Ay)(o.A.REVERSE_TRIAL_UPSELL_MODAL), n.useEffect(() => () => {
-        T(A.i.USER_DISMISS)
-    }, [T]), (0, a.jsx)(l.A, {
-        artURL: d,
-        artContainerClassName: C.JS,
-        artClassName: C.Qw,
+    } = e, [p, h] = (0, c.kn)([i.M.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL]);
+    return (0, u.Ay)(o.A.REVERSE_TRIAL_UPSELL_MODAL), a.useEffect(() => () => {
+        h(d.i.USER_DISMISS)
+    }, [h]), (0, s.jsx)(l.A, {
+        artURL: C,
+        artContainerClassName: S.JS,
+        artClassName: S.Qw,
         enableArtBoxShadow: !1,
         type: t,
-        title: S.intl.string(S.t.aupMtf),
-        body: S.intl.string(S.t.AXmOUb),
-        bodyClassName: C.uI,
-        glowUp: S.intl.string(S.t.AXmOUb),
+        title: A.intl.string(A.t.aupMtf),
+        body: A.intl.string(A.t.AXmOUb),
+        bodyClassName: S.uI,
+        glowUp: A.intl.string(A.t.AXmOUb),
         onSubscribeClick: () => {
-            T(A.i.TAKE_ACTION)
+            h(d.i.TAKE_ACTION)
         },
-        secondaryCTA: S.intl.string(S.t.SXYIpB),
-        secondaryCTAClassName: C.vh,
-        footerClassName: C.qr,
-        headerClassName: C.wx,
+        secondaryCTA: A.intl.string(A.t.SXYIpB),
+        secondaryCTAClassName: S.vh,
+        footerClassName: S.qr,
+        headerClassName: S.wx,
         onSecondaryClick: function() {
-            T(A.i.TAKE_ACTION), s(), (0, i.pX)(u.BVt.APPLICATION_STORE)
+            h(d.i.TAKE_ACTION), n(), (0, r.pX)(_.BVt.APPLICATION_STORE)
         },
-        subscribeButtonText: S.intl.string(S.t.J61px0),
-        subscribeButtonClassname: C.xF,
+        subscribeButtonText: A.intl.string(A.t.J61px0),
+        subscribeButtonClassname: S.xF,
         useSubscribeButtonGradient: !0,
         hidePremiumOfferUpsell: !0,
         showEnhancedUpsell: !0,
         hideBackButton: !0,
         analyticsLocation: {
-            section: u.JJy.REVERSE_TRIAL_UPSELL_MODAL,
-            object: u.ZSU.BUTTON_CTA
+            section: _.JJy.REVERSE_TRIAL_UPSELL_MODAL,
+            object: _.ZSU.BUTTON_CTA
         },
         transitionState: b,
-        onClose: () => (T(A.i.USER_DISMISS), s())
+        onClose: () => (h(d.i.USER_DISMISS), n())
     })
 }

@@ -1,26 +1,26 @@
 /** chunk id: 690737, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(380278),
+    l = n.n(s),
+    a = n(380278),
     r = n(421380),
     o = n(397927),
-    c = n(736653),
-    d = n(194509),
+    d = n(736653),
+    c = n(194509),
     u = n(396375),
     _ = n(652215),
-    m = n(178501);
-let A = function(e) {
+    g = n(178501);
+let m = function(e) {
     let {
         isVisible: t,
         subscriptionTier: n,
         isApplicationHome: s,
-        isEligibleForBogoPromotion: A
-    } = e, g = (0, o.zhh)({
+        isEligibleForBogoPromotion: m
+    } = e, A = (0, o.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
         config: {
@@ -29,27 +29,27 @@ let A = function(e) {
         }
     }), h = {
         section: _.JJy.MARKETING_FLOATING_CTA
-    }, x = (0, c.Ay)(), p = (0, o.Mwr)(x);
-    return (0, i.jsx)(l.animated.div, {
-        className: a()(m.iE, {
-            [m.H8]: s,
-            [m.q4]: !t
+    }, p = (0, d.Ay)(), x = (0, o.Mwr)(p);
+    return (0, i.jsx)(a.animated.div, {
+        className: l()(g.iE, {
+            [g.H8]: s,
+            [g.q4]: !t
         }),
-        style: g,
+        style: A,
         children: (0, i.jsxs)("div", {
-            className: s ? m.zW : m.iJ,
+            className: s ? g.zW : g.iJ,
             children: [(0, i.jsx)(u.A, {
-                color: p ? r.XD.BRAND_INVERTED : void 0,
-                className: a()(m.x6, {
-                    [m.Ph]: p
+                color: x ? r.XD.BRAND_INVERTED : void 0,
+                className: l()(g.x6, {
+                    [g.Ph]: x
                 }),
                 subscriptionTier: n,
                 premiumModalAnalyticsLocation: h,
                 isPersistentCTA: !0,
-                hasActivePromotion: A,
-                shinyButtonClassName: p ? void 0 : m.PJ
-            }), (0, i.jsx)(d.A, {
-                className: m.x6,
+                hasActivePromotion: m,
+                shinyButtonClassName: x ? void 0 : g.PJ
+            }), (0, i.jsx)(c.A, {
+                className: g.x6,
                 premiumModalAnalyticsLocation: h
             })]
         })

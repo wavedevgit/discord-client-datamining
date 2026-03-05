@@ -1,6 +1,6 @@
 /** chunk id: 414345, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    g1: () => i
+    g1: () => o
 });
 let a = (0, n(250105).Ay)({
     kind: "user",
@@ -21,12 +21,12 @@ let a = (0, n(250105).Ay)({
     }
 });
 
-function i(t) {
+function o(t) {
     let {
         location: e,
         onPremiumTryItOutProfile: n = !1
-    } = t, i = a.getConfig({
+    } = t, o = a.getConfig({
         location: e
     }).treatment;
-    return !0 === n ? "UPDATE_ALL" === i : "CONTROL" !== i
+    return !0 === n ? "UPDATE_ALL" === o : "CONTROL" !== o
 }

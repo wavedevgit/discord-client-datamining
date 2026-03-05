@@ -1,41 +1,41 @@
-/** chunk id: 234658, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    x: () => A
+/** chunk id: 234658, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    x: () => u
 });
-var n = i(311907),
-    l = i(286237),
-    s = i(515183),
-    a = i(592598),
-    r = i(682763),
-    u = i(419954),
-    o = i(780964),
-    d = i(985018);
-let A = (0, u.zD)(o.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
+var i = n(311907),
+    s = n(286237),
+    l = n(515183),
+    a = n(592598),
+    r = n(682763),
+    o = n(419954),
+    d = n(780964),
+    c = n(985018);
+let u = (0, o.zD)(d.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
     usePredicate: () => {
         let {
-            runningGameApplication: t
-        } = (0, l.A)();
-        return t?.id != null
+            runningGameApplication: e
+        } = (0, s.A)();
+        return e?.id != null
     },
     useDisabled: () => {
         let {
-            runningGame: t
-        } = (0, l.A)();
-        return null != t && (0, s.qJ)(t.pid)
+            runningGame: e
+        } = (0, s.A)();
+        return null != e && (0, l.qJ)(e.pid)
     },
     useValue: () => {
         let {
-            runningGame: t,
-            runningGameApplication: e
-        } = (0, l.A)(), i = e?.id, r = (0, n.bG)([a.A], () => a.A.isLimitedInteractionOverrideEnabled(i)), u = null != t && (0, s.qJ)(t.pid);
-        return r || u
+            runningGame: e,
+            runningGameApplication: t
+        } = (0, s.A)(), n = t?.id, r = (0, i.bG)([a.A], () => a.A.isLimitedInteractionOverrideEnabled(n)), o = null != e && (0, l.qJ)(e.pid);
+        return r || o
     },
-    setValue: t => {
+    setValue: e => {
         let {
-            runningGameApplication: e
-        } = (0, l.b)();
-        null != e && (0, r.x8)(e.id, t)
+            runningGameApplication: t
+        } = (0, s.b)();
+        null != t && (0, r.x8)(t.id, e)
     },
-    useTitle: () => d.intl.string(d.t.wgVQND),
-    useSubtitle: () => d.intl.string(d.t["5SsyF5"])
+    useTitle: () => c.intl.string(c.t.wgVQND),
+    useSubtitle: () => c.intl.string(c.t["5SsyF5"])
 })

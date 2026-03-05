@@ -1,0 +1,25 @@
+.modal__038c3 {
+    width: 650px
+}
+
+.modalContent__038c3 {
+    margin-bottom: 0;
+    padding-inline-start: 0
+}
+
+.previewContainerParent__038c3 {
+    background: var(--background-base-lower);
+    border-start-start-radius: var(--radius-md);
+    margin-top: -8px;
+    overflow-y: clip;
+    padding: var(--space-32);
+    padding-bottom: 0
+}
+
+.previewContainer__038c3 {
+    margin-bottom: -8px;
+    text-align: start;
+    width: 240px
+}
+
+/*# sourceMappingURL=2d7c078f25a6e26c.css.map*/

@@ -1,22 +1,22 @@
-/** chunk id: 937551, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    V: () => d
+/** chunk id: 937551, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    V: () => c
 });
-var n = i(955572),
-    l = i(775602),
-    s = i(419954),
-    a = i(780964),
-    r = i(358776),
-    u = i(652215),
-    o = i(985018);
-let d = (0, s.sN)(a.X.SATURATION, {
-    useTitle: () => o.intl.string(o.t["5PWWCY"]),
-    useSubtitle: () => (0, r.bp)("Saturation") ? o.intl.string(o.t.xf5S6P) : o.intl.string(o.t["0PbE/H"]),
-    markers: u.hH7.SATURATION_INCREMENTS,
-    onMarkerRender: t => 100 * t % 2 == 0 ? `${100*t}%` : void 0,
+var i = n(955572),
+    s = n(775602),
+    l = n(419954),
+    a = n(780964),
+    r = n(358776),
+    o = n(652215),
+    d = n(985018);
+let c = (0, l.sN)(a.X.SATURATION, {
+    useTitle: () => d.intl.string(d.t["5PWWCY"]),
+    useSubtitle: () => (0, r.bp)("Saturation") ? d.intl.string(d.t.xf5S6P) : d.intl.string(d.t["0PbE/H"]),
+    markers: o.hH7.SATURATION_INCREMENTS,
+    onMarkerRender: e => 100 * e % 2 == 0 ? `${100*e}%` : void 0,
     stickToMarkers: !0,
     minValue: 0,
     maxValue: 1,
-    getInitialValue: () => l.A.saturation,
-    asValueChanges: t => (0, n.HU)(t)
+    getInitialValue: () => s.A.saturation,
+    asValueChanges: e => (0, i.HU)(e)
 })

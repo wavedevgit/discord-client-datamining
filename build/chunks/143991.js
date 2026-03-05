@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(400492),
     _ = n(723991),
     m = n(105530),
-    p = n(95701),
-    g = n(616356),
+    g = n(95701),
+    p = n(616356),
     E = n(961350),
     I = n(734057),
     f = n(71393),
@@ -104,11 +104,11 @@ function j() {
             connectedRemote: a
         } = t, s = e.channelType, o = e.connectedRemote, d = e.connected;
         if (!e.connectHasStarted && r || a && !o) {
-            if (null != n && p.Do.has(n)) return;
+            if (null != n && g.Do.has(n)) return;
             return "user_join"
         }
         if (d && !i) {
-            if (l || a || null != s && p.Do.has(s)) return;
+            if (l || a || null != s && g.Do.has(s)) return;
             return "disconnect"
         }
     }), null
@@ -167,19 +167,19 @@ function k() {
 }
 
 function V() {
-    return L([S.A, g.A, E.default, v.A, I.A], () => {
+    return L([S.A, p.A, E.default, v.A, I.A], () => {
         let e, t, n = S.A.getVoiceChannelId(),
             i = E.default.getId(),
             r = [],
             l = null,
             a = 0,
-            s = g.A.getAllActiveStreams();
+            s = p.A.getAllActiveStreams();
         if (null != n) {
             let i = I.A.getChannel(n);
-            null != i && (e = i.type, t = y.Ay.countVoiceStatesForChannel(i.id) - !!v.A.isInChannel(i.id), r = g.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
+            null != i && (e = i.type, t = y.Ay.countVoiceStatesForChannel(i.id) - !!v.A.isInChannel(i.id), r = p.A.getAllApplicationStreamsForChannel(i.id).map(e => e.ownerId))
         }
         let o = null;
-        return o = 1 === s.length ? s[0] : g.A.getCurrentUserActiveStream(), o?.state === O.XYD.CONNECTING && (o = null), null != o && (l = (0, u._z)(o), a = g.A.getViewerIds(l).filter(e => e !== i).length), {
+        return o = 1 === s.length ? s[0] : p.A.getCurrentUserActiveStream(), o?.state === O.XYD.CONNECTING && (o = null), null != o && (l = (0, u._z)(o), a = p.A.getViewerIds(l).filter(e => e !== i).length), {
             channelType: e,
             voiceChannelId: n,
             voiceChannelUserCount: t,
@@ -206,7 +206,7 @@ function V() {
                 if (null == n) return !1;
                 let i = f.A.getGuild(n);
                 return null != i && i.afkChannelId === t.id
-            }(i) || null != n && p.Do.has(n)) return;
+            }(i) || null != n && g.Do.has(n)) return;
         let d = null != a && e.singleActiveStreamKey === a,
             c = l.some(t => !e.streamingUserIds.includes(t)),
             u = e.allActiveStreams.map(e => e.ownerId),

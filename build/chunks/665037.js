@@ -1,7 +1,7 @@
 /** chunk id: 665037, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g,
-    G: () => p
+    A: () => p,
+    G: () => g
 });
 var i, r = n(64700),
     l = n(311907),
@@ -15,14 +15,14 @@ var i, r = n(64700),
     h = n(992250),
     _ = n(15438),
     m = n(652215),
-    p = ((i = {})[i.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", i[i.MAX_MEMBER_COUNT = 1] = "MAX_MEMBER_COUNT", i[i.GUILD_LIVE_CHANNEL = 2] = "GUILD_LIVE_CHANNEL", i[i.GUILD_MFA_WARNING = 3] = "GUILD_MFA_WARNING", i[i.COMMANDS_MIGRATION = 4] = "COMMANDS_MIGRATION", i[i.APPLICATION_SUBSCRIPTION_EXPIRATION = 5] = "APPLICATION_SUBSCRIPTION_EXPIRATION", i[i.HUB_STUDY_ROOM = 6] = "HUB_STUDY_ROOM", i[i.CLAN_UPSELL = 7] = "CLAN_UPSELL", i);
+    g = ((i = {})[i.ENABLE_PUBLIC_GUILD = 0] = "ENABLE_PUBLIC_GUILD", i[i.MAX_MEMBER_COUNT = 1] = "MAX_MEMBER_COUNT", i[i.GUILD_LIVE_CHANNEL = 2] = "GUILD_LIVE_CHANNEL", i[i.GUILD_MFA_WARNING = 3] = "GUILD_MFA_WARNING", i[i.COMMANDS_MIGRATION = 4] = "COMMANDS_MIGRATION", i[i.APPLICATION_SUBSCRIPTION_EXPIRATION = 5] = "APPLICATION_SUBSCRIPTION_EXPIRATION", i[i.HUB_STUDY_ROOM = 6] = "HUB_STUDY_ROOM", i[i.CLAN_UPSELL = 7] = "CLAN_UPSELL", i);
 
-function g(e) {
+function p(e) {
     let t = e?.id ?? m.dJq,
         n = (0, l.bG)([A.A], () => A.A.isVisible(e)),
         i = (0, l.bG)([_.A], () => _.A.isVisible(e)),
-        p = (0, s.C)(t),
-        g = (0, l.bG)([h.A], () => h.A.isVisible(e)),
+        g = (0, s.C)(t),
+        p = (0, l.bG)([h.A], () => h.A.isVisible(e)),
         E = c.A.useShouldShowChannelNotice(t),
         I = (0, u.$s)(e),
         {
@@ -35,8 +35,8 @@ function g(e) {
             a.A.getGuildEventsForCurrentUser(t)
         }, [t]), n) return 0;
     if (i) return 1;
-    if (p || null != N) return 2;
-    if (g) return 3;
+    if (g || null != N) return 2;
+    if (p) return 3;
     if (E) return 4;
     else if (C) return 5;
     else if (T) return 6;

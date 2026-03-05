@@ -1,6 +1,6 @@
 /** chunk id: 977700, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var a = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var i = n(397927),
     u = n(223567),
     m = n(552122),
     h = n(41280),
-    p = n(652215),
-    x = n(49999),
+    x = n(652215),
+    p = n(49999),
     g = n(985018),
     _ = n(653246);
 
@@ -24,7 +24,7 @@ function f(e) {
         dismissibleContent: t,
         backgroundColor: n,
         specialTextColor: u
-    } = e, f = m.A.useIsEligible(), b = (0, r.JZ)(t), v = null != n, j = null != u ? {
+    } = e, f = m.A.useIsEligible(), v = (0, r.JZ)(t), b = null != n, j = null != u ? {
         color: u
     } : void 0, {
         analyticsLocations: A
@@ -32,19 +32,19 @@ function f(e) {
         (0, r.Dr)(t, {
             dismissAction: e
         })
-    }, T = () => {
+    }, y = () => {
         (0, c.openUserSettings)(d.X.NOTIFICATIONS_PANEL, {
-            section: p.nc_.NOTIFICATIONS,
+            section: x.nc_.NOTIFICATIONS,
             analyticsLocations: A
-        }), C(x.i.TAKE_ACTION)
+        }), C(p.i.TAKE_ACTION)
     };
-    return f && !b ? (0, a.jsx)(o.Ay, {
+    return f && !v ? (0, a.jsx)(o.Ay, {
         children: (0, a.jsxs)("div", {
             className: _.iE,
             style: {
-                backgroundColor: v ? n : void 0
+                backgroundColor: b ? n : void 0
             },
-            children: [!v && (0, a.jsxs)("div", {
+            children: [!b && (0, a.jsxs)("div", {
                 className: _.o5,
                 children: [(0, a.jsx)(h.A, {
                     className: _.iL,
@@ -70,14 +70,14 @@ function f(e) {
                                 tag: "span",
                                 className: _.nf,
                                 style: j,
-                                onClick: T,
+                                onClick: y,
                                 children: e
                             }, t)
                         })
                     })]
                 }), (0, a.jsx)(i.DUT, {
                     className: _.l2,
-                    onClick: () => C(x.i.USER_DISMISS),
+                    onClick: () => C(p.i.USER_DISMISS),
                     children: (0, a.jsx)(i.PGe, {
                         color: "currentColor",
                         size: "xs"
@@ -88,7 +88,7 @@ function f(e) {
     }) : null
 }
 
-function b() {
+function v() {
     return null == u.A.coachmarkDismissibleContent ? null : (0, a.jsx)(f, {
         dismissibleContent: u.A.coachmarkDismissibleContent,
         backgroundColor: u.A.coachmarkBackgroundColor,

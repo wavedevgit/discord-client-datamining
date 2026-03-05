@@ -1,31 +1,31 @@
-/** chunk id: 828797, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    o: () => N
+/** chunk id: 828797, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    o: () => T
 });
-var n = i(311907),
-    l = i(419954),
-    s = i(933297),
-    a = i(287809),
-    r = i(780964),
-    u = i(358776),
-    o = i(36535),
-    d = i(548018),
-    A = i(953410),
-    T = i(102277),
-    S = i(354093),
-    E = i(909081),
-    g = i(25894),
-    c = i(237948),
-    _ = i(32096),
-    I = i(545214),
-    C = i(985018);
-let N = (0, l.zZ)(r.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
-    useTitle: () => C.intl.string(C.t.pKSjEj),
+var i = n(311907),
+    s = n(419954),
+    l = n(933297),
+    a = n(287809),
+    r = n(780964),
+    o = n(358776),
+    d = n(36535),
+    c = n(548018),
+    u = n(953410),
+    _ = n(102277),
+    g = n(354093),
+    m = n(909081),
+    A = n(25894),
+    h = n(237948),
+    p = n(32096),
+    x = n(545214),
+    E = n(985018);
+let T = (0, s.zZ)(r.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
+    useTitle: () => E.intl.string(E.t.pKSjEj),
     useInlineNotice: function() {
-        return (0, n.bG)([a.default], () => a.default.getCurrentUser()?.mfaEnabled ?? !1) ? {
-            type: s.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: o.A
+        return (0, i.bG)([a.default], () => a.default.getCurrentUser()?.mfaEnabled ?? !1) ? {
+            type: l.lT.STRONGLY_DISCOURAGED_CUSTOM,
+            notice: d.A
         } : null
     },
-    buildLayout: () => [S.L, _.A, I.k, T.v, d.c, A.g, E.T, g.C, ...(0, u.pC)("AccountAuthenticationCategory") ? [c.w] : []]
+    buildLayout: () => [g.L, p.A, x.k, _.v, c.c, u.g, m.T, A.C, ...(0, o.pC)("AccountAuthenticationCategory") ? [h.w] : []]
 })

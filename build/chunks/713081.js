@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(827734),
-    r = n(990078),
-    a = n(397927),
+    a = n(990078),
+    r = n(397927),
     o = n(775602),
     c = n(890687),
     d = n(92246),
@@ -29,16 +29,16 @@ function m(e) {
         onCloseModal: p,
         shouldShowShopIfAlreadyClaimed: !0
     }), E = t.userStatus?.claimedAt != null ? f ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), I = t.userStatus?.completedAt == null ? g ? A.intl.string(A.t.NJ6Bnm) : x ? A.intl.string(A.t.USNO1K) : A.intl.string(A.t["9MnkEh"]) : void 0;
-    return (0, i.jsx)(r.m, {
+    return (0, i.jsx)(a.m, {
         text: I,
         children: (0, i.jsx)("div", {
-            children: (0, i.jsx)(a.Button, {
+            children: (0, i.jsx)(r.Button, {
                 variant: "secondary",
                 fullWidth: !0,
                 icon: ((e, t) => {
                     if (e.userStatus?.claimedAt == null) return {
                         type: "rive",
-                        asset: a.Vs8,
+                        asset: r.Vs8,
                         riveProps: {
                             withReducedMotion: "play",
                             dataBinding: {

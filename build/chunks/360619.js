@@ -2,65 +2,65 @@
 n.d(t, {
     AC: () => O,
     NI: () => R,
-    PH: () => v
+    PH: () => j
 }), n(560197), n(321073);
 var i = n(64700),
     s = n(311907);
 n(361739);
-var a = n(406360),
-    l = n(86379),
+var l = n(406360),
+    a = n(86379),
     r = n(643015),
     o = n(945276),
-    c = n(834981),
-    d = n(155984),
+    d = n(834981),
+    c = n(155984),
     u = n(35587),
     _ = n(677402),
-    m = n(207560),
-    A = n(818143),
-    g = n(639555),
+    g = n(207560),
+    m = n(818143),
+    A = n(639555),
     h = n(617641),
-    x = n(961350);
+    p = n(961350);
 n(540999);
-var p = n(189081),
+var x = n(189081),
     E = n(994500),
-    C = n(628965),
-    T = n(287809),
-    S = n(80422),
+    T = n(628965),
+    S = n(287809),
+    C = n(80422),
     I = n(253932),
     f = n(368631),
-    N = n(682262),
-    b = n(987281);
+    b = n(682262),
+    N = n(987281);
 n(531525);
-var j = n(654487);
+var v = n(654487);
 
-function v() {
+function j() {
     let e = (0, u.IO)().length,
-        t = (0, d.l)(),
-        n = (0, s.bG)([C.A], () => C.A.getSearchParams()),
-        b = (0, c.VT)(),
-        v = (0, N.b_)(),
+        t = (0, c.l)(),
+        n = (0, s.bG)([T.A], () => T.A.getSearchParams()),
+        N = (0, d.VT)(),
+        j = (0, b.b_)(),
         {
             shouldMergeGameSettings: O
-        } = S.X.useExperiment({
+        } = C.X.useExperiment({
             location: "settings"
         }),
-        R = T.default.getCurrentUser()?.isStaff() ?? !1,
+        R = S.default.getCurrentUser()?.isStaff() ?? !1,
         y = (0, h.Lc)({
             location: "settings"
         }),
-        P = (0, g.Rv)({
+        P = (0, A.Rv)({
             location: "settings"
         }),
-        L = (0, l.H)(),
+        L = (0, a.H)(),
         D = (0, _.H)({
-            location: j.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+            location: v.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
-        M = (0, s.bG)([p.A], () => p.A.hasLibraryApplication()),
-        G = (0, s.bG)([x.default], () => x.default.hasTOTPEnabled()),
+        G = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
+        M = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
         U = I.Q_.useSetting(),
         k = (0, r.A)(),
         V = (0, o.A)() ?? !0,
-        w = (0, A.G)()?.length > 0,
+        w = (0, m.G)()?.length > 0,
         {
             hasBlockedUsers: H,
             hasIgnoredUsers: B
@@ -68,14 +68,14 @@ function v() {
             hasBlockedUsers: E.A.getBlockedIDs().length > 0,
             hasIgnoredUsers: E.A.getIgnoredIDs().length > 0
         })),
-        Y = (0, m.fk)(),
-        F = (0, a.i)("useGenerateUserSettingsSections");
+        Y = (0, g.fk)(),
+        F = (0, l.i)("useGenerateUserSettingsSections");
     return i.useMemo(() => (0, f.zj)({
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
         searchParams: n,
-        numOfPendingFamilyRequests: b,
-        isOverlaySupported: v,
+        numOfPendingFamilyRequests: N,
+        isOverlaySupported: j,
         shouldMergeGameSettings: O,
         isStaff: R,
         isInappropriateConversationWarningEnabled: y,
@@ -83,8 +83,8 @@ function v() {
         paymentsBlocked: L,
         isEligibleForQuests: D,
         isStricterMessageRequestsEnabled: k,
-        hasLibraryApplication: M,
-        hasTOTPEnabled: G,
+        hasLibraryApplication: G,
+        hasTOTPEnabled: M,
         developerMode: U,
         isAdultUser: V,
         hasSecureFramesVerifiedUserIds: w,
@@ -92,18 +92,18 @@ function v() {
         hasBlockedUsers: H,
         hasAgeGatedFeature: Y,
         isHDRAccessibilitySettingExperimentEnabled: F
-    }), [U, H, B, M, w, G, n, V, D, P, y, v, R, k, b, L, O, t, e, Y, F])
+    }), [U, H, B, G, w, M, n, V, D, P, y, j, R, k, N, L, O, t, e, Y, F])
 }
 
 function O(e) {
-    let t = b.a.useField("searchResults"),
-        n = v(),
+    let t = N.a.useField("searchResults"),
+        n = j(),
         i = n[e],
         s = Object.fromEntries(Object.entries(n).filter(e => {
             let [t, n] = e;
             return n.section === i.section
         })),
-        a = Object.fromEntries(Object.entries(s).filter(e => {
+        l = Object.fromEntries(Object.entries(s).filter(e => {
             let [t, {
                 parent: n,
                 section: s
@@ -115,16 +115,16 @@ function O(e) {
             }] = e;
             return [t, n]
         })),
-        l = new Set,
+        a = new Set,
         r = e => {
             let t = s[e];
             if (null == t) return;
-            l.add(e);
+            a.add(e);
             let n = t.parent;
             null != n && r(n)
         },
         o = e => {
-            for (let t of (l.add(e), Object.entries(a).filter(t => {
+            for (let t of (a.add(e), Object.entries(l).filter(t => {
                     let [n, i] = t;
                     return i === e
                 }).map(e => {
@@ -133,13 +133,13 @@ function O(e) {
                 }))) o(t)
         };
     for (let e of t.filter(e => e in s))
-        if (!l.has(e)) {
+        if (!a.has(e)) {
             if (null != s[e].element && null == s[e].parent) {
-                l.clear();
+                a.clear();
                 break
             }
-            Object.values(a).includes(e) && o(e), r(e)
-        } return l
+            Object.values(l).includes(e) && o(e), r(e)
+        } return a
 }
 
 function R(e) {

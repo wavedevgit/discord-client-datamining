@@ -1,25 +1,25 @@
-/** chunk id: 39218, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    x: () => T
+/** chunk id: 39218, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    x: () => _
 });
-var n = i(64700),
-    l = i(419954),
-    s = i(975571),
-    a = i(809505),
-    r = i(253932),
-    u = i(780964),
-    o = i(84373),
-    d = i(652215),
-    A = i(985018);
-let T = (0, l.Qx)(u.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
-    useTitle: () => A.intl.string(A.t.tiCXaH),
-    useSubtitle: () => A.intl.format(A.t.RvjRRI, {
-        appealLink: s.A.getArticleURL(d.MVz.SAFE_DIRECT_MESSAGING)
+var i = n(64700),
+    s = n(419954),
+    l = n(975571),
+    a = n(809505),
+    r = n(253932),
+    o = n(780964),
+    d = n(84373),
+    c = n(652215),
+    u = n(985018);
+let _ = (0, s.Qx)(o.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
+    useTitle: () => u.intl.string(u.t.tiCXaH),
+    useSubtitle: () => u.intl.format(u.t.RvjRRI, {
+        appealLink: l.A.getArticleURL(c.MVz.SAFE_DIRECT_MESSAGING)
     }),
-    useValue: o.o,
-    setValue: t => r.he.updateSetting(t),
+    useValue: d.o,
+    setValue: e => r.he.updateSetting(e),
     useOptions: function() {
-        return n.useMemo(() => (0, a.YS)(), [])
+        return i.useMemo(() => (0, a.YS)(), [])
     },
-    useSearchTerms: () => [A.intl.string(A.t.JzaP4h), A.intl.string(A.t.H9XOl3), A.intl.string(A.t.k4W40P)]
+    useSearchTerms: () => [u.intl.string(u.t.JzaP4h), u.intl.string(u.t.H9XOl3), u.intl.string(u.t.k4W40P)]
 })

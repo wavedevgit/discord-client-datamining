@@ -1,29 +1,29 @@
-/** chunk id: 462226, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 462226, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     A: () => d
 });
-var i = n(627968);
-n(64700);
-var l = n(397927),
-    r = n(626584),
-    a = n(833349),
-    s = n(652215),
-    o = n(985018);
+var n = i(627968);
+i(64700);
+var l = i(397927),
+    r = i(626584),
+    s = i(833349),
+    a = i(652215),
+    o = i(985018);
 
 function d(t) {
     let {
         activity: e,
-        user: n,
+        user: i,
         variant: d = "secondary",
         onAction: u,
         ...c
     } = t;
-    return (0, a.A)(e, s.jUm.INSTANCE) ? (0, i.jsx)(l.Button, {
+    return (0, s.A)(e, a.jUm.INSTANCE) ? (0, n.jsx)(l.Button, {
         text: o.intl.string(o.t.vwl1PK),
         variant: d,
         size: "sm",
         onClick: () => {
-            u?.(), new r.A("UserActivityActions").log("notify", n.id, e)
+            u?.(), new r.A("UserActivityActions").log("notify", i.id, e)
         },
         fullWidth: !0,
         ...c

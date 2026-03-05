@@ -3,16 +3,16 @@ r.d(t, {
     F: () => o,
     d: () => i
 });
-var s = r(627968);
+var n = r(627968);
 r(64700);
-var n = r(397927),
+var s = r(397927),
     l = r(231323);
 
 function a(e, t) {
     let {
         children: r
     } = e;
-    return (0, s.jsx)(n.Text, {
+    return (0, n.jsx)(s.Text, {
         variant: "text-sm/medium",
         className: t,
         children: r

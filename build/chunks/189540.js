@@ -1,14 +1,14 @@
-/** chunk id: 189540, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    L: () => u
+/** chunk id: 189540, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    L: () => o
 });
-var n = i(568444),
-    l = i(419954),
-    s = i(253932),
-    a = i(780964),
-    r = i(985018);
-let u = (0, l.zD)(a.X.GO_LIVE_NOTIFICATIONS, {
+var i = n(568444),
+    s = n(419954),
+    l = n(253932),
+    a = n(780964),
+    r = n(985018);
+let o = (0, s.zD)(a.X.GO_LIVE_NOTIFICATIONS, {
     useTitle: () => r.intl.string(r.t.FSNIvs),
-    useValue: s.Yh.useSetting,
-    setValue: n.E
+    useValue: l.Yh.useSetting,
+    setValue: i.E
 })

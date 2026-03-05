@@ -13,20 +13,20 @@ var a = n(627968),
     u = n(159452);
 
 function m(e) {
-    return !!(e.type === r.Z6.PANEL && null != e.StronglyDiscouragedCustomComponent || (0, r.nW)(e) && e.type === r.Z6.SIDEBAR_ITEM && e.layout.some(e => e?.StronglyDiscouragedCustomComponent != null) || (0, r.nW)(e) && 0 === e.layout.length && null != e.parent?.parent?.getLegacySearchKey?.()) || !1
+    return !!(e.type === r.Z6.PANEL && null != e.StronglyDiscouragedCustomComponent || (0, r.nW)(e) && e.type === r.Z6.SIDEBAR_ITEM && e.layout.some(e => e?.StronglyDiscouragedCustomComponent != null))
 }
 
 function h(e) {
     return !!m(e) || !!(0, r.nW)(e) && e.layout.some(e => h(e))
 }
 
-function p(e) {
+function x(e) {
     let {
         setting: t,
         depth: n,
         highlightMode: s
     } = e, l = i.useContext(g)?.get(t), r = null;
-    return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(p, {
+    return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(x, {
         setting: e,
         depth: n + 1,
         highlightMode: s
@@ -38,7 +38,7 @@ function p(e) {
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         setting: t,
         depth: n,
@@ -57,19 +57,11 @@ function x(e) {
                 return t ?? "migrated"
         }
     }(t, i), l = "migrated" === s ? "migrated" : void 0, o = null;
-    if ((0, r.nW)(t)) {
-        let e = t.parent?.parent?.getLegacySearchKey?.();
-        0 === t.layout.length && null != e ? o = (0, a.jsx)(p, {
-            setting: e,
-            depth: n + 1,
-            highlightMode: l ?? "legacy"
-        }) : t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(x, {
-            setting: e,
-            depth: n + 1,
-            inheritedHighlightMode: l
-        }, e.key)))
-    }
-    return (0, a.jsx)(d.n, {
+    return (0, r.nW)(t) && t.layout.length > 0 && (o = t.layout.map(e => (0, a.jsx)(p, {
+        setting: e,
+        depth: n + 1,
+        inheritedHighlightMode: l
+    }, e.key))), (0, a.jsx)(d.n, {
         title: t.key,
         initExpanded: n <= 2,
         highlightMode: s,
@@ -99,10 +91,10 @@ function _() {
             value: n,
             children: (0, a.jsxs)("div", {
                 className: u.B2,
-                children: [e && (0, a.jsx)(p, {
+                children: [e && (0, a.jsx)(x, {
                     setting: "root",
                     depth: 1
-                }, "root"), !e && (0, a.jsx)(x, {
+                }, "root"), !e && (0, a.jsx)(p, {
                     setting: r,
                     depth: 1
                 }, r.key)]

@@ -7,13 +7,13 @@ var s, i = n(627968),
     l = n(64700),
     r = n(397927),
     a = n(235986),
-    o = n(278941),
-    T = n(665909),
+    T = n(278941),
+    o = n(665909),
     c = n(758601),
     d = n(407058),
     S = n(772194),
-    A = n(985018),
-    u = n(53483),
+    u = n(985018),
+    A = n(53483),
     _ = ((s = {}).ACTIONS = "ACTIONS", s.SAFETY_TIPS = "SAFETY_TIPS", s.ABOUT_SAFETY_ALERTS = "ABOUT_SAFETY_ALERTS", s);
 let x = t => {
     let {
@@ -23,8 +23,8 @@ let x = t => {
         warningType: _,
         otherUserId: x,
         transitionState: E
-    } = t, m = null != (0, o.e)(n), [O, g] = l.useState("ACTIONS"), h = l.useCallback(t => {
-        (0, T._$)({
+    } = t, m = null != (0, T.e)(n), [g, O] = l.useState("ACTIONS"), h = l.useCallback(t => {
+        (0, o._$)({
             channelId: n,
             warningId: s,
             warningType: _,
@@ -44,38 +44,38 @@ let x = t => {
             textVariant: "text-sm/normal"
         })
     }, []), C = l.useCallback(() => {
-        switch (O) {
+        switch (g) {
             case "SAFETY_TIPS":
             case "ABOUT_SAFETY_ALERTS":
                 return (0, i.jsx)(j, {
-                    text: A.intl.string(A.t["13/7kX"]),
-                    onClick: () => g("ACTIONS")
+                    text: u.intl.string(u.t["13/7kX"]),
+                    onClick: () => O("ACTIONS")
                 });
             default:
                 return null
         }
-    }, [O, j]), b = l.useCallback(() => {
-        switch (O) {
+    }, [g, j]), b = l.useCallback(() => {
+        switch (g) {
             case "SAFETY_TIPS":
-                return A.intl.string(A.t.EtNxi6);
+                return u.intl.string(u.t.EtNxi6);
             case "ABOUT_SAFETY_ALERTS":
-                return A.intl.string(A.t.qI14KM);
+                return u.intl.string(u.t.qI14KM);
             default:
-                return A.intl.string(A.t.MAhAp6)
+                return u.intl.string(u.t.MAhAp6)
         }
-    }, [O]), L = l.useCallback(t => {
-        g(t)
-    }, [g]);
+    }, [g]), L = l.useCallback(t => {
+        O(t)
+    }, [O]);
     return (0, i.jsxs)(r.EOs, {
         "data-migration-pending": !0,
         transitionState: E,
-        "aria-label": A.intl.string(A.t.eXlt01),
+        "aria-label": u.intl.string(u.t.eXlt01),
         size: r.rIJ.SMALL,
         parentComponent: "SafetyToolsModal",
         children: [(0, i.jsx)(r.rQ0, {
             "data-migration-pending": !0,
             separator: !1,
-            className: u.H,
+            className: A.H,
             justify: a.A.Justify.CENTER,
             children: (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
@@ -83,7 +83,7 @@ let x = t => {
             })
         }), (0, i.jsx)(r.HOs, {
             children: (0, i.jsxs)(r.tN_, {
-                activeSlide: O,
+                activeSlide: g,
                 width: 440,
                 children: [(0, i.jsx)(r.q7S, {
                     id: "ACTIONS",
@@ -99,7 +99,7 @@ let x = t => {
                     children: (0, i.jsx)(c.A, {
                         channelId: n,
                         onClose: () => {
-                            e(), h(T.Wm.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
+                            e(), h(o.Wm.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS_DISMISS)
                         }
                     })
                 }), (0, i.jsx)(r.q7S, {
@@ -111,9 +111,9 @@ let x = t => {
             "data-migration-pending": !0,
             justify: a.A.Justify.BETWEEN,
             children: [(0, i.jsx)(j, {
-                text: A.intl.string(A.t.cpT0Cq),
+                text: u.intl.string(u.t.cpT0Cq),
                 onClick: () => {
-                    e(), h(T.Wm.USER_SAFETY_TOOLS_DISMISS)
+                    e(), h(o.Wm.USER_SAFETY_TOOLS_DISMISS)
                 }
             }), C()]
         })]

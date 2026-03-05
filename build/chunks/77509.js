@@ -3,9 +3,9 @@ n.d(t, {
     A: () => d
 });
 var i = n(984083),
-    r = n(142120),
-    l = n(366811),
-    a = n(612716),
+    a = n(142120),
+    r = n(366811),
+    l = n(612716),
     s = n(976860),
     o = n(652215);
 class c {
@@ -21,19 +21,19 @@ class c {
         let {
             pathname: e
         } = (0, s.JK)().location;
-        l.A.getState().resetPath(e), this.unlistenKeyboardChange = l.A.subscribe(this.handleKeybindRouteChange), r.A.addChangeListener(this.handleConnectionChange)
+        r.A.getState().resetPath(e), this.unlistenKeyboardChange = r.A.subscribe(this.handleKeybindRouteChange), a.A.addChangeListener(this.handleConnectionChange)
     }
     handleConnectionChange = () => {
-        let e = r.A.isConnected(),
+        let e = a.A.isConnected(),
             t = e && !this.connected;
         this.connected = e, t && (this.routeChangeCount = 0, this.executeRouteRewrites((0, s.JK)().location, "REPLACE"))
     };
     handleRouteChange = (e, t) => {
         if ("POP" !== t) {
             if (this.executeRouteRewrites(e, t)) return;
-            if (!(0, a.o)(e)) return void(0, s.bG)(o.BVt.ME)
+            if (!(0, l.o)(e)) return void(0, s.bG)(o.BVt.ME)
         }
-        let n = l.A.getState();
+        let n = r.A.getState();
         for (let i of (n.basePath !== e.pathname && n.resetPath(e.pathname), this.listeners)) try {
             i(e, t)
         } catch (e) {
@@ -44,15 +44,15 @@ class c {
     executeRouteRewrites(e, t) {
         if (this.routeChangeCount += 1, this.routeChangeCount < 10)
             for (let n of this.rewrites) {
-                let r = (0, s.JK)().location.pathname,
-                    l = n(e, t);
-                if (null != l) return (0, i.Z)({
+                let a = (0, s.JK)().location.pathname,
+                    r = n(e, t);
+                if (null != r) return (0, i.Z)({
                     message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
                     data: {
-                        replacePath: l.path,
-                        previousPath: r
+                        replacePath: r.path,
+                        previousPath: a
                     }
-                }), (0, s.bG)(l.path, l.state), !0
+                }), (0, s.bG)(r.path, r.state), !0
             } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
         return !1
     }
@@ -63,11 +63,11 @@ class c {
     };
     flushRoute = () => {
         clearTimeout(this.timer);
-        let e = l.A.getState();
+        let e = r.A.getState();
         null != e.path && (0, s.pX)(e.path)
     };
     cleanup() {
-        this.unlistenHistory?.(), this.unlistenHistory = void 0, this.unlistenKeyboardChange?.(), this.unlistenKeyboardChange = void 0, r.A.removeChangeListener(this.handleConnectionChange)
+        this.unlistenHistory?.(), this.unlistenHistory = void 0, this.unlistenKeyboardChange?.(), this.unlistenKeyboardChange = void 0, a.A.removeChangeListener(this.handleConnectionChange)
     }
     addRouteChangeListener(e) {
         return null != this.unlistenHistory && e((0, s.JK)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)

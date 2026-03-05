@@ -1,77 +1,77 @@
 /** chunk id: 511968, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(273166),
     o = n(885996),
-    c = n(397927),
-    d = n(963342),
+    d = n(397927),
+    c = n(963342),
     u = n(3432),
     _ = n(580630),
-    m = n(240248),
-    A = n(237218),
-    g = n(689296),
+    g = n(240248),
+    m = n(237218),
+    A = n(689296),
     h = n(542858);
 
-function x(e) {
+function p(e) {
     let {
         cta: t,
         storeListing: n,
-        className: a
+        className: l
     } = e, {
-        applicationId: x,
-        benefits: p,
+        applicationId: p,
+        benefits: x,
         description: E
-    } = n, C = s.useMemo(() => null == n.thumbnail ? null : (0, A.t)(x, n.thumbnail, 256), [x, n.thumbnail]), {
-        data: T
-    } = (0, d.j)(n.skuId), S = s.useMemo(() => {
-        if (null == T || 0 === T.length) return null;
-        let e = T[0];
+    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, m.t)(p, n.thumbnail, 256), [p, n.thumbnail]), {
+        data: S
+    } = (0, c.j)(n.skuId), C = s.useMemo(() => {
+        if (null == S || 0 === S.length) return null;
+        let e = S[0];
         return (0, _._J)(e)
-    }, [T]);
-    return null == S ? null : (0, i.jsxs)(r.q, {
-        className: l()(h.iE, a),
+    }, [S]);
+    return null == C ? null : (0, i.jsxs)(r.q, {
+        className: a()(h.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: h.qd,
-                children: [null != C && (0, i.jsx)(c._V3, {
-                    src: C.href,
+                children: [null != T && (0, i.jsx)(d._V3, {
+                    src: T.href,
                     imageClassName: h.rW,
                     width: 48,
                     height: 48
                 }), (0, i.jsxs)("div", {
-                    children: [(0, i.jsx)(c.Heading, {
+                    children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-md/bold",
                         children: n.summary
-                    }), (0, i.jsx)(c.Text, {
+                    }), (0, i.jsx)(d.Text, {
                         variant: "text-md/medium",
-                        children: S
+                        children: C
                     })]
                 })]
             }), t]
         }),
-        children: [!(0, m.uJ)(E) && (0, i.jsx)("div", {
+        children: [!(0, g.uJ)(E) && (0, i.jsx)("div", {
             className: h.h_,
-            children: (0, i.jsx)(g.A, {
+            children: (0, i.jsx)(A.A, {
                 variant: "text-sm/medium",
                 children: E
             })
-        }), null != p && p.length > 0 && (0, i.jsx)("div", {
+        }), null != x && x.length > 0 && (0, i.jsx)("div", {
             className: h.PX,
-            children: p.map(e => {
+            children: x.map(e => {
                 let {
                     id: t,
                     name: n,
                     description: s,
-                    icon: a
+                    icon: l
                 } = e;
                 return (0, i.jsx)(o.FY, {
                     header: n,
-                    icon: (0, u.N)(x, a),
+                    icon: (0, u.N)(p, l),
                     description: s
                 }, t)
             })

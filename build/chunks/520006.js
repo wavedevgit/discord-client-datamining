@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(284009),
     l = n.n(s),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(298990),
     c = n(688810),
     d = n(384059),
@@ -30,8 +30,8 @@ function f(e) {
         analyticsLocation: E,
         guildScheduledEvent: I,
         shouldPrioritizeGroupPlusIcon: N = !1,
-        isRichPresenceInvite: S = !1,
-        iconClassName: b,
+        isRichPresenceInvite: b = !1,
+        iconClassName: S,
         look: T,
         size: v,
         buttonText: y,
@@ -39,14 +39,14 @@ function f(e) {
         ...R
     } = e, O = (0, u.Us)(), {
         parentAnalyticsLocation: L
-    } = (0, c.Ay)(), M = f?.getGuildId(), D = (0, r.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, r.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? a.DpX : a.dCJ, P = null != t ? _.intl.string(_.t["OzOM/q"]) : _.intl.string(_.t["6F9ivu"]);
-    return null != G && S ? (0, i.jsx)(p.A, {
+    } = (0, c.Ay)(), M = f?.getGuildId(), D = (0, a.bG)([h.A], () => null != M ? h.A.getGuild(M) : null, [M]), G = (0, a.bG)([A.A], () => null != t ? A.A.getApplicationActivity(t) : void 0), U = null == t || N ? r.DpX : r.dCJ, P = null != t ? _.intl.string(_.t["OzOM/q"]) : _.intl.string(_.t["6F9ivu"]);
+    return null != G && b ? (0, i.jsx)(p.A, {
         onClick: () => {
             null != L && (0, d.X)(L, d.O.INVITE), o.qf(G, !1, O)
         },
         iconComponent: U,
         label: P,
-        iconClassName: b,
+        iconClassName: S,
         look: T,
         size: v,
         buttonText: y,
@@ -59,13 +59,13 @@ function f(e) {
                         guild: t,
                         channel: s,
                         streamUserId: l,
-                        applicationId: r,
+                        applicationId: a,
                         appContext: o,
                         exitFullScreen: c,
                         analyticsLocation: d,
                         guildScheduledEvent: u
                     } = e;
-                    c?.(), (0, a.mMO)(async () => {
+                    c?.(), (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
@@ -74,14 +74,14 @@ function f(e) {
                             guild: t,
                             channel: s,
                             streamUserId: l,
-                            applicationId: r,
+                            applicationId: a,
                             analyticsLocation: d,
                             source: s.isGuildStageVoice() ? g.PE1.STAGE_CHANNEL : g.PE1.STREAM_INVITE,
                             guildScheduledEvent: u
                         })
                     }, {
                         modalKey: "stream-invite-modal",
-                        contextKey: o === g.BRT.POPOUT ? a.KX8 : a.SYi
+                        contextKey: o === g.BRT.POPOUT ? r.KX8 : r.SYi
                     })
                 }({
                     guild: D,
@@ -96,7 +96,7 @@ function f(e) {
         },
         iconComponent: U,
         label: P,
-        iconClassName: b,
+        iconClassName: S,
         look: T,
         size: v,
         color: j,

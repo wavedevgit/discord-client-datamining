@@ -13,11 +13,13 @@ var t = a(627968),
 let c = [{
         label: "Aardvark",
         value: "aardvark",
-        id: "aardvark"
+        id: "aardvark",
+        description: "This is an aardvark"
     }, {
         label: "Cat",
         value: "cat",
-        id: "cat"
+        id: "cat",
+        description: "This is a cat"
     }, {
         label: "Dog",
         value: "dog",
@@ -25,7 +27,8 @@ let c = [{
     }, {
         label: "Kangaroo",
         value: "kangaroo",
-        id: "kangaroo"
+        id: "kangaroo",
+        description: "This is a kangaroo"
     }, {
         label: "Panda",
         value: "panda",
@@ -44,13 +47,15 @@ let c = [{
         trailing: {
             type: "badge",
             badgeType: "new"
-        }
+        },
+        description: "This is an aardvark"
     }, {
         label: "Cat",
         value: "cat",
         id: "cat",
         leading: s.N$i,
-        trailing: "20m"
+        trailing: "20m",
+        description: "This is a cat"
     }, {
         label: "Dog",
         value: "dog",

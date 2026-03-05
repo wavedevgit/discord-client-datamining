@@ -1,15 +1,15 @@
-/** chunk id: 422891, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 422891, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     h: () => r
 });
-var n = i(253932),
-    l = i(954571),
-    s = i(406535),
-    a = i(652215);
+var i = n(253932),
+    s = n(954571),
+    l = n(406535),
+    a = n(652215);
 
-function r(t) {
-    n.NR.updateSetting(t), l.default.track(a.HAw.NOTIFICATION_SETTINGS_UPDATED, {
-        update_type: s.Y.ACCOUNT,
-        friend_online_notifications: t
+function r(e) {
+    i.NR.updateSetting(e), s.default.track(a.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+        update_type: l.Y.ACCOUNT,
+        friend_online_notifications: e
     })
 }

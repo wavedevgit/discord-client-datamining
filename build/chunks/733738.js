@@ -1,6 +1,6 @@
 /** chunk id: 733738, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var r = n(503698),
     h = n(88808);
 let _ = d.GY.binds["0"],
     m = d.M$.binds["0"],
-    p = e => {
+    g = e => {
         let {
             firstElementFocusJumpSectionProps: t = {}
         } = e, {

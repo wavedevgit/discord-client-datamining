@@ -1,18 +1,18 @@
 /** chunk id: 100406, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    CA: () => d,
+    CA: () => c,
     NI: () => u,
-    cR: () => c
+    cR: () => d
 });
 var i = n(110259),
     s = n(933681),
-    a = n(73153),
-    l = n(499785),
+    l = n(73153),
+    a = n(499785),
     r = n(431144),
     o = n(652215);
-async function c() {
+async function d() {
     try {
-        let e = await l.A.get({
+        let e = await a.A.get({
             url: o.Rsh.EMAIL_SETTINGS,
             trackedActionData: {
                 event: i.NetworkActionNames.EMAIL_SETTINGS_FETCH,
@@ -25,25 +25,25 @@ async function c() {
             },
             rejectWithError: !0
         });
-        return a.h.dispatch({
+        return l.h.dispatch({
             type: "EMAIL_SETTINGS_FETCH_SUCCESS",
             settings: e.body
         }), e.body
     } catch {
-        a.h.dispatch({
+        l.h.dispatch({
             type: "EMAIL_SETTINGS_FETCH_FAILURE"
         })
     }
 }
-async function d(e, t) {
-    a.h.dispatch({
+async function c(e, t) {
+    l.h.dispatch({
         type: "EMAIL_SETTINGS_UPDATE",
         updates: {
             [e]: t
         }
     });
     try {
-        let n = await l.A.patch({
+        let n = await a.A.patch({
             url: o.Rsh.EMAIL_SETTINGS,
             body: {
                 settings: {
@@ -61,12 +61,12 @@ async function d(e, t) {
             },
             rejectWithError: !0
         });
-        a.h.dispatch({
+        l.h.dispatch({
             type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
             settings: n.body
         })
     } catch (e) {
-        a.h.dispatch({
+        l.h.dispatch({
             type: "EMAIL_SETTINGS_UPDATE_FAILURE"
         })
     }
@@ -76,12 +76,12 @@ async function u() {
         ...e,
         [t]: !1
     }), {});
-    a.h.dispatch({
+    l.h.dispatch({
         type: "EMAIL_SETTINGS_UPDATE",
         updates: e
     });
     try {
-        let t = await l.A.patch({
+        let t = await a.A.patch({
             url: o.Rsh.EMAIL_SETTINGS,
             body: {
                 settings: {
@@ -97,12 +97,12 @@ async function u() {
             },
             rejectWithError: !0
         });
-        a.h.dispatch({
+        l.h.dispatch({
             type: "EMAIL_SETTINGS_UPDATE_SUCCESS",
             settings: t.body
         })
     } catch (e) {
-        a.h.dispatch({
+        l.h.dispatch({
             type: "EMAIL_SETTINGS_UPDATE_FAILURE"
         })
     }

@@ -1,13 +1,13 @@
-/** chunk id: 445176, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    e: () => l
+/** chunk id: 445176, original params: E,_,I (module,exports,require) **/
+I.d(_, {
+    e: () => C
 });
-var i = n(64700),
-    s = n(115063),
-    a = n(253932);
+var S = I(64700),
+    A = I(115063),
+    T = I(253932);
 
-function l() {
-    let e = a.FA.useSetting(),
-        t = i.useMemo(() => (0, s.Lx)(e), [e]);
-    return t.mutualGuilds && !t.all
+function C() {
+    let E = T.FA.useSetting(),
+        _ = S.useMemo(() => (0, A.Lx)(E), [E]);
+    return _.mutualGuilds && !_.all
 }

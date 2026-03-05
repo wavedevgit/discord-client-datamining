@@ -1,15 +1,15 @@
-/** chunk id: 386870, original params: e,t,n (module,exports,require) **/
+/** chunk id: 386870, original params: e,t,r (module,exports,require) **/
 "use strict";
-var i = n(436701);
+var a = r(436701);
 
-function s() {}
+function n() {}
 
-function r() {}
-r.resetWarningCache = s, e.exports = function() {
-    function e(e, t, n, s, r, l) {
-        if (l !== i) {
-            var a = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-            throw a.name = "Invariant Violation", a
+function o() {}
+o.resetWarningCache = n, e.exports = function() {
+    function e(e, t, r, n, o, s) {
+        if (s !== a) {
+            var i = Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+            throw i.name = "Invariant Violation", i
         }
     }
 
@@ -17,7 +17,7 @@ r.resetWarningCache = s, e.exports = function() {
         return e
     }
     e.isRequired = e;
-    var n = {
+    var r = {
         array: e,
         bigint: e,
         bool: e,
@@ -37,8 +37,8 @@ r.resetWarningCache = s, e.exports = function() {
         oneOfType: t,
         shape: t,
         exact: t,
-        checkPropTypes: r,
-        resetWarningCache: s
+        checkPropTypes: o,
+        resetWarningCache: n
     };
-    return n.PropTypes = n, n
+    return r.PropTypes = r, r
 }

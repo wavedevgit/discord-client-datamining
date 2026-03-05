@@ -1,28 +1,28 @@
-/** chunk id: 773140, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => _
+/** chunk id: 773140, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => p
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(430452),
-    a = i(780964),
-    r = i(235661),
-    u = i(573858),
-    o = i(490107),
-    d = i(945928),
-    A = i(108804),
-    T = i(198987),
-    S = i(315943),
-    E = i(475061),
-    g = i(985018);
-let c = (0, l.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
-        useTitle: () => g.intl.string(g.t.B1fFpf),
-        buildLayout: () => [E.p, d.Q, u.i, S.H, T.t, A.U, o.r]
+var i = n(934551),
+    s = n(419954),
+    l = n(430452),
+    a = n(780964),
+    r = n(235661),
+    o = n(573858),
+    d = n(490107),
+    c = n(945928),
+    u = n(108804),
+    _ = n(198987),
+    g = n(315943),
+    m = n(475061),
+    A = n(985018);
+let h = (0, s.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
+        useTitle: () => A.intl.string(A.t.B1fFpf),
+        buildLayout: () => [m.p, c.Q, o.i, g.H, _.t, u.U, d.r]
     }),
-    _ = (0, l.i4)(a.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(g.t.B1fFpf),
-        usePredicate: () => s.Ay.isSupported(),
-        icon: n.MicrophoneIcon,
+    p = (0, s.i4)(a.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
+        useTitle: () => A.intl.string(A.t.B1fFpf),
+        usePredicate: () => l.Ay.isSupported(),
+        icon: i.MicrophoneIcon,
         useMenu: r.A,
-        buildLayout: () => [c]
+        buildLayout: () => [h]
     })

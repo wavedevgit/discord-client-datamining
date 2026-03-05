@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(397927),
+    l = n.n(s),
+    a = n(397927),
     r = n(164974);
 
 function o(e) {
@@ -15,43 +15,43 @@ function o(e) {
         error: n,
         onClick: s,
         submitting: o,
-        className: c,
-        ctaMessage: d
+        className: d,
+        ctaMessage: c
     } = e;
     return (0, i.jsxs)("div", {
-        className: a()(r.kL, c),
+        className: l()(r.kL, d),
         children: [(0, i.jsxs)("div", {
             className: r.FS,
-            children: [(0, i.jsx)(l.EpV, {
+            children: [(0, i.jsx)(a.EpV, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor",
                 className: r.QW
-            }), (0, i.jsx)(l.hKd, {
+            }), (0, i.jsx)(a.hKd, {
                 size: 10,
                 horizontal: !0
             }), (0, i.jsxs)("div", {
-                children: [(0, i.jsx)(l.hKd, {
+                children: [(0, i.jsx)(a.hKd, {
                     size: 1
-                }), (0, i.jsx)(l.Text, {
+                }), (0, i.jsx)(a.Text, {
                     className: r.pq,
                     variant: "text-sm/normal",
                     children: t
-                }), null != n && (0, i.jsx)(l.Text, {
-                    className: a()(r.pq, r.z3),
+                }), null != n && (0, i.jsx)(a.Text, {
+                    className: l()(r.pq, r.z3),
                     variant: "text-sm/normal",
                     children: n
                 })]
             })]
-        }), (0, i.jsx)(l.hKd, {
+        }), (0, i.jsx)(a.hKd, {
             size: 16,
             horizontal: !0
-        }), (0, i.jsx)(l.Button, {
+        }), (0, i.jsx)(a.Button, {
             variant: "critical-secondary",
             size: "sm",
             onClick: s,
-            text: d,
+            text: c,
             loading: o
         })]
     })

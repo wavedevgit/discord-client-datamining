@@ -1,43 +1,43 @@
 /** chunk id: 229289, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     s = n(417597),
-    a = n(775602),
-    l = n(608416),
+    l = n(775602),
+    a = n(608416),
     r = n(307973),
     o = n(369877),
-    c = n(180894);
-let d = e => {
+    d = n(180894);
+let c = e => {
     let {
         containerVisibilityPercentage: t
-    } = e, n = (0, s.bG)([a.A], () => a.A.useReducedMotion);
+    } = e, n = (0, s.bG)([l.A], () => l.A.useReducedMotion);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: o.BI,
-            children: (0, i.jsx)(l.Ay, {
+            children: (0, i.jsx)(a.Ay, {
                 scaleAnimationData: {
                     startScale: .9,
                     endScale: 1,
-                    duration: l.$G
+                    duration: a.$G
                 },
                 yAxisAnimationData: {
                     range: 20,
-                    duration: l.Mp,
-                    path: l.aV.SINE
+                    duration: a.Mp,
+                    path: a.aV.SINE
                 },
                 animateXAxisWiggle: !0,
                 isMotionReduced: n,
                 parallaxAnimationData: {
-                    pathDirection: l.MN.UP,
+                    pathDirection: a.MN.UP,
                     range: 125,
                     containerVisibilityPercentage: t,
                     changeOpacity: !0
                 },
                 animationSpeedScale: 2,
                 children: (0, i.jsx)("img", {
-                    src: c.A,
+                    src: d.A,
                     alt: "",
                     className: o.Q
                 })

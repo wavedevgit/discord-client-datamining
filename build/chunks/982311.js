@@ -4,44 +4,44 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(158954),
-    l = n(421380),
+    l = n(158954),
+    a = n(421380),
     r = n(397927),
     o = n(416052),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(915089),
     _ = n(264779),
-    m = n(985018),
-    A = n(424019);
+    g = n(985018),
+    m = n(424019);
 
-function g(e) {
+function A(e) {
     let {
         onClose: t,
         transitionState: n
     } = e;
-    return (0, i.jsx)(a.Modal, {
+    return (0, i.jsx)(l.Modal, {
         title: "",
         size: "md",
         input: (0, i.jsx)("div", {
-            className: A.aR
+            className: m.aR
         }),
         onClose: async () => await t(),
         actions: [{
-            text: m.intl.string(m.t.cpT0Cq),
+            text: g.intl.string(g.t.cpT0Cq),
             variant: "primary",
             onClick: t
         }],
         transitionState: n,
         children: (0, i.jsxs)("div", {
-            className: A.t4,
+            className: m.t4,
             children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: m.intl.string(m.t.iufib1)
+                children: g.intl.string(g.t.iufib1)
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
-                className: A.G3,
-                children: m.intl.string(m.t.eAn6z2)
+                className: m.G3,
+                children: g.intl.string(g.t.eAn6z2)
             })]
         })
     })
@@ -51,62 +51,62 @@ let h = function(e) {
         onClose: t,
         onClaim: n,
         code: h,
-        outboundPromotion: x,
-        transitionState: p
-    } = e, [E, C] = s.useState(null), T = (0, u.GV)(), {
-        analyticsLocations: S
-    } = (0, d.Ay)(c.A.USER_SETTINGS_GIFT_INVENTORY);
+        outboundPromotion: p,
+        transitionState: x
+    } = e, [E, T] = s.useState(null), S = (0, u.GV)(), {
+        analyticsLocations: C
+    } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
         null == h && (0, _.kd)({
-            promotionId: x.id,
-            analyticsLocations: S
-        }).then(e => n(e)).catch(e => C(e?.body?.code))
-    }, [h, x.id, n, S]), null != E) ? (0, i.jsx)(g, {
+            promotionId: p.id,
+            analyticsLocations: C
+        }).then(e => n(e)).catch(e => T(e?.body?.code))
+    }, [h, p.id, n, C]), null != E) ? (0, i.jsx)(A, {
         onClose: t,
-        transitionState: p
+        transitionState: x
     }) : null == h ? (0, i.jsx)(r.y$y, {
-        className: A.Lq
-    }) : (0, i.jsx)(a.Modal, {
+        className: m.Lq
+    }) : (0, i.jsx)(l.Modal, {
         title: "",
         size: "md",
         onClose: async () => await t(),
         input: (0, i.jsxs)("div", {
-            className: A.N1,
+            className: m.N1,
             children: [(0, i.jsx)("div", {
-                className: A.Qw
+                className: m.Qw
             }), (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
-                children: m.intl.string(m.t["23BfZh"])
+                children: g.intl.string(g.t["23BfZh"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
-                className: A.G3,
-                children: x.outboundRedemptionModalBody
+                className: m.G3,
+                children: p.outboundRedemptionModalBody
             })]
         }),
         actions: [{
-            text: m.intl.string(m.t.TulDPl),
+            text: g.intl.string(g.t.TulDPl),
             variant: "secondary",
             onClick: async () => await t()
         }, {
-            text: m.intl.string(m.t["+zx47d"]),
+            text: g.intl.string(g.t["+zx47d"]),
             variant: "primary",
             onClick: () => {
-                let e = (0, _.kc)(h, x);
+                let e = (0, _.kc)(h, p);
                 window.open(e, "_blank")
             }
         }],
-        transitionState: p,
-        "aria-label": T,
+        transitionState: x,
+        "aria-label": S,
         children: (0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.cGx, {
-                className: A.M5
-            }), (0, i.jsx)(a.D0$, {
-                label: m.intl.string(m.t.s9LFQh),
-                helperText: m.intl.string(m.t["F+nFTZ"]),
+                className: m.M5
+            }), (0, i.jsx)(l.D0$, {
+                label: g.intl.string(g.t.s9LFQh),
+                helperText: g.intl.string(g.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
                     value: h,
-                    buttonColor: l.$n.Colors.BRAND,
-                    buttonLook: l.$n.Looks.FILLED,
+                    buttonColor: a.$n.Colors.BRAND,
+                    buttonLook: a.$n.Looks.FILLED,
                     delay: 1e3
                 })
             })]

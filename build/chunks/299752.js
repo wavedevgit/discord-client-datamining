@@ -1,45 +1,45 @@
-/** chunk id: 299752, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => c
+/** chunk id: 299752, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => h
 });
-var n = i(627968),
-    l = i(158954),
-    s = i(311907),
-    a = i(827343),
-    r = i(117178),
-    u = i(419954),
-    o = i(430452),
-    d = i(780964),
-    A = i(840065),
-    T = i(903427),
-    S = i(652215),
-    E = i(985018),
-    g = i(755087);
-let c = (0, u.E2)(d.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
-    useSearchTerms: () => [E.intl.string(E.t["pS+K2L"]), E.intl.string(E.t.nuFtHH)],
-    usePredicate: T.P,
+var i = n(627968),
+    s = n(158954),
+    l = n(311907),
+    a = n(827343),
+    r = n(117178),
+    o = n(419954),
+    d = n(430452),
+    c = n(780964),
+    u = n(840065),
+    _ = n(903427),
+    g = n(652215),
+    m = n(985018),
+    A = n(755087);
+let h = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+    useSearchTerms: () => [m.intl.string(m.t["pS+K2L"]), m.intl.string(m.t.nuFtHH)],
+    usePredicate: _.P,
     Component: function() {
-        let t = (0, s.bG)([o.Ay], () => {
+        let e = (0, l.bG)([d.Ay], () => {
                 let {
-                    shortcut: t
-                } = o.Ay.getModeOptions();
-                return t
+                    shortcut: e
+                } = d.Ay.getModeOptions();
+                return e
             }),
-            e = E.intl.format(E.t.HVvn5T, {
-                onClick: () => (0, A.openUserSettings)(d.X.KEYBINDS_PANEL, {
-                    section: S.nc_.KEYBINDS
+            t = m.intl.format(m.t.HVvn5T, {
+                onClick: () => (0, u.openUserSettings)(c.X.KEYBINDS_PANEL, {
+                    section: g.nc_.KEYBINDS
                 })
             });
-        return (0, n.jsx)(l.D0$, {
-            label: E.intl.string(E.t["o+BJQR"]),
-            description: e,
+        return (0, i.jsx)(s.D0$, {
+            label: m.intl.string(m.t["o+BJQR"]),
+            description: t,
             layout: "horizontal-responsive",
-            children: (0, n.jsx)("div", {
-                className: g.e,
-                children: (0, n.jsx)(r.A, {
-                    defaultValue: t,
-                    onChange: t => a.A.setMode(S.TBI.PUSH_TO_TALK, {
-                        shortcut: t
+            children: (0, i.jsx)("div", {
+                className: A.e,
+                children: (0, i.jsx)(r.A, {
+                    defaultValue: e,
+                    onChange: e => a.A.setMode(g.TBI.PUSH_TO_TALK, {
+                        shortcut: e
                     })
                 })
             })

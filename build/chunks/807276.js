@@ -1,26 +1,26 @@
-/** chunk id: 807276, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Z: () => o
+/** chunk id: 807276, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Z: () => d
 });
-var n = i(524136),
-    l = i(70730),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
-    useTitle: () => u.intl.string(u.t.NjOMvh),
+var i = n(524136),
+    s = n(70730),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
+    useTitle: () => o.intl.string(o.t.NjOMvh),
     useBadge: () => "beta",
     useValue: a.oz.useSetting,
-    setValue: n.O,
-    useSearchTerms: () => [u.intl.string(u.t.hi4dSk)],
+    setValue: i.O,
+    useSearchTerms: () => [o.intl.string(o.t.hi4dSk)],
     usePredicate: () => {
         let {
-            enabled: t,
-            showDmPrompts: e
-        } = l.u.getConfig({
+            enabled: e,
+            showDmPrompts: t
+        } = s.u.getConfig({
             location: "FriendAnniversaryNotifications"
         });
-        return t && e
+        return e && t
     }
 })

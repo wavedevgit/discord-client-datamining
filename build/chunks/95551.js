@@ -33,22 +33,22 @@ function u(e) {
         label: u,
         sublabel: m,
         trailing: h,
-        renderSubmenu: p,
-        ref: x
+        renderSubmenu: x,
+        ref: p
     } = e, g = null != n, _ = (0, r.rE)({
         action: t,
         onClick: n
-    }), [f, b] = i.useState(!1), v = i.useRef(null), j = x ?? v, A = null != p, C = A && g, T = {
+    }), [f, v] = i.useState(!1), b = i.useRef(null), j = p ?? b, A = null != x, C = A && g, y = {
         offset: {
             top: -8,
             left: -8,
             right: -8,
             bottom: -8
         }
-    }, y = i.useCallback(() => {
-        b(!0)
+    }, T = i.useCallback(() => {
+        v(!0)
     }, []), S = i.useCallback(() => {
-        b(!1)
+        v(!1)
     }, []), E = () => (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
             className: d.iA,
@@ -79,7 +79,7 @@ function u(e) {
                 onClick: _,
                 focusProps: {
                     offset: {
-                        ...T.offset,
+                        ...y.offset,
                         right: 0
                     }
                 },
@@ -88,8 +88,8 @@ function u(e) {
                 className: d.ap,
                 "aria-label": o.intl.string(o.t.PdRCRg),
                 ...e,
-                onClick: y,
-                focusProps: T,
+                onClick: T,
+                focusProps: y,
                 children: (0, a.jsx)(s.ChevronSmallRightIcon, {
                     size: "xs",
                     color: "currentColor"
@@ -98,8 +98,8 @@ function u(e) {
         }) : A ? (0, a.jsxs)(l.DUT, {
             className: d.ef,
             ...e,
-            onClick: y,
-            focusProps: T,
+            onClick: T,
+            focusProps: y,
             children: [E(), (0, a.jsx)("div", {
                 className: d.ap,
                 children: (0, a.jsx)(s.ChevronSmallRightIcon, {
@@ -110,7 +110,7 @@ function u(e) {
         }) : (0, a.jsx)(l.DUT, {
             className: d.ef,
             onClick: _,
-            focusProps: T,
+            focusProps: y,
             children: E()
         }), (0, a.jsx)("div", {
             ref: j,
@@ -120,12 +120,12 @@ function u(e) {
     };
     return A ? (0, a.jsx)("li", {
         className: d.j$,
-        onMouseEnter: y,
+        onMouseEnter: T,
         onMouseLeave: S,
         children: (0, a.jsx)(l.YNO, {
             targetElementRef: j,
             spacing: 0,
-            renderPopout: p,
+            renderPopout: x,
             shouldShow: f,
             onRequestClose: S,
             children: N

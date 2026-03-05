@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    l = n(398590),
-    r = n(345942),
+    r = n(398590),
+    l = n(345942),
     a = n(183555),
     d = n(913453),
     o = n(51943),
@@ -20,16 +20,16 @@ function A(e) {
     } = e, {
         trackUserProfileAction: A
     } = (0, a.NJ)(), {
-        mutualGuilds: x,
-        isFetching: _
+        mutualGuilds: m,
+        isFetching: x
     } = (0, d.A)(t);
     return (0, i.jsx)(s.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == x && _ ? (0, i.jsx)("div", {
+        children: null == m && x ? (0, i.jsx)("div", {
             className: u.Ie,
             children: (0, i.jsx)(s.y$y, {})
-        }) : (null != x || _) && x?.length !== 0 ? x?.map(e => {
+        }) : (null != m || x) && m?.length !== 0 ? m?.map(e => {
             let {
                 guild: s,
                 nick: a
@@ -42,7 +42,7 @@ function A(e) {
                     var e;
                     A({
                         action: "PRESS_MUTUAL_GUILD"
-                    }), e = s.id, (0, r.u)(e), n(), (0, l.jH)()
+                    }), e = s.id, (0, l.u)(e), n(), (0, r.jH)()
                 }
             }, s.id)
         }) : (0, i.jsxs)("div", {

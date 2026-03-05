@@ -1,14 +1,14 @@
-/** chunk id: 653022, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 653022, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     V: () => r
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(985018);
-let a = (0, n.AK)(l.X.ACCESSIBILITY_TO_DISPLAY_NAVIGATOR, {
-        useSubtitle: () => s.intl.string(s.t.aTfeGK),
-        destinationKey: l.X.DISPLAY_PANEL
+var i = n(419954),
+    s = n(780964),
+    l = n(985018);
+let a = (0, i.AK)(s.X.ACCESSIBILITY_TO_DISPLAY_NAVIGATOR, {
+        useSubtitle: () => l.intl.string(l.t.aTfeGK),
+        destinationKey: s.X.DISPLAY_PANEL
     }),
-    r = (0, n.gN)(l.X.COLOR_AND_CONTRAST_RELATED_SETTINGS, {
+    r = (0, i.gN)(s.X.COLOR_AND_CONTRAST_RELATED_SETTINGS, {
         buildLayout: () => [a]
     })

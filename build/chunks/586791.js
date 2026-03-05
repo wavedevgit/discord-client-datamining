@@ -1,21 +1,21 @@
-/** chunk id: 586791, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    G: () => A
+/** chunk id: 586791, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    G: () => u
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(780964),
-    a = i(391680),
-    r = i(612533),
-    u = i(31760),
-    o = i(758885);
-let d = (0, l.t_)(s.X.DEVELOPER_OPTIONS_PANEL, {
+var i = n(934551),
+    s = n(419954),
+    l = n(780964),
+    a = n(391680),
+    r = n(612533),
+    o = n(31760),
+    d = n(758885);
+let c = (0, s.t_)(l.X.DEVELOPER_OPTIONS_PANEL, {
         useTitle: () => "Developer Options",
-        buildLayout: () => [u.J, o.y, r.G]
+        buildLayout: () => [o.J, d.y, r.G]
     }),
-    A = (0, l.i4)(s.X.DEVELOPER_OPTIONS_SIDEBAR_ITEM, {
+    u = (0, s.i4)(l.X.DEVELOPER_OPTIONS_SIDEBAR_ITEM, {
         useTitle: () => "Developer Options",
-        icon: n.StaffBadgeIcon,
+        icon: i.StaffBadgeIcon,
         useMenu: a.A,
-        buildLayout: () => [d]
+        buildLayout: () => [c]
     })

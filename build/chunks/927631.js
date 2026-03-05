@@ -1,16 +1,16 @@
-/** chunk id: 927631, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    W: () => u
+/** chunk id: 927631, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    W: () => o
 });
-var n = i(77468),
-    l = i(419954),
-    s = i(780964),
-    a = i(75698),
-    r = i(985018);
-let u = (0, l.E2)(s.X.CONNECTIONS_CONNECTED_ACCOUNTS_SETTING, {
+var i = n(77468),
+    s = n(419954),
+    l = n(780964),
+    a = n(75698),
+    r = n(985018);
+let o = (0, s.E2)(l.X.CONNECTIONS_CONNECTED_ACCOUNTS_SETTING, {
     Component: a.d7,
     initialize: () => {
-        n.A.fetch()
+        i.A.fetch()
     },
     useSearchTerms: () => [r.intl.string(r.t["+/hZM/"]), r.intl.string(r.t.bsbMVz), r.intl.string(r.t.f7yOAX), r.intl.string(r.t.FYKGsL), r.intl.string(r.t["+KCMSi"])]
 })

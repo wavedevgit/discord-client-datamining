@@ -111,11 +111,11 @@ let g = l.memo(function(e) {
         null == N.current[v] ? N.current[v] = [] : N.current[v][t] = e
     }, [v]), P = l.useCallback((e, t) => {
         y.current = t, E(m * e + t)
-    }, [E]), k = l.useCallback(() => {
+    }, [E]), w = l.useCallback(() => {
         y.current = null, E(null)
-    }, [E]), w = l.useCallback(e => {
-        k(), b.current = e
-    }, [k]), U = l.useCallback((e, t, n) => {
+    }, [E]), k = l.useCallback(e => {
+        w(), b.current = e
+    }, [w]), U = l.useCallback((e, t, n) => {
         let i, l, s;
         if (b.current) return void M({
             x: 0,
@@ -149,7 +149,7 @@ let g = l.memo(function(e) {
                 y: e.clientY
             };
         if (U(s, l, Math.max(t, n)), b.current) {
-            null != _ && k();
+            null != _ && w();
             return
         }
         let a = (0, o.wf)(l, s, Math.max(t, n));
@@ -159,12 +159,12 @@ let g = l.memo(function(e) {
             let n = t.getBoundingClientRect();
             if ((0, o.lw)(l, a, n)) return void P(v, e)
         }
-        k()
-    }, 16), [_, U, k, P, v, n, t]), H = l.useCallback(e => {
+        w()
+    }, 16), [_, U, w, P, v, n, t]), H = l.useCallback(e => {
         if (!C) return;
         let t = v + (e.deltaY > 0 ? 1 : -1);
-        t >= 0 && t < O.length && (null != y.current && (O[t].length > y.current ? P(t, y.current) : k()), j(t))
-    }, [C, v, O, P, k]), B = l.useMemo(() => O[v].map((e, l) => {
+        t >= 0 && t < O.length && (null != y.current && (O[t].length > y.current ? P(t, y.current) : w()), j(t))
+    }, [C, v, O, P, w]), B = l.useMemo(() => O[v].map((e, l) => {
         let s = h[l];
         if (null == s) throw Error(`Too many items supplied ${I.length} expected max of ${h.length}`);
         let a = A(s.x, t, g),
@@ -236,8 +236,8 @@ let g = l.memo(function(e) {
                         strokeWidth: "40.32"
                     }), f && (0, i.jsx)("circle", {
                         className: d.u1,
-                        onMouseEnter: () => w(!0),
-                        onMouseLeave: () => w(!1),
+                        onMouseEnter: () => k(!0),
+                        onMouseLeave: () => k(!1),
                         cx: 144,
                         cy: 144,
                         r: 28.8
@@ -249,8 +249,8 @@ let g = l.memo(function(e) {
                     })]
                 }), f && (0, i.jsx)("circle", {
                     className: d.u1,
-                    onMouseEnter: () => w(!0),
-                    onMouseLeave: () => w(!1),
+                    onMouseEnter: () => k(!0),
+                    onMouseLeave: () => k(!1),
                     cx: 144,
                     cy: 144,
                     r: 28.8,

@@ -1,18 +1,18 @@
-/** chunk id: 643015, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 643015, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     A: () => d
 });
-var i = n(64700),
-    l = n(311907),
-    r = n(287809),
-    a = n(966107),
-    s = n(380335);
+var n = i(64700),
+    l = i(311907),
+    r = i(287809),
+    s = i(966107),
+    a = i(380335);
 let o = new Set(["GB"]);
 
 function d() {
-    let t = (0, l.bG)([s.A], () => s.A.getUserCountryCode()),
+    let t = (0, l.bG)([a.A], () => a.A.getUserCountryCode()),
         e = !1 === (0, l.bG)([r.default], () => r.default.getCurrentUser()?.nsfwAllowed);
-    return i.useEffect(() => {
-        null == t && (0, a.xf)()
+    return n.useEffect(() => {
+        null == t && (0, s.xf)()
     }, [t]), null != t && !!o.has(t.alpha2) && !!e
 }

@@ -1,6 +1,6 @@
 /** chunk id: 223352, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var a = n(627968),
     i = n(64700),
@@ -13,21 +13,21 @@ var a = n(627968),
     u = n(341915),
     m = n(646764),
     h = n(398025),
-    p = n(568329),
-    x = n(963713),
+    x = n(568329),
+    p = n(963713),
     g = n(772244);
 n(272111);
 var _ = n(985018),
     f = n(355862);
-let b = e => {
+let v = e => {
     let {
         isFullyExpanded: t,
         partnerBranding: n
-    } = e, s = (0, g.q)().label, b = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
-        quest: v
-    } = i.useContext(x.T), {
+    } = e, s = (0, g.q)().label, v = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+        quest: b
+    } = i.useContext(p.T), {
         expansionSpring: j
-    } = i.useContext(p.PW), A = s ? -4 : 6;
+    } = i.useContext(x.PW), A = s ? -4 : 6;
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(r.animated.div, {
             className: f.tE,
@@ -46,9 +46,9 @@ let b = e => {
             children: (0, a.jsx)(m.A, {
                 learnMoreStyle: "text",
                 learnMoreFontSize: t ? 9 : void 0,
-                quest: v,
+                quest: b,
                 questContent: u.uF.QUEST_BAR_V2,
-                autoplay: t && !b,
+                autoplay: t && !v,
                 sourceQuestContent: u.uF.QUEST_BAR_V2,
                 style: {
                     width: 48,

@@ -4,13 +4,13 @@ n.d(t, {
 });
 var l = n(627968),
     a = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    r = n(503698),
+    i = n.n(r),
     s = n(397927),
     d = n(46054),
     o = n(957565),
-    u = n(985018),
-    c = n(38776);
+    c = n(985018),
+    u = n(38776);
 
 function _(e) {
     let {
@@ -18,41 +18,41 @@ function _(e) {
             data: {
                 title: t,
                 body: n,
-                sms: i,
+                sms: r,
                 is_localized: _
             }
         }
     } = e, [m, x] = a.useState(!1), p = a.useRef(d.A.reactParserFor(d.A.defaultRules));
     return _ ? (0, l.jsxs)("div", {
-        className: c.kL,
+        className: u.kL,
         children: [(0, l.jsx)(s.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
-            className: c.wx,
+            className: u.wx,
             children: t
         }), (0, l.jsx)(s.Text, {
             variant: "text-sm/normal",
-            className: c.G3,
+            className: u.G3,
             children: p.current(n)
         }), (0, l.jsx)("div", {
             children: (0, l.jsxs)("div", {
-                className: r()(c.GH, {
-                    [c.pG]: m
+                className: i()(u.GH, {
+                    [u.pG]: m
                 }),
                 children: [(0, l.jsx)(s.Text, {
                     variant: "text-md/normal",
                     selectable: !0,
-                    className: c.Kk,
-                    children: i
+                    className: u.Kk,
+                    children: r
                 }), (0, l.jsx)("div", {
                     "data-button-hoisted-classname-wrapper": !0,
-                    className: c.__invalid_trailingButton,
+                    className: u.__invalid_trailingButton,
                     children: (0, l.jsx)(s.Button, {
                         variant: "secondary",
                         size: "sm",
-                        text: m ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
+                        text: m ? c.intl.string(c.t.t5VZ88) : c.intl.string(c.t.OpuAlK),
                         onClick: () => {
-                            (0, o.C)(i, () => x(!0))
+                            (0, o.C)(r, () => x(!0))
                         }
                     })
                 })]

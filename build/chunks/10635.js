@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(397927),
-    a = n(736653),
+    a = n(397927),
+    r = n(736653),
     o = n(793574),
     c = n(688810),
     d = n(311016),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(389996),
     I = n(743987),
     N = n(900179),
-    S = n(946356),
-    b = n(810396),
+    b = n(946356),
+    S = n(810396),
     T = n(35241),
     v = n(587168),
     y = n(996988),
@@ -37,7 +37,7 @@ function L(e) {
     let {
         user: t,
         channel: n
-    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, g.Ay)(t.id), D = (0, a.Ay)(), G = s.useRef(Date.now()), {
+    } = e, L = __OVERLAY__ || !(0, d.A)(t.id), M = (0, g.Ay)(t.id), D = (0, r.Ay)(), G = s.useRef(Date.now()), {
         analyticsLocations: U
     } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), P = (0, m.pb)({
         layout: "SIDEBAR",
@@ -61,7 +61,7 @@ function L(e) {
             fetchStartedAt: M?.fetchStartedAt,
             fetchEndedAt: M?.fetchEndedAt,
             isLoaded: M?.isLoaded,
-            children: (0, i.jsxs)(S.A, {
+            children: (0, i.jsxs)(b.A, {
                 ref: w,
                 user: t,
                 displayProfile: M,
@@ -88,7 +88,7 @@ function L(e) {
                         })]
                     }), (0, i.jsxs)("div", {
                         className: O.rf,
-                        children: [(0, i.jsx)(b.A, {
+                        children: [(0, i.jsx)(S.A, {
                             user: t,
                             guildId: n.guild_id,
                             nickname: A.Ay.getName(null, n.id, t),
@@ -98,7 +98,7 @@ function L(e) {
                                 displayProfile: M,
                                 themeType: y.d.SIDEBAR
                             })
-                        }), (0, i.jsxs)(S.A.Overlay, {
+                        }), (0, i.jsxs)(b.A.Overlay, {
                             className: O.Lw,
                             children: [(0, i.jsx)(N.A, {
                                 heading: j.intl.string(j.t.ZzAR2Y),
@@ -120,7 +120,7 @@ function L(e) {
                     })]
                 }), !L && (0, i.jsx)("div", {
                     className: R.qr,
-                    children: (0, i.jsx)(r.DUT, {
+                    children: (0, i.jsx)(a.DUT, {
                         onClick: () => {
                             B(), (0, p.Wn)({
                                 action: "PRESS_VIEW_PROFILE",

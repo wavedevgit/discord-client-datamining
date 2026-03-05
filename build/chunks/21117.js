@@ -1,38 +1,38 @@
-/** chunk id: 21117, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    b: () => A
+/** chunk id: 21117, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    b: () => u
 });
-var n = i(64700),
-    l = i(311907),
-    s = i(955572),
-    a = i(406360),
-    r = i(419954),
-    u = i(964404),
-    o = i(780964),
-    d = i(985018);
-let A = (0, r.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
-    useTitle: () => d.intl.string(d.t.nemtgW),
-    useSubtitle: () => d.intl.string(d.t["O/Gjvn"]),
+var i = n(64700),
+    s = n(311907),
+    l = n(955572),
+    a = n(406360),
+    r = n(419954),
+    o = n(964404),
+    d = n(780964),
+    c = n(985018);
+let u = (0, r.Qx)(d.X.HIGH_DYNAMIC_RANGE, {
+    useTitle: () => c.intl.string(c.t.nemtgW),
+    useSubtitle: () => c.intl.string(c.t["O/Gjvn"]),
     useBadge: () => "beta",
     useOptions: function() {
-        return n.useMemo(() => [{
-            name: d.intl.string(d.t.D5Fma9),
-            desc: d.intl.string(d.t.Qj75ck),
+        return i.useMemo(() => [{
+            name: c.intl.string(c.t.D5Fma9),
+            desc: c.intl.string(c.t.Qj75ck),
             value: "no-limit"
         }, {
-            name: d.intl.string(d.t.ldcGIH),
-            desc: d.intl.string(d.t["+V/bDk"]),
+            name: c.intl.string(c.t.ldcGIH),
+            desc: c.intl.string(c.t["+V/bDk"]),
             value: "standard"
         }], [])
     },
     usePredicate: function() {
         return (0, a.i)("HDRDynamicRangeSetting")
     },
-    setValue: function(t) {
-        (0, s.FU)(t)
+    setValue: function(e) {
+        (0, l.FU)(e)
     },
     useValue: function() {
-        return (0, l.bG)([u.Ay], () => u.Ay.hdrDynamicRange)
+        return (0, s.bG)([o.Ay], () => o.Ay.hdrDynamicRange)
     },
-    useSearchTerms: () => ["HDR", d.intl.string(d.t["O/Gjvn"])]
+    useSearchTerms: () => ["HDR", c.intl.string(c.t["O/Gjvn"])]
 })

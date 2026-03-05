@@ -1,11 +1,11 @@
 /** chunk id: 494316, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => i
+    A: () => l
 });
 var a = n(627968),
     s = n(397927);
 
-function i(e, t, i) {
+function l(e, t, l) {
     (0, s.mMO)(async () => {
         let {
             default: s
@@ -13,7 +13,7 @@ function i(e, t, i) {
         return n => (0, a.jsx)(s, {
             gameServerGame: t,
             guildId: e,
-            status: i,
+            status: l,
             ...n
         })
     })

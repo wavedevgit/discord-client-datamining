@@ -14,18 +14,18 @@ var a = n(627968),
     m = n(540999),
     h = n(865116);
 n(283030);
-var p = n(173628),
-    x = n(378230),
+var x = n(173628),
+    p = n(378230),
     g = n(374058),
     _ = n(974857),
     f = n(358622),
-    b = n(568834),
-    v = n(19767),
+    v = n(568834),
+    b = n(19767),
     j = n(648514),
     A = n(866001),
     C = n(855936),
-    T = n(489967),
-    y = n(2915),
+    y = n(489967),
+    T = n(2915),
     S = n(986789),
     E = n(821306),
     N = n(226936),
@@ -130,13 +130,13 @@ function ec() {
             id: "age_verification",
             name: "Age Verification",
             group: er.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(x.A, {})
+            render: () => (0, a.jsx)(p.A, {})
         }), e.push({
             id: "feedback",
             name: "Feedback",
             group: er.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(y.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -195,7 +195,7 @@ function ec() {
             id: "design_toggles",
             name: "Design Toggles",
             group: er.fu.UI,
-            render: () => (0, a.jsx)(v.A, {})
+            render: () => (0, a.jsx)(b.A, {})
         }), e.push({
             id: "appearance_randomizer",
             name: "Appearance Randomizer",
@@ -249,7 +249,7 @@ function ec() {
             name: "Affinity",
             group: er.fu.USERS,
             tags: ["friends"],
-            render: () => (0, a.jsx)(p.A, {})
+            render: () => (0, a.jsx)(x.A, {})
         }), m.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",
@@ -264,7 +264,7 @@ function ec() {
             id: "dcf_overrides",
             name: "DCF Overrides",
             group: er.fu.DCF,
-            render: () => (0, a.jsx)(b.A, {})
+            render: () => (0, a.jsx)(v.A, {})
         }), e.push({
             id: "dcf_events",
             name: "DCF Events",
@@ -305,7 +305,7 @@ function ec() {
             name: "Fractional Nitro",
             group: er.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(y.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",

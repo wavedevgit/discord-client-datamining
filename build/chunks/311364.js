@@ -1,12 +1,12 @@
 /** chunk id: 311364, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Y: () => a
+    Y: () => l
 });
 var i = n(627968);
 n(64700);
 var s = n(688810);
 
-function a(e) {
+function l(e) {
     let {
         analyticsLocations: t
     } = (0, s.Ay)(...e.newLocations);

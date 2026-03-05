@@ -5,52 +5,52 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(110259),
-    a = n(877624),
-    l = n(934551),
+    l = n(877624),
+    a = n(934551),
     r = n(158954),
     o = n(232582),
-    c = n(732955),
-    d = n(397927),
+    d = n(732955),
+    c = n(397927),
     u = n(212245),
     _ = n(688810),
-    m = n(139286),
-    A = n(975571),
-    g = n(498470),
+    g = n(139286),
+    m = n(975571),
+    A = n(498470),
     h = n(637706),
-    x = n(985018),
-    p = n(122506);
+    p = n(985018),
+    x = n(122506);
 let E = e => {
     let {
         componentId: t,
         promotionBannerMarketingComponentFields: n
     } = e, {
         analyticsLocations: E
-    } = (0, _.Ay)(), C = (0, u.p)();
-    (0, m.A)({
+    } = (0, _.Ay)(), T = (0, u.p)();
+    (0, g.A)({
         type: s.ImpressionTypes.VIEW,
         name: s.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
         properties: {
-            component_type: a.C.MARKETING_PAGE_BANNER,
+            component_type: l.C.MARKETING_PAGE_BANNER,
             component_id: t
         }
     });
-    let T = (0, g.h)({
+    let S = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
             analyticsLocations: E,
-            analyticsLocation: C.location
+            analyticsLocation: T.location
         }),
-        S = (0, h.a)(n.body);
+        C = (0, h.a)(n.body);
     return (0, i.jsxs)("div", {
-        className: p.kL,
+        className: x.kL,
         children: [(0, i.jsx)("div", {
-            className: p.LY,
+            className: x.LY,
             children: (0, i.jsx)("img", {
                 src: n.assetUrl,
-                className: p.ot,
+                className: x.ot,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: p.IH,
+            className: x.IH,
             children: [(0, i.jsx)(r.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -58,23 +58,23 @@ let E = e => {
             }), (0, i.jsxs)(r.EYj, {
                 variant: "text-md/medium",
                 color: "text-subtle",
-                className: p.tb,
-                children: [S, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
-                    children: ["\xa0", (0, i.jsx)(d.MzZ, {
-                        className: p.$T,
-                        href: A.A.getArticleURL(n.helpArticleId),
-                        children: x.intl.string(x.t["sBp+u0"])
+                className: x.tb,
+                children: [C, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                    children: ["\xa0", (0, i.jsx)(c.MzZ, {
+                        className: x.$T,
+                        href: m.A.getArticleURL(n.helpArticleId),
+                        children: p.intl.string(p.t["sBp+u0"])
                     })]
                 })]
             })]
         }), null != n.button && (0, i.jsx)("div", {
-            className: p.UD,
-            children: (0, i.jsx)(c.$nd, {
+            className: x.UD,
+            children: (0, i.jsx)(d.$nd, {
                 variant: "expressive",
                 size: "md",
-                onClick: T,
+                onClick: S,
                 text: n.button.copy,
-                icon: l.NitroWheelIcon
+                icon: a.NitroWheelIcon
             })
         })]
     })

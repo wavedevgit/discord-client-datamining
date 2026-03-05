@@ -1,16 +1,16 @@
-/** chunk id: 731542, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    N: () => d
+/** chunk id: 731542, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    N: () => c
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(589641),
-    a = i(949669),
-    r = i(556907),
-    u = i(12508),
-    o = i(985018);
-let d = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_CATEGORY, {
-    useTitle: () => o.intl.string(o.t.MNaVwq),
-    useInlineNotice: s.I,
-    buildLayout: () => [a.o, r.a, u.n]
+var i = n(419954),
+    s = n(780964),
+    l = n(589641),
+    a = n(949669),
+    r = n(556907),
+    o = n(12508),
+    d = n(985018);
+let c = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_CATEGORY, {
+    useTitle: () => d.intl.string(d.t.MNaVwq),
+    useInlineNotice: l.I,
+    buildLayout: () => [a.o, r.a, o.n]
 })

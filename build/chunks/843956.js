@@ -1,21 +1,21 @@
-/** chunk id: 843956, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    K: () => c
+/** chunk id: 843956, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    K: () => h
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(358776),
-    a = i(338795),
-    r = i(883967),
-    u = i(899463),
-    o = i(550649),
-    d = i(211639),
-    A = i(657733),
-    T = i(728699),
-    S = i(345648),
-    E = i(863671),
-    g = i(985018);
-let c = (0, n.WI)(l.X.USER_SECTION, {
-    useTitle: () => g.intl.string(g.t.cduTBL),
-    buildLayout: () => [a.J, d.TC, A.v, T.T, r.J, ...(0, s.pC)("UserSection") ? [] : [E.$], o.z, S.e, u.r]
+var i = n(419954),
+    s = n(780964),
+    l = n(358776),
+    a = n(338795),
+    r = n(883967),
+    o = n(899463),
+    d = n(550649),
+    c = n(211639),
+    u = n(657733),
+    _ = n(728699),
+    g = n(345648),
+    m = n(863671),
+    A = n(985018);
+let h = (0, i.WI)(s.X.USER_SECTION, {
+    useTitle: () => A.intl.string(A.t.cduTBL),
+    buildLayout: () => [a.J, c.T, u.v, _.T, r.J, ...(0, l.pC)("UserSection") ? [] : [m.$], d.z, g.e, o.r]
 })

@@ -1,11 +1,11 @@
-/** chunk id: 1626, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 1626, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     h: () => a
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(640068);
-let a = (0, n.E2)(l.X.EXPERIMENTS_SETTING, {
-    Component: s.A,
+var i = n(419954),
+    s = n(780964),
+    l = n(640068);
+let a = (0, i.E2)(s.X.EXPERIMENTS_SETTING, {
+    Component: l.A,
     useSearchTerms: () => ["Experiments", "Bucket Override", "Variant Override"]
 })

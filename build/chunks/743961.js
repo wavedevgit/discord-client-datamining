@@ -1,42 +1,42 @@
 /** chunk id: 743961, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(641324),
+    l = n(397927),
+    a = n(641324),
     r = n(577806),
     o = n(279423);
-let c = s.memo(function(e) {
+let d = s.memo(function(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
         icon: s,
-        useSubnavLabel: c,
-        useSubtitle: d,
+        useSubnavLabel: d,
+        useSubtitle: c,
         layout: u,
         useInlineNotice: _,
-        useHeaderDecoration: m
-    } = t, A = n?.(), g = d?.(), h = _?.(), x = m?.(), p = null != n || null != c;
+        useHeaderDecoration: g
+    } = t, m = n?.(), A = c?.(), h = _?.(), p = g?.(), x = null != n || null != d;
     return (0, i.jsxs)(i.Fragment, {
-        children: [null != A && (0, i.jsx)(r._, {
-            title: A,
+        children: [null != m && (0, i.jsx)(r._, {
+            title: m,
             icon: s,
-            subtitle: g,
-            decoration: x
+            subtitle: A,
+            decoration: p
         }), (0, i.jsx)("div", {
-            "data-settings-category-key": p ? t.key : void 0,
+            "data-settings-category-key": x ? t.key : void 0,
             "aria-hidden": !0,
             style: {
                 height: 1
             }
-        }), (0, i.jsxs)(a.BJc, {
+        }), (0, i.jsxs)(l.BJc, {
             gap: "md",
             children: [null != h && (0, i.jsx)(o.A, {
                 notice: h
-            }), u.map(e => (0, i.jsx)(l.A, {
+            }), u.map(e => (0, i.jsx)(a.A, {
                 node: e
             }, e.key))]
         })]

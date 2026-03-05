@@ -1,14 +1,14 @@
 /** chunk id: 816288, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b,
+    A: () => S,
     n: () => N
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(380278),
+    a = n.n(l),
+    r = n(380278),
     o = n(158954),
     c = n(311907),
     d = n(397927),
@@ -46,9 +46,9 @@ let N = s.forwardRef((e, t) => {
         ref: t,
         className: I.hQ,
         children: [(0, i.jsx)("div", {
-            className: r()(I.L$, u)
-        }), (0, i.jsx)(a.animated.div, {
-            className: r()(I.qB, {
+            className: a()(I.L$, u)
+        }), (0, i.jsx)(r.animated.div, {
+            className: a()(I.qB, {
                 [I.mu]: A <= 5
             }),
             style: m
@@ -68,7 +68,7 @@ let N = s.forwardRef((e, t) => {
             }), (0, i.jsxs)("div", {
                 className: I.Ui,
                 children: [(0, i.jsx)(o.EYj, {
-                    className: r()(I.Qq, I.ue),
+                    className: a()(I.Qq, I.ue),
                     variant: "text-xs/semibold",
                     children: h ? E.intl.formatToPlainString(C.default["Ehpq+7"], {
                         appliedBoostCount: n
@@ -80,24 +80,24 @@ let N = s.forwardRef((e, t) => {
                     width: 12,
                     height: 12,
                     direction: p.A.Directions.RIGHT,
-                    className: r()(I.Qq, I.ue)
+                    className: a()(I.Qq, I.ue)
                 })]
             })]
         })]
     })
 });
 
-function S(e) {
+function b(e) {
     let {
         guild: t,
         withMargin: l
-    } = e, a = s.useRef(null), o = (0, _.A)(t), p = (0, g.A)(t.id), C = s.useCallback(() => {
+    } = e, r = s.useRef(null), o = (0, _.A)(t), p = (0, g.A)(t.id), C = s.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
     }, [t.id]), E = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
     s.useEffect(() => {
         E !== t.premiumSubscriberCount && (0, A.u)(t.id, t.premiumSubscriberCount)
     }, [t.id, E, t.premiumSubscriberCount]);
-    let S = s.useCallback(e => {
+    let b = s.useCallback(e => {
         p && (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -119,29 +119,29 @@ function S(e) {
                 }
             },
             onClick: C,
-            className: r()(I.kL, {
+            className: a()(I.kL, {
                 [I.aF]: l
             }),
-            onContextMenu: S,
+            onContextMenu: b,
             children: (0, i.jsx)(N, {
-                ref: a,
+                ref: r,
                 appliedBoostCount: E,
                 maxBoostCount: o,
                 premiumSubscriberCount: t.premiumSubscriberCount
             })
         }), (0, i.jsx)(x.a, {
             guild: t,
-            targetElementRef: a
+            targetElementRef: r
         })]
     })
 }
 
-function b(e) {
+function S(e) {
     let {
         guild: t,
         withMargin: n
     } = e;
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(b, {
         guild: t,
         withMargin: n
     })

@@ -1,17 +1,17 @@
-/** chunk id: 903718, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    E: () => d
+/** chunk id: 903718, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => c
 });
-var n = i(311907),
-    l = i(955572),
-    s = i(775602),
-    a = i(419954),
-    r = i(780964),
-    u = i(358776),
-    o = i(985018);
-let d = (0, a.zD)(r.X.DESATURATE_CUSTOM_COLORS, {
-    useTitle: () => (0, u.bp)("DesaturateCustomColors") ? o.intl.string(o.t.OCJg5f) : o.intl.string(o.t.bQCodD),
-    useSubtitle: () => (0, u.bp)("DesaturateCustomColors") ? o.intl.string(o.t.HEO0s3) : o.intl.string(o.t.nlAOEW),
-    useValue: () => (0, n.bG)([s.A], () => s.A.desaturateUserColors),
-    setValue: () => (0, l.YV)()
+var i = n(311907),
+    s = n(955572),
+    l = n(775602),
+    a = n(419954),
+    r = n(780964),
+    o = n(358776),
+    d = n(985018);
+let c = (0, a.zD)(r.X.DESATURATE_CUSTOM_COLORS, {
+    useTitle: () => (0, o.bp)("DesaturateCustomColors") ? d.intl.string(d.t.OCJg5f) : d.intl.string(d.t.bQCodD),
+    useSubtitle: () => (0, o.bp)("DesaturateCustomColors") ? d.intl.string(d.t.HEO0s3) : d.intl.string(d.t.nlAOEW),
+    useValue: () => (0, i.bG)([l.A], () => l.A.desaturateUserColors),
+    setValue: () => (0, s.YV)()
 })

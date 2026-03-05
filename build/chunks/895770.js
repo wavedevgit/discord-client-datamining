@@ -1,64 +1,89 @@
 /** chunk id: 895770, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => v,
+    e: () => x
 });
-var a = n(627968);
+var a, s = n(627968);
 n(64700);
-var s = n(503698),
-    i = n.n(s),
-    l = n(397927),
-    r = n(397400),
-    d = n(225180),
-    o = n(294726),
-    c = n(985018),
-    u = n(667760);
+var l = n(503698),
+    i = n.n(l),
+    r = n(397927),
+    d = n(397400),
+    o = n(225180),
+    c = n(294726),
+    u = n(985018),
+    m = n(667760),
+    x = ((a = {}).CLICKABLE = "clickable", a.VIEWABLE = "viewable", a.DISABLED = "disabled", a);
 
-function m(e) {
+function v(e) {
     let {
         className: t,
         guildId: n,
-        game: s,
-        onClick: m,
+        game: a,
+        onClick: l,
         imageClassName: x,
-        titleClassName: g,
-        disabled: v = !1,
-        location: f
-    } = e, j = (0, d.A)(s.gameId, "cover");
-    return (0, a.jsxs)(l.DUT, {
-        "aria-disabled": v,
-        className: i()(u.LO, {
-            [u.r9]: v
-        }, t),
-        onClick: v ? void 0 : () => {
-            (0, r.oT)(n, s.id, s.name, f), m(s)
+        titleClassName: v,
+        variant: g = "clickable",
+        location: b
+    } = e, f = (0, o.A)(a.gameId, "cover"), {
+        containerClass: j,
+        boostGemColor: p,
+        boostPriceTextColor: h,
+        handleClick: N
+    } = {
+        clickable: {
+            containerClass: null,
+            boostGemColor: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+            boostPriceTextColor: void 0,
+            handleClick: () => {
+                (0, d.oT)(n, a.id, a.name, b), l?.(a)
+            }
         },
-        children: [(0, a.jsxs)("div", {
-            className: i()(u.Rf, x),
-            children: [(0, a.jsx)("img", {
-                className: u.Sl,
+        viewable: {
+            containerClass: m.Oe,
+            boostGemColor: void 0,
+            boostPriceTextColor: "text-muted",
+            handleClick: void 0
+        },
+        disabled: {
+            containerClass: m.r9,
+            boostGemColor: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+            boostPriceTextColor: void 0,
+            handleClick: void 0
+        }
+    } [g];
+    return (0, s.jsxs)(r.DUT, {
+        "aria-disabled": "disabled" === g,
+        className: i()(m.LO, j, t),
+        onClick: N,
+        children: [(0, s.jsxs)("div", {
+            className: i()(m.Rf, x),
+            children: [(0, s.jsx)("img", {
+                className: m.Sl,
                 alt: "",
-                src: j ?? ""
-            }), (0, a.jsx)("div", {
-                className: u.Gj
-            }), (0, a.jsx)("div", {
-                className: u.Uf
+                src: f ?? ""
+            }), (0, s.jsx)("div", {
+                className: m.Gj
+            }), (0, s.jsx)("div", {
+                className: m.Uf
             })]
-        }), (0, a.jsxs)("div", {
-            className: i()(u.FS, g),
-            children: [(0, a.jsx)(l.Heading, {
+        }), (0, s.jsxs)("div", {
+            className: i()(m.FS, v),
+            children: [(0, s.jsx)(r.Heading, {
                 variant: "heading-sm/semibold",
                 lineClamp: 1,
-                title: s.name,
-                children: s.name
-            }), (0, a.jsxs)("div", {
-                className: u.PW,
-                children: [(0, a.jsx)(l._Jp, {
+                title: a.name,
+                children: a.name
+            }), (0, s.jsxs)("div", {
+                className: m.PW,
+                children: [(0, s.jsx)(r._Jp, {
                     size: "sm",
-                    color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK
-                }), (0, a.jsx)(l.Text, {
+                    color: p
+                }), (0, s.jsx)(r.Text, {
                     variant: "text-sm/medium",
-                    children: c.intl.formatToPlainString(s.plans.length > 1 ? o.default["G/aTXi"] : o.default.r9pa9K, {
-                        boostCount: s.baseCost
+                    color: h,
+                    children: u.intl.formatToPlainString(a.plans.length > 1 ? c.default["G/aTXi"] : c.default.r9pa9K, {
+                        boostCount: a.baseCost
                     })
                 })]
             })]

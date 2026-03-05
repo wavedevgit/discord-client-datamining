@@ -5,34 +5,34 @@ n.d(t, {
 });
 var i = n(812729),
     s = n.n(i),
-    a = n(311907),
-    l = n(587895),
+    l = n(311907),
+    a = n(587895),
     r = n(429913),
     o = n(616356),
-    c = n(15285);
+    d = n(15285);
 
-function d(e, t) {
+function c(e, t) {
     return null != e && null != e.id ? e.id : null != t && null != t.id ? t.id : void 0
 }
 
 function u() {
     let e = o.A.getStreamerActiveStreamMetadata(),
-        t = c.Ay.getVisibleGame(),
-        n = null != t ? c.Ay.getGameOrTransformedSubgameForPID(t.pid) : null,
-        i = d(e, n);
+        t = d.Ay.getVisibleGame(),
+        n = null != t ? d.Ay.getGameOrTransformedSubgameForPID(t.pid) : null,
+        i = c(e, n);
     return {
         runningGame: n ?? void 0,
-        runningGameApplication: l.A.getApplication(i) ?? void 0
+        runningGameApplication: a.A.getApplication(i) ?? void 0
     }
 }
 
 function _() {
-    let e = (0, a.bG)([o.A], () => o.A.getStreamerActiveStreamMetadata()),
-        t = (0, a.bG)([c.Ay], () => {
-            let e = c.Ay.getVisibleGame();
-            return null != e ? c.Ay.getGameOrTransformedSubgameForPID(e.pid) : null
+    let e = (0, l.bG)([o.A], () => o.A.getStreamerActiveStreamMetadata()),
+        t = (0, l.bG)([d.Ay], () => {
+            let e = d.Ay.getVisibleGame();
+            return null != e ? d.Ay.getGameOrTransformedSubgameForPID(e.pid) : null
         }, [], s()),
-        [n] = (0, r.A)([d(e, t)]);
+        [n] = (0, r.A)([c(e, t)]);
     return {
         runningGame: t ?? void 0,
         runningGameApplication: n ?? void 0

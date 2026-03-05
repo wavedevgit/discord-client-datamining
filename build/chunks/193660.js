@@ -1,31 +1,31 @@
-/** chunk id: 193660, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    w: () => S
+/** chunk id: 193660, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    w: () => g
 });
-var n = i(311907),
-    l = i(955572),
-    s = i(775602),
-    a = i(688810),
-    r = i(259065),
-    u = i(419954),
-    o = i(780964),
-    d = i(358776),
-    A = i(985018),
-    T = i(927961);
-let S = (0, u.zD)(o.X.DISPLAY_NAME_STYLES, {
-    useTitle: () => A.intl.string(T.default["2gFUEw"]),
+var i = n(311907),
+    s = n(955572),
+    l = n(775602),
+    a = n(688810),
+    r = n(259065),
+    o = n(419954),
+    d = n(780964),
+    c = n(358776),
+    u = n(985018),
+    _ = n(927961);
+let g = (0, o.zD)(d.X.DISPLAY_NAME_STYLES, {
+    useTitle: () => u.intl.string(_.default["2gFUEw"]),
     useSubtitle: () => {
         let {
-            analyticsLocations: t
-        } = (0, a.Ay)(), e = (0, d.bp)("DisplayNameStyles");
-        return A.intl.format(e ? T.default.aEax6P : T.default.L8U56h, {
+            analyticsLocations: e
+        } = (0, a.Ay)(), t = (0, c.bp)("DisplayNameStyles");
+        return u.intl.format(t ? _.default.aEax6P : _.default.L8U56h, {
             onClickOpenModal() {
                 (0, r.L)({
-                    analyticsLocations: t
+                    analyticsLocations: e
                 })
             }
         })
     },
-    useValue: () => (0, n.bG)([s.A], () => s.A.displayNameStylesEnabled),
-    setValue: t => (0, l.Dm)(t)
+    useValue: () => (0, i.bG)([l.A], () => l.A.displayNameStylesEnabled),
+    setValue: e => (0, s.Dm)(e)
 })

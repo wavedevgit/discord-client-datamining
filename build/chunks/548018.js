@@ -1,46 +1,46 @@
-/** chunk id: 548018, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    c: () => g,
-    f: () => E
-}), i(321073);
-var n = i(627968),
-    l = i(311907),
-    s = i(419954),
-    a = i(961350),
-    r = i(670492),
-    u = i(287809),
-    o = i(780964),
-    d = i(709913),
-    A = i(32096),
-    T = i(545214),
-    S = i(985018);
+/** chunk id: 548018, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    c: () => A,
+    f: () => m
+}), n(321073);
+var i = n(627968),
+    s = n(311907),
+    l = n(419954),
+    a = n(961350),
+    r = n(670492),
+    o = n(287809),
+    d = n(780964),
+    c = n(709913),
+    u = n(32096),
+    _ = n(545214),
+    g = n(985018);
 
-function E() {
-    return (0, l.bG)([u.default], () => {
-        let t = u.default.getCurrentUser();
-        return null != t && t.mfaEnabled
+function m() {
+    return (0, s.bG)([o.default], () => {
+        let e = o.default.getCurrentUser();
+        return null != e && e.mfaEnabled
     })
 }
-let g = (0, s.E2)(o.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
+let A = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     useSearchTerms: function() {
-        let t = (0, l.bG)([a.default], () => a.default.hasTOTPEnabled()),
-            e = [S.intl.string(S.t.m0FidJ), S.intl.string(S.t.xZEzbu)];
-        return t ? e.push(S.intl.string(S.t["D+aE7g"])) : e.push(S.intl.string(S.t.cDgKte)), e
+        let e = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled()),
+            t = [g.intl.string(g.t.m0FidJ), g.intl.string(g.t.xZEzbu)];
+        return e ? t.push(g.intl.string(g.t["D+aE7g"])) : t.push(g.intl.string(g.t.cDgKte)), t
     },
     usePredicate: function() {
-        let t = (0, A.b)(),
-            e = (0, T.A)(),
-            i = E();
-        return !t && !e && i
+        let e = (0, u.b)(),
+            t = (0, _.A)(),
+            n = m();
+        return !e && !t && n
     },
     Component: function() {
-        let t = (0, l.bG)([u.default], () => u.default.getCurrentUser()),
-            e = (0, l.bG)([r.A], () => r.A.getBackupCodes()),
-            i = (0, l.bG)([a.default], () => a.default.hasTOTPEnabled());
-        return null == t ? null : (0, n.jsx)(d.A, {
-            backupCodes: e,
-            currentUser: t,
-            hasTOTPEnabled: i
+        let e = (0, s.bG)([o.default], () => o.default.getCurrentUser()),
+            t = (0, s.bG)([r.A], () => r.A.getBackupCodes()),
+            n = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled());
+        return null == e ? null : (0, i.jsx)(c.A, {
+            backupCodes: t,
+            currentUser: e,
+            hasTOTPEnabled: n
         })
     }
 })

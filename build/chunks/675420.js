@@ -1,32 +1,32 @@
-/** chunk id: 675420, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    M: () => d
+/** chunk id: 675420, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    M: () => c
 });
-var n = i(627968),
-    l = i(158954),
-    s = i(692798),
-    a = i(419954),
-    r = i(780964),
-    u = i(385803),
-    o = i(985018);
-let d = (0, a.E2)(r.X.DISPLAY_DEFAULT_THEMES, {
-    useSearchTerms: () => [o.intl.string(o.t.Ksh3ik)],
+var i = n(627968),
+    s = n(158954),
+    l = n(692798),
+    a = n(419954),
+    r = n(780964),
+    o = n(385803),
+    d = n(985018);
+let c = (0, a.E2)(r.X.DISPLAY_DEFAULT_THEMES, {
+    useSearchTerms: () => [d.intl.string(d.t.Ksh3ik)],
     Component: function() {
-        return (0, n.jsxs)(s.Ay, {
-            type: s.v0.SETTINGS,
-            children: [(0, n.jsx)(l.DZT, {
+        return (0, i.jsxs)(l.Ay, {
+            type: l.v0.SETTINGS,
+            children: [(0, i.jsx)(s.DZT, {
                 variant: "heading-md/semibold",
                 color: "text-default",
-                children: o.intl.string(o.t["0EzVst"])
-            }), (0, n.jsx)(l.BJc, {
+                children: d.intl.string(d.t["0EzVst"])
+            }), (0, i.jsx)(s.BJc, {
                 direction: "horizontal",
                 wrap: !0,
                 gap: 8,
                 padding: {
                     top: 24
                 },
-                children: (0, n.jsx)(s.t6, {
-                    size: u.ni.SIZE_48
+                children: (0, i.jsx)(l.t6, {
+                    size: o.ni.SIZE_48
                 })
             })]
         })

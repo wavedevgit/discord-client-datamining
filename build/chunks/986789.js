@@ -1,6 +1,6 @@
 /** chunk id: 986789, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
@@ -14,40 +14,40 @@ var a = n(627968),
     m = n(967198),
     h = n(566381);
 
-function p() {
+function x() {
     let e = (0, l.bG)([m.A], () => m.A.getGuildId()),
         t = (0, l.bG)([u.A], () => u.A.getGuild(e)?.name),
         n = (0, l.bG)([c.A], () => c.A.getStateForGuild(e)?.instances),
-        p = i.useMemo(() => Object.values(n ?? {})[0], [n]),
-        x = i.useCallback(t => {
-            null != p && null != e && o.h.dispatch({
+        x = i.useMemo(() => Object.values(n ?? {})[0], [n]),
+        p = i.useCallback(t => {
+            null != x && null != e && o.h.dispatch({
                 type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
                 guildId: e,
                 instance: {
-                    ...p,
+                    ...x,
                     status: t
                 }
             })
-        }, [p, e]),
+        }, [x, e]),
         g = i.useMemo(() => Object.values(s.M).map(e => (0, a.jsx)(r.Button, {
             variant: "primary",
             text: e,
             onClick: () => {
-                x(e)
+                p(e)
             }
-        }, e)), [x]),
+        }, e)), [p]),
         _ = i.useCallback(() => {
-            null != p && null != e && o.h.dispatch({
+            null != x && null != e && o.h.dispatch({
                 type: "GAME_SERVER_UPDATE_INSTANCE_SUCCESS",
                 guildId: e,
                 instance: {
-                    ...p,
+                    ...x,
                     serverIP: void 0,
                     port: void 0,
                     gameServerPanelUrl: void 0
                 }
             })
-        }, [p, e]);
+        }, [x, e]);
     return null == e ? null : (0, a.jsxs)(r.IpV, {
         className: h.kL,
         children: [(0, a.jsx)("div", {
@@ -60,7 +60,7 @@ function p() {
             className: h.uW,
             children: [(0, a.jsx)(r.Text, {
                 variant: "eyebrow",
-                children: `Set server state for first server: ${p?.name}`
+                children: `Set server state for first server: ${x?.name}`
             }), (0, a.jsx)("div", {
                 className: h.UD,
                 children: g

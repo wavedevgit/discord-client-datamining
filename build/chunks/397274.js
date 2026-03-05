@@ -30,18 +30,18 @@ let s = new class {
             scrollBlock: s
         } = e;
         return new Promise(e => {
-            let a = null,
-                l = () => {
-                    clearTimeout(a), e(!0)
+            let l = null,
+                a = () => {
+                    clearTimeout(l), e(!0)
                 };
             requestAnimationFrame(() => {
-                t.addEventListener("scroll", l, {
+                t.addEventListener("scroll", a, {
                     once: !0
                 }), n.scrollIntoView({
                     behavior: i,
                     block: s
-                }), a = setTimeout(() => {
-                    t.removeEventListener("scroll", l), e(!1)
+                }), l = setTimeout(() => {
+                    t.removeEventListener("scroll", a), e(!1)
                 }, 50)
             })
         })
@@ -57,12 +57,12 @@ let s = new class {
         if (null == n) return;
         this.updateScrollPaddingForStickyDecoration(n);
         let s = t.animate && !i.A.useReducedMotion,
-            a = t.block ?? "start";
+            l = t.block ?? "start";
         await this.scroll({
             scrollerNode: n,
             target: e,
             scrollBehavior: s ? "smooth" : "auto",
-            scrollBlock: a
+            scrollBlock: l
         }) ? await new Promise(e => {
             n.addEventListener("scrollend", () => {
                 n.style.scrollPaddingTop = "", e()

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(688810),
-    a = n(980923),
+    a = n(688810),
+    r = n(980923),
     o = n(384059),
     c = n(277342),
     d = n(709562);
@@ -25,13 +25,13 @@ function u(e) {
         ..._
     } = e, {
         parentAnalyticsLocation: f
-    } = (0, r.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, a.A)(t, n, u, A), {
+    } = (0, a.Ay)(), x = t || n || u, C = h ? d.l : d.A, E = (0, r.A)(t, n, u, A), {
         events: I,
         play: N,
-        Component: S
-    } = (0, c.q)(x), b = n || u ? l.O1p : S;
+        Component: b
+    } = (0, c.q)(x), S = n || u ? l.O1p : b;
     return s.useEffect(() => () => N(), [N, x]), (0, i.jsx)(C, {
-        iconComponent: b,
+        iconComponent: S,
         isTrayButton: !0,
         caretColor: x ? "red" : "primaryDark",
         color: x ? "red" : void 0,

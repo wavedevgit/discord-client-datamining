@@ -4,14 +4,14 @@ n.d(t, {
 });
 var i = n(873298),
     s = n(419954),
-    a = n(253932),
-    l = n(780964),
+    l = n(253932),
+    a = n(780964),
     r = n(985018);
-let o = (0, s.Qx)(l.X.TIME_FORMAT_SETTING, {
+let o = (0, s.Qx)(a.X.TIME_FORMAT_SETTING, {
     useSearchTerms: () => [r.intl.string(r.t.dyamEI), r.intl.string(r.t.p8NOwi), r.intl.string(r.t["+o/sOo"])],
     useTitle: () => r.intl.string(r.t.dyamEI),
-    useValue: () => a.PZ.useSetting(),
-    setValue: e => a.PZ.updateSetting(e),
+    useValue: () => l.PZ.useSetting(),
+    setValue: e => l.PZ.updateSetting(e),
     useOptions: () => [{
         name: r.intl.string(r.t.FMWYvb),
         value: i.PZ.AUTO

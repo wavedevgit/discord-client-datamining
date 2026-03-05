@@ -1,33 +1,33 @@
-/** chunk id: 69551, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    l: () => E
+/** chunk id: 69551, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    l: () => m
 });
-var n = i(311907),
-    l = i(890138),
-    s = i(817281),
-    a = i(47671),
-    r = i(419954),
-    u = i(284016),
-    o = i(544028),
-    d = i(253932),
-    A = i(780964),
-    T = i(652215),
-    S = i(985018);
-let E = (0, r.zD)(A.X.DISPLAY_SYNC_THEME, {
-    useTitle: () => S.intl.string(S.t["/B+kEV"]),
-    useSearchTerms: () => [S.intl.string(S.t.Ksh3ik)],
+var i = n(311907),
+    s = n(890138),
+    l = n(817281),
+    a = n(47671),
+    r = n(419954),
+    o = n(284016),
+    d = n(544028),
+    c = n(253932),
+    u = n(780964),
+    _ = n(652215),
+    g = n(985018);
+let m = (0, r.zD)(u.X.DISPLAY_SYNC_THEME, {
+    useTitle: () => g.intl.string(g.t["/B+kEV"]),
+    useSearchTerms: () => [g.intl.string(g.t.Ksh3ik)],
     useValue: function() {
-        return (0, n.bG)([u.A], () => !1 !== u.A.shouldSync("appearance"))
+        return (0, i.bG)([o.A], () => !1 !== o.A.shouldSync("appearance"))
     },
-    setValue: function(t) {
-        let e = o.A.theme,
-            i = a.A.gradientPreset?.id ?? null,
-            n = d.eh.getSetting()?.customUserThemeSettings != null;
-        (0, l.u)(T.HAw.SYNC_ACROSS_CLIENTS_TOGGLED, {
-            is_sync_enabled: t,
-            base_theme: e,
-            client_theme: i,
-            has_custom_theme: n
-        }), s.Ay.setShouldSyncAppearanceSettings(t)
+    setValue: function(e) {
+        let t = d.A.theme,
+            n = a.A.gradientPreset?.id ?? null,
+            i = c.eh.getSetting()?.customUserThemeSettings != null;
+        (0, s.u)(_.HAw.SYNC_ACROSS_CLIENTS_TOGGLED, {
+            is_sync_enabled: e,
+            base_theme: t,
+            client_theme: n,
+            has_custom_theme: i
+        }), l.Ay.setShouldSyncAppearanceSettings(e)
     }
 })

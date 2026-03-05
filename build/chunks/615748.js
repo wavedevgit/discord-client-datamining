@@ -1,31 +1,31 @@
-/** chunk id: 615748, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    S: () => d
+/** chunk id: 615748, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    S: () => c
 });
-var n = i(827343),
-    l = i(793574),
-    s = i(419954),
-    a = i(430452),
-    r = i(824744),
-    u = i(780964),
-    o = i(985018);
-let d = (0, s.sN)(u.X.VOICE_OUTPUT_VOLUME_SETTING, {
-    useTitle: () => o.intl.string(o.t.aUJ062),
-    useSearchTerms: () => [o.intl.string(o.t.eATD2B), o.intl.string(o.t["3182VD"]), o.intl.string(o.t["DGq/PR"])],
+var i = n(827343),
+    s = n(793574),
+    l = n(419954),
+    a = n(430452),
+    r = n(824744),
+    o = n(780964),
+    d = n(985018);
+let c = (0, l.sN)(o.X.VOICE_OUTPUT_VOLUME_SETTING, {
+    useTitle: () => d.intl.string(d.t.aUJ062),
+    useSearchTerms: () => [d.intl.string(d.t.eATD2B), d.intl.string(d.t["3182VD"]), d.intl.string(d.t["DGq/PR"])],
     minValue: 0,
     maxValue: 200,
     getInitialValue: function() {
-        let t = a.Ay.getOutputVolume();
-        return (0, r.M)(t)
+        let e = a.Ay.getOutputVolume();
+        return (0, r.M)(e)
     },
-    onValueRender: function(t) {
-        return `${t.toFixed(0)}%`
+    onValueRender: function(e) {
+        return `${e.toFixed(0)}%`
     },
-    asValueChanges: function(t) {
-        let e = [l.A.USER_SETTINGS_VOICE_AND_VIDEO],
-            i = (0, r.w)(t);
-        n.A.setOutputVolume(i, {
-            analyticsLocations: e
+    asValueChanges: function(e) {
+        let t = [s.A.USER_SETTINGS_VOICE_AND_VIDEO],
+            n = (0, r.w)(e);
+        i.A.setOutputVolume(n, {
+            analyticsLocations: t
         })
     }
 })

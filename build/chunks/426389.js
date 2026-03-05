@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(859703),
     _ = n(341915),
     m = n(843490),
-    p = n(890687),
-    g = n(639214),
+    g = n(890687),
+    p = n(639214),
     E = n(814793),
     I = n(219271),
     f = n(21119),
@@ -53,16 +53,16 @@ let M = 15 * S.A.Millis.MINUTE,
             applicationStreams: h,
             currentActivities: _,
             voiceChannels: m
-        } = t, p = A.length, g = h.length, E = _.length, I = m.length > 0, f = r.useCallback(() => {
+        } = t, g = A.length, p = h.length, E = _.length, I = m.length > 0, f = r.useCallback(() => {
             let e = _.filter(e => e.game?.name != null && (0, N.isGameApplicationType)(e.game?.type)).map(e => e.game.name);
             N.default.track(R.HAw.NOW_PLAYING_CARD_HOVERED, {
-                num_users: p,
-                num_streams: g,
+                num_users: g,
+                num_streams: p,
                 num_activities: E,
                 in_voice_channel: I,
                 games_detected: e
             })
-        }, [p, g, E, I, _]), C = r.useMemo(() => o()(f, M), [f]);
+        }, [g, p, E, I, _]), C = r.useMemo(() => o()(f, M), [f]);
         return null != d || null != u ? (0, i.jsx)(c.YNO, {
             targetElementRef: s,
             position: "left",
@@ -109,7 +109,7 @@ function G() {
         needsRefresh: f.A.shouldFetch(),
         fetching: f.A.isFetching(),
         currentUser: C.default.getCurrentUser()
-    })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, p.oH)(Array.from(s.values()));
+    })), s = (0, d.bG)([h.A], () => h.A.quests), o = (0, g.oH)(Array.from(s.values()));
     r.useEffect(() => (u.h.wait(() => x.O()), () => {
         u.h.wait(() => x.v())
     }), [a?.id]), r.useEffect(() => {
@@ -132,7 +132,7 @@ function G() {
                 activity: a
             } = e;
             if (null == a) return;
-            let s = (0, g.nq)(r, a);
+            let s = (0, p.nq)(r, a);
             null == s || i.has(s.id) || (t.set(l.party.id, s), i.add(s.id), n.set(l.party.id, s.id))
         });
         return {

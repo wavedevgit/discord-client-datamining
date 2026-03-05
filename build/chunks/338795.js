@@ -1,61 +1,53 @@
-/** chunk id: 338795, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    J: () => D
+/** chunk id: 338795, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    J: () => S
 });
-var n = i(934551),
-    l = i(98207),
-    s = i(631670),
-    a = i(419954),
-    r = i(576622),
-    u = i(287809),
-    o = i(954571),
-    d = i(780964),
-    A = i(358776),
-    T = i(782844),
-    S = i(828797),
-    E = i(611478),
-    g = i(402089),
-    c = i(281225),
-    _ = i(531525),
-    I = i(652215),
-    C = i(985018);
-let N = (0, a.dT)(d.X.ACCOUNT_STANDING_TAB, {
-        getTitle: () => C.intl.string(C.t["Vov/9o"]),
+var i = n(934551),
+    s = n(98207),
+    l = n(631670),
+    a = n(419954),
+    r = n(576622),
+    o = n(287809),
+    d = n(954571),
+    c = n(780964),
+    u = n(782844),
+    _ = n(828797),
+    g = n(611478),
+    m = n(402089),
+    A = n(281225),
+    h = n(652215),
+    p = n(985018);
+let x = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
+        getTitle: () => p.intl.string(p.t["Vov/9o"]),
         onItemSelect: () => {
-            o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: T.D.STANDING
+            d.default.track(h.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: u.D.STANDING
             })
         },
-        buildLayout: () => [c.Q]
+        buildLayout: () => [A.Q]
     }),
-    O = (0, a.dT)(d.X.ACCOUNT_SECURITY_TAB, {
-        getTitle: () => C.intl.string(C.t.Am9YHi),
+    E = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
+        getTitle: () => p.intl.string(p.t.Am9YHi),
         onItemSelect: () => {
-            o.default.track(I.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
-                target_tab_name: T.D.SECURITY
+            d.default.track(h.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                target_tab_name: u.D.SECURITY
             })
         },
-        buildLayout: () => [E.P, S.o, g.s]
+        buildLayout: () => [g.P, _.o, m.s]
     }),
-    b = (0, a.t_)(d.X.ACCOUNT_PANEL, {
-        useTitle: () => C.intl.string(C.t["JAIM/m"]),
+    T = (0, a.t_)(c.X.ACCOUNT_PANEL, {
+        useTitle: () => p.intl.string(p.t["JAIM/m"]),
         initialize: function() {
-            let t = u.default.getCurrentUser();
-            return null != t && (0, r.A)(t.id, t.getAvatarURL(void 0, 80)), () => {
-                l.A.clearBackupCodes(), (0, s.Uo)()
+            let e = o.default.getCurrentUser();
+            return null != e && (0, r.A)(e.id, e.getAvatarURL(void 0, 80)), () => {
+                s.A.clearBackupCodes(), (0, l.Uo)()
             }
         },
         hideInStreamerMode: !0,
-        buildLayout: () => [O, N]
+        buildLayout: () => [E, x]
     }),
-    p = (0, a.t_)(d.X.ACCOUNT_PANEL, {
-        useTitle: () => C.intl.string(C.t["JAIM/m"]),
-        StronglyDiscouragedCustomComponent: T.A,
-        buildLayout: () => []
-    }),
-    D = (0, a.i4)(d.X.ACCOUNT_SIDEBAR_ITEM, {
-        useTitle: () => C.intl.string(C.t["JAIM/m"]),
-        getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : _.H.ACCOUNT,
-        icon: n.UserIcon,
-        buildLayout: () => (0, A.WJ)("AccountPanel") ? [b] : [p]
+    S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
+        useTitle: () => p.intl.string(p.t["JAIM/m"]),
+        icon: i.UserIcon,
+        buildLayout: () => [T]
     })

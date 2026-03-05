@@ -1,47 +1,47 @@
-/** chunk id: 114074, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    K: () => I
+/** chunk id: 114074, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    K: () => x
 });
-var n = i(311907),
-    l = i(775602),
-    s = i(502229),
-    a = i(47671),
-    r = i(419954),
-    u = i(933297),
-    o = i(780964),
-    d = i(70040),
-    A = i(840065),
-    T = i(506305),
-    S = i(69551),
-    E = i(225216),
-    g = i(866352),
-    c = i(652215),
-    _ = i(985018);
-let I = (0, r.zZ)(o.X.DISPLAY_THEME_CATEGORY, {
-    useTitle: () => _.intl.string(_.t.Ksh3ik),
+var i = n(311907),
+    s = n(775602),
+    l = n(502229),
+    a = n(47671),
+    r = n(419954),
+    o = n(933297),
+    d = n(780964),
+    c = n(70040),
+    u = n(840065),
+    _ = n(506305),
+    g = n(69551),
+    m = n(225216),
+    A = n(866352),
+    h = n(652215),
+    p = n(985018);
+let x = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
+    useTitle: () => p.intl.string(p.t.Ksh3ik),
     useInlineNotice: function() {
-        return (0, n.bG)([l.A], () => l.A.useForcedColors) ? {
-            type: u.lT.INLINE_NOTICE,
+        return (0, i.bG)([s.A], () => s.A.useForcedColors) ? {
+            type: o.lT.INLINE_NOTICE,
             noticeType: "info",
-            useText: () => (0, s.D)() ? _.intl.format(_.t.Jae48E, {
+            useText: () => (0, l.D)() ? p.intl.format(p.t.Jae48E, {
                 onClick: () => {
-                    (0, A.openUserSettings)(o.X.SYNC_FORCED_COLORS, {
-                        section: c.nc_.ACCESSIBILITY
+                    (0, u.openUserSettings)(d.X.SYNC_FORCED_COLORS, {
+                        section: h.nc_.ACCESSIBILITY
                     })
                 }
-            }) : _.intl.string(_.t.AUMSZP)
+            }) : p.intl.string(p.t.AUMSZP)
         } : null
     },
     useHeaderDecoration: function() {
-        return (0, n.bG)([a.A, l.A], () => l.A.useForcedColors || a.A.isPreview) ? null : {
-            type: u.WX.BUTTON_GROUP,
+        return (0, i.bG)([a.A, s.A], () => s.A.useForcedColors || a.A.isPreview) ? null : {
+            type: o.WX.BUTTON_GROUP,
             buttons: [{
                 id: "open-client-themes-button",
-                type: u.UV.BUTTON,
-                useText: () => _.intl.string(_.t["E+COuA"]),
-                onClick: d.J3
+                type: o.UV.BUTTON,
+                useText: () => p.intl.string(p.t["E+COuA"]),
+                onClick: c.J3
             }]
         }
     },
-    buildLayout: () => [E.k, S.l, T.p, g.W]
+    buildLayout: () => [m.k, g.l, _.p, A.W]
 })

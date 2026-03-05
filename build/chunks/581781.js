@@ -4,58 +4,58 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(990078),
     o = n(145497),
-    c = n(534400),
-    d = n(743981),
+    d = n(534400),
+    c = n(743981),
     u = n(996373);
 
 function _(e) {
     let {
         className: t,
         guildTag: n,
-        guildBadge: a,
+        guildBadge: l,
         guildId: _,
-        guildName: m,
-        guildIcon: A,
-        guildIconSize: g
-    } = e, h = s.useRef(null), [x, p] = s.useState(!1);
+        guildName: g,
+        guildIcon: m,
+        guildIconSize: A
+    } = e, h = s.useRef(null), [p, x] = s.useState(!1);
     return s.useEffect(() => {
         let e = h.current;
-        null != e && null != e.offsetWidth && null != e.scrollWidth && p(e.offsetWidth < e.scrollWidth)
+        null != e && null != e.offsetWidth && null != e.scrollWidth && x(e.offsetWidth < e.scrollWidth)
     }, []), (0, i.jsxs)("div", {
-        className: l()(u.kL, t),
+        className: a()(u.kL, t),
         children: [(0, i.jsxs)("div", {
             className: u.v2,
             children: [(0, i.jsx)(o.j, {
                 guildId: _,
-                guildName: m,
-                guildIcon: A,
-                iconSize: g,
+                guildName: g,
+                guildIcon: m,
+                iconSize: A,
                 className: u.rr,
                 animate: !1
             }), (0, i.jsx)("div", {
                 className: u.zH,
                 children: (0, i.jsx)(r.m, {
-                    __unsupportedReactNodeAsText: m,
-                    shouldShow: x,
+                    __unsupportedReactNodeAsText: g,
+                    shouldShow: p,
                     children: (0, i.jsx)("span", {
                         ref: h,
                         className: u.J5,
-                        children: m
+                        children: g
                     })
                 })
             })]
         }), (0, i.jsx)("div", {
             className: u.I8,
-            children: (0, i.jsx)(c.o9, {
+            children: (0, i.jsx)(d.o9, {
                 guildId: _,
                 className: u.Tc,
                 guildTag: n,
-                guildBadge: a,
-                badgeSize: d.Sl.SIZE_16,
+                guildBadge: l,
+                badgeSize: c.Sl.SIZE_16,
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold",
                 badgeClassName: u.qS

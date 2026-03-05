@@ -1,16 +1,16 @@
-/** chunk id: 993470, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => o
+/** chunk id: 993470, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => d
 });
-var n = i(627968),
-    l = i(397927),
-    s = i(419954),
-    a = i(780964),
-    r = i(891912),
-    u = i(985018);
-let o = (0, s.E2)(a.X.AUTHORIZED_APPS_LIST_SETTING, {
-    Component: () => (0, n.jsx)(l.BJc, {
-        children: (0, n.jsx)(r._g, {})
+var i = n(627968),
+    s = n(397927),
+    l = n(419954),
+    a = n(780964),
+    r = n(891912),
+    o = n(985018);
+let d = (0, l.E2)(a.X.AUTHORIZED_APPS_LIST_SETTING, {
+    Component: () => (0, i.jsx)(s.BJc, {
+        children: (0, i.jsx)(r._g, {})
     }),
-    useSearchTerms: () => [u.intl.string(u.t["f6kk+r"])]
+    useSearchTerms: () => [o.intl.string(o.t["f6kk+r"])]
 })

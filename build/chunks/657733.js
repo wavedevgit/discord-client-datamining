@@ -1,30 +1,21 @@
-/** chunk id: 657733, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    v: () => c
+/** chunk id: 657733, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    v: () => _
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(780964),
-    a = i(358776),
-    r = i(195548),
-    u = i(409355),
-    o = i(218701),
-    d = i(251139),
-    A = i(121616),
-    T = i(531525),
-    S = i(985018);
-let E = (0, l.t_)(s.X.DATA_AND_PRIVACY_PANEL, {
-        useTitle: () => S.intl.string(S.t.OAuOHD),
-        StronglyDiscouragedCustomComponent: r.A,
-        buildLayout: () => []
+var i = n(934551),
+    s = n(419954),
+    l = n(780964),
+    a = n(409355),
+    r = n(218701),
+    o = n(251139),
+    d = n(121616),
+    c = n(985018);
+let u = (0, s.t_)(l.X.DATA_AND_PRIVACY_PANEL, {
+        useTitle: () => c.intl.string(c.t.OAuOHD),
+        buildLayout: () => [r.u, o.w, a.w, d.d]
     }),
-    g = (0, l.t_)(s.X.DATA_AND_PRIVACY_PANEL, {
-        useTitle: () => S.intl.string(S.t.OAuOHD),
-        buildLayout: () => [o.u, d.w, u.w, A.d]
-    }),
-    c = (0, l.i4)(s.X.DATA_AND_PRIVACY_SIDEBAR_ITEM, {
-        useTitle: () => S.intl.string(S.t.OAuOHD),
-        icon: n.ShieldLockIcon,
-        getLegacySearchKey: () => (0, a.WJ)("DataAndPrivacyPanel") ? void 0 : T.H.DATA_PRIVACY,
-        buildLayout: () => [(0, a.WJ)("DataAndPrivacyPanel") ? g : E]
+    _ = (0, s.i4)(l.X.DATA_AND_PRIVACY_SIDEBAR_ITEM, {
+        useTitle: () => c.intl.string(c.t.OAuOHD),
+        icon: i.ShieldLockIcon,
+        buildLayout: () => [u]
     })

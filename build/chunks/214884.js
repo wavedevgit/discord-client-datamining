@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(707592),
     _ = n(698441),
     m = n(935159),
-    p = n(473019),
-    g = n(435328),
+    g = n(473019),
+    p = n(435328),
     E = n(539446),
     I = n(508654),
     f = n(9448),
@@ -43,11 +43,11 @@ function w(e) {
     } = e, l = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(l?.id), [l]), {
         isStageNoticeHidden: w,
         isEventNoticeHidden: G
-    } = (0, s.cf)([p.A], () => ({
-        isStageNoticeHidden: p.A.isLiveChannelNoticeHidden({
+    } = (0, s.cf)([g.A], () => ({
+        isStageNoticeHidden: g.A.isLiveChannelNoticeHidden({
             stageId: b?.id
         }),
-        isEventNoticeHidden: p.A.isLiveChannelNoticeHidden({
+        isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
     }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
@@ -76,9 +76,9 @@ function w(e) {
             listenerCount: c,
             isEventNoticeHidden: u,
             isStageNoticeHidden: h,
-            isStudyRoomNotice: p
+            isStudyRoomNotice: g
         } = e, E = null != n && null != r && !h, I = null != t ? (0, C.G3)(t) : null;
-        if (p && null != r) {
+        if (g && null != r) {
             let e = (0, A.gU)(r);
             return {
                 noticeType: 3,
@@ -176,7 +176,7 @@ function w(e) {
             return {
                 noticeType: 1,
                 title: t.name,
-                location: (0, g.l)(e, !0),
+                location: (0, p.l)(e, !0),
                 locationIcon: (0, i.jsx)(d.BT6, {
                     size: "custom",
                     color: "currentColor",

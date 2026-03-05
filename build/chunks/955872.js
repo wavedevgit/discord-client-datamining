@@ -1,77 +1,77 @@
 /** chunk id: 955872, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
-    a = n(284009),
-    l = n.n(a),
+    l = n(284009),
+    a = n.n(l),
     r = n(311907),
     o = n(230109),
-    c = n(397927),
-    d = n(73153),
+    d = n(397927),
+    c = n(73153),
     u = n(631670),
     _ = n(974544),
-    m = n(793574),
-    A = n(688810),
-    g = n(429619),
+    g = n(793574),
+    m = n(688810),
+    A = n(429619),
     h = n(451909),
-    x = n(550111),
-    p = n(202639),
+    p = n(550111),
+    x = n(202639),
     E = n(407217),
-    C = n(919395),
-    T = n(884546),
-    S = n(287070),
+    T = n(919395),
+    S = n(884546),
+    C = n(287070),
     I = n(196291),
     f = n(101058),
-    N = n(836602),
-    b = n(814390),
-    j = n(351906),
-    v = n(287809),
+    b = n(836602),
+    N = n(814390),
+    v = n(351906),
+    j = n(287809),
     O = n(954571),
     R = n(927578),
     y = n(606532),
     P = n(161290),
     L = n(652215),
     D = n(985018),
-    M = n(166378);
+    G = n(166378);
 
-function G() {
-    let e = (0, r.bG)([v.default], () => {
-            let e = v.default.getCurrentUser();
-            return l()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
+function M() {
+    let e = (0, r.bG)([j.default], () => {
+            let e = j.default.getCurrentUser();
+            return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        t = (0, r.bG)([j.A], () => j.A.hidePersonalInformation),
+        t = (0, r.bG)([v.A], () => v.A.hidePersonalInformation),
         {
             pendingBio: n,
-            pendingAvatar: a,
-            pendingNameplate: G,
+            pendingAvatar: l,
+            pendingNameplate: M,
             showNotice: U,
             ...k
-        } = (0, r.cf)([N.A], () => ({
-            ...N.A.getPendingChanges(),
-            showNotice: N.A.showNotice()
+        } = (0, r.cf)([b.A], () => ({
+            ...b.A.getPendingChanges(),
+            showNotice: b.A.showNotice()
         })),
         V = (0, f.V7)({
             userId: e.id,
-            image: a
+            image: l
         }),
-        w = (0, C.lw)({
-            pendingValue: G,
+        w = (0, T.lw)({
+            pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
-        H = (0, b.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
+        H = (0, N.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         B = R.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: Y,
             newestAnalyticsLocation: F
-        } = (0, A.Ay)(m.A.USER_SETTINGS_USER_PROFILE);
-    s.useEffect(() => () => d.h.wait(u.IM), []);
-    let [z, W] = s.useState(!1), K = !B, Z = s.useRef(null);
-    return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(A.f5, {
+        } = (0, m.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
+    s.useEffect(() => () => c.h.wait(u.IM), []);
+    let [z, X] = s.useState(!1), W = !B, K = s.useRef(null);
+    return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(m.f5, {
         value: Y,
-        children: [(0, i.jsx)(g.A, {}), (0, i.jsx)(T.A, {
-            profilePreview: (0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
+            profilePreview: (0, i.jsx)(C.A, {
                 user: e,
                 canUsePremiumCustomization: B,
                 onUpsellClick: y.A,
@@ -79,30 +79,30 @@ function G() {
                 ...k,
                 pendingAvatar: V
             }),
-            nameplatePreview: (0, i.jsx)(x.A, {
+            nameplatePreview: (0, i.jsx)(p.A, {
                 user: e,
                 nameplate: w,
                 ...k,
-                className: null == w ? M.tJ : void 0,
+                className: null == w ? G.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(P.A, {})
         }), (0, i.jsx)(o.L, {
-            innerRef: Z,
-            onChange: e => W(e),
+            innerRef: K,
+            onChange: e => X(e),
             threshold: .25,
-            active: K,
+            active: W,
             children: (0, i.jsx)("div", {
-                ref: Z,
+                ref: K,
                 children: (0, i.jsx)(I.A, {
                     user: e,
-                    shouldShow: K,
+                    shouldShow: W,
                     isVisible: z
                 })
             })
-        }), K && !U && (0, i.jsx)(p.d, {
-            className: M.EL,
-            showUpsell: K && !z,
+        }), W && !U && (0, i.jsx)(x.d, {
+            className: G.EL,
+            showUpsell: W && !z,
             text: D.intl.format(D.t.TmfgI2, {
                 onClick: () => (0, E.K)({
                     analyticsSource: F
@@ -111,18 +111,18 @@ function G() {
             textVariant: "heading-md/medium",
             useUpdatedStyling: !0,
             button: (0, i.jsx)("div", {
-                className: M.Xl,
-                children: (0, i.jsx)(c.Button, {
+                className: G.Xl,
+                children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
                         O.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
-                        }), Z?.current?.scrollIntoView({
+                        }), K?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },
                     text: D.intl.string(D.t.uw9zI7),
-                    icon: c.tvc
+                    icon: d.tvc
                 })
             })
         })]

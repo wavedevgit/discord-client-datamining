@@ -1,15 +1,15 @@
 /** chunk id: 200921, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    GY: () => l,
+    GY: () => a,
     U0: () => o,
     ZQ: () => r
 });
 var i = n(562465),
     s = n(73153),
-    a = n(652215);
-async function l() {
+    l = n(652215);
+async function a() {
     let e = await i.Bo.get({
-        url: a.Rsh.AUTH_SESSIONS,
+        url: l.Rsh.AUTH_SESSIONS,
         rejectWithError: !1
     });
     return e?.ok && e.body?.user_sessions != null && s.h.dispatch({
@@ -29,7 +29,7 @@ async function o(e) {
         if (0 === e.length) return
     } else e = [e];
     let t = await i.Bo.post({
-        url: a.Rsh.AUTH_SESSIONS_LOGOUT,
+        url: l.Rsh.AUTH_SESSIONS_LOGOUT,
         body: {
             session_id_hashes: e
         },

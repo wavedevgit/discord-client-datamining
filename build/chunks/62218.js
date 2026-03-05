@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(723702),
+    l = n(397927),
+    a = n(723702),
     r = n(837921),
     o = n(332191),
-    c = n(985018);
-class d extends s.PureComponent {
+    d = n(985018);
+class c extends s.PureComponent {
     constructor(e) {
         super(e), this.state = {
             openOnStartup: !0,
@@ -47,28 +47,28 @@ class d extends s.PureComponent {
             openOnStartup: e,
             startMinimized: t,
             minimizeToTray: n
-        } = this.state, s = (0, l.isLinux)() ? c.intl.string(c.t["7pPjTW"]) : c.intl.string(c.t.ZkDZov);
-        return (0, i.jsxs)(a.BJc, {
+        } = this.state, s = (0, a.isLinux)() ? d.intl.string(d.t["7pPjTW"]) : d.intl.string(d.t.ZkDZov);
+        return (0, i.jsxs)(l.BJc, {
             gap: 16,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: s
-            }), (0, i.jsxs)(a.nVY, {
-                children: [(0, i.jsx)(a.dOG, {
-                    label: c.intl.string(c.t.WQm4p1),
-                    description: c.intl.string(c.t["s/cQrU"]),
+            }), (0, i.jsxs)(l.nVY, {
+                children: [(0, i.jsx)(l.dOG, {
+                    label: d.intl.string(d.t.WQm4p1),
+                    description: d.intl.string(d.t["s/cQrU"]),
                     checked: e,
                     onChange: this.handleToggleOpenOnStartup
-                }), (0, l.isWindows)() ? (0, i.jsx)(a.dOG, {
-                    label: c.intl.string(c.t.n7Yjes),
-                    description: c.intl.string(c.t.o2FSjB),
+                }), (0, a.isWindows)() ? (0, i.jsx)(l.dOG, {
+                    label: d.intl.string(d.t.n7Yjes),
+                    description: d.intl.string(d.t.o2FSjB),
                     checked: !!e && t,
                     disabled: !e,
                     onChange: this.handleToggleStartMinimized
-                }) : null, (0, i.jsx)(a.dOG, {
-                    label: c.intl.string(c.t.abLFes),
-                    description: c.intl.string(c.t["mVuX+j"]),
+                }) : null, (0, i.jsx)(l.dOG, {
+                    label: d.intl.string(d.t.abLFes),
+                    description: d.intl.string(d.t["mVuX+j"]),
                     checked: n,
                     onChange: this.handleToggleMinimizeToTray
                 }), (0, i.jsx)(o.J, {})]
@@ -76,4 +76,4 @@ class d extends s.PureComponent {
         })
     }
 }
-let u = d
+let u = c

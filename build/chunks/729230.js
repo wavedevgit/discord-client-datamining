@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(778300);
+    l = n.n(s),
+    a = n(778300);
 let r = e => {
     let {
         lifted: t = !1
@@ -18,8 +18,8 @@ let r = e => {
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
         preserveAspectRatio: "none",
-        className: a()(l.zr, {
-            [l.N]: t
+        className: l()(a.zr, {
+            [a.N]: t
         }),
         children: [(0, i.jsx)("path", {
             d: "M1175.02 650.847C567.943 650.847 449.538 793 0 793V0H2338V529.841C1912.54 529.841 1705.84 650.847 1175.02 650.847Z",
@@ -33,19 +33,19 @@ let r = e => {
                 y2: "975.136",
                 gradientUnits: "userSpaceOnUse",
                 children: [(0, i.jsx)("stop", {
-                    className: l.eq
+                    className: a.eq
                 }), (0, i.jsx)("stop", {
                     offset: "0.339235",
-                    className: l.l_
+                    className: a.l_
                 }), (0, i.jsx)("stop", {
                     offset: "0.492065",
-                    className: l.sM
+                    className: a.sM
                 }), (0, i.jsx)("stop", {
                     offset: "0.823236",
-                    className: l.zi
+                    className: a.zi
                 }), (0, i.jsx)("stop", {
                     offset: "0.899558",
-                    className: l.s1
+                    className: a.s1
                 })]
             })
         })]

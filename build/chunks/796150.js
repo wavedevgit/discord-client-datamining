@@ -1,27 +1,28 @@
 /** chunk id: 796150, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => C
+    default: () => S
 });
 var r = n(627968),
     a = n(64700),
     i = n(397927),
-    s = n(964486),
-    l = n(883662),
+    l = n(964486),
+    s = n(883662),
     o = n(961350),
-    c = n(628965),
-    u = n(287809),
+    u = n(628965),
+    c = n(287809),
     d = n(115063),
-    _ = n(152056),
-    m = n(780964),
-    g = n(162396),
-    b = n(12901),
-    p = n(921854),
-    h = n(840065),
-    f = n(985018),
-    x = n(249316);
+    h = n(152056),
+    g = n(780964),
+    f = n(162396),
+    m = n(12901),
+    y = n(921854),
+    p = n(987281),
+    v = n(840065),
+    x = n(985018),
+    b = n(249316);
 
-function y(e) {
+function A(e) {
     let {
         destinationPanel: t,
         originPanel: n
@@ -29,65 +30,65 @@ function y(e) {
     (0, d.iY)({
         destinationPane: t,
         originPane: n,
-        subsection: c.A.getSubsection(),
-        source: c.A.getAnalyticsLocation(),
-        locationStack: c.A.getAnalyticsLocations()
+        subsection: u.A.getSubsection(),
+        source: u.A.getAnalyticsLocation(),
+        locationStack: u.A.getAnalyticsLocations()
     })
 }
 
-function C(e) {
+function S(e) {
     let {
         target: t,
         ...n
-    } = e, i = _.A.useField("query"), d = a.useRef(null);
-    (0, s.Ay)(() => {
-        let e = c.A.getSection();
-        null != e && (y({
+    } = e, i = h.A.useField("query"), d = a.useRef(null);
+    (0, p.V)(), (0, l.Ay)(() => {
+        let e = u.A.getSection();
+        null != e && (A({
             destinationPanel: e,
             originPanel: null
         }), d.current = e)
     });
-    let f = a.useCallback(e => {
-            _.A.setState({
+    let x = a.useCallback(e => {
+            h.A.setState({
                 query: e
             })
         }, []),
-        [x, C] = a.useState(!1);
+        [b, S] = a.useState(!1);
     return (a.useLayoutEffect(() => {
         let e = () => {
-            null == u.default.getCurrentUser() && (C(!0), (0, b.default)())
+            null == c.default.getCurrentUser() && (S(!0), (0, m.default)())
         };
         return o.default.addChangeListener(e), () => o.default.removeChangeListener(e)
-    }, []), x) ? null : (0, r.jsx)(l.A, {
-        partialRoot: p.D,
-        emptyState: A,
-        sidebarFooter: g.A,
+    }, []), b) ? null : (0, r.jsx)(s.A, {
+        partialRoot: y.D,
+        emptyState: _,
+        sidebarFooter: f.A,
         onPanelChange: e => {
-            let t = (0, h.getUserSettingsSectionsByWebUserSettings)().get(e);
-            null != t && (y({
+            let t = (0, v.getUserSettingsSectionsByWebUserSettings)().get(e);
+            null != t && (A({
                 destinationPanel: t,
                 originPanel: d.current
             }), d.current = t)
         },
         target: t,
-        defaultTarget: m.X.ACCOUNT_PANEL,
+        defaultTarget: g.X.ACCOUNT_PANEL,
         searchQuery: i,
-        onSearchChange: f,
+        onSearchChange: x,
         ...n
     })
 }
 
-function A() {
+function _() {
     return (0, r.jsxs)("div", {
-        className: x.t,
+        className: b.t,
         children: [(0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: f.intl.string(f.t.zihbmv)
+            children: x.intl.string(x.t.zihbmv)
         }), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: f.intl.string(f.t.XclvsB)
+            children: x.intl.string(x.t.XclvsB)
         })]
     })
 }

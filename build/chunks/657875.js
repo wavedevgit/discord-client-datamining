@@ -1,14 +1,14 @@
-/** chunk id: 657875, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    a: () => u
+/** chunk id: 657875, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    a: () => o
 });
-var n = i(627968);
-i(64700);
-var l = i(419954),
-    s = i(780964),
-    a = i(965563),
-    r = i(985018);
-let u = (0, l.E2)(s.X.CONTENT_AND_SOCIAL_PERMISSIONS_GUILD_SELECTOR, {
+var i = n(627968);
+n(64700);
+var s = n(419954),
+    l = n(780964),
+    a = n(965563),
+    r = n(985018);
+let o = (0, s.E2)(l.X.CONTENT_AND_SOCIAL_PERMISSIONS_GUILD_SELECTOR, {
     useSearchTerms: () => [r.intl.string(r.t.th0kbF)],
-    Component: () => (0, n.jsx)(a.A, {})
+    Component: () => (0, i.jsx)(a.A, {})
 })

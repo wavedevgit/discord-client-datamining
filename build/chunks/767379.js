@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(627575),
     m = n(393033),
     h = n(105428),
-    p = n(975571),
-    x = n(935649),
+    x = n(975571),
+    p = n(935649),
     g = n(847599),
     _ = n(295972),
     f = n(36149),
-    b = n(807734),
-    v = n(652215),
+    v = n(807734),
+    b = n(652215),
     j = n(239093),
     A = n(536242),
     C = n(985018),
-    T = n(62959),
-    y = n(700129);
+    y = n(62959),
+    T = n(700129);
 
 function S(e) {
     let {
@@ -35,7 +35,7 @@ function S(e) {
         variant: "text-xs/medium",
         children: C.intl.format(A.default.htWh1G, {
             handleOnHelpUrlHook: () => {
-                x.A.openUrl(j.d$.LEARN_MORE_UU_APPEAL_LINK), (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
+                p.A.openUrl(j.d$.LEARN_MORE_UU_APPEAL_LINK), (0, g.St)(t, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
             }
         })
     }) : n === g.q1.SAFETY_FLOWS ? (0, a.jsx)(o.QWc, {
@@ -62,7 +62,7 @@ let E = function(e) {
     let {
         loading: U,
         ageVerificationMethods: L
-    } = (0, b.A)({
+    } = (0, v.A)({
         onClose: () => {
             j?.(), u()
         },
@@ -87,11 +87,11 @@ let E = function(e) {
         dismissable: E,
         graphic: {
             type: "image",
-            src: y.A
+            src: T.A
         },
         title: (0, f.ST)(n),
         subtitle: (0, f.mK)(n, () => {
-            x.A.openUrl(p.A.getArticleURL(v.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
+            p.A.openUrl(x.A.getArticleURL(b.MVz.TIGGER_PAWTECT_LEARN_MORE)), (0, g.St)(D, g.WU.EXPRESSIVE_PRIMARY, g._7.LEARN_MORE)
         }, P),
         actionBarInput: (0, a.jsx)(S, {
             modalSessionId: D,
@@ -111,7 +111,7 @@ let E = function(e) {
                     right: 12
                 },
                 align: "center",
-                className: T.W,
+                className: y.W,
                 children: [(0, a.jsx)(o.mir, {
                     size: "lg",
                     color: "currentColor"

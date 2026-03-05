@@ -1,22 +1,22 @@
 /** chunk id: 535762, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 }), n(321073);
 var i = n(91871),
     s = n.n(i),
-    a = n(18108);
-class l {
+    l = n(18108);
+class a {
     terms;
     cache;
     cacheScored;
     preprocessed;
     constructor(e) {
         this.terms = e, this.cache = new Map, this.cacheScored = new Map, this.preprocessed = [], e.forEach(e => {
-            let [t, n] = e, i = [], s = [], a = new Set;
+            let [t, n] = e, i = [], s = [], l = new Set;
             n.forEach(e => {
                 i.push(e.toLocaleLowerCase()), e.includes(" ") && e.split(/\s+/).forEach(e => {
                     let t = e.toLocaleLowerCase();
-                    a.has(t) || (s.push(t), a.add(t))
+                    l.has(t) || (s.push(t), l.add(t))
                 })
             }), this.preprocessed.push([t, {
                 normalizedSearchTerms: i,
@@ -35,8 +35,8 @@ class l {
         {
             let t = [];
             return this.terms.forEach(n => {
-                let [i, a] = n;
-                for (let n of a)
+                let [i, l] = n;
+                for (let n of l)
                     if (s()(e.toLowerCase(), n.toLowerCase())) {
                         t.push(i);
                         break
@@ -53,11 +53,11 @@ class l {
         return this.preprocessed.forEach(e => {
             let [n, {
                 normalizedTokens: s,
-                normalizedSearchTerms: l
+                normalizedSearchTerms: a
             }] = e, r = 0;
-            l.some(e => e === t) ? r = 1 : s.some(e => e.startsWith(t)) ? r = .95 : l.forEach(e => {
+            a.some(e => e === t) ? r = 1 : s.some(e => e.startsWith(t)) ? r = .95 : a.forEach(e => {
                 let n = 0,
-                    i = (0, a.g)(t, e);
+                    i = (0, l.g)(t, e);
                 i >= .8 && (n = i), r = Math.max(r, n)
             }), r > 0 && i.push({
                 setting: n,

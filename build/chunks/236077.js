@@ -1,11 +1,11 @@
 /** chunk id: 236077, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(284009),
     s = n.n(i),
-    a = n(963935);
-class l {
+    l = n(963935);
+class a {
     map = new Map;
     defaultPanel;
     register(e) {
@@ -14,16 +14,16 @@ class l {
             parentSidebarItemKey: n,
             parentPanelKey: i,
             parentTabKey: s,
-            parentCategoryKey: a,
-            parentAccordionKey: l
+            parentCategoryKey: l,
+            parentAccordionKey: a
         } = e;
         this.map.set(t.key, {
             node: t,
             parentSidebarItemKey: n,
             parentPanelKey: i,
             parentTabKey: s,
-            parentCategoryKey: a,
-            parentAccordionKey: l
+            parentCategoryKey: l,
+            parentAccordionKey: a
         })
     }
     entry(e) {
@@ -40,6 +40,6 @@ class l {
     }
     getPanelOrThrow(e) {
         let t = this.get(e);
-        return s()(t?.type === a.Z6.PANEL, `[SettingsDirectory] key is not for a panel: ${e}`), t
+        return s()(t?.type === l.Z6.PANEL, `[SettingsDirectory] key is not for a panel: ${e}`), t
     }
 }

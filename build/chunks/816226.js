@@ -1,25 +1,25 @@
-/** chunk id: 816226, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    u: () => u
+/** chunk id: 816226, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    u: () => o
 });
-var n = i(311907),
-    l = i(172272),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.sN)(r.X.LAYOUT_DEBUGGING_VERTICAL_SPACING, {
+var i = n(311907),
+    s = n(172272),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.sN)(r.X.LAYOUT_DEBUGGING_VERTICAL_SPACING, {
     useTitle: () => "Vertical Grid Spacing",
     useSubtitle: () => "Adjust the spacing between vertical grid lines. Set to 0 to disable vertical grid lines.",
-    usePredicate: () => (0, n.bG)([a.default], () => a.default.layoutDebuggingEnabled),
+    usePredicate: () => (0, i.bG)([a.default], () => a.default.layoutDebuggingEnabled),
     minValue: 0,
-    maxValue: l.YR,
+    maxValue: s.YR,
     markers: Array.from({
-        length: l.YR + 1
-    }, (t, e) => e),
-    onValueRender: t => `${Math.round(t)}px`,
-    onMarkerRender: t => t % 4 == 0 ? `${t}` : void 0,
-    getInitialValue: () => l.Or.getState().verticalSpacing,
-    asValueChanges: t => {
-        l.Or.getState().setVerticalSpacing(t)
+        length: s.YR + 1
+    }, (e, t) => t),
+    onValueRender: e => `${Math.round(e)}px`,
+    onMarkerRender: e => e % 4 == 0 ? `${e}` : void 0,
+    getInitialValue: () => s.Or.getState().verticalSpacing,
+    asValueChanges: e => {
+        s.Or.getState().setVerticalSpacing(e)
     }
 })

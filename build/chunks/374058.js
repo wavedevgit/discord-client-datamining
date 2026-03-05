@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(397927),
     m = n(297413),
     h = n(58736),
-    p = n(379078),
-    x = n(704554),
+    x = n(379078),
+    p = n(704554),
     g = n(287809),
     _ = n(957565),
     f = n(405269),
-    b = n(967954),
-    v = n(538064),
+    v = n(967954),
+    b = n(538064),
     j = n(708403),
     A = n(260880),
     C = n(303054),
-    T = n(231643),
-    y = n(985018),
+    y = n(231643),
+    T = n(985018),
     S = n(76584),
     E = n(661251);
 let N = [{
@@ -95,7 +95,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
     O = [{
         id: "details",
         name: "Details",
-        group: T.fu.NONE,
+        group: y.fu.NONE,
         render: e => {
             let {
                 loggedEvent: {
@@ -106,7 +106,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                 },
                 onClose: r,
                 filteredEvents: d
-            } = e, c = g.default.getUser(s), p = o()(i);
+            } = e, c = g.default.getUser(s), x = o()(i);
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
@@ -149,8 +149,8 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                         copyValue: i.toISOString(),
                         children: (0, a.jsxs)("time", {
                             dateTime: i.toISOString(),
-                            title: (0, f.i$)(p, "LLLL"),
-                            children: ["(", o().locale(), ") ", (0, f.mk)(p)]
+                            title: (0, f.i$)(x, "LLLL"),
+                            children: ["(", o().locale(), ") ", (0, f.mk)(x)]
                         })
                     }), null != c && (0, a.jsx)(j.mA, {
                         name: "User",
@@ -238,7 +238,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
         }
     },
     D = {
-        searchType: p.n.REGEX,
+        searchType: x.n.REGEX,
         searchStringGenerator: e => {
             let {
                 event: t,
@@ -252,13 +252,13 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
 function M() {
     let e = i.useRef(null),
         [t, n] = i.useState(""),
-        s = (0, d.bG)([b.A], () => b.A.loggedEventsVersion),
+        s = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),
         [r, o] = i.useState(() => Object.keys(w)),
-        [m, h] = i.useState(b.A.loggedEvents),
-        p = i.useCallback(e => {
+        [m, h] = i.useState(v.A.loggedEvents),
+        x = i.useCallback(e => {
             h(e)
         }, []);
-    (0, x.RT)(t, b.A.loggedEvents, p, D, [s]);
+    (0, p.RT)(t, v.A.loggedEvents, x, D, [s]);
     let g = m.filter(e => {
             for (let t of r)
                 if (w[t].filter(e)) return !0;
@@ -269,7 +269,7 @@ function M() {
         {
             TabBar: I,
             renderSelectedTab: k
-        } = (0, T.Ay)({
+        } = (0, y.Ay)({
             tabs: O
         }, []);
     return (0, a.jsxs)("div", {
@@ -281,13 +281,13 @@ function M() {
                 className: S.Q$,
                 look: c.$n.Looks.BLANK,
                 size: c.$n.Sizes.ICON,
-                onClick: v.eY,
+                onClick: b.eY,
                 children: (0, a.jsx)("span", {
-                    title: y.intl.string(y.t.VkKicb),
+                    title: T.intl.string(T.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": y.intl.string(y.t.VkKicb)
+                        "aria-label": T.intl.string(T.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {

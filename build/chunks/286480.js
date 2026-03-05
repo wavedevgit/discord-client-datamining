@@ -1,25 +1,25 @@
-/** chunk id: 286480, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => u
+/** chunk id: 286480, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => o
 });
-var n = i(311907),
-    l = i(172272),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.sN)(r.X.LAYOUT_DEBUGGING_HORIZONTAL_SPACING, {
+var i = n(311907),
+    s = n(172272),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.sN)(r.X.LAYOUT_DEBUGGING_HORIZONTAL_SPACING, {
     useTitle: () => "Horizontal Grid Spacing",
     useSubtitle: () => "Adjust the spacing between horizontal grid lines. Set to 0 to disable horizontal grid lines.",
-    usePredicate: () => (0, n.bG)([a.default], () => a.default.layoutDebuggingEnabled),
+    usePredicate: () => (0, i.bG)([a.default], () => a.default.layoutDebuggingEnabled),
     minValue: 0,
-    maxValue: l.YR,
+    maxValue: s.YR,
     markers: Array.from({
-        length: l.YR + 1
-    }, (t, e) => e),
-    onValueRender: t => `${Math.round(t)}px`,
-    onMarkerRender: t => t % 4 == 0 ? `${t}` : void 0,
-    getInitialValue: () => l.Or.getState().horizontalSpacing,
-    asValueChanges: t => {
-        l.Or.getState().setHorizontalSpacing(t)
+        length: s.YR + 1
+    }, (e, t) => t),
+    onValueRender: e => `${Math.round(e)}px`,
+    onMarkerRender: e => e % 4 == 0 ? `${e}` : void 0,
+    getInitialValue: () => s.Or.getState().horizontalSpacing,
+    asValueChanges: e => {
+        s.Or.getState().setHorizontalSpacing(e)
     }
 })

@@ -1,12 +1,12 @@
 /** chunk id: 461797, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Wt: () => r,
-    jB: () => l
+    jB: () => a
 });
 var i = n(508425),
     s = n(559949),
-    a = n(985018);
-let l = {
+    l = n(985018);
+let a = {
         above_the_clouds: {
             preset: "above_the_clouds",
             themeColors: [752280, 9215590],
@@ -16,7 +16,7 @@ let l = {
                 effectId: i.z.POP,
                 colors: [959694]
             },
-            getName: () => a.intl.string(a.t["TFc+iF"]),
+            getName: () => l.intl.string(l.t["TFc+iF"]),
             getHeaderSrc: () => n(702051).A,
             getBannerSrc: e => e ? n(735161).A : n(887e3).A
         },
@@ -29,7 +29,7 @@ let l = {
                 effectId: i.z.NEON,
                 colors: [2949343]
             },
-            getName: () => a.intl.string(a.t["4g+5bq"]),
+            getName: () => l.intl.string(l.t["4g+5bq"]),
             getHeaderSrc: () => n(272017).A,
             getBannerSrc: e => e ? n(735271).A : n(208574).A
         },
@@ -42,7 +42,7 @@ let l = {
                 effectId: i.z.TOON,
                 colors: [0xff0000]
             },
-            getName: () => a.intl.string(a.t.ycg1xj),
+            getName: () => l.intl.string(l.t.ycg1xj),
             getHeaderSrc: () => n(863653).A,
             getBannerSrc: e => e ? n(538263).A : n(576974).A
         },
@@ -55,7 +55,7 @@ let l = {
                 effectId: i.z.TOON,
                 colors: [3343795]
             },
-            getName: () => a.intl.string(a.t["9WLHvr"]),
+            getName: () => l.intl.string(l.t["9WLHvr"]),
             getHeaderSrc: () => n(434361).A,
             getBannerSrc: e => e ? n(700309).A : n(135572).A
         },
@@ -68,9 +68,9 @@ let l = {
                 effectId: i.z.NEON,
                 colors: [28737]
             },
-            getName: () => a.intl.string(a.t.UdNuqi),
+            getName: () => l.intl.string(l.t.UdNuqi),
             getHeaderSrc: () => n(301928).A,
             getBannerSrc: e => e ? n(285974).A : n(775627).A
         }
     },
-    r = e => l[e]
+    r = e => a[e]

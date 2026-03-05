@@ -1,6 +1,6 @@
 /** chunk id: 632678, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(152056),
     h = n(985018);
 
-function _() {
+function m() {
     let e = u.A.useField("query"),
         t = s.useCallback((e, t) => {
             t.stopPropagation(), t.preventDefault(), e && !a.A.isSessionActive() && (a.A.initialize(), (0, c.f1)()), u.A.setState({
@@ -26,16 +26,16 @@ function _() {
                 isActive: !1
             })
         }, []),
-        _ = s.useRef(null),
-        S = (0, l.bG)([d.A], () => d.A.getSection());
+        m = s.useRef(null),
+        p = (0, l.bG)([d.A], () => d.A.getSection());
     s.useEffect(() => {
         let e = e => {
-            let t = _.current;
+            let t = m.current;
             (0, r.BF)(e)?.activeElement === document.body && t?.focus()
         };
         return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
-    }, [S]);
-    let p = s.useCallback(e => {
+    }, [p]);
+    let S = s.useCallback(e => {
         u.A.setState({
             query: e
         })
@@ -45,10 +45,10 @@ function _() {
             marginBottom: "8px"
         },
         children: (0, i.jsx)(o.IWV, {
-            ref: _,
+            ref: m,
             query: e,
             onClear: n,
-            onChange: p,
+            onChange: S,
             placeholder: h.intl.string(h.t["5h0QOP"]),
             inputProps: {
                 "aria-label": h.intl.string(h.t.pk9BWW),

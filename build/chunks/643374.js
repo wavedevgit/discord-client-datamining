@@ -18,7 +18,7 @@ function c(e) {
         buttonText: c,
         placeholder: u,
         onFileSelect: m
-    } = e, h = i.useRef(null), p = i.useRef(null);
+    } = e, h = i.useRef(null), x = i.useRef(null);
     return (0, a.jsx)(r.vN3, {
         ringTarget: h,
         within: !0,
@@ -39,7 +39,7 @@ function c(e) {
                 text: c,
                 tabIndex: -1
             }), (0, a.jsx)(o.A, {
-                ref: p,
+                ref: x,
                 onChange: e => {
                     m(e.currentTarget.files?.[0])
                 },

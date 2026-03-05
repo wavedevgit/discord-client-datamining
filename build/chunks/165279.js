@@ -1,24 +1,20 @@
-/** chunk id: 165279, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    z: () => A
+/** chunk id: 165279, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    z: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(358776),
-    a = i(782844),
-    r = i(840065),
-    u = i(355097),
-    o = i(652215),
-    d = i(985018);
-let A = (0, n.v_)(l.X.DATA_USAGE_DISCLAIMER_SETTING, {
-    useTitle: () => d.intl.string(d.t.D60Gfj),
-    useSubtitle: () => d.intl.format(d.t.R5N31P, {
+var i = n(419954),
+    s = n(780964),
+    l = n(782844),
+    a = n(840065),
+    r = n(652215),
+    o = n(985018);
+let d = (0, i.v_)(s.X.DATA_USAGE_DISCLAIMER_SETTING, {
+    useTitle: () => o.intl.string(o.t.D60Gfj),
+    useSubtitle: () => o.intl.format(o.t.R5N31P, {
         onClick: () => {
-            let t = (0, s.WJ)("DataUsageDisclaimerSetting");
-            (0, r.openUserSettings)(t ? l.X.ACCOUNT_REMOVAL_SETTING : l.X.ACCOUNT_PANEL, {
-                section: o.nc_.ACCOUNT,
-                subsection: a.D.SECURITY,
-                scrollPosition: t ? void 0 : u.Ew.AccountScrollPositions.DISABLE_ACCOUNT
+            (0, a.openUserSettings)(s.X.ACCOUNT_REMOVAL_SETTING, {
+                section: r.nc_.ACCOUNT,
+                subsection: l.D.SECURITY
             })
         }
     })

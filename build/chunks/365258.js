@@ -2,11 +2,11 @@
 n.d(t, {
     AB: () => T,
     AI: () => u,
-    Xc: () => C,
+    Xc: () => h,
     ae: () => S,
-    g8: () => h,
-    gF: () => f,
-    gS: () => m,
+    g8: () => C,
+    gF: () => m,
+    gS: () => f,
     vz: () => p
 });
 var i, r = n(873298),
@@ -20,7 +20,7 @@ var i, r = n(873298),
     u = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
 let A = r.Qd;
 
-function g(e) {
+function I(e) {
     switch (e) {
         case A.ACTIVITY_STATUS_OFF:
             return 2;
@@ -32,20 +32,20 @@ function g(e) {
             return -1
     }
 }
-let I = new Map([
+let E = new Map([
     [r.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
     [r.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
     [r.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
 ]);
 
-function E(e) {
-    return I.get(e) ?? A.ACTIVITY_STATUS_OFF
+function g(e) {
+    return E.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
-function h(e, t) {
+function C(e, t) {
     if (e === t) return null;
-    let n = g(e),
-        i = g(t);
+    let n = I(e),
+        i = I(t);
     if (n < 0 || i < 0) return null;
     let r = i < n ? "restricting" : "expanding",
         a = (0, _.Kk)(),
@@ -69,7 +69,7 @@ function h(e, t) {
     })
 }
 
-function C(e) {
+function h(e) {
     switch (e) {
         case A.ACTIVITY_STATUS_OFF:
             return c.intl.string(c.t.FzgQna).toLowerCase();
@@ -104,11 +104,11 @@ function S(e, t) {
     }
 }
 
-function m(e, t) {
-    let n = E(t),
+function f(e, t) {
+    let n = g(t),
         i = a._Z.getSetting();
-    if (i === n || g(E(e)) > g(n) != g(i) > g(n)) return null;
-    let s = h(i, n);
+    if (i === n || I(g(e)) > I(n) != I(i) > I(n)) return null;
+    let s = C(i, n);
     if (null == s) return null;
     let l = function(e) {
         switch (e) {
@@ -134,7 +134,7 @@ function T(e) {
     return [...e].sort((e, t) => s.A.getScoreWithoutFetchingLatest(t) - s.A.getScoreWithoutFetchingLatest(e))
 }
 
-function f(e, t) {
+function m(e, t) {
     let n = (0, _.Kk)(),
         i = new Set(t);
     if ("restricting" === e) {

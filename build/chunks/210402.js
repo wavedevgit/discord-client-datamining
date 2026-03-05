@@ -1,57 +1,57 @@
-/** chunk id: 210402, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 210402, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     default: () => u
 });
-var a = n(627968);
-n(64700);
-var i = n(87719),
-    r = n(414345),
-    o = n(244975),
-    s = n(788868),
-    c = n(652215),
-    d = n(985018),
-    l = n(451067),
-    p = n(196436);
+var a = i(627968);
+i(64700);
+var n = i(87719),
+    s = i(414345),
+    o = i(244975),
+    c = i(788868),
+    r = i(652215),
+    l = i(985018),
+    d = i(451067),
+    p = i(196436);
 
 function u(t) {
     let {
         onClose: e,
-        analyticsSource: n,
+        analyticsSource: i,
         onLearnMore: u,
-        ...C
-    } = t, _ = s.pe.TIER_2, A = d.intl.format(d.t.hDMlqD, {
+        ..._
+    } = t, b = c.pe.TIER_2, g = l.intl.format(l.t.hDMlqD, {
         onLearnMore: function() {
-            u?.(), e(), (0, i.e)()
+            u?.(), e(), (0, n.e)()
         }
     });
-    return (0, r.g1)({
+    return (0, s.g1)({
         location: "PremiumVideoBackgroundsUpsell"
     }) ? (0, a.jsx)(o.F, {
-        title: d.intl.string(d.t.fHqiDW),
-        subtitle: A,
+        title: l.intl.string(l.t.fHqiDW),
+        subtitle: g,
         graphic: {
             src: p.A,
             type: "image"
         },
         onSecondaryClick: e,
-        secondaryCTA: d.intl.string(d.t["13/7kX"]),
+        secondaryCTA: l.intl.string(l.t["13/7kX"]),
         onClose: e,
-        subscriptionTier: _,
-        ...C
+        subscriptionTier: b,
+        ..._
     }) : (0, a.jsx)(o.A, {
         artURL: p.A,
-        artContainerClassName: l.z,
-        type: s.e.VIDEO_BACKGROUNDS_MODAL,
-        title: d.intl.string(d.t.fHqiDW),
-        body: A,
-        glowUp: A,
-        analyticsSource: n,
+        artContainerClassName: d.z,
+        type: c.e.VIDEO_BACKGROUNDS_MODAL,
+        title: l.intl.string(l.t.fHqiDW),
+        body: g,
+        glowUp: g,
+        analyticsSource: i,
         analyticsLocation: {
-            page: c.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,
-            object: c.ZSU.BUTTON_CTA
+            page: r.liQ.PREMIUM_UPSELL_MODAL_VIDEO_BACKGROUNDS,
+            object: r.ZSU.BUTTON_CTA
         },
         onClose: e,
-        subscriptionTier: _,
-        ...C
+        subscriptionTier: b,
+        ..._
     })
 }

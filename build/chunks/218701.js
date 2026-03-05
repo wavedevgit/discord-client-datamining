@@ -1,24 +1,24 @@
-/** chunk id: 218701, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    u: () => g
+/** chunk id: 218701, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    u: () => A
 });
-var n = i(290595),
-    l = i(419954),
-    s = i(153488),
-    a = i(780964),
-    r = i(589641),
-    u = i(766850),
-    o = i(165279),
-    d = i(937966),
-    A = i(788172),
-    T = i(789643),
-    S = i(719587),
-    E = i(985018);
-let g = (0, l.zZ)(a.X.DATA_USAGE_CATEGORY, {
-    useTitle: () => E.intl.string(E.t.bvw42E),
+var i = n(290595),
+    s = n(419954),
+    l = n(153488),
+    a = n(780964),
+    r = n(589641),
+    o = n(766850),
+    d = n(165279),
+    c = n(937966),
+    u = n(788172),
+    _ = n(789643),
+    g = n(719587),
+    m = n(985018);
+let A = (0, s.zZ)(a.X.DATA_USAGE_CATEGORY, {
+    useTitle: () => m.intl.string(m.t.bvw42E),
     useInlineNotice: r.I,
     initialize: () => {
-        s.A.fetchedConsents || (0, n.Q)()
+        l.A.fetchedConsents || (0, i.Q)()
     },
-    buildLayout: () => [S.L, T.X, A.m, d._, u.C, o.z]
+    buildLayout: () => [g.L, _.X, u.m, c._, o.C, d.z]
 })

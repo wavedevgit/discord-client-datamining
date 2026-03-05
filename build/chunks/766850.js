@@ -1,17 +1,17 @@
-/** chunk id: 766850, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => u
+/** chunk id: 766850, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => o
 });
-var n = i(399925),
-    l = i(419954),
-    s = i(253932),
-    a = i(780964),
-    r = i(985018);
-let u = (0, l.zD)(a.X.CLIPS_ALLOW_VOICE_RECORDING_SETTING, {
+var i = n(399925),
+    s = n(419954),
+    l = n(253932),
+    a = n(780964),
+    r = n(985018);
+let o = (0, s.zD)(a.X.CLIPS_ALLOW_VOICE_RECORDING_SETTING, {
     useTitle: () => r.intl.string(r.t.AGDDkH),
     useSubtitle: () => r.intl.string(r.t["wW9/zQ"]),
-    useValue: () => s.Q$.useSetting(),
-    setValue: t => n.eQ({
-        allowVoiceRecording: t
+    useValue: () => l.Q$.useSetting(),
+    setValue: e => i.eQ({
+        allowVoiceRecording: e
     })
 })

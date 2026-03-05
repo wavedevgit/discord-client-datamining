@@ -1,39 +1,39 @@
-/** chunk id: 544727, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    $: () => T
+/** chunk id: 544727, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    $: () => _
 });
-var n = i(627968);
-i(64700);
-var l = i(311907),
-    s = i(397927),
-    a = i(77729),
-    r = i(274372),
-    u = i(399925),
-    o = i(419954),
-    d = i(780964),
-    A = i(985018);
-let T = (0, o.E2)(d.X.CLIPS_STORAGE_LOCATION, {
-    useSearchTerms: () => [A.intl.string(A.t.s4773E), A.intl.string(A.t.svjwGh)],
+var i = n(627968);
+n(64700);
+var s = n(311907),
+    l = n(397927),
+    a = n(77729),
+    r = n(274372),
+    o = n(399925),
+    d = n(419954),
+    c = n(780964),
+    u = n(985018);
+let _ = (0, d.E2)(c.X.CLIPS_STORAGE_LOCATION, {
+    useSearchTerms: () => [u.intl.string(u.t.s4773E), u.intl.string(u.t.svjwGh)],
     Component: () => {
-        let t = (0, l.bG)([r.A], () => r.A.getSettings().storageLocation),
-            e = async () => {
-                let t = await a.A.fileManager.showOpenDialog({
+        let e = (0, s.bG)([r.A], () => r.A.getSettings().storageLocation),
+            t = async () => {
+                let e = await a.A.fileManager.showOpenDialog({
                     properties: ["openDirectory", "createDirectory"]
                 });
-                t.length > 0 && u.HU(t[0])
+                e.length > 0 && o.HU(e[0])
             };
-        return (0, n.jsx)(s.D0$, {
-            label: A.intl.string(A.t.s4773E),
-            description: A.intl.string(A.t.svjwGh),
+        return (0, i.jsx)(l.D0$, {
+            label: u.intl.string(u.t.s4773E),
+            description: u.intl.string(u.t.svjwGh),
             layout: "horizontal",
-            children: (0, n.jsx)(s.DUT, {
-                "aria-label": A.intl.formatToPlainString(A.t.iMONTj, {
-                    storageLocation: t
+            children: (0, i.jsx)(l.DUT, {
+                "aria-label": u.intl.formatToPlainString(u.t.iMONTj, {
+                    storageLocation: e
                 }),
-                onClick: e,
-                children: (0, n.jsx)(s.ksK, {
+                onClick: t,
+                children: (0, i.jsx)(l.ksK, {
                     tabIndex: -1,
-                    value: t,
+                    value: e,
                     editable: !1,
                     "aria-hidden": !0
                 })

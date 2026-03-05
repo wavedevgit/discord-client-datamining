@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(873263),
     d = n(837381),
     u = n(621466),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(688810),
     I = n(313961),
     N = n(838432),
-    S = n(832275),
-    b = n(730253),
+    b = n(832275),
+    S = n(730253),
     T = n(633965),
     v = n(857071),
     y = n(851109),
@@ -120,14 +120,14 @@ class es {
             iconTotalSize: i,
             badgeVisibleBuffer: s,
             heightBeforeGuilds: l,
-            bottomInset: r
-        } = this.sizes, a = this.scrollerRef.current;
-        if (null == a) return !1;
+            bottomInset: a
+        } = this.sizes, r = this.scrollerRef.current;
+        if (null == r) return !1;
         let o = n.findIndex(t => "string" == typeof t || null == t ? t === e : t.includes(e));
         if (o < 0) return !1;
         let c = i * o + l,
-            d = a.getScrollerState();
-        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - r)
+            d = r.getScrollerState();
+        return !t && !!(c >= d.scrollTop) || !!t && !!(c + i + s <= d.scrollTop + d.offsetHeight - a)
     };
     getVisibleGuildIds = () => {
         let e = this.scrollerRef.current;
@@ -139,8 +139,8 @@ class es {
                 s = this.nodeRefs[i];
             if (null == s) return !1;
             let l = s.getBoundingClientRect(),
-                r = l.top - n;
-            return r + l.height > 0 && r < t
+                a = l.top - n;
+            return a + l.height > 0 && a < t
         }).map(e => {
             let {
                 id: t
@@ -173,13 +173,13 @@ function el(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: s
-    } = e, l = (0, S.A)("TopSection"), r = (0, h.yK)([D.A, M.Ay], () => D.A.getGuildIds().filter(e => M.Ay.isCurrentUserGuest(e))), a = s.concat(r), {
+    } = e, l = (0, b.A)("TopSection"), a = (0, h.yK)([D.A, M.Ay], () => D.A.getGuildIds().filter(e => M.Ay.isCurrentUserGuest(e))), r = s.concat(a), {
         entrypoint: o
     } = (0, y.X8)({
         location: "GuildsBar"
     });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Y.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(j.A, {}), l ? (0, i.jsx)(b.A, {}) : null, !t && (0, i.jsx)(B.A, {}), a.map(e => (0, i.jsx)($.A, {
+        children: [(0, i.jsx)(Y.C, {}), o === y.RK.SERVER_RAIL_TOP && (0, i.jsx)(j.A, {}), l ? (0, i.jsx)(S.A, {}) : null, !t && (0, i.jsx)(B.A, {}), r.map(e => (0, i.jsx)($.A, {
             guildId: e
         }, e)), (0, i.jsx)(Q.A, {
             onActivate: n
@@ -187,17 +187,17 @@ function el(e) {
     })
 }
 
-function er(e) {
+function ea(e) {
     let {
         guildDiscoveryButton: t,
         disableAppDownload: n,
         isOverlay: s,
         renderTreeNode: l,
-        lurkingGuildIds: r
-    } = e, [a] = (0, h.yK)([G.Ay], () => {
+        lurkingGuildIds: a
+    } = e, [r] = (0, h.yK)([G.Ay], () => {
         let e = G.Ay.getGuildsTree();
         return [e, e.version]
-    }), o = a.getRoots(), c = (0, h.yK)([L.A], () => L.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(K.A, {
+    }), o = r.getRoots(), c = (0, h.yK)([L.A], () => L.A.getGeoRestrictedGuilds()).map(e => (0, i.jsx)(K.A, {
         id: e.id,
         name: e.name,
         icon: e.icon
@@ -209,18 +209,18 @@ function er(e) {
             gap: "xs",
             children: o.map((e, t) => l(e, t, o.length))
         }), c, (0, i.jsx)(q.A, {}), s ? null : (0, i.jsx)(F.A, {
-            disableTooltip: r.length > 0,
+            disableTooltip: a.length > 0,
             lastTargetNode: o[o.length - 1]
         }), s ? null : t, n ? null : (0, i.jsx)(H.A, {})]
     })
 }
 
-function ea(e) {
+function er(e) {
     let {
         disableAppDownload: t = U.isPlatformEmbedded,
         isOverlay: n = !1,
         className: l,
-        themeOverride: a
+        themeOverride: r
     } = e;
     (0, N.A)();
     let [o] = (0, h.yK)([G.Ay], () => {
@@ -228,18 +228,18 @@ function ea(e) {
         return [e, e.version]
     }), u = (0, h.bG)([v.A], () => v.A.lurkingGuildIds()), A = s.useMemo(() => n ? [] : u, [u, n]), _ = (0, h.bG)([I.A], () => I.A.isFullscreenInContext()), {
         isSorting: x,
-        startSorting: b,
+        startSorting: S,
         stopSorting: T
     } = (0, P.A)(), L = s.useRef(!1), [M] = s.useState(() => new m.Ep), D = s.useRef(null), B = s.useRef(null), {
         ref: H,
         ...F
-    } = (0, d.$y)(), K = (0, g.R7z)(), [Y, q] = s.useState(!1), Q = (0, g.rdh)(p.A.modules.guildbar.AVATAR_SIZE), $ = (0, g.rdh)(p.A.space.SPACE_XS), ea = (0, S.A)("GuildsBar"), {
+    } = (0, d.$y)(), K = (0, g.R7z)(), [Y, q] = s.useState(!1), Q = (0, g.rdh)(p.A.modules.guildbar.AVATAR_SIZE), $ = (0, g.rdh)(p.A.space.SPACE_XS), er = (0, b.A)("GuildsBar"), {
         pathname: eo
     } = (0, c.zy)(), {
         entrypoint: ec
     } = (0, y.X8)({
         location: "GuildsBar"
-    }), ed = +!!ea + +(ec === y.RK.SERVER_RAIL_TOP), eu = s.useMemo(() => {
+    }), ed = +!!er + +(ec === y.RK.SERVER_RAIL_TOP), eu = s.useMemo(() => {
         let e, t, n = (e = Q + $, {
             iconSize: Q,
             iconTotalSize: e,
@@ -298,7 +298,7 @@ function ea(e) {
                         setNodeRef: eu.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: b,
+                        onDragStart: S,
                         onDragEnd: T,
                         renderChildNode: e,
                         "aria-setsize": s,
@@ -310,7 +310,7 @@ function ea(e) {
                         setRef: eu.setNodeRef,
                         draggable: !0,
                         sorting: x,
-                        onDragStart: b,
+                        onDragStart: S,
                         onDragEnd: T,
                         "aria-setsize": s,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
@@ -318,7 +318,7 @@ function ea(e) {
                 default:
                     return null
             }
-        }, [b, T, x, eu.setNodeRef]),
+        }, [S, T, x, eu.setNodeRef]),
         eg = (0, i.jsx)(W.A, {
             selected: eA,
             className: et.ai
@@ -327,9 +327,9 @@ function ea(e) {
     return (0, i.jsx)(E.f5, {
         value: eh,
         children: (0, i.jsx)(g.NPJ, {
-            theme: a,
+            theme: r,
             children: e => (0, i.jsxs)("nav", {
-                className: r()(et.iE, l, e, {
+                className: a()(et.iE, l, e, {
                     [et.R]: _
                 }),
                 "aria-label": ee.intl.string(ee.t.PjnF2t),
@@ -348,7 +348,7 @@ function ea(e) {
                     children: (0, i.jsxs)("div", {
                         className: et.qD,
                         children: [(0, i.jsxs)(g.zCo, {
-                            className: r()({
+                            className: a()({
                                 [et.XG]: !0,
                                 [et.qw]: Y
                             }),
@@ -359,7 +359,7 @@ function ea(e) {
                             children: [(0, i.jsx)(el, {
                                 scrollToTop: em,
                                 lurkingGuildIds: A
-                            }), (0, i.jsx)(z.A, {}), (0, i.jsx)(er, {
+                            }), (0, i.jsx)(z.A, {}), (0, i.jsx)(ea, {
                                 guildDiscoveryButton: eg,
                                 disableAppDownload: t,
                                 isOverlay: n,
@@ -380,7 +380,7 @@ function ea(e) {
                     ref: B,
                     isVisible: eu.isItemVisible,
                     onJumpTo: eu.handleJumpToGuild,
-                    className: r()(et.LZ, {
+                    className: a()(et.LZ, {
                         [et.CH]: !n && !e_,
                         [et.c0]: !n && e_
                     }),
@@ -394,7 +394,7 @@ let eo = s.memo(function(e) {
     let t = (0, x.A)("guildsnav");
     return (0, i.jsx)(d.hD, {
         navigator: t,
-        children: (0, i.jsx)(ea, {
+        children: (0, i.jsx)(er, {
             ...e
         })
     })

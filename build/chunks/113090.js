@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     s = n(311907),
-    a = n(73153),
-    l = n(233317);
+    l = n(73153),
+    a = n(233317);
 
 function r() {
     let {
@@ -14,12 +14,12 @@ function r() {
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
         premiumGroupMembership: n,
         isFetchingMembership: r
-    } = (0, s.cf)([l.A], () => ({
-        premiumGroupMembership: l.A.getMembership(),
-        isFetchingMembership: l.A.isFetchingMembership()
+    } = (0, s.cf)([a.A], () => ({
+        premiumGroupMembership: a.A.getMembership(),
+        isFetchingMembership: a.A.isFetchingMembership()
     }));
     return (0, i.useEffect)(() => {
-        !t || e && l.A.hasFetchedMembership() || a.h.dispatch({
+        !t || e && a.A.hasFetchedMembership() || l.h.dispatch({
             type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST"
         })
     }, [t, e]), {

@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(573435),
     o = n(933297),
-    c = n(535717);
+    d = n(535717);
 
-function d(e) {
+function c(e) {
     let {
         icon: t,
         sizePx: n,
-        positionClassName: a
-    } = e, d = function(e) {
+        positionClassName: l
+    } = e, c = function(e) {
         switch (e) {
             case o.NF.ROUNDED:
-                return c.Nb;
+                return d.Nb;
             case o.NF.SQUIRCLE:
-                return c.uk
+                return d.uk
         }
     }(t.shape), u = s.useMemo(() => ({
         width: `${n}px`,
@@ -29,17 +29,17 @@ function d(e) {
     switch (t.shape) {
         case o.NF.SQUIRCLE:
             return (0, i.jsx)("div", {
-                className: l()(c.Gt, a),
+                className: a()(d.Gt, l),
                 style: u,
                 children: (0, i.jsx)(r.Ay, {
-                    className: c.uk,
+                    className: d.uk,
                     mask: r.Ay.Masks.SQUIRCLE,
                     width: n,
                     height: n,
                     children: (0, i.jsx)("div", {
-                        className: c.A3,
+                        className: d.A3,
                         children: (0, i.jsx)("div", {
-                            className: c.ZY,
+                            className: d.ZY,
                             children: t.icon
                         })
                     })
@@ -47,10 +47,10 @@ function d(e) {
             });
         case o.NF.ROUNDED:
             return (0, i.jsx)("div", {
-                className: l()(c.Gt, a, d),
+                className: a()(d.Gt, l, c),
                 style: u,
                 children: (0, i.jsx)("div", {
-                    className: c.ZY,
+                    className: d.ZY,
                     children: t.icon
                 })
             })
@@ -64,19 +64,19 @@ function u(e) {
     if (null == n) return null;
     let {
         frontIcon: s,
-        backIcon: a
+        backIcon: l
     } = n;
     return (0, i.jsxs)("div", {
-        className: c.VD,
+        className: d.VD,
         "aria-hidden": !0,
-        children: [null != a && (0, i.jsx)(d, {
-            icon: a,
+        children: [null != l && (0, i.jsx)(c, {
+            icon: l,
             sizePx: 40,
-            positionClassName: c.j2
-        }), (0, i.jsx)(d, {
+            positionClassName: d.j2
+        }), (0, i.jsx)(c, {
             icon: s,
             sizePx: 48,
-            positionClassName: c.hU
+            positionClassName: d.hU
         })]
     })
 }

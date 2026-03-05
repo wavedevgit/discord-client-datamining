@@ -1,23 +1,23 @@
-/** chunk id: 179014, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    r: () => d
+/** chunk id: 179014, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    r: () => c
 });
-var n = i(311907),
-    l = i(936388),
-    s = i(714763),
-    a = i(814278),
-    r = i(419954),
-    u = i(780964),
-    o = i(985018);
-let d = (0, r.zD)(u.X.PERSISTENT_VERIFICATION_CODES_SETTING, {
-    useTitle: () => o.intl.string(o.t["opi/XK"]),
-    useSubtitle: () => o.intl.format(o.t["/T+ZlP"], {
+var i = n(311907),
+    s = n(936388),
+    l = n(714763),
+    a = n(814278),
+    r = n(419954),
+    o = n(780964),
+    d = n(985018);
+let c = (0, r.zD)(o.X.PERSISTENT_VERIFICATION_CODES_SETTING, {
+    useTitle: () => d.intl.string(d.t["opi/XK"]),
+    useSubtitle: () => d.intl.format(d.t["/T+ZlP"], {
         helpArticle: (0, a.Lu)()
     }),
     useValue: function() {
-        return (0, n.bG)([s.A], () => s.A.getPersistentCodesEnabled())
+        return (0, i.bG)([l.A], () => l.A.getPersistentCodesEnabled())
     },
-    setValue: function(t) {
-        l.A.updatePersistentCodesEnabled(t)
+    setValue: function(e) {
+        s.A.updatePersistentCodesEnabled(e)
     }
 })

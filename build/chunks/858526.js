@@ -5,18 +5,18 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(179690),
-    l = n(985018);
+    l = n(179690),
+    a = n(985018);
 
 function r() {
     return (0, i.jsx)(s.D0$, {
-        label: l.intl.string(l.t.EPVq00),
-        description: l.intl.string(l.t["8aDa1t"]),
+        label: a.intl.string(a.t.EPVq00),
+        description: a.intl.string(a.t["8aDa1t"]),
         children: (0, i.jsx)(s.Button, {
             variant: "primary",
             size: "sm",
-            text: l.intl.string(l.t.cDgKte),
-            onClick: a.Ay.enableMFA
+            text: a.intl.string(a.t.cDgKte),
+            onClick: l.Ay.enableMFA
         })
     })
 }

@@ -1,8 +1,8 @@
 /** chunk id: 137365, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    D7: () => y,
-    Md: () => v,
-    _S: () => T,
+    D7: () => T,
+    Md: () => b,
+    _S: () => y,
     a1: () => C,
     g_: () => S,
     h2: () => E,
@@ -20,17 +20,17 @@ var a = n(450827),
     u = n(71393),
     m = n(994500),
     h = n(287809),
-    p = n(860689),
-    x = n(661191),
+    x = n(860689),
+    p = n(661191),
     g = n(427262),
     _ = n(926140);
 let f = new s.A("SearchDebugUtils");
 
-function b() {
+function v() {
     f.info("--------------------------")
 }
 
-function v() {
+function b() {
     let e = r.A.getMutablePrivateChannels(),
         t = [],
         n = [];
@@ -46,7 +46,7 @@ function v() {
                 a = g.Ay.getGlobalName(t),
                 i = m.A.getNickname(t.id),
                 s = c.Ay.getNicknames(t.id);
-            f.info(`username: ${n}`), f.info(`global name: ${a}`), f.info(`nickname: ${i}`), f.info(`guild nicknames: ${s}`), b()
+            f.info(`username: ${n}`), f.info(`global name: ${a}`), f.info(`nickname: ${i}`), f.info(`guild nicknames: ${s}`), v()
         })
     }), f.info("END Logging Group DM Channels\n"), f.info("START Logging DM Channels"), n.forEach(e => {
         let t = (0, i.m1)(e, h.default, m.A);
@@ -57,7 +57,7 @@ function v() {
         let s = a.username,
             l = g.Ay.getGlobalName(a),
             r = m.A.getNickname(a.id);
-        f.info(`username: ${s}`), f.info(`global name: ${l}`), f.info(`nickname: ${r}`), b()
+        f.info(`username: ${s}`), f.info(`global name: ${l}`), f.info(`nickname: ${r}`), v()
     }), f.info("END Logging DM Channels\n")
 }
 
@@ -77,7 +77,7 @@ function j() {
                 a = g.Ay.getGlobalName(t),
                 i = m.A.getNickname(t.id),
                 s = c.Ay.getNicknames(t.id);
-            f.info(`username: ${n}`), f.info(`global name: ${a}`), f.info(`nickname: ${i}`), f.info(`guild nicknames: ${s}`), b()
+            f.info(`username: ${n}`), f.info(`global name: ${a}`), f.info(`nickname: ${i}`), f.info(`guild nicknames: ${s}`), v()
         })
     }), f.info("END Logging Group DM Channels\n"), f.info("START Logging DM Channels"), n.forEach(e => {
         let t = (0, i.m1)(e, h.default, m.A);
@@ -88,7 +88,7 @@ function j() {
         let s = a.username,
             l = g.Ay.getGlobalName(a),
             r = m.A.getNickname(a.id);
-        f.info(`username: ${s}`), f.info(`global name: ${l}`), f.info(`nickname: ${r}`), b()
+        f.info(`username: ${s}`), f.info(`global name: ${l}`), f.info(`nickname: ${r}`), v()
     }), f.info("END Logging DM Channels\n")
 }
 
@@ -101,7 +101,7 @@ function A() {
             a = g.Ay.getGlobalName(t),
             i = m.A.getNickname(t.id),
             s = c.Ay.getNicknames(t.id);
-        f.info(`username: ${n}`), f.info(`global name: ${a}`), f.info(`nickname: ${i}`), f.info(`guild nicknames: ${s}`), b()
+        f.info(`username: ${n}`), f.info(`global name: ${a}`), f.info(`nickname: ${i}`), f.info(`guild nicknames: ${s}`), v()
     }), f.info("END Discord Friends\n")
 }
 
@@ -112,23 +112,23 @@ function C() {
         a = [],
         s = [];
     e.forEach(e => {
-        (0, p.fh)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? s.push(e) : n.push(e)
+        (0, x.fh)(e) ? t.push(e): e.isDM() ? a.push(e) : e.isMultiUserDM() ? s.push(e) : n.push(e)
     }), f.info("START Frecency"), f.info("Guilds"), t.forEach(e => {
         let t = o.A.getScoreWithoutFetchingLatest(e.id);
         f.info(`id: ${e.id} - name: ${e.name} - Frecency Score: ${t}`)
-    }), b(), f.info("DM Channels"), a.forEach(e => {
+    }), v(), f.info("DM Channels"), a.forEach(e => {
         let t = o.A.getScoreWithoutFetchingLatest(e.id);
         f.info(`id: ${e.id} - Frecency Score: ${t}`)
-    }), b(), f.info("Group DM Channels"), s.forEach(e => {
+    }), v(), f.info("Group DM Channels"), s.forEach(e => {
         let t = o.A.getScoreWithoutFetchingLatest(e.id);
         f.info(`id: ${e.id} - Frecency Score: ${t}`), f.info(`default name: ${(0,i.ks)(e,h.default,m.A)}`), f.info(`name: ${(0,i.m1)(e,h.default,m.A)}`)
-    }), b(), f.info("Guild Channels"), n.forEach(e => {
+    }), v(), f.info("Guild Channels"), n.forEach(e => {
         let t = o.A.getScoreWithoutFetchingLatest(e.id);
         f.info(`id: ${e.id} - Frecency Score: ${t}`)
-    }), b(), f.info("END Frecency\n")
+    }), v(), f.info("END Frecency\n")
 }
 
-function T() {
+function y() {
     let e = l.A.getProps();
     f.info("START Quick Switcher State"), f.info(`Query: ${e.query}`), e.results.forEach(e => {
         switch (f.info(`Result Type: ${e.type}`), e.type) {
@@ -154,10 +154,10 @@ function T() {
             case _.rD.USER:
                 f.info(`user id: ${e.record.id}`), f.info(`username: ${e.record.username}`), f.info(`global name: ${g.Ay.getGlobalName(e.record)}`), f.info(`nickname: ${m.A.getNickname(e.record.id)}`), f.info(`guild nicknames: ${c.Ay.getNicknames(e.record.id)}`)
         }
-        f.info(`frecency score: ${o.A.getScoreWithoutFetchingLatest(e.record.id)}`), b()
+        f.info(`frecency score: ${o.A.getScoreWithoutFetchingLatest(e.record.id)}`), v()
     }), f.info("END Quick Switcher State\n")
 }
-async function y() {
+async function T() {
     f.info("START User Search Worker State");
     let e = await a.A.requestDebugState();
     null == e ? f.info("Unable to get debug state from User Search Worker") : (Object.entries(JSON.parse(e.users)).forEach(e => {
@@ -165,7 +165,7 @@ async function y() {
         f.info(`id: ${t}`), f.info(`username: ${n.username}`), f.info(`global name: ${n.globalName}`), f.info(`nickname: ${n.friendNickname}`), Object.entries(n.nicknames).forEach(e => {
             let [t, n] = e;
             f.info(`guild id: ${t}`), f.info(`guild nickname: ${n}`)
-        }), b()
+        }), v()
     }), f.info("END User Search Worker State\n"))
 }
 async function S() {
@@ -174,7 +174,7 @@ async function S() {
     let t = JSON.parse(e.users),
         n = h.default.getUsers(),
         i = new Set(Object.keys(t)),
-        s = x.default.keys(n),
+        s = p.default.keys(n),
         l = [];
     return s.forEach(e => {
         i.has(e) || l.push(e)

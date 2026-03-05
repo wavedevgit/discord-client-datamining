@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(397927),
     m = n(793574),
     h = n(688810),
-    p = n(993719),
-    x = n(14059),
+    x = n(993719),
+    p = n(14059),
     g = n(362823),
     _ = n(980923),
     f = n(206018),
-    b = n(480890),
-    v = n(74848),
+    v = n(480890),
+    b = n(74848),
     j = n(77735),
     A = n(340913),
     C = n(277342),
-    T = n(430452),
-    y = n(383501),
+    y = n(430452),
+    T = n(383501),
     S = n(350535),
     E = n(42473),
     N = n(731854),
@@ -57,13 +57,13 @@ function D(e) {
         } = A.A.useConfig({
             location: "MicrophoneButton"
         }),
-        q = (0, o.bG)([T.Ay], () => T.Ay.getMode() === N.TB.PUSH_TO_TALK),
-        Q = (0, o.bG)([T.Ay], () => T.Ay.getSettings().modeOptions.shortcut),
-        Y = (0, o.bG)([x.A], () => x.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
-        J = (0, o.bG)([y.A], () => null != y.A.getChannelId()),
+        q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
+        Q = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
+        Y = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
+        J = (0, o.bG)([T.A], () => null != T.A.getChannelId()),
         {
             name: X
-        } = (0, v.x5)(N.oh.AUDIO_INPUT),
+        } = (0, b.x5)(N.oh.AUDIO_INPUT),
         {
             enabledInputProfiles: Z
         } = (0, j.d)({
@@ -99,7 +99,7 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Y && p.N(g.v.MUTE_TUTORIAL)
+            B(), Y && x.N(g.v.MUTE_TUTORIAL)
         }, [B, Y]);
     return (0, a.jsxs)(h.f5, {
         value: ea,
@@ -112,7 +112,7 @@ function D(e) {
                 return K(), (0, a.jsx)(h.f5, {
                     value: ea,
                     children: (0, a.jsx)(f.A, {
-                        onInteraction: (0, b.s)("AudioDeviceMenu", m.A.ACCOUNT),
+                        onInteraction: (0, v.s)("AudioDeviceMenu", m.A.ACCOUNT),
                         onClose: t,
                         maybeRenderPTTCheckbox: !0,
                         renderInputProfiles: Z.length > 0,
@@ -209,7 +209,7 @@ function D(e) {
                 src: w.A
             },
             onRequestClose: () => {
-                p.N(g.v.MUTE_TUTORIAL)
+                x.N(g.v.MUTE_TUTORIAL)
             },
             position: "top",
             title: I.intl.string(k.default.VG4zAf),

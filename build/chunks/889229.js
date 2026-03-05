@@ -1,6 +1,6 @@
 /** chunk id: 889229, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => o
+    A: () => T
 });
 var s = n(627968);
 n(64700);
@@ -9,7 +9,7 @@ var i = n(503698),
     r = n(397927),
     a = n(186261);
 
-function o(t) {
+function T(t) {
     let {
         tips: e,
         className: n,

@@ -1,15 +1,15 @@
-/** chunk id: 721879, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    b: () => o
+/** chunk id: 721879, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    b: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(25608),
-    a = i(703495),
-    r = i(985018),
-    u = i(536482);
-let o = (0, n.zZ)(l.X.ACTIVITY_PRIVACY_GAME_JOINING_CATEGORY, {
-    useTitle: () => r.intl.string(u.default["89YBr5"]),
-    buildLayout: () => [s.Q, a.j],
+var i = n(419954),
+    s = n(780964),
+    l = n(25608),
+    a = n(703495),
+    r = n(985018),
+    o = n(536482);
+let d = (0, i.zZ)(s.X.ACTIVITY_PRIVACY_GAME_JOINING_CATEGORY, {
+    useTitle: () => r.intl.string(o.default["89YBr5"]),
+    buildLayout: () => [l.Q, a.j],
     useSearchTerms: () => [r.intl.string(r.t.VOszPA)]
 })

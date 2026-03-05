@@ -1,39 +1,39 @@
 /** chunk id: 21316, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(321073);
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     r = n(197305),
     o = n(711014),
-    c = n(686423),
-    d = n(358172),
+    d = n(686423),
+    c = n(358172),
     u = n(985018),
     _ = n(853762);
-let m = function(e) {
+let g = function(e) {
     let {
         canAddBoosts: t,
         canApplyBoosts: n
-    } = e, m = (0, a.bG)([r.A], () => r.A.affinities), A = (0, a.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), g = s.useMemo(() => {
-        let e = m.slice(0, 3).map(e => e.guildId);
-        for (let t = 0; t < A.length && !(e.length >= 3); t++) {
-            let n = A[t];
+    } = e, g = (0, l.bG)([r.A], () => r.A.affinities), m = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
+        let e = g.slice(0, 3).map(e => e.guildId);
+        for (let t = 0; t < m.length && !(e.length >= 3); t++) {
+            let n = m[t];
             e.includes(n) || e.push(n)
         }
         return e
-    }, [m, A]);
-    return 0 === g.length ? null : (0, i.jsxs)("div", {
+    }, [g, m]);
+    return 0 === A.length ? null : (0, i.jsxs)("div", {
         className: _.iE,
-        children: [t && (0, i.jsx)(l.Heading, {
+        children: [t && (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             className: _.wx,
             children: u.intl.string(u.t.r90Wgo)
-        }), g.map(e => (0, i.jsx)(d.A, {
+        }), A.map(e => (0, i.jsx)(c.A, {
             className: _.ZS,
             guildId: e,
             boostingVariant: !0
-        }, e)), A.length > 3 && n && (0, i.jsx)(c.A, {})]
+        }, e)), m.length > 3 && n && (0, i.jsx)(d.A, {})]
     })
 }

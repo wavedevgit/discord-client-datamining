@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     o = n(735438),
     c = n(827734),
     d = n(397927),
@@ -24,9 +24,9 @@ function _(e) {
         onResize: n,
         onResizeEnd: i,
         maxWidth: l,
-        minWidth: r
-    } = e, a = (0, h.A)({
-        minDimension: r,
+        minWidth: a
+    } = e, r = (0, h.A)({
+        minDimension: a,
         maxDimension: l,
         resizableDomNodeRef: t,
         onElementResize: n,
@@ -35,7 +35,7 @@ function _(e) {
         throttleDuration: 16
     });
     return (0, s.jsx)("div", {
-        onMouseDown: a,
+        onMouseDown: r,
         className: p.Di
     })
 }
@@ -45,7 +45,7 @@ function f(e) {
         sidebarType: t,
         maxWidth: n,
         onWidthChange: i,
-        children: r,
+        children: a,
         floatingLayer: h
     } = e, g = l.useRef(null), f = function(e) {
         switch (e) {
@@ -67,28 +67,28 @@ function f(e) {
     }, [f]), I = (0, m.P)({
         maxWidth: n,
         minWidth: 450
-    }), N = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), S = (0, o.clamp)(x, 450, n), b = I ? S : S + N;
+    }), N = (0, d.rdh)(c.A.modules.chat.RESIZE_HANDLE_WIDTH), b = (0, o.clamp)(x, 450, n), S = I ? b : b + N;
     l.useEffect(() => {
-        i?.(S, I)
-    }, [S, i, I]);
+        i?.(b, I)
+    }, [b, i, I]);
     let T = h ?? l.Fragment;
     return (0, s.jsxs)(s.Fragment, {
         children: [!I && (0, s.jsx)("div", {
             style: {
-                minWidth: b
+                minWidth: S
             }
         }), (0, s.jsx)(T, {
             children: (0, s.jsxs)("div", {
-                className: a()(p.PA, {
+                className: r()(p.PA, {
                     [p.R]: !1
                 }),
                 children: [(0, s.jsx)("div", {
-                    className: a()(p.Uc, {
+                    className: r()(p.Uc, {
                         [p.DU]: I,
                         [p.iK]: !I
                     }),
                     style: {
-                        width: b
+                        width: S
                     }
                 }), !I && (0, s.jsx)(_, {
                     minWidth: 450,
@@ -98,13 +98,13 @@ function f(e) {
                     onResizeEnd: E
                 }), (0, s.jsx)("div", {
                     ref: g,
-                    className: a()(p.kL, {
+                    className: r()(p.kL, {
                         [p.DU]: I
                     }),
                     style: {
-                        width: S
+                        width: b
                     },
-                    children: r
+                    children: a
                 })]
             })
         })]

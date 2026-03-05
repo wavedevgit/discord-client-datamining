@@ -19,17 +19,17 @@ function h(e) {
         heading: n,
         subheading: s,
         children: h,
-        height: p,
-        className: x,
+        height: x,
+        className: p,
         contentClassName: g
-    } = e, _ = (0, d.GV)(), f = i.useRef(null), b = (0, o.zhh)({
+    } = e, _ = (0, d.GV)(), f = i.useRef(null), v = (0, o.zhh)({
         from: {
             transform: "translate3d(-110%, 0, 0)",
-            height: p
+            height: x
         },
         to: {
             transform: "translate3d(0, 0, 0)",
-            height: p
+            height: x
         },
         config: {
             mass: 1,
@@ -41,8 +41,8 @@ function h(e) {
         }
     });
     return (0, a.jsx)(r.animated.div, {
-        className: l()(m.kL, x),
-        style: b,
+        className: l()(m.kL, p),
+        style: v,
         children: (0, a.jsxs)("aside", {
             "aria-labelledby": _,
             className: m.Qs,

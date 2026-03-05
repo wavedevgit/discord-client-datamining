@@ -6,14 +6,14 @@ n.d(t, {
 var i = n(735438),
     s = n.n(i),
     l = n(311907),
-    r = n(73153),
-    a = n(71393);
+    a = n(73153),
+    r = n(71393);
 let o = null,
     c = {};
 class d extends l.Ay.Store {
     static displayName = "RegionStore";
     initialize() {
-        this.waitFor(a.A)
+        this.waitFor(r.A)
     }
     getOptimalRegion() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -44,7 +44,7 @@ class d extends l.Ay.Store {
         return null != e ? c[e] : o
     }
 }
-let u = new d(r.h, {
+let u = new d(a.h, {
     LOAD_REGIONS: function(e) {
         let t = s().sortBy(e.regions, e => e.name);
         null != e.guildId ? c[e.guildId] = t : o = t

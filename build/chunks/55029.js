@@ -4,28 +4,28 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(628965),
-    a = n(152056),
-    l = n(360619);
+    l = n(152056),
+    a = n(360619);
 
 function r(e, t) {
-    let n = (0, l.AC)(t),
-        r = a.A.useField("query"),
+    let n = (0, a.AC)(t),
+        r = l.A.useField("query"),
         o = (0, i.bG)([s.A], () => s.A.getSubsection()),
-        c = e.filter(e => null == e.predicate || e.predicate());
+        d = e.filter(e => null == e.predicate || e.predicate());
     if (null != n && n.size > 0) {
-        let e = c.filter(e => n.has(e.setting));
-        c = e.length > 0 ? e : c
+        let e = d.filter(e => n.has(e.setting));
+        d = e.length > 0 ? e : d
     }
     if (null != r && r.length > 0 && null == o) {
-        let e = c.find(e => e.title.toLowerCase() === r.toLowerCase());
+        let e = d.find(e => e.title.toLowerCase() === r.toLowerCase());
         if (null != e) return {
-            viewableTabs: c,
+            viewableTabs: d,
             filteredTab: e
         }
     }
-    let d = c.find(e => null != e && e.setting === o);
+    let c = d.find(e => null != e && e.setting === o);
     return {
-        viewableTabs: c,
-        filteredTab: d
+        viewableTabs: d,
+        filteredTab: c
     }
 }

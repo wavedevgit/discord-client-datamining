@@ -1,35 +1,24 @@
-/** chunk id: 501750, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    y: () => g
+/** chunk id: 501750, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    y: () => u
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(933297),
-    a = i(780964),
-    r = i(358776),
-    u = i(517235),
-    o = i(965304),
-    d = i(485079),
-    A = i(531525),
-    T = i(985018);
-let S = (0, l.t_)(a.X.NITRO_PANEL, {
-        usePredicate: () => !(0, r.dk)("LegacyNitroPanel"),
-        useTitle: () => T.intl.string(T.t.Ipxkog),
-        StronglyDiscouragedCustomComponent: u.A,
-        buildLayout: () => []
+var i = n(934551),
+    s = n(419954),
+    l = n(933297),
+    a = n(780964),
+    r = n(965304),
+    o = n(485079),
+    d = n(985018);
+let c = (0, s.t_)(a.X.NITRO_PANEL, {
+        useTitle: () => d.intl.string(d.t.Ipxkog),
+        buildLayout: () => [o.r]
     }),
-    E = (0, l.t_)(a.X.NITRO_PANEL, {
-        usePredicate: () => (0, r.dk)("NitroPanel"),
-        useTitle: () => T.intl.string(T.t.Ipxkog),
-        buildLayout: () => [d.r]
-    }),
-    g = (0, l.i4)(a.X.NITRO_SIDEBAR_ITEM, {
-        useTitle: () => T.intl.string(T.t.Ipxkog),
-        getLegacySearchKey: () => (0, r.WJ)("NitroPanel") ? void 0 : A.H.PREMIUM,
-        icon: n.NitroWheelIcon,
+    u = (0, s.i4)(a.X.NITRO_SIDEBAR_ITEM, {
+        useTitle: () => d.intl.string(d.t.Ipxkog),
+        icon: i.NitroWheelIcon,
         trailing: {
-            type: s.Si.STRONGLY_DISCOURAGED_CUSTOM,
-            useCustomDecoration: (t, e) => (0, o.e)(e)
+            type: l.Si.STRONGLY_DISCOURAGED_CUSTOM,
+            useCustomDecoration: (e, t) => (0, r.e)(t)
         },
-        buildLayout: () => (0, r.WJ)("NitroPanel") ? [E] : [S]
+        buildLayout: () => [c]
     })

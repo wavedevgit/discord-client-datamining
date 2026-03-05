@@ -1,12 +1,12 @@
-/** chunk id: 613539, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 613539, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     b: () => r
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(517235),
-    a = i(985018);
-let r = (0, n.E2)(l.X.NITRO_SETTING, {
-    Component: s.A,
+var i = n(419954),
+    s = n(780964),
+    l = n(517235),
+    a = n(985018);
+let r = (0, i.E2)(s.X.NITRO_SETTING, {
+    Component: l.A,
     useSearchTerms: () => [a.intl.string(a.t.Ipxkog)]
 })

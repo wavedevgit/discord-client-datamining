@@ -1,21 +1,21 @@
 /** chunk id: 82186, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => u
+    E: () => c
 }), n(667532);
 var r = n(627968);
 n(64700);
 var a = n(158954),
     i = n(963935),
-    s = n(894858),
-    l = n(985018),
+    l = n(894858),
+    s = n(985018),
     o = n(621580);
 
-function c(e) {
+function u(e) {
     let {
         node: t,
         isLast: n
-    } = e, i = t.useTitle(), l = t.useBadge?.(), c = (0, r.jsxs)(a.BJc, {
+    } = e, i = t.useTitle(), s = t.useBadge?.(), u = (0, r.jsxs)(a.BJc, {
         direction: "horizontal",
         align: "center",
         gap: "xs",
@@ -25,7 +25,7 @@ function c(e) {
             color: n ? "text-default" : void 0,
             className: o.b,
             children: i
-        }), n && null != l && l, !n && (0, r.jsx)(a.EYj, {
+        }), n && null != s && s, !n && (0, r.jsx)(a.EYj, {
             variant: "text-md/normal",
             color: "interactive-text-default",
             children: "/"
@@ -34,19 +34,19 @@ function c(e) {
     return (0, r.jsx)("li", {
         "aria-current": n ? "page" : void 0,
         className: o.QF,
-        children: n ? c : (0, r.jsx)(a.DUT, {
+        children: n ? u : (0, r.jsx)(a.DUT, {
             onClick: () => {
-                s.A.setState({
+                l.A.setState({
                     requestedTargetKey: t.key
                 })
             },
             className: o.vk,
-            children: c
+            children: u
         })
     })
 }
 
-function u(e) {
+function c(e) {
     let {
         node: t
     } = e, n = function(e) {
@@ -55,13 +55,13 @@ function u(e) {
         return t
     }(t);
     return (0, r.jsx)("nav", {
-        "aria-label": l.intl.string(l.t["bM+M/m"]),
+        "aria-label": s.intl.string(s.t["bM+M/m"]),
         className: o.m7,
         children: (0, r.jsx)(a.BJc, {
             direction: "horizontal",
             role: "list",
             className: o.jD,
-            children: n.map((e, t) => (0, r.jsx)(c, {
+            children: n.map((e, t) => (0, r.jsx)(u, {
                 node: e,
                 isLast: t === n.length - 1
             }, e.key))

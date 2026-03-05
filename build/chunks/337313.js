@@ -1,34 +1,34 @@
-/** chunk id: 337313, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    S: () => S,
-    T: () => E
+/** chunk id: 337313, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    S: () => g,
+    T: () => m
 });
-var n = i(311907),
-    l = i(233545),
-    s = i(419954),
-    a = i(430452),
-    r = i(412780),
-    u = i(287809),
-    o = i(837921),
-    d = i(780964),
-    A = i(731854),
-    T = i(985018);
+var i = n(311907),
+    s = n(233545),
+    l = n(419954),
+    a = n(430452),
+    r = n(412780),
+    o = n(287809),
+    d = n(837921),
+    c = n(780964),
+    u = n(731854),
+    _ = n(985018);
 
-function S() {
-    return (0, n.bG)([u.default, a.Ay], () => {
-        let t = u.default.getCurrentUser(),
-            e = t?.isStaff() ?? !1,
-            i = "canary" === o.Ay.releaseChannel || "development" === o.Ay.releaseChannel,
-            n = a.Ay.supports(A.O5.CONNECTION_REPLAY);
-        return e && i && n
+function g() {
+    return (0, i.bG)([o.default, a.Ay], () => {
+        let e = o.default.getCurrentUser(),
+            t = e?.isStaff() ?? !1,
+            n = "canary" === d.Ay.releaseChannel || "development" === d.Ay.releaseChannel,
+            i = a.Ay.supports(u.O5.CONNECTION_REPLAY);
+        return t && n && i
     })
 }
-let E = (0, s.zD)(d.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
-    useTitle: () => T.intl.string(T.t.U4FgFK),
-    useSubtitle: () => T.intl.string(T.t.Lm72RU),
+let m = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
+    useTitle: () => _.intl.string(_.t.U4FgFK),
+    useSubtitle: () => _.intl.string(_.t.Lm72RU),
     useValue: function() {
-        return (0, n.bG)([r.Ay], () => r.Ay.shouldRecordNextConnection())
+        return (0, i.bG)([r.Ay], () => r.Ay.shouldRecordNextConnection())
     },
-    setValue: l.Et,
-    usePredicate: S
+    setValue: s.Et,
+    usePredicate: g
 })

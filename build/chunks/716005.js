@@ -1,19 +1,19 @@
-/** chunk id: 716005, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    g: () => u
+/** chunk id: 716005, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    g: () => o
 });
-var n = i(311907),
-    l = i(926919),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.zD)(r.X.FORCE_CANARY_API, {
+var i = n(311907),
+    s = n(926919),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.zD)(r.X.FORCE_CANARY_API, {
     useTitle: () => "Force Canary API",
     useSubtitle: () => "Routes all API requests to Canary instances.",
-    useValue: () => (0, n.bG)([a.default], () => a.default.isForcedCanary),
-    setValue: t => {
-        (0, l.x)({
-            canary: t
+    useValue: () => (0, i.bG)([a.default], () => a.default.isForcedCanary),
+    setValue: e => {
+        (0, s.x)({
+            canary: e
         })
     }
 })

@@ -1,57 +1,57 @@
-/** chunk id: 450481, original params: t,e,a (module,exports,require) **/
-a.d(e, {
-    p: () => d
+/** chunk id: 450481, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    p: () => c
 });
-var n = a(64700),
-    l = a(575593),
-    r = a(631670),
-    s = a(587600),
-    i = a(207803),
+var t = a(64700),
+    i = a(575593),
+    l = a(631670),
+    r = a(587600),
+    s = a(207803),
     o = a(993408),
-    u = a(442759),
-    c = a(985018);
-let d = t => {
+    d = a(442759),
+    u = a(985018);
+let c = e => {
     let {
-        product: e,
-        onSuccess: d,
-        onError: h
-    } = t, [p, v] = n.useState(!1), {
-        firstAvatarDecoration: g,
-        firstProfileEffect: A,
-        firstNameplate: C
-    } = (0, u.f5)(e), k = (0, o.aw)(e) ? c.intl.string(c.t.tf1ZZ4) : e.type === l.R.AVATAR_DECORATION ? c.intl.string(c.t.zOA4ax) : e.type === l.R.NAMEPLATE ? c.intl.string(c.t.gOzMvx) : c.intl.string(c.t.SWm2ai);
+        product: n,
+        onSuccess: c,
+        onError: p
+    } = e, [g, v] = t.useState(!1), {
+        firstAvatarDecoration: h,
+        firstProfileEffect: m,
+        firstNameplate: A
+    } = (0, d.f5)(n), y = (0, o.aw)(n) ? u.intl.string(u.t.tf1ZZ4) : n.type === i.R.AVATAR_DECORATION ? u.intl.string(u.t.zOA4ax) : n.type === i.R.NAMEPLATE ? u.intl.string(u.t.gOzMvx) : u.intl.string(u.t.SWm2ai);
     return {
-        handleUseNow: n.useCallback(async () => {
+        handleUseNow: t.useCallback(async () => {
             v(!0);
-            let t = {};
+            let e = {};
             try {
-                if (null != g && (t.avatarDecoration = g), null != A) {
-                    let t = (0, s.yX)({
-                        pendingProfileEffect: A
+                if (null != h && (e.avatarDecoration = h), null != m) {
+                    let e = (0, r.yX)({
+                        pendingProfileEffect: m
                     });
-                    await (0, i.gi)(t)
+                    await (0, s.gi)(e)
                 }
-                null != C && (t.nameplate = C), Object.keys(t).length > 0 && await (0, r._L)(t);
+                null != A && (e.nameplate = A), Object.keys(e).length > 0 && await (0, l._L)(e);
                 {
                     let {
-                        ToastPosition: t,
-                        ToastType: e,
-                        createToast: n,
-                        popToast: l,
-                        showToast: r
+                        ToastPosition: e,
+                        ToastType: n,
+                        createToast: t,
+                        popToast: i,
+                        showToast: l
                     } = await Promise.resolve().then(a.bind(a, 397927));
-                    l(), r(n(k, e.MESSAGE, {
+                    i(), l(t(y, n.MESSAGE, {
                         duration: 6e3,
-                        position: t.TOP
+                        position: e.TOP
                     }))
                 }
-                d?.()
-            } catch (t) {
-                h?.(t)
+                c?.()
+            } catch (e) {
+                p?.(e)
             } finally {
                 v(!1)
             }
-        }, [g, A, C, d, k, h]),
-        isApplying: p
+        }, [h, m, A, c, y, p]),
+        isApplying: g
     }
 }

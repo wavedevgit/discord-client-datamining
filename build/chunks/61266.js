@@ -1,35 +1,35 @@
-/** chunk id: 61266, original params: e,t,r (module,exports,require) **/
+/** chunk id: 61266, original params: e,t,a (module,exports,require) **/
 "use strict";
-r.d(t, {
-    A: () => m
+a.d(t, {
+    A: () => f
 });
-var n = r(627968),
-    a = r(64700),
-    s = r(503698),
-    l = r.n(s),
-    i = r(46054),
-    c = r(465364),
-    o = r(207963),
-    u = r(647901),
-    d = r(560438),
-    _ = r(483496),
-    h = r(206314);
+var n = a(627968),
+    r = a(64700),
+    i = a(503698),
+    o = a.n(i),
+    s = a(46054),
+    l = a(465364),
+    c = a(207963),
+    _ = a(647901),
+    d = a(560438),
+    u = a(483496),
+    p = a(206314);
 
-function m(e) {
+function f(e) {
     let t, {
-            content: r,
-            className: s
+            content: a,
+            className: i
         } = e,
-        m = (t = (0, o.jc)(), (0, a.useMemo)(() => {
+        f = (t = (0, c.jc)(), (0, r.useMemo)(() => {
             let e;
-            return null === t ? null : (e = null != t.message ? (0, c.ko)(t.message, d.l) : (0, c.Le)({
+            return null === t ? null : (e = null != t.message ? (0, l.ko)(t.message, d.l) : (0, l.Le)({
                 channelId: t.channelId,
                 renderOptions: d.l
-            }), i.A.parse(r, !0, e))
-        }, [r, t])),
-        p = (0, u.X)();
+            }), s.A.parse(a, !0, e))
+        }, [a, t])),
+        m = (0, _.X)();
     return (0, n.jsx)("div", {
-        className: l()(s, h.PT, _.T, p.className),
-        children: m
+        className: o()(i, p.PT, u.T, m.className),
+        children: f
     })
 }

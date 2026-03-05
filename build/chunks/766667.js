@@ -1,53 +1,53 @@
-/** chunk id: 766667, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    p: () => T
+/** chunk id: 766667, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    p: () => _
 });
-var n = i(627968),
-    l = i(64700),
-    s = i(311907),
-    a = i(397927),
-    r = i(274372),
-    u = i(399925),
-    o = i(419954),
-    d = i(780964),
-    A = i(985018);
-let T = (0, o.E2)(d.X.CLIPS_PHRASES, {
-    useSearchTerms: () => [A.intl.string(A.t.JIze0o)],
-    usePredicate: () => (0, s.bG)([r.A], () => r.A.getSettings().clipSignals).enablePhraseSignals,
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    a = n(397927),
+    r = n(274372),
+    o = n(399925),
+    d = n(419954),
+    c = n(780964),
+    u = n(985018);
+let _ = (0, d.E2)(c.X.CLIPS_PHRASES, {
+    useSearchTerms: () => [u.intl.string(u.t.JIze0o)],
+    usePredicate: () => (0, l.bG)([r.A], () => r.A.getSettings().clipSignals).enablePhraseSignals,
     Component: function() {
-        let t = (0, s.bG)([r.A], () => r.A.getSettings().autoClipPhrases),
-            [e, i] = l.useState(""),
-            o = l.useMemo(() => t.map(t => ({
-                id: t,
-                label: t
-            })), [t]),
-            d = l.useCallback(t => {
-                i(t)
+        let e = (0, l.bG)([r.A], () => r.A.getSettings().autoClipPhrases),
+            [t, n] = s.useState(""),
+            d = s.useMemo(() => e.map(e => ({
+                id: e,
+                label: e
+            })), [e]),
+            c = s.useCallback(e => {
+                n(e)
             }, []),
-            T = l.useCallback(n => {
-                if ("Enter" === n.key || "," === n.key) {
-                    n.preventDefault();
-                    let l = e.trim().toLowerCase();
-                    l.length > 0 && !t.includes(l) && (u.pM([...t, l]), i(""))
-                } else if ("Backspace" === n.key && "" === e && t.length > 0) {
-                    let e = t.slice(0, -1);
-                    u.pM(e)
+            _ = s.useCallback(i => {
+                if ("Enter" === i.key || "," === i.key) {
+                    i.preventDefault();
+                    let s = t.trim().toLowerCase();
+                    s.length > 0 && !e.includes(s) && (o.pM([...e, s]), n(""))
+                } else if ("Backspace" === i.key && "" === t && e.length > 0) {
+                    let t = e.slice(0, -1);
+                    o.pM(t)
                 }
-            }, [e, t]),
-            S = l.useCallback(e => {
-                let i = Array.from(e)[0],
-                    n = t.filter(t => t !== i);
-                u.pM(n)
-            }, [t]);
-        return (0, n.jsx)(a.ksK, {
-            value: e,
-            onChange: d,
-            onKeyDown: T,
-            placeholder: A.intl.string(A.t.zYUZpt),
-            leading: o.length > 0 ? {
+            }, [t, e]),
+            g = s.useCallback(t => {
+                let n = Array.from(t)[0],
+                    i = e.filter(e => e !== n);
+                o.pM(i)
+            }, [e]);
+        return (0, i.jsx)(a.ksK, {
+            value: t,
+            onChange: c,
+            onKeyDown: _,
+            placeholder: u.intl.string(u.t.zYUZpt),
+            leading: d.length > 0 ? {
                 type: "tags",
-                items: o,
-                onRemove: S
+                items: d,
+                onRemove: g
             } : void 0
         })
     }

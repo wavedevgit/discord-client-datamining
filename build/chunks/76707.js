@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(397927),
+    l = n.n(s),
+    a = n(397927),
     r = n(296388);
 let o = e => {
     let {
@@ -14,21 +14,21 @@ let o = e => {
         cardVariantStyleInfo: n,
         description: s,
         titleClassName: o,
-        subtitle: c,
-        subtitleClassName: d,
+        subtitle: d,
+        subtitleClassName: c,
         isOverlay: u
-    } = e, _ = null != c && !(u && n?.subtitle?.hideOnOverlay === !0), m = null != s;
+    } = e, _ = null != d && !(u && n?.subtitle?.hideOnOverlay === !0), g = null != s;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(l.Heading, {
+        children: [(0, i.jsx)(a.Heading, {
             variant: "heading-xl/extrabold",
-            className: a()(r.Jf, o),
+            className: l()(r.Jf, o),
             children: t
-        }), (_ || m) && (0, i.jsxs)("div", {
-            className: d,
-            children: [_ && (0, i.jsx)(l.Text, {
+        }), (_ || g) && (0, i.jsxs)("div", {
+            className: c,
+            children: [_ && (0, i.jsx)(a.Text, {
                 variant: n?.subtitle?.textVariant ?? "text-sm/normal",
-                children: c
-            }), m && (0, i.jsxs)(l.Text, {
+                children: d
+            }), g && (0, i.jsxs)(a.Text, {
                 variant: n?.description?.textVariant ?? "text-sm/normal",
                 children: [_ && (0, i.jsx)("br", {}), s]
             })]

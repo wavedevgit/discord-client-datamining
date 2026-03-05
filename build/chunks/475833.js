@@ -1,22 +1,22 @@
 /** chunk id: 475833, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(397927),
+    l = n.n(s),
+    a = n(397927),
     r = n(427262),
     o = n(585665);
-let c = e => {
+let d = e => {
     let {
         user: t,
         fill: n,
         hideUserTag: s
-    } = e, c = `\xa0(@${r.Ay.getUserTag(t,{decoration:"never"})})`;
-    return (0, i.jsxs)(l.Text, {
-        className: a()([{
+    } = e, d = `\xa0(@${r.Ay.getUserTag(t,{decoration:"never"})})`;
+    return (0, i.jsxs)(a.Text, {
+        className: l()([{
             [o.GS]: n
         }]),
         variant: "text-md/medium",
@@ -25,7 +25,7 @@ let c = e => {
             children: r.Ay.getName(t)
         }), s ? null : (0, i.jsx)("span", {
             className: o.D2,
-            children: c
+            children: d
         })]
     })
 }

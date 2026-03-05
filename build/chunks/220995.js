@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(380278),
+    a = n.n(l),
+    r = n(380278),
     o = n(110259),
     c = n(311907),
     d = n(435371),
@@ -25,8 +25,8 @@ var i = n(627968),
 n(281405);
 var I = n(985018),
     N = n(430023),
-    S = n(77615);
-let b = e => 1 - Math.pow(1 - e, 4);
+    b = n(77615);
+let S = e => 1 - Math.pow(1 - e, 4);
 
 function T(e) {
     let {
@@ -84,7 +84,7 @@ function T(e) {
             },
             config: {
                 duration: 200,
-                easing: b,
+                easing: S,
                 clamp: !0
             }
         })),
@@ -136,27 +136,27 @@ function T(e) {
                 onClick: t,
                 ...n
             } = e;
-            return (0, i.jsx)(a.animated.div, {
+            return (0, i.jsx)(r.animated.div, {
                 className: N.lY,
                 style: W,
                 children: (0, i.jsx)(u.DUT, {
                     innerRef: T,
-                    className: r()({
+                    className: a()({
                         [N.vk]: !U
-                    }, S.q7, S.L9, S.vk),
+                    }, b.q7, b.L9, b.vk),
                     "aria-disabled": U,
                     "aria-label": I.intl.string(I.t.F3qiJr),
                     onClick: K,
                     ...n,
                     children: (0, i.jsxs)("div", {
-                        className: r()(N.Qs, S.Qs),
+                        className: a()(N.Qs, b.Qs),
                         children: [(0, i.jsxs)("div", {
                             className: N.R4,
                             style: {
                                 "--custom-voice-invite-suggestions-timer-size": 24
                             },
                             children: [(0, i.jsxs)("svg", {
-                                className: r()(N.O1, {
+                                className: a()(N.O1, {
                                     [N.Ft]: H
                                 }),
                                 viewBox: "0 0 24 24",
@@ -173,7 +173,7 @@ function T(e) {
                                 width: 14,
                                 height: 14,
                                 color: "currentColor",
-                                className: r()(N.Hk, N.Kk)
+                                className: a()(N.Hk, N.Kk)
                             })]
                         }), (0, i.jsx)(d.m_, {
                             text: I.intl.string(I.t["EE+P0H"]),

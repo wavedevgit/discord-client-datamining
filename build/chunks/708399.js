@@ -1,21 +1,21 @@
-/** chunk id: 708399, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    I: () => d
+/** chunk id: 708399, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    I: () => c
 });
-var n = i(419954),
-    l = i(975571),
-    s = i(253932),
-    a = i(780964),
-    r = i(542877),
-    u = i(652215),
-    o = i(985018);
-let d = (0, n.zD)(a.X.CONTENT_AND_SOCIAL_ALLOW_GAME_FRIEND_DMS_SETTING, {
-    useTitle: () => o.intl.string(o.t.XpBObB),
-    useSubtitle: () => o.intl.format(o.t.oZsHTD, {
-        helpdeskArticle: l.A.getArticleURL(u.MVz.SLAYER_GAME_FRIENDS)
+var i = n(419954),
+    s = n(975571),
+    l = n(253932),
+    a = n(780964),
+    r = n(542877),
+    o = n(652215),
+    d = n(985018);
+let c = (0, i.zD)(a.X.CONTENT_AND_SOCIAL_ALLOW_GAME_FRIEND_DMS_SETTING, {
+    useTitle: () => d.intl.string(d.t.XpBObB),
+    useSubtitle: () => d.intl.format(d.t.oZsHTD, {
+        helpdeskArticle: s.A.getArticleURL(o.MVz.SLAYER_GAME_FRIENDS)
     }),
-    useSearchTerms: () => [o.intl.string(o.t["Uv/eTx"])],
-    useValue: () => s.Zk.useSetting(),
-    setValue: t => s.Zk.updateSetting(t),
+    useSearchTerms: () => [d.intl.string(d.t["Uv/eTx"])],
+    useValue: () => l.Zk.useSetting(),
+    setValue: e => l.Zk.updateSetting(e),
     usePredicate: r.K
 })

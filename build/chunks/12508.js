@@ -1,26 +1,26 @@
-/** chunk id: 12508, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    n: () => T
+/** chunk id: 12508, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    n: () => _
 });
-var n = i(64700),
-    l = i(665260),
-    s = i(171316),
-    a = i(419954),
-    r = i(115063),
-    u = i(253932),
-    o = i(780964),
-    d = i(652215),
-    A = i(985018);
-let T = (0, a.zD)(o.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
-    useTitle: () => A.intl.string(A.t.qsMfsH),
+var i = n(64700),
+    s = n(665260),
+    l = n(171316),
+    a = n(419954),
+    r = n(115063),
+    o = n(253932),
+    d = n(780964),
+    c = n(652215),
+    u = n(985018);
+let _ = (0, a.zD)(d.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
+    useTitle: () => u.intl.string(u.t.qsMfsH),
     useValue: () => {
-        let t = u.FA.useSetting(),
-            e = n.useMemo(() => (0, r.Lx)(t), [t]);
-        return e.all || e.mutualGuilds
+        let e = o.FA.useSetting(),
+            t = i.useMemo(() => (0, r.Lx)(e), [e]);
+        return t.all || t.mutualGuilds
     },
-    setValue: t => {
-        let e = u.FA.getSetting();
-        u.FA.updateSetting(t ? l.UI(e, d.dzt.MUTUAL_GUILDS) : l.iE(e, d.dzt.MUTUAL_GUILDS, d.dzt.NO_RELATION))
+    setValue: e => {
+        let t = o.FA.getSetting();
+        o.FA.updateSetting(e ? s.UI(t, c.dzt.MUTUAL_GUILDS) : s.iE(t, c.dzt.MUTUAL_GUILDS, c.dzt.NO_RELATION))
     },
-    useDisabled: () => (0, s.uM)()
+    useDisabled: () => (0, l.uM)()
 })

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(915618),
     _ = n(361157),
     m = n(798817),
-    p = n(696016),
-    g = n(985018);
+    g = n(696016),
+    p = n(985018);
 
 function E(e) {
     let {
@@ -50,7 +50,7 @@ function E(e) {
                 ...t
             })
         }, {
-            modalKey: p.nm
+            modalKey: g.nm
         })
     }
     return (r.useEffect(() => (S ? O() : L(), () => L()), [S, O, L]), f && I) ? (0, i.jsxs)(i.Fragment, {
@@ -64,7 +64,7 @@ function E(e) {
                 className: E,
                 icon: a.xgA,
                 showBadge: C,
-                tooltip: g.intl.string(g.t.MXaLEM),
+                tooltip: p.intl.string(p.t.MXaLEM),
                 onClick: R
             })
         })]

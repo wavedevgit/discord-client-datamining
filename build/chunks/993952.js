@@ -8,8 +8,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(284009),
-    a = n.n(r),
+    a = n(284009),
+    r = n.n(a),
     o = n(311907),
     c = n(397927),
     d = n(698441),
@@ -25,8 +25,8 @@ function _(e) {
         guild: t,
         channel: s,
         streamUserId: l,
-        applicationId: r,
-        appContext: a,
+        applicationId: a,
+        appContext: r,
         exitFullScreen: o,
         analyticsLocation: d,
         guildScheduledEvent: u,
@@ -41,14 +41,14 @@ function _(e) {
             guild: t,
             channel: s,
             streamUserId: l,
-            applicationId: r,
+            applicationId: a,
             analyticsLocation: d,
             source: h ?? (s.isGuildStageVoice() ? m.PE1.STAGE_CHANNEL : m.PE1.STREAM_INVITE),
             guildScheduledEvent: u
         })
     }, {
         modalKey: "stream-invite-modal",
-        contextKey: a === m.BRT.POPOUT ? c.KX8 : c.SYi
+        contextKey: r === m.BRT.POPOUT ? c.KX8 : c.SYi
     })
 }
 
@@ -57,13 +57,13 @@ function f(e) {
         stream: t,
         applicationId: n,
         channel: s,
-        exitFullScreen: r,
+        exitFullScreen: a,
         appContext: f,
         analyticsLocation: x,
         className: C,
         size: E = "sm"
-    } = e, I = s?.getGuildId(), N = s?.id, S = (0, o.bG)([h.A], () => null != I ? h.A.getGuild(I) : null, [I]), b = (0, o.bG)([d.Ay], () => d.Ay.getActiveEventByChannel(N), [N]);
-    if (!(null != S && null != s && A.A.can(m.xBc.CREATE_INSTANT_INVITE, s))) return null;
+    } = e, I = s?.getGuildId(), N = s?.id, b = (0, o.bG)([h.A], () => null != I ? h.A.getGuild(I) : null, [I]), S = (0, o.bG)([d.Ay], () => d.Ay.getActiveEventByChannel(N), [N]);
+    if (!(null != b && null != s && A.A.can(m.xBc.CREATE_INSTANT_INVITE, s))) return null;
     let T = p.intl.string(p.t.VINpSK);
     return null != t ? T = p.intl.string(p.t["6VQaqd"]) : null != n && (T = p.intl.string(p.t["OzOM/q"])), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
@@ -73,15 +73,15 @@ function f(e) {
                 variant: "secondary",
                 text: T,
                 onClick: () => {
-                    a()(null != S, "guild cannot be null"), a()(null != s, "channel cannot be null"), _({
-                        guild: S,
+                    r()(null != b, "guild cannot be null"), r()(null != s, "channel cannot be null"), _({
+                        guild: b,
                         channel: s,
                         streamUserId: t?.ownerId,
                         applicationId: n,
                         appContext: f,
-                        exitFullScreen: r,
+                        exitFullScreen: a,
                         analyticsLocation: x,
-                        guildScheduledEvent: b,
+                        guildScheduledEvent: S,
                         source: m.PE1.VOICE_CHANNEL_UI_INVITE_BUTTON
                     })
                 }
@@ -91,9 +91,9 @@ function f(e) {
             stream: t,
             appContext: f,
             className: l()(C, g.gb),
-            exitFullScreen: r,
+            exitFullScreen: a,
             analyticsLocation: x,
-            guildScheduledEvent: b
+            guildScheduledEvent: S
         })]
     })
 }

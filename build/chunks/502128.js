@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(320697),
     m = n(394953),
     h = n(187698),
-    p = n(661251);
-let x = [{
+    x = n(661251);
+let p = [{
         key: "channelName",
         cellClassName: s()(h.Hn, h.HA),
         render(e) {
@@ -93,18 +93,18 @@ function _() {
         hasPreloaded: u.A.hasPreloaded,
         hasMoreToLoad: u.A.hasMoreToLoad,
         isLoadingComplete: u.A.isLoadingComplete
-    })), b = (0, l.bG)([u.A], () => u.A.currentRequestAnalyticsPayload), v = (0, l.cf)([u.A], () => u.A.getChannelInfoMap()), j = (0, l.cf)([c.A], () => {
+    })), v = (0, l.bG)([u.A], () => u.A.currentRequestAnalyticsPayload), b = (0, l.cf)([u.A], () => u.A.getChannelInfoMap()), j = (0, l.cf)([c.A], () => {
         let e = {};
-        return Object.entries(v).forEach(t => {
+        return Object.entries(b).forEach(t => {
             let [n] = t, a = c.A.getChannel(n);
             e[n] = a ?? null
         }), e
     }), A = (0, l.cf)([c.A], () => t.reduce((e, t) => {
         let n = c.A.getChannel(t);
         return e[t] = n ?? null, e
-    }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), T = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
+    }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), y = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
     return (0, a.jsx)("div", {
-        className: p.nd,
+        className: x.nd,
         children: (0, a.jsxs)(r.IpV, {
             className: h.Qs,
             children: [(0, a.jsxs)("div", {
@@ -126,7 +126,7 @@ function _() {
                     },
                     children: (0, a.jsx)(r.dOG, {
                         label: "Nav On Click",
-                        checked: !!T,
+                        checked: !!y,
                         onChange: e => {
                             o.h.dispatch({
                                 type: "NOTIFICATIONS_INBOX_SET_DEV_OVERRIDES",
@@ -146,7 +146,7 @@ function _() {
                 }), (0, a.jsxs)("div", {
                     children: ["Unread Channel Count: ", t.length]
                 }), (0, a.jsx)(d.A, {
-                    columns: x,
+                    columns: p,
                     data: Object.entries(A).map(e => {
                         let [t, n] = e;
                         return {
@@ -171,17 +171,17 @@ function _() {
                 }), (0, a.jsxs)("div", {
                     children: ["Is Loading Complete: ", f ? "✅" : "❌"]
                 }), (0, a.jsxs)("div", {
-                    children: ["Last Loading Trigger: ", b?.loadingTrigger]
+                    children: ["Last Loading Trigger: ", v?.loadingTrigger]
                 })]
             }), (0, a.jsxs)("div", {
                 children: [(0, a.jsx)(r.Heading, {
                     variant: "heading-lg/semibold",
                     children: "Channel Info Map"
                 }), (0, a.jsxs)("div", {
-                    children: ["Total Channels: ", Object.keys(v).length]
+                    children: ["Total Channels: ", Object.keys(b).length]
                 }), (0, a.jsx)(d.A, {
                     columns: g,
-                    data: Object.entries(v).map(e => {
+                    data: Object.entries(b).map(e => {
                         let [t, n] = e;
                         return {
                             key: t,

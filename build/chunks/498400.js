@@ -4,93 +4,93 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(311907),
     o = n(397927),
-    c = n(73153),
-    d = n(384904),
+    d = n(73153),
+    c = n(384904),
     u = n(73825),
     _ = n(974544),
-    m = n(107834),
-    A = n(793574),
-    g = n(688810),
+    g = n(107834),
+    m = n(793574),
+    A = n(688810),
     h = n(86379),
-    x = n(160946),
-    p = n(459793),
+    p = n(160946),
+    x = n(459793),
     E = n(726649),
-    C = n(611924),
-    T = n(351906),
-    S = n(287809),
+    T = n(611924),
+    S = n(351906),
+    C = n(287809),
     I = n(295405),
     f = n(166403),
-    N = n(954571),
-    b = n(474090),
-    j = n(560138),
-    v = n(694080),
+    b = n(954571),
+    N = n(474090),
+    v = n(560138),
+    j = n(694080),
     O = n(170887),
     R = n(553081),
     y = n(422936),
     P = n(234419),
     L = n(558533),
     D = n(788868),
-    M = n(652215),
-    G = n(615434);
+    G = n(652215),
+    M = n(615434);
 let U = function(e) {
     let {
         entrypoint: t = D.Mf.UserSettings
     } = e;
-    (0, C.P)(E.b);
+    (0, T.P)(E.b);
     let n = (0, h.H)(),
         {
-            sourceAnalyticsLocations: a,
+            sourceAnalyticsLocations: l,
             analyticsLocations: U
-        } = (0, g.Ay)(A.A.PREMIUM_MARKETING),
+        } = (0, A.Ay)(m.A.PREMIUM_MARKETING),
         k = (0, r.bG)([f.A], () => f.A.hasFetchedSubscriptions()),
         V = (0, r.bG)([I.A], () => I.A.hasFetchedPaymentSources),
-        w = (0, r.bG)([S.default], () => S.default.getCurrentUser()),
+        w = (0, r.bG)([C.default], () => C.default.getCurrentUser()),
         H = w?.id,
         B = (0, P.V)(),
         Y = (0, y.O)(),
-        F = (0, x.Y)(D.T7),
-        [z, W] = s.useState(!0),
-        K = s.useRef(0),
-        Z = (0, b.YE)(w, D.PremiumTypes.TIER_2),
-        q = (0, O.A)({
+        F = (0, p.Y)(D.T7),
+        [z, X] = s.useState(!0),
+        W = s.useRef(0),
+        K = (0, N.YE)(w, D.PremiumTypes.TIER_2),
+        Z = (0, O.A)({
             location: "PremiumHomePage"
         }),
-        X = (0, r.bG)([j.A], () => j.A.hasFetched);
+        q = (0, r.bG)([v.A], () => v.A.hasFetched);
     s.useEffect(() => {
-        X || d.xG()
-    }, [X]), s.useEffect(() => {
-        c.h.wait(async () => {
+        q || c.xG()
+    }, [q]), s.useEffect(() => {
+        d.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([d.hP(), d.$o(), (0, u.zS)(null, null, M.tF5.DISCOVERY)]), K.current = Date.now() - e, W(!1)
+            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, G.tF5.DISCOVERY)]), W.current = Date.now() - e, X(!1)
         })
     }, []), s.useEffect(() => {
-        z || N.default.track(M.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
-            location_stack: a,
-            load_duration_ms: K.current
+        z || b.default.track(G.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+            location_stack: l,
+            load_duration_ms: W.current
         })
-    }, [a, z]), s.useEffect(() => {
-        n && (null != B || null != Y) && (0, v.u1)(B, Y)
+    }, [l, z]), s.useEffect(() => {
+        n && (null != B || null != Y) && (0, j.u1)(B, Y)
     }, [n, B, Y]);
-    let Q = (0, r.bG)([T.A], () => T.A.enabled),
-        J = t === D.Mf.ApplicationStoreHome,
-        $ = Q ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : J && Z ? (0, i.jsx)(g.f5, {
+    let J = (0, r.bG)([S.A], () => S.A.enabled),
+        Q = t === D.Mf.ApplicationStoreHome,
+        $ = J ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(x.uK, {}) : Q && K ? (0, i.jsx)(A.f5, {
             value: U,
             children: (0, i.jsx)(R.A, {
                 userId: H
             })
         }) : k && F && V ? null : (0, i.jsx)("div", {
-            className: l()(G.kL, G.Lq),
+            className: a()(M.kL, M.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != $ ? (0, i.jsxs)(i.Fragment, {
-        children: [J && (0, i.jsx)(m.A, {}), $]
-    }) : (0, i.jsxs)(g.f5, {
+        children: [Q && (0, i.jsx)(g.A, {}), $]
+    }) : (0, i.jsxs)(A.f5, {
         value: U,
-        children: [J && !q && (0, i.jsx)(m.A, {}), (0, i.jsx)(L.A, {
+        children: [Q && !Z && (0, i.jsx)(g.A, {}), (0, i.jsx)(L.A, {
             entrypoint: t
         })]
     })

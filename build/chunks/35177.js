@@ -1,6 +1,6 @@
 /** chunk id: 35177, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
 var i = n(311907),
     r = n(554146),
@@ -24,10 +24,10 @@ function m(e, t) {
     }), null == e.userContent.dismissedContents && (e.userContent.dismissedContents = new Uint8Array), (0, u.c0)(e.userContent.dismissedContents, t) || (e.userContent.dismissedContents = (0, u.Vf)(e.userContent.dismissedContents, t), n = !0), n
 }
 
-function p(e, t, n) {
+function g(e, t, n) {
     return !!d.HP.hasHiddenHotspot(t) && m(e, n)
 }
-let g = [{
+let p = [{
     version: 2,
     run(e) {
         if (null != e.inbox) return !1;
@@ -108,20 +108,20 @@ let g = [{
     cleanup() {}
 }, {
     version: 7,
-    run: e => p(e, d._2.APPLICATION_COMMAND_TOOLTIP, r.M.APPLICATION_COMMAND_TOOLTIP),
+    run: e => g(e, d._2.APPLICATION_COMMAND_TOOLTIP, r.M.APPLICATION_COMMAND_TOOLTIP),
     cleanup() {}
 }, {
     version: 8,
-    run: e => p(e, d._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, r.M.CHANNELINFO_CHANNELBANNER_NOTICE),
+    run: e => g(e, d._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, r.M.CHANNELINFO_CHANNELBANNER_NOTICE),
     cleanup() {}
 }, {
     version: 9,
-    run: e => (d.HP.hasHiddenHotspot(d._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(_.JE, "true"), p(e, d._2.MULTI_ACCOUNT_TOOLTIP, r.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
+    run: e => (d.HP.hasHiddenHotspot(d._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(_.JE, "true"), g(e, d._2.MULTI_ACCOUNT_TOOLTIP, r.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
     cleanup() {}
 }, {
     version: 10,
     run(e) {
-        let t = p(e, d._2.HUB_LINK_CHANNEL_NOTICE, r.M.CHANNEL_NOTICE_HUBLINK),
+        let t = g(e, d._2.HUB_LINK_CHANNEL_NOTICE, r.M.CHANNEL_NOTICE_HUBLINK),
             n = s.w.get("channelNotices") ?? {};
         return !1 === n[h.n5X.INVITE] && m(e, r.M.CHANNEL_NOTICE_INVITE) && (t = !0), !1 === n[h.n5X.QUICKSWITCHER] && m(e, r.M.CHANNEL_NOTICE_QUICKSWITCHER) && (t = !0), !1 === n[h.n5X.GUILD_BOOSTING] && m(e, r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (t = !0), t
     },
@@ -132,7 +132,7 @@ let g = [{
     version: 11,
     run(e) {
         let t = !1;
-        return p(e, d._2.GUILD_EVENT_UPSELL, r.M.GUILD_HEADER_EVENT_UPSELL) && (t = !0), p(e, d._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, r.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = !0), t
+        return g(e, d._2.GUILD_EVENT_UPSELL, r.M.GUILD_HEADER_EVENT_UPSELL) && (t = !0), g(e, d._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, r.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = !0), t
     },
     cleanup() {}
 }, {
@@ -155,11 +155,11 @@ let g = [{
     }
 }, {
     version: 14,
-    run: e => p(e, d._2.ACTIVITY_BEB_TUTORIAL, r.M.ACTIVITIES_TUTORIAL_COACH_MARK),
+    run: e => g(e, d._2.ACTIVITY_BEB_TUTORIAL, r.M.ACTIVITIES_TUTORIAL_COACH_MARK),
     cleanup() {}
 }, {
     version: 15,
-    run: e => p(e, d._2.NOW_PLAYING_CONSENT_CARD, r.M.NOW_PLAYING_CONSENT_CARD),
+    run: e => g(e, d._2.NOW_PLAYING_CONSENT_CARD, r.M.NOW_PLAYING_CONSENT_CARD),
     cleanup() {}
 }, {
     version: 16,
@@ -191,7 +191,7 @@ let g = [{
     version: 18,
     run(e) {
         let t = !1;
-        return p(e, d._2.GUILD_DELETE_FEEDBACK, r.M.GUILD_DELETE_FEEDBACK) && (t = !0), p(e, d._2.GUILD_LEAVE_FEEDBACK, r.M.GUILD_LEAVE_FEEDBACK) && (t = !0), t
+        return g(e, d._2.GUILD_DELETE_FEEDBACK, r.M.GUILD_DELETE_FEEDBACK) && (t = !0), g(e, d._2.GUILD_LEAVE_FEEDBACK, r.M.GUILD_LEAVE_FEEDBACK) && (t = !0), t
     },
     cleanup() {}
 }, {

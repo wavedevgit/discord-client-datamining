@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(158954),
-    a = n(985018),
-    l = n(303166),
+    l = n(985018),
+    a = n(303166),
     r = n(638718);
 
 function o() {
     return (0, i.jsxs)("div", {
-        className: l.k,
+        className: a.k,
         children: [(0, i.jsx)("img", {
-            className: l.N,
+            className: a.N,
             src: r,
             alt: ""
         }), (0, i.jsx)(s.EYj, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: a.intl.string(a.t.H217fV)
+            children: l.intl.string(l.t.H217fV)
         })]
     })
 }

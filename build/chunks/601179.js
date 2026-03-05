@@ -2,37 +2,37 @@
 r.d(t, {
     A: () => i
 }), r(321073);
-var s = r(64700),
-    n = r(85109),
+var n = r(64700),
+    s = r(85109),
     l = r(470654);
 
 function a() {
-    return n.A.getSavedMessages().map(e => e.saveData)
+    return s.A.getSavedMessages().map(e => e.saveData)
 }
 
 function i() {
-    let [e, t] = s.useState(a), r = s.useRef(n.A.getIsStale());
-    return s.useEffect(() => {
-        let e = n.A.getLastChanged();
+    let [e, t] = n.useState(a), r = n.useRef(s.A.getIsStale());
+    return n.useEffect(() => {
+        let e = s.A.getLastChanged();
 
-        function s() {
-            let s = n.A.getLastChanged();
-            if (e !== s) {
-                if (e = s, r.current && !n.A.getIsStale()) {
+        function n() {
+            let n = s.A.getLastChanged();
+            if (e !== n) {
+                if (e = n, r.current && !s.A.getIsStale()) {
                     r.current = !1, t(a());
                     return
                 }
                 t(e => {
                     let t = [...e],
-                        r = new Map(n.A.getSavedMessages().map(e => [e.saveData.messageId, e]));
-                    for (let s of e) r.has(s.messageId) ? r.delete(s.messageId) : t.splice(t.indexOf(s), 1);
+                        r = new Map(s.A.getSavedMessages().map(e => [e.saveData.messageId, e]));
+                    for (let n of e) r.has(n.messageId) ? r.delete(n.messageId) : t.splice(t.indexOf(n), 1);
                     for (let e of r.values()) t.push(e.saveData);
                     return t
                 })
             }
         }
-        return n.A.addChangeListener(s), () => {
-            n.A.removeChangeListener(s)
+        return s.A.addChangeListener(n), () => {
+            s.A.removeChangeListener(n)
         }
     }, []), (0, l.A)(), e
 }

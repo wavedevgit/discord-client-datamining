@@ -5,22 +5,22 @@ n.d(t, {
 });
 var i = n(64700),
     s = n(964486),
-    a = n(839214),
-    l = n(324593),
+    l = n(839214),
+    a = n(324593),
     r = n(535762),
     o = n(152056),
-    c = n(360619),
-    d = n(531525);
-let u = (0, a.D)(() => ({
-    searchResults: d.R,
+    d = n(360619),
+    c = n(531525);
+let u = (0, l.D)(() => ({
+    searchResults: c.R,
     hasSearchResults: !1
 }));
 
 function _() {
     let e = o.A.useField("query"),
-        t = (0, c.PH)(),
-        n = i.useRef(new r.A((0, c.NI)(t))),
-        a = i.useCallback(async e => {
+        t = (0, d.PH)(),
+        n = i.useRef(new r.A((0, d.NI)(t))),
+        l = i.useCallback(async e => {
             let t = await n.current.search(e.trim());
             u.setState({
                 searchResults: t,
@@ -28,15 +28,15 @@ function _() {
             })
         }, []);
     i.useEffect(() => {
-        "" === e || e.length < 2 ? u.resetState() : (a(e), l.A.maybeTrackQueryEntered())
-    }, [e, a]), (0, s.Ay)(() => () => {
+        "" === e || e.length < 2 ? u.resetState() : (l(e), a.A.maybeTrackQueryEntered())
+    }, [e, l]), (0, s.Ay)(() => () => {
         u.resetState(), o.A.setState({
             query: ""
-        }), l.A.terminate()
+        }), a.A.terminate()
     });
-    let d = u.useField("searchResults");
+    let c = u.useField("searchResults");
     return {
         hasSearchResults: u.useField("hasSearchResults"),
-        searchResults: d
+        searchResults: c
     }
 }

@@ -1,12 +1,12 @@
 /** chunk id: 290595, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Q: () => c,
-    U: () => d
+    Q: () => d,
+    U: () => c
 });
 var i = n(562465),
     s = n(73153),
-    a = n(652215),
-    l = n(985018);
+    l = n(652215),
+    a = n(985018);
 
 function r(e) {
     return null != e && null != e.body && s.h.dispatch({
@@ -18,20 +18,20 @@ function r(e) {
 }
 
 function o(e) {
-    throw Error(e.status >= 500 && e.status <= 599 ? l.intl.string(l.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : l.intl.string(l.t.cvJdtg))
+    throw Error(e.status >= 500 && e.status <= 599 ? a.intl.string(a.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : a.intl.string(a.t.cvJdtg))
 }
 
-function c() {
+function d() {
     return i.Bo.get({
-        url: a.Rsh.SETTINGS_CONSENT,
+        url: l.Rsh.SETTINGS_CONSENT,
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(r, e => Promise.reject(Error(e.body.message)))
 }
 
-function d(e, t) {
+function c(e, t) {
     return i.Bo.post({
-        url: a.Rsh.SETTINGS_CONSENT,
+        url: l.Rsh.SETTINGS_CONSENT,
         body: {
             grant: e,
             revoke: t

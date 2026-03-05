@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(927813),
     L = n(661191),
     P = n(662433),
-    k = n(375901),
-    w = n(857069),
+    w = n(375901),
+    k = n(857069),
     U = n(675171),
     G = n(806621),
     F = n(636922),
@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(66149),
     V = n(922529),
     K = n(652176),
-    z = n(540385),
-    W = n(613907),
+    W = n(540385),
+    z = n(613907),
     Y = n(829444),
     q = n(626360),
     J = n(381941),
@@ -182,7 +182,7 @@ function et(e) {
                 message: e.content,
                 groupId: n,
                 flashKey: e.flashKey,
-                id: (0, k.j)(l.id, e.content.id),
+                id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= ei.length - 1,
                 renderContentOnly: eI || s
             }, e.content.id)
@@ -190,7 +190,7 @@ function et(e) {
     eb.push(...ey);
     let ev = ei[ei.length - 1];
     if (null != eu && el.forEach((e, t) => {
-            let n = 0 === t && (0, w.l)(l, ev, new v.Ay({
+            let n = 0 === t && (0, k.l)(l, ev, new v.Ay({
                 type: $.lAJ.DEFAULT,
                 author: eu
             }));
@@ -211,7 +211,7 @@ function et(e) {
         let {
             useReducedMotion: e
         } = c.A;
-        (e && eh() || !e) && eb.unshift((0, i.jsx)(z.Ay, {
+        (e && eh() || !e) && eb.unshift((0, i.jsx)(W.Ay, {
             compact: en,
             ...ea
         }, "has-more"))
@@ -219,10 +219,10 @@ function et(e) {
     if (m.hasMoreBefore && null == er || eb.unshift((0, i.jsx)(A.A, {
             channel: l,
             showingBanner: eo
-        }, "empty-message")), m.hasMoreAfter && eb.push((0, i.jsx)(z.Ay, {
+        }, "empty-message")), m.hasMoreAfter && eb.push((0, i.jsx)(W.Ay, {
             compact: en,
             ...ea
-        }, "has-more-after")), !eo && em && eh() && eb.push((0, i.jsx)(W.A, {
+        }, "has-more-after")), !eo && em && eh() && eb.push((0, i.jsx)(z.A, {
             channel: l
         })), F > 0 && et && eh()) {
         let e, n, s = j.Ay.getOldestUnreadTimestamp(l.id),

@@ -1,32 +1,32 @@
-/** chunk id: 180491, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    m: () => d
+/** chunk id: 180491, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    m: () => c
 });
-var n = i(827343),
-    l = i(419954),
-    s = i(430452),
-    a = i(780964),
-    r = i(903427),
-    u = i(652215),
-    o = i(985018);
-let d = (0, l.sN)(a.X.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTING, {
-    useTitle: () => o.intl.string(o.t.GCNMM8),
-    useSearchTerms: () => [o.intl.string(o.t["pS+K2L"]), o.intl.string(o.t.nuFtHH)],
-    setValue: function(t) {
-        n.A.setMode(u.TBI.PUSH_TO_TALK, {
-            delay: t
+var i = n(827343),
+    s = n(419954),
+    l = n(430452),
+    a = n(780964),
+    r = n(903427),
+    o = n(652215),
+    d = n(985018);
+let c = (0, s.sN)(a.X.VOICE_PUSH_TO_TALK_RELEASE_DELAY_SETTING, {
+    useTitle: () => d.intl.string(d.t.GCNMM8),
+    useSearchTerms: () => [d.intl.string(d.t["pS+K2L"]), d.intl.string(d.t.nuFtHH)],
+    setValue: function(e) {
+        i.A.setMode(o.TBI.PUSH_TO_TALK, {
+            delay: e
         })
     },
     minValue: 0,
-    maxValue: u.IjB,
+    maxValue: o.IjB,
     getInitialValue: function() {
         let {
-            delay: t
-        } = s.Ay.getModeOptions();
-        return t
+            delay: e
+        } = l.Ay.getModeOptions();
+        return e
     },
-    onValueRender: function(t) {
-        return t >= 1e3 ? (t /= 1e3, `${t.toFixed(2)}s`) : `${t.toFixed(0)}\u00A0ms`
+    onValueRender: function(e) {
+        return e >= 1e3 ? (e /= 1e3, `${e.toFixed(2)}s`) : `${e.toFixed(0)}\u00A0ms`
     },
     usePredicate: r.P
 })

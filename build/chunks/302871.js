@@ -1,34 +1,34 @@
-/** chunk id: 302871, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    u: () => E
+/** chunk id: 302871, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    u: () => m
 });
-var n = i(627968),
-    l = i(311907),
-    s = i(397927),
-    a = i(775602),
-    r = i(502229),
-    u = i(419954),
-    o = i(780964),
-    d = i(614651),
-    A = i(70040),
-    T = i(985018),
-    S = i(402699);
-let E = (0, u.E2)(o.X.APPEARANCE_CLIENT_THEMES, {
-    useSearchTerms: () => [T.intl.string(T.t.Ksh3ik), T.intl.string(T.t["0EzVst"]), T.intl.string(T.t.OCOOiI)],
+var i = n(627968),
+    s = n(311907),
+    l = n(397927),
+    a = n(775602),
+    r = n(502229),
+    o = n(419954),
+    d = n(780964),
+    c = n(614651),
+    u = n(70040),
+    _ = n(985018),
+    g = n(402699);
+let m = (0, o.E2)(d.X.APPEARANCE_CLIENT_THEMES, {
+    useSearchTerms: () => [_.intl.string(_.t.Ksh3ik), _.intl.string(_.t["0EzVst"]), _.intl.string(_.t.OCOOiI)],
     Component: () => {
-        let t = (0, l.bG)([a.A], () => a.A.useForcedColors);
-        return (0, n.jsxs)("fieldset", {
-            children: [(0, n.jsx)(s.Text, {
+        let e = (0, s.bG)([a.A], () => a.A.useForcedColors);
+        return (0, i.jsxs)("fieldset", {
+            children: [(0, i.jsx)(l.Text, {
                 tag: "legend",
                 variant: "heading-xl/normal",
                 color: "text-strong",
-                className: S.D,
-                children: T.intl.string(T.t.Ksh3ik)
-            }), t ? (0, n.jsx)(s.wx6, {
+                className: g.D,
+                children: _.intl.string(_.t.Ksh3ik)
+            }), e ? (0, i.jsx)(l.wx6, {
                 type: "info",
-                children: (0, r.D)() ? (0, n.jsx)(d.Ys, {}) : T.intl.string(T.t.AUMSZP)
-            }) : (0, n.jsxs)("div", {
-                children: [(0, n.jsx)(d.ac, {}), (0, n.jsx)(A.Ix, {})]
+                children: (0, r.D)() ? (0, i.jsx)(c.Ys, {}) : _.intl.string(_.t.AUMSZP)
+            }) : (0, i.jsxs)("div", {
+                children: [(0, i.jsx)(c.ac, {}), (0, i.jsx)(u.Ix, {})]
             })]
         })
     }

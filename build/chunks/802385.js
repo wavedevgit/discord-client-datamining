@@ -1,22 +1,22 @@
-/** chunk id: 802385, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => A
+/** chunk id: 802385, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Q: () => u
 });
-var n = i(311907),
-    l = i(554146),
-    s = i(955572),
-    a = i(775602),
-    r = i(932001),
-    u = i(419954),
-    o = i(780964),
-    d = i(985018);
-let A = (0, u.zD)(o.X.HIGH_CONTRAST_MODE, {
-    useTitle: () => d.intl.string(d.t.aZlePv),
-    useSubtitle: () => d.intl.string(d.t["v2qF8+"]),
-    useValue: () => (0, n.bG)([a.A], () => a.A.isHighContrastModeEnabled),
-    setValue: t => (0, s.uh)(t ? a._.HIGH : a._.DEFAULT),
+var i = n(311907),
+    s = n(554146),
+    l = n(955572),
+    a = n(775602),
+    r = n(932001),
+    o = n(419954),
+    d = n(780964),
+    c = n(985018);
+let u = (0, o.zD)(d.X.HIGH_CONTRAST_MODE, {
+    useTitle: () => c.intl.string(c.t.aZlePv),
+    useSubtitle: () => c.intl.string(c.t["v2qF8+"]),
+    useValue: () => (0, i.bG)([a.A], () => a.A.isHighContrastModeEnabled),
+    setValue: e => (0, l.uh)(e ? a._.HIGH : a._.DEFAULT),
     useBadge: () => {
-        let [t] = (0, r.kn)([l.M.ACCESSIBILITY_HIGH_CONTRAST_MODE_NEW_BADGE]);
-        return t === l.M.ACCESSIBILITY_HIGH_CONTRAST_MODE_NEW_BADGE ? "new" : void 0
+        let [e] = (0, r.kn)([s.M.ACCESSIBILITY_HIGH_CONTRAST_MODE_NEW_BADGE]);
+        return e === s.M.ACCESSIBILITY_HIGH_CONTRAST_MODE_NEW_BADGE ? "new" : void 0
     }
 })

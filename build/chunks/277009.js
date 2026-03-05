@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(122581);
+    a = n(397927),
+    r = n(122581);
 
 function o(e) {
     let {
@@ -16,9 +16,9 @@ function o(e) {
         color: n,
         ...s
     } = e;
-    return (0, i.jsx)(r.Text, {
+    return (0, i.jsx)(a.Text, {
         className: l()({
-            [a.Q]: null == n
+            [r.Q]: null == n
         }, t),
         color: n,
         ...s

@@ -14,30 +14,30 @@ var i = n(311907),
     u = n(841702),
     m = n(544028),
     h = n(253932),
-    p = n(287809),
-    x = n(850730),
+    x = n(287809),
+    p = n(850730),
     g = n(385803),
     _ = n(607335);
 
 function f() {
     (0, u.Bf)();
-    let e = (0, i.bG)([p.default], () => p.default.getCurrentUser()),
+    let e = (0, i.bG)([x.default], () => x.default.getCurrentUser()),
         t = h.eh.useSetting(),
         n = (0, i.bG)([m.A], () => m.A.theme),
         f = t.backgroundGradientPresetId,
-        b = (0, i.bG)([d.A], () => d.A.purchases),
-        v = (0, c.x9)(b),
-        j = (0, c.$W)(b),
+        v = (0, i.bG)([d.A], () => d.A.purchases),
+        b = (0, c.x9)(v),
+        j = (0, c.$W)(v),
         A = e?.avatarDecoration?.skuId,
         C = e?.collectibles?.nameplate?.skuId,
-        T = null != A ? v.find(e => e.skuId === A) ?? null : null,
-        y = null != C ? j.find(e => e.skuId === C) ?? null : null,
-        S = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
-        E = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
+        y = null != A ? b.find(e => e.skuId === A) ?? null : null,
+        T = null != C ? j.find(e => e.skuId === C) ?? null : null,
+        S = (0, i.bG)([o.A], () => o.A.getProduct(y?.skuId)),
+        E = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
         k = h.Xi.useSetting();
-    return (0, x.DB)(), (0, a.jsxs)("div", {
+    return (0, p.DB)(), (0, a.jsxs)("div", {
         className: _.kL,
         children: [(0, a.jsxs)("div", {
             children: [(0, a.jsx)(l.Heading, {
@@ -50,17 +50,17 @@ function f() {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Theme",
-                onClick: x.t0
+                onClick: p.t0
             }), (0, a.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Collectibles",
-                onClick: x.ZL
+                onClick: p.ZL
             }), (0, a.jsx)(l.Button, {
                 variant: "primary",
                 size: "sm",
                 text: "Randomize Appearance Settings",
-                onClick: x.ln
+                onClick: p.ln
             })]
         }), (0, a.jsxs)("div", {
             children: [(0, a.jsx)(l.Heading, {

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(419954),
     s = n(780964),
-    a = n(417385),
-    l = n(687837);
+    l = n(417385),
+    a = n(687837);
 let r = (0, i.zZ)(s.X.LANGUAGE_AND_TIME_CATEGORY, {
-    buildLayout: () => [a.p, l.H]
+    buildLayout: () => [l.p, a.H]
 })

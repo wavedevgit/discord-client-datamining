@@ -1,17 +1,17 @@
-/** chunk id: 168370, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    J: () => u
+/** chunk id: 168370, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    J: () => o
 });
-var n = i(311907),
-    l = i(926919),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.zD)(r.X.OVERLAY_RPC_LOGS, {
+var i = n(311907),
+    s = n(926919),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.zD)(r.X.OVERLAY_RPC_LOGS, {
     useTitle: () => "Enable Logging of Overlay RPC Events & Commands",
     useSubtitle: () => "Logs all overlay related RPC events. Super noisy if an overlay is connected.",
-    useValue: () => (0, n.bG)([a.default], () => a.default.isLoggingOverlayEvents),
-    setValue: t => (0, l.x)({
-        logOverlayEvents: t
+    useValue: () => (0, i.bG)([a.default], () => a.default.isLoggingOverlayEvents),
+    setValue: e => (0, s.x)({
+        logOverlayEvents: e
     })
 })

@@ -1,24 +1,24 @@
-/** chunk id: 899463, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    r: () => S
+/** chunk id: 899463, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    r: () => g
 });
-var n = i(627968),
-    l = i(934551),
-    s = i(734066),
-    a = i(953336),
-    r = i(419954),
-    u = i(780964),
-    o = i(467758),
-    d = i(269420),
-    A = i(985018);
-let T = (0, r.t_)(u.X.CLIPS_PANEL, {
-        useTitle: () => A.intl.string(A.t.z2jK6X),
-        useBadge: () => (0, n.jsx)(a.A, {}),
-        usePredicate: s.sw,
-        buildLayout: () => [d.K, o.W]
+var i = n(627968),
+    s = n(934551),
+    l = n(734066),
+    a = n(953336),
+    r = n(419954),
+    o = n(780964),
+    d = n(467758),
+    c = n(269420),
+    u = n(985018);
+let _ = (0, r.t_)(o.X.CLIPS_PANEL, {
+        useTitle: () => u.intl.string(u.t.z2jK6X),
+        useBadge: () => (0, i.jsx)(a.A, {}),
+        usePredicate: l.sw,
+        buildLayout: () => [c.K, d.W]
     }),
-    S = (0, r.i4)(u.X.CLIPS_SIDEBAR_ITEM, {
-        useTitle: () => A.intl.string(A.t.z2jK6X),
-        icon: l.ClipsIcon,
-        buildLayout: () => [T]
+    g = (0, r.i4)(o.X.CLIPS_SIDEBAR_ITEM, {
+        useTitle: () => u.intl.string(u.t.z2jK6X),
+        icon: s.ClipsIcon,
+        buildLayout: () => [_]
     })

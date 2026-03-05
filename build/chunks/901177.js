@@ -1,19 +1,19 @@
-/** chunk id: 901177, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    B: () => o
+/** chunk id: 901177, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    B: () => d
 });
-var n = i(158954),
-    l = i(419954),
-    s = i(780964),
-    a = i(115980),
-    r = i(985018);
-let u = (0, l.E2)(s.X.BILLING_PAYMENT_METHODS, {
+var i = n(158954),
+    s = n(419954),
+    l = n(780964),
+    a = n(115980),
+    r = n(985018);
+let o = (0, s.E2)(l.X.BILLING_PAYMENT_METHODS, {
         Component: a.HG,
         useSearchTerms: () => [r.intl.string(r.t.W26xGQ)]
     }),
-    o = (0, l.zZ)(s.X.BILLING_PAYMENT_METHODS_CATEGORY, {
+    d = (0, s.zZ)(l.X.BILLING_PAYMENT_METHODS_CATEGORY, {
         useTitle: () => r.intl.string(r.t.W26xGQ),
-        icon: n.XAi,
+        icon: i.XAi,
         useSubtitle: () => r.intl.string(r.t.h6V3uK),
-        buildLayout: () => [u]
+        buildLayout: () => [o]
     })

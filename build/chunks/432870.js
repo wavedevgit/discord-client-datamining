@@ -1,50 +1,50 @@
 /** chunk id: 432870, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968),
     s = n(607470),
-    a = n(608416),
-    l = n(48415),
+    l = n(608416),
+    a = n(48415),
     r = n(592151),
     o = n(844738);
-let c = e => {
+let d = e => {
     let {
         supportHEVCAlpha: t,
         isMotionReduced: n,
-        containerVisibilityPercentage: c,
-        containerClassName: d,
+        containerVisibilityPercentage: d,
+        containerClassName: c,
         assetClassName: u
     } = e;
     return n ? (0, i.jsx)("div", {
-        className: d,
+        className: c,
         children: (0, i.jsx)("img", {
             src: o.A,
             alt: "",
             className: u
         })
     }) : (0, i.jsx)("div", {
-        className: d,
-        children: (0, i.jsx)(a.Ay, {
+        className: c,
+        children: (0, i.jsx)(l.Ay, {
             scaleAnimationData: {
                 startScale: .9,
                 endScale: 1,
-                duration: a.$G
+                duration: l.$G
             },
             yAxisAnimationData: {
                 range: 20,
-                duration: a.Mp,
-                path: a.aV.SINE
+                duration: l.Mp,
+                path: l.aV.SINE
             },
             parallaxAnimationData: {
-                pathDirection: a.MN.UP,
+                pathDirection: l.MN.UP,
                 range: 200,
-                containerVisibilityPercentage: c,
+                containerVisibilityPercentage: d,
                 changeOpacity: !1
             },
             animateXAxisWiggle: !0,
             children: t ? (0, i.jsx)("img", {
-                src: l.A,
+                src: a.A,
                 alt: "",
                 className: u
             }) : (0, i.jsx)(s.A, {

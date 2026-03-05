@@ -74,10 +74,10 @@ function I(e) {
     } = (0, r.A)(t.applicationId), {
         registerDragHandleRef: S
     } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), k = C?.id === n, R = !I && k, {
-        isDragging: w
+        isDragging: L
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
-    })), L = () => (0, i.jsxs)(i.Fragment, {
+    })), O = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(g.A, {
             imageSrc: T,
             gameName: b,
@@ -85,7 +85,7 @@ function I(e) {
             userId: n,
             disableInteraction: I,
             className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
-            hideTooltip: w,
+            hideTooltip: L,
             coverRef: E
         }), R && (0, i.jsx)(d.jV, {
             buttonRef: S(t.applicationId),
@@ -112,9 +112,9 @@ function I(e) {
         game: t,
         coverImageUrl: T,
         gameName: b,
-        children: L()
+        children: O()
     }) : (0, i.jsx)("div", {
         className: _.kL,
-        children: L()
+        children: O()
     })
 }

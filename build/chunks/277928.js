@@ -17,21 +17,21 @@ let h = e => {
         isExpanded: t,
         contentLocation: n,
         progressBarRef: h,
-        percentComplete: p,
-        activeScreen: x,
+        percentComplete: x,
+        activeScreen: p,
         popoutTargetElementRef: g
     } = e, {
         quest: _,
         onGameSheetOpen: f,
-        onGameSheetClose: b
-    } = i.useContext(u.T), v = (0, r.VX)(_), j = (0, r.tH)({
+        onGameSheetClose: v
+    } = i.useContext(u.T), b = (0, r.VX)(_), j = (0, r.tH)({
         quest: _,
         isExpanded: t,
-        activeScreen: x,
+        activeScreen: p,
         sourceQuestContent: l.uF.QUEST_BAR_V2,
         popoutTargetElementRef: g,
         onGameSheetOpened: f,
-        onGameSheetClosed: b
+        onGameSheetClosed: v
     });
     return (0, a.jsxs)("div", {
         className: m.Z0,
@@ -42,7 +42,7 @@ let h = e => {
             children: e => (0, a.jsx)(c.A, {
                 ref: e,
                 style: "small",
-                percentComplete: p,
+                percentComplete: x,
                 size: 42,
                 children: (0, a.jsx)(o.A, {
                     fullWidth: !0,
@@ -62,7 +62,7 @@ let h = e => {
                     className: m.FZ,
                     color: "text-strong",
                     variant: "text-sm/semibold",
-                    children: v
+                    children: b
                 })
             }), (0, a.jsx)(d.dN, {
                 inState: n,

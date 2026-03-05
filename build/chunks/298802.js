@@ -1,34 +1,34 @@
-/** chunk id: 298802, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    G: () => S
+/** chunk id: 298802, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    G: () => g
 });
-var n = i(311907),
-    l = i(775121),
-    s = i(955572),
-    a = i(775602),
-    r = i(419954),
-    u = i(723702),
-    o = i(780964),
-    d = i(358776),
-    A = i(652215),
-    T = i(985018);
-let S = (0, r.sN)(o.X.APPEARANCE_ZOOM, {
-    usePredicate: () => u.isPlatformEmbedded,
-    useTitle: () => T.intl.string(T.t.i19n5L),
-    useSubtitle: () => (0, d.bp)("Zoom") ? T.intl.format(T.t["x9PK/3"], {
-        modKey: l.A.modKey
-    }) : T.intl.string(T.t.ip0uSf),
-    markers: A.hH7.ZOOM_SCALES,
+var i = n(311907),
+    s = n(775121),
+    l = n(955572),
+    a = n(775602),
+    r = n(419954),
+    o = n(723702),
+    d = n(780964),
+    c = n(358776),
+    u = n(652215),
+    _ = n(985018);
+let g = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
+    usePredicate: () => o.isPlatformEmbedded,
+    useTitle: () => _.intl.string(_.t.i19n5L),
+    useSubtitle: () => (0, c.bp)("Zoom") ? _.intl.format(_.t["x9PK/3"], {
+        modKey: s.A.modKey
+    }) : _.intl.string(_.t.ip0uSf),
+    markers: u.hH7.ZOOM_SCALES,
     stickToMarkers: !0,
-    minValue: A.hH7.ZOOM_SCALES["0"],
-    maxValue: A.hH7.ZOOM_SCALES[A.hH7.ZOOM_SCALES.length - 1],
-    useDefaultValue: () => A.hH7.ZOOM_DEFAULT,
+    minValue: u.hH7.ZOOM_SCALES["0"],
+    maxValue: u.hH7.ZOOM_SCALES[u.hH7.ZOOM_SCALES.length - 1],
+    useDefaultValue: () => u.hH7.ZOOM_DEFAULT,
     getInitialValue: () => a.A.zoom,
-    useExternalValue: () => (0, n.bG)([a.A], () => a.A.zoom),
-    onValueRender: t => `${t.toFixed(0)}%`,
-    setValue: t => (0, s.Qp)(t),
-    useSearchTerms: () => [T.intl.string(T.t.ip0uSf)],
-    useHintText: () => (0, d.bp)("Zoom") ? null : T.intl.format(T.t.OMkSUo, {
-        modKey: l.A.modKey
+    useExternalValue: () => (0, i.bG)([a.A], () => a.A.zoom),
+    onValueRender: e => `${e.toFixed(0)}%`,
+    setValue: e => (0, l.Qp)(e),
+    useSearchTerms: () => [_.intl.string(_.t.ip0uSf)],
+    useHintText: () => (0, c.bp)("Zoom") ? null : _.intl.format(_.t.OMkSUo, {
+        modKey: s.A.modKey
     })
 })

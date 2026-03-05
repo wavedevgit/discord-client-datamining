@@ -1,43 +1,43 @@
-/** chunk id: 918053, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    $: () => S
+/** chunk id: 918053, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    $: () => g
 });
-var n = i(391973),
-    l = i(395011),
-    s = i(897720),
-    a = i(419954),
-    r = i(555528),
-    u = i(780964),
-    o = i(790076),
-    d = i(652215);
-i(392164);
-var A = i(985018);
+var i = n(391973),
+    s = n(395011),
+    l = n(897720),
+    a = n(419954),
+    r = n(555528),
+    o = n(780964),
+    d = n(790076),
+    c = n(652215);
+n(392164);
+var u = n(985018);
 
-function T() {
-    let t = l.A.getWidgetByType(d.uss.VOICE_V3);
-    if (null == t) return null;
-    let e = r.A.getWidget(t.id);
-    return null != e && (0, s.ZO)(e) ? e : null
+function _() {
+    let e = s.A.getWidgetByType(c.uss.VOICE_V3);
+    if (null == e) return null;
+    let t = r.A.getWidget(e.id);
+    return null != t && (0, l.ZO)(t) ? t : null
 }
-let S = (0, a.sN)(u.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
-    useTitle: () => A.intl.string(A.t["X/Uyzc"]),
-    minValue: o.G6 - 1,
-    maxValue: o.PP,
-    markers: o.DA,
-    onMarkerRender: t => t < o.G6 ? A.intl.string(A.t.nrUzFL) : t,
+let g = (0, a.sN)(o.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
+    useTitle: () => u.intl.string(u.t["X/Uyzc"]),
+    minValue: d.G6 - 1,
+    maxValue: d.PP,
+    markers: d.DA,
+    onMarkerRender: e => e < d.G6 ? u.intl.string(u.t.nrUzFL) : e,
     getInitialValue: () => {
-        let t = T();
-        return t?.meta.voiceStatesMaxShown ?? 8
+        let e = _();
+        return e?.meta.voiceStatesMaxShown ?? 8
     },
-    onValueRender: function(t) {
-        return t < o.G6 ? A.intl.string(A.t.nrUzFL) : `${Math.floor(t)}`
+    onValueRender: function(e) {
+        return e < d.G6 ? u.intl.string(u.t.nrUzFL) : `${Math.floor(e)}`
     },
-    setValue: t => {
-        let e = T();
-        null != e && (t < o.G6 ? (0, n.cC)(e.id, {
+    setValue: e => {
+        let t = _();
+        null != t && (e < d.G6 ? (0, i.cC)(t.id, {
             voiceStatesMaxShown: -1
-        }) : (0, n.cC)(e.id, {
-            voiceStatesMaxShown: Math.floor(t)
+        }) : (0, i.cC)(t.id, {
+            voiceStatesMaxShown: Math.floor(e)
         }))
     }
 })

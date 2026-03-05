@@ -1,18 +1,18 @@
 /** chunk id: 17307, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G4: () => m,
-    LQ: () => A,
+    G4: () => g,
+    LQ: () => m,
     t4: () => u,
     vx: () => _
 }), n(321073);
 var i = n(311907),
     s = n(582754),
-    a = n(287809),
-    l = n(166403),
+    l = n(287809),
+    a = n(166403),
     r = n(927578),
     o = n(322631),
-    c = n(788868),
-    d = n(985018);
+    d = n(788868),
+    c = n(985018);
 let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
     _ = e => {
         let {
@@ -20,15 +20,15 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
             variant: n,
             hideCardsOnNarrowScreen: i,
             isPremiumSubscriber: s,
-            fractionalState: a,
-            isInReverseTrial: l,
+            fractionalState: l,
+            isInReverseTrial: a,
             recurring3PPromotionExperiment: r,
-            showPremiumGroup: d,
+            showPremiumGroup: c,
             isPremiumGroupMember: u
         } = e, _ = [];
         switch (n) {
             case o.cJ.PERKS_DISCOVERABILITY:
-                _ = !1 === s ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : a === c.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
+                _ = !1 === s ? [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons] : l === d.xc.FP_ONLY || u ? [t.profiles, t.clientThemes, t.hdVideo] : [t.profiles, t.clientThemes, t.serverBoosts];
                 break;
             case o.cJ.WHATS_NEW:
                 _ = (e => {
@@ -37,11 +37,11 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         perksCards: n,
                         recurring3PPromotionExperiment: i,
                         showPremiumGroup: s
-                    } = e, a = null != n.tenureBadge ? [n.tenureBadge] : [], l = 3 - a.length, r = e => {
+                    } = e, l = null != n.tenureBadge ? [n.tenureBadge] : [], a = 3 - l.length, r = e => {
                         let {
                             card: n
                         } = e;
-                        t.length < l && t.push(n)
+                        t.length < a && t.push(n)
                     };
                     return s && r({
                         card: n.premiumGroup
@@ -55,41 +55,41 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         card: n.permadecos
                     }), r({
                         card: n.newAppStylesUpdateJune2024
-                    }), t.push(...a), t
+                    }), t.push(...l), t
                 })({
                     cards: _,
                     perksCards: t,
                     recurring3PPromotionExperiment: r,
-                    showPremiumGroup: d
+                    showPremiumGroup: c
                 });
                 break;
             case o.cJ.CARD_CAROUSEL_FIRST_ROW:
                 _ = !1 === s ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
                 break;
             case o.cJ.CARD_CAROUSEL_SECOND_ROW:
-                _ = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : a === c.xc.FP_ONLY ? l ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+                _ = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === d.xc.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
                 break;
             case o.cJ.CARD_CAROUSEL_THIRD_ROW:
-                _ = a === c.xc.FP_ONLY ? l ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+                _ = l === d.xc.FP_ONLY ? a ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
         }
         return i && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
     },
-    m = e => {
-        let t = (0, i.bG)([l.A], () => l.A.getPremiumTypeSubscription()),
+    g = e => {
+        let t = (0, i.bG)([a.A], () => a.A.getPremiumTypeSubscription()),
             n = null != t ? r.Ay.getPremiumPlanItem(t) : null,
-            s = (null != n ? r.Ay.getSkuIdForPlan(n.planId) : null) === c.pe.TIER_2;
+            s = (null != n ? r.Ay.getSkuIdForPlan(n.planId) : null) === d.pe.TIER_2;
         return e ? s ? {
-            title: d.intl.string(d.t.Aw5DRm),
-            subtitle: d.intl.string(d.t.aHdO6o)
+            title: c.intl.string(c.t.Aw5DRm),
+            subtitle: c.intl.string(c.t.aHdO6o)
         } : {
-            title: d.intl.string(d.t.N30YE4),
-            subtitle: d.intl.string(d.t.GTUdNf)
+            title: c.intl.string(c.t.N30YE4),
+            subtitle: c.intl.string(c.t.GTUdNf)
         } : {
-            title: d.intl.string(d.t["Uh3+CA"]),
-            subtitle: d.intl.string(d.t["5TFEXv"])
+            title: c.intl.string(c.t["Uh3+CA"]),
+            subtitle: c.intl.string(c.t["5TFEXv"])
         }
     },
-    A = () => {
-        let e = (0, i.bG)([a.default], () => a.default.getCurrentUser());
+    m = () => {
+        let e = (0, i.bG)([l.default], () => l.default.getCurrentUser());
         return (0, r.TW)(e)
     }

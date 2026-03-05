@@ -1,16 +1,16 @@
-/** chunk id: 64878, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    U: () => u
+/** chunk id: 64878, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    U: () => o
 });
-var n = i(419954),
-    l = i(890164),
-    s = i(780964),
-    a = i(985018);
-let r = (0, n.AK)(s.X.ACTIVITY_PRIVACY_TO_PROFILE_PRIVACY_NAVIGATOR, {
+var i = n(419954),
+    s = n(890164),
+    l = n(780964),
+    a = n(985018);
+let r = (0, i.AK)(l.X.ACTIVITY_PRIVACY_TO_PROFILE_PRIVACY_NAVIGATOR, {
         useSubtitle: () => a.intl.string(a.t.J0SFL2),
-        destinationKey: s.X.DATA_AND_PRIVACY_PANEL
+        destinationKey: l.X.DATA_AND_PRIVACY_PANEL
     }),
-    u = (0, n.gN)(s.X.ACTIVITY_PRIVACY_RELATED_SETTINGS, {
-        usePredicate: () => (0, l.lX)("ActivityPrivacyRelatedSettings"),
+    o = (0, i.gN)(l.X.ACTIVITY_PRIVACY_RELATED_SETTINGS, {
+        usePredicate: () => (0, s.lX)("ActivityPrivacyRelatedSettings"),
         buildLayout: () => [r]
     })

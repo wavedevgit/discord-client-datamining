@@ -1,25 +1,25 @@
-/** chunk id: 506305, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    p: () => T
+/** chunk id: 506305, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    p: () => _
 });
-var n = i(311907),
-    l = i(955572),
-    s = i(775602),
-    a = i(419954),
-    r = i(780964),
-    u = i(358776),
-    o = i(840065),
-    d = i(652215),
-    A = i(985018);
-let T = (0, a.zD)(r.X.SYNC_PROFILE_THEMES, {
-    useTitle: () => (0, u.bp)("SyncProfileThemes_useTitle") ? A.intl.string(A.t.C00w4l) : A.intl.string(A.t["sSY+mD"]),
-    useSubtitle: () => (0, u.bp)("SyncProfileThemes_useSubtitle") ? void 0 : A.intl.format(A.t.u6UjrL, {
+var i = n(311907),
+    s = n(955572),
+    l = n(775602),
+    a = n(419954),
+    r = n(780964),
+    o = n(358776),
+    d = n(840065),
+    c = n(652215),
+    u = n(985018);
+let _ = (0, a.zD)(r.X.SYNC_PROFILE_THEMES, {
+    useTitle: () => (0, o.bp)("SyncProfileThemes_useTitle") ? u.intl.string(u.t.C00w4l) : u.intl.string(u.t["sSY+mD"]),
+    useSubtitle: () => (0, o.bp)("SyncProfileThemes_useSubtitle") ? void 0 : u.intl.format(u.t.u6UjrL, {
         onThemeClick() {
-            (0, o.openUserSettings)(r.X.APPEARANCE_PANEL, {
-                section: d.nc_.APPEARANCE
+            (0, d.openUserSettings)(r.X.APPEARANCE_PANEL, {
+                section: c.nc_.APPEARANCE
             })
         }
     }),
-    useValue: () => (0, n.bG)([s.A], () => s.A.syncProfileThemeWithUserTheme),
-    setValue: () => (0, l.M1)()
+    useValue: () => (0, i.bG)([l.A], () => l.A.syncProfileThemeWithUserTheme),
+    setValue: () => (0, s.M1)()
 })

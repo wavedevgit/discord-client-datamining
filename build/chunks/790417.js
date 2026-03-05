@@ -39,15 +39,15 @@ function T(e) {
         stream: k
     } = (0, u.A)(t.id), {
         voiceChannel: R,
-        voiceActivity: w
+        voiceActivity: L
     } = (0, g.A)({
         userId: t.id,
         guildId: b
-    }), L = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, D = (0, l.bG)([c.A, o.A], () => {
-        let e = O ? c.A.getStatus() : o.A.getStatus(t.id);
+    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, D = (0, l.bG)([c.A, o.A], () => {
+        let e = w ? c.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), P = y.length > 0 || null != k, G = T?.private !== !0 && null == k && null == w && null != R, M = !D && (P || G), U = C.length > 0;
-    return M || U || !L ? M || U || L ? (0, i.jsxs)(A.K, {
+    }), P = y.length > 0 || null != k, G = T?.private !== !0 && null == k && null == L && null != R, M = !D && (P || G), U = C.length > 0;
+    return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(_.A, {
@@ -79,7 +79,7 @@ function T(e) {
             })
         }) : null, U ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.jzgEoL),
-            introText: O ? v.intl.format(v.t["4bk9Ak"], {
+            introText: w ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
                     href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
@@ -97,7 +97,7 @@ function T(e) {
                 }, e.id))
             })
         }) : null]
-    }) : O ? (0, i.jsx)(h.qv, {
+    }) : w ? (0, i.jsx)(h.qv, {
         onClose: S
     }) : (0, i.jsx)(h.zf, {
         user: t,

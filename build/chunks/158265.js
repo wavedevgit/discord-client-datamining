@@ -13,13 +13,13 @@ var a = n(627968),
     u = n(475743),
     m = n(775602),
     h = n(186111),
-    p = n(398025),
-    x = n(568329),
+    x = n(398025),
+    p = n(568329),
     g = n(963713),
     _ = n(772244),
     f = n(272111),
-    b = n(851110),
-    v = n(307725),
+    v = n(851110),
+    b = n(307725),
     j = n(231901);
 let A = e => {
     let {
@@ -30,9 +30,9 @@ let A = e => {
         quest: A,
         isExpanded: C
     } = i.useContext(g.T), {
-        expansionSpring: T
-    } = i.useContext(x.PW), {
-        completionSpring: y,
+        expansionSpring: y
+    } = i.useContext(p.PW), {
+        completionSpring: T,
         startCompletionAnimation: S
     } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
         gravity: 0,
@@ -51,7 +51,7 @@ let A = e => {
                 y: d
             } = t.getBoundingClientRect();
             L.createMultipleConfetti((a = n - o, i = r - d, s = e.clientHeight, l = e.clientWidth, {
-                ...b.Mw,
+                ...v.Mw,
                 position: {
                     type: "static-random",
                     minValue: {
@@ -102,41 +102,41 @@ let A = e => {
     }, [E, N, G, S, L]), i.useEffect(() => {
         s && E && (S(), G())
     }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
-        className: v.iE,
+        className: b.iE,
         "aria-hidden": "true",
         ref: k,
         children: [(0, a.jsx)(d.animated.div, {
-            className: v.Tp,
+            className: b.Tp,
             style: {
-                opacity: (0, p.a)(y)
+                opacity: (0, x.a)(T)
             }
         }), (0, a.jsx)(d.animated.div, {
-            className: l()(v.sJ, v.ix),
+            className: l()(b.sJ, b.ix),
             style: {
-                opacity: (0, p.a)(y)
+                opacity: (0, x.a)(T)
             }
         }), (0, a.jsxs)(d.animated.div, {
-            className: v.KG,
+            className: b.KG,
             style: {
-                transform: T.to({
+                transform: y.to({
                     range: [0, 1],
                     output: [-35, 0]
                 }).to(e => `translateY(${e}px)`)
             },
             children: [(0, a.jsx)(r.Fk, {
                 ref: D,
-                className: v.t_,
+                className: b.t_,
                 environment: U.current
             }), (0, a.jsx)(r.K_, {
                 ref: P,
                 sprites: [j],
                 colors: B,
-                spriteWidth: b.wn,
-                spriteHeight: b.wn
+                spriteWidth: v.wn,
+                spriteHeight: v.wn
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
-                className: l()(v.sJ, v.d7),
+                className: l()(b.sJ, b.d7),
                 style: {
-                    opacity: (0, p.a)(y)
+                    opacity: (0, x.a)(T)
                 }
             }), t.current)]
         })]

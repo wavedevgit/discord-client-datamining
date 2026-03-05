@@ -18,19 +18,19 @@ let h = function(e) {
             header: l,
             children: h,
             renderSettings: p,
-            onDragStart: f
+            onDragStart: A
         } = e,
-        A = s.useRef(null);
+        f = s.useRef(null);
     return t = null != n ? (0, i.jsxs)(o.Ay.Bar, {
         className: a()(u.wx, u.bl),
-        onMouseDown: f,
+        onMouseDown: A,
         children: [(0, i.jsx)(o.Ay.Content, {
             className: a()(u.qd, u.bl),
             dynamicSize: !0,
             children: n
         }), (0, i.jsx)(o.Ay.Content, {
             children: (0, i.jsx)(r.YNO, {
-                targetElementRef: A,
+                targetElementRef: f,
                 position: "right",
                 renderPopout: p ?? d.tEg,
                 autoInvert: !1,
@@ -38,7 +38,7 @@ let h = function(e) {
                     ...e,
                     icon: r.Zes,
                     label: c.intl.string(c.t["3D5yo/"]),
-                    ref: A
+                    ref: f
                 })
             })
         })]

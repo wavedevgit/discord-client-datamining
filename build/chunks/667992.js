@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(990078),
+    a = n.n(l),
+    r = n(990078),
     o = n(397927),
     c = n(442433),
     d = n(717558),
@@ -30,7 +30,7 @@ function f(e) {
         reducedMotion: E
     } = s.useContext(o.CZY), I = (0, d.A)({
         userId: l.id
-    }), N = null != l.member ? (0, g.xT)(l.member) : null, S = e => {
+    }), N = null != l.member ? (0, g.xT)(l.member) : null, b = e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -55,7 +55,7 @@ function f(e) {
         guildId: t.guild_id,
         channelId: t.id,
         clickTrap: !0,
-        children: e => (0, i.jsx)(a.m, {
+        children: e => (0, i.jsx)(r.m, {
             targetElementRef: f,
             __unsupportedReactNodeAsText: l.userNick,
             position: "bottom",
@@ -65,11 +65,11 @@ function f(e) {
                 onClick: t => {
                     t.stopPropagation(), e.onClick(t)
                 },
-                onContextMenu: S,
+                onContextMenu: b,
                 children: (0, i.jsx)(o.euF, {
                     src: N ?? l.user.getAvatarURL(t.guild_id, 24),
                     size: o._3J.SIZE_24,
-                    className: r()(_.my, p),
+                    className: a()(_.my, p),
                     "aria-label": l.userNick,
                     isSpeaking: I && !E.enabled
                 })
@@ -94,7 +94,7 @@ function x(e) {
             className: t
         }, s),
         renderMoreUsers: (e, t, n) => (0, i.jsx)("div", {
-            className: r()(_.$U, t),
+            className: a()(_.$U, t),
             children: e
         }, n)
     })

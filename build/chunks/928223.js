@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(347805),
-    l = n(183555),
-    r = n(716804),
+    r = n(183555),
+    l = n(716804),
     a = n(900179),
     d = n(518477),
     o = n(985018),
@@ -15,9 +15,9 @@ var s = n(347805),
 function u(e) {
     let {
         userId: t
-    } = e, n = (0, r.g)(), {
+    } = e, n = (0, l.g)(), {
         trackUserProfileAction: u
-    } = (0, l.NJ)();
+    } = (0, r.NJ)();
     return (0, i.jsx)(a.A, {
         heading: o.intl.string(o.t["mQKv+v"]),
         scrollTargetId: d.bk.NOTE,

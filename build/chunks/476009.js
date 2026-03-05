@@ -1,29 +1,29 @@
 /** chunk id: 476009, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(546140),
-    a = n(776038),
-    l = n(975571),
+    l = n(776038),
+    a = n(975571),
     r = n(871930),
     o = n(578746),
-    c = n(355097),
-    d = n(531525),
+    d = n(355097),
+    c = n(531525),
     u = n(652215),
     _ = n(985018);
 
-function m() {
+function g() {
     let e = (0, s.L)();
     return (0, i.jsx)(r.h, {
-        setting: d.H.PRIVACY_SAFETY_ALERTS_V2,
-        scrollPosition: c.d1.DM_SAFETY_ALERTS_V2,
+        setting: c.H.PRIVACY_SAFETY_ALERTS_V2,
+        scrollPosition: d.d1.DM_SAFETY_ALERTS_V2,
         children: (0, i.jsx)(o.Ay, {
             value: e,
-            onChange: a.a,
+            onChange: l.a,
             title: _.intl.string(_.t.qFsx5q),
             note: _.intl.format(_.t.lunaRv, {
-                learnMoreLink: l.A.getArticleURL(u.MVz.SAFETY_ALERTS)
+                learnMoreLink: a.A.getArticleURL(u.MVz.SAFETY_ALERTS)
             })
         })
     })

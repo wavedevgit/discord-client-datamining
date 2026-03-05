@@ -1,88 +1,88 @@
-/** chunk id: 338145, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    w: () => N
-}), i(321073);
-var n = i(627968),
-    l = i(64700),
-    s = i(158954),
-    a = i(311907),
-    r = i(397927),
-    u = i(827343),
-    o = i(419954),
-    d = i(430452),
-    A = i(975571),
-    T = i(544028),
-    S = i(780964),
-    E = i(652215),
-    g = i(985018);
-let c = i(993830),
-    _ = i(413142),
-    I = {
-        page: E.liQ.USER_SETTINGS,
-        section: E.JJy.SETTINGS_VOICE_AND_VIDEO
+/** chunk id: 338145, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    w: () => T
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
+    l = n(158954),
+    a = n(311907),
+    r = n(397927),
+    o = n(827343),
+    d = n(419954),
+    c = n(430452),
+    u = n(975571),
+    _ = n(544028),
+    g = n(780964),
+    m = n(652215),
+    A = n(985018);
+let h = n(993830),
+    p = n(413142),
+    x = {
+        page: m.liQ.USER_SETTINGS,
+        section: m.JJy.SETTINGS_VOICE_AND_VIDEO
     };
 
-function C() {
-    let t = (0, a.bG)([T.A], () => (0, s.qB1)(T.A.theme));
-    return (0, n.jsx)("img", {
-        src: t ? c : _,
+function E() {
+    let e = (0, a.bG)([_.A], () => (0, l.qB1)(_.A.theme));
+    return (0, i.jsx)("img", {
+        src: e ? h : p,
         width: 48,
         height: 32,
         alt: ""
     })
 }
-let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
-    useSearchTerms: () => [g.intl.string(g.t.t8Qhib), g.intl.string(g.t.hmfkCi)],
+let T = (0, d.E2)(g.X.VOICE_NOISE_SUPPRESSION_SETTING, {
+    useSearchTerms: () => [A.intl.string(A.t.t8Qhib), A.intl.string(A.t.hmfkCi)],
     usePredicate: function() {
-        return (0, a.bG)([d.Ay], () => d.Ay.isInputProfileCustom() && d.Ay.isNoiseSuppressionSupported())
+        return (0, a.bG)([c.Ay], () => c.Ay.isInputProfileCustom() && c.Ay.isNoiseSuppressionSupported())
     },
     Component: function() {
-        let t = l.useCallback(t => {
-                u.A.setNoiseCancellation("KRISP" === t, I), u.A.setNoiseSuppression("STANDARD" === t, I)
+        let e = s.useCallback(e => {
+                o.A.setNoiseCancellation("KRISP" === e, x), o.A.setNoiseSuppression("STANDARD" === e, x)
             }, []),
             {
-                noiseCancellation: e,
-                noiseSuppression: i,
-                isNoiseSuppressionSupported: o,
-                isNoiseCancellationSupported: T
-            } = (0, a.cf)([d.Ay], () => ({
-                noiseCancellation: d.Ay.getNoiseCancellation(),
-                noiseSuppression: d.Ay.getNoiseSuppression(),
-                isNoiseSuppressionSupported: d.Ay.isNoiseSuppressionSupported(),
-                isNoiseCancellationSupported: d.Ay.isNoiseCancellationSupported()
+                noiseCancellation: t,
+                noiseSuppression: n,
+                isNoiseSuppressionSupported: d,
+                isNoiseCancellationSupported: _
+            } = (0, a.cf)([c.Ay], () => ({
+                noiseCancellation: c.Ay.getNoiseCancellation(),
+                noiseSuppression: c.Ay.getNoiseSuppression(),
+                isNoiseSuppressionSupported: c.Ay.isNoiseSuppressionSupported(),
+                isNoiseCancellationSupported: c.Ay.isNoiseCancellationSupported()
             })),
-            S = l.useMemo(() => {
-                let t = [];
-                return T && t.push({
+            g = s.useMemo(() => {
+                let e = [];
+                return _ && e.push({
                     id: "krisp",
-                    label: g.intl.string(g.t.rdoNzt),
+                    label: A.intl.string(A.t.rdoNzt),
                     value: "KRISP"
-                }), o && t.push({
+                }), d && e.push({
                     id: "standard",
-                    label: g.intl.string(g.t.qXeYHw),
+                    label: A.intl.string(A.t.qXeYHw),
                     value: "STANDARD"
-                }), t.push({
+                }), e.push({
                     id: "disabled",
-                    label: g.intl.string(g.t.wkYAlz),
+                    label: A.intl.string(A.t.wkYAlz),
                     value: "NONE"
-                }), t
-            }, [T, o]),
-            c = T ? g.intl.format(g.t["1q5aTp"], {
-                helpArticle: A.A.getArticleURL(E.MVz.NOISE_SUPPRESSION)
-            }) : g.intl.string(g.t.OWKjw5);
-        return (0, n.jsxs)(s.BJc, {
+                }), e
+            }, [_, d]),
+            h = _ ? A.intl.format(A.t["1q5aTp"], {
+                helpArticle: u.A.getArticleURL(m.MVz.NOISE_SUPPRESSION)
+            }) : A.intl.string(A.t.OWKjw5);
+        return (0, i.jsxs)(l.BJc, {
             direction: "vertical",
             gap: 0,
-            children: [(0, n.jsx)(r.l6P, {
-                label: g.intl.string(g.t.t8Qhib),
-                description: c,
+            children: [(0, i.jsx)(r.l6P, {
+                label: A.intl.string(A.t.t8Qhib),
+                description: h,
                 layout: "horizontal",
-                value: e ? "KRISP" : i ? "STANDARD" : "NONE",
-                onSelectionChange: t,
-                options: S,
+                value: t ? "KRISP" : n ? "STANDARD" : "NONE",
+                onSelectionChange: e,
+                options: g,
                 selectionMode: "single",
                 fullWidth: !0
-            }), T && (0, n.jsx)(C, {})]
+            }), _ && (0, i.jsx)(E, {})]
         })
     }
 })

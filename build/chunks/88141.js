@@ -1,15 +1,15 @@
-/** chunk id: 88141, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 88141, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     c: () => r
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(985018);
-let a = (0, n.AK)(l.X.NOTIFICATIONS_TO_VOICE_AND_VIDEO_SOUNDS_NAVIGATOR, {
-        useSubtitle: () => s.intl.string(s.t["MMy+lm"]),
-        useSearchTerms: () => [s.intl.string(s.t["MMy+lm"])],
-        destinationKey: l.X.SOUNDS_CATEGORY
+var i = n(419954),
+    s = n(780964),
+    l = n(985018);
+let a = (0, i.AK)(s.X.NOTIFICATIONS_TO_VOICE_AND_VIDEO_SOUNDS_NAVIGATOR, {
+        useSubtitle: () => l.intl.string(l.t["MMy+lm"]),
+        useSearchTerms: () => [l.intl.string(l.t["MMy+lm"])],
+        destinationKey: s.X.SOUNDS_CATEGORY
     }),
-    r = (0, n.gN)(l.X.NOTIFICATIONS_SOUNDS_RELATED_SETTINGS, {
+    r = (0, i.gN)(s.X.NOTIFICATIONS_SOUNDS_RELATED_SETTINGS, {
         buildLayout: () => [a]
     })

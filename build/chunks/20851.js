@@ -1,60 +1,60 @@
-/** chunk id: 20851, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => p
+/** chunk id: 20851, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => h
 });
-var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    o = n.n(r),
-    a = n(384231),
-    s = n(903369),
-    u = n(491182),
-    c = n(538355),
-    d = n(699352),
-    m = n(715628),
-    f = n(752636),
-    g = n(119907);
-let p = l.memo(function(e) {
+var n = a(627968),
+    r = a(64700),
+    i = a(503698),
+    s = a.n(i),
+    l = a(384231),
+    c = a(903369),
+    o = a(491182),
+    d = a(538355),
+    u = a(699352),
+    m = a(715628),
+    p = a(752636),
+    _ = a(119907);
+let h = r.memo(function(e) {
     let {
         message: t,
-        channel: n,
-        compact: r,
-        className: p,
-        isGroupStart: A,
-        hideSimpleEmbedContent: _ = !0,
-        disableInteraction: v,
-        previewGuildId: S,
-        preview: y,
-        author: E
-    } = e, h = S ?? (0, s.U)(t), b = (0, a.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
-        content: C
-    } = (0, c.A)(t, {
-        hideSimpleEmbedContent: _,
-        allowList: b,
-        allowHeading: b,
+        channel: a,
+        compact: i,
+        className: h,
+        isGroupStart: x,
+        hideSimpleEmbedContent: f = !0,
+        disableInteraction: g,
+        previewGuildId: v,
+        preview: A,
+        author: C
+    } = e, j = v ?? (0, c.U)(t), N = (0, l.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+        content: b
+    } = (0, d.A)(t, {
+        hideSimpleEmbedContent: f,
+        allowList: N,
+        allowHeading: N,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), N = l.useMemo(() => (0, f.A)({
+    }), I = r.useMemo(() => (0, p.A)({
         ...e,
-        channel: n,
-        guildId: h
-    }), [e, n, h]);
-    return (0, i.jsx)(u.A, {
-        compact: r,
-        className: o()(p, {
-            [g.iU]: !0,
-            [g.HJ]: !r,
-            [g._A]: A
+        channel: a,
+        guildId: j
+    }), [e, a, j]);
+    return (0, n.jsx)(o.A, {
+        compact: i,
+        className: s()(h, {
+            [_.iU]: !0,
+            [_.HJ]: !i,
+            [_._A]: x
         }),
-        childrenHeader: N,
-        childrenMessageContent: (0, m.A)(e, C),
-        childrenAccessories: null != n ? (0, d.J)({
+        childrenHeader: I,
+        childrenMessageContent: (0, m.A)(e, b),
+        childrenAccessories: null != a ? (0, u.J)({
             message: t,
-            channel: n,
-            compact: r
+            channel: a,
+            compact: i
         }, !1, !1) : null,
-        disableInteraction: v,
-        author: E,
-        preview: y
+        disableInteraction: g,
+        author: C,
+        preview: A
     })
 })

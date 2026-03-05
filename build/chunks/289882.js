@@ -1,10 +1,10 @@
-/** chunk id: 289882, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 289882, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     o: () => a
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(284109);
-let a = (0, n.zZ)(l.X.CHAT_SPOILERS_CATEGORY, {
-    buildLayout: () => [s.z]
+var i = n(419954),
+    s = n(780964),
+    l = n(284109);
+let a = (0, i.zZ)(s.X.CHAT_SPOILERS_CATEGORY, {
+    buildLayout: () => [l.z]
 })

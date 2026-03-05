@@ -1,15 +1,15 @@
-/** chunk id: 345584, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => o
+/** chunk id: 345584, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => d
 });
-var n = i(793574),
-    l = i(589051),
-    s = i(419954),
-    a = i(780964),
-    r = i(790076),
-    u = i(985018);
-let o = (0, s.E2)(a.X.OVERLAY_BUG_REPORTER_SETTING, {
+var i = n(793574),
+    s = n(589051),
+    l = n(419954),
+    a = n(780964),
+    r = n(790076),
+    o = n(985018);
+let d = (0, l.E2)(a.X.OVERLAY_BUG_REPORTER_SETTING, {
     Component: r.F1,
-    useSearchTerms: () => [u.intl.string(u.t["z4/l+V"])],
-    usePredicate: () => (0, l.X4)(n.A.USER_SETTINGS)
+    useSearchTerms: () => [o.intl.string(o.t["z4/l+V"])],
+    usePredicate: () => (0, s.X4)(i.A.USER_SETTINGS)
 })

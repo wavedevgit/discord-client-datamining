@@ -1,18 +1,18 @@
-/** chunk id: 935094, original params: t,e,a (module,exports,require) **/
-a.d(e, {
-    f: () => r
+/** chunk id: 935094, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    f: () => l
 });
-var n = a(64700),
-    l = a(575593);
-let r = t => {
-    let [e, a] = (0, n.useState)(null);
+var t = a(64700),
+    i = a(575593);
+let l = e => {
+    let [n, a] = (0, t.useState)(null);
     return {
-        previewingVariantIndex: e,
-        handleEntering: (0, n.useCallback)(e => {
-            t?.type !== l.R.VARIANTS_GROUP || a(e)
-        }, [t?.type]),
-        handleLeaving: (0, n.useCallback)(() => {
-            t?.type !== l.R.VARIANTS_GROUP || a(null)
-        }, [t?.type])
+        previewingVariantIndex: n,
+        handleEntering: (0, t.useCallback)(n => {
+            e?.type !== i.R.VARIANTS_GROUP || a(n)
+        }, [e?.type]),
+        handleLeaving: (0, t.useCallback)(() => {
+            e?.type !== i.R.VARIANTS_GROUP || a(null)
+        }, [e?.type])
     }
 }

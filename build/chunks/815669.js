@@ -1,21 +1,21 @@
-/** chunk id: 815669, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    z: () => T
+/** chunk id: 815669, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    z: () => _
 });
-var n = i(311907),
-    l = i(955572),
-    s = i(775602),
-    a = i(419954),
-    r = i(975571),
-    u = i(780964),
-    o = i(358776),
-    d = i(652215),
-    A = i(985018);
-let T = (0, a.zD)(u.X.REDUCED_MOTION, {
-    useTitle: () => A.intl.string(A.t.b3XBzg),
-    useSubtitle: (0, o.Ci)("Motion") ? () => A.intl.format(A.t.XqvxJc, {
-        helpdeskArticle: r.A.getArticleURL(d.MVz.REDUCED_MOTION)
+var i = n(311907),
+    s = n(955572),
+    l = n(775602),
+    a = n(419954),
+    r = n(975571),
+    o = n(780964),
+    d = n(358776),
+    c = n(652215),
+    u = n(985018);
+let _ = (0, a.zD)(o.X.REDUCED_MOTION, {
+    useTitle: () => u.intl.string(u.t.b3XBzg),
+    useSubtitle: (0, d.Ci)("Motion") ? () => u.intl.format(u.t.XqvxJc, {
+        helpdeskArticle: r.A.getArticleURL(c.MVz.REDUCED_MOTION)
     }) : void 0,
-    useValue: () => (0, n.bG)([s.A], () => s.A.useReducedMotion),
-    setValue: t => (0, l.qz)(t ? "reduce" : "no-preference")
+    useValue: () => (0, i.bG)([l.A], () => l.A.useReducedMotion),
+    setValue: e => (0, s.qz)(e ? "reduce" : "no-preference")
 })

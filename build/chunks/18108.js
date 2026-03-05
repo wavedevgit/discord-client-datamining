@@ -5,9 +5,9 @@ n.d(t, {
 let i = (e, t) => {
         let n = s(e, t);
         if (n > 0) {
-            let i = a(e, t),
+            let i = l(e, t),
                 s = (n / e.length + n / t.length + (n - i) / n) / 3;
-            return s < .7 ? s : s + .1 * l(e, t) * (1 - s)
+            return s < .7 ? s : s + .1 * a(e, t) * (1 - s)
         }
         return 0
     },
@@ -15,36 +15,36 @@ let i = (e, t) => {
         let n = Math.floor(Math.max(e.length, t.length) / 2) - 1,
             i = [],
             s = 0;
-        for (var a = 0; a < e.length; a++)
-            for (var l = Math.max(0, a - n); l <= Math.min(t.length, a + n); l++)
-                if (e[a] === t[l] && !i[l]) {
-                    i[l] = !0, s++;
+        for (var l = 0; l < e.length; l++)
+            for (var a = Math.max(0, l - n); a <= Math.min(t.length, l + n); a++)
+                if (e[l] === t[a] && !i[a]) {
+                    i[a] = !0, s++;
                     break
                 } return s
     },
-    a = (e, t) => {
+    l = (e, t) => {
         let n = Math.floor(Math.max(e.length, t.length) / 2) - 1,
             i = {
                 a: "",
                 b: ""
             },
             s = [];
-        for (let a = 0; a < e.length; a++)
-            for (let l = Math.max(0, a - n); l <= Math.min(t.length, a + n); l++)
-                if (e[a] === t[l] && !s[l]) {
-                    i.a += e[a], s[l] = !0;
+        for (let l = 0; l < e.length; l++)
+            for (let a = Math.max(0, l - n); a <= Math.min(t.length, l + n); a++)
+                if (e[l] === t[a] && !s[a]) {
+                    i.a += e[l], s[a] = !0;
                     break
                 } s = [];
-        for (let a = 0; a < t.length; a++)
-            for (let l = Math.max(0, a - n); l <= Math.min(e.length, a + n); l++)
-                if (t[a] === e[l] && !s[l]) {
-                    i.b += t[a], s[l] = !0;
+        for (let l = 0; l < t.length; l++)
+            for (let a = Math.max(0, l - n); a <= Math.min(e.length, l + n); a++)
+                if (t[l] === e[a] && !s[a]) {
+                    i.b += t[l], s[a] = !0;
                     break
-                } let a = 0;
-        for (let e = 0; e < i.a.length; e++) i.a[e] !== i.b[e] && a++;
-        return Math.floor(a / 2)
+                } let l = 0;
+        for (let e = 0; e < i.a.length; e++) i.a[e] !== i.b[e] && l++;
+        return Math.floor(l / 2)
     },
-    l = (e, t) => {
+    a = (e, t) => {
         let n = 0;
         for (; n < 4; n++)
             if (e[n] !== t[n]) return n;

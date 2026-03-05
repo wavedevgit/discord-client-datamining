@@ -1,15 +1,15 @@
-/** chunk id: 593942, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => s
+/** chunk id: 593942, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => l
 });
-var n = i(314116),
-    l = i(985018);
+var i = n(314116),
+    s = n(985018);
 
-function s(t, e, i) {
-    (0, n.A)({
-        title: t,
-        subtitle: e,
-        confirmText: l.intl.string(l.t.BddRzS),
-        onConfirm: i
+function l(e, t, n) {
+    (0, i.A)({
+        title: e,
+        subtitle: t,
+        confirmText: s.intl.string(s.t.BddRzS),
+        onConfirm: n
     })
 }

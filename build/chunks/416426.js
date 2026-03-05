@@ -1,27 +1,27 @@
-/** chunk id: 416426, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    V: () => o
+/** chunk id: 416426, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    V: () => d
 });
-var n = i(574381),
-    l = i(314116),
-    s = i(419954),
-    a = i(837921),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.ADVANCED_HARDWARE_ACCELERATION, {
-    useTitle: () => u.intl.string(u.t["/HIxyY"]),
-    useSubtitle: () => u.intl.string(u.t.B0hqpb),
-    usePredicate: () => n.Av && !(0, n.cX)(),
+var i = n(574381),
+    s = n(314116),
+    l = n(419954),
+    a = n(837921),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.ADVANCED_HARDWARE_ACCELERATION, {
+    useTitle: () => o.intl.string(o.t["/HIxyY"]),
+    useSubtitle: () => o.intl.string(o.t.B0hqpb),
+    usePredicate: () => i.Av && !(0, i.cX)(),
     useValue: () => a.Ay.getEnableHardwareAcceleration(),
-    setValue: t => {
-        var e;
-        let i;
-        return i = (e = t) ? u.intl.format(u.t.LYXRxL, {}) : u.intl.format(u.t.uDP3Kz, {}), void(0, l.A)({
-            title: u.intl.string(u.t.aqpAvn),
-            subtitle: i,
-            confirmText: u.intl.string(u.t.vT7ckk),
+    setValue: e => {
+        var t;
+        let n;
+        return n = (t = e) ? o.intl.format(o.t.LYXRxL, {}) : o.intl.format(o.t.uDP3Kz, {}), void(0, s.A)({
+            title: o.intl.string(o.t.aqpAvn),
+            subtitle: n,
+            confirmText: o.intl.string(o.t.vT7ckk),
             onConfirm: () => {
-                a.Ay.setEnableHardwareAcceleration(e)
+                a.Ay.setEnableHardwareAcceleration(t)
             }
         })
     }

@@ -1,13 +1,13 @@
-/** chunk id: 103520, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    a: () => u
+/** chunk id: 103520, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    a: () => o
 });
-var n = i(793998),
-    l = i(419954),
-    s = i(780964),
-    a = i(985018),
-    r = i(842130);
-let u = (0, l.E2)(s.X.FAMILY_CENTER_SETTING, {
-    Component: n.p,
+var i = n(793998),
+    s = n(419954),
+    l = n(780964),
+    a = n(985018),
+    r = n(842130);
+let o = (0, s.E2)(l.X.FAMILY_CENTER_SETTING, {
+    Component: i.p,
     useSearchTerms: () => [a.intl.string(r.default.RZqaJn), a.intl.string(r.default.bdBmqy), a.intl.string(r.default["gVWG+6"]), a.intl.string(r.default.ahKIJO), a.intl.string(r.default["8SLtqb"])]
 })

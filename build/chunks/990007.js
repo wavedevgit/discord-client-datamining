@@ -15,8 +15,8 @@ var i = n(488428),
     h = n(224750),
     _ = n(20015),
     m = n(716965),
-    p = n(671523),
-    g = n(337095),
+    g = n(671523),
+    p = n(337095),
     E = n(611010),
     I = n(287809),
     f = n(927813),
@@ -65,7 +65,7 @@ async function y(e, t, n) {
     else {
         let e = e => (0, _.n)(e, S.gfo.EMBEDDED) && e?.integrationTypesConfig?.[r.b.USER_INSTALL] != null,
             t = A.A.getApplication(c);
-        l = e(t) || e(t = E.Ay.createFromServer(await (0, g.TA)(c, U))) ? r.b.USER_INSTALL : r.b.GUILD_INSTALL
+        l = e(t) || e(t = E.Ay.createFromServer(await (0, p.TA)(c, U))) ? r.b.USER_INSTALL : r.b.GUILD_INSTALL
     }
     try {
         [s, {
@@ -90,7 +90,7 @@ async function y(e, t, n) {
             errorCode: S.Lw6.OAUTH2_ERROR
         }, `OAuth2 Authorization Error: ${e?.message||"Unknown Error"}`)
     }
-    if (j === p.l.NONE && null != s && s.authorized && d) try {
+    if (j === g.l.NONE && null != s && s.authorized && d) try {
         return (await (0, m.Gq)({
             authorize: !0,
             clientId: c,

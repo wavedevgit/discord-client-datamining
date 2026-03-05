@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(158954),
+    a = n.n(l),
+    r = n(158954),
     o = n(311907),
     c = n(990078),
     d = n(397927),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(290863),
     I = n(222823),
     N = n(309010),
-    S = n(607567),
-    b = n(234320),
+    b = n(607567),
+    S = n(234320),
     T = n(203982),
     v = n(975571),
     y = n(793322),
@@ -74,13 +74,13 @@ let P = o.Ay.connectStores([I.Ay, f.A], e => {
             category: f.A.getChannel(t.parent_id)
         }
     })(U),
-    w = o.Ay.connectStores([S.Ay], e => {
+    w = o.Ay.connectStores([b.Ay], e => {
         let {
             channel: t
         } = e;
         if (null == t.guild_id) throw Error("ConnectedVoiceChannel - somehow we got a voice channel with no guild_id...");
         return {
-            voiceStates: S.Ay.getVoiceStates(t.guild_id)[t.id]
+            voiceStates: b.Ay.getVoiceStates(t.guild_id)[t.id]
         }
     })(U),
     k = o.Ay.connectStores([x.default], e => {
@@ -186,7 +186,7 @@ class F extends s.PureComponent {
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("67231"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("56475"), n.e("54469"), n.e("57498")]).then(n.bind(n, 544676));
+                    } = await Promise.all([n.e("43600"), n.e("68587"), n.e("63379"), n.e("56026"), n.e("16301"), n.e("22191"), n.e("25961"), n.e("21968"), n.e("35894"), n.e("50796"), n.e("8458"), n.e("11810"), n.e("39048"), n.e("41538"), n.e("56475"), n.e("54469"), n.e("67109")]).then(n.bind(n, 544676));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         guild: t.record,
@@ -352,7 +352,7 @@ class F extends s.PureComponent {
             query: n
         } = this.state, s = t.length > 0 && "" !== n;
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(b.EG, {
+            children: [(0, i.jsx)(S.EG, {
                 event: L.jej.GLOBAL_CLIPBOARD_PASTE,
                 handler: this.handleGlobalPaste
             }), (0, i.jsx)(d.vN3, {
@@ -523,7 +523,7 @@ class F extends s.PureComponent {
     };
     renderProtip() {
         return (0, i.jsx)(g.A, {
-            className: r()(D.PP, {
+            className: a()(D.PP, {
                 [D.ov]: this.state.query.length > 0
             }),
             type: g.A.Types.INLINE,
@@ -548,7 +548,7 @@ class F extends s.PureComponent {
         })
     }
     render() {
-        return (0, i.jsx)(a.dWK, {
+        return (0, i.jsx)(r.dWK, {
             "aria-label": M.intl.string(M.t.ZvKwYa),
             size: "lg",
             transitionState: this.props.transitionState,

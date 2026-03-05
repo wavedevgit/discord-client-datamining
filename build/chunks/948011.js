@@ -18,10 +18,10 @@ function u(e) {
         location: t
     }), u = (0, o.d)({
         location: t
-    }), m = (0, a.bG)([l.default], () => l.default.getCurrentUser()), h = (0, a.bG)([s.A], () => null != m ? s.A.getFirstWishlistId(m.id) : null), p = (0, i.A)("wishlist_user_profile_account_popout_upsell"), x = (0, d.hJ)({
+    }), m = (0, a.bG)([l.default], () => l.default.getCurrentUser()), h = (0, a.bG)([s.A], () => null != m ? s.A.getFirstWishlistId(m.id) : null), x = (0, i.A)("wishlist_user_profile_account_popout_upsell"), p = (0, d.hJ)({
         gameIds: c.sQ
     }), g = (0, d.ok)({
         gameIds: c.sQ
     });
-    return u && n && null == h && (g || x) || p
+    return u && n && null == h && (g || p) || x
 }

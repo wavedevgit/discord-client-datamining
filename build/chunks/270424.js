@@ -11,8 +11,8 @@ var a = n(627968),
     c = n(496587),
     o = n(800007),
     u = n(294726),
-    _ = n(985018),
-    m = n(710882);
+    m = n(985018),
+    _ = n(710882);
 
 function x(e) {
     let {
@@ -24,7 +24,7 @@ function x(e) {
         actions: (0, a.jsx)(s.$nd, {
             variant: "secondary",
             fullWidth: !0,
-            text: _.intl.string(u.default.f0xbih),
+            text: m.intl.string(u.default.f0xbih),
             icon: s.I9m,
             iconPosition: "end",
             onClick: () => (0, d.h)({
@@ -32,19 +32,19 @@ function x(e) {
             })
         }),
         children: (0, a.jsxs)("div", {
-            className: m.Q,
+            className: _.Q,
             children: [(0, a.jsx)(l.u7P, {
                 alt: "",
                 width: 117,
                 height: 78
             }), (0, a.jsxs)("div", {
-                className: m.y,
+                className: _.y,
                 children: [(0, a.jsx)(s.DZT, {
                     variant: "heading-md/semibold",
-                    children: _.intl.string(u.default.qE2eqK)
+                    children: m.intl.string(u.default.qE2eqK)
                 }), (0, a.jsx)(s.EYj, {
                     variant: "text-sm/medium",
-                    children: _.intl.string(u.default.n4Towj)
+                    children: m.intl.string(u.default.n4Towj)
                 })]
             })]
         })

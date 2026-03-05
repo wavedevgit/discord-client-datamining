@@ -1,14 +1,14 @@
-/** chunk id: 43119, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    X: () => o
+/** chunk id: 43119, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    X: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(572406),
-    a = i(640351),
-    r = i(350003),
-    u = i(985018);
-let o = (0, n.zZ)(l.X.AUDIO_AND_SCREEN_READER_CATEGORY, {
-    useTitle: () => u.intl.string(u.t.XVR0Rb),
-    buildLayout: () => [a.N, s.P, r.R]
+var i = n(419954),
+    s = n(780964),
+    l = n(572406),
+    a = n(640351),
+    r = n(350003),
+    o = n(985018);
+let d = (0, i.zZ)(s.X.AUDIO_AND_SCREEN_READER_CATEGORY, {
+    useTitle: () => o.intl.string(o.t.XVR0Rb),
+    buildLayout: () => [a.N, l.P, r.R]
 })

@@ -1,11 +1,11 @@
 /** chunk id: 334726, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => l,
+    i: () => a,
     r: () => r
 });
 var i = n(945810),
     s = n(890164);
-let a = (0, i.mj)({
+let l = (0, i.mj)({
         name: "2026-02-activity-privacy-matching",
         kind: "user",
         defaultConfig: {
@@ -27,13 +27,13 @@ let a = (0, i.mj)({
             }
         }
     }),
-    l = e => {
+    a = e => {
         let t = (0, s.lX)(e),
-            n = a.useConfig({
+            n = l.useConfig({
                 location: e
             });
         return t || n.copyChanges
     },
-    r = e => (0, s.W1)(e) || a.getConfig({
+    r = e => (0, s.W1)(e) || l.getConfig({
         location: e
     }).upsell

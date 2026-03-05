@@ -1,41 +1,41 @@
 /** chunk id: 617514, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var i = n(627968),
     s = n(311907),
-    a = n(554146),
-    l = n(397927),
+    l = n(554146),
+    a = n(397927),
     r = n(793574),
     o = n(932001),
-    c = n(657331),
-    d = n(961350),
+    d = n(657331),
+    c = n(961350),
     u = n(128450),
     _ = n(212168),
-    m = n(49999),
-    A = n(518477),
-    g = n(985018),
+    g = n(49999),
+    m = n(518477),
+    A = n(985018),
     h = n(133788);
-let x = () => {
-    let [e, t] = (0, o.kn)([a.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === a.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, x = (0, s.bG)([d.default], () => d.default.getId());
+let p = () => {
+    let [e, t] = (0, o.kn)([l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, p = (0, s.bG)([c.default], () => c.default.getId());
     return (0, i.jsx)(u.A, {
-        title: g.intl.string(g.t.Jzj9q4),
-        description: g.intl.string(g.t.lfF1Sp),
-        titleIcon: n ? (0, i.jsx)(l.LpS, {
+        title: A.intl.string(A.t.Jzj9q4),
+        description: A.intl.string(A.t.lfF1Sp),
+        titleIcon: n ? (0, i.jsx)(a.LpS, {
             className: h.A,
-            text: g.intl.string(g.t.y2b7CA)
+            text: A.intl.string(A.t.y2b7CA)
         }) : null,
         borderType: _.i.LIMITED,
         showBorder: n,
         hasBackground: n,
-        children: (0, i.jsx)(l.Button, {
-            text: g.intl.string(g.t.Geikwq),
+        children: (0, i.jsx)(a.Button, {
+            text: A.intl.string(A.t.Geikwq),
             onClick: () => {
-                n && t(m.i.TAKE_ACTION), (0, c.openUserProfileModal)({
-                    userId: x,
+                n && t(g.i.TAKE_ACTION), (0, d.openUserProfileModal)({
+                    userId: p,
                     sourceAnalyticsLocations: [r.A.USER_SETTINGS_USER_PROFILE],
                     hideRestrictedProfile: !0,
-                    tabSection: A.RP.WIDGETS
+                    tabSection: m.RP.WIDGETS
                 })
             },
             size: "sm"

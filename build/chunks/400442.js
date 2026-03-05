@@ -1,22 +1,22 @@
-/** chunk id: 400442, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    j: () => A
+/** chunk id: 400442, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    j: () => u
 });
-var n = i(627968),
-    l = i(565645),
-    s = i(46054),
-    a = i(419954),
-    r = i(253932),
-    u = i(780964),
-    o = i(358776),
-    d = i(985018);
-let A = (0, a.zD)(u.X.CHAT_EMOJI_CONVERT_EMOTICONS, {
-    useTitle: () => d.intl.string(d.t["79qal8"]),
-    useSubtitle: () => (0, o.bp)("ConvertEmoticons") ? d.intl.format(d.t.GejoQK, {
-        emojiHook: (t, e) => (0, n.jsx)(l.A, {
+var i = n(627968),
+    s = n(565645),
+    l = n(46054),
+    a = n(419954),
+    r = n(253932),
+    o = n(780964),
+    d = n(358776),
+    c = n(985018);
+let u = (0, a.zD)(o.X.CHAT_EMOJI_CONVERT_EMOTICONS, {
+    useTitle: () => c.intl.string(c.t["79qal8"]),
+    useSubtitle: () => (0, d.bp)("ConvertEmoticons") ? c.intl.format(c.t.GejoQK, {
+        emojiHook: (e, t) => (0, i.jsx)(s.A, {
             emojiName: "\uD83D\uDE42"
-        }, e)
-    }) : s.A.parse(d.intl.string(d.t["20dvuQ"])),
+        }, t)
+    }) : l.A.parse(c.intl.string(c.t["20dvuQ"])),
     useValue: r.j7.useSetting,
     setValue: r.j7.updateSetting
 })

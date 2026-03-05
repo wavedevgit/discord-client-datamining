@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(531260),
     _ = n(771781),
     m = n(932001),
-    p = n(320118),
-    g = n(287809),
+    g = n(320118),
+    p = n(287809),
     E = n(166403),
     I = n(954571),
     f = n(927578),
@@ -54,7 +54,7 @@ var i = n(627968),
 let X = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([g.default], () => g.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), r = (0, O.V)(), l = (0, b.O)(), a = (0, T.cg)(), o = (0, W.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != r || null != l || a || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([p.default], () => p.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), r = (0, O.V)(), l = (0, b.O)(), a = (0, T.cg)(), o = (0, W.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != r || null != l || a || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     Z = e => {
@@ -65,7 +65,7 @@ let X = e => {
                 locationState: et,
                 ...en
             } = e,
-            ei = (0, s.bG)([g.default], () => g.default.getCurrentUser()),
+            ei = (0, s.bG)([p.default], () => p.default.getCurrentUser()),
             er = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
             el = (0, f.Of)(ei, er),
             ea = (0, f.YE)(ei, K.PremiumTypes.TIER_2),
@@ -80,13 +80,13 @@ let X = e => {
             }),
             e_ = (0, R.bf)(),
             em = (0, W.H)(),
-            ep = (0, w.Tp)(),
-            eg = (0, s.bG)([N.A], () => N.A.getReminderStateId()),
+            eg = (0, w.Tp)(),
+            ep = (0, s.bG)([N.A], () => N.A.getReminderStateId()),
             eE = (0, M.c7)(),
             {
                 programReward: eI,
                 isEligible: ef
-            } = (0, p.F)({
+            } = (0, g.F)({
                 location: "NitroTabButton"
             }),
             eC = !(0, f.TW)(ei) && ef,
@@ -188,7 +188,7 @@ let X = e => {
             trialOffer: eo,
             isTabSelected: Z
         }), C = 4);
-        ep && (n = (0, i.jsx)(c.Exy, {
+        eg && (n = (0, i.jsx)(c.Exy, {
             type: {
                 text: Q.intl.string(Q.t.RDE0Sc)
             },
@@ -197,7 +197,7 @@ let X = e => {
             I.default.track(z.HAw.NITRO_TAB_VISITED, {
                 badge_decorator: C,
                 has_premium: el
-            }), (0, w.ne)(eg)
+            }), (0, w.ne)(ep)
         }, C = 6);
         let eQ = (0, i.jsx)(u.z9, {
             listItemRef: J,

@@ -1,39 +1,39 @@
 /** chunk id: 688927, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
 var l = n(627968),
     a = n(64700),
-    i = n(397927),
-    r = n(46054),
+    r = n(397927),
+    i = n(46054),
     s = n(861662),
     d = n(985018),
     o = n(888791);
-let u = e => {
+let c = e => {
     let {
         node: {
             header: t,
             subheader: n,
-            button: u
+            button: c
         },
-        isModeratorReport: c,
+        isModeratorReport: u,
         isTidaReport: _ = !1,
         hideTitle: m = !1
-    } = e, x = u?.type === "submit", p = a.useMemo(() => r.A.reactParserFor({
-        ...r.A.defaultRules,
+    } = e, x = c?.type === "submit", p = a.useMemo(() => i.A.reactParserFor({
+        ...i.A.defaultRules,
         link: s.B
     }), []);
     return (0, l.jsxs)("div", {
         className: o.N,
-        children: [m || null == t || "" === t ? null : (0, l.jsx)(i.Heading, {
+        children: [m || null == t || "" === t ? null : (0, l.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
             children: t
-        }), null != n && "" !== t ? (0, l.jsx)(i.Text, {
+        }), null != n && "" !== t ? (0, l.jsx)(r.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
             children: p(n)
-        }) : null, x && !c && !_ && (0, l.jsx)(i.Text, {
+        }) : null, x && !u && !_ && (0, l.jsx)(r.Text, {
             variant: "text-sm/normal",
             children: d.intl.format(d.t.Q0tSKT, {})
         })]

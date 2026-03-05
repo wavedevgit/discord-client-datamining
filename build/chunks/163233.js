@@ -1,6 +1,6 @@
 /** chunk id: 163233, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => y
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -13,43 +13,43 @@ var a = n(627968),
     u = n(429913),
     m = n(379848),
     h = n(183555),
-    p = n(633075),
-    x = n(735321),
+    x = n(633075),
+    p = n(735321),
     g = n(667049),
     _ = n(657331),
     f = n(384377),
-    b = n(961350),
-    v = n(403362),
+    v = n(961350),
+    b = n(403362),
     j = n(49999),
     A = n(518477),
     C = n(985018);
 
-function T(e) {
+function y(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [T, y] = i.useState(!1), {
+    } = e, [y, T] = i.useState(!1), {
         trackUserProfileEditAction: S
-    } = (0, h.NJ)(), E = (0, s.bG)([b.default], () => b.default.getId()), N = function() {
-        let e, t, n = (0, s.bG)([b.default], () => b.default.getId()),
+    } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
+        let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
-            l = i.useMemo(() => a.filter(e => e instanceof p.R), [a]),
+            l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
             r = (e = (0, c.ul)({
                 location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
             }), i.useMemo(() => e?.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
             m = i.useMemo(() => r?.map(e => e.applicationId) ?? [], [r]),
-            h = (t = (0, u.A)(m), i.useMemo(() => t.filter(v.Vq), [t])),
+            h = (t = (0, u.A)(m), i.useMemo(() => t.filter(b.Vq), [t])),
             {
-                tokens: x,
+                tokens: p,
                 fetched: _
             } = (0, o.j)(m),
             f = (0, d.U9)(h);
         return i.useMemo(() => {
-            if (null == r || null == x || !_) return null;
+            if (null == r || null == p || !_) return null;
             let e = [],
                 t = [];
             for (let n of r) {
-                let a = x.find(e => e.application.id === n.applicationId),
+                let a = p.find(e => e.application.id === n.applicationId),
                     i = l.find(e => e.applicationId === n.applicationId),
                     s = h.find(e => e.id === n.applicationId),
                     r = f.find(e => e.context.application.id === n.applicationId);
@@ -68,7 +68,7 @@ function T(e) {
                 })
             }
             return [...e, ...t]
-        }, [r, x, _, l, h, f])
+        }, [r, p, _, l, h, f])
     }(), {
         analyticsLocations: I
     } = (0, r.Ay)();
@@ -103,28 +103,28 @@ function T(e) {
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
-                        y(!0), d().then(() => {
+                        T(!0), d().then(() => {
                             let e;
-                            return e = new p.R({
+                            return e = new x.R({
                                 applicationId: r.application.id
-                            }), void((0, x.Y5)(e), S({
+                            }), void((0, p.Y5)(e), S({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))
-                        }).finally(() => y(!1))
+                        }).finally(() => T(!1))
                     },
-                    loading: T
+                    loading: y
                 } : {
                     text: C.intl.string(C.t["DSJi3+"]),
                     onClick: () => {
                         r.authFlow.initiate({
                             onConfirm: () => {
-                                y(!0), d().finally(() => y(!1))
+                                T(!0), d().finally(() => T(!1))
                             },
                             analyticsLocations: I
                         })
                     },
-                    loading: T
+                    loading: y
                 }]
             })
         }

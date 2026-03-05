@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(791498),
+    l = n(397927),
+    a = n(791498),
     r = n(244242);
 
 function o(e) {
@@ -14,27 +14,27 @@ function o(e) {
     } = e, {
         useLabel: n,
         useTitle: o,
-        useSubtitle: c,
-        useVariant: d,
+        useSubtitle: d,
+        useVariant: c,
         useDisabled: u,
         onClick: _
-    } = t, [m, A] = s.useState(!1), g = (0, l.q)(t), h = o(), x = c?.(), p = n(), E = d?.(), C = u?.();
+    } = t, [g, m] = s.useState(!1), A = (0, a.q)(t), h = o(), p = d?.(), x = n(), E = c?.(), T = u?.();
     return (0, i.jsx)(r.L, {
-        children: (0, i.jsx)(a.D0$, {
+        children: (0, i.jsx)(l.D0$, {
             label: h,
-            description: x,
-            disabled: C,
+            description: p,
+            disabled: T,
             layout: "horizontal",
-            children: (0, i.jsx)(a.Button, {
+            children: (0, i.jsx)(l.Button, {
                 onClick: () => {
-                    g();
+                    A();
                     let e = _();
-                    e instanceof Promise && (A(!0), e.finally(() => A(!1)))
+                    e instanceof Promise && (m(!0), e.finally(() => m(!1)))
                 },
-                text: p,
+                text: x,
                 variant: E,
-                disabled: C,
-                loading: m
+                disabled: T,
+                loading: g
             })
         })
     })

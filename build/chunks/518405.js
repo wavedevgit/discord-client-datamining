@@ -1,17 +1,17 @@
-/** chunk id: 518405, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    t: () => o
+/** chunk id: 518405, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    t: () => d
 });
-var n = i(379587),
-    l = i(158583),
-    s = i(419954),
-    a = i(780964),
-    r = i(985018),
-    u = i(665606);
-let o = (0, s.E2)(a.X.CHAT_FAVORITES_TOGGLE, {
-    usePredicate: () => (0, n.m)({
+var i = n(379587),
+    s = n(158583),
+    l = n(419954),
+    a = n(780964),
+    r = n(985018),
+    o = n(665606);
+let d = (0, l.E2)(a.X.CHAT_FAVORITES_TOGGLE, {
+    usePredicate: () => (0, i.m)({
         location: "FavoritesGuildToggle"
     }).enabled,
-    useSearchTerms: () => [r.intl.string(u.default["0h2CcM"]), r.intl.string(u.default.IF7iE0)],
-    Component: l.T
+    useSearchTerms: () => [r.intl.string(o.default["0h2CcM"]), r.intl.string(o.default.IF7iE0)],
+    Component: s.T
 })

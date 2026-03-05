@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     s = n(522579),
-    a = n(77729),
-    l = n(723702);
+    l = n(77729),
+    a = n(723702);
 class r extends i.Component {
     getFileContents() {
         let {
@@ -20,10 +20,10 @@ class r extends i.Component {
                 fileName: n,
                 onDownload: i
             } = this.props;
-        l.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), i?.()
+        a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), i?.()
     };
     downloadNative(e, t) {
-        a.A.fileManager.saveWithDialog(e, t)
+        l.A.fileManager.saveWithDialog(e, t)
     }
     downloadHtml5(e, t) {
         let n = new Blob([e], {

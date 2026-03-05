@@ -1,57 +1,57 @@
-/** chunk id: 932055, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Jz: () => S,
-    i: () => E,
-    vd: () => T
-}), i(321073);
-var n = i(311907),
-    l = i(264686),
-    s = i(839214),
-    a = i(419954),
-    r = i(400492),
-    u = i(803224),
-    o = i(780964),
-    d = i(985018);
-let A = (0, s.D)(() => ({
+/** chunk id: 932055, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Jz: () => g,
+    i: () => m,
+    vd: () => _
+}), n(321073);
+var i = n(311907),
+    s = n(264686),
+    l = n(839214),
+    a = n(419954),
+    r = n(400492),
+    o = n(803224),
+    d = n(780964),
+    c = n(985018);
+let u = (0, l.D)(() => ({
     currentPlayingSound: null
 }));
 
-function T() {
-    let t = A.getField("currentPlayingSound");
-    t?.stop(), A.setState({
+function _() {
+    let e = u.getField("currentPlayingSound");
+    e?.stop(), u.setState({
         currentPlayingSound: null
     })
 }
 
-function S(t) {
-    let e = A.getField("currentPlayingSound");
-    e?.stop();
-    let i = (0, r.Ak)(t);
-    A.setState({
-        currentPlayingSound: i
+function g(e) {
+    let t = u.getField("currentPlayingSound");
+    t?.stop();
+    let n = (0, r.Ak)(e);
+    u.setState({
+        currentPlayingSound: n
     })
 }
 
-function E(t) {
-    return (0, a.zD)(`${o.X.SOUNDS_LIST_ITEM_PREFIX}${t.sound}`, {
-        useTitle: t.useTitle,
-        useSubtitle: () => d.intl.format(d.t.OOiGCM, {
-            onClick: () => S(t.sound)
+function m(e) {
+    return (0, a.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
+        useTitle: e.useTitle,
+        useSubtitle: () => c.intl.format(c.t.OOiGCM, {
+            onClick: () => g(e.sound)
         }),
         useValue: () => {
-            let e = (0, n.bG)([u.A], () => u.A.isSoundDisabled(t.sound)),
-                i = t.useDisabled?.();
-            return !e && !i
+            let t = (0, i.bG)([o.A], () => o.A.isSoundDisabled(e.sound)),
+                n = e.useDisabled?.();
+            return !t && !n
         },
-        setValue: e => {
-            let i = u.A.getDisabledSounds().filter(e => e !== t.sound);
-            e || i.push(t.sound), l.default.setDisabledSounds(i)
+        setValue: t => {
+            let n = o.A.getDisabledSounds().filter(t => t !== e.sound);
+            t || n.push(e.sound), s.default.setDisabledSounds(n)
         },
         useDisabled: () => {
-            let e = t.useDisabled?.(),
-                i = (0, n.bG)([u.A], () => u.A.getDisableAllSounds());
-            return e || i
+            let t = e.useDisabled?.(),
+                n = (0, i.bG)([o.A], () => o.A.getDisableAllSounds());
+            return t || n
         },
-        useDisabledMessage: t.useDisabledMessage
+        useDisabledMessage: e.useDisabledMessage
     })
 }

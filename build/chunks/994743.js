@@ -1,24 +1,24 @@
-/** chunk id: 994743, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    N: () => d
+/** chunk id: 994743, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    N: () => c
 });
-var n = i(574381),
-    l = i(419954),
-    s = i(837921),
-    a = i(780964),
-    r = i(358776),
-    u = i(604095),
-    o = i(985018);
-let d = (0, l.zD)(a.X.OS_START_MINIMIZED, {
-    useTitle: () => (0, r.bp)("StartMinimized") ? o.intl.string(o.t.GfBL83) : o.intl.string(o.t.n7Yjes),
-    useSubtitle: () => (0, r.bp)("StartMinimized") ? o.intl.string(o.t.XGyhhc) : o.intl.string(o.t.o2FSjB),
-    usePredicate: () => (0, n.uF)(),
-    useValue: () => u.fk.useState(t => !!t.openOnStartup && t.startMinimized),
-    setValue: u.AZ,
-    useDisabled: () => !u.fk.useState(t => t.openOnStartup),
+var i = n(574381),
+    s = n(419954),
+    l = n(837921),
+    a = n(780964),
+    r = n(358776),
+    o = n(604095),
+    d = n(985018);
+let c = (0, s.zD)(a.X.OS_START_MINIMIZED, {
+    useTitle: () => (0, r.bp)("StartMinimized") ? d.intl.string(d.t.GfBL83) : d.intl.string(d.t.n7Yjes),
+    useSubtitle: () => (0, r.bp)("StartMinimized") ? d.intl.string(d.t.XGyhhc) : d.intl.string(d.t.o2FSjB),
+    usePredicate: () => (0, i.uF)(),
+    useValue: () => o.fk.useState(e => !!e.openOnStartup && e.startMinimized),
+    setValue: o.AZ,
+    useDisabled: () => !o.fk.useState(e => e.openOnStartup),
     initialize: () => {
-        s.Ay.getSetting("START_MINIMIZED", !1).then(t => u.fk.setState({
-            startMinimized: t
+        l.Ay.getSetting("START_MINIMIZED", !1).then(e => o.fk.setState({
+            startMinimized: e
         }))
     }
 })

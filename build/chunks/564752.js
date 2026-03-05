@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(871930),
-    a = n(578746),
-    l = n(975571),
+    l = n(578746),
+    a = n(975571),
     r = n(171316),
     o = n(652215),
-    c = n(842130),
-    d = n(985018);
+    d = n(842130),
+    c = n(985018);
 
 function u() {
     let {
@@ -17,10 +17,10 @@ function u() {
         updateConsent: t
     } = (0, r.lH)(o.YAq.USAGE_STATISTICS);
     return (0, i.jsx)(s.h, {
-        children: (0, i.jsx)(a.Ay, {
-            title: d.intl.string(c.default.HjstRR),
-            note: d.intl.format(c.default.Z5yJZy, {
-                helpdeskArticle: l.A.getArticleURL(o.MVz.DATA_PRIVACY_CONTROLS)
+        children: (0, i.jsx)(l.Ay, {
+            title: c.intl.string(d.default.HjstRR),
+            note: c.intl.format(d.default.Z5yJZy, {
+                helpdeskArticle: a.A.getArticleURL(o.MVz.DATA_PRIVACY_CONTROLS)
             }),
             value: e,
             onChange: t

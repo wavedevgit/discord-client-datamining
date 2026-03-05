@@ -1,20 +1,20 @@
-/** chunk id: 411669, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    l: () => g
+/** chunk id: 411669, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    l: () => A
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(666196),
-    a = i(653022),
-    r = i(802385),
-    u = i(34014),
-    o = i(903718),
-    d = i(379897),
-    A = i(21117),
-    T = i(617110),
-    S = i(937551),
-    E = i(985018);
-let g = (0, n.zZ)(l.X.COLOR_AND_CONTRAST_CATEGORY, {
-    useTitle: () => E.intl.string(E.t.JqvyiY),
-    buildLayout: () => [S.V, o.E, r.Q, d.j, u.r, A.b, T.K, s.k, a.V]
+var i = n(419954),
+    s = n(780964),
+    l = n(666196),
+    a = n(653022),
+    r = n(802385),
+    o = n(34014),
+    d = n(903718),
+    c = n(379897),
+    u = n(21117),
+    _ = n(617110),
+    g = n(937551),
+    m = n(985018);
+let A = (0, i.zZ)(s.X.COLOR_AND_CONTRAST_CATEGORY, {
+    useTitle: () => m.intl.string(m.t.JqvyiY),
+    buildLayout: () => [g.V, d.E, r.Q, c.j, o.r, u.b, _.K, l.k, a.V]
 })

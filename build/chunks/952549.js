@@ -1,16 +1,16 @@
-/** chunk id: 952549, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    E: () => o
+/** chunk id: 952549, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => d
 });
-var n = i(477895),
-    l = i(422891),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.FRIEND_ONLINE_NOTIFICATIONS, {
-    useTitle: () => u.intl.string(u.t.sQQgFj),
+var i = n(477895),
+    s = n(422891),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.FRIEND_ONLINE_NOTIFICATIONS, {
+    useTitle: () => o.intl.string(o.t.sQQgFj),
     useValue: a.NR.useSetting,
-    setValue: l.h,
-    usePredicate: () => (0, n.Bf)("FriendOnlineNotifications").showSettingsToggle
+    setValue: s.h,
+    usePredicate: () => (0, i.Bf)("FriendOnlineNotifications").showSettingsToggle
 })

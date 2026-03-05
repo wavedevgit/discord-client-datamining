@@ -5,18 +5,18 @@ r.d(t, {
 });
 var n = r(627968);
 r(64700);
-var a = r(503698),
-    s = r.n(a),
-    l = r(813287);
+var s = r(503698),
+    l = r.n(s),
+    a = r(813287);
 
 function i(e) {
     let {
         children: t,
         tag: r,
-        className: a
+        className: s
     } = e;
     return r = null != r ? r : "h3", (0, n.jsx)(r, {
-        className: s()(l.D, a),
+        className: l()(a.D, s),
         children: t
     })
 }

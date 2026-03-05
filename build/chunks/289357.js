@@ -17,8 +17,8 @@ var i, r = n(627968),
     h = n(214884),
     _ = n(976860),
     m = n(323443),
-    p = n(63995),
-    g = n(69407),
+    g = n(63995),
+    p = n(69407),
     E = n(110618),
     I = n(446600),
     f = n(964175),
@@ -162,9 +162,9 @@ function Y(e) {
     } = (0, P.Ay)(t), {
         startDateTimeString: _,
         upcomingEvent: m,
-        diffMinutes: p
-    } = (0, M.CC)(A.toISOString(), h?.toISOString()), g = m ? p > 0 ? k.intl.formatToPlainString(k.t.PQlCWk, {
-        minutes: p
+        diffMinutes: g
+    } = (0, M.CC)(A.toISOString(), h?.toISOString()), p = m ? g > 0 ? k.intl.formatToPlainString(k.t.PQlCWk, {
+        minutes: g
     }) : k.intl.string(k.t.WINqKV) : k.intl.formatToPlainString(k.t.DC6h3G, {
         date: _
     });
@@ -214,7 +214,7 @@ function Y(e) {
                 color: "text-default",
                 variant: "text-xs/normal",
                 className: V.Sv,
-                children: g
+                children: p
             })]
         }), (0, r.jsxs)("div", {
             className: s()(V.fI, V.pF),
@@ -310,7 +310,7 @@ function z(e) {
     let {
         stageInstance: t,
         channel: n
-    } = e, i = (0, o.yK)([p.A], () => [...new Set(p.A.getMutableParticipants(n.id, g.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([p.A], () => p.A.getParticipantCount(n.id, g.ip.AUDIENCE), [n.id]), a = k.intl.formatToPlainString(k.t["+v2pN2"], {
+    } = e, i = (0, o.yK)([g.A], () => [...new Set(g.A.getMutableParticipants(n.id, p.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([g.A], () => g.A.getParticipantCount(n.id, p.ip.AUDIENCE), [n.id]), a = k.intl.formatToPlainString(k.t["+v2pN2"], {
         count: `${l}`
     });
     return (0, r.jsx)(B, {

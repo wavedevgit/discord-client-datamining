@@ -4,52 +4,52 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(397927),
     o = n(558001),
-    c = n(835002),
-    d = n(985018),
+    d = n(835002),
+    c = n(985018),
     u = n(486529);
 
 function _(e) {
     let {
         label: t,
         labelHook: n,
-        count: a,
+        count: l,
         dismissNotice: _,
-        className: m,
-        noticeType: A
-    } = e, g = null != _;
+        className: g,
+        noticeType: m
+    } = e, A = null != _;
     s.useEffect(() => {
-        (0, o.N)(A, c.YX.VIEWED)
-    }, [A]);
+        (0, o.N)(m, d.YX.VIEWED)
+    }, [m]);
     let h = s.useCallback(() => {
-            null != _ && (_(), (0, o.N)(A, c.YX.DISMISS))
-        }, [A, _]),
-        x = s.useCallback(() => {
-            n(), (0, o.N)(A, c.YX.LEARN_MORE)
-        }, [A, n]);
+            null != _ && (_(), (0, o.N)(m, d.YX.DISMISS))
+        }, [m, _]),
+        p = s.useCallback(() => {
+            n(), (0, o.N)(m, d.YX.LEARN_MORE)
+        }, [m, n]);
     return (0, i.jsxs)("div", {
-        className: l()(u.I, m),
+        className: a()(u.I, g),
         children: [(0, i.jsx)(r.mir, {
             size: "md"
         }), (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "interactive-text-active",
-            children: null != a ? d.intl.format(t, {
+            children: null != l ? c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    onClick: x,
+                    onClick: p,
                     children: e
                 }, t),
-                count: a
-            }) : d.intl.format(t, {
+                count: l
+            }) : c.intl.format(t, {
                 hook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    onClick: x,
+                    onClick: p,
                     children: e
                 }, t)
             })
-        }), g && (0, i.jsx)(r.DUT, {
+        }), A && (0, i.jsx)(r.DUT, {
             className: u.b,
             onClick: h,
             children: (0, i.jsx)(r.PGe, {})

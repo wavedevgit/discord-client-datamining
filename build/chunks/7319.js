@@ -1,5 +1,4 @@
 /** chunk id: 7319, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     nM: "row__0a95c",
     Kk: "icon__0a95c",

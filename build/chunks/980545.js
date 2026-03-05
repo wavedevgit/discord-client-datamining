@@ -1,70 +1,70 @@
 /** chunk id: 980545, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => T
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(835245),
     o = n(582754),
-    c = n(397927),
-    d = n(736653),
+    d = n(397927),
+    c = n(736653),
     u = n(12901),
     _ = n(954571),
-    m = n(341915),
-    A = n(590202),
-    g = n(545986),
+    g = n(341915),
+    m = n(590202),
+    A = n(545986),
     h = n(652215),
-    x = n(985018),
-    p = n(608821),
+    p = n(985018),
+    x = n(608821),
     E = n(641701);
 
-function C(e) {
+function T(e) {
     let {
         inOldSettings: t = !1
-    } = e, n = (0, o.Mw)((0, d.Ay)()), a = s.useMemo(() => ({
+    } = e, n = (0, o.Mw)((0, c.Ay)()), l = s.useMemo(() => ({
         backgroundImage: "url(https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png)"
-    }), []), C = s.useCallback(() => {
-        (0, u.default)(), (0, g.navigateToQuestHome)({
-            fromContent: m.uF.QUEST_HOME_MOVE_CALLOUT
+    }), []), T = s.useCallback(() => {
+        (0, u.default)(), (0, A.navigateToQuestHome)({
+            fromContent: g.uF.QUEST_HOME_MOVE_CALLOUT
         }), _.default.track(h.HAw.QUEST_CONTENT_CLICKED, {
-            cta_name: A.Cy.VIEW_QUESTS,
+            cta_name: m.Cy.VIEW_QUESTS,
             click_id: (0, r.A)(),
             is_targeted: !1,
-            ...(0, A.fF)(m.uF.QUEST_HOME_MOVE_CALLOUT)
+            ...(0, m.fF)(g.uF.QUEST_HOME_MOVE_CALLOUT)
         })
     }, []);
     return (0, i.jsx)("div", {
-        className: l()(p.kL, {
-            [p.Zd]: t
+        className: a()(x.kL, {
+            [x.Zd]: t
         }),
-        style: a,
-        children: (0, i.jsxs)(c.BJc, {
-            className: p.FS,
+        style: l,
+        children: (0, i.jsxs)(d.BJc, {
+            className: x.FS,
             justify: "space-between",
-            children: [(0, i.jsxs)(c.BJc, {
+            children: [(0, i.jsxs)(d.BJc, {
                 gap: 4,
                 children: [(0, i.jsxs)("div", {
-                    className: p.N1,
+                    className: x.N1,
                     children: [(0, i.jsx)("img", {
                         alt: "",
                         src: E,
-                        className: p.Kk
-                    }), (0, i.jsx)(c.Heading, {
+                        className: x.Kk
+                    }), (0, i.jsx)(d.Heading, {
                         variant: "heading-lg/bold",
                         color: "always-white",
-                        children: x.intl.string(x.t.z8YP2A)
+                        children: p.intl.string(p.t.z8YP2A)
                     })]
-                }), (0, i.jsx)(c.Text, {
+                }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: x.intl.string(x.t.HdKh65)
+                    children: p.intl.string(p.t.HdKh65)
                 })]
-            }), (0, i.jsx)(c.Button, {
+            }), (0, i.jsx)(d.Button, {
                 variant: n ? "primary" : "overlay-primary",
-                text: x.intl.string(x.t.GURBQl),
-                onClick: C
+                text: p.intl.string(p.t.GURBQl),
+                onClick: T
             })]
         })
     })

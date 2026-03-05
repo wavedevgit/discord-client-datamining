@@ -1,13 +1,13 @@
-/** chunk id: 474069, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    i: () => u
+/** chunk id: 474069, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    i: () => o
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(956651),
-    a = i(444929),
-    r = i(985018);
-let u = (0, n.zZ)(l.X.REGISTERED_GAMES_CURRENT_GAME_CATEGORY, {
+var i = n(419954),
+    s = n(780964),
+    l = n(956651),
+    a = n(444929),
+    r = n(985018);
+let o = (0, i.zZ)(s.X.REGISTERED_GAMES_CURRENT_GAME_CATEGORY, {
     useTitle: () => r.intl.string(r.t["MY9/Oe"]),
-    buildLayout: () => [a.u, s.M]
+    buildLayout: () => [a.u, l.M]
 })

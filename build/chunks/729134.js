@@ -1,22 +1,22 @@
-/** chunk id: 729134, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => o
+/** chunk id: 729134, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => d
 });
-var n = i(311907),
-    l = i(274372),
-    s = i(399925),
-    a = i(419954),
-    r = i(780964),
-    u = i(985018);
-let o = (0, a.zD)(r.X.CLIPS_ENABLE_PHRASE_SIGNALS, {
-    useTitle: () => u.intl.string(u.t.nHsilt),
-    useSubtitle: () => u.intl.string(u.t["s6wq+m"]),
-    useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipSignals.enablePhraseSignals),
-    setValue: t => {
-        let e = l.A.getSettings().clipSignals;
-        s.PW({
-            ...e,
-            enablePhraseSignals: t
+var i = n(311907),
+    s = n(274372),
+    l = n(399925),
+    a = n(419954),
+    r = n(780964),
+    o = n(985018);
+let d = (0, a.zD)(r.X.CLIPS_ENABLE_PHRASE_SIGNALS, {
+    useTitle: () => o.intl.string(o.t.nHsilt),
+    useSubtitle: () => o.intl.string(o.t["s6wq+m"]),
+    useValue: () => (0, i.bG)([s.A], () => s.A.getSettings().clipSignals.enablePhraseSignals),
+    setValue: e => {
+        let t = s.A.getSettings().clipSignals;
+        l.PW({
+            ...t,
+            enablePhraseSignals: e
         })
     }
 })

@@ -1,79 +1,58 @@
 /** chunk id: 669550, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => A,
-    KA: () => m,
-    jL: () => _
+    Ay: () => _,
+    KA: () => u,
+    jL: () => c
 });
 var i = n(64700),
     s = n(839214),
-    a = n(360619),
-    l = n(987281),
-    r = n(419954),
-    o = n(236077),
-    c = n(478686),
-    d = n(124059);
-let u = (0, s.D)(() => ({
+    l = n(419954),
+    a = n(236077),
+    r = n(478686),
+    o = n(124059);
+let d = (0, s.D)(() => ({
     enabled: !1
 }));
 
-function _(e) {
-    u.setState({
+function c(e) {
+    d.setState({
         enabled: e
     })
 }
 
-function m() {
-    return u.useField("enabled")
+function u() {
+    return d.useField("enabled")
 }
 
-function A(e, t) {
-    let n = i.useMemo(() => (0, r.hl)(e), [e]),
-        s = (0, a.PH)(),
-        {
-            searchResults: d
-        } = (0, l.V)(),
-        u = new Set;
-    for (let e of d) {
-        let t = e;
-        for (; null != t;) {
-            let e = s[t]?.parent;
-            if (null == e) {
-                u.add(t);
-                break
-            }
-            t = e
-        }
-    }
-    let _ = g(n, t ?? "", u),
-        m = g(n, "", u);
+function _(e, t) {
+    let n = i.useMemo(() => (0, l.hl)(e), [e]),
+        s = g(n, t ?? ""),
+        o = g(n, "");
     return i.useMemo(() => {
-        let e = new o.A,
-            t = new o.A;
-        return (0, c.A)(n, m, t), {
-            node: (0, c.A)(n, _, e) ?? {
+        let e = new a.A,
+            t = new a.A;
+        return (0, r.A)(n, o, t), {
+            node: (0, r.A)(n, s, e) ?? {
                 ...n,
                 layout: []
             },
             visibleDirectory: e,
             accessibleDirectory: t
         }
-    }, [_, m, n])
+    }, [s, o, n])
 }
 
-function g(e, t, n) {
-    let s = m(),
-        a = (0, d.A)(e, t, {
-            legacyMatches: n,
-            bypassPredicates: s
-        }),
-        [l, r] = i.useState(a),
-        o = function(e, t) {
+function g(e, t) {
+    let n = u(),
+        s = (0, o.A)(e, t, n),
+        [l, a] = i.useState(s),
+        r = function(e, t) {
             if (e.size !== t.size) return !0;
             for (let n of e)
                 if (!t.has(n)) return !0;
             return !1
-        }(l, a);
+        }(l, s);
     return i.useEffect(() => {
-        o && r(a)
-    }, [o, a]), l
+        r && a(s)
+    }, [r, s]), l
 }

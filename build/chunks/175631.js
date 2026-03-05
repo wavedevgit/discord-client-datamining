@@ -1,17 +1,17 @@
-/** chunk id: 175631, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    s: () => u
+/** chunk id: 175631, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    s: () => o
 });
-var n = i(311907),
-    l = i(926919),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.zD)(r.X.ONLY_SHOW_PREVIEW_APP_COLLECTIONS, {
+var i = n(311907),
+    s = n(926919),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.zD)(r.X.ONLY_SHOW_PREVIEW_APP_COLLECTIONS, {
     useTitle: () => "Only Show Preview App Collections",
     useSubtitle: () => "Only show application collections (e.g. in App Directory, App Launcher in text) that have the 'preview' active state. This disables application collections cache, too, so you can see collections updates immediately.",
-    useValue: () => (0, n.bG)([a.default], () => a.default.onlyShowPreviewAppCollections),
-    setValue: t => (0, l.x)({
-        onlyShowPreviewAppCollections: t
+    useValue: () => (0, i.bG)([a.default], () => a.default.onlyShowPreviewAppCollections),
+    setValue: e => (0, s.x)({
+        onlyShowPreviewAppCollections: e
     })
 })

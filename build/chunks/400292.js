@@ -1,21 +1,21 @@
 /** chunk id: 400292, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
 var s = n(380278),
-    a = n(397927),
-    l = n(65470),
+    l = n(397927),
+    a = n(65470),
     r = n(792656),
     o = n(652215),
-    c = n(433538);
-let d = function(e) {
+    d = n(433538);
+let c = function(e) {
     let {
         isVisible: t,
         subscriptionTier: n,
-        isEligibleForBogoPromotion: d
-    } = e, u = (0, a.zhh)({
+        isEligibleForBogoPromotion: c
+    } = e, u = (0, l.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
         config: {
@@ -26,18 +26,18 @@ let d = function(e) {
         section: o.JJy.MARKETING_FLOATING_CTA
     };
     return (0, i.jsx)(s.animated.div, {
-        className: c.i,
+        className: d.i,
         style: u,
         "data-mtctest-ignore": "true",
         children: (0, i.jsxs)("div", {
-            className: c.U,
+            className: d.U,
             children: [(0, i.jsx)(r.A, {
                 size: "md",
                 subscriptionTier: n,
-                hasActivePromotion: !!d,
+                hasActivePromotion: !!c,
                 isPersistentCTA: !0,
                 premiumModalAnalyticsLocation: _
-            }), (0, i.jsx)(l.A, {
+            }), (0, i.jsx)(a.A, {
                 variant: "secondary",
                 size: "md"
             })]

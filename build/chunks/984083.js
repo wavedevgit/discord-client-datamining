@@ -1,25 +1,24 @@
-/** chunk id: 984083, original params: t,e,r (module,exports,require) **/
-"use strict";
-r.d(e, {
+/** chunk id: 984083, original params: t,e,s (module,exports,require) **/
+s.d(e, {
     Z: () => o
 });
-var s = r(630449),
-    i = r(272469),
-    n = r(83220);
+var i = s(630449),
+    r = s(272469),
+    n = s(83220);
 
 function o(t, e) {
-    let r = (0, s.KU)(),
-        o = (0, s.rm)();
-    if (!r) return;
+    let s = (0, i.KU)(),
+        o = (0, i.rm)();
+    if (!s) return;
     let {
         beforeBreadcrumb: a = null,
-        maxBreadcrumbs: c = 100
-    } = r.getOptions();
-    if (c <= 0) return;
-    let u = {
+        maxBreadcrumbs: h = 100
+    } = s.getOptions();
+    if (h <= 0) return;
+    let c = {
             timestamp: (0, n.lu)(),
             ...t
         },
-        h = a ? (0, i.pq)(() => a(u, e)) : u;
-    null !== h && (r.emit && r.emit("beforeAddBreadcrumb", h, e), o.addBreadcrumb(h, c))
+        u = a ? (0, r.pq)(() => a(c, e)) : c;
+    null !== u && (s.emit && s.emit("beforeAddBreadcrumb", u, e), o.addBreadcrumb(u, h))
 }

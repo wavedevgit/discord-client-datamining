@@ -5,15 +5,15 @@ n.d(t, {
 });
 var i = n(311907),
     s = n(397438),
-    a = n(815968),
-    l = n(985018);
+    l = n(815968),
+    a = n(985018);
 
 function r(e) {
     switch (e) {
-        case a._A.REDUCED_MOTION:
-            return l.intl.format(l.t["1dT9V4"], {});
-        case a._A.REDUCED_MOTION_STICKERS:
-            return l.intl.string(l.t["2ExvRu"]);
+        case l._A.REDUCED_MOTION:
+            return a.intl.format(a.t["1dT9V4"], {});
+        case l._A.REDUCED_MOTION_STICKERS:
+            return a.intl.string(a.t["2ExvRu"]);
         default:
             return
     }

@@ -5,8 +5,8 @@ r.d(t, {
 });
 var a = r(1139),
     n = r(106526),
-    s = r(26412),
-    o = r(658),
+    o = r(26412),
+    s = r(658),
     i = r(552932),
     c = r(865977),
     l = r(761847),
@@ -17,8 +17,8 @@ var a = r(1139),
     h = r.n(d),
     p = r(380883),
     y = r(724374),
-    g = r(190873),
-    v = ["data", "keyPath", "postprocessValue", "hideRoot", "theme", "invertTheme"];
+    v = r(190873),
+    g = ["data", "keyPath", "postprocessValue", "hideRoot", "theme", "invertTheme"];
 
 function m(e, t) {
     var r = Object.keys(e);
@@ -59,13 +59,13 @@ function O(e) {
         extend: t
     } : A({}, t), a.forEach(function(a) {
         console.error('Styling method "'.concat(a, '" is deprecated, use "theme" property instead')), t[r[a]] = function(t) {
-            for (var r = t.style, n = arguments.length, s = Array(n > 1 ? n - 1 : 0), o = 1; o < n; o++) s[o - 1] = arguments[o];
+            for (var r = t.style, n = arguments.length, o = Array(n > 1 ? n - 1 : 0), s = 1; s < n; s++) o[s - 1] = arguments[s];
             return {
-                style: A(A({}, r), e[a].apply(e, s))
+                style: A(A({}, r), e[a].apply(e, o))
             }
         }
     })), t);
-    return e.invertTheme && (n = (0, g.WJ)(n)), {
+    return e.invertTheme && (n = (0, v.WJ)(n)), {
         styling: (0, y.A)(n)
     }
 }
@@ -86,9 +86,9 @@ var k = function(e) {
 
     function u(e) {
         var t;
-        return (0, s.A)(this, u), (t = r.call(this, e)).state = O(e), t
+        return (0, o.A)(this, u), (t = r.call(this, e)).state = O(e), t
     }
-    return (0, o.A)(u, [{
+    return (0, s.A)(u, [{
         key: "UNSAFE_componentWillReceiveProps",
         value: function(e) {
             var t = this;
@@ -110,17 +110,17 @@ var k = function(e) {
             var e = this.props,
                 t = e.data,
                 r = e.keyPath,
-                s = e.postprocessValue,
-                o = e.hideRoot,
-                i = (e.theme, e.invertTheme, (0, n.A)(e, v)),
+                o = e.postprocessValue,
+                s = e.hideRoot,
+                i = (e.theme, e.invertTheme, (0, n.A)(e, g)),
                 c = this.state.styling;
             return f.createElement("ul", c("tree"), f.createElement(p.A, (0, a.A)({}, A({
-                postprocessValue: s,
-                hideRoot: o,
+                postprocessValue: o,
+                hideRoot: s,
                 styling: c
             }, i), {
-                keyPath: o ? [] : r,
-                value: s(t)
+                keyPath: s ? [] : r,
+                value: o(t)
             })))
         }
     }]), u

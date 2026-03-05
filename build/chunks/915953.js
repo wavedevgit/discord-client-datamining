@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(791498),
+    l = n(397927),
+    a = n(791498),
     r = n(244242);
 
 function o(e) {
@@ -14,45 +14,45 @@ function o(e) {
     } = e, {
         setValue: n,
         getInitialValue: o,
-        minValue: c,
-        maxValue: d,
+        minValue: d,
+        maxValue: c,
         useDefaultValue: u,
         useTitle: _,
-        useSubtitle: m,
-        useHintText: A,
-        useDisabled: g,
+        useSubtitle: g,
+        useHintText: m,
+        useDisabled: A,
         useExternalValue: h,
-        onValueRender: x,
-        asValueChanges: p,
+        onValueRender: p,
+        asValueChanges: x,
         markers: E,
-        onMarkerRender: C,
-        stickToMarkers: T,
-        fieldLayout: S
-    } = t, [I] = s.useState(() => o()), f = h?.(), N = _(), b = m?.(), j = A?.(), v = g?.(), O = u?.(), R = (0, l.q)(t);
+        onMarkerRender: T,
+        stickToMarkers: S,
+        fieldLayout: C
+    } = t, [I] = s.useState(() => o()), f = h?.(), b = _(), N = g?.(), v = m?.(), j = A?.(), O = u?.(), R = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
-        children: [(0, i.jsx)(a.Apm, {
-            label: N,
-            description: b,
-            disabled: v,
+        children: [(0, i.jsx)(l.Apm, {
+            label: b,
+            description: N,
+            disabled: j,
             initialValue: I,
             value: f,
-            minValue: c,
-            maxValue: d,
+            minValue: d,
+            maxValue: c,
             defaultValue: O,
-            onValueRender: x,
-            asValueChanges: p,
+            onValueRender: p,
+            asValueChanges: x,
             onValueChange: e => {
                 R(), n?.(e)
             },
             orientation: "horizontal",
             markers: E,
-            onMarkerRender: C,
-            stickToMarkers: T,
-            layout: S
-        }), null != j && (0, i.jsx)(a.Text, {
+            onMarkerRender: T,
+            stickToMarkers: S,
+            layout: C
+        }), null != v && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: j
+            children: v
         })]
     })
 }

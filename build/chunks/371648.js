@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(234320),
     L = n(863439),
     P = n(504136),
-    k = n(662433),
-    w = n(540385),
+    w = n(662433),
+    k = n(540385),
     U = n(830178),
     G = n(722432),
     F = n(258024),
@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(652215),
     V = n(985018),
     K = n(478186);
-let z = (0, r.animated)(d.fKU),
-    W = l.memo(function(e) {
+let W = (0, r.animated)(d.fKU),
+    z = l.memo(function(e) {
         var t;
         let n, s, r, {
                 className: h,
@@ -66,13 +66,13 @@ let z = (0, r.animated)(d.fKU),
                 showingQuarantineBanner: L,
                 hideSummaries: P = !1,
                 jumpBarClassName: U,
-                typingGradient: W
+                typingGradient: z
             } = e,
             [Y, q] = l.useState(N.A.isAtBottom(f.id) ?? !1),
-            J = (0, k.I)(S, R),
+            J = (0, w.I)(S, R),
             $ = S ? J : Math.round(.87 * J),
             Z = Math.max(1, Math.round($ / 30 * 8)),
-            X = l.useMemo(() => (0, w.bW)({
+            X = l.useMemo(() => (0, k.bW)({
                 compact: S,
                 messageGroups: $,
                 groupRange: 4,
@@ -152,13 +152,13 @@ let z = (0, r.animated)(d.fKU),
                 let e = I.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eh = l.useMemo(() => W ? Y ? K.gA : K.ru : K.Zd, [W, Y]),
-            em = l.useMemo(() => W ? Y ? K.cz : K.XF : K.U6, [W, Y]);
+            eh = l.useMemo(() => z ? Y ? K.gA : K.ru : K.Zd, [z, Y]),
+            em = l.useMemo(() => z ? Y ? K.cz : K.XF : K.U6, [z, Y]);
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
                 className: a()(K.Og, h, `group-spacing-${g}`),
-                children: [null == ea && ei, (0, i.jsxs)(z, {
+                children: [null == ea && ei, (0, i.jsxs)(W, {
                     ref: ed,
                     customTheme: !0,
                     className: a()(p, K.XG, eu ? em : void 0),
@@ -229,8 +229,8 @@ let z = (0, r.animated)(d.fKU),
             messageGroupSpacing: I,
             fontSize: N,
             messageDisplayCompact: O,
-            renderSpoilers: k,
-            keyboardModeEnabled: w
+            renderSpoilers: w,
+            keyboardModeEnabled: k
         } = function() {
             let e = S.hH.useSetting(),
                 t = S.gs.useSetting(),
@@ -301,9 +301,9 @@ let z = (0, r.animated)(d.fKU),
             }
         }(t);
         return (0, i.jsx)(x.Bs.Provider, {
-            value: (0, L.A)(k, u),
+            value: (0, L.A)(w, u),
             children: (0, i.jsx)(U.t, {
-                children: (0, i.jsx)(W, {
+                children: (0, i.jsx)(z, {
                     ...d,
                     messageGroupSpacing: I,
                     showNewMessagesBar: !0,
@@ -318,7 +318,7 @@ let z = (0, r.animated)(d.fKU),
                     canChat: E,
                     editingMessageId: V,
                     fontSize: N,
-                    keyboardModeEnabled: w,
+                    keyboardModeEnabled: k,
                     showingQuarantineBanner: n,
                     hideSummaries: s,
                     typingGradient: o

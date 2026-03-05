@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(395422),
     _ = n(652215),
     m = n(650583),
-    p = n(985018),
-    g = n(680982),
+    g = n(985018),
+    p = n(680982),
     E = n(473169);
 let I = n(892799),
     f = {
@@ -50,7 +50,7 @@ function S(e, t) {
 
 function x(e) {
     let {
-        placeholder: t = p.intl.string(p.t["Rn/sLl"])
+        placeholder: t = g.intl.string(g.t["Rn/sLl"])
     } = e, n = r.useRef(null), l = r.useRef(null), [s, A] = r.useReducer(S, f), {
         canSend: x,
         hint: v,
@@ -75,7 +75,7 @@ function x(e) {
                 }
             }).then(() => A({
                 type: "SUCCESS",
-                text: p.intl.format(p.t.Rtl1Ep, {
+                text: g.intl.format(g.t.Rtl1Ep, {
                     discordTag: t
                 })
             }), e => A({
@@ -85,11 +85,11 @@ function x(e) {
         },
         autoComplete: "off",
         children: [(0, i.jsxs)("div", {
-            className: g.QR,
+            className: p.QR,
             children: [(0, i.jsx)(c.Text, {
                 tag: "div",
                 variant: "heading-md/normal",
-                children: p.intl.string(p.t["Rn/sLl"])
+                children: g.intl.string(g.t["Rn/sLl"])
             }), (0, i.jsx)("img", {
                 src: I,
                 alt: "Wumpus Waving"
@@ -97,18 +97,18 @@ function x(e) {
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
             ringTarget: l,
-            ringClassName: g.hN,
+            ringClassName: p.hN,
             children: (0, i.jsxs)("div", {
                 ref: l,
-                className: a()(g.fc, {
-                    [g.kX]: b,
-                    [g.z3]: y
+                className: a()(p.fc, {
+                    [p.kX]: b,
+                    [p.z3]: y
                 }),
                 children: [(0, i.jsx)(d.ob, {
                     id: C,
                     inputRef: n,
-                    className: g.QP,
-                    inputClassName: g.hF,
+                    className: p.QP,
+                    inputClassName: p.hF,
                     onKeyPress: e => {
                         let t = e.currentTarget.value;
                         if (e.key !== m.N$.Enter && t.includes("#")) {
@@ -143,13 +143,13 @@ function x(e) {
                     "aria-invalid": null != y || void 0,
                     "aria-describedby": null != y ? N : T
                 }), null != v && (0, i.jsx)("div", {
-                    className: g.dQ,
+                    className: p.dQ,
                     "aria-hidden": !0,
                     children: v
                 }), (0, i.jsx)(c.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: p.intl.string(p.t["PMsq/b"]),
+                    text: g.intl.string(g.t["PMsq/b"]),
                     disabled: !x,
                     type: "submit"
                 })]

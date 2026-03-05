@@ -1,32 +1,32 @@
-/** chunk id: 560861, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    g: () => S
+/** chunk id: 560861, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    g: () => g
 });
-var n = i(284009),
-    l = i.n(n),
-    s = i(311907),
-    a = i(552122),
-    r = i(419954),
-    u = i(965957),
-    o = i(312671),
-    d = i(780964),
-    A = i(235079),
-    T = i(985018);
-let S = (0, r.zD)(d.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
+var i = n(284009),
+    s = n.n(i),
+    l = n(311907),
+    a = n(552122),
+    r = n(419954),
+    o = n(965957),
+    d = n(312671),
+    c = n(780964),
+    u = n(235079),
+    _ = n(985018);
+let g = (0, r.zD)(c.X.NOTIFICATION_HOLIDAY_SOUNDPACK, {
     useTitle: () => {
-        let t = a.A.useHolidaySoundpack();
-        return null == t ? "" : T.intl.format(T.t["E/OyBr"], {
-            soundpack: T.intl.string(t.soundpackLabel)
+        let e = a.A.useHolidaySoundpack();
+        return null == e ? "" : _.intl.format(_.t["E/OyBr"], {
+            soundpack: _.intl.string(e.soundpackLabel)
         })
     },
     useValue: function() {
-        let t = (0, s.bG)([o.A], () => o.A.getSoundpack()),
-            e = a.A.useHolidaySoundpack();
-        return t === e?.soundpack
+        let e = (0, l.bG)([d.A], () => d.A.getSoundpack()),
+            t = a.A.useHolidaySoundpack();
+        return e === t?.soundpack
     },
-    setValue: function(t) {
-        let e = a.A.getHolidaySoundpack();
-        l()(null != e, "predicate should fail if no soundpack is available"), (0, u.p)(t ? e : A.i.CLASSIC)
+    setValue: function(e) {
+        let t = a.A.getHolidaySoundpack();
+        s()(null != t, "predicate should fail if no soundpack is available"), (0, o.p)(e ? t : u.i.CLASSIC)
     },
     usePredicate: a.A.useIsEligible
 })

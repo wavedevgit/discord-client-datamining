@@ -1,20 +1,20 @@
-/** chunk id: 311453, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    X: () => A
+/** chunk id: 311453, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    X: () => u
 });
-var n = i(627968),
-    l = i(311907),
-    s = i(274372),
-    a = i(372684),
-    r = i(419954),
-    u = i(780964),
-    o = i(801264),
-    d = i(985018);
-let A = (0, r.E2)(u.X.CLIPS_HARDWARE_CLASSIFICATION_WARNING, {
-    useSearchTerms: () => [d.intl.string(d.t.SIxrIF)],
-    usePredicate: () => (0, l.bG)([s.A], () => s.A.getHardwareClassification()) === a.k9.BELOW_MINIMUM,
-    Component: () => (0, n.jsx)(o.A, {
-        look: o.k.WARNING,
-        children: d.intl.string(d.t.SIxrIF)
+var i = n(627968),
+    s = n(311907),
+    l = n(274372),
+    a = n(372684),
+    r = n(419954),
+    o = n(780964),
+    d = n(801264),
+    c = n(985018);
+let u = (0, r.E2)(o.X.CLIPS_HARDWARE_CLASSIFICATION_WARNING, {
+    useSearchTerms: () => [c.intl.string(c.t.SIxrIF)],
+    usePredicate: () => (0, s.bG)([l.A], () => l.A.getHardwareClassification()) === a.k9.BELOW_MINIMUM,
+    Component: () => (0, i.jsx)(d.A, {
+        look: d.k.WARNING,
+        children: c.intl.string(c.t.SIxrIF)
     })
 })

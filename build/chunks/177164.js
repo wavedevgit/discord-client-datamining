@@ -1,14 +1,14 @@
-/** chunk id: 177164, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    w: () => o
+/** chunk id: 177164, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    w: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(385465),
-    a = i(949059),
-    r = i(897027),
-    u = i(985018);
-let o = (0, n.zZ)(l.X.NOTIFICATIONS_OVERVIEW_CATEGORY, {
-    useTitle: () => u.intl.string(u.t["/dp6yY"]),
-    buildLayout: () => [s.d, r.H, a.p]
+var i = n(419954),
+    s = n(780964),
+    l = n(385465),
+    a = n(949059),
+    r = n(897027),
+    o = n(985018);
+let d = (0, i.zZ)(s.X.NOTIFICATIONS_OVERVIEW_CATEGORY, {
+    useTitle: () => o.intl.string(o.t["/dp6yY"]),
+    buildLayout: () => [l.d, r.H, a.p]
 })

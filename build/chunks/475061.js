@@ -1,56 +1,56 @@
-/** chunk id: 475061, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    p: () => N
+/** chunk id: 475061, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    p: () => T
 });
-var n = i(627968),
-    l = i(64700),
-    s = i(158954),
-    a = i(74848),
-    r = i(419954),
-    u = i(933297),
-    o = i(843401),
-    d = i(723702),
-    A = i(780964),
-    T = i(801264),
-    S = i(902713),
-    E = i(428961),
-    g = i(639500),
-    c = i(731854),
-    _ = i(985018);
-let I = d.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
+var i = n(627968),
+    s = n(64700),
+    l = n(158954),
+    a = n(74848),
+    r = n(419954),
+    o = n(933297),
+    d = n(843401),
+    c = n(723702),
+    u = n(780964),
+    _ = n(801264),
+    g = n(902713),
+    m = n(428961),
+    A = n(639500),
+    h = n(731854),
+    p = n(985018);
+let x = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function C(t) {
+function E(e) {
     let {
-        inputAndOutputAreBluetooth: e,
-        canPromptSystemServiceInstallForVoice: i
-    } = t;
-    return (0, n.jsxs)(s.BJc, {
-        children: [i && (0, n.jsx)(o.A, {
+        inputAndOutputAreBluetooth: t,
+        canPromptSystemServiceInstallForVoice: n
+    } = e;
+    return (0, i.jsxs)(l.BJc, {
+        children: [n && (0, i.jsx)(d.A, {
             sourcePage: "voice"
-        }), e && (0, n.jsx)(T.A, {
-            look: T.k.WARNING,
-            children: _.intl.string(_.t.Ioz3gx)
+        }), t && (0, i.jsx)(_.A, {
+            look: _.k.WARNING,
+            children: p.intl.string(p.t.Ioz3gx)
         })]
     })
 }
-let N = (0, r.zZ)(A.X.VOICE_CATEGORY, {
-    useTitle: () => _.intl.string(_.t.K3lovD),
+let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
+    useTitle: () => p.intl.string(p.t.K3lovD),
     useInlineNotice: function() {
-        let t = (0, o.I)("voice"),
-            e = (0, a.x5)(c.oh.AUDIO_INPUT),
-            i = (0, a.x5)(c.oh.AUDIO_OUTPUT),
-            s = l.useMemo(() => {
-                let t = I.some(t => e?.hardwareId?.startsWith(t)),
-                    n = I.some(t => i?.hardwareId?.startsWith(t));
-                return t && n && e?.containerId != null && e.containerId === i?.containerId
-            }, [e, i]);
-        return l.useMemo(() => t.canPrompt || s ? {
-            type: u.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: () => (0, n.jsx)(C, {
-                inputAndOutputAreBluetooth: s,
-                canPromptSystemServiceInstallForVoice: t.canPrompt
+        let e = (0, d.I)("voice"),
+            t = (0, a.x5)(h.oh.AUDIO_INPUT),
+            n = (0, a.x5)(h.oh.AUDIO_OUTPUT),
+            l = s.useMemo(() => {
+                let e = x.some(e => t?.hardwareId?.startsWith(e)),
+                    i = x.some(e => n?.hardwareId?.startsWith(e));
+                return e && i && t?.containerId != null && t.containerId === n?.containerId
+            }, [t, n]);
+        return s.useMemo(() => e.canPrompt || l ? {
+            type: o.lT.STRONGLY_DISCOURAGED_CUSTOM,
+            notice: () => (0, i.jsx)(E, {
+                inputAndOutputAreBluetooth: l,
+                canPromptSystemServiceInstallForVoice: e.canPrompt
             })
-        } : null, [t.canPrompt, s])
+        } : null, [e.canPrompt, l])
     },
-    buildLayout: () => [S.a, E.d, g.L]
+    buildLayout: () => [g.a, m.d, A.L]
 })

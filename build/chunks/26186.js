@@ -1,17 +1,17 @@
-/** chunk id: 26186, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    H: () => u
+/** chunk id: 26186, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    H: () => o
 });
-var n = i(419954),
-    l = i(253932),
-    s = i(780964),
-    a = i(358776),
-    r = i(985018);
-let u = (0, n.zD)(s.X.CHAT_INLINE_MEDIA_UPLOADS, {
+var i = n(419954),
+    s = n(253932),
+    l = n(780964),
+    a = n(358776),
+    r = n(985018);
+let o = (0, i.zD)(l.X.CHAT_INLINE_MEDIA_UPLOADS, {
     useTitle: () => r.intl.string(r.t.VP11No),
     useSubtitle: () => (0, a.bp)("Uploads") ? null : r.intl.formatToPlainString(r.t.qjjvqO, {
         maxSize: 10
     }),
-    useValue: l.X6.useSetting,
-    setValue: l.X6.updateSetting
+    useValue: s.X6.useSetting,
+    setValue: s.X6.updateSetting
 })

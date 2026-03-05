@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(311907),
-    a = n(990078),
+    a = n(311907),
+    r = n(990078),
     o = n(397927),
     c = n(730134),
     d = n(440594),
@@ -25,8 +25,8 @@ var s = n(503698),
     E = n(353428),
     I = n(267102),
     N = n(46054),
-    S = n(164203),
-    b = n(665691),
+    b = n(164203),
+    S = n(665691),
     T = n(123973),
     v = n(241756),
     y = n(447404),
@@ -46,7 +46,7 @@ function V(e) {
     let {
         focusedParticipant: t,
         channel: n
-    } = e, s = (0, I.Us)(), l = (0, r.bG)([j.A], () => j.A.getLayout(n.id, s));
+    } = e, s = (0, I.Us)(), l = (0, a.bG)([j.A], () => j.A.getLayout(n.id, s));
     return (0, i.jsx)(y.A, {
         children: (0, i.jsx)(L.A, {
             participant: t,
@@ -64,7 +64,7 @@ function B(e) {
         channel: n,
         stream: s,
         color: l
-    } = e, r = (0, v.A)(n, t, s);
+    } = e, a = (0, v.A)(n, t, s);
     return null == t || null == s ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.A, {
             className: w.my,
@@ -75,7 +75,7 @@ function B(e) {
             className: w.W$,
             variant: "text-md/medium",
             color: l,
-            children: r
+            children: a
         })]
     })
 }
@@ -86,10 +86,10 @@ function H(e) {
             focusedParticipant: s,
             channel: l
         } = e,
-        r = (0, T.$F)(l),
-        a = (0, g.Qs)(l.id),
-        c = null != a ? (0, _.G3)(a) : null,
-        u = null != a;
+        a = (0, T.$F)(l),
+        r = (0, g.Qs)(l.id),
+        c = null != r ? (0, _.G3)(r) : null,
+        u = null != r;
     if (s?.type === D.lp.ACTIVITY) null != n && (t = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(x.Ay.Divider, {
             className: w.yF
@@ -101,7 +101,7 @@ function H(e) {
             variant: "text-md/normal",
             color: "none",
             children: (0, d.A)(n.name)
-        }), r && (0, i.jsx)(V, {
+        }), a && (0, i.jsx)(V, {
             channel: l,
             focusedParticipant: s
         })]
@@ -116,14 +116,14 @@ function H(e) {
                 user: e,
                 channel: l,
                 stream: n,
-                color: r ? "text-strong" : "none"
-            }), r && (0, i.jsx)(V, {
+                color: a ? "text-strong" : "none"
+            }), a && (0, i.jsx)(V, {
                 channel: l,
                 focusedParticipant: s
             })]
         })
     } else u && (t = (0, i.jsx)(f.A, {
-        guildEvent: a,
+        guildEvent: r,
         recurrenceId: c
     }));
     return (0, i.jsx)("div", {
@@ -142,15 +142,15 @@ function F(e) {
         exitFullScreen: g
     } = e, {
         focusedParticipant: _
-    } = (0, r.cf)([j.A], () => ({
+    } = (0, a.cf)([j.A], () => ({
         focusedParticipant: j.A.getSelectedParticipant(t.id),
         participantsOpen: j.A.getParticipantsOpen(t.id)
     }), [t.id]), f = (0, A.Ay)(t), I = (0, m.gU)(t), [T] = (0, u.A)(_?.type === D.lp.ACTIVITY ? [_.applicationId] : []), v = P.intl.string(P.t.BVZqJl);
     t.isDM() ? v = P.intl.string(P.t.jN2DfZ) : t.isGroupDM() && (v = P.intl.string(P.t["e5y+gm"]));
-    let y = (0, r.bG)([h.A], () => h.A.getChannelStatus(t)),
+    let y = (0, a.bG)([h.A], () => h.A.getChannelStatus(t)),
         L = t.isGuildVoice() && d && null != y && y.length > 0,
         G = (0, R.Ay)(t),
-        V = L ? (0, i.jsx)(a.m, {
+        V = L ? (0, i.jsx)(r.m, {
             asContainer: !0,
             text: P.intl.string(P.t.Mgpxiw),
             delay: 500,
@@ -190,7 +190,7 @@ function F(e) {
                 })]
             })
         }) : null,
-        B = (0, b.bG)({
+        B = (0, S.bG)({
             channelId: t.id
         });
     return (0, i.jsxs)("div", {
@@ -217,7 +217,7 @@ function F(e) {
                         children: [null != I ? (0, i.jsx)(x.Ay.ChannelIcon, {
                             icon: I,
                             "aria-label": v
-                        }) : null, f, B && (0, i.jsx)(a.m, {
+                        }) : null, f, B && (0, i.jsx)(r.m, {
                             text: P.intl.string(P.t.QyZ4Td),
                             children: (0, i.jsx)(o.m5V, {
                                 size: "xs",
@@ -236,7 +236,7 @@ function F(e) {
                     channel: t
                 })]
             })
-        }), (0, i.jsx)(S.A, {
+        }), (0, i.jsx)(b.A, {
             channelId: t.id
         })]
     })

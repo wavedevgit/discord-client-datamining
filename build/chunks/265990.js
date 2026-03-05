@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(70730),
     _ = n(45787),
     m = n(275759),
-    p = n(21119),
-    g = n(994500),
+    g = n(21119),
+    p = n(994500),
     E = n(595623),
     I = n(531685),
     f = n(174279),
@@ -74,9 +74,9 @@ let M = function(e) {
     } = (0, l.cf)([E.Ay], () => E.Ay.getState()), M = (0, l.bG)([I.A], () => I.A.isFocused()), {
         relationshipCount: w,
         hasBlockedOrIgnored: U
-    } = (0, l.cf)([g.A], () => ({
-        relationshipCount: g.A.getRelationshipCount(),
-        hasBlockedOrIgnored: g.A.getBlockedOrIgnoredIDs().length > 0
+    } = (0, l.cf)([p.A], () => ({
+        relationshipCount: p.A.getRelationshipCount(),
+        hasBlockedOrIgnored: p.A.getBlockedOrIgnoredIDs().length > 0
     })), [G, k] = r.useState(() => {
         let e = {};
         for (let t of Object.values(y.m3P)) e[t] = "";
@@ -147,7 +147,7 @@ let M = function(e) {
                         let e = [];
                         return K.forEach(t => {
                             t.giftIntentType === b.np.FRIEND_ANNIVERSARY && e.push(t)
-                        }), e.sort((e, t) => p.A.compareByDmProbability(e.userId, t.userId)), [B ? e : e.slice(0, m.ZD), K]
+                        }), e.sort((e, t) => g.A.compareByDmProbability(e.userId, t.userId)), [B ? e : e.slice(0, m.ZD), K]
                     }
                 default:
                     return [K]

@@ -63,8 +63,8 @@ let p = {
             showProgress: x,
             progressCircleText: b,
             progressCirclePercent: g,
-            progressCircleUrgency: y,
-            delay: f,
+            progressCircleUrgency: f,
+            delay: y,
             size: E,
             gradientColor: v,
             estimatedTooltipHeight: S
@@ -77,38 +77,38 @@ let p = {
             emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
             ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
             opal: c.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), R = null != C ? (0, u.I)(C).standard : null, P = n.useMemo(() => {
+        })[h], [h]), P = null != C ? (0, u.I)(C).standard : null, A = n.useMemo(() => {
             if (null == C) return "";
             let e = c.VD[C];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
-        }, [C]), _ = n.useMemo(() => {
-            if (!r || null == R) return;
+        }, [C]), R = n.useMemo(() => {
+            if (!r || null == P) return;
             let e = x ? {
                 progressCircleText: b,
                 progressCirclePercent: g,
-                progressCircleUrgency: y
+                progressCircleUrgency: f
             } : {};
             return {
                 type: "dynamic",
                 component: i.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
                 aspectRatio: "6/4",
                 props: {
-                    src: R,
-                    alt: P,
+                    src: P,
+                    alt: A,
                     ...e
                 }
             }
-        }, [r, R, P, x, b, g, y]), A = {
+        }, [r, P, A, x, b, g, f]), _ = {
             title: t,
             body: l,
-            graphic: _,
+            graphic: R,
             actions: n.useMemo(() => {
                 if (m) return [{
                     text: "Got it",
                     variant: "primary"
                 }]
             }, [m]),
-            delay: f,
+            delay: y,
             size: E,
             gradientColor: n.useMemo(() => "string" == typeof v && v in p ? p[v] : v, [v]),
             estimatedTooltipHeight: S
@@ -129,7 +129,7 @@ let p = {
                 },
                 children: [(0, a.jsx)(o.L, {
                     targetElementRef: j,
-                    ...A,
+                    ..._,
                     children: (0, a.jsx)(s.Button, {
                         buttonRef: j,
                         variant: "primary",
@@ -137,7 +137,7 @@ let p = {
                     })
                 }), (0, a.jsx)(o.L, {
                     targetElementRef: T,
-                    ...A,
+                    ..._,
                     children: (0, a.jsx)(s.Button, {
                         buttonRef: T,
                         variant: "primary",

@@ -1,18 +1,18 @@
-/** chunk id: 46993, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => o
+/** chunk id: 46993, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => d
 });
-var n = i(311907),
-    l = i(684013),
-    s = i(419954),
-    a = i(256415),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.OVERLAY_CLICKABLE_REGIONS_SETTING, {
-    useValue: () => (0, n.bG)([a.default], () => !a.default.disableClickableRegions),
-    setValue: t => {
-        l.A.setDisableClickableRegions(!t)
+var i = n(311907),
+    s = n(684013),
+    l = n(419954),
+    a = n(256415),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.OVERLAY_CLICKABLE_REGIONS_SETTING, {
+    useValue: () => (0, i.bG)([a.default], () => !a.default.disableClickableRegions),
+    setValue: e => {
+        s.A.setDisableClickableRegions(!e)
     },
-    useTitle: () => u.intl.string(u.t["+eFXxq"]),
-    useSubtitle: () => u.intl.string(u.t.kivMAp)
+    useTitle: () => o.intl.string(o.t["+eFXxq"]),
+    useSubtitle: () => o.intl.string(o.t.kivMAp)
 })

@@ -1,37 +1,37 @@
-/** chunk id: 309038, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    L: () => A
+/** chunk id: 309038, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    L: () => u
 });
-var n = i(753806),
-    l = i(145331),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(358776),
-    o = i(652215),
-    d = i(985018);
-let A = (0, s.Qx)(r.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
-    useTitle: () => (0, u.bp)("DefaultDMSearchBehavior") ? d.intl.string(d.t.VkoLsy) : d.intl.string(d.t["NxjN+q"]),
-    useSearchTerms: () => [d.intl.string(d.t["t4+fbe"])],
+var i = n(753806),
+    s = n(145331),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(358776),
+    d = n(652215),
+    c = n(985018);
+let u = (0, l.Qx)(r.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
+    useTitle: () => (0, o.bp)("DefaultDMSearchBehavior") ? c.intl.string(c.t.VkoLsy) : c.intl.string(c.t["NxjN+q"]),
+    useSearchTerms: () => [c.intl.string(c.t["t4+fbe"])],
     useOptions: function() {
-        let t = (0, u.bp)("DefaultDMSearchBehavior");
+        let e = (0, o.bp)("DefaultDMSearchBehavior");
         return [{
-            name: t ? d.intl.string(d.t.E9JM4J) : d.intl.string(d.t["t+fGsk"]),
+            name: e ? c.intl.string(c.t.E9JM4J) : c.intl.string(c.t["t+fGsk"]),
             value: 0
         }, {
-            name: t ? d.intl.string(d.t["Kr+lPi"]) : d.intl.string(d.t.MwlEGN),
+            name: e ? c.intl.string(c.t["Kr+lPi"]) : c.intl.string(c.t.MwlEGN),
             value: 1
         }]
     },
     useValue: () => +!!a.Hu.useSetting(),
-    setValue: t => {
-        let e = 1 === t;
-        e ? n.A.cleanUpPrivateChannelSearchState() : n.A.cleanUpSearchState({
-            type: o.I4_.DMS
-        }), (0, l._k)({
+    setValue: e => {
+        let t = 1 === e;
+        t ? i.A.cleanUpPrivateChannelSearchState() : i.A.cleanUpSearchState({
+            type: d.I4_.DMS
+        }), (0, s._k)({
             prevIsCrossDMSettingEnabled: a.Hu.getSetting(),
-            isCrossDMSettingEnabled: e,
-            location: l.vy.USER_SETTINGS
-        }), a.Hu.updateSetting(e)
+            isCrossDMSettingEnabled: t,
+            location: s.vy.USER_SETTINGS
+        }), a.Hu.updateSetting(t)
     }
 })

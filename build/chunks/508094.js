@@ -1,6 +1,6 @@
 /** chunk id: 508094, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 }), n(321073);
 var i = n(179771),
     r = n(793574),
@@ -15,7 +15,7 @@ var i = n(179771),
     h = n(693806),
     _ = n(613057),
     m = n(818348);
-let p = {
+let g = {
     [m.e$.GET_SOUNDBOARD_SOUNDS]: {
         scope: {
             [_.sm.ANY]: [i.F.RPC, _.hj]

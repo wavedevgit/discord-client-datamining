@@ -1,14 +1,14 @@
-/** chunk id: 601954, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    j: () => o
+/** chunk id: 601954, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    j: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(440774),
-    a = i(708399),
-    r = i(37987),
-    u = i(985018);
-let o = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_CATEGORY, {
-    useSearchTerms: () => [u.intl.string(u.t.YpCiMt)],
-    buildLayout: () => [s.B, a.I, r.q]
+var i = n(419954),
+    s = n(780964),
+    l = n(440774),
+    a = n(708399),
+    r = n(37987),
+    o = n(985018);
+let d = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_CATEGORY, {
+    useSearchTerms: () => [o.intl.string(o.t.YpCiMt)],
+    buildLayout: () => [l.B, a.I, r.q]
 })

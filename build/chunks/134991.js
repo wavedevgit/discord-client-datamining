@@ -17,7 +17,7 @@ let h = e => {
         targetElementRef: t,
         shouldShow: n,
         onDismiss: h
-    } = e, p = i.useCallback(() => {
+    } = e, x = i.useCallback(() => {
         h(), (0, r.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL, {
             section: d.nc_.SUBSCRIPTIONS
         })
@@ -43,7 +43,7 @@ let h = e => {
         onRequestClose: h,
         actions: [{
             text: u.intl.string(c.default.DD26QR),
-            onClick: p
+            onClick: x
         }]
     })
 }

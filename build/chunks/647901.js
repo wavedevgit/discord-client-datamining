@@ -1,57 +1,57 @@
-/** chunk id: 647901, original params: e,t,r (module,exports,require) **/
+/** chunk id: 647901, original params: e,t,a (module,exports,require) **/
 "use strict";
-r.d(t, {
-    X: () => u,
+a.d(t, {
+    X: () => _,
     x: () => d
 });
-var n = r(627968),
-    a = r(64700),
-    s = r(503698),
-    l = r.n(s),
-    i = r(865513);
-let c = {
+var n = a(627968),
+    r = a(64700),
+    i = a(503698),
+    o = a.n(i),
+    s = a(865513);
+let l = {
         SIZE: {
             default: void 0,
-            reduced: i.k2
+            reduced: s.k2
         },
         COLOR: {
             default: void 0,
-            muted: i.JF
+            muted: s.JF
         },
         WEIGHT: {
             default: void 0,
-            reduced: i.Xj
+            reduced: s.Xj
         }
     },
-    o = a.createContext({
+    c = r.createContext({
         className: void 0,
         size: "default",
         color: "default",
         weight: "default"
     });
 
-function u() {
-    return a.useContext(o)
+function _() {
+    return r.useContext(c)
 }
 
 function d(e) {
     let {
         children: t,
-        size: r,
-        color: s,
+        size: a,
+        color: i,
         weight: d
-    } = e, _ = u(), h = a.useMemo(() => {
+    } = e, u = _(), p = r.useMemo(() => {
         let e = {
                 className: void 0,
-                size: r ?? _.size,
-                color: s ?? _.color,
-                weight: d ?? _.weight
+                size: a ?? u.size,
+                color: i ?? u.color,
+                weight: d ?? u.weight
             },
-            t = l()(c.SIZE[e.size], c.COLOR[e.color], c.WEIGHT[e.weight]);
-        return "" !== t && (e.className = l()(i.zr, t)), e
-    }, [r, s, d, _]);
-    return (0, n.jsx)(o.Provider, {
-        value: h,
+            t = o()(l.SIZE[e.size], l.COLOR[e.color], l.WEIGHT[e.weight]);
+        return "" !== t && (e.className = o()(s.zr, t)), e
+    }, [a, i, d, u]);
+    return (0, n.jsx)(c.Provider, {
+        value: p,
         children: t
     })
 }

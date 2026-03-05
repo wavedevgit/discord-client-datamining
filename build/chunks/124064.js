@@ -4,69 +4,69 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(355622),
+    l = n(397927),
+    a = n(355622),
     r = n(408018),
     o = n(133343),
-    c = n(915089),
-    d = n(840065),
+    d = n(915089),
+    c = n(840065),
     u = n(95701),
     _ = n(128450),
-    m = n(652215),
-    A = n(985018),
-    g = n(973746);
-let h = (0, c.Ld)(),
-    x = (0, u.createChannelRecord)({
+    g = n(652215),
+    m = n(985018),
+    A = n(973746);
+let h = (0, d.Ld)(),
+    p = (0, u.createChannelRecord)({
         id: "1",
-        type: m.rbe.DM
+        type: g.rbe.DM
     }),
-    p = (0, c.Ld)();
+    x = (0, d.Ld)();
 
 function E(e) {
     let {
         sectionTitle: t,
         errors: n,
-        onBioChange: c,
+        onBioChange: d,
         pendingBio: u,
         placeholder: E,
-        currentBio: C,
-        disabled: T = !1
-    } = e, [S, I] = s.useState(u ?? C), [f, N] = s.useState((0, r.x7)(S)), b = s.useRef(C), j = s.useRef(!1);
+        currentBio: T,
+        disabled: S = !1
+    } = e, [C, I] = s.useState(u ?? T), [f, b] = s.useState((0, r.x7)(C)), N = s.useRef(T), v = s.useRef(!1);
     return s.useEffect(() => {
-        if (b.current !== C) {
-            let e = (0, r.x7)(C);
-            I(C), N(e)
+        if (N.current !== T) {
+            let e = (0, r.x7)(T);
+            I(T), b(e)
         }
-        b.current = C
-    }, [C]), (0, i.jsxs)(_.A, {
+        N.current = T
+    }, [T]), (0, i.jsxs)(_.A, {
         title: t,
         titleId: h,
-        description: A.intl.string(A.t.Bbw6Ac),
+        description: m.intl.string(m.t.Bbw6Ac),
         errors: n,
-        disabled: T,
+        disabled: S,
         children: [(0, i.jsx)(o.Ay, {
-            "aria-describedby": p,
+            "aria-describedby": x,
             "aria-labelledby": h,
-            className: g.i,
-            innerClassName: g.Z,
-            maxCharacterCount: m.NA2,
+            className: A.i,
+            innerClassName: A.Z,
+            maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
-                t !== S && (I(t), N(n), c(t))
+                t !== C && (I(t), b(n), d(t))
             },
             placeholder: E,
-            channel: x,
-            textValue: S,
+            channel: p,
+            textValue: C,
             richValue: f,
             emojiPickerCloseOnModalOuterClick: !0,
-            parentModalKey: d.USER_SETTINGS_MODAL_KEY,
-            type: l.oU.PROFILE_BIO_INPUT,
+            parentModalKey: c.USER_SETTINGS_MODAL_KEY,
+            type: a.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
-                j.current = !1
+                v.current = !1
             },
             onFocus: () => {
-                j.current = !0
+                v.current = !0
             },
-            focused: j.current,
+            focused: v.current,
             onSubmit: function() {
                 return new Promise(e => {
                     e({
@@ -75,10 +75,10 @@ function E(e) {
                     })
                 })
             }
-        }), (0, i.jsx)(a.AC4, {
-            id: p,
-            children: A.intl.format(A.t["+DFxLc"], {
-                maxLength: m.NA2
+        }), (0, i.jsx)(l.AC4, {
+            id: x,
+            children: m.intl.format(m.t["+DFxLc"], {
+                maxLength: g.NA2
             })
         })]
     })

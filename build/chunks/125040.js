@@ -5,42 +5,24 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(421380),
-    a = n(397927),
-    l = n(631670),
+    l = n(397927),
+    a = n(631670),
     r = n(985018);
 
 function o(e) {
     let {
         onClose: t
     } = e;
-    return (0, i.jsx)(a.MJ3, {
+    return (0, i.jsx)(l.MJ3, {
         dismissable: !0,
         header: r.intl.string(r.t.UNGZDI),
         confirmText: r.intl.string(r.t.BddRzS),
         confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             children: r.intl.string(r.t.alpAUm)
-        })
-    })
-}
-
-function c(e) {
-    let {
-        onClose: t
-    } = e;
-    return (0, i.jsx)(a.MJ3, {
-        dismissable: !0,
-        header: r.intl.string(r.t.I5UrbV),
-        confirmText: r.intl.string(r.t.BddRzS),
-        confirmButtonColor: s.XD.BRAND,
-        onCancel: t,
-        onConfirm: t,
-        children: (0, i.jsx)(a.Text, {
-            variant: "text-md/normal",
-            children: r.intl.string(r.t.UyVVan)
         })
     })
 }
@@ -49,14 +31,32 @@ function d(e) {
     let {
         onClose: t
     } = e;
-    return (0, i.jsx)(a.MJ3, {
+    return (0, i.jsx)(l.MJ3, {
+        dismissable: !0,
+        header: r.intl.string(r.t.I5UrbV),
+        confirmText: r.intl.string(r.t.BddRzS),
+        confirmButtonColor: s.XD.BRAND,
+        onCancel: t,
+        onConfirm: t,
+        children: (0, i.jsx)(l.Text, {
+            variant: "text-md/normal",
+            children: r.intl.string(r.t.UyVVan)
+        })
+    })
+}
+
+function c(e) {
+    let {
+        onClose: t
+    } = e;
+    return (0, i.jsx)(l.MJ3, {
         dismissable: !0,
         header: r.intl.string(r.t["8lQ2rR"]),
         confirmText: r.intl.string(r.t["8lQ2rR"]),
         cancelText: r.intl.string(r.t["ETE/oC"]),
         onCancel: t,
-        onConfirm: () => (0, l.U_)("", !0).then(t),
-        children: (0, i.jsx)(a.Text, {
+        onConfirm: () => (0, a.U_)("", !0).then(t),
+        children: (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             children: r.intl.string(r.t.FB4H1D)
         })
@@ -68,14 +68,14 @@ function u(e) {
         onClose: t,
         errorMessage: n
     } = e;
-    return (0, i.jsx)(a.MJ3, {
+    return (0, i.jsx)(l.MJ3, {
         dismissable: !0,
         header: r.intl.string(r.t.LX0nT8),
         confirmText: r.intl.string(r.t.BddRzS),
         confirmButtonColor: s.XD.BRAND,
         onCancel: t,
         onConfirm: t,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             children: n
         })
@@ -87,21 +87,21 @@ function _(e) {
         shouldRenderOwnedTeamsModal: t,
         shouldRenderOwnedGuildsModal: n,
         shouldRenderDeleteAccountConfirmModal: s,
-        shouldRenderDisableAccountErrorModal: a,
-        disableAccountErrorMessage: l,
+        shouldRenderDisableAccountErrorModal: l,
+        disableAccountErrorMessage: a,
         onOwnedTeamsWarningModalClose: r,
         onOwnedGuildsWarningModalClose: _,
-        onDeleteAccountConfirmModalClose: m,
-        onDisableAccountErrorModalClose: A
+        onDeleteAccountConfirmModalClose: g,
+        onDisableAccountErrorModalClose: m
     } = e;
     return t ? (0, i.jsx)(o, {
         onClose: r
-    }) : n ? (0, i.jsx)(c, {
+    }) : n ? (0, i.jsx)(d, {
         onClose: _
-    }) : s ? (0, i.jsx)(d, {
-        onClose: m
-    }) : a ? (0, i.jsx)(u, {
-        onClose: A,
-        errorMessage: l
+    }) : s ? (0, i.jsx)(c, {
+        onClose: g
+    }) : l ? (0, i.jsx)(u, {
+        onClose: m,
+        errorMessage: a
     }) : null
 }

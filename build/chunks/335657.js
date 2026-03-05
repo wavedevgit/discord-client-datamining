@@ -18,7 +18,7 @@ function A(e, t, n) {
     (0, c.n)("useMaybeFetchCollectiblesShopHome");
     let _ = r.g.VARIANTS_GROUP,
         m = (0, l.bG)([o.A], () => o.A.skipNumCategories),
-        [p, g, E, I, f, C, T, N] = (0, l.yK)([d.A], () => [d.A.getShopBlocks(e), d.A.getLastSuccessfulFetch(e) ?? 0, d.A.getLastErrorTimestamp(e) ?? 0, d.A.getLastFetchOptions(e), d.A.getFetchShopHomeError(e), d.A.getIsFetchingShopHome(e), d.A.getHasKnownStaleData(e), d.A.getShopHomeConfigOverride()]),
+        [g, p, E, I, f, C, T, N] = (0, l.yK)([d.A], () => [d.A.getShopBlocks(e), d.A.getLastSuccessfulFetch(e) ?? 0, d.A.getLastErrorTimestamp(e) ?? 0, d.A.getLastFetchOptions(e), d.A.getFetchShopHomeError(e), d.A.getIsFetchingShopHome(e), d.A.getHasKnownStaleData(e), d.A.getShopHomeConfigOverride()]),
         S = (0, i.useMemo)(() => ({
             ...t,
             variantsReturnStyle: _,
@@ -27,8 +27,8 @@ function A(e, t, n) {
             skipNumCategories: m
         }), [t, N, m, _]),
         x = (0, i.useMemo)(() => !(0, s.gn)(I, S), [I, S]),
-        v = (0, u.n)(p, C ?? !1, A),
-        y = (0, i.useMemo)(() => !v && Date.now() - g < 6e5, [g, v]);
+        v = (0, u.n)(g, C ?? !1, A),
+        y = (0, i.useMemo)(() => !v && Date.now() - p < 6e5, [p, v]);
     return (0, i.useEffect)(() => {
         if (!h || C) return;
         let t = Date.now() - E < 6e5;
@@ -36,7 +36,7 @@ function A(e, t, n) {
     }, [h, C, f, E, y, T, x, S, e, n]), {
         isFetchingShopHome: C,
         fetchShopHomeError: f,
-        shopBlocks: p,
+        shopBlocks: g,
         refreshShopHome: (0, i.useCallback)(() => {
             (0, s.h$)(e, S, n)
         }, [e, S, n])

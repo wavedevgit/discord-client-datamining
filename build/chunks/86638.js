@@ -1,6 +1,6 @@
 /** chunk id: 86638, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => O
 });
 var i = n(627968),
     l = n(64700),
@@ -68,19 +68,19 @@ function k(e) {
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), m())
-    }, [m, t.sku, f, k]), w = l.useCallback(() => {
+    }, [m, t.sku, f, k]), L = l.useCallback(() => {
         null != f && (k({
             wishlistId: f,
             action: S.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.sku.id,
             productLines: new Set([t.sku.productLine])
         }), x())
-    }, [x, t.sku, f, k]), L = null != c ? (0, i.jsx)("div", {
+    }, [x, t.sku, f, k]), O = null != c ? (0, i.jsx)("div", {
         ref: E,
         className: y.BU,
         children: c
     }) : null, {
-        label: O,
+        label: w,
         icon: D,
         isPromptingPurchase: P
     } = (0, v.hB)({
@@ -107,15 +107,15 @@ function k(e) {
                 onClick: R,
                 children: [(0, i.jsx)(v.AJ, {
                     spec: C,
-                    onClick: P ? w : R,
+                    onClick: P ? L : R,
                     isHoveringOrFocusing: u,
-                    label: O,
+                    label: w,
                     icon: D
                 }), _ && (0, i.jsx)(j.gS, {
                     isHoveringOrFocusing: u
                 })]
             })
-        }), L, n.id === a.id && null != f && (0, i.jsx)(I.A, {
+        }), O, n.id === a.id && null != f && (0, i.jsx)(I.A, {
             wishlistId: f,
             sku: t.sku,
             spec: C,
@@ -164,7 +164,7 @@ function R(e) {
     })
 }
 
-function w(e) {
+function L(e) {
     let {
         item: t,
         wishlistOwner: n,
@@ -203,7 +203,7 @@ function w(e) {
     })
 }
 
-function L(e) {
+function O(e) {
     let {
         item: t,
         wishlistOwner: n,
@@ -228,7 +228,7 @@ function L(e) {
                 ...r
             });
         case b.EZt.COLLECTIBLES:
-            return (0, i.jsx)(w, {
+            return (0, i.jsx)(L, {
                 item: t,
                 analyticsLocations: o,
                 isHoveringOrFocusing: m,

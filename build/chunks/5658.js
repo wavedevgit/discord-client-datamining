@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(380278),
-    r = n(311283),
-    a = n(311907),
+    a = n(311283),
+    r = n(311907),
     o = n(435371),
     c = n(397927),
     d = n(73153),
@@ -26,13 +26,13 @@ let I = s.memo(function(e) {
         let {
             channel: t,
             deleteChannel: n
-        } = e, r = s.useRef(null), [
-            [a, o], d
-        ] = s.useState([0, 0]), u = t.deleted && a > 0;
-        if (t.deleted && 0 === a && null != r.current) {
-            let e = r.current.offsetHeight,
-                t = r.current.offsetTop,
-                n = r.current.parentElement.scrollTop,
+        } = e, a = s.useRef(null), [
+            [r, o], d
+        ] = s.useState([0, 0]), u = t.deleted && r > 0;
+        if (t.deleted && 0 === r && null != a.current) {
+            let e = a.current.offsetHeight,
+                t = a.current.offsetTop,
+                n = a.current.parentElement.scrollTop,
                 i = n > t ? e - (n - t) : e;
             d([e, e - i])
         }
@@ -54,11 +54,11 @@ let I = s.memo(function(e) {
             opacity: h,
             height: A.to(e => {
                 var t, n;
-                return u ? (t = a, (n = o) + (t - n) * e) : "auto"
+                return u ? (t = r, (n = o) + (t - n) * e) : "auto"
             })
         };
         return (0, i.jsx)(l.animated.div, {
-            ref: r,
+            ref: a,
             style: m,
             children: (0, i.jsx)(N, {
                 ...e
@@ -70,8 +70,8 @@ let I = s.memo(function(e) {
             channel: t,
             onJump: n,
             deleteChannel: l,
-            toggle: r
-        } = e, o = (0, a.bG)([m.A], () => m.A.getChannel(t.channelId));
+            toggle: a
+        } = e, o = (0, r.bG)([m.A], () => m.A.getChannel(t.channelId));
         if (s.useEffect(() => {
                 null == o || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || d.h.wait(() => {
                     (0, u.ack)(t.channelId, {
@@ -96,7 +96,7 @@ let I = s.memo(function(e) {
                     channel: o,
                     gotoChannel: C,
                     mentionCount: t.mentionCount,
-                    toggleCollapsed: r,
+                    toggleCollapsed: a,
                     showCollapseButton: !0,
                     channelState: t,
                     getNumUnreadChannels: e.getNumUnreadChannels,
@@ -105,7 +105,7 @@ let I = s.memo(function(e) {
                         className: E.GC,
                         children: [(0, i.jsx)(p.A, {
                             channel: o
-                        }), (0, i.jsx)(S, {
+                        }), (0, i.jsx)(b, {
                             ...e
                         })]
                     })
@@ -123,22 +123,22 @@ let I = s.memo(function(e) {
         })
     });
 
-function S(e) {
+function b(e) {
     let {
         channel: t,
         markChannelRead: n,
         markGuildRead: s,
         getNumUnreadChannels: l
-    } = e, a = (0, r.A)() && null != t.guildId;
+    } = e, r = (0, a.A)() && null != t.guildId;
     return (0, i.jsx)(o.m_, {
-        text: a ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
+        text: r ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
         children: (0, i.jsx)(c.K0, {
             variant: "secondary",
-            "aria-label": a ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
+            "aria-label": r ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
             size: "sm",
-            icon: a ? c.iA$ : c.A9s,
+            icon: r ? c.iA$ : c.A9s,
             onClick: function() {
-                a && null != t.guildId ? s(t.guildId) : n(t), (0, h.zV)(x.HAw.INBOX_CHANNEL_ACKED, {
+                r && null != t.guildId ? s(t.guildId) : n(t), (0, h.zV)(x.HAw.INBOX_CHANNEL_ACKED, {
                     channel_id: t.channelId,
                     guild_id: t.guildId,
                     marked_all_channels_as_read: !1,

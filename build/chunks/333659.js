@@ -1,25 +1,25 @@
-/** chunk id: 333659, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Z: () => o
+/** chunk id: 333659, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Z: () => d
 });
-var n = i(955572),
-    l = i(419954),
-    s = i(253932),
-    a = i(780964),
-    r = i(614651),
-    u = i(985018);
-let o = (0, l.Qx)(a.X.APPEARANCE_MESSAGE_DISPLAY_MODE, {
-    useTitle: () => u.intl.string(u.t.nKRoPv),
-    useSubtitle: () => u.intl.string(u.t.QntEEG),
+var i = n(955572),
+    s = n(419954),
+    l = n(253932),
+    a = n(780964),
+    r = n(614651),
+    o = n(985018);
+let d = (0, s.Qx)(a.X.APPEARANCE_MESSAGE_DISPLAY_MODE, {
+    useTitle: () => o.intl.string(o.t.nKRoPv),
+    useSubtitle: () => o.intl.string(o.t.QntEEG),
     useOptions: () => [{
-        name: u.intl.string(u.t.Jqj4cZ),
+        name: o.intl.string(o.t.Jqj4cZ),
         value: r.IE.COZY
     }, {
-        name: u.intl.string(u.t["1JNcPS"]),
+        name: o.intl.string(o.t["1JNcPS"]),
         value: r.IE.COMPACT
     }],
-    useValue: () => s.hH.useSetting() ? r.IE.COMPACT : r.IE.COZY,
-    setValue: t => {
-        s.hH.updateSetting(t === r.IE.COMPACT), (0, n.AC)()
+    useValue: () => l.hH.useSetting() ? r.IE.COMPACT : r.IE.COZY,
+    setValue: e => {
+        l.hH.updateSetting(e === r.IE.COMPACT), (0, i.AC)()
     }
 })

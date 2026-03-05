@@ -1,9 +1,9 @@
-/** chunk id: 310250, original params: e,t,n (module,exports,require) **/
+/** chunk id: 310250, original params: t,e,i (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(e, {
     T: () => s
 });
-let i = (0, n(945810).mj)({
+let n = (0, i(945810).mj)({
     name: "2026-01-wishlist-new-recommendations",
     kind: "user",
     defaultConfig: {
@@ -19,8 +19,8 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function s(e) {
-    return i.useConfig({
-        location: e
+function s(t) {
+    return n.useConfig({
+        location: t
     }).enabled
 }

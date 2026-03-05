@@ -1,74 +1,74 @@
-/** chunk id: 878112, original params: t,e,a (module,exports,require) **/
-a.d(e, {
-    A: () => k
+/** chunk id: 878112, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    A: () => y
 });
-var n = a(627968),
-    l = a(64700),
-    r = a(575593),
-    s = a(635358),
-    i = a(990078),
+var t = a(627968),
+    i = a(64700),
+    l = a(575593),
+    r = a(635358),
+    s = a(990078),
     o = a(397927),
-    u = a(688810),
-    c = a(44120),
-    d = a(954571),
-    h = a(440938),
-    p = a(238184),
+    d = a(688810),
+    u = a(44120),
+    c = a(954571),
+    p = a(440938),
+    g = a(238184),
     v = a(766172),
-    g = a(652215),
-    A = a(788868),
-    C = a(985018);
-let k = t => {
+    h = a(652215),
+    m = a(788868),
+    A = a(985018);
+let y = e => {
     let {
-        product: e,
+        product: n,
         primary: a,
-        selectedVariantIndex: k,
-        returnRef: m,
-        onSuccess: x,
-        tooltipDelay: y,
+        selectedVariantIndex: y,
+        returnRef: k,
+        onSuccess: C,
+        tooltipDelay: f,
         fullWidth: b = !1
-    } = t, {
-        analyticsLocations: O
-    } = (0, u.Ay)(), _ = l.useRef(null), w = (0, h.uM)(), R = (0, p.A)(), f = t => {
-        t.stopPropagation(), d.default.track(g.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-            collectibles_shop_session_id: w?.sessionId,
-            sku_id: e.skuId,
-            page_section: w?.pageSection,
-            page_category: w?.pageCategory,
-            tile_type: r.R[e.type],
-            tile_position: String(w?.tilePosition),
+    } = e, {
+        analyticsLocations: _
+    } = (0, d.Ay)(), S = i.useRef(null), N = (0, p.uM)(), E = (0, g.A)(), I = e => {
+        e.stopPropagation(), c.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            collectibles_shop_session_id: N?.sessionId,
+            sku_id: n.skuId,
+            page_section: N?.pageSection,
+            page_category: N?.pageCategory,
+            tile_type: l.R[n.type],
+            tile_position: String(N?.tilePosition),
             cta_name: "gift button",
-            page_type: R || "home"
-        }), (0, c.A)({
+            page_type: E || "home"
+        }), (0, u.A)({
             skuId: (0, v.Y)({
-                product: e,
-                selectedVariantIndex: k
+                product: n,
+                selectedVariantIndex: y
             }),
             isGift: !0,
-            giftingOrigin: A.vQ.SHOP_PAGE,
-            analyticsLocations: O,
-            returnRef: m,
-            variantsReturnStyle: s.g.VARIANTS_GROUP,
-            onClose: null != x ? t => {
-                t && x()
+            giftingOrigin: m.vQ.SHOP_PAGE,
+            analyticsLocations: _,
+            returnRef: k,
+            variantsReturnStyle: r.g.VARIANTS_GROUP,
+            onClose: null != C ? e => {
+                e && C()
             } : void 0
         })
     };
-    return b ? (0, n.jsx)(o.Button, {
+    return b ? (0, t.jsx)(o.Button, {
         variant: a ? "primary" : "secondary",
         icon: o.okO,
-        onClick: f,
-        text: C.intl.string(C.t.gmnzqM),
+        onClick: I,
+        text: A.intl.string(A.t.gmnzqM),
         fullWidth: !0
-    }) : (0, n.jsx)(i.m, {
-        text: C.intl.string(C.t["JCFN/y"]),
-        delay: y,
-        children: (0, n.jsx)(o.K0, {
-            "aria-label": C.intl.string(C.t["JCFN/y"]),
-            buttonRef: _,
+    }) : (0, t.jsx)(s.m, {
+        text: A.intl.string(A.t["JCFN/y"]),
+        delay: f,
+        children: (0, t.jsx)(o.K0, {
+            "aria-label": A.intl.string(A.t["JCFN/y"]),
+            buttonRef: S,
             variant: a ? "primary" : "secondary",
             icon: o.okO,
             size: "md",
-            onClick: f
+            onClick: I
         })
     })
 }

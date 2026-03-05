@@ -1,12 +1,12 @@
 /** chunk id: 249214, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => s
 });
 var n = r(685357),
     a = r(597807),
     l = r(763424),
     i = r(292177);
-let o = {
+let s = {
     id: "input-label",
     selector: 'input, textarea, select, [role="checkbox"], [role="radio"], [role="radiogroup"], [role="searchbox"], [role="slider"], [role="textbox"], [role="combobox"]',
     tags: ["wcag2a", "wcag131", "wcag412", "section508", "section508.22.a", "ACT"],

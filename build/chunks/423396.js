@@ -17,7 +17,7 @@ var a = l(627968),
     x = l(788868),
     b = l(985018),
     g = l(749226);
-let y = [{
+let f = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
             ...e
@@ -56,7 +56,7 @@ let y = [{
             useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }],
-    f = () => (0, a.jsx)(r.Text, {
+    y = () => (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
@@ -98,7 +98,7 @@ let y = [{
                 return x || null == b || E ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
                     className: g.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: y,
+                        stepConfigs: f,
                         analyticsLocations: r,
                         applicationId: h.FYj,
                         initialPlanId: void 0,
@@ -117,7 +117,7 @@ let y = [{
                         }),
                         onClose: u,
                         onComplete: m
-                    }), (0, a.jsx)(f, {})]
+                    }), (0, a.jsx)(y, {})]
                 })
             },
             controls: {
@@ -154,14 +154,14 @@ let y = [{
                 }, [v, S]);
                 let {
                     isLoadedForPremiumSKUs: C,
-                    selectedPlan: R
+                    selectedPlan: P
                 } = (0, d.n1)({
                     subscriptionPlanId: S
                 });
-                return !m && null != b && C && E && null != R ? (0, a.jsxs)("div", {
+                return !m && null != b && C && E && null != P ? (0, a.jsxs)("div", {
                     className: g.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: y,
+                        stepConfigs: f,
                         analyticsLocations: i,
                         applicationId: x.tv,
                         initialPlanId: v,
@@ -174,10 +174,10 @@ let y = [{
                         onClose: o,
                         onComplete: u,
                         paymentContextOverrides: {
-                            selectedPlan: R,
+                            selectedPlan: P,
                             setSelectedPlanId: j
                         }
-                    }), (0, a.jsx)(f, {})]
+                    }), (0, a.jsx)(y, {})]
                 }) : (0, a.jsx)(p.k, {})
             },
             controls: {

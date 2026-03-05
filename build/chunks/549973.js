@@ -1,24 +1,25 @@
 /** chunk id: 549973, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    e: () => s
-}), n(896048);
-var r = n(64700),
-    l = n(927813),
-    i = n(995273);
+    e: () => a
+});
+var i = n(64700),
+    s = n(927813),
+    l = n(995273);
 
-function s(e) {
+function a(e) {
     let {
         timestamp: t,
         abbreviated: n = !0
-    } = e, [s, a] = r.useState(() => (0, i.jb)(t, n));
-    return r.useEffect(() => {
-        a((0, i.jb)(t, n));
+    } = e, [a, r] = i.useState(() => (0, l.jb)(t, n));
+    return i.useEffect(() => {
+        r((0, l.jb)(t, n));
         let e = Date.now() - t;
-        if (e > l.A.Millis.DAY) return;
-        let r = e >= l.A.Millis.HOUR ? l.A.Millis.HOUR : l.A.Millis.MINUTE,
-            s = setInterval(() => {
-                a((0, i.jb)(t, n))
-            }, r, r - e % r);
-        return () => clearInterval(s)
-    }, [t, n]), s
+        if (e > s.A.Millis.DAY) return;
+        let i = e >= s.A.Millis.HOUR ? s.A.Millis.HOUR : s.A.Millis.MINUTE,
+            a = setInterval(() => {
+                r((0, l.jb)(t, n))
+            }, i, i - e % i);
+        return () => clearInterval(a)
+    }, [t, n]), a
 }

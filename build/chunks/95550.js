@@ -37,8 +37,8 @@ var i = n(627968),
     O = n(95701),
     L = n(734057),
     P = n(71393),
-    k = n(958590),
-    w = n(584777),
+    w = n(958590),
+    k = n(584777),
     U = n(383501),
     G = n(222823),
     F = n(994500),
@@ -46,8 +46,8 @@ var i = n(627968),
     B = n(287809),
     V = n(954571),
     K = n(957565),
-    z = n(203982),
-    W = n(403362),
+    W = n(203982),
+    z = n(403362),
     Y = n(695184),
     q = n(661191),
     J = n(427262),
@@ -112,7 +112,7 @@ let es = (0, b.Ld)(),
                 children: ei.intl.string(ei.t.cjE7wH)
             }),
             ...l,
-            children: s.filter(W.Vq).sort((e, t) => {
+            children: s.filter(z.Vq).sort((e, t) => {
                 let n = e.lastMessageId ?? e.id,
                     i = t.lastMessageId ?? t.id;
                 return q.default.compare(i, n)
@@ -157,12 +157,12 @@ class eo extends l.PureComponent {
             type: this._getAnalyticsEntryPoint().entryPointType,
             source: this._getAnalyticsEntryPoint().entryPointSource,
             is_friend: !this.isNotFriends()
-        }), z._.subscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), z._.subscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), setTimeout(() => {
+        }), W._.subscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.subscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), setTimeout(() => {
             this.forceFocus()
         }, 0)
     }
     componentWillUnmount() {
-        z._.unsubscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), z._.unsubscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
+        W._.unsubscribe(et.jej.SCROLL_PAGE_UP, this.scrollPageUp), W._.unsubscribe(et.jej.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), h.h.wait(() => f.A.close())
     }
     scrollPageUp = () => {
         this.scrollerRef.current?.scrollPageUp({
@@ -325,7 +325,7 @@ class eo extends l.PureComponent {
                 e.preventDefault(), e.stopPropagation(), r ? ((!this.hasNavigableItems(d) || --c < 0) && (d - 1 < 0 ? d = this.hasNavigableItems(t.length - 1) ? t.length - 1 : d : this.hasNavigableItems(t.length - 1) && (d -= 1), c = t[d].length - 1), this.handleSelectionChange(d, c)) : (--c < 0 && (c = s.length - 1), this.handleSelectionChange(0, c));
                 break;
             case en.dh.ENTER:
-                e.preventDefault(), e.stopPropagation(), d === w.A.FRIENDS && s.length > c && this.handleSelect(0, c)
+                e.preventDefault(), e.stopPropagation(), d === k.A.FRIENDS && s.length > c && this.handleSelect(0, c)
         }
     }
     renderSearchBar() {
@@ -402,7 +402,7 @@ class eo extends l.PureComponent {
             isGdmCopyExperimentEnabled: o
         } = this.props;
         if (this.isNotFriends() || this.isPartyFull() || !l && !t || l && !t && !a) return;
-        let c = l ? (s[w.A.FRIENDS]?.length ?? 0) + (s[w.A.GUILD_MEMBERS]?.length ?? 0) : n.length;
+        let c = l ? (s[k.A.FRIENDS]?.length ?? 0) + (s[k.A.GUILD_MEMBERS]?.length ?? 0) : n.length;
         if (l && null == r && a && 0 === c && "" === e) return {
             sections: [1],
             sectionHeight: 0,
@@ -450,7 +450,7 @@ class eo extends l.PureComponent {
             innerAriaOrientation: "vertical"
         };
         return l ? {
-            sections: "" === e ? [s[w.A.FRIENDS]?.length, 1] : [s[w.A.FRIENDS]?.length, s[w.A.GUILD_MEMBERS]?.length],
+            sections: "" === e ? [s[k.A.FRIENDS]?.length, 1] : [s[k.A.FRIENDS]?.length, s[k.A.GUILD_MEMBERS]?.length],
             rowHeight: this.getImprovedDMRowHeight,
             renderSection: this.renderImprovedDMSection,
             sectionHeight: this.getImprovedDMSectionHeight,
@@ -477,7 +477,7 @@ class eo extends l.PureComponent {
         } = this.props, {
             sectionVisibility: l
         } = this.state;
-        return !1 === l[e] ? 0 : e === w.A.GUILD_MEMBERS && "" === i ? 32 : null == n[e] || 0 === n[e].length ? 0 : 48 * (null != n[e][t])
+        return !1 === l[e] ? 0 : e === k.A.GUILD_MEMBERS && "" === i ? 32 : null == n[e] || 0 === n[e].length ? 0 : 48 * (null != n[e][t])
     };
     renderRow = e => {
         let t, {
@@ -502,7 +502,7 @@ class eo extends l.PureComponent {
             } = this.state;
         if (s) {
             if (!1 === f[n]) return null;
-            if (n === w.A.GUILD_MEMBERS && "" === p) return (0, i.jsx)("div", {
+            if (n === k.A.GUILD_MEMBERS && "" === p) return (0, i.jsx)("div", {
                 className: el.Rg,
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-md/normal",
@@ -518,7 +518,7 @@ class eo extends l.PureComponent {
             user: E,
             comparator: x
         } = _, C = o.has(E.id), S = ((m || null == A) && E.isStaff() && g?.isStaff()) ?? !1, I = !1;
-        return !C && 0 >= this.getRemaining() ? I = !0 : s && !C && o.size > 0 && n === w.A.GUILD_MEMBERS && (I = !0, t = ei.intl.string(ei.t.z9qAt9)), (0, i.jsx)(ee.A, {
+        return !C && 0 >= this.getRemaining() ? I = !0 : s && !C && o.size > 0 && n === k.A.GUILD_MEMBERS && (I = !0, t = ei.intl.string(ei.t.z9qAt9)), (0, i.jsx)(ee.A, {
             section: n,
             row: l,
             user: E,
@@ -552,10 +552,10 @@ class eo extends l.PureComponent {
         } = this.state, a = n[t];
         return "" !== l && (null == a || 0 === a.length) ? null : (0, i.jsx)(ef, {
             section: t,
-            heading: t === w.A.FRIENDS ? ei.intl.string(ei.t.TdEu5X) : ei.intl.string(ei.t.y29JXs),
+            heading: t === k.A.FRIENDS ? ei.intl.string(ei.t.TdEu5X) : ei.intl.string(ei.t.y29JXs),
             onToggleVisibility: this.handleToggleSectionVisibility,
             isOpen: s[t] ?? !0
-        }, t === w.A.FRIENDS ? ei.intl.string(ei.t.TdEu5X) : ei.intl.string(ei.t.y29JXs))
+        }, t === k.A.FRIENDS ? ei.intl.string(ei.t.TdEu5X) : ei.intl.string(ei.t.y29JXs))
     };
     getImprovedDMSectionHeight = e => {
         let {
@@ -947,15 +947,15 @@ function ed(e) {
         channel: t,
         onComplete: n,
         ...l
-    } = e, s = (0, c.cf)([w.h, k.A, H.A], () => {
+    } = e, s = (0, c.cf)([k.h, w.A, H.A], () => {
         let e;
-        return null != t && null != (e = k.A.getInvite(t.id)) && e.isExpired() && (e = null), {
-            ...w.h.getState(),
+        return null != t && null != (e = w.A.getInvite(t.id)) && e.isExpired() && (e = null), {
+            ...k.h.getState(),
             invite: e,
             hideDiscriminator: H.A.hidePersonalInformation,
             hideInstantInvites: H.A.hideInstantInvites
         }
-    }), a = (0, c.yK)([w.h], () => w.h.getSections()), {
+    }), a = (0, c.yK)([k.h], () => k.h.getSections()), {
         enabled: r
     } = Z.A.useConfig({
         location: null == t ? "New DM" : "Existing DM"
@@ -986,8 +986,8 @@ function eu(e) {
     })), {
         modalKey: s
     }), [t, s]), o = l.useCallback(() => a ? (0, u.OoC)(s) : r(), [a, s, r]);
-    return l.useEffect(() => (n && z._.subscribe(et.jej.TOGGLE_DM_CREATE, o), () => {
-        z._.unsubscribe(et.jej.TOGGLE_DM_CREATE, o)
+    return l.useEffect(() => (n && W._.subscribe(et.jej.TOGGLE_DM_CREATE, o), () => {
+        W._.unsubscribe(et.jej.TOGGLE_DM_CREATE, o)
     }), [n, o]), (0, x.Ay)(() => {
         (0, M.u)()
     }), {

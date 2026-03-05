@@ -1,17 +1,17 @@
-/** chunk id: 413336, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    $: () => o
+/** chunk id: 413336, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    $: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(246161),
-    a = i(340889),
-    r = i(897208),
-    u = i(985018);
+var i = n(419954),
+    s = n(780964),
+    l = n(246161),
+    a = n(340889),
+    r = n(897208),
+    o = n(985018);
 
-function o(t) {
-    return (0, n.zZ)(l.X.STREAMER_MODE_CATEGORY, {
-        useTitle: t ? () => u.intl.string(u.t.S5GfOW) : void 0,
-        buildLayout: () => [a.U, s.c, r.p]
+function d(e) {
+    return (0, i.zZ)(s.X.STREAMER_MODE_CATEGORY, {
+        useTitle: e ? () => o.intl.string(o.t.S5GfOW) : void 0,
+        buildLayout: () => [a.U, l.c, r.p]
     })
 }

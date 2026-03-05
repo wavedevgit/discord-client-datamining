@@ -1,6 +1,6 @@
 /** chunk id: 885459, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 }), n(323874), n(14289), n(35956), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -18,12 +18,12 @@ var i = n(627968),
 function m(e) {
     return new URLSearchParams(e).get(c.L1.QUEST_ID)
 }
-let p = function(e) {
+let g = function(e) {
     let {
         questId: t
     } = e, {
         questId: n,
-        setQuestId: p
+        setQuestId: g
     } = function(e) {
         let t = (0, l.W6)(),
             [n, i] = r.useState(e),
@@ -41,7 +41,7 @@ let p = function(e) {
             questId: n,
             setQuestId: i
         }
-    }(t), g = (0, a.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, a.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
+    }(t), p = (0, a.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, a.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
     r.useEffect(() => {
         null != n && (0, o.dQ)(n).then(() => {
             (0, o.Gt)(n)
@@ -61,8 +61,8 @@ let p = function(e) {
     return (0, i.jsx)(A.A, {
         controls: (0, i.jsx)(u.A, {
             questId: n,
-            setQuestId: p,
-            quest: g,
+            setQuestId: g,
+            quest: p,
             refreshQuest: () => {
                 null != n && (0, o.dQ)(n)
             }

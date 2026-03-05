@@ -15,8 +15,8 @@ var i = n(420970),
     h = n(780964),
     _ = n(954571),
     m = n(353835),
-    p = n(307600),
-    g = n(723702),
+    g = n(307600),
+    p = n(723702),
     E = n(636401),
     I = n(90924),
     f = n(629471),
@@ -43,7 +43,7 @@ let S = new Set([N.AM, N.eK]),
                 let i = a.Ay.getCurrentEmbeddedActivity();
                 try {
                     let e = new URL(n).toString();
-                    if (g.isPlatformEmbedded) {
+                    if (p.isPlatformEmbedded) {
                         let e = (0, l.f)() ? T.MLl.ACTIVITY_POPOUT : null;
                         m.A.focus(e, !0)
                     }
@@ -56,7 +56,7 @@ let S = new Set([N.AM, N.eK]),
                     }), Promise.resolve({
                         opened: !0
                     });
-                    return new Promise(n => (0, p.h)({
+                    return new Promise(n => (0, g.h)({
                         href: e,
                         shouldConfirm: !0,
                         onConfirm: () => {

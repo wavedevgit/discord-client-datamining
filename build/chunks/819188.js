@@ -1,30 +1,30 @@
-/** chunk id: 819188, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    B: () => d
+/** chunk id: 819188, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    B: () => c
 });
-var n = i(627968);
-i(64700);
-var l = i(311907),
-    s = i(256311),
-    a = i(883600),
-    r = i(419954),
-    u = i(780964),
-    o = i(31760);
-let d = (0, r.E2)(u.X.CHANGE_LOG_OVERRIDE, {
+var i = n(627968);
+n(64700);
+var s = n(311907),
+    l = n(256311),
+    a = n(883600),
+    r = n(419954),
+    o = n(780964),
+    d = n(31760);
+let c = (0, r.E2)(o.X.CHANGE_LOG_OVERRIDE, {
     useSearchTerms: () => ["changelog override", "change log override"],
     Component: function() {
-        let t = (0, l.bG)([a.A], () => a.A.overrideId()),
-            e = async t => {
-                let e = a.A.getChangelog(t, "en-US");
-                return null != e ? e : await s.A.fetchChangelog(t, "en-US", !1, !0) ?? null
+        let e = (0, s.bG)([a.A], () => a.A.overrideId()),
+            t = async e => {
+                let t = a.A.getChangelog(e, "en-US");
+                return null != t ? t : await l.A.fetchChangelog(e, "en-US", !1, !0) ?? null
             };
-        return (0, n.jsx)(o.q, {
+        return (0, i.jsx)(d.q, {
             label: "Change Log Override",
             description: "Provide a change log ID to override the change log shown to this user.",
             placeholder: "Enter Change Log ID...",
-            overrideId: t ?? null,
-            setOverride: t => s.A.setChangelogOverride(t),
-            fetchOverride: e
+            overrideId: e ?? null,
+            setOverride: e => l.A.setChangelogOverride(e),
+            fetchOverride: t
         })
     }
 })

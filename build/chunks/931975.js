@@ -1,18 +1,18 @@
-/** chunk id: 931975, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => o
+/** chunk id: 931975, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => d
 });
-var n = i(571524),
-    l = i(262850),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.GDM_ALL_REACTION_NOTIFICATIONS, {
-    useTitle: () => u.intl.string(u.t.nvkXtr),
+var i = n(571524),
+    s = n(262850),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.GDM_ALL_REACTION_NOTIFICATIONS, {
+    useTitle: () => o.intl.string(o.t.nvkXtr),
     useValue: a.c3.useSetting,
-    setValue: l.w,
+    setValue: s.w,
     usePredicate: function() {
-        return (0, n.h)("GdmAllReactionNotification").showSettingsToggle
+        return (0, i.h)("GdmAllReactionNotification").showSettingsToggle
     }
 })

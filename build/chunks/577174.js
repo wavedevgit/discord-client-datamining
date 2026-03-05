@@ -1,55 +1,55 @@
 /** chunk id: 577174, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(742589),
-    l = n(65470),
+    l = n(742589),
+    a = n(65470),
     r = n(736455),
     o = n(985018),
-    c = n(731176);
-let d = e => {
+    d = n(731176);
+let c = e => {
     let {
         navBarSections: t,
         activeSectionId: n
-    } = e, d = {
+    } = e, c = {
         [r.k.HOME]: o.intl.string(o.t.uGRXjS),
         [r.k.WHATS_NEW]: o.intl.string(o.t["mfcR/v"]),
         [r.k.BEST_OF_NITRO]: o.intl.string(o.t.xQKkE8),
         [r.k.PLANS]: o.intl.string(o.t.wyNMnm),
         [r.k.COMPARE]: o.intl.string(o.t.pwD7If)
     }, u = Object.values(t).sort((e, t) => e.order - t.order);
-    return (0, i.jsx)(a.A, {
-        className: c.TQ,
+    return (0, i.jsx)(l.A, {
+        className: d.TQ,
         transparent: !0,
         children: (0, i.jsxs)("div", {
-            className: c.Wc,
+            className: d.Wc,
             children: [(0, i.jsxs)("div", {
-                className: c.wG,
+                className: d.wG,
                 children: [(0, i.jsx)(s.tvc, {
-                    className: c.nE,
-                    colorClass: c.oG
+                    className: d.nE,
+                    colorClass: d.oG
                 }), (0, i.jsx)("div", {
-                    className: c.zc,
+                    className: d.zc,
                     children: u.map(e => {
                         let t = n === e.id,
-                            a = d[e.id];
+                            l = c[e.id];
                         return (0, i.jsxs)(s.DUT, {
-                            className: c.S0,
+                            className: d.S0,
                             onClick: e.scrollToSection,
                             children: [(0, i.jsx)(s.Text, {
                                 variant: "text-sm/medium",
                                 color: "text-strong",
-                                children: a
+                                children: l
                             }), t && (0, i.jsx)("div", {
-                                className: c.W0
+                                className: d.W0
                             })]
-                        }, a)
+                        }, l)
                     })
                 })]
-            }), (0, i.jsx)(l.A, {
+            }), (0, i.jsx)(a.A, {
                 size: "sm",
                 variant: "overlay-secondary"
             })]

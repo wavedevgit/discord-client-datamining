@@ -7,9 +7,9 @@ var n = r(64700),
     a = r(353640),
     l = r(121894),
     i = r(562519),
-    o = r(954571),
-    u = r(972049),
-    s = r(652215);
+    s = r(954571),
+    o = r(972049),
+    u = r(652215);
 let c = new i.A("a11y_violations"),
     d = (0, a.v)(() => ({
         check: null
@@ -36,11 +36,11 @@ function f(e) {
                                 trace: r.join("\n"),
                                 hash: n
                             };
-                            o.default.track(s.HAw.A11Y_RUNTIME_VIOLATION, a)
+                            s.default.track(u.HAw.A11Y_RUNTIME_VIOLATION, a)
                         }
                     }
     }, []);
-    (0, u.dL)(e, t)
+    (0, o.dL)(e, t)
 }
 
 function h() {

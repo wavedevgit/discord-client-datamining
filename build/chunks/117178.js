@@ -1,18 +1,18 @@
 /** chunk id: 117178, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 }), n(321073);
 var i = n(627968),
     s = n(64700),
-    a = n(695497),
-    l = n.n(a),
+    l = n(695497),
+    a = n.n(l),
     r = n(313869),
     o = n(451802),
-    c = n(723702),
-    d = n(837921),
+    d = n(723702),
+    c = n(837921),
     u = n(650583);
-let _ = c.isPlatformEmbedded && null != d.Ay.getDiscordUtils().inputCaptureRegisterElement;
-class m extends s.PureComponent {
+let _ = d.isPlatformEmbedded && null != c.Ay.getDiscordUtils().inputCaptureRegisterElement;
+class g extends s.PureComponent {
     _input;
     gs;
     _mounted = !1;
@@ -38,7 +38,7 @@ class m extends s.PureComponent {
         })
     }
     cleanUp() {
-        c.isPlatformEmbedded && null != this.gs && (this.gs.destroy(), this.gs = null)
+        d.isPlatformEmbedded && null != this.gs && (this.gs.destroy(), this.gs = null)
     }
     handleComboChange(e) {
         let {
@@ -51,7 +51,7 @@ class m extends s.PureComponent {
         }))
     }
     recordStart = () => {
-        c.isPlatformEmbedded && !_ && (this.gs = new r.A, this.gs.on("change", this.handleGSChange)), this.setState({
+        d.isPlatformEmbedded && !_ && (this.gs = new r.A, this.gs.on("change", this.handleGSChange)), this.setState({
             mode: o.E.RECORDING
         })
     };
@@ -65,7 +65,7 @@ class m extends s.PureComponent {
     };
     handleComboKeys = (e, t, n) => {
         if (n.preventDefault(), "keydown" === n.type) {
-            let e = t.map(e => [u.zY.KEYBOARD_KEY, l()(e), u.g$.BROWSER]),
+            let e = t.map(e => [u.zY.KEYBOARD_KEY, a()(e), u.g$.BROWSER]),
                 {
                     keyCode: i
                 } = n;
@@ -89,10 +89,10 @@ class m extends s.PureComponent {
                 mode: s
             } = this.state,
             {
-                disabled: a
+                disabled: l
             } = this.props;
-        return _ ? (t = d.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(o.A, {
-            disabled: a,
+        return _ ? (t = c.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : d.isPlatformEmbedded || (e = this.handleComboKeys), (0, i.jsx)(o.A, {
+            disabled: l,
             value: n,
             mode: s,
             onClick: this.toggleRecordMode,
@@ -102,4 +102,4 @@ class m extends s.PureComponent {
         })
     }
 }
-let A = m
+let m = g

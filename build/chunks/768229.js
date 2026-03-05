@@ -14,7 +14,7 @@ let s = function(e) {
             behavior: "smooth",
             block: "start"
         }))
-    }, [t]), [s, a] = (0, i.useState)(Object.fromEntries(e.map(e => [e, !1]))), [l, r] = (0, i.useState)(e[0]);
+    }, [t]), [s, l] = (0, i.useState)(Object.fromEntries(e.map(e => [e, !1]))), [a, r] = (0, i.useState)(e[0]);
     (0, i.useEffect)(() => {
         let e = Object.keys(s).filter(e => s[e]);
         e.length > 0 && r(e[0])
@@ -23,7 +23,7 @@ let s = function(e) {
     return (0, i.useEffect)(() => {
         let e = new IntersectionObserver(e => {
             e.forEach(e => {
-                a(t => ({
+                l(t => ({
                     ...t,
                     [e.target.id]: e.isIntersecting
                 }))
@@ -41,7 +41,7 @@ let s = function(e) {
             scrollToSection: () => n(t),
             order: i
         }, e), {}), [e, n]),
-        activeSectionId: l,
+        activeSectionId: a,
         setActiveSectionId: r
     }
 }

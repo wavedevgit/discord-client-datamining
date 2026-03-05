@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     s = n(311907),
-    a = n(73153),
-    l = n(233317);
+    l = n(73153),
+    a = n(233317);
 
 function r(e) {
     let {
@@ -14,19 +14,19 @@ function r(e) {
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
         premiumGroupMembers: r,
         isFetchingMembers: o,
-        isUpdatingMembers: c
-    } = (0, s.cf)([l.A], () => ({
-        premiumGroupMembers: l.A.getMembers(),
-        isFetchingMembers: l.A.isFetchingMembers(),
-        isUpdatingMembers: l.A.isUpdatingMembers()
+        isUpdatingMembers: d
+    } = (0, s.cf)([a.A], () => ({
+        premiumGroupMembers: a.A.getMembers(),
+        isFetchingMembers: a.A.isFetchingMembers(),
+        isUpdatingMembers: a.A.isUpdatingMembers()
     }));
     return (0, i.useEffect)(() => {
-        !n || t && l.A.hasFetchedMembers() || null != e && a.h.dispatch({
+        !n || t && a.A.hasFetchedMembers() || null != e && l.h.dispatch({
             type: "PREMIUM_GROUP_MEMBERS_REQUEST",
             subscriptionId: e
         })
     }, [n, e, t]), {
         premiumGroupMembers: r,
-        isLoading: o || c
+        isLoading: o || d
     }
 }

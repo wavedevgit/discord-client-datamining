@@ -1,21 +1,21 @@
-/** chunk id: 666196, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    G: () => d,
-    k: () => o
+/** chunk id: 666196, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    G: () => c,
+    k: () => d
 });
-var n = i(311907),
-    l = i(955572),
-    s = i(775602),
-    a = i(419954),
-    r = i(780964),
-    u = i(985018);
-let o = (0, a.zD)(r.X.ENABLE_SWITCH_ICONS, {
-        useTitle: () => u.intl.string(u.t["S3z+pV"]),
-        useSubtitle: () => u.intl.string(u.t["3QuI9+"]),
-        useValue: () => (0, n.bG)([s.A], () => s.A.isSwitchIconsEnabled),
-        setValue: t => (0, l.Gm)(t),
+var i = n(311907),
+    s = n(955572),
+    l = n(775602),
+    a = n(419954),
+    r = n(780964),
+    o = n(985018);
+let d = (0, a.zD)(r.X.ENABLE_SWITCH_ICONS, {
+        useTitle: () => o.intl.string(o.t["S3z+pV"]),
+        useSubtitle: () => o.intl.string(o.t["3QuI9+"]),
+        useValue: () => (0, i.bG)([l.A], () => l.A.isSwitchIconsEnabled),
+        setValue: e => (0, s.Gm)(e),
         hasIcon: !0
     }),
-    d = (0, a.zZ)(r.X.INPUTS, {
-        buildLayout: () => [o]
+    c = (0, a.zZ)(r.X.INPUTS, {
+        buildLayout: () => [d]
     })

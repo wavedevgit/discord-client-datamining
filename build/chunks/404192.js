@@ -5,13 +5,13 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(503698),
-    i = n.n(a),
-    r = n(397927),
+    r = n.n(a),
+    i = n(397927),
     s = n(975807),
     d = n(985018),
     o = n(212335),
-    u = n(606566);
-let c = e => {
+    c = n(606566);
+let u = e => {
     let {
         data: {
             url: t,
@@ -20,27 +20,27 @@ let c = e => {
             is_localized: d
         }
     } = e;
-    return d ? (0, l.jsxs)(r.DUT, {
+    return d ? (0, l.jsxs)(i.DUT, {
         role: "link",
-        className: i()(u.$J, o.lD),
+        className: r()(c.$J, o.lD),
         onClick: () => {
             (0, s.A)(t)
         },
         children: [(0, l.jsxs)("div", {
-            className: u.xU,
-            children: [(0, l.jsx)(r.Text, {
-                className: u.__invalid_linkText,
+            className: c.xU,
+            children: [(0, l.jsx)(i.Text, {
+                className: c.__invalid_linkText,
                 variant: "text-md/semibold",
                 children: n
-            }), null != a && "" !== a && (0, l.jsx)(r.Text, {
+            }), null != a && "" !== a && (0, l.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: a
             })]
-        }), (0, l.jsx)(r.I9m, {
+        }), (0, l.jsx)(i.I9m, {
             size: "sm",
             color: "currentColor",
-            className: u.wP
+            className: c.wP
         })]
     }) : null
 };
@@ -59,7 +59,7 @@ function _(e) {
             let {
                 data: n
             } = e;
-            return (0, l.jsx)(c, {
+            return (0, l.jsx)(u, {
                 data: n
             }, `external-link+${t}`)
         }),
@@ -70,11 +70,11 @@ function _(e) {
             return t.is_header_hidden
         });
     return (0, l.jsxs)("div", {
-        className: i()(u.nV, o.E8),
-        children: [!a && (0, l.jsx)(r.Heading, {
+        className: r()(c.nV, o.E8),
+        children: [!a && (0, l.jsx)(i.Heading, {
             variant: "heading-sm/semibold",
             color: "text-default",
-            className: u.wx,
+            className: c.wx,
             children: d.intl.string(d.t.hvVgAZ)
         }), n]
     })

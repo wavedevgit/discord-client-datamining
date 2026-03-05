@@ -1,29 +1,29 @@
 /** chunk id: 965591, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => A
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(380278),
+    l = n.n(s),
+    a = n(380278),
     r = n(397927),
     o = n(793574),
-    c = n(688810),
-    d = n(927578),
+    d = n(688810),
+    c = n(927578),
     u = n(473702),
     _ = n(985018),
-    m = n(312275),
-    A = n(67423);
-let g = function(e) {
+    g = n(312275),
+    m = n(67423);
+let A = function(e) {
     let {
         isVisible: t,
         premiumSubscription: s,
-        churnDiscountOffer: g,
+        churnDiscountOffer: A,
         discountedPrice: h
     } = e, {
-        analyticsLocations: x
-    } = (0, c.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), p = (0, r.zhh)({
+        analyticsLocations: p
+    } = (0, d.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), x = (0, r.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
         config: {
@@ -31,32 +31,32 @@ let g = function(e) {
             friction: 12
         }
     });
-    return (0, i.jsx)(l.animated.div, {
-        className: a()(m.iE, {
-            [m.q4]: !t
+    return (0, i.jsx)(a.animated.div, {
+        className: l()(g.iE, {
+            [g.q4]: !t
         }),
-        style: p,
+        style: x,
         children: (0, i.jsxs)("div", {
-            className: m.iJ,
+            className: g.iJ,
             children: [(0, i.jsx)("img", {
                 alt: "",
-                src: A,
-                className: m.oU
+                src: m,
+                className: g.oU
             }), (0, i.jsxs)("div", {
-                className: m.iQ,
+                className: g.iQ,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     children: _.intl.format(_.t["3yZP0G"], {
-                        percent: g.discount.amount
+                        percent: A.discount.amount
                     })
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: _.intl.format(_.t["3Q4wCy"], {
-                        numMonths: g.discount.user_usage_limit,
+                        numMonths: A.discount.user_usage_limit,
                         discountedPrice: h,
-                        billingPeriod: (0, d.Ke)(g.discount.user_usage_limit_interval)
+                        billingPeriod: (0, c.Ke)(A.discount.user_usage_limit_interval)
                     })
                 })]
             }), (0, i.jsx)(r.Button, {
@@ -71,7 +71,7 @@ let g = function(e) {
                     return t => (0, i.jsx)(e, {
                         ...t,
                         premiumSubscription: s,
-                        analyticsLocations: x,
+                        analyticsLocations: p,
                         initialStep: u.g.CONFIRM_DISCOUNT
                     })
                 })

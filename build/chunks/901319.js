@@ -19,20 +19,20 @@ let h = function(e) {
         renderSection: h,
         hasSearchQuery: _,
         sectionFilter: m,
-        footer: p,
-        renderSectionFooter: g
+        footer: g,
+        renderSectionFooter: p
     } = e, E = (0, s.bG)([c.A], () => c.A.keyboardModeEnabled), I = (0, s.bG)([c.A], () => c.A.useReducedMotion), f = (0, l.Ay)({
         id: "people",
         isEnabled: E,
         async scrollToStart() {},
         async scrollToEnd() {}
     }), C = m !== u.m3P.ONLINE && m !== u.m3P.ALL, T = I || _ || C, N = r.useMemo(() => t.map((e, t) => 0 === e.length ? null : T ? (0, i.jsxs)("div", {
-        children: [h(t), e.map(e => n(e, t)), g?.(t)]
+        children: [h(t), e.map(e => n(e, t)), p?.(t)]
     }, t) : (0, i.jsxs)(o.F, {
         transitionAppear: !1,
         component: "div",
-        children: [h(t), e.map(e => n(e, t)), g?.(t)]
-    }, t)), [n, h, g, t, T]);
+        children: [h(t), e.map(e => n(e, t)), p?.(t)]
+    }, t)), [n, h, p, t, T]);
     return (0, i.jsx)(a.hD, {
         navigator: f,
         children: (0, i.jsx)(a.PR, {
@@ -45,7 +45,7 @@ let h = function(e) {
                     ref: t,
                     className: A.e3,
                     ...n,
-                    children: [N, p]
+                    children: [N, g]
                 })
             }
         })

@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(73153),
     m = n(787880),
     h = n(142120),
-    p = n(69555),
-    x = n(237984),
+    x = n(69555),
+    p = n(237984),
     g = n(43203),
     _ = n(349435),
     f = n(674272),
-    b = n(253932),
-    v = n(559248),
+    v = n(253932),
+    b = n(559248),
     j = n(179690),
     A = n(309010),
     C = n(837921),
-    T = n(652215),
-    y = n(327337),
+    y = n(652215),
+    T = n(327337),
     S = n(431804),
     E = n(229988),
     N = n(473169);
@@ -34,12 +34,12 @@ function I() {
 }
 
 function k() {
-    let e = b.j0.useSetting(),
+    let e = v.j0.useSetting(),
         [t, s] = i.useState(!1);
     return t ? {} : (0, a.jsxs)(c.HOs, {
         children: [(0, a.jsx)("div", {
             className: l()(E.N, N.SX),
-            children: (0, a.jsx)(v.M, {})
+            children: (0, a.jsx)(b.M, {})
         }), (0, a.jsx)("div", {
             className: l()(E.N, N.QB),
             children: (0, a.jsx)(c.Button, {
@@ -70,7 +70,7 @@ function k() {
                             ...n
                         })
                     }, {
-                        modalKey: y.V
+                        modalKey: T.V
                     })
                 }
             })
@@ -96,7 +96,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Reset Hang Status State",
-                onClick: p.B7
+                onClick: x.B7
             })
         }), (0, a.jsx)("div", {
             className: l()(E.N, N.QB),
@@ -111,7 +111,7 @@ function k() {
             children: (0, a.jsx)(c.dOG, {
                 label: "Ignore profile speedbump disabled",
                 checked: e,
-                onChange: e => b.j0.updateSetting(e)
+                onChange: e => v.j0.updateSetting(e)
             })
         }), (0, a.jsxs)("div", {
             className: l()(E.N, N.QB),
@@ -119,7 +119,7 @@ function k() {
                 variant: "primary",
                 size: "sm",
                 text: "Open Overlay",
-                onClick: () => (0, x.o)()
+                onClick: () => (0, p.o)()
             }), (0, a.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
@@ -150,7 +150,7 @@ function k() {
                 text: "Trigger Suspicious Sessions Notifications",
                 onClick: () => {
                     o.Bo.post({
-                        url: T.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
+                        url: y.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
                         rejectWithError: !0
                     })
                 }

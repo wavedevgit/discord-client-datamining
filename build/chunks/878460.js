@@ -1,45 +1,45 @@
 /** chunk id: 878460, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(311907),
     s = n(73153);
-let a = {},
-    l = null;
+let l = {},
+    a = null;
 
 function r() {
-    a = {}, l = null
+    l = {}, a = null
 }
 class o extends i.Ay.Store {
     static displayName = "EmailSettingsStore";
     getEmailSettings() {
         return {
-            categories: a,
-            initialized: l
+            categories: l,
+            initialized: a
         }
     }
 }
-let c = new o(s.h, {
+let d = new o(s.h, {
     CONNECTION_OPEN: r,
     LOGOUT: r,
     EMAIL_SETTINGS_FETCH_SUCCESS: function(e) {
         let {
             settings: t
         } = e;
-        a = t.categories, l = t.initialized
+        l = t.categories, a = t.initialized
     },
     EMAIL_SETTINGS_UPDATE_SUCCESS: function(e) {
         let {
             settings: t
         } = e;
-        a = t.categories
+        l = t.categories
     },
     EMAIL_SETTINGS_UPDATE: function(e) {
         let {
             updates: t
         } = e;
-        a = {
-            ...a,
+        l = {
+            ...l,
             ...t
         }
     }

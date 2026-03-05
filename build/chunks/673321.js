@@ -6,5 +6,6 @@ e.exports = {
     Qs: "content_df3014",
     _q: "riveContainer_df3014",
     h_: "description_df3014",
-    Uo: "buttons_df3014"
+    Uo: "buttons_df3014",
+    o2: "skeletonGrid_df3014"
 }

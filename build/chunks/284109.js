@@ -1,13 +1,13 @@
-/** chunk id: 284109, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    z: () => u
+/** chunk id: 284109, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    z: () => o
 });
-var n = i(419954),
-    l = i(253932),
-    s = i(780964),
-    a = i(652215),
-    r = i(985018);
-let u = (0, n.Qx)(s.X.CHAT_SPOILERS_SHOW_SPOILERS, {
+var i = n(419954),
+    s = n(253932),
+    l = n(780964),
+    a = n(652215),
+    r = n(985018);
+let o = (0, i.Qx)(l.X.CHAT_SPOILERS_SHOW_SPOILERS, {
     useTitle: () => r.intl.string(r.t.QgwmVz),
     useSubtitle: () => r.intl.string(r.t.TYnRkS),
     useOptions: () => [{
@@ -20,6 +20,6 @@ let u = (0, n.Qx)(s.X.CHAT_SPOILERS_SHOW_SPOILERS, {
         name: r.intl.string(r.t.Pe1RbL),
         value: a.P6Q.ALWAYS
     }],
-    useValue: l.gs.useSetting,
-    setValue: l.gs.updateSetting
+    useValue: s.gs.useSetting,
+    setValue: s.gs.updateSetting
 })

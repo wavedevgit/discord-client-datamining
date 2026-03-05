@@ -1,16 +1,16 @@
 /** chunk id: 928039, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var a = n(64700),
     i = n(884362),
     r = n(311907),
-    o = n(775602);
+    c = n(775602);
 
-function l(e, t, n) {
-    let l = (0, r.bG)([o.A], () => o.A.keyboardModeEnabled),
-        c = a.useCallback(e => {
+function o(e, t, n) {
+    let o = (0, r.bG)([c.A], () => c.A.keyboardModeEnabled),
+        s = a.useCallback(e => {
             let n = document.querySelector(e),
                 a = t.current;
             null != n && null != a && (n.focus(), a.scrollIntoViewNode({
@@ -18,7 +18,7 @@ function l(e, t, n) {
                 padding: 80
             }))
         }, [t]),
-        s = a.useCallback(() => new Promise(e => {
+        l = a.useCallback(() => new Promise(e => {
             let n = t.current;
             if (null == n) return e();
             n.scrollTo({
@@ -36,9 +36,9 @@ function l(e, t, n) {
         }), [t]);
     return (0, i.Ay)({
         id: e,
-        isEnabled: l,
-        setFocus: c,
-        scrollToStart: s,
+        isEnabled: o,
+        setFocus: s,
+        scrollToStart: l,
         scrollToEnd: _,
         orientation: n?.orientation
     })

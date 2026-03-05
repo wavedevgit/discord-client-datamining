@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(835245),
+    a = n.n(l),
+    r = n(835245),
     o = n(397927),
     c = n(709562),
     d = n(985018),
@@ -18,14 +18,14 @@ function h(e) {
         width: t = 24,
         height: n = 24,
         isBadged: l = !1
-    } = e, [r] = s.useState(() => (0, a.A)());
+    } = e, [a] = s.useState(() => (0, r.A)());
     return (0, i.jsxs)("svg", {
         width: t,
         height: n,
         viewBox: "0 0 24 24",
         children: [(0, i.jsx)("defs", {
             children: (0, i.jsxs)("mask", {
-                id: r,
+                id: a,
                 children: [(0, i.jsx)("rect", {
                     fill: "white",
                     width: "100%",
@@ -38,7 +38,7 @@ function h(e) {
                 })]
             })
         }), (0, i.jsx)("g", {
-            mask: `url(#${r})`,
+            mask: `url(#${a})`,
             children: (0, i.jsx)(o.cJi, {})
         })]
     })
@@ -50,7 +50,7 @@ function A(e) {
         numRequestToSpeak: n
     } = e, s = n > 0;
     return (0, i.jsxs)("div", {
-        className: r()(u.v, t),
+        className: a()(u.v, t),
         children: [(0, i.jsx)(h, {
             isBadged: s
         }), s ? (0, i.jsx)(o.Text, {
@@ -66,18 +66,18 @@ function m(e) {
         toggleRequestToSpeakSidebar: t,
         showRequestToSpeakSidebar: n,
         className: l,
-        numRequestToSpeak: r,
-        onClick: a,
+        numRequestToSpeak: a,
+        onClick: r,
         ...o
     } = e, u = s.useCallback(() => {
-        a?.(), t()
-    }, [a, t]);
+        r?.(), t()
+    }, [r, t]);
     return (0, i.jsx)(c.A, {
         onClick: u,
         label: n ? d.intl.string(d.t.gKGz7A) : d.intl.string(d.t.ImQ4dW),
         className: l,
         iconComponent: () => (0, i.jsx)(A, {
-            numRequestToSpeak: r,
+            numRequestToSpeak: a,
             className: l
         }),
         ...o

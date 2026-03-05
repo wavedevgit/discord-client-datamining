@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(615300),
+    a = n.n(l),
+    r = n(615300),
     o = n(311907),
     c = n(827734),
     d = n(73939),
@@ -77,7 +77,7 @@ let N = {
         })
     }
 };
-class S extends s.PureComponent {
+class b extends s.PureComponent {
     renderProgressBody = (e, t) => {
         let {
             state: n,
@@ -85,13 +85,13 @@ class S extends s.PureComponent {
         } = this.props, {
             stage: s,
             progress: l,
-            total: r,
-            type: a
+            total: a,
+            type: r
         } = n;
-        if (null == l || null == r || null == s) return null;
+        if (null == l || null == a || null == s) return null;
         let o = e[e.length - 1] / t * 1e3,
-            c = 0 !== o ? Math.max(1, (r - l) / o) : null,
-            d = N[a],
+            c = 0 !== o ? Math.max(1, (a - l) / o) : null,
+            d = N[r],
             u = null != d ? Object.keys(d) : [],
             {
                 unit: h,
@@ -123,24 +123,24 @@ class S extends s.PureComponent {
         return null != e ? e : E.intl.string(E.t.cw57ar)
     }
 }
-class b extends s.PureComponent {
+class S extends s.PureComponent {
     static defaultProps = {
         strokeSize: h.a3E.StrokeSizes.MEDIUM
     };
     state = {
-        animationScale: new a.A.Value(0)
+        animationScale: new r.A.Value(0)
     };
     componentWillAppear(e) {
         this.state.animationScale.setValue(1), e()
     }
     componentWillEnter(e) {
-        a.A.spring(this.state.animationScale, {
+        r.A.spring(this.state.animationScale, {
             toValue: 1,
             duration: 200
         }).start(e)
     }
     componentWillLeave(e) {
-        a.A.spring(this.state.animationScale, {
+        r.A.spring(this.state.animationScale, {
             toValue: 0,
             duration: 200
         }).start(e)
@@ -157,7 +157,7 @@ class b extends s.PureComponent {
             firstState: t,
             isPaused: n
         } = this.props;
-        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(S, {
+        return null == e || null == t ? E.intl.string(E.t.cw57ar) : (0, i.jsx)(b, {
             application: e,
             state: t,
             isPaused: n
@@ -169,13 +169,13 @@ class b extends s.PureComponent {
             isPaused: t,
             className: n
         } = this.props;
-        return (0, i.jsx)(a.A.div, {
+        return (0, i.jsx)(r.A.div, {
             style: {
                 transform: [{
                     scale: this.state.animationScale
                 }]
             },
-            className: r()(n, I.L),
+            className: a()(n, I.L),
             onClick: this.handleOnClick,
             children: (0, i.jsx)(u.m, {
                 __unsupportedReactNodeAsText: this.getTooltipText(),
@@ -226,10 +226,10 @@ let v = o.Ay.connectStores([_.A, g.A, A.A], () => {
     } = e;
     return t ? (0, i.jsx)(d.F, {
         component: s.Fragment,
-        children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(b, {
+        children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(S, {
             ...n
         }) : null
-    }) : (0, i.jsx)(b, {
+    }) : (0, i.jsx)(S, {
         ...n
     })
 })

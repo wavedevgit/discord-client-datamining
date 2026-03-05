@@ -1,23 +1,23 @@
-/** chunk id: 949669, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    o: () => A
+/** chunk id: 949669, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    o: () => u
 });
-var n = i(64700),
-    l = i(171316),
-    s = i(419954),
-    a = i(115063),
-    r = i(253932),
-    u = i(780964),
-    o = i(652215),
-    d = i(985018);
-let A = (0, s.zD)(u.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_EVERYONE_SETTING, {
-    useTitle: () => d.intl.string(d.t["7x9dyE"]),
+var i = n(64700),
+    s = n(171316),
+    l = n(419954),
+    a = n(115063),
+    r = n(253932),
+    o = n(780964),
+    d = n(652215),
+    c = n(985018);
+let u = (0, l.zD)(o.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_EVERYONE_SETTING, {
+    useTitle: () => c.intl.string(c.t["7x9dyE"]),
     useValue: () => {
-        let t = r.FA.useSetting();
-        return n.useMemo(() => (0, a.Lx)(t), [t]).all
+        let e = r.FA.useSetting();
+        return i.useMemo(() => (0, a.Lx)(e), [e]).all
     },
-    setValue: t => {
-        r.FA.updateSetting(t ? o.yKI : o.yKI & ~o.dzt.NO_RELATION)
+    setValue: e => {
+        r.FA.updateSetting(e ? d.yKI : d.yKI & ~d.dzt.NO_RELATION)
     },
-    useDisabled: () => (0, l.uM)()
+    useDisabled: () => (0, s.uM)()
 })

@@ -1,56 +1,56 @@
-/** chunk id: 918873, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    W: () => T
-}), i(321073);
-var n = i(64700),
-    l = i(311907),
-    s = i(827343),
-    a = i(419954),
-    r = i(430452),
-    u = i(780964),
-    o = i(593942),
-    d = i(731854),
-    A = i(985018);
-let T = (0, a.Hn)(u.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
-    useTitle: () => A.intl.string(A.t.wVBHr0),
+/** chunk id: 918873, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    W: () => _
+}), n(321073);
+var i = n(64700),
+    s = n(311907),
+    l = n(827343),
+    a = n(419954),
+    r = n(430452),
+    o = n(780964),
+    d = n(593942),
+    c = n(731854),
+    u = n(985018);
+let _ = (0, a.Hn)(o.X.VOICE_AUDIO_SUBSYSTEM_SETTING, {
+    useTitle: () => u.intl.string(u.t.wVBHr0),
     useValue: function() {
-        return (0, l.bG)([r.Ay], () => r.Ay.getAudioSubsystem())
+        return (0, s.bG)([r.Ay], () => r.Ay.getAudioSubsystem())
     },
-    setValue: function(t) {
-        (0, o.A)(A.intl.string(A.t.uY7AcQ), A.intl.string(A.t.gBqik6), () => s.A.setAudioSubsystem(t))
+    setValue: function(e) {
+        (0, d.A)(u.intl.string(u.t.uY7AcQ), u.intl.string(u.t.gBqik6), () => l.A.setAudioSubsystem(e))
     },
     useOptions: function() {
         let {
-            legacyAudioSubsystemSupported: t,
-            experimentalAudioSubsystemSupported: e,
-            automaticAudioSubsystemSupported: i
-        } = (0, l.cf)([r.Ay], () => ({
-            legacyAudioSubsystemSupported: r.Ay.supports(d.O5.LEGACY_AUDIO_SUBSYSTEM),
-            experimentalAudioSubsystemSupported: r.Ay.supports(d.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
-            automaticAudioSubsystemSupported: r.Ay.supports(d.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
+            legacyAudioSubsystemSupported: e,
+            experimentalAudioSubsystemSupported: t,
+            automaticAudioSubsystemSupported: n
+        } = (0, s.cf)([r.Ay], () => ({
+            legacyAudioSubsystemSupported: r.Ay.supports(c.O5.LEGACY_AUDIO_SUBSYSTEM),
+            experimentalAudioSubsystemSupported: r.Ay.supports(c.O5.EXPERIMENTAL_AUDIO_SUBSYSTEM),
+            automaticAudioSubsystemSupported: r.Ay.supports(c.O5.AUTOMATIC_AUDIO_SUBSYSTEM)
         }));
-        return n.useMemo(() => {
-            let n;
-            return n = [{
-                id: d.rB.STANDARD,
-                value: d.rB.STANDARD,
-                label: A.intl.string(A.t.dqb2JZ)
-            }], t && n.push({
-                id: d.rB.LEGACY,
-                value: d.rB.LEGACY,
-                label: A.intl.string(A.t["TYfH+5"])
-            }), e && n.push({
-                id: d.rB.EXPERIMENTAL,
-                value: d.rB.EXPERIMENTAL,
-                label: A.intl.string(A.t.liQmtr)
-            }), i && n.push({
-                id: d.rB.AUTOMATIC,
-                value: d.rB.AUTOMATIC,
-                label: A.intl.string(A.t.qNgtO1)
-            }), n
-        }, [i, e, t])
+        return i.useMemo(() => {
+            let i;
+            return i = [{
+                id: c.rB.STANDARD,
+                value: c.rB.STANDARD,
+                label: u.intl.string(u.t.dqb2JZ)
+            }], e && i.push({
+                id: c.rB.LEGACY,
+                value: c.rB.LEGACY,
+                label: u.intl.string(u.t["TYfH+5"])
+            }), t && i.push({
+                id: c.rB.EXPERIMENTAL,
+                value: c.rB.EXPERIMENTAL,
+                label: u.intl.string(u.t.liQmtr)
+            }), n && i.push({
+                id: c.rB.AUTOMATIC,
+                value: c.rB.AUTOMATIC,
+                label: u.intl.string(u.t.qNgtO1)
+            }), i
+        }, [n, t, e])
     },
     usePredicate: function() {
-        return (0, l.bG)([r.Ay], () => r.Ay.shouldOfferManualSubsystemSelection())
+        return (0, s.bG)([r.Ay], () => r.Ay.shouldOfferManualSubsystemSelection())
     }
 })

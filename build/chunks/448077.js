@@ -1,18 +1,18 @@
-/** chunk id: 448077, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    f: () => u
+/** chunk id: 448077, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    f: () => o
 });
-var n = i(827343),
-    l = i(419954),
-    s = i(780964),
-    a = i(593942),
-    r = i(985018);
-let u = (0, l.Tf)(s.X.VOICE_AND_VIDEO_RESET_ALL_SETTINGS, {
+var i = n(827343),
+    s = n(419954),
+    l = n(780964),
+    a = n(593942),
+    r = n(985018);
+let o = (0, s.Tf)(l.X.VOICE_AND_VIDEO_RESET_ALL_SETTINGS, {
     useTitle: () => r.intl.string(r.t.SXfv1v),
     useSubtitle: () => r.intl.string(r.t["buA5/q"]),
     useLabel: () => r.intl.string(r.t.yBZMsQ),
     onClick: function() {
-        (0, a.A)(r.intl.string(r.t["4iKQ/3"]), r.intl.string(r.t.sQ42iT), n.A.reset)
+        (0, a.A)(r.intl.string(r.t["4iKQ/3"]), r.intl.string(r.t.sQ42iT), i.A.reset)
     },
     useVariant: () => "critical-secondary"
 })

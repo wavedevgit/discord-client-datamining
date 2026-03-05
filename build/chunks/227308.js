@@ -1,7 +1,7 @@
 /** chunk id: 227308, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
@@ -14,30 +14,30 @@ var i = n(627968),
     u = n(941023),
     h = n(714983),
     p = n(592598),
-    f = n(672396),
-    A = n(652215),
-    _ = n(283446);
+    A = n(672396),
+    f = n(652215),
+    g = n(283446);
 
-function g(e) {
+function _(e) {
     let {
         locked: t,
         keybind: n
-    } = e, l = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), g = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
-    if ((0, o.bG)([p.A], () => p.A.isNotificationDisabled(f.KS.TextChat)) || g === A.G6Q.DISABLED) return null;
-    let E = h.filter(e => !t || e.status !== A.yFH.TIMED_OUT),
+    } = e, l = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), _ = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
+    if ((0, o.bG)([p.A], () => p.A.isNotificationDisabled(A.KS.TextChat)) || _ === f.G6Q.DISABLED) return null;
+    let E = h.filter(e => !t || e.status !== f.yFH.TIMED_OUT),
         x = (0, r.groupBy)(E, e => e.type);
     return (0, i.jsx)(u.A, {
         contentDomRef: l,
         observeInterval: 200,
         children: (0, i.jsx)("div", {
             ref: l,
-            className: a()(_.container, _[g]),
+            className: a()(g.container, g[_]),
             children: Object.entries(x).map(e => {
                 let [s, l] = e;
                 return 0 === l.length ? null : (0, i.jsx)(m, {
                     locked: t,
                     keybind: n,
-                    position: g,
+                    position: _,
                     notification: l[0]
                 }, s)
             })
@@ -53,7 +53,7 @@ function m(e) {
         locked: l
     } = e;
     return (0, i.jsx)("div", {
-        className: _.notificationGroup,
+        className: g.notificationGroup,
         children: (0, i.jsx)(h.A, {
             zIndex: 100,
             position: n,

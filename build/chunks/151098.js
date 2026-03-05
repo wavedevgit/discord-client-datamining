@@ -1,18 +1,18 @@
-/** chunk id: 151098, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    t: () => u
+/** chunk id: 151098, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    t: () => o
 });
-var n = i(311907),
-    l = i(926919),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.zD)(r.X.DISABLE_APP_COLLECTIONS_CACHE, {
+var i = n(311907),
+    s = n(926919),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.zD)(r.X.DISABLE_APP_COLLECTIONS_CACHE, {
     useTitle: () => "Disable Application Collections Cache",
     useSubtitle: () => "Forces application collection updates to be shown immediately.",
-    useDisabled: () => (0, n.bG)([a.default], () => a.default.onlyShowPreviewAppCollections),
-    useValue: () => (0, n.bG)([a.default], () => a.default.disableAppCollectionsCache || a.default.onlyShowPreviewAppCollections),
-    setValue: t => (0, l.x)({
-        disableAppCollectionsCache: t
+    useDisabled: () => (0, i.bG)([a.default], () => a.default.onlyShowPreviewAppCollections),
+    useValue: () => (0, i.bG)([a.default], () => a.default.disableAppCollectionsCache || a.default.onlyShowPreviewAppCollections),
+    setValue: e => (0, s.x)({
+        disableAppCollectionsCache: e
     })
 })

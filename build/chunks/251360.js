@@ -1,16 +1,16 @@
 /** chunk id: 251360, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968);
 n(64700);
 var s = n(953727);
-let a = e => {
+let l = e => {
     let {
         className: t,
         backgroundColor: n,
-        backgroundCircleSize: a,
-        ...l
+        backgroundCircleSize: l,
+        ...a
     } = e;
     return (0, i.jsxs)("svg", {
         width: "100%",
@@ -22,10 +22,10 @@ let a = e => {
         },
         xmlns: "http://www.w3.org/2000/svg",
         ...(0, s.A)({
-            ...l
+            ...a
         }),
         children: [(0, i.jsx)("circle", {
-            r: a ?? "40%",
+            r: l ?? "40%",
             cx: "50%",
             cy: "50%",
             className: n

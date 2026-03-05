@@ -1,12 +1,12 @@
 /** chunk id: 283014, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => s
 });
 var n = r(685357),
     a = r(597807),
     l = r(763424),
     i = r(292177);
-let o = {
+let s = {
     id: "alt-text",
     selector: 'img, [role="img"]',
     tags: ["wcag2a", "wcag111", "section508", "section508.22.a", "ACT"],

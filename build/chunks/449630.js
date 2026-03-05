@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(397927),
     m = n(765671),
     h = n(793574),
-    p = n(688810),
-    x = n(395332),
+    x = n(688810),
+    p = n(395332),
     g = n(713517),
     _ = n(645507),
     f = n(932001),
-    b = n(970931),
-    v = n(258836),
+    v = n(970931),
+    b = n(258836),
     j = n(206835),
     A = n(182592),
     C = n(183555),
-    T = n(950191),
-    y = n(657331),
+    y = n(950191),
+    T = n(657331),
     S = n(718019),
     E = n(31432),
     N = n(915614),
@@ -66,9 +66,9 @@ function ei(e) {
         highlightBadge: ei,
         openedAt: es,
         className: el
-    } = e, er = __OVERLAY__, eo = (0, T.Ay)(t.id, void 0), {
+    } = e, er = __OVERLAY__, eo = (0, y.Ay)(t.id, void 0), {
         analyticsLocations: ed
-    } = (0, p.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ec = (0, C.pb)({
+    } = (0, x.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ec = (0, C.pb)({
         layout: "ACCOUNT_POPOUT",
         userId: t.id,
         guildId: void 0
@@ -77,7 +77,7 @@ function ei(e) {
         height: em
     } = (0, m.Ay)(), {
         isHoveringOrFocusing: eh,
-        isHovering: ep
+        isHovering: ex
     } = (0, g.A)(eu);
     i.useEffect(() => {
         s?.(eu.current)
@@ -86,19 +86,19 @@ function ei(e) {
     }), () => H.A.setState({
         isOpen: !1
     })), []);
-    let ex = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
+    let ep = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
         eg = L.CY.useSetting(),
         e_ = (0, Y.Q)(eg),
         ef = (0, d.bG)([G.A], () => G.A.hidePersonalInformation),
-        eb = (0, b.kB)(),
-        ev = L.Q_.useSetting(),
-        ej = (0, Y.T)(ex),
+        ev = (0, v.kB)(),
+        eb = L.Q_.useSetting(),
+        ej = (0, Y.T)(ep),
         eA = (0, K.j)(n),
         eC = (0, j.A)({
             analyticsLocations: ed
         }),
-        eT = (0, W.TW)(t),
-        ey = i.useRef(null),
+        ey = (0, W.TW)(t),
+        eT = i.useRef(null),
         eS = i.useRef(null),
         eE = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
         eN = i.useMemo(() => (0, _.A)(), []),
@@ -109,7 +109,7 @@ function ei(e) {
         }, 500)
     }, []);
     let eR = e => {
-            n?.(), (0, y.openUserProfileModal)({
+            n?.(), (0, T.openUserProfileModal)({
                 customStatusPrompt: eN,
                 sourceAnalyticsLocations: ed,
                 ...ec,
@@ -126,13 +126,13 @@ function ei(e) {
         eL = i.useCallback(() => {
             eC(), eU()
         }, [eC, eU]),
-        eB = (0, x.JY)({
+        eB = (0, p.JY)({
             location: "UserProfileAccountPopout"
         }),
-        eG = (0, x.on)({
+        eG = (0, p.on)({
             location: "UserProfileAccountPopout"
         });
-    return (0, a.jsx)(p.f5, {
+    return (0, a.jsx)(x.f5, {
         value: ed,
         children: (0, a.jsx)(C.of, {
             value: ec,
@@ -166,7 +166,7 @@ function ei(e) {
                             themeType: ee.d.POPOUT,
                             onOpenProfile: er ? void 0 : eR
                         }), (0, a.jsx)(P.A, {
-                            ref: ey,
+                            ref: eT,
                             user: t,
                             themeType: ee.d.POPOUT,
                             onCloseProfile: n,
@@ -206,7 +206,7 @@ function ei(e) {
                             widgets: eo?.widgets,
                             onOpenUserProfileModal: eR
                         }), (0, a.jsx)(I.A, {
-                            isPremiumUser: eT,
+                            isPremiumUser: ey,
                             onInteraction: n
                         }), (0, a.jsx)(R.A, {
                             user: t,
@@ -232,10 +232,10 @@ function ei(e) {
                                         label: (0, a.jsx)(q.A, {}),
                                         sublabel: null != e_ && e_,
                                         icon: () => (0, a.jsx)(u.nW6, {
-                                            status: ex,
+                                            status: ep,
                                             size: 12
                                         }),
-                                        trailing: (eb || ex === X.clD.DND) && (0, a.jsx)(u.a_I, {
+                                        trailing: (ev || ep === X.clD.DND) && (0, a.jsx)(u.a_I, {
                                             size: "xxs"
                                         }),
                                         renderSubmenu: r.Fr ? void 0 : e => {
@@ -297,7 +297,7 @@ function ei(e) {
                                                 children: eA
                                             })
                                         }
-                                    }), !__OVERLAY__ && F.p5 && ev && (0, a.jsx)($.N3, {
+                                    }), !__OVERLAY__ && F.p5 && eb && (0, a.jsx)($.N3, {
                                         action: "COPY_USER_ID",
                                         icon: u.L9S,
                                         label: et.intl.string(et.t["/AXYnE"]),
@@ -310,12 +310,12 @@ function ei(e) {
                         })]
                     }), eo?.profileEffect != null && !eE.current && (0, a.jsx)(A.A, {
                         skuId: eo.profileEffect.skuId,
-                        isHovering: ep
+                        isHovering: ex
                     })]
                 }), eB && eG ? (0, a.jsx)(z.A, {
                     targetElementRef: eS,
                     onClose: n
-                }) : null, (0, a.jsx)(v.A, {})]
+                }) : null, (0, a.jsx)(b.A, {})]
             })
         })
     })

@@ -1,32 +1,32 @@
 /** chunk id: 451802, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C,
-    E: () => x
+    A: () => T,
+    E: () => p
 });
 var i, s = n(627968),
-    a = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    r = n.n(a),
     o = n(507392),
-    c = n.n(o),
-    d = n(735438),
-    u = n.n(d),
+    d = n.n(o),
+    c = n(735438),
+    u = n.n(c),
     _ = n(397927),
-    m = n(235986),
-    A = n(350535),
-    g = n(985018),
+    g = n(235986),
+    m = n(350535),
+    A = n(985018),
     h = n(181204),
-    x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
-let p = {
+    p = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+let x = {
     DEFAULT: h.__invalid_default,
     RECORDING: h.oz
 };
-class E extends a.PureComponent {
+class E extends l.PureComponent {
     _inputId = u().uniqueId("key-recorder-");
     _unregisterNativeRecorder = null;
     _mousedownMode = null;
-    _inputRef = a.createRef();
-    _containerRef = a.createRef();
+    _inputRef = l.createRef();
+    _containerRef = l.createRef();
     componentWillUnmount() {
         null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
     }
@@ -56,7 +56,7 @@ class E extends a.PureComponent {
                 this._unregisterNativeRecorder = t(e.id, n)
             } catch (e) {
                 this._unregisterNativeRecorder = null
-            } else null != n && (new(c())(e).handleKey = n)
+            } else null != n && (new(d())(e).handleKey = n)
     };
     handleClick = e => {
         e.stopPropagation(), e.preventDefault();
@@ -75,28 +75,28 @@ class E extends a.PureComponent {
                 value: n,
                 disabled: i
             } = this.props,
-            a = (0, A.dI)(n, !0);
-        return e = "RECORDING" === t ? g.intl.string(g.t.bmOri0) : 0 === n.length ? g.intl.string(g.t.co3wt9) : g.intl.string(g.t.idFMvH), (0, s.jsx)(_.vN3, {
+            l = (0, m.dI)(n, !0);
+        return e = "RECORDING" === t ? A.intl.string(A.t.bmOri0) : 0 === n.length ? A.intl.string(A.t.co3wt9) : A.intl.string(A.t.idFMvH), (0, s.jsx)(_.vN3, {
             focusTarget: this._inputRef,
             ringTarget: this._containerRef,
             children: (0, s.jsx)("div", {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: r()(h.Qm, p[t], {
+                className: r()(h.Qm, x[t], {
                     [h.Qz]: i
                 }),
-                children: (0, s.jsxs)(m.A, {
+                children: (0, s.jsxs)(g.A, {
                     className: h.Pp,
-                    children: [(0, s.jsx)(m.A.Child, {
+                    children: [(0, s.jsx)(g.A.Child, {
                         className: h.bZ,
                         children: (0, s.jsx)("input", {
                             id: this._inputId,
-                            placeholder: g.intl.string(g.t.nWRdnl),
+                            placeholder: A.intl.string(A.t.nWRdnl),
                             type: "text",
                             ref: this.setInputRef,
                             readOnly: !0,
-                            value: a,
+                            value: l,
                             disabled: "RECORDING" !== this.props.mode || i
                         })
                     }), (0, s.jsx)("div", {
@@ -116,4 +116,4 @@ class E extends a.PureComponent {
         })
     }
 }
-let C = E
+let T = E

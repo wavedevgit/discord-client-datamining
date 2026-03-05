@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
     u5: () => N,
-    zd: () => S
+    zd: () => b
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(311907),
-    a = n(342494),
+    a = n(311907),
+    r = n(342494),
     o = n(397927),
     c = n(827827),
     d = n(253932),
@@ -43,7 +43,7 @@ function f(e) {
     let {
         showCurrentGame: t,
         shouldShowStatus: n = !1
-    } = e, i = (0, r.bG)([u.A], () => u.A.getStatus());
+    } = e, i = (0, a.bG)([u.A], () => u.A.getStatus());
     return (0, s.jsxs)("div", {
         className: p.E3,
         children: [(0, s.jsxs)("div", {
@@ -165,12 +165,12 @@ function I(e) {
 }
 var N = ((i = {})[i.ActivityNux = 0] = "ActivityNux", i[i.StatusNux = 1] = "StatusNux", i[i.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", i[i.Activity = 3] = "Activity", i[i.Status = 4] = "Status", i[i.ActivityAndStatus = 5] = "ActivityAndStatus", i);
 
-function S(e) {
+function b(e) {
     let {
         showPopout: t,
         popoutState: n,
         handleClose: i,
-        popoutTargetRef: r,
+        popoutTargetRef: a,
         children: u
     } = e, [p, _] = (0, l.useState)(n), f = (0, l.useRef)(null), x = function(e) {
         if (null === e) return null;
@@ -239,8 +239,8 @@ function S(e) {
             textLink: l
         } = x;
         return (0, s.jsxs)(s.Fragment, {
-            children: [(0, s.jsx)(a.AM, {
-                targetElementRef: r,
+            children: [(0, s.jsx)(r.AM, {
+                targetElementRef: a,
                 shouldShow: !0,
                 position: "top",
                 align: "center",
@@ -263,7 +263,7 @@ function S(e) {
         })
     }
     let {
-        children: S
+        children: b
     } = x;
     return (0, s.jsx)(o.YNO, {
         targetElementRef: f,
@@ -275,7 +275,7 @@ function S(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, s.jsx)(S, {
+            return (0, s.jsx)(b, {
                 closePopout: t
             })
         },

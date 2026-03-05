@@ -1,18 +1,18 @@
-/** chunk id: 664962, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    K: () => u
+/** chunk id: 664962, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    K: () => o
 });
-var n = i(311907),
-    l = i(926919),
-    s = i(419954),
-    a = i(111162),
-    r = i(780964);
-let u = (0, s.zD)(r.X.AXE_AUDITING, {
+var i = n(311907),
+    s = n(926919),
+    l = n(419954),
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.zD)(r.X.AXE_AUDITING, {
     useTitle: () => "Enable Accessibility Auditing",
     useSubtitle: () => "Runs Axe auditing for accessibility while using the app. Violations get logged to the console. Only available in development.",
     usePredicate: () => !1,
-    useValue: () => (0, n.bG)([a.default], () => a.default.isAxeEnabled),
-    setValue: t => (0, l.x)({
-        axeEnabled: t
+    useValue: () => (0, i.bG)([a.default], () => a.default.isAxeEnabled),
+    setValue: e => (0, s.x)({
+        axeEnabled: e
     })
 })

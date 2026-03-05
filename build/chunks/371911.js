@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(484030),
+    a = n.n(l),
+    r = n(484030),
     o = n(311907),
     c = n(873298),
     d = n(397927),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(492498),
     I = n(765627),
     N = n(547945),
-    S = n(412484),
-    b = n(652215),
+    b = n(412484),
+    S = n(652215),
     T = n(985018),
     v = n(98938);
 
@@ -68,7 +68,7 @@ function y(e) {
         K = s.useCallback(() => {
             w(!P), P ? y?.() : l?.()
         }, [y, l, P]);
-    s.useEffect(() => (x._.subscribe(b.jej.TOGGLE_INBOX, K), () => void x._.unsubscribe(b.jej.TOGGLE_INBOX, K)), [K]);
+    s.useEffect(() => (x._.subscribe(S.jej.TOGGLE_INBOX, K), () => void x._.unsubscribe(S.jej.TOGGLE_INBOX, K)), [K]);
     let {
         enabled: W,
         inInbox: Y
@@ -99,7 +99,7 @@ function y(e) {
                     "aria-label": T.intl.string(T.t.GSmTKJ),
                     className: G,
                     children: (0, i.jsx)("div", {
-                        className: r()(v.k, {
+                        className: a()(v.k, {
                             [v.q]: X
                         }),
                         children: (0, i.jsx)(d.Fmo, {
@@ -113,9 +113,9 @@ function y(e) {
                                 onJump: q
                             }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(p.J, {
                                 closePopout: F
-                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
-                                fallback: (0, i.jsx)(S.T, {}),
-                                children: (0, i.jsx)(S.Ay, {
+                            }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(r.tH, {
+                                fallback: (0, i.jsx)(b.T, {}),
+                                children: (0, i.jsx)(b.Ay, {
                                     onJump: q,
                                     showTutorial: B,
                                     setSeenTutorial: H,

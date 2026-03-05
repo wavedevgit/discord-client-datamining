@@ -1,15 +1,16 @@
 /** chunk id: 8880, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    r = n(73153);
+    s = n(73153);
 let l = {
         speechRate: 1,
         currentMessage: null
     },
     a = l;
-class s extends i.Ay.DeviceSettingsStore {
+class r extends i.Ay.DeviceSettingsStore {
     static displayName = "TTSStore";
     static persistKey = "TTSStore";
     static migrations = [];
@@ -35,7 +36,7 @@ class s extends i.Ay.DeviceSettingsStore {
         return a
     }
 }
-let o = new s(r.h, __OVERLAY__ ? {} : {
+let o = new r(s.h, __OVERLAY__ ? {} : {
     SPEAKING_MESSAGE: function(e) {
         let {
             messageId: t,

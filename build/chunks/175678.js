@@ -1,12 +1,12 @@
 /** chunk id: 175678, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => o
+    A: () => s
 });
 var n = r(944181),
     a = r(597807),
     l = r(763424),
     i = r(292177);
-let o = {
+let s = {
     id: "aria-attribute-valid-value",
     selector: i.vN,
     tags: [],
@@ -26,7 +26,7 @@ let o = {
                         case "id":
                             return t = y, r = i, null == document.getElementById(r) ? `${t} references #${r} which does not exist` : l.o;
                         case "idlist":
-                            var t, r, a, o, u, s, c, d, f, h = y,
+                            var t, r, a, s, o, u, c, d, f, h = y,
                                 b = i,
                                 m = e;
                             if ("aria-controls" === h && ("false" === m.getAttribute("aria-expanded") || "false" === m.getAttribute("aria-selected")) || "aria-owns" === h && "false" === m.getAttribute("aria-expanded")) return l.o;
@@ -34,9 +34,9 @@ let o = {
                                 if (null == document.getElementById(e)) return `${h} references #${b} which does not exist`;
                             return l.o;
                         case "integer":
-                            return a = y, String(parseInt(o = i, 10)) !== o ? `${a} requires an integer but got ${o}` : l.o;
+                            return a = y, String(parseInt(s = i, 10)) !== s ? `${a} requires an integer but got ${s}` : l.o;
                         case "number":
-                            return u = y, isFinite(s = i) ? l.o : `${u} requires a numeric value but got ${s}`;
+                            return o = y, isFinite(u = i) ? l.o : `${o} requires a numeric value but got ${u}`;
                         case "boolean":
                             return c = y, d = i, f = $, "true" === d || "false" === d || "" === d && !0 === f.allowundefined ? l.o : `${c} must be either "true" or "false"`;
                         case "token":
@@ -54,11 +54,11 @@ let o = {
                                 return r.values?.includes(n) ? l.o : `${e} was ${t} but must be: ${r.values?.join(", ")}`
                             }(y, i, $);
                         case "tokenlist":
-                            var g = y,
-                                p = i,
+                            var p = y,
+                                g = i,
                                 v = $;
-                            for (let e of p.split(" "))
-                                if (!v.values?.includes(e)) return `${g} included ${p} but is restricted to: ${v.values?.join(", ")}`;
+                            for (let e of g.split(" "))
+                                if (!v.values?.includes(e)) return `${p} included ${g} but is restricted to: ${v.values?.join(", ")}`;
                             return l.o;
                         case "tristate":
                             var A = y,

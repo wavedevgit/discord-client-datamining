@@ -1,25 +1,25 @@
 /** chunk id: 231855, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(427262),
     s = n(622017),
-    a = n(113090);
+    l = n(113090);
 
-function l() {
+function a() {
     let {
         useCachedData: e = !0,
         fetch: t = !0
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
         premiumGroupMembership: n
-    } = (0, a.A)({
+    } = (0, l.A)({
         useCachedData: e,
         fetch: t
     }), {
-        premiumGroupMembers: l
+        premiumGroupMembers: a
     } = (0, s.A)(n?.subscriptionId ?? null, {
         useCachedData: e,
         fetch: t
     });
-    return l?.primary != null ? (0, i.$3)(l?.primary) : null
+    return a?.primary != null ? (0, i.$3)(a?.primary) : null
 }

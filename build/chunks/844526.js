@@ -1,6 +1,6 @@
 /** chunk id: 844526, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var a = n(627968),
     i = n(64700),
@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(995377),
     m = n(203982),
     h = n(764231),
-    p = n(881141),
-    x = n(149757),
+    x = n(881141),
+    p = n(149757),
     g = n(788868),
     _ = n(652215),
     f = n(49999),
-    b = n(985018);
+    v = n(985018);
 
-function v(e) {
+function b(e) {
     let {
         groupName: t,
         targetElementRef: n
-    } = e, i = (0, p.A)(), r = (0, s.bG)([o.A], () => o.A.useReducedMotion), m = (0, c.A)(e => e.isOpen), h = (0, u.G)();
+    } = e, i = (0, x.A)(), r = (0, s.bG)([o.A], () => o.A.useReducedMotion), m = (0, c.A)(e => e.isOpen), h = (0, u.G)();
     return r || null == i || m || h ? null : (0, a.jsx)(d.zJ, {
         contentType: l.M.NITRO_TENURE_BADGE_LEVEL_UP,
         timeRecurringConfig: {
@@ -52,22 +52,22 @@ function j(e) {
         markAsDismissed: n,
         targetElementRef: s,
         shouldShow: l
-    } = e, o = g.sp.indexOf(t), d = (0, x.I)(g.sp[o > 0 ? o - 1 : o]).ambient, u = (0, i.useCallback)(() => {
+    } = e, o = g.sp.indexOf(t), d = (0, p.I)(g.sp[o > 0 ? o - 1 : o]).ambient, u = (0, i.useCallback)(() => {
         n(f.i.TAKE_ACTION), c.A.setState({
             shouldRenderTenureLevelUp: !0
         }), m._.dispatch(_.jej.SHOW_ACCOUNT_PROFILE_POPOUT, {})
-    }, [n]), p = (0, i.useCallback)(() => {
+    }, [n]), x = (0, i.useCallback)(() => {
         n(f.i.USER_DISMISS)
-    }, [n]), v = g.VD[t], j = b.intl.formatToPlainString(b.t.ewkaVR, {
-        timeMilestone: (0, h.T)(v.id, v.tenureReqNumMonths)?.toLocaleLowerCase()
+    }, [n]), b = g.VD[t], j = v.intl.formatToPlainString(v.t.ewkaVR, {
+        timeMilestone: (0, h.T)(b.id, b.tenureReqNumMonths)?.toLocaleLowerCase()
     }), A = [{
-        text: b.intl.string(b.t.RzWDqY),
+        text: v.intl.string(v.t.RzWDqY),
         variant: "primary",
         onClick: u
     }];
     return (0, a.jsx)(r.A, {
         targetElementRef: s,
-        onRequestClose: p,
+        onRequestClose: x,
         shouldShow: l,
         caretConfig: {
             align: "center"
@@ -78,7 +78,7 @@ function j(e) {
             aspectRatio: "6/4"
         } : void 0,
         size: "lg",
-        title: b.intl.string(b.t.VoDxsV),
+        title: v.intl.string(v.t.VoDxsV),
         body: j,
         actions: A
     })

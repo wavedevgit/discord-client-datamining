@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     o = n(380278),
     c = n(696292),
     d = n(397927),
@@ -30,13 +30,13 @@ function I(e) {
         context: t,
         activityItem: n,
         onClick: i,
-        aspectRatio: r = 0,
+        aspectRatio: a = 0,
         animatedDivClass: E,
         commandOrigin: I
     } = e, {
         onActivityItemSelected: N,
-        imageBackground: S,
-        activityAction: b,
+        imageBackground: b,
+        activityAction: S,
         labelType: T
     } = (0, h.Ay)({
         context: t,
@@ -60,7 +60,7 @@ function I(e) {
             })
         })
     }), [T]), L = l.useMemo(() => {
-        switch (b) {
+        switch (S) {
             case h.o6.JOIN:
                 return (0, s.jsx)("div", {
                     className: f.m9,
@@ -77,7 +77,7 @@ function I(e) {
                 return (0, s.jsx)("div", {
                     className: f.m9,
                     children: (0, s.jsx)("div", {
-                        className: a()(f.aF, f.pS),
+                        className: r()(f.aF, f.pS),
                         children: (0, s.jsx)(d.Text, {
                             variant: "text-sm/medium",
                             color: "always-white",
@@ -89,7 +89,7 @@ function I(e) {
             default:
                 return null
         }
-    }, [b]);
+    }, [S]);
     return (0, s.jsx)(d.DUT, {
         onClick: N,
         onFocus: j,
@@ -116,15 +116,15 @@ function I(e) {
                         questContent: c.u.ACTIVITY_SUGGESTION,
                         children: i => (0, s.jsxs)(o.animated.div, {
                             ref: i,
-                            className: a()(e, f.LM, E, {
-                                [f.$g]: 0 === r,
-                                [f.J3]: 1 === r
+                            className: r()(e, f.LM, E, {
+                                [f.$g]: 0 === a,
+                                [f.J3]: 1 === a
                             }),
                             style: {
                                 transform: t.to([0, 1], [1, 1.05]).to(e => `scale(${e})`)
                             },
                             children: [(0, s.jsx)(A.A, {
-                                imageBackground: S,
+                                imageBackground: b,
                                 applicationName: n.application.name,
                                 imageClassName: f.jj,
                                 imageNotFoundClassName: f.v_

@@ -27,7 +27,7 @@ let s = "collectibles shop product details modal",
         }(0, n.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([l.e("8555"), l.e("28936"), l.e("68859"), l.e("40396"), l.e("13088"), l.e("48330"), l.e("92414"), l.e("94857"), l.e("48840"), l.e("49559"), l.e("37372"), l.e("99970"), l.e("95095"), l.e("41595"), l.e("93612"), l.e("16289")]).then(l.bind(l, 929400));
+            } = await Promise.all([l.e("8555"), l.e("28936"), l.e("68859"), l.e("40396"), l.e("13088"), l.e("48330"), l.e("92414"), l.e("94857"), l.e("48840"), l.e("49559"), l.e("37372"), l.e("99970"), l.e("95095"), l.e("41595"), l.e("93612"), l.e("56112")]).then(l.bind(l, 929400));
             return l => (0, r.jsx)(e, {
                 ...l,
                 product: t,

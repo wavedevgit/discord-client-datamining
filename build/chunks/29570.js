@@ -6,23 +6,23 @@ var i = n(64700);
 let s = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 5,
         [t, n] = i.useState(!1),
-        [s, a] = i.useState(0),
-        [l, r] = i.useState(!1),
-        [o, c] = i.useState(0);
+        [s, l] = i.useState(0),
+        [a, r] = i.useState(!1),
+        [o, d] = i.useState(0);
     return i.useEffect(() => {
-        s >= e && (r(!0), c(Math.floor(s / e)));
+        s >= e && (r(!0), d(Math.floor(s / e)));
         let t = setTimeout(() => {
-            a(0)
+            l(0)
         }, 1e3);
         return () => clearTimeout(t)
     }, [s, e]), i.useEffect(() => {
         if (!t) {
             let e = setTimeout(() => {
-                r(!1), c(0)
+                r(!1), d(0)
             }, 1e3);
             return () => clearTimeout(e)
         }
-        a(e => e + 1)
+        l(e => e + 1)
     }, [t]), {
         onHover: () => {
             n(!0)
@@ -30,7 +30,7 @@ let s = function() {
         onUnhover: () => {
             n(!1)
         },
-        isEasterEggTriggered: l,
+        isEasterEggTriggered: a,
         easterEggLevel: o
     }
 }

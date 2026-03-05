@@ -1,25 +1,25 @@
-/** chunk id: 509725, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Z: () => d
+/** chunk id: 509725, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Z: () => c
 });
-var n = i(311907),
-    l = i(734066),
-    s = i(274372),
-    a = i(399925),
-    r = i(419954),
-    u = i(780964),
-    o = i(985018);
-let d = (0, r.zD)(u.X.CLIPS_ENABLE_REMINDERS, {
-    useTitle: () => o.intl.string(o.t["3zwNf6"]),
-    useSubtitle: () => o.intl.string(o.t.m4Cjj9),
-    useValue: () => (0, n.bG)([s.A], () => s.A.getSettings().remindersEnabled),
-    setValue: t => a.Mt(t),
+var i = n(311907),
+    s = n(734066),
+    l = n(274372),
+    a = n(399925),
+    r = n(419954),
+    o = n(780964),
+    d = n(985018);
+let c = (0, r.zD)(o.X.CLIPS_ENABLE_REMINDERS, {
+    useTitle: () => d.intl.string(d.t["3zwNf6"]),
+    useSubtitle: () => d.intl.string(d.t.m4Cjj9),
+    useValue: () => (0, i.bG)([l.A], () => l.A.getSettings().remindersEnabled),
+    setValue: e => a.Mt(e),
     usePredicate: () => {
         let {
-            showClipsHeaderEntrypoint: t
-        } = l.L_.useConfig({
+            showClipsHeaderEntrypoint: e
+        } = s.L_.useConfig({
             location: "clips_recording_settings"
         });
-        return t
+        return e
     }
 })

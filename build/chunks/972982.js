@@ -4,24 +4,24 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(284009),
-    l = n.n(a),
+    l = n(284009),
+    a = n.n(l),
     r = n(311907),
     o = n(397927),
-    c = n(195043),
-    d = n(359990),
+    d = n(195043),
+    c = n(359990),
     u = n(961350),
     _ = n(670492),
-    m = n(287809),
-    A = n(464477),
-    g = n(709913),
+    g = n(287809),
+    m = n(464477),
+    A = n(709913),
     h = n(455611),
-    x = n(858526),
-    p = n(309198),
+    p = n(858526),
+    x = n(309198),
     E = n(978551),
-    C = n(100817),
-    T = n(531525);
-class S extends s.PureComponent {
+    T = n(100817),
+    S = n(531525);
+class C extends s.PureComponent {
     renderEnabled() {
         let {
             backupCodes: e,
@@ -30,7 +30,7 @@ class S extends s.PureComponent {
             togglingSMS: s
         } = this.props;
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(A.A, {
                 backupCodes: e,
                 currentUser: n,
                 hasTOTPEnabled: t
@@ -39,39 +39,39 @@ class S extends s.PureComponent {
                 children: [(0, i.jsx)(h.A, {
                     backupCodes: e
                 }), (0, i.jsx)(o.cGx, {})]
-            }), t && (0, i.jsx)(c.x, {
-                setting: T.H.ACCOUNT_SMS_BACKUP,
-                children: (0, i.jsx)(p.A, {
+            }), t && (0, i.jsx)(d.x, {
+                setting: S.H.ACCOUNT_SMS_BACKUP,
+                children: (0, i.jsx)(x.A, {
                     currentUser: n,
                     togglingSMS: s
                 })
-            }), (0, i.jsx)(c.x, {
-                setting: T.H.ACCOUNT_SECURITY_KEYS,
-                children: (0, i.jsx)(d.A, {})
+            }), (0, i.jsx)(d.x, {
+                setting: S.H.ACCOUNT_SECURITY_KEYS,
+                children: (0, i.jsx)(c.A, {})
             })]
         })
     }
     renderDisabled() {
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(d.A, {})]
+            children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(c.A, {})]
         })
     }
     render() {
         let {
             currentUser: e
         } = this.props;
-        return A.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, i.jsx)(C.A, {}) : (0, i.jsx)(E.A, {})
+        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, i.jsx)(T.A, {}) : (0, i.jsx)(E.A, {})
     }
 }
 
 function I(e) {
-    let t = (0, r.bG)([m.default], () => m.default.getCurrentUser());
-    l()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
+    let t = (0, r.bG)([g.default], () => g.default.getCurrentUser());
+    a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
     let n = (0, r.cf)([_.A, u.default], () => ({
         togglingSMS: _.A.togglingSMS,
         hasTOTPEnabled: u.default.hasTOTPEnabled()
     }));
-    return (0, i.jsx)(S, {
+    return (0, i.jsx)(C, {
         currentUser: t,
         ...n,
         ...e

@@ -5,8 +5,8 @@ r.d(t, {
 });
 var a = r(26412),
     n = r(658),
-    s = r(527758),
-    o = r(552932),
+    o = r(527758),
+    s = r(552932),
     i = r(865977),
     c = r(761847),
     l = r(416886),
@@ -17,8 +17,8 @@ var a = r(26412),
     h = r.n(d),
     p = r(708906),
     y = r(770237),
-    g = r(380883),
-    v = r(257341);
+    v = r(380883),
+    g = r(257341);
 
 function m(e, t) {
     var r = Object.keys(e);
@@ -49,7 +49,7 @@ function w(e) {
     }
 }
 var O = function(e) {
-    (0, o.A)(d, e);
+    (0, s.A)(d, e);
     var t, r = (t = function() {
         if ("u" < typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
         if ("function" == typeof Proxy) return !0;
@@ -65,7 +65,7 @@ var O = function(e) {
 
     function d(e) {
         var t;
-        return (0, a.A)(this, d), t = r.call(this, e), (0, l.A)((0, s.A)(t), "handleClick", function() {
+        return (0, a.A)(this, d), t = r.call(this, e), (0, l.A)((0, o.A)(t), "handleClick", function() {
             t.props.expandable && t.setState({
                 expanded: !t.state.expanded
             })
@@ -93,25 +93,25 @@ var O = function(e) {
                 r = e.nodeTypeIndicator,
                 a = e.nodeType,
                 n = e.data,
-                s = e.hideRoot,
-                o = e.createItemString,
+                o = e.hideRoot,
+                s = e.createItemString,
                 i = e.styling,
                 c = e.collectionLimit,
                 l = e.keyPath,
                 d = e.labelRenderer,
                 h = e.expandable,
                 m = this.state.expanded,
-                w = m || s && 0 === this.props.level ? function e(t, r, a) {
+                w = m || o && 0 === this.props.level ? function e(t, r, a) {
                     var n = t.nodeType,
-                        s = t.data,
-                        o = t.collectionLimit,
+                        o = t.data,
+                        s = t.collectionLimit,
                         i = t.circularCache,
                         c = t.keyPath,
                         l = t.postprocessValue,
                         d = t.sortObjectKeys,
                         h = [];
-                    return (0, y.A)(n, s, d, o, r, a).forEach(function(r) {
-                        if (void 0 !== r.to) h.push(f.createElement(v.A, (0, b.A)({}, t, {
+                    return (0, y.A)(n, o, d, s, r, a).forEach(function(r) {
+                        if (void 0 !== r.to) h.push(f.createElement(g.A, (0, b.A)({}, t, {
                             key: "ItemRange--".concat(r.from, "-").concat(r.to),
                             from: r.from,
                             to: r.to,
@@ -120,15 +120,15 @@ var O = function(e) {
                         else {
                             var a = r.key,
                                 n = r.value,
-                                s = -1 !== i.indexOf(n);
-                            h.push(f.createElement(g.A, (0, b.A)({}, t, {
+                                o = -1 !== i.indexOf(n);
+                            h.push(f.createElement(v.A, (0, b.A)({}, t, {
                                 postprocessValue: l,
-                                collectionLimit: o,
+                                collectionLimit: s,
                                 key: "Node--".concat(a),
                                 keyPath: [a].concat((0, u.A)(c)),
                                 value: l(n),
                                 circularCache: [].concat((0, u.A)(i), [n]),
-                                isCircular: s,
+                                isCircular: o,
                                 hideRoot: !1
                             })))
                         }
@@ -136,9 +136,9 @@ var O = function(e) {
                 }(A(A({}, this.props), {}, {
                     level: this.props.level + 1
                 })) : null,
-                O = t(a, n, f.createElement("span", i("nestedNodeItemType", m), r), o(n, c), l),
+                O = t(a, n, f.createElement("span", i("nestedNodeItemType", m), r), s(n, c), l),
                 k = [l, a, m, h];
-            return s ? f.createElement("li", i.apply(void 0, ["rootNode"].concat(k)), f.createElement("ul", i.apply(void 0, ["rootNodeChildren"].concat(k)), w)) : f.createElement("li", i.apply(void 0, ["nestedNode"].concat(k)), h && f.createElement(p.A, {
+            return o ? f.createElement("li", i.apply(void 0, ["rootNode"].concat(k)), f.createElement("ul", i.apply(void 0, ["rootNodeChildren"].concat(k)), w)) : f.createElement("li", i.apply(void 0, ["nestedNode"].concat(k)), h && f.createElement(p.A, {
                 styling: i,
                 nodeType: a,
                 expanded: m,

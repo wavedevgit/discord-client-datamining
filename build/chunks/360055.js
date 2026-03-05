@@ -1,31 +1,31 @@
-/** chunk id: 360055, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    a: () => E
+/** chunk id: 360055, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    a: () => m
 });
-var n = i(64700),
-    l = i(935649),
-    s = i(847599),
-    a = i(36149),
-    r = i(323073),
-    u = i(419954),
-    o = i(264249),
-    d = i(253932),
-    A = i(780964),
-    T = i(406274),
-    S = i(985018);
-let E = (0, u.zD)(A.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_SETTING, {
-    useTitle: () => S.intl.string(S.t["L+yTsa"]),
-    useSubtitle: () => S.intl.string(S.t.hiM8pU),
-    useValue: o.tI,
+var i = n(64700),
+    s = n(935649),
+    l = n(847599),
+    a = n(36149),
+    r = n(323073),
+    o = n(419954),
+    d = n(264249),
+    c = n(253932),
+    u = n(780964),
+    _ = n(406274),
+    g = n(985018);
+let m = (0, o.zD)(u.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_SETTING, {
+    useTitle: () => g.intl.string(g.t["L+yTsa"]),
+    useSubtitle: () => g.intl.string(g.t.hiM8pU),
+    useValue: d.tI,
     useDisabled: () => {
-        let t = (0, T.A)() ?? !0,
-            e = (0, r.sP)(),
-            i = (0, a.yM)();
-        return n.useMemo(() => (!e || !!i) && !t, [e, t, i])
+        let e = (0, _.A)() ?? !0,
+            t = (0, r.sP)(),
+            n = (0, a.yM)();
+        return i.useMemo(() => (!t || !!n) && !e, [t, e, n])
     },
-    setValue: t => {
-        (0, r.p5)() && t ? l.A.showAgeVerificationGetStartedModal({
-            entryPoint: s.q1.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
-        }) : d.Kg.updateSetting(t)
+    setValue: e => {
+        (0, r.p5)() && e ? s.A.showAgeVerificationGetStartedModal({
+            entryPoint: l.q1.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
+        }) : c.Kg.updateSetting(e)
     }
 })

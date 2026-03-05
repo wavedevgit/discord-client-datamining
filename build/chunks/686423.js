@@ -1,30 +1,30 @@
 /** chunk id: 686423, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
-    a = n(502572),
-    l = n(732955),
+    l = n(502572),
+    a = n(732955),
     r = n(397927),
     o = n(688810),
-    c = n(531260),
-    d = n(987144),
+    d = n(531260),
+    c = n(987144),
     u = n(473145),
     _ = n(652215),
-    m = n(985018),
-    A = n(572523);
-let g = function() {
+    g = n(985018),
+    m = n(572523);
+let A = function() {
     let e = s.useRef(null),
         {
             analyticsLocations: t
         } = (0, o.Ay)(),
         {
-            fractionalState: g
-        } = (0, c.A)();
+            fractionalState: A
+        } = (0, d.A)();
 
     function h(n) {
-        null != e.current && (0, r.OoC)(e.current), (0, d.g)({
+        null != e.current && (0, r.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
                 page: _.liQ.GUILD_BOOSTING_USER_SETTINGS,
                 section: _.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
@@ -35,7 +35,7 @@ let g = function() {
             guild: n
         })
     }
-    async function x() {
+    async function p() {
         e.current = await (0, r.mMO)(async () => {
             let {
                 default: e
@@ -50,34 +50,34 @@ let g = function() {
             }
         })
     }
-    let p = (0, u.Nc)({
-        fractionalState: g
+    let x = (0, u.Nc)({
+        fractionalState: A
     });
     return (0, i.jsxs)("div", {
-        className: A.iE,
+        className: m.iE,
         children: [(0, i.jsx)(r._Jp, {
             color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: A.$J
+            className: m.$J
         }), (0, i.jsx)(r.Text, {
-            className: A.C,
+            className: m.C,
             color: "text-default",
             variant: "text-sm/medium",
-            children: m.intl.format(m.t.kqC5vq, {
+            children: g.intl.format(g.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
-                    let n = null != p,
+                    let n = null != x,
                         s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
-                            className: A.lO,
-                            children: (0, i.jsx)(l.QWc, {
+                            className: m.lO,
+                            children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
-                                onClick: n ? void 0 : x,
+                                onClick: n ? void 0 : p,
                                 text: s,
                                 disabled: n
                             }, t)
                         });
-                    return n ? (0, i.jsx)(a.A, {
-                        text: p,
-                        "aria-label": p.toString(),
+                    return n ? (0, i.jsx)(l.A, {
+                        text: x,
+                        "aria-label": x.toString(),
                         children: e => (0, i.jsx)("span", {
                             ...e,
                             children: o

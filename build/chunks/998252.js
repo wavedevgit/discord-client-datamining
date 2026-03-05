@@ -1,16 +1,16 @@
 /** chunk id: 998252, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(521933),
-    l = n(452357),
+    l = n(521933),
+    a = n(452357),
     r = n(985018),
     o = n(139674);
 
-function c(e) {
+function d(e) {
     let {
         currentUser: t
     } = e;
@@ -23,7 +23,7 @@ function c(e) {
             variant: "text-sm/normal",
             className: o.PA,
             children: r.intl.string(r.t.NAzplE)
-        }), (0, i.jsx)(l.A, {
+        }), (0, i.jsx)(a.A, {
             size: "sm",
             variant: "secondary"
         })]
@@ -40,7 +40,7 @@ function c(e) {
             variant: "secondary",
             size: "sm",
             text: r.intl.string(r.t["7psymi"]),
-            onClick: () => a.A.openClaimAccountModal()
+            onClick: () => l.A.openClaimAccountModal()
         })]
     })
 }

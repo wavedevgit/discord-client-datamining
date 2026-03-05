@@ -1,17 +1,17 @@
-/** chunk id: 933955, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    r: () => A
+/** chunk id: 933955, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    r: () => u
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(327474),
-    a = i(929548),
-    r = i(541508),
-    u = i(337313),
-    o = i(790147),
-    d = i(985018);
-let A = (0, n.bd)(l.X.VOICE_AND_VIDEO_DIAGNOSTICS_ACCORDION, {
-    useTitle: t => t ? d.intl.string(d.t["/B4I8H"]) : d.intl.string(d.t.BTlsWH),
-    useCollapsedSubtitle: () => d.intl.string(d.t.la1Ys4),
-    buildLayout: () => [o.z, s.W, u.T, r.W, a.L]
+var i = n(419954),
+    s = n(780964),
+    l = n(327474),
+    a = n(929548),
+    r = n(541508),
+    o = n(337313),
+    d = n(790147),
+    c = n(985018);
+let u = (0, i.bd)(s.X.VOICE_AND_VIDEO_DIAGNOSTICS_ACCORDION, {
+    useTitle: e => e ? c.intl.string(c.t["/B4I8H"]) : c.intl.string(c.t.BTlsWH),
+    useCollapsedSubtitle: () => c.intl.string(c.t.la1Ys4),
+    buildLayout: () => [d.z, l.W, o.T, r.W, a.L]
 })

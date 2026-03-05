@@ -13,27 +13,27 @@ var a = n(627968),
     u = n(308528),
     m = n(571694),
     h = n(47167),
-    p = n(704844),
-    x = n(734057),
+    x = n(704844),
+    p = n(734057),
     g = n(994500),
     _ = n(287809),
     f = n(645959),
-    b = n(263834),
-    v = n(865116),
+    v = n(263834),
+    b = n(865116),
     j = n(716371),
     A = n(701940),
     C = n(661251);
 
-function T() {
+function y() {
     let e = (0, d.yK)([f.default], () => f.default.getSortedChannels()[1]),
         [t, n] = i.useState(e.length > 0 ? e[0].channelId : void 0),
         {
             selectedChannel: s,
             options: l
-        } = (0, d.cf)([x.A, _.default, g.A], () => ({
-            selectedChannel: x.A.getChannel(t),
+        } = (0, d.cf)([p.A, _.default, g.A], () => ({
+            selectedChannel: p.A.getChannel(t),
             options: e.map(e => {
-                let t = x.A.getChannel(e.channelId);
+                let t = p.A.getChannel(e.channelId);
                 return {
                     id: e.channelId,
                     value: e.channelId,
@@ -49,9 +49,9 @@ function T() {
         u = i.useCallback(() => {
             if (null == s || !s.isPrivate()) return;
             let e = (0, o.PQ)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
-            p.A.updatePrivateChannelRecipientFlags(s.id, e)
+            x.A.updatePrivateChannelRecipientFlags(s.id, e)
         }, [s]),
-        b = !!s?.isPrivate() && (0, o.Lt)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
+        v = !!s?.isPrivate() && (0, o.Lt)(s.recipientFlags ?? 0, r.o.DISMISSED_IN_GAME_MESSAGE_NUX);
     return (0, a.jsxs)("div", {
         className: A.gs,
         children: [(0, a.jsx)(c.ZiE, {
@@ -64,14 +64,14 @@ function T() {
         }), (0, a.jsx)(c.Button, {
             variant: "primary",
             size: "sm",
-            text: b ? "Clear NUX Flag" : "Set NUX Flag",
+            text: v ? "Clear NUX Flag" : "Set NUX Flag",
             onClick: u,
             disabled: null == t
         })]
     })
 }
 
-function y() {
+function T() {
     let e = i.useCallback(() => {
         u.A.openPrivateChannel({
             recipientIds: [j.K]
@@ -86,7 +86,7 @@ function y() {
 }
 
 function S() {
-    let e = (0, d.bG)([v.Ay], () => v.Ay.allByCategory(v.xW.MESSAGING), [], d.My).map(e => {
+    let e = (0, d.bG)([b.Ay], () => b.Ay.allByCategory(b.xW.MESSAGING), [], d.My).map(e => {
         let [t, n, {
             label: i
         }] = e;
@@ -94,15 +94,15 @@ function S() {
             label: i,
             description: t,
             checked: n,
-            onChange: e => (0, b.L)(t, e)
+            onChange: e => (0, v.L)(t, e)
         }, t)
     });
     return (0, a.jsxs)("div", {
         className: l()(C.nd, A.nd),
         children: [e, (0, a.jsx)("div", {
             className: A.yF
-        }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
+        }), (0, a.jsx)(y, {}), (0, a.jsx)("div", {
             className: A.yF
-        }), (0, a.jsx)(y, {})]
+        }), (0, a.jsx)(T, {})]
     })
 }

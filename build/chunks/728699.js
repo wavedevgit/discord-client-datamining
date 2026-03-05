@@ -1,47 +1,36 @@
-/** chunk id: 728699, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    T: () => C
+/** chunk id: 728699, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    T: () => A
 });
-var n = i(627968),
-    l = i(934551),
-    s = i(554146),
-    a = i(397927),
-    r = i(834981),
-    u = i(793998),
-    o = i(419954),
-    d = i(933297),
-    A = i(780964),
-    T = i(358776),
-    S = i(264474),
-    E = i(531525),
-    g = i(985018),
-    c = i(842130);
-let _ = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
-        usePredicate: () => !(0, T.dk)("LegacyFamilyCenterPanel"),
-        useTitle: () => g.intl.string(c.default.RZqaJn),
-        StronglyDiscouragedCustomComponent: u.p,
-        buildLayout: () => []
+var i = n(627968),
+    s = n(934551),
+    l = n(554146),
+    a = n(397927),
+    r = n(834981),
+    o = n(419954),
+    d = n(933297),
+    c = n(780964),
+    u = n(264474),
+    _ = n(985018),
+    g = n(842130);
+let m = (0, o.t_)(c.X.FAMILY_CENTER_PANEL, {
+        useTitle: () => _.intl.string(g.default.RZqaJn),
+        buildLayout: () => [u.g]
     }),
-    I = (0, o.t_)(A.X.FAMILY_CENTER_PANEL, {
-        usePredicate: () => (0, T.dk)("FamilyCenterPanel"),
-        useTitle: () => g.intl.string(c.default.RZqaJn),
-        buildLayout: () => [S.g]
-    }),
-    C = (0, o.i4)(A.X.FAMILY_CENTER_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(c.default.RZqaJn),
-        getLegacySearchKey: () => (0, T.WJ)("FamilyCenterPanel") ? void 0 : E.H.PRIVACY_FAMILY_CENTER,
-        icon: l.GroupIcon,
+    A = (0, o.i4)(c.X.FAMILY_CENTER_SIDEBAR_ITEM, {
+        useTitle: () => _.intl.string(g.default.RZqaJn),
+        icon: s.GroupIcon,
         trailing: {
             type: d.Si.STRONGLY_DISCOURAGED_CUSTOM,
-            getDismissibleContentTypes: () => [s.M.FAMILY_CENTER_NEW_BADGE],
-            useCustomDecoration: function(t) {
-                let e = (0, r.VT)();
-                return t === s.M.FAMILY_CENTER_NEW_BADGE ? (0, n.jsx)(a.LpS, {
-                    text: g.intl.string(g.t.y2b7CA)
-                }) : e > 0 ? (0, n.jsx)(a.hVq, {
-                    count: e
+            getDismissibleContentTypes: () => [l.M.FAMILY_CENTER_NEW_BADGE],
+            useCustomDecoration: function(e) {
+                let t = (0, r.VT)();
+                return e === l.M.FAMILY_CENTER_NEW_BADGE ? (0, i.jsx)(a.LpS, {
+                    text: _.intl.string(_.t.y2b7CA)
+                }) : t > 0 ? (0, i.jsx)(a.hVq, {
+                    count: t
                 }) : null
             }
         },
-        buildLayout: () => (0, T.WJ)("FamilyCenterPanel") ? [I] : [_]
+        buildLayout: () => [m]
     })

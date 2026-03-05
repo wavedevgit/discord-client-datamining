@@ -1,6 +1,6 @@
 /** chunk id: 139210, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => y
 });
 var a = n(627968),
     i = n(64700),
@@ -13,26 +13,26 @@ var a = n(627968),
     u = n(971649),
     m = n(901406),
     h = n(270045),
-    p = n(57718),
-    x = n(398025),
+    x = n(57718),
+    p = n(398025),
     g = n(545986),
     _ = n(568329),
     f = n(963713),
-    b = n(223352),
-    v = n(152515);
+    v = n(223352),
+    b = n(152515);
 n(272111);
 var j = n(985018),
     A = n(116224);
-let C = (0, r.animated)(p.Ay),
-    T = e => {
+let C = (0, r.animated)(x.Ay),
+    y = e => {
         let {
             withUnfurlTimeout: t,
             unfurlTimeoutDurationInMilliseconds: n,
             onUnfurlTimeoutComplete: s
-        } = e, p = (0, u.go)(), {
-            expansionSpring: T
+        } = e, x = (0, u.go)(), {
+            expansionSpring: y
         } = i.useContext(_.PW), {
-            onCtxMenuOpen: y,
+            onCtxMenuOpen: T,
             onCtxMenuClose: S,
             onCtxMenuSelect: E,
             isExpanded: N,
@@ -48,10 +48,10 @@ let C = (0, r.animated)(p.Ay),
             (0, m.pu)(k, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
-                impressionId: p,
+                impressionId: x,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [p, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
+        }, [x, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
             onClick: O,
             className: l()(A.vk, {
                 [A.wm]: w
@@ -63,7 +63,7 @@ let C = (0, r.animated)(p.Ay),
                 logotypeStyle: {
                     height: 24,
                     maxWidth: 92,
-                    transform: (0, r.to)([T.to({
+                    transform: (0, r.to)([y.to({
                         range: [0, 1],
                         output: [1, 1]
                     })], e => `scale(${e})`)
@@ -75,7 +75,7 @@ let C = (0, r.animated)(p.Ay),
                 [A.tT]: w
             }),
             style: {
-                transform: (0, r.to)([T.to({
+                transform: (0, r.to)([y.to({
                     range: [0, 1],
                     output: [6, 0]
                 })], e => `translateY(${e}px)`)
@@ -83,18 +83,18 @@ let C = (0, r.animated)(p.Ay),
             children: [(0, a.jsx)(r.animated.div, {
                 className: A.Tu,
                 style: {
-                    opacity: (0, x.a)(T.to({
+                    opacity: (0, p.a)(y.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
                 }
-            }), (0, a.jsx)(b.A, {
+            }), (0, a.jsx)(v.A, {
                 isFullyExpanded: w,
                 partnerBranding: D
             }), (0, a.jsxs)(r.animated.div, {
                 className: A.P0,
                 style: {
-                    opacity: (0, x.a)(T.to({
+                    opacity: (0, p.a)(y.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
@@ -112,12 +112,12 @@ let C = (0, r.animated)(p.Ay),
                     })]
                 }), t ? (0, a.jsx)("div", {
                     className: A.uJ,
-                    children: (0, a.jsx)(v.n, {
+                    children: (0, a.jsx)(b.n, {
                         timeoutDurationInMilliseconds: n,
                         onTimeoutComplete: s
                     })
                 }) : (0, a.jsx)(h.C, {
-                    onOpen: y,
+                    onOpen: T,
                     onClose: S,
                     onSelect: E,
                     questContent: d.uF.QUEST_BAR_V2,

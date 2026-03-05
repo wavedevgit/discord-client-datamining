@@ -1,6 +1,6 @@
 /** chunk id: 813077, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    FW: () => a,
+    FW: () => l,
     wI: () => s
 });
 let i = (0, n(945810).mj)({
@@ -21,6 +21,6 @@ let i = (0, n(945810).mj)({
     s = e => i.useConfig({
         location: e
     }).enabled,
-    a = e => i.getConfig({
+    l = e => i.getConfig({
         location: e
     }).enabled

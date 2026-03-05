@@ -32,8 +32,8 @@ class h extends a.A {
         }
         let m = o.A.getChannel(_);
         if (!m?.isGuildStageVoice()) return;
-        let p = (0, c.eY)(h) === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-        if (null != m && p) {
+        let g = (0, c.eY)(h) === c.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+        if (null != m && g) {
             if ((0, r.kBI)(A)) return;
             (0, r.mMO)(async () => {
                 let {

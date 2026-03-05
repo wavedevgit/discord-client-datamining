@@ -6,29 +6,29 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(854627),
-    l = n(837921),
+    l = n(854627),
+    a = n(837921),
     r = n(842130),
     o = n(985018),
-    c = n(241938);
-let d = l.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
+    d = n(241938);
+let c = a.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
     u = e => {
         let {
             user: t,
             avatarSize: n = s._3J.SIZE_48
         } = e, {
-            avatarSrc: l,
-            avatarDecorationSrc: c,
+            avatarSrc: a,
+            avatarDecorationSrc: d,
             eventHandlers: u
-        } = (0, a.A)({
+        } = (0, l.A)({
             userId: t?.id,
             size: n
         });
         return (0, i.jsx)("div", {
             ...u,
-            children: (0, i.jsx)(d, {
-                src: l,
-                avatarDecoration: c,
+            children: (0, i.jsx)(c, {
+                src: a,
+                avatarDecoration: d,
                 size: n,
                 "aria-label": o.intl.formatToPlainString(r.default.kFj4h1, {
                     name: t.username
@@ -43,9 +43,9 @@ let d = l.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
             children: s
         } = e;
         return (0, i.jsx)("div", {
-            className: c.b,
+            className: d.b,
             children: (0, i.jsxs)("div", {
-                className: c.M,
+                className: d.M,
                 children: [(0, i.jsx)(u, {
                     user: t
                 }), s, (0, i.jsx)(u, {

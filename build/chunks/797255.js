@@ -1,25 +1,25 @@
 /** chunk id: 797255, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(854627),
-    l = n(778712),
+    l = n(854627),
+    a = n(778712),
     r = n(985018),
     o = n(431543);
 
-function c(e) {
+function d(e) {
     let {
         referrer: t,
         enablePremiumBrandRefresh: n
     } = e, {
-        avatarSrc: c,
-        eventHandlers: d
-    } = (0, a.A)({
+        avatarSrc: d,
+        eventHandlers: c
+    } = (0, l.A)({
         userId: t?.id,
-        size: n ? l._3.SIZE_24 : l._3.SIZE_32,
+        size: n ? a._3.SIZE_24 : a._3.SIZE_32,
         animateOnHover: !0
     });
     return (0, i.jsx)("div", {
@@ -30,10 +30,10 @@ function c(e) {
                 className: o.kR,
                 children: (0, i.jsx)(s.euF, {
                     className: o.Kk,
-                    src: c,
+                    src: d,
                     "aria-label": t.username,
-                    size: l._3.SIZE_32,
-                    ...d
+                    size: a._3.SIZE_32,
+                    ...c
                 })
             }), (0, i.jsx)(s.Heading, {
                 variant: "heading-sm/normal",

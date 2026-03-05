@@ -1,15 +1,15 @@
-/** chunk id: 281225, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => u
+/** chunk id: 281225, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Q: () => o
 });
-var n = i(210742),
-    l = i(419954),
-    s = i(780964),
-    a = i(985018);
-let r = (0, l.E2)(s.X.ACCOUNT_STANDING_SETTING, {
+var i = n(210742),
+    s = n(419954),
+    l = n(780964),
+    a = n(985018);
+let r = (0, s.E2)(l.X.ACCOUNT_STANDING_SETTING, {
         useSearchTerms: () => [a.intl.string(a.t["Vov/9o"])],
-        Component: n.A
+        Component: i.A
     }),
-    u = (0, l.zZ)(s.X.ACCOUNT_STANDING_CATEGORY, {
+    o = (0, s.zZ)(l.X.ACCOUNT_STANDING_CATEGORY, {
         buildLayout: () => [r]
     })

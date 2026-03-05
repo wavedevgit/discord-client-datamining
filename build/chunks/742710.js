@@ -1,6 +1,6 @@
 /** chunk id: 742710, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => L
 });
 var i = n(627968),
     l = n(64700),
@@ -217,7 +217,7 @@ function R(e) {
     })
 }
 
-function w(e) {
+function L(e) {
     let {
         user: t,
         guildId: n,
@@ -232,10 +232,10 @@ function w(e) {
     } = e, {
         applicationId: y,
         comment: C,
-        tags: w
+        tags: L
     } = a, {
-        coverImageUrl: L,
-        gameName: O,
+        coverImageUrl: O,
+        gameName: w,
         isLoading: D
     } = (0, c.A)(y), P = {
         variant: "heading-sm/medium",
@@ -246,9 +246,9 @@ function w(e) {
     if (D) return (0, i.jsx)(A.E, {});
     let X = () => (0, i.jsx)(_.A, {
             coverRef: x,
-            className: null == L || d ? void 0 : T.iL,
-            imageSrc: L,
-            gameName: O,
+            className: null == O || d ? void 0 : T.iL,
+            imageSrc: O,
+            gameName: w,
             applicationId: y,
             userId: t.id,
             disableInteraction: d,
@@ -266,11 +266,11 @@ function w(e) {
                 className: b.zH,
                 children: [d ? (0, i.jsx)(r.Heading, {
                     ...P,
-                    children: O
+                    children: w
                 }) : (0, i.jsx)(S, {
                     applicationId: y,
                     userId: t.id,
-                    gameName: O,
+                    gameName: w,
                     ...P
                 }), W ? (0, i.jsx)(R, {
                     text: C,
@@ -285,7 +285,7 @@ function w(e) {
                     guildId: n,
                     channelId: l
                 }), (0, i.jsx)(I.A, {
-                    tags: w,
+                    tags: L,
                     isCurrentUser: M,
                     widgetType: o,
                     applicationId: y,

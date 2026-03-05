@@ -1,39 +1,39 @@
 /** chunk id: 411121, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => G
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(989349),
     o = n.n(r),
-    c = n(311907),
-    d = n(451988),
+    d = n(311907),
+    c = n(451988),
     u = n(421380),
     _ = n(397927),
-    m = n(869038),
-    A = n(786144),
-    g = n(587895),
+    g = n(869038),
+    m = n(786144),
+    A = n(587895),
     h = n(235986),
-    x = n(769015),
-    p = n(75825),
+    p = n(769015),
+    x = n(75825),
     E = n(871123),
-    C = n(366523),
-    T = n(961350),
-    S = n(30793),
+    T = n(366523),
+    S = n(961350),
+    C = n(30793),
     I = n(351906),
     f = n(97352),
-    N = n(67480),
-    b = n(147925),
-    j = n(957565),
-    v = n(45938),
+    b = n(67480),
+    N = n(147925),
+    v = n(957565),
+    j = n(45938),
     O = n(615396),
     R = n(788868),
     y = n(985018),
     P = n(539785);
 class L extends s.PureComponent {
-    _copyModeTimeout = new d.Ep;
+    _copyModeTimeout = new c.Ep;
     state = {
         copyMode: _.qCr.DEFAULT
     };
@@ -51,14 +51,14 @@ class L extends s.PureComponent {
         }
     }
     handleRevoke(e) {
-        m.A.revokeGiftCode(e)
+        g.A.revokeGiftCode(e)
     }
     handleCopy = e => {
         let {
             giftCode: t,
             sku: n
         } = this.props;
-        (0, v.AK)(t, n), (0, j.C)(e, () => this.setState({
+        (0, j.AK)(t, n), (0, v.C)(e, () => this.setState({
             copyMode: _.qCr.SUCCESS
         }), () => this.setState({
             copyMode: _.qCr.ERROR
@@ -80,10 +80,10 @@ class L extends s.PureComponent {
             className: P.Gj,
             children: [(0, i.jsx)(_.e2O, {
                 className: P.ph,
-                value: (0, v.Zq)(t.code),
+                value: (0, j.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
-                supportsCopy: j.p5,
+                supportsCopy: v.p5,
                 hideMessage: e ? y.intl.string(y.t["0RLn47"]) : null,
                 onCopy: this.handleCopy,
                 buttonColor: u.XD.BRAND,
@@ -122,7 +122,7 @@ class D extends s.PureComponent {
         } = this.props;
         this.setState({
             isCreating: !0
-        }), await m.A.createGiftCode(t, n, i), this.setState({
+        }), await g.A.createGiftCode(t, n, i), this.setState({
             isCreating: !1,
             isOpen: !0
         })
@@ -133,7 +133,7 @@ class D extends s.PureComponent {
             subscriptionPlanId: t,
             loadedAt: n
         } = this.props, i = !this.state.isOpen;
-        (null == n || null == this._loadedAt || n < this._loadedAt) && i && m.A.fetchUserGiftCodesForSKU(e, t), this.setState({
+        (null == n || null == this._loadedAt || n < this._loadedAt) && i && g.A.fetchUserGiftCodesForSKU(e, t), this.setState({
             isOpen: !this.state.isOpen
         })
     };
@@ -143,17 +143,17 @@ class D extends s.PureComponent {
             giftStyle: t,
             application: n
         } = this.props;
-        return (0, E.bF)(e) ? (0, i.jsx)(C.e, {
+        return (0, E.bF)(e) ? (0, i.jsx)(T.e, {
             shape: "square",
             sku: e,
             containerClassName: P.ez
-        }) : null != t ? (0, i.jsx)(p.A, {
+        }) : null != t ? (0, i.jsx)(x.A, {
             giftStyle: t,
             className: P.ez,
             shouldAnimate: this.state.isHovered
-        }) : (0, i.jsx)(x.A, {
+        }) : (0, i.jsx)(p.A, {
             game: n,
-            size: x.M.MEDIUM,
+            size: p.M.MEDIUM,
             skuId: e.id
         })
     }
@@ -164,10 +164,10 @@ class D extends s.PureComponent {
             application: n
         } = this.props;
         return (0, E.bF)(e) ? (0, i.jsxs)("div", {
-            className: l()(P.Oc, P.ic),
-            children: [(0, i.jsx)(x.A, {
+            className: a()(P.Oc, P.ic),
+            children: [(0, i.jsx)(p.A, {
                 game: n,
-                size: x.M.XSMALL,
+                size: p.M.XSMALL,
                 skuId: e.id,
                 className: P._u
             }), y.intl.format(y.t["6plpZi"], {
@@ -225,21 +225,21 @@ class D extends s.PureComponent {
             entitlements: e,
             application: t,
             giftCodes: n,
-            className: a,
-            sku: l,
+            className: l,
+            sku: a,
             isFetching: r,
             hideCodes: o
         } = this.props, {
-            isOpen: c
+            isOpen: d
         } = this.state;
-        return (0, i.jsxs)(A.A, {
-            className: a,
+        return (0, i.jsxs)(m.A, {
+            className: l,
             children: [(0, i.jsx)(_.DUT, {
                 onClick: this.handleToggleOpen,
                 className: P.Nr,
                 onMouseEnter: () => this.setIsHovered(!0),
                 onMouseLeave: () => this.setIsHovered(!1),
-                children: (0, i.jsx)(A.A.Header, {
+                children: (0, i.jsx)(m.A.Header, {
                     splashArtURL: t.getSplashURL(512),
                     children: (0, i.jsxs)("div", {
                         className: P.MY,
@@ -249,19 +249,19 @@ class D extends s.PureComponent {
                                 className: P.TK,
                                 children: [this.renderTitle(), this.renderSubtitle()]
                             })]
-                        }), (0, i.jsx)(b.A, {
-                            direction: c ? b.A.Directions.UP : b.A.Directions.DOWN,
+                        }), (0, i.jsx)(N.A, {
+                            direction: d ? N.A.Directions.UP : N.A.Directions.DOWN,
                             className: P.eO
                         })]
                     })
                 })
-            }), c ? (0, i.jsx)(A.A.Body, {
+            }), d ? (0, i.jsx)(m.A.Body, {
                 children: r ? (0, i.jsx)(_.y$y, {
                     className: P.u1
                 }) : (0, i.jsxs)(s.Fragment, {
                     children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(L, {
                         giftCode: e,
-                        sku: l,
+                        sku: a,
                         hideCode: o
                     }, e.code))]
                 })
@@ -269,21 +269,21 @@ class D extends s.PureComponent {
         })
     }
 }
-let M = c.Ay.connectStores([N.A, I.A, S.A, g.A, f.A, T.default], e => {
+let G = d.Ay.connectStores([b.A, I.A, C.A, A.A, f.A, S.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
         giftStyle: i
-    } = e, s = N.A.get(t);
+    } = e, s = b.A.get(t);
     if (null == s) throw Error("SKU was unavailable while rendering gift.");
-    let a = S.A.getForGifterSKUAndPlan(T.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
+    let l = C.A.getForGifterSKUAndPlan(S.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
     return {
         sku: s,
         hideCodes: I.A.enabled,
-        isFetching: S.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
-        loadedAt: S.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
-        application: g.A.getApplication(s.applicationId),
+        isFetching: C.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
+        loadedAt: C.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
+        application: A.A.getApplication(s.applicationId),
         subscriptionPlan: null != n ? (0, O.c9)(n) : null,
-        giftCodes: a
+        giftCodes: l
     }
 })(D)

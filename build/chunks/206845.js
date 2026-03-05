@@ -1,71 +1,71 @@
-/** chunk id: 206845, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => m
+/** chunk id: 206845, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => v
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(735438),
-    a = n(451988),
-    o = n(397927),
-    s = n(954571),
-    c = n(957565),
-    u = n(927813),
-    d = n(652215),
-    f = n(985018);
-let p = u.A.Millis.SECOND,
-    h = 2 * p,
-    g = u.A.Millis.HALF_SECOND,
-    v = [() => f.intl.string(f.t.MSaeTe), () => f.intl.string(f.t.UmrCw7), () => f.intl.string(f.t.gKE0Jq), () => f.intl.string(f.t["4DSKbi"]), () => f.intl.string(f.t["+8ENdT"]), () => f.intl.string(f.t.GlWHv8), () => f.intl.string(f.t.hIzxU9), () => f.intl.string(f.t["26uMPL"]), () => f.intl.string(f.t.uFs7R2), () => f.intl.string(f.t.bLXdcY), () => f.intl.string(f.t.gPg9fS)];
+var n = r(627968),
+    l = r(64700),
+    i = r(735438),
+    u = r(451988),
+    c = r(397927),
+    s = r(954571),
+    a = r(957565),
+    o = r(927813),
+    d = r(652215),
+    f = r(985018);
+let h = o.A.Millis.SECOND,
+    b = 2 * h,
+    m = o.A.Millis.HALF_SECOND,
+    E = [() => f.intl.string(f.t.MSaeTe), () => f.intl.string(f.t.UmrCw7), () => f.intl.string(f.t.gKE0Jq), () => f.intl.string(f.t["4DSKbi"]), () => f.intl.string(f.t["+8ENdT"]), () => f.intl.string(f.t.GlWHv8), () => f.intl.string(f.t.hIzxU9), () => f.intl.string(f.t["26uMPL"]), () => f.intl.string(f.t.uFs7R2), () => f.intl.string(f.t.bLXdcY), () => f.intl.string(f.t.gPg9fS)];
 
-function m(e) {
+function v(e) {
     let {
         text: t,
-        copyValue: n,
-        children: u,
+        copyValue: r,
+        children: o,
         onCopy: f,
-        "aria-label": m,
-        delay: b = g,
+        "aria-label": v,
+        delay: x = m,
         dataMeticulousIgnore: A
-    } = e, [E, y] = l.useState(0), [x, S] = l.useState(!1), [k, C] = l.useState(!1), [I] = l.useState(() => new a.Ep), [D] = l.useState(() => new a.Ep);
+    } = e, [g, p] = l.useState(0), [M, L] = l.useState(!1), [k, w] = l.useState(!1), [C] = l.useState(() => new u.Ep), [S] = l.useState(() => new u.Ep);
     if (l.useEffect(() => () => {
-            I.stop(), D.stop()
-        }, [I, D]), !c.p5) return (0, r.jsx)(r.Fragment, {
-        children: u({})
+            C.stop(), S.stop()
+        }, [C, S]), !a.p5) return (0, n.jsx)(n.Fragment, {
+        children: o({})
     });
-    let M = E >= v.length - 1,
-        N = M ? o.oMw.RED : o.oMw.GREEN,
-        L = x ? N : o.oMw.PRIMARY;
-    return (0, r.jsx)(o.STz, {
+    let y = g >= E.length - 1,
+        R = y ? c.oMw.RED : c.oMw.GREEN,
+        I = M ? R : c.oMw.PRIMARY;
+    return (0, n.jsx)(c.STz, {
         text: (() => {
-            if (!x) return t;
-            let e = (0, i.clamp)(E - 1, 0, v.length - 1),
-                n = v[e] ?? v[0];
-            return (0, r.jsx)(o.bfh, {
-                isShaking: M,
-                children: n()
+            if (!M) return t;
+            let e = (0, i.clamp)(g - 1, 0, E.length - 1),
+                r = E[e] ?? E[0];
+            return (0, n.jsx)(c.bfh, {
+                isShaking: y,
+                children: r()
             })
         })(),
-        delay: b,
-        "aria-label": m,
+        delay: x,
+        "aria-label": v,
         dataMeticulousIgnore: A,
-        color: L,
+        color: I,
         forceOpen: k,
         onAnimationRest: (e, t) => {
-            !k && x && t.phase === d.lLE.LEAVE && S(!1)
+            !k && M && t.phase === d.lLE.LEAVE && L(!1)
         },
         children: e => {
             let {
                 onClick: t,
-                onMouseEnter: r,
+                onMouseEnter: n,
                 ...l
             } = e;
-            return u({
+            return o({
                 ...l,
                 onClick: () => {
-                    t?.(), f?.(), (0, c.C)(n), s.default.track(d.HAw.TEXT_COPIED), k || y(E + 1), C(!0), S(!0), I.start(p, () => C(!1)), D.start(h, () => y(0))
+                    t?.(), f?.(), (0, a.C)(r), s.default.track(d.HAw.TEXT_COPIED), k || p(g + 1), w(!0), L(!0), C.start(h, () => w(!1)), S.start(b, () => p(0))
                 },
                 onMouseEnter: () => {
-                    x ? (I.stop(), C(!1)) : r?.()
+                    M ? (C.stop(), w(!1)) : n?.()
                 }
             })
         }

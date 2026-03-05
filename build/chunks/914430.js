@@ -1,5 +1,5 @@
-/** chunk id: 914430, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 914430, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     Al: () => o,
     Gv: () => a,
     fh: () => l,
@@ -7,30 +7,30 @@ n.d(e, {
 });
 var i = n(73153);
 
-function a(t) {
+function a(e) {
     i.h.dispatch({
         type: "CATEGORY_COLLAPSE",
-        id: t
+        id: e
     })
 }
 
-function l(t) {
+function l(e) {
     i.h.dispatch({
         type: "CATEGORY_EXPAND",
-        id: t
+        id: e
     })
 }
 
-function r(t) {
+function r(e) {
     i.h.dispatch({
         type: "CATEGORY_COLLAPSE_ALL",
-        guildId: t
+        guildId: e
     })
 }
 
-function o(t) {
+function o(e) {
     i.h.dispatch({
         type: "CATEGORY_EXPAND_ALL",
-        guildId: t
+        guildId: e
     })
 }

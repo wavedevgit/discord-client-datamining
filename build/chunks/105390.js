@@ -1,8 +1,8 @@
 /** chunk id: 105390, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ag: () => E,
-    MA: () => f,
-    fY: () => A
+    Ag: () => f,
+    MA: () => v,
+    fY: () => g
 });
 var i = n(627968),
     s = n(64700),
@@ -14,36 +14,36 @@ var i = n(627968),
     d = n(405269),
     u = n(927578),
     h = n(234419),
-    _ = n(915516),
-    S = n(985018),
-    p = n(271300);
+    m = n(915516),
+    p = n(985018),
+    S = n(271300);
 
-function m(e) {
+function E(e) {
     let {
         isTabSelected: t,
         expiresAt: n,
         badgeCopy: r,
         className: u,
         tooltipTextOverride: h,
-        tooltipPosition: _
-    } = e, m = s.useMemo(() => Date.parse(n), [n]), E = (0, c.A)(m, 6e4);
-    return Object.values(E).every(e => 0 === e) ? null : (0, i.jsx)(o.m, {
-        text: null != h ? h : (0, d.uN)(E, {
-            days: S.t.qVGNkU,
-            hours: S.t.wyg9a9,
-            minutes: S.t.IzmIlV
+        tooltipPosition: m
+    } = e, E = s.useMemo(() => Date.parse(n), [n]), f = (0, c.A)(E, 6e4);
+    return Object.values(f).every(e => 0 === e) ? null : (0, i.jsx)(o.m, {
+        text: null != h ? h : (0, d.uN)(f, {
+            days: p.t.qVGNkU,
+            hours: p.t.wyg9a9,
+            minutes: p.t.IzmIlV
         }),
-        position: null != _ ? _ : "top",
+        position: null != m ? m : "top",
         children: (0, i.jsxs)("div", {
-            className: l()(p.Fg, p.C8, u, {
-                [p.WO]: t
+            className: l()(S.Fg, S.C8, u, {
+                [S.WO]: t
             }),
             children: [(0, i.jsx)(a.O4, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor",
-                className: p._q
+                className: S._q
             }), (0, i.jsx)(a.Text, {
                 variant: "eyebrow",
                 color: "text-strong",
@@ -53,15 +53,15 @@ function m(e) {
     })
 }
 
-function E(e) {
+function f(e) {
     let {
         isTabSelected: t,
         trialOffer: n
     } = e, s = (0, h.V)()?.subscription_trial, r = (0, u.tS)({
         intervalType: s?.interval,
         intervalCount: s?.interval_count
-    }), l = (0, _.Fu)(n);
-    return (0, i.jsx)(f, {
+    }), l = (0, m.Fu)(n);
+    return (0, i.jsx)(v, {
         isTabSelected: t,
         badgeCopy: r,
         offerExpiresAt: n.expires_at,
@@ -70,24 +70,24 @@ function E(e) {
     })
 }
 
-function A(e) {
+function g(e) {
     let {
         isTabSelected: t,
         userDiscount: n,
         includesAmountOff: s
-    } = e, r = S.intl.formatToPlainString(S.t.iiLbvu, {
+    } = e, r = p.intl.formatToPlainString(p.t.iiLbvu, {
         percent: n.discount.amount
-    }), l = (0, _.__)(n);
-    return (0, i.jsx)(f, {
+    }), l = (0, m.__)(n);
+    return (0, i.jsx)(v, {
         isTabSelected: t,
-        badgeCopy: s ? r : S.intl.string(S.t["/DTtr6"]),
+        badgeCopy: s ? r : p.intl.string(p.t["/DTtr6"]),
         offerExpiresAt: n.expires_at,
         tooltipTextOverride: l,
         tooltipPosition: "right"
     })
 }
 
-function f(e) {
+function v(e) {
     let {
         isTabSelected: t,
         badgeCopy: n,
@@ -95,17 +95,17 @@ function f(e) {
         tooltipTextOverride: r,
         tooltipPosition: o
     } = e;
-    return null != s ? (0, i.jsx)(m, {
+    return null != s ? (0, i.jsx)(E, {
         expiresAt: s,
         isTabSelected: t,
         badgeCopy: n,
         tooltipTextOverride: r,
         tooltipPosition: o
     }) : (0, i.jsx)("div", {
-        className: l()(p.Fg, p.AT),
+        className: l()(S.Fg, S.AT),
         children: (0, i.jsx)(a.Text, {
             variant: "eyebrow",
-            className: p.md,
+            className: S.md,
             children: n
         })
     })

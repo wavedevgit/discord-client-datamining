@@ -1,41 +1,41 @@
-/** chunk id: 430443, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    U: () => d
+/** chunk id: 430443, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    U: () => c
 });
-var n = i(311907),
-    l = i(10094),
-    s = i(683760),
-    a = i(419954),
-    r = i(780964),
-    u = i(788868);
-let o = [{
+var i = n(311907),
+    s = n(10094),
+    l = n(683760),
+    a = n(419954),
+    r = n(780964),
+    o = n(788868);
+let d = [{
         id: "none",
         label: "Non-Nitro",
         value: 0
     }, {
         id: "tier_0",
         label: "Nitro Basic",
-        value: u.PremiumTypes.TIER_0
+        value: o.PremiumTypes.TIER_0
     }, {
         id: "tier_1",
         label: "Nitro Classic",
-        value: u.PremiumTypes.TIER_1
+        value: o.PremiumTypes.TIER_1
     }, {
         id: "tier_2",
         label: "Nitro Standard",
-        value: u.PremiumTypes.TIER_2
+        value: o.PremiumTypes.TIER_2
     }],
-    d = (0, a.Hn)(r.X.PREMIUM_TYPE_OVERRIDE, {
+    c = (0, a.Hn)(r.X.PREMIUM_TYPE_OVERRIDE, {
         useTitle: () => "Premium Type Override",
         useSearchTerms: () => ["nitro override"],
         useSubtitle: () => "Overrides the client's local premium type.",
-        useOptions: () => o,
+        useOptions: () => d,
         clearable: !0,
-        useValue: () => (0, n.bG)([s.A], () => {
-            let t = s.A.getPremiumTypeOverride();
-            return null === t ? 0 : t
+        useValue: () => (0, i.bG)([l.A], () => {
+            let e = l.A.getPremiumTypeOverride();
+            return null === e ? 0 : e
         }),
-        setValue: t => {
-            0 === t ? (0, l.O)(null, void 0) : null === t ? (0, l.O)(void 0, void 0) : (0, l.O)(0 === t ? null : t, void 0)
+        setValue: e => {
+            0 === e ? (0, s.O)(null, void 0) : null === e ? (0, s.O)(void 0, void 0) : (0, s.O)(0 === e ? null : e, void 0)
         }
     })

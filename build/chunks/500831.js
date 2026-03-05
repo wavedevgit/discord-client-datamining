@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(932340),
     _ = n(733738),
     m = n(871432),
-    p = n(352306),
-    g = n(817199),
+    g = n(352306),
+    p = n(817199),
     E = n(540177),
     I = n(898642),
     f = n(558416),
@@ -57,7 +57,7 @@ let G = (0, l.v)(() => ({
             location: "HeaderBar"
         }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), G = (0, O.Uk)("VoiceDareTitleBarButton"), k = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), V = null !== e && t === N.RK.TITLE_BAR_LEFT, B = null === e, {
             enabled: H
-        } = p.s.useConfig({
+        } = g.s.useConfig({
             location: "AppTitleBar"
         });
         r.useLayoutEffect(() => {
@@ -94,7 +94,7 @@ let G = (0, l.v)(() => ({
                     trailing: (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(m.A, {
                             className: U.x
-                        }), G ? (0, i.jsx)(L.A, {}) : null, H && (0, i.jsx)(g.A, {
+                        }), G ? (0, i.jsx)(L.A, {}) : null, H && (0, i.jsx)(p.A, {
                             className: U.x
                         }), (0, i.jsx)(h.A, {
                             canShowReminder: !0,

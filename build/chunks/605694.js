@@ -31,9 +31,9 @@ var i = n(627968),
     C = n(961350),
     k = n(760751),
     R = n(403362),
-    w = n(183555),
-    L = n(622543),
-    O = n(466853),
+    L = n(183555),
+    O = n(622543),
+    w = n(466853),
     D = n(985018),
     P = n(442716);
 let G = /{{(.*?)}}/g,
@@ -473,7 +473,7 @@ let Z = Object.assign(function(e) {
     var t, n;
     let a, r, g, h, j, {
             trackUserProfileAction: v
-        } = (0, w.NJ)(),
+        } = (0, L.NJ)(),
         {
             user: E,
             widget: T,
@@ -539,7 +539,7 @@ let Z = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = E.id, n = T.applicationId, a = (0, p.A)(), r = (0, d.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, d.bG)([L.A], () => L.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([y.A, L.A], () => null == y.A.getUserIdentities(t) || null == L.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = E.id, n = T.applicationId, a = (0, p.A)(), r = (0, d.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), g = (0, d.bG)([O.A], () => O.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([y.A, O.A], () => null == y.A.getUserIdentities(t) || null == O.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == g) return null;
             let n = M[g.widgetTemplateId];
@@ -613,7 +613,7 @@ let Z = Object.assign(function(e) {
             hasData: null != r,
             components: j
         });
-    return null == er ? null : (0, i.jsxs)(O.A, {
+    return null == er ? null : (0, i.jsxs)(w.A, {
         ...e,
         userId: E.id,
         widget: T,

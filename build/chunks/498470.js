@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(232582),
     s = n(532794),
-    a = n(976860),
-    l = n(788868),
+    l = n(976860),
+    a = n(788868),
     r = n(652215);
 
 function o(e) {
@@ -13,16 +13,16 @@ function o(e) {
         buttonAction: t,
         analyticsLocations: n = [],
         analyticsLocation: o,
-        onClose: c
+        onClose: d
     } = e;
     switch (t) {
         case i.dz.OPEN_MARKETING_PAGE:
             return () => {
-                (0, a.pX)(r.BVt.APPLICATION_STORE), c?.()
+                (0, l.pX)(r.BVt.APPLICATION_STORE), d?.()
             };
         case i.dz.OPEN_TIER_1_PAYMENT_MODAL:
             return () => (0, s.A)({
-                subscriptionTier: l.pe.TIER_1,
+                subscriptionTier: a.pe.TIER_1,
                 analyticsLocations: n,
                 analyticsObject: {
                     ...o,
@@ -30,7 +30,7 @@ function o(e) {
                     objectType: r.AnalyticsObjectTypes.TIER_1
                 },
                 onClose: e => {
-                    e && c?.()
+                    e && d?.()
                 }
             });
         case i.dz.OPEN_PLAN_SELECTION_MODAL:
@@ -41,7 +41,7 @@ function o(e) {
         case i.dz.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
         default:
             return () => (0, s.A)({
-                subscriptionTier: l.pe.TIER_2,
+                subscriptionTier: a.pe.TIER_2,
                 analyticsLocations: n,
                 analyticsObject: {
                     ...o,
@@ -49,7 +49,7 @@ function o(e) {
                     objectType: r.AnalyticsObjectTypes.TIER_2
                 },
                 onClose: e => {
-                    e && c?.()
+                    e && d?.()
                 }
             })
     }

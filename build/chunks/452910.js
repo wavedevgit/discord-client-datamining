@@ -1,67 +1,67 @@
 /** chunk id: 452910, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(421380),
+    l = n.n(s),
+    a = n(421380),
     r = n(927578),
     o = n(545334),
-    c = n(422936),
-    d = n(234419),
+    d = n(422936),
+    c = n(234419),
     u = n(396375),
     _ = n(543233),
-    m = n(76707),
-    A = n(788868),
-    g = n(985018),
+    g = n(76707),
+    m = n(788868),
+    A = n(985018),
     h = n(296388);
-let x = e => {
+let p = e => {
     let {
         title: t,
         titleClassName: n,
         buttonClassName: s,
-        subtitle: x,
-        description: p,
+        subtitle: p,
+        description: x,
         descriptionCta: E,
-        isPremiumGetCta: C,
-        onCtaClick: T,
-        cardVariant: S
-    } = e, I = (0, d.V)(), f = I?.subscription_trial, N = (0, c.O)(), b = (0, r.FY)({
+        isPremiumGetCta: T,
+        onCtaClick: S,
+        cardVariant: C
+    } = e, I = (0, c.V)(), f = I?.subscription_trial, b = (0, d.O)(), N = (0, r.FY)({
         intervalType: f?.interval,
         intervalCount: f?.interval_count
-    }), j = (0, o.G)({
-        defaultResponse: g.intl.string(g.t["8x0jKT"]),
-        onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
-        onTier2TrialOffer: b,
-        onTier0TrialOffer: b,
-        onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
-            percent: N?.discount.amount
+    }), v = (0, o.G)({
+        defaultResponse: A.intl.string(A.t["8x0jKT"]),
+        onNonTier2Subscriber: A.intl.string(A.t.IJI7yk),
+        onTier2TrialOffer: N,
+        onTier0TrialOffer: N,
+        onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
+            percent: b?.discount.amount
         })
-    }), v = (0, _.Q)(S);
+    }), j = (0, _.Q)(C);
     return (0, i.jsxs)("div", {
-        className: a()(h.L_, v?.overlayContainer?.className),
-        children: [(0, i.jsx)(m.A, {
+        className: l()(h.L_, j?.overlayContainer?.className),
+        children: [(0, i.jsx)(g.A, {
             title: t,
-            cardVariantStyleInfo: v,
+            cardVariantStyleInfo: j,
             titleClassName: n,
-            subtitle: x,
-            description: p,
+            subtitle: p,
+            description: x,
             isOverlay: !0
-        }), C && (0, i.jsx)(u.A, {
+        }), T && (0, i.jsx)(u.A, {
             className: s,
-            look: l.$n.Looks.BLANK,
-            color: l.$n.Colors.CUSTOM,
-            subscriptionTier: A.pe.TIER_2,
+            look: a.$n.Looks.BLANK,
+            color: a.$n.Colors.CUSTOM,
+            subscriptionTier: m.pe.TIER_2,
             textOptions: {
-                textOverride: j
+                textOverride: v
             },
             showGradient: !0
-        }), null != E && null != T && (0, i.jsx)(l.$n, {
+        }), null != E && null != S && (0, i.jsx)(a.$n, {
             "data-migration-pending": !0,
             className: s,
-            onClick: T,
+            onClick: S,
             children: E
         })]
     })

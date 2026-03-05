@@ -1,40 +1,29 @@
-/** chunk id: 883967, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    J: () => g
+/** chunk id: 883967, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    J: () => _
 });
-var n = i(934551),
-    l = i(824552),
-    s = i(419954),
-    a = i(780964),
-    r = i(358776),
-    u = i(891912),
-    o = i(993470),
-    d = i(531525),
-    A = i(985018);
-let T = (0, s.zZ)(a.X.AUTHORIZED_APPS_CATEGORY, {
+var i = n(934551),
+    s = n(824552),
+    l = n(419954),
+    a = n(780964),
+    r = n(891912),
+    o = n(993470),
+    d = n(985018);
+let c = (0, l.zZ)(a.X.AUTHORIZED_APPS_CATEGORY, {
         buildLayout: () => [o.C],
-        initialize: () => (l.A.fetch(), () => {
-            u.iU.setState({
+        initialize: () => (s.A.fetch(), () => {
+            r.iU.setState({
                 searchQuery: ""
             })
         })
     }),
-    S = (0, s.t_)(a.X.AUTHORIZED_APPS_PANEL, {
-        usePredicate: () => !(0, r.dk)("LegacyAuthorizedAppsPanel"),
-        useTitle: () => A.intl.string(A.t["f6kk+r"]),
+    u = (0, l.t_)(a.X.AUTHORIZED_APPS_PANEL, {
+        useTitle: () => d.intl.string(d.t["f6kk+r"]),
         hideInStreamerMode: !0,
-        StronglyDiscouragedCustomComponent: u.Ay,
-        buildLayout: () => []
+        buildLayout: () => [c]
     }),
-    E = (0, s.t_)(a.X.AUTHORIZED_APPS_PANEL, {
-        usePredicate: () => (0, r.dk)("AuthorizedAppsPanel"),
-        useTitle: () => A.intl.string(A.t["f6kk+r"]),
-        hideInStreamerMode: !0,
-        buildLayout: () => [T]
-    }),
-    g = (0, s.i4)(a.X.AUTHORIZED_APPS_SIDEBAR_ITEM, {
-        useTitle: () => A.intl.string(A.t["f6kk+r"]),
-        getLegacySearchKey: () => (0, r.WJ)("AuthorizedAppsPanel") ? void 0 : d.H.AUTHORIZED_APPS,
-        icon: n.AppsIcon,
-        buildLayout: () => (0, r.WJ)("AuthorizedAppsPanel") ? [E] : [S]
+    _ = (0, l.i4)(a.X.AUTHORIZED_APPS_SIDEBAR_ITEM, {
+        useTitle: () => d.intl.string(d.t["f6kk+r"]),
+        icon: i.AppsIcon,
+        buildLayout: () => [u]
     })

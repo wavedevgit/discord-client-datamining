@@ -1,39 +1,39 @@
 /** chunk id: 185955, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => S
 }), n(321073);
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(843282),
+    l = n(311907),
+    a = n(843282),
     r = n(397927),
     o = n(915089),
-    c = n(145497),
-    d = n(685073),
+    d = n(145497),
+    c = n(685073),
     u = n(534400),
     _ = n(128450),
-    m = n(193658),
-    A = n(287809),
-    g = n(581781),
+    g = n(193658),
+    m = n(287809),
+    A = n(581781),
     h = n(743981),
-    x = n(355097),
-    p = n(985018),
+    p = n(355097),
+    x = n(985018),
     E = n(86267);
-let C = (0, o.Ld)(),
-    T = s.memo(function(e) {
+let T = (0, o.Ld)(),
+    S = s.memo(function(e) {
         let {
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, T = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), S = (0, a.bG)([A.default], () => (0, d.Zo)(A.default.getCurrentUser()?.primaryGuild).guildId), I = void 0 !== n ? n : S, f = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, l.bG)([m.default], () => (0, c.Zo)(m.default.getCurrentUser()?.primaryGuild).guildId), I = void 0 !== n ? n : C, f = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
-        }), e), []), [t]), N = s.useCallback(e => {
+        }), e), []), [t]), b = s.useCallback(e => {
             if (null == e) return null;
-            let t = T.get(e.value);
+            let t = S.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
-            return null == n ? null : (0, i.jsx)(g.A, {
+            return null == n ? null : (0, i.jsx)(A.A, {
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
                 guildId: t.id,
@@ -41,19 +41,19 @@ let C = (0, o.Ld)(),
                 guildIcon: t.icon,
                 guildIconSize: 32
             })
-        }, [T]), b = s.useCallback(e => {
+        }, [S]), N = s.useCallback(e => {
             if (null == e) return null;
-            let t = T.get(e.value);
-            return null == t || null == t.profile?.tag ? null : (0, i.jsx)(c.j, {
+            let t = S.get(e.value);
+            return null == t || null == t.profile?.tag ? null : (0, i.jsx)(d.j, {
                 guildId: t.id,
                 guildName: t.name,
                 guildIcon: t.icon,
                 iconSize: 32,
                 animate: !1
             })
-        }, [T]), j = s.useCallback(e => {
+        }, [S]), v = s.useCallback(e => {
             if (null == e) return null;
-            let t = T.get(e.value);
+            let t = S.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
             return null == n ? null : (0, i.jsx)(u.o9, {
@@ -64,33 +64,33 @@ let C = (0, o.Ld)(),
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
-        }, [T]), v = s.useCallback(e => {
+        }, [S]), j = s.useCallback(e => {
             let t = e[0];
             return null == t ? null : (0, i.jsx)(i.Fragment, {
-                children: N(t)
+                children: b(t)
             })
-        }, [N]), O = s.useCallback(e => {
+        }, [b]), O = s.useCallback(e => {
             o?.(e)
         }, [o]), R = s.useCallback(e => e === I, [I]), y = s.useCallback(e => e, []), P = s.useCallback(() => {
             o?.(null)
         }, [o]), L = s.useRef(null);
-        return (0, m.A)(L, x._F.GUILD_TAG), (0, i.jsxs)(_.A, {
-            title: p.intl.string(p.t.Pdd1nd),
-            titleId: C,
+        return (0, g.A)(L, p._F.GUILD_TAG), (0, i.jsxs)(_.A, {
+            title: x.intl.string(x.t.Pdd1nd),
+            titleId: T,
             ref: L,
             children: [(0, i.jsx)(r.Text, {
                 className: E.VA,
                 variant: "text-sm/normal",
-                children: p.intl.string(p.t.mlZ6Jx)
-            }), (0, i.jsx)(l.Pw, {
+                children: x.intl.string(x.t.mlZ6Jx)
+            }), (0, i.jsx)(a.Pw, {
                 className: E.Lt,
                 optionClassName: E.S0,
                 isSelected: R,
                 options: f,
                 select: O,
-                renderLeading: b,
-                renderTrailing: j,
-                renderOptionValue: v,
+                renderLeading: N,
+                renderTrailing: v,
+                renderOptionValue: j,
                 serialize: y,
                 clear: P,
                 clearable: null != I,

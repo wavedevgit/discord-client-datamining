@@ -1,46 +1,46 @@
 /** chunk id: 863156, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     s = n(503698),
-    a = n.n(s),
-    l = n(397927),
+    l = n.n(s),
+    a = n(397927),
     r = n(899728),
     o = n(88001),
-    c = n(183954);
+    d = n(183954);
 
-function d(e) {
+function c(e) {
     let {
         className: t,
         premiumGroupRole: n
     } = e, s = (0, r.A)(n, !0);
     if (null == s) return null;
     let {
-        subheaderString: d,
+        subheaderString: c,
         bodyString: u
     } = s;
     return (0, i.jsxs)("div", {
-        className: a()(c.kL, t),
-        children: [(0, i.jsxs)(l.BJc, {
+        className: l()(d.kL, t),
+        children: [(0, i.jsxs)(a.BJc, {
             direction: "horizontal",
             gap: 8,
             align: "center",
-            className: c.wx,
-            children: [(0, i.jsx)(l.Heading, {
+            className: d.wx,
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "display-md",
-                className: c.Ss,
+                className: d.Ss,
                 children: (0, o.DP)()
-            }), (0, i.jsx)(l.Exy, {
+            }), (0, i.jsx)(a.Exy, {
                 type: "beta",
                 variant: "expressive"
             })]
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-md/medium",
-            className: c.m_,
+            className: d.m_,
             color: "text-default",
-            children: d
-        }), (0, i.jsx)(l.Text, {
+            children: c
+        }), (0, i.jsx)(a.Text, {
             variant: "text-md/medium",
             color: "text-default",
             children: u

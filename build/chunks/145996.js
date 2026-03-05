@@ -1,29 +1,29 @@
 /** chunk id: 145996, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => c
 });
 var l = n(627968);
 n(64700);
 var a = n(311907),
-    i = n(397927),
-    r = n(463259),
+    r = n(397927),
+    i = n(463259),
     s = n(287809),
     d = n(985018),
     o = n(395618);
-let u = e => {
+let c = e => {
     let {
         widget: t,
         userId: n
-    } = e, u = (0, a.bG)([s.default], () => s.default.getUser(n));
-    return null == u ? null : (0, l.jsxs)("div", {
+    } = e, c = (0, a.bG)([s.default], () => s.default.getUser(n));
+    return null == c ? null : (0, l.jsxs)("div", {
         className: o.k,
-        children: [(0, l.jsx)(i.Heading, {
+        children: [(0, l.jsx)(r.Heading, {
             className: o.w,
             variant: "heading-sm/semibold",
             children: d.intl.string(d.t.SpsnDY)
-        }), (0, l.jsx)(r.u, {
+        }), (0, l.jsx)(i.u, {
             widget: t,
-            user: u,
+            user: c,
             disableInteraction: !0
         })]
     })

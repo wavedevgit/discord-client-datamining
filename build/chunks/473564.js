@@ -1,17 +1,17 @@
-/** chunk id: 473564, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    L: () => A
+/** chunk id: 473564, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    L: () => u
 });
-var n = i(419954),
-    l = i(890164),
-    s = i(780964),
-    a = i(64878),
-    r = i(953701),
-    u = i(24874),
-    o = i(985018),
-    d = i(536482);
-let A = (0, n.zZ)(s.X.ACTIVITY_PRIVACY_PER_GUILD_CATEGORY, {
-    useTitle: () => (0, l.lX)("GuildActivitySharingCategory") ? o.intl.string(o.t.VDcvrR) : o.intl.string(d.default["1PougL"]),
-    useSubtitle: () => (0, l.lX)("GuildActivitySharingCategory") ? o.intl.string(o.t["/Go08F"]) : o.intl.string(d.default.OO17Lg),
-    buildLayout: () => [r.I, u.F, a.U]
+var i = n(419954),
+    s = n(890164),
+    l = n(780964),
+    a = n(64878),
+    r = n(953701),
+    o = n(24874),
+    d = n(985018),
+    c = n(536482);
+let u = (0, i.zZ)(l.X.ACTIVITY_PRIVACY_PER_GUILD_CATEGORY, {
+    useTitle: () => (0, s.lX)("GuildActivitySharingCategory") ? d.intl.string(d.t.VDcvrR) : d.intl.string(c.default["1PougL"]),
+    useSubtitle: () => (0, s.lX)("GuildActivitySharingCategory") ? d.intl.string(d.t["/Go08F"]) : d.intl.string(c.default.OO17Lg),
+    buildLayout: () => [r.I, o.F, a.U]
 })

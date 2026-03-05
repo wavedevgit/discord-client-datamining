@@ -30,7 +30,7 @@ let m = [{
 }];
 
 function h() {
-    let [e, t] = i.useState(null), [n, h] = i.useState(0), [p, x] = i.useState(1e3), [g, _] = i.useState(0), f = (0, s.bG)([d.A], () => null === e ? null : d.A.getFeedbackConfig(c.MW[e]) ?? o.u[c.MW[e]]), b = Object.entries(c.MW), v = b.slice(b.length / 2).map(e => {
+    let [e, t] = i.useState(null), [n, h] = i.useState(0), [x, p] = i.useState(1e3), [g, _] = i.useState(0), f = (0, s.bG)([d.A], () => null === e ? null : d.A.getFeedbackConfig(c.MW[e]) ?? o.u[c.MW[e]]), v = Object.entries(c.MW), b = v.slice(v.length / 2).map(e => {
         let [t] = e;
         return {
             id: t,
@@ -44,7 +44,7 @@ function h() {
             gap: 32,
             children: [(0, a.jsx)(l.l6P, {
                 label: "Feedback Survey",
-                options: v,
+                options: b,
                 value: e,
                 onSelectionChange: t,
                 placeholder: "Select Feedback Survey",
@@ -83,8 +83,8 @@ function h() {
                         label: "Override cooldown duration type",
                         hideLabel: !0,
                         options: m,
-                        value: p,
-                        onSelectionChange: x,
+                        value: x,
+                        onSelectionChange: p,
                         selectionMode: "single",
                         fullWidth: !0
                     })]
@@ -116,7 +116,7 @@ function h() {
                     onClick: () => void(null != f && r.h.dispatch({
                         type: "FEEDBACK_OVERRIDE_SET",
                         feedbackType: f.feedbackType,
-                        cooldown: n * p,
+                        cooldown: n * x,
                         chance: g / 100
                     })),
                     disabled: !j

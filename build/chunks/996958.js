@@ -1,6 +1,6 @@
 /** chunk id: 996958, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 }), n(323874), n(14289), n(35956);
 var a = n(627968),
     i = n(64700),
@@ -13,20 +13,20 @@ var a = n(627968),
     u = n(581057),
     m = n(270704),
     h = n(369496),
-    p = n(565832),
-    x = n(622697),
+    x = n(565832),
+    p = n(622697),
     g = n(259059),
     _ = n(698638),
     f = n(465692);
 
-function b() {
-    let [e, t] = (0, i.useState)(!1), [n, s] = (0, i.useState)(!1), [r, c] = (0, i.useState)(null), p = (0, u.Ay)(e => e.toolsCache), {
+function v() {
+    let [e, t] = (0, i.useState)(!1), [n, s] = (0, i.useState)(!1), [r, c] = (0, i.useState)(null), x = (0, u.Ay)(e => e.toolsCache), {
         setToolsCache: g,
-        removeToolsCache: b
+        removeToolsCache: v
     } = (0, u.DE)(), {
-        setImgCache: T
-    } = (0, u.TW)(), y = (0, i.useCallback)(e => {
-        let t = p[e];
+        setImgCache: y
+    } = (0, u.TW)(), T = (0, i.useCallback)(e => {
+        let t = x[e];
         null != t ? c({
             previewToolKey: t.url,
             palette: t.palette
@@ -37,14 +37,14 @@ function b() {
             ...t,
             previewToolKey: e
         })
-    }, [p]), S = (0, i.useCallback)(e => {
+    }, [x]), S = (0, i.useCallback)(e => {
         c(t => null == t ? null : {
             ...t,
             palette: e
         })
     }, []), E = (0, i.useCallback)(e => {
-        b(e)
-    }, [b]);
+        v(e)
+    }, [v]);
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)("div", {
             className: f.ne,
@@ -67,7 +67,7 @@ function b() {
                 })]
             }), (0, a.jsxs)("div", {
                 className: f.uQ,
-                children: [e && (0, a.jsx)(d.Ix, {}), n && (0, a.jsx)(x.A, {
+                children: [e && (0, a.jsx)(d.Ix, {}), n && (0, a.jsx)(p.A, {
                     selected: r?.palette?.name,
                     onSelect: e => {
                         r?.previewToolKey != null && g(r.previewToolKey, r.previewToolKey, e), S(e)
@@ -76,7 +76,7 @@ function b() {
             })]
         }), (0, a.jsxs)("div", {
             className: f.iW,
-            children: [(0, a.jsx)(v, {
+            children: [(0, a.jsx)(b, {
                 nameplate: r
             }, r?.palette?.name), (0, a.jsxs)("div", {
                 className: f.Uo,
@@ -91,17 +91,17 @@ function b() {
                         let t = URL.createObjectURL(e[0]),
                             n = e[0],
                             a = await n.arrayBuffer();
-                        T(t, t, (0, h.nI)(a)), g(t, t, m.Wj)
+                        y(t, t, (0, h.nI)(a)), g(t, t, m.Wj)
                     }
                 }), (0, a.jsx)("div", {
                     className: f.is,
-                    children: Object.values(p).map(e => {
+                    children: Object.values(x).map(e => {
                         let {
                             url: t
                         } = e;
                         return (0, a.jsx)(j, {
                             src: t,
-                            onSetStatic: y,
+                            onSetStatic: T,
                             removeAsset: E
                         }, t)
                     })
@@ -121,7 +121,7 @@ function b() {
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         nameplate: t
     } = e, [n, s] = (0, i.useState)(320), r = (0, i.useRef)(null), o = (0, i.useRef)(null), d = (0, i.useRef)(null), c = (0, i.useRef)(document), u = (0, i.useCallback)(e => {
@@ -155,12 +155,12 @@ function v(e) {
             children: [(0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "Memberlist"
-            }), (0, a.jsx)(T, {
+            }), (0, a.jsx)(y, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "DMs"
-            }), (0, a.jsx)(y, {
+            }), (0, a.jsx)(T, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
@@ -248,7 +248,7 @@ function C(e) {
     })
 }
 
-function T(e) {
+function y(e) {
     let {
         nameplate: t
     } = e, n = (0, s.bG)([c.default], () => c.default.getCurrentUser());
@@ -284,7 +284,7 @@ function T(e) {
     })
 }
 
-function y(e) {
+function T(e) {
     let {
         nameplate: t
     } = e;
@@ -322,7 +322,7 @@ function S(e) {
         className: f.VH,
         children: (0, a.jsx)("div", {
             className: f.X2,
-            children: (0, a.jsx)(p.A, {
+            children: (0, a.jsx)(x.A, {
                 nameplate: t
             })
         })

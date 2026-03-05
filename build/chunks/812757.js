@@ -1,41 +1,41 @@
-/** chunk id: 812757, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    t: () => _
+/** chunk id: 812757, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    t: () => p
 });
-var n = i(627968),
-    l = i(64700),
-    s = i(284009),
-    a = i.n(s),
-    r = i(311907),
-    u = i(397927),
-    o = i(97260),
-    d = i(117178),
-    A = i(419954),
-    T = i(532624),
-    S = i(780964),
-    E = i(652215),
-    g = i(985018),
-    c = i(280973);
-let _ = (0, A.E2)(S.X.CLIPS_KEYBIND, {
-    useSearchTerms: () => [g.intl.string(g.t.pf54EU), g.intl.string(g.t["QyB/jK"])],
+var i = n(627968),
+    s = n(64700),
+    l = n(284009),
+    a = n.n(l),
+    r = n(311907),
+    o = n(397927),
+    d = n(97260),
+    c = n(117178),
+    u = n(419954),
+    _ = n(532624),
+    g = n(780964),
+    m = n(652215),
+    A = n(985018),
+    h = n(280973);
+let p = (0, u.E2)(g.X.CLIPS_KEYBIND, {
+    useSearchTerms: () => [A.intl.string(A.t.pf54EU), A.intl.string(A.t["QyB/jK"])],
     Component: () => {
-        let t = (0, r.bG)([T.Ay], () => T.Ay.getKeybindForAction(E.hCu.SAVE_CLIP, !0));
-        a()(null != t, "Save clip keybind unset");
-        let e = l.useCallback(e => {
-            o.A.setKeybind({
-                ...t,
-                shortcut: e
+        let e = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(m.hCu.SAVE_CLIP, !0));
+        a()(null != e, "Save clip keybind unset");
+        let t = s.useCallback(t => {
+            d.A.setKeybind({
+                ...e,
+                shortcut: t
             })
-        }, [t]);
-        return (0, n.jsx)(u.D0$, {
-            label: g.intl.string(g.t.pf54EU),
-            description: g.intl.string(g.t["QyB/jK"]),
+        }, [e]);
+        return (0, i.jsx)(o.D0$, {
+            label: A.intl.string(A.t.pf54EU),
+            description: A.intl.string(A.t["QyB/jK"]),
             layout: "horizontal",
-            children: (0, n.jsx)("div", {
-                className: c.g,
-                children: (0, n.jsx)(d.A, {
-                    defaultValue: t.shortcut,
-                    onChange: e
+            children: (0, i.jsx)("div", {
+                className: h.g,
+                children: (0, i.jsx)(c.A, {
+                    defaultValue: e.shortcut,
+                    onChange: t
                 })
             })
         })

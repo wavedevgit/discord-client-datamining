@@ -1,27 +1,27 @@
-/** chunk id: 456518, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    T: () => d
+/** chunk id: 456518, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    T: () => c
 });
-var n = i(704591),
-    l = i(419954),
-    s = i(954571),
-    a = i(253932),
-    r = i(780964),
-    u = i(652215),
-    o = i(985018);
-let d = (0, l.zD)(r.X.CHAT_SOUNDMOJI_AUTOCOMPLETE, {
-    useTitle: () => o.intl.string(o.t["CtYr+U"]),
-    useSubtitle: () => o.intl.string(o.t.hrSIhN),
+var i = n(704591),
+    s = n(419954),
+    l = n(954571),
+    a = n(253932),
+    r = n(780964),
+    o = n(652215),
+    d = n(985018);
+let c = (0, s.zD)(r.X.CHAT_SOUNDMOJI_AUTOCOMPLETE, {
+    useTitle: () => d.intl.string(d.t["CtYr+U"]),
+    useSubtitle: () => d.intl.string(d.t.hrSIhN),
     useValue: a.eK.useSetting,
-    setValue: t => {
-        s.default.track(u.HAw.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
-            checked: t,
+    setValue: e => {
+        l.default.track(o.HAw.SOUNDMOJI_IN_AUTOCOMPLETE_TOGGLED, {
+            checked: e,
             location: {
-                section: u.JJy.SETTINGS_TEXT_AND_IMAGES
+                section: o.JJy.SETTINGS_TEXT_AND_IMAGES
             }
-        }), a.eK.updateSetting(t)
+        }), a.eK.updateSetting(e)
     },
-    usePredicate: () => (0, n.AA)({
+    usePredicate: () => (0, i.AA)({
         location: "SoundmojiAutocomplete"
     })
 })

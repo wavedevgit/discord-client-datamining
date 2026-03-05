@@ -1,22 +1,22 @@
-/** chunk id: 269420, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    K: () => _
+/** chunk id: 269420, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    K: () => p
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(907218),
-    a = i(311453),
-    r = i(812757),
-    u = i(424305),
-    o = i(256199),
-    d = i(229823),
-    A = i(53825),
-    T = i(544727),
-    S = i(298648),
-    E = i(782e3),
-    g = i(509725),
-    c = i(985018);
-let _ = (0, n.zZ)(l.X.CLIPS_RECORDING_CATEGORY, {
-    useTitle: () => c.intl.string(c.t.iIwmV5),
-    buildLayout: () => [o.e, a.X, S.T, E.B, g.Z, u.R, d.j, s.k, r.t, A.N, T.$]
+var i = n(419954),
+    s = n(780964),
+    l = n(907218),
+    a = n(311453),
+    r = n(812757),
+    o = n(424305),
+    d = n(256199),
+    c = n(229823),
+    u = n(53825),
+    _ = n(544727),
+    g = n(298648),
+    m = n(782e3),
+    A = n(509725),
+    h = n(985018);
+let p = (0, i.zZ)(s.X.CLIPS_RECORDING_CATEGORY, {
+    useTitle: () => h.intl.string(h.t.iIwmV5),
+    buildLayout: () => [d.e, a.X, g.T, m.B, A.Z, o.R, c.j, l.k, r.t, u.N, _.$]
 })

@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(151252),
     _ = n(859703),
     m = n(341915),
-    p = n(579473),
-    g = n(561844),
+    g = n(579473),
+    p = n(561844),
     E = n(590202),
     I = n(415441),
     f = n(73473),
@@ -32,7 +32,7 @@ function y(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, l = r.useMemo(() => (null != n ? (0, p.WV)(n.url) : null) ?? t.url, [n, t]);
+    } = e, l = r.useMemo(() => (null != n ? (0, g.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: v.Tv,
         children: [(0, i.jsx)("div", {
@@ -73,7 +73,7 @@ function y(e) {
                     className: v.LY,
                     asset: {
                         url: l,
-                        mimetype: (0, p.vm)(l),
+                        mimetype: (0, g.vm)(l),
                         isAnimated: !1
                     },
                     assetId: l
@@ -83,7 +83,7 @@ function y(e) {
                     className: v.LY,
                     asset: {
                         url: n.url,
-                        mimetype: (0, p.vm)(n.url),
+                        mimetype: (0, g.vm)(n.url),
                         isAnimated: !0
                     },
                     assetId: n.url
@@ -97,7 +97,7 @@ function b(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, s.zy)(), p = (0, s.W6)(), {
+    } = e, l = (0, s.zy)(), g = (0, s.W6)(), {
         enabled: I
     } = (0, h.Z)({
         location: N.rE.QUEST_HOME_DESKTOP
@@ -161,7 +161,7 @@ function b(e) {
                         }), (0, i.jsxs)(c.ButtonGroup, {
                             children: [(0, i.jsx)(c.Button, {
                                 onClick: () => {
-                                    (0, A.A)(t.ctaSponsorUrl.url), (0, g.vK)({
+                                    (0, A.A)(t.ctaSponsorUrl.url), (0, p.vK)({
                                         adContentId: t.campaignId,
                                         adCreativeType: o.p.QUEST_HOME_HERO,
                                         questContent: m.uF.QUEST_HOME_HERO,
@@ -174,14 +174,14 @@ function b(e) {
                                 variant: "overlay-primary"
                             }), t.ctaQuests.map((e, r) => P.has(e.questId) ? (0, i.jsx)(c.Button, {
                                 onClick: () => {
-                                    p.replace({
+                                    g.replace({
                                         ...l,
                                         hash: void 0
                                     }), n?.(), window.requestIdleCallback(() => {
                                         (0, C.navigateToQuestHome)({
                                             questId: e.questId
                                         })
-                                    }), (0, g.vK)({
+                                    }), (0, p.vK)({
                                         adContentId: t.campaignId,
                                         adCreativeType: o.p.QUEST_HOME_HERO,
                                         questContent: m.uF.QUEST_HOME_HERO,

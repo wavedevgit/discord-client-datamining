@@ -14,7 +14,7 @@ let {
     "en-GB": () => n.e("51713").then(n.t.bind(n, 578200, 19)),
     "es-419": () => n.e("79913").then(n.t.bind(n, 384368, 19)),
     "es-ES": () => n.e("19757").then(n.t.bind(n, 273596, 19)),
-    fi: () => n.e("69388").then(n.t.bind(n, 808386, 19)),
+    fi: () => n.e("47007").then(n.t.bind(n, 808386, 19)),
     fr: () => n.e("62276").then(n.t.bind(n, 952879, 19)),
     hi: () => n.e("9749").then(n.t.bind(n, 884564, 19)),
     hr: () => n.e("21582").then(n.t.bind(n, 241757, 19)),

@@ -1,32 +1,32 @@
 /** chunk id: 617071, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => u
 });
 var l = n(627968),
     a = n(64700),
-    i = n(857250),
-    r = n(397927),
+    r = n(857250),
+    i = n(397927),
     s = n(899847),
     d = n(662502),
     o = n(632738),
-    u = n(985018);
-let c = e => {
+    c = n(985018);
+let u = e => {
     let {
         parents: t
-    } = e, [n, c] = a.useState(!1), _ = a.useCallback(() => {
+    } = e, [n, u] = a.useState(!1), _ = a.useCallback(() => {
         (0, s.Xz)().then(() => {
-            (0, r.showToast)((0, i.o)(u.intl.formatToPlainString(u.t.wr4IT5, {
+            (0, i.showToast)((0, r.o)(c.intl.formatToPlainString(c.t.wr4IT5, {
                 count: t.length,
                 parent1: t[0].username,
                 parent2: t[1]?.username,
                 parent3: t[2]?.username
-            }), r.ToastType.SUCCESS)), c(!0)
+            }), i.ToastType.SUCCESS)), u(!0)
         }).catch(() => {
             d.A.showFailedToast()
         })
     }, [t]);
     if (0 === t.length) return null;
-    let m = u.intl.formatToPlainString(u.t.HqyWeO, {
+    let m = c.intl.formatToPlainString(c.t.HqyWeO, {
         count: t.length,
         parent1: t[0].username,
         parent2: t[1]?.username,
@@ -34,8 +34,8 @@ let c = e => {
     });
     return (0, l.jsx)(o.PQ, {
         title: m,
-        description: u.intl.string(u.t["5l/hlt"]),
-        buttonText: n ? u.intl.string(u.t.ntuuk7) : u.intl.string(u.t["sYdX/H"]),
+        description: c.intl.string(c.t["5l/hlt"]),
+        buttonText: n ? c.intl.string(c.t.ntuuk7) : c.intl.string(c.t["sYdX/H"]),
         buttonDisabled: n,
         onButtonPress: _
     })

@@ -30,12 +30,12 @@ let x = {
                 rightSubtext: m,
                 rightShowSubtext: x,
                 rightSubtextStrikethrough: b
-            } = e, [g, y] = n.useState(0);
+            } = e, [g, f] = n.useState(0);
             return (0, a.jsxs)("div", {
                 className: h.Cd,
                 children: [(0, a.jsx)(c.q7, {
                     selection: g,
-                    onChange: y,
+                    onChange: f,
                     planOptions: [{
                         id: 0,
                         title: (0, a.jsx)(c.ec, {
@@ -144,7 +144,7 @@ let x = {
         value: e.alpha2,
         label: e.name
     })),
-    y = {
+    f = {
         name: "Modal: Unified Checkout Stateless Modal",
         id: "unified-checkout-stateless-modal",
         component: function(e) {
@@ -260,7 +260,7 @@ let x = {
             }
         }
     },
-    f = {
+    y = {
         purchaseButtonText: "Subscribe",
         totalDue: 999,
         renewalPrice: 1099,
@@ -272,11 +272,11 @@ let x = {
     E = {
         [c.I0.Subscription]: {
             type: c.I0.Subscription,
-            ...f
+            ...y
         },
         [c.I0.SubscriptionTrial]: {
             type: c.I0.SubscriptionTrial,
-            ...f
+            ...y
         },
         [c.I0.OrbsRedemption]: {
             type: c.I0.OrbsRedemption,
@@ -302,7 +302,7 @@ let x = {
     },
     v = {
         title: "Unified Checkout",
-        stories: [y, {
+        stories: [f, {
             name: "Primitive: Order Summary Accordion",
             id: "unified-checkout-order-summary",
             component: e => {

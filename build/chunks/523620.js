@@ -18,7 +18,7 @@ function h(e) {
         targetElementRef: t,
         markAsDismissed: n,
         children: h
-    } = e, p = (0, i.bG)([o.default], () => o.default.getId()), x = (0, i.bG)([l.A], () => l.A.useReducedMotion);
+    } = e, x = (0, i.bG)([o.default], () => o.default.getId()), p = (0, i.bG)([l.A], () => l.A.useReducedMotion);
     return (0, a.jsxs)(a.Fragment, {
         children: [h, (0, a.jsx)(s.AM, {
             targetElementRef: t,
@@ -29,7 +29,7 @@ function h(e) {
             },
             graphic: {
                 type: "image",
-                src: x ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
+                src: p ? "https://cdn.discordapp.com/assets/content/1b55390a202dcca3843b6c9205af0379cfa072f34d8b9217bce04aba4d373e5b.png" : "https://cdn.discordapp.com/assets/content/fdb6d4e8a2f01f917d2025a8ca58ebd55e4eada92df1d5386f73d91d6acad1f9.png"
             },
             position: "top",
             align: "left",
@@ -43,7 +43,7 @@ function h(e) {
                 variant: "primary",
                 onClick: () => {
                     n(u.i.TAKE_ACTION), (0, d.openUserProfileModal)({
-                        userId: p,
+                        userId: x,
                         sourceAnalyticsLocations: [r.A.ACCOUNT],
                         hideRestrictedProfile: !0,
                         tabSection: c.RP.WIDGETS

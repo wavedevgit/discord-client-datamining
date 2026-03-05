@@ -1,34 +1,34 @@
-/** chunk id: 800056, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    r: () => T
+/** chunk id: 800056, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    r: () => _
 });
-var n = i(574381),
-    l = i(311907),
-    s = i(314116),
-    a = i(827343),
-    r = i(77729),
-    u = i(419954),
-    o = i(430452),
-    d = i(780964),
-    A = i(985018);
-let T = (0, u.zD)(d.X.STREAMING_OS_MENU_SCREEN_CAPTURE, {
-    useTitle: () => A.intl.string(A.t.lt8rRx),
-    useSubtitle: () => A.intl.string(A.t.ie1mgY),
+var i = n(574381),
+    s = n(311907),
+    l = n(314116),
+    a = n(827343),
+    r = n(77729),
+    o = n(419954),
+    d = n(430452),
+    c = n(780964),
+    u = n(985018);
+let _ = (0, o.zD)(c.X.STREAMING_OS_MENU_SCREEN_CAPTURE, {
+    useTitle: () => u.intl.string(u.t.lt8rRx),
+    useSubtitle: () => u.intl.string(u.t.ie1mgY),
     useValue: function() {
-        return (0, l.bG)([o.Ay], () => o.Ay.getUseSystemScreensharePicker())
+        return (0, s.bG)([d.Ay], () => d.Ay.getUseSystemScreensharePicker())
     },
-    setValue: function(t) {
-        (0, n.cX)() && t ? (0, s.A)({
-            title: A.intl.string(A.t["9jf31O"]),
-            subtitle: A.intl.string(A.t.uBd6JW),
+    setValue: function(e) {
+        (0, i.cX)() && e ? (0, l.A)({
+            title: u.intl.string(u.t["9jf31O"]),
+            subtitle: u.intl.string(u.t.uBd6JW),
             variant: "primary",
             onConfirm: () => {
-                a.A.setUseSystemScreensharePicker(t), r.A.app.relaunch()
+                a.A.setUseSystemScreensharePicker(e), r.A.app.relaunch()
             },
-            confirmText: A.intl.string(A.t.BddRzS)
-        }) : a.A.setUseSystemScreensharePicker(t)
+            confirmText: u.intl.string(u.t.BddRzS)
+        }) : a.A.setUseSystemScreensharePicker(e)
     },
     usePredicate: function() {
-        return (0, l.bG)([o.Ay], () => o.Ay.supportsSystemScreensharePicker() && (0, n.cX)())
+        return (0, s.bG)([d.Ay], () => d.Ay.supportsSystemScreensharePicker() && (0, i.cX)())
     }
 })

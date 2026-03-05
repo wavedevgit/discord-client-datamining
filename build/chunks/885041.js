@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(956793),
     _ = n(271866),
     m = n(18422),
-    p = n(159084),
-    g = n(775602),
+    g = n(159084),
+    p = n(775602),
     E = n(502229),
     I = n(836753),
     f = n(196492),
@@ -69,8 +69,8 @@ var i = n(627968),
     eh = n(584257),
     e_ = n(64585),
     em = n(281913),
-    ep = n(334116),
-    eg = n(194970),
+    eg = n(334116),
+    ep = n(194970),
     eE = n(414967),
     eI = n(499454),
     ef = n(580960),
@@ -111,8 +111,8 @@ var i = n(627968),
     e1 = n(237631),
     e7 = n(194871),
     e6 = n(856588),
-    e9 = n(612181),
-    e5 = n(723702),
+    e5 = n(612181),
+    e9 = n(723702),
     e2 = n(837921),
     e3 = n(715671),
     e4 = n(652215),
@@ -121,7 +121,7 @@ var i = n(627968),
     tt = n(613057);
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(752319), n(836602), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let tn = !1;
-(0, v.as)(), s.Ay.initialize(), eb.A.loadServer(), e5.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
+(0, v.as)(), s.Ay.initialize(), eb.A.loadServer(), e9.isPlatformEmbedded && (e2.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
     (0, eF.openUserSettings)()
 }), e2.Ay.on("LAUNCH_APPLICATION", (e, t) => {
     let n = eX.A.getActiveLibraryApplication(t);
@@ -134,7 +134,7 @@ let tn = !1;
         }
     })
 }));
-let ti = (0, p.z)(e => {
+let ti = (0, g.z)(e => {
         let {
             location: t
         } = e, n = (0, eH.default)(t.pathname);
@@ -162,7 +162,7 @@ let ti = (0, p.z)(e => {
             })
         })
     }),
-    tr = (0, p.z)(e => {
+    tr = (0, g.z)(e => {
         let {
             location: t
         } = e, r = (0, eA.parsePlaygroundUrl)(t.pathname);
@@ -220,7 +220,7 @@ let ti = (0, p.z)(e => {
             return null
         }
     }),
-    ta = (0, p.z)((0, b.C)(L.A, null, {
+    ta = (0, g.z)((0, b.C)(L.A, null, {
         passProps: !1
     })),
     ts = (0, b.C)(X.default, null, {
@@ -245,7 +245,7 @@ function td(e) {
 let tc = [{
     path: [e4.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e9.wR)() || eq.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eq.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
+        return (0, e5.wR)() || eq.default.getLoginStatus() === e4.aUe.LOGGING_IN || !eq.default.allowLogoutRedirect() ? ta(e) : (0, i.jsx)(N.A, {
             applicationId: e.match.params.applicationId
         })
     }
@@ -517,10 +517,10 @@ class th extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e2.Ay.setZoomFactor(g.A.zoom), eb.A.init(), O.A.initialize(), eg.A.initialize(), W.A.initialize(), eW.A.initialize(), q.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), ep.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
+        e2.Ay.setZoomFactor(p.A.zoom), eb.A.init(), O.A.initialize(), ep.A.initialize(), W.A.initialize(), eW.A.initialize(), q.A.initialize(), ef.A.initialize(), G.A.initialize(), ea.A.initialize(), E.A.init(), z.A.init(), K.A.init(), eu.A.initialize(), S.A.initialize(), B.A.initialize(), eC.A.initialize(), T.Ay.initialize(), H.Ay.initialize(), eY.A.initialize(), ei.Ay.initialize(), eg.A.initialize(), C.A.initialize(), er.A.init(), P.A.init(), e6.A.init(), f.A.initialize(), ew.A.init(), e1.A.init(), ek.A.init(), eP.A.initialize(), ej.A.initialize(), eG.A.initialize(), eB.A.init(), V.A.initialize(), I.A.initialize(), eR.A.initialize(), e_.A.initialize(), eh.A.initialize(), em.A.initialize(), j.A.initialize(), D.A.initialize(), Y.A.initialize(), el.A.initialize(), es.A.initialize(), eT.A.initialize(), eE.A.initialize(), U.A.initialize(), R.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eN.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eN.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eb.A.terminate(), eW.A.terminate(), ef.A.terminate(), eg.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), ep.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eb.A.terminate(), eW.A.terminate(), ef.A.terminate(), ep.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), eg.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e, t) {
         let {

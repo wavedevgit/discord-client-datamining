@@ -1,17 +1,17 @@
-/** chunk id: 385465, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    d: () => d
+/** chunk id: 385465, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    d: () => c
 });
-var n = i(311907),
-    l = i(264686),
-    s = i(419954),
-    a = i(803224),
-    r = i(780964),
-    u = i(652215),
-    o = i(985018);
-let d = (0, s.zD)(r.X.DESKTOP_NOTIFICATIONS, {
-    useTitle: () => o.intl.string(o.t["/0WCll"]),
-    useSubtitle: () => o.intl.string(o.t.wF9ih3),
-    useValue: () => (0, n.bG)([a.A], () => a.A.getDesktopType()) !== u.nRU.NEVER,
-    setValue: t => l.default.setDesktopType(t ? u.nRU.ALL : u.nRU.NEVER)
+var i = n(311907),
+    s = n(264686),
+    l = n(419954),
+    a = n(803224),
+    r = n(780964),
+    o = n(652215),
+    d = n(985018);
+let c = (0, l.zD)(r.X.DESKTOP_NOTIFICATIONS, {
+    useTitle: () => d.intl.string(d.t["/0WCll"]),
+    useSubtitle: () => d.intl.string(d.t.wF9ih3),
+    useValue: () => (0, i.bG)([a.A], () => a.A.getDesktopType()) !== o.nRU.NEVER,
+    setValue: e => s.default.setDesktopType(e ? o.nRU.ALL : o.nRU.NEVER)
 })

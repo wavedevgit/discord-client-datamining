@@ -1,28 +1,28 @@
-/** chunk id: 474447, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 474447, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     A: () => o
 });
-var i = n(573648),
-    l = n(153331),
-    r = n(855511),
-    a = n(652215),
-    s = n(985018);
+var n = i(573648),
+    l = i(153331),
+    r = i(855511),
+    s = i(652215),
+    a = i(985018);
 
-function o(t, e, n) {
+function o(t, e, i) {
     let o = (0, r.A)(t) ?? "",
-        d = e === l.O.VOICE_CHANNEL && n;
+        d = e === l.O.VOICE_CHANNEL && i;
     switch (o) {
-        case a.yTV.PS4:
-        case a.yTV.PS5:
-            return s.intl.formatToPlainString(s.t.A17aM8, {
+        case s.yTV.PS4:
+        case s.yTV.PS5:
+            return a.intl.formatToPlainString(a.t.A17aM8, {
                 platform: o.toUpperCase()
             });
-        case a.yTV.XBOX:
-        case a.yTV.SAMSUNG:
-            return s.intl.formatToPlainString(s.t.A17aM8, {
-                platform: i.A.get(o).name
+        case s.yTV.XBOX:
+        case s.yTV.SAMSUNG:
+            return a.intl.formatToPlainString(a.t.A17aM8, {
+                platform: n.A.get(o).name
             });
         default:
-            return s.intl.string(d ? s.t.J4MQFX : s.t["2TbM/G"])
+            return a.intl.string(d ? a.t.J4MQFX : a.t["2TbM/G"])
     }
 }

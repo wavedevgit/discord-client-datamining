@@ -1,21 +1,21 @@
 /** chunk id: 86689, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    E: () => l
+    E: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(871930);
+    l = n(871930);
 
-function l(e) {
+function a(e) {
     let {
         children: t,
         description: n,
-        setting: l,
+        setting: a,
         scrollPosition: r
     } = e;
-    return (0, i.jsxs)(a.h, {
-        setting: l,
+    return (0, i.jsxs)(l.h, {
+        setting: a,
         scrollPosition: r,
         children: [(0, i.jsx)(s.BJc, {
             gap: 0,

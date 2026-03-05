@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(380278),
-    r = n(158954),
-    a = n(311907),
+    a = n(158954),
+    r = n(311907),
     o = n(397927),
     c = n(736653),
     d = n(793574),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(718019),
     I = n(915614),
     N = n(439053),
-    S = n(312381),
-    b = n(379654),
+    b = n(312381),
+    S = n(379654),
     T = n(946356),
     v = n(490752),
     y = n(587168),
@@ -68,7 +68,7 @@ function k(e) {
         })
     }, $ = B?.widgets != null && B.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, a.cf)([_.A], () => ({
+    } = (0, r.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
@@ -92,11 +92,11 @@ function k(e) {
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
                     themeOverride: H,
-                    privateBanner: B?.private === !0 ? (0, i.jsx)(S.A, {}) : void 0,
+                    privateBanner: B?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
-                    }), (0, i.jsxs)(r.d_W, {
+                    }), (0, i.jsxs)(a.d_W, {
                         children: [(0, i.jsxs)(y.A, {
                             children: [(0, i.jsx)(j.A, {
                                 user: t,
@@ -138,7 +138,7 @@ function k(e) {
                             onOpenProfile: k ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
                             className: w.sJ,
-                            children: (0, i.jsx)(b.A, {
+                            children: (0, i.jsx)(S.A, {
                                 user: t,
                                 widgets: B.widgets,
                                 onOpenUserProfileModal: Q
@@ -178,12 +178,12 @@ let V = e => {
         handleOpenProfile: t,
         analyticsLocations: n,
         context: l
-    } = e, [r, a] = s.useState("interactive-text-default");
+    } = e, [a, r] = s.useState("interactive-text-default");
     return (0, i.jsx)("div", {
         className: w.qr,
         children: (0, i.jsx)(o.DUT, {
-            onMouseEnter: () => a("interactive-text-hover"),
-            onMouseLeave: () => a("interactive-text-default"),
+            onMouseEnter: () => r("interactive-text-hover"),
+            onMouseLeave: () => r("interactive-text-default"),
             onClick: () => {
                 t(), (0, g.Wn)({
                     action: "PRESS_VIEW_PROFILE",
@@ -193,7 +193,7 @@ let V = e => {
             },
             className: w.wC,
             children: (0, i.jsx)(o.Text, {
-                color: r,
+                color: a,
                 variant: "text-sm/normal",
                 children: P.intl.string(P.t["+Xp3hq"])
             })

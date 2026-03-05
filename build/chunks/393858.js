@@ -1,39 +1,39 @@
-/** chunk id: 393858, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    f: () => E
+/** chunk id: 393858, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    f: () => m
 });
-var n = i(574381),
-    l = i(311907),
-    s = i(314116),
-    a = i(827343),
-    r = i(77729),
-    u = i(480862),
-    o = i(729410),
-    d = i(419954),
-    A = i(430452),
-    T = i(780964),
-    S = i(985018);
-let E = (0, d.zD)(T.X.VOICE_AND_VIDEO_OPENH264, {
-    useTitle: () => S.intl.string(S.t.qFphsa),
-    useSubtitle: () => S.intl.string(S.t.cQfwyY),
+var i = n(574381),
+    s = n(311907),
+    l = n(314116),
+    a = n(827343),
+    r = n(77729),
+    o = n(480862),
+    d = n(729410),
+    c = n(419954),
+    u = n(430452),
+    _ = n(780964),
+    g = n(985018);
+let m = (0, c.zD)(_.X.VOICE_AND_VIDEO_OPENH264, {
+    useTitle: () => g.intl.string(g.t.qFphsa),
+    useSubtitle: () => g.intl.string(g.t.cQfwyY),
     usePredicate: function() {
-        if (!(0, n.j9)()) return !1;
-        let t = (0, o.b)({
+        if (!(0, i.j9)()) return !1;
+        let e = (0, d.b)({
                 location: "OpenH264Setting"
             }),
-            e = (0, u.n)({
+            t = (0, o.n)({
                 location: "OpenH264Setting"
             });
-        return t.enabled || e.enabled
+        return e.enabled || t.enabled
     },
     useValue: function() {
-        return (0, l.bG)([A.Ay], () => A.Ay.getOpenH264Enabled())
+        return (0, s.bG)([u.Ay], () => u.Ay.getOpenH264Enabled())
     },
-    setValue: function(t) {
-        a.A.setOpenH264Enabled(t), (0, s.A)({
-            title: S.intl.string(S.t["9jf31O"]),
-            subtitle: S.intl.string(S.t["J2wg+X"]),
-            confirmText: S.intl.string(S.t.BddRzS),
+    setValue: function(e) {
+        a.A.setOpenH264Enabled(e), (0, l.A)({
+            title: g.intl.string(g.t["9jf31O"]),
+            subtitle: g.intl.string(g.t["J2wg+X"]),
+            confirmText: g.intl.string(g.t.BddRzS),
             onConfirm: () => r.A.app.relaunch()
         })
     },

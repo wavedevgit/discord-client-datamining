@@ -23,19 +23,19 @@ function h(e) {
             loadId: t,
             categoryId: Number(e)
         })
-    }, [t]), p = r.useMemo(() => null == h ? [] : h.map(e => {
+    }, [t]), g = r.useMemo(() => null == h ? [] : h.map(e => {
         let [t] = e;
         return t
-    }), [h]), g = (0, o.o)({
-        categoryIds: p
+    }), [h]), p = (0, o.o)({
+        categoryIds: g
     }), E = r.useMemo(() => null == h ? [] : h.map(e => {
         let [t, n] = e;
         return {
             id: `${t}`,
-            name: g[t] ?? "",
+            name: p[t] ?? "",
             count: n
         }
-    }), [h, g]);
+    }), [h, p]);
     return null == h ? null : (0, i.jsxs)("div", {
         className: A.k,
         children: [(0, i.jsx)(l.Text, {

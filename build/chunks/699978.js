@@ -4,11 +4,11 @@ n.d(t, {
 });
 var i = n(735438),
     s = n.n(i),
-    a = n(311907),
-    l = n(787392);
+    l = n(311907),
+    a = n(787392);
 
 function r(e) {
-    return (0, a.yK)([l.A], () => s()(l.A.getUserVerifiedKeys(e)).entries().map(e => {
+    return (0, l.yK)([a.A], () => s()(a.A.getUserVerifiedKeys(e)).entries().map(e => {
         let [t, n] = e;
         return {
             verifiedKey: t,

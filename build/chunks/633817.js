@@ -1,10 +1,10 @@
-/** chunk id: 633817, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 633817, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     I: () => a
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(589061);
-let a = (0, n.zZ)(l.X.PROFILE_CATEGORY, {
-    buildLayout: () => [s.m]
+var i = n(419954),
+    s = n(780964),
+    l = n(589061);
+let a = (0, i.zZ)(s.X.PROFILE_CATEGORY, {
+    buildLayout: () => [l.m]
 })

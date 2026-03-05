@@ -1,152 +1,152 @@
-/** chunk id: 419117, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => E
-}), i(321073);
-var n = i(627968),
-    l = i(64700),
-    s = i(284009),
-    a = i.n(s),
-    r = i(199966),
-    u = i(963935),
-    o = i(985018);
+/** chunk id: 419117, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => m
+}), n(321073);
+var i = n(627968),
+    s = n(64700),
+    l = n(284009),
+    a = n.n(l),
+    r = n(199966),
+    o = n(963935),
+    d = n(985018);
 
-function d(t) {
+function c(e) {
     let {
-        title: e
-    } = t;
-    return e
+        title: t
+    } = e;
+    return t
 }
 
-function A(t) {
+function u(e) {
     let {
-        useTitle: e,
-        settingKey: i,
+        useTitle: t,
+        settingKey: n,
+        formatter: i,
+        index: s
+    } = e, l = t();
+    return "string" == typeof l ? i({
+        title: l,
+        index: s,
+        key: n
+    }) : l
+}
+
+function _(e) {
+    let {
+        setting: t,
         formatter: n,
-        index: l
-    } = t, s = e();
-    return "string" == typeof s ? n({
-        title: s,
-        index: l,
-        key: i
-    }) : s
+        index: s
+    } = e;
+    return () => (0, i.jsx)(u, {
+        useTitle: t.useTitle,
+        settingKey: t.key,
+        formatter: n,
+        index: s
+    }, t.key)
 }
 
-function T(t) {
-    let {
-        setting: e,
-        formatter: i,
-        index: l
-    } = t;
-    return () => (0, n.jsx)(A, {
-        useTitle: e.useTitle,
-        settingKey: e.key,
-        formatter: i,
-        index: l
-    }, e.key)
+function g(e) {
+    return e.type === o.Z6.LIST
 }
 
-function S(t) {
-    return t.type === u.Z6.LIST
-}
-
-function E(t, e) {
+function m(e, t) {
     let {
-        limit: i = 2,
-        formatter: n = d
-    } = e ?? {};
-    a()(i > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
+        limit: n = 2,
+        formatter: i = c
+    } = t ?? {};
+    a()(n > 0, "[useSettingCollapsibleSubtitle] Limit must be greater than 0");
     let {
-        visibleDirectory: s,
-        accessibleDirectory: A
-    } = (0, r._)(), E = s.get(t) ?? A.get(t);
-    a()(null != E && (E.type === u.Z6.ACCORDION || S(E)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
-    let g = S(E) ? E.collapseAfter ?? 0 : 0,
-        c = E.layout;
-    return l.useMemo(() => {
-        let t = g,
-            e = [];
-        for (let i of c)
-            if ("useTitle" in i && null != i.useTitle) {
-                if (t > 0) {
-                    t--;
+        visibleDirectory: l,
+        accessibleDirectory: u
+    } = (0, r._)(), m = l.get(e) ?? u.get(e);
+    a()(null != m && (m.type === o.Z6.ACCORDION || g(m)), "[useSettingCollapsibleSubtitle] Node is not a collapsible settings node");
+    let A = g(m) ? m.collapseAfter ?? 0 : 0,
+        h = m.layout;
+    return s.useMemo(() => {
+        let e = A,
+            t = [];
+        for (let n of h)
+            if ("useTitle" in n && null != n.useTitle) {
+                if (e > 0) {
+                    e--;
                     continue
                 }
-                e.push({
-                    key: i.key,
-                    useTitle: i.useTitle
+                t.push({
+                    key: n.key,
+                    useTitle: n.useTitle
                 })
-            } if (0 === e.length) return "";
-        let l = Math.min(i, 3);
-        if (e.length <= l)
-            if (1 === e.length) return o.intl.format(o.t["3H9tCW"], {
-                settingOneHook: T({
-                    setting: e[0],
-                    formatter: n,
+            } if (0 === t.length) return "";
+        let s = Math.min(n, 3);
+        if (t.length <= s)
+            if (1 === t.length) return d.intl.format(d.t["3H9tCW"], {
+                settingOneHook: _({
+                    setting: t[0],
+                    formatter: i,
                     index: 0
                 })
             });
-            else if (2 === e.length) return o.intl.format(o.t.MWryo6, {
-            settingOneHook: T({
-                setting: e[0],
-                formatter: n,
+            else if (2 === t.length) return d.intl.format(d.t.MWryo6, {
+            settingOneHook: _({
+                setting: t[0],
+                formatter: i,
                 index: 0
             }),
-            settingTwoHook: T({
-                setting: e[1],
-                formatter: n,
+            settingTwoHook: _({
+                setting: t[1],
+                formatter: i,
                 index: 1
             })
         });
-        else return o.intl.format(o.t.a00b5G, {
-            settingOneHook: T({
-                setting: e[0],
-                formatter: n,
+        else return d.intl.format(d.t.a00b5G, {
+            settingOneHook: _({
+                setting: t[0],
+                formatter: i,
                 index: 0
             }),
-            settingTwoHook: T({
-                setting: e[1],
-                formatter: n,
+            settingTwoHook: _({
+                setting: t[1],
+                formatter: i,
                 index: 1
             }),
-            settingThreeHook: T({
-                setting: e[2],
-                formatter: n,
+            settingThreeHook: _({
+                setting: t[2],
+                formatter: i,
                 index: 2
             })
         });
-        return 1 === l ? o.intl.format(o.t.O8vNbS, {
-            settingOneHook: T({
-                setting: e[0],
-                formatter: n,
+        return 1 === s ? d.intl.format(d.t.O8vNbS, {
+            settingOneHook: _({
+                setting: t[0],
+                formatter: i,
                 index: 0
             })
-        }) : 2 === l ? o.intl.format(o.t["acXG/W"], {
-            settingOneHook: T({
-                setting: e[0],
-                formatter: n,
+        }) : 2 === s ? d.intl.format(d.t["acXG/W"], {
+            settingOneHook: _({
+                setting: t[0],
+                formatter: i,
                 index: 0
             }),
-            settingTwoHook: T({
-                setting: e[1],
-                formatter: n,
+            settingTwoHook: _({
+                setting: t[1],
+                formatter: i,
                 index: 1
             })
-        }) : o.intl.format(o.t["5+ldWc"], {
-            settingOneHook: T({
-                setting: e[0],
-                formatter: n,
+        }) : d.intl.format(d.t["5+ldWc"], {
+            settingOneHook: _({
+                setting: t[0],
+                formatter: i,
                 index: 0
             }),
-            settingTwoHook: T({
-                setting: e[1],
-                formatter: n,
+            settingTwoHook: _({
+                setting: t[1],
+                formatter: i,
                 index: 1
             }),
-            settingThreeHook: T({
-                setting: e[2],
-                formatter: n,
+            settingThreeHook: _({
+                setting: t[2],
+                formatter: i,
                 index: 2
             })
         })
-    }, [i, g, c, n])
+    }, [n, A, h, i])
 }

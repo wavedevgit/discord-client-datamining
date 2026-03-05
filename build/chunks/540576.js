@@ -1,22 +1,22 @@
-/** chunk id: 540576, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    i: () => A
+/** chunk id: 540576, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    i: () => u
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(780964),
-    a = i(358776),
-    r = i(264124),
-    u = i(413336),
-    o = i(985018);
-let d = (0, l.t_)(s.X.STREAMER_MODE_PANEL, {
-        useTitle: () => o.intl.string(o.t.S5GfOW),
-        buildLayout: () => [(0, u.$)(!1)]
+var i = n(934551),
+    s = n(419954),
+    l = n(780964),
+    a = n(358776),
+    r = n(264124),
+    o = n(413336),
+    d = n(985018);
+let c = (0, s.t_)(l.X.STREAMER_MODE_PANEL, {
+        useTitle: () => d.intl.string(d.t.S5GfOW),
+        buildLayout: () => [(0, o.$)(!1)]
     }),
-    A = (0, l.i4)(s.X.STREAMER_MODE_SIDEBAR_ITEM, {
-        useTitle: () => o.intl.string(o.t.S5GfOW),
-        icon: n.ScreenStreamIcon,
+    u = (0, s.i4)(l.X.STREAMER_MODE_SIDEBAR_ITEM, {
+        useTitle: () => d.intl.string(d.t.S5GfOW),
+        icon: i.ScreenStreamIcon,
         usePredicate: () => !(0, a.Ci)("StreamerModeSidebarItem"),
         useMenu: r.A,
-        buildLayout: () => [d]
+        buildLayout: () => [c]
     })

@@ -1,34 +1,34 @@
-/** chunk id: 909081, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    T: () => g
+/** chunk id: 909081, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    T: () => A
 });
-var n = i(627968),
-    l = i(311907),
-    s = i(419954),
-    a = i(961350),
-    r = i(670492),
-    u = i(287809),
-    o = i(780964),
-    d = i(309198),
-    A = i(548018),
-    T = i(32096),
-    S = i(545214),
-    E = i(985018);
-let g = (0, s.E2)(o.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
-    useSearchTerms: () => [E.intl.string(E.t.uHAJ5v)],
+var i = n(627968),
+    s = n(311907),
+    l = n(419954),
+    a = n(961350),
+    r = n(670492),
+    o = n(287809),
+    d = n(780964),
+    c = n(309198),
+    u = n(548018),
+    _ = n(32096),
+    g = n(545214),
+    m = n(985018);
+let A = (0, l.E2)(d.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
+    useSearchTerms: () => [m.intl.string(m.t.uHAJ5v)],
     usePredicate: function() {
-        let t = (0, T.b)(),
-            e = (0, S.A)(),
-            i = (0, A.f)(),
-            n = (0, l.bG)([a.default], () => a.default.hasTOTPEnabled());
-        return !t && !e && i && n
+        let e = (0, _.b)(),
+            t = (0, g.A)(),
+            n = (0, u.f)(),
+            i = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled());
+        return !e && !t && n && i
     },
     Component: function() {
-        let t = (0, l.bG)([u.default], () => u.default.getCurrentUser()),
-            e = (0, l.bG)([r.A], () => r.A.togglingSMS);
-        return null == t ? null : (0, n.jsx)(d.A, {
-            currentUser: t,
-            togglingSMS: e
+        let e = (0, s.bG)([o.default], () => o.default.getCurrentUser()),
+            t = (0, s.bG)([r.A], () => r.A.togglingSMS);
+        return null == e ? null : (0, i.jsx)(c.A, {
+            currentUser: e,
+            togglingSMS: t
         })
     }
 })

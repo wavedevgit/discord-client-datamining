@@ -1,31 +1,31 @@
-/** chunk id: 129267, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    X: () => T
+/** chunk id: 129267, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    X: () => _
 });
-var n = i(419117),
-    l = i(419954),
-    s = i(780964),
-    a = i(931852),
-    r = i(528237),
-    u = i(693804),
-    o = i(985018);
-let d = s.X.NOTIFICATIONS_ADVANCED_ACCORDION,
-    A = (0, l.bd)(d, {
-        useTitle: t => t ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
+var i = n(419117),
+    s = n(419954),
+    l = n(780964),
+    a = n(931852),
+    r = n(528237),
+    o = n(693804),
+    d = n(985018);
+let c = l.X.NOTIFICATIONS_ADVANCED_ACCORDION,
+    u = (0, s.bd)(c, {
+        useTitle: e => e ? d.intl.string(d.t.RyimDk) : d.intl.string(d.t.CUICbO),
         useCollapsedSubtitle: function() {
-            return (0, n.A)(d, {
-                formatter: t => {
+            return (0, i.A)(c, {
+                formatter: e => {
                     let {
-                        title: e,
-                        index: i
-                    } = t;
-                    return "string" != typeof e ? e : 0 === i ? `${e.charAt(0).toLocaleUpperCase()}${e.slice(1).toLocaleLowerCase()}` : e.toLocaleLowerCase()
+                        title: t,
+                        index: n
+                    } = e;
+                    return "string" != typeof t ? t : 0 === n ? `${t.charAt(0).toLocaleUpperCase()}${t.slice(1).toLocaleLowerCase()}` : t.toLocaleLowerCase()
                 }
             })
         },
-        buildLayout: () => [a.z, r.m, u.j]
+        buildLayout: () => [a.z, r.m, o.j]
     }),
-    T = (0, l.zZ)(s.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
-        useTitle: () => o.intl.string(o.t["31DySj"]),
-        buildLayout: () => [A]
+    _ = (0, s.zZ)(l.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
+        useTitle: () => d.intl.string(d.t["31DySj"]),
+        buildLayout: () => [u]
     })

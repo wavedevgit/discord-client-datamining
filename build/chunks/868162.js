@@ -18,8 +18,8 @@ let h = {
     },
     _ = h,
     m = !1,
-    p = {},
     g = {},
+    p = {},
     E = {},
     I = {
         id: null,
@@ -68,13 +68,13 @@ class S extends l.Ay.DeviceSettingsStore {
         return E
     }
     get inputDevices() {
-        return p
+        return g
     }
     get lastInputSystemDevice() {
         return I
     }
     get outputDevices() {
-        return g
+        return p
     }
     get lastOutputSystemDevice() {
         return f
@@ -99,12 +99,12 @@ let x = new S(a.h, {
                     t !== f.id && (f.justChanged = !0), f.id = t
                 }
             }), !m) {
-            p = i, g = l, m = !0;
+            g = i, p = l, m = !0;
             return
         }
-        let a = Object.keys(p),
+        let a = Object.keys(g),
             s = Object.keys(i),
-            o = Object.keys(g),
+            o = Object.keys(p),
             d = Object.keys(l),
             c = r().difference(a, s),
             h = r().difference(o, d);
@@ -112,7 +112,7 @@ let x = new S(a.h, {
             E[e] = N(E[e], e, u.E.INPUT)
         }), r().difference(d, o).forEach(e => {
             E[e] = N(E[e], e, u.E.OUTPUT)
-        })), !(r().isEqual(a, s) && r().isEqual(o, d)) && (p = i, g = l, !0)
+        })), !(r().isEqual(a, s) && r().isEqual(o, d)) && (g = i, p = l, !0)
     },
     CONNECTED_DEVICE_SWITCH: function(e) {
         let {
@@ -121,13 +121,13 @@ let x = new S(a.h, {
             location: i
         } = e;
         if (n === u.f.INPUT || n === u.f.INPUT_AND_OUTPUT) {
-            let e = p[t];
+            let e = g[t];
             null != e && a.h.wait(() => s.A.setInputDevice(e, {
                 location: i
             }))
         }
         if (n === u.f.OUTPUT || n === u.f.INPUT_AND_OUTPUT) {
-            let e = g[t];
+            let e = p[t];
             a.h.wait(() => s.A.setOutputDevice(e, {
                 location: i
             }))

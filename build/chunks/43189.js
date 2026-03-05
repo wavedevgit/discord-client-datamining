@@ -2,11 +2,11 @@
 "use strict";
 n.d(t, {
     Ay: () => o,
-    WD: () => r,
-    qh: () => a
+    WD: () => a,
+    qh: () => r
 });
 let {
     Layer: i,
     LayerContainer: s,
     LayerProvider: l
-} = (0, n(397927).AyR)("ChannelCallChat"), r = s, a = l, o = i
+} = (0, n(397927).AyR)("ChannelCallChat"), a = s, r = l, o = i

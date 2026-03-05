@@ -32,9 +32,9 @@ var i = n(627968),
     C = n(53977),
     k = n(982599),
     R = n(515054),
-    w = n(266713),
-    L = n(985018),
-    O = n(368379);
+    L = n(266713),
+    O = n(985018),
+    w = n(368379);
 
 function D(e) {
     let {
@@ -52,14 +52,14 @@ function D(e) {
 
 function P() {
     return (0, i.jsxs)("div", {
-        className: O.mJ,
+        className: w.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": L.intl.string(L.t["7blcz6"]),
+            "aria-label": O.intl.string(O.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: L.intl.string(L.t["7blcz6"])
+            children: O.intl.string(O.t["7blcz6"])
         })]
     })
 }
@@ -116,7 +116,7 @@ function M(e) {
     let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
-                className: O.cG
+                className: w.cG
             }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(D, {
             widget: e,
@@ -128,7 +128,7 @@ function M(e) {
     });
     if (j)
         if (m) return (0, i.jsx)(C.A, {});
-        else return (0, i.jsx)(w.A, {});
+        else return (0, i.jsx)(L.A, {});
     return o ? (0, i.jsx)(N.D, {
         children: S()
     }) : S()
@@ -146,8 +146,8 @@ function U(e) {
     return (0, i.jsxs)(R.K, {
         "data-scroller": !0,
         scrollerRef: a,
-        className: s()(O.XG, {
-            [O.az]: r
+        className: s()(w.XG, {
+            [w.az]: r
         }),
         fade: !0,
         children: [(0, i.jsx)(S.A, {

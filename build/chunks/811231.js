@@ -1,13 +1,13 @@
-/** chunk id: 811231, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Y: () => o
+/** chunk id: 811231, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Y: () => d
 });
-var n = i(419117),
-    l = i(419954),
-    s = i(780964),
-    a = i(932055),
-    r = i(985018);
-let u = [{
+var i = n(419117),
+    s = n(419954),
+    l = n(780964),
+    a = n(932055),
+    r = n(985018);
+let o = [{
         useTitle: () => r.intl.string(r.t.hK51Yg),
         sound: "deafen"
     }, {
@@ -74,14 +74,14 @@ let u = [{
         useTitle: () => r.intl.string(r.t.CP3DC3),
         sound: "reconnect"
     }],
-    o = (0, l.D1)(s.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
+    d = (0, s.D1)(l.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
         collapseAfter: 4,
-        useCollapsibleTitle: (t, e) => t ? r.intl.formatToPlainString(r.t["0JYT98"], {
-            count: e
+        useCollapsibleTitle: (e, t) => e ? r.intl.formatToPlainString(r.t["0JYT98"], {
+            count: t
         }) : r.intl.formatToPlainString(r.t.ji1uNt, {
-            count: e
+            count: t
         }),
-        useCollapsedSubtitle: () => (0, n.A)(s.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
+        useCollapsedSubtitle: () => (0, i.A)(l.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
             limit: 3
         }),
         initialize: function() {
@@ -89,5 +89,5 @@ let u = [{
                 (0, a.vd)()
             }
         },
-        buildLayout: () => u.map(t => (0, a.i)(t))
+        buildLayout: () => o.map(e => (0, a.i)(e))
     })

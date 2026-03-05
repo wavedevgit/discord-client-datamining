@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(222823),
     _ = n(287809),
     m = n(371911),
-    p = n(790782),
-    g = n(985018),
+    g = n(790782),
+    p = n(985018),
     E = n(656678);
 
 function I(e) {
@@ -24,7 +24,7 @@ function I(e) {
         onOpen: t,
         onClose: n,
         "data-jump-section": l
-    } = e, I = (0, s.bG)([_.default], () => _.default.getCurrentUser()), f = r.useRef(null), C = (0, s.bG)([h.Ay], () => I?.id != null && h.Ay.getMentionCount(I.id, p.P.NOTIFICATION_CENTER) > 0);
+    } = e, I = (0, s.bG)([_.default], () => _.default.getCurrentUser()), f = r.useRef(null), C = (0, s.bG)([h.Ay], () => I?.id != null && h.Ay.getMentionCount(I.id, g.P.NOTIFICATION_CENTER) > 0);
     return (0, i.jsx)(m.C, {
         targetElementRef: f,
         onOpen: t,
@@ -38,14 +38,14 @@ function I(e) {
             children: [(0, i.jsx)(d.m_, {
                 targetElementRef: f,
                 shouldShow: !t,
-                text: g.intl.string(g.t.GSmTKJ),
+                text: p.intl.string(p.t.GSmTKJ),
                 children: (0, i.jsx)(c.DUT, {
                     ...n,
                     tag: "div",
                     innerRef: f,
                     onClick: e,
                     "data-jump-section": l,
-                    "aria-label": g.intl.string(g.t.GSmTKJ),
+                    "aria-label": p.intl.string(p.t.GSmTKJ),
                     className: a()(E.vk, E.l9),
                     children: C || r ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(u.Ay, {

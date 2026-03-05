@@ -11,13 +11,13 @@ function n(e, t) {
     return a
 }
 
-function s(e, t, r) {
+function o(e, t, r) {
     var a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
-        s = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 1 / 0;
+        o = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 1 / 0;
     if ("Object" === e) {
-        var o = Object.getOwnPropertyNames(t);
-        r && o.sort(!0 === r ? void 0 : r), i = {
-            entries: (o = o.slice(a, s + 1)).map(function(e) {
+        var s = Object.getOwnPropertyNames(t);
+        r && s.sort(!0 === r ? void 0 : r), i = {
+            entries: (s = s.slice(a, o + 1)).map(function(e) {
                 return {
                     key: e,
                     value: t[e]
@@ -25,7 +25,7 @@ function s(e, t, r) {
             })
         }
     } else if ("Array" === e) i = {
-        entries: t.slice(a, s + 1).map(function(e, t) {
+        entries: t.slice(a, o + 1).map(function(e, t) {
             return {
                 key: t + a,
                 value: e
@@ -50,9 +50,9 @@ function s(e, t, r) {
                         }(e))) {
                         r && (e = r);
                         var a = 0,
-                            s = function() {};
+                            o = function() {};
                         return {
-                            s: s,
+                            s: o,
                             n: function() {
                                 return a >= e.length ? {
                                     done: !0
@@ -64,12 +64,12 @@ function s(e, t, r) {
                             e: function(e) {
                                 throw e
                             },
-                            f: s
+                            f: o
                         }
                     }
                     throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
                 }
-                var o, i = !0,
+                var s, i = !0,
                     c = !1;
                 return {
                     s: function() {
@@ -80,13 +80,13 @@ function s(e, t, r) {
                         return i = e.done, e
                     },
                     e: function(e) {
-                        c = !0, o = e
+                        c = !0, s = e
                     },
                     f: function() {
                         try {
                             i || null == r.return || r.return()
                         } finally {
-                            if (c) throw o
+                            if (c) throw s
                         }
                     }
                 }
@@ -94,7 +94,7 @@ function s(e, t, r) {
         try {
             for (d.s(); !(c = d.n()).done;) {
                 var h = c.value;
-                if (l > s) {
+                if (l > o) {
                     b = !1;
                     break
                 }
@@ -125,7 +125,7 @@ function s(e, t, r) {
     return i
 }
 
-function o(e, t, r) {
+function s(e, t, r) {
     for (var a = []; t - e > r * r;) r *= r;
     for (var n = e; n <= t; n += r) a.push({
         from: n,
@@ -137,7 +137,7 @@ function o(e, t, r) {
 function i(e, t, r, n) {
     var i, c = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0,
         l = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : 1 / 0,
-        u = s.bind(null, e, t, r);
+        u = o.bind(null, e, t, r);
     if (!n) return u().entries;
     var b = l < 1 / 0,
         f = Math.min(l - c, "Object" === e ? Object.keys(t).length : "Array" === e ? t.length : 1 / 0);
@@ -148,7 +148,7 @@ function i(e, t, r, n) {
         var d = u(c, c + n - 1),
             h = d.hasMore,
             p = d.entries;
-        i = h ? [].concat((0, a.A)(p), (0, a.A)(o(c + n, c + 2 * n - 1, n))) : p
-    } else i = b ? o(c, l, n) : [].concat((0, a.A)(u(0, n - 5).entries), (0, a.A)(o(n - 4, f - 5, n)), (0, a.A)(u(f - 4, f - 1).entries));
+        i = h ? [].concat((0, a.A)(p), (0, a.A)(s(c + n, c + 2 * n - 1, n))) : p
+    } else i = b ? s(c, l, n) : [].concat((0, a.A)(u(0, n - 5).entries), (0, a.A)(s(n - 4, f - 5, n)), (0, a.A)(u(f - 4, f - 1).entries));
     return i
 }

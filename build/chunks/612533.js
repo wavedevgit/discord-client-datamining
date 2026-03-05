@@ -1,18 +1,18 @@
-/** chunk id: 612533, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    G: () => T
+/** chunk id: 612533, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    G: () => _
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(664962),
-    a = i(753082),
-    r = i(995812),
-    u = i(927629),
-    o = i(286480),
-    d = i(749253),
-    A = i(816226);
-let T = (0, n.zZ)(l.X.DESIGN_TOOLS, {
+var i = n(419954),
+    s = n(780964),
+    l = n(664962),
+    a = n(753082),
+    r = n(995812),
+    o = n(927629),
+    d = n(286480),
+    c = n(749253),
+    u = n(816226);
+let _ = (0, i.zZ)(s.X.DESIGN_TOOLS, {
     useTitle: () => "Design & A11y Tools",
     useSearchTerms: () => ["accessibility tools"],
-    buildLayout: () => [a.g, d.V, o.q, A.u, r.g, u.H, s.K]
+    buildLayout: () => [a.g, c.V, d.q, u.u, r.g, o.H, l.K]
 })

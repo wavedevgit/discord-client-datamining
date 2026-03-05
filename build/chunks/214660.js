@@ -7,8 +7,8 @@ n.d(t, {
 var i, s = n(627968);
 n(64700);
 var l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(139033),
     c = n(397927),
     d = n(830215),
@@ -31,16 +31,16 @@ let I = e => {
     } = e, E = (0, h.GV)(), {
         notClaimed: I,
         notEmailVerified: N,
-        notPhoneVerified: S,
-        newAccount: b,
+        notPhoneVerified: b,
+        newAccount: S,
         newMember: T
-    } = (0, a.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
-    return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : S ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
+    } = (0, r.bG)([m.A], () => m.A.getCheck(i), [i]), v = 0 === t ? f.intl.string(f.t["6zY8BI"]) : null, y = null, j = null;
+    return (0 === t && (I ? (y = f.intl.string(f.t.IRxUlG), j = f.intl.string(f.t.fiNVin)) : b ? (y = f.intl.string(f.t.vW8iUF), j = f.intl.string(f.t["50gfOv"])) : N ? (y = f.intl.string(f.t.vdSOpz), j = f.intl.string(f.t.lm1UKt)) : T ? (y = f.intl.formatToPlainString(f.t.v1ktYb, {
         min: g.$8o.MEMBER_AGE
-    }), j = f.intl.string(f.t.BddRzS)) : b && (y = f.intl.formatToPlainString(f.t.sncw41, {
+    }), j = f.intl.string(f.t.BddRzS)) : S && (y = f.intl.formatToPlainString(f.t.sncw41, {
         min: g.$8o.ACCOUNT_AGE
     }), j = f.intl.string(f.t.BddRzS))), null == v || null == y) ? null : (0, s.jsxs)(c.lGe, {
-        className: r()(C.popover, x.kL),
+        className: a()(C.popover, x.kL),
         "aria-labelledby": E,
         children: [(0, s.jsx)("img", {
             alt: "",
@@ -65,7 +65,7 @@ let I = e => {
                         variant: "primary",
                         text: j,
                         onClick: () => {
-                            I ? u.R() : S ? (0, c.mMO)(async () => {
+                            I ? u.R() : b ? (0, c.mMO)(async () => {
                                 let {
                                     default: e
                                 } = await Promise.all([n.e("84704"), n.e("45668")]).then(n.bind(n, 615715));
@@ -83,7 +83,7 @@ let I = e => {
                             })), l()
                         }
                     })
-                }) : null, I || S || N ? (0, s.jsx)(c.QWc, {
+                }) : null, I || b || N ? (0, s.jsx)(c.QWc, {
                     onClick: l,
                     text: f.intl.string(f.t.oEAioF),
                     variant: "secondary"

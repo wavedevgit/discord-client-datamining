@@ -1,11 +1,11 @@
 /** chunk id: 244242, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    L: () => a
+    L: () => l
 });
 var i = n(627968),
     s = n(397927);
 
-function a(e) {
+function l(e) {
     let {
         children: t
     } = e;

@@ -1,24 +1,24 @@
-/** chunk id: 467758, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    W: () => A
+/** chunk id: 467758, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    W: () => u
 });
-var n = i(734066),
-    l = i(419954),
-    s = i(780964),
-    a = i(764800),
-    r = i(464895),
-    u = i(729134),
-    o = i(766667),
-    d = i(985018);
-let A = (0, l.zZ)(s.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
-    useTitle: () => d.intl.string(d.t.sA0WKL),
+var i = n(734066),
+    s = n(419954),
+    l = n(780964),
+    a = n(764800),
+    r = n(464895),
+    o = n(729134),
+    d = n(766667),
+    c = n(985018);
+let u = (0, s.zZ)(l.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
+    useTitle: () => c.intl.string(c.t.sA0WKL),
     usePredicate: () => {
         let {
-            enableAdvancedSignals: t
-        } = n.L_.useConfig({
+            enableAdvancedSignals: e
+        } = i.L_.useConfig({
             location: "ClipsAutomaticClippingCategory"
         });
-        return t
+        return e
     },
-    buildLayout: () => [a.$, r.X, u.C, o.p]
+    buildLayout: () => [a.$, r.X, o.C, d.p]
 })

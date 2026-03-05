@@ -5,14 +5,14 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(397927),
-    i = n(263063),
-    r = n(71393),
+    r = n(263063),
+    i = n(71393),
     s = n(985018),
     d = n(75271);
 let o = e => {
     let {
         stageInstance: t
-    } = e, n = r.A.getGuild(t.guild_id);
+    } = e, n = i.A.getGuild(t.guild_id);
     return null == n ? null : (0, l.jsxs)("div", {
         className: d.kL,
         children: [(0, l.jsx)(a.Heading, {
@@ -23,9 +23,9 @@ let o = e => {
             className: d.bo,
             children: [(0, l.jsxs)("div", {
                 className: d.OA,
-                children: [(0, l.jsx)(i.Ay, {
+                children: [(0, l.jsx)(r.Ay, {
                     guild: n,
-                    size: i.Ay.Sizes.MINI,
+                    size: r.Ay.Sizes.MINI,
                     className: d.$f
                 }), (0, l.jsx)(a.Text, {
                     color: "text-default",

@@ -5,24 +5,24 @@ r.d(t, {
 });
 var a = r(1139),
     n = r(64700),
-    s = r(223108),
-    o = r.n(s),
+    o = r(223108),
+    s = r.n(o),
     i = function(e) {
         var t = e.styling,
             r = e.arrowStyle,
-            s = e.expanded,
-            o = e.nodeType,
+            o = e.expanded,
+            s = e.nodeType,
             i = e.onClick;
         return n.createElement("div", (0, a.A)({}, t("arrowContainer", r), {
             onClick: i
-        }), n.createElement("div", t(["arrow", "arrowSign"], o, s, r), "▶", "double" === r && n.createElement("div", t(["arrowSign", "arrowSignInner"]), "▶")))
+        }), n.createElement("div", t(["arrow", "arrowSign"], s, o, r), "▶", "double" === r && n.createElement("div", t(["arrowSign", "arrowSignInner"]), "▶")))
     };
 i.propTypes = {
-    styling: o().func.isRequired,
-    arrowStyle: o().oneOf(["single", "double"]),
-    expanded: o().bool.isRequired,
-    nodeType: o().string.isRequired,
-    onClick: o().func.isRequired
+    styling: s().func.isRequired,
+    arrowStyle: s().oneOf(["single", "double"]),
+    expanded: s().bool.isRequired,
+    nodeType: s().string.isRequired,
+    onClick: s().func.isRequired
 }, i.defaultProps = {
     arrowStyle: "single"
 };

@@ -1,7 +1,7 @@
 /** chunk id: 729843, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => g
 });
 var i = n(387755),
     s = n(684013),
@@ -14,31 +14,31 @@ var i = n(387755),
     u = n(287809),
     h = n(684748),
     p = n(652215),
-    f = n(672396),
-    A = n(985018);
+    A = n(672396),
+    f = n(985018);
 
-function _(e) {
+function g(e) {
     let t = (0, r.m1)(e, u.default, c.A),
-        n = A.intl.string(A.t.ssrVzG),
-        _ = (0, a.Y)(e),
-        g = (0, d.A)(e),
+        n = f.intl.string(f.t.ssrVzG),
+        g = (0, a.Y)(e),
+        _ = (0, d.A)(e),
         {
             trackView: m,
             trackClick: E
-        } = (0, h.Y)(f.KS.IncomingCall, {
-            notif_type: f.KS.IncomingCall,
-            notif_user_id: g,
+        } = (0, h.Y)(A.KS.IncomingCall, {
+            notif_type: A.KS.IncomingCall,
+            notif_user_id: _,
             guild_id: e.guild_id,
             channel_id: e.id,
             channel_type: e.type
         });
     return {
-        icon: _,
+        icon: g,
         title: t,
         body: n,
-        hint: e => (0, o.sI)(e, (0, h.J)(), A.t.Odi54y),
-        confirmText: A.intl.string(A.t["0D/6Rz"]),
-        cancelText: A.intl.string(A.t.BVN4pL),
+        hint: e => (0, o.sI)(e, (0, h.J)(), f.t.Odi54y),
+        confirmText: f.intl.string(f.t["0D/6Rz"]),
+        cancelText: f.intl.string(f.t.BVN4pL),
         onNotificationShow: () => {
             m()
         },

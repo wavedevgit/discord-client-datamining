@@ -1,20 +1,20 @@
-/** chunk id: 746081, original params: e,t,n (module,exports,require) **/
+/** chunk id: 746081, original params: t,e,i (module,exports,require) **/
 "use strict";
-n.d(t, {
+i.d(e, {
     m: () => r
 });
-var i = n(64700),
-    s = n(310209);
+var n = i(64700),
+    s = i(310209);
 
-function r(e) {
+function r(t) {
     let {
-        wishlistAndRecommendations: t,
-        skusToUserAndReason: n,
+        wishlistAndRecommendations: e,
+        skusToUserAndReason: i,
         userId: r,
-        numItems: a
-    } = e;
+        numItems: l
+    } = t;
     return {
-        totalUnownedWishlistItemCount: i.useMemo(() => t.filter(e => null != n[e.id] && n[e.id][r] === s.j.WISHLIST).length, [t, r, n]),
-        slicedWishlistAndRecommendations: i.useMemo(() => t.slice(0, a), [t, a])
+        totalUnownedWishlistItemCount: n.useMemo(() => e.filter(t => null != i[t.id] && i[t.id][r] === s.j.WISHLIST).length, [e, r, i]),
+        slicedWishlistAndRecommendations: n.useMemo(() => e.slice(0, l), [e, l])
     }
 }

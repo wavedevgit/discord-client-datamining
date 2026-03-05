@@ -5,27 +5,27 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(554146),
-    a = n(882997),
-    l = n(975571),
+    l = n(882997),
+    a = n(975571),
     r = n(107005),
     o = n(652215),
-    c = n(985018),
-    d = n(729632);
+    d = n(985018),
+    c = n(729632);
 let u = () => {
-    let e = l.A.getArticleURL(o.MVz.PS_CONNECTION);
+    let e = a.A.getArticleURL(o.MVz.PS_CONNECTION);
     return (0, i.jsx)(r.Z, {
-        title: c.intl.string(c.t.v20wwm),
-        body: c.intl.format(c.t.lTZBit, {
+        title: d.intl.string(d.t.v20wwm),
+        body: d.intl.format(d.t.lTZBit, {
             help_article: e
         }),
         img: (0, i.jsx)("img", {
-            src: d,
+            src: c,
             width: "82",
             height: "auto",
             alt: ""
         }),
         newIndicatorDismissibleContent: s.M.PS_ONE_WAY_RECONNECT,
-        onClick: () => (0, a.A)({
+        onClick: () => (0, l.A)({
             platformType: o.fg2.PLAYSTATION,
             location: "PS two way upsell"
         })

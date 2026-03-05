@@ -5,16 +5,16 @@ i.d(t, {
 });
 var r = i(40185),
     n = i(478097),
-    s = i(196042),
-    a = i(412260),
+    a = i(196042),
+    s = i(412260),
     l = i(985018);
 async function o() {
-    let e = a.A.bogoPromotion,
+    let e = s.A.bogoPromotion,
         t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
         i = await (0, r.nq)(),
         {
             enabled: l
-        } = s.oy.getCurrentConfig({
+        } = a.oy.getCurrentConfig({
             location: "153d31_6"
         }, {
             autoTrackExposure: !1

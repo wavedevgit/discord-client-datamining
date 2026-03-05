@@ -4,23 +4,23 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     r = n(166403),
     o = n(510898),
-    c = n(985018),
-    d = n(104579);
+    d = n(985018),
+    c = n(104579);
 
 function u(e) {
     let {
         onGoBack: t
-    } = e, n = (0, a.yK)([r.A], () => r.A.getActiveApplicationSubscriptions()?.slice().sort((e, t) => (e.createdAt?.getTime() ?? e.currentPeriodStart.getTime()) - (t.createdAt?.getTime() ?? t.currentPeriodStart.getTime())) ?? []), [l, u] = s.useState();
-    return null == l && (l = (0, i.jsx)(_, {
+    } = e, n = (0, l.yK)([r.A], () => r.A.getActiveApplicationSubscriptions()?.slice().sort((e, t) => (e.createdAt?.getTime() ?? e.currentPeriodStart.getTime()) - (t.createdAt?.getTime() ?? t.currentPeriodStart.getTime())) ?? []), [a, u] = s.useState();
+    return null == a && (a = (0, i.jsx)(_, {
         onBack: t,
-        title: c.intl.string(c.t["DB/m9a"])
+        title: d.intl.string(d.t["DB/m9a"])
     })), (0, i.jsxs)("div", {
-        children: [l, (0, i.jsx)("div", {
-            className: d.A,
+        children: [a, (0, i.jsx)("div", {
+            className: c.A,
             children: (0, i.jsx)(o.A, {
                 subscriptions: n,
                 updateHeader: (e, t) => {
@@ -42,15 +42,15 @@ function _(e) {
         title: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: d.D,
-        children: [(0, i.jsx)(l.K0, {
-            "aria-label": c.intl.string(c.t["13/7kX"]),
-            icon: () => (0, i.jsx)(l.Zge, {
+        className: c.D,
+        children: [(0, i.jsx)(a.K0, {
+            "aria-label": d.intl.string(d.t["13/7kX"]),
+            icon: () => (0, i.jsx)(a.Zge, {
                 size: "sm"
             }),
             onClick: t,
             variant: "icon-only"
-        }), (0, i.jsx)(l.Heading, {
+        }), (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             children: n
         })]

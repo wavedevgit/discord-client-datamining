@@ -1,14 +1,14 @@
-/** chunk id: 9653, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    R: () => u
+/** chunk id: 9653, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    R: () => o
 });
-var n = i(86379),
-    l = i(419954),
-    s = i(780964),
-    a = i(586685),
-    r = i(985018);
-let u = (0, l.E2)(s.X.GIFT_INVENTORY_LIST_SETTING, {
+var i = n(86379),
+    s = n(419954),
+    l = n(780964),
+    a = n(586685),
+    r = n(985018);
+let o = (0, s.E2)(l.X.GIFT_INVENTORY_LIST_SETTING, {
     Component: a.b0,
-    usePredicate: () => !(0, n.H)(),
+    usePredicate: () => !(0, i.H)(),
     useSearchTerms: () => [r.intl.string(r.t["jcSP+g"]), r.intl.string(r.t["9KeUbY"])]
 })

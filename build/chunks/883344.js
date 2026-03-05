@@ -15,8 +15,8 @@ var i = n(681154),
     h = n(734057),
     _ = n(197305),
     m = n(71393),
-    p = n(320501),
-    g = n(576705),
+    g = n(320501),
+    p = n(576705),
     E = n(222823),
     I = n(994500),
     f = n(543465),
@@ -127,7 +127,7 @@ function em(e) {
     let t, n, r, l, d;
     if (U.length > 0 && (D = U, U = [], G = []), W++, null != e) Z = e.newUnread, J = e.newRead;
     else {
-        let [e, t] = ep(D);
+        let [e, t] = eg(D);
         Z = e, J = t
     }
     v.A.onlyShowRecentGeneratedCandidates() || (function() {
@@ -141,7 +141,7 @@ function em(e) {
                 if (!(0, c.AZ)(n)) {
                     if (null != n.channel_id) {
                         let e = h.A.getChannel(n.channel_id);
-                        if (!g.A.can(L.xBc.VIEW_CHANNEL, e)) continue
+                        if (!p.A.can(L.xBc.VIEW_CHANNEL, e)) continue
                     }
                     if (((0, c.W$)(n, 2 * C.A.Seconds.DAY) || (0, c.Fd)(n)) && (null == B[n.id] && (B[n.id] = {
                             id: n.id,
@@ -201,7 +201,7 @@ function em(e) {
     }), M = k.load_id ?? null, k = {}), ee = 0, Z.length + J.length === 0 && (es = !0), (0, O.kx)([...Z, ...J], 0, y.w5), er = !1
 }
 
-function ep(e) {
+function eg(e) {
     let t = [],
         n = [],
         i = [];
@@ -213,7 +213,7 @@ function ep(e) {
     ]
 }
 
-function eg(e, t) {
+function ep(e, t) {
     let n = [],
         i = new Set(D.map(e => e.id));
     for (let r of e) !(r.type === y.Mm.RECOMMENDED_GUILDS || i.has(r.id)) && null == b.A.getReadTimestamp(r.id) && (r.type !== y.Mm.MESSAGE || (0, O.$r)(r.data.channel_id, r.data.message_id) && r.data.channel_id !== t) && n.push(r);
@@ -257,15 +257,15 @@ function eN(e) {
         (r > ee || !z) && e.type === y.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
     });
     let r = K,
-        [l, a] = ep(U);
-    if (G = eg(l, t), K = z ? r && G.length >= y.$P : r && ec(i, U), 0 === n.length && r === K) return !1;
+        [l, a] = eg(U);
+    if (G = ep(l, t), K = z ? r && G.length >= y.$P : r && ec(i, U), 0 === n.length && r === K) return !1;
     0 !== n.length && (Z = i, J = [...J, ...n])
 }
 class eS extends r.Ay.PersistedStore {
     static displayName = "ICYMIStore";
     static persistKey = "ICYMIStore";
     initialize(e) {
-        this.waitFor(A.default, h.A, a.A, d.A, _.A, c.Ay, m.A, v.A, b.A, p.A, g.A, E.Ay, I.A, f.Ay), null != e && ((D = e.dehydratedItems ?? []).forEach(e => {
+        this.waitFor(A.default, h.A, a.A, d.A, _.A, c.Ay, m.A, v.A, b.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((D = e.dehydratedItems ?? []).forEach(e => {
             V[e.id] = e
         }), F = e.customGuildScores ?? {}, Y = e.customChannelScoresByGuild ?? {}, X = e.numOpens ?? 0, w = e.lastOpened ?? 0, en = e.lastJoinedRecommendedGuild ?? 0, ed = e.lastTakenICYMISurvey ?? 0)
     }
@@ -401,7 +401,7 @@ let ex = new eS(l.h, {
                     ...e,
                     message: (0, u.rh)(t.message)
                 }, null == M && null == k) {
-                let [t, n] = ep(D = [e, ...D]);
+                let [t, n] = eg(D = [e, ...D]);
                 Z = t, J = n
             } else U = [e, ...U], em();
             return !0
@@ -434,8 +434,8 @@ let ex = new eS(l.h, {
             load_time_millis: Date.now() - i,
             feed_item_ids: U.map(e => e.id)
         };
-        let [a, s] = ep(U);
-        if (G = eg(a), !z || 0 === W || r) W = 0, !ea && ec(a, U) ? (K = !0, q = !0) : K = !1, em({
+        let [a, s] = eg(U);
+        if (G = ep(a), !z || 0 === W || r) W = 0, !ea && ec(a, U) ? (K = !0, q = !0) : K = !1, em({
             newUnread: a,
             newRead: s
         });
@@ -488,7 +488,7 @@ let ex = new eS(l.h, {
                     has_mention: !1
                 }
             });
-            let i = p.A.getMessage(t.channel_id, t.message.id);
+            let i = g.A.getMessage(t.channel_id, t.message.id);
             if (null != i) {
                 let e = (0, O.Rh)(t, n);
                 B[t.message.id] = {

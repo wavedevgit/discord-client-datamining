@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(471271),
     _ = n(977347),
     m = n(378570),
-    p = n(138298),
-    g = n(761640),
+    g = n(138298),
+    p = n(761640),
     E = n(47167),
     I = n(698718),
     f = n(985018),
@@ -28,7 +28,7 @@ function N(e) {
         channel: t,
         baseChannelId: n
     } = e, N = (0, E.Ay)(t), S = (0, A.k)(), x = (0, A.r)(), v = (0, l.bG)([c.A], () => c.A.isMessageRequest(t.id)), y = (0, l.bG)([u.A], () => u.A.isSpam(t.id)), b = (0, _.D)(t.id, t.getRecipientId()), O = r.useCallback(() => {
-        p.A.closeChannelSidebar(g.fe), v && S && (0, m.iN)(t.id), y && x && (0, m.iN)(t.id)
+        g.A.closeChannelSidebar(p.fe), v && S && (0, m.iN)(t.id), y && x && (0, m.iN)(t.id)
     }, [t.id, y, x, v, S]), L = r.useCallback(() => {
         (0, a.showToast)((0, a.createToast)(f.intl.string(f.t.pIQ3h4), a.ToastType.FAILURE))
     }, []), {
@@ -41,7 +41,7 @@ function N(e) {
     let P = [(0, i.jsx)(o.Ay.Icon, {
         icon: a.PGe,
         tooltip: f.intl.string(f.t.cpT0Cq),
-        onClick: () => p.A.closeChannelSidebar(n)
+        onClick: () => g.A.closeChannelSidebar(n)
     }, "close")];
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.Ay, {

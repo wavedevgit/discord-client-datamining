@@ -1,44 +1,44 @@
-/** chunk id: 641531, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    V: () => g
+/** chunk id: 641531, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    V: () => A
 });
-var n = i(349941),
-    l = i(311907),
-    s = i(955572),
-    a = i(775602),
-    r = i(47671),
-    u = i(419954),
-    o = i(97469),
-    d = i(544028),
-    A = i(253932),
-    T = i(780964),
-    S = i(818348),
-    E = i(985018);
-let g = (0, u.zD)(T.X.DISPLAY_DARK_SIDEBAR, {
-    useTitle: () => E.intl.string(E.t.EpSHAQ),
-    useSearchTerms: () => [E.intl.string(E.t.Ksh3ik)],
+var i = n(349941),
+    s = n(311907),
+    l = n(955572),
+    a = n(775602),
+    r = n(47671),
+    o = n(419954),
+    d = n(97469),
+    c = n(544028),
+    u = n(253932),
+    _ = n(780964),
+    g = n(818348),
+    m = n(985018);
+let A = (0, o.zD)(_.X.DISPLAY_DARK_SIDEBAR, {
+    useTitle: () => m.intl.string(m.t.EpSHAQ),
+    useSearchTerms: () => [m.intl.string(m.t.Ksh3ik)],
     useValue: function() {
-        let t = (0, o.qo)();
-        return (0, l.bG)([d.A, a.A], () => {
-            let e = d.A.theme,
-                i = a.A.useForcedColors;
-            return t && (0, n.qB)(e) && !i
+        let e = (0, d.qo)();
+        return (0, s.bG)([c.A, a.A], () => {
+            let t = c.A.theme,
+                n = a.A.useForcedColors;
+            return e && (0, i.qB)(t) && !n
         })
     },
     usePredicate: function() {
-        let t = null != A.eh.useSetting().customUserThemeSettings;
-        return (0, l.bG)([d.A, r.A], () => {
-            let e = d.A.theme,
-                i = r.A.gradientPreset;
-            return (0, n.qB)(e) && null == i && !t
+        let e = null != u.eh.useSetting().customUserThemeSettings;
+        return (0, s.bG)([c.A, r.A], () => {
+            let t = c.A.theme,
+                n = r.A.gradientPreset;
+            return (0, i.qB)(t) && null == n && !e
         })
     },
     useDisabled: function() {
-        return (0, l.bG)([d.A, a.A], () => {
-            let t = d.A.theme,
-                e = a.A.useForcedColors;
-            return t !== S.NJ.LIGHT || e
+        return (0, s.bG)([c.A, a.A], () => {
+            let e = c.A.theme,
+                t = a.A.useForcedColors;
+            return e !== g.NJ.LIGHT || t
         })
     },
-    setValue: s.LO
+    setValue: l.LO
 })

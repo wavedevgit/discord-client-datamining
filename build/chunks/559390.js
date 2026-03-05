@@ -1,20 +1,20 @@
-/** chunk id: 559390, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    H: () => o
+/** chunk id: 559390, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    H: () => d
 });
-var n = i(793574),
-    l = i(419954),
-    s = i(253932),
-    a = i(780964),
-    r = i(698723),
-    u = i(985018);
-let o = (0, l.zD)(a.X.STREAMING_SHOW_STREAM_PREVIEWS, {
-    useTitle: () => u.intl.string(u.t.e3Zz3F),
-    useSubtitle: () => u.intl.string(u.t.RztTjP),
+var i = n(793574),
+    s = n(419954),
+    l = n(253932),
+    a = n(780964),
+    r = n(698723),
+    o = n(985018);
+let d = (0, s.zD)(a.X.STREAMING_SHOW_STREAM_PREVIEWS, {
+    useTitle: () => o.intl.string(o.t.e3Zz3F),
+    useSubtitle: () => o.intl.string(o.t.RztTjP),
     useValue: function() {
-        return !s.uh.useSetting()
+        return !l.uh.useSetting()
     },
-    setValue: function(t) {
-        (0, r.A)("stream_previews_disabled", !t, s.uh.getSetting(), [n.A.USER_SETTINGS_VOICE_AND_VIDEO]), s.uh.updateSetting(!t)
+    setValue: function(e) {
+        (0, r.A)("stream_previews_disabled", !e, l.uh.getSetting(), [i.A.USER_SETTINGS_VOICE_AND_VIDEO]), l.uh.updateSetting(!e)
     }
 })

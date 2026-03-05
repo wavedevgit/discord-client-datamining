@@ -16,8 +16,8 @@ var r = n(877624),
     h = n(816733),
     _ = n(927578),
     m = n(536194),
-    p = n(40185),
-    g = n(89366),
+    g = n(40185),
+    p = n(89366),
     E = n(637073),
     I = n(89465),
     f = n(412260),
@@ -92,13 +92,13 @@ class y extends o.A {
         if (null != t) return {
             userDiscountOffer: t
         };
-        let n = (0, g.qD)();
+        let n = (0, p.qD)();
         return null != n ? {
             userTrialOffer: n
         } : {}
     };
     mayShowAnnouncementModal = async () => {
-        if (await (0, p.hb)(), m.P.isDisallowPopupsSet()) return;
+        if (await (0, g.hb)(), m.P.isDisallowPopupsSet()) return;
         let e = this.getOfferFromStore(),
             t = I.A.getCurrentConfig({
                 location: "announcementManager"

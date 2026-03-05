@@ -1,29 +1,29 @@
-/** chunk id: 788172, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    m: () => d
+/** chunk id: 788172, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    m: () => c
 });
-var n = i(171316),
-    l = i(419954),
-    s = i(975571),
-    a = i(253932),
-    r = i(780964),
-    u = i(652215),
-    o = i(985018);
-let d = (0, l.zD)(r.X.DATA_USAGE_QUESTS_3P_SETTING, {
-    useTitle: () => o.intl.string(o.t.CyLYKZ),
-    useSubtitle: () => o.intl.format(o.t["2QFDU/"], {
-        helpdeskArticle: s.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
+var i = n(171316),
+    s = n(419954),
+    l = n(975571),
+    a = n(253932),
+    r = n(780964),
+    o = n(652215),
+    d = n(985018);
+let c = (0, s.zD)(r.X.DATA_USAGE_QUESTS_3P_SETTING, {
+    useTitle: () => d.intl.string(d.t.CyLYKZ),
+    useSubtitle: () => d.intl.format(d.t["2QFDU/"], {
+        helpdeskArticle: l.A.getArticleURL(o.MVz.QUESTS_PRIVACY_CONTROLS)
     }),
     useValue: function() {
         return !a.vf.useSetting()
     },
-    setValue: function(t) {
-        a.vf.updateSetting(!t)
+    setValue: function(e) {
+        a.vf.updateSetting(!e)
     },
     useDisabled: function() {
-        let t = a.H1.useSetting(),
-            e = (0, n.uM)();
-        return t || e
+        let e = a.H1.useSetting(),
+            t = (0, i.uM)();
+        return e || t
     },
-    useSearchTerms: () => [o.intl.string(o.t.CyLYKZ)]
+    useSearchTerms: () => [d.intl.string(d.t.CyLYKZ)]
 })

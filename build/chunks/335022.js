@@ -14,15 +14,15 @@ var i = n(627968),
     u = n(487401),
     h = n(952790),
     p = n(846930),
-    f = n(355205),
-    A = n(366811),
-    _ = n(924985),
-    g = n(945886),
+    A = n(355205),
+    f = n(366811),
+    g = n(924985),
+    _ = n(945886),
     m = n(72314),
     E = n(769765),
     x = n(808728),
-    v = n(458294),
-    y = n(71393),
+    y = n(458294),
+    v = n(71393),
     S = n(576705),
     C = n(584569),
     I = n(383501),
@@ -33,8 +33,8 @@ var i = n(627968),
     j = n(714977),
     D = n(439817),
     R = n(652215),
-    w = n(349828),
-    L = n(985018),
+    L = n(349828),
+    w = n(985018),
     k = n(852388);
 class M extends s.PureComponent {
     static getDerivedStateFromProps(e) {
@@ -135,7 +135,7 @@ class M extends s.PureComponent {
             renderBanner: l,
             bannerVisible: a,
             communityInfoVisible: o
-        } = this.state, d = n?.id === w.Vc ? u.T : u.B;
+        } = this.state, d = n?.id === L.Vc ? u.T : u.B;
         return (0, i.jsxs)(D.A, {
             header: null != n ? (0, i.jsx)(h.Ay, {
                 guild: n,
@@ -154,7 +154,7 @@ class M extends s.PureComponent {
                     children: e => (0, i.jsx)(b.Ay.Icon, {
                         ref: this.settingsIconRef,
                         icon: r.Zes,
-                        label: L.intl.string(L.t["3D5yo/"]),
+                        label: w.intl.string(w.t["3D5yo/"]),
                         ...e
                     })
                 })
@@ -171,8 +171,8 @@ class M extends s.PureComponent {
                 })
             }), null != n && (0, i.jsx)("section", {
                 className: k.C3,
-                "aria-label": L.intl.string(L.t.StREWK),
-                children: (0, i.jsx)(f.A, {
+                "aria-label": w.intl.string(w.t.StREWK),
+                children: (0, i.jsx)(A.A, {
                     guildId: n.id
                 })
             })]
@@ -183,20 +183,20 @@ class M extends s.PureComponent {
 function P(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([y.A], () => y.A.getGuild(t)), s = (0, a.bG)([x.Ay], () => x.Ay.getChannels(t)), l = (0, a.bG)([E.A], () => E.A.getCategories(t)), {
+    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([x.Ay], () => x.Ay.getChannels(t)), l = (0, a.bG)([E.A], () => E.A.getCategories(t)), {
         mutedChannels: r,
         collapseMuted: c
     } = (0, a.cf)([T.Ay], () => ({
         mutedChannels: T.Ay.getMutedChannels(t),
         collapseMuted: T.Ay.isGuildCollapsed(t)
-    })), u = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStates(t)), h = (0, a.bG)([g.A], () => g.A.getCollapsed()), {
+    })), u = (0, a.bG)([O.Ay], () => O.Ay.getVoiceStates(t)), h = (0, a.bG)([_.A], () => _.A.getCollapsed()), {
         scrollTo: p
-    } = (0, a.bG)([m.A], () => m.A.getGuildDimensions(t)), f = (0, A.A)(e => {
+    } = (0, a.bG)([m.A], () => m.A.getGuildDimensions(t)), A = (0, f.A)(e => {
         let {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([_.A], () => _.A.version), w = (0, a.bG)([v.default], () => v.default.getGuildChangeSentinel(t)), L = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), L = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), V = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
     return (0, i.jsx)(M, {
         guildId: t,
         guild: n,
@@ -204,17 +204,17 @@ function P(e) {
         categories: l,
         mutedChannels: r,
         scrollToChannel: p,
-        selectedChannelId: f,
+        selectedChannelId: A,
         selectedVoiceChannelId: b,
         voiceStates: u,
         rtcConnectedChannelId: G,
-        rtcDesyncedVoiceStatesCount: U,
+        rtcDesyncedVoiceStatesCount: V,
         collapsedChannels: h,
         collapseMuted: c,
-        guildReadStateSentinel: w,
+        guildReadStateSentinel: L,
         permissionVersion: j,
         categoryCollapseVersion: D,
-        embeddedAppsByChannel: L,
+        embeddedAppsByChannel: w,
         activeEventsByChannel: k,
         showNewUnreadsBar: P,
         optInEnabled: !1

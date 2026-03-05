@@ -1,30 +1,30 @@
-/** chunk id: 850060, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => o
+/** chunk id: 850060, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => d
 });
-var n = i(627968);
-i(64700);
-var l = i(397927),
-    s = i(954571),
-    a = i(253932),
-    r = i(652215),
-    u = i(985018);
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    l = n(954571),
+    a = n(253932),
+    r = n(652215),
+    o = n(985018);
 
-function o() {
-    let t = a.D_.useSetting(),
-        e = a.SI.useSetting();
-    return t ? null : (0, n.jsx)(l.sLh, {
+function d() {
+    let e = a.D_.useSetting(),
+        t = a.SI.useSetting();
+    return e ? null : (0, i.jsx)(s.sLh, {
         id: "preview-markdown-toggle",
-        label: u.intl.string(u.t.sHJ9wZ),
+        label: o.intl.string(o.t.sHJ9wZ),
         action: () => {
-            let t = !e;
-            s.default.track(r.HAw.PREVIEW_MARKDOWN_TOGGLED, {
-                enabled: t,
+            let e = !t;
+            l.default.track(r.HAw.PREVIEW_MARKDOWN_TOGGLED, {
+                enabled: e,
                 location: {
                     section: r.JJy.SETTINGS_CONTEXT_MENU
                 }
-            }), a.SI.updateSetting(t)
+            }), a.SI.updateSetting(e)
         },
-        checked: e
+        checked: t
     })
 }

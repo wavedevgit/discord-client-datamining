@@ -16,8 +16,8 @@ var r = n(397927),
     h = n(329972),
     _ = n(784578),
     m = n(204925),
-    p = n(652215),
-    g = n(835002);
+    g = n(652215),
+    p = n(835002);
 class E extends a.A {
     _initialize() {
         l.h.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.h.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.h.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.h.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.h.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), l.h.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
@@ -51,12 +51,12 @@ class E extends a.A {
             })
         }, {
             modalKey: m.Uy,
-            onCloseRequest: p.tEg,
+            onCloseRequest: g.tEg,
             backdropStyle: (0, s.lU)(t) ? r.F2Z.LIGHTBOX : void 0
         })
     }
     handleAgeGateSuccess() {
-        o.A.showSuccessToast(g.OB.EXISTING_USER_AGE_GATE_SUCCESS), (0, r.OoC)(m.Uy)
+        o.A.showSuccessToast(p.OB.EXISTING_USER_AGE_GATE_SUCCESS), (0, r.OoC)(m.Uy)
     }
     handleAgeGateFailure(e) {
         let {
@@ -74,7 +74,7 @@ class E extends a.A {
         let {
             guild: t
         } = e, n = u.A.getGuildId();
-        if (null != n && t.id === n && (t.owner_configured_content_level === p.ftr.AGE_RESTRICTED || (0, h.v)("age_gate_manager") && d.uA.has(t.nsfw_level))) return void(0, A.kK)(t.id, null)
+        if (null != n && t.id === n && (t.owner_configured_content_level === g.ftr.AGE_RESTRICTED || (0, h.v)("age_gate_manager") && d.uA.has(t.nsfw_level))) return void(0, A.kK)(t.id, null)
     }
 }
 let I = new E

@@ -1,22 +1,22 @@
-/** chunk id: 744149, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    S: () => o
+/** chunk id: 744149, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    S: () => d
 });
-var n = i(311907),
-    l = i(827343),
-    s = i(419954),
-    a = i(430452),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.zD)(r.X.STREAMING_ADVANCED_SCREENSHARE, {
-    useTitle: () => u.intl.string(u.t.GmWk2E),
-    useSearchTerms: () => [u.intl.string(u.t["Fj/xn1"])],
-    useSubtitle: () => u.intl.string(u.t["Fj/xn1"]),
+var i = n(311907),
+    s = n(827343),
+    l = n(419954),
+    a = n(430452),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.zD)(r.X.STREAMING_ADVANCED_SCREENSHARE, {
+    useTitle: () => o.intl.string(o.t.GmWk2E),
+    useSearchTerms: () => [o.intl.string(o.t["Fj/xn1"])],
+    useSubtitle: () => o.intl.string(o.t["Fj/xn1"]),
     useValue: function() {
-        return (0, n.bG)([a.Ay], () => a.Ay.getVideoHook())
+        return (0, i.bG)([a.Ay], () => a.Ay.getVideoHook())
     },
-    setValue: l.A.setVideoHook,
+    setValue: s.A.setVideoHook,
     usePredicate: function() {
-        return (0, n.bG)([a.Ay], () => a.Ay.supportsVideoHook())
+        return (0, i.bG)([a.Ay], () => a.Ay.supportsVideoHook())
     }
 })

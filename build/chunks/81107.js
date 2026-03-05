@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(472501),
-    l = n(864776),
+    l = n(472501),
+    a = n(864776),
     r = n(443935),
     o = n(652215),
-    c = n(513167);
-let d = {
+    d = n(513167);
+let c = {
     offset: {
         top: -8
     }
@@ -18,19 +18,19 @@ let d = {
 
 function u() {
     return (0, i.jsxs)("div", {
-        className: c.lj,
+        className: d.lj,
         children: [(0, i.jsx)(s.MzZ, {
             target: "_blank",
             tabIndex: -1,
             rel: "author",
             title: "X",
-            href: (0, a.A)(o.Pq7.TWITTER),
-            className: c.nf,
-            focusProps: d,
+            href: (0, l.A)(o.Pq7.TWITTER),
+            className: d.nf,
+            focusProps: c,
             children: (0, i.jsx)(s.p3p, {
                 size: "xs",
                 color: "currentColor",
-                colorClass: c.CU,
+                colorClass: d.CU,
                 "aria-hidden": !0
             })
         }), (0, i.jsx)(s.MzZ, {
@@ -39,12 +39,12 @@ function u() {
             title: "Instagram",
             tabIndex: -1,
             href: o.w7I.INSTAGRAM_URL,
-            className: c.nf,
-            focusProps: d,
+            className: d.nf,
+            focusProps: c,
             children: (0, i.jsx)(s.LyU, {
                 size: "xs",
                 color: "currentColor",
-                colorClass: c.CU,
+                colorClass: d.CU,
                 "aria-hidden": !0
             })
         }), (0, i.jsx)(s.MzZ, {
@@ -53,12 +53,12 @@ function u() {
             title: "Facebook",
             tabIndex: -1,
             href: o.w7I.FACEBOOK_URL,
-            className: c.nf,
-            focusProps: d,
+            className: d.nf,
+            focusProps: c,
             children: (0, i.jsx)(s.Zc1, {
                 size: "xs",
                 color: "currentColor",
-                colorClass: c.CU,
+                colorClass: d.CU,
                 "aria-hidden": !0
             })
         }), (0, i.jsx)(s.MzZ, {
@@ -67,12 +67,12 @@ function u() {
             title: "YouTube",
             tabIndex: -1,
             href: o.w7I.YOUTUBE_URL,
-            className: c.nf,
-            focusProps: d,
+            className: d.nf,
+            focusProps: c,
             children: (0, i.jsx)(r.A, {
                 width: 16,
                 height: 16,
-                foreground: c.CU,
+                foreground: d.CU,
                 "aria-hidden": !0
             })
         }), (0, i.jsx)(s.MzZ, {
@@ -81,12 +81,12 @@ function u() {
             title: "TikTok",
             tabIndex: -1,
             href: o.w7I.TIKTOK_URL,
-            className: c.nf,
-            focusProps: d,
-            children: (0, i.jsx)(l.A, {
+            className: d.nf,
+            focusProps: c,
+            children: (0, i.jsx)(a.A, {
                 width: 16,
                 height: 16,
-                foreground: c.CU,
+                foreground: d.CU,
                 "aria-hidden": !0
             })
         })]

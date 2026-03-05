@@ -1,10 +1,10 @@
-/** chunk id: 719847, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    default: () => v
+/** chunk id: 719847, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    default: () => m
 });
 var s = i(627968),
-    r = i(64700),
-    l = i(991660),
+    l = i(64700),
+    r = i(991660),
     n = i(158954),
     C = i(311907),
     a = i(397927),
@@ -19,44 +19,44 @@ var s = i(627968),
     x = i(652215),
     f = i(435220),
     b = i(985018),
-    S = i(801059),
-    g = i(22789);
+    g = i(801059),
+    S = i(22789);
 
-function v(t) {
+function m(e) {
     let {
-        onClose: e,
+        onClose: t,
         transitionState: i,
-        appId: v,
-        guildId: m
-    } = t, j = (0, C.bG)([o.A], () => o.A.getApplication(v), [v]), [w, A] = r.useState(() => o.A.isFetchingApplication(v) ? {
+        appId: m,
+        guildId: j
+    } = e, v = (0, C.bG)([o.A], () => o.A.getApplication(m), [m]), [w, A] = l.useState(() => o.A.isFetchingApplication(m) ? {
         status: 1
     } : {
         status: 0
     });
-    r.useEffect(() => {
+    l.useEffect(() => {
         0 === w.status && (A({
             status: 1
-        }), c.Ay.fetchApplication(v).then(() => {
+        }), c.Ay.fetchApplication(m).then(() => {
             A({
                 status: 2
             })
-        }).catch(t => {
+        }).catch(e => {
             A({
                 status: 3,
-                error: t.message
+                error: e.message
             })
         }))
-    }, [v, w.status]);
+    }, [m, w.status]);
     let {
         subscriptions: V,
         otps: y
-    } = (0, h.C)(v);
-    if (null == j) return null;
+    } = (0, h.C)(m);
+    if (null == v) return null;
     let T = b.intl.formatToPlainString(b.t.XDRjs5, {
-            appName: j.name
+            appName: v.name
         }),
         P = (0, s.jsx)("div", {
-            className: S.K,
+            className: g.K,
             children: (0, s.jsx)(d.h, {})
         }),
         D = p.p5 ? (0, s.jsx)(a.K0, {
@@ -65,26 +65,26 @@ function v(t) {
                 size: "sm"
             }),
             onClick: () => {
-                let t = `${location.protocol}//${location.host}${x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(v,f.GlobalDiscoveryAppsSections.STORE)}`;
-                (0, p.C)(t, () => (0, a.showToast)((0, a.createToast)(b.intl.string(b.t["L/PwZf"]), a.ToastType.SUCCESS))), (0, _.K)(v, _.C.STORE_MODAL)
+                let e = `${location.protocol}//${location.host}${x.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(m,f.GlobalDiscoveryAppsSections.STORE)}`;
+                (0, p.C)(e, () => (0, a.showToast)((0, a.createToast)(b.intl.string(b.t["L/PwZf"]), a.ToastType.SUCCESS))), (0, _.K)(m, _.C.STORE_MODAL)
             },
             variant: "icon-only"
         }) : void 0;
     return (0, s.jsxs)(n.dWK, {
         transitionState: i,
         "aria-label": T,
-        onClose: e,
+        onClose: t,
         size: "xxl",
         children: [(0, s.jsx)(n.rQ0, {
             leading: P,
             title: T,
             trailing: D
-        }), (0, s.jsx)(l.A, {
+        }), (0, s.jsx)(r.A, {
             children: (0, s.jsx)("main", {
-                className: g.bodyInner,
+                className: S.bodyInner,
                 children: (0, s.jsx)(u.Mp, {
-                    app: j,
-                    guildId: m,
+                    app: v,
+                    guildId: j,
                     subscriptions: V,
                     otps: y
                 })
@@ -92,9 +92,9 @@ function v(t) {
         }), (0, s.jsx)(n.jlY, {
             children: (0, s.jsx)(a.Text, {
                 variant: "text-md/normal",
-                children: null != j.termsOfServiceUrl || null != j.privacyPolicyUrl ? (0, s.jsx)(L.A, {
-                    termsOfServiceUrl: j.termsOfServiceUrl,
-                    privacyPolicyUrl: j.privacyPolicyUrl
+                children: null != v.termsOfServiceUrl || null != v.privacyPolicyUrl ? (0, s.jsx)(L.A, {
+                    termsOfServiceUrl: v.termsOfServiceUrl,
+                    privacyPolicyUrl: v.privacyPolicyUrl
                 }) : b.intl.string(b.t["3ZY+0D"])
             })
         })]

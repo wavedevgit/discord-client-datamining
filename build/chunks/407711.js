@@ -1,13 +1,13 @@
-/** chunk id: 407711, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 407711, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     q: () => r
 });
-var n = i(419954),
-    l = i(253932),
-    s = i(780964),
-    a = i(985018);
-let r = (0, n.zD)(s.X.CHAT_INLINE_MEDIA_LINKS, {
+var i = n(419954),
+    s = n(253932),
+    l = n(780964),
+    a = n(985018);
+let r = (0, i.zD)(l.X.CHAT_INLINE_MEDIA_LINKS, {
     useTitle: () => a.intl.string(a.t.U47N1p),
-    useValue: l.hD.useSetting,
-    setValue: l.hD.updateSetting
+    useValue: s.hD.useSetting,
+    setValue: s.hD.updateSetting
 })

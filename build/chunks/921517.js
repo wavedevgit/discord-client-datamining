@@ -1,12 +1,12 @@
 /** chunk id: 921517, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    RL: () => o,
-    sH: () => c
+    RL: () => i,
+    sH: () => s
 });
-var n = a(933681),
-    r = a(945810),
-    i = a(654487);
-let _ = (0, r.mj)({
+var r = a(933681),
+    n = a(945810),
+    _ = a(654487);
+let o = (0, n.mj)({
     name: "2026-01-quest-bar-unfurl",
     kind: "user",
     defaultConfig: {
@@ -25,16 +25,16 @@ let _ = (0, r.mj)({
     }
 });
 
-function o(e) {
+function i(e) {
     return !0
 }
 
-function c() {
+function s() {
     let {
         enabled: e,
         variant: t
-    } = _.useConfig({
-        location: i.rE.QUESTS_BAR
+    } = o.useConfig({
+        location: _.rE.QUESTS_BAR
     });
     return {
         unfurlEnabled: e,
@@ -45,7 +45,7 @@ function c() {
                 case 1:
                     return 1e4;
                 default:
-                    (0, n.dr)(e)
+                    (0, r.dr)(e)
             }
         }(t)
     }

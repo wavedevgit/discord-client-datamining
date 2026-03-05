@@ -1,6 +1,6 @@
 /** chunk id: 626031, original params: e,t,l (module,exports,require) **/
 l.d(t, {
-    A: () => f
+    A: () => y
 });
 var a = l(627968),
     n = l(64700),
@@ -17,7 +17,7 @@ var a = l(627968),
 let x = new c.A("BalanceCounter"),
     b = (0, d._$)(void 0) === m.B.PRODUCTION,
     g = e => null == e ? 0 : `${e.toFixed(0)}`.length,
-    y = e => {
+    f = e => {
         let {
             value: t,
             onSetDigitCount: l,
@@ -37,19 +37,19 @@ let x = new c.A("BalanceCounter"),
                 totalDelta: Math.abs(e)
             }
         }, [t, r]);
-        let y = t ?? 0,
-            f = m.current ?? y,
+        let f = t ?? 0,
+            y = m.current ?? f,
             {
                 duration: E,
                 delay: v
-            } = (0, p.Y)(y - f, u),
+            } = (0, p.Y)(f - y, u),
             {
                 number: S
             } = (0, o.zhh)({
                 from: {
-                    number: m.current ?? y
+                    number: m.current ?? f
                 },
-                number: y,
+                number: f,
                 config: {
                     mass: 1,
                     tension: 20,
@@ -58,17 +58,17 @@ let x = new c.A("BalanceCounter"),
                 },
                 delay: v,
                 onStart: () => {
-                    l(g(f))
+                    l(g(y))
                 },
                 onRest: () => {
                     if (d(c + 1), i(), !b && null !== h.current && null !== m.current) {
                         let e = Date.now();
                         x.log("Balance Counter finished updating: ", {
                             time: e - h.current.lastChangedAt,
-                            delta: y - m.current
+                            delta: f - m.current
                         })
                     }
-                    l(g(y)), m.current = y
+                    l(g(f)), m.current = f
                 }
             }),
             j = g(Math.max(t ?? 0, S.get()));
@@ -79,7 +79,7 @@ let x = new c.A("BalanceCounter"),
             children: S.to(e => `${e.toFixed(0)}`)
         })
     },
-    f = e => {
+    y = e => {
         let {
             value: t,
             className: l,
@@ -92,7 +92,7 @@ let x = new c.A("BalanceCounter"),
                 width: b,
                 opacity: s ? "0" : 1
             },
-            children: s ? null : (0, a.jsx)(y, {
+            children: s ? null : (0, a.jsx)(f, {
                 onSetDigitCount: e => {
                     e !== c && d(e)
                 },

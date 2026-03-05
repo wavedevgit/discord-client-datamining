@@ -1,19 +1,19 @@
-/** chunk id: 573858, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    i: () => S
+/** chunk id: 573858, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    i: () => g
 });
-var n = i(311907),
-    l = i(419954),
-    s = i(430452),
-    a = i(780964),
-    r = i(774204),
-    u = i(694307),
-    o = i(353444),
-    d = i(296169),
-    A = i(731854),
-    T = i(985018);
-let S = (0, l.zZ)(a.X.CAMERA_CATEGORY, {
-    useTitle: () => T.intl.string(T.t.uje3P9),
-    usePredicate: () => (0, n.bG)([s.Ay], () => s.Ay.supports(A.O5.VIDEO)),
-    buildLayout: () => [d.z, u.F, o.s, r.q]
+var i = n(311907),
+    s = n(419954),
+    l = n(430452),
+    a = n(780964),
+    r = n(774204),
+    o = n(694307),
+    d = n(353444),
+    c = n(296169),
+    u = n(731854),
+    _ = n(985018);
+let g = (0, s.zZ)(a.X.CAMERA_CATEGORY, {
+    useTitle: () => _.intl.string(_.t.uje3P9),
+    usePredicate: () => (0, i.bG)([l.Ay], () => l.Ay.supports(u.O5.VIDEO)),
+    buildLayout: () => [c.z, o.F, d.s, r.q]
 })

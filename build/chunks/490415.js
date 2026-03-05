@@ -1,25 +1,25 @@
 /** chunk id: 490415, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(627968),
     s = n(64700),
-    a = n(961350);
+    l = n(961350);
 
-function l(e) {
+function a(e) {
     return class extends s.Component {
         state = {
-            isAuthenticated: a.default.isAuthenticated()
+            isAuthenticated: l.default.isAuthenticated()
         };
         componentDidMount() {
-            a.default.addChangeListener(this.onStoreChange)
+            l.default.addChangeListener(this.onStoreChange)
         }
         componentWillUnmount() {
-            a.default.removeChangeListener(this.onStoreChange)
+            l.default.removeChangeListener(this.onStoreChange)
         }
         onStoreChange = () => {
             this.setState({
-                isAuthenticated: a.default.isAuthenticated()
+                isAuthenticated: l.default.isAuthenticated()
             })
         };
         render() {

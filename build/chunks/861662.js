@@ -5,12 +5,12 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(791332),
-    i = n.n(a),
-    r = n(397927);
+    r = n.n(a),
+    i = n(397927);
 let s = {
-    ...i().defaultRules.link,
+    ...r().defaultRules.link,
     react: function(e, t, n) {
-        return (0, l.jsx)(r.MzZ, {
+        return (0, l.jsx)(i.MzZ, {
             href: e.target,
             target: "_blank",
             children: t(e.content, n)

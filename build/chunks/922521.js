@@ -1,15 +1,15 @@
-/** chunk id: 922521, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    v: () => o
+/** chunk id: 922521, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    v: () => d
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(815657),
-    a = i(463570),
-    r = i(604095),
-    u = i(54863);
-let o = (0, n.zZ)(l.X.LINUX_CATEGORY, {
-    buildLayout: () => [s.P, a.y, u.V],
+var i = n(419954),
+    s = n(780964),
+    l = n(815657),
+    a = n(463570),
+    r = n(604095),
+    o = n(54863);
+let d = (0, i.zZ)(s.X.LINUX_CATEGORY, {
+    buildLayout: () => [l.P, a.y, o.V],
     initialize: () => {
         (0, r._s)()
     }

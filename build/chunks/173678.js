@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(575593),
     l = n(635358),
-    r = n(397927),
-    a = n(576030),
+    a = n(397927),
+    r = n(576030),
     o = n(245068),
     c = n(44120),
     d = n(353157),
@@ -33,7 +33,7 @@ function _(e, t) {
     let {
         moreCount: n,
         profileOwner: l,
-        analyticsLocations: r,
+        analyticsLocations: a,
         onViewWishlist: c,
         isSingleCard: h = !1,
         wishlistId: p,
@@ -42,15 +42,15 @@ function _(e, t) {
     } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = _ && !C, I = C ? A.intl.string(A.t.TxBQzD) : A.intl.string(A.t.pLPjsb), N = {
         title: E ? A.intl.string(A.t.HFhcqh) : I,
         body: E ? A.intl.string(A.t.ilhtIa) : void 0,
-        renderIcon: E ? a.GM : void 0,
+        renderIcon: E ? r.GM : void 0,
         shouldShow: !0
-    }, S = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
+    }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(u.A, {
         onCardClick: () => {
-            C ? c() : g(e, l, r)
+            C ? c() : g(e, l, a)
         },
         tooltipConfig: N,
-        shouldScalePreview: x || !S,
+        shouldScalePreview: x || !b,
         renderPreview: () => {
             if (x) {
                 let t = {
@@ -83,14 +83,14 @@ function f(e, t) {
     let {
         profileOwner: n,
         analyticsLocations: l,
-        wishlistId: a,
+        wishlistId: r,
         onViewWishlist: o
     } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = _(e, {
         profileOwner: n,
         analyticsLocations: l,
         onViewWishlist: o,
         isSingleCard: !0,
-        wishlistId: a,
+        wishlistId: r,
         index: 0
     }), u = c ? A.intl.string(A.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
@@ -108,19 +108,19 @@ function f(e, t) {
         className: p.D5,
         children: [d, (0, i.jsxs)("div", {
             className: p.S7,
-            children: [(0, i.jsx)(r.DUT, {
+            children: [(0, i.jsx)(a.DUT, {
                 onClick: () => {
                     g(e, n, l)
                 },
                 className: p.Hh,
                 "aria-label": A.intl.string(A.t.pLPjsb),
-                children: (0, i.jsx)(r.Text, {
+                children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     lineClamp: 2,
                     children: e.skuName
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: u

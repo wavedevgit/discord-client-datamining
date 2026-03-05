@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     s = n(77509),
-    a = n(128747);
-let l = [];
+    l = n(128747);
+let a = [];
 
 function r(e) {
     let {
@@ -13,20 +13,20 @@ function r(e) {
         autocompleterResultTypes: n,
         autocompleterOptions: r,
         autocompleterBeforeCreateSearchContext: o
-    } = e, [c, d] = i.useState(""), [u, _] = i.useState(l), m = i.useCallback((e, t) => {
-        "" === (t = t.trim()).trim() ? _(l) : _(e)
+    } = e, [d, c] = i.useState(""), [u, _] = i.useState(a), g = i.useCallback((e, t) => {
+        "" === (t = t.trim()).trim() ? _(a) : _(e)
     }, []);
     i.useEffect(() => s.A.addRouteChangeListener(() => {
-        d("")
+        c("")
     }), []);
-    let [A] = i.useState(() => new a.A(m, n, void 0, r));
+    let [m] = i.useState(() => new l.A(g, n, void 0, r));
     return i.useEffect(() => {
-        t ? (o?.(A), A.createSearchContext()) : (A.clean(), d(""))
-    }, [t, A, o]), {
+        t ? (o?.(m), m.createSearchContext()) : (m.clean(), c(""))
+    }, [t, m, o]), {
         queryResults: u,
-        query: c,
+        query: d,
         updateQuery: i.useCallback(e => {
-            d(e), A.search(e)
-        }, [A])
+            c(e), m.search(e)
+        }, [m])
     }
 }

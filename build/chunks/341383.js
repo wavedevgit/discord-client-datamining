@@ -15,8 +15,8 @@ var i = n(73153),
     h = n(572164),
     _ = n(399925),
     m = n(963169),
-    p = n(652896),
-    g = n(349963),
+    g = n(652896),
+    p = n(349963),
     E = n(140175),
     I = n(528772),
     f = n(123973),
@@ -164,8 +164,8 @@ let M = {
     [R.hCu.TOGGLE_GO_LIVE_STREAMING]: {
         onTrigger() {
             let e = T.A.getCurrentUserActiveStream();
-            if (null != e) return (0, s.vN)((0, p._z)(e));
-            (0, g.A)(!0, [u.A.GO_LIVE_KEYBIND])
+            if (null != e) return (0, s.vN)((0, g._z)(e));
+            (0, p.A)(!0, [u.A.GO_LIVE_KEYBIND])
         },
         keyEvents: {
             keyup: !0,

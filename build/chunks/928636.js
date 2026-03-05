@@ -14,8 +14,8 @@ var i, r = n(627968),
     h = n(397927),
     _ = n(956793),
     m = n(492684),
-    p = n(212245),
-    g = n(573648),
+    g = n(212245),
+    p = n(573648),
     E = n(447031),
     I = n(908289),
     f = n(682261),
@@ -180,7 +180,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
         }
         return null
     },
-    ep = e => {
+    eg = e => {
         let {
             activity: t,
             analyticsLocations: n
@@ -216,7 +216,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
             })]
         })
     };
-var eg = ((i = eg || {}).XBOX = "XBOX", i.SPOTIFY = "SPOTIFY", i.MULTIPLE = "MULTIPLE", i);
+var ep = ((i = ep || {}).XBOX = "XBOX", i.SPOTIFY = "SPOTIFY", i.MULTIPLE = "MULTIPLE", i);
 let eE = e => {
     let t, {
         src: n,
@@ -260,7 +260,7 @@ let eE = e => {
         children: t
     }) : t
 };
-eE.Src = eg;
+eE.Src = ep;
 let eI = e => {
     let {
         priorityUser: t,
@@ -416,7 +416,7 @@ ef.Header = eI, ef.Body = e => {
                 partySize: i,
                 members: l
             })]
-        }), (0, r.jsx)(ep, {
+        }), (0, r.jsx)(eg, {
             activity: a,
             analyticsLocations: s
         })]
@@ -488,7 +488,7 @@ ef.Header = eI, ef.Body = e => {
                 activity: t,
                 user: l
             })]
-        }), (0, r.jsx)(ep, {
+        }), (0, r.jsx)(eg, {
             activity: t,
             analyticsLocations: a
         })]
@@ -583,7 +583,7 @@ ef.Header = eI, ef.Body = e => {
             }),
             children: [(0, r.jsx)("img", {
                 alt: "",
-                src: g.A.get(er.fg2.TWITCH).icon.lightSVG,
+                src: p.A.get(er.fg2.TWITCH).icon.lightSVG,
                 className: ea.Gq
             }), (0, r.jsxs)("div", {
                 children: [eo(d), null != c ? ed(c) : null]
@@ -649,14 +649,14 @@ ef.Header = eI, ef.Body = e => {
         })
     }, [c]);
     let u = (0, d.yK)([X.default, $.default], () => Array.from(a).map(e => $.default.getId() === e ? null : X.default.getUser(e)).filter(et.Vq)),
-        A = (0, p.p)(),
+        A = (0, g.p)(),
         {
             analyticsLocations: _
         } = (0, y.Ay)();
     if (null == c) return null;
     let m = L.A.getApplication(c);
     if (null == m) return null;
-    let g = null != t.created_at && t.created_at > 0 ? {
+    let p = null != t.created_at && t.created_at > 0 ? {
             start: t.created_at
         } : void 0,
         I = (0, ee.uD)(m.id, s, 300);
@@ -673,13 +673,13 @@ ef.Header = eI, ef.Body = e => {
                     variant: "text-sm/semibold",
                     children: m.name
                 })
-            }), null != g ? (0, r.jsx)("div", {
+            }), null != p ? (0, r.jsx)("div", {
                 className: ea.T$,
                 children: (0, r.jsx)(h.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: (0, r.jsx)(ec, {
-                        timestamps: g
+                        timestamps: p
                     })
                 })
             }) : null]

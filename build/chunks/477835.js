@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     _ = n(793574),
     m = n(688810),
-    p = n(384059),
-    g = n(480890),
+    g = n(384059),
+    p = n(480890),
     E = n(160761),
     I = n(173660),
     f = n(430452),
@@ -52,7 +52,7 @@ function O(e) {
                 guildId: w,
                 sourceAnalyticsLocations: V,
                 ...t,
-                onInteraction: (0, g.s)("SoundboardContextMenu", _.A.RTC_PANEL)
+                onInteraction: (0, p.s)("SoundboardContextMenu", _.A.RTC_PANEL)
             })
         })
     }
@@ -110,7 +110,7 @@ function O(e) {
                         innerClassName: b.bk,
                         disabled: j,
                         onClick: () => {
-                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!D), Y(), (0, p.X)(B, p.O.SOUNDBOARD)
+                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!D), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
                             l.onMouseEnter?.(e), W()

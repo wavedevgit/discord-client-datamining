@@ -1,29 +1,29 @@
-/** chunk id: 693804, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    j: () => A
+/** chunk id: 693804, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    j: () => u
 });
-var n = i(311907),
-    l = i(264686),
-    s = i(100767),
-    a = i(419954),
-    r = i(803224),
-    u = i(780964),
-    o = i(652215),
-    d = i(985018);
-let A = (0, a.Qx)(u.X.TEXT_TO_SPEECH_NOTIFICATIONS, {
-    useTitle: () => d.intl.string(d.t.JZxxGx),
-    useSubtitle: () => d.intl.string(d.t.HDLtJl),
-    useValue: () => (0, n.bG)([r.A], () => r.A.getTTSType()),
-    setValue: t => l.default.setTTSType(t),
+var i = n(311907),
+    s = n(264686),
+    l = n(100767),
+    a = n(419954),
+    r = n(803224),
+    o = n(780964),
+    d = n(652215),
+    c = n(985018);
+let u = (0, a.Qx)(o.X.TEXT_TO_SPEECH_NOTIFICATIONS, {
+    useTitle: () => c.intl.string(c.t.JZxxGx),
+    useSubtitle: () => c.intl.string(c.t.HDLtJl),
+    useValue: () => (0, i.bG)([r.A], () => r.A.getTTSType()),
+    setValue: e => s.default.setTTSType(e),
     useOptions: () => [{
-        name: d.intl.string(d.t.B1AGeJ),
-        value: o.aVn.ALL_CHANNELS
+        name: c.intl.string(c.t.B1AGeJ),
+        value: d.aVn.ALL_CHANNELS
     }, {
-        name: d.intl.string(d.t.uzZg9e),
-        value: o.aVn.SELECTED_CHANNEL
+        name: c.intl.string(c.t.uzZg9e),
+        value: d.aVn.SELECTED_CHANNEL
     }, {
-        name: d.intl.string(d.t.DYO5Oi),
-        value: o.aVn.NEVER
+        name: c.intl.string(c.t.DYO5Oi),
+        value: d.aVn.NEVER
     }],
-    usePredicate: () => s.$j
+    usePredicate: () => l.$j
 })

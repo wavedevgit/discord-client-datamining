@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(739693),
-    l = n(985018);
+    l = n(739693),
+    a = n(985018);
 
 function r() {
     return (0, i.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
-        text: l.intl.string(l.t["FRep5/"]),
-        onClick: () => (0, s.qfG)(e => (0, i.jsx)(a.default, {
+        text: a.intl.string(a.t["FRep5/"]),
+        onClick: () => (0, s.qfG)(e => (0, i.jsx)(l.default, {
             ...e,
             onSuccess: e.onClose
         }))

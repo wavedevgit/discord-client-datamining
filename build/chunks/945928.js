@@ -1,85 +1,85 @@
-/** chunk id: 945928, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => p
+/** chunk id: 945928, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Q: () => I
 });
-var n = i(64700),
-    l = i(311907),
-    s = i(827343),
-    a = i(793574),
-    r = i(419954),
-    u = i(933297),
-    o = i(347481),
-    d = i(430452),
-    A = i(780964),
-    T = i(77735),
-    S = i(791460),
-    E = i(53386),
-    g = i(585175),
-    c = i(338145),
-    _ = i(299752),
-    I = i(180491),
-    C = i(903427),
-    N = i(509381),
-    O = i(985018);
-let b = (0, r.Qx)(A.X.VOICE_INPUT_PROFILE_SETTING, {
-        useTitle: () => O.intl.string(O.t.LM3U3k),
+var i = n(64700),
+    s = n(311907),
+    l = n(827343),
+    a = n(793574),
+    r = n(419954),
+    o = n(933297),
+    d = n(347481),
+    c = n(430452),
+    u = n(780964),
+    _ = n(77735),
+    g = n(791460),
+    m = n(53386),
+    A = n(585175),
+    h = n(338145),
+    p = n(299752),
+    x = n(180491),
+    E = n(903427),
+    T = n(509381),
+    S = n(985018);
+let C = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
+        useTitle: () => S.intl.string(S.t.LM3U3k),
         usePredicate: function() {
             let {
-                enabledInputProfiles: t
-            } = (0, T._)({
+                enabledInputProfiles: e
+            } = (0, _._)({
                 location: "SettingsRendererConfig"
             });
-            return t.length > 0
+            return e.length > 0
         },
-        useSearchTerms: () => [O.intl.string(O.t.nuFtHH), O.intl.string(O.t.VZPR0R), O.intl.string(O.t.cjPbpT)],
+        useSearchTerms: () => [S.intl.string(S.t.nuFtHH), S.intl.string(S.t.VZPR0R), S.intl.string(S.t.cjPbpT)],
         useValue: function() {
-            return (0, l.bG)([d.Ay], () => d.Ay.getActiveInputProfile() ?? N.m.CUSTOM)
+            return (0, s.bG)([c.Ay], () => c.Ay.getActiveInputProfile() ?? T.m.CUSTOM)
         },
-        setValue: function(t) {
-            let e = [a.A.USER_SETTINGS_VOICE_AND_VIDEO];
-            s.A.setActiveInputProfile(t, {
-                analyticsLocations: e
+        setValue: function(e) {
+            let t = [a.A.USER_SETTINGS_VOICE_AND_VIDEO];
+            l.A.setActiveInputProfile(e, {
+                analyticsLocations: t
             })
         },
         useOptions: function() {
             let {
-                enabledInputProfiles: t
-            } = (0, T.d)({
+                enabledInputProfiles: e
+            } = (0, _.d)({
                 location: "InputProfileCategory"
             });
             return [{
-                value: N.m.VOICE_ISOLATION,
-                name: O.intl.string(O.t.cjPbpT),
-                desc: O.intl.string(O.t.CzhvnE)
+                value: T.m.VOICE_ISOLATION,
+                name: S.intl.string(S.t.cjPbpT),
+                desc: S.intl.string(S.t.CzhvnE)
             }, {
-                value: N.m.STUDIO,
-                name: O.intl.string(O.t.VZPR0R),
-                desc: O.intl.string(O.t.ZaJksS)
+                value: T.m.STUDIO,
+                name: S.intl.string(S.t.VZPR0R),
+                desc: S.intl.string(S.t.ZaJksS)
             }, {
-                value: N.m.CUSTOM,
-                name: O.intl.string(O.t["N/PQjv"]),
-                desc: O.intl.string(O.t.SnBmuY)
-            }].filter(e => {
+                value: T.m.CUSTOM,
+                name: S.intl.string(S.t["N/PQjv"]),
+                desc: S.intl.string(S.t.SnBmuY)
+            }].filter(t => {
                 let {
-                    value: i
-                } = e;
-                return t.includes(i)
+                    value: n
+                } = t;
+                return e.includes(n)
             })
         }
     }),
-    p = (0, r.zZ)(A.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    I = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
-            let t = (0, l.bG)([o.A, d.Ay], () => {
-                let t = d.Ay.getInputDeviceId();
-                return (o.A.hasEchoCancellation(t) || o.A.hasNoiseSuppression(t) || o.A.hasAutomaticGainControl(t)) && d.Ay.isInputProfileCustom()
+            let e = (0, s.bG)([d.A, c.Ay], () => {
+                let e = c.Ay.getInputDeviceId();
+                return (d.A.hasEchoCancellation(e) || d.A.hasNoiseSuppression(e) || d.A.hasAutomaticGainControl(e)) && c.Ay.isInputProfileCustom()
             });
-            return n.useMemo(() => {
-                if (t) return {
-                    type: u.lT.INLINE_NOTICE,
+            return i.useMemo(() => {
+                if (e) return {
+                    type: o.lT.INLINE_NOTICE,
                     noticeType: "info",
-                    useText: () => O.intl.string(O.t["/Whuzi"])
+                    useText: () => S.intl.string(S.t["/Whuzi"])
                 }
-            }, [t])
+            }, [e])
         },
-        buildLayout: () => [b, g.O, c.w, E.h, C.K, _.C, I.m, S.U]
+        buildLayout: () => [C, A.O, h.w, m.h, E.K, p.C, x.m, g.U]
     })

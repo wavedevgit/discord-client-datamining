@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    a = n(204925),
-    l = n(818348);
+    l = n(204925),
+    a = n(818348);
 let r = {
     openNewUserAgeGateModal: e => {
         (0, s.mMO)(async () => {
@@ -17,8 +17,8 @@ let r = {
                 ...t
             })
         }, {
-            modalKey: a.jc,
-            onCloseRequest: l.tE,
+            modalKey: l.jc,
+            onCloseRequest: a.tE,
             onCloseCallback: e
         })
     },
@@ -34,7 +34,7 @@ let r = {
                 ...n
             })
         }, {
-            onCloseRequest: e ? l.tE : null,
+            onCloseRequest: e ? a.tE : null,
             onCloseCallback: t
         })
     }

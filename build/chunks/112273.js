@@ -16,8 +16,8 @@ var r = n(956793),
     h = n(710969),
     _ = n(639214),
     m = n(834615),
-    p = n(139675),
-    g = n(516085),
+    g = n(139675),
+    p = n(516085),
     E = n(928636),
     I = n(812808);
 n(595);
@@ -65,7 +65,7 @@ function C(e) {
             }, `voice-${r.id}`))
         }), t.currentActivities))
         if (null != e) {
-            let t = g.Fm(e);
+            let t = p.Fm(e);
             if (null != t) {
                 L(t);
                 break
@@ -118,7 +118,7 @@ function C(e) {
             title: r.name
         }, `xbox-${n.session_id??t}`)) : L((0, i.jsx)(E.A.RichPresenceSection, {
             activity: n,
-            getAssetImage: p.uD,
+            getAssetImage: g.uD,
             user: A
         }, `rich-presence-${n.session_id??t}-${A.id}`));
         else if ((0, c.A)(n)) {
@@ -128,7 +128,7 @@ function C(e) {
                 guildId: y?.id,
                 activity: n,
                 user: e || r ? A : null,
-                getAssetImage: p.uD
+                getAssetImage: g.uD
             }, `streaming-${n.session_id??t}`))
         } else n.type === f.$pd.LISTENING && ((0, o.A)(n) ? L((0, i.jsx)(E.A.SpotifySection, {
             activity: n,
@@ -138,11 +138,11 @@ function C(e) {
                 unknownSize: 0,
                 totalSize: l.length
             },
-            getAssetImage: p.uD,
+            getAssetImage: g.uD,
             members: l
         }, `spotify-${n.session_id??t}-${A.id}`)) : (null != n.assets || (0, a.A)(n)) && L((0, i.jsx)(E.A.RichPresenceSection, {
             activity: n,
-            getAssetImage: p.uD,
+            getAssetImage: g.uD,
             user: A
         }, `rich-presence-${n.session_id??t}-${A.id}`)));
         b && null != C && null != r && (0, _.zS)(n, C) && (null == C.userStatus || !(0, h.gO)(C.userStatus, u.uF.ACTIVITY_PANEL)) && L((0, i.jsx)(m.A, {

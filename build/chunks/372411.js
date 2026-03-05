@@ -1,45 +1,45 @@
-/** chunk id: 372411, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    E: () => g
+/** chunk id: 372411, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => A
 });
-var n = i(311907),
-    l = i(264686),
-    s = i(970931),
-    a = i(419954),
-    r = i(803224),
-    u = i(780964),
-    o = i(932055),
-    d = i(985018);
-let A = {
-        useTitle: () => d.intl.string(d.t.jD1qzM),
+var i = n(311907),
+    s = n(264686),
+    l = n(970931),
+    a = n(419954),
+    r = n(803224),
+    o = n(780964),
+    d = n(932055),
+    c = n(985018);
+let u = {
+        useTitle: () => c.intl.string(c.t.jD1qzM),
         sound: "message1",
-        useDisabled: s.kB,
-        useDisabledMessage: () => (0, s.kB)() ? d.intl.string(d.t.cIRG0s) : void 0
+        useDisabled: l.kB,
+        useDisabledMessage: () => (0, l.kB)() ? c.intl.string(c.t.cIRG0s) : void 0
     },
-    T = {
-        useTitle: () => d.intl.string(d.t.XBrJT6),
+    _ = {
+        useTitle: () => c.intl.string(c.t.XBrJT6),
         sound: "call_ringing"
     },
-    S = (0, a.zD)(u.X.SELECTED_CHANNEL_NOTIFICATIONS, {
-        useTitle: () => d.intl.string(d.t.TzjwV9),
-        useSubtitle: () => d.intl.format(d.t.OOiGCM, {
-            onClick: () => (0, o.Jz)("message3")
+    g = (0, a.zD)(o.X.SELECTED_CHANNEL_NOTIFICATIONS, {
+        useTitle: () => c.intl.string(c.t.TzjwV9),
+        useSubtitle: () => c.intl.format(c.t.OOiGCM, {
+            onClick: () => (0, d.Jz)("message3")
         }),
-        useValue: () => (0, n.bG)([r.A], () => r.A.getNotifyMessagesInSelectedChannel() && !r.A.getDisableAllSounds()),
-        setValue: t => l.default.setNotifyMessagesInSelectedChannel(t),
-        useDisabled: () => (0, n.bG)([r.A], () => r.A.getDisableAllSounds())
+        useValue: () => (0, i.bG)([r.A], () => r.A.getNotifyMessagesInSelectedChannel() && !r.A.getDisableAllSounds()),
+        setValue: e => s.default.setNotifyMessagesInSelectedChannel(e),
+        useDisabled: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds())
     }),
-    E = (0, a.zD)(u.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
-        useTitle: () => d.intl.string(d.t["2ZhCOd"]),
-        useSubtitle: () => d.intl.string(d.t.EAKdPr),
-        useValue: () => (0, n.bG)([r.A], () => r.A.getDisableAllSounds()),
-        setValue: t => l.default.toggleDisableAllSounds(t)
+    m = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+        useTitle: () => c.intl.string(c.t["2ZhCOd"]),
+        useSubtitle: () => c.intl.string(c.t.EAKdPr),
+        useValue: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds()),
+        setValue: e => s.default.toggleDisableAllSounds(e)
     }),
-    g = (0, a.D1)(u.X.NOTIFICATION_SOUNDS_LIST, {
+    A = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
         initialize: function() {
             return () => {
-                (0, o.vd)()
+                (0, d.vd)()
             }
         },
-        buildLayout: () => [(0, o.i)(A), S, (0, o.i)(T), E]
+        buildLayout: () => [(0, d.i)(u), g, (0, d.i)(_), m]
     })

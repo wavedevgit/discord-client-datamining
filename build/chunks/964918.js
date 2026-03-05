@@ -6,9 +6,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     c = n(311907),
     d = n(397927),
     u = n(730134),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(652215),
     I = n(37411),
     N = n(985018),
-    S = n(533848),
-    b = n(248789);
+    b = n(533848),
+    S = n(248789);
 
 function T(e) {
     let {
@@ -37,22 +37,22 @@ function T(e) {
                 i = _.Ay.lastMessageId(t.id);
             return C.default.compare(n, i)
         }).reverse().value()
-    }), a = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
+    }), r = t.isForumLikeChannel() ? 5 : 3, u = t.isForumLikeChannel() ? d.bSJ : d.ysw;
     return s.useEffect(() => {
         (0, m.TE)()
     }, []), (0, i.jsxs)("div", {
-        className: r()(b.popover, S.SW),
+        className: a()(S.popover, b.SW),
         children: [(0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: S.DD,
+            className: b.DD,
             children: t.isForumLikeChannel() ? N.intl.string(N.t.ioVdO2) : N.intl.string(N.t.VNYs2v)
         }), (0, i.jsxs)("div", {
-            className: S.p_,
-            children: [l.slice(0, t.isForumLikeChannel() ? l.length : a).map(e => (0, i.jsx)(v, {
+            className: b.p_,
+            children: [l.slice(0, t.isForumLikeChannel() ? l.length : r).map(e => (0, i.jsx)(v, {
                 thread: e
-            }, e.id)).filter(e => s.isValidElement(e)).slice(0, a), (0, i.jsxs)(d.DUT, {
-                className: S.nM,
+            }, e.id)).filter(e => s.isValidElement(e)).slice(0, r), (0, i.jsxs)(d.DUT, {
+                className: b.nM,
                 onClick: () => {
                     t.isForumLikeChannel() ? (0, h.iN)(t.id) : (0, d.mMO)(async () => {
                         let {
@@ -65,13 +65,13 @@ function T(e) {
                     })
                 },
                 children: [(0, i.jsx)("div", {
-                    className: S.R4,
+                    className: b.R4,
                     children: (0, i.jsx)(u, {
                         size: "custom",
-                        className: S.Kk
+                        className: b.Kk
                     })
                 }), (0, i.jsx)("div", {
-                    className: S.Pf,
+                    className: b.Pf,
                     children: (0, i.jsx)(d.Text, {
                         variant: "text-sm/normal",
                         color: "none",
@@ -88,25 +88,25 @@ function v(e) {
         thread: t
     } = e, n = (0, c.bG)([f.default], () => f.default.getUser(t.ownerId)), s = (0, m.JO)(t);
     return (0, i.jsxs)(d.DUT, {
-        className: S.nM,
+        className: b.nM,
         onClick: e => {
             (0, p.JA)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, I.H9.POPOUT)
         },
         children: [(0, i.jsx)("div", {
-            className: S.R4,
+            className: b.R4,
             children: null == n ? (0, i.jsx)("img", {
-                className: S.my,
+                className: b.my,
                 src: x.Ay.getDefaultAvatarURL(void 0, void 0),
                 alt: ""
             }) : (0, i.jsx)(u.A, {
-                className: S.my,
+                className: b.my,
                 user: n,
                 size: d._3J.SIZE_16
             })
         }), (0, i.jsxs)("div", {
-            className: S.Pf,
+            className: b.Pf,
             children: [(0, i.jsx)(d.Text, {
-                className: S.UU,
+                className: b.UU,
                 variant: "text-sm/normal",
                 color: "none",
                 children: t.name
@@ -115,7 +115,7 @@ function v(e) {
                 color: "text-muted",
                 children: "•"
             }), (0, i.jsx)(d.Text, {
-                className: S.vE,
+                className: b.vE,
                 variant: "text-sm/normal",
                 color: "text-muted",
                 children: (0, m.aK)(s)

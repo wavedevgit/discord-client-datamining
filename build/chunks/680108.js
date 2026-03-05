@@ -13,19 +13,19 @@ var a = n(627968),
     u = n(817363),
     m = n(315949),
     h = n(559474),
-    p = n(259248),
-    x = n(43708),
+    x = n(259248),
+    p = n(43708),
     g = n(14752),
     _ = n(103748),
     f = n(553622);
-let b = "Make sure you're only uploading text files!",
-    v = e => {
+let v = "Make sure you're only uploading text files!",
+    b = e => {
         let {
             effect: t,
             onClick: n
         } = e, {
             deleteConfig: i
-        } = (0, x.wu)();
+        } = (0, p.wu)();
         return (0, a.jsxs)(d.DUT, {
             className: f.B0,
             onClick: () => {
@@ -57,17 +57,17 @@ function j() {
         profileEffects: e,
         upsertConfig: t,
         clearAll: n
-    } = (0, x.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([p.A], () => p.A.getAllProfileEffects());
+    } = (0, p.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
-    let [T, y] = i.useState(""), S = i.useMemo(() => "" === T ? C : C.filter(e => {
-        let t = T.toLowerCase(),
+    let [y, T] = i.useState(""), S = i.useMemo(() => "" === y ? C : C.filter(e => {
+        let t = y.toLowerCase(),
             n = e.config.title?.toLowerCase() ?? "",
             a = e.config.description?.toLowerCase() ?? "";
         return n.includes(t) || a.includes(t)
-    }), [T, C]), E = i.useCallback((e, n) => {
-        if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(b);
+    }), [y, C]), E = i.useCallback((e, n) => {
+        if (null == n || !e.type.startsWith("text/")) return (0, h.Ni)(v);
         let [a, i] = n.split(",");
-        if (!a.includes("text/plain")) return (0, h.Ni)(b);
+        if (!a.includes("text/plain")) return (0, h.Ni)(v);
         let s = JSON.parse(atob(i));
         s.skuId = (0, r.A)(), t(s), (0, h.GF)("Profile Effect (maybe??) imported!")
     }, [t]), N = i.useCallback(e => {
@@ -97,7 +97,7 @@ function j() {
                     })]
                 }), (0, a.jsx)("div", {
                     className: f.Iv,
-                    children: Object.values(e).map(e => (0, a.jsx)(v, {
+                    children: Object.values(e).map(e => (0, a.jsx)(b, {
                         effect: e,
                         onClick: e => {
                             j(e)
@@ -136,9 +136,9 @@ function j() {
                     variant: "heading-xl/bold",
                     children: "All Effects"
                 }), (0, a.jsx)(d.ksK, {
-                    value: T,
+                    value: y,
                     onChange: e => {
-                        y(e)
+                        T(e)
                     }
                 }), (0, a.jsx)("div", {
                     className: f.xm,

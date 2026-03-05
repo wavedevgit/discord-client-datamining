@@ -1,9 +1,9 @@
-/** chunk id: 338234, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 338234, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     Uw: () => r,
     fC: () => l
 });
-let i = (0, n(600975).C)({
+let n = (0, i(600975).C)({
     kind: "guild",
     id: "2026-02_voice_user_hover_activities",
     label: "Voice User Activities on Hover",
@@ -22,11 +22,11 @@ let i = (0, n(600975).C)({
 function l(t) {
     let {
         guildId: e,
-        location: n
+        location: i
     } = t;
-    return i.useExperiment({
+    return n.useExperiment({
         guildId: e,
-        location: n
+        location: i
     }, {
         autoTrackExposure: !0
     })
@@ -35,11 +35,11 @@ function l(t) {
 function r(t) {
     let {
         guildId: e,
-        location: n
+        location: i
     } = t;
-    return i.getCurrentConfig({
+    return n.getCurrentConfig({
         guildId: e,
-        location: n
+        location: i
     }, {
         autoTrackExposure: !0
     })

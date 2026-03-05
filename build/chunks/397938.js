@@ -1,13 +1,13 @@
 /** chunk id: 397938, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
     l = n(837381),
-    r = n(311907),
-    a = n(827734),
+    a = n(311907),
+    r = n(827734),
     o = n(397927),
     c = n(941971),
     d = n(900848),
@@ -26,17 +26,17 @@ var C = n(652215),
     I = n(626600);
 
 function N() {
-    let e = (0, r.bG)([m.default], () => m.default.getCurrentUser());
-    return (0, r.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, E.P.NOTIFICATION_CENTER) > 0)
+    let e = (0, a.bG)([m.default], () => m.default.getCurrentUser());
+    return (0, a.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, E.P.NOTIFICATION_CENTER) > 0)
 }
 
-function S(e) {
+function b(e) {
     let {
         onClick: t,
         selectedOverride: n = !1,
         popoutProps: u,
         ref: h
-    } = e, m = (0, l.Vd)("notifications-inbox"), [f, E] = s.useState(!1), S = (0, g.lI)(), b = n || S, {
+    } = e, m = (0, l.Vd)("notifications-inbox"), [f, E] = s.useState(!1), b = (0, g.lI)(), S = n || b, {
         notificationCenterVariant: T
     } = (0, p.X8)({
         location: "NotificationsInboxButtonInner"
@@ -53,7 +53,7 @@ function S(e) {
             unreadChannelIds: n
         } = (0, g.U4)(), s = N(), {
             badge: l,
-            dimensions: r
+            dimensions: a
         } = (0, _.ux)({
             isSelected: e
         });
@@ -64,7 +64,7 @@ function S(e) {
                     width: 13,
                     position: "relative"
                 },
-                color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
+                color: r.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
             }) : null,
             unreadChannelsCount: 0,
             badgeDimensions: {
@@ -74,22 +74,22 @@ function S(e) {
         } : {
             badge: l,
             unreadChannelsCount: n.length,
-            badgeDimensions: r
+            badgeDimensions: a
         }
-    }(b), R = T === p.U5.LEGACY ? o.K$s : o.XFE, O = (0, r.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
+    }(S), R = T === p.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
         if (T === p.U5.SIDEBAR) return C.BVt.CHANNEL(C.gNP, O)
     }, [T, O]);
     return (0, i.jsxs)(d.c, {
         ref: h,
         children: [(0, i.jsx)(c.A, {
-            selected: b && T === p.U5.SIDEBAR,
+            selected: S && T === p.U5.SIDEBAR,
             hovered: f && T === p.U5.SIDEBAR,
             unread: j > 0,
             className: I.Io,
             disabled: T === p.U5.LEGACY
         }), (0, i.jsx)(x.A, {
             children: (0, i.jsx)(o.Qk9, {
-                selected: b || f,
+                selected: S || f,
                 lowerBadge: v,
                 lowerBadgeSize: y,
                 children: (0, i.jsx)(o.jlP, {
@@ -97,7 +97,7 @@ function S(e) {
                     ...u,
                     onClick: t,
                     to: L,
-                    selected: b || f,
+                    selected: S || f,
                     onMouseEnter: () => E(!0),
                     onMouseLeave: () => E(!1),
                     children: (0, i.jsx)(R, {
@@ -113,7 +113,7 @@ function S(e) {
     })
 }
 
-function b() {
+function S() {
     let e = s.useRef(null),
         {
             notificationCenterVariant: t
@@ -122,13 +122,13 @@ function b() {
         }),
         n = N(),
         l = (0, _.HN)();
-    return t === p.U5.SIDEBAR ? (0, i.jsx)(S, {
+    return t === p.U5.SIDEBAR ? (0, i.jsx)(b, {
         onClick: l
     }) : t === p.U5.POPOUT ? (0, i.jsx)(f.A, {
         targetElementRef: e,
         popoutPosition: "right",
         popoutAlign: "bottom",
-        children: (t, n, s) => (0, i.jsx)(S, {
+        children: (t, n, s) => (0, i.jsx)(b, {
             ref: e,
             selectedOverride: n,
             onClick: () => {
@@ -144,7 +144,7 @@ function b() {
         targetElementRef: e,
         popoutPosition: "right",
         popoutAlign: "top",
-        children: (t, n, s) => (0, i.jsx)(S, {
+        children: (t, n, s) => (0, i.jsx)(b, {
             ref: e,
             selectedOverride: n,
             onClick: () => {

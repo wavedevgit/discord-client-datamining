@@ -1,18 +1,18 @@
 /** chunk id: 510898, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
-    a = n(397927),
-    l = n(403362),
+    l = n(397927),
+    a = n(403362),
     r = n(143582),
     o = n(915043),
-    c = n(888848),
-    d = n(331441),
+    d = n(888848),
+    c = n(331441),
     u = n(20770),
     _ = n(985018);
-class m extends s.PureComponent {
+class g extends s.PureComponent {
     state = {
         hasError: !1
     };
@@ -22,8 +22,8 @@ class m extends s.PureComponent {
         }
     }
     render() {
-        return this.state.hasError ? (0, i.jsxs)(a.$Td, {
-            color: a.Hv$.DANGER,
+        return this.state.hasError ? (0, i.jsxs)(l.$Td, {
+            color: l.Hv$.DANGER,
             style: {
                 borderRadius: 0
             },
@@ -36,67 +36,67 @@ class m extends s.PureComponent {
     }
 }
 
-function A(e) {
+function m(e) {
     let {
         subscriptions: t,
         updateHeader: n
-    } = e, [a, A] = s.useState({
-        route: d.R.HOME
+    } = e, [l, m] = s.useState({
+        route: c.R.HOME
     }), {
-        route: g
-    } = a, h = () => {
-        A({
-            route: d.R.HOME
+        route: A
+    } = l, h = () => {
+        m({
+            route: c.R.HOME
         })
-    }, x = e => {
-        A({
-            route: d.R.SWITCH_APP_PLANS,
+    }, p = e => {
+        m({
+            route: c.R.SWITCH_APP_PLANS,
             ...e
         }), n(_.intl.string(_.t.VFqtkP), h)
-    }, [p, E] = s.useState({});
+    }, [x, E] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
             let t = e.items[0]?.planId;
             null != t && (E(t => ({
                 ...t,
-                [e.id]: c.G.LOADING
+                [e.id]: d.G.LOADING
             })), (0, r._R)(t).then(() => {
                 E(t => ({
                     ...t,
-                    [e.id]: c.G.DONE
+                    [e.id]: d.G.DONE
                 }))
             }).catch(() => {
                 E(t => ({
                     ...t,
-                    [e.id]: c.G.ERROR
+                    [e.id]: d.G.ERROR
                 }))
             }))
         }
     }, [t]);
     let {
-        loadState: C
-    } = (0, o.E)(), T = C !== o.mJ.LOADED;
-    switch (g) {
-        case d.R.HOME:
+        loadState: T
+    } = (0, o.E)(), S = T !== o.mJ.LOADED;
+    switch (A) {
+        case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
-                children: t.map(e => (0, i.jsx)(m, {
+                children: t.map(e => (0, i.jsx)(g, {
                     subscription: e,
-                    children: (0, i.jsx)(c.A, {
+                    children: (0, i.jsx)(d.A, {
                         subscription: e,
-                        navigateToSwitchPlan: x,
-                        loadingState: T ? c.G.LOADING : p[e.id] ?? c.G.LOADING
+                        navigateToSwitchPlan: p,
+                        loadingState: S ? d.G.LOADING : x[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
             });
-        case d.R.SWITCH_APP_PLANS:
+        case c.R.SWITCH_APP_PLANS:
             let {
-                route: S, ...I
-            } = a;
+                route: C, ...I
+            } = l;
             return (0, i.jsx)(u.A, {
                 ...I,
                 navigateToHome: h
             });
         default:
-            (0, l.xb)(g)
+            (0, a.xb)(A)
     }
 }

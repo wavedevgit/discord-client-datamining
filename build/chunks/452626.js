@@ -1,33 +1,33 @@
-/** chunk id: 452626, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => s
+/** chunk id: 452626, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => a
 });
-var i = n(627968);
-n(64700);
-var l = n(990078),
-    r = n(397927),
-    a = n(353411);
+var n = i(627968);
+i(64700);
+var l = i(990078),
+    r = i(397927),
+    s = i(353411);
 
-function s(t) {
+function a(t) {
     let {
         activity: e,
-        user: n,
-        source: s,
+        user: i,
+        source: a,
         size: o = "sm",
         variant: d = "secondary",
         fullWidth: u,
         onAction: c,
-        ...A
+        ...m
     } = t, {
         label: p,
-        tooltip: m,
-        loading: h,
+        tooltip: h,
+        loading: A,
         disabled: g,
         onClick: f
-    } = (0, a._B)(e, n, s);
-    return (0, i.jsx)(l.m, {
-        text: m,
-        children: (0, i.jsx)(r.Button, {
+    } = (0, s._B)(e, i, a);
+    return (0, n.jsx)(l.m, {
+        text: h,
+        children: (0, n.jsx)(r.Button, {
             variant: d,
             size: o,
             icon: r.L5T,
@@ -37,8 +37,8 @@ function s(t) {
                 c?.(), f()
             },
             disabled: g,
-            loading: h,
-            ...A
+            loading: A,
+            ...m
         })
     })
 }

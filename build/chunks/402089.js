@@ -1,32 +1,32 @@
-/** chunk id: 402089, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    s: () => T
+/** chunk id: 402089, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    s: () => _
 });
-var n = i(627968),
-    l = i(311907),
-    s = i(419954),
-    a = i(130771),
-    r = i(287809),
-    u = i(780964),
-    o = i(457684),
-    d = i(985018);
-let A = (0, s.E2)(u.X.ACCOUNT_REMOVAL_SETTING, {
-        useSearchTerms: () => [d.intl.string(d.t.ZKsIks), d.intl.string(d.t.jf5GGb), d.intl.string(d.t["8lQ2rR"])],
+var i = n(627968),
+    s = n(311907),
+    l = n(419954),
+    a = n(130771),
+    r = n(287809),
+    o = n(780964),
+    d = n(457684),
+    c = n(985018);
+let u = (0, l.E2)(o.X.ACCOUNT_REMOVAL_SETTING, {
+        useSearchTerms: () => [c.intl.string(c.t.ZKsIks), c.intl.string(c.t.jf5GGb), c.intl.string(c.t["8lQ2rR"])],
         Component: function() {
-            let t = (0, l.bG)([r.default], () => r.default.getCurrentUser()),
+            let e = (0, s.bG)([r.default], () => r.default.getCurrentUser()),
                 {
-                    teams: e,
-                    loading: i
+                    teams: t,
+                    loading: n
                 } = (0, a.A)({
                     refreshOnDepChange: !0
                 });
-            return null == t ? null : (0, n.jsx)(o.A, {
-                currentUser: t,
-                userTeamsLoading: i,
-                userTeams: e
+            return null == e ? null : (0, i.jsx)(d.A, {
+                currentUser: e,
+                userTeamsLoading: n,
+                userTeams: t
             })
         }
     }),
-    T = (0, s.zZ)(u.X.ACCOUNT_REMOVAL_CATEGORY, {
-        buildLayout: () => [A]
+    _ = (0, l.zZ)(o.X.ACCOUNT_REMOVAL_CATEGORY, {
+        buildLayout: () => [u]
     })

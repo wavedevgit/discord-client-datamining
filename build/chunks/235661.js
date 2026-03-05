@@ -1,22 +1,22 @@
-/** chunk id: 235661, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => o
+/** chunk id: 235661, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => d
 });
-var n = i(627968);
-i(64700);
-var l = i(397927),
-    s = i(688810),
-    a = i(485873),
-    r = i(813977),
-    u = i(964592);
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    l = n(688810),
+    a = n(485873),
+    r = n(813977),
+    o = n(964592);
 
-function o() {
+function d() {
     let {
-        analyticsLocations: t
-    } = (0, s.Ay)();
-    return [(0, n.jsx)(l.rXV, {
-        children: (0, r.A)(t)
-    }, "input-mode-items"), (0, n.jsxs)(l.rXV, {
-        children: [(0, a.A)(t), (0, u.A)(t)]
+        analyticsLocations: e
+    } = (0, l.Ay)();
+    return [(0, i.jsx)(s.rXV, {
+        children: (0, r.A)(e)
+    }, "input-mode-items"), (0, i.jsxs)(s.rXV, {
+        children: [(0, a.A)(e), (0, o.A)(e)]
     }, "input-output")]
 }

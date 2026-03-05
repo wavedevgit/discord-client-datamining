@@ -1,58 +1,58 @@
 /** chunk id: 78837, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    f: () => A
+    f: () => m
 });
 var i = n(627968),
     s = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     r = n(386181),
     o = n(650682),
-    c = n(934551),
-    d = n(827734),
+    d = n(934551),
+    c = n(827734),
     u = n(397927),
     _ = n(590089),
-    m = n(747625);
+    g = n(747625);
 
-function A(e) {
+function m(e) {
     let {
         ref: t,
         title: n,
-        collapsedSubtitle: a,
-        isExpanded: A,
-        onExpandedChange: g,
+        collapsedSubtitle: l,
+        isExpanded: m,
+        onExpandedChange: A,
         children: h,
-        animate: x = !0
-    } = e, p = s.useRef(null), [E, C] = s.useState(null), T = A && null != E;
+        animate: p = !0
+    } = e, x = s.useRef(null), [E, T] = s.useState(null), S = m && null != E;
     return s.useLayoutEffect(() => {
-        null != p.current && null == E && C(p.current.clientHeight)
+        null != x.current && null == E && T(x.current.clientHeight)
     }, [E]), (0, i.jsxs)(r.EN, {
         ref: t,
-        isExpanded: A,
-        onExpandedChange: g,
+        isExpanded: m,
+        onExpandedChange: A,
         children: [(0, i.jsx)(_.U, {
-            ref: p,
+            ref: x,
             style: null != E ? {
                 minHeight: E
             } : void 0,
             title: n,
-            description: T ? void 0 : a,
+            description: S ? void 0 : l,
             trailingElement: (0, i.jsx)(u.vN3, {
                 children: (0, i.jsx)(o.$, {
                     slot: "trigger",
-                    className: m.bW,
-                    children: (0, i.jsx)(c.ChevronLargeUpIcon, {
-                        className: l()(m.Kk, {
-                            [m.kX]: !A
+                    className: g.bW,
+                    children: (0, i.jsx)(d.ChevronLargeUpIcon, {
+                        className: a()(g.Kk, {
+                            [g.kX]: !m
                         }),
-                        color: d.A.colors.ICON_STRONG
+                        color: c.A.colors.ICON_STRONG
                     })
                 })
             }),
-            onClick: () => g(!A)
+            onClick: () => A(!m)
         }), (0, i.jsx)(r.kS, {
-            className: l()(m.nd, {
-                [m.t5]: !x
+            className: a()(g.nd, {
+                [g.t5]: !p
             }),
             children: (0, i.jsx)(u.BJc, {
                 gap: 16,

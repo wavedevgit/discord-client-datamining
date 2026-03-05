@@ -1,16 +1,16 @@
-/** chunk id: 246743, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    W: () => d
+/** chunk id: 246743, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    W: () => c
 });
-var n = i(311907),
-    l = i(955572),
-    s = i(775602),
-    a = i(419954),
-    r = i(780964),
-    u = i(358776),
-    o = i(985018);
-let d = (0, a.zD)(r.X.SYNC_REDUCED_MOTION, {
-    useTitle: () => (0, u.bp)("SyncReducedMotion") ? o.intl.string(o.t.oL55A6) : o.intl.string(o.t["+Dx+HD"]),
-    useValue: () => (0, n.bG)([s.A], () => "auto" === s.A.rawPrefersReducedMotion),
-    setValue: t => (0, l.qz)(t ? "auto" : s.A.systemPrefersReducedMotion)
+var i = n(311907),
+    s = n(955572),
+    l = n(775602),
+    a = n(419954),
+    r = n(780964),
+    o = n(358776),
+    d = n(985018);
+let c = (0, a.zD)(r.X.SYNC_REDUCED_MOTION, {
+    useTitle: () => (0, o.bp)("SyncReducedMotion") ? d.intl.string(d.t.oL55A6) : d.intl.string(d.t["+Dx+HD"]),
+    useValue: () => (0, i.bG)([l.A], () => "auto" === l.A.rawPrefersReducedMotion),
+    setValue: e => (0, s.qz)(e ? "auto" : l.A.systemPrefersReducedMotion)
 })

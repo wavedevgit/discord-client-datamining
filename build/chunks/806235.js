@@ -25,7 +25,7 @@ function c() {
         emotion: window.__CLIPS_DEBUG__.emotion,
         yell: window.__CLIPS_DEBUG__.yell,
         whisper: window.__CLIPS_DEBUG__.whisper
-    })), [c, u] = i.useState(o.rb.KILL), [m, h] = i.useState(1), [p, x] = i.useState(""), [g, _] = i.useState(""), f = i.useCallback(e => {
+    })), [c, u] = i.useState(o.rb.KILL), [m, h] = i.useState(1), [x, p] = i.useState(""), [g, _] = i.useState(""), f = i.useCallback(e => {
         let a = !t[e];
         void 0 === window.__CLIPS_DEBUG__ && (window.__CLIPS_DEBUG__ = {
             emotion: !1,
@@ -140,8 +140,8 @@ function c() {
                     })]
                 }), (0, a.jsx)(l.ksK, {
                     label: "Title (optional)",
-                    value: p,
-                    onChange: x,
+                    value: x,
+                    onChange: p,
                     placeholder: "e.g., First Blood"
                 }), (0, a.jsx)(l.ksK, {
                     label: "Description (optional)",
@@ -155,7 +155,7 @@ function c() {
                             type: o.Gy.GAME_EVENT,
                             eventType: c,
                             importance: m,
-                            title: p,
+                            title: x,
                             description: g
                         })
                     }

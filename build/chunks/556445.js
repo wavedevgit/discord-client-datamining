@@ -1,44 +1,44 @@
-/** chunk id: 556445, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 556445, original params: t,e,i (module,exports,require) **/
+i.d(e, {
     A: () => o
 });
-var i = n(627968);
-n(64700);
-var l = n(990078),
-    r = n(397927),
-    a = n(562153),
-    s = n(353411);
+var n = i(627968);
+i(64700);
+var l = i(990078),
+    r = i(397927),
+    s = i(562153),
+    a = i(353411);
 
 function o(t) {
     let {
         activity: e,
-        user: n,
+        user: i,
         channelId: o,
         guildId: d,
         source: u,
         size: c = "sm",
-        variant: A = "secondary",
+        variant: m = "secondary",
         onAction: p,
-        ...m
+        ...h
     } = t, {
-        tooltip: h,
+        tooltip: A,
         loading: g,
         disabled: f,
-        onClick: E
-    } = (0, s.J$)(e, n, u, a.Ay.getNickname(d, o, n));
-    return (0, i.jsx)(l.m, {
-        text: h,
-        children: (0, i.jsx)(r.K0, {
+        onClick: T
+    } = (0, a.J$)(e, i, u, s.Ay.getNickname(d, o, i));
+    return (0, n.jsx)(l.m, {
+        text: A,
+        children: (0, n.jsx)(r.K0, {
             icon: r.J2m,
             size: c,
-            variant: A,
+            variant: m,
             onClick: () => {
-                p?.(), E()
+                p?.(), T()
             },
             disabled: f,
             loading: g,
-            "aria-label": h ?? e.name,
-            ...m
+            "aria-label": A ?? e.name,
+            ...h
         })
     })
 }

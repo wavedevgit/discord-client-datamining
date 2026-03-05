@@ -35,8 +35,8 @@ var i = n(627968),
     O = n(435470),
     L = n(473503),
     P = n(853742),
-    k = n(652215),
-    w = n(985018),
+    w = n(652215),
+    k = n(985018),
     U = n(641131),
     G = n(256366),
     F = n(233080),
@@ -53,7 +53,7 @@ function B(e) {
     return a ? (0, i.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
-        text: s ? w.intl.string(U.default["2Y4vkk"]) : w.intl.string(U.default.YIbR4r),
+        text: s ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(b.f) ? u() : (0, d.mMO)(async () => {
                 let {
@@ -87,7 +87,7 @@ function V(e) {
     } = e, {
         ref: I,
         width: T
-    } = (0, m.Ay)(), [b, U] = l.useState(3), [V, K] = l.useState(!n), [z, W] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
+    } = (0, m.Ay)(), [b, U] = l.useState(3), [V, K] = l.useState(!n), [W, z] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: q
     } = (0, L.OA)(Y), J = (0, r.bG)([v.A], () => v.A.hasJoined(t)), {
         disableReactionUpdates: $,
@@ -121,9 +121,9 @@ function V(e) {
             (0, P.jC)({
                 postId: Y.id,
                 location: {
-                    section: k.JJy.CHANNEL_HEADER
+                    section: w.JJy.CHANNEL_HEADER
                 }
-            }), (0, D.C)((0, M.af)(Y, et), () => W(!0))
+            }), (0, D.C)((0, M.af)(Y, et), () => z(!0))
         },
         ec = J ? d.A9s : d.XFE;
     return (0, i.jsxs)(i.Fragment, {
@@ -179,40 +179,40 @@ function V(e) {
                         [G.w$]: !er
                     }),
                     isForumToolbar: !0,
-                    children: !er && w.intl.string(w.t.xpOyTO)
+                    children: !er && k.intl.string(k.t.xpOyTO)
                 })]
             }), (0, i.jsxs)("div", {
                 className: G.Uo,
                 children: [ee ? (0, i.jsx)(B, {
                     channel: Y
                 }) : !X && (0, i.jsx)(c.m, {
-                    text: w.intl.string(w.t.F7oeDv),
+                    text: k.intl.string(k.t.F7oeDv),
                     children: (0, i.jsx)(d.Button, {
                         icon: ec,
                         size: "sm",
                         variant: "secondary",
-                        text: J ? w.intl.string(w.t["7OkUzs"]) : w.intl.string(w.t["3aOv+h"]),
+                        text: J ? k.intl.string(k.t["7OkUzs"]) : k.intl.string(k.t["3aOv+h"]),
                         onClick: () => {
                             J ? j.A.leaveThread(Y, "Forum Toolbar") : j.A.joinThread(Y, "Forum Toolbar")
                         }
                     })
                 }), (0, i.jsx)(c.m, {
-                    text: w.intl.string(w.t.WqhZss),
-                    children: z ? (0, i.jsx)(d.Button, {
+                    text: k.intl.string(k.t.WqhZss),
+                    children: W ? (0, i.jsx)(d.Button, {
                         icon: d.A9s,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        text: w.intl.string(w.t.t5VZ88)
+                        text: k.intl.string(k.t.t5VZ88)
                     }) : (0, i.jsx)(d.K0, {
                         icon: d.qYV,
                         size: "sm",
                         variant: "secondary",
                         onClick: eo,
-                        "aria-label": w.intl.string(w.t.WqhZss)
+                        "aria-label": k.intl.string(k.t.WqhZss)
                     })
                 }), !n && (0, i.jsx)(c.m, {
-                    text: w.intl.string(w.t.nFP4oa),
+                    text: k.intl.string(k.t.nFP4oa),
                     children: (0, i.jsx)(d.K0, {
                         icon: d.Dl6,
                         size: "sm",
@@ -225,7 +225,7 @@ function V(e) {
                                 jumpType: h.US.INSTANT
                             })
                         },
-                        "aria-label": w.intl.string(w.t.nFP4oa)
+                        "aria-label": k.intl.string(k.t.nFP4oa)
                     })
                 })]
             })]

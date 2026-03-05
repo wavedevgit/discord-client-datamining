@@ -1,32 +1,31 @@
-/** chunk id: 83220, original params: t,e,r (module,exports,require) **/
-"use strict";
-r.d(e, {
-    lu: () => i,
+/** chunk id: 83220, original params: t,e,s (module,exports,require) **/
+s.d(e, {
+    lu: () => r,
     zf: () => n
 });
-var s = r(978862);
+var i = s(978862);
 
-function i() {
+function r() {
     return Date.now() / 1e3
 }
 let n = function() {
     let {
         performance: t
-    } = s.O;
-    if (!t || !t.now) return i;
+    } = i.O;
+    if (!t || !t.now) return r;
     let e = Date.now() - t.now(),
-        r = void 0 == t.timeOrigin ? e : t.timeOrigin;
-    return () => (r + t.now()) / 1e3
+        s = void 0 == t.timeOrigin ? e : t.timeOrigin;
+    return () => (s + t.now()) / 1e3
 }();
 (() => {
     let {
         performance: t
-    } = s.O;
+    } = i.O;
     if (!t || !t.now) return;
     let e = t.now(),
-        r = Date.now(),
-        i = t.timeOrigin ? Math.abs(t.timeOrigin + e - r) : 36e5,
+        s = Date.now(),
+        r = t.timeOrigin ? Math.abs(t.timeOrigin + e - s) : 36e5,
         n = t.timing && t.timing.navigationStart,
-        o = "number" == typeof n ? Math.abs(n + e - r) : 36e5;
-    if ((i < 36e5 || o < 36e5) && i <= o) return t.timeOrigin
+        o = "number" == typeof n ? Math.abs(n + e - s) : 36e5;
+    if ((r < 36e5 || o < 36e5) && r <= o) return t.timeOrigin
 })()

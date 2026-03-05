@@ -18,11 +18,11 @@ var a = l(627968),
     x = l(162097),
     b = l(219980),
     g = l(652215),
-    y = l(985018),
-    f = l(847688);
+    f = l(985018),
+    y = l(847688);
 let E = {
-        START: f.Vl,
-        END: f.Wk
+        START: y.Vl,
+        END: y.Wk
     },
     v = e => {
         let {
@@ -30,26 +30,26 @@ let E = {
             ctaText: l,
             ctaOnClick: r,
             analyticsPage: v,
-            linkText: S = y.intl.string(y.t.XRdyjz),
+            linkText: S = f.intl.string(f.t.XRdyjz),
             cardAlignment: j = E.START,
             className: T
         } = e, {
             balance: C
-        } = (0, m.W)(), R = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [P, _] = n.useState(h.k.DEFAULT), [A, I] = n.useState(!1), [N, k] = n.useState(!1), D = n.useRef(null);
-        (0, o.j)(!A);
+        } = (0, m.W)(), P = (0, d.DK)(c.W.NITRO, "BalanceWidgetMenu"), [A, R] = n.useState(h.k.DEFAULT), [_, k] = n.useState(!1), [I, N] = n.useState(!1), D = n.useRef(null);
+        (0, o.j)(!_);
         let M = n.useCallback(() => {
-                let e = !A;
+                let e = !_;
                 e && null != v && (0, p.Y)({
                     pageType: v,
                     sectionType: g.JJy.ORBS_BALANCE_MENU,
                     ctaObject: g.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
-                }), _(e ? h.k.SELECTED : h.k.DEFAULT), I(e)
-            }, [A, v]),
+                }), R(e ? h.k.SELECTED : h.k.DEFAULT), k(e)
+            }, [_, v]),
             O = n.useCallback(() => {
-                A && M()
-            }, [A, M]),
-            B = (0, s.A)(null, O),
-            w = n.useMemo(() => (0, a.jsx)(x.b, {
+                _ && M()
+            }, [_, M]),
+            L = (0, s.A)(null, O),
+            B = n.useMemo(() => (0, a.jsx)(x.b, {
                 analyticsPage: v,
                 ctaText: l,
                 ctaOnClick: () => {
@@ -57,36 +57,36 @@ let E = {
                 },
                 linkText: S
             }), [v, l, S, M, r]),
-            V = n.useMemo(() => (0, a.jsx)(u.A, {
+            U = n.useMemo(() => (0, a.jsx)(u.A, {
                 targetElementRef: D,
-                shouldShow: A,
+                shouldShow: _,
                 onRequestClose: M,
                 ctaText: l,
                 ctaOnClick: () => {
                     M(), r()
                 }
-            }), [A, M, l, r]);
+            }), [_, M, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(f.kL, T, {
-                [f.R]: N,
-                [f.RK]: !N
+            className: i()(y.kL, T, {
+                [y.R]: I,
+                [y.RK]: !I
             }),
             children: [(0, a.jsx)(b.J, {
                 pillRef: D,
                 balance: C,
-                balanceWidgetMode: P,
+                balanceWidgetMode: A,
                 onMouseDown: e => {
                     e.stopPropagation()
                 },
                 onClick: M,
                 showNotificationBadge: t
-            }), R ? V : A && (0, a.jsx)("div", {
-                className: i()(f.Ui, j, {
-                    [f.R]: N,
-                    [f.RK]: !N
+            }), P ? U : _ && (0, a.jsx)("div", {
+                className: i()(y.Ui, j, {
+                    [y.R]: I,
+                    [y.RK]: !I
                 }),
-                ref: B,
-                children: w
+                ref: L,
+                children: B
             })]
         })
     };

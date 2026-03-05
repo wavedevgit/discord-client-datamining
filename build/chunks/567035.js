@@ -1,25 +1,24 @@
 /** chunk id: 567035, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => I
 }), n(321073);
 var i = n(735438),
-    s = n.n(i),
-    l = n(334738),
-    a = n(591552),
-    r = n(863005),
+    r = n.n(i),
+    a = n(334738),
+    s = n(591552),
+    l = n(863005),
     o = n(808728),
     d = n(222823),
-    c = n(954571),
-    u = n(661191),
-    h = n(652215),
-    p = n(790782);
+    _ = n(954571),
+    c = n(661191),
+    u = n(652215),
+    A = n(790782);
 
-function f(e, t, n) {
-    let i = s().flatMap(e, e => {
+function I(e, t, n) {
+    let i = r().flatMap(e, e => {
         let t = o.Ay.getSelectableChannelIds(e),
             n = [...t, ...o.Ay.getVocalChannelIds(e)],
-            i = r.A.getActiveJoinedThreadsForGuild(e);
+            i = l.A.getActiveJoinedThreadsForGuild(e);
         for (let e of t) {
             let t = i[e] ?? {};
             for (let e in t) n.push(e)
@@ -27,21 +26,21 @@ function f(e, t, n) {
         return n
     }).map(e => ({
         channelId: e,
-        readStateType: p.P.CHANNEL,
+        readStateType: A.P.CHANNEL,
         messageId: d.Ay.lastMessageId(e)
     }));
     return e.forEach(e => {
         i.push({
-            channelId: u.default.cast(e),
-            readStateType: p.P.GUILD_EVENT,
-            messageId: d.Ay.lastMessageId(e, p.P.GUILD_EVENT)
+            channelId: c.default.cast(e),
+            readStateType: A.P.GUILD_EVENT,
+            messageId: d.Ay.lastMessageId(e, A.P.GUILD_EVENT)
         }), i.push({
-            channelId: u.default.cast(e),
-            readStateType: p.P.GUILD_ONBOARDING_QUESTION,
-            messageId: a.A.ackIdForGuild(e)
+            channelId: c.default.cast(e),
+            readStateType: A.P.GUILD_ONBOARDING_QUESTION,
+            messageId: s.A.ackIdForGuild(e)
         })
-    }), c.default.track(h.HAw.MARK_AS_READ, {
+    }), _.default.track(u.HAw.MARK_AS_READ, {
         source: t,
         type: "guild"
-    }), (0, l.Uq)(i, n)
+    }), (0, a.Uq)(i, n)
 }

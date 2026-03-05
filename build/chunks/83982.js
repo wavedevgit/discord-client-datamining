@@ -1,7 +1,7 @@
 /** chunk id: 83982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => w,
-    s: () => k
+    A: () => k,
+    s: () => w
 });
 var i = n(627968),
     l = n(64700),
@@ -37,7 +37,7 @@ var i = n(627968),
 let L = c._3J.SIZE_80,
     P = c._3J.SIZE_40;
 
-function k(e) {
+function w(e) {
     let {
         channelId: t,
         participant: n
@@ -56,7 +56,7 @@ function k(e) {
     })
 }
 
-function w(e) {
+function k(e) {
     let {
         participant: t,
         channel: n,
@@ -65,17 +65,17 @@ function w(e) {
         selected: c,
         popoutType: C,
         fit: j,
-        onVideoResize: k,
-        blocked: w,
+        onVideoResize: w,
+        blocked: k,
         ignored: U,
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: H = !1
     } = e, B = T.Ay.getVideoComponent(), V = (0, r.bG)([S.default], () => S.default.getId()), {
         user: K,
-        streamId: z,
-        speaking: W
-    } = t, Y = K.id === V, q = (0, y.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([E.A], () => E.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != K.id && T.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, r.bG)([I.Ay], () => I.Ay.isGuestOrLurker(n.guild_id, K.id)), Q = b.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = W && ($ || J), et = o < 124 ? P : L, {
+        streamId: W,
+        speaking: z
+    } = t, Y = K.id === V, q = (0, y.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([E.A], () => E.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != K.id && T.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, r.bG)([I.Ay], () => I.Ay.isGuestOrLurker(n.guild_id, K.id)), Q = b.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = z && ($ || J), et = o < 124 ? P : L, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, x.A)({
@@ -103,19 +103,19 @@ function w(e) {
         width: o,
         selected: c
     }) : (0, i.jsx)(_.A, {
-        onResize: k,
+        onResize: w,
         wrapperClassName: C !== A.N.CALL_TILE ? O.tN : void 0,
         className: O.Qs,
         mirror: Y,
-        streamId: z,
+        streamId: W,
         videoComponent: B,
         fit: j,
         videoSpinnerContext: K.id === V ? u.u.SELF_VIDEO : u.u.REMOTE_VIDEO,
         paused: H,
         userId: K.id
-    }, z) : (0, i.jsx)("div", {
+    }, W) : (0, i.jsx)("div", {
         className: a()(O.Qs, {
-            [O.Kx]: w || U
+            [O.Kx]: k || U
         }),
         children: (0, i.jsx)(f.A, {
             "aria-label": Q,
@@ -124,7 +124,7 @@ function w(e) {
             guildId: n.guild_id,
             pulseSpeakingIndicator: F,
             size: et,
-            speaking: W,
+            speaking: z,
             src: en,
             userId: K.id
         })

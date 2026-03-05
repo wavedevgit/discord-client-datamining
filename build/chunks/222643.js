@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(43189),
+    a = n(397927),
+    r = n(43189),
     o = n(964404),
     c = n(461782),
     d = n(447404);
@@ -29,10 +29,10 @@ function u(e) {
     }, [C, E, m]);
     let {
         preventIdle: N,
-        allowIdle: S
+        allowIdle: b
     } = (0, d.o)("popup");
-    return t?.current == null ? null : (0, i.jsx)(a.Ay, {
-        children: (0, i.jsx)(r.QCO, {
+    return t?.current == null ? null : (0, i.jsx)(r.Ay, {
+        children: (0, i.jsx)(a.QCO, {
             targetRef: t,
             position: "top",
             align: "center",
@@ -43,8 +43,8 @@ function u(e) {
                 ref: E,
                 onMouseOver: N,
                 onFocus: N,
-                onBlur: S,
-                onMouseLeave: S,
+                onBlur: b,
+                onMouseLeave: b,
                 children: h({
                     hidden: f || p || n,
                     onDismiss: u

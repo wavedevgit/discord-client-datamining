@@ -5,27 +5,27 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(554146),
-    a = n(882997),
-    l = n(975571),
+    l = n(882997),
+    a = n(975571),
     r = n(107005),
     o = n(652215),
-    c = n(985018),
-    d = n(963133);
+    d = n(985018),
+    c = n(963133);
 let u = () => {
-    let e = l.A.getArticleURL(o.MVz.XBOX_CONNECTION);
+    let e = a.A.getArticleURL(o.MVz.XBOX_CONNECTION);
     return (0, i.jsx)(r.Z, {
-        title: c.intl.string(c.t["2okkZV"]),
-        body: c.intl.format(c.t.OnERSS, {
+        title: d.intl.string(d.t["2okkZV"]),
+        body: d.intl.format(d.t.OnERSS, {
             help_article: e
         }),
         img: (0, i.jsx)("img", {
-            src: d,
+            src: c,
             width: "auto",
             height: "45",
             alt: ""
         }),
         newIndicatorDismissibleContent: s.M.XBOX_ONE_WAY_RECONNECT,
-        onClick: () => (0, a.A)({
+        onClick: () => (0, l.A)({
             platformType: o.fg2.XBOX,
             location: "Xbox two way upsell"
         })

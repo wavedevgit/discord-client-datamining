@@ -1,23 +1,22 @@
-/** chunk id: 775464, original params: t,e,r (module,exports,require) **/
-"use strict";
-r.d(e, {
-    z: () => l
+/** chunk id: 775464, original params: t,e,s (module,exports,require) **/
+s.d(e, {
+    z: () => d
 });
-var s = r(887525),
-    i = r(128377),
-    n = r(875565),
-    o = r(75109);
+var i = s(887525),
+    r = s(128377),
+    n = s(875565),
+    o = s(75109);
 class a {
     constructor(t, e) {
-        let r, s;
-        r = t || new i.H, s = e || new i.H, this._stack = [{
-            scope: r
-        }], this._isolationScope = s
+        let s, i;
+        s = t || new r.H, i = e || new r.H, this._stack = [{
+            scope: s
+        }], this._isolationScope = i
     }
     withScope(t) {
-        let e, r = this._pushScope();
+        let e, s = this._pushScope();
         try {
-            e = t(r)
+            e = t(s)
         } catch (t) {
             throw this._popScope(), t
         }
@@ -49,32 +48,32 @@ class a {
     }
 }
 
-function c() {
+function h() {
     let t = (0, o.E)(),
         e = (0, o.S)(t);
-    return e.stack = e.stack || new a((0, s.r)(), (0, s.q)())
+    return e.stack = e.stack || new a((0, i.r)(), (0, i.q)())
 }
 
-function u(t) {
-    return c().withScope(t)
+function c(t) {
+    return h().withScope(t)
 }
 
-function h(t, e) {
-    let r = c();
-    return r.withScope(() => (r.getStackTop().scope = t, e(t)))
+function u(t, e) {
+    let s = h();
+    return s.withScope(() => (s.getStackTop().scope = t, e(t)))
 }
 
-function d(t) {
-    return c().withScope(() => t(c().getIsolationScope()))
+function _(t) {
+    return h().withScope(() => t(h().getIsolationScope()))
 }
 
-function l() {
+function d() {
     return {
-        withIsolationScope: d,
-        withScope: u,
-        withSetScope: h,
-        withSetIsolationScope: (t, e) => d(e),
-        getCurrentScope: () => c().getScope(),
-        getIsolationScope: () => c().getIsolationScope()
+        withIsolationScope: _,
+        withScope: c,
+        withSetScope: u,
+        withSetIsolationScope: (t, e) => _(e),
+        getCurrentScope: () => h().getScope(),
+        getIsolationScope: () => h().getIsolationScope()
     }
 }

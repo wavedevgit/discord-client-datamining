@@ -1,49 +1,49 @@
-/** chunk id: 685896, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    C: () => I
+/** chunk id: 685896, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    C: () => x
 });
-var n = i(627968),
-    l = i(935399),
-    s = i(158954),
-    a = i(311907),
-    r = i(793574),
-    u = i(526162),
-    o = i(848971),
-    d = i(915089),
-    A = i(419954),
-    T = i(954571),
-    S = i(780964),
-    E = i(652215),
-    g = i(635917),
-    c = i(788868),
-    _ = i(985018);
-let I = (0, A.E2)(S.X.DISPLAY_IN_APP_ICON, {
-    useSearchTerms: () => [_.intl.string(_.t.gnwxvT)],
+var i = n(627968),
+    s = n(935399),
+    l = n(158954),
+    a = n(311907),
+    r = n(793574),
+    o = n(526162),
+    d = n(848971),
+    c = n(915089),
+    u = n(419954),
+    _ = n(954571),
+    g = n(780964),
+    m = n(652215),
+    A = n(635917),
+    h = n(788868),
+    p = n(985018);
+let x = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
+    useSearchTerms: () => [p.intl.string(p.t.gnwxvT)],
     Component: function() {
-        let t = (0, d.GV)(),
+        let e = (0, c.GV)(),
             {
-                ref: e,
-                ...i
-            } = (0, s._uI)({
+                ref: t,
+                ...n
+            } = (0, l._uI)({
                 orientation: "horizontal",
-                labelledBy: t
+                labelledBy: e
             }),
-            A = (0, a.bG)([u.A], () => u.A.isUpsellPreview);
-        return (0, l.Ay)(() => {
-            A && T.default.track(E.HAw.PREMIUM_UPSELL_VIEWED, {
-                type: c.e.APP_ICON_UPSELL,
+            u = (0, a.bG)([o.A], () => o.A.isUpsellPreview);
+        return (0, s.Ay)(() => {
+            u && _.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+                type: h.e.APP_ICON_UPSELL,
                 location_stack: [r.A.USER_SETTINGS]
             })
-        }), (0, n.jsx)("div", {
-            ...i,
-            ref: e,
-            children: (0, n.jsx)(s.BJc, {
+        }), (0, i.jsx)("div", {
+            ...n,
+            ref: t,
+            children: (0, i.jsx)(l.BJc, {
                 direction: "horizontal",
                 wrap: !0,
                 gap: 8,
-                children: (0, n.jsx)(o.m, {
-                    disabled: A,
-                    size: g.N8.SIZE_48
+                children: (0, i.jsx)(d.m, {
+                    disabled: u,
+                    size: A.N8.SIZE_48
                 })
             })
         })

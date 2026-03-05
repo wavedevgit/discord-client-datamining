@@ -1,44 +1,44 @@
 /** chunk id: 823092, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     L_: () => u,
-    gl: () => c,
-    ms: () => d
+    gl: () => d,
+    ms: () => c
 });
 var i = n(627968),
     s = n(64700),
-    a = n(83257),
-    l = n(203982),
+    l = n(83257),
+    a = n(203982),
     r = n(115063),
     o = n(652215);
-let c = s.createContext(void 0);
+let d = s.createContext(void 0);
 
-function d(e) {
+function c(e) {
     let {
         children: t
-    } = e, n = s.useRef(a.n3), [d, u] = s.useState(!1), _ = s.useCallback(e => {
-        u(e?.some(e => e.showNotice() && !e.canCloseEarly?.()) ?? !1), n.current = a.n3
-    }, []), m = s.useCallback(e => {
-        if (d) {
+    } = e, n = s.useRef(l.n3), [c, u] = s.useState(!1), _ = s.useCallback(e => {
+        u(e?.some(e => e.showNotice() && !e.canCloseEarly?.()) ?? !1), n.current = l.n3
+    }, []), g = s.useCallback(e => {
+        if (c) {
             (0, r.fO)({
                 duration: 300,
                 intensity: n.current
-            }), n.current = Math.min(n.current + a.pe, a.OZ), l._.dispatch(o.jej.EMPHASIZE_NOTICE);
+            }), n.current = Math.min(n.current + l.pe, l.OZ), a._.dispatch(o.jej.EMPHASIZE_NOTICE);
             return
         }
         e()
-    }, [d]), A = s.useMemo(() => ({
-        navigateWithValidation: m,
-        showNotice: d,
+    }, [c]), m = s.useMemo(() => ({
+        navigateWithValidation: g,
+        showNotice: c,
         handleStoreUpdate: _
-    }), [m, d, _]);
-    return (0, i.jsx)(c.Provider, {
-        value: A,
+    }), [g, c, _]);
+    return (0, i.jsx)(d.Provider, {
+        value: m,
         children: t
     })
 }
 
 function u() {
-    let e = s.useContext(c);
+    let e = s.useContext(d);
     if (null == e) throw Error("useNoticeContext must be used within a NoticeProvider");
     return e
 }

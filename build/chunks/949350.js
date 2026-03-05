@@ -1,41 +1,30 @@
-/** chunk id: 949350, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => C
+/** chunk id: 949350, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    Q: () => A
 });
-var n = i(934551),
-    l = i(35587),
-    s = i(419954),
-    a = i(933297),
-    r = i(780964),
-    u = i(358776),
-    o = i(586685),
-    d = i(525707),
-    A = i(9653),
-    T = i(473146),
-    S = i(709747),
-    E = i(531525),
-    g = i(985018);
-let c = (0, s.zZ)(r.X.GIFT_INVENTORY_CATEGORY, {
-        buildLayout: () => [d.V, T.E, A.R, S.Y]
+var i = n(934551),
+    s = n(35587),
+    l = n(419954),
+    a = n(933297),
+    r = n(780964),
+    o = n(525707),
+    d = n(9653),
+    c = n(473146),
+    u = n(709747),
+    _ = n(985018);
+let g = (0, l.zZ)(r.X.GIFT_INVENTORY_CATEGORY, {
+        buildLayout: () => [o.V, c.E, d.R, u.Y]
     }),
-    _ = (0, s.t_)(r.X.GIFT_PANEL, {
-        usePredicate: () => !(0, u.dk)("LegacyGiftPanel"),
-        useTitle: () => g.intl.string(g.t["jcSP+g"]),
-        StronglyDiscouragedCustomComponent: o.Ay,
-        buildLayout: () => []
+    m = (0, l.t_)(r.X.GIFT_PANEL, {
+        useTitle: () => _.intl.string(_.t["jcSP+g"]),
+        buildLayout: () => [g]
     }),
-    I = (0, s.t_)(r.X.GIFT_PANEL, {
-        usePredicate: () => (0, u.dk)("GiftPanel"),
-        useTitle: () => g.intl.string(g.t["jcSP+g"]),
-        buildLayout: () => [c]
-    }),
-    C = (0, s.i4)(r.X.GIFT_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(g.t["jcSP+g"]),
-        getLegacySearchKey: () => (0, u.WJ)("GiftPanel") ? void 0 : E.H.GIFT_INVENTORY,
-        icon: n.GiftIcon,
+    A = (0, l.i4)(r.X.GIFT_SIDEBAR_ITEM, {
+        useTitle: () => _.intl.string(_.t["jcSP+g"]),
+        icon: i.GiftIcon,
         trailing: {
             type: a.Si.BADGE_COUNT,
-            useCount: () => (0, l.IO)().length
+            useCount: () => (0, s.IO)().length
         },
-        buildLayout: () => (0, u.WJ)("GiftPanel") ? [I] : [_]
+        buildLayout: () => [m]
     })

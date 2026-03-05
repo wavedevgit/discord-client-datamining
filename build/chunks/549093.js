@@ -1,28 +1,28 @@
-/** chunk id: 549093, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => o
+/** chunk id: 549093, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    q: () => d
 });
-var n = i(873298),
-    l = i(815807),
-    s = i(419954),
-    a = i(253932),
-    r = i(780964),
-    u = i(985018);
-let o = (0, s.Hn)(r.X.REACTION_NOTIFICATIONS, {
-    useTitle: () => u.intl.string(u.t.Wxj9Hp),
+var i = n(873298),
+    s = n(815807),
+    l = n(419954),
+    a = n(253932),
+    r = n(780964),
+    o = n(985018);
+let d = (0, l.Hn)(r.X.REACTION_NOTIFICATIONS, {
+    useTitle: () => o.intl.string(o.t.Wxj9Hp),
     useOptions: () => [{
         id: "enabled",
-        label: u.intl.string(u.t["9x/RtT"]),
-        value: n.Tz.NOTIFICATIONS_ENABLED
+        label: o.intl.string(o.t["9x/RtT"]),
+        value: i.Tz.NOTIFICATIONS_ENABLED
     }, {
         id: "only_dms",
-        label: u.intl.string(u.t.fJAbQd),
-        value: n.Tz.ONLY_DMS
+        label: o.intl.string(o.t.fJAbQd),
+        value: i.Tz.ONLY_DMS
     }, {
         id: "disabled",
-        label: u.intl.string(u.t["xu+UDU"]),
-        value: n.Tz.NOTIFICATIONS_DISABLED
+        label: o.intl.string(o.t["xu+UDU"]),
+        value: i.Tz.NOTIFICATIONS_DISABLED
     }],
     useValue: a.Zp.useSetting,
-    setValue: t => (0, l.n4)(t, a.Zp.getSetting())
+    setValue: e => (0, s.n4)(e, a.Zp.getSetting())
 })

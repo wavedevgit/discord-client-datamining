@@ -1,21 +1,21 @@
-/** chunk id: 766761, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => d
+/** chunk id: 766761, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => c
 });
-var n = i(311907),
-    l = i(754333),
-    s = i(419954),
-    a = i(287809),
-    r = i(780964),
-    u = i(119762),
-    o = i(985018);
-let d = (0, s.E2)(r.X.SESSIONS_OTHER_SESSIONS_SETTING, {
-    Component: u.Af,
-    useSearchTerms: () => [o.intl.string(o.t["+1h0k/"])],
+var i = n(311907),
+    s = n(754333),
+    l = n(419954),
+    a = n(287809),
+    r = n(780964),
+    o = n(119762),
+    d = n(985018);
+let c = (0, l.E2)(r.X.SESSIONS_OTHER_SESSIONS_SETTING, {
+    Component: o.Af,
+    useSearchTerms: () => [d.intl.string(d.t["+1h0k/"])],
     usePredicate: () => {
         let {
-            otherSessions: t
-        } = (0, l.r)(), e = (0, n.bG)([a.default], () => a.default.getCurrentUser());
-        return t.length > 0 || !e?.mfaEnabled
+            otherSessions: e
+        } = (0, s.r)(), t = (0, i.bG)([a.default], () => a.default.getCurrentUser());
+        return e.length > 0 || !t?.mfaEnabled
     }
 })

@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(735438),
     s = n.n(i),
-    a = n(626584),
-    l = n(617617),
+    l = n(626584),
+    a = n(617617),
     r = n(961350),
     o = n(723176),
-    c = n(989950);
-let d = new a.A("UserSettingsProto");
+    d = n(989950);
+let c = new l.A("UserSettingsProto");
 class u {
     actions = {
         CONNECTION_OPEN: () => this.throttledOnChange(),
@@ -21,22 +21,22 @@ class u {
         let t = performance.now(),
             n = await o.A.userSettings(e).getMany(),
             i = performance.now();
-        d.verbose(`loaded in ${i-t}ms (settings: ${n.length})`);
+        c.verbose(`loaded in ${i-t}ms (settings: ${n.length})`);
         let s = {};
         for (let e of n) s[e.id] = e.value;
         return s
     }
     handleUserSettingsProtoChange = () => {
         let e = r.default.getId(),
-            t = c.A.database(e);
+            t = d.A.database(e);
         t?.transaction(e => {
-            let t = l.A.computeState(),
+            let t = a.A.computeState(),
                 n = o.A.userSettingsTransaction(e);
             for (let e in t) n.put({
                 id: Number(e),
                 value: t[e]
             });
-            let i = l.A.settings.versions?.dataVersion ?? -1;
+            let i = a.A.settings.versions?.dataVersion ?? -1;
             o.A.nonGuildVersionsTransaction(e).put({
                 id: "user_settings_version",
                 version: i

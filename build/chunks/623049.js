@@ -1,27 +1,27 @@
-/** chunk id: 623049, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    T: () => A
+/** chunk id: 623049, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    T: () => u
 });
-var n = i(627968),
-    l = i(397927),
-    s = i(419954),
-    a = i(780964),
-    r = i(840065),
-    u = i(652215),
-    o = i(985018);
-let d = (0, s.E2)(a.X.APPEARANCE_REDIRECT, {
+var i = n(627968),
+    s = n(397927),
+    l = n(419954),
+    a = n(780964),
+    r = n(840065),
+    o = n(652215),
+    d = n(985018);
+let c = (0, l.E2)(a.X.APPEARANCE_REDIRECT, {
         useSearchTerms: () => [],
-        Component: () => (0, n.jsx)(l.Text, {
+        Component: () => (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
-            children: o.intl.format(o.t.DHpTjT, {
+            children: d.intl.format(d.t.DHpTjT, {
                 onAppearanceClick() {
                     (0, r.openUserSettings)(a.X.APPEARANCE_PANEL, {
-                        section: u.nc_.APPEARANCE
+                        section: o.nc_.APPEARANCE
                     })
                 }
             })
         })
     }),
-    A = (0, s.zZ)(a.X.APPEARANCE_REDIRECT_CATEGORY, {
-        buildLayout: () => [d]
+    u = (0, l.zZ)(a.X.APPEARANCE_REDIRECT_CATEGORY, {
+        buildLayout: () => [c]
     })

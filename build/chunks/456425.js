@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(565645),
+    a = n(397927),
+    r = n(565645),
     o = n(730134),
     c = n(688810),
     d = n(587895),
@@ -24,8 +24,8 @@ var i = n(627968),
     E = n(245205),
     I = n(322387),
     N = n(995273),
-    S = n(96511),
-    b = n(160098),
+    b = n(96511),
+    S = n(160098),
     T = n(429604),
     v = n(9905),
     y = n(717607),
@@ -47,8 +47,8 @@ function G(e) {
         className: L.PI,
         children: [(0, i.jsx)(o.A, {
             user: s,
-            size: r._3J.SIZE_24
-        }), (0, i.jsx)(r.Text, {
+            size: a._3J.SIZE_24
+        }), (0, i.jsx)(a.Text, {
             className: L.Bp,
             variant: "text-sm/normal",
             lineClamp: 2,
@@ -67,7 +67,7 @@ function U(e) {
     let n = h.A.parse(t);
     return (0, i.jsx)("div", {
         className: L.CD,
-        children: (0, i.jsx)(r.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             lineClamp: 2,
             children: n
@@ -85,7 +85,7 @@ function P(e) {
             className: L.kv,
             alt: "",
             src: n
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             className: L.mc,
             variant: "text-xs/bold",
             color: "text-default",
@@ -109,7 +109,7 @@ let k = s.memo(function(e) {
         } = e, {
             analyticsLocations: o
         } = (0, c.Ay)(), d = (0, T.t)(t, l), A = s.useCallback(async () => {
-            if (d || (0, E.R7)(t), null != t.item_enum && t.item_enum === I.r_.FIND_FRIENDS) return void(0, r.mMO)(async () => {
+            if (d || (0, E.R7)(t), null != t.item_enum && t.item_enum === I.r_.FIND_FRIENDS) return void(0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("67248").then(n.bind(n, 911539));
@@ -147,24 +147,24 @@ let k = s.memo(function(e) {
             applicationId: t.applicationId
         }));
         let g = null != t.local_id,
-            _ = (0, S.A)({
+            _ = (0, b.A)({
                 item: t,
                 renderApplication: e => (0, i.jsx)(w, {
                     applicationId: e
                 })
             }),
             {
-                emoji_id: b,
+                emoji_id: S,
                 emoji_name: O
             } = t,
-            M = null != b || null != O ? (0, i.jsx)(a.A, {
+            M = null != S || null != O ? (0, i.jsx)(r.A, {
                 className: L.Zg,
-                emojiId: b,
+                emojiId: S,
                 emojiName: O
             }) : null;
         return (0, i.jsxs)("div", {
             className: L.nM,
-            children: [(0, i.jsxs)(r.sqX, {
+            children: [(0, i.jsxs)(a.sqX, {
                 className: L.u4,
                 focusProps: {
                     offset: 4
@@ -179,7 +179,7 @@ let k = s.memo(function(e) {
                     className: L.rf,
                     children: ["lifecycle_item" === t.type && null != t.item_enum && (0, i.jsx)(P, {
                         item: t
-                    }), (0, i.jsxs)(r.Text, {
+                    }), (0, i.jsxs)(a.Text, {
                         variant: "text-md/normal",
                         color: d ? "text-muted" : "text-default",
                         children: ["string" != typeof _ ? _ : h.A.parse(_), M]
@@ -187,7 +187,7 @@ let k = s.memo(function(e) {
                         item: t
                     }) : null, null != t.callout ? (0, i.jsx)(U, {
                         item: t
-                    }) : null, (0, i.jsx)(r.Text, {
+                    }) : null, (0, i.jsx)(a.Text, {
                         variant: "text-xs/medium",
                         color: d ? "text-muted" : "text-default",
                         children: (0, N.jb)(x.default.extractTimestamp(t.id))
@@ -202,7 +202,7 @@ let k = s.memo(function(e) {
         let {
             items: t
         } = e, n = p.ns.useSetting();
-        return (0, b.q)(t), (0, i.jsx)(i.Fragment, {
+        return (0, S.q)(t), (0, i.jsx)(i.Fragment, {
             children: t.map(e => (0, i.jsx)(k, {
                 item: e,
                 ackedBeforeId: n

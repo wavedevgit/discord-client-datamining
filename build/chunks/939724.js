@@ -5,47 +5,47 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(503698),
-    a = n.n(s),
-    l = n(989349),
-    r = n.n(l),
+    l = n.n(s),
+    a = n(989349),
+    r = n.n(a),
     o = n(397927),
-    c = n(496431),
-    d = n(985018),
+    d = n(496431),
+    c = n(985018),
     u = n(338422);
 let _ = e => {
     let {
         expiresAt: t,
         className: n
-    } = e, s = (0, c.A)(r()(t).toDate(), 1e3);
+    } = e, s = (0, d.A)(r()(t).toDate(), 1e3);
     if (null == s) return null;
     let {
-        days: l,
+        days: a,
         hours: _,
-        minutes: m,
-        seconds: A
-    } = s, g = [{
-        unitValue: l,
+        minutes: g,
+        seconds: m
+    } = s, A = [{
+        unitValue: a,
         unitType: "days"
     }, {
         unitValue: _,
         unitType: "hours"
     }, {
-        unitValue: m,
+        unitValue: g,
         unitType: "minutes"
     }, {
-        unitValue: A,
+        unitValue: m,
         unitType: "seconds"
     }];
     return (0, i.jsxs)("div", {
-        className: a()(u.Xl, n),
+        className: l()(u.Xl, n),
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
-            children: d.intl.string(d.t["/ARFVE"])
+            children: c.intl.string(c.t["/ARFVE"])
         }), (0, i.jsx)("div", {
             className: u.$R,
-            children: g.map((e, t) => (function(e, t) {
-                let n, [s, a] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
+            children: A.map((e, t) => (function(e, t) {
+                let n, [s, l] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: u.bh,
@@ -63,7 +63,7 @@ let _ = e => {
                                 children: (0, i.jsx)(o.Text, {
                                     variant: "text-md/medium",
                                     color: "always-white",
-                                    children: a
+                                    children: l
                                 })
                             })]
                         }), (0, i.jsx)(o.Text, {
@@ -72,13 +72,13 @@ let _ = e => {
                             children: function(e) {
                                 switch (e) {
                                     case "days":
-                                        return d.intl.string(d.t.ixASa2);
+                                        return c.intl.string(c.t.ixASa2);
                                     case "hours":
-                                        return d.intl.string(d.t["8sNvNn"]);
+                                        return c.intl.string(c.t["8sNvNn"]);
                                     case "minutes":
-                                        return d.intl.string(d.t["Gv6kP/"]);
+                                        return c.intl.string(c.t["Gv6kP/"]);
                                     case "seconds":
-                                        return d.intl.string(d.t.JhaiLW);
+                                        return c.intl.string(c.t.JhaiLW);
                                     default:
                                         return ""
                                 }
@@ -91,7 +91,7 @@ let _ = e => {
                         children: ":"
                     })]
                 })
-            })(e, t === g.length - 1))
+            })(e, t === A.length - 1))
         })]
     })
 }

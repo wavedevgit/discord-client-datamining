@@ -13,18 +13,18 @@ var a = n(627968),
     u = n(775602),
     m = n(409626),
     h = n(106799),
-    p = n(714510),
-    x = n(890687),
+    x = n(714510),
+    p = n(890687),
     g = n(710969),
     _ = n(92246),
     f = n(453384),
-    b = n(646764),
-    v = n(398025),
+    v = n(646764),
+    b = n(398025),
     j = n(516226),
     A = n(720875),
     C = n(713457),
-    T = n(419367),
-    y = n(985018),
+    y = n(419367),
+    T = n(985018),
     S = n(196240);
 let E = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
@@ -48,13 +48,13 @@ function N(e) {
     } = (0, d.zhh)({
         expansionSpring: +!!s,
         config: {
-            ...T.N,
+            ...y.N,
             clamp: !0
         }
     }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, x.O9)(t), Q = (0, p.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? y.intl.format(y.t["8Op4c4"], {
+    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -66,7 +66,7 @@ function N(e) {
     }) : H ? (0, a.jsx)(I, {
         questId: t.id,
         children: M
-    }) : K ? y.intl.format(y.t.ro1sze, {
+    }) : K ? T.intl.format(T.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -75,7 +75,7 @@ function N(e) {
                 customSize: 14
             }), z]
         }, t.id)
-    }) : y.intl.format(y.t["0IUT4Y"], {
+    }) : T.intl.format(T.t["0IUT4Y"], {
         rewardWithArticleHook: () => (0, a.jsx)(I, {
             questId: t.id,
             children: P
@@ -116,7 +116,7 @@ function N(e) {
                             size: 76,
                             percentComplete: $,
                             percentCompleteText: s && !(0, g.Ic)(t) ? q : void 0,
-                            children: (0, a.jsx)(b.A, {
+                            children: (0, a.jsx)(v.A, {
                                 quest: t,
                                 questContent: n,
                                 autoplay: s,
@@ -126,7 +126,7 @@ function N(e) {
                                 sourceQuestContent: w
                             })
                         })]
-                    }) : (0, a.jsx)(b.A, {
+                    }) : (0, a.jsx)(v.A, {
                         quest: t,
                         autoplay: s,
                         questContent: n,
@@ -145,7 +145,7 @@ function N(e) {
                     variant: "eyebrow",
                     color: "text-brand",
                     className: S.G$,
-                    children: y.intl.format(y.t.EAYZAr, {
+                    children: T.intl.format(T.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, a.jsx)(d.Text, {
@@ -156,7 +156,7 @@ function N(e) {
                 }), J]
             }), G && (0, a.jsx)(r.animated.div, {
                 style: {
-                    opacity: (0, v.a)(V.to([0, 1], [1, 0]))
+                    opacity: (0, b.a)(V.to([0, 1], [1, 0]))
                 },
                 className: S.hS
             })]

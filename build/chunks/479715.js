@@ -1,8 +1,8 @@
-/** chunk id: 479715, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    ZA: () => l
+/** chunk id: 479715, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    ZA: () => s
 });
-let n = (0, i(945810).mj)({
+let i = (0, n(945810).mj)({
     kind: "user",
     name: "2026-01-profile-updates-notification",
     defaultConfig: {
@@ -21,8 +21,8 @@ let n = (0, i(945810).mj)({
     }
 });
 
-function l(t) {
-    return n.useConfig({
-        location: t
+function s(e) {
+    return i.useConfig({
+        location: e
     })
 }

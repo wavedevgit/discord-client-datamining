@@ -1,32 +1,21 @@
-/** chunk id: 890801, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    $: () => E
+/** chunk id: 890801, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    $: () => c
 });
-var n = i(934551),
-    l = i(419954),
-    s = i(780964),
-    a = i(358776),
-    r = i(490510),
-    u = i(635603),
-    o = i(531525),
-    d = i(985018);
-let A = (0, l.zZ)(s.X.KEYBINDS_CATEGORY, {
-        buildLayout: () => [u.O]
+var i = n(934551),
+    s = n(419954),
+    l = n(780964),
+    a = n(635603),
+    r = n(985018);
+let o = (0, s.zZ)(l.X.KEYBINDS_CATEGORY, {
+        buildLayout: () => [a.O]
     }),
-    T = (0, l.t_)(s.X.KEYBINDS_PANEL, {
-        usePredicate: () => !(0, a.dk)("LegacyKeybindsPanel"),
-        useTitle: () => d.intl.string(d.t.T9DA2K),
-        StronglyDiscouragedCustomComponent: r.A,
-        buildLayout: () => []
+    d = (0, s.t_)(l.X.KEYBINDS_PANEL, {
+        useTitle: () => r.intl.string(r.t.T9DA2K),
+        buildLayout: () => [o]
     }),
-    S = (0, l.t_)(s.X.KEYBINDS_PANEL, {
-        usePredicate: () => (0, a.dk)("KeybindsPanel"),
-        useTitle: () => d.intl.string(d.t.T9DA2K),
-        buildLayout: () => [A]
-    }),
-    E = (0, l.i4)(s.X.KEYBINDS_SIDEBAR_ITEM, {
-        useTitle: () => d.intl.string(d.t.T9DA2K),
-        getLegacySearchKey: () => (0, a.WJ)("KeybindsPanel") ? void 0 : o.H.KEYBINDS,
-        icon: n.KeyboardIcon,
-        buildLayout: () => (0, a.WJ)("KeybindsPanel") ? [S] : [T]
+    c = (0, s.i4)(l.X.KEYBINDS_SIDEBAR_ITEM, {
+        useTitle: () => r.intl.string(r.t.T9DA2K),
+        icon: i.KeyboardIcon,
+        buildLayout: () => [d]
     })

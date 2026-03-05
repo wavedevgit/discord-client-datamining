@@ -18,7 +18,7 @@ var i = n(627968),
 function m(e) {
     let {
         applicationId: t
-    } = e, [m, p] = r.useState(null), [g, E] = r.useState(!1), I = r.useRef(!1), f = !c.isPlatformEmbedded && !a.Fr, C = r.useMemo(() => (0, l.A)(), []);
+    } = e, [m, g] = r.useState(null), [p, E] = r.useState(!1), I = r.useRef(!1), f = !c.isPlatformEmbedded && !a.Fr, C = r.useMemo(() => (0, l.A)(), []);
     if (r.useEffect(() => {
             f && !0 !== I.current ? (Promise.resolve().then(n.bind(n, 129014)).then(e => {
                 let {
@@ -33,12 +33,12 @@ function m(e) {
                     }
                 }).then(e => {
                     let t = e ?? !1;
-                    p(t), t || E(!0)
+                    g(t), t || E(!0)
                 }).catch(() => {
-                    p(!1), E(!0)
+                    g(!1), E(!0)
                 }).then(() => n.disconnect())
             }), I.current = !0) : f || E(!0)
-        }, [t, f, C]), g) return (0, i.jsx)(d.A, {});
+        }, [t, f, C]), p) return (0, i.jsx)(d.A, {});
     if (f && !1 !== m)
         if (!0 === m) return (0, i.jsxs)("div", {
             className: _.k,

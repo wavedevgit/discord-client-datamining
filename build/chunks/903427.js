@@ -1,62 +1,62 @@
-/** chunk id: 903427, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    K: () => C,
-    P: () => I
+/** chunk id: 903427, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    K: () => E,
+    P: () => x
 });
-var n = i(627968),
-    l = i(64700),
-    s = i(574381),
-    a = i(311907),
-    r = i(192308),
-    u = i(827343),
-    o = i(793574),
-    d = i(419954),
-    A = i(430452),
-    T = i(780964),
-    S = i(825468),
-    E = i(509381),
-    g = i(731854),
-    c = i(985018);
-let _ = !s.Av;
+var i = n(627968),
+    s = n(64700),
+    l = n(574381),
+    a = n(311907),
+    r = n(192308),
+    o = n(827343),
+    d = n(793574),
+    c = n(419954),
+    u = n(430452),
+    _ = n(780964),
+    g = n(825468),
+    m = n(509381),
+    A = n(731854),
+    h = n(985018);
+let p = !l.Av;
 
-function I() {
-    return (0, a.bG)([A.Ay], () => A.Ay.getMode() === g.TB.PUSH_TO_TALK)
+function x() {
+    return (0, a.bG)([u.Ay], () => u.Ay.getMode() === A.TB.PUSH_TO_TALK)
 }
-let C = (0, d.zD)(T.X.VOICE_PUSH_TO_TALK_SETTING, {
+let E = (0, c.zD)(_.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
-        return s.Av ? c.intl.string(c.t.tG4Np5) : c.intl.string(c.t.JMyQin)
+        return l.Av ? h.intl.string(h.t.tG4Np5) : h.intl.string(h.t.JMyQin)
     },
     useSubtitle: function() {
-        let t = (0, a.bG)([A.Ay], () => A.Ay.getMode());
-        return l.useMemo(() => {
-            if (!s.Av && t === g.TB.PUSH_TO_TALK) return c.intl.format(c.t["VHI4+Y"], {
-                onDownloadClick: () => (0, S._)("Help Text PTT")
+        let e = (0, a.bG)([u.Ay], () => u.Ay.getMode());
+        return s.useMemo(() => {
+            if (!l.Av && e === A.TB.PUSH_TO_TALK) return h.intl.format(h.t["VHI4+Y"], {
+                onDownloadClick: () => (0, g._)("Help Text PTT")
             })
-        }, [t])
+        }, [e])
     },
     usePredicate: function() {
-        return (0, a.bG)([A.Ay], () => A.Ay.getActiveInputProfile() !== E.m.STUDIO)
+        return (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== m.m.STUDIO)
     },
     useValue: function() {
-        return (0, a.bG)([A.Ay], () => A.Ay.getMode() === g.TB.PUSH_TO_TALK)
+        return (0, a.bG)([u.Ay], () => u.Ay.getMode() === A.TB.PUSH_TO_TALK)
     },
-    setValue: function(t) {
-        var e, l;
-        e = t ? g.TB.PUSH_TO_TALK : g.TB.VOICE_ACTIVITY, l = [o.A.USER_SETTINGS_VOICE_AND_VIDEO], e === g.TB.PUSH_TO_TALK && _ && (0, r.openModalLazy)(async () => {
+    setValue: function(e) {
+        var t, s;
+        t = e ? A.TB.PUSH_TO_TALK : A.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === A.TB.PUSH_TO_TALK && p && (0, r.openModalLazy)(async () => {
             let {
-                default: t
-            } = await i.e("10919").then(i.bind(i, 556506));
-            return e => (0, n.jsx)(t, {
-                title: c.intl.string(c.t.Kdt0Gb),
-                confirmText: c.intl.string(c.t["1WjMbC"]),
-                cancelText: c.intl.string(c.t.BddRzS),
-                onConfirm: () => (0, S._)("PTT Limited Modal"),
-                body: c.intl.string(c.t.NIozvt),
-                ...e
+                default: e
+            } = await n.e("10919").then(n.bind(n, 556506));
+            return t => (0, i.jsx)(e, {
+                title: h.intl.string(h.t.Kdt0Gb),
+                confirmText: h.intl.string(h.t["1WjMbC"]),
+                cancelText: h.intl.string(h.t.BddRzS),
+                onConfirm: () => (0, g._)("PTT Limited Modal"),
+                body: h.intl.string(h.t.NIozvt),
+                ...t
             })
-        }), u.A.setMode(e, void 0, void 0, {
-            analyticsLocations: l
+        }), o.A.setMode(t, void 0, void 0, {
+            analyticsLocations: s
         })
     },
-    useSearchTerms: () => [c.intl.string(c.t["pS+K2L"]), c.intl.string(c.t.nuFtHH)]
+    useSearchTerms: () => [h.intl.string(h.t["pS+K2L"]), h.intl.string(h.t.nuFtHH)]
 })

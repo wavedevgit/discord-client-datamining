@@ -1,59 +1,59 @@
 /** chunk id: 689296, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(627968),
     s = n(64700),
-    a = n(827734),
-    l = n(397927),
+    l = n(827734),
+    a = n(397927),
     r = n(985018),
     o = n(927078);
 
-function c(e) {
+function d(e) {
     let {
         children: t,
         lineClamp: n = 2,
-        ...c
-    } = e, [d, u] = s.useState(!1), [_, m] = s.useState(null), A = null != _ && (0, i.jsx)("button", {
+        ...d
+    } = e, [c, u] = s.useState(!1), [_, g] = s.useState(null), m = null != _ && (0, i.jsx)("button", {
         className: o.x6,
         onClick: () => u(e => !e),
-        children: (0, i.jsxs)(l.Text, {
+        children: (0, i.jsxs)(a.Text, {
             className: o.B0,
             variant: "text-sm/medium",
             color: "text-brand",
-            children: [d ? r.intl.string(r.t["JQX/Pb"]) : r.intl.string(r.t.Fbrd8J), d ? (0, i.jsx)(l.tN5, {
-                color: a.A.colors.TEXT_BRAND,
+            children: [c ? r.intl.string(r.t["JQX/Pb"]) : r.intl.string(r.t.Fbrd8J), c ? (0, i.jsx)(a.tN5, {
+                color: l.A.colors.TEXT_BRAND,
                 size: "xs"
-            }) : (0, i.jsx)(l.abt, {
-                color: a.A.colors.TEXT_BRAND,
+            }) : (0, i.jsx)(a.abt, {
+                color: l.A.colors.TEXT_BRAND,
                 size: "xs"
             })]
         })
-    }), [g, h] = s.useState(null), x = s.useCallback(() => {
-        if (null == g) return;
+    }), [A, h] = s.useState(null), p = s.useCallback(() => {
+        if (null == A) return;
         let {
             scrollHeight: e,
             clientHeight: t
-        } = g;
-        e > t && m({
+        } = A;
+        e > t && g({
             truncatedHeight: t,
             expandedHeight: e
         })
-    }, [g]);
+    }, [A]);
     s.useEffect(() => {
-        requestAnimationFrame(x)
-    }, [x, t, n]);
-    let p = "auto";
-    return null != _ && (p = d ? `${_.expandedHeight}px` : `${_.truncatedHeight}px`), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(l.Text, {
-            ...c,
+        requestAnimationFrame(p)
+    }, [p, t, n]);
+    let x = "auto";
+    return null != _ && (x = c ? `${_.expandedHeight}px` : `${_.truncatedHeight}px`), (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(a.Text, {
+            ...d,
             className: o.Qs,
-            lineClamp: d ? void 0 : n,
+            lineClamp: c ? void 0 : n,
             ref: h,
             style: {
-                height: p
+                height: x
             },
             children: t
-        }), A]
+        }), m]
     })
 }

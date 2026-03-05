@@ -1,37 +1,37 @@
 /** chunk id: 309272, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
 var s = n(632553),
-    a = n(171316),
-    l = n(975571),
+    l = n(171316),
+    a = n(975571),
     r = n(253932),
     o = n(871930),
-    c = n(578746),
-    d = n(531525),
+    d = n(578746),
+    c = n(531525),
     u = n(652215),
     _ = n(985018),
-    m = n(842130);
+    g = n(842130);
 
-function A() {
+function m() {
     let e = r.H1.useSetting(),
-        t = (0, a.uM)(),
+        t = (0, l.uM)(),
         n = _.t.sJYh5t,
-        A = _.t.cf9mvV,
-        g = (0, s.g)();
+        m = _.t.cf9mvV,
+        A = (0, s.g)();
     return (0, i.jsx)(o.h, {
-        setting: d.H.PRIVACY_DATA_QUESTS_V2,
-        children: (0, i.jsx)(c.Ay, {
+        setting: c.H.PRIVACY_DATA_QUESTS_V2,
+        children: (0, i.jsx)(d.Ay, {
             title: _.intl.string(n),
-            note: _.intl.format(A, {
-                helpdeskArticle: l.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
+            note: _.intl.format(m, {
+                helpdeskArticle: a.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
             }),
             value: !e,
             onChange: e => r.H1.updateSetting(!e),
-            disabled: g || t,
-            tooltipText: t ? _.intl.string(m.default["6Af/cw"]) : void 0
+            disabled: A || t,
+            tooltipText: t ? _.intl.string(g.default["6Af/cw"]) : void 0
         })
     })
 }

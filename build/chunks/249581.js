@@ -1,17 +1,17 @@
 /** chunk id: 249581, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(397927),
     o = n(927018),
     c = n(64585),
     d = n(906688),
     u = n(99761);
-let h = e => {
+let _ = e => {
     let {
         color: t
     } = e;
@@ -63,20 +63,20 @@ let h = e => {
     })
 };
 
-function C(e) {
+function h(e) {
     let {
         achievement: t,
         unlocked: n
     } = e, {
-        name: l,
-        description: C,
-        rarity: E,
-        hideDescriptionUntilUnlock: A,
-        onAction: _
+        name: r,
+        description: h,
+        rarity: C,
+        hideDescriptionUntilUnlock: g,
+        onAction: A
     } = t, {
-        color: g
-    } = (0, o.ag)(E);
-    r.useEffect(() => {
+        color: E
+    } = (0, o.ag)(C);
+    a.useEffect(() => {
         let e = setTimeout(() => {
             c.A.playAchievementUnlockSound()
         }, 50);
@@ -84,12 +84,12 @@ function C(e) {
             clearTimeout(e)
         }
     }, []);
-    let p = null != _ && n,
-        m = p ? s.DUT : "div";
-    return (0, i.jsxs)(m, {
-        className: a()(u.kL, p && u.b),
+    let m = null != A && n,
+        p = m ? s.DUT : "div";
+    return (0, i.jsxs)(p, {
+        className: l()(u.kL, m && u.b),
         onClick: () => {
-            p && _()
+            m && A()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
@@ -103,16 +103,16 @@ function C(e) {
             children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
-                children: l()
+                children: r()
             }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: A && !n ? "?????" : C()
+                children: g && !n ? "?????" : h()
             })]
         }), (0, i.jsx)("div", {
             className: u.Db,
-            children: (0, i.jsx)(h, {
-                color: g
+            children: (0, i.jsx)(_, {
+                color: E
             })
         })]
     })

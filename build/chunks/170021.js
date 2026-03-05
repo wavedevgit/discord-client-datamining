@@ -1,31 +1,31 @@
-/** chunk id: 170021, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    H: () => o
+/** chunk id: 170021, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    H: () => d
 });
-var n = i(864145),
-    l = i(419954),
-    s = i(824744),
-    a = i(253932),
-    r = i(780964),
-    u = i(985018);
-let o = (0, l.sN)(r.X.SOUNDMOJI_VOLUME_SETTING, {
-    useTitle: () => u.intl.string(u.t["2JbvKw"]),
-    useSubtitle: () => u.intl.string(u.t.INenzY),
-    setValue: function(t) {
-        let e = (0, s.w)(t);
-        a.HO.updateSetting(e)
+var i = n(864145),
+    s = n(419954),
+    l = n(824744),
+    a = n(253932),
+    r = n(780964),
+    o = n(985018);
+let d = (0, s.sN)(r.X.SOUNDMOJI_VOLUME_SETTING, {
+    useTitle: () => o.intl.string(o.t["2JbvKw"]),
+    useSubtitle: () => o.intl.string(o.t.INenzY),
+    setValue: function(e) {
+        let t = (0, l.w)(e);
+        a.HO.updateSetting(t)
     },
     minValue: 0,
     maxValue: 100,
     getInitialValue: function() {
-        let t = a.HO.getSetting();
-        return (0, s.M)(t)
+        let e = a.HO.getSetting();
+        return (0, l.M)(e)
     },
-    onValueRender: function(t) {
-        return `${t.toFixed(0)}%`
+    onValueRender: function(e) {
+        return `${e.toFixed(0)}%`
     },
     usePredicate: function() {
-        return (0, n.X9)({
+        return (0, i.X9)({
             location: "SoundmojiVolumeSetting"
         })
     }

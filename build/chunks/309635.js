@@ -1,15 +1,15 @@
 /** chunk id: 309635, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    W: () => a
+    W: () => l
 });
 var i = n(627968);
 n(64700);
 var s = n(397927);
-let a = e => {
+let l = e => {
     let {
         initialSelectedEffect: t,
-        analyticsLocations: a,
-        guild: l
+        analyticsLocations: l,
+        guild: a
     } = e;
     (0, s.mMO)(async () => {
         let {
@@ -17,9 +17,9 @@ let a = e => {
         } = await n.e("92818").then(n.bind(n, 892873));
         return n => (0, i.jsx)(e, {
             ...n,
-            guild: l,
+            guild: a,
             initialSelectedEffect: t,
-            analyticsLocations: a
+            analyticsLocations: l
         })
     }, {})
 }

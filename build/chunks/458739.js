@@ -5,8 +5,8 @@ n.d(t, {
 var l = n(627968);
 n(64700);
 var a = n(397927),
-    i = n(263063),
-    r = n(985018),
+    r = n(263063),
+    i = n(985018),
     s = n(345303);
 let d = e => {
     let {
@@ -17,16 +17,16 @@ let d = e => {
         children: [(0, l.jsx)(a.Heading, {
             className: s.wx,
             variant: "heading-sm/semibold",
-            children: r.intl.string(r.t["0ox7Hq"])
+            children: i.intl.string(i.t["0ox7Hq"])
         }), (0, l.jsx)("div", {
             className: s.bo,
             children: (0, l.jsxs)("div", {
                 className: s.OA,
                 children: [(0, l.jsx)("div", {
                     className: s.$f,
-                    children: (0, l.jsx)(i.Ay, {
+                    children: (0, l.jsx)(r.Ay, {
                         guild: t,
-                        size: i.Ay.Sizes.LARGE
+                        size: r.Ay.Sizes.LARGE
                     })
                 }), (0, l.jsx)("div", {
                     children: (0, l.jsx)(a.Text, {

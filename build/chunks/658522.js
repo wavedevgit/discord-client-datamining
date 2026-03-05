@@ -1,32 +1,32 @@
-/** chunk id: 658522, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    J: () => A
+/** chunk id: 658522, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    J: () => u
 });
-var n = i(311907),
-    l = i(817281),
-    s = i(801644),
-    a = i(419954),
-    r = i(964404),
-    u = i(780964),
-    o = i(698723),
-    d = i(985018);
-let A = (0, a.zD)(u.X.VOICE_HARDWARE_MUTE_SILENCE_ALERT_SETTING, {
-    useTitle: () => d.intl.string(d.t.pZ0vr4),
-    useSubtitle: () => d.intl.string(d.t.tVbzoZ),
+var i = n(311907),
+    s = n(817281),
+    l = n(801644),
+    a = n(419954),
+    r = n(964404),
+    o = n(780964),
+    d = n(698723),
+    c = n(985018);
+let u = (0, a.zD)(o.X.VOICE_HARDWARE_MUTE_SILENCE_ALERT_SETTING, {
+    useTitle: () => c.intl.string(c.t.pZ0vr4),
+    useSubtitle: () => c.intl.string(c.t.tVbzoZ),
     useValue: function() {
-        return (0, n.bG)([r.Ay], () => !r.Ay.disableHardwareMuteSilenceAlert)
+        return (0, i.bG)([r.Ay], () => !r.Ay.disableHardwareMuteSilenceAlert)
     },
-    setValue: function(t) {
-        (0, o.A)("hardware_mute_silence_alert_enabled", t, !r.Ay.disableHardwareMuteSilenceAlert), l.Ay.updatedUnsyncedSettings({
-            disableHardwareMuteSilenceAlert: !t
+    setValue: function(e) {
+        (0, d.A)("hardware_mute_silence_alert_enabled", e, !r.Ay.disableHardwareMuteSilenceAlert), s.Ay.updatedUnsyncedSettings({
+            disableHardwareMuteSilenceAlert: !e
         })
     },
     usePredicate: function() {
         let {
-            enableHardwareSilenceWarning: t
-        } = s.A.useConfig({
+            enableHardwareSilenceWarning: e
+        } = l.A.useConfig({
             location: "HardwareMuteSilenceAlertSetting"
         });
-        return t
+        return e
     }
 })

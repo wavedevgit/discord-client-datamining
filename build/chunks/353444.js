@@ -1,12 +1,12 @@
-/** chunk id: 353444, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** chunk id: 353444, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     s: () => r
 });
-var n = i(419954),
-    l = i(780964),
-    s = i(449956),
-    a = i(985018);
-let r = (0, n.E2)(l.X.CAMERA_SELECTION_SETTING, {
+var i = n(419954),
+    s = n(780964),
+    l = n(449956),
+    a = n(985018);
+let r = (0, i.E2)(s.X.CAMERA_SELECTION_SETTING, {
     useSearchTerms: () => [a.intl.string(a.t.FsQ3OR)],
-    Component: s.A
+    Component: l.A
 })

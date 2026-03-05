@@ -1,22 +1,22 @@
-/** chunk id: 859669, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    d: () => d
+/** chunk id: 859669, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    d: () => c
 });
-var n = i(627968);
-i(64700);
-var l = i(397927),
-    s = i(419954),
-    a = i(780964),
-    r = i(614651),
-    u = i(944255);
-let o = (0, s.E2)(a.X.APPEARANCE_ACCESSIBILITY_LINK, {
+var i = n(627968);
+n(64700);
+var s = n(397927),
+    l = n(419954),
+    a = n(780964),
+    r = n(614651),
+    o = n(944255);
+let d = (0, l.E2)(a.X.APPEARANCE_ACCESSIBILITY_LINK, {
         useSearchTerms: () => [],
-        Component: () => (0, n.jsx)(l.Text, {
+        Component: () => (0, i.jsx)(s.Text, {
             variant: "text-md/normal",
-            className: u.fK,
-            children: (0, n.jsx)(r.$p, {})
+            className: o.fK,
+            children: (0, i.jsx)(r.$p, {})
         })
     }),
-    d = (0, s.zZ)(a.X.APPEARANCE_ACCESSIBILITY_LINK_CATEGORY, {
-        buildLayout: () => [o]
+    c = (0, l.zZ)(a.X.APPEARANCE_ACCESSIBILITY_LINK_CATEGORY, {
+        buildLayout: () => [d]
     })

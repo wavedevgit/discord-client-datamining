@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 var i = n(627968);
 n(64700);
 var s = n(215530),
-    l = n(976270),
-    r = n(916217),
+    r = n(976270),
+    l = n(916217),
     a = n(417021),
     d = n(239606);
 
@@ -20,9 +20,9 @@ function o(e) {
     return c && !t ? (0, i.jsx)(a.A, {
         onHide: u,
         ...n
-    }) : o.isNonUserBot() ? (0, i.jsx)(r.A, {
+    }) : o.isNonUserBot() ? (0, i.jsx)(l.A, {
         ...n
-    }) : o.bot ? (0, i.jsx)(l.A, {
+    }) : o.bot ? (0, i.jsx)(r.A, {
         ...n
     }) : (0, i.jsx)(d.A, {
         ...n
