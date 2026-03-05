@@ -1,5 +1,5 @@
-/** chunk id: 792691, original params: e,t,n (module,exports,require) **/
-e.exports = {
+/** chunk id: 792691, original params: t,i,s (module,exports,require) **/
+t.exports = {
     h: "settingsItemHighlight__7cd2d",
     m: "settingsBackgroundFlashElement__7cd2d"
 }

@@ -34,7 +34,7 @@ var i = n(627968),
     L = n(518477),
     O = n(188275),
     w = n(985018),
-    D = n(39427);
+    D = n(376721);
 
 function P(e) {
     let {
@@ -248,7 +248,6 @@ function F(e) {
         wishlistId: a,
         userId: t.id
     }), R = (0, h.A)({
-        location: "user-profile-modal-v2-wishlist",
         wishlist: E,
         profileOwner: t,
         currentUser: r

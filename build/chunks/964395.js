@@ -7,8 +7,8 @@ var n = t(627968),
     i = t(503698),
     a = t.n(i),
     r = t(158954),
-    o = t(311907),
-    d = t(736653),
+    d = t(311907),
+    o = t(736653),
     c = t(793574),
     u = t(688810),
     _ = t(742589),
@@ -23,7 +23,7 @@ var n = t(627968),
     E = t(652215),
     j = t(518477),
     S = t(985018),
-    k = t(848464);
+    k = t(618661);
 
 function b(e) {
     let {
@@ -45,7 +45,7 @@ function R(e) {
         guildId: l,
         storefront: t,
         selectedPageIndex: i
-    } = e, R = (0, r.Mwr)((0, d.Ay)()), N = (0, o.bG)([p.default], () => p.default.getCurrentUser()), v = (0, A.jM)(), {
+    } = e, R = (0, r.Mwr)((0, o.Ay)()), N = (0, d.bG)([p.default], () => p.default.getCurrentUser()), v = (0, A.jM)(), {
         analyticsLocations: C
     } = (0, u.Ay)(), L = s.useCallback(() => {
         N?.id != null && (0, g.openUserProfileModal)({
@@ -63,9 +63,9 @@ function R(e) {
     }, [v, C]);
     if (null == t) return null;
     let T = null != t.logoAssetId ? (0, f.YE)(t.applicationId, t.logoAssetId, 75) : null,
-        y = null != t.lightThemeLogoAssetId ? (0, f.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
-        O = null;
-    return O = R ? T ?? y : y ?? T, (0, n.jsxs)(_.A, {
+        O = null != t.lightThemeLogoAssetId ? (0, f.YE)(t.applicationId, t.lightThemeLogoAssetId, 75) : null,
+        y = null;
+    return y = R ? T ?? O : O ?? T, (0, n.jsxs)(_.A, {
         disableDoubleClick: !0,
         className: k.N1,
         children: [(0, n.jsxs)(r.DUT, {
@@ -76,9 +76,9 @@ function R(e) {
                 })
             },
             className: k.gn,
-            children: [null != O && (0, n.jsx)("img", {
+            children: [null != y && (0, n.jsx)("img", {
                 className: k.wm,
-                src: O,
+                src: y,
                 alt: t.title
             }), (0, n.jsx)(_.A.Title, {
                 children: t.title

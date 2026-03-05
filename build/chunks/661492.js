@@ -1,31 +1,31 @@
-/** chunk id: 661492, original params: e,t,r (module,exports,require) **/
+/** chunk id: 661492, original params: e,t,n (module,exports,require) **/
 "use strict";
-r.d(t, {
+n.d(t, {
     q: () => i,
-    x: () => a
+    x: () => r
 });
-var n = r(575593),
-    s = r(993408),
-    l = r(985018);
+var a = n(575593),
+    l = n(993408),
+    s = n(985018);
 
-function a(e) {
+function r(e) {
     let t = e.skuName;
-    if (null != e.bundleItems && e.bundleItems.length > 0) return l.intl.formatToPlainString(l.t["/l2CAE"], {
+    if (null != e.bundleItems && e.bundleItems.length > 0) return s.intl.formatToPlainString(s.t["/l2CAE"], {
         itemName: t
     });
-    let r = e.collectiblesItem;
-    if (null == r) return t;
-    switch (r.type) {
-        case n.R.AVATAR_DECORATION:
-            return l.intl.formatToPlainString(l.t.IQQYef, {
+    let n = e.collectiblesItem;
+    if (null == n) return t;
+    switch (n.type) {
+        case a.R.AVATAR_DECORATION:
+            return s.intl.formatToPlainString(s.t.IQQYef, {
                 itemName: t
             });
-        case n.R.PROFILE_EFFECT:
-            return l.intl.formatToPlainString(l.t["x/MGWy"], {
+        case a.R.PROFILE_EFFECT:
+            return s.intl.formatToPlainString(s.t["x/MGWy"], {
                 itemName: t
             });
-        case n.R.NAMEPLATE:
-            return l.intl.formatToPlainString(l.t.eVNt6E, {
+        case a.R.NAMEPLATE:
+            return s.intl.formatToPlainString(s.t.eVNt6E, {
                 itemName: t
             });
         default:
@@ -34,5 +34,5 @@ function a(e) {
 }
 
 function i(e) {
-    return !(0, s.G0)(e) && e.type !== n.R.EXTERNAL_SKU
+    return !(0, l.G0)(e) && e.type !== a.R.EXTERNAL_SKU
 }

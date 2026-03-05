@@ -1,4 +1,4 @@
-/** chunk id: 377448, original params: e,t,n (module,exports,require) **/
+/** chunk id: 377448, original params: e,n,t (module,exports,require) **/
 e.exports = {
     dt: "upsellFooter__5e07c",
     YW: "upsellFooterIcon__5e07c",

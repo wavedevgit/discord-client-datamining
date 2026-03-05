@@ -22,19 +22,17 @@ function _(t) {
     let {
         userId: e,
         numItems: i,
-        source: o = m.B5.USER_PROFILE,
-        location: _
-    } = t, p = (0, a.Ay)(e), {
-        defaultWishlistId: S
+        source: o = m.B5.USER_PROFILE
+    } = t, _ = (0, a.Ay)(e), {
+        defaultWishlistId: p
     } = (0, s.cf)([l.A], () => ({
         defaultWishlistId: l.A.getFirstWishlistId(e)
-    })), T = (0, r.A)({
-        displayProfile: p,
-        location: _
+    })), S = (0, r.A)({
+        displayProfile: _
     }), {
-        wishlistAndRecommendations: h,
-        skusToUserAndReason: E,
-        status: C
+        wishlistAndRecommendations: T,
+        skusToUserAndReason: h,
+        status: E
     } = function(t) {
         let {
             userIdsAndWishlistIds: e,
@@ -130,25 +128,25 @@ function _(t) {
     }({
         userIdsAndWishlistIds: n.useMemo(() => [{
             userId: e,
-            wishlistId: S
-        }], [e, S]),
-        applicationIds: (0, I.T)(T),
+            wishlistId: p
+        }], [e, p]),
+        applicationIds: (0, I.T)(S),
         numItems: i,
         source: o
     }), {
-        totalUnownedWishlistItemCount: O,
-        slicedWishlistAndRecommendations: R
+        totalUnownedWishlistItemCount: C,
+        slicedWishlistAndRecommendations: O
     } = (0, A.m)({
-        wishlistAndRecommendations: h,
-        skusToUserAndReason: E,
+        wishlistAndRecommendations: T,
+        skusToUserAndReason: h,
         userId: e,
         numItems: i
     });
     return {
-        wishlistAndRecommendations: R,
-        skusToUserAndReason: E,
-        status: C,
-        defaultWishlistId: S,
-        totalUnownedWishlistItemCount: O
+        wishlistAndRecommendations: O,
+        skusToUserAndReason: h,
+        status: E,
+        defaultWishlistId: p,
+        totalUnownedWishlistItemCount: C
     }
 }

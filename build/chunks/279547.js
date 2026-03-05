@@ -1,30 +1,30 @@
-/** chunk id: 279547, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    d: () => r
+/** chunk id: 279547, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    d: () => s
 });
 var i = n(64700),
-    l = n(198982);
+    a = n(198982);
 
-function r(e) {
+function s(t) {
     let {
-        onError: t,
+        onError: e,
         onSuccess: n,
-        report: r
-    } = e, [a, s] = i.useState(!1);
+        report: s
+    } = t, [l, r] = i.useState(!1);
     return {
         reportFalsePositive: i.useCallback(async () => {
-            if (!a) {
-                s(!0);
+            if (!l) {
+                r(!0);
                 try {
-                    await r(), n?.()
+                    await s(), n?.()
                 } catch (n) {
-                    let e = new l.LG(n);
-                    t?.(e)
+                    let t = new a.LG(n);
+                    e?.(t)
                 } finally {
-                    s(!1)
+                    r(!1)
                 }
             }
-        }, [a, t, n, r]),
-        isReportFalsePositiveLoading: a
+        }, [l, e, n, s]),
+        isReportFalsePositiveLoading: l
     }
 }

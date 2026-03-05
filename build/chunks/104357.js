@@ -1,10 +1,8 @@
 /** chunk id: 104357, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    T: () => a
+    T: () => r
 });
-var i = n(945810),
-    r = n(916023);
-let l = (0, i.mj)({
+let i = (0, n(945810).mj)({
     name: "2025-12-social-layer-storefront-rtc-entrypoint-user-experiment",
     kind: "user",
     defaultConfig: {
@@ -20,13 +18,11 @@ let l = (0, i.mj)({
     }
 });
 
-function a(e) {
+function r(e) {
     let {
         location: t
-    } = e, n = (0, r.kt)({
+    } = e;
+    return i.useConfig({
         location: t
-    }), i = l.useConfig({
-        location: t
-    }).enabled;
-    return n && i
+    }).enabled
 }

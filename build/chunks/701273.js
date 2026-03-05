@@ -1,44 +1,43 @@
-/** chunk id: 701273, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => m
+/** chunk id: 701273, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => v
 });
-var i = n(481613),
-    s = n.n(i),
-    r = n(400253),
-    l = n(49485),
-    a = n(80703),
-    o = n(803306),
-    d = n(976860),
-    c = n(961350),
-    u = n(650048),
-    h = n(954571),
-    _ = n(877062),
-    p = n(652215);
+var l = i(481613),
+    n = i.n(l),
+    a = i(400253),
+    s = i(49485),
+    r = i(80703),
+    c = i(803306),
+    d = i(976860),
+    o = i(961350),
+    u = i(650048),
+    m = i(954571),
+    x = i(877062),
+    h = i(652215);
 async function g(e) {
-    let t = s().os?.family;
+    let t = n().os?.family;
     if ("Android" === t || "iOS" === t) {
-        let t = c.default.getFingerprint() ?? c.default.getId(),
-            n = (0, l.I_)();
-        if (null == t && c.default.isAuthenticated()) try {
-            await (0, o.rQ)(), t = c.default.getId()
+        let t = o.default.getFingerprint() ?? o.default.getId(),
+            i = (0, s.I_)();
+        if (null == t && o.default.isAuthenticated()) try {
+            await (0, c.rQ)(), t = o.default.getId()
         } catch {}
-        return (0, l.Ay)((0, r.BH)(), {
+        return (0, s.Ay)((0, a.BH)(), {
             utmSource: e,
             fingerprint: t,
-            attemptId: n
+            attemptId: i
         })
     }
     return "discord://"
 }
-async function m(e) {
+async function v(e) {
     let t = await g(e),
-        n = (0, l.X7)(t);
-    null != n && h.default.track(p.HAw.DEEP_LINK_CLICKED, {
-        fingerprint: (0, a.v)(n.fingerprint),
-        attempt_id: n.attemptId,
-        source: n.utmSource
-    }), _.A.launch(t, e => {
+        i = (0, s.X7)(t);
+    null != i && m.default.track(h.HAw.DEEP_LINK_CLICKED, {
+        fingerprint: (0, r.v)(i.fingerprint),
+        attempt_id: i.attemptId,
+        source: i.utmSource
+    }), x.A.launch(t, e => {
         e || (0, d.bG)(u.A.fallbackRoute)
     })
 }

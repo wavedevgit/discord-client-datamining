@@ -23,7 +23,7 @@ function s(e) {
         targetHook: f
     });
     return (0, i.jsx)(a.A, {
-        icon: n(394803),
+        icon: n(617184),
         timestamp: t.timestamp,
         compact: u,
         children: h

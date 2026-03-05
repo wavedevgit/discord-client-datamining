@@ -1,4 +1,5 @@
-/** chunk id: 627988, original params: e,t,a (module,exports,require) **/
+/** chunk id: 627988, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     Hu: "alignCenter__31873",
     Vl: "alignLeft__31873",

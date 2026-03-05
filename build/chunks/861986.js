@@ -7,7 +7,7 @@ var a, i = n(627968);
 n(64700);
 var r = n(449859),
     l = n(985018),
-    s = n(679740),
+    s = n(222590),
     o = ((a = {})[a.WITH_CONTENT = 0] = "WITH_CONTENT", a[a.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", a);
 
 function c(e) {

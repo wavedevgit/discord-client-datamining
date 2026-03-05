@@ -1,97 +1,98 @@
-/** chunk id: 57020, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    A: () => h,
-    F: () => A
-}), l(321073);
-var r = l(855104),
-    n = l(151252),
-    i = l(287809),
-    a = l(927578),
-    s = l(623373),
-    u = l(561769),
-    o = l(652215);
-let d = e => {
+/** chunk id: 57020, original params: e,t,a (module,exports,require) **/
+"use strict";
+a.d(t, {
+    A: () => x,
+    F: () => h
+}), a(321073);
+var l = a(855104),
+    r = a(151252),
+    n = a(287809),
+    s = a(927578),
+    i = a(623373),
+    o = a(561769),
+    d = a(652215);
+let c = e => {
         let {
             product: t,
-            isPremiumUser: l
+            isPremiumUser: a
         } = e, {
-            enabled: r
-        } = (0, n.m)({
+            enabled: l
+        } = (0, r.m)({
             location: "getShopBasePricingData"
-        }), i = r ? (0, s.CW)({
+        }), n = l ? (0, i.CW)({
             product: t,
-            isPremiumUser: l
+            isPremiumUser: a
         }) : void 0;
         return {
-            orbPrice: i,
-            fiatPrice: (0, s.$K)({
+            orbPrice: n,
+            fiatPrice: (0, i.$K)({
                 product: t,
-                isPremiumUser: l
+                isPremiumUser: a
             }) ?? void 0,
-            isOrbExclusive: !!r && (0, s.Ab)(t)
+            isOrbExclusive: !!l && (0, i.Ab)(t)
         }
     },
-    c = e => {
+    u = e => {
         let {
             hasSufficientOrbs: t,
-            orbPrice: l,
-            fiatPrice: r,
-            isOrbExclusive: n,
-            hasDiscountOffer: i = !1,
-            prioritizedCurrency: a = null
-        } = e, s = [], d = a === u.Hi.ORBS, c = a === u.Hi.FIAT;
-        null != l && null != r ? d || !c && t && !i ? s.push(l, r) : s.push(r, l) : null != l ? s.push(l) : null != r && s.push(r);
-        let h = s.length > 0 && s[0]?.currency === o.Yri.DISCORD_ORB;
+            orbPrice: a,
+            fiatPrice: l,
+            isOrbExclusive: r,
+            hasDiscountOffer: n = !1,
+            prioritizedCurrency: s = null
+        } = e, i = [], c = s === o.Hi.ORBS, u = s === o.Hi.FIAT;
+        null != a && null != l ? c || !u && t && !n ? i.push(a, l) : i.push(l, a) : null != a ? i.push(a) : null != l && i.push(l);
+        let x = i.length > 0 && i[0]?.currency === d.Yri.DISCORD_ORB;
         return {
-            checkoutEligiblePrices: s,
-            isOrbExclusive: n,
+            checkoutEligiblePrices: i,
+            isOrbExclusive: r,
             hasSufficientOrbs: t,
-            shouldCheckoutWithOrbs: h
+            shouldCheckoutWithOrbs: x
         }
     },
-    h = e => {
+    x = e => {
         let {
             product: t,
-            prioritizedCurrency: l
-        } = e, n = (0, r.r_)(), s = i.default.getCurrentUser(), {
-            orbPrice: u,
-            fiatPrice: o,
-            isOrbExclusive: h
-        } = d({
-            product: t,
-            isPremiumUser: a.Ay.canUseCollectibles(s)
-        }), A = null != u && null != n && n >= u.amount, {
-            shouldCheckoutWithOrbs: p
+            prioritizedCurrency: a
+        } = e, r = (0, l.r_)(), i = n.default.getCurrentUser(), {
+            orbPrice: o,
+            fiatPrice: d,
+            isOrbExclusive: x
         } = c({
-            orbPrice: u,
-            fiatPrice: o,
-            isOrbExclusive: h,
-            hasSufficientOrbs: A,
-            prioritizedCurrency: l ?? null
+            product: t,
+            isPremiumUser: s.Ay.canUseCollectibles(i)
+        }), h = null != o && null != r && r >= o.amount, {
+            shouldCheckoutWithOrbs: m
+        } = u({
+            orbPrice: o,
+            fiatPrice: d,
+            isOrbExclusive: x,
+            hasSufficientOrbs: h,
+            prioritizedCurrency: a ?? null
         });
-        return p
+        return m
     };
 
-function A(e) {
+function h(e) {
     let {
         product: t,
-        isPremiumUser: l,
-        prioritizedCurrency: n,
-        hasDiscountOffer: i = !1
+        isPremiumUser: a,
+        prioritizedCurrency: r,
+        hasDiscountOffer: n = !1
     } = e, {
-        orbPrice: a,
-        fiatPrice: s,
-        isOrbExclusive: u
-    } = d({
+        orbPrice: s,
+        fiatPrice: i,
+        isOrbExclusive: o
+    } = c({
         product: t,
-        isPremiumUser: l
-    }), o = (0, r.kj)(null != a ? a.amount : null);
-    return c({
-        orbPrice: a,
-        fiatPrice: s,
-        isOrbExclusive: u,
-        hasSufficientOrbs: o,
-        hasDiscountOffer: i,
-        prioritizedCurrency: n
+        isPremiumUser: a
+    }), d = (0, l.kj)(null != s ? s.amount : null);
+    return u({
+        orbPrice: s,
+        fiatPrice: i,
+        isOrbExclusive: o,
+        hasSufficientOrbs: d,
+        hasDiscountOffer: n,
+        prioritizedCurrency: r
     })
 }

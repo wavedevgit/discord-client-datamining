@@ -1,19 +1,18 @@
-/** chunk id: 338510, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    u: () => r
+/** chunk id: 338510, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    u: () => n
 });
-var i = n(617641),
-    s = n(168447),
-    l = n(546140);
+var s = i(617641),
+    _ = i(168447),
+    l = i(546140);
 
-function r(e) {
-    let t = (0, i.Lc)({
+function n(t) {
+    let e = (0, s.Lc)({
             location: "safety-tools-button"
         }),
-        n = (0, l.L)(),
-        r = (0, s.Y)(e);
-    if (!t || !n) return;
-    let a = r.filter(e => null != e.dismiss_timestamp);
-    if (0 !== a.length) return a.sort((e, t) => e.type > t.type || e.dismiss_timestamp < t.dismiss_timestamp ? 1 : -1)[0]
+        i = (0, l.L)(),
+        n = (0, _.Y)(t);
+    if (!e || !i) return;
+    let r = n.filter(t => null != t.dismiss_timestamp);
+    if (0 !== r.length) return r.sort((t, e) => t.type > e.type || t.dismiss_timestamp < e.dismiss_timestamp ? 1 : -1)[0]
 }

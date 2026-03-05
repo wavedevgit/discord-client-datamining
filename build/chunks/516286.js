@@ -10,7 +10,7 @@ var a = n(627968),
     o = n(921854),
     d = n(522958),
     c = n(983078),
-    u = n(159452);
+    u = n(307374);
 
 function m(e) {
     return !!(e.type === r.Z6.PANEL && null != e.StronglyDiscouragedCustomComponent || (0, r.nW)(e) && e.type === r.Z6.SIDEBAR_ITEM && e.layout.some(e => e?.StronglyDiscouragedCustomComponent != null))

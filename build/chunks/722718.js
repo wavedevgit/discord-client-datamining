@@ -12,7 +12,7 @@ var l = n(627968),
     c = n(390486),
     u = n(540999),
     p = n(985018),
-    y = n(908036);
+    y = n(197486);
 
 function v() {
     let e = (0, t.bG)([a.A], () => (0, s.kK)() ? a.A.getCurrentBuildOverride().overrides?.discord_web : null),

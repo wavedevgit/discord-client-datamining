@@ -1,25 +1,26 @@
-/** chunk id: 161918, original params: e,t,l (module,exports,require) **/
-l.d(t, {
-    Mk: () => a,
-    iM: () => s
+/** chunk id: 161918, original params: e,t,a (module,exports,require) **/
+"use strict";
+a.d(t, {
+    Mk: () => s,
+    iM: () => i
 });
-var r = l(627968),
-    n = l(64700);
-let i = n.createContext(null);
+var l = a(627968),
+    r = a(64700);
+let n = r.createContext(null);
 
-function a() {
-    return n.useContext(i)
+function s() {
+    return r.useContext(n)
 }
 
-function s(e) {
+function i(e) {
     let {
         tab: t,
-        children: l
-    } = e, a = n.useMemo(() => ({
+        children: a
+    } = e, s = r.useMemo(() => ({
         tab: t
     }), [t]);
-    return (0, r.jsx)(i.Provider, {
-        value: a,
-        children: l
+    return (0, l.jsx)(n.Provider, {
+        value: s,
+        children: a
     })
 }

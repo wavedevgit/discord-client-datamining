@@ -1,4 +1,5 @@
-/** chunk id: 196408, original params: e,t,i (module,exports,require) **/
+/** chunk id: 196408, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
     yz: "friends_b37a75",
     p$: "emptyState_b37a75 friends_b37a75",

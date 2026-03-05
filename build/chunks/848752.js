@@ -7,11 +7,11 @@ n.d(t, {
 });
 var a = n(627968),
     l = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     i = n(397927),
     o = n(532197),
-    c = n(331026);
+    c = n(627988);
 let d = {
     CENTER: c.Hu,
     LEFT: c.Vl
@@ -59,12 +59,12 @@ class u extends l.PureComponent {
             renderItem: e,
             items: t,
             vertical: n,
-            paginationContainerClass: r,
+            paginationContainerClass: s,
             align: o
         } = this.props, d = n ? c.XA : c.BU;
         return (0, a.jsx)(i.GtU, {
             orientation: n ? "vertical" : "horizontal",
-            className: s()(d, r, o),
+            className: r()(d, s, o),
             ref: this.handleSetScrollerRef,
             children: t.map((t, n) => l.cloneElement(e(t, n), {
                 onClick: () => this.handlePageClick(n),
@@ -89,7 +89,7 @@ class _ extends l.PureComponent {
             className: e
         } = this.props;
         return (0, a.jsx)(i.DUT, {
-            className: s()(c.t1, e),
+            className: r()(c.t1, e),
             onClick: this.handlePrevClick,
             children: (0, a.jsx)(o.A, {
                 className: c.UE,
@@ -111,7 +111,7 @@ class m extends l.PureComponent {
             className: e
         } = this.props;
         return (0, a.jsx)(i.DUT, {
-            className: s()(c.XS, e),
+            className: r()(c.XS, e),
             onClick: this.handleNextClick,
             children: (0, a.jsx)(o.A, {
                 className: c.UE,

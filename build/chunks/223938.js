@@ -49,8 +49,8 @@ var i = n(627968),
 n(827669), n(294920);
 var Y = n(478644),
     q = n(985018),
-    J = n(401376),
-    $ = n(111314);
+    J = n(204794),
+    $ = n(178588);
 
 function Z(e, t, n) {
     let i = e.startsWith("attachment://"),
@@ -215,7 +215,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eH
     });
     (0, G.R)(eG, y.guild_id, y.id);
-    let [e6, e9] = l.useState(!1), e4 = j || e6 || s.length > 0 || null != e_ || ef.length > 0, {
+    let [e9, e6] = l.useState(!1), e4 = j || e9 || s.length > 0 || null != e_ || ef.length > 0, {
         editorHeaderHeight: e8,
         paddingTop: te
     } = (0, A.zhh)({
@@ -278,10 +278,10 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     onImageUploaded: e => (0, I.x)(y.id, {
                                         heroFile: e
                                     }),
-                                    onFocus: () => e9(!0)
+                                    onFocus: () => e6(!0)
                                 }), (0, i.jsx)("input", {
-                                    onFocus: () => e9(!0),
-                                    onBlur: () => e9(!1),
+                                    onFocus: () => e6(!0),
+                                    onBlur: () => e6(!1),
                                     maxLength: 140,
                                     className: J.hz,
                                     placeholder: q.intl.string(q.t.Z8fYjO),

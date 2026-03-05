@@ -7,8 +7,8 @@ var n = t(627968),
     i = t(158954),
     a = t(765671),
     r = t(688810),
-    o = t(954571),
-    d = t(439303),
+    d = t(954571),
+    o = t(439303),
     c = t(961977),
     u = t(183802),
     _ = t(748959),
@@ -16,7 +16,7 @@ var n = t(627968),
     p = t(896447),
     I = t(65356),
     x = t(652215),
-    f = t(131841);
+    f = t(368523);
 
 function A(e) {
     let {
@@ -26,7 +26,7 @@ function A(e) {
     } = e, {
         ref: h,
         width: m
-    } = (0, a.Ay)(), E = (0, d.jM)(), {
+    } = (0, a.Ay)(), E = (0, o.jM)(), {
         analyticsLocations: j
     } = (0, r.Ay)(), S = s.useRef(null), {
         handleScroll: k
@@ -51,7 +51,7 @@ function A(e) {
             isUserGuildMember: s,
             pageHasLeaderboard: i
         } = E;
-        o.default.track(x.HAw.SLAYER_STOREFRONT_PAGE_VIEWED, {
+        d.default.track(x.HAw.SLAYER_STOREFRONT_PAGE_VIEWED, {
             slayer_storefront_session_id: e,
             guild_id: l,
             page_index: t,

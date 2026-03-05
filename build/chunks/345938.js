@@ -1,15 +1,15 @@
 /** chunk id: 345938, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    d: () => s
+    d: () => r
 });
 var a = n(627968),
     l = n(397927),
-    r = n(294454);
-let s = e => {
+    s = n(294454);
+let r = e => {
     let {
         sku: t,
-        guildId: s,
+        guildId: r,
         source: i,
         analyticsLocations: o,
         analyticsContext: c
@@ -17,17 +17,17 @@ let s = e => {
     (0, l.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("54970")]).then(n.bind(n, 763375));
+        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("31920")]).then(n.bind(n, 763375));
         return n => (0, a.jsx)(e, {
             ...n,
             sku: t,
-            guildId: s,
+            guildId: r,
             source: i,
             analyticsLocations: o,
             analyticsContext: c
         })
     }, {
         stackingBehavior: "stack",
-        modalKey: r.aU
+        modalKey: s.aU
     })
 }

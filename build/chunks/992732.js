@@ -1,5 +1,4 @@
-/** chunk id: 992732, original params: e,t,l (module,exports,require) **/
-"use strict";
+/** chunk id: 992732, original params: e,t,n (module,exports,require) **/
 e.exports = {
     lO: "productVariantsContainer__2c397",
     LV: "wrap__2c397",

@@ -1,9 +1,17 @@
-/** chunk id: 936284, original params: e,t,i (module,exports,require) **/
+/** chunk id: 936284, original params: e,t,n (module,exports,require) **/
+"use strict";
 e.exports = {
-    bo: "gameProfileModalTwoColumn__81040",
-    Rm: "gameProfileModalOneColumn__81040",
+    kL: "container__81040",
+    is: "gameArtHero__81040",
+    Qs: "content__81040",
+    Se: "headerInfo__81040",
     jC: "twoColumnMainContent__81040",
     Pn: "twoColumnSidebar__81040",
     b9: "oneColumnMainContent__81040",
-    Qs: "content__81040"
+    n8: "twoColumnCoverArt__81040",
+    gr: "oneColumnCoverArtStoreLinksSummaryContainer__81040",
+    E1: "oneColumnStoreLinksSummaryContainer__81040",
+    FS: "oneColumnCoverArt__81040",
+    lM: "twoColumnLeftMediaSummaryContainer__81040",
+    oC: "twoColumnLeftSections__81040"
 }

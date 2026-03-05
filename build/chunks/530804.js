@@ -1,87 +1,86 @@
 /** chunk id: 530804, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    $n: () => _,
-    uy: () => x,
-    vp: () => f
+    $n: () => m,
+    uy: () => p,
+    vp: () => E
 }), n(321073);
 var i = n(64700),
-    s = n(735438),
-    l = n(311907),
-    r = n(568598),
-    a = n(313961),
+    a = n(735438),
+    r = n(311907),
+    l = n(568598),
+    s = n(313961),
     o = n(288737),
     c = n(961350),
     d = n(734057),
     u = n(696451),
-    h = n(584569),
-    A = n(383501),
-    m = n(287809),
-    p = n(977997),
-    g = n(403362);
+    _ = n(584569),
+    h = n(383501),
+    C = n(287809),
+    g = n(977997),
+    A = n(403362);
 
-function _(e, t) {
-    let n = (0, l.bG)([h.A, A.A], () => e === A.A.getChannelId() ? h.A.getDesyncedVoiceStates() : null),
-        r = (0, l.yK)([a.A], () => null == e ? [] : [...a.A.getGuildRingingUsers(e)]),
-        c = (0, l.yK)([m.default], () => r.map(e => m.default.getUser(e)).filter(g.Vq)),
-        p = (0, l.bG)([d.A], () => d.A.getBasicChannel(e)),
-        _ = i.useMemo(() => c.map(e => ({
+function m(e, t) {
+    let n = (0, r.bG)([_.A, h.A], () => e === h.A.getChannelId() ? _.A.getDesyncedVoiceStates() : null),
+        l = (0, r.yK)([s.A], () => null == e ? [] : [...s.A.getGuildRingingUsers(e)]),
+        c = (0, r.yK)([C.default], () => l.map(e => C.default.getUser(e)).filter(A.Vq)),
+        g = (0, r.bG)([d.A], () => d.A.getBasicChannel(e)),
+        m = i.useMemo(() => c.map(e => ({
             voiceState: new o.A(e.id),
             user: e,
-            member: p?.guild_id != null ? u.Ay.getMember(p?.guild_id, e.id) : null,
+            member: g?.guild_id != null ? u.Ay.getMember(g?.guild_id, e.id) : null,
             nick: e.globalName,
             comparator: e.globalName,
             _isPlaceholder: !1
-        })), [c, p?.guild_id]);
+        })), [c, g?.guild_id]);
     return i.useMemo(() => (function(e, t, n) {
         if ((null == e || 0 === e.length) && 0 === n.length) return t;
         let i = [],
-            l = new Set;
-        for (let e of t) i.push(e), l.add(e.user.id);
+            r = new Set;
+        for (let e of t) i.push(e), r.add(e.user.id);
         return e?.forEach(e => {
-            i.splice((0, s.sortedIndexBy)(i, e, e => {
+            i.splice((0, a.sortedIndexBy)(i, e, e => {
                 let {
                     comparator: t
                 } = e;
                 return t
             }), 0, e)
         }), n.length > 0 && n.forEach(e => {
-            l.has(e.user.id) || i.splice((0, s.sortedIndexBy)(i, e, e => {
+            r.has(e.user.id) || i.splice((0, a.sortedIndexBy)(i, e, e => {
                 let {
                     comparator: t
                 } = e;
                 return t
             }), 0, e)
         }), i
-    })(n, t, _), [n, t, _])
+    })(n, t, m), [n, t, m])
 }
 
-function f(e, t) {
-    let n = (0, l.bG)([h.A, A.A], () => e === A.A.getChannelId() ? h.A.getDesyncedParticipants() : null);
+function E(e, t) {
+    let n = (0, r.bG)([_.A, h.A], () => e === h.A.getChannelId() ? _.A.getDesyncedParticipants() : null);
     return i.useMemo(() => (function(e, t) {
         if (null == e || 0 === e.length) return t;
         let n = [...t];
         return e.forEach(e => {
-            n.splice((0, s.sortedIndexBy)(n, e, e => (0, r.KU)(e)), 0, e)
+            n.splice((0, a.sortedIndexBy)(n, e, e => (0, l.KU)(e)), 0, e)
         }), n
     })(n, t), [n, t])
 }
 
-function x(e, t) {
-    let n = (0, l.bG)([c.default], () => c.default.getId() === t),
-        s = (0, l.bG)([A.A], () => A.A.getChannelId()),
-        r = i.useRef(null),
-        [a, o] = i.useState(!1),
+function p(e, t) {
+    let n = (0, r.bG)([c.default], () => c.default.getId() === t),
+        a = (0, r.bG)([h.A], () => h.A.getChannelId()),
+        l = i.useRef(null),
+        [s, o] = i.useState(!1),
         [d, u] = i.useState(!1),
-        h = (0, l.bG)([A.A, p.A], () => null != t && null != e && A.A.getChannelId() === e && null != p.A.isInChannel(e, t) && A.A.isUserConnected(t)),
-        m = (0, l.bG)([A.A, p.A], () => null != t && null != e && A.A.getChannelId() === e && null != p.A.isInChannel(e, t) && !A.A.isUserConnected(t));
+        _ = (0, r.bG)([h.A, g.A], () => null != t && null != e && h.A.getChannelId() === e && null != g.A.isInChannel(e, t) && h.A.isUserConnected(t)),
+        C = (0, r.bG)([h.A, g.A], () => null != t && null != e && h.A.getChannelId() === e && null != g.A.isInChannel(e, t) && !h.A.isUserConnected(t));
     return i.useEffect(() => {
-        h && u(!0)
-    }, [h]), i.useEffect(() => {
-        s !== e && u(!1)
-    }, [e, s]), i.useEffect(() => (m && null == r.current ? r.current = setTimeout(() => {
-        r.current = null, o(!0)
-    }, 250) : (clearTimeout(r.current), r.current = null, o(!1)), () => {
-        clearTimeout(r.current), r.current = null
-    }), [m]), !n && d && a
+        _ && u(!0)
+    }, [_]), i.useEffect(() => {
+        a !== e && u(!1)
+    }, [e, a]), i.useEffect(() => (C && null == l.current ? l.current = setTimeout(() => {
+        l.current = null, o(!0)
+    }, 250) : (clearTimeout(l.current), l.current = null, o(!1)), () => {
+        clearTimeout(l.current), l.current = null
+    }), [C]), !n && d && s
 }

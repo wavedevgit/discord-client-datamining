@@ -1,30 +1,29 @@
-/** chunk id: 278941, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    e: () => u
-}), n(775443);
-var i = n(927813),
-    s = n(349435),
-    l = n(557279),
-    r = n(338510),
-    a = n(168447),
-    o = n(151119);
-let c = +i.A.Millis.HOUR,
-    d = 12 * i.A.Millis.HOUR;
+/** chunk id: 278941, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    e: () => m
+}), i(775443);
+var s = i(927813),
+    _ = i(349435),
+    l = i(557279),
+    n = i(338510),
+    r = i(168447),
+    o = i(151119);
+let a = +s.A.Millis.HOUR,
+    p = 12 * s.A.Millis.HOUR;
 
-function u(e) {
-    let t = (0, r.u)(e),
-        n = (0, a.Y)(e),
-        i = (0, o.S)(e);
-    if (null == t || i || (0, l.S)(n)) return;
-    let u = n.some(e => e.type === s._j.INAPPROPRIATE_CONVERSATION_TIER_1),
-        h = n.filter(e => null != e.dismiss_timestamp).sort((e, t) => t.dismiss_timestamp < e.dismiss_timestamp ? -1 : 1);
-    if (h.length < 1 || ! function(e) {
-            let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-            if (null == e) return !0;
-            let n = new Date(e).getTime() + (t ? c : d);
-            return new Date().getTime() >= n
-        }(h[0].dismiss_timestamp, u)) return;
-    let A = n.filter(e => null == e.dismiss_timestamp);
-    return A.findLast(e => e.type === s._j.INAPPROPRIATE_CONVERSATION_TIER_1) ?? A.findLast(e => e.type === s._j.INAPPROPRIATE_CONVERSATION_TIER_2)
+function m(t) {
+    let e = (0, n.u)(t),
+        i = (0, r.Y)(t),
+        s = (0, o.S)(t);
+    if (null == e || s || (0, l.S)(i)) return;
+    let m = i.some(t => t.type === _._j.INAPPROPRIATE_CONVERSATION_TIER_1),
+        u = i.filter(t => null != t.dismiss_timestamp).sort((t, e) => e.dismiss_timestamp < t.dismiss_timestamp ? -1 : 1);
+    if (u.length < 1 || ! function(t) {
+            let e = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+            if (null == t) return !0;
+            let i = new Date(t).getTime() + (e ? a : p);
+            return new Date().getTime() >= i
+        }(u[0].dismiss_timestamp, m)) return;
+    let d = i.filter(t => null == t.dismiss_timestamp);
+    return d.findLast(t => t.type === _._j.INAPPROPRIATE_CONVERSATION_TIER_1) ?? d.findLast(t => t.type === _._j.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

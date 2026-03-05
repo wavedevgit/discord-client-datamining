@@ -13,8 +13,8 @@ var l = n(503698),
     c = n(397927),
     o = n(409626),
     d = n(985018),
-    u = n(851822),
-    m = n(307291);
+    u = n(728528),
+    m = n(612617);
 let x = [r.V.OFFICIAL, r.V.TWITTER, r.V.YOUTUBE];
 
 function h(e) {

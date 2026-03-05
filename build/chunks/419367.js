@@ -1,8 +1,8 @@
-/** chunk id: 419367, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    N: () => o
+/** chunk id: 419367, original params: e,r,t (module,exports,require) **/
+t.d(r, {
+    N: () => _
 });
-let o = {
+let _ = {
     tension: 250,
     friction: 20
 }

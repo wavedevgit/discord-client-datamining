@@ -30,7 +30,7 @@ var i = n(627968),
     v = n(652215),
     y = n(806931),
     j = n(985018),
-    R = n(877409);
+    R = n(430071);
 let O = `vc-gifting-${(0,o.A)()}`;
 
 function L(e) {
@@ -72,7 +72,6 @@ function L(e) {
             applicationId: T.XR,
             numWishlistItems: I.o,
             userIds: P,
-            location: "Social Layer Gifting Mini Shelf",
             includeWishlists: !0
         }),
         B = s.useMemo(() => {

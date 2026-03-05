@@ -20,7 +20,7 @@ var i = n(627968),
     _ = n(110618),
     f = n(566388),
     x = n(985018),
-    C = n(852887);
+    C = n(426897);
 let E = function(e) {
     let {
         participants: t,

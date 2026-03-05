@@ -22,8 +22,8 @@ var n = l(627968),
     f = l(836968),
     p = l(652215),
     b = l(985018),
-    v = l(653952),
-    A = l(658122);
+    v = l(757166),
+    A = l(488732);
 let V = [_.UP.DISCOVERY, _.UP.VANITY_URL, _.UP.BOT, _.UP.HUB, _.UP.MANUAL_MEMBER_VERIFICATION, _.UP.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL];
 
 function L(e) {

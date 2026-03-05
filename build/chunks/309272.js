@@ -13,7 +13,7 @@ var s = n(632553),
     c = n(531525),
     u = n(652215),
     _ = n(985018),
-    g = n(842130);
+    g = n(870236);
 
 function m() {
     let e = r.H1.useSetting(),

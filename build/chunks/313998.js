@@ -26,7 +26,7 @@ var i = t(503698),
     C = t(806931),
     T = t(49999),
     N = t(985018),
-    G = t(951808);
+    G = t(717694);
 
 function I(e, n) {
     let t = (0, d.bG)([_.A], () => _.A.getVoiceChannelId()),

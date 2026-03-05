@@ -1,72 +1,72 @@
-/** chunk id: 110618, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    DO: () => g,
-    Mt: () => h,
-    c: () => u,
-    l7: () => A
-}), t(735438);
-var i = t(383501),
-    l = t(562153),
-    r = t(488926),
-    a = t(446600),
-    s = t(516607),
-    d = t(652215),
-    o = t(737045),
-    c = t(985018);
+/** chunk id: 110618, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    DO: () => h,
+    Mt: () => _,
+    c: () => c,
+    l7: () => E
+}), n(735438);
+var i = n(383501),
+    l = n(562153),
+    r = n(488926),
+    a = n(446600),
+    s = n(516607),
+    u = n(652215),
+    d = n(737045),
+    o = n(985018);
 
-function u(e, n, t, i) {
-    let r = n[0],
-        a = l.Ay.getName(e, t, r),
-        s = i ?? n.length;
-    return 1 === s && null != r ? a : null == r ? c.intl.formatToPlainString(c.t.chmM9N, {
+function c(e, t, n, i) {
+    let r = t[0],
+        a = l.Ay.getName(e, n, r),
+        s = i ?? t.length;
+    return 1 === s && null != r ? a : null == r ? o.intl.formatToPlainString(o.t.chmM9N, {
         count: s
-    }) : c.intl.formatToPlainString(c.t.GhkJ21, {
+    }) : o.intl.formatToPlainString(o.t.GhkJ21, {
         name: a,
         count: s - 1
     })
 }
 
-function h(e, n) {
+function _(e, t) {
     switch (e) {
-        case o.T6.OWNER:
-            return c.intl.string(c.t.icuNBM);
-        case o.T6.ADMINISTRATOR:
-            return c.intl.string(c.t.eTmN5a);
-        case o.T6.MEMBER:
-        case o.T6.ROLE:
-            return n ? c.intl.string(c.t.Hw3XWx) : c.intl.string(c.t.YieyPi);
-        case o.T6.EMPTY_STATE:
+        case d.T6.OWNER:
+            return o.intl.string(o.t.icuNBM);
+        case d.T6.ADMINISTRATOR:
+            return o.intl.string(o.t.eTmN5a);
+        case d.T6.MEMBER:
+        case d.T6.ROLE:
+            return t ? o.intl.string(o.t.Hw3XWx) : o.intl.string(o.t.YieyPi);
+        case d.T6.EMPTY_STATE:
     }
     return null
 }
 
-function A(e) {
-    let n = a.A.getStageInstanceByChannel(e.id);
+function E(e) {
+    let t = a.A.getStageInstanceByChannel(e.id);
     return {
         channel_id: e.id,
         guild_id: e.guild_id,
-        topic: n?.topic,
+        topic: t?.topic,
         media_session_id: i.A.getMediaSessionId(),
-        request_to_speak_state: r.MJ(d.xBc.REQUEST_TO_SPEAK, e) ? s.kw.EVERYONE : s.kw.NO_ONE,
-        stage_instance_id: n?.id
+        request_to_speak_state: r.MJ(u.xBc.REQUEST_TO_SPEAK, e) ? s.kw.EVERYONE : s.kw.NO_ONE,
+        stage_instance_id: t?.id
     }
 }
 
-function g(e, n) {
-    let t = n => l.Ay.getName(e.getGuildId(), e.id, n.user),
+function h(e, t) {
+    let n = t => l.Ay.getName(e.getGuildId(), e.id, t.user),
         i = new Set,
-        r = n.filter(e => {
-            let n = e.user.id;
-            return !i.has(n) && (i.add(n), !0)
+        r = t.filter(e => {
+            let t = e.user.id;
+            return !i.has(t) && (i.add(t), !0)
         });
-    return 0 === r.length ? c.intl.string(c.t.FUVhyC) : 1 === r.length ? c.intl.formatToPlainString(c.t.EQwZlN, {
-        a: t(r[0])
-    }) : 2 === r.length ? c.intl.formatToPlainString(c.t.zBcKoA, {
-        a: t(r[0]),
-        b: t(r[1])
-    }) : c.intl.formatToPlainString(c.t["3AqFaG"], {
-        a: t(r[0]),
-        b: t(r[1]),
+    return 0 === r.length ? o.intl.string(o.t.FUVhyC) : 1 === r.length ? o.intl.formatToPlainString(o.t.EQwZlN, {
+        a: n(r[0])
+    }) : 2 === r.length ? o.intl.formatToPlainString(o.t.zBcKoA, {
+        a: n(r[0]),
+        b: n(r[1])
+    }) : o.intl.formatToPlainString(o.t["3AqFaG"], {
+        a: n(r[0]),
+        b: n(r[1]),
         n: r.length - 2
     })
 }

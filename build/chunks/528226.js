@@ -6,7 +6,7 @@ var r = t(627968);
 t(64700);
 var o = t(506456),
     n = t(458306),
-    a = t(988064);
+    a = t(350698);
 let i = e => {
     let {
         bannerSrc: l,

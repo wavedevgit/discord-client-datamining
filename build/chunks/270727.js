@@ -6,7 +6,7 @@ var a = l(627968),
     n = l(64700),
     r = l(732955),
     i = l(448362),
-    s = l(749226);
+    s = l(825092);
 let o = {
         balance: {
             label: "Balance",

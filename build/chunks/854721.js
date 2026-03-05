@@ -7,8 +7,8 @@ var n = t(627968),
     i = t(503698),
     a = t.n(i),
     r = t(835245),
-    o = t(311907),
-    d = t(397927),
+    d = t(311907),
+    o = t(397927),
     c = t(444927),
     u = t(793574),
     _ = t(688810),
@@ -27,7 +27,7 @@ var n = t(627968),
     b = t(964395),
     R = t(542533),
     N = t(652215),
-    v = t(332217);
+    v = t(151439);
 
 function C(e) {
     let {
@@ -35,19 +35,19 @@ function C(e) {
         guildId: t,
         selectedPageIndex: i,
         selectedSku: a
-    } = e, r = (0, E.jM)(), o = s.useRef(r);
+    } = e, r = (0, E.jM)(), d = s.useRef(r);
     s.useEffect(() => {
-        o.current = r
+        d.current = r
     }, [r]);
-    let d = a?.id;
+    let o = a?.id;
     return s.useEffect(() => {
-        if (null != d) return (0, k.R)({
-            skuId: d,
+        if (null != o) return (0, k.R)({
+            skuId: o,
             applicationId: l.applicationId,
             guildId: t,
             isStorefront: !0,
             analyticsLocations: [u.A.SOCIAL_LAYER_STOREFRONT],
-            analyticsContext: o.current,
+            analyticsContext: d.current,
             onClose: () => {
                 (0, g.JK)().location.pathname.indexOf(N.BVt.CHANNELS_GAME_SHOP(t, i)) >= 0 && (0, j.A)({
                     guildId: t,
@@ -57,7 +57,7 @@ function C(e) {
         }), () => {
             (0, k.j)()
         }
-    }, [t, i, d, l.applicationId]), (0, n.jsxs)("div", {
+    }, [t, i, o, l.applicationId]), (0, n.jsxs)("div", {
         className: v.k,
         children: [(0, n.jsx)(b.A, {
             guildId: t,
@@ -81,27 +81,26 @@ function L(e) {
     } = l.params, {
         analyticsLocations: j
     } = (0, _.Ay)(u.A.SOCIAL_LAYER_STOREFRONT), k = (0, S.A)({
-        guildId: t,
-        location: "Social Layer Storefront"
-    }), b = (0, o.bG)([I.default], () => I.default.getSessionId(), []), R = (0, o.bG)([A.A], () => A.A.get(g), [g]);
+        guildId: t
+    }), b = (0, d.bG)([I.default], () => I.default.getSessionId(), []), R = (0, d.bG)([A.A], () => A.A.get(g), [g]);
     (0, p.pE)();
     let N = (0, c.A)((0, r.A)()),
-        L = (0, o.bG)([x.Ay, I.default], () => x.Ay.isMember(t, I.default.getId())),
+        L = (0, d.bG)([x.Ay, I.default], () => x.Ay.isMember(t, I.default.getId())),
         M = s.useMemo(() => {
             if (null == i) return 0;
             let e = parseInt(i, 10);
             return isNaN(e) || null != k && null != k.storefront && e >= k.storefront.pages.length ? 0 : e
         }, [i, k]),
         T = k?.storefront?.pages[M]?.title ?? null,
-        y = k?.storefront?.pages[M]?.leaderboard != null,
-        O = s.useMemo(() => ({
+        O = k?.storefront?.pages[M]?.leaderboard != null,
+        y = s.useMemo(() => ({
             sessionId: N,
             guildId: t,
             pageIndex: M,
             pageTitle: T,
             isUserGuildMember: L,
-            pageHasLeaderboard: y
-        }), [N, t, M, T, L, y]);
+            pageHasLeaderboard: O
+        }), [N, t, M, T, L, O]);
     return (s.useEffect(() => {
         null != t && (0, m.SP)(t, M, null != g ? g : null)
     }, [t, M, g]), s.useEffect(() => {
@@ -110,11 +109,11 @@ function L(e) {
         })
     }, [t, b]), null == t || k?.storefront == null) ? (0, n.jsx)("div", {
         className: a()(v.u, v.k),
-        children: (0, n.jsx)(d.y$y, {})
+        children: (0, n.jsx)(o.y$y, {})
     }) : (0, n.jsx)(_.f5, {
         value: j,
         children: (0, n.jsx)(E.E9, {
-            newValue: O,
+            newValue: y,
             children: (0, n.jsx)(C, {
                 storefront: k.storefront,
                 guildId: t,

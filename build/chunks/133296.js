@@ -1,12 +1,13 @@
 /** chunk id: 133296, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => s
+    A: () => i
 });
-var i = n(627968),
+var a = n(627968),
     l = n(64700),
-    r = n(451988);
-class a extends l.Component {
-    timer = new r.IX;
+    s = n(451988);
+class r extends l.Component {
+    timer = new s.IX;
     state = {
         hovered: !1
     };
@@ -32,8 +33,8 @@ class a extends l.Component {
     componentDidUpdate(e, t) {
         let {
             props: n
-        } = this, i = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), l = i(n, this.state), r = i(e, t);
-        l && !r || e.interval !== n.interval ? this.startTimer() : !l && r && this.stopTimer()
+        } = this, a = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), l = a(n, this.state), s = a(e, t);
+        l && !s || e.interval !== n.interval ? this.startTimer() : !l && s && this.stopTimer()
     }
     startTimer() {
         let {
@@ -69,11 +70,11 @@ class a extends l.Component {
             onMouseLeave: this.handleResume,
             onBlur: this.handleResume
         };
-        return (0, i.jsx)("div", {
+        return (0, a.jsx)("div", {
             ...l,
             className: t,
             children: e
         })
     }
 }
-let s = a
+let i = r

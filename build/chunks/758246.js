@@ -29,7 +29,7 @@ var l = n(311907),
     T = n(156057),
     C = n(652215),
     I = n(985018),
-    v = n(628080);
+    v = n(439702);
 let S = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     y = () => {
         let {

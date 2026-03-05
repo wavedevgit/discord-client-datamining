@@ -93,7 +93,7 @@ function S(e) {
             e.stopPropagation(), (0, r.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([t.e("3795"), t.e("77223"), t.e("26338")]).then(t.bind(t, 199226));
+                } = await Promise.all([t.e("3795"), t.e("77223"), t.e("41616")]).then(t.bind(t, 199226));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     event: T,
@@ -116,7 +116,7 @@ function S(e) {
                 }(0, r.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([t.e("43600"), t.e("28136"), t.e("8421")]).then(t.bind(t, 234355));
+                    } = await Promise.all([t.e("43600"), t.e("28136"), t.e("9925")]).then(t.bind(t, 234355));
                     return t => (0, i.jsx)(e, {
                         ...t,
                         guild: n,

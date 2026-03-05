@@ -41,8 +41,8 @@ var i = n(627968),
     V = n(652215),
     w = n(53516),
     H = n(985018),
-    B = n(536242),
-    Y = n(240342);
+    B = n(949268),
+    Y = n(72936);
 let F = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function z() {
@@ -210,7 +210,7 @@ function Z(e) {
             handleClick: () => (0, c.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("83269"), n.e("14551")]).then(n.bind(n, 350116));
+                } = await Promise.all([n.e("83269"), n.e("5689")]).then(n.bind(n, 350116));
                 return t => (0, i.jsx)(e, {
                     ...t
                 })
@@ -232,7 +232,7 @@ function Z(e) {
                 handleClick: () => (0, c.mMO)(async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("83269"), n.e("14551")]).then(n.bind(n, 350116));
+                    } = await Promise.all([n.e("83269"), n.e("5689")]).then(n.bind(n, 350116));
                     return t => (0, i.jsx)(e, {
                         ...t
                     })

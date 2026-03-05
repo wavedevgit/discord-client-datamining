@@ -25,7 +25,7 @@ var i = n(627968),
     E = n(188275),
     T = n(518477),
     b = n(985018),
-    N = n(30621);
+    N = n(79547);
 
 function S(e) {
     let {
@@ -94,7 +94,6 @@ function y(e) {
         className: d
     } = e, u = (0, g.h)(E.XR), m = (0, o.bG)([I.default], () => I.default.getCurrentUser()), x = (0, o.bG)([I.default], () => I.default.getUser(t?.userId)), p = l.useMemo(() => null == t ? null != m ? [m.id] : void 0 : [t.userId], [t, m]), _ = (0, h.G)("add_to_wishlist_grid"), v = (0, j.A)({
         numWishlistItems: r,
-        location: "SocialLayerAddToWishlistGrid",
         applicationId: E.XR,
         userIds: p,
         includeWishlists: !1

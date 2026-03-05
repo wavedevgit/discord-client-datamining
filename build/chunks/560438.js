@@ -1,9 +1,8 @@
-/** chunk id: 560438, original params: e,t,a (module,exports,require) **/
-"use strict";
-a.d(t, {
-    l: () => n
+/** chunk id: 560438, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    l: () => r
 });
-let n = {
+let r = {
     allowList: !0,
     allowHeading: !0,
     allowLinks: !0,

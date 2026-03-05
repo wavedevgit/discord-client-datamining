@@ -1,11 +1,11 @@
-/** chunk id: 515610, original params: n,e,r (module,exports,require) **/
-r.d(e, {
-    A: () => s
+/** chunk id: 515610, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => a
 });
-var t = r(311907),
-    i = r(967198),
-    l = r(652215);
+var i = t(311907),
+    l = t(967198),
+    r = t(652215);
 
-function s() {
-    return (0, t.bG)([i.A], () => i.A.getGuildId()) === l.YYv
+function a() {
+    return (0, i.bG)([l.A], () => l.A.getGuildId()) === r.YYv
 }

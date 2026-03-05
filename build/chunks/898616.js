@@ -1,34 +1,30 @@
 /** chunk id: 898616, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var i = n(64700),
     l = n(311907),
     a = n(721932),
     s = n(71393),
     r = n(871123),
-    o = n(916023),
-    c = n(501838),
-    d = n(188275);
+    o = n(501838),
+    c = n(188275);
 
-function u(e) {
+function d(e) {
     let {
-        location: t,
-        wishlist: n,
-        profileOwner: u,
-        currentUser: g
-    } = e, m = (0, o.kt)({
-        location: t
-    }), x = u.id === g?.id, f = i.useMemo(() => n?.userId != null ? [n.userId] : [], [n]), p = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), h = n?.items.some(e => (0, a.$)(e)) ?? !1, _ = (0, c.gT)({
-        gameIds: d.sQ,
-        userIds: f
-    }), A = (0, c.K6)({
-        gameIds: d.sQ,
-        userIds: f
-    }), I = (0, c.l1)(f), j = (0, c.hJ)({
-        gameIds: d.sQ
-    }), v = (0, c.ok)({
-        gameIds: d.sQ
+        wishlist: t,
+        profileOwner: n,
+        currentUser: d
+    } = e, u = n.id === d?.id, g = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), m = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), x = t?.items.some(e => (0, a.$)(e)) ?? !1, f = (0, o.gT)({
+        gameIds: c.sQ,
+        userIds: g
+    }), p = (0, o.K6)({
+        gameIds: c.sQ,
+        userIds: g
+    }), h = (0, o.l1)(g), _ = (0, o.hJ)({
+        gameIds: c.sQ
+    }), A = (0, o.ok)({
+        gameIds: c.sQ
     });
-    return m && (h || _ || A || I || x && (null != p || j || v))
+    return x || f || p || h || u && (null != m || _ || A)
 }

@@ -39,7 +39,7 @@ let o = (n, e, r) => {
             action: () => (0, a.mMO)(async () => {
                 let {
                     default: a
-                } = await Promise.all([t.e("43600"), t.e("28136"), t.e("8421")]).then(t.bind(t, 234355));
+                } = await Promise.all([t.e("43600"), t.e("28136"), t.e("9925")]).then(t.bind(t, 234355));
                 return t => (0, l.jsx)(a, {
                     ...t,
                     guild: e,

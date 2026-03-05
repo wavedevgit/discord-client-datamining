@@ -30,7 +30,7 @@ function o(e) {
         action: () => (0, s.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([i.e("8018"), i.e("93142"), i.e("64233"), i.e("76738")]).then(i.bind(i, 409200));
+            } = await Promise.all([i.e("8018"), i.e("93142"), i.e("64233"), i.e("81300")]).then(i.bind(i, 409200));
             return i => (0, n.jsx)(t, {
                 ...i,
                 channelType: a.rbe.GUILD_TEXT,
@@ -43,7 +43,7 @@ function o(e) {
         action: () => (0, s.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([i.e("8018"), i.e("93142"), i.e("64233"), i.e("76738")]).then(i.bind(i, 409200));
+            } = await Promise.all([i.e("8018"), i.e("93142"), i.e("64233"), i.e("81300")]).then(i.bind(i, 409200));
             return i => (0, n.jsx)(t, {
                 ...i,
                 channelType: a.rbe.GUILD_CATEGORY,

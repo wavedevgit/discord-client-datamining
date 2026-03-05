@@ -1,5 +1,4 @@
-/** chunk id: 940871, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 940871, original params: e,t,a (module,exports,require) **/
 e.exports = {
     x6: "button__67645",
     Xr: "redGlow__67645",

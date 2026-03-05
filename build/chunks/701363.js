@@ -59,7 +59,7 @@ var l = s(627968),
     ee = s(837921),
     et = s(652215),
     es = s(985018),
-    el = s(45119);
+    el = s(477549);
 let en = ee.Ay.getEnableHardwareAcceleration() ? f.JsQ : f.euF,
     ea = {
         offset: {
@@ -272,7 +272,7 @@ function ed(e) {
         }) : (0, S.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([s.e("97262"), s.e("42128"), s.e("39778"), s.e("84488")]).then(s.bind(s, 385913));
+            } = await Promise.all([s.e("97262"), s.e("42128"), s.e("39778"), s.e("22128")]).then(s.bind(s, 385913));
             return s => (0, l.jsx)(e, {
                 ...s,
                 user: r,
@@ -338,7 +338,7 @@ function ed(e) {
         showClose: e7
     } = I.A.useConfig({
         location: "PrivateChannel"
-    }), e4 = (0, A.A)(() => {
+    }), e3 = (0, A.A)(() => {
         let e = ej.current?.getBoundingClientRect() ?? null,
             t = eZ.current?.getBoundingClientRect() ?? null;
         if (null == t || null == e || e.width + 44 - t.width <= 0) return void eC({
@@ -349,7 +349,7 @@ function ed(e) {
             maskImage: `linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) ${s}px, rgba(0, 0, 0, 0))`
         })
     });
-    return n.useLayoutEffect(e4, [em, e4]), (0, m.g)(eS, e4), (0, l.jsx)(d.tG, {
+    return n.useLayoutEffect(e3, [em, e3]), (0, m.g)(eS, e3), (0, l.jsx)(d.tG, {
         id: t.id,
         children: e => {
             let {

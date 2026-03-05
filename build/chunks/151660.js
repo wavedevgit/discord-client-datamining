@@ -17,7 +17,7 @@ var i = n(627968),
     f = n(420208),
     h = n(652215),
     g = n(985018),
-    E = n(173990);
+    E = n(608696);
 
 function p(e) {
     let {
@@ -35,7 +35,7 @@ function p(e) {
             className: r()(E.r, {
                 [E.o]: p
             }),
-            icon: n(394803),
+            icon: n(617184),
             compact: p,
             children: (0, i.jsx)("div", {
                 className: r()({

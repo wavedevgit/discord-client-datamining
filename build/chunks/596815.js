@@ -1,5 +1,4 @@
-/** chunk id: 596815, original params: e,t,l (module,exports,require) **/
-"use strict";
+/** chunk id: 596815, original params: e,_,r (module,exports,require) **/
 e.exports = {
     rJ: "collection__38b7f",
     rf: "body__38b7f",

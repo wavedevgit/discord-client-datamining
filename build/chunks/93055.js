@@ -1,63 +1,63 @@
-/** chunk id: 93055, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Af: () => _,
-    CJ: () => g,
-    Fe: () => h,
-    Rm: () => C,
-    TW: () => A
-}), n(321073);
-var i = n(64700),
-    a = n(478437),
-    l = n(311907);
-n(734057);
-var r = n(808728),
-    o = n(967198),
-    u = n(287809),
-    d = n(474090);
-n(661191);
-var s = n(181079),
-    f = n(379587),
-    c = n(924703),
-    v = n(652215),
-    p = n(788868);
+/** chunk id: 93055, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    Af: () => C,
+    CJ: () => m,
+    Fe: () => p,
+    Rm: () => g,
+    TW: () => v
+}), t(321073);
+var i = t(64700),
+    l = t(478437),
+    r = t(311907);
+t(734057);
+var a = t(808728),
+    s = t(967198),
+    d = t(287809),
+    o = t(474090);
+t(661191);
+var u = t(181079),
+    c = t(379587),
+    A = t(924703),
+    f = t(652215),
+    h = t(788868);
 
-function A(e) {
+function v(e) {
     let {
-        enabled: t,
-        hasHigherPrivileges: n
-    } = (0, f.m)({
+        enabled: n,
+        hasHigherPrivileges: t
+    } = (0, c.m)({
         location: e
-    }), i = (0, l.bG)([u.default], () => u.default.getCurrentUser()), a = d.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
+    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), l = o.Ay.isPremiumExactly(i, h.PremiumTypes.TIER_2);
     return {
-        hasAccess: t && a,
-        isExperimentEnabled: t,
-        isPremiumTier2: a,
-        hasHigherPrivileges: n
+        hasAccess: n && l,
+        isExperimentEnabled: n,
+        isPremiumTier2: l,
+        hasHigherPrivileges: t
     }
 }
 
-function _(e) {
-    return (0, l.bG)([s.A], () => s.A.getFavorite(e))
+function C(e) {
+    return (0, r.bG)([u.A], () => u.A.getFavorite(e))
 }
 
-function C() {
-    return (0, l.bG)([r.Ay], () => r.Ay.getChannels(v.YYv))[a.r.GUILD_CATEGORY].map(e => ({
+function g() {
+    return (0, r.bG)([a.Ay], () => a.Ay.getChannels(f.YYv))[l.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function h() {
-    return (0, l.bG)([o.A], () => o.A.getGuildId()) === v.YYv
+function p() {
+    return (0, r.bG)([s.A], () => s.A.getGuildId()) === f.YYv
 }
 
-function g() {
-    let e = (0, c.T)(),
-        t = i.useCallback(() => {}, [e]),
-        n = i.useCallback(() => {}, [e]);
+function m() {
+    let e = (0, A.T)(),
+        n = i.useCallback(() => {}, [e]),
+        t = i.useCallback(() => {}, [e]);
     return {
         favoriteAdded: e.favoriteAdded,
-        notifyFavoriteAdded: t,
-        clearFavoriteAdded: n
+        notifyFavoriteAdded: n,
+        clearFavoriteAdded: t
     }
 }

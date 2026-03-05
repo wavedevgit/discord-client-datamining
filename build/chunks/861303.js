@@ -1,6 +1,5 @@
-/** chunk id: 861303, original params: e,t,n (module,exports,require) **/
-"use strict";
-e.exports = {
+/** chunk id: 861303, original params: A,e,t (module,exports,require) **/
+A.exports = {
     E3: "base_e42a84",
     dQ: "sparkle_e42a84 base_e42a84",
     uY: "pop_e42a84 base_e42a84",

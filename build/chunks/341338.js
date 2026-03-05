@@ -61,7 +61,7 @@ var i = n(627968),
     el = n(652215),
     ea = n(613057),
     es = n(985018),
-    eo = n(185468);
+    eo = n(539474);
 class ed extends r.PureComponent {
     showCopyLinkTextTimeout = new d.Ep;
     _trackedViewed = !1;
@@ -183,7 +183,7 @@ class ed extends r.PureComponent {
         null != e && null != t && (0, A.mMO)(async () => {
             let {
                 default: r
-            } = await Promise.all([n.e("43600"), n.e("42821")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("75013")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(r, {
                 ...n,
                 guild: t,

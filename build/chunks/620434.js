@@ -5,8 +5,8 @@ n.d(t, {
 });
 var a = n(64700),
     l = n(311907),
-    r = n(688810),
-    s = n(622543),
+    s = n(688810),
+    r = n(622543),
     i = n(808247),
     o = n(594832);
 
@@ -19,7 +19,7 @@ function c(e) {
         onError: u
     } = e, {
         analyticsLocations: _
-    } = (0, r.Ay)(), m = (0, l.bG)([s.A], () => null != t ? s.A.getFirstWishlistId(t.id) : null), h = (0, o.rJ)(m, n), [p, b] = a.useState(null), [f, g] = a.useState(!1), A = null !== p ? p : h;
+    } = (0, s.Ay)(), m = (0, l.bG)([r.A], () => null != t ? r.A.getFirstWishlistId(t.id) : null), h = (0, o.rJ)(m, n), [p, b] = a.useState(null), [f, g] = a.useState(!1), A = null !== p ? p : h;
     a.useEffect(() => {
         b(null), g(!1)
     }, [n]);

@@ -8,7 +8,7 @@ var l = n(627968),
     s = n(503698),
     a = n.n(s),
     r = n(821589),
-    o = n(765163);
+    o = n(531897);
 let d = {
     XSMALL: o.xsmall,
     SMALL: o.small,

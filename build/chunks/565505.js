@@ -18,7 +18,7 @@ var i = n(627968),
     g = n(652215),
     m = n(401755),
     f = n(985018),
-    A = n(473169);
+    A = n(522759);
 
 function x(e, t, n) {
     e.preventDefault(), _.default.track(g.HAw.GUILD_TEMPLATE_APP_OPENED, {

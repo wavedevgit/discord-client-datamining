@@ -30,9 +30,9 @@ var r = e(397927),
     D = e(497600),
     R = e(773699),
     C = e(239211),
-    U = e(707378),
-    O = e(486524),
-    G = e(631637),
+    G = e(707378),
+    U = e(486524),
+    O = e(631637),
     S = e(984894),
     M = e(399476),
     N = e(889460),
@@ -61,7 +61,7 @@ let k = (0, d.A)((0, a.A)(function(n) {
     } = n, Z = (0, F.A)({
         userId: t.id,
         guildId: null
-    }), $ = (0, U.A)({
+    }), $ = (0, G.A)({
         user: t,
         context: J
     }), z = (0, D.A)({
@@ -70,7 +70,7 @@ let k = (0, d.A)((0, a.A)(function(n) {
         context: J
     }), Q = (0, y.A)({
         user: t
-    }), nn = (0, L.A)(t.id), nt = (0, O.A)(e.id, a), ne = (0, N.A)({
+    }), nn = (0, L.A)(t.id), nt = (0, U.A)(e.id, a), ne = (0, N.A)({
         user: t
     }), ni = (0, u.A)(null, t), nr = (0, Y.A)(t.id), nl = (0, P.g)(e.id, "DMUserContextMenu"), na = (0, P.A)(t, nl), nd = (0, E.A)({
         user: t
@@ -100,9 +100,9 @@ let k = (0, d.A)((0, a.A)(function(n) {
         channel: e,
         guildId: void 0,
         onHeightUpdate: q
-    }), ny = (0, b.m)(e), nT = (0, b.y)(e), nD = (0, m.A)(e), nR = (0, I.A)(e), nC = (0, G.A)({
+    }), ny = (0, b.m)(e), nT = (0, b.y)(e), nD = (0, m.A)(e), nR = (0, I.A)(e), nC = (0, O.A)({
         channel: e
-    }), nU = e.isManaged(), nO = t.isNonUserBot();
+    }), nG = e.isManaged(), nU = t.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
@@ -111,16 +111,16 @@ let k = (0, d.A)((0, a.A)(function(n) {
         onSelect: K,
         onInteraction: H,
         children: [(0, i.jsx)(r.rXV, {
-            children: !(nO && !(0, _.A)(e.id)) && np
+            children: !(nU && !(0, _.A)(e.id)) && np
         }), (0, i.jsxs)(r.rXV, {
             children: [ny, nD, nR]
         }), (0, i.jsx)(r.rXV, {
-            children: !nO && nm
+            children: !nU && nm
         }), (0, i.jsxs)(r.rXV, {
-            children: [!nO && (0, i.jsxs)(i.Fragment, {
-                children: [k && Z, $, !nU && na, k && z, k && Q, nn]
+            children: [!nU && (0, i.jsxs)(i.Fragment, {
+                children: [k && Z, $, !nG && na, k && z, k && Q, nn]
             }), (0, _.A)(e.id) && Z, nt]
-        }), !nO && (0, i.jsxs)(i.Fragment, {
+        }), !nU && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(r.rXV, {
                 children: o && nr
             }), (0, i.jsx)(r.rXV, {

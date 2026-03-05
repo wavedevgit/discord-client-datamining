@@ -1,35 +1,36 @@
-/** chunk id: 486318, original params: t,i,a (module,exports,require) **/
-a.d(i, {
+/** chunk id: 486318, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
     N: () => r,
-    e: () => l
+    e: () => s
 });
-var n = a(397927),
-    e = a(871123);
+var a = n(397927),
+    l = n(871123);
 
-function l(t) {
+function s(e) {
     let {
-        imageUrl: i,
-        backgroundImageUrl: a,
-        altText: e,
-        customClassNames: l
-    } = t;
+        imageUrl: t,
+        backgroundImageUrl: n,
+        altText: l,
+        customClassNames: s
+    } = e;
     return {
         type: "dynamic",
-        component: n.Oz7.SOCIAL_LAYER_SKU_PREVIEW,
+        component: a.Oz7.SOCIAL_LAYER_SKU_PREVIEW,
         aspectRatio: "16/9",
         props: {
-            imageUrl: i,
-            backgroundImageUrl: a,
-            altText: e,
-            customClassNames: l
+            imageUrl: t,
+            backgroundImageUrl: n,
+            altText: l,
+            customClassNames: s
         }
     }
 }
 
-function r(t) {
-    return l({
-        imageUrl: (0, e.fq)(t),
-        backgroundImageUrl: (0, e.xf)(t),
-        altText: t.name
+function r(e) {
+    return s({
+        imageUrl: (0, l.fq)(e),
+        backgroundImageUrl: (0, l.xf)(e),
+        altText: e.name
     })
 }

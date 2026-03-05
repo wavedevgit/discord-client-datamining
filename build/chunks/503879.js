@@ -20,7 +20,7 @@ var n = a(627968),
     x = a(652176),
     A = a(203982),
     C = a(652215),
-    b = a(709992);
+    b = a(6361);
 let v = `rel=0&iv_load_policy=3&showinfo=0&modestbranding=1&pageType=${C.NzX}`,
     f = {
         SMALL: {

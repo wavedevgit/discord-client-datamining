@@ -10,8 +10,8 @@ n.d(t, {
 });
 var a = n(64700),
     l = n(735438),
-    r = n(58149),
-    s = n(734057),
+    s = n(58149),
+    r = n(734057),
     i = n(954571),
     o = n(652215);
 
@@ -60,12 +60,12 @@ function u(e) {
             num_query_changes: u,
             any_destination_has_slowmode: _
         }), "message-shortcut" === m) {
-        let e = s.A.getChannel(t);
+        let e = r.A.getChannel(t);
         i.default.track(o.HAw.MESSAGE_SHORTCUT_ACTION_SENT, {
             action: "forward",
             original_message_id: n,
-            ...(0, r.H$)(e?.guild_id),
-            ...(0, r.dI)(e)
+            ...(0, s.H$)(e?.guild_id),
+            ...(0, s.dI)(e)
         })
     }
 }

@@ -19,7 +19,7 @@ var l = n(627968),
     I = n(172799),
     x = n(652215),
     m = n(985018),
-    v = n(912579);
+    v = n(67501);
 let S = r.Ay.connectStores([g.A], () => ({
         hideValue: g.A.hideInstantInvites
     }))(e => {

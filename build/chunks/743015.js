@@ -31,8 +31,8 @@ var l = n(627968),
     y = n(746080),
     O = n(650583),
     T = n(985018),
-    L = n(282627),
-    R = n(206314);
+    L = n(597129),
+    R = n(830412);
 let D = new Set([w.rbe.GUILD_FORUM, w.rbe.GUILD_MEDIA]),
     H = new Set([w.rbe.GUILD_VOICE, w.rbe.GUILD_STAGE_VOICE]);
 
@@ -164,7 +164,7 @@ let G = i.memo(function() {
                         }) : (0, h.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("55285")]).then(n.bind(n, 370372));
+                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("22428")]).then(n.bind(n, 370372));
                             return t => (0, l.jsx)(e, {
                                 ...t,
                                 channel: i,

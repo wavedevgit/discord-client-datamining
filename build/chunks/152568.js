@@ -24,7 +24,7 @@ var n = s(627968),
     b = s(49999),
     A = s(818348),
     S = s(985018),
-    v = s(201073);
+    v = s(419447);
 let I = e => {
     let {
         wideBannerBlock: t,

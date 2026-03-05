@@ -1,4 +1,4 @@
-/** chunk id: 100123, original params: a,i,n (module,exports,require) **/
+/** chunk id: 100123, original params: a,i,s (module,exports,require) **/
 "use strict";
 a.exports = {
     ch: "classificationContainer_a48d6b",

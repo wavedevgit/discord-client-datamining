@@ -1,34 +1,34 @@
-/** chunk id: 835806, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => _
+/** chunk id: 835806, original params: t,n,i (module,exports,require) **/
+i.d(n, {
+    A: () => a
 });
-var i = n(954571),
-    a = n(652215);
+var l = i(954571),
+    e = i(652215);
 
-function _(e) {
+function a(t) {
     let {
-        problem: t,
-        stream: n,
-        feedback: _,
-        streamApplication: o,
+        problem: n,
+        stream: i,
+        feedback: a,
+        streamApplication: s,
         analyticsData: r,
-        location: l,
-        rating: s = null,
-        category: c,
-        variant: d
-    } = e;
-    i.default.track(a.HAw.STREAM_REPORT_PROBLEM, {
-        reason: t,
-        category: c,
-        reason_variant: d,
-        streamer_user_id: n.ownerId,
-        stream_channel_id: n.channelId,
-        guild_id: n.guildId,
-        application_id: null != o ? o.id : null,
-        application_name: null != o ? o.name : null,
-        location: l,
-        rating: s,
-        feedback: _,
+        location: d,
+        rating: o = null,
+        category: u,
+        variant: p
+    } = t;
+    l.default.track(e.HAw.STREAM_REPORT_PROBLEM, {
+        reason: n,
+        category: u,
+        reason_variant: p,
+        streamer_user_id: i.ownerId,
+        stream_channel_id: i.channelId,
+        guild_id: i.guildId,
+        application_id: null != s ? s.id : null,
+        application_name: null != s ? s.name : null,
+        location: d,
+        rating: o,
+        feedback: a,
         ...r
     })
 }

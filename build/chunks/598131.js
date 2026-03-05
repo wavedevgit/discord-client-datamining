@@ -51,8 +51,8 @@ var l = n(627968),
     Y = n(964448),
     q = n(652215),
     Z = n(985018),
-    J = n(641131),
-    X = n(212335);
+    J = n(733045),
+    X = n(515069);
 let ee = ["user_urf", "message_urf", "guild_urf", "media_takedown"];
 
 function et(e, t) {

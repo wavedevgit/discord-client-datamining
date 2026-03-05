@@ -1,5 +1,4 @@
 /** chunk id: 698781, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__477aa",
     GC: "buttonGroup__477aa",

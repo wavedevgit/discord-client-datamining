@@ -35,7 +35,7 @@ var i = n(627968),
     L = n(701363),
     M = n(652215),
     D = n(985018),
-    G = n(454198);
+    G = n(669216);
 let U = s.memo(function() {
     return (0, i.jsxs)("svg", {
         width: "184",

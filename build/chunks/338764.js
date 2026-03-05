@@ -16,7 +16,7 @@ var s = i(627968),
     m = i(574902),
     v = i(852431),
     g = i(652215),
-    w = i(917686);
+    w = i(770888);
 let E = (0, c.xI)(r.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     f = 1 / 120;
 class x extends n.Component {

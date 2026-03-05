@@ -1,2 +1,9 @@
-/** chunk id: 163648, original params: i (module,exports,require) **/
-i.exports = JSON.parse('{"yfwZuy":["Peržiūrėti mano ženklelį"],"UnPGii":["Ženklelis pridėtas tavo profiliui."],"nvaTQq":["Pasiėmei Orbs profilio ženklelį!"]}')
+/** chunk id: 163648, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    zr: "secondaryButton__652ee",
+    _o: "buttonWrapper__652ee",
+    nB: "noGrow__652ee",
+    Om: "dot__652ee",
+    $J: "boostIcon__652ee"
+}

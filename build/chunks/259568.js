@@ -1,46 +1,45 @@
-/** chunk id: 259568, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    a: () => f
-}), n(321073);
-var i = n(627968);
-n(64700);
-var s = n(554146),
-    l = n(116833),
-    r = n(265486),
-    a = n(942857),
-    o = n(793574),
-    c = n(379848),
-    d = n(903223),
-    u = n(997509),
-    h = n(757036),
-    A = n(363487),
-    m = n(828162),
-    p = n(652215),
-    g = n(49999),
-    _ = n(985018);
+/** chunk id: 259568, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    a: () => C
+}), i(321073);
+var r = i(627968);
+i(64700);
+var s = i(554146),
+    n = i(116833),
+    a = i(265486),
+    o = i(942857),
+    l = i(793574),
+    u = i(379848),
+    c = i(903223),
+    d = i(997509),
+    _ = i(757036),
+    p = i(363487),
+    m = i(828162),
+    A = i(652215),
+    S = i(49999),
+    R = i(985018);
 
-function f(e) {
+function C(e) {
     let {
         guild: t,
-        targetElementRef: n
-    } = e, f = (0, A.A)(t.id), x = (0, h.L)(), {
-        enabled: C
-    } = d.Ay.useExperiment({
+        targetElementRef: i
+    } = e, C = (0, p.A)(t.id), g = (0, _.L)(), {
+        enabled: h
+    } = c.Ay.useExperiment({
         guildId: t.id,
         location: "progress-bar-coachmark"
-    }), E = (0, a.A)(), I = (0, d._E)(t, C), N = C && I && !E, b = [];
-    return null != f && f && N && b.push(s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK), x && null != f && !f && N && b.push(s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK), (0, i.jsx)(c.Ay, {
-        contentTypes: b,
+    }), f = (0, o.A)(), E = (0, c._E)(t, h), O = h && E && !f, x = [];
+    return null != C && C && O && x.push(s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK), g && null != C && !C && O && x.push(s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK), (0, r.jsx)(u.Ay, {
+        contentTypes: x,
         children: e => {
             let {
-                visibleContent: a,
-                markAsDismissed: c
+                visibleContent: o,
+                markAsDismissed: u
             } = e;
-            return a === s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK ? (0, i.jsx)(r.A, {
-                targetElementRef: n,
+            return o === s.M.BOOST_PROGRESS_BAR_ADMIN_COACHMARK ? (0, r.jsx)(a.A, {
+                targetElementRef: i,
                 onRequestClose: () => {
-                    c(g.i.USER_DISMISS)
+                    u(S.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -50,24 +49,24 @@ function f(e) {
                 },
                 graphic: {
                     type: "dynamic",
-                    component: l.DynamicGraphicComponent.GUILD_POWERUPS_PROGRESS_BAR_COACHMARK_GRAPHIC,
+                    component: n.DynamicGraphicComponent.GUILD_POWERUPS_PROGRESS_BAR_COACHMARK_GRAPHIC,
                     props: {},
                     aspectRatio: "21/9"
                 },
                 size: "video",
-                title: _.intl.string(_.t.bjJ7xZ),
-                body: _.intl.string(_.t.SeBPzu),
+                title: R.intl.string(R.t.bjJ7xZ),
+                body: R.intl.string(R.t.SeBPzu),
                 actions: [{
-                    text: _.intl.string(_.t["Xc9J+x"]),
+                    text: R.intl.string(R.t["Xc9J+x"]),
                     variant: "primary",
                     onClick: () => {
-                        c(g.i.TAKE_ACTION), u.A.open(t.id, p.BEX.BOOST_PERKS, o.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
+                        u(S.i.TAKE_ACTION), d.A.open(t.id, A.BEX.BOOST_PERKS, l.A.GUILD_BOOSTING_PROGRESS_BAR_ADMIN_COACHMARK)
                     }
                 }]
-            }) : a === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, i.jsx)(r.A, {
-                targetElementRef: n,
+            }) : o === s.M.BOOST_PROGRESS_BAR_MEMBER_COACHMARK ? (0, r.jsx)(a.A, {
+                targetElementRef: i,
                 onRequestClose: () => {
-                    c(g.i.USER_DISMISS)
+                    u(S.i.USER_DISMISS)
                 },
                 position: "right",
                 alignmentStrategy: "edge",
@@ -77,18 +76,18 @@ function f(e) {
                 },
                 graphic: {
                     type: "dynamic",
-                    component: l.DynamicGraphicComponent.GUILD_POWERUPS_PROGRESS_BAR_COACHMARK_GRAPHIC,
+                    component: n.DynamicGraphicComponent.GUILD_POWERUPS_PROGRESS_BAR_COACHMARK_GRAPHIC,
                     props: {},
                     aspectRatio: "21/9"
                 },
                 size: "video",
-                title: _.intl.string(_.t["8W0djT"]),
-                body: _.intl.string(_.t.tgSfkH),
+                title: R.intl.string(R.t["8W0djT"]),
+                body: R.intl.string(R.t.tgSfkH),
                 actions: [{
-                    text: _.intl.string(_.t.cTJtBG),
+                    text: R.intl.string(R.t.cTJtBG),
                     variant: "primary",
                     onClick: () => {
-                        c(g.i.TAKE_ACTION), (0, m.A)(t.id, o.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
+                        u(S.i.TAKE_ACTION), (0, m.A)(t.id, l.A.GUILD_BOOSTING_PROGRESS_BAR_MEMBER_COACHMARK)
                     }
                 }]
             }) : null

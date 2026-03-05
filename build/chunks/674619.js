@@ -254,7 +254,6 @@ function W(e) {
         } = e;
     if (null != A && !Object.values(U.pe).includes(A)) throw Error("subscriptionTier must be a premium subscription");
     let f = (0, m.tA)({
-        location: "PremiumPaymentSelect",
         giftRecipient: E,
         isGift: P ?? !1
     });

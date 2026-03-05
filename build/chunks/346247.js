@@ -2,70 +2,70 @@
 n.d(t, {
     A: () => b
 });
-var l = n(627968),
+var a = n(627968),
     i = n(64700),
-    r = n(311907),
-    a = n(397927),
-    d = n(80682),
-    s = n(267102),
-    o = n(206835),
-    u = n(576622),
-    c = n(961350),
-    A = n(696451),
+    l = n(311907),
+    s = n(397927),
+    r = n(80682),
+    u = n(267102),
+    c = n(206835),
+    d = n(576622),
+    A = n(961350),
+    o = n(696451),
     g = n(71393),
-    E = n(576705),
-    h = n(287809),
-    m = n(652215),
-    C = n(985018);
+    p = n(576705),
+    G = n(287809),
+    f = n(652215),
+    h = n(985018);
 
 function b(e) {
     let {
         guildId: t,
         userId: b,
-        analyticsLocation: M,
-        analyticsLocations: x,
-        context: f,
-        icon: I
-    } = e, S = g.A.getGuild(t), p = c.default.getId(), y = (0, r.bG)([h.default], () => h.default.getUser(b)), G = (0, r.bG)([A.Ay], () => A.Ay.isGuestOrLurker(t, b), [t, b]);
-    (0, r.bG)([E.A], () => E.A.getGuildVersion(t), [t]);
-    let N = i.useMemo(() => ({
+        analyticsLocation: C,
+        analyticsLocations: M,
+        context: N,
+        icon: y
+    } = e, E = g.A.getGuild(t), O = A.default.getId(), _ = (0, l.bG)([G.default], () => G.default.getUser(b)), I = (0, l.bG)([o.Ay], () => o.Ay.isGuestOrLurker(t, b), [t, b]);
+    (0, l.bG)([p.A], () => p.A.getGuildVersion(t), [t]);
+    let k = i.useMemo(() => ({
         [t]: [b]
     }), [t, b]);
-    (0, d.Eq)(N, "useChangeIdentityItem");
-    let O = f === m.BRT.POPOUT,
-        T = (0, o.A)({
-            guild: S,
-            analyticsLocations: x
+    (0, r.Eq)(k, "useChangeIdentityItem");
+    let x = N === f.BRT.POPOUT,
+        B = (0, c.A)({
+            guild: E,
+            analyticsLocations: M
         }),
-        _ = (0, s.aL)();
-    if (null == S || O) return null;
-    let j = p === b && (E.A.can(m.xBc.CHANGE_NICKNAME, S) || E.A.can(m.xBc.MANAGE_NICKNAMES, S)),
-        v = p === b,
-        U = E.A.canManageUser(m.xBc.MANAGE_NICKNAMES, b, S);
-    if (!(j || U || v) || null == y || G) return null;
-    let R = S.features.has(m.GuildFeatures.HUB) ? C.intl.string(C.t["+MWrWt"]) : C.intl.string(C.t["PKQB/H"]),
-        B = v ? R : C.intl.string(C.t.dilOF6);
-    return (0, l.jsx)(a.Drp, {
+        P = (0, u.aL)();
+    if (null == E || x) return null;
+    let U = O === b && (p.A.can(f.xBc.CHANGE_NICKNAME, E) || p.A.can(f.xBc.MANAGE_NICKNAMES, E)),
+        L = O === b,
+        j = p.A.canManageUser(f.xBc.MANAGE_NICKNAMES, b, E);
+    if (!(U || j || L) || null == _ || I) return null;
+    let m = E.features.has(f.GuildFeatures.HUB) ? h.intl.string(h.t["+MWrWt"]) : h.intl.string(h.t["PKQB/H"]),
+        v = L ? m : h.intl.string(h.t.dilOF6);
+    return (0, a.jsx)(s.Drp, {
         id: "change-nickname",
-        label: B,
-        icon: I,
-        leadingAccessory: null != I ? {
+        label: v,
+        icon: y,
+        leadingAccessory: null != y ? {
             type: "icon",
-            icon: I
+            icon: y
         } : void 0,
         action: () => {
-            v ? ((0, u.A)(y.id, y.getAvatarURL(t, 80), {
+            L ? ((0, d.A)(_.id, _.getAvatarURL(t, 80), {
                 guildId: t
-            }), T(), _.dispatch(m.jej.POPOUT_CLOSE), (0, a.s7G)()) : (0, a.mMO)(async () => {
+            }), B(), P.dispatch(f.jej.POPOUT_CLOSE), (0, s.s7G)()) : (0, s.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("48635").then(n.bind(n, 752118));
-                return n => (0, l.jsx)(e, {
+                return n => (0, a.jsx)(e, {
                     ...n,
                     guildId: t,
-                    user: y,
-                    analyticsSource: M,
-                    analyticsLocations: x
+                    user: _,
+                    analyticsSource: C,
+                    analyticsLocations: M
                 })
             })
         }

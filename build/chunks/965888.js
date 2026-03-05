@@ -8,5 +8,6 @@ e.exports = {
     so: "sidebarContainer__89463",
     lt: "powerupsSection__89463",
     qJ: "powerupContainer__89463",
-    dU: "powerupsLevelContainer__89463"
+    dU: "powerupsLevelContainer__89463",
+    CG: "memberSidebarSection__89463"
 }

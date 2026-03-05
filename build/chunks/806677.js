@@ -24,8 +24,8 @@ var a = i(627968),
     L = i(657331),
     k = i(18983),
     E = i(798048),
-    w = i(834796),
-    A = i(310250),
+    A = i(834796),
+    w = i(310250),
     b = i(178213),
     j = i(594832),
     T = i(996353),
@@ -46,8 +46,8 @@ var a = i(627968),
     B = i(518477),
     Z = i(699976),
     K = i(985018),
-    X = i(855135),
-    z = i(958237);
+    X = i(235889),
+    z = i(8043);
 
 function V(e) {
     let {
@@ -83,7 +83,7 @@ function q(e) {
             length: 12
         }, t ? (e, t) => (0, a.jsx)(M.O, {
             spec: Z.Z.SIZE_150
-        }, `placeholder-${t}`) : (e, t) => (0, a.jsx)(w.A, {
+        }, `placeholder-${t}`) : (e, t) => (0, a.jsx)(A.A, {
             cardSize: E.Y.MEDIUM_SQUARE
         }, `placeholder-${t}`))
     })
@@ -203,7 +203,7 @@ function $(e) {
         username: I
     }), {
         analyticsLocations: x
-    } = (0, p.Ay)(...f ?? [], m.A.GIFT_SELECTION_MODAL_WISHLIST), L = (0, H.bc)(r, t), [k, E] = s.useState(!1), w = s.useCallback(e => {
+    } = (0, p.Ay)(...f ?? [], m.A.GIFT_SELECTION_MODAL_WISHLIST), L = (0, H.bc)(r, t), [k, E] = s.useState(!1), A = s.useCallback(e => {
         e && !c && r.length > 0 && (R.default.track(U.HAw.IMPRESSION_GIFT_SELECTION_WISHLIST_SECTION_VIEWED, {
             gift_recipient_id: t.id,
             sku_ids: r.map(e => {
@@ -220,14 +220,14 @@ function $(e) {
             }))),
             location_stack: x
         }), E(!0))
-    }, [c, r, t.id, x]), A = (0, o.K)(w, void 0, !c && !k), j = s.useMemo(() => r.some(e => {
+    }, [c, r, t.id, x]), w = (0, o.K)(A, void 0, !c && !k), j = s.useMemo(() => r.some(e => {
         let {
             item: t
         } = e;
         return (0, C.bF)(t.sku)
     }), [r]);
     return (0, a.jsxs)("div", {
-        ref: A,
+        ref: w,
         className: z.jf,
         children: [(0, a.jsxs)("div", {
             className: z.nM,
@@ -280,8 +280,8 @@ function ee(e) {
     } = e, {
         priceOptions: E
     } = (0, I.P5)(), {
-        claimableRewards: w
-    } = (0, h.Pv)(), A = null != w && w.length > 0, b = null != (0, d.bG)([x.A], () => x.A.getFirstWishlistId(t.id)) && (!k || C > 0), j = K.intl.string(K.t["7lZ31J"]), [T, O] = s.useState("Nitro"), y = s.useRef(null), N = s.useRef(null), v = (0, d.bG)([f.A], () => f.A.useReducedMotion), M = s.useRef(!1), H = s.useRef(!1);
+        claimableRewards: A
+    } = (0, h.Pv)(), w = null != A && A.length > 0, b = null != (0, d.bG)([x.A], () => x.A.getFirstWishlistId(t.id)) && (!k || C > 0), j = K.intl.string(K.t["7lZ31J"]), [T, O] = s.useState("Nitro"), y = s.useRef(null), N = s.useRef(null), v = (0, d.bG)([f.A], () => f.A.useReducedMotion), M = s.useRef(!1), H = s.useRef(!1);
     s.useEffect(() => {
         k && !H.current && (H.current = !0, R.default.track(U.HAw.GIFT_SELECTION_MODAL_OPENED, {
             gift_recipient_id: t.id,
@@ -384,7 +384,7 @@ function ee(e) {
                         children: (0, a.jsx)(V, {
                             onSelectSku: P,
                             priceOptions: E,
-                            showPromotionalGiftBanner: A
+                            showPromotionalGiftBanner: w
                         })
                     }), b && (0, a.jsx)("div", {
                         ref: N,
@@ -425,8 +425,7 @@ function et(e) {
     } = (0, O.r)({
         userId: t.id,
         numItems: 12,
-        source: j.B5.USER_PROFILE,
-        location: "Gift Selection Modal New Recommendations"
+        source: j.B5.USER_PROFILE
     }), I = s.useMemo(() => r()(u.map(e => {
         let i = e.productLine === U.EZt.COLLECTIBLES ? y.A.fromSKU(e) : N.A.fromSKU(e),
             a = null != m[e.id] && m[e.id][t.id] === v.j.WISHLIST ? j.uS.WISHLIST : j.uS.POPULAR;
@@ -468,8 +467,7 @@ function ei(e) {
         fetchState: f
     } = (0, T.A)({
         user: t,
-        numItems: 12,
-        location: "Gift Selection Modal"
+        numItems: 12
     });
     return (0, a.jsx)(ee, {
         giftRecipient: t,
@@ -497,7 +495,7 @@ function ea(e) {
         analyticsObject: o,
         giftMessage: l,
         giftingOrigin: d = Q.vQ.DM_CHANNEL
-    } = e, c = (0, A.T)("gift_selection_modal_wishlist_section");
+    } = e, c = (0, w.T)("gift_selection_modal_wishlist_section");
     return (0, a.jsx)(I.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],

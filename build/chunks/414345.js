@@ -1,8 +1,8 @@
-/** chunk id: 414345, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    g1: () => o
+/** chunk id: 414345, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    g1: () => i
 });
-let a = (0, n(250105).Ay)({
+let r = (0, n(250105).Ay)({
     kind: "user",
     name: "2026-02-premium-brand-refresh-2026",
     defaultConfig: {
@@ -21,12 +21,12 @@ let a = (0, n(250105).Ay)({
     }
 });
 
-function o(t) {
+function i(e) {
     let {
-        location: e,
+        location: t,
         onPremiumTryItOutProfile: n = !1
-    } = t, o = a.getConfig({
-        location: e
+    } = e, i = r.getConfig({
+        location: t
     }).treatment;
-    return !0 === n ? "UPDATE_ALL" === o : "CONTROL" !== o
+    return !0 === n ? "UPDATE_ALL" === i : "CONTROL" !== i
 }

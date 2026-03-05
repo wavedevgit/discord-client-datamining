@@ -11,7 +11,7 @@ var i = n(627968),
     c = n(934551),
     o = n(990078),
     d = n(985018),
-    u = n(851822);
+    u = n(728528);
 let m = [s.Y.DESKTOP, s.Y.XBOX, s.Y.PLAYSTATION, s.Y.NINTENDO];
 
 function x(e) {

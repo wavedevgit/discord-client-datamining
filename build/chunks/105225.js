@@ -77,7 +77,7 @@ var i = n(627968),
     ef = n(652215),
     ex = n(806931),
     eC = n(49999),
-    eE = n(913957);
+    eE = n(832391);
 
 function eI(e, t) {
     if (ei.Ay.isVideoEnabled() === e) return;
@@ -394,8 +394,7 @@ let ey = function(e) {
     } = (0, d.cf)([ei.Ay], () => ({
         canGoLive: (0, M.A)(ei.Ay)
     })), G = (0, O.A)(), U = (0, d.bG)([R.default], () => null != R.default.getAwaitingRemoteSessionInfo()), k = null != G, V = (0, d.bG)([es.A], () => (G?.channelId ?? es.A.getVoiceChannelId()) === t.id), F = (0, B.A)({
-        channelId: t.id,
-        location: "center-control-tray"
+        channelId: t.id
     }), W = (0, d.bG)([f.Ay], () => f.Ay.getCurrentEmbeddedActivity()), {
         reachedLimit: Y,
         limit: z

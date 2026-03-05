@@ -23,7 +23,7 @@ var n = l(627968),
     S = l(652215),
     A = l(568065),
     N = l(985018),
-    y = l(449838);
+    y = l(300440);
 let T = t => {
     let {
         guildBoostSlots: e,

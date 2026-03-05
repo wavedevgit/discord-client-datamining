@@ -24,7 +24,7 @@ var i = n(627968),
     T = n(590858),
     N = n(652215),
     S = n(985018),
-    x = n(811911);
+    x = n(554833);
 class v extends r.PureComponent {
     handleJoinOrView = async () => {
         let {

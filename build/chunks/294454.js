@@ -2,15 +2,15 @@
 "use strict";
 n.d(t, {
     Be: () => o,
-    aU: () => s,
+    aU: () => r,
     fO: () => i,
     vK: () => c
 });
 var a = n(627968);
 n(64700);
 var l = n(397927),
-    r = n(530912);
-let s = "forward-modal";
+    s = n(530912);
+let r = "forward-modal";
 
 function i(e) {
     let {
@@ -21,10 +21,10 @@ function i(e) {
         onRequestSent: d,
         customSendHandler: u
     } = e;
-    (0, r.pp)(t.channel_id, t.id, i), (0, l.mMO)(async () => {
+    (0, s.pp)(t.channel_id, t.id, i), (0, l.mMO)(async () => {
         let {
             ForwardModal: e
-        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("79996")]).then(n.bind(n, 911269));
+        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("8622")]).then(n.bind(n, 911269));
         return n => (0, a.jsx)(e, {
             ...n,
             message: t,
@@ -35,19 +35,19 @@ function i(e) {
             source: i
         })
     }, {
-        modalKey: s
+        modalKey: r
     })
 }
 
 function o() {
-    (0, l.OoC)(s)
+    (0, l.OoC)(r)
 }
 
 function c(e) {
     let {
         message: t,
-        failedDestinations: r,
-        forwardOptions: s
+        failedDestinations: s,
+        forwardOptions: r
     } = e;
     (0, l.mMO)(async () => {
         let {
@@ -56,8 +56,8 @@ function c(e) {
         return n => (0, a.jsx)(e, {
             ...n,
             message: t,
-            failedDestinations: r,
-            forwardOptions: s
+            failedDestinations: s,
+            forwardOptions: r
         })
     })
 }
