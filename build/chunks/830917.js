@@ -1,4 +1,4 @@
-/** chunk id: 830917, original params: t,e,i (module,exports,require) **/
+/** chunk id: 830917 params = (module,exports,require) **/
 function n(t) {
     let {
         image: e,

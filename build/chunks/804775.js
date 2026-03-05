@@ -1,4 +1,4 @@
-/** chunk id: 804775, original params: e,t,n (module,exports,require) **/
+/** chunk id: 804775 params = (module,exports,require) **/
 e.exports = {
     yn: "gameSection__3b7e0",
     r9: "disabled__3b7e0",

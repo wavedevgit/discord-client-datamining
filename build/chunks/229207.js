@@ -1,4 +1,4 @@
-/** chunk id: 229207, original params: e,t (module,exports,require) **/
+/** chunk id: 229207 params = (module,exports,require) **/
 "use strict";
 t.__esModule = !0, t.default = {
     scheme: "atelier lakeside",

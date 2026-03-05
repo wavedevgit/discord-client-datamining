@@ -1,4 +1,4 @@
-/** chunk id: 82253, original params: e,t,n (module,exports,require) **/
+/** chunk id: 82253 params = (module,exports,require) **/
 e.exports = {
     og: "systemMessageContainer_df65b5",
     Kk: "icon_df65b5",

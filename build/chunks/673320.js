@@ -1,4 +1,4 @@
-/** chunk id: 673320, original params: e,t,a (module,exports,require) **/
+/** chunk id: 673320 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     FH: "barsRoot__70b7b",

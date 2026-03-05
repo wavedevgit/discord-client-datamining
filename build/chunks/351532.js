@@ -1,4 +1,4 @@
-/** chunk id: 351532, original params: e,t,n (module,exports,require) **/
+/** chunk id: 351532 params = (module,exports,require) **/
 e.exports = {
     LZ: "categories_fe77d6",
     L1: "category_fe77d6",

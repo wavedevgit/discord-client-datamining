@@ -1,4 +1,4 @@
-/** chunk id: 566457, original params: e,t,n (module,exports,require) **/
+/** chunk id: 566457 params = (module,exports,require) **/
 e.exports = {
     lm: "guildShopEmbed__86fa6",
     dc: "spinnerContainer__86fa6",

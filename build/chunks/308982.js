@@ -1,4 +1,4 @@
-/** chunk id: 308982, original params: t,a,e (module,exports,require) **/
+/** chunk id: 308982 params = (module,exports,require) **/
 t.exports = {
     k: "attachmentRow__1e7f0",
     i: "attachmentDownloadButton__1e7f0"

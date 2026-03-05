@@ -1,4 +1,4 @@
-/** chunk id: 801411, original params: e,s,t (module,exports,require) **/
+/** chunk id: 801411 params = (module,exports,require) **/
 e.exports = {
     nM: "row__848c3",
     eb: "revokeInvite__848c3",

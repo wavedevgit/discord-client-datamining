@@ -1,4 +1,4 @@
-/** chunk id: 824654, original params: e,t,n (module,exports,require) **/
+/** chunk id: 824654 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     At: "topic__0511a",

@@ -1,4 +1,4 @@
-/** chunk id: 504381, original params: t,e,i (module,exports,require) **/
+/** chunk id: 504381 params = (module,exports,require) **/
 t.exports = {
     _P: "avatarDecorationPreview__9baf3",
     xC: "profileEffectPreview__9baf3",

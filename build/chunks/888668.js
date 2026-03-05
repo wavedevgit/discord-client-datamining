@@ -1,4 +1,4 @@
-/** chunk id: 888668, original params: e,t,n (module,exports,require) **/
+/** chunk id: 888668 params = (module,exports,require) **/
 e.exports = {
     mK: "churnDiscountBanner__32fe3",
     ly: "churnDiscountBannerContent__32fe3",

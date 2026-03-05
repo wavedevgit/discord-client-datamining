@@ -1,4 +1,4 @@
-/** chunk id: 493943, original params: e,t,n (module,exports,require) **/
+/** chunk id: 493943 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Io: "pill__1f388",

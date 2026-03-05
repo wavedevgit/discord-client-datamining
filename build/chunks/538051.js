@@ -1,4 +1,4 @@
-/** chunk id: 538051, original params: e,t,n (module,exports,require) **/
+/** chunk id: 538051 params = (module,exports,require) **/
 e.exports = {
     EW: "sidebarScrollable__53543",
     Qs: "content__53543",

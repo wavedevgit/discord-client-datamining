@@ -1,4 +1,4 @@
-/** chunk id: 50397, original params: e,t,_ (module,exports,require) **/
+/** chunk id: 50397 params = (module,exports,require) **/
 e.exports = {
     M1: "ephemeral__5126c",
     SH: "nitroMessage__5126c",

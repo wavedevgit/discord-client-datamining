@@ -1,4 +1,4 @@
-/** chunk id: 19000, original params: e,t,n (module,exports,require) **/
+/** chunk id: 19000 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     KQ: "messagesPopoutWrap__0aee3",

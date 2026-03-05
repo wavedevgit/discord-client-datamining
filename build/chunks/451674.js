@@ -1,4 +1,4 @@
-/** chunk id: 451674, original params: e,a,l (module,exports,require) **/
+/** chunk id: 451674 params = (module,exports,require) **/
 e.exports = {
     aC: "headerGuildName__949ab",
     eZ: "headerGuildBadge__949ab",

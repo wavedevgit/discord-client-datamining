@@ -1,4 +1,4 @@
-/** chunk id: 558375, original params: e,t,n (module,exports,require) **/
+/** chunk id: 558375 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     _$: "creatorBenefitsContainer__02e4c",

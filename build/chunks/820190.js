@@ -1,4 +1,4 @@
-/** chunk id: 820190, original params: e,t,n (module,exports,require) **/
+/** chunk id: 820190 params = (module,exports,require) **/
 e.exports = {
     sn: "boostIconContainer__8dbf5",
     $J: "boostIcon__8dbf5",

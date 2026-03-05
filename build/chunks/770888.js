@@ -1,4 +1,4 @@
-/** chunk id: 770888, original params: e,t,n (module,exports,require) **/
+/** chunk id: 770888 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Ji: "canvas_e99198",

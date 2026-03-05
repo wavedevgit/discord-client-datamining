@@ -1,4 +1,4 @@
-/** chunk id: 485868, original params: e,t,n (module,exports,require) **/
+/** chunk id: 485868 params = (module,exports,require) **/
 e.exports = {
     iE: "wrapper__27106",
     JW: "svg__27106",

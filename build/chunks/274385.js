@@ -1,4 +1,4 @@
-/** chunk id: 274385, original params: e,t,n (module,exports,require) **/
+/** chunk id: 274385 params = (module,exports,require) **/
 e.exports = {
     JD: "chatHeaderBar_a5700d",
     sc: "narrow_a5700d",

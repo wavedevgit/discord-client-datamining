@@ -1,4 +1,4 @@
-/** chunk id: 591336, original params: e,t,n (module,exports,require) **/
+/** chunk id: 591336 params = (module,exports,require) **/
 e.exports = {
     j2: "discountOfferContainer__5521c",
     br: "discountOfferContent__5521c",

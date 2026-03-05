@@ -1,4 +1,4 @@
-/** chunk id: 609689, original params: e,t,n (module,exports,require) **/
+/** chunk id: 609689 params = (module,exports,require) **/
 e.exports = {
     $P: "upsellHeader_d9161f",
     tU: "islands_d9161f",

@@ -1,4 +1,4 @@
-/** chunk id: 948295, original params: e,t,n (module,exports,require) **/
+/** chunk id: 948295 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     kQ: "guildInfoCard__50dcd",

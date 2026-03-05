@@ -1,4 +1,4 @@
-/** chunk id: 621064, original params: t (module,exports,require) **/
+/** chunk id: 621064 params = (module,exports,require) **/
 "use strict";
 t.exports = function(t) {
     var e = t.getSelection(),

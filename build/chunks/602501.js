@@ -1,4 +1,4 @@
-/** chunk id: 602501, original params: e,a,t (module,exports,require) **/
+/** chunk id: 602501 params = (module,exports,require) **/
 e.exports = {
     Bo: "ratingSelector__5c58b",
     xu: "textLabels__5c58b",

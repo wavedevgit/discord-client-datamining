@@ -1,4 +1,4 @@
-/** chunk id: 579832, original params: e,t,n (module,exports,require) **/
+/** chunk id: 579832 params = (module,exports,require) **/
 var i = {
     "./bg.png": "365627",
     "./cs.png": "408100",

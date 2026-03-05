@@ -1,4 +1,4 @@
-/** chunk id: 376391, original params: e,t,n (module,exports,require) **/
+/** chunk id: 376391 params = (module,exports,require) **/
 e.exports = {
     uW: "section_c3d3d9",
     Y_: "children_c3d3d9",

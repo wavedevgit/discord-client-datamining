@@ -1,4 +1,4 @@
-/** chunk id: 799389, original params: t,i,e (module,exports,require) **/
+/** chunk id: 799389 params = (module,exports,require) **/
 t.exports = {
     OI: "bulletContainer__03273",
     zc: "iconContainer__03273",

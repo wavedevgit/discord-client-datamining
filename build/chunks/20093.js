@@ -1,4 +1,4 @@
-/** chunk id: 20093, original params: e,t,l (module,exports,require) **/
+/** chunk id: 20093 params = (module,exports,require) **/
 e.exports = {
     db: "searchHeaderContainer__98d1c",
     wL: "searchHeader__98d1c",

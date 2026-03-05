@@ -1,4 +1,4 @@
-/** chunk id: 959068, original params: e,t,r (module,exports,require) **/
+/** chunk id: 959068 params = (module,exports,require) **/
 e.exports = {
     _x: "shopCard_bab2bc",
     mr: "highlighted_bab2bc",

@@ -1,4 +1,4 @@
-/** chunk id: 701048, original params: e,t,n (module,exports,require) **/
+/** chunk id: 701048 params = (module,exports,require) **/
 e.exports = {
     zr: "root_df7f81",
     es: "mainGuildImage_df7f81",

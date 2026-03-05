@@ -1,4 +1,4 @@
-/** chunk id: 453270, original params: e,t,n (module,exports,require) **/
+/** chunk id: 453270 params = (module,exports,require) **/
 e.exports = {
     MY: "page__99a7e",
     FG: "contentWrapper__99a7e",

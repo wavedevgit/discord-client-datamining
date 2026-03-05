@@ -1,4 +1,4 @@
-/** chunk id: 229227, original params: e,t,a (module,exports,require) **/
+/** chunk id: 229227 params = (module,exports,require) **/
 e.exports = {
     I1: "levelContainer__3dcc3",
     Ab: "perkContainer__3dcc3",

@@ -1,4 +1,4 @@
-/** chunk id: 143857, original params: e,t,n (module,exports,require) **/
+/** chunk id: 143857 params = (module,exports,require) **/
 e.exports = {
     BK: "messageContent_dbf24f",
     G4: "messageReplacement_dbf24f messageContent_dbf24f",

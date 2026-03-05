@@ -1,4 +1,4 @@
-/** chunk id: 299690, original params: e,t,n (module,exports,require) **/
+/** chunk id: 299690 params = (module,exports,require) **/
 e.exports = {
     c: "searchbar__45744",
     p_: "list__45744",

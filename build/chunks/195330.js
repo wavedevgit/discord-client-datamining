@@ -1,4 +1,4 @@
-/** chunk id: 195330, original params: t,e,n (module,exports,require) **/
+/** chunk id: 195330 params = (module,exports,require) **/
 t.exports = {
     EY: "keybindHintKeys__5003d",
     d4: "keybindShortcut__5003d",

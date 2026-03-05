@@ -1,4 +1,4 @@
-/** chunk id: 725048, original params: e,t,n (module,exports,require) **/
+/** chunk id: 725048 params = (module,exports,require) **/
 e.exports = {
     bo: "guildContainer__5dba5",
     $g: "guildInfoContainer__5dba5",

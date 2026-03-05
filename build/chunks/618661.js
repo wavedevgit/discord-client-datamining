@@ -1,4 +1,4 @@
-/** chunk id: 618661, original params: e,l,t (module,exports,require) **/
+/** chunk id: 618661 params = (module,exports,require) **/
 e.exports = {
     N1: "headerContainer__8dd9e",
     wm: "logo__8dd9e",

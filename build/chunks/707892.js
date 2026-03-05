@@ -1,4 +1,4 @@
-/** chunk id: 707892, original params: e,t,a (module,exports,require) **/
+/** chunk id: 707892 params = (module,exports,require) **/
 e.exports = {
     Gt: "smallCarousel__03498",
     Pj: "smallCarouselItem__03498",

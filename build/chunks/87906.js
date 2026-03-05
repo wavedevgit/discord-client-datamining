@@ -1,3 +1,3 @@
-/** chunk id: 87906, original params: e (module,exports,require) **/
+/** chunk id: 87906 params = (module,exports,require) **/
 "use strict";
 e.exports = "/assets/47c38ca77bf70eb5.png"

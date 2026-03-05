@@ -1,4 +1,4 @@
-/** chunk id: 250916, original params: e,t,n (module,exports,require) **/
+/** chunk id: 250916 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     oJ: "avatarBackground_eb2508",

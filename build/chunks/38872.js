@@ -1,4 +1,4 @@
-/** chunk id: 38872, original params: e,t,n (module,exports,require) **/
+/** chunk id: 38872 params = (module,exports,require) **/
 e.exports = {
     eS: "notDetected_cc46f0",
     FB: "nowPlaying_cc46f0",

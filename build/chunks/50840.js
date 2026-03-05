@@ -1,4 +1,4 @@
-/** chunk id: 50840, original params: e,t,a (module,exports,require) **/
+/** chunk id: 50840 params = (module,exports,require) **/
 e.exports = {
     nM: "detailContainer__871ff",
     hQ: "contentContainer__871ff",

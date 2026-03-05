@@ -1,4 +1,4 @@
-/** chunk id: 107360, original params: e,t,n (module,exports,require) **/
+/** chunk id: 107360 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Vu: "settingsHeader__4b8d8",

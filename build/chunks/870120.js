@@ -1,4 +1,4 @@
-/** chunk id: 870120, original params: e,t,n (module,exports,require) **/
+/** chunk id: 870120 params = (module,exports,require) **/
 e.exports = {
     nM: "row_a35735",
     nz: "col_a35735",

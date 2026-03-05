@@ -1,4 +1,4 @@
-/** chunk id: 784579, original params: e,t,n (module,exports,require) **/
+/** chunk id: 784579 params = (module,exports,require) **/
 e.exports = {
     zN: "headerDivider__97dd8",
     Tf: "createButton__97dd8",

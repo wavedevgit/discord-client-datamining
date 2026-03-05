@@ -1,4 +1,4 @@
-/** chunk id: 978001, original params: e,t,n (module,exports,require) **/
+/** chunk id: 978001 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Ui: "statusDiv__5cda9",

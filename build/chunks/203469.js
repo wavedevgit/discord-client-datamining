@@ -1,4 +1,4 @@
-/** chunk id: 203469, original params: e,t,n (module,exports,require) **/
+/** chunk id: 203469 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     MY: "page__12efe",

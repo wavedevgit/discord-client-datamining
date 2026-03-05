@@ -1,4 +1,4 @@
-/** chunk id: 75388, original params: e,t,n (module,exports,require) **/
+/** chunk id: 75388 params = (module,exports,require) **/
 e.exports = {
     ty: "productCardContainer_fcbddd",
     qt: "productCardContentContainer_fcbddd",

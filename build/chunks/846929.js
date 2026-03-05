@@ -1,4 +1,4 @@
-/** chunk id: 846929, original params: e,t,n (module,exports,require) **/
+/** chunk id: 846929 params = (module,exports,require) **/
 e.exports = {
     L: "cardDescription__1f069",
     t: "nitroGradientBorderHover__1f069"

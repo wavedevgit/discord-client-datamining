@@ -1,4 +1,4 @@
-/** chunk id: 171150, original params: e,t,n (module,exports,require) **/
+/** chunk id: 171150 params = (module,exports,require) **/
 e.exports = {
     qD: "keybindMessage__740f2",
     AS: "item__740f2",

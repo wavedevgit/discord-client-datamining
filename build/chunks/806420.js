@@ -1,4 +1,4 @@
-/** chunk id: 806420, original params: e,t,n (module,exports,require) **/
+/** chunk id: 806420 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Sl: "image__74f72",

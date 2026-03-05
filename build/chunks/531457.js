@@ -1,4 +1,4 @@
-/** chunk id: 531457, original params: e,t,n (module,exports,require) **/
+/** chunk id: 531457 params = (module,exports,require) **/
 e.exports = {
     Fz: "modInfoItemContainer__96c0b",
     ol: "modInfoItem__96c0b",

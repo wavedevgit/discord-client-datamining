@@ -1,4 +1,4 @@
-/** chunk id: 742927, original params: _,e,r (module,exports,require) **/
+/** chunk id: 742927 params = (module,exports,require) **/
 _.exports = {
     h8: "voiceUserContainer_c1f755",
     g8: "soundboardEmoji_c1f755",

@@ -1,4 +1,4 @@
-/** chunk id: 533865, original params: e,t,n (module,exports,require) **/
+/** chunk id: 533865 params = (module,exports,require) **/
 e.exports = {
     PI: "messagePreviewContainer_f96002",
     kL: "container_f96002",

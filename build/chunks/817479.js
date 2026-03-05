@@ -1,4 +1,4 @@
-/** chunk id: 817479, original params: e,n,t (module,exports,require) **/
+/** chunk id: 817479 params = (module,exports,require) **/
 e.exports = {
     bK: "perkRow_c609c8",
     f8: "perkIconContainer_c609c8",

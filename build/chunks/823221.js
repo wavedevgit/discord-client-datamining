@@ -1,4 +1,4 @@
-/** chunk id: 823221, original params: e,t,n (module,exports,require) **/
+/** chunk id: 823221 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     HA: "channelName_cb862a",

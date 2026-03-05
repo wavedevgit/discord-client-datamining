@@ -1,4 +1,4 @@
-/** chunk id: 101260, original params: e,t,l (module,exports,require) **/
+/** chunk id: 101260 params = (module,exports,require) **/
 e.exports = {
     pf: "inventory__6980e",
     VQ: "inventoryControls__6980e",

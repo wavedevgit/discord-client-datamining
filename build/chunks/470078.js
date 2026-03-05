@@ -1,4 +1,4 @@
-/** chunk id: 470078, original params: e,t,n (module,exports,require) **/
+/** chunk id: 470078 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     D$: "similarGames_a02225",

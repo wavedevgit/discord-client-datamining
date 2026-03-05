@@ -1,4 +1,4 @@
-/** chunk id: 704288, original params: e,t,n (module,exports,require) **/
+/** chunk id: 704288 params = (module,exports,require) **/
 e.exports = {
     nM: "row__89d80",
     yF: "divider__89d80",

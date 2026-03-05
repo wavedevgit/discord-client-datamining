@@ -1,4 +1,4 @@
-/** chunk id: 585675, original params: t,e,n (module,exports,require) **/
+/** chunk id: 585675 params = (module,exports,require) **/
 t.exports = {
     UD: "buttonContainer__3e6b4",
     rf: "body__3e6b4",

@@ -1,4 +1,4 @@
-/** chunk id: 716622, original params: e,t,n (module,exports,require) **/
+/** chunk id: 716622 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     F: "guildHeader_b81b18",

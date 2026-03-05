@@ -1,4 +1,4 @@
-/** chunk id: 974017, original params: t,e,s (module,exports,require) **/
+/** chunk id: 974017 params = (module,exports,require) **/
 t.exports = {
     Yi: "splash__15293",
     Gt: "gameIcon__15293",

@@ -1,4 +1,4 @@
-/** chunk id: 740644, original params: e,t,n (module,exports,require) **/
+/** chunk id: 740644 params = (module,exports,require) **/
 n.d(t, {
     H: () => r
 });
@@ -26,7 +26,7 @@ class r {
     }
     static getAppVersion() {
         try {
-            return "506703"
+            return "506723"
         } catch {
             return "unknown"
         }

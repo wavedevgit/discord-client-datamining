@@ -1,4 +1,4 @@
-/** chunk id: 534546, original params: e,t,n (module,exports,require) **/
+/** chunk id: 534546 params = (module,exports,require) **/
 e.exports = {
     HK: "dropdownArrowHitbox_e8c23e",
     z3: "dropdownArrow_e8c23e",

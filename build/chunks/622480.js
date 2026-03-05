@@ -1,4 +1,4 @@
-/** chunk id: 622480, original params: e,t,s (module,exports,require) **/
+/** chunk id: 622480 params = (module,exports,require) **/
 e.exports = {
     gx: "nativePickerGuide_afdbcd",
     Yp: "windowIcon_to_afdbcd",

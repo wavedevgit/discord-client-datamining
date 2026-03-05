@@ -1,4 +1,4 @@
-/** chunk id: 704417, original params: e,a,t (module,exports,require) **/
+/** chunk id: 704417 params = (module,exports,require) **/
 e.exports = {
     sq: "forwardPreview_f4b524",
     kx: "linkContainer_f4b524",

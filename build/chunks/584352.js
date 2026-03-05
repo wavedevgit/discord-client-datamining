@@ -1,4 +1,4 @@
-/** chunk id: 584352, original params: e,t,n (module,exports,require) **/
+/** chunk id: 584352 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     qc: "folderGroup__48112",

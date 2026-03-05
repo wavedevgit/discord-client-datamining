@@ -1,4 +1,4 @@
-/** chunk id: 359176, original params: e,t,n (module,exports,require) **/
+/** chunk id: 359176 params = (module,exports,require) **/
 e.exports = {
     my: "avatar_b8dbac",
     yt: "userPreview_b8dbac",

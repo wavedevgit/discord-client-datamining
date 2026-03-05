@@ -1,4 +1,4 @@
-/** chunk id: 326730, original params: e,t,n (module,exports,require) **/
+/** chunk id: 326730 params = (module,exports,require) **/
 e.exports = {
     lA: "connectionsContainer_c7f964",
     U$: "accountButtonInner_c7f964",

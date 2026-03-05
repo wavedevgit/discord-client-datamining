@@ -1,4 +1,4 @@
-/** chunk id: 628756, original params: e,n,t (module,exports,require) **/
+/** chunk id: 628756 params = (module,exports,require) **/
 let r;
 
 function o(e) {

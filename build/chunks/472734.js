@@ -1,4 +1,4 @@
-/** chunk id: 472734, original params: t,i,a (module,exports,require) **/
+/** chunk id: 472734 params = (module,exports,require) **/
 a.d(i, {
     SocialLayerStorefrontItemClaimedSuccessfullyModal: () => T
 });

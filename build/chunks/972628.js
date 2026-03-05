@@ -1,4 +1,4 @@
-/** chunk id: 972628, original params: e,t,n (module,exports,require) **/
+/** chunk id: 972628 params = (module,exports,require) **/
 e.exports = {
     Dt: "guildSelector__673eb",
     ax: "nitroWheel__673eb",

@@ -1,4 +1,4 @@
-/** chunk id: 723328, original params: e,t,n (module,exports,require) **/
+/** chunk id: 723328 params = (module,exports,require) **/
 e.exports = {
     WG: "animationMiddle__8177b",
     Mp: "animationContainer__8177b",

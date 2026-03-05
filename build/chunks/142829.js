@@ -1,4 +1,4 @@
-/** chunk id: 142829, original params: e,t,n (module,exports,require) **/
+/** chunk id: 142829 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     lF: "participants__4783a",

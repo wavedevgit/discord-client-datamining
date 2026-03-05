@@ -1,4 +1,4 @@
-/** chunk id: 391238, original params: e,t,n (module,exports,require) **/
+/** chunk id: 391238 params = (module,exports,require) **/
 e.exports = {
     TC: "voiceFilterHero_cb3698",
     ab: "bgGradient_cb3698",

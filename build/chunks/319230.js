@@ -1,4 +1,4 @@
-/** chunk id: 319230, original params: e,t,n (module,exports,require) **/
+/** chunk id: 319230 params = (module,exports,require) **/
 e.exports = {
     mG: "inline__6c706",
     sC: "hiddenMosaicItem__6c706",

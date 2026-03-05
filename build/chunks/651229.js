@@ -1,4 +1,4 @@
-/** chunk id: 651229, original params: e,t,n (module,exports,require) **/
+/** chunk id: 651229 params = (module,exports,require) **/
 e.exports = {
     VC: "clickZone__29c87",
     r2: "clickZoneDebugContainer__29c87",

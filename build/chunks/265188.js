@@ -1,4 +1,4 @@
-/** chunk id: 265188, original params: e,t (module,exports,require) **/
+/** chunk id: 265188 params = (module,exports,require) **/
 "use strict";
 t.__esModule = !0, t.default = {
     scheme: "monokai",

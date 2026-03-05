@@ -1,4 +1,4 @@
-/** chunk id: 208318, original params: A,e,t (module,exports,require) **/
+/** chunk id: 208318 params = (module,exports,require) **/
 A.exports = {
     kL: "container_f8a8fa",
     x4: "uploadArea_f8a8fa",

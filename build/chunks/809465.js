@@ -1,4 +1,4 @@
-/** chunk id: 809465, original params: e,t,n (module,exports,require) **/
+/** chunk id: 809465 params = (module,exports,require) **/
 n.d(t, {
     A: () => h
 }), n(321073);
@@ -20,7 +20,7 @@ var s = n(503698),
 function h(e) {
     let {
         compact: t = !1
-    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "506703", h = "f26afbcc16e7be93c7e55c46dba0c0479ca76bdb".substring(0, 7), p = d.A?.remoteApp.getVersion(), x = d.A?.remoteApp.getBuildNumber?.(), E = d.A?.remoteApp.getAppArch?.(), T = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "506723", h = "8cdd39b93d4009d370bb52e0489e2187ff5a3d95".substring(0, 7), p = d.A?.remoteApp.getVersion(), x = d.A?.remoteApp.getBuildNumber?.(), E = d.A?.remoteApp.getAppArch?.(), T = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
         let e = r()?.os?.toString();
         if (null == e || null == d.A) return null;
         let t = d.A.os.release,

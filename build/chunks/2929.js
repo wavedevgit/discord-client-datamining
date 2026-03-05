@@ -1,4 +1,4 @@
-/** chunk id: 2929, original params: t,e,a (module,exports,require) **/
+/** chunk id: 2929 params = (module,exports,require) **/
 t.exports = {
     L: "confettiCanvas__6c43c"
 }

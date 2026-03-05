@@ -1,4 +1,4 @@
-/** chunk id: 296813, original params: e,n,i (module,exports,require) **/
+/** chunk id: 296813 params = (module,exports,require) **/
 e.exports = {
     YK: "spacing__856b5",
     bj: "largeSpacing__856b5",

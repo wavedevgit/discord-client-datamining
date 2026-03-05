@@ -1,4 +1,4 @@
-/** chunk id: 975424, original params: e,t,n (module,exports,require) **/
+/** chunk id: 975424 params = (module,exports,require) **/
 e.exports = {
     QZ: "effect_adebba",
     Xh: "username_adebba",

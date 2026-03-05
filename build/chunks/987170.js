@@ -1,4 +1,4 @@
-/** chunk id: 987170, original params: a,e,t (module,exports,require) **/
+/** chunk id: 987170 params = (module,exports,require) **/
 function i(a) {
     return a.replace(/sekuntia?/, "sekunnin")
 }

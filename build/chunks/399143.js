@@ -1,4 +1,4 @@
-/** chunk id: 399143, original params: e,t,n (module,exports,require) **/
+/** chunk id: 399143 params = (module,exports,require) **/
 n.r(e.exports = {
     perksContainer: "perksContainer_b62c4e",
     perksTitle: "perksTitle_b62c4e",

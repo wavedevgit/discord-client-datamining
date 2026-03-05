@@ -1,4 +1,4 @@
-/** chunk id: 854908, original params: e,t,n (module,exports,require) **/
+/** chunk id: 854908 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Lw: "overlay_df3f07",

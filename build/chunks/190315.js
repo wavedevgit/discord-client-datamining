@@ -1,4 +1,4 @@
-/** chunk id: 190315, original params: e,n,t (module,exports,require) **/
+/** chunk id: 190315 params = (module,exports,require) **/
 var r = t(614442);
 e.exports = t.v(n, e.id, "cdc0e2d18308c85c", {
     "./discord_markdown_wasm_bg.js": {

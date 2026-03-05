@@ -1,4 +1,4 @@
-/** chunk id: 977402, original params: e,t,n (module,exports,require) **/
+/** chunk id: 977402 params = (module,exports,require) **/
 e.exports = {
     PY: "coverContainer__2f300",
     tu: "centerArt__2f300",

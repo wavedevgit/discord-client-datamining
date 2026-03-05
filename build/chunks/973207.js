@@ -1,4 +1,4 @@
-/** chunk id: 973207, original params: e,_,r (module,exports,require) **/
+/** chunk id: 973207 params = (module,exports,require) **/
 r.r(e.exports = {
     grid: "grid__1b670",
     pagination: "pagination__1b670",

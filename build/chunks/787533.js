@@ -1,4 +1,4 @@
-/** chunk id: 787533, original params: e,t,n (module,exports,require) **/
+/** chunk id: 787533 params = (module,exports,require) **/
 e.exports = {
     lj: "socialLinks__7df54",
     nf: "link__7df54",

@@ -1,4 +1,4 @@
-/** chunk id: 623393, original params: e,t,n (module,exports,require) **/
+/** chunk id: 623393 params = (module,exports,require) **/
 e.exports = {
     lm: "notice__36c3e",
     $f: "guildIcon__36c3e",

@@ -1,4 +1,4 @@
-/** chunk id: 782170, original params: e,t,n (module,exports,require) **/
+/** chunk id: 782170 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     sH: "recentMentionsPopout__95796",

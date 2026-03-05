@@ -1,4 +1,4 @@
-/** chunk id: 948100, original params: e,t,n (module,exports,require) **/
+/** chunk id: 948100 params = (module,exports,require) **/
 e.exports = {
     Og: "messagesWrapper__36d07",
     gT: "scrollerContent__36d07",

@@ -1,4 +1,4 @@
-/** chunk id: 723788, original params: e,t,n (module,exports,require) **/
+/** chunk id: 723788 params = (module,exports,require) **/
 e.exports = {
     uE: "thankYouCard_b851f5",
     Bi: "thankYouText_b851f5",

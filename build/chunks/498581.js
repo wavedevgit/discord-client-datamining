@@ -1,4 +1,4 @@
-/** chunk id: 498581, original params: e,t,n (module,exports,require) **/
+/** chunk id: 498581 params = (module,exports,require) **/
 e.exports = {
     og: "systemMessageContainer_c0ec5e",
     x: "embedContainer_c0ec5e",

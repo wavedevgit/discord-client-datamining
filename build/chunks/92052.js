@@ -1,4 +1,4 @@
-/** chunk id: 92052, original params: e,t,n (module,exports,require) **/
+/** chunk id: 92052 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     IG: "streamerModeEnabled_aa3ffd",

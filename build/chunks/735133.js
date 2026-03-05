@@ -1,4 +1,4 @@
-/** chunk id: 735133, original params: t,e,a (module,exports,require) **/
+/** chunk id: 735133 params = (module,exports,require) **/
 t.exports = {
     jE: "modalContent__7dffe",
     H: "avatarContainer__7dffe",

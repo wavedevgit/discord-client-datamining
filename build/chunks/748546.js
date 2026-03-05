@@ -1,4 +1,4 @@
-/** chunk id: 748546, original params: e,t,n (module,exports,require) **/
+/** chunk id: 748546 params = (module,exports,require) **/
 e.exports = {
     _O: "inviteSettingsInviteRow__1de14",
     wx: "header__1de14",

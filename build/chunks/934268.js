@@ -1,4 +1,4 @@
-/** chunk id: 934268, original params: e,t,n (module,exports,require) **/
+/** chunk id: 934268 params = (module,exports,require) **/
 e.exports = {
     E3: "base_b88801",
     Qq: "text_b88801",

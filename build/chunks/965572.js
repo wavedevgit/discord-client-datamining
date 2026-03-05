@@ -1,4 +1,4 @@
-/** chunk id: 965572, original params: e,t,n (module,exports,require) **/
+/** chunk id: 965572 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     ZO: "channelHeader__35a7e",

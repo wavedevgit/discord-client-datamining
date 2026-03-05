@@ -1,4 +1,4 @@
-/** chunk id: 202134, original params: e,t,n (module,exports,require) **/
+/** chunk id: 202134 params = (module,exports,require) **/
 e.exports = {
     kL: "container__0b563",
     $H: "tabBar__0b563",

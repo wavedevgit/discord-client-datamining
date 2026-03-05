@@ -1,4 +1,4 @@
-/** chunk id: 844923, original params: e,t,n (module,exports,require) **/
+/** chunk id: 844923 params = (module,exports,require) **/
 e.exports = {
     oP: "colorSwatch__2d060",
     r9: "disabled__2d060",

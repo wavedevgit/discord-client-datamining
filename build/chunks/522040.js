@@ -1,4 +1,4 @@
-/** chunk id: 522040, original params: e,t,n (module,exports,require) **/
+/** chunk id: 522040 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     om: "block__8dcfb",

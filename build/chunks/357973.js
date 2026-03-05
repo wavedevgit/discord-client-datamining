@@ -1,4 +1,4 @@
-/** chunk id: 357973, original params: e,t,n (module,exports,require) **/
+/** chunk id: 357973 params = (module,exports,require) **/
 e.exports = {
     st: "panelGroup__2f37f",
     Hk: "rightAligned__2f37f",

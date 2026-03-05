@@ -1,4 +1,4 @@
-/** chunk id: 72936, original params: e,t,n (module,exports,require) **/
+/** chunk id: 72936 params = (module,exports,require) **/
 e.exports = {
     DM: "accountProfileCard__1fed1",
     eF: "userInfo__1fed1",

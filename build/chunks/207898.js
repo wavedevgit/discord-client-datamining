@@ -1,4 +1,4 @@
-/** chunk id: 207898, original params: e (module,exports,require) **/
+/** chunk id: 207898 params = (module,exports,require) **/
 e.exports = function(e, r) {
     r = r || {};
     var a, n, o, s, i, c, l, u, b, f = e.numberOfChannels,

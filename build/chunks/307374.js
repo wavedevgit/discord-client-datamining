@@ -1,4 +1,4 @@
-/** chunk id: 307374, original params: e,t,n (module,exports,require) **/
+/** chunk id: 307374 params = (module,exports,require) **/
 e.exports = {
     NF: "settingNode_fb0b3f",
     B2: "tree_fb0b3f",

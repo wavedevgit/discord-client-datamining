@@ -1,4 +1,4 @@
-/** chunk id: 490669, original params: e,t,n (module,exports,require) **/
+/** chunk id: 490669 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     eZ: "openPageButton__3c9fa",

@@ -1,4 +1,4 @@
-/** chunk id: 886865, original params: e,t,n (module,exports,require) **/
+/** chunk id: 886865 params = (module,exports,require) **/
 e.exports = {
     Vg: "grid_eb8860",
     C: "dragAndDropContainer_eb8860",

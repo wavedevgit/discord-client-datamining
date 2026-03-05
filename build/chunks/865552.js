@@ -1,4 +1,4 @@
-/** chunk id: 865552, original params: e,t,n (module,exports,require) **/
+/** chunk id: 865552 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     XG: "scroller_d80a13",

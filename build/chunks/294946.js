@@ -1,4 +1,4 @@
-/** chunk id: 294946, original params: t,e,s (module,exports,require) **/
+/** chunk id: 294946 params = (module,exports,require) **/
 function i(t) {
     if (!Number.isSafeInteger(t) || t < 0) throw Error(`positive integer expected, not ${t}`)
 }

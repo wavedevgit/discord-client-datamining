@@ -1,4 +1,4 @@
-/** chunk id: 36668, original params: e,t,n (module,exports,require) **/
+/** chunk id: 36668 params = (module,exports,require) **/
 e.exports = {
     iE: "wrapper_e45a82",
     S3: "partyMembers_e45a82",

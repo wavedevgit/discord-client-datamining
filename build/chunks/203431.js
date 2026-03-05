@@ -1,4 +1,4 @@
-/** chunk id: 203431, original params: e,t,n (module,exports,require) **/
+/** chunk id: 203431 params = (module,exports,require) **/
 e.exports = {
     jE: "modalContent__23488",
     iT: "modalCloseButton__23488",

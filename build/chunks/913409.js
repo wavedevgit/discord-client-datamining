@@ -1,4 +1,4 @@
-/** chunk id: 913409, original params: e,t,n (module,exports,require) **/
+/** chunk id: 913409 params = (module,exports,require) **/
 e.exports = {
     SW: "popout_d5c2c4",
     io: "staffBadge_d5c2c4",

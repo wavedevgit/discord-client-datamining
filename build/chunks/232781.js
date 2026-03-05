@@ -1,4 +1,4 @@
-/** chunk id: 232781, original params: e,t,n (module,exports,require) **/
+/** chunk id: 232781 params = (module,exports,require) **/
 e.exports = {
     VK: "collapsablePane__7ed4d",
     lI: "fieldset__7ed4d",

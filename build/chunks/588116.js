@@ -1,4 +1,4 @@
-/** chunk id: 588116, original params: e,t,n (module,exports,require) **/
+/** chunk id: 588116 params = (module,exports,require) **/
 e.exports = {
     Wz: "devBanner__56d75",
     sr: "local__56d75",

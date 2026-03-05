@@ -1,4 +1,4 @@
-/** chunk id: 251743, original params: e,t,n (module,exports,require) **/
+/** chunk id: 251743 params = (module,exports,require) **/
 e.exports = {
     Iv: "panelHeader__86951",
     l$: "panelInner__86951",

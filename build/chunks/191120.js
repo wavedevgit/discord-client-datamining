@@ -1,4 +1,4 @@
-/** chunk id: 191120, original params: t,e,i (module,exports,require) **/
+/** chunk id: 191120 params = (module,exports,require) **/
 t.exports = {
     He: "centerText_a3fac7",
     wx: "header_a3fac7",

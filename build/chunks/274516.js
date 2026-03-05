@@ -1,4 +1,4 @@
-/** chunk id: 274516, original params: e,t,n (module,exports,require) **/
+/** chunk id: 274516 params = (module,exports,require) **/
 var l = {
     "./2017-11-16.mp4": "394734",
     "./channel-following.png": "611418",

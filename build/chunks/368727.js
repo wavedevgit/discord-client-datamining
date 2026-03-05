@@ -1,4 +1,4 @@
-/** chunk id: 368727, original params: e,t,r (module,exports,require) **/
+/** chunk id: 368727 params = (module,exports,require) **/
 "use strict";
 r.r(e.exports = {
     qrCodeOverlay: "qrCodeOverlay_c28498",

@@ -1,4 +1,4 @@
-/** chunk id: 670200, original params: t (module,exports,require) **/
+/** chunk id: 670200 params = (module,exports,require) **/
 "use strict";
 t.exports = function(t) {
     if (null != t) return t;

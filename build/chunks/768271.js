@@ -1,4 +1,4 @@
-/** chunk id: 768271, original params: e,t,n (module,exports,require) **/
+/** chunk id: 768271 params = (module,exports,require) **/
 e.exports = {
     D6: "soundButtonSettingContainer__84bad",
     Zg: "emoji__84bad",

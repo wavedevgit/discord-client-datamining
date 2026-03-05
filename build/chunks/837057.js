@@ -1,4 +1,4 @@
-/** chunk id: 837057, original params: e,t,l (module,exports,require) **/
+/** chunk id: 837057 params = (module,exports,require) **/
 l.d(t, {
     transitionToGlobalDiscovery: () => function e(t) {
         let l = t.tab;

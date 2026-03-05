@@ -1,4 +1,4 @@
-/** chunk id: 956171, original params: e,t,n (module,exports,require) **/
+/** chunk id: 956171 params = (module,exports,require) **/
 e.exports = {
     Ji: "payment_e9cb00",
     J7: "summaryInfo_e9cb00",

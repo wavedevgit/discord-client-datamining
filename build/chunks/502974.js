@@ -1,4 +1,4 @@
-/** chunk id: 502974, original params: t,s,e (module,exports,require) **/
+/** chunk id: 502974 params = (module,exports,require) **/
 t.exports = {
     yl: "modal__3850a",
     _J: "followSuccessHeader__3850a",

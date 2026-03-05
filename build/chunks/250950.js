@@ -1,4 +1,4 @@
-/** chunk id: 250950, original params: e,t,s (module,exports,require) **/
+/** chunk id: 250950 params = (module,exports,require) **/
 e.exports = {
     Ot: "verification_d43202",
     wx: "header_d43202",

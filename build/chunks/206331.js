@@ -1,4 +1,4 @@
-/** chunk id: 206331, original params: e,t,n (module,exports,require) **/
+/** chunk id: 206331 params = (module,exports,require) **/
 e.exports = {
     H1: "splashContainer__0bef9",
     ZC: "splashContainerHorizontal__0bef9",

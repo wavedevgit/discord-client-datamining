@@ -1,4 +1,4 @@
-/** chunk id: 855523, original params: e,t,n (module,exports,require) **/
+/** chunk id: 855523 params = (module,exports,require) **/
 e.exports = {
     fI: "textBlock_e2d7b8",
     PD: "joinButton_e2d7b8",

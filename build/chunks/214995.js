@@ -1,4 +1,4 @@
-/** chunk id: 214995, original params: e,t,n (module,exports,require) **/
+/** chunk id: 214995 params = (module,exports,require) **/
 e.exports = {
     XG: "scroller__5d7c9",
     kw: "pageBody__5d7c9",

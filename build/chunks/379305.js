@@ -1,4 +1,4 @@
-/** chunk id: 379305, original params: e,t,n (module,exports,require) **/
+/** chunk id: 379305 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     sp: "cardContentsContainer_ed9c90",

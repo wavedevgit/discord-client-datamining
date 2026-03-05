@@ -1,4 +1,4 @@
-/** chunk id: 573812, original params: e,t,a (module,exports,require) **/
+/** chunk id: 573812 params = (module,exports,require) **/
 e.exports = {
     Dj: "infoList_e6fa8e",
     KN: "infoListItem_e6fa8e",

@@ -1,4 +1,4 @@
-/** chunk id: 89232, original params: e,t,n (module,exports,require) **/
+/** chunk id: 89232 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Sd: "pulseBackgroundDark__11664",

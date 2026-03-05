@@ -1,4 +1,4 @@
-/** chunk id: 963369, original params: e,t,n (module,exports,require) **/
+/** chunk id: 963369 params = (module,exports,require) **/
 e.exports = {
     DD: "title_edbb22",
     Z2: "appIcon_edbb22",

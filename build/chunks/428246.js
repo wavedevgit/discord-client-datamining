@@ -1,4 +1,4 @@
-/** chunk id: 428246, original params: e,t,n (module,exports,require) **/
+/** chunk id: 428246 params = (module,exports,require) **/
 e.exports = {
     Iu: "partnerBranding__83420",
     _Y: "partnerBrandingGameTile__83420",

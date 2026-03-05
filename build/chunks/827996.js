@@ -1,4 +1,4 @@
-/** chunk id: 827996, original params: e,t,n (module,exports,require) **/
+/** chunk id: 827996 params = (module,exports,require) **/
 e.exports = {
     Z0: "questProgressWrapper_ae7810",
     NZ: "questProgressCopy_ae7810",

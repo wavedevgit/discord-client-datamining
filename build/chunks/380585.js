@@ -1,4 +1,4 @@
-/** chunk id: 380585, original params: e,t,n (module,exports,require) **/
+/** chunk id: 380585 params = (module,exports,require) **/
 e.exports = {
     WG: "recentClipsPopout__20c92",
     wx: "header__20c92",

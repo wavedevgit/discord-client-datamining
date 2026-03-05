@@ -1,4 +1,4 @@
-/** chunk id: 892766, original params: e,_,r (module,exports,require) **/
+/** chunk id: 892766 params = (module,exports,require) **/
 e.exports = {
     td: "shopViewWrapper__6db1d",
     RK: "visible__6db1d",

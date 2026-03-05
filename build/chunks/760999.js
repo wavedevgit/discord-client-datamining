@@ -1,4 +1,4 @@
-/** chunk id: 760999, original params: e,t,a (module,exports,require) **/
+/** chunk id: 760999 params = (module,exports,require) **/
 e.exports = {
     GU: "blockedUsersContainer__97cfe",
     Zd: "form__97cfe",

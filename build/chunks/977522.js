@@ -1,4 +1,4 @@
-/** chunk id: 977522, original params: e,t,n (module,exports,require) **/
+/** chunk id: 977522 params = (module,exports,require) **/
 e.exports = {
     hr: "hr__0f7f7",
     jE: "modalContent__0f7f7",

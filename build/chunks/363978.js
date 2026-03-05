@@ -1,4 +1,4 @@
-/** chunk id: 363978, original params: e,t,n (module,exports,require) **/
+/** chunk id: 363978 params = (module,exports,require) **/
 e.exports = {
     _G: "applicationHomeBanner__62eb1",
     O3: "settingsBanner__62eb1",

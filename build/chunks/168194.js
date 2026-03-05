@@ -1,4 +1,4 @@
-/** chunk id: 168194, original params: e,t,n (module,exports,require) **/
+/** chunk id: 168194 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Ix: "channel__427f0",

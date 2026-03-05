@@ -1,2 +1,2 @@
-/** chunk id: 345955, original params: t (module,exports,require) **/
+/** chunk id: 345955 params = (module,exports,require) **/
 t.exports = "/assets/633923dbe21cc7ec.png"

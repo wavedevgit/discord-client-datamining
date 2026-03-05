@@ -1,4 +1,4 @@
-/** chunk id: 566608, original params: t (module,exports,require) **/
+/** chunk id: 566608 params = (module,exports,require) **/
 "use strict";
 t.exports = function(t) {
     var e = (t ? t.ownerDocument || t : document).defaultView || window;

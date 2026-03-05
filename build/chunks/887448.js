@@ -1,4 +1,4 @@
-/** chunk id: 887448, original params: e,t,n (module,exports,require) **/
+/** chunk id: 887448 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     B: "platforms__93ebb"

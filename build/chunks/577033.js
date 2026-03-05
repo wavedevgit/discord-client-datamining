@@ -1,4 +1,4 @@
-/** chunk id: 577033, original params: e (module,exports,require) **/
+/** chunk id: 577033 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     aliceblue: [240, 248, 255],

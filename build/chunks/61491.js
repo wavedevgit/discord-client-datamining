@@ -1,4 +1,4 @@
-/** chunk id: 61491, original params: e,t,n (module,exports,require) **/
+/** chunk id: 61491 params = (module,exports,require) **/
 function r(e, t, n) {
     return n * (Math.max(e, 0) / t.width)
 }

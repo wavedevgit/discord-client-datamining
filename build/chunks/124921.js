@@ -1,4 +1,4 @@
-/** chunk id: 124921, original params: e,t,a (module,exports,require) **/
+/** chunk id: 124921 params = (module,exports,require) **/
 e.exports = {
     wx: "header__9f397",
     Q6: "channelPrompt__9f397",

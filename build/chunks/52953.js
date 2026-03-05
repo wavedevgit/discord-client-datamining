@@ -1,4 +1,4 @@
-/** chunk id: 52953, original params: e,_,t (module,exports,require) **/
+/** chunk id: 52953 params = (module,exports,require) **/
 e.exports = {
     gP: "subscription_d970da",
     EF: "subscriptionInfo_d970da",

@@ -1,4 +1,4 @@
-/** chunk id: 53633, original params: e,t,n (module,exports,require) **/
+/** chunk id: 53633 params = (module,exports,require) **/
 e.exports = {
     e4: "tierComparisonTable__744ff",
     KW: "boosterRecognitionCard__744ff",

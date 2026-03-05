@@ -1,2 +1,2 @@
-/** chunk id: 80705, original params: e (module,exports,require) **/
+/** chunk id: 80705 params = (module,exports,require) **/
 e.exports = "/assets/d03486255966663c.svg"

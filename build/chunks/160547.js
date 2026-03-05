@@ -1,4 +1,4 @@
-/** chunk id: 160547, original params: e,t (module,exports,require) **/
+/** chunk id: 160547 params = (module,exports,require) **/
 "use strict";
 t.__esModule = !0, t.default = {
     scheme: "tomorrow",

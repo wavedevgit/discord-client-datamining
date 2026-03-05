@@ -1,4 +1,4 @@
-/** chunk id: 916164, original params: e,t,n (module,exports,require) **/
+/** chunk id: 916164 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     JC: "role_f07e3e",

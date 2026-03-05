@@ -1,4 +1,4 @@
-/** chunk id: 930368, original params: e,t,n (module,exports,require) **/
+/** chunk id: 930368 params = (module,exports,require) **/
 e.exports = {
     wG: "flyingWumpusContainer_ba731a",
     lu: "flyingWumpusAsset_ba731a",

@@ -1,4 +1,4 @@
-/** chunk id: 375038, original params: e,n,t (module,exports,require) **/
+/** chunk id: 375038 params = (module,exports,require) **/
 e.exports = {
     kL: "container_b5010b",
     eq: "eventName_b5010b",

@@ -1,4 +1,4 @@
-/** chunk id: 682758, original params: e,t,n (module,exports,require) **/
+/** chunk id: 682758 params = (module,exports,require) **/
 e.exports = {
     Pc: "countdownContainer__8fece",
     zc: "iconContainer__8fece",

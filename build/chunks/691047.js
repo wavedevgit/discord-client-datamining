@@ -1,4 +1,4 @@
-/** chunk id: 691047, original params: e,t,s (module,exports,require) **/
+/** chunk id: 691047 params = (module,exports,require) **/
 e.exports = {
     LK: "erroredContainer_bf2caa",
     wx: "header_bf2caa",

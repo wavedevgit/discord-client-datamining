@@ -1,4 +1,4 @@
-/** chunk id: 355208, original params: e,t,n (module,exports,require) **/
+/** chunk id: 355208 params = (module,exports,require) **/
 e.exports = {
     h_: "description__1f7ec",
     dS: "tagline__1f7ec",

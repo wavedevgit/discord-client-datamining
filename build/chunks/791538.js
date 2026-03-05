@@ -1,4 +1,4 @@
-/** chunk id: 791538, original params: e,t,n (module,exports,require) **/
+/** chunk id: 791538 params = (module,exports,require) **/
 e.exports = {
     kL: "container__864dc",
     s4: "waveformCanvas__864dc",

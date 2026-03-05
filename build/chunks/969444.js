@@ -1,4 +1,4 @@
-/** chunk id: 969444, original params: e,s,t (module,exports,require) **/
+/** chunk id: 969444 params = (module,exports,require) **/
 e.exports = {
     T: "browser__9a792"
 }

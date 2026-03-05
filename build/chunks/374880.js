@@ -1,4 +1,4 @@
-/** chunk id: 374880, original params: e,r,s (module,exports,require) **/
+/** chunk id: 374880 params = (module,exports,require) **/
 s.r(e.exports = {
     unsupportedBrowser: "unsupportedBrowser__9ec6a",
     wrap: "wrap__9ec6a",

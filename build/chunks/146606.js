@@ -1,4 +1,4 @@
-/** chunk id: 146606, original params: e,t,a (module,exports,require) **/
+/** chunk id: 146606 params = (module,exports,require) **/
 a.r(e.exports = {
     divider: "divider_f18716",
     moreList: "moreList_f18716",

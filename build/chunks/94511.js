@@ -1,4 +1,4 @@
-/** chunk id: 94511, original params: e,_,t (module,exports,require) **/
+/** chunk id: 94511 params = (module,exports,require) **/
 e.exports = {
     Qs: "content__2cbe8",
     w_: "guildCard__2cbe8",

@@ -1,4 +1,4 @@
-/** chunk id: 313320, original params: e,t,i (module,exports,require) **/
+/** chunk id: 313320 params = (module,exports,require) **/
 i.d(t, {
     d: () => u
 }), i(321073);
@@ -60,8 +60,8 @@ class u {
             branch_name: this.mode.branchName,
             commit_date: this.mode.commitDate,
             timestamp: new Date().toISOString(),
-            build_number: "506703",
-            built_at: "1772745096053",
+            build_number: "506723",
+            built_at: "1772745936636",
             release_channel: a.y ?? "unknown",
             tags: this.getTags(),
             metrics: {

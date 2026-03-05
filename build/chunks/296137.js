@@ -1,4 +1,4 @@
-/** chunk id: 296137, original params: e,t,n (module,exports,require) **/
+/** chunk id: 296137 params = (module,exports,require) **/
 e.exports = {
     U: "offerPill__3b397",
     x: "premiumBrandRefreshOfferPill__3b397"

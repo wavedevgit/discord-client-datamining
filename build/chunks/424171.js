@@ -1,4 +1,4 @@
-/** chunk id: 424171, original params: e,t,n (module,exports,require) **/
+/** chunk id: 424171 params = (module,exports,require) **/
 e.exports = {
     Dy: "blockedEdit_b7ab2c",
     bv: "blockedSend_b7ab2c",

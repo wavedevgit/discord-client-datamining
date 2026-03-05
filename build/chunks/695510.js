@@ -1,4 +1,4 @@
-/** chunk id: 695510, original params: e,t,n (module,exports,require) **/
+/** chunk id: 695510 params = (module,exports,require) **/
 e.exports = {
     hs: "text-sm/normal_e1364f",
     Nr: "card_e1364f",

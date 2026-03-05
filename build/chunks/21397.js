@@ -1,4 +1,4 @@
-/** chunk id: 21397, original params: e,t,n (module,exports,require) **/
+/** chunk id: 21397 params = (module,exports,require) **/
 "use strict";
 n.r(e.exports = {
     standardSidebarView: "standardSidebarView__23e6b",

@@ -1,4 +1,4 @@
-/** chunk id: 642418, original params: e,t,n (module,exports,require) **/
+/** chunk id: 642418 params = (module,exports,require) **/
 e.exports = {
     wx: "header__4a3a5",
     K8: "secondaryHeader__4a3a5",

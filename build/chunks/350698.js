@@ -1,4 +1,4 @@
-/** chunk id: 350698, original params: e,_,r (module,exports,require) **/
+/** chunk id: 350698 params = (module,exports,require) **/
 e.exports = {
     ZK: "hero__50e07",
     VW: "headerContent__50e07",

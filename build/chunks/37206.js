@@ -1,4 +1,4 @@
-/** chunk id: 37206, original params: e,t,n (module,exports,require) **/
+/** chunk id: 37206 params = (module,exports,require) **/
 e.exports = {
     jx: "buttonsWrapper__65bb6",
     xM: "horizontal__65bb6",

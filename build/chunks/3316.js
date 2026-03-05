@@ -1,4 +1,4 @@
-/** chunk id: 3316, original params: e,t,s (module,exports,require) **/
+/** chunk id: 3316 params = (module,exports,require) **/
 e.exports = {
     zr: "root_e529a0",
     z: "summary_e529a0",

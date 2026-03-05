@@ -1,4 +1,4 @@
-/** chunk id: 507887, original params: e,t,_ (module,exports,require) **/
+/** chunk id: 507887 params = (module,exports,require) **/
 _.d(t, {
     A: () => r
 });

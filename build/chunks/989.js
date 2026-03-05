@@ -1,4 +1,4 @@
-/** chunk id: 989, original params: e,t,n (module,exports,require) **/
+/** chunk id: 989 params = (module,exports,require) **/
 e.exports = {
     nj: "containerExpanded__7ff28",
     Xr: "stickerExpanded__7ff28",

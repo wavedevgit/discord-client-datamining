@@ -1,4 +1,4 @@
-/** chunk id: 771936, original params: e,t,n (module,exports,require) **/
+/** chunk id: 771936 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     AB: "privateChannels_ee924e",

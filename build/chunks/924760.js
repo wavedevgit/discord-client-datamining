@@ -1,4 +1,4 @@
-/** chunk id: 924760, original params: e,t,n (module,exports,require) **/
+/** chunk id: 924760 params = (module,exports,require) **/
 e.exports = {
     tp: "table_adb41f",
     wx: "header_adb41f",

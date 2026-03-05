@@ -1,4 +1,4 @@
-/** chunk id: 825092, original params: e,t,n (module,exports,require) **/
+/** chunk id: 825092 params = (module,exports,require) **/
 e.exports = {
     R: "hidden__5ed15",
     YG: "verticalContainer__5ed15",

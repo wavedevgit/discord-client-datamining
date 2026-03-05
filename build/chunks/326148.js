@@ -1,4 +1,4 @@
-/** chunk id: 326148, original params: a,e,i (module,exports,require) **/
+/** chunk id: 326148 params = (module,exports,require) **/
 a.exports = {
     yl: "modal__58ae6",
     jE: "modalContent__58ae6",

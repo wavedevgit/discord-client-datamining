@@ -1,4 +1,4 @@
-/** chunk id: 985087, original params: e,t,n (module,exports,require) **/
+/** chunk id: 985087 params = (module,exports,require) **/
 e.exports = {
     iW: "main__4d307",
     WY: "checkerboard__4d307",

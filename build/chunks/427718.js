@@ -1,4 +1,4 @@
-/** chunk id: 427718, original params: e,t,n (module,exports,require) **/
+/** chunk id: 427718 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     UV: "keyboardShortcutsModal_f061f6",

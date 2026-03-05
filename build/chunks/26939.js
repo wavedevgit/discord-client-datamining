@@ -1,4 +1,4 @@
-/** chunk id: 26939, original params: e,t,n (module,exports,require) **/
+/** chunk id: 26939 params = (module,exports,require) **/
 e.exports = {
     Ot: "verification_dede4b",
     qr: "footer_dede4b",

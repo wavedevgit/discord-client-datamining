@@ -1,4 +1,4 @@
-/** chunk id: 767504, original params: e,t,n (module,exports,require) **/
+/** chunk id: 767504 params = (module,exports,require) **/
 e.exports = {
     $Q: "contentHeader__5b400",
     Tm: "refreshWrapper__5b400",

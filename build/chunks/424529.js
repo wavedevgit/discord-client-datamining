@@ -1,4 +1,4 @@
-/** chunk id: 424529, original params: e,t,n (module,exports,require) **/
+/** chunk id: 424529 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     j: "pauseBackground_d70e0d",

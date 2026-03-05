@@ -1,4 +1,4 @@
-/** chunk id: 647430, original params: e,t,n (module,exports,require) **/
+/** chunk id: 647430 params = (module,exports,require) **/
 e.exports = {
     $: "contentWarningPopout_d2eed6",
     wx: "header_d2eed6",

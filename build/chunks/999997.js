@@ -1,4 +1,4 @@
-/** chunk id: 999997, original params: e,t,_ (module,exports,require) **/
+/** chunk id: 999997 params = (module,exports,require) **/
 e.exports = {
     p_: "list_c441f0",
     uW: "activeThreadsList_c441f0",

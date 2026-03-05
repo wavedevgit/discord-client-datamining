@@ -1,4 +1,4 @@
-/** chunk id: 930225, original params: t,e,i (module,exports,require) **/
+/** chunk id: 930225 params = (module,exports,require) **/
 t.exports = {
     wx: "header__7560f",
     Ry: "customGiftHeader__7560f",

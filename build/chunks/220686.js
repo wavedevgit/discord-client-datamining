@@ -1,4 +1,4 @@
-/** chunk id: 220686, original params: t,i,s (module,exports,require) **/
+/** chunk id: 220686 params = (module,exports,require) **/
 t.exports = {
     Kk: "icon_bdbb1b",
     Kb: "wandIcon_bdbb1b icon_bdbb1b",

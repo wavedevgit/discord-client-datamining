@@ -1,4 +1,4 @@
-/** chunk id: 224716, original params: e,t,n (module,exports,require) **/
+/** chunk id: 224716 params = (module,exports,require) **/
 e.exports = {
     Kk: "icon_b4019a",
     vo: "notAllowedIcon_b4019a icon_b4019a",

@@ -1,4 +1,4 @@
-/** chunk id: 14977, original params: e,t,n (module,exports,require) **/
+/** chunk id: 14977 params = (module,exports,require) **/
 e.exports = {
     Gg: "guildInviteContainer__083ae",
     vk: "clickable__083ae",

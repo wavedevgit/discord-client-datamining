@@ -1,4 +1,4 @@
-/** chunk id: 457898, original params: e,t,n (module,exports,require) **/
+/** chunk id: 457898 params = (module,exports,require) **/
 e.exports = {
     iW: "main_c08b38",
     Me: "fullBorderWithGradient_c08b38",

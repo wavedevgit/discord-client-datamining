@@ -1,4 +1,4 @@
-/** chunk id: 472701, original params: e,s,a (module,exports,require) **/
+/** chunk id: 472701 params = (module,exports,require) **/
 e.exports = {
     Y: "headerIcons_f5cf99",
     I5: "ellipseGroup_f5cf99",

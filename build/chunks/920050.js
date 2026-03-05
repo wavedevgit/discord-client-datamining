@@ -1,4 +1,4 @@
-/** chunk id: 920050, original params: e,t,n (module,exports,require) **/
+/** chunk id: 920050 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     BADGE_CARD_ID: () => r,
     CLIENT_THEMES_CARD_ID: () => a,

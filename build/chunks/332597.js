@@ -1,4 +1,4 @@
-/** chunk id: 332597, original params: e,t,n (module,exports,require) **/
+/** chunk id: 332597 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     zr: "root__6981d",

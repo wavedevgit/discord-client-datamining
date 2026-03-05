@@ -1,4 +1,4 @@
-/** chunk id: 298573, original params: e,t,r (module,exports,require) **/
+/** chunk id: 298573 params = (module,exports,require) **/
 e.exports = {
     ZO: "channelHeader__06fb5",
     Kk: "icon__06fb5",

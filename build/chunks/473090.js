@@ -1,4 +1,4 @@
-/** chunk id: 473090, original params: e,t,n (module,exports,require) **/
+/** chunk id: 473090 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     NC: "buttonsContainer__24d0d",

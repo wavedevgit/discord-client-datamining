@@ -1,4 +1,4 @@
-/** chunk id: 25911, original params: e,t,n (module,exports,require) **/
+/** chunk id: 25911 params = (module,exports,require) **/
 function i(e, t, n) {
     return (n.y - e.y) * (t.x - e.x) > (t.y - e.y) * (n.x - e.x)
 }

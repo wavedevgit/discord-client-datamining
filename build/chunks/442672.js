@@ -1,4 +1,4 @@
-/** chunk id: 442672, original params: e,t,n (module,exports,require) **/
+/** chunk id: 442672 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     u1: "spinner__2692d",

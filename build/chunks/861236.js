@@ -1,4 +1,4 @@
-/** chunk id: 861236, original params: e,a,i (module,exports,require) **/
+/** chunk id: 861236 params = (module,exports,require) **/
 e.exports = {
     ZS: "imageContainer_a1bfef",
     Sl: "image_a1bfef",

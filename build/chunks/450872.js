@@ -1,4 +1,4 @@
-/** chunk id: 450872, original params: e,t (module,exports,require) **/
+/** chunk id: 450872 params = (module,exports,require) **/
 "use strict";
 t.__esModule = !0, t.default = {
     scheme: "colors",

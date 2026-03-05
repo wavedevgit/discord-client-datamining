@@ -1,4 +1,4 @@
-/** chunk id: 838205, original params: e,t,n (module,exports,require) **/
+/** chunk id: 838205 params = (module,exports,require) **/
 e.exports = {
     kL: "container__60f82",
     qG: "fadeIn__60f82",

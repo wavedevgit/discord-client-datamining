@@ -1,4 +1,4 @@
-/** chunk id: 669563, original params: e,t,n (module,exports,require) **/
+/** chunk id: 669563 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     wK: "icon20px__69362",

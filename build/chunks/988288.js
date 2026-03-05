@@ -1,4 +1,4 @@
-/** chunk id: 988288, original params: e,t,n (module,exports,require) **/
+/** chunk id: 988288 params = (module,exports,require) **/
 e.exports = {
     l3: "slideAnimator_f8824b",
     hw: "hideButton_f8824b",

@@ -1,4 +1,4 @@
-/** chunk id: 673006, original params: e,t,n (module,exports,require) **/
+/** chunk id: 673006 params = (module,exports,require) **/
 e.exports = {
     Jz: "availabilityIndicator__40463",
     Kk: "icon__40463",

@@ -1,4 +1,4 @@
-/** chunk id: 10418, original params: e,_,t (module,exports,require) **/
+/** chunk id: 10418 params = (module,exports,require) **/
 e.exports = {
     qI: "listContainer_a95388",
     Aw: "listItem_a95388",

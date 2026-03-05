@@ -1,4 +1,4 @@
-/** chunk id: 58826, original params: e,t,n (module,exports,require) **/
+/** chunk id: 58826 params = (module,exports,require) **/
 e.exports = {
     Cf: "messageRequestItem_abb9ad",
     CJ: "firstItem_abb9ad",

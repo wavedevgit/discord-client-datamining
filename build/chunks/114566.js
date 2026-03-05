@@ -1,2 +1,2 @@
-/** chunk id: 114566, original params: i (module,exports,require) **/
+/** chunk id: 114566 params = (module,exports,require) **/
 i.exports = JSON.parse('{"yfwZuy":["Peržiūrėti mano ženklelį"],"UnPGii":["Ženklelis pridėtas tavo profiliui."],"nvaTQq":["Pasiėmei Orbs profilio ženklelį!"]}')

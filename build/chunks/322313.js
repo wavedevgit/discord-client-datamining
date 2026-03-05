@@ -1,4 +1,4 @@
-/** chunk id: 322313, original params: e,t,n (module,exports,require) **/
+/** chunk id: 322313 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     T: "background__506d9",

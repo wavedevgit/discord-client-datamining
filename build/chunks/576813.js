@@ -1,4 +1,4 @@
-/** chunk id: 576813, original params: e,t,n (module,exports,require) **/
+/** chunk id: 576813 params = (module,exports,require) **/
 e.exports = {
     B0: "previewCard__8d6f9",
     x3: "previewBackground__8d6f9",

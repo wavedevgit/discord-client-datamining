@@ -1,4 +1,4 @@
-/** chunk id: 463794, original params: e,t,n (module,exports,require) **/
+/** chunk id: 463794 params = (module,exports,require) **/
 e.exports = {
     Yt: "accordionContainer__7e354",
     Sg: "opened__7e354",

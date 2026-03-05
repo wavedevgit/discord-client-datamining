@@ -1,4 +1,4 @@
-/** chunk id: 341789, original params: t (module,exports,require) **/
+/** chunk id: 341789 params = (module,exports,require) **/
 "use strict";
 t.exports = {
     getPunctuation: function() {

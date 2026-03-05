@@ -1,4 +1,4 @@
-/** chunk id: 637936, original params: e,t,n (module,exports,require) **/
+/** chunk id: 637936 params = (module,exports,require) **/
 e.exports = {
     cc: "messagePopoutContent_c00127",
     jC: "popoutContainer_c00127",

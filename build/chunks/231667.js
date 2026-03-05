@@ -1,4 +1,4 @@
-/** chunk id: 231667, original params: e,t,n (module,exports,require) **/
+/** chunk id: 231667 params = (module,exports,require) **/
 e.exports = {
     lm: "notice_c5cd6a",
     x6: "button_c5cd6a",

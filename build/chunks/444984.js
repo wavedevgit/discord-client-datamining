@@ -1,4 +1,4 @@
-/** chunk id: 444984, original params: e,t,n (module,exports,require) **/
+/** chunk id: 444984 params = (module,exports,require) **/
 e.exports = {
     gD: "embedCard__44c9a",
     oE: "compact__44c9a",

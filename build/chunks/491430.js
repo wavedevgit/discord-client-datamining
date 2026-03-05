@@ -1,4 +1,4 @@
-/** chunk id: 491430, original params: e,_,t (module,exports,require) **/
+/** chunk id: 491430 params = (module,exports,require) **/
 e.exports = {
     wx: "header__3847f",
     b: "closeButton__3847f",

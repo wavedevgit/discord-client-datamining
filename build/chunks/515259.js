@@ -1,4 +1,4 @@
-/** chunk id: 515259, original params: e,t,n (module,exports,require) **/
+/** chunk id: 515259 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     pG: "right__89d2b",

@@ -1,4 +1,4 @@
-/** chunk id: 23928, original params: e,t,n (module,exports,require) **/
+/** chunk id: 23928 params = (module,exports,require) **/
 e.exports = {
     qr: "footer__24654",
     Hq: "footerButtons__24654",

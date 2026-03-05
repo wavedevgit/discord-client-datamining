@@ -1,4 +1,4 @@
-/** chunk id: 523934, original params: e,t,n (module,exports,require) **/
+/** chunk id: 523934 params = (module,exports,require) **/
 e.exports = {
     kL: "container_a62a28",
     An: "dragHandleContainer_a62a28",

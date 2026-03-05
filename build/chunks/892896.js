@@ -1,4 +1,4 @@
-/** chunk id: 892896, original params: e,t,n (module,exports,require) **/
+/** chunk id: 892896 params = (module,exports,require) **/
 "use strict";
 
 function i(e) {

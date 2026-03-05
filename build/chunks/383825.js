@@ -1,4 +1,4 @@
-/** chunk id: 383825, original params: e,t,n (module,exports,require) **/
+/** chunk id: 383825 params = (module,exports,require) **/
 e.exports = {
     ci: "userMenuItem_d40c56",
     DD: "userMenuUsername_d40c56",

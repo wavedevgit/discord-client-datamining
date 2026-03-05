@@ -1,4 +1,4 @@
-/** chunk id: 235088, original params: e,t,n (module,exports,require) **/
+/** chunk id: 235088 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     rs: "quickswitcher_ac6cb0",

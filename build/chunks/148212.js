@@ -1,4 +1,4 @@
-/** chunk id: 148212, original params: e,t,n (module,exports,require) **/
+/** chunk id: 148212 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     iT: "thumbnailContainer__8bb30",

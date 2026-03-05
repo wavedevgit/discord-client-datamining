@@ -1,4 +1,4 @@
-/** chunk id: 720401, original params: e,t,n (module,exports,require) **/
+/** chunk id: 720401 params = (module,exports,require) **/
 e.exports = {
     wb: "postPreviewContainer__419e3",
     iT: "thumbnailContainer__419e3",

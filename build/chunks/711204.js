@@ -1,4 +1,4 @@
-/** chunk id: 711204, original params: e,t,i (module,exports,require) **/
+/** chunk id: 711204 params = (module,exports,require) **/
 i.d(t, {
     r: () => l
 });
@@ -47,8 +47,8 @@ class l {
                 branch_name: this.mode.branchName,
                 commit_date: this.mode.commitDate,
                 timestamp: new Date().toISOString(),
-                build_number: "506703",
-                built_at: "1772745096053",
+                build_number: "506723",
+                built_at: "1772745936636",
                 release_channel: n.y ?? "unknown",
                 tags: i,
                 metrics: {

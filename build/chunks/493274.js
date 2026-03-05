@@ -1,4 +1,4 @@
-/** chunk id: 493274, original params: e,t,n (module,exports,require) **/
+/** chunk id: 493274 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     DZ: "messages__1ccd1",

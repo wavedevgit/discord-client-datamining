@@ -1,4 +1,4 @@
-/** chunk id: 691453, original params: e,t,n (module,exports,require) **/
+/** chunk id: 691453 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Er: "voiceCallWrapper_a21736",

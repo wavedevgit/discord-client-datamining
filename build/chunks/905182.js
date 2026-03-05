@@ -1,4 +1,4 @@
-/** chunk id: 905182, original params: e,t,n (module,exports,require) **/
+/** chunk id: 905182 params = (module,exports,require) **/
 e.exports = {
     kL: "container__37bfc",
     gU: "tabListScroller__37bfc",

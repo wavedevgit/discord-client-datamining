@@ -1,4 +1,4 @@
-/** chunk id: 682402, original params: e,t,n (module,exports,require) **/
+/** chunk id: 682402 params = (module,exports,require) **/
 e.exports = {
     o3: "safetyPolicyNoticeContainer__86361",
     qZ: "noticeContent__86361",

@@ -1,4 +1,4 @@
-/** chunk id: 655215, original params: e,t,n (module,exports,require) **/
+/** chunk id: 655215 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Mv: "tabBarContainer_eb3aa4",

@@ -1,4 +1,4 @@
-/** chunk id: 328455, original params: e,t,n (module,exports,require) **/
+/** chunk id: 328455 params = (module,exports,require) **/
 e.exports = {
     EA: "baseControlItem_dbfbe0",
     vk: "clickable_dbfbe0",

@@ -1,4 +1,4 @@
-/** chunk id: 27707, original params: e,t (module,exports,require) **/
+/** chunk id: 27707 params = (module,exports,require) **/
 "use strict";
 t.__esModule = !0, t.default = {
     scheme: "brewer",

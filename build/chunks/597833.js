@@ -1,4 +1,4 @@
-/** chunk id: 597833, original params: e,t,n (module,exports,require) **/
+/** chunk id: 597833 params = (module,exports,require) **/
 e.exports = {
     yG: "flexVertical__2d3fe",
     OZ: "flexHorizontal__2d3fe",

@@ -1,4 +1,4 @@
-/** chunk id: 285479, original params: e,t,n (module,exports,require) **/
+/** chunk id: 285479 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     zC: "messageContainer_f6bd5f",

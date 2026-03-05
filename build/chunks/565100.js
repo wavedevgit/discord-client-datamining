@@ -1,4 +1,4 @@
-/** chunk id: 565100, original params: e,t,n (module,exports,require) **/
+/** chunk id: 565100 params = (module,exports,require) **/
 e.exports = {
     nd: "panel_ef5082",
     st: "panelGroup_ef5082",

@@ -1,4 +1,4 @@
-/** chunk id: 446882, original params: e,t,s (module,exports,require) **/
+/** chunk id: 446882 params = (module,exports,require) **/
 e.exports = {
     rf: "body__6fa2e",
     OO: "seperator__6fa2e",

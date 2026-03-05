@@ -1,4 +1,4 @@
-/** chunk id: 103224, original params: e,t,n (module,exports,require) **/
+/** chunk id: 103224 params = (module,exports,require) **/
 e.exports = {
     wx: "header_b87308",
     Z2: "appIcon_b87308",

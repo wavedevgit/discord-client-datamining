@@ -1,4 +1,4 @@
-/** chunk id: 569721, original params: e,t,n (module,exports,require) **/
+/** chunk id: 569721 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Ii: "periodColumn__5d2ba",

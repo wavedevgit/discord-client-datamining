@@ -1,4 +1,4 @@
-/** chunk id: 101265, original params: e,t,n (module,exports,require) **/
+/** chunk id: 101265 params = (module,exports,require) **/
 e.exports = {
     Qw: "downloadProgressCircle_e6b769",
     QI: "hideGameUpdateProgressIndicator_e6b769",

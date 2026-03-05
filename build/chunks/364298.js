@@ -1,4 +1,4 @@
-/** chunk id: 364298, original params: t,e,i (module,exports,require) **/
+/** chunk id: 364298 params = (module,exports,require) **/
 function s(t, e) {
     return Math.floor(Math.random() * (e - t + 1) + t)
 }

@@ -1,4 +1,4 @@
-/** chunk id: 127230, original params: e,t,n (module,exports,require) **/
+/** chunk id: 127230 params = (module,exports,require) **/
 e.exports = {
     ob: "backgroundIconOptionIcon__53965",
     to: "backgroundOptions__53965",

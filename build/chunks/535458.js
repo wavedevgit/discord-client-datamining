@@ -1,4 +1,4 @@
-/** chunk id: 535458, original params: t,e,n (module,exports,require) **/
+/** chunk id: 535458 params = (module,exports,require) **/
 t.exports = {
     d: "teamSetup__28362"
 }

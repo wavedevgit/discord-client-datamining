@@ -1,4 +1,4 @@
-/** chunk id: 683766, original params: e,i,t (module,exports,require) **/
+/** chunk id: 683766 params = (module,exports,require) **/
 e.exports = {
     A1: "wishlistBanner_b05cb4",
     $R: "wishlistBannerHeader_b05cb4",

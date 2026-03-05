@@ -1,4 +1,4 @@
-/** chunk id: 665076, original params: e,t,n (module,exports,require) **/
+/** chunk id: 665076 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     p_: "list_c3cd7d",

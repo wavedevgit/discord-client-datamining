@@ -1,4 +1,4 @@
-/** chunk id: 943165, original params: e,t,r (module,exports,require) **/
+/** chunk id: 943165 params = (module,exports,require) **/
 e.exports = {
     EL: "confirmation__2db04",
     Qq: "text__2db04",

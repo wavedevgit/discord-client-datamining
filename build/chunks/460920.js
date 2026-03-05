@@ -1,4 +1,4 @@
-/** chunk id: 460920, original params: e,t,n (module,exports,require) **/
+/** chunk id: 460920 params = (module,exports,require) **/
 e.exports = {
     L1: "category_f06a86",
     yj: "categoryDivider_f06a86",

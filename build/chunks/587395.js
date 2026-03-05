@@ -1,4 +1,4 @@
-/** chunk id: 587395, original params: e,t,n (module,exports,require) **/
+/** chunk id: 587395 params = (module,exports,require) **/
 e.exports = {
     pQ: "connectedAccountVanityMetadata_fffe42",
     RB: "connectedAccountVanityMetadataTag_fffe42",

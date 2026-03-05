@@ -1,4 +1,4 @@
-/** chunk id: 143175, original params: e,t,a (module,exports,require) **/
+/** chunk id: 143175 params = (module,exports,require) **/
 e.exports = {
     VN: "close_b30d08",
     yl: "modal_b30d08",

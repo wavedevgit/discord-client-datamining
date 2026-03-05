@@ -1,4 +1,4 @@
-/** chunk id: 63248, original params: e,t,n (module,exports,require) **/
+/** chunk id: 63248 params = (module,exports,require) **/
 e.exports = {
     Lm: "previewPanel__6dc2e",
     _l: "previewSection__6dc2e",

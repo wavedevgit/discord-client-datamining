@@ -1,4 +1,4 @@
-/** chunk id: 650433, original params: e,t,n (module,exports,require) **/
+/** chunk id: 650433 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     ed: "settingsColumn_b454a6 " + n(21397).customColumn,

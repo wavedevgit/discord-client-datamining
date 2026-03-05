@@ -1,4 +1,4 @@
-/** chunk id: 746603, original params: e,t,a (module,exports,require) **/
+/** chunk id: 746603 params = (module,exports,require) **/
 e.exports = {
     eg: "priceLine__05bc9",
     pw: "priceTagContainer__05bc9",

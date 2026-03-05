@@ -1,4 +1,4 @@
-/** chunk id: 836528, original params: e,t,l (module,exports,require) **/
+/** chunk id: 836528 params = (module,exports,require) **/
 e.exports = {
     Ej: "paginationContainer_e8f197",
     X$: "pagination_e8f197",

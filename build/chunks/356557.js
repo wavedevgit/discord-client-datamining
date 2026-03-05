@@ -1,4 +1,4 @@
-/** chunk id: 356557, original params: e,t,n (module,exports,require) **/
+/** chunk id: 356557 params = (module,exports,require) **/
 e.exports = {
     kL: "container_cacd02",
     mp: "bumpBox_cacd02",

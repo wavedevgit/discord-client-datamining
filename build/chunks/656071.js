@@ -1,4 +1,4 @@
-/** chunk id: 656071, original params: e,_,r (module,exports,require) **/
+/** chunk id: 656071 params = (module,exports,require) **/
 r.r(e.exports = {
     carousel: "carousel_ab8859",
     children: "children_ab8859",

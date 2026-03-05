@@ -1,4 +1,4 @@
-/** chunk id: 809206, original params: t,e,r (module,exports,require) **/
+/** chunk id: 809206 params = (module,exports,require) **/
 "use strict";
 var n = r(797686),
     i = /\.textClipping$/,

@@ -1,4 +1,4 @@
-/** chunk id: 522579, original params: e (module,exports,require) **/
+/** chunk id: 522579 params = (module,exports,require) **/
 var t = t || function(e) {
     "use strict";
     if (!("u" > typeof navigator && /MSIE [1-9]\./.test(navigator.userAgent))) {

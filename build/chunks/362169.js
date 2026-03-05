@@ -1,4 +1,4 @@
-/** chunk id: 362169, original params: e,t,n (module,exports,require) **/
+/** chunk id: 362169 params = (module,exports,require) **/
 e.exports = {
     Nd: "logoHeader_f1578d",
     kL: "container_f1578d",

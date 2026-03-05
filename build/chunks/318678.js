@@ -1,4 +1,4 @@
-/** chunk id: 318678, original params: e,l,a (module,exports,require) **/
+/** chunk id: 318678 params = (module,exports,require) **/
 a.r(l), a.d(l, {
     manaCollection: () => S,
     playgroundConfig: () => k

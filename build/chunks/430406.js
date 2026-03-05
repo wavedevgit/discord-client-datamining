@@ -1,4 +1,4 @@
-/** chunk id: 430406, original params: e,t,n (module,exports,require) **/
+/** chunk id: 430406 params = (module,exports,require) **/
 e.exports = {
     kL: "container__80bf8",
     mk: "searchResult__80bf8",

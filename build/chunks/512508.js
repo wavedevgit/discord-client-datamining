@@ -1,4 +1,4 @@
-/** chunk id: 512508, original params: e,t,n (module,exports,require) **/
+/** chunk id: 512508 params = (module,exports,require) **/
 e.exports = {
     b: "closeButton__23c09",
     yl: "modal__23c09",

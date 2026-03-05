@@ -1,4 +1,4 @@
-/** chunk id: 380596, original params: e,t,n (module,exports,require) **/
+/** chunk id: 380596 params = (module,exports,require) **/
 e.exports = {
     Zz: "paymentBanner_e335a7",
     Sh: "paymentBannerIcon_e335a7",

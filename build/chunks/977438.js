@@ -1,3 +1,3 @@
-/** chunk id: 977438, original params: t,r,e (module,exports,require) **/
+/** chunk id: 977438 params = (module,exports,require) **/
 "use strict";
 t.exports = e(892705)

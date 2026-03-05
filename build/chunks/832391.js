@@ -1,4 +1,4 @@
-/** chunk id: 832391, original params: e,t,n (module,exports,require) **/
+/** chunk id: 832391 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     rt: "eventPromptsContainer__1405b",

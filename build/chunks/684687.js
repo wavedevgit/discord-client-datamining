@@ -1,4 +1,4 @@
-/** chunk id: 684687, original params: e,t,r (module,exports,require) **/
+/** chunk id: 684687 params = (module,exports,require) **/
 e.exports = {
     kk: "modalPreview__51743",
     CX: "smallDecorationPreview__51743",

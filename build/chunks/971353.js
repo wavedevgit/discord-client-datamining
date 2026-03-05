@@ -1,4 +1,4 @@
-/** chunk id: 971353, original params: e,t,n (module,exports,require) **/
+/** chunk id: 971353 params = (module,exports,require) **/
 e.exports = {
     so: "sidebarContainer__656be",
     g4: "loadingContainer__656be",

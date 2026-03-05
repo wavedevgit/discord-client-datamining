@@ -1,4 +1,4 @@
-/** chunk id: 554833, original params: e,t,n (module,exports,require) **/
+/** chunk id: 554833 params = (module,exports,require) **/
 e.exports = {
     T8: "inviteSmall_f1d99d",
     Qs: "content_f1d99d",

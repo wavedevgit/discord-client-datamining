@@ -1,4 +1,4 @@
-/** chunk id: 749149, original params: e,t,n (module,exports,require) **/
+/** chunk id: 749149 params = (module,exports,require) **/
 e.exports = {
     wD: "markdown_d285a6",
     aV: "blockquote_d285a6",

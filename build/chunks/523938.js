@@ -1,4 +1,4 @@
-/** chunk id: 523938, original params: r,e,a (module,exports,require) **/
+/** chunk id: 523938 params = (module,exports,require) **/
 r.exports = {
     mI: "badgeImageContainer__9953c",
     pq: "badgeImage__9953c",

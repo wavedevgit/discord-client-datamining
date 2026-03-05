@@ -1,4 +1,4 @@
-/** chunk id: 851763, original params: e,t,n (module,exports,require) **/
+/** chunk id: 851763 params = (module,exports,require) **/
 e.exports = {
     fD: "normalStylesDefault_a1443c",
     EK: "normalStylesImageOnlyAnswers_a1443c",

@@ -1,4 +1,4 @@
-/** chunk id: 328904, original params: e,t,s (module,exports,require) **/
+/** chunk id: 328904 params = (module,exports,require) **/
 e.exports = {
     zr: "root_b2c7eb",
     p8: "channelResult_b2c7eb",

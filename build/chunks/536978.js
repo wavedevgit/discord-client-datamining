@@ -1,4 +1,4 @@
-/** chunk id: 536978, original params: t (module,exports,require) **/
+/** chunk id: 536978 params = (module,exports,require) **/
 "use strict";
 t.exports = function(t) {
     return t.Window && t instanceof t.Window ? {

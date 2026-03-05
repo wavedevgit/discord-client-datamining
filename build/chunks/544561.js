@@ -1,4 +1,4 @@
-/** chunk id: 544561, original params: e,t,a (module,exports,require) **/
+/** chunk id: 544561 params = (module,exports,require) **/
 e.exports = {
     iE: "wrapper_bb856d",
     Pt: "icons_bb856d",

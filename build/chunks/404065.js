@@ -1,4 +1,4 @@
-/** chunk id: 404065, original params: e,t,n (module,exports,require) **/
+/** chunk id: 404065 params = (module,exports,require) **/
 e.exports = {
     XG: "scroller__28fdc",
     D$: "friendsLoadingItem__28fdc",

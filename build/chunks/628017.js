@@ -1,4 +1,4 @@
-/** chunk id: 628017, original params: e,t,n (module,exports,require) **/
+/** chunk id: 628017 params = (module,exports,require) **/
 e.exports = {
     Dz: "recentChannelsMenu__711d3",
     qs: "recentChannelsMenuHeader__711d3",

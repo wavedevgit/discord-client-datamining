@@ -1,4 +1,4 @@
-/** chunk id: 308227, original params: t,r,e (module,exports,require) **/
+/** chunk id: 308227 params = (module,exports,require) **/
 "use strict";
 var n = function(t) {
     return t && t.Math === Math && t

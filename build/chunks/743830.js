@@ -1,4 +1,4 @@
-/** chunk id: 743830, original params: e,t,r (module,exports,require) **/
+/** chunk id: 743830 params = (module,exports,require) **/
 e.exports = {
     jC: "popoutContainer__4ad69",
     VB: "messagesScroller__4ad69",

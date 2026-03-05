@@ -1,4 +1,4 @@
-/** chunk id: 180579, original params: l,i,n (module,exports,require) **/
+/** chunk id: 180579 params = (module,exports,require) **/
 l.exports = {
     Vk: "errorLabel_f3e49b",
     dr: "supportCallToAction_f3e49b",

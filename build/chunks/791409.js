@@ -1,4 +1,4 @@
-/** chunk id: 791409, original params: e,t,n (module,exports,require) **/
+/** chunk id: 791409 params = (module,exports,require) **/
 e.exports = {
     B$: "inviteContainer__23437",
     u6: "inviterTooltipContainer__23437",

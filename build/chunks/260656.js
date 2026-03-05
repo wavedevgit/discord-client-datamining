@@ -1,4 +1,4 @@
-/** chunk id: 260656, original params: e,t,n (module,exports,require) **/
+/** chunk id: 260656 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     v: "raisedHandIcon__15cd2",

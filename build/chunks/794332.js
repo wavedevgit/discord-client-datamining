@@ -1,4 +1,4 @@
-/** chunk id: 794332, original params: e,t,n (module,exports,require) **/
+/** chunk id: 794332 params = (module,exports,require) **/
 e.exports = {
     Ow: "nitroGemAnimation__7d30a",
     tU: "gemGlow__7d30a",

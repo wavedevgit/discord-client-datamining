@@ -1,4 +1,4 @@
-/** chunk id: 178428, original params: e,_,t (module,exports,require) **/
+/** chunk id: 178428 params = (module,exports,require) **/
 e.exports = {
     aE: "sectionHeaderContainer__32534",
     yV: "sectionDescription__32534",

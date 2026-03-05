@@ -1,4 +1,4 @@
-/** chunk id: 811546, original params: t,e,u (module,exports,require) **/
+/** chunk id: 811546 params = (module,exports,require) **/
 u.d(e, {
     openGuildProductLink: () => s
 });

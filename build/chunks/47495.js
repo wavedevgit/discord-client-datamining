@@ -1,4 +1,4 @@
-/** chunk id: 47495, original params: t,i,s (module,exports,require) **/
+/** chunk id: 47495 params = (module,exports,require) **/
 t.exports = {
     DD: "title_cb3bbe",
     rf: "body_cb3bbe",

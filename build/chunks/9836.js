@@ -1,4 +1,4 @@
-/** chunk id: 9836, original params: e,_,t (module,exports,require) **/
+/** chunk id: 9836 params = (module,exports,require) **/
 e.exports = {
     nw: "outerContainer_e44912",
     yl: "modal_e44912",

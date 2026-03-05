@@ -1,4 +1,4 @@
-/** chunk id: 477549, original params: e,t,a (module,exports,require) **/
+/** chunk id: 477549 params = (module,exports,require) **/
 e.exports = {
     Ix: "channel__972a0",
     Ij: "fullWidth__972a0",

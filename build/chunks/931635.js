@@ -1,4 +1,4 @@
-/** chunk id: 931635, original params: e,a,s (module,exports,require) **/
+/** chunk id: 931635 params = (module,exports,require) **/
 e.exports = {
     nK: "perkCard_a1e8da",
     r9: "disabled_a1e8da",

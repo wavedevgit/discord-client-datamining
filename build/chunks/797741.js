@@ -1,4 +1,4 @@
-/** chunk id: 797741, original params: e,t,s (module,exports,require) **/
+/** chunk id: 797741 params = (module,exports,require) **/
 e.exports = {
     jE: "modalContent__2bb83",
     Bi: "spamRequest__2bb83",

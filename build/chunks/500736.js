@@ -1,4 +1,4 @@
-/** chunk id: 500736, original params: e,t,n (module,exports,require) **/
+/** chunk id: 500736 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Vg: "grid_d87d30",

@@ -1,4 +1,4 @@
-/** chunk id: 632547, original params: e,t,n (module,exports,require) **/
+/** chunk id: 632547 params = (module,exports,require) **/
 e.exports = {
     R_: "heading__6f81c",
     $H: "tabBar__6f81c",

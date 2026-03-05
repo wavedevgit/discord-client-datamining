@@ -1,4 +1,4 @@
-/** chunk id: 819882, original params: e,t,n (module,exports,require) **/
+/** chunk id: 819882 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Pf: "label__27da5",

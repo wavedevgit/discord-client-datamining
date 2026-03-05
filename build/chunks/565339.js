@@ -1,4 +1,4 @@
-/** chunk id: 565339, original params: e,t,r (module,exports,require) **/
+/** chunk id: 565339 params = (module,exports,require) **/
 e.exports = {
     u1: "spinner_ced2f2",
     yl: "modal_ced2f2",

@@ -1,4 +1,4 @@
-/** chunk id: 187449, original params: e,t,n (module,exports,require) **/
+/** chunk id: 187449 params = (module,exports,require) **/
 e.exports = {
     a4: "listItemContents_fc004c",
     Z$: "friendAnniversaryRow_fc004c",

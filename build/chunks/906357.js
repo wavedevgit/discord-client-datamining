@@ -1,4 +1,4 @@
-/** chunk id: 906357, original params: e,t,s (module,exports,require) **/
+/** chunk id: 906357 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     sW: "catalogBanner__3f82e",

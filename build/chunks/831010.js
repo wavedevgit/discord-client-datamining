@@ -1,4 +1,4 @@
-/** chunk id: 831010, original params: e,t,n (module,exports,require) **/
+/** chunk id: 831010 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     A2: "previewChannelRow_d59199",

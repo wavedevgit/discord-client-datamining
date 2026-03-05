@@ -1,4 +1,4 @@
-/** chunk id: 308581, original params: e,t,n (module,exports,require) **/
+/** chunk id: 308581 params = (module,exports,require) **/
 e.exports = {
     Vg: "grid__80f54",
     e6: "hasSquareItems__80f54",

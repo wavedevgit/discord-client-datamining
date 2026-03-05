@@ -1,4 +1,4 @@
-/** chunk id: 847230, original params: t,e,n (module,exports,require) **/
+/** chunk id: 847230 params = (module,exports,require) **/
 t.exports = {
     yl: "modal__4b2e7",
     wx: "header__4b2e7",
