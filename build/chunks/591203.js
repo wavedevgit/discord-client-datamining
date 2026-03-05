@@ -24,7 +24,7 @@ n(980504);
 var S = n(985018),
     C = n(17786);
 
-function I(e) {
+function f(e) {
     return (0, l.bG)([g.A], () => {
         if (null == e) return null;
         let {
@@ -35,10 +35,10 @@ function I(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([E.A], () => E.A.settings.guilds?.guilds?.[t]?.joinSound), s = I(n);
+    } = e, n = (0, l.bG)([E.A], () => E.A.settings.guilds?.guilds?.[t]?.joinSound), s = f(n);
     if (null == n || null == s) return null;
     let {
         emojiId: o,
@@ -66,7 +66,7 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = I(r), x = r?.type === A.PP.GLOBAL, E = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = f(r), x = r?.type === A.PP.GLOBAL, E = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
             E && (0, m.ND)({
                 location: e
@@ -78,7 +78,7 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
             let {
                 inDropdown: n
             } = t;
-            return null == e ? null : n ? (0, i.jsx)(f, {
+            return null == e ? null : n ? (0, i.jsx)(I, {
                 guildId: e.value
             }) : null
         }, []);

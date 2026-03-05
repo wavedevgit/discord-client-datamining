@@ -18,10 +18,10 @@ function g(e) {
         currentUser: t,
         userTeamsLoading: n,
         userTeams: g
-    } = e, [m, A] = s.useState(!1), [h, p] = s.useState(!1), [x, E] = s.useState(!1), [T, S] = s.useState(!1), [C, I] = s.useState(null), f = s.useCallback(e => {
+    } = e, [m, A] = s.useState(!1), [h, p] = s.useState(!1), [x, E] = s.useState(!1), [T, S] = s.useState(!1), [C, f] = s.useState(null), I = s.useCallback(e => {
         if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
-        S(!0), I(e.body.message)
-    }, []), b = s.useCallback((e, t) => (0, a.U_)(e, t).then(u.tEg, f), [f]), N = s.useCallback(function() {
+        S(!0), f(e.body.message)
+    }, []), b = s.useCallback((e, t) => (0, a.U_)(e, t).then(u.tEg, I), [I]), N = s.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
             n = o.A.getGuildsArray().filter(e => e.ownerId === t.id);
         (g?.filter(e => e.owner_user_id === t.id) ?? []).length > 0 ? A(!0) : n.length > 0 ? p(!0) : t.isClaimed() ? (0, l.qfG)(t => (0, i.jsx)(r.default, {
@@ -48,7 +48,7 @@ function g(e) {
             onOwnedGuildsWarningModalClose: () => p(!1),
             onDeleteAccountConfirmModalClose: () => E(!1),
             onDisableAccountErrorModalClose: () => {
-                S(!1), I(null)
+                S(!1), f(null)
             }
         })]
     })

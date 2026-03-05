@@ -24,8 +24,8 @@ var i = n(627968),
     T = n(614738),
     S = n(379848),
     C = n(259065),
-    I = n(141468),
-    f = n(963852),
+    f = n(141468),
+    I = n(963852),
     b = n(763754),
     N = n(20851),
     v = n(652961),
@@ -142,8 +142,8 @@ function ee(e) {
 function et() {
     let e = D.hH.useSetting(),
         [t] = s.useState(() => {
-            let e = (0, I.rh)({
-                ...(0, f.Ay)({
+            let e = (0, f.rh)({
+                ...(0, I.Ay)({
                     channelId: "1337",
                     content: z.intl.formatToPlainString(z.t.bB80LC, {
                         previewLink: "https://discord.com/accessibility"

@@ -28,9 +28,9 @@ let p = e => {
         isPremiumGetCta: T,
         onCtaClick: S,
         cardVariant: C
-    } = e, I = (0, c.V)(), f = I?.subscription_trial, b = (0, d.O)(), N = (0, r.FY)({
-        intervalType: f?.interval,
-        intervalCount: f?.interval_count
+    } = e, f = (0, c.V)(), I = f?.subscription_trial, b = (0, d.O)(), N = (0, r.FY)({
+        intervalType: I?.interval,
+        intervalCount: I?.interval_count
     }), v = (0, o.G)({
         defaultResponse: A.intl.string(A.t["8x0jKT"]),
         onNonTier2Subscriber: A.intl.string(A.t.IJI7yk),

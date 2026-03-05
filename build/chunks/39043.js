@@ -49,15 +49,15 @@ let _ = s.memo(function(e) {
         T = s.useMemo(() => (0, l.debounce)(E, 50), [E]),
         S = (0, r.w)(T),
         C = n?.(m),
-        I = g?.(),
-        f = (0, c.q)(t);
+        f = g?.(),
+        I = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
         ref: S,
         title: C,
-        collapsedSubtitle: I,
+        collapsedSubtitle: f,
         isExpanded: m,
         onExpandedChange: e => {
-            f(), A(e)
+            I(), A(e)
         },
         animate: h,
         children: _.map(e => (0, i.jsx)(d.A, {

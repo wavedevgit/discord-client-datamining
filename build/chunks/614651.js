@@ -27,8 +27,8 @@ var i = n(627968),
     T = n(141468),
     S = n(963852),
     C = n(763754),
-    I = n(20851),
-    f = n(195043),
+    f = n(20851),
+    I = n(195043),
     b = n(97469),
     N = n(287809),
     v = n(723702),
@@ -140,7 +140,7 @@ let B = {
                 className: a()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
-                children: m.map((t, n) => (0, i.jsx)(I.A, {
+                children: m.map((t, n) => (0, i.jsx)(f.A, {
                     author: (0, C.p_)(t),
                     message: t,
                     compact: e,
@@ -275,10 +275,10 @@ class J extends s.Component {
     render() {
         let {
             density: e
-        } = this.props, t = (0, i.jsxs)(f.x, {
+        } = this.props, t = (0, i.jsxs)(I.x, {
             setting: M.H.APPEARANCE_THEME,
             children: [this.renderPreview(), this.renderTheme()]
-        }), n = (0, i.jsx)(f.x, {
+        }), n = (0, i.jsx)(I.x, {
             setting: M.H.APPEARANCE_ICON,
             children: (0, i.jsx)(L.yG, {})
         }), s = [{
@@ -290,7 +290,7 @@ class J extends s.Component {
         }, {
             name: V.intl.string(V.t["4cuYHx"]),
             value: o.NS.COZY
-        }], l = (0, i.jsxs)(f.x, {
+        }], l = (0, i.jsxs)(I.x, {
             setting: M.H.APPEARANCE_LIST_SPACING,
             children: [(0, i.jsx)(c.z6M, {
                 label: V.intl.string(V.t["C/5V0A"]),
@@ -303,7 +303,7 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), a = (0, i.jsxs)(f.x, {
+        }), a = (0, i.jsxs)(I.x, {
             setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["2ed/sA"]),
@@ -330,7 +330,7 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), r = (0, i.jsxs)(f.x, {
+        }), r = (0, i.jsxs)(I.x, {
             setting: M.H.APPEARANCE_SCALING_SPACING,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["0Yh+ZX"]),

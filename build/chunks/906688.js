@@ -32,21 +32,21 @@ function h(e) {
     let g = (0, l.KjH)(a),
         {
             name: A,
-            rarity: E
+            rarity: m
         } = C,
         {
-            color: m
-        } = (0, c.ag)(E),
+            color: E
+        } = (0, c.ag)(m),
         p = (0, r.Mw)(h) ? u : _,
-        I = (g.size - g.offset - 2 * g.stroke) * .8,
+        b = (g.size - g.offset - 2 * g.stroke) * .8,
         T = g.size - g.stroke,
-        b = {
-            width: .4 * I,
-            height: .4 * I
+        I = {
+            width: .4 * b,
+            height: .4 * b
         },
         L = {
-            width: b.width + 1,
-            height: b.height + 1,
+            width: I.width + 1,
+            height: I.height + 1,
             right: g.stroke + 1,
             bottom: g.stroke + 1,
             padding: 0
@@ -63,9 +63,9 @@ function h(e) {
             className: d.r5,
             children: (0, i.jsx)(l.OR, {
                 size: "custom",
-                color: n ? m : p.trophy,
-                width: I,
-                height: I
+                color: n ? E : p.trophy,
+                width: b,
+                height: b
             })
         }), !n && (0, i.jsx)("div", {
             className: d.dq,
@@ -73,14 +73,14 @@ function h(e) {
             children: (0, i.jsx)(l.XAi, {
                 size: "custom",
                 color: p.locked,
-                ...b
+                ...I
             })
-        }), n && E === c.md.LEGENDARY && (0, i.jsx)("div", {
+        }), n && m === c.md.LEGENDARY && (0, i.jsx)("div", {
             className: d.dq,
             style: L,
             children: (0, i.jsx)(o.A, {
                 className: d.ox,
-                ...b
+                ...I
             })
         })]
     })

@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(40185),
     S = n(526292),
     C = n(234419),
-    I = n(690737),
-    f = n(320908),
+    f = n(690737),
+    I = n(320908),
     b = n(412260),
     N = n(396375),
     v = n(106922),
@@ -136,7 +136,7 @@ let V = e => {
                     onChange: e => H(e),
                     threshold: 0,
                     active: !0,
-                    children: (0, i.jsx)(f.Ay, {
+                    children: (0, i.jsx)(I.Ay, {
                         ref: t,
                         subscriptionTier: J,
                         className: a()({
@@ -158,7 +158,7 @@ let V = e => {
                 })
             }), (0, i.jsx)("div", {
                 className: U.hz
-            }), (0, i.jsx)(I.A, {
+            }), (0, i.jsx)(f.A, {
                 isVisible: !w && !B && X,
                 subscriptionTier: J,
                 isApplicationHome: !1,

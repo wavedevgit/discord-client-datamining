@@ -44,7 +44,7 @@ function C() {
             onChange: c,
             onClear: () => c("")
         }), u.length > 0 ? u.map(e => {
-            let t = "guild" === e.experiment.kind ? f : I;
+            let t = "guild" === e.experiment.kind ? I : f;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -61,15 +61,15 @@ function C() {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
         defaultOpen: g
-    } = e, [A, p] = s.useState(g), [E, C] = s.useState(!1), I = s.useCallback(() => {
+    } = e, [A, p] = s.useState(g), [E, C] = s.useState(!1), f = s.useCallback(() => {
         p(e => !e)
-    }, []), f = (0, r.bG)([h.default], () => h.default.getId()), b = (0, m.iN)(t, f), N = (0, m.Fm)(t, f), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
+    }, []), I = (0, r.bG)([h.default], () => h.default.getId()), b = (0, m.iN)(t, I), N = (0, m.Fm)(t, I), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -85,7 +85,7 @@ function I(e) {
         })
     }, [n]), O = (0, i.jsx)(o.sqX, {
         "aria-label": "Toggle visibility",
-        onClick: I,
+        onClick: f,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -172,7 +172,7 @@ function I(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         experiment: t,
         experimentId: n,
@@ -196,7 +196,7 @@ function f(e) {
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
-    }), I = (0, i.jsx)(o.DUT, {
+    }), f = (0, i.jsx)(o.DUT, {
         onClick: A,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
@@ -217,7 +217,7 @@ function f(e) {
     });
     return d ? (0, i.jsxs)("div", {
         className: S.Os,
-        children: [I, (0, i.jsx)(u.g, {
+        children: [f, (0, i.jsx)(u.g, {
             label: "Bucket Override",
             description: `Current Assignments: ${C}`,
             experiment: t,
@@ -276,6 +276,6 @@ function f(e) {
         })]
     }) : (0, i.jsx)("div", {
         className: S.Os,
-        children: I
+        children: f
     })
 }

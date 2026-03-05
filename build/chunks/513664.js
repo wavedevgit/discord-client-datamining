@@ -50,11 +50,11 @@ function T(e) {
     return (0, i.jsxs)(g.A, {
         className: t,
         title: h.intl.string(h.t.Cq98yL),
-        children: [(0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
+        children: [(0, i.jsx)(I, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(C, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(I, {}), (0, i.jsx)(a.cGx, {
+        }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(b, {})]
     })
@@ -116,7 +116,7 @@ function C() {
     })
 }
 
-function I() {
+function f() {
     let e = _.e.useSetting(),
         t = _.UM.useSetting();
     return (0, i.jsx)(c.x, {
@@ -140,7 +140,7 @@ function I() {
     })
 }
 
-function f() {
+function I() {
     let e = _.tz.useSetting(),
         t = u.isPlatformEmbedded ? h.intl.string(p.default.UQ9RHJ) : h.intl.string(h.t.oKqC4t);
     return (0, i.jsx)(c.x, {

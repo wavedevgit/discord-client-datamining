@@ -1,6 +1,6 @@
 /** chunk id: 726532, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    i: () => I,
+    i: () => f,
     j: () => b
 });
 var i = n(627968),
@@ -64,7 +64,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })]
         })
     },
-    I = e => {
+    f = e => {
         let {
             currentUser: t
         } = e, {
@@ -79,10 +79,10 @@ let S = () => (0, i.jsxs)(a.BJc, {
             u = s.currentPeriodEnd,
             {
                 primary: _,
-                members: I
+                members: f
             } = r,
             {
-                title: f,
+                title: I,
                 description: b
             } = (() => {
                 switch (s.subscriptionStatus) {
@@ -126,7 +126,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: T.wS,
                 children: [(0, i.jsx)(C, {
-                    title: f,
+                    title: I,
                     description: b,
                     button: (0, i.jsx)(a.Button, {
                         variant: "secondary",
@@ -159,7 +159,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     }), (0, i.jsx)(A.U4, {
                         user: _,
                         isOwnUser: !1
-                    }), I.map(e => (0, i.jsx)(A.YF, {
+                    }), f.map(e => (0, i.jsx)(A.YF, {
                         user: e,
                         isOwnUser: e.id === t?.id
                     }, e.id))]
@@ -167,7 +167,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })]
         })
     },
-    f = e => {
+    I = e => {
         let {
             premiumGroupMembers: t,
             isLoadingPremiumGroupMembers: n,
@@ -238,7 +238,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             premiumGroupMembers: m,
             isLoading: A
         } = (0, g.A)(t.id), {
-            numAvailableInvites: I,
+            numAvailableInvites: f,
             numTotalSeats: b,
             numUsedSeats: N
         } = (0, l.cf)([_.A], () => ({
@@ -272,7 +272,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !h.BE.includes(t.status) && I > 0, [t.status, I]), {
+        }, L = s.useMemo(() => !h.BE.includes(t.status) && f > 0, [t.status, f]), {
             title: D,
             description: G
         } = (() => {
@@ -343,7 +343,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             onClick: R
                         })]
                     })
-                }), (0, i.jsx)(f, {
+                }), (0, i.jsx)(I, {
                     premiumGroupMembers: m,
                     isLoadingPremiumGroupMembers: A,
                     canInvite: L,
@@ -383,7 +383,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     },
                     numTotalSeats: b,
                     numUsedSeats: N,
-                    numAvailableInvites: I
+                    numAvailableInvites: f
                 })]
             })]
         })

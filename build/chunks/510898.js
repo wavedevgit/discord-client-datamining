@@ -90,10 +90,10 @@ function m(e) {
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: C, ...I
+                route: C, ...f
             } = l;
             return (0, i.jsx)(u.A, {
-                ...I,
+                ...f,
                 navigateToHome: h
             });
         default:

@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(927578),
     S = n(432334),
     C = n(101135),
-    I = n(708030),
-    f = n(652215),
+    f = n(708030),
+    I = n(652215),
     b = n(788868),
     N = n(985018),
     v = n(652804);
@@ -42,7 +42,7 @@ function j(e) {
         className: v.Hp,
         children: [(0, i.jsxs)("div", {
             className: v.YL,
-            children: [(0, i.jsx)(I.A, {
+            children: [(0, i.jsx)(f.A, {
                 className: v.W6,
                 hasCooldown: t.isOnCooldown(),
                 isCanceled: m,
@@ -120,7 +120,7 @@ let y = function(e) {
         {
             fractionalState: C
         } = (0, _.A)(),
-        I = (0, r.bG)([u.A], () => u.A.useReducedMotion),
+        f = (0, r.bG)([u.A], () => u.A.useReducedMotion),
         y = (0, r.bG)([p.default], () => p.default.getCurrentUser()),
         P = C === b.xc.FP_SUB_PAUSED,
         L = A && !P,
@@ -155,10 +155,10 @@ let y = function(e) {
             let e = [];
             for (let t = 0; t < Y; t++) e.push((0, i.jsx)(S.A, {
                 className: v.YA,
-                useReducedMotion: I
+                useReducedMotion: f
             }, t));
             return e
-        }, [Y, I]),
+        }, [Y, f]),
         z = s.useMemo(() => G.find(e => e.isAvailable()), [G]);
     if (0 === G.length) return null;
     let X = G.length;
@@ -223,7 +223,7 @@ let y = function(e) {
                                 (0, c.mMO)(async () => e => (0, i.jsx)(g.default, {
                                     ...e,
                                     guildBoostSlots: [z],
-                                    locationSection: f.JJy.SETTINGS_PREMIUM
+                                    locationSection: I.JJy.SETTINGS_PREMIUM
                                 }))
                             } : void 0
                         })
@@ -237,7 +237,7 @@ let y = function(e) {
                     onCancel: O,
                     onUncancel: R,
                     premiumSubscription: m,
-                    useReducedMotion: I,
+                    useReducedMotion: f,
                     fractionalState: C
                 }, e.id))
             })]

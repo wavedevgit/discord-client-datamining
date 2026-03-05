@@ -54,8 +54,8 @@ let p = e => {
             avatarDecorationSkuId: T,
             avatarDecoAssetDescription: S,
             ellipseOpacity: C,
-            customAnimationClassName: I,
-            circleColor: f,
+            customAnimationClassName: f,
+            circleColor: I,
             circleStroke: b
         } = e, N = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !N;
         return (0, s.jsx)("div", {
@@ -63,7 +63,7 @@ let p = e => {
             children: (0, s.jsx)(m.A, {
                 animationClassName: r()(A._0, {
                     [A.uJ]: v,
-                    [I ?? ""]: v
+                    [f ?? ""]: v
                 }),
                 progressCircleStroke: b,
                 progressCircleStrokeSize: a,
@@ -80,7 +80,7 @@ let p = e => {
                             });
                         case 1:
                             return (0, s.jsx)(g.A, {
-                                circleColor: f,
+                                circleColor: I,
                                 ellipseOpacity: C
                             });
                         case 2:

@@ -32,15 +32,15 @@ function p(e) {
         user: t,
         guildId: n?.id
     }), {
-        pendingAvatarDecoration: I,
-        errors: f
+        pendingAvatarDecoration: f,
+        errors: I
     } = (0, g.CP)(n?.id), b = E ? r.wLn : a.$n;
     return (0, i.jsxs)(m.A, {
         className: s,
         forcedDivider: p,
         hasBackground: !0,
         title: _,
-        errors: f,
+        errors: I,
         children: [(0, i.jsxs)("div", {
             className: h.NC,
             children: [(0, i.jsx)(b, {
@@ -55,7 +55,7 @@ function p(e) {
                     [h.yj]: E
                 }),
                 children: A.intl.string(A.t.BVcYCx)
-            }), (void 0 === I ? null != C : null != I) && (0, i.jsx)("div", {
+            }), (void 0 === f ? null != C : null != f) && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: h.DT,
                 children: (0, i.jsx)(r.Button, {

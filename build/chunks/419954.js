@@ -4,9 +4,9 @@ n.d(t, {
     D1: () => m,
     E2: () => N,
     FW: () => p,
-    Hn: () => I,
+    Hn: () => f,
     Hr: () => a,
-    Qx: () => f,
+    Qx: () => I,
     Tf: () => T,
     WI: () => r,
     bd: () => g,
@@ -122,11 +122,11 @@ function C(e, t) {
     return x(e, i.Z6.SLIDER, t)
 }
 
-function I(e, t) {
+function f(e, t) {
     return x(e, i.Z6.SELECT, t)
 }
 
-function f(e, t) {
+function I(e, t) {
     return x(e, i.Z6.RADIO, t)
 }
 

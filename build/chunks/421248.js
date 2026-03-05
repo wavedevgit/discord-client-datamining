@@ -35,14 +35,14 @@ function E() {
                 entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.Jz)(e)
         },
-        I = [{
+        f = [{
             value: s.TO.BLUR,
             label: p.intl.string(p.t.S49Uad)
         }, {
             value: s.TO.BLOCK,
             label: p.intl.string(p.t["D/157Y"])
         }],
-        f = [{
+        I = [{
             value: s.TO.BLUR,
             label: p.intl.string(p.t.S49Uad)
         }],
@@ -50,7 +50,7 @@ function E() {
             value: s.TO.SHOW,
             label: p.intl.string(p.t["5k5OFp"])
         };
-    e && (I.unshift(b), f.unshift(b));
+    e && (f.unshift(b), I.unshift(b));
     let N = {
         isDisabled: n,
         tooltipText: t ? p.intl.string(x.default["6Af/cw"]) : void 0
@@ -65,7 +65,7 @@ function E() {
             onChange: e => C({
                 explicitContentFriendDm: e
             }),
-            options: I,
+            options: f,
             ...N
         }), (0, i.jsx)(m.A, {
             title: p.intl.string(p.t["Yh+HX1"]),
@@ -73,7 +73,7 @@ function E() {
             onChange: e => C({
                 explicitContentNonFriendDm: e
             }),
-            options: I,
+            options: f,
             ...N
         }), (0, i.jsx)(m.A, {
             title: p.intl.string(p.t["FP+a42"]),
@@ -83,7 +83,7 @@ function E() {
             }),
             isDisabled: !e || n,
             tooltipText: t ? p.intl.string(x.default["6Af/cw"]) : void 0,
-            options: f
+            options: I
         })]
     })
 }

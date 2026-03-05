@@ -22,11 +22,11 @@ var i = n(627968),
     T = n(652215),
     S = n(731854),
     C = n(985018);
-let I = (0, g.D)(() => ({
+let f = (0, g.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function f() {
+async function I() {
     let e = await _.A.fileManager.getLogPath();
     _.A.fileManager.showItemInFolder(e)
 }
@@ -90,10 +90,10 @@ async function N(e) {
 }
 async function v() {
     await N({
-        onUploadStart: () => I.setState({
+        onUploadStart: () => f.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => I.setState({
+        onUploadFinish: () => f.setState({
             isUploading: !1,
             isDisabled: !0
         })
@@ -107,8 +107,8 @@ let j = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     },
     Component: function() {
         let e = (0, a.bG)([p.Ay], () => p.Ay.getDebugLogging()),
-            t = I.useField("isUploading"),
-            n = I.useField("isDisabled"),
+            t = f.useField("isUploading"),
+            n = f.useField("isDisabled"),
             l = s.useId();
         return (0, i.jsxs)("fieldset", {
             children: [(0, i.jsx)(c.AC4, {
@@ -137,7 +137,7 @@ let j = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
                             text: C.intl.string(C.t.nuPtYi),
-                            onClick: f,
+                            onClick: I,
                             "aria-label": C.intl.string(C.t["L/hFOe"])
                         })]
                     })

@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(696451),
     S = n(351906),
     C = n(287809),
-    I = n(975571),
-    f = n(927578),
+    f = n(975571),
+    I = n(927578),
     b = n(159001),
     N = n(65767),
     v = n(281052),
@@ -76,7 +76,7 @@ function L(e) {
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: R.intl.format(R.t["/PTB2E"], {
-                helpCenterLink: I.A.getArticleURL(O.MVz.GUILD_PROFILES)
+                helpCenterLink: f.A.getArticleURL(O.MVz.GUILD_PROFILES)
             })
         }), null != t ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(j.A, {
@@ -96,7 +96,7 @@ function L(e) {
                     pendingDisplayNameStyles: B,
                     user: L,
                     guild: t,
-                    canUsePremiumCustomization: f.Ay.canUsePremiumProfileCustomization(L),
+                    canUsePremiumCustomization: I.Ay.canUsePremiumProfileCustomization(L),
                     onUpsellClick: P
                 }),
                 nameplatePreview: (0, i.jsx)(g.A, {

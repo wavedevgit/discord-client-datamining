@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(203982),
     S = n(115063),
     C = n(894013),
-    I = n(652215),
-    f = n(355097),
+    f = n(652215),
+    I = n(355097),
     b = n(985018),
     N = n(298109);
 
@@ -56,30 +56,30 @@ function v() {
                         (0, S.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), T._.dispatch(I.jej.EMPHASIZE_NOTICE);
+                        }), T._.dispatch(f.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === f.Eq.GUILD && null != t && (0, c.V2)(t.id), j(e)
+                    e === I.Eq.GUILD && null != t && (0, c.V2)(t.id), j(e)
                 }
             },
             children: [(0, i.jsx)(o.VQ0.Item, {
                 className: N.YU,
-                id: f.Eq.USER_PROFILE,
+                id: I.Eq.USER_PROFILE,
                 children: b.intl.string(b.t["2p07FR"])
-            }, f.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
+            }, I.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
                 className: a()(N.YU, N.HY),
                 "aria-label": b.intl.string(b.t.kPHroX),
-                id: f.Eq.GUILD,
+                id: I.Eq.GUILD,
                 children: b.intl.string(b.t.kPHroX)
-            }, f.Eq.GUILD)]
-        }), v === f.Eq.GUILD ? (0, i.jsx)(u.A, {
+            }, I.Eq.GUILD)]
+        }), v === I.Eq.GUILD ? (0, i.jsx)(u.A, {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
                     (0, S.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), T._.dispatch(I.jej.EMPHASIZE_NOTICE);
+                    }), T._.dispatch(f.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)

@@ -25,8 +25,8 @@ var i = n(627968),
     T = n(792656),
     S = n(511484),
     C = n(811611),
-    I = n(97469),
-    f = n(954571),
+    f = n(97469),
+    I = n(954571),
     b = n(544028),
     N = n(253932),
     v = n(12901),
@@ -78,7 +78,7 @@ function M(e) {
         analyticsLocations: a
     } = (0, _.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
-        n && f.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
+        n && I.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
             type: R.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
             location_stack: a
         })
@@ -123,7 +123,7 @@ let k = () => (0, i.jsx)("div", {
 });
 
 function V() {
-    let e = (0, I.qo)(),
+    let e = (0, f.qo)(),
         {
             theme: t,
             useForcedColors: n,

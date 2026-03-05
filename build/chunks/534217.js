@@ -48,7 +48,7 @@ let S = e => {
             children: t
         })
     },
-    I = e => {
+    f = e => {
         let {
             referralSentUsers: t
         } = e;
@@ -71,7 +71,7 @@ let S = e => {
             })()
         })
     },
-    f = e => {
+    I = e => {
         let {
             nReferralsSent: t
         } = e;
@@ -100,12 +100,12 @@ let S = e => {
             className: l()(E.kL, t),
             children: [(0, i.jsx)("div", {
                 className: E.G3,
-                children: (0, i.jsx)(f, {
+                children: (0, i.jsx)(I, {
                     nReferralsSent: o.size
                 })
             }), (0, i.jsxs)("div", {
                 className: E.IH,
-                children: [(0, i.jsx)(I, {
+                children: [(0, i.jsx)(f, {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
                     className: E.n4,

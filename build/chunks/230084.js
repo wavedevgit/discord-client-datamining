@@ -31,18 +31,18 @@ function h(e) {
         disabled: T = !1,
         isTryItOut: S = !1,
         forcedDivider: C,
-        withHighlight: I = !1
+        withHighlight: f = !1
     } = e, {
-        newestAnalyticsLocation: f
-    } = (0, d.Ay)(), b = I ? o.wLn : r.$n, N = s.useCallback(() => {
+        newestAnalyticsLocation: I
+    } = (0, d.Ay)(), b = f ? o.wLn : r.$n, N = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
-            analyticsSource: f,
+            analyticsSource: I,
             filters: S ? A : void 0,
             guildId: x,
             isTryItOut: S
         })
-    }, [x, f, S]);
+    }, [x, I, S]);
     return (0, i.jsx)(u.A, {
         className: E,
         title: h,
@@ -53,7 +53,7 @@ function h(e) {
             className: m.NC,
             children: [(0, i.jsx)(b, {
                 className: a()({
-                    [m.yj]: I
+                    [m.yj]: f
                 }),
                 size: r.$n.Sizes.SMALL,
                 onClick: N,

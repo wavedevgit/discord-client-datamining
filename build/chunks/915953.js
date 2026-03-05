@@ -28,14 +28,14 @@ function o(e) {
         onMarkerRender: T,
         stickToMarkers: S,
         fieldLayout: C
-    } = t, [I] = s.useState(() => o()), f = h?.(), b = _(), N = g?.(), v = m?.(), j = A?.(), O = u?.(), R = (0, a.q)(t);
+    } = t, [f] = s.useState(() => o()), I = h?.(), b = _(), N = g?.(), v = m?.(), j = A?.(), O = u?.(), R = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: b,
             description: N,
             disabled: j,
-            initialValue: I,
-            value: f,
+            initialValue: f,
+            value: I,
             minValue: d,
             maxValue: c,
             defaultValue: O,

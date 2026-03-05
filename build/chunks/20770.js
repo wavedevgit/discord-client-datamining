@@ -29,7 +29,7 @@ function E(e) {
         navigateToHome: h,
         subscriptionGroup: E,
         renewalSkuId: S
-    } = e, C = (0, r.A)(t, 100), I = (0, g.PJ)(E.flags), f = I ? a.RR9 : a.nys, b = I ? p.intl.string(p.t["46YF2D"]) : p.intl.string(p.t.fFyGiA), N = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => I && null != N ? u.A.getGuild(N) : void 0, [N, I]), j = (0, s.bG)([_.A], () => {
+    } = e, C = (0, r.A)(t, 100), f = (0, g.PJ)(E.flags), I = f ? a.RR9 : a.nys, b = f ? p.intl.string(p.t["46YF2D"]) : p.intl.string(p.t.fFyGiA), N = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => f && null != N ? u.A.getGuild(N) : void 0, [N, f]), j = (0, s.bG)([_.A], () => {
         if (null != S) return _.A.get(S)
     }, [S]), O = (0, A.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
@@ -49,7 +49,7 @@ function E(e) {
                     children: [(0, i.jsxs)(a.Heading, {
                         variant: "heading-md/normal",
                         className: x.N4,
-                        children: [(0, i.jsx)(f, {
+                        children: [(0, i.jsx)(I, {
                             size: "xs",
                             color: "currentColor"
                         }), " ", b]

@@ -24,16 +24,16 @@ var i = n(627968),
     T = n(699443),
     S = n(934204),
     C = n(788868),
-    I = n(652215),
-    f = n(985018),
+    f = n(652215),
+    I = n(985018),
     b = n(342087),
     N = n(870378),
     v = n(8496);
 let j = {
         [E.KS]: {
-            title: f.t.sfGgOG,
-            body: f.t.igiSKe,
-            bodyWithExpiration: f.t.w8CXUl,
+            title: I.t.sfGgOG,
+            body: I.t.igiSKe,
+            bodyWithExpiration: I.t.w8CXUl,
             redemptionURL: "https://steelseries.com/",
             logos: {
                 dark: (0, i.jsx)(T.a1, {}),
@@ -42,9 +42,9 @@ let j = {
             asset: v.A
         },
         [E.Cs]: {
-            title: f.t["9N8obd"],
-            body: f.t["34g+Z3"],
-            bodyWithExpiration: f.t.rqmpXc,
+            title: I.t["9N8obd"],
+            body: I.t["34g+Z3"],
+            bodyWithExpiration: I.t.rqmpXc,
             redemptionURL: "https://www.kontrolfreek.com/",
             logos: {
                 dark: (0, i.jsx)(T.WF, {}),
@@ -82,11 +82,11 @@ let j = {
                 }), o, (0, i.jsx)(l.$nd, {
                     variant: "overlay-primary",
                     size: "sm",
-                    text: f.intl.formatToPlainString(f.t.DF68t7, {
+                    text: I.intl.formatToPlainString(I.t.DF68t7, {
                         redemptionURL: t.redemptionURL
                     }),
                     onClick: () => {
-                        window.open(t.redemptionURL, "_blank"), c.default.track(I.HAw.RECURRING_PROMOTION_CLAIMED)
+                        window.open(t.redemptionURL, "_blank"), c.default.track(f.HAw.RECURRING_PROMOTION_CLAIMED)
                     }
                 })]
             })
@@ -110,11 +110,11 @@ let j = {
                         children: [(0, i.jsx)(l.DZT, {
                             variant: "heading-lg/semibold",
                             color: "text-strong",
-                            children: f.intl.string(n.title)
+                            children: I.intl.string(n.title)
                         }), (0, i.jsx)(l.DZT, {
                             variant: "heading-sm/medium",
                             color: "text-subtle",
-                            children: f.intl.string(n.body)
+                            children: I.intl.string(n.body)
                         })]
                     })]
                 }), (0, i.jsx)("div", {
@@ -164,13 +164,13 @@ let j = {
                                 children: [(0, i.jsx)(l.DZT, {
                                     variant: "heading-lg/semibold",
                                     color: "text-strong",
-                                    children: f.intl.string(e.title)
+                                    children: I.intl.string(e.title)
                                 }), (0, i.jsx)(l.DZT, {
                                     variant: "heading-sm/medium",
                                     color: "text-subtle",
-                                    children: n ? f.intl.format(f.t.i2EuFO, {
-                                        helpdeskArticle: u.A.getArticleURL(I.MVz.RECURRING_PROMOTION)
-                                    }) : s ? f.intl.string(e.body) : f.intl.format(e.bodyWithExpiration, {
+                                    children: n ? I.intl.format(I.t.i2EuFO, {
+                                        helpdeskArticle: u.A.getArticleURL(f.MVz.RECURRING_PROMOTION)
+                                    }) : s ? I.intl.string(e.body) : I.intl.format(e.bodyWithExpiration, {
                                         date: e.endDate
                                     })
                                 })]
@@ -179,12 +179,12 @@ let j = {
                                 variant: "critical-secondary",
                                 size: "sm",
                                 disabled: !0,
-                                text: f.intl.string(f.t["8LKchl"])
+                                text: I.intl.string(I.t["8LKchl"])
                             }) : (0, i.jsx)(l.$nd, {
                                 icon: l.XAi,
                                 variant: "overlay-primary",
                                 size: "sm",
-                                text: f.intl.string(f.t.vwASIl),
+                                text: I.intl.string(I.t.vwASIl),
                                 onClick: () => {
                                     (0, A.kd)({
                                         promotionId: e.id,
@@ -215,7 +215,7 @@ let j = {
                 children: (0, i.jsx)(l.EYj, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: f.intl.string(f.t.rjjZxV)
+                    children: I.intl.string(I.t.rjjZxV)
                 })
             })]
         })
@@ -291,9 +291,9 @@ let j = {
             codesByPromotion: g
         });
         return (0, i.jsx)(l.Modal, {
-            title: f.intl.string(f.t["7ioAjs"]),
-            subtitle: f.intl.format(f.t.LOYRxB, {
-                helpCenterLink: u.A.getArticleURL(I.MVz.RECURRING_PROMOTION)
+            title: I.intl.string(I.t["7ioAjs"]),
+            subtitle: I.intl.format(I.t.LOYRxB, {
+                helpCenterLink: u.A.getArticleURL(f.MVz.RECURRING_PROMOTION)
             }),
             actions: [],
             preview: (() => {
@@ -319,7 +319,7 @@ let j = {
                     children: (0, i.jsx)(l.EYj, {
                         variant: "text-md/medium",
                         color: "text-subtle",
-                        children: f.intl.format(f.t["43kZKL"], {
+                        children: I.intl.format(I.t["43kZKL"], {
                             days: n - t.getDate()
                         })
                     })
@@ -347,7 +347,7 @@ let j = {
         let {
             analyticsLocations: t
         } = e;
-        c.default.track(I.HAw.RECURRING_PROMOTION_MODAL_OPENED, {
+        c.default.track(f.HAw.RECURRING_PROMOTION_MODAL_OPENED, {
             location_stack: t
         }), h.Ay.fetchActivePromotions(), (0, r.mMO)(async () => {
             let {

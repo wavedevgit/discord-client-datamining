@@ -25,8 +25,8 @@ var i = n(627968),
     T = n(189081),
     S = n(954571),
     C = n(583613),
-    I = n(723702),
-    f = n(544028),
+    f = n(723702),
+    I = n(544028),
     b = n(790174),
     N = n(652215),
     v = n(650583),
@@ -35,10 +35,10 @@ var i = n(627968),
     R = n(976092),
     y = n(20976),
     P = n(473169);
-let L = r.Ay.connectStores([f.A], () => ({
-        theme: f.A.theme
+let L = r.Ay.connectStores([I.A], () => ({
+        theme: I.A.theme
     }))(c.ppr),
-    D = (0, I.isWindows)();
+    D = (0, f.isWindows)();
 
 function G(e) {
     let {
@@ -86,19 +86,19 @@ function M(e) {
         isOverride: A,
         subgames: p,
         isSubgame: C = !1,
-        parentGame: I
-    } = e, f = (0, r.cf)([m.Ay, E.A, T.A], () => (0, m.xU)(t, m.Ay, E.A, T.A)), {
+        parentGame: f
+    } = e, I = (0, r.cf)([m.Ay, E.A, T.A], () => (0, m.xU)(t, m.Ay, E.A, T.A)), {
         canToggleDetection: b,
         isCurrentGameDetectionEnabled: R
     } = (0, r.cf)([m.Ay], () => ({
-        canToggleDetection: null == I || m.Ay.isDetectionEnabled(I),
-        isCurrentGameDetectionEnabled: m.Ay.isDetectionEnabled(f)
-    })), P = (0, r.bG)([m.Ay], () => m.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(f) ? C ? f.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
-        subgameName: f.gameName
-    }) : f.name, [f, C]), [k, V] = s.useState(U ?? "???"), w = a()(y.tR, {
+        canToggleDetection: null == f || m.Ay.isDetectionEnabled(f),
+        isCurrentGameDetectionEnabled: m.Ay.isDetectionEnabled(I)
+    })), P = (0, r.bG)([m.Ay], () => m.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(I) ? C ? I.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+        subgameName: I.gameName
+    }) : I.name, [I, C]), [k, V] = s.useState(U ?? "???"), w = a()(y.tR, {
         [O.LO]: !l,
         [O.Rw]: l,
-        [O.FB]: null != f && l,
+        [O.FB]: null != I && l,
         [O.xL]: C,
         [O.fG]: null != p && p.length > 0
     });
@@ -123,21 +123,21 @@ function M(e) {
                 }, {
                     text: j.intl.string(j.t.Fmjztz),
                     onClick: () => {
-                        u.A.toggleDetection(f), t.onClose()
+                        u.A.toggleDetection(I), t.onClose()
                     },
                     variant: "primary"
                 }]
             })
-        }) : u.A.toggleDetection(f)
+        }) : u.A.toggleDetection(I)
     }
-    let B = null != P && (0, m.Es)(f) === (0, m.Es)(P),
-        Y = null != I && I.id === P?.id || B || null != p && p.some(e => e.id === P?.id);
+    let B = null != P && (0, m.Es)(I) === (0, m.Es)(P),
+        Y = null != f && f.id === P?.id || B || null != p && p.some(e => e.id === P?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: w,
             children: [(0, i.jsxs)("div", {
                 className: a()(O.$K, y.Vd),
-                children: [f.verified && !A ? (0, i.jsxs)("div", {
+                children: [I.verified && !A ? (0, i.jsxs)("div", {
                     className: O.HS,
                     children: [(0, i.jsx)("div", {
                         className: O.mO,
@@ -162,7 +162,7 @@ function M(e) {
                     maxLength: 128,
                     value: k,
                     onBlur: function() {
-                        f.name !== k && u.A.editName(f, k)
+                        I.name !== k && u.A.editName(I, k)
                     },
                     onKeyDown: function(e) {
                         e.key === v.dh.ENTER && (e.currentTarget.blur(), e.preventDefault())
@@ -172,7 +172,7 @@ function M(e) {
                     let e, {
                         played: t,
                         exePath: n
-                    } = f;
+                    } = I;
                     return l || B ? e = j.intl.string(j.t.VbV5dv) : null != t && "" !== t && (e = j.intl.format(j.t["gGeOE+"], {
                         when: t
                     })), (0, i.jsx)("div", {
@@ -192,10 +192,10 @@ function M(e) {
                         className: O.ym,
                         onClick: function() {
                             if (L) return;
-                            let e = null != f.id ? E.A.getDetectableGame(f.id) : null;
+                            let e = null != I.id ? E.A.getDetectableGame(I.id) : null;
                             S.default.track(N.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
-                                game_name: (0, x.n1)(f) ? f.gameName : f.name
+                                game_name: (0, x.n1)(I) ? I.gameName : I.name
                             }), G(!0), (0, c.mMO)(async () => {
                                 let {
                                     default: t
@@ -203,8 +203,8 @@ function M(e) {
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     detectedActivity: {
-                                        name: f.name ?? "",
-                                        application_id: e?.id ?? f.id ?? void 0,
+                                        name: I.name ?? "",
+                                        application_id: e?.id ?? I.id ?? void 0,
                                         type: N.$pd.PLAYING
                                     },
                                     onSubmitted: () => {}
@@ -222,7 +222,7 @@ function M(e) {
             }), function() {
                 let {
                     detectable: e
-                } = f, t = e && b ? (0, i.jsx)(c.bMW, {
+                } = I, t = e && b ? (0, i.jsx)(c.bMW, {
                     size: "md",
                     color: "currentColor",
                     className: O.Lj,
@@ -246,11 +246,11 @@ function M(e) {
                     })
                 })
             }(), function() {
-                if (!D || null != I) return null;
+                if (!D || null != f) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
-                } = f, n = e ? (0, i.jsx)(c.kN9, {
+                } = I, n = e ? (0, i.jsx)(c.kN9, {
                     size: "md",
                     color: "currentColor",
                     className: O.Lj,
@@ -275,7 +275,7 @@ function M(e) {
                             className: O.ym,
                             onClick: () => {
                                 var t;
-                                return t = !e, void u.A.toggleOverlay(f, t, t)
+                                return t = !e, void u.A.toggleOverlay(I, t, t)
                             },
                             children: n
                         })
@@ -284,7 +284,7 @@ function M(e) {
             }(), l && !A || Y ? null : (0, i.jsx)(_.A, {
                 className: O.LS,
                 onClick: function() {
-                    u.A.deleteEntry(f), p?.forEach(e => {
+                    u.A.deleteEntry(I), p?.forEach(e => {
                         u.A.deleteEntry(e)
                     })
                 }
@@ -296,7 +296,7 @@ function M(e) {
                     rawGame: e,
                     isOverride: !1,
                     isSubgame: !0,
-                    parentGame: f
+                    parentGame: I
                 }), t !== p.length - 1 && (0, i.jsx)("div", {
                     className: O.PQ
                 })]

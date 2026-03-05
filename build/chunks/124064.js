@@ -31,11 +31,11 @@ function E(e) {
         placeholder: E,
         currentBio: T,
         disabled: S = !1
-    } = e, [C, I] = s.useState(u ?? T), [f, b] = s.useState((0, r.x7)(C)), N = s.useRef(T), v = s.useRef(!1);
+    } = e, [C, f] = s.useState(u ?? T), [I, b] = s.useState((0, r.x7)(C)), N = s.useRef(T), v = s.useRef(!1);
     return s.useEffect(() => {
         if (N.current !== T) {
             let e = (0, r.x7)(T);
-            I(T), b(e)
+            f(T), b(e)
         }
         N.current = T
     }, [T]), (0, i.jsxs)(_.A, {
@@ -51,12 +51,12 @@ function E(e) {
             innerClassName: A.Z,
             maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
-                t !== C && (I(t), b(n), d(t))
+                t !== C && (f(t), b(n), d(t))
             },
             placeholder: E,
             channel: p,
             textValue: C,
-            richValue: f,
+            richValue: I,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
             type: a.oU.PROFILE_BIO_INPUT,

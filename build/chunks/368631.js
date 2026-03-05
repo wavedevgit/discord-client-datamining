@@ -25,8 +25,8 @@ var i = n(627968),
     T = n(3137),
     S = n(454292),
     C = n(704591),
-    I = n(682829),
-    f = n(103738),
+    f = n(682829),
+    I = n(103738),
     b = n(745109),
     N = n(890164),
     v = n(836602),
@@ -100,8 +100,8 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
             searchParams: eT,
             numOfPendingFamilyRequests: eS,
             isOverlaySupported: eC,
-            shouldMergeGameSettings: eI,
-            isStaff: ef,
+            shouldMergeGameSettings: ef,
+            isStaff: eI,
             isInappropriateConversationWarningEnabled: eb,
             isInapproprateConversationsDefaultOn: eN,
             paymentsBlocked: ev,
@@ -233,7 +233,7 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 label: eu.intl.string(eu.t.URyqtP),
                 ariaLabel: eu.intl.string(eu.t.URyqtP),
                 element: er.A,
-                predicate: () => eI
+                predicate: () => ef
             },
             [ed.H.GAMES_MY_GAMES]: {
                 section: ec.nc_.GAMES,
@@ -261,7 +261,7 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 newIndicatorDismissibleContentTypes: [...ep()],
                 notice: {
                     stores: [v.A],
-                    element: f.A
+                    element: I.A
                 },
                 onSettingsClose: () => {
                     (0, c.F7)(), u.A.clearSubsection(ec.nc_.PROFILE_CUSTOMIZATION)
@@ -578,7 +578,7 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 ariaLabel: eu.intl.string(eu.t.trSpHX),
                 searchableTitles: [eu.intl.string(eu.t.trSpHX)],
                 label: eu.intl.string(eu.t.trSpHX),
-                element: I.A,
+                element: f.A,
                 icon: x ? (0, i.jsx)(o.EpV, {
                     size: "xs",
                     color: a.A.unsafe_rawColors.YELLOW_300.css
@@ -1021,36 +1021,36 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 label: eu.intl.string(eu.t.Cq98yL),
                 ariaLabel: eu.intl.string(eu.t.Cq98yL),
                 element: V.Ay,
-                predicate: () => !eI
+                predicate: () => !ef
             },
             [ed.H.ACTIVITY_PRIVACY_STATUS]: {
-                section: eI ? ec.nc_.GAMES : ec.nc_.ACTIVITY_PRIVACY,
+                section: ef ? ec.nc_.GAMES : ec.nc_.ACTIVITY_PRIVACY,
                 searchableTitles: [eu.intl.string(eu.t["8ka8li"])],
-                parent: eI ? ed.H.GAMES_ACTIVITY_PRIVACY : ed.H.ACTIVITY_PRIVACY
+                parent: ef ? ed.H.GAMES_ACTIVITY_PRIVACY : ed.H.ACTIVITY_PRIVACY
             },
             [ed.H.ACTIVITY_PRIVACY_RICH_PRESENCE]: {
-                section: eI ? ec.nc_.GAMES : ec.nc_.ACTIVITY_PRIVACY,
+                section: ef ? ec.nc_.GAMES : ec.nc_.ACTIVITY_PRIVACY,
                 searchableTitles: [eu.intl.string(eu.t.VOszPA)],
-                parent: eI ? ed.H.GAMES_ACTIVITY_PRIVACY : ed.H.ACTIVITY_PRIVACY
+                parent: ef ? ed.H.GAMES_ACTIVITY_PRIVACY : ed.H.ACTIVITY_PRIVACY
             },
             [ed.H.ACTIVITY_PRIVACY_TOS]: {
-                section: eI ? ec.nc_.GAMES : ec.nc_.ACTIVITY_PRIVACY,
+                section: ef ? ec.nc_.GAMES : ec.nc_.ACTIVITY_PRIVACY,
                 searchableTitles: [""],
-                parent: eI ? ed.H.GAMES_ACTIVITY_PRIVACY : ed.H.ACTIVITY_PRIVACY
+                parent: ef ? ed.H.GAMES_ACTIVITY_PRIVACY : ed.H.ACTIVITY_PRIVACY
             },
             [ed.H.REGISTERED_GAMES]: {
                 section: ec.nc_.REGISTERED_GAMES,
                 searchableTitles: [eu.intl.string(eu.t.AVDyEj)],
                 label: eu.intl.string(eu.t.AVDyEj),
                 element: Z.Ay,
-                predicate: () => !eI && (0, ea.Pi)()
+                predicate: () => !ef && (0, ea.Pi)()
             },
             [ed.H.OVERLAY]: {
                 section: ec.nc_.OVERLAY,
                 searchableTitles: [eu.intl.string(eu.t["9cb1Uz"]), eu.intl.string(eu.t.HcoRu0)],
                 label: eu.intl.string(eu.t["9cb1Uz"]),
                 element: $.Ay,
-                predicate: () => !eI && eC
+                predicate: () => !ef && eC
             },
             [ed.H.CHANGELOG]: {
                 section: "changelog",
@@ -1159,7 +1159,7 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Always deliver ads"],
                 parent: ed.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
@@ -1177,7 +1177,7 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Idle Status Indicator"],
                 parent: ed.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
@@ -1189,43 +1189,43 @@ let eA = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["CSS Debugging"],
                 parent: ed.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Highlight Mana Components"],
                 parent: ed.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Highlight Void Toggleable Components"],
                 parent: ed.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Layout Debugging"],
                 parent: ed.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Layout Debugging"],
                 parent: ed.H.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-                predicate: () => ef && j.A.isDeveloper && O.default.layoutDebuggingEnabled
+                predicate: () => eI && j.A.isDeveloper && O.default.layoutDebuggingEnabled
             },
             [ed.H.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Preview Unpublished Collections"],
                 parent: ed.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,
                 searchableTitles: ["Disable App Collections Cache"],
                 parent: ed.H.DEVELOPER_OPTIONS_FLAGS_TAB,
-                predicate: () => ef && j.A.isDeveloper
+                predicate: () => eI && j.A.isDeveloper
             },
             [ed.H.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE]: {
                 section: ec.nc_.DEVELOPER_OPTIONS,

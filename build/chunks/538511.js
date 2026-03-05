@@ -1,7 +1,7 @@
 /** chunk id: 538511, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => q,
-    i: () => Z
+    A: () => Z,
+    i: () => K
 });
 var i = n(627968);
 n(64700);
@@ -24,8 +24,8 @@ var s = n(503698),
     T = n(481354),
     S = n(85563),
     C = n(739508),
-    I = n(203982),
-    f = n(927578),
+    f = n(203982),
+    I = n(927578),
     b = n(83617),
     N = n(615396),
     v = n(526292),
@@ -42,76 +42,24 @@ var s = n(503698),
     k = n(601107),
     V = n(985018),
     w = n(688142),
-    H = n(282151),
-    B = n(241988);
-let Y = new A.A("SubscriptionHeader.tsx"),
-    F = {
+    H = n(282151);
+let B = new A.A("SubscriptionHeader.tsx"),
+    Y = {
         page: U.liQ.USER_SETTINGS,
         section: U.JJy.SETTINGS_PREMIUM,
         object: U.ZSU.CARD
     },
-    z = [U.Dmq.PAUSED, U.Dmq.PAUSE_PENDING, U.Dmq.BILLING_RETRY];
+    F = [U.Dmq.PAUSED, U.Dmq.PAUSE_PENDING, U.Dmq.BILLING_RETRY];
 
-function X(e) {
+function z(e) {
     let {
         wordMark: t,
         subscriptionInfo: n,
         buttons: s,
         statusClasses: a,
         shouldUseDiscountMarketing: r,
-        discountAmount: o,
-        premiumType: d
+        discountAmount: o
     } = e;
-    if (!0 === (0, y.g1)({
-            location: "PremiumBanner"
-        })) {
-        let e;
-        switch (d) {
-            case M.PremiumTypes.TIER_0:
-                e = V.intl.string(V.t["t9uG/o"]);
-                break;
-            case M.PremiumTypes.TIER_1:
-                e = V.intl.string(V.t.FSOz78);
-                break;
-            case M.PremiumTypes.TIER_2:
-                e = V.intl.string(V.t.lG6a5x)
-        }
-        let t = d === M.PremiumTypes.TIER_2 ? "nitro-pink" : "nitro-green";
-        return (0, i.jsxs)(c.hLv, {
-            color: t,
-            className: w.vK,
-            children: [(0, i.jsx)("div", {
-                className: w.U_,
-                children: (0, i.jsx)(c.Heading, {
-                    variant: "heading-md/semibold",
-                    className: w.aq,
-                    children: e
-                })
-            }), (0, i.jsx)(c.cGx, {
-                gap: 8
-            }), (0, i.jsxs)("div", {
-                className: w.hL,
-                children: [(0, i.jsxs)("div", {
-                    className: w.IH,
-                    children: [(0, i.jsx)(c.Heading, {
-                        variant: "heading-xl/semibold",
-                        children: V.intl.string(V.t.lpNrPu)
-                    }), (0, i.jsx)(c.Text, {
-                        variant: "text-md/normal",
-                        children: n
-                    }), (0, i.jsx)("div", {
-                        children: s
-                    })]
-                }), (0, i.jsx)("div", {
-                    className: w.l2,
-                    children: (0, i.jsx)("img", {
-                        src: B,
-                        alt: ""
-                    })
-                })]
-            })]
-        })
-    }
     return (0, i.jsxs)("div", {
         className: l()(H.vK, a),
         children: [(0, i.jsx)("div", {
@@ -141,66 +89,15 @@ function X(e) {
     })
 }
 
-function W(e) {
+function X(e) {
     let {
         wordMark: t,
         subscriptionInfo: n,
         buttons: s,
         statusClasses: a,
         shouldUseDiscountMarketing: r,
-        discountAmount: o,
-        premiumType: d
+        discountAmount: o
     } = e;
-    if (!0 === (0, y.g1)({
-            location: "PremiumBanner"
-        })) {
-        let e;
-        switch (d) {
-            case M.PremiumTypes.TIER_0:
-                e = V.intl.string(V.t["t9uG/o"]);
-                break;
-            case M.PremiumTypes.TIER_1:
-                e = V.intl.string(V.t.FSOz78);
-                break;
-            case M.PremiumTypes.TIER_2:
-                e = V.intl.string(V.t.lG6a5x)
-        }
-        let t = d === M.PremiumTypes.TIER_2 ? "nitro-pink" : "nitro-green";
-        return (0, i.jsxs)(c.hLv, {
-            color: t,
-            className: w.vK,
-            children: [(0, i.jsx)("div", {
-                className: w.U_,
-                children: (0, i.jsx)(c.Heading, {
-                    variant: "heading-md/semibold",
-                    className: w.aq,
-                    children: e
-                })
-            }), (0, i.jsx)(c.cGx, {
-                gap: 8
-            }), (0, i.jsxs)("div", {
-                className: w.hL,
-                children: [(0, i.jsxs)("div", {
-                    className: w.IH,
-                    children: [(0, i.jsx)(c.Heading, {
-                        variant: "heading-xl/semibold",
-                        children: V.intl.string(V.t.lpNrPu)
-                    }), (0, i.jsx)(c.Text, {
-                        variant: "text-md/normal",
-                        children: n
-                    }), (0, i.jsx)("div", {
-                        children: s
-                    })]
-                }), (0, i.jsx)("div", {
-                    className: w.l2,
-                    children: (0, i.jsx)("img", {
-                        src: B,
-                        alt: ""
-                    })
-                })]
-            })]
-        })
-    }
     return (0, i.jsxs)("div", {
         className: l()(H.vK, a, H.uR),
         children: [(0, i.jsx)("div", {
@@ -233,7 +130,7 @@ function W(e) {
     })
 }
 
-function K() {
+function W() {
     return (0, i.jsxs)("div", {
         className: H.Up,
         children: [(0, i.jsx)(S.A, {
@@ -245,13 +142,12 @@ function K() {
     })
 }
 
-function Z() {
+function K() {
     let {
         analyticsLocations: e
     } = (0, g.Ay)(_.A.ACCOUNT_CREDIT_BANNER);
-    return (0, i.jsx)(X, {
-        wordMark: (0, i.jsx)(K, {}),
-        premiumType: M.PremiumTypes.TIER_1,
+    return (0, i.jsx)(z, {
+        wordMark: (0, i.jsx)(W, {}),
         subscriptionInfo: (0, i.jsx)("div", {
             className: H.MS,
             children: V.intl.string(V.t.R0GJL2)
@@ -261,7 +157,7 @@ function Z() {
             onClick: () => (0, p.A)({
                 subscriptionTier: M.pe.TIER_1,
                 analyticsLocations: e,
-                analyticsObject: F
+                analyticsObject: Y
             }),
             text: V.intl.string(V.t["/ygMUY"])
         }),
@@ -270,14 +166,14 @@ function Z() {
         }
     })
 }
-let q = function(e) {
+let Z = function(e) {
     let {
         subscription: t,
         currentInvoicePreview: s,
         renewalInvoicePreview: a,
         paymentSource: A,
         busy: L,
-        analyticsLocation: B
+        analyticsLocation: K
     } = e, {
         analyticsLocations: Z
     } = (0, g.Ay)(_.A.SUBSCRIPTION_HEADER), q = (0, m.A)({
@@ -312,7 +208,7 @@ let q = function(e) {
                 return n => (0, i.jsx)(s, {
                     ...n,
                     premiumSubscription: t,
-                    analyticsLocation: B,
+                    analyticsLocation: K,
                     analyticsLocations: Z,
                     initialStep: e
                 })
@@ -321,15 +217,15 @@ let q = function(e) {
         ed = () => {
             if (null != t && null != t.premiumPlanIdFromItems) {
                 let e = E.A.get(t.premiumPlanIdFromItems);
-                if (null == e) return void Y.info(`Plan not fetched for plan id: ${t.premiumPlanIdFromItems}`);
+                if (null == e) return void B.info(`Plan not fetched for plan id: ${t.premiumPlanIdFromItems}`);
                 let l = (0, b._w)(e, A?.id, !1),
                     d = l.length > 0 ? l[0] : t.currency,
                     u = !0;
                 if (1 === l.length && A?.id === t.paymentSourceId && (0, b.jJ)(e.id, d, A?.id) && (u = !1), u)(0, p.A)({
                     initialPlanId: t.premiumPlanIdFromItems,
                     analyticsLocations: Z,
-                    analyticsLocation: B,
-                    analyticsObject: F,
+                    analyticsLocation: K,
+                    analyticsObject: Y,
                     subscription: t
                 });
                 else {
@@ -346,14 +242,14 @@ let q = function(e) {
                             currentInvoicePreview: s,
                             renewalInvoicePreview: a,
                             onClose: async () => {
-                                l || (l = !0, I._.dispatch(U.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), O.A.isDisplayingWowMomentConfirmation && O.A.isAnimated ? setTimeout(() => {
+                                l || (l = !0, f._.dispatch(U.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), O.A.isDisplayingWowMomentConfirmation && O.A.isAnimated ? setTimeout(() => {
                                     n.onClose()
                                 }, h.K) : await n.onClose())
                             }
                         })
                     }, {
                         onCloseRequest: () => {
-                            l || (l = !0, I._.dispatch(U.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), O.A.isDisplayingWowMomentConfirmation && O.A.isAnimated ? setTimeout(() => {
+                            l || (l = !0, f._.dispatch(U.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), O.A.isDisplayingWowMomentConfirmation && O.A.isAnimated ? setTimeout(() => {
                                 (0, c.OoC)(e)
                             }, h.K) : (0, c.OoC)(e))
                         },
@@ -363,11 +259,11 @@ let q = function(e) {
             }
         },
         ec = () => {
-            z.includes(t.status) && null != t.pauseEndsAt ? t.status === U.Dmq.PAUSED && t.pauseReason !== k.qf.USER_TEMPORARY_BAN ? (0, p.A)({
+            F.includes(t.status) && null != t.pauseEndsAt ? t.status === U.Dmq.PAUSED && t.pauseReason !== k.qf.USER_TEMPORARY_BAN ? (0, p.A)({
                 initialPlanId: t.premiumPlanIdFromItems,
                 analyticsLocations: Z,
-                analyticsLocation: B,
-                analyticsObject: F,
+                analyticsLocation: K,
+                analyticsObject: Y,
                 subscription: t,
                 skipConfirm: !0
             }) : u.U(t, Z) : (0, C.pM)(Error("Invalid subscription to resume"), {
@@ -384,10 +280,10 @@ let q = function(e) {
         e_ = () => {
             eo(G.g.WHAT_YOU_LOSE)
         },
-        eg = f.Ay.getPlanIdFromInvoice(t, s);
+        eg = I.Ay.getPlanIdFromInvoice(t, s);
     if ((0, x.m1)(eg)) return null;
-    let em = f.Ay.getStatusFromInvoice(t, s),
-        eA = f.Ay.getPremiumType(eg),
+    let em = I.Ay.getStatusFromInvoice(t, s),
+        eA = I.Ay.getPremiumType(eg),
         eh = {
             [H.Vd]: eA === M.PremiumTypes.TIER_0,
             [H.aS]: eA === M.PremiumTypes.TIER_1,
@@ -395,7 +291,7 @@ let q = function(e) {
             [H.aD]: em === U.Dmq.CANCELED,
             [H.WY]: em === U.Dmq.PAUSE_PENDING,
             [H.Ft]: em === U.Dmq.PAUSED && !Q,
-            [H.GD]: (0, f.PK)(em)
+            [H.GD]: (0, I.PK)(em)
         },
         ep = null;
     switch (eA) {
@@ -411,7 +307,7 @@ let q = function(e) {
             });
             break;
         case M.PremiumTypes.TIER_1:
-            ep = (0, i.jsx)(K, {});
+            ep = (0, i.jsx)(W, {});
             break;
         case M.PremiumTypes.TIER_2:
             ep = (0, i.jsx)(T.A, {
@@ -419,14 +315,14 @@ let q = function(e) {
                 "aria-label": V.intl.string(V.t.lpNrPu)
             })
     }
-    let ex = z.includes(t.status) && !Q ? W : X;
+    let ex = F.includes(t.status) && !Q ? X : z;
     return (0, i.jsx)(ex, {
         wordMark: ep,
         subscriptionInfo: (r()(null != s, "Expected currentInvoicePreview"), (0, i.jsx)("div", {
             className: H.MS,
             children: es ? V.intl.format(V.t["/SfHwl"], {
                 weeks: 1
-            }) : (0, f.nB)({
+            }) : (0, I.nB)({
                 planId: eg,
                 subscription: t,
                 renewalInvoicePreview: s,
@@ -443,7 +339,7 @@ let q = function(e) {
                     location: "renderButtons"
                 })) {
                 if (t.isPurchasedExternally) {
-                    let e = (0, f.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
+                    let e = (0, I.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
                     return (0, i.jsx)(c.MzZ, {
                         href: e,
                         useDefaultUnderlineStyles: !1,
@@ -456,7 +352,7 @@ let q = function(e) {
                         })
                     })
                 }
-                if (f.Ay.isBaseSubscriptionCanceled(t)) return (0, i.jsx)(c.Button, {
+                if (I.Ay.isBaseSubscriptionCanceled(t)) return (0, i.jsx)(c.Button, {
                     variant: "expressive",
                     size: "md",
                     icon: c.tvc,
@@ -528,7 +424,7 @@ let q = function(e) {
                 }
             }
             if (t.isPurchasedExternally) {
-                let e = (0, f.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
+                let e = (0, I.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
                 return (0, i.jsx)(c.MzZ, {
                     href: e,
                     useDefaultUnderlineStyles: !1,
@@ -542,8 +438,8 @@ let q = function(e) {
             }
 
             function n() {
-                let e = f.Ay.isSwitchingPlansDisabled(t),
-                    n = f.Ay.getSwitchingPlansDisabledMessage(t);
+                let e = I.Ay.isSwitchingPlansDisabled(t),
+                    n = I.Ay.getSwitchingPlansDisabledMessage(t);
                 if (!0 === (0, y.g1)({
                         location: "renderButtons"
                     })) {
@@ -571,8 +467,8 @@ let q = function(e) {
                                 onClick: () => {
                                     (0, p.A)({
                                         analyticsLocations: Z,
-                                        analyticsLocation: B,
-                                        analyticsObject: F,
+                                        analyticsLocation: K,
+                                        analyticsObject: Y,
                                         subscription: t
                                     })
                                 },
@@ -616,8 +512,8 @@ let q = function(e) {
                             onClick: () => {
                                 (0, p.A)({
                                     analyticsLocations: Z,
-                                    analyticsLocation: B,
-                                    analyticsObject: F,
+                                    analyticsLocation: K,
+                                    analyticsObject: Y,
                                     subscription: t
                                 })
                             },
@@ -626,7 +522,7 @@ let q = function(e) {
                     })]
                 })
             }
-            if (f.Ay.isBaseSubscriptionCanceled(t)) return (0, i.jsx)("div", {
+            if (I.Ay.isBaseSubscriptionCanceled(t)) return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: H.au,
                 children: (0, i.jsx)(c.Button, {
@@ -711,7 +607,6 @@ let q = function(e) {
         })(),
         statusClasses: eh,
         shouldUseDiscountMarketing: en,
-        discountAmount: et,
-        premiumType: eA
+        discountAmount: et
     })
 }

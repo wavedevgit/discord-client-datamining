@@ -23,8 +23,8 @@ var i = n(627968),
     T = n(500470),
     S = n(153739),
     C = n(834981),
-    I = n(607822),
-    f = n(254847),
+    f = n(607822),
+    I = n(254847),
     b = n(436805),
     N = n(773349),
     v = n(283900),
@@ -72,7 +72,7 @@ function k(e) {
         isMoreLoading: h
     } = (0, p.A)({
         onError: n
-    }), T = (0, A.kN)().get(t), [S, C] = s.useState(y.PH), I = s.useCallback(() => {
+    }), T = (0, A.kN)().get(t), [S, C] = s.useState(y.PH), f = s.useCallback(() => {
         C(e => e + y.PH), _(t)
     }, [t, _]);
     o()(T, `No text for action type: ${t}`);
@@ -89,7 +89,7 @@ function k(e) {
                     subText: t
                 }, n.event_id)
             }
-            if ((0, A.Is)(n)) return (0, i.jsx)(f.A, {
+            if ((0, A.Is)(n)) return (0, i.jsx)(I.A, {
                 guildId: n.entity_id
             }, n.event_id);
             if ((0, A.u7)(n)) {
@@ -131,7 +131,7 @@ function k(e) {
             className: a()(G.FQ, {
                 [G.r9]: h
             }),
-            onClick: I,
+            onClick: f,
             role: "button",
             "aria-disabled": h,
             children: h ? (0, i.jsx)(u.y$y, {
@@ -261,7 +261,7 @@ let H = () => {
                         className: G.O2,
                         children: e.map(e => {
                             let [t, n] = e;
-                            return (0, i.jsx)(I.A, {
+                            return (0, i.jsx)(f.A, {
                                 displayType: t,
                                 header: n.tooltipHeader()
                             }, `counter-${t}`)

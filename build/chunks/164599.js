@@ -28,8 +28,8 @@ function T(e) {
         className: T,
         sectionTitle: S,
         forcedDivider: C = !1,
-        withTutorial: I = !1,
-        showBorder: f = !1
+        withTutorial: f = !1,
+        showBorder: I = !1
     } = e, {
         analyticsLocations: b
     } = (0, d.Ay)(), N = _.Ay.canUsePremiumProfileCustomization(t), v = (0, g.N2)({
@@ -45,13 +45,13 @@ function T(e) {
             location_stack: b
         })
     }, [N, b]);
-    let R = I ? o.wLn : r.$n;
+    let R = f ? o.wLn : r.$n;
     return (0, i.jsx)(m.A, {
         forcedDivider: C,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
         title: S,
-        showBorder: f,
+        showBorder: I,
         errors: O,
         className: T,
         children: (0, i.jsxs)("div", {
@@ -66,7 +66,7 @@ function T(e) {
                     })
                 },
                 className: a()({
-                    [E.yj]: I
+                    [E.yj]: f
                 }),
                 children: x.intl.string(x.t["/dRfCf"])
             }), (void 0 === j ? null != v : null != j) && (0, i.jsx)("div", {

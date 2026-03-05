@@ -32,8 +32,8 @@ function T() {
         [T, S] = s.useState(!1);
     if (null == e) return null;
     let C = (0, _.Oj)(t, e) || l,
-        I = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
-        f = C && I,
+        f = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
+        I = C && f,
         b = e.isStaff(),
         N = !e.verified;
     return (0, i.jsxs)(A.h, {
@@ -43,7 +43,7 @@ function T() {
             description: x.intl.format(x.t.P3kNfr, {
                 helpdeskArticle: u.A.getArticleURL(p.MVz.GDPR_REQUEST_DATA)
             })
-        }), f ? (0, i.jsx)(o.ZpM, {
+        }), I ? (0, i.jsx)(o.ZpM, {
             className: E.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",

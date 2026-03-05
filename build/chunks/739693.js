@@ -19,7 +19,7 @@ function g(e) {
         onSuccess: n,
         onClose: g,
         requirementsUpdated: m
-    } = e, [A, h] = s.useState(""), [p, x] = s.useState(""), [E, T] = s.useState(""), [S, C] = s.useState(null), [I, f] = s.useState(null), {
+    } = e, [A, h] = s.useState(""), [p, x] = s.useState(""), [E, T] = s.useState(""), [S, C] = s.useState(null), [f, I] = s.useState(null), {
         formState: b,
         errors: N
     } = (0, a.cf)([d.A], () => ({
@@ -29,7 +29,7 @@ function g(e) {
     async function j(e) {
         e.preventDefault(), (0, o.x8)();
         let t = !1;
-        if ("" === p ? (C(_.intl.string(_.t["/7/oPU"])), t = !0) : C(null), p !== E ? (f(_.intl.string(_.t["IEKYZ/"])), t = !0) : f(null), t) return;
+        if ("" === p ? (C(_.intl.string(_.t["/7/oPU"])), t = !0) : C(null), p !== E ? (I(_.intl.string(_.t["IEKYZ/"])), t = !0) : I(null), t) return;
         let i = await (0, o._L)({
             password: A,
             newPassword: p
@@ -76,7 +76,7 @@ function g(e) {
                     required: !0
                 }), (0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t.iQG2KC),
-                    error: I ?? void 0,
+                    error: f ?? void 0,
                     type: "password",
                     value: E,
                     onChange: T,

@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(320134),
     S = n(433809),
     C = n(428854),
-    I = n(259274),
-    f = n(531525),
+    f = n(259274),
+    I = n(531525),
     b = n(985018);
 
 function N() {
@@ -32,7 +32,7 @@ function N() {
         description: b.intl.format(b.t.N4jSgR, {
             learnMoreUrl: "https://support.discord.com/hc/articles/private-profiles"
         }),
-        webSetting: f.H.PRIVACY_PROFILE_VISIBILITY,
+        webSetting: I.H.PRIVACY_PROFILE_VISIBILITY,
         children: (0, i.jsx)(S.A, {})
     }) : null
 }
@@ -43,15 +43,15 @@ function v() {
         description: b.intl.format(b.t["/6sFWa"], {
             helpArticle: (0, o.aW)()
         }),
-        webSetting: f.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(I.A, {})]
+        webSetting: I.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
+        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(f.A, {})]
     })
 }
 
 function j() {
     return (0, i.jsx)(T.A, {
         title: b.intl.string(b.t.BG7QsQ),
-        webSetting: f.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
+        webSetting: I.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
         children: (0, i.jsx)(_.A, {})
     })
 }
@@ -59,9 +59,9 @@ function j() {
 function O() {
     return (0, i.jsxs)(T.A, {
         title: b.intl.string(b.t.SRZyHg),
-        webSetting: f.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
+        webSetting: I.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
         children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(m.A, {}), (0, i.jsx)(E.h, {
-            setting: f.H.PRIVACY_DATA_CLIPS,
+            setting: I.H.PRIVACY_DATA_CLIPS,
             children: (0, i.jsx)(r.A, {})
         }), (0, i.jsx)(g.z, {})]
     })

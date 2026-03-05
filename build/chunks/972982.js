@@ -1,6 +1,6 @@
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -64,7 +64,7 @@ class C extends s.PureComponent {
     }
 }
 
-function I(e) {
+function f(e) {
     let t = (0, r.bG)([g.default], () => g.default.getCurrentUser());
     a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
     let n = (0, r.cf)([_.A, u.default], () => ({

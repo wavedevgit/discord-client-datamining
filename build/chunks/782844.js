@@ -22,8 +22,8 @@ var i, s = n(627968),
     T = n(287809),
     S = n(954571),
     C = n(773669),
-    I = n(544028),
-    f = n(740625),
+    f = n(544028),
+    I = n(740625),
     b = n(524738),
     N = n(972982),
     v = n(36535),
@@ -96,7 +96,7 @@ class k extends l.PureComponent {
         let {
             subsection: e
         } = this.props;
-        return (0, s.jsx)(f.R, {
+        return (0, s.jsx)(I.R, {
             header: D.intl.string(D.t["JAIM/m"]),
             children: (0, s.jsx)(b.A, {
                 parentSetting: P.H.ACCOUNT,
@@ -127,7 +127,7 @@ class k extends l.PureComponent {
 let V = () => {
     let e = (0, o.bG)([T.default], () => T.default.getCurrentUser()),
         t = (0, o.bG)([x.A], () => x.A.hidePersonalInformation),
-        n = (0, o.bG)([I.A], () => I.A.theme),
+        n = (0, o.bG)([f.A], () => f.A.theme),
         i = (0, o.bG)([C.default], () => C.default.locale),
         l = (0, o.bG)([E.A], () => E.A.getSubsection());
     return null == e ? null : (0, s.jsx)(k, {

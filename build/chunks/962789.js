@@ -112,7 +112,7 @@ function C(e) {
     })
 }
 
-function I() {
+function f() {
     let e = u.Zk.useSetting();
     return (0, i.jsx)(h.h, {
         setting: x.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -127,7 +127,7 @@ function I() {
     })
 }
 
-function f() {
+function I() {
     let e = u.TA.useSetting(),
         t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
@@ -200,9 +200,9 @@ function j() {
             children: [(0, i.jsx)(N, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(I, {}), (0, i.jsx)("div", {
+                children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
                     className: S.yF
-                }), (0, i.jsx)(f, {})]
+                }), (0, i.jsx)(I, {})]
             })]
         })
     })

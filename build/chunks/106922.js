@@ -23,8 +23,8 @@ var i = n(627968),
     T = n(974544),
     S = n(736653),
     C = n(793574),
-    I = n(688810),
-    f = n(86379),
+    f = n(688810),
+    I = n(86379),
     b = n(531260),
     N = n(160946),
     v = n(459793),
@@ -313,10 +313,10 @@ function eA() {
     })
 }
 let eh = function() {
-    let e = (0, f.H)(),
+    let e = (0, I.H)(),
         {
             analyticsLocations: t
-        } = (0, I.Ay)(C.A.PREMIUM_SETTINGS),
+        } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
@@ -351,7 +351,7 @@ let eh = function() {
     });
     if (!k && !V && !w || o) return (0, i.jsx)(h.y$y, {});
     let H = !!l?.hasActiveTrial;
-    return (0, i.jsx)(I.f5, {
+    return (0, i.jsx)(f.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {

@@ -27,22 +27,22 @@ function S(e) {
         guildId: n,
         className: S
     } = e, C = g.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: I
+        analyticsLocations: f
     } = (0, o.Ay)(), {
-        userDisplayNameStyles: f,
+        userDisplayNameStyles: I,
         guildDisplayNameStyles: b,
         pendingDisplayNameStyles: N,
         pendingErrors: v
     } = (0, m.B0)(t, n), [j, O] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = j === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
         O(p.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
-            analyticsLocations: I,
+            analyticsLocations: f,
             guildId: n
         })
-    }, [I, O, n]), P = (0, s.useCallback)(() => {
+    }, [f, O, n]), P = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), L = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), D = void 0 !== N || (null != n ? null != b : null != f);
+    }, []), D = void 0 !== N || (null != n ? null != b : null != I);
     return (0, i.jsx)(A.A, {
         title: x.intl.string(E.default["86GtGH"]),
         titleIcon: R ? (0, i.jsx)(a.LpS, {

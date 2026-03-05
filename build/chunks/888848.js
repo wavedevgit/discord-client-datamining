@@ -22,8 +22,8 @@ var i, s = n(627968),
     T = n(420139),
     S = n(272207),
     C = n(71393),
-    I = n(97352),
-    f = n(67480),
+    f = n(97352),
+    I = n(67480),
     b = n(328968),
     N = n(580630),
     v = n(163437),
@@ -52,9 +52,9 @@ function G(e) {
         sku: j,
         isCancelled: R,
         renewalPlan: D
-    } = (0, o.cf)([I.A, f.A, b.A, C.A], () => {
-        let e, n = I.A.get(u),
-            i = null != n ? f.A.get(n.skuId) : void 0,
+    } = (0, o.cf)([f.A, I.A, b.A, C.A], () => {
+        let e, n = f.A.get(u),
+            i = null != n ? I.A.get(n.skuId) : void 0,
             s = i?.applicationId,
             l = null != n ? b.A.getForSKU(n.skuId) : null,
             a = null != l && (0, v.PJ)(l.skuFlags),
@@ -62,7 +62,7 @@ function G(e) {
             c = (0, v.Uo)(t, i);
         if (!1 === c && null != d && d.items.length > 0) {
             let t = d.items[0];
-            e = I.A.get(t.planId) ?? void 0
+            e = f.A.get(t.planId) ?? void 0
         }
         return {
             appId: s,
@@ -305,7 +305,7 @@ function w(e) {
         navigateToSwitchPlan: h
     } = e, p = (0, v.Se)(a), {
         analyticsLocations: x
-    } = (0, g.Ay)(), [E, T] = l.useState(!1), C = (0, A.C)(t.id), I = (0, o.bG)([f.A], () => f.A.getParentSKU(i.skuId), [i.skuId]), b = l.useMemo(() => null == I ? [] : (0, R.l)(i.id, I, C.subscriptions), [i.id, C, I]), N = 0 !== b.length, j = async () => {
+    } = (0, g.Ay)(), [E, T] = l.useState(!1), C = (0, A.C)(t.id), f = (0, o.bG)([I.A], () => I.A.getParentSKU(i.skuId), [i.skuId]), b = l.useMemo(() => null == f ? [] : (0, R.l)(i.id, f, C.subscriptions), [i.id, C, f]), N = 0 !== b.length, j = async () => {
         try {
             T(!0);
             let {
@@ -352,7 +352,7 @@ function w(e) {
                     })
                 })
             }
-        }), N && null != I && !1 === d && (0, s.jsx)(c.Button, {
+        }), N && null != f && !1 === d && (0, s.jsx)(c.Button, {
             variant: "primary",
             size: "sm",
             text: P.intl.string(P.t.R74ZBR),
@@ -361,7 +361,7 @@ function w(e) {
                     currentSubscription: r,
                     alternativeListings: b,
                     app: t,
-                    subscriptionGroup: I,
+                    subscriptionGroup: f,
                     currentListing: i,
                     renewalSkuId: m
                 })

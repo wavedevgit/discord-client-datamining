@@ -30,26 +30,26 @@ function x(e) {
         className: T,
         showPremiumIcon: S = !0,
         showResetThemeButton: C = !1,
-        forcedDivider: I
-    } = e, f = (0, u.Ay)(t.id, E), {
+        forcedDivider: f
+    } = e, I = (0, u.Ay)(t.id, E), {
         primaryColor: b,
         secondaryColor: N
     } = (0, _.A)({
         user: t,
-        displayProfile: f,
+        displayProfile: I,
         pendingThemeColors: s,
         isPreview: !0
     }), v = g.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(E, 80), O = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(j, O, !1);
     if (null == b || null == N) return null;
     let y = e => {
-        a(r()(e, f?.themeColors) ? void 0 : e)
+        a(r()(e, I?.themeColors) ? void 0 : e)
     };
     return (0, i.jsx)(A.A, {
         title: h.intl.string(h.t.DMeO2X),
         disabled: !v && !x,
         className: l()(p.__invalid_profileThemesSection, T),
         showPremiumIcon: S,
-        forcedDivider: I,
+        forcedDivider: f,
         children: (0, i.jsxs)("div", {
             className: p.hd,
             children: [(0, i.jsx)("div", {

@@ -22,8 +22,8 @@ var i, s, l, a = n(627968),
     T = n(975571),
     S = n(612669),
     C = n(88001),
-    I = n(652215),
-    f = n(355097),
+    f = n(652215),
+    I = n(355097),
     b = n(519412),
     N = n(49370),
     v = n(985018),
@@ -63,16 +63,16 @@ let ea = () => {
     let {
         analyticsLocations: e
     } = (0, c.Ay)(d.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, g.A)({
-        scrollPosition: f._F.TRY_IT_OUT,
+        scrollPosition: I._F.TRY_IT_OUT,
         analyticsLocations: e
     }), i = (0, S.O9)(), s = (0, r.useCallback)(() => {
         (0, x.openUserSettings)(h.X.PROFILE_PANEL, {
-            section: I.nc_.PROFILE_CUSTOMIZATION,
+            section: f.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
-    }, [e]), l = (0, E.TM)(), ei = T.A.getArticleURL(I.MVz.REFERRAL_PROGRAM), es = {
+    }, [e]), l = (0, E.TM)(), ei = T.A.getArticleURL(f.MVz.REFERRAL_PROGRAM), es = {
         premiumGroup: {
             thumbnail: R,
             assetUrl: R
@@ -193,7 +193,7 @@ let ea = () => {
                         openUserSettings: i
                     } = n(840065);
                 i(t ? h.X.DISPLAY_THEME_CATEGORY : h.X.APPEARANCE_PANEL, {
-                    section: I.nc_.APPEARANCE,
+                    section: f.nc_.APPEARANCE,
                     analyticsLocations: e
                 })
             }
@@ -217,7 +217,7 @@ let ea = () => {
         description: v.intl.string(N.default.wMi514),
         descriptionCta: v.intl.string(v.t.hvVgAZ),
         onClick: () => {
-            window.open(T.A.getArticleURL(I.MVz.ORBS_REWARDS_FAQ), "_blank")
+            window.open(T.A.getArticleURL(f.MVz.ORBS_REWARDS_FAQ), "_blank")
         },
         previewImage: es.orbRewards.thumbnail,
         previewImageStyle: "overlay",

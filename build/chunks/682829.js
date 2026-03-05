@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(769015),
     S = n(723588),
     C = n(608699),
-    I = n(714308),
-    f = n(478407),
+    f = n(714308),
+    I = n(478407),
     b = n(195043),
     N = n(780964),
     v = n(840065),
@@ -113,7 +113,7 @@ let Q = function() {
         m.A.clearSubsection()
     }), []), j.A.enabled) ? (0, i.jsx)(A.A, {}) : T && U ? w === z.nR ? (0, i.jsx)(C.A, {
         onGoBack: () => m.A.clearSubsection()
-    }) : w === z.PZ ? (0, i.jsx)(f.A, {
+    }) : w === z.PZ ? (0, i.jsx)(I.A, {
         onGoBack: () => m.A.clearSubsection()
     }) : (0, i.jsx)("div", {
         className: K.kL,
@@ -153,7 +153,7 @@ let Q = function() {
                     })
                 })]
             }), Z > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(J, {}), (0, i.jsx)(I.A, {
+                children: [(0, i.jsx)(J, {}), (0, i.jsx)(f.A, {
                     count: Z,
                     onClickManageSubscription: () => {
                         (0, v.openUserSettings)(N.X.SUBSCRIPTIONS_PANEL, {

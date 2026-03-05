@@ -1,7 +1,7 @@
 /** chunk id: 604151, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => N,
-    LP: () => f,
+    LP: () => I,
     nK: () => b
 });
 var i = n(627968),
@@ -93,7 +93,7 @@ function C(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         setting: t,
         userIds: n,
@@ -132,9 +132,9 @@ function I(e) {
     })
 }
 
-function f() {
+function I() {
     let e = (0, r.yK)([_.A], () => _.A.getBlockedIDs());
-    return (0, i.jsx)(I, {
+    return (0, i.jsx)(f, {
         setting: p.H.BLOCKED_USERS,
         userIds: e,
         listType: "blocked"
@@ -143,7 +143,7 @@ function f() {
 
 function b() {
     let e = (0, r.yK)([_.A], () => _.A.getIgnoredIDs());
-    return (0, i.jsx)(I, {
+    return (0, i.jsx)(f, {
         setting: p.H.IGNORED_USERS,
         userIds: e,
         listType: "ignored"
@@ -160,6 +160,6 @@ function N() {
             description: E.intl.format(E.t["0aNQo9"], {
                 helpArticle: m.A.getArticleURL(x.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
             })
-        }), (0, i.jsx)(f, {}), (0, i.jsx)(b, {})]
+        }), (0, i.jsx)(I, {}), (0, i.jsx)(b, {})]
     })
 }

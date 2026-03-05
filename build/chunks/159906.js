@@ -44,19 +44,19 @@ function p(e) {
     let S = T.subscriptionPlanId,
         C = d.A.get(S);
     l()(null != C, "Missing plan");
-    let I = (0, u.$g)(x.total, x.currency);
+    let f = (0, u.$g)(x.total, x.currency);
     return C.interval === g.WT.YEAR ? t = A.intl.format(A.t["jPz/39"], {
-        price: I,
+        price: f,
         termsUrl: m.X7G.TERMS,
         paidURL: m.X7G.PAID_TERMS,
         privacyUrl: m.X7G.PRIVACY
     }) : C.interval === g.WT.MONTH && (t = 1 === C.intervalCount ? A.intl.format(A.t.m27GpI, {
-        price: I,
+        price: f,
         termsUrl: m.X7G.TERMS,
         paidURL: m.X7G.PAID_TERMS,
         privacyUrl: m.X7G.PRIVACY
     }) : A.intl.format(A.t["9xf5Vx"], {
-        price: I,
+        price: f,
         termsUrl: m.X7G.TERMS,
         paidURL: m.X7G.PAID_TERMS,
         privacyUrl: m.X7G.PRIVACY,

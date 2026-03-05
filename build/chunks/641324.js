@@ -1,6 +1,6 @@
 /** chunk id: 641324, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => I
 });
 var i = n(627968);
 n(64700);
@@ -24,7 +24,7 @@ var s = n(963935),
     S = n(182884),
     C = n(115617);
 
-function I(e) {
+function f(e) {
     let {
         node: t
     } = e;
@@ -101,15 +101,15 @@ function I(e) {
     }
 }
 
-function f(e) {
+function I(e) {
     let {
         node: t
     } = e;
-    return t.type === s.Z6.PANEL ? (0, i.jsx)(I, {
+    return t.type === s.Z6.PANEL ? (0, i.jsx)(f, {
         node: t
     }) : (0, i.jsx)(l.A, {
         node: t,
-        children: (0, i.jsx)(I, {
+        children: (0, i.jsx)(f, {
             node: t
         })
     })

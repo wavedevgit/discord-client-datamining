@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(166403),
     S = n(954571),
     C = n(927578),
-    I = n(40185),
-    f = n(170887),
+    f = n(40185),
+    I = n(170887),
     b = n(994763),
     N = n(130946),
     v = n(407775),
@@ -69,12 +69,12 @@ let Z = () => {
         e_ = null != eu ? (0, C.EL)(eu) : null,
         eg = null != e_ ? C.Ay.getSkuIdForPlan(e_.planId) : null,
         em = null !== eg && eg !== Y.pe.TIER_2 ? Y.pe.TIER_2 : null,
-        eA = (0, I.cg)(),
+        eA = (0, f.cg)(),
         eh = eA ?? !1,
         {
             analyticsLocations: ep
         } = (0, A.Ay)(m.A.PREMIUM_MARKETING),
-        ex = (0, f.A)({
+        ex = (0, I.A)({
             location: "PremiumMarketing"
         }),
         eE = !et && !el && (ex || !ei);
@@ -86,8 +86,8 @@ let Z = () => {
     (0, b.z)(V.NI.ORB_REWARDS, eS);
     let eC = [R.k.HOME, R.k.WHATS_NEW, R.k.BEST_OF_NITRO, R.k.PLANS, R.k.COMPARE],
         {
-            navBarSections: eI,
-            activeSectionId: ef
+            navBarSections: ef,
+            activeSectionId: eI
         } = (0, B.o)(eC),
         {
             home: eb,
@@ -95,7 +95,7 @@ let Z = () => {
             bestOfNitro: ev,
             plans: ej,
             compare: eO
-        } = eI,
+        } = ef,
         eR = ex ? X : W,
         ey = (0, i.jsxs)("div", {
             className: a()(eR.container, eR.responsiveContainer, {
@@ -107,8 +107,8 @@ let Z = () => {
                 children: [(0, i.jsx)(O.A, {
                     className: X.topOfPageGradient
                 }), (0, i.jsx)(U.A, {
-                    navBarSections: eI,
-                    activeSectionId: ef
+                    navBarSections: ef,
+                    activeSectionId: eI
                 })]
             }), !ex && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {

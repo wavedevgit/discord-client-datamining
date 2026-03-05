@@ -23,8 +23,8 @@ var i = n(627968),
     T = n(438732),
     S = n(834981),
     C = n(102615),
-    I = n(246109),
-    f = n(452141),
+    f = n(246109),
+    I = n(452141),
     b = n(888772),
     N = n(614749),
     v = n(768985),
@@ -35,16 +35,16 @@ var i = n(627968),
     P = n(914280);
 let L = {
         [j.u9.REQUESTS]: b.A,
-        [j.u9.ACTIVITY]: f.A,
+        [j.u9.ACTIVITY]: I.A,
         [j.u9.SETTINGS]: N.A,
         [j.u9.CONTENT_AND_SOCIAL]: C.A,
-        [j.u9.DATA_AND_PRIVACY]: I.A
+        [j.u9.DATA_AND_PRIVACY]: f.A
     },
     D = {
         [j.u9.REQUESTS]: b.A,
-        [j.u9.ACTIVITY]: f.A,
+        [j.u9.ACTIVITY]: I.A,
         [j.u9.CONTENT_AND_SOCIAL]: C.A,
-        [j.u9.DATA_AND_PRIVACY]: I.A
+        [j.u9.DATA_AND_PRIVACY]: f.A
     };
 
 function G() {
@@ -172,7 +172,7 @@ function V() {
         isLoading: A,
         selectedTab: S,
         handleTabChange: C,
-        showAgeGateModal: I
+        showAgeGateModal: f
     } = (0, v.j)({
         location: j.MH.SIDENAV,
         onMountEffect: () => {
@@ -182,9 +182,9 @@ function V() {
     if (s.useEffect(() => {
             let e = p.dm.getSetting();
             n && t && void 0 === e && p.dm.updateSetting(!0)
-        }, [n, t]), I) return null;
-    let f = S !== j.u9.SETTINGS ? S : j.u9.ACTIVITY,
-        b = D[f];
+        }, [n, t]), f) return null;
+    let I = S !== j.u9.SETTINGS ? S : j.u9.ACTIVITY,
+        b = D[I];
     return (0, i.jsx)(_.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
@@ -194,12 +194,12 @@ function V() {
                 location: y.intl.string(R.default.RZqaJn)
             }), (0, i.jsx)(U, {
                 theme: l,
-                section: f,
+                section: I,
                 handleItemSelect: e => {
                     C(e)
                 }
             }), (0, i.jsx)(d.VQ0.Panel, {
-                id: f,
+                id: I,
                 "aria-labelledby": r,
                 className: P.Om,
                 children: (0, i.jsx)(d.HOs, {

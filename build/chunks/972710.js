@@ -22,11 +22,11 @@ var i = n(627968),
     T = n(927578),
     S = n(866312),
     C = n(327479),
-    I = n(652215),
-    f = n(601107),
+    f = n(652215),
+    I = n(601107),
     b = n(985018),
     N = n(141384);
-let v = [I.Dmq.PAST_DUE, I.Dmq.ACCOUNT_HOLD, I.Dmq.BILLING_RETRY],
+let v = [f.Dmq.PAST_DUE, f.Dmq.ACCOUNT_HOLD, f.Dmq.BILLING_RETRY],
     j = e => {
         let {
             transitionState: t,
@@ -90,14 +90,14 @@ function O(e) {
     } = n, L = (0, T.$k)(n), D = y && !L && n.isBoostOnly && v.includes(n.status);
     if (L) t = N.v2;
     else switch (P) {
-        case I.Dmq.PAST_DUE:
-        case I.Dmq.ACCOUNT_HOLD:
-        case I.Dmq.BILLING_RETRY:
+        case f.Dmq.PAST_DUE:
+        case f.Dmq.ACCOUNT_HOLD:
+        case f.Dmq.BILLING_RETRY:
             t = N.P7;
             break;
-        case I.Dmq.PAUSE_PENDING:
-        case I.Dmq.PAUSED:
-            t = n.pauseReason !== f.qf.FRACTIONAL_PREMIUM ? N.C7 : N.wG;
+        case f.Dmq.PAUSE_PENDING:
+        case f.Dmq.PAUSED:
+            t = n.pauseReason !== I.qf.FRACTIONAL_PREMIUM ? N.C7 : N.wG;
             break;
         default:
             t = N.wG
@@ -142,7 +142,7 @@ function O(e) {
                     })
                 }), (0, i.jsx)(C.A, {
                     onClick: () => (0, x.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-                        section: I.nc_.GUILD_BOOSTING
+                        section: f.nc_.GUILD_BOOSTING
                     }),
                     text: b.intl.string(b.t["NQ5g/U"])
                 })]

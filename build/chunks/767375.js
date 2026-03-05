@@ -1,6 +1,6 @@
 /** chunk id: 767375, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -133,7 +133,7 @@ let C = s.memo(function(e) {
         })]
     })
 });
-class I extends s.PureComponent {
+class f extends s.PureComponent {
     state = {
         editingPayment: null
     };
@@ -218,15 +218,15 @@ class I extends s.PureComponent {
             h = m.filter(e => !(e instanceof _.LQ)),
             p = m.filter(e => e instanceof _.LQ),
             x = this.state.editingPayment,
-            I = h.findIndex(e => e.id === x),
-            f = h.map((e, t) => (0, i.jsx)(S, {
+            f = h.findIndex(e => e.id === x),
+            I = h.map((e, t) => (0, i.jsx)(S, {
                 locale: l,
                 paymentSource: e,
                 isDefault: n === e.id,
                 onCancel: this.handleCancel,
                 onDelete: this.handleDelete,
                 isForSubscription: e.id === c,
-                hideDivider: 0 === t || I === t - 1,
+                hideDivider: 0 === t || f === t - 1,
                 onSubmit: this.handleSubmit,
                 submitting: d,
                 removing: r,
@@ -235,7 +235,7 @@ class I extends s.PureComponent {
             }, e.id));
         return e = p.length > 0 ? p.map((e, t) => (0, i.jsx)(C, {
             paymentSource: e,
-            hideDivider: 0 === h.length || I === h.length - 1,
+            hideDivider: 0 === h.length || f === h.length - 1,
             isForSubscription: e.id === c,
             locale: l,
             onRedeemClick: () => (0, u.HF)({
@@ -243,7 +243,7 @@ class I extends s.PureComponent {
                 source: "desktop_billing_page"
             })
         }, e.id)) : (0, i.jsx)(C, {
-            hideDivider: 0 === h.length || I === h.length - 1,
+            hideDivider: 0 === h.length || f === h.length - 1,
             isForSubscription: !1,
             locale: l,
             onRedeemClick: () => (0, u.HF)({
@@ -263,8 +263,8 @@ class I extends s.PureComponent {
                     color: "text-subtle",
                     children: E.intl.string(E.t.h6V3uK)
                 })]
-            }) : null, f, g && e, I !== h.length - 1 || g && p.length > 0 ? (0, i.jsx)(o.cGx, {}) : null, this.renderFooter()]
+            }) : null, I, g && e, f !== h.length - 1 || g && p.length > 0 ? (0, i.jsx)(o.cGx, {}) : null, this.renderFooter()]
         })
     }
 }
-let f = I
+let I = f

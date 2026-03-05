@@ -26,8 +26,8 @@ var x = n(189081),
     T = n(628965),
     S = n(287809),
     C = n(80422),
-    I = n(253932),
-    f = n(368631),
+    f = n(253932),
+    I = n(368631),
     b = n(682262),
     N = n(987281);
 n(531525);
@@ -57,7 +57,7 @@ function j() {
         }),
         G = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
         M = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
-        U = I.Q_.useSetting(),
+        U = f.Q_.useSetting(),
         k = (0, r.A)(),
         V = (0, o.A)() ?? !0,
         w = (0, m.G)()?.length > 0,
@@ -70,7 +70,7 @@ function j() {
         })),
         Y = (0, g.fk)(),
         F = (0, l.i)("useGenerateUserSettingsSections");
-    return i.useMemo(() => (0, f.zj)({
+    return i.useMemo(() => (0, I.zj)({
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
         searchParams: n,

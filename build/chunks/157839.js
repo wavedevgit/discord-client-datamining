@@ -52,8 +52,8 @@ let T = e => {
             noBackground: l = !1,
             leftAlignHeaders: S = !1,
             showAllPerksButton: C,
-            headerClassname: I
-        } = e, f = s.useRef(null), b = n === p.cJ.WHATS_NEW, N = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+            headerClassname: f
+        } = e, I = s.useRef(null), b = n === p.cJ.WHATS_NEW, N = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
             b && v()
         }, [v, b]);
@@ -81,7 +81,7 @@ let T = e => {
             }),
             M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
-            ref: f,
+            ref: I,
             className: a()(E.uW, {
                 [E.qO]: !S,
                 [E.Uv]: S
@@ -90,7 +90,7 @@ let T = e => {
                 showAllPerksButton: C,
                 leftAlignHeaders: S,
                 title: j.title,
-                headerClassname: I
+                headerClassname: f
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",

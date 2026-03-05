@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(366523),
     S = n(961350),
     C = n(30793),
-    I = n(351906),
-    f = n(97352),
+    f = n(351906),
+    I = n(97352),
     b = n(67480),
     N = n(147925),
     v = n(957565),
@@ -269,7 +269,7 @@ class D extends s.PureComponent {
         })
     }
 }
-let G = d.Ay.connectStores([b.A, I.A, C.A, A.A, f.A, S.default], e => {
+let G = d.Ay.connectStores([b.A, f.A, C.A, A.A, I.A, S.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
@@ -279,7 +279,7 @@ let G = d.Ay.connectStores([b.A, I.A, C.A, A.A, f.A, S.default], e => {
     let l = C.A.getForGifterSKUAndPlan(S.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
     return {
         sku: s,
-        hideCodes: I.A.enabled,
+        hideCodes: f.A.enabled,
         isFetching: C.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
         loadedAt: C.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
         application: A.A.getApplication(s.applicationId),

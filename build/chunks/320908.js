@@ -1,7 +1,7 @@
 /** chunk id: 320908, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => N,
-    KN: () => I,
+    KN: () => f,
     U9: () => b
 });
 var i = n(627968),
@@ -24,7 +24,7 @@ var i = n(627968),
     T = n(552554),
     S = n(985018),
     C = n(986970);
-let I = e => {
+let f = e => {
         let {
             inOfferExperience: t,
             subscriptionTier: n,
@@ -58,7 +58,7 @@ let I = e => {
             children: [u, " ", _]
         })
     },
-    f = () => (0, i.jsxs)(i.Fragment, {
+    I = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.p, {
             className: C.zd
         }), (0, i.jsx)(_.p, {
@@ -124,7 +124,7 @@ let N = s.forwardRef((e, t) => {
                         className: a()(C.x6, s),
                         color: o.XD.WHITE
                     })
-                }) : (0, i.jsx)(I, {
+                }) : (0, i.jsx)(f, {
                     subscriptionTier: l,
                     inOfferExperience: N,
                     buttonClassName: s,
@@ -133,7 +133,7 @@ let N = s.forwardRef((e, t) => {
                     variant: "text-md/normal",
                     withBottomMargin: !1
                 })]
-            }), !N && (0, i.jsx)(f, {})]
+            }), !N && (0, i.jsx)(I, {})]
         })
     })
 })

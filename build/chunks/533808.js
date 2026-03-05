@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(219887),
     S = n(985018),
     C = n(670566);
-let I = "isDefault";
-class f extends s.PureComponent {
+let f = "isDefault";
+class I extends s.PureComponent {
     static defaultProps = {
         onDelete: () => {},
         onSubmit: () => {},
@@ -265,9 +265,9 @@ class f extends s.PureComponent {
                 }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, i.jsx)("div", {
                     className: C.D5,
                     children: (0, i.jsx)(u.Checkbox, {
-                        value: I,
+                        value: f,
                         checked: r,
-                        onChange: e => this.handleFieldChange(e, I),
+                        onChange: e => this.handleFieldChange(e, f),
                         label: S.intl.string(S.t.nag9Og),
                         labelType: "secondary"
                     })
@@ -279,4 +279,4 @@ class f extends s.PureComponent {
 let b = o.Ay.connectStores([h.A], () => ({
     updateError: h.A.editSourceError,
     removeError: h.A.removeSourceError
-}))(f)
+}))(I)

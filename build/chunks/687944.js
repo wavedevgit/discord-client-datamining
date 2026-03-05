@@ -28,7 +28,7 @@ let C = {
     object: x.ZSU.CARD
 };
 
-function I(e) {
+function f(e) {
     let {
         premiumSubscription: t,
         discountInfo: n,
@@ -73,7 +73,7 @@ function I(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         discountOffer: t,
         premiumSubscription: n
@@ -150,10 +150,10 @@ let b = function(e) {
                     className: T.ly,
                     children: [(0, i.jsxs)("div", {
                         className: T.Yc,
-                        children: [null != j ? (0, i.jsx)(f, {
+                        children: [null != j ? (0, i.jsx)(I, {
                             discountOffer: j,
                             premiumSubscription: g
-                        }) : (0, i.jsx)(I, {
+                        }) : (0, i.jsx)(f, {
                             premiumSubscription: g,
                             discountInfo: N ?? v,
                             invoicePreview: m,

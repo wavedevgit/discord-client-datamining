@@ -2,7 +2,7 @@
 n.d(t, {
     Ev: () => E,
     Ow: () => T,
-    Xj: () => f,
+    Xj: () => I,
     aK: () => S,
     m3: () => C
 });
@@ -97,7 +97,7 @@ function C() {
     }, [l, n, c])
 }
 
-function I() {
+function f() {
     let e = (0, c.WX)();
     s.useEffect(() => {
         (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.VIEWED)
@@ -128,13 +128,13 @@ function I() {
     })
 }
 
-function f() {
+function I() {
     let e = (0, u.aX)(l.t.REACTIVE_CHECK),
         t = (0, d.b8)();
     return s.useMemo(() => {
         if (e && !t) return {
             type: A.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: I
+            notice: f
         }
     }, [e, t])
 }

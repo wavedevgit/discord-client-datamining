@@ -27,9 +27,9 @@ var i = s(627968),
     S = s(131265),
     w = s(556011),
     N = s(469961),
-    F = s(172944);
+    b = s(172944);
 
-function U(e) {
+function F(e) {
     let {
         numOfSelectedUsers: t,
         anySelected: s
@@ -55,7 +55,7 @@ function U(e) {
     })
 }
 
-function b() {
+function U() {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: A.DD,
@@ -197,7 +197,7 @@ function R(e) {
         height: 38
     }) : (0, i.jsx)(x._V3, {
         className: t,
-        src: F,
+        src: b,
         width: 55,
         height: 38
     })
@@ -209,7 +209,7 @@ let B = function(e) {
     } = e, r = (0, c.bG)([m.A], () => m.A.getReferralsRemaining()), [n, h] = a.useState(""), f = (0, p.A)(n, 400), [_, j] = a.useState(new Map), [L, S] = a.useState(!1), {
         eligibleUsers: w,
         fetchUsers: N,
-        hasError: F,
+        hasError: b,
         isFetching: R,
         resendUsers: B
     } = (0, g.i)({
@@ -220,7 +220,7 @@ let B = function(e) {
     let G = (0, d.K)(e => {
         e && !R && N()
     });
-    if (F) return (0, i.jsx)(M, {
+    if (b) return (0, i.jsx)(M, {
         onClose: t
     });
     if (0 === r) return (0, i.jsx)(k, {
@@ -230,7 +230,7 @@ let B = function(e) {
     return (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
             className: l()(A.wx, A.HE),
-            children: [D ? (0, i.jsx)(b, {}) : (0, i.jsx)(U, {
+            children: [D ? (0, i.jsx)(U, {}) : (0, i.jsx)(F, {
                 numOfSelectedUsers: O.length,
                 anySelected: _.size > 0
             }), (0, i.jsx)(x.iS7, {

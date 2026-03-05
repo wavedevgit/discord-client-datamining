@@ -27,12 +27,12 @@ let T = s.forwardRef((e, t) => {
         isReducedMotion: S,
         subscriptionTier: C
     } = e, {
-        analyticsLocations: I
-    } = (0, d.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), f = (0, _.ar)(), b = (0, u.TM)(), N = s.useRef(null), [v, j] = s.useState(!1);
+        analyticsLocations: f
+    } = (0, d.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), I = (0, _.ar)(), b = (0, u.TM)(), N = s.useRef(null), [v, j] = s.useState(!1);
     return s.useEffect(() => {
         !l || S || v || null == N.current || N.current.play()
     }, [l, S, v]), (0, i.jsx)(d.f5, {
-        value: I,
+        value: f,
         children: (0, i.jsxs)("div", {
             ref: t,
             className: a()(h.kL, n),
@@ -43,7 +43,7 @@ let T = s.forwardRef((e, t) => {
                 children: A.intl.string(A.t.lEw32m)
             }), (0, i.jsx)(g.KN, {
                 subscriptionTier: C,
-                inOfferExperience: f,
+                inOfferExperience: I,
                 containerClassName: h.Z5,
                 isApplicationHome: !0,
                 isDarkMode: T

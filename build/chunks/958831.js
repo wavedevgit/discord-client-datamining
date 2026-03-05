@@ -1,6 +1,6 @@
 /** chunk id: 958831, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => f
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -40,7 +40,7 @@ function C() {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         keybind: t
     } = e, n = s.useRef(t);
@@ -48,7 +48,7 @@ function I(e) {
         n.current = t
     });
     let [l, a] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
-        (0, r.mMO)(async () => e => (0, i.jsx)(f, {
+        (0, r.mMO)(async () => e => (0, i.jsx)(I, {
             ...e,
             onSelect: e => {
                 a(e), o.A.setKeybind({
@@ -85,14 +85,14 @@ function I(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let t, n, {
             transitionState: o,
             onClose: c,
             onSelect: E
         } = e,
-        I = s.useId(),
-        f = s.useRef(null),
+        f = s.useId(),
+        I = s.useRef(null),
         {
             query: b,
             updateQuery: N,
@@ -127,7 +127,7 @@ function f(e) {
     s.useEffect(() => {
         let {
             current: e
-        } = f;
+        } = I;
         null == e || e.isItemVisible(0, O, !0) || e.scrollToIndex({
             section: 0,
             row: O
@@ -140,10 +140,10 @@ function f(e) {
             if (e?.type === h.rD.VOICE_CHANNEL) return e.record.id
         })(),
         L = y > 0 || "" === b ? {
-            innerId: I,
+            innerId: f,
             innerRole: "listbox",
             innerAriaLabel: p.intl.string(p.t["+N3fW7"]),
-            ref: f,
+            ref: I,
             sections: [y],
             renderRow: function(e) {
                 let {
@@ -213,7 +213,7 @@ function f(e) {
             },
             placeholder: p.intl.string(p.t.tG0r7g),
             role: "combobox",
-            "aria-controls": I,
+            "aria-controls": f,
             "aria-expanded": y > 0,
             "aria-activedescendant": y > 0 && null != P ? P : void 0,
             "aria-autocomplete": "list",

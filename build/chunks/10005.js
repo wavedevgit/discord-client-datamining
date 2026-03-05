@@ -12,8 +12,8 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, g] = i.useState(!1), [m, A] = i.useState(!1), [h, p] = i.useState(!1), [x, E] = i.useState(!1), [T, S] = i.useState(!1), [C, I] = i.useState(!1), f = o || c || _ || m || x || C, b = i.useCallback(async e => {
-        if (!f) {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, g] = i.useState(!1), [m, A] = i.useState(!1), [h, p] = i.useState(!1), [x, E] = i.useState(!1), [T, S] = i.useState(!1), [C, f] = i.useState(!1), I = o || c || _ || m || x || C, b = i.useCallback(async e => {
+        if (!I) {
             d(!0);
             try {
                 await (0, l.nt)(e, r.Ef.ACTIVE), n?.()
@@ -24,8 +24,8 @@ function o(e) {
                 d(!1)
             }
         }
-    }, [f, t, n]), N = i.useCallback(async e => {
-        if (!f) {
+    }, [I, t, n]), N = i.useCallback(async e => {
+        if (!I) {
             u(!0);
             try {
                 await (0, l.nt)(e, r.Ef.DECLINED), n?.()
@@ -36,8 +36,8 @@ function o(e) {
                 u(!1)
             }
         }
-    }, [f, t, n]), v = i.useCallback(async e => {
-        if (!f) {
+    }, [I, t, n]), v = i.useCallback(async e => {
+        if (!I) {
             g(!0);
             try {
                 await (0, l.nt)(e, r.Ef.INACTIVE), n?.()
@@ -48,8 +48,8 @@ function o(e) {
                 g(!1)
             }
         }
-    }, [f, t, n]), j = i.useCallback(async e => {
-        if (!f) {
+    }, [I, t, n]), j = i.useCallback(async e => {
+        if (!I) {
             A(!0);
             try {
                 await (0, l.e$)(e), n?.()
@@ -60,7 +60,7 @@ function o(e) {
                 A(!1)
             }
         }
-    }, [f, t, n]), O = i.useCallback(async () => {
+    }, [I, t, n]), O = i.useCallback(async () => {
         if (!h) {
             p(!0);
             try {
@@ -111,14 +111,14 @@ function o(e) {
                 r = a.A.getStartId(),
                 o = a.A.getSelectedTeenId();
             if (!C && null != r && null != o) {
-                I(!0);
+                f(!0);
                 try {
                     await l.Ay.fetchMoreTeenActivity(o, e, r, i.event_id)
                 } catch (n) {
                     let e = new s.LG(n);
                     t?.(e)
                 } finally {
-                    I(!1)
+                    f(!1)
                 }
             }
         }, [C, t]),

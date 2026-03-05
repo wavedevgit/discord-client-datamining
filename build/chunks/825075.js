@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(224850),
     S = n(797255),
     C = n(288351),
-    I = n(320908),
-    f = n(693591),
+    f = n(320908),
+    I = n(693591),
     b = n(985018),
     N = n(986970),
     v = n(182514),
@@ -72,7 +72,7 @@ let R = s.forwardRef((e, t) => {
                             className: a()(N.x6, s),
                             color: V
                         })
-                    }) : (0, i.jsx)(I.KN, {
+                    }) : (0, i.jsx)(f.KN, {
                         subscriptionTier: l,
                         inOfferExperience: G,
                         containerClassName: a()(N.$F, {
@@ -82,7 +82,7 @@ let R = s.forwardRef((e, t) => {
                         isApplicationHome: !0,
                         isDarkMode: R,
                         isEligibleForBogoPromotion: y
-                    }), (0, i.jsx)(I.U9, {
+                    }), (0, i.jsx)(f.U9, {
                         variant: "text-sm/normal",
                         withBottomMargin: !1,
                         isApplicationHome: !0
@@ -100,7 +100,7 @@ let R = s.forwardRef((e, t) => {
                     ref: P,
                     children: (0, i.jsx)("source", {
                         src: B ? v.A : O.A,
-                        type: B ? f.a.MP4 : f.a.WEBM
+                        type: B ? I.a.MP4 : I.a.WEBM
                     })
                 })
             })]

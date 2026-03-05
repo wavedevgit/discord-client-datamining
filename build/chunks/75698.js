@@ -24,8 +24,8 @@ var i = n(627968),
     T = n(882997),
     S = n(169869),
     C = n(263063),
-    I = n(496885),
-    f = n(962173),
+    f = n(496885),
+    I = n(962173),
     b = n(71393),
     N = n(351906),
     v = n(954571),
@@ -48,10 +48,10 @@ let V = e => {
             isJoining: s,
             joinErrorMessage: l,
             showJoinErrorMessage: a
-        } = (0, o.cf)([f.A], () => ({
-            isJoining: f.A.isJoining(n.id),
-            joinErrorMessage: "" === f.A.joinErrorMessage(n.id) ? U.intl.string(U.t.j2d6Km) : f.A.joinErrorMessage(n.id),
-            showJoinErrorMessage: void 0 !== f.A.joinErrorMessage(n.id)
+        } = (0, o.cf)([I.A], () => ({
+            isJoining: I.A.isJoining(n.id),
+            joinErrorMessage: "" === I.A.joinErrorMessage(n.id) ? U.intl.string(U.t.j2d6Km) : I.A.joinErrorMessage(n.id),
+            showJoinErrorMessage: void 0 !== I.A.joinErrorMessage(n.id)
         }), [n.id]);
     return null != (0, o.bG)([b.A], () => b.A.getGuild(n.guild.id), [n.guild.id]) || (t = (0, i.jsx)(_.Button, {
         size: "sm",
@@ -97,7 +97,7 @@ function w(e) {
     let t, n, l, a, o, g, A, {
             onDisconnect: h,
             account: C,
-            theme: f,
+            theme: I,
             locale: b
         } = e,
         [N, v] = s.useState(C.friendSync),
@@ -131,7 +131,7 @@ function w(e) {
         className: k.FI,
         children: [(t = p.A.get(C.type), n = p.A.get(Q), l = "1" === (C.metadata ?? {})[M.pK.TWITTER_VERIFIED], a = null, t.type === G.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
             text: U.intl.string(U.t.Jebrww),
-            children: (0, i.jsx)(I.A, {
+            children: (0, i.jsx)(f.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
                 children: (0, i.jsx)(_.Uzd, {
                     size: "xs",
@@ -143,7 +143,7 @@ function w(e) {
             children: [(0, i.jsx)("img", {
                 alt: n.name,
                 className: k.gj,
-                src: (0, u.Mw)(f) ? n.icon.darkSVG : n.icon.lightSVG
+                src: (0, u.Mw)(I) ? n.icon.darkSVG : n.icon.lightSVG
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)("div", {
                     className: k.$p,
@@ -434,8 +434,8 @@ function F(e) {
 
 function z() {
     let e = (0, o.bG)([N.A], () => N.A.hidePersonalInformation),
-        t = (0, o.bG)([f.A], () => f.A.isFetching()),
-        n = (0, o.bG)([f.A], () => f.A.getAccounts()),
+        t = (0, o.bG)([I.A], () => I.A.isFetching()),
+        n = (0, o.bG)([I.A], () => I.A.getAccounts()),
         s = (0, h.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
     return e ? null : (0, i.jsx)(F, {
@@ -446,8 +446,8 @@ function z() {
     })
 }
 let X = () => {
-    let e = (0, o.bG)([f.A], () => f.A.isFetching()),
-        t = (0, o.bG)([f.A], () => f.A.getAccounts()),
+    let e = (0, o.bG)([I.A], () => I.A.isFetching()),
+        t = (0, o.bG)([I.A], () => I.A.getAccounts()),
         n = (0, h.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
     return s.useEffect(() => {

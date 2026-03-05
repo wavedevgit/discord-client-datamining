@@ -74,7 +74,7 @@ function h(e) {
         hideDescriptionUntilUnlock: g,
         onAction: A
     } = t, {
-        color: E
+        color: m
     } = (0, o.ag)(C);
     a.useEffect(() => {
         let e = setTimeout(() => {
@@ -84,12 +84,12 @@ function h(e) {
             clearTimeout(e)
         }
     }, []);
-    let m = null != A && n,
-        p = m ? s.DUT : "div";
+    let E = null != A && n,
+        p = E ? s.DUT : "div";
     return (0, i.jsxs)(p, {
-        className: l()(u.kL, m && u.b),
+        className: l()(u.kL, E && u.b),
         onClick: () => {
-            m && A()
+            E && A()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
@@ -112,7 +112,7 @@ function h(e) {
         }), (0, i.jsx)("div", {
             className: u.Db,
             children: (0, i.jsx)(_, {
-                color: E
+                color: m
             })
         })]
     })

@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(344904),
     S = n(221688),
     C = n(652215),
-    I = n(985018),
-    f = n(509117),
+    f = n(985018),
+    I = n(509117),
     b = n(6336);
 let N = e => {
         let {
@@ -43,14 +43,14 @@ let N = e => {
             ...l
         }) : (0, i.jsx)(c.Heading, {
             variant: "heading-md/semibold",
-            className: f.n5,
+            className: I.n5,
             children: n
         });
         return (0, i.jsx)(o.m_, {
-            text: I.intl.string(I.t.UnKHdo),
+            text: f.intl.string(f.t.UnKHdo),
             shouldShow: !a,
             children: (0, i.jsx)("div", {
-                className: f.Lg,
+                className: I.Lg,
                 children: r
             })
         })
@@ -61,13 +61,13 @@ let N = e => {
             placement: n
         } = e;
         return (0, i.jsxs)("div", {
-            className: f.Ip,
+            className: I.Ip,
             children: [(0, i.jsx)("div", {
-                className: f.Ej
+                className: I.Ej
             }), (0, i.jsx)("div", {
                 className: a()({
-                    [f.ch]: t > n,
-                    [f.q_]: t === n
+                    [I.ch]: t > n,
+                    [I.q_]: t === n
                 })
             })]
         })
@@ -77,7 +77,7 @@ let N = e => {
             userRecords: t
         } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
         return (0, i.jsxs)("div", {
-            className: f.ZM,
+            className: I.ZM,
             children: [(0, i.jsx)(N, {
                 userRecord: s,
                 placement: 1
@@ -117,19 +117,19 @@ let N = e => {
             y = s.useRef(null),
             P = N.sent / E.Z * 100,
             L = (0, i.jsxs)("div", {
-                className: f.hE,
+                className: I.hE,
                 children: [(0, i.jsx)(T.Ay, {
                     percentage: P,
                     progressCircleVariation: T.BN.NITRO_LOGO,
                     iconClassName: a()({
-                        [f.VC]: !t,
-                        [f.ER]: t
+                        [I.VC]: !t,
+                        [I.ER]: t
                     })
                 }), (0, i.jsxs)("div", {
-                    className: f.Ns,
+                    className: I.Ns,
                     children: [(0, i.jsx)(c.Heading, {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-                        className: f.R0,
+                        className: I.R0,
                         children: (0, S.X8)({
                             hasSentAll: v
                         })
@@ -142,12 +142,12 @@ let N = e => {
                             referralsStatuses: N
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(f.Fb, {
-                            [f.jv]: !t
+                        className: a()(I.Fb, {
+                            [I.jv]: !t
                         }),
                         children: (0, i.jsx)(c.wLn, {
                             "data-migration-pending": !0,
-                            className: f.r$,
+                            className: I.r$,
                             color: d.XD.CUSTOM,
                             onClick: () => (e => {
                                 let {
@@ -169,12 +169,12 @@ let N = e => {
                             }),
                             onlyShineOnHover: !0,
                             children: (0, i.jsxs)("div", {
-                                className: f.Zn,
+                                className: I.Zn,
                                 children: [(0, i.jsx)("img", {
                                     src: b,
                                     alt: "",
-                                    className: f.QH
-                                }), v ? I.intl.string(I.t.SY9tyI) : I.intl.string(I.t.Lm2nFc)]
+                                    className: I.QH
+                                }), v ? f.intl.string(f.t.SY9tyI) : f.intl.string(f.t.Lm2nFc)]
                             })
                         })
                     })]
@@ -185,17 +185,17 @@ let N = e => {
             value: R,
             children: (0, i.jsx)("div", {
                 className: a()({
-                    [f.f5]: D,
-                    [f.JY]: !D,
-                    [f.VX]: !t,
-                    [f.m$]: D && t
+                    [I.f5]: D,
+                    [I.JY]: !D,
+                    [I.VX]: !t,
+                    [I.m$]: D && t
                 }),
                 children: (0, i.jsx)("div", {
                     ref: y,
                     className: a()({
-                        [f.dn]: !t,
-                        [f.d_]: t,
-                        [f.kS]: D
+                        [I.dn]: !t,
+                        [I.d_]: t,
+                        [I.kS]: D
                     }),
                     children: L
                 })

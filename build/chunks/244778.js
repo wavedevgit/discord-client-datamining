@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(89366),
     S = n(422936),
     C = n(234419),
-    I = n(863156),
-    f = n(194509),
+    f = n(863156),
+    I = n(194509),
     b = n(396375),
     N = n(511484),
     v = n(231265),
@@ -206,7 +206,7 @@ let U = () => {
                     className: P.x6,
                     subscriptionTier: R.pe.TIER_0,
                     showIcon: !1
-                }), J === R.PremiumTypes.TIER_2 || null != q ? null : (0, i.jsx)(f.A, {
+                }), J === R.PremiumTypes.TIER_2 || null != q ? null : (0, i.jsx)(I.A, {
                     className: P.x6,
                     subscriptionTier: R.pe.TIER_0
                 })]
@@ -223,7 +223,7 @@ let U = () => {
                     subscriptionTier: R.pe.TIER_2,
                     showIcon: !1,
                     hasActivePromotion: ea
-                }), J === R.PremiumTypes.TIER_0 || null != q ? null : (0, i.jsx)(f.A, {
+                }), J === R.PremiumTypes.TIER_0 || null != q ? null : (0, i.jsx)(I.A, {
                     className: P.x6,
                     subscriptionTier: R.pe.TIER_2
                 })]
@@ -246,7 +246,7 @@ let U = () => {
                     className: a()(P.Qw, P.__invalid_textColor),
                     variant: "heading-xxl/extrabold",
                     children: v ?? y.intl.string(y.t.FIbMh9)
-                }), W && (0, i.jsx)(I.A, {
+                }), W && (0, i.jsx)(f.A, {
                     premiumGroupRole: X.premiumGroupRole,
                     className: P.vg
                 }), (0, i.jsxs)("div", {

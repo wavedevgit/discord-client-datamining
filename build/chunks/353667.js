@@ -107,7 +107,7 @@ function C(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         layout: t,
         decoration: n
@@ -126,7 +126,7 @@ function I(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         panelKey: t,
         layout: n,
@@ -181,7 +181,7 @@ function f(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != c.StronglyDiscouragedCustomComponent ? (0, i.jsx)(c.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(I, {
+            children: null != c.StronglyDiscouragedCustomComponent ? (0, i.jsx)(c.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(f, {
                 layout: c.layout,
                 decoration: a
             })
@@ -199,7 +199,7 @@ function b(e) {
     return (0, i.jsx)(C, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(I, {
+        children: (0, i.jsx)(f, {
             layout: l,
             decoration: s
         })
@@ -242,7 +242,7 @@ function v(e) {
         panelKey: t.key,
         notice: t.notice
     });
-    if ((0, m.zY)(n)) return (0, i.jsx)(f, {
+    if ((0, m.zY)(n)) return (0, i.jsx)(I, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(960005),
     S = n(992990),
     C = n(652215),
-    I = n(985018),
-    f = n(520089),
+    f = n(985018),
+    I = n(520089),
     b = n(288894);
 let N = e => {
     let t, n, {
@@ -48,7 +48,7 @@ let N = e => {
             fractionalState: U
         } = (0, g.A)(),
         k = (0, A.d)();
-    M ? (t = I.intl.string(I.t["+vt7w9"]), n = I.intl.string(I.t.LgHbnL)) : (t = I.intl.string(I.t.LgHbnL), n = I.intl.string(I.t["+vt7w9"]));
+    M ? (t = f.intl.string(f.t["+vt7w9"]), n = f.intl.string(f.t.LgHbnL)) : (t = f.intl.string(f.t.LgHbnL), n = f.intl.string(f.t["+vt7w9"]));
     let V = () => {
         N(!1), m.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
             current_component: p.A2.SEE_ALL,
@@ -57,35 +57,35 @@ let N = e => {
         })
     };
     return (0, i.jsx)(d.GtU, {
-        className: a()(f.NX, {
-            [f.ho]: l,
-            [f.LM]: G
+        className: a()(I.NX, {
+            [I.ho]: l,
+            [I.LM]: G
         }),
         inert: !l,
         ref: O,
         children: (0, i.jsx)(d.hLv, {
             color: "nitro-pink",
-            className: a()(f.kL, f.Gd, {
-                [f.fv]: !j
+            className: a()(I.kL, I.Gd, {
+                [I.fv]: !j
             }),
             children: (0, i.jsxs)(_.f5, {
                 value: P,
                 children: [j ? (0, i.jsx)(S.A, {
                     onBackClick: V
                 }) : (0, i.jsx)(E.A, {
-                    className: f.v1,
+                    className: I.v1,
                     onBackClick: V
                 }), (0, i.jsxs)("div", {
-                    className: a()(f.fi, {
-                        [f._9]: j
+                    className: a()(I.fi, {
+                        [I._9]: j
                     }),
                     children: [(0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: f.R_,
+                        className: I.R_,
                         children: t
                     }), (0, i.jsx)(T.A, {
-                        className: f.Nm,
+                        className: I.Nm,
                         cards: (0, x.vx)({
                             perksCards: y,
                             variant: p.cJ.CARD_CAROUSEL_FIRST_ROW,
@@ -98,10 +98,10 @@ let N = e => {
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: f.R_,
+                        className: I.R_,
                         children: n
                     }), (0, i.jsx)(T.A, {
-                        className: f.Nm,
+                        className: I.Nm,
                         cards: (0, x.vx)({
                             perksCards: y,
                             variant: p.cJ.CARD_CAROUSEL_SECOND_ROW,
@@ -114,10 +114,10 @@ let N = e => {
                     }), (0, i.jsx)(d.Heading, {
                         variant: "heading-xxl/extrabold",
                         color: "text-strong",
-                        className: f.R_,
-                        children: I.intl.string(I.t.LTaxu9)
+                        className: I.R_,
+                        children: f.intl.string(f.t.LTaxu9)
                     }), (0, i.jsx)(T.A, {
-                        className: f.Nm,
+                        className: I.Nm,
                         cards: (0, x.vx)({
                             perksCards: y,
                             variant: p.cJ.CARD_CAROUSEL_THIRD_ROW,
@@ -129,7 +129,7 @@ let N = e => {
                         cardType: p.cJ.CARD_CAROUSEL_THIRD_ROW
                     })]
                 }), (0, i.jsx)("div", {
-                    className: f.hz
+                    className: I.hz
                 }), (0, i.jsx)(o.L, {
                     innerRef: R,
                     onChange: e => {
@@ -139,14 +139,14 @@ let N = e => {
                     },
                     children: (0, i.jsx)("div", {
                         ref: R,
-                        className: f._Z
+                        className: I._Z
                     })
                 }), (0, i.jsx)("img", {
                     src: b,
-                    className: f.Kw,
+                    className: I.Kw,
                     width: 112,
                     height: 85,
-                    alt: I.intl.string(I.t.X4IxWL)
+                    alt: f.intl.string(f.t.X4IxWL)
                 })]
             })
         })

@@ -25,8 +25,8 @@ var i = n(627968),
     T = n(773669),
     S = n(780964),
     C = n(493068),
-    I = n(840065),
-    f = n(531525),
+    f = n(840065),
+    I = n(531525),
     b = n(652215),
     N = n(985018),
     v = n(231182);
@@ -39,7 +39,7 @@ function j() {
 }
 
 function O() {
-    (0, I.openUserSettings)(S.X.GIFT_PANEL, {
+    (0, f.openUserSettings)(S.X.GIFT_PANEL, {
         section: b.nc_.INVENTORY
     })
 }
@@ -92,12 +92,12 @@ function L() {
     let e = (0, _.wI)("UserSettingsBilling");
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(m.x, {
-            setting: f.H.BILLING_PAYMENT_METHODS,
+            setting: I.H.BILLING_PAYMENT_METHODS,
             children: (0, i.jsx)(R, {
                 showHeader: !0
             })
         }), e && (0, i.jsx)(m.x, {
-            setting: f.H.BILLING_STORE_COUNTRY,
+            setting: I.H.BILLING_STORE_COUNTRY,
             children: (0, i.jsxs)(a.BJc, {
                 gap: 16,
                 children: [(0, i.jsx)(a.Heading, {
@@ -106,7 +106,7 @@ function L() {
                 }), (0, i.jsx)(C.d, {})]
             })
         }), (0, i.jsx)(m.x, {
-            setting: f.H.BILLING_TRANSACTION_HISTORY,
+            setting: I.H.BILLING_TRANSACTION_HISTORY,
             children: (0, i.jsx)("div", {
                 className: v.TI,
                 children: (0, i.jsxs)(a.BJc, {

@@ -43,8 +43,8 @@ let T = e => {
             description: l,
             descriptionCta: S,
             previewImage: C,
-            videoUrl: I,
-            shouldLoadVideo: f,
+            videoUrl: f,
+            shouldLoadVideo: I,
             index: b,
             customVideoStyle: N,
             isReducedMotion: v,
@@ -103,7 +103,7 @@ let T = e => {
             className: a()(E.boxArtContainer, E[`${y}`]),
             children: (0, i.jsx)(g.A, {
                 playsInline: !0,
-                preload: f ? "auto" : "none",
+                preload: I ? "auto" : "none",
                 muted: !0,
                 poster: C,
                 loop: !0,
@@ -112,10 +112,10 @@ let T = e => {
                 }),
                 ref: G,
                 children: (0, i.jsx)("source", {
-                    src: I,
+                    src: f,
                     type: D ? x.a.MP4 : x.a.WEBM
                 })
-            }, I)
+            }, f)
         }), Z = b % 2 != 0;
         return (0, i.jsx)(o.L, {
             innerRef: U,
@@ -137,7 +137,7 @@ let T = e => {
                 children: [B && (0, i.jsx)("div", {
                     className: E.backgroundVideoContainer,
                     children: (0, i.jsx)(_.A, {
-                        preload: f ? "auto" : "none",
+                        preload: I ? "auto" : "none",
                         className: E.backgroundVideo,
                         src: P
                     })

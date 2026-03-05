@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(88001),
     S = n(652215),
     C = n(519412),
-    I = n(985018),
-    f = n(998663),
+    f = n(985018),
+    I = n(998663),
     b = n(817577),
     N = n(419455),
     v = n(288604),
@@ -67,14 +67,14 @@ function R() {
     return (0, s.useMemo)(() => {
         let s = [t ? {
                 id: x.PREMIUM_GROUP_CARD_ID,
-                title: I.intl.string(C.default.YkvksF),
-                description: I.intl.formatToPlainString(C.default.JlyGQj, {
+                title: f.intl.string(C.default.YkvksF),
+                description: f.intl.formatToPlainString(C.default.JlyGQj, {
                     totalSeats: T.aw,
                     premiumGroupProductName: (0, T.DP)()
                 }),
-                pillText: I.intl.string(I.t.oW0eUd),
+                pillText: f.intl.string(f.t.oW0eUd),
                 primaryAsset: b,
-                ctaText: I.intl.string(I.t.jVcuVY),
+                ctaText: f.intl.string(f.t.jVcuVY),
                 onCtaClick: () => {
                     (0, a.mMO)(async () => {
                         let {
@@ -87,56 +87,56 @@ function R() {
                 }
             } : null, R ? {
                 id: x.RECURRING_3P_PROMOTIONS_CARD_ID,
-                title: I.intl.string(I.t.m7PucM),
-                description: I.intl.format(I.t.zh1X7u, {}),
+                title: f.intl.string(f.t.m7PucM),
+                description: f.intl.format(f.t.zh1X7u, {}),
                 subscriptionRequired: !0,
-                pillText: I.intl.string(I.t.oW0eUd),
+                pillText: f.intl.string(f.t.oW0eUd),
                 caption: (0, i.jsx)("img", {
-                    src: f,
+                    src: I,
                     alt: "SteelSeries"
                 }),
                 backgroundAssetUrl: j.A,
                 progress: G.getDate() / M,
-                ctaText: I.intl.string(I.t.w7s5Qr),
+                ctaText: f.intl.string(f.t.w7s5Qr),
                 onCtaClick: () => (0, p.uE)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"
             } : null, {
                 id: x.DISPLAY_NAME_STYLES_CARD_ID,
-                title: I.intl.string(I.t.OLtTrt),
-                description: I.intl.string(I.t["di/pXR"]),
+                title: f.intl.string(f.t.OLtTrt),
+                description: f.intl.string(f.t["di/pXR"]),
                 onCtaClick: y,
                 primaryAsset: N.A,
-                ctaText: I.intl.string(I.t.jVcuVY),
-                pillText: I.intl.string(I.t.y2b7CA)
+                ctaText: f.intl.string(f.t.jVcuVY),
+                pillText: f.intl.string(f.t.y2b7CA)
             }, {
                 id: x.CLIENT_THEMES_CARD_ID,
-                title: I.intl.string(I.t.acc6h6),
-                description: I.intl.formatToPlainString(I.t.WQazjs, {
+                title: f.intl.string(f.t.acc6h6),
+                description: f.intl.formatToPlainString(f.t.WQazjs, {
                     themeCount: 20
                 }),
                 primaryAsset: O.A,
-                ctaText: I.intl.string(I.t.jVcuVY),
+                ctaText: f.intl.string(f.t.jVcuVY),
                 onCtaClick: () => {
                     (0, c.nf)(c.HP.CUSTOM_THEME)
                 }
             }, {
                 id: x.PERMADECOS_CARD_ID,
-                title: I.intl.string(I.t.L14NZN),
-                description: I.intl.string(I.t.eCZkAI),
+                title: f.intl.string(f.t.L14NZN),
+                description: f.intl.string(f.t.eCZkAI),
                 primaryAsset: (0, i.jsx)(l.u7P, {
                     alt: "",
                     ariaHidden: !0
                 }),
-                ctaText: I.intl.string(I.t.jVcuVY),
+                ctaText: f.intl.string(f.t.jVcuVY),
                 onCtaClick: P
             }, {
                 id: x.CUSTOM_APP_ICONS_CARD_ID,
-                title: I.intl.string(I.t.rkb1vA),
-                description: I.intl.string(I.t["1uPk1Z"]),
+                title: f.intl.string(f.t.rkb1vA),
+                description: f.intl.string(f.t["1uPk1Z"]),
                 primaryAsset: v.A,
-                ctaText: I.intl.string(I.t.y9TxXV),
+                ctaText: f.intl.string(f.t.y9TxXV),
                 onCtaClick: L
             }],
             r = (s = s.filter(e => null != e))[0].featured,

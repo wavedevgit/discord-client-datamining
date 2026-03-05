@@ -27,8 +27,8 @@ function x() {
         T = g._z.useSetting(),
         S = g.j7.useSetting(),
         C = g.X6.useSetting(),
-        I = g.hD.useSetting(),
-        f = g.rs.useSetting(),
+        f = g.hD.useSetting(),
+        I = g.rs.useSetting(),
         b = g.jW.useSetting(),
         N = g.Hu.useSetting(),
         {
@@ -56,7 +56,7 @@ function x() {
                     children: [(0, i.jsx)(u.x, {
                         setting: A.H.CHAT_INLINE_MEDIA_LINKS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: I,
+                            checked: f,
                             onChange: g.hD.updateSetting,
                             label: p.intl.string(p.t.U47N1p)
                         })
@@ -87,7 +87,7 @@ function x() {
                     children: (0, i.jsx)(u.x, {
                         setting: A.H.CHAT_EMBEDS_LINK_PREVIEWS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: f,
+                            checked: I,
                             onChange: g.rs.updateSetting,
                             label: p.intl.string(p.t.xX0ZTA)
                         })

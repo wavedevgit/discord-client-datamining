@@ -35,7 +35,7 @@ function S(e) {
     if (null == g || m.Ay.getInterval(s).intervalType !== h.WT.MONTH) return null;
     let S = null != A ? A.skuId : null,
         C = g.skuId === S,
-        I = m.Ay.getDisplayName(s);
+        f = m.Ay.getDisplayName(s);
     if (_) t = E.intl.string(x.default["5asczk"]);
     else if (C && null != r) {
         let e;
@@ -45,9 +45,9 @@ function S(e) {
             date: n ?? 0
         })
     } else t = E.intl.formatToPlainString(E.t.eNXZ5O, {
-        planName: I
+        planName: f
     });
-    let f = n.hasFreePremium() || null != r && r.isPurchasedExternally;
+    let I = n.hasFreePremium() || null != r && r.isPurchasedExternally;
     return (0, i.jsxs)("div", {
         className: T.Bh,
         children: [(0, i.jsx)("div", {
@@ -66,9 +66,9 @@ function S(e) {
             children: [(0, i.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 children: E.intl.format(E.t.LzobT9, {
-                    planName: I
+                    planName: f
                 })
-            }), !f && (0, i.jsx)(d.Heading, {
+            }), !I && (0, i.jsx)(d.Heading, {
                 className: T.gj,
                 variant: "heading-sm/semibold",
                 color: "text-default",

@@ -42,7 +42,7 @@ function A(e) {
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
         }, [A, T]),
-        I = s.useCallback(() => {
+        f = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
@@ -50,11 +50,11 @@ function A(e) {
                 children: g.intl.string(g.t["W0/Duf"])
             }))
         }, []),
-        f = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
+        I = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
         b = null != A.phone,
         N = A.hasFlag(u.nhx.MFA_SMS);
     if (b || N) {
-        let e = p ? A.phone : f(A.phone);
+        let e = p ? A.phone : I(A.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [g.intl.format(g.t.PXVoEO, {
@@ -71,7 +71,7 @@ function A(e) {
         size: "sm",
         text: g.intl.string(g.t.KLWnit),
         loading: h,
-        onClick: I
+        onClick: f
     });
     else {
         let e = (0, c.B)(A);

@@ -26,11 +26,11 @@ function T(e) {
         onMountEffect: n
     } = e, T = (0, A.A)(), S = (0, h.W1)(), {
         familyCenterInitialized: C,
-        isLoading: I
+        isLoading: f
     } = (0, l.cf)([_.A], () => ({
         familyCenterInitialized: _.A.getIsInitialized(),
         isLoading: _.A.isLoading()
-    })), f = (0, m.k)(), {
+    })), I = (0, m.k)(), {
         selectedTab: b,
         handleTabChange: N
     } = (0, g.A)(), v = c.default.getCurrentUser(), j = null != T, O = C && null != v && !j;
@@ -41,7 +41,7 @@ function T(e) {
             isConsideredAdult: "adult" === T,
             numOfAcceptedRequests: S,
             selectedTab: b,
-            selectedTeenId: f
+            selectedTeenId: I
         },
         y = i.useRef(R);
     return i.useEffect(() => {
@@ -67,7 +67,7 @@ function T(e) {
     }, [C, j, t]), i.useEffect(() => {
         O && (0, r.yO)(E.w_.FAMILY_CENTER)
     }, [O]), {
-        isLoading: I,
+        isLoading: f,
         selectedTab: b,
         handleTabChange: N,
         showAgeGateModal: O

@@ -1115,8 +1115,8 @@ let g = [{
     };
 
 function b() {
-    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [m, b] = i.useState(null), [A, C] = i.useState("pm_card_us"), [y, T] = i.useState(!1), S = Object.values((0, s.bG)([u.A], () => u.A.paymentSources)), E = _[e], N = async () => {
-        let t = A;
+    let [e, t] = i.useState("US"), [n, d] = i.useState(null), [m, b] = i.useState(null), [j, A] = i.useState("pm_card_us"), [T, S] = i.useState(!1), E = Object.values((0, s.bG)([u.A], () => u.A.paymentSources)), N = _[e], I = async () => {
+        let t = j;
         "" === t && (t = "pm_card_us"), await l.Bo.post({
             url: "/debug/payment-source",
             body: {
@@ -1125,12 +1125,12 @@ function b() {
             },
             rejectWithError: !1
         }), await (0, o.$o)()
-    }, I = async () => {
+    }, k = async () => {
         await l.Bo.del({
             url: "/debug/payment-source",
             rejectWithError: !1
         }), await (0, o.$o)()
-    }, k = async () => {
+    }, R = async () => {
         await l.Bo.del({
             url: "/debug/rate-limits",
             rejectWithError: !1
@@ -1171,7 +1171,7 @@ function b() {
                         }
                     }),
                     onSelectionChange: e => {
-                        t(e), C(_[e][0].value), T(1 === _[e].length)
+                        t(e), A(_[e][0].value), S(1 === _[e].length)
                     }
                 }), "US" === e && (0, a.jsx)(r.l6P, {
                     selectionMode: "single",
@@ -1196,8 +1196,8 @@ function b() {
                     selectionMode: "single",
                     label: "Card Token",
                     hideLabel: !0,
-                    value: A,
-                    options: E.map(e => {
+                    value: j,
+                    options: N.map(e => {
                         let {
                             value: t,
                             label: n
@@ -1208,39 +1208,148 @@ function b() {
                             label: n
                         }
                     }),
-                    onSelectionChange: C,
-                    disabled: y
+                    onSelectionChange: A,
+                    disabled: T
                 }), (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Create Stripe Credit Card",
-                    onClick: N
-                }), S.length > 0 && (0, a.jsx)(r.Button, {
+                    onClick: I
+                }), E.length > 0 && (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Delete All Payment Sources",
-                    onClick: I
+                    onClick: k
                 }), (0, a.jsx)(r.Button, {
                     variant: "primary",
                     size: "sm",
                     text: "Reset API Rate limits and reload app",
-                    onClick: k
+                    onClick: R
                 })]
             }), (0, a.jsx)(r.Text, {
                 style: {
-                    marginTop: "16px",
+                    marginTop: "24px",
                     marginBottom: "16px"
                 },
-                variant: "text-md/normal",
+                variant: "text-lg/bold",
+                children: "Generate Gift Card PIN"
+            }), (0, a.jsx)(C, {}), (0, a.jsx)(r.Text, {
+                style: {
+                    marginTop: "24px",
+                    marginBottom: "16px"
+                },
+                variant: "text-lg/bold",
                 children: "Existing Payment Sources"
-            }), S.map(e => (0, a.jsx)(j, {
+            }), E.map(e => (0, a.jsx)(y, {
                 paymentSource: e
             }, e.id))]
         })
     })
 }
+let j = [{
+        id: "US",
+        value: "US",
+        label: "United States (USD)"
+    }, {
+        id: "CA",
+        value: "CA",
+        label: "Canada (CAD)"
+    }, {
+        id: "FR",
+        value: "FR",
+        label: "France (EUR)"
+    }, {
+        id: "GB",
+        value: "GB",
+        label: "United Kingdom (GBP)"
+    }, {
+        id: "DE",
+        value: "DE",
+        label: "Germany (EUR)"
+    }],
+    A = {
+        US: "usd",
+        CA: "cad",
+        FR: "eur",
+        GB: "gbp",
+        DE: "eur"
+    };
 
-function j(e) {
+function C() {
+    let [e, t] = i.useState("US"), [n, s] = i.useState("500"), [o, d] = i.useState(null), [c, u] = i.useState(!1), [m, h] = i.useState(!1), [x, p] = i.useState(null), g = parseInt(n, 10), _ = !isNaN(g) && g >= 500 && g <= 5e3, f = async () => {
+        if (_) {
+            u(!0), p(null), d(null), h(!1);
+            try {
+                let t = await l.Bo.post({
+                    url: "/billing/gift-card/create-on-demand-pin",
+                    body: {
+                        country: e,
+                        currency: A[e],
+                        amount: g
+                    },
+                    rejectWithError: !0
+                });
+                d(t.body.pin)
+            } catch (e) {
+                p(e instanceof Error ? e.message : "Failed to generate PIN")
+            } finally {
+                u(!1)
+            }
+        }
+    };
+    return (0, a.jsxs)(r.BJc, {
+        direction: "vertical",
+        gap: 8,
+        children: [(0, a.jsxs)(r.BJc, {
+            direction: "horizontal",
+            gap: 8,
+            align: "end",
+            children: [(0, a.jsx)(r.l6P, {
+                selectionMode: "single",
+                label: "Gift Card Country",
+                value: e,
+                options: j,
+                onSelectionChange: t
+            }), (0, a.jsx)(r.ksK, {
+                label: "Amount (500–5000)",
+                type: "number",
+                value: n,
+                onChange: s,
+                min: 500,
+                max: 5e3
+            }), (0, a.jsx)(r.Button, {
+                variant: "primary",
+                size: "sm",
+                text: "Generate Gift Card PIN",
+                onClick: f,
+                loading: c,
+                disabled: !_
+            })]
+        }), null != o && (0, a.jsxs)(r.BJc, {
+            direction: "horizontal",
+            gap: 8,
+            align: "end",
+            children: [(0, a.jsx)(r.ksK, {
+                label: "Generated PIN",
+                value: o,
+                onChange: () => {},
+                readOnly: !0
+            }), (0, a.jsx)(r.Button, {
+                variant: "secondary",
+                size: "sm",
+                text: m ? "Copied!" : "Copy",
+                onClick: () => {
+                    navigator.clipboard.writeText(o), h(!0), setTimeout(() => h(!1), 2e3)
+                }
+            })]
+        }), null != x && (0, a.jsx)(r.wx6, {
+            type: "critical",
+            children: x
+        })]
+    })
+}
+
+function y(e) {
     let {
         paymentSource: t
     } = e, n = async () => {

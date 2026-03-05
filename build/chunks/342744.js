@@ -1,6 +1,6 @@
 /** chunk id: 342744, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => f
+    default: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -48,7 +48,7 @@ function C(e) {
     })
 }
 
-function I() {
+function f() {
     return (0, i.jsxs)("div", {
         className: T.rf,
         children: [(0, i.jsx)("div", {
@@ -59,7 +59,7 @@ function I() {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         guildBoostSlotId: t,
         transitionState: n,
@@ -71,7 +71,7 @@ function f(e) {
         p.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
     let T = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-        [f, b] = s.useState(1),
+        [I, b] = s.useState(1),
         [N, v] = s.useState(!1),
         [j, O] = s.useState(null),
         R = s.useCallback(async () => {
@@ -91,7 +91,7 @@ function f(e) {
             onClose: async () => await l(),
             size: "sm",
             title: (() => {
-                switch (f) {
+                switch (I) {
                     case 1:
                         return E.intl.string(E.t.l52ih2);
                     case 2:
@@ -101,7 +101,7 @@ function f(e) {
                 }
             })(),
             actions: (() => {
-                switch (f) {
+                switch (I) {
                     case 1:
                         return [{
                             variant: "secondary",
@@ -126,15 +126,15 @@ function f(e) {
             })(),
             children: (() => {
                 if (null == T) return (0, i.jsx)(d.y$y, {});
-                switch (f) {
+                switch (I) {
                     case 1:
                         return (0, i.jsx)(C, {
                             errorMsg: j
                         });
                     case 2:
-                        return (0, i.jsx)(I, {});
+                        return (0, i.jsx)(f, {});
                     default:
-                        throw Error(`Unexpected step: ${f}`)
+                        throw Error(`Unexpected step: ${I}`)
                 }
             })()
         })

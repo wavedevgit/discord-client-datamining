@@ -1,6 +1,6 @@
 /** chunk id: 830001, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    f: () => I
+    f: () => f
 });
 var i = n(627968),
     s = n(934551),
@@ -32,7 +32,7 @@ let C = (0, u.t_)(h.X.PROFILE_PANEL, {
         }),
         buildLayout: () => [x.I]
     }),
-    I = (0, u.i4)(h.X.PROFILE_SIDEBAR_ITEM, {
+    f = (0, u.i4)(h.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t["vi7f+q"]),
         icon: function() {
             let e = (0, l.bG)([A.default], () => A.default.getCurrentUser()),

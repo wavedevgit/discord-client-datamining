@@ -23,8 +23,8 @@ var s = n(284009),
     T = n(164599),
     S = n(63675),
     C = n(617514),
-    I = n(546849),
-    f = n(101058),
+    f = n(546849),
+    I = n(101058),
     b = n(207803),
     N = n(836602),
     v = n(622543),
@@ -59,7 +59,7 @@ function L() {
                 errors: t
             }
         }),
-        H = (0, f.V7)({
+        H = (0, I.V7)({
             userId: e.id,
             image: n
         }),
@@ -81,7 +81,7 @@ function L() {
             pendingGlobalName: s,
             onGlobalNameChange: r.U6,
             user: e
-        }), (0, i.jsx)(I.A, {
+        }), (0, i.jsx)(f.A, {
             sectionTitle: y.intl.string(y.t["+T3RI/"]),
             errors: w.pronouns,
             onPronounsChange: b.Oz,

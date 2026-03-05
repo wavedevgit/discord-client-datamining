@@ -32,19 +32,19 @@ function A(e) {
         innerClassname: d,
         transparent: u = !1,
         hidden: A = !1,
-        toolbar: E,
-        mobileToolbar: m,
+        toolbar: m,
+        mobileToolbar: E,
         "aria-label": p,
-        "aria-labelledby": I,
+        "aria-labelledby": b,
         scrollable: T,
-        role: b,
+        role: I,
         hideSearch: L,
-        hideForLater: f,
-        showDivider: O,
-        disableDoubleClick: R
+        hideForLater: O,
+        showDivider: f,
+        disableDoubleClick: y
     } = e, {
         enabled: N,
-        inInbox: v
+        inInbox: R
     } = s.A.useExperiment({
         location: "HeaderBar"
     });
@@ -52,28 +52,28 @@ function A(e) {
         className: n,
         innerClassName: d,
         toolbar: function() {
-            if (null == E) return null;
+            if (null == m) return null;
             let e = null != r && !L;
-            return a.Fr ? m : (0, i.jsxs)(i.Fragment, {
-                children: [E, e && !(0, h.jq)(r) ? (0, i.jsx)(c.Ay, {
+            return a.Fr ? E : (0, i.jsxs)(i.Fragment, {
+                children: [m, e && !(0, h.jq)(r) ? (0, i.jsx)(c.Ay, {
                     guildId: l,
                     channelId: r,
                     className: C.$P
-                }, l ?? r) : null, O && (0, i.jsx)(_.Ay.Divider, {}), f || !N || v ? null : (0, i.jsx)(o.A, {})]
+                }, l ?? r) : null, f && (0, i.jsx)(_.Ay.Divider, {}), O || !N || R ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
         transparent: u,
         hidden: A,
-        onDoubleClick: () => g(R),
+        onDoubleClick: () => g(y),
         "aria-label": p,
-        "aria-labelledby": I,
-        role: b,
+        "aria-labelledby": b,
+        role: I,
         scrollable: T,
         children: t
     })
 }
 
-function E(e) {
+function m(e) {
     let {
         children: t,
         className: n,
@@ -92,7 +92,7 @@ function E(e) {
     })
 }
 
-function m(e) {
+function E(e) {
     let {
         isAuthenticated: t = !0,
         ...n
@@ -104,11 +104,11 @@ function m(e) {
         children: t ? (0, i.jsx)(A, {
             ...n,
             className: n.className
-        }) : (0, i.jsx)(E, {
+        }) : (0, i.jsx)(m, {
             ...n,
             className: n.className
         })
     })
 }
-m.Title = _.Ay.Title, m.Icon = _.Ay.Icon, m.ChannelIcon = _.Ay.ChannelIcon, m.Divider = _.Ay.Divider, m.Caret = _.Ay.Caret;
-let p = m
+E.Title = _.Ay.Title, E.Icon = _.Ay.Icon, E.ChannelIcon = _.Ay.ChannelIcon, E.Divider = _.Ay.Divider, E.Caret = _.Ay.Caret;
+let p = E

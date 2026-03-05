@@ -23,8 +23,8 @@ var s = n(284009),
     T = n(546849),
     S = n(101058),
     C = n(836602),
-    I = n(622543),
-    f = n(696451),
+    f = n(622543),
+    I = n(696451),
     b = n(71393),
     N = n(287809),
     v = n(927578),
@@ -59,7 +59,7 @@ function M() {
     })), B = (0, S.V7)({
         userId: e.id,
         image: s
-    }), Y = (0, d.EC)(n.id), F = (0, a.bG)([f.Ay], () => null == n.id ? null : f.Ay.getMember(n.id, e.id)), z = (0, a.bG)([I.A], () => I.A.getGuildMemberProfile(e.id, n.id)), X = v.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, F?.avatar), K = (0, u.Ac)(U, z?.banner), Z = (0, R.lS)(w, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
+    }), Y = (0, d.EC)(n.id), F = (0, a.bG)([I.Ay], () => null == n.id ? null : I.Ay.getMember(n.id, e.id)), z = (0, a.bG)([f.A], () => f.A.getGuildMemberProfile(e.id, n.id)), X = v.Ay.canUsePremiumProfileCustomization(e), W = (0, u.z5)(s, F?.avatar), K = (0, u.Ac)(U, z?.banner), Z = (0, R.lS)(w, z?.themeColors), q = z?.bio ?? "", J = z?.pronouns ?? "", Q = (e, t, n) => {
         n(e ?? (null != t ? null : void 0))
     };
     return (0, i.jsxs)("div", {

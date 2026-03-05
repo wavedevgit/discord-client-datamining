@@ -23,8 +23,8 @@ var i = n(627968),
     T = n(414079),
     S = n(416052),
     C = n(148810),
-    I = n(380610),
-    f = n(883600),
+    f = n(380610),
+    I = n(883600),
     b = n(235986),
     N = n(172272),
     v = n(263834),
@@ -150,7 +150,7 @@ class ei extends s.Component {
         this.setState({
             loading: !0
         });
-        let e = await (0, I.bD)();
+        let e = await (0, f.bD)();
         this.setState({
             loading: !1,
             buildOverrides: e,
@@ -1066,8 +1066,8 @@ function ec() {
 }
 
 function eu() {
-    let e = (0, u.bG)([f.A], () => f.A.overrideId()),
-        [t, n] = s.useState(f.A.overrideId() ?? "");
+    let e = (0, u.bG)([I.A], () => I.A.overrideId()),
+        [t, n] = s.useState(I.A.overrideId() ?? "");
     return (0, i.jsx)(G.x, {
         setting: W.H.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
         children: (0, i.jsxs)(A.nVY, {

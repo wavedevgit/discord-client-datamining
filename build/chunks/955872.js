@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(919395),
     S = n(884546),
     C = n(287070),
-    I = n(196291),
-    f = n(101058),
+    f = n(196291),
+    I = n(101058),
     b = n(836602),
     N = n(814390),
     v = n(351906),
@@ -52,7 +52,7 @@ function M() {
             ...b.A.getPendingChanges(),
             showNotice: b.A.showNotice()
         })),
-        V = (0, f.V7)({
+        V = (0, I.V7)({
             userId: e.id,
             image: l
         }),
@@ -94,7 +94,7 @@ function M() {
             active: W,
             children: (0, i.jsx)("div", {
                 ref: K,
-                children: (0, i.jsx)(I.A, {
+                children: (0, i.jsx)(f.A, {
                     user: e,
                     shouldShow: W,
                     isVisible: z

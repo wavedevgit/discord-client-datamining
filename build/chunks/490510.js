@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(843401),
     S = n(430452),
     C = n(532624),
-    I = n(975571),
-    f = n(723702),
+    f = n(975571),
+    I = n(723702),
     b = n(350535),
     N = n(958831),
     v = n(790174),
@@ -74,7 +74,7 @@ class D extends s.PureComponent {
         }) : O.Yy.has(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: R.intl.format(R.t.MOIaNd, {
-                keyboardNavArticle: I.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
+                keyboardNavArticle: f.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
             })
         }) : (0, i.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -199,11 +199,11 @@ class G extends s.PureComponent {
             id: "activate-overlay-region-text-widget",
             value: j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
             label: R.intl.string(R.t.hurHWo)
-        })), t && ((0, f.isWindows)() || S.Ay.getUseSystemScreensharePicker()) && l.push({
+        })), t && ((0, I.isWindows)() || S.Ay.getUseSystemScreensharePicker()) && l.push({
             id: "toggle-go-live-streaming",
             value: j.hCu.TOGGLE_GO_LIVE_STREAMING,
             label: R.intl.string(R.t.ybdjJD)
-        }), (0, f.isDesktop)() && (l.push({
+        }), (0, I.isDesktop)() && (l.push({
             id: "navigate-back",
             value: j.hCu.NAVIGATE_BACK,
             label: R.intl.string(R.t.gRSaOa)
@@ -254,7 +254,7 @@ class G extends s.PureComponent {
             [j.hCu.TOGGLE_STREAMER_MODE]: R.intl.string(R.t.YszLLx),
             [j.hCu.VAD_PRIORITY]: R.intl.string(R.t.rSe8IZ)
         };
-        return (0, x.L)() && (s[j.hCu.TOGGLE_CAMERA] = R.intl.string(R.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = R.intl.string(R.t.IoP5vc)), t && (0, f.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = R.intl.string(R.t.s4C238)), (0, f.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = R.intl.string(R.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = R.intl.string(R.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, f.isWindows)() ? R.intl.string(R.t["5wJefL"]) : R.intl.string(R.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, f.isWindows)() ? R.intl.string(R.t.RRkZc9) : R.intl.string(R.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = R.intl.string(R.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = R.intl.string(R.t.m0zd57)))), s
+        return (0, x.L)() && (s[j.hCu.TOGGLE_CAMERA] = R.intl.string(R.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = R.intl.string(R.t.IoP5vc)), t && (0, I.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = R.intl.string(R.t.s4C238)), (0, I.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = R.intl.string(R.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = R.intl.string(R.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, I.isWindows)() ? R.intl.string(R.t["5wJefL"]) : R.intl.string(R.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, I.isWindows)() ? R.intl.string(R.t.RRkZc9) : R.intl.string(R.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = R.intl.string(R.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = R.intl.string(R.t.m0zd57)))), s
     }
     handleAddKeybind = () => {
         u.A.addKeybind()
@@ -289,7 +289,7 @@ class G extends s.PureComponent {
             children: [(0, i.jsx)(v.A, {
                 title: R.intl.string(R.t.T9DA2K),
                 className: P.IE,
-                children: f.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
+                children: I.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: y.OQ,
                         children: [this.renderKeybindWarning(), (0, i.jsx)("div", {
@@ -383,7 +383,7 @@ function M() {
         keybinds: e,
         canGoLive: t,
         overlaySupported: n,
-        allowSoundboard: (0, f.isWindows)(),
+        allowSoundboard: (0, I.isWindows)(),
         enableClips: l,
         enableScreenshotKeybind: a
     })

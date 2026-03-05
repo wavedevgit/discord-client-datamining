@@ -522,16 +522,16 @@ class th extends r.PureComponent {
     componentWillUnmount() {
         eb.A.terminate(), eW.A.terminate(), ef.A.terminate(), ep.A.terminate(), O.A.terminate(), T.Ay.terminate(), H.Ay.terminate(), eY.A.terminate(), C.A.terminate(), eC.A.terminate(), eg.A.terminate(), eG.A.terminate(), f.A.terminate(), V.A.terminate(), es.A.terminate(), I.A.terminate(), eT.A.terminate(), eR.A.terminate(), e_.A.terminate(), eh.A.terminate(), em.A.terminate(), j.A.terminate(), D.A.terminate(), eE.A.terminate(), U.A.terminate(), F.A.terminate(), R.A.terminate(), x.A.terminate(), Y.A.terminate(), el.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
-    handleHistoryChange(e, t) {
+    handleHistoryChange(e) {
         let {
-            pathname: n,
-            search: i
+            pathname: t,
+            search: n
         } = e;
         ! function(e) {
             if ($.A.isConnected() || $.A.isTryingToConnect()) return;
             let t = eq.default.getToken();
             null == t || (0, ey.Q)(e) && d.A.startSession(t)
-        }(n),
+        }(t),
         function(e, t) {
             let n = tu(e);
             if (null == n) return;
@@ -582,10 +582,7 @@ class th extends r.PureComponent {
                     t || n ? eo.A.closeSidebar() : eo.A.openSidebar()
                 } else(o && A || !_ && !o) && eo.A.closeSidebar()
             } else to.some(t => (0, ex.B)(e, t)?.isExact === !0) || (0, ev.bG)(e$.A.fallbackRoute)
-        }(n, i), (0, k.MS)({
-            pathname: n,
-            source: e.source
-        }, t)
+        }(t, n), (0, k.MS)()
     }
     ensureChannelMatchesGuild(e) {
         if (!$.A.isConnected()) return null;

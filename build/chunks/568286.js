@@ -28,7 +28,7 @@ let p = e => {
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
             cancelSubscription: S,
             error: C,
-            submitting: I
+            submitting: f
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
             return {
@@ -44,7 +44,7 @@ let p = e => {
                 error: i,
                 submitting: t
             }
-        })(T), f = async () => {
+        })(T), I = async () => {
             await S(p.id) && x()
         }, b = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), N = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
             numChannels: b.length,
@@ -61,8 +61,8 @@ let p = e => {
             }, {
                 variant: "critical-primary",
                 text: A.intl.string(A.t.F6lUDF),
-                onClick: f,
-                loading: I
+                onClick: I,
+                loading: f
             }],
             title: A.intl.string(A.t.O6l5tM),
             subtitle: j,
