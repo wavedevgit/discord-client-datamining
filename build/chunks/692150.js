@@ -17,13 +17,13 @@ var a = n(627968),
     f = n(397400),
     g = n(187549),
     v = n(522055),
-    j = n(969117),
-    h = n(982257),
+    h = n(969117),
+    j = n(982257),
     A = n(270424),
     p = n(140033),
     C = n(486180),
-    b = n(566704),
-    N = n(652215),
+    N = n(566704),
+    b = n(652215),
     I = n(738072),
     E = n(985018),
     S = n(192150);
@@ -34,12 +34,12 @@ function T(e) {
     } = e;
     (0, f.tR)(t);
     let n = (0, g.U)("GameServerPage"),
-        T = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(N.GuildFeatures.GAME_SERVERS) ?? !1);
-    (0, b.A)(T ? t : null), s.useEffect(() => {
+        T = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(b.GuildFeatures.GAME_SERVERS) ?? !1);
+    (0, N.A)(T ? t : null), s.useEffect(() => {
         T && ((0, x.cq)(t), d.A.getDetectableGames())
     }, [t, T]);
     let y = (0, _.A)(t),
-        R = (0, j.N)("GameServerPage"),
+        R = (0, h.N)("GameServerPage"),
         M = (0, l.bG)([v.A], () => v.A.getStateForGuild(t)),
         G = s.useMemo(() => {
             if (!M?.hasFetchedInstances) return;
@@ -72,7 +72,7 @@ function T(e) {
                 variant: "text-sm/normal",
                 color: "text-muted",
                 children: E.intl.format(I.default.LiR4eN, {
-                    helpCenterUrl: m.A.getArticleURL(N.MVz.GAME_SERVER_HOSTING)
+                    helpCenterUrl: m.A.getArticleURL(b.MVz.GAME_SERVER_HOSTING)
                 })
             })]
         }), (0, a.jsxs)("div", {
@@ -82,7 +82,7 @@ function T(e) {
                 children: (0, a.jsx)(r.y$y, {
                     type: r.tVU.SPINNING_CIRCLE
                 })
-            }) : null == G ? (0, a.jsx)(h.A, {
+            }) : null == G ? (0, a.jsx)(j.A, {
                 guildId: t
             }) : (0, a.jsxs)("div", {
                 className: S.nd,

@@ -1,6 +1,6 @@
 /** chunk id: 140033 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => V
+    Ay: () => F
 });
 var a = n(627968),
     s = n(64700),
@@ -17,13 +17,13 @@ var a = n(627968),
     f = n(760751),
     g = n(403362),
     v = n(307600),
-    j = n(363487),
-    h = n(665171),
+    h = n(363487),
+    j = n(665171),
     A = n(397400),
     p = n(165655),
     C = n(496587),
-    b = n(684610),
-    N = n(500897),
+    N = n(684610),
+    b = n(500897),
     I = n(225180),
     E = n(117265),
     S = n(365003),
@@ -39,7 +39,7 @@ function L(e) {
         guildId: t,
         instance: n
     } = e, [i, l] = s.useState(!1), r = s.useCallback(() => {
-        l(!0), (0, h.as)(t, n.id).finally(() => {
+        l(!0), (0, j.as)(t, n.id).finally(() => {
             l(!1)
         })
     }, [t, n.id]);
@@ -87,7 +87,7 @@ function B(e) {
     let {
         guildId: t
     } = e, [n, i] = s.useState(!1), l = s.useCallback(() => {
-        i(!0), (0, h.cq)(t).finally(() => {
+        i(!0), (0, j.cq)(t).finally(() => {
             i(!1)
         })
     }, [t]);
@@ -116,21 +116,21 @@ function U(e) {
     })
 }
 
-function V(e) {
+function F(e) {
     let {
         guildId: t,
         instance: n
-    } = e, i = (0, E.A)(n), [h, V] = (0, _.kn)([c.M.GAME_SERVER_HOSTING_PORTKEY_TOS]), F = h !== c.M.GAME_SERVER_HOSTING_PORTKEY_TOS, w = (0, d.bG)([f.A], () => f.A.getDetectableGame(n.gameId)), W = (0, S.A)(n.providerType, n.gameServerPanelUrl), q = s.useCallback(() => {
-        (0, A.Ai)(t, n.gameId, w?.name ?? "", n.id), F || null == n.providerType ? (0, T.A)(t, n) : (0, y.A)({
+    } = e, i = (0, E.A)(n), [j, F] = (0, _.kn)([c.M.GAME_SERVER_HOSTING_PORTKEY_TOS]), V = j !== c.M.GAME_SERVER_HOSTING_PORTKEY_TOS, w = (0, d.bG)([f.A], () => f.A.getDetectableGame(n.gameId)), W = (0, S.A)(n.providerType, n.gameServerPanelUrl), q = s.useCallback(() => {
+        (0, A.Ai)(t, n.gameId, w?.name ?? "", n.id), V || null == n.providerType ? (0, T.A)(t, n) : (0, y.A)({
             provider: n.providerType,
             onAccept: () => {
-                V(R.i.TAKE_ACTION), (0, T.A)(t, n)
+                F(R.i.TAKE_ACTION), (0, T.A)(t, n)
             }
         })
-    }, [n, F, V, t, w?.name]), {
+    }, [n, V, F, t, w?.name]), {
         handleCopyServerIp: Y,
         animateCopyIcon: H
-    } = (0, N.A)(t, n.id, m.A.GAME_SERVER_GAME, i ?? ""), K = (0, I.A)(n.gameId, "cover"), Z = (0, j.A)(t), $ = s.useCallback(() => {
+    } = (0, b.A)(t, n.id, m.A.GAME_SERVER_GAME, i ?? ""), K = (0, I.A)(n.gameId, "cover"), Z = (0, h.A)(t), $ = s.useCallback(() => {
         (0, A.f7)(t, n.id), (0, v.h)({
             href: n.gameServerPanelUrl ?? ""
         })
@@ -253,7 +253,7 @@ function V(e) {
                             children: null == i ? (0, a.jsx)(u.Text, {
                                 variant: "text-sm/medium",
                                 children: "—"
-                            }) : F ? (0, a.jsxs)(a.Fragment, {
+                            }) : V ? (0, a.jsxs)(a.Fragment, {
                                 children: [(0, a.jsx)(u.Text, {
                                     variant: "text-sm/medium",
                                     children: i
@@ -272,7 +272,7 @@ function V(e) {
                                     (0, y.A)({
                                         provider: n.providerType,
                                         onAccept: () => {
-                                            V(R.i.TAKE_ACTION), Y()
+                                            F(R.i.TAKE_ACTION), Y()
                                         }
                                     })
                                 },
@@ -340,7 +340,7 @@ function V(e) {
             })]
         }), Z && (0, a.jsx)("div", {
             className: k.overflowMenu,
-            children: (0, a.jsx)(b.A, {
+            children: (0, a.jsx)(N.A, {
                 guildId: t,
                 instance: n
             })

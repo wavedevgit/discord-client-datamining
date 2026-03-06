@@ -23,10 +23,10 @@ function v(e) {
             className: n
         } = e,
         v = (0, s.bG)([r.A], () => r.A.useReducedMotion),
-        j = (0, l.Ay)(),
-        h = (0, i.qB1)(j);
+        h = (0, l.Ay)(),
+        j = (0, i.qB1)(h);
     if (v) {
-        let e = h ? g.A : _.A;
+        let e = j ? g.A : _.A;
         return (0, a.jsxs)("div", {
             className: n,
             children: [(0, a.jsx)("div", {
@@ -37,7 +37,7 @@ function v(e) {
             })]
         })
     }
-    return t = (0, c.TM)() ? h ? x.A : u.A : h ? f.A : m.A, (0, a.jsxs)("div", {
+    return t = (0, c.TM)() ? j ? x.A : u.A : j ? f.A : m.A, (0, a.jsxs)("div", {
         className: n,
         children: [(0, a.jsx)("div", {
             className: o.YL

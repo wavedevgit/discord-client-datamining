@@ -17,8 +17,8 @@ var a = n(627968),
     f = n(800007),
     g = n(738072),
     v = n(985018),
-    j = n(442800);
-let h = {
+    h = n(442800);
+let j = {
     ...f.ZN,
     initialStep: f.HS.SERVER_SETTINGS
 };
@@ -27,39 +27,43 @@ function A(e) {
     let {
         guildId: t,
         isAdmin: n
-    } = e;
+    } = e, {
+        state: A,
+        shouldFetchCatalog: p
+    } = (0, l.cf)([u.A], () => ({
+        state: u.A.getStateForGuild(t),
+        shouldFetchCatalog: u.A.shouldFetchCatalogForGuild(t)
+    }));
     s.useEffect(() => {
-        (0, o.z9)(t)
-    }, [t]);
-    let A = (0, l.bG)([u.A], () => u.A.getStateForGuild(t)),
-        {
-            catalog: p,
-            instances: C
-        } = s.useMemo(() => ({
-            catalog: Object.values(A?.catalog ?? {}),
-            instances: Object.values(A?.instances ?? {})
-        }), [A?.catalog, A?.instances]),
-        b = C.length >= f.ZI;
-    return 0 === p.length ? (0, a.jsx)("div", {
-        className: j.kL,
+        p && (0, o.z9)(t)
+    }, [t, p]);
+    let {
+        catalog: C,
+        instances: N
+    } = s.useMemo(() => ({
+        catalog: Object.values(A?.catalog ?? {}),
+        instances: Object.values(A?.instances ?? {})
+    }), [A?.catalog, A?.instances]), b = N.length >= f.ZI;
+    return 0 === C.length ? (0, a.jsx)("div", {
+        className: h.kL,
         children: (0, a.jsx)(d.y$y, {
             type: d.tVU.SPINNING_CIRCLE,
-            className: j.u1
+            className: h.u1
         })
     }) : (0, a.jsxs)("div", {
-        className: j.kL,
+        className: h.kL,
         children: [(0, a.jsx)(i.DZT, {
-            className: j.R_,
+            className: h.R_,
             variant: "heading-md/semibold",
             children: v.intl.string(n ? g.default["3vWDMz"] : g.default.Uvf9GK)
         }), n && b && (0, a.jsx)("div", {
-            className: j.Bq,
+            className: h.Bq,
             children: (0, a.jsx)(_.k, {})
         }), (0, a.jsx)(i.IpV, {
-            className: j.nd,
+            className: h.nd,
             children: (0, a.jsx)("div", {
-                className: j.Y_,
-                children: p.map((e, s) => n ? (0, a.jsx)(r.m, {
+                className: h.Y_,
+                children: C.map((e, s) => n ? (0, a.jsx)(r.m, {
                     asContainer: !0,
                     text: e.disabled ? v.intl.formatToPlainString(g.default.uVpJYf, {
                         gameName: e.name
@@ -70,12 +74,12 @@ function A(e) {
                         game: e,
                         onClick: () => (0, x.A)({
                             guildId: t,
-                            stepConfig: h,
+                            stepConfig: j,
                             initialGameServerGame: e,
                             analyticsLocation: c.A.GAME_SERVER_PAGE_SIDEBAR
                         }),
-                        imageClassName: j.Sl,
-                        titleClassName: j.DD,
+                        imageClassName: h.Sl,
+                        titleClassName: h.DD,
                         variant: b || e.disabled ? m.e.DISABLED : m.e.CLICKABLE,
                         location: c.A.GAME_SERVER_PAGE_SIDEBAR
                     })
@@ -83,8 +87,8 @@ function A(e) {
                     guildId: t,
                     game: e,
                     variant: m.e.VIEWABLE,
-                    imageClassName: j.Sl,
-                    titleClassName: j.DD,
+                    imageClassName: h.Sl,
+                    titleClassName: h.DD,
                     location: c.A.GAME_SERVER_PAGE_SIDEBAR
                 }, `sidebar-game-${s}-${e.id}`))
             })

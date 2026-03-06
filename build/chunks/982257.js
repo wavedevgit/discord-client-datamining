@@ -17,15 +17,15 @@ var a = n(627968),
     f = n(800007),
     g = n(652215),
     v = n(738072),
-    j = n(985018),
-    h = n(529631);
+    h = n(985018),
+    j = n(529631);
 
 function A(e) {
     let {
         guildId: t
     } = e, A = (0, u.A)(t), p = s.useRef(null), {
         analyticsLocations: C
-    } = (0, d.Ay)(r.A.GAME_SERVER_PAGE), b = s.useCallback(() => {
+    } = (0, d.Ay)(r.A.GAME_SERVER_PAGE), N = s.useCallback(() => {
         let e = o.A.getGuild(t);
         null != e && (0, c.g)({
             analyticsLocation: {
@@ -36,7 +36,7 @@ function A(e) {
             analyticsLocations: C,
             guild: e
         })
-    }, [t, C]), N = s.useCallback(() => {
+    }, [t, C]), b = s.useCallback(() => {
         (0, m.A)(t, r.A.GAME_SERVER_PAGE, f.W5)
     }, [t]), I = s.useCallback(() => {
         (0, l.mMO)(async () => {
@@ -50,14 +50,14 @@ function A(e) {
         })
     }, [t]);
     return (0, a.jsxs)("div", {
-        className: h.kL,
+        className: j.kL,
         children: [(0, a.jsx)(_.A, {
-            className: h.y2
+            className: j.y2
         }), (0, a.jsxs)("div", {
-            className: h.Qs,
+            className: j.Qs,
             children: [(0, a.jsx)("div", {
                 ref: p,
-                className: h._q,
+                className: j._q,
                 children: (0, a.jsx)(i.E_w, {
                     eventTargetRef: p,
                     fit: "contain",
@@ -66,39 +66,39 @@ function A(e) {
             }), (0, a.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: A ? j.intl.string(v.default.SbXvFG) : j.intl.string(v.default.ryqCyJ)
+                children: A ? h.intl.string(v.default.SbXvFG) : h.intl.string(v.default.ryqCyJ)
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                className: h.h_,
-                children: A ? j.intl.string(v.default.D1YcNp) : j.intl.string(v.default.iSX4z8)
+                className: j.h_,
+                children: A ? h.intl.string(v.default.D1YcNp) : h.intl.string(v.default.iSX4z8)
             }), (0, a.jsx)("div", {
-                className: h.Uo,
+                className: j.Uo,
                 children: A ? (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(l.Button, {
                         variant: "expressive",
-                        text: j.intl.string(j.t.LhlgY9),
-                        onClick: N
+                        text: h.intl.string(h.t.LhlgY9),
+                        onClick: b
                     }), (0, a.jsx)(l.Button, {
                         variant: "secondary",
-                        text: j.intl.string(v.default.fxIXv4),
+                        text: h.intl.string(v.default.fxIXv4),
                         onClick: I
                     })]
                 }) : (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(l.Button, {
                         variant: "expressive",
                         icon: l._Jp,
-                        text: j.intl.string(v.default["968/QC"]),
-                        onClick: b
+                        text: h.intl.string(v.default["968/QC"]),
+                        onClick: N
                     }), (0, a.jsx)(l.Button, {
                         variant: "secondary",
-                        text: j.intl.string(v.default.fxIXv4),
+                        text: h.intl.string(v.default.fxIXv4),
                         onClick: I
                     })]
                 })
             })]
         }), (0, a.jsx)("div", {
-            className: h.o2,
+            className: j.o2,
             children: Array.from({
                 length: 4
             }).map((e, t) => (0, a.jsx)(x.A, {}, t))
