@@ -4,9 +4,9 @@ n.d(t, {
     q: () => I
 });
 var a, i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
     o = n(837381),
     c = n(311907),
     d = n(990078),
@@ -25,7 +25,7 @@ function x(e) {
     let {
         tag: t,
         size: a = 1,
-        disabled: l,
+        disabled: r,
         className: d,
         onClick: T,
         onRemove: x,
@@ -35,14 +35,14 @@ function x(e) {
         name: E,
         emojiId: S,
         emojiName: y
-    } = t, v = null != x, [j, R] = r.useState(!1), M = (0, c.bG)([f.Ay], () => null != S ? f.Ay.getUsableCustomEmojiById(S) : null), N = v || null != T, O = (!v || !j) && (null != S || null != y), w = 0 === a, D = r.useRef(null), k = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), G = (0, i.jsxs)(i.Fragment, {
+    } = t, v = null != x, [j, M] = l.useState(!1), R = (0, c.bG)([f.Ay], () => null != S ? f.Ay.getUsableCustomEmojiById(S) : null), N = v || null != T, O = (!v || !j) && (null != S || null != y), w = 0 === a, D = l.useRef(null), k = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), U = (0, i.jsxs)(i.Fragment, {
         children: [O ? (0, i.jsx)(m.A, {
             className: s()(A.emoji, {
                 [A.small]: w
             }),
             emojiId: S,
             emojiName: y,
-            animated: !!M?.animated,
+            animated: !!R?.animated,
             size: "reaction"
         }) : null, j && v && (0, i.jsx)("div", {
             className: A.closeCircle,
@@ -57,10 +57,10 @@ function x(e) {
             color: "currentColor",
             children: E
         })]
-    }), U = {
+    }), G = {
         key: t.id,
         className: s()(A.pill, {
-            [A.disabled]: l,
+            [A.disabled]: r,
             [A.clickable]: N,
             [A.small]: w,
             [A.selected]: I,
@@ -81,8 +81,8 @@ function x(e) {
                 })
             }))
         },
-        onMouseEnter: () => v && R(!0),
-        onMouseLeave: () => v && R(!1)
+        onMouseEnter: () => v && M(!0),
+        onMouseLeave: () => v && M(!1)
     }, L = (0, o.rm)(`forum-tag-${t.id}`);
     return N ? (0, i.jsx)(u.DUT, {
         ...L,
@@ -95,11 +95,11 @@ function x(e) {
         }),
         role: "button",
         "aria-pressed": I,
-        ...U,
-        children: G
+        ...G,
+        children: U
     }) : (0, i.jsx)("div", {
-        ...U,
-        children: G
+        ...G,
+        children: U
     })
 }
 
@@ -108,7 +108,7 @@ function I(e) {
         tags: t,
         count: n,
         size: a = 1
-    } = e, r = 0 === a;
+    } = e, l = 0 === a;
     return (0, i.jsx)(d.m, {
         "aria-label": g.intl.string(g.t["P/y+sj"]),
         __unsupportedReactNodeAsText: (0, i.jsx)(i.Fragment, {
@@ -120,10 +120,10 @@ function I(e) {
         }),
         children: (0, i.jsx)("div", {
             className: s()(A.pill, {
-                [A.small]: r
+                [A.small]: l
             }),
             children: (0, i.jsxs)(u.Text, {
-                variant: r ? "text-xs/semibold" : "text-sm/semibold",
+                variant: l ? "text-xs/semibold" : "text-sm/semibold",
                 children: ["+", n]
             })
         })

@@ -3,11 +3,11 @@
 n.d(t, {
     A: () => c
 });
-var a = n(311907),
-    l = n(73153);
+var l = n(311907),
+    a = n(73153);
 let i = {},
     r = {};
-class s extends a.Ay.Store {
+class s extends l.Ay.Store {
     static displayName = "GameProfileStore";
     getSimilarGames(e) {
         return i[e]
@@ -16,7 +16,7 @@ class s extends a.Ay.Store {
         return r[e]
     }
 }
-let c = new s(l.h, {
+let c = new s(a.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,

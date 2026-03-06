@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => r
 });
-var a = n(627968),
-    l = n(942528),
+var l = n(627968),
+    a = n(942528),
     i = n(409626);
 
 function r(e) {
@@ -14,7 +14,7 @@ function r(e) {
         officialGuildId: r,
         source: s
     } = e;
-    return (0, a.jsx)(l.A, {
+    return (0, l.jsx)(a.A, {
         ...e,
         onReaction: () => {
             (0, i.Tn)({

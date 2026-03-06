@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    r = n(158954),
-    l = n(311907),
+    l = n(158954),
+    r = n(311907),
     s = n(562465),
     o = n(732955),
     c = n(843472),
@@ -28,20 +28,20 @@ var a = n(627968),
     y = n(652215),
     v = n(818348),
     j = n(985018),
-    R = n(181549);
-async function M(e) {
+    M = n(181549);
+async function R(e) {
     let t, {
             thread: n,
             attachments: a,
             setIsUploading: i,
-            guild: r,
-            onClose: l
+            guild: l,
+            onClose: r
         } = e,
         o = A.default.castChannelIdAsMessageId(n.id),
         m = new u.A;
     m.on("progress", e => {
-        let t = (0, g.o2)(r.id);
-        e.currentSize > t && (m.cancel(), i(!1), l(), (0, x.V)(n, (0, I.LJ)(a)))
+        let t = (0, g.o2)(l.id);
+        e.currentSize > t && (m.cancel(), i(!1), r(), (0, x.V)(n, (0, I.LJ)(a)))
     });
     let p = h.A.getMessage(n.id, o),
         b = null != p ? p.attachments : [];
@@ -60,9 +60,9 @@ async function M(e) {
                 attachments: C
             },
             rejectWithError: !1
-        }), l(), d.A.clearAll(n.id, f.C.ChannelMessage)
+        }), r(), d.A.clearAll(n.id, f.C.ChannelMessage)
     } catch (e) {
-        i(!1), e.body?.code === y.t02.EXPLICIT_CONTENT && (l(), c.A.sendExplicitMediaClydeError(n.id, e.body?.attachments, _.SW.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), d.A.clearAll(n.id, f.C.ChannelMessage))
+        i(!1), e.body?.code === y.t02.EXPLICIT_CONTENT && (r(), c.A.sendExplicitMediaClydeError(n.id, e.body?.attachments, _.SW.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), d.A.clearAll(n.id, f.C.ChannelMessage))
     }
 }
 
@@ -73,7 +73,7 @@ function N(e) {
         sendMessage: s,
         transitionState: c,
         onClose: d
-    } = e, u = (0, l.bG)([p.A], () => p.A.getChannel(t), [t]), _ = (0, l.bG)([b.A], () => b.A.getGuild(u?.getGuildId()), [u]), f = (0, l.bG)([p.A], () => p.A.getChannel(u?.parent_id), [u]), h = n[0]?.item, [g, A] = i.useState(null);
+    } = e, u = (0, r.bG)([p.A], () => p.A.getChannel(t), [t]), _ = (0, r.bG)([b.A], () => b.A.getGuild(u?.getGuildId()), [u]), f = (0, r.bG)([p.A], () => p.A.getChannel(u?.parent_id), [u]), h = n[0]?.item, [g, A] = i.useState(null);
     i.useEffect(() => {
         null != h && (0, m.JF)(h.file, (e, t) => A(e), v.tE)
     }, [h]);
@@ -93,7 +93,7 @@ function N(e) {
         N = i.useCallback(() => {
             null != u && null != _ && ((0, C.jh)({
                 added: !0
-            }), M({
+            }), R({
                 thread: u,
                 attachments: n,
                 setIsUploading: I,
@@ -101,7 +101,7 @@ function N(e) {
                 onClose: d
             }))
         }, [u, n, I, _, d]);
-    return null == f ? null : (0, a.jsx)(r.Modal, {
+    return null == f ? null : (0, a.jsx)(l.Modal, {
         title: j.intl.string(j.t["+SZF6S"]),
         subtitle: j.intl.string(j.t["0Ycgw5"]),
         transitionState: c,
@@ -130,7 +130,7 @@ function N(e) {
                 threadId: t,
                 goToThread: v.tE,
                 overrideMedia: T,
-                className: R.u
+                className: M.u
             })
         })
     })

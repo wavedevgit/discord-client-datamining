@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(435371),
-    r = n(397927),
-    l = n(769015),
+    l = n(397927),
+    r = n(769015),
     s = n(985018),
     o = n(555066);
 
@@ -16,8 +16,8 @@ function c(e) {
         children: n
     } = e;
     return (0, a.jsx)(i.un, {
-        asset: (0, a.jsx)(l.A, {
-            size: l.M.MEDIUM_LARGE,
+        asset: (0, a.jsx)(r.A, {
+            size: r.M.MEDIUM_LARGE,
             game: t
         }),
         body: s.intl.format(s.t.J3s8JP, {
@@ -26,7 +26,7 @@ function c(e) {
         position: "top",
         asContainer: !0,
         "aria-label": s.intl.string(s.t["5nMcv1"]),
-        children: (0, a.jsx)(r.DUT, {
+        children: (0, a.jsx)(l.DUT, {
             tag: "span",
             children: n
         })
@@ -41,7 +41,7 @@ function d(e) {
     } = e;
     return (0, a.jsxs)(c, {
         application: t,
-        children: [n ? null : (0, a.jsx)(r._xR, {
+        children: [n ? null : (0, a.jsx)(l._xR, {
             className: o.Gt,
             size: "custom",
             width: 14,

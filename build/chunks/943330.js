@@ -1,19 +1,19 @@
 /** chunk id: 943330 params = (module,exports,require) **/
 n.d(t, {
-    L: () => r
+    L: () => l
 });
 var a = n(927813),
     i = n(985018);
 
-function r(e) {
+function l(e) {
     if (e >= a.A.Seconds.HOUR) {
         let t = Math.floor(e / a.A.Seconds.HOUR),
             n = Math.floor((e - t * a.A.Seconds.HOUR) / a.A.Seconds.MINUTE),
-            r = e - t * a.A.Seconds.HOUR - n * a.A.Seconds.MINUTE;
+            l = e - t * a.A.Seconds.HOUR - n * a.A.Seconds.MINUTE;
         return i.intl.formatToPlainString(i.t["3hz51F"], {
             hours: t,
             minutes: n,
-            seconds: r
+            seconds: l
         })
     }
     if (!(e >= 60)) return i.intl.formatToPlainString(i.t.IWntYg, {

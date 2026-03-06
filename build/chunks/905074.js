@@ -50,27 +50,27 @@ let h = e => {
         } = e, f = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: d.B
-        }), []), [C, j] = a.useState(""), [T, N] = a.useState(""), [I, y] = a.useState(null), [S, k] = a.useState(null), [E, w] = a.useState(!1);
+        }), []), [C, j] = a.useState(""), [T, N] = a.useState(""), [I, S] = a.useState(null), [y, k] = a.useState(null), [E, w] = a.useState(!1);
         a.useEffect(() => {
             j(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(g(A.value))
         }, [A, v]);
-        let R = a.useCallback(e => {
+        let M = a.useCallback(e => {
                 if (j(e), "" === e) {
-                    y(null), w(!1), N(""), k(null), h({
+                    S(null), w(!1), N(""), k(null), h({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    y(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), h({
+                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), h({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = g(e);
-                w(t), y(null), t ? "" === T ? h({
+                w(t), S(null), t ? "" === T ? h({
                     value: e,
                     isValid: !1
                 }) : x.test(T) ? h({
@@ -90,7 +90,7 @@ let h = e => {
                     isValid: !0
                 }))
             }, [h, T]),
-            M = a.useCallback(e => {
+            R = a.useCallback(e => {
                 if (N(e), "" === e || !x.test(e)) {
                     k(o.intl.string(o.t["24xrGb"])), h({
                         value: C,
@@ -124,7 +124,7 @@ let h = e => {
                             })]
                         })
                     }), (0, l.jsx)(r.ksK, {
-                        onChange: R,
+                        onChange: M,
                         value: C,
                         error: I,
                         placeholder: s,
@@ -142,9 +142,9 @@ let h = e => {
                             })]
                         })
                     }), (0, l.jsx)(r.ksK, {
-                        onChange: M,
+                        onChange: R,
                         value: T,
-                        error: S,
+                        error: y,
                         placeholder: m
                     })]
                 })]

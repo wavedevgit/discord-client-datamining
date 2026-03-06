@@ -6,11 +6,11 @@ n.d(t, {
 });
 var a = n(311907),
     i = n(696451),
-    r = n(287809),
-    l = n(316031);
+    l = n(287809),
+    r = n(316031);
 
 function s(e) {
-    let t = (0, a.bG)([r.default], () => r.default.getCurrentUser());
+    let t = (0, a.bG)([l.default], () => l.default.getCurrentUser());
     return d(t?.id, e)
 }
 
@@ -19,7 +19,7 @@ function o(e, t, n) {
 }
 
 function c(e) {
-    return [e?.communicationDisabledUntil ?? null, (0, l.Z)(e)]
+    return [e?.communicationDisabledUntil ?? null, (0, r.Z)(e)]
 }
 
 function d(e, t) {

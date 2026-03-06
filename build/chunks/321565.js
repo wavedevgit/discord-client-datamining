@@ -31,8 +31,8 @@ function f(e) {
         items: a,
         startingIndex: l,
         enabledContentHarmTypeFlags: f,
-        shouldHideMediaOptions: y = !1,
-        transitionState: C,
+        shouldHideMediaOptions: C = !1,
+        transitionState: y,
         ...I
     } = e, [x, M] = i.useState(l ?? 0), [O, N] = i.useState(!1), [b, R] = (0, o.zhh)(() => ({
         scale: u.A.useReducedMotion ? 1 : .9,
@@ -48,9 +48,9 @@ function f(e) {
             m._.unsubscribe(g.jej.MEDIA_MODAL_CLOSE, t)
         }
     }, [t]), i.useEffect(() => {
-        C === o.ip4.ENTERING && S(b.scale, 1), C === o.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), C === o.ip4.HIDDEN && (S(b.scale, .9), d.A.disable(), d.A.enableTemp(c.b)), C === o.ip4.EXITING && S(b.scale, .9);
+        y === o.ip4.ENTERING && S(b.scale, 1), y === o.ip4.ENTERED && (d.A.disable(), d.A.enableTemp(c.w)), y === o.ip4.HIDDEN && (S(b.scale, .9), d.A.disable(), d.A.enableTemp(c.b)), y === o.ip4.EXITING && S(b.scale, .9);
         let e = () => {
-                d.A.disable(), C === o.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
+                d.A.disable(), y === o.ip4.ENTERED ? d.A.enableTemp(c.w) : d.A.enableTemp(c.b)
             },
             t = () => {
                 d.A.disableTemp()
@@ -59,7 +59,7 @@ function f(e) {
         return a?.addEventListener("focus", e), a?.addEventListener("blur", t), () => {
             a?.removeEventListener("focus", e), a?.removeEventListener("blur", t), d.A.disableTemp()
         }
-    }, [C, b]);
+    }, [y, b]);
     let D = i.useCallback(e => {
             M(e), _.l.markActionPerformed(_.N.SELECTED_ITEM_CHANGE)
         }, []),
@@ -84,7 +84,7 @@ function f(e) {
             "data-migration-pending": !0,
             hideShadow: !0,
             className: s()(T.O, e),
-            transitionState: C,
+            transitionState: y,
             ...I,
             size: o.rIJ.DYNAMIC,
             animation: r.WM.SUBTLE,
@@ -96,7 +96,7 @@ function f(e) {
                 value: j,
                 children: [(0, n.jsx)(h.A, {
                     item: a[x],
-                    hideMediaOptions: y,
+                    hideMediaOptions: C,
                     onClose: t
                 }), (0, n.jsx)("div", {
                     style: {
@@ -108,7 +108,7 @@ function f(e) {
                     startIndex: x,
                     onIndexChange: D,
                     enabledContentHarmTypeFlags: f,
-                    shouldHideMediaOptions: y
+                    shouldHideMediaOptions: C
                 })]
             })
         })

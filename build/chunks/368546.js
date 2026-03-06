@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => i
 });
-var a = n(64700);
-let l = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
+var l = n(64700);
+let a = "requestVideoFrameCallback" in HTMLVideoElement.prototype;
 
 function i(e) {
     let {
@@ -12,20 +12,20 @@ function i(e) {
         canvasRef: n,
         enabled: i
     } = e;
-    a.useEffect(() => {
+    l.useEffect(() => {
         if (!i) return;
         let e = t.current,
-            a = n.current;
-        if (null == e || null == a) return;
-        a.width = 10, a.height = 6;
-        let r = a.getContext("2d");
+            l = n.current;
+        if (null == e || null == l) return;
+        l.width = 10, l.height = 6;
+        let r = l.getContext("2d");
         if (null == r) return;
         let s = !1;
 
         function c() {
             s || e.readyState < 2 || r.drawImage(e, 0, 0, 10, 6)
         }
-        if (l) {
+        if (a) {
             let t;
 
             function o() {

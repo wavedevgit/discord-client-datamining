@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(64700),
     i = n(473193),
-    r = n(203982),
-    l = n(652215);
+    l = n(203982),
+    r = n(652215);
 
 function s(e) {
     let {
@@ -18,6 +18,6 @@ function s(e) {
         let {
             setAnimate: e
         } = o;
-        return r._.subscribeKeyed(l.zOV.ANIMATE_CHAT_AVATAR, `${n}:${s}`, e), () => void r._.unsubscribeKeyed(l.zOV.ANIMATE_CHAT_AVATAR, `${n}:${s}`, e)
+        return l._.subscribeKeyed(r.zOV.ANIMATE_CHAT_AVATAR, `${n}:${s}`, e), () => void l._.unsubscribeKeyed(r.zOV.ANIMATE_CHAT_AVATAR, `${n}:${s}`, e)
     }, [t, s, n, o])
 }

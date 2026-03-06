@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => x
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(990078),
     r = n(397927),
     s = n(223273),
@@ -41,56 +41,56 @@ let x = function(e) {
             default:
                 return "text-subtle"
         }
-    }(g), [_, v] = l.useState(!1), j = l.useCallback(() => {
+    }(g), [_, v] = a.useState(!1), j = a.useCallback(() => {
         v(!0)
-    }, []), A = l.useCallback(() => {
+    }, []), A = a.useCallback(() => {
         v(!1)
-    }, []), I = l.useCallback(() => {
+    }, []), I = a.useCallback(() => {
         null != f && window.open((0, o.L)(f), "_blank", "noreferrer noopener")
     }, [f]);
-    return null == f ? null : (0, a.jsxs)("div", {
+    return null == f ? null : (0, l.jsxs)("div", {
         className: m.uW,
-        children: [(0, a.jsx)("div", {
+        children: [(0, l.jsx)("div", {
             className: m.Gf,
-            children: (0, a.jsx)(r.Heading, {
+            children: (0, l.jsx)(r.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 children: u.intl.string(u.t.GaAQXP)
             })
-        }), (0, a.jsx)(i.m, {
+        }), (0, l.jsx)(i.m, {
             text: u.intl.string(u.t.YNC5Di),
             shouldShow: !_,
-            children: (0, a.jsx)(r.DUT, {
+            children: (0, l.jsx)(r.DUT, {
                 onClick: I,
                 className: m.nf,
                 role: "link",
                 "aria-label": u.intl.string(u.t.YNC5Di),
-                children: (0, a.jsx)("div", {
+                children: (0, l.jsx)("div", {
                     className: m.kL,
-                    children: (0, a.jsx)("div", {
+                    children: (0, l.jsx)("div", {
                         className: m.WH,
-                        children: (0, a.jsxs)("div", {
+                        children: (0, l.jsxs)("div", {
                             className: m.U6,
-                            children: [(0, a.jsxs)("div", {
+                            children: [(0, l.jsxs)("div", {
                                 className: m.tN,
-                                children: [(0, a.jsx)(r.NXQ, {
+                                children: [(0, l.jsx)(r.NXQ, {
                                     size: "sm",
                                     color: r.LU0.colors.ICON_STRONG.css
-                                }), (0, a.jsx)(r.Heading, {
+                                }), (0, l.jsx)(r.Heading, {
                                     variant: "heading-sm/medium",
                                     color: "text-strong",
                                     children: u.intl.string(u.t.whmopT)
                                 })]
-                            }), (0, a.jsx)(i.m, {
+                            }), (0, l.jsx)(i.m, {
                                 text: g === s.vI.NO_USER_REVIEWS ? u.intl.string(u.t.CLMt8J) : u.intl.format(u.t["lzANJ/"], {
                                     rating: h.rating,
                                     rating_count: h.ratingCount?.toLocaleString()
                                 }).toString(),
                                 onTooltipShow: j,
                                 onTooltipHide: A,
-                                children: (0, a.jsxs)("div", {
+                                children: (0, l.jsxs)("div", {
                                     className: m.Z0,
-                                    children: [(0, a.jsx)(r.Text, {
+                                    children: [(0, l.jsx)(r.Text, {
                                         variant: "text-xs/medium",
                                         color: p,
                                         children: function(e) {
@@ -119,7 +119,7 @@ let x = function(e) {
                                                     return null
                                             }
                                         }(g)
-                                    }), null != h.ratingCount && g !== s.vI.NO_USER_REVIEWS && (0, a.jsx)(r.Text, {
+                                    }), null != h.ratingCount && g !== s.vI.NO_USER_REVIEWS && (0, l.jsx)(r.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-subtle",
                                         children: u.intl.format(u.t.sgIoin, {

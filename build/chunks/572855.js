@@ -1,6 +1,6 @@
 /** chunk id: 572855 params = (module,exports,require) **/
 a.d(t, {
-    A: () => G
+    A: () => k
 });
 var n = a(627968),
     i = a(64700),
@@ -21,8 +21,8 @@ var n = a(627968),
     T = a(307600),
     S = a(723702),
     f = a(837921),
-    y = a(700331),
-    C = a(454290),
+    C = a(700331),
+    y = a(454290),
     I = a(358731),
     x = a(256905),
     M = a(985018),
@@ -54,10 +54,10 @@ function R() {
     let {
         zoomed: e,
         setZoomed: t
-    } = (0, C.Q)();
+    } = (0, y.Q)();
     return (0, n.jsx)(b, {
         onClick: () => {
-            y.l.markActionPerformed(e ? y.N.ZOOM_OUT_BUTTON_PRESSED : y.N.ZOOM_IN_BUTTON_PRESSED), t(!e)
+            C.l.markActionPerformed(e ? C.N.ZOOM_OUT_BUTTON_PRESSED : C.N.ZOOM_IN_BUTTON_PRESSED), t(!e)
         },
         tooltipText: e ? M.intl.string(M.t.vOFof8) : M.intl.string(M.t.Kt4gZ6),
         icon: e ? c.V0_ : c.r1u
@@ -69,7 +69,7 @@ function v(e) {
         item: t
     } = e, a = t.sourceMetadata?.message, l = t.sourceMetadata?.identifier, s = i.useCallback(() => {
         if (null != a && null != l) {
-            if (y.l.markActionPerformed(y.N.FORWARD_PRESSED), "embed" === l.type) return void(0, _.fO)({
+            if (C.l.markActionPerformed(C.N.FORWARD_PRESSED), "embed" === l.type) return void(0, _.fO)({
                 message: a,
                 source: "media-viewer",
                 forwardOptions: {
@@ -101,19 +101,19 @@ function D(e) {
     if (!(s || S.isPlatformEmbedded && !o && r && d)) return null;
     let u = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType, p.N7);
     async function m() {
-        if (y.l.markActionPerformed(y.N.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, T.h)({
+        if (C.l.markActionPerformed(C.N.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, T.h)({
                 href: u
             }), "IMAGE" === t.type) {
             l(!0);
             try {
                 let e = await f.Ay.saveImage(u, t.contentType, p.N7);
                 if (e === f._0.ERRORED) throw Error(`DesktopNativeUtils.saveImage errored for ${u}`);
-                e === f._0.SAVED && (y.l.trackMediaViewerImageSaved({
+                e === f._0.SAVED && (C.l.trackMediaViewerImageSaved({
                     url: u,
                     success: !0
                 }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.cqpdJW), c.ToastType.SUCCESS)))
             } catch (e) {
-                y.l.trackMediaViewerImageSaved({
+                C.l.trackMediaViewerImageSaved({
                     url: u,
                     success: !1
                 }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t["8Ve/S0"]), c.ToastType.FAILURE))
@@ -138,7 +138,7 @@ function j(e) {
     let a = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
     return (0, n.jsx)(b, {
         onClick: () => {
-            y.l.markActionPerformed(y.N.OPEN_LINK_PRESSED), y.l.trackMediaViewerLinkOpened({
+            C.l.markActionPerformed(C.N.OPEN_LINK_PRESSED), C.l.trackMediaViewerLinkOpened({
                 href: a
             }), (0, T.h)({
                 href: a
@@ -149,7 +149,7 @@ function j(e) {
     })
 }
 
-function L(e) {
+function w(e) {
     let {
         item: t,
         canCopyImage: a,
@@ -165,9 +165,9 @@ function L(e) {
             sourceMetadata: a,
             width: i,
             height: l
-        } = e, s = w(M.intl.string(M.t.ILJuBq), "name", {
+        } = e, s = L(M.intl.string(M.t.ILJuBq), "name", {
             subtextLineClamp: 1
-        }), r = w(M.intl.string(M.t["3Nf9u2"]), "size"), o = w(M.intl.string(M.t.eOB2eR), "alt", {
+        }), r = L(M.intl.string(M.t["3Nf9u2"]), "size"), o = L(M.intl.string(M.t.eOB2eR), "alt", {
             subtextLineClamp: 2
         });
         if (a?.identifier?.type !== "attachment") return null;
@@ -184,15 +184,15 @@ function L(e) {
         }, "media-viewer-details")
     }(t);
     async function m() {
-        y.l.markActionPerformed(y.N.COPY_IMAGE_PRESSED);
+        C.l.markActionPerformed(C.N.COPY_IMAGE_PRESSED);
         let e = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType, p.N7);
         try {
-            await f.Ay.copyImage(e, t.originalContentType ?? t.contentType), y.l.trackMediaViewerImageCopied({
+            await f.Ay.copyImage(e, t.originalContentType ?? t.contentType), C.l.trackMediaViewerImageCopied({
                 url: e,
                 success: !0
             }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.bhUpvC), c.ToastType.SUCCESS))
         } catch (t) {
-            y.l.trackMediaViewerImageCopied({
+            C.l.trackMediaViewerImageCopied({
                 url: e,
                 success: !1
             }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.PTPbjx), c.ToastType.FAILURE))
@@ -223,15 +223,15 @@ function L(e) {
                     icon: c.qYV
                 },
                 action: function() {
-                    y.l.markActionPerformed(y.N.COPY_LINK_PRESSED);
+                    C.l.markActionPerformed(C.N.COPY_LINK_PRESSED);
                     let e = (0, p.XW)((0, p.bc)(t.original, t.url), t.contentType, t.originalContentType);
                     (0, g.C)(e, () => {
-                        y.l.trackMediaViewerLinkCopied({
+                        C.l.trackMediaViewerLinkCopied({
                             href: e,
                             success: !0
                         }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t["L/PwZf"]), c.ToastType.SUCCESS))
                     }, () => {
-                        y.l.trackMediaViewerLinkCopied({
+                        C.l.trackMediaViewerLinkCopied({
                             href: e,
                             success: !1
                         }), (0, c.showToast)((0, c.createToast)(M.intl.string(M.t.uVV00B), c.ToastType.FAILURE))
@@ -242,7 +242,7 @@ function L(e) {
     })
 }
 
-function w(e, t, a) {
+function L(e, t, a) {
     let l = i.useCallback(e => {
         (0, g.C)(e, () => (0, c.showToast)({
             message: M.intl.string(M.t.mGZ66D),
@@ -271,7 +271,7 @@ function P(e) {
         spacing: 18,
         onRequestClose: () => s(!1),
         animation: c.YNO.Animation.NONE,
-        renderPopout: () => (0, n.jsx)(L, {
+        renderPopout: () => (0, n.jsx)(w, {
             item: t,
             canCopyImage: _,
             canCopyLink: A,
@@ -285,14 +285,14 @@ function P(e) {
                 buttonRef: a,
                 tooltipText: M.intl.string(M.t["UKOtz+"]),
                 onClick: () => {
-                    y.l.markActionPerformed(y.N.MORE_BUTTON_PRESSED), s(!l)
+                    C.l.markActionPerformed(C.N.MORE_BUTTON_PRESSED), s(!l)
                 },
                 icon: c.jNK
             })
         }
     }) : null
 }
-let G = i.memo(function(e) {
+let k = i.memo(function(e) {
     let {
         item: t,
         hideMediaOptions: a

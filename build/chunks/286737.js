@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => h
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(311907),
     r = n(397927),
     s = n(289363),
@@ -25,7 +25,7 @@ function h(e) {
         startAuthorization: g,
         connectionApp: p,
         officialInvite: _
-    } = (0, u.c)(), v = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = l.useCallback(() => {
+    } = (0, u.c)(), v = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = a.useCallback(() => {
         t(d.Ws.LinkAccount), g({
             analyticsLocations: ["game_profile"]
         })
@@ -35,40 +35,40 @@ function h(e) {
         id: _.guild.id,
         splash: _.guild.splash
     }) : null;
-    return (0, a.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: x.uW,
-        children: [(0, a.jsx)(r.Heading, {
+        children: [(0, l.jsx)(r.Heading, {
             className: x.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: m.intl.string(m.t["VDAhr+"])
-        }), (0, a.jsxs)("div", {
+        }), (0, l.jsxs)("div", {
             className: x.kL,
-            children: [null != A ? (0, a.jsx)("img", {
+            children: [null != A ? (0, l.jsx)("img", {
                 className: x.ll,
                 src: A,
                 alt: ""
-            }) : (0, a.jsx)("div", {
+            }) : (0, l.jsx)("div", {
                 className: x.sB,
-                children: (0, a.jsx)(s.default, {
+                children: (0, l.jsx)(s.default, {
                     application: p
                 })
-            }), (0, a.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
                 className: x.hQ,
-                children: [(0, a.jsxs)("div", {
+                children: [(0, l.jsxs)("div", {
                     className: x.FS,
-                    children: [(0, a.jsx)(r.Heading, {
+                    children: [(0, l.jsx)(r.Heading, {
                         variant: "heading-md/semibold",
                         color: "text-default",
                         children: m.intl.formatToPlainString(m.t.hUbQT2, {
                             gameName: p.name
                         })
-                    }), (0, a.jsx)(r.Text, {
+                    }), (0, l.jsx)(r.Text, {
                         variant: "text-sm/medium",
                         color: "text-muted",
                         children: m.intl.string(m.t["JKqu+4"])
                     })]
-                }), (0, a.jsx)(r.Button, {
+                }), (0, l.jsx)(r.Button, {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(877413),
     o = n.n(s),
     c = n(52133),
@@ -34,7 +34,7 @@ let g = i.memo(function(e) {
     let {
         className: t,
         message: n,
-        children: r,
+        children: l,
         content: s,
         onUpdate: c,
         contentRef: m,
@@ -42,17 +42,17 @@ let g = i.memo(function(e) {
     } = e, g = n.state === _.cmJ.SEND_FAILED, A = n.state === _.cmJ.SENDING, T = n.isCommandType(), x = n.editedTimestamp?.toString(), I = i.useRef(!1);
     return i.useLayoutEffect(() => {
         I.current ? null != c && c() : I.current = !0
-    }, [c, n.content, s, x, r]), (0, a.jsxs)("div", {
+    }, [c, n.content, s, x, l]), (0, a.jsxs)("div", {
         id: (0, d.CJ)(n),
         ref: m,
-        className: l()(t, f.PT, {
+        className: r()(t, f.PT, {
             [p.BK]: !0,
             [p.Tn]: A && !T,
             [p.nB]: "rtl" === o()(n.content),
             [p.Ix]: g,
             [p.w3]: n.isUnsupported
         }),
-        children: [r ?? b(n, s), (0, a.jsx)(u.A, {
+        children: [l ?? b(n, s), (0, a.jsx)(u.A, {
             message: n,
             compact: h,
             location: u.O.WITH_CONTENT

@@ -1,6 +1,6 @@
 /** chunk id: 860227 params = (module,exports,require) **/
 n.d(t, {
-    CJ: () => l,
+    CJ: () => r,
     JH: () => d,
     XL: () => u,
     ZD: () => m,
@@ -11,9 +11,9 @@ n.d(t, {
 });
 var a = n(264927),
     i = n(143413),
-    r = n(652215);
+    l = n(652215);
 
-function l(e) {
+function r(e) {
     return `message-content-${e.id}`
 }
 
@@ -39,23 +39,23 @@ function u(e) {
 }
 
 function _(e, t, n) {
-    let d = e.type === r.lAJ.REPLY && null != e.messageReference,
+    let d = e.type === l.lAJ.REPLY && null != e.messageReference,
         _ = e.embeds.length > 0,
         m = e.attachments.length > 0,
         p = e.stickerItems.length > 0,
         f = e.codedLinks.length > 0,
         b = e.components.length > 0,
-        h = e.hasFlag(r.pr7.HAS_THREAD),
-        g = _ || m || p || f || h || b || e.type === r.lAJ.THREAD_CREATED,
-        A = _ && e.content === e.embeds[0].url && e.embeds[0].type === r.Auw.GIFV,
-        T = e.type !== r.lAJ.DEFAULT || !A && "" !== e.content,
+        h = e.hasFlag(l.pr7.HAS_THREAD),
+        g = _ || m || p || f || h || b || e.type === l.lAJ.THREAD_CREATED,
+        A = _ && e.content === e.embeds[0].url && e.embeds[0].type === l.Auw.GIFV,
+        T = e.type !== l.lAJ.DEFAULT || !A && "" !== e.content,
         x = (0, i.A)(e),
         I = !x && n?.hasTimestamp !== !1,
         C = o(e, t),
         E = s(e),
         S = x ? "" : `${d?E:C} ${a.lW}`;
     if (T) {
-        let t = l(e);
+        let t = r(e);
         S += ` ${t}`
     }
     if (g) {

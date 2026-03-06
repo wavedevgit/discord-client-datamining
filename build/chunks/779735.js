@@ -30,7 +30,7 @@ let h = e => {
         root_node_id: T,
         success_node_id: N,
         fail_node_id: I
-    } = n, [y, S] = a.useState(T), [k, E] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, U] = a.useState(void 0), [P, B] = a.useState(void 0);
+    } = n, [S, y] = a.useState(T), [k, E] = a.useState(void 0), [w, M] = a.useState(void 0), [R, L] = a.useState([]), [O, G] = a.useState(void 0), [D, U] = a.useState(void 0), [P, B] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -45,25 +45,25 @@ let h = e => {
                 ...e,
                 destination: ["", a.button.target]
             });
-            if (L([...M, e]), null != a.key && v?.(a.key), E(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
+            if (L([...R, e]), null != a.key && v?.(a.key), E(void 0), M(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
                 d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: a.report_type,
-                    current_node: j[y].id,
+                    current_node: j[S].id,
                     next_node: a.id
                 })
             }
-            S(l)
+            y(l)
         },
         V = async e => {
-            let l = f ? await (0, m.zC)(n, t, [...M, e]) : await (0, m.bo)(n, t, [...M, e], b),
+            let l = f ? await (0, m.zC)(n, t, [...R, e]) : await (0, m.bo)(n, t, [...R, e], b),
                 a = l?.body?.report_id;
             null != a && G(a), U(j[e.nodeRef].report_type), A?.(a)
         }, F = () => {
-            if (M.length < 1) return;
-            let e = [...M],
+            if (R.length < 1) return;
+            let e = [...R],
                 n = e.pop(),
                 l = n?.nodeRef ?? T;
             if (t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
@@ -72,11 +72,11 @@ let h = e => {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: j[l].report_type,
-                    current_node: j[y].id,
+                    current_node: j[S].id,
                     next_node: j[l].id
                 })
             }
-            E(n?.multiSelect?.state), R(n?.textInput), S(l), L(e), v?.("..")
+            E(n?.multiSelect?.state), M(n?.textInput), y(l), L(e), v?.("..")
         }, W = a.useCallback((e, t) => {
             let n;
             for (let t in j) {
@@ -87,14 +87,14 @@ let h = e => {
                 }
             }
             if (null == n) return;
-            let l = M.findIndex(e => e.nodeRef === n.id);
+            let l = R.findIndex(e => e.nodeRef === n.id);
             if (l >= 0) {
-                let e = M.slice(0, l),
-                    t = M[l];
-                R(t?.textInput), E(t?.multiSelect?.state), L(e)
-            } else L([]), R(void 0), E(void 0);
-            B(t), S(n.id)
-        }, [j, M]);
+                let e = R.slice(0, l),
+                    t = R[l];
+                M(t?.textInput), E(t?.multiSelect?.state), L(e)
+            } else L([]), M(void 0), E(void 0);
+            B(t), y(n.id)
+        }, [j, R]);
     a.useEffect(() => {
         null != P && B(void 0)
     }, [P]);
@@ -123,7 +123,7 @@ let h = e => {
         parentComponent: "InAppReportModal",
         children: (0, l.jsx)(i.tN_, {
             width: 440,
-            activeSlide: y,
+            activeSlide: S,
             centered: !1,
             children: z.map(e => (0, l.jsx)(i.q7S, {
                 id: e.id,
@@ -133,7 +133,7 @@ let h = e => {
                         node: e,
                         reportType: t,
                         reportSubType: D,
-                        history: M,
+                        history: R,
                         onModalClose: h.onClose,
                         onSelectChild: H,
                         onNavigateBack: F,
@@ -145,7 +145,7 @@ let h = e => {
                         onSubmit: V,
                         reportId: O,
                         nodeMap: j,
-                        initialErrorMessage: e.id === y ? P : void 0
+                        initialErrorMessage: e.id === S ? P : void 0
                     })
                 })
             }, e.id))

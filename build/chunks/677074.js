@@ -22,7 +22,7 @@ let b = c.memo(function(a) {
                 src: (0, i.gC)(e, s.badge, n.Sl.SIZE_32),
                 size: n.Sl.SIZE_32,
                 className: r.qS
-            }), (0, d.jsx)(t.Text, {
+            }, (0, i.gC)(e, s.badge, n.Sl.SIZE_32) ?? e), (0, d.jsx)(t.Text, {
                 tag: "span",
                 variant: "heading-xl/semibold",
                 children: s.tag

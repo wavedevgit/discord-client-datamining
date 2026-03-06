@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => x
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(793574),
     r = n(688810),
     s = n(317560),
@@ -19,7 +19,7 @@ function x() {
         socialLayerStorefrontRecommendationsData: e
     } = (0, o.c)(), {
         analyticsLocations: t
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), n = l.useCallback(n => {
+    } = (0, r.Ay)([i.A.GAME_PROFILE]), n = a.useCallback(n => {
         e?.guildId != null && (0, s.R)({
             skuId: n,
             applicationId: e.application.id,
@@ -34,10 +34,10 @@ function x() {
         skuIds: h,
         guildId: f
     } = e;
-    return (0, a.jsx)(d.A, {
+    return (0, l.jsx)(d.A, {
         title: m.intl.string(m.t.WDdlUb),
         onClickViewAll: u.tE,
-        children: (0, a.jsx)(c.R, {
+        children: (0, l.jsx)(c.R, {
             applicationId: x.id,
             skuIds: h,
             guildId: f,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    r = n(989349),
-    l = n.n(r),
+    l = n(989349),
+    r = n.n(l),
     s = n(311907),
     o = n(990078),
     c = n(397927),
@@ -21,7 +21,7 @@ var a = n(627968),
 function g(e) {
     let t, {
             isEnabled: n,
-            rateLimitPerUser: r,
+            rateLimitPerUser: l,
             isBypassSlowmode: s,
             slowmodeCooldownGuess: u
         } = e,
@@ -36,9 +36,9 @@ function g(e) {
                 _._.unsubscribe(f.jej.EMPHASIZE_SLOWMODE_COOLDOWN, e)
             }
         }, []), !n) return null;
-    let A = (0, d.L)(r);
+    let A = (0, d.L)(l);
     if (!s && u > 0) {
-        let e = l().duration(u);
+        let e = r().duration(u);
         if (u > m.A.Millis.HOUR) {
             let n = `${e.minutes()}`.padStart(2, "0"),
                 a = `${e.seconds()}`.padStart(2, "0");
@@ -72,13 +72,13 @@ function A(e) {
     let {
         channel: t,
         isThreadCreation: n = !1
-    } = e, i = (0, s.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), r = (0, p._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
-        rateLimitPerUser: l
+    } = e, i = (0, s.bG)([u.A], () => u.A.getSlowmodeCooldownGuess(t.id, n ? u.R.CreateThread : u.R.SendMessage)), l = (0, p._)(t, n ? u.R.CreateThread : u.R.SendMessage), {
+        rateLimitPerUser: r
     } = t;
     return (0, a.jsx)(g, {
-        isEnabled: l > 0,
-        rateLimitPerUser: l,
-        isBypassSlowmode: r,
+        isEnabled: r > 0,
+        rateLimitPerUser: r,
+        isBypassSlowmode: l,
         slowmodeCooldownGuess: i
     })
 }
