@@ -136,7 +136,7 @@ function U(e) {
         if (!1 === w) {
             let e = !1;
             if ((0, j.isMac)()) {
-                let t = f.A?.remoteApp?.getVersion?.();
+                let t = f.A?.app.getVersion();
                 e = !v.M || "0.0.0" === t || o().satisfies(t, "0.0.363")
             }
             return (0, r.jsxs)("div", {

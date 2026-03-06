@@ -105,14 +105,15 @@ function T(e) {
         wishlistId: v ?? null,
         onAction: D,
         productLines: k
-    }), B = (0, s.useMemo)(() => L ? G.map((e, t) => null == e.sku ? null : (0, i.jsx)(g.A, {
+    }), B = (0, s.useMemo)(() => L ? G.map((e, s) => null == e.sku ? null : (0, i.jsx)(g.A, {
         sku: e.sku,
-        index: t,
+        index: s,
         wishlistOwner: n,
         wishlistId: v,
         analyticsLocations: R,
-        onViewWishlist: T
-    }, e.skuId)) : null, [R, L, T, n, G, v]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
+        onViewWishlist: T,
+        isSingleCard: 1 === t.length
+    }, e.skuId)) : null, [R, L, T, n, t.length, G, v]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === P.length) return null;
     let W = P;
     return null != w && ((0, m.L)(w) ? W = (0, C.z)(w, {

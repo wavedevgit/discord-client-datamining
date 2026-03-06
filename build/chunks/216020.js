@@ -1,11 +1,12 @@
-/** chunk id: 216020, original params: e,t,n (module,exports,require) **/
+/** chunk id: 216020 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => a
-}), n(228524);
-var r = n(627968),
-    l = n(158954),
-    i = n(985018),
-    s = n(885794);
+});
+var i = n(627968),
+    s = n(158954),
+    l = n(985018),
+    r = n(553248);
 
 function a(e) {
     let {
@@ -13,19 +14,19 @@ function a(e) {
         description: n,
         onClick: a
     } = e;
-    return (0, r.jsxs)("div", {
-        className: s.S,
-        children: [(0, r.jsx)(l.DUT, {
+    return (0, i.jsxs)("div", {
+        className: r.S,
+        children: [(0, i.jsx)(s.DUT, {
             onClick: a,
-            className: s.H,
-            "aria-label": i.intl.string(i.t.pLPjsb),
-            children: (0, r.jsx)(l.EYj, {
+            className: r.H,
+            "aria-label": l.intl.string(l.t.pLPjsb),
+            children: (0, i.jsx)(s.EYj, {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 lineClamp: 2,
                 children: t
             })
-        }), (0, r.jsx)(l.EYj, {
+        }), (0, i.jsx)(s.EYj, {
             variant: "text-xs/medium",
             color: "text-default",
             children: n
