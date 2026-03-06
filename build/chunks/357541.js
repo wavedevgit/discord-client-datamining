@@ -8,11 +8,11 @@ var i = n(627968),
     s = n(397927),
     r = n(183555),
     o = n(633075),
-    c = n(735321),
-    d = n(384377),
+    d = n(735321),
+    c = n(384377),
     u = n(605694),
-    g = n(518477),
-    m = n(49999),
+    m = n(518477),
+    g = n(49999),
     x = n(985018);
 
 function f(e) {
@@ -25,10 +25,10 @@ function f(e) {
     } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
         applicationId: n.id
     }), [n.id]), _ = l.useCallback(() => {
-        null != h && ((0, c.Y5)(h), p({
+        null != h && ((0, d.Y5)(h), p({
             action: "WIDGET_ADDED",
             ...h.getProfileEditAnalyticsOptions()
-        }), (0, d.XA)(g.jM.WIDGET_ADDED))
+        }), (0, c.XA)(m.jM.WIDGET_ADDED))
     }, [h, p]);
     return (0, i.jsx)(u.A, {
         user: t,
@@ -52,7 +52,7 @@ function f(e) {
                         icon: s.PGe,
                         "aria-label": x.intl.string(x.t.WAI6xu),
                         onClick: () => {
-                            f(m.i.USER_DISMISS)
+                            f(g.i.USER_DISMISS)
                         }
                     })
                 }), (0, i.jsx)(a.m, {
@@ -66,7 +66,7 @@ function f(e) {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            f(m.i.TAKE_ACTION), _()
+                            f(g.i.TAKE_ACTION), _()
                         }
                     })
                 })]

@@ -1,9 +1,9 @@
 /** chunk id: 360619 params = (module,exports,require) **/
 n.d(t, {
-    AC: () => O,
-    NI: () => R,
-    PH: () => j
-}), n(560197), n(321073);
+    AC: () => j,
+    NI: () => O,
+    PH: () => v
+}), n(321073);
 var i = n(64700),
     s = n(311907);
 n(361739);
@@ -25,79 +25,72 @@ var x = n(189081),
     E = n(994500),
     T = n(628965),
     S = n(287809),
-    C = n(80422),
-    f = n(253932),
-    I = n(368631),
-    b = n(682262),
-    N = n(987281);
+    C = n(253932),
+    f = n(368631),
+    I = n(682262),
+    b = n(987281);
 n(531525);
-var v = n(654487);
+var N = n(654487);
 
-function j() {
+function v() {
     let e = (0, u.IO)().length,
         t = (0, c.l)(),
         n = (0, s.bG)([T.A], () => T.A.getSearchParams()),
-        N = (0, d.VT)(),
-        j = (0, b.b_)(),
+        b = (0, d.VT)(),
+        v = (0, I.b_)(),
+        j = S.default.getCurrentUser()?.isStaff() ?? !1,
+        O = (0, h.Lc)({
+            location: "settings"
+        }),
+        R = (0, A.Rv)({
+            location: "settings"
+        }),
+        y = (0, a.H)(),
+        P = (0, _.H)({
+            location: N.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+        }),
+        D = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
+        L = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
+        G = C.Q_.useSetting(),
+        M = (0, r.A)(),
+        U = (0, o.A)() ?? !0,
+        k = (0, m.G)()?.length > 0,
         {
-            shouldMergeGameSettings: O
-        } = C.X.useExperiment({
-            location: "settings"
-        }),
-        R = S.default.getCurrentUser()?.isStaff() ?? !1,
-        y = (0, h.Lc)({
-            location: "settings"
-        }),
-        P = (0, A.Rv)({
-            location: "settings"
-        }),
-        L = (0, a.H)(),
-        D = (0, _.H)({
-            location: v.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
-        }),
-        G = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
-        M = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
-        U = f.Q_.useSetting(),
-        k = (0, r.A)(),
-        V = (0, o.A)() ?? !0,
-        w = (0, m.G)()?.length > 0,
-        {
-            hasBlockedUsers: H,
-            hasIgnoredUsers: B
+            hasBlockedUsers: V,
+            hasIgnoredUsers: w
         } = (0, s.cf)([E.A], () => ({
             hasBlockedUsers: E.A.getBlockedIDs().length > 0,
             hasIgnoredUsers: E.A.getIgnoredIDs().length > 0
         })),
-        Y = (0, g.fk)(),
-        F = (0, l.i)("useGenerateUserSettingsSections");
-    return i.useMemo(() => (0, I.zj)({
+        H = (0, g.fk)(),
+        B = (0, l.i)("useGenerateUserSettingsSections");
+    return i.useMemo(() => (0, f.zj)({
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
         searchParams: n,
-        numOfPendingFamilyRequests: N,
-        isOverlaySupported: j,
-        shouldMergeGameSettings: O,
-        isStaff: R,
-        isInappropriateConversationWarningEnabled: y,
-        isInapproprateConversationsDefaultOn: P,
-        paymentsBlocked: L,
-        isEligibleForQuests: D,
-        isStricterMessageRequestsEnabled: k,
-        hasLibraryApplication: G,
-        hasTOTPEnabled: M,
-        developerMode: U,
-        isAdultUser: V,
-        hasSecureFramesVerifiedUserIds: w,
-        hasIgnoredUsers: B,
-        hasBlockedUsers: H,
-        hasAgeGatedFeature: Y,
-        isHDRAccessibilitySettingExperimentEnabled: F
-    }), [U, H, B, G, w, M, n, V, D, P, y, j, R, k, N, L, O, t, e, Y, F])
+        numOfPendingFamilyRequests: b,
+        isOverlaySupported: v,
+        isStaff: j,
+        isInappropriateConversationWarningEnabled: O,
+        isInapproprateConversationsDefaultOn: R,
+        paymentsBlocked: y,
+        isEligibleForQuests: P,
+        isStricterMessageRequestsEnabled: M,
+        hasLibraryApplication: D,
+        hasTOTPEnabled: L,
+        developerMode: G,
+        isAdultUser: U,
+        hasSecureFramesVerifiedUserIds: k,
+        hasIgnoredUsers: w,
+        hasBlockedUsers: V,
+        hasAgeGatedFeature: H,
+        isHDRAccessibilitySettingExperimentEnabled: B
+    }), [G, V, w, D, k, L, n, U, P, R, O, v, j, M, b, y, t, e, H, B])
 }
 
-function O(e) {
-    let t = N.a.useField("searchResults"),
-        n = j(),
+function j(e) {
+    let t = b.a.useField("searchResults"),
+        n = v(),
         i = n[e],
         s = Object.fromEntries(Object.entries(n).filter(e => {
             let [t, n] = e;
@@ -142,7 +135,7 @@ function O(e) {
         } return a
 }
 
-function R(e) {
+function O(e) {
     return Array.from(new Map(Object.entries(e).filter(e => {
         let [t, n] = e;
         return null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || !1 === n.unsearchable)

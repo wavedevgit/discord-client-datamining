@@ -1,7 +1,7 @@
 /** chunk id: 415043 params = (module,exports,require) **/
 n.d(t, {
     A: () => u,
-    H: () => g
+    H: () => m
 });
 var i = n(627968);
 n(64700);
@@ -10,8 +10,8 @@ var l = n(503698),
     s = n(342952),
     r = n(435371),
     o = n(397927),
-    c = n(915089),
-    d = n(372269);
+    d = n(915089),
+    c = n(372269);
 
 function u(e) {
     let {
@@ -20,33 +20,33 @@ function u(e) {
         size: l = o._3J.SIZE_16,
         maxUsers: r = 4,
         ...u
-    } = e, g = (0, c.GV)();
+    } = e, m = (0, d.GV)();
     return (0, i.jsxs)("div", {
-        className: a()(n, d.k),
+        className: a()(n, c.k),
         children: [(0, i.jsx)(s.I, {
-            "aria-labelledby": g,
-            overflowCountClassName: d.j,
+            "aria-labelledby": m,
+            overflowCountClassName: c.j,
             size: l,
             maxUsers: r,
             ...u
         }), (0, i.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "text-subtle",
-            id: g,
+            id: m,
             children: t
         })]
     })
 }
 
-function g(e) {
+function m(e) {
     let {
         label: t,
         className: n,
         overflowCountClassName: l,
-        size: c = o._3J.SIZE_16,
+        size: d = o._3J.SIZE_16,
         maxUsers: u = 4,
-        onClick: g,
-        ...m
+        onClick: m,
+        ...g
     } = e;
     return (0, i.jsx)("div", {
         className: n,
@@ -55,14 +55,14 @@ function g(e) {
             asContainer: !0,
             ariaHidden: !0,
             children: (0, i.jsx)(o.DUT, {
-                onClick: g,
+                onClick: m,
                 "aria-label": t,
                 children: (0, i.jsx)(s.I, {
-                    size: c,
+                    size: d,
                     maxUsers: u,
-                    overflowCountClassName: a()(d.j, l),
+                    overflowCountClassName: a()(c.j, l),
                     "aria-hidden": !0,
-                    ...m
+                    ...g
                 })
             })
         })

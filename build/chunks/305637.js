@@ -14,8 +14,8 @@ var l = i(311907),
     c = i(267102),
     m = i(616356),
     p = i(734057),
-    h = i(203982),
-    A = i(652215),
+    A = i(203982),
+    h = i(652215),
     g = i(985018);
 
 function f(t) {
@@ -34,23 +34,23 @@ function f(t) {
             } = t;
             return e !== i.ownerId
         }).length > 0
-    })), C = (0, l.bG)([p.A], () => p.A.getChannel(i?.channelId)), [S, E] = (0, u.zP)(C), x = (0, c.aL)(), _ = null != T && null != i && T.state !== A.XYD.ENDED && T.ownerId === i.ownerId, y = t => {
-        null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), _ || (0, d.Nl)(i, {
+    })), C = (0, l.bG)([p.A], () => p.A.getChannel(i?.channelId)), [S, E] = (0, u.zP)(C), x = (0, c.aL)(), y = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, _ = t => {
+        null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), y || (0, d.Nl)(i, {
             forceMultiple: t
-        }), x.dispatch(A.jej.POPOUT_CLOSE), h._.dispatch(A.jej.MODAL_CLOSE), a.A.popAll())
+        }), x.dispatch(h.jej.POPOUT_CLOSE), A._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == i) return null;
     let N = (0, u.CT)(E);
-    return e ? N = g.intl.string(g.t.XvBdeT) : _ && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
+    return e ? N = g.intl.string(g.t.XvBdeT) : y && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Button, {
             size: "sm",
-            variant: _ ? "secondary" : "active",
+            variant: y ? "secondary" : "active",
             icon: s.Fzq,
             text: N,
-            disabled: e || _ || !S,
-            onClick: () => y(!1),
+            disabled: e || y || !S,
+            onClick: () => _(!1),
             fullWidth: !0
-        }), v && !_ ? (0, n.jsx)(r.m, {
+        }), v && !y ? (0, n.jsx)(r.m, {
             text: g.intl.string(g.t.wCrzut),
             children: (0, n.jsx)(s.K0, {
                 variant: "secondary",
@@ -58,7 +58,7 @@ function f(t) {
                 icon: s.vAm,
                 "aria-label": g.intl.string(g.t.wCrzut),
                 onClick: () => {
-                    y(!0)
+                    _(!0)
                 }
             })
         }) : null]

@@ -34,8 +34,8 @@ var i = n(627968),
     R = n(747454),
     y = n(801264),
     P = n(790174),
-    L = n(131678),
-    D = n(138410),
+    D = n(131678),
+    L = n(138410),
     G = n(652215),
     M = n(783419),
     U = n(985018),
@@ -103,18 +103,18 @@ function w(e) {
         [N, v] = s.useState(C.friendSync),
         [O, P] = s.useState(C.visibility),
         [w, H] = s.useState(C.metadataVisibility),
-        [B, Y] = s.useState(C.showActivity),
-        [F, z] = s.useState(null),
+        [B, F] = s.useState(C.showActivity),
+        [Y, z] = s.useState(null),
         [X, W] = s.useState(null),
         [K, Z] = s.useState(!1),
         [q, J] = s.useState([]),
         Q = (0, x.ML)(C.type),
         $ = p.A.get(Q);
     s.useEffect(() => {
-        v(C.friendSync), P(C.visibility), H(C.metadataVisibility), Y(C.showActivity)
+        v(C.friendSync), P(C.visibility), H(C.metadataVisibility), F(C.showActivity)
     }, [C]);
     let ee = {
-            inProgressVisibility: F,
+            inProgressVisibility: Y,
             inProgressMetadataVisibility: X
         },
         et = s.useRef(ee);
@@ -205,7 +205,7 @@ function w(e) {
                     color: "currentColor"
                 })
             })]
-        })), C.twoWayLink ? null : C.type === G.fg2.XBOX ? (0, i.jsx)(D._, {}) : C.type === G.fg2.PLAYSTATION ? (0, i.jsx)(L.j, {}) : null, function(e) {
+        })), C.twoWayLink ? null : C.type === G.fg2.XBOX ? (0, i.jsx)(L._, {}) : C.type === G.fg2.PLAYSTATION ? (0, i.jsx)(D.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
                 s = (0, E.An)(t[M.pK.CREATED_AT], b);
@@ -285,7 +285,7 @@ function w(e) {
             }),
             checked: B,
             onChange: function(e) {
-                Y(e), m.A.setShowActivity(C.type, C.id, e)
+                F(e), m.A.setShowActivity(C.type, C.id, e)
             }
         })), p.A.get(C.type)?.hasMetadata === !0 && (A = (0, i.jsx)(_.dOG, {
             label: U.intl.string(U.t.FYKGsL),
@@ -350,7 +350,7 @@ function H() {
         description: U.intl.format(U.t["oYc+Gz"], {
             privacyPolicyUrl: G.X7G.PRIVACY
         }),
-        children: (0, i.jsx)(Y, {})
+        children: (0, i.jsx)(F, {})
     })
 }
 
@@ -365,7 +365,7 @@ function B(e) {
     })
 }
 
-function Y() {
+function F() {
     let e = (0, x.gn)();
     return (0, i.jsxs)("div", {
         className: k.lA,
@@ -400,7 +400,7 @@ function Y() {
     })
 }
 
-function F(e) {
+function Y(e) {
     let t, {
         fetching: n,
         accounts: s,
@@ -438,7 +438,7 @@ function z() {
         n = (0, o.bG)([I.A], () => I.A.getAccounts()),
         s = (0, h.Ay)(),
         l = (0, o.bG)([O.default], () => O.default.locale);
-    return e ? null : (0, i.jsx)(F, {
+    return e ? null : (0, i.jsx)(Y, {
         fetching: t,
         accounts: n,
         theme: s,
@@ -456,7 +456,7 @@ let X = () => {
         title: U.intl.string(U.t["3fe7U5"]),
         children: [(0, i.jsx)(H, {}), (0, i.jsx)(_.cGx, {
             gap: 24
-        }), (0, i.jsx)(F, {
+        }), (0, i.jsx)(Y, {
             fetching: e,
             accounts: t,
             theme: n,

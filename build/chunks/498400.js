@@ -32,13 +32,13 @@ var i = n(627968),
     R = n(553081),
     y = n(422936),
     P = n(234419),
-    L = n(558533),
-    D = n(788868),
+    D = n(558533),
+    L = n(788868),
     G = n(652215),
     M = n(916692);
 let U = function(e) {
     let {
-        entrypoint: t = D.Mf.UserSettings
+        entrypoint: t = L.Mf.UserSettings
     } = e;
     (0, T.P)(E.b);
     let n = (0, h.H)(),
@@ -51,11 +51,11 @@ let U = function(e) {
         w = (0, r.bG)([C.default], () => C.default.getCurrentUser()),
         H = w?.id,
         B = (0, P.V)(),
-        Y = (0, y.O)(),
-        F = (0, p.Y)(D.T7),
+        F = (0, y.O)(),
+        Y = (0, p.Y)(L.T7),
         [z, X] = s.useState(!0),
         W = s.useRef(0),
-        K = (0, N.YE)(w, D.PremiumTypes.TIER_2),
+        K = (0, N.YE)(w, L.PremiumTypes.TIER_2),
         Z = (0, O.A)({
             location: "PremiumHomePage"
         }),
@@ -73,16 +73,16 @@ let U = function(e) {
             load_duration_ms: W.current
         })
     }, [l, z]), s.useEffect(() => {
-        n && (null != B || null != Y) && (0, j.u1)(B, Y)
-    }, [n, B, Y]);
+        n && (null != B || null != F) && (0, j.u1)(B, F)
+    }, [n, B, F]);
     let J = (0, r.bG)([S.A], () => S.A.enabled),
-        Q = t === D.Mf.ApplicationStoreHome,
+        Q = t === L.Mf.ApplicationStoreHome,
         $ = J ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(x.uK, {}) : Q && K ? (0, i.jsx)(A.f5, {
             value: U,
             children: (0, i.jsx)(R.A, {
                 userId: H
             })
-        }) : k && F && V ? null : (0, i.jsx)("div", {
+        }) : k && Y && V ? null : (0, i.jsx)("div", {
             className: a()(M.kL, M.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });
@@ -90,7 +90,7 @@ let U = function(e) {
         children: [Q && (0, i.jsx)(g.A, {}), $]
     }) : (0, i.jsxs)(A.f5, {
         value: U,
-        children: [Q && !Z && (0, i.jsx)(g.A, {}), (0, i.jsx)(L.A, {
+        children: [Q && !Z && (0, i.jsx)(g.A, {}), (0, i.jsx)(D.A, {
             entrypoint: t
         })]
     })

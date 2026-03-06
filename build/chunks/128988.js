@@ -8,11 +8,11 @@ var i = n(627968),
     s = n(311907),
     r = n(397927),
     o = n(178213),
-    c = n(86638),
-    d = n(287809),
+    d = n(86638),
+    c = n(287809),
     u = n(788593),
-    g = n(742710),
-    m = n(463259),
+    m = n(742710),
+    g = n(463259),
     x = n(18983),
     f = n(219016);
 
@@ -27,7 +27,7 @@ function p(e) {
         isDragging: e.isDragging(),
         item: e.getItem(),
         sourceClientOffset: e.getSourceClientOffset()
-    })), A = (0, s.bG)([d.default], () => d.default.getCurrentUser()), I = (0, r.VUy)(), j = l.useMemo(() => null == A || null == h ? null : function(e, t, n) {
+    })), A = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = (0, r.VUy)(), j = l.useMemo(() => null == A || null == h ? null : function(e, t, n) {
         let {
             id: l,
             itemType: a,
@@ -35,7 +35,7 @@ function p(e) {
         } = e;
         if ("WIDGET" === a && s?.widget != null) return (0, i.jsx)("div", {
             className: f.dt,
-            children: (0, i.jsx)(m.u, {
+            children: (0, i.jsx)(g.u, {
                 widget: s.widget,
                 user: t,
                 disableInteraction: !0
@@ -60,7 +60,7 @@ function p(e) {
                 game: e,
                 widgetType: n
             } = s;
-            return (0, i.jsx)(g.A, {
+            return (0, i.jsx)(m.A, {
                 className: f.xB,
                 user: t,
                 widgetType: n,
@@ -74,7 +74,7 @@ function p(e) {
             } = s;
             return (0, i.jsx)("div", {
                 className: f.Xm,
-                children: n ? (0, i.jsx)(c.A, {
+                children: n ? (0, i.jsx)(d.A, {
                     item: e,
                     wishlistOwner: t,
                     wishlistId: null,

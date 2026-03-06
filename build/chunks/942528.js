@@ -1,7 +1,7 @@
 /** chunk id: 942528 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => v
 });
 var l = n(627968),
     a = n(64700),
@@ -19,19 +19,19 @@ var l = n(627968),
     g = n(985018),
     p = n(183012),
     _ = n(728528);
-let j = e => {
+let v = e => {
     let {
         entry: t,
         onClose: n,
         onReaction: i,
-        onRequestOpen: j,
-        disableActivityProfileLinks: v,
+        onRequestOpen: v,
+        disableActivityProfileLinks: j,
         customCTA: A,
         popoutClassname: I,
         popoutPosition: E = "right"
     } = e, b = a.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
-        nick: T,
-        avatar: S
+        nick: S,
+        avatar: T
     } = a.useMemo(() => {
         let e = C?.getAvatarURL(N?.guild_id, 48, !1);
         return {
@@ -58,13 +58,13 @@ let j = e => {
                     },
                     onUserPopoutClosed: () => a(),
                     disableGameProfileLinks: !0,
-                    disableActivityProfileLinks: v
+                    disableActivityProfileLinks: j
                 })
             })
         },
         positionKey: `'content-entry-${t.id}`,
         onRequestOpen: () => {
-            j?.()
+            v?.()
         },
         children: e => (0, l.jsx)(c.DUT, {
             innerRef: b,
@@ -80,9 +80,9 @@ let j = e => {
                 children: (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("img", {
                         className: p.my,
-                        src: S,
+                        src: T,
                         alt: g.intl.formatToPlainString(g.t.IzVXxY, {
-                            userName: T
+                            userName: S
                         })
                     }), (0, l.jsx)("div", {
                         className: p.Su,
@@ -92,7 +92,7 @@ let j = e => {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
-                                children: T
+                                children: S
                             }), (0, l.jsx)(f.mG, {
                                 location: f.N5.APP_LAUNCHER,
                                 children: h.n.map((e, n) => (0, l.jsx)(e, {

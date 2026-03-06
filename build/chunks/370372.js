@@ -73,7 +73,7 @@ function S(e) {
     } = e, s = (0, O.A)(n), o = (0, p.A)(n), c = (0, A.m)(n), f = (0, A.y)(n), h = (0, y.A)(n), v = (0, T.Ay)(n), N = (0, E.A)(n), G = (0, b.A)(n, t), S = (0, g.A)(n, t), j = (0, m.A)(n, t), U = (0, _.A)(n), X = (0, u.A)({
         id: n.id,
         label: R.intl.string(R.t.gFHI3k)
-    }), L = (0, d.A)(n), M = (0, I.A)(n), Y = (0, x.Ay)(n), w = (0, C.os)("ChannelContextMenuNormal");
+    }), L = (0, d.A)(n), M = (0, I.A)(n), w = (0, x.Ay)(n), Y = (0, C.os)("ChannelContextMenuNormal");
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
@@ -85,7 +85,7 @@ function S(e) {
         }, "mark-as-read-or-favorite"), (0, i.jsxs)(l.rXV, {
             children: [G, h, o]
         }, "channel-actions"), (0, i.jsxs)(l.rXV, {
-            children: [v, w ? Y : M]
+            children: [v, Y ? w : M]
         }, "notifications"), (0, i.jsxs)(l.rXV, {
             children: [N, S, j, U]
         }, "admin-actions"), (0, i.jsx)(l.rXV, {

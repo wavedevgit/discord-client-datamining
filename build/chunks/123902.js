@@ -16,12 +16,12 @@ let p = {
         BLACK: c.Ql,
         GRAY: c.wm
     },
-    h = {
+    A = {
         sm: 20,
         md: 28
     };
 
-function A(t) {
+function h(t) {
     return Math.round(t / u.K) * u.K
 }
 
@@ -35,15 +35,15 @@ function g(t) {
         className: g,
         notchClassName: f,
         children: T
-    } = t, v = h[n], {
+    } = t, v = A[n], {
         ref: C,
         width: S
-    } = (0, d.Ay)(), E = r.useMemo(() => null != S ? A(S) : 0, [S]), x = r.useMemo(() => {
-        let t = Math.abs(A(E * (100 - Math.max(0, Math.min(100, i))) / 100) - E);
+    } = (0, d.Ay)(), E = r.useMemo(() => null != S ? h(S) : 0, [S]), x = r.useMemo(() => {
+        let t = Math.abs(h(E * (100 - Math.max(0, Math.min(100, i))) / 100) - E);
         return {
             transform: `translateX(${t}px)`
         }
-    }, [i, E]), _ = r.useMemo(() => ({
+    }, [i, E]), y = r.useMemo(() => ({
         width: `${E}px`,
         background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${m})`
     }), [m, s, i, E]);
@@ -55,7 +55,7 @@ function g(t) {
         },
         children: [(0, l.jsxs)("div", {
             className: a()(c.kL, g),
-            style: _,
+            style: y,
             children: [(0, l.jsx)("div", {
                 className: c.qB,
                 style: x

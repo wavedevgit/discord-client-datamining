@@ -1,6 +1,6 @@
 /** chunk id: 768908 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => Y,
+    Ay: () => F,
     T: () => B,
     Wx: () => H,
     cH: () => w
@@ -35,10 +35,10 @@ var i = n(627968),
     R = n(754694),
     y = n(641254),
     P = n(522759);
-let L = r.Ay.connectStores([I.A], () => ({
+let D = r.Ay.connectStores([I.A], () => ({
         theme: I.A.theme
     }))(c.ppr),
-    D = (0, f.isWindows)();
+    L = (0, f.isWindows)();
 
 function G(e) {
     let {
@@ -93,7 +93,7 @@ function M(e) {
     } = (0, r.cf)([m.Ay], () => ({
         canToggleDetection: null == f || m.Ay.isDetectionEnabled(f),
         isCurrentGameDetectionEnabled: m.Ay.isDetectionEnabled(I)
-    })), P = (0, r.bG)([m.Ay], () => m.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(I) ? C ? I.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+    })), P = (0, r.bG)([m.Ay], () => m.Ay.getVisibleGame()), [D, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(I) ? C ? I.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
         subgameName: I.gameName
     }) : I.name, [I, C]), [k, V] = s.useState(U ?? "???"), w = a()(y.tR, {
         [O.LO]: !l,
@@ -131,7 +131,7 @@ function M(e) {
         }) : u.A.toggleDetection(I)
     }
     let B = null != P && (0, m.Es)(I) === (0, m.Es)(P),
-        Y = null != f && f.id === P?.id || B || null != p && p.some(e => e.id === P?.id);
+        F = null != f && f.id === P?.id || B || null != p && p.some(e => e.id === P?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: w,
@@ -183,7 +183,7 @@ function M(e) {
                         })
                     })
                 }()]
-            }), A || L ? null : (0, i.jsx)("div", {
+            }), A || D ? null : (0, i.jsx)("div", {
                 className: a()(y.tR, y.oA, y.LT, O.E3),
                 children: (0, i.jsx)(d.m_, {
                     text: j.intl.string(j.t["y0B+lo"]),
@@ -191,7 +191,7 @@ function M(e) {
                         "aria-label": j.intl.string(j.t["y0B+lo"]),
                         className: O.ym,
                         onClick: function() {
-                            if (L) return;
+                            if (D) return;
                             let e = null != I.id ? E.A.getDetectableGame(I.id) : null;
                             S.default.track(N.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
@@ -246,7 +246,7 @@ function M(e) {
                     })
                 })
             }(), function() {
-                if (!D || null != f) return null;
+                if (!L || null != f) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
@@ -281,7 +281,7 @@ function M(e) {
                         })
                     })]
                 })
-            }(), l && !A || Y ? null : (0, i.jsx)(_.A, {
+            }(), l && !A || F ? null : (0, i.jsx)(_.A, {
                 className: O.LS,
                 onClick: function() {
                     u.A.deleteEntry(I), p?.forEach(e => {
@@ -325,7 +325,7 @@ function k(e) {
     let {
         children: t
     } = e;
-    return (0, i.jsxs)(L, {
+    return (0, i.jsxs)(D, {
         className: P.eT,
         children: [(0, i.jsx)(c.G8R, {
             darkSrc: n(839628),
@@ -415,7 +415,7 @@ let V = (0, C.L_)(function() {
             })
         })
     },
-    Y = function(e) {
+    F = function(e) {
         let {
             className: t,
             showHeader: n = !0

@@ -24,8 +24,8 @@ var A = I(627968),
     o = I(246505),
     r = I(239093),
     U = I(652215),
-    G = I(985018),
-    d = I(100123);
+    d = I(985018),
+    G = I(100123);
 let c = E => {
         let {
             classificationTypeText: _,
@@ -37,10 +37,10 @@ let c = E => {
                     children: E
                 }, _)
             };
-            return null == I ? G.intl.format(G.t.HpvELh, E) : I?.member_type === i.Z9.OWNER ? G.intl.format(G.t.X1ngSd, {
+            return null == I ? d.intl.format(d.t.HpvELh, E) : I?.member_type === i.Z9.OWNER ? d.intl.format(d.t.X1ngSd, {
                 ...E,
                 guildName: I?.name
-            }) : G.intl.format(G.t.rmpEPD, {
+            }) : d.intl.format(d.t.rmpEPD, {
                 ...E,
                 guildName: I?.name
             })
@@ -59,18 +59,18 @@ let c = E => {
             children: [(0, A.jsx)(N.Text, {
                 variant: "eyebrow",
                 color: "text-muted",
-                children: G.intl.string(G.t["O2nYk+"])
+                children: d.intl.string(d.t["O2nYk+"])
             }), (0, A.jsxs)("ul", {
-                className: d.nq,
+                className: G.nq,
                 children: [_.map(E => (0, A.jsx)(B, {
                     action: E
                 }, E.id)), null != I ? (0, A.jsx)("li", {
-                    className: d.DJ,
+                    className: G.DJ,
                     children: (0, A.jsx)(N.Text, {
                         tag: "span",
                         variant: "heading-md/normal",
                         color: "text-default",
-                        children: G.intl.format(G.t.TByIjT, {
+                        children: d.intl.format(d.t.TByIjT, {
                             expirationDate: I.toLocaleDateString(S, {
                                 dateStyle: "medium"
                             })
@@ -86,7 +86,7 @@ let c = E => {
         } = E;
         return (0, A.jsx)(A.Fragment, {
             children: _.descriptions.map((E, _) => (0, A.jsx)("li", {
-                className: d.DJ,
+                className: G.DJ,
                 children: (0, A.jsx)(N.Text, {
                     tag: "span",
                     variant: "heading-md/normal",
@@ -103,24 +103,24 @@ let c = E => {
         } = E;
         return (0, A.jsxs)(N.MzZ, {
             href: I,
-            className: d.F8,
+            className: G.F8,
             useDefaultUnderlineStyles: !1,
             children: [(0, A.jsx)("div", {
-                className: d.yi,
+                className: G.yi,
                 children: (0, A.jsx)(N.lmn, {
                     size: "md",
                     color: R.A.colors.BORDER_FOCUS
                 })
             }), (0, A.jsx)("div", {
-                className: d.wC,
+                className: G.wC,
                 children: (0, A.jsx)(N.Text, {
                     variant: "text-md/normal",
-                    children: G.intl.format(G.t.zxUdpj, {
+                    children: d.intl.format(d.t.zxUdpj, {
                         classificationDescription: _
                     })
                 })
             }), (0, A.jsx)("div", {
-                className: d.g_,
+                className: G.g_,
                 children: (0, A.jsx)(N._BQ, {
                     size: "md",
                     color: R.A.colors.INTERACTIVE_TEXT_DEFAULT
@@ -131,12 +131,12 @@ let c = E => {
     H = () => (0, A.jsx)(N.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: G.intl.string(G.t["I2H0/E"])
+        children: d.intl.string(d.t["I2H0/E"])
     }),
     h = E => (0, A.jsx)(N.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: G.intl.format(G.t.IFxUaT, {
+        children: d.intl.format(d.t.IFxUaT, {
             letUsKnowHook: (_, I) => (0, A.jsx)(N.MzZ, {
                 href: E.isAppealEligible ? void 0 : E.appealLink,
                 onClick: E.letUsKnowClick,
@@ -145,7 +145,7 @@ let c = E => {
         })
     }),
     u = E => (0, A.jsx)("div", {
-        className: d.CC,
+        className: G.CC,
         children: E.hasBeenAppealed ? (0, A.jsx)(H, {}) : (0, A.jsx)(h, {
             appealLink: r.d$.APPEALS_LINK,
             letUsKnowClick: E.onLetUsKnowClick,
@@ -164,11 +164,11 @@ let c = E => {
             children: [(0, A.jsx)(N.Text, {
                 variant: "eyebrow",
                 color: "text-muted",
-                children: G.intl.string(G.t["977iei"])
+                children: d.intl.string(d.t["977iei"])
             }), (0, A.jsx)(N.Text, {
-                className: d.t8,
+                className: G.t8,
                 variant: "text-sm/normal",
-                children: G.intl.format(G.t["1Z/+aA"], {
+                children: d.intl.format(d.t["1Z/+aA"], {
                     tosLink: _,
                     communityGuidelinesLink: I
                 })
@@ -187,7 +187,7 @@ let c = E => {
         } = E, {
             classification: N,
             classificationRequestState: t,
-            isAppealEligible: G,
+            isAppealEligible: d,
             isDsaEligible: B,
             violationType: m
         } = (0, V.LJ)(_), H = (0, e.bG)([n.A], () => n.A.getAppealEligibility()), h = (0, l.K)(), p = null != N && null != N.flagged_content && N.flagged_content.length > 0, x = (0, s.v)(), g = !!N?.is_coppa && H.includes(i.RH.AGE_VERIFY_ELIGIBLE), f = !!N?.is_coppa && H.includes(i.RH.AGE_VERIFY_GLOBAL_ELIGIBLE), v = {
@@ -219,15 +219,15 @@ let c = E => {
                 violation_type: T
             })
         }, [x]), null == N && t === i.nU.FAILED) ? (T(), null) : null == N ? null : (0, A.jsxs)("div", {
-            className: d.ch,
+            className: G.ch,
             children: [(0, A.jsx)("div", {
-                className: d.uW,
+                className: G.uW,
                 children: (0, A.jsx)(c, {
                     classificationTypeText: N.description,
                     guildMetadata: N?.guild_metadata
                 })
             }), (0, A.jsxs)("div", {
-                className: C()(d.rf, d.uW),
+                className: C()(G.rf, G.uW),
                 children: [(0, A.jsx)(o.U, {
                     flaggedContent: N.flagged_content ?? []
                 }), (0, A.jsx)(M, {
@@ -249,11 +249,11 @@ let c = E => {
                                 is_violative_content_shown: p,
                                 is_dsa_eligible: B,
                                 violation_type: m
-                            }), f ? D.A.openV2(_, R) : g ? D.A.open(_, R) : G && (P.A.increment({
+                            }), f ? D.A.openV2(_, R) : g ? D.A.open(_, R) : d && (P.A.increment({
                                 name: O.K.APPEAL_INGESTION_VIEW
                             }), Y.A.open(_))
                         },
-                        isAppealEligible: G || g
+                        isAppealEligible: d || g
                     })
                 })]
             })]

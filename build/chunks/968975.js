@@ -133,9 +133,9 @@ function T(e) {
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 children: j ?? b.intl.string(b.t["7lZ31J"])
-            }), L && (0, i.jsx)(r.QWc, {
+            }), L && t.length > M && (0, i.jsx)(r.QWc, {
                 variant: "secondary",
-                textVariant: "text-sm/medium",
+                textVariant: "text-xs/normal",
                 onClick: T,
                 text: b.intl.string(b.t.y6PSA3)
             })]

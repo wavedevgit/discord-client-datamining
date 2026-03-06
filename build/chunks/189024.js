@@ -49,12 +49,12 @@ function R() {
         }, () => (0, d.L)({
             analyticsLocations: e
         }))
-    }, [e]), L = (0, s.useCallback)(() => {
+    }, [e]), D = (0, s.useCallback)(() => {
         let e = (0, g.Ci)("openCustomAppSettings") ? _.X.DISPLAY_IN_APP_ICON_CATEGORY : _.X.APPEARANCE_IN_APP_ICON;
         (0, m.openUserSettings)(e, {
             section: S.nc_.APPEARANCE
         })
-    }, []), D = (0, E.A)(e), {
+    }, []), L = (0, E.A)(e), {
         currentDate: G,
         nDaysInMonth: M
     } = (0, s.useMemo)(() => {
@@ -137,10 +137,10 @@ function R() {
                 description: f.intl.string(f.t["1uPk1Z"]),
                 primaryAsset: v.A,
                 ctaText: f.intl.string(f.t.y9TxXV),
-                onCtaClick: L
+                onCtaClick: D
             }],
             r = (s = s.filter(e => null != e))[0].featured,
             o = r ? 5 : 6;
-        return s.splice(+!!r, 0, D), s.length > o && s.splice(o, s.length - o), s
-    }, [D, t, R, M, G, e, y, L, P])
+        return s.splice(+!!r, 0, L), s.length > o && s.splice(o, s.length - o), s
+    }, [L, t, R, M, G, e, y, D, P])
 }

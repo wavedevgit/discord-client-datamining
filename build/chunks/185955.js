@@ -73,11 +73,11 @@ let T = (0, o.Ld)(),
             o?.(e)
         }, [o]), R = s.useCallback(e => e === f, [f]), y = s.useCallback(e => e, []), P = s.useCallback(() => {
             o?.(null)
-        }, [o]), L = s.useRef(null);
-        return (0, g.A)(L, p._F.GUILD_TAG), (0, i.jsxs)(_.A, {
+        }, [o]), D = s.useRef(null);
+        return (0, g.A)(D, p._F.GUILD_TAG), (0, i.jsxs)(_.A, {
             title: x.intl.string(x.t.Pdd1nd),
             titleId: T,
-            ref: L,
+            ref: D,
             children: [(0, i.jsx)(r.Text, {
                 className: E.VA,
                 variant: "text-sm/normal",

@@ -56,6 +56,15 @@ let _ = r.memo(function(e) {
                         }),
                         renderGuildHeaderDropdownButton: r
                     });
+                case l.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK:
+                    return (0, i.jsx)(h, {
+                        renderPopout: e => (0, i.jsx)(u.YX, {
+                            guildId: n.id,
+                            markAsDismissed: m,
+                            channelRowRef: e
+                        }),
+                        renderGuildHeaderDropdownButton: r
+                    });
                 case l.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK:
                     return (0, i.jsx)(h, {
                         renderPopout: e => (0, i.jsx)(u.K8, {

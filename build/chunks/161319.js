@@ -1,7 +1,7 @@
 /** chunk id: 161319 params = (module,exports,require) **/
 n.d(t, {
     PR: () => P,
-    Recurring3PModal: () => D,
+    Recurring3PModal: () => L,
     uE: () => G
 }), n(321073);
 var i = n(627968),
@@ -240,8 +240,8 @@ let j = {
             })]
         })
     },
-    L = e => e.promotionType === E.pt.THIRD_PARTY_OUTBOUND_RECURRING ? e.partnerId?.toLowerCase() ?? null : e.outboundTitle.toLowerCase(),
-    D = e => {
+    D = e => e.promotionType === E.pt.THIRD_PARTY_OUTBOUND_RECURRING ? e.partnerId?.toLowerCase() ?? null : e.outboundTitle.toLowerCase(),
+    L = e => {
         let t, n, s, {
                 transitionState: r,
                 onClose: o
@@ -265,11 +265,11 @@ let j = {
                 promotionPartner: e.outboundTitle,
                 promotionType: e.promotionType
             })).forEach(e => {
-                let t = L(e),
+                let t = D(e),
                     s = (e => {
                         let {
                             promotion: t
-                        } = e, n = L(t);
+                        } = e, n = D(t);
                         return null == n ? null : j[n] ?? null
                     })({
                         promotion: e

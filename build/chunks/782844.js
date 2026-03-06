@@ -32,8 +32,8 @@ var i, s = n(627968),
     R = n(998252),
     y = n(980172),
     P = n(531525),
-    L = n(652215),
-    D = n(985018),
+    D = n(652215),
+    L = n(985018),
     G = n(221432);
 
 function M() {
@@ -60,7 +60,7 @@ function M() {
             setting: P.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
             children: (0, s.jsxs)(d.nVY, {
                 className: G.PN,
-                label: D.intl.string(D.t.pKSjEj),
+                label: L.intl.string(L.t.pKSjEj),
                 children: [e.mfaEnabled ? (0, s.jsx)(v.A, {}) : null, (0, s.jsx)(m.x, {
                     setting: P.H.ACCOUNT_CHANGE_PASSWORD,
                     children: (0, s.jsx)(j.A, {})
@@ -97,23 +97,23 @@ class k extends l.PureComponent {
             subsection: e
         } = this.props;
         return (0, s.jsx)(I.R, {
-            header: D.intl.string(D.t["JAIM/m"]),
+            header: L.intl.string(L.t["JAIM/m"]),
             children: (0, s.jsx)(b.A, {
                 parentSetting: P.H.ACCOUNT,
-                settingsSection: L.nc_.ACCOUNT,
+                settingsSection: D.nc_.ACCOUNT,
                 panelClassName: G.SZ,
                 onTabChange: e => {
-                    S.default.track(L.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                    S.default.track(D.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                         target_tab_name: e === P.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
                     })
                 },
                 defaultTabIndex: "ACCOUNT_STANDING" === e ? 1 : void 0,
                 tabs: [{
-                    title: D.intl.string(D.t.Am9YHi),
+                    title: L.intl.string(L.t.Am9YHi),
                     component: M,
                     setting: P.H.ACCOUNT_SECURITY_TAB
                 }, {
-                    title: D.intl.string(D.t["Vov/9o"]),
+                    title: L.intl.string(L.t["Vov/9o"]),
                     component: g.A,
                     setting: P.H.PRIVACY_AND_SAFETY_STANDING
                 }]

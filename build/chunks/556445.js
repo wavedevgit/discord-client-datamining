@@ -19,15 +19,15 @@ function o(t) {
         size: c = "sm",
         variant: m = "secondary",
         onAction: p,
-        ...h
+        ...A
     } = t, {
-        tooltip: A,
+        tooltip: h,
         loading: g,
         disabled: f,
         onClick: T
     } = (0, a.J$)(e, i, u, s.Ay.getNickname(d, o, i));
     return (0, n.jsx)(l.m, {
-        text: A,
+        text: h,
         children: (0, n.jsx)(r.K0, {
             icon: r.J2m,
             size: c,
@@ -37,8 +37,8 @@ function o(t) {
             },
             disabled: f,
             loading: g,
-            "aria-label": A ?? e.name,
-            ...h
+            "aria-label": h ?? e.name,
+            ...A
         })
     })
 }

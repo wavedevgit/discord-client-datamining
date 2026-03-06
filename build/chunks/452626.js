@@ -20,13 +20,13 @@ function a(t) {
         ...m
     } = t, {
         label: p,
-        tooltip: h,
-        loading: A,
+        tooltip: A,
+        loading: h,
         disabled: g,
         onClick: f
     } = (0, s._B)(e, i, a);
     return (0, n.jsx)(l.m, {
-        text: h,
+        text: A,
         children: (0, n.jsx)(r.Button, {
             variant: d,
             size: o,
@@ -37,7 +37,7 @@ function a(t) {
                 c?.(), f()
             },
             disabled: g,
-            loading: A,
+            loading: h,
             ...m
         })
     })

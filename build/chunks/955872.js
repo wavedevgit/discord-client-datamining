@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(927578),
     y = n(606532),
     P = n(161290),
-    L = n(652215),
-    D = n(985018),
+    D = n(652215),
+    L = n(985018),
     G = n(683380);
 
 function M() {
@@ -63,13 +63,13 @@ function M() {
         H = (0, N.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         B = R.Ay.canUsePremiumProfileCustomization(e),
         {
-            analyticsLocations: Y,
-            newestAnalyticsLocation: F
+            analyticsLocations: F,
+            newestAnalyticsLocation: Y
         } = (0, m.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
     let [z, X] = s.useState(!1), W = !B, K = s.useRef(null);
     return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(m.f5, {
-        value: Y,
+        value: F,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
             profilePreview: (0, i.jsx)(C.A, {
                 user: e,
@@ -103,9 +103,9 @@ function M() {
         }), W && !U && (0, i.jsx)(x.d, {
             className: G.EL,
             showUpsell: W && !z,
-            text: D.intl.format(D.t.TmfgI2, {
+            text: L.intl.format(L.t.TmfgI2, {
                 onClick: () => (0, E.K)({
-                    analyticsSource: F
+                    analyticsSource: Y
                 })
             }),
             textVariant: "heading-md/medium",
@@ -115,13 +115,13 @@ function M() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        O.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        O.default.track(D.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },
-                    text: D.intl.string(D.t.uw9zI7),
+                    text: L.intl.string(L.t.uw9zI7),
                     icon: d.tvc
                 })
             })

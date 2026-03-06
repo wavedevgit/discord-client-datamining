@@ -6,8 +6,8 @@ I.d(_, {
     VE: () => l,
     VT: () => V,
     W1: () => Y,
-    XC: () => u,
-    v4: () => G,
+    XC: () => s,
+    v4: () => u,
     vx: () => P,
     xk: () => n,
     xr: () => r
@@ -67,13 +67,13 @@ function Y() {
     return P().length
 }
 
-function G(E) {
+function u(E) {
     let _ = (0, e.k)(),
         I = (0, A.bG)([C.A], () => null == _ ? null : C.A.getRangeStartTimestamp());
     return null == I ? null : (0, O.i6)(new Date(I).getTime(), () => E, 7)
 }
 
-function u(E, _) {
+function s(E, _) {
     let I = (0, A.bG)([C.A], () => C.A.getLinkTimestamp(E));
     return null != I ? (0, O.mV)(Date.parse(I), _ === R.Ef.PENDING ? R.lu : R.dI) : null
 }

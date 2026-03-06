@@ -25,12 +25,12 @@ function h(e) {
         startAuthorization: g,
         connectionApp: p,
         officialInvite: _
-    } = (0, u.c)(), j = (0, i.bG)([c.default], () => c.default.getCurrentUser()), v = a.useCallback(() => {
+    } = (0, u.c)(), v = (0, i.bG)([c.default], () => c.default.getCurrentUser()), j = a.useCallback(() => {
         t(d.Ws.LinkAccount), g({
             analyticsLocations: ["game_profile"]
         })
     }, [t, g]);
-    if (!n || null == p || !f || h || null == j) return null;
+    if (!n || null == p || !f || h || null == v) return null;
     let A = _?.guild != null ? o.Ay.getGuildSplashURL({
         id: _.guild.id,
         splash: _.guild.splash
@@ -72,7 +72,7 @@ function h(e) {
                     variant: "secondary",
                     icon: r.A5T,
                     text: m.intl.string(m.t.jynBQ5),
-                    onClick: v,
+                    onClick: j,
                     fullWidth: !0
                 })]
             })]

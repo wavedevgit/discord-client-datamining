@@ -41,10 +41,10 @@ let x = function(e) {
             default:
                 return "text-subtle"
         }
-    }(g), [_, j] = a.useState(!1), v = a.useCallback(() => {
-        j(!0)
+    }(g), [_, v] = a.useState(!1), j = a.useCallback(() => {
+        v(!0)
     }, []), A = a.useCallback(() => {
-        j(!1)
+        v(!1)
     }, []), I = a.useCallback(() => {
         null != f && window.open((0, o.L)(f), "_blank", "noreferrer noopener")
     }, [f]);
@@ -86,7 +86,7 @@ let x = function(e) {
                                     rating: h.rating,
                                     rating_count: h.ratingCount?.toLocaleString()
                                 }).toString(),
-                                onTooltipShow: v,
+                                onTooltipShow: j,
                                 onTooltipHide: A,
                                 children: (0, l.jsxs)("div", {
                                     className: m.Z0,

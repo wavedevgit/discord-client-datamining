@@ -1,6 +1,6 @@
 /** chunk id: 17143 params = (module,exports,require) **/
 i.d(e, {
-    A: () => _,
+    A: () => y,
     V: () => g.V
 });
 var n = i(627968),
@@ -14,8 +14,8 @@ var n = i(627968),
     c = i(451988),
     m = i(990078),
     p = i(397927),
-    h = i(827343),
-    A = i(765671),
+    A = i(827343),
+    h = i(765671),
     g = i(123902),
     f = i(430452),
     T = i(383501),
@@ -75,7 +75,7 @@ class x extends l.PureComponent {
             location: o,
             isDeafened: d
         } = this.props, u = !1;
-        t && !d && (h.A.toggleSelfDeaf(), u = !0), h.A.setLoopback("mic_test", !0), this._micTestStartTime = Date.now(), this.setState({
+        t && !d && (A.A.toggleSelfDeaf(), u = !0), A.A.setLoopback("mic_test", !0), this._micTestStartTime = Date.now(), this.setState({
             isMicTesting: !0,
             isDetectingInput: !0,
             didDeafenUser: u
@@ -98,7 +98,7 @@ class x extends l.PureComponent {
             isVoiceConnected: i,
             isDeafened: n
         } = this.props;
-        e && (i && n && t && h.A.toggleSelfDeaf(), h.A.setLoopback("mic_test", !1), this.setState({
+        e && (i && n && t && A.A.toggleSelfDeaf(), A.A.setLoopback("mic_test", !1), this.setState({
             isMicTesting: !1,
             didDeafenUser: !1
         }), null != this._micTestStartTime && v.default.track(C.HAw.MIC_TESTING_STOPPED, {
@@ -135,40 +135,40 @@ class x extends l.PureComponent {
             size: d = "sm",
             isDeafened: u,
             buttonMinWidth: c,
-            measureButtonRef: h,
-            meterOnly: A = !1,
+            measureButtonRef: A,
+            meterOnly: h = !1,
             containerClassName: f,
             helpText: T
         } = this.props, {
             isMicTesting: v,
             volume: C,
             isDetectingInput: x
-        } = this.state, _ = t && !v ? S.intl.string(S.t["9viE2A"]) : null;
+        } = this.state, y = t && !v ? S.intl.string(S.t["9viE2A"]) : null;
         v && t && !u && this._micTestStop();
-        let y = a.length >= r.length ? a : r;
+        let _ = a.length >= r.length ? a : r;
         return (0, n.jsxs)("div", {
             className: s()(E.kL, f),
             children: [(0, n.jsx)(p.D0$, {
                 label: e ?? void 0,
-                hideLabel: A,
-                description: A ? null : i,
+                hideLabel: h,
+                description: h ? null : i,
                 children: (0, n.jsxs)("div", {
                     className: s()(E.ak, {
-                        [E.mi]: A,
+                        [E.mi]: h,
                         [E.EX]: "sm" === d
                     }),
-                    children: [!A && (0, n.jsxs)(n.Fragment, {
+                    children: [!h && (0, n.jsxs)(n.Fragment, {
                         children: [(0, n.jsx)("div", {
                             className: E.km,
                             "aria-hidden": !0,
                             children: (0, n.jsx)(p.Button, {
-                                buttonRef: h,
+                                buttonRef: A,
                                 size: d,
                                 variant: o,
-                                text: y
+                                text: _
                             })
                         }), (0, n.jsx)(m.m, {
-                            text: _,
+                            text: y,
                             children: (0, n.jsx)("div", {
                                 style: null != c ? {
                                     minWidth: c
@@ -185,7 +185,7 @@ class x extends l.PureComponent {
                             })
                         })]
                     }), (0, n.jsx)(g.A, {
-                        progress: v || A ? C + 100 : 0,
+                        progress: v || h ? C + 100 : 0,
                         notchBackground: l,
                         notchClassName: this.props.notchClassName,
                         size: d
@@ -203,7 +203,7 @@ class x extends l.PureComponent {
     }
 }
 
-function _(t) {
+function y(t) {
     let {
         inputDevice: e,
         outputDevice: i,
@@ -248,8 +248,8 @@ function _(t) {
         }
     }), m = (0, d.bG)([T.A], () => T.A.isConnected()), {
         ref: p,
-        width: h
-    } = (0, A.Ay)();
+        width: A
+    } = (0, h.Ay)();
     return (0, n.jsx)(x, {
         isVoiceConnected: m,
         inputVolume: s,
@@ -261,7 +261,7 @@ function _(t) {
         inputDeviceName: e?.name ?? "",
         outputDeviceName: i?.name ?? "",
         measureButtonRef: p,
-        buttonMinWidth: h,
+        buttonMinWidth: A,
         ...t
     })
 }

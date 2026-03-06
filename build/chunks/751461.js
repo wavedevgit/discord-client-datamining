@@ -21,14 +21,14 @@ var S = I(627968),
     V = I(531525);
 I(820575);
 var Y = I(652215),
-    G = I(985018),
-    u = I(870236);
+    u = I(985018),
+    s = I(870236);
 
-function s(E) {
+function G(E) {
     let {
         ingress: _,
         guildId: I
-    } = E, r = (0, P.q9)(), s = N.$s.useSetting().includes(I), d = (0, R.K)(), a = (0, n.e)(), o = (0, C.uM)(), U = A.useCallback(E => {
+    } = E, r = (0, P.q9)(), G = N.$s.useSetting().includes(I), d = (0, R.K)(), a = (0, n.e)(), o = (0, C.uM)(), U = A.useCallback(E => {
         let S = (0, e.Tb)();
         E ? S.delete(I) : S.add(I), N.$s.updateSetting(Array.from(S)), t.default.track(Y.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: l.m.DIRECT_MESSAGES_TOGGLE,
@@ -43,20 +43,20 @@ function s(E) {
             applied_to_existing_guilds: _
         })
     }
-    let c = a ? G.intl.string(G.t.PMsfcH) : G.intl.string(G.t.RAQUSN);
+    let c = a ? u.intl.string(u.t.PMsfcH) : u.intl.string(u.t.RAQUSN);
     return (0, S.jsx)(D.h, {
         setting: V.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
         children: "0" === I ? (0, S.jsx)(L.Ay, {
             title: c,
-            note: a ? G.intl.string(G.t.XXGmuB) : G.intl.string(G.t.wbYDfT),
+            note: a ? u.intl.string(u.t.XXGmuB) : u.intl.string(u.t.wbYDfT),
             value: !d,
             onChange: E => {
                 var _;
                 _ = !E, (0, i.O)({
-                    header: G.intl.string(G.t["uUr+GR"]),
-                    body: G.intl.string(G.t.hjGJBp),
-                    confirmText: G.intl.string(G.t.gm1Vej),
-                    cancelText: G.intl.string(G.t.p89ACt),
+                    header: u.intl.string(u.t["uUr+GR"]),
+                    body: u.intl.string(u.t.hjGJBp),
+                    confirmText: u.intl.string(u.t.gm1Vej),
+                    cancelText: u.intl.string(u.t.p89ACt),
                     confirmButtonColor: T.$n.Colors.BRAND,
                     onConfirm: () => {
                         N.n6.updateSetting(_), M(_, !1)
@@ -67,11 +67,11 @@ function s(E) {
                 })
             },
             disabled: o,
-            tooltipText: o ? G.intl.string(u.default["6Af/cw"]) : void 0
+            tooltipText: o ? u.intl.string(s.default["6Af/cw"]) : void 0
         }) : (0, S.jsx)(L.Ay, {
             title: c,
-            note: r ? G.intl.string(G.t.V0ka0Q) : a ? G.intl.string(G.t.F9WY3f) : G.intl.string(G.t.G7c3Xo),
-            value: !s,
+            note: r ? u.intl.string(u.t.V0ka0Q) : a ? u.intl.string(u.t.F9WY3f) : u.intl.string(u.t.G7c3Xo),
+            value: !G,
             onChange: U
         })
     })
@@ -82,7 +82,7 @@ function d(E) {
         ingress: _ = r.bf.USER_SETTINGS_PRIVACY_SAFETY,
         guildId: I
     } = E, A = (0, P.Tx)();
-    return (0, S.jsx)(s, {
+    return (0, S.jsx)(G, {
         ingress: _,
         guildId: I ?? A
     })

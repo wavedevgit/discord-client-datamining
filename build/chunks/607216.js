@@ -1,5 +1,6 @@
 /** chunk id: 607216 params = (module,exports,require) **/
 e.exports = {
-    E: "bundleSkuPreview_d87184",
-    q: "nameplate_d87184"
+    ev: "skuPreview_d87184",
+    qF: "nameplate_d87184",
+    mn: "collectiblesCardHover_d87184"
 }

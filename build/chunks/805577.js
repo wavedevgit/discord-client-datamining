@@ -34,8 +34,8 @@ var i = n(627968),
     R = n(8880),
     y = n(954571),
     P = n(975571),
-    L = n(964404),
-    D = n(253932),
+    D = n(964404),
+    L = n(253932),
     G = n(780964),
     M = n(397438),
     U = n(193658),
@@ -44,8 +44,8 @@ var i = n(627968),
     w = n(355097),
     H = n(531525),
     B = n(652215),
-    Y = n(823894),
-    F = n(75804),
+    F = n(823894),
+    Y = n(75804),
     z = n(985018),
     X = n(241015),
     W = n(773975),
@@ -140,7 +140,7 @@ function ee(e) {
 }
 
 function et() {
-    let e = D.hH.useSetting(),
+    let e = L.hH.useSetting(),
         [t] = s.useState(() => {
             let e = (0, f.rh)({
                 ...(0, I.Ay)({
@@ -280,7 +280,7 @@ function ea() {
 }
 
 function er() {
-    let e = (0, r.bG)([L.Ay], () => L.Ay.hdrDynamicRange);
+    let e = (0, r.bG)([D.Ay], () => D.Ay.hdrDynamicRange);
     return (0, i.jsx)(j.x, {
         setting: H.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
         children: (0, i.jsx)(d.z6M, {
@@ -401,8 +401,8 @@ function eu() {
 }
 
 function e_() {
-    let e = D.kt.useSetting(),
-        t = D.Sf.useSetting(),
+    let e = L.kt.useSetting(),
+        t = L.Sf.useSetting(),
         {
             useReducedMotion: n,
             rawPrefersReducedMotion: l,
@@ -447,7 +447,7 @@ function e_() {
                     label: z.intl.string(z.t.Iayoh5),
                     description: null != o ? (0, v.A)(o) : void 0,
                     checked: e,
-                    onChange: D.kt.updateSetting
+                    onChange: L.kt.updateSetting
                 })
             }), (0, i.jsx)(j.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
@@ -455,7 +455,7 @@ function e_() {
                     label: z.intl.string(z.t.iIaOlc),
                     description: null != c ? (0, v.A)(c) : void 0,
                     checked: t,
-                    onChange: D.Sf.updateSetting
+                    onChange: L.Sf.updateSetting
                 })
             }), (0, i.jsx)(j.x, {
                 setting: H.H.ACCESSIBILITY_STICKERS,
@@ -466,24 +466,24 @@ function e_() {
 }
 
 function eg() {
-    let e = D.S0.useSetting(),
+    let e = L.S0.useSetting(),
         t = (0, r.bG)([M.A], () => M.A.getAppliedOverrideReasonKey("animateStickers")),
         n = s.useCallback(e => {
-            D.S0.updateSetting(e)
+            L.S0.updateSetting(e)
         }, []);
     return (0, i.jsx)(d.z6M, {
         label: z.intl.string(z.t["6NtAuJ"]),
         description: null != t ? (0, v.A)(t) : z.intl.string(z.t.GRa6U7),
         options: [{
             name: z.intl.string(z.t["Xp+X2U"]),
-            value: Y.BJ.ALWAYS_ANIMATE
+            value: F.BJ.ALWAYS_ANIMATE
         }, {
             name: z.intl.string(z.t.IlLT7e),
             desc: z.intl.string(z.t.bIW9Tl),
-            value: Y.BJ.ANIMATE_ON_INTERACTION
+            value: F.BJ.ANIMATE_ON_INTERACTION
         }, {
             name: z.intl.string(z.t.IGu8x3),
-            value: Y.BJ.NEVER_ANIMATE
+            value: F.BJ.NEVER_ANIMATE
         }],
         onChange: e => n(e),
         value: e
@@ -492,7 +492,7 @@ function eg() {
 
 function em() {
     let e = (0, r.bG)([g.A], () => g.A.isSubmitButtonEnabled),
-        t = D.D_.useSetting(),
+        t = L.D_.useSetting(),
         n = s.useRef(null);
     return (0, U.A)(n, w.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
         ref: n,
@@ -517,7 +517,7 @@ function em() {
                             location: {
                                 section: B.JJy.SETTINGS_ACCESSIBILITY
                             }
-                        }), D.D_.updateSetting(e)
+                        }), L.D_.updateSetting(e)
                     }
                 })
             })]
@@ -532,7 +532,7 @@ function eA() {
         children: [(0, i.jsx)(d.Apm, {
             label: z.intl.string(z.t.lsW5Ev),
             description: z.intl.string(z.t.Ci4wMS),
-            markers: F.P,
+            markers: Y.P,
             initialValue: e,
             defaultValue: 1,
             stickToMarkers: !0,

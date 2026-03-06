@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => v
+    j: () => j
 });
 var i = n(627968),
     s = n(64700),
@@ -15,12 +15,13 @@ var i = n(627968),
     g = n(823092),
     m = n(963935),
     A = n(894858),
-    h = n(641324),
-    p = n(46373),
-    x = n(49999),
-    E = n(639485);
+    h = n(272053),
+    p = n(641324),
+    x = n(46373),
+    E = n(49999),
+    T = n(639485);
 
-function T(e) {
+function S(e) {
     let {
         notice: t,
         children: n
@@ -44,7 +45,7 @@ function T(e) {
             element: e
         } = t;
         return (0, i.jsx)(d.FQk, {
-            className: E.lm,
+            className: T.lm,
             children: (0, i.jsx)(e, {})
         })
     }, [t, l]);
@@ -56,47 +57,34 @@ function T(e) {
     })
 }
 
-function S(e) {
+function C(e) {
     let {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: a()(E.oK, {
-            [E.qf]: t.sticky
+        className: a()(T.oK, {
+            [T.qf]: t.sticky
         }),
         "data-settings-panel-sticky-decoration": t.sticky || void 0,
         children: (0, i.jsx)(n, {})
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         scrollerRef: t,
         panelKey: n,
         notice: l,
         children: a
     } = e, r = s.useRef(null);
-    return s.useEffect(() => A.A.subscribe(e => {
-        let {
-            navTransition: t
-        } = e;
-        return t?.targetKey
-    }, e => {
-        n === e && A.A.setState({
-            navTransition: void 0,
-            disableSidebarCategoryAutoSelect: !1
-        })
-    }, {
-        equalityFn: (e, t) => e === t,
-        fireImmediately: !0
-    }), [n]), (0, i.jsx)(T, {
+    return (0, i.jsx)(S, {
         notice: l,
         children: (0, i.jsx)(d.ArX, {
             "data-settings-panel-scroller": !0,
-            className: E.XG,
+            className: T.XG,
             ref: t,
             children: (0, i.jsx)("div", {
-                className: E.nd,
+                className: T.nd,
                 ref: r,
                 children: (0, i.jsx)(d.xpW, {
                     containerRef: r,
@@ -107,26 +95,26 @@ function C(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         layout: t,
         decoration: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: E.LZ,
-        children: [null != n && (0, i.jsx)(S, {
+        className: T.LZ,
+        children: [null != n && (0, i.jsx)(C, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(h.A, {
+            children: [(0, i.jsx)(p.A, {
                 node: e
-            }), n !== t.length - 1 && (0, i.jsx)(p.A, {
-                className: E.yF
+            }), n !== t.length - 1 && (0, i.jsx)(x.A, {
+                className: T.yF
             })]
         }, e.key))]
     })
 }
 
-function I(e) {
+function b(e) {
     let {
         panelKey: t,
         layout: n,
@@ -137,9 +125,7 @@ function I(e) {
             currentTabKeys: n
         } = e;
         return n.get(t)
-    }) ?? n[0].key, {
-        navigateWithValidation: o
-    } = (0, g.L_)();
+    }) ?? n[0].key;
     s.useEffect(() => {
         let e = A.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
@@ -148,22 +134,19 @@ function I(e) {
             currentTabKeys: i
         })
     }, [n, t]);
-    let c = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(C, {
+    let o = n.find(e => e.key === r) ?? n[0];
+    return (0, i.jsxs)(f, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
-            className: E.$H,
+            className: T.$H,
             selectedItem: r,
             onItemSelect: e => {
-                o(() => {
-                    if (e === r) return;
-                    let i = new Map(A.A.getField("currentTabKeys"));
-                    i.set(t, e), A.A.setState({
-                        currentTabKeys: i
-                    });
-                    let s = n.find(t => t.key === e);
-                    s?.onItemSelect?.()
+                h.A.navigate(e, {
+                    onTransitionStart: () => {
+                        let t = n.find(t => t.key === e);
+                        t?.onItemSelect?.()
+                    }
                 })
             },
             orientation: "horizontal",
@@ -181,45 +164,45 @@ function I(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != c.StronglyDiscouragedCustomComponent ? (0, i.jsx)(c.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(f, {
-                layout: c.layout,
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(I, {
+                layout: o.layout,
                 decoration: a
             })
         })]
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         panelKey: t,
         notice: n,
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(C, {
+    return (0, i.jsx)(f, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(I, {
             layout: l,
             decoration: s
         })
     })
 }
 
-function N(e) {
+function v(e) {
     let {
         component: t,
         panelKey: n,
         notice: s
     } = e;
-    return (0, i.jsx)(C, {
+    return (0, i.jsx)(f, {
         panelKey: n,
         notice: s,
         children: (0, i.jsx)(t, {})
     })
 }
 
-function v(e) {
+function j(e) {
     let {
         node: t
     } = e, {
@@ -232,23 +215,23 @@ function v(e) {
             } = t.parent, n = "getDismissibleContentTypes" in e ? e.getDismissibleContentTypes?.() : null;
             null != n && n.forEach(e => {
                 (0, u.Dr)(e, {
-                    dismissAction: x.i.AUTO,
+                    dismissAction: E.i.AUTO,
                     forceTrack: !0
                 })
             })
         }, [t]), l && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if (null != t.StronglyDiscouragedCustomComponent) return (0, i.jsx)(N, {
+    if (null != t.StronglyDiscouragedCustomComponent) return (0, i.jsx)(v, {
         component: t.StronglyDiscouragedCustomComponent,
         panelKey: t.key,
         notice: t.notice
     });
-    if ((0, m.zY)(n)) return (0, i.jsx)(I, {
+    if ((0, m.zY)(n)) return (0, i.jsx)(b, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, m.Iu)(n)) return (0, i.jsx)(b, {
+    if ((0, m.Iu)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

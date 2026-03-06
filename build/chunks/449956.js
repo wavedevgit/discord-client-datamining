@@ -28,7 +28,6 @@ function A() {
         deviceType: g.oh.VIDEO_INPUT,
         location: "UserSettingsCameraSelect",
         isDisabled: !e,
-        showAllDevices: !0,
         helperText: (0, o.p)() ? m.intl.format(m.t.aJYgRt, {
             onCameraSettingsClick: () => {
                 u.A.setState({

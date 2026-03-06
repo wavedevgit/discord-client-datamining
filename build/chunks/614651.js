@@ -37,8 +37,8 @@ var i = n(627968),
     R = n(253932),
     y = n(780964),
     P = n(70040),
-    L = n(961154),
-    D = n(790174),
+    D = n(961154),
+    L = n(790174),
     G = n(840065),
     M = n(531525),
     U = n(652215),
@@ -50,8 +50,8 @@ let B = {
         COZY: "cozy",
         COMPACT: "compact"
     },
-    Y = (0, E.Ld)(),
     F = (0, E.Ld)(),
+    Y = (0, E.Ld)(),
     z = "1337",
     X = e => {
         let t = 0;
@@ -167,7 +167,7 @@ class J extends s.Component {
             stickToMarkers: !0,
             onValueChange: this.handleZoomChange,
             onValueRender: this.handleSliderRender,
-            "aria-labelledby": Y
+            "aria-labelledby": F
         }) : null
     }
     renderFontScaleSlider() {
@@ -200,7 +200,7 @@ class J extends s.Component {
             onValueRender: this.handleSliderRenderPX,
             onMarkerRender: this.handleSliderRenderPX,
             getAriaValueText: this.handleSliderValueText,
-            "aria-labelledby": F
+            "aria-labelledby": Y
         })
     }
     renderPreview() {
@@ -280,7 +280,7 @@ class J extends s.Component {
             children: [this.renderPreview(), this.renderTheme()]
         }), n = (0, i.jsx)(I.x, {
             setting: M.H.APPEARANCE_ICON,
-            children: (0, i.jsx)(L.yG, {})
+            children: (0, i.jsx)(D.yG, {})
         }), s = [{
             name: V.intl.string(V.t["7iegX4"]),
             value: o.NS.COMPACT
@@ -343,7 +343,7 @@ class J extends s.Component {
             className: w.fK,
             children: (0, i.jsx)(Z, {})
         });
-        return (0, i.jsxs)(D.A, {
+        return (0, i.jsxs)(L.A, {
             title: V.intl.string(V.t["iHH+ky"]),
             children: [t, n, l, a, r, d]
         })

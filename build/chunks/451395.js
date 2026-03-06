@@ -1,6 +1,6 @@
 /** chunk id: 451395 params = (module,exports,require) **/
 n.d(t, {
-    gY: () => m,
+    gY: () => g,
     jV: () => f,
     mG: () => x
 });
@@ -10,31 +10,31 @@ var i = n(627968),
     s = n.n(a),
     r = n(131346),
     o = n(522437),
-    c = n(352944),
-    d = n(435371),
+    d = n(352944),
+    c = n(435371),
     u = n(397927),
-    g = n(985018);
+    m = n(985018);
 
-function m(e) {
+function g(e) {
     let {
         dragRef: t,
         dropRef: n,
         index: i,
         listType: a,
         itemId: s,
-        itemType: d,
+        itemType: c,
         itemPreviewProps: u,
-        onReorder: g,
-        onEnd: m,
+        onReorder: m,
+        onEnd: g,
         disableDefaultPreview: x = !0
-    } = e, f = `${d}_${a}`, p = l.useCallback((e, t) => {
-        g?.(e, t)
-    }, [g]), h = l.useMemo(() => ({
+    } = e, f = `${c}_${a}`, p = l.useCallback((e, t) => {
+        m?.(e, t)
+    }, [m]), h = l.useMemo(() => ({
         id: s,
         index: i,
-        itemType: d,
+        itemType: c,
         itemPreviewProps: u
-    }), [s, i, d, u]), [{
+    }), [s, i, c, u]), [{
         isDragging: _
     }, A, I] = (0, r.i)({
         type: f,
@@ -42,10 +42,10 @@ function m(e) {
         collect: e => ({
             isDragging: e.isDragging()
         }),
-        end: m
+        end: g
     });
     l.useEffect(() => {
-        x && I((0, c.n)(), {
+        x && I((0, d.n)(), {
             captureDraggingState: !0
         })
     }, [I, x]);
@@ -81,23 +81,23 @@ let x = l.memo(function(e) {
         draggingClassName: a,
         dropBeforeClassName: r,
         dropAfterClassName: o,
-        "aria-label": c,
-        children: d,
+        "aria-label": d,
+        children: c,
         ...u
-    } = e, g = l.useRef(null), {
+    } = e, m = l.useRef(null), {
         isDragging: x,
         dragSourcePosition: f
-    } = m({
-        dragRef: g,
-        dropRef: g,
+    } = g({
+        dragRef: m,
+        dropRef: m,
         index: t,
         ...u
     }), p = null != f, h = p && t < f, _ = p && t > f;
     return (0, i.jsx)("div", {
-        ref: g,
+        ref: m,
         className: s()(n, x && a, h && r, _ && o),
-        "aria-label": c,
-        children: d
+        "aria-label": d,
+        children: c
     })
 });
 
@@ -108,8 +108,8 @@ function f(e) {
         iconSize: l = "sm",
         ...a
     } = e;
-    return (0, i.jsx)(d.un, {
-        body: g.intl.format(g.t["zvln/l"], {
+    return (0, i.jsx)(c.un, {
+        body: m.intl.format(m.t["zvln/l"], {
             emphasizeHook: e => (0, i.jsx)("strong", {
                 children: e
             })
@@ -117,7 +117,7 @@ function f(e) {
         ariaHidden: !0,
         children: (0, i.jsx)(u.DUT, {
             innerRef: t,
-            "aria-label": n ?? g.intl.string(g.t.n9T3Hi),
+            "aria-label": n ?? m.intl.string(m.t.n9T3Hi),
             "aria-keyshortcuts": "Control+D, Meta+D",
             ...a,
             children: (0, i.jsx)(u.WP0, {

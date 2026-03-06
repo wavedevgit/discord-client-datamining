@@ -3,7 +3,7 @@ I.d(_, {
     KK: () => r,
     NZ: () => V,
     gr: () => l,
-    lH: () => G,
+    lH: () => u,
     uM: () => Y,
     xs: () => i
 });
@@ -73,7 +73,7 @@ function Y() {
     return (0, D.Du)()
 }
 
-function G(E) {
+function u(E) {
     let _, I;
     return {
         hasConsented: (_ = (0, P.k)(), (0, A.bG)([N.A], () => N.A.hasConsented(_, E))),

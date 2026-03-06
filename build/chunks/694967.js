@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => u
 });
-var l = n(311907),
-    i = n(962173),
+var i = n(311907),
+    l = n(962173),
     r = n(403362),
     a = n(652215);
 
 function u() {
-    return (0, l.yK)([i.A], () => [i.A.getAccount(null, a.fg2.XBOX), i.A.getAccount(null, a.fg2.PLAYSTATION), i.A.getAccount(null, a.fg2.PLAYSTATION_STAGING)].filter(r.Vq))
+    return (0, i.yK)([l.A], () => [l.A.getAccount(null, a.fg2.XBOX), l.A.getAccount(null, a.fg2.PLAYSTATION), l.A.getAccount(null, a.fg2.PLAYSTATION_STAGING)].filter(r.Vq))
 }

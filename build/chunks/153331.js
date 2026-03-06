@@ -13,8 +13,8 @@ var n, l = i(627968),
     c = i(3026),
     m = i(582754),
     p = i(397927),
-    h = i(492684),
-    A = i(736653),
+    A = i(492684),
+    h = i(736653),
     g = i(573648),
     f = i(235986),
     T = i(573435),
@@ -23,23 +23,23 @@ var n, l = i(627968),
     S = i(692969),
     E = i(263063),
     x = i(886019),
-    _ = i(559405),
-    y = i(290987),
+    y = i(559405),
+    _ = i(290987),
     N = i(345942),
     I = i(763758),
     j = i(82149),
     D = i(139675),
     P = i(486020),
     U = i(821589),
-    O = i(474447),
-    b = i(682261),
-    L = i(672979),
+    b = i(474447),
+    L = i(682261),
+    O = i(672979),
     M = i(90644),
     R = i(61330),
     V = i(960076),
     w = i(432166),
-    H = i(360469),
-    G = i(652215),
+    G = i(360469),
+    H = i(652215),
     W = i(985018),
     F = i(332621),
     k = ((n = {}).ACTIVITY_FEED = "ActivityFeed", n.STREAM_PREVIEW = "StreamPreview", n.VOICE_CHANNEL = "VoiceChannel", n);
@@ -48,7 +48,7 @@ let B = {
         VoiceChannel: [108, 60],
         ActivityFeed: [900, 500]
     },
-    Y = (0, h.A)(class extends r.PureComponent {
+    Y = (0, A.A)(class extends r.PureComponent {
         render() {
             return (0, l.jsx)("div", {
                 className: F.timestamp,
@@ -60,11 +60,11 @@ let B = {
 function z(t) {
     let {
         activity: e
-    } = t, i = (0, A.Ay)(), n = function(t) {
+    } = t, i = (0, h.Ay)(), n = function(t) {
         let {
             activity: e
         } = t, i = null;
-        return (0, M.A)(e) && (i = G.fg2.SPOTIFY), null != e.platform && [G.yTV.PS4, G.yTV.PS5].includes(e.platform) && (i = G.fg2.PLAYSTATION), i
+        return (0, M.A)(e) && (i = H.fg2.SPOTIFY), null != e.platform && [H.yTV.PS4, H.yTV.PS5].includes(e.platform) && (i = H.fg2.PLAYSTATION), i
     }({
         activity: e
     });
@@ -83,8 +83,8 @@ class $ extends r.PureComponent {
             activity: t,
             activityGuild: e
         } = this.props;
-        return null != e && t?.type !== G.$pd.PLAYING && t?.type !== G.$pd.WATCHING && t?.type !== G.$pd.LISTENING && t?.type !== G.$pd.HANG_STATUS ? {
-            type: G.$pd.PLAYING,
+        return null != e && t?.type !== H.$pd.PLAYING && t?.type !== H.$pd.WATCHING && t?.type !== H.$pd.LISTENING && t?.type !== H.$pd.HANG_STATUS ? {
+            type: H.$pd.PLAYING,
             name: W.intl.string(W.t.eXan7B)
         } : t
     }
@@ -110,44 +110,44 @@ class $ extends r.PureComponent {
             name: d
         } = o;
         switch (o.type) {
-            case G.$pd.STREAMING:
+            case H.$pd.STREAMING:
                 e = W.intl.formatToPlainString(W.t.Dzgz4u, {
-                    platform: [G.fg2.TWITCH, G.fg2.YOUTUBE].includes(d.toLowerCase()) ? d : g.A.get(G.fg2.TWITCH).name
+                    platform: [H.fg2.TWITCH, H.fg2.YOUTUBE].includes(d.toLowerCase()) ? d : g.A.get(H.fg2.TWITCH).name
                 });
                 break;
-            case G.$pd.LISTENING:
+            case H.$pd.LISTENING:
                 e = W.intl.formatToPlainString(W.t["5sYPnr"], {
                     name: d
                 });
                 break;
-            case G.$pd.WATCHING:
+            case H.$pd.WATCHING:
                 e = W.intl.formatToPlainString(W.t.Ge29Zy, {
                     name: d
                 });
                 break;
-            case G.$pd.PLAYING:
-                e = (0, O.A)(o, this.props.type, this.props.enableUserHoverActivities);
+            case H.$pd.PLAYING:
+                e = (0, b.A)(o, this.props.type, this.props.enableUserHoverActivities);
                 break;
-            case G.$pd.COMPETING:
+            case H.$pd.COMPETING:
                 e = W.intl.formatToPlainString(W.t.SQCo6D, {
                     name: d
                 })
         }
-        null == n || this.props.enableUserHoverActivities || (e = (0, u.Lt)(o?.flags ?? 0, G.jUm.EMBEDDED) ? o.type === G.$pd.WATCHING ? W.intl.formatToPlainString(W.t["M/L8ot"], {
+        null == n || this.props.enableUserHoverActivities || (e = (0, u.Lt)(o?.flags ?? 0, H.jUm.EMBEDDED) ? o.type === H.$pd.WATCHING ? W.intl.formatToPlainString(W.t["M/L8ot"], {
             guildName: n.name
         }) : W.intl.formatToPlainString(W.t["4chKQu"], {
             guildName: n.name
         }) : W.intl.formatToPlainString(W.t.sddlGK, {
             server: n.name
-        })), o?.type === G.$pd.HANG_STATUS && (e = W.intl.string(W.t["74vS/x"]));
+        })), o?.type === H.$pd.HANG_STATUS && (e = W.intl.string(W.t["74vS/x"]));
         let m = this.isUserActivityHoverExperiment(),
-            h = r ? "text-xs/semibold" : "eyebrow";
-        return m && (h = "text-xs/medium"), (0, l.jsxs)("div", {
+            A = r ? "text-xs/semibold" : "eyebrow";
+        return m && (A = "text-xs/medium"), (0, l.jsxs)("div", {
             className: F.headerContainer,
             children: [(0, l.jsx)(p.Heading, {
                 className: a()(!m && (t ? F.headerTextEmptyBody : F.headerTextNormal)),
                 color: m ? "text-muted" : void 0,
-                variant: h,
+                variant: A,
                 children: (0, l.jsx)(c.A, {
                     children: e
                 })
@@ -159,7 +159,7 @@ class $ extends r.PureComponent {
             className: F.assets,
             children: (0, l.jsx)("img", {
                 alt: "",
-                src: g.A.get(G.fg2.XBOX).icon.customPNG,
+                src: g.A.get(H.fg2.XBOX).icon.customPNG,
                 className: a()(this.getTypeClass("assetsLargeImage", "Xbox"))
             })
         })
@@ -168,9 +168,9 @@ class $ extends r.PureComponent {
         let e, i, {
             user: n
         } = this.props;
-        if (t.type === G.$pd.HANG_STATUS) return (0, l.jsx)("div", {
+        if (t.type === H.$pd.HANG_STATUS) return (0, l.jsx)("div", {
             className: F.assets,
-            children: (0, l.jsx)(_.A, {
+            children: (0, l.jsx)(y.A, {
                 userId: n.id,
                 hangStatusActivity: t,
                 size: 40,
@@ -188,8 +188,8 @@ class $ extends r.PureComponent {
         let u = (0, M.A)(t),
             c = null != o.large_image ? (0, l.jsx)("img", {
                 alt: o.large_text ?? "",
-                src: (0, D.uD)(d, o.large_image, e ?? [H.iu.LARGE, H.iu.LARGE]),
-                className: a()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? G.fg2.TWITCH : ""), {
+                src: (0, D.uD)(d, o.large_image, e ?? [G.iu.LARGE, G.iu.LARGE]),
+                className: a()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? H.fg2.TWITCH : ""), {
                     [this.getTypeClass("assetsLargeMask") ?? ""]: null != o.small_image,
                     [F.assetsLargeImageSpotify]: u
                 })
@@ -203,13 +203,13 @@ class $ extends r.PureComponent {
             if (null == e) return null;
             c = (0, l.jsx)(T.Ay, {
                 mask: T.Ay.Masks.SQUIRCLE,
-                width: H.iu.SMALL,
-                height: H.iu.SMALL,
+                width: G.iu.SMALL,
+                height: G.iu.SMALL,
                 children: (0, l.jsx)("img", {
                     src: P.Ay.getGuildIconURL({
                         id: e.guildId,
                         icon: o.small_image,
-                        size: H.iu.SMALL
+                        size: G.iu.SMALL
                     }) ?? void 0,
                     className: F.assetsLargeImageVoiceChannel,
                     alt: ""
@@ -239,7 +239,7 @@ class $ extends r.PureComponent {
             position: "top",
             children: t => (0, l.jsx)("img", {
                 alt: o.small_text ?? "",
-                src: (0, D.uD)(d, o.small_image, [H.iu.SMALL, H.iu.SMALL]),
+                src: (0, D.uD)(d, o.small_image, [G.iu.SMALL, G.iu.SMALL]),
                 className: this.getTypeClass("assetsSmallImage", null == c ? "WithoutLargeImage" : void 0),
                 ...t
             })
@@ -271,7 +271,7 @@ class $ extends r.PureComponent {
             application: n,
             activityGuild: r
         } = this.props;
-        return null != t.assets || (0, b.A)(t) || t.type !== G.$pd.PLAYING || "ActivityFeed" === i || e.bot ? null : null == n && null != r ? (0, l.jsx)("div", {
+        return null != t.assets || (0, L.A)(t) || t.type !== H.$pd.PLAYING || "ActivityFeed" === i || e.bot ? null : null == n && null != r ? (0, l.jsx)("div", {
             className: a()(F.gameIcon, F.screenshareIcon)
         }) : (0, l.jsx)(v.A, {
             className: F.gameIcon,
@@ -289,11 +289,11 @@ class $ extends r.PureComponent {
             details: r,
             type: s
         } = t;
-        if (s === G.$pd.CUSTOM_STATUS) return null;
-        let o = (0, L.A)(t),
+        if (s === H.$pd.CUSTOM_STATUS) return null;
+        let o = (0, O.A)(t),
             d = t.name,
             u = d;
-        return (s === G.$pd.HANG_STATUS ? u = (0, x.Au)(e.id, t) : o && null != i ? u = (0, l.jsx)("span", {
+        return (s === H.$pd.HANG_STATUS ? u = (0, x.Au)(e.id, t) : o && null != i ? u = (0, l.jsx)("span", {
             className: this.props.enableUserHoverActivities ? F.activityNameUserActivityHover : F.activityName,
             children: u
         }) : !o && (d = r, u = r, (0, M.A)(t) && null != t.sync_id && null != r ? u = (0, l.jsx)(p.MzZ, {
@@ -317,13 +317,13 @@ class $ extends r.PureComponent {
             } = this.props,
             s = i,
             a = i;
-        if (t.type === G.$pd.CUSTOM_STATUS) s = n;
-        else if (t.type === G.$pd.HANG_STATUS && null != r) s = W.intl.formatToPlainString(W.t.IAZiW2, {
+        if (t.type === H.$pd.CUSTOM_STATUS) s = n;
+        else if (t.type === H.$pd.HANG_STATUS && null != r) s = W.intl.formatToPlainString(W.t.IAZiW2, {
             guildName: r.name
         }), e = () => {
             (0, N.u)(r.id)
         };
-        else if (!(0, L.A)(t))
+        else if (!(0, O.A)(t))
             if (s = n, a = n, (0, M.A)(t) && null != n) {
                 let e = (e, i) => (0, l.jsx)(I.A, {
                     artists: n,
@@ -385,15 +385,15 @@ class $ extends r.PureComponent {
         let {
             activityGuild: e
         } = this.props;
-        if (!(0, L.A)(t) || (0, M.A)(t)) return null;
+        if (!(0, O.A)(t) || (0, M.A)(t)) return null;
         let {
             timestamps: i
         } = t;
-        return null == i ? null : (0, b.A)(t) ? (0, l.jsx)(Y, {
+        return null == i ? null : (0, L.A)(t) ? (0, l.jsx)(Y, {
             timestamps: i
-        }) : (0, l.jsx)(y.Ay, {
+        }) : (0, l.jsx)(_.Ay, {
             start: i.start,
-            location: y.Ay.Locations.USER_ACTIVITY,
+            location: _.Ay.Locations.USER_ACTIVITY,
             className: F.playTime,
             isApplicationStreaming: null != e,
             enableUserHoverActivities: this.props.enableUserHoverActivities
@@ -424,7 +424,7 @@ class $ extends r.PureComponent {
             } = t,
             a = n,
             o = n;
-        if (!(0, L.A)(t) && (a = s?.large_text, o = s?.large_text, (0, M.A)(t) && null != a)) {
+        if (!(0, O.A)(t) && (a = s?.large_text, o = s?.large_text, (0, M.A)(t) && null != a)) {
             let e = (e, i) => null != t.sync_id && null != o ? (0, l.jsx)(p.MzZ, {
                 className: F.bodyLink,
                 onClick: this.handleOpenSpotifyAlbum,
@@ -435,7 +435,7 @@ class $ extends r.PureComponent {
                 albumHook: e
             })
         }
-        return null != a && "" !== a && t.type !== G.$pd.CUSTOM_STATUS || (0, j.Cy)(t) ? (r?.size == null && [H.I4].includes(t.application_id ?? "") ? i = W.intl.formatToPlainString(W.t["u//9By"], {
+        return null != a && "" !== a && t.type !== H.$pd.CUSTOM_STATUS || (0, j.Cy)(t) ? (r?.size == null && [G.I4].includes(t.application_id ?? "") ? i = W.intl.formatToPlainString(W.t["u//9By"], {
             count: "0",
             max: e?.getMaxParticipants() ?? 0
         }) : (0, j.Cy)(t) && r?.size != null ? i = W.intl.formatToPlainString(W.t["JC/3xw"], {
@@ -466,19 +466,19 @@ class $ extends r.PureComponent {
                 onOpenGameProfileModal: o
             } = this.props,
             d = this.activity;
-        if (null == d || d.type === G.$pd.CUSTOM_STATUS) return null;
+        if (null == d || d.type === H.$pd.CUSTOM_STATUS) return null;
         let u = "ActivityFeed" === e,
             c = "StreamPreview" === e,
             m = !1;
         (0, R.A)(d) ? (t = this.renderXboxImage(), m = !0) : null == (t = this.renderImage(d)) && (m = null != (t = this.renderGameImage(d)));
-        let h = this.renderName(d),
-            A = this.renderDetails(d),
+        let A = this.renderName(d),
+            h = this.renderDetails(d),
             g = this.renderState(d, r),
             T = this.renderTimePlayed(d),
             v = this.renderChannelDetails(d),
             C = null != i ? i() : null,
             S = this.renderTimeBar(d),
-            E = ![t, h, A, g, T, S, C].some(t => null != t);
+            E = ![t, A, h, g, T, S, C].some(t => null != t);
         return (0, l.jsxs)("div", {
             className: a()(this.getTypeClass("activity"), n),
             children: [this.renderHeader(E), (0, l.jsx)("div", {
@@ -492,7 +492,7 @@ class $ extends r.PureComponent {
                             onClick: null != o ? t => {
                                 o(t), s?.()
                             } : void 0,
-                            children: [h, A, g, T]
+                            children: [A, h, g, T]
                         }), v, c ? null : S, u ? C : null]
                     })]
                 })

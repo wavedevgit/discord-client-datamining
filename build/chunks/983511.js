@@ -77,7 +77,7 @@ function P(e) {
         })
     })
 }
-async function L(e, t, n, i) {
+async function D(e, t, n, i) {
     let s, l, r = null != i ? i : (s = Object.values(S.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, I.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
     if (null == r) throw Error("No slot to cancel");
     let o = (0, b.aE)(e, t);
@@ -89,7 +89,7 @@ async function L(e, t, n, i) {
     }, (0, b.UC)(o, e.currency, e.paymentSourceId), n)
 }
 
-function D(e) {
+function L(e) {
     let {
         premiumSubscription: t,
         guildBoostSlotId: n,
@@ -112,7 +112,7 @@ function D(e) {
         O && P.current()
     }, [O]);
     let {
-        premiumSubscriptionPlan: D,
+        premiumSubscriptionPlan: L,
         premiumGuildPlan: G
     } = (0, o.cf)([C.A], () => {
         let e = C.A.get(t.planId);
@@ -136,7 +136,7 @@ function D(e) {
         analyticsLocations: M,
         analyticsLocation: _.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == V || null == D || null == G || null == U) return (0, i.jsx)(d.y$y, {});
+    if (null == V || null == L || null == G || null == U) return (0, i.jsx)(d.y$y, {});
     let w = t.items.some(e => {
             let {
                 planId: t
@@ -156,9 +156,9 @@ function D(e) {
         }),
         B = w || H ? V.total - U.total : -U.total,
         {
-            interval: Y,
-            intervalCount: F
-        } = D,
+            interval: F,
+            intervalCount: Y
+        } = L,
         z = R.intl.format(R.t["0W23cu"], {
             endDate: V.subscriptionPeriodStart
         });
@@ -187,7 +187,7 @@ function D(e) {
                     label: R.intl.format(R.t["Vg+LRr"], {
                         subscriptionCount: 1
                     }),
-                    value: (0, N.CE)((0, N.$g)(B, t.currency), Y, F),
+                    value: (0, N.CE)((0, N.$g)(B, t.currency), F, Y),
                     className: y.Au
                 }), null != k && k.length > 0 ? (0, i.jsxs)("div", {
                     children: [(0, i.jsx)(x.pK, {}), (0, i.jsx)(T.m0, {
@@ -207,7 +207,7 @@ function D(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        m(!0), f(null), await L(t, I, M, n), r()
+                        m(!0), f(null), await D(t, I, M, n), r()
                     } catch (e) {
                         f(R.intl.string(R.t["5mlOCW"])), m(!1)
                     }
@@ -286,7 +286,7 @@ function M(e) {
                 "data-migration-pending": !0,
                 transitionState: l,
                 parentComponent: "GuildBoostSlotCancellationModal",
-                children: (0, i.jsx)(D, {
+                children: (0, i.jsx)(L, {
                     premiumSubscription: r,
                     guildBoostSlotId: n.id,
                     fractionalPremiumInfo: u,

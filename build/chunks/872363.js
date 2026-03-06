@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(788868),
     T = n(985018),
     N = n(506927);
-let b = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
-    y = {
+let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
+    b = {
         opacity: 0,
         transform: "translate3d(100%, 0, 0)"
     },
@@ -41,10 +41,10 @@ let b = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
         opacity: 1
     },
     M = {
-        borderRadius: `${b}px ${b}px ${b}px ${b}px`
+        borderRadius: `${y}px ${y}px ${y}px ${y}px`
     },
     D = {
-        borderRadius: `0px ${b}px ${b}px 0px`
+        borderRadius: `0px ${y}px ${y}px 0px`
     },
     O = {
         mass: 1,
@@ -57,8 +57,8 @@ let b = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 participant: r,
                 isUpsellEnabled: o,
                 shape: h,
-                size: b,
-                didTrackUpsellViewed: y,
+                size: y,
+                didTrackUpsellViewed: b,
                 setDidTrackUpsellViewed: v,
                 className: j,
                 premiumIndicator: R,
@@ -96,19 +96,19 @@ let b = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 })
             }, [k, L, P]);
         if (l.useEffect(() => {
-                !y && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
+                !b && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
                     type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
                     has_premium_stream_resolution: s,
                     location_stack: D
                 }), v(!0))
-            }, [t, s, L, y, v, D]), null == M) return null;
+            }, [t, s, L, b, v, D]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
             text: O ? T.intl.string(T.t.q8TiVt) : L ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,
-                className: a()(N.t5, b, p.u1[h], O ? N.Y5 : N.Lc, {
+                className: a()(N.t5, y, p.u1[h], O ? N.Y5 : N.Lc, {
                     [N.vk]: k && L
                 }),
                 children: [L ? (0, i.jsx)(m.tvc, {
@@ -144,10 +144,10 @@ let b = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             reducedMotion: g
         } = l.useContext(m.CZY), f = n && null != A, _ = (0, m.pnh)(f, {
             enter: {
-                from: g.enabled ? j : y,
+                from: g.enabled ? j : b,
                 to: g.enabled ? R : v
             },
-            leave: g.enabled ? j : y,
+            leave: g.enabled ? j : b,
             config: O
         }, "animate-always"), E = (0, m.zhh)({
             to: f ? D : M,

@@ -11,11 +11,11 @@ var i = n(627968),
     s = n(397927),
     r = n(308528),
     o = n(736653),
-    c = n(573648),
-    d = n(780964),
+    d = n(573648),
+    c = n(780964),
     u = n(840065),
-    g = n(562153),
-    m = n(993401),
+    m = n(562153),
+    g = n(993401),
     x = n(652215),
     f = n(985018),
     p = n(603031);
@@ -72,20 +72,20 @@ function T(e) {
         user: t,
         guildId: n,
         channelId: o,
-        onClose: c
-    } = e, d = g.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
-        name: d
-    }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(d)), h = l.useCallback(() => {
+        onClose: d
+    } = e, c = m.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
+        name: c
+    }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(c)), h = l.useCallback(() => {
         r.A.openPrivateChannel({
             recipientIds: t.id
-        }), c?.()
-    }, [t.id, c]);
+        }), d?.()
+    }, [t.id, d]);
     return (0, i.jsx)(j, {
         heading: u,
         bodyText: x,
         children: (0, i.jsx)("div", {
             className: p.v0,
-            children: (0, i.jsx)(m.FD, {
+            children: (0, i.jsx)(g.FD, {
                 icon: s.oyn,
                 text: f.intl.string(f.t["g33r/P"]),
                 onClick: h
@@ -99,7 +99,7 @@ function b() {
     return (0, i.jsx)("div", {
         className: p.HU,
         children: I.map((t, n) => {
-            let l = c.A.get(t);
+            let l = d.A.get(t);
             if (null == l) return null;
             let a = (0, s.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
             return (0, i.jsx)("img", {
@@ -115,11 +115,11 @@ function N(e) {
     let {
         onClose: t
     } = e, n = l.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(d.X.CONNECTIONS_PANEL, {
+        t?.(), (0, u.openUserSettings)(c.X.CONNECTIONS_PANEL, {
             section: x.nc_.CONNECTIONS
         })
     }, [t]), a = l.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
+        t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
             section: x.nc_.CONTENT_AND_SOCIAL,
             subsection: "CONNECTED_GAMES"
         })
@@ -129,10 +129,10 @@ function N(e) {
         bodyText: f.intl.string(f.t.KpjsU9),
         children: [(0, i.jsx)(b, {}), (0, i.jsxs)("div", {
             className: p.v0,
-            children: [(0, i.jsx)(m.FD, {
+            children: [(0, i.jsx)(g.FD, {
                 text: f.intl.string(f.t["/Hl24U"]),
                 onClick: n
-            }), (0, i.jsx)(m.FD, {
+            }), (0, i.jsx)(g.FD, {
                 text: f.intl.string(f.t.GTCx0p),
                 onClick: a
             })]

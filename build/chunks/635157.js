@@ -31,8 +31,8 @@ function S(e) {
         T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
         N = (0, u.Ay)(n) ?? "",
         {
-            avatarDecorationSrc: b,
-            eventHandlers: y,
+            avatarDecorationSrc: y,
+            eventHandlers: b,
             isAnimating: v
         } = (0, _.A)({
             userId: I?.id,
@@ -41,11 +41,11 @@ function S(e) {
         }),
         [j, R] = l.useState(!1),
         M = l.useCallback(() => {
-            y.onMouseEnter(), R(!0)
-        }, [y]),
+            b.onMouseEnter(), R(!0)
+        }, [b]),
         D = l.useCallback(() => {
-            y.onMouseLeave(), R(!1)
-        }, [y]),
+            b.onMouseLeave(), R(!1)
+        }, [b]),
         O = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
@@ -65,7 +65,7 @@ function S(e) {
             "aria-label": N,
             size: r._3J.SIZE_80,
             src: (0, d.Y)(n, 80, t),
-            avatarDecoration: b
+            avatarDecoration: y
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
                 userName: N,

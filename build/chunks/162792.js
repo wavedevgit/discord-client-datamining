@@ -29,8 +29,8 @@ let S = l.memo(function(e) {
         compact: I = !1,
         referencedUsernameProfile: T,
         referencedAvatarProfile: N,
-        setPopout: b,
-        isReplySpineClickable: y,
+        setPopout: y,
+        isReplySpineClickable: b,
         showReplySpine: v
     } = e, j = n.state === h.a.LOADED ? n.message : void 0, R = (0, p.X4)(j), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), D = l.useMemo(() => {
         if (null == j) return null;
@@ -82,12 +82,12 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, b), U = (0, E.Ge)(N, b), G = l.useCallback(() => {
-        b({
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, y), U = (0, E.Ge)(N, y), G = l.useCallback(() => {
+        y({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [b]), F = (0, p.X4)(t);
+    }, [y]), F = (0, p.X4)(t);
     return (0, i.jsx)(f.A, {
         repliedAuthor: R,
         baseMessage: t,
@@ -106,7 +106,7 @@ let S = l.memo(function(e) {
         onClickReply: w,
         onContextMenu: P,
         onPopoutRequestClose: G,
-        isReplySpineClickable: y,
+        isReplySpineClickable: b,
         showReplySpine: v
     })
 });

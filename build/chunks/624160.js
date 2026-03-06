@@ -8,11 +8,11 @@ var i = n(627968),
     s = n.n(a),
     r = n(540185),
     o = n(397927),
-    c = n(587895),
-    d = n(403362),
+    d = n(587895),
+    c = n(403362),
     u = n(635344),
-    g = n(735321),
-    m = n(384377),
+    m = n(735321),
+    g = n(384377),
     x = n(492280),
     f = n(939899),
     p = n(518477),
@@ -52,9 +52,9 @@ let A = {
             variant: "application-widget",
             applicationId: e.applicationId
         }),
-        icon: e => c.A.getApplication(e.applicationId)?.getIconURL(16),
+        icon: e => d.A.getApplication(e.applicationId)?.getIconURL(16),
         getAriaLabel: e => h.intl.formatToPlainString(h.t.KfGahB, {
-            applicationName: c.A.getApplication(e.applicationId)?.name ?? ""
+            applicationName: d.A.getApplication(e.applicationId)?.name ?? ""
         })
     }
 };
@@ -64,7 +64,7 @@ function I(e) {
             widget: n,
             onAddWidget: a,
             size: r = "default",
-            loading: c = !1,
+            loading: d = !1,
             trackUserProfileEditAction: u
         } = e,
         {
@@ -74,19 +74,19 @@ function I(e) {
         } = A[n.type],
         v = "small" === r,
         E = l.useCallback(() => {
-            c || ((0, g.Y5)(n), u({
+            d || ((0, m.Y5)(n), u({
                 action: "WIDGET_ADDED",
                 ...n.getProfileEditAnalyticsOptions()
-            }), (0, m.XA)(p.jM.WIDGET_ADDED), a?.())
-        }, [c, n, u, a]),
+            }), (0, g.XA)(p.jM.WIDGET_ADDED), a?.())
+        }, [d, n, u, a]),
         T = j?.(n);
     return (0, i.jsxs)("div", {
         className: _.LG,
         children: [(0, i.jsxs)(o.DUT, {
-            className: s()(_.PH, v && _.PG, c && _.Lq),
+            className: s()(_.PH, v && _.PG, d && _.Lq),
             onClick: E,
             "aria-label": I(n),
-            "aria-busy": c,
+            "aria-busy": d,
             children: [(() => {
                 let e = h(n);
                 switch (e.variant) {
@@ -108,7 +108,7 @@ function I(e) {
                             size: r
                         });
                     default:
-                        return (0, d.xb)(e)
+                        return (0, c.xb)(e)
                 }
             })(), (0, i.jsxs)("div", {
                 className: _.Lw,
@@ -121,7 +121,7 @@ function I(e) {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: (0, g.L)(n)
+                        children: (0, m.L)(n)
                     }), null != T ? (0, i.jsx)("img", {
                         src: T,
                         alt: "",

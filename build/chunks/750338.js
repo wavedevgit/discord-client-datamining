@@ -53,12 +53,12 @@ let T = e => {
             badgeVariant: R = "gradient",
             size: y,
             backgroundVideoUrl: P,
-            previewImageStyle: L = h.Tb.CONTAINED
-        } = e, D = (0, A.TM)(), G = s.useRef(null), M = s.useRef(0), U = s.useRef(null), k = s.useRef(!1), V = (0, u.A)("(min-width: 1140px)"), w = L === h.Tb.OVERLAY && (y !== h.A0.LARGE || !V), H = y === h.A0.LARGE && V && L === h.Tb.OVERLAY, B = null != P && V && y === h.A0.LARGE, Y = s.useMemo(() => (0, r.debounce)(() => {
+            previewImageStyle: D = h.Tb.CONTAINED
+        } = e, L = (0, A.TM)(), G = s.useRef(null), M = s.useRef(0), U = s.useRef(null), k = s.useRef(!1), V = (0, u.A)("(min-width: 1140px)"), w = D === h.Tb.OVERLAY && (y !== h.A0.LARGE || !V), H = y === h.A0.LARGE && V && D === h.Tb.OVERLAY, B = null != P && V && y === h.A0.LARGE, F = s.useMemo(() => (0, r.debounce)(() => {
             m.default.track(p.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
                 box_type: (0, r.snakeCase)(t)
             })
-        }, 800), [t]), F = () => {
+        }, 800), [t]), Y = () => {
             null == G.current || v || (G.current.currentTime = M.current, G.current.play())
         }, z = () => {
             null == G.current || v || (M.current = G.current.currentTime, G.current.pause())
@@ -97,7 +97,7 @@ let T = e => {
             }), null != S && null != j && (0, i.jsx)(T, {
                 descriptionCta: S,
                 onClick: j,
-                debouncedOnClickAnalytics: Y
+                debouncedOnClickAnalytics: F
             })]
         }), K = () => (0, i.jsx)("div", {
             className: a()(E.boxArtContainer, E[`${y}`]),
@@ -113,7 +113,7 @@ let T = e => {
                 ref: G,
                 children: (0, i.jsx)("source", {
                     src: f,
-                    type: D ? x.a.MP4 : x.a.WEBM
+                    type: L ? x.a.MP4 : x.a.WEBM
                 })
             }, f)
         }), Z = b % 2 != 0;
@@ -129,8 +129,8 @@ let T = e => {
                 ref: U,
                 id: t,
                 className: a()(E.backgroundColor, E.boxContainer, E[`${y}`], E.gradientBackground, w && E.overlayImageMode, H && E.overlayMode),
-                onMouseEnter: F,
-                onFocus: F,
+                onMouseEnter: Y,
+                onFocus: Y,
                 onBlur: z,
                 onMouseLeave: z,
                 color: "purple",

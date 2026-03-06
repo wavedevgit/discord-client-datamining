@@ -1,6 +1,6 @@
 /** chunk id: 161290 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968);
 n(64700);
@@ -34,7 +34,7 @@ var s = n(284009),
     y = n(985018),
     P = n(961618);
 
-function L() {
+function D() {
     let e = (0, a.bG)([O.default], () => {
             let e = O.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
@@ -43,8 +43,8 @@ function L() {
         {
             pendingAvatar: n,
             pendingGlobalName: s,
-            pendingBanner: L,
-            pendingBio: D,
+            pendingBanner: D,
+            pendingBio: L,
             pendingPronouns: G,
             pendingAccentColor: M,
             pendingThemeColors: U,
@@ -64,9 +64,9 @@ function L() {
             image: n
         }),
         B = (0, o.EC)(),
-        Y = R.Ay.canUsePremiumProfileCustomization(e),
-        F = (0, u.z5)(n, e.avatar),
-        z = (0, u.Ac)(L, t?.banner),
+        F = R.Ay.canUsePremiumProfileCustomization(e),
+        Y = (0, u.z5)(n, e.avatar),
+        z = (0, u.Ac)(D, t?.banner),
         X = (0, j.Ay)(e.id),
         W = X?.getLegacyUsername(),
         K = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
@@ -89,7 +89,7 @@ function L() {
             currentPronouns: t?.pronouns ?? ""
         }, "pronouns"), (0, i.jsx)(C.A, {}), (0, i.jsx)(m.A, {
             onAvatarChange: r.zq,
-            showRemoveAvatarButton: F,
+            showRemoveAvatarButton: Y,
             errors: w.avatar,
             sectionTitle: y.intl.string(y.t.lqaIxI),
             forcedDivider: !0
@@ -101,7 +101,7 @@ function L() {
         }), (0, i.jsx)(T.A, {
             user: e,
             sectionTitle: y.intl.string(y.t.wR5wOo)
-        }, "effect"), Y ? (0, i.jsxs)(i.Fragment, {
+        }, "effect"), F ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(x.A, {
                 showRemoveBannerButton: z,
                 errors: w.banner,
@@ -123,7 +123,7 @@ function L() {
             sectionTitle: y.intl.string(y.t.ZzAR2Y),
             errors: Z,
             onBioChange: e => (0, u.Ru)(e, t?.bio),
-            pendingBio: D,
+            pendingBio: L,
             currentBio: t?.bio ?? ""
         }, "bio"), q.length > 0 && (0, i.jsx)(d.A, {
             availablePrimaryGuilds: q,

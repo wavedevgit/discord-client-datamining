@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(287809),
     T = n(486020),
     N = n(302975),
-    b = n(652215),
-    y = n(518477),
+    y = n(652215),
+    b = n(518477),
     v = n(985018),
     j = n(729254);
 let R = e => {
@@ -69,7 +69,7 @@ let R = e => {
                     (0, x.openUserProfileModal)({
                         userId: t,
                         channelId: n,
-                        tabSection: y.RP.MUTUAL_GUILDS,
+                        tabSection: b.RP.MUTUAL_GUILDS,
                         sourceAnalyticsLocations: [u.A.DM_CHANNEL]
                     })
                 },
@@ -92,7 +92,7 @@ let R = e => {
             d.A.addRelationship({
                 userId: n,
                 context: {
-                    location: b.liQ.DM_CHANNEL
+                    location: y.liQ.DM_CHANNEL
                 }
             })
         }, r = (0, i.jsx)(c.Button, {
@@ -100,13 +100,13 @@ let R = e => {
             variant: "secondary",
             onClick: () => {
                 d.A.blockUser(n, {
-                    location: b.liQ.DM_CHANNEL
+                    location: y.liQ.DM_CHANNEL
                 })
             },
             text: v.intl.string(v.t.l4Emac)
         }), o = (0, m.D)(n);
         switch (t) {
-            case b.eA$.NONE:
+            case y.eA$.NONE:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [!s && !l && (0, i.jsx)(c.Button, {
                         size: "sm",
@@ -115,31 +115,31 @@ let R = e => {
                         text: o
                     }), r]
                 });
-            case b.eA$.FRIEND:
+            case y.eA$.FRIEND:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
                         variant: "secondary",
                         onClick: () => {
                             d.A.removeFriend(n, {
-                                location: b.liQ.DM_CHANNEL
+                                location: y.liQ.DM_CHANNEL
                             })
                         },
                         text: v.intl.string(v.t.cvSt1J)
                     }), r]
                 });
-            case b.eA$.BLOCKED:
+            case y.eA$.BLOCKED:
                 return (0, i.jsx)(c.Button, {
                     size: "sm",
                     variant: "secondary",
                     onClick: () => {
                         d.A.unblockUser(n, {
-                            location: b.liQ.DM_CHANNEL
+                            location: y.liQ.DM_CHANNEL
                         })
                     },
                     text: v.intl.string(v.t.XyHpKH)
                 });
-            case b.eA$.PENDING_INCOMING:
+            case y.eA$.PENDING_INCOMING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -151,13 +151,13 @@ let R = e => {
                         variant: "secondary",
                         onClick: () => {
                             d.A.cancelFriendRequest(n, {
-                                location: b.liQ.DM_CHANNEL
+                                location: y.liQ.DM_CHANNEL
                             })
                         },
                         text: v.intl.string(v.t.rQSndv)
                     }), r]
                 });
-            case b.eA$.PENDING_OUTGOING:
+            case y.eA$.PENDING_OUTGOING:
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(c.Button, {
                         size: "sm",
@@ -237,7 +237,7 @@ let R = e => {
                 channel: n,
                 navigateAwayOnReportSuccess: m
             })]
-        }), E = u !== b.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
+        }), E = u !== y.eA$.PENDING_INCOMING || d || h ? null : (0, i.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: v.intl.string(v.t.c2v5nO)

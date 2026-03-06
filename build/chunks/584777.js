@@ -25,8 +25,8 @@ var l, s = n(311907),
 let I = !1,
     T = "",
     N = 0,
-    b = 0,
-    y = [],
+    y = 0,
+    b = [],
     v = !1,
     j = new Set,
     R = null,
@@ -40,17 +40,17 @@ let I = !1,
     D = new Set;
 
 function O() {
-    T = "", N = 0, b = 0, y = [], j = new Set, I = !1, R = null, M.clear()
+    T = "", N = 0, y = 0, b = [], j = new Set, I = !1, R = null, M.clear()
 }
 
 function L(e) {
-    T = e, b = 0, P()
+    T = e, y = 0, P()
 }
 
 function P() {
     if (!I) return !1;
     let e = g.A.getChannel(R);
-    if (0 === T.trim().length) return null != i && i.clearQuery(), y = function(e) {
+    if (0 === T.trim().length) return null != i && i.clearQuery(), b = function(e) {
         let t = E.A.getFriendIDs(),
             n = d.A.getConfig({
                 location: "PrivateChannelRecipientsInviteStore"
@@ -143,7 +143,7 @@ function U(e) {
             comparator: i
         }))
     }
-    y = n, K.emitChange()
+    b = n, K.emitChange()
 }
 
 function G() {
@@ -169,7 +169,7 @@ class V extends s.Ay.Store {
         this.waitFor(g.A, p.A, c.A, f.A, E.A, u.A, x.default, _.Ay), this.syncWith([x.default, g.A], P), this.syncWith([E.A], w)
     }
     getResults() {
-        return y
+        return b
     }
     hasFriends() {
         return v
@@ -183,10 +183,10 @@ class V extends s.Ay.Store {
     getState() {
         return {
             query: T,
-            selectedRow: b,
+            selectedRow: y,
             selectedSection: N,
             selectedUsers: j,
-            results: y,
+            results: b,
             hasFriends: v
         }
     }
@@ -220,7 +220,7 @@ let K = new V(r.h, {
             R = e.channelId, L(e.query)
         },
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
-            N = e.section, b = e.row
+            N = e.section, y = e.row
         },
         PRIVATE_CHANNEL_RECIPIENTS_ADD_USER: function(e) {
             let {

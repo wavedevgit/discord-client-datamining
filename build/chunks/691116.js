@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(158954),
-    l = n(894858),
+    l = n(272053),
     a = n(590089),
     r = n(688897);
 
@@ -18,8 +18,6 @@ function o(e) {
         title: c,
         description: n,
         trailingElement: (0, i.jsx)(s.uhT, {}),
-        onClick: () => l.A.setState({
-            requestedTargetKey: o
-        })
+        onClick: () => l.A.navigate(o)
     })
 }

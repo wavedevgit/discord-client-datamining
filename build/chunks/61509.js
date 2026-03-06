@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(95035),
     y = n(337095),
     P = n(871123),
-    L = n(510022),
-    D = n(378058),
+    D = n(510022),
+    L = n(378058),
     G = n(148355),
     M = n(780964),
     U = n(12901),
@@ -42,8 +42,8 @@ var i = n(627968),
     w = n(317525),
     H = n(71393),
     B = n(287809),
-    Y = n(295405),
-    F = n(97352),
+    F = n(295405),
+    Y = n(97352),
     z = n(90165),
     X = n(147925),
     W = n(954571),
@@ -515,7 +515,7 @@ class em extends s.PureComponent {
                             sku_id: t.sku.id,
                             application_id: l.id,
                             location_stack: r
-                        }), (0, L.n)({
+                        }), (0, D.n)({
                             sku: t.sku,
                             application: l,
                             analyticsLocations: r
@@ -654,7 +654,7 @@ class em extends s.PureComponent {
             })
         } else if (null != _)
             if (t = l.isGuildProductPurchase && l.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : _.name, null != d) {
-                let t = (0, D.Id)(d);
+                let t = (0, L.Id)(d);
                 e = (0, i.jsx)(G.A, {
                     disableAnimation: !u,
                     isInteracting: u,
@@ -790,10 +790,10 @@ function eA(e) {
         applicationStatistics: u,
         gameApplication: g,
         paymentSources: m
-    } = (0, _.cf)([Y.A, z.A, T.A], () => ({
+    } = (0, _.cf)([F.A, z.A, T.A], () => ({
         applicationStatistics: null != o ? z.A.getCurrentUserStatisticsForApplication(o) : null,
         gameApplication: T.A.getApplication(o ?? "") ?? t.sku?.application,
-        paymentSources: Y.A.paymentSources
+        paymentSources: F.A.paymentSources
     })), {
         hasAlreadyLinked: A
     } = (0, E.RD)((0, P.bF)(t.sku) ? g : void 0), h = (0, _.bG)([T.A], () => null != d ? T.A.getApplication(d) : null);
@@ -803,7 +803,7 @@ function eA(e) {
     let S = (0, _.bG)([H.A], () => H.A.getGuild(g?.guildId)),
         C = r ? g : void 0,
         f = t.subscription,
-        I = (0, _.bG)([F.A], () => null != f && f.type !== ee.rzx.PREMIUM ? F.A.get(f.items[0].planId) : null),
+        I = (0, _.bG)([Y.A], () => null != f && f.type !== ee.rzx.PREMIUM ? Y.A.get(f.items[0].planId) : null),
         b = (0, _.bG)([B.default], () => {
             let e = t.isGift ? t.entitlements?.find(e => e.user?.id != null && null != e.gifterId) : null;
             return null == e ? null : B.default.getUser(e.user?.id ?? null) ?? e?.user

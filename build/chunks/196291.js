@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(253604),
     y = n(652215),
     P = n(788868),
-    L = n(355097),
-    D = n(985018),
+    D = n(355097),
+    L = n(985018),
     G = n(219501);
 
 function M(e) {
@@ -46,7 +46,7 @@ function M(e) {
         pendingThemeColors: w,
         tryItOutThemeColors: H,
         tryItOutAvatar: B,
-        tryItOutBanner: Y
+        tryItOutBanner: F
     } = (0, l.cf)([T.A], () => {
         let e = T.A.getPendingChanges(),
             t = T.A.getErrors(),
@@ -57,17 +57,17 @@ function M(e) {
             errors: t
         }
     }), {
-        preset: F,
+        preset: Y,
         onShuffle: z
     } = (0, _.A)(), X = s.useRef(null);
-    (0, S.A)(X, L._F.TRY_IT_OUT);
+    (0, S.A)(X, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         newestAnalyticsLocation: K,
         sourceAnalyticsLocations: Z
     } = (0, d.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
-        e && ((0, r.zq)(B), (0, E.Zz)(H), (0, E.Dv)(Y), C.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
-            preset: F
+        e && ((0, r.zq)(B), (0, E.Zz)(H), (0, E.Dv)(F), C.default.track(y.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+            preset: Y
         }))
     };
     s.useEffect(() => {
@@ -98,11 +98,11 @@ function M(e) {
                         size: "md",
                         color: "currentColor",
                         className: G.PC
-                    }), D.intl.string(D.t.gMlDNd)]
+                    }), L.intl.string(L.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(g.A, {
-                        preset: F,
+                        preset: Y,
                         onShuffle: z
                     }), (0, i.jsx)(R.A, {
                         user: t
@@ -113,11 +113,11 @@ function M(e) {
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: D.intl.string(D.t["2zGdAW"])
+                            children: L.intl.string(L.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
                             className: G.h_,
                             variant: "text-sm/normal",
-                            children: D.intl.string(D.t.xeEC20)
+                            children: L.intl.string(L.t.xeEC20)
                         })]
                     }), (0, i.jsx)(O.A, {
                         className: G.fz,
@@ -133,7 +133,7 @@ function M(e) {
                     }), (0, i.jsx)(j.A, {
                         className: G.fz,
                         isTryItOut: !0,
-                        showRemoveBannerButton: null != Y,
+                        showRemoveBannerButton: null != F,
                         onBannerChange: E.xe,
                         showPremiumIcon: !1
                     }), !k && (0, i.jsx)(b.A, {
@@ -141,21 +141,21 @@ function M(e) {
                         isTryItOut: !0,
                         onAvatarChange: E.e$,
                         showRemoveAvatarButton: !1,
-                        changeAvatarButtonText: D.intl.string(D.t["7z0D1c"]),
-                        sectionTitle: D.intl.string(D.t.vtFfPX)
+                        changeAvatarButtonText: L.intl.string(L.t["7z0D1c"]),
+                        sectionTitle: L.intl.string(L.t.vtFfPX)
                     }), (0, i.jsx)(N.A, {
                         user: t,
                         className: G.fz
                     }), !J && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        children: D.intl.string(D.t["smo74/"])
+                        children: L.intl.string(L.t["smo74/"])
                     })]
                 })
             }), !J && (0, i.jsx)(A.d, {
                 onSubscribeModalClose: q,
                 className: G.Kv,
                 showUpsell: !0,
-                text: D.intl.format(D.t.TmfgI2, {
+                text: L.intl.format(L.t.TmfgI2, {
                     onClick: () => {
                         (0, p.K)({
                             analyticsSource: K,
@@ -163,9 +163,9 @@ function M(e) {
                         })
                     }
                 }),
-                button: U ? D.intl.string(D.t.AfRWI8) : $ ? D.intl.formatToPlainString(D.t.bkQ4bH, {
+                button: U ? L.intl.string(L.t.AfRWI8) : $ ? L.intl.formatToPlainString(L.t.bkQ4bH, {
                     percent: Q?.discount.amount
-                }) : D.intl.string(D.t.pj0XBN),
+                }) : L.intl.string(L.t.pj0XBN),
                 position: "inline"
             }), J && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {

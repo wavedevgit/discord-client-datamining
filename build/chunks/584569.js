@@ -1,6 +1,6 @@
 /** chunk id: 584569 params = (module,exports,require) **/
 i.d(e, {
-    A: () => y
+    A: () => _
 });
 var n = i(311907),
     l = i(205693),
@@ -13,8 +13,8 @@ var n = i(311907),
     c = i(383501),
     m = i(287809),
     p = i(977997),
-    h = i(607567),
-    A = i(652215),
+    A = i(607567),
+    h = i(652215),
     g = i(806931);
 let f = new s.A,
     T = new s.A,
@@ -25,7 +25,7 @@ function C(t, e, i) {
             userId: t.id,
             channelId: i
         }),
-        l = (0, h.RQ)(n, e ?? A.ME, t.id);
+        l = (0, A.RQ)(n, e ?? h.ME, t.id);
     f.set(t.id, l);
     let r = {
         type: g.lp.USER,
@@ -68,7 +68,7 @@ function E() {
 function x() {
     f.clear(), T.clear(), v.clear()
 }
-class _ extends n.Ay.Store {
+class y extends n.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
         this.waitFor(p.A, m.default, u.A, c.A), this.syncWith([m.default], E)
@@ -86,7 +86,7 @@ class _ extends n.Ay.Store {
         return T.values()
     }
 }
-let y = new _(r.h, {
+let _ = new y(r.h, {
     CONNECTION_OPEN: function() {
         x()
     },
@@ -96,7 +96,7 @@ let y = new _(r.h, {
             state: e,
             context: i
         } = t;
-        if (i !== l.x.DEFAULT || e !== A.S7L.DISCONNECTED) return !1;
+        if (i !== l.x.DEFAULT || e !== h.S7L.DISCONNECTED) return !1;
         x()
     },
     VOICE_STATE_UPDATES: function(t) {

@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(736455),
     y = n(690737),
     P = n(843685),
-    L = n(509388),
-    D = n(400292),
+    D = n(509388),
+    L = n(400292),
     G = n(536195),
     M = n(388116),
     U = n(577174),
@@ -42,8 +42,8 @@ var i = n(627968),
     w = n(16019),
     H = n(825075),
     B = n(768229),
-    Y = n(788868),
-    F = n(652215),
+    F = n(788868),
+    Y = n(652215),
     z = n(818348),
     X = n(475616),
     W = n(267224),
@@ -68,7 +68,7 @@ let Z = () => {
         eu = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         e_ = null != eu ? (0, C.EL)(eu) : null,
         eg = null != e_ ? C.Ay.getSkuIdForPlan(e_.planId) : null,
-        em = null !== eg && eg !== Y.pe.TIER_2 ? Y.pe.TIER_2 : null,
+        em = null !== eg && eg !== F.pe.TIER_2 ? F.pe.TIER_2 : null,
         eA = (0, f.cg)(),
         eh = eA ?? !1,
         {
@@ -189,7 +189,7 @@ let Z = () => {
             }), (0, i.jsx)(d.L, {
                 innerRef: q,
                 onChange: e => {
-                    e && !er && (S.default.track(F.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !er && (S.default.track(Y.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: ep
                     }), eo(!0))
                 },
@@ -202,7 +202,7 @@ let Z = () => {
                 onChange: e => {
                     es(e)
                 },
-                children: ex ? (0, i.jsx)(L.A, {
+                children: ex ? (0, i.jsx)(D.A, {
                     ref: J
                 }) : (0, i.jsx)(M.A, {
                     ref: J,
@@ -212,7 +212,7 @@ let Z = () => {
                     subscriptionTier: em
                 })
             }), ex && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(D.A, {
+                children: [(0, i.jsx)(L.A, {
                     isVisible: eE && ed,
                     subscriptionTier: em,
                     isEligibleForBogoPromotion: eA

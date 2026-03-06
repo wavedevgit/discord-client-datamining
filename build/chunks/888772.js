@@ -188,7 +188,7 @@ function P(e) {
         })
     })
 }
-let L = () => {
+let D = () => {
         let e = (0, m.A)(),
             t = (0, A.GR)(),
             n = e ? S.Y7 : S.kp,
@@ -216,7 +216,7 @@ let L = () => {
             })]
         })
     },
-    D = () => {
+    L = () => {
         let e = (0, A.xr)(),
             t = (0, m.A)() ? S.Y7 : S.kp,
             n = (0, _.y)(I.intl.formatToPlainString(f.default["1/PzIj"], {
@@ -280,6 +280,6 @@ let L = () => {
         let e = (0, m.A)();
         return (0, i.jsxs)("div", {
             className: N.kL,
-            children: [e ? (0, i.jsx)(R, {}) : (0, i.jsx)(y, {}), (0, i.jsx)(L, {}), (0, i.jsx)(M, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {})]
+            children: [e ? (0, i.jsx)(R, {}) : (0, i.jsx)(y, {}), (0, i.jsx)(D, {}), (0, i.jsx)(M, {}), (0, i.jsx)(L, {}), (0, i.jsx)(G, {})]
         })
     }

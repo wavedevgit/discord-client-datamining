@@ -1,6 +1,6 @@
 /** chunk id: 38198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => y
 });
 var i = n(627968),
     l = n(64700),
@@ -26,11 +26,11 @@ var i = n(627968),
     T = n(985018);
 let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
-function b(e) {
+function y(e) {
     let {
         channel: t,
-        options: b,
-        onFileUpload: y,
+        options: y,
+        onFileUpload: b,
         onClose: v,
         onSelect: j,
         draftType: R,
@@ -94,7 +94,7 @@ function b(e) {
         navId: "channel-attach",
         onClose: v,
         "aria-label": T.intl.string(T.t.Xm41aV),
-        children: b.map(function(e) {
+        children: y.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
                     return (0, i.jsx)(r.Drp, {
@@ -105,7 +105,7 @@ function b(e) {
                             type: "icon",
                             icon: e.icon
                         },
-                        action: y
+                        action: b
                     }, "upload-file");
                 case x.v.UPLOAD_TEXT_AS_FILE:
                     if ("" === M) return null;

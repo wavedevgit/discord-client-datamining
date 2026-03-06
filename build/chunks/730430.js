@@ -19,17 +19,17 @@ function p(t) {
         variant: e = "active",
         size: i = "sm",
         hangStatusChannel: p,
-        onAction: h,
-        userId: A,
+        onAction: A,
+        userId: h,
         ...g
     } = t, f = (0, l.bG)([d.A], () => d.A.getChannelId() === p.id);
     return (0, n.jsx)(r.Button, {
         text: f ? m.intl.string(m.t.BXxdl7) : m.intl.string(m.t["9C444m"]),
         onClick: () => {
-            h?.(), s.default.selectVoiceChannel(p.id), (0, o.iN)(p.id), u.default.track(c.HAw.HANG_STATUS_CTA_CLICKED, {
+            A?.(), s.default.selectVoiceChannel(p.id), (0, o.iN)(p.id), u.default.track(c.HAw.HANG_STATUS_CTA_CLICKED, {
                 source: "UserProfilePopout",
                 ...(0, a.A)(p.id),
-                other_user_id: A,
+                other_user_id: h,
                 cta_type: f ? "open" : "join"
             })
         },

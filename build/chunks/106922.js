@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(780964),
     y = n(12901),
     P = n(840065),
-    L = n(351906),
-    D = n(287809),
+    D = n(351906),
+    L = n(287809),
     G = n(166403),
     M = n(224016),
     U = n(954571),
@@ -43,8 +43,8 @@ var i = n(627968),
     w = n(526292),
     H = n(637073),
     B = n(810498),
-    Y = n(807098),
-    F = n(412260),
+    F = n(807098),
+    Y = n(412260),
     z = n(103411),
     X = n(190187),
     W = n(194509),
@@ -109,7 +109,7 @@ function eg() {
         t = (0, w.nf)(),
         n = (0, S.Ay)(),
         s = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
-        l = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
+        l = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
         o = (0, b.A)(),
         d = (0, H.d)(),
@@ -228,7 +228,7 @@ function em(e) {
     let {
         className: t,
         config: n
-    } = e, l = (0, Y.T)(n.asset), r = (0, Y.T)(n.backgroundAsset), o = (0, B.gc)(r), d = s.useMemo(() => {
+    } = e, l = (0, F.T)(n.asset), r = (0, F.T)(n.backgroundAsset), o = (0, B.gc)(r), d = s.useMemo(() => {
         let e = n.gradient;
         if (null != e && null != e.colors && !(e.colors.length < 2)) return (0, B.K5)({
             gradient: e.colors,
@@ -317,7 +317,7 @@ let eh = function() {
         {
             analyticsLocations: t
         } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
-        n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
+        n = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
         r = (0, N.Y)(et.T7),
@@ -325,12 +325,12 @@ let eh = function() {
         m = (0, b.A)({
             forceFetch: !0
         }),
-        A = (0, u.bG)([F.A], () => {
-            let e = F.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+        A = (0, u.bG)([Y.A], () => {
+            let e = Y.A.getMarketingComponentByType(c.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         S = !(d.Fr || d.v1) && null != A,
-        O = (0, u.bG)([L.A], () => L.A.enabled),
+        O = (0, u.bG)([D.A], () => D.A.enabled),
         R = s.useRef(null);
     (0, X.i)();
     let y = (0, z.m)();

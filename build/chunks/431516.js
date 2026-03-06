@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => u
 });
-var l = n(397927),
-    i = n(790381),
+var i = n(397927),
+    l = n(790381),
     r = n(266080),
     a = n(544105);
 
 function u(e) {
-    return null != e ? (0, l.kHD)(e === a.f$.XBOX ? r.A : i.A) : l.qo0
+    return null != e ? (0, i.kHD)(e === a.f$.XBOX ? r.A : l.A) : i.qo0
 }

@@ -9,16 +9,16 @@ var i = n(627968),
     s = n(397927),
     r = n(383329),
     o = n(183555),
-    c = n(735321),
-    d = n(958338),
+    d = n(735321),
+    c = n(958338),
     u = n(985018),
-    g = n(748594);
+    m = n(748594);
 
-function m(e) {
+function g(e) {
     let {
         widgetType: t,
         widget: n,
-        onAddGame: m,
+        onAddGame: g,
         children: x,
         ...f
     } = e, p = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
@@ -29,8 +29,8 @@ function m(e) {
     } = (0, r.R)(), {
         applicationIds: E,
         onAddGame: T
-    } = (0, d.S)(t), b = l.useCallback(e => {
-        (0, c.ew)({
+    } = (0, c.S)(t), b = l.useCallback(e => {
+        (0, d.ew)({
             widgetType: t,
             game: {
                 applicationId: e
@@ -39,8 +39,8 @@ function m(e) {
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), E.includes(e) && T(e), m?.()
-    }, [t, h, m, E, T]), N = l.useMemo(() => {
+        }), E.includes(e) && T(e), g?.()
+    }, [t, h, g, E, T]), N = l.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
@@ -84,7 +84,7 @@ function m(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(s.lGe, {
-                className: g.C,
+                className: m.C,
                 "aria-label": u.intl.string(u.t.uqw8wK),
                 children: (0, i.jsxs)(s.iS7, {
                     selectionMode: "single",
@@ -115,7 +115,7 @@ function x(e) {
         disabled: t,
         ...n
     } = e, a = l.useRef(null);
-    return (0, i.jsx)(m, {
+    return (0, i.jsx)(g, {
         targetElementRef: a,
         position: "bottom",
         align: "center",
@@ -134,14 +134,14 @@ function x(e) {
 
 function f(e) {
     let t = l.useRef(null);
-    return (0, i.jsx)(m, {
+    return (0, i.jsx)(g, {
         targetElementRef: t,
         position: "right",
         align: "top",
         ...e,
         children: e => (0, i.jsx)(s.DUT, {
             innerRef: t,
-            className: g.c,
+            className: m.c,
             "aria-label": u.intl.string(u.t.SgTOtX),
             ...e,
             children: (0, i.jsx)(s.pa$, {

@@ -40,9 +40,9 @@ function S(e) {
         })
     }, [f, O, n]), P = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
-    }, []), L = (0, s.useCallback)(() => {
+    }, []), D = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), D = void 0 !== N || (null != n ? null != b : null != I);
+    }, []), L = void 0 !== N || (null != n ? null != b : null != I);
     return (0, i.jsx)(A.A, {
         title: x.intl.string(E.default["86GtGH"]),
         titleIcon: R ? (0, i.jsx)(a.LpS, {
@@ -59,7 +59,7 @@ function S(e) {
                 size: "sm",
                 text: x.intl.string(E.default.vJqrIg),
                 onClick: y
-            }), null == n && D && (0, i.jsx)(a.Button, {
+            }), null == n && L && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: x.intl.string(E.default.ymq8WQ),
@@ -68,7 +68,7 @@ function S(e) {
                 variant: "secondary",
                 size: "sm",
                 text: x.intl.string(E.default["j/KRxc"]),
-                onClick: L
+                onClick: D
             })]
         })
     })

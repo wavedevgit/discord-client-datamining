@@ -1,40 +1,40 @@
 /** chunk id: 46537 params = (module,exports,require) **/
-r.d(t, {
-    Qc: () => I,
-    b7: () => m,
-    bc: () => h
+n.d(t, {
+    Qc: () => m,
+    b7: () => h,
+    bc: () => I
 });
-var i = r(64700),
-    n = r(311907),
-    l = r(576030),
-    s = r(287809),
-    u = r(403362),
-    o = r(427262),
-    d = r(594832),
-    a = r(652215),
-    c = r(985018);
+var s = n(64700),
+    r = n(311907),
+    i = n(576030),
+    l = n(287809),
+    o = n(403362),
+    u = n(427262),
+    d = n(594832),
+    a = n(652215),
+    c = n(985018);
 
-function I(e) {
+function m(e) {
     return null != e.title && null == e.body && null == e.renderIcon
 }
 
-function h(e, t) {
-    return i.useMemo(() => {
-        let r = e.map(e => {
+function I(e, t) {
+    return s.useMemo(() => {
+        let n = e.map(e => {
                 let {
                     item: t,
-                    source: r
+                    source: n
                 } = e;
                 return {
                     productLine: t.skuProductLine,
-                    source: r,
-                    renderIcon: l.GM
+                    source: n,
+                    renderIcon: i.GM
                 }
             }),
-            i = o.Ay.getName(t),
+            s = u.Ay.getName(t),
             {
-                hasMultipleTypes: n,
-                hasMultipleSources: s
+                hasMultipleTypes: r,
+                hasMultipleSources: l
             } = function(e) {
                 if (0 === e.length) return {
                     hasMultipleTypes: !1,
@@ -45,44 +45,44 @@ function h(e, t) {
                     hasMultipleTypes: e.some(e => e.productLine !== t.productLine),
                     hasMultipleSources: e.some(e => e.source !== t.source)
                 }
-            }(r);
-        return n || s ? r.map(e => !n && s ? {
+            }(n);
+        return r || l ? n.map(e => !r && l ? {
             title: e.source === d.uS.WISHLIST ? c.intl.formatToPlainString(c.t.p3RmJF, {
-                username: i
+                username: s
             }) : c.intl.string(c.t.Ig6VDH),
             renderIcon: e.productLine !== a.EZt.COLLECTIBLES ? e.renderIcon : void 0,
             shouldShow: !0
-        } : n && !s ? {
+        } : r && !l ? {
             title: e.productLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? c.intl.string(c.t["4yiU7x"]) : c.intl.string(c.t.HFhcqh),
             renderIcon: e.renderIcon,
             shouldShow: !0
         } : {
             title: e.productLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? c.intl.string(c.t["4yiU7x"]) : c.intl.string(c.t.HFhcqh),
             body: e.source === d.uS.WISHLIST ? c.intl.formatToPlainString(c.t.p3RmJF, {
-                username: i
+                username: s
             }) : c.intl.string(c.t.Ig6VDH),
             renderIcon: e.renderIcon,
             shouldShow: !0
-        }) : r.map(() => ({
+        }) : n.map(() => ({
             shouldShow: !1
         }))
     }, [e, t])
 }
 
-function m(e, t) {
-    let r = (0, n.yK)([s.default], () => e.map(e => s.default.getUser(e.gifterUserId)).filter(u.Vq), [e]),
-        d = i.useMemo(() => r.reduce((e, t) => (e[t.id] = t, e), {}), [r]);
-    return i.useMemo(() => {
-        let r = new Set(e.map(e => e.skuProductLine)).size > 1;
+function h(e, t) {
+    let n = (0, r.yK)([l.default], () => e.map(e => l.default.getUser(e.gifterUserId)).filter(o.Vq), [e]),
+        d = s.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
+    return s.useMemo(() => {
+        let n = new Set(e.map(e => e.skuProductLine)).size > 1;
         return e.map(e => {
-            let i = t && e.isOwned && null != e.gifterUserId && null != d[e.gifterUserId],
-                n = null != e.gifterUserId && null != d[e.gifterUserId] ? o.Ay.getName(d[e.gifterUserId]) : null;
-            return r || i ? {
-                title: i ? c.intl.formatToPlainString(c.t.TL4ktE, {
-                    username: n
+            let s = t && e.isOwned && null != e.gifterUserId && null != d[e.gifterUserId],
+                r = null != e.gifterUserId && null != d[e.gifterUserId] ? u.Ay.getName(d[e.gifterUserId]) : null;
+            return n || s ? {
+                title: s ? c.intl.formatToPlainString(c.t.TL4ktE, {
+                    username: r
                 }) : e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? c.intl.string(c.t["4yiU7x"]) : c.intl.string(c.t.HFhcqh),
-                body: i ? e.skuName : void 0,
-                renderIcon: i ? l.uq : e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? l.GM : void 0,
+                body: s ? e.skuName : void 0,
+                renderIcon: s ? i.uq : e.skuProductLine === a.EZt.SOCIAL_LAYER_GAME_ITEM ? i.GM : void 0,
                 shouldShow: !0
             } : {
                 shouldShow: !1

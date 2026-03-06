@@ -9,11 +9,11 @@ var l = n(503698),
     s = n(311907),
     r = n(990078),
     o = n(397927),
-    c = n(915089),
-    d = n(152621),
+    d = n(915089),
+    c = n(152621),
     u = n(61881),
-    g = n(788593),
-    m = n(507247),
+    m = n(788593),
+    g = n(507247),
     x = n(985018),
     f = n(966271),
     p = n(815388);
@@ -25,12 +25,12 @@ function h(e) {
         onClick: l
     } = e, {
         coverImageUrl: a,
-        gameName: c,
-        isLoading: m
-    } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
-        game: c
+        gameName: d,
+        isLoading: g
+    } = (0, c.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
+        game: d
     });
-    return m || h ? (0, i.jsx)("div", {
+    return g || h ? (0, i.jsx)("div", {
         className: f.mD
     }) : (0, i.jsx)(r.m, {
         text: _,
@@ -39,10 +39,10 @@ function h(e) {
             className: p.c9,
             onClick: l,
             "aria-label": _,
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(m.A, {
                 className: p.Iv,
                 imageSrc: a,
-                gameName: c,
+                gameName: d,
                 applicationId: t,
                 userId: n,
                 disableInteraction: !0
@@ -62,10 +62,10 @@ function _(e) {
         onDismiss: l,
         onClick: s,
         className: r
-    } = e, d = (0, c.GV)();
+    } = e, c = (0, d.GV)();
     return (0, i.jsxs)("aside", {
         className: a()(p.kL, r),
-        "aria-labelledby": d,
+        "aria-labelledby": c,
         children: [(0, i.jsxs)("div", {
             className: p.wx,
             children: [(0, i.jsx)(o.DUT, {
@@ -77,12 +77,12 @@ function _(e) {
                     color: "currentColor"
                 })
             }), (0, i.jsx)(o.Heading, {
-                id: d,
+                id: c,
                 variant: "text-xs/medium",
                 color: "text-subtle",
                 children: x.intl.string(x.t.zMUr6Z)
             })]
-        }), (0, i.jsx)(m.A, {
+        }), (0, i.jsx)(g.A, {
             games: n,
             renderGame: e => {
                 let {

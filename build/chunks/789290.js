@@ -11,13 +11,13 @@ function r(e) {
     let {
         widget: t,
         onAction: n
-    } = e, [r, o] = (0, i.useState)(!1), c = t instanceof s.R ? t.applicationId : null, {
-        fetched: d
-    } = (0, a.U)(c), u = (0, i.useCallback)(e => {
+    } = e, [r, o] = (0, i.useState)(!1), d = t instanceof s.R ? t.applicationId : null, {
+        fetched: c
+    } = (0, a.U)(d), u = (0, i.useCallback)(e => {
         e && (n({
             action: "VIEW_WIDGET",
             ...t.getProfileAnalyticsOptions()
         }), o(!0))
     }, [n, t]);
-    return (0, l.K)(u, void 0, !r && (null == c || d))
+    return (0, l.K)(u, void 0, !r && (null == d || c))
 }

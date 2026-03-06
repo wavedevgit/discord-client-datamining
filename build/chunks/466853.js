@@ -8,11 +8,11 @@ var i = n(627968),
     s = n.n(a),
     r = n(158954),
     o = n(311907),
-    c = n(915089),
-    d = n(961350),
+    d = n(915089),
+    c = n(961350),
     u = n(183555),
-    g = n(735321),
-    m = n(94343),
+    m = n(735321),
+    g = n(94343),
     x = n(789290),
     f = n(451395),
     p = n(716804),
@@ -28,21 +28,21 @@ function v(e) {
         widget: n,
         additionalManageWidgetMenuItems: a,
         children: r
-    } = e, o = l.useRef(null), d = l.useRef(null), {
+    } = e, o = l.useRef(null), c = l.useRef(null), {
         registerManageWidgetButtonRef: u,
-        manageFocusOnReorder: m
+        manageFocusOnReorder: g
     } = (0, A.r)();
     l.useLayoutEffect(() => {
         let e = u(n.type);
         return e(o.current), () => e(null)
     }, [u, n.type]);
-    let x = l.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
+    let x = l.useMemo(() => n.id ?? (0, d.Ld)(), [n.id]),
         {
             isDragging: p,
             dragSourcePosition: _
         } = (0, f.gY)({
             dragRef: o,
-            dropRef: d,
+            dropRef: c,
             index: t,
             listType: "WIDGETS",
             itemType: "WIDGET",
@@ -50,14 +50,14 @@ function v(e) {
             itemPreviewProps: {
                 widget: n
             },
-            onReorder: g.R_,
-            onEnd: () => m(n.type)
+            onReorder: m.R_,
+            onEnd: () => g(n.type)
         }),
         v = null != _,
         E = v && t < _,
         T = v && t > _;
     return (0, i.jsxs)("div", {
-        ref: d,
+        ref: c,
         className: s()(j.wX, {
             [j.A]: E,
             [j.Ze]: T,
@@ -81,7 +81,7 @@ function E(e) {
         widget: n,
         children: l,
         disableInteraction: a,
-        className: g,
+        className: m,
         index: f,
         trailingContent: h,
         headerTitle: A,
@@ -89,16 +89,16 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, N = (0, c.GV)(), S = (0, o.bG)([d.default], () => d.default.getId() === t), y = (0, p.g)(), {
+    } = e, N = (0, d.GV)(), S = (0, o.bG)([c.default], () => c.default.getId() === t), y = (0, p.g)(), {
         trackUserProfileAction: C
-    } = (0, u.NJ)(), k = (0, x.A)({
+    } = (0, u.NJ)(), R = (0, x.A)({
         widget: n,
         onAction: C
-    }), R = y === n.type;
-    (0, m.A)(k, R);
+    }), k = y === n.type;
+    (0, g.A)(R, k);
     let L = S && null != f && !a,
         O = () => (0, i.jsxs)("div", {
-            className: s()(j.kL, g),
+            className: s()(j.kL, m),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
                 headingId: N,
@@ -113,7 +113,7 @@ function E(e) {
             })]
         });
     return (0, i.jsx)("section", {
-        ref: k,
+        ref: R,
         "aria-labelledby": N,
         children: L ? (0, i.jsx)(v, {
             index: f ?? 0,

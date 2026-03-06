@@ -45,7 +45,7 @@ function S(e) {
         newChannel: u,
         inSettings: h,
         ...m
-    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [b, y] = l.useState(null), v = l.useRef(null), {
+    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [y, b] = l.useState(null), v = l.useRef(null), {
         roles: j,
         members: R,
         getRichTag: M
@@ -67,7 +67,7 @@ function S(e) {
             }), (0, o.R$)(e.id, l, i)), a(), N(!1)
         } catch (t) {
             let e = new c.LG(t);
-            N(!1), y(e)
+            N(!1), b(e)
         }
     }
     let P = (0, d.ke)(n.type) ? r.I$d : r.trU;
@@ -105,11 +105,11 @@ function S(e) {
                     className: x.W$,
                     variant: "text-xs/normal",
                     children: E.intl.string(E.t.rwFx85)
-                }), null != b ? (0, i.jsx)(r.Text, {
+                }), null != y ? (0, i.jsx)(r.Text, {
                     className: x.W$,
                     variant: "text-xs/normal",
                     color: "text-feedback-critical",
-                    children: b.getAnyErrorMessage()
+                    children: y.getAnyErrorMessage()
                 }) : null]
             }),
             listProps: {

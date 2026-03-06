@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(287809),
     y = n(615405),
     P = n(295405),
-    L = n(166403),
-    D = n(469778),
+    D = n(166403),
+    L = n(469778),
     G = n(954571),
     M = n(975571),
     U = n(927578),
@@ -42,8 +42,8 @@ var i = n(627968),
     w = n(177653),
     H = n(159906),
     B = n(758400),
-    Y = n(788868),
-    F = n(652215),
+    F = n(788868),
+    Y = n(652215),
     z = n(355097),
     X = n(531525),
     W = n(985018),
@@ -68,9 +68,9 @@ function Z() {
 }
 
 function q() {
-    let e = (0, r.bG)([D.A], () => D.A.getForApplication(Y.tv));
+    let e = (0, r.bG)([L.A], () => L.A.getForApplication(F.tv));
     return s.useEffect(() => {
-        (0, _.LM)(Y.tv)
+        (0, _.LM)(F.tv)
     }, []), (0, i.jsx)(o.nVY, {
         label: W.intl.string(W.t["2GKrvn"]),
         description: W.intl.string(W.t.kNEjGm),
@@ -88,25 +88,25 @@ function J() {
 }
 let Q = function() {
     var e;
-    let t = (0, r.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
+    let t = (0, r.bG)([D.A], () => D.A.getPremiumTypeSubscription()),
         n = (0, p.A)({
             subscriptionFilter: e => B.Hy.has(e.status)
         }),
         l = (0, r.bG)([R.default], () => R.default.getCurrentUser()),
         _ = n.length > 1,
         E = (0, r.bG)([P.A], () => null != t && null != t.paymentSourceId ? P.A.getPaymentSource(t.paymentSourceId) : null, [t]),
-        T = (0, r.bG)([L.A], () => L.A.hasFetchedSubscriptions()),
-        D = (0, r.bG)([y.A], () => y.A.isBusy),
+        T = (0, r.bG)([D.A], () => D.A.hasFetchedSubscriptions()),
+        L = (0, r.bG)([y.A], () => y.A.isBusy),
         U = (0, x.Y)(),
         w = (0, r.bG)([O.A], () => O.A.getSubsection()),
-        Z = (0, r.bG)([L.A], () => L.A.getActiveApplicationSubscriptions()?.length ?? 0),
-        Q = (0, r.bG)([L.A], () => Object.values(L.A.getSubscriptions() ?? {}).filter(e => e.type === F.rzx.GUILD).filter(e => e.status !== F.Dmq.ENDED).length),
+        Z = (0, r.bG)([D.A], () => D.A.getActiveApplicationSubscriptions()?.length ?? 0),
+        Q = (0, r.bG)([D.A], () => Object.values(D.A.getSubscriptions() ?? {}).filter(e => e.type === Y.rzx.GUILD).filter(e => e.status !== Y.Dmq.ENDED).length),
         $ = (0, h.A)({
             forceFetch: !0
         }),
         ee = (0, k.d)(),
         et = null !== t ? t.currentPeriodEnd : void 0,
-        en = !(ee && !($.unactivatedUnits.length > 0)) && ($.fractionalState !== Y.xc.NONE || $.unactivatedUnits.length > 0);
+        en = !(ee && !($.unactivatedUnits.length > 0)) && ($.fractionalState !== F.xc.NONE || $.unactivatedUnits.length > 0);
     return (s.useEffect(() => (d.h.wait(() => {
         (0, g.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
@@ -122,7 +122,7 @@ let Q = function() {
             children: [_ ? (0, i.jsx)(B.Sb, {}) : null, null != t ? (0, i.jsx)(B.Ay, {
                 subscription: t,
                 paymentSource: E,
-                busy: D,
+                busy: L,
                 subscriptions: n
             }) : (0, i.jsx)(B.TC, {}), en && (e = !!l?.isPremiumWithPremiumGroup(), (0, i.jsxs)("section", {
                 children: [(0, i.jsx)(o.Heading, {
@@ -133,7 +133,7 @@ let Q = function() {
                     variant: "text-md/normal",
                     className: K.JU,
                     children: W.intl.format(W.t["7Zi06b"], {
-                        helpCenterLink: M.A.getArticleURL(F.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: M.A.getArticleURL(Y.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(V.A, {
                     className: K.fX,
@@ -148,7 +148,7 @@ let Q = function() {
                 children: [(0, i.jsx)(J, {}), (0, i.jsx)(S.A, {
                     count: Q,
                     onClickManageSubscription: () => (0, v.openUserSettings)(N.X.SUBSCRIPTIONS_PANEL, {
-                        section: F.nc_.SUBSCRIPTIONS,
+                        section: Y.nc_.SUBSCRIPTIONS,
                         subsection: z.nR
                     })
                 })]
@@ -157,9 +157,9 @@ let Q = function() {
                     count: Z,
                     onClickManageSubscription: () => {
                         (0, v.openUserSettings)(N.X.SUBSCRIPTIONS_PANEL, {
-                            section: F.nc_.SUBSCRIPTIONS,
+                            section: Y.nc_.SUBSCRIPTIONS,
                             subsection: z.PZ
-                        }), G.default.track(F.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+                        }), G.default.track(Y.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
             }), (0, i.jsx)(J, {}), null != t ? (0, i.jsx)(H.A, {

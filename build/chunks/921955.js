@@ -1,7 +1,7 @@
 /** chunk id: 921955 params = (module,exports,require) **/
 let i;
 n.d(t, {
-    A: () => y
+    A: () => b
 }), n(321073);
 var l = n(311907),
     s = n(73153),
@@ -26,7 +26,7 @@ function S(e) {
     x = [...x, e], C = C.map(e => ({
         ...e,
         sent: x.includes(e.data.record.id)
-    })), b.emitChange()
+    })), y.emitChange()
 }
 
 function I() {
@@ -52,7 +52,7 @@ class N extends l.Ay.Store {
         return C
     }
 }
-let b = new N(s.h, {
+let y = new N(s.h, {
         ACTIVITY_INVITE_MODAL_OPEN: function(e) {
             _ = e.activity, E = e.resolve, x = [], null == i && (i = new r.Ay((e, t) => {
                 let n;
@@ -110,7 +110,7 @@ let b = new N(s.h, {
                         default:
                             return null
                     }
-                }).filter(e => null != e), b.emitChange()
+                }).filter(e => null != e), y.emitChange()
             }, f, 100)), i.search("")
         },
         ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -145,4 +145,4 @@ let b = new N(s.h, {
         LOCAL_ACTIVITY_UPDATE: T,
         RPC_APP_DISCONNECTED: T
     }),
-    y = 21552 == n.j ? b : null
+    b = 21552 == n.j ? y : null

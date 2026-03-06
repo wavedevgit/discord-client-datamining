@@ -101,8 +101,11 @@ function R(e) {
                 V = (0, N.A)(e),
                 [B, H] = (0, E.W2)(null != t && !T && !G && !k && null != V, e),
                 F = B === r.M.EXPIRING_POWERUP_COACHMARK,
-                K = i.useMemo(() => {
-                    if (null == t || T || G || k || F) return;
+                K = (0, h.TS)(e, "useGuildPowerupsChannelListPopout"),
+                [W, Y] = (0, E.rd)(null != t && !T && !G && !k && !F && K),
+                z = W === r.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK,
+                q = i.useMemo(() => {
+                    if (null == t || T || G || z || k || F) return;
                     let n = function(e, t) {
                         let n = u.fi.find(e => {
                             let n = v.a8[e],
@@ -160,8 +163,8 @@ function R(e) {
                         }
                     }(e, R, j, O);
                     if (null != s) return s
-                }, [e, t, T, G, k, F, j, R, O]),
-                [W, Y] = (0, E.ru)(null != K);
+                }, [e, t, T, G, z, k, F, j, R, O]),
+                [X, J] = (0, E.ru)(null != q);
             return i.useMemo(() => {
                 if (null != t) {
                     if (T) return {
@@ -192,14 +195,18 @@ function R(e) {
                         featuredExpiringPowerup: V,
                         markAsDismissed: H
                     };
-                    if (W === r.M.GUILD_POWERUP_NOTIFICATION && null != K) return {
-                        ...K,
+                    if (z) return {
+                        type: _.o.GAME_SERVER_NEW_GAMES,
+                        markAsDismissed: Y
+                    };
+                    if (X === r.M.GUILD_POWERUP_NOTIFICATION && null != q) return {
+                        ...q,
                         markAsDismissed: e => {
-                            Y(e), K.markAsDismissed(e)
+                            J(e), q.markAsDismissed(e)
                         }
                     }
                 }
-            }, [t, T, C, K, W, Y, G, D, L, k, U, w, F, V, H])
+            }, [t, T, C, q, X, J, G, D, L, k, U, w, F, V, H, z, Y])
         }(e, n ?? void 0);
     if (null !== n && (null != m || j || null != R)) return {
         indicator: m,

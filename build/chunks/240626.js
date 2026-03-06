@@ -123,9 +123,9 @@ let y = function(e) {
         f = (0, r.bG)([u.A], () => u.A.useReducedMotion),
         y = (0, r.bG)([p.default], () => p.default.getCurrentUser()),
         P = C === b.xc.FP_SUB_PAUSED,
-        L = A && !P,
+        D = A && !P,
         {
-            appliedGuildBoostSlots: D,
+            appliedGuildBoostSlots: L,
             unappliedGuildBoostSlots: G,
             numActiveGuildBoostSlots: M,
             hasCooldownBoosts: U,
@@ -147,18 +147,18 @@ let y = function(e) {
             }
         }, [d]),
         V = null != m ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(m.planId) : 0,
-        w = Math.max(0, V - D.length),
+        w = Math.max(0, V - L.length),
         H = M > V,
         B = V === d.length,
-        Y = B ? w : 1,
-        F = s.useMemo(() => {
+        F = B ? w : 1,
+        Y = s.useMemo(() => {
             let e = [];
-            for (let t = 0; t < Y; t++) e.push((0, i.jsx)(S.A, {
+            for (let t = 0; t < F; t++) e.push((0, i.jsx)(S.A, {
                 className: v.YA,
                 useReducedMotion: f
             }, t));
             return e
-        }, [Y, f]),
+        }, [F, f]),
         z = s.useMemo(() => G.find(e => e.isAvailable()), [G]);
     if (0 === G.length) return null;
     let X = G.length;
@@ -194,7 +194,7 @@ let y = function(e) {
                     className: v.RW,
                     children: [(0, i.jsx)("div", {
                         className: v.PS,
-                        children: F
+                        children: Y
                     }), (0, i.jsxs)("div", {
                         className: v.__invalid_headerCopy,
                         children: [(0, i.jsx)(c.Heading, {
@@ -211,14 +211,14 @@ let y = function(e) {
                 }), (0, i.jsx)("div", {
                     className: v.di,
                     children: (0, i.jsx)(o.A, {
-                        shouldShow: null == z || L,
+                        shouldShow: null == z || D,
                         text: l,
                         "aria-label": l.toString(),
                         children: e => (0, i.jsx)(c.Button, {
                             variant: "primary",
                             text: N.intl.string(N.t.BMx1iy),
                             ...e,
-                            disabled: null == z || L,
+                            disabled: null == z || D,
                             onClick: null != z ? () => {
                                 (0, c.mMO)(async () => e => (0, i.jsx)(g.default, {
                                     ...e,

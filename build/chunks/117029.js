@@ -38,8 +38,8 @@ let x = l.memo(function(e) {
         enabled: I,
         zoomLevel: T,
         minZoom: N,
-        maxZoom: b,
-        isDragging: y,
+        maxZoom: y,
+        isDragging: b,
         isWheeling: v,
         isSlidering: j,
         setIsSlidering: R,
@@ -95,9 +95,9 @@ let x = l.memo(function(e) {
             "--custom-zoom-indicator-top": `${100*(0,r.clamp)(s-i/2,0,1-i)}%`,
             "--custom-zoom-indicator-width": `${100*n}%`,
             "--custom-zoom-indicator-height": `${100*i}%`,
-            "--custom-zoom-indicator-transition": y || U || v || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
+            "--custom-zoom-indicator-transition": b || U || v || j ? "none" : "top 0.1s ease-out, left 0.1s ease-out, width 0.1s ease-out, height 0.1s ease-out"
         }
-    }, [y, U, v, j, P, T, L]), Z = l.useCallback(e => {
+    }, [b, U, v, j, P, T, L]), Z = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T - .25, A.qd, "button")
     }, [M, T]), X = l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), M(T + .25, A.qd, "button")
@@ -154,7 +154,7 @@ let x = l.memo(function(e) {
                     })
                 }), (0, i.jsx)(d.Apm, {
                     minValue: N,
-                    maxValue: b,
+                    maxValue: y,
                     initialValue: T,
                     value: T,
                     asValueChanges: ee,
@@ -167,7 +167,7 @@ let x = l.memo(function(e) {
                 children: (0, i.jsx)(d.K0, {
                     icon: d.r1u,
                     onClick: X,
-                    disabled: T >= b,
+                    disabled: T >= y,
                     variant: "overlay-secondary",
                     size: "sm",
                     "aria-label": g.intl.string(g.t["9hMafy"])

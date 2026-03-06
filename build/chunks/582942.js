@@ -20,8 +20,8 @@ var a = n(503698),
     g = n(611656),
     p = n(459746),
     _ = n(225732),
-    j = n(985018),
-    v = n(728528),
+    v = n(985018),
+    j = n(728528),
     A = n(470078);
 let I = e => {
     let {
@@ -65,19 +65,19 @@ function E(e) {
     }), h = (0, c.yK)([m.A], () => r.map(e => m.A.getGame(e)).filter(e => null != e).filter(e => (0, g.oS)(e.applicationId)).slice(0, 5));
     return ((0, x.k)(t), (0, x.W)(r), u && null == o) ? (0, l.jsxs)("div", {
         children: [(0, l.jsx)("div", {
-            className: i()(A.vM, v.bV)
+            className: i()(A.vM, j.bV)
         }), (0, l.jsx)("div", {
-            className: i()(v.nM, v.iH),
+            className: i()(j.nM, j.iH),
             children: s().range(0, 5).map(e => (0, l.jsx)("div", {
                 className: A.nn
             }, e))
         })]
     }) : (u || 0 !== h.length) && null == o ? (0, l.jsxs)("div", {
         children: [(0, l.jsx)(d.Heading, {
-            className: v.bV,
+            className: j.bV,
             variant: "text-md/semibold",
             color: "text-strong",
-            children: j.intl.string(j.t["6rLyQB"])
+            children: v.intl.string(v.t["6rLyQB"])
         }), (0, l.jsx)("div", {
             className: A.D$,
             children: h.map(e => null != e.supplementalData ? (0, l.jsx)(I, {

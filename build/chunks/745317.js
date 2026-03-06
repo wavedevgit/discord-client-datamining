@@ -80,8 +80,7 @@ function O(e) {
             }) : void 0,
             deviceType: j.oh.VIDEO_INPUT,
             location: "CameraSettings",
-            isDisabled: !S,
-            showAllDevices: !0
+            isDisabled: !S
         }), (0, n.jsx)(x.A, {
             className: _.Jp,
             onLearnMore: a,

@@ -1,6 +1,6 @@
 /** chunk id: 439447 params = (module,exports,require) **/
 i.d(e, {
-    A: () => h
+    A: () => A
 });
 var n, l, r = i(627968),
     s = i(64700),
@@ -151,7 +151,7 @@ let m = t => (e, i) => null == i ? "" : d.intl.format(t(), {
         }
     };
 
-function h(t) {
+function A(t) {
     return class extends s.PureComponent {
         static Locations = u;
         static Types = c;
@@ -224,10 +224,10 @@ function h(t) {
                 c = p[e][d];
             if (null == c) return null;
             let m = c[u],
-                h = Math.floor((0, a.eZ)(o, u));
+                A = Math.floor((0, a.eZ)(o, u));
             return (0, r.jsx)(t, {
                 ...s,
-                children: m?.(h, i, n, l)
+                children: m?.(A, i, n, l)
             })
         }
     }

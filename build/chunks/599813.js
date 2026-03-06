@@ -29,7 +29,7 @@ function S(e) {
         voiceListRef: l,
         showSectionHeaders: s = !1,
         query: a
-    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), b = N(a, S), y = Math.ceil(b.length / t), {
+    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), y = N(a, S), b = Math.ceil(y.length / t), {
         isNativeModuleLoaded: v,
         isNativeModuleLoading: j,
         catalogLastFetchTime: R
@@ -38,7 +38,7 @@ function S(e) {
         isNativeModuleLoading: g.A.isNativeModuleLoading(),
         catalogLastFetchTime: g.A.getCatalogLastFetchTime()
     }));
-    return a && 0 === b.length ? (0, i.jsxs)("div", {
+    return a && 0 === y.length ? (0, i.jsxs)("div", {
         className: E.nm,
         children: [(0, i.jsx)(d.$p$, {
             width: 40,
@@ -79,14 +79,14 @@ function S(e) {
         className: E.kL,
         renderRow: e => {
             let n = e * t,
-                l = b.slice(n, n + t);
+                l = y.slice(n, n + t);
             return (0, i.jsx)(I, {
                 children: l.map((n, l) => (0, i.jsx)(f.I, {
                     voiceFilter: n,
                     hasNitro: S,
                     analyticsContext: {
                         reason: A.O.USER_SELECTION,
-                        gridRows: y,
+                        gridRows: b,
                         gridColumns: t,
                         interactedRow: e,
                         interactedColumn: l
@@ -101,7 +101,7 @@ function S(e) {
             children: _.intl.string(C[e])
         }),
         sectionHeaderHeight: !1 === s ? void 0 : e => x[e],
-        rowCount: y,
+        rowCount: b,
         rowHeight: 130,
         onScroll: n,
         ref: l,

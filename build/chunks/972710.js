@@ -98,8 +98,8 @@ function R(e) {
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
     let {
         status: P
-    } = n, L = (0, S.$k)(n), D = y && !L && n.isBoostOnly && j.includes(n.status);
-    if (L) t = v.v2;
+    } = n, D = (0, S.$k)(n), L = y && !D && n.isBoostOnly && j.includes(n.status);
+    if (D) t = v.v2;
     else switch (P) {
         case I.Dmq.PAST_DUE:
         case I.Dmq.ACCOUNT_HOLD:
@@ -124,7 +124,7 @@ function R(e) {
                 className: v.eC,
                 children: [(0, i.jsx)("div", {
                     className: a()(v.Ab, {
-                        [v.aD]: L
+                        [v.aD]: D
                     })
                 }), (0, i.jsx)("div", {
                     children: (0, S.Uf)({
@@ -136,7 +136,7 @@ function R(e) {
                 })]
             }), r && (0, i.jsxs)("div", {
                 className: v.BQ,
-                children: [D && (0, i.jsx)("div", {
+                children: [L && (0, i.jsx)("div", {
                     className: v.x7,
                     children: (0, i.jsx)(c.QWc, {
                         variant: "always-white",

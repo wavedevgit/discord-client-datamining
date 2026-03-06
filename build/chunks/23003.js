@@ -32,8 +32,8 @@ var i, s, l, a = n(627968),
     R = n(817577),
     y = n(748222),
     P = n(743501),
-    L = n(652700),
-    D = n(282818),
+    D = n(652700),
+    L = n(282818),
     G = n(965132),
     M = n(576765),
     U = n(88433),
@@ -42,8 +42,8 @@ var i, s, l, a = n(627968),
     w = n(39508),
     H = n(198962),
     B = n(636395),
-    Y = n(871891),
-    F = n(116427),
+    F = n(871891),
+    Y = n(116427),
     z = n(281146),
     X = n(324108),
     W = n(158178),
@@ -86,16 +86,16 @@ let ea = () => {
             assetUrl: l ? Q.A : ee.A
         },
         displayNameStyles: {
-            thumbnail: L.A,
-            assetUrl: l ? P.A : D.A
+            thumbnail: D.A,
+            assetUrl: l ? P.A : L.A
         },
         referralProgram: {
             thumbnail: B.A,
-            assetUrl: l ? H.A : Y.A
+            assetUrl: l ? H.A : F.A
         },
         showYourStyle: {
             thumbnail: z.A,
-            assetUrl: l ? F.A : X.A
+            assetUrl: l ? Y.A : X.A
         },
         yourSpace: {
             thumbnail: K.A,

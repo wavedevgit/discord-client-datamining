@@ -9,11 +9,11 @@ var i = n(627968),
     s = n.n(a),
     r = n(158954),
     o = n(311907),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(362490),
-    g = n(429913),
-    m = n(183555),
+    m = n(429913),
+    g = n(183555),
     x = n(622543),
     f = n(985018),
     p = n(81157);
@@ -68,14 +68,14 @@ function _(e) {
         size: n = "default"
     } = e, {
         trackUserProfileAction: a
-    } = (0, m.NJ)(), s = (0, g.h)(t), {
+    } = (0, g.NJ)(), s = (0, m.h)(t), {
         hasAlreadyLinked: o,
         canStartAuthorization: x,
         startAuthorization: h,
         fetched: _
     } = (0, u.RD)(s), {
         analyticsLocations: A
-    } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
+    } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
         x && (a({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t

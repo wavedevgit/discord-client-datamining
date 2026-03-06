@@ -15,8 +15,8 @@ var l = i(503698),
     c = i(402216),
     m = i(12351),
     p = i(769015),
-    h = i(877315),
-    A = i(607407),
+    A = i(877315),
+    h = i(607407),
     g = i(652215),
     f = i(985018),
     T = i(455943),
@@ -32,8 +32,8 @@ function C(t) {
         currentUserId: S,
         canWatch: E,
         unavailableReason: x,
-        onWatchStream: _,
-        onAction: y,
+        onWatchStream: y,
+        onAction: _,
         showHeader: N = !1,
         hideTip: I = !1,
         className: j
@@ -56,10 +56,10 @@ function C(t) {
                 color: "currentColor",
                 children: P
             })]
-        }), null != _ ? (0, n.jsxs)(a.DUT, {
-            onClick: _,
+        }), null != y ? (0, n.jsxs)(a.DUT, {
+            onClick: y,
             className: T.i1,
-            children: [(0, n.jsx)(A.A, {
+            children: [(0, n.jsx)(h.A, {
                 className: T.oz,
                 stream: e
             }), E ? (0, n.jsx)("div", {
@@ -68,12 +68,12 @@ function C(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, h.A)(e, i, S, x)
+                    children: (0, A.A)(e, i, S, x)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
             className: T.i1,
-            children: [(0, n.jsx)(A.A, {
+            children: [(0, n.jsx)(h.A, {
                 className: T.oz,
                 stream: e
             }), E ? (0, n.jsx)("div", {
@@ -82,7 +82,7 @@ function C(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, h.A)(e, i, S, x)
+                    children: (0, A.A)(e, i, S, x)
                 })
             }) : null]
         }), (0, n.jsxs)("div", {
@@ -100,7 +100,7 @@ function C(t) {
                         section: g.JJy.STREAM_VIEWER_POPOUT
                     }
                 },
-                onAction: y
+                onAction: _
             }) : (0, n.jsx)(d.A, {
                 type: o.M.STREAM_PREVIEW,
                 applicationStream: e,
@@ -108,7 +108,7 @@ function C(t) {
                 guildId: e.guildId,
                 channelId: e.channelId,
                 className: T.lx,
-                onAction: y
+                onAction: _
             }), !I && (0, n.jsx)(m.A, {
                 type: m.A.Types.INLINE,
                 className: T.PP,
@@ -153,7 +153,7 @@ function S(t) {
         }), null != v ? (0, n.jsxs)(a.DUT, {
             onClick: v,
             className: T.GE,
-            children: [(0, n.jsx)(A.A, {
+            children: [(0, n.jsx)(h.A, {
                 className: T.oz,
                 stream: e
             }), m ? (0, n.jsx)("div", {
@@ -162,12 +162,12 @@ function S(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, h.A)(e, l, u, p)
+                    children: (0, A.A)(e, l, u, p)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
             className: T.GE,
-            children: [(0, n.jsx)(A.A, {
+            children: [(0, n.jsx)(h.A, {
                 className: T.oz,
                 stream: e
             }), m ? (0, n.jsx)("div", {
@@ -176,7 +176,7 @@ function S(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, h.A)(e, l, u, p)
+                    children: (0, A.A)(e, l, u, p)
                 })
             }) : null]
         }), (0, n.jsx)("div", {

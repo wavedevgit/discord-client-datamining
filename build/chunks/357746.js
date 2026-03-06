@@ -105,6 +105,12 @@ let N = {
                         channelRowRef: T,
                         ...b.popout
                     });
+                case m.o.GAME_SERVER_NEW_GAMES:
+                    return (0, i.jsx)(_.YX, {
+                        guildId: t,
+                        channelRowRef: T,
+                        ...b.popout
+                    });
                 default:
                     return (0, i.jsx)("div", {})
             }

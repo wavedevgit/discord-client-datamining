@@ -128,27 +128,27 @@ let S = l.memo(function(e) {
             let e = setTimeout(() => x(N), 1e3);
             return () => clearTimeout(e)
         }, [N]);
-        let b = (0, c.zhh)({
+        let y = (0, c.zhh)({
                 opacity: +!!_,
                 transform: _ ? "translateY(0)" : "translateY(100%)",
                 pointerEvents: "none",
                 config: r.config.stiff
             }),
-            y = l.useMemo(() => T ?? {
+            b = l.useMemo(() => T ?? {
                 value: 0,
                 multiplier: 1
             }, [T]),
-            v = l.useRef(y);
+            v = l.useRef(b);
         l.useEffect(() => {
-            (y.multiplier > 1 || y.value > 0) && (v.current = y)
-        }, [y]);
+            (b.multiplier > 1 || b.value > 0) && (v.current = b)
+        }, [b]);
         let {
             multiplier: j,
             value: R
         } = l.useMemo(() => ({
-            value: N ? y.value : v.current.value,
-            multiplier: N ? y.multiplier : v.current.multiplier
-        }), [N, y, v]);
+            value: N ? b.value : v.current.value,
+            multiplier: N ? b.multiplier : v.current.multiplier
+        }), [N, b, v]);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(S, {
                 channelId: t,
@@ -156,7 +156,7 @@ let S = l.memo(function(e) {
             }), (0, i.jsx)(r.animated.div, {
                 ref: A,
                 className: C.p_,
-                style: b,
+                style: y,
                 children: (0, i.jsx)(I, {
                     value: R,
                     multiplier: j

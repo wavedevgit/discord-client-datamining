@@ -65,7 +65,7 @@ function C(e) {
         isBlocked: h.A.isBlocked(S)
     }), [S]), T = l.useCallback(() => {
         (0, m.xi)(t, [C])
-    }, [t, C]), N = (0, f.eT)(), b = l.useCallback(e => () => {
+    }, [t, C]), N = (0, f.eT)(), y = l.useCallback(e => () => {
         o.A.blockUser(S, {
             location: f.Rx
         }).then(() => {
@@ -88,7 +88,7 @@ function C(e) {
             name: s.K.SAFETY_WARNING_VIEW
         })
     }, [t, C, S]);
-    let y = () => {
+    let b = () => {
             (0, r.mMO)(async () => {
                 let {
                     default: e
@@ -121,7 +121,7 @@ function C(e) {
                                 buttonText: E.intl.string(E.t["5QYPO2"]),
                                 buttonVariant: "critical-primary",
                                 onButtonPress: () => {
-                                    s(), v(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, y)
+                                    s(), v(g.Wm.USER_MODAL_BLOCK_CONFIRM, g.Wm.USER_MODAL_BLOCK_CANCEL, b)
                                 }
                             }, "block-button")]
                         })
@@ -137,7 +137,7 @@ function C(e) {
                 return n => (0, i.jsx)(a, {
                     ...n,
                     userId: S,
-                    confirmBlock: b(e),
+                    confirmBlock: y(e),
                     onCancel: () => {
                         s?.(), (0, g._$)({
                             channelId: t,
@@ -162,7 +162,7 @@ function C(e) {
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
             onClick: () => {
-                y(), (0, g._$)({
+                b(), (0, g._$)({
                     channelId: t,
                     warningId: C,
                     senderId: S,

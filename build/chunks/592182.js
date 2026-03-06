@@ -14,8 +14,8 @@ var l = i(503698),
     c = i(573648),
     m = i(235986),
     p = i(338234),
-    h = i(159426),
-    A = i(25528),
+    A = i(159426),
+    h = i(25528),
     g = i(655724),
     f = i(82149),
     T = i(734057),
@@ -24,17 +24,17 @@ var l = i(503698),
     S = i(90644),
     E = i(61330),
     x = i(153331),
-    _ = i(33852),
-    y = i(834425),
+    y = i(33852),
+    _ = i(834425),
     N = i(284525),
     I = i(730430),
     j = i(443493),
     D = i(462226),
     P = i(329151),
     U = i(738080),
-    O = i(648246),
-    b = i(305637),
-    L = i(652215),
+    b = i(648246),
+    L = i(305637),
+    O = i(652215),
     M = i(37206);
 let R = (0, u.A)(t => {
     let {
@@ -46,25 +46,25 @@ let R = (0, u.A)(t => {
         guildId: R,
         channelId: V,
         source: w,
-        buttonVariant: H,
-        type: G,
+        buttonVariant: G,
+        type: H,
         onAction: W
     } = t, F = (0, o.bG)([v.default], () => {
         let t = v.default.getCurrentUser();
         return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-    }), k = G === x.O.STREAM_PREVIEW || null != s, B = (0, S.A)(e), Y = B || k ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, z = e?.type === L.$pd.HANG_STATUS, $ = (0, o.bG)([C.A, T.A], () => z ? T.A.getChannel(C.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([T.A], () => null != V ? T.A.getChannel(V) : null, [V]), {
+    }), k = H === x.O.STREAM_PREVIEW || null != s, B = (0, S.A)(e), Y = B || k ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, z = e?.type === O.$pd.HANG_STATUS, $ = (0, o.bG)([C.A, T.A], () => z ? T.A.getChannel(C.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([T.A], () => null != V ? T.A.getChannel(V) : null, [V]), {
         enableUserHoverActivities: K
     } = (0, p.fC)({
         guildId: R ?? J?.guild_id,
         location: "UserActivityActions"
     }), {
         enableRequestToStream: Z
-    } = h.m.useExperiment({
+    } = A.m.useExperiment({
         guildId: R ?? J?.guild_id,
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
-    }), X = null != J && K && Z && (0, A.F9)(e), q = Y === m.A.Direction.VERTICAL;
+    }), X = null != J && K && Z && (0, h.F9)(e), q = Y === m.A.Direction.VERTICAL;
     return (0, n.jsx)(m.A, {
         grow: 0,
         align: m.A.Align.STRETCH,
@@ -72,15 +72,15 @@ let R = (0, u.A)(t => {
         wrap: q ? m.A.Wrap.WRAP : m.A.Wrap.NO_WRAP,
         className: r()(u, M.jx, q ? M.Vd : M.xM),
         children: (() => {
-            if ((0, E.A)(e)) return (0, n.jsx)(_.A, {
-                platform: c.A.get(L.fg2.XBOX),
-                variant: H,
+            if ((0, E.A)(e)) return (0, n.jsx)(y.A, {
+                platform: c.A.get(O.fg2.XBOX),
+                variant: G,
                 onAction: W,
                 icon: d.YWd
             });
-            if (e?.platform === L.yTV.PS4 || e?.platform === L.yTV.PS5) return (0, n.jsx)(_.A, {
-                variant: H,
-                platform: c.A.get(L.fg2.PLAYSTATION),
+            if (e?.platform === O.yTV.PS4 || e?.platform === O.yTV.PS5) return (0, n.jsx)(y.A, {
+                variant: G,
+                platform: c.A.get(O.fg2.PLAYSTATION),
                 onAction: W,
                 icon: d.Xj
             });
@@ -110,17 +110,17 @@ let R = (0, u.A)(t => {
                 return null == t ? null : (0, n.jsx)(j.A, {
                     guildId: t.guildId,
                     channelId: t.channelId,
-                    variant: H,
+                    variant: G,
                     onAction: W
                 })
             }
-            return k ? (0, n.jsx)(b.A, {
+            return k ? (0, n.jsx)(L.A, {
                 isCurrentUser: F.id === l.id,
                 applicationStream: s,
                 onAction: W
             }) : z && null != $ ? (0, n.jsx)(I.A, {
                 userId: l.id,
-                variant: H,
+                variant: G,
                 hangStatusChannel: $,
                 onAction: W
             }) : (0, n.jsxs)(n.Fragment, {
@@ -128,25 +128,25 @@ let R = (0, u.A)(t => {
                     userId: l.id,
                     channel: J,
                     onAction: W
-                }), (0, n.jsx)(O.A, {
+                }), (0, n.jsx)(b.A, {
                     activity: e,
-                    variant: X ? "secondary" : H,
+                    variant: X ? "secondary" : G,
                     onAction: W
                 }), (0, n.jsx)(N.A, {
                     activity: e,
                     embeddedActivity: i,
                     user: l,
-                    variant: X ? "secondary" : H,
+                    variant: X ? "secondary" : G,
                     onAction: W
                 }), (0, n.jsx)(D.A, {
                     activity: e,
                     user: l,
-                    variant: X ? "secondary" : H,
+                    variant: X ? "secondary" : G,
                     onAction: W
-                }), (0, n.jsx)(y.A, {
+                }), (0, n.jsx)(_.A, {
                     user: l,
                     activity: e,
-                    variant: X ? "secondary" : H,
+                    variant: X ? "secondary" : G,
                     onAction: W
                 })]
             })

@@ -32,8 +32,8 @@ var i = n(417597),
     R = n(629139),
     y = n(753563),
     P = n(584378),
-    L = n(747918),
-    D = n(330290),
+    D = n(747918),
+    L = n(330290),
     G = n(252261),
     M = n(106731);
 let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
@@ -111,7 +111,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             moreGuilds: {
                 title: g.intl.string(g.t.Bv8Pfk),
                 description: g.intl.string(g.t.JMfaTU),
-                imageSource: U(s, p, L),
+                imageSource: U(s, p, D),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
@@ -129,19 +129,19 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             stickers: {
                 title: g.intl.string(g.t["1c+xwT"]),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, f, D),
+                imageSource: U(s, f, L),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, f, D),
+                imageSource: U(s, f, L),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, f, D),
+                imageSource: U(s, f, L),
                 imageClassName: t.stickersImage
             },
             streaming: {

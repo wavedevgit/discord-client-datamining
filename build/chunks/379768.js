@@ -25,8 +25,8 @@ var i = n(627968),
     I = n(576705),
     T = n(287809),
     N = n(488926),
-    b = n(427262),
-    y = n(314307),
+    y = n(427262),
+    b = n(314307),
     v = n(234567),
     j = n(652215),
     R = n(985018),
@@ -63,16 +63,16 @@ function O(e) {
             return n || l
         }).value()
     }, [t, P]), G = I.A.can(j.xBc.MANAGE_CHANNELS, t) || I.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => s(!1), []);
-    return (0, i.jsxs)(y.Ay, {
+    return (0, i.jsxs)(b.Ay, {
         channelId: t.id,
-        children: [(0, i.jsx)(y.WK, {
+        children: [(0, i.jsx)(b.WK, {
             locked: !0,
             channelType: t.type
-        }), (0, i.jsx)(y.cr, {
+        }), (0, i.jsx)(b.cr, {
             children: R.intl.format(R.t.I3R7Vn, {
                 channelName: r
             })
-        }), (0, i.jsx)(y.j1, {
+        }), (0, i.jsx)(b.j1, {
             className: D.PT,
             children: R.intl.format(R.t.QuwqjG, {
                 channelName: r,
@@ -107,7 +107,7 @@ function O(e) {
                     users: U
                 });
                 let e = U[0],
-                    n = b.Ay.getName(e);
+                    n = y.Ay.getName(e);
                 return (0, i.jsxs)("div", {
                     className: M.HD,
                     children: [(0, i.jsx)(h.euF, {

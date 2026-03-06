@@ -20,8 +20,8 @@ var l = n(627968),
     g = n(409626),
     p = n(305080),
     _ = n(652215),
-    j = n(985018),
-    v = n(728528),
+    v = n(985018),
+    j = n(728528),
     A = n(272746),
     I = n(639142);
 
@@ -54,18 +54,18 @@ function E(e) {
         size: 32
     });
     return (0, l.jsxs)("div", {
-        className: v.fi,
+        className: j.fi,
         children: [(0, l.jsx)(o.Heading, {
-            className: v.bV,
+            className: j.bV,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: j.intl.string(j.t.kBDZSL)
+            children: v.intl.string(v.t.kBDZSL)
         }), (0, l.jsxs)("div", {
-            className: r()(v.nM, v.mX),
+            className: r()(j.nM, j.mX),
             children: [(0, l.jsx)("img", {
                 className: A.$f,
                 src: N,
-                alt: j.intl.formatToPlainString(j.t.xm6W9D, {
+                alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                     guildName: p.guild.name
                 })
             }), (0, l.jsxs)("div", {
@@ -82,14 +82,14 @@ function E(e) {
                 }), null != p.approximate_member_count && (0, l.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
-                    children: j.intl.format(j.t.zRl6XR, {
+                    children: v.intl.format(v.t.zRl6XR, {
                         count: p.approximate_member_count
                     })
                 })]
             })]
         }), (0, l.jsx)(o.Button, {
             variant: "secondary",
-            text: E ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
+            text: E ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
             onClick: () => {
                 f(), n(g.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",
@@ -124,10 +124,10 @@ function b(e) {
             splash: r.guild.splash
         }),
         x = a && !i || null == m,
-        v = (0, l.jsx)("img", {
+        j = (0, l.jsx)("img", {
             className: I.$f,
             src: c,
-            alt: j.intl.formatToPlainString(j.t.xm6W9D, {
+            alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                 guildName: r.guild.name
             })
         }),
@@ -139,7 +139,7 @@ function b(e) {
             className: I.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
-            children: j.intl.string(j.t["U2N+ci"])
+            children: v.intl.string(v.t["U2N+ci"])
         }), (0, l.jsxs)("div", {
             className: I.kL,
             children: [!x && null != m && (0, l.jsx)("img", {
@@ -150,11 +150,11 @@ function b(e) {
                 className: I.hQ,
                 children: [(0, l.jsxs)("div", {
                     className: A,
-                    children: [x ? v : (0, l.jsx)("div", {
+                    children: [x ? j : (0, l.jsx)("div", {
                         className: I._C,
                         children: (0, l.jsx)("div", {
                             className: I.kW,
-                            children: v
+                            children: j
                         })
                     }), (0, l.jsxs)("div", {
                         className: E,
@@ -181,7 +181,7 @@ function b(e) {
                                 }), (0, l.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: j.intl.format(j.t["LC+S+m"], {
+                                    children: v.intl.format(v.t["LC+S+m"], {
                                         membersOnline: r.approximate_presence_count
                                     })
                                 })]
@@ -192,7 +192,7 @@ function b(e) {
                                 }), (0, l.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: j.intl.format(j.t.zRl6XR, {
+                                    children: v.intl.format(v.t.zRl6XR, {
                                         count: r.approximate_member_count
                                     })
                                 })]
@@ -201,7 +201,7 @@ function b(e) {
                     })]
                 }), (0, l.jsx)(o.Button, {
                     variant: "secondary",
-                    text: s ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
+                    text: s ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
                     onClick: () => {
                         n(), t(g.Ws.JoinOfficialServer), d.h.dispatch({
                             type: "INVITE_MODAL_OPEN",

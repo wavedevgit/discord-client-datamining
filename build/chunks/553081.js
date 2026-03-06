@@ -1,6 +1,6 @@
 /** chunk id: 553081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => Y
+    A: () => F
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(965591),
     y = n(495022),
     P = n(157839),
-    L = n(382694),
-    D = n(60508),
+    D = n(382694),
+    L = n(60508),
     G = n(821158),
     M = n(235365),
     U = n(994763),
@@ -42,7 +42,7 @@ var i = n(627968),
     w = n(985018),
     H = n(865047),
     B = n(288894);
-let Y = e => {
+let F = e => {
     let {
         userId: t
     } = e, n = v.m.useConfig({
@@ -56,8 +56,8 @@ let Y = e => {
     }, [t]), s.useEffect(() => {
         ee(!0)
     }, []), (0, I.j)(), (0, A.P)(m.b);
-    let Y = s.useRef(null),
-        F = s.useRef(null),
+    let F = s.useRef(null),
+        Y = s.useRef(null),
         z = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
         {
             isReady: X,
@@ -96,7 +96,7 @@ let Y = e => {
             className: a()(H.xW, {
                 [H.J4]: n
             }),
-            ref: Y,
+            ref: F,
             children: [(0, i.jsx)(c.hLv, {
                 color: "nitro-pink",
                 className: a()(H.kL, H.Gd, {
@@ -117,7 +117,7 @@ let Y = e => {
                             userDiscountOffer: et,
                             discountedPrice: eo
                         })
-                    }), n && (0, i.jsx)(L.A, {
+                    }), n && (0, i.jsx)(D.A, {
                         glowingPerkId: q
                     }), !n && (0, i.jsx)(P.A, {
                         variant: N.cJ.WHATS_NEW,
@@ -147,14 +147,14 @@ let Y = e => {
                     }), (0, i.jsx)("div", {
                         className: H.hz
                     }), (0, i.jsx)(d.L, {
-                        innerRef: F,
+                        innerRef: Y,
                         onChange: e => {
                             e && !eu && (S.default.track(V.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                                 location_stack: ec
                             }), e_(!0))
                         },
                         children: (0, i.jsx)("div", {
-                            ref: F,
+                            ref: Y,
                             className: H._Z
                         })
                     }), (0, i.jsx)("img", {
@@ -171,7 +171,7 @@ let Y = e => {
                 churnDiscountOffer: et,
                 discountedPrice: eo
             })]
-        }), !n && (0, i.jsx)(D.A, {
+        }), !n && (0, i.jsx)(L.A, {
             isAllPerksVisible: ei,
             setIsAllPerksVisible: es,
             previousComponent: N.A2.HOME,

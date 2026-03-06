@@ -1,6 +1,6 @@
 /** chunk id: 122338 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(183555),
     r = n(735321),
     o = n(394245),
-    c = n(985018),
-    d = n(315657);
+    d = n(985018),
+    c = n(315657);
 let u = l.memo(function(e) {
     let {
         currentTags: t,
@@ -20,21 +20,21 @@ let u = l.memo(function(e) {
     return (0, i.jsx)(a.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "widget-game-tags",
-        "aria-label": c.intl.string(c.t.r6EJOu),
+        "aria-label": d.intl.string(d.t.r6EJOu),
         onClose: s,
         onSelect: () => {},
-        className: d.VS,
+        className: c.VS,
         children: Object.entries(o.Pb).map(e => {
-            let s, [r, d] = e,
-                u = (s = [], d.type === o.me.RADIO && s.push((0, i.jsx)(a.iDA, {
+            let s, [r, c] = e,
+                u = (s = [], c.type === o.me.RADIO && s.push((0, i.jsx)(a.iDA, {
                     id: `${r}-none`,
                     group: r,
-                    label: c.intl.string(c.t.PoWNfe),
-                    checked: !d.tags.some(e => t.includes(e)),
-                    action: () => l(d.tags)
-                }, "none")), d.tags.forEach(e => {
+                    label: d.intl.string(d.t.PoWNfe),
+                    checked: !c.tags.some(e => t.includes(e)),
+                    action: () => l(c.tags)
+                }, "none")), c.tags.forEach(e => {
                     let l = o.PT[e];
-                    null != l && (d.type === o.me.RADIO ? s.push((0, i.jsx)(a.iDA, {
+                    null != l && (c.type === o.me.RADIO ? s.push((0, i.jsx)(a.iDA, {
                         id: e,
                         group: r,
                         label: l.getText(),
@@ -48,19 +48,19 @@ let u = l.memo(function(e) {
                     }, e)))
                 }), s);
             return (0, i.jsx)(a.rXV, {
-                label: d.getLabel(),
+                label: c.getLabel(),
                 children: u
             }, r)
         })
     })
 });
 
-function g(e) {
+function m(e) {
     let {
         tags: t,
         widgetType: n,
-        applicationId: g,
-        ref: m
+        applicationId: m,
+        ref: g
     } = e, x = (0, l.useRef)(null), {
         trackUserProfileEditAction: f
     } = (0, s.NJ)(), p = (0, l.useMemo)(() => null != t ? t : [], [t]), h = (0, l.useCallback)(function(e) {
@@ -73,28 +73,28 @@ function g(e) {
             }), i.add(e), f({
                 action: "TAG_ADDED",
                 widgetEdited: n,
-                gameId: g
+                gameId: m
             }))
         } else i.has(e) ? (i.delete(e), f({
             action: "TAG_REMOVED",
             widgetEdited: n,
-            gameId: g
+            gameId: m
         })) : (i.add(e), f({
             action: "TAG_ADDED",
             widgetEdited: n,
-            gameId: g
+            gameId: m
         }));
-        (0, r.s1)(n, g, Array.from(i))
-    }, [p, f, n, g]), _ = (0, l.useCallback)(e => {
+        (0, r.s1)(n, m, Array.from(i))
+    }, [p, f, n, m]), _ = (0, l.useCallback)(e => {
         let t = new Set(p);
         e.forEach(e => {
             t.delete(e)
         }), f({
             action: "TAG_REMOVED",
             widgetEdited: n,
-            gameId: g
-        }), (0, r.s1)(n, g, Array.from(t))
-    }, [p, f, n, g]);
+            gameId: m
+        }), (0, r.s1)(n, m, Array.from(t))
+    }, [p, f, n, m]);
     return (0, i.jsx)(a.YNO, {
         targetElementRef: x,
         position: "right",
@@ -117,17 +117,17 @@ function g(e) {
             })
         },
         children: e => (0, i.jsx)("div", {
-            ref: e => (null != e && (x.current = e, m.current = e), () => {
-                x.current = null, m.current = null
+            ref: e => (null != e && (x.current = e, g.current = e), () => {
+                x.current = null, g.current = null
             }),
             children: (0, i.jsx)(a.DUT, {
                 ...e,
-                className: d.c9,
-                "aria-label": c.intl.string(c.t.r6EJOu),
+                className: c.c9,
+                "aria-label": d.intl.string(d.t.r6EJOu),
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-xxs/medium",
                     color: "none",
-                    children: c.intl.string(c.t.fZSejy)
+                    children: d.intl.string(d.t.fZSejy)
                 })
             })
         })

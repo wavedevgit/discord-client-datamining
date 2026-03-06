@@ -9,11 +9,11 @@ var i = n(627968),
     s = n.n(a),
     r = n(311907),
     o = n(990078),
-    c = n(397927),
-    d = n(409626),
+    d = n(397927),
+    c = n(409626),
     u = n(692969),
-    g = n(958805),
-    m = n(61881),
+    m = n(958805),
+    g = n(61881),
     x = n(985018),
     f = n(966271);
 
@@ -26,7 +26,7 @@ function p(e) {
         role: "img",
         "aria-label": r,
         className: f.Np,
-        children: (0, i.jsx)(c.Text, {
+        children: (0, i.jsx)(d.Text, {
             variant: "text-xxs/medium",
             lineClamp: 3,
             "aria-hidden": !0,
@@ -50,17 +50,17 @@ function h(e) {
         className: _,
         hideTooltip: A = !1,
         coverRef: I
-    } = e, j = (0, r.bG)([m.A], () => m.A.hasUnsavedChanges()), v = (0, u.A)({
+    } = e, j = (0, r.bG)([g.A], () => g.A.hasUnsavedChanges()), v = (0, u.A)({
         location: "GameCover",
         applicationId: a,
-        source: d.Ob.UserProfile,
+        source: c.Ob.UserProfile,
         sourceUserId: h,
         trackEntryPointImpression: !0
     }), E = n ?? x.intl.string(x.t.GIWFlF), T = x.intl.formatToPlainString(x.t["8QLQB+"], {
         gameName: E
     }), b = l.useCallback(e => {
         if (j) {
-            e.preventDefault(), e.stopPropagation(), g.A.notifyUnsavedWidgets();
+            e.preventDefault(), e.stopPropagation(), m.A.notifyUnsavedWidgets();
             return
         }
         v?.(e)
@@ -69,7 +69,7 @@ function h(e) {
         ariaHidden: !0,
         children: e
     });
-    return N(null == v ? (0, i.jsx)(c.vN3, {
+    return N(null == v ? (0, i.jsx)(d.vN3, {
         children: (0, i.jsx)("div", {
             ref: I,
             className: _,
@@ -79,7 +79,7 @@ function h(e) {
                 gameName: n
             })
         })
-    }) : (0, i.jsx)(c.DUT, {
+    }) : (0, i.jsx)(d.DUT, {
         innerRef: I,
         onClick: b,
         "aria-label": T,
@@ -99,15 +99,15 @@ function _(e) {
         disableInteraction: a = !1,
         hideTooltip: r,
         coverRef: o,
-        ...d
+        ...c
     } = e, u = s()(f.PY, l);
-    return a ? (0, i.jsx)(c.vN3, {
+    return a ? (0, i.jsx)(d.vN3, {
         children: (0, i.jsx)("div", {
             ref: o,
             className: u,
             tabIndex: -1,
             children: (0, i.jsx)(p, {
-                ...d
+                ...c
             })
         })
     }) : (0, i.jsx)(h, {
@@ -116,6 +116,6 @@ function _(e) {
         userId: n,
         hideTooltip: r,
         coverRef: o,
-        ...d
+        ...c
     })
 }

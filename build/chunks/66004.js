@@ -1,6 +1,6 @@
 /** chunk id: 66004 params = (module,exports,require) **/
 i.d(e, {
-    A: () => h
+    A: () => A
 });
 var n = i(627968),
     l = i(64700),
@@ -14,12 +14,12 @@ var n = i(627968),
     m = i(652215),
     p = i(423200);
 
-function h(t) {
+function A(t) {
     let {
         channelId: e,
         guildId: i,
-        userId: h,
-        containerDimensions: A
+        userId: A,
+        containerDimensions: h
     } = t, g = (0, s.bG)([o.A], () => o.A.useReducedMotion), [f, T] = l.useState([]), v = f.length < 50;
     l.useEffect(() => {
         function t(t) {
@@ -30,7 +30,7 @@ function h(t) {
                 animationType: a,
                 animationId: o
             } = t;
-            if (null != h && h !== l) return;
+            if (null != A && A !== l) return;
             let c = null != s && null != a && null != o;
             if (n === e && !g && v && c) {
                 let t = (0, u.Br)(s),
@@ -52,7 +52,7 @@ function h(t) {
         return a.h.subscribe("VOICE_CHANNEL_EFFECT_SEND", t), () => {
             a.h.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", t)
         }
-    }, [e, i, h, g, v]);
+    }, [e, i, A, g, v]);
     let C = l.useCallback(t => {
         T(e => {
             let i = [...e],
@@ -63,12 +63,12 @@ function h(t) {
     return g ? null : (0, n.jsx)("div", {
         className: p.Y,
         style: {
-            width: A.width
+            width: h.width
         },
         children: (0, n.jsx)("div", {
             className: p.z,
             children: f.map(t => (0, n.jsx)(c.A, {
-                containerDimensions: A,
+                containerDimensions: h,
                 effect: t,
                 onComplete: C
             }, t.id))

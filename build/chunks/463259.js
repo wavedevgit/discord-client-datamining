@@ -9,11 +9,11 @@ var i = n(627968),
     s = n.n(a),
     r = n(311907),
     o = n(397927),
-    c = n(384904),
-    d = n(395332),
+    d = n(384904),
+    c = n(395332),
     u = n(566605),
-    g = n(429913),
-    m = n(379848),
+    m = n(429913),
+    g = n(379848),
     x = n(840387),
     f = n(201718),
     p = n(961350),
@@ -30,8 +30,8 @@ var i = n(627968),
     S = n(128988),
     y = n(795755),
     C = n(53977),
-    k = n(982599),
-    R = n(515054),
+    R = n(982599),
+    k = n(515054),
     L = n(266713),
     O = n(985018),
     w = n(519653);
@@ -72,7 +72,7 @@ function G() {
     } = (0, u.A)({
         location: "ApplicationWidgetUpsell"
     });
-    return e ? null : (0, i.jsx)(m.Ay, {
+    return e ? null : (0, i.jsx)(g.Ay, {
         contentTypes: t.map(e => e.dismissibleContent),
         bypassAutoDismiss: !0,
         children: e => {
@@ -97,14 +97,14 @@ function M(e) {
     } = e, s = (0, v.A)(t.id), o = (0, r.bG)([p.default], () => p.default.getId() === t.id), u = (() => {
         let [e, t] = (0, r.yK)([h.A], () => [h.A.ipCountryCode, h.A.ipCountryCodeRequest]), n = (0, x.Z)();
         return l.useEffect(() => {
-            null == e && null == t && n && (0, c.xe)()
+            null == e && null == t && n && (0, d.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), m = (0, d.JY)({
+    })(), g = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
     }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, E), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
-        (0, g.A)(n);
+        (0, m.A)(n);
         let {
             data: i,
             refetch: a
@@ -117,7 +117,7 @@ function M(e) {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: w.cG
-            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
+            }), u && (0, i.jsx)(P, {}), g && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(D, {
             widget: e,
             user: t,
@@ -127,7 +127,7 @@ function M(e) {
         }, e.getUniqueKey()))]
     });
     if (j)
-        if (m) return (0, i.jsx)(C.A, {});
+        if (g) return (0, i.jsx)(C.A, {});
         else return (0, i.jsx)(L.A, {});
     return o ? (0, i.jsx)(N.D, {
         children: S()
@@ -142,8 +142,8 @@ function U(e) {
     (0, j.i)({
         containerRef: a
     });
-    let r = (0, k.k)(t.id);
-    return (0, i.jsxs)(R.K, {
+    let r = (0, R.k)(t.id);
+    return (0, i.jsxs)(k.K, {
         "data-scroller": !0,
         scrollerRef: a,
         className: s()(w.XG, {

@@ -1,6 +1,6 @@
 /** chunk id: 300131 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -8,18 +8,18 @@ var i = n(627968),
     s = n(793574),
     r = n(688810),
     o = n(975571),
-    c = n(993401),
-    d = n(652215),
+    d = n(993401),
+    c = n(652215),
     u = n(985018);
-let g = o.A.getArticleURL(d.MVz.CUSTOM_PROFILES_WISHLIST);
+let m = o.A.getArticleURL(c.MVz.CUSTOM_PROFILES_WISHLIST);
 
-function m(e) {
+function g(e) {
     let {
         isOwner: t,
         isWishlistPublic: n,
         onToggleVisibility: o
-    } = e, d = l.useRef(null), {
-        analyticsLocations: m
+    } = e, c = l.useRef(null), {
+        analyticsLocations: g
     } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), x = l.useMemo(() => t ? (0, i.jsxs)(a.rXV, {
         children: [(0, i.jsx)(a.fPC, {
             id: "wishlist-privacy-setting",
@@ -35,13 +35,13 @@ function m(e) {
                 type: "icon",
                 icon: a.I9m
             },
-            action: () => window.open(g)
+            action: () => window.open(m)
         })]
     }) : null, [t, n, o]);
     return null == x ? null : (0, i.jsx)(r.f5, {
-        value: m,
+        value: g,
         children: (0, i.jsx)(a.YNO, {
-            targetElementRef: d,
+            targetElementRef: c,
             renderPopout: e => {
                 let {
                     closePopout: t
@@ -55,8 +55,8 @@ function m(e) {
                     children: x
                 })
             },
-            children: e => (0, i.jsx)(c.q3, {
-                buttonRef: d,
+            children: e => (0, i.jsx)(d.q3, {
+                buttonRef: c,
                 icon: a.jNK,
                 tooltipText: u.intl.string(u.t["UKOtz+"]),
                 action: "PRESS_OPTIONS",

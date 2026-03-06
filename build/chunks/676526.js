@@ -9,11 +9,11 @@ var l = n(503698),
     s = n(688807),
     r = n(152621),
     o = n(287809),
-    c = n(735321),
-    d = n(451395),
+    d = n(735321),
+    c = n(451395),
     u = n(823016),
-    g = n(788593),
-    m = n(858808),
+    m = n(788593),
+    g = n(858808),
     x = n(685049),
     f = n(617086),
     p = n(985018),
@@ -31,7 +31,7 @@ function A(e) {
     } = e, {
         manageFocusOnReorder: o
     } = (0, u.r)();
-    return (0, i.jsx)(d.mG, {
+    return (0, i.jsx)(c.mG, {
         index: t,
         itemId: l.applicationId,
         listType: n,
@@ -43,7 +43,7 @@ function A(e) {
         "aria-label": p.intl.formatToPlainString(p.t["0dR3gw"], {
             positionNumber: t + 1
         }),
-        onReorder: (e, t) => (0, c.Un)(n, e, t),
+        onReorder: (e, t) => (0, d.Un)(n, e, t),
         onEnd: () => o(l.applicationId),
         className: _.kL,
         dropBeforeClassName: _.A,
@@ -61,7 +61,7 @@ function I(e) {
         game: t,
         userId: n,
         widgetType: l,
-        guildId: c,
+        guildId: d,
         channelId: p,
         disableInteraction: I = !1,
         index: j,
@@ -73,12 +73,12 @@ function I(e) {
         isLoading: N
     } = (0, r.A)(t.applicationId), {
         registerDragHandleRef: S
-    } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), k = C?.id === n, R = !I && k, {
+    } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
         isDragging: L
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
     })), O = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(g.A, {
+        children: [(0, i.jsx)(m.A, {
             imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
@@ -87,16 +87,16 @@ function I(e) {
             className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
             hideTooltip: L,
             coverRef: E
-        }), R && (0, i.jsx)(d.jV, {
+        }), k && (0, i.jsx)(c.jV, {
             buttonRef: S(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
             userId: n,
             applicationId: t.applicationId,
-            guildId: c,
+            guildId: d,
             channelId: p,
             className: _.Ez
-        }), R && (0, i.jsx)(m.A, {
+        }), k && (0, i.jsx)(g.A, {
             game: t,
             widgetType: l,
             className: _.vS,
@@ -106,7 +106,7 @@ function I(e) {
     });
     return N ? (0, i.jsx)("div", {
         className: h.mD
-    }) : R ? (0, i.jsx)(A, {
+    }) : k ? (0, i.jsx)(A, {
         widgetType: l,
         index: j ?? 0,
         game: t,

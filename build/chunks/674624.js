@@ -1,8 +1,8 @@
 /** chunk id: 674624 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
+    Ay: () => L,
     jW: () => P,
-    w1: () => L
+    w1: () => D
 });
 var i, s = n(627968),
     l = n(64700),
@@ -33,7 +33,7 @@ var i, s = n(627968),
     R = n(345362),
     y = n(509442),
     P = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
-let L = [{
+let D = [{
     id: "bestof",
     label: () => I.intl.string(I.t.q1u7nQ)
 }, {
@@ -47,7 +47,7 @@ let L = [{
     label: () => I.intl.string(I.t.DjEAcv)
 }];
 
-function D() {
+function L() {
     let e = (0, d.DP)(),
         t = (0, x.Lh)(),
         n = (0, E.N)(t)?.standard ?? null,
@@ -58,14 +58,14 @@ function D() {
             scrollPosition: f._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
-        L = (0, l.useCallback)(() => {
+        D = (0, l.useCallback)(() => {
             let e = (0, h.Ci)("openClientThemes");
             (0, p.openUserSettings)(e ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
                 section: C.nc_.APPEARANCE,
                 analyticsLocations: i
             })
         }, [i]),
-        D = (0, l.useCallback)(() => {
+        L = (0, l.useCallback)(() => {
             (0, p.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                 section: C.nc_.GUILD_BOOSTING,
                 analyticsLocations: i
@@ -110,7 +110,7 @@ function D() {
             }),
             subscriptionRequired: !0,
             ctaText: I.intl.string(I.t.jVcuVY),
-            onCtaClick: D,
+            onCtaClick: L,
             primaryAsset: (0, s.jsx)(a.CIt, {
                 alt: "",
                 ariaHidden: !0
@@ -143,7 +143,7 @@ function D() {
                 themeCount: 20
             }),
             ctaText: I.intl.string(I.t.jVcuVY),
-            onCtaClick: L,
+            onCtaClick: D,
             primaryAsset: y.A,
             categories: ["bestof", "appearance"]
         }, {
@@ -264,6 +264,6 @@ function D() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, P, L, D, G, M, U, k]);
+        }], [e, n, P, D, L, G, M, U, k]);
     return (0, l.useMemo)(() => H.filter(e => null != e && !w.includes(e.id)), [H, w])
 }

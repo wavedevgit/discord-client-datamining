@@ -8,11 +8,11 @@ var i = n(627968),
     s = n.n(a),
     r = n(380278),
     o = n(311907),
-    c = n(397927),
-    d = n(775602),
+    d = n(397927),
+    c = n(775602),
     u = n(203982),
-    g = n(183555),
-    m = n(289173),
+    m = n(183555),
+    g = n(289173),
     x = n(958805),
     f = n(61881),
     p = n(384377),
@@ -26,7 +26,7 @@ function j(e) {
         className: t
     } = e, {
         trackUserProfileEditSaved: n
-    } = (0, g.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), N = (0, o.bG)([f.A], () => f.A.canSaveChanges()), S = (0, o.bG)([f.A], () => f.A.isSubmitting), y = (0, o.bG)([d.A], () => d.A.useReducedMotion), C = (0, c.pnh)(b, {
+    } = (0, m.NJ)(), [a, j] = l.useState(!1), v = (0, o.yK)([f.A], () => f.A.getSaveablePendingWidgets() ?? []), E = (0, o.yK)([f.A], () => f.A.getChangedWidgets()), T = (0, o.yK)([f.A], () => f.A.getRemovedWidgets()), b = (0, o.bG)([f.A], () => f.A.hasUnsavedChanges()), N = (0, o.bG)([f.A], () => f.A.canSaveChanges()), S = (0, o.bG)([f.A], () => f.A.isSubmitting), y = (0, o.bG)([c.A], () => c.A.useReducedMotion), C = (0, d.pnh)(b, {
         from: {
             opacity: 0,
             y: 80 * !y
@@ -50,9 +50,9 @@ function j(e) {
             u._.unsubscribe(_.jej.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
         }
     }, []), l.useEffect(() => {
-        b && c.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
+        b && d.ORC.announce(A.intl.string(A.t["0Y/qkL"]))
     }, [b]);
-    let k = l.useCallback(async () => {
+    let R = l.useCallback(async () => {
             if (f.A.canSaveChanges()) {
                 try {
                     await x.A.savePendingWidgets(v)
@@ -65,7 +65,7 @@ function j(e) {
                         widgetEdited: e.type,
                         isWidgetRemoved: !1
                     };
-                    (0, m.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
+                    (0, g.fu)(e) && (t.gameIds = e.games.map(e => e.applicationId), t.tags = e.games.flatMap(e => e.tags ?? []).map(e => e.toString()), t.numCharactersCommentary = e.games.reduce((e, t) => e + (t.comment?.length ?? 0), 0)), n(t)
                 }
                 for (let e of T) n({
                     widgetEdited: e.type,
@@ -73,7 +73,7 @@ function j(e) {
                 })
             }
         }, [v, E, T, n]),
-        R = l.useCallback(() => {
+        k = l.useCallback(() => {
             x.A.clearPendingWidgets()
         }, []);
     return C((e, n) => n ? (0, i.jsx)(r.animated.div, {
@@ -84,24 +84,24 @@ function j(e) {
                 [I.hO]: a
             }),
             "aria-label": A.intl.string(A.t["odDw+z"]),
-            children: [(0, i.jsx)(c.Text, {
+            children: [(0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 className: I.iU,
                 children: A.intl.string(A.t["/lQiX/"])
             }), (0, i.jsxs)("div", {
                 className: I.o1,
-                children: [(0, i.jsx)(c.Button, {
+                children: [(0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "secondary",
                     text: A.intl.string(A.t.yBZMsQ),
-                    onClick: R,
+                    onClick: k,
                     disabled: !b || S
-                }), (0, i.jsx)(c.Button, {
+                }), (0, i.jsx)(d.Button, {
                     size: "sm",
                     variant: "primary",
                     text: A.intl.string(A.t["R3BPH+"]),
-                    onClick: k,
+                    onClick: R,
                     loading: S,
                     disabled: !N || !b || S
                 })]

@@ -448,7 +448,7 @@ function eh(e) {
         eP = (0, M.A)(t),
         ej = !1 === ev && eO && null != eP,
         eD = [];
-    e_ && eD.push(o.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), eh && eD.push(o.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), em && eD.push(o.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), !1 === ev && eD.push(o.M.GUILD_POWERUP_PERKS_COACHMARK), ey && !eb && !1 === ev && eD.push(o.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK), eN && eD.push(o.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
+    e_ && eD.push(o.M.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP), eh && eD.push(o.M.GUILD_HEADER_ROLE_SUBSCRIPTION_UPSELL), em && eD.push(o.M.GUILD_DISCOVERY_LANDING_PAGE_SETTINGS_UPSELL), !1 === ev && eD.push(o.M.GUILD_POWERUP_PERKS_COACHMARK), ey && !eb && !1 === ev && eD.push(o.M.GAME_SERVER_HOSTING_NEW_PERK_AVAILABLE_COACHMARK), ey && !1 === ev && eD.push(o.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK), eN && eD.push(o.M.SERVER_SUBSCRIPTION_TIER_TEMPLATE_UPSELL);
     let [eM, ew] = (0, f.kn)(eD, ea.m.GUILD_HEADER_TOOLTIPS), eU = null == eM, [eG, ek] = (0, f.D8)(eU && eR ? o.M.BOOST_TO_UNLOCK_COACHMARK : null, t, {
         cooldownDurationMs: j.bW,
         numTimesToRecur: 5

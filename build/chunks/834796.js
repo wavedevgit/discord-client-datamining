@@ -1,18 +1,18 @@
 /** chunk id: 834796 params = (module,exports,require) **/
 "use strict";
 i.d(e, {
-    A: () => l
+    A: () => a
 });
 var n = i(627968);
 i(64700);
-var s = i(804870),
-    r = i(798048);
+var r = i(804870),
+    s = i(798048);
 
-function l(t) {
+function a(t) {
     let {
-        cardSize: e = r.Y.MEDIUM
+        cardSize: e = s.Y.MEDIUM
     } = t;
-    return (0, n.jsx)(s.Zu, {
+    return (0, n.jsx)(r.Zu, {
         cardSize: e
     })
 }
