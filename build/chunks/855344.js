@@ -5,8 +5,8 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var s = n(311907),
-    i = n(3026),
+var i = n(311907),
+    s = n(3026),
     r = n(397927),
     a = n(964486),
     o = n(58149),
@@ -22,8 +22,8 @@ var s = n(311907),
     x = n(652176),
     v = n(652215),
     N = n(746080),
-    b = n(985018),
-    j = n(679444);
+    j = n(985018),
+    b = n(679444);
 let C = e => {
     let {
         roleIcon: t,
@@ -38,11 +38,11 @@ let C = e => {
             ...(0, o.dI)(g.A.getChannel(A.A.getChannelId(n.id)))
         })
     });
-    let E = (0, s.bG)([p.A], () => null != t.roleId ? p.A.getRole(n.id, t.roleId) : void 0),
+    let E = (0, i.bG)([p.A], () => null != t.roleId ? p.A.getRole(n.id, t.roleId) : void 0),
         R = (0, d.U)(E),
-        I = R ? b.intl.formatToPlainString(b.t.t0928V, {
+        I = R ? j.intl.formatToPlainString(j.t.t0928V, {
             name: C
-        }) : b.intl.formatToPlainString(b.t.UDDkGy, {
+        }) : j.intl.formatToPlainString(j.t.UDDkGy, {
             name: C
         }),
         T = {
@@ -63,23 +63,23 @@ let C = e => {
     return (0, l.jsx)(r.lGe, {
         children: (0, l.jsx)(x.Uq, {
             children: (0, l.jsxs)("div", {
-                className: j.jC,
+                className: b.jC,
                 children: [(0, l.jsxs)("div", {
-                    className: j.rb,
+                    className: b.rb,
                     children: [(0, l.jsx)("div", {
-                        className: j.Xq,
+                        className: b.Xq,
                         children: (0, l.jsx)(m.A, {
                             ...T,
                             enableTooltip: !1,
-                            className: j.__invalid_roleIcon,
+                            className: b.__invalid_roleIcon,
                             enableHeight: !1
                         })
                     }), (0, l.jsxs)("div", {
-                        className: j.bM,
+                        className: b.bM,
                         children: [(0, l.jsx)(r.Heading, {
                             variant: "heading-md/semibold",
-                            className: j.S3,
-                            children: (0, l.jsx)(i.A, {
+                            className: b.S3,
+                            children: (0, l.jsx)(s.A, {
                                 children: C
                             })
                         }), (0, l.jsx)(r.Text, {
@@ -90,7 +90,7 @@ let C = e => {
                 }), (0, l.jsx)(r.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: b.intl.string(b.t["H930+H"]),
+                    text: j.intl.string(j.t["H930+H"]),
                     onClick: y,
                     icon: r._Jp,
                     fullWidth: !0,

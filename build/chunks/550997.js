@@ -2,22 +2,22 @@
 "use strict";
 let l;
 n.r(t), n.d(t, {
-    default: () => j,
+    default: () => b,
     renderChangelogMessageMarkup: () => C
 });
-var s = n(791332),
-    i = n.n(s),
+var i = n(791332),
+    s = n.n(i),
     r = n(873879),
     a = n(683412),
     o = n(704726),
     u = n(46054);
-let c = i().defaultRules.lheading,
-    d = i().defaultRules.heading,
-    m = i().defaultRules.link,
-    h = i().defaultRules.image,
-    g = i().defaultRules.list,
-    p = i().defaultRules.blockQuote,
-    A = i().defaultRules.paragraph,
+let c = s().defaultRules.lheading,
+    d = s().defaultRules.heading,
+    m = s().defaultRules.link,
+    h = s().defaultRules.image,
+    g = s().defaultRules.list,
+    p = s().defaultRules.blockQuote,
+    A = s().defaultRules.paragraph,
     f = /\{(.+?)}/,
     x = /^\$(\w+?)\$/;
 l = n(482644);
@@ -26,12 +26,12 @@ let v = e => {
             transformUpperCase: t = !1
         } = e;
         return (e, n, l) => {
-            let s = f.exec(e[1]),
+            let i = f.exec(e[1]),
                 r = e[1].replace(f, "");
             return t && (r = r.toUpperCase()), {
-                className: null != s ? s[1] : null,
+                className: null != i ? i[1] : null,
                 level: "=" === e[2] ? 1 : 2,
-                content: i().parseInline(n, r, l)
+                content: s().parseInline(n, r, l)
             }
         }
     },
@@ -85,13 +85,13 @@ let v = e => {
         }
     });
 
-function b(e) {
+function j(e) {
     return {
         ...N(e)
     }
 }
-let j = {
-    getDefaultRules: b,
+let b = {
+    getDefaultRules: j,
     getSpecialRules: e => ({
         ...N(e),
         ...{
@@ -108,7 +108,7 @@ let j = {
         ...{
             ...N(e),
             newline: {
-                ...i().defaultRules.newline
+                ...s().defaultRules.newline
             },
             text: o.Ay,
             list: r.A,
@@ -121,7 +121,7 @@ function C(e, t, n) {
     return {
         hasSpoilerEmbeds: !1,
         hasBailedAst: !1,
-        content: u.A.reactParserFor(b(t))(e.content, !1, null != n ? {
+        content: u.A.reactParserFor(j(t))(e.content, !1, null != n ? {
             changeLog: n
         } : {})
     }

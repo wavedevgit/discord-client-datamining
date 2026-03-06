@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => h
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(397927),
     r = n(155718),
     s = n(975807),
@@ -19,15 +19,15 @@ function h(e) {
     let {
         application: t,
         trackAction: n
-    } = e, h = (0, c.s)("GameProfile"), f = l.useCallback(async () => {
+    } = e, h = (0, c.s)("GameProfile"), f = a.useCallback(async () => {
         n(u.Ws.ClaimGame);
         let e = await (0, o.a)(m.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
         (0, s.A)(e)
-    }, [n]), g = l.useCallback(e => (0, a.jsx)(d.A, {
+    }, [n]), g = a.useCallback(e => (0, l.jsx)(d.A, {
         onClick: f,
         children: e
     }), [f]);
-    return !h || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, a.jsx)(i.Text, {
+    return !h || t.linkedGames?.some(e => e.type === r.Mh.OFFICIAL) ? null : (0, l.jsx)(i.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: x.intl.format(x.t.KAjfKl, {

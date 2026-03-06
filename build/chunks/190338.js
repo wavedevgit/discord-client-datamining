@@ -21,17 +21,17 @@ function f(e) {
         canSend: n,
         selectedDestinations: f,
         onSend: x,
-        inputValue: p,
-        setInputValue: C
+        inputValue: C,
+        setInputValue: p
     } = e, A = (0, o.A)(), b = (0, c.QK)(f), v = (0, d.VF)(), {
         textValue: w,
         richValue: T
-    } = p, [j, k] = a.useState(!1), y = a.useCallback(() => k(!0), []), R = a.useCallback(() => k(!1), []), S = a.useCallback((e, n, l) => {
-        C({
+    } = C, [j, k] = a.useState(!1), y = a.useCallback(() => k(!0), []), R = a.useCallback(() => k(!1), []), S = a.useCallback((e, n, l) => {
+        p({
             textValue: n,
             richValue: l
         }), null != t && (s.A.saveDraft(t.channel_id, n, u.C.ForwardContextMessage), v(t.channel_id, t.id))
-    }, [v, t, C]), M = a.useCallback(() => {
+    }, [v, t, p]), M = a.useCallback(() => {
         null != t && (s.A.clearDraft(t.channel_id, u.C.ForwardContextMessage), x(w))
     }, [t, x, w]), N = a.useCallback(() => (!n || w.length > A || M(), Promise.resolve({
         shouldClear: !1,

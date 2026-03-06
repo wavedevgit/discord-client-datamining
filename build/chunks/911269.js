@@ -16,8 +16,8 @@ var l = n(627968),
     g = n(223863),
     f = n(151054),
     x = n(734057),
-    p = n(31717),
-    C = n(320501),
+    C = n(31717),
+    p = n(320501),
     A = n(403362),
     b = n(885918),
     v = n(513480),
@@ -48,8 +48,8 @@ function _(e) {
         initialSelectedDestinations: _ = [],
         forwardOptions: P,
         onClose: D,
-        onRequestSent: E,
-        customTitle: I,
+        onRequestSent: I,
+        customTitle: E,
         customSubtitle: F,
         customPreview: L,
         customSendHandler: O,
@@ -57,7 +57,7 @@ function _(e) {
         additionalActions: U,
         source: G,
         ...B
-    } = e, W = t?.channel_id, H = t?.id, Q = a.useMemo(() => null != W ? (0, g._5)(W) : void 0, [W]), [q, X] = a.useState(!1), Y = (0, r.bG)([C.A], () => "checkpoint" === G ? t : null != t ? C.A.getMessage(t.channel_id, t.id) ?? t : void 0, [t, G]), J = (0, r.bG)([x.A], () => null != W ? x.A.getChannel(W) : void 0, [W]), K = (0, w.Jf)(), Z = (0, w.nL)(), z = a.useRef(0), $ = a.useRef(0), [ee, et] = a.useState(_), en = ee.length, el = en >= 5, ea = (0, v.QK)(ee), es = (0, r.bG)([p.A], () => null != Y ? p.A.getDraft(Y.channel_id, p.C.ForwardContextMessage) : ""), [ei, er] = a.useState(() => (0, c.ur)(es)), eo = (0, v.M6)(ee), eu = (0, h.A)(), [ec, ed] = a.useState(""), {
+    } = e, W = t?.channel_id, H = t?.id, Q = a.useMemo(() => null != W ? (0, g._5)(W) : void 0, [W]), [q, X] = a.useState(!1), Y = (0, r.bG)([p.A], () => "checkpoint" === G ? t : null != t ? p.A.getMessage(t.channel_id, t.id) ?? t : void 0, [t, G]), J = (0, r.bG)([x.A], () => null != W ? x.A.getChannel(W) : void 0, [W]), K = (0, w.Jf)(), Z = (0, w.nL)(), z = a.useRef(0), $ = a.useRef(0), [ee, et] = a.useState(_), en = ee.length, el = en >= 5, ea = (0, v.QK)(ee), es = (0, r.bG)([C.A], () => null != Y ? C.A.getDraft(Y.channel_id, C.C.ForwardContextMessage) : ""), [ei, er] = a.useState(() => (0, c.ur)(es)), eo = (0, v.M6)(ee), eu = (0, h.A)(), [ec, ed] = a.useState(""), {
         results: eh,
         updateSearchText: em
     } = (0, f.R)({
@@ -70,16 +70,16 @@ function _(e) {
         eg(e), $.current += 1, "" !== e && null != W && null != H && Z(W, H)
     }, [W, H, Z, eg]), ex = a.useCallback(() => {
         eg("")
-    }, [eg]), ep = a.useCallback(async () => {
+    }, [eg]), eC = a.useCallback(async () => {
         null != W && null != H && (0, w.hH)({
             channelId: W,
             messageId: H,
             numDestinationChanges: z.current,
             numQueryChanges: $.current
         }), await D()
-    }, [W, H, D]), eC = a.useRef(null);
+    }, [W, H, D]), ep = a.useRef(null);
     a.useEffect(() => {
-        "" === ec && eC.current?.focus()
+        "" === ec && ep.current?.focus()
     }, [ec]);
     let eA = a.useMemo(() => (0, s.throttle)(() => {
             (0, o.showToast)((0, o.createToast)(S.intl.string(S.t.kwmYkt), o.ToastType.FORWARD))
@@ -113,7 +113,7 @@ function _(e) {
                 closeAfterSend: i
             }, X);
             if (null == W || null == H) return void(0, o.showToast)((0, o.createToast)(S.intl.string(S.t.R0RpRX), o.ToastType.FAILURE));
-            let r = C.A.getMessage(W, H) ?? t;
+            let r = p.A.getMessage(W, H) ?? t;
             if (null == r) return void(0, o.showToast)((0, o.createToast)(S.intl.string(S.t.R0RpRX), o.ToastType.FAILURE));
             X(!0);
             let u = (await Promise.all(e.map(g.pk))).filter(A.Vq);
@@ -129,7 +129,7 @@ function _(e) {
                         })
                     })
                 })) return void X(!1);
-            i && (0, k.Be)(), E?.(), s && (await d.A.fetchMessages({
+            i && (0, k.Be)(), I?.(), s && (await d.A.fetchMessages({
                 channelId: u[0]
             }), (0, m.iN)(u[0], {
                 openTextInVoiceIfVoiceChannel: !0
@@ -175,7 +175,7 @@ function _(e) {
                 failedDestinations: f,
                 forwardOptions: P
             })
-        }, [W, P, H, t, E, eA, O]),
+        }, [W, P, H, t, I, eA, O]),
         ew = a.useCallback(e => {
             ev(ee, {
                 withMessage: e,
@@ -184,7 +184,7 @@ function _(e) {
             })
         }, [ev, ee]),
         eT = a.useCallback(() => {
-            null != Y && u.A.clearDraft(Y.channel_id, p.C.ForwardContextMessage), ew(ei.textValue)
+            null != Y && u.A.clearDraft(Y.channel_id, C.C.ForwardContextMessage), ew(ei.textValue)
         }, [Y, ei.textValue, ew]),
         ej = (0, R.s)({
             rowData: eh,
@@ -206,13 +206,13 @@ function _(e) {
         });
     return (0, l.jsx)(i.Modal, {
         ...B,
-        onClose: ep,
-        title: I ?? S.intl.string(S.t["+SkRRj"]),
+        onClose: eC,
+        title: E ?? S.intl.string(S.t["+SkRRj"]),
         subtitle: F ?? (el ? S.intl.formatToPlainString(S.t["3Fbkir"], {
             count: 5
         }) : S.intl.string(S.t["VA+btJ"])),
         input: (0, l.jsx)(o.IWV, {
-            ref: eC,
+            ref: ep,
             query: ec,
             onChange: ef,
             onClear: ex,

@@ -4,9 +4,9 @@ n.d(t, {
     A: () => $
 });
 var l = n(627968),
-    s = n(64700),
-    i = n(284009),
-    r = n.n(i),
+    i = n(64700),
+    s = n(284009),
+    r = n.n(s),
     a = n(735438),
     o = n.n(a),
     u = n(311907),
@@ -21,8 +21,8 @@ var l = n(627968),
     x = n(573648),
     v = n(58149),
     N = n(688810),
-    b = n(709066),
-    j = n(657331),
+    j = n(709066),
+    b = n(657331),
     C = n(427157),
     E = n(696451),
     R = n(954571),
@@ -41,12 +41,12 @@ var l = n(627968),
 function D(e) {
     let t, {
         connectionType: n,
-        connectionMetadataField: s,
-        operator: i,
+        connectionMetadataField: i,
+        operator: s,
         value: r,
         description: a
     } = e;
-    if (null != a) switch (i) {
+    if (null != a) switch (s) {
         case k.so.LESS_THAN:
             t = P.intl.format(P.t["2p7dA3"], {
                 description: a,
@@ -63,8 +63,8 @@ function D(e) {
             t = a
     } else t = (0, I.RP)({
         connectionType: n,
-        connectionMetadataField: s,
-        operator: i,
+        connectionMetadataField: i,
+        operator: s,
         value: r
     });
     return null == t ? null : (0, l.jsxs)("div", {
@@ -84,10 +84,10 @@ function D(e) {
 function L(e) {
     let {
         eligibilityStates: t
-    } = e, n = (0, f.Ay)(), s = (0, g.rdh)(c.A.unsafe_rawColors.GREEN_330).hex(), i = o().groupBy(t, e => `${e.connection_type}${null!=e.application_id?`:${e.application_id}`:""}`);
+    } = e, n = (0, f.Ay)(), i = (0, g.rdh)(c.A.unsafe_rawColors.GREEN_330).hex(), s = o().groupBy(t, e => `${e.connection_type}${null!=e.application_id?`:${e.application_id}`:""}`);
     return (0, l.jsx)(l.Fragment, {
-        children: Object.keys(i).map(e => {
-            let t, a = i[e],
+        children: Object.keys(s).map(e => {
+            let t, a = s[e],
                 o = a.filter(e => null != e.operator),
                 u = a.find(e => null != e.application),
                 c = x.A.get(e),
@@ -95,9 +95,9 @@ function L(e) {
                 h = d?.bot != null ? new C.A(d.bot) : null;
             return I.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(S.A, {
                 className: G.AO,
-                color: s,
+                color: i,
                 size: 16
-            }) : null != h && (t = (0, l.jsx)(b.A, {
+            }) : null != h && (t = (0, l.jsx)(j.A, {
                 className: G.AO,
                 verified: h.isVerifiedBot()
             })), (0, l.jsxs)("div", {
@@ -121,17 +121,17 @@ function L(e) {
                     let {
                         connection_type: t,
                         connection_metadata_field: n,
-                        operator: s,
-                        value: i,
+                        operator: i,
+                        value: s,
                         description: a
                     } = e;
-                    return r()(null != n, "connectionMetadataField is null"), r()(null != s, "operator is null"), r()(null != i, "value is null"), (0, l.jsx)(D, {
+                    return r()(null != n, "connectionMetadataField is null"), r()(null != i, "operator is null"), r()(null != s, "value is null"), (0, l.jsx)(D, {
                         connectionType: t,
                         connectionMetadataField: n,
-                        operator: s,
-                        value: i,
+                        operator: i,
+                        value: s,
                         description: a
-                    }, `${t}:${n}:${s}:${i}`)
+                    }, `${t}:${n}:${i}:${s}`)
                 })]
             }, e)
         })
@@ -141,14 +141,14 @@ function L(e) {
 function U(e) {
     let t, {
         onGetRolesClicked: n,
-        onOpenProfile: i,
+        onOpenProfile: s,
         eligibilityStates: r,
         userId: a,
         roleId: o,
         channelId: c,
         guildId: d
     } = e;
-    s.useEffect(() => {
+    i.useEffect(() => {
         R.default.track(O.HAw.PASSPORT_ROLE_POPOUT_VIEWED, {
             other_user_id: a,
             role_id: o,
@@ -181,7 +181,7 @@ function U(e) {
             }), (0, l.jsx)(h.$n, {
                 className: G.lQ,
                 color: h.$n.Colors.PRIMARY,
-                onClick: i,
+                onClick: s,
                 children: P.intl.string(P.t.hgKDnG)
             })]
         })]
@@ -192,14 +192,14 @@ function $(e) {
     let {
         userId: t,
         messageId: n,
-        guild: i,
+        guild: s,
         channel: a
     } = e, {
         analyticsLocations: o
-    } = (0, N.Ay)(), c = (0, y.A)(i, t, a.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [h, A] = s.useState(null == m), f = s.useRef(null);
+    } = (0, N.Ay)(), c = (0, y.A)(s, t, a.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [h, A] = i.useState(null == m), f = i.useRef(null);
     if (null == c) return null;
     async function x() {
-        r()(null != c, "visibleConnectionsRole is null"), h && null == m && (await p.A.fetchGuildRoleConnectionsEligibility(i.id, c.id), A(!1))
+        r()(null != c, "visibleConnectionsRole is null"), h && null == m && (await p.A.fetchGuildRoleConnectionsEligibility(s.id, c.id), A(!1))
     }
     return (0, l.jsx)(g.QCx, {
         targetElementRef: f,
@@ -207,27 +207,27 @@ function $(e) {
         renderPopout: function() {
             return Promise.resolve(e => {
                 let {
-                    closePopout: s
+                    closePopout: i
                 } = e;
                 return null == m ? (0, l.jsx)(l.Fragment, {}) : (r()(null != c, "visibleConnectionsRole is null"), (0, l.jsx)(U, {
                     eligibilityStates: m,
                     userId: t,
                     roleId: c.id,
                     channelId: a.id,
-                    guildId: i.id,
+                    guildId: s.id,
                     onGetRolesClicked: () => {
-                        (0, M.c0)(i.id)
+                        (0, M.c0)(s.id)
                     },
                     onOpenProfile: () => {
-                        (0, j.openUserProfileModal)({
+                        (0, b.openUserProfileModal)({
                             userId: t,
                             messageId: n,
-                            guildId: i.id,
+                            guildId: s.id,
                             channelId: a.id,
                             roleId: c.id,
                             scrollTarget: w.bk.CONNECTIONS,
                             sourceAnalyticsLocations: o
-                        }), s()
+                        }), i()
                     }
                 }))
             })

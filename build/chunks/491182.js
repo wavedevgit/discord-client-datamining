@@ -4,9 +4,9 @@ n.d(t, {
     A: () => p
 });
 var l = n(627968),
-    s = n(64700),
-    i = n(503698),
-    r = n.n(i),
+    i = n(64700),
+    s = n(503698),
+    r = n.n(s),
     a = n(311907),
     o = n(473193),
     u = n(397927),
@@ -19,15 +19,15 @@ let p = function(e) {
     let {
         className: t,
         compact: n = !1,
-        contentOnly: i = !1,
+        contentOnly: s = !1,
         zalgo: p = !0,
         preview: A = !1,
         disableInteraction: f = !1,
         childrenRepliedMessage: x,
         childrenExecutedCommand: v,
         childrenHeader: N,
-        childrenSystemMessage: b,
-        childrenButtons: j,
+        childrenSystemMessage: j,
+        childrenButtons: b,
         childrenMessageContent: C,
         childrenAccessories: E,
         messageRef: R,
@@ -44,9 +44,9 @@ let p = function(e) {
         onMouseEnter: M,
         onMouseLeave: k,
         ...O
-    } = e, w = (0, a.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), P = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [G, D] = s.useState(!1), L = s.useCallback(e => {
+    } = e, w = (0, a.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), P = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [G, D] = i.useState(!1), L = i.useCallback(e => {
         D(!0), M?.(e)
-    }, [M]), U = s.useCallback(e => {
+    }, [M]), U = i.useCallback(e => {
         D(!1), k?.(e)
     }, [k]), $ = (0, c.W)({
         location: "BaseMessage"
@@ -62,7 +62,7 @@ let p = function(e) {
                     [g.D7]: P,
                     [g.e8]: $ && S?.displayNameStyles != null && S?.guildId == null,
                     [g.iE]: !0,
-                    [g.kl]: i,
+                    [g.kl]: s,
                     [g.oE]: n,
                     [g.VH]: A,
                     [g.E]: !n,
@@ -78,10 +78,10 @@ let p = function(e) {
                 onMouseLeave: U,
                 children: [x, v, (0, l.jsxs)("div", {
                     className: g.PG,
-                    children: [b, N, null == b && C]
-                }), E, null != j ? (0, l.jsx)("div", {
+                    children: [j, N, null == j && C]
+                }), E, null != b ? (0, l.jsx)("div", {
                     className: g.UD,
-                    children: j
+                    children: b
                 }) : null]
             })
         })

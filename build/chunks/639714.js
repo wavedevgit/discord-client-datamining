@@ -4,8 +4,8 @@ n.d(t, {
     A: () => E,
     o: () => b
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(505779),
@@ -20,8 +20,8 @@ var a = n(627968),
     g = n(409626),
     p = n(305080),
     _ = n(652215),
-    v = n(985018),
-    j = n(728528),
+    j = n(985018),
+    v = n(728528),
     A = n(272746),
     I = n(639142);
 
@@ -31,13 +31,13 @@ function E(e) {
         trackClick: n,
         onInviteResolved: i,
         closeModal: f
-    } = e, [p, I] = l.useState(), E = (0, c.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), b = l.useMemo(() => t.websites?.find(e => {
+    } = e, [p, I] = a.useState(), E = (0, c.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), b = a.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
         return t === s.V.DISCORD
     }), [t.websites]);
-    if (l.useEffect(() => {
+    if (a.useEffect(() => {
             let e = async e => {
                 let t = e.split("/").pop();
                 if (null != t) {
@@ -53,43 +53,43 @@ function E(e) {
         icon: p.guild.icon,
         size: 32
     });
-    return (0, a.jsxs)("div", {
-        className: j.fi,
-        children: [(0, a.jsx)(o.Heading, {
-            className: j.bV,
+    return (0, l.jsxs)("div", {
+        className: v.fi,
+        children: [(0, l.jsx)(o.Heading, {
+            className: v.bV,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: v.intl.string(v.t.kBDZSL)
-        }), (0, a.jsxs)("div", {
-            className: r()(j.nM, j.mX),
-            children: [(0, a.jsx)("img", {
+            children: j.intl.string(j.t.kBDZSL)
+        }), (0, l.jsxs)("div", {
+            className: r()(v.nM, v.mX),
+            children: [(0, l.jsx)("img", {
                 className: A.$f,
                 src: N,
-                alt: v.intl.formatToPlainString(v.t.xm6W9D, {
+                alt: j.intl.formatToPlainString(j.t.xm6W9D, {
                     guildName: p.guild.name
                 })
-            }), (0, a.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
                 className: A.U5,
-                children: [(0, a.jsxs)("div", {
+                children: [(0, l.jsxs)("div", {
                     className: A.YS,
-                    children: [(0, a.jsx)(o.Text, {
+                    children: [(0, l.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: p.guild.name
-                    }), (0, a.jsx)(u.A, {
+                    }), (0, l.jsx)(u.A, {
                         guild: p.guild,
                         size: 16
                     })]
-                }), null != p.approximate_member_count && (0, a.jsx)(o.Text, {
+                }), null != p.approximate_member_count && (0, l.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
-                    children: v.intl.format(v.t.zRl6XR, {
+                    children: j.intl.format(j.t.zRl6XR, {
                         count: p.approximate_member_count
                     })
                 })]
             })]
-        }), (0, a.jsx)(o.Button, {
+        }), (0, l.jsx)(o.Button, {
             variant: "secondary",
-            text: E ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
+            text: E ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
             onClick: () => {
                 f(), n(g.Ws.JoinOfficialServer), d.h.dispatch({
                     type: "INVITE_MODAL_OPEN",
@@ -108,7 +108,7 @@ function b(e) {
         trackClick: t,
         closeModal: n
     } = e, {
-        canStartAuthorization: l,
+        canStartAuthorization: a,
         hasAlreadyLinked: i,
         officialInvite: r,
         isMember: s
@@ -123,85 +123,85 @@ function b(e) {
             id: r.guild.id,
             splash: r.guild.splash
         }),
-        x = l && !i || null == m,
-        j = (0, a.jsx)("img", {
+        x = a && !i || null == m,
+        v = (0, l.jsx)("img", {
             className: I.$f,
             src: c,
-            alt: v.intl.formatToPlainString(v.t.xm6W9D, {
+            alt: j.intl.formatToPlainString(j.t.xm6W9D, {
                 guildName: r.guild.name
             })
         }),
         A = x ? I.To : I.Kt,
         E = x ? I.yj : I.FS;
-    return (0, a.jsxs)("div", {
+    return (0, l.jsxs)("div", {
         className: I.uW,
-        children: [(0, a.jsx)(o.Heading, {
+        children: [(0, l.jsx)(o.Heading, {
             className: I.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
-            children: v.intl.string(v.t["U2N+ci"])
-        }), (0, a.jsxs)("div", {
+            children: j.intl.string(j.t["U2N+ci"])
+        }), (0, l.jsxs)("div", {
             className: I.kL,
-            children: [!x && null != m && (0, a.jsx)("img", {
+            children: [!x && null != m && (0, l.jsx)("img", {
                 className: I.ll,
                 src: m,
                 alt: ""
-            }), (0, a.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
                 className: I.hQ,
-                children: [(0, a.jsxs)("div", {
+                children: [(0, l.jsxs)("div", {
                     className: A,
-                    children: [x ? j : (0, a.jsx)("div", {
+                    children: [x ? v : (0, l.jsx)("div", {
                         className: I._C,
-                        children: (0, a.jsx)("div", {
+                        children: (0, l.jsx)("div", {
                             className: I.kW,
-                            children: j
+                            children: v
                         })
-                    }), (0, a.jsxs)("div", {
+                    }), (0, l.jsxs)("div", {
                         className: E,
-                        children: [(0, a.jsxs)("div", {
+                        children: [(0, l.jsxs)("div", {
                             className: I.YS,
-                            children: [(0, a.jsx)(u.A, {
+                            children: [(0, l.jsx)(u.A, {
                                 guild: r.guild,
                                 size: 16
-                            }), (0, a.jsx)(o.Heading, {
+                            }), (0, l.jsx)(o.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-default",
                                 children: r.guild.name
                             })]
-                        }), !(0, f.uJ)(r.guild?.description) && (0, a.jsx)(o.Text, {
+                        }), !(0, f.uJ)(r.guild?.description) && (0, l.jsx)(o.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: r.guild?.description
-                        }), null != r.approximate_member_count || null != r.approximate_presence_count ? (0, a.jsxs)("div", {
+                        }), null != r.approximate_member_count || null != r.approximate_presence_count ? (0, l.jsxs)("div", {
                             className: I.iR,
-                            children: [null != r.approximate_presence_count && (0, a.jsxs)("div", {
+                            children: [null != r.approximate_presence_count && (0, l.jsxs)("div", {
                                 className: I.Tb,
-                                children: [(0, a.jsx)("i", {
+                                children: [(0, l.jsx)("i", {
                                     className: I._o
-                                }), (0, a.jsx)(o.Text, {
+                                }), (0, l.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: v.intl.format(v.t["LC+S+m"], {
+                                    children: j.intl.format(j.t["LC+S+m"], {
                                         membersOnline: r.approximate_presence_count
                                     })
                                 })]
-                            }), null != r.approximate_member_count && (0, a.jsxs)("div", {
+                            }), null != r.approximate_member_count && (0, l.jsxs)("div", {
                                 className: I.Tb,
-                                children: [(0, a.jsx)("i", {
+                                children: [(0, l.jsx)("i", {
                                     className: I.jk
-                                }), (0, a.jsx)(o.Text, {
+                                }), (0, l.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
-                                    children: v.intl.format(v.t.zRl6XR, {
+                                    children: j.intl.format(j.t.zRl6XR, {
                                         count: r.approximate_member_count
                                     })
                                 })]
                             })]
                         }) : null]
                     })]
-                }), (0, a.jsx)(o.Button, {
+                }), (0, l.jsx)(o.Button, {
                     variant: "secondary",
-                    text: s ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
+                    text: s ? j.intl.string(j.t.cEnaWx) : j.intl.string(j.t.XpeFYr),
                     onClick: () => {
                         n(), t(g.Ws.JoinOfficialServer), d.h.dispatch({
                             type: "INVITE_MODAL_OPEN",

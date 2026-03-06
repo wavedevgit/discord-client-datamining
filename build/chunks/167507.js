@@ -78,10 +78,10 @@ function g(e) {
         channelId: h,
         attachmentId: m,
         name: j
-    } = e, g = `https://${n}/${i?"ephemeral-attachments":"attachments"}/${h}/${m}/${j}`, p = r.useCallback(async () => {
+    } = e, g = `https://${n}/${i?"ephemeral-attachments":"attachments"}/${h}/${m}/${j}`, f = r.useCallback(async () => {
         let e = await (0, o.AN)(g);
         d.A.trackLinkClicked(e), (0, c.A)(e)
-    }, [g]), f = r.useCallback(e => {
+    }, [g]), p = r.useCallback(e => {
         (0, s.L3)(e, async () => {
             let {
                 default: e
@@ -96,8 +96,8 @@ function g(e) {
     return (0, l.jsxs)(u.A, {
         role: "link",
         href: g,
-        onClick: p,
-        onContextMenu: f,
+        onClick: f,
+        onContextMenu: p,
         className: "attachmentLink",
         children: [(0, l.jsx)(a.PtA, {
             size: "xs",

@@ -1,26 +1,26 @@
 /** chunk id: 300182 params = (module,exports,require) **/
-n.d(t, {
-    A: () => i
+n.d(e, {
+    A: () => l
 });
-var a = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(990078),
-    l = n(397927),
-    s = n(985018);
-let i = e => {
+var a = n(990078),
+    s = n(397927),
+    i = n(985018);
+let l = t => {
     let {
-        onGift: t,
+        onGift: e,
         tooltipDelay: n = 250
-    } = e;
-    return (0, a.jsx)(r.m, {
-        text: s.intl.string(s.t["JCFN/y"]),
+    } = t;
+    return (0, r.jsx)(a.m, {
+        text: i.intl.string(i.t["JCFN/y"]),
         delay: n,
-        children: (0, a.jsx)(l.K0, {
-            "aria-label": s.intl.string(s.t["JCFN/y"]),
+        children: (0, r.jsx)(s.K0, {
+            "aria-label": i.intl.string(i.t["JCFN/y"]),
             variant: "primary",
-            icon: l.okO,
+            icon: s.okO,
             size: "md",
-            onClick: t
+            onClick: e
         })
     })
 }

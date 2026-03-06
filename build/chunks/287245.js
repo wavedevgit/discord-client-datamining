@@ -39,7 +39,6 @@ let T = e => {
             isInteracting: !1,
             allowDevLinks: !1,
             allowLinks: !1,
-            allowGameMentions: !1,
             previewLinkTarget: !1
         }), c = n.author, d = I.Ay.getName(c), u = (0, A.A)({
             userId: c.id,

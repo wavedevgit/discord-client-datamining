@@ -3,8 +3,8 @@
 n.d(t, {
     A: () => u
 }), n(321073);
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(505779),
     r = n(60465),
     s = n(778591),
@@ -18,20 +18,20 @@ let d = new Set(["1402418703554842694", "356877880938070016"]),
             let t = (0, s.I)(e.applicationId),
                 {
                     applicationId: n,
-                    websites: a
+                    websites: l
                 } = e;
-            return l.useMemo(() => {
-                let e = a.reduce((e, t) => (e[t.category] = t, e), {}),
-                    l = [];
-                return null != e[i.V.EPICGAMES] && d.has(n) && l.push(e[i.V.EPICGAMES]), null != t && l.push({
+            return a.useMemo(() => {
+                let e = l.reduce((e, t) => (e[t.category] = t, e), {}),
+                    a = [];
+                return null != e[i.V.EPICGAMES] && d.has(n) && a.push(e[i.V.EPICGAMES]), null != t && a.push({
                     category: i.V.STEAM,
                     url: t
-                }), null != e[i.V.ROBLOX] && l.push(e[i.V.ROBLOX]), null != e[i.V.BATTLENET] && l.push(e[i.V.BATTLENET]), null != e[i.V.RIOT] && l.push(e[i.V.RIOT]), null != e[i.V.MINECRAFT] && l.push(e[i.V.MINECRAFT]), l
-            }, [t, a, n])
+                }), null != e[i.V.ROBLOX] && a.push(e[i.V.ROBLOX]), null != e[i.V.BATTLENET] && a.push(e[i.V.BATTLENET]), null != e[i.V.RIOT] && a.push(e[i.V.RIOT]), null != e[i.V.MINECRAFT] && a.push(e[i.V.MINECRAFT]), a
+            }, [t, l, n])
         }(t);
-        return 0 === n.length ? null : 1 === n.length ? (0, a.jsx)(c.uC, {
+        return 0 === n.length ? null : 1 === n.length ? (0, l.jsx)(c.uC, {
             website: n[0]
-        }) : (0, a.jsx)(c.rZ, {
+        }) : (0, l.jsx)(c.rZ, {
             text: o.intl.string(o.t["/hMurx"]),
             "aria-label": o.intl.string(o.t.nK60cc),
             onClick: () => r.A.openGameProfileStoreLinksModal({

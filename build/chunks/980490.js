@@ -1,6 +1,6 @@
 /** chunk id: 980490 params = (module,exports,require) **/
 n.d(t, {
-    q: () => T
+    q: () => w
 });
 var l = n(627968),
     a = n(64700),
@@ -12,130 +12,126 @@ var l = n(627968),
     c = n(222713),
     d = n(57882),
     h = n(573435),
-    m = n(352505),
-    g = n(619517),
-    f = n(448381),
-    x = n(465364),
-    p = n(291812),
+    m = n(619517),
+    g = n(448381),
+    f = n(465364),
+    x = n(291812),
     C = n(253932),
-    A = n(53228),
-    b = n(985018),
-    v = n(931059),
-    w = n(9378);
+    p = n(53228),
+    A = n(985018),
+    b = n(931059),
+    v = n(9378);
 
-function T(e) {
+function w(e) {
     let {
         message: t,
         forwardOptions: n,
         channel: s
-    } = e, T = C.hH.useSetting(), {
-        attachments: j,
-        embeds: k,
-        hasContent: y,
-        contentMessage: R
-    } = (0, A.A)({
+    } = e, w = C.hH.useSetting(), {
+        attachments: T,
+        embeds: j,
+        hasContent: k,
+        contentMessage: y
+    } = (0, p.A)({
         message: t,
         channel: s,
         forwardOptions: n
-    }), S = R.components.length > 0 && R.components[0].type === u.I5.CHECKPOINT_CARD ? R.components[0].checkpointData : null, M = c.f[S?.cardId ?? 0], N = (0, o.rdh)(M.primaryColor).hex(), _ = m.m.useExperiment({
-        location: "forward_preview"
-    }).enabled, P = a.useMemo(() => y ? (0, x.Ay)(t, {
+    }), R = y.components.length > 0 && y.components[0].type === u.I5.CHECKPOINT_CARD ? y.components[0].checkpointData : null, S = c.f[R?.cardId ?? 0], M = (0, o.rdh)(S.primaryColor).hex(), N = a.useMemo(() => k ? (0, f.Ay)(t, {
         formatInline: !0,
         allowLinks: !0,
         allowHeading: !0,
         allowList: !0,
-        allowGameMentions: _,
         hideSimpleEmbedContent: !1,
-        contentMessage: R
-    }).content : null, [R, y, t, _]), D = j.length, E = null, I = null, F = null;
-    if (D > 0 || k.length > 0) {
-        let e = (0, r.countBy)(j, e => (0, f.NI)(e, !0)),
+        contentMessage: y
+    }).content : null, [y, k, t]), _ = T.length, P = null, D = null, I = null;
+    if (_ > 0 || j.length > 0) {
+        let e = (0, r.countBy)(T, e => (0, g.NI)(e, !0)),
             t = e.IMAGE ?? 0,
             n = e.VIDEO ?? 0;
-        t > 0 && n > 0 ? (E = b.intl.formatToPlainString(b.t.Lr0Top, {
+        t > 0 && n > 0 ? (P = A.intl.formatToPlainString(A.t.Lr0Top, {
             image_count: t,
             video_count: n
-        }), I = o.sYc) : n > 0 ? (E = b.intl.formatToPlainString(b.t.SJ6pPX, {
+        }), D = o.sYc) : n > 0 ? (P = A.intl.formatToPlainString(A.t.SJ6pPX, {
             count: n
-        }), I = o.SfG) : t > 0 ? (E = b.intl.formatToPlainString(b.t.h4pFfU, {
+        }), D = o.SfG) : t > 0 ? (P = A.intl.formatToPlainString(A.t.h4pFfU, {
             count: t
-        }), I = 1 === t ? o.xfq : o.sYc) : (E = b.intl.formatToPlainString(b.t["89ihS8"], {
-            count: D
-        }), I = o.PtA), n > 0 && D === n ? F = (0, l.jsxs)("div", {
-            className: i()(w.cR, w.JZ),
-            children: [(0, l.jsx)(g.Ay, {
-                className: w.xn,
-                src: j[0].proxy_url,
+        }), D = 1 === t ? o.xfq : o.sYc) : (P = A.intl.formatToPlainString(A.t["89ihS8"], {
+            count: _
+        }), D = o.PtA), n > 0 && _ === n ? I = (0, l.jsxs)("div", {
+            className: i()(v.cR, v.JZ),
+            children: [(0, l.jsx)(m.Ay, {
+                className: v.xn,
+                src: T[0].proxy_url,
                 width: 56,
                 height: 56
             }), (0, l.jsx)(o.SfG, {
-                className: w.uZ,
+                className: v.uZ,
                 size: "md",
                 color: "white"
             })]
-        }) : D > 0 ? F = (0, l.jsx)("div", {
-            className: w.cR,
-            children: (0, l.jsx)(g.Ay, {
-                src: j[0].proxy_url,
+        }) : _ > 0 ? I = (0, l.jsx)("div", {
+            className: v.cR,
+            children: (0, l.jsx)(m.Ay, {
+                src: T[0].proxy_url,
                 width: 56,
                 height: 56
             })
-        }) : k[0]?.thumbnail?.proxyURL != null && (F = (0, l.jsx)("div", {
-            className: w.cR,
-            children: (0, l.jsx)(g.Ay, {
-                src: k[0].thumbnail.proxyURL,
+        }) : j[0]?.thumbnail?.proxyURL != null && (I = (0, l.jsx)("div", {
+            className: v.cR,
+            children: (0, l.jsx)(m.Ay, {
+                src: j[0].thumbnail.proxyURL,
                 width: 56,
                 height: 56
             })
         }))
     }
-    return D > 1 && null != F && (F = (0, l.jsxs)("div", {
-        className: w.EW,
+    return _ > 1 && null != I && (I = (0, l.jsxs)("div", {
+        className: v.EW,
         children: [(0, l.jsx)(h.Ay, {
             mask: h.Ay.Masks.FORWARD_ATTACHMENT_PILE_OVERFLOW,
             width: 56,
             height: 56,
-            children: F
+            children: I
         }), (0, l.jsxs)(o.Text, {
-            className: w.mB,
+            className: v.mB,
             variant: "text-xs/semibold",
             color: "text-default",
-            children: ["+", D - 1]
+            children: ["+", _ - 1]
         })]
     })), (0, l.jsxs)("div", {
-        className: w.sq,
+        className: v.sq,
         children: [(0, l.jsxs)("div", {
-            className: w.FG,
-            children: [null != S && (0, l.jsx)(o.Text, {
+            className: v.FG,
+            children: [null != R && (0, l.jsx)(o.Text, {
                 variant: "text-md/medium",
-                children: b.intl.string(v.default.goiR2u)
-            }), y && (0, l.jsx)(p.Ay, {
-                className: i()(w.vp, D > 0 && w.NL),
+                children: A.intl.string(b.default.goiR2u)
+            }), k && (0, l.jsx)(x.Ay, {
+                className: i()(v.vp, _ > 0 && v.NL),
                 message: t,
-                content: P,
-                compact: T
-            }), D > 0 && (0, l.jsxs)("div", {
-                className: w.kp,
-                children: [null != I && (0, l.jsx)(I, {
+                content: N,
+                compact: w
+            }), _ > 0 && (0, l.jsxs)("div", {
+                className: v.kp,
+                children: [null != D && (0, l.jsx)(D, {
                     size: "custom",
-                    width: y ? 18 : 20,
+                    width: k ? 18 : 20,
                     color: o.LU0.colors.TEXT_MUTED
-                }), null != E && (0, l.jsx)(o.Text, {
-                    variant: y ? "text-sm/medium" : "text-md/medium",
+                }), null != P && (0, l.jsx)(o.Text, {
+                    variant: k ? "text-sm/medium" : "text-md/medium",
                     color: "text-muted",
-                    children: E
+                    children: P
                 })]
             })]
-        }), F, null != S && (0, l.jsx)("div", {
-            className: w.cR,
+        }), I, null != R && (0, l.jsx)("div", {
+            className: v.cR,
             children: (0, l.jsx)("img", {
                 alt: "",
                 style: {
-                    backgroundColor: N
+                    backgroundColor: M
                 },
                 width: 56,
                 height: 56,
-                src: (0, d.OW)(S.cardId ?? 0)
+                src: (0, d.OW)(R.cardId ?? 0)
             })
         })]
     })

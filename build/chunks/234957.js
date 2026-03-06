@@ -1,52 +1,48 @@
 /** chunk id: 234957 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
     a = n(311907),
-    r = n(352505),
-    s = n(9842),
-    o = n(994500),
-    c = n(465364),
-    d = n(763754),
-    u = n(448368),
-    m = n(652215);
-let _ = l.memo(function(e) {
+    r = n(9842),
+    s = n(994500),
+    o = n(465364),
+    c = n(763754),
+    d = n(448368),
+    u = n(652215);
+let m = l.memo(function(e) {
     let {
         baseMessage: t,
         channel: n,
-        referencedMessage: m,
-        compact: _ = !1
-    } = e, A = m.state === s.a.LOADED ? m.message : void 0, f = r.m.useExperiment({
-        location: "repliedMessage"
-    }).enabled, h = l.useMemo(() => A?.content != null && "" !== A.content ? (0, c.Ay)(A, {
-        formatInline: !0,
-        allowGameMentions: f
-    }).content : null, [A, f]), {
-        isReplyAuthorBlocked: g,
-        isReplyAuthorIgnored: E
-    } = (0, a.cf)([o.A], () => ({
-        isReplyAuthorBlocked: null != A && o.A.isBlockedForMessage(A),
-        isReplyAuthorIgnored: null != A && o.A.isIgnoredForMessage(A)
-    }), [A]), p = (0, d.X4)(A), x = (0, d.X4)(t);
-    return (0, i.jsx)(u.A, {
-        repliedAuthor: p,
-        baseAuthor: x,
+        referencedMessage: u,
+        compact: m = !1
+    } = e, _ = u.state === r.a.LOADED ? u.message : void 0, A = l.useMemo(() => _?.content != null && "" !== _.content ? (0, o.Ay)(_, {
+        formatInline: !0
+    }).content : null, [_]), {
+        isReplyAuthorBlocked: f,
+        isReplyAuthorIgnored: h
+    } = (0, a.cf)([s.A], () => ({
+        isReplyAuthorBlocked: null != _ && s.A.isBlockedForMessage(_),
+        isReplyAuthorIgnored: null != _ && s.A.isIgnoredForMessage(_)
+    }), [_]), g = (0, c.X4)(_), E = (0, c.X4)(t);
+    return (0, i.jsx)(d.A, {
+        repliedAuthor: g,
+        baseAuthor: E,
         baseMessage: t,
         channel: n,
-        referencedMessage: m,
-        content: h,
-        compact: _,
-        isReplyAuthorBlocked: g,
-        isReplyAuthorIgnored: E,
+        referencedMessage: u,
+        content: A,
+        compact: m,
+        isReplyAuthorBlocked: f,
+        isReplyAuthorIgnored: h,
         isReplySpineClickable: !1,
         showReplySpine: !0
     })
 });
 
-function A(e, t, n, l, a) {
-    return e.type !== m.lAJ.REPLY || null == n ? null : (0, i.jsx)(_, {
+function _(e, t, n, l, a) {
+    return e.type !== u.lAJ.REPLY || null == n ? null : (0, i.jsx)(m, {
         baseMessage: e,
         channel: t,
         referencedMessage: l,

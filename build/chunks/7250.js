@@ -1,14 +1,14 @@
 /** chunk id: 7250 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    j: () => s
+    j: () => i
 });
 var l = n(317097);
 
-function s(e) {
+function i(e) {
     let {
         backgroundColor: t,
         colors: n
-    } = e, [s, i] = n, r = "string" == typeof t ? (0, l.LX)(t) : t, a = "string" == typeof s ? (0, l.LX)(s) : s, o = "string" == typeof i ? (0, l.LX)(i) : i;
-    return (0, l.bJ)(r, a) > (0, l.bJ)(r, o) ? s : i
+    } = e, [i, s] = n, r = "string" == typeof t ? (0, l.LX)(t) : t, a = "string" == typeof i ? (0, l.LX)(i) : i, o = "string" == typeof s ? (0, l.LX)(s) : s;
+    return (0, l.bJ)(r, a) > (0, l.bJ)(r, o) ? i : s
 }

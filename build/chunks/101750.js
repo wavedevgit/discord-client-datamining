@@ -1,7 +1,7 @@
 /** chunk id: 101750 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => s
+    E: () => i
 });
 let l = (0, n(600975).C)({
     kind: "user",
@@ -28,7 +28,7 @@ let l = (0, n(600975).C)({
     }]
 });
 
-function s(e, t) {
+function i(e, t) {
     let n = l.getCurrentConfig({
         location: t
     }, {

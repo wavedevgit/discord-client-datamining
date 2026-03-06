@@ -1,56 +1,56 @@
 /** chunk id: 914887 params = (module,exports,require) **/
-n.d(t, {
-    a: () => s
+n.d(e, {
+    a: () => i
 });
-var a = n(64700),
-    r = n(954571),
-    l = n(652215);
+var r = n(64700),
+    a = n(954571),
+    s = n(652215);
 
-function s(e, t, n, s) {
-    let i = a.useRef(null),
-        o = a.useRef(t),
-        u = a.useRef({
+function i(t, e, n, i) {
+    let l = r.useRef(null),
+        u = r.useRef(e),
+        c = r.useRef({
             positionInSection: n,
-            analyticsLocations: s
+            analyticsLocations: i
         });
-    a.useEffect(() => {
-        o.current = t
-    }, [t]);
-    let c = a.useCallback(() => {
+    r.useEffect(() => {
+        u.current = e
+    }, [e]);
+    let o = r.useCallback(() => {
             let {
-                sessionId: t,
+                sessionId: e,
                 guildId: n,
-                pageIndex: a,
-                pageTitle: s,
-                pageSection: i,
-                pageSectionTitle: c,
+                pageIndex: r,
+                pageTitle: i,
+                pageSection: l,
+                pageSectionTitle: o,
                 isUserGuildMember: d,
-                pageHasLeaderboard: _
-            } = o.current, {
-                positionInSection: m,
-                analyticsLocations: f
-            } = u.current;
-            r.default.track(l.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
-                slayer_storefront_session_id: t,
-                sku_id: e,
+                pageHasLeaderboard: A
+            } = u.current, {
+                positionInSection: _,
+                analyticsLocations: g
+            } = c.current;
+            a.default.track(s.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+                slayer_storefront_session_id: e,
+                sku_id: t,
                 guild_id: n,
-                page_index: a,
-                page_title: s,
-                page_section: i,
-                page_section_title: c,
-                position_in_section: m,
+                page_index: r,
+                page_title: i,
+                page_section: l,
+                page_section_title: o,
+                position_in_section: _,
                 is_user_guild_member: d,
-                page_has_leaderboard: _,
-                location_stack: f
+                page_has_leaderboard: A,
+                location_stack: g
             })
-        }, [e]),
-        d = a.useCallback(e => {
-            e ? null === i.current && (i.current = window.setTimeout(() => {
-                c(), i.current = null
-            }, 1e3)) : null !== i.current && (clearTimeout(i.current), i.current = null)
-        }, [c]);
-    return a.useEffect(() => () => {
-        null !== i.current && (clearTimeout(i.current), i.current = null)
+        }, [t]),
+        d = r.useCallback(t => {
+            t ? null === l.current && (l.current = window.setTimeout(() => {
+                o(), l.current = null
+            }, 1e3)) : null !== l.current && (clearTimeout(l.current), l.current = null)
+        }, [o]);
+    return r.useEffect(() => () => {
+        null !== l.current && (clearTimeout(l.current), l.current = null)
     }, []), {
         handleCardVisibilityChange: d
     }

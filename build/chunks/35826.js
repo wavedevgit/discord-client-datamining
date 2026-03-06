@@ -1,16 +1,16 @@
 /** chunk id: 35826 params = (module,exports,require) **/
-n.d(t, {
-    A: () => l
+n.d(e, {
+    A: () => s
 });
-var a = n(976860),
-    r = n(652215);
+var r = n(976860),
+    a = n(652215);
 
-function l(e) {
+function s(t) {
     let {
-        guildId: t,
+        guildId: e,
         pageIndex: n,
-        skuId: l,
-        slug: s
-    } = e;
-    (0, a.bG)(r.BVt.CHANNELS_GAME_SHOP(t, n, l, s))
+        skuId: s,
+        slug: i
+    } = t;
+    (0, r.bG)(a.BVt.CHANNELS_GAME_SHOP(e, n, s, i))
 }

@@ -5,17 +5,17 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var s = n(990078),
-    i = n(397927),
+var i = n(990078),
+    s = n(397927),
     r = n(985018),
     a = n(544672);
 
 function o() {
-    return (0, l.jsx)(s.m, {
+    return (0, l.jsx)(i.m, {
         text: r.intl.string(r.t["RO/KYj"]),
         children: (0, l.jsx)("div", {
             className: a.q,
-            children: (0, l.jsx)(i.Rf2, {
+            children: (0, l.jsx)(s.Rf2, {
                 color: "currentColor",
                 size: "custom",
                 width: "1rem",
