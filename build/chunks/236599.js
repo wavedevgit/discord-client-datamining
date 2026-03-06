@@ -1,6 +1,6 @@
 /** chunk id: 236599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -11,15 +11,15 @@ var i = n(627968),
     d = n(773669),
     c = n(183555),
     u = n(985018),
-    m = n(152441);
+    g = n(152441);
 
-function g(e) {
+function m(e) {
     let {
         className: t
     } = e, a = ["en-US", "en-GB"].includes((0, r.bG)([d.default], () => d.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
-        trackUserProfileEditAction: g
+        trackUserProfileEditAction: m
     } = (0, c.NJ)(), x = l.useCallback(() => {
-        g({
+        m({
             action: "PRESS_ADD_WIDGET"
         }), (0, o.mMO)(async () => {
             let {
@@ -27,14 +27,14 @@ function g(e) {
             } = await n.e("87591").then(n.bind(n, 333114));
             return t => (0, i.jsx)(e, {
                 ...t,
-                trackUserProfileEditAction: g
+                trackUserProfileEditAction: m
             })
         }, {
             stackingBehavior: "stack"
         })
-    }, [g]);
+    }, [m]);
     return (0, i.jsxs)("div", {
-        className: s()(m.w, t),
+        className: s()(g.w, t),
         children: [(0, i.jsx)(o.Text, {
             variant: "text-xs/semibold",
             color: "text-subtle",

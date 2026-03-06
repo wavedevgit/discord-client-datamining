@@ -4,19 +4,19 @@ i.d(e, {
     A: () => d
 });
 var n = i(64700),
-    s = i(20424),
-    r = i(592356),
+    r = i(20424),
+    s = i(592356),
     a = i(950191),
     l = i(178213),
     o = i(721932),
-    c = i(594832),
-    u = i(188275);
+    u = i(594832),
+    c = i(188275);
 
 function d(t) {
     let {
         user: e,
         numItems: i
-    } = t, d = (0, l.G)("use_unowned_wishlist_items_and_recommendations"), g = (0, a.Ay)(e.id), I = Math.max(i, (0, c.KQ)(d)), {
+    } = t, d = (0, l.G)("use_unowned_wishlist_items_and_recommendations"), g = (0, a.Ay)(e.id), I = Math.max(i, (0, u.KQ)(d)), {
         defaultWishlistId: _,
         wishlist: p,
         popularCollectiblesProducts: A,
@@ -24,23 +24,23 @@ function d(t) {
         isValidatingPopularProducts: S,
         isFetchingPopularProducts: f,
         wishlistError: C
-    } = (0, c.eT)({
+    } = (0, u.eT)({
         giftRecipient: e,
         minNumItems: I,
-        source: c.B5.USER_PROFILE
-    }), T = (0, s.A)({
+        source: u.B5.USER_PROFILE
+    }), T = (0, r.A)({
         displayProfile: g
     }), E = n.useMemo(() => [e.id], [e.id]), {
         recommendations: L
-    } = (0, r.A)({
+    } = (0, s.A)({
         numWishlistItems: I,
-        applicationId: u.XR,
+        applicationId: c.XR,
         userIds: E,
         includeWishlists: !0
     }), O = n.useMemo(() => (p?.items ?? []).filter(t => !0 !== t.isOwned && (0, o.$)(t)).length > 0 || T ? L : [], [p?.items, T, L]), {
         displayItems: h,
         totalUnownedWishlistItemCount: k
-    } = (0, c.mk)({
+    } = (0, u.mk)({
         wishlist: p,
         popularCollectiblesProducts: A,
         popularSocialLayerStorefrontItems: O,

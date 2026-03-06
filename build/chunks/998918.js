@@ -1,4 +1,5 @@
 /** chunk id: 998918 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     mA: "productPreview__00f8b",
     zj: "faded__00f8b",

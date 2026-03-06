@@ -1,4 +1,5 @@
 /** chunk id: 75388 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     ty: "productCardContainer_fcbddd",
     qt: "productCardContentContainer_fcbddd",

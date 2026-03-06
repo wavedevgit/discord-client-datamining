@@ -4,8 +4,8 @@ i.d(t, {
 });
 var s = i(627968),
     a = i(158954),
-    n = i(262427),
-    r = i(697359),
+    r = i(262427),
+    n = i(697359),
     o = i(985018);
 
 function l(e) {
@@ -14,10 +14,10 @@ function l(e) {
     } = e, {
         shouldRender: i,
         limitedOfferTimeLeft: l
-    } = (0, r.A)({
+    } = (0, n.A)({
         location: t
     });
-    return i ? (0, s.jsx)(n.J, {
+    return i ? (0, s.jsx)(r.J, {
         text: o.intl.format(o.t["/bHQ84"], {
             numDays: Math.max(l, 1),
             applicationName: o.intl.string(o.t.Uu8hke)

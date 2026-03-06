@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(688810),
     c = n(183555),
     u = n(808247),
-    m = n(146423),
-    g = n(460442),
+    g = n(146423),
+    m = n(460442),
     x = n(699976),
     f = n(652215),
     p = n(518477),
@@ -29,7 +29,7 @@ function I(e) {
         setIsHoveringOrFocusing: o,
         onClick: d,
         wishlistId: u,
-        children: g
+        children: m
     } = e, {
         trackUserProfileWishlistAction: x
     } = (0, c.NJ)(), f = l.useCallback(() => {
@@ -40,7 +40,7 @@ function I(e) {
             productLines: new Set([t.productLine])
         }), d()
     }, [d, t.id, t.productLine, x, u]);
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(g.A, {
         sku: t,
         user: n,
         spec: A,
@@ -48,7 +48,7 @@ function I(e) {
         skuPreviewStyle: s()(_.ev, r),
         onHoverOrFocusChange: o,
         onClick: f,
-        children: g
+        children: m
     })
 }
 
@@ -60,7 +60,7 @@ function j(e) {
         handleOpenUserProfileModal: o,
         skuPreviewStyle: d,
         wishlistOwner: c,
-        ...m
+        ...g
     } = e, [x, f] = l.useState(!1), A = l.useCallback(async () => {
         if (!x) {
             f(!0);
@@ -86,8 +86,8 @@ function j(e) {
             skuPreviewStyle: j,
             onClick: A,
             isHoveringOrFocusing: a,
-            ...m,
-            children: (0, i.jsx)(g.oU, {
+            ...g,
+            children: (0, i.jsx)(m.oU, {
                 isHoveringOrFocusing: a,
                 loading: x
             })

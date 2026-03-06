@@ -1,27 +1,27 @@
 /** chunk id: 190269 params = (module,exports,require) **/
 r.d(t, {
-    B: () => u
+    B: () => m
 });
-var a = r(627968);
+var o = r(627968);
 r(64700);
-var o = r(397927),
-    n = r(28003),
+var n = r(397927),
+    a = r(28003),
     i = r(659746),
     _ = r(4471),
-    l = r(380083),
-    s = r(788868),
+    s = r(380083),
+    l = r(788868),
     c = r(985018),
     d = r(811363);
 
 function p(e) {
     let {
         onClose: t
-    } = e, r = (0, a.jsx)(o.Text, {
+    } = e, r = (0, o.jsx)(n.Text, {
         className: d.h,
         variant: "text-md/normal",
         children: c.intl.string(c.t.FCsTCk)
     });
-    return (0, a.jsx)(_.A, {
+    return (0, o.jsx)(_.A, {
         type: i.Ay.Types.PREMIUM_ACTIVATED,
         text: r,
         buttonText: c.intl.string(c.t.TkTvBz),
@@ -30,32 +30,32 @@ function p(e) {
     })
 }
 
-function m(e) {
+function u(e) {
     let {
         onClose: t
     } = e;
-    return (0, a.jsx)(l.Ay, {
-        planId: s.gD.PREMIUM_MONTH_TIER_0,
+    return (0, o.jsx)(s.Ay, {
+        planId: l.gD.PREMIUM_MONTH_TIER_0,
         onClose: t
     })
 }
-let u = e => {
+let m = e => {
     let {
         transitionState: t,
         onClose: r,
         premiumType: i
-    } = e, _ = i === s.PremiumTypes.TIER_0;
-    return (0, a.jsxs)(o.EOs, {
+    } = e, _ = i === l.PremiumTypes.TIER_0;
+    return (0, o.jsxs)(n.EOs, {
         "data-migration-pending": !0,
         className: d.z,
         transitionState: t,
         parentComponent: "ResubscribeSuccessStep",
-        children: [(0, a.jsx)(n.A, {
+        children: [(0, o.jsx)(a.A, {
             onClose: r,
             upgradeToPremiumType: i
-        }), (0, a.jsx)(o.$mQ, {
+        }), (0, o.jsx)(n.$mQ, {
             "data-migration-pending": !0,
-            children: (0, a.jsx)(_ ? m : p, {
+            children: (0, o.jsx)(_ ? u : p, {
                 onClose: r
             })
         })]

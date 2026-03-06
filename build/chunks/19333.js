@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(397927),
     c = n(442433),
     u = n(775602),
-    m = n(915089),
-    g = n(961350),
+    g = n(915089),
+    m = n(961350),
     x = n(183555),
     f = n(735321),
     p = n(384377),
@@ -27,7 +27,7 @@ function I(e) {
         className: n,
         buttonRef: l,
         additionalMenuItems: s
-    } = e, r = (0, f.L)(t), o = (0, m.GV)();
+    } = e, r = (0, f.L)(t), o = (0, g.GV)();
     return (0, i.jsx)(v, {
         targetRef: l,
         widget: t,
@@ -109,7 +109,7 @@ let j = e => {
                 } = await n.e("53600").then(n.bind(n, 380035));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    userId: g.default.getId(),
+                    userId: m.default.getId(),
                     widget: l,
                     trackUserProfileEditAction: r
                 })

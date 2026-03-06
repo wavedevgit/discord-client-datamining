@@ -4,20 +4,20 @@ r.d(e, {
 });
 var i = r(627968);
 r(64700);
-var l = r(298072),
-    n = r(561769),
+var n = r(298072),
+    l = r(561769),
     s = r(139146),
     a = r(319545);
 let u = t => {
         let {
             product: e,
             selectedVariantIndex: r,
-            isCardHovered: l
+            isCardHovered: n
         } = t;
         return (0, i.jsx)(s.R, {
             product: e,
             selectedVariantIndex: r,
-            isCardHovered: l,
+            isCardHovered: n,
             className: a.i
         })
     },
@@ -25,7 +25,7 @@ let u = t => {
         let {
             skuId: e,
             isCardHovered: r
-        } = t, s = (0, n.Vm)(e), a = (0, l.Q)(s);
+        } = t, s = (0, l.Vm)(e), a = (0, n.Q)(s);
         return null == s ? null : (0, i.jsx)(u, {
             product: s,
             selectedVariantIndex: a,

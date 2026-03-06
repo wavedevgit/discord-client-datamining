@@ -12,8 +12,8 @@ var l = n(311907),
     d = n(461213),
     c = n(975571),
     u = n(146655),
-    m = n(489379),
-    g = n(837924),
+    g = n(489379),
+    m = n(837924),
     x = n(558628),
     f = n(842241),
     p = n(282797),
@@ -40,7 +40,7 @@ function T(e) {
     } = (0, u.A)(t.id), {
         voiceChannel: k,
         voiceActivity: L
-    } = (0, m.A)({
+    } = (0, g.A)({
         userId: t.id,
         guildId: b
     }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, D = (0, l.bG)([d.A, o.A], () => {
@@ -62,7 +62,7 @@ function T(e) {
                         onClose: S
                     })
                 }), y.map((e, l) => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, i.jsx)(m.A, {
                         user: t,
                         currentUser: n,
                         activity: e,

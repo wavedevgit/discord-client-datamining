@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(384904),
     c = n(395332),
     u = n(566605),
-    m = n(429913),
-    g = n(379848),
+    g = n(429913),
+    m = n(379848),
     x = n(840387),
     f = n(201718),
     p = n(961350),
@@ -72,7 +72,7 @@ function G() {
     } = (0, u.A)({
         location: "ApplicationWidgetUpsell"
     });
-    return e ? null : (0, i.jsx)(g.Ay, {
+    return e ? null : (0, i.jsx)(m.Ay, {
         contentTypes: t.map(e => e.dismissibleContent),
         bypassAutoDismiss: !0,
         children: e => {
@@ -99,12 +99,12 @@ function M(e) {
         return l.useEffect(() => {
             null == e && null == t && n && (0, d.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), g = (0, c.JY)({
+    })(), m = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
     }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, E), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
-        (0, m.A)(n);
+        (0, g.A)(n);
         let {
             data: i,
             refetch: a
@@ -117,7 +117,7 @@ function M(e) {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
                 className: w.cG
-            }), u && (0, i.jsx)(P, {}), g && (0, i.jsx)(G, {})]
+            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
         }), s.map((e, l) => (0, i.jsx)(D, {
             widget: e,
             user: t,
@@ -127,7 +127,7 @@ function M(e) {
         }, e.getUniqueKey()))]
     });
     if (j)
-        if (g) return (0, i.jsx)(C.A, {});
+        if (m) return (0, i.jsx)(C.A, {});
         else return (0, i.jsx)(L.A, {});
     return o ? (0, i.jsx)(N.D, {
         children: S()

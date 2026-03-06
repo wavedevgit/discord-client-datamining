@@ -1,41 +1,41 @@
 /** chunk id: 877156 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => g
 });
-var l = n(627968),
-    i = n(64700),
-    s = n(311907),
-    r = n(732955),
-    a = n(397927),
-    o = n(775602),
-    u = n(688810),
-    d = n(580314),
-    c = n(674658),
-    p = n(898461),
-    m = n(837015),
-    E = n(61750),
-    _ = n(369496),
-    h = n(550111),
-    x = n(287809),
-    S = n(482132),
-    P = n(758836),
-    I = n(985018),
-    T = n(920144);
+var i = t(627968),
+    l = t(64700),
+    r = t(311907),
+    s = t(732955),
+    a = t(397927),
+    o = t(775602),
+    u = t(688810),
+    d = t(580314),
+    c = t(674658),
+    p = t(898461),
+    m = t(837015),
+    E = t(61750),
+    _ = t(369496),
+    x = t(550111),
+    P = t(287809),
+    T = t(482132),
+    S = t(758836),
+    I = t(985018),
+    h = t(920144);
 
 function g(e) {
     let {
-        rewardSkuId: t,
-        onClose: n
-    } = e, g = (0, s.bG)([x.default], () => x.default.getCurrentUser()), A = (0, s.bG)([o.A], () => o.A.useReducedMotion), {
-        analyticsLocations: j
-    } = (0, u.Ay)(), f = a._3J.SIZE_32, {
+        rewardSkuId: n,
+        onClose: t
+    } = e, g = (0, r.bG)([P.default], () => P.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
+        analyticsLocations: f
+    } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: M,
         isFetching: R
-    } = (0, c.q)(t), [y, C] = i.useState(!1), N = M?.items[0], {
-        isNameplateReward: v,
-        nameplateData: O,
+    } = (0, c.q)(n), [C, y] = l.useState(!1), N = M?.items[0], {
+        isNameplateReward: O,
+        nameplateData: v,
         rewardAvatarDecorationSrc: b
-    } = i.useMemo(() => null == N ? {
+    } = l.useMemo(() => null == N ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
@@ -54,45 +54,45 @@ function g(e) {
         rewardAvatarDecorationSrc: (0, d.A)({
             legacyAssetId: N.asset,
             skuId: N.skuId,
-            size: f,
+            size: j,
             canAnimate: !A
         })
     } : {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
-    }, [N, f, A]);
-    return (0, l.jsx)(S.UX, {
-        children: (0, l.jsx)(r.jlY, {
-            children: (0, l.jsxs)("div", {
-                className: T.W,
-                children: [v && null != O ? (0, l.jsx)("div", {
-                    className: T.D,
-                    onMouseEnter: () => C(!0),
-                    onMouseLeave: () => C(!1),
-                    children: (0, l.jsx)(h.a, {
+    }, [N, j, A]);
+    return (0, i.jsx)(T.UX, {
+        children: (0, i.jsx)(s.jlY, {
+            children: (0, i.jsxs)("div", {
+                className: h.W,
+                children: [O && null != v ? (0, i.jsx)("div", {
+                    className: h.D,
+                    onMouseEnter: () => y(!0),
+                    onMouseLeave: () => y(!1),
+                    children: (0, i.jsx)(x.a, {
                         user: g,
                         nameplate: null,
-                        nameplateData: O,
+                        nameplateData: v,
                         showPlaceholderUser: !0,
                         nameplatePreviewSize: "xsmall",
-                        isHighlighted: y
+                        isHighlighted: C
                     })
-                }) : (0, l.jsx)(a.JsQ, {
+                }) : (0, i.jsx)(a.JsQ, {
                     "aria-label": g?.username,
-                    size: f,
-                    src: g?.getAvatarURL(void 0, (0, a.FT9)(f), !A),
+                    size: j,
+                    src: g?.getAvatarURL(void 0, (0, a.FT9)(j), !A),
                     avatarDecoration: b
-                }), (0, l.jsx)(r.$nd, {
+                }), (0, i.jsx)(s.$nd, {
                     variant: "primary",
                     text: I.intl.string(I.t.kMYVwv),
                     loading: R,
                     onClick: () => {
-                        null != M && (n(), (0, E.A)({
+                        null != M && (t(), (0, E.A)({
                             product: M,
                             shouldShowPromotionalExperience: !0,
-                            analyticsLocations: j,
-                            purchaseType: P.gs.PROMOTIONAL
+                            analyticsLocations: f,
+                            purchaseType: S.gs.PROMOTIONAL
                         }))
                     }
                 })]

@@ -1,6 +1,6 @@
 /** chunk id: 451395 params = (module,exports,require) **/
 n.d(t, {
-    gY: () => g,
+    gY: () => m,
     jV: () => f,
     mG: () => x
 });
@@ -13,9 +13,9 @@ var i = n(627968),
     d = n(352944),
     c = n(435371),
     u = n(397927),
-    m = n(985018);
+    g = n(985018);
 
-function g(e) {
+function m(e) {
     let {
         dragRef: t,
         dropRef: n,
@@ -24,12 +24,12 @@ function g(e) {
         itemId: s,
         itemType: c,
         itemPreviewProps: u,
-        onReorder: m,
-        onEnd: g,
+        onReorder: g,
+        onEnd: m,
         disableDefaultPreview: x = !0
     } = e, f = `${c}_${a}`, p = l.useCallback((e, t) => {
-        m?.(e, t)
-    }, [m]), h = l.useMemo(() => ({
+        g?.(e, t)
+    }, [g]), h = l.useMemo(() => ({
         id: s,
         index: i,
         itemType: c,
@@ -42,7 +42,7 @@ function g(e) {
         collect: e => ({
             isDragging: e.isDragging()
         }),
-        end: g
+        end: m
     });
     l.useEffect(() => {
         x && I((0, d.n)(), {
@@ -84,17 +84,17 @@ let x = l.memo(function(e) {
         "aria-label": d,
         children: c,
         ...u
-    } = e, m = l.useRef(null), {
+    } = e, g = l.useRef(null), {
         isDragging: x,
         dragSourcePosition: f
-    } = g({
-        dragRef: m,
-        dropRef: m,
+    } = m({
+        dragRef: g,
+        dropRef: g,
         index: t,
         ...u
     }), p = null != f, h = p && t < f, _ = p && t > f;
     return (0, i.jsx)("div", {
-        ref: m,
+        ref: g,
         className: s()(n, x && a, h && r, _ && o),
         "aria-label": d,
         children: c
@@ -109,7 +109,7 @@ function f(e) {
         ...a
     } = e;
     return (0, i.jsx)(c.un, {
-        body: m.intl.format(m.t["zvln/l"], {
+        body: g.intl.format(g.t["zvln/l"], {
             emphasizeHook: e => (0, i.jsx)("strong", {
                 children: e
             })
@@ -117,7 +117,7 @@ function f(e) {
         ariaHidden: !0,
         children: (0, i.jsx)(u.DUT, {
             innerRef: t,
-            "aria-label": n ?? m.intl.string(m.t.n9T3Hi),
+            "aria-label": n ?? g.intl.string(g.t.n9T3Hi),
             "aria-keyshortcuts": "Control+D, Meta+D",
             ...a,
             children: (0, i.jsx)(u.WP0, {

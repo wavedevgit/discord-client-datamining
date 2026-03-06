@@ -15,16 +15,16 @@ function c(e) {
         wishlist: t,
         profileOwner: n,
         currentUser: c
-    } = e, u = n.id === c?.id, m = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), g = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), x = t?.items.some(e => (0, a.$)(e)) ?? !1, f = (0, o.gT)({
+    } = e, u = n.id === c?.id, g = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), m = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), x = t?.items.some(e => (0, a.$)(e)) ?? !1, f = (0, o.gT)({
         gameIds: d.sQ,
-        userIds: m
+        userIds: g
     }), p = (0, o.K6)({
         gameIds: d.sQ,
-        userIds: m
-    }), h = (0, o.l1)(m), _ = (0, o.hJ)({
+        userIds: g
+    }), h = (0, o.l1)(g), _ = (0, o.hJ)({
         gameIds: d.sQ
     }), A = (0, o.ok)({
         gameIds: d.sQ
     });
-    return x || f || p || h || u && (null != g || _ || A)
+    return x || f || p || h || u && (null != m || _ || A)
 }

@@ -1,4 +1,5 @@
 /** chunk id: 350698 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     ZK: "hero__50e07",
     VW: "headerContent__50e07",

@@ -92,18 +92,17 @@ function O(e) {
                             onClose: n
                         })
                     },
+                    popoutKey: "quest-activity-header-popout",
                     position: "bottom",
                     align: "center",
-                    children: e => (0, i.jsx)("div", {
-                        ref: C,
-                        ...e,
-                        children: (0, i.jsx)(l.$nd, {
-                            text: j.intl.formatToPlainString(j.t.EAYZAr, {
-                                questName: t.config.messages.questName
-                            }),
-                            variant: "secondary",
-                            size: "sm"
-                        })
+                    children: e => (0, i.jsx)(l.$nd, {
+                        text: j.intl.formatToPlainString(j.t.EAYZAr, {
+                            questName: t.config.messages.questName
+                        }),
+                        variant: "secondary",
+                        size: "sm",
+                        buttonRef: C,
+                        ...e
                     })
                 })]
             }), (0, i.jsxs)(l.BJc, {

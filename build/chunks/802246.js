@@ -30,8 +30,8 @@ var n = t(627968),
     O = t(834796),
     T = t(178213),
     N = t(594832),
-    v = t(996353),
-    k = t(631784),
+    k = t(996353),
+    v = t(631784),
     H = t(872472),
     y = t(721932),
     M = t(310209),
@@ -263,15 +263,15 @@ function Z(e) {
             userId: i.id,
             tabSection: z.RP.WISHLIST
         })
-    }, [i.id]), v = r.useMemo(() => "loading" === c, [c]), k = r.useMemo(() => (0, F.KX)({
+    }, [i.id]), k = r.useMemo(() => "loading" === c, [c]), v = r.useMemo(() => (0, F.KX)({
         totalUnownedWishlistItemCount: l,
         wishlistInDmLength: I,
         displayItems: o
-    }), [l, I, o]), H = G.Ay.getName(i), y = F.ap[k], M = s?.getBannerURL({
+    }), [l, I, o]), H = G.Ay.getName(i), y = F.ap[v], M = s?.getBannerURL({
         canAnimate: !1,
         size: 713
     }), R = l > I, W = r.useMemo(() => R ? o.slice(0, I - 1) : o, [o, R, I]), P = (0, E.bc)(W, i), U = R ? o[I - 1] : null, K = l - I + 1, [$, Z] = r.useState(!1), q = r.useCallback(e => {
-        if (e && !v && o.length > 0) {
+        if (e && !k && o.length > 0) {
             let e = o.map(e => {
                 let {
                     item: i
@@ -290,7 +290,7 @@ function Z(e) {
                 })))
             }), Z(!0)
         }
-    }, [v, o, i.id, h]), V = (0, d.K)(q, void 0, !v && !$), ee = r.useMemo(() => new Set(o.map(e => {
+    }, [k, o, i.id, h]), V = (0, d.K)(q, void 0, !k && !$), ee = r.useMemo(() => new Set(o.map(e => {
         let {
             source: i
         } = e;
@@ -314,7 +314,7 @@ function Z(e) {
                     themeClass: e
                 }), (0, n.jsx)("div", {
                     className: e,
-                    children: v || 0 === o.length ? (0, n.jsx)(Y, {
+                    children: k || 0 === o.length ? (0, n.jsx)(Y, {
                         wishlistInDmLength: I
                     }) : (0, n.jsx)(J, {
                         items: W,
@@ -332,7 +332,7 @@ function Z(e) {
                         includedSources: ee,
                         wishlistInDmLength: I
                     })
-                }), null != u && !v && o.length > 0 ? (0, n.jsx)("div", {
+                }), null != u && !k && o.length > 0 ? (0, n.jsx)("div", {
                     className: e,
                     children: u
                 }) : null]
@@ -351,7 +351,7 @@ function q(e) {
         skusToUserAndReason: c,
         status: _,
         defaultWishlistId: u
-    } = (0, k.r)({
+    } = (0, v.r)({
         userId: i.id,
         numItems: (0, N.KQ)(s),
         source: N.B5.USER_PROFILE
@@ -391,7 +391,7 @@ let V = function(e) {
         totalUnownedWishlistItemCount: o,
         fetchState: d,
         defaultWishlistId: c
-    } = (0, v.A)({
+    } = (0, k.A)({
         user: i,
         numItems: (0, N.KQ)(s)
     }), _ = r.useMemo(() => l.some(e => {

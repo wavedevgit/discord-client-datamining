@@ -12,8 +12,8 @@ var l = n(540185),
     d = n(34442),
     c = n(253798),
     u = n(25530),
-    m = n(155400),
-    g = n(844206),
+    g = n(155400),
+    m = n(844206),
     x = n(557964),
     f = n(987140),
     p = n(817461);
@@ -25,7 +25,7 @@ function h(e) {
     } = e;
     switch (t.type) {
         case l.x.FAVORITE_GAMES:
-            return (0, i.jsx)(m.A, {
+            return (0, i.jsx)(g.A, {
                 widget: t,
                 ...n
             });
@@ -40,7 +40,7 @@ function h(e) {
                 ...n
             });
         case l.x.PLAYED_GAMES:
-            return (0, i.jsx)(g.A, {
+            return (0, i.jsx)(m.A, {
                 widget: t,
                 ...n
             });
@@ -56,11 +56,11 @@ function _(e) {
         disableInteraction: l,
         ...u
     } = e, {
-        setExpanded: m
+        setExpanded: g
     } = (0, c.B)(), {
-        shouldShowSuggestions: g,
+        shouldShowSuggestions: m,
         handleDismissSuggestions: x
-    } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && g, I = (0, r.L)(t), j = (0, r.FM)(t, {
+    } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && m, I = (0, r.L)(t), j = (0, r.FM)(t, {
         isCurrentUser: _
     }), v = (0, r.uA)(t), E = 1 === (0, r.cv)(t.type);
     return (0, i.jsx)(h, {
@@ -73,7 +73,7 @@ function _(e) {
             disabled: v,
             widgetType: t.type,
             widget: t,
-            onAddGame: () => m(!0)
+            onAddGame: () => g(!0)
         }, `${t.type}-browse-games-popout`)] : void 0,
         trailingContent: A && (0, i.jsx)(f.A, {
             userId: n.id,

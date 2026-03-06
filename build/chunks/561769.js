@@ -3,11 +3,11 @@
 a.d(t, {
     AW: () => j,
     Hi: () => y,
-    UU: () => _,
+    UU: () => k,
     Vm: () => A,
     gZ: () => v,
     nY: () => f,
-    ql: () => k,
+    ql: () => _,
     v3: () => g
 });
 var l, r, n = a(64700),
@@ -37,7 +37,7 @@ function v() {
 }
 var j = ((l = {}).NONE = "none", l.NEW = "new", l.ORBS_EXCLUSIVE = "orbs_exclusive", l.LIMITED_TIME = "limited_time", l.NITRO_EXCLUSIVE = "nitro_exclusive", l),
     y = ((r = {}).FIAT = "fiat", r.ORBS = "orbs", r);
-let _ = (e, t, a) => l => {
+let k = (e, t, a) => l => {
         c.default.track(p.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: a?.sessionId,
             sku_id: e.skuId,
@@ -51,7 +51,7 @@ let _ = (e, t, a) => l => {
             cta_name: l
         })
     },
-    k = (e, t, a) => {
+    _ = (e, t, a) => {
         let l = (0, x.Mk)(),
             r = l?.tab,
             {

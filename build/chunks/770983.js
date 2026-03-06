@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(435371),
     c = n(397927),
     u = n(688810),
-    m = n(429913),
-    g = n(576030),
+    g = n(429913),
+    m = n(576030),
     x = n(713517),
     f = n(492518),
     p = n(592356),
@@ -36,14 +36,14 @@ function C(e) {
         handleOpenUserProfileModal: a,
         analyticsLocations: s
     } = e, o = l.useRef(null), {
-        analyticsLocations: m
+        analyticsLocations: g
     } = (0, u.Ay)(s ?? []), {
         isHoveringOrFocusing: p
     } = (0, x.A)(o), [_, I] = l.useState(!1), j = l.useCallback(async e => {
         if (e.stopPropagation(), !_) {
             I(!0);
             try {
-                await A.A.addSkuToWishlist(n.id, m), a?.({
+                await A.A.addSkuToWishlist(n.id, g), a?.({
                     tabSection: N.RP.WISHLIST
                 })
             } catch (e) {
@@ -52,11 +52,11 @@ function C(e) {
                 I(!1)
             }
         }
-    }, [n.id, m, a, _]);
+    }, [n.id, g, a, _]);
     return (0, i.jsx)(d.un, {
         title: S.intl.string(S.t["8DkMEQ"]),
         body: n.name,
-        asset: (0, i.jsx)(g.mW, {
+        asset: (0, i.jsx)(m.mW, {
             application: t
         }),
         assetSize: v.Q8,
@@ -95,8 +95,8 @@ function R(e) {
         maxWishlistItemsToShow: d = r,
         className: c,
         isLoading: u,
-        recommendations: g
-    } = e, x = (0, m.h)(b.XR), p = (0, o.bG)([_.default], () => _.default.getUser(t?.userId)), h = (0, j.G)("add_to_wishlist_grid"), A = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), I = g.filter(e => !A.has(e.id)).slice(0, d);
+        recommendations: m
+    } = e, x = (0, g.h)(b.XR), p = (0, o.bG)([_.default], () => _.default.getUser(t?.userId)), h = (0, j.G)("add_to_wishlist_grid"), A = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), I = m.filter(e => !A.has(e.id)).slice(0, d);
     return u ? (0, i.jsx)("div", {
         className: y.g4,
         children: (0, i.jsx)(f.k, {})

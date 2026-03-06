@@ -1,13 +1,13 @@
 /** chunk id: 117945 params = (module,exports,require) **/
-n.d(t, {
-    T: () => r
+t.d(n, {
+    T: () => s
 });
-var l = n(607399),
-    i = n(483827),
-    s = n(788868);
+var i = t(607399),
+    l = t(483827),
+    r = t(788868);
 
-function r(e, t) {
-    return !e && t === s.pe.TIER_2 && !l.Ct && !l.KY && !(0, i.du)({
+function s(e, n) {
+    return !e && n === r.pe.TIER_2 && !i.Ct && !i.KY && !(0, l.du)({
         location: "wowMomentEligibilityUtils"
     })
 }

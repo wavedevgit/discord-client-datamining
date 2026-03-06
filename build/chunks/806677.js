@@ -4,8 +4,8 @@ i.d(t, {
 });
 var s = i(627968),
     a = i(64700),
-    n = i(791282),
-    r = i.n(n),
+    r = i(791282),
+    n = i.n(r),
     o = i(172218),
     l = i(158954),
     d = i(311907),
@@ -74,7 +74,7 @@ function V(e) {
     })
 }
 
-function q(e) {
+function J(e) {
     let {
         isEligibleForWishlistSkuPreview: t
     } = e;
@@ -89,19 +89,19 @@ function q(e) {
     })
 }
 
-function J(e) {
+function q(e) {
     let {
         item: t,
         source: i,
         giftRecipient: a,
-        defaultWishlistId: n,
-        tooltipConfig: r,
+        defaultWishlistId: r,
+        tooltipConfig: n,
         onWishlistItemClick: o,
         analyticsLocations: l
     } = e, d = (0, s.jsx)(k.A, {
         item: t,
         profileOwner: a,
-        wishlistId: n,
+        wishlistId: r,
         isOwner: !1,
         cardSize: E.Y.MEDIUM_SQUARE,
         showOverlayButton: !1,
@@ -112,16 +112,16 @@ function J(e) {
         onWishlistItemClick: o,
         analyticsLocations: l
     }, t.skuId);
-    return r.shouldShow ? (0, M.Qc)(r) ? (0, s.jsx)(_.m, {
-        text: r.title,
+    return n.shouldShow ? (0, M.Qc)(n) ? (0, s.jsx)(_.m, {
+        text: n.title,
         position: "top",
         asContainer: !0,
         delay: j.Zh,
         children: d
     }, t.skuId) : (0, s.jsx)(c.u, {
-        title: r.title,
-        body: r.body ?? "",
-        asset: r.renderIcon?.(t),
+        title: n.title,
+        body: n.body ?? "",
+        asset: n.renderIcon?.(t),
         assetSize: j.Q8,
         position: "top",
         asContainer: !0,
@@ -134,8 +134,8 @@ function Y(e) {
     let {
         isEligibleForWishlistSkuPreview: t,
         displayItems: i,
-        giftRecipient: n,
-        defaultWishlistId: r,
+        giftRecipient: r,
+        defaultWishlistId: n,
         tooltipConfigs: o,
         onSeeWishlistClick: l,
         onWishlistItemClick: c,
@@ -156,9 +156,9 @@ function Y(e) {
             return null != a.sku && (0, s.jsx)(H.A, {
                 index: t,
                 sku: a.sku,
-                wishlistId: r,
+                wishlistId: n,
                 source: o,
-                wishlistOwner: n,
+                wishlistOwner: r,
                 hasMultipleSources: f.size > 1,
                 onOpenWishlist: l,
                 onClick: c,
@@ -176,11 +176,11 @@ function Y(e) {
                 item: i,
                 source: a
             } = e;
-            return (0, s.jsx)(J, {
+            return (0, s.jsx)(q, {
                 item: i,
                 source: a,
-                giftRecipient: n,
-                defaultWishlistId: r,
+                giftRecipient: r,
+                defaultWishlistId: n,
                 tooltipConfig: o[t],
                 onWishlistItemClick: c,
                 analyticsLocations: u
@@ -193,8 +193,8 @@ function $(e) {
     let {
         giftRecipient: t,
         onSeeWishlistClick: i,
-        onWishlistItemClick: n,
-        displayItems: r,
+        onWishlistItemClick: r,
+        displayItems: n,
         defaultWishlistId: d,
         isLoading: c,
         totalUnownedWishlistItems: _,
@@ -203,16 +203,16 @@ function $(e) {
         username: I
     }), {
         analyticsLocations: x
-    } = (0, p.Ay)(...f ?? [], m.A.GIFT_SELECTION_MODAL_WISHLIST), L = (0, M.bc)(r, t), [k, E] = a.useState(!1), A = a.useCallback(e => {
-        e && !c && r.length > 0 && (R.default.track(U.HAw.IMPRESSION_GIFT_SELECTION_WISHLIST_SECTION_VIEWED, {
+    } = (0, p.Ay)(...f ?? [], m.A.GIFT_SELECTION_MODAL_WISHLIST), L = (0, M.bc)(n, t), [k, E] = a.useState(!1), A = a.useCallback(e => {
+        e && !c && n.length > 0 && (R.default.track(U.HAw.IMPRESSION_GIFT_SELECTION_WISHLIST_SECTION_VIEWED, {
             gift_recipient_id: t.id,
-            sku_ids: r.map(e => {
+            sku_ids: n.map(e => {
                 let {
                     item: t
                 } = e;
                 return t.skuId
             }),
-            product_lines: Array.from(new Set(r.map(e => {
+            product_lines: Array.from(new Set(n.map(e => {
                 let {
                     item: t
                 } = e;
@@ -220,12 +220,12 @@ function $(e) {
             }))),
             location_stack: x
         }), E(!0))
-    }, [c, r, t.id, x]), w = (0, o.K)(A, void 0, !c && !k), j = a.useMemo(() => r.some(e => {
+    }, [c, n, t.id, x]), w = (0, o.K)(A, void 0, !c && !k), j = a.useMemo(() => n.some(e => {
         let {
             item: t
         } = e;
         return (0, C.bF)(t.sku)
-    }), [r]);
+    }), [n]);
     return (0, s.jsxs)("div", {
         ref: w,
         className: z.jf,
@@ -246,16 +246,16 @@ function $(e) {
             location: "gift_selection_modal_wishlist"
         }), (0, s.jsx)("div", {
             className: z.KN,
-            children: c ? (0, s.jsx)(q, {
+            children: c ? (0, s.jsx)(J, {
                 isEligibleForWishlistSkuPreview: h
             }) : (0, s.jsx)(Y, {
                 isEligibleForWishlistSkuPreview: h,
-                displayItems: r,
+                displayItems: n,
                 giftRecipient: t,
                 defaultWishlistId: d,
                 tooltipConfigs: L,
                 onSeeWishlistClick: i,
-                onWishlistItemClick: n,
+                onWishlistItemClick: r,
                 totalUnownedWishlistItems: _,
                 analyticsLocations: x
             })
@@ -267,8 +267,8 @@ function ee(e) {
     let {
         giftRecipient: t,
         onClose: i,
-        transitionState: n,
-        analyticsLocations: r,
+        transitionState: r,
+        analyticsLocations: n,
         analyticsLocation: o,
         analyticsObject: c,
         giftMessage: _,
@@ -286,9 +286,9 @@ function ee(e) {
         k && !M.current && (M.current = !0, R.default.track(U.HAw.GIFT_SELECTION_MODAL_OPENED, {
             gift_recipient_id: t.id,
             wishlist_item_count: C,
-            location_stack: r
+            location_stack: n
         }))
-    }, [k, t.id, C, r]);
+    }, [k, t.id, C, n]);
     let W = a.useCallback(e => {
             O(e), H.current = !0;
             let i = y.current;
@@ -305,19 +305,19 @@ function ee(e) {
             }), R.default.track(U.HAw.GIFT_SELECTION_TAB_SELECTED, {
                 gift_recipient_id: t.id,
                 tab_name: e,
-                location_stack: r
+                location_stack: n
             })
-        }, [t.id, r, v]),
+        }, [t.id, n, v]),
         G = a.useCallback(() => {
             R.default.track(U.HAw.GIFT_SELECTION_SEE_WISHLIST_CTA_CLICKED, {
                 gift_recipient_id: t.id,
                 wishlist_item_count: C,
-                location_stack: r
+                location_stack: n
             }), i(), (0, L.openUserProfileModal)({
                 userId: t.id,
                 tabSection: B.RP.WISHLIST
             })
-        }, [t.id, C, r, i]);
+        }, [t.id, C, n, i]);
     a.useEffect(() => {
         let e = N.current,
             t = y.current;
@@ -337,7 +337,7 @@ function ee(e) {
             giftRecipient: t,
             subscriptionTier: e,
             giftingOrigin: m,
-            analyticsLocations: r ?? [],
+            analyticsLocations: n ?? [],
             analyticsLocation: o ?? U.ThZ.GIFT_SELECTION_MODAL,
             analyticsObject: c ?? {
                 page: U.liQ.DM_CHANNEL,
@@ -347,9 +347,9 @@ function ee(e) {
             },
             giftMessage: _
         }), i()
-    }, [t, r, o, c, _, i, m]);
+    }, [t, n, o, c, _, i, m]);
     return (0, s.jsx)(l.dWK, {
-        transitionState: n,
+        transitionState: r,
         size: "lg",
         onClose: i,
         "aria-label": K.intl.string(K.t["wg/30i"]),
@@ -397,7 +397,7 @@ function ee(e) {
                             defaultWishlistId: S,
                             isLoading: !k,
                             totalUnownedWishlistItems: C,
-                            analyticsLocations: r
+                            analyticsLocations: n
                         })
                     })]
                 })
@@ -410,7 +410,7 @@ function et(e) {
     let {
         giftRecipient: t,
         onClose: i,
-        transitionState: n,
+        transitionState: r,
         analyticsLocations: o,
         analyticsLocation: l,
         analyticsObject: d,
@@ -426,7 +426,7 @@ function et(e) {
         userId: t.id,
         numItems: 12,
         source: j.B5.USER_PROFILE
-    }), I = a.useMemo(() => r()(u.map(e => {
+    }), I = a.useMemo(() => n()(u.map(e => {
         let i = e.productLine === U.EZt.COLLECTIBLES ? y.A.fromSKU(e) : N.A.fromSKU(e),
             s = null != m[e.id] && m[e.id][t.id] === v.j.WISHLIST ? j.uS.WISHLIST : j.uS.POPULAR;
         return null != i ? {
@@ -437,7 +437,7 @@ function et(e) {
     return (0, s.jsx)(ee, {
         giftRecipient: t,
         onClose: i,
-        transitionState: n,
+        transitionState: r,
         analyticsLocations: o,
         analyticsLocation: l,
         analyticsObject: d,
@@ -455,8 +455,8 @@ function ei(e) {
         giftRecipient: t,
         onClose: i,
         transitionState: a,
-        analyticsLocations: n,
-        analyticsLocation: r,
+        analyticsLocations: r,
+        analyticsLocation: n,
         analyticsObject: o,
         giftMessage: l,
         giftingOrigin: d = Q.vQ.DM_CHANNEL
@@ -473,8 +473,8 @@ function ei(e) {
         giftRecipient: t,
         onClose: i,
         transitionState: a,
-        analyticsLocations: n,
-        analyticsLocation: r,
+        analyticsLocations: r,
+        analyticsLocation: n,
         analyticsObject: o,
         giftMessage: l,
         giftingOrigin: d,
@@ -490,8 +490,8 @@ function es(e) {
         giftRecipient: t,
         onClose: i,
         transitionState: a,
-        analyticsLocations: n,
-        analyticsLocation: r,
+        analyticsLocations: r,
+        analyticsLocation: n,
         analyticsObject: o,
         giftMessage: l,
         giftingOrigin: d = Q.vQ.DM_CHANNEL
@@ -509,8 +509,8 @@ function es(e) {
                 giftRecipient: t,
                 onClose: i,
                 transitionState: a,
-                analyticsLocations: n,
-                analyticsLocation: r,
+                analyticsLocations: r,
+                analyticsLocation: n,
                 analyticsObject: o,
                 giftMessage: l,
                 giftingOrigin: d
@@ -518,8 +518,8 @@ function es(e) {
                 giftRecipient: t,
                 onClose: i,
                 transitionState: a,
-                analyticsLocations: n,
-                analyticsLocation: r,
+                analyticsLocations: r,
+                analyticsLocation: n,
                 analyticsObject: o,
                 giftMessage: l,
                 giftingOrigin: d

@@ -3,13 +3,13 @@ l.d(t, {
     Ay: () => p,
     wn: () => u
 }), l(321073);
-var s, n = l(64700),
+var n, s = l(64700),
     i = l(417597),
     r = l(590180),
     a = l(4227),
     c = l(993408),
     o = l(985018),
-    u = ((s = {}).PURCHASE = "purchase", s.PREMIUM_PURCHASE = "premium_purchase", s.PREVIEW = "preview", s);
+    u = ((n = {}).PURCHASE = "purchase", n.PREMIUM_PURCHASE = "premium_purchase", n.PREVIEW = "preview", n);
 let d = {
         skuId: "None"
     },
@@ -19,13 +19,13 @@ let d = {
     p = () => {
         let e = (0, i.bG)([a.A], () => a.A.purchases),
             [t, l] = (0, i.yK)([r.A], () => [r.A.categories, r.A.products]);
-        return (0, n.useMemo)(() => {
-            let s = (0, c.zd)(e, t).reduce((t, s) => {
-                let n = e.get(s.skuId),
-                    i = l.get(s.skuId),
-                    r = null != n ? (0, c.gA)(n) : (0, c.G0)(i),
+        return (0, s.useMemo)(() => {
+            let n = (0, c.zd)(e, t).reduce((t, n) => {
+                let s = e.get(n.skuId),
+                    i = l.get(n.skuId),
+                    r = null != s ? (0, c.gA)(s) : (0, c.G0)(i),
                     a = i?.isCategoryReward ?? !1;
-                return r ? t.premium_purchase.push(s) : null != n ? t.purchase.push(s) : r || a || t.preview.push(s), t
+                return r ? t.premium_purchase.push(n) : null != s ? t.purchase.push(n) : r || a || t.preview.push(n), t
             }, {
                 purchase: [],
                 premium_purchase: [],
@@ -33,17 +33,17 @@ let d = {
             });
             return [{
                 section: "purchase",
-                items: [d, m, ...s.purchase],
+                items: [d, m, ...n.purchase],
                 height: 12,
                 header: o.intl.string(o.t.WfGV52)
             }, {
                 section: "premium_purchase",
-                items: s.premium_purchase,
+                items: n.premium_purchase,
                 height: 12,
                 header: o.intl.string(o.t.TiLCgw)
             }, {
                 section: "preview",
-                items: s.preview,
+                items: n.preview,
                 height: 12,
                 header: o.intl.string(o.t["1vbbee"])
             }].filter(e => {
