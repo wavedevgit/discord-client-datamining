@@ -4,10 +4,10 @@ n.d(t, {
     A: () => g,
     s: () => f
 });
-var l = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(503698),
-    i = n.n(a),
+var l = n(503698),
+    i = n.n(l),
     r = n(808380),
     s = n(934551),
     c = n(990078),
@@ -37,22 +37,22 @@ function x(e) {
     } = e;
     switch (t) {
         case r.Y.DESKTOP:
-            return (0, l.jsx)(s.ScreenIcon, {
+            return (0, a.jsx)(s.ScreenIcon, {
                 size: "xs",
                 ...n
             });
         case r.Y.XBOX:
-            return (0, l.jsx)(s.XboxNeutralIcon, {
+            return (0, a.jsx)(s.XboxNeutralIcon, {
                 size: "xs",
                 ...n
             });
         case r.Y.PLAYSTATION:
-            return (0, l.jsx)(s.PlaystationNeutralIcon, {
+            return (0, a.jsx)(s.PlaystationNeutralIcon, {
                 size: "xs",
                 ...n
             });
         case r.Y.NINTENDO:
-            return (0, l.jsx)(s.NintendoSwitchNeutralIcon, {
+            return (0, a.jsx)(s.NintendoSwitchNeutralIcon, {
                 size: "xs",
                 ...n
             });
@@ -65,14 +65,14 @@ function h(e) {
     let {
         platforms: t
     } = e;
-    return (0, l.jsx)("div", {
+    return (0, a.jsx)("div", {
         className: i()(u.nM, u.Lc),
         style: {
             alignItems: "center"
         },
-        children: t.map(e => (0, l.jsx)(c.m, {
+        children: t.map(e => (0, a.jsx)(c.m, {
             text: m(e),
-            children: (0, l.jsx)(x, {
+            children: (0, a.jsx)(x, {
                 platform: e
             })
         }, e))
@@ -83,9 +83,9 @@ function f(e) {
     let {
         platform: t
     } = e;
-    return (0, l.jsx)(c.m, {
+    return (0, a.jsx)(c.m, {
         text: m(t),
-        children: (0, l.jsx)(x, {
+        children: (0, a.jsx)(x, {
             platform: t
         })
     }, t)
@@ -95,11 +95,11 @@ function g(e) {
     let {
         detectedGame: t,
         className: n
-    } = e, a = (0, o.A)(t);
-    return 0 === a.length ? null : (0, l.jsx)("div", {
+    } = e, l = (0, o.A)(t);
+    return 0 === l.length ? null : (0, a.jsx)("div", {
         className: i()(u.fi, u.iH, n),
-        children: a.length > 0 && (0, l.jsx)(h, {
-            platforms: a
+        children: l.length > 0 && (0, a.jsx)(h, {
+            platforms: l
         })
     })
 }

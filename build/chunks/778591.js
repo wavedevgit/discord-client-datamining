@@ -3,8 +3,8 @@
 n.d(t, {
     I: () => m
 });
-var l = n(792216),
-    a = n(505779),
+var a = n(792216),
+    l = n(505779),
     i = n(311907),
     r = n(587895),
     s = n(223273),
@@ -20,7 +20,7 @@ function m(e) {
             n = c.A.getGame(e),
             i = n?.supplementalData,
             m = r.A.getApplication(e);
-        if (i?.steamReleaseStatus === l.Y.RETIRED_ABANDONED) return null;
+        if (i?.steamReleaseStatus === a.Y.RETIRED_ABANDONED) return null;
         if (m?.linkedGames?.some(e => e.type === s.Mh.OFFICIAL) === !0) {
             let e = t?.thirdPartySkus?.find(e => e.distributor === u.d3x.STEAM),
                 n = e?.id;
@@ -28,7 +28,7 @@ function m(e) {
             return null
         }
         if (i?.websites == null) return null;
-        let x = i.websites.find(e => e.category === a.V.STEAM);
+        let x = i.websites.find(e => e.category === l.V.STEAM);
         return x?.url ?? null
     }, [e])
 }

@@ -3,24 +3,24 @@
 n.d(t, {
     A: () => c
 });
-var l = n(64700),
-    a = n(505779),
+var a = n(64700),
+    l = n(505779),
     i = n(311907),
     r = n(970163),
     s = n(184989);
 let c = function(e, t) {
-    let [n, c] = l.useState(), o = l.useRef(null), d = l.useRef(t);
-    l.useEffect(() => {
+    let [n, c] = a.useState(), o = a.useRef(null), d = a.useRef(t);
+    a.useEffect(() => {
         d.current = t
     }, [t]);
     let u = (0, i.bG)([s.A], () => n?.guild?.id != null && s.A.isMember(n?.guild?.id)),
-        m = l.useMemo(() => e?.websites?.find(e => {
+        m = a.useMemo(() => e?.websites?.find(e => {
             let {
                 category: t
             } = e;
-            return t === a.V.DISCORD
+            return t === l.V.DISCORD
         }), [e?.websites]);
-    return l.useEffect(() => {
+    return a.useEffect(() => {
         let e = async e => {
             let t = e.split("/").pop();
             if (null != t) {

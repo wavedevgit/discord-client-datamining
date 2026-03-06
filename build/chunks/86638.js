@@ -85,7 +85,6 @@ function C(e) {
     } = (0, j.hB)({
         sku: t.sku,
         wishlistOwner: n,
-        currentUser: a,
         isOwned: v,
         location: "User Profile Wishlist Item Card"
     });

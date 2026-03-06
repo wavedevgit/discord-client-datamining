@@ -24,22 +24,22 @@ function v(e) {
         h = (0, u.J)(e) && !e.isPrivate(),
         C = (0, u.A)(e),
         N = !(0, l.bG)([s.A], () => s.A.isInChannel(e.id)) && C || h,
-        p = (0, A.A)();
-    if (!_ && 0 === p.length) return null;
-    let I = (0, f.A)(void 0);
+        I = (0, A.A)();
+    if (!_ && 0 === I.length) return null;
+    let p = (0, f.A)(void 0);
     return _ ? (0, i.jsx)(r.Drp, {
         label: g.intl.string(g.t.PlwgdU),
         id: "handoff",
         action: () => {
             (0, o.x)(v)
         },
-        icon: I,
+        icon: p,
         leadingAccessory: {
             type: "icon",
-            icon: I
+            icon: p
         },
         disabled: N
-    }) : p.map(l => {
+    }) : I.map(l => {
         var u, d;
         let s = (0, f.A)(l.type);
         return (0, i.jsx)(r.Drp, {
