@@ -243,7 +243,7 @@ function q(e) {
             stateMachine: u ? "SM_Main_Int" : "SM_Auto"
         }),
         title: P.intl.string(n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? G.default.wXLChx : G.default["8z8RpY"]),
-        body: n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? P.intl.formatToPlainString(G.default.sj2nIF, {
+        body: n === E.o.GAME_SERVER_HOSTING_AVAILABLE ? P.intl.formatToPlainString(G.default["7KXp9J"], {
             gameName: a,
             gameName2: d
         }) : P.intl.format(G.default["IQ1E+d"], {
@@ -400,7 +400,7 @@ function $(e) {
             className: w.Sl
         }),
         title: P.intl.string(U.default.n37JhA),
-        body: P.intl.formatToPlainString(U.default.Yr1ogl, {
+        body: P.intl.formatToPlainString(u || n.type === O.o9.LEVEL ? U.default.Yr1ogl : U.default["7MZ2tu"], {
             boostCount: o,
             perkName: n.title
         }),

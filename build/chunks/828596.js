@@ -58,12 +58,11 @@ async function p(e) {
     let {
         productId: l,
         includePricing: t = !1,
-        includeUnpublished: s = !1,
-        ignoreCache: h = !1
+        ignoreCache: s = !1
     } = e;
     if (!l || d.A.isFetching(l)) return;
-    let p = d.A.getApiError(l);
-    if (p?.status !== 404 && p?.status !== 429) try {
+    let h = d.A.getApiError(l);
+    if (h?.status !== 404 && h?.status !== 429) try {
         o.h.dispatch({
             type: "STOREFRONT_PRODUCT_WITH_SKUS_FETCH",
             productId: l
@@ -73,8 +72,7 @@ async function p(e) {
             query: {
                 locale: a.default.locale,
                 include_pricing: t,
-                include_unpublished: s,
-                ignore_cache: h,
+                ignore_cache: s,
                 include_google_sku_ids: (0, r.m0)()
             },
             rejectWithError: !0
