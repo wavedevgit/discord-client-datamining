@@ -11,7 +11,7 @@ var l = n(627968),
     o = n(769015),
     d = n(790381),
     c = n(266080),
-    h = n(652215);
+    h = n(70191);
 let g = {
     [r.Y.XBOX]: c.A,
     [r.Y.PLAYSTATION]: d.A
@@ -23,12 +23,7 @@ function I(e) {
         gameProfileEntry: n,
         gameIconSize: r,
         platformIconSizePx: d
-    } = e, c = i.useMemo(() => t.find(e => {
-        let {
-            type: t
-        } = e;
-        return t === h.$pd.PLAYING
-    }), [t]), I = (0, a.h)(c?.application_id);
+    } = e, c = i.useMemo(() => t.find(h.A), [t]), I = (0, a.h)(c?.application_id);
     return null == c ? null : function(e) {
         let {
             gameProfileEntry: t,

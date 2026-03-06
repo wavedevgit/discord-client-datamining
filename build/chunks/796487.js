@@ -8,5 +8,8 @@ e.exports = {
     rg: "expandedUserNameContainer_e72588",
     YT: "actionsRow_e72588",
     ZA: "voiceIcons_e72588",
-    Ow: "voiceIcon_e72588"
+    Ow: "voiceIcon_e72588",
+    IV: "expandedUserGameIcon_e72588",
+    z2: "gameActivitySecondaryText_e72588",
+    AE: "gameControllerIcon_e72588"
 }
