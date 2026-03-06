@@ -22,8 +22,8 @@ function u(e) {
         popoutProps: _,
         hideTimestamp: A = !1,
         withFooter: f = !1,
-        ...h
-    } = e, g = (0, r.Ay)(t);
+        ...E
+    } = e, h = (0, r.Ay)(t);
     return (0, i.jsx)("div", {
         className: a()({
             [d.Ym]: f
@@ -31,7 +31,7 @@ function u(e) {
             [d.oE]: m
         }, u),
         children: (0, i.jsx)(s.A, {
-            ...h,
+            ...E,
             className: a()(d.zC, {
                 [d.oE]: m
             }),
@@ -46,7 +46,7 @@ function u(e) {
             childrenHeader: (0, i.jsx)(c.Ay, {
                 message: t,
                 channel: n,
-                author: g,
+                author: h,
                 guildId: n?.guild_id,
                 compact: m,
                 hideTimestamp: A,
@@ -56,7 +56,7 @@ function u(e) {
                 ..._ ?? {}
             }),
             compact: m,
-            author: g
+            author: h
         })
     })
 }

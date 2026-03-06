@@ -22,8 +22,8 @@ var a = n(311907),
     R = n(652215),
     S = n(746080),
     O = n(985018),
-    C = n(463149),
-    p = n(504226);
+    p = n(463149),
+    C = n(504226);
 let P = 21552 == n.j ? () => {
     let e = (0, a.bG)([d.A], () => d.A.getGuildId(), []),
         t = (0, a.bG)([_.A], () => _.A.getGuild(e), [e]),
@@ -32,13 +32,13 @@ let P = 21552 == n.j ? () => {
         D = (0, c.B)(P.pathname, R.BVt.CHANNEL(t?.id, S.VV.GUILD_ONBOARDING))?.isExact === !0;
     if (null == t || !(0, I.Qd)(t) || D) return null;
     let M = r?.applicationStatus ?? T.B5.STARTED,
-        g = null,
         U = null,
+        g = null,
         m = null,
-        h = [C.lm, p.lm];
+        h = [p.lm, C.lm];
     switch (M) {
         case T.B5.SUBMITTED:
-            g = O.intl.string(O.t["5iLvSx"]), U = O.intl.string(O.t.mqtdmQ), m = () => {
+            U = O.intl.string(O.t["5iLvSx"]), g = O.intl.string(O.t.mqtdmQ), m = () => {
                 (0, o.A)({
                     title: O.intl.string(O.t.aIz1oV),
                     subtitle: O.intl.string(O.t["13tjTU"]),
@@ -49,7 +49,7 @@ let P = 21552 == n.j ? () => {
             };
             break;
         case T.B5.REJECTED:
-            g = O.intl.string(O.t.lk30cY), U = O.intl.string(O.t["8RrsHr"]), m = () => {
+            U = O.intl.string(O.t.lk30cY), g = O.intl.string(O.t["8RrsHr"]), m = () => {
                 (0, E.mMO)(async () => {
                     let {
                         default: e
@@ -59,24 +59,24 @@ let P = 21552 == n.j ? () => {
                         ...n
                     })
                 })
-            }, h.push(C.z3);
+            }, h.push(p.z3);
             break;
         default:
-            g = O.intl.string(O.t.G5YKXP), U = O.intl.string(O.t["r8/DT+"]), m = () => {
+            U = O.intl.string(O.t.G5YKXP), g = O.intl.string(O.t["r8/DT+"]), m = () => {
                 (0, u.Ze)(t.id)
             }
     }
     return (0, i.jsxs)("div", {
         className: l()(...h),
         children: [(0, i.jsx)(E.Text, {
-            className: C.wx,
+            className: p.wx,
             variant: "text-sm/normal",
-            children: g
+            children: U
         }), (0, i.jsx)(E.Button, {
             variant: "overlay-primary",
             size: "sm",
             onClick: m,
-            text: U
+            text: g
         })]
     })
 } : null

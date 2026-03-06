@@ -22,13 +22,13 @@ var i = n(627968),
     R = n(309010),
     S = n(967198),
     O = n(792831),
-    C = n(147925),
-    p = n(723702),
+    p = n(147925),
+    C = n(723702),
     P = n(529942),
     D = n(164956),
     M = n(311127),
-    g = n(652215),
-    U = n(746080);
+    U = n(652215),
+    g = n(746080);
 n(500208);
 var m = n(2242),
     h = n(985018),
@@ -71,7 +71,7 @@ function L() {
             viewingRoles: l,
             backNavigationSection: s,
             isFullServerPreview: c,
-            isServerShopPreview: p
+            isServerShopPreview: C
         } = (0, a.cf)([D.A], () => ({
             viewingRoles: null != t ? D.A.getViewingRoles(t) : null,
             backNavigationSection: D.A.getBackNavigationSection(t),
@@ -81,23 +81,23 @@ function L() {
     if (null == l || null == t) return null;
     let L = function(e) {
             switch (e) {
-                case g.BEX.INTEGRATIONS:
+                case U.BEX.INTEGRATIONS:
                     return h.intl.string(h.t.k7LGdh);
-                case g.BEX.ROLE_SUBSCRIPTIONS:
+                case U.BEX.ROLE_SUBSCRIPTIONS:
                     return h.intl.string(h.t.bRqiqa);
-                case g.BEX.ONBOARDING:
+                case U.BEX.ONBOARDING:
                     return h.intl.string(h.t.qZpU3S);
                 default:
                     return h.intl.string(h.t.MTIXhi)
             }
         }(s),
-        x = s === g.BEX.ROLE_SUBSCRIPTIONS ? h.intl.string(h.t.hZUCzd) : h.intl.string(h.t["/djIh7"]),
-        G = n === U.VV.GUILD_ONBOARDING,
+        x = s === U.BEX.ROLE_SUBSCRIPTIONS ? h.intl.string(h.t.hZUCzd) : h.intl.string(h.t["/djIh7"]),
+        G = n === g.VV.GUILD_ONBOARDING,
         j = e => {
             let {
                 backToSettings: n
             } = e;
-            null != t && (D.A.isFullServerPreview(t) && (0, N.pX)(g.BVt.CHANNEL(t)), A.Ay.shouldShowOnboarding(t) && (d.A.finishOnboarding(t), (0, u.Jg)(t)), (0, P.rf)(t), n && I.A.open(t, s), s === g.BEX.ROLE_SUBSCRIPTIONS && (0, T.Fx)(t))
+            null != t && (D.A.isFullServerPreview(t) && (0, N.pX)(U.BVt.CHANNEL(t)), A.Ay.shouldShowOnboarding(t) && (d.A.finishOnboarding(t), (0, u.Jg)(t)), (0, P.rf)(t), n && I.A.open(t, s), s === U.BEX.ROLE_SUBSCRIPTIONS && (0, T.Fx)(t))
         };
     return (0, i.jsxs)(_.$Td, {
         color: _.Hv$.BRAND,
@@ -141,10 +141,10 @@ function L() {
                     return (0, i.jsxs)(f, {
                         onClick: n,
                         buttonRef: e,
-                        children: [x, (0, i.jsx)(C.A, {
+                        children: [x, (0, i.jsx)(p.A, {
                             width: 16,
                             height: 16,
-                            direction: C.A.Directions.DOWN,
+                            direction: p.A.Directions.DOWN,
                             className: y.k5
                         })]
                     })
@@ -156,7 +156,7 @@ function L() {
                     size: "xs",
                     color: o.A.unsafe_rawColors.YELLOW_300.css
                 })
-            }), p && (0, i.jsx)(E.m, {
+            }), C && (0, i.jsx)(E.m, {
                 asContainer: !0,
                 text: h.intl.formatToPlainString(h.t.eummvd, {
                     maxTiers: m.f7,
@@ -167,7 +167,7 @@ function L() {
                     color: o.A.unsafe_rawColors.YELLOW_300.css
                 })
             })]
-        }), c || s === g.BEX.ROLE_SUBSCRIPTIONS ? null : (0, i.jsx)(k, {
+        }), c || s === U.BEX.ROLE_SUBSCRIPTIONS ? null : (0, i.jsx)(k, {
             onClick: () => j({
                 backToSettings: !1
             })
@@ -181,8 +181,8 @@ function x(e) {
     } = e;
     return (0, a.bG)([D.A], () => D.A.isViewingRoles(t)) ? (0, i.jsx)("div", {
         className: s()(y.xd, {
-            [y.KF]: (0, p.isWindows)(),
-            [y.Xz]: (0, p.isMac)()
+            [y.KF]: (0, C.isWindows)(),
+            [y.Xz]: (0, C.isMac)()
         }),
         children: (0, i.jsx)(L, {})
     }) : null

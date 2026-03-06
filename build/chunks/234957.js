@@ -21,21 +21,21 @@ let m = l.memo(function(e) {
         formatInline: !0
     }).content : null, [_]), {
         isReplyAuthorBlocked: f,
-        isReplyAuthorIgnored: h
+        isReplyAuthorIgnored: E
     } = (0, a.cf)([s.A], () => ({
         isReplyAuthorBlocked: null != _ && s.A.isBlockedForMessage(_),
         isReplyAuthorIgnored: null != _ && s.A.isIgnoredForMessage(_)
-    }), [_]), g = (0, c.X4)(_), E = (0, c.X4)(t);
+    }), [_]), h = (0, c.X4)(_), g = (0, c.X4)(t);
     return (0, i.jsx)(d.A, {
-        repliedAuthor: g,
-        baseAuthor: E,
+        repliedAuthor: h,
+        baseAuthor: g,
         baseMessage: t,
         channel: n,
         referencedMessage: u,
         content: A,
         compact: m,
         isReplyAuthorBlocked: f,
-        isReplyAuthorIgnored: h,
+        isReplyAuthorIgnored: E,
         isReplySpineClickable: !1,
         showReplySpine: !0
     })

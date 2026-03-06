@@ -23,11 +23,11 @@ var l = n(627968),
     b = n(508384),
     C = n(155718),
     j = n(736653),
-    N = n(775602),
-    v = n(861197),
+    v = n(775602),
+    N = n(861197),
     _ = n(942234),
-    S = n(233993),
-    y = n(260509),
+    y = n(233993),
+    S = n(260509),
     E = n(427157),
     T = n(176360),
     M = n(863036),
@@ -116,15 +116,15 @@ function Q(e) {
         }
     }, h = e => {
         let t = w.A.can(W.xBc.ADMINISTRATOR, i) || w.A.can(W.xBc.MANAGE_ROLES, n, void 0, void 0, !0);
-        return n.isGuildStageVoice() && S.Zq.has(e) ? Y.intl.string(Y.t.bTS5lf) : !((!d.aI(e, W.xBc.MANAGE_ROLES) || t) && (null == e || w.A.can(e, i) || t)) && Y.intl.string(Y.t.nOtPMM)
-    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, W.xBc.SEND_MESSAGES), b = d.zy(t.deny, W.xBc.SEND_MESSAGES), j = d.zy(t.deny, W.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
+        return n.isGuildStageVoice() && y.Zq.has(e) ? Y.intl.string(Y.t.bTS5lf) : !((!d.aI(e, W.xBc.MANAGE_ROLES) || t) && (null == e || w.A.can(e, i) || t)) && Y.intl.string(Y.t.nOtPMM)
+    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, W.xBc.SEND_MESSAGES), b = d.zy(t.deny, W.xBc.SEND_MESSAGES), j = d.zy(t.deny, W.xBc.READ_MESSAGE_HISTORY), v = P.A.generateChannelPermissionSpec(a, n, g, {
         createPostsDisabled: f,
         sendMessagesDisabled: b,
         readMessageHistoryDisabled: j
     });
-    return (0, l.jsxs)(v.Ay.Content, {
+    return (0, l.jsxs)(N.Ay.Content, {
         className: Z.uA,
-        children: [N.map((e, n) => (0, l.jsx)(_.A, {
+        children: [v.map((e, n) => (0, l.jsx)(_.A, {
             spec: e,
             allow: t.allow,
             deny: t.deny,
@@ -280,8 +280,8 @@ function K() {
             }
         }, [d]),
         _ = (0, F.A)(d, a),
-        S = (0, j.Ay)(),
-        E = (0, u.bG)([N.A], () => N.A.roleStyle),
+        y = (0, j.Ay)(),
+        E = (0, u.bG)([v.A], () => v.A.roleStyle),
         M = i.useCallback((e, t) => {
             if (null == s) return null;
             (0, f.L3)(e, async () => {
@@ -289,7 +289,7 @@ function K() {
                     id: e,
                     role: i,
                     name: a
-                } = t, r = null != c ? (0, y.af)(c) : null, o = null != i && r === i.id, {
+                } = t, r = null != c ? (0, S.af)(c) : null, o = null != i && r === i.id, {
                     default: d
                 } = await n.e("77168").then(n.bind(n, 495603));
                 return t => (0, l.jsx)(d, {
@@ -320,7 +320,7 @@ function K() {
     };
     null != a && null == a[c.id] && (a[c.id] = U.xT(c.id));
     let w = h.filter(e => a[e.id]?.type === C.r2.ROLE).map(e => (0, l.jsx)(b.A, {
-            theme: S,
+            theme: y,
             roleStyle: E,
             id: e.id,
             role: e,
@@ -339,7 +339,7 @@ function K() {
             return (0, l.jsx)(b.A, {
                 id: e.id,
                 guild: c,
-                theme: S,
+                theme: y,
                 roleStyle: E,
                 "aria-label": V.Ay.getUserTag(e, {
                     decoration: "never"
@@ -362,14 +362,14 @@ function K() {
                 })
             }, `${r}-${e.id}`)
         }).value();
-    return (0, l.jsx)(v.Ay.Sidebar, {
+    return (0, l.jsx)(N.Ay.Sidebar, {
         className: Z.uA,
         scrollable: !0,
         children: (0, l.jsxs)(m.VQ0, {
             onItemSelect: p.G9,
             selectedItem: r,
             orientation: "vertical",
-            children: [(e = (0, g.Mw)(S) ? n(546716) : n(233497), (0, l.jsx)(m.YNO, {
+            children: [(e = (0, g.Mw)(y) ? n(546716) : n(233497), (0, l.jsx)(m.YNO, {
                 targetElementRef: t,
                 renderPopout: e => {
                     let {
@@ -430,7 +430,7 @@ function ee() {
     } = (0, u.cf)([T.A], () => T.A);
     if (null == (0, u.bG)([L.A], () => null != e ? L.A.getGuild(e.getGuildId()) : null) || null == e || null == t || null == n) return null;
     let i = t[n];
-    return (0, l.jsxs)(v.Ay, {
+    return (0, l.jsxs)(N.Ay, {
         className: Z.kL,
         children: [(0, l.jsx)(K, {}), (0, l.jsx)(Q, {
             overwrite: i

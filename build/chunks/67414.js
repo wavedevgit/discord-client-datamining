@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(287809),
     A = n(954571),
     f = n(242874),
-    h = n(275759),
-    g = n(979474),
-    E = n(51501),
+    E = n(275759),
+    h = n(979474),
+    g = n(51501),
     p = n(788868),
     x = n(652215),
     C = n(778712),
@@ -75,13 +75,13 @@ function v(e) {
         analyticsPage: S,
         analyticsSection: v,
         innerRef: M
-    } = e, j = (0, r.bG)([_.default], () => _.default.getCurrentUser()), {
-        analyticsLocations: O
-    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), b = (0, r.bG)([h.Ay], () => h.Ay.getFriendAnniversaryYears(N.id)), y = (0, E.$)(t), {
+    } = e, O = (0, r.bG)([_.default], () => _.default.getCurrentUser()), {
+        analyticsLocations: j
+    } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), b = (0, r.bG)([E.Ay], () => E.Ay.getFriendAnniversaryYears(N.id)), y = (0, g.$)(t), {
         openGiftModal: L
-    } = (0, g.$)({
+    } = (0, h.$)({
         giftRecipient: N,
-        analyticsLocations: O,
+        analyticsLocations: j,
         analyticsLocation: y.chat,
         analyticsObject: {
             page: S,
@@ -97,7 +97,7 @@ function v(e) {
             type: a.ImpressionTypes.VIEW,
             properties: {
                 gift_intent_type: t,
-                num_friend_anniversaries: h.Ay.getFriendAnniversaries().length
+                num_friend_anniversaries: E.Ay.getFriendAnniversaries().length
             }
         })
     }, [t]);
@@ -114,10 +114,10 @@ function v(e) {
                     children: [(0, i.jsx)(R, {
                         user: N,
                         ariaLabel: N.username,
-                        showCutout: null != j
-                    }), null != j && (0, i.jsx)(o.A, {
+                        showCutout: null != O
+                    }), null != O && (0, i.jsx)(o.A, {
                         className: T.GM,
-                        user: j,
+                        user: O,
                         "aria-label": N.username,
                         size: C._3.SIZE_24
                     })]
@@ -154,7 +154,7 @@ function v(e) {
                         e.stopPropagation(), A.default.track(x.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,
                             cta_type: "send_message",
-                            location_stack: O
+                            location_stack: j
                         }), (0, s.mMO)(async () => {
                             let {
                                 default: e
@@ -162,7 +162,7 @@ function v(e) {
                             return n => (0, i.jsx)(e, {
                                 ...n,
                                 giftIntentType: t,
-                                analyticsLocationHistory: O
+                                analyticsLocationHistory: j
                             })
                         })
                     }
@@ -178,7 +178,7 @@ function v(e) {
                         A.default.track(x.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
                             gift_intent_type: t,
                             affinity: n?.dmProbability,
-                            location_stack: O
+                            location_stack: j
                         }), L()
                     }
                 })]

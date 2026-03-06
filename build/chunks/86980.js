@@ -21,27 +21,27 @@ var r = n(284009),
     N = n(652215);
 async function R(e) {
     var t, n, r, R, S;
-    let O, C, {
-            applicationId: p,
+    let O, p, {
+            applicationId: C,
             skuId: P,
             initialPlanId: D,
             analyticsLocations: M,
-            analyticsLocationObject: g
+            analyticsLocationObject: U
         } = e,
-        U = I.A.get(P);
-    if (null == U) {
-        let e = (await (0, a.JI)(p)).find(e => e.sku.id === P);
-        l()(null != e, "Could not find store listing for sku"), e.sku.type === N.Puh.SUBSCRIPTION_GROUP && await (0, u.vz)(p, e.id)
+        g = I.A.get(P);
+    if (null == g) {
+        let e = (await (0, a.JI)(C)).find(e => e.sku.id === P);
+        l()(null != e, "Could not find store listing for sku"), e.sku.type === N.Puh.SUBSCRIPTION_GROUP && await (0, u.vz)(C, e.id)
     }
-    U = U ?? I.A.get(P), l()(null != U && U.applicationId === p, "SKU must belong to application"), U.type !== N.Puh.SUBSCRIPTION || (0, c.B)([U.id]) || await (0, o.ur)(U.id);
-    let m = null == (C = null != (O = (0, E.LU)({
-        applicationId: p
-    })) ? A.A.getWindow(O) : void 0) || C.closed ? s.SYi : s.KX8;
-    if (U.type !== N.Puh.SUBSCRIPTION) return new Promise((e, t) => {
+    g = g ?? I.A.get(P), l()(null != g && g.applicationId === C, "SKU must belong to application"), g.type !== N.Puh.SUBSCRIPTION || (0, c.B)([g.id]) || await (0, o.ur)(g.id);
+    let m = null == (p = null != (O = (0, E.LU)({
+        applicationId: C
+    })) ? A.A.getWindow(O) : void 0) || p.closed ? s.SYi : s.KX8;
+    if (g.type !== N.Puh.SUBSCRIPTION) return new Promise((e, t) => {
         (0, d.A)({
-            applicationId: p,
+            applicationId: C,
             skuId: P,
-            analyticsLocationObject: g,
+            analyticsLocationObject: U,
             analyticsLocations: M,
             contextKey: m,
             onComplete: t => {
@@ -52,7 +52,7 @@ async function R(e) {
             }
         })
     });
-    await (t = p, n = P, r = D, R = g, S = M, (0, _.l)({
+    await (t = C, n = P, r = D, R = U, S = M, (0, _.l)({
         applicationId: t,
         skuId: n,
         initialPlanId: r,

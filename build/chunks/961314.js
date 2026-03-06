@@ -29,7 +29,7 @@ function h(e) {
             status: m ?? t.status,
             liveText: d.intl.string(d.t.kM6e4G),
             className: u.aF,
-            textVariant: "text-lg/semibold",
+            textVariant: "text-md/semibold",
             eventType: t.entity_type,
             guildEventId: t?.id,
             recurrenceId: n

@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(71393),
     A = n(287809),
     f = n(488926),
-    h = n(661191),
-    g = n(529942),
-    E = n(164956),
+    E = n(661191),
+    h = n(529942),
+    g = n(164956),
     p = n(209700),
     x = n(652215),
     C = n(985018),
@@ -29,11 +29,11 @@ function T(e) {
     } = e, n = (0, s.bG)([A.default], () => A.default.getCurrentUser()), T = (0, s.bG)([_.A], () => _.A.getGuild(t)), S = (0, s.bG)([m.A], () => m.A.getRolesSnapshot(t)), R = (0, s.bG)([m.A], () => m.A.getSortedRoles(t)), {
         impersonateType: v,
         viewingRoles: M
-    } = (0, s.cf)([E.A], () => ({
-        impersonateType: E.A.getImpersonateType(t),
-        viewingRoles: E.A.getViewingRoles(t)
-    })), j = v === p._.SERVER_SHOP, O = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), b = null != T ? S[(0, c.af)(T)] : null, [y, L] = l.useState(() => {
-        let e = null == M ? [] : h.default.keys(M);
+    } = (0, s.cf)([g.A], () => ({
+        impersonateType: g.A.getImpersonateType(t),
+        viewingRoles: g.A.getViewingRoles(t)
+    })), O = v === p._.SERVER_SHOP, j = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), b = null != T ? S[(0, c.af)(T)] : null, [y, L] = l.useState(() => {
+        let e = null == M ? [] : E.default.keys(M);
         return null != b && e.push(b.id), e
     }), D = l.useRef(T);
     l.useEffect(() => {
@@ -43,14 +43,14 @@ function T(e) {
             for (let t of y) {
                 let n = S[t];
                 null != n && (e[t] = n)
-            }(0, g.IA)(t.id, {
+            }(0, h.IA)(t.id, {
                 type: v,
                 roles: e
             })
         }
     }, [y, v, S]);
-    let U = null != T && null != n && null != O ? R.find(e => O.roles.includes(e.id)) : void 0,
-        P = l.useMemo(() => null != T && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !j || e.tags?.subscription_listing_id != null).filter(e => U?.id === e.id || f.wO(T, n.id, U, e)) : [], [T, n, j, U, R]),
+    let U = null != T && null != n && null != j ? R.find(e => j.roles.includes(e.id)) : void 0,
+        P = l.useMemo(() => null != T && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !O || e.tags?.subscription_listing_id != null).filter(e => U?.id === e.id || f.wO(T, n.id, U, e)) : [], [T, n, O, U, R]),
         k = l.useMemo(() => {
             let e = Array.from(P).map(e => ({
                 leading: N(e),
@@ -67,9 +67,9 @@ function T(e) {
                 disabled: !0
             }), e
         }, [P, T, b]);
-    if (null == n || null == T || null == O) return null;
+    if (null == n || null == T || null == j) return null;
     let G = {};
-    return (O.roles.forEach(e => {
+    return (j.roles.forEach(e => {
         let t = S[e];
         null != t && (G[t.id] = t)
     }), a.zy(f.aH({

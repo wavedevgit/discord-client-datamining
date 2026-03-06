@@ -19,8 +19,8 @@ var i = n(242934),
     h = n(563312),
     T = n(794782),
     f = n(974930),
-    y = n(988794),
-    m = n(652215),
+    m = n(988794),
+    y = n(652215),
     v = n(985018);
 let p = "YYYYMMDDTHHmmss",
     N = "YYYY-MM-DDTHH:mm:ss",
@@ -32,13 +32,13 @@ function G(t, e, n, i) {
         b = (0, u.bG)([_.Ay], () => _.Ay.getGuildScheduledEvent(t), [t]),
         I = (0, u.bG)([A.A], () => A.A.getGuild(e), [e]);
     if (G || null == D || null == b) return null;
-    a = b.entity_type === y.Ps.EXTERNAL ? b.entity_metadata.location : null != n && null != I ? v.intl.formatToPlainString(v.t["2t8L04"], {
+    a = b.entity_type === m.Ps.EXTERNAL ? b.entity_metadata.location : null != n && null != I ? v.intl.formatToPlainString(v.t["2t8L04"], {
         channelName: n.name,
         guildName: I.name
     }) : v.intl.string(v.t.VSgOVg);
     let C = d()(b.scheduled_start_time),
         x = null != b.scheduled_end_time ? d()(b.scheduled_end_time) : C,
-        w = null != b.description && "" !== b.description ? E.Ay.unparse(b.description, n?.id ?? m.dJq, !0) : "",
+        w = null != b.description && "" !== b.description ? E.Ay.unparse(b.description, n?.id ?? y.dJq, !0) : "",
         O = (0, T.Sn)(b.recurrence_rule),
         R = null != O ? (0, f.X7)(O) : null,
         {

@@ -34,9 +34,9 @@ var i = n(627968),
     P = n(788868),
     M = n(985018),
     w = n(884795),
-    D = n(906121);
+    O = n(906121);
 
-function O(e) {
+function D(e) {
     T.default.track(R.HAw.PREMIUM_PROMOTION_OPENED, {
         location_page: null != e.guild_id ? R.liQ.GUILD_CHANNEL : R.liQ.DM_CHANNEL,
         location_section: R.JJy.STICKER_POPOUT
@@ -56,7 +56,7 @@ function k(e) {
         }), (0, i.jsxs)(p.A, {
             direction: p.A.Direction.VERTICAL,
             justify: p.A.Justify.CENTER,
-            className: D.bM,
+            className: O.bM,
             children: [(0, i.jsx)(u.Text, {
                 variant: "text-md/semibold",
                 children: (0, i.jsx)(o.A, {
@@ -192,7 +192,7 @@ let U = e => {
             $ = "Custom Sticker Popout";
         G ? t = F ? J ? M.intl.string(M.t.fZ0DiG) : M.intl.string(M.t["1f6D9m"]) : X ? M.intl.string(M.t.yHmoR9) : M.intl.string(M.t.vZaScH) : F ? (t = J ? M.intl.string(M.t.jNphpt) : M.intl.string(M.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = M.intl.string(M.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = M.intl.format(M.t.hGWuxU, {
             openPremiumSettings: () => {
-                O(r), o()
+                D(r), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
         let ee = !Z && !F && X && G;
@@ -212,7 +212,7 @@ let U = e => {
         {
             let e;
             return (0, i.jsxs)(f.Uq, {
-                className: D.Bm,
+                className: O.Bm,
                 children: [(e = async () => {
                     if (null == S || F) return;
                     o();
@@ -221,12 +221,12 @@ let U = e => {
                         await _.A.joinGuild(e), _.A.transitionToGuildSync(e)
                     } catch {}
                 }, (0, i.jsxs)("div", {
-                    className: D.gH,
+                    className: O.gH,
                     children: [(0, i.jsx)(k, {
                         description: t,
                         sticker: n
                     }), Z && (0, i.jsx)(E.A, {
-                        className: D.lI,
+                        className: O.lI,
                         subscriptionTier: P.pe.TIER_2,
                         size: c.$n.Sizes.SMALL,
                         fullWidth: !0,
@@ -238,7 +238,7 @@ let U = e => {
                         premiumModalAnalyticsLocation: Y
                     }), ee && (0, i.jsx)("div", {
                         "data-button-hoisted-classname-wrapper": !0,
-                        className: D.lI,
+                        className: O.lI,
                         children: (0, i.jsx)(u.Button, {
                             variant: "primary",
                             size: "sm",
@@ -252,11 +252,11 @@ let U = e => {
                     let e = (S?.stickers ?? []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
                         t = null != S ? g.GO.createFromDiscoverableGuild(S) : g.GO.createFromGuildRecord(B);
                     return (0, i.jsxs)("div", {
-                        className: D.tl,
+                        className: O.tl,
                         children: [(0, i.jsx)(u.Text, {
                             variant: "text-sm/normal",
                             color: "text-subtle",
-                            className: D.YW,
+                            className: O.YW,
                             children: F ? M.intl.string(M.t.kx6pEG) : M.intl.string(M.t.pDE7Gb)
                         }), (0, i.jsx)(x.G7, {
                             expressionSourceGuild: t,
@@ -267,18 +267,18 @@ let U = e => {
                                 onClick: () => {
                                     C(), V(!H)
                                 },
-                                className: D.wK,
+                                className: O.wK,
                                 children: (0, i.jsxs)(p.A, {
                                     children: [(0, i.jsx)(u.Text, {
-                                        className: D.__invalid_showMoreEmojisLabel,
+                                        className: O.__invalid_showMoreEmojisLabel,
                                         variant: "text-xs/normal",
                                         color: "none",
                                         children: M.intl.string(M.t.vtH5hn)
                                     }), (0, i.jsx)(u.abt, {
                                         size: "md",
                                         color: "currentColor",
-                                        className: a()(D.ZB, {
-                                            [D.cP]: !H
+                                        className: a()(O.ZB, {
+                                            [O.cP]: !H
                                         })
                                     })]
                                 })
@@ -286,12 +286,12 @@ let U = e => {
                                 wrap: p.A.Wrap.WRAP,
                                 align: p.A.Align.START,
                                 justify: p.A.Justify.START,
-                                className: D.LX,
+                                className: O.LX,
                                 children: e.map(e => (0, i.jsx)(d.m, {
                                     text: e.name,
                                     ...f.Uk,
                                     children: (0, i.jsx)("div", {
-                                        className: a()(D.Th, {
+                                        className: a()(O.Th, {
                                             [w.vT]: null != W && W !== e.id
                                         }),
                                         onMouseEnter: () => {
@@ -330,7 +330,7 @@ function B(e) {
             sticker: l,
             description: M.intl.format(M.t.hGWuxU, {
                 openPremiumSettings: () => {
-                    n(), O(t)
+                    n(), D(t)
                 }
             })
         })

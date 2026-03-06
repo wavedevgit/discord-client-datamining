@@ -19,11 +19,11 @@ function m(e) {
         analyticsLocations: m,
         closeLayer: _
     } = e, [A, f] = l.useState(!1), {
-        analyticsLocations: h
-    } = (0, s.Ay)(m ?? []), g = (0, a.bG)([o.default], () => o.default.getCurrentUser()), E = g?.isPremiumGroupMember();
+        analyticsLocations: E
+    } = (0, s.Ay)(m ?? []), h = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = h?.isPremiumGroupMember();
     async function p() {
         f(!0), await (0, c.g)({
-            analyticsLocations: h,
+            analyticsLocations: E,
             analyticsLocation: {
                 object: d.ZSU.BUTTON_CTA,
                 objectType: d.AnalyticsObjectTypes.BUY,
@@ -43,6 +43,6 @@ function m(e) {
         text: u.intl.string(u.t.gKmQ1G),
         onClick: p,
         loading: A,
-        disabled: E
+        disabled: g
     })
 }

@@ -312,19 +312,18 @@ class w extends r.PureComponent {
     }
     renderImportHelp() {
         let e, {
-                applicationViewItems: t,
-                filterQuery: n
-            } = this.props,
-            r = t.length > 0;
-        return r ? null : (e = "" !== n ? b.intl.format(b.t["4Q1TAr"], {
+            applicationViewItems: t,
+            filterQuery: n
+        } = this.props;
+        return t.length > 0 ? null : (e = "" !== n ? b.intl.format(b.t["4Q1TAr"], {
             query: n
         }) : b.intl.string(b.t["0Y+0PY"]), (0, i.jsxs)("div", {
-            className: r ? O.MG : O.mv,
+            className: O.mv,
             children: [(0, i.jsx)("div", {
                 className: O.Zd
             }), (0, i.jsx)(p.A, {
                 grow: 0,
-                shrink: +!!r,
+                shrink: 0,
                 direction: p.A.Direction.VERTICAL,
                 children: (0, i.jsxs)("div", {
                     className: O.q6,

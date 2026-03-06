@@ -31,7 +31,7 @@ function g(e) {
         heading: p.intl.string(p.t["LPJmL/"]),
         scrollTargetId: m.bk.ROLES,
         ...g,
-        children: (0, l.jsx)(u.Y, {
+        children: (0, l.jsx)(u.YR, {
             userId: t,
             guild: I,
             roles: v,

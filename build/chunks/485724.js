@@ -1,6 +1,6 @@
 /** chunk id: 485724 params = (module,exports,require) **/
 n.d(t, {
-    J: () => D.J,
+    J: () => O.J,
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
@@ -35,8 +35,8 @@ var i = n(627968),
     P = n(138175),
     M = n(112150),
     w = n(574660),
-    D = n(768349),
-    O = n(985018),
+    O = n(768349),
+    D = n(985018),
     k = n(355208);
 
 function U(e) {
@@ -57,7 +57,7 @@ function U(e) {
     }), {
         staticBannerSrc: y,
         videoBannerSrc: L,
-        bannerAspectRatio: D
+        bannerAspectRatio: O
     } = (0, M.f)(t), k = (0, s.bG)([E.default], () => a ?? E.default.getId(), [a]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
@@ -74,7 +74,7 @@ function U(e) {
     }), z = null != b && T && Y, Q = W && T, K = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = l.useMemo(() => {
         let e = [];
         return T ? K ? e.push({
-            label: O.intl.string(O.t.RscU7I),
+            label: D.intl.string(D.t.RscU7I),
             trackingArea: R.kY.PLAY,
             onClick() {
                 A.A.launchFrame({
@@ -82,7 +82,7 @@ function U(e) {
                 })
             }
         }) : (Q && e.push({
-            label: null == H ? O.intl.string(O.t.RscU7I) : V ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
+            label: null == H ? D.intl.string(D.t.RscU7I) : V ? D.intl.string(D.t.DPfdsq) : D.intl.string(D.t.sqe0hj),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, d.su)({
@@ -97,7 +97,7 @@ function U(e) {
             },
             disabled: V
         }), !Q && z && e.push({
-            label: O.intl.string(O.t.JeK1Wg),
+            label: D.intl.string(D.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, m.Q)({
@@ -119,7 +119,7 @@ function U(e) {
         staticBannerSrc: y,
         videoBannerSrc: L,
         onClickBanner: J,
-        bannerAspectRatio: D,
+        bannerAspectRatio: O,
         iconSrc: v,
         info: $,
         actions: Z,
@@ -151,7 +151,7 @@ function G(e) {
                 compactDisplay: "short"
             }),
             i = t.directoryEntry?.guild_count ?? 0;
-        return 0 === i ? null : O.intl.format(O.t["6IW6Wi"], {
+        return 0 === i ? null : D.intl.format(D.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
     }, [t.directoryEntry?.guild_count, n, a]), c = t.categories?.at(0)?.name;
@@ -193,7 +193,7 @@ function B(e) {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
-            activityText: O.intl.formatToPlainString(O.t["IJa+46"], {
+            activityText: D.intl.formatToPlainString(D.t["IJa+46"], {
                 count: u.length
             })
         });
@@ -201,11 +201,11 @@ function B(e) {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"
-            }), O.intl.string(O.t.TsWCdW)]
+            }), D.intl.string(D.t.TsWCdW)]
         });
-        let e = r > 0 ? O.intl.format(O.t.z8EAJW, {
+        let e = r > 0 ? D.intl.format(D.t.z8EAJW, {
             count: r
-        }) : O.intl.string(O.t.RjceQU);
+        }) : D.intl.string(D.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "xxs",

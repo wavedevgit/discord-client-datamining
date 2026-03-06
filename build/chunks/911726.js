@@ -14,9 +14,9 @@ var i, l = n(627968),
     _ = n(21161),
     A = n(513609),
     f = n(928830),
-    h = n(567771),
-    g = n(780964),
-    E = n(840065),
+    E = n(567771),
+    h = n(780964),
+    g = n(840065),
     p = n(473145),
     x = n(763754),
     C = n(888675),
@@ -48,14 +48,14 @@ let S = {
 var R = ((i = {}).TOP_LEFT = "TOP_LEFT", i.TOP_RIGHT = "TOP_RIGHT", i.BOTTOM_LEFT = "BOTTOM_LEFT", i.BOTTOM_RIGHT = "BOTTOM_RIGHT", i);
 let v = ["TOP_LEFT", "TOP_RIGHT"],
     M = (0, d.xI)(u.A.USER_PREMIUM_GUILD_SUBSCRIPTION_EASTER_EGG_SIZE),
-    j = {
+    O = {
         leafPosition: {
             x: 85,
             y: 125
         },
         leafRotationDirection: 1
     },
-    O = Object.freeze({
+    j = Object.freeze({
         TOP_LEFT: {
             getConfettiPosition: e => ({
                 x: e - 11,
@@ -87,7 +87,7 @@ let v = ["TOP_LEFT", "TOP_RIGHT"],
             leafRotationDirection: -1
         },
         BOTTOM_LEFT: {
-            ...j,
+            ...O,
             getConfettiPosition: e => ({
                 x: e - 11,
                 y: 125
@@ -98,7 +98,7 @@ let v = ["TOP_LEFT", "TOP_RIGHT"],
             }
         },
         BOTTOM_RIGHT: {
-            ...j,
+            ...O,
             getConfettiPosition: e => ({
                 x: 11,
                 y: 125
@@ -142,9 +142,9 @@ function k(e) {
                 return "BOTTOM_RIGHT"
         }
     }()), {
-        createMultipleConfettiAt: h,
-        confettiCanvas: g
-    } = a.useContext(_.x), [E, p] = a.useState(null), x = (0, o.f9)(g, E), C = function(e, t) {
+        createMultipleConfettiAt: E,
+        confettiCanvas: h
+    } = a.useContext(_.x), [g, p] = a.useState(null), x = (0, o.f9)(h, g), C = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -159,7 +159,7 @@ function k(e) {
             case "exit":
                 return "enter"
         }
-    }(u, f), I = v.includes(f), T = I && "exit" === u, j = a.useCallback(e => {
+    }(u, f), I = v.includes(f), T = I && "exit" === u, O = a.useCallback(e => {
         A(e)
     }, []), k = a.useCallback(() => {
         "exit" === u && t?.()
@@ -170,20 +170,20 @@ function k(e) {
         if ("confetti" === u) {
             let {
                 confettiVelocityDirection: e
-            } = O[f], t = function(e, t) {
+            } = j[f], t = function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : M,
                     i = e?.getBoundingClientRect();
                 if (null == i) return {
                     x: 0,
                     y: 0
                 };
-                let l = O[t].getConfettiPosition(n);
+                let l = j[t].getConfettiPosition(n);
                 return {
                     x: i.left + l.x,
                     y: i.top + l.y
                 }
             }(d.current, f, r);
-            h(t.x, t.y, {
+            E(t.x, t.y, {
                 velocity: {
                     type: "static-random",
                     minValue: {
@@ -197,9 +197,9 @@ function k(e) {
                 }
             })
         }
-    }, [h, f, u, r]), a.useEffect(() => {
+    }, [E, f, u, r]), a.useEffect(() => {
         if (I && "leaf_fall" === u) {
-            let e = O[f].leafRotationDirection;
+            let e = j[f].leafRotationDirection;
             x.createConfetti({
                 id: `${b}-${(0,c.A)()}`,
                 position: {
@@ -210,7 +210,7 @@ function k(e) {
                             x: 0,
                             y: 0
                         };
-                        let i = O[t];
+                        let i = j[t];
                         return {
                             x: n.left + i.leafPosition.x,
                             y: n.top + i.leafPosition.y
@@ -270,7 +270,7 @@ function k(e) {
                 }),
                 nextScene: C,
                 sceneSegments: S,
-                onScenePlay: j,
+                onScenePlay: O,
                 onSceneComplete: k,
                 importData: P,
                 pauseWhileUnfocused: !1
@@ -298,7 +298,7 @@ function G(e) {
             }
             return null
         }(n),
-        d = (0, h.A)(n),
+        d = (0, E.A)(n),
         {
             createMultipleConfettiAt: u,
             addClickListener: S
@@ -306,11 +306,11 @@ function G(e) {
         [R, v] = a.useState(!1),
         M = a.useRef(null),
         {
-            reducedMotion: j
+            reducedMotion: O
         } = a.useContext(m.CZY),
-        O = (0, x.Ay)(n),
-        y = O.nick,
-        L = s(O);
+        j = (0, x.Ay)(n),
+        y = j.nick,
+        L = s(j);
     t = null == c || null == r ? d > 1 ? T.intl.format(T.t.yfC9ds, {
         username: y,
         usernameHook: L,
@@ -331,20 +331,20 @@ function G(e) {
         newTierName: (0, p.gb)(c)
     });
     let D = a.useCallback(() => {
-            if (!j.enabled)
+            if (!O.enabled)
                 if (R || 0 !== Math.floor(50 * Math.random())) {
                     let e = M.current?.getBoundingClientRect();
                     if (null == e) return;
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else v(!0)
-        }, [u, j, R]),
+        }, [u, O, R]),
         U = a.useCallback(() => {
             v(!1)
         }, []),
         P = a.useCallback(() => {
             (0, f.O9)({
                 settingsVisible: !0
-            }), (0, E.openUserSettings)(g.X.POGGERMODE_PANEL, {
+            }), (0, g.openUserSettings)(h.X.POGGERMODE_PANEL, {
                 section: I.nc_.POGGERMODE
             }), v(!1)
         }, []),

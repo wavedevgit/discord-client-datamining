@@ -26,7 +26,7 @@ let x = (0, d.A)((0, r.A)(function(e) {
         onSelect: d,
         onInteraction: s,
         context: E
-    } = e, x = n.id, h = t.isNonUserBot(), C = t.id === g.default.getId(), S = (0, c.A)(t), v = (0, A.A)(t, r, x), j = (0, b.n)({
+    } = e, x = n.id, h = t.isNonUserBot(), C = t.id === g.default.getId(), S = (0, c.A)(t), j = (0, A.A)(t, r, x), v = (0, b.n)({
         isOwnSettings: C,
         userId: t.id,
         channelId: x,
@@ -46,8 +46,8 @@ let x = (0, d.A)((0, r.A)(function(e) {
         variant: "fixed",
         children: !h && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(l.rXV, {
-                children: [S, v]
-            }), y, j, !C && (0, i.jsx)(l.rXV, {
+                children: [S, j]
+            }), y, v, !C && (0, i.jsx)(l.rXV, {
                 children: (0, i.jsxs)(l.Drp, {
                     id: "more-options",
                     label: m.intl.string(m.t.PdRCRg),

@@ -2,7 +2,7 @@
 n.d(t, {
     O: () => I,
     default: () => p,
-    n: () => j
+    n: () => v
 });
 var i = n(627968);
 n(64700);
@@ -24,9 +24,9 @@ var l = n(397927),
     h = n(243949),
     C = n(972432),
     S = n(652215),
-    v = n(985018);
+    j = n(985018);
 
-function j(e) {
+function v(e) {
     let {
         isOwnSettings: t,
         userId: n,
@@ -39,7 +39,7 @@ function j(e) {
         channelId: a,
         showGuildProfile: !0,
         icon: l.nys,
-        label: v.intl.string(v.t.iXAna6)
+        label: j.intl.string(j.t.iXAna6)
     }), c = (0, m.A)(n, d, l.oyn), g = (0, C.A)(n), b = (0, x.A)(n), f = (0, o.A)(n), E = (0, u.A)(n), S = (0, A.A)();
     return [(0, i.jsxs)(l.rXV, {
         children: [s, c]
@@ -57,7 +57,7 @@ function I(e, t, n) {
         }),
         r = (0, g.A)({
             id: e.id,
-            label: v.intl.string(v.t["/AXYnE"])
+            label: j.intl.string(j.t["/AXYnE"])
         }),
         d = (0, E.A)({
             user: e,
@@ -85,20 +85,20 @@ let p = (0, d.A)((0, r.A)(function(e) {
         onSelect: r,
         onInteraction: d,
         context: s
-    } = e, o = n.id, u = t.isNonUserBot(), c = t.id === b.default.getId(), A = j({
+    } = e, o = n.id, u = t.isNonUserBot(), c = t.id === b.default.getId(), A = v({
         isOwnSettings: c,
         userId: t.id,
         channelId: o,
         context: s
     }), f = I(t, o), E = (0, g.A)({
         id: t.id,
-        label: v.intl.string(v.t["/AXYnE"])
+        label: j.intl.string(j.t["/AXYnE"])
     });
     return (0, i.jsx)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "user-context",
         onClose: a.Z_,
-        "aria-label": v.intl.string(v.t.liqwPJ),
+        "aria-label": j.intl.string(j.t.liqwPJ),
         onSelect: r,
         onInteraction: d,
         variant: "fixed",
@@ -106,7 +106,7 @@ let p = (0, d.A)((0, r.A)(function(e) {
             children: [A, !c && (0, i.jsx)(l.rXV, {
                 children: (0, i.jsx)(l.Drp, {
                     id: "more-options",
-                    label: v.intl.string(v.t.PdRCRg),
+                    label: j.intl.string(j.t.PdRCRg),
                     children: f
                 })
             }), c && (0, i.jsx)(l.rXV, {

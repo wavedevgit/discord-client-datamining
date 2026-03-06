@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(447215),
     A = n(888675),
     f = n(533567),
-    h = n(306417),
-    g = n(412136),
-    E = n(985018),
+    E = n(306417),
+    h = n(412136),
+    g = n(985018),
     p = n(938125);
 
 function x() {
@@ -68,7 +68,7 @@ function I(e) {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 scaleFontToUserSetting: !0,
-                children: E.intl.string(E.t["a+lSZ/"])
+                children: g.intl.string(g.t["a+lSZ/"])
             });
             break;
         case "VICTOR":
@@ -84,7 +84,7 @@ function I(e) {
                         className: p.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
-                    }), (0, i.jsx)(h.Vx, {
+                    }), (0, i.jsx)(E.Vx, {
                         size: 16,
                         className: p.To,
                         isVictor: !0,
@@ -94,7 +94,7 @@ function I(e) {
                     variant: "text-xs/medium",
                     color: a,
                     scaleFontToUserSetting: !0,
-                    children: [E.intl.string(E.t.ufIDIx), " • ", s, "%"]
+                    children: [g.intl.string(g.t.ufIDIx), " • ", s, "%"]
                 })]
             });
             break;
@@ -107,7 +107,7 @@ function I(e) {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     scaleFontToUserSetting: !0,
-                    children: E.intl.string(E.t.kPN9si)
+                    children: g.intl.string(g.t.kPN9si)
                 }), (0, i.jsxs)(c.Text, {
                     variant: "text-xs/medium",
                     color: a,
@@ -155,7 +155,7 @@ function T(e) {
             size: "sm",
             onClick: a,
             variant: "secondary",
-            text: E.intl.string(E.t.Jw7Vbf)
+            text: g.intl.string(g.t.Jw7Vbf)
         })]
     })
 }
@@ -166,7 +166,7 @@ function N(e) {
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, f.A)(o), [o]), h = (0, s.EJ)(u?.questionText ?? "", g.TU), x = (0, m.Ay)(t), C = (0, _.P)({
+    } = e, o = t.embeds[0], u = l.useMemo(() => (0, f.A)(o), [o]), E = (0, s.EJ)(u?.questionText ?? "", h.TU), x = (0, m.Ay)(t), C = (0, _.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
@@ -186,10 +186,10 @@ function N(e) {
             }),
             timestamp: t.timestamp,
             compact: a,
-            children: E.intl.format(E.t.VJcK41, {
+            children: g.intl.format(g.t.VJcK41, {
                 username: x.nick,
                 usernameHook: C(x),
-                title: h,
+                title: E,
                 titleOnClick: N
             })
         }), (0, i.jsx)(T, {

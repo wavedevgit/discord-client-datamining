@@ -151,7 +151,7 @@ let w = [M.G2.HOME, M.G2.ORBS],
                         let p = e.sortedSkuIds;
                         u = (0, n.jsx)(L.A, {
                             title: o === M.G2.ORBS ? D.intl.string(D.t.dFgeuZ) : D.intl.string(D.t.NSv5KV),
-                            isLoading: A || l,
+                            isLoading: l,
                             numVisibleItems: s,
                             sortedSkuIds: p,
                             buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? H.w : void 0,

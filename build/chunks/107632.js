@@ -1,54 +1,54 @@
 /** chunk id: 107632 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     default: () => W
 });
-var l = n(627968);
-n(64700);
-var i = n(311907),
-    r = n(397927),
-    a = n(442433),
-    d = n(847767),
-    s = n(358367),
-    o = n(155718),
-    u = n(468389),
-    c = n(793574),
-    A = n(810845),
-    g = n(854182),
-    E = n(734337),
-    h = n(855187),
-    m = n(479335),
-    C = n(50268),
-    b = n(346247),
-    M = n(235052),
-    x = n(222311),
-    f = n(237749),
-    I = n(734057),
-    S = n(309010),
-    p = n(803664),
-    y = n(29293),
-    G = n(497600),
-    N = n(291247),
-    O = n(773699),
-    T = n(239211),
-    _ = n(707378),
-    j = n(984894),
-    v = n(399476),
-    U = n(889460),
-    R = n(448290),
-    B = n(301541),
-    D = n(252726),
-    P = n(313998),
-    L = n(198229),
-    V = n(243949),
-    k = n(180798),
-    F = n(972432),
-    w = n(77544),
-    K = n(652215),
-    X = n(985018);
+var l = t(627968);
+t(64700);
+var i = t(311907),
+    r = t(397927),
+    a = t(442433),
+    d = t(847767),
+    s = t(358367),
+    o = t(155718),
+    u = t(468389),
+    c = t(793574),
+    A = t(810845),
+    g = t(854182),
+    E = t(734337),
+    h = t(855187),
+    m = t(479335),
+    C = t(50268),
+    b = t(346247),
+    M = t(235052),
+    x = t(222311),
+    f = t(237749),
+    I = t(734057),
+    S = t(309010),
+    p = t(803664),
+    y = t(29293),
+    G = t(497600),
+    N = t(291247),
+    O = t(773699),
+    T = t(239211),
+    _ = t(707378),
+    j = t(984894),
+    U = t(399476),
+    v = t(889460),
+    R = t(448290),
+    B = t(301541),
+    D = t(252726),
+    P = t(313998),
+    L = t(198229),
+    V = t(243949),
+    k = t(180798),
+    F = t(972432),
+    w = t(77544),
+    K = t(652215),
+    X = t(985018);
 let W = (0, s.A)((0, d.A)(function(e) {
     let {
-        user: t,
-        guildId: n,
+        user: n,
+        guildId: t,
         channel: d,
         showMediaItems: s = !1,
         showChatItems: c = !0,
@@ -64,56 +64,56 @@ let W = (0, s.A)((0, d.A)(function(e) {
         page: K.liQ.GUILD_CHANNEL,
         section: K.JJy.CHAT_USERNAME,
         object: K.ZSU.CONTEXT_MENU_ITEM
-    }, et = (0, V.A)({
-        userId: t.id,
-        guildId: n,
+    }, en = (0, V.A)({
+        userId: n.id,
+        guildId: t,
         channelId: $,
         showGuildProfile: !0
-    }), en = (0, R.A)(t, n, q), el = (0, B.A)(t.id, q), ei = (0, w.A)(t.id), er = (0, _.A)({
-        user: t,
+    }), et = (0, R.A)(n, t, q), el = (0, B.A)(n.id, q), ei = (0, w.A)(n.id), er = (0, _.A)({
+        user: n,
         context: q
     }), ea = (0, G.A)({
-        user: t,
-        guildId: n,
+        user: n,
+        guildId: t,
         channelId: $,
         context: q
     }), ed = (0, y.A)({
-        user: t
-    }), es = (0, F.A)(t.id), eo = (0, L.A)(t.id), eu = (0, m.u)({
-        userId: t.id,
+        user: n
+    }), es = (0, F.A)(n.id), eo = (0, L.A)(n.id), eu = (0, m.u)({
+        userId: n.id,
         channelId: $,
         guildId: d.getGuildId()
     }), ec = (0, b.A)({
-        guildId: n,
-        userId: t.id,
+        guildId: t,
+        userId: n.id,
         analyticsLocation: ee,
         context: q
-    }), eA = (0, U.A)({
-        user: t,
-        guildId: n
-    }), eg = (0, u.A)(null, t), eE = (0, p.A)({
-        user: t
+    }), eA = (0, v.A)({
+        user: n,
+        guildId: t
+    }), eg = (0, u.A)(null, n), eE = (0, p.A)({
+        user: n
     }), eh = (0, T.A)({
-        user: t,
-        guildId: n,
+        user: n,
+        guildId: t,
         channelId: $,
         location: "GuildChannelUserContextMenu"
-    }), em = (0, v.A)({
-        user: t,
-        guildId: n,
+    }), em = (0, U.A)({
+        user: n,
+        guildId: t,
         channelId: $,
         location: "GuildChannelUserContextMenu"
-    }), eC = (0, N.A)(t, n, $), eb = (0, k.A)(t.id, n), eM = (0, D.A)(t, n), ex = (0, C.A)({
-        id: t.id,
+    }), eC = (0, N.A)(n, t, $), eb = (0, k.A)(n.id, t), eM = (0, D.A)(n, t), ex = (0, C.A)({
+        id: n.id,
         label: X.intl.string(X.t["/AXYnE"])
-    }), ef = (0, j.A)(t.id, $), eI = (0, E.A)(t.id), eS = (0, g.A)($), ep = (0, x.A)(t), ey = (0, f.A)(t, n, $), eG = (0, A.A)($, t.id), eN = (0, i.bG)([I.A], () => null != Z ? I.A.getChannel(Z) : null), eO = (0, O.A)({
+    }), ef = (0, j.A)(n.id, $), eI = (0, E.A)(n.id), eS = (0, g.A)($), ep = (0, x.A)(n), ey = (0, f.A)(n, t, $), eG = (0, A.A)($, n.id), eN = (0, i.bG)([I.A], () => null != Z ? I.A.getChannel(Z) : null), eO = (0, O.A)({
         commandType: o.kc.USER,
-        commandTargetId: t.id,
+        commandTargetId: n.id,
         channel: eN ?? d,
-        guildId: n,
+        guildId: t,
         onHeightUpdate: Q,
         context: q
-    }), eT = (0, h.A)(t.id), e_ = (0, i.bG)([S.A], () => S.A.getVoiceChannelId()), ej = (0, P.A)(t, e_), ev = (0, M.A)(t.id, d), eU = t.isNonUserBot();
+    }), eT = (0, h.A)(n.id), e_ = (0, i.bG)([S.A], () => S.A.getVoiceChannelId()), ej = (0, P.A)(n, e_), eU = (0, M.A)(n.id, d), ev = n.isNonUserBot();
     return (0, l.jsxs)(r.W1t, {
         "data-menu-needs-review": !0,
         navId: "user-context",
@@ -121,11 +121,11 @@ let W = (0, s.A)((0, d.A)(function(e) {
         "aria-label": X.intl.string(X.t.liqwPJ),
         onSelect: J,
         onInteraction: z,
-        children: [!eU && (0, l.jsxs)(l.Fragment, {
+        children: [!ev && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)(r.rXV, {
-                children: [ep, s && !Y && ev, Y && ey]
+                children: [ep, s && !Y && eU, Y && ey]
             }), (0, l.jsxs)(r.rXV, {
-                children: [H && et, c && en, el, er, ej, H && ea, H && ed, ei]
+                children: [H && en, c && et, el, er, ej, H && ea, H && ed, ei]
             }), s && (0, l.jsx)(r.rXV, {
                 children: es
             }), (0, l.jsx)(r.rXV, {

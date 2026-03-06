@@ -27,8 +27,8 @@ var i = n(397927),
     S = n(252726),
     I = n(460597),
     j = n(198229),
-    v = n(243949),
-    D = n(180798),
+    D = n(243949),
+    v = n(180798),
     O = n(972432),
     T = n(77544),
     _ = n(652215),
@@ -46,7 +46,7 @@ let U = (0, d.A)((0, r.A)(function(e) {
         page: _.liQ.GUILD_CHANNEL,
         section: _.JJy.CHAT_USERNAME,
         object: _.ZSU.CONTEXT_MENU_ITEM
-    }, G = (0, v.A)({
+    }, G = (0, D.A)({
         userId: t.id,
         guildId: n
     }), B = (0, C.A)(t, n, U), V = (0, y.A)(t.id, U), P = (0, T.A)(t.id), k = (0, x.A)({
@@ -83,7 +83,7 @@ let U = (0, d.A)((0, r.A)(function(e) {
         user: t,
         guildId: n,
         location: "GuildUserContextMenu"
-    }), ee = (0, f.A)(t, n), et = (0, D.A)(t.id, n), en = (0, S.A)(t, n), el = (0, u.A)({
+    }), ee = (0, f.A)(t, n), et = (0, v.A)(t.id, n), en = (0, S.A)(t, n), el = (0, u.A)({
         id: t.id,
         label: L.intl.string(L.t["/AXYnE"])
     }), ei = t.isNonUserBot();

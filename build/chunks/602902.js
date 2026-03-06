@@ -16,9 +16,9 @@ var l = n(192308),
     _ = n(518960),
     A = n(372684),
     f = n(439818),
-    h = n(399925),
-    g = n(696016),
-    E = n(652215);
+    E = n(399925),
+    h = n(696016),
+    g = n(652215);
 async function p(e, t) {
     let {
         channelId: p,
@@ -39,8 +39,8 @@ async function p(e, t) {
             let t = [],
                 n = [];
             for (let i of e) {
-                let e = await (0, h.VO)(i),
-                    l = i.name ?? (0, g.cM)(m.default.extractTimestamp(i.id)),
+                let e = await (0, E.VO)(i),
+                    l = i.name ?? (0, h.cM)(m.default.extractTimestamp(i.id)),
                     a = (0, f.A)(l);
                 if (i.type === A.nQ.CLIP || i.type === A.nQ.VOICE_CLIP) {
                     let l = `${""!==a?a:"clip"}.mp4`;
@@ -55,7 +55,7 @@ async function p(e, t) {
                         type: "image/jpeg"
                     })), n.push({})
                 }
-                u.default.track(E.HAw.CLIP_SHARED, {
+                u.default.track(g.HAw.CLIP_SHARED, {
                     location_stack: x,
                     guild_id: I.guild_id,
                     channel_id: I.id,
@@ -68,7 +68,7 @@ async function p(e, t) {
                 origin: "unknown:clip_share"
             }), l.closeAllModals()
         } catch (e) {
-            throw g.nx.error(e), e
+            throw h.nx.error(e), e
         }
     } else(0, a.mMO)(async () => {
         let {

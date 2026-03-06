@@ -1,6 +1,6 @@
 /** chunk id: 406406 params = (module,exports,require) **/
 n.d(e, {
-    default: () => m
+    default: () => y
 });
 var l = n(627968);
 n(64700);
@@ -19,13 +19,13 @@ var i = n(397927),
     h = n(675623),
     T = n(174966),
     f = n(652215),
-    y = n(985018);
+    m = n(985018);
 
-function m(t) {
+function y(t) {
     let {
         guildEventId: e,
         recurrenceId: n,
-        channel: m,
+        channel: y,
         guild: v,
         analyticsContext: p,
         isRecurrenceItem: N = !1,
@@ -35,25 +35,25 @@ function m(t) {
         guildEventId: e,
         recurrenceId: n,
         guild: v,
-        channel: m
+        channel: y
     }), b = (0, c.A)({
         guildEventId: e,
         recurrenceId: n,
         guild: v,
-        channel: m
+        channel: y
     }), I = (0, E.A)({
         guildEventId: e,
         guild: v,
-        channel: m,
+        channel: y,
         recurrenceId: n,
         isRecurrenceItem: N
-    }), C = (0, A.A)(e, v, m), x = (0, T.A)(e, v, m), w = (0, o.A)(e, v.id, n), O = (0, u.A)(e, G), R = (0, g.A)(e), j = (0, d.A)({
+    }), C = (0, A.A)(e, v, y), x = (0, T.A)(e, v, y), w = (0, o.A)(e, v.id, n), O = (0, u.A)(e, G), R = (0, g.A)(e), j = (0, d.A)({
         id: e,
-        label: y.intl.string(y.t.WZwPO4)
+        label: m.intl.string(m.t.WZwPO4)
     }), L = (0, d.A)({
         id: n,
-        label: y.intl.string(y.t.NZRGQo)
-    }), U = (0, s.A)(e, v.id, m, n), P = (0, h.A)({
+        label: m.intl.string(m.t.NZRGQo)
+    }), U = (0, s.A)(e, v.id, y, n), P = (0, h.A)({
         guildEventId: e,
         guildId: v.id,
         recurrenceId: n
@@ -65,7 +65,7 @@ function m(t) {
             "data-menu-migrated-auto": !0,
             navId: "user-context",
             onClose: r.Z_,
-            "aria-label": y.intl.string(y.t.liqwPJ),
+            "aria-label": m.intl.string(m.t.liqwPJ),
             onSelect: S,
             children: [(0, l.jsxs)(i.rXV, {
                 children: [U, !N && x, I, !N && C, b, D, w, N && P]

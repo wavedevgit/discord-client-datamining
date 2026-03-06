@@ -34,7 +34,7 @@ var i = n(627968),
     M = n(566331),
     D = n(768088),
     O = n(256195),
-    L = (n(729365), n(399849)),
+    L = n(399849),
     P = n(275731),
     w = n(345812),
     k = n(652215),
@@ -111,7 +111,27 @@ function K(e) {
         participant: t,
         width: C
     });
-    if (!(null != $ && !n && null != V && b.Ay.supports(G.O5.VIDEO))) return (0, i.jsxs)("div", {
+    if (null != $ && !n && null != V && b.Ay.supports(G.O5.VIDEO)) return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(S.A, {
+            onResize: s,
+            wrapperClassName: a()(p !== A.N.CALL_TILE ? H.tN : void 0, P),
+            className: H.Qs,
+            streamId: q,
+            videoComponent: V,
+            fit: g,
+            paused: w || $?.state === k.XYD.PAUSED || ee,
+            videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
+            userId: Y.id,
+            streamKey: t.id
+        }, q), null != et ? (0, i.jsx)(I.A, {
+            size: (0, j.J)(C),
+            ...et
+        }) : null, (0, i.jsx)(R.A, {
+            stream: z,
+            popoutType: p
+        })]
+    });
+    else return (0, i.jsxs)("div", {
         className: a()(H.Qs, H.Rh, {
             [H.EX]: en
         }),
@@ -147,26 +167,6 @@ function K(e) {
                     })
                 })
             }) : null]
-        })]
-    });
-    else return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(S.A, {
-            onResize: s,
-            wrapperClassName: a()(p !== A.N.CALL_TILE ? H.tN : void 0, P),
-            className: H.Qs,
-            streamId: q,
-            videoComponent: V,
-            fit: g,
-            paused: w || $?.state === k.XYD.PAUSED || ee,
-            videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
-            userId: Y.id,
-            streamKey: t.id
-        }, q), null != et ? (0, i.jsx)(I.A, {
-            size: (0, j.J)(C),
-            ...et
-        }) : null, (0, i.jsx)(R.A, {
-            stream: z,
-            popoutType: p
         })]
     })
 }

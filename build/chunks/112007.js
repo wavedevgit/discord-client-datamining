@@ -37,8 +37,8 @@ function v(e) {
         M = P === R.author.id,
         {
             channel: w,
-            approximate_member_count: D,
-            approximate_presence_count: O
+            approximate_member_count: O,
+            approximate_presence_count: D
         } = L,
         k = L.state === I.elq.ACCEPTING,
         U = null != w ? (0, A.OY)(w) : null,
@@ -121,9 +121,9 @@ function v(e) {
                 isBannerVisible: !1
             })
         })]
-    })) : null != D && D >= 5 || null != O && O > 0 ? t = (0, i.jsx)(g.A.Data, {
-        members: D,
-        membersOnline: O
+    })) : null != O && O >= 5 || null != D && D > 0 ? t = (0, i.jsx)(g.A.Data, {
+        members: O,
+        membersOnline: D
     }) : B && (t = (0, i.jsx)(g.A.Channel, {
         channel: U,
         guild: j

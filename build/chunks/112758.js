@@ -8,12 +8,12 @@ n.d(t, {
     I: () => j,
     Jo: () => R,
     T0: () => N,
-    UY: () => O,
+    UY: () => D,
     U_: () => H,
     VL: () => w,
     Yq: () => M,
     m: () => S,
-    r4: () => D,
+    r4: () => O,
     ri: () => U,
     yp: () => G
 }), n(938796);
@@ -126,7 +126,7 @@ function w(e, t, r, o) {
         }), (0, s.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("10566"), n.e("24202"), n.e("73368"), n.e("5873"), n.e("1636"), n.e("51092")]).then(n.bind(n, 547983));
+            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("10566"), n.e("24202"), n.e("88475"), n.e("5873"), n.e("1636"), n.e("51092")]).then(n.bind(n, 547983));
             return n => (0, i.jsx)(e, {
                 ...n,
                 message: a,
@@ -143,7 +143,7 @@ function w(e, t, r, o) {
     }, [A, d, u, r, f, o])
 }
 
-function D(e, t) {
+function O(e, t) {
     return l.useCallback(n => {
         let i = p.default.getUser(e),
             l = _.A.getChannel(t);
@@ -151,7 +151,7 @@ function D(e, t) {
     }, [e, t])
 }
 
-function O(e, t, n) {
+function D(e, t, n) {
     return l.useCallback(i => {
         let l = p.default.getUser(e),
             r = _.A.getChannel(t);

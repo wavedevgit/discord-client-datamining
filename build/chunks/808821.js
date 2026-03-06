@@ -1,6 +1,6 @@
 /** chunk id: 808821 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => g
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     _ = n(998218),
     A = n(888675),
     f = n(652215),
-    h = n(985018),
-    g = n(363866);
+    E = n(985018),
+    h = n(363866);
 
-function E(e) {
+function g(e) {
     let {
         message: t,
         compact: n
-    } = e, E = t.channel_id, p = (0, r.bG)([m.A], () => null != t.messageReference ? m.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+    } = e, g = t.channel_id, p = (0, r.bG)([m.A], () => null != t.messageReference ? m.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
         clipId: x,
         remoteTriggerClipId: C
     } = l.useMemo(() => null != p ? function(e) {
@@ -40,17 +40,17 @@ function E(e) {
         } catch (e) {
             return {}
         }
-    }(p.content) : {}, [p]), I = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(x, C)), T = (0, r.bG)([c.A], () => null != I && null != E && c.A.wasClipSharedInChannel(I.id, E)), {
+    }(p.content) : {}, [p]), I = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(x, C)), T = (0, r.bG)([c.A], () => null != I && null != g && c.A.wasClipSharedInChannel(I.id, g)), {
         onShareClick: N
-    } = (0, u.A)(E), S = l.useCallback(() => {
-        null != I && null != E && t.messageReference?.message_id != null && N({
+    } = (0, u.A)(g), S = l.useCallback(() => {
+        null != I && null != g && t.messageReference?.message_id != null && N({
             clips: [I],
             messageReference: {
-                channel_id: E,
+                channel_id: g,
                 message_id: t.messageReference.message_id
             }
         })
-    }, [I, E, t.messageReference, N]);
+    }, [I, g, t.messageReference, N]);
     if (null == p || null == x && null == C || null == I || T) return null;
     let R = p.attachments.find(e => (0, a.Lt)(e.flags ?? 0, f.sbO.IS_CLIP)),
         v = null;
@@ -67,17 +67,17 @@ function E(e) {
         timestamp: t.timestamp,
         compact: n,
         additionalContent: (0, i.jsxs)("div", {
-            className: g.i,
+            className: h.i,
             children: [(0, i.jsx)(d.A, {
                 thumbnails: M,
                 variant: "stacked"
             }), (0, i.jsx)(s.$nd, {
                 size: "sm",
                 onClick: S,
-                text: h.intl.string(h.t["5qb8EX"]),
+                text: E.intl.string(E.t["5qb8EX"]),
                 icon: o.W4J
             })]
         }),
-        children: h.intl.string(h.t.ThhsNG)
+        children: E.intl.string(E.t.ThhsNG)
     })
 }

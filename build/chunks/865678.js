@@ -1,7 +1,7 @@
 /** chunk id: 865678 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => eN,
+    A: () => ev,
     w: () => eb
 }), n(938796), n(667532);
 var l = n(627968),
@@ -23,11 +23,11 @@ var l = n(627968),
     b = n(820284),
     C = n(213464),
     j = n(432371),
-    N = n(323073),
-    v = n(47167),
+    v = n(323073),
+    N = n(47167),
     _ = n(355622),
-    S = n(408018),
-    y = n(133343),
+    y = n(408018),
+    S = n(133343),
     E = n(235986),
     T = n(915089),
     M = n(375499),
@@ -217,7 +217,7 @@ class ej extends i.PureComponent {
         const t = this.props.channel?.topic ?? "";
         this.state = {
             textTopicValue: t,
-            richTopicValue: (0, S.x7)(t),
+            richTopicValue: (0, y.x7)(t),
             topicFocused: !1,
             updateNameInputCursorPosition: !1
         }
@@ -229,7 +229,7 @@ class ej extends i.PureComponent {
         let t = this.props.channel?.topic ?? "";
         (e.channel?.topic ?? "") !== t && t !== this.state.textTopicValue && this.setState({
             textTopicValue: t,
-            richTopicValue: (0, S.x7)(t)
+            richTopicValue: (0, y.x7)(t)
         })
     }
     getError(e) {
@@ -264,10 +264,10 @@ class ej extends i.PureComponent {
             f = H.Le.has(e.type),
             C = e.isForumLikeChannel(),
             j = C && e.availableTags?.every(e => e.moderated),
-            v = Q.default.getCurrentUser()?.isStaff() === !0,
-            S = H.IY.has(e.type) ? (0, l.jsx)(A.D0$, {
+            N = Q.default.getCurrentUser()?.isStaff() === !0,
+            y = H.IY.has(e.type) ? (0, l.jsx)(A.D0$, {
                 label: C ? eo.intl.string(eo.t.yR6HwZ) : eo.intl.string(eo.t.X8jMDh),
-                children: (0, l.jsx)(y.Ay, {
+                children: (0, l.jsx)(S.Ay, {
                     className: a()(ed.zm, {
                         [ed.r9]: !s
                     }),
@@ -300,7 +300,7 @@ class ej extends i.PureComponent {
                     showValueWhenDisabled: !0
                 })
             }) : null,
-            E = C && v ? (0, l.jsx)(A.fs1, {
+            E = C && N ? (0, l.jsx)(A.fs1, {
                 label: eo.intl.string(eo.t.qk2jdY),
                 placeholder: eo.intl.string(eo.t.DDjD1H),
                 value: L.Ay.translateSurrogatesToInlineEmoji(e.template ?? ""),
@@ -490,7 +490,7 @@ class ej extends i.PureComponent {
                     label: eo.intl.string(eo.t.Es25Yf),
                     description: eo.intl.string(eo.t["9eUgwR"]),
                     onChange: this.handleNSFWChange,
-                    checked: (0, N.Gc)(e),
+                    checked: (0, v.Gc)(e),
                     disabled: !s || null != e.linkedLobby || z
                 }), null != e.linkedLobby ? (0, l.jsx)(A.po8, {
                     messageType: A.YCn.WARNING,
@@ -562,7 +562,7 @@ class ej extends i.PureComponent {
                         guildId: e?.guild_id
                     })
                 } : void 0
-            }), S, E, T, M, W, Y, I, R, w, Z, J, X, $, q, ee]
+            }), y, E, T, M, W, Y, I, R, w, Z, J, X, $, q, ee]
         })
     }
     renderBitrate(e) {
@@ -923,7 +923,7 @@ class ej extends i.PureComponent {
     }
 }
 
-function eN() {
+function ev() {
     let {
         errors: e,
         channel: t,
@@ -935,10 +935,10 @@ function eN() {
     } = (0, g.cf)([z.A], () => ({
         canManageChannels: z.A.can(ei.xBc.MANAGE_CHANNELS, t),
         canSendMessages: z.A.can(ei.xBc.SEND_MESSAGES, t)
-    })), m = (0, v.Ay)(t), x = W.default.getId(), A = (0, w.p)(), p = t?.id, f = (0, j.cI)(t, !1, !0), b = C.A.useExperiment({
+    })), m = (0, N.Ay)(t), x = W.default.getId(), A = (0, w.p)(), p = t?.id, f = (0, j.cI)(t, !1, !0), b = C.A.useExperiment({
         guildId: t?.guild_id,
         location: "ChannelSettingsOverview"
-    }).enabled, N = i.useCallback(e => {
+    }).enabled, v = i.useCallback(e => {
         null != p && A.getState().setLayoutType(p, e)
     }, [p, A]);
     return (0, l.jsx)(ej, {
@@ -956,7 +956,7 @@ function eN() {
         subsection: s,
         isForumPost: null != t && t.isForumPost(),
         isOwner: t?.isOwner(x),
-        handleSetDefaultLayout: N,
+        handleSetDefaultLayout: v,
         showChannelSummariesSettings: f,
         showAdvancedSlowModeSetting: b
     })

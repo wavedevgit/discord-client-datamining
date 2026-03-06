@@ -22,11 +22,11 @@ var l = n(627968),
     b = n(544028),
     C = n(95701),
     j = n(291731),
-    N = n(176360),
-    v = n(863036),
+    v = n(176360),
+    N = n(863036),
     _ = n(734057),
-    S = n(576705),
-    y = n(994500),
+    y = n(576705),
+    S = n(994500),
     E = n(287809),
     T = n(203982),
     M = n(608226),
@@ -107,13 +107,13 @@ class B extends i.PureComponent {
                             size: "xxs",
                             color: "currentColor",
                             className: k.p
-                        }) : null, (0, g.m1)(t, E.default, y.A), null != n ? (0, l.jsx)(a.Text, {
+                        }) : null, (0, g.m1)(t, E.default, S.A), null != n ? (0, l.jsx)(a.Text, {
                             tag: "span",
                             variant: "text-xs/semibold",
                             color: "text-default",
                             lineClamp: 1,
                             className: k.L,
-                            children: (0, g.m1)(n, E.default, y.A)
+                            children: (0, g.m1)(n, E.default, S.A)
                         }) : null]
                     }) : G.intl.string(G.t.XPDhcc)
                 }, {
@@ -123,7 +123,7 @@ class B extends i.PureComponent {
                     element: L.A,
                     notice: {
                         element: L.w,
-                        stores: [v.A]
+                        stores: [N.A]
                     },
                     predicate: () => !t.isModeratorReportChannel()
                 }, {
@@ -132,7 +132,7 @@ class B extends i.PureComponent {
                     element: x.A,
                     notice: {
                         element: w.$,
-                        stores: [N.A]
+                        stores: [v.A]
                     },
                     predicate: () => i && !f
                 }, {
@@ -188,16 +188,16 @@ function P() {
     let {
         channel: e,
         analyticsLocation: t
-    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, p.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
+    } = (0, s.cf)([N.A], () => N.A.getProps()), n = (0, s.bG)([N.A], () => N.A.getFormState()), i = (0, s.bG)([N.A], () => N.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, p.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
         canManageChannels: c,
         canManageRoles: u,
         canManageWebhooks: h,
         canUnlinkChannel: g
-    } = (0, s.cf)([S.A], () => ({
-        canManageChannels: S.A.can(O.xBc.MANAGE_CHANNELS, e),
-        canManageRoles: null != e && S.A.can(O.xBc.MANAGE_ROLES, e),
-        canManageWebhooks: null != e && S.A.can(O.xBc.MANAGE_WEBHOOKS, e),
-        canUnlinkChannel: (0, A.n)(e, S.A)
+    } = (0, s.cf)([y.A], () => ({
+        canManageChannels: y.A.can(O.xBc.MANAGE_CHANNELS, e),
+        canManageRoles: null != e && y.A.can(O.xBc.MANAGE_ROLES, e),
+        canManageWebhooks: null != e && y.A.can(O.xBc.MANAGE_WEBHOOKS, e),
+        canUnlinkChannel: (0, A.n)(e, y.A)
     })), m = (0, s.bG)([_.A], () => _.A.getChannel(e?.parent_id));
     return (0, l.jsx)(B, {
         channel: e,

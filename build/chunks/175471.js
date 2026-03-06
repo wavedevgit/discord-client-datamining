@@ -35,10 +35,10 @@ function j(e) {
         n(1)
     }, m = () => {
         n(2)
-    }, g = 2 === t, x = 1 === t;
-    if (!(!(l >= o) && l / o >= .8) || g) return null;
-    let h = x || g ? p.R : null,
-        A = x ? c.A.Stages.FLYING : c.A.Stages.HOVERING;
+    }, g = 1 === t;
+    if (!(!(l >= o) && l / o >= .8) || 2 === t) return null;
+    let x = g ? p.R : null,
+        h = g ? c.A.Stages.FLYING : c.A.Stages.HOVERING;
     return (0, i.jsx)(d.c7X, {
         from: {
             opacity: 0
@@ -53,16 +53,16 @@ function j(e) {
             style: e,
             children: [(0, i.jsx)(c.A, {
                 className: p.a_,
-                stage: A,
+                stage: h,
                 onFlyingComplete: m
             }), (0, i.jsx)("div", {
-                className: r()(p.Sb, h),
+                className: r()(p.Sb, x),
                 children: _.intl.format(_.t.qV3Erl, {
                     numLeft: o - l
                 })
             }), (0, i.jsx)(d.DUT, {
                 onClick: u,
-                className: r()(p.dE, h),
+                className: r()(p.dE, x),
                 children: (0, i.jsx)(d.aXh, {
                     size: "md",
                     color: "currentColor",

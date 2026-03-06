@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(881635),
     A = n(363487),
     f = n(828162),
-    h = n(71393),
-    g = n(888675),
-    E = n(652215),
+    E = n(71393),
+    h = n(888675),
+    g = n(652215),
     p = n(49999),
     x = n(985018),
     C = n(136708),
@@ -61,8 +61,8 @@ function S(e) {
                 guild: l,
                 analyticsLocations: r,
                 analyticsLocation: {
-                    page: E.liQ.GUILD_CHANNEL,
-                    section: E.JJy.CHANNEL_TEXT_AREA
+                    page: g.liQ.GUILD_CHANNEL,
+                    section: g.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
@@ -90,8 +90,8 @@ function R(e) {
                     n ? (0, f.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, m.K)({
                         guildId: t.id,
                         location: {
-                            section: E.JJy.CHANNEL_TEXT_AREA,
-                            object: E.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: g.JJy.CHANNEL_TEXT_AREA,
+                            object: g.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },
@@ -117,8 +117,8 @@ function M(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, l = n.guild_id, r = (0, a.bG)([h.A], () => h.A.getGuild(l), [l]);
-    return null == r ? null : (0, i.jsx)(g.A, {
+    } = e, l = n.guild_id, r = (0, a.bG)([E.A], () => E.A.getGuild(l), [l]);
+    return null == r ? null : (0, i.jsx)(h.A, {
         contentClassName: I.FG,
         iconContainerClassName: I.zc,
         iconNode: (0, i.jsx)(s.XFE, {

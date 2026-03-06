@@ -60,8 +60,8 @@ function C(e, t) {
         }),
         {
             userRoles: j,
-            isGuildMember: v,
-            canManageRoles: D
+            isGuildMember: D,
+            canManageRoles: v
         } = (0, i.cf)([A.Ay, b.A], () => {
             let n = A.Ay.getMember(t, e);
             return {
@@ -71,9 +71,9 @@ function C(e, t) {
             }
         }, [e, t, C]),
         O = (0, u.Ay)(t, e);
-    if (__OVERLAY__ || null == j || null == C || !v) return null;
+    if (__OVERLAY__ || null == j || null == C || !D) return null;
     let T = b.A.getHighestRole(C),
-        _ = D && !x ? y.map(n => {
+        _ = v && !x ? y.map(n => {
             if ((0, c.Oy)(n)) return null;
             let i = n.managed || !b.A.isRoleHigher(C, T, n),
                 a = j.includes(n.id);

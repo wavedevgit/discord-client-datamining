@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(12901),
     A = n(954571),
     f = n(975571),
-    h = n(427262),
-    g = n(326084),
-    E = n(851746),
+    E = n(427262),
+    h = n(326084),
+    g = n(851746),
     p = n(652215),
     x = n(985018),
     C = n(633308),
@@ -33,7 +33,7 @@ let T = e => {
         } = (0, m.A)({
             userId: t?.id,
             size: d._3J.SIZE_56
-        }), o = h.Ay.getName(t), c = n === g.o.FAIL;
+        }), o = E.Ay.getName(t), c = n === h.o.FAIL;
         return (0, i.jsxs)("div", {
             className: C.w4,
             children: [(0, i.jsx)(d.euF, {
@@ -83,7 +83,7 @@ let T = e => {
             results: n,
             onClose: a,
             isReminderConfirmation: r
-        } = e, u = (0, o.bG)([E.A], () => E.A.getReferralsRemaining());
+        } = e, u = (0, o.bG)([g.A], () => g.A.getReferralsRemaining());
         A.default.track(p.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
             reducedMotion: m
@@ -97,7 +97,7 @@ let T = e => {
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === n.filter(e => e.status === g.o.SUCCESS).length ? x.intl.string(x.t["7VBEue"]) : !0 === r ? x.intl.string(x.t.GP5lbq) : x.intl.string(x.t.tKCltd),
+            title: 0 === n.filter(e => e.status === h.o.SUCCESS).length ? x.intl.string(x.t["7VBEue"]) : !0 === r ? x.intl.string(x.t.GP5lbq) : x.intl.string(x.t.tKCltd),
             subtitle: !0 === r ? x.intl.format(x.t["4gJJfD"], {
                 helpdeskArticle: f.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
             }) : x.intl.format(x.t.AwGSWl, {

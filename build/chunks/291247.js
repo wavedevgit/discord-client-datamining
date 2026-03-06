@@ -1,6 +1,6 @@
 /** chunk id: 291247 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => v
 }), n(938796);
 var l = n(627968),
     i = n(64700),
@@ -26,9 +26,9 @@ var l = n(627968),
     S = n(652215),
     I = n(200700),
     j = n(340837),
-    v = n(985018);
+    D = n(985018);
 
-function D(e, t, D, O, T) {
+function v(e, t, v, O, T) {
     let _ = i.useMemo(() => ({
             [t]: [e.id]
         }), [t, e.id]),
@@ -37,7 +37,7 @@ function D(e, t, D, O, T) {
     let U = (0, r.bG)([h.A], () => h.A.getGuild(t), [t]),
         N = (0, r.bG)([M.default], () => M.default.getCurrentUser()?.id === e.id, [e.id]),
         R = (0, r.bG)([f.Ay], () => f.Ay.isGuestOrLurker(t, e.id), [t, e.id]),
-        G = (0, r.bG)([E.A], () => E.A.getChannel(D), [D]),
+        G = (0, r.bG)([E.A], () => E.A.getChannel(v), [v]),
         [, B] = (0, g.Ay)(e.id, t),
         V = G?.isGuildStageVoice(),
         {
@@ -58,7 +58,7 @@ function D(e, t, D, O, T) {
         X = (0, y.A)({
             userId: e.id,
             guildId: t,
-            channelId: D,
+            channelId: v,
             location: O,
             appContext: T
         }),
@@ -67,54 +67,54 @@ function D(e, t, D, O, T) {
             targetUserId: e.id
         }),
         W = (0, A.A)(t, e.id),
-        Y = null != F && null != D && x.A.canWithPartialContext(S.xBc.VIEW_CHANNEL, {
+        Y = null != F && null != v && x.A.canWithPartialContext(S.xBc.VIEW_CHANNEL, {
             channelId: F
         }) && !R ? [(!V || V && !w) && x.A.canWithPartialContext(S.xBc.MUTE_MEMBERS, {
-            channelId: D
+            channelId: v
         }) ? (0, l.jsx)(d.sLh, {
             id: "voice-mute",
-            label: v.intl.string(v.t.e9e9Ua),
+            label: D.intl.string(D.t.e9e9Ua),
             checked: P,
             color: "danger",
             action: () => {
                 !1 === P && H(b.Nj.MUTE), s.A.setServerMute(t, e.id, !P)
             }
         }, "voice-mute") : null, (!V || V && !w) && x.A.canWithPartialContext(S.xBc.DEAFEN_MEMBERS, {
-            channelId: D
+            channelId: v
         }) ? (0, l.jsx)(d.sLh, {
             id: "voice-deafen",
-            label: v.intl.string(v.t.hMA2GE),
+            label: D.intl.string(D.t.hMA2GE),
             checked: k,
             color: "danger",
             action: () => s.A.setServerDeaf(t, e.id, !k)
         }, "voice-deafen") : null, !N && null != U && x.A.canWithPartialContext(S.xBc.MOVE_MEMBERS, {
-            channelId: D
+            channelId: v
         }) ? (0, l.jsx)(d.Drp, {
             id: "voice-disconnect",
-            label: N ? v.intl.string(v.t["6vrfgt"]) : v.intl.string(v.t["/jERiG"]),
+            label: D.intl.string(D.t["/jERiG"]),
             color: "danger",
             action: () => s.A.setChannel(t, e.id, null)
         }, "voice-disconnect") : null] : [],
         J = async (t, n, l) => {
             if (t.ctrlKey || t.metaKey) try {
-                await o.A.setCommunicationDisabledDuration(n, l, I.DisableCommunicationDuration.DURATION_60_SEC, null, O), H(b.Nj.TIMEOUT), (0, d.showToast)((0, d.createToast)(v.intl.formatToPlainString(v.t.O9C3Nt, {
+                await o.A.setCommunicationDisabledDuration(n, l, I.DisableCommunicationDuration.DURATION_60_SEC, null, O), H(b.Nj.TIMEOUT), (0, d.showToast)((0, d.createToast)(D.intl.formatToPlainString(D.t.O9C3Nt, {
                     user: C.Ay.getName(n, null, e) ?? ""
                 }), d.ToastType.SUCCESS))
             } catch (e) {
-                (0, d.showToast)((0, d.createToast)(v.intl.string(v.t.epyCuh), d.ToastType.FAILURE))
+                (0, d.showToast)((0, d.createToast)(D.intl.string(D.t.epyCuh), d.ToastType.FAILURE))
             }
         }, q = null, Z = null != U && x.A.canManageUser(S.xBc.MODERATE_MEMBERS, e, U) && x.A.canManageUser(S.xBc.KICK_MEMBERS, e, U) && x.A.canManageUser(S.xBc.BAN_MEMBERS, e, U), z = null != U && (x.A.canManageUser(S.xBc.MANAGE_GUILD, e, U) || x.A.canManageUser(S.xBc.MANAGE_ROLES, e, U));
     return !N && null != U && null != K && null != K.joinedAt && (Z || z) && U.features.has(S.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED) && (q = (0, a.Lt)(K.flags ?? 0, j.D.BYPASSES_VERIFICATION) ? (0, l.jsx)(d.Drp, {
         id: "verify",
-        label: v.intl.string(v.t.NbhSI7),
+        label: D.intl.string(D.t.NbhSI7),
         action: () => s.A.setMemberFlags(U.id, e.id, (0, a.lA)(K.flags ?? 0, j.D.BYPASSES_VERIFICATION, !1))
     }, "verify") : (0, l.jsx)(d.Drp, {
         id: "verify",
-        label: v.intl.string(v.t["6QlTeK"]),
+        label: D.intl.string(D.t["6QlTeK"]),
         action: () => s.A.setMemberFlags(U.id, e.id, (0, a.lA)(K.flags ?? 0, j.D.BYPASSES_VERIFICATION, !0))
     }, "verify")), [X, q, ...Y, ...N || null == U ? [] : [W && !R ? B ? (0, l.jsx)(d.Drp, {
         id: "removetimeout",
-        label: v.intl.formatToPlainString(v.t.csKeta, {
+        label: D.intl.formatToPlainString(D.t.csKeta, {
             user: e.username
         }),
         color: "danger",
@@ -127,7 +127,7 @@ function D(e, t, D, O, T) {
         }
     }, "removetimeout") : (0, l.jsx)(d.Drp, {
         id: "timeout",
-        label: v.intl.formatToPlainString(v.t.OhsOy0, {
+        label: D.intl.formatToPlainString(D.t.OhsOy0, {
             user: e.username
         }),
         color: "danger",
@@ -141,7 +141,7 @@ function D(e, t, D, O, T) {
         }
     }, "timeout") : null, (0, m.L7)(e, U) ? (0, l.jsx)(d.Drp, {
         id: "kick",
-        label: v.intl.formatToPlainString(v.t["9l/iTS"], {
+        label: D.intl.formatToPlainString(D.t["9l/iTS"], {
             user: e.username
         }),
         color: "danger",
@@ -158,7 +158,7 @@ function D(e, t, D, O, T) {
         })
     }, "kick") : null, (0, m.EZ)(e, U) ? (0, l.jsx)(d.Drp, {
         id: "ban",
-        label: v.intl.formatToPlainString(v.t.WnpUBi, {
+        label: D.intl.formatToPlainString(D.t.WnpUBi, {
             user: e.username
         }),
         color: "danger",

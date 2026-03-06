@@ -49,8 +49,8 @@ function f(e) {
         })
     }, [s, t]), {
         handleDragStart: j,
-        handleDragReset: N,
-        handleDragComplete: v
+        handleDragReset: v,
+        handleDragComplete: N
     } = (0, h.A)(t.availableTags, e => {
         (0, c.fy)({
             availableTags: e
@@ -63,8 +63,8 @@ function f(e) {
             availableTags: t.availableTags,
             canManageChannels: s,
             onTagClick: C,
-            onDragComplete: v,
-            onDragReset: N,
+            onDragComplete: N,
+            onDragReset: v,
             onDragStart: j
         }, e.id)) : null, m ? (0, l.jsx)(d.DUT, {
             onClick: f,

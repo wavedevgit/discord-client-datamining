@@ -209,7 +209,7 @@ function w() {
                     }) : (0, l.jsx)(d.Pw, {
                         serialize: e => e.id,
                         isSelected: e => e.id === n,
-                        isDisabled: L || Q || !Y,
+                        isDisabled: L || !Y,
                         options: P,
                         optionClassName: G.uK,
                         select: e => i(e.id),

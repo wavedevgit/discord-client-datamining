@@ -15,22 +15,22 @@ var i = n(627968),
     _ = n(292548),
     A = n(817533),
     f = n(652215),
-    h = n(746080),
-    g = n(985018),
-    E = n(751922);
+    E = n(746080),
+    h = n(985018),
+    g = n(751922);
 
 function p(e) {
     let {
         username: t
     } = e;
     return (0, i.jsx)("div", {
-        className: E._X,
+        className: g._X,
         children: (0, i.jsx)(a.Text, {
             tag: "p",
-            className: E._X,
+            className: g._X,
             color: "status-positive-text",
             variant: "heading-xl/medium",
-            children: g.intl.format(g.t.MLKSln, {
+            children: h.intl.format(h.t.MLKSln, {
                 username: t,
                 usernameHook: (e, t) => (0, i.jsx)(a.Text, {
                     tag: "span",
@@ -51,15 +51,15 @@ function x(e) {
         username: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: E.pG,
+        className: g.pG,
         role: "img",
-        "aria-label": g.intl.formatToPlainString(g.t["utf8+W"], {
+        "aria-label": h.intl.formatToPlainString(h.t["utf8+W"], {
             username: l
         }),
         children: [(0, i.jsx)(A.A, {
             guildId: t,
             user: n,
-            className: E.sz
+            className: g.sz
         }), (0, i.jsx)(p, {
             username: l
         })]
@@ -71,7 +71,7 @@ function C(e) {
         channel: t,
         message: a,
         compact: A
-    } = e, g = (0, o.Ay)(a), E = function(e) {
+    } = e, h = (0, o.Ay)(a), g = function(e) {
         let {
             author: t,
             channel: n,
@@ -84,7 +84,7 @@ function C(e) {
         })(t), {
             analyticsLocations: d
         } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), _ = i.roleSubscriptionData, A = l.useCallback(() => {
-            (0, u.pX)(f.BVt.CHANNEL(a, h.VV.ROLE_SUBSCRIPTIONS), {
+            (0, u.pX)(f.BVt.CHANNEL(a, E.VV.ROLE_SUBSCRIPTIONS), {
                 sourceLocationStack: d
             }), _?.role_subscription_listing_id != null && (0, m.xH)(a, n.id, i.id, _.role_subscription_listing_id)
         }, [a, n, i, _, d]);
@@ -98,18 +98,18 @@ function C(e) {
     }({
         channel: t,
         message: a,
-        author: g
+        author: h
     }), p = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
-    return null == E ? null : (0, i.jsxs)(i.Fragment, {
+    return null == g ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             icon: n(617184),
             timestamp: a.timestamp,
             compact: A,
-            children: E
+            children: g
         }), p && (0, i.jsx)(x, {
             guildId: t.guild_id,
             user: a.author,
-            username: g.nick
+            username: h.nick
         }), (0, i.jsx)(_.A, {
             channel: t,
             message: a

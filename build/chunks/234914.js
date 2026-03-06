@@ -1,59 +1,59 @@
 /** chunk id: 234914 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+l.d(t, {
+    A: () => d
 });
-var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
-    s = n(397927),
-    o = n(140490);
+var n = l(627968),
+    i = l(64700),
+    r = l(503698),
+    s = l.n(r),
+    u = l(397927),
+    a = l(140490);
 
-function c(e) {
+function o(e) {
     let {
         alt: t,
-        ...n
-    } = e, [r, a] = l.useState(!0);
-    return (0, i.jsxs)(i.Fragment, {
-        children: [r && (0, i.jsx)(s.y$y, {
-            type: s.y$y.Type.LOW_MOTION,
-            className: o.wG
-        }), (0, i.jsx)("img", {
-            ...n,
+        ...l
+    } = e, [r, s] = i.useState(!0);
+    return (0, n.jsxs)(n.Fragment, {
+        children: [r && (0, n.jsx)(u.y$y, {
+            type: u.y$y.Type.LOW_MOTION,
+            className: a.wG
+        }), (0, n.jsx)("img", {
+            ...l,
             alt: t,
-            onLoad: () => a(!1)
+            onLoad: () => s(!1)
         })]
     })
 }
 
-function _(e) {
+function d(e) {
     let {
         src: t,
-        backgroundSrc: n,
-        alt: l,
+        backgroundSrc: l,
+        alt: i,
         aspectRatio: r,
-        className: s,
-        imageChildClassName: _,
-        ...E
+        className: u,
+        imageChildClassName: d,
+        ...c
     } = e;
-    return (0, i.jsxs)("div", {
-        className: a()(o.kL, s),
-        children: [(0, i.jsx)("img", {
-            src: n,
-            alt: l,
-            className: o.iL
-        }), (0, i.jsx)("div", {
-            className: o.CC
-        }), (0, i.jsx)("div", {
+    return (0, n.jsxs)("div", {
+        className: s()(a.kL, u),
+        children: [(0, n.jsx)("img", {
+            src: l,
+            alt: i,
+            className: a.iL
+        }), (0, n.jsx)("div", {
+            className: a.CC
+        }), (0, n.jsx)("div", {
             style: {
                 aspectRatio: r
             },
-            className: o.ZS,
-            children: (0, i.jsx)(c, {
+            className: a.ZS,
+            children: (0, n.jsx)(o, {
                 src: t,
-                alt: l,
-                className: a()(o.Sl, _),
-                ...E
+                alt: i,
+                className: s()(a.Sl, d),
+                ...c
             })
         })]
     })

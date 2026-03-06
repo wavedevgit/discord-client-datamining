@@ -1,6 +1,6 @@
 /** chunk id: 904854 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var i = n(627968),
     l = n(64700),
@@ -15,11 +15,11 @@ var i = n(627968),
     _ = n(888675),
     A = n(502197),
     f = n(985018),
-    h = n(906294);
+    E = n(906294);
 
-function g(e) {
+function h(e) {
     var t;
-    let n, g, E, p, x, C, {
+    let n, h, g, p, x, C, {
             message: I,
             channel: T,
             compact: N
@@ -28,17 +28,17 @@ function g(e) {
         R = (0, r.yK)([d.default], () => I.call?.participants != null ? I.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== I.author.id) : [], [I.author.id, I.call]),
         v = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
         M = l.useMemo(() => (0, c.L)(R, v, "VoiceSession - participants"), [R, v]),
-        j = (t = I.author, n = (0, m.P)({
+        O = (t = I.author, n = (0, m.P)({
             user: t,
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), g = (0, m.P)({
+        }), h = (0, m.P)({
             user: M[0],
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), E = (0, m.P)({
+        }), g = (0, m.P)({
             user: M[1],
             channelId: T.id,
             guildId: T.guild_id,
@@ -51,9 +51,9 @@ function g(e) {
             username: p.nick,
             usernameHook: n(p),
             username2: x.nick,
-            username2Hook: g(x),
+            username2Hook: h(x),
             username3: C.nick,
-            username3Hook: E(C),
+            username3Hook: g(C),
             otherCount: M.length - 1,
             duration: S
         }));
@@ -62,9 +62,9 @@ function g(e) {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         }),
-        iconContainerClassName: h.z,
+        iconContainerClassName: E.z,
         timestamp: I.timestamp,
         compact: N,
-        children: j
+        children: O
     })
 }

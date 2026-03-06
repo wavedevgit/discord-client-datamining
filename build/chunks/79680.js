@@ -1,35 +1,35 @@
 /** chunk id: 79680 params = (module,exports,require) **/
-r.d(t, {
+s.d(t, {
     A: () => c
 });
-var s = r(562465),
-    n = r(73153),
-    l = r(142120),
-    i = r(345942),
-    a = r(71393),
-    d = r(652215);
+var r = s(562465),
+    n = s(73153),
+    i = s(142120),
+    l = s(345942),
+    a = s(71393),
+    d = s(652215);
 let c = {
-    acceptGuildTemplate: (e, t, r) => (n.h.dispatch({
+    acceptGuildTemplate: (e, t, s) => (n.h.dispatch({
         type: "GUILD_TEMPLATE_ACCEPT",
         code: e
     }), new Promise((c, u) => {
-        s.Bo.post({
+        r.Bo.post({
             url: d.Rsh.UNRESOLVED_GUILD_TEMPLATE(e),
             body: {
                 name: t,
-                icon: r
+                icon: s
             },
             oldFormErrors: !0,
             rejectWithError: !1
         }).then(t => {
-            let r = t.body;
+            let s = t.body;
             n.h.dispatch({
                 type: "GUILD_TEMPLATE_ACCEPT_SUCCESS",
                 code: e,
-                guild: r
-            }), l.A.isConnected() ? a.A.addConditionalChangeListener(() => {
-                if (null != a.A.getGuild(r.id)) return (0, i.u)(r.id), c(r), !1
-            }) : ((0, i.u)(r.id), c(r))
+                guild: s
+            }), i.A.isConnected() ? a.A.addConditionalChangeListener(() => {
+                if (null != a.A.getGuild(s.id)) return (0, l.u)(s.id), c(s), !1
+            }) : ((0, l.u)(s.id), c(s))
         }, t => {
             n.h.dispatch({
                 type: "GUILD_TEMPLATE_ACCEPT_FAILURE",

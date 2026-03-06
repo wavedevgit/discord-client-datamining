@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(155718),
     A = n(811024),
     f = n(795816),
-    h = n(793574),
-    g = n(688810),
-    E = n(735991),
+    E = n(793574),
+    h = n(688810),
+    g = n(735991),
     p = n(975412),
     x = n(168186),
     C = n(597929),
@@ -28,8 +28,8 @@ var i = n(627968),
     R = n(203982),
     v = n(405269),
     M = n(763754),
-    j = n(635071),
-    O = n(728963),
+    O = n(635071),
+    j = n(728963),
     b = n(943815),
     y = n(652215),
     L = n(985018),
@@ -67,9 +67,9 @@ function P(e, t, n, l, a, s) {
         isInteractionUserIgnored: _,
         showAvatarPopout: A,
         showTargetAvatarPopout: f,
-        onClickAvatar: h,
-        onUserContextMenu: g,
-        onClickTargetAvatar: E,
+        onClickAvatar: E,
+        onUserContextMenu: h,
+        onClickTargetAvatar: g,
         onTargetUserContextMenu: p,
         onPopoutRequestClose: x
     } = e;
@@ -111,8 +111,8 @@ function P(e, t, n, l, a, s) {
             user: t,
             guildId: d.guild_id,
             guildAvatar: C,
-            onClick: 1 === n ? E : h,
-            onContextMenu: 1 === n ? p : g,
+            onClick: 1 === n ? g : E,
+            onContextMenu: 1 === n ? p : h,
             ref: s
         }),
         T = 1 === n ? f : A;
@@ -138,7 +138,7 @@ function k(e, t, n, l, a) {
         onTargetUserContextMenu: _,
         onPopoutRequestClose: A
     } = e;
-    return (0, i.jsx)(j.A, {
+    return (0, i.jsx)(O.A, {
         className: 1 === n ? D.iu : "",
         compact: !0,
         author: l,
@@ -166,9 +166,9 @@ function w(e) {
         {
             analyticsLocations: s,
             newestAnalyticsLocation: c
-        } = (0, g.Ay)(h.A.EXECUTED_COMMAND),
+        } = (0, h.Ay)(E.A.EXECUTED_COMMAND),
         S = (0, u.bG)([N.default], () => N.default.getCurrentUser()),
-        j = l.useRef(null),
+        O = l.useRef(null),
         U = l.useRef(null),
         w = l.useMemo(() => (e, t, l) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != S, "ExecutedCommand: currentUser cannot be undefined"), o()(null != a, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(I.A, {
             ...e,
@@ -179,7 +179,7 @@ function w(e) {
             messageId: n.id,
             newAnalyticsLocations: l
         })), [S, a, n.id]),
-        F = l.useMemo(() => e => (o()(null != a, "ExecutedCommand: channel cannot be null"), (0, i.jsx)(O.A, {
+        F = l.useMemo(() => e => (o()(null != a, "ExecutedCommand: channel cannot be null"), (0, i.jsx)(j.A, {
             ...e,
             channel: a,
             messageId: n.id,
@@ -195,7 +195,7 @@ function w(e) {
         W = n.interaction;
     if (null == W || null == z) return null;
     let Q = () => {
-        let t = P(e, W.user, 0, z, e => w(e, W.user, [h.A.AVATAR]), j),
+        let t = P(e, W.user, 0, z, e => w(e, W.user, [E.A.AVATAR]), O),
             n = k(e, W.user, 0, z, e => w(e, W.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
@@ -247,7 +247,7 @@ function w(e) {
                             children: c
                         });
                         {
-                            let e = (0, E.kF)(c);
+                            let e = (0, g.kF)(c);
                             return (0, i.jsx)(m.DUT, {
                                 ...l,
                                 tag: "span",
@@ -281,7 +281,7 @@ function w(e) {
     }) : null != B && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == B) return null;
-            let t = P(e, B, 1, J, e => w(e, B, [h.A.AVATAR]), j),
+            let t = P(e, B, 1, J, e => w(e, B, [E.A.AVATAR]), O),
                 n = k(e, B, 1, J, e => w(e, B));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
@@ -317,7 +317,7 @@ function w(e) {
             userHook: Q
         })
     }
-    return (0, i.jsx)(g.f5, {
+    return (0, i.jsx)(h.f5, {
         value: s,
         children: (0, i.jsx)("div", {
             className: r()(D.JZ, D.NB, D.JE, K),

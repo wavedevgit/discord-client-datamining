@@ -111,7 +111,7 @@ function W(e) {
     let ej = eA?.message ?? H.intl.string(H.t.R0RpRX),
         ef = e_ && null == eA,
         eM = e_ && null != eA,
-        eR = ef && null == K && !!e_ && eg?.subscriptionPeriodEnd == null,
+        eR = ef && null == K && eg?.subscriptionPeriodEnd == null,
         ey = (0, m.D7)({
             location: "premium_payment_plan_select_step"
         }),

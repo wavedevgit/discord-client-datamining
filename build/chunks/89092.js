@@ -176,10 +176,7 @@ function R(e) {
                         ...l
                     })
                 }
-            }) : I && (0, n.jsx)(N, {
-                label: A.intl.string(A.t["yn0w1+"]),
-                className: L.qp
-            }), (0, n.jsx)(c.YNO, {
+            }) : null, (0, n.jsx)(c.YNO, {
                 targetElementRef: D,
                 animation: c.YNO.Animation.FADE,
                 position: "bottom",

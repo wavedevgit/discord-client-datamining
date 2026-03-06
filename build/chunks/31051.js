@@ -1,6 +1,6 @@
 /** chunk id: 31051 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => O
 });
 var i = n(627968),
     l = n(735438),
@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(954571),
     A = n(203982),
     f = n(728458),
-    h = n(427262),
-    g = n(573359),
-    E = n(59784),
+    E = n(427262),
+    h = n(573359),
+    g = n(59784),
     p = n(612669),
     x = n(88001),
     C = n(652215),
@@ -42,7 +42,7 @@ let R = e => {
                     t = r.id,
                     a = u.default.getUser(r.primary_user);
                 if (null == a) return;
-                let c = (0, h.$3)(a);
+                let c = (0, E.$3)(a);
                 _.default.track(C.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
                     invite_id: t,
                     subscription_id: e
@@ -60,14 +60,14 @@ let R = e => {
                         premiumGroupPrimaryName: c,
                         isExistingSub: o,
                         onClose: async () => {
-                            f || (f = !0, A._.dispatch(C.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
+                            f || (f = !0, A._.dispatch(C.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), h.A.isDisplayingWowMomentConfirmation && h.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
                             }, d.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
-                        f || (f = !0, A._.dispatch(C.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), g.A.isDisplayingWowMomentConfirmation && g.A.isAnimated ? setTimeout(() => {
+                        f || (f = !0, A._.dispatch(C.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), h.A.isDisplayingWowMomentConfirmation && h.A.isAnimated ? setTimeout(() => {
                             (0, s.OoC)(m)
                         }, d.K) : (0, s.OoC)(m))
                     },
@@ -165,7 +165,7 @@ let R = e => {
             })]
         })
     },
-    j = e => {
+    O = e => {
         let {
             message: t,
             channel: n,
@@ -176,29 +176,29 @@ let R = e => {
             invite: d,
             currentUser: _,
             premiumSubscription: A
-        } = (0, r.cf)([E.A, u.default, m.A], () => ({
-            inviteState: null != a ? E.A.getInviteState(a) : x.xI.NOT_FOUND,
-            isFetching: null != a && E.A.isFetching(a),
-            invite: null != a ? E.A.getInvite(a)?.invite : null,
+        } = (0, r.cf)([g.A, u.default, m.A], () => ({
+            inviteState: null != a ? g.A.getInviteState(a) : x.xI.NOT_FOUND,
+            isFetching: null != a && g.A.isFetching(a),
+            invite: null != a ? g.A.getInvite(a)?.invite : null,
             currentUser: u.default.getCurrentUser(),
             premiumSubscription: m.A.getPremiumSubscription()
         }), [a]);
         if (null == _) return null;
         let f = t.author,
-            h = _.id === f.id;
+            E = _.id === f.id;
         if (c || s === x.xI.FETCHING || s === x.xI.UNKNOWN) return (0, i.jsx)(o.Wb, {
             isHorizontal: !0
         });
-        let g = (0, p.o1)({
+        let h = (0, p.o1)({
             sender: f,
             channel: n,
-            isSender: h,
+            isSender: E,
             inviteState: s
         });
-        if (null == g) return null;
+        if (null == h) return null;
         let C = s === x.xI.PENDING,
             I = null;
-        return I = h ? C ? (0, i.jsx)(v, {
+        return I = E ? C ? (0, i.jsx)(v, {
             disabled: !1,
             invite: d,
             channel: n
@@ -211,9 +211,9 @@ let R = e => {
             invite: d,
             isExistingSub: null != A
         }), (0, i.jsx)(M, {
-            message: g.message,
-            header: g.header,
-            body: g.body,
+            message: h.message,
+            header: h.header,
+            body: h.body,
             compact: l,
             actionButton: I
         })

@@ -101,7 +101,7 @@ function S() {
             }), !D && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
-                selectedTab: D ? null : v,
+                selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
             }), D && (0, i.jsx)(l.Heading, {

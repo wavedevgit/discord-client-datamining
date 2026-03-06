@@ -36,8 +36,8 @@ var i = n(627968),
     P = n(795982),
     M = n(643612),
     w = n(613760),
-    D = n(229527),
-    O = n(870136),
+    O = n(229527),
+    D = n(870136),
     k = n(33525),
     U = n(484724),
     G = n(71755),
@@ -90,8 +90,8 @@ var i = n(627968),
     eP = n(439401),
     eM = n(990560),
     ew = n(266620),
-    eD = n(860227),
-    eO = n(564107),
+    eO = n(860227),
+    eD = n(564107),
     ek = n(763899),
     eU = n(652176),
     eG = n(382807),
@@ -488,7 +488,7 @@ class e$ extends l.Component {
             disableComponentInteractivity: r,
             onMediaItemContextMenu: a
         } = this.props;
-        return (0, i.jsx)(eO.N, {
+        return (0, i.jsx)(eD.N, {
             gifAutoPlay: t,
             getGifFavButton: eZ,
             getOnMediaItemContextMenu: null == a ? void 0 : e => t => {
@@ -695,7 +695,7 @@ class e$ extends l.Component {
             showRemoveAttachmentModal: s
         } = this.state, o = this.renderEditedTag(t, l), d = this.renderCodedLinks(t), c = this.renderGiftCodes(t), u = this.renderAttachments(t), _ = this.renderCtaButton(), m = this.renderEmbeds(t), h = this.renderActivityInvite(t), p = this.renderReactions(t), g = this.renderPublishBump(t), A = this.renderEphemeralAccessories(t), x = this.renderStickersAccessories(t), f = this.renderThreadAccessories(t), C = this.renderComponentAccessories(t), E = this.renderThreadRoleMentionWarning(t), I = this.renderEmbeddedApplicationInstanceEmbed(t), b = this.renderInteractionPremiumUpsell(t), T = this.renderMediaPostEmbeds(t), v = this.renderSafetyPolicyNotice(t), S = this.renderSafetySystemNotification(t), y = this.renderMediaObscureNotice(t), N = this.renderPoll(t, n), j = this.renderForwardedMessage(t), L = this.renderReportedMessage(t), R = this.renderShareClientTheme(t);
         return null == d && null == u && null == m && null == h && null == p && null == c && null == g && null == A && null == x && null == f && null == C && null == I && null == E && null == T && null == v && null != b && null == N && null == j && null == L && null == R ? null : (0, i.jsxs)("div", {
-            id: (0, eD.XL)(t),
+            id: (0, eO.XL)(t),
             className: a()(e, eQ.kL),
             children: [L, j, E, N, R, d, c, T, u, _, m, y, h, x, C, I, b, o, p, g, A, r && this.renderSuppressConfirmModal(), s && this.renderRemoveAttachmentConfirmModal(), f, v, S]
         })
@@ -717,7 +717,7 @@ function e0(e) {
     } = (0, d.cf)([eh.A], () => ({
         canAddNewReactions: h && eh.A.can(eY.xBc.ADD_REACTIONS, t),
         canManageMessages: eh.A.can(eY.xBc.MANAGE_MESSAGES, t)
-    }), [h, t]), f = (0, D.ix)(t.guild_id), [, C] = (0, O.c)(t.guild_id), E = (0, es.Id)(t), I = (a === n.author.id || x) && n.author.id !== eY.oIV && !1 !== l && !(0, o.Lt)(n.flags, eY.pr7.EPHEMERAL) && E && (0, eS.A)(n) >= 1, b = a === n.author.id && E && !r, T = n.author.id === a, v = n.isFirstMessageInForumPost(t), S = (0, eN.A)({
+    }), [h, t]), f = (0, O.ix)(t.guild_id), [, C] = (0, D.c)(t.guild_id), E = (0, es.Id)(t), I = (a === n.author.id || x) && n.author.id !== eY.oIV && !1 !== l && !(0, o.Lt)(n.flags, eY.pr7.EPHEMERAL) && E && (0, eS.A)(n) >= 1, b = a === n.author.id && E && !r, T = n.author.id === a, v = n.isFirstMessageInForumPost(t), S = (0, eN.A)({
         channel: t,
         canChat: h,
         renderReactions: _,

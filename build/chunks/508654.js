@@ -2,12 +2,12 @@
 n.d(e, {
     Ay: () => f,
     BP: () => p,
-    Qs: () => y,
+    Qs: () => m,
     RO: () => G,
     WG: () => v,
     ob: () => N,
     r2: () => S,
-    vj: () => m
+    vj: () => y
 });
 var l = n(64700),
     i = n(311907),
@@ -37,7 +37,7 @@ function f(t, e) {
     }, [e, t])
 }
 
-function y(t) {
+function m(t) {
     return (0, i.bG)([u.Ay, r.A, d.A], () => {
         let e = r.A.getChannel(t);
         if (!d.A.can(_.xBc.VIEW_CHANNEL, e) || null == e?.guild_id) return null;
@@ -46,7 +46,7 @@ function y(t) {
     }, [t])
 }
 
-function m(t) {
+function y(t) {
     let e = (0, i.yK)([u.Ay], () => u.Ay.getGuildScheduledEventsForGuild(t), [t]);
     return l.useMemo(() => {
         let t = new Map;

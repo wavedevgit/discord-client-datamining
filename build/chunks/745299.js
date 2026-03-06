@@ -35,7 +35,7 @@ let S = 21552 == n.j ? function(e) {
             default:
                 throw Error(`Unsupported subscription tier: ${e}`)
         }
-    }(n)), O = (0, A.V)(), C = (0, l.A)(null != O && null != O.expires_at ? Date.parse(O.expires_at) : 0), p = null == O || O.subscription_trial?.sku_id !== n || null == O.expires_at || Object.values(C).every(e => 0 === e);
+    }(n)), O = (0, A.V)(), p = (0, l.A)(null != O && null != O.expires_at ? Date.parse(O.expires_at) : 0), C = null == O || O.subscription_trial?.sku_id !== n || null == O.expires_at || Object.values(p).every(e => 0 === e);
     if ((0, o.A)({
             type: r.ImpressionTypes.VIEW,
             name: r.ImpressionNames.TRIAL_NOTICE,
@@ -43,8 +43,8 @@ let S = 21552 == n.j ? function(e) {
                 trial_id: O?.trial_id
             }
         }, {
-            disableTrack: p
-        }), p) return null;
+            disableTrack: C
+        }), C) return null;
     let P = n === I.pe.TIER_2 ? N.kqX.PREMIUM_TIER_2_TRIAL_ENDING : N.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
         D = (0, d.re)({
             intervalType: O.subscription_trial?.interval,
@@ -59,7 +59,7 @@ let S = 21552 == n.j ? function(e) {
             })
         },
         children: [(0, i.jsx)(u.In, {
-            children: (0, T.GZ)(n, C, D, M)
+            children: (0, T.GZ)(n, p, D, M)
         }), (0, i.jsx)(u.fY, {
             onClick: () => {
                 (0, E.A)({

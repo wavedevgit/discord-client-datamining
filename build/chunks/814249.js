@@ -27,9 +27,9 @@ function T(e) {
         getSurveyResponses: T,
         setResponse: I,
         trackDisplayedQuestions: N
-    } = (0, E.i)(), R = T(t), S = (0, _.i)(n), [O, C] = r.useState(S.blockId), [p, P] = r.useState(S.pageIndex), [D, M] = r.useState(!1), g = (e, n) => {
+    } = (0, E.i)(), R = T(t), S = (0, _.i)(n), [O, p] = r.useState(S.blockId), [C, P] = r.useState(S.pageIndex), [D, M] = r.useState(!1), U = (e, n) => {
         I(t, e, n)
-    }, U = r.useCallback(() => (D ? s() : (0, a.qfG)(e => (0, i.jsx)(l.Modal, {
+    }, g = r.useCallback(() => (D ? s() : (0, a.qfG)(e => (0, i.jsx)(l.Modal, {
         title: A.intl.string(A.t.T9Sx3z),
         actions: [{
             variant: "secondary",
@@ -49,17 +49,17 @@ function T(e) {
         })
     })), Promise.resolve()), [s, D]), m = r.useMemo(() => null == O ? [] : (0, _.uy)(n, {
         blockId: O,
-        pageIndex: p,
+        pageIndex: C,
         responses: R
-    }), [n, O, p, R]), h = r.useCallback(() => {
+    }), [n, O, C, R]), h = r.useCallback(() => {
         if (null == n || null == O) return;
         let e = (0, _.vt)(n, {
             blockId: O,
-            pageIndex: p,
+            pageIndex: C,
             responses: R
         });
-        N(t, m), e.isComplete && o.Ay.submitSurveyResponse(t, R), C(e.blockId), P(e.pageIndex), M(e.isComplete)
-    }, [n, O, p, R, t, m, N]);
+        N(t, m), e.isComplete && o.Ay.submitSurveyResponse(t, R), p(e.blockId), P(e.pageIndex), M(e.isComplete)
+    }, [n, O, C, R, t, m, N]);
     r.useEffect(() => {
         0 === m.length && h()
     }, [m, h]);
@@ -93,7 +93,7 @@ function T(e) {
         })]
     }) : (0, i.jsx)(l.Modal, {
         transitionState: c,
-        onClose: U,
+        onClose: g,
         title: A.intl.string(A.t.OSqLUF),
         size: "md",
         actions: [{
@@ -114,7 +114,7 @@ function T(e) {
                         question: t,
                         questionId: e,
                         responses: R,
-                        onResponseChange: g
+                        onResponseChange: U
                     }, e)
                 })
             })

@@ -1,5 +1,5 @@
 /** chunk id: 8880 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => o
 });
 var i = n(311907),
@@ -8,57 +8,57 @@ let r = {
         speechRate: 1,
         currentMessage: null
     },
-    s = r;
-class l extends i.Ay.DeviceSettingsStore {
+    l = r;
+class s extends i.Ay.DeviceSettingsStore {
     static displayName = "TTSStore";
     static persistKey = "TTSStore";
     static migrations = [];
-    initialize(t) {
-        s = {
+    initialize(e) {
+        l = {
             ...r,
-            ...t ?? null
+            ...e ?? null
         }
     }
-    isSpeakingMessage(t, e) {
+    isSpeakingMessage(e, t) {
         let {
             currentMessage: n
-        } = s;
-        return null !== n && n.channelId === t && n.messageId === e
+        } = l;
+        return null !== n && n.channelId === e && n.messageId === t
     }
     get currentMessage() {
-        return s.currentMessage
+        return l.currentMessage
     }
     get speechRate() {
-        return s.speechRate
+        return l.speechRate
     }
     getUserAgnosticState() {
-        return s
+        return l
     }
 }
-let o = new l(a.h, __OVERLAY__ ? {} : {
-    SPEAKING_MESSAGE: function(t) {
+let o = new s(a.h, __OVERLAY__ ? {} : {
+    SPEAKING_MESSAGE: function(e) {
         let {
-            messageId: e,
+            messageId: t,
             channelId: n
-        } = t;
-        s = {
-            ...s,
+        } = e;
+        l = {
+            ...l,
             currentMessage: {
-                messageId: e,
+                messageId: t,
                 channelId: n
             }
         }
     },
     STOP_SPEAKING: function() {
-        s = {
-            ...s,
+        l = {
+            ...l,
             currentMessage: null
         }
     },
-    SET_TTS_SPEECH_RATE: function(t) {
-        s = {
-            ...s,
-            speechRate: t.speechRate
+    SET_TTS_SPEECH_RATE: function(e) {
+        l = {
+            ...l,
+            speechRate: e.speechRate
         }
     }
 })

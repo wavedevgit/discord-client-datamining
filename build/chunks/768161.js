@@ -17,8 +17,8 @@ var n = l(627968),
     g = l(954571),
     f = l(99696),
     y = l(652215),
-    E = l(818348),
-    m = l(985018),
+    m = l(818348),
+    E = l(985018),
     _ = l(762623);
 let b = i.A.filter(t => s.M.EU_COUNTRIES.has(t.alpha2)).map(t => ({
     id: t.alpha2,
@@ -52,26 +52,26 @@ function A(t) {
         }), (0, n.jsx)("span", {
             className: _.ZY,
             children: (0, n.jsx)(o.ksK, {
-                label: m.intl.string(m.t["3Ujv7z"]),
+                label: E.intl.string(E.t["3Ujv7z"]),
                 type: "text",
                 value: e,
                 onChange: r,
-                placeholder: m.intl.string(m.t.wgFgAA),
+                placeholder: E.intl.string(E.t.wgFgAA),
                 fullWidth: !0
             })
         }), l ? (0, n.jsx)(o.ZiE, {
             selectionMode: "single",
-            label: m.intl.string(m.t.eDdrAD),
-            placeholder: m.intl.string(m.t.eDdrAD),
+            label: E.intl.string(E.t.eDdrAD),
+            placeholder: E.intl.string(E.t.eDdrAD),
             value: i,
             onSelectionChange: d,
             options: b
         }) : (0, n.jsx)(o.ksK, {
-            label: m.intl.string(m.t.mfpJ9m),
+            label: E.intl.string(E.t.mfpJ9m),
             type: "text",
             value: a,
             onChange: u,
-            placeholder: m.intl.string(m.t["9xLNmi"]),
+            placeholder: E.intl.string(E.t["9xLNmi"]),
             fullWidth: !0
         })]
     })
@@ -86,7 +86,7 @@ function I(t) {
         withRedemptionSuccessModal: b = !1,
         source: I,
         loadId: x
-    } = t, [S, k] = a.useState(o), [T, v] = a.useState(!1), [j, D] = a.useState(""), [M, N] = a.useState(null), [R, U] = a.useState(null), [w, P] = a.useState(null), [F, O] = a.useState(!1), {
+    } = t, [S, k] = a.useState(o), [T, v] = a.useState(!1), [j, D] = a.useState(""), [R, M] = a.useState(null), [N, U] = a.useState(null), [w, P] = a.useState(null), [F, O] = a.useState(!1), {
         savedPostalCode: L,
         savedCountry: z,
         hasFetchedPaymentSources: G,
@@ -108,15 +108,16 @@ function I(t) {
             load_id: x
         })
     }, [I, x]);
-    let W = w?.country ?? null;
+    let W = w?.country ?? null,
+        B = a.useRef(!1);
     a.useEffect(() => {
-        "" === j && null != L && D(L)
+        B.current || null == L || "" !== j || (B.current = !0, D(L))
     }, [L, j]), a.useEffect(() => {
         let t = w?.country ?? null;
         null != t ? O(s.M.EU_COUNTRIES.has(t)) : null != z ? O(s.M.EU_COUNTRIES.has(z)) : null != H ? O(s.M.EU_COUNTRIES.has(H)) : O(!1)
     }, [H, z, w]);
-    let B = m.intl.string(m.t.ToslbL),
-        K = a.useMemo(() => {
+    let K = E.intl.string(E.t.ToslbL),
+        Y = a.useMemo(() => {
             if (null != W) return {
                 text: (0, h.Gw)(W),
                 leadingIcon: () => (0, n.jsx)("img", {
@@ -126,13 +127,13 @@ function I(t) {
                 })
             }
         }, [W]),
-        Y = a.useCallback(t => {
+        Z = a.useCallback(t => {
             k(t), U(null)
         }, []),
-        Z = a.useCallback(async () => {
+        V = a.useCallback(async () => {
             let t = S.trim();
-            if ("" === t) return void U(m.intl.string(m.t.j8734b));
-            if (F && null == M) return void U(m.intl.string(m.t["+bm+zE"]));
+            if ("" === t) return void U(E.intl.string(E.t.j8734b));
+            if (F && null == R) return void U(E.intl.string(E.t["+bm+zE"]));
             v(!0), U(null);
             try {
                 let e = await (0, f.Ng)(t, F ? void 0 : j.trim());
@@ -144,12 +145,12 @@ function I(t) {
                     currencyCode: e.currency,
                     loadId: x
                 }), (0, d.$o)().then(t => {
-                    let e = (t?.body ?? []).find(t => t.type === E.he.TDS_WALLET);
+                    let e = (t?.body ?? []).find(t => t.type === m.he.TDS_WALLET);
                     null != e && (0, d.YP)(e.id)
                 })
             } catch (e) {
                 let t = e?.body;
-                U(t?.errors?.postal_code != null || t?.postal_code != null ? m.intl.string(m.t.e2zhgU) : m.intl.string(m.t.OBnXjv)), g.default.track(y.HAw.GIFT_CARD_REDEMPTION_FAILED, {
+                U(t?.errors?.postal_code != null || t?.postal_code != null ? E.intl.string(E.t.e2zhgU) : E.intl.string(E.t.OBnXjv)), g.default.track(y.HAw.GIFT_CARD_REDEMPTION_FAILED, {
                     source: I,
                     load_id: x
                 });
@@ -157,39 +158,40 @@ function I(t) {
             } finally {
                 v(!1)
             }
-        }, [S, F, M, j, i, l, b, I, x]),
-        V = a.useCallback(t => {
+        }, [S, F, R, j, i, l, b, I, x]),
+        X = a.useCallback(t => {
             D(t), U(null)
         }, []),
-        X = a.useCallback(t => {
-            N(t), U(null)
+        $ = a.useCallback(t => {
+            M(t), U(null)
         }, []);
     return (0, n.jsx)(u.aFV, {
         transitionState: e,
         onClose: l,
-        title: B,
-        subtitle: K,
+        title: K,
+        subtitle: Y,
         input: (0, n.jsx)(A, {
             codeInput: S,
             isEU: F,
             postalCodeInput: j,
-            selectedBillingCountry: M,
-            redemptionError: R,
-            onCodeInputChange: Y,
-            onPostalCodeChange: V,
-            onBillingCountryChange: X
+            selectedBillingCountry: R,
+            redemptionError: N,
+            onCodeInputChange: Z,
+            onPostalCodeChange: X,
+            onBillingCountryChange: $
         }),
         actions: [{
             variant: "secondary",
             size: "md",
-            text: m.intl.string(m.t["13/7kX"]),
+            text: E.intl.string(E.t["13/7kX"]),
             onClick: l
         }, {
             variant: "primary",
             size: "md",
-            text: m.intl.string(m.t.H2hHyf),
+            text: E.intl.string(E.t.H2hHyf),
             loading: T,
-            onClick: Z
+            disabled: "" === S.trim() || (F ? null == R : "" === j.trim()),
+            onClick: V
         }]
     })
 }

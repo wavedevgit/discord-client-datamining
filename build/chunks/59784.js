@@ -1,6 +1,6 @@
 /** chunk id: 59784 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var i = n(448761),
     l = n(311907),
@@ -35,7 +35,7 @@ function f(e) {
         errorStatus: null
     }), a.h.wait(() => (0, s.el)(t).catch(c.FXj)), !0)
 }
-class h extends l.Ay.Store {
+class E extends l.Ay.Store {
     static displayName = "PremiumGroupInviteStore";
     getInvite(e) {
         return d.get(e) ?? null
@@ -60,7 +60,7 @@ class h extends l.Ay.Store {
         return m
     }
 }
-let g = new h(a.h, {
+let h = new E(a.h, {
     PREMIUM_GROUP_INVITES_FETCH_START: function() {
         m = !0
     },

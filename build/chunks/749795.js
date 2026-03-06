@@ -21,22 +21,22 @@ function f(e) {
         message: t,
         compact: n,
         usernameHook: l
-    } = e, f = (0, o.Ay)(t), h = l(f), {
-        avatarSrc: g,
+    } = e, f = (0, o.Ay)(t), E = l(f), {
+        avatarSrc: h,
         eventHandlers: {
-            onMouseEnter: E,
+            onMouseEnter: g,
             onMouseLeave: p
         }
     } = (0, d.a)(!0);
     return (0, i.jsx)("div", {
-        onMouseEnter: E,
+        onMouseEnter: g,
         onMouseLeave: p,
         children: (0, i.jsx)(u.A, {
             className: a()(A.rs, {
                 [A.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
-                src: g
+                src: h
             }),
             iconContainerClassName: A.zc,
             compact: n,
@@ -71,7 +71,7 @@ function f(e) {
                     }),
                     children: _.intl.format(_.t.qntXNQ, {
                         username: f.nick,
-                        usernameHook: h
+                        usernameHook: E
                     })
                 })]
             })

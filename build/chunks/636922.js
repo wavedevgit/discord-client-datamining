@@ -21,13 +21,13 @@ var i = n(627968),
     R = n(538355),
     S = n(522871),
     O = n(699352),
-    C = n(715628),
-    p = n(752636),
+    p = n(715628),
+    C = n(752636),
     P = n(675722),
     D = n(268719),
     M = n(234957),
-    g = n(652215),
-    U = n(50397);
+    U = n(652215),
+    g = n(50397);
 let m = r.memo(function(e) {
     let {
         message: t,
@@ -43,7 +43,7 @@ let m = r.memo(function(e) {
         renderThreadAccessory: x,
         trackAnnouncementViews: G = !1,
         ...j
-    } = e, q = t.type === g.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), X = t.isFirstMessageInForumPost(y), B = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+    } = e, q = t.type === U.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), X = t.isFirstMessageInForumPost(y), B = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: b,
         hasSpoilerEmbeds: v,
         hasBailedAst: V
@@ -53,7 +53,7 @@ let m = r.memo(function(e) {
         allowHeading: X || B,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), F = t.type === g.lAJ.REPLY ? t.messageReference : void 0, w = (0, o.bG)([_.A], () => _.A.getMessageByReference(F)), H = (0, a.rm)(t.id), W = (0, T.Ay)(t), $ = (0, o.bG)([d.A], () => t.hasFlag(g.pr7.HAS_THREAD) && d.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), Y = (0, E.$7)({
+    }), F = t.type === U.lAJ.REPLY ? t.messageReference : void 0, w = (0, o.bG)([_.A], () => _.A.getMessageByReference(F)), H = (0, a.rm)(t.id), W = (0, T.Ay)(t), $ = (0, o.bG)([d.A], () => t.hasFlag(U.pr7.HAS_THREAD) && d.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), Y = (0, E.$7)({
         guildId: y.guild_id,
         roleId: W.iconRoleId
     }), K = (0, S.A)({
@@ -64,28 +64,28 @@ let m = r.memo(function(e) {
     return (0, i.jsx)(I.A, {
         compact: n,
         className: s()(r, {
-            [U.M1]: (0, u.ec)(t),
-            [U.XN]: q
+            [g.M1]: (0, u.ec)(t),
+            [g.XN]: q
         }),
         disableInteraction: q,
         childrenRepliedMessage: (0, M.A)(t, y, F, w, n),
         childrenExecutedCommand: (0, D.A)(t, y, n),
-        childrenHeader: (0, p.A)({
+        childrenHeader: (0, C.A)({
             ...e,
             guildId: y.guild_id,
             author: W,
             roleIcon: Y
         }),
         childrenAccessories: e.hideAccessories ? void 0 : (0, O.J)(e, v, V),
-        childrenMessageContent: (0, C.A)(e, b),
+        childrenMessageContent: (0, p.A)(e, b),
         childrenSystemMessage: (0, P.A)({
             ...e,
             disableInteraction: q
         }),
         onContextMenu: l,
         onClick: m,
-        hasThread: x && null != $ && t.hasFlag(g.pr7.HAS_THREAD),
-        hasReply: t.type === g.lAJ.REPLY,
+        hasThread: x && null != $ && t.hasFlag(U.pr7.HAS_THREAD),
+        hasReply: t.type === U.lAJ.REPLY,
         "aria-labelledby": Q,
         "aria-describedby": z,
         messageRef: K,

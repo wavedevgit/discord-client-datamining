@@ -15,9 +15,9 @@ var i = n(627968),
     _ = n(287809),
     A = n(460350),
     f = n(167681),
-    h = n(652215),
-    g = n(985018),
-    E = n(620163);
+    E = n(652215),
+    h = n(985018),
+    g = n(620163);
 let p = e => {
         let {
             channel: t,
@@ -35,14 +35,14 @@ let p = e => {
             })
         }, [t, n, a]);
         return (0, i.jsx)("div", {
-            className: E.T,
+            className: g.T,
             children: (0, i.jsx)(r.$nd, {
                 icon: {
                     type: "sticker",
                     asset: a,
                     component: o.A
                 },
-                text: g.intl.string(g.t["7Tj6HT"]),
+                text: h.intl.string(h.t["7Tj6HT"]),
                 onClick: c,
                 variant: "secondary"
             })
@@ -55,11 +55,11 @@ let p = e => {
         } = e, l = n.getGuildId(), r = (0, a.bG)([_.default, m.A, u.A, d.Ay], () => {
             let e = _.default.getCurrentUser(),
                 i = (0, c.UJ)(n),
-                a = m.A.can(h.xBc.SEND_MESSAGES, n),
+                a = m.A.can(E.xBc.SEND_MESSAGES, n),
                 r = null != l && null != e && d.Ay.getMember(l, e.id)?.isPending,
                 s = t.author.bot,
                 o = u.A.getGuild(l),
-                A = null != o && (o.systemChannelFlags & h.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+                A = null != o && (o.systemChannelFlags & E.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
             return a && !i && !r && !s && A
         });
         return null != l && r ? (0, i.jsx)(p, {

@@ -30,13 +30,13 @@ function C(e) {
         location: y,
         onAction: S,
         appContext: I
-    } = e, j = i.useContext(f.AnalyticsContext), v = (0, u.aL)(), D = (0, a.bG)([E.A], () => C ?? E.A.getChannelId(n, !0), [C, n]), O = (0, a.bG)([b.Ay], () => null == n ? null : b.Ay.getMember(n, t), [n, t]), T = (0, s.q)(n);
+    } = e, j = i.useContext(f.AnalyticsContext), D = (0, u.aL)(), v = (0, a.bG)([E.A], () => C ?? E.A.getChannelId(n, !0), [C, n]), O = (0, a.bG)([b.Ay], () => null == n ? null : b.Ay.getMember(n, t), [n, t]), T = (0, s.q)(n);
     return null != n && null != O && T ? (0, l.jsx)(r.Drp, {
         id: "mod-view",
         label: p.intl.string(p.t.kj3tz2),
         action: () => {
-            S?.(), (0, c.A)(I), v.dispatch(h.jej.POPOUT_CLOSE);
-            let e = m.A.getChannel(D),
+            S?.(), (0, c.A)(I), D.dispatch(h.jej.POPOUT_CLOSE);
+            let e = m.A.getChannel(v),
                 l = {
                     modViewPanel: M.g.INFO,
                     sourceLocation: y ?? j.location
@@ -47,7 +47,7 @@ function C(e) {
                     baseChannelId: e.parent_id
                 }), (0, A.iN)(e.id)), (0, o.z)(n, t, e.parent_id, l);
                 return
-            }(0, o.z)(n, t, D ?? x.VV.MEMBER_SAFETY, l)
+            }(0, o.z)(n, t, v ?? x.VV.MEMBER_SAFETY, l)
         }
     }) : null
 }

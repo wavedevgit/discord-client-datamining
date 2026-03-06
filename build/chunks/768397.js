@@ -1,31 +1,31 @@
 /** chunk id: 768397 params = (module,exports,require) **/
-r.d(t, {
+s.d(t, {
     A: () => p,
     F: () => g
 });
-var s = r(627968);
-r(64700);
-var n = r(503698),
-    l = r.n(n),
-    i = r(397927),
-    a = r(854378),
-    d = r(496885),
-    c = r(68965),
-    u = r(651539),
-    o = r(401755),
-    C = r(985018),
-    m = r(436227),
-    L = r(522759);
+var r = s(627968);
+s(64700);
+var n = s(503698),
+    i = s.n(n),
+    l = s(397927),
+    a = s(854378),
+    d = s(496885),
+    c = s(68965),
+    u = s(651539),
+    C = s(401755),
+    o = s(985018),
+    L = s(436227),
+    m = s(522759);
 
 function h() {
-    return (0, s.jsx)(d.A, {
-        className: m.w$,
-        children: (0, s.jsx)("div", {
-            className: m.SN,
-            children: (0, s.jsx)(i.Uzd, {
+    return (0, r.jsx)(d.A, {
+        className: L.w$,
+        children: (0, r.jsx)("div", {
+            className: L.SN,
+            children: (0, r.jsx)(l.Uzd, {
                 size: "xs",
                 color: "currentColor",
-                className: m.HE
+                className: L.HE
             })
         })
     })
@@ -34,32 +34,32 @@ function h() {
 function x(e) {
     let {
         verified: t,
-        text: r
+        text: s
     } = e;
-    return t ? (0, s.jsxs)("div", {
-        className: m.V,
-        children: [(0, s.jsx)(h, {}), r]
-    }) : r
+    return t ? (0, r.jsxs)("div", {
+        className: L.V,
+        children: [(0, r.jsx)(h, {}), s]
+    }) : s
 }
 
 function g(e) {
     let {
         className: t,
-        count: r,
+        count: s,
         creator: n,
-        verifiedName: i
+        verifiedName: l
     } = e;
-    return (0, s.jsx)("div", {
-        className: l()(m.t5, t, m.fz),
-        children: null != n || null != i ? C.intl.format(C.t.TTcKAw, {
-            usageCount: r,
-            creator: i ?? n,
-            creatorHook: (e, t) => (0, s.jsx)(x, {
+    return (0, r.jsx)("div", {
+        className: i()(L.t5, t, L.fz),
+        children: null != n || null != l ? o.intl.format(o.t.TTcKAw, {
+            usageCount: s,
+            creator: l ?? n,
+            creatorHook: (e, t) => (0, r.jsx)(x, {
                 text: e,
-                verified: null != i
+                verified: null != l
             }, t)
-        }) : C.intl.format(C.t.cGXXHL, {
-            usageCount: r
+        }) : o.intl.format(o.t.cGXXHL, {
+            usageCount: s
         })
     })
 }
@@ -67,50 +67,50 @@ function g(e) {
 function p(e) {
     let {
         guildTemplate: t,
-        error: r,
+        error: s,
         tall: n,
         pillClassName: d
     } = e;
-    if (null != r && "" !== r) return (0, s.jsxs)("div", {
-        className: m.kL,
-        children: [(0, s.jsx)(a.hE, {
-            children: C.intl.string(C.t.mDFGFj)
-        }), (0, s.jsx)(a.tK, {
-            children: r
+    if (null != s && "" !== s) return (0, r.jsxs)("div", {
+        className: L.kL,
+        children: [(0, r.jsx)(a.hE, {
+            children: o.intl.string(o.t.mDFGFj)
+        }), (0, r.jsx)(a.tK, {
+            children: s
         })]
     });
-    if (t.state === o.QB.RESOLVING) return (0, s.jsx)("div", {
-        className: m.kL,
-        children: (0, s.jsx)(i.y$y, {})
+    if (t.state === C.QB.RESOLVING) return (0, r.jsx)("div", {
+        className: L.kL,
+        children: (0, r.jsx)(l.y$y, {})
     });
     let h = (0, u.A)(t.code).header;
-    return n ? (0, s.jsxs)("div", {
-        className: m.kL,
-        children: [(0, s.jsx)(a.hE, {
-            className: m.DD,
+    return n ? (0, r.jsxs)("div", {
+        className: L.kL,
+        children: [(0, r.jsx)(a.hE, {
+            className: L.DD,
             children: h
-        }), (0, s.jsx)(a.tK, {
-            className: l()(m.VA, L.__invalid_marginTop2),
-            children: C.intl.string(C.t["h+vyO6"])
-        }), (0, s.jsx)(a.hE, {
-            className: l()(m.DD, m.fz),
+        }), (0, r.jsx)(a.tK, {
+            className: i()(L.VA, m.__invalid_marginTop2),
+            children: o.intl.string(o.t["h+vyO6"])
+        }), (0, r.jsx)(a.hE, {
+            className: i()(L.DD, L.fz),
             children: t.name
-        }), null != t.description && "" !== t.description && (0, s.jsx)(a.tK, {
-            className: l()(m.VA, m.fz, L.Ot),
+        }), null != t.description && "" !== t.description && (0, r.jsx)(a.tK, {
+            className: i()(L.VA, L.fz, m.Ot),
             children: t.description
-        }), (0, s.jsx)(g, {
+        }), (0, r.jsx)(g, {
             className: d,
             count: t.usageCount ?? 0,
             creator: t.creator.username,
             verifiedName: (0, c.c)(t.code)
         })]
-    }) : (0, s.jsxs)("div", {
-        className: m.kL,
-        children: [(0, s.jsx)(a.hE, {
-            className: m.DD,
+    }) : (0, r.jsxs)("div", {
+        className: L.kL,
+        children: [(0, r.jsx)(a.hE, {
+            className: L.DD,
             children: h
-        }), (0, s.jsx)(a.tK, {
-            className: l()(m.VA, m.fz),
+        }), (0, r.jsx)(a.tK, {
+            className: i()(L.VA, L.fz),
             children: t.name
         })]
     })

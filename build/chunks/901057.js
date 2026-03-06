@@ -16,9 +16,9 @@ var l = n(311907),
     _ = n(734057),
     A = n(71393),
     f = n(994500),
-    h = n(287809),
-    g = n(147036),
-    E = n(449054),
+    E = n(287809),
+    h = n(147036),
+    g = n(449054),
     p = n(652215);
 
 function x(e) {
@@ -28,7 +28,7 @@ function x(e) {
         beforeTransition: x,
         className: C,
         openChatWithoutConnecting: I
-    } = e, T = (0, l.bG)([h.default, f.A], () => null == t ? "" : (0, c.m1)(t, h.default, f.A), [t]);
+    } = e, T = (0, l.bG)([E.default, f.A], () => null == t ? "" : (0, c.m1)(t, E.default, f.A), [t]);
     return (0, i.jsx)(a.m, {
         "data-pending-richtooltip-migration": !0,
         __unsupportedReactNodeAsText: T,
@@ -41,7 +41,7 @@ function x(e) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                     if (null == e || null == t) return;
                     let i = A.A.getGuild(e);
-                    if (i?.joinedAt == null) return E.Z2(e, {}, {
+                    if (i?.joinedAt == null) return g.Z2(e, {}, {
                         channelId: t
                     });
                     let l = _.A.getChannel(t);
@@ -55,7 +55,7 @@ function x(e) {
                     }(0, u.pX)(p.BVt.CHANNEL(e, t))
                 }(t?.guild_id, t?.id, I))
             },
-            iconType: (0, g.QG)(t),
+            iconType: (0, h.QG)(t),
             children: T
         })
     })

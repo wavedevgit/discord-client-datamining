@@ -20,8 +20,8 @@ function f(e) {
         giftIntentType: t,
         recipientUser: n,
         channel: f
-    } = e, h = (0, a.bG)([o.A], () => o.A.useReducedMotion), g = l.useRef(null), {
-        createMultipleConfettiAt: E
+    } = e, E = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = l.useRef(null), {
+        createMultipleConfettiAt: g
     } = l.useContext(c.x), p = l.useCallback(e => ({
         size: {
             type: "static-random",
@@ -41,8 +41,8 @@ function f(e) {
         }
     }), []);
     return l.useEffect(() => {
-        if (h) return;
-        let e = g.current;
+        if (E) return;
+        let e = h.current;
         if (null == e) return;
         let t = null,
             n = new IntersectionObserver(i => {
@@ -52,7 +52,7 @@ function f(e) {
                         n = p({
                             confettiSize: 8
                         });
-                    E(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+                    g(t.left + t.width / 2, t.top + t.height / 2, n, 60)
                 })).delay())
             }, {
                 threshold: .5
@@ -60,14 +60,14 @@ function f(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [E, g, h, p]), (0, i.jsx)(m.A, {
+    }, [g, h, E, p]), (0, i.jsx)(m.A, {
         contentClassName: A.o9,
         iconContainerClassName: A.zc,
         iconNode: (0, i.jsx)(s.XFE, {
             colorClass: A.Kk
         }),
         children: (0, i.jsx)(d.A, {
-            innerRef: g,
+            innerRef: h,
             giftIntentType: t,
             recipientUser: n,
             analyticsPage: (0, u.DJ)(f),

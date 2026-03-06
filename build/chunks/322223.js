@@ -1,7 +1,7 @@
 /** chunk id: 322223 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => p
 });
 var i = n(627968),
     r = n(64700),
@@ -22,23 +22,23 @@ var i = n(627968),
     S = n(985018),
     O = n(623393);
 
-function C(e) {
+function p(e) {
     let {
         onDismiss: t
-    } = e, C = (0, l.bG)([d.A], () => d.A.getGuildId()), p = (0, l.bG)([_.A], () => null != C ? _.A.getChannelId(C) : null, [C]), P = C ?? null, D = (0, l.bG)([c.A], () => null != P ? c.A.getGuild(P) : null, [P]), {
+    } = e, p = (0, l.bG)([d.A], () => d.A.getGuildId()), C = (0, l.bG)([_.A], () => null != p ? _.A.getChannelId(p) : null, [p]), P = p ?? null, D = (0, l.bG)([c.A], () => null != P ? c.A.getGuild(P) : null, [P]), {
         shouldShowIncidentActions: M,
-        incidentData: g,
-        isUnderLockdown: U
+        incidentData: U,
+        isUnderLockdown: g
     } = (0, u.Li)(P), m = (0, o.fw)(D?.id ?? N.dJq), h = r.useCallback(() => null != D && (0, E.aZ)(D.id), [D]);
-    if (null == D || null == g || !M) return null;
+    if (null == D || null == U || !M) return null;
     let y = e => {
-            e && m && p !== R.VV.MEMBER_SAFETY && h() ? A.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+            e && m && C !== R.VV.MEMBER_SAFETY && h() ? A.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: D.id
             }) : (0, s.mMO)(async () => {
                 let e = {
                         source: T.Eo.NAGBAR,
-                        alertType: (0, I.$5)(g)
+                        alertType: (0, I.$5)(U)
                     },
                     {
                         default: t
@@ -55,8 +55,8 @@ function C(e) {
             guild: D,
             size: a.Ay.Sizes.MINI
         }),
-        k = (0, I.ql)(g, D.name);
-    if (null != (g.dmsDisabledUntil ?? g.invitesDisabledUntil) && U) return (0, i.jsxs)(s.$Td, {
+        k = (0, I.ql)(U, D.name);
+    if (null != (U.dmsDisabledUntil ?? U.invitesDisabledUntil) && g) return (0, i.jsxs)(s.$Td, {
         className: O.lm,
         color: s.Hv$.NEUTRAL,
         children: [(0, i.jsx)(s.PMB, {
@@ -76,14 +76,14 @@ function C(e) {
             })
         })]
     });
-    let L = (0, I.P$)(g) ? S.intl.formatToPlainString(S.t.tZTx2E, {
+    let L = (0, I.P$)(U) ? S.intl.formatToPlainString(S.t.tZTx2E, {
             guildName: D.name
-        }) : (0, I.Qm)(g) ? S.intl.formatToPlainString(S.t["1bSmxr"], {
+        }) : (0, I.Qm)(U) ? S.intl.formatToPlainString(S.t["1bSmxr"], {
             guildName: D.name
         }) : S.intl.formatToPlainString(S.t.W87xDE, {
             guildName: D.name
         }),
-        x = m && p === R.VV.MEMBER_SAFETY;
+        x = m && C === R.VV.MEMBER_SAFETY;
     return (0, i.jsxs)(s.$Td, {
         className: O.lm,
         color: s.Hv$.WARNING,

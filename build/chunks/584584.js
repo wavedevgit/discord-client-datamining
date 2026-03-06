@@ -15,9 +15,9 @@ var i = n(735438),
     _ = n(287809),
     A = n(469778),
     f = n(67480),
-    h = n(652215);
-let g = "DetectedOffPlatformPremiumPerksStore",
-    E = {},
+    E = n(652215);
+let h = "DetectedOffPlatformPremiumPerksStore",
+    g = {},
     p = {},
     x = [];
 
@@ -39,7 +39,7 @@ function C() {
             f.A.isFetching(t) || f.A.didFetchingSkuFail(t) || c.EX(i.id, t);
             continue
         }
-        A.A.applicationIdsFetching.has(i.id) || A.A.isEntitledToSku(_.default.getCurrentUser(), t, i.id, i.id) || !l.available ? null != E[t] && (delete E[t], e = !0) : (E[t] = {
+        A.A.applicationIdsFetching.has(i.id) || A.A.isEntitledToSku(_.default.getCurrentUser(), t, i.id, i.id) || !l.available ? null != g[t] && (delete g[t], e = !0) : (g[t] = {
             skuId: t,
             applicationId: n
         }, e = !0)
@@ -49,15 +49,15 @@ function C() {
 class I extends a.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        this.waitFor(u.A, A.A, m.Ay, f.A, _.default), x = r.w.get(g) ?? x
+        this.waitFor(u.A, A.A, m.Ay, f.A, _.default), x = r.w.get(h) ?? x
     }
     getDetectedOffPlatformPremiumPerks() {
-        return l().values(E)
+        return l().values(g)
     }
 }
 let T = new I(s.h, {
     LOGOUT: function() {
-        E = {}, p = {}
+        g = {}, p = {}
     },
     SKU_FETCH_SUCCESS: C,
     ENTITLEMENT_FETCH_APPLICATION_SUCCESS: C,
@@ -67,8 +67,8 @@ let T = new I(s.h, {
         let {
             skuId: t
         } = e;
-        if (delete E[t], x.includes(t)) return !1;
-        x.push(t), r.w.set(g, x)
+        if (delete g[t], x.includes(t)) return !1;
+        x.push(t), r.w.set(h, x)
     },
     RUNNING_GAMES_CHANGE: function() {
         let e = !1;
@@ -77,12 +77,12 @@ let T = new I(s.h, {
                 distributor: n
             }
             of m.Ay.getRunningGames())
-            if (null != t && n !== h.d3x.DISCORD)
+            if (null != t && n !== E.d3x.DISCORD)
                 for (let {
                         skuId: n,
                         applicationId: i
                     }
-                    of h.m_i) i !== t || x.includes(n) || null == p[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), p[n] = {
+                    of E.m_i) i !== t || x.includes(n) || null == p[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), p[n] = {
                     skuId: n,
                     applicationId: i
                 }, e = !0);

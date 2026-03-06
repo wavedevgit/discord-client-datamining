@@ -18,15 +18,13 @@ function h(e, t, h, m) {
     }, []), _ = l.useCallback(async () => {
         if (!A && null != e && null != t && null != h) {
             if (null != p) return void r.default.selectPrivateChannel(p.id);
-            if (!A) {
-                g(!0);
-                try {
-                    await c.A.createOrEnterJoinRequestInterview(h)
-                } catch {
-                    f()
-                } finally {
-                    g(!1)
-                }
+            g(!0);
+            try {
+                await c.A.createOrEnterJoinRequestInterview(h)
+            } catch {
+                f()
+            } finally {
+                g(!1)
             }
         }
     }, [e, h, p, f, A, t]);

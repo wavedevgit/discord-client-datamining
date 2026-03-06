@@ -22,13 +22,13 @@ var o = n(299855),
     R = n(956793),
     S = n(785796),
     O = n(800342),
-    C = n(55619),
-    p = n(246605),
+    p = n(55619),
+    C = n(246605),
     P = n(271866),
     D = n(86980),
     M = n(322337),
-    g = n(77729),
-    U = n(573648),
+    U = n(77729),
+    g = n(573648),
     m = n(793574),
     h = n(688810),
     y = n(587895),
@@ -76,13 +76,13 @@ var o = n(299855),
     eR = n(147964),
     eS = n(519057),
     eO = n(954571),
-    eC = n(975571),
-    ep = n(723702),
+    ep = n(975571),
+    eC = n(723702),
     eP = n(652215),
     eD = n(502075),
     eM = n(788868),
-    eg = n(831502),
-    eU = n(731854),
+    eU = n(831502),
+    eg = n(731854),
     em = n(985018),
     eh = n(692324);
 let ey = e => {
@@ -102,7 +102,7 @@ let ey = e => {
         return n ? (0, i.jsx)(_.DUT, {
             tag: "span",
             className: eh.wz,
-            onClick: () => n && open(eC.A.getArticleURL(eP.MVz.AV_ERROR_CODES)),
+            onClick: () => n && open(ep.A.getArticleURL(eP.MVz.AV_ERROR_CODES)),
             children: s
         }) : s
     },
@@ -120,7 +120,7 @@ let ey = e => {
             }), em.intl.string(em.t.o3zuYz), (0, i.jsx)(ey, {
                 error: q.iy.NO_INPUT_DEVICES
             }), (0, i.jsx)(_.eCN, {
-                href: eC.A.getArticleURL(eP.MVz.NO_INPUT_DETECTED),
+                href: ep.A.getArticleURL(eP.MVz.NO_INPUT_DETECTED),
                 noticeType: t,
                 children: em.intl.string(em.t.RYKKox)
             })]
@@ -128,7 +128,7 @@ let ey = e => {
     };
 
 function ek(e) {
-    return (0, ep.isWindows)() && E().satisfies(g.A?.os.release, eD.PH) ? `ms-settings:sound-properties?endpointId=${e}` : "ms-settings:sound"
+    return (0, eC.isWindows)() && E().satisfies(U.A?.os.release, eD.PH) ? `ms-settings:sound-properties?endpointId=${e}` : "ms-settings:sound"
 }
 
 function eL(e) {
@@ -140,7 +140,7 @@ function eL(e) {
         } = (0, z.I)({
             location: "AudioIssueNoticeNoInput"
         }),
-        s = (0, J.x5)(eU.oh.AUDIO_INPUT),
+        s = (0, J.x5)(eg.oh.AUDIO_INPUT),
         a = s?.guid ?? "",
         {
             inputDeviceOSMuted: o,
@@ -149,7 +149,7 @@ function eL(e) {
             inputDeviceOSMuted: eA.Ay.getInputDeviceOSMuted(),
             inputDeviceOSVolume: eA.Ay.getInputDeviceOSVolume()
         })),
-        A = (0, ep.isWindows)() && E().satisfies(g.A?.os.release, eD.PH) && l,
+        A = (0, eC.isWindows)() && E().satisfies(U.A?.os.release, eD.PH) && l,
         u = !1;
     return A && !0 === o ? (t = em.intl.string(em.t.ppW3ri), n = (0, i.jsx)(_.eCN, {
         href: ek(a),
@@ -159,7 +159,7 @@ function eL(e) {
         href: ek(a),
         noticeType: r,
         children: em.intl.string(em.t.QghSIq)
-    })) : eA.Ay.supports(eU.O5.LOOPBACK) ? (t = em.intl.string(em.t.dNAJ18), u = !0, n = (0, i.jsx)(_.zr9, {
+    })) : eA.Ay.supports(eg.O5.LOOPBACK) ? (t = em.intl.string(em.t.dNAJ18), u = !0, n = (0, i.jsx)(_.zr9, {
         onClick: () => {
             (0, eE.openUserSettings)(eo.X.VOICE_AND_VIDEO_PANEL, {
                 section: eP.nc_.VOICE
@@ -167,7 +167,7 @@ function eL(e) {
         },
         children: em.intl.string(em.t.I6YlB4)
     })) : (t = em.intl.string(em.t.nCO9bI), n = (0, i.jsx)(_.eCN, {
-        href: eC.A.getArticleURL(eP.MVz.NO_INPUT_DETECTED),
+        href: ep.A.getArticleURL(eP.MVz.NO_INPUT_DETECTED),
         noticeType: r,
         children: em.intl.string(em.t.RYKKox)
     })), (0, i.jsxs)(_.$Td, {
@@ -214,20 +214,20 @@ let eG = 21552 == n.j ? r.memo(function() {
                     metadata: e
                 } = l, t = B.A.getUserExperimentDescriptor(e.id);
                 null != t && (0, X.LQ)(e.id, t), (async () => {
-                    l.metadata?.id != null && await (0, p.oX)(l.metadata?.id)
+                    l.metadata?.id != null && await (0, C.oX)(l.metadata?.id)
                 })()
             }
         }, [l]), null == l) return null;
     let I = null != l.type ? eS.Re[l.type] : null,
-        g = null != l.type ? eS.k3[l.type] : null,
+        U = null != l.type ? eS.k3[l.type] : null,
         m = null != l.type ? eS.f7[l.type] : null,
         q = eS.pe[l.type];
     if (null != I) return (0, i.jsx)(G.$, {
         dismissibleContent: I,
         noticeType: l.type
     });
-    if (null != g) return (0, i.jsx)(j._, {
-        dismissibleContent: g,
+    if (null != U) return (0, i.jsx)(j._, {
+        dismissibleContent: U,
         noticeType: l.type
     });
     if (null != m) return (0, i.jsx)(x.T, {
@@ -264,7 +264,7 @@ let eG = 21552 == n.j ? r.memo(function() {
                     onClick: () => ex(e_),
                     noticeType: l.type
                 }), em.intl.format(em.t["08KQ1P"], {
-                    helpCenterLink: eC.A.getArticleURL(eP.MVz.WIN32_DEPRECATE)
+                    helpCenterLink: ep.A.getArticleURL(eP.MVz.WIN32_DEPRECATE)
                 })]
             });
         case eP.kqX.WIN7_8_DEPRECATED_MESSAGE:
@@ -277,7 +277,7 @@ let eG = 21552 == n.j ? r.memo(function() {
                     onClick: () => ex(eA),
                     noticeType: l.type
                 }), em.intl.format(em.t["8Je+dX"], {
-                    helpCenterLink: eC.A.getArticleURL(eP.MVz.WIN7_8_DEPRECATE)
+                    helpCenterLink: ep.A.getArticleURL(eP.MVz.WIN7_8_DEPRECATE)
                 })]
             });
         case eP.kqX.WIN_COMPAT_MODE_MESSAGE:
@@ -293,15 +293,15 @@ let eG = 21552 == n.j ? r.memo(function() {
             });
         case eP.kqX.MACOS_19_DEPRECATED_MESSAGE:
             let {
-                dismissUntil: eU
+                dismissUntil: eg
             } = l.metadata;
             return (0, i.jsxs)(_.$Td, {
                 color: _.Hv$.WARNING,
                 children: [(0, i.jsx)(_.PMB, {
-                    onClick: () => ex(eU),
+                    onClick: () => ex(eg),
                     noticeType: l.type
                 }), em.intl.format(em.t.q8VPLo, {
-                    helpCenterLink: eC.A.getArticleURL(eP.MVz.MACOS_19_DEPRECATE)
+                    helpCenterLink: ep.A.getArticleURL(eP.MVz.MACOS_19_DEPRECATE)
                 })]
             });
         case eP.kqX.E2EE_UPDATE_REQUIRED:
@@ -313,8 +313,8 @@ let eG = 21552 == n.j ? r.memo(function() {
                 children: [(0, i.jsx)(_.PMB, {
                     onClick: () => ex(ey),
                     noticeType: l.type
-                }), em.intl.format(ep.isPlatformEmbedded ? em.t.J232TI : em.t.vceuiL, {
-                    helpCenterLink: eC.A.getArticleURL(eP.MVz.END_TO_END_ENCRYPTION)
+                }), em.intl.format(eC.isPlatformEmbedded ? em.t.J232TI : em.t.vceuiL, {
+                    helpCenterLink: ep.A.getArticleURL(eP.MVz.END_TO_END_ENCRYPTION)
                 })]
             });
         case eP.kqX.WINDOWS_MEDIA_PACK_REQUIRED:
@@ -324,7 +324,7 @@ let eG = 21552 == n.j ? r.memo(function() {
                     onClick: () => ex(),
                     noticeType: l.type
                 }), em.intl.string(em.t.iW0fcQ), (0, i.jsx)(_.eCN, {
-                    href: eC.A.getArticleURL(eP.MVz.WINDOWS_MEDIA_PACK),
+                    href: ep.A.getArticleURL(eP.MVz.WINDOWS_MEDIA_PACK),
                     target: "_blank",
                     noticeType: l.type,
                     children: em.intl.string(em.t.LQG5j6)
@@ -389,7 +389,7 @@ let eG = 21552 == n.j ? r.memo(function() {
                 })]
             });
         case eP.kqX.SPOTIFY_AUTO_PAUSED:
-            let ek = U.A.get(eP.fg2.SPOTIFY);
+            let ek = g.A.get(eP.fg2.SPOTIFY);
             return (0, i.jsxs)(_.$Td, {
                 color: _.Hv$.DANGER,
                 children: [(0, i.jsx)(_.PMB, {
@@ -407,7 +407,7 @@ let eG = 21552 == n.j ? r.memo(function() {
                     children: em.intl.string(em.t.NiTd0e)
                 }), (0, i.jsx)(_.MzZ, {
                     className: eh.N0,
-                    href: eC.A.getArticleURL(eP.MVz.SPOTIFY_AUTO_PAUSED),
+                    href: ep.A.getArticleURL(eP.MVz.SPOTIFY_AUTO_PAUSED),
                     target: "_blank",
                     children: em.intl.string(em.t.CiqAIU)
                 })]
@@ -504,7 +504,7 @@ let eG = 21552 == n.j ? r.memo(function() {
                     onClick: () => ex(),
                     noticeType: eP.kqX.STREAMER_MODE
                 }), em.intl.string(em.t.iEgBXp), (0, i.jsx)(_.Z_L, {
-                    onClick: () => C.A.setEnabled(!1),
+                    onClick: () => p.A.setEnabled(!1),
                     noticeType: eP.kqX.STREAMER_MODE,
                     children: em.intl.string(em.t.R9GHya)
                 })]
@@ -599,12 +599,12 @@ let eG = 21552 == n.j ? r.memo(function() {
                 children: [(0, i.jsx)(_.PMB, {
                     noticeType: eP.kqX.SURVEY,
                     onClick: () => {
-                        (0, p.pX)(t, !0)
+                        (0, C.pX)(t, !0)
                     }
                 }), n, (0, i.jsx)(_.Z_L, {
                     noticeType: eP.kqX.SURVEY,
                     onClick: () => {
-                        a ? (0, et.K)(o) : window.open(s, "_blank"), (0, p.pX)(t, !1)
+                        a ? (0, et.K)(o) : window.open(s, "_blank"), (0, C.pX)(t, !1)
                     },
                     children: r
                 })]
@@ -614,7 +614,7 @@ let eG = 21552 == n.j ? r.memo(function() {
             return (0, i.jsxs)(_.$Td, {
                 color: _.Hv$.DANGER,
                 children: [em.intl.string(em.t["ugxmk/"]), (0, i.jsx)(_.eCN, {
-                    href: eC.A.getArticleURL(eP.MVz.CORRUPT_INSTALLATION),
+                    href: ep.A.getArticleURL(eP.MVz.CORRUPT_INSTALLATION),
                     target: "_blank",
                     noticeType: l.type,
                     children: em.intl.string(em.t["6ik4Xk"])
@@ -875,12 +875,12 @@ let eG = 21552 == n.j ? r.memo(function() {
             return (0, i.jsxs)(_.$Td, {
                 color: _.Hv$.DANGER,
                 children: [em.intl.string(em.t.DVFJYf), (0, i.jsx)(_.eCN, {
-                    href: eg.q,
+                    href: eU.q,
                     target: "_blank",
                     noticeType: l.type,
                     children: em.intl.string(em.t.kvHdFN)
                 }), (0, i.jsx)(_.MzZ, {
-                    href: eC.A.getArticleURL(eP.MVz.QUARANTINE),
+                    href: ep.A.getArticleURL(eP.MVz.QUARANTINE),
                     target: "_blank",
                     className: eh.yw,
                     children: em.intl.string(em.t.hvVgAZ)

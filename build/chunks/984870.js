@@ -1,7 +1,7 @@
 /** chunk id: 984870 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    T: () => p
+    T: () => C
 });
 var i = n(627968),
     r = n(64700),
@@ -21,17 +21,17 @@ var i = n(627968),
     R = n(652215),
     S = n(788868),
     O = n(985018),
-    C = n(391158);
-let p = e => {
+    p = n(391158);
+let C = e => {
     let {
         dismissibleContent: t
-    } = e, n = (0, E.Cp)(), p = (0, l.bG)([A.default], () => T.Ay.isPremiumExactly(A.default.getCurrentUser(), S.PremiumTypes.TIER_2)), {
+    } = e, n = (0, E.Cp)(), C = (0, l.bG)([A.default], () => T.Ay.isPremiumExactly(A.default.getCurrentUser(), S.PremiumTypes.TIER_2)), {
         enabled: P
     } = o.m.useExperiment({
         location: "OutboundPromotionNotice"
     }, {
         autoTrackExposure: !1,
-        disable: p
+        disable: C
     }), D = r.useCallback(() => {
         u.default.track(R.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, d.openUserSettings)(_.X.GIFT_PANEL, {
             section: R.nc_.INVENTORY
@@ -60,7 +60,7 @@ let p = e => {
                 }), (0, i.jsx)(a.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: C.P
+                    className: p.P
                 }), P ? O.intl.string(O.t["5JMiOo"]) : O.intl.string(O.t["Pzh+G2"]), (0, i.jsx)(a.Z_L, {
                     noticeType: R.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {

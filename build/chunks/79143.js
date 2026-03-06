@@ -77,7 +77,7 @@ function A(e) {
             className: p.eB,
             children: !f && (0, i.jsx)(o.DUT, {
                 className: p.xQ,
-                onClick: f ? void 0 : x,
+                onClick: x,
                 "aria-label": _.intl.string(_.t.Eoo8h6),
                 "aria-disabled": f,
                 children: (0, i.jsx)(o.R2l, {

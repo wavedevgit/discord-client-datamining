@@ -39,8 +39,8 @@ let L = (0, s.animated)(c.abt),
             expansionSpring: P,
             isAnimating: M,
             isExpanded: w,
-            isInteracting: D,
-            contentPosition: O,
+            isInteracting: O,
+            contentPosition: D,
             toggleExpanded: k,
             sourceQuestContent: U
         } = e, {
@@ -54,7 +54,7 @@ let L = (0, s.animated)(c.abt),
                 questId: n.id,
                 questContent: r,
                 questContentCTA: w ? x.Cy.COLLAPSE : x.Cy.EXPAND,
-                questContentPosition: O,
+                questContentPosition: D,
                 sourceQuestContent: U
             })
         }, en = (0, i.jsx)(E.Ay, {
@@ -78,7 +78,7 @@ let L = (0, s.animated)(c.abt),
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
-                isInteracting: D,
+                isInteracting: O,
                 containerClassName: j.v7,
                 imageSize: {
                     width: 660,
@@ -195,7 +195,7 @@ let L = (0, s.animated)(c.abt),
                     children: [(0, i.jsx)(C.C, {
                         questContent: r,
                         quest: n,
-                        questContentPosition: O,
+                        questContentPosition: D,
                         shouldShowDisclosure: !0,
                         hideLearnMore: z,
                         showShareLink: !t && Q,

@@ -22,8 +22,8 @@ var r = n(554146),
     R = n(954571),
     S = n(379848),
     O = n(49999),
-    C = n(652215),
-    p = n(788868),
+    p = n(652215),
+    C = n(788868),
     P = n(985018),
     D = n(692324);
 let M = e => {
@@ -80,7 +80,7 @@ let M = e => {
                         }), P.intl.string(P.t.lgwX26), (0, i.jsx)(l.Z_L, {
                             noticeType: M,
                             onClick: () => {
-                                (0, o.A)(C.AMi.META_QUEST), S(O.i.TAKE_ACTION)
+                                (0, o.A)(p.AMi.META_QUEST), S(O.i.TAKE_ACTION)
                             },
                             children: P.intl.string(P.t["1WjMbC"])
                         })]
@@ -95,7 +95,7 @@ let M = e => {
                             className: D.tV
                         }), P.intl.string(P.t["5NUVHH"]), (0, i.jsx)(l.Z_L, {
                             onClick: () => (0, c.A)({
-                                platformType: C.fg2.SPOTIFY,
+                                platformType: p.fg2.SPOTIFY,
                                 location: "Notice Bar"
                             }),
                             noticeType: M,
@@ -111,10 +111,10 @@ let M = e => {
                         }), (0, i.jsx)("img", {
                             alt: "",
                             className: D.tV,
-                            src: a.A.get(C.fg2.PLAYSTATION).icon.whiteSVG
+                            src: a.A.get(p.fg2.PLAYSTATION).icon.whiteSVG
                         }), P.intl.string(P.t.WHWgoY), (0, i.jsx)(l.zr9, {
                             onClick: () => (0, c.A)({
-                                platformType: C.fg2.PLAYSTATION,
+                                platformType: p.fg2.PLAYSTATION,
                                 location: "Notice Bar"
                             }),
                             children: P.intl.string(P.t.S0W8Z5)
@@ -167,17 +167,17 @@ let M = e => {
                             className: D.CO,
                             noticeType: M,
                             onClick: () => {
-                                R.default.track(C.HAw.PREMIUM_PROMOTION_OPENED, {
-                                    location_section: C.JJy.NOTIFICATION_BAR,
-                                    location_object: C.ZSU.BUTTON_CTA
+                                R.default.track(p.HAw.PREMIUM_PROMOTION_OPENED, {
+                                    location_section: p.JJy.NOTIFICATION_BAR,
+                                    location_object: p.ZSU.BUTTON_CTA
                                 }), (0, I.openUserSettings)(T.X.NITRO_PANEL, {
-                                    section: C.nc_.PREMIUM
+                                    section: p.nc_.PREMIUM
                                 })
                             },
                             children: P.intl.string(P.t["8JC5e/"])
                         }), (0, i.jsx)(l.PMB, {
                             onClick: () => {
-                                S(O.i.UNKNOWN), (0, s.lA)(C.nhx.PREMIUM_PROMO_DISMISSED, !0)
+                                S(O.i.UNKNOWN), (0, s.lA)(p.nhx.PREMIUM_PROMO_DISMISSED, !0)
                             },
                             noticeType: M
                         })]
@@ -185,12 +185,12 @@ let M = e => {
                 case r.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
                     return (0, i.jsx)(A.A, {
                         dismissCurrentNotice: () => S(O.i.UNKNOWN),
-                        subscriptionTier: p.pe.TIER_2
+                        subscriptionTier: C.pe.TIER_2
                     });
                 case r.M.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
                     return (0, i.jsx)(A.A, {
                         dismissCurrentNotice: () => S(O.i.UNKNOWN),
-                        subscriptionTier: p.pe.TIER_0
+                        subscriptionTier: C.pe.TIER_0
                     });
                 case r.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE:
                     return (0, i.jsxs)(l.$Td, {
@@ -202,7 +202,7 @@ let M = e => {
                             noticeType: M,
                             onClick: () => {
                                 S(O.i.UNKNOWN), (0, I.openUserSettings)(T.X.NITRO_PANEL, {
-                                    section: C.nc_.PREMIUM
+                                    section: p.nc_.PREMIUM
                                 })
                             },
                             children: P.intl.string(P.t.pyYSiO)
@@ -217,13 +217,13 @@ let M = e => {
                         }), P.intl.string(P.t["7490vQ"]), (0, i.jsx)(l.Z_L, {
                             noticeType: M,
                             onClick: () => {
-                                (0, u.pX)(C.BVt.SETTINGS("account"))
+                                (0, u.pX)(p.BVt.SETTINGS("account"))
                             },
                             children: P.intl.string(P.t.Vm8akB)
                         })]
                     });
                 case r.M.NAGBAR_ACTIVATE_SERVER_SUBSCRIPTION:
-                    let g = _.A.getEligibleGuildsForNagActivate();
+                    let U = _.A.getEligibleGuildsForNagActivate();
                     return (0, i.jsxs)(l.$Td, {
                         color: l.Hv$.DEFAULT,
                         children: [(0, i.jsx)(l.PMB, {
@@ -232,7 +232,7 @@ let M = e => {
                         }), P.intl.string(P.t.pJ4hJE), (0, i.jsx)(l.Z_L, {
                             noticeType: M,
                             onClick: () => {
-                                S(O.i.PRIMARY), (0, u.pX)(1 === g.length ? C.BVt.GUILD_SETTINGS(g[0], "role-subscriptions") : C.BVt.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
+                                S(O.i.PRIMARY), (0, u.pX)(1 === U.length ? p.BVt.GUILD_SETTINGS(U[0], "role-subscriptions") : p.BVt.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
                             },
                             children: P.intl.string(P.t["74s74F"])
                         })]
@@ -246,9 +246,9 @@ let M = e => {
                         }), P.intl.string(P.t["O9GI+k"]), (0, i.jsx)(l.Z_L, {
                             onClick: () => {
                                 (0, d.A)({
-                                    subscriptionTier: p.pe.TIER_2,
+                                    subscriptionTier: C.pe.TIER_2,
                                     analyticsLocations: [E.A.CHECKOUT_RECOVERY_NAGBAR],
-                                    analyticsLocation: C.ThZ.CHECKOUT_RECOVERY_NAGBAR,
+                                    analyticsLocation: p.ThZ.CHECKOUT_RECOVERY_NAGBAR,
                                     onClose: () => S(O.i.UNKNOWN)
                                 })
                             },
