@@ -5,8 +5,8 @@ t.d(e, {
 });
 var i = t(627968);
 t(64700);
-var r = t(503698),
-    l = t.n(r),
+var l = t(503698),
+    r = t.n(l),
     s = t(397927),
     a = t(985018),
     c = t(377448),
@@ -14,7 +14,7 @@ var r = t(503698),
 
 function o() {
     return (0, i.jsxs)("div", {
-        className: l()(c.dt, c.dE),
+        className: r()(c.dt, c.dE),
         children: [(0, i.jsx)("img", {
             src: u.A,
             alt: "reverse trial unlock",

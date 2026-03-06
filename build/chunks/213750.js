@@ -58,8 +58,7 @@ let w = e => {
         } = (0, O.A)();
         return (0, x.y)(R.G2.HOME, {
             noCache: e,
-            includeUnpublished: t,
-            includeBundles: !0
+            includeUnpublished: t
         }, void 0, !0), null
     },
     G = e => {

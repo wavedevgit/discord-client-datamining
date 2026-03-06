@@ -91,7 +91,6 @@ let w = [M.G2.HOME, M.G2.ORBS],
         } = (0, C.y)(o, {
             noCache: d,
             includeUnpublished: u,
-            includeBundles: !0,
             logPerf: !0
         }, {
             sessionId: x,

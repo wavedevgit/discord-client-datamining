@@ -15,13 +15,13 @@ var i = r(64700),
 function m(t, e) {
     let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "product",
         m = (0, a.uM)(),
-        A = (0, l.bG)([u.A], () => u.A.getProduct(t)),
-        x = (0, d.i)(),
-        p = s.Ay.canUseCollectibles(x),
+        x = (0, l.bG)([u.A], () => u.A.getProduct(t)),
+        A = (0, d.i)(),
+        p = s.Ay.canUseCollectibles(A),
         h = i.useRef(null),
         g = i.useCallback(() => {
-            let i = null != A ? (0, o.Br)(A, p, !1) : null,
-                l = null != A ? (0, o.c7)(A, p, !1) : void 0;
+            let i = null != x ? (0, o.Br)(x, p, !1) : null,
+                l = null != x ? (0, o.c7)(x, p, !1) : void 0;
             n.default.track(c.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                 collectibles_shop_session_id: m?.sessionId,
                 sku_id: t,
@@ -35,7 +35,7 @@ function m(t, e) {
                 type: r,
                 category_position: m?.categoryPosition
             })
-        }, [m?.sessionId, m?.categoryPosition, m?.pageCategory, m?.pageSection, m?.tilePosition, p, e, A, t, r]),
+        }, [m?.sessionId, m?.categoryPosition, m?.pageCategory, m?.pageSection, m?.tilePosition, p, e, x, t, r]),
         C = i.useCallback(t => {
             t ? null === h.current && (h.current = setTimeout(() => {
                 g(), h.current = null

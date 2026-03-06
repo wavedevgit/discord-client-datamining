@@ -13,8 +13,8 @@ var l = r(503698),
     d = r(590180),
     c = r(298072),
     m = r(993408),
-    A = r(466459),
-    x = r(623373),
+    x = r(466459),
+    A = r(623373),
     p = r(561769),
     h = r(525723),
     g = r(57020),
@@ -26,37 +26,37 @@ let v = t => {
             badgeOverride: r,
             skipLimitedTimeCheck: l,
             className: c,
-            prioritizedCurrency: x
+            prioritizedCurrency: A
         } = t, {
             isPurchased: v,
             isPartiallyOwnedBundle: f
-        } = (0, A.h)(e), j = (0, m.G0)(e), k = (0, s.bG)([d.A], () => d.A.getCategoryForProduct(e.skuId)), y = k?.unpublishedAt != null ? (0, m.WU)(k.unpublishedAt) : null, T = (0, s.bG)([u.default], () => u.default.getCurrentUser()), _ = o.Ay.canUseCollectibles(T), E = (0, h.V_)(e), {
-            isOrbExclusive: R
+        } = (0, x.h)(e), j = (0, m.G0)(e), k = (0, s.bG)([d.A], () => d.A.getCategoryForProduct(e.skuId)), y = k?.unpublishedAt != null ? (0, m.WU)(k.unpublishedAt) : null, E = (0, s.bG)([u.default], () => u.default.getCurrentUser()), T = o.Ay.canUseCollectibles(E), _ = (0, h.V_)(e), {
+            isOrbExclusive: b
         } = (0, g.F)({
             product: e,
-            isPremiumUser: _,
-            prioritizedCurrency: x,
-            hasDiscountOffer: null != E
+            isPremiumUser: T,
+            prioritizedCurrency: A,
+            hasDiscountOffer: null != _
         }), N = r;
-        if (null == N && (!l && (0, m.HF)(k?.unpublishedAt) ? N = p.AW.LIMITED_TIME : !f && !v && (0, m.aT)(e.skuId) ? N = p.AW.NEW : R ? N = p.AW.ORBS_EXCLUSIVE : j && (N = p.AW.NITRO_EXCLUSIVE)), null == N || N === p.AW.NONE) return null;
-        let b = null;
+        if (null == N && (!l && (0, m.HF)(k?.unpublishedAt) ? N = p.AW.LIMITED_TIME : !f && !v && (0, m.aT)(e.skuId) ? N = p.AW.NEW : b ? N = p.AW.ORBS_EXCLUSIVE : j && (N = p.AW.NITRO_EXCLUSIVE)), null == N || N === p.AW.NONE) return null;
+        let R = null;
         switch (N) {
             case p.AW.LIMITED_TIME:
-                b = null != y ? y > 1 ? C.intl.formatToPlainString(C.t.Io7ozn, {
+                R = null != y ? y > 1 ? C.intl.formatToPlainString(C.t.Io7ozn, {
                     days: y
                 }) : C.intl.string(C.t.Bc13HF) : C.intl.string(C.t["h/uBCR"]);
                 break;
             case p.AW.NEW:
-                b = C.intl.string(C.t.y2b7CA);
+                R = C.intl.string(C.t.y2b7CA);
                 break;
             case p.AW.NITRO_EXCLUSIVE:
-                b = C.intl.string(C.t.X3Ekj8);
+                R = C.intl.string(C.t.X3Ekj8);
                 break;
             case p.AW.ORBS_EXCLUSIVE:
-                b = C.intl.string(C.t["0TmQRG"])
+                R = C.intl.string(C.t["0TmQRG"])
         }
         return (0, i.jsx)(a.LpS, {
-            text: b,
+            text: R,
             disableColor: !0,
             className: n()(c, I.$)
         })
@@ -70,7 +70,7 @@ let v = t => {
             skipLimitedTimeCheck: s
         } = t, a = (0, p.Vm)(e), u = (0, c.Q)(a);
         if (null == a) return null;
-        let o = (0, x.rb)(a, u);
+        let o = (0, A.rb)(a, u);
         return (0, i.jsx)(v, {
             product: o,
             badgeOverride: r,

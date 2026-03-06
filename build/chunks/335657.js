@@ -19,6 +19,7 @@ function u(e, t, n) {
         T = (0, i.useMemo)(() => ({
             ...t,
             variantsReturnStyle: r.g.VARIANTS_GROUP,
+            includeBundles: !0,
             includeDynamicBlocks: !0,
             shopHomeConfig: C,
             skipNumCategories: h

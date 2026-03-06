@@ -4,8 +4,8 @@ i.d(e, {
     A: () => d
 });
 var n = i(64700),
-    r = i(20424),
-    s = i(592356),
+    s = i(20424),
+    r = i(592356),
     a = i(950191),
     l = i(178213),
     o = i(721932),
@@ -23,28 +23,28 @@ function d(t) {
         isFetchingWishlist: m,
         isValidatingPopularProducts: S,
         isFetchingPopularProducts: f,
-        wishlistError: T
+        wishlistError: C
     } = (0, c.eT)({
         giftRecipient: e,
         minNumItems: I,
         source: c.B5.USER_PROFILE
-    }), C = (0, r.A)({
+    }), T = (0, s.A)({
         displayProfile: g
     }), E = n.useMemo(() => [e.id], [e.id]), {
         recommendations: L
-    } = (0, s.A)({
+    } = (0, r.A)({
         numWishlistItems: I,
         applicationId: u.XR,
         userIds: E,
         includeWishlists: !0
-    }), O = n.useMemo(() => (p?.items ?? []).filter(t => !0 !== t.isOwned && (0, o.$)(t)).length > 0 || C ? L : [], [p?.items, C, L]), {
+    }), O = n.useMemo(() => (p?.items ?? []).filter(t => !0 !== t.isOwned && (0, o.$)(t)).length > 0 || T ? L : [], [p?.items, T, L]), {
         displayItems: h,
         totalUnownedWishlistItemCount: k
     } = (0, c.mk)({
         wishlist: p,
         popularCollectiblesProducts: A,
         popularSocialLayerStorefrontItems: O,
-        wishlistError: T,
+        wishlistError: C,
         numItems: I
     });
     return {
@@ -52,12 +52,12 @@ function d(t) {
         totalUnownedWishlistItemCount: k,
         fetchState: n.useMemo(() => m || S || f ? {
             status: "loading"
-        } : null != T ? {
+        } : null != C ? {
             status: "error",
-            error: T
+            error: C
         } : {
             status: "success"
-        }, [m, S, f, T]),
+        }, [m, S, f, C]),
         defaultWishlistId: _,
         wishlist: p
     }

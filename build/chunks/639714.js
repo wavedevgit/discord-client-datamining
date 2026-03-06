@@ -4,8 +4,8 @@ n.d(t, {
     A: () => E,
     o: () => b
 });
-var l = n(627968),
-    a = n(64700),
+var a = n(627968),
+    l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(505779),
@@ -31,13 +31,13 @@ function E(e) {
         trackClick: n,
         onInviteResolved: i,
         closeModal: f
-    } = e, [p, I] = a.useState(), E = (0, c.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), b = a.useMemo(() => t.websites?.find(e => {
+    } = e, [p, I] = l.useState(), E = (0, c.bG)([x.A], () => p?.guild?.id != null && x.A.isMember(p?.guild?.id)), b = l.useMemo(() => t.websites?.find(e => {
         let {
             category: t
         } = e;
         return t === s.V.DISCORD
     }), [t.websites]);
-    if (a.useEffect(() => {
+    if (l.useEffect(() => {
             let e = async e => {
                 let t = e.split("/").pop();
                 if (null != t) {
@@ -53,33 +53,33 @@ function E(e) {
         icon: p.guild.icon,
         size: 32
     });
-    return (0, l.jsxs)("div", {
+    return (0, a.jsxs)("div", {
         className: j.fi,
-        children: [(0, l.jsx)(o.Heading, {
+        children: [(0, a.jsx)(o.Heading, {
             className: j.bV,
             variant: "text-xs/semibold",
             color: "text-default",
             children: v.intl.string(v.t.kBDZSL)
-        }), (0, l.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
             className: r()(j.nM, j.mX),
-            children: [(0, l.jsx)("img", {
+            children: [(0, a.jsx)("img", {
                 className: A.$f,
                 src: N,
                 alt: v.intl.formatToPlainString(v.t.xm6W9D, {
                     guildName: p.guild.name
                 })
-            }), (0, l.jsxs)("div", {
+            }), (0, a.jsxs)("div", {
                 className: A.U5,
-                children: [(0, l.jsxs)("div", {
+                children: [(0, a.jsxs)("div", {
                     className: A.YS,
-                    children: [(0, l.jsx)(o.Text, {
+                    children: [(0, a.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         children: p.guild.name
-                    }), (0, l.jsx)(u.A, {
+                    }), (0, a.jsx)(u.A, {
                         guild: p.guild,
                         size: 16
                     })]
-                }), null != p.approximate_member_count && (0, l.jsx)(o.Text, {
+                }), null != p.approximate_member_count && (0, a.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-muted",
                     children: v.intl.format(v.t.zRl6XR, {
@@ -87,7 +87,7 @@ function E(e) {
                     })
                 })]
             })]
-        }), (0, l.jsx)(o.Button, {
+        }), (0, a.jsx)(o.Button, {
             variant: "secondary",
             text: E ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
             onClick: () => {
@@ -108,7 +108,7 @@ function b(e) {
         trackClick: t,
         closeModal: n
     } = e, {
-        canStartAuthorization: a,
+        canStartAuthorization: l,
         hasAlreadyLinked: i,
         officialInvite: r,
         isMember: s
@@ -123,8 +123,8 @@ function b(e) {
             id: r.guild.id,
             splash: r.guild.splash
         }),
-        x = a && !i || null == m,
-        j = (0, l.jsx)("img", {
+        x = l && !i || null == m,
+        j = (0, a.jsx)("img", {
             className: I.$f,
             src: c,
             alt: v.intl.formatToPlainString(v.t.xm6W9D, {
@@ -133,63 +133,63 @@ function b(e) {
         }),
         A = x ? I.To : I.Kt,
         E = x ? I.yj : I.FS;
-    return (0, l.jsxs)("div", {
+    return (0, a.jsxs)("div", {
         className: I.uW,
-        children: [(0, l.jsx)(o.Heading, {
+        children: [(0, a.jsx)(o.Heading, {
             className: I.Gf,
             variant: "heading-sm/semibold",
             color: "text-strong",
             children: v.intl.string(v.t["U2N+ci"])
-        }), (0, l.jsxs)("div", {
+        }), (0, a.jsxs)("div", {
             className: I.kL,
-            children: [!x && null != m && (0, l.jsx)("img", {
+            children: [!x && null != m && (0, a.jsx)("img", {
                 className: I.ll,
                 src: m,
                 alt: ""
-            }), (0, l.jsxs)("div", {
+            }), (0, a.jsxs)("div", {
                 className: I.hQ,
-                children: [(0, l.jsxs)("div", {
+                children: [(0, a.jsxs)("div", {
                     className: A,
-                    children: [x ? j : (0, l.jsx)("div", {
+                    children: [x ? j : (0, a.jsx)("div", {
                         className: I._C,
-                        children: (0, l.jsx)("div", {
+                        children: (0, a.jsx)("div", {
                             className: I.kW,
                             children: j
                         })
-                    }), (0, l.jsxs)("div", {
+                    }), (0, a.jsxs)("div", {
                         className: E,
-                        children: [(0, l.jsxs)("div", {
+                        children: [(0, a.jsxs)("div", {
                             className: I.YS,
-                            children: [(0, l.jsx)(u.A, {
+                            children: [(0, a.jsx)(u.A, {
                                 guild: r.guild,
                                 size: 16
-                            }), (0, l.jsx)(o.Heading, {
+                            }), (0, a.jsx)(o.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-default",
                                 children: r.guild.name
                             })]
-                        }), !(0, f.uJ)(r.guild?.description) && (0, l.jsx)(o.Text, {
+                        }), !(0, f.uJ)(r.guild?.description) && (0, a.jsx)(o.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: r.guild?.description
-                        }), null != r.approximate_member_count || null != r.approximate_presence_count ? (0, l.jsxs)("div", {
+                        }), null != r.approximate_member_count || null != r.approximate_presence_count ? (0, a.jsxs)("div", {
                             className: I.iR,
-                            children: [null != r.approximate_presence_count && (0, l.jsxs)("div", {
+                            children: [null != r.approximate_presence_count && (0, a.jsxs)("div", {
                                 className: I.Tb,
-                                children: [(0, l.jsx)("i", {
+                                children: [(0, a.jsx)("i", {
                                     className: I._o
-                                }), (0, l.jsx)(o.Text, {
+                                }), (0, a.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
                                     children: v.intl.format(v.t["LC+S+m"], {
                                         membersOnline: r.approximate_presence_count
                                     })
                                 })]
-                            }), null != r.approximate_member_count && (0, l.jsxs)("div", {
+                            }), null != r.approximate_member_count && (0, a.jsxs)("div", {
                                 className: I.Tb,
-                                children: [(0, l.jsx)("i", {
+                                children: [(0, a.jsx)("i", {
                                     className: I.jk
-                                }), (0, l.jsx)(o.Text, {
+                                }), (0, a.jsx)(o.Text, {
                                     variant: "text-xs/normal",
                                     color: "text-muted",
                                     children: v.intl.format(v.t.zRl6XR, {
@@ -199,7 +199,7 @@ function b(e) {
                             })]
                         }) : null]
                     })]
-                }), (0, l.jsx)(o.Button, {
+                }), (0, a.jsx)(o.Button, {
                     variant: "secondary",
                     text: s ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr),
                     onClick: () => {

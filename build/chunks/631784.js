@@ -1,6 +1,6 @@
 /** chunk id: 631784 params = (module,exports,require) **/
 n.d(t, {
-    U: () => R,
+    U: () => M,
     r: () => L
 });
 var s = n(64700),
@@ -90,8 +90,8 @@ function g(e) {
         filteredRecommendations: o.data.skus.filter(e => !(e.id in I)),
         skusToUserAndReasonRecommendations: o.data.skusToUserAndReason
     }, [o, I]), {
-        combinedSkus: R,
-        combinedSkusToUserAndReason: M
+        combinedSkus: M,
+        combinedSkusToUserAndReason: R
     } = s.useMemo(() => {
         let e = {
             ...L
@@ -107,8 +107,8 @@ function g(e) {
     }, [u, E, f, L]);
     return {
         recommendations: E,
-        wishlistAndRecommendations: R,
-        skusToUserAndReason: M,
+        wishlistAndRecommendations: M,
+        skusToUserAndReason: R,
         status: s.useMemo(() => g || null == o || null != o && "loading" === o.state ? "loading" : A.filter(d.Vq).length > 0 || "error" === o.state ? "error" : "success", [g, o, A])
     }
 }
@@ -171,7 +171,7 @@ function L(e) {
     }
 }
 
-function R(e) {
+function M(e) {
     let {
         userId: t,
         numItems: n,

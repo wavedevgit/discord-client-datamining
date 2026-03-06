@@ -12,8 +12,8 @@ var i = r(627968),
     d = r(993408),
     c = r(740076),
     m = r(466459),
-    A = r(623373),
-    x = r(219103),
+    x = r(623373),
+    A = r(219103),
     p = r(561769),
     h = r(525723),
     g = r(57020),
@@ -23,21 +23,21 @@ let v = t => {
         let {
             product: e,
             prioritizedCurrency: r
-        } = t, o = (0, n.bG)([a.default], () => a.default.getCurrentUser()), A = u.Ay.canUseCollectibles(o), {
+        } = t, o = (0, n.bG)([a.default], () => a.default.getCurrentUser()), x = u.Ay.canUseCollectibles(o), {
             isDisabled: p
         } = (0, c.I)(e.skuId), {
             isPurchased: v,
             isPartiallyOwnedBundle: f
-        } = (0, m.h)(e), j = (0, d.G0)(e), k = (0, d.tt)(e), y = l.useMemo(() => (0, d.fT)(e, A), [e, A]), T = (0, h.V_)(e), {
-            checkoutEligiblePrices: _,
-            hasSufficientOrbs: E,
-            shouldCheckoutWithOrbs: R
+        } = (0, m.h)(e), j = (0, d.G0)(e), k = (0, d.tt)(e), y = l.useMemo(() => (0, d.fT)(e, x), [e, x]), E = (0, h.V_)(e), {
+            checkoutEligiblePrices: T,
+            hasSufficientOrbs: _,
+            shouldCheckoutWithOrbs: b
         } = (0, g.F)({
             product: e,
-            isPremiumUser: A,
+            isPremiumUser: x,
             prioritizedCurrency: r,
-            hasDiscountOffer: null != T
-        }), N = j && !A;
+            hasDiscountOffer: null != E
+        }), N = j && !x;
         return p ? (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
@@ -63,14 +63,14 @@ let v = t => {
             color: "text-strong",
             lineClamp: 1,
             children: C.intl.string(C.t.rt69oo)
-        }) : 0 === _.length ? null : (0, i.jsx)(x.x, {
-            priceAmount: _[0].amount,
-            priceCurrency: _[0].currency,
+        }) : 0 === T.length ? null : (0, i.jsx)(A.x, {
+            priceAmount: T[0].amount,
+            priceCurrency: T[0].currency,
             discount: y,
-            nitroIconType: A ? "default" : void 0,
+            nitroIconType: x ? "default" : void 0,
             nitroIconSize: "sm",
-            discountOfferAmount: T,
-            className: R && !E ? I.c : void 0,
+            discountOfferAmount: E,
+            className: b && !_ ? I.c : void 0,
             variant: "text-md/bold"
         })
     },
@@ -80,7 +80,7 @@ let v = t => {
             prioritizedCurrency: r
         } = t, l = (0, p.Vm)(e), n = (0, o.Q)(l);
         if (null == l) return null;
-        let s = (0, A.rb)(l, n);
+        let s = (0, x.rb)(l, n);
         return (0, i.jsx)(v, {
             product: s,
             prioritizedCurrency: r

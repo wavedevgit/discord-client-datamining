@@ -5,14 +5,14 @@ i.d(e, {
 });
 var n = i(627968);
 i(64700);
-var r = i(804870),
-    s = i(798048);
+var s = i(804870),
+    r = i(798048);
 
 function a(t) {
     let {
-        cardSize: e = s.Y.MEDIUM
+        cardSize: e = r.Y.MEDIUM
     } = t;
-    return (0, n.jsx)(r.Zu, {
+    return (0, n.jsx)(s.Zu, {
         cardSize: e
     })
 }

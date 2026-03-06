@@ -1,6 +1,6 @@
 /** chunk id: 364616 params = (module,exports,require) **/
 a.d(n, {
-    A: () => S
+    A: () => E
 });
 var t = a(627968),
     i = a(64700),
@@ -162,7 +162,7 @@ let C = e => {
             })
         })
     },
-    S = e => {
+    E = e => {
         let {
             skuId: n,
             isCollapsed: a = !1,

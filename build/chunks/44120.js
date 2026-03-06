@@ -31,25 +31,24 @@ function v(e) {
             giftingOrigin: k,
             giftRecipient: A,
             onClose: C,
-            onComplete: S,
-            variantsReturnStyle: I
+            onComplete: S
         } = e,
-        T = !1,
-        w = (0, r.A)(),
-        V = y ? "gift-payment-modal" : "payment-modal",
-        P = h.default.getCurrentUser();
-    P?.verified ? (s.h.wait(() => {
+        I = !1,
+        T = (0, r.A)(),
+        w = y ? "gift-payment-modal" : "payment-modal",
+        V = h.default.getCurrentUser();
+    V?.verified ? (s.h.wait(() => {
         s.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
     }), j({
-        loadId: w,
+        loadId: T,
         skuId: u,
         analyticsLocations: b,
         onStepChange: e => {
             t = e
         },
-        modalKey: V,
+        modalKey: w,
         isGift: y,
         giftMessage: _,
         giftingOrigin: k,
@@ -57,14 +56,14 @@ function v(e) {
         onClose: C,
         onCloseCallback: () => {
             if ((0, p.S)({
-                    checkoutSucceeded: T
-                }), !T) {
+                    checkoutSucceeded: I
+                }), !I) {
                 let e = (0, d.q1)({
                     location: "CollectiblesPaymentModal",
                     unifiedCheckoutFlow: c.C.COLLECTIBLES_CHECKOUT
                 });
                 m.default.track(g.HAw.PAYMENT_FLOW_CANCELED, {
-                    load_id: w,
+                    load_id: T,
                     payment_type: g.frM[g.VVm.ONE_TIME],
                     location: v,
                     is_gift: y,
@@ -72,15 +71,13 @@ function v(e) {
                     location_stack: b,
                     checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY
                 })
-            }(0, i.ET)(), (0, o.z)(), C?.(T), T && (0, x.gB)({
-                variantsReturnStyle: I
-            })
+            }(0, i.ET)(), (0, o.z)(), C?.(I), I && (0, x.gB)()
         },
         onCloseRequest: () => {
-            null != t && f.has(t) && (0, n.OoC)(V)
+            null != t && f.has(t) && (0, n.OoC)(w)
         },
         onComplete: () => {
-            T = !0, S?.()
+            I = !0, S?.()
         }
     })) : (0, n.mMO)(async () => {
         let {

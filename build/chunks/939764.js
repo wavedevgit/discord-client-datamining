@@ -3,8 +3,8 @@
 n.d(t, {
     V: () => u
 });
-var l = n(64700),
-    a = n(311907),
+var a = n(64700),
+    l = n(311907),
     i = n(223273),
     r = n(871123),
     s = n(733391),
@@ -14,19 +14,19 @@ var l = n(64700),
 
 function u(e) {
     let t = o.default.getCurrentUser()?.id,
-        n = l.useMemo(() => (null != t ? [t] : []).slice(0, s.g9), [t]),
-        u = l.useMemo(() => {
+        n = a.useMemo(() => (null != t ? [t] : []).slice(0, s.g9), [t]),
+        u = a.useMemo(() => {
             if (null != e && e.type === d.S7.GAME) return e.linkedGames?.find(e => e.type === i.Mh.OFFICIAL && (0, r.Xg)(e.application))?.application
         }, [e]),
-        m = (0, a.bG)([c.A], () => null != u ? c.A.recommendationsByApplicationsAndUsers(u.id, n) : void 0);
-    return l.useEffect(() => {
+        m = (0, l.bG)([c.A], () => null != u ? c.A.recommendationsByApplicationsAndUsers(u.id, n) : void 0);
+    return a.useEffect(() => {
         null != u && 0 !== n.length && (0, s.Xg)({
             applicationId: u.id,
             userIds: n,
             includeWishlists: !1
         })
     }, [u, n]), {
-        socialLayerStorefrontRecommendationsData: l.useMemo(() => null == u || null == u.guildId || null == m || "success" !== m.state || 0 === m.data.skus.length ? null : {
+        socialLayerStorefrontRecommendationsData: a.useMemo(() => null == u || null == u.guildId || null == m || "success" !== m.state || 0 === m.data.skus.length ? null : {
             application: u,
             skuIds: m.data.skus.map(e => e.id),
             guildId: u.guildId
