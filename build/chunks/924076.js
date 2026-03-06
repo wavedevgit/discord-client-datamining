@@ -3,13 +3,13 @@ n.d(t, {
     A: () => h
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(241524),
     s = n(163437),
     o = n(490744),
-    c = n(594508),
-    d = n(71393),
+    d = n(594508),
+    c = n(71393),
     u = n(156312),
     m = n(166532),
     p = n(19311),
@@ -26,19 +26,19 @@ function h(e) {
         selectedSku: b,
         selectedStoreListing: A,
         application: j
-    } = (0, u.P5)(), v = (0, a.A)(x.Y), S = (0, l.bG)([d.A], () => d.A.getGuild(h?.guild_id)), C = r.useCallback(() => t(m.pn.REVIEW), [t]);
+    } = (0, u.P5)(), v = (0, a.A)(x.Y), S = (0, r.bG)([c.A], () => c.A.getGuild(h?.guild_id)), C = l.useCallback(() => t(m.pn.REVIEW), [t]);
     if (null == b) return null;
-    let N = (0, s.bg)(b.flags);
+    let _ = (0, s.bg)(b.flags);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(f.dZ, {
-            children: v ? (0, i.jsx)(c.E, {
+            children: v ? (0, i.jsx)(d.E, {
                 confirmCta: g.intl.string(g.t.PBHFSq),
                 onConfirm: C,
                 onCancel: n,
                 title: g.intl.format(g.t["6n6oXA"], {
                     tier: b.name
                 }),
-                subtitle: N ? g.intl.string(g.t.lzAoKB) : g.intl.formatToPlainString(g.t["GqaY/j"], {
+                subtitle: _ ? g.intl.string(g.t.lzAoKB) : g.intl.formatToPlainString(g.t["GqaY/j"], {
                     guildName: S?.name
                 }),
                 showOpenDiscord: !1
@@ -49,8 +49,8 @@ function h(e) {
                 title: g.intl.format(g.t.haiCxc, {
                     tier: b.name
                 }),
-                subtitle: N ? g.intl.string(g.t.RvtbP5) : g.intl.string(g.t.zY39Zu),
-                description: N ? g.intl.formatToPlainString(g.t.QCe4rY, {
+                subtitle: _ ? g.intl.string(g.t.RvtbP5) : g.intl.string(g.t.zY39Zu),
+                description: _ ? g.intl.formatToPlainString(g.t.QCe4rY, {
                     applicationName: j?.name
                 }) : g.intl.string(g.t.n1Pu8C)
             })

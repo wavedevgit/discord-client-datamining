@@ -20,8 +20,8 @@ var a = l(627968),
     x = l(156312),
     b = l(491057),
     y = l(546042),
-    f = l(97352),
-    g = l(67480),
+    g = l(97352),
+    f = l(67480),
     E = l(582658);
 let v = e => {
         let {
@@ -34,7 +34,7 @@ let v = e => {
         n.useEffect(() => {
             (u.current !== t || d.current !== l) && (x((0, r.A)()), u.current = t, d.current = l)
         }, [t, l]);
-        let [b, y] = (0, s.yK)([g.A], () => [g.A.isFetching(t), g.A.get(t)]);
+        let [b, y] = (0, s.yK)([f.A], () => [f.A.isFetching(t), f.A.get(t)]);
         return n.useEffect(() => {
             null != y || b || (0, c.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
         }, [a, t, y, b]), {
@@ -53,11 +53,11 @@ let v = e => {
             subscriptionPlanId: t
         } = e;
         n.useEffect(() => {
-            f.A.isLoadedForPremiumSKUs() || u.h.wait(() => (0, d.zS)())
+            g.A.isLoadedForPremiumSKUs() || u.h.wait(() => (0, d.zS)())
         }, []);
-        let l = (0, s.bG)([f.A], () => null != t ? f.A.get(t) : null);
+        let l = (0, s.bG)([g.A], () => null != t ? g.A.get(t) : null);
         return {
-            isLoadedForPremiumSKUs: (0, s.bG)([f.A], () => f.A.isLoadedForPremiumSKUs()),
+            isLoadedForPremiumSKUs: (0, s.bG)([g.A], () => g.A.isLoadedForPremiumSKUs()),
             selectedPlan: l
         }
     },
@@ -91,11 +91,11 @@ let v = e => {
             stepConfigs: d,
             loadId: p,
             excludeSubscriptionPlansBySKU: m,
-            renderHeader: f,
-            hideErrors: g,
+            renderHeader: g,
+            hideErrors: f,
             disablePurchases: v,
             paymentContextOverrides: S
-        } = e, j = g ? {
+        } = e, j = f ? {
             purchasePreviewError: null,
             purchaseError: null,
             ...S
@@ -126,7 +126,7 @@ let v = e => {
                             initialPlanId: u,
                             analyticsLocations: t,
                             hideShadow: !0,
-                            renderHeader: f
+                            renderHeader: g
                         }, T)
                     })
                 })

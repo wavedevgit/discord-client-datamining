@@ -1,92 +1,71 @@
 /** chunk id: 307794 params = (module,exports,require) **/
-o.d(n, {
-    default: () => g
+a.d(n, {
+    default: () => k
 });
-var a = o(627968);
-o(64700);
-var e = o(827734),
-    r = o(397927),
-    i = o(688810),
-    s = o(87719),
-    l = o(414345),
-    c = o(244975),
-    d = o(788868),
-    p = o(652215),
-    C = o(985018),
-    A = o(672235),
-    f = o(481809),
-    u = o(929103);
+var o = a(627968);
+a(64700);
+var e = a(827734),
+    r = a(397927),
+    s = a(688810),
+    d = a(87719),
+    i = a(244975),
+    c = a(788868),
+    l = a(652215),
+    p = a(985018),
+    f = a(672235),
+    u = a(481809),
+    A = a(929103);
 
-function m(t, n) {
-    return (0, a.jsx)(r.LpS, {
+function C(t, n) {
+    return (0, o.jsx)(r.LpS, {
         text: t,
-        className: f.Ad,
+        className: u.Ad,
         color: e.A.unsafe_rawColors.BRAND_500.css
     }, n)
 }
 
-function g(t) {
+function k(t) {
     let {
         guildCount: n,
-        onClose: o,
+        onClose: a,
         analyticsLocations: e,
-        ...f
-    } = t, g = function(t, n) {
-        return (0, a.jsx)(r.DUT, {
-            className: A.C,
+        ...u
+    } = t, k = function(t, n) {
+        return (0, o.jsx)(r.DUT, {
+            className: f.C,
             tag: "span",
             onClick: () => {
-                o(), (0, s.e)()
+                a(), (0, d.e)()
             },
             children: t
         }, n)
     }, {
-        analyticsLocations: k
-    } = (0, i.Ay)(e);
-    return (0, l.g1)({
-        location: "PremiumGuildCapUpsell"
-    }) ? (0, a.jsx)(c.F, {
-        title: C.intl.string(C.t["CoNXB+"]),
-        subtitle: n < p.qlD ? C.intl.format(C.t["5qLH7B"], {
-            guildCount: n,
-            onAndMore: g,
-            newBadgeHook: m
-        }) : C.intl.format(C.t.mk9CS6, {
-            onAndMore: g,
-            newBadgeHook: m
-        }),
-        graphic: {
-            src: u.A,
-            type: "image"
-        },
-        secondaryCTA: C.intl.string(C.t["13/7kX"]),
-        onSecondaryClick: o,
-        onClose: o,
-        ...f
-    }) : (0, a.jsx)(i.f5, {
-        value: k,
-        children: (0, a.jsx)(c.A, {
-            artURL: u.A,
-            onClose: o,
-            type: d.e.GUILD_CAP_MODAL_UPSELL,
-            title: C.intl.string(C.t["CoNXB+"]),
-            secondaryCTA: C.intl.string(C.t["13/7kX"]),
-            onSecondaryClick: o,
-            body: n < p.qlD ? C.intl.format(C.t["5qLH7B"], {
+        analyticsLocations: m
+    } = (0, s.Ay)(e);
+    return (0, o.jsx)(s.f5, {
+        value: m,
+        children: (0, o.jsx)(i.A, {
+            artURL: A.A,
+            onClose: a,
+            type: c.e.GUILD_CAP_MODAL_UPSELL,
+            title: p.intl.string(p.t["CoNXB+"]),
+            secondaryCTA: p.intl.string(p.t["13/7kX"]),
+            onSecondaryClick: a,
+            body: n < l.qlD ? p.intl.format(p.t["5qLH7B"], {
                 guildCount: n,
-                onAndMore: g,
-                newBadgeHook: m
-            }) : C.intl.format(C.t.mk9CS6, {
-                onAndMore: g,
-                newBadgeHook: m
+                onAndMore: k,
+                newBadgeHook: C
+            }) : p.intl.format(p.t.mk9CS6, {
+                onAndMore: k,
+                newBadgeHook: C
             }),
-            context: n < p.qlD ? C.intl.formatToPlainString(C.t["C+Hqzs"], {
+            context: n < l.qlD ? p.intl.formatToPlainString(p.t["C+Hqzs"], {
                 guildCount: n
-            }) : C.intl.string(C.t.m0xavd),
-            glowUp: C.intl.format(C.t["6Dl5X1"], {
-                onAndMore: g
+            }) : p.intl.string(p.t.m0xavd),
+            glowUp: p.intl.format(p.t["6Dl5X1"], {
+                onAndMore: k
             }),
-            ...f
+            ...u
         })
     })
 }

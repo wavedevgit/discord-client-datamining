@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(252561),
     b = l(689614),
     y = l(652215),
-    f = l(818348),
-    g = l(191599);
+    g = l(818348),
+    f = l(191599);
 let E = (0, b.R)();
 async function v(e) {
     return (await i.Bo.post({
@@ -75,7 +75,7 @@ Payment source changed.`)
     let M = n.useMemo(() => Object.values(k).map(e => {
             var t;
             let l, a = (t = e.type, null != (l = p.w[t]) ? l() : String(t));
-            if (e.type === f.he.CARD && "last4" in e) {
+            if (e.type === g.he.CARD && "last4" in e) {
                 let t = e.last4 ?? "",
                     l = e.brand ?? "Unknown";
                 a += ` - ****${t} (${l})`
@@ -230,7 +230,7 @@ Error: ${t}`)
             direction: "vertical",
             children: [(0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
-                className: g.cW,
+                className: f.cW,
                 children: "This section tests the orderSKU function, order signing, and 3DS authentication. Select SKU ID and payment source from the dropdowns below. Check the console for detailed logs."
             }), (0, a.jsxs)(o.nVY, {
                 label: "Configuration",
@@ -274,7 +274,7 @@ Error: ${t}`)
                     }), !I && (0, a.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        className: g.cW,
+                        className: f.cW,
                         children: "Loading payment sources..."
                     })]
                 })]
@@ -299,7 +299,7 @@ Error: ${t}`)
                     disabled: l || null == T || "" === T
                 })]
             }), null != d && (0, a.jsx)("div", {
-                className: g.cW,
+                className: f.cW,
                 children: d.split("\n").map((e, t) => (0, a.jsx)(o.Text, {
                     variant: "text-md/normal",
                     style: {

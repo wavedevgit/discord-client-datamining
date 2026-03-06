@@ -1,6 +1,6 @@
 /** chunk id: 102957 params = (module,exports,require) **/
 l.d(t, {
-    r: () => f
+    r: () => g
 });
 var a = l(627968),
     n = l(64700),
@@ -61,7 +61,7 @@ let p = {
     b = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function y() {
-    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, y] = n.useState(b(x)), [f, g] = n.useState(x), [E, v] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
+    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, y] = n.useState(b(x)), [g, f] = n.useState(x), [E, v] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
         errorLabel: p.CONFIGURABLE,
         elementOptions: h,
         children: (0, a.jsx)(r.ExpressCheckoutElement, {
@@ -142,7 +142,7 @@ function y() {
                                     options: l
                                 })
                             })]
-                        })), u(t), g(l), v(null)
+                        })), u(t), f(l), v(null)
                     } catch (e) {
                         console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), v("Error parsing JSON. Check console for more information.")
                     }
@@ -166,12 +166,12 @@ function y() {
             variant: "text-md/normal",
             children: (0, a.jsx)(o.A, {
                 className: d.wD,
-                children: `\`\` ${b(f)} \`\``
+                children: `\`\` ${b(g)} \`\``
             })
         }), S]
     })
 }
-let f = {
+let g = {
     name: "Stripe Components",
     id: "stripe-components",
     component: function() {

@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(309954),
     b = l(287809),
     y = l(975571),
-    f = l(474090),
-    g = l(94264),
+    g = l(474090),
+    f = l(94264),
     E = l(235365),
     v = l(566119),
     S = l(788868),
@@ -65,8 +65,8 @@ function O(e) {
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), T = (0, o.bG)([b.default], () => b.default.getCurrentUser()), {
         balance: R
-    } = (0, x.W)(), _ = !(0, f.ki)(T), O = n.useMemo(() => {
-        let e = (0, f.YE)(T, S.PremiumTypes.TIER_2);
+    } = (0, x.W)(), _ = !(0, g.ki)(T), O = n.useMemo(() => {
+        let e = (0, g.YE)(T, S.PremiumTypes.TIER_2);
         if (!E || _) return null;
         if (e && null != v) {
             let e = (0, s.default)(new Date(v.next_reward_date), new Date);
@@ -78,7 +78,7 @@ function O(e) {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: N
                     })
-                }), (0, a.jsx)(g.A, {})]
+                }), (0, a.jsx)(f.A, {})]
             })
         }
         return null

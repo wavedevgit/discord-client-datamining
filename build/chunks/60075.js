@@ -1,6 +1,6 @@
 /** chunk id: 60075 params = (module,exports,require) **/
 l.d(t, {
-    D5: () => g,
+    D5: () => f,
     Ec: () => b,
     KF: () => A,
     LF: () => m,
@@ -74,7 +74,7 @@ function h() {
         (0, i.mMO)(async () => {
             let {
                 default: e
-            } = await l.e("10101").then(l.bind(l, 861177));
+            } = await l.e("32482").then(l.bind(l, 861177));
             return t => (0, a.jsx)(e, {
                 source: {},
                 ...t
@@ -148,7 +148,7 @@ let y = [{
         label: "Nameplate",
         value: d.e.NAMEPLATE_MODAL_UPSELL
     }],
-    f = {
+    g = {
         [d.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
@@ -166,13 +166,13 @@ let y = [{
         }
     };
 
-function g() {
+function f() {
     let [e, t] = n.useState(d.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
             body: n,
             glowUp: r
-        } = f[e];
+        } = g[e];
         (0, i.mMO)(async () => {
             let {
                 default: i
@@ -209,11 +209,11 @@ function g() {
 }
 let E = [{
     id: "near_limit",
-    label: "Near Limit (100 guilds)",
-    value: 100
+    label: "Near Limit (99 guilds)",
+    value: 99
 }, {
     id: "at_limit",
-    label: "At Limit (200 guilds)",
+    label: "At Limit (100 guilds)",
     value: u.qlD
 }];
 

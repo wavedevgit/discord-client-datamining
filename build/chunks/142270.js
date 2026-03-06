@@ -18,11 +18,11 @@ var a = l(627968),
     x = l(162097),
     b = l(219980),
     y = l(652215),
-    f = l(985018),
-    g = l(150542);
+    g = l(985018),
+    f = l(150542);
 let E = {
-        START: g.Vl,
-        END: g.Wk
+        START: f.Vl,
+        END: f.Wk
     },
     v = e => {
         let {
@@ -30,7 +30,7 @@ let E = {
             ctaText: l,
             ctaOnClick: r,
             analyticsPage: v,
-            linkText: S = f.intl.string(f.t.XRdyjz),
+            linkText: S = g.intl.string(g.t.XRdyjz),
             cardAlignment: j = E.START,
             className: T
         } = e, {
@@ -67,9 +67,9 @@ let E = {
                 }
             }), [_, M, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(g.kL, T, {
-                [g.R]: I,
-                [g.RK]: !I
+            className: i()(f.kL, T, {
+                [f.R]: I,
+                [f.RK]: !I
             }),
             children: [(0, a.jsx)(b.J, {
                 pillRef: D,
@@ -81,9 +81,9 @@ let E = {
                 onClick: M,
                 showNotificationBadge: t
             }), P ? U : _ && (0, a.jsx)("div", {
-                className: i()(g.Ui, j, {
-                    [g.R]: I,
-                    [g.RK]: !I
+                className: i()(f.Ui, j, {
+                    [f.R]: I,
+                    [f.RK]: !I
                 }),
                 ref: L,
                 children: B

@@ -17,7 +17,7 @@ var a = l(627968),
     x = l(788868),
     b = l(985018),
     y = l(825092);
-let f = [{
+let g = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
             ...e
@@ -56,7 +56,7 @@ let f = [{
             useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }],
-    g = () => (0, a.jsx)(r.Text, {
+    f = () => (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
@@ -98,7 +98,7 @@ let f = [{
                 return x || null == b || E ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
                     className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: f,
+                        stepConfigs: g,
                         analyticsLocations: r,
                         applicationId: h.FYj,
                         initialPlanId: void 0,
@@ -117,7 +117,7 @@ let f = [{
                         }),
                         onClose: u,
                         onComplete: m
-                    }), (0, a.jsx)(g, {})]
+                    }), (0, a.jsx)(f, {})]
                 })
             },
             controls: {
@@ -161,7 +161,7 @@ let f = [{
                 return !m && null != b && C && E && null != P ? (0, a.jsxs)("div", {
                     className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: f,
+                        stepConfigs: g,
                         analyticsLocations: i,
                         applicationId: x.tv,
                         initialPlanId: v,
@@ -177,7 +177,7 @@ let f = [{
                             selectedPlan: P,
                             setSelectedPlanId: j
                         }
-                    }), (0, a.jsx)(g, {})]
+                    }), (0, a.jsx)(f, {})]
                 }) : (0, a.jsx)(p.k, {})
             },
             controls: {

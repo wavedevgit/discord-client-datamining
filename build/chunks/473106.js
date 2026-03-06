@@ -17,8 +17,8 @@ var a = l(627968),
     x = l(688810),
     b = l(541689),
     y = l(721923),
-    f = l(300233),
-    g = l(599941),
+    g = l(300233),
+    f = l(599941),
     E = l(250253),
     v = l(532794),
     S = l(216678),
@@ -34,7 +34,7 @@ var a = l(627968),
 function I(e) {
     let {
         selectedGuildForGuildSub: t
-    } = e, l = (0, g.uk)(t?.id)[0];
+    } = e, l = (0, f.uk)(t?.id)[0];
     return null != t && null != l ? (0, a.jsx)("div", {
         children: l.subscription_listings_ids.map(e => (0, a.jsx)(E.A, {
             guildId: t.id,
@@ -49,7 +49,7 @@ let N = {
         name: "Checkout Test Panel",
         id: "checkout-test-panel",
         component: () => {
-            let [e, t] = n.useState(_.pe.TIER_2), [l, g] = n.useState(null), E = (0, s.yK)([P.A], () => P.A.getGuildsArray()), [N] = (0, s.yK)([A.A], () => [A.A.getPremiumSubscription()]), D = E.map(e => ({
+            let [e, t] = n.useState(_.pe.TIER_2), [l, f] = n.useState(null), E = (0, s.yK)([P.A], () => P.A.getGuildsArray()), [N] = (0, s.yK)([A.A], () => [A.A.getPremiumSubscription()]), D = E.map(e => ({
                 id: e.id,
                 value: e,
                 label: e.name
@@ -131,7 +131,7 @@ let N = {
                                     value: null,
                                     label: "None"
                                 }],
-                                onSelectionChange: e => g(e),
+                                onSelectionChange: e => f(e),
                                 selectionMode: "single",
                                 fullWidth: !0
                             }), (0, a.jsx)(c.Button, {
@@ -296,7 +296,7 @@ let N = {
                             }), (0, a.jsx)(c.Text, {
                                 variant: "text-md/semibold",
                                 children: "This is disabled because of a circular dependency"
-                            }), (0, a.jsx)(f.H, {
+                            }), (0, a.jsx)(g.H, {
                                 guildId: G?.id,
                                 children: (0, a.jsx)(I, {
                                     selectedGuildForGuildSub: G
