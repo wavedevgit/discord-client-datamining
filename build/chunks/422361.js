@@ -314,15 +314,16 @@ class ee extends K.Ay {
             withGuildIcon: T,
             hasStartTime: v,
             shouldHighlightChannel: y,
-            shouldUseAnimatedWaveform: j
+            shouldUseAnimatedWaveform: j,
+            voiceStates: R
         } = this.props, {
-            shouldShowGuildVerificationPopout: R
+            shouldShowGuildVerificationPopout: O
         } = this.state, {
-            enableUserHoverActivities: O
+            enableUserHoverActivities: L
         } = (0, F.Uw)({
             guildId: e.guild_id,
             location: "VoiceChannel"
-        }), L = y || j, D = this.getVoiceStatesCount(), G = (0, i.jsxs)("li", {
+        }), D = y || j, G = (0, i.jsxs)("li", {
             ref: this.ref,
             className: r()(this.getModeClass(), {
                 [Z.r9]: this.isDisabled(),
@@ -344,14 +345,14 @@ class ee extends K.Ay {
                     renderPopout: this.renderPopout,
                     onRequestClose: this.closeGuildVerificationPopout,
                     spacing: 17,
-                    shouldShow: R || !O && this.state.shouldShowActivities && !u && !h,
+                    shouldShow: O || !L && this.state.shouldShowActivities && !u && !h,
                     children: () => (0, i.jsx)(c.m, {
                         text: this.getTooltipText(),
                         children: (0, i.jsxs)(Y.Ay, {
                             ref: this.channelItemRef,
                             className: Z.Ki,
                             iconClassName: r()({
-                                [Z.Gj]: I || v || L
+                                [Z.Gj]: I || v || D
                             }),
                             hasActiveEvent: I,
                             channel: e,
@@ -374,7 +375,7 @@ class ee extends K.Ay {
                                 channel: e,
                                 unread: s,
                                 mentionCount: a,
-                                userCount: D,
+                                voiceStates: R,
                                 embeddedActivitiesCount: N.length,
                                 isSubscriptionGated: b
                             }),
