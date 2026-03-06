@@ -30,11 +30,11 @@ let x = {
                 rightSubtext: m,
                 rightShowSubtext: x,
                 rightSubtextStrikethrough: b
-            } = e, [g, f] = n.useState(0);
+            } = e, [y, f] = n.useState(0);
             return (0, a.jsxs)("div", {
                 className: h.Cd,
                 children: [(0, a.jsx)(c.q7, {
-                    selection: g,
+                    selection: y,
                     onChange: f,
                     planOptions: [{
                         id: 0,
@@ -65,7 +65,7 @@ let x = {
                     }]
                 }), (0, a.jsxs)(o.Text, {
                     variant: "text-sm/normal",
-                    children: ["Selected plan index: ", g]
+                    children: ["Selected plan index: ", y]
                 })]
             })
         },
@@ -139,7 +139,7 @@ let x = {
         gift: o.okO,
         orbs: o.Cp8
     },
-    g = i.A.map(e => ({
+    y = i.A.map(e => ({
         id: e.alpha2,
         value: e.alpha2,
         label: e.name
@@ -223,7 +223,7 @@ let x = {
                 label: "Country Code",
                 type: "select",
                 defaultValue: s.d.US,
-                options: g
+                options: y
             },
             headerBadgeText: {
                 label: "Header Pill Text",
@@ -260,7 +260,7 @@ let x = {
             }
         }
     },
-    y = {
+    g = {
         purchaseButtonText: "Subscribe",
         totalDue: 999,
         renewalPrice: 1099,
@@ -272,11 +272,11 @@ let x = {
     E = {
         [c.I0.Subscription]: {
             type: c.I0.Subscription,
-            ...y
+            ...g
         },
         [c.I0.SubscriptionTrial]: {
             type: c.I0.SubscriptionTrial,
-            ...y
+            ...g
         },
         [c.I0.OrbsRedemption]: {
             type: c.I0.OrbsRedemption,
@@ -654,6 +654,36 @@ let x = {
                         onChange: e => t(e.value)
                     })
                 })
+            }
+        }, {
+            name: "Primitive: Store Country Row",
+            id: "checkout-store-country-row",
+            component: e => {
+                let {
+                    storeCountry: t,
+                    relocationCountry: l
+                } = e;
+                return (0, a.jsx)(c.s7, {
+                    storeCountry: t,
+                    relocationCountry: l
+                })
+            },
+            controls: {
+                storeCountry: {
+                    label: "Store Country",
+                    type: "select",
+                    defaultValue: s.d.US,
+                    options: y
+                },
+                relocationCountry: {
+                    label: "Relocation Country",
+                    type: "select",
+                    defaultValue: null,
+                    options: [{
+                        label: "None",
+                        value: null
+                    }, ...y]
+                }
             }
         }]
     }

@@ -79,15 +79,7 @@ let x = e => {
             children: (0, s.jsx)(a.$mQ, {
                 className: f.k,
                 "data-migration-pending": !0,
-                children: i || !S ? (0, s.jsx)(a.BJc, {
-                    gap: 16,
-                    align: "center",
-                    justify: "center",
-                    style: {
-                        minHeight: "200px"
-                    },
-                    children: (0, s.jsx)(a.y$y, {})
-                }) : (0, s.jsxs)(a.tN_, {
+                children: !i && S && (b || y) ? (0, s.jsxs)(a.tN_, {
                     width: "100%",
                     activeSlide: v,
                     centered: !1,
@@ -116,6 +108,14 @@ let x = e => {
                             onReopen: w
                         })
                     })]
+                }) : (0, s.jsx)(a.BJc, {
+                    gap: 16,
+                    align: "center",
+                    justify: "center",
+                    style: {
+                        minHeight: "200px"
+                    },
+                    children: (0, s.jsx)(a.y$y, {})
                 })
             })
         })

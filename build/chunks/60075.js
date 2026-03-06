@@ -1,6 +1,6 @@
 /** chunk id: 60075 params = (module,exports,require) **/
 l.d(t, {
-    D5: () => y,
+    D5: () => g,
     Ec: () => b,
     KF: () => A,
     LF: () => m,
@@ -135,7 +135,7 @@ function b() {
         })
     })
 }
-let g = [{
+let y = [{
         id: "avatar_decoration",
         label: "Avatar Decoration",
         value: d.e.AVATAR_DECORATION_MODAL_UPSELL
@@ -166,7 +166,7 @@ let g = [{
         }
     };
 
-function y() {
+function g() {
     let [e, t] = n.useState(d.e.AVATAR_DECORATION_MODAL_UPSELL), r = n.useCallback(() => {
         let {
             title: t,
@@ -195,7 +195,7 @@ function y() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: g,
+                options: y,
                 selectionMode: "single",
                 fullWidth: !0
             })

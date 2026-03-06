@@ -16,25 +16,25 @@ var a = l(627968),
     h = l(71532),
     x = l(252561),
     b = l(689614),
-    g = l(652215),
+    y = l(652215),
     f = l(818348),
-    y = l(191599);
+    g = l(191599);
 let E = (0, b.R)();
 async function v(e) {
     return (await i.Bo.post({
-        url: g.Rsh.ORDER_SIGN(e),
+        url: y.Rsh.ORDER_SIGN(e),
         rejectWithError: !0
     })).body
 }
 async function S(e) {
     return (await i.Bo.get({
-        url: g.Rsh.ORDER_UPDATE(e),
+        url: y.Rsh.ORDER_UPDATE(e),
         rejectWithError: !0
     })).body
 }
 async function j(e, t) {
     await i.Bo.patch({
-        url: g.Rsh.ORDER_UPDATE(e),
+        url: y.Rsh.ORDER_UPDATE(e),
         body: {
             billing_facet: {
                 payment_source_id: t
@@ -88,7 +88,7 @@ Payment source changed.`)
         }), [k]),
         O = async () => {
             if (null == R || "" === R) return void b("Please select a payment source first.");
-            if (null == P || "" === P || P === g.dJq) return void b("Please select a SKU ID.");
+            if (null == P || "" === P || P === y.dJq) return void b("Please select a SKU ID.");
             t(!0), b(null), C(null);
             try {
                 let e = await (0, c.Aj)(P, R, "US", !1, {
@@ -230,7 +230,7 @@ Error: ${t}`)
             direction: "vertical",
             children: [(0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
-                className: y.cW,
+                className: g.cW,
                 children: "This section tests the orderSKU function, order signing, and 3DS authentication. Select SKU ID and payment source from the dropdowns below. Check the console for detailed logs."
             }), (0, a.jsxs)(o.nVY, {
                 label: "Configuration",
@@ -274,7 +274,7 @@ Error: ${t}`)
                     }), !I && (0, a.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        className: y.cW,
+                        className: g.cW,
                         children: "Loading payment sources..."
                     })]
                 })]
@@ -290,7 +290,7 @@ Error: ${t}`)
                     size: "sm",
                     text: e ? "Creating Order..." : "Create Order",
                     onClick: O,
-                    disabled: e || null == R || "" === R || null == P || "" === P || P === g.dJq
+                    disabled: e || null == R || "" === R || null == P || "" === P || P === y.dJq
                 }), (0, a.jsx)(s.$nd, {
                     variant: "secondary",
                     size: "sm",
@@ -299,7 +299,7 @@ Error: ${t}`)
                     disabled: l || null == T || "" === T
                 })]
             }), null != d && (0, a.jsx)("div", {
-                className: y.cW,
+                className: g.cW,
                 children: d.split("\n").map((e, t) => (0, a.jsx)(o.Text, {
                     variant: "text-md/normal",
                     style: {

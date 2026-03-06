@@ -1,6 +1,6 @@
 /** chunk id: 162097 params = (module,exports,require) **/
 l.d(t, {
-    b: () => y
+    b: () => g
 });
 var a = l(627968),
     n = l(64700),
@@ -16,23 +16,23 @@ var a = l(627968),
     h = l(931503),
     x = l(264676),
     b = l(268920),
-    g = l(633217);
+    y = l(633217);
 let f = () => (0, a.jsx)("div", {
         className: h.s,
         children: (0, a.jsx)(u.A, {
-            src: g.A,
+            src: y.A,
             fallbackImage: b.A,
             className: h.Cb
         })
     }),
-    y = e => {
+    g = e => {
         let {
             ctaText: t,
             ctaOnClick: l,
             analyticsPage: r,
             linkPreText: u = m.intl.string(m.t["5qZv9E"]),
             linkText: b = m.intl.string(m.t.XRdyjz)
-        } = e, g = n.useCallback(() => {
+        } = e, y = n.useCallback(() => {
             null != r && (0, d.Y)({
                 pageType: r,
                 sectionType: p.JJy.ORBS_BALANCE_MENU,
@@ -58,7 +58,7 @@ let f = () => (0, a.jsx)("div", {
                     rel: "author",
                     href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
-                    onClick: g,
+                    onClick: y,
                     children: b
                 })]
             })]

@@ -16,7 +16,7 @@ var a = l(627968),
     h = l(652215),
     x = l(788868),
     b = l(985018),
-    g = l(825092);
+    y = l(825092);
 let f = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
@@ -56,7 +56,7 @@ let f = [{
             useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
         }
     }],
-    y = () => (0, a.jsx)(r.Text, {
+    g = () => (0, a.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
@@ -96,7 +96,7 @@ let f = [{
                     applicationId: h.FYj
                 }), E = c.Ay.isPremiumSku(t);
                 return x || null == b || E ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
-                    className: g.Cd,
+                    className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
                         stepConfigs: f,
                         analyticsLocations: r,
@@ -117,7 +117,7 @@ let f = [{
                         }),
                         onClose: u,
                         onComplete: m
-                    }), (0, a.jsx)(y, {})]
+                    }), (0, a.jsx)(g, {})]
                 })
             },
             controls: {
@@ -159,7 +159,7 @@ let f = [{
                     subscriptionPlanId: S
                 });
                 return !m && null != b && C && E && null != P ? (0, a.jsxs)("div", {
-                    className: g.Cd,
+                    className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
                         stepConfigs: f,
                         analyticsLocations: i,
@@ -177,7 +177,7 @@ let f = [{
                             selectedPlan: P,
                             setSelectedPlanId: j
                         }
-                    }), (0, a.jsx)(y, {})]
+                    }), (0, a.jsx)(g, {})]
                 }) : (0, a.jsx)(p.k, {})
             },
             controls: {

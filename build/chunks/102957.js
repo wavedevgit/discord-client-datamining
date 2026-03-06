@@ -60,8 +60,8 @@ let p = {
     },
     b = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
-function g() {
-    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, g] = n.useState(b(x)), [f, y] = n.useState(x), [E, v] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
+function y() {
+    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, y] = n.useState(b(x)), [f, g] = n.useState(x), [E, v] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
         errorLabel: p.CONFIGURABLE,
         elementOptions: h,
         children: (0, a.jsx)(r.ExpressCheckoutElement, {
@@ -109,7 +109,7 @@ function g() {
                 placeholder: "Stripe Express Checkout Element Options",
                 showCharacterCount: !0,
                 value: m,
-                onChange: g,
+                onChange: y,
                 rows: 7
             })
         }), null != E && (0, a.jsx)(s.Text, {
@@ -142,7 +142,7 @@ function g() {
                                     options: l
                                 })
                             })]
-                        })), u(t), y(l), v(null)
+                        })), u(t), g(l), v(null)
                     } catch (e) {
                         console.error("ConfigurableStripeExpressCheckoutElement - error parsing JSON: ", e), v("Error parsing JSON. Check console for more information.")
                     }
@@ -224,7 +224,7 @@ let f = {
                     }, e)
                 }), (0, a.jsx)(c.Hq, {
                     label: p.CONFIGURABLE,
-                    children: (0, a.jsx)(g, {})
+                    children: (0, a.jsx)(y, {})
                 })]
             })
         })

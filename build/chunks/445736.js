@@ -16,16 +16,16 @@ var a = l(627968),
     h = l(785205),
     x = l(652215),
     b = l(424956),
-    g = l(825092);
+    y = l(825092);
 let f = new c.A("PaymentElement.web.stories"),
-    y = () => {
+    g = () => {
         let {
             elementsAppearanceOptions: e
         } = (0, o.E)();
         return (0, a.jsxs)("div", {
             children: [(0, a.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
-                className: g.tm,
+                className: y.tm,
                 children: "Default Options"
             }), (0, a.jsx)("div", {
                 children: Object.entries(e).map(e => {
@@ -104,7 +104,7 @@ let f = new c.A("PaymentElement.web.stories"),
                                 ...T
                             },
                             children: ["stripe-address-element" === E ? (0, a.jsx)("div", {
-                                className: g.R,
+                                className: y.R,
                                 children: (0, a.jsx)(u.Wf, {
                                     ...S,
                                     customPaymentMethodIdsToSourceTypes: A,
@@ -129,7 +129,7 @@ let f = new c.A("PaymentElement.web.stories"),
                             })]
                         })
                     })
-                }), (0, a.jsx)(y, {})]
+                }), (0, a.jsx)(g, {})]
             })]
         })
     },

@@ -25,15 +25,15 @@ let x = e => {
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: x,
-            errorOnRedeem: g,
+            errorOnRedeem: y,
             setActiveStep: f,
-            activeStep: y
+            activeStep: g
         } = e, {
             analyticsLocations: E
-        } = (0, i.Ay)(r.A.USER_SETTINGS), [v, S] = n.useState(b(y));
+        } = (0, i.Ay)(r.A.USER_SETTINGS), [v, S] = n.useState(b(g));
         return (0, n.useEffect)(() => {
-            S(b(y))
-        }, [y]), (0, a.jsx)(d.CancellationContext.Provider, {
+            S(b(g))
+        }, [g]), (0, a.jsx)(d.CancellationContext.Provider, {
             value: {
                 setStep: f,
                 premiumType: o,
@@ -58,7 +58,7 @@ let x = e => {
                 }),
                 applyOffer: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        g ? t() : e()
+                        y ? t() : e()
                     }, 1e3)
                 }),
                 pauseDuration: null,

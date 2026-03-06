@@ -16,9 +16,9 @@ var a = l(627968),
     h = l(976860),
     x = l(309954),
     b = l(287809),
-    g = l(975571),
+    y = l(975571),
     f = l(474090),
-    y = l(94264),
+    g = l(94264),
     E = l(235365),
     v = l(566119),
     S = l(788868),
@@ -48,7 +48,7 @@ function D() {
 }
 
 function M() {
-    (0, v.b)(), window.open(g.A.getArticleURL(j.MVz.ORBS_FAQ), "_blank")
+    (0, v.b)(), window.open(y.A.getArticleURL(j.MVz.ORBS_FAQ), "_blank")
 }
 
 function O(e) {
@@ -57,7 +57,7 @@ function O(e) {
         shouldShow: l,
         onRequestClose: r,
         ctaText: h,
-        ctaOnClick: g
+        ctaOnClick: y
     } = e, {
         passesGeneralUIInvariant: E,
         programReward: v
@@ -78,7 +78,7 @@ function O(e) {
                         days: Math.max(1, e),
                         deepLinkToNitroOrbs: N
                     })
-                }), (0, a.jsx)(y.A, {})]
+                }), (0, a.jsx)(g.A, {})]
             })
         }
         return null
@@ -122,7 +122,7 @@ function O(e) {
                             text: h,
                             variant: "primary",
                             size: "sm",
-                            onClick: g,
+                            onClick: y,
                             fullWidth: !0
                         }), (0, a.jsx)(d.EYj, {
                             variant: "text-xs/normal",

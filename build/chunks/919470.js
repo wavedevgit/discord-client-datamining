@@ -62,9 +62,9 @@ let p = {
             badgeId: h,
             showProgress: x,
             progressCircleText: b,
-            progressCirclePercent: g,
+            progressCirclePercent: y,
             progressCircleUrgency: f,
-            delay: y,
+            delay: g,
             size: E,
             gradientColor: v,
             estimatedTooltipHeight: S
@@ -85,7 +85,7 @@ let p = {
             if (!r || null == P) return;
             let e = x ? {
                 progressCircleText: b,
-                progressCirclePercent: g,
+                progressCirclePercent: y,
                 progressCircleUrgency: f
             } : {};
             return {
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, P, A, x, b, g, f]), _ = {
+        }, [r, P, A, x, b, y, f]), _ = {
             title: t,
             body: l,
             graphic: R,
@@ -108,7 +108,7 @@ let p = {
                     variant: "primary"
                 }]
             }, [m]),
-            delay: y,
+            delay: g,
             size: E,
             gradientColor: n.useMemo(() => "string" == typeof v && v in p ? p[v] : v, [v]),
             estimatedTooltipHeight: S

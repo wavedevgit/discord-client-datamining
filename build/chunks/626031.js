@@ -1,6 +1,6 @@
 /** chunk id: 626031 params = (module,exports,require) **/
 l.d(t, {
-    A: () => y
+    A: () => g
 });
 var a = l(627968),
     n = l(64700),
@@ -16,7 +16,7 @@ var a = l(627968),
     h = l(379121);
 let x = new c.A("BalanceCounter"),
     b = (0, d._$)(void 0) === m.B.PRODUCTION,
-    g = e => null == e ? 0 : `${e.toFixed(0)}`.length,
+    y = e => null == e ? 0 : `${e.toFixed(0)}`.length,
     f = e => {
         let {
             value: t,
@@ -38,11 +38,11 @@ let x = new c.A("BalanceCounter"),
             }
         }, [t, r]);
         let f = t ?? 0,
-            y = m.current ?? f,
+            g = m.current ?? f,
             {
                 duration: E,
                 delay: v
-            } = (0, p.Y)(f - y, u),
+            } = (0, p.Y)(f - g, u),
             {
                 number: S
             } = (0, o.zhh)({
@@ -58,7 +58,7 @@ let x = new c.A("BalanceCounter"),
                 },
                 delay: v,
                 onStart: () => {
-                    l(g(y))
+                    l(y(g))
                 },
                 onRest: () => {
                     if (d(c + 1), i(), !b && null !== h.current && null !== m.current) {
@@ -68,10 +68,10 @@ let x = new c.A("BalanceCounter"),
                             delta: f - m.current
                         })
                     }
-                    l(g(f)), m.current = f
+                    l(y(f)), m.current = f
                 }
             }),
-            j = g(Math.max(t ?? 0, S.get()));
+            j = y(Math.max(t ?? 0, S.get()));
         return (0, a.jsx)(s.animated.div, {
             style: {
                 width: `calc(${j}ch)`
@@ -79,12 +79,12 @@ let x = new c.A("BalanceCounter"),
             children: S.to(e => `${e.toFixed(0)}`)
         })
     },
-    y = e => {
+    g = e => {
         let {
             value: t,
             className: l,
             ...r
-        } = e, s = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => g(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${s?0:x}ch`;
+        } = e, s = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${s?0:x}ch`;
         return (0, a.jsx)(o.Text, {
             variant: "text-md/semibold",
             className: i()(h.S, s ? void 0 : h.r, l),

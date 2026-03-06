@@ -17,12 +17,12 @@ var a = l(627968),
     h = l(305003),
     x = l(162097),
     b = l(219980),
-    g = l(652215),
+    y = l(652215),
     f = l(985018),
-    y = l(150542);
+    g = l(150542);
 let E = {
-        START: y.Vl,
-        END: y.Wk
+        START: g.Vl,
+        END: g.Wk
     },
     v = e => {
         let {
@@ -41,8 +41,8 @@ let E = {
                 let e = !_;
                 e && null != v && (0, p.Y)({
                     pageType: v,
-                    sectionType: g.JJy.ORBS_BALANCE_MENU,
-                    ctaObject: g.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
+                    sectionType: y.JJy.ORBS_BALANCE_MENU,
+                    ctaObject: y.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
                 }), R(e ? h.k.SELECTED : h.k.DEFAULT), k(e)
             }, [_, v]),
             O = n.useCallback(() => {
@@ -67,9 +67,9 @@ let E = {
                 }
             }), [_, M, l, r]);
         return (0, a.jsxs)("div", {
-            className: i()(y.kL, T, {
-                [y.R]: I,
-                [y.RK]: !I
+            className: i()(g.kL, T, {
+                [g.R]: I,
+                [g.RK]: !I
             }),
             children: [(0, a.jsx)(b.J, {
                 pillRef: D,
@@ -81,9 +81,9 @@ let E = {
                 onClick: M,
                 showNotificationBadge: t
             }), P ? U : _ && (0, a.jsx)("div", {
-                className: i()(y.Ui, j, {
-                    [y.R]: I,
-                    [y.RK]: !I
+                className: i()(g.Ui, j, {
+                    [g.R]: I,
+                    [g.RK]: !I
                 }),
                 ref: L,
                 children: B

@@ -15,7 +15,7 @@ var a = l(627968),
     m = l(788868),
     h = l(818348);
 let x = () => {
-        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(s.g.WHAT_YOU_LOSE), [g, f] = n.useState(null), [y, E] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [v, S] = n.useState([]), [j, T] = n.useState(() => {
+        let [e, t] = n.useState(m.PremiumTypes.TIER_0), [l, x] = n.useState(s.g.WHAT_YOU_LOSE), [y, f] = n.useState(null), [g, E] = n.useState(m.gD.PREMIUM_MONTH_TIER_0), [v, S] = n.useState([]), [j, T] = n.useState(() => {
             let e = new Date;
             return e.setMonth(e.getMonth() + 1), e
         }), [C, P] = n.useState(null), [A, R] = n.useState(!1), [_, k] = n.useState(!1), [I, N] = n.useState(!1);
@@ -23,7 +23,7 @@ let x = () => {
             (0, i.zS)()
         }, []), (0, n.useEffect)(() => {
             let e = new Date;
-            switch (y) {
+            switch (g) {
                 case m.gD.PREMIUM_MONTH_TIER_0:
                 case m.gD.PREMIUM_MONTH_TIER_1:
                 case m.gD.PREMIUM_MONTH_TIER_2:
@@ -35,7 +35,7 @@ let x = () => {
                     e.setFullYear(e.getFullYear() + 1)
             }
             T(e)
-        }, [y]), (0, n.useEffect)(() => {
+        }, [g]), (0, n.useEffect)(() => {
             switch (e) {
                 case m.PremiumTypes.TIER_0:
                     S([{
@@ -65,11 +65,11 @@ let x = () => {
                     }]), E(m.gD.PREMIUM_MONTH_TIER_2)
             }
         }, [e]), (0, n.useEffect)(() => {
-            [s.g.CONFIRM_DISCOUNT, s.g.DISCOUNT_APPLIED].includes(l) && null === g && f(b()), l === s.g.PREVIEW && null === C && P(new u.A({
+            [s.g.CONFIRM_DISCOUNT, s.g.DISCOUNT_APPLIED].includes(l) && null === y && f(b()), l === s.g.PREVIEW && null === C && P(new u.A({
                 id: "",
                 invoiceItems: [{
                     id: "",
-                    subscriptionPlanId: y,
+                    subscriptionPlanId: g,
                     subscriptionPlanPrice: 200,
                     amount: 400,
                     quantity: 1,
@@ -90,7 +90,7 @@ let x = () => {
                 subscriptionPeriodEnd: j,
                 status: d.lT7.PAID
             })), l !== s.g.PREVIEW && null !== C && P(null)
-        }, [l, g, j, y, C]);
+        }, [l, y, j, g, C]);
         let D = n.useCallback(async () => {
             N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(c.m, {
                 ...t,
@@ -98,8 +98,8 @@ let x = () => {
                     t.onClose(), N(!1)
                 },
                 premiumType: e,
-                churnDiscount: g,
-                planId: y,
+                churnDiscount: y,
+                planId: g,
                 renewalInvoice: C,
                 renewalInvoiceDetails: {
                     intervalType: m.WT.MONTH,
@@ -113,7 +113,7 @@ let x = () => {
                 activeStep: l,
                 premiumSubscription: {
                     id: "",
-                    planId: y,
+                    planId: g,
                     type: h.rz.PREMIUM,
                     items: [],
                     createdAt: new Date,
@@ -134,7 +134,7 @@ let x = () => {
                     pauseReason: p.qf.UNKNOWN
                 }
             }))
-        }, [e, g, y, C, A, _, l, j]);
+        }, [e, y, g, C, A, _, l, j]);
         return (0, n.useEffect)(() => {
             I && D()
         }, [l, I, D]), (0, a.jsxs)(o.LB, {
@@ -176,7 +176,7 @@ let x = () => {
                             value: l
                         }
                     },
-                    value: y,
+                    value: g,
                     options: v,
                     selectionMode: "single",
                     fullWidth: !0
@@ -213,9 +213,9 @@ let x = () => {
                 })
             }), (0, a.jsx)(o.MG, {
                 children: (0, a.jsx)(r.Checkbox, {
-                    checked: null !== g,
+                    checked: null !== y,
                     onChange: () => {
-                        null === g ? f(b()) : f(null)
+                        null === y ? f(b()) : f(null)
                     },
                     label: "Churn Discount"
                 })

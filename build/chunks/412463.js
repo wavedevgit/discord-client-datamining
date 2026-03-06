@@ -19,9 +19,9 @@ var a = l(627968),
     h = l(937008),
     x = l(156312),
     b = l(491057),
-    g = l(546042),
+    y = l(546042),
     f = l(97352),
-    y = l(67480),
+    g = l(67480),
     E = l(582658);
 let v = e => {
         let {
@@ -34,16 +34,16 @@ let v = e => {
         n.useEffect(() => {
             (u.current !== t || d.current !== l) && (x((0, r.A)()), u.current = t, d.current = l)
         }, [t, l]);
-        let [b, g] = (0, s.yK)([y.A], () => [y.A.isFetching(t), y.A.get(t)]);
+        let [b, y] = (0, s.yK)([g.A], () => [g.A.isFetching(t), g.A.get(t)]);
         return n.useEffect(() => {
-            null != g || b || (0, c.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
-        }, [a, t, g, b]), {
+            null != y || b || (0, c.EX)(a, t, i.g.VARIANTS_GROUP).catch(e => {})
+        }, [a, t, y, b]), {
             loadId: h,
             analyticsLocations: o,
             handleClose: n.useCallback(e => {}, []),
             handleComplete: n.useCallback(() => {}, []),
             isFetching: b,
-            sku: g,
+            sku: y,
             skuId: t,
             isGift: l
         }
@@ -92,10 +92,10 @@ let v = e => {
             loadId: p,
             excludeSubscriptionPlansBySKU: m,
             renderHeader: f,
-            hideErrors: y,
+            hideErrors: g,
             disablePurchases: v,
             paymentContextOverrides: S
-        } = e, j = y ? {
+        } = e, j = g ? {
             purchasePreviewError: null,
             purchaseError: null,
             ...S
@@ -117,7 +117,7 @@ let v = e => {
                 children: (0, a.jsx)(b.Qt, {
                     children: (0, a.jsx)(h.dX, {
                         isGift: r,
-                        children: (0, a.jsx)(g.PaymentModal, {
+                        children: (0, a.jsx)(y.PaymentModal, {
                             transitionState: o.ip4.ENTERED,
                             onClose: i,
                             onComplete: s,
