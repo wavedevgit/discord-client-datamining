@@ -39,22 +39,22 @@ function E(e) {
         scheduledEndTime: R,
         scheduledStartTime: D,
         recurrenceRule: M
-    } = t, P = (0, o.D3)(S), L = (0, o.Xk)(S), z = null != t && (0, x.Fd)(t), U = i.useMemo(() => {
+    } = t, P = (0, o.D3)(S), z = (0, o.Xk)(S), L = null != t && (0, x.Fd)(t), U = i.useMemo(() => {
         let e = (0, m.N5)(t);
         return null != e ? e : {
             startDate: a()(D)
         }
-    }, [t, D]), [V, w] = i.useState(() => (0, m.z7)(a()(D), M)), F = i.useRef(null);
+    }, [t, D]), [V, F] = i.useState(() => (0, m.z7)(a()(D), M)), B = i.useRef(null);
     i.useEffect(() => {
-        b && F.current?.focus()
+        b && B.current?.focus()
     }, [b]);
-    let B = e => {
+    let w = e => {
             y({
                 image: e
             })
         },
         O = (e, t) => {
-            null == e || void 0 === t ? B(null) : (0, r.mMO)(async () => {
+            null == e || void 0 === t ? w(null) : (0, r.mMO)(async () => {
                 let {
                     default: i
                 } = await Promise.all([n.e("59701"), n.e("35929"), n.e("74571"), n.e("5363")]).then(n.bind(n, 142630));
@@ -65,7 +65,7 @@ function E(e) {
                         let {
                             imageUri: t
                         } = e;
-                        return B(t)
+                        return w(t)
                     },
                     uploadType: A.HL.SCHEDULED_EVENT_IMAGE,
                     ...n
@@ -78,7 +78,7 @@ function E(e) {
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("div", {
             className: f.GU,
-            children: null != S && !z && (P > 0 || L > 0) && (0, l.jsx)(u.Bw, {
+            children: null != S && !L && (P > 0 || z > 0) && (0, l.jsx)(u.Bw, {
                 channelId: S
             })
         }), (0, l.jsx)("div", {
@@ -98,7 +98,7 @@ function E(e) {
                     maxLength: j.t_,
                     value: k,
                     autoComplete: "off",
-                    inputRef: F
+                    inputRef: B
                 }), (0, l.jsx)(v.A, {
                     className: f.kz,
                     onScheduleChange: e => {
@@ -115,13 +115,13 @@ function E(e) {
                         let t = U.startDate;
                         null == t || (y({
                             recurrenceRule: (0, m.nG)(e, t)
-                        }), w(e))
+                        }), F(e))
                     },
                     schedule: U,
                     recurrenceRule: M,
                     showEndDate: I === j.Ps.EXTERNAL,
                     requireEndDate: I === j.Ps.EXTERNAL,
-                    disableStartDateTime: z,
+                    disableStartDateTime: L,
                     guildId: E
                 }), (0, l.jsx)(p, {
                     error: T
@@ -154,7 +154,7 @@ function E(e) {
                             variant: "primary",
                             size: "sm",
                             text: N.intl.string(N.t.gmUvO1),
-                            onClick: () => B(null)
+                            onClick: () => w(null)
                         })]
                     }) : (0, l.jsx)(c.A, {
                         size: "sm",

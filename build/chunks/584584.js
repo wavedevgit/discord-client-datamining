@@ -14,8 +14,8 @@ var i = n(735438),
     m = n(15285),
     _ = n(287809),
     A = n(469778),
-    f = n(67480),
-    E = n(652215);
+    E = n(67480),
+    f = n(652215);
 let h = "DetectedOffPlatformPremiumPerksStore",
     g = {},
     p = {},
@@ -34,9 +34,9 @@ function C() {
             u.A.isFetchingApplication(n) || u.A.didFetchingApplicationFail(n) || d.Ay.fetchApplication(n);
             continue
         }
-        let l = f.A.get(t);
+        let l = E.A.get(t);
         if (null == l) {
-            f.A.isFetching(t) || f.A.didFetchingSkuFail(t) || c.EX(i.id, t);
+            E.A.isFetching(t) || E.A.didFetchingSkuFail(t) || c.EX(i.id, t);
             continue
         }
         A.A.applicationIdsFetching.has(i.id) || A.A.isEntitledToSku(_.default.getCurrentUser(), t, i.id, i.id) || !l.available ? null != g[t] && (delete g[t], e = !0) : (g[t] = {
@@ -49,7 +49,7 @@ function C() {
 class I extends a.Ay.Store {
     static displayName = "DetectedOffPlatformPremiumPerksStore";
     initialize() {
-        this.waitFor(u.A, A.A, m.Ay, f.A, _.default), x = r.w.get(h) ?? x
+        this.waitFor(u.A, A.A, m.Ay, E.A, _.default), x = r.w.get(h) ?? x
     }
     getDetectedOffPlatformPremiumPerks() {
         return l().values(g)
@@ -77,12 +77,12 @@ let T = new I(s.h, {
                 distributor: n
             }
             of m.Ay.getRunningGames())
-            if (null != t && n !== E.d3x.DISCORD)
+            if (null != t && n !== f.d3x.DISCORD)
                 for (let {
                         skuId: n,
                         applicationId: i
                     }
-                    of E.m_i) i !== t || x.includes(n) || null == p[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), p[n] = {
+                    of f.m_i) i !== t || x.includes(n) || null == p[n] && (A.A.applicationIdsFetched.has(i) || A.A.applicationIdsFetching.has(i) || null != A.A.getForSku(n) || o.LM(i), p[n] = {
                     skuId: n,
                     applicationId: i
                 }, e = !0);

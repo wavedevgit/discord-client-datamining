@@ -62,11 +62,11 @@ let p = {
             badgeId: h,
             showProgress: x,
             progressCircleText: b,
-            progressCirclePercent: y,
-            progressCircleUrgency: g,
+            progressCirclePercent: g,
+            progressCircleUrgency: y,
             delay: f,
-            size: E,
-            gradientColor: v,
+            size: v,
+            gradientColor: E,
             estimatedTooltipHeight: S
         } = e, j = n.useRef(null), T = n.useRef(null), C = n.useMemo(() => ({
             bronze: c.Ac.PREMIUM_TENURE_1_MONTH,
@@ -85,8 +85,8 @@ let p = {
             if (!r || null == P) return;
             let e = x ? {
                 progressCircleText: b,
-                progressCirclePercent: y,
-                progressCircleUrgency: g
+                progressCirclePercent: g,
+                progressCircleUrgency: y
             } : {};
             return {
                 type: "dynamic",
@@ -98,7 +98,7 @@ let p = {
                     ...e
                 }
             }
-        }, [r, P, A, x, b, y, g]), _ = {
+        }, [r, P, A, x, b, g, y]), _ = {
             title: t,
             body: l,
             graphic: R,
@@ -109,8 +109,8 @@ let p = {
                 }]
             }, [m]),
             delay: f,
-            size: E,
-            gradientColor: n.useMemo(() => "string" == typeof v && v in p ? p[v] : v, [v]),
+            size: v,
+            gradientColor: n.useMemo(() => "string" == typeof E && E in p ? p[E] : E, [E]),
             estimatedTooltipHeight: S
         };
         return (0, a.jsxs)("div", {

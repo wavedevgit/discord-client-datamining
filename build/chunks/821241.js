@@ -15,8 +15,8 @@ var l = n(503698),
     m = n(809115),
     _ = n(888675),
     A = n(705751),
-    f = n(985018),
-    E = n(684532);
+    E = n(985018),
+    f = n(684532);
 
 function h(e) {
     let {
@@ -35,44 +35,44 @@ function h(e) {
         onMouseEnter: I,
         onMouseLeave: T,
         children: (0, i.jsx)(_.A, {
-            className: a()(E.rs, {
-                [E.oE]: n
+            className: a()(f.rs, {
+                [f.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(m.l, {
                 src: C
             }),
-            iconContainerClassName: E.zc,
+            iconContainerClassName: f.zc,
             compact: n,
             children: (0, i.jsxs)("div", {
-                className: a()(E.Qs, {
-                    [E.oE]: n
+                className: a()(f.Qs, {
+                    [f.oE]: n
                 }),
                 children: [(0, i.jsx)(u.ix, {
                     message: t,
-                    messageClassname: E.he,
-                    className: a()(E.QV, E.he, {
-                        [E.oE]: n
+                    messageClassname: f.he,
+                    className: a()(f.QV, f.he, {
+                        [f.oE]: n
                     }),
                     username: (0, i.jsxs)("div", {
-                        className: E.he,
+                        className: f.he,
                         children: [(0, i.jsx)(s.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: E.Xh,
-                            children: f.intl.string(f.t.hG1StD)
+                            className: f.Xh,
+                            children: E.intl.string(E.t.hG1StD)
                         }), (0, i.jsx)(o.A, {
                             type: A.nu.SYSTEM_DM,
-                            className: E.Al
+                            className: f.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
-                    className: a()(E.__invalid_messageContent, {
-                        [E.oE]: n
+                    className: a()(f.__invalid_messageContent, {
+                        [f.oE]: n
                     }),
-                    children: f.intl.format(f.t.W0UBI3, {
+                    children: E.intl.format(E.t.W0UBI3, {
                         username: p.nick,
                         usernameHook: x,
                         guildName: g?.name ?? ""

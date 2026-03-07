@@ -48,7 +48,7 @@ function N() {
     let e = b(S);
     if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > _) return !1;
     let t = Date.now();
-    e.lastActionTime = t, e.viewDuration += t - I, I = t
+    return e.lastActionTime = t, e.viewDuration += t - I, I = t, !0
 }
 
 function y() {

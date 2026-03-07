@@ -21,17 +21,17 @@ function u(e) {
         compact: m,
         popoutProps: _,
         hideTimestamp: A = !1,
-        withFooter: f = !1,
-        ...E
+        withFooter: E = !1,
+        ...f
     } = e, h = (0, r.Ay)(t);
     return (0, i.jsx)("div", {
         className: a()({
-            [d.Ym]: f
+            [d.Ym]: E
         }, d.gD, {
             [d.oE]: m
         }, u),
         children: (0, i.jsx)(s.A, {
-            ...E,
+            ...f,
             className: a()(d.zC, {
                 [d.oE]: m
             }),

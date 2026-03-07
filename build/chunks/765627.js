@@ -29,7 +29,7 @@ function f(e) {
     } = e, {
         enabled: p,
         inInbox: f
-    } = c.A.useExperiment({
+    } = c.A.useConfig({
         location: "RecentsPopout"
     }), C = (0, u.Sc)({
         location: "RecentsHeader"

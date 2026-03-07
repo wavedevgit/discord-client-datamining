@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(740075),
     _ = n(706727),
     A = n(332173),
-    f = n(657331),
-    E = n(734057),
+    E = n(657331),
+    f = n(734057),
     h = n(317525),
     g = n(71393),
     p = n(994500),
@@ -50,8 +50,8 @@ let v = l.memo(function(e) {
             analyticsLocations: v
         } = (0, d.Ay)(),
         {
-            onCopy: M,
-            copyRef: O
+            onCopy: O,
+            copyRef: M
         } = (0, m.A)(n, r?.application_command?.id),
         j = (0, s.bG)([g.A], () => g.A.getGuild(n.guild_id), [n.guild_id]);
     if (l.useEffect(() => {
@@ -102,7 +102,7 @@ let v = l.memo(function(e) {
                         let e = (0, C.FT)(t, r);
                         n = (0, i.jsxs)(A.A, {
                             ...S,
-                            onClick: () => (0, f.openUserProfileModal)({
+                            onClick: () => (0, E.openUserProfileModal)({
                                 userId: t.id,
                                 guildId: r.guild_id,
                                 channelId: r.id,
@@ -116,7 +116,7 @@ let v = l.memo(function(e) {
                 }
                 case c.n4.CHANNEL: {
                     let e = a.value.toString(),
-                        t = E.A.getChannel(e);
+                        t = f.A.getChannel(e);
                     null != t && (n = (0, i.jsxs)(A.A, {
                         ...S,
                         children: ["#", (0, u.m1)(t, x.default, p.A)]
@@ -144,7 +144,7 @@ let v = l.memo(function(e) {
                             let e = (0, C.FT)(t, r);
                             n = (0, i.jsxs)(A.A, {
                                 ...S,
-                                onClick: () => (0, f.openUserProfileModal)({
+                                onClick: () => (0, E.openUserProfileModal)({
                                     userId: t.id,
                                     guildId: r.guild_id,
                                     sourceAnalyticsLocations: g
@@ -189,11 +189,11 @@ let v = l.memo(function(e) {
         className: T.kL,
         onCopy: e => {
             let t = window?.getSelection()?.toString() ?? "";
-            t.startsWith("/") && t.endsWith("\n") && M(e, r)
+            t.startsWith("/") && t.endsWith("\n") && O(e, r)
         },
         children: [(0, i.jsx)("div", {
             className: T.YL,
-            ref: O,
+            ref: M,
             children: t
         }), (0, i.jsx)("div", {
             className: T.xQ

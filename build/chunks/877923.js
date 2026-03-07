@@ -1,6 +1,6 @@
 /** chunk id: 877923 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968),
     l = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     _ = n(652215),
     A = n(944909);
 
-function f(e) {
+function E(e) {
     let {
         giftIntentType: t,
         recipientUser: n,
-        channel: f
-    } = e, E = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = l.useRef(null), {
+        channel: E
+    } = e, f = (0, a.bG)([o.A], () => o.A.useReducedMotion), h = l.useRef(null), {
         createMultipleConfettiAt: g
     } = l.useContext(c.x), p = l.useCallback(e => ({
         size: {
@@ -41,7 +41,7 @@ function f(e) {
         }
     }), []);
     return l.useEffect(() => {
-        if (E) return;
+        if (f) return;
         let e = h.current;
         if (null == e) return;
         let t = null,
@@ -60,7 +60,7 @@ function f(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [g, h, E, p]), (0, i.jsx)(m.A, {
+    }, [g, h, f, p]), (0, i.jsx)(m.A, {
         contentClassName: A.o9,
         iconContainerClassName: A.zc,
         iconNode: (0, i.jsx)(s.XFE, {
@@ -70,7 +70,7 @@ function f(e) {
             innerRef: h,
             giftIntentType: t,
             recipientUser: n,
-            analyticsPage: (0, u.DJ)(f),
+            analyticsPage: (0, u.DJ)(E),
             analyticsSection: _.JJy.CHANNEL
         })
     })

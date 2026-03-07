@@ -3,8 +3,8 @@ n.d(t, {
     Cw: () => _,
     Ld: () => A,
     UD: () => m,
-    aZ: () => f,
-    jo: () => E,
+    aZ: () => E,
+    jo: () => f,
     uO: () => u
 });
 var i = n(73153),
@@ -48,12 +48,12 @@ async function A(e, t) {
     })
 }
 
-function f(e) {
+function E(e) {
     let t = (0, s.Ml)(e),
         n = r.A.getGuild(e);
     return !!t && null != n && (n.features.has(c.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) || n.features.has(c.GuildFeatures.COMMUNITY) || n.features.has(c.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? (0, a.pX)(c.BVt.CHANNEL(e, d.VV.MEMBER_SAFETY)) : l.A.open(n.id, c.BEX.MEMBERS), !0)
 }
-async function E(e, t) {
+async function f(e, t) {
     let n = await (0, o.vk)(e, t);
     return 0 === n.length ? [] : (await i.h.dispatch({
         type: "FETCH_GUILD_MEMBER_SUPPLEMENTAL_SUCCESS",

@@ -23,7 +23,7 @@ let _ = {
         [l.l.REPORT_TO_MOD_CLOSED_REPORT]: () => u.default.UE81zV
     };
 
-function f(e) {
+function E(e) {
     let {
         type: t
     } = e, n = null;
@@ -49,7 +49,7 @@ function f(e) {
     }) : null
 }
 
-function E(e) {
+function f(e) {
     let {
         message: t,
         channel: n,
@@ -58,7 +58,7 @@ function E(e) {
         author: r,
         mentions: u,
         type: A
-    } = t, E = (0, s.Ay)(t), h = t.getChannelId(), g = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
+    } = t, f = (0, s.Ay)(t), h = t.getChannelId(), g = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), p = (0, s.m2)(r, n), x = (0, o.P)({
         user: r,
         channelId: h,
         guildId: n.guild_id,
@@ -71,13 +71,13 @@ function E(e) {
     })(C), T = _[A] ?? null;
     if (null == T) return null;
     let N = m.intl.format(T(), {
-        actorName: E.nick,
+        actorName: f.nick,
         actorHook: x,
         targetName: C?.nick,
         targetHook: I
     });
     return (0, i.jsx)(c.A, {
-        iconNode: (0, i.jsx)(f, {
+        iconNode: (0, i.jsx)(E, {
             type: A
         }),
         timestamp: t.timestamp,
@@ -94,7 +94,7 @@ function h(e) {
     } = e, {
         author: a,
         type: r
-    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), E = (0, o.P)({
+    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), _ = (0, s.m2)(a, n), f = (0, o.P)({
         user: a,
         channelId: u,
         guildId: n.guild_id,
@@ -103,10 +103,10 @@ function h(e) {
     if (null == h) return null;
     let g = m.intl.format(h(), {
         actorName: d.nick,
-        actorHook: E
+        actorHook: f
     });
     return (0, i.jsx)(c.A, {
-        iconNode: (0, i.jsx)(f, {
+        iconNode: (0, i.jsx)(E, {
             type: r
         }),
         timestamp: t.timestamp,
@@ -123,7 +123,7 @@ function g(e) {
     } = e, {
         type: r
     } = t;
-    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(E, {
+    return r === l.l.REPORT_TO_MOD_BAN_USER || r === l.l.REPORT_TO_MOD_KICK_USER || r === l.l.REPORT_TO_MOD_TIMEOUT_USER ? (0, i.jsx)(f, {
         message: t,
         channel: n,
         compact: a

@@ -2,9 +2,9 @@
 n.d(t, {
     GQ: () => A,
     NF: () => h,
-    QG: () => E,
+    QG: () => f,
     Tp: () => p,
-    ZR: () => f,
+    ZR: () => E,
     ne: () => g
 });
 var i = n(311907),
@@ -29,8 +29,8 @@ function A(e) {
         numMinutes: Math.floor(60 * t)
     })
 }
-let f = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-    E = () => {
+let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
+    f = () => {
         (0, a.Dr)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
     },
     h = e => {

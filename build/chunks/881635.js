@@ -18,12 +18,12 @@ function m(e) {
         analyticsLocation: n,
         analyticsLocations: m,
         closeLayer: _
-    } = e, [A, f] = l.useState(!1), {
-        analyticsLocations: E
+    } = e, [A, E] = l.useState(!1), {
+        analyticsLocations: f
     } = (0, s.Ay)(m ?? []), h = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = h?.isPremiumGroupMember();
     async function p() {
-        f(!0), await (0, c.g)({
-            analyticsLocations: E,
+        E(!0), await (0, c.g)({
+            analyticsLocations: f,
             analyticsLocation: {
                 object: d.ZSU.BUTTON_CTA,
                 objectType: d.AnalyticsObjectTypes.BUY,
@@ -32,7 +32,7 @@ function m(e) {
             guild: t,
             closeLayer: _,
             onClose: () => {
-                f(!1)
+                E(!1)
             }
         })
     }

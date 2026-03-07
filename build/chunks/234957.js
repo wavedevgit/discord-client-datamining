@@ -20,8 +20,8 @@ let m = l.memo(function(e) {
     } = e, _ = u.state === r.a.LOADED ? u.message : void 0, A = l.useMemo(() => _?.content != null && "" !== _.content ? (0, o.Ay)(_, {
         formatInline: !0
     }).content : null, [_]), {
-        isReplyAuthorBlocked: f,
-        isReplyAuthorIgnored: E
+        isReplyAuthorBlocked: E,
+        isReplyAuthorIgnored: f
     } = (0, a.cf)([s.A], () => ({
         isReplyAuthorBlocked: null != _ && s.A.isBlockedForMessage(_),
         isReplyAuthorIgnored: null != _ && s.A.isIgnoredForMessage(_)
@@ -34,8 +34,8 @@ let m = l.memo(function(e) {
         referencedMessage: u,
         content: A,
         compact: m,
-        isReplyAuthorBlocked: f,
-        isReplyAuthorIgnored: E,
+        isReplyAuthorBlocked: E,
+        isReplyAuthorIgnored: f,
         isReplySpineClickable: !1,
         showReplySpine: !0
     })

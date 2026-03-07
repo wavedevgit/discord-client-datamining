@@ -12,10 +12,8 @@ let s = {
         let {
             enabled: e,
             inInbox: t
-        } = i.A.getCurrentConfig({
+        } = i.A.getConfig({
             location: "keybinds"
-        }, {
-            autoTrackExposure: !1
         });
         if (e && !t) return r._.dispatch(a.jej.TOGGLE_FOR_LATER), !1
     }

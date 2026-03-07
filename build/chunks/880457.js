@@ -20,7 +20,7 @@ var i = n(627968),
 function f(e) {
     let {
         enabled: t
-    } = o.A.useExperiment({
+    } = o.A.useConfig({
         location: "LongPressMessageActionSheet"
     }), n = (0, a.bG)([u.A], () => u.A.getSavedMessage(e.channel_id, e.id)), l = h({
         message: e,

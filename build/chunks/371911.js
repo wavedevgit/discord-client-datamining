@@ -72,7 +72,7 @@ function y(e) {
     let {
         enabled: W,
         inInbox: Y
-    } = A.A.useExperiment({
+    } = A.A.useConfig({
         location: "RecentsPopout"
     }), z = (0, o.bG)([m.A], () => m.A.hasOverdueReminder(), []) && W && Y;
     s.useEffect(() => {

@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(793574),
     _ = n(688810),
     A = n(888675),
-    f = n(532794),
-    E = n(287809),
+    E = n(532794),
+    f = n(287809),
     h = n(166403),
     g = n(954571),
     p = n(405269),
@@ -27,8 +27,8 @@ var i = n(627968),
     S = n(727949),
     R = n(664654),
     v = n(303682),
-    M = n(857586),
-    O = n(378135),
+    O = n(857586),
+    M = n(378135),
     j = n(788868),
     b = n(652215),
     y = n(985018),
@@ -45,14 +45,14 @@ class U extends l.Component {
     isSender;
     compact;
     constructor(e) {
-        super(e), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = !0 === e.compact, this.offerExpired = (0, O.P)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
+        super(e), this.trialOffer = e.trialOffer, this.referralsSent = e.referralsSent, this.currentUser = e.currentUser, this.recipientHasNitro = e.recipientHasNitro, this.trialEndsAt = e.trialEndsAt, this.analyticsLocations = e.analyticsLocations, this.compact = !0 === e.compact, this.offerExpired = (0, M.P)(this.trialOffer), this.isSender = this.currentUser.id === this.trialOffer.referrer_id
     }
     getSystemMessageHeader() {
-        let e = E.default.getUser(this.trialOffer.user_id);
+        let e = f.default.getUser(this.trialOffer.user_id);
         if (this.isSender) return y.intl.format(y.t["4/EMxl"], {
             receiver: e?.username
         });
-        let t = E.default.getUser(this.trialOffer.referrer_id),
+        let t = f.default.getUser(this.trialOffer.referrer_id),
             n = t?.username !== void 0 ? t.username : "";
         return y.intl.format(y.t.yisueA, {
             sender: n,
@@ -60,9 +60,9 @@ class U extends l.Component {
         })
     }
     getTitleText() {
-        let e = E.default.getUser(this.trialOffer.user_id),
+        let e = f.default.getUser(this.trialOffer.user_id),
             t = null != e ? e.username : "???",
-            n = E.default.getUser(this.trialOffer.referrer_id),
+            n = f.default.getUser(this.trialOffer.referrer_id),
             i = null != n ? n.username : "???";
         return this.recipientHasNitro && void 0 === this.trialOffer.redeemed_at ? y.intl.formatToPlainString(y.t["Mptau/"], {
             username: t
@@ -79,7 +79,7 @@ class U extends l.Component {
         }) : this.offerExpired ? null : y.intl.string(y.t.lQLlOb)
     }
     renderActions() {
-        let e = this.currentUser.id !== this.trialOffer.user_id || (0, C.TW)(this.currentUser) || !this.currentUser.verified || (0, O.P)(this.trialOffer),
+        let e = this.currentUser.id !== this.trialOffer.user_id || (0, C.TW)(this.currentUser) || !this.currentUser.verified || (0, M.P)(this.trialOffer),
             t = this.renderExpirationDate();
         return (0, i.jsxs)("div", {
             className: L.UD,
@@ -90,7 +90,7 @@ class U extends l.Component {
                     size: "sm",
                     text: y.intl.string(y.t.O0etsF),
                     onClick: () => {
-                        (0, f.A)({
+                        (0, E.A)({
                             initialPlanId: null,
                             subscriptionTier: j.pe.TIER_2,
                             analyticsLocations: this.analyticsLocations,
@@ -126,9 +126,9 @@ class U extends l.Component {
     }
     render() {
         let e = () => {
-                let e = E.default.getUser(this.trialOffer.user_id),
+                let e = f.default.getUser(this.trialOffer.user_id),
                     t = null != e ? e.username : "???",
-                    n = E.default.getUser(this.trialOffer.referrer_id),
+                    n = f.default.getUser(this.trialOffer.referrer_id),
                     i = null != n ? n.username : "???";
                 if (this.isSender)
                     if (this.recipientHasNitro && void 0 === this.trialOffer.redeemed_at) return {
@@ -158,7 +158,7 @@ class U extends l.Component {
                 }
             },
             t = (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(M.A, {
+                children: [(0, i.jsx)(O.A, {
                     subscriptionTier: j.pe.TIER_2,
                     buttonTextOverride: (() => {
                         switch (N.$.getConfig({
@@ -283,7 +283,7 @@ function P(e) {
         trialOffer: n ? T.A.getRelevantUserTrialOffer(t) : null,
         isResolving: !!n && T.A.isResolving(t),
         referralsSent: T.A.getRecipientStatus()
-    }), [n, t]), d = E.default.getCurrentUser(), A = (0, c.bG)([E.default], () => null != a && (0, C.TW)(void 0 !== d && a.user_id === d.id ? d : E.default.getUser(a.user_id))), f = (0, c.bG)([h.A], () => A ? h.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
+    }), [n, t]), d = f.default.getCurrentUser(), A = (0, c.bG)([f.default], () => null != a && (0, C.TW)(void 0 !== d && a.user_id === d.id ? d : f.default.getUser(a.user_id))), E = (0, c.bG)([h.A], () => A ? h.A.getPremiumTypeSubscription()?.trialEndsAt : null), {
         analyticsLocations: g
     } = (0, _.Ay)(m.A.SHARE_NITRO_EMBED);
     return r ? (0, i.jsx)(u.Wb, {
@@ -293,7 +293,7 @@ function P(e) {
         referralsSent: o,
         currentUser: d,
         recipientHasNitro: A,
-        trialEndsAt: f,
+        trialEndsAt: E,
         analyticsLocations: g,
         compact: l
     }) : (0, i.jsx)("div", {

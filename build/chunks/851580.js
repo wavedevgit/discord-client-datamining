@@ -19,10 +19,8 @@ function h(e) {
     } = e, {
         enabled: s,
         inInbox: h
-    } = i.A.useExperiment({
+    } = i.A.useConfig({
         location: "ForLaterCoachmarkWeb"
-    }, {
-        autoTrackExposure: !1
     }), [_, f] = (0, a.kn)(s && t === (h ? "inbox-button" : "bookmarks-button") ? [d] : [], void 0);
     return _ !== d ? null : (0, n.jsx)(l.AM, {
         targetElementRef: r,

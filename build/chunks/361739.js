@@ -118,7 +118,7 @@ let b = function(e) {
         mobileSidebarOpen: x,
         toggleSidebar: A,
         hideSidebar: b = !1
-    } = e, N = r.useRef(null), j = r.useRef(null), R = (0, m.A)(l), T = (0, h.pnh)(b, {
+    } = e, N = r.useRef(null), j = r.useRef(null), T = (0, m.A)(l), O = (0, h.pnh)(b, {
         from: {
             position: "absolute",
             opacity: 0
@@ -128,21 +128,21 @@ let b = function(e) {
         },
         reverse: b,
         config: a.config.stiff
-    }, "animate-always"), O = r.useCallback(e => {
+    }, "animate-always"), R = r.useCallback(e => {
         N.current = e, null != v && (v.current = e)
     }, [v]);
     r.useLayoutEffect(() => {
-        null != N.current && R !== l && N.current.scrollTo({
+        null != N.current && T !== l && N.current.scrollTo({
             to: 0
         })
-    }, [l, R, N]);
+    }, [l, T, N]);
     let P = (0, s.jsx)(C, {
         isMobile: d.Fr,
         mobileSidebarOpen: x,
         closeAction: p
     });
 
-    function y() {
+    function I() {
         return null == i ? null : (0, s.jsx)(h.FQk, {
             className: o()(E.noticeRegion, {
                 [E.noticeRegionHiddenSidebar]: b
@@ -151,7 +151,7 @@ let b = function(e) {
         }, l)
     }
     return (0, s.jsx)(s.Fragment, {
-        children: T((e, i) => (0, s.jsxs)(a.animated.div, {
+        children: O((e, i) => (0, s.jsxs)(a.animated.div, {
             style: e,
             className: E.standardSidebarView,
             children: [!i && (null == t ? null : (0, s.jsx)(h.NPJ, {
@@ -188,14 +188,14 @@ let b = function(e) {
                 if ("custom" === f) return (0, s.jsxs)(u.F, {
                     component: "div",
                     className: E.contentRegion,
-                    children: [t, n, !d.Fr && P, y()]
+                    children: [t, n, !d.Fr && P, I()]
                 });
                 if ("scrollableCustom" === f) return (0, s.jsxs)(u.F, {
                     component: "div",
                     className: E.contentRegion,
                     children: [t, (0, s.jsxs)(h.GtU, {
                         className: o()(E.contentRegionScroller, b ? E.contentRegionHiddenSidebar : E.contentRegionShownSidebar),
-                        ref: O,
+                        ref: R,
                         children: [(0, s.jsx)(g.Provider, {
                             value: N.current,
                             children: (0, s.jsx)("div", {
@@ -207,7 +207,7 @@ let b = function(e) {
                                 })
                             })
                         }), !d.Fr && P]
-                    }), y()]
+                    }), I()]
                 });
                 let i = _[f ?? "default"];
                 return (0, s.jsxs)(u.F, {
@@ -219,7 +219,7 @@ let b = function(e) {
                         className: E.contentTransitionWrap,
                         children: [t, (0, s.jsxs)(h.GtU, {
                             className: o()(E.contentRegionScroller, b ? E.contentRegionHiddenSidebar : E.contentRegionShownSidebar),
-                            ref: O,
+                            ref: R,
                             children: [(0, s.jsx)(g.Provider, {
                                 value: N.current,
                                 children: (0, s.jsx)(h.VQ0.Panel, {
@@ -238,7 +238,7 @@ let b = function(e) {
                                 })
                             }), !d.Fr && P]
                         })]
-                    }), y()]
+                    }), I()]
                 })
             }()]
         }))

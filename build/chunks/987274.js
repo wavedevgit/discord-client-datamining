@@ -1,42 +1,159 @@
 /** chunk id: 987274 params = (module,exports,require) **/
 l.d(t, {
-    I7: () => d
+    I7: () => m
 });
 var a = l(627968);
 l(64700);
-var n = l(706276),
-    r = l(808411),
-    i = l(919470),
-    s = l(624716),
-    o = l(985018);
-let u = {
+var n = l(397927),
+    r = l(706276),
+    i = l(808411),
+    s = l(919470),
+    o = l(624716),
+    u = l(872725),
+    c = l(985018);
+let d = {
         name: "Expressive Progress",
-        component: r.A,
+        component: i.A,
         id: "expressive-progress",
         controls: {}
     },
-    c = {
+    p = {
         name: "Tab Tooltip",
-        component: s.A,
+        component: o.A,
         id: "tab-tooltip",
         controls: {}
     },
-    d = {
+    m = {
         title: "Nitro Components",
         stories: [{
+            name: "AnimatedBorderCard",
+            component: function(e) {
+                return (0, a.jsx)("div", {
+                    style: {
+                        maxWidth: 400
+                    },
+                    children: (0, a.jsx)(u.A, {
+                        artboard: e.artboard,
+                        fit: e.fit,
+                        glowAmount: e.glowAmount,
+                        blurAmount: e.blurAmount,
+                        hueRotate: e.hueRotate,
+                        cardType: n.sl2.PRIMARY,
+                        children: (0, a.jsxs)("div", {
+                            style: {
+                                padding: 16,
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 8
+                            },
+                            children: [(0, a.jsx)(n.Heading, {
+                                variant: "heading-lg/semibold",
+                                children: "Card Title"
+                            }), (0, a.jsx)(n.Text, {
+                                variant: "text-sm/normal",
+                                color: "text-default",
+                                children: "This is sample card content using design system tokens."
+                            }), (0, a.jsx)(n.Text, {
+                                variant: "text-sm/normal",
+                                color: "text-muted",
+                                children: "This is more sample content."
+                            })]
+                        })
+                    }, `${e.artboard}-${e.fit}`)
+                })
+            },
+            id: "animated-border-card",
+            controls: {
+                artboard: {
+                    label: "Artboard",
+                    type: "select",
+                    defaultValue: "BaseGlowRemapped",
+                    options: [{
+                        label: "BaseGlow",
+                        value: "BaseGlow"
+                    }, {
+                        label: "BaseGlowRemapped",
+                        value: "BaseGlowRemapped"
+                    }, {
+                        label: "HoverLightmode",
+                        value: "HoverLightmode"
+                    }, {
+                        label: "HoverDarkmode",
+                        value: "HoverDarkmode"
+                    }, {
+                        label: "ButtonFillLightmode",
+                        value: "ButtonFillLightmode"
+                    }, {
+                        label: "ButtonFillDarkmode",
+                        value: "ButtonFillDarkmode"
+                    }]
+                },
+                fit: {
+                    label: "Fit",
+                    type: "select",
+                    defaultValue: "layout",
+                    options: [{
+                        label: "Contain",
+                        value: "contain"
+                    }, {
+                        label: "Cover",
+                        value: "cover"
+                    }, {
+                        label: "Fill",
+                        value: "fill"
+                    }, {
+                        label: "Fit Width",
+                        value: "fit-width"
+                    }, {
+                        label: "Fit Height",
+                        value: "fit-height"
+                    }, {
+                        label: "None",
+                        value: "none"
+                    }, {
+                        label: "Scale Down",
+                        value: "scale-down"
+                    }, {
+                        label: "Layout",
+                        value: "layout"
+                    }]
+                },
+                glowAmount: {
+                    label: "Glow Amount (px)",
+                    type: "slider",
+                    defaultValue: 8,
+                    minValue: 0,
+                    maxValue: 50
+                },
+                blurAmount: {
+                    label: "Blur Amount (px)",
+                    type: "slider",
+                    defaultValue: 30,
+                    minValue: 0,
+                    maxValue: 100
+                },
+                hueRotate: {
+                    label: "Hue Rotate (deg)",
+                    type: "slider",
+                    defaultValue: 0,
+                    minValue: 0,
+                    maxValue: 360
+                }
+            }
+        }, {
             name: "Cancellation Flow",
-            component: () => (0, a.jsx)(n.o, {}),
+            component: () => (0, a.jsx)(r.o, {}),
             id: "cancellation-flow",
             controls: {}
-        }, u, {
+        }, d, {
             name: "Premium Tooltip",
-            component: i.A,
+            component: s.A,
             id: "premium-tooltip",
             controls: {
                 title: {
                     label: "Title",
                     type: "text",
-                    defaultValue: o.intl.string(o.t.lG6a5x).toUpperCase()
+                    defaultValue: c.intl.string(c.t.lG6a5x).toUpperCase()
                 },
                 body: {
                     label: "Body",
@@ -181,5 +298,5 @@ let u = {
                     defaultValue: 300
                 }
             }
-        }, c]
+        }, p]
     }

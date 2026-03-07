@@ -45,7 +45,7 @@ function A(e) {
     } = e, {
         enabled: N,
         inInbox: M
-    } = s.A.useExperiment({
+    } = s.A.useConfig({
         location: "HeaderBar"
     });
     return (0, i.jsx)(_.Ay, {

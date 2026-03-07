@@ -16,11 +16,11 @@ var a = l(627968),
     h = l(976860),
     x = l(309954),
     b = l(287809),
-    y = l(975571),
-    g = l(474090),
+    g = l(975571),
+    y = l(474090),
     f = l(94264),
-    E = l(235365),
-    v = l(566119),
+    v = l(235365),
+    E = l(566119),
     S = l(788868),
     j = l(652215),
     T = l(901123),
@@ -40,15 +40,15 @@ let I = () => (0, a.jsx)("div", {
 });
 
 function N() {
-    (0, v.RQ)(), (0, h.pX)(`${T.BV.NITRO_HOME}?section=${E.L}`)
+    (0, E.RQ)(), (0, h.pX)(`${T.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function D() {
-    (0, v.gP)(), (0, h.pX)(`${T.BV.NITRO_HOME}?section=${E.L}`)
+    (0, E.gP)(), (0, h.pX)(`${T.BV.NITRO_HOME}?section=${v.L}`)
 }
 
 function M() {
-    (0, v.b)(), window.open(y.A.getArticleURL(j.MVz.ORBS_FAQ), "_blank")
+    (0, E.b)(), window.open(g.A.getArticleURL(j.MVz.ORBS_FAQ), "_blank")
 }
 
 function O(e) {
@@ -57,19 +57,19 @@ function O(e) {
         shouldShow: l,
         onRequestClose: r,
         ctaText: h,
-        ctaOnClick: y
+        ctaOnClick: g
     } = e, {
-        passesGeneralUIInvariant: E,
-        programReward: v
+        passesGeneralUIInvariant: v,
+        programReward: E
     } = (0, m.F)({
         location: "PremiumTenureRewardsOrbsBalancePopover"
     }), T = (0, o.bG)([b.default], () => b.default.getCurrentUser()), {
         balance: R
-    } = (0, x.W)(), _ = !(0, g.ki)(T), O = n.useMemo(() => {
-        let e = (0, g.YE)(T, S.PremiumTypes.TIER_2);
-        if (!E || _) return null;
-        if (e && null != v) {
-            let e = (0, s.default)(new Date(v.next_reward_date), new Date);
+    } = (0, x.W)(), _ = !(0, y.ki)(T), O = n.useMemo(() => {
+        let e = (0, y.YE)(T, S.PremiumTypes.TIER_2);
+        if (!v || _) return null;
+        if (e && null != E) {
+            let e = (0, s.default)(new Date(E.next_reward_date), new Date);
             return (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.EYj, {
                     variant: "text-xs/normal",
@@ -82,7 +82,7 @@ function O(e) {
             })
         }
         return null
-    }, [T, _, v, E]), L = (R ?? 0) >= 4100;
+    }, [T, _, E, v]), L = (R ?? 0) >= 4100;
     return (0, a.jsx)(u.x, {
         targetElementRef: t,
         shouldShow: l,
@@ -122,7 +122,7 @@ function O(e) {
                             text: h,
                             variant: "primary",
                             size: "sm",
-                            onClick: y,
+                            onClick: g,
                             fullWidth: !0
                         }), (0, a.jsx)(d.EYj, {
                             variant: "text-xs/normal",

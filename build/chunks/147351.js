@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(576705),
     _ = n(287809),
     A = n(954571),
-    f = n(661191),
-    E = n(460350),
+    E = n(661191),
+    f = n(460350),
     h = n(652215),
     g = n(874377);
 
@@ -24,7 +24,7 @@ function p(e) {
         assets: t,
         currentUser: n,
         message: i
-    } = e, l = (f.default.extractTimestamp(n.id) + f.default.extractTimestamp(i.id)) % t.length;
+    } = e, l = (E.default.extractTimestamp(n.id) + E.default.extractTimestamp(i.id)) % t.length;
     return t[l]
 }
 
@@ -37,7 +37,7 @@ function x(e) {
         stickers: u,
         event: m,
         eventProperties: _
-    } = e, f = l.useMemo(() => p({
+    } = e, E = l.useMemo(() => p({
         assets: u,
         currentUser: t,
         message: a
@@ -48,7 +48,7 @@ function x(e) {
     }), [d, t, a]), g = l.useCallback(async () => {
         let {
             valid: e
-        } = await (0, E.i)({
+        } = await (0, f.i)({
             type: o.oU.FORM,
             content: "",
             channel: n
@@ -68,7 +68,7 @@ function x(e) {
         }({
             channel: n,
             message: a,
-            sticker: f
+            sticker: E
         }), function(e) {
             let {
                 sticker: t,
@@ -80,15 +80,15 @@ function x(e) {
                 sticker_id: t.id
             })
         }({
-            sticker: f,
+            sticker: E,
             event: m,
             eventProperties: _
         }))
-    }, [n, a, f, m, _]);
+    }, [n, a, E, m, _]);
     return (0, i.jsx)(r.$nd, {
         icon: {
             type: "sticker",
-            asset: f,
+            asset: E,
             component: c.A
         },
         text: h,

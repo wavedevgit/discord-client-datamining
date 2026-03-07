@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(320501),
     _ = n(998218),
     A = n(888675),
-    f = n(652215),
-    E = n(985018),
+    E = n(652215),
+    f = n(985018),
     h = n(363866);
 
 function g(e) {
@@ -52,13 +52,13 @@ function g(e) {
         })
     }, [I, g, t.messageReference, N]);
     if (null == p || null == x && null == C || null == I || T) return null;
-    let R = p.attachments.find(e => (0, a.Lt)(e.flags ?? 0, f.sbO.IS_CLIP)),
+    let R = p.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
         v = null;
     if (R?.proxy_url != null) {
         let e = _.A.toURLSafe(R.proxy_url);
         null != e && (e.searchParams.append("format", "webp"), v = e.toString())
     }
-    let M = null != v ? [v, I.thumbnail] : [I.thumbnail];
+    let O = null != v ? [v, I.thumbnail] : [I.thumbnail];
     return (0, i.jsx)(A.A, {
         iconNode: (0, i.jsx)(o.xgA, {
             size: "md",
@@ -69,15 +69,15 @@ function g(e) {
         additionalContent: (0, i.jsxs)("div", {
             className: h.i,
             children: [(0, i.jsx)(d.A, {
-                thumbnails: M,
+                thumbnails: O,
                 variant: "stacked"
             }), (0, i.jsx)(s.$nd, {
                 size: "sm",
                 onClick: S,
-                text: E.intl.string(E.t["5qb8EX"]),
+                text: f.intl.string(f.t["5qb8EX"]),
                 icon: o.W4J
             })]
         }),
-        children: E.intl.string(E.t.ThhsNG)
+        children: f.intl.string(f.t.ThhsNG)
     })
 }

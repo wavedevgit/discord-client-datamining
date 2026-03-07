@@ -1,6 +1,6 @@
 /** chunk id: 21653 params = (module,exports,require) **/
 n.d(t, {
-    default: () => w
+    default: () => F
 });
 var l, i = n(627968),
     s = n(64700),
@@ -35,9 +35,9 @@ var l, i = n(627968),
     M = n(250203);
 let {
     INVITE_OPTIONS_7_DAYS: P,
-    INVITE_OPTIONS_UNLIMITED: L
+    INVITE_OPTIONS_UNLIMITED: z
 } = v.Ay;
-var z = ((l = z || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
+var L = ((l = L || {})[l.ENTITY = 0] = "ENTITY", l[l.SETTINGS = 1] = "SETTINGS", l[l.PREVIEW = 2] = "PREVIEW", l[l.SUCCESS = 3] = "SUCCESS", l);
 
 function U(e) {
     let {
@@ -127,12 +127,12 @@ function V(e) {
         slideId: 2,
         label: D.intl.string(D.t["8aJzT4"]),
         valid: !0
-    }], [u, c, T]), _ = Object.keys(z).length, R = (0, A.Fd)(n), P = e => Math.max(0, Math.min(e, _ - 1)), [L, V] = s.useState(+!!R), [w, F] = s.useState(!1), B = s.useMemo(() => k.slice(0, L + 1).map(e => e.valid).every(Boolean), [k, L]), O = L >= k.length ? 3 : k[P(L)].slideId, H = 3 === O;
+    }], [u, c, T]), _ = Object.keys(L).length, R = (0, A.Fd)(n), P = e => Math.max(0, Math.min(e, _ - 1)), [z, V] = s.useState(+!!R), [F, B] = s.useState(!1), w = s.useMemo(() => k.slice(0, z + 1).map(e => e.valid).every(Boolean), [k, z]), O = z >= k.length ? 3 : k[P(z)].slideId, H = 3 === O;
     (0, y.N)(e => e.onUpdateCanCloseModal)(H);
     let X = (0, r.bG)([o.A], () => o.A.useReducedMotion),
         Y = s.useRef(null),
         q = e => {
-            F(!1), V(P(e))
+            B(!1), V(P(e))
         },
         J = s.useRef(q);
     s.useEffect(() => {
@@ -141,10 +141,10 @@ function V(e) {
         E?.id != null && J.current(3)
     }, [E?.id]);
     let W = () => {
-            B && (2 === O ? N() : H ? f() : q(L + 1))
+            w && (2 === O ? N() : H ? f() : q(z + 1))
         },
         Q = () => {
-            q(L - 1)
+            q(z - 1)
         },
         K = D.intl.string(D.t.PDTjLN);
     return 2 === O && (K = c ? D.intl.string(D.t.e5VEcE) : D.intl.string(D.t["60lJ0C"])), (0, i.jsxs)(d.EOs, {
@@ -161,15 +161,15 @@ function V(e) {
             "data-migration-pending": !0,
             children: [!H && (0, i.jsx)(x.A, {
                 steps: k.map(e => e.label),
-                stepIndex: L,
+                stepIndex: z,
                 onClick: e => {
-                    e < L ? Q() : e > L && W()
+                    e < z ? Q() : e > z && W()
                 }
             }), (0, i.jsxs)(d.tN_, {
                 activeSlide: O,
                 width: 440,
                 onSlideReady: e => {
-                    F(e === O)
+                    B(e === O)
                 },
                 children: [(0, i.jsx)(d.q7S, {
                     id: 0,
@@ -177,7 +177,7 @@ function V(e) {
                         guildId: t,
                         guildEvent: n,
                         validationErrorMessage: u.entity,
-                        isSlideReady: w,
+                        isSlideReady: F,
                         onChange: j
                     })
                 }), (0, i.jsx)(d.q7S, {
@@ -189,7 +189,7 @@ function V(e) {
                         onChange: j,
                         error: v,
                         validationErrorMessage: u.schedule,
-                        isSlideReady: w
+                        isSlideReady: F
                     })
                 }), (0, i.jsx)(d.q7S, {
                     id: 2,
@@ -223,7 +223,7 @@ function V(e) {
                         variant: "primary",
                         text: K,
                         onClick: W,
-                        disabled: !B,
+                        disabled: !w,
                         loading: g
                     })
                 })]
@@ -240,7 +240,7 @@ function V(e) {
     })
 }
 
-function w(e) {
+function F(e) {
     let {
         guildId: t,
         guildScheduledEventId: l,
@@ -256,7 +256,7 @@ function w(e) {
         [I, S] = s.useState(null),
         [G, {
             loading: M,
-            error: z
+            error: L
         }] = (0, j.A)(async () => {
             var e;
             let n, i;
@@ -265,7 +265,7 @@ function w(e) {
             let s = await N.A.createGuildEvent(v, t);
             return e = s.body, n = (0, f.K7)(e), null != (i = e.channel_id ?? x?.id) && c.Ay.createInvite(i, {
                 max_age: P.value,
-                max_uses: L.value
+                max_uses: z.value
             }, R.PE1.GUILD_EVENTS), n ? S(e) : o(), s
         }),
         U = s.useMemo(() => (0, k.A)(v, b), [v, b]);
@@ -277,7 +277,7 @@ function w(e) {
         formErrors: U,
         transitionState: a,
         loading: M,
-        error: z,
+        error: L,
         onChange: e => {
             if (null != e.entityType) {
                 let n = (0, C.dy)(e.entityType),

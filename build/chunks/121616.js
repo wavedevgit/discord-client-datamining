@@ -1,25 +1,27 @@
 /** chunk id: 121616 params = (module,exports,require) **/
 n.d(t, {
-    d: () => u
+    d: () => _
 });
 var i = n(64700),
     s = n(814278),
     l = n(419954),
     a = n(933297),
-    r = n(780964),
-    o = n(179014),
-    d = n(437690),
-    c = n(985018);
-let u = (0, l.zZ)(r.X.VOICE_SECURITY_CATEGORY, {
-    useTitle: () => c.intl.string(c.t.xVk85F),
+    r = n(723702),
+    o = n(780964),
+    d = n(179014),
+    c = n(437690),
+    u = n(985018);
+let _ = (0, l.zZ)(o.X.VOICE_SECURITY_CATEGORY, {
+    useTitle: () => u.intl.string(u.t.xVk85F),
     useInlineNotice: function() {
         return i.useMemo(() => ({
             type: a.lT.INLINE_NOTICE,
             noticeType: "info",
-            useText: () => c.intl.format(c.t["/6sFWa"], {
+            useText: () => u.intl.format(u.t["/6sFWa"], {
                 helpArticle: (0, s.aW)()
             })
         }), [])
     },
-    buildLayout: () => [o.r, d.f]
+    usePredicate: () => (0, r.isDesktop)(),
+    buildLayout: () => [d.r, c.f]
 })

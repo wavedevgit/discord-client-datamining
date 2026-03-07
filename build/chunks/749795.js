@@ -1,6 +1,6 @@
 /** chunk id: 749795 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => E
 });
 var i = n(627968);
 n(64700);
@@ -16,12 +16,12 @@ var l = n(503698),
     _ = n(985018),
     A = n(684532);
 
-function f(e) {
+function E(e) {
     let {
         message: t,
         compact: n,
         usernameHook: l
-    } = e, f = (0, o.Ay)(t), E = l(f), {
+    } = e, E = (0, o.Ay)(t), f = l(E), {
         avatarSrc: h,
         eventHandlers: {
             onMouseEnter: g,
@@ -70,8 +70,8 @@ function f(e) {
                         [A.oE]: n
                     }),
                     children: _.intl.format(_.t.qntXNQ, {
-                        username: f.nick,
-                        usernameHook: E
+                        username: E.nick,
+                        usernameHook: f
                     })
                 })]
             })

@@ -1,6 +1,6 @@
 /** chunk id: 394388 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => O
 });
 var i = n(627968),
     l = n(64700),
@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(509536),
     _ = n(881635),
     A = n(363487),
-    f = n(828162),
-    E = n(71393),
+    E = n(828162),
+    f = n(71393),
     h = n(888675),
     g = n(652215),
     p = n(49999),
@@ -87,7 +87,7 @@ function R(e) {
                 tag: "a",
                 role: "link",
                 onClick: () => {
-                    n ? (0, f.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, m.K)({
+                    n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, m.K)({
                         guildId: t.id,
                         location: {
                             section: g.JJy.CHANNEL_TEXT_AREA,
@@ -113,11 +113,11 @@ function v(e) {
     }) : null
 }
 
-function M(e) {
+function O(e) {
     let {
         boostingPrompt: t,
         channel: n
-    } = e, l = n.guild_id, r = (0, a.bG)([E.A], () => E.A.getGuild(l), [l]);
+    } = e, l = n.guild_id, r = (0, a.bG)([f.A], () => f.A.getGuild(l), [l]);
     return null == r ? null : (0, i.jsx)(h.A, {
         contentClassName: I.FG,
         iconContainerClassName: I.zc,

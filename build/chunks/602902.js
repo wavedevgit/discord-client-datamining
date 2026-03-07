@@ -15,8 +15,8 @@ var l = n(192308),
     m = n(661191),
     _ = n(518960),
     A = n(372684),
-    f = n(439818),
-    E = n(399925),
+    E = n(439818),
+    f = n(399925),
     h = n(696016),
     g = n(652215);
 async function p(e, t) {
@@ -39,9 +39,9 @@ async function p(e, t) {
             let t = [],
                 n = [];
             for (let i of e) {
-                let e = await (0, E.VO)(i),
+                let e = await (0, f.VO)(i),
                     l = i.name ?? (0, h.cM)(m.default.extractTimestamp(i.id)),
-                    a = (0, f.A)(l);
+                    a = (0, E.A)(l);
                 if (i.type === A.nQ.CLIP || i.type === A.nQ.VOICE_CLIP) {
                     let l = `${""!==a?a:"clip"}.mp4`;
                     t.push(new File([e], l, {

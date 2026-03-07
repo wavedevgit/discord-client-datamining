@@ -208,7 +208,7 @@ function el(e) {
             en = (0, E.m)(n),
             {
                 enabled: ei
-            } = v.A.useExperiment({
+            } = v.A.useConfig({
                 location: "message_utilities"
             }),
             el = (0, d.bG)([j.A], () => null != j.A.getSavedMessage(t.id, n.id)),

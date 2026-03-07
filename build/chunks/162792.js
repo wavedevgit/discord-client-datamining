@@ -56,7 +56,6 @@ let S = l.memo(function(e) {
             application: e?.application,
             username: R?.nick
         }));
-        else if (e.type === x.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : C.intl.string(C.t.wnn1Dc);
         if (null != e.content && "" !== e.content) {
             let t = {
                     formatInline: !0,

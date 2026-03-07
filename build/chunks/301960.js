@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(397927),
     _ = n(155718),
     A = n(811024),
-    f = n(795816),
-    E = n(793574),
+    E = n(795816),
+    f = n(793574),
     h = n(688810),
     g = n(735991),
     p = n(975412),
@@ -27,8 +27,8 @@ var i = n(627968),
     S = n(486020),
     R = n(203982),
     v = n(405269),
-    M = n(763754),
-    O = n(635071),
+    O = n(763754),
+    M = n(635071),
     j = n(728963),
     b = n(943815),
     y = n(652215),
@@ -66,8 +66,8 @@ function P(e, t, n, l, a, s) {
         isInteractionUserBlocked: u,
         isInteractionUserIgnored: _,
         showAvatarPopout: A,
-        showTargetAvatarPopout: f,
-        onClickAvatar: E,
+        showTargetAvatarPopout: E,
+        onClickAvatar: f,
         onUserContextMenu: h,
         onClickTargetAvatar: g,
         onTargetUserContextMenu: p,
@@ -111,11 +111,11 @@ function P(e, t, n, l, a, s) {
             user: t,
             guildId: d.guild_id,
             guildAvatar: C,
-            onClick: 1 === n ? g : E,
+            onClick: 1 === n ? g : f,
             onContextMenu: 1 === n ? p : h,
             ref: s
         }),
-        T = 1 === n ? f : A;
+        T = 1 === n ? E : A;
     return null != a && null != T && null != s ? (0, i.jsx)(m.YNO, {
         targetElementRef: s,
         renderPopout: a,
@@ -138,7 +138,7 @@ function k(e, t, n, l, a) {
         onTargetUserContextMenu: _,
         onPopoutRequestClose: A
     } = e;
-    return (0, i.jsx)(O.A, {
+    return (0, i.jsx)(M.A, {
         className: 1 === n ? D.iu : "",
         compact: !0,
         author: l,
@@ -166,9 +166,9 @@ function w(e) {
         {
             analyticsLocations: s,
             newestAnalyticsLocation: c
-        } = (0, h.Ay)(E.A.EXECUTED_COMMAND),
+        } = (0, h.Ay)(f.A.EXECUTED_COMMAND),
         S = (0, u.bG)([N.default], () => N.default.getCurrentUser()),
-        O = l.useRef(null),
+        M = l.useRef(null),
         U = l.useRef(null),
         w = l.useMemo(() => (e, t, l) => (o()(null != t, "ExecutedCommand: user cannot be undefined"), o()(null != S, "ExecutedCommand: currentUser cannot be undefined"), o()(null != a, "ExecutedCommand: channel cannot be undefined"), (0, i.jsx)(I.A, {
             ...e,
@@ -188,15 +188,15 @@ function w(e) {
         H = (0, x.Am)(n),
         B = H?.type === _.G4.APPLICATION_COMMAND && null != H.target_user ? new T.A(H.target_user) : null,
         V = H?.type === _.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
-        z = (0, M.d8)(n.interaction?.user, a),
-        J = (0, M.d8)(B, a),
+        z = (0, O.d8)(n.interaction?.user, a),
+        J = (0, O.d8)(B, a),
         K = l.useMemo(() => e.compact ? (0, b.A)((0, v.i$)(d()(), "LT")) : null, [e.compact]),
-        Y = (0, A.Gp)(a.id),
-        W = n.interaction;
-    if (null == W || null == z) return null;
+        W = (0, A.Gp)(a.id),
+        Y = n.interaction;
+    if (null == Y || null == z) return null;
     let Q = () => {
-        let t = P(e, W.user, 0, z, e => w(e, W.user, [E.A.AVATAR]), O),
-            n = k(e, W.user, 0, z, e => w(e, W.user));
+        let t = P(e, Y.user, 0, z, e => w(e, Y.user, [f.A.AVATAR]), M),
+            n = k(e, Y.user, 0, z, e => w(e, Y.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
@@ -281,7 +281,7 @@ function w(e) {
     }) : null != B && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == B) return null;
-            let t = P(e, B, 1, J, e => w(e, B, [E.A.AVATAR]), O),
+            let t = P(e, B, 1, J, e => w(e, B, [f.A.AVATAR]), M),
                 n = k(e, B, 1, J, e => w(e, B));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
@@ -299,11 +299,11 @@ function w(e) {
                 },
                 openInPopout: !1,
                 analyticsLocation: c
-            }), (0, f.LV)({
+            }), (0, E.LV)({
                 guildId: a.guild_id
             })
         };
-        t = Y ? L.intl.format(L.t.kfV8WM, {
+        t = W ? L.intl.format(L.t.kfV8WM, {
             userHook: Q,
             activityHook: () => (0, i.jsx)(m.DUT, {
                 tag: "span",

@@ -16,11 +16,11 @@ var a = l(627968),
     h = l(931503),
     x = l(264676),
     b = l(268920),
-    y = l(633217);
-let g = () => (0, a.jsx)("div", {
+    g = l(633217);
+let y = () => (0, a.jsx)("div", {
         className: h.s,
         children: (0, a.jsx)(u.A, {
-            src: y.A,
+            src: g.A,
             fallbackImage: b.A,
             className: h.Cb
         })
@@ -32,7 +32,7 @@ let g = () => (0, a.jsx)("div", {
             analyticsPage: r,
             linkPreText: u = m.intl.string(m.t["5qZv9E"]),
             linkText: b = m.intl.string(m.t.XRdyjz)
-        } = e, y = n.useCallback(() => {
+        } = e, g = n.useCallback(() => {
             null != r && (0, d.Y)({
                 pageType: r,
                 sectionType: p.JJy.ORBS_BALANCE_MENU,
@@ -41,7 +41,7 @@ let g = () => (0, a.jsx)("div", {
         }, [r]);
         return (0, a.jsxs)("div", {
             className: i()(h.kL, x.O),
-            children: [(0, a.jsx)(g, {}), (0, a.jsx)(s.$nd, {
+            children: [(0, a.jsx)(y, {}), (0, a.jsx)(s.$nd, {
                 text: t,
                 variant: "primary",
                 size: "sm",
@@ -58,7 +58,7 @@ let g = () => (0, a.jsx)("div", {
                     rel: "author",
                     href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
-                    onClick: y,
+                    onClick: g,
                     children: b
                 })]
             })]

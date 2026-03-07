@@ -1,7 +1,7 @@
 /** chunk id: 615179 params = (module,exports,require) **/
 n.d(t, {
-    QN: () => E,
-    Z_: () => f,
+    QN: () => f,
+    Z_: () => E,
     ez: () => h
 });
 var i = n(627968),
@@ -24,18 +24,18 @@ let A = (e, t) => {
         channelId: t.id,
         guildId: t.guild_id,
         messageId: e.id
-    }), A = (0, a.bG)([d.Ay, c.default], () => d.Ay.isMember(i?.id, c.default.getId())), f = l.useCallback(() => {
+    }), A = (0, a.bG)([d.Ay, c.default], () => d.Ay.isMember(i?.id, c.default.getId())), E = l.useCallback(() => {
         A && null != i && (0, o.uh)(i.id)
     }, [i, A]);
     return {
         guild: i,
         joinRequest: n,
         usernameHook: _,
-        guildNameClick: f
+        guildNameClick: E
     }
 };
 
-function f(e) {
+function E(e) {
     let {
         message: t,
         channel: l,
@@ -59,7 +59,7 @@ function f(e) {
     })
 }
 
-function E(e) {
+function f(e) {
     let {
         message: t,
         channel: l,

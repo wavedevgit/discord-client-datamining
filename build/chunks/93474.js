@@ -14,8 +14,8 @@ var i = n(311907),
     m = n(652215);
 let _ = {},
     A = 0,
-    f = {},
     E = {},
+    f = {},
     h = e => {
         null != _[e] && delete _[e], A++
     };
@@ -39,26 +39,26 @@ function p(e) {
         messages: n
     } = e, i = s.A.getChannel(t)?.getGuildId();
     if (null == i) return !1;
-    let l = E[i],
+    let l = f[i],
         a = n.reduce((e, t) => t.type === m.lAJ.AUTO_MODERATION_ACTION && t.embeds?.some(e => {
             let {
                 type: t
             } = e;
             return t === m.Auw.AUTO_MODERATION_NOTIFICATION
         }) ? null == e || -1 === c.default.compare(e, t.id) ? t.id : void 0 : e, l);
-    return null != a && E[i] !== a && (E[i] = a, !0)
+    return null != a && f[i] !== a && (f[i] = a, !0)
 }
 class x extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
     static persistKey = "GuildAutomodMessages";
     initialize(e) {
-        this.waitFor(s.A, o.A), null != e && (_ = e.automodFailedMessages, f = e.mentionRaidDetectionByGuild)
+        this.waitFor(s.A, o.A), null != e && (_ = e.automodFailedMessages, E = e.mentionRaidDetectionByGuild)
     }
     getState() {
         return {
             automodFailedMessages: _,
-            mentionRaidDetectionByGuild: f,
-            lastIncidentAlertMessage: E
+            mentionRaidDetectionByGuild: E,
+            lastIncidentAlertMessage: f
         }
     }
     getMessage(e) {
@@ -68,10 +68,10 @@ class x extends i.Ay.PersistedStore {
         return A
     }
     getMentionRaidDetected(e) {
-        return f[e] ?? null
+        return E[e] ?? null
     }
     getLastIncidentAlertMessage(e) {
-        return E[e] ?? null
+        return f[e] ?? null
     }
 }
 let C = new x(l.h, {
@@ -87,7 +87,7 @@ let C = new x(l.h, {
         } = e;
         if (null == t || n.type !== m.lAJ.AUTO_MODERATION_ACTION) return !1;
         let i = (0, r.rh)(n);
-        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (E[t] = i.id, !0)
+        return !!(0, u.ER)(i) && !!(0, u.de)(i) && (f[t] = i.id, !0)
     },
     MESSAGE_SEND_FAILED_AUTOMOD: g,
     MESSAGE_EDIT_FAILED_AUTOMOD: g,
@@ -112,7 +112,7 @@ let C = new x(l.h, {
             decisionId: n,
             suspiciousMentionActivityUntil: i
         } = e;
-        return f[t] = {
+        return E[t] = {
             guildId: t,
             decisionId: n,
             suspiciousMentionActivityUntil: i
@@ -122,6 +122,6 @@ let C = new x(l.h, {
         let {
             guildId: t
         } = e;
-        return delete f[t], !0
+        return delete E[t], !0
     }
 })

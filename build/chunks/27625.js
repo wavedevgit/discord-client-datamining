@@ -23,7 +23,7 @@ function d(t) {
         parentComponent: "SuspiciousDownloadModal",
         children: [(0, a.jsx)("img", {
             className: c.Qw,
-            src: s(929279),
+            src: s(151660),
             alt: ""
         }), (0, a.jsx)(n.$mQ, {
             children: (0, a.jsxs)("div", {

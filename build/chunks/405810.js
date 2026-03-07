@@ -1,42 +1,43 @@
 /** chunk id: 405810 params = (module,exports,require) **/
-a.d(t, {
-    A: () => s
+"use strict";
+n.d(t, {
+    A: () => o
 });
-var o = a(627968),
-    _ = a(64700),
-    n = a(397927),
-    r = a(946274),
-    i = a(453610);
+var i = n(627968),
+    s = n(64700),
+    l = n(397927),
+    r = n(946274),
+    a = n(453610);
 
-function s(e) {
+function o(e) {
     let {
         onChange: t,
-        onFileSizeError: a,
-        multiple: s = !1,
+        onFileSizeError: n,
+        multiple: o = !1,
         disabled: d = !1,
         maxFileSizeBytes: c,
-        filters: l,
-        ...p
-    } = e, b = _.useRef(null);
-    return (0, o.jsxs)("div", {
-        children: [(0, o.jsx)("div", {
-            className: i.l,
-            children: (0, o.jsx)(r.Ay, {
-                ref: b,
+        filters: u,
+        ...m
+    } = e, g = s.useRef(null);
+    return (0, i.jsxs)("div", {
+        children: [(0, i.jsx)("div", {
+            className: a.l,
+            children: (0, i.jsx)(r.Ay, {
+                ref: g,
                 onChange: t,
-                onFileSizeError: a,
-                multiple: s,
+                onFileSizeError: n,
+                multiple: o,
                 maxFileSizeBytes: c,
-                filters: l,
+                filters: u,
                 disabled: d,
                 tabIndex: -1,
                 "aria-hidden": !0
             })
-        }), (0, o.jsx)(n.Button, {
-            ...p,
+        }), (0, i.jsx)(l.Button, {
+            ...m,
             disabled: d,
             onClick: () => {
-                b.current?.activateUploadDialogue()
+                g.current?.activateUploadDialogue()
             }
         })]
     })

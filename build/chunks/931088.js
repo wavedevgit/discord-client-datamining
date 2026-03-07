@@ -25,22 +25,22 @@ let x = e => {
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: x,
-            errorOnRedeem: y,
-            setActiveStep: g,
+            errorOnRedeem: g,
+            setActiveStep: y,
             activeStep: f
         } = e, {
-            analyticsLocations: E
-        } = (0, i.Ay)(r.A.USER_SETTINGS), [v, S] = n.useState(b(f));
+            analyticsLocations: v
+        } = (0, i.Ay)(r.A.USER_SETTINGS), [E, S] = n.useState(b(f));
         return (0, n.useEffect)(() => {
             S(b(f))
         }, [f]), (0, a.jsx)(d.CancellationContext.Provider, {
             value: {
-                setStep: g,
+                setStep: y,
                 premiumType: o,
                 onClose: l,
                 transitionState: t,
                 premiumSubscription: s,
-                analyticsLocations: E,
+                analyticsLocations: v,
                 analyticsLocation: h.ThZ.USER_SETTINGS,
                 confettiCanvas: null,
                 churnUserDiscountOffer: u,
@@ -58,13 +58,13 @@ let x = e => {
                 }),
                 applyOffer: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        y ? t() : e()
+                        g ? t() : e()
                     }, 1e3)
                 }),
                 pauseDuration: null,
                 setPauseDuration: () => {}
             },
-            children: v
+            children: E
         })
     },
     b = e => {

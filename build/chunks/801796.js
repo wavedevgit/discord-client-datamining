@@ -1,7 +1,7 @@
 /** chunk id: 801796 params = (module,exports,require) **/
 n.d(t, {
     BD: () => p,
-    US: () => C,
+    US: () => h,
     X8: () => S,
     mH: () => g
 });
@@ -38,7 +38,7 @@ let A = (e, t) => {
             }), !1
         }
     },
-    C = {
+    h = {
         binds: ["alt+shift+up"],
         comboKeysBindGlobal: !0,
         action() {
@@ -52,12 +52,12 @@ let A = (e, t) => {
             }), !1
         }
     },
-    h = (e, t) => o.Ay.getMentionCount(t) > 0,
+    C = (e, t) => o.Ay.getMentionCount(t) > 0,
     p = {
         binds: ["mod+shift+alt+down"],
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(1, {
-            channelPredicate: h,
+            channelPredicate: C,
             ensureChatIsVisible: E,
             withVoiceChannels: !0
         }), !1)
@@ -66,7 +66,7 @@ let A = (e, t) => {
         binds: ["mod+shift+alt+up"],
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(-1, {
-            channelPredicate: h,
+            channelPredicate: C,
             ensureChatIsVisible: E,
             withVoiceChannels: !0
         }), !1)

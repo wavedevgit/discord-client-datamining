@@ -73,7 +73,7 @@ function O(e) {
     }), [o]), y = t.isGuildVoiceOrThread() && !n, {
         enabled: O,
         inInbox: L
-    } = p.A.useExperiment({
+    } = p.A.useConfig({
         location: "ChannelCallHeaderToolbar"
     }), M = [];
     return _ && M.push((0, i.jsx)(R, {

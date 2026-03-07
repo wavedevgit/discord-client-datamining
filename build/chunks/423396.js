@@ -16,8 +16,8 @@ var a = l(627968),
     h = l(652215),
     x = l(788868),
     b = l(985018),
-    y = l(825092);
-let g = [{
+    g = l(825092);
+let y = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
             ...e
@@ -60,7 +60,7 @@ let g = [{
         variant: "text-sm/normal",
         children: "Purchase button is disabled for this story"
     }),
-    E = {
+    v = {
         isGift: {
             label: "Is Gift",
             type: "boolean",
@@ -72,7 +72,7 @@ let g = [{
             defaultValue: !0
         }
     },
-    v = (0, m.R)(),
+    E = (0, m.R)(),
     S = {
         title: "Checkout Review Step",
         stories: [{
@@ -94,11 +94,11 @@ let g = [{
                     skuId: t,
                     isGift: l,
                     applicationId: h.FYj
-                }), E = c.Ay.isPremiumSku(t);
-                return x || null == b || E ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
-                    className: y.Cd,
+                }), v = c.Ay.isPremiumSku(t);
+                return x || null == b || v ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
+                    className: g.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: g,
+                        stepConfigs: y,
                         analyticsLocations: r,
                         applicationId: h.FYj,
                         initialPlanId: void 0,
@@ -124,10 +124,10 @@ let g = [{
                 skuId: {
                     label: "SKU ID",
                     type: "select",
-                    options: v.options,
-                    defaultValue: v.defaultValue
+                    options: E.options,
+                    defaultValue: E.defaultValue
                 },
-                ...E
+                ...v
             }
         }, {
             name: "Premium Review Step",
@@ -148,23 +148,23 @@ let g = [{
                     skuId: t,
                     isGift: l,
                     applicationId: x.tv
-                }), E = c.Ay.isPremiumSku(t), v = E ? x.zE[t] : void 0, [S, j] = n.useState(v), T = n.useRef(!1);
+                }), v = c.Ay.isPremiumSku(t), E = v ? x.zE[t] : void 0, [S, j] = n.useState(E), T = n.useRef(!1);
                 n.useEffect(() => {
-                    T.current || null == v || (T.current = !0, j(v))
-                }, [v, S]);
+                    T.current || null == E || (T.current = !0, j(E))
+                }, [E, S]);
                 let {
                     isLoadedForPremiumSKUs: C,
                     selectedPlan: P
                 } = (0, d.n1)({
                     subscriptionPlanId: S
                 });
-                return !m && null != b && C && E && null != P ? (0, a.jsxs)("div", {
-                    className: y.Cd,
+                return !m && null != b && C && v && null != P ? (0, a.jsxs)("div", {
+                    className: g.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: g,
+                        stepConfigs: y,
                         analyticsLocations: i,
                         applicationId: x.tv,
-                        initialPlanId: v,
+                        initialPlanId: E,
                         skuId: t,
                         isGift: l,
                         hideErrors: r,
@@ -193,7 +193,7 @@ let g = [{
                     }],
                     defaultValue: x.pe.TIER_0
                 },
-                ...E
+                ...v
             }
         }]
     }

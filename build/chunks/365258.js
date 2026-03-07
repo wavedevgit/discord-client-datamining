@@ -2,9 +2,9 @@
 n.d(t, {
     AB: () => T,
     AI: () => u,
-    Xc: () => h,
+    Xc: () => C,
     ae: () => S,
-    g8: () => C,
+    g8: () => h,
     gF: () => m,
     gS: () => f,
     vz: () => p
@@ -42,7 +42,7 @@ function g(e) {
     return E.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
-function C(e, t) {
+function h(e, t) {
     if (e === t) return null;
     let n = I(e),
         i = I(t);
@@ -69,7 +69,7 @@ function C(e, t) {
     })
 }
 
-function h(e) {
+function C(e) {
     switch (e) {
         case A.ACTIVITY_STATUS_OFF:
             return c.intl.string(c.t.FzgQna).toLowerCase();
@@ -108,7 +108,7 @@ function f(e, t) {
     let n = g(t),
         i = a._Z.getSetting();
     if (i === n || I(g(e)) > I(n) != I(i) > I(n)) return null;
-    let s = C(i, n);
+    let s = h(i, n);
     if (null == s) return null;
     let l = function(e) {
         switch (e) {

@@ -13,7 +13,7 @@ l.d(t, {
     t$: () => p,
     yJ: () => j,
     yi: () => C,
-    z_: () => v
+    z_: () => E
 });
 var a = l(627968),
     n = l(64700),
@@ -135,7 +135,7 @@ function b() {
         })
     })
 }
-let y = [{
+let g = [{
         id: "avatar_decoration",
         label: "Avatar Decoration",
         value: d.e.AVATAR_DECORATION_MODAL_UPSELL
@@ -148,7 +148,7 @@ let y = [{
         label: "Nameplate",
         value: d.e.NAMEPLATE_MODAL_UPSELL
     }],
-    g = {
+    y = {
         [d.e.AVATAR_DECORATION_MODAL_UPSELL]: {
             title: "Express Yourself with Avatar Decorations",
             body: "Stand out with unique avatar decorations exclusive to Nitro subscribers.",
@@ -172,7 +172,7 @@ function f() {
             title: t,
             body: n,
             glowUp: r
-        } = g[e];
+        } = y[e];
         (0, i.mMO)(async () => {
             let {
                 default: i
@@ -195,7 +195,7 @@ function f() {
                 placeholder: "Select type",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: y,
+                options: g,
                 selectionMode: "single",
                 fullWidth: !0
             })
@@ -207,7 +207,7 @@ function f() {
         })]
     })
 }
-let E = [{
+let v = [{
     id: "near_limit",
     label: "Near Limit (99 guilds)",
     value: 99
@@ -217,7 +217,7 @@ let E = [{
     value: u.qlD
 }];
 
-function v() {
+function E() {
     let [e, t] = n.useState(100), r = n.useCallback(() => {
         (0, i.mMO)(async () => {
             let {
@@ -239,7 +239,7 @@ function v() {
                 placeholder: "Select state",
                 onSelectionChange: e => t(e),
                 value: e,
-                options: E,
+                options: v,
                 selectionMode: "single",
                 fullWidth: !0
             })

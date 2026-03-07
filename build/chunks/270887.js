@@ -33,7 +33,7 @@ let g = r().throttle(function() {
             return -1 === n ? -2 : n
         }(t);
     if (-1 !== (g += e) || (0, o.J)(a.A, u.default, n, i, r) || (g += e), -3 === g && (g = t.length - 1), g >= t.length || -2 === g) return void(0, I.a)(A.A.getHomeLink());
-    let C = -1 === g ? E.YYv : t[g],
-        h = _.A.getChannelId(C);
-    (0, I.i)(C, h === C ? null : h, !1)
+    let h = -1 === g ? E.YYv : t[g],
+        C = _.A.getChannelId(h);
+    (0, I.i)(h, C === h ? null : C, !1)
 }, E.ugG)

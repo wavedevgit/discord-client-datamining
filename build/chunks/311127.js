@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(317525),
     _ = n(71393),
     A = n(287809),
-    f = n(488926),
-    E = n(661191),
+    E = n(488926),
+    f = n(661191),
     h = n(529942),
     g = n(164956),
     p = n(209700),
@@ -28,12 +28,12 @@ function T(e) {
         guildId: t
     } = e, n = (0, s.bG)([A.default], () => A.default.getCurrentUser()), T = (0, s.bG)([_.A], () => _.A.getGuild(t)), S = (0, s.bG)([m.A], () => m.A.getRolesSnapshot(t)), R = (0, s.bG)([m.A], () => m.A.getSortedRoles(t)), {
         impersonateType: v,
-        viewingRoles: M
+        viewingRoles: O
     } = (0, s.cf)([g.A], () => ({
         impersonateType: g.A.getImpersonateType(t),
         viewingRoles: g.A.getViewingRoles(t)
-    })), O = v === p._.SERVER_SHOP, j = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), b = null != T ? S[(0, c.af)(T)] : null, [y, L] = l.useState(() => {
-        let e = null == M ? [] : E.default.keys(M);
+    })), M = v === p._.SERVER_SHOP, j = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), b = null != T ? S[(0, c.af)(T)] : null, [y, L] = l.useState(() => {
+        let e = null == O ? [] : f.default.keys(O);
         return null != b && e.push(b.id), e
     }), D = l.useRef(T);
     l.useEffect(() => {
@@ -50,7 +50,7 @@ function T(e) {
         }
     }, [y, v, S]);
     let U = null != T && null != n && null != j ? R.find(e => j.roles.includes(e.id)) : void 0,
-        P = l.useMemo(() => null != T && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !O || e.tags?.subscription_listing_id != null).filter(e => U?.id === e.id || f.wO(T, n.id, U, e)) : [], [T, n, O, U, R]),
+        P = l.useMemo(() => null != T && null != n ? R.filter(e => !(0, d.Oy)(e)).filter(e => !M || e.tags?.subscription_listing_id != null).filter(e => U?.id === e.id || E.wO(T, n.id, U, e)) : [], [T, n, M, U, R]),
         k = l.useMemo(() => {
             let e = Array.from(P).map(e => ({
                 leading: N(e),
@@ -72,7 +72,7 @@ function T(e) {
     return (j.roles.forEach(e => {
         let t = S[e];
         null != t && (G[t.id] = t)
-    }), a.zy(f.aH({
+    }), a.zy(E.aH({
         forceRoles: G,
         context: T
     }), a.kg(x.xBc.MANAGE_GUILD, x.xBc.MANAGE_ROLES)) || (0, c.bM)(T, n)) ? (0, i.jsx)("div", {

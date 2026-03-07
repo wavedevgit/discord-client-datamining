@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(942075),
     _ = n(292548),
     A = n(817533),
-    f = n(652215),
-    E = n(746080),
+    E = n(652215),
+    f = n(746080),
     h = n(985018),
     g = n(751922);
 
@@ -84,7 +84,7 @@ function C(e) {
         })(t), {
             analyticsLocations: d
         } = (0, s.Ay)(r.A.GUILD_ROLE_SUBSCRIPTION_PURCHASE_SYSTEM_MESSAGE), _ = i.roleSubscriptionData, A = l.useCallback(() => {
-            (0, u.pX)(f.BVt.CHANNEL(a, E.VV.ROLE_SUBSCRIPTIONS), {
+            (0, u.pX)(E.BVt.CHANNEL(a, f.VV.ROLE_SUBSCRIPTIONS), {
                 sourceLocationStack: d
             }), _?.role_subscription_listing_id != null && (0, m.xH)(a, n.id, i.id, _.role_subscription_listing_id)
         }, [a, n, i, _, d]);

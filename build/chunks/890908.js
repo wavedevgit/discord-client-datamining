@@ -2,7 +2,7 @@
 l.r(t), l.d(t, {
     RevenuePlaygroundCollectionId: () => f,
     nitroCollection: () => j,
-    paymentsCollection: () => v,
+    paymentsCollection: () => E,
     playgroundConfig: () => T,
     virtualCurrencyCollection: () => S
 });
@@ -19,32 +19,32 @@ var a, n = l(397927),
     h = l(931433),
     x = l(391622),
     b = l(203484),
-    y = l(445736),
-    g = l(504312),
+    g = l(445736),
+    y = l(504312),
     f = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a);
-let E = ["Revenue Storybook", "Revenue Playground"],
-    v = {
+let v = ["Revenue Storybook", "Revenue Playground"],
+    E = {
         id: "payments",
         name: "Payments",
-        groups: [o._, g.Y, c.U, y.Wo, r.v, u.Gu, b.O],
-        tags: E,
+        groups: [o._, y.Y, c.U, g.Wo, r.v, u.Gu, b.O],
+        tags: v,
         IconComponent: n.d2Y
     },
     S = {
         id: "virtual-currency",
         name: "Virtual Currency",
         groups: [s.h2, i.c$, h.V, x.e],
-        tags: E,
+        tags: v,
         IconComponent: n.Cp8
     },
     j = {
         id: "nitro",
         name: "Nitro",
         groups: [d.I7, p.H, m.E],
-        tags: E,
+        tags: v,
         IconComponent: n.tvc
     },
     T = {
         playgroundBaseUrl: "revenue",
-        collections: [v, S, j]
+        collections: [E, S, j]
     }

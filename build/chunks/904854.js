@@ -14,8 +14,8 @@ var i = n(627968),
     m = n(447215),
     _ = n(888675),
     A = n(502197),
-    f = n(985018),
-    E = n(906294);
+    E = n(985018),
+    f = n(906294);
 
 function h(e) {
     var t;
@@ -27,34 +27,34 @@ function h(e) {
         S = (0, A.K)(I),
         R = (0, r.yK)([d.default], () => I.call?.participants != null ? I.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== I.author.id) : [], [I.author.id, I.call]),
         v = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
-        M = l.useMemo(() => (0, c.L)(R, v, "VoiceSession - participants"), [R, v]),
-        O = (t = I.author, n = (0, m.P)({
+        O = l.useMemo(() => (0, c.L)(R, v, "VoiceSession - participants"), [R, v]),
+        M = (t = I.author, n = (0, m.P)({
             user: t,
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
         }), h = (0, m.P)({
-            user: M[0],
+            user: O[0],
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
         }), g = (0, m.P)({
-            user: M[1],
+            user: O[1],
             channelId: T.id,
             guildId: T.guild_id,
             messageId: I.id
-        }), p = (0, u.Ay)(I), x = (0, u.d8)(M[0], T), C = (0, u.d8)(M[1], T), null == S ? f.intl.format(f.t["eX6e/3"], {
+        }), p = (0, u.Ay)(I), x = (0, u.d8)(O[0], T), C = (0, u.d8)(O[1], T), null == S ? E.intl.format(E.t["eX6e/3"], {
             username: p.nick,
             usernameHook: n(p)
-        }) : f.intl.format(f.t.YUbgR8, {
-            userCount: M.length + 1,
+        }) : E.intl.format(E.t.YUbgR8, {
+            userCount: O.length + 1,
             username: p.nick,
             usernameHook: n(p),
             username2: x.nick,
             username2Hook: h(x),
             username3: C.nick,
             username3Hook: g(C),
-            otherCount: M.length - 1,
+            otherCount: O.length - 1,
             duration: S
         }));
     return (0, i.jsx)(_.A, {
@@ -62,9 +62,9 @@ function h(e) {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         }),
-        iconContainerClassName: E.z,
+        iconContainerClassName: f.z,
         timestamp: I.timestamp,
         compact: N,
-        children: O
+        children: M
     })
 }

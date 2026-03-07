@@ -1,7 +1,7 @@
 /** chunk id: 142270 params = (module,exports,require) **/
 l.d(t, {
-    SS: () => v,
-    cP: () => E
+    SS: () => E,
+    cP: () => v
 });
 var a = l(627968),
     n = l(64700),
@@ -17,21 +17,21 @@ var a = l(627968),
     h = l(305003),
     x = l(162097),
     b = l(219980),
-    y = l(652215),
-    g = l(985018),
+    g = l(652215),
+    y = l(985018),
     f = l(150542);
-let E = {
+let v = {
         START: f.Vl,
         END: f.Wk
     },
-    v = e => {
+    E = e => {
         let {
             showNotificationBadge: t,
             ctaText: l,
             ctaOnClick: r,
-            analyticsPage: v,
-            linkText: S = g.intl.string(g.t.XRdyjz),
-            cardAlignment: j = E.START,
+            analyticsPage: E,
+            linkText: S = y.intl.string(y.t.XRdyjz),
+            cardAlignment: j = v.START,
             className: T
         } = e, {
             balance: C
@@ -39,25 +39,25 @@ let E = {
         (0, o.j)(!_);
         let M = n.useCallback(() => {
                 let e = !_;
-                e && null != v && (0, p.Y)({
-                    pageType: v,
-                    sectionType: y.JJy.ORBS_BALANCE_MENU,
-                    ctaObject: y.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
+                e && null != E && (0, p.Y)({
+                    pageType: E,
+                    sectionType: g.JJy.ORBS_BALANCE_MENU,
+                    ctaObject: g.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
                 }), R(e ? h.k.SELECTED : h.k.DEFAULT), k(e)
-            }, [_, v]),
+            }, [_, E]),
             O = n.useCallback(() => {
                 _ && M()
             }, [_, M]),
             L = (0, s.A)(null, O),
             B = n.useMemo(() => (0, a.jsx)(x.b, {
-                analyticsPage: v,
+                analyticsPage: E,
                 ctaText: l,
                 ctaOnClick: () => {
                     M(), r()
                 },
                 linkText: S
-            }), [v, l, S, M, r]),
-            U = n.useMemo(() => (0, a.jsx)(u.A, {
+            }), [E, l, S, M, r]),
+            w = n.useMemo(() => (0, a.jsx)(u.A, {
                 targetElementRef: D,
                 shouldShow: _,
                 onRequestClose: M,
@@ -80,7 +80,7 @@ let E = {
                 },
                 onClick: M,
                 showNotificationBadge: t
-            }), P ? U : _ && (0, a.jsx)("div", {
+            }), P ? w : _ && (0, a.jsx)("div", {
                 className: i()(f.Ui, j, {
                     [f.R]: I,
                     [f.RK]: !I
@@ -90,4 +90,4 @@ let E = {
             })]
         })
     };
-v.CardAlignment = E
+E.CardAlignment = v
