@@ -1,32 +1,32 @@
 /** chunk id: 251637 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     A: () => d
-}), s(134528), s(947204);
-var l = s(627968);
-s(64700);
-var n = s(503698),
-    a = s.n(n),
-    i = s(827734),
-    r = s(397927),
-    o = s(890687),
-    u = s(191065),
-    c = s(950203);
+}), n(134528), n(947204);
+var l = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    i = n(827734),
+    r = n(397927),
+    o = n(890687),
+    u = n(191065),
+    c = n(950203);
 let d = function(e) {
     let {
         className: t,
-        color: s = i.A.colors.WHITE,
-        quest: n,
+        color: n = i.A.colors.WHITE,
+        quest: s,
         isInventory: d
     } = e, m = (0, o.aC)(e.quest), {
         percentComplete: A,
         completedRatioDisplay: p
-    } = (0, o.O9)(n);
+    } = (0, o.O9)(s);
     return !d && m.length > 0 ? (0, l.jsx)(u.A, {
         children: m.at(0)
     }) : (0, l.jsxs)("div", {
         className: a()(c.iE, t),
         style: {
-            color: s.css
+            color: n.css
         },
         children: [(0, l.jsxs)("div", {
             className: c.O,

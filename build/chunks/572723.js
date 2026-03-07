@@ -14,9 +14,9 @@ var n = i(627968),
     m = i(565150),
     h = i(521502),
     p = i(851023),
-    x = i(349688),
-    v = i(914905),
-    f = i(176634),
+    f = i(349688),
+    x = i(914905),
+    v = i(176634),
     g = i(101555),
     b = i(386976),
     j = i(32523),
@@ -58,27 +58,27 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "39874b40750546f90bc8be75e7cc24cdb5374cd5" !== e.body.hash) {
-                let e = new Date("1772854347827"),
+            if (null != e.body && "a83da5543b7af90602c5deef356fff3714f8f3b9" !== e.body.hash) {
+                let e = new Date("1772898458773"),
                     t = new Date,
                     i = (0, S.Tf)(t, e);
                 i.hours > 6 && ep(i.hours)
             }
         })
     }, []);
-    let ex = (0, r.bG)([_.default], () => {
+    let ef = (0, r.bG)([_.default], () => {
             let e = _.default.getCurrentUser();
             return e?.isStaff() || e?.isStaffPersonal()
         }),
-        ev = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
+        ex = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
         {
-            overridesInfo: ef
+            overridesInfo: ev
         } = (0, j.hI)(),
         {
             overridesInfo: eg
         } = (0, b.op)(),
         eb = Object.entries({
-            ...ef,
+            ...ev,
             ...eg
         }).map(e => {
             let [t, {
@@ -105,7 +105,7 @@ function L(e) {
                 priority: D,
                 feature: e,
                 url: V,
-                buildOverride: ev?.id ?? null,
+                buildOverride: ex?.id ?? null,
                 experimentOverrides: eb
             }, !0 === U ? {
                 overridePlatformInformation: U,
@@ -118,7 +118,7 @@ function L(e) {
             } : {
                 overridePlatformInformation: U
             }, t).catch(() => em(!0));
-        ed(!1), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
+        ed(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
             let {
                 default: e
             } = await i.e("71256").then(i.bind(i, 369323));
@@ -132,13 +132,13 @@ function L(e) {
         async function e() {
             K(await (0, k.xt)())
         }
-        ex && e()
-    }, [ex]), a.useEffect(() => {
+        ef && e()
+    }, [ef]), a.useEffect(() => {
         W.length > 0 && N.current?.scrollIntoView({
             behavior: "smooth",
             block: "end"
         })
-    }, [W]), (0, f.A)({
+    }, [W]), (0, v.A)({
         onPasteFiles: a.useCallback(e => {
             let t = Array.from(e).filter(e => e.type.startsWith("image/")).at(0);
             void 0 !== t && Y(e => e.some(e => e.filename === t.name && e.item.file?.size === t.size) ? e : [...e, new m.Ay({
@@ -163,7 +163,7 @@ function L(e) {
             autoFocus: !1
         }, {
             variant: "primary",
-            text: ex ? "Submit and Open Report" : "Submit Report",
+            text: ef ? "Submit and Open Report" : "Submit Report",
             loading: eu,
             onClick: ej,
             autoFocus: !1
@@ -172,7 +172,7 @@ function L(e) {
         children: (0, n.jsxs)("div", {
             children: [(0, n.jsxs)(d.BJc, {
                 gap: 8,
-                children: [null != ev && (0, n.jsxs)(d.wx6, {
+                children: [null != ex && (0, n.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -181,11 +181,11 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.format(E.t["yY60+7"], {
                             buildOverrideHook: () => (0, n.jsx)("b", {
-                                children: ev?.id
+                                children: ex?.id
                             })
                         })
                     })]
-                }), null == ev && null != eh && (0, n.jsxs)(d.wx6, {
+                }), null == ex && null != eh && (0, n.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -196,7 +196,7 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.string(E.t.x18RUs)
                     })]
-                }), ex && Object.keys(eb).length > 0 && (0, n.jsxs)(d.wx6, {
+                }), ef && Object.keys(eb).length > 0 && (0, n.jsxs)(d.wx6, {
                     type: "warning",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -229,7 +229,7 @@ function L(e) {
                     placeholder: "What did you expect to see?",
                     value: I,
                     onChange: R,
-                    description: ex ? "You can add additional information/media on the ticket after submitting" : void 0,
+                    description: ef ? "You can add additional information/media on the ticket after submitting" : void 0,
                     autosize: !0
                 }), (0, n.jsx)(o.Te, {
                     label: E.intl.string(E.t.xMXLda),
@@ -273,7 +273,7 @@ function L(e) {
                     maxVisibleItems: 4,
                     closeOnSelect: !0,
                     "data-migration-pending": !0
-                }), ex && (0, n.jsx)(d.ZiE, {
+                }), ef && (0, n.jsx)(d.ZiE, {
                     selectionMode: "single",
                     label: E.intl.string(E.t["77VVd8"]),
                     value: $,
@@ -358,8 +358,8 @@ function L(e) {
                         children: W.length > 0 && W.map(e => (0, n.jsxs)("div", {
                             className: A.oh,
                             children: [(0, n.jsxs)("div", {
-                                children: [(0, n.jsx)(v.J, {
-                                    size: x.L.SMALL,
+                                children: [(0, n.jsx)(x.J, {
+                                    size: f.L.SMALL,
                                     upload: e
                                 }), (0, n.jsx)("div", {
                                     className: A.eA,

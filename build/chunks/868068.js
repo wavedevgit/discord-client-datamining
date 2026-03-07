@@ -1,11 +1,11 @@
 /** chunk id: 868068 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     K: () => r,
     O: () => i
 });
-var l = s(56562),
-    n = s(927813),
-    a = s(652215);
+var l = n(56562),
+    s = n(927813),
+    a = n(652215);
 let i = {
         None: void 0,
         Terraria: {
@@ -25,7 +25,7 @@ let i = {
             windowHandle: "13229",
             fullscreenType: l.aI.BORDERLESS_FULLSCREEN,
             isLauncher: !1,
-            start: Date.now() - n.A.Millis.HOUR,
+            start: Date.now() - s.A.Millis.HOUR,
             distributor: a.d3x.STEAM
         }
     },

@@ -1,22 +1,22 @@
 /** chunk id: 485599 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     A: () => o
 });
-var l = s(627968);
-s(64700);
-var n = s(503698),
-    a = s.n(n),
-    i = s(397927),
-    r = s(284337);
+var l = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    i = n(397927),
+    r = n(284337);
 
 function o(e) {
     let {
         children: t,
-        className: s
+        className: n
     } = e;
     return (0, l.jsx)(i.Text, {
         color: "none",
-        className: a()(r.D, s),
+        className: a()(r.D, n),
         variant: "text-md/medium",
         children: t
     })

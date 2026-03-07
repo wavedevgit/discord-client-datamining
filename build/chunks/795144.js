@@ -25,8 +25,7 @@ function c(n) {
                     ...e,
                     channelId: n.id,
                     heading: c ? s.intl.string(s.t.xXYKiP) : s.intl.string(s.t.dilOF6),
-                    formTitle: c ? s.intl.string(s.t.OCAkGP) : s.intl.string(s.t["621LJD"]),
-                    allowReset: !1
+                    formTitle: c ? s.intl.string(s.t.OCAkGP) : s.intl.string(s.t["621LJD"])
                 })
             })
         }

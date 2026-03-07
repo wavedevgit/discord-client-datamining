@@ -1,36 +1,36 @@
 /** chunk id: 361311 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     A: () => o
 });
-var l = s(627968);
-s(64700);
-var n = s(397927),
-    a = s(429913),
-    i = s(102876),
-    r = s(985018);
+var l = n(627968);
+n(64700);
+var s = n(397927),
+    a = n(429913),
+    i = n(102876),
+    r = n(985018);
 
 function o(e) {
     let {
         applicationIds: t
-    } = e, s = (0, a.A)(t).filter(e => null != e);
-    if (0 === s.length) return null;
+    } = e, n = (0, a.A)(t).filter(e => null != e);
+    if (0 === n.length) return null;
     let o = null;
-    if (1 === s.length) o = r.intl.format(r.t.wQ6urw, {
+    if (1 === n.length) o = r.intl.format(r.t.wQ6urw, {
         applicationName: () => (0, l.jsx)(i.A, {
-            application: s[0]
-        }, s[0].id)
+            application: n[0]
+        }, n[0].id)
     });
-    else if (2 === s.length) o = r.intl.format(r.t.C98CSN, {
+    else if (2 === n.length) o = r.intl.format(r.t.C98CSN, {
         applicationName: () => (0, l.jsx)(i.A, {
-            application: s[0]
-        }, s[0].id),
+            application: n[0]
+        }, n[0].id),
         applicationName2: () => (0, l.jsx)(i.A, {
-            application: s[1]
-        }, s[1].id)
+            application: n[1]
+        }, n[1].id)
     });
     else {
-        let e = s[s.length - 1],
-            t = s.slice(0, -1);
+        let e = n[n.length - 1],
+            t = n.slice(0, -1);
         o = r.intl.format(r.t.UxpwAh, {
             applications: () => t.map(e => (0, l.jsx)(i.A, {
                 application: e,
@@ -41,7 +41,7 @@ function o(e) {
             }, e.id)
         })
     }
-    return (0, l.jsx)(n.Text, {
+    return (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: o
     })

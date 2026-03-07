@@ -1,27 +1,27 @@
 /** chunk id: 311243 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     A: () => c
 });
-var l = s(627968);
-s(64700);
-var n = s(503698),
-    a = s.n(n),
-    i = s(397927),
-    r = s(714510),
-    o = s(646764),
-    u = s(96373);
+var l = n(627968);
+n(64700);
+var s = n(503698),
+    a = n.n(s),
+    i = n(397927),
+    r = n(714510),
+    o = n(646764),
+    u = n(96373);
 let c = function(e) {
     let {
         className: t,
-        autoplay: s,
-        quest: n,
+        autoplay: n,
+        quest: s,
         questContent: c,
         taskDetails: d,
         location: m,
         sourceQuestContent: A,
         gameProfileSource: p
-    } = e, x = (0, r.mU)({
-        quest: n,
+    } = e, h = (0, r.mU)({
+        quest: s,
         taskDetails: d,
         location: m,
         questContent: c,
@@ -31,9 +31,9 @@ let c = function(e) {
     return (0, l.jsxs)("div", {
         className: a()(u.iE, t),
         children: [(0, l.jsx)(o.A, {
-            autoplay: s,
+            autoplay: n,
             className: u.Qq,
-            quest: n,
+            quest: s,
             questContent: c,
             sourceQuestContent: A
         }), (0, l.jsx)("div", {
@@ -41,7 +41,7 @@ let c = function(e) {
             children: (0, l.jsx)(i.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: x
+                children: h
             })
         })]
     })

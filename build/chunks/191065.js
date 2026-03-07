@@ -1,34 +1,34 @@
 /** chunk id: 191065 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     A: () => o
 });
-var l = s(627968),
-    n = s(64700),
-    a = s(827734),
-    i = s(397927),
-    r = s(838839);
-let o = n.forwardRef(function(e, t) {
+var l = n(627968),
+    s = n(64700),
+    a = n(827734),
+    i = n(397927),
+    r = n(838839);
+let o = s.forwardRef(function(e, t) {
     let {
-        isInventory: s,
-        style: n,
+        isInventory: n,
+        style: s,
         children: o
     } = e;
     return (0, l.jsxs)("div", {
         ref: t,
         className: r.Q,
         style: {
-            marginTop: 8 * !!s,
-            ...n
+            marginTop: 8 * !!n,
+            ...s
         },
         children: [(0, l.jsx)(i.mir, {
             size: "custom",
             className: r.G,
-            height: s ? 16 : 12,
-            width: s ? 16 : 12,
-            color: s ? a.A.colors.TEXT_MUTED.css : a.A.colors.WHITE.css
+            height: n ? 16 : 12,
+            width: n ? 16 : 12,
+            color: n ? a.A.colors.TEXT_MUTED.css : a.A.colors.WHITE.css
         }), (0, l.jsx)(i.Text, {
-            color: s ? "text-muted" : "always-white",
-            variant: s ? "text-xs/normal" : "text-xxs/normal",
+            color: n ? "text-muted" : "always-white",
+            variant: n ? "text-xs/normal" : "text-xxs/normal",
             children: o
         })]
     })

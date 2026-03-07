@@ -1,10 +1,10 @@
 /** chunk id: 603047 params = (module,exports,require) **/
-s.d(t, {
+n.d(t, {
     A: () => o
 });
-var l = s(311907),
-    n = s(73153),
-    a = s(868068);
+var l = n(311907),
+    s = n(73153),
+    a = n(868068);
 let i = "None";
 class r extends l.Ay.Store {
     static displayName = "ContentInventoryDevToolsStore";
@@ -15,7 +15,7 @@ class r extends l.Ay.Store {
         return a.O[i]
     }
 }
-let o = new r(n.h, {
+let o = new r(s.h, {
     CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
         let {
             gameToShow: t
