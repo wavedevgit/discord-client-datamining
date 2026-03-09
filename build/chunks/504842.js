@@ -12,7 +12,7 @@ var l = n(627968),
     d = n(582754),
     c = n(397927),
     u = n(736653),
-    m = n(607470),
+    m = n(303136),
     h = n(947094),
     x = n(919577),
     g = n(892110),
@@ -83,10 +83,7 @@ function I(e) {
             size: 10
         }), (0, l.jsx)(m.A, {
             className: C.Ki,
-            src: i,
-            autoPlay: !0,
-            loop: !0,
-            muted: !0
+            src: i
         }), (0, l.jsx)(c.hKd, {
             size: 10
         }), (0, l.jsx)("div", {

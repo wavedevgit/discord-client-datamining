@@ -25,7 +25,7 @@ function A(e) {
         guildId: t
     } = e, A = (0, u.A)(t), p = s.useRef(null), {
         analyticsLocations: C
-    } = (0, d.Ay)(r.A.GAME_SERVER_PAGE), N = s.useCallback(() => {
+    } = (0, d.Ay)(r.A.GAME_SERVER_PAGE), b = s.useCallback(() => {
         let e = o.A.getGuild(t);
         null != e && (0, c.g)({
             analyticsLocation: {
@@ -36,9 +36,9 @@ function A(e) {
             analyticsLocations: C,
             guild: e
         })
-    }, [t, C]), b = s.useCallback(() => {
+    }, [t, C]), I = s.useCallback(() => {
         (0, m.A)(t, r.A.GAME_SERVER_PAGE, f.W5)
-    }, [t]), I = s.useCallback(() => {
+    }, [t]), N = s.useCallback(() => {
         (0, l.mMO)(async () => {
             let {
                 default: e
@@ -78,22 +78,22 @@ function A(e) {
                     children: [(0, a.jsx)(l.Button, {
                         variant: "expressive",
                         text: h.intl.string(h.t.LhlgY9),
-                        onClick: b
+                        onClick: I
                     }), (0, a.jsx)(l.Button, {
                         variant: "secondary",
                         text: h.intl.string(v.default.fxIXv4),
-                        onClick: I
+                        onClick: N
                     })]
                 }) : (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(l.Button, {
                         variant: "expressive",
                         icon: l._Jp,
                         text: h.intl.string(v.default["968/QC"]),
-                        onClick: N
+                        onClick: b
                     }), (0, a.jsx)(l.Button, {
                         variant: "secondary",
                         text: h.intl.string(v.default.fxIXv4),
-                        onClick: I
+                        onClick: N
                     })]
                 })
             })]

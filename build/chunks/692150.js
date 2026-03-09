@@ -22,9 +22,9 @@ var a = n(627968),
     A = n(270424),
     p = n(140033),
     C = n(486180),
-    N = n(566704),
-    b = n(652215),
-    I = n(738072),
+    b = n(566704),
+    I = n(652215),
+    N = n(738072),
     E = n(985018),
     S = n(192150);
 
@@ -34,8 +34,8 @@ function T(e) {
     } = e;
     (0, f.tR)(t);
     let n = (0, g.U)("GameServerPage"),
-        T = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(b.GuildFeatures.GAME_SERVERS) ?? !1);
-    (0, N.A)(T ? t : null), s.useEffect(() => {
+        T = (0, l.bG)([u.A], () => u.A.getGuild(t)?.features.has(I.GuildFeatures.GAME_SERVERS) ?? !1);
+    (0, b.A)(T ? t : null), s.useEffect(() => {
         T && ((0, x.cq)(t), d.A.getDetectableGames())
     }, [t, T]);
     let y = (0, _.A)(t),
@@ -49,9 +49,9 @@ function T(e) {
                 instance: e
             }, `${e.gameId}-${n}`))
         }, [M?.instances, M?.hasFetchedInstances, t]),
-        [k, L] = s.useState(!1);
+        [k, D] = s.useState(!1);
     return s.useEffect(() => {
-        (null == G || G.length > 0) && L(!0)
+        (null == G || G.length > 0) && D(!0)
     }, [G]), (0, a.jsxs)("div", {
         className: S.kL,
         children: [(0, a.jsxs)(c.Ay, {
@@ -61,7 +61,7 @@ function T(e) {
                 icon: i.GameControllerIcon,
                 "aria-label": ""
             }), (0, a.jsx)(c.Ay.Title, {
-                children: E.intl.string(I.default.vCzwM7)
+                children: E.intl.string(N.default.vCzwM7)
             }), (0, a.jsx)(r.LpS, {
                 disableColor: !0,
                 text: E.intl.string(E.t.oW0eUd),
@@ -71,8 +71,8 @@ function T(e) {
             }), (0, a.jsx)(r.Text, {
                 variant: "text-sm/normal",
                 color: "text-muted",
-                children: E.intl.format(I.default.LiR4eN, {
-                    helpCenterUrl: m.A.getArticleURL(b.MVz.GAME_SERVER_HOSTING)
+                children: E.intl.format(N.default.LiR4eN, {
+                    helpCenterUrl: m.A.getArticleURL(I.MVz.GAME_SERVER_HOSTING)
                 })
             })]
         }), (0, a.jsxs)("div", {
@@ -90,7 +90,7 @@ function T(e) {
                     className: S.MR,
                     children: (0, a.jsx)(o.A, {
                         look: o.k.WARNING,
-                        children: E.intl.format(I.default.XzXjK2, {})
+                        children: E.intl.format(N.default.XzXjK2, {})
                     })
                 }), (0, a.jsx)(r.IpV, {
                     children: (0, a.jsxs)("div", {

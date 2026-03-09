@@ -22,9 +22,9 @@ var a = n(627968),
     A = n(397400),
     p = n(165655),
     C = n(496587),
-    N = n(684610),
-    b = n(500897),
-    I = n(225180),
+    b = n(684610),
+    I = n(500897),
+    N = n(225180),
     E = n(117265),
     S = n(365003),
     T = n(680127),
@@ -34,7 +34,7 @@ var a = n(627968),
     G = n(985018),
     k = n(70463);
 
-function L(e) {
+function D(e) {
     let {
         guildId: t,
         instance: n
@@ -52,7 +52,7 @@ function L(e) {
     })
 }
 
-function D(e) {
+function L(e) {
     return (0, a.jsx)(u.Button, {
         fullWidth: !0,
         text: G.intl.string(M.default.tkbVdf),
@@ -130,7 +130,7 @@ function F(e) {
     }, [n, V, F, t, w?.name]), {
         handleCopyServerIp: Y,
         animateCopyIcon: H
-    } = (0, b.A)(t, n.id, m.A.GAME_SERVER_GAME, i ?? ""), K = (0, I.A)(n.gameId, "cover"), Z = (0, h.A)(t), $ = s.useCallback(() => {
+    } = (0, I.A)(t, n.id, m.A.GAME_SERVER_GAME, i ?? ""), K = (0, N.A)(n.gameId, "cover"), Z = (0, h.A)(t), $ = s.useCallback(() => {
         (0, A.f7)(t, n.id), (0, v.h)({
             href: n.gameServerPanelUrl ?? ""
         })
@@ -138,10 +138,10 @@ function F(e) {
         switch (n.status) {
             case r.M.SLEEPING:
                 return (0, a.jsxs)(a.Fragment, {
-                    children: [(0, a.jsx)(L, {
+                    children: [(0, a.jsx)(D, {
                         guildId: t,
                         instance: n
-                    }), Z && (0, a.jsx)(D, {
+                    }), Z && (0, a.jsx)(L, {
                         onClick: $,
                         disabled: null == n.gameServerPanelUrl
                     })]
@@ -152,7 +152,7 @@ function F(e) {
                 return (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(P, {
                         onClick: q
-                    }), Z && (0, a.jsx)(D, {
+                    }), Z && (0, a.jsx)(L, {
                         onClick: $,
                         disabled: null == n.gameServerPanelUrl
                     })]
@@ -166,7 +166,7 @@ function F(e) {
                     disabled: !0
                 });
             case r.M.DELETED:
-                return Z ? (0, a.jsx)(D, {
+                return Z ? (0, a.jsx)(L, {
                     onClick: $,
                     disabled: null == n.gameServerPanelUrl
                 }) : (0, a.jsx)(P, {
@@ -340,7 +340,7 @@ function F(e) {
             })]
         }), Z && (0, a.jsx)("div", {
             className: k.overflowMenu,
-            children: (0, a.jsx)(N.A, {
+            children: (0, a.jsx)(b.A, {
                 guildId: t,
                 instance: n
             })

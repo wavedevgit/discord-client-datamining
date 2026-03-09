@@ -39,11 +39,11 @@ function A(e) {
     }, [t, p]);
     let {
         catalog: C,
-        instances: N
+        instances: b
     } = s.useMemo(() => ({
         catalog: Object.values(A?.catalog ?? {}),
         instances: Object.values(A?.instances ?? {})
-    }), [A?.catalog, A?.instances]), b = N.length >= f.ZI;
+    }), [A?.catalog, A?.instances]), I = b.length >= f.ZI;
     return 0 === C.length ? (0, a.jsx)("div", {
         className: h.kL,
         children: (0, a.jsx)(d.y$y, {
@@ -56,7 +56,7 @@ function A(e) {
             className: h.R_,
             variant: "heading-md/semibold",
             children: v.intl.string(n ? g.default["3vWDMz"] : g.default.Uvf9GK)
-        }), n && b && (0, a.jsx)("div", {
+        }), n && I && (0, a.jsx)("div", {
             className: h.Bq,
             children: (0, a.jsx)(_.k, {})
         }), (0, a.jsx)(i.IpV, {
@@ -80,7 +80,7 @@ function A(e) {
                         }),
                         imageClassName: h.Sl,
                         titleClassName: h.DD,
-                        variant: b || e.disabled ? m.e.DISABLED : m.e.CLICKABLE,
+                        variant: I || e.disabled ? m.e.DISABLED : m.e.CLICKABLE,
                         location: c.A.GAME_SERVER_PAGE_SIDEBAR
                     })
                 }, `sidebar-game-${s}-${e.id}`) : (0, a.jsx)(m.A, {

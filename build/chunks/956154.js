@@ -1,54 +1,34 @@
 /** chunk id: 956154 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => f
 });
 var a = n(627968);
 n(64700);
-var s = n(311907),
-    i = n(397927),
-    l = n(736653),
-    r = n(775602),
-    d = n(607470),
-    c = n(676279),
-    o = n(529631),
-    u = n(193775),
-    m = n(896943),
-    _ = n(233914),
-    x = n(383785),
-    f = n(228165),
-    g = n(587228);
+var s = n(397927),
+    i = n(736653),
+    l = n(303136),
+    r = n(676279),
+    d = n(529631),
+    c = n(193775),
+    o = n(896943),
+    u = n(233914),
+    m = n(383785),
+    _ = n(228165),
+    x = n(587228);
 
-function v(e) {
-    let t, {
-            className: n
-        } = e,
-        v = (0, s.bG)([r.A], () => r.A.useReducedMotion),
-        h = (0, l.Ay)(),
-        j = (0, i.qB1)(h);
-    if (v) {
-        let e = j ? g.A : _.A;
-        return (0, a.jsxs)("div", {
-            className: n,
-            children: [(0, a.jsx)("div", {
-                className: o.YL
-            }), (0, a.jsx)("img", {
-                src: e,
-                alt: ""
-            })]
-        })
-    }
-    return t = (0, c.TM)() ? j ? x.A : u.A : j ? f.A : m.A, (0, a.jsxs)("div", {
-        className: n,
+function f(e) {
+    let {
+        className: t
+    } = e, n = (0, i.Ay)(), f = (0, s.qB1)(n), g = f ? x.A : u.A, v = (0, r.TM)() ? f ? m.A : c.A : f ? _.A : o.A;
+    return (0, a.jsxs)("div", {
+        className: t,
         children: [(0, a.jsx)("div", {
-            className: o.YL
-        }), (0, a.jsx)(d.A, {
-            muted: !0,
-            autoPlay: !0,
-            playsInline: !0,
-            loop: !0,
+            className: d.YL
+        }), (0, a.jsx)(l.A, {
+            fallbackImage: g,
             children: (0, a.jsx)("source", {
-                src: t
+                src: v
             })
-        }, t)]
+        }, v)]
     })
 }
