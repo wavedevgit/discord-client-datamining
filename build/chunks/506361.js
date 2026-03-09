@@ -1,31 +1,31 @@
 /** chunk id: 506361 params = (module,exports,require) **/
-a.d(t, {
+r.d(t, {
     A: () => c
 });
-var r = a(627968);
-a(64700);
-var s = a(158954),
-    n = a(827734),
-    o = a(309326),
-    i = a(337322),
-    l = a(870487);
+var a = r(627968);
+r(64700);
+var s = r(158954),
+    n = r(827734),
+    o = r(309326),
+    i = r(337322),
+    l = r(870487);
 
 function c(e) {
     let {
         powerup: t
-    } = e, a = (0, i.A)(t);
-    return (0, r.jsx)("div", {
+    } = e, r = (0, i.A)(t);
+    return (0, a.jsx)("div", {
         className: l.kL,
-        children: a.map(e => {
+        children: r.map(e => {
             let {
                 Icon: t
             } = (0, o.a)(e.perkIcon, !1);
-            return (0, r.jsxs)("div", {
+            return (0, a.jsxs)("div", {
                 className: l.d_,
-                children: [(0, r.jsx)(t, {
+                children: [(0, a.jsx)(t, {
                     color: n.A.colors.TEXT_MUTED,
                     className: l.Kk
-                }), (0, r.jsx)(s.EYj, {
+                }), (0, a.jsx)(s.EYj, {
                     className: l.Qq,
                     color: "text-muted",
                     variant: "text-sm/medium",

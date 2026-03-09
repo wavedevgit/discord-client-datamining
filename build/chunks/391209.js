@@ -1,74 +1,74 @@
 /** chunk id: 391209 params = (module,exports,require) **/
-a.d(t, {
+r.d(t, {
     A: () => b
 });
-var r = a(627968),
-    s = a(64700),
-    n = a(503698),
-    o = a.n(n),
-    i = a(397927),
-    l = a(503852),
-    c = a(363487),
-    d = a(998418),
-    u = a(193157),
-    p = a(439156),
-    _ = a(568065),
-    m = a(985018),
-    I = a(143175),
-    f = a(107836);
+var a = r(627968),
+    s = r(64700),
+    n = r(503698),
+    o = r.n(n),
+    i = r(397927),
+    l = r(503852),
+    c = r(363487),
+    d = r(998418),
+    u = r(193157),
+    p = r(439156),
+    _ = r(568065),
+    m = r(985018),
+    f = r(143175),
+    I = r(107836);
 
 function b(e) {
     let {
         guildId: t,
-        powerup: a,
+        powerup: r,
         onClose: n,
         ...b
-    } = e, [k, x] = s.useState(void 0), T = (0, d.Ay)(t, a), v = T.type === _.b_.TIER_OVERRIDE_ACTIVATED, A = (0, c.A)(t), E = null == T.sourceEntitlement || !A;
-    return (0, l.Z)(t, a, l.q.DETAIL), (0, r.jsxs)(i.EOs, {
+    } = e, [k, x] = s.useState(void 0), v = (0, d.Ay)(t, r), T = v.type === _.b_.TIER_OVERRIDE_ACTIVATED, A = (0, c.A)(t), E = null == v.sourceEntitlement || !A;
+    return (0, l.Z)(t, r, l.q.DETAIL), (0, a.jsxs)(i.EOs, {
         "data-migration-pending": !0,
-        className: I.yl,
+        className: f.yl,
         size: i.rIJ.DYNAMIC,
         ...b,
         parentComponent: "GuildPowerupLevelModal",
-        children: [(0, r.jsxs)(i.$mQ, {
+        children: [(0, a.jsxs)(i.$mQ, {
             "data-migration-pending": !0,
-            className: I._F,
+            className: f._F,
             scrollbarType: "none",
-            children: [(0, r.jsx)("img", {
+            children: [(0, a.jsx)("img", {
                 alt: "",
-                src: f,
-                className: I.v5
-            }), (0, r.jsxs)("div", {
-                className: I.hQ,
-                children: [(0, r.jsx)(i.Heading, {
+                src: I,
+                className: f.v5
+            }), (0, a.jsxs)("div", {
+                className: f.hQ,
+                children: [(0, a.jsx)(i.Heading, {
                     variant: "heading-xl/extrabold",
-                    children: a.title
-                }), (0, r.jsx)(u.A, {
-                    powerup: a
-                }), null != k && (0, r.jsx)(i.Text, {
+                    children: r.title
+                }), (0, a.jsx)(u.A, {
+                    powerup: r
+                }), null != k && (0, a.jsx)(i.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/semibold",
                     children: k
-                }), (0, r.jsxs)("div", {
-                    className: o()(I.qr, {
-                        [I.r9]: E
+                }), (0, a.jsxs)("div", {
+                    className: o()(f.qr, {
+                        [f.r9]: E
                     }),
-                    children: [!v && A && (0, r.jsx)(p.A, {
+                    children: [!T && A && (0, a.jsx)(p.A, {
                         guildId: t,
-                        powerup: a,
+                        powerup: r,
                         onError: x,
                         grow: !1,
                         compact: !E
-                    }), (0, r.jsx)(i.Button, {
+                    }), (0, a.jsx)(i.Button, {
                         variant: E ? "secondary" : "primary",
                         onClick: n,
                         text: m.intl.string(m.t.cpT0Cq)
                     })]
                 })]
             })]
-        }), (0, r.jsx)(i.s_y, {
+        }), (0, a.jsx)(i.s_y, {
             "data-migration-pending": !0,
-            className: I.VN,
+            className: f.VN,
             onClick: n
         })]
     })
