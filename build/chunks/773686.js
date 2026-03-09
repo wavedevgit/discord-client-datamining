@@ -37,7 +37,7 @@ let g = new i.A("Guilds"),
         };
         handleBackgroundSync(e, t) {
             for (let n of e.guilds) {
-                if ("unavailable" === n.data_mode) return;
+                if ("unavailable" === n.data_mode) continue;
                 let e = o.A.getGuild(n.id);
                 if (null != e) {
                     let i = r.A.getUnsafeMutableRoles(n.id),
@@ -47,7 +47,8 @@ let g = new i.A("Guilds"),
             }
         }
         handleConnectionOpen(e, t) {
-            for (let n of (this.clear(t), e.guilds)) this.putOne(n, t)
+            let n = [...e.guilds.map(e => e.id), ...e.unavailableGuilds];
+            for (let i of (_.A.guildsTransaction(t).deleteAllExcept(n), e.guilds)) this.putOne(i, t)
         }
         handleGuildCreate(e, t) {
             this.putOne(e.guild, t)
@@ -112,8 +113,5 @@ let g = new i.A("Guilds"),
         }
         delete(e, t) {
             _.A.guildsTransaction(t).delete(e)
-        }
-        clear(e) {
-            _.A.guildsTransaction(e).delete()
         }
     }
