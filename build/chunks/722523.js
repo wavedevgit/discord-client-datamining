@@ -64,20 +64,22 @@ function f(e) {
         className: t,
         guildId: n,
         powerup: s,
-        onError: r
+        expressiveCta: r,
+        onError: o
     } = e, {
-        showToggleButton: o,
-        isPowerupActive: d
-    } = (0, a.A)(n, s), u = !d;
+        showToggleButton: d,
+        isPowerupActive: u
+    } = (0, a.A)(n, s), h = !u;
     return (0, i.jsxs)("div", {
         className: l()(p.kL, t),
-        children: [o && (0, i.jsx)(c.A, {
+        children: [d && (0, i.jsx)(c.A, {
             guildId: n,
             powerup: s,
-            onError: r,
-            grow: u,
-            compact: !u
-        }), d && (0, i.jsx)(g, {
+            onError: o,
+            grow: h,
+            compact: !h,
+            expressiveCta: r
+        }), u && (0, i.jsx)(g, {
             guildId: n,
             powerup: s
         })]

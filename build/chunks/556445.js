@@ -18,8 +18,8 @@ function o(t) {
         source: u,
         size: c = "sm",
         variant: m = "secondary",
-        onAction: p,
-        ...A
+        onAction: A,
+        ...p
     } = t, {
         tooltip: h,
         loading: g,
@@ -33,12 +33,12 @@ function o(t) {
             size: c,
             variant: m,
             onClick: () => {
-                p?.(), T()
+                A?.(), T()
             },
             disabled: f,
             loading: g,
             "aria-label": h ?? e.name,
-            ...A
+            ...p
         })
     })
 }

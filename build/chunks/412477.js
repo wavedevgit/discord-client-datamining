@@ -5,8 +5,8 @@ i.d(t, {
 var n = i(627968),
     s = i(64700),
     l = i(503698),
-    r = i.n(l),
-    a = i(990078),
+    a = i.n(l),
+    r = i(990078),
     d = i(397927),
     o = i(493939);
 let u = s.memo(function(e) {
@@ -16,8 +16,8 @@ let u = s.memo(function(e) {
         absolute: s = !1
     } = e;
     return (0, n.jsx)("div", {
-        className: r()(o.TP, s && o.ys),
-        children: (0, n.jsx)(a.m, {
+        className: a()(o.TP, s && o.ys),
+        children: (0, n.jsx)(r.m, {
             text: t,
             children: (0, n.jsx)("div", {
                 children: (0, n.jsx)(i, {

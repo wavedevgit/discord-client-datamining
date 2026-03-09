@@ -12,8 +12,8 @@ var n = i(311907),
     u = i(734057),
     c = i(383501),
     m = i(287809),
-    p = i(977997),
-    A = i(607567),
+    A = i(977997),
+    p = i(607567),
     h = i(652215),
     g = i(806931);
 let f = new s.A,
@@ -25,7 +25,7 @@ function C(t, e, i) {
             userId: t.id,
             channelId: i
         }),
-        l = (0, A.RQ)(n, e ?? h.ME, t.id);
+        l = (0, p.RQ)(n, e ?? h.ME, t.id);
     f.set(t.id, l);
     let r = {
         type: g.lp.USER,
@@ -59,7 +59,7 @@ function E() {
     let e = u.A.getChannel(t)?.getGuildId(),
         i = !1;
     return v.forEach(n => {
-        if (null != p.A.getVoiceStateForChannel(t, n)) return void v.delete(n);
+        if (null != A.A.getVoiceStateForChannel(t, n)) return void v.delete(n);
         let l = m.default.getUser(n);
         null != l && (i = !0, v.delete(n), C(l, e, t))
     }), i
@@ -71,7 +71,7 @@ function x() {
 class y extends n.Ay.Store {
     static displayName = "RTCConnectionDesyncStore";
     initialize() {
-        this.waitFor(p.A, m.default, u.A, c.A), this.syncWith([m.default], E)
+        this.waitFor(A.A, m.default, u.A, c.A), this.syncWith([m.default], E)
     }
     get desyncedVoiceStatesCount() {
         return f.size()
@@ -119,7 +119,7 @@ let _ = new y(r.h, {
             context: r
         } = t;
         return r === l.x.DEFAULT && e.reduce((t, e) => {
-            if (null != p.A.getVoiceStateForChannel(n, e)) return t;
+            if (null != A.A.getVoiceStateForChannel(n, e)) return t;
             let l = m.default.getUser(e);
             return null == l ? (v.add(e), t) : (C(l, i, n), !0)
         }, !1)

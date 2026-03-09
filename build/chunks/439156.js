@@ -29,39 +29,40 @@ function x(e) {
         size: C,
         grow: E,
         className: I,
-        onError: N
+        expressiveCta: N,
+        onError: b
     } = e, {
-        onActivate: b,
-        isLoading: S,
-        error: T
+        onActivate: S,
+        isLoading: T,
+        error: v
     } = (0, A.A)(t, n), {
-        isLoading: v,
-        error: y
-    } = (0, u.A)(t, n), j = (0, m.A)(t, n), R = (0, h.Ay)(t, n), O = R.type !== p.b_.INACTIVE, {
-        disabled: L,
-        reason: M
-    } = (0, d.A)(t, n, O), D = null != M ? {
+        isLoading: y,
+        error: j
+    } = (0, u.A)(t, n), R = (0, m.A)(t, n), O = (0, h.Ay)(t, n), L = O.type !== p.b_.INACTIVE, {
+        disabled: M,
+        reason: D
+    } = (0, d.A)(t, n, L), G = null != D ? {
         title: null,
-        body: M
-    } : R.type === p.b_.LEVEL_ACTIVATED ? {
+        body: D
+    } : O.type === p.b_.LEVEL_ACTIVATED ? {
         title: _.intl.string(g.default["9oYuvb"]),
         body: _.intl.formatToPlainString(g.default.WRRYUT, {
-            perkName: R.sourcePowerup?.title ?? _.intl.string(_.t.BfF6ED)
+            perkName: O.sourcePowerup?.title ?? _.intl.string(_.t.BfF6ED)
         })
-    } : R.type === p.b_.POWERUP_ACTIVATED ? {
+    } : O.type === p.b_.POWERUP_ACTIVATED ? {
         title: _.intl.string(g.default.TZsu1U),
         body: _.intl.formatToPlainString(g.default["5HQUzD"], {
             boostCount: n.cost
         })
     } : null;
     return s.useEffect(() => {
-        N?.(T ?? y)
-    }, [T, y, N]), (0, i.jsx)(a.un, {
-        body: D?.body ?? "",
-        title: D?.title ?? void 0,
-        shouldShow: null != D,
+        b?.(v ?? j)
+    }, [v, j, b]), (0, i.jsx)(a.un, {
+        body: G?.body ?? "",
+        title: G?.title ?? void 0,
+        shouldShow: null != G,
         delay: 100,
-        "aria-label": null != M ? M : O ? _.intl.string(g.default.TZsu1U) : void 0,
+        "aria-label": null != D ? D : L ? _.intl.string(g.default.TZsu1U) : void 0,
         children: (0, i.jsx)("div", {
             className: r()(f.zr, {
                 [f._o]: E,
@@ -97,18 +98,18 @@ function x(e) {
                     }
                 }({
                     cost: n.cost,
-                    isActive: O,
+                    isActive: L,
                     compact: l,
                     iconSize: x
                 });
                 return (0, i.jsx)(o.$nd, {
-                    variant: O ? "secondary" : "primary",
-                    "aria-label": _.intl.string(O ? g.default.TZsu1U : g.default.gSxlHf),
-                    disabled: L,
+                    variant: L ? "secondary" : N ? "expressive" : "primary",
+                    "aria-label": _.intl.string(L ? g.default.TZsu1U : g.default.gSxlHf),
+                    disabled: M,
                     onClick: e => {
-                        e.stopPropagation(), O ? j() : b()
+                        e.stopPropagation(), L ? R() : S()
                     },
-                    loading: S || v,
+                    loading: T || y,
                     fullWidth: E,
                     size: C ?? (l ? "md" : void 0),
                     text: e,

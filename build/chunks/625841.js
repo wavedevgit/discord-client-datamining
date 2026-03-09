@@ -12,8 +12,8 @@ var n = i(627968),
     u = i(397927),
     c = i(827343),
     m = i(688810),
-    p = i(544028),
-    A = i(825468),
+    A = i(544028),
+    p = i(825468),
     h = i(347481),
     g = i(430452),
     f = i(74848),
@@ -31,8 +31,8 @@ function S(t) {
         label: y,
         ..._
     } = t, {
-        setDevice: N,
-        Icon: I,
+        setDevice: I,
+        Icon: N,
         getCanSetDevice: j,
         getWarningMessage: D,
         getLocation: P
@@ -42,7 +42,7 @@ function S(t) {
             Icon: u.cNw,
             getCanSetDevice: t => t.supports(T.O5.AUDIO_INPUT_DEVICE),
             getWarningMessage: () => v.intl.format(v.t["1iK6UW"], {
-                onDownloadClick: () => (0, A._)("Help Text Input Devices")
+                onDownloadClick: () => (0, p._)("Help Text Input Devices")
             }),
             getLocation: t => `${t}.SingleSelectInputDevices`
         },
@@ -51,7 +51,7 @@ function S(t) {
             Icon: u.LoC,
             getCanSetDevice: t => t.supports(T.O5.AUDIO_OUTPUT_DEVICE),
             getWarningMessage: () => v.intl.format(v.t.Ow0dbF, {
-                onDownloadClick: () => (0, A._)("Help Text Output Devices")
+                onDownloadClick: () => (0, p._)("Help Text Output Devices")
             }),
             getLocation: t => `${t}.SingleSelectOutputDevices`
         },
@@ -60,25 +60,25 @@ function S(t) {
             Icon: u.xpe,
             getCanSetDevice: t => t.isVideoAvailable() || !t.hasVideoDevice(),
             getWarningMessage: () => v.intl.format(v.t["1iK6UW"], {
-                onDownloadClick: () => (0, A._)("Help Text Video Devices")
+                onDownloadClick: () => (0, p._)("Help Text Video Devices")
             }),
             getLocation: t => `${t}.SingleSelectVideoDevices`
         }
     } [e], {
         analyticsLocations: U
-    } = (0, m.Ay)(), b = (0, a.bG)([p.A], () => p.A.theme), L = P(r), O = (0, f.tR)(e), {
+    } = (0, m.Ay)(), L = (0, a.bG)([A.A], () => A.A.theme), O = P(r), b = (0, f.tR)(e), {
         id: M
-    } = (0, f.x5)(e), R = (0, a.bG)([g.Ay], () => j(g.Ay)), V = (0, n.jsx)(u.po8, {
+    } = (0, f.x5)(e), R = (0, a.bG)([g.Ay], () => j(g.Ay)), G = (0, n.jsx)(u.po8, {
         messageType: u.YCn.WARNING,
         children: D()
     }), w = l.useCallback(t => {
-        (E?.(t) ?? !0) && N(t, {
-            location: L,
+        (E?.(t) ?? !0) && I(t, {
+            location: O,
             analyticsLocations: U
         })
-    }, [L, U, E, N]);
+    }, [O, U, E, I]);
 
-    function G(t) {
+    function V(t) {
         let e, l, {
                 label: r,
                 value: a
@@ -87,9 +87,9 @@ function S(t) {
             c = r,
             m = (0, f.d)(r);
         null != m && (c = m.prefix, e = m.subName);
-        let p = h.A.getCertifiedDeviceName(a, c);
+        let A = h.A.getCertifiedDeviceName(a, c);
         if (h.A.isCertified(a)) {
-            let t = (0, d.qB)(b) ? i(961392) : i(848672);
+            let t = (0, d.qB)(L) ? i(961392) : i(848672);
             l = (0, n.jsx)("img", {
                 src: t,
                 alt: v.intl.string(v.t.smSKsj)
@@ -102,7 +102,7 @@ function S(t) {
             }),
             children: [!x && (0, n.jsx)("div", {
                 className: C.Kt,
-                children: (0, n.jsx)(I, {
+                children: (0, n.jsx)(N, {
                     size: "custom",
                     width: 20,
                     height: 20,
@@ -113,7 +113,7 @@ function S(t) {
                 variant: "text-md/medium",
                 color: o ? "text-subtle" : "text-default",
                 className: C.hV,
-                children: p
+                children: A
             }), null != e && (0, n.jsx)(u.Text, {
                 lineClamp: 2,
                 variant: o ? "text-xs/medium" : "text-md/medium",
@@ -131,7 +131,7 @@ function S(t) {
             label: y,
             value: S ?? M,
             onChange: w,
-            options: O.map(t => {
+            options: b.map(t => {
                 let {
                     id: e,
                     name: i
@@ -143,14 +143,14 @@ function S(t) {
             }),
             isDisabled: !R,
             popoutPosition: "bottom",
-            renderOptionLabel: t => G(t, !0),
+            renderOptionLabel: t => V(t, !0),
             renderOptionValue: t => {
                 let [e] = t;
-                return G(e)
+                return V(e)
             },
             optionClassName: C.OS,
             ..._,
             "data-migration-pending": !0
-        }), !R && V]
+        }), !R && G]
     })
 }

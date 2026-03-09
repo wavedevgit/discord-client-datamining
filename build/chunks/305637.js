@@ -13,8 +13,8 @@ var l = i(311907),
     u = i(279250),
     c = i(267102),
     m = i(616356),
-    p = i(734057),
-    A = i(203982),
+    A = i(734057),
+    p = i(203982),
     h = i(652215),
     g = i(985018);
 
@@ -34,19 +34,19 @@ function f(t) {
             } = t;
             return e !== i.ownerId
         }).length > 0
-    })), C = (0, l.bG)([p.A], () => p.A.getChannel(i?.channelId)), [S, E] = (0, u.zP)(C), x = (0, c.aL)(), y = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, _ = t => {
+    })), C = (0, l.bG)([A.A], () => A.A.getChannel(i?.channelId)), [S, E] = (0, u.zP)(C), x = (0, c.aL)(), y = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, _ = t => {
         null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), y || (0, d.Nl)(i, {
             forceMultiple: t
-        }), x.dispatch(h.jej.POPOUT_CLOSE), A._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
+        }), x.dispatch(h.jej.POPOUT_CLOSE), p._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())
     };
     if (null == i) return null;
-    let N = (0, u.CT)(E);
-    return e ? N = g.intl.string(g.t.XvBdeT) : y && (N = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
+    let I = (0, u.CT)(E);
+    return e ? I = g.intl.string(g.t.XvBdeT) : y && (I = g.intl.string(g.t["JH1SJ+"])), (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(s.Button, {
             size: "sm",
             variant: y ? "secondary" : "active",
             icon: s.Fzq,
-            text: N,
+            text: I,
             disabled: e || y || !S,
             onClick: () => _(!1),
             fullWidth: !0

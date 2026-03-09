@@ -14,8 +14,8 @@ var l = i(503698),
     u = i(587895),
     c = i(402216),
     m = i(12351),
-    p = i(769015),
-    A = i(877315),
+    A = i(769015),
+    p = i(877315),
     h = i(607407),
     g = i(652215),
     f = i(985018),
@@ -34,8 +34,8 @@ function C(t) {
         unavailableReason: x,
         onWatchStream: y,
         onAction: _,
-        showHeader: N = !1,
-        hideTip: I = !1,
+        showHeader: I = !1,
+        hideTip: N = !1,
         className: j
     } = t, D = (0, s.bG)([u.A], () => {
         if (null != c) {
@@ -46,9 +46,9 @@ function C(t) {
     }, [c]), P = null != l && null != l.name ? f.intl.formatToPlainString(f.t["4CQq9Q"], {
         name: l.name
     }) : f.intl.string(f.t["Jpkr/q"]), U = (0, n.jsxs)(n.Fragment, {
-        children: [N && (0, n.jsxs)("div", {
+        children: [I && (0, n.jsxs)("div", {
             className: T.WG,
-            children: [null != D && (0, n.jsx)(p.A, {
+            children: [null != D && (0, n.jsx)(A.A, {
                 game: D,
                 className: T.lK
             }), (0, n.jsx)(a.Text, {
@@ -68,7 +68,7 @@ function C(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, A.A)(e, i, S, x)
+                    children: (0, p.A)(e, i, S, x)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
@@ -82,7 +82,7 @@ function C(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, A.A)(e, i, S, x)
+                    children: (0, p.A)(e, i, S, x)
                 })
             }) : null]
         }), (0, n.jsxs)("div", {
@@ -109,7 +109,7 @@ function C(t) {
                 channelId: e.channelId,
                 className: T.lx,
                 onAction: _
-            }), !I && (0, n.jsx)(m.A, {
+            }), !N && (0, n.jsx)(m.A, {
                 type: m.A.Types.INLINE,
                 className: T.PP,
                 children: __OVERLAY__ ? f.intl.string(f.t.YRdw70) : f.intl.string(f.t.CCTgbF)
@@ -133,7 +133,7 @@ function S(t) {
         user: s,
         currentUserId: u,
         canWatch: m,
-        unavailableReason: p,
+        unavailableReason: A,
         onWatchStream: v,
         onAction: C,
         showHeader: S = !1,
@@ -162,7 +162,7 @@ function S(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, A.A)(e, l, u, p)
+                    children: (0, p.A)(e, l, u, A)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
@@ -176,7 +176,7 @@ function S(t) {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, A.A)(e, l, u, p)
+                    children: (0, p.A)(e, l, u, A)
                 })
             }) : null]
         }), (0, n.jsx)("div", {

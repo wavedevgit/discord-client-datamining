@@ -1,40 +1,40 @@
 /** chunk id: 968898 params = (module,exports,require) **/
 i.d(t, {
-    CS: () => j,
-    GQ: () => w,
+    CS: () => w,
+    GQ: () => _,
     O0: () => D,
-    Pl: () => v,
+    Pl: () => y,
     RE: () => V,
     X1: () => N,
-    we: () => _
+    we: () => C
 });
 var n = i(627968),
     s = i(64700),
     l = i(503698),
-    r = i.n(l),
-    a = i(311907),
+    a = i.n(l),
+    r = i(311907),
     d = i(827734),
     o = i(990078),
     u = i(397927),
     c = i(391973),
     A = i(684013),
-    g = i(964486),
-    m = i(555528),
+    m = i(964486),
+    g = i(555528),
     h = i(810412),
-    f = i(302614),
-    x = i(395011),
-    I = i(119191),
-    p = i(581730),
+    x = i(302614),
+    p = i(395011),
+    f = i(119191),
+    I = i(581730),
     S = i(481484),
     E = i(985018),
-    y = i(335898);
+    v = i(335898);
 
-function v(e) {
+function y(e) {
     let {
         children: t
     } = e;
     return (0, n.jsx)("div", {
-        className: y.oB,
+        className: v.oB,
         children: (0, n.jsx)(u.Text, {
             variant: "text-xs/semibold",
             color: "text-strong",
@@ -45,42 +45,42 @@ function v(e) {
 let N = 7e3;
 
 function V(e, t) {
-    return T((0, a.bG)([m.A], () => m.A.getWidget(e), [e]), t)
+    return T((0, r.bG)([g.A], () => g.A.getWidget(e), [e]), t)
 }
 
 function T(e, t) {
     let i = s.useRef(e?.showExtrasHintTimestamp),
         [n, l] = s.useState(!1),
-        r = (0, S.A)(),
-        a = s.useRef(void 0);
+        a = (0, S.A)(),
+        r = s.useRef(void 0);
     return s.useEffect(() => {
         let n = e?.showExtrasHintTimestamp;
-        n !== i.current && (i.current = n, l(!0), a.current = setTimeout(() => {
+        n !== i.current && (i.current = n, l(!0), r.current = setTimeout(() => {
             l(!1)
         }, t))
-    }, [t, e?.showExtrasHintTimestamp]), (0, g.Ay)(() => {
+    }, [t, e?.showExtrasHintTimestamp]), (0, m.Ay)(() => {
         let i = e?.showExtrasHintTimestamp;
-        return null != i && Date.now() - i < t && (l(!0), a.current = setTimeout(() => {
+        return null != i && Date.now() - i < t && (l(!0), r.current = setTimeout(() => {
             l(!1)
         }, t)), () => {
-            null != a.current && clearTimeout(a.current)
+            null != r.current && clearTimeout(r.current)
         }
-    }), n && r
+    }), n && a
 }
-let C = 8e3;
+let j = 8e3;
 
-function _(e) {
+function C(e) {
     let {
         children: t,
         widgetId: i
-    } = e, s = (0, a.bG)([m.A], () => m.A.getWidget(i), [i]);
-    return T(s, C) ? (0, n.jsxs)(n.Fragment, {
-        children: [(0, n.jsx)(f.A, {
-            className: y.Z,
+    } = e, s = (0, r.bG)([g.A], () => g.A.getWidget(i), [i]);
+    return T(s, j) ? (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(x.A, {
+            className: v.Z,
             children: (0, n.jsx)(u.DUT, {
-                className: y.SM,
+                className: v.SM,
                 onClick: () => {
-                    null != s && (A.A.setInputLocked(!1, x.A.getTargetPID()), (0, h.YX)(s.type, {
+                    null != s && (A.A.setInputLocked(!1, p.A.getTargetPID()), (0, h.YX)(s.type, {
                         type: h.Z5.KEYBIND_HINT,
                         value: h.IP.OVERLAY_UNLOCKED
                     }))
@@ -88,18 +88,18 @@ function _(e) {
                 children: (0, n.jsx)(u.Text, {
                     variant: "text-xs/semibold",
                     color: "text-strong",
-                    children: (0, I.sI)((0, p.Jn)(), E.t["1XA04X"], E.intl.string(E.t.uZZGzf), {
+                    children: (0, f.sI)((0, I.Jn)(), E.t["1XA04X"], E.intl.string(E.t.uZZGzf), {
                         useFlexboxLayout: !0,
                         highlightAdminWarningIfElevated: !1,
-                        keybindClassName: y.P
+                        keybindClassName: v.P
                     })
                 })
             })
         }), (0, n.jsx)("div", {
-            className: y.Xk
+            className: v.Xk
         })]
     }) : (0, n.jsx)("div", {
-        className: y.oB,
+        className: v.oB,
         children: (0, n.jsx)(u.Text, {
             variant: "text-xs/semibold",
             color: "text-strong",
@@ -108,7 +108,7 @@ function _(e) {
     })
 }
 
-function j(e) {
+function w(e) {
     let {
         onClick: t
     } = e;
@@ -118,7 +118,7 @@ function j(e) {
         text: i,
         "aria-label": i,
         children: (0, n.jsx)(u.DUT, {
-            className: y.x6,
+            className: v.x6,
             onClick: t,
             children: (0, n.jsx)(u.Zes, {
                 size: "xxs",
@@ -128,7 +128,7 @@ function j(e) {
     })
 }
 
-function w(e) {
+function _(e) {
     let {
         widgetId: t,
         showAllStreams: i
@@ -137,7 +137,7 @@ function w(e) {
         text: s,
         "aria-label": s,
         children: (0, n.jsx)(u.DUT, {
-            className: r()(y.x6, i && y.vu),
+            className: a()(v.x6, i && v.vu),
             onClick: () => {
                 (0, c.cC)(t, {
                     showAllStreams: !i
@@ -161,7 +161,7 @@ function D(e) {
         "aria-label": s,
         asContainer: !0,
         children: (0, n.jsx)(u.DUT, {
-            className: r()(y.x6, i && y.vu),
+            className: a()(v.x6, i && v.vu),
             onClick: () => {
                 l || (0, c.v0)(t)
             },

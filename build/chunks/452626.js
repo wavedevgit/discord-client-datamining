@@ -19,19 +19,19 @@ function a(t) {
         onAction: c,
         ...m
     } = t, {
-        label: p,
-        tooltip: A,
+        label: A,
+        tooltip: p,
         loading: h,
         disabled: g,
         onClick: f
     } = (0, s._B)(e, i, a);
     return (0, n.jsx)(l.m, {
-        text: A,
+        text: p,
         children: (0, n.jsx)(r.Button, {
             variant: d,
             size: o,
             icon: r.L5T,
-            text: p,
+            text: A,
             fullWidth: u,
             onClick: () => {
                 c?.(), f()
