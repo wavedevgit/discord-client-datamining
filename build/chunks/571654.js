@@ -4,15 +4,15 @@ n.d(t, {
     z: () => a
 });
 var i = n(64700),
-    l = n(580630),
-    r = n(985018);
+    r = n(580630),
+    l = n(985018);
 
 function a(e) {
     return i.useMemo(() => {
         if (null == e) return;
         let t = null != e.role_id,
             n = e.attachments_count > 0;
-        return t && n ? r.intl.string(r.t.ih4QMU) : t ? r.intl.string(r.t.o9xphc) : n ? r.intl.string(r.t.DWYJua) : void 0
+        return t && n ? l.intl.string(l.t.ih4QMU) : t ? l.intl.string(l.t.o9xphc) : n ? l.intl.string(l.t.DWYJua) : void 0
     }, [e])
 }
 
@@ -23,6 +23,6 @@ function s(e) {
             amount: t,
             currency: n
         } = e.price;
-        return (0, l.$g)(t, n)
+        return (0, r.$g)(t, n)
     }, [e])
 }

@@ -19,9 +19,9 @@ let o = e => {
             isModeratorReport: x
         } = e,
         p = a.useRef(null),
-        g = null != n && "cancel" !== n.type,
-        h = _ && n?.type !== "done",
-        A = g || h;
+        h = null != n && "cancel" !== n.type,
+        g = _ && n?.type !== "done",
+        A = h || g;
     if (a.useEffect(() => {
             (n?.type === "submit" || n?.type === "done") && p.current?.focus()
         }, [n?.type]), !A) return null;
@@ -31,12 +31,12 @@ let o = e => {
         direction: i.A.Direction.HORIZONTAL,
         children: (0, l.jsxs)(r.ButtonGroup, {
             fullWidth: !0,
-            children: [h && (0, l.jsx)(r.Button, {
+            children: [g && (0, l.jsx)(r.Button, {
                 onClick: m,
                 variant: "secondary",
                 disabled: o,
                 text: s.intl.string(s.t["13/7kX"])
-            }), g && (0, l.jsx)(r.Button, {
+            }), h && (0, l.jsx)(r.Button, {
                 onClick: () => {
                     null != n && u(n)
                 },

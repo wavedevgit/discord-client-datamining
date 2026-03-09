@@ -5,15 +5,15 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(827734),
-    r = n(397927),
+var r = n(827734),
+    l = n(397927),
     a = n(985018),
     s = n(724001);
 
 function o(e) {
     let {
         label: t,
-        backgroundColor: n = l.A.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT.css,
+        backgroundColor: n = r.A.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT.css,
         icon: a,
         iconColor: o
     } = e;
@@ -22,7 +22,7 @@ function o(e) {
         style: {
             backgroundColor: n
         },
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "always-white",
             className: s.__invalid_badgeText,
@@ -39,14 +39,14 @@ function d() {
     return (0, i.jsx)(o, {
         label: a.intl.string(a.t["I+02Gs"]),
         backgroundColor: "#207B8D",
-        icon: r.BZI
+        icon: l.BZI
     })
 }
 
 function c() {
     return (0, i.jsx)(o, {
         label: a.intl.string(a.t.TgsPaP),
-        icon: r.R2l,
-        iconColor: l.A.unsafe_rawColors.PRIMARY_330.css
+        icon: l.R2l,
+        iconColor: r.A.unsafe_rawColors.PRIMARY_330.css
     })
 }

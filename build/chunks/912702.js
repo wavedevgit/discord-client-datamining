@@ -6,15 +6,15 @@ n.d(t, {
     py: () => s
 });
 var i = n(73153),
-    l = n(198982),
-    r = n(306522);
+    r = n(198982),
+    l = n(306522);
 let a = async e => {
     i.h.dispatch({
         type: "GUILD_PRODUCTS_FETCH",
         guildId: e
     });
     try {
-        let t = await r.oG(e);
+        let t = await l.oG(e);
         i.h.dispatch({
             type: "GUILD_PRODUCTS_FETCH_SUCCESS",
             guildId: e,
@@ -32,7 +32,7 @@ let a = async e => {
         productId: t
     });
     try {
-        let n = await r.bq(e, t);
+        let n = await l.bq(e, t);
         return i.h.dispatch({
             type: "GUILD_PRODUCT_FETCH_SUCCESS",
             product: n
@@ -41,19 +41,19 @@ let a = async e => {
         throw i.h.dispatch({
             type: "GUILD_PRODUCT_FETCH_FAILURE",
             productId: t,
-            error: new l.LG(e)
+            error: new r.LG(e)
         }), e
     }
 };
 async function o(e, t, n) {
-    let l = await r.Qm(e, t, n);
+    let r = await l.Qm(e, t, n);
     return i.h.dispatch({
         type: "GUILD_PRODUCT_UPDATE",
-        product: l
-    }), l
+        product: r
+    }), r
 }
 async function d(e, t) {
-    return await r.Oo(e, t), i.h.dispatch({
+    return await l.Oo(e, t), i.h.dispatch({
         type: "GUILD_PRODUCT_DELETE",
         productId: t
     }), !0

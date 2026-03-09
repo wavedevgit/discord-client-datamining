@@ -23,7 +23,7 @@ function p(e) {
     }
 }
 
-function g(e) {
+function h(e) {
     return "" !== e && !!p(e) && ! function(e) {
         try {
             let t = new URL(e);
@@ -34,7 +34,7 @@ function g(e) {
         }
     }(e)
 }
-let h = e => {
+let g = e => {
         let {
             data: {
                 title: t,
@@ -43,56 +43,56 @@ let h = e => {
                 message_link_title: _,
                 message_link_placeholder: m
             },
-            onChange: h,
+            onChange: g,
             initialContentUrl: A,
             initialMessageUrl: v,
-            isRequired: b
-        } = e, f = a.useMemo(() => i.A.reactParserFor({
+            isRequired: f
+        } = e, b = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: d.B
         }), []), [C, j] = a.useState(""), [T, N] = a.useState(""), [I, S] = a.useState(null), [y, k] = a.useState(null), [E, w] = a.useState(!1);
         a.useEffect(() => {
-            j(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(g(A.value))
+            j(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
         }, [A, v]);
         let M = a.useCallback(e => {
                 if (j(e), "" === e) {
-                    S(null), w(!1), N(""), k(null), h({
+                    S(null), w(!1), N(""), k(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), h({
+                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
-                let t = g(e);
-                w(t), S(null), t ? "" === T ? h({
+                let t = h(e);
+                w(t), S(null), t ? "" === T ? g({
                     value: e,
                     isValid: !1
-                }) : x.test(T) ? h({
+                }) : x.test(T) ? g({
                     value: e,
                     isValid: !0
                 }, {
                     value: T,
                     isValid: !0
-                }) : h({
+                }) : g({
                     value: e,
                     isValid: !1
                 }, {
                     value: T,
                     isValid: !1
-                }) : (N(""), k(null), h({
+                }) : (N(""), k(null), g({
                     value: e,
                     isValid: !0
                 }))
-            }, [h, T]),
+            }, [g, T]),
             R = a.useCallback(e => {
                 if (N(e), "" === e || !x.test(e)) {
-                    k(o.intl.string(o.t["24xrGb"])), h({
+                    k(o.intl.string(o.t["24xrGb"])), g({
                         value: C,
                         isValid: !1
                     }, {
@@ -101,14 +101,14 @@ let h = e => {
                     });
                     return
                 }
-                k(null), h({
+                k(null), g({
                     value: C,
                     isValid: !0
                 }, {
                     value: e,
                     isValid: !0
                 })
-            }, [h, C]);
+            }, [g, C]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)(r.BJc, {
                 gap: 16,
@@ -118,7 +118,7 @@ let h = e => {
                         className: u.QB,
                         children: (0, l.jsxs)(r.Text, {
                             variant: "text-sm/bold",
-                            children: [t, b && (0, l.jsx)("span", {
+                            children: [t, f && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
@@ -136,7 +136,7 @@ let h = e => {
                         className: u.QB,
                         children: (0, l.jsxs)(r.Text, {
                             variant: "text-sm/bold",
-                            children: [_, b && (0, l.jsx)("span", {
+                            children: [_, f && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
@@ -150,7 +150,7 @@ let h = e => {
                 })]
             }), null != n && (0, l.jsx)(r.Text, {
                 variant: "text-xs/normal",
-                children: f(n)
+                children: b(n)
             })]
         })
     },
@@ -162,7 +162,7 @@ let h = e => {
         } = e, i = t.name, s = `${t.name}_message_link`, d = a.useCallback((e, t) => {
             null != t ? n(i, e.value, e.isValid && t.isValid, s, t.value) : n(i, e.value, e.isValid, s, void 0)
         }, [n, i, s]);
-        return (0, l.jsx)(h, {
+        return (0, l.jsx)(g, {
             data: t.data,
             onChange: d,
             initialContentUrl: r?.[i],

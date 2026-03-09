@@ -3,18 +3,18 @@ n.d(t, {
     A: () => s
 });
 var i = n(311907),
-    l = n(73153);
-let r = {
+    r = n(73153);
+let l = {
     matureAgree: !1
 };
 class a extends i.Ay.Store {
     static displayName = "ApplicationStoreSettingsStore";
     get didMatureAgree() {
-        return r.matureAgree
+        return l.matureAgree
     }
 }
-let s = new a(l.h, {
+let s = new a(r.h, {
     APPLICATION_STORE_MATURE_AGREE: function() {
-        r.matureAgree = !0
+        l.matureAgree = !0
     }
 })

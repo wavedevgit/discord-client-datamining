@@ -1,14 +1,14 @@
 /** chunk id: 634202 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => $
+    A: () => B
 });
 var l = n(627968),
     i = n(64700),
     s = n(284009),
-    r = n.n(s),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(s),
+    r = n(735438),
+    o = n.n(r),
     u = n(311907),
     c = n(827734),
     d = n(990078),
@@ -20,13 +20,13 @@ var l = n(627968),
     f = n(736653),
     x = n(573648),
     v = n(58149),
-    N = n(688810),
-    j = n(709066),
+    j = n(688810),
+    N = n(709066),
     b = n(657331),
     C = n(427157),
     E = n(696451),
-    R = n(954571),
-    I = n(370480),
+    I = n(954571),
+    R = n(370480),
     T = n(633452),
     y = n(600260),
     _ = n(63104),
@@ -34,8 +34,8 @@ var l = n(627968),
     M = n(293260),
     k = n(783419),
     O = n(652215),
-    w = n(518477),
-    P = n(985018),
+    P = n(518477),
+    w = n(985018),
     G = n(757906);
 
 function D(e) {
@@ -43,29 +43,29 @@ function D(e) {
         connectionType: n,
         connectionMetadataField: i,
         operator: s,
-        value: r,
-        description: a
+        value: a,
+        description: r
     } = e;
-    if (null != a) switch (s) {
+    if (null != r) switch (s) {
         case k.so.LESS_THAN:
-            t = P.intl.format(P.t["2p7dA3"], {
-                description: a,
-                count: Math.max(0, Number(r) - 1)
+            t = w.intl.format(w.t["2p7dA3"], {
+                description: r,
+                count: Math.max(0, Number(a) - 1)
             });
             break;
         case k.so.GREATER_THAN:
-            t = P.intl.format(P.t["2p7dA3"], {
-                description: a,
-                count: Math.max(0, Number(r) + 1)
+            t = w.intl.format(w.t["2p7dA3"], {
+                description: r,
+                count: Math.max(0, Number(a) + 1)
             });
             break;
         default:
-            t = a
-    } else t = (0, I.RP)({
+            t = r
+    } else t = (0, R.RP)({
         connectionType: n,
         connectionMetadataField: i,
         operator: s,
-        value: r
+        value: a
     });
     return null == t ? null : (0, l.jsxs)("div", {
         className: G.wL,
@@ -87,17 +87,17 @@ function L(e) {
     } = e, n = (0, f.Ay)(), i = (0, g.rdh)(c.A.unsafe_rawColors.GREEN_330).hex(), s = o().groupBy(t, e => `${e.connection_type}${null!=e.application_id?`:${e.application_id}`:""}`);
     return (0, l.jsx)(l.Fragment, {
         children: Object.keys(s).map(e => {
-            let t, a = s[e],
-                o = a.filter(e => null != e.operator),
-                u = a.find(e => null != e.application),
+            let t, r = s[e],
+                o = r.filter(e => null != e.operator),
+                u = r.find(e => null != e.application),
                 c = x.A.get(e),
                 d = u?.application,
                 h = d?.bot != null ? new C.A(d.bot) : null;
-            return I.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(S.A, {
+            return R.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(S.A, {
                 className: G.AO,
                 color: i,
                 size: 16
-            }) : null != h && (t = (0, l.jsx)(j.A, {
+            }) : null != h && (t = (0, l.jsx)(N.A, {
                 className: G.AO,
                 verified: h.isVerifiedBot()
             })), (0, l.jsxs)("div", {
@@ -123,14 +123,14 @@ function L(e) {
                         connection_metadata_field: n,
                         operator: i,
                         value: s,
-                        description: a
+                        description: r
                     } = e;
-                    return r()(null != n, "connectionMetadataField is null"), r()(null != i, "operator is null"), r()(null != s, "value is null"), (0, l.jsx)(D, {
+                    return a()(null != n, "connectionMetadataField is null"), a()(null != i, "operator is null"), a()(null != s, "value is null"), (0, l.jsx)(D, {
                         connectionType: t,
                         connectionMetadataField: n,
                         operator: i,
                         value: s,
-                        description: a
+                        description: r
                     }, `${t}:${n}:${i}:${s}`)
                 })]
             }, e)
@@ -142,22 +142,22 @@ function U(e) {
     let t, {
         onGetRolesClicked: n,
         onOpenProfile: s,
-        eligibilityStates: r,
-        userId: a,
+        eligibilityStates: a,
+        userId: r,
         roleId: o,
         channelId: c,
         guildId: d
     } = e;
     i.useEffect(() => {
-        R.default.track(O.HAw.PASSPORT_ROLE_POPOUT_VIEWED, {
-            other_user_id: a,
+        I.default.track(O.HAw.PASSPORT_ROLE_POPOUT_VIEWED, {
+            other_user_id: r,
             role_id: o,
             ...(0, v.Ou)(c),
             ...(0, v.H$)(d)
         })
-    }, [a, o, c, d]);
+    }, [r, o, c, d]);
     let m = (0, u.bG)([E.Ay], () => E.Ay.getSelfMember(d)?.roles.includes(o) ?? !1, [d, o]);
-    return t = 1 === r.length && 1 === r[0].length ? P.intl.string(P.t.jDym4E) : 1 === r.length ? P.intl.format(P.t["0eBj3x"], {}) : P.intl.format(P.t.D7uftB, {}), (0, l.jsxs)("div", {
+    return t = 1 === a.length && 1 === a[0].length ? w.intl.string(w.t.jDym4E) : 1 === a.length ? w.intl.format(w.t["0eBj3x"], {}) : w.intl.format(w.t.D7uftB, {}), (0, l.jsxs)("div", {
         className: G.SW,
         children: [(0, l.jsx)("div", {
             className: G.oT,
@@ -170,36 +170,36 @@ function U(e) {
         }), (0, l.jsx)("div", {
             className: G.jf,
             children: (0, l.jsx)(L, {
-                eligibilityStates: r.flat()
+                eligibilityStates: a.flat()
             })
         }), (0, l.jsxs)("div", {
             className: G.UD,
             children: [m ? null : (0, l.jsx)(h.$n, {
                 className: G.wz,
                 onClick: n,
-                children: P.intl.string(P.t.T1t1WV)
+                children: w.intl.string(w.t.T1t1WV)
             }), (0, l.jsx)(h.$n, {
                 className: G.lQ,
                 color: h.$n.Colors.PRIMARY,
                 onClick: s,
-                children: P.intl.string(P.t.hgKDnG)
+                children: w.intl.string(w.t.hgKDnG)
             })]
         })]
     })
 }
 
-function $(e) {
+function B(e) {
     let {
         userId: t,
         messageId: n,
         guild: s,
-        channel: a
+        channel: r
     } = e, {
         analyticsLocations: o
-    } = (0, N.Ay)(), c = (0, y.A)(s, t, a.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [h, A] = i.useState(null == m), f = i.useRef(null);
+    } = (0, j.Ay)(), c = (0, y.A)(s, t, r.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [h, A] = i.useState(null == m), f = i.useRef(null);
     if (null == c) return null;
     async function x() {
-        r()(null != c, "visibleConnectionsRole is null"), h && null == m && (await p.A.fetchGuildRoleConnectionsEligibility(s.id, c.id), A(!1))
+        a()(null != c, "visibleConnectionsRole is null"), h && null == m && (await p.A.fetchGuildRoleConnectionsEligibility(s.id, c.id), A(!1))
     }
     return (0, l.jsx)(g.QCx, {
         targetElementRef: f,
@@ -209,11 +209,11 @@ function $(e) {
                 let {
                     closePopout: i
                 } = e;
-                return null == m ? (0, l.jsx)(l.Fragment, {}) : (r()(null != c, "visibleConnectionsRole is null"), (0, l.jsx)(U, {
+                return null == m ? (0, l.jsx)(l.Fragment, {}) : (a()(null != c, "visibleConnectionsRole is null"), (0, l.jsx)(U, {
                     eligibilityStates: m,
                     userId: t,
                     roleId: c.id,
-                    channelId: a.id,
+                    channelId: r.id,
                     guildId: s.id,
                     onGetRolesClicked: () => {
                         (0, M.c0)(s.id)
@@ -223,9 +223,9 @@ function $(e) {
                             userId: t,
                             messageId: n,
                             guildId: s.id,
-                            channelId: a.id,
+                            channelId: r.id,
                             roleId: c.id,
-                            scrollTarget: w.bk.CONNECTIONS,
+                            scrollTarget: P.bk.CONNECTIONS,
                             sourceAnalyticsLocations: o
                         }), i()
                     }
@@ -235,7 +235,7 @@ function $(e) {
         align: "top",
         nudgeAlignIntoViewport: !0,
         children: e => (0, l.jsx)(d.m, {
-            text: P.intl.string(P.t.Wpsnar),
+            text: w.intl.string(w.t.Wpsnar),
             children: (0, l.jsxs)("div", {
                 ref: f,
                 className: G.qS,

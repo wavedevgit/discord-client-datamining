@@ -3,8 +3,8 @@ n.d(t, {
     C: () => R
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(311907),
+    r = n(64700),
+    l = n(311907),
     a = n(397927),
     s = n(442433),
     o = n(181658),
@@ -31,7 +31,7 @@ var i = n(627968),
     j = n(985018);
 
 function L(e) {
-    let t = (0, r.bG)([m.A], () => m.A.questDeliveryOverride, []),
+    let t = (0, l.bG)([m.A], () => m.A.questDeliveryOverride, []),
         n = (0, E.vy)(e.questContent),
         c = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
         L = (0, A.Ut)(),
@@ -40,8 +40,8 @@ function L(e) {
         M = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
         {
             handleComplete: w,
-            handleProgress: O,
-            handleResetDismissibilityClick: D,
+            handleProgress: D,
+            handleResetDismissibilityClick: O,
             handleResetStatusClick: k,
             handleOverrideDeliveryClick: U
         } = (0, g.j$)(e.quest.id),
@@ -54,7 +54,7 @@ function L(e) {
         B = (0, T.Lk)({
             isShareable: M,
             questId: e.quest.id,
-            trackingCtx: l.useMemo(() => ({
+            trackingCtx: r.useMemo(() => ({
                 content: e.questContent,
                 position: e.questContentPosition,
                 ctaContent: x.Cy.CONTEXT_MENU_COPY_LINK,
@@ -65,13 +65,13 @@ function L(e) {
         F = e => (0, a.showToast)((0, a.createToast)(new o.A(e, e.status).message, a.ToastType.FAILURE)),
         H = () => (0, _.CV)(e.quest.id).catch(F),
         V = (0, g.nv)(e.quest),
-        W = l.useMemo(() => (0, i.jsx)(a.sLh, {
+        W = r.useMemo(() => (0, i.jsx)(a.sLh, {
             id: "delivery",
             label: "Show in Quest Bar",
             checked: t?.id === e.quest.id,
             action: U
         }), [U, e.quest.id, t?.id]),
-        q = l.useCallback(() => {
+        q = r.useCallback(() => {
             (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
         Y = e.shouldShowDisclosure && e.quest.id !== S.Fw;
@@ -156,7 +156,7 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "dismiss",
                 label: j.intl.string(j.t.JF6W66),
-                action: D
+                action: O
             }), (0, i.jsx)(a.Drp, {
                 id: "enrollment",
                 label: j.intl.string(j.t.taqkwK),
@@ -167,7 +167,7 @@ function L(e) {
                 id: "progress",
                 label: j.intl.string(j.t.cKSLr4),
                 action: () => {
-                    O(.9 * Math.random() + .03)
+                    D(.9 * Math.random() + .03)
                 }
             }), (0, i.jsx)(a.Drp, {
                 id: "complete",
@@ -210,14 +210,14 @@ function R(e) {
     let {
         children: t,
         onOpen: n,
-        onClose: r,
+        onClose: l,
         preventIdle: s,
         quest: o,
         questContent: d,
         questContentPosition: u,
         sourceQuestContent: _,
         ...m
-    } = e, h = (0, A.Ut)(), p = l.useRef(null), g = l.useCallback(() => {
+    } = e, h = (0, A.Ut)(), p = r.useRef(null), g = r.useCallback(() => {
         h({
             questId: o.id,
             questContent: d,
@@ -229,7 +229,7 @@ function R(e) {
     return (0, i.jsx)(a.YNO, {
         targetElementRef: p,
         onRequestOpen: g,
-        onRequestClose: r,
+        onRequestClose: l,
         renderPopout: e => {
             let {
                 closePopout: t

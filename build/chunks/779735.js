@@ -1,6 +1,6 @@
 /** chunk id: 779735 params = (module,exports,require) **/
 n.d(t, {
-    default: () => h
+    default: () => g
 }), n(321073);
 var l = n(627968),
     a = n(64700),
@@ -15,16 +15,16 @@ var l = n(627968),
     m = n(369053),
     x = n(598131),
     p = n(652215),
-    g = n(498422);
-let h = e => {
+    h = n(498422);
+let g = e => {
     let {
         reportType: t,
         menu: n,
-        modalProps: h,
+        modalProps: g,
         onSubmit: A,
         onNavigate: v,
-        emailToken: b,
-        isAuthenticated: f = !0
+        emailToken: f,
+        isAuthenticated: b = !0
     } = e, C = (0, o.GV)(), {
         nodes: j,
         root_node_id: T,
@@ -58,7 +58,7 @@ let h = e => {
             y(l)
         },
         V = async e => {
-            let l = f ? await (0, m.zC)(n, t, [...R, e]) : await (0, m.bo)(n, t, [...R, e], b),
+            let l = b ? await (0, m.zC)(n, t, [...R, e]) : await (0, m.bo)(n, t, [...R, e], f),
                 a = l?.body?.report_id;
             null != a && G(a), U(j[e.nodeRef].report_type), A?.(a)
         }, F = () => {
@@ -118,7 +118,7 @@ let h = e => {
     }, [j, T, I, N]);
     return (0, l.jsx)(i.EOs, {
         "data-migration-pending": !0,
-        transitionState: h.transitionState,
+        transitionState: g.transitionState,
         "aria-labelledby": C,
         parentComponent: "InAppReportModal",
         children: (0, l.jsx)(i.tN_, {
@@ -128,13 +128,13 @@ let h = e => {
             children: z.map(e => (0, l.jsx)(i.q7S, {
                 id: e.id,
                 children: (0, l.jsx)("div", {
-                    className: g.B,
+                    className: h.B,
                     children: (0, l.jsx)(x.A, {
                         node: e,
                         reportType: t,
                         reportSubType: D,
                         history: R,
-                        onModalClose: h.onClose,
+                        onModalClose: g.onClose,
                         onSelectChild: H,
                         onNavigateBack: F,
                         onNavigateToNode: W,

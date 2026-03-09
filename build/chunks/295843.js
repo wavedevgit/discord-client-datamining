@@ -4,8 +4,8 @@ n.d(t, {
     k: () => L
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(936504),
+    r = n(64700),
+    l = n(936504),
     a = n(311907),
     s = n(421380),
     o = n(800342),
@@ -25,7 +25,7 @@ var i = n(627968),
     I = n(652215),
     b = n(985018),
     T = n(34077);
-class v extends l.Component {
+class v extends r.Component {
     static defaultProps = {
         renderFallback: I.tEg
     };
@@ -99,14 +99,14 @@ class v extends l.Component {
     renderApplicationTile = (e, t) => {
         let {
             inLibrary: n,
-            width: l,
-            renderCustomTitle: r,
+            width: r,
+            renderCustomTitle: l,
             renderCustomTagline: a,
             renderCustomMedia: s
         } = this.props, {
             playing: o,
             muted: d
-        } = this.state, c = l > m.Tm;
+        } = this.state, c = r > m.Tm;
         return (0, i.jsx)(_.A, {
             sku: e,
             storeListing: t,
@@ -115,7 +115,7 @@ class v extends l.Component {
             inLibrary: n,
             onToggleMute: this.handleToggleMute,
             renderCustomActions: () => this.renderActions(e),
-            renderCustomTitle: r,
+            renderCustomTitle: l,
             renderCustomTagline: a,
             renderCustomMedia: s,
             isHorizontal: c,
@@ -126,8 +126,8 @@ class v extends l.Component {
         let {
             inLibrary: t,
             application: n,
-            skuId: l,
-            libraryApplication: r,
+            skuId: r,
+            libraryApplication: l,
             renderCustomActions: a
         } = this.props;
         if (null != a) return (0, i.jsx)("div", {
@@ -135,8 +135,8 @@ class v extends l.Component {
             children: a()
         });
         if (null == n) return null;
-        let s = null != n && n.primarySkuId === l,
-            o = null != r && r.hasFlag(I.hM6.HIDDEN);
+        let s = null != n && n.primarySkuId === r,
+            o = null != l && l.hasFlag(I.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
             className: T.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
@@ -158,17 +158,17 @@ class v extends l.Component {
             sku: e,
             storeListing: t,
             width: n,
-            fetchFailed: l,
+            fetchFailed: r,
             renderFallback: a
         } = this.props, s = n > m.Tm;
-        return null == e || null == t ? l ? a() : (0, i.jsx)(m.Wb, {
+        return null == e || null == t ? r ? a() : (0, i.jsx)(m.Wb, {
             isHorizontal: s
         }) : e.productLine === I.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
             section: I.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(d.A, {
             section: I.JJy.APPLICATION_EMBED,
-            children: (0, i.jsx)(r.N_, {
+            children: (0, i.jsx)(l.N_, {
                 onClick: this.handleLinkClick,
                 to: this.getStoreListingLocation(),
                 onMouseEnter: this.handleMouseEnter,

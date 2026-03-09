@@ -3,8 +3,8 @@ n.d(t, {
     j: () => h
 });
 var i = n(47167),
-    l = n(958340),
-    r = n(734057),
+    r = n(958340),
+    l = n(734057),
     a = n(71393),
     s = n(576705),
     o = n(994500),
@@ -38,12 +38,12 @@ class h {
         this.parentMessage = e, this.messageSnapshot = t, this.snapshotIndex = n
     }
     getForwardInfo() {
-        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : r.A,
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l.A,
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.default,
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.A,
             c = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : s.A,
             h = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : a.A,
-            p = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : l.A,
+            p = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : r.A,
             {
                 snapshotIndex: g,
                 parentMessage: A,
@@ -53,8 +53,8 @@ class h {
             C = e.getChannel(this.parentMessage.channel_id);
         if (null != C && C.guild_id === A.messageReference?.guild_id) {
             var E;
-            let l = e.getChannel(A.messageReference?.channel_id);
-            if (null == l) {
+            let r = e.getChannel(A.messageReference?.channel_id);
+            if (null == r) {
                 let e = h.getGuild(C.guild_id);
                 return null == e ? {
                     snapshotIndex: g
@@ -63,10 +63,10 @@ class h {
                     footerInfo: m(e, f)
                 }
             }
-            return c.can(l.accessPermissions, l) ? {
+            return c.can(r.accessPermissions, r) ? {
                 snapshotIndex: g,
                 footerInfo: {
-                    originLabel: E = (0, i.m1)(l, t, n, !0),
+                    originLabel: E = (0, i.m1)(r, t, n, !0),
                     timestampLabel: f,
                     accessibilityLabel: _.intl.formatToPlainString(_.t["+l04BN"], {
                         origin: E,

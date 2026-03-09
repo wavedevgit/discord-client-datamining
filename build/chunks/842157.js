@@ -3,8 +3,8 @@ n.d(t, {
     A: () => U
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(379834),
+    r = n(64700),
+    l = n(379834),
     a = n(934551),
     s = n(27989),
     o = n(311907),
@@ -34,19 +34,19 @@ var i = n(627968),
     P = n(878831),
     M = n(652215),
     w = n(768349),
-    O = n(985018),
-    D = n(62323);
+    D = n(985018),
+    O = n(62323);
 
 function k(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n,
-        isGameLaunchable: r
+        isGameLaunchable: l
     } = e, o = (0, L.z4)({
         platforms: t?.supported_platforms,
         currentPlatform: M.yTV.DESKTOP,
-        isGameLaunchable: r
-    }), c = l.useMemo(() => o.map(e => {
+        isGameLaunchable: l
+    }), c = r.useMemo(() => o.map(e => {
         switch (e) {
             case L.FL.MOBILE:
                 return (0, i.jsx)(d.u6o, {
@@ -89,19 +89,19 @@ function k(e) {
         }
     }).filter(C.Vq), [o]);
     if (!(null != n || c.length > 0)) return null;
-    let u = null != n ? (0, S.C)(n) : O.intl.string(O.t["4dGUP0"]);
+    let u = null != n ? (0, S.C)(n) : D.intl.string(D.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
-        className: D.qr,
+        className: O.qr,
         children: [(0, i.jsx)("div", {
-            className: D.E6,
+            className: O.E6,
             children: c.map((e, t) => (0, i.jsx)("div", {
-                className: D.F2,
+                className: O.F2,
                 children: e
             }, t))
         }), (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
-            className: D.kB,
+            className: O.kB,
             children: u
         })]
     })
@@ -132,8 +132,8 @@ function U(e) {
         startAuthorization: J,
         accountLinkButtonRef: X,
         renderAccountLinkUpsell: Z
-    } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = l.useMemo(() => null != $ ? (0, i.jsxs)("div", {
-        className: D.Ym,
+    } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = r.useMemo(() => null != $ ? (0, i.jsxs)("div", {
+        className: O.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
             color: "currentColor"
@@ -146,21 +146,21 @@ function U(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [$, V?.timestamps?.end]), et = (0, T.v)(t), en = (0, x.s)(n.id), ei = l.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
+    }) : null, [$, V?.timestamps?.end]), et = (0, T.v)(t), en = (0, x.s)(n.id), ei = r.useMemo(() => en.some(e => (0, g.CZ)(e) === l.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
-        }), O.intl.string(O.t.TsWCdW)]
-    }) : null, [en]), el = l.useMemo(() => (0, i.jsxs)(d.Text, {
+        }), D.intl.string(D.t.TsWCdW)]
+    }) : null, [en]), er = r.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: D.dS,
+        className: O.dS,
         color: "none",
         lineClamp: 2,
         children: [et ? (0, E.YC)(t, a, s, S, !1) : ee, et ? null : ei]
-    }), [et, t, a, s, S, ee, ei]), er = l.useMemo(() => (0, i.jsxs)("div", {
-        className: D.pq,
-        children: [el, q || et ? null : Y]
-    }), [el, q, et, Y]), ea = !!L, es = (0, A.e)(n), {
+    }), [et, t, a, s, S, ee, ei]), el = r.useMemo(() => (0, i.jsxs)("div", {
+        className: O.pq,
+        children: [er, q || et ? null : Y]
+    }), [er, q, et, Y]), ea = !!L, es = (0, A.e)(n), {
         canJoin: eo,
         remoteJoinPlatform: ed
     } = (0, I.D)({
@@ -175,12 +175,12 @@ function U(e) {
     }), ec = (0, I.M)(V, W, t, n), eu = (0, b.E)(V, t, n, S), e_ = (0, v.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
-    } = l.useMemo(() => {
+    } = r.useMemo(() => {
         let e = null,
             n = !0,
             i = !1;
         eo ? e = {
-            label: O.intl.string(O.t.VJlc0S),
+            label: D.intl.string(D.t.VJlc0S),
             trackingArea: h.kY.JOIN,
             submitting: eh,
             onClick: () => {
@@ -208,7 +208,7 @@ function U(e) {
                 })
             }
         } : em && K ? (e = {
-            label: O.intl.string(O.t.lw71Nf),
+            label: D.intl.string(D.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
@@ -216,13 +216,13 @@ function U(e) {
                 })
             }
         }, n = !1) : ec ? (e = {
-            label: O.intl.string(O.t.VJlc0S),
+            label: D.intl.string(D.t.VJlc0S),
             trackingArea: h.kY.SYNC,
             onClick: () => {
                 null != V && _.OH(V, t.author.id)
             }
         }, n = !1) : eu ? e = {
-            label: O.intl.string(O.t["hC/Zey"]),
+            label: D.intl.string(D.t["hC/Zey"]),
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
@@ -233,16 +233,16 @@ function U(e) {
                 })
             },
             disabled: t.author.id === S,
-            disabledReason: t.author.id === S ? O.intl.string(O.t.IBl8ID) : void 0
+            disabledReason: t.author.id === S ? D.intl.string(D.t.IBl8ID) : void 0
         } : e_ ? e = {
-            label: O.intl.string(O.t.KC26NR),
+            label: D.intl.string(D.t.KC26NR),
             trackingArea: h.kY.PLAY,
             onClick: () => {},
             disabled: !0
         } : null != U && (e = U, n = !1);
-        let l = [];
-        return null != e && (l.push(e), Q && n && (l.push({
-            label: O.intl.string(O.t.lw71Nf),
+        let r = [];
+        return null != e && (r.push(e), Q && n && (r.push({
+            label: D.intl.string(D.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
@@ -253,12 +253,12 @@ function U(e) {
             iconButton: !0,
             buttonRef: X
         }), i = !0)), {
-            actions: l,
+            actions: r,
             hasAccountLinkButton: i
         }
     }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, z, ed, S, eh, Q, J, X, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(eA, z);
-    let ex = l.useMemo(() => e_ ? null : (0, i.jsx)(k, {
+    let ex = r.useMemo(() => e_ ? null : (0, i.jsx)(k, {
         presenceActivity: V,
         remoteJoinPlatform: ed,
         isGameLaunchable: ea
@@ -271,7 +271,7 @@ function U(e) {
             onClickBanner: B,
             bannerAspectRatio: m.u.ACTIVITY,
             iconSrc: F ?? void 0,
-            info: er,
+            info: el,
             actions: ep,
             primaryActionFirst: !0,
             onClickContent: B,

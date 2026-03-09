@@ -1,6 +1,6 @@
 /** chunk id: 248492 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var l = n(627968),
     a = n(64700),
@@ -15,19 +15,19 @@ var l = n(627968),
     m = n(661191),
     x = n(985018),
     p = n(935368),
-    g = n(532406);
-let h = e => {
+    h = n(532406);
+let g = e => {
     let {
         entry: t
     } = e, {
         name: n
-    } = t, h = (0, r.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? g, v = (0, c.A)({
+    } = t, g = (0, r.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? h, v = (0, c.A)({
         application: t
-    }), b = a.useRef(!1);
+    }), f = a.useRef(!1);
     a.useEffect(() => {
-        b.current || (d.A.fetch(), b.current = !0)
+        f.current || (d.A.fetch(), f.current = !0)
     }, []);
-    let f = null != h ? m.default.extractTimestamp(h.id) : void 0;
+    let b = null != g ? m.default.extractTimestamp(g.id) : void 0;
     return (0, l.jsxs)("div", {
         className: p.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -69,11 +69,11 @@ let h = e => {
                             color: "text-default",
                             variant: "text-md/normal",
                             children: t.bot?.tag
-                        }), null != f && (0, l.jsx)(s.Text, {
+                        }), null != b && (0, l.jsx)(s.Text, {
                             color: "text-default",
                             variant: "text-md/normal",
                             children: x.intl.formatToPlainString(x.t.C9rUO8, {
-                                authorizedAt: f
+                                authorizedAt: b
                             })
                         })]
                     })]

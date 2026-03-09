@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    a = n.n(l),
     s = n(740916),
     o = n(678480),
     d = n(191931),
@@ -18,7 +18,7 @@ var i = n(627968),
     g = n(622413),
     A = n(652215),
     x = n(206331);
-class f extends l.PureComponent {
+class f extends r.PureComponent {
     static defaultProps = {
         showMediaPlaceholder: !1,
         isMouseOver: !1,
@@ -31,16 +31,16 @@ class f extends l.PureComponent {
             inLibrary: e,
             sku: t,
             renderCustomActions: n,
-            isMouseOver: l,
-            showBuyInline: r
-        } = this.props, a = (r || !t.requiresPayment) && !e;
+            isMouseOver: r,
+            showBuyInline: l
+        } = this.props, a = (l || !t.requiresPayment) && !e;
         return null != n ? n() : (0, i.jsxs)("div", {
             className: x.ED,
             children: [(0, i.jsx)(s.A, {
                 type: s.A.Types.DIRECTORY_TILE,
                 sku: t,
                 inLibrary: e,
-                className: a && l ? x.ae : x.Ek
+                className: a && r ? x.ae : x.Ek
             }), (0, i.jsx)(o.E, {
                 systems: [A.uje.WINDOWS],
                 className: x.iD
@@ -54,7 +54,7 @@ class f extends l.PureComponent {
             playing: e,
             muted: t,
             showMediaPlaceholder: n,
-            onToggleMute: r,
+            onToggleMute: l,
             sku: s,
             isHorizontal: o,
             storeListing: p
@@ -65,7 +65,7 @@ class f extends l.PureComponent {
             containerClassName: x.A$,
             backgroundImageClassName: x.iZ,
             foregroundImageClassName: x.O7
-        }) : (0, i.jsxs)(l.Fragment, {
+        }) : (0, i.jsxs)(r.Fragment, {
             children: [(0, i.jsx)(u.A, {
                 className: a()(x.H1, {
                     [x.ZC]: o
@@ -76,7 +76,7 @@ class f extends l.PureComponent {
                 playing: e,
                 muted: t,
                 placeholder: n,
-                onToggleMute: r,
+                onToggleMute: l,
                 splashClassName: x.ZI,
                 splashPlaceholderClassName: x.NB
             }), s.exclusive ? (0, i.jsx)(c.A, {
@@ -95,17 +95,17 @@ class f extends l.PureComponent {
             sku: e,
             storeListing: t,
             isHorizontal: n,
-            className: l,
-            renderCustomTagline: r,
+            className: r,
+            renderCustomTagline: l,
             renderCustomTitle: a,
             renderCustomMedia: s,
             isEmbed: o
         } = this.props, d = o ? p.ug : g.A;
         return (0, i.jsx)(d, {
-            className: l,
+            className: r,
             renderMedia: null != s ? s : this.renderMedia,
             renderTitle: null != a ? a : () => e.name,
-            renderTagline: null != r ? r : () => t.tagline,
+            renderTagline: null != l ? l : () => t.tagline,
             renderActions: this.renderActions,
             isHorizontal: n
         })

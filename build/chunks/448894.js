@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(284009),
-    a = n.n(r),
+    r = n(64700),
+    l = n(284009),
+    a = n.n(l),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -26,7 +26,7 @@ var i = n(627968),
 function b(e) {
     let t, {
             invite: n,
-            currentUserId: r,
+            currentUserId: l,
             guild: b,
             message: T,
             onTransitionToInviteChannel: v,
@@ -44,12 +44,12 @@ function b(e) {
     a()(null != n, "Invite cannot be null");
     let {
         target_type: w,
-        target_user: O
+        target_user: D
     } = n;
-    a()(w === C.yV.STREAM && null != O, "invalid streaming invite");
-    let D = r === O.id,
+    a()(w === C.yV.STREAM && null != D, "invalid streaming invite");
+    let O = l === D.id,
         k = n.state === f.elq.ACCEPTING,
-        U = l.useCallback(() => {
+        U = r.useCallback(() => {
             let e = "noop";
             P ? (v(), e = "transition") : (S(), e = "accept"), (0, d.he)({
                 invite: n,
@@ -64,13 +64,13 @@ function b(e) {
         b = (0, g.DY)(n.guild)
     }
     let B = null != n.channel ? (0, m.OY)(n.channel) : null,
-        F = A.Ay.getName(O),
+        F = A.Ay.getName(D),
         H = P || !M && G,
         V = E.intl.string(E.t.I6JG46),
         W = "active";
-    G && !M ? (t = D ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    G && !M ? (t = O ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: F
-    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = D ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
+    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = O ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: F
     }));
     let q = N === b.id && null != B ? (0, i.jsx)(_.A.Channel, {

@@ -3,8 +3,8 @@ n.d(t, {
     A: () => _
 });
 var i = n(627968),
-    l = n(732955),
-    r = n(79545),
+    r = n(732955),
+    l = n(79545),
     a = n(561393),
     s = n(884392),
     o = n(985018);
@@ -13,7 +13,7 @@ function d(e) {
     let {
         taskType: t
     } = e;
-    return (0, i.jsx)(l.$nd, {
+    return (0, i.jsx)(r.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
@@ -25,7 +25,7 @@ function c(e) {
     let {
         taskType: t
     } = e;
-    return (0, i.jsx)(l.$nd, {
+    return (0, i.jsx)(r.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
@@ -37,7 +37,7 @@ function u(e) {
     let {
         taskType: t
     } = e;
-    return (0, i.jsx)(l.$nd, {
+    return (0, i.jsx)(r.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
@@ -55,8 +55,8 @@ let _ = function(e) {
         analyticsCtxQuestContentRowIndex: g,
         size: A = "md",
         variant: x = "primary"
-    } = e, f = (0, r.Pd)(t);
-    if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, i.jsx)(l.$nd, {
+    } = e, f = (0, l.Pd)(t);
+    if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, i.jsx)(r.$nd, {
         variant: "primary",
         fullWidth: !0,
         size: "sm",
@@ -64,7 +64,7 @@ let _ = function(e) {
     });
     let C = Object.values(t.config.taskConfigV2.tasks)[0];
     switch (f) {
-        case r.UA.UNENROLLED:
+        case l.UA.UNENROLLED:
             return (0, i.jsx)(s.A, {
                 variant: x,
                 quest: t,
@@ -76,7 +76,7 @@ let _ = function(e) {
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g
             });
-        case r.UA.ENROLLED:
+        case l.UA.ENROLLED:
             return (0, i.jsx)(a.A, {
                 quest: t,
                 taskType: C.type,
@@ -87,20 +87,20 @@ let _ = function(e) {
                 analyticsCtxQuestContentRowIndex: g,
                 surface: n
             });
-        case r.UA.INCOMPLETE:
+        case l.UA.INCOMPLETE:
             return (0, i.jsx)(d, {
                 taskType: C.type
             });
-        case r.UA.COMPLETED:
+        case l.UA.COMPLETED:
             return (0, i.jsx)(c, {
                 taskType: C.type
             });
-        case r.UA.CLAIMED:
+        case l.UA.CLAIMED:
             return (0, i.jsx)(u, {
                 taskType: C.type
             });
         default:
-            return (0, i.jsx)(l.$nd, {
+            return (0, i.jsx)(r.$nd, {
                 variant: "primary",
                 fullWidth: !0,
                 size: A,

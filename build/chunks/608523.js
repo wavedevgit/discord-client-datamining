@@ -21,26 +21,26 @@ let u = e => {
                 character_limit: x,
                 pattern: p
             },
-            onChange: g,
-            initialText: h,
+            onChange: h,
+            initialText: g,
             isRequired: A
         } = e, v = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: s.B
-        }), []), [b, f] = a.useState(""), [C, j] = a.useState(null);
+        }), []), [f, b] = a.useState(""), [C, j] = a.useState(null);
         a.useEffect(() => {
-            f(h?.value ?? "")
-        }, [h]);
+            b(g?.value ?? "")
+        }, [g]);
         let T = a.useCallback(e => {
             let t = null != p ? new RegExp(p) : null;
-            null == t || t.test(e) ? null != e && (j(null), f(e), g({
+            null == t || t.test(e) ? null != e && (j(null), b(e), h({
                 value: e,
                 isValid: !0
-            })) : (j(d.intl.string(d.t["24xrGb"])), g({
+            })) : (j(d.intl.string(d.t["24xrGb"])), h({
                 value: e,
                 isValid: !1
             }))
-        }, [g, p]);
+        }, [h, p]);
         return (0, l.jsxs)("div", {
             className: c.QB,
             children: [(0, l.jsxs)("div", {
@@ -62,14 +62,14 @@ let u = e => {
             }), 1 === m ? (0, l.jsx)(r.ksK, {
                 maxLength: x,
                 onChange: T,
-                value: b,
+                value: f,
                 error: C,
                 placeholder: _,
                 autoFocus: !0
             }) : (0, l.jsx)(r.fs1, {
                 maxLength: x,
                 onChange: T,
-                value: b,
+                value: f,
                 error: C,
                 rows: m,
                 placeholder: _,

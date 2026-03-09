@@ -7,8 +7,8 @@ n.r(t), n.d(t, {
 });
 var i = n(791332),
     s = n.n(i),
-    r = n(873879),
-    a = n(683412),
+    a = n(873879),
+    r = n(683412),
     o = n(704726),
     u = n(46054);
 let c = s().defaultRules.lheading,
@@ -27,15 +27,15 @@ let v = e => {
         } = e;
         return (e, n, l) => {
             let i = f.exec(e[1]),
-                r = e[1].replace(f, "");
-            return t && (r = r.toUpperCase()), {
+                a = e[1].replace(f, "");
+            return t && (a = a.toUpperCase()), {
                 className: null != i ? i[1] : null,
                 level: "=" === e[2] ? 1 : 2,
-                content: s().parseInline(n, r, l)
+                content: s().parseInline(n, a, l)
             }
         }
     },
-    N = e => ({
+    j = e => ({
         ...l.baseRules,
         image: {
             ...h,
@@ -85,15 +85,15 @@ let v = e => {
         }
     });
 
-function j(e) {
+function N(e) {
     return {
-        ...N(e)
+        ...j(e)
     }
 }
 let b = {
-    getDefaultRules: j,
+    getDefaultRules: N,
     getSpecialRules: e => ({
-        ...N(e),
+        ...j(e),
         ...{
             lheading: {
                 ...c,
@@ -106,13 +106,13 @@ let b = {
     }),
     getMessageRules: e => ({
         ...{
-            ...N(e),
+            ...j(e),
             newline: {
                 ...s().defaultRules.newline
             },
             text: o.Ay,
-            list: r.A,
-            subtext: a.A
+            list: a.A,
+            subtext: r.A
         }
     })
 };
@@ -121,7 +121,7 @@ function C(e, t, n) {
     return {
         hasSpoilerEmbeds: !1,
         hasBailedAst: !1,
-        content: u.A.reactParserFor(j(t))(e.content, !1, null != n ? {
+        content: u.A.reactParserFor(N(t))(e.content, !1, null != n ? {
             changeLog: n
         } : {})
     }

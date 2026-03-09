@@ -6,8 +6,8 @@ n.d(t, {
 var l = n(627968),
     i = n(64700),
     s = n(954571),
-    r = n(903369),
-    a = n(465364),
+    a = n(903369),
+    r = n(465364),
     o = n(380512),
     u = n(78377),
     c = n(536048),
@@ -23,14 +23,14 @@ function p(e, t) {
         noStyleAndInteraction: f = !1,
         isInteracting: x = !1,
         allowHeading: v = !1,
-        allowList: N = !1,
-        allowLinks: j = !1,
+        allowList: j = !1,
+        allowLinks: N = !1,
         allowDevLinks: b = !1,
         previewLinkTarget: C = !1,
         viewingChannelId: E
-    } = t, R = (0, c.I)({
+    } = t, I = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [I, T] = i.useState(!1), y = i.useCallback(e => {
+    }), [R, T] = i.useState(!1), y = i.useCallback(e => {
         e && T(!0)
     }, []);
     return i.useEffect(() => {
@@ -53,14 +53,14 @@ function p(e, t) {
                 }
             })
         }
-        return R.enabled ? {
+        return I.enabled ? {
             content: (0, l.jsx)(i.Suspense, {
                 children: (0, l.jsx)(u.O.Provider, {
                     value: {
                         messageId: e.id,
                         channelId: e.channel_id,
                         viewingChannelId: E,
-                        guildId: (0, r.U)(e),
+                        guildId: (0, a.U)(e),
                         setHasSpoilerEmbeds: y
                     },
                     children: (0, l.jsx)(g, {
@@ -68,19 +68,19 @@ function p(e, t) {
                     })
                 })
             }),
-            hasSpoilerEmbeds: I,
+            hasSpoilerEmbeds: R,
             hasBailedAst: !1
-        } : (0, a.Ay)(e, {
+        } : (0, r.Ay)(e, {
             hideSimpleEmbedContent: p,
             formatInline: A,
             noStyleAndInteraction: f,
             isInteracting: x,
             allowHeading: v,
-            allowList: N,
-            allowLinks: j,
+            allowList: j,
+            allowLinks: N,
             allowDevLinks: b,
             previewLinkTarget: C,
             viewingChannelId: E
         })
-    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, p, A, f, x, v, N, j, C, b, E, R.enabled, I])
+    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, p, A, f, x, v, j, N, C, b, E, I.enabled, R])
 }

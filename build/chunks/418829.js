@@ -42,7 +42,7 @@ function g(e) {
             accessibleDirectory: N,
             onPanelChange: y,
             navigateWithValidation: (e, t) => {
-                null == A.entry(e) ? b?.("") : k(t)
+                null == A.entry(e) && b?.(""), k(t)
             }
         })
     }, [N, k, y, b, A]);

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => f
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    a = n.n(l),
     s = n(73939),
     o = n(397927),
     d = n(505527),
@@ -17,7 +17,7 @@ var i = n(627968),
     p = n(361410),
     g = n(533990);
 let A = (e, t) => null == e && null == t || e === t;
-class x extends l.PureComponent {
+class x extends r.PureComponent {
     state = {
         disableTransitionAppear: !0,
         reactionsCount: this.props.message.reactions.length,
@@ -37,8 +37,8 @@ class x extends l.PureComponent {
             message: e,
             disableReactionCreates: t,
             disableReactionUpdates: n,
-            isLurking: l,
-            isPendingMember: r,
+            isLurking: r,
+            isPendingMember: l,
             isForumToolbar: d,
             channel: A,
             className: x,
@@ -71,8 +71,8 @@ class x extends l.PureComponent {
                 reactions: T,
                 message: e,
                 readOnly: n,
-                isLurking: l,
-                isPendingMember: r,
+                isLurking: r,
+                isPendingMember: l,
                 isForumToolbar: d,
                 useChatFontScaling: E,
                 className: C
@@ -104,22 +104,22 @@ let f = e => {
     let {
         message: t,
         maxReactions: n,
-        hoistReaction: r
+        hoistReaction: l
     } = e, {
         combinedReactions: a,
         remainingReactions: s,
         visibleReactionsCount: o
-    } = l.useMemo(() => {
+    } = r.useMemo(() => {
         let e = [],
             i = ((e, t) => {
                 if (null == t) return e;
                 let n = e.findIndex(e => A(e.emoji.id, t?.id) && A(e.emoji.name, t?.name));
                 return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-            })(t.reactions, r),
-            l = null != n && n < i.length ? i.slice(0, n) : i,
-            a = i.length - l.length,
+            })(t.reactions, l),
+            r = null != n && n < i.length ? i.slice(0, n) : i,
+            a = i.length - r.length,
             s = i.length;
-        return l.forEach(t => {
+        return r.forEach(t => {
             t.burst_count > 0 && e.push({
                 ...t,
                 type: d.v.BURST
@@ -132,7 +132,7 @@ let f = e => {
             visibleReactionsCount: s,
             remainingReactions: a
         }
-    }, [r, n, t.reactions]);
+    }, [l, n, t.reactions]);
     return (0, i.jsx)(x, {
         ...e,
         visibleReactionsCount: o,

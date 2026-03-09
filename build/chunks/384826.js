@@ -30,7 +30,7 @@ let d = e => {
                 label: t
             }
         }).sort((e, t) => e.label.localeCompare(t.label)), [u]),
-        g = a.useCallback(e => {
+        h = a.useCallback(e => {
             null != e && (x(e), n(o, e))
         }, [n, o]);
     return (0, l.jsx)("div", {
@@ -39,7 +39,7 @@ let d = e => {
             label: c,
             value: m,
             required: t.should_submit_data,
-            onSelectionChange: g,
+            onSelectionChange: h,
             options: p,
             selectionMode: "single",
             fullWidth: !0

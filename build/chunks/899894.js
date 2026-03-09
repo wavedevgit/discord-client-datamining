@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(989349),
-    r = n.n(l),
+var r = n(989349),
+    l = n.n(r),
     a = n(827734),
     s = n(397927),
     o = n(239093),
@@ -15,8 +15,8 @@ var l = n(989349),
 function u(e) {
     if (null == e.message.embeds || null == e.message.embeds[0].fields) return null;
     let t = e.message.embeds[0],
-        l = t.fields?.find(e => e.rawName === o.AT.CLASSIFICATION_ID) ?? void 0,
-        u = l?.rawValue ?? void 0,
+        r = t.fields?.find(e => e.rawName === o.AT.CLASSIFICATION_ID) ?? void 0,
+        u = r?.rawValue ?? void 0,
         _ = t.fields?.find(e => e.rawName === o.AT.INCIDENT_TIMESTAMP) ?? void 0,
         m = null == _ || null == _.rawValue ? void 0 : parseFloat(_.rawValue);
     return null == u || null == m ? null : (0, i.jsxs)(s.DUT, {
@@ -50,7 +50,7 @@ function u(e) {
                 children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     children: d.intl.format(d.t.eevFb6, {
-                        daysAgo: r()().diff(r().unix(m), "days")
+                        daysAgo: l()().diff(l().unix(m), "days")
                     })
                 })
             }), (0, i.jsx)("div", {

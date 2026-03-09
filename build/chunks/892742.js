@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(397927),
+    r = n(64700),
+    l = n(397927),
     a = n(341915),
     s = n(890687),
     o = n(710969),
@@ -25,8 +25,8 @@ function p(e) {
     } = (0, s.mL)({
         fetchPolicy: "cache-or-network",
         callerSource: "embed"
-    }), A = l.useMemo(() => (0, o.vc)(t, n, p), [t, n, p]), x = l.useMemo(() => p.find(e => e.id === t), [t, p]);
-    return g ? (0, i.jsx)(r.y$y, {
+    }), A = r.useMemo(() => (0, o.vc)(t, n, p), [t, n, p]), x = r.useMemo(() => p.find(e => e.id === t), [t, p]);
+    return g ? (0, i.jsx)(l.y$y, {
         className: h.u
     }) : null == A ? null != x ? (0, i.jsx)(c.g, {
         questId: t

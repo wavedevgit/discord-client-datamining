@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(71393);
+var r = n(397927),
+    l = n(71393);
 
 function a(e) {
     let {
@@ -13,7 +13,7 @@ function a(e) {
         analyticsLocations: a,
         ...s
     } = e;
-    (0, l.mMO)(async () => {
+    (0, r.mMO)(async () => {
         let {
             default: e
         } = await n.e("45990").then(n.bind(n, 307794));
@@ -21,7 +21,7 @@ function a(e) {
             ...t,
             ...s,
             analyticsLocations: a,
-            guildCount: r.A.getGuildCount(),
+            guildCount: l.A.getGuildCount(),
             "aria-labelledby": "nitro-guild-cap-upsell"
         })
     }, {

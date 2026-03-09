@@ -6,8 +6,8 @@ n.d(t, {
 var l = n(627968),
     i = n(64700),
     s = n(503698),
-    r = n.n(s),
-    a = n(311907),
+    a = n.n(s),
+    r = n(311907),
     o = n(473193),
     u = n(397927),
     c = n(824994),
@@ -25,13 +25,13 @@ let p = function(e) {
         disableInteraction: f = !1,
         childrenRepliedMessage: x,
         childrenExecutedCommand: v,
-        childrenHeader: N,
-        childrenSystemMessage: j,
+        childrenHeader: j,
+        childrenSystemMessage: N,
         childrenButtons: b,
         childrenMessageContent: C,
         childrenAccessories: E,
-        messageRef: R,
-        focusProps: I = {
+        messageRef: I,
+        focusProps: R = {
             offset: {
                 left: 4,
                 right: 4
@@ -44,23 +44,23 @@ let p = function(e) {
         onMouseEnter: M,
         onMouseLeave: k,
         ...O
-    } = e, w = (0, a.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), P = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [G, D] = i.useState(!1), L = i.useCallback(e => {
+    } = e, P = (0, r.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), w = (0, m.jV)(S?.guildId, P) && (0, d.kz)(S), [G, D] = i.useState(!1), L = i.useCallback(e => {
         D(!0), M?.(e)
     }, [M]), U = i.useCallback(e => {
         D(!1), k?.(e)
-    }, [k]), $ = (0, c.W)({
+    }, [k]), B = (0, c.W)({
         location: "BaseMessage"
-    }), B = (0, l.jsx)(o.C.Provider, {
+    }), $ = (0, l.jsx)(o.C.Provider, {
         value: {
             animate: G,
             setAnimate: D
         },
         children: (0, l.jsx)(u.vN3, {
-            ...I,
+            ...R,
             children: (0, l.jsxs)("div", {
-                className: r()(t, {
-                    [g.D7]: P,
-                    [g.e8]: $ && S?.displayNameStyles != null && S?.guildId == null,
+                className: a()(t, {
+                    [g.D7]: w,
+                    [g.e8]: B && S?.displayNameStyles != null && S?.guildId == null,
                     [g.iE]: !0,
                     [g.kl]: s,
                     [g.oE]: n,
@@ -71,14 +71,14 @@ let p = function(e) {
                     [g.X4]: y,
                     [g.h8]: _
                 }),
-                ref: R,
+                ref: I,
                 ...O,
                 role: "article",
                 onMouseEnter: L,
                 onMouseLeave: U,
                 children: [x, v, (0, l.jsxs)("div", {
                     className: g.PG,
-                    children: [j, N, null == j && C]
+                    children: [N, j, null == N && C]
                 }), E, null != b ? (0, l.jsx)("div", {
                     className: g.UD,
                     children: b
@@ -87,6 +87,6 @@ let p = function(e) {
         })
     });
     return f ? (0, l.jsx)(u.M1G, {
-        children: B
-    }) : B
+        children: $
+    }) : $
 }

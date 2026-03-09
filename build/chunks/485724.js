@@ -1,11 +1,11 @@
 /** chunk id: 485724 params = (module,exports,require) **/
 n.d(t, {
-    J: () => O.J,
+    J: () => D.J,
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
-    l = n(64700),
-    r = n(485845),
+    r = n(64700),
+    l = n(485845),
     a = n(379834),
     s = n(311907),
     o = n(397927),
@@ -35,15 +35,15 @@ var i = n(627968),
     P = n(138175),
     M = n(112150),
     w = n(574660),
-    O = n(768349),
-    D = n(985018),
+    D = n(768349),
+    O = n(985018),
     k = n(355208);
 
 function U(e) {
     let {
         app: t,
         linkType: n,
-        activityCustomId: r,
+        activityCustomId: l,
         activityReferrerId: a,
         message: o,
         onView: g
@@ -57,7 +57,7 @@ function U(e) {
     }), {
         staticBannerSrc: y,
         videoBannerSrc: L,
-        bannerAspectRatio: O
+        bannerAspectRatio: D
     } = (0, M.f)(t), k = (0, s.bG)([E.default], () => a ?? E.default.getId(), [a]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
@@ -71,10 +71,10 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), z = null != b && T && Y, Q = W && T, K = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = l.useMemo(() => {
+    }), z = null != b && T && Y, Q = W && T, K = (0, x.e)(t), J = (0, w.F)(t), X = (0, w.t)(t), Z = r.useMemo(() => {
         let e = [];
         return T ? K ? e.push({
-            label: D.intl.string(D.t.RscU7I),
+            label: O.intl.string(O.t.RscU7I),
             trackingArea: R.kY.PLAY,
             onClick() {
                 A.A.launchFrame({
@@ -82,7 +82,7 @@ function U(e) {
                 })
             }
         }) : (Q && e.push({
-            label: null == H ? D.intl.string(D.t.RscU7I) : V ? D.intl.string(D.t.DPfdsq) : D.intl.string(D.t.sqe0hj),
+            label: null == H ? O.intl.string(O.t.RscU7I) : V ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, d.su)({
@@ -90,26 +90,26 @@ function U(e) {
                     applicationId: t.id,
                     isStart: null == H,
                     embeddedActivitiesManager: q,
-                    customId: r,
+                    customId: l,
                     referrerId: k,
                     analyticsLocations: U
                 })
             },
             disabled: V
         }), !Q && z && e.push({
-            label: D.intl.string(D.t.JeK1Wg),
+            label: O.intl.string(O.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, m.Q)({
                     appId: t.id,
                     botId: b,
                     analyticsLocations: U,
-                    customId: r,
+                    customId: l,
                     referrerId: k
                 })
             }
         })) : null != X && e.push(X), e
-    }, [T, X, K, t.id, Q, z, H, V, F, q, r, k, U, b]), $ = T ? (0, i.jsx)(B, {
+    }, [T, X, K, t.id, Q, z, H, V, F, q, l, k, U, b]), $ = T ? (0, i.jsx)(B, {
         app: t
     }) : (0, i.jsx)(G, {
         app: t
@@ -119,7 +119,7 @@ function U(e) {
         staticBannerSrc: y,
         videoBannerSrc: L,
         onClickBanner: J,
-        bannerAspectRatio: O,
+        bannerAspectRatio: D,
         iconSrc: v,
         info: $,
         actions: Z,
@@ -128,7 +128,7 @@ function U(e) {
             id: t.id,
             linkType: n,
             referrerId: k,
-            activityCustomId: r,
+            activityCustomId: l,
             onView: g,
             guildId: I.A.getChannel(o.channel_id)?.guild_id,
             channelId: o.channel_id,
@@ -144,14 +144,14 @@ function G(e) {
         customInstallUrl: t.customInstallUrl,
         installParams: t.installParams,
         integrationTypesConfig: t.integrationTypesConfig
-    }) && null != t.integrationTypesConfig && r.b.GUILD_INSTALL in t.integrationTypesConfig, a = (0, s.bG)([C.default], () => C.default.locale, []), d = l.useMemo(() => {
+    }) && null != t.integrationTypesConfig && l.b.GUILD_INSTALL in t.integrationTypesConfig, a = (0, s.bG)([C.default], () => C.default.locale, []), d = r.useMemo(() => {
         if (!n) return null;
         let e = new Intl.NumberFormat(a, {
                 notation: "compact",
                 compactDisplay: "short"
             }),
             i = t.directoryEntry?.guild_count ?? 0;
-        return 0 === i ? null : D.intl.format(D.t["6IW6Wi"], {
+        return 0 === i ? null : O.intl.format(O.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
     }, [t.directoryEntry?.guild_count, n, a]), c = t.categories?.at(0)?.name;
@@ -179,21 +179,21 @@ function B(e) {
         app: t
     } = e, {
         tags: n,
-        maxParticipants: r = 0
+        maxParticipants: l = 0
     } = t, d = (0, s.bG)([T.A], () => T.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([v.default, b.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
             let i = v.default.getUser(n.author_id),
-                l = b.A.isFriend(n.author_id);
-            null != i && l && e.push(i)
+                r = b.A.isFriend(n.author_id);
+            null != i && r && e.push(i)
         }
         return e
-    }, [c]), _ = l.useMemo(() => {
+    }, [c]), _ = r.useMemo(() => {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
-            activityText: D.intl.formatToPlainString(D.t["IJa+46"], {
+            activityText: O.intl.formatToPlainString(O.t["IJa+46"], {
                 count: u.length
             })
         });
@@ -201,18 +201,18 @@ function B(e) {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"
-            }), D.intl.string(D.t.TsWCdW)]
+            }), O.intl.string(O.t.TsWCdW)]
         });
-        let e = r > 0 ? D.intl.format(D.t.z8EAJW, {
-            count: r
-        }) : D.intl.string(D.t.RjceQU);
+        let e = l > 0 ? O.intl.format(O.t.z8EAJW, {
+            count: l
+        }) : O.intl.string(O.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "xxs",
                 color: "currentColor"
             }), e]
         })
-    }, [c, u, d, r]);
+    }, [c, u, d, l]);
     return (0, i.jsxs)(i.Fragment, {
         children: [n.length > 0 && (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",

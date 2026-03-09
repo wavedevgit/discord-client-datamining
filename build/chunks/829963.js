@@ -3,8 +3,8 @@ n.d(t, {
     A: () => p
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(397927),
+    r = n(64700),
+    l = n(397927),
     a = n(572211),
     s = n(354287),
     o = n(693879),
@@ -27,7 +27,7 @@ function p(e) {
         onClickContent: C,
         onView: E,
         guildId: I
-    } = e, b = (0, u.w)(f, g), T = (0, d.Gq)(g, n.author, "Invite Embed"), v = l.useMemo(() => {
+    } = e, b = (0, u.w)(f, g), T = (0, d.Gq)(g, n.author, "Invite Embed"), v = r.useMemo(() => {
         let e = [];
         return b || e.push({
             label: T.label ?? m.intl.string(m.t.VJlc0S),
@@ -41,9 +41,9 @@ function p(e) {
     }, [b, T]), S = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
-    }) : t.name, y = g?.timestamps?.start ?? g?.created_at, N = l.useMemo(() => null != y ? (0, i.jsxs)("div", {
+    }) : t.name, y = g?.timestamps?.start ?? g?.created_at, N = r.useMemo(() => null != y ? (0, i.jsxs)("div", {
         className: h.Ym,
-        children: [(0, i.jsx)(r.T7G, {
+        children: [(0, i.jsx)(l.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
@@ -55,9 +55,9 @@ function p(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [y, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
+    }) : null, [y, g?.timestamps?.end]), j = r.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             className: h.dS,
             color: "none",

@@ -15,40 +15,40 @@ var l = n(627968),
     m = n(538355),
     x = n(253932),
     p = n(734057),
-    g = n(838541),
-    h = n(985018),
+    h = n(838541),
+    g = n(985018),
     A = n(533865);
 let v = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), v = (0, r.bG)([p.A], () => p.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
-        content: f
-    } = (0, m.A)(b, {
+    } = e, n = (0, d.Ay)(t), v = (0, r.bG)([p.A], () => p.A.getChannel(t.channel_id)), f = a.useMemo(() => (0, s.A)(t), [t]), {
+        content: b
+    } = (0, m.A)(f, {
         hideSimpleEmbedContent: !1
     }), C = x.hH.useSetting(), j = a.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
-        } = (0, _.o)(t, f, !1, !1, "", {
+        } = (0, _.o)(t, b, !1, !1, "", {
             leadingIconClass: A.$r,
             trailingIconClass: A.$r,
-            iconSize: g.eJ
+            iconSize: h.eJ
         });
         return (0, l.jsxs)("div", {
             className: A.hQ,
             children: [e, (0, l.jsx)(c.Ay, {
                 message: t,
-                content: f,
+                content: b,
                 compact: C
             }), n]
         })
-    }, [t, f, C]);
+    }, [t, b, C]);
     return null == v ? null : (0, l.jsxs)("div", {
         className: A.kL,
         children: [(0, l.jsx)(i.Heading, {
             className: A.wx,
             variant: "heading-sm/semibold",
-            children: h.intl.string(h.t.iouM3a)
+            children: g.intl.string(g.t.iouM3a)
         }), (0, l.jsx)(i.HOs, {
             className: A.PI,
             children: (0, l.jsx)(o.A, {

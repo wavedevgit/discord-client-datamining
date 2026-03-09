@@ -3,8 +3,8 @@ n.d(t, {
     f: () => S
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(735438),
+    r = n(64700),
+    l = n(735438),
     a = n(110259),
     s = n(239947),
     o = n(934551),
@@ -31,7 +31,7 @@ let v = e => e.map(e => `#${e}`),
         } = e, {
             sharedClientTheme: n
         } = t, {
-            setAll: l
+            setAll: r
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
             className: T.kL,
@@ -44,7 +44,7 @@ let v = e => e.map(e => `#${e}`),
                 onClick: () => {
                     A.default.track(E.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
                         from: h.xv.SHARE_MESSAGE
-                    }), l({
+                    }), r({
                         colors: v(n.colors),
                         chassisMixAmount: n.base_mix,
                         gradientAngle: n.gradient_angle
@@ -61,7 +61,7 @@ let v = e => e.map(e => `#${e}`),
                 sharedClientTheme: g
             } = h,
             A = (0, p.Ay)(h),
-            x = l.useMemo(() => (0, r.once)(() => {
+            x = r.useMemo(() => (0, l.once)(() => {
                 (0, _.x)({
                     type: a.ImpressionTypes.VIEW,
                     name: s.I.CUSTOM_THEME_SHARE,
@@ -75,7 +75,7 @@ let v = e => e.map(e => `#${e}`),
                 threshold: 1,
                 minTimeVisibleMs: 200
             }),
-            E = l.useMemo(() => void 0 === g ? "" : (0, C.V9)(v(g.colors), g.gradient_angle ?? 0), [g]);
+            E = r.useMemo(() => void 0 === g ? "" : (0, C.V9)(v(g.colors), g.gradient_angle ?? 0), [g]);
         return void 0 === g ? null : (0, i.jsxs)("div", {
             className: T.pS,
             ref: f,
@@ -94,7 +94,7 @@ let v = e => e.map(e => `#${e}`),
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     className: T.Tb,
-                    children: (t = `${b.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(l.Fragment, {
+                    children: (t = `${b.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(r.Fragment, {
                         children: [e, " "]
                     }, t) : (0, i.jsxs)("span", {
                         className: T.H,

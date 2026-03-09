@@ -1,6 +1,6 @@
 /** chunk id: 842012 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var l = n(627968),
     a = n(64700),
@@ -15,26 +15,26 @@ var l = n(627968),
     m = n(477427),
     x = n(652215),
     p = n(985018);
-let g = e => {
+let h = e => {
     let {
         user: t,
         channelId: n,
-        reportId: g
-    } = e, h = c.A.getDMFromUserId(t.id), A = (0, r.bG)([c.A], () => c.A.getChannel(n), [n]), v = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), b = (0, r.bG)([u.Ay], () => null == h ? null : u.Ay.isChannelMuted(null, h)), [f, C] = a.useState(b ?? !1), j = a.useCallback(() => {
-        null != h && (C(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
+        reportId: h
+    } = e, g = c.A.getDMFromUserId(t.id), A = (0, r.bG)([c.A], () => c.A.getChannel(n), [n]), v = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), f = (0, r.bG)([u.Ay], () => null == g ? null : u.Ay.isChannelMuted(null, g)), [b, C] = a.useState(f ?? !1), j = a.useCallback(() => {
+        null != g && (C(!0), s.Ay.trackWithMetadata(x.HAw.IAR_MUTE_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
-            report_id: g
-        }), i.A.updateChannelOverrideSettings(null, h, {
+            report_id: h
+        }), i.A.updateChannelOverrideSettings(null, g, {
             muted: !0
         }, m.fd.Muted), d.A.showMuteSuccessToast(t.id, n))
-    }, [h, n, t, g]);
+    }, [g, n, t, h]);
     return (0, l.jsx)(o.PQ, {
         title: p.intl.formatToPlainString(p.t.TRp5wR, {
             username: v
         }),
         description: p.intl.string(p.t["yM/+AJ"]),
-        buttonText: f ? p.intl.string(p.t.E8x4Nj) : p.intl.string(p.t.HITUcR),
-        buttonDisabled: f,
+        buttonText: b ? p.intl.string(p.t.E8x4Nj) : p.intl.string(p.t.HITUcR),
+        buttonDisabled: b,
         onButtonPress: j
     })
 }

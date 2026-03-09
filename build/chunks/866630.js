@@ -3,9 +3,9 @@ n.d(t, {
     A: () => A
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    r = n(64700),
+    l = n(503698),
+    a = n.n(l),
     s = n(172218),
     o = n(317097),
     d = n(565645),
@@ -15,10 +15,10 @@ var i = n(627968),
     m = n(260821),
     h = n(361410),
     p = n(533990);
-let g = l.memo(function(e) {
+let g = r.memo(function(e) {
         let t, n, {
-                useChatFontScaling: l,
-                hideEmoji: r,
+                useChatFontScaling: r,
+                hideEmoji: l,
                 emoji: s,
                 className: g,
                 count: A,
@@ -35,7 +35,7 @@ let g = l.memo(function(e) {
             y = v === _.v.BURST,
             N = (0, m.IN)(x, f, v),
             j = (0, u.g)(y && null != E ? E : []),
-            L = l ? p : h,
+            L = r ? p : h,
             R = y ? C : A,
             P = (0, c.x)(R, m.$Z),
             M = {};
@@ -43,9 +43,9 @@ let g = l.memo(function(e) {
             let {
                 accentColor: e,
                 backgroundColor: i,
-                opacity: l
-            } = j, r = (0, o.xp)(i ?? "", l) ?? "";
-            N && (M.borderColor = i), M.background = r, t = e, n = e
+                opacity: r
+            } = j, l = (0, o.xp)(i ?? "", r) ?? "";
+            N && (M.borderColor = i), M.background = l, t = e, n = e
         }
         let w = {
             minWidth: P,
@@ -60,7 +60,7 @@ let g = l.memo(function(e) {
             style: M,
             children: [(0, i.jsx)(d.A, {
                 className: a()({
-                    [L.hideEmoji]: r
+                    [L.hideEmoji]: l
                 }),
                 emojiId: s.id,
                 emojiName: s.name,
@@ -73,12 +73,12 @@ let g = l.memo(function(e) {
             })]
         })
     }),
-    A = l.memo(function(e) {
+    A = r.memo(function(e) {
         let {
             showImmediate: t,
             reactions: n,
-            ...r
-        } = e, [a, o] = l.useState(!1), [d, c] = l.useTransition(), u = l.useCallback(e => {
+            ...l
+        } = e, [a, o] = r.useState(!1), [d, c] = r.useTransition(), u = r.useCallback(e => {
             !e || a || d || c(() => {
                 o(!0)
             })
@@ -87,7 +87,7 @@ let g = l.memo(function(e) {
             children: [(0, i.jsx)("div", {
                 ref: h
             }), n.map(e => (0, i.jsx)(p, {
-                ...r,
+                ...l,
                 ...e,
                 emojiSize: "reaction"
             }, `${e.type===_.v.BURST?"burst:":""}${e.emoji.id??0}:${e.emoji.name}`))]

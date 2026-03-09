@@ -19,7 +19,7 @@ let _ = e => {
     a.useEffect(() => {
         m(!p)
     }, [p]);
-    let g = a.useCallback(() => {
+    let h = a.useCallback(() => {
         m(!0), i.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,
             report_id: n
@@ -42,7 +42,7 @@ let _ = e => {
                     name: x.name
                 }),
                 confirmText: u.intl.string(u.t.J2TBi3),
-                onConfirm: g
+                onConfirm: h
             })
         }
     })

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
+var r = n(503698),
+    l = n.n(r),
     a = n(835245),
     s = n(397927),
     o = n(954571),
@@ -22,12 +22,12 @@ function A(e) {
     let {
         questId: t,
         questContent: n,
-        fullWidth: l
+        fullWidth: r
     } = e;
     return (0, i.jsx)("div", {
         className: p.UD,
         children: (0, i.jsx)(s.Button, {
-            fullWidth: l,
+            fullWidth: r,
             variant: "primary",
             onClick: () => {
                 (0, u.navigateToQuestHome)({
@@ -49,7 +49,7 @@ function x(e) {
     let {
         questId: t,
         fallbackReason: n,
-        bodyText: l,
+        bodyText: r,
         questContent: a
     } = e, {
         containerRef: o,
@@ -59,7 +59,7 @@ function x(e) {
         ref: e => {
             o.current = e
         },
-        className: r()(p.kL, {
+        className: l()(p.kL, {
             [p.U]: "lg" === c,
             [p.SP]: "lg" !== c
         }),
@@ -73,7 +73,7 @@ function x(e) {
                 variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
                 color: "text-default",
                 className: p.__invalid_mobileWebCopy,
-                children: l
+                children: r
             }), (0, i.jsx)(A, {
                 questId: t,
                 questContent: a,

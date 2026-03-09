@@ -3,9 +3,9 @@ n.d(t, {
     A: () => a
 }), n(938796);
 var i = n(665260),
-    l = n(427930),
-    r = n(652215);
+    r = n(427930),
+    l = n(652215);
 
 function a(e) {
-    return !(e.type !== r.lAJ.DEFAULT || null != e.poll || (0, i.Lt)(e.flags ?? 0, r.pr7.EPHEMERAL) || ("messageReference" in e ? (0, l.A)(e) : (0, l.m)(e)))
+    return !(e.type !== l.lAJ.DEFAULT || null != e.poll || (0, i.Lt)(e.flags ?? 0, l.pr7.EPHEMERAL) || ("messageReference" in e ? (0, r.A)(e) : (0, r.m)(e)))
 }

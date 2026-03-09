@@ -19,8 +19,8 @@ let p = e => {
         user: t,
         channelId: n,
         reportId: p,
-        reportType: g
-    } = e, h = (0, r.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), A = (0, r.bG)([c.A], () => c.A.getChannel(n), [n]), v = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), b = a.useCallback(() => {
+        reportType: h
+    } = e, g = (0, r.bG)([u.A], () => u.A.isBlocked(t.id), [t.id]), A = (0, r.bG)([c.A], () => c.A.getChannel(n), [n]), v = a.useMemo(() => _.Ay.getName(A?.guild_id, A?.id, t), [A, t]), f = a.useCallback(() => {
         s.Ay.trackWithMetadata(m.HAw.IAR_BLOCK_USER_BUTTON_CLICKED, {
             other_user_id: t.id,
             report_id: p
@@ -35,9 +35,9 @@ let p = e => {
             username: v
         }),
         description: x.intl.string(x.t.G08MKu),
-        buttonText: h ? x.intl.string(x.t.ot2tSp) : x.intl.string(x.t["l+7PZY"]),
-        buttonDisabled: h,
-        onButtonPress: b,
-        buttonVariant: "application" === g.name && h ? "secondary" : "critical-primary"
+        buttonText: g ? x.intl.string(x.t.ot2tSp) : x.intl.string(x.t["l+7PZY"]),
+        buttonDisabled: g,
+        onButtonPress: f,
+        buttonVariant: "application" === h.name && g ? "secondary" : "critical-primary"
     })
 }

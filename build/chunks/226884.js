@@ -7,8 +7,8 @@ var l = n(627968);
 n(64700);
 var i = n(397927),
     s = n(964486),
-    r = n(58149),
-    a = n(652176),
+    a = n(58149),
+    r = n(652176),
     o = n(448290),
     u = n(734057),
     c = n(309010),
@@ -28,7 +28,7 @@ let p = function(e) {
             guild_id: t.id,
             channel_id: A?.id
         })
-    }), null == A) ? null : (0, l.jsx)(a.Uq, {
+    }), null == A) ? null : (0, l.jsx)(r.Uq, {
         className: g.cc,
         children: (0, l.jsxs)("div", {
             className: g.jC,
@@ -63,7 +63,7 @@ let p = function(e) {
                     }),
                     fullWidth: !0,
                     onClick: () => {
-                        r.Ay.trackWithMetadata(m.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
+                        a.Ay.trackWithMetadata(m.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
                             target_user_id: n.author.id
                         }), p(), (0, o.C)(n.author, A.id)
                     }

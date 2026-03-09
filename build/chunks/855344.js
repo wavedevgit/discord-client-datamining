@@ -7,8 +7,8 @@ var l = n(627968);
 n(64700);
 var i = n(311907),
     s = n(3026),
-    r = n(397927),
-    a = n(964486),
+    a = n(397927),
+    r = n(964486),
     o = n(58149),
     u = n(376304),
     c = n(509536),
@@ -21,8 +21,8 @@ var i = n(311907),
     f = n(954571),
     x = n(652176),
     v = n(652215),
-    N = n(746080),
-    j = n(985018),
+    j = n(746080),
+    N = n(985018),
     b = n(679444);
 let C = e => {
     let {
@@ -31,7 +31,7 @@ let C = e => {
     } = e, {
         name: C
     } = t;
-    (0, a.Ay)(() => {
+    (0, r.Ay)(() => {
         f.default.track(v.HAw.OPEN_POPOUT, {
             type: "Role Icon Popout",
             guild_id: n.id,
@@ -39,10 +39,10 @@ let C = e => {
         })
     });
     let E = (0, i.bG)([p.A], () => null != t.roleId ? p.A.getRole(n.id, t.roleId) : void 0),
-        R = (0, d.U)(E),
-        I = R ? j.intl.formatToPlainString(j.t.t0928V, {
+        I = (0, d.U)(E),
+        R = I ? N.intl.formatToPlainString(N.t.t0928V, {
             name: C
-        }) : j.intl.formatToPlainString(j.t.UDDkGy, {
+        }) : N.intl.formatToPlainString(N.t.UDDkGy, {
             name: C
         }),
         T = {
@@ -50,8 +50,8 @@ let C = e => {
             src: null == t.src ? t.src : (0, u.ux)(t.src, 40),
             size: 40
         },
-        y = R ? () => {
-            (0, h.pX)(v.BVt.CHANNEL(n.id, N.VV.ROLE_SUBSCRIPTIONS))
+        y = I ? () => {
+            (0, h.pX)(v.BVt.CHANNEL(n.id, j.VV.ROLE_SUBSCRIPTIONS))
         } : () => {
             (0, c.K)({
                 guildId: n.id,
@@ -60,7 +60,7 @@ let C = e => {
                 }
             })
         };
-    return (0, l.jsx)(r.lGe, {
+    return (0, l.jsx)(a.lGe, {
         children: (0, l.jsx)(x.Uq, {
             children: (0, l.jsxs)("div", {
                 className: b.jC,
@@ -76,23 +76,23 @@ let C = e => {
                         })
                     }), (0, l.jsxs)("div", {
                         className: b.bM,
-                        children: [(0, l.jsx)(r.Heading, {
+                        children: [(0, l.jsx)(a.Heading, {
                             variant: "heading-md/semibold",
                             className: b.S3,
                             children: (0, l.jsx)(s.A, {
                                 children: C
                             })
-                        }), (0, l.jsx)(r.Text, {
+                        }), (0, l.jsx)(a.Text, {
                             variant: "text-sm/normal",
-                            children: I
+                            children: R
                         })]
                     })]
-                }), (0, l.jsx)(r.Button, {
+                }), (0, l.jsx)(a.Button, {
                     size: "sm",
                     variant: "secondary",
-                    text: j.intl.string(j.t["H930+H"]),
+                    text: N.intl.string(N.t["H930+H"]),
                     onClick: y,
-                    icon: r._Jp,
+                    icon: a._Jp,
                     fullWidth: !0,
                     autoFocus: !0
                 })]

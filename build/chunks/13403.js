@@ -3,8 +3,8 @@ n.d(t, {
     A: () => M
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(311907),
+    r = n(64700),
+    l = n(311907),
     a = n(554146),
     s = n(342494),
     o = n(397927),
@@ -36,8 +36,8 @@ var i = n(627968),
 function M(e) {
     var t, n;
     let M, w, {
-            analyticsLocations: O,
-            application: D,
+            analyticsLocations: D,
+            application: O,
             channel: k,
             currentUserId: U,
             currentUserPresenceActivity: G,
@@ -47,7 +47,7 @@ function M(e) {
             partyStatusElement: V,
             presenceActivity: W
         } = e,
-        q = (0, d.Ag)(D),
+        q = (0, d.Ag)(O),
         {
             iconSrc: Y,
             name: z
@@ -63,16 +63,16 @@ function M(e) {
                 }),
                 name: e.activity?.name_override ?? t.name
             }
-        }(F, D),
+        }(F, O),
         Q = (0, N.I)({
             messageId: F.id,
             presenceActivity: W,
-            application: D
+            application: O
         }) ?? void 0,
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = D.id, n = F.author.id, M = (0, f.d)(t), w = (0, r.bG)([m.A, C.A], () => {
+        } = (t = O.id, n = F.author.id, M = (0, f.d)(t), w = (0, l.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
@@ -86,10 +86,10 @@ function M(e) {
             launchableAppId: M
         }),
         X = (0, y.A)({
-            application: D,
-            analyticsLocations: O
+            application: O,
+            analyticsLocations: D
         }),
-        Z = l.useMemo(() => {
+        Z = r.useMemo(() => {
             if (null != X) return {
                 label: P.intl.string(P.t["jaYS/h"]),
                 icon: o.hpF,
@@ -97,21 +97,21 @@ function M(e) {
                 onClick: X
             }
         }, [X]),
-        $ = (0, p.F)(D),
-        ee = l.useMemo(() => null != K ? K : null != $ && q ? $ : void 0, [q, K, $]),
+        $ = (0, p.F)(O),
+        ee = r.useMemo(() => null != K ? K : null != $ && q ? $ : void 0, [q, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
         }),
         {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
-            startAuthorization: el
-        } = (0, _.RD)(D),
-        er = (0, u.z)(el, ei),
-        ea = !(0, v.A)(W, F, D.id),
+            startAuthorization: er
+        } = (0, _.RD)(O),
+        el = (0, u.z)(er, ei),
+        ea = !(0, v.A)(W, F, O.id),
         es = (0, T.n$)(z, F.activity?.type, ea),
-        eo = l.useRef(null),
-        ed = (0, r.bG)([E.A], () => E.A.getMessages(k.id)),
+        eo = r.useRef(null),
+        ed = (0, l.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
             return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
@@ -126,11 +126,11 @@ function M(e) {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
                             props: {
-                                application: D
+                                application: O
                             }
                         },
                         title: P.intl.formatToPlainString(P.t["lo6H6+"], {
-                            gameName: D.name
+                            gameName: O.name
                         }),
                         body: P.intl.string(P.t.qYAzOp),
                         targetElementRef: eo,
@@ -146,7 +146,7 @@ function M(e) {
         };
     return ea ? (0, i.jsx)(j.A, {
         message: F,
-        application: D,
+        application: O,
         applicationName: z,
         channel: k,
         header: es,
@@ -159,14 +159,14 @@ function M(e) {
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        analyticsLocations: O,
+        analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: er,
+        startAuthorization: el,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
         message: F,
-        application: D,
+        application: O,
         applicationName: z,
         channel: k,
         header: es,
@@ -182,10 +182,10 @@ function M(e) {
         currentUserPresenceActivity: G,
         hideParty: B,
         partyStatusElement: V,
-        analyticsLocations: O,
+        analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: er,
+        startAuthorization: el,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

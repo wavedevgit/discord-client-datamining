@@ -17,28 +17,28 @@ let x = e => {
     let {
         application: t,
         reportId: n
-    } = e, [x, p] = a.useState(!1), g = (0, r.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
+    } = e, [x, p] = a.useState(!1), h = (0, r.bG)([u.default], () => u.default.getNewestTokenForApplication(t.id));
     a.useEffect(() => {
-        null != g && p(!0)
-    }, [g]);
-    let h = a.useRef(!1);
+        null != h && p(!0)
+    }, [h]);
+    let g = a.useRef(!1);
     a.useEffect(() => {
-        h.current || (i.A.fetch(), h.current = !0)
+        g.current || (i.A.fetch(), g.current = !0)
     }, []);
     let A = (0, r.bG)([s.Ay], () => s.Ay.getSelfEmbeddedActivities()),
         v = a.useCallback(() => {
             if (p(!1), o.Ay.trackWithMetadata(_.HAw.IAR_DEAUTHORIZE_APP_BUTTON_CLICKED, {
                     application_id: t.id,
                     report_id: n
-                }), null == g) return;
-            i.A.delete(g.id);
+                }), null == h) return;
+            i.A.delete(h.id);
             let e = A.get(t.id);
             null != e && d.A.leaveActivity({
                 location: e.location,
                 applicationId: t.id,
                 showFeedback: !1
             })
-        }, [t.id, g, A, n]);
+        }, [t.id, h, A, n]);
     return null == t ? null : (0, l.jsx)(c.PQ, {
         title: m.intl.string(m.t.ygG62M),
         description: m.intl.string(m.t.S51EKg),

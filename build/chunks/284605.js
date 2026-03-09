@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(417597),
-    r = n(732955),
+var r = n(417597),
+    l = n(732955),
     a = n(492749),
     s = n(827186),
     o = n(465932),
@@ -35,14 +35,14 @@ function E(e) {
         thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: O
-    } = (0, o.MH)(n), D = (0, g.X)(t), k = (0, x.A)({
+    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: D
+    } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
     });
-    if (null == L || O) return null;
+    if (null == L || D) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -76,9 +76,9 @@ function E(e) {
         imageUrl: P,
         name: t.name,
         description: t.description,
-        formattedPrice: D,
+        formattedPrice: O,
         role: R,
-        ctaComponent: (0, i.jsx)(r.$nd, {
+        ctaComponent: (0, i.jsx)(l.$nd, {
             ...k
         }),
         productType: M,
