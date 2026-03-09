@@ -96,7 +96,7 @@ function R(e) {
         className: c,
         isLoading: u,
         recommendations: m
-    } = e, x = (0, g.h)(b.XR), p = (0, o.bG)([_.default], () => _.default.getUser(t?.userId)), h = (0, j.G)("add_to_wishlist_grid"), A = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), I = m.filter(e => !A.has(e.id)).slice(0, d);
+    } = e, x = (0, g.h)(b.XR), p = (0, o.bG)([_.default], () => _.default.getUser(t?.userId)), h = (0, j.GG)("add_to_wishlist_grid"), A = l.useMemo(() => new Set(t?.items.map(e => e.skuId) ?? []), [t]), I = m.filter(e => !A.has(e.id)).slice(0, d);
     return u ? (0, i.jsx)("div", {
         className: y.g4,
         children: (0, i.jsx)(f.k, {})

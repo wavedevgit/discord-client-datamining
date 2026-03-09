@@ -3,8 +3,8 @@ t.d(_, {
     A: () => S
 });
 var n = t(311907),
-    l = t(73153);
-let r = {},
+    r = t(73153);
+let l = {},
     o = null,
     i = [],
     a = !1,
@@ -18,10 +18,10 @@ function p() {
 class u extends n.Ay.Store {
     static displayName = "AppliedGuildBoostStore";
     getAppliedGuildBoostsForGuild(e) {
-        return null != r[e] ? r[e].subscriptions : null
+        return null != l[e] ? l[e].subscriptions : null
     }
     getLastFetchedAtForGuild(e) {
-        return null != r[e] ? r[e].lastFetchedAt : null
+        return null != l[e] ? l[e].lastFetchedAt : null
     }
     getCurrentUserAppliedBoosts() {
         return i
@@ -45,13 +45,13 @@ class u extends n.Ay.Store {
         return a
     }
 }
-let S = new u(l.h, {
+let S = new u(r.h, {
     GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function(e) {
         let {
             guildId: _,
             appliedBoosts: t
         } = e;
-        r[_] = {
+        l[_] = {
             subscriptions: t,
             lastFetchedAt: Date.now()
         }

@@ -38,7 +38,7 @@ function b(t) {
     })
 }
 
-function y(t) {
+function G(t) {
     let {
         sku: e,
         onDetailsClick: i,
@@ -55,8 +55,8 @@ function y(t) {
         maxWishlistLength: L,
         spec: h = k,
         guildId: b,
-        channelId: y
-    } = t, [G, R] = r.useState(!1), M = I === L - 1 && g > L, N = r.useCallback(() => {
+        channelId: G
+    } = t, [y, R] = r.useState(!1), M = I === L - 1 && g > L, N = r.useCallback(() => {
         if (M) return void l();
         let t = c === p.uS.WISHLIST ? "wishlist" : "shop";
         _.default.track(E.HAw.GIFTING_ITEM_CLICKED, {
@@ -87,27 +87,27 @@ function y(t) {
         sku: e,
         user: o,
         spec: h,
-        skuPreviewStyle: a()(O.e, C, G ? T : void 0),
+        skuPreviewStyle: a()(O.e, C, y ? T : void 0),
         onClick: N,
         onHoverOrFocusChange: R,
         children: [d && c === p.uS.WISHLIST && (0, n.jsx)(f.X, {
             spec: h,
             users: [o],
             guildId: b ?? void 0,
-            channelId: y ?? void 0
+            channelId: G ?? void 0
         }), !M && (0, n.jsx)(S.AJ, {
             spec: h,
             onClick: x ? P : N,
             label: v,
             icon: w,
-            isHoveringOrFocusing: G
+            isHoveringOrFocusing: y
         }), M && (0, n.jsx)(m.Yb, {
             count: g - L + 1
         })]
     })
 }
 
-function G(t) {
+function y(t) {
     let {
         sku: e,
         wishlistOwner: i,
@@ -133,7 +133,7 @@ function G(t) {
             analyticsLocations: [...s ?? [], u.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD_GIFT_BUTTON]
         })
     }, [e, i, s, a]);
-    return (0, n.jsx)(y, {
+    return (0, n.jsx)(G, {
         sku: e,
         wishlistOwner: i,
         analyticsLocations: s,
@@ -168,7 +168,7 @@ function R(t) {
     }, [o, e.id, s, i]), p = r.useCallback(() => {
         o?.(), I()
     }, [o, I]);
-    return (0, n.jsx)(y, {
+    return (0, n.jsx)(G, {
         sku: e,
         wishlistOwner: i,
         analyticsLocations: s,
@@ -190,7 +190,7 @@ function M(t) {
     } = t;
     switch (e.productLine) {
         case E.EZt.SOCIAL_LAYER_GAME_ITEM:
-            return (0, n.jsx)(G, {
+            return (0, n.jsx)(y, {
                 sku: e,
                 ...i
             });

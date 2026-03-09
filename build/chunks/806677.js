@@ -199,7 +199,7 @@ function $(e) {
         isLoading: c,
         totalUnownedWishlistItems: _,
         analyticsLocations: f
-    } = e, h = (0, b.G)("gift_selection_modal_wishlist_section"), I = (0, P.tx)(t), g = K.intl.formatToPlainString(_ >= 12 ? K.t.Y2RFOQ : K.t.dIDKgi, {
+    } = e, h = (0, b.GG)("gift_selection_modal_wishlist_section"), I = (0, P.tx)(t), g = K.intl.formatToPlainString(_ >= 12 ? K.t.Y2RFOQ : K.t.dIDKgi, {
         username: I
     }), {
         analyticsLocations: x

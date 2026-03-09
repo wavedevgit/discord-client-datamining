@@ -68,7 +68,7 @@ let T = l.memo(function(e) {
         onReorder: p
     } = e, {
         registerDragHandleRef: h
-    } = (0, A.r)(), j = (0, g.G)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
+    } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
         buttonRef: h(String(t.skuId)),
         className: v.BU,
         onFocus: e => e.stopPropagation()

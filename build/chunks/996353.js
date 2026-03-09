@@ -16,7 +16,7 @@ function d(t) {
     let {
         user: e,
         numItems: i
-    } = t, d = (0, l.G)("use_unowned_wishlist_items_and_recommendations"), g = (0, a.Ay)(e.id), I = Math.max(i, (0, u.KQ)(d)), {
+    } = t, d = (0, l.GG)("use_unowned_wishlist_items_and_recommendations"), g = (0, a.Ay)(e.id), I = Math.max(i, (0, u.KQ)(d)), {
         defaultWishlistId: _,
         wishlist: p,
         popularCollectiblesProducts: A,

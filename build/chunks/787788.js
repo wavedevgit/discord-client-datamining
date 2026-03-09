@@ -1,4 +1,5 @@
 /** chunk id: 787788 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     gj: "premiumLabel_e681d1",
     wH: "selected_e681d1",

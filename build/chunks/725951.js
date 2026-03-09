@@ -1,28 +1,29 @@
 /** chunk id: 725951 params = (module,exports,require) **/
-n.d(t, {
+"use strict";
+r.d(t, {
     A: () => m,
-    f: () => u
+    f: () => o
 });
-var i, s = n(627968),
-    l = n(64700),
-    a = n(503698),
-    r = n.n(a),
-    o = n(615300),
-    d = n(73939),
-    c = n(962033),
-    u = ((i = {})[i.RIGHT = -1] = "RIGHT", i[i.LEFT = 1] = "LEFT", i);
-let _ = {
+var n, s = r(627968),
+    l = r(64700),
+    a = r(503698),
+    i = r.n(a),
+    u = r(615300),
+    c = r(73939),
+    d = r(962033),
+    o = ((n = {})[n.RIGHT = -1] = "RIGHT", n[n.LEFT = 1] = "LEFT", n);
+let h = {
     friction: 7,
     tension: 40,
     clamp: !0
 };
-class g extends l.PureComponent {
+class p extends l.PureComponent {
     _animated;
     constructor(e) {
-        super(e), this._animated = new o.A.Value(-1 * e.direction)
+        super(e), this._animated = new u.A.Value(-1 * e.direction)
     }
     componentWillEnter(e) {
-        this._animated.setValue(-this.props.direction), o.A.spring(this._animated, {
+        this._animated.setValue(-this.props.direction), u.A.spring(this._animated, {
             toValue: 0,
             ...this.props.springSettings
         }).start(e)
@@ -31,13 +32,13 @@ class g extends l.PureComponent {
         this._animated.setValue(0)
     }
     componentWillLeave(e) {
-        o.A.spring(this._animated, {
+        u.A.spring(this._animated, {
             toValue: this.props.direction,
             ...this.props.springSettings
         }).start(e)
     }
     getStyle() {
-        let e = o.A.accelerate({
+        let e = u.A.accelerate({
             transform: [{
                 translateX: this._animated.interpolate({
                     inputRange: [0, 1],
@@ -51,9 +52,9 @@ class g extends l.PureComponent {
         })), e
     }
     render() {
-        return (0, s.jsx)(o.A.div, {
+        return (0, s.jsx)(u.A.div, {
             style: this.getStyle(),
-            className: c.A,
+            className: d.A,
             children: this.props.children
         })
     }
@@ -61,20 +62,20 @@ class g extends l.PureComponent {
 let m = e => {
     let {
         children: t,
-        step: n,
-        direction: i,
+        step: r,
+        direction: n,
         className: l,
-        springSettings: a = _,
-        fadeInOut: o = !1
+        springSettings: a = h,
+        fadeInOut: u = !1
     } = e;
-    return (0, s.jsx)(d.F, {
+    return (0, s.jsx)(c.F, {
         component: "div",
-        className: r()(c.Q, l),
-        children: (0, s.jsx)(g, {
-            direction: i,
+        className: i()(d.Q, l),
+        children: (0, s.jsx)(p, {
+            direction: n,
             springSettings: a,
-            fadeInOut: o,
+            fadeInOut: u,
             children: t
-        }, n)
+        }, r)
     })
 }

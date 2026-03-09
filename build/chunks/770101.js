@@ -11,8 +11,8 @@ var n = l(627968),
     d = l(397927),
     c = l(398590),
     u = l(263063),
-    m = l(976860),
-    x = l(71393),
+    x = l(976860),
+    m = l(71393),
     h = l(711014),
     g = l(473145),
     C = l(652215),
@@ -40,13 +40,13 @@ function f(t) {
         onClose: i,
         onSelectGuild: s,
         query: a
-    } = t, p = (0, o.bG)([h.Ay], () => h.Ay.getFlattenedGuildIds()), f = (0, o.yK)([x.A], () => p.reduce((t, e) => {
-        let n = x.A.getGuild(e);
+    } = t, p = (0, o.bG)([h.Ay], () => h.Ay.getFlattenedGuildIds()), f = (0, o.yK)([m.A], () => p.reduce((t, e) => {
+        let n = m.A.getGuild(e);
         return null == n || null != l && l.some(t => t.id === e) || (a.length <= 0 || r()(a.toLowerCase(), n?.name.toLowerCase())) && t.push(n), t
     }, []));
 
     function S() {
-        i(), (0, c.jH)(), (0, m.pX)(C.BVt.GUILD_DISCOVERY)
+        i(), (0, c.jH)(), (0, x.pX)(C.BVt.GUILD_DISCOVERY)
     }
     return (0, n.jsxs)(n.Fragment, {
         children: [0 === f.length && (0, n.jsx)("div", {
@@ -102,12 +102,12 @@ function S(t) {
         selectedSlotGuilds: o
     } = t, [d, c] = i.useState(""), u = async () => {
         await e()
-    }, m = r ? j.intl.string(j.t.IB13DV) : j.intl.string(j.t.cQYceV);
+    }, x = r ? j.intl.string(j.t.IB13DV) : j.intl.string(j.t.cQYceV);
     return (0, n.jsx)(a.Modal, {
         transitionState: s,
         onClose: u,
         size: "md",
-        title: m,
+        title: x,
         input: (0, n.jsx)(p, {
             query: d,
             setQuery: c

@@ -20,8 +20,8 @@ function u(t) {
         transitionState: e,
         toGuild: l,
         fromGuilds: u,
-        slotCount: m,
-        canceledCount: x,
+        slotCount: x,
+        canceledCount: m,
         isModifyingSubscription: h,
         error: g,
         onConfirm: C,
@@ -42,7 +42,7 @@ function u(t) {
         children: [(0, n.jsx)(s.Text, {
             variant: "text-md/normal",
             children: o.intl.formatToPlainString(o.t.SSA2lu, {
-                slotCount: m,
+                slotCount: x,
                 guildCount: v ?? 0
             })
         }), (0, n.jsx)(s.Text, {
@@ -59,7 +59,7 @@ function u(t) {
             variant: "text-xs/normal",
             className: d.bV,
             children: o.intl.format(o.t.ct6oxD, {
-                slotCount: m
+                slotCount: x
             })
         }), (0, n.jsx)("div", {
             className: d.P4,
@@ -67,8 +67,8 @@ function u(t) {
                 guild: l,
                 subscriptionChange: u.length
             })
-        }), x > 0 ? (0, n.jsx)(a.ti, {
-            canceledCount: x
+        }), m > 0 ? (0, n.jsx)(a.ti, {
+            canceledCount: m
         }) : null, null != g && (0, n.jsx)(s.Text, {
             color: "text-feedback-critical",
             variant: "text-sm/semibold",

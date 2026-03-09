@@ -1,4 +1,5 @@
 /** chunk id: 355313 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     Ui: "cardContainer_cf5b44",
     Nr: "card_cf5b44",

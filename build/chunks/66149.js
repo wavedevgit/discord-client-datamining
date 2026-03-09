@@ -40,25 +40,26 @@ function _(e) {
         size: "md",
         color: "currentColor",
         className: p.Q6
+    })).with({
+        collapsedReason: g.t.rHRovo
+    }, () => (0, i.jsx)(o._mZ, {
+        size: "md",
+        color: "currentColor",
+        className: p.TG
     })).otherwise(() => (0, i.jsx)(o.PGe, {
         size: "md",
         color: "currentColor",
         className: p.Q6
-    })), h = c ? u : (0, i.jsx)(o.DUT, {
-        tag: "span",
-        onClick: n,
-        className: p.Y4,
-        children: u
-    });
+    }));
     return (0, i.jsx)(d.A, {
         compact: s,
         role: "group",
         childrenMessageContent: (0, i.jsx)(m.A, {
             compact: s,
             className: p.L9,
-            iconNode: h,
+            iconNode: u,
             children: (0, i.jsxs)("div", {
-                className: p.Fo,
+                className: c ? p.Fo : p.GU,
                 children: [g.intl.format(a, {
                     count: l
                 }), c && (0, i.jsxs)(i.Fragment, {
@@ -83,13 +84,13 @@ let E = l.memo(function(e) {
         canUncollapse: d = !0
     } = e, {
         hasJumpTarget: m = !1
-    } = t, [g, E] = l.useState(m && d), [x, C] = l.useState(!1), S = l.useCallback(() => {
-        d ? E(e => !e) : C(!0)
+    } = t, [g, E] = l.useState(m && d), x = l.useCallback(() => {
+        d && E(e => !e)
     }, [d]);
-    if (l.useEffect(() => {
-            m && d && E(!0)
-        }, [m, d]), x) return null;
-    let I = t.hasUnread ? t.content.length - 1 : t.content.length;
+    l.useEffect(() => {
+        m && d && E(!0)
+    }, [m, d]);
+    let C = t.hasUnread ? t.content.length - 1 : t.content.length;
     return (0, i.jsxs)("div", {
         className: a()({
             [f._A]: !0,
@@ -99,10 +100,10 @@ let E = l.memo(function(e) {
             isUnread: !0,
             id: r
         }, "divider") : null, (0, i.jsx)(_, {
-            count: I,
+            count: C,
             compact: s,
             expanded: g,
-            onClick: S,
+            onClick: x,
             collapsedReason: o,
             canUncollapse: d
         }, "collapsed-message-item"), g ? t.content.map((e, l) => {

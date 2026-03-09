@@ -19,7 +19,7 @@ var i = n(627968),
 function p(e) {
     let {
         scrollerRef: t
-    } = e, n = (0, o.G)("user_profile_drag_preview_layer"), {
+    } = e, n = (0, o.GG)("user_profile_drag_preview_layer"), {
         isDragging: p,
         item: h,
         sourceClientOffset: _

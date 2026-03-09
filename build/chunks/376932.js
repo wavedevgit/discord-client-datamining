@@ -27,7 +27,7 @@ function I(e) {
         hasFetchedWishlist: a = !1,
         analyticsLocations: m,
         className: I
-    } = e, j = (0, u.G)("social_layer_wishlist_recommendations_on_profile"), v = (n?.items.length ?? 0) > 0, [E, T] = l.useState(!1);
+    } = e, j = (0, u.GG)("social_layer_wishlist_recommendations_on_profile"), v = (n?.items.length ?? 0) > 0, [E, T] = l.useState(!1);
     !a || v || E || T(!0);
     let b = (0, o.bG)([x.A], () => null != n ? new Date(x.A.getWishlistSettings(t.id, n.id)?.updated_at ?? 0).valueOf() : 0),
         [N, S] = (0, c.Wl)(d.M.USER_PROFILE_WISHLIST_RECOMMENDATIONS, {

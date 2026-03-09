@@ -162,7 +162,7 @@ function et(e) {
             }, `forum-post-action-bar-${l.id}`);
             if (e.type === $.TZK.MESSAGE_GROUP_BLOCKED || e.type === $.TZK.MESSAGE_GROUP_IGNORED || e.type === $.TZK.MESSAGE_GROUP_SPAMMER || e.type === $.TZK.MESSAGE_GROUP_SUSPENDED_USER) {
                 let t, n = !0;
-                return e.type === $.TZK.MESSAGE_GROUP_BLOCKED ? t = X.t["+FcYM/"] : e.type === $.TZK.MESSAGE_GROUP_IGNORED ? t = X.t["VFWjc+"] : e.type === $.TZK.MESSAGE_GROUP_SUSPENDED_USER ? (t = X.t["gLp+Wj"], n = !1) : t = X.t.xfkfTK, (0, i.jsx)(B.A, {
+                return e.type === $.TZK.MESSAGE_GROUP_BLOCKED ? t = X.t["+FcYM/"] : e.type === $.TZK.MESSAGE_GROUP_IGNORED ? t = X.t["VFWjc+"] : e.type === $.TZK.MESSAGE_GROUP_SUSPENDED_USER ? (t = X.t.rHRovo, n = !1) : t = X.t.xfkfTK, (0, i.jsx)(B.A, {
                     unreadId: J.q4,
                     messages: e,
                     channel: l,
