@@ -12,8 +12,8 @@ var r = n(990078),
     d = n(147925),
     c = n(183555),
     u = n(735321),
-    g = n(122338),
-    m = n(394245),
+    m = n(122338),
+    g = n(394245),
     x = n(985018),
     f = n(315657);
 
@@ -25,7 +25,7 @@ function p(e) {
         applicationId: r,
         className: o,
         disableInteraction: d = !1
-    } = e, p = t?.filter(e => null != (0, m.W3)(e)) ?? [], _ = p.length > 0, A = n && !d && (0, u.mS)(a) && p.length < 20, {
+    } = e, p = t?.filter(e => null != (0, g.W3)(e)) ?? [], _ = p.length > 0, A = n && !d && (0, u.mS)(a) && p.length < 20, {
         trackUserProfileAction: v
     } = (0, c.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, p, E, S);
     if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
@@ -64,7 +64,7 @@ function p(e) {
                 },
                 disableInteraction: d
             })]
-        }), A && (0, i.jsx)(g.A, {
+        }), A && (0, i.jsx)(m.A, {
             tags: t,
             widgetType: a,
             applicationId: r,
@@ -81,8 +81,8 @@ let h = e => {
         disableInteraction: s,
         ref: d
     } = e, {
-        trackUserProfileEditAction: g
-    } = (0, c.NJ)(), p = (0, m.W3)(t);
+        trackUserProfileEditAction: m
+    } = (0, c.NJ)(), p = (0, g.W3)(t);
     if (null == p) return null;
     let {
         getText: h,
@@ -102,7 +102,7 @@ let h = e => {
             ariaHidden: !0,
             children: (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    (0, u.tg)(a, l, t), g({
+                    (0, u.tg)(a, l, t), m({
                         action: "TAG_REMOVED",
                         widgetEdited: a,
                         gameId: l

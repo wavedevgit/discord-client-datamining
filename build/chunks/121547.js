@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(713517),
     c = n(384377),
     u = n(808247),
-    g = n(518477),
-    m = n(985018),
+    m = n(518477),
+    g = n(985018),
     x = n(24917);
 
 function f(e) {
@@ -35,15 +35,15 @@ function f(e) {
         if (null != t) try {
             await u.A.removeSkuFromWishlist(t, n.id, f)
         } catch (e) {
-            (0, c.XA)(g.jM.SOMETHING_WENT_WRONG)
+            (0, c.XA)(m.jM.SOMETHING_WENT_WRONG)
         }
     }, [t, n.id, f]);
     return (0, i.jsx)(r.m, {
-        text: m.intl.string(m.t.jTW016),
+        text: g.intl.string(g.t.jTW016),
         children: (0, i.jsx)(o.DUT, {
             innerRef: _,
             onClick: j,
-            "aria-label": m.intl.string(m.t.jTW016),
+            "aria-label": g.intl.string(g.t.jTW016),
             className: s()(x.vk, {
                 [x.P8]: A || p
             }),

@@ -99,39 +99,38 @@ function eR(e) {
         inviteButtonRef: p,
         accountLinkButtonRef: _,
         gameCommunityGuildId: f,
-        activityPopoutTargetRef: x,
-        parentAnalyticsLocation: C,
-        analyticsLocations: E,
-        analyticsContext: I
+        parentAnalyticsLocation: x,
+        analyticsLocations: C,
+        analyticsContext: E
     } = e, {
-        isQuestBarEmpty: N,
-        hasLoadedQuestBar: b
+        isQuestBarEmpty: I,
+        hasLoadedQuestBar: N
     } = (0, ee.c9)({
         location: ev.rE.CONFLICT_CHECKS
-    }), S = e_.A.useConfig({
+    }), b = e_.A.useConfig({
         location: "ActivityPanelGameCard"
-    }), T = !b || !N, v = (0, eC.W)(t, n, s), y = [], j = !1;
-    T || (r && a ? v && null == s ? y.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : y.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : !r && c && null != t && (j = !0), null != f && l?.id != null && l?.name != null && y.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA));
+    }), S = !N || !I, T = (0, eC.W)(t, n, s), v = [], y = !1;
+    S || (r && a ? T && null == s ? v.push(u.M.ACCOUNT_LINK_INVITE_FRIENDS) : v.push(u.M.POST_ACCOUNT_CONNECTION_RTC_POPOVER) : !r && c && null != t && (y = !0), null != f && l?.id != null && l?.name != null && v.push(u.M.JOIN_GAME_COMMUNITY_RTC_CTA));
     let {
-        shouldShow: R,
-        markAsDismissed: O,
-        isRecurringExperimentEnabled: M
+        shouldShow: j,
+        markAsDismissed: R,
+        isRecurringExperimentEnabled: O
     } = (0, K.A)({
         application: t,
         experimentParams: {
             location: "ActivityPanelGameCard"
         },
-        disabled: !j,
+        disabled: !y,
         dismissibleContent: u.M.GAME_ACCOUNT_LINK_RECURRING_UPSELL,
         dismissibleContentGroupName: eb.m.ACCOUNT_NAME_ZONE,
         bypassAutoDismiss: !0
     });
-    !M && j && y.push(u.M.ACCOUNT_LINK_PROMPT);
-    let D = (e, t) => {
-        R ? O(t) : e(t)
+    !O && y && v.push(u.M.ACCOUNT_LINK_PROMPT);
+    let M = (e, t) => {
+        j ? R(t) : e(t)
     };
-    return T ? null : (0, i.jsx)(P.Ay, {
-        contentTypes: y,
+    return S ? null : (0, i.jsx)(P.Ay, {
+        contentTypes: v,
         groupName: eb.m.ACCOUNT_NAME_ZONE,
         bypassAutoDismiss: !0,
         children: e => {
@@ -156,10 +155,10 @@ function eR(e) {
                             action_type: "invite_to_game",
                             game_id: l?.id ?? null,
                             application_id: n.application_id
-                        }), (0, L.X)(C, L.O.INVITE), em.default.track(eI.HAw.OPEN_MODAL, {
+                        }), (0, L.X)(x, L.O.INVITE), em.default.track(eI.HAw.OPEN_MODAL, {
                             type: "Send Join Invite",
                             application_id: n.application_id,
-                            location: I.location
+                            location: E.location
                         }), (0, g.qf)(n, !1)
                     }
                 }]
@@ -180,7 +179,7 @@ function eR(e) {
                 }],
                 shouldShow: !0,
                 onRequestClose: () => r(eb.i.USER_DISMISS)
-            }) : s === u.M.ACCOUNT_LINK_PROMPT || R ? (0, i.jsx)(A.AM, {
+            }) : s === u.M.ACCOUNT_LINK_PROMPT || j ? (0, i.jsx)(A.AM, {
                 graphic: {
                     type: "dynamic",
                     component: h.DynamicGraphicComponent.ACCOUNT_LINK_DISPLAY,
@@ -188,28 +187,28 @@ function eR(e) {
                         application: t
                     }
                 },
-                title: ey.intl.formatToPlainString(S.altTitle ? ey.t.hUbQT2 : ey.t["lo6H6+"], {
+                title: ey.intl.formatToPlainString(b.altTitle ? ey.t.hUbQT2 : ey.t["lo6H6+"], {
                     gameName: t.name
                 }),
-                body: ey.intl.string(S.altBody ? ey.t["JKqu+4"] : ey.t.qYAzOp),
+                body: ey.intl.string(b.altBody ? ey.t["JKqu+4"] : ey.t.qYAzOp),
                 targetElementRef: _,
                 align: "right",
                 shouldShow: !0,
                 gradientColor: "purple",
-                onRequestClose: () => D(r, eb.i.USER_DISMISS),
+                onRequestClose: () => M(r, eb.i.USER_DISMISS),
                 caretConfig: {
                     align: "end"
                 },
                 actions: [{
-                    text: ey.intl.string(S.altCta ? ey.t.jynBQ5 : ey.t.lw71Nf),
+                    text: ey.intl.string(b.altCta ? ey.t.jynBQ5 : ey.t.lw71Nf),
                     onClick: () => {
-                        D(r, eb.i.TAKE_ACTION), d({
-                            analyticsLocations: E
+                        M(r, eb.i.TAKE_ACTION), d({
+                            analyticsLocations: C
                         })
                     }
                 }]
             }) : s === u.M.JOIN_GAME_COMMUNITY_RTC_CTA && null != f && l?.id != null && l?.name != null ? (0, i.jsx)(V.A, {
-                targetElementRef: x,
+                targetElementRef: m,
                 gameId: l.id,
                 gameName: l.name,
                 gameCommunityGuildId: f,

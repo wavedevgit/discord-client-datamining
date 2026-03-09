@@ -1,7 +1,7 @@
 /** chunk id: 463259 params = (module,exports,require) **/
 n.d(t, {
     A: () => U,
-    u: () => D
+    u: () => P
 });
 var i = n(627968),
     l = n(64700),
@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(384904),
     c = n(395332),
     u = n(566605),
-    g = n(429913),
-    m = n(379848),
+    m = n(429913),
+    g = n(379848),
     x = n(840387),
     f = n(201718),
     p = n(961350),
@@ -33,10 +33,10 @@ var i = n(627968),
     R = n(982599),
     k = n(515054),
     L = n(266713),
-    O = n(985018),
-    w = n(519653);
+    w = n(985018),
+    O = n(519653);
 
-function D(e) {
+function P(e) {
     let {
         widget: t,
         ...n
@@ -50,16 +50,16 @@ function D(e) {
     }) : null
 }
 
-function P() {
+function D() {
     return (0, i.jsxs)("div", {
-        className: w.mJ,
+        className: O.mJ,
         children: [(0, i.jsx)(o.mir, {
             size: "xs"
         }), (0, i.jsx)(o.Text, {
-            "aria-label": O.intl.string(O.t["7blcz6"]),
+            "aria-label": w.intl.string(w.t["7blcz6"]),
             variant: "text-xs/normal",
             color: "text-muted",
-            children: O.intl.string(O.t["7blcz6"])
+            children: w.intl.string(w.t["7blcz6"])
         })]
     })
 }
@@ -72,7 +72,7 @@ function G() {
     } = (0, u.A)({
         location: "ApplicationWidgetUpsell"
     });
-    return e ? null : (0, i.jsx)(m.Ay, {
+    return e ? null : (0, i.jsx)(g.Ay, {
         contentTypes: t.map(e => e.dismissibleContent),
         bypassAutoDismiss: !0,
         children: e => {
@@ -99,12 +99,12 @@ function M(e) {
         return l.useEffect(() => {
             null == e && null == t && n && (0, d.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), m = (0, c.JY)({
+    })(), g = (0, c.JY)({
         location: "UserProfileModalV2Widgets"
     }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, E), ((e, t) => {
         let n = l.useMemo(() => t.map(e => e.applicationId), [t]);
-        (0, g.A)(n);
+        (0, m.A)(n);
         let {
             data: i,
             refetch: a
@@ -116,9 +116,9 @@ function M(e) {
     let S = () => (0, i.jsxs)(i.Fragment, {
         children: [o && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(b.A, {
-                className: w.cG
-            }), u && (0, i.jsx)(P, {}), m && (0, i.jsx)(G, {})]
-        }), s.map((e, l) => (0, i.jsx)(D, {
+                className: O.cG
+            }), u && (0, i.jsx)(D, {}), g && (0, i.jsx)(G, {})]
+        }), s.map((e, l) => (0, i.jsx)(P, {
             widget: e,
             user: t,
             guildId: n,
@@ -127,7 +127,7 @@ function M(e) {
         }, e.getUniqueKey()))]
     });
     if (j)
-        if (m) return (0, i.jsx)(C.A, {});
+        if (g) return (0, i.jsx)(C.A, {});
         else return (0, i.jsx)(L.A, {});
     return o ? (0, i.jsx)(N.D, {
         children: S()
@@ -146,8 +146,8 @@ function U(e) {
     return (0, i.jsxs)(k.K, {
         "data-scroller": !0,
         scrollerRef: a,
-        className: s()(w.XG, {
-            [w.az]: r
+        className: s()(O.XG, {
+            [O.az]: r
         }),
         fade: !0,
         children: [(0, i.jsx)(S.A, {

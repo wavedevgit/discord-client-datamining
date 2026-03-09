@@ -12,8 +12,8 @@ var l = n(311907),
     d = n(461213),
     c = n(975571),
     u = n(146655),
-    g = n(489379),
-    m = n(837924),
+    m = n(489379),
+    g = n(837924),
     x = n(558628),
     f = n(842241),
     p = n(282797),
@@ -40,14 +40,14 @@ function T(e) {
     } = (0, u.A)(t.id), {
         voiceChannel: k,
         voiceActivity: L
-    } = (0, g.A)({
+    } = (0, m.A)({
         userId: t.id,
         guildId: b
-    }), O = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), w = t.id === n.id, D = (0, l.bG)([d.A, o.A], () => {
-        let e = w ? d.A.getStatus() : o.A.getStatus(t.id);
+    }), w = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
+        let e = O ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
-    }), P = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !D && (P || G), U = C.length > 0;
-    return M || U || !O ? M || U || O ? (0, i.jsxs)(A.K, {
+    }), D = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
+    return M || U || !w ? M || U || w ? (0, i.jsxs)(A.K, {
         className: E.XG,
         fade: !0,
         children: [M ? (0, i.jsx)(_.A, {
@@ -62,7 +62,7 @@ function T(e) {
                         onClose: S
                     })
                 }), y.map((e, l) => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(m.A, {
+                    children: (0, i.jsx)(g.A, {
                         user: t,
                         currentUser: n,
                         activity: e,
@@ -79,7 +79,7 @@ function T(e) {
             })
         }) : null, U ? (0, i.jsx)(_.A, {
             heading: v.intl.string(v.t.jzgEoL),
-            introText: w ? v.intl.format(v.t["4bk9Ak"], {
+            introText: O ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
                     href: c.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
@@ -97,7 +97,7 @@ function T(e) {
                 }, e.id))
             })
         }) : null]
-    }) : w ? (0, i.jsx)(h.qv, {
+    }) : O ? (0, i.jsx)(h.qv, {
         onClose: S
     }) : (0, i.jsx)(h.zf, {
         user: t,

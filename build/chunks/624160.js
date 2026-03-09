@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(587895),
     c = n(403362),
     u = n(635344),
-    g = n(735321),
-    m = n(384377),
+    m = n(735321),
+    g = n(384377),
     x = n(492280),
     f = n(939899),
     p = n(518477),
@@ -74,10 +74,10 @@ function I(e) {
         } = A[n.type],
         v = "small" === r,
         E = l.useCallback(() => {
-            d || ((0, g.Y5)(n), u({
+            d || ((0, m.Y5)(n), u({
                 action: "WIDGET_ADDED",
                 ...n.getProfileEditAnalyticsOptions()
-            }), (0, m.XA)(p.jM.WIDGET_ADDED), a?.())
+            }), (0, g.XA)(p.jM.WIDGET_ADDED), a?.())
         }, [d, n, u, a]),
         T = j?.(n);
     return (0, i.jsxs)("div", {
@@ -121,7 +121,7 @@ function I(e) {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: (0, g.L)(n)
+                        children: (0, m.L)(n)
                     }), null != T ? (0, i.jsx)("img", {
                         src: T,
                         alt: "",

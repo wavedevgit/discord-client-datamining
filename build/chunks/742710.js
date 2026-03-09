@@ -12,8 +12,8 @@ var r = n(397927),
     d = n(152621),
     c = n(409626),
     u = n(692969),
-    g = n(287809),
-    m = n(562153),
+    m = n(287809),
+    g = n(562153),
     x = n(183555),
     f = n(735321),
     p = n(451395),
@@ -94,7 +94,7 @@ function y(e) {
     return (0, i.jsx)(r.AC4, {
         id: a,
         children: E.intl.format(E.t.TM0XDY, {
-            name: m.Ay.getName(n, l, t)
+            name: g.Ay.getName(n, l, t)
         })
     })
 }
@@ -145,7 +145,7 @@ function k(e) {
         channelId: d,
         widgetType: c,
         applicationId: u
-    } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
+    } = e, m = (0, o.GV)(), g = (0, o.GV)(), {
         trackUserProfileEditAction: p
     } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), N = null != t && "" !== t.trim(), S = l.useCallback(() => {
         p({
@@ -171,10 +171,10 @@ function k(e) {
         className: b.kS,
         children: [(0, i.jsx)(r.AC4, {
             tag: "label",
-            htmlFor: g,
+            htmlFor: m,
             children: E.intl.string(E.t.JxKXeT)
         }), (0, i.jsx)(r.fs1, {
-            id: g,
+            id: m,
             value: A,
             placeholder: T,
             onChange: k,
@@ -189,7 +189,7 @@ function k(e) {
     }) : (0, i.jsxs)("div", {
         ref: v,
         role: "group",
-        "aria-labelledby": m,
+        "aria-labelledby": g,
         onClick: S,
         className: b.Vg,
         children: [(0, i.jsx)(r.R2l, {
@@ -200,7 +200,7 @@ function k(e) {
             user: n,
             guildId: a,
             channelId: d,
-            id: m
+            id: g
         }), (0, i.jsx)(C, {
             text: t ?? T,
             className: s()(b.qC, !N && b.qf)
@@ -226,7 +226,7 @@ function L(e) {
         widgetType: o,
         disableInteraction: c = !1,
         index: u,
-        onRemoveGame: m,
+        onRemoveGame: g,
         coverRef: x,
         className: E
     } = e, {
@@ -234,21 +234,21 @@ function L(e) {
         comment: C,
         tags: L
     } = a, {
-        coverImageUrl: O,
-        gameName: w,
-        isLoading: D
-    } = (0, d.A)(y), P = {
+        coverImageUrl: w,
+        gameName: O,
+        isLoading: P
+    } = (0, d.A)(y), D = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, G = g.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, f.cv)(o), F = !c && M, W = F && (0, f.y9)(o), H = F && !U, {
+    }, G = m.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, f.cv)(o), F = !c && M, W = F && (0, f.y9)(o), H = F && !U, {
         registerDragHandleRef: B
     } = (0, h.r)();
-    if (D) return (0, i.jsx)(A.E, {});
+    if (P) return (0, i.jsx)(A.E, {});
     let X = () => (0, i.jsx)(_.A, {
             coverRef: x,
-            className: null == O || c ? void 0 : T.iL,
-            imageSrc: O,
-            gameName: w,
+            className: null == w || c ? void 0 : T.iL,
+            imageSrc: w,
+            gameName: O,
             applicationId: y,
             userId: t.id,
             disableInteraction: c,
@@ -265,13 +265,13 @@ function L(e) {
             }) : X(), (0, i.jsxs)("div", {
                 className: b.zH,
                 children: [c ? (0, i.jsx)(r.Heading, {
-                    ...P,
-                    children: w
+                    ...D,
+                    children: O
                 }) : (0, i.jsx)(S, {
                     applicationId: y,
                     userId: t.id,
-                    gameName: w,
-                    ...P
+                    gameName: O,
+                    ...D
                 }), W ? (0, i.jsx)(k, {
                     text: C,
                     user: t,
@@ -301,7 +301,7 @@ function L(e) {
                 game: a,
                 widgetType: o,
                 className: b.vS,
-                onRemove: () => m?.(a.applicationId)
+                onRemove: () => g?.(a.applicationId)
             })]
         });
     return H ? (0, i.jsx)(N, {

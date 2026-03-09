@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(397927),
     c = n(409626),
     u = n(692969),
-    g = n(958805),
-    m = n(61881),
+    m = n(958805),
+    g = n(61881),
     x = n(985018),
     f = n(966271);
 
@@ -50,7 +50,7 @@ function h(e) {
         className: _,
         hideTooltip: A = !1,
         coverRef: I
-    } = e, j = (0, r.bG)([m.A], () => m.A.hasUnsavedChanges()), v = (0, u.A)({
+    } = e, j = (0, r.bG)([g.A], () => g.A.hasUnsavedChanges()), v = (0, u.A)({
         location: "GameCover",
         applicationId: a,
         source: c.Ob.UserProfile,
@@ -60,7 +60,7 @@ function h(e) {
         gameName: E
     }), b = l.useCallback(e => {
         if (j) {
-            e.preventDefault(), e.stopPropagation(), g.A.notifyUnsavedWidgets();
+            e.preventDefault(), e.stopPropagation(), m.A.notifyUnsavedWidgets();
             return
         }
         v?.(e)
