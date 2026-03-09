@@ -25,11 +25,11 @@ function j(e) {
         onClose: t
     } = e, {
         analyticsLocations: s
-    } = (0, a.Ay)(l.A.GO_LIVE_MODAL_V2), j = (0, d.V)(), v = (0, c.O)(), A = j?.subscription_trial?.sku_id === p.pe.TIER_2 || (0, f.U9)(v, p.pe.TIER_2), S = _.intl.string(m.default["+f+cqk"]);
-    return A && (null != j ? S = (0, h.FY)({
+    } = (0, a.Ay)(l.A.GO_LIVE_MODAL_V2), j = (0, d.V)(), v = (0, c.O)(), A = j?.subscription_trial?.sku_id === p.pe.TIER_2 || (0, f.U9)(v, p.pe.TIER_2), y = _.intl.string(m.default["+f+cqk"]);
+    return A && (null != j ? y = (0, h.FY)({
         intervalType: j?.subscription_trial?.interval,
         intervalCount: j?.subscription_trial?.interval_count
-    }) : null != v && (S = _.intl.formatToPlainString(_.t.bkQ4bH, {
+    }) : null != v && (y = _.intl.formatToPlainString(_.t.bkQ4bH, {
         percent: v.discount.amount
     }))), (0, r.jsxs)("div", {
         className: g.zr,
@@ -60,7 +60,7 @@ function j(e) {
                 t()
             },
             textOptions: {
-                subscribeText: S,
+                subscribeText: y,
                 textClassName: g.U_
             }
         })]

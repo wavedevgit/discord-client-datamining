@@ -22,40 +22,40 @@ var i = s(141931),
     j = s(213279),
     v = s(420659),
     A = s(502075),
-    S = s(753070),
-    y = s(731854),
+    y = s(753070),
+    S = s(731854),
     C = s(332800),
     b = s(985018),
     w = s(245254);
 let I = [{
-        value: S.jQ.PRESET_AUTO,
+        value: y.jQ.PRESET_AUTO,
         canUse: e => e !== i.fS.CAMERA && (0, h.eO)({
             location: "StreamOptionsMenu"
         }).allowAutoQuality
     }, {
-        value: S.jQ.PRESET_VIDEO,
+        value: y.jQ.PRESET_VIDEO,
         canUse: e => !0
     }, {
-        value: S.jQ.PRESET_DOCUMENTS,
+        value: y.jQ.PRESET_DOCUMENTS,
         canUse: e => e !== i.fS.CAMERA
     }, {
-        value: S.jQ.PRESET_CUSTOM,
+        value: y.jQ.PRESET_CUSTOM,
         canUse: e => !0
     }],
     E = [{
-        value: S.on.RESOLUTION_720,
+        value: y.on.RESOLUTION_720,
         canUse: e => !0
     }, {
-        value: S.on.RESOLUTION_1080,
+        value: y.on.RESOLUTION_1080,
         canUse: e => !0
     }, {
-        value: S.on.RESOLUTION_1440,
+        value: y.on.RESOLUTION_1440,
         canUse: e => !0
     }, {
-        value: S.on.RESOLUTION_SOURCE,
+        value: y.on.RESOLUTION_SOURCE,
         canUse: e => e !== i.fS.CAMERA
     }],
-    N = [S.kn.FPS_15, S.kn.FPS_30, S.kn.FPS_60];
+    N = [y.kn.FPS_15, y.kn.FPS_30, y.kn.FPS_60];
 
 function O(e) {
     let {
@@ -82,20 +82,20 @@ function T(e) {
         preset: M,
         resolution: U,
         fps: G,
-        sourceType: L
-    }, D] = (0, p.tS)(), P = (0, n.bG)([u.A], () => u.A.getVoiceChannelId()), F = (0, n.bG)([c.A, d.A], () => {
+        sourceType: D
+    }, L] = (0, p.tS)(), P = (0, n.bG)([u.A], () => u.A.getVoiceChannelId()), F = (0, n.bG)([c.A, d.A], () => {
         if (null == P) return !0;
         let e = c.A.getChannel(P),
             t = e?.guild_id;
         if (null == t) return !0;
         let s = d.A.getMemberCount(t);
         return null == s || s > A.oe && s <= A.G1
-    }, [P]), k = (0, g.A)(), [H, B] = (0, v.A)(S.jQ.PRESET_VIDEO) ?? [S.on.RESOLUTION_720, S.kn.FPS_30], [W, Z] = (0, v.A)(S.jQ.PRESET_DOCUMENTS) ?? [S.on.RESOLUTION_SOURCE, S.kn.FPS_15], V = (0, o.H)({
-        deviceType: y.oh.AUDIO_INPUT,
+    }, [P]), k = (0, g.A)(), [H, B] = (0, v.A)(y.jQ.PRESET_VIDEO) ?? [y.on.RESOLUTION_720, y.kn.FPS_30], [W, Z] = (0, v.A)(y.jQ.PRESET_DOCUMENTS) ?? [y.on.RESOLUTION_SOURCE, y.kn.FPS_15], V = (0, o.H)({
+        deviceType: S.oh.AUDIO_INPUT,
         selectedDeviceId: h,
         analyticsLocations: [a.A.GO_LIVE_MODAL_SETTINGS_SELECTION],
         asSubmenu: !0,
-        onDeviceSelect: e => (D({
+        onDeviceSelect: e => (L({
             type: "set_audio_source",
             audioSourceId: e
         }), !1),
@@ -121,7 +121,7 @@ function T(e) {
                 let {
                     canUse: t
                 } = e;
-                return t(L)
+                return t(D)
             }).map(e => {
                 let {
                     value: t
@@ -133,31 +133,31 @@ function T(e) {
                     label: (0, m.K)(t),
                     subtext: function(e) {
                         switch (e) {
-                            case S.jQ.PRESET_VIDEO:
+                            case y.jQ.PRESET_VIDEO:
                                 return b.intl.format(C.default.G5O1Mz, {
                                     resolution: (0, _.b)(H),
                                     frameRate: B
                                 });
-                            case S.jQ.PRESET_DOCUMENTS:
+                            case y.jQ.PRESET_DOCUMENTS:
                                 return b.intl.format(C.default["8tcFL5"], {
                                     resolution: (0, _.b)(W),
                                     frameRate: Z
                                 });
-                            case S.jQ.PRESET_AUTO:
+                            case y.jQ.PRESET_AUTO:
                                 return b.intl.string(C.default.m4jtlc);
-                            case S.jQ.PRESET_CUSTOM:
+                            case y.jQ.PRESET_CUSTOM:
                                 return;
                             default:
                                 throw Error(`No case implemented for ${e}`)
                         }
                     }(t),
-                    action: () => D({
+                    action: () => L({
                         type: "set_preset",
                         preset: t
                     })
                 }, t)
             })
-        }), M === S.jQ.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
+        }), M === y.jQ.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.bXX, {}), (0, r.jsx)(l.Drp, {
                 id: "resolution",
                 label: b.intl.string(C.default.IG5n0X),
@@ -165,7 +165,7 @@ function T(e) {
                     let {
                         canUse: t
                     } = e;
-                    return t(L)
+                    return t(D)
                 }).map(e => {
                     let {
                         value: s
@@ -174,14 +174,14 @@ function T(e) {
                         group: "resolution",
                         id: `stream-option-resolution-${s}`,
                         checked: U === s,
-                        void_label: s !== S.on.RESOLUTION_720 ? (0, r.jsx)(O, {
+                        void_label: s !== y.on.RESOLUTION_720 ? (0, r.jsx)(O, {
                             label: (0, _.b)(s)
                         }) : (0, _.b)(s),
                         action: () => (function(e) {
                             if (!(0, x.A)(M, e, G, f.default.getCurrentUser(), k)) return t(), (0, j.p)({
                                 analyticsLocation: a.A.GO_LIVE_MODAL_SETTINGS_SELECTION
                             });
-                            D({
+                            L({
                                 type: "set_resolution",
                                 resolution: e
                             })
@@ -195,14 +195,14 @@ function T(e) {
                     group: "frame-rate",
                     id: `stream-option-frame-rate-${e}`,
                     checked: G === e,
-                    void_label: e === S.kn.FPS_60 ? (0, r.jsx)(O, {
+                    void_label: e === y.kn.FPS_60 ? (0, r.jsx)(O, {
                         label: `${e}fps`
                     }) : `${e}fps`,
                     action: () => (function(e) {
                         if (!(0, x.A)(M, U, e, f.default.getCurrentUser(), k)) return t(), (0, j.p)({
                             analyticsLocation: a.A.GO_LIVE_MODAL_SETTINGS_SELECTION
                         });
-                        D({
+                        L({
                             type: "set_fps",
                             fps: e
                         })
@@ -213,18 +213,18 @@ function T(e) {
             id: "stream-option-mute",
             checked: R,
             label: b.intl.string(C.default["b0+Irf"]),
-            action: () => D({
+            action: () => L({
                 type: "set_mute_audio",
                 value: !R
             })
-        }), L === i.fS.CAMERA && V, (0, r.jsxs)(l.Drp, {
+        }), D === i.fS.CAMERA && V, (0, r.jsxs)(l.Drp, {
             id: "advanced-items",
             label: b.intl.string(C.default.eYyK1v),
             children: [(0, r.jsx)(l.sLh, {
                 id: "stream-option-share-preview",
                 checked: T,
                 label: b.intl.string(C.default.H3QjqX),
-                action: () => D({
+                action: () => L({
                     type: "set_hide_preview",
                     hidePreview: !T
                 })
@@ -232,7 +232,7 @@ function T(e) {
                 id: "stream-option-notify",
                 checked: w,
                 label: b.intl.string(C.default.SiHtXy),
-                action: () => D({
+                action: () => L({
                     type: "set_notify_friends",
                     value: !w
                 })
