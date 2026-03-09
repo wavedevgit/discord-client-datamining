@@ -29,9 +29,7 @@ var i = n(627968),
 function N() {
     return (0, d.lX)("ProfilePrivacyCategory") ? (0, i.jsx)(T.A, {
         title: b.intl.string(b.t.ul884f),
-        description: b.intl.format(b.t.N4jSgR, {
-            learnMoreUrl: "https://support.discord.com/hc/articles/private-profiles"
-        }),
+        description: b.intl.string(b.t.J0SFL2),
         webSetting: I.H.PRIVACY_PROFILE_VISIBILITY,
         children: (0, i.jsx)(S.A, {})
     }) : null

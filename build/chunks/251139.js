@@ -11,8 +11,6 @@ var i = n(419954),
 let d = (0, i.zZ)(l.X.PROFILE_PRIVACY_CATEGORY, {
     usePredicate: () => (0, s.lX)("ProfilePrivacyCategory"),
     useTitle: () => o.intl.string(o.t.ul884f),
-    useSubtitle: () => o.intl.format(o.t.N4jSgR, {
-        learnMoreUrl: "https://support.discord.com/hc/articles/private-profiles"
-    }),
+    useSubtitle: () => o.intl.string(o.t.J0SFL2),
     buildLayout: () => [r.I, a.O]
 })
