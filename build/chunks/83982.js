@@ -23,8 +23,8 @@ var i = n(627968),
     x = n(854627),
     C = n(530804),
     S = n(961350),
-    I = n(696451),
-    T = n(430452),
+    T = n(696451),
+    I = n(430452),
     N = n(531685),
     y = n(562153),
     b = n(51082),
@@ -71,11 +71,11 @@ function k(e) {
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: H = !1
-    } = e, B = T.Ay.getVideoComponent(), V = (0, r.bG)([S.default], () => S.default.getId()), {
+    } = e, B = I.Ay.getVideoComponent(), V = (0, r.bG)([S.default], () => S.default.getId()), {
         user: K,
-        streamId: W,
-        speaking: z
-    } = t, Y = K.id === V, q = (0, b.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([E.A], () => E.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([T.Ay], () => null != K.id && T.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, r.bG)([I.Ay], () => I.Ay.isGuestOrLurker(n.guild_id, K.id)), Q = y.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = z && ($ || J), et = o < 124 ? P : L, {
+        streamId: z,
+        speaking: W
+    } = t, Y = K.id === V, q = (0, b.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([E.A], () => E.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([I.Ay], () => null != K.id && I.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, r.bG)([T.Ay], () => T.Ay.isGuestOrLurker(n.guild_id, K.id)), Q = y.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = W && ($ || J), et = o < 124 ? P : L, {
         avatarSrc: en,
         avatarDecorationSrc: ei
     } = (0, x.A)({
@@ -97,7 +97,7 @@ function k(e) {
             user: n
         } = eo.current;
         e.isGuildStageVoice() && !q && t?.id === n.id && d.A.selectParticipant(e.id, null)
-    }, [q]), s && !Z && !G && q && !c && null != B && T.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(v.A, {
+    }, [q]), s && !Z && !G && q && !c && null != B && I.Ay.supports(M.O5.VIDEO)) ? null != es && null == ea ? (0, i.jsx)(v.A, {
         avError: es,
         userId: t.id,
         width: o,
@@ -107,13 +107,13 @@ function k(e) {
         wrapperClassName: C !== A.N.CALL_TILE ? O.tN : void 0,
         className: O.Qs,
         mirror: Y,
-        streamId: W,
+        streamId: z,
         videoComponent: B,
         fit: j,
         videoSpinnerContext: K.id === V ? u.u.SELF_VIDEO : u.u.REMOTE_VIDEO,
         paused: H,
         userId: K.id
-    }, W) : (0, i.jsx)("div", {
+    }, z) : (0, i.jsx)("div", {
         className: a()(O.Qs, {
             [O.Kx]: k || U
         }),
@@ -124,7 +124,7 @@ function k(e) {
             guildId: n.guild_id,
             pulseSpeakingIndicator: F,
             size: et,
-            speaking: z,
+            speaking: W,
             src: en,
             userId: K.id
         })

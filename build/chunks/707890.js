@@ -1,6 +1,6 @@
 /** chunk id: 707890 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
 var i = n(311907),
     l = n(205693),
@@ -77,7 +77,7 @@ class S extends i.Ay.Store {
         return A.get(e)
     }
 }
-let I = new S(s.h, {
+let T = new S(s.h, {
     CONNECTION_OPEN: C,
     VOICE_CHANNEL_SELECT: function(e) {
         let {

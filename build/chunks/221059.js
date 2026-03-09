@@ -60,16 +60,16 @@ function C(e) {
         warningId: C,
         senderId: S
     } = e, {
-        isBlocked: I
+        isBlocked: T
     } = (0, a.cf)([h.A], () => ({
         isBlocked: h.A.isBlocked(S)
-    }), [S]), T = l.useCallback(() => {
+    }), [S]), I = l.useCallback(() => {
         (0, m.xi)(t, [C])
     }, [t, C]), N = (0, f.eT)(), y = l.useCallback(e => () => {
         o.A.blockUser(S, {
             location: f.Rx
         }).then(() => {
-            T()
+            I()
         }), (0, g._$)({
             channelId: t,
             warningId: C,
@@ -77,7 +77,7 @@ function C(e) {
             warningType: A._j.STRANGER_DANGER,
             cta: e
         })
-    }, [T, t, C, S]);
+    }, [I, t, C, S]);
     l.useEffect(() => {
         (0, g.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
             channelId: t,
@@ -157,7 +157,7 @@ function C(e) {
         warningType: A._j.STRANGER_DANGER,
         header: E.intl.string(E.t.iOkDpM),
         description: E.intl.string(E.t.ISUbcM),
-        onDismiss: T,
+        onDismiss: I,
         buttons: [{
             text: E.intl.string(E.t["Qk/c48"]),
             variant: "primary",
@@ -170,7 +170,7 @@ function C(e) {
                     cta: g.Wm.OPEN_MORE_TIPS
                 })
             }
-        }, ...I ? [] : [{
+        }, ...T ? [] : [{
             text: E.intl.string(E.t.ie0QdN),
             variant: "critical-primary",
             onClick: () => v(g.Wm.USER_BANNER_BLOCK_CONFIRM, g.Wm.USER_BANNER_BLOCK_CANCEL)

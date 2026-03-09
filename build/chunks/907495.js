@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(427209),
     C = n(93474),
     S = n(296043),
-    I = n(857071),
-    T = n(649963),
+    T = n(857071),
+    I = n(649963),
     N = n(815807),
     y = n(429433),
     b = n(517997),
@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(697470),
     V = n(492841),
     K = n(143413),
-    W = n(707985),
-    z = n(194085),
+    z = n(707985),
+    W = n(194085),
     Y = n(519222),
     q = n(427868),
     J = n(547983),
@@ -105,7 +105,7 @@ let ei = l.memo(function(e) {
                 }) : X.intl.formatToPlainString(X.t.L1JQwE, {
                     emojiName: r
                 });
-            return (0, i.jsx)(z.qv, {
+            return (0, i.jsx)(W.qv, {
                 tooltipText: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(u.Text, {
                         variant: "text-sm/medium",
@@ -125,7 +125,7 @@ let ei = l.memo(function(e) {
                     emoji: e,
                     channel: t,
                     message: n,
-                    location: T.qN.MESSAGE_HOVER_BAR
+                    location: I.qN.MESSAGE_HOVER_BAR
                 }),
                 children: (0, i.jsx)(h.A, {
                     emojiId: e.id,
@@ -155,7 +155,7 @@ function el(e) {
         canConfigureJoin: f,
         canReply: C,
         canStartThread: S,
-        canViewThread: T,
+        canViewThread: I,
         canForward: N,
         isExpanded: y,
         showMoreUtilities: O,
@@ -179,28 +179,28 @@ function el(e) {
             author: u
         } = n, h = (0, d.bG)([L.A], () => L.A.getGuild(t.guild_id), [t.guild_id]), g = (0, d.bG)([D.default], () => D.default.getId()), p = (0, R.Id)(t), f = (0, R.s5)(t), {
             firstMessage: x
-        } = (0, d.bG)([_.A], () => _.A.getMessage(t.id), [t.id]), C = M.jW.useSetting(), S = M.Q_.useSetting(), T = (0, d.bG)([P.A], () => null == t.guild_id || P.A.canChatInGuild(t.guild_id), [t]), {
+        } = (0, d.bG)([_.A], () => _.A.getMessage(t.id), [t.id]), C = M.jW.useSetting(), S = M.Q_.useSetting(), I = (0, d.bG)([P.A], () => null == t.guild_id || P.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: N,
             canAddNewReactions: y
         } = (0, d.cf)([w.A], () => ({
-            canAddNewReactions: T && w.A.can($.xBc.ADD_REACTIONS, t),
+            canAddNewReactions: I && w.A.can($.xBc.ADD_REACTIONS, t),
             canManageMessages: w.A.can($.xBc.MANAGE_MESSAGES, t)
-        }), [t, T]), O = (0, b.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), z = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
+        }), [t, I]), O = (0, b.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), W = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
         n.type === $.lAJ.AUTO_MODERATION_ACTION && (Y = Y && N), t.isModeratorReportChannel() && (Y = Y && n.id !== x?.id && !(0, K.A)(n));
         let q = (0, H.ul)(n),
             J = (0, V.A)(n, t),
             Z = !t.isSystemDM() && (0, B.A)(n, g) && p && !f,
             {
                 disableReactionCreates: X
-            } = (0, W.A)({
+            } = (0, z.A)({
                 channel: t,
-                canChat: T,
+                canChat: I,
                 renderReactions: C,
                 canAddNewReactions: y,
                 isLurking: F,
                 isActiveChannelOrUnarchivableThread: p
             }),
-            Q = t.type === $.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has($.GuildFeatures.NEWS) && (z || N) && (0, A.A)(n),
+            Q = t.type === $.rbe.GUILD_ANNOUNCEMENT && null != h && h.features.has($.GuildFeatures.NEWS) && (W || N) && (0, A.A)(n),
             ee = t.getGuildId(),
             et = null != ee && n.type === $.lAJ.USER_JOIN && w.A.canWithPartialContext($.xBc.MANAGE_GUILD, {
                 guildId: ee
@@ -254,35 +254,35 @@ function el(e) {
     }, [G, Z]), ea = (0, R.Id)(t), eo = n.hasFlag($.pr7.CROSSPOSTED);
     return (0, i.jsxs)(i.Fragment, {
         children: [y ? (0, i.jsxs)(i.Fragment, {
-            children: [s && Q ? (0, i.jsx)(z.qv, {
+            children: [s && Q ? (0, i.jsx)(W.qv, {
                 label: X.intl.string(X.t.zBoHlf),
                 icon: u.L9S,
                 onClick: e => (0, Y.DT)(t, n, e)
-            }, "copy-id") : null, s ? (0, i.jsx)(z.qv, {
+            }, "copy-id") : null, s ? (0, i.jsx)(W.qv, {
                 label: X.intl.string(X.t.WqhZss),
                 icon: u.qYV,
                 onClick: () => (0, Y.S)(t, n)
-            }, "copy-link") : null, f ? (0, i.jsx)(z.qv, {
+            }, "copy-link") : null, f ? (0, i.jsx)(W.qv, {
                 label: X.intl.string(X.t.NpHUi1),
                 icon: u.cBN,
                 onClick: () => (0, Y.vc)(t)
-            }, "configure") : null, ea ? (0, i.jsx)(z.qv, {
+            }, "configure") : null, ea ? (0, i.jsx)(W.qv, {
                 label: X.intl.string(X.t.RpE9k7),
                 icon: u.QTh,
                 onClick: () => (0, Y.cl)(t, n)
-            }, "mark-unread") : null, F ? (0, i.jsx)(z.qv, {
+            }, "mark-unread") : null, F ? (0, i.jsx)(W.qv, {
                 label: J ? X.intl.string(X.t.LHUP9D) : X.intl.string(X.t["9p3D9p"]),
                 icon: J ? u.cFy : u.c$8,
                 onClick: () => J ? (0, Y.r7)(t, n) : (0, Y.wF)(t, n)
-            }, "bookmark") : null, a ? (0, i.jsx)(z.qv, {
+            }, "bookmark") : null, a ? (0, i.jsx)(W.qv, {
                 label: n.pinned ? X.intl.string(X.t["Bse+F/"]) : X.intl.string(X.t.CvQ18w),
                 icon: u.tsw,
                 onClick: e => (0, Y.rS)(t, n, e)
-            }, "pin") : null, S && N ? (0, i.jsx)(z.qv, {
+            }, "pin") : null, S && N ? (0, i.jsx)(W.qv, {
                 label: X.intl.string(X.t.rBIGBL),
                 icon: u.ysw,
                 onClick: () => (0, Y.Nw)(t, n)
-            }, "thread") : null, C && h ? (0, i.jsx)(z.qv, {
+            }, "thread") : null, C && h ? (0, i.jsx)(W.qv, {
                 label: X.intl.string(X.t["5IEsGx"]),
                 icon: u.W4J,
                 onClick: e => (0, Y.$b)(t, n, e)
@@ -292,7 +292,7 @@ function el(e) {
                 children: [(0, i.jsx)(ei, {
                     channel: t,
                     message: n
-                }), (0, i.jsx)(z.$$, {})]
+                }), (0, i.jsx)(W.$$, {})]
             }), (0, i.jsx)(q.A, {
                 togglePopout: es,
                 renderEmojiPicker: er,
@@ -301,32 +301,32 @@ function el(e) {
                 channel: t,
                 message: n
             })]
-        }) : null, C && !h ? (0, i.jsx)(z.qv, {
+        }) : null, C && !h ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t["5IEsGx"]),
             icon: u.W4J,
             onClick: e => (0, Y.$b)(t, n, e)
-        }, "reply-other") : null, h ? (0, i.jsx)(z.qv, {
+        }, "reply-other") : null, h ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t.bt75uw),
             icon: u.R2l,
             onClick: () => (0, Y.u_)(t, n)
-        }, "edit") : null, N ? (0, i.jsx)(z.qv, {
+        }, "edit") : null, N ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t.I3ltXO),
             icon: x.A,
             onClick: () => (0, Y.Z4)(t, n)
-        }, "forward") : null, S && !N ? (0, i.jsx)(z.qv, {
+        }, "forward") : null, S && !N ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t.rBIGBL),
             icon: u.ysw,
             onClick: () => (0, Y.Nw)(t, n)
-        }, "thread") : null, !S && T ? (0, i.jsx)(z.qv, {
+        }, "thread") : null, !S && I ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t["39d0Wj"]),
             icon: u.ysw,
             onClick: () => (0, Y.mF)(t, n)
-        }, "view-thread") : null, g ? (0, i.jsx)(z.qv, {
+        }, "view-thread") : null, g ? (0, i.jsx)(W.qv, {
             label: eo ? X.intl.string(X.t["1kWJAr"]) : X.intl.string(X.t.MFGE51),
             icon: u.koX,
             onClick: () => (0, Y.Le)(t, n),
             disabled: eo
-        }, "publish") : null, r && y ? (0, i.jsx)(z.qv, {
+        }, "publish") : null, r && y ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t.oyYWHE),
             icon: u.ucK,
             onClick: e => (0, Y.RC)(t, n, e),
@@ -359,7 +359,7 @@ function el(e) {
                 } = e, {
                     isShown: s
                 } = t;
-                return (0, i.jsx)(z.qv, {
+                return (0, i.jsx)(W.qv, {
                     ref: et,
                     label: X.intl.string(X.t["UKOtz+"]),
                     icon: u.jNK,
@@ -378,11 +378,11 @@ function es(e) {
         message: n
     } = e, l = (0, d.bG)([C.A], () => null != C.A.getMessage(n.id), [n.id]), s = null == n.interaction || null != n.interactionData && (0, S.Bl)(n.interactionData);
     return (0, i.jsxs)(i.Fragment, {
-        children: [!l && s && (0, i.jsx)(z.qv, {
+        children: [!l && s && (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t["5911Lb"]),
             icon: u.mqY,
             onClick: () => (0, Y.Io)(t, n)
-        }, "retry"), (0, i.jsx)(z.qv, {
+        }, "retry"), (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t.oyYWHE),
             icon: u.ucK,
             onClick: e => (0, Y.RC)(t, n, e)
@@ -401,9 +401,9 @@ function ea(e) {
     } = e;
     if (null == n) return;
     let r = (0, N.jq)(n);
-    "add" === t ? (0, T.BB)(i.id, l.id, r, s, {
+    "add" === t ? (0, I.BB)(i.id, l.id, r, s, {
         burst: a
-    }) : (0, T.et)({
+    }) : (0, I.et)({
         channelId: i.id,
         messageId: l.id,
         emoji: r,
@@ -439,7 +439,7 @@ function er(e, t, n) {
                 emoji: l,
                 channel: e,
                 message: t,
-                location: T.qN.MESSAGE_REACTION_PICKER,
+                location: I.qN.MESSAGE_REACTION_PICKER,
                 isBurst: a
             }), s && (a ? o()(n, 150)() : n())
         },
@@ -480,7 +480,7 @@ let eo = l.memo(function(e) {
         onContextMenu: et,
         role: "group",
         "aria-label": X.intl.string(X.t.Lv7LxN),
-        children: (0, i.jsxs)(z.Ay, {
+        children: (0, i.jsxs)(W.Ay, {
             className: e.innerClassName,
             children: [o, c]
         })

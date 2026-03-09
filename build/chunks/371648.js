@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(302031),
     C = n(513272),
     S = n(253932),
-    I = n(617617),
-    T = n(961350),
+    T = n(617617),
+    I = n(961350),
     N = n(72314),
     y = n(580745),
     b = n(834942),
@@ -44,8 +44,8 @@ var i = n(627968),
     B = n(652215),
     V = n(985018),
     K = n(948100);
-let W = (0, r.animated)(d.fKU),
-    z = l.memo(function(e) {
+let z = (0, r.animated)(d.fKU),
+    W = l.memo(function(e) {
         var t;
         let n, s, r, {
                 className: h,
@@ -56,7 +56,7 @@ let W = (0, r.animated)(d.fKU),
                 unreadCount: x,
                 showNewMessagesBar: C,
                 messageDisplayCompact: S,
-                channelStream: T,
+                channelStream: I,
                 uploads: y,
                 hasUnreads: b,
                 editingMessageId: v,
@@ -66,7 +66,7 @@ let W = (0, r.animated)(d.fKU),
                 showingQuarantineBanner: L,
                 hideSummaries: P = !1,
                 jumpBarClassName: U,
-                typingGradient: z
+                typingGradient: W
             } = e,
             [Y, q] = l.useState(N.A.isAtBottom(f.id) ?? !1),
             J = (0, w.I)(S, R),
@@ -111,7 +111,7 @@ let W = (0, r.animated)(d.fKU),
                 unreadCount: x,
                 showNewMessagesBar: C,
                 messageDisplayCompact: S,
-                channelStream: T,
+                channelStream: I,
                 uploads: y,
                 loadMore: Q.loadMore,
                 scrollManager: Q,
@@ -148,17 +148,17 @@ let W = (0, r.animated)(d.fKU),
             ed = (0, m.A)(e => {
                 Q.ref.current = e, eo.current = e?.getScrollerNode() ?? null
             }),
-            eu = (0, c.bG)([I.A], () => {
-                let e = I.A.settings.appearance?.clientThemeSettings;
+            eu = (0, c.bG)([T.A], () => {
+                let e = T.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
-            eh = l.useMemo(() => z ? Y ? K.gA : K.ru : K.Zd, [z, Y]),
-            em = l.useMemo(() => z ? Y ? K.cz : K.XF : K.U6, [z, Y]);
+            eh = l.useMemo(() => W ? Y ? K.gA : K.ru : K.Zd, [W, Y]),
+            em = l.useMemo(() => W ? Y ? K.cz : K.XF : K.U6, [W, Y]);
         return (0, i.jsxs)(o.hD, {
             navigator: ee,
             children: [null != ea && ea, (0, i.jsxs)("div", {
                 className: a()(K.Og, h, `group-spacing-${g}`),
-                children: [null == ea && ei, (0, i.jsxs)(W, {
+                children: [null == ea && ei, (0, i.jsxs)(z, {
                     ref: ed,
                     customTheme: !0,
                     className: a()(p, K.XG, eu ? em : void 0),
@@ -226,7 +226,7 @@ let W = (0, r.animated)(d.fKU),
                 canManageMessages: i
             }
         }(t), {
-            messageGroupSpacing: I,
+            messageGroupSpacing: T,
             fontSize: N,
             messageDisplayCompact: O,
             renderSpoilers: w,
@@ -273,7 +273,7 @@ let W = (0, r.animated)(d.fKU),
                 }, {
                     autoTrackExposure: !1
                 }),
-                r = D.default.getUser(T.default.getId())?.hasFlag(B.nhx.SPAMMER) ?? !1,
+                r = D.default.getUser(I.default.getId())?.hasFlag(B.nhx.SPAMMER) ?? !1,
                 o = (0, h.cI)(e),
                 d = (0, f.A)("use_topic_dividers_in_chat"),
                 u = (0, c.yK)([C.A], () => o && d ? C.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
@@ -303,9 +303,9 @@ let W = (0, r.animated)(d.fKU),
         return (0, i.jsx)(x.Bs.Provider, {
             value: (0, L.A)(w, u),
             children: (0, i.jsx)(U.t, {
-                children: (0, i.jsx)(z, {
+                children: (0, i.jsx)(W, {
                     ...d,
-                    messageGroupSpacing: I,
+                    messageGroupSpacing: T,
                     showNewMessagesBar: !0,
                     channel: t,
                     messageDisplayCompact: !r && (a || O),

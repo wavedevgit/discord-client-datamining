@@ -1,6 +1,6 @@
 /** chunk id: 920437 params = (module,exports,require) **/
 n.d(t, {
-    A: () => W
+    A: () => z
 });
 var i = n(627968),
     l = n(64700),
@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(709977),
     C = n(212455),
     S = n(466244),
-    I = n(158476),
-    T = n(857071),
+    T = n(158476),
+    I = n(857071),
     N = n(552227),
     y = n(698405),
     b = n(557722),
@@ -236,8 +236,8 @@ class K extends l.PureComponent {
             showLinkedLobbyApplicationLoadingIndicator: C,
             requiredLinkedLobbyApplication: S
         } = this.props, {
-            shouldShowLurkerModeUpsellPopout: I,
-            shouldShowLurkerModeSuccessPopout: T
+            shouldShowLurkerModeUpsellPopout: T,
+            shouldShowLurkerModeSuccessPopout: I
         } = this.state, N = {
             theme: u,
             useReducedMotion: f
@@ -273,7 +273,7 @@ class K extends l.PureComponent {
             targetElementRef: this.textAreaContainerRef,
             position: "top",
             align: "left",
-            shouldShow: T,
+            shouldShow: I,
             onRequestClose: () => this.setState({
                 shouldShowLurkerModeSuccessPopout: !1
             }),
@@ -285,7 +285,7 @@ class K extends l.PureComponent {
                     children: [this.renderMemberVerificationSuccessModal(), g ? (0, i.jsx)(d.YNO, {
                         targetElementRef: this.upsellTargetRef,
                         renderPopout: this.renderLurkerModeUpsellPopout,
-                        shouldShow: I,
+                        shouldShow: T,
                         position: "top",
                         children: e => (0, i.jsx)(d.DUT, {
                             innerRef: this.upsellTargetRef,
@@ -301,11 +301,11 @@ class K extends l.PureComponent {
     }
 }
 
-function W(e) {
+function z(e) {
     let {
         channel: t,
         children: n
-    } = e, l = t.getGuildId(), s = (0, r.bG)([D.A], () => D.A.getGuild(l)), a = (0, r.bG)([O.A], () => O.A.getCheck(l)), o = t.type === G.rbe.GUILD_ANNOUNCEMENT && null != s && s.features.has(G.GuildFeatures.NEWS), c = (0, r.bG)([R.A], () => o ? R.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([T.A], () => T.A.isLurking(l)), u = (0, r.bG)([P.default], () => P.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([M.Ay], () => null != u && (M.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(s), p = (0, r.bG)([I.A], () => I.A.shouldShowPopout(l)), f = (0, r.bG)([L.A], () => L.A.can(G.xBc.SEND_MESSAGES, t)), _ = (0, r.bG)([C.A], () => C.A.getRequest(l)), {
+    } = e, l = t.getGuildId(), s = (0, r.bG)([D.A], () => D.A.getGuild(l)), a = (0, r.bG)([O.A], () => O.A.getCheck(l)), o = t.type === G.rbe.GUILD_ANNOUNCEMENT && null != s && s.features.has(G.GuildFeatures.NEWS), c = (0, r.bG)([R.A], () => o ? R.A.getFollowerStatsForChannel(t.id) : null), d = (0, r.bG)([I.A], () => I.A.isLurking(l)), u = (0, r.bG)([P.default], () => P.default.getCurrentUser()), h = u?.isStaff() ?? !1, m = (0, r.bG)([M.Ay], () => null != u && (M.Ay.getMember(l, u.id)?.isPending ?? !1)), g = !!(0, x.Qd)(s), p = (0, r.bG)([T.A], () => T.A.shouldShowPopout(l)), f = (0, r.bG)([L.A], () => L.A.can(G.xBc.SEND_MESSAGES, t)), _ = (0, r.bG)([C.A], () => C.A.getRequest(l)), {
         showLinkedLobbyApplicationLoadingIndicator: S,
         requiredLinkedLobbyApplication: N
     } = (0, k.A)(t.linkedLobby), y = {

@@ -1,5 +1,4 @@
 /** chunk id: 419447 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     g4: "loadingContainer__08415",
     Of: "feedContent__08415",

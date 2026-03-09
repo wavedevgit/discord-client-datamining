@@ -29,7 +29,7 @@ function S(e) {
         voiceListRef: l,
         showSectionHeaders: s = !1,
         query: a
-    } = e, r = T(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), y = N(a, S), b = Math.ceil(y.length / t), {
+    } = e, r = I(), S = (0, o.bG)([h.default], () => (0, m.ki)(h.default.getCurrentUser())), y = N(a, S), b = Math.ceil(y.length / t), {
         isNativeModuleLoaded: v,
         isNativeModuleLoading: j,
         catalogLastFetchTime: R
@@ -80,7 +80,7 @@ function S(e) {
         renderRow: e => {
             let n = e * t,
                 l = y.slice(n, n + t);
-            return (0, i.jsx)(I, {
+            return (0, i.jsx)(T, {
                 children: l.map((n, l) => (0, i.jsx)(f.I, {
                     voiceFilter: n,
                     hasNitro: S,
@@ -109,7 +109,7 @@ function S(e) {
     })
 }
 
-function I(e) {
+function T(e) {
     let {
         children: t
     } = e, n = l.useRef(null);
@@ -122,7 +122,7 @@ function I(e) {
         })
     })
 }
-let T = () => (0, o.bG)([g.A], () => !Object.keys(g.A.getVoiceFilterModels() ?? {}).length && (g.A.getCatalogFetchFailed() || g.A.hasNativeModuleFailed())),
+let I = () => (0, o.bG)([g.A], () => !Object.keys(g.A.getVoiceFilterModels() ?? {}).length && (g.A.getCatalogFetchFailed() || g.A.hasNativeModuleFailed())),
     N = (e, t) => (0, o.yK)([g.A], () => {
         var n;
         let i, l = g.A.getVoiceFilters(),

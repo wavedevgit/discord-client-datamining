@@ -39,10 +39,10 @@ function _(e) {
             reset: !0
         })
     });
-    let I = l.useCallback(() => {
+    let T = l.useCallback(() => {
             o.A.fetchPins(t.id)
         }, [t.id]),
-        T = l.useCallback(() => {
+        I = l.useCallback(() => {
             o.A.fetchPins(t.id, {
                 before: E.at(-1)?.pinnedAt
             })
@@ -52,7 +52,7 @@ function _(e) {
         "aria-label": p.intl.string(p.t["mp1N/2"]),
         children: (0, i.jsx)(h.Ay, {
             channel: t,
-            onFetch: I,
+            onFetch: T,
             messages: C,
             loading: x === A.e.LOADING,
             hasMore: x === A.e.LOADED_HAS_MORE,
@@ -74,7 +74,7 @@ function _(e) {
                 null != e && (n.shiftKey ? o.A.unpinMessage(t, e.id) : u.A.confirmUnpin(t, e))
             },
             onJump: _,
-            loadMore: T,
+            loadMore: I,
             getProTip: function() {
                 return t.isPrivate() ? p.intl.string(p.t["3dLGAs"]) : p.intl.string(p.t.KTbRcg)
             },

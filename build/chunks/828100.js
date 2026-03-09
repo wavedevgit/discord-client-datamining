@@ -1,7 +1,7 @@
 /** chunk id: 828100 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => w
+    A: () => P
 });
 var i = n(627968),
     s = n(64700),
@@ -23,25 +23,24 @@ var i = n(627968),
     C = n(915089),
     E = n(725323),
     I = n(611924),
-    N = n(392135),
-    b = n(95550),
-    S = n(380335),
-    T = n(309199),
-    v = n(157550),
-    y = n(97469),
-    j = n(734057),
-    R = n(290863),
-    O = n(645959),
-    L = n(701363),
-    M = n(652215),
-    D = n(985018),
-    G = n(669216);
-let U = s.memo(function() {
+    N = n(95550),
+    b = n(380335),
+    S = n(309199),
+    T = n(157550),
+    v = n(97469),
+    y = n(734057),
+    j = n(290863),
+    R = n(645959),
+    O = n(701363),
+    L = n(652215),
+    M = n(985018),
+    D = n(669216);
+let G = s.memo(function() {
     return (0, i.jsxs)("svg", {
         width: "184",
         height: "428",
         viewBox: "0 0 184 428",
-        className: G.Ie,
+        className: D.Ie,
         children: [(0, i.jsx)("rect", {
             x: 40,
             y: 6,
@@ -163,7 +162,7 @@ let U = s.memo(function() {
         })]
     })
 });
-class P extends s.Component {
+class U extends s.Component {
     static getDerivedStateFromProps(e) {
         let {
             children: t,
@@ -243,9 +242,9 @@ class P extends s.Component {
             o = t.some(e => (0, f.A)(e)),
             c = {
                 num_users_visible: r.length,
-                num_users_visible_with_mobile_indicator: a.filter(e => null != e && R.A.isMobileOnline(e)).length
+                num_users_visible_with_mobile_indicator: a.filter(e => null != e && j.A.isMobileOnline(e)).length
             };
-        this.hasReportedAnalytics = !0, p.Ay.trackWithMetadata(M.HAw.DM_LIST_VIEWED, {
+        this.hasReportedAnalytics = !0, p.Ay.trackWithMetadata(L.HAw.DM_LIST_VIEWED, {
             ...c,
             ...(0, _.F)(),
             visible_user_ids: a.filter(e => null != e),
@@ -256,7 +255,7 @@ class P extends s.Component {
     handleScroll = r()(() => {
         if (null != this._list) {
             let e = this._list.getScrollerNode();
-            null != e && h.A.updateChannelListScroll(M.ME, e.scrollTop)
+            null != e && h.A.updateChannelListScroll(L.ME, e.scrollTop)
         }
         void 0 !== this.props.onHandleScroll && this.props.onHandleScroll()
     }, 100);
@@ -269,7 +268,7 @@ class P extends s.Component {
             totalRowCount: r,
             preRenderedChildren: a
         } = this.state, o = s[n[t]];
-        return null == o ? null : (0, i.jsx)(L.Ay, {
+        return null == o ? null : (0, i.jsx)(O.Ay, {
             channel: o,
             selected: o.id === l,
             "aria-posinset": a + t + 1,
@@ -293,26 +292,22 @@ class P extends s.Component {
         } = e, {
             privateChannelIds: s
         } = this.props;
-        return 0 === t ? this.renderChild(n) : 0 === n && 0 === s.length ? (0, i.jsx)(U, {}, "no-private-channels") : this.renderDM(t, n)
+        return 0 === t ? this.renderChild(n) : 0 === n && 0 === s.length ? (0, i.jsx)(G, {}, "no-private-channels") : this.renderDM(t, n)
     };
     renderSection = e => {
         let {
             section: t
         } = e;
-        if (0 === t) return null;
-        let {
-            isGdmCopyExperimentEnabled: n
-        } = this.props;
-        return (0, i.jsxs)(x.A, {
-            className: G._e,
+        return 0 === t ? null : (0, i.jsxs)(x.A, {
+            className: D._e,
             children: [(0, i.jsx)("span", {
-                className: G.TK,
-                children: D.intl.string(D.t.YUU0RF)
-            }), (0, i.jsx)(b.Ay, {
-                tooltip: D.intl.string(n ? D.t.bA875g : D.t["6Urw1t"]),
+                className: D.TK,
+                children: M.intl.string(M.t.YUU0RF)
+            }), (0, i.jsx)(N.Ay, {
+                tooltip: M.intl.string(M.t.bA875g),
                 tooltipPosition: "top",
-                className: G.U2,
-                iconClassName: G.Br,
+                className: D.U2,
+                iconClassName: D.Br,
                 icon: u.TIR,
                 subscribeToGlobalHotkey: !0
             })]
@@ -349,13 +344,13 @@ class P extends s.Component {
                     children: s => (0, i.jsx)(u.B8B, {
                         fade: !0,
                         innerRole: r,
-                        innerAriaLabel: D.intl.string(D.t.YUU0RF),
+                        innerAriaLabel: M.intl.string(M.t.YUU0RF),
                         innerTag: "ul",
                         ref: e => {
                             this._list = e, this.props.listRef.current = e, l.current = e?.getScrollerNode() ?? null
                         },
                         onScroll: this.handleScroll,
-                        className: G.XG,
+                        className: D.XG,
                         sectionHeight: this.getSectionHeight,
                         paddingTop: t,
                         paddingBottom: 8,
@@ -371,7 +366,7 @@ class P extends s.Component {
         })
     }
 }
-let w = e => {
+let P = e => {
     let {
         density: t
     } = (0, u.wRf)(), {
@@ -379,23 +374,21 @@ let w = e => {
         theme: l,
         children: r,
         listScrollerRef: d
-    } = e, h = s.Children.count(r), p = N.A.useConfig({
-        location: "PrivateChannelsList"
-    }).enabled, _ = j.A.getMutablePrivateChannels(), f = (0, T.uX)(_), x = (0, c.yK)([O.default, S.A, v.A], () => {
-        let e = O.default.getPrivateChannelIds();
-        return (0, T.eh)(e, [S.A, v.A])
+    } = e, h = s.Children.count(r), p = y.A.getMutablePrivateChannels(), _ = (0, S.uX)(p), f = (0, c.yK)([R.default, b.A, T.A], () => {
+        let e = R.default.getPrivateChannelIds();
+        return (0, S.eh)(e, [b.A, T.A])
     });
     (0, I.P)(E._);
     let {
-        analyticsLocations: b
-    } = (0, g.Ay)(m.A.CONTACTS_LIST), R = (0, y.NC)(), {
-        keyboardModeEnabled: L,
-        version: M
-    } = (0, c.cf)([A.A, j.A], () => ({
+        analyticsLocations: x
+    } = (0, g.Ay)(m.A.CONTACTS_LIST), N = (0, v.NC)(), {
+        keyboardModeEnabled: j,
+        version: O
+    } = (0, c.cf)([A.A, y.A], () => ({
         keyboardModeEnabled: A.A.keyboardModeEnabled,
-        version: null != n ? `${n}:${j.A.getPrivateChannelsVersion()}` : j.A.getPrivateChannelsVersion()
-    })), D = s.useRef(null), G = d ?? D, U = s.useCallback(e => {
-        let t = G.current,
+        version: null != n ? `${n}:${y.A.getPrivateChannelsVersion()}` : y.A.getPrivateChannelsVersion()
+    })), L = s.useRef(null), M = d ?? L, D = s.useCallback(e => {
+        let t = M.current,
             n = document.querySelector(e);
         null != t && null != n && t.scrollIntoViewNode({
             node: n,
@@ -405,41 +398,40 @@ let w = e => {
                 }))
             }
         })
-    }, [G]), w = s.useCallback(() => new Promise(e => {
-        let t = G.current;
+    }, [M]), G = s.useCallback(() => new Promise(e => {
+        let t = M.current;
         if (null == t) return e();
         t.scrollToTop({
             callback: () => requestAnimationFrame(() => e())
         })
-    }), [G]), k = s.useCallback(() => new Promise(e => {
-        let t = G.current;
+    }), [M]), P = s.useCallback(() => new Promise(e => {
+        let t = M.current;
         if (null == t) return e();
         t.scrollToBottom({
             callback() {
                 requestAnimationFrame(() => setTimeout(e, 100))
             }
         })
-    }), [G]), V = (0, C.GV)(), B = (0, o.Ay)({
-        id: `private-channels-${V}`,
-        isEnabled: L,
-        scrollToStart: w,
-        scrollToEnd: k,
+    }), [M]), w = (0, C.GV)(), k = (0, o.Ay)({
+        id: `private-channels-${w}`,
+        isEnabled: j,
+        scrollToStart: G,
+        scrollToEnd: P,
         defaultFocused: (h + 1).toString(),
-        setFocus: U
+        setFocus: D
     });
     return (0, i.jsx)(g.f5, {
-        value: b,
+        value: x,
         children: (0, i.jsx)(a.hD, {
-            navigator: B,
-            children: (0, i.jsx)(P, {
+            navigator: k,
+            children: (0, i.jsx)(U, {
                 ...e,
                 density: t,
-                channels: f,
-                privateChannelIds: x,
-                listRef: G,
-                theme: R ?? l,
-                version: M,
-                isGdmCopyExperimentEnabled: p
+                channels: _,
+                privateChannelIds: f,
+                listRef: M,
+                theme: N ?? l,
+                version: O
             })
         })
     })

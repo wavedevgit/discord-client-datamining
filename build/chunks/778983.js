@@ -26,8 +26,8 @@ function g(e) {
     } = t, E = (0, l.bG)([d.A], () => null != _ ? d.A.getMessage(_.channel_id, _.message_id) : null), x = (0, l.bG)([c.A], () => null != E ? c.A.getChannel(E.channel_id) : null), C = (0, l.bG)([c.A], () => c.A.getChannel(p.id)?.isArchivedThread() ?? !1);
     if (!f) return null;
     let S = null == E ? A.intl.string(m.default["0IZbwC"]) : A.intl.string(m.default.Uj6oD4),
-        I = null == E,
-        T = `delete-message-${t.id}`;
+        T = null == E,
+        I = `delete-message-${t.id}`;
     return (0, i.jsx)(h.A, {
         text: S,
         icon: a.ucK,
@@ -37,7 +37,7 @@ function g(e) {
                 moderatorReportChannelId: p.id
             })
         },
-        disabled: I,
+        disabled: T,
         color: s.$n.Colors.RED
-    }, T)
+    }, I)
 }

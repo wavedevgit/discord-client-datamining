@@ -1,7 +1,7 @@
 /** chunk id: 66442 params = (module,exports,require) **/
 n.d(t, {
     X: () => S,
-    default: () => I
+    default: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -75,23 +75,23 @@ function S(e) {
         }) : null]
     })
 }
-let I = function(e) {
+let T = function(e) {
     let {
         channelId: t,
         onClose: n,
         transitionState: s,
         setHasPendingChanges: a,
         closeOrShowDiscardChangesAlert: A,
-        location: I
-    } = e, T = (0, o.bG)([p.A], () => p.A.getChannel(t)), N = T?.name, y = (0, g.e5)(T), [b, v] = l.useState(N ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
+        location: T
+    } = e, I = (0, o.bG)([p.A], () => p.A.getChannel(t)), N = I?.name, y = (0, g.e5)(I), [b, v] = l.useState(N ?? ""), [j, R] = l.useState(void 0), M = void 0 !== j, {
         analyticsLocations: D
-    } = (0, m.Ay)(I, h.A.GROUP_DM_EDIT_MODAL), O = {
+    } = (0, m.Ay)(T, h.A.GROUP_DM_EDIT_MODAL), O = {
         channel_id: t,
-        channel_type: T?.type,
-        location: I,
+        channel_type: I?.type,
+        location: T,
         location_stack: D,
         old_name_set: "" !== N,
-        old_icon_set: T?.icon != null
+        old_icon_set: I?.icon != null
     };
     return (l.useEffect(() => {
         a(b !== N || M)
@@ -103,7 +103,7 @@ let I = function(e) {
             ...O,
             action: "dismissed"
         })
-    })), null == T) ? null : (0, i.jsx)(m.f5, {
+    })), null == I) ? null : (0, i.jsx)(m.f5, {
         value: D,
         children: (0, i.jsx)("form", {
             onSubmit: e => {
@@ -114,12 +114,12 @@ let I = function(e) {
                         ...O,
                         action: "saved",
                         new_name_set: "" !== b,
-                        new_icon_set: (l ? j : T?.icon) != null,
+                        new_icon_set: (l ? j : I?.icon) != null,
                         name_changed: i,
                         icon_changed: l
                     }), i || l) {
                     let e = {};
-                    i && (e.name = b), l && (e.icon = j), d.A.updateChannel(t, e, I).catch(_.XA)
+                    i && (e.name = b), l && (e.icon = j), d.A.updateChannel(t, e, T).catch(_.XA)
                 }
                 n()
             },
@@ -140,7 +140,7 @@ let I = function(e) {
                 children: (0, i.jsxs)("div", {
                     className: C.jE,
                     children: [(0, i.jsx)(S, {
-                        channel: T,
+                        channel: I,
                         previewIcon: j,
                         onIconChange: e => R(e.imageUri),
                         onIconRemove: () => R(null),

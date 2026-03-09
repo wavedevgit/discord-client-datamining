@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(34457),
     C = n(317525),
     S = n(71393),
-    I = n(576705),
-    T = n(287809),
+    T = n(576705),
+    I = n(287809),
     N = n(488926),
     y = n(427262),
     b = n(314307),
@@ -36,7 +36,7 @@ var i = n(627968),
 function O(e) {
     let {
         channel: t
-    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([T.default, S.A], () => T.default.getUser(S.A.getGuild(O)?.ownerId)), w = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), k = l.useMemo(() => o()(w).filter(e => {
+    } = e, [n, s] = l.useState(!1), r = (0, g.Ay)(t, !0), O = t.guild_id, L = (0, d.bG)([C.A], () => null != O ? C.A.getSortedRoles(O) : void 0), P = (0, d.bG)([I.default, S.A], () => I.default.getUser(S.A.getGuild(O)?.ownerId)), w = l.useMemo(() => null != L ? L.filter(e => !(0, x.Oy)(e)) : [], [L]), k = l.useMemo(() => o()(w).filter(e => {
         if (null == O) return !1;
         let n = N.aH({
             forceRoles: {
@@ -45,11 +45,11 @@ function O(e) {
             context: t
         });
         return c.X8(n, c.kg(j.xBc.ADMINISTRATOR, j.xBc.VIEW_CHANNEL))
-    }).value(), [t, O, w]), U = (0, d.yK)([T.default], () => {
+    }).value(), [t, O, w]), U = (0, d.yK)([I.default], () => {
         let e = {};
         for (let n of (null != P && (e[P.id] = P), Object.values(t.permissionOverwrites))) {
             if (n.type !== A.r2.MEMBER || null != e[n.id]) continue;
-            let t = T.default.getUser(n.id);
+            let t = I.default.getUser(n.id);
             null != t && (e[t.id] = t)
         }
         return o()(e).filter(e => {
@@ -62,7 +62,7 @@ function O(e) {
                 l = c.zy(i.allow, j.xBc.VIEW_CHANNEL);
             return n || l
         }).value()
-    }, [t, P]), G = I.A.can(j.xBc.MANAGE_CHANNELS, t) || I.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => s(!1), []);
+    }, [t, P]), G = T.A.can(j.xBc.MANAGE_CHANNELS, t) || T.A.can(j.xBc.MANAGE_ROLES, t), F = l.useCallback(() => s(!1), []);
     return (0, i.jsxs)(b.Ay, {
         channelId: t.id,
         children: [(0, i.jsx)(b.WK, {

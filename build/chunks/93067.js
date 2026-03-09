@@ -46,16 +46,16 @@ function p(e) {
         }
     }(s);
     f = null != _ ? `${t} ${_}` : t;
-    let [x] = l.useState(new r.Ep), [C, S] = l.useState(!1), [I, T] = l.useState(!1), N = l.useCallback(() => {
+    let [x] = l.useState(new r.Ep), [C, S] = l.useState(!1), [T, I] = l.useState(!1), N = l.useCallback(() => {
         x.start(250, () => {
             S(!1)
         }, !1)
     }, [x, S]), y = l.useCallback(() => {
         x.stop(), S(!0)
     }, [x, S]), b = l.useCallback(() => {
-        T(!0)
+        I(!0)
     }, []), v = l.useCallback(() => {
-        T(!1)
+        I(!1)
     }, []);
     return (0, i.jsx)(o.YNO, {
         renderPopout: () => (0, i.jsx)(h.A, {
@@ -72,7 +72,7 @@ function p(e) {
             })
         }),
         targetElementRef: p,
-        shouldShow: I || C,
+        shouldShow: T || C,
         position: "bottom",
         children: e => (0, i.jsx)(h.A, {
             children: (0, i.jsx)(o.vN3, {

@@ -43,12 +43,12 @@ function S(e) {
         s = i[l + (Math.abs(n) > 0 ? n : 1)] ?? i[l - 1];
     return null != s ? s : null
 }
-let I = {
+let T = {
     scrollTop: 0,
     scrollHeight: 0,
     offsetHeight: 0
 };
-class T {
+class I {
     props;
     ref = i.createRef();
     automaticAnchor = null;
@@ -299,7 +299,7 @@ class T {
         this.automaticAnchor = e, this._automaticAnchorCallbacks?.forEach(e => e(this.automaticAnchor, this._bottomAnchor)), this.updateVisibleMessagesDebounced(e?.id, this._bottomAnchor?.id)
     }
     getScrollerState() {
-        return this.ref.current?.getScrollerState() ?? I
+        return this.ref.current?.getScrollerState() ?? T
     }
     handleScroll = e => {
         if (!this.isInitialized()) return;
@@ -598,7 +598,7 @@ function N(e) {
         additionalMessagePadding: h = 0
     } = e, {
         windowId: m
-    } = i.useContext(u.Ay), [A] = i.useState(() => new T({
+    } = i.useContext(u.Ay), [A] = i.useState(() => new I({
         messages: t,
         channel: n,
         compact: l,

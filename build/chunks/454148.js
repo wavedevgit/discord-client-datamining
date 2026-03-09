@@ -25,9 +25,9 @@ function x(e) {
         channelId: t,
         warningId: x,
         senderId: C
-    } = e, S = (0, f.CW)(), I = l.useCallback(() => {
+    } = e, S = (0, f.CW)(), T = l.useCallback(() => {
         (0, h.xi)(t, [x])
-    }, [t, x]), T = e => {
+    }, [t, x]), I = e => {
         r.A.updateChannelOverrideSettings(null, t, {
             muted: !0
         }, p.fd.Muted), c.A.showMuteSuccessToast(C, t), (0, A._$)({
@@ -36,7 +36,7 @@ function x(e) {
             senderId: C,
             warningType: m._j.LIKELY_ATO,
             cta: e
-        }), I()
+        }), T()
     };
     return l.useEffect(() => {
         (0, A.mO)(_.HAw.SAFETY_WARNING_VIEWED, {
@@ -54,7 +54,7 @@ function x(e) {
         warningType: m._j.LIKELY_ATO,
         header: E.intl.string(E.t.R8UsiI),
         description: E.intl.string(E.t.lI8nQl),
-        onDismiss: I,
+        onDismiss: T,
         buttons: [{
             text: E.intl.string(E.t.tC1pvL),
             variant: "primary",
@@ -86,7 +86,7 @@ function x(e) {
                                 description: E.intl.string(E.t.w2ve0t),
                                 buttonText: E.intl.string(E.t.ftIK2A),
                                 onButtonPress: () => {
-                                    T(A.Wm.USER_MODAL_MUTE), s()
+                                    I(A.Wm.USER_MODAL_MUTE), s()
                                 }
                             }, "likely-ato-mute")],
                             learnMore: (0, i.jsx)(a.DUT, {
@@ -117,7 +117,7 @@ function x(e) {
             }
         }, {
             text: E.intl.string(E.t.ftIK2A),
-            onClick: () => T(A.Wm.USER_BANNER_MUTE)
+            onClick: () => I(A.Wm.USER_BANNER_MUTE)
         }]
     })
 }

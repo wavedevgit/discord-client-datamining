@@ -37,7 +37,7 @@ function S(e) {
     })
 }
 
-function I(e) {
+function T(e) {
     let {
         channel: t,
         message: n
@@ -45,7 +45,7 @@ function I(e) {
         id: c
     } = t, {
         id: d
-    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, I = null != p && p.features.has(x.GuildFeatures.NEWS), N = _ && I, {
+    } = n, g = t.getGuildId(), p = (0, a.bG)([m.A], () => m.A.getGuild(g), [g]), _ = t.type === x.rbe.GUILD_ANNOUNCEMENT, T = null != p && p.features.has(x.GuildFeatures.NEWS), N = _ && T, {
         editingMessage: y,
         editingTextValue: b,
         editingRichValue: v
@@ -70,7 +70,7 @@ function I(e) {
             }), h.content = "", h.components = t
         }
         return u && null != y && (0, s.Lt)(y.flags, x.pr7.CROSSPOSTED) ? f.A.confirmEdit(e, i, h) : r.A.editMessage(e, i, h), Promise.resolve()
-    }, [y, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(T, {
+    }, [y, N, j, t, n]), M = l.useCallback(e => (0, l.createElement)(I, {
         ...e,
         className: C.gM,
         key: d
@@ -90,7 +90,7 @@ function I(e) {
     }) : null
 }
 
-function T(e) {
+function I(e) {
     let {
         textValue: t,
         richValue: n,
@@ -130,7 +130,7 @@ function N(e, t, n) {
         channel: s,
         compact: a
     } = e;
-    return n ? (0, i.jsx)(I, {
+    return n ? (0, i.jsx)(T, {
         channel: s,
         message: l
     }) : (0, i.jsx)(_.Ay, {

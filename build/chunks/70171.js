@@ -38,14 +38,14 @@ function x(e) {
         popoutType: n
     } = e, {
         reducedMotion: x
-    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, I = (0, m._z)(t), T = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(I)), y = (0, l.useRef)(void 0);
+    } = l.useContext(r.CZ), C = (0, l.useRef)(null), S = h.K.getState().clipsButtonRef, T = (0, m._z)(t), I = (0, a.bG)([d.A], () => d.A.getActiveAnimation()), N = (0, a.yK)([d.A], () => d.A.getStreamClipAnimations(T)), y = (0, l.useRef)(void 0);
     l.useEffect(() => () => {
-        (0, u.MI)(I)
-    }, [I]);
+        (0, u.MI)(T)
+    }, [T]);
     let b = e => {
             if (n !== c.N.NO_POPOUT) return p;
             let t = S?.getBoundingClientRect();
-            if (y.current = t, e.timestamp !== T || null == t) return p;
+            if (y.current = t, e.timestamp !== I || null == t) return p;
             let {
                 top: i,
                 left: l
@@ -108,7 +108,7 @@ function x(e) {
             },
             config: x.enabled ? E : _,
             onRest: (e, t) => {
-                null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(I, t.item.timestamp)
+                null != t.item && null != N.find(e => e.timestamp === t.item.timestamp) && (0, u.MI)(T, t.item.timestamp)
             }
         }, "animate-always");
     return (0, s.useChain)([v, R], [0, .1], 3e3), (0, i.jsxs)(i.Fragment, {

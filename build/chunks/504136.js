@@ -26,7 +26,7 @@ function u(e) {
         C = null;
     return m.forEach(e => {
         var l, S;
-        let I, T;
+        let T, I;
         if (null != p && p.length > 0) {
             let t = a.default.extractTimestamp(e.id);
             for (let e = 0; e < p?.length; e++) {
@@ -62,11 +62,11 @@ function u(e) {
             else if ((0, o.iJ)(e) && n) return d.TZK.MESSAGE_GROUP_SPAMMER;
             return null
         }(h, e, v && g);
-        (null !== j && ([b, y] = (T = l = y, null == l || l.type !== j ? (I = {
+        (null !== j && ([b, y] = (I = l = y, null == l || l.type !== j ? (T = {
             type: j,
             content: [],
             key: e.id
-        }, _.push(I)) : T = (I = l).content[I.content.length - 1], [I, T])), A === e.id && null != x) ? (null != y && y.type === d.TZK.DIVIDER ? y.unreadId = e.id : null !== b ? (S = b, e.isFirstMessageInForumPost(h) || S.content.push({
+        }, _.push(T)) : I = (T = l).content[T.content.length - 1], [T, I])), A === e.id && null != x) ? (null != y && y.type === d.TZK.DIVIDER ? y.unreadId = e.id : null !== b ? (S = b, e.isFirstMessageInForumPost(h) || S.content.push({
             type: d.TZK.DIVIDER,
             unreadId: e.id
         }), S.hasUnread = !0) : e.isFirstMessageInForumPost(h) || _.push({

@@ -28,8 +28,8 @@ function E(e) {
     } = e, x = h.default.cast(t), {
         joinRequest: C,
         isModmin: S,
-        guildId: I,
-        maxMembers: T
+        guildId: T,
+        maxMembers: I
     } = (0, l.cf)([m.A, d.A, u.A], () => {
         let e = m.A.getRequest(x),
             t = d.A.getGuild(e?.guildId);
@@ -39,7 +39,7 @@ function E(e) {
             guildId: t?.id,
             maxMembers: t?.maxMembers
         }
-    }), N = (0, l.bG)([c.A], () => null != I ? c.A.getMemberCount(I) : 0), y = null != T && (N ?? 0) >= T, {
+    }), N = (0, l.bG)([c.A], () => null != T ? c.A.getMemberCount(T) : 0), y = null != I && (N ?? 0) >= I, {
         approveRequest: b,
         rejectRequest: v,
         submitting: j

@@ -1,6 +1,6 @@
 /** chunk id: 329449 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => I
 }), n(142703);
 var i = n(627968),
     l = n(64700),
@@ -54,7 +54,7 @@ let S = l.memo(function(e) {
             })
         })
     }),
-    I = l.memo(function(e) {
+    T = l.memo(function(e) {
         let {
             value: t,
             multiplier: n
@@ -116,13 +116,13 @@ let S = l.memo(function(e) {
             })]
         })
     }),
-    T = l.memo(function(e) {
+    I = l.memo(function(e) {
         let {
             channelId: t
         } = e, n = (0, o.bG)([h.default], () => h.default.getId()), s = (0, o.bG)([m.A], () => m.A.isTyping(t, n), [t, n]), a = (0, o.bG)([p.A], () => p.A.isEnabled()), u = (0, o.bG)([f.Ay], () => f.Ay.isComboing(n, t), [t, n]), {
             ref: A,
             width: g = 0
-        } = (0, d.Ay)(), [_, x] = l.useState(!1), T = (0, E.A)(t), N = a && u && s;
+        } = (0, d.Ay)(), [_, x] = l.useState(!1), I = (0, E.A)(t), N = a && u && s;
         l.useEffect(() => {
             N && x(!0);
             let e = setTimeout(() => x(N), 1e3);
@@ -134,10 +134,10 @@ let S = l.memo(function(e) {
                 pointerEvents: "none",
                 config: r.config.stiff
             }),
-            b = l.useMemo(() => T ?? {
+            b = l.useMemo(() => I ?? {
                 value: 0,
                 multiplier: 1
-            }, [T]),
+            }, [I]),
             v = l.useRef(b);
         l.useEffect(() => {
             (b.multiplier > 1 || b.value > 0) && (v.current = b)
@@ -157,7 +157,7 @@ let S = l.memo(function(e) {
                 ref: A,
                 className: C.p_,
                 style: y,
-                children: (0, i.jsx)(I, {
+                children: (0, i.jsx)(T, {
                     value: R,
                     multiplier: j
                 })

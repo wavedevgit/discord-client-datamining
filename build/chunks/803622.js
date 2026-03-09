@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(657331),
     C = n(761640),
     S = n(994500),
-    I = n(287809),
-    T = n(486020),
+    T = n(287809),
+    I = n(486020),
     N = n(302975),
     y = n(652215),
     b = n(518477),
@@ -36,7 +36,7 @@ let R = e => {
         } = e, s = (0, o.bG)([E.A], () => E.A.getMutualGuilds(t), [t]), a = l.useMemo(() => null != s ? s.slice(0, 3).map((e, t) => {
             let {
                 guild: n
-            } = e, l = null != n ? T.Ay.getGuildIconURL({
+            } = e, l = null != n ? I.Ay.getGuildIconURL({
                 id: n.id,
                 icon: n.icon,
                 size: 24
@@ -88,7 +88,7 @@ let R = e => {
             relationshipType: t,
             userId: n,
             showingBanner: l
-        } = e, s = I.default.getUser(n)?.bot, a = () => {
+        } = e, s = T.default.getUser(n)?.bot, a = () => {
             d.A.addRelationship({
                 userId: n,
                 context: {
@@ -188,7 +188,7 @@ let R = e => {
             isOptimisticAccepted: m,
             isOptimisticRejected: A
         } = (0, g.t)({
-            user: I.default.getUser(n),
+            user: T.default.getUser(n),
             onError: s,
             onAcceptSuccess: r,
             onRejectSuccess: a

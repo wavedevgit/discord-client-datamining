@@ -34,6 +34,7 @@ let g = e => {
                 case d.G2.NAMEPLATES:
                     return l.A.COLLECTIBLES_SHOP_NAMEPLATES_TAB;
                 case d.G2.CATALOG:
+                case d.G2.COLLECTION_INDEX:
                 case d.G2.LAYOUT:
                     return l.A.COLLECTIBLES_SHOP
             }

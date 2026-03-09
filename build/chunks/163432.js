@@ -74,15 +74,15 @@ function f(e, t) {
             let x = null == _ || h ? e : e - i - o,
                 C = Math.max(0, Math.min(Math.floor((x - o) / (r + o)), d, t.length)),
                 S = Math.min((x - o) / C - o, i),
-                I = Math.max(0, C - A.length),
-                T = A.slice(0, C),
-                N = m.slice(0, I),
-                y = Array(I);
-            if (I > 0) {
+                T = Math.max(0, C - A.length),
+                I = A.slice(0, C),
+                N = m.slice(0, T),
+                y = Array(T);
+            if (T > 0) {
                 let e = [];
                 for (let t of N) {
                     let n = E.current[t.id];
-                    null != n && n < I ? y[n] = t : e.push(t)
+                    null != n && n < T ? y[n] = t : e.push(t)
                 }
                 for (let t = 0; t < y.length; t++) {
                     if (null != y[t]) continue;
@@ -93,7 +93,7 @@ function f(e, t) {
             }
             let b = y.filter(c.Vq);
             E.current = (0, s.keyBy)((0, s.range)(b.length), e => b[e].id);
-            let v = [...T, ...b];
+            let v = [...I, ...b];
             return null != _ && (h && v.length >= C ? v[Math.max(0, v.length - 1)] = _ : v.push(_)), {
                 visibleParticipants: v,
                 participantTileWidth: S

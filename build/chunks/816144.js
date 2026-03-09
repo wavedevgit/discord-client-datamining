@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(808728),
     C = n(576705),
     S = n(287809),
-    I = n(427262),
-    T = n(803622),
+    T = n(427262),
+    I = n(803622),
     N = n(314307),
     y = n(393194),
     b = n(455067),
@@ -69,7 +69,7 @@ function H(e) {
         showingBanner: n
     } = e, h = (0, u.Ay)(t), {
         type: m
-    } = t, _ = (0, s.bG)([S.default], () => t.isPrivate() ? S.default.getUser(t.getRecipientId()) : null), x = I.Ay.useUserTag(_), {
+    } = t, _ = (0, s.bG)([S.default], () => t.isPrivate() ? S.default.getUser(t.getRecipientId()) : null), x = T.Ay.useUserTag(_), {
         canManageRoles: y,
         canReadMessageHistory: M
     } = (0, s.cf)([C.A], () => ({
@@ -112,7 +112,7 @@ function H(e) {
                 className: U.U,
                 children: n
             }))
-        } else e = (0, i.jsx)(T.A, {
+        } else e = (0, i.jsx)(I.A, {
             userId: t.getRecipientId(),
             channel: t,
             showingBanner: n

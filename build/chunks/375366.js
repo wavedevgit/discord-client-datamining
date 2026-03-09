@@ -103,11 +103,11 @@ let g = l.memo(function(e) {
         onItemAction: x,
         interactive: C = !0,
         onClose: S,
-        children: I
-    } = e, T = l.useRef(null), N = l.useRef([]), y = l.useRef(!1), b = l.useRef(null), [v, j] = l.useState(0), [R, M] = l.useState({
+        children: T
+    } = e, I = l.useRef(null), N = l.useRef([]), y = l.useRef(!1), b = l.useRef(null), [v, j] = l.useState(0), [R, M] = l.useState({
         x: 0,
         y: 0
-    }), D = Math.abs(R.x) + Math.abs(R.y) > 0, O = l.useMemo(() => a().chunk(I, m), [I]), L = l.useCallback((e, t) => {
+    }), D = Math.abs(R.x) + Math.abs(R.y) > 0, O = l.useMemo(() => a().chunk(T, m), [T]), L = l.useCallback((e, t) => {
         null == N.current[v] ? N.current[v] = [] : N.current[v][t] = e
     }, [v]), P = l.useCallback((e, t) => {
         b.current = t, E(m * e + t)
@@ -138,8 +138,8 @@ let g = l.memo(function(e) {
     }, []), G = l.useCallback(e => {
         null != b.current && (e.preventDefault(), e.stopPropagation(), x?.(m * v + b.current))
     }, [x, v]), F = l.useMemo(() => (0, s.throttle)(e => {
-        if (null == T.current) return;
-        let i = T.current.getBoundingClientRect(),
+        if (null == I.current) return;
+        let i = I.current.getBoundingClientRect(),
             l = {
                 x: i.left + i.width / 2,
                 y: i.top + i.height / 2
@@ -166,7 +166,7 @@ let g = l.memo(function(e) {
         t >= 0 && t < O.length && (null != b.current && (O[t].length > b.current ? P(t, b.current) : w()), j(t))
     }, [C, v, O, P, w]), B = l.useMemo(() => O[v].map((e, l) => {
         let s = h[l];
-        if (null == s) throw Error(`Too many items supplied ${I.length} expected max of ${h.length}`);
+        if (null == s) throw Error(`Too many items supplied ${T.length} expected max of ${h.length}`);
         let a = A(s.x, t, g),
             r = A(s.y, n, p);
         return (0, i.jsx)("div", {
@@ -180,14 +180,14 @@ let g = l.memo(function(e) {
             },
             children: e
         }, l)
-    }), [O, v, t, g, n, p, I.length, L]);
+    }), [O, v, t, g, n, p, T.length, L]);
     return (0, i.jsx)(r.DUT, {
         className: d.Pw,
         onMouseMove: F,
         onWheel: H,
         onClick: G,
         children: (0, i.jsxs)("div", {
-            ref: T,
+            ref: I,
             className: d._$,
             style: {
                 width: t,
