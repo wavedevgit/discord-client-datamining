@@ -16,8 +16,8 @@ var l = i(627968),
     f = i(229527),
     g = i(81400),
     c = i(411335),
-    N = i(652215),
-    I = i(340837),
+    I = i(652215),
+    N = i(340837),
     O = i(985018);
 
 function M(t) {
@@ -27,20 +27,20 @@ function M(t) {
         guildId: M
     } = t, R = (0, u.bG)([o.default], () => o.default.getId()), T = (0, u.bG)([s.Ay], () => s.Ay.getMember(M, R), [M, R]), U = (0, u.bG)([E.A], () => E.A.getGuild(M), [M]), b = U?.name ?? "", D = (0, f.wj)(T), {
         analyticsLocations: G
-    } = (0, d.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [C, h] = (0, g.j8)({
+    } = (0, d.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [h, C] = (0, g.j8)({
         guildId: M,
         analyticsLocations: G
-    }), k = D.has(I.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? O.intl.formatToPlainString(O.t.Oh20JS, {
+    }), k = D.has(N.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? O.intl.formatToPlainString(O.t.Oh20JS, {
         guildName: b
-    }) : O.intl.formatToPlainString(O.t["+VAZ/Z"], {
+    }) : O.intl.formatToPlainString(O.t.h8IXqQ, {
         guildName: b
     });
-    h || (k = O.intl.formatToPlainString(O.t.tcrtME, {
+    C || (k = O.intl.formatToPlainString(O.t.tcrtME, {
         guildName: b
     }));
-    let P = h ? O.intl.string(O.t.Viksoo) : O.intl.string(O.t.WikgZ1);
+    let P = C ? O.intl.string(O.t.Viksoo) : O.intl.string(O.t.WikgZ1);
     return ((0, A.Ay)(() => {
-        _.default.track(N.HAw.OPEN_MODAL, {
+        _.default.track(I.HAw.OPEN_MODAL, {
             type: c.oN,
             guild_id: M,
             other_user_id: R
@@ -55,7 +55,7 @@ function M(t) {
         actions: [{
             text: P,
             onClick: () => {
-                C(), n()
+                h(), n()
             }
         }]
     })
