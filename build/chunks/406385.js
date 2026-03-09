@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(720431),
+    s = n.n(i),
+    a = n(720431),
     o = n(827734),
     u = n(876230),
     c = n(61491),
@@ -49,7 +49,7 @@ function S(e) {
         duration: n
     } = e, l = null != t ? (0, c.rB)(t) : E, i = null != n ? (0, c.rB)(n) : E;
     return (0, r.jsxs)("div", {
-        className: a()(f.d$, f.jk),
+        className: s()(f.d$, f.jk),
         "data-testid": "discord-web-video-player-duration",
         children: [(0, r.jsx)(m.Text, {
             variant: "text-xs/normal",
@@ -83,17 +83,17 @@ let A = l.forwardRef(function(e, t) {
     } = e, b = e => (0, r.jsx)(m.DUT, {
         ...e,
         onClick: !0 === E ? void 0 : A,
-        className: a()(f.K5, {
+        className: s()(f.K5, {
             [f.Iy]: E
         }),
         "aria-label": c,
         "aria-disabled": E,
         "data-testid": _,
         innerRef: t,
-        children: (0, r.jsx)(s.animated.div, {
+        children: (0, r.jsx)(a.animated.div, {
             className: f.K5,
             style: {
-                opacity: (0, s.to)([l.to({
+                opacity: (0, a.to)([l.to({
                     range: [0, 1],
                     output: [0, 1]
                 })], e => `${i?e:Math.pow(e,8)}`),
@@ -105,7 +105,7 @@ let A = l.forwardRef(function(e, t) {
             children: (0, r.jsx)(n, {
                 size: g[C],
                 color: !0 !== E ? o.A.colors.WHITE : o.A.colors.TEXT_MUTED,
-                className: a()(f.jk, {
+                className: s()(f.jk, {
                     [f.x2]: p,
                     [f.Wr]: !E
                 })

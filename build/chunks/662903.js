@@ -1,22 +1,22 @@
 /** chunk id: 662903 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => s
 });
 var r = n(64700),
     l = n(771253),
     i = n(876230);
 
-function a(e, t) {
+function s(e, t) {
     let {
         src: n,
-        initialTimeSec: a = 0,
-        onError: s
-    } = t, o = r.useRef(null), u = r.useRef(a);
-    u.current = a;
-    let c = r.useRef(s);
+        initialTimeSec: s = 0,
+        onError: a
+    } = t, o = r.useRef(null), u = r.useRef(s);
+    u.current = s;
+    let c = r.useRef(a);
     r.useEffect(() => {
-        c.current = s
-    }, [s]);
+        c.current = a
+    }, [a]);
     let d = null != n && n.split("?")[0].endsWith(".m3u8") && l.Ay.isSupported();
     return r.useEffect(() => {
         if (!d || null == n || null == e.current) return;
@@ -29,8 +29,8 @@ function a(e, t) {
                 startLevel: -1
             });
         o.current = r;
-        let a = 0,
-            s = () => {
+        let s = 0,
+            a = () => {
                 r.mainForwardBufferInfo?.len === 0 && r.trigger(l.Ay.Events.BUFFER_FLUSHING, {
                     startOffset: t.currentTime,
                     endOffset: 1 / 0,
@@ -54,11 +54,11 @@ function a(e, t) {
                             return i.SB.HLS_OTHER_ERROR
                     }
                 }(t.type)), t.fatal) {
-                if (a >= 3) {
+                if (s >= 3) {
                     r.destroy(), o.current = null;
                     return
                 }
-                switch (a++, t.type) {
+                switch (s++, t.type) {
                     case l.Ay.ErrorTypes.NETWORK_ERROR:
                         r.startLoad();
                         break;
@@ -69,8 +69,8 @@ function a(e, t) {
                         r.destroy(), o.current = null
                 }
             }
-        }), t.addEventListener("seeking", s), r.loadSource(n), r.attachMedia(t), () => {
-            t.removeEventListener("seeking", s), r.destroy(), o.current = null
+        }), t.addEventListener("seeking", a), r.loadSource(n), r.attachMedia(t), () => {
+            t.removeEventListener("seeking", a), r.destroy(), o.current = null
         }
     }, [d, n, e]), {
         isHlsActive: d,

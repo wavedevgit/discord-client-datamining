@@ -31,7 +31,9 @@ let f = e => {
         selectedTab: f,
         transitionToTab: w
     } = (0, u.o)(p.G2.COLLECTION_INDEX);
-    return ((0, b.pE)(), null == _) ? ((0, c.pX)(C.BVt.COLLECTIBLES_SHOP), null) : (0, o.jsxs)("div", {
+    return ((0, b.pE)(), r.useEffect(() => {
+        null == _ && (0, c.pX)(C.BVt.COLLECTIBLES_SHOP)
+    }, [_]), null == _) ? null : (0, o.jsxs)("div", {
         className: d()(B.bx, {
             [h.jP]: t
         }),

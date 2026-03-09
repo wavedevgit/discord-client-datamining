@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(720431),
+    s = n.n(i),
+    a = n(720431),
     o = n(311907),
     u = n(876230),
     c = n(397927),
@@ -38,8 +38,8 @@ let b = {
             orientation: D = "landscape",
             videoUrlOverride: R,
             src: L,
-            poster: I,
-            initialTimeSec: j = 0,
+            poster: j,
+            initialTimeSec: I = 0,
             onProgressUpdate: M,
             onEnded: w,
             onError: k,
@@ -67,19 +67,19 @@ let b = {
             visible: en,
             visibleChanged: er,
             targetRef: el
-        } = (0, g.O7)(), [ei, ea] = l.useState(T ? u.Q6.PLAYING : u.Q6.PAUSED), [es, eo] = l.useState(!1), [eu, ec] = l.useState(!1), [ed, em] = l.useState(0), [ep, ef] = l.useState(null), eE = l.useCallback(e => {
+        } = (0, g.O7)(), [ei, es] = l.useState(T ? u.Q6.PLAYING : u.Q6.PAUSED), [ea, eo] = l.useState(!1), [eu, ec] = l.useState(!1), [ed, em] = l.useState(0), [ep, ef] = l.useState(null), eE = l.useCallback(e => {
             ef(null), em(e)
-        }, []), [eh, ev] = l.useState(!1), [ex, eg] = l.useState(!0), [eS, eA] = l.useState(!1), [eC, e_] = l.useState([]), [eb, ey] = l.useState(!1), [eT, eN] = l.useState(!1), eD = l.useRef(!0), eR = l.useRef(null), eL = l.useRef(null), eI = l.useRef(0);
+        }, []), [eh, ev] = l.useState(!1), [ex, eg] = l.useState(!0), [eS, eA] = l.useState(!1), [eC, e_] = l.useState([]), [eb, ey] = l.useState(!1), [eT, eN] = l.useState(!1), eD = l.useRef(!0), eR = l.useRef(null), eL = l.useRef(null), ej = l.useRef(0);
         l.useLayoutEffect(() => {
-            eI.current = performance.now()
+            ej.current = performance.now()
         }, []);
-        let [ej, eM] = l.useState(.3), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(!1), [eU, eB] = l.useState(!1), eF = (0, o.bG)([m.A], () => m.A.useReducedMotion), eG = (0, l.useRef)(null), eK = (0, l.useRef)(null), e$ = l.useRef(!0), [eY, eH] = l.useState(null), ez = l.useCallback(e => {
+        let [eI, eM] = l.useState(.3), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(!1), [eU, eB] = l.useState(!1), eF = (0, o.bG)([m.A], () => m.A.useReducedMotion), eG = (0, l.useRef)(null), eK = (0, l.useRef)(null), e$ = l.useRef(!0), [eY, eH] = l.useState(null), ez = l.useCallback(e => {
             k?.(e)
         }, [k]), {
             isHlsActive: eW
         } = (0, A.A)(eG, {
             src: Z,
-            initialTimeSec: j,
+            initialTimeSec: I,
             onError: ez
         }), [eq, eX] = l.useState(!1), [eJ, eZ] = l.useState(null), e0 = O ?? eG.current?.duration ?? 0, [e1, e6] = l.useState(u.oA.MD), e2 = {
             [u.oA.MD]: 50,
@@ -90,7 +90,7 @@ let b = {
         });
         let e7 = l.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-            if (ea(e), B?.(e, t), null != eG.current) switch (e) {
+            if (es(e), B?.(e, t), null != eG.current) switch (e) {
                 case u.Q6.PLAYING:
                     eH(null), eG.current.play();
                     break;
@@ -135,7 +135,7 @@ let b = {
                 null != e8.current && clearTimeout(e8.current)
             }
         }, [ei, e5]);
-        let tt = !e4 && (eu || es || ei === u.Q6.ENDED),
+        let tt = !e4 && (eu || ea || ei === u.Q6.ENDED),
             tn = l.useCallback(() => {
                 let e = (0, f.qf)(eG.current?.parentNode, eG.current);
                 null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tn), eB(!1), F?.(!1), e6(u.oA.MD))
@@ -161,7 +161,7 @@ let b = {
                 let n = eG.current.currentTime;
                 ef(e / (eG.current.duration ?? 1) * 100), ev(!0), eX(!1), eG.current.currentTime = e, t && X?.(n, e)
             }, [X]),
-            ta = () => {
+            ts = () => {
                 if (null != eG.current) switch (ei) {
                     case u.Q6.ENDED:
                         ti(0), e7(u.Q6.PLAYING, "user");
@@ -173,7 +173,7 @@ let b = {
                         e7(u.Q6.PLAYING, "user")
                 }
             },
-            ts = e => {
+            ta = e => {
                 eZ(e)
             },
             to = e => {
@@ -185,7 +185,7 @@ let b = {
                 if (e.mode = "hidden", null != e.cues)
                     for (let t = 0; t < e.cues.length; t++) {
                         let n = e.cues[t];
-                        (0, x.C)(n) && (n.id = `cue-${t}`, n.onenter = () => ts(n), n.onexit = () => to(n))
+                        (0, x.C)(n) && (n.id = `cue-${t}`, n.onenter = () => ta(n), n.onexit = () => to(n))
                     }
             }, []);
         l.useEffect(() => {
@@ -262,7 +262,7 @@ let b = {
             onMouseMove: te,
             onKeyDown: te,
             children: (0, r.jsxs)("div", {
-                className: a()(_.NS, {
+                className: s()(_.NS, {
                     [_.DO]: "portrait" === D,
                     [_.r7]: "landscape" === D
                 }),
@@ -279,12 +279,12 @@ let b = {
                     autoPlay: T,
                     playsInline: !0,
                     mediaLayoutType: eU ? C.dG.STATIC : C.dG.RESPONSIVE,
-                    className: a()({
+                    className: s()({
                         [_.R]: th,
                         [_.IR]: !0
                     }),
                     controls: !1,
-                    poster: I,
+                    poster: j,
                     disablePictureInPicture: !0,
                     "data-testid": "discord-web-video-player-video",
                     onTimeUpdate: e => {
@@ -300,14 +300,14 @@ let b = {
                         }
                     },
                     onLoadedMetadata: e => {
-                        null != eG.current && (j > 0 && ti(j, !1), ew ? eG.current.volume = 0 : eG.current.volume = ej)
+                        null != eG.current && (I > 0 && ti(I, !1), ew ? eG.current.volume = 0 : eG.current.volume = eI)
                     },
                     onLoadStart: () => {
                         eR.current = performance.now(), K?.()
                     },
                     onPlaying: () => {
                         if (!eD.current) return;
-                        let e = 0 !== N ? N : eI.current,
+                        let e = 0 !== N ? N : ej.current,
                             t = performance.now() - e;
                         Y?.(t), eD.current = !1
                     },
@@ -337,7 +337,7 @@ let b = {
                     onEmptied: () => ez(u.SB.EMPTIED),
                     onStalled: () => ez(u.SB.STALLED),
                     onClick: () => {
-                        ta()
+                        ts()
                     },
                     crossOrigin: "anonymous",
                     children: [null != Q && (0, r.jsx)("track", {
@@ -362,18 +362,18 @@ let b = {
                     hasVideoAsset: null != Z,
                     playerState: ei,
                     pauseReason: eY
-                }), null != J && (0, r.jsx)(s.animated.div, {
+                }), null != J && (0, r.jsx)(a.animated.div, {
                     className: _.R4,
                     style: {
-                        opacity: (0, s.to)([td.to({
+                        opacity: (0, a.to)([td.to({
                             range: [0, 1],
                             output: [0, 1]
                         })], e => `${e}`),
-                        visibility: (0, s.to)([td.to({
+                        visibility: (0, a.to)([td.to({
                             range: [0, 1],
                             output: [0, 1]
                         })], e => e < .1 ? "hidden" : "visible"),
-                        pointerEvents: (0, s.to)([td.to({
+                        pointerEvents: (0, a.to)([td.to({
                             range: [0, 1],
                             output: [0, 1]
                         })], e => e < .3 ? "none" : "auto")
@@ -388,13 +388,13 @@ let b = {
                         children: (0, r.jsx)("div", {
                             className: _.BG
                         })
-                    }), (0, r.jsx)(s.animated.div, {
-                        className: a()(_.xr, {
+                    }), (0, r.jsx)(a.animated.div, {
+                        className: s()(_.xr, {
                             [_.MZ]: "portrait" === D
                         }),
                         "data-testid": "discord-web-video-player-transcript",
                         style: {
-                            marginBottom: (0, s.to)([td, tf], (e, t) => `${e*e2[e1]+t}px`)
+                            marginBottom: (0, a.to)([td, tf], (e, t) => `${e*e2[e1]+t}px`)
                         },
                         children: (0, r.jsx)(v.X, {
                             text: V,
@@ -403,16 +403,16 @@ let b = {
                             }
                         })
                     })]
-                }), (0, r.jsx)(s.animated.div, {
+                }), (0, r.jsx)(a.animated.div, {
                     className: _.Jp,
                     style: {
-                        opacity: (0, s.to)([td.to({
+                        opacity: (0, a.to)([td.to({
                             range: [0, 1],
                             output: [0, 1]
                         })], e => `${e}`)
                     }
                 }), (0, r.jsx)("div", {
-                    className: a()(_.yf, {
+                    className: s()(_.yf, {
                         [_.ZH]: ei === u.Q6.PLAYING,
                         [_.v7]: ei === u.Q6.PAUSED
                     }),
@@ -424,12 +424,12 @@ let b = {
                     }) : (0, r.jsx)(c.E$n, {
                         className: _.PK
                     })
-                }, ei), eQ && null != eJ && !th && (0, r.jsx)(s.animated.div, {
+                }, ei), eQ && null != eJ && !th && (0, r.jsx)(a.animated.div, {
                     className: _.o$,
                     ref: tp,
                     "data-testid": "discord-web-video-player-captions",
                     style: {
-                        translateY: (0, s.to)([td.to({
+                        translateY: (0, a.to)([td.to({
                             range: [0, 1],
                             output: [-20, -e2[e1]]
                         })], e => `${e}px`)
@@ -440,17 +440,17 @@ let b = {
                         className: _.qh,
                         children: eJ.text
                     })
-                }), (0, r.jsxs)(s.animated.div, {
+                }), (0, r.jsxs)(a.animated.div, {
                     className: _.r8,
                     style: {
-                        height: (0, s.to)([td.to({
+                        height: (0, a.to)([td.to({
                             range: [0, 1],
                             output: [0, e2[e1]]
                         })], e => `${e}px`)
                     },
-                    children: [(0, r.jsx)(s.animated.div, {
+                    children: [(0, r.jsx)(a.animated.div, {
                         style: {
-                            transform: (0, s.to)([td.to({
+                            transform: (0, a.to)([td.to({
                                 range: [1, 0],
                                 output: [0, 1]
                             })], e => `translateY(-${20*e}px)`)
@@ -472,19 +472,19 @@ let b = {
                             onScrubForward: tl,
                             "data-testid": "discord-web-video-player-timeline"
                         })
-                    }), (0, r.jsx)(s.animated.div, {
+                    }), (0, r.jsx)(a.animated.div, {
                         className: _.uN,
                         "data-testid": "discord-web-video-player-controls",
                         style: {
-                            paddingTop: (0, s.to)([td.to({
+                            paddingTop: (0, a.to)([td.to({
                                 range: [0, 1],
                                 output: [0, 1]
                             })], e => `${e*e*12}px`),
-                            paddingBottom: (0, s.to)([td.to({
+                            paddingBottom: (0, a.to)([td.to({
                                 range: [0, 1],
                                 output: [0, 1]
                             })], e => `${e*e*12}px`),
-                            pointerEvents: (0, s.to)([td.to({
+                            pointerEvents: (0, a.to)([td.to({
                                 range: [0, 1],
                                 output: [0, 1]
                             })], e => e < .3 ? "none" : "auto")
@@ -501,12 +501,12 @@ let b = {
                             hideTranscriptBtn: null == V,
                             hideSkipButtons: "portrait" === D,
                             size: e1,
-                            volume: ej,
+                            volume: eI,
                             muted: ew,
                             transcriptEnabled: eO,
                             captionEnabled: eQ,
                             fullScreenEnabled: eU,
-                            handlePlaybackBtnClick: ta,
+                            handlePlaybackBtnClick: ts,
                             handleTranscriptBtnClick: () => {
                                 eP(!eO)
                             },

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(64700),
     l = n(412703),
     i = n(536968),
-    a = n(579473),
-    s = n(717415),
+    s = n(579473),
+    a = n(717415),
     o = n(654487);
 
 function u(e) {
@@ -17,19 +17,19 @@ function u(e) {
         videoAssetType: c
     } = e, {
         questConfig: d
-    } = r.useContext(s.VideoQuestConfigContext), m = r.useRef(null);
+    } = r.useContext(a.VideoQuestConfigContext), m = r.useRef(null);
     r.useEffect(() => {
-        if (null == t || null == n.current || c === a.fY.VIDEO_PLAYER_VIDEO_HLS && null == u.current || !(0, i._o)({
+        if (null == t || null == n.current || c === s.fY.VIDEO_PLAYER_VIDEO_HLS && null == u.current || !(0, i._o)({
                 location: o.rE.VIDEO_MODAL
             }).externalAnalyticsEnabled) return;
         let e = {
             debug: !1,
             videoElement: n.current,
-            hlsInstance: c === a.fY.VIDEO_PLAYER_VIDEO_HLS ? u.current ?? void 0 : void 0,
+            hlsInstance: c === s.fY.VIDEO_PLAYER_VIDEO_HLS ? u.current ?? void 0 : void 0,
             feature: "quests",
             contentMetadata: {
                 contentId: t,
-                videoStreamType: c === a.fY.VIDEO_PLAYER_VIDEO_HLS ? "hls" : "mp4",
+                videoStreamType: c === s.fY.VIDEO_PLAYER_VIDEO_HLS ? "hls" : "mp4",
                 contentType: "quests",
                 durationSec: null == n.current.duration || isNaN(n.current.duration) ? 0 : n.current.duration,
                 title: d.taskConfigV2.tasks[l.n.WATCH_VIDEO]?.messages.videoTitle,

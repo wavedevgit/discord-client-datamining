@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(158954),
+    s = n.n(i),
+    a = n(158954),
     o = n(827734),
     u = n(221190);
 
@@ -40,7 +40,7 @@ function m(e) {
         children: n
     } = e;
     return (0, r.jsx)("div", {
-        className: a()(u.Pb, {
+        className: s()(u.Pb, {
             [u.II]: "portrait" === t
         }),
         children: n
@@ -57,7 +57,7 @@ function p(e) {
         ref: l,
         src: t,
         alt: "Video thumbnail",
-        className: a()(u.C, {
+        className: s()(u.C, {
             [u.TW]: "portrait" === n
         })
     })
@@ -82,12 +82,12 @@ function E(e) {
         subtitle: n,
         ctaBtnLabel: l,
         onCTAClick: i,
-        orientation: s,
+        orientation: a,
         ctaIcon: o
     } = e;
     return (0, r.jsxs)("div", {
-        className: a()(u.pP, {
-            [u.iC]: "portrait" === s
+        className: s()(u.pP, {
+            [u.iC]: "portrait" === a
         }),
         children: [(0, r.jsx)(h, {
             title: t,
@@ -107,11 +107,11 @@ function h(e) {
     } = e;
     return (0, r.jsxs)("div", {
         className: u.PH,
-        children: [(0, r.jsx)(s.DZT, {
+        children: [(0, r.jsx)(a.DZT, {
             variant: "heading-md/semibold",
             className: u.m5,
             children: t
-        }), (0, r.jsx)(s.DZT, {
+        }), (0, r.jsx)(a.DZT, {
             variant: "heading-sm/normal",
             className: u.s$,
             children: n
@@ -130,14 +130,14 @@ function v(e) {
     }, f = () => {
         m(!1)
     };
-    return (0, r.jsxs)(s.DUT, {
-        className: a()(u.uU, u.iM, c),
+    return (0, r.jsxs)(a.DUT, {
+        className: s()(u.uU, u.iM, c),
         onMouseEnter: p,
         onMouseLeave: f,
         onFocus: p,
         onBlur: f,
         onClick: i,
-        children: [(0, r.jsx)(s.DZT, {
+        children: [(0, r.jsx)(a.DZT, {
             variant: "heading-md/semibold",
             className: u.ce,
             children: t
@@ -162,8 +162,8 @@ function x(e) {
     }, E = () => {
         p(!1)
     };
-    return (0, r.jsx)(s.DUT, {
-        className: a()(u.Mr, u.iM, c),
+    return (0, r.jsx)(a.DUT, {
+        className: s()(u.Mr, u.iM, c),
         onMouseEnter: f,
         onMouseLeave: E,
         onFocus: f,
@@ -173,11 +173,11 @@ function x(e) {
             className: u.ee,
             children: [(0, r.jsxs)("div", {
                 className: u.XU,
-                children: [(0, r.jsx)(s.DZT, {
+                children: [(0, r.jsx)(a.DZT, {
                     variant: "heading-md/semibold",
                     className: u.Zr,
                     children: t
-                }), (0, r.jsx)(s.DZT, {
+                }), (0, r.jsx)(a.DZT, {
                     variant: "heading-sm/normal",
                     className: u.Hk,
                     children: n

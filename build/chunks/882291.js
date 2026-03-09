@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(720431),
+    s = n.n(i),
+    a = n(720431),
     o = n(61491),
     u = n(397927),
     c = n(624600),
@@ -41,8 +41,8 @@ function g(e) {
         onScrubForward: R,
         "data-testid": L
     } = e, {
-        quest: I,
-        sourceQuestContent: j,
+        quest: j,
+        sourceQuestContent: I,
         useNewProgressBarStyling: M
     } = l.useContext(m.VideoQuestModalContext), {
         contRef: w,
@@ -92,11 +92,11 @@ function g(e) {
         for (let r = 0; r < e.length; r++) {
             let l = Math.max(0, e[r].leftPx - E.Ue),
                 i = Math.min(t, e[r].rightPx + E.Ue),
-                a = n?.[n.length - 1];
-            null != a && (a.endPx = l, a.rightIndicatorIndex = r);
-            let s = null != a && a.endPx <= a.startPx,
-                o = s ? a?.leftIndicatorIndex : r;
-            s && n.pop(), i < t && n.push({
+                s = n?.[n.length - 1];
+            null != s && (s.endPx = l, s.rightIndicatorIndex = r);
+            let a = null != s && s.endPx <= s.startPx,
+                o = a ? s?.leftIndicatorIndex : r;
+            a && n.pop(), i < t && n.push({
                 startPx: i,
                 endPx: t,
                 leftIndicatorIndex: o,
@@ -114,7 +114,7 @@ function g(e) {
             "--custom-initial-timeline-height": `${M?4:2}px`
         },
         children: (0, r.jsxs)(u.DUT, {
-            className: a()(v.KF, {
+            className: s()(v.KF, {
                 [v.uc]: S
             }),
             ignoreKeyPress: !0,
@@ -150,8 +150,8 @@ function g(e) {
                     indicator: e,
                     isAnimated: n,
                     expansionSpring: J,
-                    quest: I,
-                    sourceQuestContent: j,
+                    quest: j,
+                    sourceQuestContent: I,
                     onMouseEnter: () => q(e.index),
                     onMouseLeave: () => q(null),
                     onClick: null != N ? () => N(l) : void 0
@@ -164,7 +164,7 @@ function g(e) {
                     left: null != U ? `${U}px` : "auto"
                 },
                 children: $
-            }), F && S && null != Y && !Z && (0, r.jsx)(s.animated.div, {
+            }), F && S && null != Y && !Z && (0, r.jsx)(a.animated.div, {
                 className: v.Ub,
                 style: {
                     left: H.to(e => `${e}px`)

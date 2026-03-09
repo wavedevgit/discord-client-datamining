@@ -10,11 +10,11 @@ function l(e) {
         isPlaying: n,
         isMetadataLoaded: l,
         isInitialSeekComplete: i,
-        onAnalytics: a,
-        emitIntervalMs: s,
+        onAnalytics: s,
+        emitIntervalMs: a,
         minSegmentDurationMs: o
     } = e, [u, c] = r.useState(null), d = (0, r.useRef)(null), m = (0, r.useRef)(Date.now()), p = (0, r.useRef)(!1), f = (0, r.useCallback)(e => {
-        e.segmentEndSec < e.segmentStartSec || a({
+        e.segmentEndSec < e.segmentStartSec || s({
             start_time: e.startTime,
             end_time: e.endTime,
             duration: e.endTime - e.startTime,
@@ -22,7 +22,7 @@ function l(e) {
             segment_end_sec: e.segmentEndSec,
             segment_duration_sec: e.segmentEndSec - e.segmentStartSec
         })
-    }, [a]), E = (0, r.useCallback)(() => {
+    }, [s]), E = (0, r.useCallback)(() => {
         let e = t();
         if (null != e && l && i) {
             let t = Date.now();
@@ -37,7 +37,7 @@ function l(e) {
         let e = t();
         if (null == e || null == u) return;
         let n = Date.now();
-        n - m.current < s || e - u.segmentStartSec < o / 1e3 || (f({
+        n - m.current < a || e - u.segmentStartSec < o / 1e3 || (f({
             ...u,
             endTime: n,
             segmentEndSec: e
@@ -47,7 +47,7 @@ function l(e) {
             segmentStartSec: e,
             segmentEndSec: e
         }), m.current = n)
-    }, [u, f, s, o, t]);
+    }, [u, f, a, o, t]);
     return (0, r.useEffect)(() => {
         l && i || (c(null), p.current = !1)
     }, [l, i]), (0, r.useEffect)(() => {

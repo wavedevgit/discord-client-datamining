@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    s = n.n(r),
+    s = n(503698),
+    r = n.n(s),
     l = n(579473),
     o = n(415441),
     d = n(516226),
@@ -16,7 +16,7 @@ function m(e) {
     let {
         quest: t,
         isInteracting: n,
-        hideAssets: r,
+        hideAssets: s,
         imageSize: m,
         containerClassName: g,
         imageClassName: p,
@@ -25,13 +25,13 @@ function m(e) {
         onAssetLoadComplete: x
     } = a.useContext(d.M);
     return (0, i.jsx)("div", {
-        className: s()(u.l1, g),
-        children: !r && (0, i.jsx)(o.N, {
+        className: r()(u.l1, g),
+        children: !s && (0, i.jsx)(o.N, {
             imageAsset: null != v ? {
                 asset: v,
                 assetId: "QuestTileBanner",
                 alt: c.intl.string(c.t.jnijWz),
-                className: s()(u.LO, p)
+                className: r()(u.LO, p)
             } : void 0,
             videoAsset: null != _ ? {
                 asset: _,

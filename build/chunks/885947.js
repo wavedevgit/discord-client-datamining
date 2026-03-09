@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(435371),
+    s = n.n(i),
+    a = n(435371),
     o = n(397927),
     u = n(713517),
     c = n(240248),
@@ -34,13 +34,13 @@ function S() {
         sourceQuestContent: t,
         impressionId: S
     }), y = e.config.ctaConfig.subtitle, T = void 0 !== y && !(0, c.uJ)(y);
-    return (0, r.jsx)(s.m_, {
+    return (0, r.jsx)(a.m_, {
         text: v.intl.string(v.t.EuHF34),
         children: (0, r.jsx)(o.DUT, {
             onClick: () => b(d.uF.VIDEO_MODAL, p.Cy.OPEN_GAME_LINK),
             className: x._S,
             children: (0, r.jsxs)("div", {
-                className: a()(g.hA, x.t8, {
+                className: s()(g.hA, x.t8, {
                     [x.Mc]: A
                 }),
                 ref: C,
@@ -49,7 +49,7 @@ function S() {
                     children: (0, r.jsx)(o.Heading, {
                         variant: "heading-md/medium",
                         color: "text-strong",
-                        className: a()(x.xw, {
+                        className: s()(x.xw, {
                             [x._L]: n
                         }),
                         lineClamp: n ? void 0 : 1,
@@ -58,11 +58,11 @@ function S() {
                         })
                     })
                 }), (0, r.jsxs)("div", {
-                    className: a()(x.sB, {
+                    className: s()(x.sB, {
                         [x.fi]: n
                     }),
                     children: [(0, r.jsx)("div", {
-                        className: a()(x.PV, {
+                        className: s()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
@@ -72,7 +72,7 @@ function S() {
                         })
                     }), (0, r.jsx)(o.Heading, {
                         variant: "heading-sm/medium",
-                        className: a()(x.PV, {
+                        className: s()(x.PV, {
                             [x.WV]: n,
                             [x.mq]: n
                         }),
@@ -82,11 +82,11 @@ function S() {
                     }), T ? (0, r.jsxs)(r.Fragment, {
                         children: [(0, r.jsx)("div", {
                             "aria-hidden": "true",
-                            className: a()(x.SC, {
+                            className: s()(x.SC, {
                                 [x.b2]: n
                             })
                         }), (0, r.jsx)(o.Heading, {
-                            className: a()(x.xw, {
+                            className: s()(x.xw, {
                                 [x._L]: n
                             }),
                             variant: "heading-sm/medium",

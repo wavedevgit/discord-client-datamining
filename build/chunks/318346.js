@@ -2,8 +2,8 @@
 n.d(t, {
     Y: () => i
 });
-var s = n(954571),
-    a = n(652215);
+var a = n(954571),
+    s = n(652215);
 
 function i(e) {
     let {
@@ -11,7 +11,7 @@ function i(e) {
         sectionType: n,
         ctaObject: i
     } = e;
-    s.default.track(a.HAw.ORBS_ENTRYPOINT_CLICKED, {
+    a.default.track(s.HAw.ORBS_ENTRYPOINT_CLICKED, {
         location_page: t,
         location_section: n,
         location_object: i

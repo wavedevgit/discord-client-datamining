@@ -1,6 +1,6 @@
 /** chunk id: 975726 params = (module,exports,require) **/
 n.d(t, {
-    default: () => k
+    default: () => T
 });
 var s = n(627968),
     a = n(64700),
@@ -8,8 +8,8 @@ var s = n(627968),
     r = n(311907),
     o = n(862482),
     l = n(397927),
-    d = n(416052),
-    c = n(475743),
+    c = n(416052),
+    d = n(475743),
     u = n(765548),
     m = n(165508),
     C = n(46054),
@@ -18,8 +18,8 @@ var s = n(627968),
     p = n(240248),
     _ = n(859703),
     f = n(341915),
-    A = n(714510),
-    g = n(890687),
+    g = n(714510),
+    A = n(890687),
     j = n(645627),
     y = n(18437),
     v = n(590202),
@@ -32,18 +32,18 @@ var s = n(627968),
     M = n(985018),
     S = n(934078);
 
-function D(e) {
+function k(e) {
     let {
         rewardCode: t,
         questContent: n,
         questId: a,
         sourceQuestContent: i,
         className: l,
-        inputClassName: c
+        inputClassName: d
     } = e, u = (0, r.bG)([h.A], () => h.A.hidePersonalInformation), m = (0, y.Ut)();
-    return null == t ? null : (0, s.jsx)(d.A, {
+    return null == t ? null : (0, s.jsx)(c.A, {
         className: l,
-        inputClassName: c,
+        inputClassName: d,
         value: u ? M.intl.string(M.t["0n2u0k"]) : t.code,
         buttonColor: o.XD.PRIMARY,
         onCopy: () => {
@@ -57,16 +57,16 @@ function D(e) {
     })
 }
 
-function I(e) {
+function D(e) {
     let {
         quest: t,
         questContent: n,
         sourceQuestContent: r,
         rewardCode: o,
-        onClose: d,
-        transitionState: c,
+        onClose: c,
+        transitionState: d,
         impressionRef: u
-    } = e, m = (0, A.XR)({
+    } = e, m = (0, g.XR)({
         quest: t,
         rewardCode: o
     }) ?? "", h = a.useMemo(() => {
@@ -95,7 +95,7 @@ function I(e) {
             } : {
                 variant: "primary",
                 text: M.intl.string(M.t["/g10LC"]),
-                onClick: d
+                onClick: c
             }],
             preview: (0, s.jsxs)(s.Fragment, {
                 children: [(0, s.jsx)(l.Text, {
@@ -103,15 +103,15 @@ function I(e) {
                     color: "interactive-text-default",
                     className: S.V6,
                     children: M.intl.string(M.t.srzsU2)
-                }), (0, s.jsx)(D, {
+                }), (0, s.jsx)(k, {
                     rewardCode: o,
                     questContent: n,
                     questId: t.id,
                     sourceQuestContent: r
                 })]
             }),
-            onClose: d,
-            transitionState: c,
+            onClose: c,
+            transitionState: d,
             children: (0, s.jsx)(l.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
@@ -124,7 +124,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         quest: t,
         questContent: n,
@@ -156,7 +156,7 @@ function T(e) {
                     onClaimInstructions: r
                 })
             })]
-        }), (0, s.jsx)(D, {
+        }), (0, s.jsx)(k, {
             className: S.DA,
             rewardCode: a,
             questContent: n,
@@ -167,15 +167,15 @@ function T(e) {
     })
 }
 
-function k(e) {
+function T(e) {
     let t, n, i, o, {
-            initialQuest: d,
+            initialQuest: c,
             onClose: C,
             transitionState: h,
             sourceQuestContent: x
         } = e,
-        p = (0, g.C5)(d.id) ?? d,
-        A = f.uF.REWARD_MODAL,
+        p = (0, A.C5)(c.id) ?? c,
+        g = f.uF.REWARD_MODAL,
         {
             rewardCode: y,
             isFetchingRewardCode: v,
@@ -192,41 +192,41 @@ function k(e) {
             isClaimingReward: R,
             isFetchingRewardCode: v,
             quest: p,
-            questContent: A,
+            questContent: g,
             rewardCode: y
         });
     t = (0, u.A)(() => {
         S(!0)
-    }), n = m.default.useIsCaptchaModalOpen(), i = (0, c.A)(n), o = !!(!n && i), a.useEffect(() => {
+    }), n = m.default.useIsCaptchaModalOpen(), i = (0, d.A)(n), o = !!(!n && i), a.useEffect(() => {
         o && t()
     }, [o, t]);
-    let D = null == y && (v || R),
-        k = M && !R && !v;
+    let k = null == y && (v || R),
+        T = M && !R && !v;
     return (0, s.jsx)(L.A, {
         onClose: C,
         transitionState: h,
         quest: p,
         sourceQuestContent: x,
         location: O.rE.REWARD_CODE_MODAL,
-        isRewardContentLoading: D,
-        rewardContentHasError: k,
-        rewardContent: k ? null : (0, s.jsx)(w.A, {
+        isRewardContentLoading: k,
+        rewardContentHasError: T,
+        rewardContent: T ? null : (0, s.jsx)(w.A, {
             rewardName: (0, E.mq)(p.config),
-            children: (0, s.jsx)(T, {
+            children: (0, s.jsx)(I, {
                 quest: p,
-                questContent: A,
+                questContent: g,
                 rewardCode: y,
                 sourceQuestContent: x,
                 onClaimInstructions: () => {
                     (0, l.mMO)(() => Promise.resolve(e => (0, s.jsx)(N.R, {
                         questOrQuests: p,
-                        questContent: A,
+                        questContent: g,
                         sourceQuestContent: x,
-                        children: t => (0, s.jsx)(I, {
+                        children: t => (0, s.jsx)(D, {
                             ...e,
                             impressionRef: t,
                             quest: p,
-                            questContent: A,
+                            questContent: g,
                             sourceQuestContent: x,
                             rewardCode: y
                         })

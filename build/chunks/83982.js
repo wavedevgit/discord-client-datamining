@@ -17,13 +17,13 @@ var i = n(627968),
     A = n(164617),
     g = n(958713),
     p = n(525505),
-    f = n(991701),
-    _ = n(401901),
-    E = n(869146),
-    x = n(854627),
-    C = n(530804),
-    S = n(961350),
-    T = n(696451),
+    f = n(550946),
+    _ = n(991701),
+    E = n(401901),
+    x = n(869146),
+    C = n(854627),
+    S = n(530804),
+    T = n(961350),
     I = n(430452),
     N = n(531685),
     y = n(562153),
@@ -42,7 +42,7 @@ function w(e) {
         channelId: t,
         participant: n
     } = e;
-    return (0, C.uy)(t, n.id) ? (0, i.jsx)(o.m, {
+    return (0, S.uy)(t, n.id) ? (0, i.jsx)(o.m, {
         text: D.intl.string(D.t.HFwRpk),
         position: "bottom",
         children: (0, i.jsx)("div", {
@@ -63,7 +63,7 @@ function k(e) {
         inCall: s,
         width: o,
         selected: c,
-        popoutType: C,
+        popoutType: S,
         fit: j,
         onVideoResize: w,
         blocked: k,
@@ -71,14 +71,14 @@ function k(e) {
         noVideoRender: G = !1,
         pulseSpeakingIndicator: F = !1,
         paused: H = !1
-    } = e, B = I.Ay.getVideoComponent(), V = (0, r.bG)([S.default], () => S.default.getId()), {
+    } = e, B = I.Ay.getVideoComponent(), V = (0, r.bG)([T.default], () => T.default.getId()), {
         user: K,
         streamId: z,
         speaking: W
-    } = t, Y = K.id === V, q = (0, b.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([E.A], () => E.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([I.Ay], () => null != K.id && I.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, r.bG)([T.Ay], () => T.Ay.isGuestOrLurker(n.guild_id, K.id)), Q = y.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = W && ($ || J), et = o < 124 ? P : L, {
+    } = t, Y = K.id === V, q = (0, b.Ay)(t), J = (0, r.bG)([N.A], () => N.A.isFocused()), $ = (0, r.bG)([x.A], () => x.A.getWindowFocused(R.MLl.CHANNEL_CALL_POPOUT)), Z = (0, r.bG)([I.Ay], () => null != K.id && I.Ay.isLocalVideoDisabled(K.id, (0, m.A)(t.type)), [K.id, t.type]), X = (0, f.A)(n.guild_id, K.id), Q = y.Ay.getName(n.getGuildId(), n.id, K) + (X ? ` ${D.intl.string(D.t["pFO/Ph"])}` : ""), ee = W && ($ || J), et = o < 124 ? P : L, {
         avatarSrc: en,
         avatarDecorationSrc: ei
-    } = (0, x.A)({
+    } = (0, C.A)({
         userId: K.id,
         guildId: n.guild_id,
         size: et,
@@ -102,9 +102,9 @@ function k(e) {
         userId: t.id,
         width: o,
         selected: c
-    }) : (0, i.jsx)(_.A, {
+    }) : (0, i.jsx)(E.A, {
         onResize: w,
-        wrapperClassName: C !== A.N.CALL_TILE ? O.tN : void 0,
+        wrapperClassName: S !== A.N.CALL_TILE ? O.tN : void 0,
         className: O.Qs,
         mirror: Y,
         streamId: z,
@@ -117,7 +117,7 @@ function k(e) {
         className: a()(O.Qs, {
             [O.Kx]: k || U
         }),
-        children: (0, i.jsx)(f.A, {
+        children: (0, i.jsx)(_.A, {
             "aria-label": Q,
             avatarDecoration: ei,
             backgroundSrc: K.getAvatarURL(n.guild_id, 80),

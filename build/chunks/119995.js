@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(397927),
-    r = n(985018),
-    s = n(523845);
+    s = n(985018),
+    r = n(523845);
 
 function l(e) {
     let {
@@ -13,15 +13,15 @@ function l(e) {
     } = e;
     return (0, i.jsx)(a.Text, {
         variant: "text-xs/medium",
-        className: s.tI,
-        children: r.intl.format(r.t.loyTil, {
+        className: r.tI,
+        children: s.intl.format(s.t.loyTil, {
             rewardName: (e, n) => (0, i.jsx)(a.Text, {
                 variant: "text-xs/medium",
-                className: s.Ht,
+                className: r.Ht,
                 children: t
             }, n),
             verticalDivider: (e, t) => (0, i.jsx)("div", {
-                className: s.yF
+                className: r.yF
             }, t)
         })
     })

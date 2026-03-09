@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(64700),
     l = n(771253),
     i = n(731738),
-    a = n(311907),
-    s = n(831062),
+    s = n(311907),
+    a = n(831062),
     o = n(544180),
     u = n(18437),
     c = n(753386),
@@ -36,7 +36,7 @@ function f(e) {
         questId: x,
         isQuestCompleted: g,
         isFullEpisodeVideoQuest: S
-    } = e, A = (0, u.u0)(), C = (0, u.Ut)(), _ = (0, a.bG)([o.A], () => o.A.getEffectiveConnectionSpeed()), b = (0, r.useRef)(-1), y = r.useCallback(e => {
+    } = e, A = (0, u.u0)(), C = (0, u.Ut)(), _ = (0, s.bG)([o.A], () => o.A.getEffectiveConnectionSpeed()), b = (0, r.useRef)(-1), y = r.useCallback(e => {
         null != t.current && A({
             questId: x,
             event: m.HAw.QUEST_VIDEO_LOADING_STARTED,
@@ -113,7 +113,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, n, A, E, h]), I = r.useCallback((e, n) => {
+    }, [x, t, f, n, A, E, h]), j = r.useCallback((e, n) => {
         null != t.current && A({
             questId: x,
             event: e ? m.HAw.QUEST_VIDEO_APP_FOCUSED : m.HAw.QUEST_VIDEO_APP_UNFOCUSED,
@@ -125,7 +125,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, A, E, h]), j = r.useCallback(() => {
+    }, [x, t, f, A, E, h]), I = r.useCallback(() => {
         null != t.current && (b.current += 1, A({
             questId: x,
             event: m.HAw.QUEST_VIDEO_BUFFERING_STARTED,
@@ -176,7 +176,7 @@ function f(e) {
         })
     }, [A, x, E, g, f, n, t, h]), O = r.useCallback((e, r) => {
         if (null == t.current) return;
-        let a = t.current?.error,
+        let s = t.current?.error,
             o = t.current?.networkState,
             u = null != t.current ? (0, c.zh)(t.current.currentTime, t.current.duration) : void 0,
             v = null != r ? {
@@ -192,8 +192,8 @@ function f(e) {
                 video_asset_id: E,
                 network_connection_speed: _,
                 video_session_id: f,
-                video_error_code: a?.code,
-                video_error_message: a?.message,
+                video_error_code: s?.code,
+                video_error_message: s?.message,
                 video_network_state: o,
                 is_full_episode_video_quest: S,
                 is_hls_supported: l.Ay.isSupported(),
@@ -201,7 +201,7 @@ function f(e) {
                 ...v
             },
             sourceQuestContent: h
-        }), (e === d.SB.SOURCE_ERROR || e === d.SB.NO_VALID_SOURCE) && s.A.increment({
+        }), (e === d.SB.SOURCE_ERROR || e === d.SB.NO_VALID_SOURCE) && a.A.increment({
             name: i.K.QUEST_VIDEO_ERROR,
             tags: [`quest_id:${x}`, `error_type:${e}`]
         })
@@ -267,9 +267,9 @@ function f(e) {
         trackQuestVideoProgressed: D,
         trackQuestVideoResumed: R,
         trackQuestVideoPaused: L,
-        trackQuestVideoFocusChange: I,
+        trackQuestVideoFocusChange: j,
         trackQuestContentClick: w,
-        trackQuestVideoBufferingStarted: j,
+        trackQuestVideoBufferingStarted: I,
         trackQuestVideoBufferingEnded: M,
         trackWatchTimeAnalytics: k,
         trackQuestVideoFullscreenChanged: Q,

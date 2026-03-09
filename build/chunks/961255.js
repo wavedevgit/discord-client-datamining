@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(720431),
+    s = n.n(i),
+    a = n(720431),
     o = n(397927),
     u = n(892358),
     c = n(341915),
@@ -36,22 +36,22 @@ let E = {
             index: T
         } = n, {
             completedRatio: N
-        } = (0, d.O9)(h), [D, R] = l.useState(!1), L = b - p.Ue, I = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, j = 0 === T && N < 1, {
+        } = (0, d.O9)(h), [D, R] = l.useState(!1), L = b - p.Ue, j = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, I = 0 === T && N < 1, {
             fill: M
         } = (0, o.zhh)({
-            fill: 100 * I,
+            fill: 100 * j,
             config: E,
             onRest: () => {
-                I <= 0 && R(!1)
+                j <= 0 && R(!1)
             },
             onStart: () => {
                 R(!0)
             }
         });
-        return (0, r.jsxs)(s.animated.div, {
-            className: a()(f.ck, {
-                [f.a]: j && D,
-                [f.C9]: !j && D
+        return (0, r.jsxs)(a.animated.div, {
+            className: s()(f.ck, {
+                [f.a]: I && D,
+                [f.C9]: !I && D
             }),
             style: {
                 left: i ? x.to(e => b - e) : b,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(720431),
+    s = n.n(i),
+    a = n(720431),
     o = n(311907),
     u = n(827734),
     c = n(106236),
@@ -36,8 +36,8 @@ function S(e) {
         handleCaptionBtnClick: D,
         handleFullScreenBtnClick: R,
         handleSeekBackBtnClick: L,
-        handleSeekForwardBtnClick: I,
-        handleControlBarPendingInteraction: j,
+        handleSeekForwardBtnClick: j,
+        handleControlBarPendingInteraction: I,
         onVolumeChange: M
     } = e, {
         isFullscreenEnabled: w
@@ -72,7 +72,7 @@ function S(e) {
                 L();
                 break;
             case v.TJ.SEEK_FORWARD:
-                I();
+                j();
                 break;
             case v.TJ.CAPTION:
                 D();
@@ -83,7 +83,7 @@ function S(e) {
             case v.TJ.MUTE:
                 Z()
         }
-    }, [D, R, T, L, I, Z, F]);
+    }, [D, R, T, L, j, Z, F]);
     l.useEffect(() => {
         null != X.current && X.current.focus()
     }, []), l.useEffect(() => (q({
@@ -128,7 +128,7 @@ function S(e) {
                     iconComponent: p.i7,
                     animationTime: i,
                     visible: S,
-                    onClick: I,
+                    onClick: j,
                     disabled: !A,
                     ariaLabel: A ? x.intl.string(x.t.zWDcNP) : x.intl.string(x.t.xXh3yw),
                     tooltipLabel: A ? x.intl.string(x.t.zWDcNP) : x.intl.string(x.t.xXh3yw),
@@ -138,10 +138,10 @@ function S(e) {
                     "data-testid": "discord-web-video-player-seek-forward-btn"
                 })]
             })]
-        }), (0, r.jsxs)(s.animated.div, {
-            className: a()(g.X3, g.L1),
+        }), (0, r.jsxs)(a.animated.div, {
+            className: s()(g.X3, g.L1),
             style: {
-                opacity: (0, s.to)([i.to({
+                opacity: (0, a.to)([i.to({
                     range: [0, 1],
                     output: [0, 1]
                 })], e => `${S?e:Math.pow(e,8)}`)
@@ -163,15 +163,15 @@ function S(e) {
                     shortcut: v.TJ.MUTE,
                     buttonSize: f.AU[y],
                     "data-testid": "discord-web-video-player-volume-btn"
-                }), (0, r.jsx)(s.animated.div, {
+                }), (0, r.jsx)(a.animated.div, {
                     className: g.MQ,
                     "data-testid": "discord-web-video-player-volume-slider",
                     style: {
-                        opacity: (0, s.to)([W.to({
+                        opacity: (0, a.to)([W.to({
                             range: [0, 1],
                             output: [0, 1]
                         })], e => `${S?e:Math.pow(e,8)}`),
-                        width: (0, s.to)([W.to({
+                        width: (0, a.to)([W.to({
                             range: [0, 1],
                             output: [0, 100]
                         })], e => `${e}px`)
@@ -183,10 +183,10 @@ function S(e) {
                         minValue: 0,
                         maxValue: 1,
                         onValueChange: e => {
-                            J(e), O(e), M(e), H && (z(!1), j(!1)), P && e > 0 ? Q(!1) : P || 0 !== e || Q(!0)
+                            J(e), O(e), M(e), H && (z(!1), I(!1)), P && e > 0 ? Q(!1) : P || 0 !== e || Q(!0)
                         },
                         asValueChanges: e => {
-                            J(e), H || (z(!0), j(!0))
+                            J(e), H || (z(!0), I(!0))
                         },
                         fillStyles: {
                             backgroundColor: u.A.colors.WHITE.css
@@ -200,7 +200,7 @@ function S(e) {
                 duration: t?.current?.duration
             })]
         }), (0, r.jsxs)("div", {
-            className: a()(g.X3, g.ST),
+            className: s()(g.X3, g.ST),
             children: [!_ && (0, r.jsx)(f.Ey, {
                 iconComponent: d.ueQ,
                 animationTime: i,

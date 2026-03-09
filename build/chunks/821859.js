@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(720431),
+    s = n.n(i),
+    a = n(720431),
     o = n(876230),
     u = n(61491),
     c = n(397927),
@@ -41,8 +41,8 @@ function E(e) {
         handleMouseLeave: D,
         handleMouseMove: R,
         handleKeyDown: L,
-        hoveredAtX: I,
-        maxSeekableX: j,
+        hoveredAtX: j,
+        maxSeekableX: I,
         isHovering: M,
         handleClick: w,
         ariaProps: k
@@ -54,7 +54,7 @@ function E(e) {
         duration: g,
         percent: n,
         onClick: A
-    }), O = l.useMemo(() => null == I || null == T ? null : (0, u.rB)((0, u.hc)(I, T, g)), [I, T, g]), P = l.useMemo(() => {
+    }), O = l.useMemo(() => null == j || null == T ? null : (0, u.rB)((0, u.hc)(j, T, g)), [j, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{
         currentPxSpring: Q
@@ -84,7 +84,7 @@ function E(e) {
             "--custom-initial-timeline-height": "4px"
         },
         children: (0, r.jsxs)(c.DUT, {
-            className: a()(p.KF, {
+            className: s()(p.KF, {
                 [p.uc]: E
             }),
             ignoreKeyPress: !0,
@@ -103,7 +103,7 @@ function E(e) {
                     backgroundColor: h,
                     timelineWidth: U,
                     preloadedBuffers: x,
-                    maxSeekableX: j,
+                    maxSeekableX: I,
                     interactionEnabled: E,
                     useNewStyles: !0,
                     progressFillClassName: p.UA,
@@ -115,10 +115,10 @@ function E(e) {
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
-                    left: null != I ? `${I}px` : "auto"
+                    left: null != j ? `${j}px` : "auto"
                 },
                 children: O
-            }), M && E && null != P && (0, r.jsx)(s.animated.div, {
+            }), M && E && null != P && (0, r.jsx)(a.animated.div, {
                 className: p.Ub,
                 style: {
                     left: Q.to(e => `${e}px`)

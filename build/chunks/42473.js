@@ -22,10 +22,10 @@ let A = s.forwardRef(function(e, t) {
             icon: c,
             iconForeground: A,
             innerClassName: p,
-            className: h,
+            className: f,
             redGlow: x,
-            onMouseEnter: E,
-            onMouseLeave: f,
+            onMouseEnter: h,
+            onMouseLeave: E,
             "aria-label": N,
             "aria-checked": g,
             role: S,
@@ -45,8 +45,8 @@ let A = s.forwardRef(function(e, t) {
             size: u.$n.Sizes.NONE,
             disabled: o,
             innerClassName: p,
-            wrapperClassName: i()(m.x6, h),
-            className: i()(m.x6, h, {
+            wrapperClassName: i()(m.x6, f),
+            className: i()(m.x6, f, {
                 [m.Xr]: x,
                 [m.r9]: o,
                 [m.Sn]: !o,
@@ -57,8 +57,8 @@ let A = s.forwardRef(function(e, t) {
                 null != a && a(e)
             },
             onMouseDown: r,
-            onMouseEnter: E,
-            onMouseLeave: f,
+            onMouseEnter: h,
+            onMouseLeave: E,
             onContextMenu: s,
             role: S,
             "aria-checked": g,
@@ -111,9 +111,9 @@ let A = s.forwardRef(function(e, t) {
                 onMouseLeave: u,
                 onContextMenu: d,
                 onFocus: p,
-                onBlur: h,
+                onBlur: f,
                 "aria-label": x,
-                ...E
+                ...h
             } = e;
             return (0, l.jsx)(c.STz, {
                 "data-migration-pending": !0,
@@ -152,10 +152,10 @@ let A = s.forwardRef(function(e, t) {
                             c?.(), p?.()
                         },
                         onBlur: () => {
-                            m?.(), h?.()
+                            m?.(), f?.()
                         },
                         "aria-label": x,
-                        ...E,
+                        ...h,
                         ref: t
                     })
                 }

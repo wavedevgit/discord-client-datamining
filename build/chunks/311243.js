@@ -20,7 +20,7 @@ let c = function(e) {
         location: m,
         sourceQuestContent: A,
         gameProfileSource: p
-    } = e, h = (0, r.mU)({
+    } = e, f = (0, r.mU)({
         quest: s,
         taskDetails: d,
         location: m,
@@ -41,7 +41,7 @@ let c = function(e) {
             children: (0, l.jsx)(i.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
-                children: h
+                children: f
             })
         })]
     })

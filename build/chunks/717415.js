@@ -7,9 +7,9 @@ n.r(t), n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    s = n(284009),
-    o = n.n(s),
+    s = n.n(i),
+    a = n(284009),
+    o = n.n(a),
     u = n(412703),
     c = n(311907),
     d = n(397927),
@@ -32,8 +32,8 @@ var r = n(627968),
     D = n(583235),
     R = n(654487),
     L = n(985018),
-    I = n(407481),
-    j = n(221190);
+    j = n(407481),
+    I = n(221190);
 let M = l.createContext({
         quest: null,
         sourceQuestContent: null,
@@ -53,7 +53,7 @@ function k(e) {
         transitionState: t,
         onClose: n,
         quest: i,
-        autoplay: s,
+        autoplay: a,
         videoSessionId: c,
         impressionRef: f,
         parentModalOpenStartClockTime: E,
@@ -99,13 +99,13 @@ function k(e) {
                 "data-migration-pending": !0,
                 transitionState: t,
                 size: d.rIJ.DYNAMIC,
-                className: a()(j.CR, {
-                    [j.VX]: "landscape" === G,
-                    [j.Zy]: "portrait" === G
+                className: s()(I.CR, {
+                    [I.VX]: "landscape" === G,
+                    [I.Zy]: "portrait" === G
                 }),
                 parentComponent: "Modal",
                 children: [!W && (0, r.jsx)("div", {
-                    className: j.z6,
+                    className: I.z6,
                     children: (0, r.jsx)(d.K0, {
                         variant: "icon-only",
                         icon: e => (0, r.jsx)(d.PGe, {
@@ -119,33 +119,33 @@ function k(e) {
                     ref: e => {
                         f.current = e
                     },
-                    className: j.NE,
+                    className: I.NE,
                     children: (0, r.jsx)("div", {
-                        className: j.S3,
+                        className: I.S3,
                         style: {
                             "--custom-footer-horizontal-padding": `${W?20:16}px`
                         },
                         children: (0, r.jsxs)("div", {
-                            className: j.jE,
+                            className: I.jE,
                             children: [(0, r.jsx)(N.A, {
                                 targetTimeSec: F.target,
                                 parentTransitionState: t,
                                 onOptimisticProgressUpdate: P,
-                                autoplay: s,
+                                autoplay: a,
                                 performanceClockStartTime: E,
                                 orientation: G
                             }), K ? (0, r.jsxs)("div", {
                                 ref: Y,
-                                className: I.uh,
+                                className: j.uh,
                                 children: [(0, r.jsxs)("div", {
-                                    className: I.Df,
+                                    className: j.Df,
                                     children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: I.eX,
+                                    className: j.eX,
                                     children: [(0, r.jsx)("div", {
-                                        className: I.uP,
+                                        className: j.uP,
                                         children: (0, r.jsx)("div", {
-                                            className: I.ne,
+                                            className: j.ne,
                                             children: (0, r.jsx)(b.A, {})
                                         })
                                     }), (0, r.jsx)(_.A, {
@@ -153,12 +153,12 @@ function k(e) {
                                     })]
                                 })]
                             }) : (0, r.jsxs)("div", {
-                                className: I.nR,
+                                className: j.nR,
                                 children: [(0, r.jsxs)("div", {
-                                    className: I.uu,
+                                    className: j.uu,
                                     children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: I.NY,
+                                    className: j.NY,
                                     children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(_.A, {
                                         handlePrimaryCtaClick: q
                                     })]
@@ -177,8 +177,8 @@ function O(e) {
         questId: t,
         overrideQuest: n,
         autoplay: i,
-        openStartClockTime: a,
-        ...s
+        openStartClockTime: s,
+        ...a
     } = e, o = (0, c.bG)([E.A], () => E.A.getQuest(t)), u = (0, c.bG)([E.A], () => E.A.getQuestConfig(t)), d = n ?? o, m = null != n ? n.config : u, p = l.useMemo(() => null != m ? {
         questConfig: m
     } : null, [m]);
@@ -189,10 +189,10 @@ function O(e) {
             questContent: h.uF.VIDEO_MODAL,
             minViewTimeSeconds: f.bq,
             trackGuildAndChannelMetadata: !0,
-            sourceQuestContent: s.sourceQuestContent,
+            sourceQuestContent: a.sourceQuestContent,
             children: e => (0, r.jsx)(k, {
-                ...s,
-                parentModalOpenStartClockTime: a,
+                ...a,
+                parentModalOpenStartClockTime: s,
                 impressionRef: e,
                 quest: d,
                 autoplay: i

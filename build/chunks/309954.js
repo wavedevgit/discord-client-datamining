@@ -2,8 +2,8 @@
 n.d(t, {
     W: () => l
 });
-var s = n(64700),
-    a = n(311907),
+var a = n(64700),
+    s = n(311907),
     i = n(786953),
     r = n(505274);
 
@@ -12,12 +12,12 @@ function l() {
         balance: e,
         isFetching: t,
         error: n
-    } = (0, a.cf)([r.A], () => ({
+    } = (0, s.cf)([r.A], () => ({
         balance: r.A.balance,
         isFetching: r.A.isFetchingBalance,
         error: r.A.fetchBalanceError
     }));
-    return (0, s.useEffect)(() => {
+    return (0, a.useEffect)(() => {
         null !== e || null !== n || t || (0, i.Bf)()
     }, [e, n, t]), {
         balance: e,

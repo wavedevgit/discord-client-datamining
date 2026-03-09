@@ -12,6 +12,6 @@ let d = (0, l.E2)(a.X.CHAT_FAVORITES_TOGGLE, {
     usePredicate: () => (0, i.m)({
         location: "FavoritesGuildToggle"
     }).enabled,
-    useSearchTerms: () => [r.intl.string(o.default["0h2CcM"]), r.intl.string(o.default.IF7iE0)],
+    useSearchTerms: () => [r.intl.string(o.default.OT1NK5)],
     Component: s.T
 })
