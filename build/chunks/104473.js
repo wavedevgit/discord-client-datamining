@@ -5,8 +5,8 @@ r.d(t, {
 });
 var o = r(627968);
 r(64700);
-var n = r(397927),
-    a = r(476066),
+var a = r(397927),
+    n = r(476066),
     i = r(6503);
 let s = "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4";
 
@@ -14,7 +14,7 @@ function l(e) {
     let {
         orientation: t,
         thumbnailUrl: r,
-        onReplay: n
+        onReplay: a
     } = e;
     return (0, o.jsxs)(o.Fragment, {
         children: [(0, o.jsx)(i.nY, {
@@ -28,7 +28,7 @@ function l(e) {
                 title: "Watch Again",
                 subtitle: "Replay this video",
                 ctaBtnLabel: "Replay",
-                onCTAClick: n,
+                onCTAClick: a,
                 orientation: t
             })]
         })]
@@ -50,12 +50,12 @@ function d(e) {
             margin: "0 auto",
             backgroundColor: "#000"
         },
-        children: (0, o.jsx)(a.A, {
+        children: (0, o.jsx)(n.A, {
             src: s,
             autoplay: r,
             orientation: t,
             seekForwardRestricted: i,
-            parentTransitionState: n.ip4.ENTERED,
+            parentTransitionState: a.ip4.ENTERED,
             targetTimeSec: 1 / 0,
             onOptimisticProgressUpdate: () => {},
             performanceClockStartTime: 0,

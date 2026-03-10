@@ -113,7 +113,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, n, A, E, h]), j = r.useCallback((e, n) => {
+    }, [x, t, f, n, A, E, h]), I = r.useCallback((e, n) => {
         null != t.current && A({
             questId: x,
             event: e ? m.HAw.QUEST_VIDEO_APP_FOCUSED : m.HAw.QUEST_VIDEO_APP_UNFOCUSED,
@@ -125,7 +125,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, A, E, h]), I = r.useCallback(() => {
+    }, [x, t, f, A, E, h]), M = r.useCallback(() => {
         null != t.current && (b.current += 1, A({
             questId: x,
             event: m.HAw.QUEST_VIDEO_BUFFERING_STARTED,
@@ -138,7 +138,7 @@ function f(e) {
             },
             sourceQuestContent: h
         }))
-    }, [x, t, E, f, n, A, h, _]), M = r.useCallback(e => {
+    }, [x, t, E, f, n, A, h, _]), j = r.useCallback(e => {
         null != t.current && (b.current += 1, A({
             questId: x,
             event: m.HAw.QUEST_VIDEO_BUFFERING_ENDED,
@@ -267,11 +267,11 @@ function f(e) {
         trackQuestVideoProgressed: D,
         trackQuestVideoResumed: R,
         trackQuestVideoPaused: L,
-        trackQuestVideoFocusChange: j,
+        trackQuestVideoFocusChange: I,
         trackQuestContentClick: w,
-        trackQuestVideoBufferingStarted: I,
-        trackQuestVideoBufferingEnded: M,
-        trackWatchTimeAnalytics: k,
+        trackQuestVideoBufferingStarted: M,
+        trackQuestVideoBufferingEnded: j,
+        trackQuestVideoSegmentWatched: k,
         trackQuestVideoFullscreenChanged: Q,
         trackQuestVideoError: O,
         trackQuestVideoVolumeChanged: V

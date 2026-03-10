@@ -104,9 +104,9 @@ b.a(_, async function(_, c) {
             __wbindgen_bigint_from_u64: () => a.Qg,
             __wbindgen_boolean_get: () => a.eF,
             __wbindgen_cb_drop: () => a.LC,
-            __wbindgen_closure_wrapper1620: () => a.Kg,
-            __wbindgen_closure_wrapper1685: () => a.nD,
-            __wbindgen_closure_wrapper2526: () => a.ET,
+            __wbindgen_closure_wrapper1636: () => a.e1,
+            __wbindgen_closure_wrapper1701: () => a.EC,
+            __wbindgen_closure_wrapper2542: () => a.ah,
             __wbindgen_debug_string: () => a.rl,
             __wbindgen_error_new: () => a.Rj,
             __wbindgen_in: () => a.zE,
@@ -130,8 +130,8 @@ b.a(_, async function(_, c) {
             rustMultiply: () => a.t7
         });
         var a = b(78815),
-            n = _([a]);
-        a = (n.then ? (await n)() : n)[0], c()
+            w = _([a]);
+        a = (w.then ? (await w)() : w)[0], c()
     } catch (_) {
         c(_)
     }

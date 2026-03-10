@@ -573,7 +573,7 @@ class e1 extends l.PureComponent {
             currentChannelId: i
         } = t;
         return n.id !== i ? {
-            textAreaFocused: null != n && n.type !== eW.rbe.GUILD_ANNOUNCEMENT && !c.Fr && eb.A.can(eW.xBc.SEND_MESSAGES, n),
+            textAreaFocused: null != n && !c.Fr && eb.A.can(eW.xBc.SEND_MESSAGES, n),
             currentChannelId: n.id
         } : null
     }

@@ -4,8 +4,8 @@ r.d(t, {
 });
 var o = r(627968);
 r(64700);
-var n = r(397927),
-    a = r(432806),
+var a = r(397927),
+    n = r(432806),
     i = r(762168),
     s = r(652215);
 
@@ -40,9 +40,9 @@ function l(e) {
         children: (0, o.jsx)(i.sn, {
             quest: p,
             isPortrait: c,
-            children: (0, o.jsx)(a.A, {
+            children: (0, o.jsx)(n.A, {
                 targetTimeSec: u.target,
-                parentTransitionState: n.ip4.ENTERED,
+                parentTransitionState: a.ip4.ENTERED,
                 onOptimisticProgressUpdate: s.tEg,
                 autoplay: r,
                 performanceClockStartTime: 0,

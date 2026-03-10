@@ -41,9 +41,9 @@ function E(e) {
         handleMouseLeave: D,
         handleMouseMove: R,
         handleKeyDown: L,
-        hoveredAtX: j,
-        maxSeekableX: I,
-        isHovering: M,
+        hoveredAtX: I,
+        maxSeekableX: M,
+        isHovering: j,
         handleClick: w,
         ariaProps: k
     } = (0, m.A)({
@@ -54,7 +54,7 @@ function E(e) {
         duration: g,
         percent: n,
         onClick: A
-    }), O = l.useMemo(() => null == j || null == T ? null : (0, u.rB)((0, u.hc)(j, T, g)), [j, T, g]), P = l.useMemo(() => {
+    }), O = l.useMemo(() => null == I || null == T ? null : (0, u.rB)((0, u.hc)(I, T, g)), [I, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{
         currentPxSpring: Q
@@ -103,22 +103,22 @@ function E(e) {
                     backgroundColor: h,
                     timelineWidth: U,
                     preloadedBuffers: x,
-                    maxSeekableX: I,
+                    maxSeekableX: M,
                     interactionEnabled: E,
                     useNewStyles: !0,
                     progressFillClassName: p.UA,
                     glowClassName: p.pN,
                     showGlow: v !== o.Q6.ENDED
                 }, t))
-            }), M && null != O && t && (0, r.jsx)(c.Text, {
+            }), j && null != O && t && (0, r.jsx)(c.Text, {
                 className: p.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
-                    left: null != j ? `${j}px` : "auto"
+                    left: null != I ? `${I}px` : "auto"
                 },
                 children: O
-            }), M && E && null != P && (0, r.jsx)(a.animated.div, {
+            }), j && E && null != P && (0, r.jsx)(a.animated.div, {
                 className: p.Ub,
                 style: {
                     left: Q.to(e => `${e}px`)

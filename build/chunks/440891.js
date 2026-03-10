@@ -33,7 +33,7 @@ function g() {
     l.useEffect(() => {
         null == C.current && e.userStatus?.completedAt != null && b(!0), C.current = e.userStatus?.completedAt
     }, [e.userStatus?.completedAt]);
-    let j = (0, f.v)({
+    let I = (0, f.v)({
         quest: e,
         questContent: u.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: t,
@@ -63,7 +63,7 @@ function g() {
                     cursor: "pointer"
                 } : void 0,
                 onClick: e => {
-                    D && j(e)
+                    D && I(e)
                 },
                 children: (0, r.jsx)(m.A, {
                     size: 48,

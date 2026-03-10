@@ -36,9 +36,9 @@ function S(e) {
         transcriptEnabled: D,
         captionEnabled: R,
         fullScreenEnabled: L,
-        handlePlaybackBtnClick: j,
-        handleTranscriptBtnClick: I,
-        handleCaptionBtnClick: M,
+        handlePlaybackBtnClick: I,
+        handleTranscriptBtnClick: M,
+        handleCaptionBtnClick: j,
         handleFullScreenBtnClick: w,
         handleSeekBackBtnClick: k,
         handleSeekForwardBtnClick: O,
@@ -67,10 +67,10 @@ function S(e) {
     }, et = l.useCallback(e => {
         switch (e.key) {
             case c.TJ.PLAYBACK:
-                j();
+                I();
                 break;
             case c.TJ.SPACE:
-                B || (e.preventDefault(), j());
+                B || (e.preventDefault(), I());
                 break;
             case c.TJ.SEEK_BACK:
                 k();
@@ -79,7 +79,7 @@ function S(e) {
                 O();
                 break;
             case c.TJ.CAPTION:
-                M();
+                j();
                 break;
             case c.TJ.FULLSCREEN:
                 w();
@@ -87,7 +87,7 @@ function S(e) {
             case c.TJ.MUTE:
                 J()
         }
-    }, [M, w, j, k, O, J, B]);
+    }, [j, w, I, k, O, J, B]);
     l.useEffect(() => {
         null != q.current && q.current.focus()
     }, []), l.useEffect(() => (W({
@@ -113,7 +113,7 @@ function S(e) {
                 ariaLabel: el,
                 tooltipLabel: el,
                 shortcut: c.TJ.PLAYBACK,
-                onClick: j,
+                onClick: I,
                 ref: q,
                 buttonSize: f.AU[y],
                 "data-testid": "discord-web-video-player-play-pause-btn"
@@ -209,7 +209,7 @@ function S(e) {
                 iconComponent: m.ueQ,
                 animationTime: i,
                 visible: S,
-                onClick: I,
+                onClick: M,
                 active: D && n !== c.Q6.ENDED,
                 disabled: n === c.Q6.ENDED,
                 ariaLabel: x.intl.string(x.t.KCzjTi),
@@ -221,7 +221,7 @@ function S(e) {
                 animationTime: i,
                 visible: S,
                 active: R,
-                onClick: M,
+                onClick: j,
                 ariaLabel: x.intl.string(x.t.bDSZO1),
                 tooltipLabel: x.intl.string(x.t.bDSZO1),
                 shortcut: c.TJ.CAPTION,

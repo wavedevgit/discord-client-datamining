@@ -28,7 +28,7 @@ let u = e => {
         endPx: S,
         leftIndicatorIndex: A,
         rightIndicatorIndex: C
-    } = t, _ = S - g, b = u.to(e => Math.min(Math.max(0, e - g), _)), y = null != n && null != c && A === n, T = !y && null != n && null != c && C === n, N = y || T, D = T ? (0, a.to)([b, c], (e, t) => `translateX(-${Math.max(0,_-t-e)}px)`) : b.to(e => `translateX(-${_-e}px)`), R = N ? (0, a.to)([b, c], (e, t) => y ? Math.max(0, e - t) : Math.min(e, _ - t)) : b, L = Math.max(0, (p ?? 0) - g), j = E ? o.KR : o.Fv, I = l.useMemo(() => m?.map(e => ({
+    } = t, _ = S - g, b = u.to(e => Math.min(Math.max(0, e - g), _)), y = null != n && null != c && A === n, T = !y && null != n && null != c && C === n, N = y || T, D = T ? (0, a.to)([b, c], (e, t) => `translateX(-${Math.max(0,_-t-e)}px)`) : b.to(e => `translateX(-${_-e}px)`), R = N ? (0, a.to)([b, c], (e, t) => y ? Math.max(0, e - t) : Math.min(e, _ - t)) : b, L = Math.max(0, (p ?? 0) - g), I = E ? o.KR : o.Fv, M = l.useMemo(() => m?.map(e => ({
         startPx: e.start * d,
         endPx: (e.start + e.size) * d
     })).filter(e => e.endPx >= g && e.startPx <= S), [m, g, S, d]);
@@ -49,14 +49,14 @@ let u = e => {
                 style: {
                     left: y ? c.to(e => -(g + e)) : -g
                 },
-                children: [I?.map(e => (0, r.jsx)("div", {
-                    className: s()(o.r, j),
+                children: [M?.map(e => (0, r.jsx)("div", {
+                    className: s()(o.r, I),
                     style: {
                         width: `${e.endPx-e.startPx}px`,
                         left: `${e.startPx}px`
                     }
                 }, `${e.startPx}:${e.endPx}`)), !f && L > 0 && (0, r.jsx)("div", {
-                    className: s()(o.YK, j),
+                    className: s()(o.YK, I),
                     style: {
                         width: `${L}px`,
                         opacity: 1

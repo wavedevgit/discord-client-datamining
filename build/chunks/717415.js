@@ -1,7 +1,7 @@
 /** chunk id: 717415 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     VideoQuestConfigContext: () => w,
-    VideoQuestModalContext: () => M,
+    VideoQuestModalContext: () => j,
     default: () => O
 });
 var r = n(627968),
@@ -32,9 +32,9 @@ var r = n(627968),
     D = n(583235),
     R = n(654487),
     L = n(985018),
-    j = n(438655),
-    I = n(681636);
-let M = l.createContext({
+    I = n(438655),
+    M = n(681636);
+let j = l.createContext({
         quest: null,
         sourceQuestContent: null,
         videoSessionId: "",
@@ -89,7 +89,7 @@ function k(e) {
             useNewProgressBarStyling: W,
             setIsFullscreenEnabled: B
         }), [i, h, c, K, n, U, W, B]);
-    return (0, r.jsx)(M.Provider, {
+    return (0, r.jsx)(j.Provider, {
         value: X,
         children: (0, r.jsx)("div", {
             style: K ? {
@@ -99,13 +99,13 @@ function k(e) {
                 "data-migration-pending": !0,
                 transitionState: t,
                 size: d.rIJ.DYNAMIC,
-                className: s()(I.CR, {
-                    [I.VX]: "landscape" === G,
-                    [I.Zy]: "portrait" === G
+                className: s()(M.CR, {
+                    [M.VX]: "landscape" === G,
+                    [M.Zy]: "portrait" === G
                 }),
                 parentComponent: "Modal",
                 children: [!W && (0, r.jsx)("div", {
-                    className: I.z6,
+                    className: M.z6,
                     children: (0, r.jsx)(d.K0, {
                         variant: "icon-only",
                         icon: e => (0, r.jsx)(d.PGe, {
@@ -119,14 +119,14 @@ function k(e) {
                     ref: e => {
                         f.current = e
                     },
-                    className: I.NE,
+                    className: M.NE,
                     children: (0, r.jsx)("div", {
-                        className: I.S3,
+                        className: M.S3,
                         style: {
                             "--custom-footer-horizontal-padding": `${W?20:16}px`
                         },
                         children: (0, r.jsxs)("div", {
-                            className: I.jE,
+                            className: M.jE,
                             children: [(0, r.jsx)(N.A, {
                                 targetTimeSec: F.target,
                                 parentTransitionState: t,
@@ -136,16 +136,16 @@ function k(e) {
                                 orientation: G
                             }), K ? (0, r.jsxs)("div", {
                                 ref: Y,
-                                className: j.uh,
+                                className: I.uh,
                                 children: [(0, r.jsxs)("div", {
-                                    className: j.Df,
+                                    className: I.Df,
                                     children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: j.eX,
+                                    className: I.eX,
                                     children: [(0, r.jsx)("div", {
-                                        className: j.uP,
+                                        className: I.uP,
                                         children: (0, r.jsx)("div", {
-                                            className: j.ne,
+                                            className: I.ne,
                                             children: (0, r.jsx)(b.A, {})
                                         })
                                     }), (0, r.jsx)(_.A, {
@@ -153,12 +153,12 @@ function k(e) {
                                     })]
                                 })]
                             }) : (0, r.jsxs)("div", {
-                                className: j.nR,
+                                className: I.nR,
                                 children: [(0, r.jsxs)("div", {
-                                    className: j.uu,
+                                    className: I.uu,
                                     children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: j.NY,
+                                    className: I.NY,
                                     children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(_.A, {
                                         handlePrimaryCtaClick: q
                                     })]

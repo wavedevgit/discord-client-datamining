@@ -41,9 +41,9 @@ function g(e) {
         onScrubForward: R,
         "data-testid": L
     } = e, {
-        quest: j,
-        sourceQuestContent: I,
-        useNewProgressBarStyling: M
+        quest: I,
+        sourceQuestContent: M,
+        useNewProgressBarStyling: j
     } = l.useContext(m.VideoQuestModalContext), {
         contRef: w,
         boundingRect: k,
@@ -81,7 +81,7 @@ function g(e) {
         timelineRect: k,
         videoDuration: b,
         targetSec: t
-    }), Z = l.useMemo(() => W(Y), [Y, W]), ee = l.useMemo(() => W(U), [U, W]), et = !A && M, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = l.useMemo(() => W(Y), [Y, W]), ee = l.useMemo(() => W(U), [U, W]), et = !A && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -110,8 +110,8 @@ function g(e) {
         ref: w,
         "data-testid": L,
         style: {
-            "--custom-timeline-height": `${M||F?4:2}px`,
-            "--custom-initial-timeline-height": `${M?4:2}px`
+            "--custom-timeline-height": `${j||F?4:2}px`,
+            "--custom-initial-timeline-height": `${j?4:2}px`
         },
         children: (0, r.jsxs)(u.DUT, {
             className: s()(v.KF, {
@@ -138,7 +138,7 @@ function g(e) {
                     preloadedBuffers: _,
                     maxSeekableX: B,
                     interactionEnabled: S,
-                    useNewStyles: M,
+                    useNewStyles: j,
                     progressFillClassName: et ? h.QR : h.UA,
                     glowClassName: et ? h.Um : h.U5
                 }, t))
@@ -150,8 +150,8 @@ function g(e) {
                     indicator: e,
                     isAnimated: n,
                     expansionSpring: J,
-                    quest: j,
-                    sourceQuestContent: I,
+                    quest: I,
+                    sourceQuestContent: M,
                     onMouseEnter: () => q(e.index),
                     onMouseLeave: () => q(null),
                     onClick: null != N ? () => N(l) : void 0

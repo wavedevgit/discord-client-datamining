@@ -49,16 +49,16 @@ function A(e) {
         title: (0, p.wr)(b),
         subtitle: b.config.ctaConfig.subtitle ?? g.intl.string(g.t.mxaHfx)
     }, {
-        enabled: j
+        enabled: I
     } = u.uK.useConfig({
         location: x.rE.VIDEO_MODAL
-    }), I = l.useMemo(() => (0, c.tW)(b, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [b]);
-    return j ? (0, r.jsxs)(r.Fragment, {
+    }), M = l.useMemo(() => (0, c.tW)(b, c.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1)?.url ?? null, [b]);
+    return I ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.nY, {
-            url: I
+            url: M
         }), (0, r.jsx)(s.KP, {}), (0, r.jsxs)(s.zj, {
             orientation: A,
-            children: [null != I && (0, r.jsx)(f.R, {
+            children: [null != M && (0, r.jsx)(f.R, {
                 questOrQuests: b,
                 questContent: o.uF.VIDEO_MODAL_END_CARD,
                 sourceQuestContent: _,
@@ -66,7 +66,7 @@ function A(e) {
                     ref: t => {
                         e.current = t
                     },
-                    url: I,
+                    url: M,
                     orientation: A
                 })
             }), (0, r.jsx)(s.lx, {
@@ -79,7 +79,7 @@ function A(e) {
             })]
         })]
     }) : (0, r.jsxs)(r.Fragment, {
-        children: [null != I && (0, r.jsx)(f.R, {
+        children: [null != M && (0, r.jsx)(f.R, {
             questOrQuests: b,
             questContent: o.uF.VIDEO_MODAL_END_CARD,
             sourceQuestContent: _,
@@ -87,7 +87,7 @@ function A(e) {
                 ref: t => {
                     e.current = t
                 },
-                url: I
+                url: M
             })
         }), (0, r.jsx)("div", {
             className: S.MT,

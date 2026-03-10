@@ -38,9 +38,9 @@ let b = {
             orientation: D = "landscape",
             videoUrlOverride: R,
             src: L,
-            poster: j,
-            initialTimeSec: I = 0,
-            onProgressUpdate: M,
+            poster: I,
+            initialTimeSec: M = 0,
+            onProgressUpdate: j,
             onEnded: w,
             onError: k,
             maxSeekableTimeSec: O,
@@ -69,17 +69,17 @@ let b = {
             targetRef: el
         } = (0, g.O7)(), [ei, es] = l.useState(T ? u.Q6.PLAYING : u.Q6.PAUSED), [ea, eo] = l.useState(!1), [eu, ec] = l.useState(!1), [ed, em] = l.useState(0), [ep, ef] = l.useState(null), eE = l.useCallback(e => {
             ef(null), em(e)
-        }, []), [eh, ev] = l.useState(!1), [ex, eg] = l.useState(!0), [eS, eA] = l.useState(!1), [eC, e_] = l.useState([]), [eb, ey] = l.useState(!1), [eT, eN] = l.useState(!1), eD = l.useRef(!0), eR = l.useRef(null), eL = l.useRef(null), ej = l.useRef(0);
+        }, []), [eh, ev] = l.useState(!1), [ex, eg] = l.useState(!0), [eS, eA] = l.useState(!1), [eC, e_] = l.useState([]), [eb, ey] = l.useState(!1), [eT, eN] = l.useState(!1), eD = l.useRef(!0), eR = l.useRef(null), eL = l.useRef(null), eI = l.useRef(0);
         l.useLayoutEffect(() => {
-            ej.current = performance.now()
+            eI.current = performance.now()
         }, []);
-        let [eI, eM] = l.useState(.3), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(!1), [eU, eB] = l.useState(!1), eF = (0, o.bG)([m.A], () => m.A.useReducedMotion), eG = (0, l.useRef)(null), eK = (0, l.useRef)(null), e$ = l.useRef(!0), [eY, eH] = l.useState(null), ez = l.useCallback(e => {
+        let [eM, ej] = l.useState(.3), [ew, ek] = l.useState(!1), [eO, eP] = l.useState(!1), [eQ, eV] = l.useState(!1), [eU, eB] = l.useState(!1), eF = (0, o.bG)([m.A], () => m.A.useReducedMotion), eG = (0, l.useRef)(null), eK = (0, l.useRef)(null), e$ = l.useRef(!0), [eY, eH] = l.useState(null), ez = l.useCallback(e => {
             k?.(e)
         }, [k]), {
             isHlsActive: eW
         } = (0, A.A)(eG, {
             src: Z,
-            initialTimeSec: I,
+            initialTimeSec: M,
             onError: ez
         }), [eq, eX] = l.useState(!1), [eJ, eZ] = l.useState(null), e0 = O ?? eG.current?.duration ?? 0, [e1, e6] = l.useState(u.oA.MD), e2 = {
             [u.oA.MD]: 50,
@@ -284,11 +284,11 @@ let b = {
                         [_.IR]: !0
                     }),
                     controls: !1,
-                    poster: j,
+                    poster: I,
                     disablePictureInPicture: !0,
                     "data-testid": "discord-web-video-player-video",
                     onTimeUpdate: e => {
-                        null != eG.current && (M?.(eG.current.currentTime, eG.current.duration), eE(eG.current.currentTime / eG.current.duration * 100))
+                        null != eG.current && (j?.(eG.current.currentTime, eG.current.duration), eE(eG.current.currentTime / eG.current.duration * 100))
                     },
                     onEnded: e => {
                         e7(u.Q6.ENDED, "playback_complete"), eA(!1), w?.()
@@ -300,14 +300,14 @@ let b = {
                         }
                     },
                     onLoadedMetadata: e => {
-                        null != eG.current && (I > 0 && ti(I, !1), ew ? eG.current.volume = 0 : eG.current.volume = eI)
+                        null != eG.current && (M > 0 && ti(M, !1), ew ? eG.current.volume = 0 : eG.current.volume = eM)
                     },
                     onLoadStart: () => {
                         eR.current = performance.now(), K?.()
                     },
                     onPlaying: () => {
                         if (!eD.current) return;
-                        let e = 0 !== N ? N : ej.current,
+                        let e = 0 !== N ? N : eI.current,
                             t = performance.now() - e;
                         Y?.(t), eD.current = !1
                     },
@@ -501,7 +501,7 @@ let b = {
                             hideTranscriptBtn: null == V,
                             hideSkipButtons: "portrait" === D,
                             size: e1,
-                            volume: eI,
+                            volume: eM,
                             muted: ew,
                             transcriptEnabled: eO,
                             captionEnabled: eQ,
@@ -522,7 +522,7 @@ let b = {
                             handleSeekForwardBtnClick: tl,
                             handleControlBarPendingInteraction: ey,
                             onVolumeChange: e => {
-                                eM(e), G?.(e)
+                                ej(e), G?.(e)
                             },
                             onMutedChange: e => {
                                 ek(e)

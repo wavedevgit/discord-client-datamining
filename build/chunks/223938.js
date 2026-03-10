@@ -215,30 +215,32 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eH
     });
     (0, G.R)(eG, b.guild_id, b.id);
-    let [e9, e6] = l.useState(!1), e4 = j || e9 || s.length > 0 || null != e_ || ef.length > 0, {
-        editorHeaderHeight: e8,
-        paddingTop: te
+    let [e9, e6] = l.useState(!1), e4 = l.useCallback(() => {
+        e1(), e6(!0)
+    }, [e1]), e8 = e9 || s.length > 0 || null != e_ || ef.length > 0, {
+        editorHeaderHeight: te,
+        paddingTop: tt
     } = (0, A.zhh)({
-        editorHeaderHeight: 122 * !!e4,
-        paddingTop: 16 * !!e4,
+        editorHeaderHeight: 122 * !!e8,
+        paddingTop: 16 * !!e8,
         config: {
             tension: 120,
             friction: 15,
             clamp: !0
         }
-    }), tt = l.useRef(null), [tn, ti] = l.useState(!1), tl = l.useRef(!1), ts = l.useCallback(() => {
-        tl.current = !0;
+    }), tn = l.useRef(null), [ti, tl] = l.useState(!1), ts = l.useRef(!1), ta = l.useCallback(() => {
+        ts.current = !0;
         let e = setTimeout(() => {
-            tl.current && ti(!0)
-        }, 100);
-        return () => clearTimeout(e)
-    }, []), ta = l.useCallback(() => {
-        tl.current = !1;
-        let e = setTimeout(() => {
-            tl.current || ti(!1)
+            ts.current && tl(!0)
         }, 100);
         return () => clearTimeout(e)
     }, []), tr = l.useCallback(() => {
+        ts.current = !1;
+        let e = setTimeout(() => {
+            ts.current || tl(!1)
+        }, 100);
+        return () => clearTimeout(e)
+    }, []), to = l.useCallback(() => {
         if (null == e_) return;
         let e = P.A.getUploads(b.id, v.drafts.type),
             t = e.find(e => e.filename === e_.name)?.id;
@@ -253,7 +255,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             children: [(0, i.jsxs)("div", {
                 ref: eS,
                 className: a()(d, $.gM),
-                onMouseDown: e1,
+                onMouseDown: e4,
                 children: [(0, i.jsx)("div", {
                     ref: eN,
                     onScroll: eY,
@@ -267,12 +269,12 @@ let X = l.memo(l.forwardRef(function(e, t) {
                             children: [(0, i.jsxs)(c.animated.div, {
                                 className: J.ov,
                                 style: {
-                                    height: e8,
-                                    paddingTop: te
+                                    height: te,
+                                    paddingTop: tt
                                 },
                                 children: [null != e_ ? (0, i.jsx)(ee, {
                                     file: e_,
-                                    onRemoveHeroImage: tr
+                                    onRemoveHeroImage: to
                                 }) : null, null != e_ ? null : (0, i.jsx)(en, {
                                     channel: b,
                                     onImageUploaded: e => (0, T.x)(b.id, {
@@ -280,8 +282,6 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     }),
                                     onFocus: () => e6(!0)
                                 }), (0, i.jsx)("input", {
-                                    onFocus: () => e6(!0),
-                                    onBlur: () => e6(!1),
                                     maxLength: 140,
                                     className: J.hz,
                                     placeholder: q.intl.string(q.t.Z8fYjO),
@@ -364,17 +364,17 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     }), (0, i.jsx)("div", {
                         className: J.j4,
                         children: (0, i.jsx)("div", {
-                            ref: tt,
+                            ref: tn,
                             className: J.Qo,
-                            onMouseEnter: ts,
-                            onMouseLeave: ta,
+                            onMouseEnter: ta,
+                            onMouseLeave: tr,
                             children: (0, i.jsx)(A.YNO, {
-                                targetElementRef: tt,
+                                targetElementRef: tn,
                                 renderPopout: () => (0, i.jsx)(Q, {
                                     channelId: b.id,
                                     canCreateThread: eU
                                 }),
-                                shouldShow: tn,
+                                shouldShow: ti,
                                 autoInvert: !0,
                                 nudgeAlignIntoViewport: !0,
                                 position: "top",
