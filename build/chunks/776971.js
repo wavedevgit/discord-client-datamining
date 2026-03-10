@@ -39,27 +39,28 @@ function S(t) {
         [I, M] = a.useState(null),
         [v, D] = a.useState(null),
         [O, U] = a.useState(!1),
-        [V, $] = a.useState(0),
-        F = a.useRef(null),
+        [P, V] = a.useState(0),
         L = a.useRef(null),
+        $ = a.useRef(null),
+        F = s === C.w_.DEEP_LINK_PROMPT,
         j = s === C.w_.FAMILY_CENTER,
-        P = (0, b.a9)() && !j,
+        W = (0, b.a9)() && !j && !F,
         {
-            verifyAgreementButtonText: W,
-            verifyGateDescription: Y,
-            verifyTitle: B
+            verifyAgreementButtonText: Y,
+            verifyGateDescription: B,
+            verifyTitle: H
         } = (0, b.Gn)(s),
-        H = (0, b.vL)(w),
-        z = b.Bc.has(s);
+        z = (0, b.vL)(w),
+        K = b.Bc.has(s);
     (0, p.I7)(s);
-    let K = null != I ? o()().diff(I, "years") : null;
+    let Z = null != I ? o()().diff(I, "years") : null;
 
-    function Z() {
+    function q() {
         if (s === C.w_.NSFW_SERVER_INVITE_EMBED) return (0, G.IO)(s), Promise.resolve();
         let t = w?.getGuildId();
         return d.A.nsfwReturnToSafety(t), (0, G.IO)(s), Promise.resolve()
     }
-    async function q() {
+    async function Q() {
         r()(null != I, "Cannot submit null birthday.");
         try {
             return D(null), U(!0), await (0, T.n7)(I, s)
@@ -67,53 +68,53 @@ function S(t) {
             null != t.body && null != t.body.date_of_birth ? (0, G.MP)(s, t.body.date_of_birth) : (t?.body?.username != null ? D(k.intl.string(k.t["TGg/2k"])) : D(t?.body.message), U(!1))
         }
     }
-    async function Q() {
-        (r()(null != K, "Cannot submit if we haven't been able to calculate age."), K < 18) ? $(1): await q()
+    async function X() {
+        (r()(null != Z, "Cannot submit if we haven't been able to calculate age."), Z < 18) ? V(1): await Q()
     }
-    async function X(t) {
-        t.preventDefault(), O || null == I || await Q()
+    async function J(t) {
+        t.preventDefault(), O || null == I || await X()
     }
-    async function J() {
-        null == await q() && $(0)
+    async function tt() {
+        null == await Q() && V(0)
     }
     a.useEffect(() => {
-        S?.nsfwAllowed !== !0 || P || (0, G.Nk)(s)
+        S?.nsfwAllowed !== !0 || W || F || (0, G.Nk)(s)
     }), a.useEffect(() => {
         g.default.track(N.HAw.AGE_GATE_ACTION, {
             source: s,
             action: C.AM.AGE_GATE_OPEN
         })
     }, [s]);
-    let tt = a.useCallback(t => {
+    let te = a.useCallback(t => {
             M(t)
         }, [M]),
-        te = a.useCallback(() => {
-            L.current?.focus()
-        }, [L]),
         tn = a.useCallback(() => {
+            $.current?.focus()
+        }, [$]),
+        tl = a.useCallback(() => {
             A.A.showAgeVerificationGetStartedModal({
                 entryPoint: _.q1.NSFW_AGE_GATE
             })
         }, []),
-        tl = {
+        ta = {
             transitionState: i,
-            onClose: Z,
+            onClose: q,
             graphic: {
                 type: "image",
                 src: x.A
             },
             gradientColor: "blue"
         };
-    return P ? (0, l.jsx)(c.ExpressiveModal, {
-        title: B,
-        subtitle: Y,
+    return W ? (0, l.jsx)(c.ExpressiveModal, {
+        title: H,
+        subtitle: B,
         actions: [{
             text: k.intl.string(k.t.f3Pet9),
-            onClick: Z,
+            onClick: q,
             variant: "secondary"
         }, {
-            text: W ?? k.intl.string(k.t.FDSSia),
-            onClick: tn
+            text: Y ?? k.intl.string(k.t.FDSSia),
+            onClick: tl
         }],
         trackingProps: {
             impression: {
@@ -121,15 +122,15 @@ function S(t) {
             },
             impressionType: u.ImpressionTypes.MODAL
         },
-        ...tl
-    }) : S?.nsfwAllowed === !1 && (H || z) && !j ? (0, l.jsx)(c.ExpressiveModal, {
-        title: k.intl.string(z ? k.t["H0SG/g"] : k.t.NEabBa),
-        subtitle: k.intl.format(z ? k.t["6++3cX"] : k.t["2kHZes"], {
+        ...ta
+    }) : S?.nsfwAllowed === !1 && (z || K) && !j && !F ? (0, l.jsx)(c.ExpressiveModal, {
+        title: k.intl.string(K ? k.t["H0SG/g"] : k.t.NEabBa),
+        subtitle: k.intl.format(K ? k.t["6++3cX"] : k.t["2kHZes"], {
             helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
         }),
         actions: [{
             text: k.intl.string(k.t["/g10LC"]),
-            onClick: Z,
+            onClick: q,
             variant: "secondary"
         }],
         trackingProps: {
@@ -138,8 +139,8 @@ function S(t) {
             },
             impressionType: u.ImpressionTypes.MODAL
         },
-        ...tl
-    }) : 0 === V ? (e = (() => {
+        ...ta
+    }) : 0 === P ? (e = (() => {
         switch (s) {
             case C.w_.NSFW_SERVER:
             case C.w_.NSFW_SERVER_INVITE:
@@ -164,48 +165,48 @@ function S(t) {
                 })
         }
     })(), (0, l.jsx)("form", {
-        onSubmit: X,
+        onSubmit: J,
         children: (0, l.jsx)(c.Modal, {
             title: e,
             subtitle: n,
             actions: [{
                 text: k.intl.string(k.t["1MrpWO"]),
-                onClick: Z,
+                onClick: q,
                 variant: "secondary"
             }, {
                 text: k.intl.string(k.t.uBFuok),
-                onClick: Q,
+                onClick: X,
                 loading: O,
                 disabled: null == I
             }],
-            ...tl,
+            ...ta,
             children: (0, l.jsx)(R.A, {
                 label: k.intl.string(k.t.rhBeKe),
                 name: "date_of_birth",
-                onChange: tt,
-                onPopulated: te,
+                onChange: te,
+                onPopulated: tn,
                 error: v,
                 value: I,
-                ref: F,
+                ref: L,
                 autoFocus: !0
             })
         })
     })) : (0, l.jsx)(c.Modal, {
         transitionState: i,
-        onClose: Z,
+        onClose: q,
         title: k.intl.formatToPlainString(k.t.wumolR, {
-            age: K ?? ""
+            age: Z ?? ""
         }),
         subtitle: k.intl.formatToPlainString(k.t.n3QjDE, {
             helpURL: y.A.getArticleURL(N.MVz.AGE_GATE)
         }),
         actions: [{
             text: k.intl.string(k.t.cfYCrb),
-            onClick: () => $(0),
+            onClick: () => V(0),
             variant: "secondary"
         }, {
             text: k.intl.string(k.t["6tahin"]),
-            onClick: J
+            onClick: tt
         }]
     })
 }

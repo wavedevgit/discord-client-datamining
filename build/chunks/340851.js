@@ -135,7 +135,7 @@ let K = (0, m.J)(function(e) {
     }, eV = () => {
         ea?.(l.id)
     }, eB = e => {
-        (!eC || ep) && (e ? eb.current = setTimeout(() => {
+        eC || (e ? eb.current = setTimeout(() => {
             eT(!0)
         }, 150 * !!ec) : clearTimeout(eb.current))
     };
@@ -197,7 +197,7 @@ let K = (0, m.J)(function(e) {
             className: B.kZ,
             "data-dnd-name": m.name,
             onMouseEnter: eh ? void 0 : () => {
-                eC ? (!ep || !ex || eC || eI || eD || eT(!0), eI || er?.(l.id)) : (en || ex || eG || eP) && !eI && er?.(l.id)
+                !eI && (en || ex || eG || eP || eC) && er?.(l.id)
             },
             onMouseLeave: eh ? void 0 : eV,
             children: (0, i.jsx)(v.A, {
