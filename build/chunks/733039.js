@@ -1,4 +1,4 @@
-/** chunk id: 733039, original params: t,i,e (module,exports,require) **/
+/** chunk id: 733039 params = (module,exports,require) **/
 t.exports = {
     fA: "chooseServerTitle__2ac03",
     G: "infoIcon__2ac03",

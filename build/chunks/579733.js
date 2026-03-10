@@ -1,4 +1,4 @@
-/** chunk id: 579733, original params: e,t,n (module,exports,require) **/
+/** chunk id: 579733 params = (module,exports,require) **/
 e.exports = {
     JC: "role_b4b2c3",
     yY: "roleColor_b4b2c3",

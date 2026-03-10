@@ -1,4 +1,4 @@
-/** chunk id: 997021, original params: e,t,n (module,exports,require) **/
+/** chunk id: 997021 params = (module,exports,require) **/
 e.exports = {
     L: "toggle_a63120"
 }

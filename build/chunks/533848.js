@@ -1,4 +1,4 @@
-/** chunk id: 533848, original params: e,t,n (module,exports,require) **/
+/** chunk id: 533848 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     SW: "popout__76f04",

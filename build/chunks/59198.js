@@ -13,7 +13,7 @@ var n = t(627968),
     x = t(200330),
     m = t(185311),
     u = t(985018),
-    N = t(847230);
+    N = t(689588);
 let h = new d.A("TwoWayLinkDiscordConsentWeb");
 
 function p(a) {

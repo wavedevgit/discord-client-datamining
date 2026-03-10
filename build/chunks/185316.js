@@ -1,4 +1,4 @@
-/** chunk id: 185316, original params: e,t,n (module,exports,require) **/
+/** chunk id: 185316 params = (module,exports,require) **/
 e.exports = {
     FO: "guildRowIcon__7db08",
     QH: "guildRowSwitch__7db08",

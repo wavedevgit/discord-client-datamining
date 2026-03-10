@@ -1,4 +1,4 @@
-/** chunk id: 71862, original params: e,t,n (module,exports,require) **/
+/** chunk id: 71862 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     AS: "item_caf372",

@@ -1,4 +1,4 @@
-/** chunk id: 840199, original params: e,t,n (module,exports,require) **/
+/** chunk id: 840199 params = (module,exports,require) **/
 e.exports = {
     xd: "settingsWrapper_c9e42f",
     Xz: "osx_c9e42f",

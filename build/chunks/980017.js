@@ -1,4 +1,4 @@
-/** chunk id: 980017, original params: e,t,n (module,exports,require) **/
+/** chunk id: 980017 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     hs: "text-sm/normal__6ec1a",

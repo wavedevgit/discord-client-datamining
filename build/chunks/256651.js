@@ -1,4 +1,4 @@
-/** chunk id: 256651, original params: e,t,n (module,exports,require) **/
+/** chunk id: 256651 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     sL: "authBox_fd23fc",

@@ -1,4 +1,5 @@
-/** chunk id: 271300, original params: e,n,t (module,exports,require) **/
+/** chunk id: 271300 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     Fg: "premiumTrialBadge__4c1e4",
     AT: "premiumOfferUnackedBadge__4c1e4",

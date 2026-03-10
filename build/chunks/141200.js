@@ -1,4 +1,4 @@
-/** chunk id: 141200, original params: e,t,n (module,exports,require) **/
+/** chunk id: 141200 params = (module,exports,require) **/
 e.exports = {
     kL: "container__44153",
     DD: "title__44153",

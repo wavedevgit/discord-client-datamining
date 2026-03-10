@@ -1,13 +1,14 @@
 /** chunk id: 151119 params = (module,exports,require) **/
-i.d(e, {
-    S: () => n
+"use strict";
+n.d(t, {
+    S: () => r
 });
-var s = i(311907),
-    _ = i(349435),
-    l = i(338510);
+var i = n(311907),
+    s = n(349435),
+    l = n(338510);
 
-function n(t) {
-    let e = (0, l.u)(t),
-        i = (0, s.bG)([_.Ay], () => _.Ay.hasShownInitialTooltipForChannel(t));
-    return null != e && !i
+function r(e) {
+    let t = (0, l.u)(e),
+        n = (0, i.bG)([s.Ay], () => s.Ay.hasShownInitialTooltipForChannel(e));
+    return null != t && !n
 }

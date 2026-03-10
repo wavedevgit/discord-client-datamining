@@ -1,4 +1,4 @@
-/** chunk id: 312396, original params: e,a,t (module,exports,require) **/
+/** chunk id: 312396 params = (module,exports,require) **/
 e.exports = {
     sq: "forwardPreview__68334",
     FG: "contentWrapper__68334",

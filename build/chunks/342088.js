@@ -1,4 +1,4 @@
-/** chunk id: 342088, original params: e,t,n (module,exports,require) **/
+/** chunk id: 342088 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     i: "descriptionText__535f5",

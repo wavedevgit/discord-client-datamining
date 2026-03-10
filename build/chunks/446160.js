@@ -1,4 +1,4 @@
-/** chunk id: 446160, original params: e,t,n (module,exports,require) **/
+/** chunk id: 446160 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     G3: "splashBackground__742a4",

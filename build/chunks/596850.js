@@ -1,4 +1,4 @@
-/** chunk id: 596850, original params: e,t,n (module,exports,require) **/
+/** chunk id: 596850 params = (module,exports,require) **/
 e.exports = {
     hR: "contentCollapsed__7004f",
     o8: "contentCollapsedWrapper__7004f",

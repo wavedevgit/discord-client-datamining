@@ -1,4 +1,4 @@
-/** chunk id: 606566, original params: e,t,n (module,exports,require) **/
+/** chunk id: 606566 params = (module,exports,require) **/
 e.exports = {
     wx: "header_b1585f",
     $J: "linkButton_b1585f",

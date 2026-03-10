@@ -1,4 +1,4 @@
-/** chunk id: 127134, original params: e,t,s (module,exports,require) **/
+/** chunk id: 127134 params = (module,exports,require) **/
 e.exports = {
     qr: "footer__57c71",
     k0: "subscriberButtonContainer__57c71",

@@ -1,4 +1,4 @@
-/** chunk id: 513804, original params: e,b,s (module,exports,require) **/
+/** chunk id: 513804 params = (module,exports,require) **/
 e.exports = {
     aV: "checklistIcon_ef2eb4",
     tp: "table_ef2eb4",

@@ -1,4 +1,4 @@
-/** chunk id: 318880, original params: e,t,n (module,exports,require) **/
+/** chunk id: 318880 params = (module,exports,require) **/
 e.exports = {
     Se: "friendWrapper_bbd192",
     r9: "disabled_bbd192",

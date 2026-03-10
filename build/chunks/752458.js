@@ -1,4 +1,4 @@
-/** chunk id: 752458, original params: e,t,n (module,exports,require) **/
+/** chunk id: 752458 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     uW: "section__1f6ca",

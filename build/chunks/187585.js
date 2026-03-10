@@ -1,4 +1,4 @@
-/** chunk id: 187585, original params: e,t,n (module,exports,require) **/
+/** chunk id: 187585 params = (module,exports,require) **/
 e.exports = {
     u1: "spinner__0920e",
     tu: "homeWrapper__0920e",

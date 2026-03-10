@@ -1,71 +1,14 @@
 /** chunk id: 420208 params = (module,exports,require) **/
-n.d(t, {
-    Q: () => g
-});
-var i = n(843472),
-    l = n(508675),
-    a = n(451909),
-    r = n(361670),
-    s = n(631576),
-    o = n(679382),
-    c = n(842086),
-    d = n(71393),
-    u = n(287809),
-    m = n(690521),
-    _ = n(661191),
-    A = n(652215),
-    f = n(307731),
-    E = n(381941);
-
-function h(e) {
-    let t = d.A.getGuild(e);
-    return null != t && (t.nsfwLevel === A.ftr.DEFAULT || t.nsfwLevel === A.ftr.SAFE)
-}
-async function g(e, t) {
-    let n = t.getGuildId();
-    if (null == n || null == d.A.getGuild(n)) return;
-    let A = u.default.getCurrentUser();
-    if (null == A) return;
-    await (0, s.YB)();
-    let g = Array.from(o.A.getAllGuildStickers().values()).flat().filter(e => h(e.guild_id) && (0, r.G7)(e, A, t)).sort((e, t) => -_.default.compare(e.id, t.id));
-    if (g.length > 5) {
-        let n = [g[Math.floor(Math.pow(Math.random(), 2) * g.length)].id];
-        i.A.sendStickers(t.id, n, "", {
-            messageReference: {
-                guild_id: t.getGuildId() ?? void 0,
-                channel_id: t.id,
-                message_id: e
-            },
-            location: E.Hx.CHANNEL_PROMPT
-        });
-        return
-    }
-    let p = d.A.getGuildIds().filter(h).map(e => l.Ay.getUsableGuildEmoji(e)).flat().filter(e => null == m.Ay.getEmojiUnavailableReason({
-        emoji: e,
-        channel: t,
-        guildId: n,
-        intention: f.b_.CHAT
-    })).sort((e, t) => -_.default.compare(e.id, t.id));
-    if (p.length > 10) {
-        let n = p[Math.floor(Math.pow(Math.random(), 2) * p.length)];
-        i.A.sendMessage(t.id, a.Ay.parse(t, (0, m.N)(n)), !1, {
-            location: E.Hx.CHANNEL_PROMPT,
-            messageReference: {
-                guild_id: t.getGuildId() ?? void 0,
-                channel_id: t.id,
-                message_id: e
-            }
-        });
-        return
-    }
-    let x = Array.from(o.A.getAllPackStickers().values()).flat().filter(e => e.type === c.NL.STANDARD),
-        C = [x[Math.floor(Math.random() * x.length)].id];
-    i.A.sendStickers(t.id, C, "", {
-        messageReference: {
-            guild_id: t.getGuildId() ?? void 0,
-            channel_id: t.id,
-            message_id: e
-        },
-        location: E.Hx.CHANNEL_PROMPT
-    })
+e.exports = {
+    kL: "container_b08af5",
+    E6: "unfocusedMessage_b08af5",
+    fC: "badgeContainer_b08af5",
+    em: "tagText_b08af5",
+    i6: "badgePreview_b08af5",
+    zC: "messageContainer_b08af5",
+    H: "avatarContainer_b08af5",
+    my: "avatar_b08af5",
+    hQ: "contentContainer_b08af5",
+    bw: "decorationsContainer_b08af5",
+    QV: "usernameContainer_b08af5"
 }

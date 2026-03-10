@@ -1,4 +1,4 @@
-/** chunk id: 894958, original params: e,t,n (module,exports,require) **/
+/** chunk id: 894958 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     wx: "header__514d8",

@@ -1,4 +1,4 @@
-/** chunk id: 520657, original params: e,t,n (module,exports,require) **/
+/** chunk id: 520657 params = (module,exports,require) **/
 e.exports = {
     N6: "detailsList__85e60",
     uk: "nestedDetailsList__85e60",

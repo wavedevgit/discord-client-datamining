@@ -1,4 +1,4 @@
-/** chunk id: 555064, original params: e,t,n (module,exports,require) **/
+/** chunk id: 555064 params = (module,exports,require) **/
 e.exports = {
     kL: "container__5dbf8",
     TK: "headerText__5dbf8",

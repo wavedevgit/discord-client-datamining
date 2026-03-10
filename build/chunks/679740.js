@@ -1,4 +1,4 @@
-/** chunk id: 679740, original params: e,t,n (module,exports,require) **/
+/** chunk id: 679740 params = (module,exports,require) **/
 e.exports = {
     iE: "wrapper_c19a55",
     oE: "compact_c19a55",
@@ -22,6 +22,7 @@ e.exports = {
     FJ: "threadMessageAccessoryAvatar_c19a55",
     UE: "replyIcon_c19a55",
     s4: "clanTagChiplet_c19a55",
+    Mu: "usernameText_c19a55",
     Cw: "ticketIcon_c19a55",
     VJ: "userJoinSystemMessageIcon_c19a55",
     Jx: "commandIcon_c19a55",

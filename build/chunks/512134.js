@@ -1,4 +1,4 @@
-/** chunk id: 512134, original params: e,t,s (module,exports,require) **/
+/** chunk id: 512134 params = (module,exports,require) **/
 e.exports = {
     Ei: "colorPicker_cd4367",
     rx: "colorPickerContainer_cd4367",

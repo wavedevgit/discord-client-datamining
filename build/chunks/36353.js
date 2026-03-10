@@ -1,4 +1,4 @@
-/** chunk id: 36353, original params: e,t,n (module,exports,require) **/
+/** chunk id: 36353 params = (module,exports,require) **/
 e.exports = {
     Ew: "spamBanner_a2eac3",
     lt: "bannerTextContainer_a2eac3",

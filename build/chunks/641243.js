@@ -1,4 +1,4 @@
-/** chunk id: 641243, original params: e,t,n (module,exports,require) **/
+/** chunk id: 641243 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Jp: "heading-lg/semibold_d9be46",

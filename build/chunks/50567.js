@@ -1,4 +1,4 @@
-/** chunk id: 50567, original params: e,t,n (module,exports,require) **/
+/** chunk id: 50567 params = (module,exports,require) **/
 e.exports = {
     Uu: "flex__48a9c",
     Gu: "flexChild__48a9c",

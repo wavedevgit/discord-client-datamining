@@ -1,4 +1,4 @@
-/** chunk id: 60747, original params: e,t,n (module,exports,require) **/
+/** chunk id: 60747 params = (module,exports,require) **/
 e.exports = {
     C5: "inset_bf1984",
     A7: "outer_bf1984",

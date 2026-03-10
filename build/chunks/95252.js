@@ -1,4 +1,4 @@
-/** chunk id: 95252, original params: e,t,n (module,exports,require) **/
+/** chunk id: 95252 params = (module,exports,require) **/
 e.exports = {
     $Y: "tierCard_a45ed3",
     J5: "withTier2Rim_a45ed3",

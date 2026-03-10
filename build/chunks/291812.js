@@ -15,8 +15,8 @@ var a = n(627968),
     u = n(861986),
     _ = n(652215),
     m = n(985018),
-    p = n(222590),
-    f = n(830412);
+    p = n(679740),
+    f = n(206314);
 
 function b(e, t) {
     return e.type === _.lAJ.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(_.pr7.SOURCE_MESSAGE_DELETED) ? m.intl.string(m.t.JOtgSw) : t

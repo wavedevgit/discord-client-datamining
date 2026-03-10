@@ -1,37 +1,37 @@
 /** chunk id: 135635 params = (module,exports,require) **/
-i.d(e, {
-    A: () => h
+n.d(t, {
+    A: () => g
 });
-var n = i(64700),
-    s = i(158954),
-    o = i(311907),
-    a = i(827734),
-    d = i(387755),
-    r = i(313961),
-    l = i(325909),
-    _ = i(290863),
-    c = i(994500),
-    u = i(806931),
-    p = i(818348),
-    b = i(985018);
+var l = n(64700),
+    r = n(158954),
+    a = n(311907),
+    i = n(827734),
+    s = n(387755),
+    o = n(313961),
+    E = n(325909),
+    u = n(290863),
+    c = n(994500),
+    _ = n(806931),
+    d = n(818348),
+    A = n(985018);
 
-function h(t) {
+function g(e) {
     let {
-        user: e,
-        channel: i,
-        location: h
-    } = t, C = (0, l.oP)(e, h, i.id), g = (0, l.lQ)(e, h, i), v = e.bot || e.system || e.isProvisional, A = (0, o.bG)([r.A], () => r.A.getParticipant(i.id, e.id)), S = null == A, R = null != A && A.type === u.lp.USER && A.ringing, E = (0, o.bG)([c.A], () => c.A.isFriend(e.id)), w = (0, o.bG)([_.A], () => _.A.getStatus(e.id) === p.cl.DND && i?.guild_id != null), m = !C && (!g || v), O = (0, n.useCallback)(() => {
-        if (C) {
-            if (S) return void d.A.ring(i.id, [e.id], h);
-            R && d.A.stopRinging(i.id, [e.id])
+        user: t,
+        channel: n,
+        location: g
+    } = e, T = (0, E.oP)(t, g, n.id), I = (0, E.lQ)(t, g, n), N = t.bot || t.system || t.isProvisional, h = (0, a.bG)([o.A], () => o.A.getParticipant(n.id, t.id)), m = null == h, S = null != h && h.type === _.lp.USER && h.ringing, G = (0, a.bG)([c.A], () => c.A.isFriend(t.id)), O = (0, a.bG)([u.A], () => u.A.getStatus(t.id) === d.cl.DND && n?.guild_id != null), R = !T && (!I || N), C = (0, l.useCallback)(() => {
+        if (T) {
+            if (m) return void s.A.ring(n.id, [t.id], g);
+            S && s.A.stopRinging(n.id, [t.id])
         }
-    }, [S, R, C, h, i.id, e.id]);
+    }, [m, S, T, g, n.id, t.id]);
     return {
-        iconColor: R ? a.A.colors.ICON_FEEDBACK_CRITICAL : void 0,
-        icon: R ? s.zWQ : s._jp,
-        tooltipText: E ? w ? b.intl.string(b.t.jaNpQH) : S ? b.intl.string(b.t["3Hv9qQ"]) : R ? b.intl.string(b.t.ygslb0) : null : b.intl.string(b.t.TGqF9g),
-        disabled: !C,
-        shouldHideButton: m,
-        onClick: O
+        iconColor: S ? i.A.colors.ICON_FEEDBACK_CRITICAL : void 0,
+        icon: S ? r.zWQ : r._jp,
+        tooltipText: G ? O ? A.intl.string(A.t.jaNpQH) : m ? A.intl.string(A.t["3Hv9qQ"]) : S ? A.intl.string(A.t.ygslb0) : null : A.intl.string(A.t.TGqF9g),
+        disabled: !T,
+        shouldHideButton: R,
+        onClick: C
     }
 }

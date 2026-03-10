@@ -1,4 +1,4 @@
-/** chunk id: 545290, original params: e,t,n (module,exports,require) **/
+/** chunk id: 545290 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Or: "chatIcon__233f8",

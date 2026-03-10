@@ -1,4 +1,4 @@
-/** chunk id: 202160, original params: e,t,n (module,exports,require) **/
+/** chunk id: 202160 params = (module,exports,require) **/
 e.exports = {
     h4: "imageWrapper__5ef8c",
     Sl: "image__5ef8c",

@@ -1,2 +1,2 @@
-/** chunk id: 683705, original params: e (module,exports,require) **/
+/** chunk id: 683705 params = (module,exports,require) **/
 e.exports = JSON.parse('{"+utqaz":["Επιλογή φόντου δώρου: ",[1,"giftStyle"]],"B9XqQk":["Κουτί"],"AJ4iir":["Τούρτα"],"P5keo3":["Σεντούκι"],"w84vET":["Καφές"],"6dCq/u":["Φλιτζάνι"],"+HMF8k":["Nitroween"],"vd1fu/":["Εορταστικό κουτί"],"aubYGR":["Εορταστική τούρτα"],"vjxYqU":["Εορταστικό σεντούκι"],"bHuJLa":["Εορταστικός καφές"],"M6cPwB":["Χιονόμπαλα"],"GzPel1":["Κουτί"]}')

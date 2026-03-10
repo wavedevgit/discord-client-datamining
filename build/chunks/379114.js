@@ -17,7 +17,7 @@ var i = n(627968),
     E = n(652215),
     f = n(746080),
     h = n(985018),
-    g = n(751922);
+    g = n(424288);
 
 function p(e) {
     let {
@@ -102,7 +102,7 @@ function C(e) {
     }), p = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
     return null == g ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
-            icon: n(617184),
+            icon: n(394803),
             timestamp: a.timestamp,
             compact: A,
             children: g

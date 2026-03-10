@@ -1,4 +1,4 @@
-/** chunk id: 581444, original params: e,t,i (module,exports,require) **/
+/** chunk id: 581444 params = (module,exports,require) **/
 e.exports = {
     iE: "wrapper__5c108",
     Td: "cardHeaderImg__5c108",

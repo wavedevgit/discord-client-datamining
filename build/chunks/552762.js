@@ -1,4 +1,4 @@
-/** chunk id: 552762, original params: e,t,n (module,exports,require) **/
+/** chunk id: 552762 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     rV: "getXboxApp__7ba5f",

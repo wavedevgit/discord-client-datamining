@@ -1,4 +1,4 @@
-/** chunk id: 630086, original params: e,t,n (module,exports,require) **/
+/** chunk id: 630086 params = (module,exports,require) **/
 e.exports = {
     tp: "table_adb41f",
     wx: "header_adb41f",
@@ -31,6 +31,5 @@ e.exports = {
     Li: "emptyStateDescription_adb41f",
     Zd: "emptyWumpus_adb41f",
     mv: "emptyStateLarge_adb41f emptyState_adb41f",
-    MG: "emptyStateSmall_adb41f emptyState_adb41f",
     ic: "rowWrapperDim_adb41f"
 }

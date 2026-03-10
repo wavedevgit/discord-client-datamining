@@ -52,7 +52,7 @@ var l = t(627968),
     Q = t(788868),
     X = t(818348),
     $ = t(985018),
-    Z = t(213179);
+    Z = t(314121);
 let ee = Q.gD.NONE_MONTH,
     en = [T.pn.PLAN_SELECT, T.pn.REVIEW, T.pn.CONFIRM],
     et = [T.pn.PLAN_SELECT, T.pn.ADD_PAYMENT_STEPS, T.pn.REVIEW, T.pn.CONFIRM];
@@ -140,7 +140,7 @@ function ei(e) {
     i.useEffect(() => {
         (0, V.c_)(eL)
     }, [eL]);
-    let [e$, eZ] = i.useState(T.pn.PLAN_SELECT), e0 = i.useMemo(() => Date.now(), [e$]), e8 = i.useCallback((e, n) => {
+    let [e$, eZ] = i.useState(T.pn.PLAN_SELECT), e0 = i.useMemo(() => Date.now(), [e$]), e5 = i.useCallback((e, n) => {
         eZ(e), eC(null);
         let t = Date.now();
         W.default.track(J.HAw.PAYMENT_FLOW_STEP, {
@@ -152,18 +152,18 @@ function ei(e) {
             guild_id: ea,
             application_id: e_
         })
-    }, [eC, eX, e$, e0, eK, ea, e_]), e5 = {
+    }, [eC, eX, e$, e0, eK, ea, e_]), e8 = {
         baseAnalyticsData: eX,
         flowStartTime: eK,
         guildId: ea,
-        handleStepChange: e8,
+        handleStepChange: e5,
         onSubscribeComplete: eo,
         paymentSourceId: eL,
         setIsSubmittingCurrentStep: eR,
         setPurchaseError: eC
-    }, e9 = i.useRef(e5);
+    }, e9 = i.useRef(e8);
     i.useEffect(() => {
-        e9.current = e5
+        e9.current = e8
     }), i.useEffect(() => {
         let {
             baseAnalyticsData: e,
@@ -178,9 +178,9 @@ function ei(e) {
         (async () => {
             if (!0 === eY) try {
                 if (null == O.A.redirectedPaymentId) return;
-                await (0, _.tn)(O.A.redirectedPaymentId), l(T.pn.CONFIRM), e3(N.h.COMPLETED), null != t && await el(t, null != ed), i?.()
+                await (0, _.tn)(O.A.redirectedPaymentId), l(T.pn.CONFIRM), e2(N.h.COMPLETED), null != t && await el(t, null != ed), i?.()
             } catch (t) {
-                e3(N.h.FAIL), a(t), W.default.track(J.HAw.PAYMENT_FLOW_FAILED, {
+                e2(N.h.FAIL), a(t), W.default.track(J.HAw.PAYMENT_FLOW_FAILED, {
                     ...e,
                     payment_error_code: t?.code,
                     payment_gateway: J.kM_.STRIPE,
@@ -202,12 +202,12 @@ function ei(e) {
             guild_id: ea
         })
     });
-    let [e1, e7] = i.useState(en), [e4, e3] = i.useState(N.h.WAITING), [e2, e6] = i.useState(!0), ne = () => {
-        r(e4 === N.h.COMPLETED)
+    let [e1, e4] = i.useState(en), [e7, e2] = i.useState(N.h.WAITING), [e3, e6] = i.useState(!0), ne = () => {
+        r(e7 === N.h.COMPLETED)
     }, nn = null != em && em.isPurchasedExternally;
     i.useEffect(() => {
-        ej !== j.oc.PENDING && e$ !== T.pn.CONFIRM && null != eg && (e1 !== en && e7(en), en.includes(e$) || e$ === T.pn.PREMIUM_UPSELL || e8(T.pn.REVIEW)), e$ === T.pn.ADD_PAYMENT_STEPS && e1 !== et && e7(et), nn && e$ !== T.pn.PLAN_SELECT && eZ(T.pn.PLAN_SELECT)
-    }, [e$, e8, nn, ej, em, eg, e1]), (0, j.b)(e$, ej, e8, e3), (0, T.zT)(e$, e4, e3);
+        ej !== j.oc.PENDING && e$ !== T.pn.CONFIRM && null != eg && (e1 !== en && e4(en), en.includes(e$) || e$ === T.pn.PREMIUM_UPSELL || e5(T.pn.REVIEW)), e$ === T.pn.ADD_PAYMENT_STEPS && e1 !== et && e4(et), nn && e$ !== T.pn.PLAN_SELECT && eZ(T.pn.PLAN_SELECT)
+    }, [e$, e5, nn, ej, em, eg, e1]), (0, j.b)(e$, ej, e5, e2), (0, T.zT)(e$, e7, e2);
     let nt = i.useRef(null),
         [nl, ni] = (0, A.A)(!1, 500),
         [nr, ns] = i.useState(null),
@@ -226,10 +226,10 @@ function ei(e) {
         breadcrumpSteps: e1,
         currentBreadcrumpStep: e$,
         onReturn: () => {
-            e8(Object.values(eh).length < 1 ? T.pn.PLAN_SELECT : T.pn.REVIEW, T.pn.PAYMENT_TYPE)
+            e5(Object.values(eh).length < 1 ? T.pn.PLAN_SELECT : T.pn.REVIEW, T.pn.PAYMENT_TYPE)
         },
         onComplete: e => {
-            e8(T.pn.REVIEW, e)
+            e5(T.pn.REVIEW, e)
         },
         onStepChange: e => {
             let {
@@ -276,8 +276,8 @@ function ei(e) {
             analyticsLocation: er,
             analyticsSourceLocation: es,
             onClose: ne,
-            onBack: () => e8(T.pn.PLAN_SELECT),
-            onSkip: () => e8(null != eg || eU ? T.pn.REVIEW : T.pn.ADD_PAYMENT_STEPS),
+            onBack: () => e5(T.pn.PLAN_SELECT),
+            onSkip: () => e5(null != eg || eU ? T.pn.REVIEW : T.pn.ADD_PAYMENT_STEPS),
             onSubscriptionConfirmation: ep,
             priceOptions: e
         })
@@ -331,9 +331,9 @@ function ei(e) {
                     variant: "primary",
                     text: $.intl.string($.t["3PatSz"]),
                     type: "submit",
-                    disabled: e2 || 0 === eG || nn || S,
+                    disabled: e3 || 0 === eG || nn || S,
                     onClick: () => {
-                        eu || null != eI && eI.premiumSubscriptionType === Q.PremiumTypes.TIER_2 ? e8(null != eg || eU ? T.pn.REVIEW : T.pn.ADD_PAYMENT_STEPS) : e8(T.pn.PREMIUM_UPSELL)
+                        eu || null != eI && eI.premiumSubscriptionType === Q.PremiumTypes.TIER_2 ? e5(null != eg || eU ? T.pn.REVIEW : T.pn.ADD_PAYMENT_STEPS) : e5(T.pn.PREMIUM_UPSELL)
                     }
                 });
                 break;
@@ -368,7 +368,7 @@ function ei(e) {
                         }
                     }({
                         setPaymentSourceId: eD,
-                        handleStepChange: e8
+                        handleStepChange: e5
                     })
                 }), t = T.pn.PLAN_SELECT, r = eW ? (0, l.jsx)(p.Button, {
                     variant: "active",
@@ -380,7 +380,7 @@ function ei(e) {
                         let e = (0, h.W)(eh, eL);
                         eC(null);
                         try {
-                            e3(N.h.PURCHASING), eR(!0), s()(null != eL, "Missing paymentSourceId"), s()(null != eA, "Missing invoicePreview");
+                            e2(N.h.PURCHASING), eR(!0), s()(null != eL, "Missing paymentSourceId"), s()(null != eA, "Missing invoicePreview");
                             let n = {
                                     amount: eA.total,
                                     currency: eA.currency
@@ -410,9 +410,9 @@ function ei(e) {
                                 let i = await (0, _.nV)(em, l, n, t, eJ);
                                 if (i.redirectConfirmation) return void nu(null != i.redirectURL)
                             }
-                            null == ed && e8(T.pn.CONFIRM), e3(N.h.COMPLETED), null != ea && await el(ea, null != ed), null != ed && ne(), eo?.()
+                            null == ed && e5(T.pn.CONFIRM), e2(N.h.COMPLETED), null != ea && await el(ea, null != ed), null != ed && ne(), eo?.()
                         } catch (n) {
-                            e3(N.h.FAIL), eC(n), W.default.track(J.HAw.PAYMENT_FLOW_FAILED, {
+                            e2(N.h.FAIL), eC(n), W.default.track(J.HAw.PAYMENT_FLOW_FAILED, {
                                 ...eX,
                                 payment_error_code: n?.code,
                                 payment_gateway: null != e ? e.type === J.hes.CARD ? J.kM_.STRIPE : J.kM_.BRAINTREE : null,
@@ -470,7 +470,7 @@ function ei(e) {
                     children: [null != t ? (0, l.jsx)(p.QWc, {
                         text: $.intl.string($.t["13/7kX"]),
                         onClick: () => {
-                            null != t && e8(t)
+                            null != t && e5(t)
                         },
                         variant: "secondary"
                     }) : null, (0, l.jsxs)(p.BJc, {
@@ -491,7 +491,7 @@ function ei(e) {
     return eS || e$ === T.pn.PREMIUM_UPSELL || (nd = (0, l.jsx)(z.A, {
         onClose: ne,
         currentStep: e$,
-        purchaseState: e4
+        purchaseState: e7
     })), (0, l.jsxs)(p.dWK, {
         transitionState: t,
         onClose: () => (ne(), Promise.resolve()),

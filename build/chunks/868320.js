@@ -1,4 +1,4 @@
-/** chunk id: 868320, original params: e,t,n (module,exports,require) **/
+/** chunk id: 868320 params = (module,exports,require) **/
 e.exports = {
     GI: "spine__9271d",
     E_: "systemMessageSpine__9271d",

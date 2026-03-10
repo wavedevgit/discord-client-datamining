@@ -1,13 +1,12 @@
 /** chunk id: 714126 params = (module,exports,require) **/
-"use strict";
-a.d(t, {
-    W: () => i
+l.d(t, {
+    W: () => s
 });
-var l = a(627968),
-    r = a(64700),
-    n = a(397927),
-    s = a(14503);
-class i extends r.PureComponent {
+var a = l(627968),
+    n = l(64700),
+    r = l(397927),
+    i = l(798233);
+class s extends n.PureComponent {
     state = {
         error: null,
         info: null
@@ -19,11 +18,11 @@ class i extends r.PureComponent {
         })
     }
     render() {
-        return null != this.state.error ? (0, l.jsx)("div", {
-            children: (0, l.jsx)(n.Text, {
+        return null != this.state.error ? (0, a.jsx)("div", {
+            children: (0, a.jsx)(r.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
-                className: s.cW,
+                className: i.cW,
                 children: "Error rendering component. Check console for more information on the error."
             })
         }) : this.props.children

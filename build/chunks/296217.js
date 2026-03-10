@@ -1,4 +1,4 @@
-/** chunk id: 296217, original params: e,t,n (module,exports,require) **/
+/** chunk id: 296217 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     aW: "productListingsHeader_f5cb44",

@@ -1,4 +1,4 @@
-/** chunk id: 520936, original params: e,t,n (module,exports,require) **/
+/** chunk id: 520936 params = (module,exports,require) **/
 e.exports = {
     y7: "emptyStateContainer__5ec2f",
     e3: "peopleList__5ec2f",

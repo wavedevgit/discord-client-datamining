@@ -1,45 +1,45 @@
 /** chunk id: 513963 params = (module,exports,require) **/
-n.d(t, {
-    A: () => d
+t.d(n, {
+    A: () => o
 });
-var i = n(627968),
-    r = n(64700),
-    l = n(732955),
-    a = n(817281),
-    o = n(951829),
-    s = n(985018);
+var i = t(627968),
+    l = t(64700),
+    r = t(732955),
+    a = t(817281),
+    s = t(951829),
+    d = t(985018);
 
-function d(e) {
+function o(e) {
     let {
-        type: t,
-        onConfirm: n,
-        onClose: d,
-        ...u
-    } = e, [c, A] = r.useState(!1), f = r.useCallback(() => {
-        c && a.Ay.updatedUnsyncedSettings({
+        type: n,
+        onConfirm: t,
+        onClose: o,
+        ...c
+    } = e, [u, h] = l.useState(!1), A = l.useCallback(() => {
+        u && a.Ay.updatedUnsyncedSettings({
             disableHideSelfStreamAndVideoConfirmationAlert: !0
-        }), n(), d()
-    }, [n, c, d]), E = t === o.f.STREAM ? s.intl.string(s.t["/lFMWr"]) : s.intl.string(s.t.xzxhZS), h = t === o.f.STREAM ? s.intl.string(s.t.xaOX7d) : s.intl.string(s.t.oU1p9O);
-    return (0, i.jsx)(l.aFV, {
+        }), t(), o()
+    }, [t, u, o]), g = n === s.f.STREAM ? d.intl.string(d.t["/lFMWr"]) : d.intl.string(d.t.xzxhZS), m = n === s.f.STREAM ? d.intl.string(d.t.xaOX7d) : d.intl.string(d.t.oU1p9O);
+    return (0, i.jsx)(r.aFV, {
         size: "md",
-        actionBarInput: (0, i.jsx)(l.Sc0, {
-            checked: c,
-            onChange: e => A(e),
-            label: s.intl.string(s.t["JdIQ/Y"]),
+        actionBarInput: (0, i.jsx)(r.Sc0, {
+            checked: u,
+            onChange: e => h(e),
+            label: d.intl.string(d.t["JdIQ/Y"]),
             labelType: "secondary"
         }),
         actions: [{
             variant: "secondary",
-            text: s.intl.string(s.t["ETE/oC"]),
-            onClick: d
+            text: d.intl.string(d.t["ETE/oC"]),
+            onClick: o
         }, {
             variant: "primary",
-            text: s.intl.string(s.t.BddRzS),
-            onClick: f
+            text: d.intl.string(d.t.BddRzS),
+            onClick: A
         }],
-        title: E,
-        subtitle: h,
-        onClose: d,
-        ...u
+        title: g,
+        subtitle: m,
+        onClose: o,
+        ...c
     })
 }

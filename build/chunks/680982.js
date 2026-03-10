@@ -1,4 +1,4 @@
-/** chunk id: 680982, original params: e,t,n (module,exports,require) **/
+/** chunk id: 680982 params = (module,exports,require) **/
 e.exports = {
     fc: "addFriendInputWrapper__72ba7",
     z3: "error__72ba7",

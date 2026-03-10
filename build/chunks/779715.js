@@ -1,4 +1,4 @@
-/** chunk id: 779715, original params: e,t,n (module,exports,require) **/
+/** chunk id: 779715 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     n2: "guildBadge_d69818",

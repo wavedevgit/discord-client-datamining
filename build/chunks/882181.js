@@ -1,4 +1,4 @@
-/** chunk id: 882181, original params: e,t,n (module,exports,require) **/
+/** chunk id: 882181 params = (module,exports,require) **/
 e.exports = {
     kL: "container_b7f4b4",
     jH: "spacer_b7f4b4",

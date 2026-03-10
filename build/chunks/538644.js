@@ -1,4 +1,4 @@
-/** chunk id: 538644, original params: e,t,r (module,exports,require) **/
+/** chunk id: 538644 params = (module,exports,require) **/
 e.exports = {
     UD: "buttonContainer_eeed5f",
     iU: "message_eeed5f",

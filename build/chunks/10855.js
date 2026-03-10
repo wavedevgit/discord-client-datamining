@@ -1,4 +1,4 @@
-/** chunk id: 10855, original params: e,_,r (module,exports,require) **/
+/** chunk id: 10855 params = (module,exports,require) **/
 e.exports = {
     qV: "skeleton__2d717",
     jf: "child__2d717",

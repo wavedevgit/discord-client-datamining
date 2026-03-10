@@ -1,4 +1,4 @@
-/** chunk id: 797232, original params: e,t,n (module,exports,require) **/
+/** chunk id: 797232 params = (module,exports,require) **/
 e.exports = {
     wO: "embedHorizontal_a8b53f",
     sN: "embedVertical_a8b53f",

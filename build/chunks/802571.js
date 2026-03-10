@@ -1,4 +1,5 @@
-/** chunk id: 802571, original params: e,t,n (module,exports,require) **/
+/** chunk id: 802571 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     vO: "embedFull__623de embed__623de",
     E6: "embed__623de",

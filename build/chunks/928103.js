@@ -1,5 +1,5 @@
-/** chunk id: 928103, original params: _,e,n (module,exports,require) **/
-_.exports = {
+/** chunk id: 928103 params = (module,exports,require) **/
+e.exports = {
     Vg: "grid__28d93",
     dq: "speakerContainer__28d93",
     my: "avatar__28d93",

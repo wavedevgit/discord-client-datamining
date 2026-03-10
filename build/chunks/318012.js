@@ -1,4 +1,4 @@
-/** chunk id: 318012, original params: e,t,n (module,exports,require) **/
+/** chunk id: 318012 params = (module,exports,require) **/
 e.exports = {
     bv: "churnDiscountBadge_b65b20",
     Hf: "churnDiscountAcknowledgedBadge_b65b20",

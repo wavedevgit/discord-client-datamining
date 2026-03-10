@@ -1,4 +1,4 @@
-/** chunk id: 680235, original params: e,t,n (module,exports,require) **/
+/** chunk id: 680235 params = (module,exports,require) **/
 e.exports = {
     fr: "welcomeMessageContainer__6f212",
     my: "avatar__6f212",

@@ -1,4 +1,4 @@
-/** chunk id: 802937, original params: e,t,n (module,exports,require) **/
+/** chunk id: 802937 params = (module,exports,require) **/
 e.exports = {
     f8: "fractionalPremiumAccountCredit__94f72",
     xF: "premiumSubscriptionAccountCredit__94f72",

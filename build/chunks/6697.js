@@ -1,4 +1,4 @@
-/** chunk id: 6697, original params: e,t,n (module,exports,require) **/
+/** chunk id: 6697 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     lY: "animation__2d5dc",

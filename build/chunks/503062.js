@@ -1,55 +1,54 @@
 /** chunk id: 503062 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => y
+    A: () => j
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
-    a = n(397927),
+    l = n(64700),
+    a = n(311907),
+    s = n(397927),
     r = n(442433),
     o = n(297413),
     d = n(439547),
     c = n(714114),
     u = n(729551),
-    h = n(178418),
-    p = n(87664),
-    A = n(290863),
+    m = n(178418),
+    g = n(87664),
+    x = n(290863),
     f = n(939496),
-    g = n(652215),
-    _ = n(996988),
-    m = n(565702);
-let E = a._3J.SIZE_40,
-    x = (0, a.FT9)(E);
+    p = n(652215),
+    h = n(996988),
+    _ = n(794904);
+let A = s._3J.SIZE_40,
+    I = (0, s.FT9)(A);
 
-function y(e) {
+function j(e) {
     let {
         user: t,
-        status: y,
+        status: j,
         guildId: v,
-        channelId: S,
-        onSelect: C
+        channelId: E,
+        onSelect: T
     } = e, {
-        theme: I,
+        theme: b,
         themeType: N
-    } = (0, f.E)(), T = s.useMemo(() => t.isNonUserBot() || (0, h.c)(t, S), [t, S]), {
-        activities: O,
-        isMobileOnline: b
-    } = (0, l.cf)([A.A], () => ({
-        activities: A.A.getActivities(t.id),
-        isMobileOnline: A.A.isMobileOnline(t.id)
-    })), j = (0, p.A)(t.id), {
-        voiceActivityStatusEnabled: D
+    } = (0, f.E)(), S = l.useMemo(() => t.isNonUserBot() || (0, m.c)(t, E), [t, E]), {
+        activities: y,
+        isMobileOnline: C
+    } = (0, a.cf)([x.A], () => ({
+        activities: x.A.getActivities(t.id),
+        isMobileOnline: x.A.isMobileOnline(t.id)
+    })), R = (0, g.A)(t.id), {
+        voiceActivityStatusEnabled: k
     } = (0, d.g)({
         location: "UserProfileMutualFriendRow"
     }), {
-        voiceChannel: R
+        voiceChannel: L
     } = (0, c.A)({
-        userId: D ? t.id : void 0,
+        userId: k ? t.id : void 0,
         guildId: v
     });
-    return (0, i.jsxs)(a.DUT, {
-        focusProps: N === _.d.MODAL_V2 ? {
+    return (0, i.jsxs)(s.DUT, {
+        focusProps: N === h.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -60,38 +59,38 @@ function y(e) {
                 right: 8
             }
         },
-        className: m.nM,
-        onClick: C,
+        className: _.nM,
+        onClick: T,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("98438")]).then(n.bind(n, 668569));
+                } = await Promise.all([n.e("97262"), n.e("3795"), n.e("32418"), n.e("57600")]).then(n.bind(n, 668569));
                 return n => (0, i.jsx)(e, {
                     ...n,
                     user: t
                 })
             })
         },
-        children: [(0, i.jsx)(a.euF, {
-            src: t.getAvatarURL(v, x),
+        children: [(0, i.jsx)(s.euF, {
+            src: t.getAvatarURL(v, I),
             "aria-label": t.username,
-            size: E,
-            status: T ? g.clD.UNKNOWN : y,
-            statusBackdropColor: T ? void 0 : (0, a.C$5)(I),
-            isMobile: b,
-            className: m.my
+            size: A,
+            status: S ? p.clD.UNKNOWN : j,
+            statusBackdropColor: S ? void 0 : (0, s.C$5)(b),
+            isMobile: C,
+            className: _.my
         }), (0, i.jsxs)("div", {
-            className: m.zH,
+            className: _.zH,
             children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: m.Tc,
-                discriminatorClass: m.D2
+                className: _.Tc,
+                discriminatorClass: _.D2
             }), (0, i.jsx)(u.A, {
                 user: t,
-                activities: O,
-                applicationStream: j,
-                voiceChannel: R
+                activities: y,
+                applicationStream: R,
+                voiceChannel: L
             })]
         })]
     })

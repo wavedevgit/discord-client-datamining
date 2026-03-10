@@ -1,4 +1,4 @@
-/** chunk id: 876575, original params: e,t,n (module,exports,require) **/
+/** chunk id: 876575 params = (module,exports,require) **/
 e.exports = {
     dJ: "searchIndexAnimation__8a209",
     LU: "searchIndexBackground__8a209",

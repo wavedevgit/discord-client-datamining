@@ -1,4 +1,4 @@
-/** chunk id: 27786, original params: e,t,l (module,exports,require) **/
+/** chunk id: 27786 params = (module,exports,require) **/
 e.exports = {
     iS: "newMembersNotice_acdcc0",
     Lb: "memberNoticeAction_acdcc0",

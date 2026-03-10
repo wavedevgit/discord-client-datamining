@@ -1,4 +1,4 @@
-/** chunk id: 986785, original params: e,t,n (module,exports,require) **/
+/** chunk id: 986785 params = (module,exports,require) **/
 e.exports = {
     Bm: "popoutContent_dfa983",
     pQ: "stickersList_dfa983",

@@ -1,4 +1,4 @@
-/** chunk id: 532165, original params: e,t,n (module,exports,require) **/
+/** chunk id: 532165 params = (module,exports,require) **/
 e.exports = {
     XV: "topBar__31961",
     cB: "dragging__31961",

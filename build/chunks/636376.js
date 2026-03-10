@@ -1,4 +1,4 @@
-/** chunk id: 636376, original params: e,t,n (module,exports,require) **/
+/** chunk id: 636376 params = (module,exports,require) **/
 e.exports = {
     Zf: "roleTooltipItem__1ef77",
     SL: "permissionsContainer__1ef77",

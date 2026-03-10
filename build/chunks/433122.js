@@ -1,4 +1,4 @@
-/** chunk id: 433122, original params: e,t,n (module,exports,require) **/
+/** chunk id: 433122 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     x6: "button__9db96",

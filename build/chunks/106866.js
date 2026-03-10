@@ -1,4 +1,4 @@
-/** chunk id: 106866, original params: e,t,l (module,exports,require) **/
+/** chunk id: 106866 params = (module,exports,require) **/
 e.exports = {
     u1: "spinner__2aeb5",
     wx: "header__2aeb5",

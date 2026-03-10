@@ -1,2 +1,2 @@
-/** chunk id: 306613, original params: p,s,c (module,exports,require) **/
+/** chunk id: 306613 params = (module,exports,require) **/
 c.r(p.exports = {})

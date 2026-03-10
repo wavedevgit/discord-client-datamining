@@ -1,4 +1,4 @@
-/** chunk id: 228288, original params: e,t,n (module,exports,require) **/
+/** chunk id: 228288 params = (module,exports,require) **/
 e.exports = {
     my: "avatar_b50d96",
     cp: "avatarMask_b50d96",

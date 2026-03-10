@@ -1,4 +1,4 @@
-/** chunk id: 300937, original params: e,t,n (module,exports,require) **/
+/** chunk id: 300937 params = (module,exports,require) **/
 e.exports = {
     yu: "metadata__857bf",
     kP: "libraryLink__857bf",

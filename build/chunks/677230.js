@@ -1,4 +1,4 @@
-/** chunk id: 677230, original params: e,t,n (module,exports,require) **/
+/** chunk id: 677230 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Su: "gameImage_a3ec8a",

@@ -1,4 +1,4 @@
-/** chunk id: 624102, original params: t,e,n (module,exports,require) **/
+/** chunk id: 624102 params = (module,exports,require) **/
 "use strict";
 t.exports = {
     jx: "modalSection__24ff5",

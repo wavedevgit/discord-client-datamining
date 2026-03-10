@@ -1,105 +1,106 @@
 /** chunk id: 24215 params = (module,exports,require) **/
-i.d(t, {
-    L: () => E
+"use strict";
+n.d(t, {
+    L: () => A
 });
-var l = i(627968),
-    n = i(64700),
-    a = i(397927),
-    s = i(539895),
-    r = i(844330),
-    d = i(253932),
-    c = i(578746),
-    o = i(954571),
-    u = i(960736),
-    m = i(652215),
-    x = i(985018),
-    _ = i(210505);
-let h = () => (0, l.jsx)("div", {
-    className: _.m
+var i = n(627968),
+    s = n(64700),
+    r = n(397927),
+    l = n(539895),
+    a = n(844330),
+    o = n(253932),
+    d = n(578746),
+    c = n(954571),
+    u = n(960736),
+    h = n(652215),
+    _ = n(985018),
+    p = n(190359);
+let g = () => (0, i.jsx)("div", {
+    className: p.m
 });
 
-function g(e) {
+function m(e) {
     let {
         label: t,
-        children: i
+        children: n
     } = e;
-    return (0, l.jsxs)(a.BJc, {
+    return (0, i.jsxs)(r.BJc, {
         direction: "vertical",
         gap: 4,
-        children: [(0, l.jsx)(a.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-default",
             children: t
-        }), i]
+        }), n]
     })
 }
 
-function A(e) {
+function f(e) {
     let {
         label: t,
-        checked: i,
-        onChange: n
+        checked: n,
+        onChange: s
     } = e;
-    return (0, l.jsxs)(a.BJc, {
+    return (0, i.jsxs)(r.BJc, {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [(0, l.jsx)(a.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-default",
             children: t
-        }), (0, l.jsx)(c.Ay, {
-            value: i,
-            onChange: n,
+        }), (0, i.jsx)(d.Ay, {
+            value: n,
+            onChange: s,
             title: ""
         })]
     })
 }
-let E = () => {
-    let e = d.tz.useSetting(),
+let A = () => {
+    let e = o.tz.useSetting(),
         {
             nickname: t,
-            dmsAllowed: i,
-            showActivity: c,
-            setNickname: _,
-            setDmsAllowed: E,
-            setShowActivity: p,
-            guildId: j,
+            dmsAllowed: n,
+            showActivity: d,
+            setNickname: p,
+            setDmsAllowed: A,
+            setShowActivity: x,
+            guildId: E,
             inviteCode: I
         } = (0, u.lD)(),
-        v = s.A.getProps().invite?.is_nickname_changeable,
-        T = n.useCallback(() => {
-            o.default.track(m.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
-                guild_id: j,
+        v = l.A.getProps().invite?.is_nickname_changeable,
+        N = s.useCallback(() => {
+            c.default.track(h.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+                guild_id: E,
                 invite_code: I
             })
-        }, [j, I]);
-    return (0, l.jsxs)(r.A, {
-        icon: (0, l.jsx)(a.Zes, {
+        }, [E, I]);
+    return (0, i.jsxs)(a.A, {
+        icon: (0, i.jsx)(r.Zes, {
             size: "refresh_sm"
         }),
-        title: x.intl.string(x.t["A5wHQ/"]),
-        subtitle: x.intl.string(x.t.UKCSEd),
-        onOpen: T,
+        title: _.intl.string(_.t["A5wHQ/"]),
+        subtitle: _.intl.string(_.t.UKCSEd),
+        onOpen: N,
         maxHeight: v ? 220 : 130,
-        children: [v && (0, l.jsxs)(l.Fragment, {
-            children: [(0, l.jsx)(g, {
-                label: x.intl.string(x.t.me1lRk),
-                children: (0, l.jsx)(a.ksK, {
-                    placeholder: x.intl.string(x.t["09Q8yp"]),
-                    maxLength: m.d0r,
+        children: [v && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(m, {
+                label: _.intl.string(_.t.me1lRk),
+                children: (0, i.jsx)(r.ksK, {
+                    placeholder: _.intl.string(_.t["09Q8yp"]),
+                    maxLength: h.d0r,
                     value: t,
-                    onChange: _
+                    onChange: p
                 })
-            }), (0, l.jsx)(h, {})]
-        }), (0, l.jsx)(A, {
-            label: x.intl.string(x.t["/2ed37"]),
-            checked: i,
-            onChange: E
-        }), (0, l.jsx)(h, {}), e && (0, l.jsx)(A, {
-            label: x.intl.string(x.t.bN4m1G),
-            checked: c,
-            onChange: p
+            }), (0, i.jsx)(g, {})]
+        }), (0, i.jsx)(f, {
+            label: _.intl.string(_.t["/2ed37"]),
+            checked: n,
+            onChange: A
+        }), (0, i.jsx)(g, {}), e && (0, i.jsx)(f, {
+            label: _.intl.string(_.t.bN4m1G),
+            checked: d,
+            onChange: x
         })]
     })
 }

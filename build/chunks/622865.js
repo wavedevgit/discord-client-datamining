@@ -1,4 +1,4 @@
-/** chunk id: 622865, original params: e,a,t (module,exports,require) **/
+/** chunk id: 622865 params = (module,exports,require) **/
 t.r(a), t.d(a, {
     default: () => s,
     messagesLoader: () => r

@@ -1,4 +1,4 @@
-/** chunk id: 883088, original params: e,t,n (module,exports,require) **/
+/** chunk id: 883088 params = (module,exports,require) **/
 e.exports = {
     Fr: "controlBar__04a02",
     b8: "questInput__04a02",

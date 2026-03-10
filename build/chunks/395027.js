@@ -1,2 +1,2 @@
-/** chunk id: 395027, original params: e (module,exports,require) **/
+/** chunk id: 395027 params = (module,exports,require) **/
 e.exports = JSON.parse('{"yfwZuy":["Vis merket mitt"],"UnPGii":["Merket er lagt til i profilen din."],"nvaTQq":["Du har samlet Orbs-profilmerket!"]}')

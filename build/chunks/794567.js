@@ -1,4 +1,4 @@
-/** chunk id: 794567, original params: e,t,n (module,exports,require) **/
+/** chunk id: 794567 params = (module,exports,require) **/
 e.exports = {
     kL: "container_c7a70f",
     uV: "imageBackground_c7a70f",

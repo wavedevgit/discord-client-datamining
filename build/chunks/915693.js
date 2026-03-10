@@ -1,4 +1,4 @@
-/** chunk id: 915693, original params: e,t,n (module,exports,require) **/
+/** chunk id: 915693 params = (module,exports,require) **/
 e.exports = {
     Ui: "cardContainer__3f7d1",
     C8: "cardInnerContainer__3f7d1",

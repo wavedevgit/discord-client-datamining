@@ -1,4 +1,4 @@
-/** chunk id: 274808, original params: e,t,n (module,exports,require) **/
+/** chunk id: 274808 params = (module,exports,require) **/
 e.exports = {
     JT: "searchResultGroup_a7e67f",
     aT: "channelNameContainer_a7e67f",

@@ -1,4 +1,4 @@
-/** chunk id: 639939, original params: e,t,n (module,exports,require) **/
+/** chunk id: 639939 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     U: "arrow__6c50b",

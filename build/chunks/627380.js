@@ -1,39 +1,39 @@
 /** chunk id: 627380 params = (module,exports,require) **/
-r.d(t, {
-    t: () => u,
-    x: () => l
+n.d(t, {
+    t: () => s,
+    x: () => a
 });
-var a = r(64700),
-    n = r(989349),
-    i = r.n(n),
-    o = r(112848),
-    _ = r(788868);
+var r = n(64700),
+    i = n(989349),
+    l = n.n(i),
+    o = n(112848),
+    u = n(788868);
 
-function l(e, t) {
-    return Math.max(0, d(e, t).diff(i()(), "days"))
+function a(e, t) {
+    return Math.max(0, _(e, t).diff(l()(), "days"))
 }
 
-function d(e, t) {
-    return i()(e).add(t, "months").add(1, "day")
+function _(e, t) {
+    return l()(e).add(t, "months").add(1, "day")
 }
 
-function u() {
+function s() {
     let e = (0, o.$F)(),
         t = (0, o.Xb)();
-    return (0, a.useMemo)(() => {
-        let r;
+    return (0, r.useMemo)(() => {
+        let n;
         if (null == e || null == t) return null;
-        if (e.status === o.Wo.UPCOMING) r = e.tenureReqNumMonths;
+        if (e.status === o.Wo.UPCOMING) n = e.tenureReqNumMonths;
         else {
-            let t = _.sp.indexOf(e.id),
-                a = _.sp[t + 1];
-            if (null == a || -1 === t) return null;
-            r = _.VD[a].tenureReqNumMonths
+            let t = u.sp.indexOf(e.id),
+                r = u.sp[t + 1];
+            if (null == r || -1 === t) return null;
+            n = u.VD[r].tenureReqNumMonths
         }
-        let a = d(t, r);
+        let r = _(t, n);
         return {
-            days: l(t, r),
-            months: Math.max(0, Math.round(a.diff(i()(), "months", !0)))
+            days: a(t, n),
+            months: Math.max(0, Math.round(r.diff(l()(), "months", !0)))
         }
     }, [e, t])
 }

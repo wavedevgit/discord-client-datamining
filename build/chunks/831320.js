@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(531525),
     _ = n(652215),
     g = n(985018),
-    m = n(870236);
+    m = n(842130);
 
 function A() {
     let e = o.FA.useSetting(),

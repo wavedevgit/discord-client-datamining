@@ -1,4 +1,4 @@
-/** chunk id: 811431, original params: e,t,n (module,exports,require) **/
+/** chunk id: 811431 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     WA: "characterBackground_eb4069",

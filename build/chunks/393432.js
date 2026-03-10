@@ -1,18 +1,18 @@
 /** chunk id: 393432 params = (module,exports,require) **/
 "use strict";
-t.d(n, {
-    PW: () => s,
-    mD: () => u,
+n.d(t, {
+    PW: () => c,
+    mD: () => o,
     md: () => r
 });
-var i = t(665260),
-    l = t(355097);
+var a = n(665260),
+    i = n(355097);
 
-function r(e, n) {
-    return i.UI(i.iE(e, l.n3.UNREADS_ALL_MESSAGES, l.n3.UNREADS_ONLY_MENTIONS), n)
+function r(e, t) {
+    return a.UI(a.iE(e, i.n3.UNREADS_ALL_MESSAGES, i.n3.UNREADS_ONLY_MENTIONS), t)
 }
-let s = e => i.iE(e, l.vv.UNREADS_ALL_MESSAGES, l.vv.UNREADS_ONLY_MENTIONS);
+let c = e => a.iE(e, i.vv.UNREADS_ALL_MESSAGES, i.vv.UNREADS_ONLY_MENTIONS);
 
-function u(e, n) {
-    return i.UI(s(e), n)
+function o(e, t) {
+    return a.UI(c(e), t)
 }

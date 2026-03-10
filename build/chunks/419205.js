@@ -1,4 +1,4 @@
-/** chunk id: 419205, original params: e,t,n (module,exports,require) **/
+/** chunk id: 419205 params = (module,exports,require) **/
 e.exports = {
     wx: "header_de8069",
     kX: "gameNamesHeader_de8069",

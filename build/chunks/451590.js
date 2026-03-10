@@ -1,4 +1,4 @@
-/** chunk id: 451590, original params: e,t,n (module,exports,require) **/
+/** chunk id: 451590 params = (module,exports,require) **/
 e.exports = {
     Z: "emoji_ab6c65"
 }

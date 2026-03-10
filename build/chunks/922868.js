@@ -1,4 +1,4 @@
-/** chunk id: 922868, original params: e,t,s (module,exports,require) **/
+/** chunk id: 922868 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     BX: "immersiveBannerBlock__43ce9",

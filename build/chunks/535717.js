@@ -1,4 +1,4 @@
-/** chunk id: 535717, original params: e,t,n (module,exports,require) **/
+/** chunk id: 535717 params = (module,exports,require) **/
 e.exports = {
     VD: "stackedIconsContainer_aa7162",
     hU: "frontIcon_aa7162",

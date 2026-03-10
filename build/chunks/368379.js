@@ -1,4 +1,4 @@
-/** chunk id: 368379, original params: e,t,n (module,exports,require) **/
+/** chunk id: 368379 params = (module,exports,require) **/
 e.exports = {
     XG: "scroller__3b923",
     az: "hasToolbar__3b923",

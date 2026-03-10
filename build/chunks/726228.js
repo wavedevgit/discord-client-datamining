@@ -1,4 +1,4 @@
-/** chunk id: 726228, original params: e,n,i (module,exports,require) **/
+/** chunk id: 726228 params = (module,exports,require) **/
 e.exports = {
     f5: "sectionContent_da32a8",
     _9: "sectionContentContained_da32a8",

@@ -1,4 +1,4 @@
-/** chunk id: 283237, original params: e,t,n (module,exports,require) **/
+/** chunk id: 283237 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Aw: "listItem__650eb",

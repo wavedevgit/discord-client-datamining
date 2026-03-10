@@ -1,4 +1,4 @@
-/** chunk id: 721960, original params: e,t,n (module,exports,require) **/
+/** chunk id: 721960 params = (module,exports,require) **/
 e.exports = {
     Um: "productCard__79d38",
     Wi: "solidBackground__79d38",

@@ -1,4 +1,4 @@
-/** chunk id: 231182, original params: e,t,n (module,exports,require) **/
+/** chunk id: 231182 params = (module,exports,require) **/
 e.exports = {
     oE: "syncing_a706ba",
     TI: "paymentHistory_a706ba",

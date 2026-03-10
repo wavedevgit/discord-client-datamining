@@ -1,4 +1,4 @@
-/** chunk id: 587496, original params: e,t,s (module,exports,require) **/
+/** chunk id: 587496 params = (module,exports,require) **/
 "use strict";
 s.r(e.exports = {
     nagBar: "nagBar__9d860",

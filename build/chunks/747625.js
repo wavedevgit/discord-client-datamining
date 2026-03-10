@@ -1,4 +1,4 @@
-/** chunk id: 747625, original params: e,t,n (module,exports,require) **/
+/** chunk id: 747625 params = (module,exports,require) **/
 e.exports = {
     bW: "triggerButton__64c86",
     nd: "panel__64c86",

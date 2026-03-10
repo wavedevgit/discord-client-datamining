@@ -1,4 +1,4 @@
-/** chunk id: 441272, original params: e,a,s (module,exports,require) **/
+/** chunk id: 441272 params = (module,exports,require) **/
 e.exports = {
     kL: "container__1d004",
     Su: "gameImage__1d004",

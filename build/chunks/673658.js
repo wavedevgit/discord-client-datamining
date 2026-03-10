@@ -1,4 +1,4 @@
-/** chunk id: 673658, original params: e,t,n (module,exports,require) **/
+/** chunk id: 673658 params = (module,exports,require) **/
 e.exports = {
     nV: "skeletonContainer_d6411f",
     dZ: "serverDetailsContainer_d6411f",

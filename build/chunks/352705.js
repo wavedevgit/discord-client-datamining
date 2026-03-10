@@ -1,4 +1,4 @@
-/** chunk id: 352705, original params: e,t,n (module,exports,require) **/
+/** chunk id: 352705 params = (module,exports,require) **/
 e.exports = {
     E: "addWidgetButton__97442"
 }

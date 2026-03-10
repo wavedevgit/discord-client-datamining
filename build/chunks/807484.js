@@ -1,4 +1,4 @@
-/** chunk id: 807484, original params: e,t,n (module,exports,require) **/
+/** chunk id: 807484 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     j1: "settingCard__1a4ef",

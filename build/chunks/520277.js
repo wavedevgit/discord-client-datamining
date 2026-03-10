@@ -1,4 +1,4 @@
-/** chunk id: 520277, original params: e,t,n (module,exports,require) **/
+/** chunk id: 520277 params = (module,exports,require) **/
 e.exports = {
     fx: "containerDefault__6c253",
     ft: "containerCompact__6c253",

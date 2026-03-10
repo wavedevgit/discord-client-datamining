@@ -1,4 +1,4 @@
-/** chunk id: 167451, original params: e,a,i (module,exports,require) **/
+/** chunk id: 167451 params = (module,exports,require) **/
 e.exports = {
     jT: "modalContainer_fc200b",
     jx: "modalSection_fc200b",

@@ -1,5 +1,6 @@
-/** chunk id: 903957, original params: e,a,t (module,exports,require) **/
-t.r(e.exports = {
+/** chunk id: 903957 params = (module,exports,require) **/
+"use strict";
+l.r(e.exports = {
     video: "video__1689b",
     container: "container__1689b",
     paragraph: "paragraph__1689b",

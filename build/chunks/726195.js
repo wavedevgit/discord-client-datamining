@@ -1,4 +1,4 @@
-/** chunk id: 726195, original params: e,t,r (module,exports,require) **/
+/** chunk id: 726195 params = (module,exports,require) **/
 e.exports = {
     KQ: "messagesPopoutWrap_e8b59c",
     wx: "header_e8b59c",

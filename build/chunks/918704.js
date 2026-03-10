@@ -1,4 +1,4 @@
-/** chunk id: 918704, original params: e,t,n (module,exports,require) **/
+/** chunk id: 918704 params = (module,exports,require) **/
 e.exports = {
     vR: "tabs_f1dca0",
     me: "separator_f1dca0",

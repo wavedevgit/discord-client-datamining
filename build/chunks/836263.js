@@ -1,4 +1,4 @@
-/** chunk id: 836263, original params: t,e,i (module,exports,require) **/
+/** chunk id: 836263 params = (module,exports,require) **/
 t.exports = {
     g4: "loadingContainer_f3bc7c",
     S3: "giftSentToGameNoticeContainerPadding_f3bc7c",

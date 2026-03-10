@@ -1,4 +1,4 @@
-/** chunk id: 181765, original params: e,t,n (module,exports,require) **/
+/** chunk id: 181765 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     i: "message__51673",

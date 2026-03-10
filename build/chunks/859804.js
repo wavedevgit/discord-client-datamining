@@ -1,4 +1,4 @@
-/** chunk id: 859804, original params: e,t,n (module,exports,require) **/
+/** chunk id: 859804 params = (module,exports,require) **/
 e.exports = {
     fy: "bgShade__6d791",
     P: "keybind__6d791",

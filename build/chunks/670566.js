@@ -1,4 +1,4 @@
-/** chunk id: 670566, original params: e,t,n (module,exports,require) **/
+/** chunk id: 670566 params = (module,exports,require) **/
 e.exports = {
     zc: "formError_f0c2ea",
     Nr: "card_f0c2ea",

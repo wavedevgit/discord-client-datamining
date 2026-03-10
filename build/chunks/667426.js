@@ -1,4 +1,4 @@
-/** chunk id: 667426, original params: e,s,t (module,exports,require) **/
+/** chunk id: 667426 params = (module,exports,require) **/
 e.exports = {
     MY: "page__4c945",
     Bg: "bgImg__4c945",

@@ -1,4 +1,4 @@
-/** chunk id: 612605, original params: e,t,n (module,exports,require) **/
+/** chunk id: 612605 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     ns: "cooldownWrapper__7391f",

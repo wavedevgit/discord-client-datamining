@@ -1,4 +1,4 @@
-/** chunk id: 815907, original params: e,t,n (module,exports,require) **/
+/** chunk id: 815907 params = (module,exports,require) **/
 e.exports = {
     l$: "panelInner__9b718",
     dL: "headerWrapper__9b718",

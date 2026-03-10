@@ -1,4 +1,4 @@
-/** chunk id: 736453, original params: e,t,n (module,exports,require) **/
+/** chunk id: 736453 params = (module,exports,require) **/
 e.exports = {
     fC: "badgeContainer__98c7b",
     Ad: "newBadge__98c7b",

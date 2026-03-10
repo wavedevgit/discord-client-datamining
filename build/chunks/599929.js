@@ -1,4 +1,4 @@
-/** chunk id: 599929, original params: e,t,n (module,exports,require) **/
+/** chunk id: 599929 params = (module,exports,require) **/
 e.exports = {
     zr: "root_fdf9c0",
     Tp: "background_fdf9c0",

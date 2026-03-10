@@ -1,4 +1,4 @@
-/** chunk id: 488494, original params: e,t,n (module,exports,require) **/
+/** chunk id: 488494 params = (module,exports,require) **/
 e.exports = {
     EU: "reorderableGroupSection__672fc",
     Me: "draggingGroupSection__672fc",

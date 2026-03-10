@@ -1,4 +1,4 @@
-/** chunk id: 275825, original params: e,t,n (module,exports,require) **/
+/** chunk id: 275825 params = (module,exports,require) **/
 e.exports = {
     Jd: "attachWrapper__0923f",
     g$: "attachButton__0923f",

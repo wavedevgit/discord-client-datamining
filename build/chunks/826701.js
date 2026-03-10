@@ -1,4 +1,4 @@
-/** chunk id: 826701, original params: e,t,n (module,exports,require) **/
+/** chunk id: 826701 params = (module,exports,require) **/
 e.exports = {
     Qs: "content_d97f89",
     Ox: "addAnswerButton_d97f89",

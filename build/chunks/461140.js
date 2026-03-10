@@ -1,4 +1,4 @@
-/** chunk id: 461140, original params: e,t,n (module,exports,require) **/
+/** chunk id: 461140 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     L: "iconBase__933a1",

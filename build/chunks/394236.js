@@ -1,4 +1,5 @@
-/** chunk id: 394236, original params: e,t,n (module,exports,require) **/
+/** chunk id: 394236 params = (module,exports,require) **/
+"use strict";
 n.r(e.exports = {
     wishlistButton: "wishlistButton__979b1",
     disabled: "disabled__979b1",

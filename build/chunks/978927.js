@@ -1,4 +1,4 @@
-/** chunk id: 978927, original params: e,t,n (module,exports,require) **/
+/** chunk id: 978927 params = (module,exports,require) **/
 e.exports = {
     kX: "channelNotice__4c43d",
     VN: "close__4c43d",

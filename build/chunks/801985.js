@@ -1,4 +1,4 @@
-/** chunk id: 801985, original params: e,t,n (module,exports,require) **/
+/** chunk id: 801985 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Re: "horizontalBounce__3e795",

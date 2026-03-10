@@ -1,5 +1,5 @@
-/** chunk id: 340500, original params: _,e,n (module,exports,require) **/
-_.exports = {
+/** chunk id: 340500 params = (module,exports,require) **/
+e.exports = {
     Nr: "card__88264",
     hT: "lurking__88264",
     Ms: "padding__88264",

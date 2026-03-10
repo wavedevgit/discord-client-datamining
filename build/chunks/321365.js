@@ -1,4 +1,4 @@
-/** chunk id: 321365, original params: e,t,n (module,exports,require) **/
+/** chunk id: 321365 params = (module,exports,require) **/
 e.exports = {
     kL: "container__28d4e",
     qP: "cardBase__28d4e",

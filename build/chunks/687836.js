@@ -1,4 +1,4 @@
-/** chunk id: 687836, original params: e,t,n (module,exports,require) **/
+/** chunk id: 687836 params = (module,exports,require) **/
 e.exports = {
     P0: "iconWrapper_ede711",
     OV: "clickableContainer_ede711",

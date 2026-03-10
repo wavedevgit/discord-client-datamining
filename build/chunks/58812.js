@@ -1,4 +1,4 @@
-/** chunk id: 58812, original params: e,t,n (module,exports,require) **/
+/** chunk id: 58812 params = (module,exports,require) **/
 e.exports = {
     pc: "navItem__4ccc5",
     St: "navItemIconBadgeContainer__4ccc5",

@@ -1,4 +1,4 @@
-/** chunk id: 450740, original params: e,t,n (module,exports,require) **/
+/** chunk id: 450740 params = (module,exports,require) **/
 e.exports = {
     mG: "noDrag_e9ca56",
     kL: "container_e9ca56",

@@ -1,4 +1,4 @@
-/** chunk id: 650659, original params: e,t,i (module,exports,require) **/
+/** chunk id: 650659 params = (module,exports,require) **/
 e.exports = {
     A: "item__81f73"
 }

@@ -1,4 +1,4 @@
-/** chunk id: 233593, original params: e,t,n (module,exports,require) **/
+/** chunk id: 233593 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Tp: "analyticsCard__0dfec",

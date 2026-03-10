@@ -1,4 +1,4 @@
-/** chunk id: 502511, original params: e,t,n (module,exports,require) **/
+/** chunk id: 502511 params = (module,exports,require) **/
 e.exports = {
     iE: "wrapper__11054",
     Bx: "submenuIcon__11054",

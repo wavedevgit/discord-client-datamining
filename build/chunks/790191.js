@@ -1,4 +1,4 @@
-/** chunk id: 790191, original params: e,t,r (module,exports,require) **/
+/** chunk id: 790191 params = (module,exports,require) **/
 e.exports = {
     QR: "fillBarGreen_b256a2",
     UA: "fillBarWhite_b256a2",

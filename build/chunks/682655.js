@@ -1,4 +1,4 @@
-/** chunk id: 682655, original params: e,t,n (module,exports,require) **/
+/** chunk id: 682655 params = (module,exports,require) **/
 e.exports = {
     hc: "nitroUpsellContainer_d0caf4",
     ax: "nitroWheel_d0caf4",

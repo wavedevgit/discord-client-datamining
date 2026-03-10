@@ -1,4 +1,4 @@
-/** chunk id: 587360, original params: e,t,n (module,exports,require) **/
+/** chunk id: 587360 params = (module,exports,require) **/
 e.exports = {
     ON: "searchBar_cba592",
     zj: "customizationContainer_cba592",

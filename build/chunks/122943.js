@@ -19,8 +19,8 @@ var i = n(627968),
     p = n(652215),
     E = n(838541),
     I = n(985018),
-    f = n(143857),
-    C = n(830412);
+    f = n(536791),
+    C = n(206314);
 let T = r.memo(function(e) {
     let {
         channel: t

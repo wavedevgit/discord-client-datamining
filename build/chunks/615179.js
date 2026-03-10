@@ -47,7 +47,7 @@ function E(e) {
         guildNameClick: d
     } = A(t, l), u = o?.user?.username, m = r?.name;
     return (0, i.jsx)(s.A, {
-        icon: n(617184),
+        icon: n(394803),
         timestamp: t.timestamp,
         compact: a,
         children: null != u && null != m ? _.intl.format(_.t["21R6Ch"], {

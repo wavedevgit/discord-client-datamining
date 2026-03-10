@@ -1,4 +1,4 @@
-/** chunk id: 205285, original params: e,t,n (module,exports,require) **/
+/** chunk id: 205285 params = (module,exports,require) **/
 e.exports = {
     OA: "channelOptionWrapper_f9ff5f",
     Kk: "icon_f9ff5f"

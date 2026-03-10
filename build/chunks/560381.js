@@ -1,4 +1,4 @@
-/** chunk id: 560381, original params: t,e,n (module,exports,require) **/
+/** chunk id: 560381 params = (module,exports,require) **/
 t.exports = {
     Tp: "purchaseSummaryContainer_fe72c8",
     Vr: "purchaseSummarInfo_fe72c8",

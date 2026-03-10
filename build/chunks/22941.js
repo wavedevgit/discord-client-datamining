@@ -1,4 +1,4 @@
-/** chunk id: 22941, original params: e,t,n (module,exports,require) **/
+/** chunk id: 22941 params = (module,exports,require) **/
 e.exports = {
     J1: "prompt_fe70ca",
     mK: "promptContent_fe70ca",

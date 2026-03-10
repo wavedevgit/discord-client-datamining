@@ -1,4 +1,4 @@
-/** chunk id: 237235, original params: e,t,n (module,exports,require) **/
+/** chunk id: 237235 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     mO: "gameName__8c6c2",

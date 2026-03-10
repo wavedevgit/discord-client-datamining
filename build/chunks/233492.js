@@ -1,4 +1,4 @@
-/** chunk id: 233492, original params: e,t,l (module,exports,require) **/
+/** chunk id: 233492 params = (module,exports,require) **/
 e.exports = {
     WG: "channelRow_d295eb",
     GC: "channelRowDisabled_d295eb",

@@ -1,4 +1,4 @@
-/** chunk id: 156528, original params: e,t,s (module,exports,require) **/
+/** chunk id: 156528 params = (module,exports,require) **/
 e.exports = {
     eF: "userInfo__0a06e",
     my: "avatar__0a06e",

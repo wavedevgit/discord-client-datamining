@@ -1,4 +1,4 @@
-/** chunk id: 955964, original params: e,t,r (module,exports,require) **/
+/** chunk id: 955964 params = (module,exports,require) **/
 e.exports = {
     uX: "verifyConnectedAccount_fb52a4",
     ry: "logos_fb52a4",

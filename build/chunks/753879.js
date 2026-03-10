@@ -1,4 +1,4 @@
-/** chunk id: 753879, original params: e,t,n (module,exports,require) **/
+/** chunk id: 753879 params = (module,exports,require) **/
 e.exports = {
     RW: "deleteEntitlementButton__23012",
     Nr: "card__23012",

@@ -1,4 +1,4 @@
-/** chunk id: 995591, original params: e,t,n (module,exports,require) **/
+/** chunk id: 995591 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     t: "crossfade__04d60",

@@ -1,4 +1,4 @@
-/** chunk id: 322956, original params: e,t,n (module,exports,require) **/
+/** chunk id: 322956 params = (module,exports,require) **/
 e.exports = {
     hQ: "contentContainer__665be",
     tE: "rewardTileContainer__665be",

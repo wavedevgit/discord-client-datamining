@@ -1,4 +1,4 @@
-/** chunk id: 620944, original params: t,e,a (module,exports,require) **/
+/** chunk id: 620944 params = (module,exports,require) **/
 t.exports = {
     a6: "linkedLobbyNotice_ca6911",
     fY: "linkedLobbyNoticeSeparator_ca6911",

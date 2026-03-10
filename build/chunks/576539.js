@@ -1,4 +1,4 @@
-/** chunk id: 576539, original params: e,t,n (module,exports,require) **/
+/** chunk id: 576539 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     a: "headerButton_c485a2",

@@ -1,64 +1,64 @@
 /** chunk id: 93055 params = (module,exports,require) **/
-t.d(n, {
-    Af: () => g,
-    CJ: () => _,
-    Fe: () => m,
-    Rm: () => p,
-    TW: () => C
-}), t(321073);
-var i = t(64700),
-    l = t(478437),
-    r = t(311907);
-t(734057);
-var a = t(808728),
-    s = t(967198),
-    d = t(287809),
-    o = t(474090);
-t(661191);
-var u = t(181079),
-    c = t(379587),
-    A = t(957300),
-    f = t(924703),
-    h = t(652215),
-    v = t(788868);
+n.d(t, {
+    Af: () => C,
+    CJ: () => m,
+    Fe: () => g,
+    Rm: () => h,
+    TW: () => _
+}), n(321073);
+var i = n(64700),
+    a = n(478437),
+    l = n(311907);
+n(734057);
+var r = n(808728),
+    o = n(967198),
+    u = n(287809),
+    d = n(474090);
+n(661191);
+var s = n(181079),
+    f = n(379587),
+    c = n(957300),
+    v = n(924703),
+    A = n(652215),
+    p = n(788868);
 
-function C(e) {
+function _(e) {
     let {
-        enabled: n,
-        hasHigherPrivileges: t
-    } = (0, c.m)({
+        enabled: t,
+        hasHigherPrivileges: n
+    } = (0, f.m)({
         location: e
-    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), l = o.Ay.isPremiumExactly(i, v.PremiumTypes.TIER_2);
+    }), i = (0, l.bG)([u.default], () => u.default.getCurrentUser()), a = d.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
     return {
-        hasAccess: n && l,
-        isExperimentEnabled: n,
-        isPreviewMode: (0, A.E)(e => e.isPreviewMode),
-        hasHigherPrivileges: t
+        hasAccess: t && a,
+        isExperimentEnabled: t,
+        isPreviewMode: (0, c.E)(e => e.isPreviewMode),
+        hasHigherPrivileges: n
     }
 }
 
-function g(e) {
-    return (0, r.bG)([u.A], () => u.A.getFavorite(e))
+function C(e) {
+    return (0, l.bG)([s.A], () => s.A.getFavorite(e))
 }
 
-function p() {
-    return (0, r.bG)([a.Ay], () => a.Ay.getChannels(h.YYv))[l.r.GUILD_CATEGORY].map(e => ({
+function h() {
+    return (0, l.bG)([r.Ay], () => r.Ay.getChannels(A.YYv))[a.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function m() {
-    return (0, r.bG)([s.A], () => s.A.getGuildId()) === h.YYv
+function g() {
+    return (0, l.bG)([o.A], () => o.A.getGuildId()) === A.YYv
 }
 
-function _() {
-    let e = (0, f.T)(),
-        n = i.useCallback(() => {}, [e]),
-        t = i.useCallback(() => {}, [e]);
+function m() {
+    let e = (0, v.T)(),
+        t = i.useCallback(() => {}, [e]),
+        n = i.useCallback(() => {}, [e]);
     return {
         favoriteAdded: e.favoriteAdded,
-        notifyFavoriteAdded: n,
-        clearFavoriteAdded: t
+        notifyFavoriteAdded: t,
+        clearFavoriteAdded: n
     }
 }

@@ -1,4 +1,4 @@
-/** chunk id: 602217, original params: e,t,n (module,exports,require) **/
+/** chunk id: 602217 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     tp: "table_e7d73e",

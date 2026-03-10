@@ -1,4 +1,4 @@
-/** chunk id: 70438, original params: e,t,a (module,exports,require) **/
+/** chunk id: 70438 params = (module,exports,require) **/
 e.exports = {
     XV: "topBar__6088c",
     cy: "author__6088c",

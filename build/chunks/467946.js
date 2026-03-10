@@ -1,4 +1,4 @@
-/** chunk id: 467946, original params: e,t,n (module,exports,require) **/
+/** chunk id: 467946 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Ix: "inviteDetailsContainer_da5e8d",

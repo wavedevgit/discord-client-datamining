@@ -1,4 +1,4 @@
-/** chunk id: 265005, original params: e,t,a (module,exports,require) **/
+/** chunk id: 265005 params = (module,exports,require) **/
 e.exports = {
     hd: "sectionContainer__5a4b6",
     yF: "divider__5a4b6",

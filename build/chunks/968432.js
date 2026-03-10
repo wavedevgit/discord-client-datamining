@@ -1,4 +1,4 @@
-/** chunk id: 968432, original params: e,t,n (module,exports,require) **/
+/** chunk id: 968432 params = (module,exports,require) **/
 e.exports = {
     Pw: "chatWheelMouseInput_adfa30",
     _$: "chatWheel_adfa30",

@@ -1,4 +1,4 @@
-/** chunk id: 505712, original params: e,t,n (module,exports,require) **/
+/** chunk id: 505712 params = (module,exports,require) **/
 e.exports = {
     zr: "root_ea9caa",
     In: "applicationIcon_ea9caa",

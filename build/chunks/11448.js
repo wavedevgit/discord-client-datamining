@@ -1,4 +1,4 @@
-/** chunk id: 11448, original params: e,n,i (module,exports,require) **/
+/** chunk id: 11448 params = (module,exports,require) **/
 e.exports = {
     tp: "table__4126d",
     nM: "row__4126d",

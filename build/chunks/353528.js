@@ -1,4 +1,4 @@
-/** chunk id: 353528, original params: e,t,n (module,exports,require) **/
+/** chunk id: 353528 params = (module,exports,require) **/
 e.exports = {
     jE: "modalContent__46773",
     r2: "iconSection__46773",

@@ -1,4 +1,4 @@
-/** chunk id: 160654, original params: e,t,l (module,exports,require) **/
+/** chunk id: 160654 params = (module,exports,require) **/
 e.exports = {
     tp: "table_b4ec0b",
     cg: "bulkBanLoadingCell_b4ec0b",

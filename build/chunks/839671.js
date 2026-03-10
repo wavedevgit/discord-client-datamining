@@ -14,8 +14,8 @@ var l = n(503698),
     o = n(409626),
     d = n(880405),
     u = n(985018),
-    m = n(728528),
-    x = n(612617);
+    m = n(851822),
+    x = n(307291);
 let h = [r.V.OFFICIAL, r.V.TWITTER, r.V.YOUTUBE],
     f = {
         colorClass: x.wP

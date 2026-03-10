@@ -1,4 +1,4 @@
-/** chunk id: 794998, original params: e,t,n (module,exports,require) **/
+/** chunk id: 794998 params = (module,exports,require) **/
 e.exports = {
     D2: "discriminator__78c91",
     Xh: "username__78c91",

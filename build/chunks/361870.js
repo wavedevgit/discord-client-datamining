@@ -1,4 +1,4 @@
-/** chunk id: 361870, original params: e,t,n (module,exports,require) **/
+/** chunk id: 361870 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Jp: "onboardingContainer_c3ab2b",

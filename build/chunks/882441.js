@@ -1,4 +1,4 @@
-/** chunk id: 882441, original params: e,t,n (module,exports,require) **/
+/** chunk id: 882441 params = (module,exports,require) **/
 e.exports = {
     zN: "headerDivider__7fc1d",
     ux: "headerDescription__7fc1d",

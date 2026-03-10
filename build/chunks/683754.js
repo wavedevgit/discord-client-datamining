@@ -1,4 +1,4 @@
-/** chunk id: 683754, original params: e,t,n (module,exports,require) **/
+/** chunk id: 683754 params = (module,exports,require) **/
 e.exports = {
     Nr: "card_fedacc",
     wx: "header_fedacc",

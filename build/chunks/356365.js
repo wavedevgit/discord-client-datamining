@@ -1,4 +1,4 @@
-/** chunk id: 356365, original params: e,t,s (module,exports,require) **/
+/** chunk id: 356365 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     pf: "inventory__1feb0",

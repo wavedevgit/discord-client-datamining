@@ -1,4 +1,4 @@
-/** chunk id: 592498, original params: t,i,e (module,exports,require) **/
+/** chunk id: 592498 params = (module,exports,require) **/
 t.exports = {
     A: "giftCardModalRoot__49ae9"
 }

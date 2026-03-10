@@ -1,4 +1,4 @@
-/** chunk id: 630487, original params: e,t,n (module,exports,require) **/
+/** chunk id: 630487 params = (module,exports,require) **/
 e.exports = {
     x6: "button_afdfcc",
     r9: "disabled_afdfcc",

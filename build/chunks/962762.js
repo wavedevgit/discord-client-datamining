@@ -1,4 +1,4 @@
-/** chunk id: 962762, original params: e,t,n (module,exports,require) **/
+/** chunk id: 962762 params = (module,exports,require) **/
 e.exports = {
     FH: "barsRoot__70b7b",
     Aj: "animatedIconContainer__70b7b",

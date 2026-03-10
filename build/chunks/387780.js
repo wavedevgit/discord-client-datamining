@@ -1,4 +1,4 @@
-/** chunk id: 387780, original params: e,t,n (module,exports,require) **/
+/** chunk id: 387780 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     U6: "pulse__3b43f",

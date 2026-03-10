@@ -1,4 +1,4 @@
-/** chunk id: 564951, original params: e,t,s (module,exports,require) **/
+/** chunk id: 564951 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     A: "skeletonsContainer__72fa0",

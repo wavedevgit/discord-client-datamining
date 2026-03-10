@@ -1,4 +1,4 @@
-/** chunk id: 59790, original params: e,t,n (module,exports,require) **/
+/** chunk id: 59790 params = (module,exports,require) **/
 e.exports = {
     tp: "table__49035",
     xP: "gameUpdates__49035",

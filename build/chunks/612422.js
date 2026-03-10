@@ -1,4 +1,4 @@
-/** chunk id: 612422, original params: e,t,n (module,exports,require) **/
+/** chunk id: 612422 params = (module,exports,require) **/
 e.exports = {
     Os: "group_bc4a3e",
     DD: "title_bc4a3e",

@@ -1,148 +1,148 @@
 /** chunk id: 422258 params = (module,exports,require) **/
-t.d(n, {
-    JD: () => N,
-    Jz: () => E,
-    S_: () => b,
-    fv: () => x,
+n.d(t, {
+    JD: () => S,
+    Jz: () => b,
+    S_: () => E,
+    fv: () => T,
     i_: () => O,
     od: () => I,
-    tV: () => R,
-    w6: () => T,
+    tV: () => G,
+    w6: () => R,
     zN: () => y
 });
-var i = t(735438),
-    l = t.n(i),
-    r = t(873298),
-    a = t(406935),
-    s = t(157559),
-    d = t(594061),
-    o = t(734057),
-    u = t(576705),
-    c = t(661191),
-    A = t(181079),
-    f = t(349828),
-    h = t(818348),
-    v = t(985018);
+var i = n(735438),
+    a = n.n(i),
+    l = n(873298),
+    r = n(406935),
+    o = n(157559),
+    u = n(594061),
+    d = n(734057),
+    s = n(576705),
+    f = n(661191),
+    c = n(181079),
+    v = n(349828),
+    A = n(818348),
+    p = n(985018);
+
+function _(e) {
+    let t = 0;
+    for (let n in e) {
+        let i = e[n];
+        null != i && null != i.position && (t = Math.max(t, i.position))
+    }
+    return t + 1
+}
 
 function C(e) {
-    let n = 0;
     for (let t in e) {
-        let i = e[t];
-        null != i && null != i.position && (n = Math.max(n, i.position))
+        let n = e[t];
+        if (null == n) {
+            delete e[t];
+            continue
+        }
+        if (n.type === l.Ip.CATEGORY) continue;
+        let i = d.A.getChannel(t);
+        if (null == i || !i.isPrivate() && !s.A.can(A.xB.VIEW_CHANNEL, i)) {
+            delete e[t];
+            continue
+        }
     }
-    return n + 1
+}
+
+function h(e, t) {
+    let n = e[t];
+    if (null == n || n.parentId === v.O8) return;
+    let i = null != n.parentId ? e[n.parentId] : null;
+    (null == i || i.type !== l.Ip.CATEGORY) && (n.parentId = v.O8)
 }
 
 function g(e) {
-    for (let n in e) {
-        let t = e[n];
-        if (null == t) {
-            delete e[n];
-            continue
-        }
-        if (t.type === r.Ip.CATEGORY) continue;
-        let i = o.A.getChannel(n);
-        if (null == i || !i.isPrivate() && !u.A.can(h.xB.VIEW_CHANNEL, i)) {
-            delete e[n];
-            continue
-        }
-    }
+    return C(e), a().size(e) >= v.lj
 }
 
-function p(e, n) {
-    let t = e[n];
-    if (null == t || t.parentId === f.O8) return;
-    let i = null != t.parentId ? e[t.parentId] : null;
-    (null == i || i.type !== r.Ip.CATEGORY) && (t.parentId = f.O8)
-}
-
-function m(e) {
-    return g(e), l().size(e) >= f.lj
-}
-
-function _() {
-    s.A.show({
-        title: v.intl.string(v.t["+XYXtZ"]),
-        body: v.intl.formatToPlainString(v.t.JaIyFi, {
-            count: f.lj
+function m() {
+    o.A.show({
+        title: p.intl.string(p.t["+XYXtZ"]),
+        body: p.intl.formatToPlainString(p.t.JaIyFi, {
+            count: v.lj
         })
     })
 }
 
-function E(e, n) {
-    b([e], n)
+function b(e, t) {
+    E([e], t)
 }
 
-function b(e, n) {
-    let t = e.filter(e => !A.A.isFavorite(e));
-    0 !== t.length && d.wc.updateAsync("favorites", e => {
+function E(e, t) {
+    let n = e.filter(e => !c.A.isFavorite(e));
+    0 !== n.length && u.wc.updateAsync("favorites", e => {
         let i = !1;
-        for (let l of t) {
-            if (m(e.favoriteChannels)) {
-                if (_(), !i) return !1;
+        for (let a of n) {
+            if (g(e.favoriteChannels)) {
+                if (m(), !i) return !1;
                 break
             }
-            e.favoriteChannels[l] = r.wL.create({
+            e.favoriteChannels[a] = l.wL.create({
                 nickname: "",
-                type: r.Ip.REFERENCE_ORIGINAL,
-                position: C(e.favoriteChannels),
-                parentId: n ?? f.O8
-            }), g(e.favoriteChannels), p(e.favoriteChannels, l), i = !0
+                type: l.Ip.REFERENCE_ORIGINAL,
+                position: _(e.favoriteChannels),
+                parentId: t ?? v.O8
+            }), C(e.favoriteChannels), h(e.favoriteChannels, a), i = !0
         }
-    }, d.Sb.FREQUENT_USER_ACTION)
+    }, u.Sb.FREQUENT_USER_ACTION)
 }
 
 function O(e) {
-    let n = A.A.getFavorite(e);
-    null != n && d.wc.updateAsync("favorites", t => {
-        if (delete t.favoriteChannels[e], n.type === r.Ip.CATEGORY)
-            for (let n in t.favoriteChannels) t.favoriteChannels[n].parentId === e && (t.favoriteChannels[n].parentId = f.O8);
-        g(t.favoriteChannels)
-    }, d.Sb.INFREQUENT_USER_ACTION)
+    let t = c.A.getFavorite(e);
+    null != t && u.wc.updateAsync("favorites", n => {
+        if (delete n.favoriteChannels[e], t.type === l.Ip.CATEGORY)
+            for (let t in n.favoriteChannels) n.favoriteChannels[t].parentId === e && (n.favoriteChannels[t].parentId = v.O8);
+        C(n.favoriteChannels)
+    }, u.Sb.INFREQUENT_USER_ACTION)
 }
 
-function T(e, n) {
-    A.A.isFavorite(e) && d.wc.updateAsync("favorites", t => {
-        t.favoriteChannels[e].nickname = n ?? ""
-    }, d.Sb.INFREQUENT_USER_ACTION)
+function R(e, t) {
+    c.A.isFavorite(e) && u.wc.updateAsync("favorites", n => {
+        n.favoriteChannels[e].nickname = t ?? ""
+    }, u.Sb.INFREQUENT_USER_ACTION)
 }
 
 function I(e) {
-    let n = c.default.fromTimestamp(Date.now());
-    d.wc.updateAsync("favorites", t => {
-        if (m(t.favoriteChannels)) return _(), !1;
-        t.favoriteChannels[n] = r.wL.create({
+    let t = f.default.fromTimestamp(Date.now());
+    u.wc.updateAsync("favorites", n => {
+        if (g(n.favoriteChannels)) return m(), !1;
+        n.favoriteChannels[t] = l.wL.create({
             nickname: e,
-            type: r.Ip.CATEGORY,
-            position: C(t.favoriteChannels),
-            parentId: f.O8
+            type: l.Ip.CATEGORY,
+            position: _(n.favoriteChannels),
+            parentId: v.O8
         })
-    }, d.Sb.FREQUENT_USER_ACTION)
+    }, u.Sb.FREQUENT_USER_ACTION)
 }
 
-function x(e) {
+function T(e) {
     O(e)
 }
 
 function y(e) {
-    d.wc.updateAsync("favorites", n => {
-        for (let t of e) {
-            let e = t.id;
-            null != t.position && (n.favoriteChannels[e].position = t.position), void 0 !== t.parent_id && (n.favoriteChannels[e].parentId = t.parent_id ?? f.O8, p(n.favoriteChannels, e))
+    u.wc.updateAsync("favorites", t => {
+        for (let n of e) {
+            let e = n.id;
+            null != n.position && (t.favoriteChannels[e].position = n.position), void 0 !== n.parent_id && (t.favoriteChannels[e].parentId = n.parent_id ?? v.O8, h(t.favoriteChannels, e))
         }
-    }, d.Sb.FREQUENT_USER_ACTION)
+    }, u.Sb.FREQUENT_USER_ACTION)
 }
 
-function N(e, n) {
-    d.wc.updateAsync("favorites", t => {
-        t.favoriteChannels[e].parentId = n ?? f.O8, p(t.favoriteChannels, e)
-    }, d.Sb.FREQUENT_USER_ACTION)
+function S(e, t) {
+    u.wc.updateAsync("favorites", n => {
+        n.favoriteChannels[e].parentId = t ?? v.O8, h(n.favoriteChannels, e)
+    }, u.Sb.FREQUENT_USER_ACTION)
 }
 
-function R(e) {
-    d.wc.updateAsync("favorites", n => {
-        n.guildVisible = a._t.create({
+function G(e) {
+    u.wc.updateAsync("favorites", t => {
+        t.guildVisible = r._t.create({
             value: e
         })
-    }, d.Sb.INFREQUENT_USER_ACTION)
+    }, u.Sb.INFREQUENT_USER_ACTION)
 }

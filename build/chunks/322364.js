@@ -1,4 +1,4 @@
-/** chunk id: 322364, original params: e,t,n (module,exports,require) **/
+/** chunk id: 322364 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Gd: "scrollerBase_c8b5c7",

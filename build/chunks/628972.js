@@ -1,4 +1,4 @@
-/** chunk id: 628972, original params: e,a,t (module,exports,require) **/
+/** chunk id: 628972 params = (module,exports,require) **/
 e.exports = {
     qS: "badge__86331",
     f7: "badgeVerifiedIcon__86331",

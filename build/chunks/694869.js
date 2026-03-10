@@ -1,4 +1,4 @@
-/** chunk id: 694869, original params: e,t,n (module,exports,require) **/
+/** chunk id: 694869 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     pz: "sidebar__9835e",

@@ -1,4 +1,4 @@
-/** chunk id: 243821, original params: e,t,r (module,exports,require) **/
+/** chunk id: 243821 params = (module,exports,require) **/
 e.exports = {
     qF: "nameplate__2c8c0",
     NM: "profileEffectShopPreview__2c8c0",

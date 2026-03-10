@@ -1,4 +1,4 @@
-/** chunk id: 78716, original params: e,_,r (module,exports,require) **/
+/** chunk id: 78716 params = (module,exports,require) **/
 e.exports = {
     jr: "headerBar__80679",
     sU: "shopHomeLink__80679",

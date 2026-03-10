@@ -16,7 +16,7 @@ var i = n(627968),
     A = n(531685),
     m = n(131494),
     p = n(330465),
-    g = n(424529);
+    g = n(605611);
 let _ = s.memo(function(e) {
     let {
         guildNode: t,

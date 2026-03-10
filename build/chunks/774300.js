@@ -1,39 +1,39 @@
 /** chunk id: 774300 params = (module,exports,require) **/
-i.d(e, {
-    A: () => p,
+n.d(t, {
+    A: () => d,
     F: () => c
 });
-var n, s = i(308528),
-    o = i(843472),
-    a = i(626584),
-    d = i(734057),
-    r = i(927813),
-    l = i(513391);
-let _ = +r.A.Millis.SECOND + 10;
-var c = ((n = {})[n.GROUP_DM = 0] = "GROUP_DM", n[n.USER = 1] = "USER", n[n.CHANNEL = 2] = "CHANNEL", n);
-class u extends l.A {
+var l, r = n(308528),
+    a = n(843472),
+    i = n(626584),
+    s = n(734057),
+    o = n(927813),
+    E = n(513391);
+let u = +o.A.Millis.SECOND + 10;
+var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
+class _ extends E.A {
     constructor() {
-        super(new a.A("InviteQueue"), _)
+        super(new i.A("InviteQueue"), u)
     }
-    _sendInvite(t, e, i, n, s) {
-        o.A.sendInvite(t.id, e, i, n).then(() => s(null, !0), () => s(null, !1))
+    _sendInvite(e, t, n, l, r) {
+        a.A.sendInvite(e.id, t, n, l).then(() => r(null, !0), () => r(null, !1))
     }
-    drain(t, e) {
+    drain(e, t) {
         let {
-            location: i,
-            inviteAnalyticsMetadata: n
-        } = t;
-        switch (t.type) {
+            location: n,
+            inviteAnalyticsMetadata: l
+        } = e;
+        switch (e.type) {
             case 0:
             case 2:
-                this._sendInvite(t.channel, t.inviteKey, i, n, e);
+                this._sendInvite(e.channel, e.inviteKey, n, l, t);
                 break;
             case 1:
-                s.A.ensurePrivateChannel(t.user.id).then(s => {
-                    let o = d.A.getChannel(s);
-                    null != o && this._sendInvite(o, t.inviteKey, i, n, e)
-                }, () => e(null, !1))
+                r.A.ensurePrivateChannel(e.user.id).then(r => {
+                    let a = s.A.getChannel(r);
+                    null != a && this._sendInvite(a, e.inviteKey, n, l, t)
+                }, () => t(null, !1))
         }
     }
 }
-let p = new u
+let d = new _

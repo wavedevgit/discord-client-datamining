@@ -1,4 +1,4 @@
-/** chunk id: 109878, original params: e,t,n (module,exports,require) **/
+/** chunk id: 109878 params = (module,exports,require) **/
 e.exports = {
     yV: "sectionDescription__8d742",
     Nr: "card__8d742",

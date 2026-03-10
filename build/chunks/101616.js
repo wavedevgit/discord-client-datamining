@@ -1,4 +1,4 @@
-/** chunk id: 101616, original params: e,t,n (module,exports,require) **/
+/** chunk id: 101616 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     D5: "singleItemContainer__4af00",

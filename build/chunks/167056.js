@@ -1,4 +1,4 @@
-/** chunk id: 167056, original params: e,t,n (module,exports,require) **/
+/** chunk id: 167056 params = (module,exports,require) **/
 e.exports = {
     nd: "panel_b6e84c",
     rh: "panelContainer_b6e84c",

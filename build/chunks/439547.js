@@ -1,7 +1,6 @@
 /** chunk id: 439547 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    g: () => s
+    g: () => l
 });
 let i = (0, n(600975).C)({
         kind: "user",
@@ -18,7 +17,7 @@ let i = (0, n(600975).C)({
             }
         }]
     }),
-    s = e => {
+    l = e => {
         let {
             location: t,
             autoTrackExposure: n = !0

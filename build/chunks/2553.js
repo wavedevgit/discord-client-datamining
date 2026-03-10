@@ -1,16 +1,16 @@
 /** chunk id: 2553 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+t.d(e, {
+    A: () => i
 });
-var r = n(23658),
-    i = n(453771),
-    a = n(985018);
+var n = t(23658),
+    a = t(453771),
+    r = t(985018);
 
-function _(e) {
-    (0, r.openUploadError)({
-        title: a.intl.string(a.t["/tGlcj"]),
-        help: a.intl.formatToPlainString(a.t.fxEKdS, {
-            maxSize: (0, i.Hb)(e)
+function i(A) {
+    (0, n.openUploadError)({
+        title: r.intl.string(r.t["/tGlcj"]),
+        help: r.intl.formatToPlainString(r.t.fxEKdS, {
+            maxSize: (0, a.Hb)(A)
         })
     })
 }

@@ -1,4 +1,4 @@
-/** chunk id: 828771, original params: e,t,n (module,exports,require) **/
+/** chunk id: 828771 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     cB: "dragging_f7c056",

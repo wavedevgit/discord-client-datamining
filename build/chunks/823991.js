@@ -1,53 +1,53 @@
 /** chunk id: 823991 params = (module,exports,require) **/
 t.d(n, {
-    A: () => _
+    A: () => c
 });
 var a = t(627968);
 t(64700);
 var i = t(503698),
     r = t.n(i),
-    c = t(397927),
+    o = t(397927),
     l = t(985018),
-    o = t(171097);
+    s = t(928103);
 
-function _(e) {
+function c(e) {
     let {
         guild: n,
         speakers: t,
         speakerCount: i,
-        className: _
-    } = e, s = t.slice(0, 5), d = s.map(e => (0, a.jsxs)("div", {
-        className: o.dq,
-        children: [(0, a.jsx)(c.euF, {
+        className: c
+    } = e, _ = t.slice(0, 5), d = _.map(e => (0, a.jsxs)("div", {
+        className: s.dq,
+        children: [(0, a.jsx)(o.euF, {
             src: e?.user?.getAvatarURL(n.id, 20),
-            size: c._3J.SIZE_20,
-            className: o.my,
+            size: o._3J.SIZE_20,
+            className: s.my,
             "aria-label": `${e?.userNick}-avatar`
         }), (0, a.jsx)("div", {
-            className: o.CU,
-            children: (0, a.jsx)(c.Text, {
+            className: s.CU,
+            children: (0, a.jsx)(o.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: o.br,
+                className: s.br,
                 children: e?.userNick
             })
         })]
-    }, e?.user?.id)), u = i - s.length;
+    }, e?.user?.id)), u = i - _.length;
     return (0, a.jsxs)("div", {
-        className: r()(o.Vg, _),
+        className: r()(s.Vg, c),
         children: [d, u > 0 && (0, a.jsxs)("div", {
-            className: o.dq,
+            className: s.dq,
             children: [(0, a.jsx)("div", {
-                className: o.Ko,
-                children: (0, a.jsx)(c.cNw, {
+                className: s.Ko,
+                children: (0, a.jsx)(o.cNw, {
                     size: "custom",
                     color: "currentColor",
                     height: 12
                 })
-            }), (0, a.jsx)(c.Text, {
+            }), (0, a.jsx)(o.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                className: o.br,
+                className: s.br,
                 children: l.intl.format(l.t["185ggO"], {
                     count: u
                 })

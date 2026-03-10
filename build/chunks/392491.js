@@ -1,4 +1,4 @@
-/** chunk id: 392491, original params: e,t,a (module,exports,require) **/
+/** chunk id: 392491 params = (module,exports,require) **/
 e.exports = {
     SD: "gifPickerContainer__6c39d",
     It: "upsellHeaderContainer__6c39d",

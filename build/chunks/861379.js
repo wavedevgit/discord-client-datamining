@@ -1,4 +1,4 @@
-/** chunk id: 861379, original params: e,t,n (module,exports,require) **/
+/** chunk id: 861379 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     kZ: "draggable__55bab",

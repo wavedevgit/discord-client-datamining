@@ -1,4 +1,4 @@
-/** chunk id: 294590, original params: e,t,n (module,exports,require) **/
+/** chunk id: 294590 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     zr: "secondaryButton__652ee",

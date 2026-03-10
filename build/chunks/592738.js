@@ -1,4 +1,4 @@
-/** chunk id: 592738, original params: e,t,r (module,exports,require) **/
+/** chunk id: 592738 params = (module,exports,require) **/
 e.exports = {
     u: "spinner__8a394",
     w: "markdown__8a394"

@@ -1,4 +1,4 @@
-/** chunk id: 651761, original params: e,t,n (module,exports,require) **/
+/** chunk id: 651761 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     pm: "gradientBackground__41626",

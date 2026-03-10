@@ -1,4 +1,4 @@
-/** chunk id: 695244, original params: e,t,n (module,exports,require) **/
+/** chunk id: 695244 params = (module,exports,require) **/
 e.exports = {
     HA: "channelName__01dab",
     p: "channelIcon__01dab",

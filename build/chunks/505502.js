@@ -1,4 +1,4 @@
-/** chunk id: 505502, original params: e,t,n (module,exports,require) **/
+/** chunk id: 505502 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     GA: "profileEntryCard__655fa",

@@ -1,4 +1,4 @@
-/** chunk id: 444736, original params: e,t,n (module,exports,require) **/
+/** chunk id: 444736 params = (module,exports,require) **/
 e.exports = {
     q7: "clickableSticker_abd7a8",
     be: "stickerContainer_abd7a8",

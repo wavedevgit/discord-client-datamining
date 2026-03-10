@@ -1,4 +1,4 @@
-/** chunk id: 789863, original params: e,t,n (module,exports,require) **/
+/** chunk id: 789863 params = (module,exports,require) **/
 e.exports = {
     Wi: "descriptionWrapper__43963",
     Sv: "subText__43963",

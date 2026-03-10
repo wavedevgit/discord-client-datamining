@@ -1,4 +1,4 @@
-/** chunk id: 777563, original params: e,t,n (module,exports,require) **/
+/** chunk id: 777563 params = (module,exports,require) **/
 e.exports = {
     a8: "channelIdSection__25eff",
     J5: "guildName__25eff",

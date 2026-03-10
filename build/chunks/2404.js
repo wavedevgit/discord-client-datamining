@@ -1,4 +1,4 @@
-/** chunk id: 2404, original params: e,_,t (module,exports,require) **/
+/** chunk id: 2404 params = (module,exports,require) **/
 e.exports = {
     bV: "sectionHeader__9fe74",
     A: "fromGuildCard__9fe74",

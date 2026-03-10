@@ -1,4 +1,4 @@
-/** chunk id: 82457, original params: t,e,n (module,exports,require) **/
+/** chunk id: 82457 params = (module,exports,require) **/
 t.exports = {
     mp: "feedback__4c857",
     NC: "buttonsContainer__4c857",

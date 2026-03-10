@@ -1,4 +1,4 @@
-/** chunk id: 898876, original params: e,t,n (module,exports,require) **/
+/** chunk id: 898876 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     wL: "searchHeader__83bd4",

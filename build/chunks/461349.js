@@ -1,4 +1,4 @@
-/** chunk id: 461349, original params: e,t,n (module,exports,require) **/
+/** chunk id: 461349 params = (module,exports,require) **/
 e.exports = {
     Wp: "gameCover__1a3d6",
     PY: "coverContainer__1a3d6 gameCover__1a3d6",

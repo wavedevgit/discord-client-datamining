@@ -1,4 +1,4 @@
-/** chunk id: 571816, original params: e,t,n (module,exports,require) **/
+/** chunk id: 571816 params = (module,exports,require) **/
 e.exports = {
     kL: "container_e0cd4a",
     _e: "bannerImage_e0cd4a",

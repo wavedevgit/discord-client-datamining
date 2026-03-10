@@ -1,4 +1,4 @@
-/** chunk id: 56668, original params: e,t,n (module,exports,require) **/
+/** chunk id: 56668 params = (module,exports,require) **/
 e.exports = {
     hU: "ping__06d62",
     kV: "largePing__06d62",

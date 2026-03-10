@@ -61,7 +61,7 @@ var l = n(627968),
     en = n(837921),
     el = n(652215),
     es = n(985018),
-    ea = n(477549);
+    ea = n(45119);
 let ei = en.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
     er = {
         offset: {
@@ -282,7 +282,7 @@ function eA(e) {
         }) : (0, v.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("22128")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("84488")]).then(n.bind(n, 385913));
             return n => (0, l.jsx)(e, {
                 ...n,
                 user: r,
@@ -332,7 +332,7 @@ function eA(e) {
                 [ea.Y_]: eq
             })
         })]
-    }) : e6, e3 = s.useRef(null), e4 = (0, O.W)({
+    }) : e6, e4 = s.useRef(null), e3 = (0, O.W)({
         location: "PrivateChannel"
     }) && r?.displayNameStyles != null, e8 = [(0, R.Ay)({
         channel: t,
@@ -350,7 +350,7 @@ function eA(e) {
         location: "PrivateChannel"
     }), tl = (0, f.A)(() => {
         let e = ew.current?.getBoundingClientRect() ?? null,
-            t = e3.current?.getBoundingClientRect() ?? null;
+            t = e4.current?.getBoundingClientRect() ?? null;
         if (null == t || null == e || e.width + 44 - t.width <= 0) return void eL({
             maskImage: "none"
         });
@@ -399,7 +399,7 @@ function eA(e) {
                         nameplate: eW ? Z : void 0,
                         selected: a,
                         hovered: em,
-                        content: e3,
+                        content: e4,
                         placement: z.u.CHANNEL
                     }), (0, l.jsx)("div", {
                         className: ea.lU,
@@ -413,7 +413,7 @@ function eA(e) {
                         "aria-label": e8,
                         ...s,
                         children: (0, l.jsx)(M.A, {
-                            ref: e3,
+                            ref: e4,
                             avatar: (() => {
                                 let e = g._3J.SIZE_32;
                                 if (t.isMultiUserDM())
@@ -473,7 +473,7 @@ function eA(e) {
                             }) : null,
                             name: (0, l.jsx)(E.A, {
                                 className: i()(ea.uN, {
-                                    [ea.e8]: e4
+                                    [ea.e8]: e3
                                 }),
                                 children: e7
                             }),
@@ -482,7 +482,7 @@ function eA(e) {
                                 type: y.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e4
+                            withDisplayNameStyles: e3
                         })
                     }), (0, l.jsxs)("div", {
                         className: i()(ea._q, {

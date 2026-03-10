@@ -1,4 +1,4 @@
-/** chunk id: 27112, original params: e,t,s (module,exports,require) **/
+/** chunk id: 27112 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     YB: "centeredSection_dedbae",

@@ -1,5 +1,5 @@
-/** chunk id: 150837, original params: _,e,n (module,exports,require) **/
-_.exports = {
+/** chunk id: 150837 params = (module,exports,require) **/
+e.exports = {
     w5: "recurrences__4fb8c",
     R_: "heading__4fb8c",
     XG: "scroller__4fb8c",

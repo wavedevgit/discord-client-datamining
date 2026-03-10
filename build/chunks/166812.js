@@ -1,4 +1,4 @@
-/** chunk id: 166812, original params: e,t,n (module,exports,require) **/
+/** chunk id: 166812 params = (module,exports,require) **/
 e.exports = {
     nd: "panel__0939d",
     KE: "toolbar__0939d",

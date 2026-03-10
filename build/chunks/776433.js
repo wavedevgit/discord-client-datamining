@@ -1,4 +1,4 @@
-/** chunk id: 776433, original params: e,t,n (module,exports,require) **/
+/** chunk id: 776433 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     qR: "descriptionBox__981f7",

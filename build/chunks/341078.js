@@ -1,4 +1,4 @@
-/** chunk id: 341078, original params: e,t,n (module,exports,require) **/
+/** chunk id: 341078 params = (module,exports,require) **/
 e.exports = {
     jE: "modalContent_edf440",
     pd: "imageSelectionSection_edf440",

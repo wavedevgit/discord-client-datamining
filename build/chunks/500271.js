@@ -1,4 +1,4 @@
-/** chunk id: 500271, original params: e,t,r (module,exports,require) **/
+/** chunk id: 500271 params = (module,exports,require) **/
 e.exports = {
     Tr: "progressWrapper__4264a",
     t_: "confetti__4264a",

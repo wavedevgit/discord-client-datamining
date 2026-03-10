@@ -1,4 +1,4 @@
-/** chunk id: 828043, original params: e,t,n (module,exports,require) **/
+/** chunk id: 828043 params = (module,exports,require) **/
 e.exports = {
     Ku: "memberItem__5017b",
     my: "avatar__5017b",

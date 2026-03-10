@@ -1,2 +1,2 @@
-/** chunk id: 970087, original params: e (module,exports,require) **/
+/** chunk id: 970087 params = (module,exports,require) **/
 e.exports = JSON.parse('{"yfwZuy":["Se mit emblem"],"UnPGii":["Emblemet er blevet f\xf8jet til din profil."],"nvaTQq":["Du har indsamlet Orb-profil-emblemet!"]}')

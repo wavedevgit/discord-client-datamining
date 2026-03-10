@@ -1,4 +1,4 @@
-/** chunk id: 296388, original params: e,t,n (module,exports,require) **/
+/** chunk id: 296388 params = (module,exports,require) **/
 e.exports = {
     iQ: "hoverWrapper_b5493b",
     Rz: "flipCardContainer_b5493b",

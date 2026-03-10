@@ -1,4 +1,4 @@
-/** chunk id: 869527, original params: t,e,a (module,exports,require) **/
+/** chunk id: 869527 params = (module,exports,require) **/
 t.exports = {
     Qs: "content_e638e4",
     yu: "metadata_e638e4",

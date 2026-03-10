@@ -1,4 +1,4 @@
-/** chunk id: 916874, original params: e,t,n (module,exports,require) **/
+/** chunk id: 916874 params = (module,exports,require) **/
 e.exports = {
     HZ: "safetyBanner__51e4d",
     Uo: "buttons__51e4d",

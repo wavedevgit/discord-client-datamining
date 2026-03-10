@@ -1,4 +1,4 @@
-/** chunk id: 610145, original params: e,t,n (module,exports,require) **/
+/** chunk id: 610145 params = (module,exports,require) **/
 e.exports = {
     bF: "thumbnailStackGallery_c085c7",
     tK: "gallery-height-1_c085c7",

@@ -1,4 +1,4 @@
-/** chunk id: 653183, original params: e,t,n (module,exports,require) **/
+/** chunk id: 653183 params = (module,exports,require) **/
 n.d(t, {
     A: () => N
 });
@@ -29,7 +29,7 @@ var i = n(627968),
 function N(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([h.A], () => h.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), v = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = p.Ay.isPremium(v, I.PremiumTypes.TIER_2), O = (0, l.bG)([g.A], () => g.A.affinities), R = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), y = O.length > 0 || R.length > 0, P = N.length > 0, L = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), D = L.length > 0, G = N.length > L.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([h.A], () => h.A.boostSlots), N = s.useMemo(() => Object.values(n), [n]), v = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = p.Ay.isPremium(v, I.PremiumTypes.TIER_2), O = (0, l.bG)([g.A], () => g.A.affinities), R = (0, l.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), y = O.length > 0 || R.length > 0, P = N.length > 0, D = s.useMemo(() => N.filter(e => null != e.premiumGuildSubscription), [N]), L = D.length > 0, G = N.length > D.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
         fractionalState: U
     } = (0, a.A)({
         forceFetch: !0
@@ -40,11 +40,11 @@ function N(e) {
             className: b.ek
         }), (0, i.jsx)(E.A, {
             hasGuildBoostSlots: P,
-            hasAppliedGuildBoosts: D,
+            hasAppliedGuildBoosts: L,
             hasBoostPerk: H,
             canAddBoosts: w
         }), B && (0, i.jsx)(C.A, {
-            hasAppliedGuildBoosts: D,
+            hasAppliedGuildBoosts: L,
             hasBoostPerk: H,
             hasGuildAffinitiesOrInGuild: y,
             subscriptionIsPausedOrPausePending: V
@@ -58,7 +58,7 @@ function N(e) {
             guildBoostSlots: N,
             fractionalPremiumState: U
         }), (0, i.jsx)(S.A, {
-            canAddBoosts: D && w,
+            canAddBoosts: L && w,
             canApplyBoosts: G
         }), (0, i.jsx)(c.A, {
             className: b.e4,

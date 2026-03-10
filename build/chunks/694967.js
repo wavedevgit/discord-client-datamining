@@ -1,12 +1,13 @@
 /** chunk id: 694967 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
+    A: () => a
 });
 var i = n(311907),
-    l = n(962173),
-    r = n(403362),
-    a = n(652215);
+    s = n(962173),
+    l = n(403362),
+    r = n(652215);
 
-function u() {
-    return (0, i.yK)([l.A], () => [l.A.getAccount(null, a.fg2.XBOX), l.A.getAccount(null, a.fg2.PLAYSTATION), l.A.getAccount(null, a.fg2.PLAYSTATION_STAGING)].filter(r.Vq))
+function a() {
+    return (0, i.yK)([s.A], () => [s.A.getAccount(null, r.fg2.XBOX), s.A.getAccount(null, r.fg2.PLAYSTATION), s.A.getAccount(null, r.fg2.PLAYSTATION_STAGING)].filter(l.Vq))
 }

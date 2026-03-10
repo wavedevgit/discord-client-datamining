@@ -1,4 +1,4 @@
-/** chunk id: 345314, original params: e,t,n (module,exports,require) **/
+/** chunk id: 345314 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     E: "keybindHintKeys__384ad",

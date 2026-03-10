@@ -1,4 +1,4 @@
-/** chunk id: 882773, original params: e,t,n (module,exports,require) **/
+/** chunk id: 882773 params = (module,exports,require) **/
 e.exports = {
     N: "themeSection_f7cedc",
     t7: "themeSelector_f7cedc",

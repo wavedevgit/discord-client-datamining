@@ -1,4 +1,4 @@
-/** chunk id: 573073, original params: e,t,n (module,exports,require) **/
+/** chunk id: 573073 params = (module,exports,require) **/
 e.exports = {
     yt: "streamPreviewWrapper__0489e",
     Rh: "streamPreview__0489e",

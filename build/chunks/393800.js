@@ -1,4 +1,4 @@
-/** chunk id: 393800, original params: e,t,n (module,exports,require) **/
+/** chunk id: 393800 params = (module,exports,require) **/
 e.exports = {
     p: "channelIcon_e98186",
     hz: "lockIcon_e98186",

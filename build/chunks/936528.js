@@ -1,4 +1,4 @@
-/** chunk id: 936528, original params: e,t,n (module,exports,require) **/
+/** chunk id: 936528 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     aH: "speaker__708d1",

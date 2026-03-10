@@ -1,4 +1,4 @@
-/** chunk id: 918609, original params: e,t,n (module,exports,require) **/
+/** chunk id: 918609 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     oe: "infobox__63c3c",

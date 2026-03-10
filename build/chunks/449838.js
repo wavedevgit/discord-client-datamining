@@ -1,4 +1,4 @@
-/** chunk id: 449838, original params: e,_,t (module,exports,require) **/
+/** chunk id: 449838 params = (module,exports,require) **/
 e.exports = {
     MP: "confirmImage__0f8ce",
     LA: "transferConfirmImage__0f8ce",

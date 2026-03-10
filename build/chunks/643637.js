@@ -1,4 +1,4 @@
-/** chunk id: 643637, original params: e,n,t (module,exports,require) **/
+/** chunk id: 643637 params = (module,exports,require) **/
 e.exports = {
     mG: "inline__99afd",
     qr: "footer__99afd",

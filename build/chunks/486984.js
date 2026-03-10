@@ -1,4 +1,4 @@
-/** chunk id: 486984, original params: e,t,n (module,exports,require) **/
+/** chunk id: 486984 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     xF: "selectTeamContainer__7b175",

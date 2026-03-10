@@ -1,4 +1,4 @@
-/** chunk id: 485516, original params: e,t,n (module,exports,require) **/
+/** chunk id: 485516 params = (module,exports,require) **/
 e.exports = {
     cl: "guildSelectOptionIcon__41a02",
     Xk: "speakerIcon__41a02",

@@ -1,4 +1,4 @@
-/** chunk id: 83363, original params: e,t,n (module,exports,require) **/
+/** chunk id: 83363 params = (module,exports,require) **/
 e.exports = {
     UV: "fakeInput__66efc",
     lF: "audioTrimmer__66efc"

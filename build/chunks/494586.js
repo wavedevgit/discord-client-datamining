@@ -1,4 +1,4 @@
-/** chunk id: 494586, original params: e,_,t (module,exports,require) **/
+/** chunk id: 494586 params = (module,exports,require) **/
 e.exports = {
     gt: "serverCard__7bc6f",
     $f: "guildIcon__7bc6f",

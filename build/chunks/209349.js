@@ -1,4 +1,4 @@
-/** chunk id: 209349, original params: e,t,n (module,exports,require) **/
+/** chunk id: 209349 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     Q: "animator__52de8",

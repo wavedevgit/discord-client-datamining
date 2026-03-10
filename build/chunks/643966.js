@@ -1,4 +1,4 @@
-/** chunk id: 643966, original params: e,t,n (module,exports,require) **/
+/** chunk id: 643966 params = (module,exports,require) **/
 e.exports = {
     c: "buttonWithProgress__61462",
     qB: "progress__61462",

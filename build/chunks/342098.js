@@ -42,7 +42,7 @@ function f(t) {
     (0, r.mMO)(async () => {
         let {
             PaymentContextProvider: t
-        } = await Promise.resolve().then(i.bind(i, 156312)), a = (await i.e("72752").then(i.bind(i, 97491))).default, {
+        } = await Promise.resolve().then(i.bind(i, 156312)), a = (await i.e("50371").then(i.bind(i, 97491))).default, {
             getApplicationPaymentSteps: r
         } = await i.e("50243").then(i.bind(i, 107854)), o = r({
             guildId: N,

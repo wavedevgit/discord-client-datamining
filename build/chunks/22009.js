@@ -1,4 +1,4 @@
-/** chunk id: 22009, original params: e,t,n (module,exports,require) **/
+/** chunk id: 22009 params = (module,exports,require) **/
 e.exports = {
     LM: "emojiInput__82d84"
 }

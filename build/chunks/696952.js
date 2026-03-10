@@ -1,4 +1,4 @@
-/** chunk id: 696952, original params: e,t,n (module,exports,require) **/
+/** chunk id: 696952 params = (module,exports,require) **/
 e.exports = {
     xC: "overlaySettingsNux_abc4d3",
     VV: "closeCircleButton_abc4d3",

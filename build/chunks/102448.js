@@ -1,4 +1,4 @@
-/** chunk id: 102448, original params: e,t,n (module,exports,require) **/
+/** chunk id: 102448 params = (module,exports,require) **/
 e.exports = {
     CR: "modalRoot_a470b4",
     wx: "header_a470b4",

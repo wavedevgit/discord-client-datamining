@@ -1,4 +1,4 @@
-/** chunk id: 281743, original params: e,t,n (module,exports,require) **/
+/** chunk id: 281743 params = (module,exports,require) **/
 e.exports = {
     r: "suggestedGames_dbb349"
 }

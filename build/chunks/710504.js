@@ -1,4 +1,4 @@
-/** chunk id: 710504, original params: e,t,n (module,exports,require) **/
+/** chunk id: 710504 params = (module,exports,require) **/
 n.r(e.exports = {
     reactions: "reactions__23977",
     icon: "icon__23977",

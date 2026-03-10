@@ -1,4 +1,4 @@
-/** chunk id: 921380, original params: e,t,n (module,exports,require) **/
+/** chunk id: 921380 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     U5: "inviteInfo__29497",

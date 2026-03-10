@@ -35,7 +35,7 @@ var i = n(627968),
     D = n(558533),
     L = n(788868),
     G = n(652215),
-    M = n(916692);
+    M = n(615434);
 let U = function(e) {
     let {
         entrypoint: t = L.Mf.UserSettings

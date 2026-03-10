@@ -1,4 +1,4 @@
-/** chunk id: 993605, original params: e,n,t (module,exports,require) **/
+/** chunk id: 993605 params = (module,exports,require) **/
 e.exports = {
     b: "closeButton__3bf54",
     Tn: "upsellImage__3bf54",

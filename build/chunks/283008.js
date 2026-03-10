@@ -1,4 +1,4 @@
-/** chunk id: 283008, original params: e,t,n (module,exports,require) **/
+/** chunk id: 283008 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     vK: "banner_ec75b3",

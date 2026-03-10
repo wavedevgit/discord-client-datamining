@@ -1,4 +1,4 @@
-/** chunk id: 563429, original params: e,t,n (module,exports,require) **/
+/** chunk id: 563429 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     My: "containerColumn_fcb27c",

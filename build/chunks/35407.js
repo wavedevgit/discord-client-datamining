@@ -1,4 +1,4 @@
-/** chunk id: 35407, original params: e,t,n (module,exports,require) **/
+/** chunk id: 35407 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     hD: "examplesHeader_d520fc",

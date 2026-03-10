@@ -1,4 +1,4 @@
-/** chunk id: 681636, original params: e,t,r (module,exports,require) **/
+/** chunk id: 681636 params = (module,exports,require) **/
 e.exports = {
     CR: "modalRoot__8fb25",
     Zy: "modalRootPortrait__8fb25",

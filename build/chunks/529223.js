@@ -1,4 +1,4 @@
-/** chunk id: 529223, original params: e,t,r (module,exports,require) **/
+/** chunk id: 529223 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     wD: "markdown_d285a6",

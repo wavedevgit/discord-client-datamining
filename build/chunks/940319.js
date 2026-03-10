@@ -1,4 +1,4 @@
-/** chunk id: 940319, original params: e,t,n (module,exports,require) **/
+/** chunk id: 940319 params = (module,exports,require) **/
 e.exports = {
     w: "header__36335"
 }

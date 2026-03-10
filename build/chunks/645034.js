@@ -6,7 +6,7 @@ var a = t(64700),
     i = t(198982);
 
 function r(e, n) {
-    let [t, r] = a.useState(!1), [c, l] = a.useState(null);
+    let [t, r] = a.useState(!1), [o, l] = a.useState(null);
     return [async () => {
         r(!0), l(null);
         try {
@@ -18,6 +18,6 @@ function r(e, n) {
         }
     }, {
         loading: t,
-        error: c
+        error: o
     }]
 }

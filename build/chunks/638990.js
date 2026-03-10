@@ -1,4 +1,4 @@
-/** chunk id: 638990, original params: e,t,n (module,exports,require) **/
+/** chunk id: 638990 params = (module,exports,require) **/
 "use strict";
 e.exports = {
     TE: "chat_f75fb0",

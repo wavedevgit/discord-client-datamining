@@ -1,4 +1,4 @@
-/** chunk id: 887345, original params: e,t,n (module,exports,require) **/
+/** chunk id: 887345 params = (module,exports,require) **/
 e.exports = {
     BE: "premiumBadge__6d7da",
     ZA: "premiumAcknowledgedBadge__6d7da",
