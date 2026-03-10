@@ -89,7 +89,7 @@ async function F(e, t, n) {
     let M = Object.fromEntries(I.members.map(e => [e.userId, e])),
         U = null != j.guildId && null != j.channels,
         k = j.guildId;
-    return s.Ay.Emitter.batched(() => {
+    return await new Promise((e, t) => s.Ay.Emitter.batched(() => {
         i.A.time("\uD83D\uDCBE", "Dispatch Mini Cache", () => a.h.dispatch({
             type: "CACHE_LOADED",
             guilds: v,
@@ -105,8 +105,8 @@ async function F(e, t, n) {
             userSettings: R,
             userGuildSettings: L,
             readStates: P
-        })), i.A.time("\uD83D\uDCBE", "socket.processFirstQueuedDispatch()", () => l.dispatcher.processFirstQueuedDispatch(new Set(["INITIAL_GUILD"])))
-    }), D.verbose(`early_cache_summary: (
+        }).then(e, t)), i.A.time("\uD83D\uDCBE", "socket.processFirstQueuedDispatch()", () => l.dispatcher.processFirstQueuedDispatch(new Set(["INITIAL_GUILD"])))
+    })), D.verbose(`early_cache_summary: (
         ok: true
         meta:
           auth_user_id: ${t}
@@ -331,11 +331,12 @@ class Z extends s.Ay.Store {
                 type: "CACHE_LOADED_LAZY_NO_CACHE"
             })), Promise.resolve()))
         } catch (e) {
-            D.error("clearing cache. exception encountered while loading cache.", e, e.stack), (0, y.A)("cache:exception"), n(), a.h.dispatch({
+            D.error("clearing cache. exception encountered while loading cache.", e, e.stack), (0, y.A)("cache:exception", e), n(), a.h.dispatch({
                 type: "RESET_SOCKET",
                 args: {
                     error: e,
-                    action: "loadCacheAsync"
+                    action: "loadCacheAsync",
+                    clearCache: !0
                 }
             })
         }
