@@ -114,7 +114,7 @@ b.a(_, async function(_, c) {
             vU: () => w.vU,
             vV: () => w.vV,
             vb: () => w.vb,
-            vo: () => w.vo,
+            vf: () => w.vf,
             w2: () => w.w2,
             w6: () => w.w6,
             w9: () => w.w9,

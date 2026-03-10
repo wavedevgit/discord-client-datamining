@@ -106,7 +106,7 @@ b.a(_, async function(_, c) {
             __wbindgen_cb_drop: () => a.LC,
             __wbindgen_closure_wrapper1643: () => a.hx,
             __wbindgen_closure_wrapper1708: () => a.jv,
-            __wbindgen_closure_wrapper2549: () => a.vo,
+            __wbindgen_closure_wrapper2543: () => a.vf,
             __wbindgen_debug_string: () => a.rl,
             __wbindgen_error_new: () => a.Rj,
             __wbindgen_in: () => a.zE,
