@@ -125,7 +125,6 @@ let E = e => {
                             skuId: n,
                             initialPlanId: u,
                             analyticsLocations: t,
-                            hideShadow: !0,
                             renderHeader: y
                         }, T)
                     })

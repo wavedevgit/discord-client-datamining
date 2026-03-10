@@ -1,14 +1,14 @@
 /** chunk id: 661492 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    q: () => s,
-    x: () => l
+    q: () => l,
+    x: () => s
 });
 var r = n(575593),
     i = n(993408),
     a = n(985018);
 
-function l(e) {
+function s(e) {
     let t = e.skuName;
     if (null != e.bundleItems && e.bundleItems.length > 0) return a.intl.formatToPlainString(a.t["/l2CAE"], {
         itemName: t
@@ -33,6 +33,6 @@ function l(e) {
     }
 }
 
-function s(e) {
+function l(e) {
     return !(0, i.G0)(e) && e.type !== r.R.EXTERNAL_SKU
 }

@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => j
+    j: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -10,26 +10,24 @@ var i = n(627968),
     o = n(73939),
     d = n(397927),
     c = n(974544),
-    u = n(826673),
-    _ = n(351906),
-    g = n(823092),
-    m = n(963935),
-    A = n(894858),
-    h = n(272053),
-    p = n(397274),
-    x = n(641324),
-    E = n(46373),
-    T = n(49999),
-    S = n(872175);
+    u = n(351906),
+    _ = n(823092),
+    g = n(963935),
+    m = n(894858),
+    A = n(272053),
+    h = n(397274),
+    p = n(641324),
+    x = n(46373),
+    E = n(872175);
 
-function C(e) {
+function T(e) {
     let {
         notice: t,
         children: n
     } = e, {
         showNotice: l,
         handleStoreUpdate: a
-    } = (0, g.L_)(), c = t?.stores;
+    } = (0, _.L_)(), c = t?.stores;
     s.useEffect(() => {
         if (null != c) {
             let e = new r.ru(c, () => {
@@ -46,7 +44,7 @@ function C(e) {
             element: e
         } = t;
         return (0, i.jsx)(d.FQk, {
-            className: S.lm,
+            className: E.lm,
             children: (0, i.jsx)(e, {})
         })
     }, [t, l]);
@@ -58,34 +56,34 @@ function C(e) {
     })
 }
 
-function f(e) {
+function S(e) {
     let {
         decoration: t
     } = e, n = t.component;
     return (0, i.jsx)("div", {
-        className: a()(S.oK, {
-            [S.qf]: t.sticky
+        className: a()(E.oK, {
+            [E.qf]: t.sticky
         }),
         "data-settings-panel-sticky-decoration": t.sticky || void 0,
         children: (0, i.jsx)(n, {})
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         panelKey: t,
         notice: n,
         children: l
     } = e, a = s.useRef(null);
-    return (0, i.jsx)(C, {
+    return (0, i.jsx)(T, {
         notice: n,
         children: (0, i.jsx)(d.GtU, {
-            className: S.XG,
+            className: E.XG,
             ref: e => {
-                p.A.setPanelScrollerRef(e)
+                h.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
-                className: S.nd,
+                className: E.nd,
                 ref: a,
                 children: (0, i.jsx)(d.xpW, {
                     containerRef: a,
@@ -96,54 +94,54 @@ function I(e) {
     })
 }
 
-function b(e) {
+function f(e) {
     let {
         layout: t,
         decoration: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: S.LZ,
-        children: [null != n && (0, i.jsx)(f, {
+        className: E.LZ,
+        children: [null != n && (0, i.jsx)(S, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(x.A, {
+            children: [(0, i.jsx)(p.A, {
                 node: e
-            }), n !== t.length - 1 && (0, i.jsx)(E.A, {
-                className: S.yF
+            }), n !== t.length - 1 && (0, i.jsx)(x.A, {
+                className: E.yF
             })]
         }, e.key))]
     })
 }
 
-function N(e) {
+function I(e) {
     let {
         panelKey: t,
         layout: n,
         notice: l,
         decoration: a
-    } = e, r = A.A.useState(e => {
+    } = e, r = m.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
         return n.get(t)
     }) ?? n[0].key;
     s.useEffect(() => {
-        let e = A.A.getField("currentTabKeys");
+        let e = m.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
         let i = new Map(e);
-        i.set(t, n[0].key), A.A.setState({
+        i.set(t, n[0].key), m.A.setState({
             currentTabKeys: i
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(I, {
+    return (0, i.jsxs)(C, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
-            className: S.$H,
+            className: E.$H,
             selectedItem: r,
             onItemSelect: e => {
-                h.A.navigate(e, {
+                A.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()
@@ -165,7 +163,7 @@ function N(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(b, {
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(f, {
                 layout: o.layout,
                 decoration: a
             })
@@ -173,48 +171,37 @@ function N(e) {
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         panelKey: t,
         notice: n,
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(I, {
+    return (0, i.jsx)(C, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(f, {
             layout: l,
             decoration: s
         })
     })
 }
 
-function j(e) {
+function N(e) {
     let {
         node: t
     } = e, {
         layout: n
-    } = t, l = (0, r.bG)([_.A], () => _.A.hidePersonalInformation);
-    if (s.useEffect(() => {
-            if (t.parent?.type !== m.Z6.SIDEBAR_ITEM || null == t.parent.trailing) return;
-            let {
-                trailing: e
-            } = t.parent, n = "getDismissibleContentTypes" in e ? e.getDismissibleContentTypes?.() : null;
-            null != n && n.forEach(e => {
-                (0, u.Dr)(e, {
-                    dismissAction: T.i.AUTO,
-                    forceTrack: !0
-                })
-            })
-        }, [t]), l && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, m.zY)(n)) return (0, i.jsx)(N, {
+    } = t;
+    if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
+    if ((0, g.zY)(n)) return (0, i.jsx)(I, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, m.Iu)(n)) return (0, i.jsx)(v, {
+    if ((0, g.Iu)(n)) return (0, i.jsx)(b, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

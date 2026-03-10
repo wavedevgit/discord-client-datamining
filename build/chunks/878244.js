@@ -48,16 +48,14 @@ function G(t) {
         wishlistId: u,
         source: c,
         hasMultipleSources: d,
-        totalUnownedWishlistItems: g,
-        index: I,
-        skuPreviewStyle: C,
-        skuPreviewHoverStyle: T,
-        maxWishlistLength: L,
-        spec: h = k,
-        guildId: b,
-        channelId: G
-    } = t, [y, R] = r.useState(!1), M = I === L - 1 && g > L, N = r.useCallback(() => {
-        if (M) return void l();
+        skuPreviewStyle: g,
+        skuPreviewHoverStyle: I,
+        spec: C = k,
+        guildId: T,
+        channelId: L,
+        numMoreItems: h
+    } = t, [b, G] = r.useState(!1), y = r.useCallback(() => {
+        if (null != h && h > 0) return void l();
         let t = c === p.uS.WISHLIST ? "wishlist" : "shop";
         _.default.track(E.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: e.id,
@@ -65,7 +63,7 @@ function G(t) {
             wishlist_id: c === p.uS.WISHLIST ? u : null,
             product_line: e.productLine
         }), i?.()
-    }, [i, u, c, e.id, e.productLine, l, M]), P = r.useCallback(() => {
+    }, [i, u, c, e.id, e.productLine, l, h]), R = r.useCallback(() => {
         let t = c === p.uS.WISHLIST ? "wishlist" : "shop";
         _.default.track(E.HAw.GIFTING_ITEM_CLICKED, {
             sku_id: e.id,
@@ -74,9 +72,9 @@ function G(t) {
             product_line: e.productLine
         }), s?.()
     }, [s, e.id, e.productLine, c, u]), {
-        label: v,
-        icon: w,
-        isPromptingPurchase: x
+        label: M,
+        icon: N,
+        isPromptingPurchase: P
     } = (0, S.hB)({
         sku: e,
         wishlistOwner: o,
@@ -86,23 +84,23 @@ function G(t) {
     return (0, n.jsxs)(A.A, {
         sku: e,
         user: o,
-        spec: h,
-        skuPreviewStyle: a()(O.e, C, y ? T : void 0),
-        onClick: N,
-        onHoverOrFocusChange: R,
+        spec: C,
+        skuPreviewStyle: a()(O.e, g, b ? I : void 0),
+        onClick: y,
+        onHoverOrFocusChange: G,
         children: [d && c === p.uS.WISHLIST && (0, n.jsx)(f.X, {
-            spec: h,
+            spec: C,
             users: [o],
-            guildId: b ?? void 0,
-            channelId: G ?? void 0
-        }), !M && (0, n.jsx)(S.AJ, {
-            spec: h,
-            onClick: x ? P : N,
-            label: v,
-            icon: w,
-            isHoveringOrFocusing: y
-        }), M && (0, n.jsx)(m.Yb, {
-            count: g - L + 1
+            guildId: T ?? void 0,
+            channelId: L ?? void 0
+        }), (null == h || 0 === h) && (0, n.jsx)(S.AJ, {
+            spec: C,
+            onClick: P ? R : y,
+            label: M,
+            icon: N,
+            isHoveringOrFocusing: b
+        }), null != h && h > 0 && (0, n.jsx)(m.Yb, {
+            count: h
         })]
     })
 }

@@ -74,7 +74,7 @@ function y(e) {
         forceShowButtons: g,
         hasChannelInfo: C = !1
     } = e, E = (0, a.bG)([f.A], () => f.A.getGuild(t.getGuildId())), S = (0, a.bG)([m.A], () => m.A.getStageInstanceByChannel(t.id), [t.id]), T = (0, a.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(t.id), [t.id]), v = (0, a.bG)([x.A], () => (0, h.K)(x.A, E, t, S)), y = (0, a.bG)([], () => t?.type === I.rbe.GUILD_VOICE ? N.intl.string(N.t["EE+P0H"]) : N.intl.string(N.t["0jeAXt"])), j = s.useRef(null);
-    if (d || !v || t.isModeratorReportChannel()) return null;
+    if (d || !v || t.isModeratorReportChannel() || t.isThread()) return null;
     let R = (0, i.jsx)(c.Rvf, {
         size: "xs",
         className: b.gE,

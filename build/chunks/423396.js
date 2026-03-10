@@ -53,7 +53,13 @@ let y = [{
             text: "Plan Select Step Placeholder"
         }),
         options: {
-            useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq)
+            useBreadcrumbLabel: () => b.intl.string(b.t.QBnNHq),
+            modalSizeGetter: e => {
+                let {
+                    isGift: t
+                } = e;
+                return t ? "xl" : "md"
+            }
         }
     }],
     f = () => (0, a.jsx)(r.Text, {

@@ -2,8 +2,8 @@
 t.d(n, {
     _: () => v
 });
-var i = t(627968),
-    l = t(64700),
+var l = t(627968),
+    i = t(64700),
     r = t(284009),
     s = t.n(r),
     a = t(735438),
@@ -16,17 +16,17 @@ var i = t(627968),
     E = t(367727),
     _ = t(810498),
     x = t(173834),
-    P = t(412260),
-    T = t(380083),
-    S = t(954571),
+    S = t(412260),
+    P = t(380083),
+    T = t(954571),
     I = t(203982),
     h = t(45938),
     g = t(615396),
     A = t(937008),
     f = t(156312),
     j = t(491057),
-    M = t(482132),
-    R = t(877156),
+    R = t(482132),
+    M = t(877156),
     C = t(216641),
     y = t(921925),
     N = t(652215),
@@ -40,11 +40,11 @@ function v(e) {
             renderPurchaseConfirmation: k,
             postSuccessGuild: w,
             followupSKUInfo: U,
-            continueSessionToInitialStep: D
+            continueSessionToInitialStep: G
         } = e,
         {
-            activeSubscription: L,
-            paymentSources: G,
+            activeSubscription: D,
+            paymentSources: L,
             paymentSourceId: F,
             selectedPlan: H,
             selectedSkuId: B,
@@ -67,30 +67,30 @@ function v(e) {
         {
             confirmationFooter: et
         } = (0, j.cG)(),
-        ei = (0, _.px)(H, Y, ee),
-        el = (0, _.Mq)(H),
+        el = (0, _.px)(H, Y, ee),
+        ei = (0, _.Mq)(H),
         er = (0, m.Mv)(en, !1),
-        es = (0, u.bG)([P.A], () => {
-            let e = P.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
+        es = (0, u.bG)([S.A], () => {
+            let e = S.A.getMarketingComponentByType(o.C.GIFT_REMINDER_NAGBAR);
             return null == e || "giftReminderNagbar" !== e.properties.properties.oneofKind ? null : e.properties.properties.giftReminderNagbar
         }),
-        ea = (0, C.g)(G, F),
-        eo = Y && null != en && null != er && el;
+        ea = (0, C.g)(L, F),
+        eo = Y && null != en && null != er && ei;
     s()(null != H, "Expected plan to selected"), s()(null != B, "Expected selectedSkuId"), s()(null != W, "Step should be set");
-    let eu = l.useCallback(() => {
+    let eu = i.useCallback(() => {
         r(), b?.()
     }, [r, b]);
     (0, p.Ay)(() => {
-        q && S.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED, {
+        q && T.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_CONFIRMATION_VIEWED, {
             has_updated_subscription: null != K,
             has_any_premium_group: K?.hasAnyPremiumGroup ?? !1,
             subscription_id: K?.id
         })
-    }), l.useEffect(() => {
+    }), i.useEffect(() => {
         function e() {
             if (q)
                 if (null != K && K.hasAnyPremiumGroup) {
-                    S.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED, {
+                    T.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_OPENED, {
                         subscription_id: K.id
                     });
                     let e = (0, a.uniqueId)("premium-group-purchase-flow-modal");
@@ -98,7 +98,7 @@ function v(e) {
                         let {
                             default: e
                         } = await t.e("73987").then(t.bind(t, 773486));
-                        return n => (0, i.jsx)(e, {
+                        return n => (0, l.jsx)(e, {
                             ...n,
                             subscription: K,
                             isFromPurchaseFlow: !0,
@@ -112,7 +112,7 @@ function v(e) {
                         },
                         modalKey: e
                     })
-                } else S.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED, {
+                } else T.default.track(N.HAw.PREMIUM_GROUP_PURCHASE_FRIEND_SELECTOR_SKIPPED, {
                     has_updated_subscription: null != K,
                     has_any_premium_group: K?.hasAnyPremiumGroup ?? !1
                 }), I._.dispatch(N.jej.PREMIUM_GROUP_PURCHASE_FLOW_COMPLETED)
@@ -120,18 +120,18 @@ function v(e) {
         return I._.subscribe(N.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
             I._.unsubscribe(N.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
         }
-    }, [q, K]), l.useEffect(() => {
+    }, [q, K]), i.useEffect(() => {
         !Y || null == Z || null == X || Q || J || (0, h.Ik)(Z) || $({
             onSubscriptionConfirmation: b
         })
-    }, [$, Y, Z, X, Q, J, b]), l.useEffect(() => {
-        ei && null != es && (0, E.$l)(d.M.GIFTING_PROMOTION_REMINDER, (0, x.p)(), {
+    }, [$, Y, Z, X, Q, J, b]), i.useEffect(() => {
+        el && null != es && (0, E.$l)(d.M.GIFTING_PROMOTION_REMINDER, (0, x.p)(), {
             dismissAction: O.i.INDIRECT_ACTION
         })
-    }, [es, ei]);
-    let ed = null != D ? T.Rs.DEEPLINK_TO_DESKTOP_APP : void 0;
+    }, [es, el]);
+    let ed = null != G ? P.Rs.DEEPLINK_TO_DESKTOP_APP : void 0;
     if (null != k) n = k(H, eu, K);
-    else if (Y) n = (0, i.jsx)(T.fw, {
+    else if (Y) n = (0, l.jsx)(P.fw, {
         planId: H.id,
         onClose: eu
     });
@@ -141,9 +141,9 @@ function v(e) {
         } : {
             followupSKUInfo: U,
             startingPremiumSubscriptionPlanId: V.current,
-            isDowngrade: null != L && (0, g.vT)(L, H.id, v)
+            isDowngrade: null != D && (0, g.vT)(D, H.id, v)
         };
-        n = (0, i.jsx)(T.Ay, {
+        n = (0, l.jsx)(P.Ay, {
             planId: H.id,
             onClose: eu,
             paymentSourceType: ea,
@@ -153,10 +153,10 @@ function v(e) {
             ...e
         })
     }
-    return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsxs)(M.dZ, {
-            children: [(0, i.jsx)(y.A, {}), n]
-        }), null != et && et, eo && null != en && (0, i.jsx)(R.A, {
+    return (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsxs)(R.dZ, {
+            children: [(0, l.jsx)(y.A, {}), n]
+        }), null != et && et, eo && null != en && (0, l.jsx)(M.A, {
             rewardSkuId: en,
             onClose: eu
         })]

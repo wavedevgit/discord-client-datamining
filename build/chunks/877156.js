@@ -2,8 +2,8 @@
 t.d(n, {
     A: () => g
 });
-var i = t(627968),
-    l = t(64700),
+var l = t(627968),
+    i = t(64700),
     r = t(311907),
     s = t(732955),
     a = t(397927),
@@ -16,9 +16,9 @@ var i = t(627968),
     E = t(61750),
     _ = t(369496),
     x = t(550111),
-    P = t(287809),
-    T = t(482132),
-    S = t(758836),
+    S = t(287809),
+    P = t(482132),
+    T = t(758836),
     I = t(985018),
     h = t(401506);
 
@@ -26,16 +26,16 @@ function g(e) {
     let {
         rewardSkuId: n,
         onClose: t
-    } = e, g = (0, r.bG)([P.default], () => P.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
+    } = e, g = (0, r.bG)([S.default], () => S.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
-        product: M,
-        isFetching: R
-    } = (0, c.q)(n), [C, y] = l.useState(!1), N = M?.items[0], {
+        product: R,
+        isFetching: M
+    } = (0, c.q)(n), [C, y] = i.useState(!1), N = R?.items[0], {
         isNameplateReward: O,
         nameplateData: v,
         rewardAvatarDecorationSrc: b
-    } = l.useMemo(() => null == N ? {
+    } = i.useMemo(() => null == N ? {
         isNameplateReward: !1,
         nameplateData: null,
         rewardAvatarDecorationSrc: null
@@ -62,15 +62,15 @@ function g(e) {
         nameplateData: null,
         rewardAvatarDecorationSrc: null
     }, [N, j, A]);
-    return (0, i.jsx)(T.UX, {
-        children: (0, i.jsx)(s.jlY, {
-            children: (0, i.jsxs)("div", {
+    return (0, l.jsx)(P.UX, {
+        children: (0, l.jsx)(s.jlY, {
+            children: (0, l.jsxs)("div", {
                 className: h.W,
-                children: [O && null != v ? (0, i.jsx)("div", {
+                children: [O && null != v ? (0, l.jsx)("div", {
                     className: h.D,
                     onMouseEnter: () => y(!0),
                     onMouseLeave: () => y(!1),
-                    children: (0, i.jsx)(x.a, {
+                    children: (0, l.jsx)(x.a, {
                         user: g,
                         nameplate: null,
                         nameplateData: v,
@@ -78,21 +78,21 @@ function g(e) {
                         nameplatePreviewSize: "xsmall",
                         isHighlighted: C
                     })
-                }) : (0, i.jsx)(a.JsQ, {
+                }) : (0, l.jsx)(a.JsQ, {
                     "aria-label": g?.username,
                     size: j,
                     src: g?.getAvatarURL(void 0, (0, a.FT9)(j), !A),
                     avatarDecoration: b
-                }), (0, i.jsx)(s.$nd, {
+                }), (0, l.jsx)(s.$nd, {
                     variant: "primary",
                     text: I.intl.string(I.t.kMYVwv),
-                    loading: R,
+                    loading: M,
                     onClick: () => {
-                        null != M && (t(), (0, E.A)({
-                            product: M,
+                        null != R && (t(), (0, E.A)({
+                            product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,
-                            purchaseType: S.gs.PROMOTIONAL
+                            purchaseType: T.gs.PROMOTIONAL
                         }))
                     }
                 })]

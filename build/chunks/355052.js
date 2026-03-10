@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(831062),
     _ = n(471024),
     m = n(976860),
-    E = n(144400),
-    x = n(927813),
+    x = n(144400),
+    E = n(927813),
     y = n(9302),
     v = n(777334),
     S = n(41984),
@@ -30,7 +30,7 @@ var i = n(627968),
     T = n(652215),
     O = n(985018),
     b = n(748498);
-let j = 10 * x.A.Millis.SECOND,
+let j = 10 * E.A.Millis.SECOND,
     D = new h.Vy("LegacyOverlayErrorBoundary");
 
 function R() {
@@ -109,7 +109,7 @@ class L extends s.PureComponent {
                     onClick: e => e.stopPropagation(),
                     children: [(0, i.jsx)(_.Ay, {
                         expand: !0,
-                        icon: (0, i.jsx)(E.A, {
+                        icon: (0, i.jsx)(x.A, {
                             width: 40,
                             height: 40,
                             className: b.Lo

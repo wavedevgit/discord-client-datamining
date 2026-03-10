@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(717558),
     _ = n(429913),
     m = n(47167),
-    E = n(235986),
-    x = n(15285),
+    x = n(235986),
+    E = n(15285),
     y = n(769015),
     v = n(652896),
     S = n(277680),
@@ -67,10 +67,10 @@ function q(e) {
         context: A,
         guildId: f,
         voiceState: _
-    } = e, m = (0, r.bG)([M.Ay], () => M.Ay.isLocalMute(l.id)), E = (0, r.bG)([L.A], () => L.A.getCurrentUserActiveStream()), x = (0, r.yK)([L.A], () => null != E ? L.A.getViewerIds(E) : []), y = (0, g.A)({
+    } = e, m = (0, r.bG)([M.Ay], () => M.Ay.isLocalMute(l.id)), x = (0, r.bG)([L.A], () => L.A.getCurrentUserActiveStream()), E = (0, r.yK)([L.A], () => null != x ? L.A.getViewerIds(x) : []), y = (0, g.A)({
         userId: l.id,
         context: A
-    }), v = (0, r.bG)([G.A], () => G.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([L.A], () => null != L.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != E && E.ownerId !== l.id && x.includes(l.id), [E, l.id, x]);
+    }), v = (0, r.bG)([G.A], () => G.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([L.A], () => null != L.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != x && x.ownerId !== l.id && E.includes(l.id), [x, l.id, E]);
     if (c === Z.f5z.ONLY_WHILE_SPEAKING && n && !y) return null;
     let {
         mute: I,
@@ -294,9 +294,9 @@ class $ extends s.PureComponent {
                         game: l
                     }) : (0, i.jsx)(C.A, {
                         title: h
-                    }), (0, i.jsxs)(E.A, {
-                        direction: E.A.Direction.VERTICAL,
-                        justify: E.A.Justify.BETWEEN,
+                    }), (0, i.jsxs)(x.A, {
+                        direction: x.A.Direction.VERTICAL,
+                        justify: x.A.Justify.BETWEEN,
                         className: Q.gA,
                         children: [(0, i.jsx)(u.Text, {
                             className: Q.$A,
@@ -306,7 +306,7 @@ class $ extends s.PureComponent {
                             children: o?.name ?? p
                         })]
                     })]
-                }), (0, i.jsxs)(E.A, {
+                }), (0, i.jsxs)(x.A, {
                     grow: 0,
                     children: [(0, i.jsx)("div", {
                         className: Q.yf,
@@ -401,13 +401,13 @@ function ee(e) {
             return e
         }(),
         l = (0, r.bG)([L.A], () => L.A.getStreamerActiveStreamMetadata()),
-        a = (0, r.bG)([x.Ay, V.A, k.A], () => {
-            let e = (0, I.A)(x.Ay, V.A);
+        a = (0, r.bG)([E.Ay, V.A, k.A], () => {
+            let e = (0, I.A)(E.Ay, V.A);
             return null != e ? k.A.findGame(e)?.id : null
         }),
         o = (0, _.h)(a),
-        d = (0, r.cf)([x.Ay, V.A, L.A, z.default], () => {
-            let e = (0, I.A)(x.Ay, V.A),
+        d = (0, r.cf)([E.Ay, V.A, L.A, z.default], () => {
+            let e = (0, I.A)(E.Ay, V.A),
                 t = L.A.getCurrentUserActiveStream();
             return {
                 displayUserMode: z.default.getDisplayUserMode(),

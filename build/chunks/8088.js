@@ -19,8 +19,8 @@ var s = n(627968),
     g = n(442433),
     _ = n(684013),
     m = n(684136),
-    E = n(34968),
-    x = n(775121),
+    x = n(34968),
+    E = n(775121),
     y = n(836753),
     v = n(793574),
     S = n(688810),
@@ -136,7 +136,7 @@ class ep extends l.Component {
     constructor(e) {
         super(e);
         const t = e.locked && H.default.isPinned(el.uss.TEXT);
-        x.A.setLayout(t ? E.dY : E.CJ), t && x.A.enable()
+        E.A.setLayout(t ? x.dY : x.CJ), t && E.A.enable()
     }
     handleLock() {
         (0, f.ueM)() || G.A.isOpen() || _.A.setInputLocked(!0, (0, J.getPID)())
@@ -169,8 +169,8 @@ class ep extends l.Component {
                         unlocked_duration: e
                     }), eo = null
                 }
-                x.A.disable(), this.activeKeyEventShapes = [], H.default.isPinned(el.uss.TEXT) && (x.A.setLayout(E.dY), x.A.enable())
-            } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ed, !1), null == eo && (eo = Date.now(), _.A.track(el.HAw.OVERLAY_UNLOCKED)), x.A.disable(), this.activeKeyEventShapes = [], x.A.setLayout(E.CJ), x.A.enable());
+                E.A.disable(), this.activeKeyEventShapes = [], H.default.isPinned(el.uss.TEXT) && (E.A.setLayout(x.dY), E.A.enable())
+            } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ed, !1), null == eo && (eo = Date.now(), _.A.track(el.HAw.OVERLAY_UNLOCKED)), E.A.disable(), this.activeKeyEventShapes = [], E.A.setLayout(x.CJ), E.A.enable());
             e.keybindKeyCodes !== this.props.keybindKeyCodes && (this.lockEventShape = (0, Z.pi)(this.props.keybindKeyCodes))
         }
     }

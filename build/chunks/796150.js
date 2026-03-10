@@ -1,47 +1,47 @@
 /** chunk id: 796150 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => _
+    default: () => b
 });
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    l = n(883662),
-    s = n(961350),
+    s = n(883662),
+    l = n(961350),
     o = n(628965),
     u = n(287809),
     c = n(115063),
     d = n(152056),
-    h = n(780964),
-    f = n(162396),
-    m = n(12901),
-    g = n(921854),
-    v = n(987281),
+    f = n(780964),
+    m = n(162396),
+    g = n(12901),
+    h = n(921854),
+    y = n(987281),
     p = n(840065),
-    y = n(985018),
+    v = n(985018),
     x = n(249316);
 
-function _(e) {
+function b(e) {
     let {
         target: t,
         ...n
-    } = e, a = d.A.useField("query"), y = i.useRef(null);
-    (0, v.V)();
+    } = e, a = d.A.useField("query"), v = i.useRef(null);
+    (0, y.V)();
     let x = i.useCallback(e => {
             d.A.setState({
                 query: e
             })
         }, []),
-        [_, j] = i.useState(!1);
+        [b, _] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == u.default.getCurrentUser() && (j(!0), (0, m.default)())
+            null == u.default.getCurrentUser() && (_(!0), (0, g.default)())
         };
-        return s.default.addChangeListener(e), () => s.default.removeChangeListener(e)
-    }, []), _) ? null : (0, r.jsx)(l.A, {
-        partialRoot: g.D,
-        emptyState: b,
-        sidebarFooter: f.A,
+        return l.default.addChangeListener(e), () => l.default.removeChangeListener(e)
+    }, []), b) ? null : (0, r.jsx)(s.A, {
+        partialRoot: h.D,
+        emptyState: A,
+        sidebarFooter: m.A,
         onPanelChange: e => {
             let t = (0, p.getUserSettingsSectionsByWebUserSettings)().get(e);
             null != t && (! function(e) {
@@ -58,28 +58,28 @@ function _(e) {
                 })
             }({
                 destinationPanel: t,
-                originPanel: y.current
-            }), y.current = t)
+                originPanel: v.current
+            }), v.current = t)
         },
         target: t,
-        defaultTarget: h.X.ACCOUNT_PANEL,
+        defaultTarget: f.X.ACCOUNT_PANEL,
         searchQuery: a,
         onSearchChange: x,
         ...n
     })
 }
 
-function b() {
+function A() {
     return (0, r.jsxs)("div", {
         className: x.t,
         children: [(0, r.jsx)(a.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
-            children: y.intl.string(y.t.zihbmv)
+            children: v.intl.string(v.t.zihbmv)
         }), (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: y.intl.string(y.t.XclvsB)
+            children: v.intl.string(v.t.XclvsB)
         })]
     })
 }

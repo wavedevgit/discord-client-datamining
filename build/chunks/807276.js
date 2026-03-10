@@ -1,19 +1,22 @@
 /** chunk id: 807276 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => d
+    Z: () => c
 });
 var i = n(524136),
     s = n(70730),
     l = n(419954),
-    a = n(253932),
-    r = n(780964),
-    o = n(985018);
-let d = (0, l.zD)(r.X.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
-    useTitle: () => o.intl.string(o.t.NjOMvh),
-    useBadge: () => "beta",
-    useValue: a.oz.useSetting,
+    a = n(933297),
+    r = n(253932),
+    o = n(780964),
+    d = n(985018);
+let c = (0, l.zD)(o.X.FRIEND_ANNIVERSARY_NOTIFICATIONS, {
+    useTitle: () => d.intl.string(d.t.NjOMvh),
+    usePersistentBadge: () => ({
+        badgeType: a.Xi.BETA
+    }),
+    useValue: r.oz.useSetting,
     setValue: i.O,
-    useSearchTerms: () => [o.intl.string(o.t.hi4dSk)],
+    useSearchTerms: () => [d.intl.string(d.t.hi4dSk)],
     usePredicate: () => {
         let {
             enabled: e,

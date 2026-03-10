@@ -22,8 +22,8 @@ var s = n(684013),
 
 function m(e, t, n, m) {
     let {
-        icon: E,
-        title: x,
+        icon: x,
+        title: E,
         body: y
     } = (0, l.TB)(e, t, n), {
         trackView: v,
@@ -38,8 +38,8 @@ function m(e, t, n, m) {
         channel_type: e.type
     });
     return {
-        icon: E,
-        title: x,
+        icon: x,
+        title: E,
         body: y,
         renderFooter: e => e ? (0, i.jsx)("div", {
             style: {

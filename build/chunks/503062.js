@@ -1,6 +1,6 @@
 /** chunk id: 503062 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -8,47 +8,42 @@ var i = n(627968),
     s = n(397927),
     r = n(442433),
     o = n(297413),
-    d = n(439547),
-    c = n(714114),
-    u = n(729551),
-    m = n(178418),
-    g = n(87664),
-    x = n(290863),
-    f = n(939496),
-    p = n(652215),
-    h = n(996988),
-    _ = n(794904);
-let A = s._3J.SIZE_40,
-    I = (0, s.FT9)(A);
+    d = n(714114),
+    c = n(729551),
+    u = n(178418),
+    m = n(87664),
+    g = n(290863),
+    x = n(939496),
+    f = n(652215),
+    p = n(996988),
+    h = n(794904);
+let _ = s._3J.SIZE_40,
+    A = (0, s.FT9)(_);
 
-function j(e) {
+function I(e) {
     let {
         user: t,
-        status: j,
-        guildId: v,
-        channelId: E,
-        onSelect: T
+        status: I,
+        guildId: j,
+        channelId: v,
+        onSelect: E
     } = e, {
-        theme: b,
-        themeType: N
-    } = (0, f.E)(), S = l.useMemo(() => t.isNonUserBot() || (0, m.c)(t, E), [t, E]), {
-        activities: y,
-        isMobileOnline: C
-    } = (0, a.cf)([x.A], () => ({
-        activities: x.A.getActivities(t.id),
-        isMobileOnline: x.A.isMobileOnline(t.id)
-    })), R = (0, g.A)(t.id), {
-        voiceActivityStatusEnabled: k
-    } = (0, d.g)({
-        location: "UserProfileMutualFriendRow"
-    }), {
-        voiceChannel: L
-    } = (0, c.A)({
-        userId: k ? t.id : void 0,
-        guildId: v
+        theme: T,
+        themeType: b
+    } = (0, x.E)(), N = l.useMemo(() => t.isNonUserBot() || (0, u.c)(t, v), [t, v]), {
+        activities: S,
+        isMobileOnline: y
+    } = (0, a.cf)([g.A], () => ({
+        activities: g.A.getActivities(t.id),
+        isMobileOnline: g.A.isMobileOnline(t.id)
+    })), C = (0, m.A)(t.id), {
+        voiceChannel: R
+    } = (0, d.A)({
+        userId: t.id,
+        guildId: j
     });
     return (0, i.jsxs)(s.DUT, {
-        focusProps: N === h.d.MODAL_V2 ? {
+        focusProps: b === p.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -59,8 +54,8 @@ function j(e) {
                 right: 8
             }
         },
-        className: _.nM,
-        onClick: T,
+        className: h.nM,
+        onClick: E,
         onContextMenu: e => {
             (0, r.L3)(e, async () => {
                 let {
@@ -73,24 +68,24 @@ function j(e) {
             })
         },
         children: [(0, i.jsx)(s.euF, {
-            src: t.getAvatarURL(v, I),
+            src: t.getAvatarURL(j, A),
             "aria-label": t.username,
-            size: A,
-            status: S ? p.clD.UNKNOWN : j,
-            statusBackdropColor: S ? void 0 : (0, s.C$5)(b),
-            isMobile: C,
-            className: _.my
+            size: _,
+            status: N ? f.clD.UNKNOWN : I,
+            statusBackdropColor: N ? void 0 : (0, s.C$5)(T),
+            isMobile: y,
+            className: h.my
         }), (0, i.jsxs)("div", {
-            className: _.zH,
+            className: h.zH,
             children: [(0, i.jsx)(o.A, {
                 user: t,
-                className: _.Tc,
-                discriminatorClass: _.D2
-            }), (0, i.jsx)(u.A, {
+                className: h.Tc,
+                discriminatorClass: h.D2
+            }), (0, i.jsx)(c.A, {
                 user: t,
-                activities: y,
-                applicationStream: R,
-                voiceChannel: L
+                activities: S,
+                applicationStream: C,
+                voiceChannel: R
             })]
         })]
     })

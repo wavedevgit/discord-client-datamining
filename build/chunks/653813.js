@@ -1,26 +1,26 @@
 /** chunk id: 653813 params = (module,exports,require) **/
-t.d(i, {
-    default: () => f
+i.d(t, {
+    default: () => p
 });
-var n = t(627968),
-    r = t(64700),
-    s = t(397927),
-    a = t(937008),
-    l = t(156312),
-    o = t(532794),
-    d = t(232516),
-    c = t(788868),
-    _ = t(652215),
-    u = t(985018),
-    m = t(431389);
+var n = i(627968),
+    r = i(64700),
+    s = i(397927),
+    a = i(937008),
+    l = i(156312),
+    o = i(532794),
+    d = i(232516),
+    c = i(788868),
+    u = i(652215),
+    _ = i(985018),
+    m = i(431389);
 
-function p(e) {
+function f(e) {
     let {
-        giftRecipient: i,
-        onClose: t,
+        giftRecipient: t,
+        onClose: i,
         transitionState: a,
-        analyticsLocations: p,
-        analyticsLocation: f,
+        analyticsLocations: f,
+        analyticsLocation: p,
         analyticsObject: h,
         giftMessage: g
     } = e, {
@@ -28,20 +28,20 @@ function p(e) {
     } = (0, l.P5)(), C = r.useCallback(e => {
         (0, o.A)({
             isGift: !0,
-            giftRecipient: i,
+            giftRecipient: t,
             subscriptionTier: e,
             giftingOrigin: c.vQ.DM_CHANNEL,
-            analyticsLocations: p ?? [],
-            analyticsLocation: f,
+            analyticsLocations: f ?? [],
+            analyticsLocation: p,
             analyticsObject: h ?? {
-                page: _.liQ.DM_CHANNEL,
-                section: _.JJy.CHANNEL_TEXT_AREA,
-                object: _.ZSU.BUTTON_ICON,
-                objectType: _.AnalyticsObjectTypes.GIFT
+                page: u.liQ.DM_CHANNEL,
+                section: u.JJy.CHANNEL_TEXT_AREA,
+                object: u.ZSU.BUTTON_ICON,
+                objectType: u.AnalyticsObjectTypes.GIFT
             },
             giftMessage: g
-        }), t()
-    }, [i, p, f, h, g, t]);
+        }), i()
+    }, [t, f, p, h, g, i]);
     return (0, n.jsxs)(s.EOs, {
         transitionState: a,
         size: s.rIJ.DYNAMIC,
@@ -56,9 +56,9 @@ function p(e) {
                 justify: "space-between",
                 children: [(0, n.jsx)(s.Heading, {
                     variant: "heading-md/semibold",
-                    children: u.intl.string(u.t["wg/30i"])
+                    children: _.intl.string(_.t["wg/30i"])
                 }), (0, n.jsx)(s.s_y, {
-                    onClick: t,
+                    onClick: i,
                     "data-migration-pending": !0
                 })]
             })
@@ -67,23 +67,23 @@ function p(e) {
             "data-migration-pending": !0,
             children: (0, n.jsx)(d.A, {
                 onSelectSku: C,
-                giftRecipient: i,
+                giftRecipient: t,
                 priceOptions: I,
-                onWishlistItemClick: t
+                onWishlistItemClick: i
             })
         })]
     })
 }
 
-function f(e) {
+function p(e) {
     let {
-        giftRecipient: i,
-        onClose: t,
+        giftRecipient: t,
+        onClose: i,
         transitionState: r,
         analyticsLocations: s,
         analyticsLocation: o,
         analyticsObject: d,
-        giftMessage: _
+        giftMessage: u
     } = e;
     return (0, n.jsx)(l.PaymentContextProvider, {
         activeSubscription: null,
@@ -92,16 +92,16 @@ function f(e) {
         isGift: !0,
         children: (0, n.jsx)(a.dX, {
             isGift: !0,
-            giftRecipient: i,
+            giftRecipient: t,
             giftingOrigin: c.vQ.DM_CHANNEL,
-            children: (0, n.jsx)(p, {
-                giftRecipient: i,
-                onClose: t,
+            children: (0, n.jsx)(f, {
+                giftRecipient: t,
+                onClose: i,
                 transitionState: r,
                 analyticsLocations: s,
                 analyticsLocation: o,
                 analyticsObject: d,
-                giftMessage: _
+                giftMessage: u
             })
         })
     })

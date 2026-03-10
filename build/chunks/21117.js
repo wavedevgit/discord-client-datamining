@@ -1,27 +1,30 @@
 /** chunk id: 21117 params = (module,exports,require) **/
 n.d(t, {
-    b: () => u
+    b: () => _
 });
 var i = n(64700),
     s = n(311907),
     l = n(955572),
     a = n(406360),
     r = n(419954),
-    o = n(964404),
-    d = n(780964),
-    c = n(985018);
-let u = (0, r.Qx)(d.X.HIGH_DYNAMIC_RANGE, {
-    useTitle: () => c.intl.string(c.t.nemtgW),
-    useSubtitle: () => c.intl.string(c.t["O/Gjvn"]),
-    useBadge: () => "beta",
+    o = n(933297),
+    d = n(964404),
+    c = n(780964),
+    u = n(985018);
+let _ = (0, r.Qx)(c.X.HIGH_DYNAMIC_RANGE, {
+    useTitle: () => u.intl.string(u.t.nemtgW),
+    useSubtitle: () => u.intl.string(u.t["O/Gjvn"]),
+    usePersistentBadge: () => ({
+        badgeType: o.Xi.BETA
+    }),
     useOptions: function() {
         return i.useMemo(() => [{
-            name: c.intl.string(c.t.D5Fma9),
-            desc: c.intl.string(c.t.Qj75ck),
+            name: u.intl.string(u.t.D5Fma9),
+            desc: u.intl.string(u.t.Qj75ck),
             value: "no-limit"
         }, {
-            name: c.intl.string(c.t.ldcGIH),
-            desc: c.intl.string(c.t["+V/bDk"]),
+            name: u.intl.string(u.t.ldcGIH),
+            desc: u.intl.string(u.t["+V/bDk"]),
             value: "standard"
         }], [])
     },
@@ -32,7 +35,7 @@ let u = (0, r.Qx)(d.X.HIGH_DYNAMIC_RANGE, {
         (0, l.FU)(e)
     },
     useValue: function() {
-        return (0, s.bG)([o.Ay], () => o.Ay.hdrDynamicRange)
+        return (0, s.bG)([d.Ay], () => d.Ay.hdrDynamicRange)
     },
-    useSearchTerms: () => ["HDR", c.intl.string(c.t["O/Gjvn"])]
+    useSearchTerms: () => ["HDR", u.intl.string(u.t["O/Gjvn"])]
 })

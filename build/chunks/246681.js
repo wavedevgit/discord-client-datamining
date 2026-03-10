@@ -1,22 +1,22 @@
 /** chunk id: 246681 params = (module,exports,require) **/
-o.d(n, {
+t.d(n, {
     WrappedUnifiedPaymentModal: () => C
 });
-var t = o(627968),
-    a = o(64700),
-    i = o(937008),
-    l = o(156312),
-    s = o(546042),
-    d = o(285871),
-    r = o(736843),
-    c = o(818348);
+var o = t(627968),
+    a = t(64700),
+    i = t(937008),
+    l = t(156312),
+    s = t(546042),
+    r = t(285871),
+    d = t(736843),
+    c = t(818348);
 let p = e => {
         let {
             skuId: n,
-            applicationId: o,
+            applicationId: t,
             analyticsLocations: i,
             returnRef: l,
-            onComplete: d,
+            onComplete: r,
             onClose: c,
             renderHeader: p,
             transitionState: u,
@@ -24,15 +24,14 @@ let p = e => {
             paymentModalVersion: h = "v2"
         } = e, {
             paymentModalProps: y
-        } = (0, r.jP)(), I = a.useCallback((e, n) => {
+        } = (0, d.jP)(), I = a.useCallback((e, n) => {
             C(), null != c && c(e, n)
         }, [C, c]), k = y?.onClose ?? I;
-        return (0, t.jsx)(s.PaymentModal, {
+        return (0, o.jsx)(s.PaymentModal, {
             transitionState: u,
             returnRef: l,
-            applicationId: o,
-            onComplete: d,
-            hideShadow: !0,
+            applicationId: t,
+            onComplete: r,
             skuId: n,
             renderHeader: p,
             initialPlanId: null,
@@ -46,7 +45,7 @@ let p = e => {
         let {
             skuId: n
         } = e;
-        return (0, t.jsx)(l.PaymentContextProvider, {
+        return (0, o.jsx)(l.PaymentContextProvider, {
             ...e,
             skuIDs: null != n ? [n] : [],
             children: e.children
@@ -55,11 +54,11 @@ let p = e => {
     C = e => {
         let {
             loadId: n,
-            skuId: o,
+            skuId: t,
             applicationId: a,
             analyticsLocations: l,
             analyticsSourceLocation: s,
-            giftContextProps: r,
+            giftContextProps: d,
             flowSpecificOptions: C,
             onComplete: h,
             onClose: y,
@@ -68,31 +67,31 @@ let p = e => {
             checkoutFlowConfiguration: f,
             tenantCheckoutFlowConfig: m,
             renderHeader: P,
-            stepConfigs: S
+            stepConfigs: x
         } = e, {
-            purchaseType: x
+            purchaseType: S
         } = f, {
             CustomPaymentContextProvider: R = u,
             UnifiedCheckoutContextProvider: j
-        } = m, w = null != r ? i.dX : i.Mq;
-        return (0, t.jsx)(R, {
+        } = m, U = null != d ? i.dX : i.Mq;
+        return (0, o.jsx)(R, {
             applicationId: a,
             unifiedCheckoutFlow: k,
-            skuId: o,
+            skuId: t,
             activeSubscription: null,
             loadId: n,
-            stepConfigs: S,
-            purchaseType: x,
+            stepConfigs: x,
+            purchaseType: S,
             analyticsLocations: l,
-            paymentGateway: k === d.C.ORB_CHECKOUT ? c.kM.VIRTUAL_CURRENCY : void 0,
-            isGift: r?.isGift,
+            paymentGateway: k === r.C.ORB_CHECKOUT ? c.kM.VIRTUAL_CURRENCY : void 0,
+            isGift: d?.isGift,
             excludeSubscriptionPlansBySKU: !0,
-            excludeSKUPurchasePreviews: k === d.C.ORB_CHECKOUT,
-            children: (0, t.jsx)(w, {
-                ...r,
-                children: (0, t.jsx)(j, {
+            excludeSKUPurchasePreviews: k === r.C.ORB_CHECKOUT,
+            children: (0, o.jsx)(U, {
+                ...d,
+                children: (0, o.jsx)(j, {
                     applicationId: a,
-                    skuId: o,
+                    skuId: t,
                     loadId: n,
                     analyticsLocations: l,
                     analyticsSourceLocation: s,
@@ -100,9 +99,9 @@ let p = e => {
                     onClose: y,
                     renderModalProps: I,
                     flowSpecificOptions: C,
-                    children: (0, t.jsx)(p, {
+                    children: (0, o.jsx)(p, {
                         applicationId: a,
-                        skuId: o,
+                        skuId: t,
                         renderHeader: P,
                         analyticsLocations: l,
                         onComplete: h,

@@ -1,32 +1,37 @@
 /** chunk id: 44909 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => o
 });
 var i = n(627968),
     s = n(397927),
-    l = n(791498),
-    a = n(244242);
+    l = n(600812),
+    a = n(791498),
+    r = n(244242);
 
-function r(e) {
+function o(e) {
     let {
         node: t
     } = e, {
         useValue: n,
-        setValue: r,
-        useTitle: o,
-        useSubtitle: d,
-        useOptions: c,
-        useBadge: u
-    } = t, _ = o(), g = d?.(), m = n(), A = c(), h = u?.(), p = (0, l.q)(t);
-    return (0, i.jsx)(a.L, {
+        setValue: o,
+        useTitle: d,
+        useSubtitle: c,
+        useOptions: u,
+        usePersistentBadge: _,
+        getDismissibleBadges: g
+    } = t, m = d(), A = c?.(), h = n(), p = u(), x = _?.(), E = g?.(), T = (0, l.A)({
+        persistentBadge: x,
+        dismissibleBadges: E
+    }), S = (0, a.q)(t);
+    return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(s.z6M, {
-            label: _,
-            description: g,
-            options: A,
-            value: m,
-            badge: h,
+            label: m,
+            description: A,
+            options: p,
+            value: h,
+            badge: T,
             onChange: e => {
-                p(), r(e)
+                S(), o(e)
             }
         })
     })

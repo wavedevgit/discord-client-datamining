@@ -1,9 +1,9 @@
 /** chunk id: 447784 params = (module,exports,require) **/
 t.d(n, {
-    k: () => P
+    k: () => S
 });
-var i = t(627968),
-    l = t(64700),
+var l = t(627968),
+    i = t(64700),
     r = t(503698),
     s = t.n(r),
     a = t(575593),
@@ -16,64 +16,64 @@ var i = t(627968),
     E = t(761365),
     _ = t(985018),
     x = t(836314);
-let P = e => {
+let S = e => {
     let n, t, {
             skuId: r,
-            user: P,
-            claimed: T,
-            onSelect: S,
+            user: S,
+            claimed: P,
+            onSelect: T,
             selectedSkuId: I
         } = e,
-        [h, g] = l.useState(null),
-        A = l.useCallback(e => {
+        [h, g] = i.useState(null),
+        A = i.useCallback(e => {
             g(e)
         }, []),
-        f = l.useMemo(() => ({
+        f = i.useMemo(() => ({
             current: h
         }), [h]),
         {
             isHoveringOrFocusing: j
         } = (0, u.A)(f),
-        M = !T && j,
+        R = !P && j,
         {
-            product: R
+            product: M
         } = (0, d.q)(r);
-    if (null == R) return null;
-    let C = R.items[0];
-    return null == C ? null : ((0, c.T)(C) ? (t = a.R.AVATAR_DECORATION, n = (0, i.jsx)(m.i, {
+    if (null == M) return null;
+    let C = M.items[0];
+    return null == C ? null : ((0, c.T)(C) ? (t = a.R.AVATAR_DECORATION, n = (0, l.jsx)(m.i, {
         item: C,
-        user: P,
-        isHighlighted: M,
+        user: S,
+        isHighlighted: R,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(C) && (t = a.R.NAMEPLATE, n = (0, i.jsx)(E.A, {
+    })) : (0, p.F)(C) && (t = a.R.NAMEPLATE, n = (0, l.jsx)(E.A, {
         nameplate: C,
-        user: P,
-        isHighlighted: M,
+        user: S,
+        isHighlighted: R,
         size: "small"
-    })), (0, i.jsx)(o.vN3, {
-        children: (0, i.jsxs)(o.sqX, {
+    })), (0, l.jsx)(o.vN3, {
+        children: (0, l.jsxs)(o.sqX, {
             ref: A,
-            "aria-label": R.name ?? "",
+            "aria-label": M.name ?? "",
             onClick: () => {
-                null == r || null == S || T || S(r)
+                null == r || null == T || P || T(r)
             },
             className: s()(x._x, {
-                [x.Vp]: !T,
-                [x.mr]: M,
+                [x.Vp]: !P,
+                [x.mr]: R,
                 [x.md]: I === r
             }),
-            children: [(0, i.jsx)("div", {
+            children: [(0, l.jsx)("div", {
                 className: s()(x.VH, {
                     [x._Q]: t === a.R.AVATAR_DECORATION,
                     [x.M4]: t === a.R.NAMEPLATE
                 }),
-                children: null != n ? (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)("div", {
+                children: null != n ? (0, l.jsxs)(l.Fragment, {
+                    children: [(0, l.jsx)("div", {
                         className: s()(x.i1, {
-                            [x.Sf]: T
+                            [x.Sf]: P
                         }),
                         children: n
-                    }), T && (0, i.jsx)(o.rOg, {
+                    }), P && (0, l.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,
                         height: 48,
@@ -81,14 +81,14 @@ let P = e => {
                         className: x.j0
                     })]
                 }) : null
-            }), (0, i.jsxs)("div", {
+            }), (0, l.jsxs)("div", {
                 className: x.tZ,
-                children: [(0, i.jsx)(o.Heading, {
+                children: [(0, l.jsx)(o.Heading, {
                     variant: "heading-md/extrabold",
-                    children: R.name
-                }), (0, i.jsx)(o.Text, {
+                    children: M.name
+                }), (0, l.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: T ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
+                    children: P ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
                 })]
             })]
         })

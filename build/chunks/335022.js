@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(924985),
     _ = n(945886),
     m = n(72314),
-    E = n(769765),
-    x = n(808728),
+    x = n(769765),
+    E = n(808728),
     y = n(458294),
     v = n(71393),
     S = n(576705),
@@ -183,7 +183,7 @@ class M extends s.PureComponent {
 function P(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([x.Ay], () => x.Ay.getChannels(t)), l = (0, a.bG)([E.A], () => E.A.getCategories(t)), {
+    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([E.Ay], () => E.Ay.getChannels(t)), l = (0, a.bG)([x.A], () => x.A.getCategories(t)), {
         mutedChannels: r,
         collapseMuted: c
     } = (0, a.cf)([T.Ay], () => ({

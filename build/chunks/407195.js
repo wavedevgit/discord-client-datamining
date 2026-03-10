@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(147192),
     _ = n(480870),
     m = n(264140),
-    E = n(387462),
-    x = n(667285),
+    x = n(387462),
+    E = n(667285),
     y = n(920437),
     v = n(355622),
     S = n(408018),
@@ -217,7 +217,7 @@ class ei extends s.Component {
                 focused: s
             })
         });
-        return e.isPrivate() ? (0, i.jsx)(x.A, {
+        return e.isPrivate() ? (0, i.jsx)(E.A, {
             channel: e,
             children: d
         }, e.id) : (0, i.jsx)(y.A, {
@@ -294,7 +294,7 @@ class es extends s.PureComponent {
                 disableAnimations: u && f && !d
             },
             children: (0, i.jsxs)(s.Fragment, {
-                children: [!o && !h && (0, i.jsx)(E.A, {
+                children: [!o && !h && (0, i.jsx)(x.A, {
                     channel: t,
                     guild: r
                 }), (0, i.jsx)(X.Ay.Background, {
@@ -447,15 +447,15 @@ function el(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([U.A], () => U.A.getGuildId()), l = (0, d.bG)([V.A], () => V.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([R.A], () => null != l ? R.A.getPendingReply(l) : void 0), E = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
-        placeholder: x
+    } = e, s = (0, d.bG)([U.A], () => U.A.getGuildId()), l = (0, d.bG)([V.A], () => V.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([R.A], () => null != l ? R.A.getPendingReply(l) : void 0), x = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
+        placeholder: E
     } = (0, _.A)({
         channel: a
     });
     return null != a && null != p && q.kvI.GUILD_THREADS_ONLY.has(a.type) ? (0, i.jsx)(m.A, {}) : (0, i.jsx)(es, {
         guild: p,
         channel: a,
-        user: E,
+        user: x,
         opacity: c,
         nsfwAgree: A,
         chatKeybind: o,
@@ -463,7 +463,7 @@ function el(e) {
         isPreviewingInGame: h,
         pendingReply: g,
         contained: t,
-        placeholder: x,
+        placeholder: E,
         widget: q.uss.TEXT,
         ...n
     })
