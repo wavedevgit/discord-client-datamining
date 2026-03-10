@@ -36,12 +36,12 @@ function N(e) {
         onClose: n,
         ...m
     } = e, N = (0, r.bG)([g.A], () => g.A.getChannel(t)), S = (0, r.bG)([p.A], () => p.A.getGuild(N?.getGuildId())), [x, f] = l.useState(""), [O, T] = l.useState({}), [_, v] = l.useState(!1), [G, U] = l.useState(null), L = l.useRef(null), {
-        roles: R,
-        members: y,
-        getRichTag: M
+        roles: M,
+        members: R,
+        getRichTag: y
     } = (0, c.K)(S, N, A.QY, x), j = u.A.useSections({
-        roles: R,
-        members: y
+        roles: M,
+        members: R
     });
     if (null == N || null == S) return null;
     let D = async () => {
@@ -70,9 +70,9 @@ function N(e) {
         setQuery: f,
         pendingAdditions: O,
         setPendingAdditions: T,
-        roles: R,
-        members: y,
-        getRichTag: M,
+        roles: M,
+        members: R,
+        getRichTag: y,
         children: (0, i.jsx)(s.Modal, {
             ...m,
             title: E.intl.string(E.t.dMJ3Y6),

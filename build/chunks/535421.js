@@ -28,7 +28,7 @@ function m(e, t) {
         })
     }
     if (null != t.interaction && "SENDING" === t.state) return (0, i.jsx)(i.Fragment, {});
-    let n = null != t.webhookId ? t.author : u.default.getUser(t.author.id);
+    let n = null != t.webhookId ? t.author : u.default.getUser(t.author.id) ?? t.author;
     l()(null != n, "renderUserGuildPopout: user should never be null");
     let r = u.default.getCurrentUser();
     l()(null != r, "renderUserGuildPopout: currentUser should never be null");

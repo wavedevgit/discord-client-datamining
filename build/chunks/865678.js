@@ -166,7 +166,7 @@ function eC(e) {
         return (0, l.jsx)(I.A, {
             channel: n,
             guildId: s,
-            pickerIntention: ea.b_.CHANNEL_NAME,
+            pickerIntention: ea.b_.NO_CUSTOM_EMOJI,
             closePopout: i,
             onNavigateAway: i,
             onSelectEmoji: e => {
