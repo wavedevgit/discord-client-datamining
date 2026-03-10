@@ -1,11 +1,11 @@
 /** chunk id: 631467 params = (module,exports,require) **/
 t.d(l, {
-    A: () => a
+    A: () => i
 });
 var r = t(749394),
-    o = t(719986),
-    n = t(507832);
-class a {
+    n = t(719986),
+    o = t(507832);
+class i {
     id;
     applicationId;
     name;
@@ -56,27 +56,27 @@ class a {
             collection: {
                 application_id: l,
                 created_at: t,
-                updated_at: i,
-                unpublished_at: d,
-                unpublish_settings: s,
+                updated_at: a,
+                unpublished_at: s,
+                unpublish_settings: d,
                 tenant_metadata: c,
                 ...u
             },
             products: h
         } = e;
-        return new a({
+        return new i({
             ...u,
             applicationId: l,
-            products: h.map(e => n.A.fromServer(e)),
+            products: h.map(e => o.A.fromServer(e)),
             createdAt: new Date(t),
-            updatedAt: new Date(i),
-            unpublishedAt: null != d ? new Date(d) : void 0,
-            willUnpublishAt: s?.will_unpublish_at != null ? new Date(s.will_unpublish_at) : void 0,
+            updatedAt: new Date(a),
+            unpublishedAt: null != s ? new Date(s) : void 0,
+            willUnpublishAt: d?.will_unpublish_at != null ? new Date(d.will_unpublish_at) : void 0,
             styles: null != c.collectibles.styles ? r.A.fromServer(c.collectibles.styles) : void 0,
             bannerTextColor: c.collectibles.banner_text_color,
             heroRanking: c.collectibles.hero_ranking,
-            heroDisplayConfig: null != c.collectibles.hero_display_config ? o.M.fromServer(c.collectibles.hero_display_config) : void 0,
-            heroLogoDisplayConfig: null != c.collectibles.hero_logo_display_config ? o.M.fromServer(c.collectibles.hero_logo_display_config) : void 0,
+            heroDisplayConfig: null != c.collectibles.hero_display_config ? n.M.fromServer(c.collectibles.hero_display_config) : void 0,
+            heroLogoDisplayConfig: null != c.collectibles.hero_logo_display_config ? n.M.fromServer(c.collectibles.hero_logo_display_config) : void 0,
             heroUrl: c.collectibles.hero_url,
             heroRiveUrl: c.collectibles.hero_rive_url,
             heroAnimatedUrl: c.collectibles.hero_animated_url,

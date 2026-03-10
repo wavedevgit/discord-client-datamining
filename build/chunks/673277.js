@@ -1,14 +1,14 @@
 /** chunk id: 673277 params = (module,exports,require) **/
 t.d(l, {
-    A: () => o
+    A: () => n
 });
 var r = t(627968);
 t(64700);
-let o = e => {
+let n = e => {
     let {
         verticalMargin: l = 16,
         padding: t = 0,
-        children: o
+        children: n
     } = e;
     return (0, r.jsx)("section", {
         style: {
@@ -16,6 +16,6 @@ let o = e => {
             marginBottom: l,
             padding: t
         },
-        children: o
+        children: n
     })
 }

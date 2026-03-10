@@ -1,22 +1,22 @@
 /** chunk id: 646092 params = (module,exports,require) **/
 t.d(l, {
-    A: () => i
+    A: () => a
 });
 var r = t(627968),
-    o = t(397927),
-    n = t(976860),
-    a = t(53566);
-let i = e => {
+    n = t(397927),
+    o = t(976860),
+    i = t(53566);
+let a = e => {
     let {
         href: l,
         ctaText: t,
-        variant: i = "secondary"
-    } = e, d = (0, a.S)(t);
-    return (0, r.jsx)(o.Button, {
-        variant: i,
-        text: d,
+        variant: a = "secondary"
+    } = e, s = (0, i.S)(t);
+    return (0, r.jsx)(n.Button, {
+        variant: a,
+        text: s,
         onClick: () => {
-            (0, n.pX)(l)
+            (0, o.pX)(l)
         }
     })
 }

@@ -1,13 +1,13 @@
 /** chunk id: 41770 params = (module,exports,require) **/
 t.d(l, {
     C8: () => r,
-    Ej: () => i,
-    Ot: () => n,
-    oP: () => a,
-    uG: () => o
+    Ej: () => a,
+    Ot: () => o,
+    oP: () => i,
+    uG: () => n
 });
 let r = "dummy-tenant",
-    o = {
+    n = {
         id: "dummy-shop-home",
         children: [{
             block: "ContainedHero",
@@ -71,7 +71,7 @@ let r = "dummy-tenant",
             templateId: "dummy-popular-picks"
         }]
     },
-    n = {
+    o = {
         id: "dummy-popular-picks",
         children: [{
             block: "Section",
@@ -88,112 +88,19 @@ let r = "dummy-tenant",
             padding: 0,
             children: [{
                 block: "Grid",
-                columns: 3,
+                columns: 4,
                 children: [{
-                    block: "ShopProductCard",
-                    skuId: "1458472704167379109"
-                }, {
-                    block: "GridItem",
-                    columns: 2,
-                    rows: 2,
-                    children: [{
-                        block: "ShopProductCard",
-                        skuId: "1458472704079434020"
-                    }]
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458472704251396148"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1436367668788592782"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1447654090439004170"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458472704435945653"
-                }, {
-                    block: "GridItem",
-                    columns: 2,
-                    rows: 1,
-                    children: [{
-                        block: "ShopProductCard",
-                        skuId: "1428438925021548544"
-                    }]
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1428438924564631663"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1144308439720394944"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1432550258478682222"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458483484598337682"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1432550258126229565"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1428438924539334718"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458472704721158372"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1447654090539667609"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1333866045236314327"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458472704524156959"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1447654090556571799"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1428438924648382626"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1417311919643299840"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458472704192811088"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1432550258247995533"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1212569433839636530"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1447654090661302343"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1432550258465837086"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1447654090573217912"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1280621222496964630"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1447654090623549471"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1436367668897775757"
-                }, {
-                    block: "ShopProductCard",
-                    skuId: "1458472704222171347"
+                    block: "SkuList",
+                    skuBlock: "GridItemShopProductCard",
+                    skuBlockProps: {
+                        auto: !0
+                    },
+                    skuIds: ["1458472704167379109", "1447654091047178423", "1458472704251396148", "1436367668788592782", "1447654090439004170", "1458472704435945653", "1428438925021548544", "1428438924564631663", "1144308439720394944", "1432550258478682222", "1458483484598337682", "1432550258126229565", "1428438924539334718", "1458472704721158372", "1447654090539667609", "1333866045236314327", "1458472704524156959", "1447654090556571799", "1428438924648382626", "1417311919643299840", "1458472704192811088", "1432550258247995533", "1212569433839636530", "1447654090661302343", "1432550258465837086", "1447654090573217912", "1280621222496964630", "1447654090623549471", "1436367668897775757", "1458472704222171347"]
                 }]
             }]
         }]
     },
-    a = {
+    i = {
         id: "dummy-orb-shelf",
         children: [{
             block: "Section",
@@ -236,7 +143,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    i = {
+    a = {
         id: "dummy-sku-list",
         children: [{
             block: "SkuList",

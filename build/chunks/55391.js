@@ -1,24 +1,24 @@
 /** chunk id: 55391 params = (module,exports,require) **/
 t.d(l, {
-    A: () => d
+    A: () => s
 });
 var r = t(64700),
-    o = t(311907),
-    n = t(49463),
-    a = t(409013),
-    i = t(194822);
-let d = (e, l, t) => {
-    let d = (0, o.bG)([n.A], () => n.A.hasLoadedExperiments),
-        [s, c, u] = (0, o.yK)([i.A], () => [i.A.getTemplateLayout(e, l, t), i.A.isFetchingTemplate(e, l, t), i.A.getTemplateFetchError(e, l, t)]),
-        h = null == s && null != l && d && !c && null == u;
+    n = t(311907),
+    o = t(49463),
+    i = t(409013),
+    a = t(194822);
+let s = (e, l, t) => {
+    let s = (0, n.bG)([o.A], () => o.A.hasLoadedExperiments),
+        [d, c, u] = (0, n.yK)([a.A], () => [a.A.getTemplateLayout(e, l, t), a.A.isFetchingTemplate(e, l, t), a.A.getTemplateFetchError(e, l, t)]),
+        h = null == d && null != l && s && !c && null == u;
     return r.useEffect(() => {
-        h && (0, a.J)({
+        h && (0, i.J)({
             tenantId: e,
             templateId: l,
             requestParams: t
         }).catch(() => {})
     }, [h, e, l, t]), {
-        layout: s,
+        layout: d,
         loading: c,
         error: u
     }

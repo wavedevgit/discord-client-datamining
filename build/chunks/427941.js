@@ -1,19 +1,19 @@
 /** chunk id: 427941 params = (module,exports,require) **/
 t.d(l, {
-    A: () => a
+    A: () => i
 });
 var r = t(627968),
-    o = t(506456),
-    n = t(401721);
-let a = e => {
+    n = t(506456),
+    o = t(401721);
+let i = e => {
     let {
         backgroundImage: l,
         children: t
-    } = e, a = (0, o.A)(l.src);
+    } = e, i = (0, n.A)(l.src);
     return (0, r.jsx)("div", {
-        className: n.k,
+        className: o.k,
         style: {
-            backgroundImage: `url(${a})`
+            backgroundImage: `url(${i})`
         },
         children: t
     })

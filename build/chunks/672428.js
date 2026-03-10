@@ -3,32 +3,32 @@ t.d(l, {
     D: () => c
 });
 var r = t(64700),
-    o = t(575593),
-    n = t(417597),
-    a = t(67480),
-    i = t(979286),
-    d = t(590180),
-    s = t(652215);
+    n = t(575593),
+    o = t(417597),
+    i = t(67480),
+    a = t(979286),
+    s = t(590180),
+    d = t(652215);
 
 function c(e, l) {
-    let t = (0, n.yK)([a.A], () => e.map(e => a.A.get(e))),
-        c = (0, n.yK)([d.A], () => e.map(e => d.A.isFetchingProduct(e))),
-        u = (0, n.yK)([d.A], () => e.map(e => d.A.getProduct(e))),
-        h = (0, n.yK)([d.A], () => e.map(e => d.A.getProductFetchError(e))),
-        p = (0, n.yK)([d.A], () => e.map(e => d.A.getProductFetchErrorTimestamp(e)));
+    let t = (0, o.yK)([i.A], () => e.map(e => i.A.get(e))),
+        c = (0, o.yK)([s.A], () => e.map(e => s.A.isFetchingProduct(e))),
+        u = (0, o.yK)([s.A], () => e.map(e => s.A.getProduct(e))),
+        h = (0, o.yK)([s.A], () => e.map(e => s.A.getProductFetchError(e))),
+        m = (0, o.yK)([s.A], () => e.map(e => s.A.getProductFetchErrorTimestamp(e)));
     return (0, r.useEffect)(() => {
         let r = Date.now();
-        for (let [n, a] of e.entries()) {
-            let e = t[n],
-                d = u[n],
-                m = c[n],
-                _ = h[n],
-                S = p[n],
-                b = !0 === l && d?.type === o.R.BUNDLE && 0 === d.items.length,
-                T = null != _ && null != S && r - S < 36e5;
-            null != d && !b || null != e && e.productLine !== s.EZt.COLLECTIBLES || m || T || (0, i.Jp)(a, {
+        for (let [o, i] of e.entries()) {
+            let e = t[o],
+                s = u[o],
+                p = c[o],
+                _ = h[o],
+                T = m[o],
+                S = !0 === l && s?.type === n.R.BUNDLE && 0 === s.items.length,
+                A = null != _ && null != T && r - T < 36e5;
+            null != s && !S || null != e && e.productLine !== d.EZt.COLLECTIBLES || p || A || (0, a.Jp)(i, {
                 includeBundles: l
             })
         }
-    }, [e, t, c, u, h, p, l]), u.some((e, l) => c[l] || null == e && null == h[l])
+    }, [e, t, c, u, h, m, l]), u.some((e, l) => c[l] || null == e && null == h[l])
 }

@@ -11,7 +11,8 @@ function l(t) {
         imageUrl: i,
         backgroundImageUrl: a,
         altText: e,
-        customClassNames: l
+        overlayImageUrl: l,
+        customClassNames: r
     } = t;
     return {
         type: "dynamic",
@@ -21,7 +22,8 @@ function l(t) {
             imageUrl: i,
             backgroundImageUrl: a,
             altText: e,
-            customClassNames: l
+            overlayImageUrl: l,
+            customClassNames: r
         }
     }
 }

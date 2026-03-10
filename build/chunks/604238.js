@@ -1,30 +1,32 @@
 /** chunk id: 604238 params = (module,exports,require) **/
 t.d(l, {
-    E: () => k,
+    E: () => v,
     e: () => I
 });
 var r = t(64700),
-    o = t(735438),
-    n = t(528226),
-    a = t(427941),
-    i = t(653793),
-    d = t(118713),
-    s = t(261225),
+    n = t(735438),
+    o = t(528226),
+    i = t(427941),
+    a = t(653793),
+    s = t(118713),
+    d = t(261225),
     c = t(970488),
     u = t(720462),
     h = t(673277),
-    p = t(700263),
-    m = t(304973),
+    m = t(700263),
+    p = t(304973),
     _ = t(18769),
-    S = t(458306),
-    b = t(282203),
-    T = t(22519),
-    C = t(607795),
-    A = t(954644),
-    E = t(930948),
-    g = t(634791);
-let k = {
-        ContainedHero: n.A,
+    T = t(458306),
+    S = t(282203),
+    A = t(22519),
+    E = t(607795),
+    b = t(702755),
+    C = t(954644),
+    g = t(997175),
+    f = t(930948),
+    y = t(634791);
+let v = {
+        ContainedHero: o.A,
         BasicHero: e => {
             let {
                 bannerSrc: l
@@ -33,36 +35,38 @@ let k = {
         },
         PromotionalHero: () => null,
         InteractiveHScroll: u.A,
-        Carousel: d.A,
-        Grid: s.A,
+        Carousel: s.A,
+        Grid: d.A,
         GridItem: c.A,
         Section: h.A,
-        Card: i.A,
-        BackgroundImage: a.A,
-        Skeleton: p.A,
-        FeaturedChip: m.A,
+        Card: a.A,
+        BackgroundImage: i.A,
+        Skeleton: m.A,
+        FeaturedChip: p.A,
         FeaturedCollection: _.A,
         FeaturedProduct: () => null,
-        ShopProductCard: A.A,
-        StorefrontProductCard: E.A,
-        SkuList: b.A,
-        SubLayout: T.A,
-        SubTemplate: C.A,
-        Button: S.ar,
-        Heading: S.Oo,
-        Stack: S.Kp,
-        Text: S.t,
-        Tooltip: S.xY,
-        Any1: g.A,
-        Any2: g.A,
-        Any3: g.A
+        ShopProductCard: C.A,
+        GridItemShopProductCard: b.A,
+        StorefrontProductCard: f.A,
+        GridItemStorefrontProductCard: g.A,
+        SkuList: S.A,
+        SubLayout: A.A,
+        SubTemplate: E.A,
+        Button: T.ar,
+        Heading: T.Oo,
+        Stack: T.Kp,
+        Text: T.t,
+        Tooltip: T.xY,
+        Any1: y.A,
+        Any2: y.A,
+        Any3: y.A
     },
     I = function() {
         let {
             overrides: e
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
         return r.useMemo(() => {
-            let l = (0, o.cloneDeep)(k);
+            let l = (0, n.cloneDeep)(v);
             if (null != e)
                 for (let [t, r] of Object.entries(e)) null != r && (l[t] = r);
             return l

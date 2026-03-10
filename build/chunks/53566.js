@@ -1,9 +1,9 @@
 /** chunk id: 53566 params = (module,exports,require) **/
 t.d(l, {
-    S: () => n
+    S: () => o
 });
 var r = t(985018);
-let o = {
+let n = {
         COLLECTIBLES_SHOP_THE_VAULT_COLLECTION: r.t["/35Yzx"],
         COLLECTIBLES_SHOP_THE_COLLECTION: r.t.xYKa1T,
         COLLECTIBLES_SHOP_FEED_END_OF_SCROLL_TEXT: r.t.Yr70c4,
@@ -18,9 +18,9 @@ let o = {
         COLLECTIBLES_ORB_HOME_WHAT_CAN_I_GET_HEADING: r.t.n6G8gI,
         COLLECTIBLES_ORB_HOME_WHAT_CAN_I_GET_BODY: r.t["/xb5AU"]
     },
-    n = e => {
-        if (e in o) {
-            let l = r.intl.string(o[e]);
+    o = e => {
+        if (e in n) {
+            let l = r.intl.string(n[e]);
             if ("" !== l) return l
         }
         return e

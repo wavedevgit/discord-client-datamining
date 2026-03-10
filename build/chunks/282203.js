@@ -1,50 +1,56 @@
 /** chunk id: 282203 params = (module,exports,require) **/
 t.d(l, {
-    A: () => d
+    A: () => s
 });
 var r = t(627968),
-    o = t(64700),
-    n = t(841702),
-    a = t(672428);
-let i = e => {
+    n = t(64700),
+    o = t(841702),
+    i = t(672428);
+let a = e => {
         let {
             skuIds: l = [],
             skuBlock: t = "ShopProductCard",
-            sortPurchased: i = !1,
+            skuBlockProps: a,
+            sortPurchased: s = !1,
             showSkeleton: d = !1,
-            componentMap: s
-        } = e, c = (0, a.D)(l, !0), {
-            purchases: u,
-            isFetching: h
-        } = (0, n.b5)(), p = (0, o.useMemo)(() => i ? [...l].sort((e, l) => (null != u.get(e)) - (null != u.get(l))) : l, [l, i, u]), m = s[t], _ = s.Skeleton;
-        return null == m ? null : (c || i && h) && d ? l.map((e, l) => null != _ ? (0, r.jsx)(_, {
-            children: (0, r.jsx)(m, {
+            componentMap: c
+        } = e, u = (0, i.D)(l, !0), {
+            purchases: h,
+            isFetching: m
+        } = (0, o.b5)(), p = (0, n.useMemo)(() => s ? [...l].sort((e, l) => (null != h.get(e)) - (null != h.get(l))) : l, [l, s, h]), _ = c[t], T = c.Skeleton;
+        return null == _ ? null : (u || s && m) && d ? l.map((e, l) => null != T ? (0, r.jsx)(T, {
+            children: (0, r.jsx)(_, {
+                ...a,
                 skuId: e,
                 productId: e
             })
-        }, `${e}-${l}`) : null) : p.map((e, l) => (0, r.jsx)(m, {
+        }, `${e}-${l}`) : null) : p.map((e, l) => (0, r.jsx)(_, {
+            ...a,
             skuId: e,
             productId: e
         }, `${e}-${l}`))
     },
-    d = e => {
+    s = e => {
         let {
             skuIds: l = [],
             skuBlock: t = "ShopProductCard",
+            skuBlockProps: n,
             sortPurchased: o = !1,
-            eagerLoad: n = !1,
-            showSkeleton: a = !1,
+            eagerLoad: i = !1,
+            showSkeleton: s = !1,
             componentMap: d
         } = e;
-        if (n || o) return (0, r.jsx)(i, {
+        if (i || o) return (0, r.jsx)(a, {
             skuIds: l,
             skuBlock: t,
+            skuBlockProps: n,
             sortPurchased: o,
-            showSkeleton: a,
+            showSkeleton: s,
             componentMap: d
         });
-        let s = d[t];
-        return null == s ? null : l.map((e, l) => (0, r.jsx)(s, {
+        let c = d[t];
+        return null == c ? null : l.map((e, l) => (0, r.jsx)(c, {
+            ...n,
             skuId: e,
             productId: e
         }, `${e}-${l}`))
