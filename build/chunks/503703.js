@@ -1,11 +1,10 @@
 /** chunk id: 503703 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    X: () => r
+    X: () => l
 });
 var i = n(73153);
 
-function r(e) {
+function l(e) {
     i.h.dispatch({
         type: "DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS",
         skuId: e

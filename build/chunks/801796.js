@@ -19,8 +19,8 @@ let A = (e, t) => {
         let n = s.A.getChannel(t);
         return null != n && ((0, l.Gw)(n.type) || c.kvI.GUILD_VOCAL.has(n.type) ? o.Ay.getMentionCount(t) > 0 || d.A.getVoiceChannelId() === t : (!_.Ay.isChannelMuted(e, t) || o.Ay.getMentionCount(t) > 0) && (0, r.Y)(n))
     },
-    I = (e, t) => t === u.P.GUILD_EVENT ? !_.Ay.isMuteScheduledEventsEnabled(e) && o.Ay.hasUnread(e, t) : o.Ay.hasUnread(e, t),
-    E = (e, t) => {
+    E = (e, t) => t === u.P.GUILD_EVENT ? !_.Ay.isMuteScheduledEventsEnabled(e) && o.Ay.hasUnread(e, t) : o.Ay.hasUnread(e, t),
+    I = (e, t) => {
         let n = s.A.getChannel(t);
         return null != n && !!c.kvI.GUILD_VOCAL.has(n.type) && (o.Ay.getMentionCount(t) > 0 || d.A.getVoiceChannelId() === t && o.Ay.getUnreadCount(t) > 0)
     },
@@ -32,8 +32,8 @@ let A = (e, t) => {
             return (0, i.A)(1, {
                 channelPredicate: A,
                 guildPredicate: t => t === e || !_.Ay.isMuted(t),
-                guildFeaturePredicate: I,
-                ensureChatIsVisible: E,
+                guildFeaturePredicate: E,
+                ensureChatIsVisible: I,
                 withVoiceChannels: !0
             }), !1
         }
@@ -46,8 +46,8 @@ let A = (e, t) => {
             return (0, i.A)(-1, {
                 channelPredicate: A,
                 guildPredicate: t => t === e || !_.Ay.isMuted(t),
-                guildFeaturePredicate: I,
-                ensureChatIsVisible: E,
+                guildFeaturePredicate: E,
+                ensureChatIsVisible: I,
                 withVoiceChannels: !0
             }), !1
         }
@@ -58,7 +58,7 @@ let A = (e, t) => {
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(1, {
             channelPredicate: h,
-            ensureChatIsVisible: E,
+            ensureChatIsVisible: I,
             withVoiceChannels: !0
         }), !1)
     },
@@ -67,7 +67,7 @@ let A = (e, t) => {
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(-1, {
             channelPredicate: h,
-            ensureChatIsVisible: E,
+            ensureChatIsVisible: I,
             withVoiceChannels: !0
         }), !1)
     }

@@ -33,7 +33,7 @@ function o(e) {
     })(r), u = e => {
         let i = d[e];
         null == i || "" === i ? o(n, e) : null != t.Choices && t.Choices[e]?.TextEntry === "true" ? o(n, `${e}:TEXT:${i}`) : o(n, e)
-    }, m = (e, t) => {
+    }, _ = (e, t) => {
         o(n, null != t && "" !== t ? `${e}:TEXT:${t}` : e)
     };
     return null == t.Choices ? (0, i.jsx)("div", {
@@ -56,7 +56,7 @@ function o(e) {
                     onSelectionChange: u,
                     inputType: "radio",
                     textInputValue: d[t],
-                    onTextInputChange: m
+                    onTextInputChange: _
                 }, t)
             })
         })
@@ -91,13 +91,13 @@ function c(e) {
     })(r), u = (e, t) => e.map(e => {
         let n = t[e];
         return null != n && "" !== n ? `${e}:TEXT:${n}` : e
-    }).join(","), m = e => {
+    }).join(","), _ = e => {
         let t = c.includes(e) ? c.filter(t => t !== e) : [...c, e],
             i = {
                 ...d
             };
         t.includes(e) || delete i[e], o(n, u(t, i))
-    }, _ = (e, t) => {
+    }, A = (e, t) => {
         o(n, u(c, {
             ...d,
             [e]: t
@@ -120,10 +120,10 @@ function c(e) {
                     choiceId: t,
                     choice: n,
                     isSelected: c.includes(t),
-                    onSelectionChange: m,
+                    onSelectionChange: _,
                     inputType: "checkbox",
                     textInputValue: d[t],
-                    onTextInputChange: _
+                    onTextInputChange: A
                 }, t)
             })
         })

@@ -16,7 +16,7 @@ function d(e) {
         message: t,
         usernameHook: n,
         compact: d
-    } = e, u = (0, s.Ay)(t), m = n(u);
+    } = e, u = (0, s.Ay)(t), _ = n(u);
     return (0, i.jsx)(o.A, {
         iconNode: (0, i.jsx)(l.R2l, {
             size: "xs",
@@ -26,7 +26,7 @@ function d(e) {
         compact: d,
         children: c.intl.format(c.t["4wLp25"], {
             username: u.nick,
-            usernameHook: m,
+            usernameHook: _,
             editGroupButton: (0, i.jsx)(l.Text, {
                 tag: "span",
                 variant: "text-md/medium",

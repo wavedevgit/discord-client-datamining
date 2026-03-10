@@ -1,6 +1,6 @@
 /** chunk id: 59784 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => T
 });
 var i = n(448761),
     l = n(311907),
@@ -11,13 +11,13 @@ var i = n(448761),
     c = n(652215);
 let d = new Map,
     u = !1,
-    m = !1;
+    _ = !1;
 
-function _(e) {
+function A(e) {
     return null != e.removed_at ? o.xI.REMOVED : null != e.accepted_at ? o.xI.ACCEPTED : o.xI.PENDING
 }
 
-function A(e) {
+function m(e) {
     let {
         messages: t
     } = e;
@@ -35,7 +35,7 @@ function E(e) {
         errorStatus: null
     }), a.h.wait(() => (0, s.el)(t).catch(c.FXj)), !0)
 }
-class f extends l.Ay.Store {
+class I extends l.Ay.Store {
     static displayName = "PremiumGroupInviteStore";
     getInvite(e) {
         return d.get(e) ?? null
@@ -57,25 +57,25 @@ class f extends l.Ay.Store {
         return u
     }
     isFetchingAllInvites() {
-        return m
+        return _
     }
 }
-let h = new f(a.h, {
+let T = new I(a.h, {
     PREMIUM_GROUP_INVITES_FETCH_START: function() {
-        m = !0
+        _ = !0
     },
     PREMIUM_GROUP_INVITES_FETCH_SUCCESS: function(e) {
         let {
             invites: t
         } = e;
-        for (let e of (m = !1, u = !0, t)) d.set(e.id, {
-            state: _(e),
+        for (let e of (_ = !1, u = !0, t)) d.set(e.id, {
+            state: A(e),
             invite: e,
             errorStatus: null
         })
     },
     PREMIUM_GROUP_INVITES_FETCH_FAIL: function() {
-        m = !1
+        _ = !1
     },
     PREMIUM_GROUP_INVITE_FETCH_START: function(e) {
         let {
@@ -93,7 +93,7 @@ let h = new f(a.h, {
             invite: n
         } = e;
         d.set(t, {
-            state: _(n),
+            state: A(n),
             invite: n,
             errorStatus: null
         })
@@ -213,10 +213,10 @@ let h = new f(a.h, {
         } = e;
         return E(t)
     },
-    LOCAL_MESSAGES_LOADED: A,
-    LOAD_MESSAGES_SUCCESS: A,
-    LOAD_MESSAGES_AROUND_SUCCESS: A,
+    LOCAL_MESSAGES_LOADED: m,
+    LOAD_MESSAGES_SUCCESS: m,
+    LOAD_MESSAGES_AROUND_SUCCESS: m,
     LOGOUT: function() {
-        d = new Map, u = !1, m = !1
+        d = new Map, u = !1, _ = !1
     }
 })

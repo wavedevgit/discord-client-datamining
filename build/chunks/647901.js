@@ -1,29 +1,29 @@
 /** chunk id: 647901 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+a.d(t, {
     X: () => _,
     x: () => d
 });
-var a = n(627968),
-    r = n(64700),
-    i = n(503698),
-    s = n.n(i),
-    c = n(865513);
-let o = {
+var n = a(627968),
+    r = a(64700),
+    i = a(503698),
+    o = a.n(i),
+    s = a(865513);
+let l = {
         SIZE: {
             default: void 0,
-            reduced: c.k2
+            reduced: s.k2
         },
         COLOR: {
             default: void 0,
-            muted: c.JF
+            muted: s.JF
         },
         WEIGHT: {
             default: void 0,
-            reduced: c.Xj
+            reduced: s.Xj
         }
     },
-    l = r.createContext({
+    c = r.createContext({
         className: void 0,
         size: "default",
         color: "default",
@@ -31,27 +31,27 @@ let o = {
     });
 
 function _() {
-    return r.useContext(l)
+    return r.useContext(c)
 }
 
 function d(e) {
     let {
         children: t,
-        size: n,
+        size: a,
         color: i,
         weight: d
-    } = e, u = _(), m = r.useMemo(() => {
+    } = e, u = _(), p = r.useMemo(() => {
         let e = {
                 className: void 0,
-                size: n ?? u.size,
+                size: a ?? u.size,
                 color: i ?? u.color,
                 weight: d ?? u.weight
             },
-            t = s()(o.SIZE[e.size], o.COLOR[e.color], o.WEIGHT[e.weight]);
-        return "" !== t && (e.className = s()(c.zr, t)), e
-    }, [n, i, d, u]);
-    return (0, a.jsx)(l.Provider, {
-        value: m,
+            t = o()(l.SIZE[e.size], l.COLOR[e.color], l.WEIGHT[e.weight]);
+        return "" !== t && (e.className = o()(s.zr, t)), e
+    }, [a, i, d, u]);
+    return (0, n.jsx)(c.Provider, {
+        value: p,
         children: t
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 234957 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => A
 });
 var i = n(627968),
     l = n(64700),
@@ -11,38 +11,38 @@ var i = n(627968),
     c = n(763754),
     d = n(448368),
     u = n(652215);
-let m = l.memo(function(e) {
+let _ = l.memo(function(e) {
     let {
         baseMessage: t,
         channel: n,
         referencedMessage: u,
-        compact: m = !1
-    } = e, _ = u.state === r.a.LOADED ? u.message : void 0, A = l.useMemo(() => _?.content != null && "" !== _.content ? (0, o.Ay)(_, {
+        compact: _ = !1
+    } = e, A = u.state === r.a.LOADED ? u.message : void 0, m = l.useMemo(() => A?.content != null && "" !== A.content ? (0, o.Ay)(A, {
         formatInline: !0
-    }).content : null, [_]), {
+    }).content : null, [A]), {
         isReplyAuthorBlocked: E,
-        isReplyAuthorIgnored: f
+        isReplyAuthorIgnored: I
     } = (0, a.cf)([s.A], () => ({
-        isReplyAuthorBlocked: null != _ && s.A.isBlockedForMessage(_),
-        isReplyAuthorIgnored: null != _ && s.A.isIgnoredForMessage(_)
-    }), [_]), h = (0, c.X4)(_), g = (0, c.X4)(t);
+        isReplyAuthorBlocked: null != A && s.A.isBlockedForMessage(A),
+        isReplyAuthorIgnored: null != A && s.A.isIgnoredForMessage(A)
+    }), [A]), T = (0, c.X4)(A), f = (0, c.X4)(t);
     return (0, i.jsx)(d.A, {
-        repliedAuthor: h,
-        baseAuthor: g,
+        repliedAuthor: T,
+        baseAuthor: f,
         baseMessage: t,
         channel: n,
         referencedMessage: u,
-        content: A,
-        compact: m,
+        content: m,
+        compact: _,
         isReplyAuthorBlocked: E,
-        isReplyAuthorIgnored: f,
+        isReplyAuthorIgnored: I,
         isReplySpineClickable: !1,
         showReplySpine: !0
     })
 });
 
-function _(e, t, n, l, a) {
-    return e.type !== u.lAJ.REPLY || null == n ? null : (0, i.jsx)(m, {
+function A(e, t, n, l, a) {
+    return e.type !== u.lAJ.REPLY || null == n ? null : (0, i.jsx)(_, {
         baseMessage: e,
         channel: t,
         referencedMessage: l,

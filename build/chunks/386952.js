@@ -1,32 +1,32 @@
 /** chunk id: 386952 params = (module,exports,require) **/
-l.d(t, {
-    e: () => a
+n.d(t, {
+    e: () => o
 });
-var n = l(627968),
-    i = l(64700),
-    r = l(503698),
-    s = l.n(r),
-    u = l(968338);
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    a = n(968338);
 
-function a() {
-    let [e, t] = i.useState(!1);
+function o() {
+    let [e, t] = l.useState(!1);
     return {
         isTruncated: e,
-        ExpandableTextContainer: i.memo(function(e) {
+        ExpandableTextContainer: l.memo(function(e) {
             let {
-                showAll: l = !1,
-                className: i,
+                showAll: n = !1,
+                className: l,
                 children: r,
-                lineClamp: a = 2
+                lineClamp: o = 2
             } = e;
-            return (0, n.jsx)("div", {
+            return (0, i.jsx)("div", {
                 ref: e => {
                     null != e && t(e.scrollHeight - e.clientHeight > 1)
                 },
-                className: s()(u.I, i),
-                style: l ? void 0 : {
-                    lineClamp: a,
-                    WebkitLineClamp: a
+                className: s()(a.I, l),
+                style: n ? void 0 : {
+                    lineClamp: o,
+                    WebkitLineClamp: o
                 },
                 children: r
             })

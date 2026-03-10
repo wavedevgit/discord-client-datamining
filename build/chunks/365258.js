@@ -20,7 +20,7 @@ var i, r = n(873298),
     u = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
 let A = r.Qd;
 
-function I(e) {
+function E(e) {
     switch (e) {
         case A.ACTIVITY_STATUS_OFF:
             return 2;
@@ -32,20 +32,20 @@ function I(e) {
             return -1
     }
 }
-let E = new Map([
+let I = new Map([
     [r.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
     [r.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
     [r.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
 ]);
 
 function g(e) {
-    return E.get(e) ?? A.ACTIVITY_STATUS_OFF
+    return I.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
 function C(e, t) {
     if (e === t) return null;
-    let n = I(e),
-        i = I(t);
+    let n = E(e),
+        i = E(t);
     if (n < 0 || i < 0) return null;
     let r = i < n ? "restricting" : "expanding",
         a = (0, _.Kk)(),
@@ -107,7 +107,7 @@ function S(e, t) {
 function f(e, t) {
     let n = g(t),
         i = a._Z.getSetting();
-    if (i === n || I(g(e)) > I(n) != I(i) > I(n)) return null;
+    if (i === n || E(g(e)) > E(n) != E(i) > E(n)) return null;
     let l = C(i, n);
     if (null == l) return null;
     let s = function(e) {

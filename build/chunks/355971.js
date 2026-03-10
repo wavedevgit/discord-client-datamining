@@ -1,44 +1,44 @@
 /** chunk id: 355971 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
+a.d(t, {
     A: () => u
 });
-var a = n(627968);
-n(64700);
-var r = n(317097),
-    i = n(311907),
-    s = n(827734),
-    c = n(990078),
-    o = n(397927),
-    l = n(775602),
-    _ = n(496885),
-    d = n(985018);
+var n = a(627968);
+a(64700);
+var r = a(317097),
+    i = a(311907),
+    o = a(827734),
+    s = a(990078),
+    l = a(397927),
+    c = a(775602),
+    _ = a(496885),
+    d = a(985018);
 
 function u(e) {
     let t, {
-            color: n,
+            color: a,
             size: u,
-            forcedIconColor: m,
-            className: g,
-            iconClassName: I,
-            tooltipText: b
+            forcedIconColor: p,
+            className: f,
+            iconClassName: m,
+            tooltipText: h
         } = e,
-        [A, E] = (0, i.yK)([l.A], () => [l.A.desaturateUserColors, l.A.saturation]),
-        f = (0, o.rdh)(s.A.unsafe_rawColors.PRIMARY_300).hex(),
-        h = (0, r.LX)(n ?? f),
-        p = (0, r.$k)(h, !1, A ? E : null);
-    return t = null != m ? m : .3 > (0, r.OK)(h) ? s.A.unsafe_rawColors.PRIMARY_630.css : s.A.unsafe_rawColors.WHITE.css, (0, a.jsx)(c.m, {
-        text: null != b ? b : d.intl.string(d.t.T3PvV4),
-        children: (0, a.jsx)(_.A, {
-            className: g,
-            color: p,
+        [g, C] = (0, i.yK)([c.A], () => [c.A.desaturateUserColors, c.A.saturation]),
+        b = (0, l.rdh)(o.A.unsafe_rawColors.PRIMARY_300).hex(),
+        y = (0, r.LX)(a ?? b),
+        A = (0, r.$k)(y, !1, g ? C : null);
+    return t = null != p ? p : .3 > (0, r.OK)(y) ? o.A.unsafe_rawColors.PRIMARY_630.css : o.A.unsafe_rawColors.WHITE.css, (0, n.jsx)(s.m, {
+        text: null != h ? h : d.intl.string(d.t.T3PvV4),
+        children: (0, n.jsx)(_.A, {
+            className: f,
+            color: A,
             size: u,
-            children: (0, a.jsx)(o.Uzd, {
+            children: (0, n.jsx)(l.Uzd, {
                 size: "custom",
                 color: t,
                 height: u,
                 width: u,
-                className: I
+                className: m
             })
         })
     })

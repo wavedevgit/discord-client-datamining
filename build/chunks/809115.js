@@ -1,7 +1,7 @@
 /** chunk id: 809115 params = (module,exports,require) **/
 n.d(t, {
-    a: () => _,
-    l: () => A
+    a: () => A,
+    l: () => m
 });
 var i = n(627968),
     l = n(64700),
@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(837921),
     d = n(985018),
     u = n(906135);
-let m = c.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
+let _ = c.Ay.getEnableHardwareAcceleration() ? r.JsQ : r.euF;
 
-function _() {
+function A() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         [t, n] = l.useState(!1),
         i = (0, a.bG)([s.A], () => s.A.useReducedMotion),
@@ -31,13 +31,13 @@ function _() {
     }
 }
 
-function A(e) {
+function m(e) {
     let {
         src: t
     } = e;
     return (0, i.jsx)("div", {
         className: u.H,
-        children: (0, i.jsx)(m, {
+        children: (0, i.jsx)(_, {
             src: t,
             size: r._3J.SIZE_40,
             "aria-label": d.intl.string(d.t.hG1StD)

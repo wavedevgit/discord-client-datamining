@@ -1,6 +1,6 @@
 /** chunk id: 304937 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,27 +13,27 @@ var l = n(503698),
     d = n(106181),
     u = n(206314);
 
-function m(e) {
+function _(e) {
     let {
         question: t,
         questionId: n,
         responses: l,
-        onResponseChange: m
-    } = e, _ = (() => {
+        onResponseChange: _
+    } = e, A = (() => {
         switch (t.QuestionType) {
             case c.SQ.TEXT_ENTRY:
                 return (0, i.jsx)(o.A, {
                     question: t,
                     questionId: n,
                     value: l[n] ?? "",
-                    onValueChange: m
+                    onValueChange: _
                 });
             case c.SQ.MULTIPLE_CHOICE:
                 return (0, i.jsx)(s.A, {
                     question: t,
                     questionId: n,
                     value: l[n] ?? "",
-                    onValueChange: m
+                    onValueChange: _
                 });
             case c.SQ.DESCRIPTIVE_BLOCK:
                 return (0, i.jsx)("div", {});
@@ -41,7 +41,7 @@ function m(e) {
                 return null
         }
     })();
-    return null == _ ? null : (0, i.jsxs)("div", {
+    return null == A ? null : (0, i.jsxs)("div", {
         className: a()(u.PT, d.k),
         children: [(0, i.jsx)(r.EYj, {
             variant: "text-lg/normal",
@@ -51,6 +51,6 @@ function m(e) {
                     __html: t.QuestionText_Unsafe ?? ""
                 }
             })
-        }), _]
+        }), A]
     })
 }

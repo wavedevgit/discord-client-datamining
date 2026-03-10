@@ -31,8 +31,8 @@ let b = t => {
         selectedGuild: l,
         locationSection: s,
         intent: b,
-        transitionState: E,
-        onClose: P
+        transitionState: P,
+        onClose: E
     } = t, w = (0, u.D)("ApplyGuildBoostModal"), G = (0, C.D$)(h.A.boostSlots);
     r()(null != e || null != l, "Must either provide slots or an initial selected guild"), r()(!e?.some(t => t.isOnCooldown()), "If slots are provided, they must not be on cooldown");
     let k = [null == e ? "UNUSED_QUANTITY_SELECT" : null, null == l ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(t => null != t),
@@ -48,7 +48,7 @@ let b = t => {
             return m.A.getGuild(e?.guildId)
         }).filter(t => null != t), [B]),
         V = i.useMemo(() => B?.[0]?.premiumGuildSubscription != null, [B]),
-        K = () => (P("SUCCESS" === L), g.default.track(A.HAw.MODAL_DISMISSED, {
+        K = () => (E("SUCCESS" === L), g.default.track(A.HAw.MODAL_DISMISSED, {
             type: A.JJy.PREMIUM_GUILD_SUBSCRIBE_MODAL,
             location_section: s
         }), Promise.resolve());
@@ -60,7 +60,7 @@ let b = t => {
     }, [s]);
     let Z = {
         UNUSED_QUANTITY_SELECT: () => (r()(null != e || 0 !== G.length, "Cannot provide no slots if there are no other available slots"), (0, n.jsx)(a.Modal, {
-            transitionState: E,
+            transitionState: P,
             onClose: K,
             size: "md",
             title: N.intl.string(N.t["9FFrrT"]),
@@ -99,7 +99,7 @@ let b = t => {
             onSelectGuild: t => {
                 F(t), U("CONFIRM")
             },
-            transitionState: E,
+            transitionState: P,
             isTransfer: V,
             selectedSlotGuilds: O
         }),
@@ -130,7 +130,7 @@ let b = t => {
                     }
                 }, o = V ? N.intl.string(N.t["PR0n//"]) : N.intl.string(N.t["7KP/fI"]);
             return V || "control" === w ? V && "control" !== w ? (0, n.jsx)(S.A, {
-                transitionState: E,
+                transitionState: P,
                 toGuild: R,
                 fromGuilds: O,
                 slotCount: e,
@@ -140,7 +140,7 @@ let b = t => {
                 onConfirm: s,
                 onClose: K
             }) : (0, n.jsx)(a.Modal, {
-                transitionState: E,
+                transitionState: P,
                 onClose: K,
                 size: "md",
                 title: o,
@@ -183,7 +183,7 @@ let b = t => {
                     canceledCount: t
                 })
             }) : (0, n.jsx)(f.A, {
-                transitionState: E,
+                transitionState: P,
                 guild: R,
                 slotCount: e,
                 canceledCount: t,
@@ -197,12 +197,12 @@ let b = t => {
         SUCCESS() {
             let t = V ? N.intl.string(N.t["PR0n//"]) : N.intl.string(N.t["7KP/fI"]);
             return (0, n.jsx)(a.Modal, {
-                transitionState: E,
+                transitionState: P,
                 onClose: K,
                 size: "md",
                 title: t,
                 actions: [],
-                children: (0, n.jsx)(p.WE, {
+                children: (0, n.jsx)(p.W, {
                     guild: R,
                     isTransfer: V,
                     guildBoostQuantity: B.length,

@@ -11,16 +11,16 @@ var l = t(627968),
     c = t(397927),
     u = t(793574),
     p = t(688810),
-    _ = t(532794),
-    d = t(234419),
+    d = t(532794),
+    _ = t(234419),
     m = t(811611),
     S = t(901017),
     E = t(773669),
     A = t(954571),
     P = t(252424),
-    b = t(927578),
-    g = t(580630),
-    I = t(652215),
+    I = t(927578),
+    b = t(580630),
+    g = t(652215),
     y = t(788868),
     f = t(985018),
     x = t(993605);
@@ -72,15 +72,15 @@ function T(e) {
         analyticsSourceLocation: P,
         priceOptions: T
     } = e, {
-        analyticsLocations: N,
-        sourceAnalyticsLocations: h
-    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), C = null == n || null == n.premiumSubscriptionType, L = b.Ay.getPrice(y.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, g.$g)(L.amount, L.currency), j = (0, d.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === y.pe.TIER_2;
+        analyticsLocations: h,
+        sourceAnalyticsLocations: N
+    } = (0, p.Ay)(u.A.GUILD_BOOSTING_PREMIUM_UPSELL), C = null == n || null == n.premiumSubscriptionType, L = I.Ay.getPrice(y.gD.PREMIUM_MONTH_TIER_2, !1, !1, T), R = (0, b.$g)(L.amount, L.currency), j = (0, _.V)(), D = j?.trial_id, k = j?.subscription_trial?.sku_id === y.pe.TIER_2;
     return i.useEffect(() => {
-        A.default.track(I.HAw.PREMIUM_UPSELL_VIEWED, {
+        A.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
             type: y.e.GUILD_PREMIUM_UPSELL_MODAL,
-            location_stack: h
+            location_stack: N
         })
-    }, [h]), (0, l.jsxs)(l.Fragment, {
+    }, [N]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(c.s_y, {
             "data-migration-pending": !0,
             onClick: t,
@@ -123,13 +123,13 @@ function T(e) {
                         text: null != D ? f.intl.string(f.t["Gd/XHF"]) : f.intl.string(f.t.p2moip),
                         type: "submit",
                         onClick: () => {
-                            t(), (0, _.A)({
+                            t(), (0, d.A)({
                                 initialPlanId: null,
                                 subscriptionTier: y.pe.TIER_2,
-                                analyticsLocations: N,
+                                analyticsLocations: h,
                                 analyticsObject: {
                                     ...E,
-                                    section: I.JJy.PREMIUM_GUILD_PURCHASE_MODAL
+                                    section: g.JJy.PREMIUM_GUILD_PURCHASE_MODAL
                                 },
                                 analyticsSourceLocation: P,
                                 onSubscriptionConfirmation: S,

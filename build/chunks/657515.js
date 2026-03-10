@@ -1,7 +1,7 @@
 /** chunk id: 657515 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    zH: () => f
+    zH: () => p
 });
 var a = n(575593),
     i = n(517950),
@@ -9,8 +9,8 @@ var a = n(575593),
     c = n(810498),
     o = n(652215),
     s = n(985018),
-    l = n(490111),
-    _ = n(910026),
+    _ = n(490111),
+    l = n(910026),
     d = n(380212),
     u = n(876318);
 n(642827), n(669531);
@@ -42,7 +42,7 @@ let m = {
     E = {
         gradient: ["rgba(177, 186, 253, 1)", "rgba(91, 108, 242, 1)", "rgba(21, 18, 99, 1)"]
     },
-    f = {
+    p = {
         rewards: [m, A, S],
         rewardAssetIdMap: (0, c.t8)([m, A, S]),
         chatGiftIcon: {
@@ -60,7 +60,7 @@ let m = {
             }
         },
         firstTimeNotice: {
-            getImageUrl: (e, t) => t ? _.A : l.A,
+            getImageUrl: (e, t) => t ? l.A : _.A,
             title: () => s.intl.string(s.t.Eeqjcv),
             description: () => s.intl.string(s.t["Wp+i/e"]),
             cta: () => s.intl.string(s.t.RzWDqY),
@@ -74,7 +74,7 @@ let m = {
             analyticsPage: o.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         reminderNotice: {
-            getImageUrl: (e, t) => t ? _.A : l.A,
+            getImageUrl: (e, t) => t ? l.A : _.A,
             title: () => s.intl.string(s.t.bLOiLM),
             description: () => s.intl.string(s.t["cE/UX7"]),
             cta: () => s.intl.string(s.t.RzWDqY),

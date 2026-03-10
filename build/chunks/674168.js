@@ -14,8 +14,8 @@ var r = n(311907),
     c = n(840065),
     u = n(287809),
     A = n(927578),
-    I = n(652215),
-    E = n(49999),
+    E = n(652215),
+    I = n(49999),
     g = n(788868),
     C = n(355097),
     h = n(985018),
@@ -34,7 +34,7 @@ function S(e) {
         backgroundClassName: p.u4,
         children: [null != S ? (0, i.jsx)(s.DUT, {
             className: p.VN,
-            onClick: () => S?.(E.i.DISMISS),
+            onClick: () => S?.(I.i.DISMISS),
             "aria-label": h.intl.string(h.t.cpT0Cq),
             children: (0, i.jsx)(s.PGe, {
                 size: "xs",
@@ -57,9 +57,9 @@ function S(e) {
         }), m ? (0, i.jsx)(s.Button, {
             onClick: function() {
                 (0, c.openUserSettings)(_.X.SOUNDBOARD_CATEGORY, {
-                    section: I.nc_.VOICE,
+                    section: E.nc_.VOICE,
                     subsection: C.MJ
-                }), n?.(), S?.(E.i.PRIMARY)
+                }), n?.(), S?.(I.i.PRIMARY)
             },
             text: h.intl.string(h.t.RzWDqY),
             fullWidth: !0
@@ -69,11 +69,11 @@ function S(e) {
             },
             subscriptionTier: g.pe.TIER_2,
             premiumModalAnalyticsLocation: {
-                section: I.JJy.SOUNDBOARD_SOUND_PICKER,
-                object: I.ZSU.BUTTON_CTA
+                section: E.JJy.SOUNDBOARD_SOUND_PICKER,
+                object: E.ZSU.BUTTON_CTA
             },
             color: l.$n.Colors.GREEN,
-            onSubscribeModalClose: () => S?.(E.i.PRIMARY)
+            onSubscribeModalClose: () => S?.(I.i.PRIMARY)
         })]
     })
 }

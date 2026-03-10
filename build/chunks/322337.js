@@ -1,26 +1,25 @@
 /** chunk id: 322337 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => T,
-    p: () => A
+    A: () => A,
+    p: () => E
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     s = n(397927),
     a = n(442433),
     o = n(543594),
-    E = n(587895),
-    c = n(67480),
-    _ = n(371794),
-    d = n(985018);
-let A = {
+    c = n(587895),
+    d = n(67480),
+    u = n(371794),
+    _ = n(985018);
+let E = {
     DropdownSizes: o.A.DropdownSizes,
     Sizes: o.A.Sizes,
     Colors: o.A.Colors,
     Looks: o.A.Looks
 };
-class u extends r.PureComponent {
+class T extends l.PureComponent {
     renderContextMenu = () => {
         let {
             skus: e,
@@ -31,7 +30,7 @@ class u extends r.PureComponent {
             "data-menu-migrated": !0,
             onSelect: n,
             navId: "test-skus",
-            "aria-label": d.intl.string(d.t.ogxXGq),
+            "aria-label": _.intl.string(_.t.ogxXGq),
             onClose: a.Z_,
             children: e.map(e => (0, i.jsx)(s.Drp, {
                 id: `${e.id}`,
@@ -57,8 +56,8 @@ class u extends r.PureComponent {
             skus: e,
             children: t,
             applicationId: n,
-            primarySKU: r,
-            onSKUSelect: l,
+            primarySKU: l,
+            onSKUSelect: r,
             ...s
         } = this.props;
         return (0, i.jsx)(o.A, {
@@ -70,12 +69,12 @@ class u extends r.PureComponent {
         })
     }
 }
-let T = l.Ay.connectStores([c.A, E.A], e => {
+let A = r.Ay.connectStores([d.A, c.A], e => {
     let {
         applicationId: t
-    } = e, n = (0, _.VH)(t, E.A, c.A);
+    } = e, n = (0, u.VH)(t, c.A, d.A);
     return {
-        skus: (c.A.getForApplication(t) ?? []).sort((e, t) => null != n && e.id === n.id ? -1 : null != n && t.id === n.id ? 1 : e.name >= t.name ? -1 : 1),
+        skus: (d.A.getForApplication(t) ?? []).sort((e, t) => null != n && e.id === n.id ? -1 : null != n && t.id === n.id ? 1 : e.name >= t.name ? -1 : 1),
         primarySKU: n
     }
-})(u)
+})(T)

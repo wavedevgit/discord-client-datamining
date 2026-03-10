@@ -15,7 +15,7 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, d = (0, a.Ay)(t), u = c(d), m = s.intl.format(s.t.Yy6vLs, {
+    } = e, d = (0, a.Ay)(t), u = c(d), _ = s.intl.format(s.t.Yy6vLs, {
         username: d.nick,
         usernameHook: u,
         topic: t.content
@@ -29,6 +29,6 @@ function c(e) {
         iconContainerClassName: o.z,
         timestamp: t.timestamp,
         compact: n,
-        children: m
+        children: _
     })
 }

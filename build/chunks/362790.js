@@ -1,6 +1,6 @@
 /** chunk id: 362790 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(311907),
     l = n(73153),
@@ -19,7 +19,7 @@ class u extends i.Ay.Store {
         return d
     }
 }
-let m = new u(l.h, {
+let _ = new u(l.h, {
     CONNECTION_OPEN: function() {
         return d !== (d = o.A.getFriendIDs().length >= 10 && r.default.extractTimestamp(s.default.getId()) < Date.now() - c)
     }

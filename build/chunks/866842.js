@@ -14,8 +14,8 @@ var i = n(64700),
     c = n(698441),
     u = n(863005),
     A = n(152007),
-    I = n(95701),
-    E = n(924985),
+    E = n(95701),
+    I = n(924985),
     g = n(734057),
     C = n(945886),
     h = n(760751),
@@ -27,7 +27,7 @@ var i = n(64700),
     b = n(32603),
     N = n(349828),
     L = n(818348);
-let O = 21552 == n.j ? [s.Ay, o.A, c.Ay, u.A, A.A, E.A, g.A, h.A, p.A, S.Ay, f.A, T.Ay] : null;
+let O = 21552 == n.j ? [s.Ay, o.A, c.Ay, u.A, A.A, I.A, g.A, h.A, p.A, S.Ay, f.A, T.Ay] : null;
 
 function R() {
     let {
@@ -71,7 +71,7 @@ function G(e) {
                 _ = null != r && r.isThread() && r.parent_id === e.id,
                 c = (d || _ || !l ? u.A.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id) : u.A.getActiveJoinedUnreadThreadsForParent(e.guild_id, e.id)) ?? {},
                 A = (0, b.wF)(e, c, r, s, n),
-                E = C.A.isCollapsed(e.id),
+                I = C.A.isCollapsed(e.id),
                 g = T.Ay.isChannelMuted(e.guild_id, e.id),
                 h = {
                     id: e.id,
@@ -80,12 +80,12 @@ function G(e) {
                     position: t[e.id].order,
                     threadIds: A,
                     threadCount: a().size(A),
-                    isCollapsed: E,
+                    isCollapsed: I,
                     isMuted: g,
                     isFirstVoiceChannel: !1,
-                    subtitle: (0, b.go)(e, E, !1)
+                    subtitle: (0, b.go)(e, I, !1)
                 };
-            return d || _ || !a().isEmpty(c) || S.Ay.getMentionCount(e.id) > 0 ? h : n && g || l && (g || o || (0, I.gV)(e.type) || (0, I.ig)(e.type) && !1 === S.Ay.hasUnread(e.id)) ? null : h
+            return d || _ || !a().isEmpty(c) || S.Ay.getMentionCount(e.id) > 0 ? h : n && g || l && (g || o || (0, E.gV)(e.type) || (0, E.ig)(e.type) && !1 === S.Ay.hasUnread(e.id)) ? null : h
         }).filter(m.Vq).sortBy(e => {
             let {
                 record: t
@@ -114,7 +114,7 @@ function G(e) {
             if (null == i) return null;
             let r = c[t] ?? [],
                 a = T.Ay.isChannelMuted(N.Vc, t),
-                l = E.A.isCollapsed(t),
+                l = I.A.isCollapsed(t),
                 s = null;
             return {
                 isMuted: a,

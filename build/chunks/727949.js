@@ -1,11 +1,11 @@
 /** chunk id: 727949 params = (module,exports,require) **/
 n.d(t, {
-    GQ: () => A,
-    NF: () => h,
-    QG: () => f,
-    Tp: () => p,
+    GQ: () => m,
+    NF: () => T,
+    QG: () => I,
+    Tp: () => N,
     ZR: () => E,
-    ne: () => g
+    ne: () => f
 });
 var i = n(311907),
     l = n(554146),
@@ -16,24 +16,24 @@ var i = n(311907),
     c = n(851746),
     d = n(894374),
     u = n(103411),
-    m = n(49999),
-    _ = n(985018);
+    _ = n(49999),
+    A = n(985018);
 
-function A(e) {
+function m(e) {
     let t = (e - Date.now()) / s.A.Millis.HOUR;
-    return t > 24 ? _.intl.formatToPlainString(_.t["g9s+dA"], {
+    return t > 24 ? A.intl.formatToPlainString(A.t["g9s+dA"], {
         numDays: Math.floor(t / 24)
-    }) : t >= 1 ? _.intl.formatToPlainString(_.t.k9v33y, {
+    }) : t >= 1 ? A.intl.formatToPlainString(A.t.k9v33y, {
         numHours: Math.floor(t)
-    }) : _.intl.formatToPlainString(_.t["/d0GmT"], {
+    }) : A.intl.formatToPlainString(A.t["/d0GmT"], {
         numMinutes: Math.floor(60 * t)
     })
 }
 let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
-    f = () => {
+    I = () => {
         (0, a.Dr)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE)
     },
-    h = e => {
+    T = e => {
         let {
             trialOffer: t
         } = e;
@@ -44,12 +44,12 @@ let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
             a = new Date;
         return n && i && a >= l
     },
-    g = e => {
+    f = e => {
         null != e ? (0, r.qr)(l.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
-            dismissAction: m.i.INDIRECT_ACTION
+            dismissAction: _.i.INDIRECT_ACTION
         }) : (0, a.Dr)(l.M.REFERRAL_PROGRAM_POPOVER)
     },
-    p = () => {
+    N = () => {
         let e, t = (0, u.m)(!1),
             n = (0, i.bG)([c.A], () => c.A.getReferralsRemaining()),
             r = (0, i.bG)([c.A], () => c.A.getReminderStateId());

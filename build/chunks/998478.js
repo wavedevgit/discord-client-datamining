@@ -23,6 +23,6 @@ let T = (0, i.WI)(l.X.APP_SECTION, {
     useTitle: () => E.intl.string(E.t.f2n1TP),
     buildLayout: function() {
         let e = (0, a.Ci)("AppSection_buildLayout");
-        return [e ? p.q : null, e ? null : d.y, e ? u.S : null, r.wC, e ? null : p.q, A.z, e ? null : c.g, _.$, g.w, e ? null : x.$, e ? null : m.a, e ? null : h.i, e ? null : o._].filter(s.Vq)
+        return [e ? p.q : null, e ? null : d.y, e ? u.S : null, r.w, e ? null : p.q, A.z, e ? null : c.g, _.$, g.w, e ? null : x.$, e ? null : m.a, e ? null : h.i, e ? null : o._].filter(s.Vq)
     }
 })

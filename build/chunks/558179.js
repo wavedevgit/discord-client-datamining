@@ -1,17 +1,17 @@
 /** chunk id: 558179 params = (module,exports,require) **/
 "use strict";
 r.d(t, {
-    A: () => _
+    A: () => v
 });
 var n = r(627968),
-    s = r(64700),
-    l = r(503698),
-    a = r.n(l),
+    l = r(64700),
+    s = r(503698),
+    a = r.n(s),
     i = r(791332),
     u = r.n(i),
     c = r(268218),
-    d = r(481859),
-    o = r(694403),
+    o = r(481859),
+    d = r(694403),
     h = r(542664),
     p = r(49005),
     m = r(529223),
@@ -19,16 +19,16 @@ var n = r(627968),
 let x = RegExp(`https?://${window.GLOBAL_ENV.CDN_HOST??""}`);
 
 function f(e) {
-    return "string" == typeof e.content ? e.content : A(e.content)
+    return "string" == typeof e.content ? e.content : R(e.content)
 }
-let R = {
+let A = {
         ...u().defaultRules,
         heading: {
             ...u().defaultRules.heading,
             react(e, t, r) {
-                let s = `h${e.level}`;
-                return (0, n.jsx)(d.A, {
-                    tag: s,
+                let l = `h${e.level}`;
+                return (0, n.jsx)(o.A, {
+                    tag: l,
                     children: t(e.content, r)
                 }, r.key)
             }
@@ -57,7 +57,7 @@ let R = {
             order: 6
         },
         link: {
-            ...o.Ay,
+            ...d.Ay,
             ...(0, p.A)({
                 enableBuildOverrides: !1
             }),
@@ -76,10 +76,10 @@ let R = {
             match(e, t, r) {
                 let n = u().defaultRules.image;
                 if (null == n || null == n.match) return !1;
-                let s = n.match(e, t, r);
-                if (null != s && Array.isArray(s) && s.length >= 3) {
-                    let e = s[2];
-                    if ("string" == typeof e) return null != e.match(x) ? s : null
+                let l = n.match(e, t, r);
+                if (null != l && Array.isArray(l) && l.length >= 3) {
+                    let e = l[2];
+                    if ("string" == typeof e) return null != e.match(x) ? l : null
                 }
                 return !1
             }
@@ -94,51 +94,51 @@ let R = {
         },
         codeBlock: {
             ...u().defaultRules.codeBlock,
-            react(e, t, s) {
-                let l = () => (0, n.jsx)("pre", {
+            react(e, t, l) {
+                let s = () => (0, n.jsx)("pre", {
                     children: (0, n.jsx)("code", {
                         className: a()(g.kw, "hljs"),
                         children: f(e)
                     })
-                }, s.key);
+                }, l.key);
                 return (0, n.jsx)(c.c2, {
                     createPromise: () => Promise.resolve().then(r.bind(r, 752238)),
                     webpackId: 752238,
-                    renderFallback: l,
+                    renderFallback: s,
                     render: t => {
-                        if (!(e.lang && t.hasLanguage(e.lang)) || "string" != typeof e.content) return l();
+                        if (!(e.lang && t.hasLanguage(e.lang)) || "string" != typeof e.content) return s();
                         {
                             let r = t.highlight(e.lang, e.content, !0);
-                            return null == r ? l() : (0, n.jsx)("pre", {
+                            return null == r ? s() : (0, n.jsx)("pre", {
                                 children: (0, n.jsx)("code", {
                                     className: a()(g.kw, "hljs", r.language),
                                     dangerouslySetInnerHTML: {
                                         __html: r.value
                                     }
                                 })
-                            }, s.key)
+                            }, l.key)
                         }
                     }
-                }, s.key)
+                }, l.key)
             }
         }
     },
-    v = u().parserFor(R),
-    A = u().reactFor(u().ruleOutput(R, "react"));
-class k extends s.PureComponent {
-    static rules = R;
+    k = u().parserFor(A),
+    R = u().reactFor(u().ruleOutput(A, "react"));
+class b extends l.PureComponent {
+    static rules = A;
     static defaultProps = {
-        parser: v,
-        output: A
+        parser: k,
+        output: R
     };
     render() {
         let {
             className: e,
             children: t,
             state: r,
-            parser: s,
-            output: l
-        } = this.props, i = l(s(`${t}
+            parser: l,
+            output: s
+        } = this.props, i = s(l(`${t}
 
 `, {
             inline: !1,
@@ -150,4 +150,4 @@ class k extends s.PureComponent {
         })
     }
 }
-let _ = k
+let v = b

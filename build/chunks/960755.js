@@ -13,8 +13,8 @@ var i = n(735438),
     c = n(863005),
     u = n(152007),
     A = n(617617),
-    I = n(961350),
-    E = n(924985),
+    E = n(961350),
+    I = n(924985),
     g = n(734057),
     C = n(945886),
     h = n(760751),
@@ -118,7 +118,7 @@ function B(e) {
 class H extends a.Ay.Store {
     static displayName = "ChannelListStore";
     initialize() {
-        this.waitFor(c.A, I.default, E.A, g.A, C.A, s.Ay, h.A, d.A, _.Ay, u.A, p.A, S.Ay, f.A, T.Ay, A.A)
+        this.waitFor(c.A, E.default, I.A, g.A, C.A, s.Ay, h.A, d.A, _.Ay, u.A, p.A, S.Ay, f.A, T.Ay, A.A)
     }
     getGuild(e, t) {
         let n = G.getGuild(e, t?.guildActionRows ?? [], t?.channelNoticeRows ?? []);
@@ -226,7 +226,7 @@ let W = new H(l.h, {
             guildId: t,
             user: n
         } = e;
-        return I.default.getId() === n.id && G.clearGuildId(t)
+        return E.default.getId() === n.id && G.clearGuildId(t)
     },
     GUILD_MUTE_EXPIRED: D,
     GUILD_ROLE_CREATE: D,

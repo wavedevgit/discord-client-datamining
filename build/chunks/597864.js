@@ -16,7 +16,7 @@ function r(e) {
         inputType: o,
         textInputValue: c,
         onTextInputChange: d
-    } = e, u = "true" === n.TextEntry, m = `choice-label-${t}`;
+    } = e, u = "true" === n.TextEntry, _ = `choice-label-${t}`;
     return (0, i.jsxs)("div", {
         className: a.NV,
         children: [(0, i.jsxs)(l.DUT, {
@@ -26,7 +26,7 @@ function r(e) {
             },
             role: o,
             "aria-checked": r,
-            "aria-labelledby": m,
+            "aria-labelledby": _,
             children: [(0, i.jsx)("div", {
                 className: a.jl,
                 children: "radio" === o ? (0, i.jsx)(l.TN6, {
@@ -37,7 +37,7 @@ function r(e) {
                     checked: r
                 })
             }), (0, i.jsx)(l.Text, {
-                id: m,
+                id: _,
                 variant: "text-md/normal",
                 color: "text-subtle",
                 children: (0, i.jsx)("div", {

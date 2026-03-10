@@ -23,15 +23,15 @@ var n = a(627968),
     A = a(777334),
     I = a(41984),
     v = a(200042),
-    C = a(833551),
-    y = a(395011),
+    y = a(833551),
+    C = a(395011),
     x = a(682763),
     S = a(222506),
     T = a(203322),
     E = a(644434),
-    N = a(652215);
+    w = a(652215);
 a(703552), a(921955);
-let w = !p.isPlatformEmbedded && !1,
+let N = !p.isPlatformEmbedded && !1,
     P = new c.A("AppOverlay");
 
 function L(e, t) {
@@ -95,61 +95,61 @@ let D = r.memo(function(e) {
         windowKey: c
     } = e;
     t = (0, i.bG)([_.A], () => _.A.getWindow(c)), (0, o.Ay)(() => {
-        if (null != t) return w && (t.document.hasFocus() && s.A.setFocusedPID(b.DEV_PID, null), t.addEventListener("focus", R), t.addEventListener("blur", M)), () => {
-            w && (t.removeEventListener("focus", R), t.removeEventListener("blur", M))
+        if (null != t) return N && (t.document.hasFocus() && s.A.setFocusedPID(b.DEV_PID, null), t.addEventListener("focus", R), t.addEventListener("blur", M)), () => {
+            N && (t.removeEventListener("focus", R), t.removeEventListener("blur", M))
         }
     });
     let g = function(e, t) {
-            let a, n, l = (0, i.bG)([y.A], () => !p.isPlatformEmbedded || y.A.isWindowHandleInitialized()),
+            let a, n, l = (0, i.bG)([C.A], () => !p.isPlatformEmbedded || C.A.isWindowHandleInitialized()),
                 c = (0, i.bG)([_.A], () => _.A.getWindow(e)),
-                d = (0, i.bG)([y.A], () => y.A.getFocusedPID()),
+                d = (0, i.bG)([C.A], () => C.A.getFocusedPID()),
                 g = r.useMemo(() => !p.isPlatformEmbedded || null != d && d !== b.UNSET_PID, [d]),
                 [A, v] = r.useState(!1),
                 S = r.useRef(!1),
                 E = r.useCallback(() => {
-                    let e = y.A.getTargetPID(),
+                    let e = C.A.getTargetPID(),
                         a = null != f.A.getVoiceChannelId();
-                    s.A.track(N.HAw.OVERLAY_INITIALIZED, {
+                    s.A.track(w.HAw.OVERLAY_INITIALIZED, {
                         voice_widget_connected: a,
-                        text_widget_connected: y.A.isPinned(N.uss.TEXT),
-                        overlay_render_method: I.Ue[C.default.getOverlayMethod(e)],
+                        text_widget_connected: C.A.isPinned(w.uss.TEXT),
+                        overlay_render_method: I.Ue[y.default.getOverlayMethod(e)],
                         unpinned_widget_types: u.A.getAllUnpinnedPinnedWidgets(t)
                     }), (0, x.Fd)()
                 }, [t]),
-                w = r.useRef(!1),
+                N = r.useRef(!1),
                 R = r.useRef(null),
                 M = r.useCallback(async (e, t) => {
                     try {
-                        if (await L(e, R), w.current) return;
+                        if (await L(e, R), N.current) return;
                         (0, T.A)("cssLoaded", !0)
                     } catch (e) {
-                        P.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(y.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
+                        P.error("Timed out waiting for CSS to load", e), s.A.setOverlayCrashed(C.A.getTargetPID(), e), (0, T.A)("errorMessage", "CSS failed load");
                         return
                     }
                     try {
-                        if (await k(e, t), w.current) return;
+                        if (await k(e, t), N.current) return;
                         (0, x.Mq)()
                     } catch (e) {
-                        s.A.setOverlayCrashed(y.A.getTargetPID(), e), (0, T.A)("errorMessage", "showInactive failed");
+                        s.A.setOverlayCrashed(C.A.getTargetPID(), e), (0, T.A)("errorMessage", "showInactive failed");
                         return
                     }
                     await new Promise(t => {
                         e.setTimeout(() => t(), 100)
-                    }), w.current || (v(!0), E())
+                    }), N.current || (v(!0), E())
                 }, [E]),
                 D = r.useRef(!1);
             return r.useEffect(() => {
                 if (!S.current && ((0, T.A)("hasUseEffectFired", !0), (0, T.A)("trackedPidFocused", g), l)) {
                     if (null == c) return void(0, T.A)("errorMessage", "No targetOverlayWindow");
                     if (!g) {
-                        D.current || (s.A.updateOverlayState(y.A.getTargetPID(), I.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), D.current = !0);
+                        D.current || (s.A.updateOverlayState(C.A.getTargetPID(), I.AR.WAITING_FOR_PID_FOCUS, "AppOverlay - not focused"), D.current = !0);
                         return
                     }
                     S.current = !0, (0, T.A)("reactInitializationStarted", !0), M(c, e)
                 }
             }, [M, g, e, c, l]), (0, o.l0)(() => {
-                clearInterval(R.current), w.current = !0
-            }), a = (0, i.bG)([m.A], () => m.A.windowSize(null != c ? (0, h.Q2)(c) : void 0)), n = (0, i.bG)([y.A], () => y.A.getFocusedWindowHandle()), r.useEffect(() => {
+                clearInterval(R.current), N.current = !0
+            }), a = (0, i.bG)([m.A], () => m.A.windowSize(null != c ? (0, h.Q2)(c) : void 0)), n = (0, i.bG)([C.A], () => C.A.getFocusedWindowHandle()), r.useEffect(() => {
                 let e, t;
                 if (null != c && A && c.innerHeight === a.height && c.innerWidth === a.width) return e = c.requestAnimationFrame(() => {
                     e = c.requestAnimationFrame(() => {
@@ -162,11 +162,11 @@ let D = r.memo(function(e) {
                 }
             }, [A, c, d, n, a]), A
         }(c, E.G),
-        A = (0, i.bG)([y.A], () => y.A.getFocusedPID()),
+        A = (0, i.bG)([C.A], () => C.A.getFocusedPID()),
         D = (0, i.bG)([S.A], () => S.A.isInputLocked(A), [A]);
     return g ? (0, n.jsxs)(d.A, {
-        themeOverride: N.NJ8.MIDNIGHT,
-        appContext: N.BRT.OVERLAY,
+        themeOverride: w.NJ8.MIDNIGHT,
+        appContext: w.BRT.OVERLAY,
         withTitleBar: a,
         windowKey: c,
         title: "Discord Overlay",

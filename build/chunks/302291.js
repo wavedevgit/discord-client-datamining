@@ -1,6 +1,6 @@
 /** chunk id: 302291 params = (module,exports,require) **/
 n.d(t, {
-    R: () => A,
+    R: () => m,
     d: () => E
 });
 var i = n(627968),
@@ -12,9 +12,9 @@ var i = n(627968),
     c = n(342296),
     d = n(486020),
     u = n(552691),
-    m = n(652215);
+    _ = n(652215);
 
-function _(e, t) {
+function A(e, t) {
     let n = l.useRef(null);
     return l.useCallback(l => (r, s) => {
         let o = d.Ay.getApplicationIconURL({
@@ -43,17 +43,17 @@ function _(e, t) {
     }, [e, t.id])
 }
 
-function A(e) {
+function m(e) {
     let {
         message: t,
         channel: l,
         compact: a
-    } = e, c = (0, r.Ay)(t), d = t.application, A = (0, s.P)({
+    } = e, c = (0, r.Ay)(t), d = t.application, m = (0, s.P)({
         user: t.author,
         channelId: l.id,
         guildId: l.guild_id,
         messageId: t.id
-    }), E = _(l, t);
+    }), E = A(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(394803),
         timestamp: t.timestamp,
@@ -61,8 +61,8 @@ function A(e) {
         children: (0, u.eu)({
             application: d,
             username: c.nick,
-            usernameHook: A(c),
-            applicationNameHook: null != d ? E(d) : m.tEg
+            usernameHook: m(c),
+            applicationNameHook: null != d ? E(d) : _.tEg
         })
     })
 }
@@ -72,12 +72,12 @@ function E(e) {
         message: t,
         channel: l,
         compact: a
-    } = e, c = (0, r.Ay)(t), d = t.application, A = (0, s.P)({
+    } = e, c = (0, r.Ay)(t), d = t.application, m = (0, s.P)({
         user: t.author,
         channelId: l.id,
         guildId: l.guild_id,
         messageId: t.id
-    }), E = _(l, t);
+    }), E = A(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(884797),
         timestamp: t.timestamp,
@@ -85,8 +85,8 @@ function E(e) {
         children: (0, u.A0)({
             application: d,
             username: c.nick,
-            usernameHook: A(c),
-            applicationNameHook: null != d ? E(d) : m.tEg
+            usernameHook: m(c),
+            applicationNameHook: null != d ? E(d) : _.tEg
         })
     })
 }

@@ -20,8 +20,8 @@ var i = n(627968),
     c = n(200470),
     u = n(769015),
     A = n(263063),
-    I = n(376943),
-    E = n(636585),
+    E = n(376943),
+    I = n(636585),
     g = n(71393),
     C = n(994500),
     h = n(287809),
@@ -217,7 +217,7 @@ class b extends r.Component {
             voiceStates: e,
             channel: t
         } = this.props;
-        return null == e ? null : (0, i.jsx)(E.A, {
+        return null == e ? null : (0, i.jsx)(I.A, {
             className: f.x7,
             guildId: t.guild_id,
             users: e.map(e => {
@@ -515,11 +515,11 @@ class G extends r.Component {
                 link: n,
                 children: r
             } = this.props,
-            l = (0, I.vu)(n.path);
+            l = (0, E.vu)(n.path);
         return null == l || void 0 === l.messageId ? (e = S.intl.string(S.t.qbSCqj), t = (0, i.jsx)(a.qYV, {
             size: "xs",
             color: "currentColor"
-        })) : (0, I.r9)(l) ? (e = S.intl.string(S.t["6Fd/j1"]), t = (0, i.jsx)(a.txs, {
+        })) : (0, E.r9)(l) ? (e = S.intl.string(S.t["6Fd/j1"]), t = (0, i.jsx)(a.txs, {
             size: "xs",
             color: "currentColor"
         })) : (e = S.intl.string(S.t.jQRwp4), t = (0, i.jsx)(a.XAi, {

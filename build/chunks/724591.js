@@ -52,6 +52,11 @@ let L = s.memo(function(e) {
         z = H || Y,
         q = s.useMemo(() => H ? B : W, [H, B, W]);
     s.useEffect(() => {
+        z && null != M.current && M.current.scrollIntoView({
+            block: "nearest",
+            behavior: "smooth"
+        })
+    }, [z]), s.useEffect(() => {
         l && z && q(j.i.INDIRECT_ACTION)
     }, [q, l, z]);
     let X = s.useCallback(() => {

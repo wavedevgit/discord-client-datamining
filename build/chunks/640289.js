@@ -15,7 +15,7 @@ function c(e) {
         message: t,
         compact: n,
         usernameHook: c
-    } = e, d = (0, a.Ay)(t), u = c(d), m = s.intl.format(s.t.tv2DNy, {
+    } = e, d = (0, a.Ay)(t), u = c(d), _ = s.intl.format(s.t.tv2DNy, {
         username: d.nick,
         usernameHook: u
     });
@@ -28,6 +28,6 @@ function c(e) {
         iconContainerClassName: o.z,
         timestamp: t.timestamp,
         compact: n,
-        children: m
+        children: _
     })
 }

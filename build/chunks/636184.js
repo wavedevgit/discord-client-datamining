@@ -1,6 +1,6 @@
 /** chunk id: 636184 params = (module,exports,require) **/
 n.d(t, {
-    h: () => N
+    h: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -11,18 +11,18 @@ var i = n(627968),
     c = n(582754),
     d = n(397927),
     u = n(308528),
-    m = n(854627),
-    _ = n(12901),
-    A = n(954571),
+    _ = n(854627),
+    A = n(12901),
+    m = n(954571),
     E = n(975571),
-    f = n(427262),
-    h = n(326084),
-    g = n(851746),
-    p = n(652215),
-    x = n(985018),
-    C = n(185914),
-    I = n(299148);
-let T = e => {
+    I = n(427262),
+    T = n(326084),
+    f = n(851746),
+    N = n(652215),
+    C = n(985018),
+    g = n(185914),
+    h = n(299148);
+let p = e => {
         let {
             recipient: t,
             status: n,
@@ -30,15 +30,15 @@ let T = e => {
         } = e, {
             avatarSrc: a,
             eventHandlers: s
-        } = (0, m.A)({
+        } = (0, _.A)({
             userId: t?.id,
             size: d._3J.SIZE_56
-        }), o = f.Ay.getName(t), c = n === h.o.FAIL;
+        }), o = I.Ay.getName(t), c = n === T.o.FAIL;
         return (0, i.jsxs)("div", {
-            className: C.w4,
+            className: g.w4,
             children: [(0, i.jsx)(d.euF, {
                 imageClassName: r()({
-                    [C.jN]: c
+                    [g.jN]: c
                 }),
                 src: a,
                 "aria-label": o,
@@ -46,68 +46,68 @@ let T = e => {
                 ...s
             }), c ? (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(d.Text, {
-                    className: C.E0,
+                    className: g.E0,
                     variant: "text-md/medium",
                     color: "text-strong",
                     children: o
                 }), (0, i.jsx)(d.Text, {
                     variant: "text-md/medium",
-                    className: C.nT,
+                    className: g.nT,
                     color: "text-strong",
-                    children: x.intl.format(x.t.RO3T4B, {
+                    children: C.intl.format(C.t.RO3T4B, {
                         userName: o
                     })
                 })]
             }) : (0, i.jsx)(d.Text, {
                 variant: "text-md/medium",
-                className: C.Pm,
+                className: g.Pm,
                 color: "text-strong",
                 children: o
             }), (0, i.jsx)(d.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: x.intl.string(x.t["g33r/P"]),
+                text: C.intl.string(C.t["g33r/P"]),
                 icon: d.oyn,
                 onClick: () => {
                     var e;
-                    return e = t.id, void((0, _.default)(), u.A.openPrivateChannel({
+                    return e = t.id, void((0, A.default)(), u.A.openPrivateChannel({
                         recipientIds: e
                     }), l())
                 }
             })]
         })
     },
-    N = e => {
+    S = e => {
         let {
             transitionState: t,
             results: n,
             onClose: a,
             isReminderConfirmation: r
-        } = e, u = (0, o.bG)([g.A], () => g.A.getReferralsRemaining());
-        A.default.track(p.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
+        } = e, u = (0, o.bG)([f.A], () => f.A.getReferralsRemaining());
+        m.default.track(N.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED);
         let {
-            reducedMotion: m
+            reducedMotion: _
         } = l.useContext(c.CZ);
         return null === u ? (0, i.jsx)(d.y$y, {}) : (0, i.jsx)(s.ExpressiveModal, {
-            graphic: m.enabled ? {
-                src: I.A,
+            graphic: _.enabled ? {
+                src: h.A,
                 type: "image"
             } : {
                 rive: d.lBW,
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === n.filter(e => e.status === h.o.SUCCESS).length ? x.intl.string(x.t["7VBEue"]) : !0 === r ? x.intl.string(x.t.GP5lbq) : x.intl.string(x.t.tKCltd),
-            subtitle: !0 === r ? x.intl.format(x.t["4gJJfD"], {
-                helpdeskArticle: E.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
-            }) : x.intl.format(x.t.AwGSWl, {
-                helpdeskArticle: E.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
+            title: 0 === n.filter(e => e.status === T.o.SUCCESS).length ? C.intl.string(C.t["7VBEue"]) : !0 === r ? C.intl.string(C.t.GP5lbq) : C.intl.string(C.t.tKCltd),
+            subtitle: !0 === r ? C.intl.format(C.t["4gJJfD"], {
+                helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
+            }) : C.intl.format(C.t.AwGSWl, {
+                helpdeskArticle: E.A.getArticleURL(N.MVz.REFERRAL_PROGRAM)
             }),
             onClose: a,
             transitionState: t,
             children: (0, i.jsx)("div", {
-                className: C.Hz,
-                children: n.map(e => (0, i.jsx)(T, {
+                className: g.Hz,
+                children: n.map(e => (0, i.jsx)(p, {
                     recipient: e.recipient,
                     status: e.status,
                     onClose: a

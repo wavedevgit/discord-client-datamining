@@ -1,9 +1,9 @@
 /** chunk id: 560438 params = (module,exports,require) **/
 "use strict";
-n.d(t, {
-    l: () => a
+a.d(t, {
+    l: () => n
 });
-let a = {
+let n = {
     allowList: !0,
     allowHeading: !0,
     allowLinks: !0,

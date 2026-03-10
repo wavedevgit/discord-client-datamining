@@ -18,5 +18,10 @@ let r = {
         i.h.dispatch({
             type: "CHANNEL_TOGGLE_SUMMARIES_SECTION"
         })
+    },
+    toggleConversationsSection() {
+        i.h.dispatch({
+            type: "CHANNEL_TOGGLE_CONVERSATIONS_SECTION"
+        })
     }
 }

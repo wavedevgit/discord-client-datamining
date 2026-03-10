@@ -1,6 +1,6 @@
 /** chunk id: 543594 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i, l = n(627968);
 n(64700);
@@ -46,4 +46,4 @@ let d = {
         })
     };
 u.DropdownSizes = c, u.Sizes = a.$n.Sizes, u.Colors = a.$n.Colors, u.Looks = a.$n.Looks;
-let m = u
+let _ = u

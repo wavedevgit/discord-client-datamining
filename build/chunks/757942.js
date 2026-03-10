@@ -14,15 +14,15 @@ var r = n(735438),
     c = n(711014),
     u = n(645959),
     A = n(203982),
-    I = n(265422),
-    E = n(652215),
+    E = n(265422),
+    I = n(652215),
     g = n(790782);
 
 function C(e, t) {
     return [{
         resourceId: e,
         type: g.P.GUILD_EVENT
-    }, ...e === E.ME ? u.default.getPrivateChannelIds() : (0, s.A)(e, {
+    }, ...e === I.ME ? u.default.getPrivateChannelIds() : (0, s.A)(e, {
         withVoiceChannels: t,
         withCurrentVoiceChannel: !0
     }).map(e => e.id)]
@@ -36,9 +36,9 @@ let h = a().throttle(function(e, t) {
             ensureChatIsVisible: S = () => !1,
             withVoiceChannels: f = !1
         } = t,
-        T = o.A.getState().guildId ?? E.ME,
+        T = o.A.getState().guildId ?? I.ME,
         m = o.A.getState().channelId,
-        b = (r = T, s = (a = [E.ME, ...c.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? a.slice(s).concat(a.slice(0, s), r) : (a.splice(s, 0, r), a.slice(s + 1).concat(a.slice(0, s + 1)))),
+        b = (r = T, s = (a = [I.ME, ...c.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? a.slice(s).concat(a.slice(0, s), r) : (a.splice(s, 0, r), a.slice(s + 1).concat(a.slice(0, s + 1)))),
         N = e > 0 ? 0 : b.length - 1,
         L = C(T, f),
         O = L.indexOf(m) + e;
@@ -46,8 +46,8 @@ let h = a().throttle(function(e, t) {
         if (u = L[O], h(T))
             for (; null != u && "" !== u;) {
                 if ("string" == typeof u) {
-                    if (g(T, u)) return (0, I.i)(T, u, !1, S(T, u))
-                } else if ("object" == typeof u && p(u.resourceId, u.type)) return T !== _.A.getGuildId() && (0, I.i)(T, d.Ay.getDefaultChannel(T)?.id), (0, l.mMO)(async () => {
+                    if (g(T, u)) return (0, E.i)(T, u, !1, S(T, u))
+                } else if ("object" == typeof u && p(u.resourceId, u.type)) return T !== _.A.getGuildId() && (0, E.i)(T, d.Ay.getDefaultChannel(T)?.id), (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("51354"), n.e("7453"), n.e("27728")]).then(n.bind(n, 926956));
@@ -61,8 +61,8 @@ let h = a().throttle(function(e, t) {
         if (N += e, null == (T = b[N]) || "" === T) break;
         L = C(T, f), O = e < 0 ? L.length - 1 : 0
     }
-    A._.dispatch(E.jej.SHAKE_APP, {
+    A._.dispatch(I.jej.SHAKE_APP, {
         duration: 200,
         intensity: 2
     })
-}, E.ugG)
+}, I.ugG)

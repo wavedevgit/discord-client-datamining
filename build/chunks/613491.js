@@ -1,77 +1,76 @@
 /** chunk id: 613491 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => R
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
+var l = n(503698),
+    r = n.n(l),
     s = n(397927),
     a = n(935649),
     o = n(847599),
-    E = n(734057),
-    c = n(309010),
-    _ = n(849736),
-    d = n(354583),
-    A = n(366098),
-    u = n(418208),
-    T = n(985018),
+    c = n(734057),
+    d = n(309010),
+    u = n(849736),
+    _ = n(354583),
+    E = n(366098),
+    T = n(418208),
+    A = n(985018),
     I = n(496447);
 
 function N(e) {
-    if (!e && (0, u.Cf)()) return void a.A.showAgeVerificationGetStartedModal({
+    if (!e && (0, T.Cf)()) return void a.A.showAgeVerificationGetStartedModal({
         entryPoint: o.q1.STAGE_CHANNEL_RAISE_HAND
     });
-    let t = c.A.getVoiceChannelId();
+    let t = d.A.getVoiceChannelId();
     if (null == t) return;
-    let n = E.A.getChannel(t);
-    null != n && (0, _.e7)(n, e)
+    let n = c.A.getChannel(t);
+    null != n && (0, u.e7)(n, e)
 }
 
-function R(e) {
+function p(e) {
     let {
         channelId: t
-    } = e, n = (0, A.D3)(t) ?? 0, r = (0, A.Xk)(t) ?? 0;
-    return n > 0 && r > 0 ? (0, i.jsx)("div", {
+    } = e, n = (0, E.D3)(t) ?? 0, l = (0, E.Xk)(t) ?? 0;
+    return n > 0 && l > 0 ? (0, i.jsx)("div", {
         className: I.Z5,
         children: (0, i.jsx)("div", {
-            className: l()(I.qQ, I.lN),
-            children: T.intl.string(T.t.xlJRfv)
+            className: r()(I.qQ, I.lN),
+            children: A.intl.string(A.t.xlJRfv)
         })
     }) : n > 0 ? (0, i.jsx)("div", {
         className: I.Z5,
         children: (0, i.jsx)("div", {
-            className: l()(I.qQ, I.lN),
-            children: T.intl.string(T.t.WYad9Z)
+            className: r()(I.qQ, I.lN),
+            children: A.intl.string(A.t.WYad9Z)
         })
-    }) : r > 0 ? (0, i.jsx)("div", {
+    }) : l > 0 ? (0, i.jsx)("div", {
         className: I.Z5,
         children: (0, i.jsx)("div", {
-            className: l()(I.qQ, I.lN),
-            children: T.intl.string(T.t.eHq2OF)
+            className: r()(I.qQ, I.lN),
+            children: A.intl.string(A.t.eHq2OF)
         })
     }) : null
 }
 
-function S() {
-    let e = (0, d.A)();
+function R() {
+    let e = (0, _.A)();
     return null == e ? null : (0, i.jsxs)(s.$Td, {
         className: I.kL,
         color: s.Hv$.DEFAULT,
-        children: [T.intl.string(T.t.Ul1RJQ), (0, i.jsx)(R, {
+        children: [A.intl.string(A.t.Ul1RJQ), (0, i.jsx)(p, {
             channelId: e.id
         }), (0, i.jsxs)(s.ButtonGroup, {
             size: "sm",
             className: I.GC,
             children: [(0, i.jsx)(s.Button, {
                 variant: "overlay-primary",
-                text: T.intl.string(T.t.MpO0px),
+                text: A.intl.string(A.t.MpO0px),
                 onClick: () => N(!1)
             }), (0, i.jsx)(s.Button, {
                 variant: "secondary",
                 onClick: () => N(!0),
-                text: T.intl.string(T.t["1YDv7a"])
+                text: A.intl.string(A.t["1YDv7a"])
             })]
         })]
     })

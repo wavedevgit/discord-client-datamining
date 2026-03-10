@@ -1,6 +1,6 @@
 /** chunk id: 881635 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968),
     l = n(64700),
@@ -12,25 +12,25 @@ var i = n(627968),
     d = n(652215),
     u = n(985018);
 
-function m(e) {
+function _(e) {
     let {
         guild: t,
         analyticsLocation: n,
-        analyticsLocations: m,
-        closeLayer: _
-    } = e, [A, E] = l.useState(!1), {
-        analyticsLocations: f
-    } = (0, s.Ay)(m ?? []), h = (0, a.bG)([o.default], () => o.default.getCurrentUser()), g = h?.isPremiumGroupMember();
-    async function p() {
+        analyticsLocations: _,
+        closeLayer: A
+    } = e, [m, E] = l.useState(!1), {
+        analyticsLocations: I
+    } = (0, s.Ay)(_ ?? []), T = (0, a.bG)([o.default], () => o.default.getCurrentUser()), f = T?.isPremiumGroupMember();
+    async function N() {
         E(!0), await (0, c.g)({
-            analyticsLocations: f,
+            analyticsLocations: I,
             analyticsLocation: {
                 object: d.ZSU.BUTTON_CTA,
                 objectType: d.AnalyticsObjectTypes.BUY,
                 ...n
             },
             guild: t,
-            closeLayer: _,
+            closeLayer: A,
             onClose: () => {
                 E(!1)
             }
@@ -41,8 +41,8 @@ function m(e) {
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: p,
-        loading: A,
-        disabled: g
+        onClick: N,
+        loading: m,
+        disabled: f
     })
 }

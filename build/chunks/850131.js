@@ -1,6 +1,6 @@
 /** chunk id: 850131 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -11,16 +11,16 @@ var i = n(627968),
     c = n(397927),
     d = n(843472),
     u = n(565645),
-    m = n(763754),
-    _ = n(447215),
-    A = n(888675),
+    _ = n(763754),
+    A = n(447215),
+    m = n(888675),
     E = n(533567),
-    f = n(306417),
-    h = n(412136),
-    g = n(985018),
-    p = n(782635);
+    I = n(306417),
+    T = n(412136),
+    f = n(985018),
+    N = n(782635);
 
-function x() {
+function C() {
     return (0, i.jsx)("svg", {
         width: "24",
         height: "24",
@@ -36,12 +36,12 @@ function x() {
     })
 }
 
-function C(e) {
+function g(e) {
     let t, {
         hasNoVotes: n,
         victorEmoji: l
     } = e;
-    if (n) t = (0, i.jsx)(x, {});
+    if (n) t = (0, i.jsx)(C, {});
     else if (null != l) {
         let e = "" !== l.name ? l.name : l.displayName;
         t = (0, i.jsx)(u.A, {
@@ -51,12 +51,12 @@ function C(e) {
         })
     }
     return null != t ? (0, i.jsx)("div", {
-        className: p.ZS,
+        className: N.ZS,
         children: t
     }) : null
 }
 
-function I(e) {
+function h(e) {
     let t, {
             type: n,
             ...l
@@ -68,7 +68,7 @@ function I(e) {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 scaleFontToUserSetting: !0,
-                children: g.intl.string(g.t["a+lSZ/"])
+                children: f.intl.string(f.t["a+lSZ/"])
             });
             break;
         case "VICTOR":
@@ -77,16 +77,16 @@ function I(e) {
             } = l;
             t = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: p.sj,
+                    className: N.sj,
                     children: [(0, i.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        className: p.Dq,
+                        className: N.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
-                    }), (0, i.jsx)(f.Vx, {
+                    }), (0, i.jsx)(I.Vx, {
                         size: 16,
-                        className: p.To,
+                        className: N.To,
                         isVictor: !0,
                         isExpired: !0
                     })]
@@ -94,7 +94,7 @@ function I(e) {
                     variant: "text-xs/medium",
                     color: a,
                     scaleFontToUserSetting: !0,
-                    children: [g.intl.string(g.t.ufIDIx), " • ", s, "%"]
+                    children: [f.intl.string(f.t.ufIDIx), " • ", s, "%"]
                 })]
             });
             break;
@@ -107,7 +107,7 @@ function I(e) {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     scaleFontToUserSetting: !0,
-                    children: g.intl.string(g.t.kPN9si)
+                    children: f.intl.string(f.t.kPN9si)
                 }), (0, i.jsxs)(c.Text, {
                     variant: "text-xs/medium",
                     color: a,
@@ -117,12 +117,12 @@ function I(e) {
             })
     }
     return (0, i.jsx)("div", {
-        className: p.h_,
+        className: N.h_,
         children: t
     })
 }
 
-function T(e) {
+function p(e) {
     let {
         className: t,
         data: n,
@@ -143,59 +143,59 @@ function T(e) {
         }
     })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
     return (0, i.jsxs)("div", {
-        className: r()(p.kL, {
-            [p.FS]: o
+        className: r()(N.kL, {
+            [N.FS]: o
         }, t),
-        children: [(0, i.jsx)(C, {
+        children: [(0, i.jsx)(g, {
             hasNoVotes: "NO_VOTES" === s.type,
             victorEmoji: n.victorEmoji
-        }), (0, i.jsx)(I, {
+        }), (0, i.jsx)(h, {
             ...s
         }), null != a && (0, i.jsx)(c.Button, {
             size: "sm",
             onClick: a,
             variant: "secondary",
-            text: g.intl.string(g.t.Jw7Vbf)
+            text: f.intl.string(f.t.Jw7Vbf)
         })]
     })
 }
 
-function N(e) {
+function S(e) {
     let {
         message: t,
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), f = (0, s.EJ)(u?.questionText ?? "", h.TU), x = (0, m.Ay)(t), C = (0, _.P)({
+    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), I = (0, s.EJ)(u?.questionText ?? "", T.TU), C = (0, _.Ay)(t), g = (0, A.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    }), I = t.messageReference, N = l.useCallback(() => {
-        null != I && d.A.jumpToMessage({
-            channelId: I.channel_id,
-            messageId: I.message_id,
+    }), h = t.messageReference, S = l.useCallback(() => {
+        null != h && d.A.jumpToMessage({
+            channelId: h.channel_id,
+            messageId: h.message_id,
             flash: !0,
             returnMessageId: t.id
         })
-    }, [t.id, I]);
+    }, [t.id, h]);
     return null == u ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(A.A, {
+        children: [(0, i.jsx)(m.A, {
             iconNode: (0, i.jsx)(c.YRe, {
                 size: "xs"
             }),
             timestamp: t.timestamp,
             compact: a,
-            children: g.intl.format(g.t.VJcK41, {
-                username: x.nick,
-                usernameHook: C(x),
-                title: f,
-                titleOnClick: N
+            children: f.intl.format(f.t.VJcK41, {
+                username: C.nick,
+                usernameHook: g(C),
+                title: I,
+                titleOnClick: S
             })
-        }), (0, i.jsx)(T, {
-            className: p.E6,
+        }), (0, i.jsx)(p, {
+            className: N.E6,
             data: u,
-            onClickPollLink: r ? void 0 : N
+            onClickPollLink: r ? void 0 : S
         })]
     })
 }

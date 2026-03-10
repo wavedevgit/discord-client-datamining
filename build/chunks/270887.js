@@ -13,14 +13,14 @@ var i = n(735438),
     c = n(366811),
     u = n(309010),
     A = n(967198),
-    I = n(711014),
-    E = n(287809),
+    E = n(711014),
+    I = n(287809),
     g = n(619921),
     C = n(265422),
     h = n(652215);
 let p = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
-        t = I.Ay.getFlattenedGuildIds(),
+        t = E.Ay.getFlattenedGuildIds(),
         {
             enabled: n,
             hasHigherPrivileges: i
@@ -36,7 +36,7 @@ let p = r().throttle(function() {
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (S += e) || (0, _.J)(o.A, E.default, A.A, {
+    if (-1 !== (S += e) || (0, _.J)(o.A, I.default, A.A, {
             favoritesGuildXPEnabled: n,
             hasHigherPrivileges: i,
             isMenuItemDCSelected: r,

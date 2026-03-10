@@ -4,9 +4,9 @@ r.d(t, {
     A: () => h
 });
 var n = r(627968),
-    s = r(64700),
-    l = r(503698),
-    a = r.n(l),
+    l = r(64700),
+    s = r(503698),
+    a = r.n(s),
     i = r(397927),
     u = r(262633);
 let c = {
@@ -15,13 +15,13 @@ let c = {
         DOWN: "down",
         LEFT: "left"
     },
-    d = {
+    o = {
         [c.UP]: "",
         [c.RIGHT]: u.pG,
         [c.DOWN]: u.TR,
         [c.LEFT]: u.kb
     };
-class o extends s.PureComponent {
+class d extends l.PureComponent {
     static Directions = c;
     render() {
         let {
@@ -32,9 +32,9 @@ class o extends s.PureComponent {
             size: "md",
             color: "currentColor",
             className: a()(t, {
-                [d[e]]: !0
+                [o[e]]: !0
             })
         })
     }
 }
-let h = o
+let h = d

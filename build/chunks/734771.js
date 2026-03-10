@@ -15,22 +15,22 @@ function s(e) {
             otherUser: c,
             otherUsernameHook: d,
             compact: u,
-            channel: m
+            channel: _
         } = e,
-        _ = (0, l.Ay)(s),
-        A = _.nick,
-        E = o(_),
-        f = (0, l.d8)(c, m);
-    if (null != f && null != d) {
-        let e = d(f);
+        A = (0, l.Ay)(s),
+        m = A.nick,
+        E = o(A),
+        I = (0, l.d8)(c, _);
+    if (null != I && null != d) {
+        let e = d(I);
         t = r.intl.format(r.t.L2FyVq, {
-            username: A,
+            username: m,
             usernameHook: E,
-            otherUsername: f.nick,
+            otherUsername: I.nick,
             otherUsernameHook: e
         })
     } else t = r.intl.format(r.t["5v2xa8"], {
-        username: A,
+        username: m,
         usernameHook: E
     });
     return (0, i.jsx)(a.A, {

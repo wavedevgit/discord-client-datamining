@@ -1,25 +1,25 @@
 /** chunk id: 234914 params = (module,exports,require) **/
-l.d(t, {
+n.d(t, {
     A: () => d
 });
-var n = l(627968),
-    i = l(64700),
-    r = l(503698),
-    s = l.n(r),
-    u = l(397927),
-    a = l(6976);
+var i = n(627968),
+    l = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    a = n(397927),
+    o = n(6976);
 
-function o(e) {
+function c(e) {
     let {
         alt: t,
-        ...l
-    } = e, [r, s] = i.useState(!0);
-    return (0, n.jsxs)(n.Fragment, {
-        children: [r && (0, n.jsx)(u.y$y, {
-            type: u.y$y.Type.LOW_MOTION,
-            className: a.wG
-        }), (0, n.jsx)("img", {
-            ...l,
+        ...n
+    } = e, [r, s] = l.useState(!0);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [r && (0, i.jsx)(a.y$y, {
+            type: a.y$y.Type.LOW_MOTION,
+            className: o.wG
+        }), (0, i.jsx)("img", {
+            ...n,
             alt: t,
             onLoad: () => s(!1)
         })]
@@ -29,31 +29,31 @@ function o(e) {
 function d(e) {
     let {
         src: t,
-        backgroundSrc: l,
-        alt: i,
+        backgroundSrc: n,
+        alt: l,
         aspectRatio: r,
-        className: u,
+        className: a,
         imageChildClassName: d,
-        ...c
+        ...u
     } = e;
-    return (0, n.jsxs)("div", {
-        className: s()(a.kL, u),
-        children: [(0, n.jsx)("img", {
-            src: l,
-            alt: i,
-            className: a.iL
-        }), (0, n.jsx)("div", {
-            className: a.CC
-        }), (0, n.jsx)("div", {
+    return (0, i.jsxs)("div", {
+        className: s()(o.kL, a),
+        children: [(0, i.jsx)("img", {
+            src: n,
+            alt: l,
+            className: o.iL
+        }), (0, i.jsx)("div", {
+            className: o.CC
+        }), (0, i.jsx)("div", {
             style: {
                 aspectRatio: r
             },
-            className: a.ZS,
-            children: (0, n.jsx)(o, {
+            className: o.ZS,
+            children: (0, i.jsx)(c, {
                 src: t,
-                alt: i,
-                className: s()(a.Sl, d),
-                ...c
+                alt: l,
+                className: s()(o.Sl, d),
+                ...u
             })
         })]
     })

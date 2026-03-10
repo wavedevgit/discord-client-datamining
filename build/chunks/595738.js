@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n = r(627968);
 r(64700);
-var s = r(503698),
-    l = r.n(s),
+var l = r(503698),
+    s = r.n(l),
     a = r(397927),
     i = r(376092),
     u = r(565928);
@@ -15,18 +15,18 @@ function c(e) {
     let {
         grantedPermissions: t,
         disabledPermissions: r,
-        grantedPermissionsHeader: s,
+        grantedPermissionsHeader: l,
         disabledPermissionsHeader: c,
-        className: d
+        className: o
     } = e;
     return (0, n.jsxs)("div", {
-        className: l()(u.p_, d),
+        className: s()(u.p_, o),
         children: [null != t && t.length > 0 ? (0, n.jsxs)(n.Fragment, {
-            children: [null != s ? (0, n.jsx)(a.Heading, {
+            children: [null != l ? (0, n.jsx)(a.Heading, {
                 variant: "heading-sm/semibold",
                 color: "text-strong",
                 className: u.wx,
-                children: s
+                children: l
             }) : null, (0, n.jsx)("div", {
                 className: u.kL,
                 children: t.map(e => (0, n.jsxs)("div", {

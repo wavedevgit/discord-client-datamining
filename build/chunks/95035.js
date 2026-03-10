@@ -12,15 +12,15 @@ let s = i.forwardRef(function(e, t) {
     let {
         href: n,
         children: s,
-        onClick: l,
-        onKeyPress: _,
+        onClick: _,
+        onKeyPress: l,
         focusProps: d,
         ...u
     } = e, g = i.useCallback(e => {
-        e.repeat || ((e.charCode === o.Ks6.SPACE || e.charCode === o.Ks6.ENTER) && (e.preventDefault(), null != n && (0, c.pX)(n), l?.()), _?.(e))
-    }, [n, _, l]), b = i.useCallback(e => {
-        e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, c.pX)(n), l?.())
-    }, [n, l]), I = (0, a.jsx)("a", {
+        e.repeat || ((e.charCode === o.Ks6.SPACE || e.charCode === o.Ks6.ENTER) && (e.preventDefault(), null != n && (0, c.pX)(n), _?.()), l?.(e))
+    }, [n, l, _]), b = i.useCallback(e => {
+        e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, c.pX)(n), _?.())
+    }, [n, _]), I = (0, a.jsx)("a", {
         ref: t,
         href: n,
         onClick: b,

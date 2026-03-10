@@ -1,6 +1,6 @@
 /** chunk id: 336589 params = (module,exports,require) **/
 n.d(t, {
-    I: () => x
+    I: () => C
 });
 var i = n(627968),
     l = n(64700),
@@ -11,19 +11,19 @@ var i = n(627968),
     c = n(406704),
     d = n(696451),
     u = n(71393),
-    m = n(576705),
-    _ = n(287809),
-    A = n(460350),
+    _ = n(576705),
+    A = n(287809),
+    m = n(460350),
     E = n(167681),
-    f = n(652215),
-    h = n(985018),
-    g = n(182777);
-let p = e => {
+    I = n(652215),
+    T = n(985018),
+    f = n(182777);
+let N = e => {
         let {
             channel: t,
             message: n
         } = e, a = (0, E.dv)(n.id), c = l.useCallback(() => {
-            (0, A.i)({
+            (0, m.i)({
                 type: s.oU.FORM,
                 content: "",
                 channel: t
@@ -35,34 +35,34 @@ let p = e => {
             })
         }, [t, n, a]);
         return (0, i.jsx)("div", {
-            className: g.T,
+            className: f.T,
             children: (0, i.jsx)(r.$nd, {
                 icon: {
                     type: "sticker",
                     asset: a,
                     component: o.A
                 },
-                text: h.intl.string(h.t["7Tj6HT"]),
+                text: T.intl.string(T.t["7Tj6HT"]),
                 onClick: c,
                 variant: "secondary"
             })
         })
     },
-    x = e => {
+    C = e => {
         let {
             message: t,
             channel: n
-        } = e, l = n.getGuildId(), r = (0, a.bG)([_.default, m.A, u.A, d.Ay], () => {
-            let e = _.default.getCurrentUser(),
+        } = e, l = n.getGuildId(), r = (0, a.bG)([A.default, _.A, u.A, d.Ay], () => {
+            let e = A.default.getCurrentUser(),
                 i = (0, c.UJ)(n),
-                a = m.A.can(f.xBc.SEND_MESSAGES, n),
+                a = _.A.can(I.xBc.SEND_MESSAGES, n),
                 r = null != l && null != e && d.Ay.getMember(l, e.id)?.isPending,
                 s = t.author.bot,
                 o = u.A.getGuild(l),
-                A = null != o && (o.systemChannelFlags & f.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
-            return a && !i && !r && !s && A
+                m = null != o && (o.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
+            return a && !i && !r && !s && m
         });
-        return null != l && r ? (0, i.jsx)(p, {
+        return null != l && r ? (0, i.jsx)(N, {
             message: t,
             channel: n
         }) : null

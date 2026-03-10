@@ -1,6 +1,6 @@
 /** chunk id: 147351 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => g
 });
 var i = n(627968),
     l = n(64700),
@@ -11,15 +11,15 @@ var i = n(627968),
     c = n(148355),
     d = n(406704),
     u = n(696451),
-    m = n(576705),
-    _ = n(287809),
-    A = n(954571),
+    _ = n(576705),
+    A = n(287809),
+    m = n(954571),
     E = n(661191),
-    f = n(460350),
-    h = n(652215),
-    g = n(48447);
+    I = n(460350),
+    T = n(652215),
+    f = n(48447);
 
-function p(e) {
+function N(e) {
     let {
         assets: t,
         currentUser: n,
@@ -28,27 +28,27 @@ function p(e) {
     return t[l]
 }
 
-function x(e) {
+function C(e) {
     let {
         currentUser: t,
         channel: n,
         message: a,
         buttonLabels: d,
         stickers: u,
-        event: m,
-        eventProperties: _
-    } = e, E = l.useMemo(() => p({
+        event: _,
+        eventProperties: A
+    } = e, E = l.useMemo(() => N({
         assets: u,
         currentUser: t,
         message: a
-    }), [u, t, a]), h = l.useMemo(() => p({
+    }), [u, t, a]), T = l.useMemo(() => N({
         assets: d,
         currentUser: t,
         message: a
-    }), [d, t, a]), g = l.useCallback(async () => {
+    }), [d, t, a]), f = l.useCallback(async () => {
         let {
             valid: e
-        } = await (0, f.i)({
+        } = await (0, I.i)({
             type: o.oU.FORM,
             content: "",
             channel: n
@@ -75,29 +75,29 @@ function x(e) {
                 event: n,
                 eventProperties: i
             } = e;
-            null != n && A.default.track(n, {
+            null != n && m.default.track(n, {
                 ...i,
                 sticker_id: t.id
             })
         }({
             sticker: E,
-            event: m,
-            eventProperties: _
+            event: _,
+            eventProperties: A
         }))
-    }, [n, a, E, m, _]);
+    }, [n, a, E, _, A]);
     return (0, i.jsx)(r.$nd, {
         icon: {
             type: "sticker",
             asset: E,
             component: c.A
         },
-        text: h,
-        onClick: g,
+        text: T,
+        onClick: f,
         variant: "secondary"
     })
 }
 
-function C(e) {
+function g(e) {
     let {
         channel: t,
         message: n,
@@ -105,17 +105,17 @@ function C(e) {
         stickers: r,
         event: s,
         eventProperties: o
-    } = e, c = _.default.getCurrentUser(), A = function(e) {
+    } = e, c = A.default.getCurrentUser(), m = function(e) {
         let {
             channel: t,
             message: n,
             currentUser: i
         } = e;
-        return (0, a.bG)([m.A, u.Ay], () => {
+        return (0, a.bG)([_.A, u.Ay], () => {
             let e = t.guild_id;
             if (null == i || null == e) return !1;
             let l = (0, d.UJ)(t),
-                a = m.A.can(h.xBc.SEND_MESSAGES, t),
+                a = _.A.can(T.xBc.SEND_MESSAGES, t),
                 r = u.Ay.getMember(e, i.id)?.isPending,
                 s = n.author.bot;
             return a && !l && !r && !s
@@ -125,9 +125,9 @@ function C(e) {
         message: n,
         currentUser: c
     });
-    return null != c && A ? (0, i.jsx)("div", {
-        className: g.S,
-        children: (0, i.jsx)(x, {
+    return null != c && m ? (0, i.jsx)("div", {
+        className: f.S,
+        children: (0, i.jsx)(C, {
             currentUser: c,
             channel: t,
             message: n,

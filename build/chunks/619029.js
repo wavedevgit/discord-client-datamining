@@ -1,35 +1,34 @@
 /** chunk id: 619029 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => R
+    A: () => p
 });
 var i = n(627968);
 n(64700);
-var r = n(311907),
-    l = n(397927),
+var l = n(311907),
+    r = n(397927),
     s = n(793574),
     a = n(688810),
     o = n(206835),
-    E = n(961350),
-    c = n(696451),
-    _ = n(229527),
-    d = n(81400),
-    A = n(340837),
-    u = n(355097),
-    T = n(985018);
+    c = n(961350),
+    d = n(696451),
+    u = n(229527),
+    _ = n(81400),
+    E = n(340837),
+    T = n(355097),
+    A = n(985018);
 
 function I(e) {
     let {
         guildId: t,
         analyticsLocations: n
-    } = e, [r, s] = (0, d.j8)({
+    } = e, [l, s] = (0, _.j8)({
         guildId: t,
         analyticsLocations: n
-    }), a = s ? T.intl.string(T.t["6ndMcq"]) : T.intl.string(T.t["0eiu6J"]), o = s ? T.intl.string(T.t.S09nw4) : T.intl.string(T.t.tEttXd);
-    return (0, i.jsxs)(l.$Td, {
-        color: l.Hv$.DANGER,
-        children: [a, (0, i.jsx)(l.zr9, {
-            onClick: r,
+    }), a = s ? A.intl.string(A.t["6ndMcq"]) : A.intl.string(A.t["0eiu6J"]), o = s ? A.intl.string(A.t.S09nw4) : A.intl.string(A.t.tEttXd);
+    return (0, i.jsxs)(r.$Td, {
+        color: r.Hv$.DANGER,
+        children: [a, (0, i.jsx)(r.zr9, {
+            onClick: l,
             children: o
         })]
     })
@@ -37,33 +36,33 @@ function I(e) {
 
 function N() {
     let e = (0, o.A)({
-        scrollPosition: u._F.GUILD_TAG
+        scrollPosition: T._F.GUILD_TAG
     });
-    return (0, i.jsxs)(l.$Td, {
-        color: l.Hv$.DANGER,
-        children: [T.intl.string(T.t.Zqlecb), (0, i.jsx)(l.zr9, {
+    return (0, i.jsxs)(r.$Td, {
+        color: r.Hv$.DANGER,
+        children: [A.intl.string(A.t.Zqlecb), (0, i.jsx)(r.zr9, {
             onClick: e,
-            children: T.intl.string(T.t.SJehVW)
+            children: A.intl.string(A.t.SJehVW)
         })]
     })
 }
 
-function R(e) {
+function p(e) {
     let {
         analyticsLocations: t,
         ...n
     } = e, {
-        analyticsLocations: l
-    } = (0, a.Ay)(t, s.A.AUTOMOD_NAGBAR_NOTICE), o = (0, r.bG)([E.default, c.Ay], () => {
+        analyticsLocations: r
+    } = (0, a.Ay)(t, s.A.AUTOMOD_NAGBAR_NOTICE), o = (0, l.bG)([c.default, d.Ay], () => {
         if (null == n.guildId) return new Set;
-        let e = E.default.getId();
-        return (0, _.wj)(c.Ay.getMember(n.guildId, e))
+        let e = c.default.getId();
+        return (0, u.wj)(d.Ay.getMember(n.guildId, e))
     }, [n.guildId]);
-    return o.has(A.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(A.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
+    return o.has(E.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(E.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
         ...n,
-        analyticsLocations: l
-    }) : o.has(A.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {
+        analyticsLocations: r
+    }) : o.has(E.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {
         ...n,
-        analyticsLocations: l
+        analyticsLocations: r
     })
 }

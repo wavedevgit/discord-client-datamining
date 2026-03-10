@@ -17,20 +17,20 @@ function c(e) {
         playingActivity: c,
         onJoinStream: d,
         usernameHook: u,
-        compact: m
-    } = e, _ = (0, r.Ay)(t), A = t.call?.duration, E = u(_), f = o.intl.format(o.t.FKXvaI, {
-        username: _.nick,
+        compact: _
+    } = e, A = (0, r.Ay)(t), m = t.call?.duration, E = u(A), I = o.intl.format(o.t.FKXvaI, {
+        username: A.nick,
         activityName: null != c ? c.name : "unknown",
         onJoinStream: d,
         usernameHook: E
     });
-    return null != A && (f = o.intl.format(o.t.NEFxtd, {
-        username: _.nick,
-        duration: A.humanize(),
+    return null != m && (I = o.intl.format(o.t.NEFxtd, {
+        username: A.nick,
+        duration: m.humanize(),
         channelName: n.name,
         usernameHook: E
     })), (0, i.jsx)(s.A, {
-        iconNode: null != A ? (0, i.jsx)(l.GT3, {
+        iconNode: null != m ? (0, i.jsx)(l.GT3, {
             size: "custom",
             color: "currentColor",
             width: 20,
@@ -39,7 +39,7 @@ function c(e) {
             size: a.Ay.Sizes.SMALL
         }),
         timestamp: t.timestamp,
-        compact: m,
-        children: f
+        compact: _,
+        children: I
     })
 }

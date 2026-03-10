@@ -1,6 +1,6 @@
 /** chunk id: 654265 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(64700),
     l = n(311907),
@@ -12,12 +12,12 @@ var i = n(64700),
     d = n(212455),
     u = n(652215);
 
-function m(e) {
-    let [t, n] = i.useState(!1), [m, _] = i.useState(!1), A = s.default.cast(e), {
+function _(e) {
+    let [t, n] = i.useState(!1), [_, A] = i.useState(!1), m = s.default.cast(e), {
         joinRequest: E,
-        guild: f
+        guild: I
     } = (0, l.cf)([c.A, d.A, a.A, r.A], () => {
-        let e = c.A.getRequest(A);
+        let e = c.A.getRequest(m);
         if (null == e) return {
             joinRequest: null,
             isModmin: !1,
@@ -31,14 +31,14 @@ function m(e) {
         }
     });
     return i.useEffect(() => {
-        null != f || m || (_(!0), o.A.fetchRequestToJoinGuilds())
-    }, [f, m]), i.useEffect(() => {
-        null == E && (n(!0), o.A.fetchGuildJoinRequest(A).finally(() => {
+        null != I || _ || (A(!0), o.A.fetchRequestToJoinGuilds())
+    }, [I, _]), i.useEffect(() => {
+        null == E && (n(!0), o.A.fetchGuildJoinRequest(m).finally(() => {
             n(!1)
         }))
-    }, [E, A]), {
+    }, [E, m]), {
         loading: t,
         joinRequest: E,
-        joinRequestGuild: f
+        joinRequestGuild: I
     }
 }

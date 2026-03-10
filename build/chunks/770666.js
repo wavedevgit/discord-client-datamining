@@ -1,7 +1,7 @@
 /** chunk id: 770666 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => l
+    A: () => _
 });
 var a = n(311907),
     i = n(931991),
@@ -10,7 +10,7 @@ var a = n(311907),
     o = n(576705),
     s = n(652215);
 
-function l(e, t) {
+function _(e, t) {
     return (0, a.bG)([c.A, r.Ay, o.A], () => {
         let n = c.A.getGuild(e);
         if (o.A.can(s.xBc.ADMINISTRATOR, n) || o.A.can(s.xBc.CREATE_EVENTS, n)) return !0;

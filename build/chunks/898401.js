@@ -1,6 +1,6 @@
 /** chunk id: 898401 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(627968);
 n(64700);
@@ -13,11 +13,11 @@ var l = n(421380),
     d = n(985018),
     u = n(801741);
 
-function m(e) {
+function _(e) {
     let {
         message: t,
         channel: n
-    } = e, m = null != n.guild_id ? o.JJy.TEXT_IN_VOICE : o.JJy.CHANNEL_TEXT_AREA;
+    } = e, _ = null != n.guild_id ? o.JJy.TEXT_IN_VOICE : o.JJy.CHANNEL_TEXT_AREA;
     return (0, i.jsx)(s.A, {
         contentClassName: u.o9,
         iconContainerClassName: u.zc,
@@ -52,7 +52,7 @@ function m(e) {
                     },
                     size: l.$n.Sizes.SMALL,
                     premiumModalAnalyticsLocation: {
-                        section: m,
+                        section: _,
                         object: o.ZSU.MESSAGE
                     }
                 })

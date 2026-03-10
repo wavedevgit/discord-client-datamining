@@ -1,73 +1,72 @@
 /** chunk id: 81400 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    EC: () => R,
-    j8: () => S,
-    uZ: () => N
-}), n(938796);
-var i = n(64700),
-    r = n(417597),
-    l = n(159001),
-    s = n(780964),
-    a = n(961350),
-    o = n(696451),
-    E = n(71393),
-    c = n(576705),
-    _ = n(967198),
-    d = n(229527),
-    A = n(652215),
-    u = n(340837),
-    T = n(355097),
-    I = n(985018);
+i.d(n, {
+    EC: () => N,
+    j8: () => O,
+    uZ: () => I
+}), i(938796);
+var l = i(64700),
+    e = i(417597),
+    r = i(159001),
+    u = i(780964),
+    A = i(961350),
+    a = i(696451),
+    d = i(71393),
+    o = i(576705),
+    s = i(967198),
+    E = i(229527),
+    _ = i(652215),
+    f = i(340837),
+    g = i(355097),
+    c = i(985018);
 
-function N(e) {
-    return (0, r.bG)([a.default, o.Ay], () => {
-        if (null == e) return !1;
-        let t = a.default.getId();
-        return (0, d.TR)(o.Ay.getMember(e, t))
-    }, [e])
+function I(t) {
+    return (0, e.bG)([A.default, a.Ay], () => {
+        if (null == t) return !1;
+        let n = A.default.getId();
+        return (0, E.TR)(a.Ay.getMember(t, n))
+    }, [t])
 }
 
-function R(e) {
-    return (0, r.cf)([a.default, o.Ay, _.A, E.A], () => {
-        let t = {
+function N(t) {
+    return (0, e.cf)([A.default, a.Ay, s.A, d.A], () => {
+        let n = {
                 nick: void 0,
                 bio: void 0
             },
-            n = _.A.getGuildId(),
-            i = e ?? n,
-            r = E.A.getGuild(i);
-        if (null == r || null == i) return t;
-        let l = a.default.getId(),
-            s = o.Ay.getMember(i, l),
-            c = (0, d.wR)(s?.flags);
-        return 0 === c.size || (c.has(u.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == e ? t.nick = [I.intl.formatToPlainString(I.t.WBUh3O, {
-            guildName: r.name ?? ""
-        })] : t.nick = [I.intl.string(I.t.EPZCrM)]), c.has(u.D.AUTOMOD_QUARANTINED_BIO) && (t.bio = [I.intl.string(I.t.dZh1vz)])), t
-    }, [e])
+            i = s.A.getGuildId(),
+            l = t ?? i,
+            e = d.A.getGuild(l);
+        if (null == e || null == l) return n;
+        let r = A.default.getId(),
+            u = a.Ay.getMember(l, r),
+            o = (0, E.wR)(u?.flags);
+        return 0 === o.size || (o.has(f.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) && (null == t ? n.nick = [c.intl.formatToPlainString(c.t.WBUh3O, {
+            guildName: e.name ?? ""
+        })] : n.nick = [c.intl.string(c.t.EPZCrM)]), o.has(f.D.AUTOMOD_QUARANTINED_BIO) && (n.bio = [c.intl.string(c.t.dZh1vz)])), n
+    }, [t])
 }
 
-function S(e) {
+function O(t) {
     let {
-        guildId: t,
-        scrollPosition: a,
-        analyticsLocations: o
-    } = e, _ = (0, r.bG)([E.A], () => E.A.getGuild(t), [t]), d = (0, r.bG)([c.A], () => null != _ && c.A.can(A.xBc.CHANGE_NICKNAME, _), [_]);
-    return [i.useCallback(() => {
-        if (null == _) return;
-        let e = A.nc_.PROFILE_CUSTOMIZATION,
-            t = T.Eq.GUILD;
-        d ? (0, l.V2)(_.id) : t = T.Eq.USER_PROFILE;
+        guildId: n,
+        scrollPosition: A,
+        analyticsLocations: a
+    } = t, s = (0, e.bG)([d.A], () => d.A.getGuild(n), [n]), E = (0, e.bG)([o.A], () => null != s && o.A.can(_.xBc.CHANGE_NICKNAME, s), [s]);
+    return [l.useCallback(() => {
+        if (null == s) return;
+        let t = _.nc_.PROFILE_CUSTOMIZATION,
+            n = g.Eq.GUILD;
+        E ? (0, r.V2)(s.id) : n = g.Eq.USER_PROFILE;
         {
             let {
-                openUserSettings: i
-            } = n(840065);
-            i(s.X.PROFILE_PANEL, {
-                section: e,
-                subsection: t,
-                scrollPosition: a,
-                analyticsLocations: o
+                openUserSettings: l
+            } = i(840065);
+            l(u.X.PROFILE_PANEL, {
+                section: t,
+                subsection: n,
+                scrollPosition: A,
+                analyticsLocations: a
             })
         }
-    }, [d, a, o, _]), d]
+    }, [E, A, a, s]), E]
 }

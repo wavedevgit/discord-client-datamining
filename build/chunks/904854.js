@@ -1,6 +1,6 @@
 /** chunk id: 904854 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -11,60 +11,60 @@ var i = n(627968),
     c = n(907459),
     d = n(287809),
     u = n(763754),
-    m = n(447215),
-    _ = n(888675),
-    A = n(502197),
+    _ = n(447215),
+    A = n(888675),
+    m = n(502197),
     E = n(985018),
-    f = n(443300);
+    I = n(443300);
 
-function h(e) {
+function T(e) {
     var t;
-    let n, h, g, p, x, C, {
-            message: I,
-            channel: T,
-            compact: N
+    let n, T, f, N, C, g, {
+            message: h,
+            channel: p,
+            compact: S
         } = e,
-        S = (0, A.K)(I),
-        R = (0, r.yK)([d.default], () => I.call?.participants != null ? I.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== I.author.id) : [], [I.author.id, I.call]),
-        v = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
-        O = l.useMemo(() => (0, c.L)(R, v, "VoiceSession - participants"), [R, v]),
-        M = (t = I.author, n = (0, m.P)({
+        R = (0, m.K)(h),
+        x = (0, r.yK)([d.default], () => h.call?.participants != null ? h.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== h.author.id) : [], [h.author.id, h.call]),
+        O = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
+        M = l.useMemo(() => (0, c.L)(x, O, "VoiceSession - participants"), [x, O]),
+        D = (t = h.author, n = (0, _.P)({
             user: t,
-            channelId: T.id,
-            guildId: T.guild_id,
-            messageId: I.id
-        }), h = (0, m.P)({
-            user: O[0],
-            channelId: T.id,
-            guildId: T.guild_id,
-            messageId: I.id
-        }), g = (0, m.P)({
-            user: O[1],
-            channelId: T.id,
-            guildId: T.guild_id,
-            messageId: I.id
-        }), p = (0, u.Ay)(I), x = (0, u.d8)(O[0], T), C = (0, u.d8)(O[1], T), null == S ? E.intl.format(E.t["eX6e/3"], {
-            username: p.nick,
-            usernameHook: n(p)
+            channelId: p.id,
+            guildId: p.guild_id,
+            messageId: h.id
+        }), T = (0, _.P)({
+            user: M[0],
+            channelId: p.id,
+            guildId: p.guild_id,
+            messageId: h.id
+        }), f = (0, _.P)({
+            user: M[1],
+            channelId: p.id,
+            guildId: p.guild_id,
+            messageId: h.id
+        }), N = (0, u.Ay)(h), C = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == R ? E.intl.format(E.t["eX6e/3"], {
+            username: N.nick,
+            usernameHook: n(N)
         }) : E.intl.format(E.t.YUbgR8, {
-            userCount: O.length + 1,
-            username: p.nick,
-            usernameHook: n(p),
-            username2: x.nick,
-            username2Hook: h(x),
-            username3: C.nick,
-            username3Hook: g(C),
-            otherCount: O.length - 1,
-            duration: S
+            userCount: M.length + 1,
+            username: N.nick,
+            usernameHook: n(N),
+            username2: C.nick,
+            username2Hook: T(C),
+            username3: g.nick,
+            username3Hook: f(g),
+            otherCount: M.length - 1,
+            duration: R
         }));
-    return (0, i.jsx)(_.A, {
+    return (0, i.jsx)(A.A, {
         iconNode: (0, i.jsx)(a.HKD, {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE
         }),
-        iconContainerClassName: f.z,
-        timestamp: I.timestamp,
-        compact: N,
-        children: M
+        iconContainerClassName: I.z,
+        timestamp: h.timestamp,
+        compact: S,
+        children: D
     })
 }

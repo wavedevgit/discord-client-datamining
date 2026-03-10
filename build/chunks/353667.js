@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => O
+    j: () => j
 });
 var i = n(627968),
     s = n(64700),
@@ -192,19 +192,6 @@ function v(e) {
 
 function j(e) {
     let {
-        component: t,
-        panelKey: n,
-        notice: s
-    } = e;
-    return (0, i.jsx)(I, {
-        panelKey: n,
-        notice: s,
-        children: (0, i.jsx)(t, {})
-    })
-}
-
-function O(e) {
-    let {
         node: t
     } = e, {
         layout: n
@@ -221,11 +208,6 @@ function O(e) {
                 })
             })
         }, [t]), l && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if (null != t.StronglyDiscouragedCustomComponent) return (0, i.jsx)(j, {
-        component: t.StronglyDiscouragedCustomComponent,
-        panelKey: t.key,
-        notice: t.notice
-    });
     if ((0, m.zY)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,

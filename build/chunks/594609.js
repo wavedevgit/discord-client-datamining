@@ -1,18 +1,17 @@
 /** chunk id: 594609 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    h: () => c
+    h: () => d
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(158954),
+    l = n(64700),
+    r = n(158954),
     s = n(397927),
     a = n(827343),
     o = n(985018);
 
-function E(e) {
-    let [t, n] = r.useState(!1);
-    return (0, i.jsx)(l.Modal, {
+function c(e) {
+    let [t, n] = l.useState(!1);
+    return (0, i.jsx)(r.Modal, {
         size: "md",
         title: o.intl.string(o.t["zQ1+Jw"]),
         subtitle: o.intl.string(o.t.K1gWXn),
@@ -23,7 +22,7 @@ function E(e) {
             },
             variant: "primary"
         }],
-        actionBarInput: (0, i.jsx)(l.Sc0, {
+        actionBarInput: (0, i.jsx)(r.Sc0, {
             checked: t,
             onChange: e => n(e),
             label: o.intl.string(o.t.XAiAgD),
@@ -33,8 +32,8 @@ function E(e) {
     })
 }
 
-function c() {
-    (0, s.qfG)(e => (0, i.jsx)(E, {
+function d() {
+    (0, s.qfG)(e => (0, i.jsx)(c, {
         ...e
     }))
 }
