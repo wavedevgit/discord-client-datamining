@@ -1,6 +1,6 @@
 /** chunk id: 389405 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     r = n(64700),
@@ -16,10 +16,10 @@ var i = n(627968),
     _ = n(985018),
     m = n(742249);
 
-function g(e) {
+function p(e) {
     let {
         applicationId: t
-    } = e.match.params, [g, p] = r.useState(!1), E = r.useRef(!1), [I, f] = r.useState(null), C = !c.isPlatformEmbedded && !a.Fr && !g, T = r.useMemo(() => (0, l.A)(), []);
+    } = e.match.params, [p, g] = r.useState(!1), E = r.useRef(!1), [I, f] = r.useState(null), C = !c.isPlatformEmbedded && !a.Fr && !p, T = r.useMemo(() => (0, l.A)(), []);
     return (r.useEffect(() => {
         C && !0 !== E.current && (Promise.resolve().then(n.bind(n, 129014)).then(e => {
             let {
@@ -60,7 +60,7 @@ function g(e) {
         }), (0, i.jsx)(s.$nd, {
             variant: "primary",
             text: _.intl.string(_.t.fIv16B),
-            onClick: () => p(!0)
+            onClick: () => g(!0)
         })]
     }) : (0, i.jsxs)("div", {
         className: m.k,

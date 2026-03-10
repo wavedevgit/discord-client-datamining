@@ -42,14 +42,14 @@ let m = {
                     break;
                 case l.T.PRIVATE_CHANNEL:
                 case l.T.PRIVATE_CHANNEL_MESSAGE:
-                    let g = c.A.getChannel(m.channel_id);
-                    if (null == g) throw new i.G({
+                    let p = c.A.getChannel(m.channel_id);
+                    if (null == p) throw new i.G({
                         errorCode: _.Lw.INVALID_CHANNEL
                     }, "Invalid channel");
-                    if (g.type === r.r.DM) throw new i.G({
+                    if (p.type === r.r.DM) throw new i.G({
                         errorCode: _.Lw.INVALID_CHANNEL
                     }, "Cannot send invite to a DM");
-                    t = g;
+                    t = p;
                     break;
                 default:
                     throw new i.G({

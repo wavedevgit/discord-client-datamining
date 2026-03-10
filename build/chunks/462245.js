@@ -15,8 +15,8 @@ var i = n(735438),
     h = n(309010),
     _ = n(977997),
     m = n(147036),
-    g = n(636401),
-    p = n(90924),
+    p = n(636401),
+    g = n(90924),
     E = n(629471),
     I = n(569475),
     f = n(613057),
@@ -33,16 +33,16 @@ let T = {
                 },
                 socket: n
             } = e, i = c.A.getChannel(t);
-            if (null == i) throw new g.A({
+            if (null == i) throw new p.A({
                 errorCode: C.Lw6.INVALID_CHANNEL
             }, `Invalid channel id: ${t}`);
             if (i.isPrivate()) {
                 let e = n.authorization.scopes;
-                if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new g.A({
+                if (!e.includes(l.F.RPC) && !e.includes(l.F.DM_CHANNELS_READ)) throw new p.A({
                     errorCode: C.Lw6.INVALID_PERMISSIONS
                 }, "Invalid scope")
             }
-            return (0, p.SN)(i, (0, p.B_)(i, n.application.id, n.authorization.scopes))
+            return (0, g.SN)(i, (0, g.B_)(i, n.application.id, n.authorization.scopes))
         }
     },
     [C.e$_.GET_CHANNELS]: {
@@ -55,7 +55,7 @@ let T = {
             } = e, n = r().values(c.A.loadAllGuildAndPrivateChannelsFromDisk());
             if (t) {
                 let e = u.A.getGuild(t);
-                if (null == e) throw new g.A({
+                if (null == e) throw new p.A({
                     errorCode: C.Lw6.INVALID_GUILD
                 }, `Invalid guild id: ${t}`);
                 n = n.filter(t => {
@@ -87,7 +87,7 @@ let T = {
         },
         handler(e) {
             let t = (0, I.A)();
-            if (null == t) throw new g.A({
+            if (null == t) throw new p.A({
                 errorCode: C.Lw6.INVALID_CHANNEL
             }, "Invalid channel");
             return {
@@ -116,28 +116,28 @@ let T = {
             } = e;
             if (!i) return s.default.selectVoiceChannel(null), null;
             let E = h.A.getVoiceChannelId();
-            if (null != E && E !== i && !1 === l) throw new g.A({
+            if (null != E && E !== i && !1 === l) throw new p.A({
                 errorCode: C.Lw6.SELECT_VOICE_FORCE_REQUIRED
             }, "User is already joined to a voice channel.");
             return t.storeWait(n, () => c.A.getChannel(i), r).catch(() => {
-                throw new g.A({
+                throw new p.A({
                     errorCode: C.Lw6.SELECT_CHANNEL_TIMED_OUT
                 }, "Request to select voice channel timed out.")
             }).then(e => {
-                if (null == e) throw new g.A({
+                if (null == e) throw new p.A({
                     errorCode: C.Lw6.INVALID_CHANNEL
                 }, `Invalid channel id: ${i}`);
-                if (!(0, d.gV)(e.type)) throw new g.A({
+                if (!(0, d.gV)(e.type)) throw new p.A({
                     errorCode: C.Lw6.INVALID_CHANNEL
                 }, "Channel is not a voice channel");
-                return Promise.all([Promise.resolve(e), (0, p.SN)(e, (0, p.B_)(e, n.application.id, n.authorization.scopes))])
+                return Promise.all([Promise.resolve(e), (0, g.SN)(e, (0, g.B_)(e, n.application.id, n.authorization.scopes))])
             }).then(e => {
                 let [t, n] = e;
                 if (n.guild_id) {
-                    if ((0, m.Pd)(t, _.A, u.A)) throw new g.A({
+                    if ((0, m.Pd)(t, _.A, u.A)) throw new p.A({
                         errorCode: C.Lw6.INVALID_CHANNEL
                     }, "Channel is full");
-                    if (!A.A.can(C.xBc.CONNECT, t)) throw new g.A({
+                    if (!A.A.can(C.xBc.CONNECT, t)) throw new p.A({
                         errorCode: C.Lw6.INVALID_PERMISSIONS
                     }, "Connect permission required to join channel")
                 }
@@ -153,7 +153,7 @@ let T = {
             let {
                 socket: t
             } = e, n = h.A.getVoiceChannelId(), i = null != n ? c.A.getChannel(n) : null;
-            return null != i ? (0, p.SN)(i, (0, p.B_)(i, t.application.id, t.authorization.scopes)) : null
+            return null != i ? (0, g.SN)(i, (0, g.B_)(i, t.application.id, t.authorization.scopes)) : null
         }
     },
     [C.e$_.SELECT_TEXT_CHANNEL]: {
@@ -172,20 +172,20 @@ let T = {
                 }
             } = e;
             return i ? t.storeWait(n, () => c.A.getChannel(i), r).catch(() => {
-                throw new g.A({
+                throw new p.A({
                     errorCode: C.Lw6.SELECT_CHANNEL_TIMED_OUT
                 }, "Request to select text channel timed out.")
             }).then(e => {
-                if (null == e) throw new g.A({
+                if (null == e) throw new p.A({
                     errorCode: C.Lw6.INVALID_CHANNEL
                 }, `Invalid channel id: ${i}`);
-                if (!(0, d.pQ)(e.type)) throw new g.A({
+                if (!(0, d.pQ)(e.type)) throw new p.A({
                     errorCode: C.Lw6.INVALID_CHANNEL
                 }, "Channel is not a text channel");
-                return Promise.all([Promise.resolve(e), (0, p.SN)(e, (0, p.B_)(e, n.application.id, n.authorization.scopes))])
+                return Promise.all([Promise.resolve(e), (0, g.SN)(e, (0, g.B_)(e, n.application.id, n.authorization.scopes))])
             }).then(e => {
                 let [t, n] = e;
-                if (n.guild_id && !A.A.can(C.xBc.VIEW_CHANNEL, t)) throw new g.A({
+                if (n.guild_id && !A.A.can(C.xBc.VIEW_CHANNEL, t)) throw new p.A({
                     errorCode: C.Lw6.INVALID_CHANNEL
                 }, "No permission to see channel");
                 return n.guild_id ? (0, o.bG)(C.BVt.CHANNEL(n.guild_id, t.id)) : s.default.selectPrivateChannel(t.id), n
@@ -202,7 +202,7 @@ let T = {
                 }
             } = e;
             return a.Ay.createInvite(t, n, "RPC").catch(() => {
-                throw new g.A({
+                throw new p.A({
                     errorCode: C.Lw6.INVALID_PERMISSIONS
                 }, `Unable to generate an invite for ${t}. Does this user have permissions?`)
             })

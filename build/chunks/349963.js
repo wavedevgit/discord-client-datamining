@@ -15,8 +15,8 @@ var i = n(299855),
     h = n(309010),
     _ = n(157257),
     m = n(723702),
-    g = n(279250),
-    p = n(880144),
+    p = n(279250),
+    g = n(880144),
     E = n(997630),
     I = n(905552),
     f = n(502075);
@@ -24,12 +24,12 @@ var i = n(299855),
 function C() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
         t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
-    if (!(0, p.A)(u.Ay) || null != o.A.getCurrentUserActiveStream()) return !1;
+    if (!(0, g.A)(u.Ay) || null != o.A.getCurrentUserActiveStream()) return !1;
     let n = h.A.getVoiceChannelId(),
         i = d.A.getChannel(n);
     if (null == i) return !1;
     let C = i.getGuildId();
-    if (!(0, g.vz)(i, c.A, A.A, !1)) return !1;
+    if (!(0, p.vz)(i, c.A, A.A, !1)) return !1;
     if (u.Ay.getUseSystemScreensharePicker())(0, m.isMac)() && r().satisfies(a.A?.os.release, f.WZ) ? (0, E.a)() : (0, E.a)("window");
     else {
         let n = (0, I.A)(s.Ay, _.A);

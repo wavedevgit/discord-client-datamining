@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(435371),
     _ = n(397927),
     m = n(701363),
-    g = n(770178),
-    p = n(826673),
+    p = n(770178),
+    g = n(826673),
     E = n(932001),
     I = n(859703),
     f = n(18437),
@@ -45,7 +45,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                     i(v.i.TAKE_ACTION)
                 }, [i]),
                 a = n === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
-                s = (0, p.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
+                s = (0, g.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
             return {
                 shouldShowPopover: a,
                 shouldShowGradientAndBadge: t && !s,
@@ -111,7 +111,7 @@ let O = Math.ceil(Math.sqrt(115200)),
             }), H.handleOnboardingPopoutRender()
         }, [B, k, H]), [q, K] = r.useState(-1), z = r.useCallback(e => {
             K(e.contentRect.width)
-        }, []), $ = (0, g.w)(z, [], {
+        }, []), $ = (0, p.w)(z, [], {
             fireOnMount: !0
         }), Q = !D && P, X = !D && R, Z = D && w?.questHomeEntrypoint?.tooltipTitle != null, {
             inlineCssProperties: J,

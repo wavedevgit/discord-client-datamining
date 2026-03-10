@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(531260),
     _ = n(771781),
     m = n(932001),
-    g = n(320118),
-    p = n(287809),
+    p = n(320118),
+    g = n(287809),
     E = n(166403),
     I = n(954571),
     f = n(927578),
@@ -56,7 +56,7 @@ var i = n(627968),
 let J = e => {
         let {
             selected: t
-        } = e, n = (0, s.bG)([p.default], () => p.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), r = (0, O.V)(), l = (0, b.O)(), a = (0, T.cg)(), o = (0, K.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != r || null != l || a || null != o || d, A = null != c ? c : n?.createdAt;
+        } = e, n = (0, s.bG)([g.default], () => g.default.getCurrentUser()), i = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()), r = (0, O.V)(), l = (0, b.O)(), a = (0, T.cg)(), o = (0, K.H)(), d = (0, f.Of)(n, i), c = (0, s.bG)([C.A], () => C.A.getCreatedAtOverride()), u = t || null != r || null != l || a || null != o || d, A = null != c ? c : n?.createdAt;
         return u || null != n && null != A && Date.now() - A.getTime() > 12096e5
     },
     ee = e => {
@@ -67,7 +67,7 @@ let J = e => {
                 locationState: ei,
                 ...er
             } = e,
-            el = (0, s.bG)([p.default], () => p.default.getCurrentUser()),
+            el = (0, s.bG)([g.default], () => g.default.getCurrentUser()),
             ea = (0, s.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
             es = (0, f.Of)(el, ea),
             eo = (0, f.YE)(el, $.PremiumTypes.TIER_2),
@@ -80,15 +80,15 @@ let J = e => {
             em = (0, w.NF)({
                 trialOffer: ec
             }),
-            eg = (0, R.bf)(),
-            ep = (0, K.H)(),
+            ep = (0, R.bf)(),
+            eg = (0, K.H)(),
             eE = (0, w.Tp)(),
             eI = (0, s.bG)([N.A], () => N.A.getReminderStateId()),
             ef = (0, M.c7)(),
             {
                 programReward: eC,
                 isEligible: eT
-            } = (0, g.F)({
+            } = (0, p.F)({
                 location: "NitroTabButton"
             }),
             {
@@ -121,7 +121,7 @@ let J = e => {
             eV = [];
         (0, _.Tc)() && (ef && ek.push(o.M.RECURRING_3P_PROMOTION_POPOVER), e_ && ek.push(o.M.BOGO_2025_NITRO_TAB_BADGE), eU && ek.push(o.M.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), eh && ek.push(o.M.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2));
         let [eB, eH] = (0, m.kn)(ek, void 0, !0);
-        eR && eV.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eg && eV.push(o.M.PREMIUM_GROUP_POPOVER), ex && eV.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eL && eV.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER);
+        eR && eV.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), ep && eV.push(o.M.PREMIUM_GROUP_POPOVER), ex && eV.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eL && eV.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER);
         let [eF, eY] = (0, m.kn)(eV, void 0, !0), eW = (0, L.c)(a.C.PREMIUM_TAB), eq = (0, L.c)(a.C.PREMIUM_TAB_TOOLTIP), [eK, ez] = (0, m.Cc)(null != eW && "premiumTab" === eW.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, eW?.promotionId ?? "", void 0, !0), [e$, eQ] = (0, m.Cc)(eO ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, ev ?? "", void 0, !0), eX = null != eq && "premiumTabTooltip" === eq.properties.properties.oneofKind && eK === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
         if (r.useEffect(() => {
                 !0 === ee && null != eB && eH(X.i.AUTO_DISMISS), !0 === ee && null != eF && eY(X.i.AUTO_DISMISS), !0 === ee && null != eK && ez(X.i.AUTO_DISMISS), !0 === ee && null != e$ && eQ(X.i.AUTO_DISMISS)
@@ -141,7 +141,7 @@ let J = e => {
             messageStyle: A.yE.SHORT_TIME,
             upperCase: !0
         }));
-        let eJ = eg && eF === o.M.PREMIUM_GROUP_POPOVER;
+        let eJ = ep && eF === o.M.PREMIUM_GROUP_POPOVER;
         if (eJ) n = (0, i.jsx)(c.Exy, {
             type: "new",
             variant: "expressive"
@@ -174,8 +174,8 @@ let J = e => {
             offerExpiresAt: null
         }), C = 2) : eh ? (n = (0, i.jsx)(q.d, {
             expiresAt: eD
-        }), C = 4) : null != ep ? (n = (0, i.jsx)(z.A, {
-            copy: ep,
+        }), C = 4) : null != eg ? (n = (0, i.jsx)(z.A, {
+            copy: eg,
             showStars: !1
         }), C = 1) : null != eu ? (n = (0, i.jsx)(Y.fY, {
             userDiscount: eu,

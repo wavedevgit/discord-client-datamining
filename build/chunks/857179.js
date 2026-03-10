@@ -1,6 +1,6 @@
 /** chunk id: 857179 params = (module,exports,require) **/
 n.d(t, {
-    G: () => g,
+    G: () => p,
     o: () => m
 });
 var i = n(284009),
@@ -40,7 +40,7 @@ function m(e) {
     })
 }
 
-function g(e, t) {
+function p(e, t) {
     let {
         soundKey: n,
         soundURL: i,

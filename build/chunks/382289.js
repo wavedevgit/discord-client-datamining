@@ -26,7 +26,7 @@ function m(e) {
     h[e] = Date.now()
 }
 
-function g(e, t, n, i) {
+function p(e, t, n, i) {
     u[e].add(t);
     let r = h[t];
     (null == r || r + 3e5 > Date.now()) && m(t), null == A[t] && (A[t] = []), A[t].push({
@@ -35,7 +35,7 @@ function g(e, t, n, i) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         channel: t
     } = e;
@@ -86,7 +86,7 @@ new E(a.h, {
         if (null == l) return !1;
         let a = l.guild_id;
         if (null == a || null == u[a]) return !1;
-        g(a, t, n.id, n.author?.id)
+        p(a, t, n.id, n.author?.id)
     },
     GUILD_DELETE: function(e) {
         let {
@@ -94,8 +94,8 @@ new E(a.h, {
         } = e;
         delete u[t.id]
     },
-    CHANNEL_DELETE: p,
-    THREAD_DELETE: p,
+    CHANNEL_DELETE: g,
+    THREAD_DELETE: g,
     ACTIVE_CHANNELS_FETCH_START: function(e) {
         let {
             guildId: t
@@ -121,7 +121,7 @@ new E(a.h, {
                 messages: i
             } = e;
             i.forEach(e => {
-                g(t, n, e.message_id, e.user_id)
+                p(t, n, e.message_id, e.user_id)
             })
         })
     },

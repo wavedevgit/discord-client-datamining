@@ -1,6 +1,6 @@
 /** chunk id: 153244 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     r = n(64700),
@@ -39,7 +39,7 @@ function m() {
         })]
     })
 }
-let g = r.memo(function() {
+let p = r.memo(function() {
     return r.useEffect(() => {
         (0, d.d)("application_library")
     }, []), (0, i.jsxs)("div", {

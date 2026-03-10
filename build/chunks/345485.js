@@ -1,6 +1,6 @@
 /** chunk id: 345485 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -17,12 +17,12 @@ var r = n(110259),
     _ = n(985018),
     m = n(330766);
 
-function g(e) {
+function p(e) {
     let {
         guildId: t,
         markAsDismissed: n,
-        targetElementRef: g
-    } = e, p = (0, l.bG)([c.A, u.default], () => {
+        targetElementRef: p
+    } = e, g = (0, l.bG)([c.A, u.default], () => {
         let e = u.default.getCurrentUser(),
             n = c.A.getGuild(t);
         return null != n && (0, d.bM)(n, e)
@@ -32,10 +32,10 @@ function g(e) {
         name: r.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
         properties: {
             guild_id: t,
-            is_owner: p
+            is_owner: g
         }
     }), (0, i.jsx)(a.AM, {
-        targetElementRef: g,
+        targetElementRef: p,
         title: _.intl.string(_.t.C0m4rQ),
         body: _.intl.string(_.t.zOHfEX),
         graphic: {

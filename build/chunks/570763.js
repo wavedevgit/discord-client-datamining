@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(944791),
     _ = n(775602),
     m = n(793574),
-    g = n(139286),
-    p = n(197111),
+    p = n(139286),
+    g = n(197111),
     E = n(10088),
     I = n(979286),
     f = n(726249),
@@ -70,7 +70,7 @@ var i = n(627968),
     e_ = n(602557);
 let em = r.createContext({});
 
-function eg(e) {
+function ep(e) {
     let {
         onLoadComplete: t
     } = e, {
@@ -110,7 +110,7 @@ function eg(e) {
     })
 }
 
-function ep(e) {
+function eg(e) {
     let {
         onLoadComplete: t
     } = e;
@@ -152,11 +152,11 @@ function eE(e) {
     } = (0, j.Z)({
         location: ei.rE.QUEST_HOME_DESKTOP
     }), {
-        enabled: g
+        enabled: p
     } = H.sn.useConfig({
         location: ei.rE.QUEST_HOME_DESKTOP
-    }), p = r.useRef(null), E = r.useCallback(() => {
-        p.current?.resetSortingFiltering()
+    }), g = r.useRef(null), E = r.useCallback(() => {
+        g.current?.resetSortingFiltering()
     }, []);
     return (0, i.jsxs)(et.X.Provider, {
         value: u,
@@ -164,7 +164,7 @@ function eE(e) {
             onScroll: d,
             ref: u,
             children: [function() {
-                if (!o && g) {
+                if (!o && p) {
                     if (A !== Y.NC.ALL) return null;
                     if (_) return (0, i.jsx)(ee.H, {});
                     if (null != h) return (0, i.jsx)(ee.A, {
@@ -176,12 +176,12 @@ function eE(e) {
             }(), (0, i.jsx)(v.A, {
                 children: (0, i.jsxs)("div", {
                     className: a()(eo.Qs, {
-                        [eo.HR]: g && !m && A !== Y.NC.ALL
+                        [eo.HR]: p && !m && A !== Y.NC.ALL
                     }),
                     children: [n, s ? A === Y.NC.CLAIMED ? (0, i.jsx)(X.A, {
                         onSelectTab: c
                     }) : A === Y.NC.PREVIEW_TOOL ? (0, i.jsx)(q.A, {}) : (0, i.jsx)(Q.A, {
-                        ref: p
+                        ref: g
                     }) : null]
                 })
             })]
@@ -213,7 +213,7 @@ let eI = function(e) {
         let {
             current: e
         } = Q;
-        (0, g.x)({
+        (0, p.x)({
             name: d.ImpressionNames.QUEST_HOME,
             type: d.ImpressionTypes.VIEW,
             properties: {
@@ -263,7 +263,7 @@ let eI = function(e) {
             i = e.get(Y.L1.TAB);
         if (eA && i === Y.NC.PREVIEW_TOOL) {
             let t = e.get(Y.L1.QUEST_ID);
-            p.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
+            g.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
                 type: ea.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: t,
@@ -277,7 +277,7 @@ let eI = function(e) {
             let t = (0, k.uJ)(n.hash) ? null : n.hash.substring(1),
                 r = e.get(Y.L1.SORT),
                 l = e.get(Y.L1.FILTER);
-            p.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
+            g.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
                 type: ea.XK.QUEST_HOME,
                 params: {
                     questId: (0, k.uJ)(t) ? void 0 : t,
@@ -334,7 +334,7 @@ let eI = function(e) {
                             onClick: eh
                         }),
                         className: eo.Gj,
-                        children: (0, i.jsx)(ep, {
+                        children: (0, i.jsx)(eg, {
                             onLoadComplete: $
                         })
                     }),
@@ -383,7 +383,7 @@ let eI = function(e) {
                         className: a()(eo.cI, eo.GF),
                         children: [(0, i.jsx)("div", {
                             className: a()(eo.nY, eo.vu)
-                        }), (0, i.jsx)(eg, {
+                        }), (0, i.jsx)(ep, {
                             onLoadComplete: $
                         })]
                     }),
@@ -413,7 +413,7 @@ let eI = function(e) {
                         className: eo.cI,
                         children: [(0, i.jsx)("div", {
                             className: eo.nY
-                        }), (0, i.jsx)(eg, {
+                        }), (0, i.jsx)(ep, {
                             onLoadComplete: $
                         })]
                     }),

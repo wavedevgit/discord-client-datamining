@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(58149),
     _ = n(332456),
     m = n(237774),
-    g = n(973854),
-    p = n(504982),
+    p = n(973854),
+    g = n(504982),
     E = n(815706),
     I = n(134047),
     f = n(313961),
@@ -71,8 +71,8 @@ async function ei(e) {
     } = e, h = await (0, D.E1)(t.pid), {
         gameName: _,
         gameId: m,
-        exe: g,
-        distributor: p,
+        exe: p,
+        distributor: g,
         rawExePath: E
     } = (0, N.wH)(t), I = r.enabledLegacy || r.enabledOOP, f = R.x.legacyEnabled || R.x.oopEnabled, C = r.source;
     J.default.track(et.HAw.LAUNCH_GAME, {
@@ -83,7 +83,7 @@ async function ei(e) {
         is_launcher: t?.isLauncher ?? !1,
         game_platform: et.yTV.DESKTOP,
         detection_method: i,
-        distributor: p,
+        distributor: g,
         is_overlay_enabled: f,
         is_overlay_game_enabled: I,
         is_overlay_game_source: C,
@@ -94,7 +94,7 @@ async function ei(e) {
         activity_status_shared_guilds: a,
         current_user_status: K.A.getStatus(),
         game_detection_enabled: (0, S.Xr)(t),
-        executable_path: g,
+        executable_path: p,
         voice_channel_id: s,
         voice_channel_type: o,
         voice_channel_bitrate: d,
@@ -103,7 +103,7 @@ async function ei(e) {
         hidden_by_distributor: t.hidden,
         game_metadata: (0, M.MT)(t),
         executable_fingerprint: t.executableFingerprint
-    }), null != g && S.Ay.addExecutableTrackedByAnalytics(g)
+    }), null != p && S.Ay.addExecutableTrackedByAnalytics(p)
 }
 class er extends r.PureComponent {
     isMessageRequestsInitialized = !1;
@@ -154,7 +154,7 @@ class er extends r.PureComponent {
                 o = b.Ay.getActiveEventByChannel(t);
             (0, h.zV)(et.HAw.CHANNEL_OPENED, {
                 ...(0, h.qL)(t)
-            }), (0, g.A)({
+            }), (0, p.A)({
                 channelId: t
             });
             let d = null,
@@ -176,30 +176,30 @@ class er extends r.PureComponent {
                 ...(0, h.JK)(n, t, l)
             })
         }
-        let p = o?.distributor === e.runningGame?.distributor && o?.sku === e.runningGame?.sku && o?.name === e.runningGame?.name,
+        let g = o?.distributor === e.runningGame?.distributor && o?.sku === e.runningGame?.sku && o?.name === e.runningGame?.name,
             x = null != e.runningGame && null != o && e.runningGame.isLauncher !== o.isLauncher;
-        if (e.runningGame !== o && null != o && !o.isLauncher && (!p || x)) {
+        if (e.runningGame !== o && null != o && !o.isLauncher && (!g || x)) {
             let {
                 gameId: e
             } = (0, N.wH)(o), l = void 0 !== e ? k.A.getDetectableGame(e) : null, a = S.Ay.getOverrideForGame(o), s = B.A.getGuildIds(), u = U.JG.getSetting(), A = s.filter(e => !u.includes(e)).slice(0, 200), h = null;
             h = null != a ? "custom_override" : null != l ? "verified_game" : "launcher";
             let _ = j.default.getTrackedGameByPid(o.pid),
                 m = (0, S.hw)(o),
-                g = {
+                p = {
                     enabledOOP: _?.oopEnabled ?? m.enabledOOP,
                     enabledLegacy: _?.legacyEnabled ?? m.enabledLegacy,
                     overlayMethod: _?.overlayMethod ?? m.overlayMethod,
                     source: _?.source ?? m.source,
                     reason: "ChatAutoAnalytics"
                 },
-                p = j.default.getOverlayMethod(o.pid) ?? g.overlayMethod;
+                g = j.default.getOverlayMethod(o.pid) ?? p.overlayMethod;
             if (setTimeout(() => {
                     (o.distributor === et.d3x.ROBLOX ? this.debouncedRobloxAnalytics : ei)({
                         runningGame: o,
                         game: l,
                         detectionMethod: h,
-                        overlayStatus: g,
-                        overlayMethod: p,
+                        overlayStatus: p,
+                        overlayMethod: g,
                         sharedGuildIds: A,
                         voiceChannelId: t,
                         voiceChannelType: i,
@@ -333,14 +333,14 @@ function el() {
                 (0, h.zV)(et.HAw.CHANNEL_OPENED, {
                     ...e,
                     ...(0, h.qL)(s)
-                }), (0, g.A)({
+                }), (0, p.A)({
                     channelId: s
                 }), t.current.isTextInVoice && (0, h.zV)(et.HAw.TEXT_IN_VOICE_OPENED, {
                     channel_is_nsfw: t.current.isNSFWChannel
                 })
             }
         }, [n, s]), r.useEffect(() => {
-            n && null == o && l === et.BVt.FRIENDS && (0, p.A)({
+            n && null == o && l === et.BVt.FRIENDS && (0, g.A)({
                 tab_opened: i
             })
         }, [n, i, l, o]), r.useEffect(() => {

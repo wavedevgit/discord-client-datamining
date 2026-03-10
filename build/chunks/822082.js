@@ -20,11 +20,11 @@ let A = function(e) {
         channel: h,
         onClick: _,
         isFocused: m,
-        isActive: g,
-        onOtherHover: p,
+        isActive: p,
+        onOtherHover: g,
         className: E
     } = e, [I, f] = r.useState(!1), [C, T] = r.useState(!1), N = () => {
-        f(!0), !m || g || C || p?.()
+        f(!0), !m || p || C || g?.()
     }, S = () => {
         f(!1)
     };
@@ -37,7 +37,7 @@ let A = function(e) {
             },
             children: (0, i.jsx)(s.A.div, {
                 className: a()(u.Cf, E, {
-                    [u.vu]: g || C,
+                    [u.vu]: p || C,
                     [u.CJ]: 0 === t
                 }),
                 onContextMenu: e => {
@@ -63,7 +63,7 @@ let A = function(e) {
                     opacity: 1
                 },
                 ...e,
-                children: l(I || g || C)
+                children: l(I || p || C)
             })
         })
     })

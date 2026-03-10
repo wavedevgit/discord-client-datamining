@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(491182),
     _ = n(860227),
     m = n(538355),
-    g = n(699352),
-    p = n(715628),
+    p = n(699352),
+    g = n(715628),
     E = n(752636),
     I = n(675722),
     f = n(268719),
@@ -72,8 +72,8 @@ let v = r.memo(function(e) {
             hideTimestamp: !0,
             hideGuildTag: !1
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, U, G),
-        childrenMessageContent: (0, p.A)(e, w),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, p.J)(e, U, G),
+        childrenMessageContent: (0, g.A)(e, w),
         childrenSystemMessage: (0, I.A)({
             ...e,
             disableInteraction: j

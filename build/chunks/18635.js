@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(726249),
     _ = n(915089),
     m = n(346084),
-    g = n(742589),
-    p = n(95550),
+    p = n(742589),
+    g = n(95550),
     E = n(608881),
     I = n(210714),
     f = n(544028),
@@ -32,7 +32,7 @@ var i = n(627968),
 function O() {
     return (0, i.jsx)("div", {
         className: b.N3,
-        children: (0, i.jsx)(p.Ay, {
+        children: (0, i.jsx)(g.Ay, {
             tooltip: y.intl.string(y.t["HfOgA/"])
         })
     })
@@ -51,7 +51,7 @@ let L = function(e) {
     }, [l, n]), r.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
-    let p = (0, o.bG)([f.A], () => f.A.theme),
+    let g = (0, o.bG)([f.A], () => f.A.theme),
         L = (0, T.kX)(),
         {
             section: R,
@@ -127,20 +127,20 @@ let L = function(e) {
         children: [(0, i.jsx)(h.HI, {
             location: y.intl.string(y.t.TdEu5X)
         }), (0, i.jsx)(d.NPJ, {
-            theme: p,
-            children: e => (0, i.jsxs)(g.A, {
+            theme: g,
+            children: e => (0, i.jsxs)(p.A, {
                 className: e,
                 toolbar: (0, i.jsx)(O, {}),
                 role: "navigation",
                 "aria-labelledby": w,
                 scrollable: !0,
-                children: [(0, i.jsx)(g.A.Icon, {
+                children: [(0, i.jsx)(p.A.Icon, {
                     icon: d.$yI,
                     "aria-hidden": !0
-                }), (0, i.jsx)(g.A.Title, {
+                }), (0, i.jsx)(p.A.Title, {
                     id: w,
                     children: y.intl.string(y.t.TdEu5X)
-                }), (0, i.jsx)(g.A.Divider, {}), (0, i.jsx)(d.VQ0, {
+                }), (0, i.jsx)(p.A.Divider, {}), (0, i.jsx)(d.VQ0, {
                     "aria-label": y.intl.string(y.t.TdEu5X),
                     selectedItem: R,
                     type: "top-pill",

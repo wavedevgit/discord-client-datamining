@@ -16,8 +16,8 @@ var r = n(873263),
     h = n(287809),
     _ = n(107834),
     m = n(652215),
-    g = n(788868),
-    p = n(187585);
+    p = n(788868),
+    g = n(187585);
 let E = l.Ay.connectStores([h.default], () => ({
     user: h.default.getCurrentUser()
 }))((0, o.A)((0, s.A)(e => {
@@ -28,17 +28,17 @@ let E = l.Ay.connectStores([h.default], () => ({
         analyticsLocations: l
     } = (0, c.Ay)(d.A.HOME_PAGE_PREMIUM_TAB);
     return t ? (0, i.jsxs)("div", {
-        className: p.ql,
+        className: g.ql,
         children: [null == n && (0, i.jsx)(_.A, {}), (0, i.jsx)(c.f5, {
             value: l,
             children: null == n ? (0, i.jsx)(u.A, {
                 align: u.A.Align.CENTER,
                 justify: u.A.Justify.CENTER,
                 children: (0, i.jsx)(a.y$y, {
-                    className: p.u1
+                    className: g.u1
                 })
             }) : (0, i.jsx)(A.A, {
-                entrypoint: g.Mf.ApplicationStoreHome
+                entrypoint: p.Mf.ApplicationStoreHome
             })
         })]
     }) : (0, i.jsx)(r.rd, {

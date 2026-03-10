@@ -16,8 +16,8 @@ var r = n(311907),
     h = n(571694),
     _ = n(994500),
     m = n(427262),
-    g = n(837921),
-    p = n(800583),
+    p = n(837921),
+    g = n(800583),
     E = n(999068),
     I = n(122943),
     f = n(985018),
@@ -48,14 +48,14 @@ let T = e => {
             })]
         })
     },
-    N = g.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
+    N = p.Ay.getEnableHardwareAcceleration() ? a.JsQ : a.euF;
 
 function S(e) {
     let {
         channel: t,
         otherUser: n,
         active: l
-    } = e, c = (0, r.bG)([o.A], () => o.A.useReducedMotion), g = (0, r.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, p.j)(t), {
+    } = e, c = (0, r.bG)([o.A], () => o.A.useReducedMotion), p = (0, r.bG)([_.A], () => null == n ? null : _.A.getNickname(n.id)), E = !c && l, S = (0, g.j)(t), {
         avatarDecorationSrc: x
     } = (0, A.A)({
         user: n,
@@ -74,7 +74,7 @@ function S(e) {
             children: [(0, i.jsxs)("div", {
                 className: C.rU,
                 children: [(0, i.jsx)(s.A, {
-                    nick: g,
+                    nick: p,
                     user: n,
                     showAccountIdentifier: !0,
                     className: C.I8,

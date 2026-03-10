@@ -22,8 +22,8 @@ let m = function() {
         null == n.current && (n.current = t)
     }, [t]);
     let m = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.LIGHT),
-        g = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.DARKER),
-        p = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.MIDNIGHT),
+        p = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.DARKER),
+        g = (0, s.rdh)(a.A.colors.BACKGROUND_BASE_LOW, A.NJ8.MIDNIGHT),
         E = r.useMemo(() => [{
             theme: A.NJ8.LIGHT,
             label: h.t.K2sFfo,
@@ -31,12 +31,12 @@ let m = function() {
         }, {
             theme: A.NJ8.DARKER,
             label: h.t.b8Cei3,
-            color: g.hex()
+            color: p.hex()
         }, {
             theme: A.NJ8.MIDNIGHT,
             label: h.t.Do4ZJx,
-            color: p.hex()
-        }], [m, g, p]),
+            color: g.hex()
+        }], [m, p, g]),
         I = r.useCallback(t => {
             (0, c.X8)({
                 isPersisted: !0,

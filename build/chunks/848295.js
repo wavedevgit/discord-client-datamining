@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(775602),
     _ = n(139286),
     m = n(871751),
-    g = n(259407),
-    p = n(915089),
+    p = n(259407),
+    g = n(915089),
     E = n(607470),
     I = n(367727),
     f = n(652176),
@@ -93,7 +93,7 @@ function L(e) {
     } = e, {
         onClose: B,
         transitionState: H
-    } = b, F = (0, p.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, K] = r.useState(Date.now()), [z, $] = r.useState(0), [Q, X] = r.useState(0), [Z, J] = r.useState(!1), [ee, et] = r.useState(!0), en = r.useRef(q), ei = r.useRef(z), er = r.useRef(Q), el = r.useRef(Z), ea = r.useRef(ee), [es, eo] = r.useState(y), ed = r.useRef(!1);
+    } = b, F = (0, g.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, K] = r.useState(Date.now()), [z, $] = r.useState(0), [Q, X] = r.useState(0), [Z, J] = r.useState(!1), [ee, et] = r.useState(!0), en = r.useRef(q), ei = r.useRef(z), er = r.useRef(Q), el = r.useRef(Z), ea = r.useRef(ee), [es, eo] = r.useState(y), ed = r.useRef(!1);
 
     function ec() {
         let e = Date.now(),
@@ -219,7 +219,7 @@ function L(e) {
                     href: L.href,
                     thumbnail: L.thumbnail,
                     video: L.embed,
-                    provider: g.mt.YOUTUBE,
+                    provider: p.mt.YOUTUBE,
                     maxWidth: L.embed.width,
                     maxHeight: L.embed.height,
                     renderVideoComponent: f.$o,

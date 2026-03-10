@@ -31,12 +31,12 @@ function h(e) {
     if (null == _) return null;
     let m = (0, a.KjH)(r),
         {
-            name: g,
-            rarity: p
+            name: p,
+            rarity: g
         } = _,
         {
             color: E
-        } = (0, d.ag)(p),
+        } = (0, d.ag)(g),
         I = (0, l.Mw)(h) ? u : A,
         f = (m.size - m.offset - 2 * m.stroke) * .8,
         C = m.size - m.stroke,
@@ -58,7 +58,7 @@ function h(e) {
             height: C,
             padding: m.stroke
         },
-        "aria-label": `${g()??""}`,
+        "aria-label": `${p()??""}`,
         children: [(0, i.jsx)("div", {
             className: c.r5,
             children: (0, i.jsx)(a.OR, {
@@ -75,7 +75,7 @@ function h(e) {
                 color: I.locked,
                 ...T
             })
-        }), n && p === d.md.LEGENDARY && (0, i.jsx)("div", {
+        }), n && g === d.md.LEGENDARY && (0, i.jsx)("div", {
             className: c.dq,
             style: N,
             children: (0, i.jsx)(o.A, {

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(67480),
     _ = n(328968),
     m = n(371794),
-    g = n(681613),
-    p = n(110434),
+    p = n(681613),
+    g = n(110434),
     E = n(985018),
     I = n(589757);
 class f extends r.Component {
@@ -27,7 +27,7 @@ class f extends r.Component {
                 className: I.f5,
                 children: [e.map(e => (0, i.jsx)("div", {
                     className: I.zA,
-                    children: (0, i.jsx)(g.A, {
+                    children: (0, i.jsx)(p.A, {
                         reason: e,
                         hidePersonalInformation: n
                     })
@@ -45,7 +45,7 @@ class f extends r.Component {
             storeListing: e
         } = this.props;
         return null != e.staffNotes ? {
-            type: p.A.Types.STAFF_NOTES,
+            type: g.A.Types.STAFF_NOTES,
             staffNotes: e.staffNotes
         } : null
     }
@@ -64,7 +64,7 @@ class f extends r.Component {
             children: [(0, i.jsx)("div", {
                 className: I.wx,
                 children: E.intl.string(E.t.qABFpX)
-            }), this.renderReasons(e, t, r), null != s ? (0, i.jsx)(p.A, {
+            }), this.renderReasons(e, t, r), null != s ? (0, i.jsx)(g.A, {
                 data: s,
                 className: I.NQ
             }) : null]

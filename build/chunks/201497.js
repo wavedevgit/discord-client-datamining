@@ -51,9 +51,9 @@ function m(e) {
     return o("Offer", e)
 }
 m.ItemConditions = h, m.ItemAvailability = _;
-var g = ((l = g || {}).YEARLY = "ANN", l.MONTHLY = "MON", l);
+var p = ((l = p || {}).YEARLY = "ANN", l.MONTHLY = "MON", l);
 
-function p(e) {
+function g(e) {
     return o("QuantitativeValue", e)
 }
 
@@ -76,7 +76,7 @@ function C(e) {
 function T(e) {
     return o("AggregateRating", e)
 }
-p.UnitCodes = g;
+g.UnitCodes = p;
 class N extends s.Component {
     static Thing = d;
     static Brand = d;
@@ -88,7 +88,7 @@ class N extends s.Component {
     static Rating = C;
     static AggregateRating = T;
     static AggregateOffer = I;
-    static QuantitativeValue = p;
+    static QuantitativeValue = g;
     static UnitPriceSpecification = E;
     render() {
         let {

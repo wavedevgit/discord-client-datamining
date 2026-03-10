@@ -1,6 +1,6 @@
 /** chunk id: 40234 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -49,7 +49,7 @@ function m(e) {
     })
 }
 
-function g(e) {
+function p(e) {
     let {
         channel: t
     } = e;
@@ -61,13 +61,13 @@ function g(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         channel: t
     } = e;
     return t.isGuildStageVoice() ? (0, i.jsx)(m, {
         channel: t
-    }) : (0, i.jsx)(g, {
+    }) : (0, i.jsx)(p, {
         channel: t
     })
 }

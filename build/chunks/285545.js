@@ -19,8 +19,8 @@ function m(e) {
     let {
         showDot: t,
         notificationItem: n
-    } = e, [m, g] = i.useState(!1), {
-        unreadItems: p,
+    } = e, [m, p] = i.useState(!1), {
+        unreadItems: g,
         readItems: E,
         allUnreadItemsHydrated: I
     } = (0, A.A)(), f = (0, r.bG)([d.A], () => d.A.getVersion(), []), C = (0, r.bG)([d.A], () => !(d.A.isFirstPageHydrated() && f > 0));
@@ -60,7 +60,7 @@ function m(e) {
             let {
                 viewableItems: t
             } = e;
-            if (t.some(e => "end" === e.item.data.kind) && g(!0), 0 === t.length) return;
+            if (t.some(e => "end" === e.item.data.kind) && p(!0), 0 === t.length) return;
             x(t);
             let n = [],
                 i = (0, u.P0)(t),
@@ -77,7 +77,7 @@ function m(e) {
                 id: e.id,
                 type: (0, c.xG)(e)
             })), f)
-        }, [f, g]),
+        }, [f, p]),
         R = i.useCallback(e => {
             let {
                 viewableItems: t
@@ -180,7 +180,7 @@ function m(e) {
                 data: {
                     kind: "loading"
                 }
-            }) : (p.forEach(t => {
+            }) : (g.forEach(t => {
                 (0, u.yx)(t) || e.push(t)
             }), I && e.push({
                 id: "end",
@@ -202,7 +202,7 @@ function m(e) {
                 data: e,
                 stickyHeaderIndices: []
             }
-        }, [C, n, p, I, E, N]);
+        }, [C, n, g, I, E, N]);
     return {
         data: M,
         loading: C,

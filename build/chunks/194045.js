@@ -16,8 +16,8 @@ var r = n(397927),
     h = n(532624),
     _ = n(518647),
     m = n(796774),
-    g = n(209932),
-    p = n(123973),
+    p = n(209932),
+    g = n(123973),
     E = n(646202),
     I = n(102597),
     f = n(904054),
@@ -47,7 +47,7 @@ class x extends _.A {
                 i = arguments.length > 2 ? arguments[2] : void 0,
                 r = arguments.length > 3 ? arguments[3] : void 0,
                 l = null != r && A.A.getVoiceChannelId() === r;
-            if ((null == r || l) && !u.Ay.isDeaf() && !g.A.isLocalSoundboardMuted(i)) try {
+            if ((null == r || l) && !u.Ay.isDeaf() && !p.A.isLocalSoundboardMuted(i)) try {
                 let r = {
                     soundKey: `${i}-${t}`,
                     soundURL: (0, I.A)(t),
@@ -77,7 +77,7 @@ class x extends _.A {
         if (null == e) return;
         let l = c.A.getChannel(t),
             a = h.Ay.getKeybindForAction(T.hCu.SOUNDBOARD_HOLD);
-        null != l && (0, p.Ay)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, r.mMO)(async () => {
+        null != l && (0, g.Ay)(l) && null != a && o.A.hasHotspot(s._2.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, r.mMO)(async () => {
             let {
                 default: t
             } = await n.e("51143").then(n.bind(n, 888762));

@@ -1,6 +1,6 @@
 /** chunk id: 293495 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => p,
+    Ay: () => g,
     YY: () => h
 });
 var i = n(73153),
@@ -44,7 +44,7 @@ function m() {
     }
     null != (e = (void 0) ?? A) && d.A.isOpen(e) && i.h.wait(() => r.WU(e))
 }
-class g extends l.A {
+class p extends l.A {
     _initialize() {
         c.A.addChangeListener(_), o.A.addChangeListener(m)
     }
@@ -52,4 +52,4 @@ class g extends l.A {
         c.A.removeChangeListener(_), o.A.removeChangeListener(m)
     }
 }
-let p = new g
+let g = new p

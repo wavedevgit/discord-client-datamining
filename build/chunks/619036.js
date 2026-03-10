@@ -25,9 +25,9 @@ function h() {
     if (l().some(d.A.lastDeviceConnected, e => u.has(e.displayName) || e.displayName === h || e.displayName === _)) return;
     let m = l().some(d.A.lastDeviceConnected, e => s.A.isCertified(d.A.inputDevices[e.displayName]) || s.A.isCertified(d.A.outputDevices[e.displayName]));
     if ((t === c.dx && d.A.lastInputSystemDevice.justChanged || r === c.dx && d.A.lastOutputSystemDevice.justChanged) && !m) return;
-    let g = l().first(Object.keys(d.A.lastDeviceConnected)),
-        p = null != g && "" !== g ? d.A.lastDeviceConnected[g] : null;
-    null == p || d.A.getState().ignoredDevices[p.displayName] || (d.A.initialized && null != g && (s.A.isCertified(d.A.inputDevices[g]) ? e = s.A.getCertifiedDevice(d.A.inputDevices[g]) : s.A.isCertified(d.A.outputDevices[g]) && (e = s.A.getCertifiedDevice(d.A.outputDevices[g]))), (0, a.mMO)(async () => {
+    let p = l().first(Object.keys(d.A.lastDeviceConnected)),
+        g = null != p && "" !== p ? d.A.lastDeviceConnected[p] : null;
+    null == g || d.A.getState().ignoredDevices[g.displayName] || (d.A.initialized && null != p && (s.A.isCertified(d.A.inputDevices[p]) ? e = s.A.getCertifiedDevice(d.A.inputDevices[p]) : s.A.isCertified(d.A.outputDevices[p]) && (e = s.A.getCertifiedDevice(d.A.outputDevices[p]))), (0, a.mMO)(async () => {
         let {
             default: t
         } = await n.e("68386").then(n.bind(n, 347961));
@@ -37,7 +37,7 @@ function h() {
                 onClose: l
             } = n;
             return (0, i.jsx)(t, {
-                device: p,
+                device: g,
                 certifiedDeviceMetadata: e,
                 transitionState: r,
                 onClose: l

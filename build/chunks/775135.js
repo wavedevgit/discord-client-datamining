@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(541041),
     _ = n(289357),
     m = n(264328),
-    g = n(636781),
-    p = n(935158),
+    p = n(636781),
+    g = n(935158),
     E = n(836953),
     I = n(314457),
     f = n(536194),
@@ -39,7 +39,7 @@ function R(e) {
     let n, {
             guild: _
         } = e,
-        [g, p] = r.useState(s.w.get(v.hV) ?? 0),
+        [p, g] = r.useState(s.w.get(v.hV) ?? 0),
         E = (t = _.id, n = (0, c.I)(t), r.useMemo(() => {
             let e = [];
             return n && e.push(a.M.GAME_CLAIM_COACHMARK), e.length > 0 ? e : L
@@ -51,14 +51,14 @@ function R(e) {
                 dismissibleContentType: t,
                 store: n
             } = e;
-            return !0 === n?.channelNoticePredicate(_, g) && !b.has(t)
-        }).map(e => e.dismissibleContentType), [_, g, C]),
+            return !0 === n?.channelNoticePredicate(_, p) && !b.has(t)
+        }).map(e => e.dismissibleContentType), [_, p, C]),
         [x, R] = (0, d.kn)(N, y.m.CHANNEL_NOTICES),
         P = I ?? x,
         j = null != I ? f : R,
         D = r.useCallback(() => {
             var e;
-            e = Date.now(), s.w.set(v.hV, e), p(e), j(y.i.UNKNOWN)
+            e = Date.now(), s.w.set(v.hV, e), g(e), j(y.i.UNKNOWN)
         }, [j]),
         M = (() => {
             switch (P) {
@@ -128,7 +128,7 @@ let P = e => {
                 guild: t
             });
         case x.G.COMMANDS_MIGRATION:
-            return (0, i.jsx)(p.A, {
+            return (0, i.jsx)(g.A, {
                 guild: t
             });
         case x.G.APPLICATION_SUBSCRIPTION_EXPIRATION:
@@ -136,7 +136,7 @@ let P = e => {
                 guild: t
             });
         case x.G.HUB_STUDY_ROOM:
-            return (0, i.jsx)(g.A, {
+            return (0, i.jsx)(p.A, {
                 guild: t
             })
     }

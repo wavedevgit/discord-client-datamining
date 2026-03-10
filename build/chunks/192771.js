@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(255438),
     _ = n(723702),
     m = n(837921),
-    g = n(985018),
-    p = n(629859),
+    p = n(985018),
+    g = n(629859),
     E = n(473169);
 class I extends r.PureComponent {
     state = {
@@ -46,9 +46,9 @@ class I extends r.PureComponent {
     };
     handleRemoveLocation = () => {
         (0, a.A)({
-            title: g.intl.string(g.t.iBUzS5),
-            subtitle: g.intl.string(g.t["1XqeW2"]),
-            confirmText: g.intl.string(g.t.iBUzS5),
+            title: p.intl.string(p.t.iBUzS5),
+            subtitle: p.intl.string(p.t["1XqeW2"]),
+            confirmText: p.intl.string(p.t.iBUzS5),
             onConfirm: () => {
                 this.handleStopEditing(), (0, o.JN)(this.props.path)
             }
@@ -92,37 +92,37 @@ class I extends r.PureComponent {
         }) : null, t = null != o.totalKB ? (0, h.Xq)(o.totalKB, {
             useKibibytes: !0
         }) : null), (0, i.jsxs)(c.A, {
-            className: p.ce,
+            className: g.ce,
             align: c.A.Align.CENTER,
             children: [this.renderDiskUsageCircle(), (0, i.jsxs)(c.A, {
                 direction: c.A.Direction.VERTICAL,
-                className: p.__invalid_descriptionWrapper,
+                className: g.__invalid_descriptionWrapper,
                 children: [(0, i.jsxs)(c.A, {
                     align: c.A.Align.CENTER,
                     children: [(0, i.jsx)(s.Heading, {
-                        className: p.nM,
+                        className: g.nM,
                         variant: "heading-md/semibold",
                         children: null != r ? r : A.A.getLabelFromPath(n)
                     }), a ? (0, i.jsx)("span", {
-                        className: p.Zn,
-                        children: g.intl.string(g.t.bBvAEH)
+                        className: g.Zn,
+                        children: p.intl.string(p.t.bBvAEH)
                     }) : null]
                 }), null != o && null != e && null != t ? (0, i.jsx)(d.A, {
-                    className: p.fw,
-                    hoverText: g.intl.formatToPlainString(g.t["Fxo9e+"], {
+                    className: g.fw,
+                    hoverText: p.intl.formatToPlainString(p.t["Fxo9e+"], {
                         available: e,
                         total: t
                     }),
                     children: n
                 }) : (0, i.jsx)(s.Text, {
-                    className: p.fw,
+                    className: g.fw,
                     variant: "text-xs/normal",
                     children: n
                 })]
             }), (0, i.jsx)(s.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: g.intl.string(g.t.bt75uw),
+                text: p.intl.string(p.t.bt75uw),
                 disabled: null != l,
                 onClick: this.handleStartEditing
             })]
@@ -138,36 +138,36 @@ class I extends r.PureComponent {
         } = this.state;
         return (0, i.jsx)(s.ZpM, {
             editable: !0,
-            className: p.uP,
+            className: g.uP,
             children: (0, i.jsxs)(c.A, {
                 children: [this.renderDiskUsageCircle(), (0, i.jsxs)(c.A.Child, {
                     children: [(0, i.jsx)(s.ksK, {
-                        label: g.intl.string(g.t.AJkKCB),
+                        label: p.intl.string(p.t.AJkKCB),
                         value: n,
                         placeholder: A.A.getLabelFromPath(e),
                         onChange: this.handleLabelChange
                     }), (0, i.jsx)("div", {
                         className: E.QX,
                         children: (0, i.jsx)(s.ksK, {
-                            label: g.intl.string(g.t.lnUCwX),
+                            label: p.intl.string(p.t.lnUCwX),
                             disabled: !0,
                             value: e
                         })
                     }), (0, i.jsx)("div", {
-                        className: p.gZ,
+                        className: g.gZ,
                         children: (0, i.jsx)(s.Checkbox, {
                             checked: null != r ? r : this.props.isDefault,
                             disabled: this.props.isDefault,
                             onChange: this.handleToggleDefault,
-                            label: g.intl.string(g.t.Z2MWuH)
+                            label: p.intl.string(p.t.Z2MWuH)
                         })
                     }), (0, i.jsx)(s.cGx, {
-                        className: p.me
+                        className: g.me
                     }), (0, i.jsxs)(c.A, {
                         children: [(0, i.jsx)(s.Button, {
                             variant: "critical-secondary",
                             size: "sm",
-                            text: g.intl.string(g.t.iBUzS5),
+                            text: p.intl.string(p.t.iBUzS5),
                             disabled: t || this.props.isDefault,
                             onClick: this.handleRemoveLocation
                         }), (0, i.jsx)(c.A, {
@@ -176,12 +176,12 @@ class I extends r.PureComponent {
                                 children: [(0, i.jsx)(s.Button, {
                                     variant: "secondary",
                                     size: "sm",
-                                    text: g.intl.string(g.t["ETE/oC"]),
+                                    text: p.intl.string(p.t["ETE/oC"]),
                                     onClick: this.handleStopEditing
                                 }), (0, i.jsx)(s.Button, {
                                     variant: "active",
                                     size: "sm",
-                                    text: g.intl.string(g.t["R3BPH+"]),
+                                    text: p.intl.string(p.t["R3BPH+"]),
                                     disabled: e === this.props.path && n === this.props.label && r === this.props.isDefault,
                                     onClick: this.handleSaveChanges
                                 })]
@@ -227,9 +227,9 @@ class f extends r.PureComponent {
             editingPath: r
         } = this.state;
         return (0, i.jsx)("div", {
-            className: p.iE,
+            className: g.iE,
             children: (0, i.jsxs)(s.D0$, {
-                label: g.intl.string(g.t.aLszkC),
+                label: p.intl.string(p.t.aLszkC),
                 children: [e.map(e => {
                     let {
                         path: l,
@@ -245,11 +245,11 @@ class f extends r.PureComponent {
                         onToggleEditing: this.handleToggleEditing
                     }, l)
                 }), (0, i.jsx)("div", {
-                    className: p.sW,
+                    className: g.sW,
                     children: (0, i.jsx)(s.Button, {
                         variant: "primary",
                         size: "sm",
-                        text: g.intl.string(g.t.pnZ2uk),
+                        text: p.intl.string(p.t.pnZ2uk),
                         disabled: !_.isPlatformEmbedded,
                         onClick: this.handleAddInstallationLocation
                     })

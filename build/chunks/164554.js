@@ -21,7 +21,7 @@ function _(e) {
         children: _
     } = e, m = r.useCallback(() => {
         n(u.i.TAKE_ACTION), (0, o.pX)(`${c.BVt.NITRO_HOME}?section=${d.L}`)
-    }, [n]), g = (0, i.jsx)(a.AM, {
+    }, [n]), p = (0, i.jsx)(a.AM, {
         targetElementRef: t,
         onRequestClose: () => n(u.i.USER_DISMISS),
         graphic: {
@@ -51,6 +51,6 @@ function _(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: _
-        }), g]
+        }), p]
     })
 }

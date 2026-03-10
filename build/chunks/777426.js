@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(139286),
     _ = n(414711),
     m = n(187696),
-    g = n(723690),
-    p = n(21119),
+    p = n(723690),
+    g = n(21119),
     E = n(994500),
     I = n(954571),
     f = n(45787),
@@ -61,7 +61,7 @@ function v(e) {
         location: "gift-intent-friend-row"
     });
     r.useEffect(() => {
-        let e = p.A.getUserAffinity(M.id);
+        let e = g.A.getUserAffinity(M.id);
         (0, h.x)({
             name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
             type: s.ImpressionTypes.VIEW,
@@ -73,7 +73,7 @@ function v(e) {
     }, [M, w]);
     let B = e => {
         e.stopPropagation();
-        let t = p.A.getUserAffinity(M.id);
+        let t = g.A.getUserAffinity(M.id);
         I.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
             gift_intent_type: w,
             affinity: t?.dmProbability,
@@ -90,7 +90,7 @@ function v(e) {
         height: 72,
         children: e => (0, i.jsxs)("div", {
             className: a()(x.a4, x.Z$),
-            children: [(0, i.jsx)(g.A, {
+            children: [(0, i.jsx)(p.A, {
                 className: x.Cv,
                 user: M,
                 status: y,

@@ -81,14 +81,14 @@ function m(e) {
         endsAt: r,
         messageStyle: d,
         upperCase: m,
-        showSparkles: g
-    } = e, [p] = (0, o.Bo)(a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+        showSparkles: p
+    } = e, [g] = (0, o.Bo)(a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
         showAfterTimestamp: n.valueOf(),
         cooldownDurationMs: 0
     }), E = (0, s.Ay)(r, d);
     return "" === E ? null : (m && (E = E.toUpperCase()), (0, i.jsxs)("div", {
         className: l()(t, u.Iv),
-        children: [g ? (0, i.jsxs)(i.Fragment, {
+        children: [p ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(_, {
                 foreground: u.QX,
                 color: `url(#${h})`
@@ -98,7 +98,7 @@ function m(e) {
             })]
         }) : null, (0, i.jsx)(c.R, {
             text: E,
-            colorOptions: p === a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? c.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : c.at.PREMIUM_TIER_2_GREY_FILL
+            colorOptions: g === a.M.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? c.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : c.at.PREMIUM_TIER_2_GREY_FILL
         })]
     }))
 }

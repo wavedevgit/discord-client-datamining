@@ -1,6 +1,6 @@
 /** chunk id: 717807 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(311907),
@@ -15,18 +15,18 @@ var i = n(627968),
     h = n(788868),
     _ = n(652215),
     m = n(985018),
-    g = n(174872);
-let p = e => {
+    p = n(174872);
+let g = e => {
     let {
         targetElementRef: t
-    } = e, n = (0, r.bG)([d.default], () => d.default.getCurrentUser()), p = !1 === c.Ay.isPremiumExactly(n, h.PremiumTypes.TIER_2), E = n?.premiumState?.premiumSource === l.fE.FRACTIONAL_NITRO && n?.premiumState.premiumSubscriptionType !== l.jK.TIER_2, I = !0 === (null == n || p || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
+    } = e, n = (0, r.bG)([d.default], () => d.default.getCurrentUser()), g = !1 === c.Ay.isPremiumExactly(n, h.PremiumTypes.TIER_2), E = n?.premiumState?.premiumSource === l.fE.FRACTIONAL_NITRO && n?.premiumState.premiumSubscriptionType !== l.jK.TIER_2, I = !0 === (null == n || g || E) ? m.intl.string(m.t.E1ONHQ) : m.intl.string(m.t.CMKNhr);
     return (0, i.jsx)(a.AM, {
         targetElementRef: t,
         title: m.intl.string(m.t["V8J+16"]),
         body: I,
         graphic: {
             type: "image",
-            src: g.A
+            src: p.A
         },
         badge: {
             type: "beta",

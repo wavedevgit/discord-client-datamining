@@ -38,8 +38,8 @@ function A(e) {
                     channelId: void 0, messageIds: [], title: void 0
                 }
         }
-    }, [t]), _ = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), m = (0, l.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), g = (0, l.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
-    return null == _ || null == m || 0 === g.length ? null : (0, i.jsxs)("div", {
+    }, [t]), _ = (0, l.bG)([a.A], () => null != n ? a.A.getChannel(n) : null, [n]), m = (0, l.bG)([s.A], () => _?.guild_id != null ? s.A.getGuild(_.guild_id) : null, [_]), p = (0, l.yK)([d.A, o.A], () => null == n ? [] : A.map(e => d.A.getMessage(e) ?? o.A.getMessage(n, e)).filter(e => null != e), [n, A]);
+    return null == _ || null == m || 0 === p.length ? null : (0, i.jsxs)("div", {
         className: u.kL,
         children: [null != h ? (0, i.jsx)("div", {
             className: u.gn,
@@ -49,7 +49,7 @@ function A(e) {
             })
         }) : null, (0, i.jsx)("div", {
             className: u.MJ,
-            children: g.map(e => (0, i.jsx)(c.A, {
+            children: p.map(e => (0, i.jsx)(c.A, {
                 channel: _,
                 message: e,
                 renderThreadAccessory: !1,

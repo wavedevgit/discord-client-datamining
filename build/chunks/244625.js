@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(287809),
     _ = n(661191),
     m = n(652215),
-    g = n(985018),
-    p = n(310633);
+    p = n(985018),
+    g = n(310633);
 
 function E(e) {
     let {
@@ -65,9 +65,9 @@ function E(e) {
         }
     }, [t]), T = (0, a.bG)([u.A], () => u.A.getChannel(E), [E]), N = T?.guild_id ?? I, S = (0, a.bG)([A.A], () => null != N ? A.A.getGuild(N) : null, [N]), x = (0, a.bG)([h.default], () => null != f ? h.default.getUser(f) : null, [f]);
     return "unknown" === n ? null : (0, i.jsx)("div", {
-        className: p.kL,
+        className: g.kL,
         children: (0, i.jsxs)("div", {
-            className: p.wx,
+            className: g.wx,
             children: [(() => {
                 if ("guild" === n && null != S) return (0, i.jsx)(o.Ay, {
                     guild: S,
@@ -84,24 +84,24 @@ function E(e) {
                     return (0, i.jsx)("img", {
                         src: e,
                         alt: x.username,
-                        className: p.my
+                        className: g.my
                     })
                 }
                 return null
             })(), (0, i.jsxs)("div", {
-                className: p.Se,
+                className: g.Se,
                 children: [(0, i.jsx)("div", {
-                    className: p.$,
+                    className: g.$,
                     children: (0, i.jsxs)("div", {
-                        className: p.gH,
+                        className: g.gH,
                         children: ["guild" === n && null != S ? (0, i.jsx)("div", {
-                            className: p.DD,
+                            className: g.DD,
                             children: S.name
                         }) : "user" === n && null != x ? (0, i.jsx)("div", {
-                            className: p.DD,
+                            className: g.DD,
                             children: x.username
                         }) : null, (0, i.jsx)("div", {
-                            className: p.vE,
+                            className: g.vE,
                             children: (0, c.jb)(C)
                         })]
                     })
@@ -109,21 +109,21 @@ function E(e) {
                     let e = (() => {
                         switch (t.data.kind) {
                             case "message":
-                                if (t.channelType === m.rbe.GUILD_ANNOUNCEMENT) return g.intl.string(g.t["8P08G9"]);
-                                return g.intl.string(g.t.hMFMY9);
+                                if (t.channelType === m.rbe.GUILD_ANNOUNCEMENT) return p.intl.string(p.t["8P08G9"]);
+                                return p.intl.string(p.t.hMFMY9);
                             case "generatedCandidate":
-                                return g.intl.string(g.t.ljgIO9);
+                                return p.intl.string(p.t.ljgIO9);
                             case "guildEvent":
-                                return g.intl.string(g.t["6pFsLQ"]);
+                                return p.intl.string(p.t["6pFsLQ"]);
                             case "forumThread":
-                                return g.intl.string(g.t.bYNuVx);
+                                return p.intl.string(p.t.bYNuVx);
                             case "contentInventory":
                                 switch (t.data.content.content_type) {
                                     case l.ContentInventoryEntryType.CUSTOM_STATUS:
-                                        return g.intl.string(g.t.fxOLPR);
+                                        return p.intl.string(p.t.fxOLPR);
                                     case l.ContentInventoryEntryType.TOP_GAME:
                                     case l.ContentInventoryEntryType.PLAYED_GAME:
-                                        return g.intl.string(g.t.ktOTRQ);
+                                        return p.intl.string(p.t.ktOTRQ);
                                     default:
                                         return `${t.data.content.content_type}`
                                 }
@@ -132,37 +132,37 @@ function E(e) {
                         }
                     })();
                     if ("user" === n) return (0, i.jsx)("div", {
-                        className: p.VA,
+                        className: g.VA,
                         children: (0, i.jsx)("span", {
-                            className: p.o4,
+                            className: g.o4,
                             children: e
                         })
                     });
                     if (null != T && null != e) {
                         let t = (0, s.gU)(T, S);
                         return (0, i.jsxs)("div", {
-                            className: p.VA,
+                            className: g.VA,
                             children: [(0, i.jsx)("span", {
-                                className: p.o4,
+                                className: g.o4,
                                 children: e
                             }), (0, i.jsx)("span", {
-                                className: p.o4,
-                                children: g.intl.string(g.t.CHUAYk)
+                                className: g.o4,
+                                children: p.intl.string(p.t.CHUAYk)
                             }), (0, i.jsxs)("span", {
-                                className: p.o4,
+                                className: g.o4,
                                 children: [null != t && (0, i.jsx)(t, {
                                     size: "custom",
                                     width: 16,
                                     height: 16,
-                                    className: p.p
+                                    className: g.p
                                 }), T.name]
                             })]
                         })
                     }
                     return null != e ? (0, i.jsx)("div", {
-                        className: p.VA,
+                        className: g.VA,
                         children: (0, i.jsx)("span", {
-                            className: p.o4,
+                            className: g.o4,
                             children: e
                         })
                     }) : null

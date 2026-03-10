@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(287809),
     _ = n(403362),
     m = n(901133),
-    g = n(507133),
-    p = n(985018);
+    p = n(507133),
+    g = n(985018);
 class E extends r.PureComponent {
     hasParty(e) {
         return e.length > 1
@@ -39,9 +39,9 @@ class E extends r.PureComponent {
         let {
             party: e
         } = this.props;
-        return (0, i.jsx)(g.A, {
+        return (0, i.jsx)(p.A, {
             party: e,
-            header: p.intl.formatToPlainString(p.t.I9et1z, {
+            header: g.intl.formatToPlainString(g.t.I9et1z, {
                 count: e.length
             })
         })

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(657331),
     _ = n(994500),
     m = n(287809),
-    g = n(427262),
-    p = n(390848),
+    p = n(427262),
+    g = n(390848),
     E = n(513297),
     I = n(414711),
     f = n(723690),
@@ -34,7 +34,7 @@ function S(e) {
     } = e, c = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
         acceptFriendRequest: u,
         cancelFriendRequest: A
-    } = (0, p.I)({
+    } = (0, g.I)({
         userId: t.id,
         applicationId: n,
         isGameRelationship: l,
@@ -76,7 +76,7 @@ function x(e) {
         active: a
     } = e, {
         cancelFriendRequest: o
-    } = (0, p.I)({
+    } = (0, g.I)({
         userId: t,
         applicationId: n,
         isGameRelationship: l,
@@ -129,7 +129,7 @@ function y(e) {
         status: r,
         isGameRelationship: l,
         applicationId: a
-    } = e, s = g.Ay.useUserTag(t);
+    } = e, s = p.Ay.useUserTag(t);
     return (0, i.jsx)(f.A, {
         user: t,
         hovered: n,
@@ -154,11 +154,11 @@ function b(e) {
         isGameRelationship: A,
         onAcceptFriendRequest: m
     } = e, {
-        analyticsLocations: g
-    } = (0, d.Ay)(), p = a === C.clD.OFFLINE ? C.clD.UNKNOWN : a, E = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), f = r.useCallback(() => (0, h.openUserProfileModal)({
+        analyticsLocations: p
+    } = (0, d.Ay)(), g = a === C.clD.OFFLINE ? C.clD.UNKNOWN : a, E = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), f = r.useCallback(() => (0, h.openUserProfileModal)({
         userId: t.id,
-        sourceAnalyticsLocations: g
-    }), [g, t.id]), T = e => {
+        sourceAnalyticsLocations: p
+    }), [p, t.id]), T = e => {
         e.stopPropagation(), o.A.openPrivateChannel({
             recipientIds: [t.id]
         })
@@ -172,7 +172,7 @@ function b(e) {
             children: [(0, i.jsx)(y, {
                 user: t,
                 hovered: e,
-                status: p,
+                status: g,
                 isGameRelationship: A,
                 applicationId: u
             }), (0, i.jsx)("div", {

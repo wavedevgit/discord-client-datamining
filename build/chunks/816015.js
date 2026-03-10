@@ -1,6 +1,6 @@
 /** chunk id: 816015 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(64700),
@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(998515),
     _ = n(652215),
     m = n(58682);
-class g extends r.Component {
+class p extends r.Component {
     componentDidMount() {
         this.fetchStoreListing(), (0, d.d)("channel_store_listing")
     }
@@ -56,7 +56,7 @@ class g extends r.Component {
         }) : null
     }
 }
-let p = (0, o.A)(a.Ay.connectStores([c.A], e => {
+let g = (0, o.A)(a.Ay.connectStores([c.A], e => {
     let {
         channel: t,
         inputSkuId: n
@@ -64,4 +64,4 @@ let p = (0, o.A)(a.Ay.connectStores([c.A], e => {
     return {
         skuId: null != n ? n : c.A.getSkuIdForChannel(t.id)
     }
-})(g))
+})(p))

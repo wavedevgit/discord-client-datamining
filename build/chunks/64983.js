@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(652215),
     _ = n(985018),
     m = n(978927);
-let g = a().debounce(d.Ay.trackWithMetadata, 500),
-    p = e => {
+let p = a().debounce(d.Ay.trackWithMetadata, 500),
+    g = e => {
         let {
             guild: t,
             title: n,
@@ -24,7 +24,7 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
             image: a,
             type: u,
             imageMarginX: A,
-            imageMarginTop: p,
+            imageMarginTop: g,
             trackingSource: E,
             undismissable: I,
             onDismissed: f,
@@ -33,7 +33,7 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
             ctaColor: N
         } = e;
         r.useEffect(() => {
-            g(h.HAw.CHANNEL_NOTICE_VIEWED, {
+            p(h.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: u,
                 guild_id: t.id
             })
@@ -73,7 +73,7 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
             }), null != a && (0, i.jsx)("div", {
                 className: m.ZS,
                 style: {
-                    marginTop: `${p}px`,
+                    marginTop: `${g}px`,
                     marginLeft: x,
                     marginRight: x
                 },
@@ -101,7 +101,7 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
         } = (0, u.P)(!0);
         return t ? (0, i.jsx)(A.A, {
             ...e
-        }) : (0, i.jsx)(p, {
+        }) : (0, i.jsx)(g, {
             ...e
         })
     }

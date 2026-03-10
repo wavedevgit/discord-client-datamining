@@ -1,6 +1,6 @@
 /** chunk id: 384184 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(629199),
     _ = n(772659),
     m = n(985018),
-    g = n(360830);
+    p = n(360830);
 
-function p(e) {
+function g(e) {
     let {
         active: t,
         user: n,
-        channel: p
+        channel: g
     } = e, E = (0, u.r)(), I = r.useCallback(() => {
         (0, a.showToast)((0, a.createToast)(m.intl.string(m.t.pIQ3h4), a.ToastType.FAILURE)), s.A.increment({
             name: l.K.SPAM_MESSAGE_REQUEST_ERROR_VIEW
@@ -29,8 +29,8 @@ function p(e) {
     }, []), f = r.useCallback(() => {
         d.A.closeChannelSidebar(c.fe)
     }, []), C = r.useCallback(() => {
-        d.A.closeChannelSidebar(c.fe), E && (0, o.iN)(p.id)
-    }, [p.id, E]), {
+        d.A.closeChannelSidebar(c.fe), E && (0, o.iN)(g.id)
+    }, [g.id, E]), {
         acceptMessageRequest: T,
         isAcceptLoading: N,
         isUserProfileLoading: S,
@@ -42,24 +42,24 @@ function p(e) {
         onError: I
     }), v = N || S, y = v || x;
     return (0, i.jsxs)("div", {
-        className: g.kL,
+        className: p.kL,
         children: [(0, i.jsx)(h.A, {
             otherUser: n,
-            channel: p,
+            channel: g,
             active: t
         }), (0, i.jsxs)("div", {
-            className: g.o1,
+            className: p.o1,
             children: [(0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: m.intl.string(m.t.vicfl6),
                 onClick: e => {
-                    T(p.id), e.stopPropagation()
+                    T(g.id), e.stopPropagation()
                 },
                 disabled: y,
                 loading: v
             }), (0, i.jsx)(_.A, {
-                channel: p
+                channel: g
             })]
         })]
     })

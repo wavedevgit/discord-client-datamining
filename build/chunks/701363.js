@@ -18,8 +18,8 @@ var l = n(627968),
     A = n(612324),
     p = n(535185),
     f = n(148839),
-    E = n(607399),
-    h = n(311907),
+    h = n(607399),
+    E = n(311907),
     x = n(3026),
     N = n(435371),
     g = n(397927),
@@ -159,13 +159,13 @@ let ei = en.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
             className: A,
             role: p,
             "aria-posinset": f,
-            "aria-setsize": h,
+            "aria-setsize": E,
             listItemRef: x,
             ...N
         } = e;
         return (0, l.jsx)(D.A, {
             className: i()(ea.Ix, {
-                [ea.Ij]: E.Fr
+                [ea.Ij]: h.Fr
             }, A),
             onClick: m,
             role: p,
@@ -174,7 +174,7 @@ let ei = en.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
                 ...er
             },
             "aria-posinset": f,
-            "aria-setsize": h,
+            "aria-setsize": E,
             ref: x,
             children: (0, l.jsx)(g.HG8, {
                 as: "div",
@@ -209,7 +209,7 @@ function eA(e) {
         channel: t,
         selected: a = !1,
         user: r,
-        activities: E,
+        activities: h,
         applicationStream: N,
         voiceChannel: C,
         isTyping: q,
@@ -220,7 +220,7 @@ function eA(e) {
         ref: ee,
         "aria-posinset": et,
         "aria-setsize": en
-    } = e, [em, eA] = s.useState(!1), [ep, ef] = s.useState(!1), [eE, eh] = s.useState(!1), ex = s.useRef(null), [eN, eg] = s.useState(!1), eT = (0, m.K)(s.useCallback(e => {
+    } = e, [em, eA] = s.useState(!1), [ep, ef] = s.useState(!1), [eh, eE] = s.useState(!1), ex = s.useRef(null), [eN, eg] = s.useState(!1), eT = (0, m.K)(s.useCallback(e => {
         eg(e)
     }, [])), ev = s.useRef(null), eS = ee ?? ev, e_ = (0, A.A)(eS, eT), {
         showMenuItemPopover: eC,
@@ -237,16 +237,16 @@ function eA(e) {
     } = (0, W.A)({
         userId: r?.id,
         size: g._3J.SIZE_32,
-        animateOnHover: !(a || em || ep || eE)
+        animateOnHover: !(a || em || ep || eh)
     }), [eb, eR] = s.useState({
         maskImage: "none"
-    }), eL = s.useRef(null), eU = t.isMultiUserDM(), ew = t.isSystemDM(), eD = !eU && !ew && t.type === el.rbe.DM, eO = eD && r?.primaryGuild != null, eG = (0, h.bG)([X.Ay], () => X.Ay.isChannelMuted(t.getGuildId(), t.id)), {
+    }), eL = s.useRef(null), eU = t.isMultiUserDM(), ew = t.isSystemDM(), eD = !eU && !ew && t.type === el.rbe.DM, eO = eD && r?.primaryGuild != null, eG = (0, E.bG)([X.Ay], () => X.Ay.isChannelMuted(t.getGuildId(), t.id)), {
         ignored: eQ,
         blocked: ek
-    } = (0, h.cf)([J.A], () => ({
+    } = (0, E.cf)([J.A], () => ({
         ignored: J.A.isIgnored(t.getRecipientId()),
         blocked: J.A.isBlocked(t.getRecipientId())
-    })), eP = eD && eQ, eF = eD && ek, eV = (eG || eP || eF) && !(a || em), eq = (0, h.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (a || em || eE), eW = () => {
+    })), eP = eD && eQ, eF = eD && ek, eV = (eG || eP || eF) && !(a || em), eq = (0, E.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (a || em || eh), eW = () => {
         eA(!0)
     }, eK = () => {
         eA(!1)
@@ -265,7 +265,7 @@ function eA(e) {
         e.target === e.currentTarget && ex.current?.click()
     }, e1 = e => {
         let s = "contextmenu" === e.type ? c.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : c.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-        eh(!0), t.isMultiUserDM() ? (0, v.L3)(e, async () => {
+        eE(!0), t.isMultiUserDM() ? (0, v.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
@@ -277,7 +277,7 @@ function eA(e) {
         }, {
             impressionName: s,
             noBlurEvent: !0,
-            onClose: () => eh(!1)
+            onClose: () => eE(!1)
         }) : (0, v.L3)(e, async () => {
             let {
                 default: e
@@ -290,7 +290,7 @@ function eA(e) {
             })
         }, {
             impressionName: s,
-            onClose: () => eh(!1)
+            onClose: () => eE(!1)
         })
     }, e2 = e => {
         e.preventDefault(), e.stopPropagation();
@@ -318,7 +318,7 @@ function eA(e) {
     }, e9 = (0, l.jsx)(Q.A, {
         userName: eB,
         displayNameStyles: r?.displayNameStyles,
-        effectDisplayType: em || a || eE ? G.G.ANIMATED : G.G.PLAIN,
+        effectDisplayType: em || a || eh ? G.G.ANIMATED : G.G.PLAIN,
         loop: em,
         boldFontOpacity: .9
     }), e6 = eO ? (0, l.jsxs)(l.Fragment, {
@@ -340,7 +340,7 @@ function eA(e) {
         channel: t,
         muted: eG,
         userStatus: B
-    })].filter(Boolean).join(", "), e8 = (0, h.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+    })].filter(Boolean).join(", "), e8 = (0, E.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
         waveShouldShow: e5,
         wavePressed: te
     } = (0, w.A)(t, e8), {
@@ -388,7 +388,7 @@ function eA(e) {
                     })
                 }) : null, (0, l.jsxs)(g.HG8, {
                     className: i()(ea.bG, {
-                        [ea.Q2]: a || eE
+                        [ea.Q2]: a || eh
                     }),
                     as: "div",
                     onClick: e0,
@@ -433,7 +433,7 @@ function eA(e) {
                                     });
                                 o()(null != r, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                                 let n = null;
-                                return r.isSystemUser() || (n = (0, S.A)(E) ? el.clD.STREAMING : B), (0, l.jsx)(ei, {
+                                return r.isSystemUser() || (n = (0, S.A)(h) ? el.clD.STREAMING : B), (0, l.jsx)(ei, {
                                     ...eM,
                                     size: g._3J.SIZE_32,
                                     src: ey,
@@ -457,16 +457,16 @@ function eA(e) {
                                     members: t.recipients.length + 1
                                 })
                             }) : (0, _.A)({
-                                activities: E,
+                                activities: h,
                                 status: B,
                                 applicationStream: N,
                                 voiceChannel: C
                             }) ? (0, l.jsx)(j.A, {
                                 user: r,
-                                activities: E,
+                                activities: h,
                                 voiceChannel: C,
                                 applicationStream: N,
-                                animateEmoji: em || ep || eE,
+                                animateEmoji: em || ep || eh,
                                 textClassName: ea.XD,
                                 iconClassName: eV ? ea.tG : void 0
                             }) : null,
@@ -514,7 +514,7 @@ let ep = 21552 == n.j ? e => {
         channel: t,
         selected: n,
         ...s
-    } = e, a = (0, h.bG)([ee.default], () => ee.default.getUser(t.getRecipientId())), i = a?.id, r = (0, h.cf)([Y.A, K.A], () => {
+    } = e, a = (0, E.bG)([ee.default], () => ee.default.getUser(t.getRecipientId())), i = a?.id, r = (0, E.cf)([Y.A, K.A], () => {
         let e;
         if (t.isMultiUserDM()) {
             let n = Y.A.getState().statuses;
@@ -533,7 +533,7 @@ let ep = 21552 == n.j ? e => {
         userId: i
     }), u = (0, q.r)({
         user: a
-    }), c = (0, h.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != a && Z.A.isTyping(t.id, t.getRecipientId()), [t, a]);
+    }), c = (0, E.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != a && Z.A.isTyping(t.id, t.getRecipientId()), [t, a]);
     return t.isMultiUserDM() ? (0, l.jsx)(eA, {
         channel: t,
         selected: n,

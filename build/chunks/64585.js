@@ -15,8 +15,8 @@ var i = n(73153),
     h = n(652215);
 let _ = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
     m = !1,
-    g = !1,
-    p = [],
+    p = !1,
+    g = [],
     E = null,
     I = () => {
         _.stop(), m = !1
@@ -27,18 +27,18 @@ let _ = (0, l.aN)("poggermode_applause", a.A.getSoundpack()),
         return !!e && !!t && null != d.A.getChannelId()
     },
     C = () => {
-        if (0 === p.length || !f() || g) return;
-        g = !0;
-        let [e, t] = p[p.length - 1];
+        if (0 === g.length || !f() || p) return;
+        p = !0;
+        let [e, t] = g[g.length - 1];
         (0, l.Ak)(e, t), E = setTimeout(T, 1e3)
     },
     T = () => {
-        p.pop(), g = !1, C()
+        g.pop(), p = !1, C()
     },
     N = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
             n = o.A.isConnected();
-        p.push([e, t * (n ? .1 : 1)]), C()
+        g.push([e, t * (n ? .1 : 1)]), C()
     };
 class S extends r.A {
     _initialize() {

@@ -15,8 +15,8 @@ var i = n(735438),
     h = n(734057),
     _ = n(696451),
     m = n(71393),
-    g = n(430452),
-    p = n(383501),
+    p = n(430452),
+    g = n(383501),
     E = n(287809),
     I = n(977997),
     f = n(636401),
@@ -196,11 +196,11 @@ let j = {
                 prevState: t,
                 dispatch: n
             } = e, i = {
-                state: (0, C.SK)(p.A.getState()),
-                hostname: p.A.getHostname(),
-                pings: p.A.getPings(),
-                average_ping: p.A.getAveragePing(),
-                last_ping: p.A.getLastPing()
+                state: (0, C.SK)(g.A.getState()),
+                hostname: g.A.getHostname(),
+                pings: g.A.getPings(),
+                average_ping: g.A.getAveragePing(),
+                last_ping: g.A.getLastPing()
             };
             return r().isEqual(i, t) || n(i), i
         }
@@ -398,7 +398,7 @@ let j = {
                 prevState: t,
                 dispatch: n
             } = e, i = {
-                active: g.Ay.isVideoEnabled()
+                active: p.Ay.isVideoEnabled()
             };
             return r().isEqual(i, t) || n(i), i
         }

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(965660),
     _ = n(601193),
     m = n(424956),
-    g = n(19925),
-    p = n(689817),
+    p = n(19925),
+    g = n(689817),
     E = n(38894),
     I = n(299579),
     f = n(324580),
@@ -35,7 +35,7 @@ function S() {
             tabs: x,
             selectedTab: v,
             setSelectedTab: y
-        } = (0, p.f)(),
+        } = (0, g.f)(),
         b = (0, h.Ub)(v),
         O = !f.R0.has(v),
         {
@@ -44,7 +44,7 @@ function S() {
             onClearSearch: P,
             onSearchSubmit: j,
             isSearchVisible: D
-        } = (0, g.X)({
+        } = (0, p.X)({
             loadId: e.current
         }),
         M = _.A.useField("searchBarState"),

@@ -1,6 +1,6 @@
 /** chunk id: 278066 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => g,
     a: () => h
 });
 var i, r = n(627968),
@@ -98,7 +98,7 @@ let _ = Object.freeze({
             })
         })
     };
-class g extends l.PureComponent {
+class p extends l.PureComponent {
     state = {
         opacity: new a.A.Value(1)
     };
@@ -154,8 +154,8 @@ class g extends l.PureComponent {
         })
     }
 }
-let p = s.Ay.connectStores([d.A], () => ({
+let g = s.Ay.connectStores([d.A], () => ({
     theme: d.A.theme
 }), {
     forwardRef: !0
-})(g)
+})(p)

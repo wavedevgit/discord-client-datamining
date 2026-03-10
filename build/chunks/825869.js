@@ -19,9 +19,9 @@ function _(e) {
         active: t,
         user: n,
         channel: _
-    } = e, m = (0, d.k)(), g = r.useCallback(() => {
+    } = e, m = (0, d.k)(), p = r.useCallback(() => {
         (0, l.showToast)((0, l.createToast)(A.intl.string(A.t["EDYbS+"]), l.ToastType.FAILURE))
-    }, []), p = r.useCallback(() => {
+    }, []), g = r.useCallback(() => {
         s.A.closeChannelSidebar(o.fe)
     }, []), E = r.useCallback(() => {
         s.A.closeChannelSidebar(o.fe), m && (0, a.iN)(_.id)
@@ -36,8 +36,8 @@ function _(e) {
     } = (0, c.t)({
         user: n,
         onAcceptSuccess: E,
-        onRejectSuccess: p,
-        onError: g
+        onRejectSuccess: g,
+        onError: p
     }), v = C || T || N || S || x;
     return (0, i.jsxs)("div", {
         className: h.kL,

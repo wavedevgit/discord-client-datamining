@@ -122,7 +122,7 @@ function u(e) {
                 })
             }, n)
         }),
-        g = _.map(e => e.id);
+        p = _.map(e => e.id);
     return [...m, (0, i.jsx)(l.rXV, {
         label: `${d.intl.string(d.t["mIx+gG"])} - ${_.length}`,
         children: c({
@@ -130,7 +130,7 @@ function u(e) {
                 let {
                     user: t
                 } = e;
-                return g.includes(t.id)
+                return p.includes(t.id)
             }),
             otherMembers: _.filter(e => !u.has(e.id)),
             totalMembers: _.length,

@@ -72,9 +72,9 @@ function h(e) {
         description: h,
         rarity: _,
         hideDescriptionUntilUnlock: m,
-        onAction: g
+        onAction: p
     } = t, {
-        color: p
+        color: g
     } = (0, o.ag)(_);
     r.useEffect(() => {
         let e = setTimeout(() => {
@@ -84,12 +84,12 @@ function h(e) {
             clearTimeout(e)
         }
     }, []);
-    let E = null != g && n,
+    let E = null != p && n,
         I = E ? s.DUT : "div";
     return (0, i.jsxs)(I, {
         className: a()(u.kL, E && u.b),
         onClick: () => {
-            E && g()
+            E && p()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
@@ -112,7 +112,7 @@ function h(e) {
         }), (0, i.jsx)("div", {
             className: u.Db,
             children: (0, i.jsx)(A, {
-                color: p
+                color: g
             })
         })]
     })

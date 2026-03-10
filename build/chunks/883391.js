@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(490415),
     _ = n(481859),
     m = n(235986),
-    g = n(263063),
-    p = n(857071),
+    p = n(263063),
+    g = n(857071),
     E = n(976860),
     I = n(345942),
     f = n(71393),
@@ -90,9 +90,9 @@ class v extends r.PureComponent {
         let u = (0, C.rx)(e),
             A = S.intl.string(S.t.pxwdrA),
             h = this.handleJoinOrView,
-            p = d.$n.Looks.FILLED,
+            g = d.$n.Looks.FILLED,
             E = d.$n.Colors.PRIMARY;
-        return l ? n ? (p = d.$n.Looks.OUTLINED, E = x.yh, A = (0, i.jsxs)(m.A, {
+        return l ? n ? (g = d.$n.Looks.OUTLINED, E = x.yh, A = (0, i.jsxs)(m.A, {
             align: m.A.Align.CENTER,
             children: [(0, i.jsx)("div", {
                 children: S.intl.string(S.t.cEnaWx)
@@ -109,10 +109,10 @@ class v extends r.PureComponent {
                 className: x.Qs,
                 children: [(0, i.jsxs)("div", {
                     className: x.pq,
-                    children: [(0, i.jsx)(g.Ay, {
+                    children: [(0, i.jsx)(p.Ay, {
                         guild: u,
                         active: !0,
-                        size: g.Ay.Sizes.LARGE,
+                        size: p.Ay.Sizes.LARGE,
                         className: x.$f
                     }), (0, i.jsxs)("div", {
                         className: x.aV,
@@ -126,7 +126,7 @@ class v extends r.PureComponent {
                     className: x.hP,
                     fullWidth: !0,
                     color: E,
-                    look: p,
+                    look: g,
                     onClick: h,
                     children: A
                 })]
@@ -134,10 +134,10 @@ class v extends r.PureComponent {
         })
     }
 }
-let y = (0, h.A)(o.Ay.connectStores([f.A, p.A], e => {
+let y = (0, h.A)(o.Ay.connectStores([f.A, g.A], e => {
     let {
         guild: t
-    } = e, n = p.A.isLurking(t.id);
+    } = e, n = g.A.isLurking(t.id);
     return {
         isInGuild: null != f.A.getGuild(t.id) && !n,
         isLurking: n

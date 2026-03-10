@@ -1,6 +1,6 @@
 /** chunk id: 428539 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(73153),
     r = n(77468),
@@ -15,8 +15,8 @@ var i = n(73153),
     h = n(652215),
     _ = n(360469),
     m = n(818348);
-let g = new Set([_.AM, _.eK]),
-    p = {
+let p = new Set([_.AM, _.eK]),
+    g = {
         [m.e$.GET_PROVIDER_ACCESS_TOKEN]: {
             scope: {
                 [A.sm.ANY]: [A.VH]
@@ -40,7 +40,7 @@ let g = new Set([_.AM, _.eK]),
                     errorCode: m.Lw.INVALID_PROVIDER
                 }, `Platform not found for provider "${n}"`);
                 if (n === h.fg2.AMAZON_MUSIC) {
-                    if (!g.has(A)) throw new d.A({
+                    if (!p.has(A)) throw new d.A({
                         errorCode: m.Lw.UNAUTHORIZED_FOR_APPLICATION
                     }, "Command not available for this application")
                 } else throw new d.A({
@@ -54,16 +54,16 @@ let g = new Set([_.AM, _.eK]),
                             let n = (t.accounts ?? []).find(e => e.type === _.type);
                             null != n && (e({
                                 access_token: n.access_token
-                            }), g())
+                            }), p())
                         }
 
                         function A() {
                             t(new d.A({
                                 errorCode: m.Lw.OAUTH2_ERROR
-                            }, `OAuth2 setup for "${n}" failed`)), g()
+                            }, `OAuth2 setup for "${n}" failed`)), p()
                         }
 
-                        function g() {
+                        function p() {
                             i.h.unsubscribe("USER_CONNECTIONS_UPDATE", c), o._.unsubscribe(h.jej.CONNECTIONS_CALLBACK_ERROR, A)
                         }
                         i.h.subscribe("USER_CONNECTIONS_UPDATE", c), o._.subscribe(h.jej.CONNECTIONS_CALLBACK_ERROR, A), (0, a.A)({
@@ -106,7 +106,7 @@ let g = new Set([_.AM, _.eK]),
                     errorCode: m.Lw.INVALID_PROVIDER
                 }, `Platform not found for provider "${n}"`);
                 if (n === h.fg2.AMAZON_MUSIC) {
-                    if (!g.has(i)) throw new d.A({
+                    if (!p.has(i)) throw new d.A({
                         errorCode: m.Lw.UNAUTHORIZED_FOR_APPLICATION
                     }, "Command not available for this application")
                 } else throw new d.A({

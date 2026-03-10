@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(216418),
     _ = n(47294),
     m = n(16961),
-    g = n(58149),
-    p = n(429913),
+    p = n(58149),
+    g = n(429913),
     E = n(313961),
     I = n(473553),
     f = n(964404),
@@ -40,7 +40,7 @@ let j = {
 function D(e) {
     let {
         frame: t
-    } = e, n = (0, p.h)(t.applicationId), l = (0, u.A)(), {
+    } = e, n = (0, g.h)(t.applicationId), l = (0, u.A)(), {
         selectedChannelId: D,
         selectedVoiceChannelId: M
     } = (0, s.cf)([S.A], () => ({
@@ -154,7 +154,7 @@ function D(e) {
                 }), Q ? (0, i.jsx)(N.A, {
                     popoutOpen: !1,
                     onOpenPopout: () => {
-                        (0, g.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, _.A)({
+                        (0, p.zV)(O.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, _.A)({
                             onConfirm: async () => {
                                 n?.id != null && await x.A.refreshProxyTicket({
                                     applicationId: n.id

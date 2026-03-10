@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(397927),
     _ = n(565645),
     m = n(701363),
-    g = n(736653),
-    p = n(775602),
+    p = n(736653),
+    g = n(775602),
     E = n(793574),
     I = n(688810),
     f = n(580314),
@@ -72,18 +72,18 @@ let w = e => {
             onMouseLeave: c,
             children: u,
             ...A
-        } = e, _ = (0, s.rm)("shop"), g = E.A.HOME_PAGE_SHOP_TAB, {
-            analyticsLocations: p
-        } = (0, I.Ay)(g), [f, C] = r.useState(!1), T = r.useCallback(() => {
+        } = e, _ = (0, s.rm)("shop"), p = E.A.HOME_PAGE_SHOP_TAB, {
+            analyticsLocations: g
+        } = (0, I.Ay)(p), [f, C] = r.useState(!1), T = r.useCallback(() => {
             void 0 !== a && a(), void 0 !== o && (0, S.Cz)({
                 tab: o,
-                analyticsLocations: p,
-                analyticsSource: g
+                analyticsLocations: g,
+                analyticsSource: p
             }), C(!0), (0, S.Sw)({
-                analyticsSource: g,
-                analyticsLocations: p
+                analyticsSource: p,
+                analyticsLocations: g
             })
-        }, [g, p, a, C, o]), N = P.BVt.COLLECTIBLES_SHOP;
+        }, [p, g, a, C, o]), N = P.BVt.COLLECTIBLES_SHOP;
         return (0, i.jsxs)(i.Fragment, {
             children: [f && (0, i.jsx)(U, {}), (0, i.jsx)(m.z9, {
                 selected: t,
@@ -149,14 +149,14 @@ let w = e => {
                 displayOptions: l,
                 ...s
             } = e,
-            o = (0, c.bG)([p.A], () => p.A.useReducedMotion),
+            o = (0, c.bG)([g.A], () => g.A.useReducedMotion),
             [d, u] = r.useState(0),
             [_, m] = r.useState(0),
             [E, I] = r.useState(!1),
             [f, C] = r.useState(!1),
             T = r.useRef(null),
             S = r.useRef(null),
-            x = (0, g.Ay)(),
+            x = (0, p.Ay)(),
             v = (0, A.Mw)(x);
         E ? v ? (t = l.entryPointBackgroundAssets?.srcDarkHovered, n = l.entrypointBackgroundStyle?.hovered?.dark) : (t = l.entryPointBackgroundAssets?.srcLightHovered, n = l.entrypointBackgroundStyle?.hovered?.light) : v ? (t = l.entryPointBackgroundAssets?.srcDark, n = l.entrypointBackgroundStyle?.resting?.dark) : (t = l.entryPointBackgroundAssets?.srcLight, n = l.entrypointBackgroundStyle?.resting?.light);
         let y = r.useCallback(e => {
@@ -253,9 +253,9 @@ let w = e => {
             displayOptions: t,
             dismissContent: n,
             ...l
-        } = e, s = r.useRef(null), o = r.useRef(null), [d, c] = r.useState(!1), u = (0, g.Ay)(), h = (0, A.Mw)(u), _ = t.entryPointBackgroundAssets, m = t.entrypointBackgroundStyle, p = h ? _?.srcDarkHovered : _?.srcLightHovered, E = h ? m?.hovered?.dark : m?.hovered?.light;
+        } = e, s = r.useRef(null), o = r.useRef(null), [d, c] = r.useState(!1), u = (0, p.Ay)(), h = (0, A.Mw)(u), _ = t.entryPointBackgroundAssets, m = t.entrypointBackgroundStyle, g = h ? _?.srcDarkHovered : _?.srcLightHovered, E = h ? m?.hovered?.dark : m?.hovered?.light;
         return r.useEffect(() => {
-            if (null == p || "" === p) return void c(!1);
+            if (null == g || "" === g) return void c(!1);
             let e = () => {
                 c(B(o))
             };
@@ -264,7 +264,7 @@ let w = e => {
             return () => {
                 cancelAnimationFrame(t)
             }
-        }, [p]), (0, i.jsxs)(i.Fragment, {
+        }, [g]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)(G, {
                 ...l,
                 onClick: () => n(j.i.TAKE_ACTION),
@@ -275,8 +275,8 @@ let w = e => {
                     style: null != E ? {
                         background: E
                     } : void 0,
-                    children: null != p && (0, i.jsx)("img", {
-                        src: p,
+                    children: null != g && (0, i.jsx)("img", {
+                        src: g,
                         className: a()(M.marketingButtonBackgroundImage, d && M.marketingButtonBackgroundImageFaded),
                         alt: "",
                         "aria-hidden": !0

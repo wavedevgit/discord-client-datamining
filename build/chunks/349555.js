@@ -21,8 +21,8 @@ function m(e) {
         excludedQuests: n,
         isFetching: l,
         hasFetched: m,
-        hasFiltersApplied: g = !1,
-        onClearFilters: p
+        hasFiltersApplied: p = !1,
+        onClearFilters: g
     } = e, E = r.useRef(!1), I = (0, o.zy)(), f = r.useMemo(() => {
         if (I.hash.length > 0) {
             let e = I.hash.slice(1),
@@ -58,12 +58,12 @@ function m(e) {
         className: _.y7,
         children: [(0, i.jsx)(d.Heading, {
             variant: "heading-xl/semibold",
-            children: h.intl.string(g ? h.t.PBfFnx : h.t.NqFP6z)
+            children: h.intl.string(p ? h.t.PBfFnx : h.t.NqFP6z)
         }), (0, i.jsx)(d.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
-            children: g ? h.intl.format(h.t.LdYS1H, {
-                onClick: p
+            children: p ? h.intl.format(h.t.LdYS1H, {
+                onClick: g
             }) : h.intl.string(h.t.LhD4yH)
         })]
     }) : (0, i.jsx)("div", {

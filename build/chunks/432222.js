@@ -15,8 +15,8 @@ var l = n(64700),
     A = n(405269),
     p = n(661191),
     f = n(652215),
-    E = n(381941),
-    h = n(985018);
+    h = n(381941),
+    E = n(985018);
 
 function x(e, t) {
     let [n, s] = l.useState(!1), x = l.useCallback(async () => {
@@ -24,10 +24,10 @@ function x(e, t) {
             s(!0), (0, u.pX)(f.BVt.CHANNEL(f.ME, e.id));
             try {
                 await o.A.sendStickers(e.id, ["749054660769218631"], "", {
-                    location: E.Hx.SEND_WAVE
+                    location: h.Hx.SEND_WAVE
                 })
             } catch (e) {
-                e.ok || 429 !== e.status || (0, r.showToast)((0, r.createToast)(h.intl.string(h.t.Whhv4w), r.ToastType.FAILURE))
+                e.ok || 429 !== e.status || (0, r.showToast)((0, r.createToast)(E.intl.string(E.t.Whhv4w), r.ToastType.FAILURE))
             }
             m.default.track(f.HAw.WAVE_CTA_CLICKED, {
                 source: "DM Channel"

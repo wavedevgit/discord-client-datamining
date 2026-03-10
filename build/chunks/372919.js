@@ -16,8 +16,8 @@ var r = n(179771),
     h = n(795816),
     _ = n(851907),
     m = n(980142),
-    g = n(572946),
-    p = n(293588),
+    p = n(572946),
+    g = n(293588),
     E = n(20015),
     I = n(267102),
     f = n(869146),
@@ -285,7 +285,7 @@ let V = {
             if (!b.A.isDiscordCdnUrl(n)) throw new L.A({
                 errorCode: U.Lw6.INVALID_PAYLOAD
             }, "mediaUrl must be a Discord CDN url");
-            (0, g.g)({
+            (0, p.g)({
                 applicationId: i,
                 channelId: r?.id,
                 mediaUrl: n
@@ -345,7 +345,7 @@ let V = {
                 let n = !1,
                     r = (0, M.d5)(c),
                     l = a.SYi;
-                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || r.context === U.BRT.POPOUT) && (l = a.KX8), (0, p.m)({
+                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || r.context === U.BRT.POPOUT) && (l = a.KX8), (0, g.m)({
                     applicationId: u,
                     channel: A,
                     command: {

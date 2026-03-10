@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(341915),
     _ = n(33621),
     m = n(714510),
-    g = n(890687),
-    p = n(579473),
+    p = n(890687),
+    g = n(579473),
     E = n(18437),
     I = n(590202),
     f = n(710969),
@@ -37,13 +37,13 @@ var i = n(627968),
 function D(e) {
     let {
         quest: t
-    } = e, n = (0, g.S5)(t.config.expiresAt), r = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, p.S5)(t.config.expiresAt), r = (0, p.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
         className: j.R_,
         children: [(0, i.jsx)("img", {
             className: j.tb,
             alt: "",
-            src: (0, p.tW)(t, p.fY.GAME_TILE, a).url
+            src: (0, g.tW)(t, g.fY.GAME_TILE, a).url
         }), (0, i.jsxs)("div", {
             className: j.UD,
             children: [(0, i.jsx)(o.Heading, {
@@ -69,9 +69,9 @@ function M(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = r.useState(!1), R = r.useCallback(() => T(!0), []), M = r.useCallback(() => T(!1), []), {
+    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [g, T] = r.useState(!1), R = r.useCallback(() => T(!0), []), M = r.useCallback(() => T(!1), []), {
         launchInGameActivity: w
-    } = (0, g.zW)(n), U = _.t.useConfig({
+    } = (0, p.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
     }), G = (0, v.Pd)(n), k = r.useCallback(e => {
         e.stopPropagation()
@@ -105,7 +105,7 @@ function M(e) {
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
-    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, g.fc)(n), K = (0, m.mU)({
+    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, p.fc)(n), K = (0, m.mU)({
         quest: n,
         taskDetails: q,
         location: L.rE.ACTIVITY_PANEL,
@@ -160,7 +160,7 @@ function M(e) {
                 })
             })]
         }), Y && !W && (0, i.jsx)(b.A, {
-            autoplay: p,
+            autoplay: g,
             className: j.t3,
             quest: n,
             questContent: h.uF.ACTIVITY_PANEL,

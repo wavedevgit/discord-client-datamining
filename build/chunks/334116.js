@@ -28,12 +28,12 @@ let h = (0, o.Fe)({
         webpackId: 911315,
         name: "PopoutWindowStageChannelCall"
     }),
-    g = (0, o.Fe)({
+    p = (0, o.Fe)({
         createPromise: () => n.e("71138").then(n.bind(n, 414760)),
         webpackId: 414760,
         name: "PopoutWindowRTCDebug"
     }),
-    p = (0, o.Fe)({
+    g = (0, o.Fe)({
         createPromise: () => Promise.all([n.e("71447"), n.e("13492")]).then(n.bind(n, 860051)),
         webpackId: 860051,
         name: "PopoutWindowActivity"
@@ -94,7 +94,7 @@ class E extends a.A {
         null != this._observer && (this._observer.disconnect(), this._observer = null)
     }
     handleOpenRTCDebugPopout() {
-        c.open(u.MLl.RTC_DEBUG_POPOUT, e => (0, i.jsx)(g, {
+        c.open(u.MLl.RTC_DEBUG_POPOUT, e => (0, i.jsx)(p, {
             windowKey: e
         }), {
             defaultWidth: 854,
@@ -102,7 +102,7 @@ class E extends a.A {
         })
     }
     handleOpenActivityPopout() {
-        (0, l.Vz)(A.G, d.A.getDefaultLayout(A.G, 4), 4), c.open(u.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(p, {
+        (0, l.Vz)(A.G, d.A.getDefaultLayout(A.G, 4), 4), c.open(u.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(g, {
             windowKey: e
         }), {
             defaultWidth: 854,

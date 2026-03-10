@@ -15,8 +15,8 @@ var i = n(143236),
     h = n(652215);
 let _ = 10 * o.A.Millis.SECOND,
     m = new Map,
-    g = new Set,
-    p = (e, t, n) => {
+    p = new Set,
+    g = (e, t, n) => {
         n([c.A.CLOSE, t], e)
     };
 class E extends i.EventEmitter {
@@ -44,7 +44,7 @@ class E extends i.EventEmitter {
         let {
             id: t
         } = e;
-        g.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
+        p.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
             Array.from(r.Ay.getSelfEmbeddedActivities().entries()).forEach(e => {
                 let [t, n] = e;
                 a.default.track(h.HAw.ACTIVITY_HANDSHAKE_TIMED_OUT, {
@@ -60,7 +60,7 @@ class E extends i.EventEmitter {
         let {
             id: t
         } = e;
-        g.delete(t);
+        p.delete(t);
         let [n, i] = Array.from(m.entries()).find(e => {
             let [n, i] = e;
             return i.frameId === t
@@ -79,7 +79,7 @@ class E extends i.EventEmitter {
             null != i ? this.disconnectSocket(i, {
                 code: e.code,
                 message: e.message
-            }, !0) : p(t, {
+            }, !0) : g(t, {
                 code: e.code,
                 message: e.message
             }, n)
@@ -142,7 +142,7 @@ class E extends i.EventEmitter {
             }, e.message)
         }
         let s = t.frame_id;
-        if (!g.has(s)) throw this.logger.error(`Unrecognized frame ID ${s}`), new d.A({
+        if (!p.has(s)) throw this.logger.error(`Unrecognized frame ID ${s}`), new d.A({
             closeCode: h.YI$.CLOSE_UNSUPPORTED
         }, `Unrecognized frame ID ${s}`);
         null != t.sdk_version && a.default.track(h.HAw.ACTIVITY_HANDSHAKE, {
@@ -156,7 +156,7 @@ class E extends i.EventEmitter {
                 frameId: s,
                 version: Number(t.v),
                 logger: this.logger,
-                postClose: p,
+                postClose: g,
                 encoding: t.encoding ?? "json"
             })
         } catch (e) {
@@ -164,10 +164,10 @@ class E extends i.EventEmitter {
         }
         this.logger.info(`Socket Opened: ${r.id}`);
         try {
-            if (await this.validateSocketClient(r, e, t.client_id), !g.has(s)) throw this.logger.error(`Frame ID ${s} no longer exists`), new d.A({
+            if (await this.validateSocketClient(r, e, t.client_id), !p.has(s)) throw this.logger.error(`Frame ID ${s} no longer exists`), new d.A({
                 closeCode: h.YI$.CLOSE_UNSUPPORTED
             }, `Unrecognized frame ID ${s}`);
-            m.set(e, r), g.delete(s), r.authorization.scopes.push(A.W_), this.emit("connect", r), this.logger.info(`Socket Validated: ${r.id}`)
+            m.set(e, r), p.delete(s), r.authorization.scopes.push(A.W_), this.emit("connect", r), this.logger.info(`Socket Validated: ${r.id}`)
         } catch (e) {
             throw this.logger.info(`Socket Closed: ${r.id}, ${e.message}`), e
         }

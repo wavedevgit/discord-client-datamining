@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(70730),
     _ = n(777426),
     m = n(976860),
-    g = n(734057),
-    p = n(430452),
+    p = n(734057),
+    g = n(430452),
     E = n(994500),
     I = n(427262),
     f = n(607272),
@@ -67,14 +67,14 @@ function L(e) {
             cancelText: b.intl.string(b.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, l, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [_, l, t]), p = (0, s.bG)([g.Ay], () => g.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
         "aria-label": b.intl.string(b.t.liqwPJ),
         onClose: u.Z_,
         onSelect: a,
-        children: [!E && g ? (0, i.jsx)(o.Drp, {
+        children: [!E && p ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
             label: b.intl.string(b.t.oCqlGG),
             action: h
@@ -106,7 +106,7 @@ class R extends r.PureComponent {
             user: t
         } = this.props;
         e.stopPropagation();
-        let n = a().find(g.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
+        let n = a().find(p.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
         null != n ? (0, m.pX)(x.BVt.CHANNEL(x.ME, n.id)) : c.A.openPrivateChannel({
             recipientIds: t.id
         })
@@ -144,16 +144,16 @@ class R extends r.PureComponent {
             isGameRelationship: d,
             giftIntentType: c,
             hasFriendAnniversarySection: m,
-            sectionIndex: g
+            sectionIndex: p
         } = this.props, {
-            isActiveRow: p
+            isActiveRow: g
         } = this.state;
-        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === g ? (0, i.jsx)(_.A, {
+        return (0, h.p)(A.A.FRIENDS_LIST) && c === v.np.FRIEND_ANNIVERSARY && m && 0 === p ? (0, i.jsx)(_.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: p,
+            isActive: g,
             recipientUser: e,
-            onOtherHover: () => p ? null : (0, u.Z_)(),
+            onOtherHover: () => g ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             giftIntentType: c,
             status: l,
@@ -165,9 +165,9 @@ class R extends r.PureComponent {
         }) : (0, i.jsx)(T.A, {
             ref: this.peopleListItemRef,
             isFocused: t,
-            isActive: p,
+            isActive: g,
             user: e,
-            onOtherHover: () => p ? null : (0, u.Z_)(),
+            onOtherHover: () => g ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             children: t => (0, i.jsxs)("div", {
                 className: O.a4,

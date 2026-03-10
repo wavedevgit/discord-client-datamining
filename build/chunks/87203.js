@@ -1,6 +1,6 @@
 /** chunk id: 87203 params = (module,exports,require) **/
 n.d(t, {
-    s: () => p
+    s: () => g
 });
 var i = n(827343),
     r = n(168943),
@@ -15,14 +15,14 @@ var i = n(827343),
     h = n(383501),
     _ = n(287809),
     m = n(652215),
-    g = n(731854);
+    p = n(731854);
 
-function p() {
+function g() {
     if (!(0, r.L)()) return;
     let e = A.Ay.isVideoEnabled(),
         t = Object.values(A.Ay.getVideoDevices())[0],
         n = !1 === (t?.disabled ?? !0),
-        p = A.Ay.supportsInApp(g.O5.VIDEO) && A.Ay.supportsInApp(g.O5.DESKTOP_CAPTURE),
+        g = A.Ay.supportsInApp(p.O5.VIDEO) && A.Ay.supportsInApp(p.O5.DESKTOP_CAPTURE),
         E = u.A.getChannel(h.A.getChannelId()),
         I = _.default.getCurrentUser()?.id;
     if (null == E || null == I) return;
@@ -38,7 +38,7 @@ function p() {
                     } = e;
                     return t.id === I
                 });
-            if (!(0, s.Bw)(E.guild_id) || !p || null == t || t.voiceState.suppress) return
+            if (!(0, s.Bw)(E.guild_id) || !g || null == t || t.voiceState.suppress) return
         }
         return e ? i.A.setVideoEnabled(!1) : !e && n ? (0, c.A)(() => {
             i.A.setVideoEnabled(!0)

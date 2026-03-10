@@ -1,6 +1,6 @@
 /** chunk id: 885969 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(86980),
     r = n(793574),
@@ -30,7 +30,7 @@ function m(e, t) {
             throw Error(`Unexpected app context: ${e}`)
     }
 }
-let g = {
+let p = {
     [A.e$_.START_PURCHASE]: {
         [u.sm.ANY]: [u.VH, u.hj],
         validation: e => (0, s.A)(e).required().keys({
@@ -57,7 +57,7 @@ let g = {
             if (null == (0, o.A)()) throw new a.A({
                 errorCode: A.Lw6.INVALID_CHANNEL
             }, "Invalid channel");
-            let g = {
+            let p = {
                 page: A.liQ.IN_APP
             };
             return (async () => {
@@ -65,9 +65,9 @@ let g = {
                     let e = await (0, i.j)({
                         applicationId: l,
                         skuId: n,
-                        openPremiumPaymentModal: () => m(h, g),
+                        openPremiumPaymentModal: () => m(h, p),
                         analyticsLocations: _,
-                        analyticsLocationObject: g,
+                        analyticsLocationObject: p,
                         context: h
                     });
                     return s(), e

@@ -15,8 +15,8 @@ var i = n(989349),
     h = n(961350),
     _ = n(761640),
     m = n(734057),
-    g = n(696451),
-    p = n(317525),
+    p = n(696451),
+    g = n(317525),
     E = n(71393),
     I = n(430452),
     f = n(803224),
@@ -40,9 +40,9 @@ function M(e, t, n, i) {
     let l = E.A.getGuild(n),
         a = e.replace(D, O.intl.string(O.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
             let i = S.default.getUser(t);
-            return null == i ? e : g.Ay.getNick(n, i.id) ?? x.Ay.getName(i)
+            return null == i ? e : p.Ay.getNick(n, i.id) ?? x.Ay.getName(i)
         }).replace(/<@&?(\d+)>/g, (e, t) => {
-            let n = null != l ? p.A.getRole(l.id, t) : null;
+            let n = null != l ? g.A.getRole(l.id, t) : null;
             return null != n && null != n.name ? n.name : O.intl.string(O.t.dRcLA2)
         }).replace(/<#(\d+)>/g, (e, t) => {
             let n = m.A.getChannel(t);
@@ -100,7 +100,7 @@ function B(e) {
     let {
         message: t,
         channel: n
-    } = e, i = t.type === b.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, r = i?.state === c.a.LOADED ? i?.message?.author : null, l = null != r ? g.Ay.getNick(n.guild_id, r?.id) ?? x.Ay.getName(r) : null, a = n.getGuildId(), s = g.Ay.getNick(a, t.author.id) ?? x.Ay.getName(t.author);
+    } = e, i = t.type === b.lAJ.REPLY ? c.A.getMessageByReference(t.messageReference) : null, r = i?.state === c.a.LOADED ? i?.message?.author : null, l = null != r ? p.Ay.getNick(n.guild_id, r?.id) ?? x.Ay.getName(r) : null, a = n.getGuildId(), s = p.Ay.getNick(a, t.author.id) ?? x.Ay.getName(t.author);
     return G(M(t.content, s, a, l), !0, n.id, t.id), !0
 }
 
@@ -124,9 +124,9 @@ function H(e) {
         L.unshift(n.id) > 10 && L.pop();
         let e = r.getGuildId();
         if (null != e && N.Ay.getMutedChannels(e).has(t)) return !1;
-        let i = g.Ay.getNick(e, n.author?.id) ?? x.Ay.getName(n.author) ?? "",
+        let i = p.Ay.getNick(e, n.author?.id) ?? x.Ay.getName(n.author) ?? "",
             l = n.type === b.lAJ.REPLY ? n.referenced_message?.author : null,
-            a = null != l ? g.Ay.getNick(e, l?.id) ?? x.Ay.getName(l) : null;
+            a = null != l ? p.Ay.getNick(e, l?.id) ?? x.Ay.getName(l) : null;
         G(M(n.content, i, e, a), !1, r.id, n.id, 200)
     }
     return !1

@@ -70,8 +70,8 @@ let h = e => {
             empty: !0,
             guildId: s
         }, `empty-member-${e}`));
-        let g = Math.max(Math.min(d - _.length, 99), 0);
-        if (1 === g) {
+        let p = Math.max(Math.min(d - _.length, 99), 0);
+        if (1 === p) {
             let e = n[l];
             _.push((0, i.jsx)(h, {
                 member: e,
@@ -82,9 +82,9 @@ let h = e => {
             className: A.iE,
             children: (0, i.jsxs)("div", {
                 className: A.S3,
-                children: [_, g > 1 ? (0, i.jsxs)("div", {
+                children: [_, p > 1 ? (0, i.jsxs)("div", {
                     className: A.Hi,
-                    children: ["+", g]
+                    children: ["+", p]
                 }) : null]
             })
         })

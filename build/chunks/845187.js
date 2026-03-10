@@ -20,7 +20,7 @@ function _(e) {
         applicationId: t,
         transitionState: n,
         onClose: _
-    } = e, [m, g] = r.useState(!1), [p] = (0, o.A)([t]), E = p?.name ?? "This Activity";
+    } = e, [m, p] = r.useState(!1), [g] = (0, o.A)([t]), E = g?.name ?? "This Activity";
     r.useEffect(() => {
         d.default.track(u.HAw.OPEN_MODAL, {
             type: h
@@ -47,7 +47,7 @@ function _(e) {
         title: A.intl.string(A.t.NQkK4l),
         actionBarInput: (0, i.jsx)(a.Checkbox, {
             checked: m,
-            onChange: () => g(!m),
+            onChange: () => p(!m),
             label: A.intl.string(A.t["5E9SB9"]),
             labelType: "secondary"
         }),

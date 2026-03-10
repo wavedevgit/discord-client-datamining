@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(532794),
     _ = n(295140),
     m = n(788868),
-    g = n(652215),
-    p = n(49999),
+    p = n(652215),
+    g = n(49999),
     E = n(49370),
     I = n(985018),
     f = n(32743);
@@ -30,12 +30,12 @@ function C(e) {
     } = e, {
         analyticsLocations: N
     } = (0, A.Ay)(u.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION), S = r.useCallback(() => {
-        n(p.i.TAKE_ACTION), (0, h.A)({
+        n(g.i.TAKE_ACTION), (0, h.A)({
             subscriptionTier: m.pe.TIER_2,
             analyticsLocations: N,
             analyticsObject: {
-                object: g.ZSU.BUTTON_CTA,
-                objectType: g.AnalyticsObjectTypes.TIER_2
+                object: p.ZSU.BUTTON_CTA,
+                objectType: p.AnalyticsObjectTypes.TIER_2
             }
         })
     }, [n, N]);
@@ -44,7 +44,7 @@ function C(e) {
             children: C
         }), (0, i.jsx)(l.x, {
             targetElementRef: t,
-            onRequestClose: () => n(p.i.USER_DISMISS),
+            onRequestClose: () => n(g.i.USER_DISMISS),
             alignmentStrategy: "edge",
             align: "top",
             position: "right",
@@ -55,7 +55,7 @@ function C(e) {
             children: (0, i.jsxs)("div", {
                 "data-mana-component": "popover",
                 children: [(0, i.jsx)(o.q, {
-                    onClick: () => n(p.i.USER_DISMISS),
+                    onClick: () => n(g.i.USER_DISMISS),
                     variant: "color-mix"
                 }), (0, i.jsx)("div", {
                     className: f.O,

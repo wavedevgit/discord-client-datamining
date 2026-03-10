@@ -31,8 +31,8 @@ var i = n(567243),
     h = n(95701),
     _ = n(427157),
     m = n(734057),
-    g = n(71393),
-    p = n(430452),
+    p = n(71393),
+    g = n(430452),
     E = n(320501),
     I = n(290863),
     f = n(287809),
@@ -137,9 +137,9 @@ function V(e, t, n) {
     if (null == d) throw Error(`Invalid user id: ${o}`);
     return {
         nick: N.Ay.getName(e, t, d),
-        mute: p.Ay.isLocalMute(d.id),
-        volume: p.Ay.getLocalVolume(d.id),
-        pan: p.Ay.getLocalPan(d.id),
+        mute: g.Ay.isLocalMute(d.id),
+        volume: g.Ay.getLocalVolume(d.id),
+        pan: g.Ay.getLocalPan(d.id),
         voice_state: {
             mute: i,
             deaf: r,
@@ -186,7 +186,7 @@ function F(e) {
 }
 
 function Y(e, t, n) {
-    let i = g.A.getGuild(e.getGuildId());
+    let i = p.A.getGuild(e.getGuildId());
     return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(r.F.MESSAGES_READ) > -1
 }
 
@@ -268,7 +268,7 @@ function Q(e, t) {
 }
 
 function X(e) {
-    let t = p.Ay.getSettings(),
+    let t = g.Ay.getSettings(),
         n = e => Object.values(e).sort((e, t) => e.index - t.index).map(e => ({
             id: e.id,
             name: e.name
@@ -276,12 +276,12 @@ function X(e) {
         i = e(t);
     return {
         input: {
-            available_devices: n(p.Ay.getInputDevices()),
+            available_devices: n(g.Ay.getInputDevices()),
             device_id: t.inputDeviceId,
             volume: t.inputVolume
         },
         output: {
-            available_devices: n(p.Ay.getOutputDevices()),
+            available_devices: n(g.Ay.getOutputDevices()),
             device_id: t.outputDeviceId,
             volume: t.outputVolume
         },
@@ -303,7 +303,7 @@ function X(e) {
 }
 
 function Z(e, t) {
-    let n = p.Ay.getSettings(e),
+    let n = g.Ay.getSettings(e),
         i = t(n);
     return {
         input_mode: {

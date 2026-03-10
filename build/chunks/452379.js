@@ -13,7 +13,7 @@ var i = n(735438),
     u = n(355097);
 let A = {
     init() {
-        o.A[u.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[u.oD.FRECENCY_AND_FAVORITES_SETTINGS] = a.A, l.h.subscribe("CONNECTION_OPEN", h), l.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", _), l.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), l.h.subscribe("APP_STATE_UPDATE", g)
+        o.A[u.oD.PRELOADED_USER_SETTINGS] = s.A, o.A[u.oD.FRECENCY_AND_FAVORITES_SETTINGS] = a.A, l.h.subscribe("CONNECTION_OPEN", h), l.h.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", _), l.h.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", m), l.h.subscribe("APP_STATE_UPDATE", p)
     }
 };
 
@@ -48,7 +48,7 @@ function m(e) {
     d.Df[t].loadIfNecessary()
 }
 
-function g(e) {
+function p(e) {
     let {
         state: t
     } = e;

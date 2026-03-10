@@ -1,6 +1,6 @@
 /** chunk id: 796111 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(562465),
     r = n(10716),
@@ -15,7 +15,7 @@ var i = n(562465),
     h = n(569475),
     _ = n(613057),
     m = n(652215);
-let g = {
+let p = {
     [m.e$_.SEND_ANALYTICS_EVENT]: {
         validation: e => (0, A.A)(e).required().keys({
             event_name: e.string().required(),
@@ -37,15 +37,15 @@ let g = {
             if (!(0, s.n)(_, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
                 errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let g = (0, l.D)(r),
-                p = {
+            let p = (0, l.D)(r),
+                g = {
                     activity_application_id: r,
                     activity_channel_type: o?.type,
                     activity_guild_id: A,
-                    activity_user_session_id: g?.activityUserSessionId
+                    activity_user_session_id: p?.activityUserSessionId
                 };
             d.default.track(n, {
-                ...p,
+                ...g,
                 ...i
             })
         }

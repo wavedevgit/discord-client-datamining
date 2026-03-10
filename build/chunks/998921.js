@@ -22,11 +22,11 @@ let h = o.Ay.requireModule("discord_rpc").RPCIPC,
         PONG: 4
     };
 
-function g(e, t) {
+function p(e, t) {
     null != e.setHandshakeComplete ? e.setHandshakeComplete(t) : e._didHandshake = t
 }
 
-function p(e) {
+function g(e) {
     return null != e.getHandshakeComplete ? e.getHandshakeComplete() : e._didHandshake
 }
 
@@ -78,7 +78,7 @@ class f extends c.A {
     socket;
     clientId = null;
     constructor(e, t) {
-        super("ipc", A.dL4, t), this.socket = e, g(e, !1)
+        super("ipc", A.dL4, t), this.socket = e, p(e, !1)
     }
     copyBuffer(e, t, n) {
         let r = i.Buffer.allocUnsafe(n - t);
@@ -127,7 +127,7 @@ class f extends c.A {
                 this.handleHandshake(e, n), e.emit("handshake", n);
                 break;
             case m.FRAME:
-                if (!p(e)) throw Error("did not handshake");
+                if (!g(e)) throw Error("did not handshake");
                 e.emit("request", n);
                 break;
             case m.CLOSE:
@@ -138,8 +138,8 @@ class f extends c.A {
         }
     }
     handleHandshake(e, t) {
-        if (p(e)) throw Error("already did handshake");
-        this.clientId = t.client_id, this.checkRpcVersion(+t.v), g(e, !0)
+        if (g(e)) throw Error("already did handshake");
+        this.clientId = t.client_id, this.checkRpcVersion(+t.v), p(e, !0)
     }
 }
 class C extends r.EventEmitter {

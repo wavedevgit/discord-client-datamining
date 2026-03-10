@@ -16,13 +16,13 @@ var r = n(397927),
     h = n(636401),
     _ = n(90924),
     m = n(629471),
-    g = n(546983),
-    p = n(613057),
+    p = n(546983),
+    g = n(613057),
     E = n(652215);
 let I = new c.A("RPCCommandsOverlay"),
     f = {
         [E.e$_.SET_OVERLAY_LOCKED]: {
-            scope: p.hj,
+            scope: g.hj,
             validation: e => (0, m.A)(e).required().keys({
                 locked: e.boolean().required(),
                 pid: e.number().min(0).required()
@@ -47,7 +47,7 @@ let I = new c.A("RPCCommandsOverlay"),
             }
         },
         [E.e$_.OPEN_OVERLAY_ACTIVITY_INVITE]: {
-            scope: p.hj,
+            scope: g.hj,
             validation: e => (0, m.A)(e).required().keys({
                 type: e.number().required().valid([E.xL.JOIN]),
                 pid: e.number().min(0).required()
@@ -70,7 +70,7 @@ let I = new c.A("RPCCommandsOverlay"),
                 let {
                     lock: s,
                     context: o
-                } = (0, g.d5)(i), c = (0, d.A)(l, A.A);
+                } = (0, p.d5)(i), c = (0, d.A)(l, A.A);
                 return (0, a.qf)(l, c, o).then(() => {
                     if (s(), c) throw new h.A({
                         errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
@@ -79,7 +79,7 @@ let I = new c.A("RPCCommandsOverlay"),
             }
         },
         [E.e$_.OPEN_OVERLAY_GUILD_INVITE]: {
-            scope: p.hj,
+            scope: g.hj,
             validation: e => (0, m.A)(e).required().keys({
                 code: e.string().required(),
                 pid: e.number().min(0).required()
@@ -106,7 +106,7 @@ let I = new c.A("RPCCommandsOverlay"),
                     let {
                         context: r,
                         lock: a
-                    } = (0, g.d5)(n);
+                    } = (0, p.d5)(n);
                     return new Promise(e => {
                         l.h.dispatch({
                             type: "INVITE_MODAL_OPEN",
@@ -120,7 +120,7 @@ let I = new c.A("RPCCommandsOverlay"),
             }
         },
         [E.e$_.OPEN_OVERLAY_VOICE_SETTINGS]: {
-            scope: p.hj,
+            scope: g.hj,
             validation: e => (0, m.A)(e).required().keys({
                 pid: e.number().min(0).required()
             }),
@@ -137,7 +137,7 @@ let I = new c.A("RPCCommandsOverlay"),
                 let {
                     lock: s,
                     context: o
-                } = (0, g.d5)(t);
+                } = (0, p.d5)(t);
                 return new Promise(e => {
                     (0, r.mMO)(async () => {
                         let {

@@ -18,7 +18,7 @@ var i = n(627968),
 function m(e) {
     let {
         loadId: t
-    } = e, n = (0, l.bG)([s.default], () => (0, u.Kv)([s.default])), m = c.A.useField("languageCode"), g = r.useCallback(e => {
+    } = e, n = (0, l.bG)([s.default], () => (0, u.Kv)([s.default])), m = c.A.useField("languageCode"), p = r.useCallback(e => {
         c.A.setState({
             languageCode: e
         });
@@ -31,7 +31,7 @@ function m(e) {
             query: n,
             languageCode: e
         })
-    }, [t]), p = r.useMemo(() => (0, A.tO)().map(e => ({
+    }, [t]), g = r.useMemo(() => (0, A.tO)().map(e => ({
         id: e.code,
         value: e.code,
         label: e.name
@@ -43,8 +43,8 @@ function m(e) {
             label: h.intl.string(h.t.Ng5cTK),
             hideLabel: !0,
             value: m ?? n,
-            options: p,
-            onSelectionChange: g
+            options: g,
+            onSelectionChange: p
         })
     })
 }

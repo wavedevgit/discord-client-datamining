@@ -31,16 +31,16 @@ class h extends l.A {
             if (h) return void(0, d.e$)(t);
             let _ = c.default.getCurrentUser(),
                 m = null != i ? a.zq : r.zq,
-                g = u.Ay.canUseAnimatedAvatar(_);
-            if (g || "image/gif" !== n.type) return void m(t);
+                p = u.Ay.canUseAnimatedAvatar(_);
+            if (p || "image/gif" !== n.type) return void m(t);
             if (null == _) return;
-            let p = (0, o.V7)({
+            let g = (0, o.V7)({
                 userId: _.id,
                 image: t
             });
-            if (!g) return void(0, s.G)({
+            if (!p) return void(0, s.G)({
                 uploadType: A.HL.AVATAR,
-                imageSrc: p,
+                imageSrc: g,
                 analyticsSource: l
             })
         })(e) : e.uploadType === A.HL.BANNER ? (e => {

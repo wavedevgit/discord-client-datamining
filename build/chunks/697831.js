@@ -19,7 +19,7 @@ function _(e, t, n) {
     let _ = (0, r.bG)([s.A, a.default], () => null != t ? (0, d.A)(s.A, a.default, t, e) : void 0, [e, t]);
     if (null == _ || null == e || null == t) return null;
     let m = _.isCurrentUser || _.notPlayable || _.playingSameTrack,
-        g = _.isCurrentUser || _.syncingWithUser || _.syncingWithParty;
+        p = _.isCurrentUser || _.syncingWithUser || _.syncingWithParty;
     return [(0, i.jsx)(l.Drp, {
         id: `spotify-play-${e.session_id}`,
         action: () => (0, u.A)(_, A.Qp.USER_ACTIVITY_PLAY, n),
@@ -30,7 +30,7 @@ function _(e, t, n) {
         id: `spotify-sync-${e.session_id}`,
         action: () => (0, c.A)(_, A.Qp.USER_ACTIVITY_SYNC, n),
         label: h.intl.string(h.t.eU3inB),
-        subtext: g ? (0, o.A)(_, A.Qp.USER_ACTIVITY_SYNC) : void 0,
-        disabled: g
+        subtext: p ? (0, o.A)(_, A.Qp.USER_ACTIVITY_SYNC) : void 0,
+        disabled: p
     }, `spotify-sync-${e.session_id}`) : null]
 }

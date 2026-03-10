@@ -1,6 +1,6 @@
 /** chunk id: 752412 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(73153),
     r = n(827343),
@@ -19,7 +19,7 @@ function m() {
     for (let e of A) r.A.setDisableLocalVideo(e, c.bb8.MANUAL_ENABLED, u.x.DEFAULT, !1);
     h.clear(), A.clear()
 }
-class g extends l.A {
+class p extends l.A {
     _initialize() {
         i.h.subscribe("RTC_CONNECTION_VIDEO", this.handleIncomingVideo), i.h.subscribe("AUDIO_SET_LOCAL_VIDEO_DISABLED", this.handleManualLocalVideoToggle), i.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.handleWindowVisibilityChange), i.h.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect), s.A.addChangeListener(this.handlePopoutChange)
     }
@@ -36,9 +36,9 @@ class g extends l.A {
         let l = null != a.Ay.getVisibleGame(),
             _ = d.A.isVisible(),
             m = s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT),
-            g = o.Ay.isLocalVideoDisabled(t, n),
-            p = h.has(t);
-        !l || _ || m || g || p || (A.add(t), r.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
+            p = o.Ay.isLocalVideoDisabled(t, n),
+            g = h.has(t);
+        !l || _ || m || p || g || (A.add(t), r.A.setDisableLocalVideo(t, c.bb8.DISABLED, n, !1))
     }
     handleManualLocalVideoToggle(e) {
         let {
@@ -63,4 +63,4 @@ class g extends l.A {
         s.A.getWindowVisible(c.MLl.CHANNEL_CALL_POPOUT) && m()
     }
 }
-let p = new g
+let g = new p

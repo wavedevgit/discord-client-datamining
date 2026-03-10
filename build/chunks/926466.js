@@ -1,6 +1,6 @@
 /** chunk id: 926466 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968),
     r = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     h = n(985018),
     _ = n(861968);
 let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
-    g = function(e) {
+    p = function(e) {
         let {
             guild: t,
             title: n,
             message: l,
             image: s,
-            type: g,
-            imageStyles: p,
+            type: p,
+            imageStyles: g,
             imageMarginX: E,
             imageMarginTop: I,
             trackingSource: f,
@@ -36,20 +36,20 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         } = e;
         r.useEffect(() => {
             m(A.HAw.CHANNEL_NOTICE_VIEWED, {
-                notice_type: g,
+                notice_type: p,
                 guild_id: t.id
             })
-        }, [t.id, g]);
+        }, [t.id, p]);
         let b = null;
         "function" == typeof S ? b = S() : null != S && (b = (0, i.jsx)(o.$n, {
             "data-migration-pending": !0,
             className: _.x6,
             size: o.$n.Sizes.SMALL,
             onClick: () => {
-                null != g && u.default.track(A.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
+                null != p && u.default.track(A.HAw.CHANNEL_NOTICE_CTA_CLICKED, {
                     source: f,
                     guild_id: t.id,
-                    notice_type: g
+                    notice_type: p
                 }), N?.()
             },
             fullWidth: !0,
@@ -82,7 +82,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             children: [!0 === C ? null : (0, i.jsx)(d.DUT, {
                 onClick: () => {
                     c.Ay.trackWithMetadata(A.HAw.CHANNEL_NOTICE_CLOSED, {
-                        notice_type: g
+                        notice_type: p
                     }), T?.()
                 },
                 className: _.VN,
@@ -101,7 +101,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
                 },
                 children: "string" == typeof s ? (0, i.jsx)("img", {
                     className: _.Sl,
-                    style: p,
+                    style: g,
                     src: s,
                     alt: ""
                 }) : s

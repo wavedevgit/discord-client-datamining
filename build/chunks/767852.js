@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(73153),
     _ = n(442433),
     m = n(194894),
-    g = n(979604),
-    p = n(235986),
+    p = n(979604),
+    g = n(235986),
     E = n(596719),
     I = n(769015),
     f = n(290987),
@@ -58,8 +58,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         sort: !0,
         cellClassName: O.UQ,
         bodyCellClassName: O.SJ,
-        render: e => (0, i.jsxs)(p.A, {
-            align: p.A.Align.CENTER,
+        render: e => (0, i.jsxs)(g.A, {
+            align: g.A.Align.CENTER,
             children: [(0, i.jsx)(I.A, {
                 game: e.application,
                 size: I.M.SMALL,
@@ -87,8 +87,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
         bodyCellClassName: O.iV,
         render(e) {
             let t = e.libraryApplication.getDistributor();
-            return (0, i.jsx)(p.A, {
-                align: p.A.Align.CENTER,
+            return (0, i.jsx)(g.A, {
+                align: g.A.Align.CENTER,
                 children: null != t ? y.gG4[t] : b.intl.string(b.t["F+l3Jt"])
             })
         }
@@ -103,8 +103,8 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
             return t = e.isRunning ? b.intl.string(b.t.Md326p) : e.isNew ? b.intl.string(b.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(f.Ay, {
                 end: e.lastPlayed,
                 location: f.Ay.Locations.GAME_LIBRARY_LAST_PLAYED
-            }) : b.intl.string(b.t.EoWLru), (0, i.jsx)(p.A, {
-                align: p.A.Align.CENTER,
+            }) : b.intl.string(b.t.EoWLru), (0, i.jsx)(g.A, {
+                align: g.A.Align.CENTER,
                 className: a()({
                     [O.g3]: e.isNew
                 }),
@@ -138,7 +138,7 @@ let L = (0, x.xI)(u.A.GAME_LIST_ROW_MIN_HEIGHT),
                         }),
                         libraryApplication: e.libraryApplication
                     })]
-                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(g.A, {
+                }), (0, S.XZ)(e.libraryApplication) ? (0, i.jsx)(p.A, {
                     analyticsListSort: (l = t.sortKey, s = t.sortDirection, `${P[l]} ${s===y.tSW.ASCENDING?"ASC":"DESC"}`),
                     analyticsListIndex: n,
                     source: y.ThZ.APPLICATION_LIBRARY,
@@ -321,10 +321,10 @@ class w extends r.PureComponent {
             className: O.mv,
             children: [(0, i.jsx)("div", {
                 className: O.Zd
-            }), (0, i.jsx)(p.A, {
+            }), (0, i.jsx)(g.A, {
                 grow: 0,
                 shrink: 0,
-                direction: p.A.Direction.VERTICAL,
+                direction: g.A.Direction.VERTICAL,
                 children: (0, i.jsxs)("div", {
                     className: O.q6,
                     children: [(0, i.jsx)("div", {

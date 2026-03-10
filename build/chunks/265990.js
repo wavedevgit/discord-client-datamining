@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(688810),
     _ = n(429913),
     m = n(70730),
-    g = n(45787),
-    p = n(275759),
+    p = n(45787),
+    g = n(275759),
     E = n(21119),
     I = n(994500),
     f = n(595623),
@@ -162,7 +162,7 @@ let G = function(e) {
                         let e = [];
                         return J.forEach(t => {
                             t.giftIntentType === R.np.FRIEND_ANNIVERSARY && e.push(t)
-                        }), e.sort((e, t) => E.A.compareByDmProbability(e.userId, t.userId)), [K ? e : e.slice(0, p.ZD), J]
+                        }), e.sort((e, t) => E.A.compareByDmProbability(e.userId, t.userId)), [K ? e : e.slice(0, g.ZD), J]
                     }
                 default:
                     return [J]
@@ -230,7 +230,7 @@ let G = function(e) {
                 })
             }, r)
         }, [ei, d, t, el, ea]),
-        ed = r.useCallback(e => d === L.m3P.ALL && 0 === e && q && en > p.ZD ? (0, i.jsx)("div", {
+        ed = r.useCallback(e => d === L.m3P.ALL && 0 === e && q && en > g.ZD ? (0, i.jsx)("div", {
             className: j.Nf,
             children: (0, i.jsx)(o.Button, {
                 icon: K ? o.tN5 : o.abt,
@@ -242,7 +242,7 @@ let G = function(e) {
             })
         }) : null, [d, en, K, es, q]);
     if (r.useEffect(() => {
-            d === L.m3P.ALL && (0, g.Ad)()
+            d === L.m3P.ALL && (0, p.Ad)()
         }, [d]), r.useEffect(() => {
             z(!1)
         }, [d, en]), 0 === J.length && "" === Y[d]) return (0, i.jsx)(U, {

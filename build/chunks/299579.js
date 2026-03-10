@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(449054),
     _ = n(351022),
     m = n(282026),
-    g = n(965660),
-    p = n(19925),
+    p = n(965660),
+    g = n(19925),
     E = n(44440),
     I = n(22862),
     f = n(416082),
@@ -57,9 +57,9 @@ function O(e) {
         searchResultsQuery: N,
         loadMore: O,
         searchCategoryId: L
-    } = (0, p.I)({
+    } = (0, g.I)({
         loadId: t
-    }), R = 0 === o.length && !h, P = r.useContext(u.AnalyticsContext), [j, D] = r.useState((0, g.YP)()), [M, w] = r.useState(!0), U = r.useRef(M), [G, k] = r.useState(3), V = r.useRef(G), B = r.useRef(null), H = r.useCallback(e => {
+    }), R = 0 === o.length && !h, P = r.useContext(u.AnalyticsContext), [j, D] = r.useState((0, p.YP)()), [M, w] = r.useState(!0), U = r.useRef(M), [G, k] = r.useState(3), V = r.useRef(G), B = r.useRef(null), H = r.useCallback(e => {
         null == e || R || h || 336 * (o.length / G) <= e.height && O()
     }, [R, h, o.length, G, O]), F = r.useCallback(e => {
         let t = e.contentRect;
@@ -71,7 +71,7 @@ function O(e) {
         i !== V.current && (V.current = i, k(i)), H(t)
     }, [M, H]), Y = (0, c.w)(F, [M, H]);
     r.useEffect(() => {
-        D((0, g.YP)())
+        D((0, p.YP)())
     }, [N]), r.useEffect(() => {
         b({
             loadId: t,

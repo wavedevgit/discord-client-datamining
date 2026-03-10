@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(73153),
     _ = n(436946),
     m = n(339048),
-    g = n(800342),
-    p = n(820284),
+    p = n(800342),
+    g = n(820284),
     E = n(774334),
     I = n(707606),
     f = n(490415),
@@ -246,7 +246,7 @@ class ed extends r.PureComponent {
                     className: eo.eZ,
                     currentStoreListingId: null != l ? l.id : null,
                     onStoreListingSelect: e => {
-                        null != t && (0, g.ct)(t.id, {
+                        null != t && (0, p.ct)(t.id, {
                             slug: r,
                             analyticsSource: {
                                 page: s.page,
@@ -364,7 +364,7 @@ class ed extends r.PureComponent {
             pageSize: n,
             isFocused: r
         } = this.props;
-        return (0, i.jsx)(p.A, {
+        return (0, i.jsx)(g.A, {
             section: el.JJy.HERO,
             children: (0, i.jsx)(Q.A, {
                 pageSize: n,
@@ -547,10 +547,10 @@ class ed extends r.PureComponent {
             className: eo.I,
             children: [(0, i.jsx)(v.HI, {
                 location: e.name
-            }), this.renderJsonLD(), (0, i.jsx)(p.A, {
+            }), this.renderJsonLD(), (0, i.jsx)(g.A, {
                 section: el.JJy.NAVIGATION,
                 children: this.renderHeader(e, t)
-            }), (0, i.jsx)(p.A, {
+            }), (0, i.jsx)(g.A, {
                 section: el.JJy.BODY,
                 children: this.renderListing()
             })]

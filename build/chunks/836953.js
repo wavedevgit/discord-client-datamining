@@ -20,24 +20,24 @@ function _(e) {
         } = e,
         _ = (0, c.$s)(n),
         m = () => (0, d.Hc)(n.id),
-        g = r.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
-        p = (0, l.yK)([a.A], () => {
+        p = r.useMemo(() => new Set(_.map(e => e.applicationId)), [_]),
+        g = (0, l.yK)([a.A], () => {
             let e = [];
-            for (let t of g) {
+            for (let t of p) {
                 let n = a.A.getApplication(t);
                 null != n && e.push(n)
             }
             return e
-        }, [g]);
-    return 0 === p.length ? null : (t = 1 === p.length ? A.intl.formatToPlainString(A.t["Egq+G/"], {
-        a: p[0].name
-    }) : 2 === p.length ? A.intl.formatToPlainString(A.t.LxU9R3, {
-        a: p[0].name,
-        b: p[1].name
-    }) : 3 === p.length ? A.intl.formatToPlainString(A.t.crKXMC, {
-        a: p[0].name,
-        b: p[1].name,
-        c: p[2].name
+        }, [p]);
+    return 0 === g.length ? null : (t = 1 === g.length ? A.intl.formatToPlainString(A.t["Egq+G/"], {
+        a: g[0].name
+    }) : 2 === g.length ? A.intl.formatToPlainString(A.t.LxU9R3, {
+        a: g[0].name,
+        b: g[1].name
+    }) : 3 === g.length ? A.intl.formatToPlainString(A.t.crKXMC, {
+        a: g[0].name,
+        b: g[1].name,
+        c: g[2].name
     }) : A.intl.string(A.t.MvfowF), (0, i.jsx)(s.A, {
         guild: n,
         onDismissed: m,

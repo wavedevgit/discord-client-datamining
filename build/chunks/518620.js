@@ -20,8 +20,8 @@ let h = function(e) {
         renderSection: h,
         footer: _,
         sectionFilter: m,
-        renderSectionFooter: g
-    } = e, p = e => {
+        renderSectionFooter: p
+    } = e, g = e => {
         let {
             section: i,
             row: r
@@ -37,7 +37,7 @@ let h = function(e) {
             section: t
         } = e;
         return h(t)
-    }, [h]), f = r.useCallback(e => null == g ? null : g(e.section), [g]), C = r.useCallback(e => null == g ? 0 : 48 * (null != g(e)), [g]), T = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), N = r.useRef(null), S = r.useCallback(() => new Promise(e => {
+    }, [h]), f = r.useCallback(e => null == p ? null : p(e.section), [p]), C = r.useCallback(e => null == p ? 0 : 48 * (null != p(e)), [p]), T = (0, s.bG)([d.A], () => d.A.keyboardModeEnabled), N = r.useRef(null), S = r.useCallback(() => new Promise(e => {
         let t = N.current;
         if (null == t) return e();
         t.scrollToTop({
@@ -77,7 +77,7 @@ let h = function(e) {
                         ref: e => {
                             N.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        renderRow: p,
+                        renderRow: g,
                         rowHeight: E,
                         renderSection: I,
                         sectionHeight: 50,
