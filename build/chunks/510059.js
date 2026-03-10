@@ -15,8 +15,8 @@ var n = i(503698),
     A = i(370480),
     m = i(169869),
     x = i(532197),
-    p = i(773669),
-    g = i(307600),
+    g = i(773669),
+    p = i(307600),
     h = i(652215),
     I = i(783419),
     f = i(985018),
@@ -29,7 +29,7 @@ function v(e) {
             userId: s
         } = e,
         a = i.metadata ?? {},
-        p = (0, A.An)(a[I.pK.CREATED_AT], n),
+        g = (0, A.An)(a[I.pK.CREATED_AT], n),
         v = d.A.get((0, u.ML)(i.type));
     return (0, l.jsxs)("li", {
         className: j.FI,
@@ -65,7 +65,7 @@ function v(e) {
                         (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
                             platform_type: i.type,
                             other_user_id: s
-                        }), (0, g.h)({
+                        }), (0, p.h)({
                             href: t,
                             trusted: v?.type !== h.fg2.DOMAIN
                         }, e)
@@ -85,10 +85,10 @@ function v(e) {
                             direction: x.A.Directions.RIGHT
                         })]
                     })
-                }), null != p && (0, l.jsx)(o.Text, {
+                }), null != g && (0, l.jsx)(o.Text, {
                     variant: "text-xs/normal",
                     children: f.intl.format(f.t["9rfonh"], {
-                        date: p
+                        date: g
                     })
                 })]
             }), (0, l.jsx)("div", {
@@ -104,7 +104,7 @@ function N(e) {
         connections: t,
         userId: i,
         className: n
-    } = e, r = (0, a.bG)([p.default], () => p.default.locale);
+    } = e, r = (0, a.bG)([g.default], () => g.default.locale);
     return 0 === t.length ? null : (0, l.jsx)("ul", {
         className: s()(j.kL, n),
         children: t.map(e => (0, l.jsx)(v, {

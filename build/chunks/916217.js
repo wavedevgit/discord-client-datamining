@@ -21,8 +21,8 @@ var i = n(627968),
     g = n(900179),
     I = n(946356),
     j = n(810396),
-    v = n(35241),
-    b = n(587168),
+    b = n(35241),
+    v = n(587168),
     N = n(518477),
     C = n(652215),
     y = n(996988),
@@ -83,8 +83,8 @@ function R(e) {
                         displayProfile: F,
                         themeType: y.d.MODAL,
                         ref: F?.profileEffect != null ? H : void 0,
-                        children: [(0, i.jsx)(b.A, {
-                            children: (0, i.jsx)(v.A, {
+                        children: [(0, i.jsx)(v.A, {
+                            children: (0, i.jsx)(b.A, {
                                 user: t
                             })
                         }), (0, i.jsxs)("div", {

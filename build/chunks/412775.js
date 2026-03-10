@@ -22,8 +22,8 @@ var s = n(311907),
     g = n(280645),
     I = n(928223),
     j = n(518477),
-    v = n(985018),
-    b = n(195723);
+    b = n(985018),
+    v = n(195723);
 
 function N(e) {
     let {
@@ -37,7 +37,7 @@ function N(e) {
     }), T = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([d.default], () => d.default.locale), O = (0, m.A)(t.id), R = (0, A.A)(t.id);
     return (0, i.jsxs)(r.IpV, {
         fade: !0,
-        className: b.XG,
+        className: v.XG,
         children: [n?.bio != null && n?.bio !== "" && !T && (0, i.jsx)(x.A, {
             userBio: n.bio,
             setLineClamp: !1
@@ -45,7 +45,7 @@ function N(e) {
             userId: t.id,
             guildId: n.guildId
         }), t.isProvisional && (0, i.jsx)(h.A, {
-            heading: v.intl.string(v.t.Iyka0U),
+            heading: b.intl.string(b.t.Iyka0U),
             headingIcon: (0, i.jsx)(r.EpV, {
                 size: "xxs",
                 color: r.LU0.colors.TEXT_STRONG
@@ -55,30 +55,30 @@ function N(e) {
                 userId: t.id
             })
         }), E.length > 0 && (0, i.jsx)(h.A, {
-            heading: v.intl.string(v.t["Uv/eTx"]),
+            heading: b.intl.string(b.t["Uv/eTx"]),
             children: (0, i.jsx)(_.A, {
                 applicationIds: E
             })
         }), (0, i.jsx)(h.A, {
-            heading: v.intl.string(v.t.a6XYD9),
+            heading: b.intl.string(b.t.a6XYD9),
             children: (0, i.jsx)(p.A, {
                 userId: t.id,
                 guildId: n?.guildId,
                 tooltipDelay: j.In
             })
         }), O.length > 0 && (0, i.jsx)(h.A, {
-            heading: v.intl.string(v.t["3fe7U5"]),
+            heading: b.intl.string(b.t["3fe7U5"]),
             scrollTargetId: j.bk.CONNECTIONS,
             children: (0, i.jsx)(f.Ay, {
                 connectedAccounts: O,
-                className: b.oQ,
+                className: v.oQ,
                 userId: t.id,
                 locale: L
             })
         }), R.length > 0 && (0, i.jsx)(h.A, {
-            heading: v.intl.string(v.t.PHjkRE),
+            heading: b.intl.string(b.t.PHjkRE),
             children: R.map(e => (0, i.jsx)(f.Wc, {
-                className: b.MI,
+                className: v.MI,
                 applicationRoleConnection: e,
                 locale: L,
                 onApplicationClicked: () => {

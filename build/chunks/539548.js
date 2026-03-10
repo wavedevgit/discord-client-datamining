@@ -1,6 +1,6 @@
 /** chunk id: 539548 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => v
 });
 var i = n(627968);
 n(64700);
@@ -22,13 +22,13 @@ var s = n(311907),
     g = n(652215),
     I = n(985018),
     j = n(78702),
-    v = n(781425);
+    b = n(781425);
 
-function b(e) {
+function v(e) {
     let {
         user: t,
         currentUser: n,
-        guildId: b,
+        guildId: v,
         onClose: N
     } = e, {
         live: C,
@@ -39,7 +39,7 @@ function b(e) {
         voiceActivity: L
     } = (0, A.A)({
         userId: t.id,
-        guildId: b
+        guildId: v
     }), O = (0, s.bG)([l.A], () => l.A.isFetchingUserOutbox(t.id)), R = t.id === n.id, S = (0, s.bG)([d.A, a.A], () => {
         let e = R ? d.A.getStatus() : a.A.getStatus(t.id);
         return e === r.clD.OFFLINE || e === r.clD.INVISIBLE
@@ -95,7 +95,7 @@ function b(e) {
             })
         }) : null]
     }) : (0, i.jsx)("div", {
-        className: v.Ie,
+        className: b.Ie,
         children: (0, i.jsx)(r.y$y, {})
     })
 }

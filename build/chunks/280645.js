@@ -1,6 +1,6 @@
 /** chunk id: 280645 params = (module,exports,require) **/
 i.d(t, {
-    A: () => g
+    A: () => p
 });
 var l = i(627968);
 i(64700);
@@ -15,22 +15,22 @@ var n = i(311907),
     A = i(900179),
     m = i(518477),
     x = i(652215),
-    p = i(985018);
+    g = i(985018);
 
-function g(e) {
+function p(e) {
     let {
         userId: t,
         guildId: i,
-        ...g
+        ...p
     } = e, {
         trackUserProfileAction: h
     } = (0, d.NJ)(), I = (0, n.bG)([r.A], () => r.A.getGuild(i)), f = (0, n.bG)([s.Ay], () => s.Ay.getMember(i, t)), j = f?.roles, v = (0, n.yK)([a.A], () => a.A.getManyRoles(i, j ?? []).sort(c.m), [j, i]), [N] = (0, n.yK)([o.A], () => [o.A.can(x.xBc.MANAGE_ROLES, I), o.A.getGuildVersion(i)]);
     if (null == I) return null;
     let E = N && null != f;
     return 0 !== v.length || E ? (0, l.jsx)(A.A, {
-        heading: p.intl.string(p.t["LPJmL/"]),
+        heading: g.intl.string(g.t["LPJmL/"]),
         scrollTargetId: m.bk.ROLES,
-        ...g,
+        ...p,
         children: (0, l.jsx)(u.YR, {
             userId: t,
             guild: I,

@@ -20,9 +20,9 @@ function u(e) {
         onClose: m
     } = e, {
         analyticsLocations: x,
-        sourceAnalyticsLocations: p
+        sourceAnalyticsLocations: g
     } = (0, s.Ay)(), {
-        context: g,
+        context: p,
         trackUserProfileAction: h
     } = (0, r.NJ)(), I = (0, d.Ay)(t.id, i);
     return I?.guildId == null ? null : A?.guildId != null ? (0, l.jsx)(n.Drp, {
@@ -35,13 +35,13 @@ function u(e) {
             m?.(), (0, o.openUserProfileModal)({
                 userId: t.id,
                 guildId: i,
-                ...g,
+                ...p,
                 showGuildProfile: !1,
-                sourceAnalyticsLocations: p
+                sourceAnalyticsLocations: g
             }), h({
                 action: "PRESS_VIEW_MAIN_PROFILE",
                 analyticsLocations: x,
-                ...g
+                ...p
             })
         }
     }) : (0, l.jsx)(n.Drp, {
@@ -54,13 +54,13 @@ function u(e) {
             m?.(), (0, o.openUserProfileModal)({
                 userId: t.id,
                 guildId: i,
-                ...g,
+                ...p,
                 showGuildProfile: !0,
-                sourceAnalyticsLocations: p
+                sourceAnalyticsLocations: g
             }), h({
                 action: "PRESS_VIEW_SERVER_PROFILE",
                 analyticsLocations: x,
-                ...g
+                ...p
             })
         }
     })

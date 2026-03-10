@@ -15,8 +15,8 @@ var n = i(503698),
     A = i(773669),
     m = i(427157),
     x = i(967198),
-    p = i(183555),
-    g = i(488995),
+    g = i(183555),
+    p = i(488995),
     h = i(985018),
     I = i(882119);
 
@@ -43,7 +43,7 @@ function f(e) {
                 className: I.OB,
                 onClick: () => {
                     n?.(), (0, c.transitionToGlobalDiscovery)({
-                        tab: g.GlobalDiscoveryTab.APPS,
+                        tab: p.GlobalDiscoveryTab.APPS,
                         applicationId: t.application.id,
                         newSessionState: {
                             entrypoint: {
@@ -84,7 +84,7 @@ function j(e) {
         onClose: n
     } = e, {
         trackUserProfileAction: r
-    } = (0, p.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([x.A], () => x.A.getGuildId());
+    } = (0, g.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([x.A], () => x.A.getGuildId());
     return 0 === t.length ? null : (0, l.jsx)("ul", {
         className: s()(I.kL, i),
         children: t.map((e, t) => (0, l.jsx)("li", {

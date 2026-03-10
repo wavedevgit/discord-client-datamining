@@ -14,8 +14,8 @@ var l = i(627968),
     A = i(518477),
     m = i(985018),
     x = i(845913),
-    p = i(910200);
-let g = {
+    g = i(910200);
+let p = {
         [A.jM.WIDGET_ADDED]: {
             message: m.intl.string(m.t.fFP1Uy),
             icon: (0, l.jsx)(d.A9s, {
@@ -58,7 +58,7 @@ let g = {
             type: n
         } = e;
         return (0, l.jsxs)("div", {
-            className: a()(p.oR, x.oR),
+            className: a()(g.oR, x.oR),
             "data-type": n,
             children: [(0, l.jsx)("div", {
                 className: x.RC,
@@ -74,9 +74,9 @@ let g = {
         let {
             className: t,
             onAutoHide: i
-        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, p] = n.useState(!1), [I, f] = n.useState(null);
+        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, g] = n.useState(!1), [I, f] = n.useState(null);
         n.useEffect(() => {
-            null !== s ? (p(!0), f(g[s]), d.ORC.announce(g[s].message)) : p(!1)
+            null !== s ? (g(!0), f(p[s]), d.ORC.announce(p[s].message)) : g(!1)
         }, [s]);
         let j = (0, d.pnh)(m, {
             from: {

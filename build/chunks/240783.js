@@ -67,20 +67,20 @@ function I(e) {
         onClose: m
     } = e, {
         trackUserProfileAction: x
-    } = (0, d.NJ)(), I = (0, r.bG)([a.A], () => a.A.hidePersonalInformation), [j, v] = s.useState(() => u.find(e => {
+    } = (0, d.NJ)(), I = (0, r.bG)([a.A], () => a.A.hidePersonalInformation), [j, b] = s.useState(() => u.find(e => {
         let {
             section: t
         } = e;
         return t === A
     })?.section ?? u[0]?.section);
     s.useEffect(() => {
-        null == u.find(e => e.section === j) && v(u[0].section)
+        null == u.find(e => e.section === j) && b(u[0].section)
     }, [u, j]);
-    let b = s.useCallback(e => {
+    let v = s.useCallback(e => {
         x({
             action: "PRESS_SECTION",
             section: e
-        }), v(e)
+        }), b(e)
     }, [x]);
     return I ? (0, i.jsx)("div", {
         className: h.kL,
@@ -99,7 +99,7 @@ function I(e) {
             className: h.$H,
             type: "top",
             selectedItem: j,
-            onItemSelect: b,
+            onItemSelect: v,
             children: u.map(e => {
                 let {
                     section: t,

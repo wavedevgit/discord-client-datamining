@@ -1,6 +1,6 @@
 /** chunk id: 417021 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var i = n(627968),
     s = n(311907),
@@ -22,12 +22,12 @@ var i = n(627968),
     I = n(985018),
     j = n(599929);
 
-function v(e) {
+function b(e) {
     let {
         user: t,
         guildId: n,
-        channelId: v,
-        messageId: b,
+        channelId: b,
+        messageId: v,
         roleId: N,
         transitionState: C,
         openedAt: y,
@@ -40,8 +40,8 @@ function v(e) {
         userId: t.id,
         showGuildProfile: !0,
         guildId: L,
-        channelId: v,
-        messageId: b,
+        channelId: b,
+        messageId: v,
         roleId: N
     }), P = [{
         icon: r.yr3,
@@ -49,7 +49,7 @@ function v(e) {
     }, {
         icon: r.yr3,
         description: I.intl.string(O ? I.t.QxrDY1 : I.t.W6fjkS)
-    }], M = (0, m.Ay)(t.id, L), G = c.Ay.getName(M?.guildId, v, t), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
+    }], M = (0, m.Ay)(t.id, L), G = c.Ay.getName(M?.guildId, b, t), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: G
     });
     return (0, i.jsx)(a.f5, {

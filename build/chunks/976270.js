@@ -22,8 +22,8 @@ var s = n(397927),
     g = n(810396),
     I = n(570314),
     j = n(490752),
-    v = n(571077),
-    b = n(587168),
+    b = n(571077),
+    v = n(587168),
     N = n(982985),
     C = n(159218),
     y = n(240783),
@@ -97,7 +97,7 @@ function P(e) {
                             user: t,
                             displayProfile: X,
                             themeType: O.d.MODAL,
-                            children: [(0, i.jsx)(b.A, {
+                            children: [(0, i.jsx)(v.A, {
                                 children: (0, i.jsx)(j.A, {
                                     user: t,
                                     guildId: H,
@@ -138,7 +138,7 @@ function P(e) {
                                                 userId: t.id,
                                                 onClose: r.A.popAll
                                             })
-                                        }), (0, i.jsx)(v.A, {
+                                        }), (0, i.jsx)(b.A, {
                                             user: t,
                                             guildId: H
                                         }), (0, i.jsx)(I.A, {
