@@ -1,27 +1,27 @@
 /** chunk id: 544169 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    default: () => a
+    default: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(158954),
     l = n(47167),
-    r = n(985018);
+    a = n(985018);
 
-function a(e) {
+function r(e) {
     let {
         channel: t,
         category: n,
-        ...a
+        ...r
     } = e, o = (0, l.Ay)(t, !0), c = (0, l.Ay)(n);
     return (0, i.jsx)(s.ConfirmModal, {
-        title: r.intl.string(r.t.YWMtRe),
-        subtitle: r.intl.format(r.t["iKW+jY"], {
+        title: a.intl.string(a.t.YWMtRe),
+        subtitle: a.intl.format(a.t["iKW+jY"], {
             channelName: o,
             categoryName: c
         }),
-        confirmText: r.intl.string(r.t.eW8Gy4),
-        ...a
+        confirmText: a.intl.string(a.t.eW8Gy4),
+        ...r
     })
 }

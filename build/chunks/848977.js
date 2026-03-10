@@ -8,8 +8,8 @@ var r = t(311907),
     l = t(397927),
     a = t(334738),
     c = t(435470),
-    o = t(970278),
-    d = t(152007),
+    d = t(970278),
+    o = t(152007),
     s = t(95701),
     u = t(769765),
     A = t(222823),
@@ -17,7 +17,7 @@ var r = t(311907),
     _ = t(985018);
 
 function f(n) {
-    let e, t, f = (e = (0, c.ed)(n.guild_id, n.id), t = (0, r.bG)([A.Ay, u.A, o.A, d.A], () => {
+    let e, t, f = (e = (0, c.ed)(n.guild_id, n.id), t = (0, r.bG)([A.Ay, u.A, d.A, o.A], () => {
         if (n.isForumPost()) return A.Ay.isForumPostUnread(n.id);
         if (n.type !== h.rbe.GUILD_CATEGORY) return A.Ay.hasUnreadOrMentions(n.id);
         {
@@ -30,11 +30,11 @@ function f(n) {
                     return (0, s.Z_)(e.type) && A.Ay.hasUnreadOrMentions(e.id)
                 })) return !0;
             let t = new Set(e[n.id].map(n => n.channel.id)),
-                i = o.A.getThreadsForGuild(n.guild_id);
+                i = d.A.getThreadsForGuild(n.guild_id);
             for (let n in i)
                 if (t.has(n)) {
                     for (let e in i[n])
-                        if (d.A.hasJoined(e) && !d.A.isMuted(e) && A.Ay.hasUnreadOrMentions(e)) return !0
+                        if (o.A.hasJoined(e) && !o.A.isMuted(e) && A.Ay.hasUnreadOrMentions(e)) return !0
                 } return !1
         }
     }, [n]), n.isForumLikeChannel() ? e > 0 : t);

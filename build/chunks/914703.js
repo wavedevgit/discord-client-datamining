@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(660273),
-    r = n(57907),
-    a = n(867455),
+    a = n(57907),
+    r = n(867455),
     o = n(607508),
     c = n(37411);
 
@@ -19,7 +19,7 @@ function d(e) {
         onSelect: d,
         navId: u,
         label: h
-    } = e, A = (0, l.A)(t, "Notifications Bell"), m = (0, r.A)(t), p = (0, o.X)(t);
+    } = e, A = (0, l.A)(t, "Notifications Bell"), m = (0, a.A)(t), p = (0, o.X)(t);
     return (0, i.jsxs)(s.W1t, {
         "data-menu-migrated-auto": !0,
         navId: u,
@@ -38,7 +38,7 @@ function d(e) {
                     group: "thread-notifications",
                     id: `${n}`,
                     label: l,
-                    action: () => a.A.setNotificationSettings(t, {
+                    action: () => r.A.setNotificationSettings(t, {
                         flags: n
                     }),
                     checked: n === p

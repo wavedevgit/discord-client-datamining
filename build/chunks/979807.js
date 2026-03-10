@@ -9,15 +9,15 @@ var l = i(311907),
     a = i(394953),
     d = i(976860),
     c = i(967198),
-    o = i(652215),
-    s = i(985018);
+    s = i(652215),
+    o = i(985018);
 
 function u(n) {
     let t = (0, l.bG)([c.A], () => c.A.getGuildId()),
         i = (0, a.lI)();
-    return __OVERLAY__ || t !== o.YYv && !i ? null : (0, e.jsx)(r.Drp, {
+    return __OVERLAY__ || t !== s.YYv && !i ? null : (0, e.jsx)(r.Drp, {
         id: "go-to-original-guild",
-        label: s.intl.string(s.t.WYj55Y),
+        label: o.intl.string(o.t.WYj55Y),
         action: function() {
             (0, d.uh)(n.guild_id, n.id)
         }

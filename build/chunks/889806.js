@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(172218),
+    a = n.n(l),
+    r = n(172218),
     o = n(311907),
     c = n(397927),
     d = n(308528),
@@ -99,9 +99,9 @@ class k extends L.Ay {
             embeddedApps: s,
             channelIsContentGated: l
         } = this.props, {
-            shouldShowActivities: r
+            shouldShowActivities: a
         } = this.state;
-        return t.isModeratorReportChannel() || l ? null : null != s && s.length > 0 && r && !n ? (0, i.jsx)(G.A, {
+        return t.isModeratorReportChannel() || l ? null : null != s && s.length > 0 && a && !n ? (0, i.jsx)(G.A, {
             onAction: this.handleActivitiesPopoutClose,
             channel: t
         }) : (0, i.jsx)(O.A, {
@@ -181,7 +181,7 @@ class k extends L.Ay {
             selected: n,
             muted: s,
             unread: l,
-            hasActiveThreads: a,
+            hasActiveThreads: r,
             hasMoreActiveThreads: o,
             mentionCount: d,
             connectChannelDropTarget: u,
@@ -201,7 +201,7 @@ class k extends L.Ay {
             isPremium: y,
             channelItemRef: j
         } = this.props, R = j ?? this.channelItemRef, O = !T && o, L = !T && S && null != I && I.length > 0, M = (0, _.M)(C), G = (0, i.jsxs)("li", {
-            className: r()(this.getClassName(), {
+            className: a()(this.getClassName(), {
                 [w.r9]: this.isDisabled(),
                 [w.wH]: n
             }),
@@ -224,7 +224,7 @@ class k extends L.Ay {
                     muted: s,
                     unread: l,
                     mentionCount: d,
-                    hasActiveThreads: a,
+                    hasActiveThreads: r,
                     subtitle: M?.subtitle,
                     subtitleColor: M?.color,
                     onMouseDown: this.handleMouseDown,
@@ -262,7 +262,7 @@ function B(e) {
         channel: t,
         guild: n,
         disableSorting: l,
-        isFavoriteCategory: r,
+        isFavoriteCategory: a,
         muted: c,
         selected: d
     } = e, {
@@ -291,7 +291,7 @@ function B(e) {
         muted: c,
         enableActivities: G,
         resolvedUnreadSetting: _
-    }), k = (0, m.Ay)(t), [B, H] = s.useState(!1), F = (0, a.K)(s.useCallback(e => {
+    }), k = (0, m.Ay)(t), [B, H] = s.useState(!1), F = (0, r.K)(s.useCallback(e => {
         H(e)
     }, [])), {
         showMenuItemPopover: K,
@@ -313,7 +313,7 @@ function B(e) {
         isSubscriptionGated: O,
         needSubscriptionToAccess: R,
         isNewChannel: S && e.canBeNewChannel,
-        isFavoriteSuggestion: r && !L,
+        isFavoriteSuggestion: a && !L,
         channelIsContentGated: D,
         channelInfo: w,
         embeddedApps: k,

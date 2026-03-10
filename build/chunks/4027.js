@@ -25,10 +25,10 @@ let O = (0, d.A)((0, a.A)(function(t) {
         channel: n,
         selected: a,
         onSelect: d
-    } = t, _ = n.isOwner(h.default.getId()), O = (0, b.A)(n), p = (0, f.Ay)(n), x = (0, m.A)(n, a), G = (0, o.A)({
+    } = t, _ = n.isOwner(h.default.getId()), O = (0, b.A)(n), p = (0, f.Ay)(n), x = (0, m.A)(n, a), y = (0, o.A)({
         id: n.id,
         label: v.intl.string(v.t.gFHI3k)
-    }), y = (0, s.A)(n), j = (0, c.m)(n), C = (0, c.y)(n), T = (0, g.A)(n), M = _ ? (0, i.jsx)(l.Drp, {
+    }), G = (0, s.A)(n), j = (0, c.m)(n), C = (0, c.y)(n), M = (0, g.A)(n), T = _ ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: v.intl.string(v.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -48,21 +48,21 @@ let O = (0, d.A)((0, a.A)(function(t) {
         onClose: r.Z_,
         onSelect: d,
         children: [(0, i.jsxs)(l.rXV, {
-            children: [O, j, T]
+            children: [O, j, M]
         }), (0, i.jsxs)(l.rXV, {
-            children: [M, (0, i.jsx)(l.Drp, {
+            children: [T, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: v.intl.string(v.t["5Q9+/L"]),
                 action: () => (0, A.U)(n.id, u.A.GROUP_DM_CONTEXT_MENU)
             })]
         }), (0, i.jsx)(l.rXV, {
-            children: y
+            children: G
         }), (0, i.jsx)(l.rXV, {
             children: p
         }), (0, i.jsxs)(l.rXV, {
             children: [C, x]
         }), (0, i.jsx)(l.rXV, {
-            children: G
+            children: y
         })]
     })
 }, {

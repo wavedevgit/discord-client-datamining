@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(607272),
-    a = n(985018),
+    a = n(607272),
+    r = n(985018),
     o = n(993169);
 
 function c(e) {
@@ -17,7 +17,7 @@ function c(e) {
     } = e, [c, d] = s.useState(!1), [u, h] = s.useState(!1), A = s.useCallback(async e => {
         e.stopPropagation(), h(!0);
         try {
-            await r.A.cancelFriendRequest({
+            await a.A.cancelFriendRequest({
                 userId: t,
                 applicationId: n,
                 location: "ActionButtonFriendRequest"
@@ -28,7 +28,7 @@ function c(e) {
     }, [n, t]), m = s.useCallback(async e => {
         e.stopPropagation(), d(!0);
         try {
-            await r.A.maybeConfirmFriendRequestAccept({
+            await a.A.maybeConfirmFriendRequestAccept({
                 userId: t,
                 applicationId: n,
                 location: "ActionButtonFriendRequest"
@@ -44,13 +44,13 @@ function c(e) {
             children: [(0, i.jsx)(l.$nd, {
                 variant: "active",
                 onClick: m,
-                text: a.intl.string(a.t.Zcibdf),
+                text: r.intl.string(r.t.Zcibdf),
                 loading: c,
                 disabled: u
             }), (0, i.jsx)(l.$nd, {
                 variant: "secondary",
                 onClick: A,
-                text: a.intl.string(a.t.xuio0C),
+                text: r.intl.string(r.t.xuio0C),
                 loading: u,
                 disabled: c
             })]

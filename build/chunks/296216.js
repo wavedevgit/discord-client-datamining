@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(205369),
     s = n(22174),
     l = n(686956),
-    r = n(71393),
-    a = n(576705),
+    a = n(71393),
+    r = n(576705),
     o = n(977997),
     c = n(607567),
     d = n(652215);
@@ -19,8 +19,8 @@ function h(e) {
         canDrop(e) {
             let {
                 channel: t
-            } = e, n = t.getGuildId(), i = r.A.getGuild(n)?.maxVideoChannelUsers ?? -1, s = c.Ay.countVoiceStatesForChannel(t.id), l = null != n && o.A.hasVideo(t.id) && i > 0 && s >= i + 1;
-            return a.A.can(d.xBc.MOVE_MEMBERS, t) && a.A.can(d.xBc.CONNECT, t) && !l
+            } = e, n = t.getGuildId(), i = a.A.getGuild(n)?.maxVideoChannelUsers ?? -1, s = c.Ay.countVoiceStatesForChannel(t.id), l = null != n && o.A.hasVideo(t.id) && i > 0 && s >= i + 1;
+            return r.A.can(d.xBc.MOVE_MEMBERS, t) && r.A.can(d.xBc.CONNECT, t) && !l
         },
         drop(e, t) {
             let {

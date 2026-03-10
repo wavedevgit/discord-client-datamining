@@ -1,6 +1,6 @@
 /** chunk id: 385913 params = (module,exports,require) **/
 e.d(t, {
-    default: () => w
+    default: () => k
 });
 var i = e(627968);
 e(64700);
@@ -31,8 +31,8 @@ var r = e(397927),
     R = e(773699),
     C = e(239211),
     G = e(707378),
-    U = e(486524),
-    O = e(631637),
+    O = e(486524),
+    U = e(631637),
     S = e(984894),
     M = e(399476),
     N = e(889460),
@@ -42,17 +42,17 @@ var r = e(397927),
     F = e(243949),
     Y = e(972432),
     L = e(77544),
-    W = e(652215),
-    k = e(985018);
-let w = (0, d.A)((0, a.A)(function(n) {
+    w = e(652215),
+    W = e(985018);
+let k = (0, d.A)((0, a.A)(function(n) {
     let {
         user: t,
         channel: e,
         channelSelected: a = !1,
         showMute: d = !0,
         showMediaItems: o = !1,
-        showChannelCallItems: W = !1,
-        showModalItems: w = !0,
+        showChannelCallItems: w = !1,
+        showModalItems: k = !0,
         targetIsUser: B = !1,
         context: J,
         onSelect: K,
@@ -70,7 +70,7 @@ let w = (0, d.A)((0, a.A)(function(n) {
         context: J
     }), Q = (0, y.A)({
         user: t
-    }), nn = (0, L.A)(t.id), nt = (0, U.A)(e.id, a), ne = (0, N.A)({
+    }), nn = (0, L.A)(t.id), nt = (0, O.A)(e.id, a), ne = (0, N.A)({
         user: t
     }), ni = (0, u.A)(null, t), nr = (0, Y.A)(t.id), nl = (0, P.g)(e.id, "DMUserContextMenu"), na = (0, P.A)(t, nl), nd = (0, E.A)({
         user: t
@@ -90,46 +90,46 @@ let w = (0, d.A)((0, a.A)(function(n) {
         location: "DMUserContextMenu"
     }), ng = (0, p.Ay)(e), n_ = (0, x.A)({
         id: t.id,
-        label: k.intl.string(k.t["/AXYnE"])
+        label: W.intl.string(W.t["/AXYnE"])
     }), nj = (0, x.A)({
         id: e.id,
-        label: k.intl.string(k.t.gFHI3k)
+        label: W.intl.string(W.t.gFHI3k)
     }), np = (0, j.A)(e), nx = (0, f.A)(t.id), nb = (0, A.A)(e.id), nm = (0, v.A)(t), nI = (0, h.A)(t.id), nv = (0, c.A)(e.id, t.id), nE = (0, R.A)({
         commandType: s.kc.USER,
         commandTargetId: t.id,
         channel: e,
         guildId: void 0,
         onHeightUpdate: q
-    }), ny = (0, b.m)(e), nT = (0, b.y)(e), nD = (0, m.A)(e), nR = (0, I.A)(e), nC = (0, O.A)({
+    }), ny = (0, b.m)(e), nT = (0, b.y)(e), nD = (0, m.A)(e), nR = (0, I.A)(e), nC = (0, U.A)({
         channel: e
-    }), nG = e.isManaged(), nU = t.isNonUserBot();
+    }), nG = e.isManaged(), nO = t.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: l.Z_,
-        "aria-label": k.intl.string(k.t.liqwPJ),
+        "aria-label": W.intl.string(W.t.liqwPJ),
         onSelect: K,
         onInteraction: H,
         children: [(0, i.jsx)(r.rXV, {
-            children: !(nU && !(0, _.A)(e.id)) && np
+            children: !(nO && !(0, _.A)(e.id)) && np
         }), (0, i.jsxs)(r.rXV, {
             children: [ny, nD, nR]
         }), (0, i.jsx)(r.rXV, {
-            children: !nU && nm
+            children: !nO && nm
         }), (0, i.jsxs)(r.rXV, {
-            children: [!nU && (0, i.jsxs)(i.Fragment, {
-                children: [w && Z, $, !nG && na, w && z, w && Q, nn]
+            children: [!nO && (0, i.jsxs)(i.Fragment, {
+                children: [k && Z, $, !nG && na, k && z, k && Q, nn]
             }), (0, _.A)(e.id) && Z, nt]
-        }), !nU && (0, i.jsxs)(i.Fragment, {
+        }), !nO && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(r.rXV, {
                 children: o && nr
             }), (0, i.jsx)(r.rXV, {
-                children: w && ni
+                children: k && ni
             }), (0, i.jsxs)(r.rXV, {
-                children: [nE, o && nI, o && no, w && nc, o && nA, w && ne, nd, ns, nu, w && nh, w && nf]
+                children: [nE, o && nI, o && no, k && nc, o && nA, k && ne, nd, ns, nu, k && nh, k && nf]
             }), (0, i.jsx)(r.rXV, {
                 children: d && ng
-            }), W && (0, i.jsxs)(r.rXV, {
+            }), w && (0, i.jsxs)(r.rXV, {
                 children: [nv, nb, nx]
             })]
         }), (0, _.A)(e.id) && (0, i.jsx)(r.rXV, {
@@ -143,5 +143,5 @@ let w = (0, d.A)((0, a.A)(function(n) {
         })]
     })
 }, {
-    object: W.ZSU.CONTEXT_MENU
+    object: w.ZSU.CONTEXT_MENU
 }), [o.A.CONTEXT_MENU, o.A.DM_USER_MENU])

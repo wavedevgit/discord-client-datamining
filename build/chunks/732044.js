@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(453738),
-    a = n(58736);
+    a = n(453738),
+    r = n(58736);
 let o = function(e) {
     let {
         channel: t
@@ -22,7 +22,7 @@ let o = function(e) {
         ignoreModalClicks: !0,
         onRequestClose: () => o(!1),
         renderPopout: function(e) {
-            return (0, i.jsx)(r.A, {
+            return (0, i.jsx)(a.A, {
                 ...e,
                 channel: t,
                 onClose: () => o(!1)
@@ -33,7 +33,7 @@ let o = function(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(a.In, {
+            return (0, i.jsx)(r.In, {
                 ...e,
                 ref: c,
                 onClick: () => o(e => !e),

@@ -14,7 +14,7 @@ function c(n) {
         i = (0, a.Af)(n.id),
         c = (0, a.Rm)();
     if (__OVERLAY__ || !t || null == i) return null;
-    let [o, s] = function(n) {
+    let [s, o] = function(n) {
         let t = [],
             i = null;
         for (let e of n) null == e.id ? i = e : t.push(e);
@@ -24,20 +24,20 @@ function c(n) {
     function u(n) {
         null != i && (0, r.JD)(i.id, n)
     }
-    if (null == o && 0 === s.length) return null;
-    let A = o?.id ?? null,
-        _ = o?.name ?? d.intl.string(d.t.GSfOoo);
+    if (null == s && 0 === o.length) return null;
+    let A = s?.id ?? null,
+        _ = s?.name ?? d.intl.string(d.t.GSfOoo);
     return (0, e.jsxs)(l.Drp, {
         id: "move-to-category",
         label: d.intl.string(d.t.FAplms),
-        children: [null != o && (0, e.jsx)(l.rXV, {
+        children: [null != s && (0, e.jsx)(l.rXV, {
             children: (0, e.jsx)(l.Drp, {
                 id: "favorite-uncategorized",
                 label: _,
                 action: () => u(A)
             })
-        }), s.length > 0 && (0, e.jsx)(l.rXV, {
-            children: s.map(n => {
+        }), o.length > 0 && (0, e.jsx)(l.rXV, {
+            children: o.map(n => {
                 let {
                     id: t,
                     name: i

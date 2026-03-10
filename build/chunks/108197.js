@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(837381),
+    a = n.n(l),
+    r = n(837381),
     o = n(311907),
     c = n(3026),
     d = n(397927),
@@ -36,16 +36,16 @@ function j(e) {
         withGuildIcon: n,
         inverted: s
     } = e, l = {
-        className: r()(y.GI, {
+        className: a()(y.GI, {
             [y.a7]: n
         }, {
             [y.BJ]: s
         }),
         style: t
     }, {
-        density: a
+        density: r
     } = (0, d.wRf)();
-    switch (a) {
+    switch (r) {
         case "cozy":
             return (0, i.jsxs)("svg", {
                 ...l,
@@ -129,7 +129,7 @@ let R = s.memo(function(e) {
     }, [t.id]), B = null == L ? 0 : L.length, {
         role: H,
         ...F
-    } = (0, a.rm)(t.id), K = s.useRef(null), W = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
+    } = (0, r.rm)(t.id), K = s.useRef(null), W = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: G
     }) : D ? S.intl.formatToPlainString(S.t.YlVvmc, {
@@ -139,7 +139,7 @@ let R = s.memo(function(e) {
     });
     return (0, i.jsxs)("li", {
         role: H,
-        className: r()(T.fx, {
+        className: a()(T.fx, {
             [T.wH]: l
         }),
         children: [(0, i.jsx)(j, {
@@ -159,7 +159,7 @@ let R = s.memo(function(e) {
                 right: 4
             },
             children: (0, i.jsxs)("div", {
-                className: r()(T.Ki, v.iE, v.ZS, {
+                className: a()(T.Ki, v.iE, v.ZS, {
                     [v.J1]: l,
                     [v.F4]: !l && P,
                     [v.V2]: !P && !l && D,
@@ -168,7 +168,7 @@ let R = s.memo(function(e) {
                 onMouseDown: k,
                 onContextMenu: V,
                 children: [!D || P || l ? null : (0, i.jsx)("div", {
-                    className: r()(v.gy, v.WS)
+                    className: a()(v.gy, v.WS)
                 }), (0, i.jsx)(d.DUT, {
                     ...F,
                     innerRef: K,
@@ -179,7 +179,7 @@ let R = s.memo(function(e) {
                         enabled: !1
                     },
                     children: (0, i.jsxs)("div", {
-                        className: r()(v.Y5, v.__invalid_threadMainContent),
+                        className: a()(v.Y5, v.__invalid_threadMainContent),
                         children: [(0, i.jsx)(c.A, {
                             className: v.UU,
                             "aria-hidden": !0,

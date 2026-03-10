@@ -1,0 +1,38 @@
+.channelRow_d295eb {
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 8px 12px
+}
+
+.channelRow_d295eb:hover {
+    background-color: var(--interactive-background-hover)
+}
+
+.channelRowDisabled_d295eb {
+    cursor: not-allowed;
+    opacity: .6
+}
+
+.channelName_d295eb {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px
+}
+
+.actionBarInput_d295eb {
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.emptyState_d295eb {
+    margin: 8px 24px;
+    text-align: center
+}
+
+/*# sourceMappingURL=2133a595b0b331f8.css.map*/

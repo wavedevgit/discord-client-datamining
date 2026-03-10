@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(73153),
+    a = n(397927),
+    r = n(73153),
     o = n(334738),
     c = n(222823),
     d = n(954571),
@@ -47,7 +47,7 @@ let N = e => {
     });
     s.useEffect(() => () => {
         let e = c.Ay.lastMessageId(t.id);
-        null != e && a.h.wait(() => {
+        null != e && r.h.wait(() => {
             (0, o.ack)(t.id, {
                 object: C.ZSU.ACK_GUILD_DIRECTORY_CHANNEL_VIEWED,
                 objectType: C.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -92,7 +92,7 @@ let N = e => {
     }, [t.id, N.id, b]);
     let w = (0, m.b)(t),
         k = s.useMemo(() => w ? () => {
-            (0, r.mMO)(async () => {
+            (0, a.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("6759").then(n.bind(n, 953722));
@@ -125,7 +125,7 @@ let N = e => {
         searchFetching: O
     }) : null == j && null == b ? (0, i.jsx)("div", {
         className: I.$$,
-        children: (0, i.jsx)(r.y$y, {
+        children: (0, i.jsx)(a.y$y, {
             className: I.u1
         })
     }) : j?.length === 0 && null == b ? (0, i.jsx)("div", {

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(863922),
-    a = n(513272),
+    a = n(863922),
+    r = n(513272),
     o = n(954571),
     c = n(58736),
     d = n(652215),
@@ -18,7 +18,7 @@ var s = n(311907),
 function A(e) {
     let {
         channel: t
-    } = e, n = (0, s.bG)([a.A], () => a.A.shouldShowTopicsBar());
+    } = e, n = (0, s.bG)([r.A], () => r.A.shouldShowTopicsBar());
     return (0, i.jsx)(c.Ay.Icon, {
         icon: l.Kck,
         onClick: () => {
@@ -28,7 +28,7 @@ function A(e) {
                 guild_id: t.guild_id,
                 channel_id: t.id,
                 channel_type: t.type
-            }), (0, r.Oz)()
+            }), (0, a.Oz)()
         },
         tooltip: n ? h.intl.string(h.t.nGs3kO) : h.intl.string(h.t.bIm2sF),
         selected: n,

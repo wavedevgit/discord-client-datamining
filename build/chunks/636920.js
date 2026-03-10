@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(3026),
-    a = n(435371),
+    a = n(3026),
+    r = n(435371),
     o = n(397927),
     c = n(956793),
     d = n(576705),
@@ -78,11 +78,11 @@ function N(e) {
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             className: j ?? I.qS,
-            children: (0, i.jsx)(r.A, {
+            children: (0, i.jsx)(a.A, {
                 delay: 0,
                 children: G
             })
-        }), R && !b ? (0, i.jsx)(a.m_, {
+        }), R && !b ? (0, i.jsx)(r.m_, {
             text: L ? void 0 : E.intl.string(E.t["0LMpW+"]),
             children: (0, i.jsx)("div", {
                 children: (0, i.jsx)(o.Button, {

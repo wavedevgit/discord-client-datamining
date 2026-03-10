@@ -9,8 +9,8 @@ var r = t(735438),
     l = t.n(r),
     a = t(311907),
     c = t(397927),
-    o = t(260509),
-    d = t(808728),
+    d = t(260509),
+    o = t(808728),
     s = t(71393),
     u = t(181079),
     A = t(422258),
@@ -24,66 +24,73 @@ function p(n, e) {
 }
 
 function g(n) {
-    let e = (0, a.bG)([d.Ay], () => d.Ay.getChannels(_.YYv))[_.rbe.GUILD_CATEGORY],
+    let e = (0, a.bG)([o.Ay], () => o.Ay.getChannels(_.YYv))[_.rbe.GUILD_CATEGORY],
         {
-            notifyFavoriteAdded: t
+            notifyFavoriteAdded: r
         } = (0, h.CJ)(),
         {
-            hasAccess: r,
-            isExperimentEnabled: g,
-            hasHigherPrivileges: E
+            hasAccess: g,
+            isExperimentEnabled: E,
+            hasHigherPrivileges: j
         } = (0, h.TW)("useAddToFavoritesItem"),
         v = n.isThread(),
-        j = (0, a.bG)([s.A], () => {
+        x = (0, a.bG)([s.A], () => {
             if (null == n.guild_id) return !0;
             let e = s.A.getGuild(n.guild_id);
-            return null != e && !(0, o.DG)(e)
+            return null != e && !(0, d.DG)(e)
         }),
-        x = !__OVERLAY__ && (!v || E) && j,
-        y = (0, a.bG)([u.A], () => u.A.isFavorite(n.id));
-    if (!g || !x) return null;
-    if (!r) return (0, i.jsx)(c.Drp, {
+        y = !__OVERLAY__ && (!v || j) && x,
+        C = (0, a.bG)([u.A], () => u.A.isFavorite(n.id));
+    if (!E || !y) return null;
+    if (!g) return (0, i.jsx)(c.Drp, {
         id: "favorite-channel",
         label: p(n, !1),
-        action: () => {},
+        action: () => (0, c.mMO)(async () => {
+            let {
+                default: n
+            } = await t.e("48609").then(t.bind(t, 168088));
+            return e => (0, i.jsx)(n, {
+                ...e
+            })
+        }),
         trailingIndicator: {
             type: "icon",
             icon: c.tvc
         }
     });
-    if (y) return null;
+    if (C) return null;
     let [
-        [C], G
+        [G], T
     ] = l().partition(e, n => "null" === n.channel.id);
 
-    function T(e) {
-        t(), (0, A.Jz)(n.id, e)
+    function N(e) {
+        r(), (0, A.Jz)(n.id, e)
     }
-    if (0 === G.length) return (0, i.jsx)(c.Drp, {
+    if (0 === T.length) return (0, i.jsx)(c.Drp, {
         id: "favorite-channel",
         label: p(n, !1),
-        action: () => T(null)
+        action: () => N(null)
     });
-    let N = b.intl.string(f.default.G9fGlP);
+    let M = b.intl.string(f.default.G9fGlP);
     return (0, i.jsxs)(c.Drp, {
         id: "favorite-channel",
         label: p(n, !1),
-        action: () => T(null),
+        action: () => N(null),
         children: [(0, i.jsx)(c.rXV, {
             children: (0, i.jsx)(c.Drp, {
-                id: `favorite-${C.channel.id}`,
-                label: N,
-                action: () => T("null" === C.channel.id ? null : C.channel.id),
+                id: `favorite-${G.channel.id}`,
+                label: M,
+                action: () => N("null" === G.channel.id ? null : G.channel.id),
                 trailingIndicator: {
                     type: "icon",
                     icon: c.Gg5
                 }
-            }, C.channel.id)
+            }, G.channel.id)
         }), (0, i.jsx)(c.rXV, {
-            children: G.map(n => (0, i.jsx)(c.Drp, {
+            children: T.map(n => (0, i.jsx)(c.Drp, {
                 id: `favorite-${n.channel.id}`,
                 label: n.channel.name,
-                action: () => T(n.channel.id)
+                action: () => N(n.channel.id)
             }, n.channel.id))
         })]
     })

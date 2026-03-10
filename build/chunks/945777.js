@@ -7,9 +7,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(284009),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(284009),
+    o = n.n(r),
     c = n(110259),
     d = n(311907),
     u = n(827734),
@@ -33,16 +33,16 @@ let T = s.memo(function(e) {
             channelId: n,
             user: s,
             isPremium: l,
-            isBlocked: r,
-            isIgnored: a
+            isBlocked: a,
+            isIgnored: r
         } = e;
         return (0, i.jsxs)("div", {
             className: S.FS,
-            children: [r ? (0, i.jsx)(h.KTN, {
+            children: [a ? (0, i.jsx)(h.KTN, {
                 size: "lg",
                 className: S.Q6,
                 color: u.A.unsafe_rawColors.RED_400.css
-            }) : null, a ? (0, i.jsx)(h.G3N, {
+            }) : null, r ? (0, i.jsx)(h.G3N, {
                 size: "lg",
                 className: S.Q6
             }) : null, (0, i.jsx)(h.Text, {
@@ -63,7 +63,7 @@ let T = s.memo(function(e) {
             channel: s,
             isPremium: l
         } = e, {
-            user: a,
+            user: r,
             blocked: o,
             ignored: c,
             rtsState: d
@@ -74,21 +74,21 @@ let T = s.memo(function(e) {
                 children: [A && (0, i.jsx)(h.E7M, {
                     size: "md",
                     color: "currentColor",
-                    className: r()(S.Kk, {
+                    className: a()(S.Kk, {
                         [S.MD]: u
                     })
                 }), (0, i.jsx)("img", {
-                    src: a.getAvatarURL(s.guild_id, 56, !1) ?? void 0,
-                    alt: a.username,
-                    "aria-label": a.username,
-                    className: r()(S.my, {
+                    src: r.getAvatarURL(s.guild_id, 56, !1) ?? void 0,
+                    alt: r.username,
+                    "aria-label": r.username,
+                    className: a()(S.my, {
                         [S.zj]: o || c
                     })
                 })]
             }), (0, i.jsx)(T, {
                 guildId: n,
                 channelId: s.id,
-                user: a,
+                user: r,
                 isPremium: l,
                 isBlocked: o,
                 isIgnored: c
@@ -103,11 +103,11 @@ let T = s.memo(function(e) {
             participant: t,
             channel: l
         } = e, {
-            user: a,
+            user: r,
             blocked: u
         } = t, I = l.getGuildId(), N = C.default.getId(), {
             newestAnalyticsLocation: T
-        } = (0, p.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, a.id)?.premiumSince != null, [I, a.id]), R = s.useRef(null);
+        } = (0, p.Ay)(m.A.AUDIENCE_TILE), y = (0, f.Us)(), j = (0, d.bG)([E.Ay], () => null != I && E.Ay.getMember(I, r.id)?.premiumSince != null, [I, r.id]), R = s.useRef(null);
         o()(null != I, "Channel cannot be guildless");
         let O = s.useCallback(e => {
             (0, g.x)({
@@ -115,7 +115,7 @@ let T = s.memo(function(e) {
                 name: c.ImpressionNames.CALL_TILE_CONTEXT_MENU,
                 properties: {
                     location: "AudienceTile",
-                    is_tile_owner: a.id === N,
+                    is_tile_owner: r.id === N,
                     tile_type: b.qs.USER
                 }
             }), (0, A.L3)(e, async () => {
@@ -124,30 +124,30 @@ let T = s.memo(function(e) {
                 } = await Promise.all([n.e("97262"), n.e("42128"), n.e("84841"), n.e("54266")]).then(n.bind(n, 107632));
                 return t => (0, i.jsx)(e, {
                     ...t,
-                    user: a,
+                    user: r,
                     guildId: I,
                     channel: l,
                     showMediaItems: !0,
                     showStageChannelItems: !0,
                     showChatItems: !1,
                     onInteraction: (0, _.s)("GuildChannelUserContextMenu", T, {
-                        targetUserId: a.id,
+                        targetUserId: r.id,
                         tileType: b.qs.USER
                     })
                 })
             }, {
                 context: y
             })
-        }, [a, N, y, I, l, T]);
+        }, [r, N, y, I, l, T]);
         return (0, i.jsx)(x.A, {
             targetElementRef: R,
-            user: a,
+            user: r,
             guildId: l.guild_id,
             channelId: l.id,
             clickTrap: !0,
             children: e => (0, i.jsx)(h.DUT, {
                 innerRef: R,
-                className: r()(S.iA, {
+                className: a()(S.iA, {
                     [S.wP]: j || u,
                     [S.fP]: j && u
                 }),
