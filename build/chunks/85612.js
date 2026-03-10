@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(430452),
     C = n(287809),
     S = n(954571),
-    T = n(474090),
-    I = n(927578),
+    I = n(474090),
+    T = n(927578),
     N = n(971778),
     y = n(494783),
     b = n(342887),
@@ -58,7 +58,7 @@ function F(e) {
         orientation: u.R.VERTICAL_TOP
     });
     (0, U.useSyncMessages)(k.messagesLoader);
-    let Y = (0, o.bG)([C.default], () => (0, T.ki)(C.default.getCurrentUser())),
+    let Y = (0, o.bG)([C.default], () => (0, I.ki)(C.default.getCurrentUser())),
         q = (0, o.bG)([N.A], () => N.A.getCatalogUpdateTime()),
         [J, $] = l.useState(!1),
         [Z, X] = l.useState(!1),
@@ -161,7 +161,7 @@ function F(e) {
                         children: (0, i.jsx)(_.d, {
                             showUpsell: !0,
                             text: U.intl.format(U.t.XMDm8z, {
-                                nitroTierName: (0, I.Dd)(P.PremiumTypes.TIER_2),
+                                nitroTierName: (0, T.Dd)(P.PremiumTypes.TIER_2),
                                 onClick: () => (0, E.n)()
                             }),
                             button: U.intl.string(U.t.cRCCJ3),

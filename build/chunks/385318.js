@@ -23,8 +23,8 @@ var l = n(110259),
     x = n(652215),
     C = n(509381),
     S = n(731854),
-    T = n(985018),
-    I = n(220636);
+    I = n(985018),
+    T = n(220636);
 
 function N(e) {
     let {
@@ -76,18 +76,18 @@ function N(e) {
             "data-menu-migrated": !0,
             onSelect: D,
             onInteraction: L,
-            className: I.MK,
+            className: T.MK,
             onClose: t,
             navId: "audio-device-context",
             variant: "fixed",
-            "aria-label": T.intl.string(T.t.ZR1Ss6),
+            "aria-label": I.intl.string(I.t.ZR1Ss6),
             children: [N && k, n && U, y && F, !M && b && G !== C.m.STUDIO ? (0, i.jsx)(r.rXV, {
-                label: T.intl.string(T.t["pS+K2L"]),
+                label: I.intl.string(I.t["pS+K2L"]),
                 children: H
             }) : null, (0, i.jsxs)(r.rXV, {
                 children: [v ? B : null, j ? V : null, M ? (0, i.jsx)(r.bXX, {}) : null, M && R ? (0, i.jsx)(r.sLh, {
                     id: "deafen",
-                    label: T.intl.string(T.t.wjcRFX),
+                    label: I.intl.string(I.t.wjcRFX),
                     action: () => o.A.toggleSelfDeaf({
                         context: K,
                         location: "AudioDeviceMenu"
@@ -96,7 +96,7 @@ function N(e) {
                 }, "self-deafen") : null, M && N && _.isPlatformEmbedded ? (0, i.jsx)(r.sLh, {
                     checked: W === x.TBI.PUSH_TO_TALK,
                     id: "input-mode",
-                    label: T.intl.string(T.t.Q8gkVL),
+                    label: I.intl.string(I.t.Q8gkVL),
                     action: () => o.A.setMode(Y, void 0, void 0, {
                         analyticsLocations: P
                     }),

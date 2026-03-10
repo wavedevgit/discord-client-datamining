@@ -23,8 +23,8 @@ var i = n(627968),
     x = n(287809),
     C = n(147925),
     S = n(203982),
-    T = n(975571),
-    I = n(723702),
+    I = n(975571),
+    T = n(723702),
     N = n(661191),
     y = n(314307),
     b = n(652215),
@@ -240,7 +240,7 @@ function D(e) {
             completed: V,
             onClick: W
         })
-    }, "message")), (0, I.isWeb)() && en.push((0, i.jsx)(r.A.div, {
+    }, "message")), (0, T.isWeb)() && en.push((0, i.jsx)(r.A.div, {
         className: R.cW,
         style: $ ? {
             opacity: X[en.length]
@@ -265,7 +265,7 @@ function D(e) {
     }, "addapp")));
     let ei = k ? j.intl.string(j.t["1ach9C"]) : j.intl.string(j.t["ezm+/j"]);
     w && (ei = j.intl.string(j.t["gwyU/J"]));
-    let el = `${T.A.getArticleURL(b.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
+    let el = `${I.A.getArticleURL(b.MVz.GUILD_GETTING_STARTED)}?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm`;
     return (0, i.jsx)(y.Ay, {
         channelId: L.id,
         children: (0, i.jsx)("div", {

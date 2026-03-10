@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(652215),
     C = n(985018),
     S = n(397405),
-    T = n(679740),
-    I = n(206314);
+    I = n(679740),
+    T = n(206314);
 let N = l.memo(function(e) {
         let {
             message: t,
@@ -86,9 +86,9 @@ let N = l.memo(function(e) {
             p.current ? null != A && A() : p.current = !0
         }, [A, s.content, d, g, r]), (0, i.jsxs)("div", {
             id: (0, f.CJ)(s),
-            className: a()(t, I.PT, {
-                [T.BK]: !0,
-                [T.nB]: "rtl" === o()(s.content),
+            className: a()(t, T.PT, {
+                [I.BK]: !0,
+                [I.nB]: "rtl" === o()(s.content),
                 [S.Dy]: x?.isBlockedEdit,
                 [S.bv]: !x?.isBlockedEdit
             }),
@@ -98,7 +98,7 @@ let N = l.memo(function(e) {
                     isEdited: !0,
                     isInline: !1,
                     children: (0, i.jsxs)("span", {
-                        className: T.oh,
+                        className: I.oh,
                         children: ["(", C.intl.string(C.t.Z7eEx9), ")"]
                     })
                 })]

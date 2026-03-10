@@ -45,7 +45,7 @@ function S(e) {
         newChannel: u,
         inSettings: h,
         ...m
-    } = e, [_, C] = l.useState(""), [S, T] = l.useState({}), [I, N] = l.useState(!1), [y, b] = l.useState(null), v = l.useRef(null), {
+    } = e, [_, C] = l.useState(""), [S, I] = l.useState({}), [T, N] = l.useState(!1), [y, b] = l.useState(null), v = l.useRef(null), {
         roles: j,
         members: R,
         getRichTag: M
@@ -76,7 +76,7 @@ function S(e) {
         query: _,
         setQuery: C,
         pendingAdditions: S,
-        setPendingAdditions: T,
+        setPendingAdditions: I,
         roles: j,
         members: R,
         getRichTag: M,
@@ -132,7 +132,7 @@ function S(e) {
                 variant: "primary",
                 text: E.intl.string(E.t.i4jeWR),
                 onClick: L,
-                loading: I
+                loading: T
             }]
         })
     })

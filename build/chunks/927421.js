@@ -28,8 +28,8 @@ function C(e) {
         channel: n,
         width: C,
         height: S,
-        keepOpen: T,
-        interactive: I = !0,
+        keepOpen: I,
+        interactive: T = !0,
         analyticsSource: N,
         onClose: y
     } = e, b = function(e) {
@@ -56,8 +56,8 @@ function C(e) {
         0 === b.length && 0 === v.length && y()
     }, [b.length, v, y]), l.useEffect(() => () => {
         let e = j.current;
-        T || null == e || L(e)
-    }, [T, L]), (0, c.A)({
+        I || null == e || L(e)
+    }, [I, L]), (0, c.A)({
         type: s.ImpressionTypes.POPOUT,
         name: s.ImpressionNames.SOUNDBOARD_POPOUT,
         properties: {
@@ -66,7 +66,7 @@ function C(e) {
             media_session_id: D
         }
     }, {
-        disableTrack: !I
+        disableTrack: !T
     });
     let P = l.useCallback(e => {
             j.current = e, M(e?.soundId)
@@ -82,12 +82,12 @@ function C(e) {
             null != t && L(t)
         }, [b, L]),
         U = l.useMemo(() => b.map(e => (0, i.jsx)(E.Ay, {
-            interactive: I,
+            interactive: T,
             className: x.a,
             sound: e,
             focused: R === e.soundId,
             channel: n
-        }, e.soundId)), [R, n, I, b]);
+        }, e.soundId)), [R, n, T, b]);
     return 0 === b.length ? null : (0, i.jsx)(o.f5, {
         value: O,
         children: (0, i.jsx)(_.A, {
@@ -95,12 +95,12 @@ function C(e) {
             wheelHeight: S,
             itemWidth: 96,
             itemHeight: 52,
-            showDeadZoneIndicator: !T,
+            showDeadZoneIndicator: !I,
             activeItem: R,
             onItemSelect: w,
             onItemAction: k,
             onClose: y,
-            interactive: I,
+            interactive: T,
             children: U
         })
     })

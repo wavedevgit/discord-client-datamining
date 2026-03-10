@@ -40,19 +40,19 @@ let f = [{
     },
     C = new Set,
     S = null,
-    T = 0,
-    I = 0;
+    I = 0,
+    T = 0;
 
 function N() {
     if (null == S || !v(S)) return !1;
     let e = b(S);
     if (e.lastActionTime > Date.now() - u.A.Millis.DAY && e.viewDuration > _) return !1;
     let t = Date.now();
-    return e.lastActionTime = t, e.viewDuration += t - T, T = t, !0
+    return e.lastActionTime = t, e.viewDuration += t - I, I = t, !0
 }
 
 function y() {
-    return 0 !== I && (clearInterval(I), I = 0), d.Ay.useNewNotifications && (I = setInterval(() => {
+    return 0 !== T && (clearInterval(T), T = 0), d.Ay.useNewNotifications && (T = setInterval(() => {
         N() && M.emitChange()
     }, 15 * u.A.Millis.SECOND)), !1
 }
@@ -108,10 +108,10 @@ class R extends l.Ay.PersistedStore {
 let M = new R(s.h, {
         CHANNEL_SELECT: function() {
             let e = N();
-            return S = c.A.getChannelId(), T = Date.now(), e
+            return S = c.A.getChannelId(), I = Date.now(), e
         },
         CONNECTION_OPEN: function() {
-            S = c.A.getChannelId(), T = Date.now(), y();
+            S = c.A.getChannelId(), I = Date.now(), y();
             let e = Date.now() - E;
             h.default.forEach(x.channels, (t, n) => {
                 let {

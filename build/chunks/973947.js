@@ -28,14 +28,14 @@ let C = e => {
     } = e, {
         activeVoice: C,
         mostRecentlyRequestedVoiceId: S
-    } = (0, p.f)(), T = (0, g.e)(t.id), I = t.id === C, N = !t.available && !t.temporarilyAvailable, y = t.temporarilyAvailable && !n && !I, b = !I && t.id === S, [v, j] = l.useState(!1);
+    } = (0, p.f)(), I = (0, g.e)(t.id), T = t.id === C, N = !t.available && !t.temporarilyAvailable, y = t.temporarilyAvailable && !n && !T, b = !T && t.id === S, [v, j] = l.useState(!1);
     l.useEffect(() => {
         let e = b ? setTimeout(() => j(b), 200) : void 0;
         return () => {
             clearTimeout(e), j(!1)
         }
     }, [b]);
-    let R = T?.previewSoundURLs,
+    let R = I?.previewSoundURLs,
         [M, D] = l.useState(0),
         {
             isPlaying: O,
@@ -61,11 +61,11 @@ let C = e => {
                 outputChannel: _.a.VOICE
             }), (.25 > Math.random() || M > 0) && null != R && D(e => (e + 1) % R.length)
         }, [s, L, M, R, t.id]),
-        F = null != T ? E.intl.string(T.name) : "";
+        F = null != I ? E.intl.string(I.name) : "";
     return (0, i.jsxs)("div", {
         className: a()(x.filter, k, {
-            [x.selected]: I,
-            [x.locked]: N && !I
+            [x.selected]: T,
+            [x.locked]: N && !T
         }),
         children: [(0, i.jsxs)(c.DUT, {
             className: x.selector,
@@ -84,12 +84,12 @@ let C = e => {
                     children: [(0, i.jsx)("img", {
                         className: x.thumbnail,
                         alt: "",
-                        src: T?.iconURL,
+                        src: I?.iconURL,
                         draggable: !1
                     }), (0, i.jsx)("div", {
                         className: x.insetBorder
                     })]
-                }), I && (0, i.jsx)("div", {
+                }), T && (0, i.jsx)("div", {
                     className: x.iconCircle,
                     children: (0, i.jsx)(c.yr3, {
                         size: "md",
@@ -97,7 +97,7 @@ let C = e => {
                         colorClass: x.checkmark,
                         secondaryColor: r.A.unsafe_rawColors.WHITE.css
                     })
-                }), N && !I && (0, i.jsx)("div", {
+                }), N && !T && (0, i.jsx)("div", {
                     className: a()([x.iconCircle, x.lockedCircle]),
                     children: (0, i.jsx)(c.XAi, {
                         size: "custom",

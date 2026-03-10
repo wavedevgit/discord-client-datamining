@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(349435),
     C = n(452082),
     S = n(357179),
-    T = n(74114),
-    I = n(221059),
+    I = n(74114),
+    T = n(221059),
     N = n(513272),
     y = n(881020),
     b = n(637384),
@@ -108,13 +108,13 @@ function et(e) {
         eA = m.length > 0 && m.first()?.isFirstMessageInForumPost(l),
         eg = (0, o.cI)(l),
         ep = (0, s.bG)([N.A], () => N.A.shouldShowTopicsBar() && !ec),
-        ef = (0, T.l)(l.id),
+        ef = (0, I.l)(l.id),
         e_ = (0, C.j)(l.id, Z.Rx),
         eE = (0, u.E)(l.id),
         ex = (0, U.A)(),
         eC = function(e, t) {
             if (e.isDM() && null != t)
-                if (t.type === x._j.STRANGER_DANGER) return (0, i.jsx)(I.e, {
+                if (t.type === x._j.STRANGER_DANGER) return (0, i.jsx)(T.e, {
                     channelId: e.id,
                     warningId: t.id,
                     senderId: e.getRecipientId()
@@ -134,8 +134,8 @@ function et(e) {
         eS = l.isForumPost() && !eA ? (0, i.jsx)(g.A, {
             postId: l.id
         }) : null,
-        eT = (0, f.A)(l.id),
-        eI = (0, _.W1)(l);
+        eI = (0, f.A)(l.id),
+        eT = (0, _.W1)(l);
     (0, Y.A)();
     let eN = null,
         ey = [],
@@ -174,7 +174,7 @@ function et(e) {
             if (null != er && er > e.content.timestamp.getTime() * O.A.Millis.SECOND) return;
             e.type === $.TZK.MESSAGE && null == eN && (eN = e);
             let n = e.groupId === eN?.groupId ? eN.content.id : e.groupId,
-                s = eI && e.content.isFirstMessageInForumPost(l),
+                s = eT && e.content.isFirstMessageInForumPost(l),
                 a = e.type === $.TZK.THREAD_STARTER_MESSAGE ? H.VO : H.Ay;
             return (0, i.jsx)(a, {
                 compact: en && !s,
@@ -184,7 +184,7 @@ function et(e) {
                 flashKey: e.flashKey,
                 id: (0, w.j)(l.id, e.content.id),
                 isLastItem: t >= ei.length - 1,
-                renderContentOnly: eT || s
+                renderContentOnly: eI || s
             }, e.content.id)
         });
     ey.push(...eb);

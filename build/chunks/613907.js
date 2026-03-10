@@ -1,6 +1,6 @@
 /** chunk id: 613907 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -23,16 +23,16 @@ var i = n(627968),
     C = n(455683);
 let S = "749054660769218631";
 
-function T(e) {
+function I(e) {
     let {
         channel: t
     } = e, [n, s] = l.useState("");
     l.useEffect(() => {
         (0, d.zk)("847199849233514549", !0)
     }, []);
-    let T = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, _.A)(e))),
-        I = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
-        N = f.Ay.useName(I) ?? x.intl.string(x.t.y1Wu2f),
+    let I = (0, r.bG)([A.A, m.default], () => !!a()(A.A.getMessages(t.id).toArray()).reverse().find(e => e.author.id !== m.default.getId() && e.state === E.cmJ.SENT && !(0, _.A)(e))),
+        T = (0, r.bG)([g.default], () => g.default.getUser(t.isPrivate() ? t.getRecipientId() : null)),
+        N = f.Ay.useName(T) ?? x.intl.string(x.t.y1Wu2f),
         y = (0, r.bG)([u.A], () => u.A.getStickerById(S)),
         b = l.useCallback(async () => {
             if (null == n || "" === n) try {
@@ -55,7 +55,7 @@ function T(e) {
             variant: "text-sm/normal",
             children: n
         }) : null;
-    return T ? (0, i.jsxs)("div", {
+    return I ? (0, i.jsxs)("div", {
         className: C.ft,
         children: [(0, i.jsxs)(o.DUT, {
             className: null != n && "" !== n ? C.AO : C.Iq,

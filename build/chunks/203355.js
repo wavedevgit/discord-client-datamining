@@ -23,8 +23,8 @@ var i = n(627968),
     x = n(607407),
     C = n(872363),
     S = n(901690),
-    T = n(919706),
-    I = n(616356),
+    I = n(919706),
+    T = n(616356),
     N = n(961350),
     y = n(734057),
     b = n(430452),
@@ -52,7 +52,7 @@ function V(e) {
         idle: s,
         width: a,
         premiumIndicator: o
-    } = e, c = (0, r.bG)([I.A], () => I.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, w.V)(a);
+    } = e, c = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(t.user.id, t.stream.guildId)), d = (0, w.V)(a);
     return (0, i.jsxs)(i.Fragment, {
         children: [n || l ? null : (0, i.jsx)(P.A, {
             participant: t
@@ -81,7 +81,7 @@ function K(e) {
         stream: W,
         user: Y,
         streamId: q
-    } = t, J = (0, r.bG)([y.A], () => y.A.getChannel(W.channelId)), $ = (0, r.bG)([I.A], () => I.A.getActiveStreamForUser(Y.id, W.guildId), [Y.id, W.guildId]), Z = (0, r.bG)([I.A], () => I.A.getAllActiveStreams().length > 0), X = (0, r.bG)([v.A], () => v.A.isFocused()), Q = $?.ownerId === K, ee = Q && !X && p === A.N.NO_POPOUT, et = null != $ ? (0, E.A)($, Y, Y.id === K, ee) : null, en = C < 195;
+    } = t, J = (0, r.bG)([y.A], () => y.A.getChannel(W.channelId)), $ = (0, r.bG)([T.A], () => T.A.getActiveStreamForUser(Y.id, W.guildId), [Y.id, W.guildId]), Z = (0, r.bG)([T.A], () => T.A.getAllActiveStreams().length > 0), X = (0, r.bG)([v.A], () => v.A.isFocused()), Q = $?.ownerId === K, ee = Q && !X && p === A.N.NO_POPOUT, et = null != $ ? (0, E.A)($, Y, Y.id === K, ee) : null, en = C < 195;
     (0, h.Ay)(() => {
         !Z && J?.isGuildStageVoice() && !Q && ((0, u.A9)(W), d.A.updateStageStreamSize(W.channelId, !1))
     });
@@ -123,7 +123,7 @@ function K(e) {
             videoSpinnerContext: Q ? m.u.SELF_STREAM : m.u.REMOTE_STREAM,
             userId: Y.id,
             streamKey: t.id
-        }, q), null != et ? (0, i.jsx)(T.A, {
+        }, q), null != et ? (0, i.jsx)(I.A, {
             size: (0, j.J)(C),
             ...et
         }) : null, (0, i.jsx)(R.A, {

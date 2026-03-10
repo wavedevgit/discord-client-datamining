@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(447155),
     C = n(652215),
     S = n(49999),
-    T = n(412136),
-    I = n(985018);
+    I = n(412136),
+    T = n(985018);
 let N = /(.*)```(\w+)\n(.*)```(.*)/s;
 
 function y(e) {
@@ -67,7 +67,7 @@ function y(e) {
                 channel: t
             })
         }, {
-            modalKey: T.sm
+            modalKey: I.sm
         })
     }
 
@@ -93,7 +93,7 @@ function y(e) {
         onSelect: j,
         navId: "channel-attach",
         onClose: v,
-        "aria-label": I.intl.string(I.t.Xm41aV),
+        "aria-label": T.intl.string(T.t.Xm41aV),
         children: y.map(function(e) {
             switch (e.type) {
                 case x.v.UPLOAD_A_FILE:
@@ -252,7 +252,7 @@ function y(e) {
                         children: w ? null : (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_everyone",
-                                label: I.intl.string(I.t.eCzSdd),
+                                label: T.intl.string(T.t.eCzSdd),
                                 iconLeft: r.nFg,
                                 leadingAccessory: {
                                     type: "icon",
@@ -261,7 +261,7 @@ function y(e) {
                                 action: () => h.A.summarizeThread(t, !1)
                             }, "summarize_thread_for_everyone"), (0, i.jsx)(r.Drp, {
                                 id: "summarize_thread_for_me",
-                                label: I.intl.string(I.t["HOe+Hq"]),
+                                label: T.intl.string(T.t["HOe+Hq"]),
                                 iconLeft: r.nys,
                                 leadingAccessory: {
                                     type: "icon",

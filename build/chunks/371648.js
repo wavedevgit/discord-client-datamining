@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(302031),
     C = n(513272),
     S = n(253932),
-    T = n(617617),
-    I = n(961350),
+    I = n(617617),
+    T = n(961350),
     N = n(72314),
     y = n(580745),
     b = n(834942),
@@ -56,7 +56,7 @@ let z = (0, r.animated)(d.fKU),
                 unreadCount: x,
                 showNewMessagesBar: C,
                 messageDisplayCompact: S,
-                channelStream: I,
+                channelStream: T,
                 uploads: y,
                 hasUnreads: b,
                 editingMessageId: v,
@@ -111,7 +111,7 @@ let z = (0, r.animated)(d.fKU),
                 unreadCount: x,
                 showNewMessagesBar: C,
                 messageDisplayCompact: S,
-                channelStream: I,
+                channelStream: T,
                 uploads: y,
                 loadMore: Q.loadMore,
                 scrollManager: Q,
@@ -148,8 +148,8 @@ let z = (0, r.animated)(d.fKU),
             ed = (0, m.A)(e => {
                 Q.ref.current = e, eo.current = e?.getScrollerNode() ?? null
             }),
-            eu = (0, c.bG)([T.A], () => {
-                let e = T.A.settings.appearance?.clientThemeSettings;
+            eu = (0, c.bG)([I.A], () => {
+                let e = I.A.settings.appearance?.clientThemeSettings;
                 return e?.backgroundGradientPresetId != null || e?.customUserThemeSettings != null
             }),
             eh = l.useMemo(() => W ? Y ? K.gA : K.ru : K.Zd, [W, Y]),
@@ -226,7 +226,7 @@ let z = (0, r.animated)(d.fKU),
                 canManageMessages: i
             }
         }(t), {
-            messageGroupSpacing: T,
+            messageGroupSpacing: I,
             fontSize: N,
             messageDisplayCompact: O,
             renderSpoilers: w,
@@ -273,7 +273,7 @@ let z = (0, r.animated)(d.fKU),
                 }, {
                     autoTrackExposure: !1
                 }),
-                r = D.default.getUser(I.default.getId())?.hasFlag(B.nhx.SPAMMER) ?? !1,
+                r = D.default.getUser(T.default.getId())?.hasFlag(B.nhx.SPAMMER) ?? !1,
                 o = (0, h.cI)(e),
                 d = (0, f.A)("use_topic_dividers_in_chat"),
                 u = (0, c.yK)([C.A], () => o && d ? C.A.summaries(e.id) ?? [] : [], [o, e.id, d]),
@@ -305,7 +305,7 @@ let z = (0, r.animated)(d.fKU),
             children: (0, i.jsx)(U.t, {
                 children: (0, i.jsx)(W, {
                     ...d,
-                    messageGroupSpacing: T,
+                    messageGroupSpacing: I,
                     showNewMessagesBar: !0,
                     channel: t,
                     messageDisplayCompact: !r && (a || O),

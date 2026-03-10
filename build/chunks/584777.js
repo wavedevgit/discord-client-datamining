@@ -22,8 +22,8 @@ var l, s = n(311907),
     x = n(287809),
     C = n(652215),
     S = ((l = {})[l.FRIENDS = 0] = "FRIENDS", l[l.GUILD_MEMBERS = 1] = "GUILD_MEMBERS", l);
-let T = !1,
-    I = "",
+let I = !1,
+    T = "",
     N = 0,
     y = 0,
     b = [],
@@ -35,22 +35,22 @@ let T = !1,
             n = x.default.getCurrentUser();
         return E.A.isFriend(e.user.id) ? t.push("FRIENDS") : e.user.id !== n?.id && D.has(e.user.id) && t.push("GUILD_MEMBERS"), t
     }, function(e) {
-        return e.user.username === I ? -1e3 : p.A.hasConsented(C.YAq.PERSONALIZATION) ? -(u.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0) : (0, m.sS)(A.Ay.getName(e.user).toLocaleLowerCase())
+        return e.user.username === T ? -1e3 : p.A.hasConsented(C.YAq.PERSONALIZATION) ? -(u.A.getUserAffinity(e.user.id)?.communicationProbability ?? 0) : (0, m.sS)(A.Ay.getName(e.user).toLocaleLowerCase())
     }),
     D = new Set;
 
 function O() {
-    I = "", N = 0, y = 0, b = [], j = new Set, T = !1, R = null, M.clear()
+    T = "", N = 0, y = 0, b = [], j = new Set, I = !1, R = null, M.clear()
 }
 
 function L(e) {
-    I = e, y = 0, P()
+    T = e, y = 0, P()
 }
 
 function P() {
-    if (!T) return !1;
+    if (!I) return !1;
     let e = g.A.getChannel(R);
-    if (0 === I.trim().length) return null != i && i.clearQuery(), b = function(e) {
+    if (0 === T.trim().length) return null != i && i.clearQuery(), b = function(e) {
         let t = E.A.getFriendIDs(),
             n = d.A.getConfig({
                 location: "PrivateChannelRecipientsInviteStore"
@@ -84,7 +84,7 @@ function P() {
                 location: "PrivateChannelRecipientsInviteStore"
             }).enabled;
         i.setQuery({
-            query: I,
+            query: T,
             filters: o && null == e ? void 0 : {
                 friends: !0,
                 staff: r,
@@ -109,7 +109,7 @@ function P() {
 }
 
 function w() {
-    if (!T) return !1;
+    if (!I) return !1;
     let e = v;
     return (v = E.A.getFriendCount() > 0) !== e
 }
@@ -127,7 +127,7 @@ function U(e) {
     let {
         results: t
     } = e;
-    if (!T || "" === I) return;
+    if (!I || "" === T) return;
     let n = [];
     for (let {
             id: e,
@@ -152,7 +152,7 @@ function G() {
 
 function F(e) {
     if (e.key !== C.TLS) return !1;
-    T = !0, w(), i = G(), R = null, L("")
+    I = !0, w(), i = G(), R = null, L("")
 }
 
 function H(e) {
@@ -178,11 +178,11 @@ class V extends s.Ay.Store {
         return j
     }
     getQuery() {
-        return I
+        return T
     }
     getState() {
         return {
-            query: I,
+            query: T,
             selectedRow: y,
             selectedSection: N,
             selectedUsers: j,
@@ -205,13 +205,13 @@ let K = new V(r.h, {
                 channelId: n
             } = e;
             if (null != t) return !1;
-            let i = T;
-            return O(), T = i, R = n, P()
+            let i = I;
+            return O(), I = i, R = n, P()
         },
         MODAL_PUSH: F,
         SHOW_ACTION_SHEET: F,
         PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-            T = !0, w(), i = G(), R = e.channelId, L("")
+            I = !0, w(), i = G(), R = e.channelId, L("")
         },
         MODAL_POP: H,
         HIDE_ACTION_SHEET: H,

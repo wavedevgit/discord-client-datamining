@@ -1,6 +1,6 @@
 /** chunk id: 162792 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => I
 });
 var i = n(627968),
     l = n(64700),
@@ -26,8 +26,8 @@ let S = l.memo(function(e) {
         baseMessage: t,
         referencedMessage: n,
         channel: S,
-        compact: T = !1,
-        referencedUsernameProfile: I,
+        compact: I = !1,
+        referencedUsernameProfile: T,
         referencedAvatarProfile: N,
         setPopout: y,
         isReplySpineClickable: b,
@@ -81,7 +81,7 @@ let S = l.memo(function(e) {
     } = (0, s.cf)([m.A], () => ({
         isReplyAuthorBlocked: null != j && m.A.isBlockedForMessage(j),
         isReplyAuthorIgnored: null != j && m.A.isIgnoredForMessage(j)
-    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, I, y), U = (0, E.Ge)(N, y), G = l.useCallback(() => {
+    }), [j]), P = (0, E.r4)(j?.author.id, S.id), w = (0, E.Ck)(t, j), k = (0, E.H9)(j, S, T, y), U = (0, E.Ge)(N, y), G = l.useCallback(() => {
         y({
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
@@ -94,11 +94,11 @@ let S = l.memo(function(e) {
         baseAuthor: F,
         referencedMessage: n,
         content: D,
-        compact: T,
+        compact: I,
         isReplyAuthorBlocked: O,
         isReplyAuthorIgnored: L,
         showAvatarPopout: N,
-        showUsernamePopout: I,
+        showUsernamePopout: T,
         renderPopout: _.A,
         onClickAvatar: U,
         onClickUsername: k,
@@ -110,7 +110,7 @@ let S = l.memo(function(e) {
     })
 });
 
-function T(e) {
+function I(e) {
     let {
         message: t,
         channel: n,

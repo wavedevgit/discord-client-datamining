@@ -26,16 +26,16 @@ function S(e) {
     let t, {
             channel: n,
             children: S,
-            user: T
+            user: I
         } = e,
-        I = (0, s.bG)([o.A], () => o.A.useReducedMotion),
+        T = (0, s.bG)([o.A], () => o.A.useReducedMotion),
         N = (0, u.Ay)(n) ?? "",
         {
             avatarDecorationSrc: y,
             eventHandlers: b,
             isAnimating: v
         } = (0, _.A)({
-            userId: T?.id,
+            userId: I?.id,
             size: r._3J.SIZE_80,
             animateOnHover: !0
         }),
@@ -46,12 +46,12 @@ function S(e) {
         D = l.useCallback(() => {
             b.onMouseLeave(), R(!1)
         }, [b]),
-        O = !n.isMultiUserDM() && T?.displayNameStyles != null;
+        O = !n.isMultiUserDM() && I?.displayNameStyles != null;
     return (0, i.jsxs)(E.Ay, {
         channelId: n.id,
         onMouseEnter: M,
         onMouseLeave: D,
-        children: [(t = !I && v, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
+        children: [(t = !T && v, n.isMultiUserDM() ? (0, i.jsx)(g.Q, {
             channel: n,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
@@ -69,7 +69,7 @@ function S(e) {
         })), (0, i.jsx)(E.cr, {
             children: O ? (0, i.jsx)(m.A, {
                 userName: N,
-                displayNameStyles: T?.displayNameStyles,
+                displayNameStyles: I?.displayNameStyles,
                 effectDisplayType: j ? h.G.ANIMATED : h.G.STATIC,
                 loop: !0
             }) : N

@@ -26,17 +26,17 @@ let u = function(e) {
         children: x,
         useReducedMotion: C = !1,
         buttonVariant: S
-    } = e, T = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
-    if (s.Fr && T) return null;
+    } = e, I = (0, a.bG)([c.Ay], () => c.Ay.getState().isMembersOpen);
+    if (s.Fr && I) return null;
     if (null == t) return (0, i.jsx)(i.Fragment, {
         children: l.Children.only(x)
     });
-    let I = null;
-    return null != p ? I = (0, i.jsx)("img", {
+    let T = null;
+    return null != p ? T = (0, i.jsx)("img", {
         alt: "",
         src: p,
         className: d.Sl
-    }) : null != f && (I = (0, i.jsx)(r.akl, {
+    }) : null != f && (T = (0, i.jsx)(r.akl, {
         importData: f,
         shouldAnimate: !C,
         className: d.lY
@@ -44,7 +44,7 @@ let u = function(e) {
         className: d.iE,
         children: [(0, i.jsxs)("div", {
             className: d.Qs,
-            children: [I, (0, i.jsxs)("div", {
+            children: [T, (0, i.jsxs)("div", {
                 className: d.Qq,
                 children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-md/semibold",

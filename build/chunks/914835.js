@@ -1,6 +1,6 @@
 /** chunk id: 914835 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -30,7 +30,7 @@ function S(e) {
         analyticsLocations: _
     } = (0, u.Ay)(d.A.USERNAME), E = (0, r.bG)([p.default], () => p.default.getUser(t)), x = (0, r.bG)([g.Ay], () => null != t ? g.Ay.getMember(s.guild_id, t) : null), S = (0, m.gn)(s.guild_id, t ?? void 0, x?.colorStrings ?? null);
 
-    function T(e) {
+    function I(e) {
         if (null == E) return null;
         (0, c.L3)(e, async () => {
             let {
@@ -44,11 +44,11 @@ function S(e) {
             })
         })
     }
-    let I = x?.nick ?? f.Ay.getName(E) ?? "???",
+    let T = x?.nick ?? f.Ay.getName(E) ?? "???",
         N = x?.colorString;
     return null == E ? (0, i.jsx)("span", {
         className: a()(C.eM, C.sL),
-        children: I
+        children: T
     }) : (0, i.jsx)(u.f5, {
         value: _,
         children: (0, i.jsx)(A.A, {
@@ -63,9 +63,9 @@ function S(e) {
                 innerRef: h,
                 tag: "span",
                 className: C.eM,
-                onContextMenu: T,
+                onContextMenu: I,
                 children: (0, i.jsx)(o.gyj, {
-                    name: I,
+                    name: T,
                     colorString: N ?? null,
                     colorStrings: S
                 })
@@ -74,7 +74,7 @@ function S(e) {
     })
 }
 
-function T(e) {
+function I(e) {
     let {
         channel: t
     } = e, {
@@ -105,7 +105,7 @@ function T(e) {
     })
 }
 
-function I(e) {
+function T(e) {
     let {
         channel: t
     } = e, n = (0, h.gU)(t) ?? o.ysw;
@@ -118,7 +118,7 @@ function I(e) {
             })
         }), (0, i.jsx)(_.cr, {
             children: t.name
-        }), (0, i.jsx)(T, {
+        }), (0, i.jsx)(I, {
             channel: t
         })]
     })

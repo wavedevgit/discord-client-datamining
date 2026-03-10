@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(650338),
     C = n(821715),
     S = n(652215),
-    T = n(788868),
-    I = n(985018),
+    I = n(788868),
+    T = n(985018),
     N = n(176273);
 let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
     b = {
@@ -83,7 +83,7 @@ let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
                 location: P
             } = (0, A.p)(),
             w = (0, c.bG)([f.default], () => f.default.getCurrentUser()),
-            k = o && !E.Ay.isPremium(w, T.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, w),
+            k = o && !E.Ay.isPremium(w, I.PremiumTypes.TIER_1) && !E.Ay.canStreamQuality(E.Ay.StreamQuality.MID, w),
             U = l.useCallback(() => {
                 k && L && (0, m.mMO)(async () => {
                     let {
@@ -97,14 +97,14 @@ let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
             }, [k, L, P]);
         if (l.useEffect(() => {
                 !b && L && (_.default.track(S.HAw.PREMIUM_UPSELL_VIEWED, {
-                    type: T.e.STREAM_QUALITY_INDICATOR,
+                    type: I.e.STREAM_QUALITY_INDICATOR,
                     has_premium_stream_fps: t,
                     has_premium_stream_resolution: s,
                     location_stack: D
                 }), v(!0))
             }, [t, s, L, b, v, D]), null == M) return null;
         let G = (0, i.jsx)(u.m, {
-            text: O ? I.intl.string(I.t.q8TiVt) : L ? I.intl.string(I.t.IHgpEn) : I.intl.string(I.t.vLb0VW),
+            text: O ? T.intl.string(T.t.q8TiVt) : L ? T.intl.string(T.t.IHgpEn) : T.intl.string(T.t.vLb0VW),
             position: "bottom",
             children: (0, i.jsxs)(m.DUT, {
                 onClick: U,

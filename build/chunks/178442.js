@@ -56,15 +56,15 @@ function x(e) {
         children: x,
         channelId: C,
         childrenAsSubtitle: S,
-        connectionStatusTextVariant: T,
-        hasVideo: I
+        connectionStatusTextVariant: I,
+        hasVideo: T
     } = e, N = l.useRef(null), y = s === A.S7L.RTC_CONNECTED, b = l.useCallback(e => (0, i.jsx)(h.A, {
         ...e,
         channelId: C
     }), [C]), {
         connectionStatus: v,
         connectionStatusText: j
-    } = u.A.getStatus(s, I);
+    } = u.A.getStatus(s, T);
     return (0, i.jsxs)("div", {
         className: g.pe,
         children: [(0, i.jsx)("div", {
@@ -99,8 +99,8 @@ function x(e) {
                                 },
                                 children: (0, i.jsx)(m.A, {
                                     text: j,
-                                    textVariant: T,
-                                    hasVideo: I,
+                                    textVariant: I,
+                                    hasVideo: T,
                                     className: p[v],
                                     hasConnectedChannel: null != C
                                 })

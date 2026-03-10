@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(566908),
     C = n(406704),
     S = n(253932),
-    T = n(761640),
-    I = n(186111),
+    I = n(761640),
+    T = n(186111),
     N = n(576705),
     y = n(461213),
     b = n(203982),
@@ -44,13 +44,13 @@ let k = l.memo(function(e) {
         editorTextContent: U,
         setValue: G,
         canOnlyUseTextCommands: F
-    } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([y.A], () => y.A.getActivities()), z = (0, A.Et)(), W = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([T.Ay], () => null == T.Ay.getCurrentSidebarChannelId(s.id)), {
+    } = e, H = (0, _.Us)(), B = l.useRef(null), V = l.useRef(null), K = (0, r.bG)([y.A], () => y.A.getActivities()), z = (0, A.Et)(), W = (0, r.bG)([m.A], () => m.A.getLastClipsSession()), Y = (0, r.yK)([m.A], () => m.A.getNewClipIds()), q = (0, r.bG)([I.Ay], () => null == I.Ay.getCurrentSidebarChannelId(s.id)), {
         showClipsHeaderEntrypoint: J
     } = h.L_.useConfig({
         location: "ChannelAttachButton"
     }), {
         onShareClick: $
-    } = (0, p.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([I.A], () => I.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (z || ee), el = s.isPrivate(), es = (0, r.bG)([N.A], () => el || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(W);
+    } = (0, p.A)(s.id), Z = (0, r.bG)([f.HP], () => f.HP.hasHotspot(f._2.CLIPS_CHANNEL_ATTACH_REMINDER)), X = (0, o.red)(e => (0, o.fDT)(e, L.nm)), Q = (0, r.bG)([T.A], () => T.A.hasLayers()), ee = (0, r.bG)([m.A], () => m.A.hasClips()), [et, en] = l.useState(null), ei = (0, h.sw)() && (z || ee), el = s.isPrivate(), es = (0, r.bG)([N.A], () => el || N.A.can(O.xBc.ATTACH_FILES, s) && N.A.can(O.xBc.SEND_MESSAGES, s)), ea = (0, d.A)(W);
 
     function er() {
         (0, o.mMO)(async () => {

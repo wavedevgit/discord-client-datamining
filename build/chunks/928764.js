@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(898280),
     C = n(573163),
     S = n(260821),
-    T = n(226698),
-    I = n(376708),
+    I = n(226698),
+    T = n(376708),
     N = n(715757),
     y = n(390897),
     b = n(704860),
@@ -45,8 +45,8 @@ var i = n(627968),
 function B(e) {
     let {
         channel: t
-    } = e, s = t.isArchivedThread(), a = (0, I.uW)(t), [r, c] = l.useState(!1), u = () => {
-        c(!0), T.A.resolveFlag(t.id).then(() => {
+    } = e, s = t.isArchivedThread(), a = (0, T.uW)(t), [r, c] = l.useState(!1), u = () => {
+        c(!0), I.A.resolveFlag(t.id).then(() => {
             c(!1)
         })
     };
@@ -85,8 +85,8 @@ function V(e) {
         isLastItem: s = !1,
         parentChannelId: o
     } = e, {
-        ref: T,
-        width: I
+        ref: I,
+        width: T
     } = (0, m.Ay)(), [y, U] = l.useState(3), [V, K] = l.useState(!n), [z, W] = (0, A.A)(!1, 2e3), Y = (0, r.bG)([R.A], () => R.A.getChannel(t), [t]), {
         firstMessage: q
     } = (0, L.OA)(Y), J = (0, r.bG)([v.A], () => v.A.hasJoined(t)), {
@@ -103,7 +103,7 @@ function V(e) {
         }
     }, [n]);
     l.useLayoutEffect(() => {
-        let e = T.current;
+        let e = I.current;
         if (null == e || !n) return;
         let t = new IntersectionObserver(el, {
             threshold: 1
@@ -114,8 +114,8 @@ function V(e) {
     });
     let [es, ea] = l.useState(!0);
     if (l.useEffect(() => {
-            null == I || (U(Math.floor((I - 280) / 58)), ea(!1))
-        }, [I]), null == Y || null == q) return null;
+            null == T || (U(Math.floor((T - 280) / 58)), ea(!1))
+        }, [T]), null == Y || null == q) return null;
     let er = q.reactions.length > 0,
         eo = () => {
             (0, P.jC)({
@@ -131,7 +131,7 @@ function V(e) {
             className: a()(G.kL, {
                 [G.wx]: V
             }),
-            ref: T,
+            ref: I,
             children: [ee ? (0, i.jsx)("div", {
                 className: G.kX,
                 children: (0, i.jsx)(b.A, {

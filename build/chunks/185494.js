@@ -1,6 +1,6 @@
 /** chunk id: 185494 params = (module,exports,require) **/
 n.d(t, {
-    l: () => I
+    l: () => T
 });
 var i = n(627968),
     l = n(64700),
@@ -31,17 +31,17 @@ let x = e => 1 - Math.pow(1 - e, 4),
         friction: 64,
         tension: 1e3
     },
-    T = {
+    I = {
         mass: 1,
         friction: 35,
         tension: 1e3
     };
 
-function I(e) {
+function T(e) {
     let {} = e, {
         activeVoice: t
     } = (0, f.f)(), n = (0, h.A)(t), s = (0, p.e)(t), {
-        toggleLoopback: I,
+        toggleLoopback: T,
         isLoopbackEnabled: N
     } = function() {
         let {
@@ -136,7 +136,7 @@ function I(e) {
             config: e => "opacity" === e ? {
                 easing: x,
                 duration: 200
-            } : D ? C : T
+            } : D ? C : I
         }, "respect-motion-settings"),
         F = (0, d.pnh)(s?.name, {
             key: M,
@@ -231,7 +231,7 @@ function I(e) {
                             enabled: D
                         },
                         tabIndex: D ? 0 : -1,
-                        onClick: () => I(),
+                        onClick: () => T(),
                         children: (0, i.jsx)(y, {
                             size: "custom",
                             width: 20,

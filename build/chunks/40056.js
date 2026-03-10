@@ -61,7 +61,7 @@ let m = {
             minZoom: n = 1,
             maxZoom: o = 5,
             children: c
-        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [T, I] = l.useState(16 / 9), [N, y] = l.useState({
+        } = e, [d, u] = l.useState(n), [h, p] = l.useState(!1), [f, _] = l.useState(!1), [E, x] = l.useState(!1), [C, S] = l.useState(!1), [I, T] = l.useState(16 / 9), [N, y] = l.useState({
             x: 0,
             y: 0
         }), b = l.useRef(null), v = l.useRef(null);
@@ -106,14 +106,14 @@ let m = {
                 setIsWheeling: x,
                 isSlidering: C,
                 setIsSlidering: S,
-                videoAspectRatio: T,
-                setVideoAspectRatio: I,
+                videoAspectRatio: I,
+                setVideoAspectRatio: T,
                 doZoom: R,
                 panOffset: N,
                 setPanOffset: y,
                 wrapperRef: b,
                 clampPanOffset: j
-            }), [j, R, f, C, E, h, o, n, N, T, d]);
+            }), [j, R, f, C, E, h, o, n, N, I, d]);
         return (0, i.jsx)(A.Provider, {
             value: M,
             children: c

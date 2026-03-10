@@ -22,8 +22,8 @@ var i = n(64700),
     x = n(957565),
     C = n(203982),
     S = n(723702),
-    T = n(661191),
-    I = n(697470),
+    I = n(661191),
+    T = n(697470),
     N = n(492841),
     y = n(707985),
     b = n(519222),
@@ -49,7 +49,7 @@ let j = function(e, t, n) {
                 ((0, S.isMac)() ? D : M) && x.p5 && (n.preventDefault(), (0, x.C)(L.content));
                 break;
             case "e":
-                i && !P.isSystemDM() && (0, I.A)(L, w) && (n.preventDefault(), (0, b.u_)(P, L));
+                i && !P.isSystemDM() && (0, T.A)(L, w) && (n.preventDefault(), (0, b.u_)(P, L));
                 break;
             case "p":
                 (i || O) && (0, N.A)(L, P) && (n.preventDefault(), (0, b.rS)(P, L, n));
@@ -88,7 +88,7 @@ let j = function(e, t, n) {
             case "t":
                 if (i && (0, c.D1)(P, L)) n.preventDefault(), (0, d.Tv)(P, L, "Message Shortcut");
                 else if (L.hasFlag(v.pr7.HAS_THREAD)) {
-                    let e = g.A.getChannel(T.default.castMessageIdAsChannelId(L.id));
+                    let e = g.A.getChannel(I.default.castMessageIdAsChannelId(L.id));
                     null != e && (i || O) && (n.preventDefault(), (0, d.JA)(e, O))
                 }
                 break;

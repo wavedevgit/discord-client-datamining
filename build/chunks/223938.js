@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(688810),
     C = n(861382),
     S = n(875163),
-    T = n(224805),
-    I = n(598071),
+    I = n(224805),
+    T = n(598071),
     N = n(101555),
     y = n(834755),
     b = n(703007),
@@ -101,7 +101,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
             emojiPickerCloseOnModalOuterClick: eA,
             parentModalKey: eg
         } = e,
-        ep = T.A.useField("channelDrafts")[b.id],
+        ep = I.A.useField("channelDrafts")[b.id],
         ef = ep?.title ?? "",
         e_ = ep?.heroFile,
         eE = ep?.publish ?? !0,
@@ -109,8 +109,8 @@ let X = l.memo(l.forwardRef(function(e, t) {
     o()(null != v, "chat input type must be set");
     let {
         analyticsLocations: eC
-    } = (0, x.Ay)(E.A.CHANNEL_TEXT_AREA), eS = (0, V.L0)(t), eT = l.useRef(null), eI = l.useRef(null), eN = l.useRef(null), ey = l.useRef(null);
-    eu?.(eI.current);
+    } = (0, x.Ay)(E.A.CHANNEL_TEXT_AREA), eS = (0, V.L0)(t), eI = l.useRef(null), eT = l.useRef(null), eN = l.useRef(null), ey = l.useRef(null);
+    eu?.(eT.current);
     let {
         activeCommand: eb
     } = (0, u.cf)([C.A], () => ({
@@ -132,13 +132,13 @@ let X = l.memo(l.forwardRef(function(e, t) {
     let {
         eventEmitter: eG,
         handleEditorSelectionChanged: eF
-    } = (0, V.ml)(eI, s, r), eH = l.useCallback(e => {
-        let t = e => (e.shouldClear && ((0, T.x)(b.id, {
+    } = (0, V.ml)(eT, s, r), eH = l.useCallback(e => {
+        let t = e => (e.shouldClear && ((0, I.x)(b.id, {
                 title: "",
                 heroFile: null
-            }), eI.current?.blur()), e),
+            }), eT.current?.blur()), e),
             n = [],
-            i = ef.length > 0 ? ef : e.value.length > 0 ? e.value.slice(0, 80) : q.intl.string(q.t["7Xm5QI"]);
+            i = (ef.length > 0 ? ef : e.value.length > 0 ? e.value : q.intl.string(q.t["7Xm5QI"])).slice(0, W.Ign);
         if (null == e_) return ei({
             ...e,
             announcementSendOptions: {
@@ -185,7 +185,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
     }, [ei, ef, e_, b.id, ex, eE, eU]), {
         submit: eB,
         handleSubmit: eV
-    } = (0, V.Zx)(eH, v, eI, ey, b.id), {
+    } = (0, V.Zx)(eH, v, eT, ey, b.id), {
         autocompleteRef: eK,
         handleMaybeShowAutocomplete: ez,
         handleHideAutocomplete: eW
@@ -196,18 +196,18 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleTab: e$,
         handleEnter: eZ,
         handleMoveSelection: eX
-    } = (n = l.useCallback(() => !!(!eL && eT.current?.onTabOrEnter(!1)) || eK.current?.onTabOrEnter(!1) || !1, [eL]), {
+    } = (n = l.useCallback(() => !!(!eL && eI.current?.onTabOrEnter(!1)) || eK.current?.onTabOrEnter(!1) || !1, [eL]), {
         handleTab: n,
-        handleEnter: l.useCallback(() => !!(!eL && eT.current?.onTabOrEnter(!0)) || eK.current?.onTabOrEnter(!1) || !1, [eL]),
-        handleMoveSelection: l.useCallback(e => !!(!eL && eT.current?.onMoveSelection(e)) || eK.current?.onMoveSelection(e) || !1, [eL])
+        handleEnter: l.useCallback(() => !!(!eL && eI.current?.onTabOrEnter(!0)) || eK.current?.onTabOrEnter(!1) || !1, [eL]),
+        handleMoveSelection: l.useCallback(e => !!(!eL && eI.current?.onMoveSelection(e)) || eK.current?.onMoveSelection(e) || !1, [eL])
     }), {
         expressionPickerView: eQ,
         shouldHideExpressionPicker: e0,
         handleOuterClick: e1
-    } = (0, V.MD)(v, eI, b.id), {
+    } = (0, V.MD)(v, eT, b.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(v, b.id), e3 = (0, V.NO)(eI), e7 = (0, V.Vu)(eB, v, eI), e5 = (0, V.C)({
-        editorRef: eI,
+    } = (0, V.uW)(v, b.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, v, eT), e5 = (0, V.C)({
+        editorRef: eT,
         disabled: eR,
         textValue: s,
         channelId: b.id,
@@ -244,11 +244,11 @@ let X = l.memo(l.forwardRef(function(e, t) {
         if (null == e_) return;
         let e = P.A.getUploads(b.id, v.drafts.type),
             t = e.find(e => e.filename === e_.name)?.id;
-        null != t && g.A.remove(b.id, t, O.C.ChannelMessage), (0, T.x)(b.id, {
+        null != t && g.A.remove(b.id, t, O.C.ChannelMessage), (0, I.x)(b.id, {
             heroFile: null
         })
     }, [b.id, e_, v.drafts.type]);
-    return (0, i.jsx)(I.Sv, {
+    return (0, i.jsx)(T.Sv, {
         value: eG,
         children: (0, i.jsxs)(x.f5, {
             value: eC,
@@ -277,7 +277,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     onRemoveHeroImage: to
                                 }) : null, null != e_ ? null : (0, i.jsx)(en, {
                                     channel: b,
-                                    onImageUploaded: e => (0, T.x)(b.id, {
+                                    onImageUploaded: e => (0, I.x)(b.id, {
                                         heroFile: e
                                     }),
                                     onFocus: () => e6(!0)
@@ -286,7 +286,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     className: J.hz,
                                     placeholder: q.intl.string(q.t.Z8fYjO),
                                     value: ef,
-                                    onChange: e => (0, T.x)(b.id, {
+                                    onChange: e => (0, I.x)(b.id, {
                                         title: e.target.value
                                     })
                                 })]
@@ -296,7 +296,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                                     ringTarget: eS,
                                     ringClassName: $.Rg,
                                     children: (0, i.jsx)(H.A, {
-                                        ref: eI,
+                                        ref: eT,
                                         id: h,
                                         focused: j,
                                         useSlate: eO,
@@ -424,7 +424,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                     focused: j,
                     expressionPickerView: eQ,
                     type: v,
-                    editorRef: eI,
+                    editorRef: eT,
                     onSendMessage: eB,
                     onSendSticker: () => {},
                     onVisibilityChange: e2,
@@ -453,7 +453,7 @@ function Q(e) {
     let {
         channelId: t,
         canCreateThread: n
-    } = e, l = T.A.useField("channelDrafts")[t], s = l?.createThread ?? !0, a = l?.publish ?? !0;
+    } = e, l = I.A.useField("channelDrafts")[t], s = l?.createThread ?? !0, a = l?.publish ?? !0;
     return (0, i.jsxs)(A.W1t, {
         "data-menu-migrated": !0,
         "aria-label": q.intl.string(q.t["9WnJyo"]),
@@ -466,7 +466,7 @@ function Q(e) {
             checked: n && s,
             disabled: !n,
             action: () => {
-                (0, T.x)(t, {
+                (0, I.x)(t, {
                     createThread: !s
                 })
             }
@@ -475,7 +475,7 @@ function Q(e) {
             label: q.intl.string(q.t.MFGE51),
             checked: a,
             action: () => {
-                (0, T.x)(t, {
+                (0, I.x)(t, {
                     publish: !a
                 })
             }

@@ -23,7 +23,7 @@ function f(e) {
         onAcceptSuccess: n,
         onRejectSuccess: l,
         onError: f
-    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [T, I] = i.useState(!1), [N, y] = i.useState(!1), [b, v] = i.useState(!1), j = E || C || T, R = i.useCallback(async e => {
+    } = e, _ = (0, A.A)(), [E, x] = i.useState(!1), [C, S] = i.useState(!1), [I, T] = i.useState(!1), [N, y] = i.useState(!1), [b, v] = i.useState(!1), j = E || C || I, R = i.useCallback(async e => {
         if (!j) {
             x(!0);
             try {
@@ -63,14 +63,14 @@ function f(e) {
     }, [j, l, f]), O = i.useCallback(async e => {
         if (j) return;
         if (null != t && null == o.A.getMutualGuilds(t.id)) {
-            I(!0);
+            T(!0);
             try {
                 await (0, c.A)(t.id, t.getAvatarURL(void 0, 80), {
                     withMutualGuilds: !0,
                     withMutualFriendsCount: !0
                 })
             } catch (e) {} finally {
-                I(!1)
+                T(!1)
             }
         }
         let n = async () => {
@@ -123,7 +123,7 @@ function f(e) {
         markAsNotSpam: L,
         isAcceptLoading: E,
         isRejectLoading: C,
-        isUserProfileLoading: T,
+        isUserProfileLoading: I,
         isOptimisticAccepted: N,
         isOptimisticRejected: b
     }

@@ -23,8 +23,8 @@ var i = n(627968),
     x = n(104171),
     C = n(594007),
     S = n(227042),
-    T = n(793574),
-    I = n(688810),
+    I = n(793574),
+    T = n(688810),
     N = n(698141),
     y = n(429913),
     b = n(87001),
@@ -72,11 +72,11 @@ function k(e) {
         width: o
     } = e, A = o > 400 ? 2 : +(o > 300), [p] = o > 400 ? [c._3J.SIZE_56, 56] : o > 300 ? [c._3J.SIZE_32, 32] : [c._3J.SIZE_24, 24], f = (0, r.yK)([R.default, v.default], () => Array.from(t).map(e => (0, m.S)(e, v.default) ? null : R.default.getUser(e.userId)).filter(M.Vq)), _ = (0, r.bG)([u.Ay], () => u.Ay.getEmbeddedActivitiesForChannel(s.id).find(e => e.applicationId === n.id) ?? u.Ay.getEmbeddedActivitiesForStartingChannel(s.id).find(e => e.applicationId === n.id)), {
         analyticsLocations: E
-    } = (0, I.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
+    } = (0, T.Ay)(), x = (0, d.p)(), C = D.Ay.getName(s.getGuildId(), s.id, f?.[0]), S = (0, g.vG)({
         userId: R.default.getCurrentUser()?.id,
         channelId: s.id,
         application: n
-    }) === g.Gy.CAN_JOIN, T = s.getGuildId() ?? void 0, y = l.useId(), b = n.id, j = l.useMemo(() => ({
+    }) === g.Gy.CAN_JOIN, I = s.getGuildId() ?? void 0, y = l.useId(), b = n.id, j = l.useMemo(() => ({
         channel: s,
         type: "channel"
     }), [s]), {
@@ -90,7 +90,7 @@ function k(e) {
         className: L.Yi,
         children: [(0, i.jsx)(w, {
             avatarSize: p,
-            guildId: T,
+            guildId: I,
             channelId: s.id,
             users: f
         }), (0, i.jsx)(c.Text, {
@@ -142,7 +142,7 @@ function U(e) {
         channel: o
     } = e, {
         analyticsLocations: c
-    } = (0, I.Ay)(T.A.ACTIVITY_TILE), {
+    } = (0, T.Ay)(I.A.ACTIVITY_TILE), {
         applicationId: d
     } = t, u = (0, p.A)(), h = null != u && (0, A.H)(u.location) === o.id && u.applicationId === d, [m] = (0, y.A)([d]), {
         url: g
@@ -159,7 +159,7 @@ function U(e) {
             let e = (0, C.A)(u.location.id, u.applicationId);
             (0, E.cK)(e)
         }
-    }, [x, u, R]), (0, i.jsx)(I.f5, {
+    }, [x, u, R]), (0, i.jsx)(T.f5, {
         value: c,
         children: (0, i.jsxs)("div", {
             className: L.kL,

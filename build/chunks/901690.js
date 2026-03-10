@@ -33,8 +33,8 @@ let p = l.memo(function(e) {
         isDragging: x,
         setIsDragging: C,
         panOffset: S,
-        setPanOffset: T,
-        zoomLevel: I,
+        setPanOffset: I,
+        zoomLevel: T,
         isWheeling: N,
         setIsWheeling: y,
         isSlidering: b,
@@ -42,7 +42,7 @@ let p = l.memo(function(e) {
         wrapperRef: j,
         doZoom: R,
         clampPanOffset: M
-    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [w, k] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), z = l.useRef(new r.Ep), W = l.useRef(null), Y = I > E, q = l.useCallback(e => {
+    } = l.useContext(m.e9), [D, O] = l.useState(null), [L, P] = l.useState(null), [w, k] = l.useState(0), [U, G] = l.useState(null), [F, H] = l.useState(null), [B, V] = l.useState(!1), K = l.useRef(new r.Ep), z = l.useRef(new r.Ep), W = l.useRef(null), Y = T > E, q = l.useCallback(e => {
         e.width > 0 && e.height > 0 && v(e.width / e.height), s?.(e)
     }, [s, v]), J = l.useCallback(e => {
         if (null == j.current) return m.qd;
@@ -62,11 +62,11 @@ let p = l.memo(function(e) {
         let t = J(e),
             n = t.x - F.x,
             i = t.y - F.y;
-        T(M({
+        I(M({
             x: U.x + n,
             y: U.y + i
         })), O(t)
-    }, [M, F, U, _, J, x, Y, f, T]), X = l.useCallback(e => {
+    }, [M, F, U, _, J, x, Y, f, I]), X = l.useCallback(e => {
         !x || g(e) || (e.preventDefault(), e.stopPropagation(), C(!1), H(null), G(null))
     }, [x, C]), Q = l.useCallback(e => {
         if (Y && null != L && null != D) {
@@ -82,10 +82,10 @@ let p = l.memo(function(e) {
     }, [Y, L, w, D]), ee = l.useCallback(() => {
         C(!1), H(null), G(null)
     }, [C]), et = l.useCallback(e => {
-        _ && (y(!0), R(I - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
+        _ && (y(!0), R(T - e.deltaY / 100, J(e), "wheel"), f(), K.current.start(100, () => {
             y(!1)
         }))
-    }, [_, R, I, J, f, y]);
+    }, [_, R, T, J, f, y]);
     (0, o.i4)(j, l.useCallback(e => {
         let {
             width: t,
@@ -104,11 +104,11 @@ let p = l.memo(function(e) {
             width: l,
             height: s
         } = i;
-        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), T(e => {
-            let i = l * (I - 1) / 2,
-                a = s * (I - 1) / 2,
-                r = t * (I - 1) / 2,
-                o = n * (I - 1) / 2;
+        1 > Math.abs(t - l) && 1 > Math.abs(n - s) || (V(!0), I(e => {
+            let i = l * (T - 1) / 2,
+                a = s * (T - 1) / 2,
+                r = t * (T - 1) / 2,
+                o = n * (T - 1) / 2;
             return M({
                 x: (0 !== i ? e.x / i : 0) * r,
                 y: (0 !== a ? e.y / a : 0) * o
@@ -119,20 +119,20 @@ let p = l.memo(function(e) {
         }, z.current.start(100, () => {
             V(!1)
         }))
-    }, [M, Y, I, T]), [Y, I]), (0, c.l0)(() => {
+    }, [M, Y, T, I]), [Y, T]), (0, c.l0)(() => {
         K.current.stop(), z.current.stop()
     }), l.useEffect(() => {
-        null != n && (0, u.c)(n, void 0, _ && Y ? I : 1)
-    }, [_, Y, n, I]);
+        null != n && (0, u.c)(n, void 0, _ && Y ? T : 1)
+    }, [_, Y, n, T]);
     let en = l.useMemo(() => {
         let e = M(S);
         return {
-            "--custom-zoom-scale": I,
+            "--custom-zoom-scale": T,
             "--custom-pan-x": `${e.x}px`,
             "--custom-pan-y": `${e.y}px`,
             "--custom-zoom-transition": x || B || N || b ? "none" : "transform 0.15s ease-out"
         }
-    }, [M, x, B, N, b, S, I]);
+    }, [M, x, B, N, b, S, T]);
     return (0, i.jsx)("div", {
         ref: j,
         className: a()(A.iE, p, {

@@ -22,8 +22,8 @@ var i = n(627968),
     x = n(427209),
     C = n(93474),
     S = n(296043),
-    T = n(857071),
-    I = n(649963),
+    I = n(857071),
+    T = n(649963),
     N = n(815807),
     y = n(429433),
     b = n(517997),
@@ -125,7 +125,7 @@ let ei = l.memo(function(e) {
                     emoji: e,
                     channel: t,
                     message: n,
-                    location: I.qN.MESSAGE_HOVER_BAR
+                    location: T.qN.MESSAGE_HOVER_BAR
                 }),
                 children: (0, i.jsx)(h.A, {
                     emojiId: e.id,
@@ -155,7 +155,7 @@ function el(e) {
         canConfigureJoin: f,
         canReply: C,
         canStartThread: S,
-        canViewThread: I,
+        canViewThread: T,
         canForward: N,
         isExpanded: y,
         showMoreUtilities: O,
@@ -179,13 +179,13 @@ function el(e) {
             author: u
         } = n, h = (0, d.bG)([L.A], () => L.A.getGuild(t.guild_id), [t.guild_id]), g = (0, d.bG)([D.default], () => D.default.getId()), p = (0, R.Id)(t), f = (0, R.s5)(t), {
             firstMessage: x
-        } = (0, d.bG)([_.A], () => _.A.getMessage(t.id), [t.id]), C = M.jW.useSetting(), S = M.Q_.useSetting(), I = (0, d.bG)([P.A], () => null == t.guild_id || P.A.canChatInGuild(t.guild_id), [t]), {
+        } = (0, d.bG)([_.A], () => _.A.getMessage(t.id), [t.id]), C = M.jW.useSetting(), S = M.Q_.useSetting(), T = (0, d.bG)([P.A], () => null == t.guild_id || P.A.canChatInGuild(t.guild_id), [t]), {
             canManageMessages: N,
             canAddNewReactions: y
         } = (0, d.cf)([w.A], () => ({
-            canAddNewReactions: I && w.A.can($.xBc.ADD_REACTIONS, t),
+            canAddNewReactions: T && w.A.can($.xBc.ADD_REACTIONS, t),
             canManageMessages: w.A.can($.xBc.MANAGE_MESSAGES, t)
-        }), [t, I]), O = (0, b.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([T.A], () => null != t.guild_id && T.A.isLurking(t.guild_id), [t]), W = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
+        }), [t, T]), O = (0, b.u)(t, n), k = (0, R.n)(t, n), G = (0, R.R)(n), F = (0, d.bG)([I.A], () => null != t.guild_id && I.A.isLurking(t.guild_id), [t]), W = u.id === g, Y = (N || n.canDeleteOwnMessage(g)) && p && !$.MRS.UNDELETABLE.has(n.type);
         n.type === $.lAJ.AUTO_MODERATION_ACTION && (Y = Y && N), t.isModeratorReportChannel() && (Y = Y && n.id !== x?.id && !(0, K.A)(n));
         let q = (0, H.ul)(n),
             J = (0, V.A)(n, t),
@@ -194,7 +194,7 @@ function el(e) {
                 disableReactionCreates: X
             } = (0, z.A)({
                 channel: t,
-                canChat: I,
+                canChat: T,
                 renderReactions: C,
                 canAddNewReactions: y,
                 isLurking: F,
@@ -317,7 +317,7 @@ function el(e) {
             label: X.intl.string(X.t.rBIGBL),
             icon: u.ysw,
             onClick: () => (0, Y.Nw)(t, n)
-        }, "thread") : null, !S && I ? (0, i.jsx)(W.qv, {
+        }, "thread") : null, !S && T ? (0, i.jsx)(W.qv, {
             label: X.intl.string(X.t["39d0Wj"]),
             icon: u.ysw,
             onClick: () => (0, Y.mF)(t, n)
@@ -401,9 +401,9 @@ function ea(e) {
     } = e;
     if (null == n) return;
     let r = (0, N.jq)(n);
-    "add" === t ? (0, I.BB)(i.id, l.id, r, s, {
+    "add" === t ? (0, T.BB)(i.id, l.id, r, s, {
         burst: a
-    }) : (0, I.et)({
+    }) : (0, T.et)({
         channelId: i.id,
         messageId: l.id,
         emoji: r,
@@ -439,7 +439,7 @@ function er(e, t, n) {
                 emoji: l,
                 channel: e,
                 message: t,
-                location: I.qN.MESSAGE_REACTION_PICKER,
+                location: T.qN.MESSAGE_REACTION_PICKER,
                 isBurst: a
             }), s && (a ? o()(n, 150)() : n())
         },
