@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     r = n(73153),
     a = n(734057),
-    s = n(650048),
-    l = n(71393),
+    l = n(650048),
+    s = n(71393),
     o = n(309010),
     d = n(645959),
     _ = n(652215);
@@ -22,10 +22,10 @@ function u(e) {
 class A extends i.Ay.Store {
     static displayName = "AppViewStore";
     initialize() {
-        this.waitFor(s.A, d.default, o.A, l.A, a.A)
+        this.waitFor(l.A, d.default, o.A, s.A, a.A)
     }
     getHomeLink() {
-        return c ?? s.A.fallbackRoute
+        return c ?? l.A.fallbackRoute
     }
 }
 let I = new A(r.h, {

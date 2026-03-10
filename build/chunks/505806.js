@@ -1,7 +1,7 @@
 /** chunk id: 505806 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 }), n(321073);
 var i = n(64700),
     s = n(451988);
@@ -33,17 +33,17 @@ class l extends i.Component {
             numUpdatesToShow: t,
             updateInterval: n,
             pointsToSmooth: i
-        } = this.props, s = Date.now(), l = 0, a = 0, r = [], o = null != e[0] ? e[0].bytes : 0;
+        } = this.props, s = Date.now(), l = 0, r = 0, a = [], o = null != e[0] ? e[0].bytes : 0;
         for (; l < t + i; l++) {
             let t, i = s - (l + 1) * n;
-            for (; a < e.length;)
-                if ((t = e[a]).timestamp > i) a++;
+            for (; r < e.length;)
+                if ((t = e[r]).timestamp > i) r++;
                 else break;
-            if (a === e.length) break;
-            null != t && (r.push(o - t.bytes), o = t.bytes)
+            if (r === e.length) break;
+            null != t && (a.push(o - t.bytes), o = t.bytes)
         }
-        for (; l < t + i; l++) r.push(0);
-        return r.reverse(), r
+        for (; l < t + i; l++) a.push(0);
+        return a.reverse(), a
     }
     smoothDeltaBytes(e) {
         let {
@@ -62,10 +62,10 @@ class l extends i.Component {
             numUpdatesToShow: t,
             pointsToSmooth: n,
             updateInterval: i
-        } = this.props, s = this.props.getHistoricalTotalBytes(), l = null != s[0] ? s[0].bytes : 0, a = [...this.state.deltaBytes.slice(1, t + n), l - this.state.lastTotalBytes];
+        } = this.props, s = this.props.getHistoricalTotalBytes(), l = null != s[0] ? s[0].bytes : 0, r = [...this.state.deltaBytes.slice(1, t + n), l - this.state.lastTotalBytes];
         this.setState({
-            deltaBytes: a,
-            smoothedDeltaBytes: this.smoothDeltaBytes(a),
+            deltaBytes: r,
+            smoothedDeltaBytes: this.smoothDeltaBytes(r),
             lastTotalBytes: l
         }, () => null != e && e(i))
     };
@@ -78,4 +78,4 @@ class l extends i.Component {
         return n(this.state.smoothedDeltaBytes, t, e)
     }
 }
-let a = l
+let r = l

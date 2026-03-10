@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    a = n(253932),
-    r = n(780964),
+    r = n(253932),
+    a = n(780964),
     o = n(840065),
     c = n(711014),
     d = n(115063),
@@ -19,7 +19,7 @@ var i = n(627968),
     p = n(985018),
     g = n(259533);
 let _ = () => {
-    (0, o.openUserSettings)(r.X.ACTIVITY_PRIVACY_PANEL, {
+    (0, o.openUserSettings)(a.X.ACTIVITY_PRIVACY_PANEL, {
         section: A.nc_.ACTIVITY_PRIVACY
     })
 };
@@ -45,8 +45,8 @@ function f(e) {
 function x(e) {
     let {
         onClosePopout: t
-    } = e, n = a.tz.useSetting(), r = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), A = r.filter(e => !o.has(e)), g = (0, u.AB)(A);
-    return 0 === r.length ? null : (0, i.jsxs)(f, {
+    } = e, n = r.tz.useSetting(), a = (0, s.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), o = (0, d.Kk)(), A = a.filter(e => !o.has(e)), g = (0, u.AB)(A);
+    return 0 === a.length ? null : (0, i.jsxs)(f, {
         onClick: () => {
             t(), _()
         },

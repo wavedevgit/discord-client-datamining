@@ -6,16 +6,16 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(476370),
-    a = n(795816),
-    r = n(933958);
+    r = n(795816),
+    a = n(933958);
 let o = e => {
     let {
         surface: t,
         skipFetchingShelf: n = !0
-    } = e, o = (0, s.bG)([r.Ay], () => r.Ay.getState());
+    } = e, o = (0, s.bG)([a.Ay], () => a.Ay.getState());
     return (0, i.useEffect)(() => {
         var e;
-        (null == (e = o.lastCheckedForBadgeableActivities) || new Date(e).getTime() < Date.now() - 432e5) && !n && (0, a.LV)({
+        (null == (e = o.lastCheckedForBadgeableActivities) || new Date(e).getTime() < Date.now() - 432e5) && !n && (0, r.LV)({
             guildId: null
         })
     }, [o.lastCheckedForBadgeableActivities, n]), (0, i.useMemo)(() => (0, l.C)({

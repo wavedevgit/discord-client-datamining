@@ -1,48 +1,49 @@
 /** chunk id: 8880 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => o
 });
 var i = n(311907),
-    a = n(73153);
-let r = {
+    s = n(73153);
+let l = {
         speechRate: 1,
         currentMessage: null
     },
-    l = r;
-class s extends i.Ay.DeviceSettingsStore {
+    r = l;
+class a extends i.Ay.DeviceSettingsStore {
     static displayName = "TTSStore";
     static persistKey = "TTSStore";
     static migrations = [];
     initialize(e) {
-        l = {
-            ...r,
+        r = {
+            ...l,
             ...e ?? null
         }
     }
     isSpeakingMessage(e, t) {
         let {
             currentMessage: n
-        } = l;
+        } = r;
         return null !== n && n.channelId === e && n.messageId === t
     }
     get currentMessage() {
-        return l.currentMessage
+        return r.currentMessage
     }
     get speechRate() {
-        return l.speechRate
+        return r.speechRate
     }
     getUserAgnosticState() {
-        return l
+        return r
     }
 }
-let o = new s(a.h, __OVERLAY__ ? {} : {
+let o = new a(s.h, __OVERLAY__ ? {} : {
     SPEAKING_MESSAGE: function(e) {
         let {
             messageId: t,
             channelId: n
         } = e;
-        l = {
-            ...l,
+        r = {
+            ...r,
             currentMessage: {
                 messageId: t,
                 channelId: n
@@ -50,14 +51,14 @@ let o = new s(a.h, __OVERLAY__ ? {} : {
         }
     },
     STOP_SPEAKING: function() {
-        l = {
-            ...l,
+        r = {
+            ...r,
             currentMessage: null
         }
     },
     SET_TTS_SPEECH_RATE: function(e) {
-        l = {
-            ...l,
+        r = {
+            ...r,
             speechRate: e.speechRate
         }
     }

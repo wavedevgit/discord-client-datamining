@@ -7,16 +7,16 @@ var i = n(627968);
 n(64700);
 var s = n(827734),
     l = n(397927),
-    a = n(823508),
-    r = n(47868),
+    r = n(823508),
+    a = n(47868),
     o = n(985018);
 
 function c(e) {
     let {
         className: t,
         guildId: c
-    } = e, d = (0, a.A)();
-    return (0, i.jsx)(r.A, {
+    } = e, d = (0, r.A)();
+    return (0, i.jsx)(a.A, {
         className: t,
         icon: (0, i.jsx)(l.CTc, {
             size: "custom",

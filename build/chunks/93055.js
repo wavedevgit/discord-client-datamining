@@ -12,8 +12,8 @@ var i = n(64700),
 n(734057);
 var r = n(808728),
     o = n(967198),
-    u = n(287809),
-    d = n(474090);
+    d = n(287809),
+    u = n(474090);
 n(661191);
 var s = n(181079),
     f = n(379587),
@@ -28,7 +28,7 @@ function _(e) {
         hasHigherPrivileges: n
     } = (0, f.m)({
         location: e
-    }), i = (0, l.bG)([u.default], () => u.default.getCurrentUser()), a = d.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
+    }), i = (0, l.bG)([d.default], () => d.default.getCurrentUser()), a = u.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
     return {
         hasAccess: t && a,
         isExperimentEnabled: t,

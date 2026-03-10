@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(735438),
     r = n.n(i),
     a = n(311907),
-    s = n(73153),
-    l = n(933958),
+    l = n(73153),
+    s = n(933958),
     o = n(969151),
     d = n(717125),
     _ = n(698441),
@@ -16,8 +16,8 @@ var i = n(735438),
     I = n(961350),
     E = n(924985),
     g = n(734057),
-    h = n(945886),
-    C = n(760751),
+    C = n(945886),
+    h = n(760751),
     p = n(576705),
     S = n(222823),
     f = n(309010),
@@ -118,7 +118,7 @@ function B(e) {
 class H extends a.Ay.Store {
     static displayName = "ChannelListStore";
     initialize() {
-        this.waitFor(c.A, I.default, E.A, g.A, h.A, l.Ay, C.A, d.A, _.Ay, u.A, p.A, S.Ay, f.A, T.Ay, A.A)
+        this.waitFor(c.A, I.default, E.A, g.A, C.A, s.Ay, h.A, d.A, _.Ay, u.A, p.A, S.Ay, f.A, T.Ay, A.A)
     }
     getGuild(e, t) {
         let n = G.getGuild(e, t?.guildActionRows ?? [], t?.channelNoticeRows ?? []);
@@ -140,7 +140,7 @@ class H extends a.Ay.Store {
         return t.getCategoryFromSection(t.recentsSectionNumber).getShownChannelIds().length
     }
 }
-let W = new H(s.h, {
+let W = new H(l.h, {
     APPLICATION_FETCH_FAIL: j,
     APPLICATION_FETCH_SUCCESS: j,
     APPLICATION_FETCH: j,

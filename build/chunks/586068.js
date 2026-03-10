@@ -12,8 +12,8 @@ n.d(t, {
 var i = n(627968),
     r = n(64700),
     a = n(397927),
-    s = n(329308),
-    l = n(571694),
+    l = n(329308),
+    s = n(571694),
     o = n(47167),
     d = n(713654),
     _ = n(523728),
@@ -23,8 +23,8 @@ var i = n(627968),
     I = n(376943),
     E = n(636585),
     g = n(71393),
-    h = n(994500),
-    C = n(287809),
+    C = n(994500),
+    h = n(287809),
     p = n(427262),
     S = n(985018),
     f = n(649134);
@@ -74,13 +74,13 @@ class T extends r.PureComponent {
             children: t,
             score: n,
             onContextMenu: r,
-            id: s,
-            "aria-label": l
+            id: l,
+            "aria-label": s
         } = this.props;
         return (0, i.jsxs)(a.DUT, {
             role: "option",
-            id: s,
-            "aria-label": l,
+            id: l,
+            "aria-label": s,
             "aria-selected": e,
             focusProps: {
                 enabled: !1
@@ -153,18 +153,18 @@ class m extends r.Component {
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
-            id: l
+            score: l,
+            id: s
         } = this.props;
         return (0, i.jsx)(T, {
-            id: l,
+            id: s,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
             onClick: t,
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
+            score: l,
             children: this.renderContent()
         })
     }
@@ -195,20 +195,20 @@ class b extends r.Component {
             mentions: n,
             category: r,
             channel: a,
-            isMentionLowImportance: s
+            isMentionLowImportance: l
         } = this.props;
         return null != n && n > 0 && (e = (0, i.jsx)(c.A, {
             className: f.qS,
             value: n,
-            lowImportance: s
+            lowImportance: l
         })), null != r && (t = (0, i.jsx)("span", {
             className: f.N4,
-            children: (0, o.m1)(r, C.default, h.A)
+            children: (0, o.m1)(r, h.default, C.A)
         })), (0, i.jsxs)("div", {
             className: f.UU,
             children: [(0, i.jsx)("span", {
                 className: f.YW,
-                children: (0, o.m1)(a, C.default, h.A)
+                children: (0, o.m1)(a, h.default, C.A)
             }), e, this.renderVoiceStates(), t]
         })
     }
@@ -249,7 +249,7 @@ class b extends r.Component {
     getAccessibilityLabel() {
         let {
             channel: e
-        } = this.props, t = g.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, C.default, h.A), i = (0, _.A)(e);
+        } = this.props, t = g.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, h.default, C.A), i = (0, _.A)(e);
         return S.intl.formatToPlainString(S.t["Vw/da+"], {
             name: n,
             type: i,
@@ -263,18 +263,18 @@ class b extends r.Component {
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
-            id: l
+            score: l,
+            id: s
         } = this.props;
         return (0, i.jsx)(T, {
-            id: l,
+            id: s,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
             onClick: t,
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
+            score: l,
             children: this.renderContent()
         })
     }
@@ -288,7 +288,7 @@ class N extends r.Component {
         return (0, i.jsx)("div", {
             className: f.IU,
             children: (0, i.jsx)(a.euF, {
-                src: (0, l.Y)(e),
+                src: (0, s.Y)(e),
                 size: a._3J.SIZE_20,
                 "aria-hidden": !0,
                 status: t
@@ -307,7 +307,7 @@ class N extends r.Component {
             className: f.UU,
             children: [(0, i.jsx)("span", {
                 className: f.YW,
-                children: (0, o.m1)(n, C.default, h.A)
+                children: (0, o.m1)(n, h.default, C.A)
             }), e]
         })
     }
@@ -328,7 +328,7 @@ class N extends r.Component {
         let {
             channel: e,
             mentions: t
-        } = this.props, n = (0, o.m1)(e, C.default, h.A);
+        } = this.props, n = (0, o.m1)(e, h.default, C.A);
         return null != t && t > 0 ? S.intl.formatToPlainString(S.t.LYdVfN, {
             name: n,
             mentions: t
@@ -343,18 +343,18 @@ class N extends r.Component {
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
-            id: l
+            score: l,
+            id: s
         } = this.props;
         return (0, i.jsx)(T, {
-            id: l,
+            id: s,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
             onClick: t,
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
+            score: l,
             children: this.renderContent()
         })
     }
@@ -382,7 +382,7 @@ class L extends r.Component {
                 user: t,
                 comparator: n
             } = this.props,
-            i = h.A.getNickname(t.id);
+            i = C.A.getNickname(t.id);
         return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = i ?? p.Ay.getName(t)), e
     }
     renderName() {
@@ -439,18 +439,18 @@ class L extends r.Component {
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
-            id: l
+            score: l,
+            id: s
         } = this.props;
         return (0, i.jsx)(T, {
-            id: l,
+            id: s,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
             onClick: t,
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
+            score: l,
             children: this.renderContent()
         })
     }
@@ -515,11 +515,11 @@ class G extends r.Component {
                 link: n,
                 children: r
             } = this.props,
-            s = (0, I.vu)(n.path);
-        return null == s || void 0 === s.messageId ? (e = S.intl.string(S.t.qbSCqj), t = (0, i.jsx)(a.qYV, {
+            l = (0, I.vu)(n.path);
+        return null == l || void 0 === l.messageId ? (e = S.intl.string(S.t.qbSCqj), t = (0, i.jsx)(a.qYV, {
             size: "xs",
             color: "currentColor"
-        })) : (0, I.r9)(s) ? (e = S.intl.string(S.t["6Fd/j1"]), t = (0, i.jsx)(a.txs, {
+        })) : (0, I.r9)(l) ? (e = S.intl.string(S.t["6Fd/j1"]), t = (0, i.jsx)(a.txs, {
             size: "xs",
             color: "currentColor"
         })) : (e = S.intl.string(S.t.jQRwp4), t = (0, i.jsx)(a.XAi, {
@@ -543,17 +543,17 @@ class G extends r.Component {
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
-            id: l
+            score: l,
+            id: s
         } = this.props;
         return (0, i.jsx)(T, {
-            id: l,
+            id: s,
             onMouseEnter: e,
             onClick: t,
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
+            score: l,
             children: this.renderContent()
         })
     }
@@ -565,49 +565,49 @@ class U extends r.Component {
             children: r
         } = this.props;
         switch (n.type) {
-            case s.t1.SHOP:
+            case l.t1.SHOP:
                 e = S.intl.string(S.t.pWG4ze), t = (0, i.jsx)(a.U1X, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.SHOP_ORBS_TAB:
+            case l.t1.SHOP_ORBS_TAB:
                 e = S.intl.string(S.t.EBYkzk), t = (0, i.jsx)(a.U1X, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.QUEST_ORBS:
+            case l.t1.QUEST_ORBS:
                 e = `${S.intl.string(S.t.ElYQFS)} ${S.intl.string(S.t.JALI2K)}`, t = (0, i.jsx)(a.r2v, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.NITRO_HOME:
+            case l.t1.NITRO_HOME:
                 e = S.intl.string(S.t.Ipxkog), t = (0, i.jsx)(a.tvc, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.QUEST_HOME:
+            case l.t1.QUEST_HOME:
                 e = S.intl.string(S.t.JALI2K), t = (0, i.jsx)(a.r2v, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.APPS_HOME:
+            case l.t1.APPS_HOME:
                 e = S.intl.string(S.t.PHjkRE), t = (0, i.jsx)(a.k9F, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.SETTINGS:
+            case l.t1.SETTINGS:
                 e = n.label ?? S.intl.string(S.t["3D5yo/"]), t = (0, i.jsx)(a.Zes, {
                     size: "xs",
                     color: "currentColor"
                 });
                 break;
-            case s.t1.PLAYGROUND:
+            case l.t1.PLAYGROUND:
                 if (e = n.label ?? `${n.collectionId} Playground`, null != n.IconComponent) {
                     let e = n.IconComponent;
                     t = (0, i.jsx)(e, {
@@ -646,17 +646,17 @@ class U extends r.Component {
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
-            id: l
+            score: l,
+            id: s
         } = this.props;
         return (0, i.jsx)(T, {
-            id: l,
+            id: s,
             onMouseEnter: e,
             onClick: t,
             onFocus: n,
             onContextMenu: r,
             focused: a,
-            score: s,
+            score: l,
             children: this.renderContent()
         })
     }

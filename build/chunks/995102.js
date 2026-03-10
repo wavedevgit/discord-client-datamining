@@ -9,8 +9,8 @@ var a = n(989349),
     l = n.n(a),
     r = n(311907),
     o = n(397927),
-    u = n(914430),
-    d = n(832712),
+    d = n(914430),
+    u = n(832712),
     s = n(392567),
     f = n(543465),
     c = n(477427),
@@ -45,37 +45,37 @@ function h(e, t) {
         g = (0, v.Ay)(e, !0);
 
     function m(t) {
-        t && e.type === A.rbe.GUILD_CATEGORY && (0, u.Gv)(e.id), d.A.updateChannelOverrideSettings(e.guild_id, e.id, {
+        t && e.type === A.rbe.GUILD_CATEGORY && (0, d.Gv)(e.id), u.A.updateChannelOverrideSettings(e.guild_id, e.id, {
             muted: t
         }, c.G_.muted(t))
     }
-    let b = _.intl.string(_.t.tbeRRJ),
-        E = _.intl.string(_.t.OYefme);
+    let E = _.intl.string(_.t.tbeRRJ),
+        b = _.intl.string(_.t.OYefme);
     switch (e.type) {
         case A.rbe.GUILD_CATEGORY:
-            b = _.intl.string(_.t.pNMCg2), E = _.intl.string(_.t.olaBeG);
+            E = _.intl.string(_.t.pNMCg2), b = _.intl.string(_.t.olaBeG);
             break;
         case A.rbe.GROUP_DM:
-            b = _.intl.string(_.t.LO3kaK), E = _.intl.string(_.t["s5/5fm"]);
+            E = _.intl.string(_.t.LO3kaK), b = _.intl.string(_.t["s5/5fm"]);
             break;
         case A.rbe.DM:
-            b = n ? _.intl.format(_.t.byjuJm, {
+            E = n ? _.intl.format(_.t.byjuJm, {
                 name: g
-            }) : _.intl.string(_.t.LO3kaK), E = n ? _.intl.format(_.t["eC+9rj"], {
+            }) : _.intl.string(_.t.LO3kaK), b = n ? _.intl.format(_.t["eC+9rj"], {
                 name: g
             }) : _.intl.string(_.t["s5/5fm"]);
             break;
         default:
-            b = _.intl.string(_.t.tbeRRJ), E = _.intl.string(_.t.OYefme)
+            E = _.intl.string(_.t.tbeRRJ), b = _.intl.string(_.t.OYefme)
     }
     return a ? (0, i.jsx)(o.Drp, {
         id: "unmute-channel",
-        label: E,
+        label: b,
         subtext: h,
         action: () => m(!1)
     }) : (0, i.jsx)(o.Drp, {
         id: "mute-channel",
-        label: b,
+        label: E,
         action: () => {
             m(!0)
         },
@@ -89,13 +89,13 @@ function h(e, t) {
                 label: r,
                 action: () => {
                     let n, i;
-                    return e.type === A.rbe.GUILD_CATEGORY && (0, u.Gv)(e.id), n = a > 0 ? l()().add(a, "second").toISOString() : null, i = {
+                    return e.type === A.rbe.GUILD_CATEGORY && (0, d.Gv)(e.id), n = a > 0 ? l()().add(a, "second").toISOString() : null, i = {
                         muted: !0,
                         mute_config: {
                             selected_time_window: a,
                             end_time: n
                         }
-                    }, void d.A.updateChannelOverrideSettings(e.guild_id, e.id, i, c.fd.Muted, t)
+                    }, void u.A.updateChannelOverrideSettings(e.guild_id, e.id, i, c.fd.Muted, t)
                 }
             }, a)
         })

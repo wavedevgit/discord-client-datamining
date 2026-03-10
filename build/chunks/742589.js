@@ -12,14 +12,14 @@ var a = n(607399),
     o = n(922281),
     c = n(907745),
     d = n(723702),
-    u = n(837921),
-    _ = n(58736),
+    _ = n(837921),
+    u = n(58736),
     h = n(746080),
     C = n(892513);
 async function g(e) {
     if (!e && (0, d.isMac)() && d.isPlatformEmbedded) {
         let e = await window.DiscordNative.app.getDefaultDoubleClickAction();
-        "Minimize" === e ? u.Ay.minimize() : "Maximize" === e && u.Ay.maximize()
+        "Minimize" === e ? _.Ay.minimize() : "Maximize" === e && _.Ay.maximize()
     }
 }
 
@@ -30,7 +30,7 @@ function A(e) {
         channelId: r,
         guildId: l,
         innerClassname: d,
-        transparent: u = !1,
+        transparent: _ = !1,
         hidden: A = !1,
         toolbar: m,
         mobileToolbar: E,
@@ -40,15 +40,15 @@ function A(e) {
         role: I,
         hideSearch: L,
         hideForLater: O,
-        showDivider: f,
-        disableDoubleClick: y
+        showDivider: y,
+        disableDoubleClick: f
     } = e, {
         enabled: N,
         inInbox: M
     } = s.A.useConfig({
         location: "HeaderBar"
     });
-    return (0, i.jsx)(_.Ay, {
+    return (0, i.jsx)(u.Ay, {
         className: n,
         innerClassName: d,
         toolbar: function() {
@@ -59,12 +59,12 @@ function A(e) {
                     guildId: l,
                     channelId: r,
                     className: C.$P
-                }, l ?? r) : null, f && (0, i.jsx)(_.Ay.Divider, {}), O || !N || M ? null : (0, i.jsx)(o.A, {})]
+                }, l ?? r) : null, y && (0, i.jsx)(u.Ay.Divider, {}), O || !N || M ? null : (0, i.jsx)(o.A, {})]
             })
         }(),
-        transparent: u,
+        transparent: _,
         hidden: A,
-        onDoubleClick: () => g(y),
+        onDoubleClick: () => g(f),
         "aria-label": p,
         "aria-labelledby": b,
         role: I,
@@ -82,7 +82,7 @@ function m(e) {
         role: l,
         disableDoubleClick: s
     } = e;
-    return (0, i.jsx)(_.Ay, {
+    return (0, i.jsx)(u.Ay, {
         className: n,
         onDoubleClick: () => g(s),
         "aria-label": a,
@@ -110,5 +110,5 @@ function E(e) {
         })
     })
 }
-E.Title = _.Ay.Title, E.Icon = _.Ay.Icon, E.ChannelIcon = _.Ay.ChannelIcon, E.Divider = _.Ay.Divider, E.Caret = _.Ay.Caret;
+E.Title = u.Ay.Title, E.Icon = u.Ay.Icon, E.ChannelIcon = u.Ay.ChannelIcon, E.Divider = u.Ay.Divider, E.Caret = u.Ay.Caret;
 let p = E

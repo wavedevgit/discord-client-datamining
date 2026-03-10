@@ -11,12 +11,12 @@ var a = n(827734),
     o = n(682174),
     c = n(927018),
     d = n(715438);
-let u = {
+let _ = {
         trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
         locked: a.A.unsafe_rawColors.PRIMARY_400.css,
         unlocked: a.A.unsafe_rawColors.GREEN_330.css
     },
-    _ = {
+    u = {
         trophy: a.A.unsafe_rawColors.PRIMARY_400.css,
         locked: a.A.unsafe_rawColors.PRIMARY_400.css,
         unlocked: a.A.unsafe_rawColors.GREEN_330.css
@@ -37,7 +37,7 @@ function h(e) {
         {
             color: E
         } = (0, c.ag)(m),
-        p = (0, r.Mw)(h) ? u : _,
+        p = (0, r.Mw)(h) ? _ : u,
         b = (g.size - g.offset - 2 * g.stroke) * .8,
         T = g.size - g.stroke,
         I = {

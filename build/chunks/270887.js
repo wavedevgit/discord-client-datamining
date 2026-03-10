@@ -1,39 +1,48 @@
 /** chunk id: 270887 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(735438),
     r = n.n(i),
-    a = n(181079),
-    s = n(379587),
-    l = n(957300),
-    o = n(832275),
-    d = n(366811),
-    _ = n(309010),
-    c = n(711014),
-    u = n(287809),
-    A = n(619921),
-    I = n(265422),
-    E = n(652215);
-let g = r().throttle(function() {
+    a = n(554146),
+    l = n(771781),
+    s = n(826673),
+    o = n(181079),
+    d = n(379587),
+    _ = n(832275),
+    c = n(366811),
+    u = n(309010),
+    A = n(967198),
+    I = n(711014),
+    E = n(287809),
+    g = n(619921),
+    C = n(265422),
+    h = n(652215);
+let p = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
-        t = c.Ay.getFlattenedGuildIds(),
-        n = l.E.getState().isPreviewMode,
+        t = I.Ay.getFlattenedGuildIds(),
         {
-            enabled: i,
-            hasHigherPrivileges: r
-        } = s.o.getConfig({
+            enabled: n,
+            hasHigherPrivileges: i
+        } = d.o.getConfig({
             location: "navigateToServer"
         }),
-        g = function(e) {
-            let t = d.A.getState().guildId;
+        r = (0, l.dD)(a.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
+        p = (0, s.k8)(a.M.FAVORITES_SERVER_ONBOARDING_INTRO),
+        S = function(e) {
+            let t = c.A.getState().guildId;
             if (null == t) return -2;
-            if (t === E.YYv) return -1;
+            if (t === h.YYv) return -1;
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (g += e) || (0, o.J)(a.A, u.default, n, i, r) || (g += e), -3 === g && (g = t.length - 1), g >= t.length || -2 === g) return void(0, I.a)(A.A.getHomeLink());
-    let h = -1 === g ? E.YYv : t[g],
-        C = _.A.getChannelId(h);
-    (0, I.i)(h, C === h ? null : C, !1)
-}, E.ugG)
+    if (-1 !== (S += e) || (0, _.J)(o.A, E.default, A.A, {
+            favoritesGuildXPEnabled: n,
+            hasHigherPrivileges: i,
+            isMenuItemDCSelected: r,
+            isIntroDCDismissed: p
+        }) || (S += e), -3 === S && (S = t.length - 1), S >= t.length || -2 === S) return void(0, C.a)(g.A.getHomeLink());
+    let f = -1 === S ? h.YYv : t[S],
+        T = u.A.getChannelId(f);
+    (0, C.i)(f, T === f ? null : T, !1)
+}, h.ugG)

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(490249),
-    a = n(158954),
-    r = n(311907),
+    r = n(158954),
+    a = n(311907),
     o = n(397927),
     c = n(736653),
     d = n(793574),
@@ -68,7 +68,7 @@ function k(e) {
         })
     }, $ = B?.widgets != null && B.widgets.length > 0, {
         defaultWishlistId: Z
-    } = (0, r.cf)([_.A], () => ({
+    } = (0, a.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
     })), {
         wishlist: ee
@@ -96,7 +96,7 @@ function k(e) {
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
                         style: J,
                         className: w.tB
-                    }), (0, i.jsxs)(a.d_W, {
+                    }), (0, i.jsxs)(r.d_W, {
                         children: [(0, i.jsxs)(y.A, {
                             children: [(0, i.jsx)(j.A, {
                                 user: t,
@@ -178,12 +178,12 @@ let V = e => {
         handleOpenProfile: t,
         analyticsLocations: n,
         context: l
-    } = e, [a, r] = s.useState("interactive-text-default");
+    } = e, [r, a] = s.useState("interactive-text-default");
     return (0, i.jsx)("div", {
         className: w.qr,
         children: (0, i.jsx)(o.DUT, {
-            onMouseEnter: () => r("interactive-text-hover"),
-            onMouseLeave: () => r("interactive-text-default"),
+            onMouseEnter: () => a("interactive-text-hover"),
+            onMouseLeave: () => a("interactive-text-default"),
             onClick: () => {
                 t(), (0, g.Wn)({
                     action: "PRESS_VIEW_PROFILE",
@@ -193,7 +193,7 @@ let V = e => {
             },
             className: w.wC,
             children: (0, i.jsx)(o.Text, {
-                color: a,
+                color: r,
                 variant: "text-sm/normal",
                 children: P.intl.string(P.t["+Xp3hq"])
             })

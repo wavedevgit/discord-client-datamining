@@ -10,8 +10,8 @@ var i = n(627968),
     o = n(927018),
     c = n(64585),
     d = n(906688),
-    u = n(99761);
-let _ = e => {
+    _ = n(99761);
+let u = e => {
     let {
         color: t
     } = e;
@@ -27,21 +27,21 @@ let _ = e => {
             width: "14.4203",
             height: "14.4203",
             transform: "rotate(45 10.1968 7)",
-            className: u.__invalid_toastBG
+            className: _.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "27.3936",
             y: "0.59021",
             width: "23.4851",
             height: "23.4851",
             transform: "rotate(45 27.3936 0.59021)",
-            className: u.__invalid_toastBG
+            className: _.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "44.5903",
             y: "7",
             width: "14.4203",
             height: "14.4203",
             transform: "rotate(45 44.5903 7)",
-            className: u.__invalid_toastBG
+            className: _.__invalid_toastBG
         }), (0, i.jsx)("rect", {
             x: "10.1968",
             y: "13",
@@ -87,19 +87,19 @@ function h(e) {
     let E = null != A && n,
         p = E ? s.DUT : "div";
     return (0, i.jsxs)(p, {
-        className: l()(u.kL, E && u.b),
+        className: l()(_.kL, E && _.b),
         onClick: () => {
             E && A()
         },
         children: [(0, i.jsx)("div", {
-            className: u.zc,
+            className: _.zc,
             children: (0, i.jsx)(d.A, {
                 achievementId: t.id,
                 size: d.A.Sizes.SIZE_40,
                 unlocked: n
             })
         }), (0, i.jsxs)("div", {
-            className: u.__invalid_nameContainer,
+            className: _.__invalid_nameContainer,
             children: [(0, i.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
@@ -110,8 +110,8 @@ function h(e) {
                 children: g && !n ? "?????" : h()
             })]
         }), (0, i.jsx)("div", {
-            className: u.Db,
-            children: (0, i.jsx)(_, {
+            className: _.Db,
+            children: (0, i.jsx)(u, {
                 color: m
             })
         })]

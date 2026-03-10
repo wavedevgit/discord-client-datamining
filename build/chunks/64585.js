@@ -1,6 +1,6 @@
 /** chunk id: 64585 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => y
 }), n(321073);
 var i = n(73153),
     a = n(272355),
@@ -10,8 +10,8 @@ var i = n(73153),
     o = n(383501),
     c = n(309010),
     d = n(741961),
-    u = n(3137),
-    _ = n(559908),
+    _ = n(3137),
+    u = n(559908),
     h = n(652215);
 let C = (0, r.aN)("poggermode_applause", l.A.getSoundpack()),
     g = !1,
@@ -22,8 +22,8 @@ let C = (0, r.aN)("poggermode_applause", l.A.getSoundpack()),
         C.stop(), g = !1
     },
     b = () => {
-        let e = u.A.isEnabled(),
-            t = u.A.comboSoundsEnabled;
+        let e = _.A.isEnabled(),
+            t = _.A.comboSoundsEnabled;
         return !!e && !!t && null != c.A.getChannelId()
     },
     T = () => {
@@ -42,10 +42,10 @@ let C = (0, r.aN)("poggermode_applause", l.A.getSoundpack()),
     };
 class O extends a.A {
     _initialize() {
-        _.Ay.addChangeListener(this.startAudio), i.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.subscribe("TYPING_STOP", this.stopAudio), i.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.subscribe("CHANNEL_SELECT", this.stopAudio), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
+        u.Ay.addChangeListener(this.startAudio), i.h.subscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.subscribe("TYPING_STOP", this.stopAudio), i.h.subscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.subscribe("CHANNEL_SELECT", this.stopAudio), i.h.subscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio)
     }
     _terminate() {
-        _.Ay.removeChangeListener(this.startAudio), i.h.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.unsubscribe("TYPING_STOP", this.stopAudio), i.h.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.unsubscribe("CHANNEL_SELECT", this.stopAudio), i.h.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(E)
+        u.Ay.removeChangeListener(this.startAudio), i.h.unsubscribe("RTC_CONNECTION_STATE", this.setVolume), i.h.unsubscribe("TYPING_STOP", this.stopAudio), i.h.unsubscribe("TYPING_STOP_LOCAL", this.stopAudio), i.h.unsubscribe("CHANNEL_SELECT", this.stopAudio), i.h.unsubscribe("POGGERMODE_SETTINGS_UPDATE", this.stopAudio), clearTimeout(E)
     }
     setVolume(e) {
         let {
@@ -68,7 +68,7 @@ class O extends a.A {
         if (null == e) return;
         let t = s.default.getId(),
             n = d.A.isTyping(e, t),
-            i = _.Ay.getUserCombo(t, e),
+            i = u.Ay.getUserCombo(t, e),
             a = i?.multiplier ?? 1;
         n && a >= 7 ? g || (C.loop(), g = !0) : p()
     }
@@ -76,4 +76,4 @@ class O extends a.A {
         b() && L("poggermode_achievement_unlock")
     }
 }
-let f = new O
+let y = new O
