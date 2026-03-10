@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(73153),
-    a = n(964486),
+    a = n(73153),
+    r = n(964486),
     o = n(203982),
     c = n(851109),
     d = n(355741),
@@ -31,11 +31,11 @@ function p(e) {
     }, [f]), C = s.useCallback(() => {
         f(!_)
     }, [_, f]);
-    (0, a.Ay)(() => {
+    (0, r.Ay)(() => {
         let e = () => {
             f(!1)
         };
-        return r.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => r.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
+        return a.h.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => a.h.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
     }), s.useEffect(() => (o._.subscribe(h.jej.TOGGLE_INBOX, C), () => void o._.unsubscribe(h.jej.TOGGLE_INBOX, C)), [C]);
     let {
         entrypoint: E

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(73153),
-    a = n(367513),
+    a = n(73153),
+    r = n(367513),
     o = n(58149),
     c = n(688810),
     d = n(313961),
@@ -62,7 +62,7 @@ function C(e) {
         L = C && !b,
         M = v === x._Of.VIDEO && y && !L,
         D = s.useCallback((e, i) => {
-            i !== e && (a.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && g._.dispatch(x.jej.TEXTAREA_BLUR))
+            i !== e && (r.A.updateLayout(t.id, i, n), i === x.DUB.FULL_SCREEN && t.isPrivate() && g._.dispatch(x.jej.TEXTAREA_BLUR))
         }, [n, t]),
         G = s.useCallback(e => {
             null == O || e === x.DUB.FULL_SCREEN && (D(e, j.current), (0, f.sP)(e => {
@@ -101,7 +101,7 @@ function C(e) {
     }, [T, b]), s.useEffect(() => {
         null != O && S.current === x._Of.VIDEO && v === x._Of.VOICE && (0, f.sP)(O, R)
     }, [R, v, S, O]), s.useEffect(() => {
-        !y && b && r.h.wait(() => h.close(x.MLl.CHANNEL_CALL_POPOUT))
+        !y && b && a.h.wait(() => h.close(x.MLl.CHANNEL_CALL_POPOUT))
     }, [y, b]), M) ? (0, i.jsx)(A.A, {
         themeable: !1,
         node: O,

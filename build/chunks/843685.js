@@ -139,7 +139,7 @@ let v = () => (0, i.jsx)("div", {
             }, e.id))]
         })
     },
-    D = e => {
+    L = e => {
         let t, {
                 premiumType: n
             } = e,
@@ -152,7 +152,7 @@ let v = () => (0, i.jsx)("div", {
             alt: l
         })
     },
-    L = () => (0, i.jsx)("thead", {
+    D = () => (0, i.jsx)("thead", {
         children: (0, i.jsxs)("tr", {
             className: a()(C.U1, C.Y9),
             children: [(0, i.jsx)("th", {
@@ -166,13 +166,13 @@ let v = () => (0, i.jsx)("div", {
             }), (0, i.jsx)("th", {
                 scope: "col",
                 className: C.e4,
-                children: (0, i.jsx)(D, {
+                children: (0, i.jsx)(L, {
                     premiumType: T.PremiumTypes.TIER_0
                 })
             }), (0, i.jsx)("th", {
                 scope: "col",
                 className: a()(C.e4, C.Y9),
-                children: (0, i.jsx)(D, {
+                children: (0, i.jsx)(L, {
                     premiumType: T.PremiumTypes.TIER_2
                 })
             })]
@@ -225,7 +225,7 @@ let v = () => (0, i.jsx)("div", {
             O = null != N && (0, x.U9)(N, T.pe.TIER_2),
             R = (0, x.N1)(T.gD.PREMIUM_MONTH_TIER_2),
             y = `${R}/${(0,A.FJ)(T.WT.MONTH)}`,
-            D = (0, A.JM)(T.gD.PREMIUM_MONTH_TIER_0),
+            L = (0, A.JM)(T.gD.PREMIUM_MONTH_TIER_0),
             M = (0, A.JM)(T.gD.PREMIUM_MONTH_TIER_2),
             U = (0, E.g)();
         if (!S || !f) return null;
@@ -251,9 +251,9 @@ let v = () => (0, i.jsx)("div", {
                         })]
                     }), (0, i.jsxs)("table", {
                         className: C.tp,
-                        children: [(0, i.jsx)(L, {}), (0, i.jsxs)("tbody", {
+                        children: [(0, i.jsx)(D, {}), (0, i.jsxs)("tbody", {
                             children: [(0, i.jsx)(G, {
-                                tier0MonthlyPrice: D,
+                                tier0MonthlyPrice: L,
                                 tier2MonthlyPrice: M,
                                 shouldUseDiscountPrice: O,
                                 tier2DiscountedPriceString: y

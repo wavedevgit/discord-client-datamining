@@ -1,7 +1,7 @@
 /** chunk id: 70040 params = (module,exports,require) **/
 n.d(t, {
     Ix: () => k,
-    J3: () => D,
+    J3: () => L,
     Q3: () => w,
     mx: () => H
 });
@@ -35,14 +35,14 @@ var i = n(627968),
     R = n(788868),
     y = n(985018),
     P = n(21082);
-let D = () => {
+let L = () => {
     (0, p.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: O.i.PRIMARY,
         forceTrack: !0
     }), (0, h.nf)(h.HP.CLIENT_THEMES), (0, v.default)()
 };
 
-function L() {
+function D() {
     let e = (0, x.O)(),
         t = (0, S.U9)(e, R.pe.TIER_2) ? y.intl.formatToPlainString(y.t.bkQ4bH, {
             percent: e?.discount.amount
@@ -66,8 +66,8 @@ function G() {
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
             text: y.intl.string(y.t["E+COuA"]),
-            onClick: D
-        }), (0, i.jsx)(L, {})]
+            onClick: L
+        }), (0, i.jsx)(D, {})]
     })
 }
 
@@ -98,7 +98,7 @@ function U() {
                 variant: "secondary",
                 fullWidth: !0,
                 text: y.intl.string(y.t["E+COuA"]),
-                onClick: () => D()
+                onClick: () => L()
             })
         }), (0, i.jsx)("div", {
             className: P.BU
@@ -150,7 +150,7 @@ function V() {
 let w = () => (0, l.bG)([g.A], () => g.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: y.intl.string(y.t.qYXrkX),
-    onClick: D
+    onClick: L
 });
 
 function H(e) {

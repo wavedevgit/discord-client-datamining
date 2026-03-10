@@ -38,9 +38,9 @@ function O(e) {
         analyticsLocation: O,
         currentInvoicePreview: y,
         disabled: P = !1
-    } = e, D = (0, d.bG)([x.A], () => x.A.hidePersonalInformation), [L, G] = (0, d.yK)([E.A], () => [E.A.paymentSources, E.A.hasFetchedPaymentSources]), M = (0, p.Y)((0, f.MP)(t)), {
+    } = e, L = (0, d.bG)([x.A], () => x.A.hidePersonalInformation), [D, G] = (0, d.yK)([E.A], () => [E.A.paymentSources, E.A.hasFetchedPaymentSources]), M = (0, p.Y)((0, f.MP)(t)), {
         analyticsLocations: U
-    } = (0, h.Ay)(), k = s.useMemo(() => Object.values(L).filter(e => !e.invalid), [L]), [V, w] = s.useState(!1), [H, B] = s.useState(t.currency), F = async (e, n, i) => {
+    } = (0, h.Ay)(), k = s.useMemo(() => Object.values(D).filter(e => !e.invalid), [D]), [V, w] = s.useState(!1), [H, B] = s.useState(t.currency), F = async (e, n, i) => {
         if (null == t) throw Error("missing subscription and paymentSource");
         null == e ? await _.r6(t, n, i, U, O) : await _.uK(t, e, n, i, U, O), w(!1), B(n)
     }, Y = async (e, n, i) => {
@@ -115,7 +115,7 @@ function O(e) {
                 } : null,
                 className: r,
                 paymentSources: k,
-                hidePersonalInformation: D,
+                hidePersonalInformation: L,
                 selectedPaymentSourceId: e,
                 onChange: e => {
                     null != e && Y(e, z(e), F)

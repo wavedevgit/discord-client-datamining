@@ -1,12 +1,12 @@
 /** chunk id: 367130 params = (module,exports,require) **/
-e.d(t, {
-    a: () => a
+t.d(e, {
+    a: () => d
 });
-var i = e(562465),
-    r = e(349435),
-    l = e(652215);
+var i = t(562465),
+    r = t(349435),
+    l = t(652215);
 
-function a(n) {
+function d(n) {
     return i.Bo.post({
         url: l.Rsh.ADD_SAFETY_WARNING(n),
         body: {

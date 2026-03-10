@@ -32,7 +32,7 @@ var i = n(627968),
     R = n(788868),
     y = n(985018),
     P = n(539785);
-class D extends s.PureComponent {
+class L extends s.PureComponent {
     _copyModeTimeout = new c.Ep;
     state = {
         copyMode: _.qCr.DEFAULT
@@ -103,7 +103,7 @@ class D extends s.PureComponent {
         })
     }
 }
-class L extends s.PureComponent {
+class D extends s.PureComponent {
     _loadedAt = null;
     state = {
         isOpen: !1,
@@ -259,7 +259,7 @@ class L extends s.PureComponent {
                 children: r ? (0, i.jsx)(_.y$y, {
                     className: P.u1
                 }) : (0, i.jsxs)(s.Fragment, {
-                    children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(D, {
+                    children: [n.length < e.length ? this.renderGenerateGiftCodeRow() : null, n.map(e => (0, i.jsx)(L, {
                         giftCode: e,
                         sku: a,
                         hideCode: o
@@ -286,4 +286,4 @@ let G = d.Ay.connectStores([b.A, f.A, C.A, A.A, I.A, S.default], e => {
         subscriptionPlan: null != n ? (0, O.c9)(n) : null,
         giftCodes: l
     }
-})(L)
+})(D)

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(442433),
-    a = n(686956),
+    a = n(442433),
+    r = n(686956),
     o = n(366811),
     c = n(383394),
     d = n(458294),
@@ -44,9 +44,9 @@ let g = s.memo(function(e) {
         isMentionLowImportance: E.every(e => d.default.getIsMentionLowImportance(e)),
         unread: E.some(e => d.default.hasUnread(e))
     })), j = s.useCallback(() => {
-        a.A.toggleGuildFolderExpand(_)
+        r.A.toggleGuildFolderExpand(_)
     }, [_]), R = s.useCallback(e => {
-        (0, r.L3)(e, async () => {
+        (0, a.L3)(e, async () => {
             let {
                 default: e
             } = await n.e("32857").then(n.bind(n, 842112));

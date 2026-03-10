@@ -49,8 +49,8 @@ function v() {
         P = (0, _.H)({
             location: N.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
-        D = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
-        L = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
+        L = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
+        D = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
         G = C.Q_.useSetting(),
         M = (0, r.A)(),
         U = (0, o.A)() ?? !0,
@@ -76,8 +76,8 @@ function v() {
         paymentsBlocked: y,
         isEligibleForQuests: P,
         isStricterMessageRequestsEnabled: M,
-        hasLibraryApplication: D,
-        hasTOTPEnabled: L,
+        hasLibraryApplication: L,
+        hasTOTPEnabled: D,
         developerMode: G,
         isAdultUser: U,
         hasSecureFramesVerifiedUserIds: k,
@@ -85,7 +85,7 @@ function v() {
         hasBlockedUsers: V,
         hasAgeGatedFeature: H,
         isHDRAccessibilitySettingExperimentEnabled: B
-    }), [G, V, w, D, k, L, n, U, P, R, O, v, j, M, b, y, t, e, H, B])
+    }), [G, V, w, L, k, D, n, U, P, R, O, v, j, M, b, y, t, e, H, B])
 }
 
 function j(e) {

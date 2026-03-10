@@ -32,13 +32,13 @@ var i = n(627968),
     R = n(553081),
     y = n(422936),
     P = n(234419),
-    D = n(558533),
-    L = n(788868),
+    L = n(558533),
+    D = n(788868),
     G = n(652215),
     M = n(615434);
 let U = function(e) {
     let {
-        entrypoint: t = L.Mf.UserSettings
+        entrypoint: t = D.Mf.UserSettings
     } = e;
     (0, T.P)(E.b);
     let n = (0, h.H)(),
@@ -52,10 +52,10 @@ let U = function(e) {
         H = w?.id,
         B = (0, P.V)(),
         F = (0, y.O)(),
-        Y = (0, p.Y)(L.T7),
+        Y = (0, p.Y)(D.T7),
         [z, X] = s.useState(!0),
         W = s.useRef(0),
-        K = (0, N.YE)(w, L.PremiumTypes.TIER_2),
+        K = (0, N.YE)(w, D.PremiumTypes.TIER_2),
         Z = (0, O.A)({
             location: "PremiumHomePage"
         }),
@@ -76,7 +76,7 @@ let U = function(e) {
         n && (null != B || null != F) && (0, j.u1)(B, F)
     }, [n, B, F]);
     let J = (0, r.bG)([S.A], () => S.A.enabled),
-        Q = t === L.Mf.ApplicationStoreHome,
+        Q = t === D.Mf.ApplicationStoreHome,
         $ = J ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(x.uK, {}) : Q && K ? (0, i.jsx)(A.f5, {
             value: U,
             children: (0, i.jsx)(R.A, {
@@ -90,7 +90,7 @@ let U = function(e) {
         children: [Q && (0, i.jsx)(g.A, {}), $]
     }) : (0, i.jsxs)(A.f5, {
         value: U,
-        children: [Q && !Z && (0, i.jsx)(g.A, {}), (0, i.jsx)(D.A, {
+        children: [Q && !Z && (0, i.jsx)(g.A, {}), (0, i.jsx)(L.A, {
             entrypoint: t
         })]
     })

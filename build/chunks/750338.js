@@ -53,8 +53,8 @@ let T = e => {
             badgeVariant: R = "gradient",
             size: y,
             backgroundVideoUrl: P,
-            previewImageStyle: D = h.Tb.CONTAINED
-        } = e, L = (0, A.TM)(), G = s.useRef(null), M = s.useRef(0), U = s.useRef(null), k = s.useRef(!1), V = (0, u.A)("(min-width: 1140px)"), w = D === h.Tb.OVERLAY && (y !== h.A0.LARGE || !V), H = y === h.A0.LARGE && V && D === h.Tb.OVERLAY, B = null != P && V && y === h.A0.LARGE, F = s.useMemo(() => (0, r.debounce)(() => {
+            previewImageStyle: L = h.Tb.CONTAINED
+        } = e, D = (0, A.TM)(), G = s.useRef(null), M = s.useRef(0), U = s.useRef(null), k = s.useRef(!1), V = (0, u.A)("(min-width: 1140px)"), w = L === h.Tb.OVERLAY && (y !== h.A0.LARGE || !V), H = y === h.A0.LARGE && V && L === h.Tb.OVERLAY, B = null != P && V && y === h.A0.LARGE, F = s.useMemo(() => (0, r.debounce)(() => {
             m.default.track(p.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
                 box_type: (0, r.snakeCase)(t)
             })
@@ -113,7 +113,7 @@ let T = e => {
                 ref: G,
                 children: (0, i.jsx)("source", {
                     src: f,
-                    type: L ? x.a.MP4 : x.a.WEBM
+                    type: D ? x.a.MP4 : x.a.WEBM
                 })
             }, f)
         }), Z = b % 2 != 0;

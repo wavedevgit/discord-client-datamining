@@ -2,8 +2,8 @@
 n.d(t, {
     Al: () => o,
     Gv: () => a,
-    fh: () => l,
-    rZ: () => r
+    fh: () => r,
+    rZ: () => l
 });
 var i = n(73153);
 
@@ -14,14 +14,14 @@ function a(e) {
     })
 }
 
-function l(e) {
+function r(e) {
     i.h.dispatch({
         type: "CATEGORY_EXPAND",
         id: e
     })
 }
 
-function r(e) {
+function l(e) {
     i.h.dispatch({
         type: "CATEGORY_COLLAPSE_ALL",
         guildId: e

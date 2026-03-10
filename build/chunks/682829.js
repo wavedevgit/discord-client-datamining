@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(287809),
     y = n(615405),
     P = n(295405),
-    D = n(166403),
-    L = n(469778),
+    L = n(166403),
+    D = n(469778),
     G = n(954571),
     M = n(975571),
     U = n(927578),
@@ -68,7 +68,7 @@ function Z() {
 }
 
 function q() {
-    let e = (0, r.bG)([L.A], () => L.A.getForApplication(F.tv));
+    let e = (0, r.bG)([D.A], () => D.A.getForApplication(F.tv));
     return s.useEffect(() => {
         (0, _.LM)(F.tv)
     }, []), (0, i.jsx)(o.nVY, {
@@ -88,19 +88,19 @@ function J() {
 }
 let Q = function() {
     var e;
-    let t = (0, r.bG)([D.A], () => D.A.getPremiumTypeSubscription()),
+    let t = (0, r.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
         n = (0, p.A)({
             subscriptionFilter: e => B.Hy.has(e.status)
         }),
         l = (0, r.bG)([R.default], () => R.default.getCurrentUser()),
         _ = n.length > 1,
         E = (0, r.bG)([P.A], () => null != t && null != t.paymentSourceId ? P.A.getPaymentSource(t.paymentSourceId) : null, [t]),
-        T = (0, r.bG)([D.A], () => D.A.hasFetchedSubscriptions()),
-        L = (0, r.bG)([y.A], () => y.A.isBusy),
+        T = (0, r.bG)([L.A], () => L.A.hasFetchedSubscriptions()),
+        D = (0, r.bG)([y.A], () => y.A.isBusy),
         U = (0, x.Y)(),
         w = (0, r.bG)([O.A], () => O.A.getSubsection()),
-        Z = (0, r.bG)([D.A], () => D.A.getActiveApplicationSubscriptions()?.length ?? 0),
-        Q = (0, r.bG)([D.A], () => Object.values(D.A.getSubscriptions() ?? {}).filter(e => e.type === Y.rzx.GUILD).filter(e => e.status !== Y.Dmq.ENDED).length),
+        Z = (0, r.bG)([L.A], () => L.A.getActiveApplicationSubscriptions()?.length ?? 0),
+        Q = (0, r.bG)([L.A], () => Object.values(L.A.getSubscriptions() ?? {}).filter(e => e.type === Y.rzx.GUILD).filter(e => e.status !== Y.Dmq.ENDED).length),
         $ = (0, h.A)({
             forceFetch: !0
         }),
@@ -122,7 +122,7 @@ let Q = function() {
             children: [_ ? (0, i.jsx)(B.Sb, {}) : null, null != t ? (0, i.jsx)(B.Ay, {
                 subscription: t,
                 paymentSource: E,
-                busy: L,
+                busy: D,
                 subscriptions: n
             }) : (0, i.jsx)(B.TC, {}), en && (e = !!l?.isPremiumWithPremiumGroup(), (0, i.jsxs)("section", {
                 children: [(0, i.jsx)(o.Heading, {

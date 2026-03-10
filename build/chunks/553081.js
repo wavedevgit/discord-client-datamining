@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(965591),
     y = n(495022),
     P = n(157839),
-    D = n(382694),
-    L = n(60508),
+    L = n(382694),
+    D = n(60508),
     G = n(821158),
     M = n(235365),
     U = n(994763),
@@ -117,7 +117,7 @@ let F = e => {
                             userDiscountOffer: et,
                             discountedPrice: eo
                         })
-                    }), n && (0, i.jsx)(D.A, {
+                    }), n && (0, i.jsx)(L.A, {
                         glowingPerkId: q
                     }), !n && (0, i.jsx)(P.A, {
                         variant: N.cJ.WHATS_NEW,
@@ -171,7 +171,7 @@ let F = e => {
                 churnDiscountOffer: et,
                 discountedPrice: eo
             })]
-        }), !n && (0, i.jsx)(L.A, {
+        }), !n && (0, i.jsx)(D.A, {
             isAllPerksVisible: ei,
             setIsAllPerksVisible: es,
             previousComponent: N.A2.HOME,

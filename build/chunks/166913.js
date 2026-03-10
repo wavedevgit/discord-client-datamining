@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(729230),
     y = n(227273),
     P = n(244778),
-    D = n(788868),
-    L = n(652215),
+    L = n(788868),
+    D = n(652215),
     G = n(985018),
     M = n(639179),
     U = n(432221),
@@ -60,7 +60,7 @@ let V = e => {
             K = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
             Z = null != K ? (0, E.EL)(K) : null,
             q = null != Z ? E.Ay.getSkuIdForPlan(Z.planId) : null,
-            J = null !== q && q !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
+            J = null !== q && q !== L.pe.TIER_2 ? L.pe.TIER_2 : null,
             Q = (0, C.V)(),
             $ = Q?.subscription_trial?.sku_id,
             ee = (0, S.ar)(),
@@ -87,15 +87,15 @@ let V = e => {
                     innerRef: e,
                     tier0CTAButton: (0, i.jsx)(N.A, {
                         showIcon: !1,
-                        subscriptionTier: D.pe.TIER_0,
+                        subscriptionTier: L.pe.TIER_0,
                         className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
                         buttonShineClassName: M.Qr
                     }),
-                    tier2CTAButton: $ === D.pe.TIER_0 ? (0, i.jsx)(N.A, {
+                    tier2CTAButton: $ === L.pe.TIER_0 ? (0, i.jsx)(N.A, {
                         showIcon: !1,
-                        subscriptionTier: D.pe.TIER_2,
+                        subscriptionTier: L.pe.TIER_2,
                         className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
@@ -103,7 +103,7 @@ let V = e => {
                     }) : (0, i.jsx)(N.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
-                        subscriptionTier: D.pe.TIER_2,
+                        subscriptionTier: L.pe.TIER_2,
                         className: M.Ph,
                         hasActivePromotion: en,
                         textOptions: {
@@ -166,7 +166,7 @@ let V = e => {
             }), (0, i.jsx)(d.L, {
                 innerRef: n,
                 onChange: e => {
-                    e && !Y && (x.default.track(L.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !Y && (x.default.track(D.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: es
                     }), z(!0))
                 },

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
     A: () => l,
-    t: () => r
+    t: () => a
 });
 var i = n(512750),
     s = n(840120);
@@ -12,6 +12,6 @@ function l(e, t, n) {
     return t.skuId === i.FB && l
 }
 
-function r(e, t, n) {
+function a(e, t, n) {
     return t.skuId === i.FB && (0, s.ip)(e, n)
 }

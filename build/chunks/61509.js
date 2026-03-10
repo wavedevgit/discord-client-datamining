@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(95035),
     y = n(337095),
     P = n(871123),
-    D = n(510022),
-    L = n(378058),
+    L = n(510022),
+    D = n(378058),
     G = n(148355),
     M = n(780964),
     U = n(12901),
@@ -515,7 +515,7 @@ class em extends s.PureComponent {
                             sku_id: t.sku.id,
                             application_id: l.id,
                             location_stack: r
-                        }), (0, D.n)({
+                        }), (0, L.n)({
                             sku: t.sku,
                             application: l,
                             analyticsLocations: r
@@ -654,7 +654,7 @@ class em extends s.PureComponent {
             })
         } else if (null != _)
             if (t = l.isGuildProductPurchase && l.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : _.name, null != d) {
-                let t = (0, L.Id)(d);
+                let t = (0, D.Id)(d);
                 e = (0, i.jsx)(G.A, {
                     disableAnimation: !u,
                     isInteracting: u,

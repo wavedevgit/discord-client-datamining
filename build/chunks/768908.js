@@ -35,10 +35,10 @@ var i = n(627968),
     R = n(976092),
     y = n(20976),
     P = n(473169);
-let D = r.Ay.connectStores([I.A], () => ({
+let L = r.Ay.connectStores([I.A], () => ({
         theme: I.A.theme
     }))(c.ppr),
-    L = (0, f.isWindows)();
+    D = (0, f.isWindows)();
 
 function G(e) {
     let {
@@ -93,7 +93,7 @@ function M(e) {
     } = (0, r.cf)([m.Ay], () => ({
         canToggleDetection: null == f || m.Ay.isDetectionEnabled(f),
         isCurrentGameDetectionEnabled: m.Ay.isDetectionEnabled(I)
-    })), P = (0, r.bG)([m.Ay], () => m.Ay.getVisibleGame()), [D, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(I) ? C ? I.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+    })), P = (0, r.bG)([m.Ay], () => m.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(I) ? C ? I.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
         subgameName: I.gameName
     }) : I.name, [I, C]), [k, V] = s.useState(U ?? "???"), w = a()(y.tR, {
         [O.LO]: !l,
@@ -183,7 +183,7 @@ function M(e) {
                         })
                     })
                 }()]
-            }), A || D ? null : (0, i.jsx)("div", {
+            }), A || L ? null : (0, i.jsx)("div", {
                 className: a()(y.tR, y.oA, y.LT, O.E3),
                 children: (0, i.jsx)(d.m_, {
                     text: j.intl.string(j.t["y0B+lo"]),
@@ -191,7 +191,7 @@ function M(e) {
                         "aria-label": j.intl.string(j.t["y0B+lo"]),
                         className: O.ym,
                         onClick: function() {
-                            if (D) return;
+                            if (L) return;
                             let e = null != I.id ? E.A.getDetectableGame(I.id) : null;
                             S.default.track(N.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
@@ -246,7 +246,7 @@ function M(e) {
                     })
                 })
             }(), function() {
-                if (!L || null != f) return null;
+                if (!D || null != f) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
@@ -325,7 +325,7 @@ function k(e) {
     let {
         children: t
     } = e;
-    return (0, i.jsxs)(D, {
+    return (0, i.jsxs)(L, {
         className: P.eT,
         children: [(0, i.jsx)(c.G8R, {
             darkSrc: n(839628),

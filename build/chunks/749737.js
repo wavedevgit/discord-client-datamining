@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(354328),
     y = n(142120),
     P = n(353171),
-    D = n(735729),
-    L = n(237984),
+    L = n(735729),
+    D = n(237984),
     G = n(195043),
     M = n(111162),
     U = n(274184),
@@ -725,7 +725,7 @@ function ea() {
         disableAppCollectionsCache: M.default.disableAppCollectionsCache,
         preventPopoutClose: M.default.preventPopoutClose,
         logKeyboardMismatches: M.default.logKeyboardMismatches
-    })), d = (0, u.bG)([j.Ay], () => j.Ay.get("idle_status_indicator")), c = (0, D.A)("go_back_to_regular_input"), _ = B.HZ.useSetting();
+    })), d = (0, u.bG)([j.Ay], () => j.Ay.get("idle_status_indicator")), c = (0, L.A)("go_back_to_regular_input"), _ = B.HZ.useSetting();
     return (0, i.jsxs)(A.nVY, {
         label: "Developer Flags",
         children: [(0, i.jsx)(G.x, {
@@ -914,7 +914,7 @@ function ed() {
                 children: (0, i.jsx)(A.Button, {
                     variant: "primary",
                     text: "Open Overlay",
-                    onClick: () => (0, L.o)()
+                    onClick: () => (0, D.o)()
                 })
             }), (0, i.jsx)(G.x, {
                 setting: W.H.DEVELOPER_OPTIONS_RESET_SOCKET,

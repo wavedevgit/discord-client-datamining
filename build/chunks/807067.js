@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(835245),
-    r = n(724002),
-    a = n(287174),
+    a = n(724002),
+    r = n(287174),
     o = n(487899),
     c = n(311907),
     d = n(397927),
@@ -30,19 +30,19 @@ var i = n(627968),
     v = n(652215),
     y = n(985018),
     j = n(176187);
-let R = a.K.APP_LAUNCHER_IN_VOICE_BANNER,
+let R = r.K.APP_LAUNCHER_IN_VOICE_BANNER,
     O = `vc-activities-${(0,l.A)()}`;
 
 function L(e) {
     let t, n, {
             channel: l,
-            openInPopout: a,
+            openInPopout: r,
             onClick: h
         } = e,
         {
             fetchState: g,
             voiceBannerCollection: C
-        } = (t = (0, c.bG)([I.default], () => I.default.onlyShowPreviewAppCollections) ? r.W.PREVIEW : r.W.ACTIVE, s.useEffect(() => {
+        } = (t = (0, c.bG)([I.default], () => I.default.onlyShowPreviewAppCollections) ? a.W.PREVIEW : a.W.ACTIVE, s.useEffect(() => {
             (0, _.An)({
                 surface: R,
                 activeState: t
@@ -85,7 +85,7 @@ function L(e) {
                     type: "channel",
                     channel: l
                 },
-                openInPopout: a,
+                openInPopout: r,
                 analyticsLocation: u.A.APP_LAUNCHER_IN_VOICE_BANNER,
                 initialState: {
                     applicationId: N.application.id
@@ -105,8 +105,8 @@ let M = s.forwardRef(function(e, t) {
     var n;
     let {
         channel: l,
-        isHovered: r,
-        closePopout: a,
+        isHovered: a,
+        closePopout: r,
         onMouseEnter: o,
         onMouseLeave: c,
         onClick: A,
@@ -121,8 +121,8 @@ let M = s.forwardRef(function(e, t) {
             guild_id: f
         })
     }, [_, f]), s.useEffect(() => {
-        r || a()
-    }, [a, r]);
+        a || r()
+    }, [r, a]);
     let x = (0, C.Us)(),
         {
             analyticsLocations: I,
@@ -203,7 +203,7 @@ let M = s.forwardRef(function(e, t) {
                         openInPopout: M,
                         channel: l,
                         onClick: () => {
-                            A(), a()
+                            A(), r()
                         }
                     }), (0, i.jsx)("div", {
                         className: j.ht,
@@ -214,7 +214,7 @@ let M = s.forwardRef(function(e, t) {
                             },
                             activityItem: e,
                             onClick: () => {
-                                a(), A()
+                                r(), A()
                             },
                             aspectRatio: T.C.AspectRatio.THIRTEEN_BY_ELEVEN,
                             animatedDivClass: j.KU,

@@ -138,7 +138,7 @@ function A(e) {
                     (0, a.L3)(e.event, async () => {
                         let {
                             default: t
-                        } = await Promise.all([n.e("97262"), n.e("15438")]).then(n.bind(n, 4027));
+                        } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
                         return n => (0, i.jsx)(t, {
                             ...n,
                             channel: e.channel,

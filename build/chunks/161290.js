@@ -1,6 +1,6 @@
 /** chunk id: 161290 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => L
 });
 var i = n(627968);
 n(64700);
@@ -34,7 +34,7 @@ var s = n(284009),
     y = n(985018),
     P = n(264671);
 
-function D() {
+function L() {
     let e = (0, a.bG)([O.default], () => {
             let e = O.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
@@ -43,8 +43,8 @@ function D() {
         {
             pendingAvatar: n,
             pendingGlobalName: s,
-            pendingBanner: D,
-            pendingBio: L,
+            pendingBanner: L,
+            pendingBio: D,
             pendingPronouns: G,
             pendingAccentColor: M,
             pendingThemeColors: U,
@@ -66,7 +66,7 @@ function D() {
         B = (0, o.EC)(),
         F = R.Ay.canUsePremiumProfileCustomization(e),
         Y = (0, u.z5)(n, e.avatar),
-        z = (0, u.Ac)(D, t?.banner),
+        z = (0, u.Ac)(L, t?.banner),
         X = (0, j.Ay)(e.id),
         W = X?.getLegacyUsername(),
         K = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
@@ -123,7 +123,7 @@ function D() {
             sectionTitle: y.intl.string(y.t.ZzAR2Y),
             errors: Z,
             onBioChange: e => (0, u.Ru)(e, t?.bio),
-            pendingBio: L,
+            pendingBio: D,
             currentBio: t?.bio ?? ""
         }, "bio"), q.length > 0 && (0, i.jsx)(d.A, {
             availablePrimaryGuilds: q,

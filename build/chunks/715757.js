@@ -4,7 +4,7 @@ t.d(n, {
     V: () => h,
     W1: () => f,
     ml: () => _,
-    vb: () => g
+    vb: () => m
 });
 var r = t(64700),
     i = t(311907),
@@ -12,24 +12,24 @@ var r = t(64700),
     a = t(803306),
     d = t(71393),
     u = t(320501),
-    s = t(376708),
-    o = t(272720),
+    o = t(376708),
+    s = t(272720),
     c = t(56595);
 
 function A(e) {
     return (0, i.bG)([d.A], () => {
         if (null == e) return !1;
         let n = d.A.getGuild(e);
-        return null != n && (0, c.A)(n) && null != (0, o.A)(n)
+        return null != n && (0, c.A)(n) && null != (0, s.A)(n)
     })
 }
 
 function h(e) {
-    return (0, s.uW)(e)
+    return (0, o.uW)(e)
 }
 
 function f(e) {
-    return (0, s.xJ)(e)
+    return (0, o.xJ)(e)
 }
 
 function _(e) {
@@ -47,7 +47,7 @@ function _(e) {
     }, [t, n])
 }
 
-function g(e) {
+function m(e) {
     let n = e?.messageSnapshots[0]?.moderatorReport?.reported_user_id;
     null != n && (0, a.wz)(n)
 }

@@ -1,18 +1,18 @@
 /** chunk id: 543897 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 }), n(321073);
 var i = n(311907),
     s = n(73153);
 let l = [];
-class r extends i.Ay.Store {
+class a extends i.Ay.Store {
     static displayName = "GeoRestrictedGuildStore";
     getGeoRestrictedGuilds() {
         return l
     }
 }
-let a = new r(s.h, {
+let r = new a(s.h, {
     CONNECTION_OPEN: function(e) {
         l = e.geoRestrictedGuilds
     },

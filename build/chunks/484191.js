@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(956793),
-    a = n(164617),
+    a = n(956793),
+    r = n(164617),
     o = n(47167),
     c = n(202384),
     d = n(51758),
@@ -23,7 +23,7 @@ let _ = function(e) {
         channel: n,
         hasConnectPermission: _
     } = e, f = t.filter(m.Xw), x = (0, d.H)(n.guild_id), C = s.useCallback(() => {
-        x ? (0, c.Ze)(n.guild_id, () => r.default.selectVoiceChannel(n.id)) : r.default.selectVoiceChannel(n.id)
+        x ? (0, c.Ze)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
     }, [n.id, n.guild_id, x]), E = 4 === f.length ? 2 : 3, I = (0, o.Ay)(n);
     return (0, i.jsxs)("div", {
         className: g.kL,
@@ -38,7 +38,7 @@ let _ = function(e) {
                 className: g.Vs,
                 inCall: !0,
                 noVideoRender: !0,
-                popoutType: a.N.NO_POPOUT,
+                popoutType: r.N.NO_POPOUT,
                 width: 48
             }, e.id))
         }), (0, i.jsx)(l.Heading, {

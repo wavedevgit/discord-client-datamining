@@ -35,10 +35,10 @@ let O = s.memo(s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: l
     } = e, {
         analyticsLocations: O
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), y = (0, A.A)(), P = null != y, D = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
-        visibilityPercentageRef: L,
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), y = (0, A.A)(), P = null != y, L = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+        visibilityPercentageRef: D,
         visibilityPercentage: G
-    } = (0, I.U)(!D), M = (0, o.bG)([g.A], () => g.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, m.ar)() && !V;
+    } = (0, I.U)(!L), M = (0, o.bG)([g.A], () => g.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, m.ar)() && !V;
     return (0, i.jsx)(_.f5, {
         value: O,
         children: (0, i.jsx)("div", {
@@ -46,7 +46,7 @@ let O = s.memo(s.forwardRef((e, t) => {
             className: a()(j.kL, n),
             "data-testid": "marketing-page-hero-header",
             children: (0, i.jsx)("div", {
-                ref: L,
+                ref: D,
                 children: (0, i.jsxs)("div", {
                     className: j.hQ,
                     children: [(0, i.jsx)(b.A, {

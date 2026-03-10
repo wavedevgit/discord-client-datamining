@@ -30,26 +30,24 @@ function G(n) {
     let {
         channel: t,
         onSelect: e
-    } = n, a = (0, y.A)(t), d = (0, C.Ay)(t), c = (0, f.A)(t), _ = (0, h.A)(t), p = (0, g.A)(t), b = (0, A.A)(t), j = (0, o.A)(t), G = (0, v.A)(t), O = (0, s.A)({
+    } = n, a = (0, y.A)(t), d = (0, A.A)(t), c = (0, o.A)(t), u = (0, v.A)(t), g = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
-    }), N = (0, u.os)("ChannelCategoryFavoritesMenu"), T = (0, x.Ay)(t);
+    });
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
         onClose: l.Z_,
         "aria-label": E.intl.string(E.t.Xm41aV),
         onSelect: e,
-        children: [(0, i.jsxs)(r.rXV, {
-            children: [a, j, b]
+        children: [(0, i.jsx)(r.rXV, {
+            children: a
         }), (0, i.jsxs)(r.rXV, {
-            children: [d, N ? T : c]
-        }), (0, i.jsxs)(r.rXV, {
-            children: [_, p]
+            children: [c, d]
         }), (0, i.jsx)(r.rXV, {
-            children: G
+            children: u
         }), (0, i.jsx)(r.rXV, {
-            children: O
+            children: g
         })]
     })
 }

@@ -32,8 +32,8 @@ var i, s, l, a = n(627968),
     R = n(817577),
     y = n(748222),
     P = n(743501),
-    D = n(652700),
-    L = n(282818),
+    L = n(652700),
+    D = n(282818),
     G = n(965132),
     M = n(576765),
     U = n(88433),
@@ -86,8 +86,8 @@ let ea = () => {
             assetUrl: l ? Q.A : ee.A
         },
         displayNameStyles: {
-            thumbnail: D.A,
-            assetUrl: l ? P.A : L.A
+            thumbnail: L.A,
+            assetUrl: l ? P.A : D.A
         },
         referralProgram: {
             thumbnail: B.A,

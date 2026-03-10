@@ -14,7 +14,7 @@ var a = n(627968),
     m = n(178540),
     h = n(859703),
     x = n(341915),
-    p = n(245853),
+    p = n(12251),
     g = n(33621),
     _ = n(551456),
     f = n(714510),
@@ -271,9 +271,9 @@ function F(e) {
         content: n,
         ctaContent: j.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_ONE,
         sourceQuestContent: L
-    }), ey = p.wK.useConfig({
+    }), ey = p.s5.useConfig({
         location: O.rE.QUESTS_CARD
-    }), eT = ey.enabled && ey.variant === p.dF.NEXT_TO_PRIMARY_CTA, eS = null;
+    }), eT = ey.enabled && (ey.variant === p.tL.LEARN_MORE_CTA_ONLY || ey.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eS = null;
     if (eT) {
         let e = (0, C.wr)(t);
         eS = (0, a.jsx)(r.$nd, {

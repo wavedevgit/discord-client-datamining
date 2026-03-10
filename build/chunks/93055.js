@@ -1,16 +1,16 @@
 /** chunk id: 93055 params = (module,exports,require) **/
 n.d(t, {
-    Af: () => C,
+    Af: () => h,
     CJ: () => m,
-    Fe: () => g,
-    Rm: () => h,
-    TW: () => _
+    Fe: () => E,
+    Rm: () => _,
+    TW: () => C
 }), n(321073);
 var i = n(64700),
     a = n(478437),
-    l = n(311907);
+    r = n(311907);
 n(734057);
-var r = n(808728),
+var l = n(808728),
     o = n(967198),
     d = n(287809),
     u = n(474090);
@@ -22,13 +22,13 @@ var s = n(181079),
     A = n(652215),
     p = n(788868);
 
-function _(e) {
+function C(e) {
     let {
         enabled: t,
         hasHigherPrivileges: n
     } = (0, f.m)({
         location: e
-    }), i = (0, l.bG)([d.default], () => d.default.getCurrentUser()), a = u.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
+    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), a = u.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
     return {
         hasAccess: t && a,
         isExperimentEnabled: t,
@@ -37,19 +37,19 @@ function _(e) {
     }
 }
 
-function C(e) {
-    return (0, l.bG)([s.A], () => s.A.getFavorite(e))
+function h(e) {
+    return (0, r.bG)([s.A], () => s.A.getFavorite(e))
 }
 
-function h() {
-    return (0, l.bG)([r.Ay], () => r.Ay.getChannels(A.YYv))[a.r.GUILD_CATEGORY].map(e => ({
+function _() {
+    return (0, r.bG)([l.Ay], () => l.Ay.getChannels(A.YYv))[a.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function g() {
-    return (0, l.bG)([o.A], () => o.A.getGuildId()) === A.YYv
+function E() {
+    return (0, r.bG)([o.A], () => o.A.getGuildId()) === A.YYv
 }
 
 function m() {

@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(638182),
     y = n(652215),
     P = n(746080),
-    D = n(355097),
-    L = n(985018),
+    L = n(355097),
+    D = n(985018),
     G = n(185814);
 let M = e => {
         let {
@@ -93,20 +93,20 @@ let M = e => {
             onChangePlanClick: o
         } = e;
         return n && (t || l) ? null : (0, i.jsx)(c.D0$, {
-            label: L.intl.string(L.t["4neDM+"]),
+            label: D.intl.string(D.t["4neDM+"]),
             children: (0, i.jsx)("div", {
                 className: G.__invalid_rowButtons,
                 children: n ? (0, i.jsx)(c.Button, {
                     variant: "primary",
-                    text: L.intl.string(L.t.y3mAE4),
+                    text: D.intl.string(D.t.y3mAE4),
                     onClick: r,
                     loading: s
                 }) : (0, i.jsxs)(i.Fragment, {
                     children: [!t && !l && (0, i.jsx)(A.A, {
-                        label: L.intl.string(L.t.FRbWR8),
+                        label: D.intl.string(D.t.FRbWR8),
                         onClick: o
                     }), (0, i.jsx)(A.A, {
-                        label: L.intl.string(L.t.Dx0lF7),
+                        label: D.intl.string(D.t.Dx0lF7),
                         onClick: a
                     })]
                 })
@@ -164,7 +164,7 @@ let M = e => {
                             children: [(0, i.jsx)(c.Text, {
                                 variant: "text-md/medium",
                                 className: G.J5,
-                                children: null != r ? r.name : L.intl.string(L.t["He+cmd"])
+                                children: null != r ? r.name : D.intl.string(D.t["He+cmd"])
                             }), (0, i.jsxs)("div", {
                                 className: G.xp,
                                 children: [(0, i.jsx)(c.Text, {
@@ -172,24 +172,24 @@ let M = e => {
                                     className: G.KR,
                                     children: n.name
                                 }), Y ? (0, i.jsx)(c.LpS, {
-                                    text: L.intl.string(L.t["7uFZGt"])
+                                    text: D.intl.string(D.t["7uFZGt"])
                                 }) : q ? (0, i.jsx)(c.LpS, {
-                                    text: L.intl.string(L.t["6anton"]),
+                                    text: D.intl.string(D.t["6anton"]),
                                     color: o.A.unsafe_rawColors.BRAND_500.css
                                 }) : z ? (0, i.jsx)(d.m, {
-                                    text: L.intl.string(L.t.eSuJE2),
+                                    text: D.intl.string(D.t.eSuJE2),
                                     children: (0, i.jsx)("div", {
                                         children: (0, i.jsx)(c.LpS, {
                                             className: G.qc,
-                                            text: L.intl.string(L.t.NrRwIl),
+                                            text: D.intl.string(D.t.NrRwIl),
                                             color: o.A.unsafe_rawColors.YELLOW_300.css
                                         })
                                     })
                                 }) : null, B ? (0, i.jsx)(d.m, {
-                                    text: L.intl.string(L.t.nv1IqK),
+                                    text: D.intl.string(D.t.nv1IqK),
                                     children: (0, i.jsx)("div", {
                                         children: (0, i.jsx)(c.LpS, {
-                                            text: L.intl.string(L.t["sBl3X/"]),
+                                            text: D.intl.string(D.t["sBl3X/"]),
                                             color: o.A.colors.BACKGROUND_MOD_MUTED.css
                                         })
                                     })
@@ -197,7 +197,7 @@ let M = e => {
                             })]
                         }), (0, i.jsx)(c.DUT, {
                             onClick: s(A),
-                            "aria-label": L.intl.string(L.t.e5eQOy),
+                            "aria-label": D.intl.string(D.t.e5eQOy),
                             "aria-controls": V,
                             "aria-expanded": g,
                             focusProps: {
@@ -227,18 +227,18 @@ let M = e => {
                         label: Z,
                         value: K
                     }), (0, i.jsx)(M, {
-                        label: L.intl.string(L.t.dltUMH),
+                        label: D.intl.string(D.t.dltUMH),
                         value: X,
                         showInfoIcon: q,
-                        infoIconTooltipText: q ? L.intl.string(L.t["/q6fpa"]) : void 0
+                        infoIconTooltipText: q ? D.intl.string(D.t["/q6fpa"]) : void 0
                     }), (0, i.jsx)(M, {
-                        label: L.intl.string(L.t.AOcwWB),
+                        label: D.intl.string(D.t.AOcwWB),
                         value: W
                     })]
                 }), (0, i.jsx)(c.hKd, {
                     size: 16
                 }), !Y && !B && (0, i.jsx)(c.D0$, {
-                    label: L.intl.string(L.t.wmMFvA),
+                    label: D.intl.string(D.t.wmMFvA),
                     children: (0, i.jsx)(U, {
                         subscription: t
                     })
@@ -255,9 +255,9 @@ let M = e => {
                         })
                     },
                     onChangePlanClick: () => {
-                        null != r && ((0, S.pX)(y.BVt.CHANNEL(r.id, P.VV.ROLE_SUBSCRIPTIONS)), (0, f.default)(), _.A.show(y.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, L.intl.string(L.t.DvbaM4), () => (0, I.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {
+                        null != r && ((0, S.pX)(y.BVt.CHANNEL(r.id, P.VV.ROLE_SUBSCRIPTIONS)), (0, f.default)(), _.A.show(y.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, D.intl.string(D.t.DvbaM4), () => (0, I.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL, {
                             section: y.nc_.SUBSCRIPTIONS,
-                            subsection: D.nR
+                            subsection: L.nR
                         })))
                     },
                     onResubscribeClick: F

@@ -33,8 +33,8 @@ var s = n(284009),
     R = n(684732),
     y = n(168917),
     P = n(746706),
-    D = n(788868),
-    L = n(985018),
+    L = n(788868),
+    D = n(985018),
     G = n(453814);
 
 function M() {
@@ -42,7 +42,7 @@ function M() {
             let e = N.default.getCurrentUser();
             return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
         }),
-        t = (0, c.L)(D.PremiumTypes.TIER_2),
+        t = (0, c.L)(L.PremiumTypes.TIER_2),
         n = (0, a.bG)([C.A, b.A], () => b.A.getGuild(C.A.selectedGuildId));
     l()(null != n, "guild should not be null");
     let {
@@ -72,7 +72,7 @@ function M() {
             user: e,
             guild: n
         }, "nick"), (0, i.jsx)(T.A, {
-            sectionTitle: L.intl.string(L.t["+T3RI/"]),
+            sectionTitle: D.intl.string(D.t["+T3RI/"]),
             errors: H?.pronouns,
             onPronounsChange: e => {
                 (0, R.d7)(e, J)
@@ -84,8 +84,8 @@ function M() {
             showOverlay: !X,
             children: [(0, i.jsx)(m.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [L.intl.string(L.t.lqaIxI), (0, i.jsx)(r.m, {
-                        text: L.intl.string(L.t["5AFxuK"]),
+                    children: [D.intl.string(D.t.lqaIxI), (0, i.jsx)(r.m, {
+                        text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
@@ -100,8 +100,8 @@ function M() {
                 disabled: !X
             }, "avatar"), (0, i.jsx)(g.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [L.intl.string(L.t["7v0T9P"]), (0, i.jsx)(r.m, {
-                        text: L.intl.string(L.t["5AFxuK"]),
+                    children: [D.intl.string(D.t["7v0T9P"]), (0, i.jsx)(r.m, {
+                        text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
@@ -118,7 +118,7 @@ function M() {
                 user: e,
                 guild: n,
                 titleIcon: (0, i.jsx)(r.m, {
-                    text: L.intl.string(L.t["5AFxuK"]),
+                    text: D.intl.string(D.t["5AFxuK"]),
                     children: (0, i.jsx)(o.tvc, {
                         size: "md",
                         color: "currentColor",
@@ -127,8 +127,8 @@ function M() {
                 })
             }, "nameplate"), (0, i.jsx)(x.A, {
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [L.intl.string(L.t.wR5wOo), (0, i.jsx)(r.m, {
-                        text: L.intl.string(L.t["5AFxuK"]),
+                    children: [D.intl.string(D.t.wR5wOo), (0, i.jsx)(r.m, {
+                        text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",
@@ -154,10 +154,10 @@ function M() {
                 guildId: n?.id,
                 showResetThemeButton: Z
             }), (0, i.jsx)(_.A, {
-                placeholder: L.intl.string(L.t["/7NKgv"]),
+                placeholder: D.intl.string(D.t["/7NKgv"]),
                 sectionTitle: (0, i.jsxs)(i.Fragment, {
-                    children: [L.intl.string(L.t.ZzAR2Y), (0, i.jsx)(r.m, {
-                        text: L.intl.string(L.t["5AFxuK"]),
+                    children: [D.intl.string(D.t.ZzAR2Y), (0, i.jsx)(r.m, {
+                        text: D.intl.string(D.t["5AFxuK"]),
                         children: (0, i.jsx)(o.tvc, {
                             size: "md",
                             color: "currentColor",

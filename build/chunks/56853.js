@@ -17,7 +17,7 @@ var a = n(627968),
     p = n(178540),
     g = n(859703),
     _ = n(341915),
-    f = n(245853),
+    f = n(12251),
     v = n(890687),
     b = n(590202),
     j = n(710969),
@@ -141,9 +141,9 @@ function B(e) {
             sourceQuestContent: B,
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
-    }, [V, t, B]), Z = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), ee = i.useMemo(() => null != Z && (0, C.I0)(Z, t.id), [Z, t.id]), et = f.wK.useConfig({
+    }, [V, t, B]), Z = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), ee = i.useMemo(() => null != Z && (0, C.I0)(Z, t.id), [Z, t.id]), et = f.s5.useConfig({
         location: O.rE.QUESTS_CARD
-    }), en = et.enabled && et.variant === f.dF.NEXT_TO_CONTEXT_MENU_CTA, ea = (0, v.do)({
+    }), en = et.enabled && et.variant === f.tL.INFO_ICON, ea = (0, v.do)({
         quest: t,
         content: _.uF.QUEST_HOME_DESKTOP,
         ctaContent: b.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_TWO,

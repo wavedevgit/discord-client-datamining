@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(780964),
     y = n(12901),
     P = n(840065),
-    D = n(351906),
-    L = n(287809),
+    L = n(351906),
+    D = n(287809),
     G = n(166403),
     M = n(224016),
     U = n(954571),
@@ -109,7 +109,7 @@ function eg() {
         t = (0, w.nf)(),
         n = (0, S.Ay)(),
         s = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
-        l = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
+        l = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
         o = (0, b.A)(),
         d = (0, H.d)(),
@@ -317,7 +317,7 @@ let eh = function() {
         {
             analyticsLocations: t
         } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
-        n = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
+        n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
         r = (0, N.Y)(et.T7),
@@ -330,7 +330,7 @@ let eh = function() {
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         S = !(d.Fr || d.v1) && null != A,
-        O = (0, u.bG)([D.A], () => D.A.enabled),
+        O = (0, u.bG)([L.A], () => L.A.enabled),
         R = s.useRef(null);
     (0, X.i)();
     let y = (0, z.m)();

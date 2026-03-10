@@ -42,8 +42,8 @@ var i = n(627968),
     R = n(496885),
     y = n(810412),
     P = n(93465),
-    D = n(206885),
-    L = n(41984),
+    L = n(206885),
+    D = n(41984),
     G = n(589051),
     M = n(833551),
     U = n(515183),
@@ -198,7 +198,7 @@ function eC(e) {
         }
     })
 }
-let ef = new Set([L.AR.INITIALIZING, L.AR.WAITING_FOR_SCREEN_TYPE_RESOLUTION, L.AR.WAITING_FOR_MODULE_TRACKING, L.AR.WAITING_FOR_OVERLAY_OPEN, L.AR.WAITING_FOR_POPOUT_OPEN, L.AR.WAITING_FOR_MODULE_POPOUT_CAPTURE, L.AR.WAITING_FOR_REACT_INITIALIZATION, L.AR.WAITING_FOR_PID_FOCUS, L.AR.WAITING_FOR_SUCCESSFUL_SHOW]),
+let ef = new Set([D.AR.INITIALIZING, D.AR.WAITING_FOR_SCREEN_TYPE_RESOLUTION, D.AR.WAITING_FOR_MODULE_TRACKING, D.AR.WAITING_FOR_OVERLAY_OPEN, D.AR.WAITING_FOR_POPOUT_OPEN, D.AR.WAITING_FOR_MODULE_POPOUT_CAPTURE, D.AR.WAITING_FOR_REACT_INITIALIZATION, D.AR.WAITING_FOR_PID_FOCUS, D.AR.WAITING_FOR_SUCCESSFUL_SHOW]),
     eI = e => {
         e.preventDefault(), e.stopPropagation()
     };
@@ -244,17 +244,17 @@ function eb() {
                     E.A.setEnabled(b, t), (0, y.Q3)(t, y.OverlayToggledClientSettingType.OOP, e.id ?? null)
             }(i || s) && (0, w.L)(i ? y.OverlayToggledClientSettingType.LEGACY_GAME : y.OverlayToggledClientSettingType.OOP_GAME, e.id ?? null)
         },
-        D = f && I,
+        L = f && I,
         G = !b && !j,
         U = !c && !b && _ && !f,
         k = !_ && !j && c && !I,
-        V = l?.overlayMethod === L.Ue.Disabled,
-        H = l?.state === L.AR.OVERLAY_RENDERING && !V,
+        V = l?.overlayMethod === D.Ue.Disabled,
+        H = l?.state === D.AR.OVERLAY_RENDERING && !V,
         B = l?.state != null && ef.has(l.state) && !V,
-        F = l?.overlayMethod === L.Ue.OutOfProcess,
-        Y = l?.overlayMethod === L.Ue.OutOfProcessLimitedInteraction,
-        z = l?.overlayMethod === L.Ue.Hook,
-        X = l?.state === L.AR.OVERLAY_CRASHED || l?.state === L.AR.OVERLAY_CRASHED_DISABLED,
+        F = l?.overlayMethod === D.Ue.OutOfProcess,
+        Y = l?.overlayMethod === D.Ue.OutOfProcessLimitedInteraction,
+        z = l?.overlayMethod === D.Ue.Hook,
+        X = l?.state === D.AR.OVERLAY_CRASHED || l?.state === D.AR.OVERLAY_CRASHED_DISABLED,
         W = !c && !_,
         [Z, q] = (() => {
             switch (!0) {
@@ -311,7 +311,7 @@ function eb() {
                     }()];
                 case X:
                     return [em.intl.string(em.t.OFC2aw), null];
-                case D:
+                case L:
                     return [em.intl.string(em.t.m7X4az), null];
                 case G:
                     return [em.intl.string(em.t["9DUS5l"]), null];
@@ -381,7 +381,7 @@ function eb() {
             onClick: e => eI(e),
             children: (0, i.jsx)(A.dOG, {
                 checked: c && j || _ && b,
-                disabled: D,
+                disabled: L,
                 onChange: t => {
                     ((t, n) => {
                         if (null == e) return;
@@ -527,7 +527,7 @@ function ej() {
                 checked: n,
                 disabled: o,
                 onChange: e => d(e)
-            }), D.O && (0, i.jsx)("div", {
+            }), L.O && (0, i.jsx)("div", {
                 className: eA.Kz
             })]
         })
@@ -588,7 +588,7 @@ function eO() {
             enabledLegacy: i
         } = n;
         h.A.toggleOverlay(t, e, i)
-    }, u = s.useMemo(() => D.O ? a ? em.intl.string(em.t.C7bLTQ) : em.intl.string(em.t.ndgADE) : em.intl.string(em.t.m7X4az), [a]);
+    }, u = s.useMemo(() => L.O ? a ? em.intl.string(em.t.C7bLTQ) : em.intl.string(em.t.ndgADE) : em.intl.string(em.t.m7X4az), [a]);
     return 0 === r.length ? (0, i.jsx)(eS, {
         title: em.intl.string(em.t["7BlVIs"]),
         description: u,
@@ -599,7 +599,7 @@ function eO() {
                 checked: n,
                 disabled: a,
                 onChange: e => d(e)
-            }), D.O && (0, i.jsx)("div", {
+            }), L.O && (0, i.jsx)("div", {
                 className: eA.Kz
             })]
         })
@@ -754,7 +754,7 @@ function eP(e, t) {
     }].filter(e => !1 !== e).filter(Boolean)
 }
 
-function eD() {
+function eL() {
     let {
         enabled: e
     } = (0, G.QC)("OverlayV3StreamWatchNudge"), {
@@ -792,7 +792,7 @@ function eD() {
     })
 }
 
-function eL(e) {
+function eD(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
@@ -849,7 +849,7 @@ function eG(e) {
             displayNameMode: es.default.getDisplayNameMode(),
             displayUserMode: es.default.getDisplayUserMode()
         })),
-        [c] = s.useState(() => [eL(em.intl.string(em.t.C0ZDvo), !0, !1), eL(em.intl.string(em.t.iOtj8E), !1, !1, !0), eL(em.intl.string(em.t["0oqNgL"]), !1, !0)]),
+        [c] = s.useState(() => [eD(em.intl.string(em.t.C0ZDvo), !0, !1), eD(em.intl.string(em.t.iOtj8E), !1, !1, !0), eD(em.intl.string(em.t["0oqNgL"]), !1, !0)]),
         u = (0, g.bG)([V.A, $.A], () => {
             let e = V.A.getWidgetByType(e_.uss.VOICE_V3);
             if (null == e) return null;
@@ -857,7 +857,7 @@ function eG(e) {
             return null != t && (0, F.ZO)(t) ? t : null
         }),
         _ = u?.meta?.voiceStatesMaxShown ?? 8,
-        m = [null != l ? ((t = eL(l.username)).user = l, t) : null, ...c].filter(ea.Vq),
+        m = [null != l ? ((t = eD(l.username)).user = l, t) : null, ...c].filter(ea.Vq),
         h = [new Map(m.map(e => [e.user.id, e])), m.map(e => e.user.id)],
         p = (0, i.jsx)(A.NPJ, {
             theme: e_.NJ8.MIDNIGHT,
@@ -1082,6 +1082,6 @@ function ek() {
             children: [(0, i.jsx)(eM, {}), (0, i.jsx)("div", {
                 className: eA.Ri
             })]
-        }), (0, i.jsx)(eD, {})]
+        }), (0, i.jsx)(eL, {})]
     })
 }

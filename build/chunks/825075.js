@@ -38,10 +38,10 @@ let R = s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: y,
         videoRef: P
     } = e, {
-        analyticsLocations: D
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), L = (0, p.QQ)(), G = (0, h.ar)(), M = (0, r.bG)([A.A], () => A.A.affinities), U = (0, x.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = M.length > 0, H = b.intl.string(b.t.YCZldK), B = (0, m.TM)(), F = (0, r.bG)([c.A], () => c.A.useReducedMotion);
+        analyticsLocations: L
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), D = (0, p.QQ)(), G = (0, h.ar)(), M = (0, r.bG)([A.A], () => A.A.affinities), U = (0, x.A)(), k = null != U, V = R ? o.XD.WHITE : o.XD.BRAND, w = M.length > 0, H = b.intl.string(b.t.YCZldK), B = (0, m.TM)(), F = (0, r.bG)([c.A], () => c.A.useReducedMotion);
     return (0, i.jsx)(_.f5, {
-        value: D,
+        value: L,
         children: (0, i.jsxs)("div", {
             className: a()(N.kL, N.qY, n),
             ref: t,
@@ -64,7 +64,7 @@ let R = s.forwardRef((e, t) => {
                             smallerText: !1,
                             isApplicationHome: !0
                         })
-                    }), L ? (0, i.jsx)("div", {
+                    }), D ? (0, i.jsx)("div", {
                         className: a()(N.UD, N.$F, {
                             [N.In]: !(w || k)
                         }),

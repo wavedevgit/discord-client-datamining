@@ -123,9 +123,9 @@ let y = function(e) {
         f = (0, r.bG)([u.A], () => u.A.useReducedMotion),
         y = (0, r.bG)([p.default], () => p.default.getCurrentUser()),
         P = C === b.xc.FP_SUB_PAUSED,
-        D = A && !P,
+        L = A && !P,
         {
-            appliedGuildBoostSlots: L,
+            appliedGuildBoostSlots: D,
             unappliedGuildBoostSlots: G,
             numActiveGuildBoostSlots: M,
             hasCooldownBoosts: U,
@@ -147,7 +147,7 @@ let y = function(e) {
             }
         }, [d]),
         V = null != m ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(m.planId) : 0,
-        w = Math.max(0, V - L.length),
+        w = Math.max(0, V - D.length),
         H = M > V,
         B = V === d.length,
         F = B ? w : 1,
@@ -211,14 +211,14 @@ let y = function(e) {
                 }), (0, i.jsx)("div", {
                     className: v.di,
                     children: (0, i.jsx)(o.A, {
-                        shouldShow: null == z || D,
+                        shouldShow: null == z || L,
                         text: l,
                         "aria-label": l.toString(),
                         children: e => (0, i.jsx)(c.Button, {
                             variant: "primary",
                             text: N.intl.string(N.t.BMx1iy),
                             ...e,
-                            disabled: null == z || D,
+                            disabled: null == z || L,
                             onClick: null != z ? () => {
                                 (0, c.mMO)(async () => e => (0, i.jsx)(g.default, {
                                     ...e,

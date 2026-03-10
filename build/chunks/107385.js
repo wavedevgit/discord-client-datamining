@@ -7,17 +7,17 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(573435),
+    a = n(397927),
+    r = n(573435),
     o = n(611945);
 
 function c(e) {
     let {
         className: t,
         isFolder: n
-    } = e, s = (0, r.rdh)(r.LU0.modules.guildbar.AVATAR_SIZE);
-    return (0, i.jsx)(a.Ay, {
-        mask: a.Ay.Masks.SQUIRCLE,
+    } = e, s = (0, a.rdh)(a.LU0.modules.guildbar.AVATAR_SIZE);
+    return (0, i.jsx)(r.Ay, {
+        mask: r.Ay.Masks.SQUIRCLE,
         className: l()(t, o.OL, {
             [o.lQ]: n
         }),
