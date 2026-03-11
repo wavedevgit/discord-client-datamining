@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(490249),
+    r = n.n(l),
+    a = n(490249),
     o = n(607399),
     c = n(311907),
     d = n(990078),
@@ -37,21 +37,21 @@ function v(e) {
     } = e, {
         value: c
     } = n.springs;
-    return (0, i.jsx)(r.animated.div, {
+    return (0, i.jsx)(a.animated.div, {
         className: T.nI,
         style: {
             opacity: c,
             transform: c.to(e => `translateY(-${(1-e)*90}px)`)
         },
-        children: (0, i.jsx)(r.animated.div, {
-            className: a()(T._e, {
+        children: (0, i.jsx)(a.animated.div, {
+            className: r()(T._e, {
                 [T.fr]: o.Fr
             }),
             style: {
                 transform: c.to(e => `translateY(${(1-e)*90}px)`)
             },
             children: (0, i.jsx)("img", {
-                className: a()(T.Q, {
+                className: r()(T.Q, {
                     [T.fr]: o.Fr
                 }),
                 src: x.Ay.getGuildBannerURL({
@@ -95,9 +95,9 @@ function y(e) {
         })
     });
     return l ? (0, i.jsx)("div", {
-        className: a()(T.pS, T.W$),
+        className: r()(T.pS, T.W$),
         children: h
-    }) : (0, i.jsx)(r.animated.div, {
+    }) : (0, i.jsx)(a.animated.div, {
         className: T.pS,
         style: s ? {
             opacity: o
@@ -135,8 +135,8 @@ function L(e) {
     let {
         bannerVisible: t,
         guild: l,
-        onClick: a,
-        onContextMenu: r,
+        onClick: r,
+        onContextMenu: a,
         ariaControls: o,
         ariaExpanded: A,
         children: g
@@ -181,8 +181,8 @@ function L(e) {
             }),
             "aria-controls": o,
             "aria-expanded": A,
-            onContextMenu: r,
-            onClick: a,
+            onContextMenu: a,
+            onClick: r,
             children: [(0, i.jsxs)("div", {
                 className: T.LO,
                 children: [(0, i.jsx)(E.A, {
@@ -232,7 +232,7 @@ let M = s.lazy(() => n.e("60497").then(n.bind(n, 908424))),
             ref: t,
             bannerVisible: n,
             controller: l,
-            className: r,
+            className: a,
             onClick: d,
             onContextMenu: h,
             onMouseDown: m,
@@ -270,7 +270,7 @@ let M = s.lazy(() => n.e("60497").then(n.bind(n, 908424))),
                     "data-has-banner": q(),
                     "data-banner-visible": n,
                     ref: K,
-                    className: a()(r, {
+                    className: r()(a, {
                         [T.kL]: !0,
                         [T.r9]: q(),
                         [T.Pi]: n,
@@ -280,11 +280,11 @@ let M = s.lazy(() => n.e("60497").then(n.bind(n, 908424))),
                     onMouseDown: m,
                     onContextMenu: h,
                     children: [(0, i.jsxs)("header", {
-                        className: a()(T.wx, R, {
+                        className: r()(T.wx, R, {
                             [T.jD]: o.Fr
                         }),
                         children: [(0, i.jsx)("div", {
-                            className: a()(T.VW, T.Nk),
+                            className: r()(T.VW, T.Nk),
                             children: (0, i.jsx)(L, {
                                 bannerVisible: n,
                                 guild: N,
@@ -329,17 +329,17 @@ function G(e) {
         theme: n
     } = (0, u.wRf)(), s = t.springs.value;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.animated.div, {
+        children: [(0, i.jsx)(a.animated.div, {
             className: T.UL,
             style: {
                 opacity: s.to(e => .5 * e)
             }
-        }), (0, i.jsx)(r.animated.div, {
+        }), (0, i.jsx)(a.animated.div, {
             className: T.ze,
             style: {
                 opacity: s.to(e => e)
             }
-        }), (0, i.jsx)(r.animated.div, {
+        }), (0, i.jsx)(a.animated.div, {
             className: T.iI,
             style: {
                 opacity: s.to(e => (1 - e) * 6),

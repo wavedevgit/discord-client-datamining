@@ -1,35 +1,43 @@
 /** chunk id: 41614 params = (module,exports,require) **/
-n.d(a, {
-    default: () => o
+a.d(n, {
+    default: () => u
 });
-var e = n(627968);
-n(64700);
-var i = n(397927),
-    s = n(442433),
-    r = n(147036),
-    d = n(957565),
-    l = n(746080),
-    c = n(985018);
+var i = a(627968);
+a(64700);
+var e = a(311907),
+    r = a(397927),
+    s = a(442433),
+    l = a(50268),
+    d = a(147036),
+    o = a(957565),
+    c = a(832163),
+    p = a(746080),
+    h = a(985018);
 
-function o(t) {
+function u(t) {
     let {
-        guild: a,
-        onSelect: n
-    } = t;
-    return (0, e.jsx)(i.W1t, {
+        guild: n,
+        onSelect: a
+    } = t, u = (0, e.bG)([c.A], () => c.A.getStorefrontData(n.id)?.storefront?.applicationId), g = (0, l.A)({
+        id: u,
+        label: h.intl.string(h.t["FfCL+6"])
+    });
+    return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "game-shop-context",
-        "aria-label": c.intl.string(c.t.vyaWs7),
+        "aria-label": h.intl.string(h.t.vyaWs7),
         onClose: s.Z_,
-        onSelect: n,
-        children: (0, e.jsx)(i.rXV, {
-            children: (0, e.jsx)(i.Drp, {
+        onSelect: a,
+        children: [(0, i.jsx)(r.rXV, {
+            children: (0, i.jsx)(r.Drp, {
                 id: "game-shop-copy-link",
-                label: c.intl.string(c.t.WqhZss),
+                label: h.intl.string(h.t.WqhZss),
                 action: () => {
-                    (0, d.C)((0, r.n)(a.id, l.VV.GAME_SHOP))
+                    (0, o.C)((0, d.n)(n.id, p.VV.GAME_SHOP))
                 }
             })
-        })
+        }), null != g && (0, i.jsx)(r.rXV, {
+            children: g
+        })]
     })
 }

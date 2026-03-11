@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(310953),
-    r = n(173860),
+    r = n(310953),
+    a = n(173860),
     o = n(455234),
     c = n(152007),
     d = n(734057),
@@ -35,12 +35,12 @@ let g = s.forwardRef(function(e, t) {
         guildChannels: s,
         guildChannelsVersion: o,
         ...c
-    } = e, d = (0, a.W)(n, s, o, {
+    } = e, d = (0, r.W)(n, s, o, {
         withVoiceChannels: !1
     }, {
         ignoreRecents: !0
     }), u = (0, l.bG)([A.A], () => A.A.isFocused());
-    return (0, i.jsx)(r.A, {
+    return (0, i.jsx)(a.A, {
         ref: t,
         ...c,
         isUnread: m,

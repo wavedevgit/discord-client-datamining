@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
     Lx: () => l,
-    Nt: () => r,
+    Nt: () => a,
     iF: () => s,
-    pE: () => a
+    pE: () => r
 });
 var i = n(73153);
 
@@ -27,14 +27,14 @@ function l(e) {
     })
 }
 
-function a(e) {
+function r(e) {
     i.h.dispatch({
         type: "UPCOMING_GUILD_EVENT_NOTICE_SEEN",
         guildEventId: e
     })
 }
 
-function r(e) {
+function a(e) {
     i.h.dispatch({
         type: "EVENT_BANNER_DISMISS",
         eventId: e

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(73153),
     c = n(843472),
     d = n(355622),
@@ -52,15 +52,15 @@ let T = e => {
             size: 48
         });
         return (0, i.jsxs)("div", {
-            className: a()(S.iU, {
+            className: r()(S.iU, {
                 [S.FD]: s,
                 [S.Tf]: l
             }),
             children: [(0, i.jsx)("div", {
-                children: (0, i.jsx)(r.euF, {
+                children: (0, i.jsx)(a.euF, {
                     src: h,
                     avatarDecoration: g,
-                    size: r._3J.SIZE_24,
+                    size: a._3J.SIZE_24,
                     "aria-label": "User Avatar",
                     isTyping: !1
                 })
@@ -71,12 +71,12 @@ let T = e => {
                 loop: !0
             }), (0, i.jsxs)("div", {
                 className: S.fi,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
                     className: S.Qs,
                     children: o.content
                 }), n.attachments.length > 0 && (0, i.jsx)("div", {
-                    className: a()(S.nM, S.rQ),
+                    className: r()(S.nM, S.rQ),
                     children: n.attachments.filter(e => !e.spoiler && e.content_type?.startsWith("image")).map(e => (0, i.jsx)("img", {
                         src: e.url,
                         width: 128,
@@ -157,7 +157,7 @@ let T = e => {
             };
             return o.h.subscribe("MESSAGE_CREATE", e), () => o.h.unsubscribe("MESSAGE_CREATE", e)
         }, []), (0, i.jsxs)("div", {
-            className: a()(S.X2, {
+            className: r()(S.X2, {
                 [S.R]: !l
             }),
             onMouseEnter: () => b.current = !0,
@@ -170,11 +170,11 @@ let T = e => {
             },
             children: [(0, i.jsx)(x.A, {
                 children: (0, i.jsx)("div", {
-                    className: a()(S.TE, {
+                    className: r()(S.TE, {
                         [S.N7]: n
                     }),
-                    children: (0, i.jsx)(r.HOs, {
-                        className: a()(S.b6, {
+                    children: (0, i.jsx)(a.HOs, {
+                        className: r()(S.b6, {
                             [S.N7]: D && n
                         }),
                         ref: I,
@@ -186,7 +186,7 @@ let T = e => {
                     })
                 })
             }), (0, i.jsx)(h.Ay, {
-                className: a()(S.CQ, {
+                className: r()(S.CQ, {
                     [S.N7]: n && 0 === j.length
                 }),
                 innerClassName: S.hF,

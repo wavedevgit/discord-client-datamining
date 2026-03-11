@@ -1,24 +1,24 @@
 /** chunk id: 216020 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968),
     s = n(158954),
     l = n(985018),
-    a = n(885794);
+    r = n(885794);
 
-function r(e) {
+function a(e) {
     let {
         title: t,
         description: n,
-        onClick: r
+        onClick: a
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.S,
+        className: r.S,
         children: [(0, i.jsx)(s.DUT, {
-            onClick: r,
-            className: a.H,
+            onClick: a,
+            className: r.H,
             "aria-label": l.intl.string(l.t.pLPjsb),
             children: (0, i.jsx)(s.EYj, {
                 variant: "text-sm/semibold",

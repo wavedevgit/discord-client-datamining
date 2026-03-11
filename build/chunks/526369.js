@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(110259),
-    a = n(121894),
-    r = n(311907),
+    r = n(121894),
+    a = n(311907),
     o = n(554146),
     c = n(933958),
     d = n(782091),
@@ -38,26 +38,26 @@ function T(e) {
         inCall: R,
         totalNumberOfParticipants: O,
         popoutType: L
-    } = e, M = (0, p.Us)() === b.BRT.POPOUT, D = (0, r.bG)([f.A], () => f.A.getGuild(y.guild_id), [y.guild_id]), {
+    } = e, M = (0, p.Us)() === b.BRT.POPOUT, D = (0, a.bG)([f.A], () => f.A.getGuild(y.guild_id), [y.guild_id]), {
         dismissedActivityEntryPointTileChannel: G
-    } = (0, I.P)(), U = (0, r.bG)([h.A], () => h.A.getUserParticipantCount(y.id), [y]), P = (0, _.vp)(y.id, t), w = s.useCallback(() => {
-        (0, a.r)(() => {
+    } = (0, I.P)(), U = (0, a.bG)([h.A], () => h.A.getUserParticipantCount(y.id), [y]), P = (0, _.vp)(y.id, t), w = s.useCallback(() => {
+        (0, r.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: y.id
             })
         })
     }, [y.id]);
     s.useEffect(() => {
-        null != G && y.id !== G && (0, a.r)(() => {
+        null != G && y.id !== G && (0, r.r)(() => {
             I.P.setState({
                 dismissedActivityEntryPointTileChannel: null
             })
         })
     }, [y.id, G]);
-    let k = (0, r.bG)([x.A], () => y.isPrivate() || (0, m.K)(x.A, D, y), [D, y]),
+    let k = (0, a.bG)([x.A], () => y.isPrivate() || (0, m.K)(x.A, D, y), [D, y]),
         V = D?.afkChannelId === y.id,
         B = y.userLimit <= 0 || y.userLimit > 1,
-        H = (0, r.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(y.id).length <= 0),
+        H = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(y.id).length <= 0),
         F = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
         K = (0, d.et)(y.id) !== d.xy.CAN_LAUNCH,
         W = null != G && G === y.id,
