@@ -1,6 +1,6 @@
 /** chunk id: 85648 params = (module,exports,require) **/
 n.d(t, {
-    S: () => f
+    S: () => I
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(264124),
     _ = n(850060),
     g = n(886854),
-    m = n(274835),
-    A = n(505112),
+    A = n(274835),
+    m = n(505112),
     h = n(163944),
     p = n(41197),
     x = n(28161),
@@ -23,9 +23,9 @@ var i = n(627968),
     S = n(985018);
 let C = (0, r.t_)(o.X.DISPLAY_PANEL, {
         useTitle: () => S.intl.string(S.t.DVatCa),
-        buildLayout: () => [E.K, h.S, p.X, A.S, x.f, (0, T.$)(!0), m.J]
+        buildLayout: () => [E.K, h.S, p.X, m.S, x.f, (0, T.$)(!0), A.J]
     }),
-    f = (0, r.i4)(o.X.DISPLAY_SIDEBAR_ITEM, {
+    I = (0, r.i4)(o.X.DISPLAY_SIDEBAR_ITEM, {
         useTitle: () => S.intl.string(S.t.DVatCa),
         icon: l.PaintPaletteIcon,
         usePredicate: () => (0, d.bp)("DisplaySidebarItem"),

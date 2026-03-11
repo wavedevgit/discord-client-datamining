@@ -1,6 +1,6 @@
 /** chunk id: 46184 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(652215),
     g = n(985018);
 
-function m() {
+function A() {
     let e = (0, u.k)() ?? void 0,
         t = a.up.useControlledSetting(e),
         n = s.useMemo(() => (0, c.Lx)(t), [t]);

@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(128450),
     _ = n(339984),
     g = n(985018),
-    m = n(897570);
-let A = [{
+    A = n(897570);
+let m = [{
     name: "gif",
     extensions: ["gif"]
 }];
@@ -31,18 +31,18 @@ function h(e) {
         disabled: T = !1,
         isTryItOut: S = !1,
         forcedDivider: C,
-        withHighlight: f = !1
+        withHighlight: I = !1
     } = e, {
-        newestAnalyticsLocation: I
-    } = (0, d.Ay)(), b = f ? o.wLn : r.$n, N = s.useCallback(() => {
+        newestAnalyticsLocation: f
+    } = (0, d.Ay)(), b = I ? o.wLn : r.$n, N = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
-            analyticsSource: I,
-            filters: S ? A : void 0,
+            analyticsSource: f,
+            filters: S ? m : void 0,
             guildId: x,
             isTryItOut: S
         })
-    }, [x, I, S]);
+    }, [x, f, S]);
     return (0, i.jsx)(u.A, {
         className: E,
         title: h,
@@ -50,17 +50,17 @@ function h(e) {
         disabled: T,
         forcedDivider: C,
         children: (0, i.jsxs)("div", {
-            className: m.NC,
+            className: A.NC,
             children: [(0, i.jsx)(b, {
                 className: a()({
-                    [m.yj]: f
+                    [A.yj]: I
                 }),
                 size: r.$n.Sizes.SMALL,
                 onClick: N,
                 children: p ?? g.intl.string(g.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: m.DT,
+                className: A.DT,
                 children: (0, i.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",

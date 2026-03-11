@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(369496),
     _ = n(580630),
     g = n(349439),
-    m = n(959349);
-let A = e => {
+    A = n(959349);
+let m = e => {
         let {
             displayName: t,
             product: n
@@ -22,7 +22,7 @@ let A = e => {
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: m._P
+            className: A._P
         })
     },
     h = e => {
@@ -35,7 +35,7 @@ let A = e => {
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: m.M4
+            className: A.M4
         })
     },
     p = e => {
@@ -46,7 +46,7 @@ let A = e => {
         return null == s ? null : (0, i.jsx)("img", {
             src: s,
             alt: t,
-            className: m._P
+            className: A._P
         })
     },
     x = e => {
@@ -54,12 +54,12 @@ let A = e => {
             subscriptionPlanId: t
         } = e;
         if (null == t) return (0, i.jsx)("div", {
-            className: m.T8,
+            className: A.T8,
             children: (0, i.jsx)(o.U1X, {})
         });
         let n = (0, g.il)(t);
         return (0, i.jsx)("div", {
-            className: m.T8,
+            className: A.T8,
             children: n ? (0, i.jsx)(o._Jp, {
                 size: "custom",
                 width: 20,
@@ -77,12 +77,12 @@ let A = e => {
             product: n
         } = e;
         if (null == n) return (0, i.jsx)("div", {
-            className: m.T8,
+            className: A.T8,
             children: (0, i.jsx)(o.U1X, {})
         });
         switch (n.type) {
             case r.R.AVATAR_DECORATION:
-                return (0, i.jsx)(A, {
+                return (0, i.jsx)(m, {
                     displayName: t,
                     product: n
                 });
@@ -99,7 +99,7 @@ let A = e => {
                 });
             default:
                 return (0, i.jsx)("div", {
-                    className: m.T8,
+                    className: A.T8,
                     children: (0, i.jsx)(o.U1X, {})
                 })
         }
@@ -115,13 +115,13 @@ let A = e => {
             product: c
         } = (0, d.A)(t), {
             displayName: u,
-            typeName: A,
+            typeName: m,
             isSubscription: h
         } = (0, g.GZ)(c ?? null, n);
         if (null != t && !h && null == c || null == u) return null;
         let p = (0, _.$g)(s, l);
         return (0, i.jsxs)("div", {
-            className: a()(m.kL, r),
+            className: a()(A.kL, r),
             children: [h ? (0, i.jsx)(x, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(E, {
@@ -130,7 +130,7 @@ let A = e => {
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: null != A ? `${u} • ${A}` : u
+                    children: null != m ? `${u} • ${m}` : u
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",

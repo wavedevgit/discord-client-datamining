@@ -1,77 +1,77 @@
 /** chunk id: 4382 params = (module,exports,require) **/
-i.d(t, {
+r.d(t, {
     PV: () => c,
     ro: () => d,
-    xs: () => m
+    xs: () => u
 });
-var r = i(397927),
-    n = i(927578),
-    a = i(788868),
-    s = i(88001),
-    l = i(519412),
-    o = i(985018);
+var n = r(397927),
+    i = r(927578),
+    a = r(788868),
+    s = r(88001),
+    l = r(519412),
+    o = r(985018);
 let c = [{
-        Icon: r.$yI,
+        Icon: n.$yI,
         getText: () => o.intl.formatToPlainString(l.default.eP3Ar7, {
             totalSeats: s.aw
         })
     }, {
-        Icon: r.tvc,
+        Icon: n.tvc,
         getText: () => o.intl.string(l.default.woz1Kg)
     }, {
-        Icon: r._Jp,
+        Icon: n._Jp,
         getText: () => o.intl.string(l.default.QnbVrt)
     }, {
-        Icon: r.R2l,
+        Icon: n.R2l,
         getText: () => o.intl.string(l.default["409DEa"])
     }],
     d = [{
-        Icon: r.$yI,
+        Icon: n.$yI,
         getText: () => o.intl.formatToPlainString(l.default.eP3Ar7, {
             totalSeats: s.aw
         })
     }, {
-        Icon: r.JMY,
+        Icon: n.JMY,
         getText: () => o.intl.formatToPlainString(o.t.p8QVLT, {
-            maxUploadPremium: (0, n.EJ)(a.PremiumTypes.TIER_2, {
+            maxUploadPremium: (0, i.EJ)(a.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: r.it9,
+        Icon: n.it9,
         getText: () => o.intl.string(o.t["taMwg/"])
     }, {
-        Icon: r.nm2,
+        Icon: n.nm2,
         getText: () => o.intl.string(o.t.KjrZ8Z)
     }, {
-        Icon: r.Fzq,
+        Icon: n.Fzq,
         getText: () => o.intl.string(o.t.W180bY)
     }, {
-        Icon: r._Jp,
+        Icon: n._Jp,
         getText: () => o.intl.formatToPlainString(l.default.HVCRVf, {
             numBoosts: a.M4
         })
     }, {
-        Icon: r.clX,
+        Icon: n.clX,
         getText: () => o.intl.string(o.t.CNIZfy)
     }],
-    m = [{
-        Icon: r.JMY,
+    u = [{
+        Icon: n.JMY,
         getText: () => o.intl.formatToPlainString(o.t.p8QVLT, {
-            maxUploadPremium: (0, n.EJ)(a.PremiumTypes.TIER_2, {
+            maxUploadPremium: (0, i.EJ)(a.PremiumTypes.TIER_2, {
                 useSpace: !1
             })
         })
     }, {
-        Icon: r.it9,
+        Icon: n.it9,
         getText: () => o.intl.string(o.t["taMwg/"])
     }, {
-        Icon: r.nm2,
+        Icon: n.nm2,
         getText: () => o.intl.string(o.t.KjrZ8Z)
     }, {
-        Icon: r.Fzq,
+        Icon: n.Fzq,
         getText: () => o.intl.string(o.t.W180bY)
     }, {
-        Icon: r.clX,
+        Icon: n.clX,
         getText: () => o.intl.string(o.t.CNIZfy)
     }]

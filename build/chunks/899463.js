@@ -1,6 +1,6 @@
 /** chunk id: 899463 params = (module,exports,require) **/
 n.d(t, {
-    r: () => m
+    r: () => A
 });
 var i = n(627968),
     s = n(934551),
@@ -21,7 +21,7 @@ let g = (0, r.t_)(d.X.CLIPS_PANEL, {
         usePredicate: l.sw,
         buildLayout: () => [u.K, c.W]
     }),
-    m = (0, r.i4)(d.X.CLIPS_SIDEBAR_ITEM, {
+    A = (0, r.i4)(d.X.CLIPS_SIDEBAR_ITEM, {
         useTitle: () => _.intl.string(_.t.z2jK6X),
         icon: s.ClipsIcon,
         buildLayout: () => [g]

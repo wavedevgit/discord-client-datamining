@@ -13,8 +13,8 @@ var i = n(311907),
     u = n(840065),
     _ = n(506305),
     g = n(69551),
-    m = n(225216),
-    A = n(866352),
+    A = n(225216),
+    m = n(866352),
     h = n(652215),
     p = n(985018);
 let x = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
@@ -43,5 +43,5 @@ let x = (0, r.zZ)(d.X.DISPLAY_THEME_CATEGORY, {
             }]
         }
     },
-    buildLayout: () => [m.k, g.l, _.p, A.W]
+    buildLayout: () => [A.k, g.l, _.p, m.W]
 })

@@ -15,9 +15,9 @@ r.d(t, {
     oK: () => p,
     oR: () => N,
     pY: () => A,
-    rE: () => F,
+    rE: () => O,
     uZ: () => I,
-    vy: () => O,
+    vy: () => F,
     wU: () => x
 });
 var n, s = r(58149),
@@ -378,7 +378,7 @@ function v(e) {
     })
 }
 
-function F(e) {
+function O(e) {
     let {
         searchContext: t,
         searchAutocompleteSelectAction: r
@@ -391,7 +391,7 @@ function F(e) {
         search_autocomplete_select_action: r
     })
 }
-var O = ((n = {}).SEARCH_HEADER = "search_header", n.USER_SETTINGS = "user_settings", n);
+var F = ((n = {}).SEARCH_HEADER = "search_header", n.USER_SETTINGS = "user_settings", n);
 
 function k(e) {
     let {

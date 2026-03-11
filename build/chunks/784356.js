@@ -19,8 +19,8 @@ let u = e => {
         perkImage: u,
         isCarousel: _,
         onCtaClick: g,
-        perkComponent: m,
-        subtitle: A,
+        perkComponent: A,
+        subtitle: m,
         descriptionCta: h,
         customContent: p,
         cardVariant: x,
@@ -34,7 +34,7 @@ let u = e => {
             title: t,
             cardVariantStyleInfo: S,
             titleClassName: n,
-            subtitle: A,
+            subtitle: m,
             subtitleClassName: E,
             isOverlay: !1
         }), null != u && (0, i.jsxs)("div", {
@@ -54,9 +54,9 @@ let u = e => {
                     children: T
                 })
             }) : null]
-        }), null != m && (0, i.jsxs)("div", {
+        }), null != A && (0, i.jsxs)("div", {
             className: c.wX,
-            children: [m, null != h && null != g && (0, i.jsx)(a.$n, {
+            children: [A, null != h && null != g && (0, i.jsx)(a.$n, {
                 "data-migration-pending": !0,
                 className: s,
                 fullWidth: !0,

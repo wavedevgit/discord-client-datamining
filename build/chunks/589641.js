@@ -14,13 +14,13 @@ var i = n(627968),
     u = n(933297),
     _ = n(12901),
     g = n(835002),
-    m = n(985018),
-    A = n(842130);
+    A = n(985018),
+    m = n(842130);
 
 function h() {
     let e = (0, o.vx)();
     return (0, i.jsx)(c.e, {
-        label: A.default.i284fU,
+        label: m.default.i284fU,
         labelHook: () => {
             (0, _.default)(), a.A.openPrivateChannel({
                 recipientIds: e
@@ -47,7 +47,7 @@ function p() {
             type: u.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: c,
-            useText: () => m.intl.format(A.default.i284fU, {
+            useText: () => A.intl.format(m.default.i284fU, {
                 hook: (e, t) => (0, i.jsx)(l.MzZ, {
                     onClick: n,
                     children: e

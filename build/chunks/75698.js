@@ -15,8 +15,8 @@ var i = n(627968),
     u = n(582754),
     _ = n(397927),
     g = n(73153),
-    m = n(77468),
-    A = n(289498),
+    A = n(77468),
+    m = n(289498),
     h = n(736653),
     p = n(573648),
     x = n(681819),
@@ -24,13 +24,13 @@ var i = n(627968),
     T = n(882997),
     S = n(169869),
     C = n(263063),
-    f = n(496885),
-    I = n(962173),
+    I = n(496885),
+    f = n(962173),
     b = n(71393),
     N = n(351906),
     v = n(954571),
-    j = n(975571),
-    O = n(773669),
+    O = n(975571),
+    j = n(773669),
     R = n(747454),
     y = n(801264),
     P = n(790174),
@@ -48,15 +48,15 @@ let V = e => {
             isJoining: s,
             joinErrorMessage: l,
             showJoinErrorMessage: a
-        } = (0, o.cf)([I.A], () => ({
-            isJoining: I.A.isJoining(n.id),
-            joinErrorMessage: "" === I.A.joinErrorMessage(n.id) ? U.intl.string(U.t.j2d6Km) : I.A.joinErrorMessage(n.id),
-            showJoinErrorMessage: void 0 !== I.A.joinErrorMessage(n.id)
+        } = (0, o.cf)([f.A], () => ({
+            isJoining: f.A.isJoining(n.id),
+            joinErrorMessage: "" === f.A.joinErrorMessage(n.id) ? U.intl.string(U.t.j2d6Km) : f.A.joinErrorMessage(n.id),
+            showJoinErrorMessage: void 0 !== f.A.joinErrorMessage(n.id)
         }), [n.id]);
     return null != (0, o.bG)([b.A], () => b.A.getGuild(n.guild.id), [n.guild.id]) || (t = (0, i.jsx)(_.Button, {
         size: "sm",
         onClick: function() {
-            m.A.joinServer(n.id, () => {})
+            A.A.joinServer(n.id, () => {})
         },
         disabled: s,
         variant: "primary",
@@ -94,14 +94,14 @@ let V = e => {
 };
 
 function w(e) {
-    let t, n, l, a, o, g, A, {
+    let t, n, l, a, o, g, m, {
             onDisconnect: h,
             account: C,
-            theme: I,
+            theme: f,
             locale: b
         } = e,
         [N, v] = s.useState(C.friendSync),
-        [O, P] = s.useState(C.visibility),
+        [j, P] = s.useState(C.visibility),
         [w, H] = s.useState(C.metadataVisibility),
         [B, F] = s.useState(C.showActivity),
         [Y, z] = s.useState(null),
@@ -126,12 +126,12 @@ function w(e) {
             inProgressVisibility: e,
             inProgressMetadataVisibility: t
         } = et.current;
-        null != e && (P(e), m.A.setVisibility(C.type, C.id, e), z(null)), null != t && (H(t), m.A.setMetadataVisibility(C.type, C.id, t), W(null))
+        null != e && (P(e), A.A.setVisibility(C.type, C.id, e), z(null)), null != t && (H(t), A.A.setMetadataVisibility(C.type, C.id, t), W(null))
     }, [C]), (0, i.jsxs)("div", {
         className: k.FI,
         children: [(t = p.A.get(C.type), n = p.A.get(Q), l = "1" === (C.metadata ?? {})[M.pK.TWITTER_VERIFIED], a = null, t.type === G.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
             text: U.intl.string(U.t.Jebrww),
-            children: (0, i.jsx)(f.A, {
+            children: (0, i.jsx)(I.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
                 children: (0, i.jsx)(_.Uzd, {
                     size: "xs",
@@ -143,7 +143,7 @@ function w(e) {
             children: [(0, i.jsx)("img", {
                 alt: n.name,
                 className: k.gj,
-                src: (0, u.Mw)(I) ? n.icon.darkSVG : n.icon.lightSVG
+                src: (0, u.Mw)(f) ? n.icon.darkSVG : n.icon.lightSVG
             }), (0, i.jsxs)("div", {
                 children: [(0, i.jsxs)("div", {
                     className: k.$p,
@@ -249,7 +249,7 @@ function w(e) {
                     variant: "text-xs/normal",
                     className: k.vt,
                     children: U.intl.format(U.t.Up2ni7, {
-                        helpdeskUrl: j.A.getArticleURL(G.MVz.CONNECTION_DETAILS)
+                        helpdeskUrl: O.A.getArticleURL(G.MVz.CONNECTION_DETAILS)
                     })
                 }, "label")], a = U.intl.string(U.t["LVh3/5"]);
             return l && (a = U.intl.string(U.t.i4jeWR)), n.push((0, i.jsx)("div", {
@@ -262,7 +262,7 @@ function w(e) {
                     disabled: l,
                     "aria-label": U.intl.string(U.t.sCkLYH),
                     onClick: l ? void 0 : () => {
-                        Z(!0), m.A.refresh(e.type, e.id).finally(() => {
+                        Z(!0), A.A.refresh(e.type, e.id).finally(() => {
                             setTimeout(() => {
                                 q.push(e.id), J(q), Z(!1)
                             }, 2e3)
@@ -277,7 +277,7 @@ function w(e) {
             label: U.intl.string(U.t["+KCMSi"]),
             checked: N,
             onChange: function(e) {
-                v(e), m.A.setFriendSync(C.type, C.id, e)
+                v(e), A.A.setFriendSync(C.type, C.id, e)
             }
         })), G.ewM.has(C.type) && (g = (0, i.jsx)(_.dOG, {
             label: U.intl.format(U.t["6u6J0q"], {
@@ -285,9 +285,9 @@ function w(e) {
             }),
             checked: B,
             onChange: function(e) {
-                F(e), m.A.setShowActivity(C.type, C.id, e)
+                F(e), A.A.setShowActivity(C.type, C.id, e)
             }
-        })), p.A.get(C.type)?.hasMetadata === !0 && (A = (0, i.jsx)(_.dOG, {
+        })), p.A.get(C.type)?.hasMetadata === !0 && (m = (0, i.jsx)(_.dOG, {
             label: U.intl.string(U.t.FYKGsL),
             checked: 1 === w,
             onChange: function(e) {
@@ -301,14 +301,14 @@ function w(e) {
                     });
                     return
                 }
-                H(n), m.A.setMetadataVisibility(C.type, C.id, n)
+                H(n), A.A.setMetadataVisibility(C.type, C.id, n)
             },
-            disabled: 1 !== O || null == C.metadata
+            disabled: 1 !== j || null == C.metadata
         })), (0, i.jsxs)("div", {
             className: k.HZ,
             children: [(0, i.jsx)(_.dOG, {
                 label: U.intl.string(U.t.f7yOAX),
-                checked: 1 === O,
+                checked: 1 === j,
                 onChange: function(e) {
                     let {
                         verified: t
@@ -320,9 +320,9 @@ function w(e) {
                         });
                         return
                     }
-                    P(n), m.A.setVisibility(C.type, C.id, n)
+                    P(n), A.A.setVisibility(C.type, C.id, n)
                 }
-            }), A, g, o]
+            }), m, g, o]
         })), function() {
             if (C.revoked || C.integrations.length > 0) return (0, i.jsx)(_.cGx, {})
         }(), C.revoked ? (0, i.jsx)(r.po8, {
@@ -369,7 +369,7 @@ function F() {
     let e = (0, x.gn)();
     return (0, i.jsxs)("div", {
         className: k.lA,
-        children: [e.slice(0, 10).map(e => (0, i.jsx)(A.A, {
+        children: [e.slice(0, 10).map(e => (0, i.jsx)(m.A, {
             type: e.type,
             className: k.__invalid_accountButton,
             innerClassName: k.U$
@@ -424,7 +424,7 @@ function Y(e) {
                 type: t,
                 id: n
             } = e;
-            m.A.disconnect(t, n)
+            A.A.disconnect(t, n)
         })(e)
     }, t)), (0, i.jsx)("div", {
         className: k.V,
@@ -434,10 +434,10 @@ function Y(e) {
 
 function z() {
     let e = (0, o.bG)([N.A], () => N.A.hidePersonalInformation),
-        t = (0, o.bG)([I.A], () => I.A.isFetching()),
-        n = (0, o.bG)([I.A], () => I.A.getAccounts()),
+        t = (0, o.bG)([f.A], () => f.A.isFetching()),
+        n = (0, o.bG)([f.A], () => f.A.getAccounts()),
         s = (0, h.Ay)(),
-        l = (0, o.bG)([O.default], () => O.default.locale);
+        l = (0, o.bG)([j.default], () => j.default.locale);
     return e ? null : (0, i.jsx)(Y, {
         fetching: t,
         accounts: n,
@@ -446,12 +446,12 @@ function z() {
     })
 }
 let X = () => {
-    let e = (0, o.bG)([I.A], () => I.A.isFetching()),
-        t = (0, o.bG)([I.A], () => I.A.getAccounts()),
+    let e = (0, o.bG)([f.A], () => f.A.isFetching()),
+        t = (0, o.bG)([f.A], () => f.A.getAccounts()),
         n = (0, h.Ay)(),
-        l = (0, o.bG)([O.default], () => O.default.locale);
+        l = (0, o.bG)([j.default], () => j.default.locale);
     return s.useEffect(() => {
-        m.A.fetch()
+        A.A.fetch()
     }, []), (0, i.jsxs)(P.A, {
         title: U.intl.string(U.t["3fe7U5"]),
         children: [(0, i.jsx)(H, {}), (0, i.jsx)(_.cGx, {

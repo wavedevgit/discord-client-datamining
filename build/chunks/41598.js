@@ -1,6 +1,6 @@
 /** chunk id: 41598 params = (module,exports,require) **/
 n.d(t, {
-    s: () => A
+    s: () => m
 });
 var i = n(419954),
     s = n(933297),
@@ -13,9 +13,9 @@ var i = n(419954),
     u = n(617110),
     _ = n(937551),
     g = n(31118),
-    m = n(985018);
-let A = (0, i.zZ)(l.X.ACCESSIBILITY_OVERVIEW, {
-    useSubnavLabel: () => m.intl.string(m.t.fTNxW7),
+    A = n(985018);
+let m = (0, i.zZ)(l.X.ACCESSIBILITY_OVERVIEW, {
+    useSubnavLabel: () => A.intl.string(A.t.fTNxW7),
     useInlineNotice: () => ({
         type: s.lT.STRONGLY_DISCOURAGED_CUSTOM,
         notice: a.YD

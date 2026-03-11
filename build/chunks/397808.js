@@ -18,12 +18,12 @@ let u = e => {
     if (void 0 === n) return null;
     let {
         name: u
-    } = n, _ = (0, r.Iv)(n, 40, !0), g = null, m = 10;
-    return null == n.icon && null != u && (g = (0, s.oN)(u), m = (0, d.Y)(g)), (0, i.jsx)("div", {
+    } = n, _ = (0, r.Iv)(n, 40, !0), g = null, A = 10;
+    return null == n.icon && null != u && (g = (0, s.oN)(u), A = (0, d.Y)(g)), (0, i.jsx)("div", {
         className: c.k,
         children: (0, i.jsxs)("div", {
             style: {
-                fontSize: m
+                fontSize: A
             },
             children: [null != g ? (0, i.jsx)("div", {
                 className: c.X,

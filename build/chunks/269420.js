@@ -13,10 +13,10 @@ var i = n(419954),
     u = n(53825),
     _ = n(544727),
     g = n(298648),
-    m = n(782e3),
-    A = n(509725),
+    A = n(782e3),
+    m = n(509725),
     h = n(985018);
 let p = (0, i.zZ)(s.X.CLIPS_RECORDING_CATEGORY, {
     useTitle: () => h.intl.string(h.t.iIwmV5),
-    buildLayout: () => [d.e, a.X, g.T, m.B, A.Z, o.R, c.j, l.k, r.t, u.N, _.$]
+    buildLayout: () => [d.e, a.X, g.T, A.B, m.Z, o.R, c.j, l.k, r.t, u.N, _.$]
 })

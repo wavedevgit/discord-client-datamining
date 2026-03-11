@@ -489,8 +489,7 @@ class ec extends s.PureComponent {
                         subtitle: C.subtitle,
                         disableManageChannels: h,
                         canBeNewChannel: m && t === d.recentsSectionNumber,
-                        isFavoriteCategory: S,
-                        withGuildIcon: p
+                        isFavoriteCategory: S
                     }), C.threadCount > 0 ? (0, i.jsx)(X.A, {
                         withGuildIcon: p,
                         channel: T,

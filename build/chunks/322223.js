@@ -1,6 +1,6 @@
 /** chunk id: 322223 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => S
 });
 var i = n(627968),
     l = n(64700),
@@ -16,23 +16,23 @@ var i = n(627968),
     T = n(585510),
     A = n(834409),
     I = n(903093),
-    N = n(652215),
-    p = n(746080),
-    R = n(985018),
-    S = n(858411);
+    p = n(652215),
+    N = n(746080),
+    m = n(985018),
+    R = n(858411);
 
-function m(e) {
+function S(e) {
     let {
         onDismiss: t
-    } = e, m = (0, r.bG)([_.A], () => _.A.getGuildId()), h = (0, r.bG)([u.A], () => null != m ? u.A.getChannelId(m) : null, [m]), g = m ?? null, C = (0, r.bG)([d.A], () => null != g ? d.A.getGuild(g) : null, [g]), {
+    } = e, S = (0, r.bG)([_.A], () => _.A.getGuildId()), h = (0, r.bG)([u.A], () => null != S ? u.A.getChannelId(S) : null, [S]), g = S ?? null, C = (0, r.bG)([d.A], () => null != g ? d.A.getGuild(g) : null, [g]), {
         shouldShowIncidentActions: O,
         incidentData: y,
         isUnderLockdown: x
-    } = (0, T.Li)(g), P = (0, o.fw)(C?.id ?? N.dJq), D = l.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
+    } = (0, T.Li)(g), f = (0, o.fw)(C?.id ?? p.dJq), P = l.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
     if (null == C || null == y || !O) return null;
-    let U = e => {
-            e && P && h !== p.VV.MEMBER_SAFETY && D() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
-                notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
+    let D = e => {
+            e && f && h !== N.VV.MEMBER_SAFETY && P() ? E.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                notice_type: p.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: C.id
             }) : (0, s.mMO)(async () => {
                 let e = {
@@ -49,53 +49,53 @@ function m(e) {
                 })
             })
         },
-        f = (0, i.jsx)(a.Ay, {
-            className: S.$f,
+        U = (0, i.jsx)(a.Ay, {
+            className: R.$f,
             guild: C,
             size: a.Ay.Sizes.MINI
         }),
         M = (0, I.ql)(y, C.name);
     if (null != (y.dmsDisabledUntil ?? y.invitesDisabledUntil) && x) return (0, i.jsxs)(s.$Td, {
-        className: S.lm,
+        className: R.lm,
         color: s.Hv$.NEUTRAL,
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
-            noticeType: N.kqX.GUILD_RAID_NOTIFICATION
-        }), f, M, (0, i.jsx)(s.zr9, {
-            className: S.hP,
-            onClick: () => U(!1),
+            noticeType: p.kqX.GUILD_RAID_NOTIFICATION
+        }), U, M, (0, i.jsx)(s.zr9, {
+            className: R.hP,
+            onClick: () => D(!1),
             children: (0, i.jsxs)("div", {
-                className: S.rx,
+                className: R.rx,
                 children: [(0, i.jsx)(s.XAi, {
                     size: "xs",
                     color: "currentColor"
                 }), (0, i.jsx)("span", {
-                    children: R.intl.string(R.t["c+7oa7"])
+                    children: m.intl.string(m.t["c+7oa7"])
                 })]
             })
         })]
     });
-    let L = (0, I.P$)(y) ? R.intl.formatToPlainString(R.t.tZTx2E, {
+    let L = (0, I.P$)(y) ? m.intl.formatToPlainString(m.t.tZTx2E, {
             guildName: C.name
-        }) : (0, I.Qm)(y) ? R.intl.formatToPlainString(R.t["1bSmxr"], {
+        }) : (0, I.Qm)(y) ? m.intl.formatToPlainString(m.t["1bSmxr"], {
             guildName: C.name
-        }) : R.intl.formatToPlainString(R.t.W87xDE, {
+        }) : m.intl.formatToPlainString(m.t.W87xDE, {
             guildName: C.name
         }),
-        j = P && h === p.VV.MEMBER_SAFETY;
+        j = f && h === N.VV.MEMBER_SAFETY;
     return (0, i.jsxs)(s.$Td, {
-        className: S.lm,
+        className: R.lm,
         color: s.Hv$.WARNING,
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
-            noticeType: N.kqX.GUILD_RAID_NOTIFICATION
-        }), f, L, !j && (0, i.jsx)(s.zr9, {
-            className: S.hP,
-            onClick: () => U(!0),
+            noticeType: p.kqX.GUILD_RAID_NOTIFICATION
+        }), U, L, !j && (0, i.jsx)(s.zr9, {
+            className: R.hP,
+            onClick: () => D(!0),
             children: (0, i.jsx)("div", {
-                className: S.rx,
+                className: R.rx,
                 children: (0, i.jsx)("span", {
-                    children: R.intl.string(R.t.zDJDhr)
+                    children: m.intl.string(m.t.zDJDhr)
                 })
             })
         })]

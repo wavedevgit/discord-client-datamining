@@ -111,7 +111,7 @@ function F(e) {
             e && (0, I.u)(G.YYv), eC ? (ec || (0, j.tV)(!0), e && (0, d.mMO)(async () => {
                 let {
                     default: e
-                } = await n.e("15077").then(n.bind(n, 889186));
+                } = await n.e("59839").then(n.bind(n, 889186));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     parentId: null
@@ -181,6 +181,7 @@ function F(e) {
             })
         }), Z && (0, i.jsx)(c.AM, {
             targetElementRef: es,
+            gradientColor: "purple",
             position: "right",
             alignmentStrategy: "edge",
             align: "top",

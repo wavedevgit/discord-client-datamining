@@ -1,6 +1,6 @@
 /** chunk id: 342744 params = (module,exports,require) **/
 n.d(t, {
-    default: () => I
+    default: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(923408),
     _ = n(198982),
     g = n(136857),
-    m = n(793574),
-    A = n(688810),
+    A = n(793574),
+    m = n(688810),
     h = n(253390),
     p = n(166403),
     x = n(927578),
@@ -48,7 +48,7 @@ function C(e) {
     })
 }
 
-function f() {
+function I() {
     return (0, i.jsxs)("div", {
         className: T.rf,
         children: [(0, i.jsx)("div", {
@@ -59,39 +59,39 @@ function f() {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         guildBoostSlotId: t,
         transitionState: n,
         onClose: l
     } = e, {
         analyticsLocations: u
-    } = (0, A.Ay)(m.A.GUILD_BOOST_UNCANCELLATION_MODAL);
+    } = (0, m.Ay)(A.A.GUILD_BOOST_UNCANCELLATION_MODAL);
     s.useEffect(() => {
         p.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
     let T = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-        [I, b] = s.useState(1),
+        [f, b] = s.useState(1),
         [N, v] = s.useState(!1),
-        [j, O] = s.useState(null),
+        [O, j] = s.useState(null),
         R = s.useCallback(async () => {
             if (null != T) try {
-                v(!0), O(null);
+                v(!0), j(null);
                 let e = (0, h.v)(T, 1);
                 a()((0, x.bx)(e) <= (0, x.bx)(T.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(T, e, t, u), b(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
-                O(E.intl.string(e.code === g.tG.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq7 : E.t["5mlOCW"])), v(!1)
+                j(E.intl.string(e.code === g.tG.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq7 : E.t["5mlOCW"])), v(!1)
             }
         }, [T, t, u]);
-    return (0, i.jsx)(A.f5, {
+    return (0, i.jsx)(m.f5, {
         value: u,
         children: (0, i.jsx)(r.Modal, {
             transitionState: n,
             onClose: async () => await l(),
             size: "sm",
             title: (() => {
-                switch (I) {
+                switch (f) {
                     case 1:
                         return E.intl.string(E.t.l52ih2);
                     case 2:
@@ -101,7 +101,7 @@ function I(e) {
                 }
             })(),
             actions: (() => {
-                switch (I) {
+                switch (f) {
                     case 1:
                         return [{
                             variant: "secondary",
@@ -126,15 +126,15 @@ function I(e) {
             })(),
             children: (() => {
                 if (null == T) return (0, i.jsx)(d.y$y, {});
-                switch (I) {
+                switch (f) {
                     case 1:
                         return (0, i.jsx)(C, {
-                            errorMsg: j
+                            errorMsg: O
                         });
                     case 2:
-                        return (0, i.jsx)(f, {});
+                        return (0, i.jsx)(I, {});
                     default:
-                        throw Error(`Unexpected step: ${I}`)
+                        throw Error(`Unexpected step: ${f}`)
                 }
             })()
         })

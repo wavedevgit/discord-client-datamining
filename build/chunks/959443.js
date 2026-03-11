@@ -15,8 +15,8 @@ var s = n(503698),
     u = n(793943),
     _ = n(996254),
     g = n(12901),
-    m = n(738419),
-    A = n(520650),
+    A = n(738419),
+    m = n(520650),
     h = n(985018),
     p = n(996554),
     x = n(114149);
@@ -35,9 +35,9 @@ function E(e) {
         }
     });
     let s = (0, _.X)({
-        "en-US": A.default["f/cLEi"],
-        "en-GB": A.default["f/cLEi"]
-    }, A.default.CARxAC);
+        "en-US": m.default["f/cLEi"],
+        "en-GB": m.default["f/cLEi"]
+    }, m.default.CARxAC);
     return (0, i.jsxs)("div", {
         className: l()(p.kL, t),
         children: [(0, i.jsx)("div", {
@@ -55,7 +55,7 @@ function E(e) {
                 children: s
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: h.intl.string(A.default.nla4RG)
+                children: h.intl.string(m.default.nla4RG)
             })]
         }), (0, i.jsx)("div", {
             className: p.UD,
@@ -63,7 +63,7 @@ function E(e) {
                 variant: "primary",
                 text: h.intl.string(h.t.uw9zI7),
                 onClick: () => {
-                    (0, m.b0)(m.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
+                    (0, A.b0)(A.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
                         from: u.xv.SETTING
                     }), (0, g.default)()
                 }

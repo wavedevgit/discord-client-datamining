@@ -1,6 +1,6 @@
 /** chunk id: 372411 params = (module,exports,require) **/
 n.d(t, {
-    E: () => A
+    E: () => m
 });
 var i = n(311907),
     s = n(264686),
@@ -29,17 +29,17 @@ let u = {
         setValue: e => s.default.setNotifyMessagesInSelectedChannel(e),
         useDisabled: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds())
     }),
-    m = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+    A = (0, a.zD)(o.X.DISABLE_ALL_NOTIFICATION_SOUNDS, {
         useTitle: () => c.intl.string(c.t["2ZhCOd"]),
         useSubtitle: () => c.intl.string(c.t.EAKdPr),
         useValue: () => (0, i.bG)([r.A], () => r.A.getDisableAllSounds()),
         setValue: e => s.default.toggleDisableAllSounds(e)
     }),
-    A = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
+    m = (0, a.D1)(o.X.NOTIFICATION_SOUNDS_LIST, {
         initialize: function() {
             return () => {
                 (0, d.vd)()
             }
         },
-        buildLayout: () => [(0, d.i)(u), g, (0, d.i)(_), m]
+        buildLayout: () => [(0, d.i)(u), g, (0, d.i)(_), A]
     })

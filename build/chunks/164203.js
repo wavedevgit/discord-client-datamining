@@ -23,8 +23,8 @@ var l = n(627968),
     T = n(55738),
     v = n(33621),
     S = n(943849),
-    _ = n(714510),
-    C = n(890687),
+    C = n(714510),
+    _ = n(890687),
     j = n(579473),
     y = n(18437),
     I = n(590202),
@@ -75,7 +75,7 @@ function Y(e) {
         return !!(null != t && (0, L.g5)(n) && (0, R.zS)(t, n))
     }, [n, Z, ea]), er = !0 === f || el || ei, eo = (0, r.bG)([N.A], () => null != n && N.A.isEnrolling(n.id), [n]), eu = (0, r.bG)([c.A], () => (Z?.id == null ? null : c.A.getParticipant(t, Z.id)) != null, [t, Z]), {
         launchInGameActivity: ec
-    } = (0, C.zW)(n), ed = (0, C.S5)(n?.config.expiresAt), em = (0, C.S5)(n?.config.rewardsConfig.rewardsExpireAt), eA = s.useCallback(() => {
+    } = (0, _.zW)(n), ed = (0, _.S5)(n?.config.expiresAt), em = (0, _.S5)(n?.config.rewardsConfig.rewardsExpireAt), eA = s.useCallback(() => {
         (0, x.Oy)(n.id, {
             questContent: g.uF.QUEST_LIVE_STREAM,
             questContentCTA: I.Cy.ACCEPT_QUEST,
@@ -108,19 +108,19 @@ function Y(e) {
     }), eE = s.useMemo(() => (0, S.L)({
         quest: n,
         location: B.rE.QUEST_CHANNEL_CALL_HEADER
-    }), [n]), ex = (0, _.NA)({
+    }), [n]), ex = (0, C.NA)({
         quest: n
-    }), eN = (0, U.vA)(n), eg = (0, C.LS)(n), eT = n.userStatus?.enrolledAt != null, ev = n.userStatus?.completedAt != null, eS = null != n.userStatus && (0, b.gO)(n.userStatus, g.uF.QUEST_LIVE_STREAM), e_ = null != n.userStatus && (0, b.gO)(n.userStatus, g.uF.QUEST_BAR), eC = es && !e_, ej = v.t.useConfig({
+    }), eN = (0, U.vA)(n), eg = (0, _.LS)(n), eT = n.userStatus?.enrolledAt != null, ev = n.userStatus?.completedAt != null, eS = null != n.userStatus && (0, b.gO)(n.userStatus, g.uF.QUEST_LIVE_STREAM), eC = null != n.userStatus && (0, b.gO)(n.userStatus, g.uF.QUEST_BAR), e_ = es && !eC, ej = v.t.useConfig({
         location: B.rE.QUEST_CHANNEL_CALL_HEADER
     }), ey = (0, Q.Pd)(n);
     eE.info({
         isQuestCallHeaderDismissed: eS,
         isQuestExpired: eg,
-        isQuestBarShowing: eC,
+        isQuestBarShowing: e_,
         isCurrentUserCallParticipant: eu
     });
     let eI = null != a && n.userStatus?.claimedAt == null;
-    if (!eI && (eS || eg || eC) || !eI && !eu) return null;
+    if (!eI && (eS || eg || e_) || !eI && !eu) return null;
     let eM = (0, L.Yh)(n),
         eb = (0, l.jsx)(F.A, {
             className: K.Qq,
@@ -253,7 +253,7 @@ function $(e) {
             location: "QuestChannelCallHeader"
         }),
         i = (0, r.bG)([N.A], () => N.A.quests),
-        o = (0, C.oH)(Array.from(i.values())),
+        o = (0, _.oH)(Array.from(i.values())),
         u = s.useMemo(() => (0, U.$e)(i, B.Ls), [i]),
         d = (0, r.bG)([c.A], () => c.A.getParticipants(e.channelId), [e.channelId]),
         m = (0, r.bG)([h.A], () => null != e.previewQuest ? e.previewQuest : function(e, t, n) {
@@ -286,8 +286,8 @@ function $(e) {
     s.useEffect(() => {
         null != E ? S(E) : null === p && S(null)
     }, [E, p]);
-    let _ = E ?? (null !== p ? v : null),
-        j = e.previewQuest ?? (a ? _ : m);
+    let C = E ?? (null !== p ? v : null),
+        j = e.previewQuest ?? (a ? C : m);
     return null == j || n ? null : (0, l.jsx)(w.R, {
         questOrQuests: j,
         overrideVisibility: !t,

@@ -1,21 +1,21 @@
 /** chunk id: 580314 params = (module,exports,require) **/
-i.d(t, {
+r.d(t, {
     A: () => s
 });
-var r = i(397927),
-    n = i(486020),
-    a = i(954921);
+var n = r(397927),
+    i = r(486020),
+    a = r(954921);
 let s = e => {
     let {
         legacyAssetId: t,
-        skuId: i,
-        size: s = r._3J.SIZE_80,
+        skuId: r,
+        size: s = n._3J.SIZE_80,
         canAnimate: l
     } = e;
-    return (0, n.F_)({
+    return (0, i.F_)({
         avatarDecoration: {
             asset: t,
-            skuId: i
+            skuId: r
         },
         size: (0, a.Te)(s),
         canAnimate: l

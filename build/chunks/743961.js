@@ -19,12 +19,12 @@ let d = s.memo(function(e) {
         layout: u,
         useInlineNotice: _,
         useHeaderDecoration: g
-    } = t, m = n?.(), A = c?.(), h = _?.(), p = g?.(), x = null != n || null != d;
+    } = t, A = n?.(), m = c?.(), h = _?.(), p = g?.(), x = null != n || null != d;
     return (0, i.jsxs)(i.Fragment, {
-        children: [null != m && (0, i.jsx)(r._, {
-            title: m,
+        children: [null != A && (0, i.jsx)(r._, {
+            title: A,
             icon: s,
-            subtitle: A,
+            subtitle: m,
             decoration: p
         }), (0, i.jsx)("div", {
             "data-settings-category-key": x ? t.key : void 0,

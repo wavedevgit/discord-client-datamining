@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => ee,
     YD: () => et,
-    iI: () => eA
+    iI: () => em
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     u = n(100767),
     _ = n(955572),
     g = n(775602),
-    m = n(536199),
-    A = n(502229),
+    A = n(536199),
+    m = n(502229),
     h = n(406360),
     p = n(688810),
     x = n(652525),
@@ -24,13 +24,13 @@ var i = n(627968),
     T = n(614738),
     S = n(379848),
     C = n(259065),
-    f = n(141468),
-    I = n(963852),
+    I = n(141468),
+    f = n(963852),
     b = n(763754),
     N = n(20851),
     v = n(652961),
-    j = n(195043),
-    O = n(54570),
+    O = n(195043),
+    j = n(54570),
     R = n(8880),
     y = n(954571),
     P = n(975571),
@@ -57,11 +57,11 @@ let Z = (0, E.Ld)(),
         (0, _.HU)(e)
     }, 250),
     $ = a().debounce(e => {
-        (0, O.zU)(e)
+        (0, j.zU)(e)
     }, 250);
 
 function ee(e) {
-    m.z.useExperiment({
+    A.z.useExperiment({
         location: "useAccessibilityItems"
     }, {
         autoTrackExposure: !0
@@ -73,53 +73,53 @@ function ee(e) {
         title: z.intl.string(z.t.G0neg7),
         children: (0, i.jsxs)(d.BJc, {
             gap: 16,
-            children: [(0, i.jsx)(et, {}), (0, i.jsxs)(j.x, {
+            children: [(0, i.jsx)(et, {}), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_SATURATION,
                 children: [(0, i.jsx)(es, {}), (0, i.jsx)(d.cGx, {})]
-            }), (0, i.jsxs)(j.x, {
+            }), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_LINK_DECORATIONS,
                 children: [(0, i.jsx)(el, {}), (0, i.jsx)(d.cGx, {})]
             }), t ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(j.x, {
+                children: [(0, i.jsx)(O.x, {
                     setting: H.H.ACCESSIBILITY_CUSTOM_CURSOR,
                     children: (0, i.jsx)(ea, {})
                 }), (0, i.jsx)(d.cGx, {})]
-            }) : null, (0, i.jsxs)(j.x, {
+            }) : null, (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_ROLE_STYLE,
                 children: [(0, i.jsx)(eo, {}), (0, i.jsx)(d.cGx, {})]
             }), s && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(er, {}), (0, i.jsx)(d.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(j.x, {
+            }), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_DISPLAY_NAME_STYLES,
                 children: [(0, i.jsx)(ed, {}), (0, i.jsx)(d.cGx, {})]
-            }), (0, i.jsxs)(j.x, {
+            }), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_PROFILE_COLORS,
                 children: [(0, i.jsx)(ec, {}), (0, i.jsx)(d.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(j.x, {
+            }), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_CONTRAST,
                 children: [(0, i.jsx)(eu, {}), (0, i.jsx)(d.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(j.x, {
+            }), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION,
                 children: [(0, i.jsx)(e_, {}), (0, i.jsx)(d.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(j.x, {
+            }), (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_MESSAGES,
-                children: [(0, i.jsx)(em, {}), (0, i.jsx)(d.cGx, {
+                children: [(0, i.jsx)(eA, {}), (0, i.jsx)(d.cGx, {
                     gap: 4
                 })]
-            }), n && (0, i.jsxs)(j.x, {
+            }), n && (0, i.jsxs)(O.x, {
                 setting: H.H.ACCESSIBILITY_SWITCH_ICON,
                 children: [(0, i.jsx)(ei, {}), (0, i.jsx)(d.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsx)(ep, {}), (0, i.jsx)(j.x, {
+            }), (0, i.jsx)(ep, {}), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_APPEARANCE_UPSELL,
                 children: (0, i.jsx)("div", {
                     className: W.oq,
@@ -142,8 +142,8 @@ function ee(e) {
 function et() {
     let e = D.hH.useSetting(),
         [t] = s.useState(() => {
-            let e = (0, f.rh)({
-                ...(0, I.Ay)({
+            let e = (0, I.rh)({
+                ...(0, f.Ay)({
                     channelId: "1337",
                     content: z.intl.formatToPlainString(z.t.bB80LC, {
                         previewLink: "https://discord.com/accessibility"
@@ -245,7 +245,7 @@ function es() {
             initialValue: e,
             onValueChange: Q,
             onMarkerRender: e => 100 * e % 2 == 0 ? `${100*e}%` : void 0
-        }), (0, i.jsx)(j.x, {
+        }), (0, i.jsx)(O.x, {
             setting: H.H.ACCESSIBILITY_SATURATION_CUSTOM_COLOR,
             children: (0, i.jsx)(d.dOG, {
                 label: z.intl.string(z.t.bQCodD),
@@ -281,7 +281,7 @@ function ea() {
 
 function er() {
     let e = (0, r.bG)([L.Ay], () => L.Ay.hdrDynamicRange);
-    return (0, i.jsx)(j.x, {
+    return (0, i.jsx)(O.x, {
         setting: H.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
         children: (0, i.jsx)(d.z6M, {
             label: z.intl.string(z.t.nemtgW),
@@ -353,7 +353,7 @@ function ec() {
     let e = (0, r.bG)([g.A], () => g.A.syncProfileThemeWithUserTheme);
     return (0, i.jsx)(d.nVY, {
         label: z.intl.string(z.t.BT8Bmp),
-        children: (0, i.jsx)(j.x, {
+        children: (0, i.jsx)(O.x, {
             setting: H.H.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
             children: (0, i.jsx)(d.dOG, {
                 label: z.intl.string(z.t["sSY+mD"]),
@@ -385,10 +385,10 @@ function eu() {
     });
     return (0, i.jsxs)(d.nVY, {
         label: z.intl.string(z.t["TYyfO/"]),
-        children: [(0, i.jsx)(j.x, {
+        children: [(0, i.jsx)(O.x, {
             setting: H.H.ACCESSIBILITY_HIGH_CONTRAST,
             children: (0, i.jsx)(en, {})
-        }), (0, A.D)() ? (0, i.jsx)(j.x, {
+        }), (0, m.D)() ? (0, i.jsx)(O.x, {
             setting: H.H.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
             children: (0, i.jsx)(d.dOG, {
                 label: z.intl.string(z.t.cguiec),
@@ -419,7 +419,7 @@ function e_() {
         u = s.useCallback(e => {
             (0, _.qz)(e ? "auto" : a)
         }, [a]),
-        m = s.useCallback(e => {
+        A = s.useCallback(e => {
             (0, _.qz)(e ? "reduce" : "no-preference")
         }, []);
     return (0, i.jsx)("div", {
@@ -434,14 +434,14 @@ function e_() {
                 label: z.intl.string(z.t["+Dx+HD"]),
                 checked: "auto" === l,
                 onChange: u
-            }), (0, i.jsx)(j.x, {
+            }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_ENABLE,
                 children: (0, i.jsx)(d.dOG, {
                     label: z.intl.string(z.t.b3XBzg),
                     checked: n,
-                    onChange: m
+                    onChange: A
                 })
-            }), (0, i.jsx)(j.x, {
+            }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,
                 children: (0, i.jsx)(d.dOG, {
                     label: z.intl.string(z.t.Iayoh5),
@@ -449,7 +449,7 @@ function e_() {
                     checked: e,
                     onChange: D.kt.updateSetting
                 })
-            }), (0, i.jsx)(j.x, {
+            }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
                 children: (0, i.jsx)(d.dOG, {
                     label: z.intl.string(z.t.iIaOlc),
@@ -457,7 +457,7 @@ function e_() {
                     checked: t,
                     onChange: D.Sf.updateSetting
                 })
-            }), (0, i.jsx)(j.x, {
+            }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_STICKERS,
                 children: (0, i.jsx)(eg, {})
             })]
@@ -490,7 +490,7 @@ function eg() {
     })
 }
 
-function em() {
+function eA() {
     let e = (0, r.bG)([g.A], () => g.A.isSubmitButtonEnabled),
         t = D.D_.useSetting(),
         n = s.useRef(null);
@@ -498,14 +498,14 @@ function em() {
         ref: n,
         children: (0, i.jsxs)(d.nVY, {
             label: z.intl.string(z.t.onqU6o),
-            children: [(0, i.jsx)(j.x, {
+            children: [(0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_MESSAGES_SEND_MESSAGE_BUTTON,
                 children: (0, i.jsx)(d.dOG, {
                     label: z.intl.string(z.t["3Fztn5"]),
                     checked: e,
                     onChange: _.Xt
                 })
-            }), (0, i.jsx)(j.x, {
+            }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_MESSAGES_LEGACY_CHAT_INPUT,
                 children: (0, i.jsx)(d.dOG, {
                     label: z.intl.string(z.t.TZ2hZH),
@@ -525,7 +525,7 @@ function em() {
     })
 }
 
-function eA() {
+function em() {
     let e = (0, r.bG)([R.A], () => R.A.speechRate);
     return (0, i.jsxs)(d.BJc, {
         gap: 16,
@@ -558,27 +558,27 @@ function eA() {
 
 function eh() {
     let [e, t] = s.useState(!1);
-    return (0, c.l0)(() => (0, O.pr)()), (0, i.jsx)(d.Button, {
+    return (0, c.l0)(() => (0, j.pr)()), (0, i.jsx)(d.Button, {
         text: z.intl.string(z.t.SKNnqq),
         icon: e ? d.E$n : d.udU,
         size: "sm",
         onClick: () => {
             if (e) {
-                (0, O.pr)(), t(!1);
+                (0, j.pr)(), t(!1);
                 return
-            }(0, O.AU)(z.intl.string(z.t.PKaNJL), !0, void 0, () => t(!0), () => t(!1)), t(!0)
+            }(0, j.AU)(z.intl.string(z.t.PKaNJL), !0, void 0, () => t(!0), () => t(!1)), t(!0)
         }
     })
 }
 
 function ep() {
-    return u.$j ? (0, i.jsx)(j.x, {
+    return u.$j ? (0, i.jsx)(O.x, {
         setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH,
         children: (0, i.jsx)(d.nVY, {
             label: z.intl.string(z.t.VpSKeO),
-            children: (0, i.jsx)(j.x, {
+            children: (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
-                children: (0, i.jsx)(eA, {})
+                children: (0, i.jsx)(em, {})
             })
         })
     }) : null

@@ -1,6 +1,6 @@
 /** chunk id: 249581 params = (module,exports,require) **/
-n.d(t, {
-    A: () => h
+n.d(e, {
+    A: () => C
 });
 var i = n(627968),
     r = n(64700),
@@ -8,13 +8,13 @@ var i = n(627968),
     a = n.n(l),
     s = n(397927),
     o = n(927018),
-    d = n(64585),
-    c = n(906688),
+    c = n(64585),
+    d = n(906688),
     u = n(99761);
-let A = e => {
+let h = t => {
     let {
-        color: t
-    } = e;
+        color: e
+    } = t;
     return (0, i.jsxs)("svg", {
         width: "48",
         height: "28",
@@ -48,54 +48,54 @@ let A = e => {
             width: "6",
             height: "6",
             transform: "rotate(45 10.1968 13)",
-            fill: t
+            fill: e
         }), (0, i.jsx)("path", {
             d: "M27.3936 4.39355L34.1233 16.2873L27.3936 28.1811L20.6638 16.2873L27.3936 4.39355Z",
-            fill: t
+            fill: e
         }), (0, i.jsx)("rect", {
             x: "44.5903",
             y: "13",
             width: "6",
             height: "6",
             transform: "rotate(45 44.5903 13)",
-            fill: t
+            fill: e
         })]
     })
 };
 
-function h(e) {
+function C(t) {
     let {
-        achievement: t,
+        achievement: e,
         unlocked: n
-    } = e, {
-        name: l,
-        description: h,
-        rarity: _,
-        hideDescriptionUntilUnlock: m,
-        onAction: p
     } = t, {
-        color: g
-    } = (0, o.ag)(_);
+        name: l,
+        description: C,
+        rarity: g,
+        hideDescriptionUntilUnlock: A,
+        onAction: E
+    } = e, {
+        color: _
+    } = (0, o.ag)(g);
     r.useEffect(() => {
-        let e = setTimeout(() => {
-            d.A.playAchievementUnlockSound()
+        let t = setTimeout(() => {
+            c.A.playAchievementUnlockSound()
         }, 50);
         return () => {
-            clearTimeout(e)
+            clearTimeout(t)
         }
     }, []);
-    let E = null != p && n,
-        I = E ? s.DUT : "div";
-    return (0, i.jsxs)(I, {
-        className: a()(u.kL, E && u.b),
+    let m = null != E && n,
+        p = m ? s.DUT : "div";
+    return (0, i.jsxs)(p, {
+        className: a()(u.kL, m && u.b),
         onClick: () => {
-            E && p()
+            m && E()
         },
         children: [(0, i.jsx)("div", {
             className: u.zc,
-            children: (0, i.jsx)(c.A, {
-                achievementId: t.id,
-                size: c.A.Sizes.SIZE_40,
+            children: (0, i.jsx)(d.A, {
+                achievementId: e.id,
+                size: d.A.Sizes.SIZE_40,
                 unlocked: n
             })
         }), (0, i.jsxs)("div", {
@@ -107,12 +107,12 @@ function h(e) {
             }), (0, i.jsx)(s.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
-                children: m && !n ? "?????" : h()
+                children: A && !n ? "?????" : C()
             })]
         }), (0, i.jsx)("div", {
             className: u.Db,
-            children: (0, i.jsx)(A, {
-                color: g
+            children: (0, i.jsx)(h, {
+                color: _
             })
         })]
     })

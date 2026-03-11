@@ -1,7 +1,7 @@
 /** chunk id: 362205 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => _
+    A: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -9,20 +9,20 @@ var r = n(627968),
     s = n.n(a),
     l = n(284009),
     o = n.n(l),
-    u = n(490249),
-    c = n(942381),
+    c = n(490249),
+    u = n(942381),
     d = n(837381),
-    f = n(397927),
-    m = n(775602),
+    m = n(397927),
+    f = n(775602),
     g = n(253932),
     h = n(894858),
-    y = n(272053),
-    p = n(189857),
-    v = n(674085),
+    p = n(272053),
+    y = n(189857),
+    _ = n(674085),
     x = n(890690),
-    b = n(637577);
+    v = n(637577);
 
-function A(e) {
+function b(e) {
     let {
         category: t,
         onClick: n,
@@ -30,25 +30,25 @@ function A(e) {
         dismissibleBadge: a
     } = e, {
         useTitle: l,
-        useSubnavLabel: u,
-        key: c
-    } = t, m = l?.(), g = u?.() ?? m;
+        useSubnavLabel: c,
+        key: u
+    } = t, f = l?.(), g = c?.() ?? f;
     return o()(null != g, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
-        id: c,
-        children: e => (0, r.jsxs)(f.DUT, {
+        id: u,
+        children: e => (0, r.jsxs)(m.DUT, {
             onClick: n,
-            className: s()(b.AS, {
-                [b.vu]: i
+            className: s()(v.AS, {
+                [v.vu]: i
             }),
             ...e,
-            children: [g, null != a && !i && (0, r.jsx)(v.A, {
+            children: [g, null != a && !i && (0, r.jsx)(_.A, {
                 badge: a
             })]
-        }, c)
+        }, u)
     })
 }
 
-function _(e) {
+function A(e) {
     let {
         categories: t,
         visibleContent: n,
@@ -67,13 +67,13 @@ function _(e) {
         let n = t.find(t => t.key === e);
         null != n && l(n.key)
     }, {
-        equalityFn: c.x
+        equalityFn: u.x
     }), [t]);
     let o = i.useMemo(() => Math.max(t.findIndex(e => e.key === s), 0), [t, s]),
         {
             thumbRef: d,
-            trackRef: v,
-            thumbAnchorRef: _,
+            trackRef: _,
+            thumbAnchorRef: A,
             springs: j
         } = function(e) {
             let t = g.Xi.useSetting(),
@@ -82,7 +82,7 @@ function _(e) {
                 a = i.useRef(null),
                 s = i.useRef(!0),
                 l = i.useRef(t),
-                [o, u] = (0, f.zhh)(() => ({
+                [o, c] = (0, m.zhh)(() => ({
                     y: 0,
                     height: 0,
                     config: {
@@ -95,19 +95,19 @@ function _(e) {
                 let e = l.current !== t,
                     i = () => {
                         if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, c] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, f = (c.y - i.y) / d, g = c.height / d;
-                        s.current || e || m.A.useReducedMotion ? (o.y.set(f), o.height.set(g)) : u({
-                            y: f,
+                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, m = (u.y - i.y) / d, g = u.height / d;
+                        s.current || e || f.A.useReducedMotion ? (o.y.set(m), o.height.set(g)) : c({
+                            y: m,
                             height: g
                         }), s.current = !1, l.current = t
                     },
-                    c = null;
-                return e ? c = requestAnimationFrame(() => {
-                    c = null, i()
+                    u = null;
+                return e ? u = requestAnimationFrame(() => {
+                    u = null, i()
                 }) : i(), () => {
-                    null != c && cancelAnimationFrame(c)
+                    null != u && cancelAnimationFrame(u)
                 }
-            }, [e, u, o.y, o.height, t]), {
+            }, [e, c, o.y, o.height, t]), {
                 thumbRef: r,
                 trackRef: n,
                 thumbAnchorRef: a,
@@ -115,7 +115,7 @@ function _(e) {
             }
         }(o);
     return (0, x.u)(t), (0, r.jsxs)("div", {
-        className: b.o8,
+        className: v.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
@@ -123,24 +123,24 @@ function _(e) {
             "--custom-nav-width": "2px"
         },
         children: [(0, r.jsx)("div", {
-            className: b.u4,
+            className: v.u4,
             "aria-hidden": "true",
-            ref: v,
-            children: (0, r.jsx)(u.animated.div, {
-                className: b.FF,
+            ref: _,
+            children: (0, r.jsx)(c.animated.div, {
+                className: v.FF,
                 style: j,
                 ref: d
             })
         }), (0, r.jsx)("div", {
-            className: b.gu,
+            className: v.gu,
             "aria-hidden": "true",
-            ref: _
+            ref: A
         }), t.map(e => {
-            let t = (0, p.H)(e.key, n, a);
-            return (0, r.jsx)(A, {
+            let t = (0, y.H)(e.key, n, a);
+            return (0, r.jsx)(b, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void y.A.navigate(t, {
+                    return t = e.key, void p.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

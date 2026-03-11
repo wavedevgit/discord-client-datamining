@@ -1,6 +1,6 @@
 /** chunk id: 219887 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(240248),
     _ = n(985018),
     g = n(789863);
-class m extends s.PureComponent {
+class A extends s.PureComponent {
     static defaultProps = {
         isForSubscription: !1,
         isDefault: !1,

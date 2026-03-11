@@ -1,6 +1,6 @@
 /** chunk id: 709913 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -13,13 +13,13 @@ var i = n(627968),
     u = n(662758),
     _ = n(179690),
     g = n(531525),
-    m = n(985018);
+    A = n(985018);
 
-function A(e) {
+function m(e) {
     let {
         backupCodes: t,
         hasTOTPEnabled: n,
-        currentUser: A
+        currentUser: m
     } = e, h = s.useCallback(e => {
         (0, l.qfG)(t => (0, i.jsx)(d.A, {
             ...t,
@@ -33,8 +33,8 @@ function A(e) {
             handleSubmit: e => a.A.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
                 h(e)
             }),
-            title: m.intl.string(m.t.PsQmzU),
-            actionText: m.intl.string(m.t.ajkYcF)
+            title: A.intl.string(A.t.PsQmzU),
+            actionText: A.intl.string(A.t.ajkYcF)
         }))
     }, [h]), x = s.useCallback(() => {
         let e = t.map(e => {
@@ -44,40 +44,40 @@ function A(e) {
                 } = e;
                 return `* ${n.substr(0,4)}-${n.substr(4)} ${t?"(used)":""}`
             }).join("\r\n"),
-            n = m.intl.formatToPlainString(m.t["uYWwh/"], {
-                email: A.email
+            n = A.intl.formatToPlainString(A.t["uYWwh/"], {
+                email: m.email
             });
         return `${n}\r
 \r
 ${e}`
-    }, [t, A.email]), E = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
+    }, [t, m.email]), E = s.useMemo(() => t.length > 0 ? (0, i.jsx)(o.A, {
         fileContents: x,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
         children: (0, i.jsx)(l.Button, {
             variant: "primary",
             size: "sm",
-            text: m.intl.string(m.t.qZZUy6)
+            text: A.intl.string(A.t.qZZUy6)
         })
     }) : (0, i.jsx)(c.x, {
         setting: g.H.ACCOUNT_VIEW_BACKUP_CODES,
         children: (0, i.jsx)(l.Button, {
             variant: "primary",
             size: "sm",
-            text: m.intl.string(m.t.xZEzbu),
+            text: A.intl.string(A.t.xZEzbu),
             onClick: p
         })
     }), [t.length, x, p]), T = s.useCallback(() => {
         r.A.show({
-            title: m.intl.string(m.t["D+aE7g"]),
-            body: m.intl.string(m.t.EA4ZEk),
-            cancelText: m.intl.string(m.t["ETE/oC"]),
+            title: A.intl.string(A.t["D+aE7g"]),
+            body: A.intl.string(A.t.EA4ZEk),
+            cancelText: A.intl.string(A.t["ETE/oC"]),
             onConfirm: () => a.A.disable()
         })
     }, []);
     return (0, i.jsx)(l.D0$, {
-        label: m.intl.string(m.t.EPVq00),
-        description: m.intl.string(m.t.bQwxib),
+        label: A.intl.string(A.t.EPVq00),
+        description: A.intl.string(A.t.bQwxib),
         children: (0, i.jsxs)(l.ButtonGroup, {
             size: "sm",
             children: [E, n && (0, i.jsx)(c.x, {
@@ -85,7 +85,7 @@ ${e}`
                 children: (0, i.jsx)(l.Button, {
                     variant: "critical-secondary",
                     size: "sm",
-                    text: m.intl.string(m.t["D+aE7g"]),
+                    text: A.intl.string(A.t["D+aE7g"]),
                     onClick: T
                 })
             }), !n && (0, i.jsx)(c.x, {
@@ -93,7 +93,7 @@ ${e}`
                 children: (0, i.jsx)(l.Button, {
                     variant: "primary",
                     size: "sm",
-                    text: m.intl.string(m.t.cDgKte),
+                    text: A.intl.string(A.t.cDgKte),
                     onClick: _.Ay.enableMFA
                 })
             })]

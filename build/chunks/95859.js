@@ -1,6 +1,6 @@
 /** chunk id: 95859 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -14,17 +14,17 @@ var s = n(503698),
     u = n(149757),
     _ = n(985018),
     g = n(706627);
-let m = () => {
+let A = () => {
     let e = (0, d.$F)(),
         t = (0, d.Xb)() ?? new Date,
         n = (0, u.N)(e?.id);
     if (null == e || null == n) return null;
     let {
         id: s,
-        nameUnformatted: m,
-        tenureReqNumMonths: A,
+        nameUnformatted: A,
+        tenureReqNumMonths: m,
         hasWideArt: h
-    } = e, p = _.intl.string(m), x = (0, o.T)(s, A), E = {
+    } = e, p = _.intl.string(A), x = (0, o.T)(s, m), E = {
         "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {

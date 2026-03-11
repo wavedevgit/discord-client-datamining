@@ -1,22 +1,22 @@
 /** chunk id: 550880 params = (module,exports,require) **/
-s.d(t, {
+l.d(t, {
     r: () => i
 });
-var l = s(833291),
-    n = s(998218),
-    r = s(985018);
-let a = [l.ts];
+var n = l(833291),
+    s = l(998218),
+    r = l(985018);
+let a = [n.ts];
 
-function i(e, t, s) {
-    let l = !1,
-        i = e.replaceAll(n.A.URL_REGEX, e => {
+function i(e, t, l) {
+    let n = !1,
+        i = e.replaceAll(s.A.URL_REGEX, e => {
             let t = a.some(t => null != t(e));
-            return t && (l = !0), t ? e : `\`${e}\``
+            return t && (n = !0), t ? e : `\`${e}\``
         });
-    if (l) return i;
+    if (n) return i;
     let u = r.intl.formatToMarkdownString(r.t.dZJpdG, {
         applicationName: t.name,
-        link: s
+        link: l
     });
     return `${i}
 

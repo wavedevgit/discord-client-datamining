@@ -15,8 +15,8 @@ var s = n(503698),
     u = n(158032),
     _ = n(793574),
     g = n(688810),
-    m = n(531260),
-    A = n(626584),
+    A = n(531260),
+    m = n(626584),
     h = n(639289),
     p = n(532794),
     x = n(832946),
@@ -24,13 +24,13 @@ var s = n(503698),
     T = n(481354),
     S = n(85563),
     C = n(739508),
-    f = n(203982),
-    I = n(927578),
+    I = n(203982),
+    f = n(927578),
     b = n(83617),
     N = n(615396),
     v = n(526292),
-    j = n(637073),
-    O = n(573359),
+    O = n(637073),
+    j = n(573359),
     R = n(110919),
     y = n(422936),
     P = n(795269),
@@ -41,7 +41,7 @@ var s = n(503698),
     U = n(601107),
     k = n(985018),
     V = n(282151);
-let w = new A.A("SubscriptionHeader.tsx"),
+let w = new m.A("SubscriptionHeader.tsx"),
     H = {
         page: M.liQ.USER_SETTINGS,
         section: M.JJy.SETTINGS_PREMIUM,
@@ -169,12 +169,12 @@ let W = function(e) {
         subscription: t,
         currentInvoicePreview: s,
         renewalInvoicePreview: a,
-        paymentSource: A,
+        paymentSource: m,
         busy: P,
         analyticsLocation: X
     } = e, {
         analyticsLocations: W
-    } = (0, g.Ay)(_.A.SUBSCRIPTION_HEADER), K = (0, m.A)({
+    } = (0, g.Ay)(_.A.SUBSCRIPTION_HEADER), K = (0, A.A)({
         forceFetch: !1
     }), {
         fractionalState: Z
@@ -188,7 +188,7 @@ let W = function(e) {
         $ = Q?.discount?.amount,
         ee = (0, v.k5)(),
         et = (0, v.nf)(),
-        en = (0, j.d)(),
+        en = (0, O.d)(),
         ei = () => {
             (t.status === M.Dmq.ACTIVE || t.status === M.Dmq.PAST_DUE || t.status === M.Dmq.PAUSED) && ea(D.g.PAUSE_SELECT)
         },
@@ -216,10 +216,10 @@ let W = function(e) {
             if (null != t && null != t.premiumPlanIdFromItems) {
                 let e = E.A.get(t.premiumPlanIdFromItems);
                 if (null == e) return void w.info(`Plan not fetched for plan id: ${t.premiumPlanIdFromItems}`);
-                let l = (0, b._w)(e, A?.id, !1),
+                let l = (0, b._w)(e, m?.id, !1),
                     d = l.length > 0 ? l[0] : t.currency,
                     u = !0;
-                if (1 === l.length && A?.id === t.paymentSourceId && (0, b.jJ)(e.id, d, A?.id) && (u = !1), u)(0, p.A)({
+                if (1 === l.length && m?.id === t.paymentSourceId && (0, b.jJ)(e.id, d, m?.id) && (u = !1), u)(0, p.A)({
                     initialPlanId: t.premiumPlanIdFromItems,
                     analyticsLocations: W,
                     analyticsLocation: X,
@@ -240,14 +240,14 @@ let W = function(e) {
                             currentInvoicePreview: s,
                             renewalInvoicePreview: a,
                             onClose: async () => {
-                                l || (l = !0, f._.dispatch(M.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), O.A.isDisplayingWowMomentConfirmation && O.A.isAnimated ? setTimeout(() => {
+                                l || (l = !0, I._.dispatch(M.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), j.A.isDisplayingWowMomentConfirmation && j.A.isAnimated ? setTimeout(() => {
                                     n.onClose()
                                 }, h.K) : await n.onClose())
                             }
                         })
                     }, {
                         onCloseRequest: () => {
-                            l || (l = !0, f._.dispatch(M.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), O.A.isDisplayingWowMomentConfirmation && O.A.isAnimated ? setTimeout(() => {
+                            l || (l = !0, I._.dispatch(M.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), j.A.isDisplayingWowMomentConfirmation && j.A.isAnimated ? setTimeout(() => {
                                 (0, c.OoC)(e)
                             }, h.K) : (0, c.OoC)(e))
                         },
@@ -278,23 +278,23 @@ let W = function(e) {
         ec = () => {
             ea(D.g.WHAT_YOU_LOSE)
         },
-        eu = I.Ay.getPlanIdFromInvoice(t, s);
+        eu = f.Ay.getPlanIdFromInvoice(t, s);
     if ((0, x.m1)(eu)) return null;
-    let e_ = I.Ay.getStatusFromInvoice(t, s),
-        eg = I.Ay.getPremiumType(eu),
-        em = {
+    let e_ = f.Ay.getStatusFromInvoice(t, s),
+        eg = f.Ay.getPremiumType(eu),
+        eA = {
             [V.Vd]: eg === G.PremiumTypes.TIER_0,
             [V.aS]: eg === G.PremiumTypes.TIER_1,
             [V.hA]: eg === G.PremiumTypes.TIER_2,
             [V.aD]: e_ === M.Dmq.CANCELED,
             [V.WY]: e_ === M.Dmq.PAUSE_PENDING,
             [V.Ft]: e_ === M.Dmq.PAUSED && !q,
-            [V.GD]: (0, I.PK)(e_)
+            [V.GD]: (0, f.PK)(e_)
         },
-        eA = null;
+        em = null;
     switch (eg) {
         case G.PremiumTypes.TIER_0:
-            eA = (0, i.jsxs)("div", {
+            em = (0, i.jsxs)("div", {
                 className: V.Up,
                 children: [(0, i.jsx)(S.A, {
                     className: V.sq,
@@ -305,22 +305,22 @@ let W = function(e) {
             });
             break;
         case G.PremiumTypes.TIER_1:
-            eA = (0, i.jsx)(z, {});
+            em = (0, i.jsx)(z, {});
             break;
         case G.PremiumTypes.TIER_2:
-            eA = (0, i.jsx)(T.A, {
+            em = (0, i.jsx)(T.A, {
                 className: V.V6,
                 "aria-label": k.intl.string(k.t.lpNrPu)
             })
     }
     let eh = B.includes(t.status) && !q ? Y : F;
     return (0, i.jsx)(eh, {
-        wordMark: eA,
+        wordMark: em,
         subscriptionInfo: (r()(null != s, "Expected currentInvoicePreview"), (0, i.jsx)("div", {
             className: V.MS,
             children: en ? k.intl.format(k.t["/SfHwl"], {
                 weeks: 1
-            }) : (0, I.nB)({
+            }) : (0, f.nB)({
                 planId: eu,
                 subscription: t,
                 renewalInvoicePreview: s,
@@ -334,7 +334,7 @@ let W = function(e) {
                 status: e
             } = t;
             if (t.isPurchasedExternally) {
-                let e = (0, I.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
+                let e = (0, f.tW)(t.paymentGateway, "SUBSCRIPTION_MANAGEMENT");
                 return (0, i.jsx)(c.MzZ, {
                     href: e,
                     useDefaultUnderlineStyles: !1,
@@ -348,8 +348,8 @@ let W = function(e) {
             }
 
             function n() {
-                let e = I.Ay.isSwitchingPlansDisabled(t),
-                    n = I.Ay.getSwitchingPlansDisabledMessage(t);
+                let e = f.Ay.isSwitchingPlansDisabled(t),
+                    n = f.Ay.getSwitchingPlansDisabledMessage(t);
                 return (0, i.jsxs)("div", {
                     className: V.Lv,
                     children: [J ? (0, i.jsx)("div", {
@@ -389,7 +389,7 @@ let W = function(e) {
                     })]
                 })
             }
-            if (I.Ay.isBaseSubscriptionCanceled(t)) return (0, i.jsx)("div", {
+            if (f.Ay.isBaseSubscriptionCanceled(t)) return (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: V.au,
                 children: (0, i.jsx)(c.Button, {
@@ -472,7 +472,7 @@ let W = function(e) {
                     return n()
             }
         })(),
-        statusClasses: em,
+        statusClasses: eA,
         shouldUseDiscountMarketing: ee,
         discountAmount: $
     })

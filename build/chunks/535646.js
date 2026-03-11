@@ -19,8 +19,8 @@ function _(e) {
     } = e, _ = (0, l.bG)([r.A], () => r.A.useReducedMotion), g = (0, o.Xf)({
         useReducedMotion: _
     }), {
-        name: m,
-        header: A
+        name: A,
+        header: m
     } = s.useMemo(() => {
         let e = (0, d.Wt)(t);
         return {
@@ -41,18 +41,18 @@ function _(e) {
             onClick: () => {
                 n(), g.startAnimation(!1)
             },
-            "aria-label": `${m}: ${c.intl.string(c.t["44yJxh"])}`,
+            "aria-label": `${A}: ${c.intl.string(c.t["44yJxh"])}`,
             className: u.Lt,
             children: [(0, i.jsx)("img", {
                 alt: "",
                 "aria-hidden": !0,
-                src: A,
+                src: m,
                 className: u.L_
             }), (0, i.jsx)(a.Text, {
                 className: u._e,
                 variant: "text-sm/bold",
                 color: "always-white",
-                children: m
+                children: A
             })]
         })]
     })

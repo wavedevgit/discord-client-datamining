@@ -5,10 +5,10 @@ r.d(t, {
     L9: () => U,
     Le: () => D,
     ON: () => L,
-    Rg: () => F,
+    Rg: () => O,
     Tj: () => M,
     UO: () => j,
-    Xq: () => O,
+    Xq: () => F,
     a4: () => P,
     aB: () => W,
     e_: () => v,
@@ -146,11 +146,11 @@ function v(e) {
     return n.EditorState.createEmpty(new n.CompositeDecorator(e))
 }
 
-function F(e, t) {
+function O(e, t) {
     return n.EditorState.createWithContent(t, new n.CompositeDecorator(e))
 }
 
-function O(e) {
+function F(e) {
     let t = n.EditorState.push(e, n.ContentState.createFromText("")),
         r = e.getSelection();
     return null != r && r.hasFocus && (t = n.EditorState.moveFocusToEnd(t)), t

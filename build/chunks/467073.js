@@ -2,26 +2,26 @@
 n.d(t, {
     A: () => m
 });
-var a = n(311907),
-    i = n(229527),
-    l = n(870136),
-    r = n(857071),
-    s = n(406704),
+var i = n(311907),
+    l = n(229527),
+    s = n(870136),
+    a = n(857071),
+    r = n(406704),
     o = n(696451),
     c = n(834942),
     d = n(576705),
     u = n(707985),
-    _ = n(652215);
+    h = n(652215);
 
 function m(e) {
     let t = e?.guild_id,
-        n = (0, a.bG)([c.A], () => null == t || c.A.canChatInGuild(t), [t]),
-        m = (0, a.bG)([r.A], () => null != t && r.A.isLurking(t), [t]),
-        p = (0, a.bG)([o.Ay], () => null != t && o.Ay.isCurrentUserGuest(t), [t]),
-        f = (0, a.bG)([d.A], () => n && d.A.can(_.xBc.ADD_REACTIONS, e), [n, e]),
-        b = (0, i.ix)(t),
-        [, h] = (0, l.c)(t),
-        g = (0, s.Id)(e);
+        n = (0, i.bG)([c.A], () => null == t || c.A.canChatInGuild(t), [t]),
+        m = (0, i.bG)([a.A], () => null != t && a.A.isLurking(t), [t]),
+        A = (0, i.bG)([o.Ay], () => null != t && o.Ay.isCurrentUserGuest(t), [t]),
+        g = (0, i.bG)([d.A], () => n && d.A.can(h.xBc.ADD_REACTIONS, e), [n, e]),
+        p = (0, l.ix)(t),
+        [, f] = (0, s.c)(t),
+        _ = (0, r.Id)(e);
     return null == e ? {
         disableReactionReads: !0,
         disableReactionCreates: !0,
@@ -34,14 +34,14 @@ function m(e) {
             channel: e,
             canChat: n,
             renderReactions: !0,
-            canAddNewReactions: f,
+            canAddNewReactions: g,
             isLurking: m,
-            communicationDisabled: h,
-            isActiveChannelOrUnarchivableThread: g,
-            isAutomodQuarantined: b
+            communicationDisabled: f,
+            isActiveChannelOrUnarchivableThread: _,
+            isAutomodQuarantined: p
         }),
         isLurking: m,
-        isGuest: p,
+        isGuest: A,
         isPendingMember: !1
     }
 }

@@ -1,6 +1,6 @@
 /** chunk id: 682829 params = (module,exports,require) **/
 n.d(t, {
-    A: () => Q
+    A: () => q
 });
 var i = n(627968),
     s = n(64700),
@@ -13,162 +13,170 @@ var i = n(627968),
     u = n(923408),
     _ = n(339048),
     g = n(73825),
-    m = n(252452),
     A = n(974544),
-    h = n(531260),
-    p = n(262077),
-    x = n(160946),
-    E = n(235986),
-    T = n(769015),
-    S = n(723588),
-    C = n(608699),
-    f = n(714308),
+    m = n(531260),
+    h = n(262077),
+    p = n(160946),
+    x = n(235986),
+    E = n(769015),
+    T = n(723588),
+    S = n(608699),
+    C = n(714308),
     I = n(478407),
-    b = n(195043),
-    N = n(780964),
-    v = n(840065),
-    j = n(351906),
-    O = n(628965),
-    R = n(287809),
-    y = n(615405),
-    P = n(295405),
-    L = n(166403),
-    D = n(469778),
-    G = n(954571),
-    M = n(975571),
-    U = n(927578),
-    k = n(637073),
-    V = n(887997),
-    w = n(177653),
-    H = n(159906),
-    B = n(758400),
-    F = n(788868),
-    Y = n(652215),
-    z = n(355097),
-    X = n(531525),
-    W = n(985018),
-    K = n(547605);
+    f = n(195043),
+    b = n(351906),
+    N = n(287809),
+    v = n(615405),
+    O = n(295405),
+    j = n(166403),
+    R = n(469778),
+    y = n(954571),
+    P = n(975571),
+    L = n(927578),
+    D = n(115063),
+    G = n(637073),
+    M = n(887997),
+    U = n(177653),
+    k = n(159906),
+    V = n(758400),
+    w = n(790284),
+    H = n(788868),
+    B = n(652215),
+    F = n(355097),
+    Y = n(531525),
+    z = n(985018),
+    X = n(547605);
 
-function Z() {
+function W() {
     return (0, i.jsx)(o.ZpM, {
-        className: K.wb,
+        className: X.wb,
         type: o.ZpM.Types.CUSTOM,
-        children: (0, i.jsxs)(E.A, {
-            align: E.A.Align.CENTER,
-            children: [(0, i.jsx)(T.A, {
+        children: (0, i.jsxs)(x.A, {
+            align: x.A.Align.CENTER,
+            children: [(0, i.jsx)(E.A, {
                 game: null,
-                size: T.M.SMALL,
-                className: K.pV
+                size: E.M.SMALL,
+                className: X.pV
             }), (0, i.jsx)("span", {
-                className: K.O,
-                children: W.intl.string(W.t["jy/hyj"])
+                className: X.O,
+                children: z.intl.string(z.t["jy/hyj"])
             })]
         })
     })
 }
 
-function q() {
-    let e = (0, r.bG)([D.A], () => D.A.getForApplication(F.tv));
+function K() {
+    let e = (0, r.bG)([R.A], () => R.A.getForApplication(H.tv));
     return s.useEffect(() => {
-        (0, _.LM)(F.tv)
+        (0, _.LM)(H.tv)
     }, []), (0, i.jsx)(o.nVY, {
-        label: W.intl.string(W.t["2GKrvn"]),
-        description: W.intl.string(W.t.kNEjGm),
-        children: null != e && U.Ay.hasAccountCredit(e) ? (0, i.jsx)(w.A, {
-            className: K.fX,
+        label: z.intl.string(z.t["2GKrvn"]),
+        description: z.intl.string(z.t.kNEjGm),
+        children: null != e && L.Ay.hasAccountCredit(e) ? (0, i.jsx)(U.A, {
+            className: X.fX,
             entitlements: e
-        }) : (0, i.jsx)(Z, {})
+        }) : (0, i.jsx)(W, {})
     })
 }
 
-function J() {
+function Z() {
     return (0, i.jsx)("hr", {
-        className: K.hr
+        className: X.hr
     })
 }
-let Q = function() {
+let q = function() {
     var e;
-    let t = (0, r.bG)([L.A], () => L.A.getPremiumTypeSubscription()),
-        n = (0, p.A)({
-            subscriptionFilter: e => B.Hy.has(e.status)
+    let t = (0, r.bG)([j.A], () => j.A.getPremiumTypeSubscription()),
+        n = (0, h.A)({
+            subscriptionFilter: e => V.Hy.has(e.status)
         }),
-        l = (0, r.bG)([R.default], () => R.default.getCurrentUser()),
+        l = (0, r.bG)([N.default], () => N.default.getCurrentUser()),
         _ = n.length > 1,
-        E = (0, r.bG)([P.A], () => null != t && null != t.paymentSourceId ? P.A.getPaymentSource(t.paymentSourceId) : null, [t]),
-        T = (0, r.bG)([L.A], () => L.A.hasFetchedSubscriptions()),
-        D = (0, r.bG)([y.A], () => y.A.isBusy),
-        U = (0, x.Y)(),
-        w = (0, r.bG)([O.A], () => O.A.getSubsection()),
-        Z = (0, r.bG)([L.A], () => L.A.getActiveApplicationSubscriptions()?.length ?? 0),
-        Q = (0, r.bG)([L.A], () => Object.values(L.A.getSubscriptions() ?? {}).filter(e => e.type === Y.rzx.GUILD).filter(e => e.status !== Y.Dmq.ENDED).length),
-        $ = (0, h.A)({
+        x = (0, r.bG)([O.A], () => null != t && null != t.paymentSourceId ? O.A.getPaymentSource(t.paymentSourceId) : null, [t]),
+        E = (0, r.bG)([j.A], () => j.A.hasFetchedSubscriptions()),
+        R = (0, r.bG)([v.A], () => v.A.isBusy),
+        L = (0, p.Y)(),
+        U = w.A.useField("subsection"),
+        W = s.useRef(U);
+    s.useEffect(() => {
+        U !== W.current && ((0, D.iY)({
+            originPane: B.nc_.SUBSCRIPTIONS,
+            destinationPane: B.nc_.SUBSCRIPTIONS,
+            subsection: U
+        }), W.current = U)
+    }, [U]);
+    let q = (0, r.bG)([j.A], () => j.A.getActiveApplicationSubscriptions()?.length ?? 0),
+        J = (0, r.bG)([j.A], () => Object.values(j.A.getSubscriptions() ?? {}).filter(e => e.type === B.rzx.GUILD).filter(e => e.status !== B.Dmq.ENDED).length),
+        Q = (0, m.A)({
             forceFetch: !0
         }),
-        ee = (0, k.d)(),
-        et = null !== t ? t.currentPeriodEnd : void 0,
-        en = !(ee && !($.unactivatedUnits.length > 0)) && ($.fractionalState !== F.xc.NONE || $.unactivatedUnits.length > 0);
+        $ = (0, G.d)(),
+        ee = null !== t ? t.currentPeriodEnd : void 0,
+        et = !($ && !(Q.unactivatedUnits.length > 0)) && (Q.fractionalState !== H.xc.NONE || Q.unactivatedUnits.length > 0);
     return (s.useEffect(() => (d.h.wait(() => {
         (0, g.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
-        m.A.clearSubsection()
-    }), []), j.A.enabled) ? (0, i.jsx)(A.A, {}) : T && U ? w === z.nR ? (0, i.jsx)(C.A, {
-        onGoBack: () => m.A.clearSubsection()
-    }) : w === z.PZ ? (0, i.jsx)(I.A, {
-        onGoBack: () => m.A.clearSubsection()
+        w.A.resetState()
+    }), []), b.A.enabled) ? (0, i.jsx)(A.A, {}) : E && L ? U === F.nR ? (0, i.jsx)(S.A, {
+        onGoBack: () => w.A.setState({
+            subsection: null
+        })
+    }) : U === F.PZ ? (0, i.jsx)(I.A, {
+        onGoBack: () => w.A.setState({
+            subsection: null
+        })
     }) : (0, i.jsx)("div", {
-        className: K.kL,
+        className: X.kL,
         children: (0, i.jsxs)("div", {
-            className: K.Qs,
-            children: [_ ? (0, i.jsx)(B.Sb, {}) : null, null != t ? (0, i.jsx)(B.Ay, {
+            className: X.Qs,
+            children: [_ ? (0, i.jsx)(V.Sb, {}) : null, null != t ? (0, i.jsx)(V.Ay, {
                 subscription: t,
-                paymentSource: E,
-                busy: D,
+                paymentSource: x,
+                busy: R,
                 subscriptions: n
-            }) : (0, i.jsx)(B.TC, {}), en && (e = !!l?.isPremiumWithPremiumGroup(), (0, i.jsxs)("section", {
+            }) : (0, i.jsx)(V.TC, {}), et && (e = !!l?.isPremiumWithPremiumGroup(), (0, i.jsxs)("section", {
                 children: [(0, i.jsx)(o.Heading, {
                     variant: "heading-md/bold",
-                    className: K.HL,
-                    children: W.intl.string(W.t.Obre8v)
+                    className: X.HL,
+                    children: z.intl.string(z.t.Obre8v)
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",
-                    className: K.JU,
-                    children: W.intl.format(W.t["7Zi06b"], {
-                        helpCenterLink: M.A.getArticleURL(Y.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                    className: X.JU,
+                    children: z.intl.format(z.t["7Zi06b"], {
+                        helpCenterLink: P.A.getArticleURL(B.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
-                }), (0, i.jsx)(V.A, {
-                    className: K.fX,
-                    fractionalPremiumInfo: $,
-                    activationDate: et,
+                }), (0, i.jsx)(M.A, {
+                    className: X.fX,
+                    fractionalPremiumInfo: Q,
+                    activationDate: ee,
                     hasPremiumGroup: e
                 })]
-            })), (0, i.jsx)(b.x, {
-                setting: X.H.SUBSCRIPTIONS_CREDITS,
-                children: (0, i.jsx)(q, {})
-            }), Q > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(J, {}), (0, i.jsx)(S.A, {
-                    count: Q,
-                    onClickManageSubscription: () => (0, v.openUserSettings)(N.X.SUBSCRIPTIONS_PANEL, {
-                        section: Y.nc_.SUBSCRIPTIONS,
-                        subsection: z.nR
+            })), (0, i.jsx)(f.x, {
+                setting: Y.H.SUBSCRIPTIONS_CREDITS,
+                children: (0, i.jsx)(K, {})
+            }), J > 0 && (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(T.A, {
+                    count: J,
+                    onClickManageSubscription: () => w.A.setState({
+                        subsection: F.nR
                     })
                 })]
-            }), Z > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(J, {}), (0, i.jsx)(f.A, {
-                    count: Z,
+            }), q > 0 && (0, i.jsxs)(i.Fragment, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(C.A, {
+                    count: q,
                     onClickManageSubscription: () => {
-                        (0, v.openUserSettings)(N.X.SUBSCRIPTIONS_PANEL, {
-                            section: Y.nc_.SUBSCRIPTIONS,
-                            subsection: z.PZ
-                        }), G.default.track(Y.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+                        w.A.setState({
+                            subsection: F.PZ
+                        }), y.default.track(B.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
-            }), (0, i.jsx)(J, {}), null != t ? (0, i.jsx)(H.A, {
+            }), (0, i.jsx)(Z, {}), null != t ? (0, i.jsx)(k.A, {
                 subscription: t,
                 withOverheadSeparator: !1
             }) : null]
         })
     }) : (0, i.jsx)("div", {
-        className: a()(K.kL, K.Lq),
+        className: a()(X.kL, X.Lq),
         children: (0, i.jsx)(o.y$y, {})
     })
 }

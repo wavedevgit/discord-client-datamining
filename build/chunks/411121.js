@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(421380),
     _ = n(397927),
     g = n(869038),
-    m = n(786144),
-    A = n(587895),
+    A = n(786144),
+    m = n(587895),
     h = n(235986),
     p = n(769015),
     x = n(75825),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(366523),
     S = n(961350),
     C = n(30793),
-    f = n(351906),
-    I = n(97352),
+    I = n(351906),
+    f = n(97352),
     b = n(67480),
     N = n(147925),
     v = n(957565),
-    j = n(45938),
-    O = n(615396),
+    O = n(45938),
+    j = n(615396),
     R = n(788868),
     y = n(985018),
     P = n(539785);
@@ -58,7 +58,7 @@ class L extends s.PureComponent {
             giftCode: t,
             sku: n
         } = this.props;
-        (0, j.AK)(t, n), (0, v.C)(e, () => this.setState({
+        (0, O.AK)(t, n), (0, v.C)(e, () => this.setState({
             copyMode: _.qCr.SUCCESS
         }), () => this.setState({
             copyMode: _.qCr.ERROR
@@ -80,7 +80,7 @@ class L extends s.PureComponent {
             className: P.Gj,
             children: [(0, i.jsx)(_.e2O, {
                 className: P.ph,
-                value: (0, j.Zq)(t.code),
+                value: (0, O.Zq)(t.code),
                 text: this.copyButtonText,
                 mode: n,
                 supportsCopy: v.p5,
@@ -232,14 +232,14 @@ class D extends s.PureComponent {
         } = this.props, {
             isOpen: d
         } = this.state;
-        return (0, i.jsxs)(m.A, {
+        return (0, i.jsxs)(A.A, {
             className: l,
             children: [(0, i.jsx)(_.DUT, {
                 onClick: this.handleToggleOpen,
                 className: P.Nr,
                 onMouseEnter: () => this.setIsHovered(!0),
                 onMouseLeave: () => this.setIsHovered(!1),
-                children: (0, i.jsx)(m.A.Header, {
+                children: (0, i.jsx)(A.A.Header, {
                     splashArtURL: t.getSplashURL(512),
                     children: (0, i.jsxs)("div", {
                         className: P.MY,
@@ -255,7 +255,7 @@ class D extends s.PureComponent {
                         })]
                     })
                 })
-            }), d ? (0, i.jsx)(m.A.Body, {
+            }), d ? (0, i.jsx)(A.A.Body, {
                 children: r ? (0, i.jsx)(_.y$y, {
                     className: P.u1
                 }) : (0, i.jsxs)(s.Fragment, {
@@ -269,7 +269,7 @@ class D extends s.PureComponent {
         })
     }
 }
-let G = d.Ay.connectStores([b.A, f.A, C.A, A.A, I.A, S.default], e => {
+let G = d.Ay.connectStores([b.A, I.A, C.A, m.A, f.A, S.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
@@ -279,11 +279,11 @@ let G = d.Ay.connectStores([b.A, f.A, C.A, A.A, I.A, S.default], e => {
     let l = C.A.getForGifterSKUAndPlan(S.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === i);
     return {
         sku: s,
-        hideCodes: f.A.enabled,
+        hideCodes: I.A.enabled,
         isFetching: C.A.getUserGiftCodesFetchingForSKUAndPlan(t, n),
         loadedAt: C.A.getUserGiftCodesLoadedAtForSKUAndPlan(t, n),
-        application: A.A.getApplication(s.applicationId),
-        subscriptionPlan: null != n ? (0, O.c9)(n) : null,
+        application: m.A.getApplication(s.applicationId),
+        subscriptionPlan: null != n ? (0, j.c9)(n) : null,
         giftCodes: l
     }
 })(D)

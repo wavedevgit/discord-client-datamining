@@ -1,6 +1,6 @@
 /** chunk id: 686423 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -13,14 +13,14 @@ var i = n(627968),
     u = n(473145),
     _ = n(652215),
     g = n(985018),
-    m = n(572523);
-let A = function() {
+    A = n(572523);
+let m = function() {
     let e = s.useRef(null),
         {
             analyticsLocations: t
         } = (0, o.Ay)(),
         {
-            fractionalState: A
+            fractionalState: m
         } = (0, d.A)();
 
     function h(n) {
@@ -51,15 +51,15 @@ let A = function() {
         })
     }
     let x = (0, u.Nc)({
-        fractionalState: A
+        fractionalState: m
     });
     return (0, i.jsxs)("div", {
-        className: m.iE,
+        className: A.iE,
         children: [(0, i.jsx)(r._Jp, {
             color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: m.$J
+            className: A.$J
         }), (0, i.jsx)(r.Text, {
-            className: m.C,
+            className: A.C,
             color: "text-default",
             variant: "text-sm/medium",
             children: g.intl.format(g.t.kqC5vq, {
@@ -67,7 +67,7 @@ let A = function() {
                     let n = null != x,
                         s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
-                            className: m.lO,
+                            className: A.lO,
                             children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
                                 onClick: n ? void 0 : p,

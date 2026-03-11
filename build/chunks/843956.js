@@ -13,9 +13,9 @@ var i = n(419954),
     u = n(657733),
     _ = n(728699),
     g = n(345648),
-    m = n(863671),
-    A = n(985018);
+    A = n(863671),
+    m = n(985018);
 let h = (0, i.WI)(s.X.USER_SECTION, {
-    useTitle: () => A.intl.string(A.t.cduTBL),
-    buildLayout: () => [a.J, c.T, u.v, _.T, r.J, ...(0, l.pC)("UserSection") ? [] : [m.$], d.z, g.e, o.r]
+    useTitle: () => m.intl.string(m.t.cduTBL),
+    buildLayout: () => [a.J, c.T, u.v, _.T, r.J, ...(0, l.pC)("UserSection") ? [] : [A.$], d.z, g.e, o.r]
 })

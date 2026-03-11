@@ -1,6 +1,6 @@
 /** chunk id: 411669 params = (module,exports,require) **/
 n.d(t, {
-    l: () => A
+    l: () => m
 });
 var i = n(419954),
     s = n(780964),
@@ -13,8 +13,8 @@ var i = n(419954),
     u = n(21117),
     _ = n(617110),
     g = n(937551),
-    m = n(985018);
-let A = (0, i.zZ)(s.X.COLOR_AND_CONTRAST_CATEGORY, {
-    useTitle: () => m.intl.string(m.t.JqvyiY),
+    A = n(985018);
+let m = (0, i.zZ)(s.X.COLOR_AND_CONTRAST_CATEGORY, {
+    useTitle: () => A.intl.string(A.t.JqvyiY),
     buildLayout: () => [g.V, d.E, r.Q, c.j, o.r, u.b, _.K, l.k, a.V]
 })

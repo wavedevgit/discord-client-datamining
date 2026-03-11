@@ -1,45 +1,45 @@
 /** chunk id: 41580 params = (module,exports,require) **/
 a.d(t, {
-    A: () => f
+    A: () => b
 });
-var r = a(64700),
-    n = a(311907),
-    _ = a(451988),
+var n = a(64700),
+    _ = a(311907),
+    r = a(451988),
     o = a(964486),
     i = a(430452),
-    s = a(383501),
-    l = a(927813),
-    u = a(340913),
-    c = a(731854);
-let d = 2.5 * l.A.Millis.SECOND,
-    p = +l.A.Millis.HOUR;
+    l = a(383501),
+    s = a(927813),
+    c = a(340913),
+    u = a(731854);
+let d = 2.5 * s.A.Millis.SECOND,
+    p = +s.A.Millis.HOUR;
 
-function f() {
-    let [e, t] = r.useState(!1), a = (0, n.bG)([i.Ay], () => i.Ay.getMode() === c.TB.PUSH_TO_TALK), l = (0, n.bG)([s.A], () => null != s.A.getChannelId() && (s.A.getDuration() ?? Number.MAX_VALUE) < d), [f, b] = r.useState(!1), {
+function b() {
+    let [e, t] = n.useState(!1), a = (0, _.bG)([i.Ay], () => i.Ay.getMode() === u.TB.PUSH_TO_TALK), s = (0, _.bG)([l.A], () => null != l.A.getChannelId() && (l.A.getDuration() ?? Number.MAX_VALUE) < d), [b, f] = n.useState(!1), {
         showPTTJoinTooltip: g
-    } = u.A.useConfig({
+    } = c.A.useConfig({
         location: "usePTTJoinTooltip"
-    }), A = r.useRef(new _.Ep), C = r.useRef(new _.Ep);
-    r.useEffect(() => {
-        if (l && a && !e) {
-            if (u.A.getConfig({
+    }), x = n.useRef(new r.Ep), m = n.useRef(new r.Ep);
+    n.useEffect(() => {
+        if (s && a && !e) {
+            if (c.A.getConfig({
                     location: "usePTTJoinTooltip:couldDisplayTooltip"
                 }), !g) return;
-            b(!0), t(!0), C.current.start(p, () => {
+            f(!0), t(!0), m.current.start(p, () => {
                 t(!1)
-            }), A.current.start(d, () => {
-                b(!1)
+            }), x.current.start(d, () => {
+                f(!1)
             })
         }
-        l || b(!1)
-    }, [l, a, g, e]);
-    let T = r.useCallback(() => {
-        b(!1), A.current.stop()
+        s || f(!1)
+    }, [s, a, g, e]);
+    let A = n.useCallback(() => {
+        f(!1), x.current.stop()
     }, []);
     return (0, o.l0)(() => {
-        A.current.stop(), C.current.stop()
+        x.current.stop(), m.current.stop()
     }), {
-        shouldShowTooltip: f,
-        dismissTooltip: T
+        shouldShowTooltip: b,
+        dismissTooltip: A
     }
 }

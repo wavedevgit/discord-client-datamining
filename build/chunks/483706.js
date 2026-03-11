@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(840065),
     _ = n(899847),
     g = n(936926),
-    m = n(809697),
-    A = n(153739),
+    A = n(809697),
+    m = n(153739),
     h = n(534654),
     p = n(834981),
     x = n(191627),
@@ -22,7 +22,7 @@ var i = n(627968),
     T = n(842130),
     S = n(985018),
     C = n(191248);
-let f = e => {
+let I = e => {
         let {
             title: t,
             buttonText: n,
@@ -48,7 +48,7 @@ let f = e => {
             })]
         })
     },
-    I = () => {
+    f = () => {
         let e = (0, p.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
@@ -93,7 +93,7 @@ let f = e => {
     b = e => {
         let {
             teenId: t
-        } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
+        } = e, s = (0, m.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
         return (0, i.jsxs)(l.BJc, {
             padding: {
                 top: 12,
@@ -135,11 +135,11 @@ let f = e => {
         })
     },
     N = () => {
-        let e = (0, A.y3)(),
-            t = (0, A.tl)(),
+        let e = (0, m.y3)(),
+            t = (0, m.tl)(),
             {
                 handleTabChange: n
-            } = (0, m.A)(),
+            } = (0, A.A)(),
             a = (0, g.Vh)({
                 location: "TimeControlsRow"
             });
@@ -161,13 +161,13 @@ let f = e => {
                     color: "text-muted",
                     children: S.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(f, {
+            }), (0, i.jsx)(I, {
                 title: S.intl.string(S.t["+o1pDZ"]),
                 buttonText: S.intl.string(S.t.bt75uw),
                 onButtonPress: () => r(x.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: C.yF
-            }), (0, i.jsx)(f, {
+            }), (0, i.jsx)(I, {
                 title: S.intl.string(S.t.OAuOHD),
                 buttonText: S.intl.string(S.t.bt75uw),
                 onButtonPress: () => r(x.u9.DATA_AND_PRIVACY)
@@ -184,6 +184,6 @@ let f = e => {
         let e = (0, h.A)();
         return 0 === (0, p.vx)().length ? null : (0, i.jsx)("div", {
             className: C.kL,
-            children: e ? (0, i.jsx)(I, {}) : (0, i.jsx)(N, {})
+            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(N, {})
         })
     }

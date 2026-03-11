@@ -1,6 +1,6 @@
 /** chunk id: 10368 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(64700),
     s = n(311907),
@@ -17,13 +17,13 @@ let _ = Object.keys(c.jB),
         return t[Math.floor(Math.random() * t.length)]
     };
 
-function m() {
+function A() {
     let e = (0, s.bG)([l.A], () => l.A.useReducedMotion),
         [t, n] = (0, i.useState)(g()),
         {
             banner: _,
-            themeColors: m,
-            avatarDecorationSkuId: A,
+            themeColors: A,
+            avatarDecorationSkuId: m,
             displayNameStyles: h
         } = (0, i.useMemo)(() => {
             let n = (0, c.Wt)(t);
@@ -35,17 +35,17 @@ function m() {
             }
         }, [t, e]),
         p = (0, s.bG)([a.A], () => {
-            let e = a.A.getProduct(A);
+            let e = a.A.getProduct(m);
             return (0, r.T)(e?.items[0]) ? e.items[0] : null
         });
     (0, i.useEffect)(() => {
         (0, o.w5)({
             banner: _,
-            themeColors: m,
+            themeColors: A,
             avatarDecoration: p,
             displayNameStyles: h
         })
-    }, [_, m, p, h]);
+    }, [_, A, p, h]);
     let x = (0, i.useCallback)(() => {
         let e = g(t);
         n(e), d.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {

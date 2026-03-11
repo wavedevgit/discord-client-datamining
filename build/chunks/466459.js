@@ -1,7 +1,7 @@
 /** chunk id: 466459 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    h: () => u,
+    h: () => c,
     o: () => o
 });
 var r = n(791282),
@@ -30,4 +30,4 @@ let o = (e, t) => {
                 }
         }
     },
-    u = e => (0, s.cf)([l.A], () => o(l.A, e))
+    c = e => (0, s.cf)([l.A], () => o(l.A, e))

@@ -1,6 +1,6 @@
 /** chunk id: 875808 params = (module,exports,require) **/
 "use strict";
-a.r(e.exports = {
+r.r(e.exports = {
     progressContainer: "progressContainer__0fd7d",
     blue: "blue__0fd7d",
     orange: "orange__0fd7d",

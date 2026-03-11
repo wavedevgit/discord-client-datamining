@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(631670),
     _ = n(974544),
     g = n(793574),
-    m = n(688810),
-    A = n(429619),
+    A = n(688810),
+    m = n(429619),
     h = n(451909),
     p = n(550111),
     x = n(202639),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(919395),
     S = n(884546),
     C = n(287070),
-    f = n(196291),
-    I = n(101058),
+    I = n(196291),
+    f = n(101058),
     b = n(836602),
     N = n(814390),
     v = n(351906),
-    j = n(287809),
-    O = n(954571),
+    O = n(287809),
+    j = n(954571),
     R = n(927578),
     y = n(606532),
     P = n(161290),
@@ -37,8 +37,8 @@ var i = n(627968),
     G = n(166378);
 
 function M() {
-    let e = (0, r.bG)([j.default], () => {
-            let e = j.default.getCurrentUser();
+    let e = (0, r.bG)([O.default], () => {
+            let e = O.default.getCurrentUser();
             return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
         t = (0, r.bG)([v.A], () => v.A.hidePersonalInformation),
@@ -52,7 +52,7 @@ function M() {
             ...b.A.getPendingChanges(),
             showNotice: b.A.showNotice()
         })),
-        V = (0, I.V7)({
+        V = (0, f.V7)({
             userId: e.id,
             image: l
         }),
@@ -65,12 +65,12 @@ function M() {
         {
             analyticsLocations: F,
             newestAnalyticsLocation: Y
-        } = (0, m.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
+        } = (0, A.Ay)(g.A.USER_SETTINGS_USER_PROFILE);
     s.useEffect(() => () => c.h.wait(u.IM), []);
     let [z, X] = s.useState(!1), W = !B, K = s.useRef(null);
-    return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(m.f5, {
+    return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(A.f5, {
         value: F,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(S.A, {
             profilePreview: (0, i.jsx)(C.A, {
                 user: e,
                 canUsePremiumCustomization: B,
@@ -94,7 +94,7 @@ function M() {
             active: W,
             children: (0, i.jsx)("div", {
                 ref: K,
-                children: (0, i.jsx)(f.A, {
+                children: (0, i.jsx)(I.A, {
                     user: e,
                     shouldShow: W,
                     isVisible: z
@@ -115,7 +115,7 @@ function M() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        O.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        j.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"

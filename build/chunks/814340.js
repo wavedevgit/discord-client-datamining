@@ -220,7 +220,7 @@ class F extends s.PureComponent {
                         return (0, u.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("18159")]).then(n.bind(n, 698193));
+                            } = await Promise.all([n.e("97262"), n.e("57287"), n.e("40394"), n.e("30997")]).then(n.bind(n, 698193));
                             return t => (0, i.jsx)(e, {
                                 ...t,
                                 channel: s,
@@ -269,7 +269,7 @@ class F extends s.PureComponent {
                 return (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("97262"), n.e("60200"), n.e("21351")]).then(n.bind(n, 4027));
+                    } = await Promise.all([n.e("97262"), n.e("60200")]).then(n.bind(n, 4027));
                     return n => (0, i.jsx)(e, {
                         ...n,
                         channel: t.record,

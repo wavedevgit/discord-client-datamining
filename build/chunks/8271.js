@@ -1,6 +1,6 @@
 /** chunk id: 8271 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -15,11 +15,11 @@ var s = n(632553),
     _ = n(985018),
     g = n(842130);
 
-function m() {
+function A() {
     let e = r.vf.useSetting(),
         t = r.H1.useSetting(),
         n = (0, l.uM)(),
-        m = (0, s.g)();
+        A = (0, s.g)();
     return (0, i.jsx)(o.h, {
         setting: c.H.PRIVACY_DATA_QUESTS_3P,
         children: (0, i.jsx)(d.Ay, {
@@ -29,7 +29,7 @@ function m() {
             }),
             value: !e,
             onChange: e => r.vf.updateSetting(!e),
-            disabled: m || t || n,
+            disabled: A || t || n,
             tooltipText: n ? _.intl.string(g.default["6Af/cw"]) : void 0
         })
     })

@@ -1,6 +1,6 @@
 /** chunk id: 428854 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m,
+    A: () => A,
     R: () => _
 });
 var i, s = n(627968),
@@ -33,7 +33,7 @@ let g = {
     }]
 };
 
-function m(e) {
+function A(e) {
     let {
         page: t
     } = e, n = l.useMemo(() => {

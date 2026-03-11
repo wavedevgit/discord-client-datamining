@@ -1,85 +1,50 @@
 /** chunk id: 568031 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(421380),
-    r = n(397927),
-    o = n(688810),
-    d = n(170887),
-    c = n(194509),
-    u = n(65470),
-    _ = n(985018),
-    g = n(695195),
-    m = n(571816),
-    A = n(584386),
-    h = n(182645);
-let p = e => {
+    a = n(397927),
+    r = n(688810),
+    o = n(65470),
+    d = n(985018),
+    c = n(571816),
+    u = n(182645);
+let _ = e => {
     let {
         className: t,
         location: n,
         analyticsLocation: s
-    } = e, p = (0, d.A)({
-        location: "GiftNitro"
-    }), {
-        analyticsLocations: x
-    } = (0, o.Ay)(n);
-    return p ? (0, i.jsx)(o.f5, {
-        value: x,
-        children: (0, i.jsxs)(r.hLv, {
-            className: l()(m.kL, m.pm, t),
+    } = e, {
+        analyticsLocations: _
+    } = (0, r.Ay)(n);
+    return (0, i.jsx)(r.f5, {
+        value: _,
+        children: (0, i.jsxs)(a.hLv, {
+            className: l()(c.kL, c.pm, t),
             color: "purple",
             children: [(0, i.jsxs)("div", {
-                className: m.FS,
-                children: [(0, i.jsx)(r.Heading, {
+                className: c.FS,
+                children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-xxl/bold",
-                    className: m.R_,
-                    children: _.intl.string(_.t.Ve9Ge6)
-                }), (0, i.jsx)(r.Text, {
+                    className: c.R_,
+                    children: d.intl.string(d.t.Ve9Ge6)
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-md/medium",
-                    children: _.intl.string(_.t.yQ06u1)
+                    children: d.intl.string(d.t.yQ06u1)
                 }), (0, i.jsx)("div", {
-                    className: m.SB,
-                    children: (0, i.jsx)(u.A, {
-                        buttonTextOverride: _.intl.string(_.t.Ve9Ge6),
+                    className: c.SB,
+                    children: (0, i.jsx)(o.A, {
+                        buttonTextOverride: d.intl.string(d.t.Ve9Ge6),
                         premiumModalAnalyticsLocation: s,
                         variant: "secondary"
                     })
                 })]
             }), (0, i.jsx)("img", {
-                src: h.A,
-                className: m._e,
-                alt: "gift nitro banner"
-            })]
-        })
-    }) : (0, i.jsx)(o.f5, {
-        value: x,
-        children: (0, i.jsxs)("div", {
-            className: l()(g.kL, t),
-            children: [(0, i.jsxs)("div", {
-                className: g.FS,
-                children: [(0, i.jsx)(r.Heading, {
-                    variant: "heading-lg/extrabold",
-                    className: g.R_,
-                    children: _.intl.string(_.t.Ve9Ge6)
-                }), (0, i.jsx)(r.Text, {
-                    variant: "text-sm/medium",
-                    children: _.intl.string(_.t.yQ06u1)
-                }), (0, i.jsx)(c.A, {
-                    className: g.Tp,
-                    textOptions: {
-                        textOverride: _.intl.string(_.t.Ve9Ge6),
-                        textClassName: g.VV
-                    },
-                    color: a.$n.Colors.CUSTOM,
-                    premiumModalAnalyticsLocation: s
-                })]
-            }), (0, i.jsx)("img", {
-                src: A,
-                className: g._e,
+                src: u.A,
+                className: c._e,
                 alt: "gift nitro banner"
             })]
         })

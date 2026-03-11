@@ -2,7 +2,7 @@
 n.d(t, {
     Bs: () => x,
     MT: () => h,
-    U4: () => A,
+    U4: () => m,
     XN: () => E,
     YF: () => p
 });
@@ -17,7 +17,7 @@ var i = n(627968),
     u = n(519412),
     _ = n(985018),
     g = n(75717);
-let m = e => {
+let A = e => {
         let {
             user: t,
             isOwnUser: n,
@@ -25,8 +25,8 @@ let m = e => {
             removeButton: r,
             isFaded: u
         } = e, {
-            avatarSrc: m,
-            eventHandlers: A
+            avatarSrc: A,
+            eventHandlers: m
         } = (0, d.A)({
             userId: t?.id,
             size: o._3J.SIZE_24
@@ -43,10 +43,10 @@ let m = e => {
                 }),
                 children: [(0, i.jsx)(o.euF, {
                     className: g.my,
-                    src: m,
+                    src: A,
                     "aria-label": h,
                     size: o._3J.SIZE_24,
-                    ...A
+                    ...m
                 }), (0, i.jsxs)(o.Text, {
                     className: g.Xh,
                     variant: "text-sm/medium",
@@ -72,12 +72,12 @@ let m = e => {
             })]
         })
     },
-    A = e => {
+    m = e => {
         let {
             user: t,
             isOwnUser: n
         } = e;
-        return (0, i.jsx)(m, {
+        return (0, i.jsx)(A, {
             user: t,
             isOwnUser: n,
             label: _.intl.string(u.default.vc2xys)
@@ -88,7 +88,7 @@ let m = e => {
             user: t,
             onRemove: n
         } = e;
-        return (0, i.jsx)(m, {
+        return (0, i.jsx)(A, {
             user: t,
             label: _.intl.string(u.default.mnt50A),
             removeButton: {
@@ -102,7 +102,7 @@ let m = e => {
             user: t,
             isOwnUser: n
         } = e;
-        return (0, i.jsx)(m, {
+        return (0, i.jsx)(A, {
             user: t,
             isOwnUser: n,
             label: _.intl.string(u.default.mnt50A)
@@ -113,7 +113,7 @@ let m = e => {
             user: t,
             onRemove: n
         } = e;
-        return (0, i.jsx)(m, {
+        return (0, i.jsx)(A, {
             user: t,
             label: _.intl.string(u.default["1RH5t9"]),
             isFaded: !0,

@@ -1,6 +1,6 @@
 /** chunk id: 510898 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -36,20 +36,20 @@ class g extends s.PureComponent {
     }
 }
 
-function m(e) {
+function A(e) {
     let {
         subscriptions: t,
         updateHeader: n
-    } = e, [l, m] = s.useState({
+    } = e, [l, A] = s.useState({
         route: c.R.HOME
     }), {
-        route: A
+        route: m
     } = l, h = () => {
-        m({
+        A({
             route: c.R.HOME
         })
     }, p = e => {
-        m({
+        A({
             route: c.R.SWITCH_APP_PLANS,
             ...e
         }), n(_.intl.string(_.t.VFqtkP), h)
@@ -76,7 +76,7 @@ function m(e) {
     let {
         loadState: T
     } = (0, o.E)(), S = T !== o.mJ.LOADED;
-    switch (A) {
+    switch (m) {
         case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
                 children: t.map(e => (0, i.jsx)(g, {
@@ -90,13 +90,13 @@ function m(e) {
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: C, ...f
+                route: C, ...I
             } = l;
             return (0, i.jsx)(u.A, {
-                ...f,
+                ...I,
                 navigateToHome: h
             });
         default:
-            (0, a.xb)(A)
+            (0, a.xb)(m)
     }
 }

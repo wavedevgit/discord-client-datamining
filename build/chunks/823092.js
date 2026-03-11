@@ -26,13 +26,13 @@ function c(e) {
             return
         }
         e()
-    }, [c]), m = s.useMemo(() => ({
+    }, [c]), A = s.useMemo(() => ({
         navigateWithValidation: g,
         showNotice: c,
         handleStoreUpdate: _
     }), [g, c, _]);
     return (0, i.jsx)(d.Provider, {
-        value: m,
+        value: A,
         children: t
     })
 }

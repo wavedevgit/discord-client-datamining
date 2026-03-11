@@ -1,6 +1,6 @@
 /** chunk id: 34014 params = (module,exports,require) **/
 n.d(t, {
-    r: () => A
+    r: () => m
 });
 var i = n(311907),
     s = n(964486),
@@ -13,11 +13,11 @@ var i = n(311907),
     u = n(780964),
     _ = n(652215),
     g = n(985018);
-let m = (0, l.D)(() => ({
+let A = (0, l.D)(() => ({
         syncEnabled: null,
         updateTimeout: null
     })),
-    A = (0, d.zD)(u.X.SYNC_FORCED_COLORS, {
+    m = (0, d.zD)(u.X.SYNC_FORCED_COLORS, {
         useTitle: () => g.intl.string(g.t.cguiec),
         useSubtitle: () => g.intl.format(g.t.GwEVE2, {
             learnMoreLink: c.A.getArticleURL(_.MVz.FORCED_COLORS)
@@ -25,31 +25,31 @@ let m = (0, l.D)(() => ({
         useValue: () => {
             let e = (0, i.bG)([r.A], () => r.A.syncForcedColors);
             return (0, s.Ay)(() => {
-                m.setState({
+                A.setState({
                     syncEnabled: r.A.syncForcedColors
                 })
-            }), m.useState(e => e.syncEnabled) ?? e
+            }), A.useState(e => e.syncEnabled) ?? e
         },
         setValue: e => {
             let {
                 updateTimeout: t
-            } = m.getState();
+            } = A.getState();
             if (null != t) {
-                clearTimeout(t), m.setState({
+                clearTimeout(t), A.setState({
                     syncEnabled: e,
                     updateTimeout: null
                 });
                 return
             }
-            if (e === r.A.syncForcedColors) return void m.setState({
+            if (e === r.A.syncForcedColors) return void A.setState({
                 syncEnabled: e
             });
             let n = setTimeout(() => {
-                (0, a.D3)(e), m.setState({
+                (0, a.D3)(e), A.setState({
                     updateTimeout: null
                 })
             }, 150);
-            m.setState({
+            A.setState({
                 syncEnabled: e,
                 updateTimeout: n
             })

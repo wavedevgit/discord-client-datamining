@@ -1,7 +1,7 @@
 /** chunk id: 548018 params = (module,exports,require) **/
 n.d(t, {
-    c: () => A,
-    f: () => m
+    c: () => m,
+    f: () => A
 }), n(321073);
 var i = n(627968),
     s = n(311907),
@@ -15,13 +15,13 @@ var i = n(627968),
     _ = n(545214),
     g = n(985018);
 
-function m() {
+function A() {
     return (0, s.bG)([o.default], () => {
         let e = o.default.getCurrentUser();
         return null != e && e.mfaEnabled
     })
 }
-let A = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
+let m = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     useSearchTerms: function() {
         let e = (0, s.bG)([a.default], () => a.default.hasTOTPEnabled()),
             t = [g.intl.string(g.t.m0FidJ), g.intl.string(g.t.xZEzbu)];
@@ -30,7 +30,7 @@ let A = (0, l.E2)(d.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     usePredicate: function() {
         let e = (0, u.b)(),
             t = (0, _.A)(),
-            n = m();
+            n = A();
         return !e && !t && n
     },
     Component: function() {

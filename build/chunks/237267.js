@@ -1,6 +1,6 @@
 /** chunk id: 237267 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -14,12 +14,12 @@ var s = n(397927),
     u = n(788868),
     _ = n(985018),
     g = n(689507);
-let m = function(e) {
+let A = function(e) {
     let {
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: m,
-        subscriptionIsPausedOrPausePending: A
+        hasGuildAffinitiesOrInGuild: A,
+        subscriptionIsPausedOrPausePending: m
     } = e, {
         subtitle: h,
         flavor: p
@@ -47,19 +47,19 @@ let m = function(e) {
             })
         };
         let g = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            m = a.Ay.getDefaultPrice(g.id, n),
-            A = (0, r.CE)((0, r.$g)(m.amount, m.currency), g.interval, g.intervalCount);
+            A = a.Ay.getDefaultPrice(g.id, n),
+            m = (0, r.CE)((0, r.$g)(A.amount, A.currency), g.interval, g.intervalCount);
         return {
             subtitle: n ? _.intl.string(_.t.bhPzXR) : _.intl.string(_.t.Zs9h9Z),
             flavor: _.intl.formatToPlainString(_.t.PGgTdA, {
-                monthlyGuildBoostPrice: A
+                monthlyGuildBoostPrice: m
             })
         }
     }({
         hasAppliedGuildBoosts: t,
         hasBoostPerk: n,
-        hasGuildAffinitiesOrInGuild: m,
-        subscriptionIsPausedOrPausePending: A
+        hasGuildAffinitiesOrInGuild: A,
+        subscriptionIsPausedOrPausePending: m
     });
     return (0, i.jsxs)("div", {
         className: g.i,

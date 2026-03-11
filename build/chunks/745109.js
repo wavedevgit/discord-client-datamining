@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(766569),
     _ = n(836602),
     g = n(576622),
-    m = n(740625),
-    A = n(955872),
+    A = n(740625),
+    m = n(955872),
     h = n(71393),
     p = n(967198),
     x = n(711014),
@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(203982),
     S = n(115063),
     C = n(894013),
-    f = n(652215),
-    I = n(355097),
+    I = n(652215),
+    f = n(355097),
     b = n(985018),
     N = n(298109);
 
@@ -37,13 +37,13 @@ function v() {
         l = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
         {
             subsection: v,
-            setSubsection: j
+            setSubsection: O
         } = (0, C.A)();
     return s.useEffect(() => {
         null != l && t?.id != null && (0, g.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
-    }, [t?.id, l]), (0, i.jsxs)(m.R, {
+    }, [t?.id, l]), (0, i.jsxs)(A.R, {
         header: b.intl.string(b.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
             className: N.$H,
@@ -56,34 +56,34 @@ function v() {
                         (0, S.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), T._.dispatch(f.jej.EMPHASIZE_NOTICE);
+                        }), T._.dispatch(I.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === I.Eq.GUILD && null != t && (0, c.V2)(t.id), j(e)
+                    e === f.Eq.GUILD && null != t && (0, c.V2)(t.id), O(e)
                 }
             },
             children: [(0, i.jsx)(o.VQ0.Item, {
                 className: N.YU,
-                id: I.Eq.USER_PROFILE,
+                id: f.Eq.USER_PROFILE,
                 children: b.intl.string(b.t["2p07FR"])
-            }, I.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
+            }, f.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
                 className: a()(N.YU, N.HY),
                 "aria-label": b.intl.string(b.t.kPHroX),
-                id: I.Eq.GUILD,
+                id: f.Eq.GUILD,
                 children: b.intl.string(b.t.kPHroX)
-            }, I.Eq.GUILD)]
-        }), v === I.Eq.GUILD ? (0, i.jsx)(u.A, {
+            }, f.Eq.GUILD)]
+        }), v === f.Eq.GUILD ? (0, i.jsx)(u.A, {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
                     (0, S.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), T._.dispatch(f.jej.EMPHASIZE_NOTICE);
+                    }), T._.dispatch(I.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(A.A, {})]
+        }) : (0, i.jsx)(m.A, {})]
     })
 }

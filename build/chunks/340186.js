@@ -13,14 +13,14 @@ var i = n(934551),
     u = n(982770),
     _ = n(461158),
     g = n(81453),
-    m = n(289882),
-    A = n(427887),
+    A = n(289882),
+    m = n(427887),
     h = n(222323),
     p = n(411476),
     x = n(985018);
 let E = (0, s.t_)(l.X.CHAT_PANEL, {
         useTitle: () => x.intl.string(x.t["/VQax8"]),
-        buildLayout: () => [u.M, o.f, d.z, A.J, g.n, h.p, p.U, _.W, m.o, c.c]
+        buildLayout: () => [u.M, o.f, d.z, m.J, g.n, h.p, p.U, _.W, A.o, c.c]
     }),
     T = (0, s.i4)(l.X.CHAT_SIDEBAR_ITEM, {
         useTitle: () => x.intl.string(x.t["/VQax8"]),

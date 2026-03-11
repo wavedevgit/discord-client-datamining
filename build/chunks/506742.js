@@ -1,32 +1,32 @@
 /** chunk id: 506742 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     a: () => d
 });
-var n = a(627968);
-a(64700);
-var r = a(503698),
-    i = a.n(r),
-    s = a(397927),
-    l = a(580630),
-    c = a(985018),
-    o = a(812640);
+var r = n(627968);
+n(64700);
+var i = n(503698),
+    a = n.n(i),
+    l = n(397927),
+    s = n(580630),
+    c = n(985018),
+    o = n(812640);
 let d = e => {
     let {
         price: {
             amount: t,
-            currency: a
+            currency: n
         },
-        className: r,
+        className: i,
         variant: d = "heading-md/semibold"
-    } = e, u = (0, l.RS)(t, a);
-    return (0, n.jsxs)(s.Text, {
+    } = e, u = (0, s.RS)(t, n);
+    return (0, r.jsxs)(l.Text, {
         variant: d,
-        className: i()(o.v, r),
-        children: [(0, n.jsx)(s.AC4, {
+        className: a()(o.v, i),
+        children: [(0, r.jsx)(l.AC4, {
             children: c.intl.format(c.t["2CEGln"], {
                 price: u
             })
-        }), (0, n.jsx)("span", {
+        }), (0, r.jsx)("span", {
             "aria-hidden": !0,
             children: u
         })]

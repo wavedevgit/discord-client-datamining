@@ -3,16 +3,16 @@ r.d(t, {
     Qt: () => o,
     cG: () => i
 });
-var a = r(627968);
+var n = r(627968);
 r(64700);
-let [n, i] = (0, r(786300).A)();
+let [a, i] = (0, r(786300).A)();
 
 function o(e) {
     let {
         children: t,
         ...r
     } = e;
-    return (0, a.jsx)(n.Provider, {
+    return (0, n.jsx)(a.Provider, {
         value: r,
         children: t
     })

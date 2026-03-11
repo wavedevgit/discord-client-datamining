@@ -19,8 +19,8 @@ function _(e) {
         titleIcon: _
     } = e, {
         analyticsLocations: g
-    } = (0, a.Ay)(), m = null != n, {
-        userNameplate: A,
+    } = (0, a.Ay)(), A = null != n, {
+        userNameplate: m,
         guildNameplate: h,
         pendingNameplate: p,
         pendingErrors: x
@@ -43,10 +43,10 @@ function _(e) {
                 size: "sm",
                 text: c.intl.string(c.t.BwdeM1),
                 onClick: E
-            }), (void 0 === p ? (m ? h : A) != null : null != p) && (0, i.jsx)(l.Button, {
+            }), (void 0 === p ? (A ? h : m) != null : null != p) && (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: m ? c.intl.string(c.t.CHf9iJ) : c.intl.string(c.t["9zwziY"]),
+                text: A ? c.intl.string(c.t.CHf9iJ) : c.intl.string(c.t["9zwziY"]),
                 onClick: T
             })]
         })

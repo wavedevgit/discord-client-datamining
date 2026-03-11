@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(419954),
     _ = n(796774),
     g = n(209932),
-    m = n(536432),
-    A = n(984813),
+    A = n(536432),
+    m = n(984813),
     h = n(595953),
     p = n(975571),
     x = n(780964),
@@ -24,7 +24,7 @@ n(980504);
 var S = n(985018),
     C = n(17786);
 
-function f(e) {
+function I(e) {
     return (0, l.bG)([g.A], () => {
         if (null == e) return null;
         let {
@@ -35,10 +35,10 @@ function f(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([E.A], () => E.A.settings.guilds?.guilds?.[t]?.joinSound), s = f(n);
+    } = e, n = (0, l.bG)([E.A], () => E.A.settings.guilds?.guilds?.[t]?.joinSound), s = I(n);
     if (null == n || null == s) return null;
     let {
         emojiId: o,
@@ -66,9 +66,9 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = f(r), x = r?.type === A.PP.GLOBAL, E = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, m.mz)(t), u = I(r), x = r?.type === m.PP.GLOBAL, E = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
-            E && (0, m.ND)({
+            E && (0, A.ND)({
                 location: e
             })
         }, [E, e]), s.useEffect(() => {
@@ -78,7 +78,7 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
             let {
                 inDropdown: n
             } = t;
-            return null == e ? null : n ? (0, i.jsx)(I, {
+            return null == e ? null : n ? (0, i.jsx)(f, {
                 guildId: e.value
             }) : null
         }, []);
@@ -111,7 +111,7 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
                     sound: u,
                     isGlobal: x,
                     onSelect: n => {
-                        null == n ? (0, m.Dv)(t, e) : (0, m.un)(t, n, e)
+                        null == n ? (0, A.Dv)(t, e) : (0, A.un)(t, n, e)
                     }
                 }), E && (0, i.jsx)(a.po8, {
                     className: C.lm,

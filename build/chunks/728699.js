@@ -1,6 +1,6 @@
 /** chunk id: 728699 params = (module,exports,require) **/
 n.d(t, {
-    T: () => m
+    T: () => A
 });
 var i = n(64700),
     s = n(934551),
@@ -16,7 +16,7 @@ let g = (0, r.t_)(d.X.FAMILY_CENTER_PANEL, {
         useTitle: () => u.intl.string(_.default.RZqaJn),
         buildLayout: () => [c.g]
     }),
-    m = (0, r.i4)(d.X.FAMILY_CENTER_SIDEBAR_ITEM, {
+    A = (0, r.i4)(d.X.FAMILY_CENTER_SIDEBAR_ITEM, {
         useTitle: () => u.intl.string(_.default.RZqaJn),
         icon: s.GroupIcon,
         usePersistentBadge: function() {

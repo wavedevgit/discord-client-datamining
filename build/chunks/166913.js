@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(421380),
     _ = n(736653),
     g = n(793574),
-    m = n(688810),
-    A = n(726649),
+    A = n(688810),
+    m = n(726649),
     h = n(611924),
     p = n(166403),
     x = n(954571),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(40185),
     S = n(526292),
     C = n(234419),
-    f = n(690737),
-    I = n(320908),
+    I = n(690737),
+    f = n(320908),
     b = n(412260),
     N = n(396375),
     v = n(106922),
-    j = n(501007),
-    O = n(901125),
+    O = n(501007),
+    j = n(901125),
     R = n(729230),
     y = n(227273),
     P = n(244778),
@@ -47,7 +47,7 @@ let V = e => {
         }) : null
     },
     w = () => {
-        (0, h.P)(A.b);
+        (0, h.P)(m.b);
         let e = s.useRef(null),
             t = s.useRef(null),
             n = s.useRef(null),
@@ -72,7 +72,7 @@ let V = e => {
             }),
             {
                 analyticsLocations: es
-            } = (0, m.Ay)(g.A.PREMIUM_MARKETING);
+            } = (0, A.Ay)(g.A.PREMIUM_MARKETING);
         s.useEffect(() => {
             W(!0)
         }, []);
@@ -83,7 +83,7 @@ let V = e => {
                 onChange: e => F(e),
                 threshold: .1,
                 active: !0,
-                children: (0, i.jsx)(j.NB, {
+                children: (0, i.jsx)(O.NB, {
                     innerRef: e,
                     tier0CTAButton: (0, i.jsx)(N.A, {
                         showIcon: !1,
@@ -117,7 +117,7 @@ let V = e => {
         return (0, i.jsxs)("div", {
             className: U.kL,
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(O.A, {
+            children: [(0, i.jsx)(j.A, {
                 premiumSubscription: K,
                 className: a()(U.R3, {
                     [U.aZ]: ee
@@ -136,7 +136,7 @@ let V = e => {
                     onChange: e => H(e),
                     threshold: 0,
                     active: !0,
-                    children: (0, i.jsx)(I.Ay, {
+                    children: (0, i.jsx)(f.Ay, {
                         ref: t,
                         subscriptionTier: J,
                         className: a()({
@@ -158,7 +158,7 @@ let V = e => {
                 })
             }), (0, i.jsx)("div", {
                 className: U.hz
-            }), (0, i.jsx)(f.A, {
+            }), (0, i.jsx)(I.A, {
                 isVisible: !w && !B && X,
                 subscriptionTier: J,
                 isApplicationHome: !1,

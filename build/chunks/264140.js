@@ -224,7 +224,7 @@ class ts extends s.PureComponent {
         o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, _.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("27580")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("60770")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: s,

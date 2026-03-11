@@ -1,6 +1,6 @@
 /** chunk id: 730588 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -15,13 +15,13 @@ var s = n(503698),
     _ = n(985018),
     g = n(52506);
 
-function m(e) {
+function A(e) {
     let {
         showRemoveBannerButton: t,
         errors: n,
         onBannerChange: s,
-        guildId: m,
-        className: A,
+        guildId: A,
+        className: m,
         disabled: h = !1,
         showPremiumIcon: p = !0,
         isTryItOut: x = !1,
@@ -31,7 +31,7 @@ function m(e) {
         newestAnalyticsLocation: S
     } = (0, o.Ay)(), C = T ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
-        className: A,
+        className: m,
         title: _.intl.string(_.t.Vgdusv),
         showPremiumIcon: p,
         errors: n,
@@ -47,7 +47,7 @@ function m(e) {
                 onClick: () => (0, d.XD)({
                     uploadType: u.HL.BANNER,
                     analyticsSource: S,
-                    guildId: m,
+                    guildId: A,
                     isTryItOut: x
                 }),
                 children: _.intl.string(_.t.N0bC3P)
@@ -57,7 +57,7 @@ function m(e) {
                 children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != m ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),
+                    text: null != A ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),
                     onClick: () => s(null)
                 })
             })]

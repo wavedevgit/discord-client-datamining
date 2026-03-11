@@ -13,8 +13,8 @@ var i, s, l, a = n(627968),
     u = n(793943),
     _ = n(259065),
     g = n(206835),
-    m = n(649032),
-    A = n(26508),
+    A = n(649032),
+    m = n(26508),
     h = n(780964),
     p = n(358776),
     x = n(840065),
@@ -22,13 +22,13 @@ var i, s, l, a = n(627968),
     T = n(975571),
     S = n(612669),
     C = n(88001),
-    f = n(652215),
-    I = n(355097),
+    I = n(652215),
+    f = n(355097),
     b = n(519412),
     N = n(49370),
     v = n(985018),
-    j = n(520650),
-    O = n(927961),
+    O = n(520650),
+    j = n(927961),
     R = n(817577),
     y = n(748222),
     P = n(743501),
@@ -63,16 +63,16 @@ let ea = () => {
     let {
         analyticsLocations: e
     } = (0, c.Ay)(d.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, g.A)({
-        scrollPosition: I._F.TRY_IT_OUT,
+        scrollPosition: f._F.TRY_IT_OUT,
         analyticsLocations: e
     }), i = (0, S.O9)(), s = (0, r.useCallback)(() => {
         (0, x.openUserSettings)(h.X.PROFILE_PANEL, {
-            section: f.nc_.PROFILE_CUSTOMIZATION,
+            section: I.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
         }, () => (0, _.L)({
             analyticsLocations: e
         }))
-    }, [e]), l = (0, E.TM)(), ei = T.A.getArticleURL(f.MVz.REFERRAL_PROGRAM), es = {
+    }, [e]), l = (0, E.TM)(), ei = T.A.getArticleURL(I.MVz.REFERRAL_PROGRAM), es = {
         premiumGroup: {
             thumbnail: R,
             assetUrl: R
@@ -131,8 +131,8 @@ let ea = () => {
         videoUrl: es.referralProgram.assetUrl
     }, er = {
         name: "customThemes",
-        title: v.intl.string(j.default.XokIHM),
-        description: v.intl.string(j.default["7esQMC"]),
+        title: v.intl.string(O.default.XokIHM),
+        description: v.intl.string(O.default["7esQMC"]),
         descriptionCta: v.intl.string(v.t.jVcuVY),
         previewImage: es.customThemes.thumbnail,
         onClick: () => {
@@ -141,8 +141,8 @@ let ea = () => {
         videoUrl: es.customThemes.assetUrl
     }, eo = {
         name: "displayNameStyles",
-        title: v.intl.string(O.default.ABtBDQ),
-        description: v.intl.string(O.default.MFNXZh),
+        title: v.intl.string(j.default.ABtBDQ),
+        description: v.intl.string(j.default.MFNXZh),
         descriptionCta: v.intl.string(v.t.jVcuVY),
         previewImage: es.displayNameStyles.thumbnail,
         onClick: s,
@@ -193,7 +193,7 @@ let ea = () => {
                         openUserSettings: i
                     } = n(840065);
                 i(t ? h.X.DISPLAY_THEME_CATEGORY : h.X.APPEARANCE_PANEL, {
-                    section: f.nc_.APPEARANCE,
+                    section: I.nc_.APPEARANCE,
                     analyticsLocations: e
                 })
             }
@@ -211,13 +211,13 @@ let ea = () => {
         description: v.intl.string(v.t["Y+IJyg"]),
         previewImage: es.noLimits.thumbnail,
         videoUrl: es.noLimits.assetUrl
-    }, em = (0, A.DK)(m.W.NITRO, "useBentoBoxes"), eA = {
+    }, eA = (0, m.DK)(A.W.NITRO, "useBentoBoxes"), em = {
         name: "orbRewards",
         title: v.intl.string(N.default["ZFJ/NU"]),
         description: v.intl.string(N.default.wMi514),
         descriptionCta: v.intl.string(v.t.hvVgAZ),
         onClick: () => {
-            window.open(T.A.getArticleURL(f.MVz.ORBS_REWARDS_FAQ), "_blank")
+            window.open(T.A.getArticleURL(I.MVz.ORBS_REWARDS_FAQ), "_blank")
         },
         previewImage: es.orbRewards.thumbnail,
         previewImageStyle: "overlay",
@@ -226,14 +226,14 @@ let ea = () => {
         badgeVariant: "expressive"
     };
     return {
-        whatsNewBoxes: i ? em ? [
+        whatsNewBoxes: i ? eA ? [
             [ed],
-            [eA, ea]
+            [em, ea]
         ] : [
             [ed],
             [el, ea]
-        ] : em ? [
-            [eA],
+        ] : eA ? [
+            [em],
             [el, ea]
         ] : [
             [eo],

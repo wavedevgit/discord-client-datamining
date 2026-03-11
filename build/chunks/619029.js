@@ -1,6 +1,6 @@
 /** chunk id: 619029 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -34,7 +34,7 @@ function I(e) {
     })
 }
 
-function N() {
+function p() {
     let e = (0, o.A)({
         scrollPosition: T._F.GUILD_TAG
     });
@@ -47,7 +47,7 @@ function N() {
     })
 }
 
-function p(e) {
+function N(e) {
     let {
         analyticsLocations: t,
         ...n
@@ -61,7 +61,7 @@ function p(e) {
     return o.has(E.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) || o.has(E.D.AUTOMOD_QUARANTINED_BIO) ? (0, i.jsx)(I, {
         ...n,
         analyticsLocations: r
-    }) : o.has(E.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {
+    }) : o.has(E.D.AUTOMOD_QUARANTINED_SERVER_TAG) ? (0, i.jsx)(p, {}) : (0, i.jsx)(I, {
         ...n,
         analyticsLocations: r
     })

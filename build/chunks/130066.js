@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(476009),
     _ = n(585052),
     g = n(831320),
-    m = n(965563),
-    A = n(320134),
+    A = n(965563),
+    m = n(320134),
     h = n(604151),
     p = n(638130),
     x = n(389242),
@@ -22,31 +22,31 @@ var i = n(627968),
     T = n(61610),
     S = n(751461),
     C = n(638324),
-    f = n(428854),
-    I = n(531525),
+    I = n(428854),
+    f = n(531525),
     b = n(190363),
     N = n(652215),
     v = n(985018);
-let j = () => (0, i.jsxs)(A.A, {
+let O = () => (0, i.jsxs)(m.A, {
         title: v.intl.string(v.t.xVRG4P),
-        webSetting: I.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        webSetting: f.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
         children: [(0, i.jsx)(p.f, {}), (0, i.jsx)(_.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(x.A, {})]
     }),
-    O = () => (0, i.jsxs)(A.A, {
+    j = () => (0, i.jsxs)(m.A, {
         title: v.intl.string(v.t["y62Z/d"]),
-        webSetting: I.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+        webSetting: f.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
         children: [(0, i.jsx)(l.x, {
-            setting: I.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-            children: (0, i.jsx)(m.A, {})
+            setting: f.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+            children: (0, i.jsx)(A.A, {})
         }), (0, i.jsx)(S.A, {}), (0, i.jsx)(C.A, {}), (0, i.jsx)(T.A, {}), (0, i.jsx)(E.A, {})]
     }),
-    R = () => (0, i.jsxs)(A.A, {
+    R = () => (0, i.jsxs)(m.A, {
         title: v.intl.string(v.t["1Qn8iV"]),
-        webSetting: I.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+        webSetting: f.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
         children: [(0, i.jsx)(g.A, {}), (0, i.jsx)(h.Ay, {})]
     }),
     y = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(j, {}), (0, i.jsx)(O, {}), (0, i.jsx)(R, {})]
+        children: [(0, i.jsx)(O, {}), (0, i.jsx)(j, {}), (0, i.jsx)(R, {})]
     });
 
 function P() {
@@ -54,19 +54,19 @@ function P() {
         t = [{
             title: v.intl.string(v.t["/7xJCF"]),
             component: y,
-            setting: I.H.CONTENT_SOCIAL_DISCORD_TAB
+            setting: f.H.CONTENT_SOCIAL_DISCORD_TAB
         }, {
             title: v.intl.string(v.t.YpCiMt),
             component: c.A,
-            setting: I.H.CONTENT_SOCIAL_CONNECTED_GAMES
+            setting: f.H.CONTENT_SOCIAL_CONNECTED_GAMES
         }];
     return (0, i.jsx)(r.R, {
         header: v.intl.string(v.t["+o1pDZ"]),
-        notice: (0, i.jsx)(f.A, {
-            page: f.R.CONTENT_AND_SOCIAL
+        notice: (0, i.jsx)(I.A, {
+            page: I.R.CONTENT_AND_SOCIAL
         }),
         children: (0, i.jsx)(o.A, {
-            parentSetting: I.H.CONTENT_SOCIAL,
+            parentSetting: f.H.CONTENT_SOCIAL,
             settingsSection: N.nc_.CONTENT_AND_SOCIAL,
             tabs: t,
             defaultTabIndex: e === b.k ? 1 : void 0

@@ -58,7 +58,7 @@ let v = s.memo(function(e) {
                     null != t && (0, m.L3)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("75149"), n.e("40540")]).then(n.bind(n, 725756));
+                        } = await Promise.all([n.e("75149"), n.e("53378")]).then(n.bind(n, 725756));
                         return n => (0, i.jsx)(e, {
                             ...n,
                             channel: l,

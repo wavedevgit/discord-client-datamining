@@ -1,6 +1,6 @@
 /** chunk id: 218701 params = (module,exports,require) **/
 n.d(t, {
-    u: () => A
+    u: () => m
 });
 var i = n(290595),
     s = n(419954),
@@ -13,9 +13,9 @@ var i = n(290595),
     u = n(788172),
     _ = n(789643),
     g = n(719587),
-    m = n(985018);
-let A = (0, s.zZ)(a.X.DATA_USAGE_CATEGORY, {
-    useTitle: () => m.intl.string(m.t.bvw42E),
+    A = n(985018);
+let m = (0, s.zZ)(a.X.DATA_USAGE_CATEGORY, {
+    useTitle: () => A.intl.string(A.t.bvw42E),
     useInlineNotice: r.I,
     initialize: () => {
         l.A.fetchedConsents || (0, i.Q)()

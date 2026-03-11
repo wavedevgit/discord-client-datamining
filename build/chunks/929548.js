@@ -1,6 +1,6 @@
 /** chunk id: 929548 params = (module,exports,require) **/
 n.d(t, {
-    L: () => j
+    L: () => O
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(827343),
     _ = n(77729),
     g = n(839214),
-    m = n(98919),
-    A = n(487329),
+    A = n(98919),
+    m = n(487329),
     h = n(419954),
     p = n(430452),
     x = n(353835),
@@ -22,11 +22,11 @@ var i = n(627968),
     T = n(652215),
     S = n(731854),
     C = n(985018);
-let f = (0, g.D)(() => ({
+let I = (0, g.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function I() {
+async function f() {
     let e = await _.A.fileManager.getLogPath();
     _.A.fileManager.showItemInFolder(e)
 }
@@ -51,14 +51,14 @@ async function N(e) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, m.a)(T.Umv.RTC), e = C.intl.string(C.t["fKBB8+"]), t = C.intl.string(C.t.BvyxE7), (0, r.A)({
+        }), await (0, A.a)(T.Umv.RTC), e = C.intl.string(C.t["fKBB8+"]), t = C.intl.string(C.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
     } catch (a) {
         var s;
         let e, t, n, l;
-        s = a.displayMessage, e = C.intl.string(C.t.QZg0J7), t = s ?? C.intl.string(C.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = C.intl.formatToPlainString(C.t.ejOT95, {
+        s = a.displayMessage, e = C.intl.string(C.t.QZg0J7), t = s ?? C.intl.string(C.t.VzHcSm), n = (0, m.B1)(m.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = C.intl.formatToPlainString(C.t.ejOT95, {
             errorCode: n
         }), (0, c.qfG)(n => (0, i.jsx)(c.VoidConfirmModal, {
             header: e,
@@ -90,16 +90,16 @@ async function N(e) {
 }
 async function v() {
     await N({
-        onUploadStart: () => f.setState({
+        onUploadStart: () => I.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => f.setState({
+        onUploadFinish: () => I.setState({
             isUploading: !1,
             isDisabled: !0
         })
     })
 }
-let j = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let O = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [C.intl.string(C.t["726JHL"]), C.intl.string(C.t.EbwFfR), C.intl.string(C.t.nuPtYi)],
     usePredicate: function() {
         let e = (0, a.bG)([p.Ay], () => p.Ay.supports(S.O5.DEBUG_LOGGING));
@@ -107,8 +107,8 @@ let j = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     },
     Component: function() {
         let e = (0, a.bG)([p.Ay], () => p.Ay.getDebugLogging()),
-            t = f.useField("isUploading"),
-            n = f.useField("isDisabled"),
+            t = I.useField("isUploading"),
+            n = I.useField("isDisabled"),
             l = s.useId();
         return (0, i.jsxs)("fieldset", {
             children: [(0, i.jsx)(c.AC4, {
@@ -137,7 +137,7 @@ let j = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
                             text: C.intl.string(C.t.nuPtYi),
-                            onClick: I,
+                            onClick: f,
                             "aria-label": C.intl.string(C.t["L/hFOe"])
                         })]
                     })

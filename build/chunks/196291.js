@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(234419),
     _ = n(10368),
     g = n(535646),
-    m = n(511484),
-    A = n(202639),
+    A = n(511484),
+    m = n(202639),
     h = n(811611),
     p = n(407217),
     x = n(101058),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(836602),
     S = n(193658),
     C = n(954571),
-    f = n(927578),
-    I = n(884546),
+    I = n(927578),
+    f = n(884546),
     b = n(230084),
     N = n(180020),
     v = n(212168),
-    j = n(730588),
-    O = n(63675),
+    O = n(730588),
+    j = n(63675),
     R = n(253604),
     y = n(652215),
     P = n(788868),
@@ -41,7 +41,7 @@ function M(e) {
         user: t,
         isVisible: n,
         shouldShow: M
-    } = e, U = f.Ay.isPremium(t), k = f.Ay.canUseAnimatedAvatar(t), {
+    } = e, U = I.Ay.isPremium(t), k = I.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
         pendingThemeColors: w,
         tryItOutThemeColors: H,
@@ -81,7 +81,7 @@ function M(e) {
     }, [Z, t, n]);
     let J = (0, u.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
         Q = (0, c.O)(),
-        $ = (0, m.U9)(Q, P.pe.TIER_2);
+        $ = (0, A.U9)(Q, P.pe.TIER_2);
     return M ? (0, i.jsx)(d.f5, {
         value: W,
         children: (0, i.jsxs)(v.A, {
@@ -90,7 +90,7 @@ function M(e) {
             type: v.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(I.A, {
+            children: [(0, i.jsx)(f.A, {
                 stickyPreview: !1,
                 layoutClassName: G.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
@@ -119,7 +119,7 @@ function M(e) {
                             variant: "text-sm/normal",
                             children: D.intl.string(D.t.xeEC20)
                         })]
-                    }), (0, i.jsx)(O.A, {
+                    }), (0, i.jsx)(j.A, {
                         className: G.fz,
                         user: t,
                         pendingAvatarSrc: (0, x.V7)({
@@ -130,7 +130,7 @@ function M(e) {
                         onThemeColorsChange: E.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
-                    }), (0, i.jsx)(j.A, {
+                    }), (0, i.jsx)(O.A, {
                         className: G.fz,
                         isTryItOut: !0,
                         showRemoveBannerButton: null != F,
@@ -151,7 +151,7 @@ function M(e) {
                         children: D.intl.string(D.t["smo74/"])
                     })]
                 })
-            }), !J && (0, i.jsx)(A.d, {
+            }), !J && (0, i.jsx)(m.d, {
                 onSubscribeModalClose: q,
                 className: G.Kv,
                 showUpsell: !0,

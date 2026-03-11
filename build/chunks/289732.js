@@ -1,9 +1,9 @@
 /** chunk id: 289732 params = (module,exports,require) **/
 n.d(t, {
-    U: () => i
+    U: () => r
 });
-let a = n(346344).newStemmer("english");
+let l = n(346344).newStemmer("english");
 
-function i(e) {
-    return a.stem(e)
+function r(e) {
+    return l.stem(e)
 }

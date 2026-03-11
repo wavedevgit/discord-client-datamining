@@ -1,7 +1,7 @@
 /** chunk id: 500831 params = (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => k,
-    useAppSidebarState: () => G
+    default: () => G,
+    useAppSidebarState: () => U
 });
 var i = n(627968),
     r = n(64700),
@@ -38,11 +38,10 @@ var i = n(627968),
     M = n(475815),
     w = n(71855);
 n(801416);
-var U = n(260175);
-let G = (0, l.v)(() => ({
+let U = (0, l.v)(() => ({
         isOpen: !0
     })),
-    k = r.memo(function() {
+    G = r.memo(function() {
         r.useLayoutEffect(() => {
             D.Ay.setMinimumSize(800, 500)
         }, []);
@@ -55,18 +54,18 @@ let G = (0, l.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), G = (0, O.Uk)("VoiceDareTitleBarButton"), k = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), V = null !== e && t === N.RK.TITLE_BAR_LEFT, B = null === e, {
-            enabled: H
+        }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
+            enabled: B
         } = p.s.useConfig({
             location: "AppTitleBar"
         });
         r.useLayoutEffect(() => {
             D.Ay.setMinimumSize(800, 500)
         }, []);
-        let F = (0, y.NC)(),
-            Y = (0, s.bG)([j.A, x.A], () => (0, M._U)()),
-            W = (0, a.xl)(),
-            q = function(e) {
+        let H = (0, y.NC)(),
+            F = (0, s.bG)([j.A, x.A], () => (0, M._U)()),
+            Y = (0, a.xl)(),
+            W = function(e) {
                 let {
                     showBackForwardButtons: t,
                     showNotificationsInbox: n,
@@ -74,47 +73,33 @@ let G = (0, l.v)(() => ({
                 } = e;
                 return r.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
             }({
-                showBackForwardButtons: W,
-                showNotificationsInbox: V,
-                showRecentsButton: B
+                showBackForwardButtons: Y,
+                showNotificationsInbox: k,
+                showRecentsButton: V
             });
-        return Y ? null : (0, i.jsx)(o.skg, {
+        return F ? null : (0, i.jsx)(o.skg, {
             children: e => (0, i.jsx)(o.NPJ, {
-                theme: F,
+                theme: H,
                 children: t => (0, i.jsx)(w.cq, {
                     className: t,
                     leading: (0, i.jsxs)(i.Fragment, {
-                        children: [W && (0, i.jsx)(_.A, {
-                            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === q ? e : void 0
-                        }), V && (0, i.jsx)(S.A, {
-                            focusSectionProps: "NOTIFICATIONS_INBOX" === q ? e : void 0
+                        children: [Y && (0, i.jsx)(_.A, {
+                            firstElementFocusJumpSectionProps: "BACK_FORWARD_NAVIGATION" === W ? e : void 0
+                        }), k && (0, i.jsx)(S.A, {
+                            focusSectionProps: "NOTIFICATIONS_INBOX" === W ? e : void 0
                         })]
                     }),
                     title: (0, i.jsx)(T.M, {}),
                     trailing: (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(m.A, {
-                            className: U.x
-                        }), G ? (0, i.jsx)(L.A, {}) : null, H && (0, i.jsx)(g.A, {
-                            className: U.x
-                        }), (0, i.jsx)(h.A, {
-                            canShowReminder: !0,
-                            className: U.x
-                        }), B && (0, i.jsx)(v.A, {
-                            ..."RECENTS" === q ? e : {},
-                            className: U.x
+                        children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(g.A, {}), (0, i.jsx)(h.A, {
+                            canShowReminder: !0
+                        }), V && (0, i.jsx)(v.A, {
+                            ..."RECENTS" === W ? e : {}
                         }), n ? (0, i.jsx)(f.w, {
-                            focusSectionProps: "HELP" === q ? e : void 0,
-                            className: U.x
+                            focusSectionProps: "HELP" === W ? e : void 0
                         }) : (0, i.jsx)(I.A, {
-                            focusSectionProps: "HELP" === q ? e : void 0,
-                            className: U.x
-                        }), l ? (0, i.jsx)(E.R, {
-                            className: U.x
-                        }) : null, k && (0, i.jsx)(d.A, {
-                            className: U.x
-                        }), (0, i.jsx)(C.A, {
-                            className: U.x
-                        })]
+                            focusSectionProps: "HELP" === W ? e : void 0
+                        }), l && (0, i.jsx)(E.R, {}), G && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

@@ -1,7 +1,7 @@
 /** chunk id: 418829 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
+    A: () => p
 });
 var r = n(627968),
     i = n(64700),
@@ -9,11 +9,11 @@ var r = n(627968),
     s = n(250703),
     l = n(877260),
     o = n(823092),
-    u = n(199966),
-    c = n(669550),
+    c = n(199966),
+    u = n(669550),
     d = n(894858),
-    f = n(272053),
-    m = n(397274),
+    m = n(272053),
+    f = n(397274),
     g = n(500425);
 
 function h(e) {
@@ -21,65 +21,65 @@ function h(e) {
         partialRoot: t,
         target: n,
         defaultTarget: h,
-        onClose: y,
-        sidebarFooter: p,
-        onPanelChange: v,
+        onClose: p,
+        sidebarFooter: y,
+        onPanelChange: _,
         emptyState: x,
-        searchQuery: b,
-        onSearchChange: A
-    } = e, _ = d.A.useField("currentPanelKey"), {
+        searchQuery: v,
+        onSearchChange: b
+    } = e, A = d.A.useField("currentPanelKey"), {
         node: j,
-        visibleDirectory: S,
-        accessibleDirectory: N
-    } = (0, c.Ay)(t, b ?? ""), C = null != n && S.entry(n)?.parentPanelKey != null ? n : h, k = i.useMemo(() => {
-        let e = N.entry(_ ?? C)?.parentPanelKey;
-        if (null != e) return N.getPanelOrThrow(e)
-    }, [_, N, C]), {
+        visibleDirectory: N,
+        accessibleDirectory: S
+    } = (0, u.Ay)(t, v ?? ""), C = null != n && N.entry(n)?.parentPanelKey != null ? n : h, k = i.useMemo(() => {
+        let e = S.entry(A ?? C)?.parentPanelKey;
+        if (null != e) return S.getPanelOrThrow(e)
+    }, [A, S, C]), {
         navigateWithValidation: E
     } = (0, o.L_)();
     i.useEffect(() => {
-        f.A.init({
-            accessibleDirectory: N,
-            onPanelChange: v,
+        m.A.init({
+            accessibleDirectory: S,
+            onPanelChange: _,
             navigateWithValidation: (e, t) => {
-                null == S.entry(e) && A?.(""), E(t)
+                null == N.entry(e) && b?.(""), E(t)
             }
         })
-    }, [N, E, v, A, S]);
-    let [w, R] = i.useState(!0);
-    (0, a.Ay)(() => (f.A.navigate(C, {
+    }, [S, E, _, b, N]);
+    let [w, I] = i.useState(!0);
+    (0, a.Ay)(() => (m.A.navigate(C, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
-    }), R(!1), () => {
-        f.A.reset(), m.A.reset(), d.A.resetState()
+    }), I(!1), () => {
+        m.A.reset(), f.A.reset(), d.A.resetState()
     }));
     let T = i.useMemo(() => ({
-            visibleDirectory: S,
-            accessibleDirectory: N
-        }), [S, N]),
-        I = i.useMemo(() => () => E(y), [E, y]),
-        P = null != _ ? S.get(_) : void 0;
-    return (0, r.jsx)(u.x.Provider, {
+            visibleDirectory: N,
+            accessibleDirectory: S
+        }), [N, S]),
+        R = i.useMemo(() => () => E(p), [E, p]),
+        P = null != A ? N.get(A) : void 0;
+    return (0, r.jsx)(c.x.Provider, {
         value: T,
         children: (0, r.jsxs)("div", {
             className: g.k,
             children: [(0, r.jsx)(l.L, {
                 root: j,
-                footer: p,
-                onClose: I,
+                footer: y,
+                onClose: R,
                 emptyState: x,
-                searchQuery: b,
-                onSearchChange: A
+                searchQuery: v,
+                onSearchChange: b
             }), (0, r.jsx)(s.A, {
-                onClose: I,
+                onClose: R,
                 setting: w ? void 0 : P ?? k
             })]
         })
     })
 }
 
-function y(e) {
+function p(e) {
     return (0, r.jsx)(o.ms, {
         children: (0, r.jsx)(h, {
             ...e

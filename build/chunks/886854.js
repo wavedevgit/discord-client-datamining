@@ -1,7 +1,7 @@
 /** chunk id: 886854 params = (module,exports,require) **/
 n.d(t, {
     j0: () => S,
-    yj: () => f
+    yj: () => I
 });
 var i = n(627968),
     s = n(934551),
@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(358776),
     _ = n(227542),
     g = n(859669),
-    m = n(662802),
-    A = n(988208),
+    A = n(662802),
+    m = n(988208),
     h = n(819070),
     p = n(352694),
     x = n(136451),
@@ -43,9 +43,9 @@ let S = [{
         initialize: () => {
             (0, r.v)()
         },
-        buildLayout: () => [p.S, m._, x.u, A.U, h.M, g.d]
+        buildLayout: () => [p.S, A._, x.u, m.U, h.M, g.d]
     }),
-    f = (0, o.i4)(c.X.APPEARANCE_SIDEBAR_ITEM, {
+    I = (0, o.i4)(c.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => E.intl.string(E.t["iHH+ky"]),
         icon: s.PaintPaletteIcon,
         usePredicate: () => !(0, u.bp)("AppearanceSidebarItem"),

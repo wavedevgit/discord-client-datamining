@@ -19,11 +19,11 @@ let u = e => {
             defaultTab: o,
             onTabChange: d,
             orientation: u = "horizontal"
-        } = e, _ = o ?? t[0], [g, m] = s.useState(_ ?? t[0]);
+        } = e, _ = o ?? t[0], [g, A] = s.useState(_ ?? t[0]);
         s.useEffect(() => {
-            m(_)
+            A(_)
         }, [_]);
-        let A = s.useMemo(() => {
+        let m = s.useMemo(() => {
             let e = g.component;
             return (0, i.jsx)(e, {})
         }, [g]);
@@ -37,7 +37,7 @@ let u = e => {
                 }, l),
                 selectedItem: g.setting,
                 onItemSelect: e => {
-                    m(t.find(t => t.setting === e) ?? t[0]), d?.(e)
+                    A(t.find(t => t.setting === e) ?? t[0]), d?.(e)
                 },
                 orientation: u,
                 type: "vertical" === u ? "side" : "top",
@@ -57,7 +57,7 @@ let u = e => {
                 className: a()(c.NM, n, {
                     [c.Vd]: "vertical" === u
                 }),
-                children: A
+                children: m
             })]
         })
     },
@@ -73,11 +73,11 @@ let u = e => {
         } = e, {
             viewableTabs: _,
             filteredTab: g
-        } = (0, d.A)(t, s), m = (null != a ? t[a] : null) ?? g ?? _[0];
+        } = (0, d.A)(t, s), A = (null != a ? t[a] : null) ?? g ?? _[0];
         return (0, i.jsx)(u, {
             tabs: _,
             orientation: c,
-            defaultTab: m,
+            defaultTab: A,
             onTabChange: e => {
                 o.A.setSection(n, e), r?.(e)
             },

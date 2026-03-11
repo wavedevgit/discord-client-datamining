@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(397808),
     _ = n(652215),
     g = n(842130),
-    m = n(985018),
-    A = n(957415);
+    A = n(985018),
+    m = n(957415);
 let h = [18, 18, 16, 16, 14, 12, 10];
 
 function p(e) {
@@ -33,18 +33,18 @@ let x = s.memo(e => {
             name: p
         } = l;
     return (0, i.jsxs)("div", {
-        className: a()(A.kL, n),
+        className: a()(m.kL, n),
         children: [(0, i.jsx)(u.A, {
             guildId: t
         }), (0, i.jsxs)("div", {
-            className: A.$z,
+            className: m.$z,
             children: [(0, i.jsxs)("div", {
-                className: A.wx,
+                className: m.wx,
                 children: [h ? (0, i.jsx)(d.A, {
                     guild: l,
                     tooltipPosition: "bottom",
                     tooltipColor: o.STz.Colors.PRIMARY,
-                    className: A.n2
+                    className: m.n2
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     children: p
@@ -52,7 +52,7 @@ let x = s.memo(e => {
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: null != s ? s : void 0 !== l.approximateMemberCount ? m.intl.format(g.default["5JmNgg"], {
+                children: null != s ? s : void 0 !== l.approximateMemberCount ? A.intl.format(g.default["5JmNgg"], {
                     members: l.approximateMemberCount
                 }) : null
             })]

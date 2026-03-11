@@ -17,8 +17,8 @@ function _(e) {
         guildBoostSlot: t,
         onClose: _,
         hasCancelableGuildBoostSlot: g,
-        premiumSubscription: m,
-        onSelect: A,
+        premiumSubscription: A,
+        onSelect: m,
         fractionalState: h
     } = e, p = {
         transfer: {
@@ -37,7 +37,7 @@ function _(e) {
             disabled: !1
         }
     };
-    switch (m.status) {
+    switch (A.status) {
         case d.Dmq.PAST_DUE:
             p.cancel.disabled = !0, p.cancel.subtext = u.intl.string(u.t.WnL6DV), p.uncancel.disabled = !0;
             break;
@@ -45,7 +45,7 @@ function _(e) {
         case d.Dmq.PAUSED:
             h === c.xc.NONE && (p.transfer.disabled = !0, p.transfer.subtext = u.intl.string(u.t.LiLRRT), p.cancel.subtext = u.intl.string(u.t["1ywaWL"]), p.cancel.disabled = !0, p.uncancel.disabled = !0)
     }
-    let x = s.useMemo(() => m.isPausedOrPausePending && h === c.xc.NONE ? (0, i.jsx)(l.Drp, {
+    let x = s.useMemo(() => A.isPausedOrPausePending && h === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
         action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
@@ -56,10 +56,10 @@ function _(e) {
             type: "icon",
             icon: l.xmO
         }
-    }) : null, [h, m]);
+    }) : null, [h, A]);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
-        onSelect: A,
+        onSelect: m,
         navId: "subscription-context",
         variant: "fixed",
         "aria-label": u.intl.string(u.t.ogxXGq),

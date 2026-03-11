@@ -1,6 +1,6 @@
 /** chunk id: 785048 params = (module,exports,require) **/
 n.d(t, {
-    U: () => A
+    U: () => m
 });
 var i = n(419954),
     s = n(954571),
@@ -13,10 +13,10 @@ var i = n(419954),
     u = n(542457),
     _ = n(355097),
     g = n(652215),
-    m = n(985018);
-let A = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
-    useTitle: () => m.intl.string(m.t["T+nevN"]),
-    useSubtitle: () => m.intl.format(m.t.jXKQCu, {
+    A = n(985018);
+let m = (0, i.zD)(o.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_JOIN_SETTING, {
+    useTitle: () => A.intl.string(A.t["T+nevN"]),
+    useSubtitle: () => A.intl.format(A.t.jXKQCu, {
         helpdeskArticle: l.A.getArticleURL(g.MVz.ACTIVITY_STATUS_SETTINGS)
     }),
     useValue: () => {

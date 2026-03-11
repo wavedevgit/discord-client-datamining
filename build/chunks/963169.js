@@ -1,30 +1,30 @@
 /** chunk id: 963169 params = (module,exports,require) **/
-n.d(t, {
-    MS: () => l,
+n.d(e, {
+    MS: () => s,
     OE: () => o,
     Qb: () => c
 });
 var i = n(73153),
-    a = n(976860),
-    r = n(954571),
-    s = n(652215);
+    r = n(976860),
+    l = n(954571),
+    a = n(652215);
 
-function l() {
+function s() {
     i.h.dispatch({
         type: "ROUTE_CHANGED"
     })
 }
 
-function o(e) {
-    (0, a.TX)() && (r.default.track(s.HAw.APP_BACK_FORWARD_NAVIGATED, {
+function o(t) {
+    (0, r.TX)() && (l.default.track(a.HAw.APP_BACK_FORWARD_NAVIGATED, {
         nav_direction: -1,
-        nav_trigger: e
-    }), (0, a.aX)())
+        nav_trigger: t
+    }), (0, r.aX)())
 }
 
-function c(e) {
-    (0, a.TX)() && (r.default.track(s.HAw.APP_BACK_FORWARD_NAVIGATED, {
+function c(t) {
+    (0, r.TX)() && (l.default.track(a.HAw.APP_BACK_FORWARD_NAVIGATED, {
         nav_direction: 1,
-        nav_trigger: e
-    }), (0, a.sY)())
+        nav_trigger: t
+    }), (0, r.sY)())
 }

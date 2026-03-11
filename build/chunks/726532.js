@@ -1,6 +1,6 @@
 /** chunk id: 726532 params = (module,exports,require) **/
 n.d(t, {
-    i: () => f,
+    i: () => I,
     j: () => b
 });
 var i = n(627968),
@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(59784),
     _ = n(233317),
     g = n(622017),
-    m = n(113090),
-    A = n(752533),
+    A = n(113090),
+    m = n(752533),
     h = n(88001),
     p = n(652215),
     x = n(519412),
@@ -64,13 +64,13 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })]
         })
     },
-    f = e => {
+    I = e => {
         let {
             currentUser: t
         } = e, {
             premiumGroupMembership: s,
             isLoading: l
-        } = (0, m.A)(), {
+        } = (0, A.A)(), {
             premiumGroupMembers: r,
             isLoading: o
         } = (0, g.A)(s?.subscriptionId ?? null);
@@ -79,10 +79,10 @@ let S = () => (0, i.jsxs)(a.BJc, {
             u = s.currentPeriodEnd,
             {
                 primary: _,
-                members: f
+                members: I
             } = r,
             {
-                title: I,
+                title: f,
                 description: b
             } = (() => {
                 switch (s.subscriptionStatus) {
@@ -126,7 +126,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: T.wS,
                 children: [(0, i.jsx)(C, {
-                    title: I,
+                    title: f,
                     description: b,
                     button: (0, i.jsx)(a.Button, {
                         variant: "secondary",
@@ -156,10 +156,10 @@ let S = () => (0, i.jsxs)(a.BJc, {
                         color: "text-strong",
                         className: T.Or,
                         children: E.intl.string(x.default["oqw/KW"])
-                    }), (0, i.jsx)(A.U4, {
+                    }), (0, i.jsx)(m.U4, {
                         user: _,
                         isOwnUser: !1
-                    }), f.map(e => (0, i.jsx)(A.YF, {
+                    }), I.map(e => (0, i.jsx)(m.YF, {
                         user: e,
                         isOwnUser: e.id === t?.id
                     }, e.id))]
@@ -167,7 +167,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             })]
         })
     },
-    I = e => {
+    f = e => {
         let {
             premiumGroupMembers: t,
             isLoadingPremiumGroupMembers: n,
@@ -183,7 +183,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
         let {
             primary: _,
             members: g,
-            invitedUsers: m
+            invitedUsers: A
         } = t;
         return (0, i.jsxs)(a.BJc, {
             direction: "vertical",
@@ -213,18 +213,18 @@ let S = () => (0, i.jsxs)(a.BJc, {
                         totalSeats: d
                     })
                 })]
-            }), (0, i.jsx)(A.U4, {
+            }), (0, i.jsx)(m.U4, {
                 user: _,
                 isOwnUser: !0
-            }), g.map(e => (0, i.jsx)(A.MT, {
+            }), g.map(e => (0, i.jsx)(m.MT, {
                 user: e,
                 onRemove: () => r(e)
-            }, e.id)), m.map(e => (0, i.jsx)(A.Bs, {
+            }, e.id)), A.map(e => (0, i.jsx)(m.Bs, {
                 user: e,
                 onRemove: () => o(e)
             }, e.id)), Array.from({
                 length: u
-            }).map((e, t) => (0, i.jsx)(A.XN, {
+            }).map((e, t) => (0, i.jsx)(m.XN, {
                 onInvite: l,
                 canInvite: s
             }, `seat-available-${t}`))]
@@ -235,18 +235,18 @@ let S = () => (0, i.jsxs)(a.BJc, {
             subscription: t,
             analyticsLocations: c
         } = e, {
-            premiumGroupMembers: m,
-            isLoading: A
+            premiumGroupMembers: A,
+            isLoading: m
         } = (0, g.A)(t.id), {
-            numAvailableInvites: f,
+            numAvailableInvites: I,
             numTotalSeats: b,
             numUsedSeats: N
         } = (0, l.cf)([_.A], () => ({
             numAvailableInvites: _.A.getNumAvailableInvites(),
             numTotalSeats: _.A.getNumTotalSeats(),
             numUsedSeats: _.A.getNumUsedSeats()
-        })), [v, j] = s.useState(!1), {
-            status: O
+        })), [v, O] = s.useState(!1), {
+            status: j
         } = t, R = s.useCallback(() => {
             (0, a.mMO)(async () => {
                 let {
@@ -259,7 +259,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 })
             })
         }, [t, c]), y = s.useCallback(async () => {
-            j(!0), await (0, r.Ir)(t, c), j(!1)
+            O(!0), await (0, r.Ir)(t, c), O(!1)
         }, [t, c]), P = () => {
             o.default.track(p.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_INVITE_CLICKED, {
                 subscription_id: t.id
@@ -272,11 +272,11 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !h.BE.includes(t.status) && f > 0, [t.status, f]), {
+        }, L = s.useMemo(() => !h.BE.includes(t.status) && I > 0, [t.status, I]), {
             title: D,
             description: G
         } = (() => {
-            switch (O) {
+            switch (j) {
                 case p.Dmq.CANCELED:
                     return {
                         title: E.intl.string(x.default.KME8Q6), description: E.intl.format(x.default["1sNA+Y"], {
@@ -343,9 +343,9 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             onClick: R
                         })]
                     })
-                }), (0, i.jsx)(I, {
-                    premiumGroupMembers: m,
-                    isLoadingPremiumGroupMembers: A,
+                }), (0, i.jsx)(f, {
+                    premiumGroupMembers: A,
+                    isLoadingPremiumGroupMembers: m,
                     canInvite: L,
                     onInvite: P,
                     onRemoveMember: e => {
@@ -383,7 +383,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     },
                     numTotalSeats: b,
                     numUsedSeats: N,
-                    numAvailableInvites: f
+                    numAvailableInvites: I
                 })]
             })]
         })

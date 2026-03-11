@@ -14,13 +14,13 @@ var i = n(627968),
     u = n(430452),
     _ = n(780964),
     g = n(825468),
-    m = n(509381),
-    A = n(731854),
+    A = n(509381),
+    m = n(731854),
     h = n(985018);
 let p = !l.Av;
 
 function x() {
-    return (0, a.bG)([u.Ay], () => u.Ay.getMode() === A.TB.PUSH_TO_TALK)
+    return (0, a.bG)([u.Ay], () => u.Ay.getMode() === m.TB.PUSH_TO_TALK)
 }
 let E = (0, c.zD)(_.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
@@ -29,20 +29,20 @@ let E = (0, c.zD)(_.X.VOICE_PUSH_TO_TALK_SETTING, {
     useSubtitle: function() {
         let e = (0, a.bG)([u.Ay], () => u.Ay.getMode());
         return s.useMemo(() => {
-            if (!l.Av && e === A.TB.PUSH_TO_TALK) return h.intl.format(h.t["VHI4+Y"], {
+            if (!l.Av && e === m.TB.PUSH_TO_TALK) return h.intl.format(h.t["VHI4+Y"], {
                 onDownloadClick: () => (0, g._)("Help Text PTT")
             })
         }, [e])
     },
     usePredicate: function() {
-        return (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== m.m.STUDIO)
+        return (0, a.bG)([u.Ay], () => u.Ay.getActiveInputProfile() !== A.m.STUDIO)
     },
     useValue: function() {
-        return (0, a.bG)([u.Ay], () => u.Ay.getMode() === A.TB.PUSH_TO_TALK)
+        return (0, a.bG)([u.Ay], () => u.Ay.getMode() === m.TB.PUSH_TO_TALK)
     },
     setValue: function(e) {
         var t, s;
-        t = e ? A.TB.PUSH_TO_TALK : A.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === A.TB.PUSH_TO_TALK && p && (0, r.openModalLazy)(async () => {
+        t = e ? m.TB.PUSH_TO_TALK : m.TB.VOICE_ACTIVITY, s = [d.A.USER_SETTINGS_VOICE_AND_VIDEO], t === m.TB.PUSH_TO_TALK && p && (0, r.openModalLazy)(async () => {
             let {
                 default: e
             } = await n.e("10919").then(n.bind(n, 556506));

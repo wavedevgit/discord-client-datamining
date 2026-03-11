@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(681819),
     _ = n(882997),
     g = n(954571),
-    m = n(652215),
-    A = n(277816);
+    A = n(652215),
+    m = n(277816);
 let h = e => {
     let {
         disabled: t = !1,
@@ -27,10 +27,10 @@ let h = e => {
     return (0, i.jsx)(a.m, {
         text: E.name,
         children: (0, i.jsx)("div", {
-            className: l()(A.iE, s),
+            className: l()(m.iE, s),
             children: (0, i.jsx)(o.vN3, {
                 children: (0, i.jsx)("button", {
-                    className: l()(A.vW, h),
+                    className: l()(m.vW, h),
                     type: "button",
                     disabled: t,
                     style: {
@@ -41,7 +41,7 @@ let h = e => {
                         return e = c.A.get(n), void((0, _.A)({
                             platformType: e.type,
                             location: "Friends List"
-                        }), g.default.track(m.HAw.ACCOUNT_LINK_STEP, {
+                        }), g.default.track(A.HAw.ACCOUNT_LINK_STEP, {
                             previous_step: "desktop connections",
                             current_step: "desktop oauth",
                             platform_type: e.type

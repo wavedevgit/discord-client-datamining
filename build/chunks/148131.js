@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(390370),
     _ = n(191627),
     g = n(842130),
-    m = n(985018),
-    A = n(487693);
+    A = n(985018),
+    m = n(487693);
 
 function h(e) {
     let {
@@ -32,18 +32,18 @@ function h(e) {
         })
     }, [l, t]);
     return (0, i.jsxs)("div", {
-        className: A.kL,
+        className: m.kL,
         children: [(0, i.jsx)("div", {
-            className: A.zH,
+            className: m.zH,
             children: (0, i.jsx)(u.A, {
                 otherUser: t,
                 status: _.Ef.ACTIVE
             })
         }), (0, i.jsx)("div", {
-            className: A.o1,
+            className: m.o1,
             children: (0, i.jsx)(c.A, {
                 icon: o.PGe,
-                tooltip: m.intl.string(g.default.l20ZZp),
+                tooltip: A.intl.string(g.default.l20ZZp),
                 onClick: h
             })
         })]

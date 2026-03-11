@@ -19,17 +19,17 @@ function _(e) {
         count: l,
         dismissNotice: _,
         className: g,
-        noticeType: m
-    } = e, A = null != _;
+        noticeType: A
+    } = e, m = null != _;
     s.useEffect(() => {
-        (0, o.N)(m, d.YX.VIEWED)
-    }, [m]);
+        (0, o.N)(A, d.YX.VIEWED)
+    }, [A]);
     let h = s.useCallback(() => {
-            null != _ && (_(), (0, o.N)(m, d.YX.DISMISS))
-        }, [m, _]),
+            null != _ && (_(), (0, o.N)(A, d.YX.DISMISS))
+        }, [A, _]),
         p = s.useCallback(() => {
-            n(), (0, o.N)(m, d.YX.LEARN_MORE)
-        }, [m, n]);
+            n(), (0, o.N)(A, d.YX.LEARN_MORE)
+        }, [A, n]);
     return (0, i.jsxs)("div", {
         className: a()(u.I, g),
         children: [(0, i.jsx)(r.mir, {
@@ -49,7 +49,7 @@ function _(e) {
                     children: e
                 }, t)
             })
-        }), A && (0, i.jsx)(r.DUT, {
+        }), m && (0, i.jsx)(r.DUT, {
             className: u.b,
             onClick: h,
             children: (0, i.jsx)(r.PGe, {})

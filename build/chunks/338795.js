@@ -13,8 +13,8 @@ var i = n(934551),
     u = n(782844),
     _ = n(828797),
     g = n(611478),
-    m = n(402089),
-    A = n(281225),
+    A = n(402089),
+    m = n(281225),
     h = n(652215),
     p = n(985018);
 let x = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
@@ -24,7 +24,7 @@ let x = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
                 target_tab_name: u.D.STANDING
             })
         },
-        buildLayout: () => [A.Q]
+        buildLayout: () => [m.Q]
     }),
     E = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
         getTitle: () => p.intl.string(p.t.Am9YHi),
@@ -33,7 +33,7 @@ let x = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
                 target_tab_name: u.D.SECURITY
             })
         },
-        buildLayout: () => [g.P, _.o, m.s]
+        buildLayout: () => [g.P, _.o, A.s]
     }),
     T = (0, a.t_)(c.X.ACCOUNT_PANEL, {
         useTitle: () => p.intl.string(p.t["JAIM/m"]),

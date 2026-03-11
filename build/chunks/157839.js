@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(637073),
     _ = n(398523),
     g = n(612669),
-    m = n(180022),
-    A = n(513570),
+    A = n(180022),
+    m = n(513570),
     h = n(975662),
     p = n(322631),
     x = n(17307),
@@ -52,13 +52,13 @@ let T = e => {
             noBackground: l = !1,
             leftAlignHeaders: S = !1,
             showAllPerksButton: C,
-            headerClassname: f
-        } = e, I = s.useRef(null), b = n === p.cJ.WHATS_NEW, N = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+            headerClassname: I
+        } = e, f = s.useRef(null), b = n === p.cJ.WHATS_NEW, N = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, m.E)();
         s.useEffect(() => {
             b && v()
         }, [v, b]);
-        let j = (0, x.G4)(b),
-            O = (0, h.A)(),
+        let O = (0, x.G4)(b),
+            j = (0, h.A)(),
             R = (0, x.LQ)(),
             {
                 fractionalState: y
@@ -69,7 +69,7 @@ let T = e => {
             }).enabled,
             D = (0, g.O9)(),
             G = (0, x.vx)({
-                perksCards: O,
+                perksCards: j,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
                 isPremiumSubscriber: R,
@@ -81,7 +81,7 @@ let T = e => {
             }),
             M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
-            ref: I,
+            ref: f,
             className: a()(E.uW, {
                 [E.qO]: !S,
                 [E.Uv]: S
@@ -89,8 +89,8 @@ let T = e => {
             children: [(0, i.jsx)(T, {
                 showAllPerksButton: C,
                 leftAlignHeaders: S,
-                title: j.title,
-                headerClassname: f
+                title: O.title,
+                headerClassname: I
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
@@ -102,13 +102,13 @@ let T = e => {
                     [E.dO]: S,
                     [E.br]: !S
                 }),
-                children: j.subtitle
+                children: O.subtitle
             }), !S && null != C && (0, i.jsx)("div", {
                 className: E.xk,
                 children: C
             }), (0, i.jsx)("div", {
                 className: E.Ui,
-                children: G.map((e, t) => (0, i.jsx)(m.A, {
+                children: G.map((e, t) => (0, i.jsx)(A.A, {
                     ...e,
                     forceShadow: l
                 }, `${e.name}_${t}`))

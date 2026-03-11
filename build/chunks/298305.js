@@ -1,78 +1,78 @@
 /** chunk id: 298305 params = (module,exports,require) **/
-i.d(t, {
-    A: () => T
+r.d(t, {
+    A: () => x
 });
-var r = i(627968);
-i(64700);
-var n = i(311907),
-    a = i(397927),
-    s = i(775602),
-    l = i(580314),
-    o = i(674658),
-    c = i(898461),
-    d = i(287809),
-    m = i(504721),
-    u = i(513653),
-    C = i(180391);
+var n = r(627968);
+r(64700);
+var i = r(311907),
+    a = r(397927),
+    s = r(775602),
+    l = r(580314),
+    o = r(674658),
+    c = r(898461),
+    d = r(287809),
+    u = r(504721),
+    m = r(513653),
+    T = r(180391);
 
-function x(e) {
+function g(e) {
     let {
         skuId: t,
-        size: i,
-        src: m,
-        className: u
-    } = e, C = (0, n.bG)([d.default], () => d.default.getCurrentUser()), x = (0, n.bG)([s.A], () => s.A.useReducedMotion), {
-        product: T,
+        size: r,
+        src: u,
+        className: m
+    } = e, T = (0, i.bG)([d.default], () => d.default.getCurrentUser()), g = (0, i.bG)([s.A], () => s.A.useReducedMotion), {
+        product: x,
         isFetching: p
     } = (0, o.q)(t);
-    if (p || null == T) return (0, r.jsx)(a.y$y, {
+    if (p || null == x) return (0, n.jsx)(a.y$y, {
         type: a.tVU.PULSING_ELLIPSIS
     });
-    let g = T.items[0];
-    if (null == g || !(0, c.T)(g)) return null;
-    let I = (0, l.A)({
-        legacyAssetId: g.asset,
-        skuId: g.skuId,
-        size: i,
-        canAnimate: !x
+    let I = x.items[0];
+    if (null == I || !(0, c.T)(I)) return null;
+    let _ = (0, l.A)({
+        legacyAssetId: I.asset,
+        skuId: I.skuId,
+        size: r,
+        canAnimate: !g
     });
-    return (0, r.jsx)(a.JsQ, {
-        "aria-label": C?.username,
-        size: i,
-        className: u,
-        src: m ?? C?.getAvatarURL(void 0, (0, a.FT9)(i), !x),
-        avatarDecoration: I
+    return (0, n.jsx)(a.JsQ, {
+        "aria-label": T?.username,
+        size: r,
+        className: m,
+        src: u ?? T?.getAvatarURL(void 0, (0, a.FT9)(r), !g),
+        avatarDecoration: _
     })
 }
 
-function T(e) {
+function x(e) {
     let {
         maxRewardImageSrc: t,
-        claimableRewards: i,
+        claimableRewards: r,
         size: l,
         imageScaling: o = 1.5
-    } = e, c = (0, n.bG)([d.default], () => d.default.getCurrentUser()), T = (0, n.bG)([s.A], () => s.A.useReducedMotion), p = (0, a.FT9)(l);
-    return i.length > 0 ? (0, r.jsx)("img", {
+    } = e, c = (0, i.bG)([d.default], () => d.default.getCurrentUser()), x = (0, i.bG)([s.A], () => s.A.useReducedMotion), p = (0, a.FT9)(l);
+    return r.length > 0 ? (0, n.jsx)("img", {
         alt: "",
         src: t,
         style: {
             height: p * o
         }
-    }) : (0, r.jsxs)("div", {
-        className: m.kL,
-        children: [(1 === i.length || 2 === i.length) && (0, r.jsx)(x, {
-            skuId: i[0],
+    }) : (0, n.jsxs)("div", {
+        className: u.kL,
+        children: [(1 === r.length || 2 === r.length) && (0, n.jsx)(g, {
+            skuId: r[0],
             size: l,
-            className: m.M8,
-            src: 1 === i.length ? c?.getAvatarURL(void 0, (0, a.FT9)(l), !T) : C
-        }), 2 === i.length && (0, r.jsx)("div", {
+            className: u.M8,
+            src: 1 === r.length ? c?.getAvatarURL(void 0, (0, a.FT9)(l), !x) : T
+        }), 2 === r.length && (0, n.jsx)("div", {
             style: {
                 marginRight: -Math.round(.321 * p)
             },
-            children: (0, r.jsx)(x, {
-                skuId: i[1],
+            children: (0, n.jsx)(g, {
+                skuId: r[1],
                 size: l,
-                src: u
+                src: m
             })
         })]
     })

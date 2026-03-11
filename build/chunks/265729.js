@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(73153),
     _ = n(339048),
     g = n(736653),
-    m = n(46054),
-    A = n(728364),
+    A = n(46054),
+    m = n(728364),
     h = n(807055),
     p = n(264779),
     x = n(35587),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(465794),
     S = n(212168),
     C = n(976860),
-    f = n(287809),
-    I = n(469778),
+    I = n(287809),
+    f = n(469778),
     b = n(45938),
     N = n(927578),
     v = n(780964),
-    j = n(411121),
-    O = n(12901),
+    O = n(411121),
+    j = n(12901),
     R = n(840065),
     y = n(652215),
     P = n(788868),
@@ -43,27 +43,27 @@ function G(e) {
             disabled: o
         } = e,
         [d, u] = s.useState(!1),
-        [_, A] = s.useState(!1),
+        [_, m] = s.useState(!1),
         x = () => u(e => !e),
         T = (0, g.Ay)(),
         S = (0, p.WD)(n.id, T),
         C = null != l,
-        f = (0, h.A)(n, C);
+        I = (0, h.A)(n, C);
     C && d ? t = L.intl.format(L.t.pkxVx6, {
-        endDate: f,
+        endDate: I,
         onClickDetails: x
     }) : C && !d ? t = L.intl.format(L.t["4sFeob"], {
-        endDate: f,
+        endDate: I,
         onClickDetails: x
     }) : !C && d ? t = L.intl.format(L.t["RBnE+l"], {
-        endDate: f,
+        endDate: I,
         onClickDetails: x
     }) : C || d || (t = L.intl.format(L.t["57+7Qn"], {
-        endDate: f,
+        endDate: I,
         onClickDetails: x
     }));
-    let I = C ? L.intl.string(L.t["2cHUti"]) : L.intl.string(L.t.O13yhz),
-        b = s.useCallback(() => A(!1), []),
+    let f = C ? L.intl.string(L.t["2cHUti"]) : L.intl.string(L.t.O13yhz),
+        b = s.useCallback(() => m(!1), []),
         {
             outboundTitle: N,
             outboundTermsAndConditions: v
@@ -94,8 +94,8 @@ function G(e) {
                         })]
                     })]
                 }), !o && (0, i.jsx)(c.Button, {
-                    text: I,
-                    onClick: () => A(!0),
+                    text: f,
+                    onClick: () => m(!0),
                     disabled: o,
                     size: "sm"
                 })]
@@ -103,7 +103,7 @@ function G(e) {
                 className: D.GL,
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: m.A.parse(v, !1, {
+                children: A.A.parse(v, !1, {
                     allowLinks: !0
                 })
             })]
@@ -122,12 +122,12 @@ function G(e) {
 let M = function(e) {
     let {
         inOldSettings: t = !1
-    } = e, n = (0, d.yK)([I.A], () => I.A.getGiftable()), [l, r] = o().partition(n, e => {
+    } = e, n = (0, d.yK)([f.A], () => f.A.getGiftable()), [l, r] = o().partition(n, e => {
         let {
             giftCodeBatchId: t
         } = e;
         return null == t
-    }), g = (0, d.bG)([f.default], () => N.Ay.isPremiumExactly(f.default.getCurrentUser(), P.PremiumTypes.TIER_2)), m = o().groupBy(l, e => (0, b.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [h, p] = s.useState(!1);
+    }), g = (0, d.bG)([I.default], () => N.Ay.isPremiumExactly(I.default.getCurrentUser(), P.PremiumTypes.TIER_2)), A = o().groupBy(l, e => (0, b.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [h, p] = s.useState(!1);
     s.useEffect(() => {
         u.h.wait(() => {
             (0, _.XJ)().then(() => p(!0))
@@ -139,7 +139,7 @@ let M = function(e) {
         claimedEndedOutboundPromotions: U,
         claimedOutboundPromotionCodeMap: k,
         addClaimedOutboundPromotionCode: V
-    } = (0, x.y7)(), w = M.length + U.length > 0, H = A.m.useExperiment({
+    } = (0, x.y7)(), w = M.length + U.length > 0, H = m.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
@@ -170,7 +170,7 @@ let M = function(e) {
                         className: D.Qw,
                         children: L.intl.format(L.t.G4fwxK, {
                             onClick: () => {
-                                (0, O.default)(), (0, C.pX)(y.BVt.APPLICATION_STORE)
+                                (0, j.default)(), (0, C.pX)(y.BVt.APPLICATION_STORE)
                             }
                         })
                     }), (0, i.jsx)(T.A, {
@@ -211,19 +211,19 @@ let M = function(e) {
                             code: k[e.id],
                             addClaimedOutboundPromotionCode: V,
                             disabled: !g
-                        }, e.id)), null != e ? (0, i.jsx)(j.A, {
+                        }, e.id)), null != e ? (0, i.jsx)(O.A, {
                             className: D.uI,
                             skuId: e.skuId,
                             subscriptionPlanId: e.subscriptionPlanId,
                             entitlements: [e],
                             giftCodeBatchId: P.FB
-                        }, (0, b.Kx)(e.skuId, e.subscriptionPlanId)) : null, s.length > 0 ? (0, i.jsx)(j.A, {
+                        }, (0, b.Kx)(e.skuId, e.subscriptionPlanId)) : null, s.length > 0 ? (0, i.jsx)(O.A, {
                             className: D.uI,
                             skuId: s[0].skuId,
                             subscriptionPlanId: s[0].subscriptionPlanId,
                             entitlements: s,
                             giftCodeBatchId: P.Bu
-                        }, (0, b.Kx)(s[0].skuId, s[0].subscriptionPlanId)) : null, l.length > 0 ? (0, i.jsx)(j.A, {
+                        }, (0, b.Kx)(s[0].skuId, s[0].subscriptionPlanId)) : null, l.length > 0 ? (0, i.jsx)(O.A, {
                             className: D.uI,
                             skuId: l[0].skuId,
                             subscriptionPlanId: l[0].subscriptionPlanId,
@@ -242,7 +242,7 @@ let M = function(e) {
                 }),
                 children: [(0, i.jsx)(c.cGx, {
                     className: D.yF
-                }), 0 === Object.keys(m).length ? (0, i.jsxs)("div", {
+                }), 0 === Object.keys(A).length ? (0, i.jsxs)("div", {
                     className: D.p$,
                     children: [(0, i.jsx)("div", {
                         className: D.QT
@@ -259,17 +259,17 @@ let M = function(e) {
                             }
                         })
                     })]
-                }) : o().keys(m).map(e => {
+                }) : o().keys(A).map(e => {
                     let {
                         skuId: t,
                         subscriptionPlanId: n,
                         giftStyle: s
                     } = (0, b.X6)(e);
-                    return (0, i.jsx)(j.A, {
+                    return (0, i.jsx)(O.A, {
                         className: D.uI,
                         skuId: t,
                         subscriptionPlanId: n,
-                        entitlements: m[e],
+                        entitlements: A[e],
                         giftStyle: s
                     }, e)
                 })]

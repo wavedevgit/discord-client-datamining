@@ -1,8 +1,8 @@
 /** chunk id: 585510 params = (module,exports,require) **/
 n.d(t, {
     Li: () => I,
-    _g: () => p,
-    dj: () => N
+    _g: () => N,
+    dj: () => p
 });
 var i = n(136722),
     l = n(417597),
@@ -34,7 +34,7 @@ function I(e) {
     }
 }
 
-function N() {
+function p() {
     let e = function(e) {
             let t = c.default.getCurrentUser(),
                 n = T.A.getIncidentsByGuild();
@@ -58,7 +58,7 @@ function N() {
     }
 }
 
-function p(e) {
+function N(e) {
     return (0, l.bG)([a.A, s.A], () => {
         let t = s.A.getGuild(e);
         return (0, _.nc)(t, a.A)

@@ -1,64 +1,64 @@
 /** chunk id: 495565 params = (module,exports,require) **/
-a.d(t, {
-    r: () => l
-}), a(321073);
-var n = a(64700),
-    r = a(575593),
-    i = a(985018);
-let s = function(e) {
+n.d(t, {
+    r: () => s
+}), n(321073);
+var r = n(64700),
+    i = n(575593),
+    a = n(985018);
+let l = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        if (t) return i.intl.formatToPlainString(i.t["/0Yndu"], {
+        if (t) return a.intl.formatToPlainString(a.t["/0Yndu"], {
             num: e.bundledProducts?.length
         });
-        let a = e.bundledProducts ?? [],
-            n = [],
-            s = !1;
-        for (let e of a) switch (e.type) {
-            case r.R.AVATAR_DECORATION:
-                n.push(i.intl.formatToPlainString(i.t.Ntv9Jt, {
+        let n = e.bundledProducts ?? [],
+            r = [],
+            l = !1;
+        for (let e of n) switch (e.type) {
+            case i.R.AVATAR_DECORATION:
+                r.push(a.intl.formatToPlainString(a.t.Ntv9Jt, {
                     itemName: e.name
                 }));
                 break;
-            case r.R.PROFILE_EFFECT:
-                n.push(i.intl.formatToPlainString(i.t["3Y8q7a"], {
+            case i.R.PROFILE_EFFECT:
+                r.push(a.intl.formatToPlainString(a.t["3Y8q7a"], {
                     itemName: e.name
                 }));
                 break;
-            case r.R.NAMEPLATE:
-                n.push(i.intl.formatToPlainString(i.t["2keXky"], {
+            case i.R.NAMEPLATE:
+                r.push(a.intl.formatToPlainString(a.t["2keXky"], {
                     itemName: e.name
-                })), s = !0
+                })), l = !0
         }
-        if (s) {
-            let e = n.join(", ").replace(/, ([^,]*)$/, " & $1");
-            return i.intl.formatToPlainString(i.t.Ofrqj6, {
+        if (l) {
+            let e = r.join(", ").replace(/, ([^,]*)$/, " & $1");
+            return a.intl.formatToPlainString(a.t.Ofrqj6, {
                 joinedItems: e
             })
         }
-        let l = n.join(" & ");
-        return i.intl.formatToPlainString(i.t.Ofrqj6, {
-            joinedItems: l
+        let s = r.join(" & ");
+        return a.intl.formatToPlainString(a.t.Ofrqj6, {
+            joinedItems: s
         })
     },
-    l = function(e) {
+    s = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        return (0, n.useMemo)(() => {
+        return (0, r.useMemo)(() => {
             if (null != e && null != e.summary && "" !== e.summary) {
-                if (e.type === r.R.BUNDLE && e.summary.includes("{joinedItems}")) {
-                    let a = s(e, t);
-                    return e.summary.replace("{joinedItems}", a)
+                if (e.type === i.R.BUNDLE && e.summary.includes("{joinedItems}")) {
+                    let n = l(e, t);
+                    return e.summary.replace("{joinedItems}", n)
                 }
                 return e.summary
             }
             switch (e?.type) {
-                case r.R.AVATAR_DECORATION:
-                    return i.intl.string(i.t["3lv7q2"]);
-                case r.R.PROFILE_EFFECT:
-                    return i.intl.string(i.t.VhJL72);
-                case r.R.NAMEPLATE:
-                    return i.intl.string(i.t.ik37EZ);
-                case r.R.BUNDLE:
-                    return s(e, t);
+                case i.R.AVATAR_DECORATION:
+                    return a.intl.string(a.t["3lv7q2"]);
+                case i.R.PROFILE_EFFECT:
+                    return a.intl.string(a.t.VhJL72);
+                case i.R.NAMEPLATE:
+                    return a.intl.string(a.t.ik37EZ);
+                case i.R.BUNDLE:
+                    return l(e, t);
                 default:
                     return ""
             }

@@ -1,6 +1,6 @@
 /** chunk id: 965591 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -14,12 +14,12 @@ var s = n(503698),
     u = n(473702),
     _ = n(985018),
     g = n(312275),
-    m = n(67423);
-let A = function(e) {
+    A = n(67423);
+let m = function(e) {
     let {
         isVisible: t,
         premiumSubscription: s,
-        churnDiscountOffer: A,
+        churnDiscountOffer: m,
         discountedPrice: h
     } = e, {
         analyticsLocations: p
@@ -40,7 +40,7 @@ let A = function(e) {
             className: g.iJ,
             children: [(0, i.jsx)("img", {
                 alt: "",
-                src: m,
+                src: A,
                 className: g.oU
             }), (0, i.jsxs)("div", {
                 className: g.iQ,
@@ -48,15 +48,15 @@ let A = function(e) {
                     variant: "heading-md/semibold",
                     color: "text-strong",
                     children: _.intl.format(_.t["3yZP0G"], {
-                        percent: A.discount.amount
+                        percent: m.discount.amount
                     })
                 }), (0, i.jsx)(r.Text, {
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: _.intl.format(_.t["3Q4wCy"], {
-                        numMonths: A.discount.user_usage_limit,
+                        numMonths: m.discount.user_usage_limit,
                         discountedPrice: h,
-                        billingPeriod: (0, c.Ke)(A.discount.user_usage_limit_interval)
+                        billingPeriod: (0, c.Ke)(m.discount.user_usage_limit_interval)
                     })
                 })]
             }), (0, i.jsx)(r.Button, {

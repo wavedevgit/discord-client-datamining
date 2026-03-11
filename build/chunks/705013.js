@@ -1,6 +1,6 @@
 /** chunk id: 705013 params = (module,exports,require) **/
 n.d(t, {
-    H: () => A
+    H: () => m
 });
 var i = n(419954),
     s = n(954571),
@@ -13,10 +13,10 @@ var i = n(419954),
     u = n(355097),
     _ = n(652215),
     g = n(985018),
-    m = n(536482);
-let A = (0, i.zD)(r.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
-    useTitle: () => g.intl.string(m.default.WhdCGP),
-    useSubtitle: () => g.intl.string(m.default.UQ9RHJ),
+    A = n(536482);
+let m = (0, i.zD)(r.X.CONTENT_AND_SOCIAL_PERMISSIONS_ACTIVITY_SHARE_SETTING, {
+    useTitle: () => g.intl.string(A.default.WhdCGP),
+    useSubtitle: () => g.intl.string(A.default.UQ9RHJ),
     useValue: () => {
         let e = (0, d.Tx)();
         return !a.JG.useSetting().includes(e)

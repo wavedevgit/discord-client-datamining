@@ -18,9 +18,9 @@ let f = "ease-in-out",
     p = Array.from({
         length: 5
     }, (e, t) => t),
-    N = [2, 2, 5, 2, 2],
-    A = [3, 3, 10, 6, 3],
-    E = [3, 3, 7, 12, 6],
+    E = [2, 2, 5, 2, 2],
+    N = [3, 3, 10, 6, 3],
+    A = [3, 3, 7, 12, 6],
     x = [3, 3, 5, 10, 16],
     T = [3, 3, 8, 13, 7],
     v = [4, 6, 12, 9, 6],
@@ -29,19 +29,19 @@ let f = "ease-in-out",
     R = "M16.5 18H16a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-.5v-.5a2.5 2.5 0 0 0-5 0v.5Zm3.5 0v-.5a1 1 0 1 0-2 0v.5h2Z",
     y = `translate(${12.33-15*S}, ${1-15.5*S}) scale(${S})`;
 
-function C(e, t) {
+function D(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m,
         l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2,
         i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 16;
     for (let a = 0; a < 5; a++) {
         let s = n[a],
-            r = D(-t, t);
+            r = C(-t, t);
         e[a] = Math.max(l, Math.min(i, s + r))
     }
     return e
 }
 
-function D(e, t) {
+function C(e, t) {
     return Math.random() * (t - e) + e
 }
 let M = {
@@ -53,15 +53,15 @@ let M = {
         },
         states: {
             burst: {
-                getHeights: e => C(e, 4),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(3e3, 6e3),
+                getHeights: e => D(e, 4),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => C(e, 3),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(1e3, 3e3),
+                getHeights: e => D(e, 3),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
             }
         }
@@ -77,59 +77,59 @@ let M = {
                 getHeights: e => (function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 2,
                         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 2;
-                    for (let l = 0; l < 5; l++) e[l] = n + D(0, t);
+                    for (let l = 0; l < 5; l++) e[l] = n + C(0, t);
                     return e
                 })(e),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildCenter"
             },
             waveBuildCenter: {
-                getHeights: e => C(e, 3, N),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getHeights: e => D(e, 3, E),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildRight1"
             },
             waveBuildRight1: {
-                getHeights: e => C(e, 4, A, 1),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getHeights: e => D(e, 4, N, 1),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildRight2"
             },
             waveBuildRight2: {
-                getHeights: e => C(e, 4, E, 1),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getHeights: e => D(e, 4, A, 1),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "wavePeakRight"
             },
             wavePeakRight: {
-                getHeights: e => C(e, 4, x, 1),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getHeights: e => D(e, 4, x, 1),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "waveReturnLeft1"
             },
             waveReturnLeft1: {
-                getHeights: e => C(e, 5, T),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getHeights: e => D(e, 5, T),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "waveReturnLeft2"
             },
             waveReturnLeft2: {
-                getHeights: e => C(e, 5, v),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(32, 64),
+                getHeights: e => D(e, 5, v),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(32, 64),
                 getNextState: () => "burst"
             },
             burst: {
-                getHeights: e => C(e, 4),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(3e3, 6e3),
+                getHeights: e => D(e, 4),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => C(e, 3),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(1e3, 3e3),
+                getHeights: e => D(e, 3),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
             }
         }
@@ -142,15 +142,15 @@ let M = {
         },
         states: {
             burst: {
-                getHeights: e => C(e, 7, b),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(3e3, 6e3),
+                getHeights: e => D(e, 7, b),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => C(e, 4, b),
-                getAnimationDelay: () => D(64, 128),
-                getStateDuration: () => D(1e3, 3e3),
+                getHeights: e => D(e, 4, b),
+                getAnimationDelay: () => C(64, 128),
+                getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
             }
         }
@@ -188,40 +188,40 @@ function I(e) {
             className: c,
             animationStyle: f = h.s.GENTLE_AMBIENT,
             iconSize: m = 20,
-            locked: N = !1
+            locked: E = !1
         } = e,
-        A = i.useId(),
-        E = (0, o.bG)([d.A], () => d.A.isAppFocused()),
+        N = i.useId(),
+        A = (0, o.bG)([d.A], () => d.A.isAppFocused()),
         [x, T] = i.useState(!1),
         v = i.useCallback(e => {
             T(t => t !== e ? e : t)
         }, []),
         b = (0, r.K)(v, .15),
         S = i.useRef([, , , , , ].fill(0)),
-        C = M[f],
-        D = !E || !x,
+        D = M[f],
+        C = !A || !x,
         I = (m - 18) / 2,
-        _ = D ? 0 : C.transitionConfig.durationMs,
+        _ = C ? 0 : D.transitionConfig.durationMs,
         L = i.useRef(null),
         w = i.useMemo(() => ({
             transitionProperty: "transform",
             transitionDuration: `${_}ms`,
-            transitionTimingFunction: C.transitionConfig.timingFunction
-        }), [C.transitionConfig.timingFunction, _]),
-        k = i.useMemo(() => ({
+            transitionTimingFunction: D.transitionConfig.timingFunction
+        }), [D.transitionConfig.timingFunction, _]),
+        G = i.useMemo(() => ({
             ...w,
             width: 2,
             height: 16,
             backgroundColor: u
         }), [w, u]),
-        G = i.useMemo(() => ({
+        O = i.useMemo(() => ({
             left: I,
             top: (m - 16) / 2,
             width: 18,
             height: 16,
             columnGap: 2
         }), [m, I, 18]),
-        O = i.useCallback(e => {
+        P = i.useCallback(e => {
             let t = L.current;
             if (null == t) return;
             let n = t.children;
@@ -234,10 +234,10 @@ function I(e) {
             }
         }, [L]);
     i.useLayoutEffect(() => {
-        D || O(C.states[C.firstState].getHeights(S.current))
-    }, [O, C, D]), t = i.useRef(C.firstState), n = i.useRef(null), a = !D, i.useEffect(() => {
+        C || P(D.states[D.firstState].getHeights(S.current))
+    }, [P, D, C]), t = i.useRef(D.firstState), n = i.useRef(null), a = !C, i.useEffect(() => {
         if (!a) return;
-        t.current = C.firstState, n.current = null;
+        t.current = D.firstState, n.current = null;
         let e = null,
             l = !1;
         n.current = {
@@ -263,14 +263,14 @@ function I(e) {
                 if (l) return;
                 e = null, i.now = Date.now();
                 let n = t.current,
-                    a = C.states[n];
+                    a = D.states[n];
                 if (null == a) {
-                    t.current = C.firstState, r(0);
+                    t.current = D.firstState, r(0);
                     return
                 }
                 try {
                     let e = a.getHeights(S.current);
-                    O(e)
+                    P(e)
                 } catch (e) {
                     l = !0;
                     return
@@ -278,17 +278,17 @@ function I(e) {
                 if (0 === i.stateEndTime || i.now >= i.stateEndTime) {
                     let e = a.getNextState();
                     t.current = e;
-                    let n = C.states[e];
+                    let n = D.states[e];
                     null != n && s(n)
                 }
                 r(a.getAnimationDelay())
             },
-            c = C.states[t.current];
+            c = D.states[t.current];
         return null != c && s(c), r(0), () => {
             l = !0, o()
         }
-    }, [O, a, C, S]);
-    let P = N ? `url(#${A})` : void 0;
+    }, [P, a, D, S]);
+    let k = E ? `url(#${N})` : void 0;
     return (0, l.jsx)("span", {
         ref: b,
         className: s()(c, g.Aj),
@@ -299,10 +299,10 @@ function I(e) {
             fill: "none",
             children: [(0, l.jsx)(j, {
                 iconSize: m,
-                locked: N,
-                maskId: A
+                locked: E,
+                maskId: N
             }), (0, l.jsx)("g", {
-                mask: P,
+                mask: k,
                 children: (0, l.jsx)("foreignObject", {
                     x: 0,
                     y: 0,
@@ -313,15 +313,15 @@ function I(e) {
                         children: (0, l.jsx)("div", {
                             ref: L,
                             className: g.Gb,
-                            style: G,
+                            style: O,
                             children: p.map(e => (0, l.jsx)("div", {
                                 className: g.M0,
-                                style: k
+                                style: G
                             }, e))
                         })
                     })
                 })
-            }), N && (0, l.jsx)("path", {
+            }), E && (0, l.jsx)("path", {
                 d: R,
                 transform: y,
                 fill: u,

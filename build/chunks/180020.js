@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(159001),
     _ = n(954571),
     g = n(927578),
-    m = n(919395),
-    A = n(128450),
+    A = n(919395),
+    m = n(128450),
     h = n(652215),
     p = n(49999),
     x = n(985018),
@@ -27,23 +27,23 @@ function S(e) {
         guildId: n,
         className: S
     } = e, C = g.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: f
+        analyticsLocations: I
     } = (0, o.Ay)(), {
-        userDisplayNameStyles: I,
+        userDisplayNameStyles: f,
         guildDisplayNameStyles: b,
         pendingDisplayNameStyles: N,
         pendingErrors: v
-    } = (0, m.B0)(t, n), [j, O] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = j === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
-        O(p.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
-            analyticsLocations: f,
+    } = (0, A.B0)(t, n), [O, j] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = O === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
+        j(p.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
+            analyticsLocations: I,
             guildId: n
         })
-    }, [f, O, n]), P = (0, s.useCallback)(() => {
+    }, [I, j, n]), P = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), L = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), D = void 0 !== N || (null != n ? null != b : null != I);
-    return (0, i.jsx)(A.A, {
+    }, []), D = void 0 !== N || (null != n ? null != b : null != f);
+    return (0, i.jsx)(m.A, {
         title: x.intl.string(E.default["86GtGH"]),
         titleIcon: R ? (0, i.jsx)(a.LpS, {
             text: x.intl.string(x.t.y2b7CA),

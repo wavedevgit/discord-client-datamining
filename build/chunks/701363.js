@@ -26,8 +26,8 @@ var l = n(627968),
     T = n(308528),
     v = n(442433),
     S = n(960076),
-    _ = n(397244),
-    C = n(714114),
+    C = n(397244),
+    _ = n(714114),
     j = n(729551),
     y = n(709066),
     I = n(262295),
@@ -211,7 +211,7 @@ function eA(e) {
         user: r,
         activities: h,
         applicationStream: N,
-        voiceChannel: C,
+        voiceChannel: _,
         isTyping: q,
         status: B,
         isMobile: K,
@@ -222,8 +222,8 @@ function eA(e) {
         "aria-setsize": en
     } = e, [em, eA] = s.useState(!1), [ep, ef] = s.useState(!1), [eh, eE] = s.useState(!1), ex = s.useRef(null), [eN, eg] = s.useState(!1), eT = (0, m.K)(s.useCallback(e => {
         eg(e)
-    }, [])), ev = s.useRef(null), eS = ee ?? ev, e_ = (0, A.A)(eS, eT), {
-        showMenuItemPopover: eC,
+    }, [])), ev = s.useRef(null), eS = ee ?? ev, eC = (0, A.A)(eS, eT), {
+        showMenuItemPopover: e_,
         markMenuItemPopoverAsDismissed: ej
     } = (0, k.z)({
         location: "PrivateChannel",
@@ -373,7 +373,7 @@ function eA(e) {
                     focusTarget: ex,
                     ringTarget: eS
                 },
-                ref: e_,
+                ref: eC,
                 onMouseEnter: eW,
                 onMouseLeave: eK,
                 onMouseDown: eZ,
@@ -456,15 +456,15 @@ function eA(e) {
                                 children: es.intl.format(es.t.CxSA5N, {
                                     members: t.recipients.length + 1
                                 })
-                            }) : (0, _.A)({
+                            }) : (0, C.A)({
                                 activities: h,
                                 status: B,
                                 applicationStream: N,
-                                voiceChannel: C
+                                voiceChannel: _
                             }) ? (0, l.jsx)(j.A, {
                                 user: r,
                                 activities: h,
-                                voiceChannel: C,
+                                voiceChannel: _,
                                 applicationStream: N,
                                 animateEmoji: em || ep || eh,
                                 textClassName: ea.XD,
@@ -501,7 +501,7 @@ function eA(e) {
                             visibleElementRef: ez
                         }) : null]
                     })]
-                }), eC && (0, l.jsx)(P.A, {
+                }), e_ && (0, l.jsx)(P.A, {
                     targetElementRef: eS,
                     markMenuItemPopoverAsDismissed: ej
                 })]
@@ -529,7 +529,7 @@ let ep = 21552 == n.j ? e => {
         }
     }, [t, i]), {
         voiceChannel: o
-    } = (0, C.A)({
+    } = (0, _.A)({
         userId: i
     }), u = (0, q.r)({
         user: a

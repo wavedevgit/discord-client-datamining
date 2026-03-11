@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(406274),
     _ = n(871930),
     g = n(578746),
-    m = n(531525),
-    A = n(985018);
+    A = n(531525),
+    m = n(985018);
 
 function h() {
     let e = (0, d.hT)(),
@@ -28,12 +28,12 @@ function h() {
             }) : c.Qe.updateSetting(e)
         }, [n]);
     return (0, i.jsx)(_.h, {
-        setting: m.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_APPS_V2,
+        setting: A.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_APPS_V2,
         children: (0, i.jsx)(g.Ay, {
             value: e,
             onChange: x,
-            title: A.intl.string(A.t.XahVjj),
-            note: A.intl.string(A.t.R9fXyS),
+            title: m.intl.string(m.t.XahVjj),
+            note: m.intl.string(m.t.R9fXyS),
             disabled: p
         })
     })

@@ -9,11 +9,11 @@ var r = n(627968),
     s = n.n(a),
     l = n(490249),
     o = n(110259),
-    u = n(158954),
-    c = n(397927),
+    c = n(158954),
+    u = n(397927),
     d = n(97469),
-    f = n(538029),
-    m = n(22789);
+    m = n(538029),
+    f = n(22789);
 
 function g(e) {
     let {
@@ -22,43 +22,43 @@ function g(e) {
         returnRef: a,
         "aria-label": g,
         onClose: h,
-        trackingProps: y,
-        children: p
-    } = e, v = i.useId(), x = i.useMemo(() => ({
-        id: v,
-        headingId: `heading-${v}`,
+        trackingProps: p,
+        children: y
+    } = e, _ = i.useId(), x = i.useMemo(() => ({
+        id: _,
+        headingId: `heading-${_}`,
         onClose: h,
         dismissable: !0
-    }), [v, h]), b = (0, d.NC)(), {
-        theme: A
-    } = (0, c.wRf)(), _ = (0, u.kSI)(t, n);
-    return (0, r.jsx)(u.Vs9.Provider, {
+    }), [_, h]), v = (0, d.NC)(), {
+        theme: b
+    } = (0, u.wRf)(), A = (0, c.kSI)(t, n);
+    return (0, r.jsx)(c.Vs9.Provider, {
         value: x,
-        children: (0, r.jsx)(c.lGe, {
-            id: v,
+        children: (0, r.jsx)(u.lGe, {
+            id: _,
             role: "dialog",
             "aria-label": g,
             "aria-labelledby": null != g ? void 0 : x.headingId,
             returnRef: a,
-            ...y,
-            impressionType: y?.impressionType ?? o.ImpressionTypes.MODAL,
-            children: (0, r.jsx)(u.Fmo, {
+            ...p,
+            impressionType: p?.impressionType ?? o.ImpressionTypes.MODAL,
+            children: (0, r.jsx)(c.Fmo, {
                 forceLevel: 1,
                 children: (0, r.jsx)("div", {
-                    className: f.nw,
-                    children: (0, r.jsx)(c.NPJ, {
-                        theme: b,
+                    className: m.nw,
+                    children: (0, r.jsx)(u.NPJ, {
+                        theme: v,
                         children: e => (0, r.jsx)(l.animated.div, {
                             "data-mana-component": "layer-modal",
-                            className: s()(m.container, f.yl, e),
-                            style: _,
+                            className: s()(f.container, m.yl, e),
+                            style: A,
                             children: (0, r.jsx)("div", {
-                                className: f.jE,
-                                children: (0, r.jsx)(c.NPJ, {
-                                    theme: A,
+                                className: m.jE,
+                                children: (0, r.jsx)(u.NPJ, {
+                                    theme: b,
                                     children: e => (0, r.jsx)("div", {
-                                        className: s()(e, f.h_),
-                                        children: p
+                                        className: s()(e, m.h_),
+                                        children: y
                                     })
                                 })
                             })

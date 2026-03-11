@@ -18,8 +18,8 @@ let g = e => {
         containerVisibilityPercentage: n,
         boltContainerClassName: s,
         carContainerClassName: g,
-        hammerContainerClassName: m,
-        keyContainerClassName: A,
+        hammerContainerClassName: A,
+        keyContainerClassName: m,
         starContainerClassName: h,
         boltAssetClassName: p,
         carAssetClassName: x,
@@ -85,8 +85,8 @@ let g = e => {
                     alt: ""
                 })
             })
-        }), null != m && (0, i.jsx)("div", {
-            className: l()(r.Gj, m),
+        }), null != A && (0, i.jsx)("div", {
+            className: l()(r.Gj, A),
             children: (0, i.jsx)(a.Ay, {
                 yAxisAnimationData: {
                     range: 15,
@@ -108,8 +108,8 @@ let g = e => {
                     alt: ""
                 })
             })
-        }), null != A && (0, i.jsx)("div", {
-            className: l()(r.FV, A),
+        }), null != m && (0, i.jsx)("div", {
+            className: l()(r.FV, m),
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 5,

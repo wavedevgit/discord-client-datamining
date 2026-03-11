@@ -1,6 +1,6 @@
 /** chunk id: 641324 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => f
 });
 var i = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var s = n(963935),
     u = n(915953),
     _ = n(39216),
     g = n(43146),
-    m = n(112715),
-    A = n(39043),
+    A = n(112715),
+    m = n(39043),
     h = n(743961),
     p = n(896005),
     x = n(388773),
@@ -24,11 +24,11 @@ var s = n(963935),
     S = n(182884),
     C = n(115617);
 
-function f(e) {
+function I(e) {
     let {
         node: t
     } = e;
-    switch ((0, m.Z)(t.initialize), t.type) {
+    switch ((0, A.Z)(t.initialize), t.type) {
         case s.Z6.ROOT:
         case s.Z6.SECTION:
         case s.Z6.SIDEBAR_ITEM:
@@ -55,7 +55,7 @@ function f(e) {
                 node: t
             });
         case s.Z6.ACCORDION:
-            return (0, i.jsx)(A.A, {
+            return (0, i.jsx)(m.A, {
                 node: t
             });
         case s.Z6.SPLIT:
@@ -101,15 +101,15 @@ function f(e) {
     }
 }
 
-function I(e) {
+function f(e) {
     let {
         node: t
     } = e;
-    return t.type === s.Z6.PANEL ? (0, i.jsx)(f, {
+    return t.type === s.Z6.PANEL ? (0, i.jsx)(I, {
         node: t
     }) : (0, i.jsx)(l.A, {
         node: t,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(I, {
             node: t
         })
     })

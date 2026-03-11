@@ -4,10 +4,10 @@ n.d(t, {
 });
 var a = n(627968),
     i = n(64700),
-    l = n(158954),
-    r = n(311907),
-    s = n(562465),
-    o = n(732955),
+    r = n(158954),
+    s = n(311907),
+    o = n(562465),
+    l = n(732955),
     c = n(843472),
     d = n(608299),
     u = n(425059),
@@ -19,12 +19,12 @@ var a = n(627968),
     h = n(320501),
     g = n(453771),
     A = n(661191),
-    T = n(292348),
-    x = n(518960),
-    I = n(382287),
-    C = n(853742),
-    E = n(835369),
-    S = n(218152),
+    x = n(292348),
+    T = n(518960),
+    C = n(382287),
+    I = n(853742),
+    S = n(835369),
+    E = n(218152),
     y = n(652215),
     v = n(818348),
     j = n(985018),
@@ -34,16 +34,16 @@ async function R(e) {
             thread: n,
             attachments: a,
             setIsUploading: i,
-            guild: l,
-            onClose: r
+            guild: r,
+            onClose: s
         } = e,
-        o = A.default.castChannelIdAsMessageId(n.id),
+        l = A.default.castChannelIdAsMessageId(n.id),
         m = new u.A;
     m.on("progress", e => {
-        let t = (0, g.o2)(l.id);
-        e.currentSize > t && (m.cancel(), i(!1), r(), (0, x.V)(n, (0, I.LJ)(a)))
+        let t = (0, g.o2)(r.id);
+        e.currentSize > t && (m.cancel(), i(!1), s(), (0, T.V)(n, (0, C.LJ)(a)))
     });
-    let p = h.A.getMessage(n.id, o),
+    let p = h.A.getMessage(n.id, l),
         b = null != p ? p.attachments : [];
     i(!0);
     try {
@@ -52,17 +52,17 @@ async function R(e) {
         i(!1);
         return
     }
-    let C = [...b, ...t.map((e, t) => (0, T.OW)(e, t)) ?? []];
+    let I = [...b, ...t.map((e, t) => (0, x.OW)(e, t)) ?? []];
     try {
-        await s.Bo.patch({
-            url: y.Rsh.MESSAGE(n.id, o),
+        await o.Bo.patch({
+            url: y.Rsh.MESSAGE(n.id, l),
             body: {
-                attachments: C
+                attachments: I
             },
             rejectWithError: !1
-        }), r(), d.A.clearAll(n.id, f.C.ChannelMessage)
+        }), s(), d.A.clearAll(n.id, f.C.ChannelMessage)
     } catch (e) {
-        i(!1), e.body?.code === y.t02.EXPLICIT_CONTENT && (r(), c.A.sendExplicitMediaClydeError(n.id, e.body?.attachments, _.SW.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), d.A.clearAll(n.id, f.C.ChannelMessage))
+        i(!1), e.body?.code === y.t02.EXPLICIT_CONTENT && (s(), c.A.sendExplicitMediaClydeError(n.id, e.body?.attachments, _.SW.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), d.A.clearAll(n.id, f.C.ChannelMessage))
     }
 }
 
@@ -70,66 +70,66 @@ function N(e) {
     let {
         threadId: t,
         attachments: n,
-        sendMessage: s,
+        sendMessage: o,
         transitionState: c,
         onClose: d
-    } = e, u = (0, r.bG)([p.A], () => p.A.getChannel(t), [t]), _ = (0, r.bG)([b.A], () => b.A.getGuild(u?.getGuildId()), [u]), f = (0, r.bG)([p.A], () => p.A.getChannel(u?.parent_id), [u]), h = n[0]?.item, [g, A] = i.useState(null);
+    } = e, u = (0, s.bG)([p.A], () => p.A.getChannel(t), [t]), _ = (0, s.bG)([b.A], () => b.A.getGuild(u?.getGuildId()), [u]), f = (0, s.bG)([p.A], () => p.A.getChannel(u?.parent_id), [u]), h = n[0]?.item, [g, A] = i.useState(null);
     i.useEffect(() => {
         null != h && (0, m.JF)(h.file, (e, t) => A(e), v.tE)
     }, [h]);
-    let T = null != h && null != g ? {
+    let x = null != h && null != g ? {
             src: g,
-            width: E.T5,
-            height: E.Co,
+            width: S.T5,
+            height: S.Co,
             spoiler: n[0].spoiler,
             alt: n[0].description
         } : null,
-        [x, I] = i.useState(!1),
+        [T, C] = i.useState(!1),
         y = i.useCallback(() => {
-            (0, C.jh)({
+            (0, I.jh)({
                 added: !1
-            }), s(), d()
-        }, [s, d]),
+            }), o(), d()
+        }, [o, d]),
         N = i.useCallback(() => {
-            null != u && null != _ && ((0, C.jh)({
+            null != u && null != _ && ((0, I.jh)({
                 added: !0
             }), R({
                 thread: u,
                 attachments: n,
-                setIsUploading: I,
+                setIsUploading: C,
                 guild: _,
                 onClose: d
             }))
-        }, [u, n, I, _, d]);
-    return null == f ? null : (0, a.jsx)(l.Modal, {
+        }, [u, n, C, _, d]);
+    return null == f ? null : (0, a.jsx)(r.Modal, {
         title: j.intl.string(j.t["+SZF6S"]),
         subtitle: j.intl.string(j.t["0Ycgw5"]),
         transitionState: c,
         onClose: d,
-        actionBarInput: (0, a.jsx)(o.QWc, {
+        actionBarInput: (0, a.jsx)(l.QWc, {
             variant: "secondary",
-            disabled: x,
+            disabled: T,
             onClick: d,
             text: j.intl.string(j.t["ETE/oC"])
         }),
         actions: [{
             variant: "secondary",
             text: j.intl.string(j.t["8rKVHL"]),
-            disabled: x,
+            disabled: T,
             onClick: y
         }, {
             variant: "primary",
             text: j.intl.string(j.t.d611xH),
-            loading: x,
+            loading: T,
             onClick: N,
             autoFocus: !0
         }],
-        children: (0, a.jsx)(S.Cp, {
+        children: (0, a.jsx)(E.Cp, {
             channel: f,
-            children: (0, a.jsx)(E.Ay, {
+            children: (0, a.jsx)(S.Ay, {
                 threadId: t,
                 goToThread: v.tE,
-                overrideMedia: T,
+                overrideMedia: x,
                 className: M.u
             })
         })

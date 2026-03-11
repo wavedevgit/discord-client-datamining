@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(534400),
     _ = n(128450),
     g = n(193658),
-    m = n(287809),
-    A = n(581781),
+    A = n(287809),
+    m = n(581781),
     h = n(743981),
     p = n(355097),
     x = n(985018),
@@ -25,7 +25,7 @@ let T = (0, o.Ld)(),
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, l.bG)([m.default], () => (0, c.Zo)(m.default.getCurrentUser()?.primaryGuild).guildId), f = void 0 !== n ? n : C, I = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, l.bG)([A.default], () => (0, c.Zo)(A.default.getCurrentUser()?.primaryGuild).guildId), I = void 0 !== n ? n : C, f = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
         }), e), []), [t]), b = s.useCallback(e => {
@@ -33,7 +33,7 @@ let T = (0, o.Ld)(),
             let t = S.get(e.value);
             if (null == t) return null;
             let n = t.profile?.tag;
-            return null == n ? null : (0, i.jsx)(A.A, {
+            return null == n ? null : (0, i.jsx)(m.A, {
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
                 guildId: t.id,
@@ -64,14 +64,14 @@ let T = (0, o.Ld)(),
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
-        }, [S]), j = s.useCallback(e => {
+        }, [S]), O = s.useCallback(e => {
             let t = e[0];
             return null == t ? null : (0, i.jsx)(i.Fragment, {
                 children: b(t)
             })
-        }, [b]), O = s.useCallback(e => {
+        }, [b]), j = s.useCallback(e => {
             o?.(e)
-        }, [o]), R = s.useCallback(e => e === f, [f]), y = s.useCallback(e => e, []), P = s.useCallback(() => {
+        }, [o]), R = s.useCallback(e => e === I, [I]), y = s.useCallback(e => e, []), P = s.useCallback(() => {
             o?.(null)
         }, [o]), L = s.useRef(null);
         return (0, g.A)(L, p._F.GUILD_TAG), (0, i.jsxs)(_.A, {
@@ -86,14 +86,14 @@ let T = (0, o.Ld)(),
                 className: E.Lt,
                 optionClassName: E.S0,
                 isSelected: R,
-                options: I,
-                select: O,
+                options: f,
+                select: j,
                 renderLeading: N,
                 renderTrailing: v,
-                renderOptionValue: j,
+                renderOptionValue: O,
                 serialize: y,
                 clear: P,
-                clearable: null != f,
+                clearable: null != I,
                 maxVisibleItems: 8,
                 "data-migration-pending": !0
             })]

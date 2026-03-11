@@ -47,7 +47,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             disableSounds: e
         })
     }),
-    m = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
+    A = (0, a.zD)(o.X.STREAMER_MODE_DISABLE_NOTIFICATIONS, {
         useTitle: () => c.intl.string(c.t.sUAbLd),
         useValue: () => (0, i.bG)([r.A], () => {
             let {
@@ -59,7 +59,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             disableNotifications: e
         })
     }),
-    A = (0, a.zD)(o.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
+    m = (0, a.zD)(o.X.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE, {
         useTitle: () => c.intl.string(c.t["iA81+a"]),
         useSubtitle: () => c.intl.string(c.t.P4vj0h),
         useValue: () => (0, i.bG)([r.A], () => {
@@ -76,5 +76,5 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     h = (0, a.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
         variant: "compact",
         useTitle: () => (0, d.bp)("StreamerModeOptions") ? c.intl.string(c.t.xYhOEh) : c.intl.string(c.t.UtW8R6),
-        buildLayout: () => [u, _, g, m, A]
+        buildLayout: () => [u, _, g, A, m]
     })

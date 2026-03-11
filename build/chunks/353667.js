@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(351906),
     _ = n(823092),
     g = n(963935),
-    m = n(894858),
-    A = n(272053),
+    A = n(894858),
+    m = n(272053),
     h = n(397274),
     p = n(641324),
     x = n(46373),
@@ -94,7 +94,7 @@ function C(e) {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         layout: t,
         decoration: n
@@ -113,23 +113,23 @@ function f(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         panelKey: t,
         layout: n,
         notice: l,
         decoration: a
-    } = e, r = m.A.useState(e => {
+    } = e, r = A.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
         return n.get(t)
     }) ?? n[0].key;
     s.useEffect(() => {
-        let e = m.A.getField("currentTabKeys");
+        let e = A.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
         let i = new Map(e);
-        i.set(t, n[0].key), m.A.setState({
+        i.set(t, n[0].key), A.A.setState({
             currentTabKeys: i
         })
     }, [n, t]);
@@ -141,7 +141,7 @@ function I(e) {
             className: E.$H,
             selectedItem: r,
             onItemSelect: e => {
-                A.A.navigate(e, {
+                m.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()
@@ -163,7 +163,7 @@ function I(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(f, {
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(I, {
                 layout: o.layout,
                 decoration: a
             })
@@ -181,7 +181,7 @@ function b(e) {
     return (0, i.jsx)(C, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(I, {
             layout: l,
             decoration: s
         })
@@ -195,7 +195,7 @@ function N(e) {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, g.zY)(n)) return (0, i.jsx)(I, {
+    if ((0, g.zY)(n)) return (0, i.jsx)(f, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

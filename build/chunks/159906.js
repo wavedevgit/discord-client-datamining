@@ -14,8 +14,8 @@ var s = n(284009),
     u = n(580630),
     _ = n(543767),
     g = n(788868),
-    m = n(652215),
-    A = n(985018),
+    A = n(652215),
+    m = n(985018),
     h = n(700896);
 
 function p(e) {
@@ -44,22 +44,22 @@ function p(e) {
     let S = T.subscriptionPlanId,
         C = d.A.get(S);
     l()(null != C, "Missing plan");
-    let f = (0, u.$g)(x.total, x.currency);
-    return C.interval === g.WT.YEAR ? t = A.intl.format(A.t["jPz/39"], {
-        price: f,
-        termsUrl: m.X7G.TERMS,
-        paidURL: m.X7G.PAID_TERMS,
-        privacyUrl: m.X7G.PRIVACY
-    }) : C.interval === g.WT.MONTH && (t = 1 === C.intervalCount ? A.intl.format(A.t.m27GpI, {
-        price: f,
-        termsUrl: m.X7G.TERMS,
-        paidURL: m.X7G.PAID_TERMS,
-        privacyUrl: m.X7G.PRIVACY
-    }) : A.intl.format(A.t["9xf5Vx"], {
-        price: f,
-        termsUrl: m.X7G.TERMS,
-        paidURL: m.X7G.PAID_TERMS,
-        privacyUrl: m.X7G.PRIVACY,
+    let I = (0, u.$g)(x.total, x.currency);
+    return C.interval === g.WT.YEAR ? t = m.intl.format(m.t["jPz/39"], {
+        price: I,
+        termsUrl: A.X7G.TERMS,
+        paidURL: A.X7G.PAID_TERMS,
+        privacyUrl: A.X7G.PRIVACY
+    }) : C.interval === g.WT.MONTH && (t = 1 === C.intervalCount ? m.intl.format(m.t.m27GpI, {
+        price: I,
+        termsUrl: A.X7G.TERMS,
+        paidURL: A.X7G.PAID_TERMS,
+        privacyUrl: A.X7G.PRIVACY
+    }) : m.intl.format(m.t["9xf5Vx"], {
+        price: I,
+        termsUrl: A.X7G.TERMS,
+        paidURL: A.X7G.PAID_TERMS,
+        privacyUrl: A.X7G.PRIVACY,
         intervalCount: C.intervalCount
     })), (0, i.jsx)(a.Text, {
         color: "text-muted",
@@ -74,7 +74,7 @@ function x(e) {
         subscription: t,
         withOverheadSeparator: n
     } = e;
-    return t.status === m.Dmq.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(p, {
+    return t.status === A.Dmq.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(p, {
         subscription: t,
         withOverheadSeparator: n
     })

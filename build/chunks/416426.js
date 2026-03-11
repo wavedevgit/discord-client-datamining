@@ -1,6 +1,6 @@
 /** chunk id: 416426 params = (module,exports,require) **/
 n.d(t, {
-    V: () => m
+    V: () => A
 });
 var i = n(627968),
     s = n(64700),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(358776),
     _ = n(801264),
     g = n(985018);
-let m = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
+let A = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
     usePredicate: () => l.Av && !(0, l.cX)(),
     useSearchTerms: () => [g.intl.string(g.t["/HIxyY"]), g.intl.string(g.t.B0hqpb)],
     Component: function() {
@@ -23,7 +23,7 @@ let m = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
                 label: n,
                 description: l,
                 checked: e,
-                onChange: A
+                onChange: m
             }), !e && (0, i.jsx)(_.A, {
                 look: _.k.WARNING,
                 children: g.intl.string(g.t.j7S6IX)
@@ -32,7 +32,7 @@ let m = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
     }
 });
 
-function A(e) {
+function m(e) {
     let t = e ? g.intl.format(g.t.LYXRxL, {}) : g.intl.format(g.t.uDP3Kz, {});
     (0, r.A)({
         title: g.intl.string(g.t.aqpAvn),

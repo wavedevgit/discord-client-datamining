@@ -26,7 +26,7 @@ function x(e) {
         hasAccess: v
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
         analyticsLocations: S
-    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), _ = (0, a.bG)([d.A], () => d.A.hasFavorites());
+    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), C = (0, a.bG)([d.A], () => d.A.hasFavorites());
     s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {
@@ -43,15 +43,16 @@ function x(e) {
             null != T.current && (window.cancelAnimationFrame(T.current), T.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
         }
     }, [t]);
-    let C = s.useCallback(() => {
+    let _ = s.useCallback(() => {
             n?.(A.i.TAKE_ACTION), v || (0, c.A)({
                 subscriptionTier: p.pe.TIER_2,
                 analyticsLocations: S
             })
         }, [n, S, v]),
-        j = _ ? f.default.TWuDTt : f.default["25YCHl"];
+        j = C ? f.default.TWuDTt : f.default["25YCHl"];
     return (0, l.jsx)(i.AM, {
         targetElementRef: t,
+        gradientColor: "purple",
         position: "right",
         alignmentStrategy: "edge",
         align: x,
@@ -74,7 +75,7 @@ function x(e) {
         actions: [{
             icon: v ? void 0 : r.tvc,
             text: v ? h.intl.string(f.default["+h9aza"]) : h.intl.string(f.default["avps/2"]),
-            onClick: () => C(),
+            onClick: () => _(),
             variant: v ? "secondary" : "expressive"
         }]
     })

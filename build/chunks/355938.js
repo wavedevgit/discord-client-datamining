@@ -1,51 +1,51 @@
 /** chunk id: 355938 params = (module,exports,require) **/
-n.d(t, {
-    A: () => d
+t.d(a, {
+    A: () => l
 });
-var a = n(627968);
-n(64700);
-var i = n(435371),
-    l = n(397927),
-    r = n(769015),
-    s = n(985018),
-    o = n(999584);
+var n = t(627968);
+t(64700);
+var r = t(435371),
+    o = t(397927),
+    s = t(769015),
+    _ = t(985018),
+    c = t(999584);
 
-function c(e) {
+function i(e) {
     let {
-        application: t,
-        children: n
+        application: a,
+        children: t
     } = e;
-    return (0, a.jsx)(i.un, {
-        asset: (0, a.jsx)(r.A, {
-            size: r.M.MEDIUM_LARGE,
-            game: t
+    return (0, n.jsx)(r.un, {
+        asset: (0, n.jsx)(s.A, {
+            size: s.M.MEDIUM_LARGE,
+            game: a
         }),
-        body: s.intl.format(s.t.J3s8JP, {
-            applicationName: t.name
+        body: _.intl.format(_.t.J3s8JP, {
+            applicationName: a.name
         }),
         position: "top",
         asContainer: !0,
-        "aria-label": s.intl.string(s.t["5nMcv1"]),
-        children: (0, a.jsx)(l.DUT, {
+        "aria-label": _.intl.string(_.t["5nMcv1"]),
+        children: (0, n.jsx)(o.DUT, {
             tag: "span",
-            children: n
+            children: t
         })
     })
 }
 
-function d(e) {
+function l(e) {
     let {
-        application: t,
-        compact: n,
-        children: i
+        application: a,
+        compact: t,
+        children: r
     } = e;
-    return (0, a.jsxs)(c, {
-        application: t,
-        children: [n ? null : (0, a.jsx)(l._xR, {
-            className: o.Gt,
+    return (0, n.jsxs)(i, {
+        application: a,
+        children: [t ? null : (0, n.jsx)(o._xR, {
+            className: c.Gt,
             size: "custom",
             width: 14,
             height: 14
-        }), i]
+        }), r]
     })
 }

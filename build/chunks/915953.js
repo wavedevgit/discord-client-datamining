@@ -19,8 +19,8 @@ function d(e) {
         maxValue: u,
         useDefaultValue: _,
         useTitle: g,
-        useSubtitle: m,
-        useHintText: A,
+        useSubtitle: A,
+        useHintText: m,
         useDisabled: h,
         useExternalValue: p,
         onValueRender: x,
@@ -28,17 +28,17 @@ function d(e) {
         markers: T,
         onMarkerRender: S,
         stickToMarkers: C,
-        fieldLayout: f,
-        usePersistentBadge: I,
+        fieldLayout: I,
+        usePersistentBadge: f,
         getDismissibleBadges: b
-    } = t, [N] = s.useState(() => d()), v = p?.(), j = g(), O = m?.(), R = A?.(), y = h?.(), P = _?.(), L = I?.(), D = b?.(), G = (0, a.A)({
+    } = t, [N] = s.useState(() => d()), v = p?.(), O = g(), j = A?.(), R = m?.(), y = h?.(), P = _?.(), L = f?.(), D = b?.(), G = (0, a.A)({
         persistentBadge: L,
         dismissibleBadges: D
     }), M = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
-            label: j,
-            description: O,
+            label: O,
+            description: j,
             disabled: y,
             initialValue: N,
             value: v,
@@ -54,7 +54,7 @@ function d(e) {
             markers: T,
             onMarkerRender: S,
             stickToMarkers: C,
-            layout: f,
+            layout: I,
             badge: G
         }), null != R && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",

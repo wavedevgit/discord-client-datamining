@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(836602),
     _ = n(624826),
     g = n(253932),
-    m = n(354694),
-    A = n(592074),
+    A = n(354694),
+    m = n(592074),
     h = n(985018);
 
 function p() {
@@ -40,16 +40,16 @@ function p() {
                     avatarId: t.avatarId,
                     avatarAssetOrigin: e.pendingAvatar?.assetOrigin
                 }), (0, r.pZ)()
-            } else n?.body?.username != null && (0, A.E)()
+            } else n?.body?.username != null && (0, m.E)()
         }
         if (Object.keys(n).length > 0) {
             let e = await (0, c.gi)(n);
-            s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, m.m)()
+            s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, A.m)()
         }
         if (void 0 !== e.pendingLegacyUsernameDisabled) try {
             await g.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
         } catch {
-            (0, m.m)(), s = !1
+            (0, A.m)(), s = !1
         }
         if (Object.keys(i).length > 0) {
             let {
@@ -57,7 +57,7 @@ function p() {
             } = i;
             if (void 0 !== e) {
                 let t = await (0, o.m)(e, null !== e);
-                s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, m.m)()
+                s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, A.m)()
             }
         }
         s && (0, r.x8)(), p(!1)

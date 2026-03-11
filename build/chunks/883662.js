@@ -1,7 +1,7 @@
 /** chunk id: 883662 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => m
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -9,49 +9,49 @@ var r = n(627968),
     s = n(521489),
     l = n(397927),
     o = n(775602),
-    u = n(531685),
-    c = n(203982),
+    c = n(531685),
+    u = n(203982),
     d = n(418829),
-    f = n(652215);
+    m = n(652215);
 
-function m(e) {
+function f(e) {
     let {
         partialRoot: t,
         target: n,
-        defaultTarget: m,
+        defaultTarget: f,
         onPanelChange: g,
         sidebarFooter: h,
-        emptyState: y,
-        searchQuery: p,
-        onSearchChange: v,
+        emptyState: p,
+        searchQuery: y,
+        onSearchChange: _,
         ...x
-    } = e, [b, A] = i.useState(!1), [_, j] = i.useState(1.4), S = i.useRef(null), N = (0, a.bG)([o.A], () => o.A.useReducedMotion), C = (0, a.bG)([u.A], () => u.A.isFocused());
+    } = e, [v, b] = i.useState(!1), [A, j] = i.useState(1.4), N = i.useRef(null), S = (0, a.bG)([o.A], () => o.A.useReducedMotion), C = (0, a.bG)([c.A], () => c.A.isFocused());
     return i.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
                 duration: n
             } = e;
-            !N && C && (A(!0), j(t ?? 1.4), clearTimeout(S.current), S.current = setTimeout(() => A(!1), n ?? 1e3))
+            !S && C && (b(!0), j(t ?? 1.4), clearTimeout(N.current), N.current = setTimeout(() => b(!1), n ?? 1e3))
         };
-        return c._.subscribe(f.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            c._.unsubscribe(f.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(S.current)
+        return u._.subscribe(m.jej.SHAKE_SETTINGS_MODAL, e), () => {
+            u._.unsubscribe(m.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(N.current)
         }
-    }, [N, C]), (0, r.jsx)(l.bfh, {
-        isShaking: b,
-        intensity: _,
+    }, [S, C]), (0, r.jsx)(l.bfh, {
+        isShaking: v,
+        intensity: A,
         children: (0, r.jsx)(s.N, {
             ...x,
             children: (0, r.jsx)(d.A, {
                 onClose: x.onClose,
                 partialRoot: t,
                 target: n,
-                defaultTarget: m,
+                defaultTarget: f,
                 onPanelChange: g,
-                emptyState: y,
+                emptyState: p,
                 sidebarFooter: h,
-                searchQuery: p,
-                onSearchChange: v
+                searchQuery: y,
+                onSearchChange: _
             })
         })
     })

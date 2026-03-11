@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(297413),
     _ = n(935649),
     g = n(847599),
-    m = n(36149),
-    A = n(521933),
+    A = n(36149),
+    m = n(521933),
     h = n(50268),
     p = n(922301),
     x = n(81400),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(207560),
     S = n(195043),
     C = n(790114),
-    f = n(836602),
-    I = n(262),
+    I = n(836602),
+    f = n(262),
     b = n(950191),
     N = n(854627),
     v = n(542535),
-    j = n(915614),
-    O = n(662758),
+    O = n(915614),
+    j = n(662758),
     R = n(957565),
     y = n(975571),
     P = n(427262),
@@ -55,12 +55,12 @@ function X(e) {
     let {
         className: t,
         user: l
-    } = e, r = s.useRef(null), u = (0, x.EC)(), _ = u?.nick?.[0] ?? null, [g, m] = s.useState(!1);
+    } = e, r = s.useRef(null), u = (0, x.EC)(), _ = u?.nick?.[0] ?? null, [g, A] = s.useState(!1);
     s.useEffect(() => {
-        m(null != r.current && r.current.scrollWidth > r.current.clientWidth)
+        A(null != r.current && r.current.scrollWidth > r.current.clientWidth)
     }, [l.username]);
-    let A = !l.isClaimed(),
-        h = A ? H.intl.string(H.t["7Ngnyr"]) : void 0;
+    let m = !l.isClaimed(),
+        h = m ? H.intl.string(H.t["7Ngnyr"]) : void 0;
     return (0, i.jsxs)("div", {
         className: a()(F.ZZ, t),
         children: [(0, i.jsx)("div", {
@@ -108,7 +108,7 @@ function X(e) {
                     variant: "secondary",
                     size: "sm",
                     text: g ? H.intl.string(H.t["16kTw/"]) : H.intl.string(H.t.bt75uw),
-                    disabled: A,
+                    disabled: m,
                     "aria-label": H.intl.string(H.t.JECa91),
                     onClick: () => (0, c.mMO)(async () => {
                         let {
@@ -128,9 +128,9 @@ function W(e) {
     let {
         user: t,
         className: n
-    } = e, l = (0, x.EC)(), r = l?.nick?.[0] ?? null, u = P.Ay.getGlobalName(t), _ = s.useRef(null), [g, m] = s.useState(!1);
+    } = e, l = (0, x.EC)(), r = l?.nick?.[0] ?? null, u = P.Ay.getGlobalName(t), _ = s.useRef(null), [g, A] = s.useState(!1);
     return s.useEffect(() => {
-        m(null != _.current && _.current.scrollWidth > _.current.clientWidth)
+        A(null != _.current && _.current.scrollWidth > _.current.clientWidth)
     }, [u]), (0, i.jsxs)("div", {
         className: a()(F.ZZ, n),
         children: [(0, i.jsx)("div", {
@@ -243,7 +243,7 @@ function Z(e) {
         buttonText: H.intl.string(H.t.BleMPB),
         buttonAriaLabel: H.intl.string(H.t.BleMPB),
         valueMessage: H.intl.string(H.t.qxk9zo),
-        handleClick: () => A.A.openClaimAccountModal()
+        handleClick: () => m.A.openClaimAccountModal()
     };
     return (0, i.jsxs)("div", {
         className: a()(F.ZZ, s),
@@ -320,7 +320,7 @@ function q(e) {
                     text: H.intl.string(H.t.N86XcP),
                     "aria-label": H.intl.string(H.t.Rpn4A3),
                     onClick: function() {
-                        (0, c.qfG)(e => (0, i.jsx)(O.default, {
+                        (0, c.qfG)(e => (0, i.jsx)(j.default, {
                             ...e,
                             title: H.intl.string(H.t["3CTiKi"]),
                             children: l.hasFlag(V.nhx.MFA_SMS) ? H.intl.string(H.t.jrhJyo) : void 0,
@@ -395,7 +395,7 @@ function J(e) {
 function Q(e) {
     let {
         className: t
-    } = e, l = (0, m.b8)(), r = (0, m.yM)(), o = (0, m.Y2)(), d = !l || r, u = H.intl.string(H.t["9KiIz6"]), A = H.intl.string(H.t.DVywUB), h = H.intl.string(H.t.lKDPGA), p = s.useCallback(() => {
+    } = e, l = (0, A.b8)(), r = (0, A.yM)(), o = (0, A.Y2)(), d = !l || r, u = H.intl.string(H.t["9KiIz6"]), m = H.intl.string(H.t.DVywUB), h = H.intl.string(H.t.lKDPGA), p = s.useCallback(() => {
         window.open(y.A.getArticleURL(V.MVz.TIGGER_PAWTECT_LEARN_MORE), "_blank")
     }, []), x = s.useCallback(() => {
         (0, c.mMO)(async () => {
@@ -443,8 +443,8 @@ function Q(e) {
             children: (0, i.jsx)(c.Button, {
                 variant: "secondary",
                 size: "sm",
-                text: r ? u : A,
-                "aria-label": r ? u : A,
+                text: r ? u : m,
+                "aria-label": r ? u : m,
                 onClick: () => _.A.showAgeVerificationGetStartedModal({
                     entryPoint: g.q1.ACCOUNT_AGE_GROUP
                 })
@@ -456,16 +456,16 @@ function Q(e) {
 function $(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, I.A)(n), l = D.jP.useSetting(), a = (0, r.bG)([f.A], () => f.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, b.Ay)(t.id), s = (0, f.A)(n), l = D.jP.useSetting(), a = (0, r.bG)([I.A], () => I.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: _
     } = (0, N.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
-    }), g = (0, C.A)(), m = (0, T.fk)();
+    }), g = (0, C.A)(), A = (0, T.fk)();
     return (0, i.jsxs)("div", {
         className: F.DM,
-        children: [(0, i.jsx)(j.o, {
+        children: [(0, i.jsx)(O.o, {
             user: t,
             displayProfile: n,
             avatarSize: c._3J.SIZE_80,
@@ -537,7 +537,7 @@ function $(e) {
                         className: F.Zr,
                         user: t
                     })
-                }), m && (0, i.jsx)(S.x, {
+                }), A && (0, i.jsx)(S.x, {
                     setting: k.H.ACCOUNT_AGE_GROUP,
                     children: (0, i.jsx)(Q, {
                         className: F.Zr

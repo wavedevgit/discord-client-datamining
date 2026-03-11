@@ -1,7 +1,7 @@
 /** chunk id: 360619 params = (module,exports,require) **/
 n.d(t, {
-    AC: () => j,
-    NI: () => O,
+    AC: () => O,
+    NI: () => j,
     PH: () => v
 }), n(321073);
 var i = n(64700),
@@ -16,8 +16,8 @@ var l = n(406360),
     u = n(35587),
     _ = n(677402),
     g = n(207560),
-    m = n(818143),
-    A = n(639555),
+    A = n(818143),
+    m = n(639555),
     h = n(617641),
     p = n(961350);
 n(540999);
@@ -26,8 +26,8 @@ var x = n(189081),
     T = n(628965),
     S = n(287809),
     C = n(253932),
-    f = n(368631),
-    I = n(682262),
+    I = n(368631),
+    f = n(682262),
     b = n(987281);
 n(531525);
 var N = n(654487);
@@ -37,12 +37,12 @@ function v() {
         t = (0, c.l)(),
         n = (0, s.bG)([T.A], () => T.A.getSearchParams()),
         b = (0, d.VT)(),
-        v = (0, I.b_)(),
-        j = S.default.getCurrentUser()?.isStaff() ?? !1,
-        O = (0, h.Lc)({
+        v = (0, f.b_)(),
+        O = S.default.getCurrentUser()?.isStaff() ?? !1,
+        j = (0, h.Lc)({
             location: "settings"
         }),
-        R = (0, A.Rv)({
+        R = (0, m.Rv)({
             location: "settings"
         }),
         y = (0, a.H)(),
@@ -54,7 +54,7 @@ function v() {
         G = C.Q_.useSetting(),
         M = (0, r.A)(),
         U = (0, o.A)() ?? !0,
-        k = (0, m.G)()?.length > 0,
+        k = (0, A.G)()?.length > 0,
         {
             hasBlockedUsers: V,
             hasIgnoredUsers: w
@@ -64,14 +64,14 @@ function v() {
         })),
         H = (0, g.fk)(),
         B = (0, l.i)("useGenerateUserSettingsSections");
-    return i.useMemo(() => (0, f.zj)({
+    return i.useMemo(() => (0, I.zj)({
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
         searchParams: n,
         numOfPendingFamilyRequests: b,
         isOverlaySupported: v,
-        isStaff: j,
-        isInappropriateConversationWarningEnabled: O,
+        isStaff: O,
+        isInappropriateConversationWarningEnabled: j,
         isInapproprateConversationsDefaultOn: R,
         paymentsBlocked: y,
         isEligibleForQuests: P,
@@ -85,10 +85,10 @@ function v() {
         hasBlockedUsers: V,
         hasAgeGatedFeature: H,
         isHDRAccessibilitySettingExperimentEnabled: B
-    }), [G, V, w, L, k, D, n, U, P, R, O, v, j, M, b, y, t, e, H, B])
+    }), [G, V, w, L, k, D, n, U, P, R, j, v, O, M, b, y, t, e, H, B])
 }
 
-function j(e) {
+function O(e) {
     let t = b.a.useField("searchResults"),
         n = v(),
         i = n[e],
@@ -135,7 +135,7 @@ function j(e) {
         } return a
 }
 
-function O(e) {
+function j(e) {
     return Array.from(new Map(Object.entries(e).filter(e => {
         let [t, n] = e;
         return null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || !1 === n.unsearchable)

@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(975571),
     _ = n(115063),
     g = n(104954),
-    m = n(975648),
-    A = n(871930),
+    A = n(975648),
+    m = n(871930),
     h = n(531525),
     p = n(652215),
     x = n(985018),
@@ -25,25 +25,25 @@ function T() {
         {
             currentHarvestType: t,
             awaitingInitialRequest: l
-        } = (0, r.cf)([m.A], () => ({
-            currentHarvestType: m.A.harvestType,
-            awaitingInitialRequest: m.A.requestingHarvest
+        } = (0, r.cf)([A.A], () => ({
+            currentHarvestType: A.A.harvestType,
+            awaitingInitialRequest: A.A.requestingHarvest
         })),
         [T, S] = s.useState(!1);
     if (null == e) return null;
     let C = (0, _.Oj)(t, e) || l,
-        f = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
-        I = C && f,
+        I = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
+        f = C && I,
         b = e.isStaff(),
         N = !e.verified;
-    return (0, i.jsxs)(A.h, {
+    return (0, i.jsxs)(m.h, {
         setting: h.H.PRIVACY_DATA_REQUEST_V2,
-        children: [(0, i.jsx)(A._, {
+        children: [(0, i.jsx)(m._, {
             header: x.intl.string(x.t.XAHCgJ),
             description: x.intl.format(x.t.P3kNfr, {
                 helpdeskArticle: u.A.getArticleURL(p.MVz.GDPR_REQUEST_DATA)
             })
-        }), I ? (0, i.jsx)(o.ZpM, {
+        }), f ? (0, i.jsx)(o.ZpM, {
             className: E.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",

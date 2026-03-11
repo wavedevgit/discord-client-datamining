@@ -1,25 +1,25 @@
 /** chunk id: 182681 params = (module,exports,require) **/
-a.d(e, {
-    A: () => i
+c.d(e, {
+    A: () => l
 });
-var n = a(627968),
-    o = a(676279),
-    s = a(831318),
-    c = a(985018),
-    l = a(389420),
-    r = a(150225);
-let i = t => {
+var o = c(627968),
+    a = c(676279),
+    d = c(831318),
+    n = c(985018),
+    s = c(389420),
+    i = c(150225);
+let l = t => {
     let {
         handleLearnMore: e,
-        ...a
-    } = t, i = (0, o.TM)() ? l.A : r.A;
-    return (0, n.jsx)(s.A, {
+        ...c
+    } = t, l = (0, a.TM)() ? s.A : i.A;
+    return (0, o.jsx)(d.A, {
         gradientColor: "nitro-pink",
-        title: c.intl.string(c.t.ewxv3J),
-        subtitle: c.intl.string(c.t.qlsCDB),
-        videoSrc: i,
+        title: n.intl.string(n.t.ewxv3J),
+        subtitle: n.intl.string(n.t.qlsCDB),
+        videoSrc: l,
         loopAt: 5,
         onSecondaryClick: e,
-        ...a
+        ...c
     })
 }

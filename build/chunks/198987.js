@@ -1,6 +1,6 @@
 /** chunk id: 198987 params = (module,exports,require) **/
 n.d(t, {
-    t: () => m
+    t: () => A
 });
 var i = n(64700),
     s = n(311907),
@@ -13,7 +13,7 @@ var i = n(64700),
     u = n(662128),
     _ = n(811231),
     g = n(985018);
-let m = (0, l.zZ)(o.X.SOUNDS_CATEGORY, {
+let A = (0, l.zZ)(o.X.SOUNDS_CATEGORY, {
     useTitle: () => g.intl.string(g.t.MKWyKc),
     useInlineNotice: function() {
         let e = (0, s.bG)([r.A], () => r.A.getDisableAllSounds());

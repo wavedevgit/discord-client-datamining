@@ -21,9 +21,9 @@ function _(e) {
         onAddPaymentSource: r,
         toastContent: _,
         initialStep: g = o.pn.PAYMENT_TYPE,
-        overwriteSubscriptionPaymentSource: m = !1
-    } = e, A = (0, d.KP)(), h = (0, d.Y)({
-        paymentModalArgs: A,
+        overwriteSubscriptionPaymentSource: A = !1
+    } = e, m = (0, d.KP)(), h = (0, d.Y)({
+        paymentModalArgs: m,
         initialStep: g,
         prependSteps: [],
         appendSteps: [],
@@ -40,7 +40,7 @@ function _(e) {
         analyticsLocation: n,
         hideBreadcrumbs: !0,
         toastContent: _,
-        overwriteSubscriptionPaymentSource: m
+        overwriteSubscriptionPaymentSource: A
     });
     return (0, i.jsx)(a.dWK, {
         transitionState: t,

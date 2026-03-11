@@ -1,28 +1,28 @@
 /** chunk id: 641405 params = (module,exports,require) **/
-a.d(t, {
-    A: () => l
+n.d(t, {
+    A: () => s
 });
-var n = a(627968);
-a(64700);
-var r = a(397927),
-    i = a(450481),
-    s = a(985018);
-let l = e => {
+var r = n(627968);
+n(64700);
+var i = n(397927),
+    a = n(450481),
+    l = n(985018);
+let s = e => {
     let {
         product: t,
-        onSuccess: a
+        onSuccess: n
     } = e, {
-        handleUseNow: l,
+        handleUseNow: s,
         isApplying: c
-    } = (0, i.p)({
+    } = (0, a.p)({
         product: t,
-        onSuccess: a
+        onSuccess: n
     });
-    return (0, n.jsx)(r.Button, {
+    return (0, r.jsx)(i.Button, {
         variant: "primary",
-        onClick: l,
+        onClick: s,
         loading: c,
-        text: s.intl.string(s.t.MAS7uK),
+        text: l.intl.string(l.t.MAS7uK),
         fullWidth: !0
     })
 }

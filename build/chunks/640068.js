@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(271478),
     _ = n(49463),
     g = n(386976),
-    m = n(257433),
-    A = n(32523),
+    A = n(257433),
+    m = n(32523),
     h = n(961350),
     p = n(71393),
     x = n(957565),
@@ -29,7 +29,7 @@ function C() {
     } = (0, g.op)(), {
         experiments: n,
         overridesInfo: l
-    } = (0, A.hI)(), a = s.useMemo(() => ({
+    } = (0, m.hI)(), a = s.useMemo(() => ({
         ...n,
         ...e
     }), [n, e]), r = s.useMemo(() => ({
@@ -44,7 +44,7 @@ function C() {
             onChange: c,
             onClear: () => c("")
         }), u.length > 0 ? u.map(e => {
-            let t = "guild" === e.experiment.kind ? I : f;
+            let t = "guild" === e.experiment.kind ? f : I;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -61,21 +61,21 @@ function C() {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
         defaultOpen: g
-    } = e, [A, p] = s.useState(g), [E, C] = s.useState(!1), f = s.useCallback(() => {
+    } = e, [m, p] = s.useState(g), [E, C] = s.useState(!1), I = s.useCallback(() => {
         p(e => !e)
-    }, []), I = (0, r.bG)([h.default], () => h.default.getId()), b = (0, m.iN)(t, I), N = (0, m.Fm)(t, I), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
+    }, []), f = (0, r.bG)([h.default], () => h.default.getId()), b = (0, A.iN)(t, f), N = (0, A.Fm)(t, f), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), j = s.useCallback(e => {
+    })), O = s.useCallback(e => {
         (0, x.C)((0, d.yA)(n), () => {
             (0, o.showToast)({
                 id: "experiment-link-copied",
@@ -83,9 +83,9 @@ function f(e) {
                 type: o.ToastType.SUCCESS
             }), e.preventDefault(), e.stopPropagation()
         })
-    }, [n]), O = (0, i.jsx)(o.sqX, {
+    }, [n]), j = (0, i.jsx)(o.sqX, {
         "aria-label": "Toggle visibility",
-        onClick: f,
+        onClick: I,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -95,7 +95,7 @@ function f(e) {
                     align: "center",
                     gap: 4,
                     children: [t.title, " ", x.p5 && (0, i.jsx)(o.DUT, {
-                        onClick: j,
+                        onClick: O,
                         children: (0, i.jsx)(o.qYV, {
                             size: "xs"
                         })
@@ -111,14 +111,14 @@ function f(e) {
             })]
         })
     });
-    if (!A) return (0, i.jsx)("div", {
+    if (!m) return (0, i.jsx)("div", {
         className: S.Os,
-        children: O
+        children: j
     });
     let R = "";
     return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${b??T.RE.NOT_ELIGIBLE}` : null != b ? `Currently assigned to variant ${b}` : "Currently unassigned", (0, i.jsxs)("div", {
         className: S.Os,
-        children: [O, (0, i.jsx)("div", {
+        children: [j, (0, i.jsx)("div", {
             children: (0, i.jsx)(u.g, {
                 label: t.system === c.l5.LEGACY ? "Bucket Override" : "Variant Override",
                 description: R,
@@ -172,12 +172,12 @@ function f(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l
-    } = e, [d, c] = s.useState(null != l), [g, m] = s.useState(!1), A = s.useCallback(() => {
+    } = e, [d, c] = s.useState(null != l), [g, A] = s.useState(!1), m = s.useCallback(() => {
         c(e => !e)
     }, []), h = (0, r.bG)([_.A], () => _.A.getLoadedGuildExperiment(n)), x = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.GUILD, n), e => {
         let [t, n] = e;
@@ -196,8 +196,8 @@ function I(e) {
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
-    }), f = (0, i.jsx)(o.DUT, {
-        onClick: A,
+    }), I = (0, i.jsx)(o.DUT, {
+        onClick: m,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -217,7 +217,7 @@ function I(e) {
     });
     return d ? (0, i.jsxs)("div", {
         className: S.Os,
-        children: [f, (0, i.jsx)(u.g, {
+        children: [I, (0, i.jsx)(u.g, {
             label: "Bucket Override",
             description: `Current Assignments: ${C}`,
             experiment: t,
@@ -269,13 +269,13 @@ function I(e) {
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
-                onClick: () => m(!0)
+                onClick: () => A(!0)
             })
         }), (0, i.jsx)(o.cGx, {
             className: S.yF
         })]
     }) : (0, i.jsx)("div", {
         className: S.Os,
-        children: f
+        children: I
     })
 }

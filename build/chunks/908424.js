@@ -1,5 +1,5 @@
 /** chunk id: 908424 params = (module,exports,require) **/
-i.d(a, {
+i.r(a), i.d(a, {
     default: () => d
 });
 var e = i(627968),
@@ -12,17 +12,18 @@ var e = i(627968),
 function d(t) {
     let {
         navId: a,
-        onSelect: d
-    } = t, o = n.useCallback(() => {
+        onClose: d = l.Z_,
+        onSelect: o
+    } = t, u = n.useCallback(() => {
         (0, r.mMO)(async () => {
             let {
                 default: t
-            } = await i.e("15077").then(i.bind(i, 889186));
+            } = await i.e("59839").then(i.bind(i, 889186));
             return a => (0, e.jsx)(t, {
                 ...a
             })
         })
-    }, []), u = n.useCallback(() => {
+    }, []), p = n.useCallback(() => {
         (0, r.mMO)(async () => {
             let {
                 default: t
@@ -33,11 +34,12 @@ function d(t) {
         })
     }, []);
     return (0, e.jsxs)(r.W1t, {
+        variant: "fixed",
         "data-menu-migrated": !0,
         navId: a,
-        onClose: l.Z_,
+        onClose: d,
         "aria-label": c.intl.string(c.t.liqwPJ),
-        onSelect: d,
+        onSelect: o,
         children: [(0, e.jsx)(r.rXV, {
             children: (0, e.jsx)(r.Drp, {
                 id: "add-to-favorites",
@@ -46,7 +48,7 @@ function d(t) {
                     type: "icon",
                     icon: r.j96
                 },
-                action: o
+                action: u
             })
         }), (0, e.jsx)(r.rXV, {
             children: (0, e.jsx)(r.Drp, {
@@ -56,7 +58,7 @@ function d(t) {
                     type: "icon",
                     icon: r.YPf
                 },
-                action: u
+                action: p
             })
         })]
     })

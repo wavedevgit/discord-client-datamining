@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(950191),
     _ = n(101928),
     g = n(927578),
-    m = n(911180),
-    A = n(128450),
+    A = n(911180),
+    m = n(128450),
     h = n(985018),
     p = n(114403);
 
@@ -30,31 +30,31 @@ function x(e) {
         className: T,
         showPremiumIcon: S = !0,
         showResetThemeButton: C = !1,
-        forcedDivider: f
-    } = e, I = (0, u.Ay)(t.id, E), {
+        forcedDivider: I
+    } = e, f = (0, u.Ay)(t.id, E), {
         primaryColor: b,
         secondaryColor: N
     } = (0, _.A)({
         user: t,
-        displayProfile: I,
+        displayProfile: f,
         pendingThemeColors: s,
         isPreview: !0
-    }), v = g.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(E, 80), O = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(j, O, !1);
+    }), v = g.Ay.canUsePremiumProfileCustomization(t), O = null != n ? n : t.getAvatarURL(E, 80), j = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(O, j, !1);
     if (null == b || null == N) return null;
     let y = e => {
-        a(r()(e, I?.themeColors) ? void 0 : e)
+        a(r()(e, f?.themeColors) ? void 0 : e)
     };
-    return (0, i.jsx)(A.A, {
+    return (0, i.jsx)(m.A, {
         title: h.intl.string(h.t.DMeO2X),
         disabled: !v && !x,
         className: l()(p.__invalid_profileThemesSection, T),
         showPremiumIcon: S,
-        forcedDivider: f,
+        forcedDivider: I,
         children: (0, i.jsxs)("div", {
             className: p.hd,
             children: [(0, i.jsx)("div", {
                 className: p.YX,
-                children: (0, i.jsx)(m.A, {
+                children: (0, i.jsx)(A.A, {
                     onChange: e => y([e, N]),
                     color: b,
                     suggestedColors: R,
@@ -69,7 +69,7 @@ function x(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: p.YX,
-                children: (0, i.jsx)(m.A, {
+                children: (0, i.jsx)(A.A, {
                     onChange: e => y([b, e]),
                     color: N,
                     suggestedColors: R,

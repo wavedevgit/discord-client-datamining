@@ -33,9 +33,9 @@ function x(e, t) {
                 source: "DM Channel"
             }), s(!1)
         }
-    }, [e.id, n]), N = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot), g = N ? e.getRecipientId() : null, T = (0, i.bG)([d.A], () => null != g && d.A.isFriend(g)), v = (0, i.bG)([d.A], () => null != g && d.A.isIgnored(g)), S = p.default.extractTimestamp(e.id), _ = (0, A.v0)(a()(), a()(S), 18144e5), C = (0, c.l)(e.id);
+    }, [e.id, n]), N = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot), g = N ? e.getRecipientId() : null, T = (0, i.bG)([d.A], () => null != g && d.A.isFriend(g)), v = (0, i.bG)([d.A], () => null != g && d.A.isIgnored(g)), S = p.default.extractTimestamp(e.id), C = (0, A.v0)(a()(), a()(S), 18144e5), _ = (0, c.l)(e.id);
     return {
-        waveShouldShow: N && T && !v && null == t && _ && null == C,
+        waveShouldShow: N && T && !v && null == t && C && null == _,
         wavePressed: x
     }
 }

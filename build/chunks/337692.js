@@ -19,14 +19,14 @@ function r(e) {
     i.useEffect(() => s.A.addRouteChangeListener(() => {
         c("")
     }), []);
-    let [m] = i.useState(() => new l.A(g, n, void 0, r));
+    let [A] = i.useState(() => new l.A(g, n, void 0, r));
     return i.useEffect(() => {
-        t ? (o?.(m), m.createSearchContext()) : (m.clean(), c(""))
-    }, [t, m, o]), {
+        t ? (o?.(A), A.createSearchContext()) : (A.clean(), c(""))
+    }, [t, A, o]), {
         queryResults: u,
         query: d,
         updateQuery: i.useCallback(e => {
-            c(e), m.search(e)
-        }, [m])
+            c(e), A.search(e)
+        }, [A])
     }
 }

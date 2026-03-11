@@ -1,8 +1,8 @@
 /** chunk id: 586685 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => p,
-    SB: () => A,
-    VD: () => m,
+    SB: () => m,
+    VD: () => A,
     b0: () => h
 });
 var i = n(627968);
@@ -18,14 +18,14 @@ var s = n(820284),
     _ = n(531525),
     g = n(652215);
 
-function m() {
+function A() {
     return (0, i.jsx)(s.A, {
         section: g.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
         children: (0, i.jsx)(c.A, {})
     })
 }
 
-function A(e) {
+function m(e) {
     let {
         inOldSettings: t = !1
     } = e;
@@ -57,10 +57,10 @@ function p() {
         value: e,
         children: [(0, i.jsx)(d.x, {
             setting: _.H.GIFT_CODE_REDEMPTION,
-            children: (0, i.jsx)(m, {})
+            children: (0, i.jsx)(A, {})
         }), (0, i.jsx)(d.x, {
             setting: _.H.GIFT_INVENTORY_QUESTS,
-            children: (0, i.jsx)(A, {
+            children: (0, i.jsx)(m, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {

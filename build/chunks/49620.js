@@ -1,39 +1,39 @@
 /** chunk id: 49620 params = (module,exports,require) **/
-a.d(t, {
+n.d(t, {
     c: () => d
 });
-var n = a(627968);
-a(64700);
-var r = a(503698),
-    i = a.n(r),
-    s = a(990078),
-    l = a(397927),
-    c = a(985018),
-    o = a(988573);
+var r = n(627968);
+n(64700);
+var i = n(503698),
+    a = n.n(i),
+    l = n(990078),
+    s = n(397927),
+    c = n(985018),
+    o = n(988573);
 let d = e => {
     let {
         className: t,
-        isPartiallyPurchased: a
+        isPartiallyPurchased: n
     } = e;
-    return a ? (0, n.jsx)(s.m, {
+    return n ? (0, r.jsx)(l.m, {
         position: "top",
         align: "left",
         text: c.intl.string(c.t.y1VWkZ),
-        children: (0, n.jsxs)("div", {
-            className: i()(o.GX, t),
-            children: [(0, n.jsx)("span", {
+        children: (0, r.jsxs)("div", {
+            className: a()(o.GX, t),
+            children: [(0, r.jsx)("span", {
                 className: o.P0,
-                children: (0, n.jsx)(l.mir, {
+                children: (0, r.jsx)(s.mir, {
                     size: "md",
                     color: "currentColor",
                     className: o.G
                 })
-            }), (0, n.jsx)(l.Text, {
+            }), (0, r.jsx)(s.Text, {
                 variant: "text-md/semibold",
                 children: c.intl.string(c.t.BEjTij)
             })]
         })
-    }) : (0, n.jsx)(l.Text, {
+    }) : (0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         className: t,
         children: c.intl.string(c.t["6cfuDj"])

@@ -13,9 +13,9 @@ var i = n(627968),
     u = n(915089),
     _ = n(264779),
     g = n(985018),
-    m = n(424019);
+    A = n(424019);
 
-function A(e) {
+function m(e) {
     let {
         onClose: t,
         transitionState: n
@@ -24,7 +24,7 @@ function A(e) {
         title: "",
         size: "md",
         input: (0, i.jsx)("div", {
-            className: m.aR
+            className: A.aR
         }),
         onClose: async () => await t(),
         actions: [{
@@ -34,13 +34,13 @@ function A(e) {
         }],
         transitionState: n,
         children: (0, i.jsxs)("div", {
-            className: m.t4,
+            className: A.t4,
             children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
                 children: g.intl.string(g.t.iufib1)
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
-                className: m.G3,
+                className: A.G3,
                 children: g.intl.string(g.t.eAn6z2)
             })]
         })
@@ -61,25 +61,25 @@ let h = function(e) {
             promotionId: p.id,
             analyticsLocations: C
         }).then(e => n(e)).catch(e => T(e?.body?.code))
-    }, [h, p.id, n, C]), null != E) ? (0, i.jsx)(A, {
+    }, [h, p.id, n, C]), null != E) ? (0, i.jsx)(m, {
         onClose: t,
         transitionState: x
     }) : null == h ? (0, i.jsx)(r.y$y, {
-        className: m.Lq
+        className: A.Lq
     }) : (0, i.jsx)(l.Modal, {
         title: "",
         size: "md",
         onClose: async () => await t(),
         input: (0, i.jsxs)("div", {
-            className: m.N1,
+            className: A.N1,
             children: [(0, i.jsx)("div", {
-                className: m.Qw
+                className: A.Qw
             }), (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
                 children: g.intl.string(g.t["23BfZh"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
-                className: m.G3,
+                className: A.G3,
                 children: p.outboundRedemptionModalBody
             })]
         }),
@@ -99,7 +99,7 @@ let h = function(e) {
         "aria-label": S,
         children: (0, i.jsxs)("div", {
             children: [(0, i.jsx)(r.cGx, {
-                className: m.M5
+                className: A.M5
             }), (0, i.jsx)(l.D0$, {
                 label: g.intl.string(g.t.s9LFQh),
                 helperText: g.intl.string(g.t["F+nFTZ"]),

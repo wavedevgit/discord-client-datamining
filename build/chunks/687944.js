@@ -14,8 +14,8 @@ var s = n(990078),
     u = n(392943),
     _ = n(927578),
     g = n(580630),
-    m = n(511484),
-    A = n(811611),
+    A = n(511484),
+    m = n(811611),
     h = n(473702),
     p = n(788868),
     x = n(652215),
@@ -28,7 +28,7 @@ let C = {
     object: x.ZSU.CARD
 };
 
-function f(e) {
+function I(e) {
     let {
         premiumSubscription: t,
         discountInfo: n,
@@ -44,11 +44,11 @@ function f(e) {
     });
     if (null == d) return null;
     let u = (0, g.$g)(d.amount, s.currency),
-        m = (0, _.y8)(p.gD.PREMIUM_MONTH_TIER_2, !1, !1, {
+        A = (0, _.y8)(p.gD.PREMIUM_MONTH_TIER_2, !1, !1, {
             currency: t.currency,
             paymentSourceId: t.paymentSourceId
         }),
-        A = (0, g.$g)(m.amount, m.currency);
+        m = (0, g.$g)(A.amount, A.currency);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -62,22 +62,22 @@ function f(e) {
             children: a ? E.intl.format(E.t["3ZiutU"], {
                 percent: n.percentage,
                 numMonths: n.duration,
-                regularPrice: A
+                regularPrice: m
             }) : E.intl.format(E.t.N43FMx, {
                 numMonths: n.duration,
                 discountedPrice: u,
                 billingPeriod: E.intl.string(E.t.FPybU7),
-                fullPrice: A
+                fullPrice: m
             })
         })]
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         discountOffer: t,
         premiumSubscription: n
-    } = e, s = (0, m.tQ)(n, p.gD.PREMIUM_MONTH_TIER_2, t);
+    } = e, s = (0, A.tQ)(n, p.gD.PREMIUM_MONTH_TIER_2, t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -99,15 +99,15 @@ function I(e) {
 let b = function(e) {
     let t, c, {
             subscription: g,
-            invoicePreview: m,
+            invoicePreview: A,
             isLoading: p,
             analyticsLocation: b,
             discountInfo: N,
             renewalChurnDiscountInfo: v,
-            discountOffer: j
+            discountOffer: O
         } = e,
         {
-            analyticsLocations: O
+            analyticsLocations: j
         } = (0, r.Ay)(a.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
         R = e => {
             (0, l.mMO)(async () => {
@@ -118,13 +118,13 @@ let b = function(e) {
                     ...n,
                     premiumSubscription: g,
                     analyticsLocation: b,
-                    analyticsLocations: O,
+                    analyticsLocations: j,
                     initialStep: e
                 })
             })
         },
-        y = _.Ay.getPlanIdFromInvoice(g, m),
-        P = (0, A.ux)(j?.expires_at);
+        y = _.Ay.getPlanIdFromInvoice(g, A),
+        P = (0, m.ux)(O?.expires_at);
     return (0, d.m1)(y) ? null : (0, i.jsx)("div", {
         className: T.S6,
         children: (0, i.jsx)(l.hLv, {
@@ -142,7 +142,7 @@ let b = function(e) {
                         className: T.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
-                        children: null != j && P
+                        children: null != O && P
                     })]
                 }), (0, i.jsx)("div", {
                     className: T.T
@@ -150,13 +150,13 @@ let b = function(e) {
                     className: T.ly,
                     children: [(0, i.jsxs)("div", {
                         className: T.Yc,
-                        children: [null != j ? (0, i.jsx)(I, {
-                            discountOffer: j,
+                        children: [null != O ? (0, i.jsx)(f, {
+                            discountOffer: O,
                             premiumSubscription: g
-                        }) : (0, i.jsx)(f, {
+                        }) : (0, i.jsx)(I, {
                             premiumSubscription: g,
                             discountInfo: N ?? v,
-                            invoicePreview: m,
+                            invoicePreview: A,
                             isDiscountActive: null != N
                         }), (0, i.jsx)("div", {
                             className: T.e_,
@@ -180,7 +180,7 @@ let b = function(e) {
                                         size: "md",
                                         onClick: () => {
                                             (0, o.A)({
-                                                analyticsLocations: O,
+                                                analyticsLocations: j,
                                                 analyticsLocation: b,
                                                 analyticsObject: C,
                                                 subscription: g

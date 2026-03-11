@@ -1,6 +1,6 @@
 /** chunk id: 638130 params = (module,exports,require) **/
 n.d(t, {
-    f: () => A
+    f: () => m
 });
 var i = n(627968);
 n(64700);
@@ -14,9 +14,9 @@ var s = n(444802),
     u = n(531525),
     _ = n(652215),
     g = n(985018),
-    m = n(456144);
+    A = n(456144);
 
-function A() {
+function m() {
     let e = (0, s.WX)(),
         t = [{
             title: g.intl.string(g.t.GYpoAq),
@@ -42,7 +42,7 @@ function A() {
             settingsSection: _.nc_.CONTENT_AND_SOCIAL,
             tabs: t,
             orientation: "vertical",
-            tabsClassName: m.v
+            tabsClassName: A.v
         })]
     })
 }

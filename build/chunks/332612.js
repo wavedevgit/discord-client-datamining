@@ -15,8 +15,8 @@ var c = n(814278),
 n(818143);
 var _ = n(657331),
     g = n(287809),
-    m = n(427262),
-    A = n(985018),
+    A = n(427262),
+    m = n(985018),
     h = n(32086);
 
 function p(e) {
@@ -25,7 +25,7 @@ function p(e) {
         count: n
     } = e, {
         analyticsLocations: u
-    } = (0, d.Ay)(), p = (0, l.bG)([g.default], () => g.default.getUser(t)), x = m.Ay.getFormattedName(p), E = s.useCallback(() => {
+    } = (0, d.Ay)(), p = (0, l.bG)([g.default], () => g.default.getUser(t)), x = A.Ay.getFormattedName(p), E = s.useCallback(() => {
         (0, c.kj)(t)
     }, [t]), T = s.useCallback(() => (0, _.openUserProfileModal)({
         userId: t,
@@ -52,7 +52,7 @@ function p(e) {
             }), (0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: A.intl.format(A.t["/MBjYF"], {
+                children: m.intl.format(m.t["/MBjYF"], {
                     count: n
                 })
             })]
@@ -82,7 +82,7 @@ function x(e) {
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 color: "interactive-text-active",
-                children: A.intl.format(A.t.N4qBBO, {
+                children: m.intl.format(m.t.N4qBBO, {
                     index: r + 1
                 })
             }), (0, i.jsx)(a.Text, {

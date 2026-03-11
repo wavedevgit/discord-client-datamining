@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(492499),
     _ = n(652215),
     g = n(788868),
-    m = n(985018),
-    A = n(844551);
+    A = n(985018),
+    m = n(844551);
 let h = () => {
     let {
         analyticsLocations: e
@@ -34,25 +34,25 @@ let h = () => {
         })
     }, [e, E]), (0, i.jsxs)("div", {
         ref: t,
-        className: A.kL,
+        className: m.kL,
         style: {
             backgroundImage: `url(${n})`
         },
         children: [(0, i.jsx)("div", {
-            className: A.JS,
+            className: m.JS,
             "aria-hidden": !0,
             role: "presentation",
             children: (0, i.jsx)("img", {
                 src: h,
-                className: A.Qw,
+                className: m.Qw,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: A.Em,
+            className: m.Em,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
                 color: T ? "text-overlay-dark" : "currentColor",
-                className: A.DD,
+                className: m.DD,
                 children: p
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
@@ -67,7 +67,7 @@ let h = () => {
                 }))
             },
             variant: "overlay-primary",
-            text: m.intl.string(m.t.fYfGgK)
+            text: A.intl.string(A.t.fYfGgK)
         })]
     })
 }

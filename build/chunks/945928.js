@@ -1,6 +1,6 @@
 /** chunk id: 945928 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => f
+    Q: () => I
 });
 var i = n(64700),
     s = n(311907),
@@ -13,8 +13,8 @@ var i = n(64700),
     u = n(780964),
     _ = n(77735),
     g = n(791460),
-    m = n(53386),
-    A = n(585175),
+    A = n(53386),
+    m = n(585175),
     h = n(338145),
     p = n(299752),
     x = n(180491),
@@ -67,7 +67,7 @@ let C = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
             })
         }
     }),
-    f = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    I = (0, r.zZ)(u.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
             let e = (0, s.bG)([d.A, c.Ay], () => {
                 let e = c.Ay.getInputDeviceId();
@@ -81,5 +81,5 @@ let C = (0, r.Qx)(u.X.VOICE_INPUT_PROFILE_SETTING, {
                 }
             }, [e])
         },
-        buildLayout: () => [C, A.O, h.w, m.h, E.K, p.C, x.m, g.U]
+        buildLayout: () => [C, m.O, h.w, A.h, E.K, p.C, x.m, g.U]
     })

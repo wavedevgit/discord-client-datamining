@@ -3,7 +3,7 @@ r.d(t, {
     AX: () => M,
     JK: () => Q,
     Jx: () => I,
-    YD: () => O,
+    YD: () => F,
     _h: () => $,
     bg: () => b,
     bj: () => L,
@@ -158,7 +158,7 @@ function v(e) {
     })
 }
 
-function F(e) {
+function O(e) {
     let {
         headerId: t,
         titleText: r,
@@ -175,7 +175,7 @@ function F(e) {
     })
 }
 
-function O(e) {
+function F(e) {
     let {
         navId: t,
         item: r,
@@ -189,7 +189,7 @@ function O(e) {
     return (0, n.jsxs)(v, {
         title: o,
         showDivider: s > 0,
-        children: [(0, n.jsx)(F, {
+        children: [(0, n.jsx)(O, {
             headerId: o,
             titleText: o,
             trailingIcon: c

@@ -16,19 +16,19 @@ let g = (0, l.dT)(a.X.CONTENT_AND_SOCIAL_MAIN_TAB, {
         getTitle: () => _.intl.string(_.t["/7xJCF"]),
         buildLayout: () => [o.e, u.q, d.N, c.Y]
     }),
-    m = (0, l.dT)(a.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
+    A = (0, l.dT)(a.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB, {
         initialize: () => {
             s.A.fetch()
         },
         getTitle: () => _.intl.string(_.t.YpCiMt),
         buildLayout: () => [r.j]
     }),
-    A = (0, l.t_)(a.X.CONTENT_AND_SOCIAL_PANEL, {
+    m = (0, l.t_)(a.X.CONTENT_AND_SOCIAL_PANEL, {
         useTitle: () => _.intl.string(_.t["+o1pDZ"]),
-        buildLayout: () => [g, m]
+        buildLayout: () => [g, A]
     }),
     h = (0, l.i4)(a.X.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
         useTitle: () => _.intl.string(_.t["+o1pDZ"]),
         icon: i.ShieldUserIcon,
-        buildLayout: () => [A]
+        buildLayout: () => [m]
     })

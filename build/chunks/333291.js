@@ -1,4 +1,5 @@
 /** chunk id: 333291 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     TA: "offerDetailContainer__11ee8",
     V6: "legalContainer__11ee8",

@@ -1,7 +1,7 @@
 /** chunk id: 250703 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => v
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
@@ -9,15 +9,15 @@ var r = n(627968),
     s = n.n(a),
     l = n(607399),
     o = n(732955),
-    u = n(397927),
-    c = n(97469),
+    c = n(397927),
+    u = n(97469),
     d = n(894858),
-    f = n(641324),
-    m = n(82186),
+    m = n(641324),
+    f = n(82186),
     g = n(985018),
     h = n(379763);
 
-function y(e) {
+function p(e) {
     let {
         icon: t,
         label: n,
@@ -32,37 +32,37 @@ function y(e) {
     })
 }
 
-function p(e) {
+function y(e) {
     let {
         setting: t,
         onClose: n
-    } = e, i = (0, c.NC)();
-    return (0, r.jsx)(u.NPJ, {
+    } = e, i = (0, u.NC)();
+    return (0, r.jsx)(c.NPJ, {
         theme: i,
         children: e => (0, r.jsxs)("div", {
             className: s()(h.$Q, e),
-            children: [(0, r.jsxs)(u.BJc, {
+            children: [(0, r.jsxs)(c.BJc, {
                 direction: "horizontal",
                 align: "center",
                 className: h.y9,
-                children: [l.Fr && (0, r.jsx)(y, {
-                    icon: u.fEi,
+                children: [l.Fr && (0, r.jsx)(p, {
+                    icon: c.fEi,
                     onClick: () => d.A.setState({
                         showNavigationMobile: !0
                     }),
                     label: g.intl.string(g.t["13/7kX"])
-                }), null != t && (0, r.jsx)(m.E, {
+                }), null != t && (0, r.jsx)(f.E, {
                     node: t
                 })]
-            }), (0, r.jsx)(y, {
-                icon: u.d$L,
+            }), (0, r.jsx)(p, {
+                icon: c.d$L,
                 onClick: n,
                 label: g.intl.string(g.t.cpT0Cq)
             })]
         })
     })
 }
-let v = i.memo(function(e) {
+let _ = i.memo(function(e) {
     let {
         onClose: t,
         setting: n
@@ -72,12 +72,12 @@ let v = i.memo(function(e) {
             [h.Hw]: l.Fr,
             [h.n7]: i
         }),
-        children: [(0, r.jsx)(p, {
+        children: [(0, r.jsx)(y, {
             setting: n,
             onClose: t
         }), (0, r.jsx)("div", {
             className: h.yp,
-            children: null != n && (0, r.jsx)(f.A, {
+            children: null != n && (0, r.jsx)(m.A, {
                 node: n
             })
         })]

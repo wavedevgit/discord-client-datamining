@@ -1,6 +1,6 @@
 /** chunk id: 69551 params = (module,exports,require) **/
 n.d(t, {
-    l: () => m
+    l: () => A
 });
 var i = n(311907),
     s = n(890138),
@@ -13,7 +13,7 @@ var i = n(311907),
     u = n(780964),
     _ = n(652215),
     g = n(985018);
-let m = (0, r.zD)(u.X.DISPLAY_SYNC_THEME, {
+let A = (0, r.zD)(u.X.DISPLAY_SYNC_THEME, {
     useTitle: () => g.intl.string(g.t["/B+kEV"]),
     useSearchTerms: () => [g.intl.string(g.t.Ksh3ik)],
     useValue: function() {

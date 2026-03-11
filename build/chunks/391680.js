@@ -1,6 +1,6 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -15,13 +15,13 @@ var s = n(311907),
     _ = n(840065),
     g = n(652215);
 
-function m() {
+function A() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: m,
-        isLoggingAnalyticsEvents: A,
+        isLoggingOverlayEvents: A,
+        isLoggingAnalyticsEvents: m,
         isTracingRequests: h,
         isForcedCanary: p,
         isAxeEnabled: x,
@@ -43,9 +43,9 @@ function m() {
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
         horizontalSpacing: C,
-        verticalSpacing: f
+        verticalSpacing: I
     } = (0, r.Or)(), {
-        setHorizontalSpacing: I,
+        setHorizontalSpacing: f,
         setVerticalSpacing: b
     } = r.Or.getState(), N = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
@@ -111,19 +111,19 @@ function m() {
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: m,
+            checked: A,
             action: () => {
                 (0, a.x)({
-                    logOverlayEvents: !m
+                    logOverlayEvents: !A
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
             id: "analytics-events",
             label: "Analytics Events",
-            checked: A,
+            checked: m,
             action: () => {
                 (0, a.x)({
-                    logAnalyticsEvents: !A
+                    logAnalyticsEvents: !m
                 })
             }
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
@@ -181,7 +181,7 @@ function m() {
                     value: C,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => I(e),
+                    onChange: e => f(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -191,7 +191,7 @@ function m() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: f,
+                    value: I,
                     minValue: 0,
                     maxValue: r.YR,
                     onChange: e => b(e),

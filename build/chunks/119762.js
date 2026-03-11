@@ -1,6 +1,6 @@
 /** chunk id: 119762 params = (module,exports,require) **/
 n.d(t, {
-    Af: () => I,
+    Af: () => f,
     Ay: () => b,
     Ob: () => C,
     jH: () => S
@@ -16,8 +16,8 @@ var i = n(627968),
     u = n(754333),
     _ = n(287809),
     g = n(791606),
-    m = n(403362),
-    A = n(780964),
+    A = n(403362),
+    m = n(780964),
     h = n(740625),
     p = n(840065),
     x = n(652215),
@@ -48,7 +48,7 @@ function C() {
     })
 }
 
-function f(e) {
+function I(e) {
     let {
         checked: t,
         otherSessions: n
@@ -73,7 +73,7 @@ function f(e) {
     })
 }
 
-function I() {
+function f() {
     let {
         currentSession: e,
         otherSessions: t
@@ -92,7 +92,7 @@ function I() {
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(v, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: T.wq,
-            children: (0, i.jsx)(f, {
+            children: (0, i.jsx)(I, {
                 checked: l,
                 otherSessions: t
             })
@@ -108,7 +108,7 @@ function b() {
         children: [(0, i.jsx)(S, {}), (0, i.jsxs)(o.BJc, {
             gap: 24,
             className: T.Mf,
-            children: [(0, i.jsx)(C, {}), (0, i.jsx)(I, {})]
+            children: [(0, i.jsx)(C, {}), (0, i.jsx)(f, {})]
         })]
     })
 }
@@ -122,7 +122,7 @@ function N(e) {
         useChecks: r
     } = e, d = t.client_info?.location ?? t.client_info?.ip, _ = t.client_info?.platform, {
         text: g,
-        icon: A
+        icon: m
     } = function(e) {
         switch (e?.toLowerCase().trim()) {
             case null:
@@ -145,7 +145,7 @@ function N(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), h = n ? null : (0, u.Y)(t.approx_last_used_time), p = [g, _].filter(m.Vq), x = [d, h].filter(m.Vq);
+    }(t.client_info?.os), h = n ? null : (0, u.Y)(t.approx_last_used_time), p = [g, _].filter(A.Vq), x = [d, h].filter(A.Vq);
     return (0, i.jsxs)("div", {
         className: a()(T.dZ, {
             [T.gg]: n
@@ -154,7 +154,7 @@ function N(e) {
             className: T.OC,
             children: [(0, i.jsx)("div", {
                 className: T.km,
-                children: (0, i.jsx)(A, {
+                children: (0, i.jsx)(m, {
                     size: "md",
                     color: "currentColor"
                 })
@@ -236,7 +236,7 @@ function v() {
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
                         children: E.intl.format(E.t["044+8i"], {
-                            onClick: () => (0, p.openUserSettings)(A.X.ACCOUNT_PANEL, {
+                            onClick: () => (0, p.openUserSettings)(m.X.ACCOUNT_PANEL, {
                                 section: x.nc_.ACCOUNT,
                                 analyticsLocations: [d.A.USER_SETTINGS_SESSIONS]
                             })

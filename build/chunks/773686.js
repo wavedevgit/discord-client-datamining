@@ -1,6 +1,6 @@
 /** chunk id: 773686 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(626584),
     s = n(260509),
@@ -13,7 +13,7 @@ var i = n(626584),
     u = n(7864),
     _ = n(723176);
 let g = new i.A("Guilds"),
-    m = new class {
+    A = new class {
         async getAsync(e) {
             let t = performance.now(),
                 n = await _.A.guilds(e).getMany(),

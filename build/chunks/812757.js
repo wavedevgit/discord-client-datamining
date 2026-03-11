@@ -13,13 +13,13 @@ var i = n(627968),
     u = n(419954),
     _ = n(532624),
     g = n(780964),
-    m = n(652215),
-    A = n(985018),
+    A = n(652215),
+    m = n(985018),
     h = n(280973);
 let p = (0, u.E2)(g.X.CLIPS_KEYBIND, {
-    useSearchTerms: () => [A.intl.string(A.t.pf54EU), A.intl.string(A.t["QyB/jK"])],
+    useSearchTerms: () => [m.intl.string(m.t.pf54EU), m.intl.string(m.t["QyB/jK"])],
     Component: () => {
-        let e = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(m.hCu.SAVE_CLIP, !0));
+        let e = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(A.hCu.SAVE_CLIP, !0));
         a()(null != e, "Save clip keybind unset");
         let t = s.useCallback(t => {
             d.A.setKeybind({
@@ -28,8 +28,8 @@ let p = (0, u.E2)(g.X.CLIPS_KEYBIND, {
             })
         }, [e]);
         return (0, i.jsx)(o.D0$, {
-            label: A.intl.string(A.t.pf54EU),
-            description: A.intl.string(A.t["QyB/jK"]),
+            label: m.intl.string(m.t.pf54EU),
+            description: m.intl.string(m.t["QyB/jK"]),
             layout: "horizontal",
             children: (0, i.jsx)("div", {
                 className: h.g,

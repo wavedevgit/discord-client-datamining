@@ -1,6 +1,6 @@
 /** chunk id: 299628 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -41,14 +41,14 @@ let g = e => {
             })]
         })
     },
-    m = e => {
+    A = e => {
         let {
             inModal: t
-        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), _ = c.intl.string(d.default["JvJ3P/"]), m = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), A = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), h = c.intl.string(d.default["4SCALu"]), p = c.intl.string(d.default.oYf9P7), x = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), E = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), T = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), S = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
+        } = e, n = (0, o.y)(c.intl.string(d.default["TCzk/e"]), c.intl.string(d.default["2OqtJJ"])), s = (0, o.y)(c.intl.string(d.default.ASf7XN), c.intl.string(d.default["82y87X"])), l = (0, o.y)(c.intl.string(d.default["0QDVFN"]), c.intl.string(d.default["1xBHHV"])), _ = c.intl.string(d.default["JvJ3P/"]), A = (0, o.y)(c.intl.string(d.default.l0ChgF), c.intl.string(d.default.S2ss5X)), m = (0, o.y)(c.intl.string(d.default.LDu4Uk), c.intl.string(d.default.fEgtLV)), h = c.intl.string(d.default["4SCALu"]), p = c.intl.string(d.default.oYf9P7), x = (0, o.y)(c.intl.string(d.default["dES/2r"]), c.intl.string(d.default.ep6mdN)), E = (0, o.y)(c.intl.string(d.default["30+sih"]), c.intl.string(d.default["0cuLn1"])), T = (0, o.y)(c.intl.string(d.default.tHTyRh), c.intl.string(d.default.TeNlMb)), S = (0, o.y)(c.intl.string(d.default.wZejZr), c.intl.string(d.default.tdgcf1));
         return (0, i.jsxs)("div", {
             children: [(0, i.jsx)(g, {
                 header: _,
-                description: m,
+                description: A,
                 icon: (0, i.jsx)(r.$yI, {
                     size: "custom",
                     width: 20,
@@ -58,7 +58,7 @@ let g = e => {
                 inModal: t
             }), (0, i.jsx)(g, {
                 header: c.intl.string(d.default["44NEx6"]),
-                description: A,
+                description: m,
                 icon: (0, i.jsx)(r.Bxc, {
                     size: "custom",
                     width: 20,

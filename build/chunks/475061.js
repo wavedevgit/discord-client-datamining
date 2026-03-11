@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(780964),
     _ = n(801264),
     g = n(902713),
-    m = n(428961),
-    A = n(639500),
+    A = n(428961),
+    m = n(639500),
     h = n(731854),
     p = n(985018);
 let x = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
@@ -52,5 +52,5 @@ let T = (0, r.zZ)(u.X.VOICE_CATEGORY, {
             })
         } : null, [e.canPrompt, l])
     },
-    buildLayout: () => [g.a, m.d, A.L]
+    buildLayout: () => [g.a, A.d, m.L]
 })

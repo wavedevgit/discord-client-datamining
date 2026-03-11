@@ -19,21 +19,21 @@ function o(e) {
         useDisabled: u,
         useDisabledMessage: _,
         usePersistentBadge: g,
-        hasIcon: m,
-        getDismissibleBadges: A
-    } = t, h = d(), p = c?.(), x = n(), E = u?.() ?? !1, T = _?.(), S = g?.(), C = A?.(), f = (0, l.A)({
+        hasIcon: A,
+        getDismissibleBadges: m
+    } = t, h = d(), p = c?.(), x = n(), E = u?.() ?? !1, T = _?.(), S = g?.(), C = m?.(), I = (0, l.A)({
         persistentBadge: S,
         dismissibleBadges: C
-    }), I = (0, a.q)(t);
+    }), f = (0, a.q)(t);
     return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: h,
             description: p,
-            badge: f,
+            badge: I,
             checked: x,
-            hasIcon: m,
+            hasIcon: A,
             onChange: e => {
-                I(), o(e)
+                f(), o(e)
             },
             disabled: E
         }), E && null != T ? (0, i.jsx)(s.po8, {

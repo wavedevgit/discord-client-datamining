@@ -19,20 +19,20 @@ function o(e) {
         clearable: u,
         usePersistentBadge: _,
         getDismissibleBadges: g
-    } = t, m = t.setValue, A = o(), h = d?.(), p = n(), x = c(), E = _?.(), T = g?.(), S = (0, l.A)({
+    } = t, A = t.setValue, m = o(), h = d?.(), p = n(), x = c(), E = _?.(), T = g?.(), S = (0, l.A)({
         persistentBadge: E,
         dismissibleBadges: T
     }), C = (0, a.q)(t);
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(s.l6P, {
             selectionMode: "single",
-            label: A,
+            label: m,
             description: h,
             options: x,
             value: p,
             clearable: u,
             onSelectionChange: e => {
-                C(), m(e)
+                C(), A(e)
             },
             layout: "horizontal-responsive",
             fullWidth: !0,

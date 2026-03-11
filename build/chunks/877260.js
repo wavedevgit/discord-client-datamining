@@ -1,7 +1,7 @@
 /** chunk id: 877260 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    L: () => A
+    L: () => b
 }), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -9,71 +9,71 @@ var r = n(627968),
     s = n.n(a),
     l = n(837381),
     o = n(607399),
-    u = n(397927),
-    c = n(928039),
+    c = n(397927),
+    u = n(928039),
     d = n(932001),
-    f = n(97469),
-    m = n(199966),
+    m = n(97469),
+    f = n(199966),
     g = n(894858),
     h = n(397274),
-    y = n(189857),
-    p = n(188180),
-    v = n(133457),
+    p = n(189857),
+    y = n(188180),
+    _ = n(133457),
     x = n(985018),
-    b = n(658646);
+    v = n(658646);
 
-function A(e) {
+function b(e) {
     let {
         root: t,
         footer: n,
         onClose: a,
-        emptyState: p,
-        searchQuery: A,
-        onSearchChange: S
-    } = e, N = g.A.useField("showNavigationMobile"), C = i.useRef(null), [k] = i.useState(t), {
+        emptyState: y,
+        searchQuery: b,
+        onSearchChange: N
+    } = e, S = g.A.useField("showNavigationMobile"), C = i.useRef(null), [k] = i.useState(t), {
         accessibleDirectory: E
-    } = (0, m._)(), w = i.useMemo(() => (0, y.Z)(k, E), [k, E]), [R] = (0, d.kn)(w.allDismissibleContents);
-    (0, v.B)({
-        visibleContent: R,
+    } = (0, f._)(), w = i.useMemo(() => (0, p.Z)(k, E), [k, E]), [I] = (0, d.kn)(w.allDismissibleContents);
+    (0, _.B)({
+        visibleContent: I,
         dismissibleBadges: w,
         accessibleDirectory: E
     });
-    let [T, I] = i.useMemo(() => {
+    let [T, R] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), P = (0, f.NC)(), D = (0, c.A)("settings-sidebar", C);
-    return (0, r.jsx)(u.NPJ, {
+    }, [t.layout]), P = (0, m.NC)(), D = (0, u.A)("settings-sidebar", C);
+    return (0, r.jsx)(c.NPJ, {
         theme: P,
         children: e => (0, r.jsxs)("div", {
-            className: s()(b.pz, e, {
-                [b.Hw]: o.Fr,
-                [b.n7]: N
+            className: s()(v.pz, e, {
+                [v.Hw]: o.Fr,
+                [v.n7]: S
             }),
             children: [(0, r.jsxs)("div", {
-                className: b.gM,
+                className: v.gM,
                 children: [o.Fr && (0, r.jsx)("div", {
-                    className: b.hg,
-                    children: (0, r.jsx)(u.K0, {
-                        icon: u.d$L,
+                    className: v.hg,
+                    children: (0, r.jsx)(c.K0, {
+                        icon: c.d$L,
                         onClick: a,
                         variant: "icon-only",
                         size: "sm",
                         "aria-label": x.intl.string(x.t.cpT0Cq)
                     })
                 }), (0, r.jsx)("div", {
-                    children: T.map(e => (0, r.jsx)(_, {
+                    children: T.map(e => (0, r.jsx)(A, {
                         section: e,
-                        visibleContent: R,
+                        visibleContent: I,
                         dismissibleBadges: w,
                         hoisted: !0
                     }, e.key))
-                }), null != A && null != S && (0, r.jsx)(j, {
-                    searchQuery: A,
-                    onSearchChange: S
-                }), null != p && 0 === I.length && (0, r.jsx)(p, {})]
+                }), null != b && null != N && (0, r.jsx)(j, {
+                    searchQuery: b,
+                    onSearchChange: N
+                }), null != y && 0 === R.length && (0, r.jsx)(y, {})]
             }), (0, r.jsx)(l.hD, {
                 navigator: D,
                 children: (0, r.jsx)(l.PR, {
@@ -82,18 +82,18 @@ function A(e) {
                             ref: t,
                             ...i
                         } = e;
-                        return (0, r.jsxs)(u.ChK, {
+                        return (0, r.jsxs)(c.ChK, {
                             ref: e => {
                                 C.current = e, h.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
-                            className: b.Mt,
+                            className: v.Mt,
                             fade: !0,
                             ...i,
                             children: [(0, r.jsx)("nav", {
-                                className: b.C$,
-                                children: I.map(e => (0, r.jsx)(_, {
+                                className: v.C$,
+                                children: R.map(e => (0, r.jsx)(A, {
                                     section: e,
-                                    visibleContent: R,
+                                    visibleContent: I,
                                     dismissibleBadges: w
                                 }, e.key))
                             }), null != n && (0, r.jsx)(n, {})]
@@ -105,7 +105,7 @@ function A(e) {
     })
 }
 
-function _(e) {
+function A(e) {
     let {
         section: t,
         visibleContent: n,
@@ -113,17 +113,17 @@ function _(e) {
         hoisted: a = !1
     } = e, s = t.useTitle?.();
     return (0, r.jsxs)("ul", {
-        className: b.uW,
+        className: v.uW,
         "aria-label": s,
         children: [null != s && (0, r.jsx)("div", {
-            className: b.a9,
-            children: (0, r.jsx)(u.Heading, {
-                className: b.Pf,
+            className: v.a9,
+            children: (0, r.jsx)(c.Heading, {
+                className: v.Pf,
                 variant: "heading-sm/medium",
                 color: "text-muted",
                 children: s
             })
-        }), t.layout.map(e => (0, r.jsx)(p.X, {
+        }), t.layout.map(e => (0, r.jsx)(y.X, {
             node: e,
             visibleContent: n,
             dismissibleBadges: i,
@@ -140,8 +140,8 @@ function j(e) {
         n("")
     }, [n]);
     return (0, r.jsx)("div", {
-        className: b.PP,
-        children: (0, r.jsx)(u.IWV, {
+        className: v.PP,
+        children: (0, r.jsx)(c.IWV, {
             size: "md",
             query: t,
             onChange: n,

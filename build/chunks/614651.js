@@ -18,8 +18,8 @@ var i = n(627968),
     u = n(817281),
     _ = n(964486),
     g = n(775121),
-    m = n(955572),
-    A = n(775602),
+    A = n(955572),
+    m = n(775602),
     h = n(502229),
     p = n(47671),
     x = n(920603),
@@ -27,13 +27,13 @@ var i = n(627968),
     T = n(141468),
     S = n(963852),
     C = n(763754),
-    f = n(20851),
-    I = n(195043),
+    I = n(20851),
+    f = n(195043),
     b = n(97469),
     N = n(287809),
     v = n(723702),
-    j = n(544028),
-    O = n(964404),
+    O = n(544028),
+    j = n(964404),
     R = n(253932),
     y = n(780964),
     P = n(70040),
@@ -127,20 +127,20 @@ let B = {
             {
                 theme: l,
                 messageGroupSpacing: o
-            } = (0, r.cf)([j.A, A.A], () => ({
-                theme: j.A.theme,
-                messageGroupSpacing: A.A.messageGroupSpacing
+            } = (0, r.cf)([O.A, m.A], () => ({
+                theme: O.A.theme,
+                messageGroupSpacing: m.A.messageGroupSpacing
             })),
             [u] = s.useState(() => X(U.NJ8.DARK)),
             [_] = s.useState(() => X(U.NJ8.LIGHT)),
             g = t && n,
-            m = (0, d.Mw)(l) ? u : _;
+            A = (0, d.Mw)(l) ? u : _;
         return (0, i.jsx)(c.M1G, {
             children: (0, i.jsx)(c.ZpM, {
                 className: a()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
-                children: m.map((t, n) => (0, i.jsx)(f.A, {
+                children: A.map((t, n) => (0, i.jsx)(I.A, {
                     author: (0, C.p_)(t),
                     message: t,
                     compact: e,
@@ -237,7 +237,7 @@ class J extends s.Component {
         let {
             value: t
         } = e;
-        R.hH.updateSetting(t === B.COMPACT), (0, m.AC)()
+        R.hH.updateSetting(t === B.COMPACT), (0, A.AC)()
     };
     handleUIDensityChange = e => {
         let {
@@ -257,7 +257,7 @@ class J extends s.Component {
         })
     }
     handleFontSizeChange(e) {
-        (0, m.XS)(e)
+        (0, A.XS)(e)
     }
     handleMessageSpacingChange(e) {
         switch (e) {
@@ -266,19 +266,19 @@ class J extends s.Component {
             case 8:
             case 16:
             case 24:
-                (0, m.AC)(e)
+                (0, A.AC)(e)
         }
     }
     handleZoomChange(e) {
-        (0, m.Qp)(e)
+        (0, A.Qp)(e)
     }
     render() {
         let {
             density: e
-        } = this.props, t = (0, i.jsxs)(I.x, {
+        } = this.props, t = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_THEME,
             children: [this.renderPreview(), this.renderTheme()]
-        }), n = (0, i.jsx)(I.x, {
+        }), n = (0, i.jsx)(f.x, {
             setting: M.H.APPEARANCE_ICON,
             children: (0, i.jsx)(L.yG, {})
         }), s = [{
@@ -290,7 +290,7 @@ class J extends s.Component {
         }, {
             name: V.intl.string(V.t["4cuYHx"]),
             value: o.NS.COZY
-        }], l = (0, i.jsxs)(I.x, {
+        }], l = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_LIST_SPACING,
             children: [(0, i.jsx)(c.z6M, {
                 label: V.intl.string(V.t["C/5V0A"]),
@@ -303,7 +303,7 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), a = (0, i.jsxs)(I.x, {
+        }), a = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["2ed/sA"]),
@@ -330,7 +330,7 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), r = (0, i.jsxs)(I.x, {
+        }), r = (0, i.jsxs)(f.x, {
             setting: M.H.APPEARANCE_SCALING_SPACING,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["0Yh+ZX"]),
@@ -360,14 +360,14 @@ function Q() {
         (0, x.v)()
     });
     let a = (0, b.qo)(),
-        o = (0, r.cf)([j.A, O.Ay, A.A, N.default, p.A], () => ({
-            theme: j.A.theme,
-            useForcedColors: A.A.useForcedColors,
-            useSystemTheme: O.Ay.useSystemTheme,
-            fontSize: A.A.fontSize,
-            zoom: A.A.zoom,
-            messageGroupSpacing: A.A.messageGroupSpacing,
-            displayCompactAvatars: O.Ay.displayCompactAvatars,
+        o = (0, r.cf)([O.A, j.Ay, m.A, N.default, p.A], () => ({
+            theme: O.A.theme,
+            useForcedColors: m.A.useForcedColors,
+            useSystemTheme: j.Ay.useSystemTheme,
+            fontSize: m.A.fontSize,
+            zoom: m.A.zoom,
+            messageGroupSpacing: m.A.messageGroupSpacing,
+            displayCompactAvatars: j.Ay.displayCompactAvatars,
             isStaff: N.default.getCurrentUser()?.isStaff ?? !1,
             gradientPreset: p.A.gradientPreset
         }));

@@ -1,6 +1,6 @@
 /** chunk id: 309198 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -13,11 +13,11 @@ var i = n(627968),
     u = n(652215),
     _ = n(53516),
     g = n(985018),
-    m = n(139674);
+    A = n(139674);
 
-function A(e) {
+function m(e) {
     let t, n, {
-            currentUser: A,
+            currentUser: m,
             togglingSMS: h
         } = e,
         [p, x] = s.useState(!1),
@@ -38,11 +38,11 @@ function A(e) {
             T()
         }, [T]),
         C = s.useCallback(() => {
-            null == A.phone ? T({
+            null == m.phone ? T({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
-        }, [A, T]),
-        f = s.useCallback(() => {
+        }, [m, T]),
+        I = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
@@ -50,18 +50,18 @@ function A(e) {
                 children: g.intl.string(g.t["W0/Duf"])
             }))
         }, []),
-        I = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
-        b = null != A.phone,
-        N = A.hasFlag(u.nhx.MFA_SMS);
+        f = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
+        b = null != m.phone,
+        N = m.hasFlag(u.nhx.MFA_SMS);
     if (b || N) {
-        let e = p ? A.phone : I(A.phone);
+        let e = p ? m.phone : f(m.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [g.intl.format(g.t.PXVoEO, {
                 phoneNumber: e
             }), (0, i.jsx)(l.MzZ, {
                 onClick: E,
-                className: m.vN,
+                className: A.vN,
                 children: p ? g.intl.string(g.t.FfltIN) : g.intl.string(g.t.llArAg)
             })]
         })
@@ -71,10 +71,10 @@ function A(e) {
         size: "sm",
         text: g.intl.string(g.t.KLWnit),
         loading: h,
-        onClick: f
+        onClick: I
     });
     else {
-        let e = (0, c.B)(A);
+        let e = (0, c.B)(m);
         t = (0, i.jsxs)(l.ButtonGroup, {
             size: "sm",
             children: [(0, i.jsx)(l.Button, {

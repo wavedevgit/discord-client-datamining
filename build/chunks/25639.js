@@ -1,6 +1,6 @@
 /** chunk id: 25639 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A,
+    A: () => N,
     s: () => o
 });
 var l, i = n(311907),
@@ -22,7 +22,7 @@ function g(e) {
         null != t && (u[e] = {
             ...t,
             style: "GENTLE_AMBIENT"
-        }, N.emitChange()), delete c[e]
+        }, E.emitChange()), delete c[e]
     }, 2e3)
 }
 
@@ -46,7 +46,7 @@ class p extends i.Ay.Store {
         return u[e]?.userCount ?? 0
     }
 }
-let N = new p(a.h, {
+let E = new p(a.h, {
         VOICE_STATE_UPDATES: function(e) {
             let {
                 voiceStates: t
@@ -90,4 +90,4 @@ let N = new p(a.h, {
         CONNECTION_OPEN: m,
         LOGOUT: m
     }),
-    A = N
+    N = E

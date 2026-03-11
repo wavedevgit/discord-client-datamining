@@ -23,11 +23,11 @@ function g(e) {
     let a = null != n,
         {
             name: g,
-            description: m,
-            hideDescriptionUntilUnlock: A,
+            description: A,
+            hideDescriptionUntilUnlock: m,
             onAction: h
         } = s,
-        p = A && !a,
+        p = m && !a,
         x = a ? "text-strong" : "text-muted",
         E = a ? "text-default" : "text-muted",
         T = r()(n),
@@ -59,7 +59,7 @@ function g(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "text-xs/normal",
                 color: E,
-                children: p ? "?????" : m()
+                children: p ? "?????" : A()
             })]
         })]
     })

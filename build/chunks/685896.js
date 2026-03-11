@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(419954),
     _ = n(954571),
     g = n(780964),
-    m = n(652215),
-    A = n(635917),
+    A = n(652215),
+    m = n(635917),
     h = n(788868),
     p = n(985018);
 let x = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
@@ -30,7 +30,7 @@ let x = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
             }),
             u = (0, a.bG)([o.A], () => o.A.isUpsellPreview);
         return (0, s.Ay)(() => {
-            u && _.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+            u && _.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: h.e.APP_ICON_UPSELL,
                 location_stack: [r.A.USER_SETTINGS]
             })
@@ -43,7 +43,7 @@ let x = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
                 gap: 8,
                 children: (0, i.jsx)(d.m, {
                     disabled: u,
-                    size: A.N8.SIZE_48
+                    size: m.N8.SIZE_48
                 })
             })
         })

@@ -14,8 +14,8 @@ var i = n(64700),
     u = n(119762),
     _ = n(119695),
     g = n(766761),
-    m = n(985018);
-let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
+    A = n(985018);
+let m = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
         buildLayout: () => [_.I, g.A],
         initialize: () => ((0, a.GY)(), () => {
             (0, a.ZQ)()
@@ -28,12 +28,12 @@ let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
         }
     }),
     h = (0, r.t_)(d.X.SESSIONS_PANEL, {
-        useTitle: () => (0, c._A)("SessionsPanel") ? m.intl.string(m.t.mEndXM) : m.intl.string(m.t["+1h0k/"]),
+        useTitle: () => (0, c._A)("SessionsPanel") ? A.intl.string(A.t.mEndXM) : A.intl.string(A.t["+1h0k/"]),
         hideInStreamerMode: !0,
-        buildLayout: () => [A]
+        buildLayout: () => [m]
     }),
     p = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
-        useTitle: () => m.intl.string(m.t["+1h0k/"]),
+        useTitle: () => A.intl.string(A.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
         getDismissibleBadges: function() {
             return [{

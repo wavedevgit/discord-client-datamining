@@ -18,13 +18,13 @@ function u(e) {
         [u, _] = s.useState(!1),
         {
             layout: g,
-            collapseAfter: m,
-            useCollapsibleTitle: A,
+            collapseAfter: A,
+            useCollapsibleTitle: m,
             useCollapsedSubtitle: h
         } = n,
-        p = null != m ? g.slice(0, m) : g,
-        x = null != m ? g.slice(m) : [],
-        E = A?.(u, x.length) ?? (t = x.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
+        p = null != A ? g.slice(0, A) : g,
+        x = null != A ? g.slice(A) : [],
+        E = m?.(u, x.length) ?? (t = x.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
             count: t
         }) : d.intl.formatToPlainString(d.t["8JRFyZ"], {
             count: t

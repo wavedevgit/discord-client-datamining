@@ -24,7 +24,7 @@ function u(e) {
         purchaseScene: d.V1.Scenes.STARS,
         errorScene: d.V1.Scenes.ERROR,
         successScene: d.V1.Scenes.SUCCESS
-    }), m = (0, s.bG)([a.A], () => a.A.useReducedMotion);
+    }), A = (0, s.bG)([a.A], () => a.A.useReducedMotion);
     return (0, i.jsxs)(l.rQ0, {
         "data-migration-pending": !0,
         align: r.A.Align.START,
@@ -35,7 +35,7 @@ function u(e) {
             nextScene: _,
             onScenePlay: e => g(d.V1.getNextScene(e)),
             pauseWhileUnfocused: !1,
-            pause: m
+            pause: A
         }), (0, i.jsx)("div", {
             className: c.qd
         }), (0, i.jsx)(l.s_y, {

@@ -1,50 +1,50 @@
 /** chunk id: 370372 params = (module,exports,require) **/
-e.d(r, {
-    default: () => M
+r.d(e, {
+    default: () => T
 });
-var t = e(627968);
-e(64700);
-var i = e(397927),
-    l = e(442433),
-    s = e(847767),
-    c = e(358367),
-    a = e(468389),
-    d = e(793574),
-    A = e(50268),
-    o = e(515610),
-    h = e(133238),
-    x = e(795144),
-    u = e(979807),
-    j = e(671470),
-    X = e(769591),
-    V = e(533957),
-    N = e(886393),
-    E = e(477190),
-    C = e(307623),
-    _ = e(317910),
-    b = e(475777),
-    m = e(848977),
-    v = e(995102),
-    g = e(288104),
-    f = e(661504),
-    S = e(969128),
-    k = e(652215),
-    p = e(985018);
+var t = r(627968);
+r(64700);
+var i = r(397927),
+    l = r(442433),
+    s = r(847767),
+    c = r(358367),
+    a = r(468389),
+    d = r(793574),
+    A = r(50268),
+    o = r(515610),
+    h = r(133238),
+    x = r(795144),
+    j = r(979807),
+    u = r(671470),
+    X = r(769591),
+    V = r(533957),
+    N = r(886393),
+    E = r(477190),
+    C = r(307623),
+    _ = r(317910),
+    m = r(475777),
+    b = r(848977),
+    g = r(995102),
+    v = r(288104),
+    S = r(661504),
+    f = r(969128),
+    k = r(652215),
+    p = r(985018);
 
 function y(n) {
     let {
-        channel: r,
-        onSelect: e
-    } = n, s = (0, m.A)(r), c = (0, N.A)(r), d = (0, h.m)(r), o = (0, h.y)(r), V = (0, x.A)(r), E = (0, u.A)(r), C = (0, j.A)(r), b = (0, v.Ay)(r), S = (0, g.A)(r), k = (0, _.A)(r), y = (0, A.A)({
-        id: r.id,
+        channel: e,
+        onSelect: r
+    } = n, s = (0, b.A)(e), c = (0, N.A)(e), d = (0, h.m)(e), o = (0, h.y)(e), V = (0, x.A)(e), E = (0, j.A)(e), C = (0, u.A)(e), m = (0, g.Ay)(e), f = (0, v.A)(e), k = (0, _.A)(e), y = (0, A.A)({
+        id: e.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), I = (0, a.A)(r), M = (0, f.Ay)(r), T = (0, X.os)("ChannelContextFavoritesMenu");
+    }), M = (0, a.A)(e), T = (0, S.Ay)(e), H = (0, X.os)("ChannelContextFavoritesMenu");
     return (0, t.jsxs)(i.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
         onClose: l.Z_,
         "aria-label": p.intl.string(p.t.Xm41aV),
-        onSelect: e,
+        onSelect: r,
         children: [(0, t.jsx)(i.rXV, {
             children: s
         }), (0, t.jsx)(i.rXV, {
@@ -52,13 +52,13 @@ function y(n) {
         }), (0, t.jsxs)(i.rXV, {
             children: [d, C]
         }), (0, t.jsxs)(i.rXV, {
-            children: [b, T ? M : S]
+            children: [m, H ? T : f]
         }), (0, t.jsx)(i.rXV, {
             children: V
         }), (0, t.jsx)(i.rXV, {
             children: k
         }), (0, t.jsx)(i.rXV, {
-            children: I
+            children: M
         }), (0, t.jsx)(i.rXV, {
             children: o
         }), (0, t.jsx)(i.rXV, {
@@ -69,15 +69,15 @@ function y(n) {
     })
 }
 
-function I(n) {
+function M(n) {
     let {
-        channel: r,
-        guild: e,
+        channel: e,
+        guild: r,
         onSelect: s
-    } = n, c = (0, m.A)(r), d = (0, N.A)(r), o = (0, h.m)(r), x = (0, h.y)(r), u = (0, S.A)(r), j = (0, v.Ay)(r), k = (0, _.A)(r), y = (0, b.A)(r, e), I = (0, V.A)(r, e), M = (0, E.A)(r, e), T = (0, C.A)(r), H = (0, A.A)({
-        id: r.id,
+    } = n, c = (0, b.A)(e), d = (0, N.A)(e), o = (0, h.m)(e), x = (0, h.y)(e), j = (0, f.A)(e), u = (0, g.Ay)(e), k = (0, _.A)(e), y = (0, m.A)(e, r), M = (0, V.A)(e, r), T = (0, E.A)(e, r), H = (0, C.A)(e), I = (0, A.A)({
+        id: e.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), L = (0, a.A)(r), G = (0, g.A)(r), U = (0, f.Ay)(r), B = (0, X.os)("ChannelContextMenuNormal");
+    }), L = (0, a.A)(e), U = (0, v.A)(e), B = (0, S.Ay)(e), F = (0, X.os)("ChannelContextMenuNormal");
     return (0, t.jsxs)(i.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
@@ -87,24 +87,24 @@ function I(n) {
         children: [(0, t.jsxs)(i.rXV, {
             children: [c, o]
         }, "mark-as-read-or-favorite"), (0, t.jsxs)(i.rXV, {
-            children: [y, u, d]
+            children: [y, j, d]
         }, "channel-actions"), (0, t.jsxs)(i.rXV, {
-            children: [j, B ? U : G]
+            children: [u, F ? B : U]
         }, "notifications"), (0, t.jsxs)(i.rXV, {
-            children: [k, I, M, T]
+            children: [k, M, T, H]
         }, "admin-actions"), (0, t.jsx)(i.rXV, {
             children: L
         }), (0, t.jsx)(i.rXV, {
             children: x
         }), (0, t.jsx)(i.rXV, {
-            children: H
+            children: I
         }, "developer-actions")]
     })
 }
-let M = (0, c.A)((0, s.A)(function(n) {
+let T = (0, c.A)((0, s.A)(function(n) {
     return (0, o.A)() ? (0, t.jsx)(y, {
         ...n
-    }) : (0, t.jsx)(I, {
+    }) : (0, t.jsx)(M, {
         ...n
     })
 }, {
