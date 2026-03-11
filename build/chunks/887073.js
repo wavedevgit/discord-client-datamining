@@ -30,10 +30,12 @@ let f = e => {
     let {
         selectedTab: f,
         transitionToTab: w
-    } = (0, u.o)(p.G2.COLLECTION_INDEX);
+    } = (0, u.o)(p.G2.COLLECTION_INDEX), k = r.useCallback(() => {
+        (0, c.pX)(C.BVt.COLLECTIBLES_SHOP)
+    }, []);
     return ((0, b.pE)(), r.useEffect(() => {
-        null == _ && (0, c.pX)(C.BVt.COLLECTIBLES_SHOP)
-    }, [_]), null == _) ? null : (0, o.jsxs)("div", {
+        null == _ && k()
+    }, [_, k]), null == _) ? null : (0, o.jsxs)("div", {
         className: d()(B.bx, {
             [h.jP]: t
         }),
@@ -50,7 +52,9 @@ let f = e => {
                     templateId: "collection-index",
                     requestParams: {
                         collection_id: _
-                    }
+                    },
+                    onError: k,
+                    onEmptyLayout: k
                 })
             })
         })]

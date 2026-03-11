@@ -24,9 +24,9 @@ function c(e, l) {
                 p = c[o],
                 _ = h[o],
                 T = m[o],
-                S = !0 === l && s?.type === n.R.BUNDLE && 0 === s.items.length,
-                A = null != _ && null != T && r - T < 36e5;
-            null != s && !S || null != e && e.productLine !== d.EZt.COLLECTIBLES || p || A || (0, a.Jp)(i, {
+                E = !0 === l && s?.type === n.R.BUNDLE && 0 === s.items.length,
+                S = null != _ && null != T && r - T < 36e5;
+            null != s && !E || null != e && e.productLine !== d.EZt.COLLECTIBLES || p || S || (0, a.Jp)(i, {
                 includeBundles: l
             })
         }
