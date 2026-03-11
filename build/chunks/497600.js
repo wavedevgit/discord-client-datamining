@@ -23,14 +23,14 @@ function g(e) {
     } = e, {
         id: b
     } = t, {
-        loading: E,
-        note: f
-    } = (0, r.A)(b), h = !E && null != f && f.length > 0, x = m === u.BRT.POPOUT || m === u.BRT.OVERLAY, {
-        analyticsLocations: M
+        loading: f,
+        note: E
+    } = (0, r.A)(b), x = !f && null != E && E.length > 0, h = m === u.BRT.POPOUT || m === u.BRT.OVERLAY, {
+        analyticsLocations: C
     } = (0, a.Ay)();
-    return b === o.default.getId() || s.A.hidePersonalInformation || x ? null : (0, l.jsx)(i.Drp, {
+    return b === o.default.getId() || s.A.hidePersonalInformation || h ? null : (0, l.jsx)(i.Drp, {
         id: "note",
-        label: E ? A.intl.string(A.t["WLKx/9"]) : h ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
+        label: f ? A.intl.string(A.t["WLKx/9"]) : x ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
         subtext: A.intl.string(A.t.r1BOdd),
         action: () => {
             (0, d.openUserProfileModal)({
@@ -39,7 +39,7 @@ function g(e) {
                 scrollTarget: c.bk.NOTE,
                 guildId: n,
                 channelId: g,
-                sourceAnalyticsLocations: M,
+                sourceAnalyticsLocations: C,
                 appContext: m
             })
         }

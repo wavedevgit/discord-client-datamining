@@ -52,8 +52,8 @@ function I() {
             analyticsLocations: o
         } = (0, m.Ay)(u.A.DEV_TOOLS),
         I = b.TA.useSetting(),
-        [k, R] = i.useState(""),
-        O = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
+        [k, O] = i.useState(""),
+        R = (0, r.bG)([f.Ay, C.A], () => (0, v.A)(f.Ay, C.A)),
         w = (0, _.h)(k),
         D = (0, h.g)(w),
         M = (0, r.yK)([g.A], () => w?.linkedGames?.map(e => g.A.getApplication(e.id)).filter(e => null != e) ?? []),
@@ -102,11 +102,11 @@ function I() {
             }), (0, a.jsx)(d.ksK, {
                 label: "Application ID",
                 value: k,
-                onChange: R
-            }), null != O && null != O.id ? (0, a.jsx)(d.Button, {
-                onClick: () => R(O.id),
+                onChange: O
+            }), null != R && null != R.id ? (0, a.jsx)(d.Button, {
+                onClick: () => O(R.id),
                 variant: "primary",
-                text: `Use detected game: ${O.name} (${O.id})`
+                text: `Use detected game: ${R.name} (${R.id})`
             }) : null, (0, a.jsxs)(d.Text, {
                 variant: "text-md/normal",
                 children: ["Application Name: ", null != w ? w.name : "N/A"]

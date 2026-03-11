@@ -1,6 +1,6 @@
 /** chunk id: 707378 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => f
 });
 var l = n(627968);
 n(64700);
@@ -17,31 +17,31 @@ var i = n(311907),
     m = n(652215),
     b = n(985018);
 
-function E(e) {
+function f(e) {
     let {
         user: t,
-        context: E,
-        joinCallVideo: f,
-        id: h,
-        onCall: x
-    } = e, M = (0, o.aL)(), p = (0, i.bG)([u.default], () => u.default.getId() === t.id), C = (0, i.bG)([A.A], () => A.A.isBlocked(t.id)), y = (0, i.bG)([g.A, c.A], () => g.A.getVoiceChannelId() === c.A.getDMFromUserId(t.id)), {
-        copyVariant: S
+        context: f,
+        joinCallVideo: E,
+        id: x,
+        onCall: h
+    } = e, C = (0, o.aL)(), M = (0, i.bG)([u.default], () => u.default.getId() === t.id), p = (0, i.bG)([A.A], () => A.A.isBlocked(t.id)), j = (0, i.bG)([g.A, c.A], () => g.A.getVoiceChannelId() === c.A.getDMFromUserId(t.id)), {
+        copyVariant: v
     } = d.o.useConfig({
         location: "useCallUserItem"
     });
-    if (p || E === m.BRT.POPOUT || y || t.bot || t.isProvisional) return null;
+    if (M || f === m.BRT.POPOUT || j || t.bot || t.isProvisional) return null;
     let I = () => {
-            x?.(), r.A.openPrivateChannel({
+            h?.(), r.A.openPrivateChannel({
                 recipientIds: t.id,
                 joinCall: !0,
-                joinCallVideo: f
-            }), M.dispatch(m.jej.POPOUT_CLOSE), (0, a.s7G)()
+                joinCallVideo: E
+            }), C.dispatch(m.jej.POPOUT_CLOSE), (0, a.s7G)()
         },
-        j = !s.Ay.disableCallUserConfirmationPrompt;
+        y = !s.Ay.disableCallUserConfirmationPrompt;
     return (0, l.jsx)(a.Drp, {
-        id: h ?? "call",
-        label: "control" !== S ? b.intl.string(b.t["ZeP+kK"]) : b.intl.string(b.t.JJogjm),
-        action: j ? () => {
+        id: x ?? "call",
+        label: "control" !== v ? b.intl.string(b.t["ZeP+kK"]) : b.intl.string(b.t.JJogjm),
+        action: y ? () => {
             (0, a.mMO)(async () => {
                 let {
                     default: e
@@ -52,6 +52,6 @@ function E(e) {
                 })
             })
         } : I,
-        disabled: C
+        disabled: p
     })
 }

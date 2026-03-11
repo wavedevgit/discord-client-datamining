@@ -44,7 +44,7 @@ let A = function(e) {
                     null != A && (T(!0), (0, c.L3)(e, async () => {
                         let {
                             default: e
-                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("22252")]).then(n.bind(n, 668569));
+                        } = await Promise.all([n.e("97262"), n.e("32418"), n.e("47969")]).then(n.bind(n, 668569));
                         return t => (0, i.jsx)(e, {
                             ...t,
                             user: A

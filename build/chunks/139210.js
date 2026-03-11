@@ -38,13 +38,13 @@ let C = (0, r.animated)(x.Ay),
             isExpanded: N,
             isExpansionAnimationComplete: I,
             quest: k
-        } = i.useContext(f.T), R = i.useCallback(() => {
+        } = i.useContext(f.T), O = i.useCallback(() => {
             (0, g.Zc)(k, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_DISCLOSURE,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [k]), O = i.useCallback(() => {
+        }, [k]), R = i.useCallback(() => {
             (0, m.pu)(k, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
@@ -52,7 +52,7 @@ let C = (0, r.animated)(x.Ay),
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
         }, [x, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
-            onClick: O,
+            onClick: R,
             className: l()(A.vk, {
                 [A.wm]: w
             }),
@@ -101,7 +101,7 @@ let C = (0, r.animated)(x.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: A.y8,
-                    onClick: R,
+                    onClick: O,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",

@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [k, R] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [k, O] = i.useState(8), [R, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -133,9 +133,9 @@ let A = {
             accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: O,
+            effects: R,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [O]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [R]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
@@ -185,11 +185,11 @@ let A = {
                 skuId: e.skuId,
                 name: U,
                 config: {
-                    effects: O,
+                    effects: R,
                     stillFrames: D
                 }
             })
-        }, [O, D, U]), i.useEffect(() => () => {
+        }, [R, D, U]), i.useEffect(() => () => {
             P.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), P.current = []
@@ -206,7 +206,7 @@ let A = {
                     onChange: e => {
                         let t = V(e);
                         null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, O.length);
+                            let n = await (0, _.Ay)(e, t, R.length);
                             w(e => [...e, n])
                         })
                     },
@@ -279,7 +279,7 @@ let A = {
                         max: 24,
                         step: 2,
                         value: k,
-                        onChange: e => R(+e.target.value)
+                        onChange: e => O(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
                         children: [k, "px"]
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(O),
+                                fileContents: () => (0, _.rs)(R),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -396,7 +396,7 @@ let A = {
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: O,
+                                        effects: R,
                                         stillFrames: D
                                     }
                                 }),
@@ -431,7 +431,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), O.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), R.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(v.uW, v.l7),
                         children: [(0, a.jsx)(c.Text, {
                             variant: "text-md/bold",
@@ -459,7 +459,7 @@ let A = {
                                 w([]), M(A)
                             }
                         })
-                    }), O.map((e, t) => (0, a.jsxs)("div", {
+                    }), R.map((e, t) => (0, a.jsxs)("div", {
                         className: v.ec,
                         children: [(0, a.jsxs)("div", {
                             className: v.D1,

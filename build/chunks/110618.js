@@ -1,72 +1,72 @@
 /** chunk id: 110618 params = (module,exports,require) **/
-t.d(n, {
+n.d(e, {
     DO: () => g,
-    Mt: () => h,
-    c: () => u,
+    Mt: () => E,
+    c: () => c,
     l7: () => A
-}), t(735438);
-var i = t(383501),
-    l = t(562153),
-    r = t(488926),
-    a = t(446600),
-    s = t(516607),
-    d = t(652215),
-    o = t(737045),
-    c = t(985018);
+}), n(735438);
+var l = n(383501),
+    i = n(562153),
+    r = n(488926),
+    a = n(446600),
+    d = n(516607),
+    s = n(652215),
+    u = n(737045),
+    o = n(985018);
 
-function u(e, n, t, i) {
-    let r = n[0],
-        a = l.Ay.getName(e, t, r),
-        s = i ?? n.length;
-    return 1 === s && null != r ? a : null == r ? c.intl.formatToPlainString(c.t.chmM9N, {
-        count: s
-    }) : c.intl.formatToPlainString(c.t.GhkJ21, {
+function c(t, e, n, l) {
+    let r = e[0],
+        a = i.Ay.getName(t, n, r),
+        d = l ?? e.length;
+    return 1 === d && null != r ? a : null == r ? o.intl.formatToPlainString(o.t.chmM9N, {
+        count: d
+    }) : o.intl.formatToPlainString(o.t.GhkJ21, {
         name: a,
-        count: s - 1
+        count: d - 1
     })
 }
 
-function h(e, n) {
-    switch (e) {
-        case o.T6.OWNER:
-            return c.intl.string(c.t.icuNBM);
-        case o.T6.ADMINISTRATOR:
-            return c.intl.string(c.t.eTmN5a);
-        case o.T6.MEMBER:
-        case o.T6.ROLE:
-            return n ? c.intl.string(c.t.Hw3XWx) : c.intl.string(c.t.YieyPi);
-        case o.T6.EMPTY_STATE:
+function E(t, e) {
+    switch (t) {
+        case u.T6.OWNER:
+            return o.intl.string(o.t.icuNBM);
+        case u.T6.ADMINISTRATOR:
+            return o.intl.string(o.t.eTmN5a);
+        case u.T6.MEMBER:
+        case u.T6.ROLE:
+            return e ? o.intl.string(o.t.Hw3XWx) : o.intl.string(o.t.YieyPi);
+        case u.T6.EMPTY_STATE:
     }
     return null
 }
 
-function A(e) {
-    let n = a.A.getStageInstanceByChannel(e.id);
+function A(t) {
+    let e = a.A.getStageInstanceByChannel(t.id);
     return {
-        channel_id: e.id,
-        guild_id: e.guild_id,
-        topic: n?.topic,
-        media_session_id: i.A.getMediaSessionId(),
-        request_to_speak_state: r.MJ(d.xBc.REQUEST_TO_SPEAK, e) ? s.kw.EVERYONE : s.kw.NO_ONE,
-        stage_instance_id: n?.id
+        channel_id: t.id,
+        guild_id: t.guild_id,
+        topic: e?.topic,
+        media_session_id: l.A.getMediaSessionId(),
+        request_to_speak_state: r.MJ(s.xBc.REQUEST_TO_SPEAK, t) ? d.kw.EVERYONE : d.kw.NO_ONE,
+        stage_instance_id: e?.id
     }
 }
 
-function g(e, n) {
-    let t = n => l.Ay.getName(e.getGuildId(), e.id, n.user),
-        i = new Set,
-        r = n.filter(e => {
-            let n = e.user.id;
-            return !i.has(n) && (i.add(n), !0)
+function g(t, e) {
+    let n = e => i.Ay.getName(t.getGuildId(), t.id, e.user),
+        l = new Set,
+        r = e.filter(t => {
+            let e = t.user.id;
+            return !l.has(e) && (l.add(e), !0)
         });
-    return 0 === r.length ? c.intl.string(c.t.FUVhyC) : 1 === r.length ? c.intl.formatToPlainString(c.t.EQwZlN, {
-        a: t(r[0])
-    }) : 2 === r.length ? c.intl.formatToPlainString(c.t.zBcKoA, {
-        a: t(r[0]),
-        b: t(r[1])
-    }) : c.intl.formatToPlainString(c.t["3AqFaG"], {
-        a: t(r[0]),
-        b: t(r[1]),
+    return 0 === r.length ? o.intl.string(o.t.FUVhyC) : 1 === r.length ? o.intl.formatToPlainString(o.t.EQwZlN, {
+        a: n(r[0])
+    }) : 2 === r.length ? o.intl.formatToPlainString(o.t.zBcKoA, {
+        a: n(r[0]),
+        b: n(r[1])
+    }) : o.intl.formatToPlainString(o.t["3AqFaG"], {
+        a: n(r[0]),
+        b: n(r[1]),
         n: r.length - 2
     })
 }

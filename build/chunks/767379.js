@@ -55,10 +55,10 @@ let E = function(e) {
         onComplete: j,
         dismissable: E,
         classificationId: N
-    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), R = i.useRef(I), [O, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
+    } = e, [I, k] = i.useState(r.M.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), O = i.useRef(I), [R, w] = (0, d.kn)([I], void 0, !0), D = i.useMemo(() => (0, s.A)(), []), M = i.useRef(!1), P = (0, m.W$)();
     i.useEffect(() => {
-        R.current = O
-    }, [O]);
+        O.current = R
+    }, [R]);
     let {
         loading: U,
         ageVerificationMethods: L
@@ -73,7 +73,7 @@ let E = function(e) {
     });
     return i.useLayoutEffect(() => () => {
         if (M.current) return;
-        let e = R.current;
+        let e = O.current;
         null != e && (M.current = !0, h.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_get_started_modal",
             visibleContent: e

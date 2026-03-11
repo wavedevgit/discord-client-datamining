@@ -456,7 +456,7 @@ let z = s.memo(function(e) {
                 x || (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([i.e("97262"), i.e("87997"), i.e("50478")]).then(i.bind(i, 180812));
+                    } = await Promise.all([i.e("97262"), i.e("87997"), i.e("68277")]).then(i.bind(i, 180812));
                     return (0, O.YX)(b.uss.VOICE_V3, {
                         type: O.Z5.VOICE,
                         value: O.IP.SETTINGS_OPENED,

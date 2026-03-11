@@ -1,45 +1,45 @@
 /** chunk id: 513963 params = (module,exports,require) **/
-t.d(n, {
-    A: () => o
+n.d(t, {
+    A: () => d
 });
-var i = t(627968),
-    l = t(64700),
-    r = t(732955),
-    a = t(817281),
-    s = t(951829),
-    d = t(985018);
+var i = n(627968),
+    l = n(64700),
+    r = n(732955),
+    a = n(817281),
+    s = n(951829),
+    o = n(985018);
 
-function o(e) {
+function d(e) {
     let {
-        type: n,
-        onConfirm: t,
-        onClose: o,
+        type: t,
+        onConfirm: n,
+        onClose: d,
         ...c
     } = e, [u, h] = l.useState(!1), A = l.useCallback(() => {
         u && a.Ay.updatedUnsyncedSettings({
             disableHideSelfStreamAndVideoConfirmationAlert: !0
-        }), t(), o()
-    }, [t, u, o]), g = n === s.f.STREAM ? d.intl.string(d.t["/lFMWr"]) : d.intl.string(d.t.xzxhZS), m = n === s.f.STREAM ? d.intl.string(d.t.xaOX7d) : d.intl.string(d.t.oU1p9O);
+        }), n(), d()
+    }, [n, u, d]), _ = t === s.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), g = t === s.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
     return (0, i.jsx)(r.aFV, {
         size: "md",
         actionBarInput: (0, i.jsx)(r.Sc0, {
             checked: u,
             onChange: e => h(e),
-            label: d.intl.string(d.t["JdIQ/Y"]),
+            label: o.intl.string(o.t["JdIQ/Y"]),
             labelType: "secondary"
         }),
         actions: [{
             variant: "secondary",
-            text: d.intl.string(d.t["ETE/oC"]),
-            onClick: o
+            text: o.intl.string(o.t["ETE/oC"]),
+            onClick: d
         }, {
             variant: "primary",
-            text: d.intl.string(d.t.BddRzS),
+            text: o.intl.string(o.t.BddRzS),
             onClick: A
         }],
-        title: g,
-        subtitle: m,
-        onClose: o,
+        title: _,
+        subtitle: g,
+        onClose: d,
         ...c
     })
 }

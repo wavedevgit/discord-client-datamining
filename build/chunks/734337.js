@@ -1,31 +1,31 @@
 /** chunk id: 734337 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => h
 });
-var i = t(627968);
-t(64700);
-var l = t(311907),
-    r = t(397927),
-    a = t(964404),
-    s = t(121046),
-    d = t(513963),
-    o = t(951829),
-    c = t(731854),
-    u = t(985018);
+var i = n(627968);
+n(64700);
+var l = n(311907),
+    r = n(397927),
+    a = n(964404),
+    s = n(121046),
+    o = n(513963),
+    d = n(951829),
+    c = n(731854),
+    u = n(985018);
 
 function h(e) {
-    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.x.DEFAULT,
-        [t, h, A] = (0, s.A)(e, n),
-        g = (0, l.bG)([a.Ay], () => a.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
-    return t ? (0, i.jsx)(r.sLh, {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.x.DEFAULT,
+        [n, h, A] = (0, s.A)(e, t),
+        _ = (0, l.bG)([a.Ay], () => a.Ay.disableHideSelfStreamAndVideoConfirmationAlert);
+    return n ? (0, i.jsx)(r.sLh, {
         id: "self-video-hide",
         label: u.intl.string(u.t.MH8ESU),
         checked: !h,
         action: () => {
-            if (g || h) return A(!h);
-            (0, r.qfG)(e => (0, i.jsx)(d.A, {
+            if (_ || h) return A(!h);
+            (0, r.qfG)(e => (0, i.jsx)(o.A, {
                 ...e,
-                type: o.f.VIDEO,
+                type: d.f.VIDEO,
                 onConfirm: () => A(!h)
             }))
         }

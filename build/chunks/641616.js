@@ -31,8 +31,8 @@ var x = n(173628),
     N = n(226936),
     I = n(27126),
     k = n(498336),
-    R = n(615112),
-    O = n(501379),
+    O = n(615112),
+    R = n(501379),
     w = n(517538),
     D = n(211162),
     M = n(436102),
@@ -184,7 +184,7 @@ function ec() {
             name: "Intl",
             group: er.fu.UI,
             tags: ["i18n", "localization", "messages"],
-            render: () => (0, a.jsx)(O.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "colors",
             name: "Colors",
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(O.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",

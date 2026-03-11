@@ -1,6 +1,6 @@
 /** chunk id: 121127 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => p
 });
 var l = n(627968),
     i = n(64700),
@@ -15,31 +15,31 @@ var l = n(627968),
     g = n(761640),
     m = n(734057),
     b = n(696451),
-    E = n(309010),
-    f = n(954571),
-    h = n(652215),
-    x = n(746080),
-    M = n(486974),
-    p = n(985018);
+    f = n(309010),
+    E = n(954571),
+    x = n(652215),
+    h = n(746080),
+    C = n(486974),
+    M = n(985018);
 
-function C(e) {
+function p(e) {
     let {
         userId: t,
         guildId: n,
-        channelId: C,
-        location: y,
-        onAction: S,
+        channelId: p,
+        location: j,
+        onAction: v,
         appContext: I
-    } = e, j = i.useContext(f.AnalyticsContext), D = (0, u.aL)(), v = (0, a.bG)([E.A], () => C ?? E.A.getChannelId(n, !0), [C, n]), O = (0, a.bG)([b.Ay], () => null == n ? null : b.Ay.getMember(n, t), [n, t]), T = (0, s.q)(n);
+    } = e, y = i.useContext(E.AnalyticsContext), S = (0, u.aL)(), D = (0, a.bG)([f.A], () => p ?? f.A.getChannelId(n, !0), [p, n]), O = (0, a.bG)([b.Ay], () => null == n ? null : b.Ay.getMember(n, t), [n, t]), T = (0, s.q)(n);
     return null != n && null != O && T ? (0, l.jsx)(r.Drp, {
         id: "mod-view",
-        label: p.intl.string(p.t.kj3tz2),
+        label: M.intl.string(M.t.kj3tz2),
         action: () => {
-            S?.(), (0, c.A)(I), D.dispatch(h.jej.POPOUT_CLOSE);
-            let e = m.A.getChannel(v),
+            v?.(), (0, c.A)(I), S.dispatch(x.jej.POPOUT_CLOSE);
+            let e = m.A.getChannel(D),
                 l = {
-                    modViewPanel: M.g.INFO,
-                    sourceLocation: y ?? j.location
+                    modViewPanel: C.g.INFO,
+                    sourceLocation: j ?? y.location
                 };
             if (e?.isThread() && null != e.parent_id) {
                 g.Ay.getCurrentSidebarChannelId(e.parent_id) === e.id && (d.h.dispatch({
@@ -47,7 +47,7 @@ function C(e) {
                     baseChannelId: e.parent_id
                 }), (0, A.iN)(e.id)), (0, o.z)(n, t, e.parent_id, l);
                 return
-            }(0, o.z)(n, t, v ?? x.VV.MEMBER_SAFETY, l)
+            }(0, o.z)(n, t, D ?? h.VV.MEMBER_SAFETY, l)
         }
     }) : null
 }

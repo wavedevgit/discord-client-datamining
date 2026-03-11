@@ -1,6 +1,6 @@
 /** chunk id: 180798 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => p
 });
 var l = n(627968);
 n(64700);
@@ -16,25 +16,25 @@ var i = n(311907),
     g = n(317525),
     m = n(71393),
     b = n(576705),
-    E = n(403362),
-    f = n(652215),
-    h = n(985018),
-    x = n(658122);
+    f = n(403362),
+    E = n(652215),
+    x = n(985018),
+    h = n(658122);
 
-function M(e, t, n) {
+function C(e, t, n) {
     return {
         type: "roleDot",
         variant: "dot" === t ? "dot" : "circle",
-        color: e.colorString ?? f.TpD,
+        color: e.colorString ?? E.TpD,
         colors: n ? e.colorStrings : null
     }
 }
 
-function p(e, t, n) {
-    let i = e.colorString ?? f.TpD,
+function M(e, t, n) {
+    let i = e.colorString ?? E.TpD,
         r = n ? e.colorStrings : null;
     return (0, l.jsx)("div", {
-        className: x.roleDotAccessory,
+        className: h.roleDotAccessory,
         children: "dot" === t ? (0, l.jsx)(a.W, {
             color: i,
             colors: r,
@@ -47,56 +47,56 @@ function p(e, t, n) {
     })
 }
 
-function C(e, t) {
+function p(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
-        x = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-        C = (0, i.bG)([m.A], () => m.A.getGuild(t)),
-        y = (0, i.bG)([g.A], () => g.A.getSortedRoles(t)),
-        S = (0, i.bG)([d.A], () => d.A.roleStyle),
+        h = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
+        p = (0, i.bG)([m.A], () => m.A.getGuild(t)),
+        j = (0, i.bG)([g.A], () => g.A.getSortedRoles(t)),
+        v = (0, i.bG)([d.A], () => d.A.roleStyle),
         I = (0, o.$9)(t, {
             location: a,
             targetUserId: e
         }),
         {
-            userRoles: j,
-            isGuildMember: D,
-            canManageRoles: v
+            userRoles: y,
+            isGuildMember: S,
+            canManageRoles: D
         } = (0, i.cf)([A.Ay, b.A], () => {
             let n = A.Ay.getMember(t, e);
             return {
                 userRoles: null != n ? n.roles : [],
                 isGuildMember: null != n,
-                canManageRoles: null != C && b.A.can(f.xBc.MANAGE_ROLES, C)
+                canManageRoles: null != p && b.A.can(E.xBc.MANAGE_ROLES, p)
             }
-        }, [e, t, C]),
+        }, [e, t, p]),
         O = (0, u.Ay)(t, e);
-    if (__OVERLAY__ || null == j || null == C || !D) return null;
-    let T = b.A.getHighestRole(C),
-        _ = v && !x ? y.map(n => {
+    if (__OVERLAY__ || null == y || null == p || !S) return null;
+    let T = b.A.getHighestRole(p),
+        _ = D && !h ? j.map(n => {
             if ((0, c.Oy)(n)) return null;
-            let i = n.managed || !b.A.isRoleHigher(C, T, n),
-                a = j.includes(n.id);
+            let i = n.managed || !b.A.isRoleHigher(p, T, n),
+                a = y.includes(n.id);
             return i && !a ? null : (0, l.jsx)(r.sLh, {
                 id: n.id,
-                leadingAccessory: M(n, S, O),
-                leftIcon: p(n, S, O),
+                leadingAccessory: C(n, v, O),
+                leftIcon: M(n, v, O),
                 label: n.name,
                 disabled: i,
                 action: () => {
-                    j.includes(n.id) ? (s.A.updateMemberRoles(t, e, j.filter(e => e !== n.id), [], [n.id]), I(o.Nj.REMOVE_ROLE)) : (s.A.updateMemberRoles(t, e, j.concat([n.id]), [n.id], []), I(o.Nj.ADD_ROLE))
+                    y.includes(n.id) ? (s.A.updateMemberRoles(t, e, y.filter(e => e !== n.id), [], [n.id]), I(o.Nj.REMOVE_ROLE)) : (s.A.updateMemberRoles(t, e, y.concat([n.id]), [n.id], []), I(o.Nj.ADD_ROLE))
                 },
                 checked: a
             }, n.id)
-        }) : y.map(e => (0, c.Oy)(e) || !j.includes(e.id) ? null : (0, l.jsx)(r.Drp, {
+        }) : j.map(e => (0, c.Oy)(e) || !y.includes(e.id) ? null : (0, l.jsx)(r.Drp, {
             id: e.id,
-            leadingAccessory: M(e, S, O),
-            iconLeft: p(e, S, O),
+            leadingAccessory: C(e, v, O),
+            iconLeft: M(e, v, O),
             label: e.name
         }, e.id));
-    return 0 === (_ = _.filter(E.Vq)).length ? null : n ? _ : (0, l.jsx)(r.Drp, {
+    return 0 === (_ = _.filter(f.Vq)).length ? null : n ? _ : (0, l.jsx)(r.Drp, {
         id: "roles",
-        label: h.intl.formatToPlainString(h.t.PCs0oo, {
+        label: x.intl.formatToPlainString(x.t.PCs0oo, {
             numRoles: _.length
         }),
         children: _

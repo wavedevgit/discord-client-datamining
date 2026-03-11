@@ -281,7 +281,7 @@ function eA(e) {
         }) : (0, v.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("85689")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("66932")]).then(n.bind(n, 385913));
             return n => (0, l.jsx)(e, {
                 ...n,
                 user: r,
@@ -331,9 +331,9 @@ function eA(e) {
                 [ea.Y_]: eV
             })
         })]
-    }) : e9, e7 = s.useRef(null), e4 = (0, O.W)({
+    }) : e9, e7 = s.useRef(null), e3 = (0, O.W)({
         location: "PrivateChannel"
-    }) && r?.displayNameStyles != null, e3 = [(0, R.Ay)({
+    }) && r?.displayNameStyles != null, e4 = [(0, R.Ay)({
         channel: t,
         unread: eq
     }), (0, R.r2)({
@@ -409,7 +409,7 @@ function eA(e) {
                         innerRef: ex,
                         to: el.BVt.CHANNEL(el.ME, t.id),
                         className: ea.nf,
-                        "aria-label": e3,
+                        "aria-label": e4,
                         ...s,
                         children: (0, l.jsx)(I.A, {
                             ref: e7,
@@ -472,7 +472,7 @@ function eA(e) {
                             }) : null,
                             name: (0, l.jsx)(x.A, {
                                 className: i()(ea.uN, {
-                                    [ea.e8]: e4
+                                    [ea.e8]: e3
                                 }),
                                 children: e6
                             }),
@@ -481,7 +481,7 @@ function eA(e) {
                                 type: y.A.Types.SYSTEM_DM,
                                 verified: !0
                             }) : null,
-                            withDisplayNameStyles: e4
+                            withDisplayNameStyles: e3
                         })
                     }), (0, l.jsxs)("div", {
                         className: i()(ea._q, {

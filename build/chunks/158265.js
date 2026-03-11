@@ -34,7 +34,7 @@ let A = e => {
     } = i.useContext(p.PW), {
         completionSpring: T,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), R = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), L = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
@@ -94,10 +94,10 @@ let A = e => {
     return (i.useEffect(() => {
         E && C && !F && (S(), G())
     }, [C, E, S, G, F]), i.useEffect(() => {
-        E && !R && O && setTimeout(() => {
+        E && !O && R && setTimeout(() => {
             S(), G()
         }, 200)
-    }, [E, O, R, S, G]), i.useEffect(() => {
+    }, [E, R, O, S, G]), i.useEffect(() => {
         L.isReady && (!N.current && E && (S(), G()), N.current = E)
     }, [E, N, G, S, L]), i.useEffect(() => {
         s && E && (S(), G())
