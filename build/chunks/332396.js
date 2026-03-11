@@ -118,20 +118,18 @@ function y() {
 function j(e) {
     let {
         "aria-label": t = !1,
-        onShow: n,
-        children: l
-    } = e, r = s.useMemo(() => (0, i.jsx)("div", {
+        children: n
+    } = e, l = s.useMemo(() => (0, i.jsx)("div", {
         className: S.A_,
         children: (0, i.jsx)(y, {})
     }), []);
     return (0, i.jsx)(d.m_, {
-        __unsupportedReactNodeAsText: r,
+        __unsupportedReactNodeAsText: l,
         hideOnClick: !0,
         spacing: 12,
         position: "right",
         "aria-label": !1 === t ? void 0 : t,
-        onTooltipShow: n,
         asContainer: !0,
-        children: l
+        children: n
     })
 }

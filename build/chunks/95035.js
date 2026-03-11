@@ -1,13 +1,14 @@
 /** chunk id: 95035 params = (module,exports,require) **/
-n.d(e, {
+"use strict";
+n.d(t, {
     A: () => o
 });
 var i = n(627968),
-    r = n(64700),
+    s = n(64700),
     l = n(397927),
-    a = n(976860),
-    s = n(652215);
-let o = r.forwardRef(function(t, e) {
+    r = n(976860),
+    a = n(652215);
+let o = s.forwardRef(function(e, t) {
     let {
         href: n,
         children: o,
@@ -15,20 +16,20 @@ let o = r.forwardRef(function(t, e) {
         onKeyPress: d,
         focusProps: u,
         ...h
-    } = t, C = r.useCallback(t => {
-        t.repeat || ((t.charCode === s.Ks6.SPACE || t.charCode === s.Ks6.ENTER) && (t.preventDefault(), null != n && (0, a.pX)(n), c?.()), d?.(t))
-    }, [n, d, c]), g = r.useCallback(t => {
-        t.metaKey || t.shiftKey || 0 !== t.button || (t.preventDefault(), t.stopPropagation(), null != n && (0, a.pX)(n), c?.())
-    }, [n, c]), A = (0, i.jsx)("a", {
-        ref: e,
+    } = e, A = s.useCallback(e => {
+        e.repeat || ((e.charCode === a.Ks6.SPACE || e.charCode === a.Ks6.ENTER) && (e.preventDefault(), null != n && (0, r.pX)(n), c?.()), d?.(e))
+    }, [n, d, c]), m = s.useCallback(e => {
+        e.metaKey || e.shiftKey || 0 !== e.button || (e.preventDefault(), e.stopPropagation(), null != n && (0, r.pX)(n), c?.())
+    }, [n, c]), p = (0, i.jsx)("a", {
+        ref: t,
         href: n,
-        onClick: g,
-        onKeyPress: C,
+        onClick: m,
+        onKeyPress: A,
         ...h,
         children: o
     });
     return (0, i.jsx)(l.vN3, {
         ...u,
-        children: A
+        children: p
     })
 })

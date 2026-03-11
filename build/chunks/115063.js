@@ -5,8 +5,8 @@ n.d(t, {
     Lx: () => I,
     Oj: () => g,
     Tb: () => c,
-    fO: () => h,
-    iY: () => C,
+    fO: () => C,
+    iY: () => h,
     xo: () => u
 });
 var i = n(58149),
@@ -55,7 +55,7 @@ function g(e, t) {
     return !!(!t.verified || t.isStaff()) || null != e && _ > Date.now() - new Date(e.created_at).getTime()
 }
 
-function C(e) {
+function h(e) {
     let {
         destinationPane: t,
         originPane: n,
@@ -76,6 +76,6 @@ function C(e) {
     })
 }
 
-function h(e) {
+function C(e) {
     o._.dispatch(d.jej.SHAKE_SETTINGS_MODAL, e)
 }

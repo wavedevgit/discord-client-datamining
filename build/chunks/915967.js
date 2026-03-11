@@ -20,8 +20,8 @@ var i, r = n(966597),
     E = n(739008),
     I = n(314519),
     g = n(198168),
-    C = n(799592),
-    h = n(675704),
+    h = n(799592),
+    C = n(675704),
     p = n(806964),
     S = n(552049),
     f = n(877991),
@@ -113,7 +113,7 @@ let Y = {
     [j.IWg.SEARCH_SOUNDBOARD]: m.A,
     [j.IWg.SCROLL_UP]: S.U5,
     [j.IWg.SCROLL_DOWN]: S.fz,
-    [j.IWg.QUICKSWITCHER_SHOW]: h.R,
+    [j.IWg.QUICKSWITCHER_SHOW]: C.R,
     [j.IWg.CREATE_DM_GROUP]: s.X,
     [j.IWg.SEARCH_EMOJIS]: f.L,
     [j.IWg.SEARCH_GIFS]: T.T,
@@ -132,7 +132,7 @@ let Y = {
     [j.IWg.ZOOM_RESET]: F.O$,
     [j.IWg.OPEN_APP_DIRECTORY]: g.N,
     [j.IWg.BROWSER_DEVTOOLS]: d.i,
-    [j.IWg.OPEN_CONTEXT_MENU]: C.b
+    [j.IWg.OPEN_CONTEXT_MENU]: h.b
 };
 
 function z() {

@@ -1,6 +1,6 @@
 /** chunk id: 757942 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => C
 });
 var i = n(627968);
 n(64700);
@@ -18,7 +18,7 @@ var r = n(735438),
     I = n(652215),
     g = n(790782);
 
-function C(e, t) {
+function h(e, t) {
     return [{
         resourceId: e,
         type: g.P.GUILD_EVENT
@@ -27,11 +27,11 @@ function C(e, t) {
         withCurrentVoiceChannel: !0
     }).map(e => e.id)]
 }
-let h = a().throttle(function(e, t) {
+let C = a().throttle(function(e, t) {
     var r;
     let a, s, u, {
             channelPredicate: g = () => !0,
-            guildPredicate: h = () => !0,
+            guildPredicate: C = () => !0,
             guildFeaturePredicate: p = () => !1,
             ensureChatIsVisible: S = () => !1,
             withVoiceChannels: f = !1
@@ -40,10 +40,10 @@ let h = a().throttle(function(e, t) {
         m = o.A.getState().channelId,
         b = (r = T, s = (a = [I.ME, ...c.Ay.getFlattenedGuildIds()]).indexOf(r), e > 0 ? a.slice(s).concat(a.slice(0, s), r) : (a.splice(s, 0, r), a.slice(s + 1).concat(a.slice(0, s + 1)))),
         N = e > 0 ? 0 : b.length - 1,
-        L = C(T, f),
+        L = h(T, f),
         O = L.indexOf(m) + e;
     for (; null != T && "" !== T;) {
-        if (u = L[O], h(T))
+        if (u = L[O], C(T))
             for (; null != u && "" !== u;) {
                 if ("string" == typeof u) {
                     if (g(T, u)) return (0, E.i)(T, u, !1, S(T, u))
@@ -59,7 +59,7 @@ let h = a().throttle(function(e, t) {
                 O += e, u = L[O]
             }
         if (N += e, null == (T = b[N]) || "" === T) break;
-        L = C(T, f), O = e < 0 ? L.length - 1 : 0
+        L = h(T, f), O = e < 0 ? L.length - 1 : 0
     }
     A._.dispatch(I.jej.SHAKE_APP, {
         duration: 200,

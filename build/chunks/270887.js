@@ -16,8 +16,8 @@ var i = n(735438),
     E = n(711014),
     I = n(287809),
     g = n(619921),
-    C = n(265422),
-    h = n(652215);
+    h = n(265422),
+    C = n(652215);
 let p = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
         t = E.Ay.getFlattenedGuildIds(),
@@ -32,7 +32,7 @@ let p = r().throttle(function() {
         S = function(e) {
             let t = c.A.getState().guildId;
             if (null == t) return -2;
-            if (t === h.YYv) return -1;
+            if (t === C.YYv) return -1;
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
@@ -41,8 +41,8 @@ let p = r().throttle(function() {
             hasHigherPrivileges: i,
             isMenuItemDCSelected: r,
             isIntroDCDismissed: p
-        }) || (S += e), -3 === S && (S = t.length - 1), S >= t.length || -2 === S) return void(0, C.a)(g.A.getHomeLink());
-    let f = -1 === S ? h.YYv : t[S],
+        }) || (S += e), -3 === S && (S = t.length - 1), S >= t.length || -2 === S) return void(0, h.a)(g.A.getHomeLink());
+    let f = -1 === S ? C.YYv : t[S],
         T = u.A.getChannelId(f);
-    (0, C.i)(f, T === f ? null : T, !1)
-}, h.ugG)
+    (0, h.i)(f, T === f ? null : T, !1)
+}, C.ugG)

@@ -1,34 +1,33 @@
 /** chunk id: 93055 params = (module,exports,require) **/
 n.d(t, {
-    Af: () => h,
-    CJ: () => m,
-    Fe: () => E,
-    Rm: () => _,
-    TW: () => C
+    Af: () => b,
+    CJ: () => E,
+    Fe: () => C,
+    Rm: () => p,
+    TW: () => A
 }), n(321073);
-var i = n(64700),
-    a = n(478437),
+var i = n(478437),
     r = n(311907);
 n(734057);
-var l = n(808728),
-    o = n(967198),
+var a = n(808728),
+    l = n(967198),
     d = n(287809),
-    u = n(474090);
+    o = n(474090);
 n(661191);
-var s = n(181079),
-    f = n(379587),
+var u = n(181079),
+    s = n(379587),
+    f = n(11531),
     c = n(957300),
-    v = n(924703),
-    A = n(652215),
-    p = n(788868);
+    h = n(652215),
+    v = n(788868);
 
-function C(e) {
+function A(e) {
     let {
         enabled: t,
         hasHigherPrivileges: n
-    } = (0, f.m)({
+    } = (0, s.m)({
         location: e
-    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), a = u.Ay.isPremiumExactly(i, p.PremiumTypes.TIER_2);
+    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), a = o.Ay.isPremiumExactly(i, v.PremiumTypes.TIER_2);
     return {
         hasAccess: t && a,
         isExperimentEnabled: t,
@@ -37,28 +36,26 @@ function C(e) {
     }
 }
 
-function h(e) {
-    return (0, r.bG)([s.A], () => s.A.getFavorite(e))
+function b(e) {
+    return (0, r.bG)([u.A], () => u.A.getFavorite(e))
 }
 
-function _() {
-    return (0, r.bG)([l.Ay], () => l.Ay.getChannels(A.YYv))[a.r.GUILD_CATEGORY].map(e => ({
+function p() {
+    return (0, r.bG)([a.Ay], () => a.Ay.getChannels(h.YYv))[i.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function E() {
-    return (0, r.bG)([o.A], () => o.A.getGuildId()) === A.YYv
+function C() {
+    return (0, r.bG)([l.A], () => l.A.getGuildId()) === h.YYv
 }
 
-function m() {
-    let e = (0, v.T)(),
-        t = i.useCallback(() => {}, [e]),
-        n = i.useCallback(() => {}, [e]);
+function E() {
+    let e = (0, f.J)(e => e.favoriteAdded);
     return {
-        favoriteAdded: e.favoriteAdded,
-        notifyFavoriteAdded: t,
-        clearFavoriteAdded: n
+        favoriteAdded: e,
+        notifyFavoriteAdded: (0, f.J)(e => e.notifyFavoriteAdded),
+        clearFavoriteAdded: (0, f.J)(e => e.clearFavoriteAdded)
     }
 }

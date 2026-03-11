@@ -3,9 +3,9 @@ n.d(t, {
     A: () => l
 });
 var i = n(311907),
-    a = n(967198),
-    r = n(652215);
+    r = n(967198),
+    a = n(652215);
 
 function l() {
-    return (0, i.bG)([a.A], () => a.A.getGuildId()) === r.YYv
+    return (0, i.bG)([r.A], () => r.A.getGuildId()) === a.YYv
 }

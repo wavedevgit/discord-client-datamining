@@ -1,16 +1,16 @@
 /** chunk id: 906688 params = (module,exports,require) **/
-n.d(e, {
+i.d(e, {
     A: () => C
 });
-var i = n(627968);
-n(64700);
-var r = n(827734),
-    l = n(582754),
-    a = n(397927),
-    s = n(736653),
-    o = n(682174),
-    c = n(927018),
-    d = n(715438);
+var n = i(627968);
+i(64700);
+var r = i(827734),
+    l = i(582754),
+    s = i(397927),
+    a = i(736653),
+    o = i(682174),
+    c = i(927018),
+    d = i(715438);
 let u = {
         trophy: r.A.unsafe_rawColors.PRIMARY_400.css,
         locked: r.A.unsafe_rawColors.PRIMARY_400.css,
@@ -25,11 +25,11 @@ let u = {
 function C(t) {
     let {
         achievementId: e,
-        unlocked: n,
-        size: r = a._3J.SIZE_40
-    } = t, C = (0, s.Ay)(), g = (0, c.vM)(e);
+        unlocked: i,
+        size: r = s._3J.SIZE_40
+    } = t, C = (0, a.Ay)(), g = (0, c.vM)(e);
     if (null == g) return null;
-    let A = (0, a.KjH)(r),
+    let A = (0, s.KjH)(r),
         {
             name: E,
             rarity: _
@@ -51,7 +51,7 @@ function C(t) {
             bottom: A.stroke + 1,
             padding: 0
         };
-    return (0, i.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: d.kL,
         style: {
             width: O,
@@ -59,30 +59,30 @@ function C(t) {
             padding: A.stroke
         },
         "aria-label": `${E()??""}`,
-        children: [(0, i.jsx)("div", {
+        children: [(0, n.jsx)("div", {
             className: d.r5,
-            children: (0, i.jsx)(a.OR, {
+            children: (0, n.jsx)(s.OR, {
                 size: "custom",
-                color: n ? m : p.trophy,
+                color: i ? m : p.trophy,
                 width: L,
                 height: L
             })
-        }), !n && (0, i.jsx)("div", {
+        }), !i && (0, n.jsx)("div", {
             className: d.dq,
             style: I,
-            children: (0, i.jsx)(a.XAi, {
+            children: (0, n.jsx)(s.XAi, {
                 size: "custom",
                 color: p.locked,
                 ...T
             })
-        }), n && _ === c.md.LEGENDARY && (0, i.jsx)("div", {
+        }), i && _ === c.md.LEGENDARY && (0, n.jsx)("div", {
             className: d.dq,
             style: I,
-            children: (0, i.jsx)(o.A, {
+            children: (0, n.jsx)(o.A, {
                 className: d.ox,
                 ...T
             })
         })]
     })
 }
-C.Sizes = a._3J
+C.Sizes = s._3J

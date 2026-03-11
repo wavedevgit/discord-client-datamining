@@ -1,11 +1,12 @@
 /** chunk id: 22705 params = (module,exports,require) **/
-n.d(e, {
-    A: () => i
-});
+"use strict";
 
-function i(t) {
-    return null != t ? {
-        id: t.id,
-        name: t.name ?? ""
+function i(e) {
+    return null != e ? {
+        id: e.id,
+        name: e.name ?? ""
     } : null
 }
+n.d(t, {
+    A: () => i
+})

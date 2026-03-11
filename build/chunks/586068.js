@@ -23,8 +23,8 @@ var i = n(627968),
     E = n(376943),
     I = n(636585),
     g = n(71393),
-    C = n(994500),
-    h = n(287809),
+    h = n(994500),
+    C = n(287809),
     p = n(427262),
     S = n(985018),
     f = n(649134);
@@ -203,12 +203,12 @@ class b extends r.Component {
             lowImportance: l
         })), null != r && (t = (0, i.jsx)("span", {
             className: f.N4,
-            children: (0, o.m1)(r, h.default, C.A)
+            children: (0, o.m1)(r, C.default, h.A)
         })), (0, i.jsxs)("div", {
             className: f.UU,
             children: [(0, i.jsx)("span", {
                 className: f.YW,
-                children: (0, o.m1)(a, h.default, C.A)
+                children: (0, o.m1)(a, C.default, h.A)
             }), e, this.renderVoiceStates(), t]
         })
     }
@@ -249,7 +249,7 @@ class b extends r.Component {
     getAccessibilityLabel() {
         let {
             channel: e
-        } = this.props, t = g.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, h.default, C.A), i = (0, _.A)(e);
+        } = this.props, t = g.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, C.default, h.A), i = (0, _.A)(e);
         return S.intl.formatToPlainString(S.t["Vw/da+"], {
             name: n,
             type: i,
@@ -307,7 +307,7 @@ class N extends r.Component {
             className: f.UU,
             children: [(0, i.jsx)("span", {
                 className: f.YW,
-                children: (0, o.m1)(n, h.default, C.A)
+                children: (0, o.m1)(n, C.default, h.A)
             }), e]
         })
     }
@@ -328,7 +328,7 @@ class N extends r.Component {
         let {
             channel: e,
             mentions: t
-        } = this.props, n = (0, o.m1)(e, h.default, C.A);
+        } = this.props, n = (0, o.m1)(e, C.default, h.A);
         return null != t && t > 0 ? S.intl.formatToPlainString(S.t.LYdVfN, {
             name: n,
             mentions: t
@@ -382,7 +382,7 @@ class L extends r.Component {
                 user: t,
                 comparator: n
             } = this.props,
-            i = C.A.getNickname(t.id);
+            i = h.A.getNickname(t.id);
         return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = i ?? p.Ay.getName(t)), e
     }
     renderName() {

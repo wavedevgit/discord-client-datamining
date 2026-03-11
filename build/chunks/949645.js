@@ -1,6 +1,6 @@
 /** chunk id: 949645 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => C
 }), n(667532);
 var i = n(310953),
     r = n(473529),
@@ -16,12 +16,12 @@ var i = n(310953),
     E = n(265422),
     I = n(652215),
     g = n(746080);
-let C = () => {
+let h = () => {
     let e = l.A.getMessageRequestsCount() > 0 || s.A.getSpamChannelsCount() > 0;
     return [I.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? I.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? I.BVt.APPLICATION_LIBRARY : null, e ? I.BVt.MESSAGE_REQUESTS : null, I.BVt.APPLICATION_STORE, I.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? I.BVt.FAMILY_CENTER : null, I.BVt.QUEST_HOME].filter(A.Vq)
 };
 
-function h() {
+function C() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
         t = o.A.getState().guildId;
     if (null == t) ! function(e) {
@@ -30,10 +30,10 @@ function h() {
             channelId: i,
             path: r,
             basePath: a
-        } = o.A.getState(), l = u.default.getPrivateChannelIds(), s = __OVERLAY__ ? l : [...C(), ...l], d = (null == i ? (t = r ?? a, C().findIndex(e => t.startsWith(e))) : null != i ? s.indexOf(i) : 0) + e;
+        } = o.A.getState(), l = u.default.getPrivateChannelIds(), s = __OVERLAY__ ? l : [...h(), ...l], d = (null == i ? (t = r ?? a, h().findIndex(e => t.startsWith(e))) : null != i ? s.indexOf(i) : 0) + e;
         d >= s.length ? d = 0 : d < 0 && (d = s.length - 1);
         let _ = s[d];
-        if (C().includes(_)) {
+        if (h().includes(_)) {
             let e;
             e = c.A.getCurrentRoute(), _ === I.BVt.APPLICATION_STORE && null != e ? (0, E.a)(e) : (0, E.a)(_)
         } else n = I.ME, (0, E.i)(n, _)
