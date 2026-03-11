@@ -9,8 +9,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(397927),
     o = n(183555),
-    d = n(958805),
-    c = n(61881),
+    c = n(958805),
+    d = n(61881),
     u = n(790417),
     m = n(113763),
     g = n(583246),
@@ -102,7 +102,7 @@ function I(e) {
                 look: "custom",
                 selectedItem: _,
                 onItemSelect: e => {
-                    c.A.hasUnsavedChanges() && _ === p.RP.WIDGETS ? d.A.notifyUnsavedWidgets() : (f({
+                    d.A.hasUnsavedChanges() && _ === p.RP.WIDGETS ? c.A.notifyUnsavedWidgets() : (f({
                         action: "PRESS_SECTION",
                         section: e
                     }), j(t => m.find(t => t.section === e) ?? t))

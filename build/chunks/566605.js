@@ -8,12 +8,12 @@ var i = n(64700),
     s = n(429913),
     r = n(633075),
     o = n(667049),
-    d = n(287809),
-    c = n(403362),
+    c = n(287809),
+    d = n(403362),
     u = n(395332);
 
 function m(e) {
-    let t = (0, l.bG)([d.default], () => d.default.getCurrentUser()),
+    let t = (0, l.bG)([c.default], () => c.default.getCurrentUser()),
         n = (0, u.DB)({
             location: e.location
         }),
@@ -37,7 +37,7 @@ function m(e) {
                 application: t,
                 dismissibleContent: e.suggestedWidgetLinkedDc
             }
-        }).filter(c.Vq),
+        }).filter(d.Vq),
         currentUser: t
     }, [_, m, t, x, f, h])
 }

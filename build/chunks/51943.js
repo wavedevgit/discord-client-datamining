@@ -9,8 +9,8 @@ var l = n(827734),
     s = n(582754),
     r = n(397927),
     o = n(442433),
-    d = n(263063),
-    c = n(562153),
+    c = n(263063),
+    d = n(562153),
     u = n(939496),
     m = n(518477),
     g = n(996988),
@@ -52,7 +52,7 @@ function p(e) {
                 })
             })
         },
-        children: [(0, i.jsx)(d.Ay, {
+        children: [(0, i.jsx)(c.Ay, {
             tabIndex: -1,
             guild: p,
             showBadge: !0,
@@ -60,7 +60,7 @@ function p(e) {
             badgeStrokeColor: (0, s.Mw)(A) ? l.A.unsafe_rawColors.PRIMARY_600.css : l.A.unsafe_rawColors.WHITE.css,
             badgeTooltipColor: r.oMw.PRIMARY,
             badgeTooltipDelay: m.In,
-            size: d.Ay.Sizes.MEDIUM,
+            size: c.Ay.Sizes.MEDIUM,
             active: !0
         }), (0, i.jsxs)("div", {
             className: x.zH,
@@ -78,7 +78,7 @@ function p(e) {
                     variant: "text-xs/medium",
                     children: (0, i.jsx)(a.A, {
                         delay: m.In,
-                        children: h ?? c.Ay.getName(p.id, void 0, t)
+                        children: h ?? d.Ay.getName(p.id, void 0, t)
                     })
                 })]
             }), !j && null != h && (0, i.jsx)(r.Text, {

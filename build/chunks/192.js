@@ -1,6 +1,6 @@
 /** chunk id: 192 params = (module,exports,require) **/
 n.d(t, {
-    D: () => d,
+    D: () => c,
     r: () => o
 });
 var i = n(627968),
@@ -17,7 +17,7 @@ function o() {
     return l.useContext(s) ?? r
 }
 
-function d(e) {
+function c(e) {
     let {
         children: t
     } = e, n = l.useRef(new Map), a = l.useCallback(e => t => {
@@ -27,13 +27,13 @@ function d(e) {
             let t = n.current.get(e);
             t?.focus()
         })
-    }, []), o = l.useCallback(e => n.current.get(e) ?? null, []), d = l.useMemo(() => ({
+    }, []), o = l.useCallback(e => n.current.get(e) ?? null, []), c = l.useMemo(() => ({
         registerManageWidgetButtonRef: a,
         manageFocusOnReorder: r,
         getManageButtonForWidget: o
     }), [a, r, o]);
     return (0, i.jsx)(s.Provider, {
-        value: d,
+        value: c,
         children: t
     })
 }

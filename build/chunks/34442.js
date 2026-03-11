@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(397927),
     r = n(383329),
     o = n(183555),
-    d = n(735321),
-    c = n(958338),
+    c = n(735321),
+    d = n(958338),
     u = n(985018),
     m = n(810824);
 
@@ -29,8 +29,8 @@ function g(e) {
     } = (0, r.R)(), {
         applicationIds: E,
         onAddGame: T
-    } = (0, c.S)(t), b = l.useCallback(e => {
-        (0, d.ew)({
+    } = (0, d.S)(t), b = l.useCallback(e => {
+        (0, c.ew)({
             widgetType: t,
             game: {
                 applicationId: e

@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(397927),
     r = n(442433),
     o = n(297413),
-    d = n(714114),
-    c = n(729551),
+    c = n(714114),
+    d = n(729551),
     u = n(178418),
     m = n(87664),
     g = n(290863),
@@ -38,7 +38,7 @@ function I(e) {
         isMobileOnline: g.A.isMobileOnline(t.id)
     })), C = (0, m.A)(t.id), {
         voiceChannel: R
-    } = (0, d.A)({
+    } = (0, c.A)({
         userId: t.id,
         guildId: j
     });
@@ -81,7 +81,7 @@ function I(e) {
                 user: t,
                 className: h.Tc,
                 discriminatorClass: h.D2
-            }), (0, i.jsx)(c.A, {
+            }), (0, i.jsx)(d.A, {
                 user: t,
                 activities: S,
                 applicationStream: C,

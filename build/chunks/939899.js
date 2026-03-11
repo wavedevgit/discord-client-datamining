@@ -9,8 +9,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(158954),
     o = n(311907),
-    d = n(793574),
-    c = n(688810),
+    c = n(793574),
+    d = n(688810),
     u = n(362490),
     m = n(429913),
     g = n(183555),
@@ -75,7 +75,7 @@ function _(e) {
         fetched: _
     } = (0, u.RD)(s), {
         analyticsLocations: A
-    } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
+    } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
         x && (a({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t

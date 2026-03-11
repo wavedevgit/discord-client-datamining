@@ -8,8 +8,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(158954),
     o = n(311907),
-    d = n(915089),
-    c = n(961350),
+    c = n(915089),
+    d = n(961350),
     u = n(183555),
     m = n(735321),
     g = n(94343),
@@ -28,7 +28,7 @@ function v(e) {
         widget: n,
         additionalManageWidgetMenuItems: a,
         children: r
-    } = e, o = l.useRef(null), c = l.useRef(null), {
+    } = e, o = l.useRef(null), d = l.useRef(null), {
         registerManageWidgetButtonRef: u,
         manageFocusOnReorder: g
     } = (0, A.r)();
@@ -36,13 +36,13 @@ function v(e) {
         let e = u(n.type);
         return e(o.current), () => e(null)
     }, [u, n.type]);
-    let x = l.useMemo(() => n.id ?? (0, d.Ld)(), [n.id]),
+    let x = l.useMemo(() => n.id ?? (0, c.Ld)(), [n.id]),
         {
             isDragging: p,
             dragSourcePosition: _
         } = (0, f.gY)({
             dragRef: o,
-            dropRef: c,
+            dropRef: d,
             index: t,
             listType: "WIDGETS",
             itemType: "WIDGET",
@@ -57,7 +57,7 @@ function v(e) {
         E = v && t < _,
         T = v && t > _;
     return (0, i.jsxs)("div", {
-        ref: c,
+        ref: d,
         className: s()(j.wX, {
             [j.A]: E,
             [j.Ze]: T,
@@ -89,7 +89,7 @@ function E(e) {
         headerActionButtons: E,
         headerClassName: T,
         additionalManageWidgetMenuItems: b
-    } = e, N = (0, d.GV)(), S = (0, o.bG)([c.default], () => c.default.getId() === t), y = (0, p.g)(), {
+    } = e, N = (0, c.GV)(), S = (0, o.bG)([d.default], () => d.default.getId() === t), y = (0, p.g)(), {
         trackUserProfileAction: C
     } = (0, u.NJ)(), R = (0, x.A)({
         widget: n,

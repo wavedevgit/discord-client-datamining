@@ -8,8 +8,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(205338),
     o = n(179771),
-    d = n(87075),
-    c = n(311907),
+    c = n(87075),
+    d = n(311907),
     u = n(397927),
     m = n(155718),
     g = n(793574),
@@ -480,10 +480,10 @@ let Q = Object.assign(function(e) {
             cta: b,
             subtle: S = !1
         } = e,
-        G = (0, c.bG)([C.default], () => C.default.getId()) === E.id,
+        G = (0, d.bG)([C.default], () => C.default.getId()) === E.id,
         F = (0, _.h)(T.applicationId),
         W = F?.getIconURL(16),
-        H = (0, c.bG)([R.A], () => null != F ? R.A.getGameByApplication(F) : null),
+        H = (0, d.bG)([R.A], () => null != F ? R.A.getGameByApplication(F) : null),
         B = (0, I.A)({
             location: "UserProfileApplicationWidget",
             applicationId: H?.id,
@@ -539,7 +539,7 @@ let Q = Object.assign(function(e) {
             isLoading: ea,
             hasData: es,
             components: er
-        } = (t = E.id, n = T.applicationId, a = (0, p.A)(), r = (0, c.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), m = (0, c.bG)([w.A], () => w.A.getApplicationWidgetConfig(n)), h = (0, c.bG)([y.A, w.A], () => null == y.A.getUserIdentities(t) || null == w.A.applicationWidgetConfigs), j = l.useMemo(() => {
+        } = (t = E.id, n = T.applicationId, a = (0, p.A)(), r = (0, d.bG)([y.A], () => y.A.getUserIdentityByApplication(t, n)), m = (0, d.bG)([w.A], () => w.A.getApplicationWidgetConfig(n)), h = (0, d.bG)([y.A, w.A], () => null == y.A.getUserIdentities(t) || null == w.A.applicationWidgetConfigs), j = l.useMemo(() => {
             var e, t;
             if (null == m) return null;
             let n = M[m.widgetTemplateId];
@@ -550,13 +550,13 @@ let Q = Object.assign(function(e) {
                 numberFormat: a
             } : {
                 mode: "from_data",
-                variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === d.f.STRING ? [e.name, {
+                variables: Object.fromEntries([...e.profile?.data?.dynamic?.map(e => e.type === c.f.STRING ? [e.name, {
                     type: "string",
                     value: e.value
-                }] : e.type === d.f.NUMBER ? [e.name, {
+                }] : e.type === c.f.NUMBER ? [e.name, {
                     type: "number",
                     value: e.value
-                }] : e.type === d.f.MEDIA ? [e.name, {
+                }] : e.type === c.f.MEDIA ? [e.name, {
                     type: "unfurled_media",
                     media: (0, N.Uv)(e.value)
                 }] : (0, k.xb)(e)) ?? [], ...Object.entries({

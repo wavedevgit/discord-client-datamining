@@ -11,8 +11,8 @@ var i = n(627968),
     s = n(397927),
     r = n(308528),
     o = n(736653),
-    d = n(573648),
-    c = n(780964),
+    c = n(573648),
+    d = n(780964),
     u = n(840065),
     m = n(562153),
     g = n(993401),
@@ -72,14 +72,14 @@ function T(e) {
         user: t,
         guildId: n,
         channelId: o,
-        onClose: d
-    } = e, c = m.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
-        name: c
-    }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(c)), h = l.useCallback(() => {
+        onClose: c
+    } = e, d = m.Ay.getName(n, o, t), u = f.intl.formatToPlainString(f.t.sjSitP, {
+        name: d
+    }), [x] = l.useState(() => ((0, a.sample)(A) ?? A[0])(d)), h = l.useCallback(() => {
         r.A.openPrivateChannel({
             recipientIds: t.id
-        }), d?.()
-    }, [t.id, d]);
+        }), c?.()
+    }, [t.id, c]);
     return (0, i.jsx)(j, {
         heading: u,
         bodyText: x,
@@ -99,7 +99,7 @@ function b() {
     return (0, i.jsx)("div", {
         className: p.HU,
         children: I.map((t, n) => {
-            let l = d.A.get(t);
+            let l = c.A.get(t);
             if (null == l) return null;
             let a = (0, s.Mwr)(e) ? l.icon.darkPNG : l.icon.lightPNG;
             return (0, i.jsx)("img", {
@@ -115,11 +115,11 @@ function N(e) {
     let {
         onClose: t
     } = e, n = l.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(c.X.CONNECTIONS_PANEL, {
+        t?.(), (0, u.openUserSettings)(d.X.CONNECTIONS_PANEL, {
             section: x.nc_.CONNECTIONS
         })
     }, [t]), a = l.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
+        t?.(), (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
             section: x.nc_.CONTENT_AND_SOCIAL,
             subsection: "CONNECTED_GAMES"
         })

@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(311907),
     r = n(459192),
     o = n(990078),
-    d = n(808247),
-    c = n(107563),
+    c = n(808247),
+    d = n(107563),
     u = n(840411),
     m = n(178213),
     g = n(594832),
@@ -62,8 +62,8 @@ let T = l.memo(function(e) {
         index: n,
         profileOwner: a,
         isOwner: s,
-        wishlistId: d,
-        tooltipConfig: c,
+        wishlistId: c,
+        tooltipConfig: d,
         isDragging: u,
         onReorder: p
     } = e, {
@@ -76,41 +76,41 @@ let T = l.memo(function(e) {
         if (j) return (0, i.jsx)(x.A, {
             item: t,
             wishlistOwner: a,
-            wishlistId: d,
+            wishlistId: c,
             isDragging: u,
             dragHandle: T
         });
         let e = (0, i.jsx)(I.A, {
                 item: t,
                 profileOwner: a,
-                wishlistId: d,
+                wishlistId: c,
                 isOwner: s,
                 isDragging: u,
                 dragHandle: T
             }),
             n = e;
-        return c.shouldShow && !u && (n = (0, f.Qc)(c) ? (0, i.jsx)(o.m, {
-            text: c.title,
+        return d.shouldShow && !u && (n = (0, f.Qc)(d) ? (0, i.jsx)(o.m, {
+            text: d.title,
             position: "top",
             asContainer: !0,
             delay: g.Zh,
             children: e
         }) : (0, i.jsx)(r.u, {
-            title: c.title,
-            body: c.body ?? "",
-            asset: c.renderIcon?.(t),
+            title: d.title,
+            body: d.body ?? "",
+            asset: d.renderIcon?.(t),
             assetSize: g.Q8,
             position: "top",
             asContainer: !0,
             delay: g.Zh,
             children: e
         })), n
-    }, [j, t, a, u, T, c, s, d]);
+    }, [j, t, a, u, T, d, s, c]);
     return s ? (0, i.jsx)("li", {
         children: (0, i.jsx)(E, {
             item: t,
             index: n,
-            wishlistId: d,
+            wishlistId: c,
             onReorder: p,
             children: b
         })
@@ -134,7 +134,7 @@ function b(e) {
         isDragging: e.isDragging()
     })), _ = l.useCallback((e, n) => {
         if (e === n || null == m || 0 === t.length || e < 0 || e >= t.length || n < 0 || n >= t.length) return;
-        let i = c.A.getWishlist(m);
+        let i = d.A.getWishlist(m);
         if (null == i) return;
         let l = t[e],
             {
@@ -142,7 +142,7 @@ function b(e) {
                 previousSkuId: s,
                 nextSkuId: r
             } = (0, u.A)(i, t, e, n);
-        d.A.reorderWishlistItem(m, l.skuId, {
+        c.A.reorderWishlistItem(m, l.skuId, {
             previousSkuId: s,
             nextSkuId: r,
             newWishlistData: a

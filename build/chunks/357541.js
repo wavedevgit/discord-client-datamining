@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(397927),
     r = n(183555),
     o = n(633075),
-    d = n(735321),
-    c = n(384377),
+    c = n(735321),
+    d = n(384377),
     u = n(605694),
     m = n(518477),
     g = n(49999),
@@ -25,10 +25,10 @@ function f(e) {
     } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
         applicationId: n.id
     }), [n.id]), _ = l.useCallback(() => {
-        null != h && ((0, d.Y5)(h), p({
+        null != h && ((0, c.Y5)(h), p({
             action: "WIDGET_ADDED",
             ...h.getProfileEditAnalyticsOptions()
-        }), (0, c.XA)(m.jM.WIDGET_ADDED))
+        }), (0, d.XA)(m.jM.WIDGET_ADDED))
     }, [h, p]);
     return (0, i.jsx)(u.A, {
         user: t,

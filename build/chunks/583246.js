@@ -9,8 +9,8 @@ var l = n(398590),
     s = n(345942),
     r = n(183555),
     o = n(913453),
-    d = n(51943),
-    c = n(782505),
+    c = n(51943),
+    d = n(782505),
     u = n(515054),
     m = n(828151);
 
@@ -43,7 +43,7 @@ function g(e) {
                 guild: a,
                 nick: r
             } = e;
-            return (0, i.jsx)(d.A, {
+            return (0, i.jsx)(c.A, {
                 user: t,
                 guild: a,
                 nick: r,
@@ -53,6 +53,6 @@ function g(e) {
                     }), (0, s.u)(a.id), n(), (0, l.jH)()
                 }
             }, a.id)
-        }) : (0, i.jsx)(c.jB, {})
+        }) : (0, i.jsx)(d.jB, {})
     })
 }

@@ -8,17 +8,17 @@ var i = n(627968),
     s = n.n(a),
     r = n(311907),
     o = n(397927),
-    d = n(773669),
-    c = n(183555),
+    c = n(773669),
+    d = n(183555),
     u = n(985018),
     m = n(940319);
 
 function g(e) {
     let {
         className: t
-    } = e, a = ["en-US", "en-GB"].includes((0, r.bG)([d.default], () => d.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
+    } = e, a = ["en-US", "en-GB"].includes((0, r.bG)([c.default], () => c.default.locale)) ? u.intl.string(u.t.OYlggR) : u.intl.string(u.t.Y55Tua), {
         trackUserProfileEditAction: g
-    } = (0, c.NJ)(), x = l.useCallback(() => {
+    } = (0, d.NJ)(), x = l.useCallback(() => {
         g({
             action: "PRESS_ADD_WIDGET"
         }), (0, o.mMO)(async () => {

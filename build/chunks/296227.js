@@ -8,8 +8,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(397927),
     o = n(442433),
-    d = n(928658),
-    c = n(985018),
+    c = n(928658),
+    d = n(985018),
     u = n(418843);
 
 function m(e) {
@@ -19,7 +19,7 @@ function m(e) {
         className: a,
         menuItems: m
     } = e, g = l.useRef(null), x = () => {
-        (0, d.GJ)(n, t)
+        (0, c.GJ)(n, t)
     };
     return (0, i.jsx)(r.YNO, {
         targetElementRef: g,
@@ -37,11 +37,11 @@ function m(e) {
                     (0, o.Z_)(), t()
                 },
                 onSelect: () => {},
-                "aria-label": c.intl.string(c.t.xpSHSk),
+                "aria-label": d.intl.string(d.t.xpSHSk),
                 children: (0, i.jsxs)(r.rXV, {
                     children: [m, (0, i.jsx)(r.Drp, {
                         id: "flag-widget",
-                        label: c.intl.string(c.t.D4GvHE),
+                        label: d.intl.string(d.t.D4GvHE),
                         action: x,
                         color: "danger",
                         icon: r.iFK,
@@ -56,7 +56,7 @@ function m(e) {
         children: e => (0, i.jsx)(r.DUT, {
             ...e,
             innerRef: g,
-            "aria-label": c.intl.string(c.t.xpSHSk),
+            "aria-label": d.intl.string(d.t.xpSHSk),
             className: s()(u.x, a),
             children: (0, i.jsx)(r.jNK, {
                 size: "sm",

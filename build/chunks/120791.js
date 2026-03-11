@@ -9,8 +9,8 @@ var l = n(311907),
     s = n(823016),
     r = n(507247),
     o = n(750492),
-    d = n(253798),
-    c = n(622249),
+    c = n(253798),
+    d = n(622249),
     u = n(676526),
     m = n(192);
 
@@ -45,11 +45,11 @@ function x(e) {
     } = (0, m.r)(), p = f(n), {
         expanded: h,
         setExpanded: _
-    } = (0, d.B)(), A = h ? u : u.slice(0, 8), I = u.length > 8, j = (0, i.jsxs)(i.Fragment, {
+    } = (0, c.B)(), A = h ? u : u.slice(0, 8), I = u.length > 8, j = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(g, {
             ...e,
             games: A
-        }), I && (0, i.jsx)(c.A, {
+        }), I && (0, i.jsx)(d.A, {
             expanded: h,
             onClick: () => _(e => !e)
         })]

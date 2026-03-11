@@ -9,8 +9,8 @@ var i = n(627968),
 n(926675);
 var r = n(990078),
     o = n(397927),
-    d = n(147925),
-    c = n(183555),
+    c = n(147925),
+    d = n(183555),
     u = n(735321),
     m = n(122338),
     g = n(394245),
@@ -24,10 +24,10 @@ function p(e) {
         widgetType: a,
         applicationId: r,
         className: o,
-        disableInteraction: d = !1
-    } = e, p = t?.filter(e => null != (0, g.W3)(e)) ?? [], _ = p.length > 0, A = n && !d && (0, u.mS)(a) && p.length < 20, {
+        disableInteraction: c = !1
+    } = e, p = t?.filter(e => null != (0, g.W3)(e)) ?? [], _ = p.length > 0, A = n && !c && (0, u.mS)(a) && p.length < 20, {
         trackUserProfileAction: v
-    } = (0, c.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, p, E, S);
+    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, p, E, S);
     if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
             window.removeEventListener("resize", R)
         }), [R, p?.join("")]), !_ && !A) return null;
@@ -46,7 +46,7 @@ function p(e) {
                     ref: t => {
                         null != t && E.current.set(e, t)
                     },
-                    disableInteraction: d
+                    disableInteraction: c
                 }, e))
             }), N > 0 && (0, i.jsx)(I, {
                 buttonRef: T,
@@ -62,7 +62,7 @@ function p(e) {
                         action: "COLLAPSE_GAME_TAGS"
                     })
                 },
-                disableInteraction: d
+                disableInteraction: c
             })]
         }), A && (0, i.jsx)(m.A, {
             tags: t,
@@ -79,10 +79,10 @@ let h = e => {
         applicationId: l,
         widgetType: a,
         disableInteraction: s,
-        ref: d
+        ref: c
     } = e, {
         trackUserProfileEditAction: m
-    } = (0, c.NJ)(), p = (0, g.W3)(t);
+    } = (0, d.NJ)(), p = (0, g.W3)(t);
     if (null == p) return null;
     let {
         getText: h,
@@ -90,7 +90,7 @@ let h = e => {
     } = p;
     return (0, i.jsxs)("li", {
         className: f.Tc,
-        ref: d,
+        ref: c,
         children: [(0, i.jsx)(_, {
             size: "xxs"
         }), (0, i.jsx)(o.Text, {
@@ -133,8 +133,8 @@ function _(e) {
 }
 
 function A() {
-    return (0, i.jsx)(d.A, {
-        direction: d.A.Directions.LEFT,
+    return (0, i.jsx)(c.A, {
+        direction: c.A.Directions.LEFT,
         width: 12,
         height: 12,
         className: f.OW
@@ -148,21 +148,21 @@ function I(e) {
         onExpandTags: l,
         onCollapseTags: a,
         disableInteraction: s,
-        buttonRef: d
-    } = e, c = t ? x.intl.string(x.t.z9VPrQ) : x.intl.string(x.t.mriLXL), u = t ? x.intl.string(x.t.z9VPrQ) : x.intl.formatToPlainString(x.t.F6iMs4, {
+        buttonRef: c
+    } = e, d = t ? x.intl.string(x.t.z9VPrQ) : x.intl.string(x.t.mriLXL), u = t ? x.intl.string(x.t.z9VPrQ) : x.intl.formatToPlainString(x.t.F6iMs4, {
         count: n
     });
     return s ? (0, i.jsx)("div", {
         className: f.X1,
-        ref: d,
+        ref: c,
         children: (0, i.jsx)(_, {
             numberOfOverflowingTags: n
         })
     }) : (0, i.jsx)(r.m, {
-        text: c,
+        text: d,
         ariaHidden: t,
         children: (0, i.jsx)(o.DUT, {
-            innerRef: d,
+            innerRef: c,
             onClick: t ? a : l,
             "aria-label": u,
             className: t ? f.cS : f.X1,
@@ -178,20 +178,20 @@ let j = (e, t, n, i, a) => (0, l.useCallback)(() => {
         s = t.current?.getBoundingClientRect().width ?? 0,
         r = s > 0 ? 8 : 4,
         o = 0,
-        d = 0,
-        c = i.current;
+        c = 0,
+        d = i.current;
     for (let e = 0; e < n.length; e++) {
-        let t = c.get(n[e]);
+        let t = d.get(n[e]);
         if (null != t) {
-            if ((d += t.offsetWidth + 4) > 296) break;
+            if ((c += t.offsetWidth + 4) > 296) break;
             o++
         }
     }
-    d = 0;
+    c = 0;
     for (let e = o; e < n.length; e++) {
-        let t = c.get(n[e]);
+        let t = d.get(n[e]);
         if (null != t) {
-            if ((d += t.offsetWidth + 4) > 296 - l - s - r) break;
+            if ((c += t.offsetWidth + 4) > 296 - l - s - r) break;
             o++
         }
     }

@@ -9,8 +9,8 @@ var l = n(311907),
     s = n(823016),
     r = n(750492),
     o = n(253798),
-    d = n(622249),
-    c = n(742710),
+    c = n(622249),
+    d = n(742710),
     u = n(192),
     m = n(957382);
 
@@ -27,7 +27,7 @@ function g(e) {
     return (0, i.jsx)("ul", {
         className: m.h,
         children: t.map((e, t) => (0, i.jsx)("li", {
-            children: (0, i.jsx)(c.A, {
+            children: (0, i.jsx)(d.A, {
                 index: t,
                 user: n,
                 game: e,
@@ -44,7 +44,7 @@ function x(e) {
     let {
         user: t,
         widgetType: n,
-        disableInteraction: c,
+        disableInteraction: d,
         games: m
     } = e, x = (0, l.bG)([a.default], () => a.default.getId() === t.id), {
         getManageButtonForWidget: f
@@ -55,12 +55,12 @@ function x(e) {
         children: [(0, i.jsx)(g, {
             ...e,
             games: A
-        }), I && (0, i.jsx)(d.A, {
+        }), I && (0, i.jsx)(c.A, {
             expanded: h,
             onClick: () => _(e => !e)
         })]
     });
-    return x && !c ? (0, i.jsxs)(i.Fragment, {
+    return x && !d ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(r.A, {
             widgetType: n,
             gameCount: m.length

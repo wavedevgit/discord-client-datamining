@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(562153),
     r = n(415043),
     o = n(617086),
-    d = n(985018),
-    c = n(418061);
+    c = n(985018),
+    d = n(418061);
 
 function u(e) {
     let {
@@ -18,7 +18,7 @@ function u(e) {
         ...n
     } = e, l = (0, o.A)(t);
     return l.length > 0 ? (0, i.jsx)(r.A, {
-        label: d.intl.formatToPlainString(d.t.ujhJdG, {
+        label: c.intl.formatToPlainString(c.t.ujhJdG, {
             numFriends: l.length
         }),
         users: l,
@@ -38,16 +38,16 @@ function m(e) {
         } = e,
         _ = (0, o.A)(x),
         A = _.length > 0,
-        I = (t = _, n = f, u = p, m = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? d.intl.formatToPlainString(d.t.FURqTU, {
+        I = (t = _, n = f, u = p, m = t.slice(0, 3).map(e => s.Ay.getName(n, u, e)), 1 === t.length ? c.intl.formatToPlainString(c.t.FURqTU, {
             name: m[0]
-        }) : 2 === t.length ? d.intl.formatToPlainString(d.t["08Usu/"], {
+        }) : 2 === t.length ? c.intl.formatToPlainString(c.t["08Usu/"], {
             name1: m[0],
             name2: m[1]
-        }) : 3 === t.length ? d.intl.formatToPlainString(d.t.NTYHag, {
+        }) : 3 === t.length ? c.intl.formatToPlainString(c.t.NTYHag, {
             name1: m[0],
             name2: m[1],
             name3: m[2]
-        }) : d.intl.formatToPlainString(d.t["i/5oAn"], {
+        }) : c.intl.formatToPlainString(c.t["i/5oAn"], {
             name1: m[0],
             name2: m[1],
             name3: m[2],
@@ -69,6 +69,6 @@ function m(e) {
         channelId: p,
         "aria-label": I,
         overflowCountColor: "text-strong",
-        overflowCountClassName: c.L
+        overflowCountClassName: d.L
     }) : null
 }

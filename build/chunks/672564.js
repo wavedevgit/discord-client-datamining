@@ -8,8 +8,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(575593),
     o = n(397927),
-    d = n(793574),
-    c = n(688810),
+    c = n(793574),
+    d = n(688810),
     u = n(183555),
     m = n(808247),
     g = n(146423),
@@ -28,19 +28,19 @@ function j(e) {
         style: a,
         skuPreviewStyle: r,
         setIsHoveringOrFocusing: o,
-        onClick: d,
-        wishlistId: c,
+        onClick: c,
+        wishlistId: d,
         children: m
     } = e, {
         trackUserProfileWishlistAction: x
     } = (0, u.NJ)(), f = l.useCallback(() => {
         x({
-            wishlistId: c,
+            wishlistId: d,
             action: h.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.id,
             productLines: new Set([t.productLine])
-        }), d()
-    }, [d, t.id, t.productLine, x, c]);
+        }), c()
+    }, [c, t.id, t.productLine, x, d]);
     return (0, i.jsx)(g.A, {
         sku: t,
         user: n,
@@ -59,8 +59,8 @@ function v(e) {
         analyticsLocations: n,
         isHoveringOrFocusing: a,
         handleOpenUserProfileModal: r,
-        skuPreviewStyle: d,
-        wishlistOwner: c,
+        skuPreviewStyle: c,
+        wishlistOwner: d,
         ...u
     } = e, [g, f] = l.useState(!1), p = l.useCallback(async () => {
         if (!g) {
@@ -77,13 +77,13 @@ function v(e) {
         }
     }, [t, n, g, r]), I = l.useMemo(() => s()({
         [A.zW]: a || g
-    }, d), [a, g, d]);
+    }, c), [a, g, c]);
     return (0, i.jsx)(o.sqX, {
         "aria-label": t.name,
         onClick: p,
         children: (0, i.jsx)(j, {
             sku: t,
-            wishlistOwner: c,
+            wishlistOwner: d,
             skuPreviewStyle: I,
             onClick: p,
             isHoveringOrFocusing: a,
@@ -103,7 +103,7 @@ function E(e) {
         ...l
     } = e, {
         analyticsLocations: a
-    } = (0, c.Ay)(...n ?? [], d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
+    } = (0, d.Ay)(...n ?? [], c.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
     return (0, i.jsx)(v, {
         sku: t,
         analyticsLocations: a,

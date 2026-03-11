@@ -9,8 +9,8 @@ var l = n(540185),
     s = n(961350),
     r = n(735321),
     o = n(483558),
-    d = n(34442),
-    c = n(253798),
+    c = n(34442),
+    d = n(253798),
     u = n(25530),
     m = n(155400),
     g = n(844206),
@@ -57,7 +57,7 @@ function _(e) {
         ...u
     } = e, {
         setExpanded: m
-    } = (0, c.B)(), {
+    } = (0, d.B)(), {
         shouldShowSuggestions: g,
         handleDismissSuggestions: x
     } = (0, o.q)(t), _ = (0, a.bG)([s.default], () => s.default.getId() === n.id), A = _ && !l && g, I = (0, r.L)(t), j = (0, r.FM)(t, {
@@ -69,7 +69,7 @@ function _(e) {
         disableInteraction: l,
         headerTitle: I,
         headerSubtitle: j,
-        headerActionButtons: _ && !E ? [(0, i.jsx)(d.IU, {
+        headerActionButtons: _ && !E ? [(0, i.jsx)(c.IU, {
             disabled: v,
             widgetType: t.type,
             widget: t,
@@ -90,7 +90,7 @@ function A(e) {
         widget: t,
         ...n
     } = e;
-    return (0, i.jsx)(c.M, {
+    return (0, i.jsx)(d.M, {
         widgetType: t.type,
         children: (0, i.jsx)(_, {
             widget: t,

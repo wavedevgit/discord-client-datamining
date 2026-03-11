@@ -1,6 +1,6 @@
 /** chunk id: 898616 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c
+    A: () => d
 });
 var i = n(64700),
     l = n(311907),
@@ -8,23 +8,23 @@ var i = n(64700),
     s = n(71393),
     r = n(871123),
     o = n(501838),
-    d = n(188275);
+    c = n(188275);
 
-function c(e) {
+function d(e) {
     let {
         wishlist: t,
         profileOwner: n,
-        currentUser: c
-    } = e, u = n.id === c?.id, m = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), g = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), x = t?.items.some(e => (0, a.$)(e)) ?? !1, f = (0, o.gT)({
-        gameIds: d.sQ,
+        currentUser: d
+    } = e, u = n.id === d?.id, m = i.useMemo(() => t?.userId != null ? [t.userId] : [], [t]), g = (0, l.bG)([s.A], () => s.A.getGuild((0, r.zf)())), x = t?.items.some(e => (0, a.$)(e)) ?? !1, f = (0, o.gT)({
+        gameIds: c.sQ,
         userIds: m
     }), p = (0, o.K6)({
-        gameIds: d.sQ,
+        gameIds: c.sQ,
         userIds: m
     }), h = (0, o.l1)(m), _ = (0, o.hJ)({
-        gameIds: d.sQ
+        gameIds: c.sQ
     }), A = (0, o.ok)({
-        gameIds: d.sQ
+        gameIds: c.sQ
     });
     return x || f || p || h || u && (null != g || _ || A)
 }

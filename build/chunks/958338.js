@@ -1,6 +1,6 @@
 /** chunk id: 958338 params = (module,exports,require) **/
 n.d(t, {
-    S: () => c,
+    S: () => d,
     Y: () => u
 });
 var i = n(64700),
@@ -9,19 +9,19 @@ var i = n(64700),
     s = n(885151),
     r = n(958805),
     o = n(61881),
-    d = n(911498);
+    c = n(911498);
 
-function c(e) {
+function d(e) {
     let {
         bump: t,
         bumpMultiple: n,
         gameIds: r
-    } = (0, d.s)();
+    } = (0, c.s)();
     ! function(e) {
         let {
             remove: t,
             peekedGameIds: n
-        } = (0, d.s)(), r = i.useMemo(() => n[e] ?? [], [n, e]);
+        } = (0, c.s)(), r = i.useMemo(() => n[e] ?? [], [n, e]);
         (0, s.W)(r);
         let o = (0, l.yK)([a.A], () => r.map(e => a.A.isFetching(e)));
         i.useEffect(() => {
@@ -35,7 +35,7 @@ function c(e) {
         }, [r, t, e, o])
     }(e);
     let o = i.useMemo(() => r[e] ?? [], [r, e]),
-        c = i.useCallback(n => {
+        d = i.useCallback(n => {
             t(n, e)
         }, [t, e]),
         u = (0, l.yK)([a.A], () => o.map(e => a.A.isFetching(e)));
@@ -55,18 +55,18 @@ function c(e) {
     return {
         applicationIds: o,
         games: m,
-        onAddGame: c
+        onAddGame: d
     }
 }
 
 function u(e, t) {
-    let [n, a, s, c] = (0, l.yK)([o.A], () => [o.A.suggestedFetchAttempted, o.A.suggestedFetchError, o.A.suggestedGameIds, o.A.suggestedFetchIsLoading]), {
+    let [n, a, s, d] = (0, l.yK)([o.A], () => [o.A.suggestedFetchAttempted, o.A.suggestedFetchError, o.A.suggestedGameIds, o.A.suggestedFetchIsLoading]), {
         onLoad: u
-    } = (0, d.s)();
+    } = (0, c.s)();
     i.useEffect(() => {
         !n && e && r.A.fetchSuggestedGames()
     }, [n, e]);
-    let m = n && !c;
+    let m = n && !d;
     i.useEffect(() => {
         if (!m) return;
         let e = t.map(e => e.games).flat();

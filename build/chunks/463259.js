@@ -9,8 +9,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(311907),
     o = n(397927),
-    d = n(384904),
-    c = n(395332),
+    c = n(384904),
+    d = n(395332),
     u = n(566605),
     m = n(429913),
     g = n(379848),
@@ -97,9 +97,9 @@ function M(e) {
     } = e, s = (0, v.A)(t.id), o = (0, r.bG)([p.default], () => p.default.getId() === t.id), u = (() => {
         let [e, t] = (0, r.yK)([h.A], () => [h.A.ipCountryCode, h.A.ipCountryCodeRequest]), n = (0, x.Z)();
         return l.useEffect(() => {
-            null == e && null == t && n && (0, d.xe)()
+            null == e && null == t && n && (0, c.xe)()
         }, [e, t, n]), "GB" === e && n
-    })(), g = (0, c.JY)({
+    })(), g = (0, d.JY)({
         location: "UserProfileModalV2Widgets"
     }), j = 0 === s.length && o, E = l.useMemo(() => s.filter(A.fu), [s]), T = l.useMemo(() => s.filter(e => e instanceof _.R), [s]);
     (0, I.Y)(o, E), ((e, t) => {

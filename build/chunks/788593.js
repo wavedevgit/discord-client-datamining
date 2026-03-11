@@ -9,8 +9,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(311907),
     o = n(990078),
-    d = n(397927),
-    c = n(409626),
+    c = n(397927),
+    d = n(409626),
     u = n(692969),
     m = n(958805),
     g = n(61881),
@@ -26,7 +26,7 @@ function p(e) {
         role: "img",
         "aria-label": r,
         className: f.Np,
-        children: (0, i.jsx)(d.Text, {
+        children: (0, i.jsx)(c.Text, {
             variant: "text-xxs/medium",
             lineClamp: 3,
             "aria-hidden": !0,
@@ -53,7 +53,7 @@ function h(e) {
     } = e, j = (0, r.bG)([g.A], () => g.A.hasUnsavedChanges()), v = (0, u.A)({
         location: "GameCover",
         applicationId: a,
-        source: c.Ob.UserProfile,
+        source: d.Ob.UserProfile,
         sourceUserId: h,
         trackEntryPointImpression: !0
     }), E = n ?? x.intl.string(x.t.GIWFlF), T = x.intl.formatToPlainString(x.t["8QLQB+"], {
@@ -69,7 +69,7 @@ function h(e) {
         ariaHidden: !0,
         children: e
     });
-    return N(null == v ? (0, i.jsx)(d.vN3, {
+    return N(null == v ? (0, i.jsx)(c.vN3, {
         children: (0, i.jsx)("div", {
             ref: I,
             className: _,
@@ -79,7 +79,7 @@ function h(e) {
                 gameName: n
             })
         })
-    }) : (0, i.jsx)(d.DUT, {
+    }) : (0, i.jsx)(c.DUT, {
         innerRef: I,
         onClick: b,
         "aria-label": T,
@@ -99,15 +99,15 @@ function _(e) {
         disableInteraction: a = !1,
         hideTooltip: r,
         coverRef: o,
-        ...c
+        ...d
     } = e, u = s()(f.PY, l);
-    return a ? (0, i.jsx)(d.vN3, {
+    return a ? (0, i.jsx)(c.vN3, {
         children: (0, i.jsx)("div", {
             ref: o,
             className: u,
             tabIndex: -1,
             children: (0, i.jsx)(p, {
-                ...c
+                ...d
             })
         })
     }) : (0, i.jsx)(h, {
@@ -116,6 +116,6 @@ function _(e) {
         userId: n,
         hideTooltip: r,
         coverRef: o,
-        ...c
+        ...d
     })
 }

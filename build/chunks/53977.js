@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(566605),
     r = n(379848),
     o = n(183555),
-    d = n(357541),
-    c = n(814221),
+    c = n(357541),
+    d = n(814221),
     u = n(266713),
     m = n(985018),
     g = n(798521);
@@ -77,11 +77,11 @@ function x() {
                 align: "center",
                 children: [(0, i.jsx)(a.hKd, {
                     size: 32
-                }), I, (0, i.jsx)(d.A, {
+                }), I, (0, i.jsx)(c.A, {
                     user: p,
                     application: _.application,
                     onDismiss: n
-                }), (0, i.jsx)(c.A, {})]
+                }), (0, i.jsx)(d.A, {})]
             }) : (0, i.jsxs)(a.BJc, {
                 gap: 32,
                 align: "center",

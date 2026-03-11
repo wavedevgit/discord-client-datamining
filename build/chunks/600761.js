@@ -13,7 +13,7 @@ function s(e) {
         edgeDistance: s = 130,
         maxSpeed: r = 1700,
         power: o = 2.2
-    } = e, d = (0, i.useRef)(null), c = (0, i.useRef)(0), u = (0, i.useRef)({
+    } = e, c = (0, i.useRef)(null), d = (0, i.useRef)(0), u = (0, i.useRef)({
         top: 0,
         bottom: 0
     }), m = (0, i.useRef)(null), g = (0, i.useCallback)(e => ({
@@ -33,22 +33,22 @@ function s(e) {
         let e = t.current;
         if (null == e) return;
         if (!(!0 === x && p?.itemType === n && !h)) {
-            null !== d.current && cancelAnimationFrame(d.current), d.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", c.current = 0;
+            null !== c.current && cancelAnimationFrame(c.current), c.current = null, e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto", d.current = 0;
             return
         }
         let i = e.getBoundingClientRect();
         return u.current = {
             top: i.top,
             bottom: i.bottom
-        }, e.style.overflowAnchor = "none", e.style.overscrollBehavior = "contain", d.current = requestAnimationFrame(function t(n) {
-            d.current = requestAnimationFrame(t);
+        }, e.style.overflowAnchor = "none", e.style.overscrollBehavior = "contain", c.current = requestAnimationFrame(function t(n) {
+            c.current = requestAnimationFrame(t);
             let i = m.current;
             if (null == e || null == i) {
-                c.current = n;
+                d.current = n;
                 return
             }
-            let l = Math.min(32, 0 !== c.current ? n - c.current : 16) / 1e3;
-            c.current = n;
+            let l = Math.min(32, 0 !== d.current ? n - d.current : 16) / 1e3;
+            d.current = n;
             let {
                 top: a,
                 bottom: g
@@ -58,7 +58,7 @@ function s(e) {
                 Math.abs(t) >= 1 && (e.scrollTop += Math.round(t))
             }
         }), () => {
-            null !== d.current && cancelAnimationFrame(d.current), d.current = null, c.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
+            null !== c.current && cancelAnimationFrame(c.current), c.current = null, d.current = 0, null != e && (e.style.overflowAnchor = "auto", e.style.overscrollBehavior = "auto")
         }
     }, [t, x, p?.itemType, n, s, r, o, h])
 }

@@ -10,8 +10,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(131346),
     o = n(522437),
-    d = n(352944),
-    c = n(435371),
+    c = n(352944),
+    d = n(435371),
     u = n(397927),
     m = n(985018);
 
@@ -22,19 +22,19 @@ function g(e) {
         index: i,
         listType: a,
         itemId: s,
-        itemType: c,
+        itemType: d,
         itemPreviewProps: u,
         onReorder: m,
         onEnd: g,
         disableDefaultPreview: x = !0
-    } = e, f = `${c}_${a}`, p = l.useCallback((e, t) => {
+    } = e, f = `${d}_${a}`, p = l.useCallback((e, t) => {
         m?.(e, t)
     }, [m]), h = l.useMemo(() => ({
         id: s,
         index: i,
-        itemType: c,
+        itemType: d,
         itemPreviewProps: u
-    }), [s, i, c, u]), [{
+    }), [s, i, d, u]), [{
         isDragging: _
     }, A, I] = (0, r.i)({
         type: f,
@@ -45,7 +45,7 @@ function g(e) {
         end: g
     });
     l.useEffect(() => {
-        x && I((0, d.n)(), {
+        x && I((0, c.n)(), {
             captureDraggingState: !0
         })
     }, [I, x]);
@@ -81,8 +81,8 @@ let x = l.memo(function(e) {
         draggingClassName: a,
         dropBeforeClassName: r,
         dropAfterClassName: o,
-        "aria-label": d,
-        children: c,
+        "aria-label": c,
+        children: d,
         ...u
     } = e, m = l.useRef(null), {
         isDragging: x,
@@ -96,8 +96,8 @@ let x = l.memo(function(e) {
     return (0, i.jsx)("div", {
         ref: m,
         className: s()(n, x && a, h && r, _ && o),
-        "aria-label": d,
-        children: c
+        "aria-label": c,
+        children: d
     })
 });
 
@@ -108,7 +108,7 @@ function f(e) {
         iconSize: l = "sm",
         ...a
     } = e;
-    return (0, i.jsx)(c.un, {
+    return (0, i.jsx)(d.un, {
         body: m.intl.format(m.t["zvln/l"], {
             emphasizeHook: e => (0, i.jsx)("strong", {
                 children: e

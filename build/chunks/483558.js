@@ -9,14 +9,14 @@ var i = n(64700),
     r = n(735321);
 
 function o(e) {
-    let [t, n] = i.useState(!1), o = e.type, d = (0, l.bG)([a.default, s.A], () => {
+    let [t, n] = i.useState(!1), o = e.type, c = (0, l.bG)([a.default, s.A], () => {
         let e = a.default.getId();
         if (null == e) return !1;
         let t = s.A.getUserProfile(e);
         return (t?.widgets ?? []).some(e => e.type === o)
-    }), c = (0, r.uA)(e);
+    }), d = (0, r.uA)(e);
     return {
-        shouldShowSuggestions: !d && !t && !c,
+        shouldShowSuggestions: !c && !t && !d,
         handleDismissSuggestions: i.useCallback(() => {
             n(!0)
         }, [])

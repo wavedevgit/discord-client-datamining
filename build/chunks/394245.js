@@ -1,9 +1,9 @@
 /** chunk id: 394245 params = (module,exports,require) **/
 n.d(t, {
     PT: () => r,
-    Pb: () => c,
+    Pb: () => d,
     W3: () => o,
-    me: () => d
+    me: () => c
 });
 var i, l = n(761915),
     a = n(397927),
@@ -70,8 +70,8 @@ let r = {
         let t = r[e];
         return null != t ? t : null
     };
-var d = ((i = {}).RADIO = "radio", i.CHECKBOX = "checkbox", i);
-let c = {
+var c = ((i = {}).RADIO = "radio", i.CHECKBOX = "checkbox", i);
+let d = {
     skill_level: {
         getLabel: () => s.intl.string(s.t.MKqADM),
         type: "radio",

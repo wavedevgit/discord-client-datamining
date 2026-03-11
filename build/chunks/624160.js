@@ -8,8 +8,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(540185),
     o = n(397927),
-    d = n(587895),
-    c = n(403362),
+    c = n(587895),
+    d = n(403362),
     u = n(635344),
     m = n(735321),
     g = n(384377),
@@ -52,9 +52,9 @@ let A = {
             variant: "application-widget",
             applicationId: e.applicationId
         }),
-        icon: e => d.A.getApplication(e.applicationId)?.getIconURL(16),
+        icon: e => c.A.getApplication(e.applicationId)?.getIconURL(16),
         getAriaLabel: e => h.intl.formatToPlainString(h.t.KfGahB, {
-            applicationName: d.A.getApplication(e.applicationId)?.name ?? ""
+            applicationName: c.A.getApplication(e.applicationId)?.name ?? ""
         })
     }
 };
@@ -64,7 +64,7 @@ function I(e) {
             widget: n,
             onAddWidget: a,
             size: r = "default",
-            loading: d = !1,
+            loading: c = !1,
             trackUserProfileEditAction: u
         } = e,
         {
@@ -74,19 +74,19 @@ function I(e) {
         } = A[n.type],
         v = "small" === r,
         E = l.useCallback(() => {
-            d || ((0, m.Y5)(n), u({
+            c || ((0, m.Y5)(n), u({
                 action: "WIDGET_ADDED",
                 ...n.getProfileEditAnalyticsOptions()
             }), (0, g.XA)(p.jM.WIDGET_ADDED), a?.())
-        }, [d, n, u, a]),
+        }, [c, n, u, a]),
         T = j?.(n);
     return (0, i.jsxs)("div", {
         className: _.LG,
         children: [(0, i.jsxs)(o.DUT, {
-            className: s()(_.PH, v && _.PG, d && _.Lq),
+            className: s()(_.PH, v && _.PG, c && _.Lq),
             onClick: E,
             "aria-label": I(n),
-            "aria-busy": d,
+            "aria-busy": c,
             children: [(() => {
                 let e = h(n);
                 switch (e.variant) {
@@ -108,7 +108,7 @@ function I(e) {
                             size: r
                         });
                     default:
-                        return (0, c.xb)(e)
+                        return (0, d.xb)(e)
                 }
             })(), (0, i.jsxs)("div", {
                 className: _.Lw,

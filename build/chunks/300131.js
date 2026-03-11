@@ -8,17 +8,17 @@ var i = n(627968),
     s = n(793574),
     r = n(688810),
     o = n(975571),
-    d = n(993401),
-    c = n(652215),
+    c = n(993401),
+    d = n(652215),
     u = n(985018);
-let m = o.A.getArticleURL(c.MVz.CUSTOM_PROFILES_WISHLIST);
+let m = o.A.getArticleURL(d.MVz.CUSTOM_PROFILES_WISHLIST);
 
 function g(e) {
     let {
         isOwner: t,
         isWishlistPublic: n,
         onToggleVisibility: o
-    } = e, c = l.useRef(null), {
+    } = e, d = l.useRef(null), {
         analyticsLocations: g
     } = (0, r.Ay)(s.A.USER_PROFILE_WISHLIST), x = l.useMemo(() => t ? (0, i.jsxs)(a.rXV, {
         children: [(0, i.jsx)(a.fPC, {
@@ -41,7 +41,7 @@ function g(e) {
     return null == x ? null : (0, i.jsx)(r.f5, {
         value: g,
         children: (0, i.jsx)(a.YNO, {
-            targetElementRef: c,
+            targetElementRef: d,
             renderPopout: e => {
                 let {
                     closePopout: t
@@ -55,8 +55,8 @@ function g(e) {
                     children: x
                 })
             },
-            children: e => (0, i.jsx)(d.q3, {
-                buttonRef: c,
+            children: e => (0, i.jsx)(c.q3, {
+                buttonRef: d,
                 icon: a.jNK,
                 tooltipText: u.intl.string(u.t["UKOtz+"]),
                 action: "PRESS_OPTIONS",

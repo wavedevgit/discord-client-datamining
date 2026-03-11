@@ -8,8 +8,8 @@ var i = n(627968),
     s = n.n(a),
     r = n(990078),
     o = n(397927),
-    d = n(713517),
-    c = n(384377),
+    c = n(713517),
+    d = n(384377),
     u = n(808247),
     m = n(518477),
     g = n(985018),
@@ -25,7 +25,7 @@ function f(e) {
         onHoverOrFocusChange: h
     } = e, _ = l.useRef(null), {
         isHoveringOrFocusing: A
-    } = (0, d.A)(_), I = l.useRef(h);
+    } = (0, c.A)(_), I = l.useRef(h);
     l.useEffect(() => {
         I.current = h
     }, [h]), l.useEffect(() => {
@@ -35,7 +35,7 @@ function f(e) {
         if (null != t) try {
             await u.A.removeSkuFromWishlist(t, n.id, f)
         } catch (e) {
-            (0, c.XA)(m.jM.SOMETHING_WENT_WRONG)
+            (0, d.XA)(m.jM.SOMETHING_WENT_WRONG)
         }
     }, [t, n.id, f]);
     return (0, i.jsx)(r.m, {
