@@ -11,16 +11,16 @@ var a = n(627968),
     c = n(793574),
     o = n(665171),
     u = n(522055),
-    m = n(895770),
-    _ = n(355609),
+    _ = n(895770),
+    m = n(355609),
     x = n(843095),
-    f = n(800007),
-    g = n(294726),
+    g = n(800007),
+    f = n(294726),
     v = n(985018),
-    h = n(979402);
-let j = {
-    ...f.ZN,
-    initialStep: f.HS.SERVER_SETTINGS
+    j = n(979402);
+let h = {
+    ...g.ZN,
+    initialStep: g.HS.SERVER_SETTINGS
 };
 
 function A(e) {
@@ -43,52 +43,52 @@ function A(e) {
     } = s.useMemo(() => ({
         catalog: Object.values(A?.catalog ?? {}),
         instances: Object.values(A?.instances ?? {})
-    }), [A?.catalog, A?.instances]), I = b.length >= f.ZI;
+    }), [A?.catalog, A?.instances]), I = b.length >= g.ZI;
     return 0 === C.length ? (0, a.jsx)("div", {
-        className: h.kL,
+        className: j.kL,
         children: (0, a.jsx)(d.y$y, {
             type: d.tVU.SPINNING_CIRCLE,
-            className: h.u1
+            className: j.u1
         })
     }) : (0, a.jsxs)("div", {
-        className: h.kL,
+        className: j.kL,
         children: [(0, a.jsx)(i.DZT, {
-            className: h.R_,
+            className: j.R_,
             variant: "heading-md/semibold",
-            children: v.intl.string(n ? g.default["3vWDMz"] : g.default.Uvf9GK)
+            children: v.intl.string(n ? f.default["3vWDMz"] : f.default.Uvf9GK)
         }), n && I && (0, a.jsx)("div", {
-            className: h.Bq,
-            children: (0, a.jsx)(_.k, {})
+            className: j.Bq,
+            children: (0, a.jsx)(m.k, {})
         }), (0, a.jsx)(i.IpV, {
-            className: h.nd,
+            className: j.nd,
             children: (0, a.jsx)("div", {
-                className: h.Y_,
+                className: j.Y_,
                 children: C.map((e, s) => n ? (0, a.jsx)(r.m, {
                     asContainer: !0,
-                    text: e.disabled ? v.intl.formatToPlainString(g.default.uVpJYf, {
+                    text: e.disabled ? v.intl.formatToPlainString(f.default.uVpJYf, {
                         gameName: e.name
                     }) : null,
                     position: "top",
-                    children: (0, a.jsx)(m.A, {
+                    children: (0, a.jsx)(_.A, {
                         guildId: t,
                         game: e,
                         onClick: () => (0, x.A)({
                             guildId: t,
-                            stepConfig: j,
+                            stepConfig: h,
                             initialGameServerGame: e,
                             analyticsLocation: c.A.GAME_SERVER_PAGE_SIDEBAR
                         }),
-                        imageClassName: h.Sl,
-                        titleClassName: h.DD,
-                        variant: I || e.disabled ? m.e.DISABLED : m.e.CLICKABLE,
+                        imageClassName: j.Sl,
+                        titleClassName: j.DD,
+                        variant: I || e.disabled ? _.e.DISABLED : _.e.CLICKABLE,
                         location: c.A.GAME_SERVER_PAGE_SIDEBAR
                     })
-                }, `sidebar-game-${s}-${e.id}`) : (0, a.jsx)(m.A, {
+                }, `sidebar-game-${s}-${e.id}`) : (0, a.jsx)(_.A, {
                     guildId: t,
                     game: e,
-                    variant: m.e.VIEWABLE,
-                    imageClassName: h.Sl,
-                    titleClassName: h.DD,
+                    variant: _.e.VIEWABLE,
+                    imageClassName: j.Sl,
+                    titleClassName: j.DD,
                     location: c.A.GAME_SERVER_PAGE_SIDEBAR
                 }, `sidebar-game-${s}-${e.id}`))
             })
