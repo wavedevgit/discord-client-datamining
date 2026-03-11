@@ -26,7 +26,7 @@ function x(e) {
         hasAccess: v
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
         analyticsLocations: S
-    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), C = (0, a.bG)([d.A], () => d.A.hasFavorites());
+    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), C = (0, a.bG)([d.A], () => d.A.hasStoredFavorites());
     s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {

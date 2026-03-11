@@ -38,7 +38,9 @@ function E(e) {
             I(T), b(e)
         }
         N.current = T
-    }, [T]), (0, i.jsxs)(_.A, {
+    }, [T]), s.useEffect(() => {
+        void 0 !== u || C === T || v.current || (I(T), b((0, r.x7)(T)))
+    }, [u, T, C]), (0, i.jsxs)(_.A, {
         title: t,
         titleId: h,
         description: A.intl.string(A.t.Bbw6Ac),

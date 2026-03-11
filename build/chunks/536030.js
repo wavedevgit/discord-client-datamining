@@ -16,10 +16,10 @@ function s(e) {
         actorUsernameHook: c,
         targetUsernameHook: d,
         compact: u
-    } = e, _ = (0, l.Ay)(t), A = (0, l.d8)(o, s), m = c(_), E = d(A ?? void 0), I = r.intl.format(r.t["32QI5/"], {
+    } = e, _ = (0, l.Ay)(t), m = (0, l.d8)(o, s), A = c(_), E = d(m ?? void 0), I = r.intl.format(r.t["32QI5/"], {
         actorName: _.nick,
-        actorHook: m,
-        targetName: A?.nick,
+        actorHook: A,
+        targetName: m?.nick,
         targetHook: E
     });
     return (0, i.jsx)(a.A, {

@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(401843),
     u = n(155718),
     _ = n(626584),
-    A = n(659859),
-    m = n(785823),
+    m = n(659859),
+    A = n(785823),
     E = n(509536),
     I = n(615179),
     T = n(120120),
     f = n(379114),
-    N = n(698441),
-    C = n(484724),
+    C = n(698441),
+    N = n(484724),
     g = n(997509),
     h = n(850131),
     p = n(31051),
@@ -66,14 +66,14 @@ var i = n(627968),
     ed = n(821241),
     eu = n(541171),
     e_ = n(229673),
-    eA = n(494086),
-    em = n(734771),
+    em = n(494086),
+    eA = n(734771),
     eE = n(753073),
     eI = n(640289),
     eT = n(293657),
     ef = n(269802),
-    eN = n(576471),
-    eC = n(808821),
+    eC = n(576471),
+    eN = n(808821),
     eg = n(933762),
     eh = n(840233),
     ep = n(536030),
@@ -165,7 +165,7 @@ let eL = Object.freeze({
                 targetUser: o,
                 actorUsernameHook: d,
                 targetUsernameHook: u
-            }) : (0, i.jsx)(eA.A, {
+            }) : (0, i.jsx)(em.A, {
                 message: t,
                 compact: l,
                 otherUsername: c,
@@ -198,14 +198,14 @@ let eL = Object.freeze({
                 targetUser: o,
                 actorUsernameHook: c,
                 targetUsernameHook: d
-            }) : null != o && o.id !== r.id ? (0, i.jsx)(em.A, {
+            }) : null != o && o.id !== r.id ? (0, i.jsx)(eA.A, {
                 message: t,
                 channel: n,
                 compact: l,
                 usernameHook: c,
                 otherUser: o,
                 otherUsernameHook: d
-            }) : (0, i.jsx)(em.A, {
+            }) : (0, i.jsx)(eA.A, {
                 message: t,
                 channel: n,
                 usernameHook: c
@@ -219,7 +219,7 @@ let eL = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = j.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), A = (0, a.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), m = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == A || A.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
+            } = t, d = j.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -229,7 +229,7 @@ let eL = Object.freeze({
             return (0, i.jsx)(ee.A, {
                 compact: n,
                 message: t,
-                missed: m,
+                missed: A,
                 joinable: E,
                 usernameHook: T,
                 onClickJoinCall: I
@@ -358,23 +358,23 @@ let eL = Object.freeze({
                     id: o
                 },
                 messageReference: c
-            } = t, u = t.getChannelId(), _ = (0, a.bG)([B.A], () => B.A.findActivity(o, e => e.type === eM.$pd.PLAYING), [o]), A = (0, a.bG)([k.A], () => null != c ? k.A.getChannel(c.channel_id) : null, [c]), m = c?.guild_id, E = (0, Z.P)({
+            } = t, u = t.getChannelId(), _ = (0, a.bG)([B.A], () => B.A.findActivity(o, e => e.type === eM.$pd.PLAYING), [o]), m = (0, a.bG)([k.A], () => null != c ? k.A.getChannel(c.channel_id) : null, [c]), A = c?.guild_id, E = (0, Z.P)({
                 user: s,
                 channelId: u,
                 guildId: r.guild_id,
                 messageId: t.id
             }), I = l.useCallback(() => {
-                null != A && null != m && (0, d.Nl)({
+                null != m && null != A && (0, d.Nl)({
                     streamType: eD.U4.GUILD,
                     ownerId: o,
-                    channelId: A.id,
-                    guildId: m
+                    channelId: m.id,
+                    guildId: A
                 })
-            }, [o, A, m]);
-            return null != c && null != A && null != c.guild_id ? (0, i.jsx)(eu.A, {
+            }, [o, m, A]);
+            return null != c && null != m && null != c.guild_id ? (0, i.jsx)(eu.A, {
                 message: t,
                 compact: n,
-                channel: A,
+                channel: m,
                 playingActivity: _,
                 onJoinStream: I,
                 usernameHook: E
@@ -452,7 +452,7 @@ let eL = Object.freeze({
                 compact: n,
                 channel: l
             } = e;
-            return (0, m.ER)(t) ? (0, i.jsx)($.A, {
+            return (0, A.ER)(t) ? (0, i.jsx)($.A, {
                 message: t,
                 compact: n,
                 channel: l
@@ -520,13 +520,13 @@ let eL = Object.freeze({
                 channelId: n.id,
                 guildId: n.guild_id,
                 messageId: t.id
-            }), s = (0, a.bG)([N.Ay], () => N.Ay.getActiveEventByChannel(n.id), [n.id]);
+            }), s = (0, a.bG)([C.Ay], () => C.Ay.getActiveEventByChannel(n.id), [n.id]);
             return (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(ef.A, {
                     message: t,
                     compact: l,
                     usernameHook: r
-                }), null != s && s.name === t.content ? (0, i.jsx)(C.A, {
+                }), null != s && s.name === t.content ? (0, i.jsx)(N.A, {
                     code: `${n.guild_id}-${s.id}`
                 }) : null]
             })
@@ -602,7 +602,7 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(eN.A, {
+            return (0, i.jsx)(eC.A, {
                 message: t,
                 compact: l,
                 usernameHook: a
@@ -689,7 +689,7 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(A._W, {
+            return (0, i.jsx)(m._W, {
                 message: t,
                 channel: n,
                 compact: l,
@@ -742,7 +742,7 @@ let eL = Object.freeze({
                 message: t,
                 compact: n
             } = e;
-            return (0, i.jsx)(eC.A, {
+            return (0, i.jsx)(eN.A, {
                 message: t,
                 compact: n
             })

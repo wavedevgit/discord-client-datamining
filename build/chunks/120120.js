@@ -13,8 +13,8 @@ var l = n(417597),
     d = n(976860),
     u = n(141593),
     _ = n(652215),
-    A = n(985018),
-    m = n(221110);
+    m = n(985018),
+    A = n(221110);
 
 function E(e) {
     let {
@@ -23,23 +23,23 @@ function E(e) {
         username: s
     } = e, o = (0, l.bG)([r.A], () => !r.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), d = (0, i.jsx)("img", {
         src: c,
-        className: m.dj,
+        className: A.dj,
         alt: ""
     });
     return (0, i.jsxs)("div", {
-        className: m.uE,
+        className: A.uE,
         role: "img",
-        "aria-label": A.intl.formatToPlainString(A.t["utf8+W"], {
+        "aria-label": m.intl.formatToPlainString(m.t["utf8+W"], {
             username: s
         }),
         children: [(0, i.jsx)(u.A, {
             avatar: d
         }), (0, i.jsx)(a.Text, {
-            className: m.Bi,
+            className: A.Bi,
             tag: "p",
             color: "status-positive-text",
             variant: "heading-xl/medium",
-            children: A.intl.format(A.t["52BAtC"], {
+            children: m.intl.format(m.t["52BAtC"], {
                 username: s,
                 usernameHook: (e, t) => (0, i.jsx)(a.Text, {
                     tag: "span",
@@ -63,7 +63,7 @@ function I(e) {
         channelId: t.id,
         guildId: t.guild_id,
         messageId: l.id
-    })(r), m = A.intl.format(A.t.TQs67g, {
+    })(r), A = m.intl.format(m.t.TQs67g, {
         username: r.nick,
         usernameHook: u,
         productName: l.purchaseNotification?.guild_product_purchase?.product_name ?? "",
@@ -76,7 +76,7 @@ function I(e) {
             icon: n(394803),
             timestamp: l.timestamp,
             compact: a,
-            children: m
+            children: A
         }), (0, i.jsx)(E, {
             username: r.nick,
             guildId: t.guild_id,

@@ -8,25 +8,25 @@ var i = n(311907),
 let l = {
         gameUpsellsDismissal: {}
     },
-    r = {
+    a = {
         ...l
     };
-class a extends i.Ay.PersistedStore {
+class r extends i.Ay.PersistedStore {
     static displayName = "GameUpsellStore";
     static persistKey = "GameUpsellStore";
     initialize(e) {
-        r = e ?? r
+        a = e ?? a
     }
     getState() {
-        return r
+        return a
     }
     getGameUpsellDismissal(e, t) {
-        return r.gameUpsellsDismissal[t]?.[e] ?? null
+        return a.gameUpsellsDismissal[t]?.[e] ?? null
     }
 }
-let o = new a(s.h, {
+let o = new r(s.h, {
     LOGOUT: function() {
-        r = {
+        a = {
             ...l
         }
     },
@@ -35,12 +35,12 @@ let o = new a(s.h, {
             applicationId: t,
             dismissedAt: n,
             dismissibleContent: i
-        } = e, s = r.gameUpsellsDismissal[i]?.[t], l = null != s ? s.timesDismissed + 1 : 1;
-        r = {
+        } = e, s = a.gameUpsellsDismissal[i]?.[t], l = null != s ? s.timesDismissed + 1 : 1;
+        a = {
             gameUpsellsDismissal: {
-                ...r.gameUpsellsDismissal,
+                ...a.gameUpsellsDismissal,
                 [i]: {
-                    ...r.gameUpsellsDismissal[i],
+                    ...a.gameUpsellsDismissal[i],
                     [t]: {
                         dismissedAt: n,
                         timesDismissed: l

@@ -12,27 +12,27 @@ var i = n(627968),
     d = n(34457),
     u = n(696451),
     _ = n(317525),
-    A = n(71393),
-    m = n(287809),
+    m = n(71393),
+    A = n(287809),
     E = n(488926),
     I = n(661191),
     T = n(529942),
     f = n(164956),
-    N = n(209700),
-    C = n(652215),
+    C = n(209700),
+    N = n(652215),
     g = n(985018),
     h = n(110927);
 
 function p(e) {
     let {
         guildId: t
-    } = e, n = (0, s.bG)([m.default], () => m.default.getCurrentUser()), p = (0, s.bG)([A.A], () => A.A.getGuild(t)), R = (0, s.bG)([_.A], () => _.A.getRolesSnapshot(t)), x = (0, s.bG)([_.A], () => _.A.getSortedRoles(t)), {
+    } = e, n = (0, s.bG)([A.default], () => A.default.getCurrentUser()), p = (0, s.bG)([m.A], () => m.A.getGuild(t)), R = (0, s.bG)([_.A], () => _.A.getRolesSnapshot(t)), x = (0, s.bG)([_.A], () => _.A.getSortedRoles(t)), {
         impersonateType: O,
         viewingRoles: M
     } = (0, s.cf)([f.A], () => ({
         impersonateType: f.A.getImpersonateType(t),
         viewingRoles: f.A.getViewingRoles(t)
-    })), D = O === N._.SERVER_SHOP, P = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), U = null != p ? R[(0, c.af)(p)] : null, [v, L] = l.useState(() => {
+    })), D = O === C._.SERVER_SHOP, P = (0, s.bG)([u.Ay], () => null != n ? u.Ay.getTrueMember(t, n.id) : null), U = null != p ? R[(0, c.af)(p)] : null, [v, L] = l.useState(() => {
         let e = null == M ? [] : I.default.keys(M);
         return null != U && e.push(U.id), e
     }), y = l.useRef(p);
@@ -75,7 +75,7 @@ function p(e) {
     }), a.zy(E.aH({
         forceRoles: G,
         context: p
-    }), a.kg(C.xBc.MANAGE_GUILD, C.xBc.MANAGE_ROLES)) || (0, c.bM)(p, n)) ? (0, i.jsx)("div", {
+    }), a.kg(N.xBc.MANAGE_GUILD, N.xBc.MANAGE_ROLES)) || (0, c.bM)(p, n)) ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)(o.iS7, {
             selectionMode: "multiple",

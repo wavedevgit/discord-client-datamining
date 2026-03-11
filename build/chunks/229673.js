@@ -1,6 +1,6 @@
 /** chunk id: 229673 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968);
 n(64700);
@@ -13,33 +13,33 @@ var l = n(934551),
     d = n(888675),
     u = n(652215),
     _ = n(985018),
-    A = n(953837);
+    m = n(953837);
 
-function m(e) {
+function A(e) {
     let {
         message: t,
         channel: n,
-        author: m,
+        author: A,
         compact: E
     } = e, {
         nick: I
-    } = (0, o.d8)(m, n), T = (0, c.P)({
-        user: m,
+    } = (0, o.d8)(A, n), T = (0, c.P)({
+        user: A,
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
     })(), f = (0, a.h)(t.applicationId);
     if (null == f) return null;
-    let N = _.intl.format(_.t.m7Lwas, {
+    let C = _.intl.format(_.t.m7Lwas, {
         username: I,
         usernameHook: T,
         gameName: f.name,
         gameIconHook: e => (0, i.jsxs)("span", {
-            className: A.Y_,
+            className: m.Y_,
             children: [(0, i.jsx)(r.A, {
                 game: f,
                 size: r.M.XXSMALL,
-                className: A.p4
+                className: m.p4
             }), " ", e]
         }),
         helpdeskArticle: s.A.getArticleURL(u.MVz.SOCIAL_LAYER_CONNECTIONS)
@@ -49,9 +49,9 @@ function m(e) {
             size: "sm"
         }),
         compact: E,
-        contentClassName: A.Qs,
+        contentClassName: m.Qs,
         children: (0, i.jsx)("div", {
-            children: N
+            children: C
         })
     })
 }

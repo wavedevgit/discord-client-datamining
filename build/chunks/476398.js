@@ -13,15 +13,15 @@ var a = n(627968),
     u = n(99753),
     m = n(475450),
     h = n(583846),
-    x = n(424994),
-    p = n(805176);
+    p = n(424994),
+    x = n(805176);
 
 function g(e) {
     let {
         id: t
     } = e, n = (0, i.bG)([o.default], () => o.default.getUser(t));
     return null == n ? null : (0, a.jsx)(s.DUT, {
-        className: p._,
+        className: x._,
         onClick: function() {
             (0, r.openUserProfileModal)({
                 sourceAnalyticsLocations: [l.A.DEV_TOOLS],
@@ -36,7 +36,7 @@ function g(e) {
 }
 
 function _() {
-    let e = (0, i.bG)([u.A], () => u.A.getFeed(x.X1.GLOBAL_FEED)),
+    let e = (0, i.bG)([u.A], () => u.A.getFeed(p.X1.GLOBAL_FEED)),
         t = (0, i.bG)([u.A], () => u.A.getFilters()),
         n = (0, i.cf)([d.A], () => {
             let t = {};
@@ -52,7 +52,7 @@ function _() {
         if (!(0, m.l)(t, i)) return [];
         let r = n[(0, d.$)(i)];
         return (0, a.jsxs)("li", {
-            className: p.p,
+            className: x.p,
             children: [(0, a.jsx)(g, {
                 type: i.author_type,
                 id: i.author_id

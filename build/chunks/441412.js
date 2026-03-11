@@ -16,7 +16,7 @@ function c(e) {
         usernameHook: n,
         onClickPins: c,
         compact: d
-    } = e, u = (0, r.Ay)(t), _ = u.nick, A = n(u), m = () => {
+    } = e, u = (0, r.Ay)(t), _ = u.nick, m = n(u), A = () => {
         if (null == t.messageReference) return;
         let {
             channel_id: e,
@@ -38,19 +38,19 @@ function c(e) {
         timestamp: t.timestamp,
         compact: d,
         children: null != t.messageReference ? null == c ? o.intl.format(o.t.lD5tup, {
-            usernameHook: A,
+            usernameHook: m,
             username: _,
-            messageOnClick: m
+            messageOnClick: A
         }) : o.intl.format(o.t.yIDvPL, {
-            usernameHook: A,
+            usernameHook: m,
             username: _,
             pinsActionOnClick: c,
-            messageOnClick: m
+            messageOnClick: A
         }) : null == c ? o.intl.format(o.t.vfkjqx, {
-            usernameHook: A,
+            usernameHook: m,
             username: _
         }) : o.intl.format(o.t.R7vZGZ, {
-            usernameHook: A,
+            usernameHook: m,
             username: _,
             pinsActionOnClick: c
         })

@@ -1,7 +1,7 @@
 /** chunk id: 866842 params = (module,exports,require) **/
 n.d(t, {
-    D: () => R,
-    g: () => G
+    Om: () => R,
+    g3: () => G
 }), n(321073);
 var i = n(64700),
     r = n(735438),
@@ -30,13 +30,21 @@ var i = n(64700),
 let O = 21552 == n.j ? [s.Ay, o.A, c.Ay, u.A, A.A, I.A, g.A, C.A, p.A, S.Ay, f.A, T.Ay] : null;
 
 function R() {
-    let {
-        hasAccess: e
-    } = (0, d.TW)("FavoritesGuildChannelList"), [t, n] = i.useState(() => G()), r = i.useMemo(() => G({}), []);
-    return i.useEffect(() => {
-        let e = a().throttle(() => n(G()), 100);
-        return O.forEach(t => t.addChangeListener(e)), () => O.forEach(t => t.removeChangeListener(e))
-    }, []), e ? t : r
+    let e, t = function() {
+        let {
+            hasAccess: e
+        } = (0, d.TW)("FavoritesGuildChannelList"), [t, n] = i.useState(() => G()), r = i.useMemo(() => G({}), []);
+        return i.useEffect(() => {
+            let e = a().throttle(() => n(G()), 100);
+            return O.forEach(t => t.addChangeListener(e)), () => O.forEach(t => t.removeChangeListener(e))
+        }, []), e ? t : r
+    }();
+    return {
+        guildChannels: t,
+        hasShownFavoritedChannels: (e = !1, t.forEachShownChannel(() => {
+            e = !0
+        }), e)
+    }
 }
 
 function G(e) {

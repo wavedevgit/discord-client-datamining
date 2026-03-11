@@ -1,9 +1,9 @@
 /** chunk id: 727949 params = (module,exports,require) **/
 n.d(t, {
-    GQ: () => m,
+    GQ: () => A,
     NF: () => T,
     QG: () => I,
-    Tp: () => N,
+    Tp: () => C,
     ZR: () => E,
     ne: () => f
 });
@@ -17,15 +17,15 @@ var i = n(311907),
     d = n(894374),
     u = n(103411),
     _ = n(49999),
-    A = n(985018);
+    m = n(985018);
 
-function m(e) {
+function A(e) {
     let t = (e - Date.now()) / s.A.Millis.HOUR;
-    return t > 24 ? A.intl.formatToPlainString(A.t["g9s+dA"], {
+    return t > 24 ? m.intl.formatToPlainString(m.t["g9s+dA"], {
         numDays: Math.floor(t / 24)
-    }) : t >= 1 ? A.intl.formatToPlainString(A.t.k9v33y, {
+    }) : t >= 1 ? m.intl.formatToPlainString(m.t.k9v33y, {
         numHours: Math.floor(t)
-    }) : A.intl.formatToPlainString(A.t["/d0GmT"], {
+    }) : m.intl.formatToPlainString(m.t["/d0GmT"], {
         numMinutes: Math.floor(60 * t)
     })
 }
@@ -49,7 +49,7 @@ let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
             dismissAction: _.i.INDIRECT_ACTION
         }) : (0, a.Dr)(l.M.REFERRAL_PROGRAM_POPOVER)
     },
-    N = () => {
+    C = () => {
         let e, t = (0, u.m)(!1),
             n = (0, i.bG)([c.A], () => c.A.getReferralsRemaining()),
             r = (0, i.bG)([c.A], () => c.A.getReminderStateId());

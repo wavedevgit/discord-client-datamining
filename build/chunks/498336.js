@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(387265),
     m = n(230135),
     h = n(45780),
-    x = n(665171),
-    p = n(942975),
+    p = n(665171),
+    x = n(942975),
     g = n(594061),
     _ = n(617617),
     f = n(859241),
@@ -31,7 +31,7 @@ async function y(e, t, n) {
             ends_at: n ? null : s()().add(1, "day")
         },
         rejectWithError: !0
-    }), (0, c.VU)(e), (0, p.Xd)(e, !0)
+    }), (0, c.VU)(e), (0, x.Xd)(e, !0)
 }
 async function T(e) {
     await r.Bo.post({
@@ -63,7 +63,7 @@ function S() {
                 variant: "primary",
                 text: "Reset",
                 onClick: () => {
-                    (0, p.qM)()
+                    (0, x.qM)()
                 }
             })]
         }), (0, a.jsxs)("div", {
@@ -161,7 +161,7 @@ function S() {
             variant: "primary",
             text: "Reset GameServer ToS",
             onClick: () => {
-                (0, x.Wp)(!1)
+                (0, p.Wp)(!1)
             }
         })]
     })

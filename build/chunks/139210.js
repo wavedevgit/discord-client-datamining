@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(971649),
     m = n(901406),
     h = n(270045),
-    x = n(57718),
-    p = n(398025),
+    p = n(57718),
+    x = n(398025),
     g = n(545986),
     _ = n(568329),
     f = n(963713),
@@ -23,13 +23,13 @@ var a = n(627968),
 n(272111);
 var j = n(985018),
     A = n(116224);
-let C = (0, r.animated)(x.Ay),
+let C = (0, r.animated)(p.Ay),
     y = e => {
         let {
             withUnfurlTimeout: t,
             unfurlTimeoutDurationInMilliseconds: n,
             onUnfurlTimeoutComplete: s
-        } = e, x = (0, u.go)(), {
+        } = e, p = (0, u.go)(), {
             expansionSpring: y
         } = i.useContext(_.PW), {
             onCtxMenuOpen: T,
@@ -48,10 +48,10 @@ let C = (0, r.animated)(x.Ay),
             (0, m.pu)(k, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
-                impressionId: x,
+                impressionId: p,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [x, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
+        }, [p, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
             onClick: O,
             className: l()(A.vk, {
                 [A.wm]: w
@@ -83,7 +83,7 @@ let C = (0, r.animated)(x.Ay),
             children: [(0, a.jsx)(r.animated.div, {
                 className: A.Tu,
                 style: {
-                    opacity: (0, p.a)(y.to({
+                    opacity: (0, x.a)(y.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
@@ -94,7 +94,7 @@ let C = (0, r.animated)(x.Ay),
             }), (0, a.jsxs)(r.animated.div, {
                 className: A.P0,
                 style: {
-                    opacity: (0, p.a)(y.to({
+                    opacity: (0, x.a)(y.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))

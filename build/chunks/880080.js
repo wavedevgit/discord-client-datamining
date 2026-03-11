@@ -41,7 +41,7 @@ function S(e) {
         onVolumeChange: j
     } = e, {
         isFullscreenEnabled: w
-    } = l.useContext(h.VideoQuestModalContext), k = (0, E.Kr)(e => e.volume), O = (0, E.Kr)(e => e.setVolume), P = (0, E.Kr)(e => e.muted), Q = (0, E.Kr)(e => e.setMuted), V = (0, E.Kr)(e => e.transcriptEnabled), U = (0, E.Kr)(e => e.captionEnabled), B = (0, o.bG)([m.A], () => m.A.useReducedMotion), F = (0, o.bG)([m.A], () => m.A.keyboardModeEnabled), [G, K] = l.useState(P ? 0 : k), [$, Y] = l.useState(!1), [H, z] = l.useState(!1), [{
+    } = l.useContext(h.VideoQuestModalContext), k = (0, E.Kr)(e => e.volume), O = (0, E.Kr)(e => e.setVolume), P = (0, E.Kr)(e => e.muted), Q = (0, E.Kr)(e => e.setMuted), V = (0, E.Kr)(e => e.transcriptEnabled), U = (0, E.Kr)(e => e.captionEnabled), B = (0, o.bG)([m.A], () => m.A.useReducedMotion), F = (0, o.bG)([m.A], () => m.A.keyboardModeEnabled), [G, K] = l.useState(P ? 0 : k), [Y, $] = l.useState(!1), [H, z] = l.useState(!1), [{
         volumeAnimSpring: W
     }, q] = (0, d.zhh)(() => ({
         from: {
@@ -57,9 +57,9 @@ function S(e) {
     }, [t, G]), Z = l.useCallback(() => {
         null != t.current && (0 === G ? (Q(!1), 0 === k ? (O(p.$J), J(p.$J), j(p.$J)) : (J(k), j(k))) : (O(G), J(0), Q(!0), j(0)))
     }, [t, G, J, k, Q, O, j]), ee = () => {
-        Y(!0)
+        $(!0)
     }, et = () => {
-        Y(!1)
+        $(!1)
     }, en = l.useCallback(e => {
         switch (e.key) {
             case v.TJ.PLAYBACK:
@@ -87,11 +87,11 @@ function S(e) {
     l.useEffect(() => {
         null != X.current && X.current.focus()
     }, []), l.useEffect(() => (q({
-        volumeAnimSpring: H || $ ? 1 : 0,
+        volumeAnimSpring: H || Y ? 1 : 0,
         immediate: B
     }), () => {
         W.stop()
-    }), [H, $, q, B, W]), l.useEffect(() => (window.addEventListener("keydown", en), () => {
+    }), [H, Y, q, B, W]), l.useEffect(() => (window.addEventListener("keydown", en), () => {
         window.removeEventListener("keydown", en)
     }), [en]);
     let er = 0 === G ? d._RO : G < .5 ? d.S24 : d.HKD,

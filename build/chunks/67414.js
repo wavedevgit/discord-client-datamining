@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(688810),
     u = n(139286),
     _ = n(21119),
-    A = n(287809),
-    m = n(954571),
+    m = n(287809),
+    A = n(954571),
     E = n(242874),
     I = n(275759),
     T = n(979474),
     f = n(51501),
-    N = n(788868),
-    C = n(652215),
+    C = n(788868),
+    N = n(652215),
     g = n(778712),
     h = n(985018),
     p = n(989712);
@@ -75,7 +75,7 @@ function O(e) {
         analyticsPage: R,
         analyticsSection: O,
         innerRef: M
-    } = e, D = (0, r.bG)([A.default], () => A.default.getCurrentUser()), {
+    } = e, D = (0, r.bG)([m.default], () => m.default.getCurrentUser()), {
         analyticsLocations: P
     } = (0, d.Ay)(c.A.PREMIUM_GIFT_INTENT_CARD), U = (0, r.bG)([I.Ay], () => I.Ay.getFriendAnniversaryYears(S.id)), v = (0, f.$)(t), {
         openGiftModal: L
@@ -86,8 +86,8 @@ function O(e) {
         analyticsObject: {
             page: R,
             section: O,
-            object: C.ZSU.BUTTON_CTA,
-            objectType: C.AnalyticsObjectTypes.GIFT
+            object: N.ZSU.BUTTON_CTA,
+            objectType: N.AnalyticsObjectTypes.GIFT
         },
         location: "gift-intent-card"
     });
@@ -101,7 +101,7 @@ function O(e) {
             }
         })
     }, [t]);
-    let y = () => t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
+    let y = () => t === C.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.ilhtIa) : (0, E.yE)(t);
     return (0, i.jsx)("div", {
         ref: M,
         className: p.Qs,
@@ -127,7 +127,7 @@ function O(e) {
                         variant: "text-md/medium",
                         color: "text-strong",
                         lineClamp: 3,
-                        children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
+                        children: t === C.np.FRIEND_ANNIVERSARY ? h.intl.string(h.t.CeQIwZ) : (0, E.yE)(t)
                     }), (0, i.jsxs)("div", {
                         className: p.jA,
                         children: [(0, i.jsx)(s.$yI, {
@@ -137,7 +137,7 @@ function O(e) {
                             variant: "text-md/normal",
                             color: "text-subtle",
                             lineClamp: 1,
-                            children: t === N.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
+                            children: t === C.np.FRIEND_ANNIVERSARY ? h.intl.formatToPlainString(h.t.PpG27s, {
                                 numberOfYears: U
                             }) : (0, E.yE)(t)
                         })]
@@ -151,7 +151,7 @@ function O(e) {
                     text: h.intl.string(h.t.nffuyb),
                     "aria-label": h.intl.string(h.t.nffuyb),
                     onClick: e => {
-                        e.stopPropagation(), m.default.track(C.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
+                        e.stopPropagation(), A.default.track(N.HAw.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
                             gift_intent_type: t,
                             cta_type: "send_message",
                             location_stack: P
@@ -175,7 +175,7 @@ function O(e) {
                     onClick: e => {
                         e.stopPropagation();
                         let n = _.A.getUserAffinity(S.id);
-                        m.default.track(C.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+                        A.default.track(N.HAw.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
                             gift_intent_type: t,
                             affinity: n?.dmProbability,
                             location_stack: P

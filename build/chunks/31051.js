@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(639289),
     u = n(287809),
     _ = n(166403),
-    A = n(954571),
-    m = n(203982),
+    m = n(954571),
+    A = n(203982),
     E = n(728458),
     I = n(427262),
     T = n(573359),
     f = n(59784),
-    N = n(612669),
-    C = n(88001),
+    C = n(612669),
+    N = n(88001),
     g = n(652215),
     h = n(519412),
     p = n(985018),
@@ -43,7 +43,7 @@ let x = e => {
                     a = u.default.getUser(r.primary_user);
                 if (null == a) return;
                 let c = (0, I.$3)(a);
-                A.default.track(g.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
+                m.default.track(g.HAw.PREMIUM_GROUP_INVITE_EMBED_ACCEPT_CLICKED, {
                     invite_id: t,
                     subscription_id: e
                 });
@@ -60,14 +60,14 @@ let x = e => {
                         premiumGroupPrimaryName: c,
                         isExistingSub: o,
                         onClose: async () => {
-                            E || (E = !0, m._.dispatch(g.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), T.A.isDisplayingWowMomentConfirmation && T.A.isAnimated ? setTimeout(() => {
+                            E || (E = !0, A._.dispatch(g.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), T.A.isDisplayingWowMomentConfirmation && T.A.isAnimated ? setTimeout(() => {
                                 n.onClose()
                             }, d.K) : await n.onClose())
                         }
                     })
                 }, {
                     onCloseRequest: () => {
-                        E || (E = !0, m._.dispatch(g.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), T.A.isDisplayingWowMomentConfirmation && T.A.isAnimated ? setTimeout(() => {
+                        E || (E = !0, A._.dispatch(g.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED), T.A.isDisplayingWowMomentConfirmation && T.A.isAnimated ? setTimeout(() => {
                             (0, s.OoC)(_)
                         }, d.K) : (0, s.OoC)(_))
                     },
@@ -100,7 +100,7 @@ let x = e => {
                 });
                 let e = a.getRecipientId(),
                     t = u.default.getUser(e);
-                null != t && (A.default.track(g.HAw.PREMIUM_GROUP_INVITE_EMBED_CANCEL_CLICKED, {
+                null != t && (m.default.track(g.HAw.PREMIUM_GROUP_INVITE_EMBED_CANCEL_CLICKED, {
                     invite_id: l.id,
                     subscription_id: l.subscription,
                     invited_user_id: e
@@ -174,42 +174,42 @@ let x = e => {
             inviteState: s,
             isFetching: c,
             invite: d,
-            currentUser: A,
-            premiumSubscription: m
+            currentUser: m,
+            premiumSubscription: A
         } = (0, r.cf)([f.A, u.default, _.A], () => ({
-            inviteState: null != a ? f.A.getInviteState(a) : C.xI.NOT_FOUND,
+            inviteState: null != a ? f.A.getInviteState(a) : N.xI.NOT_FOUND,
             isFetching: null != a && f.A.isFetching(a),
             invite: null != a ? f.A.getInvite(a)?.invite : null,
             currentUser: u.default.getCurrentUser(),
             premiumSubscription: _.A.getPremiumSubscription()
         }), [a]);
-        if (null == A) return null;
+        if (null == m) return null;
         let E = t.author,
-            I = A.id === E.id;
-        if (c || s === C.xI.FETCHING || s === C.xI.UNKNOWN) return (0, i.jsx)(o.Wb, {
+            I = m.id === E.id;
+        if (c || s === N.xI.FETCHING || s === N.xI.UNKNOWN) return (0, i.jsx)(o.Wb, {
             isHorizontal: !0
         });
-        let T = (0, N.o1)({
+        let T = (0, C.o1)({
             sender: E,
             channel: n,
             isSender: I,
             inviteState: s
         });
         if (null == T) return null;
-        let g = s === C.xI.PENDING,
+        let g = s === N.xI.PENDING,
             h = null;
         return h = I ? g ? (0, i.jsx)(O, {
             disabled: !1,
             invite: d,
             channel: n
-        }) : s === C.xI.REMOVED ? (0, i.jsx)(O, {
+        }) : s === N.xI.REMOVED ? (0, i.jsx)(O, {
             disabled: !0,
             invite: d,
             channel: n
         }) : null : (0, i.jsx)(x, {
             disabled: !g,
             invite: d,
-            isExistingSub: null != m
+            isExistingSub: null != A
         }), (0, i.jsx)(M, {
             message: T.message,
             header: T.header,

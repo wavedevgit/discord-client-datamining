@@ -1,6 +1,6 @@
 /** chunk id: 364504 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(158954),
@@ -19,7 +19,7 @@ function h() {
     })
 }
 
-function x(e) {
+function p(e) {
     let {
         profileUserId: t,
         handleOpenUserProfileModal: n,

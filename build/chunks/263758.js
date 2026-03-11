@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(803306),
     m = n(272207),
     h = n(287809),
-    x = n(166403),
-    p = n(556499),
+    p = n(166403),
+    x = n(556499),
     g = n(652215),
     _ = n(788868),
     f = n(815907),
@@ -65,7 +65,7 @@ let b = async () => (await o.Bo.get({
 }];
 
 function A() {
-    let e = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+    let e = (0, r.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
         t = (0, r.bG)([h.default], () => h.default.getCurrentUser()),
         [n, s] = i.useState("511651880837840896"),
         [m, _] = i.useState([]),
@@ -131,7 +131,7 @@ function A() {
                         onClick: S
                     })]
                 })
-            }), null != e && (0, a.jsx)(p.A, {
+            }), null != e && (0, a.jsx)(x.A, {
                 subscription: e,
                 onUpdated: y
             }), (0, a.jsx)(d.Heading, {
@@ -151,7 +151,7 @@ function A() {
                     variant: "heading-lg/semibold",
                     className: v.wx,
                     children: "Previous Subscriptions"
-                }), T.map(e => (0, a.jsx)(p.A, {
+                }), T.map(e => (0, a.jsx)(x.A, {
                     subscription: e,
                     onUpdated: y
                 }, e.id))]

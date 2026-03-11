@@ -11,14 +11,14 @@ var i, l = n(627968),
     d = n(23339),
     u = n(319060),
     _ = n(397927),
-    A = n(21161),
-    m = n(513609),
+    m = n(21161),
+    A = n(513609),
     E = n(928830),
     I = n(567771),
     T = n(780964),
     f = n(840065),
-    N = n(473145),
-    C = n(763754),
+    C = n(473145),
+    N = n(763754),
     g = n(888675),
     h = n(652215),
     p = n(985018),
@@ -130,7 +130,7 @@ function k(e) {
         onClick: n,
         position: i,
         size: r
-    } = e, d = a.useRef(null), [u, m] = a.useState(null), [E] = a.useState(i ?? function() {
+    } = e, d = a.useRef(null), [u, A] = a.useState(null), [E] = a.useState(i ?? function() {
         switch (Math.floor(Math.random() * Object.keys(x).length)) {
             case 0:
                 return "TOP_LEFT";
@@ -144,7 +144,7 @@ function k(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = a.useContext(A.x), [f, N] = a.useState(null), C = (0, o.f9)(T, f), g = function(e, t) {
+    } = a.useContext(m.x), [f, C] = a.useState(null), N = (0, o.f9)(T, f), g = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -160,7 +160,7 @@ function k(e) {
                 return "enter"
         }
     }(u, E), h = O.includes(E), p = h && "exit" === u, D = a.useCallback(e => {
-        m(e)
+        A(e)
     }, []), k = a.useCallback(() => {
         "exit" === u && t?.()
     }, [t, u]), G = a.useCallback(e => {
@@ -200,7 +200,7 @@ function k(e) {
     }, [I, E, u, r]), a.useEffect(() => {
         if (h && "leaf_fall" === u) {
             let e = P[E].leafRotationDirection;
-            C.createConfetti({
+            N.createConfetti({
                 id: `${U}-${(0,c.A)()}`,
                 position: {
                     type: "static",
@@ -248,9 +248,9 @@ function k(e) {
                 sprite: "TOP_LEFT" === E ? L : y
             })
         }
-    }, [h, C, E, u]), (0, l.jsxs)(l.Fragment, {
+    }, [h, N, E, u]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.K_, {
-            ref: N,
+            ref: C,
             sprites: j,
             colors: v,
             spriteWidth: 45,
@@ -302,13 +302,13 @@ function G(e) {
         {
             createMultipleConfettiAt: u,
             addClickListener: R
-        } = a.useContext(A.x),
+        } = a.useContext(m.x),
         [x, O] = a.useState(!1),
         M = a.useRef(null),
         {
             reducedMotion: D
         } = a.useContext(_.CZY),
-        P = (0, C.Ay)(n),
+        P = (0, N.Ay)(n),
         v = P.nick,
         L = s(P);
     t = null == c || null == r ? d > 1 ? p.intl.format(p.t.yfC9ds, {
@@ -323,12 +323,12 @@ function G(e) {
         usernameHook: L,
         numSubscriptions: d,
         guildName: r.name,
-        newTierName: (0, N.gb)(c)
+        newTierName: (0, C.gb)(c)
     }) : p.intl.format(p.t.cUfTTE, {
         username: v,
         usernameHook: L,
         guildName: r.name,
-        newTierName: (0, N.gb)(c)
+        newTierName: (0, C.gb)(c)
     });
     let y = a.useCallback(() => {
             if (!D.enabled)
@@ -373,7 +373,7 @@ function G(e) {
             onClick: F,
             className: S.iU,
             children: t
-        }), x ? (0, l.jsx)(m.Ay, {
+        }), x ? (0, l.jsx)(A.Ay, {
             children: (0, l.jsx)("div", {
                 className: S.LK,
                 children: (0, l.jsx)(k, {

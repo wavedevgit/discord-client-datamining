@@ -13,11 +13,11 @@ let d = new Map,
     u = !1,
     _ = !1;
 
-function A(e) {
+function m(e) {
     return null != e.removed_at ? o.xI.REMOVED : null != e.accepted_at ? o.xI.ACCEPTED : o.xI.PENDING
 }
 
-function m(e) {
+function A(e) {
     let {
         messages: t
     } = e;
@@ -69,7 +69,7 @@ let T = new I(a.h, {
             invites: t
         } = e;
         for (let e of (_ = !1, u = !0, t)) d.set(e.id, {
-            state: A(e),
+            state: m(e),
             invite: e,
             errorStatus: null
         })
@@ -93,7 +93,7 @@ let T = new I(a.h, {
             invite: n
         } = e;
         d.set(t, {
-            state: A(n),
+            state: m(n),
             invite: n,
             errorStatus: null
         })
@@ -213,9 +213,9 @@ let T = new I(a.h, {
         } = e;
         return E(t)
     },
-    LOCAL_MESSAGES_LOADED: m,
-    LOAD_MESSAGES_SUCCESS: m,
-    LOAD_MESSAGES_AROUND_SUCCESS: m,
+    LOCAL_MESSAGES_LOADED: A,
+    LOAD_MESSAGES_SUCCESS: A,
+    LOAD_MESSAGES_AROUND_SUCCESS: A,
     LOGOUT: function() {
         d = new Map, u = !1, _ = !1
     }

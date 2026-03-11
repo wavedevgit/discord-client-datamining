@@ -1,7 +1,7 @@
 /** chunk id: 43203 params = (module,exports,require) **/
 n.d(t, {
     $: () => h,
-    A: () => x
+    A: () => p
 });
 var a = n(73153),
     i = n(846293),
@@ -36,7 +36,7 @@ async function h(e, t) {
         code: e
     }
 }
-let x = {
+let p = {
     [m.e$_.OPEN_INVITE]: {
         scope: u.hj,
         async handler(e) {

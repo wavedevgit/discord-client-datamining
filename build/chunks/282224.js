@@ -13,12 +13,12 @@ var l = n(448761),
     d = n(287809),
     u = n(641131),
     _ = n(985018);
-let A = {
+let m = {
         [l.l.REPORT_TO_MOD_BAN_USER]: () => u.default.komFTv,
         [l.l.REPORT_TO_MOD_KICK_USER]: () => u.default.FAJmJV,
         [l.l.REPORT_TO_MOD_TIMEOUT_USER]: () => u.default["90r/sR"]
     },
-    m = {
+    A = {
         [l.l.REPORT_TO_MOD_DELETED_MESSAGE]: () => u.default["4023i8"],
         [l.l.REPORT_TO_MOD_CLOSED_REPORT]: () => u.default.UE81zV
     };
@@ -57,28 +57,28 @@ function I(e) {
     } = e, {
         author: r,
         mentions: u,
-        type: m
-    } = t, I = (0, s.Ay)(t), T = t.getChannelId(), f = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), N = (0, s.m2)(r, n), C = (0, o.P)({
+        type: A
+    } = t, I = (0, s.Ay)(t), T = t.getChannelId(), f = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), C = (0, s.m2)(r, n), N = (0, o.P)({
         user: r,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(N), g = (0, s.d8)(f, n), h = (0, o.P)({
+    })(C), g = (0, s.d8)(f, n), h = (0, o.P)({
         user: f,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(g), p = A[m] ?? null;
+    })(g), p = m[A] ?? null;
     if (null == p) return null;
     let S = _.intl.format(p(), {
         actorName: I.nick,
-        actorHook: C,
+        actorHook: N,
         targetName: g?.nick,
         targetHook: h
     });
     return (0, i.jsx)(c.A, {
         iconNode: (0, i.jsx)(E, {
-            type: m
+            type: A
         }),
         timestamp: t.timestamp,
         compact: l,
@@ -94,12 +94,12 @@ function T(e) {
     } = e, {
         author: a,
         type: r
-    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), A = (0, s.m2)(a, n), I = (0, o.P)({
+    } = t, d = (0, s.Ay)(t), u = t.getChannelId(), m = (0, s.m2)(a, n), I = (0, o.P)({
         user: a,
         channelId: u,
         guildId: n.guild_id,
         messageId: t.id
-    })(A), T = m[r] ?? null;
+    })(m), T = A[r] ?? null;
     if (null == T) return null;
     let f = _.intl.format(T(), {
         actorName: d.nick,

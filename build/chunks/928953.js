@@ -1,6 +1,6 @@
 /** chunk id: 928953 params = (module,exports,require) **/
 n.d(t, {
-    i: () => x
+    i: () => p
 });
 var a = n(627968),
     i = n(64700),
@@ -28,20 +28,20 @@ let m = () => {
     h = e => {
         e.stopPropagation(), e.preventDefault()
     },
-    x = e => {
+    p = e => {
         let {
             className: t,
             onDrop: n,
             children: s
-        } = e, [x, p] = i.useState(!1), g = i.useRef(null), _ = i.useCallback(e => {
-            h(e), p(!0), (0, r.OoC)(d.D)
+        } = e, [p, x] = i.useState(!1), g = i.useRef(null), _ = i.useCallback(e => {
+            h(e), x(!0), (0, r.OoC)(d.D)
         }, []), f = i.useCallback(e => {
             h(e);
             let t = g.current,
                 n = e.relatedTarget;
-            null != n && (null == t || t.contains(n)) || p(!1)
+            null != n && (null == t || t.contains(n)) || x(!1)
         }, []), v = i.useCallback(async e => {
-            h(e), p(!1);
+            h(e), x(!1);
             let t = e.dataTransfer;
             if (null == t) return void m();
             let a = await Promise.all(Array.from(t.items).map(e => e.webkitGetAsEntry() ?? e.getAsEntry())).then(e => e.filter(e => null != e));
@@ -54,7 +54,7 @@ let m = () => {
             onDragOver: h,
             onDragLeave: f,
             onDrop: v,
-            children: [s, x && (0, a.jsx)("div", {
+            children: [s, p && (0, a.jsx)("div", {
                 className: u.d2,
                 children: (0, a.jsxs)("div", {
                     className: u.vW,

@@ -20,9 +20,9 @@ var i = n(627968),
     p = n(976860),
     N = n(309010),
     m = n(967198),
-    R = n(792831),
-    S = n(147925),
-    h = n(723702),
+    h = n(792831),
+    R = n(147925),
+    S = n(723702),
     g = n(529942),
     C = n(164956),
     O = n(311127),
@@ -70,7 +70,7 @@ function L() {
             viewingRoles: r,
             backNavigationSection: s,
             isFullServerPreview: d,
-            isServerShopPreview: h
+            isServerShopPreview: S
         } = (0, a.cf)([C.A], () => ({
             viewingRoles: null != t ? C.A.getViewingRoles(t) : null,
             backNavigationSection: C.A.getBackNavigationSection(t),
@@ -106,10 +106,10 @@ function L() {
                 backToSettings: !0
             }),
             className: D.Gv,
-            children: [(0, i.jsx)(R.A, {
+            children: [(0, i.jsx)(h.A, {
                 width: 16,
                 height: 16,
-                direction: R.A.Directions.LEFT,
+                direction: h.A.Directions.LEFT,
                 className: D.lJ
             }), L]
         }), b && d ? (0, i.jsx)("div", {
@@ -140,10 +140,10 @@ function L() {
                     return (0, i.jsxs)(U, {
                         onClick: n,
                         buttonRef: e,
-                        children: [j, (0, i.jsx)(S.A, {
+                        children: [j, (0, i.jsx)(R.A, {
                             width: 16,
                             height: 16,
-                            direction: S.A.Directions.DOWN,
+                            direction: R.A.Directions.DOWN,
                             className: D.k5
                         })]
                     })
@@ -155,7 +155,7 @@ function L() {
                     size: "xs",
                     color: o.A.unsafe_rawColors.YELLOW_300.css
                 })
-            }), h && (0, i.jsx)(c.m, {
+            }), S && (0, i.jsx)(c.m, {
                 asContainer: !0,
                 text: P.intl.formatToPlainString(P.t.eummvd, {
                     maxTiers: f.f7,
@@ -180,8 +180,8 @@ function j(e) {
     } = e;
     return (0, a.bG)([C.A], () => C.A.isViewingRoles(t)) ? (0, i.jsx)("div", {
         className: s()(D.xd, {
-            [D.KF]: (0, h.isWindows)(),
-            [D.Xz]: (0, h.isMac)()
+            [D.KF]: (0, S.isWindows)(),
+            [D.Xz]: (0, S.isMac)()
         }),
         children: (0, i.jsx)(L, {})
     }) : null

@@ -17,20 +17,20 @@ function s(e) {
             compact: u,
             channel: _
         } = e,
-        A = (0, l.Ay)(s),
-        m = A.nick,
-        E = o(A),
+        m = (0, l.Ay)(s),
+        A = m.nick,
+        E = o(m),
         I = (0, l.d8)(c, _);
     if (null != I && null != d) {
         let e = d(I);
         t = r.intl.format(r.t.L2FyVq, {
-            username: m,
+            username: A,
             usernameHook: E,
             otherUsername: I.nick,
             otherUsernameHook: e
         })
     } else t = r.intl.format(r.t["5v2xa8"], {
-        username: m,
+        username: A,
         usernameHook: E
     });
     return (0, i.jsx)(a.A, {

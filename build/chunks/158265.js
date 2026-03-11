@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(475743),
     m = n(775602),
     h = n(186111),
-    x = n(398025),
-    p = n(568329),
+    p = n(398025),
+    x = n(568329),
     g = n(963713),
     _ = n(772244),
     f = n(272111),
@@ -31,7 +31,7 @@ let A = e => {
         isExpanded: C
     } = i.useContext(g.T), {
         expansionSpring: y
-    } = i.useContext(p.PW), {
+    } = i.useContext(x.PW), {
         completionSpring: T,
         startCompletionAnimation: S
     } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
@@ -108,12 +108,12 @@ let A = e => {
         children: [(0, a.jsx)(d.animated.div, {
             className: b.Tp,
             style: {
-                opacity: (0, x.a)(T)
+                opacity: (0, p.a)(T)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(b.sJ, b.ix),
             style: {
-                opacity: (0, x.a)(T)
+                opacity: (0, p.a)(T)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: b.KG,
@@ -136,7 +136,7 @@ let A = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(b.sJ, b.d7),
                 style: {
-                    opacity: (0, x.a)(T)
+                    opacity: (0, p.a)(T)
                 }
             }), t.current)]
         })]

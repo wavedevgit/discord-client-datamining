@@ -54,8 +54,8 @@ function G(e) {
         autoplay: i,
         parentTransitionState: G,
         performanceClockStartTime: K,
-        orientation: $,
-        videoUrlOverride: Y
+        orientation: Y,
+        videoUrlOverride: $
     } = e, {
         sourceQuestContent: H,
         quest: z,
@@ -73,7 +73,7 @@ function G(e) {
         targetRef: eo
     } = (0, h.O7)(), [eu, ec] = l.useState(!0 === i ? j.Q6.PLAYING : j.Q6.PAUSED), [ed, em] = l.useState(!1), [ep, ef] = l.useState(!1), eE = (0, y.Yh)(z), [eh, ev] = l.useState(eE.percentComplete), ex = l.useCallback(e => {
         eQ(null), ev(e)
-    }, []), [eg, eS] = l.useState(!1), [eA, eC] = l.useState(!0), [e_, eb] = l.useState(!1), [ey, eT] = l.useState([]), [eN, eD] = l.useState(v.A.getEffectiveConnectionSpeed()), [eR, eL] = l.useState(0), [eI, eM] = l.useState(0), [ej, ew] = l.useState(!1), [ek, eO] = l.useState(!1), [eP, eQ] = l.useState(null), eV = l.useRef(!0), eU = l.useRef(null), eB = l.useRef(null), eF = (0, A.Kr)(e => e.videoProgress[z.id] ?? A.yc, u.x), eG = (0, A.Kr)(e => e.setVideoProgress), eK = (0, A.Kr)(e => e.muted), e$ = (0, A.Kr)(e => e.volume), eY = (0, c.bG)([f.A], () => f.A.useReducedMotion), eH = (0, l.useRef)(null), ez = (0, l.useRef)(null), eW = l.useRef(!0), eq = z.userStatus?.completedAt != null, eX = l.useMemo(() => z.config.features.includes(Q.Li.FULL_EPISODE_VIDEO_QUEST), [z.config.features]), eJ = l.useRef(!1), [eZ, e0] = l.useState(null), [e1, e6] = l.useState(!1), [e2, e7] = l.useState(!1), [e4, e9] = l.useState(!1), [e8, e3] = l.useState(null), e5 = eq ? eH.current?.duration ?? 0 : Math.max(eF.maxTimestampSec, eE.progressSeconds), te = l.useMemo(() => (0, C.L)({
+    }, []), [eg, eS] = l.useState(!1), [eA, eC] = l.useState(!0), [e_, eb] = l.useState(!1), [ey, eT] = l.useState([]), [eN, eD] = l.useState(v.A.getEffectiveConnectionSpeed()), [eR, eL] = l.useState(0), [eI, eM] = l.useState(0), [ej, ew] = l.useState(!1), [ek, eO] = l.useState(!1), [eP, eQ] = l.useState(null), eV = l.useRef(!0), eU = l.useRef(null), eB = l.useRef(null), eF = (0, A.Kr)(e => e.videoProgress[z.id] ?? A.yc, u.x), eG = (0, A.Kr)(e => e.setVideoProgress), eK = (0, A.Kr)(e => e.muted), eY = (0, A.Kr)(e => e.volume), e$ = (0, c.bG)([f.A], () => f.A.useReducedMotion), eH = (0, l.useRef)(null), ez = (0, l.useRef)(null), eW = l.useRef(!0), eq = z.userStatus?.completedAt != null, eX = l.useMemo(() => z.config.features.includes(Q.Li.FULL_EPISODE_VIDEO_QUEST), [z.config.features]), eJ = l.useRef(!1), [eZ, e0] = l.useState(null), [e1, e6] = l.useState(!1), [e2, e7] = l.useState(!1), [e4, e9] = l.useState(!1), [e8, e3] = l.useState(null), e5 = eq ? eH.current?.duration ?? 0 : Math.max(eF.maxTimestampSec, eE.progressSeconds), te = l.useMemo(() => (0, C.L)({
         quest: z,
         location: Q.rE.VIDEO_MODAL
     }), [z]), tt = (0, d.g)(eq, eF, eE.progressSeconds), [tn, tr] = l.useState(j.oA.MD), tl = {
@@ -88,7 +88,7 @@ function G(e) {
         videoAssetType: ts,
         hlsRef: ta,
         onFirstChunkLoaded: to
-    } = (0, k.A)(eH, eN, tt, Y), {
+    } = (0, k.A)(eH, eN, tt, $), {
         trackQuestVideoLoadingStarted: tu,
         trackQuestVideoLoadingEnded: tc,
         trackQuestVideoProgressed: td,
@@ -259,11 +259,11 @@ function G(e) {
     let tK = l.useCallback(e => {
             te.info(`[QV] | logVideoError: errorType: ${e}, videoProgress: ${eH.current?.currentTime}, videoAssetId: ${ts}, connectionSpeed: ${eN}`), tA(e)
         }, [eN, tA, eH, ts, te]),
-        t$ = l.useRef(!1);
+        tY = l.useRef(!1);
     l.useEffect(() => {
-        null != ti || t$.current || (t$.current = !0, tA(j.SB.NO_VALID_SOURCE))
-    }, [ti, tA, t$]);
-    let tY = e => {
+        null != ti || tY.current || (tY.current = !0, tA(j.SB.NO_VALID_SOURCE))
+    }, [ti, tA, tY]);
+    let t$ = e => {
         te.info(`[QV] | handleCanPlay: playerState: ${eu}`), null != eH.current && eu === j.Q6.PLAYING && (te.info("[QV] | handleCanPlay: did NOT early return"), eA && (te.info(`[QV] | handleCanPlay: loadingFirstChunk: ${eA}`), eC(!1)), e_ && (te.info(`[QV] | handleCanPlay: waitingForChunk: ${e_}`), tv(null != eB.current ? performance.now() - eB.current : null), eb(!1)), te.info("[QV] | handleCanPlay: updating player state to playing"), tN(j.Q6.PLAYING))
     };
     l.useEffect(() => {
@@ -296,15 +296,15 @@ function G(e) {
     }));
     l.useEffect(() => (tX({
         captionHeightSpring: en && null != e8 ? tW.current?.clientHeight ?? 0 : 0,
-        immediate: eY
+        immediate: e$
     }), () => {
         tq.stop()
-    }), [en, tX, eY, e8, tq]), l.useEffect(() => (tz({
+    }), [en, tX, e$, e8, tq]), l.useEffect(() => (tz({
         controlBarAnimSpring: tk || ej ? 1 : 0,
-        immediate: eY
+        immediate: e$
     }), () => {
         tH.stop()
-    }), [tk, tz, eY, ej, tH]);
+    }), [tk, tz, e$, ej, tH]);
     let tJ = eu === j.Q6.ENDED,
         tZ = l.useMemo(() => (0, _.tW)(z, _.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), [z]),
         t0 = l.useMemo(() => (0, _.tW)(z, _.fY.VIDEO_PLAYER_CAPTION, void 0, !1), [z]),
@@ -328,8 +328,8 @@ function G(e) {
         onKeyDown: tw,
         children: (0, r.jsxs)("div", {
             className: s()(B.NS, {
-                [B.DO]: "portrait" === $,
-                [B.r7]: "landscape" === $
+                [B.DO]: "portrait" === Y,
+                [B.r7]: "landscape" === Y
             }),
             style: {
                 "--custom-footer-bottom": `${Z?4:2}px`
@@ -337,7 +337,7 @@ function G(e) {
             children: [tJ && (0, r.jsx)(D.A, {
                 videoRef: eH,
                 onTrackQuestContentClick: tE,
-                orientation: $
+                orientation: Y
             }), (0, r.jsxs)(E.A, {
                 ref: e => {
                     eH.current = e, eo.current = e
@@ -369,7 +369,7 @@ function G(e) {
                     te.info(`[QV] | handleLoadedData: loadingFirstChunk: ${eA}`), eA && (tc(null != eU.current ? performance.now() - eU.current : null), eC(!1), to())
                 },
                 onLoadedMetadata: e => {
-                    null != eH.current && (te.info(`[QV] | handleLoadedMetadata | videoAssetId: ${ts}`), e6(!0), ts !== _.fY.VIDEO_PLAYER_VIDEO_HLS && tV(tt), eK ? eH.current.volume = 0 : eH.current.volume = e$)
+                    null != eH.current && (te.info(`[QV] | handleLoadedMetadata | videoAssetId: ${ts}`), e6(!0), ts !== _.fY.VIDEO_PLAYER_VIDEO_HLS && tV(tt), eK ? eH.current.volume = 0 : eH.current.volume = eY)
                 },
                 onLoadStart: () => {
                     eU.current = performance.now(), tu(eN), te.info(`[QV] | handleLoadStart | loadingStartTime: ${eU.current}`)
@@ -396,8 +396,8 @@ function G(e) {
                     }
                     eT(t)
                 },
-                onCanPlay: tY,
-                onCanPlayThrough: tY,
+                onCanPlay: t$,
+                onCanPlayThrough: t$,
                 onSeeked: () => {
                     te.info("[QV] | handleSeeked"), e7(!0)
                 },
@@ -469,7 +469,7 @@ function G(e) {
                     })
                 }), (0, r.jsx)(o.animated.div, {
                     className: s()(B.xr, {
-                        [B.MZ]: "portrait" === $
+                        [B.MZ]: "portrait" === Y
                     }),
                     "data-testid": "discord-web-video-player-transcript",
                     style: {
@@ -573,7 +573,7 @@ function G(e) {
                     onBlur: () => ef(!1),
                     children: (0, r.jsx)(N.A, {
                         videoRef: eH,
-                        orientation: $,
+                        orientation: Y,
                         playerState: eu,
                         animSpring: tH,
                         visible: tk,

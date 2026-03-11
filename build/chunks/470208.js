@@ -45,7 +45,7 @@ function S(e) {
         handleControlBarPendingInteraction: P,
         onVolumeChange: Q,
         onMutedChange: V
-    } = e, U = (0, o.bG)([p.A], () => p.A.useReducedMotion), B = (0, o.bG)([p.A], () => p.A.keyboardModeEnabled), [F, G] = l.useState(N ? 0 : T), [K, $] = l.useState(!1), [Y, H] = l.useState(!1), [{
+    } = e, U = (0, o.bG)([p.A], () => p.A.useReducedMotion), B = (0, o.bG)([p.A], () => p.A.keyboardModeEnabled), [F, G] = l.useState(N ? 0 : T), [K, Y] = l.useState(!1), [$, H] = l.useState(!1), [{
         volumeAnimSpring: z
     }, W] = (0, m.zhh)(() => ({
         from: {
@@ -61,9 +61,9 @@ function S(e) {
     }, [t, F]), J = l.useCallback(() => {
         null != t.current && (0 === F ? (X(T), V(!1), Q(T)) : (Q(F), X(0), V(!0)))
     }, [t, F, X, T, V, Q]), Z = () => {
-        $(!0)
+        Y(!0)
     }, ee = () => {
-        $(!1)
+        Y(!1)
     }, et = l.useCallback(e => {
         switch (e.key) {
             case c.TJ.PLAYBACK:
@@ -91,11 +91,11 @@ function S(e) {
     l.useEffect(() => {
         null != q.current && q.current.focus()
     }, []), l.useEffect(() => (W({
-        volumeAnimSpring: Y || K ? 1 : 0,
+        volumeAnimSpring: $ || K ? 1 : 0,
         immediate: U
     }), () => {
         z.stop()
-    }), [Y, K, W, U, z]), l.useEffect(() => (window.addEventListener("keydown", et), () => {
+    }), [$, K, W, U, z]), l.useEffect(() => (window.addEventListener("keydown", et), () => {
         window.removeEventListener("keydown", et)
     }), [et]);
     let en = 0 === F ? m._RO : F < .5 ? m.S24 : m.HKD,
@@ -187,10 +187,10 @@ function S(e) {
                         minValue: 0,
                         maxValue: 1,
                         onValueChange: e => {
-                            X(e), Q(e), Y && (H(!1), P(!1)), N && e > 0 && V(!1)
+                            X(e), Q(e), $ && (H(!1), P(!1)), N && e > 0 && V(!1)
                         },
                         asValueChanges: e => {
-                            X(e), Y || (H(!0), P(!0))
+                            X(e), $ || (H(!0), P(!0))
                         },
                         fillStyles: {
                             backgroundColor: u.A.colors.WHITE.css

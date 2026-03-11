@@ -26,7 +26,7 @@ function A(e) {
         getSurveyResponses: A,
         setResponse: I,
         trackDisplayedQuestions: p
-    } = (0, c.i)(), N = A(t), m = (0, u.i)(n), [R, S] = l.useState(m.blockId), [h, g] = l.useState(m.pageIndex), [C, O] = l.useState(!1), y = (e, n) => {
+    } = (0, c.i)(), N = A(t), m = (0, u.i)(n), [h, R] = l.useState(m.blockId), [S, g] = l.useState(m.pageIndex), [C, O] = l.useState(!1), y = (e, n) => {
         I(t, e, n)
     }, x = l.useCallback(() => (C ? s() : (0, a.qfG)(e => (0, i.jsx)(r.Modal, {
         title: E.intl.string(E.t.T9Sx3z),
@@ -46,19 +46,19 @@ function A(e) {
             variant: "text-md/normal",
             children: E.intl.string(E.t.iCK6G0)
         })
-    })), Promise.resolve()), [s, C]), f = l.useMemo(() => null == R ? [] : (0, u.uy)(n, {
-        blockId: R,
-        pageIndex: h,
+    })), Promise.resolve()), [s, C]), f = l.useMemo(() => null == h ? [] : (0, u.uy)(n, {
+        blockId: h,
+        pageIndex: S,
         responses: N
-    }), [n, R, h, N]), P = l.useCallback(() => {
-        if (null == n || null == R) return;
+    }), [n, h, S, N]), P = l.useCallback(() => {
+        if (null == n || null == h) return;
         let e = (0, u.vt)(n, {
-            blockId: R,
-            pageIndex: h,
+            blockId: h,
+            pageIndex: S,
             responses: N
         });
-        p(t, f), e.isComplete && o.Ay.submitSurveyResponse(t, N), S(e.blockId), g(e.pageIndex), O(e.isComplete)
-    }, [n, R, h, N, t, f, p]);
+        p(t, f), e.isComplete && o.Ay.submitSurveyResponse(t, N), R(e.blockId), g(e.pageIndex), O(e.isComplete)
+    }, [n, h, S, N, t, f, p]);
     l.useEffect(() => {
         0 === f.length && P()
     }, [f, P]);

@@ -4,9 +4,9 @@ n.d(t, {
     JV: () => d,
     el: () => T,
     kE: () => I,
-    mm: () => m,
+    mm: () => A,
     n2: () => _,
-    oO: () => A,
+    oO: () => m,
     wc: () => E
 });
 var i = n(284009),
@@ -91,7 +91,7 @@ async function _(e, t) {
         }), null
     }
 }
-async function A(e, t) {
+async function m(e, t) {
     r.h.dispatch({
         type: "PREMIUM_GROUP_REMOVE_MEMBER_START"
     });
@@ -110,7 +110,7 @@ async function A(e, t) {
         }), e
     }
 }
-async function m(e) {
+async function A(e) {
     r.h.dispatch({
         type: "PREMIUM_GROUP_MEMBERS_FETCH_START"
     });

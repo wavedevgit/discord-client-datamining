@@ -12,14 +12,14 @@ var i = n(627968),
     d = n.n(c),
     u = n(311907),
     _ = n(397927),
-    A = n(155718),
-    m = n(811024),
+    m = n(155718),
+    A = n(811024),
     E = n(795816),
     I = n(793574),
     T = n(688810),
     f = n(735991),
-    N = n(975412),
-    C = n(168186),
+    C = n(975412),
+    N = n(168186),
     g = n(597929),
     h = n(589022),
     p = n(427157),
@@ -64,17 +64,17 @@ function b(e, t, n, l, a, s) {
         compact: c,
         channel: d,
         isInteractionUserBlocked: u,
-        isInteractionUserIgnored: A,
-        showAvatarPopout: m,
+        isInteractionUserIgnored: m,
+        showAvatarPopout: A,
         showTargetAvatarPopout: E,
         onClickAvatar: I,
         onUserContextMenu: T,
         onClickTargetAvatar: f,
-        onTargetUserContextMenu: N,
-        onPopoutRequestClose: C
+        onTargetUserContextMenu: C,
+        onPopoutRequestClose: N
     } = e;
     if (c && 1 === n) return null;
-    if (c && null == o.activityInstance || u || A) return (0, i.jsx)("div", {
+    if (c && null == o.activityInstance || u || m) return (0, i.jsx)("div", {
         className: y.Cz,
         children: (0, i.jsx)(j, {
             className: y.Jx
@@ -112,16 +112,16 @@ function b(e, t, n, l, a, s) {
             guildId: d.guild_id,
             guildAvatar: g,
             onClick: 1 === n ? f : I,
-            onContextMenu: 1 === n ? N : T,
+            onContextMenu: 1 === n ? C : T,
             ref: s
         }),
-        p = 1 === n ? E : m;
+        p = 1 === n ? E : A;
     return null != a && null != p && null != s ? (0, i.jsx)(_.YNO, {
         targetElementRef: s,
         renderPopout: a,
         shouldShow: p,
         position: "right",
-        onRequestClose: C,
+        onRequestClose: N,
         children: h
     }) : h()
 }
@@ -135,8 +135,8 @@ function k(e, t, n, l, a) {
         onClickUsername: d,
         onUserContextMenu: u,
         onClickTargetUsername: _,
-        onTargetUserContextMenu: A,
-        onPopoutRequestClose: m
+        onTargetUserContextMenu: m,
+        onPopoutRequestClose: A
     } = e;
     return (0, i.jsx)(D.A, {
         className: 1 === n ? y.iu : "",
@@ -148,8 +148,8 @@ function k(e, t, n, l, a) {
         showPopout: 1 === n ? c : o,
         renderPopout: a,
         onClick: 1 === n ? _ : d,
-        onContextMenu: 1 === n ? A : u,
-        onPopoutRequestClose: m
+        onContextMenu: 1 === n ? m : u,
+        onPopoutRequestClose: A
     })
 }
 let G = () => (0, i.jsx)(_._BQ, {
@@ -185,13 +185,13 @@ function F(e) {
             messageId: n.id,
             interactionData: n.interactionData
         })), [a, n.id, n.interactionData]),
-        H = (0, C.Am)(n),
-        w = H?.type === A.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
-        V = H?.type === A.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
+        H = (0, N.Am)(n),
+        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
+        V = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         q = (0, M.d8)(n.interaction?.user, a),
         X = (0, M.d8)(w, a),
         K = l.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
-        z = (0, m.Gp)(a.id),
+        z = (0, A.Gp)(a.id),
         Y = n.interaction;
     if (null == Y || null == q) return null;
     let W = () => {
@@ -290,7 +290,7 @@ function F(e) {
     }));
     else {
         let e = () => {
-            (0, N.A)({
+            (0, C.A)({
                 context: null != a ? {
                     type: "channel",
                     channel: a

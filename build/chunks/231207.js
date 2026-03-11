@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(384904),
     m = n(73825),
     h = n(86980),
-    x = n(793574),
-    p = n(688810),
+    p = n(793574),
+    x = n(688810),
     g = n(541689),
     _ = n(721923),
     f = n(300233),
@@ -54,7 +54,7 @@ let w = function() {
         gift: "true"
     }), F = "true" !== B.gift && null != w, [V, W] = i.useState(D.length > 0 ? D[0].value : null), {
         analyticsLocations: H
-    } = (0, p.Ay)(x.A.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [$, q] = i.useState(I.dJq), {
+    } = (0, x.Ay)(p.A.PAYMENT_FLOW_TEST_PAGE), [K, z] = i.useState(""), [$, q] = i.useState(I.dJq), {
         balance: Q,
         isFetching: Y,
         error: J
@@ -63,7 +63,7 @@ let w = function() {
         responseMessage: Z,
         redeemVirtualCurrency: ee
     } = (0, T.Q)(), [et, en] = i.useState(I.dJq), [ea, ei] = i.useState(""), [es, el] = i.useState(I.dJq), [er, eo] = i.useState(I.dJq);
-    return (0, a.jsx)(p.f5, {
+    return (0, a.jsx)(x.f5, {
         value: H,
         children: (0, a.jsx)(c.IpV, {
             className: R.XG,

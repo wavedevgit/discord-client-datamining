@@ -12,14 +12,14 @@ var i, l = n(627968),
     d = n(397927),
     u = n(803306),
     _ = n(718213),
-    A = n(793574),
-    m = n(688810),
+    m = n(793574),
+    A = n(688810),
     E = n(994500),
     I = n(954571),
     T = n(975571),
     f = n(427262),
-    N = n(326084),
-    C = n(851746),
+    C = n(326084),
+    N = n(851746),
     g = n(761546),
     h = n(972007),
     p = n(636184),
@@ -31,15 +31,15 @@ let O = e => {
             transitionState: t,
             onClose: n,
             onShare: i
-        } = e, r = (0, c.bG)([C.A], () => C.A.getReferralsRemaining()), u = (0, c.bG)([C.A], () => C.A.getHasEligibleFriends()), [A, m] = a.useState(new Map), [E, I] = a.useState(""), N = (0, _.A)(E, 400), {
+        } = e, r = (0, c.bG)([N.A], () => N.A.getReferralsRemaining()), u = (0, c.bG)([N.A], () => N.A.getHasEligibleFriends()), [m, A] = a.useState(new Map), [E, I] = a.useState(""), C = (0, _.A)(E, 400), {
             eligibleUsers: p,
             fetchUsers: O,
             hasError: M,
             isFetching: D,
             resendUsers: P
         } = (0, h.i)({
-            searchQuery: N,
-            selectedUsers: A
+            searchQuery: C,
+            selectedUsers: m
         }), [U, v] = a.useState(!1), L = p.reduce((e, t) => (e.has(t.id) || e.set(t.id, t), e), new Map);
         return null === r ? (0, l.jsx)(d.y$y, {}) : M ? (0, l.jsx)(o.Modal, {
             transitionState: t,
@@ -65,7 +65,7 @@ let O = e => {
             onClose: n,
             input: (0, l.jsx)(d.iS7, {
                 selectionMode: "multiple",
-                value: Array.from(A.values()),
+                value: Array.from(m.values()),
                 options: Array.from(L.values()),
                 formatOption: e => ({
                     id: e.id,
@@ -77,12 +77,12 @@ let O = e => {
                         n = new Map;
                     t.forEach(e => {
                         null != e && n.set(e.id, e)
-                    }), m(n)
+                    }), A(n)
                 },
                 children: (0, l.jsx)("div", {
                     className: x.c,
                     children: (0, l.jsx)(d.a32, {
-                        placeholder: 0 === A.size ? R.intl.string(R.t.Kd5RaI) : "",
+                        placeholder: 0 === m.size ? R.intl.string(R.t.Kd5RaI) : "",
                         onQueryChange: e => {
                             I(e.target.value)
                         }
@@ -94,19 +94,19 @@ let O = e => {
                 let t, {
                         eligibleRecipients: a
                     } = e,
-                    r = N.length > 0 && 0 === a.size;
-                return t = !0 === r ? R.intl.string(R.t.wpSqAW) : A.size <= 1 ? R.intl.string(R.t.ItpQxk) : R.intl.format(R.t.iW2stn, {
-                    nTrials: A.size
+                    r = C.length > 0 && 0 === a.size;
+                return t = !0 === r ? R.intl.string(R.t.wpSqAW) : m.size <= 1 ? R.intl.string(R.t.ItpQxk) : R.intl.format(R.t.iW2stn, {
+                    nTrials: m.size
                 }), (0, l.jsx)("div", {
                     className: s()(x.qr, x.h0),
                     children: (0, l.jsx)(d.Button, {
                         variant: "primary",
-                        disabled: 0 === A.size && !r || U,
+                        disabled: 0 === m.size && !r || U,
                         text: t,
                         size: "md",
                         fullWidth: !0,
                         onClick: async () => {
-                            r ? n() : (v(!0), await i([...A.values()]), v(!1))
+                            r ? n() : (v(!0), await i([...m.values()]), v(!1))
                         }
                     })
                 })
@@ -119,17 +119,17 @@ let O = e => {
                 } = e;
                 return (0, l.jsx)(g.A, {
                     users: Array.from(t.values()),
-                    isUserSelected: e => A.has(e.id),
+                    isUserSelected: e => m.has(e.id),
                     onSelectionChange: (e, t) => {
-                        m(n => {
+                        A(n => {
                             let i = new Map(n);
                             return t ? i.set(e.id, e) : i.delete(e.id), i
                         })
                     },
                     isFetching: D,
                     onFetchMore: O,
-                    isUserDisabled: e => null !== r && 0 !== r && [...A.values()].filter(e => !P.has(e.id)).length >= r && !A.has(e.id) && !P.has(e.id),
-                    searchQuery: N,
+                    isUserDisabled: e => null !== r && 0 !== r && [...m.values()].filter(e => !P.has(e.id)).length >= r && !m.has(e.id) && !P.has(e.id),
+                    searchQuery: C,
                     emptySearchContent: {
                         header: R.intl.string(R.t["8+ywHD"]),
                         body: R.intl.string(R.t.CgQmY2)
@@ -147,8 +147,8 @@ let O = e => {
                 onClose: i,
                 onShare: r
             } = e,
-            _ = (0, c.bG)([C.A], () => C.A.getRecipientStatus()),
-            [A, m] = a.useState(new Map),
+            _ = (0, c.bG)([N.A], () => N.A.getRecipientStatus()),
+            [m, A] = a.useState(new Map),
             [I, T] = a.useState(new Map),
             [f, h] = a.useState(!1);
         return a.useEffect(() => {
@@ -159,7 +159,7 @@ let O = e => {
                     let i = await (0, u.wz)(t);
                     i.referralStatus = n, e.set(i.id, i)
                 }
-                m(e)
+                A(e)
             })()
         }, [_]), (0, l.jsx)(o.Modal, {
             size: "md",
@@ -184,9 +184,9 @@ let O = e => {
                 })
             })),
             children: (0, l.jsx)(g.A, {
-                users: Array.from(A.values()),
+                users: Array.from(m.values()),
                 isUserSelected: e => I.has(e.id),
-                isUserDisabled: e => e.referralStatus === N.aK.REDEEMED,
+                isUserDisabled: e => e.referralStatus === C.aK.REDEEMED,
                 onSelectionChange: (e, t) => {
                     T(n => {
                         let i = new Map(n);
@@ -203,13 +203,13 @@ let P = e => {
         transitionState: t,
         onClose: n,
         startingScreen: i = 1
-    } = e, r = (0, c.bG)([C.A], () => C.A.getReferralsRemaining()), [s, o] = a.useState(i), [u, _] = a.useState([]), {
+    } = e, r = (0, c.bG)([N.A], () => N.A.getReferralsRemaining()), [s, o] = a.useState(i), [u, _] = a.useState([]), {
         analyticsLocations: E
-    } = (0, m.Ay)([A.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), T = async e => {
+    } = (0, A.Ay)([m.A.PREMIUM_MARKETING_REFERALL_PROGRAM_SHARE_MODAL]), T = async e => {
         I.default.track(S.HAw.REFERRAL_PROGRAM_SHARE_CTA_CLICKED, {
             location_stack: E
         });
-        let t = await (0, N.xm)(Object.values(e).map(e => e.id));
+        let t = await (0, C.xm)(Object.values(e).map(e => e.id));
         _(e.map(e => ({
             recipient: e,
             status: t.get(e.id)

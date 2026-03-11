@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(668824),
     m = n(397927),
     h = n(341915),
-    x = n(92246),
-    p = n(792620),
+    p = n(92246),
+    x = n(792620),
     g = n(241124),
     _ = n(947926),
     f = n(717695),
@@ -267,7 +267,7 @@ function G() {
     }
 
     function X() {
-        (0, x.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, p.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
@@ -291,7 +291,7 @@ function G() {
                         if (null == e.userStatus) return k.b.UNENROLLED;
                         if (null != e.userStatus.claimedAt) return k.b.CLAIMED;
                         if (null != e.userStatus.completedAt) return k.b.COMPLETED_100;
-                        let t = (0, p.Yh)(e),
+                        let t = (0, x.Yh)(e),
                             n = t.progressSeconds,
                             a = t.targetSeconds;
                         return n / a >= 1 ? k.b.COMPLETED_100 : n / a >= .75 ? k.b.COMPLETED_75 : n / a >= .5 ? k.b.COMPLETED_50 : n / a >= .25 ? k.b.COMPLETED_25 : k.b.ENROLLED

@@ -894,7 +894,11 @@ let eg = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 parent: er.H.CHAT,
                 predicate: () => E.o.getConfig({
                     location: "SettingsRendererConfig"
-                }).enabled
+                }).enabled,
+                newIndicator: (0, i.jsx)(o.LpS, {
+                    text: ed.intl.string(ed.t.y2b7CA)
+                }),
+                newIndicatorDismissibleContentTypes: [l.M.FAVORITES_GUILD_NEW_BADGE]
             },
             [er.H.CHAT_FAVORITES_SHOW_SERVER]: {
                 section: eo.nc_.TEXT,

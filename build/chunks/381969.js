@@ -20,9 +20,9 @@ var i = n(627968),
     p = n(954571),
     N = n(491026),
     m = n(486418),
-    R = n(920814),
-    S = n(284683),
-    h = n(634654),
+    h = n(920814),
+    R = n(284683),
+    S = n(634654),
     g = n(652215);
 let C = l.createContext(void 0);
 
@@ -36,9 +36,9 @@ function y(e) {
         children: t,
         initialTab: n,
         guildId: r
-    } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(r)), O = (0, a.bG)([E.A], () => E.A.isViewingServerShop(r)), y = (0, m.P)(s, "guild_shop_page"), x = (0, N.YZ)(r, "guild_shop_page"), f = s?.features.has(g.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) === !0, P = (0, _.Oh)(s?.id), D = (0, u.Tq)(r)?.server_shop_tab_order, U = [], M = R.B.GUILD_SHOP_FULL_PREVIEW;
-    O || f && P ? (U.push(D === S.HA.PRODUCTS_FIRST ? R.B.GUILD_PRODUCTS : R.B.GUILD_ROLE_SUBSCRIPTIONS), U.push(D === S.HA.PRODUCTS_FIRST ? R.B.GUILD_ROLE_SUBSCRIPTIONS : R.B.GUILD_PRODUCTS), M = U[0]) : f && !P ? (U.push(R.B.GUILD_PRODUCTS), M = R.B.GUILD_PRODUCTS) : !f && P && (U.push(R.B.GUILD_ROLE_SUBSCRIPTIONS), M = R.B.GUILD_ROLE_SUBSCRIPTIONS, y && U.push(R.B.GUILD_PRODUCTS_PREVIEW)), n = n ?? M;
-    let [L, j] = l.useState(n), b = y && !(P && x) || L === R.B.GUILD_PRODUCTS_PREVIEW;
+    } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(r)), O = (0, a.bG)([E.A], () => E.A.isViewingServerShop(r)), y = (0, m.P)(s, "guild_shop_page"), x = (0, N.YZ)(r, "guild_shop_page"), f = s?.features.has(g.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) === !0, P = (0, _.Oh)(s?.id), D = (0, u.Tq)(r)?.server_shop_tab_order, U = [], M = h.B.GUILD_SHOP_FULL_PREVIEW;
+    O || f && P ? (U.push(D === R.HA.PRODUCTS_FIRST ? h.B.GUILD_PRODUCTS : h.B.GUILD_ROLE_SUBSCRIPTIONS), U.push(D === R.HA.PRODUCTS_FIRST ? h.B.GUILD_ROLE_SUBSCRIPTIONS : h.B.GUILD_PRODUCTS), M = U[0]) : f && !P ? (U.push(h.B.GUILD_PRODUCTS), M = h.B.GUILD_PRODUCTS) : !f && P && (U.push(h.B.GUILD_ROLE_SUBSCRIPTIONS), M = h.B.GUILD_ROLE_SUBSCRIPTIONS, y && U.push(h.B.GUILD_PRODUCTS_PREVIEW)), n = n ?? M;
+    let [L, j] = l.useState(n), b = y && !(P && x) || L === h.B.GUILD_PRODUCTS_PREVIEW;
     return l.useEffect(() => {
         j(n)
     }, [n]), (0, i.jsx)(C.Provider, {
@@ -52,7 +52,7 @@ function y(e) {
                 let t = {
                     ...(0, c.H$)(r)
                 };
-                L === R.B.GUILD_PRODUCTS_PREVIEW ? (e.stopPropagation(), j(R.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = h.hN.DISMISS_TAB_PREVIEW) : ((0, T.bG)(g.BVt.CHANNEL(r, A.Ay.getDefaultChannel(r)?.id)), t.action_taken = h.hN.DISMISS_FULL_PREVIEW), p.default.track(g.HAw.GUILD_SHOP_PREVIEW_CLICK, t)
+                L === h.B.GUILD_PRODUCTS_PREVIEW ? (e.stopPropagation(), j(h.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = S.hN.DISMISS_TAB_PREVIEW) : ((0, T.bG)(g.BVt.CHANNEL(r, A.Ay.getDefaultChannel(r)?.id)), t.action_taken = S.hN.DISMISS_FULL_PREVIEW), p.default.track(g.HAw.GUILD_SHOP_PREVIEW_CLICK, t)
             }
         },
         children: t

@@ -19,9 +19,9 @@ var i, l = n(627968),
     p = n(750112),
     N = n(73392),
     m = n(386467),
-    R = n(534400),
-    S = n(176201),
-    h = n(676608),
+    h = n(534400),
+    R = n(176201),
+    S = n(676608),
     g = n(342296),
     C = n(317525),
     O = n(486020),
@@ -49,28 +49,28 @@ function U(e) {
         renderPopout: B,
         decorations: w,
         previewGuildId: H,
-        subscribeToGroupId: F
-    } = e, V = r.useRef(null), $ = r.useContext(m.A), q = i?.guild_id ?? $, {
-        analyticsLocations: W
+        subscribeToGroupId: V
+    } = e, F = r.useRef(null), $ = r.useContext(m.A), W = i?.guild_id ?? $, {
+        analyticsLocations: q
     } = (0, A.Ay)(T.A.USERNAME), X = U ? "@" : "", {
         nick: z,
         colorString: K,
-        colorStrings: Y,
-        colorRoleName: J,
+        colorStrings: J,
+        colorRoleName: Y,
         displayNameStyles: Q
     } = t, Z = (0, c.bG)([E.A], () => E.A.roleStyle), ee = "username" === Z, et = (0, N.a)({
         displayNameStyles: Q
-    }), en = (0, c.bG)([C.A], () => null == t.guildId || null == t.colorRoleId ? null : C.A.getRole(t.guildId, t.colorRoleId)), ei = (0, h.jV)(H ?? q, en), el = (0, y.A)(n), er = r.useContext(d.C), es = er?.animate || M, ea = ei && (0, S.kz)(t), eo = ee && ea, ec = i?.isPrivate() && null != Q;
+    }), en = (0, c.bG)([C.A], () => null == t.guildId || null == t.colorRoleId ? null : C.A.getRole(t.guildId, t.colorRoleId)), ei = (0, S.jV)(H ?? W, en), el = (0, y.A)(n), er = r.useContext(d.C), es = er?.animate || M, ea = ei && (0, R.kz)(t), eo = ee && ea, ec = i?.isPrivate() && null != Q;
     (0, x.A)({
         shouldSubscribe: ec || eo,
-        subscribeToGroupId: F,
+        subscribeToGroupId: V,
         authorId: n.author.id
     });
     let {
         gradientStyle: ed,
         gradientClassname: eu
     } = (0, _.v5K)({
-        colorStrings: Y,
+        colorStrings: J,
         roleStyle: "username",
         includeConvenienceGlow: !0,
         animateGradient: es
@@ -80,9 +80,9 @@ function U(e) {
             [P.IW]: "username" === Z && null != K
         }),
         style: (() => {
-            if (ee) return eo && null != Y ? {
+            if (ee) return eo && null != J ? {
                 ...ed,
-                textDecorationColor: Y?.primaryColor ?? void 0
+                textDecorationColor: J?.primaryColor ?? void 0
             } : null != K ? {
                 color: K
             } : void 0
@@ -99,21 +99,21 @@ function U(e) {
         }) : e_,
         "data-text": X + z,
         "data-username-has-gradient": !!ea || void 0
-    }, eT = r.useMemo(() => L ? null : (0, l.jsx)(R.Cw, {
+    }, eT = r.useMemo(() => L ? null : (0, l.jsx)(h.Cw, {
         primaryGuild: t.primaryGuild,
         userId: n.author.id,
-        contextGuildId: q,
+        contextGuildId: W,
         className: P.s4,
         badgeSize: D ? f.Sl.SIZE_12 : void 0
-    }), [D, t.primaryGuild, q, n.author.id, L]), eA = s ?? n.author, eI = null != B && null != M ? (0, l.jsx)(g.A, {
-        targetElementRef: V,
+    }), [D, t.primaryGuild, W, n.author.id, L]), eA = s ?? n.author, eI = null != B && null != M ? (0, l.jsx)(g.A, {
+        targetElementRef: F,
         user: eA,
         renderPopout: B,
         shouldShow: M,
         shouldPreload: el,
         position: o.Fr ? "window_center" : "right",
-        avatarUrl: null != t.guildMemberAvatar && null != q ? (0, O.s7)({
-            guildId: q,
+        avatarUrl: null != t.guildMemberAvatar && null != W ? (0, O.s7)({
+            guildId: W,
             userId: eA.id,
             avatar: t.guildMemberAvatar,
             size: 80
@@ -128,7 +128,7 @@ function U(e) {
             return (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)(_.DUT, {
                     tag: "span",
-                    innerRef: V,
+                    innerRef: F,
                     ...n,
                     ...eE,
                     className: a()(eE.className, P.vk, b)
@@ -142,13 +142,13 @@ function U(e) {
         }), eT]
     }), ep = null != w ? w[0] : null, eN = null != w ? w[1] : null;
     return (0, l.jsxs)(A.f5, {
-        value: W,
+        value: q,
         children: [null != ep && !j && D ? (0, l.jsxs)(l.Fragment, {
             children: [" ", ep, " "]
         }) : null, "dot" === Z ? (0, l.jsx)(_.WYI, {
             color: K,
-            colors: ea ? Y : null,
-            name: J,
+            colors: ea ? J : null,
+            name: Y,
             className: P.m4,
             hoverOverride: es
         }) : null, eI, null != eN ? eN : null, null == ep || j || D ? null : ep]

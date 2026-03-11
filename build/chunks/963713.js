@@ -29,8 +29,8 @@ let s = i.createContext({
             onGameSheetClose: u,
             collapsedHeight: m,
             quest: h,
-            taskDetails: x
-        } = e, p = i.useMemo(() => ({
+            taskDetails: p
+        } = e, x = i.useMemo(() => ({
             isExpanded: n,
             isExpansionAnimationComplete: l,
             onCtxMenuClose: r,
@@ -40,10 +40,10 @@ let s = i.createContext({
             onGameSheetClose: u,
             collapsedHeight: m,
             quest: h,
-            taskDetails: x
-        }), [n, l, r, o, d, c, u, m, h, x]);
+            taskDetails: p
+        }), [n, l, r, o, d, c, u, m, h, p]);
         return (0, a.jsx)(s.Provider, {
-            value: p,
+            value: x,
             children: t
         })
     }

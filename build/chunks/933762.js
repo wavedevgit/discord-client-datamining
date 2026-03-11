@@ -18,17 +18,17 @@ function u(e) {
         compact: n,
         usernameHook: u,
         onClickThread: _,
-        onClickViewThreads: A,
-        onContextMenuThread: m
+        onClickViewThreads: m,
+        onContextMenuThread: A
     } = e, E = (0, s.Ay)(t), I = u(E), T = (0, l.bG)([r.A], () => r.A.getChannel(t.messageReference?.channel_id)), f = c.intl.format(c.t.cZ9Uf2, {
         actorName: E.nick,
         actorHook: I,
         threadName: T?.name ?? t.content,
         threadOnClick: {
             onClick: _,
-            onContextMenu: m
+            onContextMenu: A
         },
-        viewThreadsOnClick: A
+        viewThreadsOnClick: m
     });
     return (0, i.jsx)(o.A, {
         iconNode: (0, i.jsx)(a.ysw, {

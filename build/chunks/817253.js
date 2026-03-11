@@ -14,7 +14,7 @@ function o(e) {
         message: t,
         usernameHook: o,
         compact: c
-    } = e, d = (0, a.Ay)(t), u = o(d), _ = l.A.getSystemMessageUserJoin(t.id), A = s.intl.format(_, {
+    } = e, d = (0, a.Ay)(t), u = o(d), _ = l.A.getSystemMessageUserJoin(t.id), m = s.intl.format(_, {
         username: d.nick,
         usernameHook: u
     });
@@ -22,6 +22,6 @@ function o(e) {
         icon: n(394803),
         timestamp: t.timestamp,
         compact: c,
-        children: A
+        children: m
     })
 }

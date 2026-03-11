@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(792620),
     m = n(73473),
     h = n(545986),
-    x = n(203879),
-    p = n(321503),
+    p = n(203879),
+    x = n(321503),
     g = n(56853),
     _ = n(515038),
     f = n(652215),
@@ -51,7 +51,7 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), R = i.useContext(p.X), {
+    }, [N, t.id, s, j, r]), R = i.useContext(x.X), {
         visibilityElementRef: O,
         almostVisibleInViewport: w
     } = function(e) {
@@ -59,7 +59,7 @@ function b(e) {
             e.isIntersecting && n(!0)
         }, []);
         return {
-            visibilityElementRef: (0, x.B)(a, {
+            visibilityElementRef: (0, p.B)(a, {
                 root: e ?? null,
                 threshold: 0,
                 rootMargin: "900px 0px 900px 0px"

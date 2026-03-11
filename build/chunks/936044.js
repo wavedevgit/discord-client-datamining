@@ -19,8 +19,8 @@ function u(e) {
         content: l,
         className: u,
         compact: _,
-        popoutProps: A,
-        hideTimestamp: m = !1,
+        popoutProps: m,
+        hideTimestamp: A = !1,
         withFooter: E = !1,
         ...I
     } = e, T = (0, r.Ay)(t);
@@ -49,11 +49,11 @@ function u(e) {
                 author: T,
                 guildId: n?.guild_id,
                 compact: _,
-                hideTimestamp: m,
+                hideTimestamp: A,
                 className: a()(d.wx, {
                     [d.oE]: _
                 }),
-                ...A ?? {}
+                ...m ?? {}
             }),
             compact: _,
             author: T

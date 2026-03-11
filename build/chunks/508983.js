@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(311907),
     u = n(827734),
     _ = n(990078),
-    A = n(397927),
-    m = n(956793),
+    m = n(397927),
+    A = n(956793),
     E = n(775602),
     I = n(709066),
     T = n(845625),
     f = n(785823),
-    N = n(449585),
-    C = n(137207),
+    C = n(449585),
+    N = n(137207),
     g = n(22007),
     h = n(378570),
     p = n(589022),
@@ -110,19 +110,19 @@ function z(e) {
 function Y(e) {
     switch (e) {
         case T.G.DELETE_USER_MESSAGE:
-            return (0, i.jsx)(A.ucK, {
+            return (0, i.jsx)(m.ucK, {
                 size: "xs",
                 color: "currentColor",
                 className: V.yr
             });
         case T.G.SET_COMPLETED:
-            return (0, i.jsx)(A.A9s, {
+            return (0, i.jsx)(m.A9s, {
                 size: "xs",
                 color: "currentColor",
                 className: r()(V.yr, V.r0)
             });
         case T.G.SUBMIT_FEEDBACK:
-            return (0, i.jsx)(A.iFK, {
+            return (0, i.jsx)(m.iFK, {
                 size: "xs",
                 color: "currentColor",
                 className: V.yr
@@ -210,7 +210,7 @@ let Q = l.memo(function(e) {
             ...o
         }, c),
         _ = R.default.getUser(s),
-        m = q(n, l),
+        A = q(n, l),
         E = X(l, _, R.default.getCurrentUser());
     if (null != _) {
         let e = (0, D.FT)(_, l),
@@ -220,11 +220,11 @@ let Q = l.memo(function(e) {
                 author: e,
                 guildId: l?.guild_id,
                 compact: r,
-                ...m
+                ...A
             }, E);
         t = () => i
     }
-    return (0, i.jsx)(A.Text, {
+    return (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
         color: "text-strong",
         tag: "span",
@@ -276,18 +276,18 @@ function Z(e) {
         selected: es,
         ...eo
     } = q(a, s), ec = l.useCallback(() => {
-        (0, N.w2)(a.id, $, Y, s)
+        (0, C.w2)(a.id, $, Y, s)
     }, [a.id, $, Y, s]), ed = l.useCallback(e => {
         null != ee && null != X && (e.stopPropagation(), e.preventDefault(), (0, g.A)(F.BVt.CHANNEL(X?.guild_id, X?.id, ee)))
     }, [X, ee]), eu = l.useCallback(e => {
-        null != X && (m.default.selectChannel({
+        null != X && (A.default.selectChannel({
             guildId: X.guild_id,
             channelId: e,
             messageId: a.id
         }), (0, h.iN)(e))
     }, [a, X]), e_ = l.useCallback(() => {
-        (0, C.E5)(a.id, s, T.G.DELETE_USER_MESSAGE)
-    }, [s, a.id]), eA = (0, H.getFriendlyDurationString)(Number(et)), em = null != en, eE = j && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
+        (0, N.E5)(a.id, s, T.G.DELETE_USER_MESSAGE)
+    }, [s, a.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = j && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
         onMouseLeave: p,
@@ -312,7 +312,7 @@ function Z(e) {
                     }),
                     username: (0, i.jsxs)("div", {
                         className: V.he,
-                        children: [(0, i.jsx)(A.Text, {
+                        children: [(0, i.jsx)(m.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
@@ -352,7 +352,7 @@ function Z(e) {
                             children: [(0, i.jsxs)("div", {
                                 className: V.Y4,
                                 children: [null != Z && (0, i.jsxs)(i.Fragment, {
-                                    children: [(0, i.jsx)(A.Text, {
+                                    children: [(0, i.jsx)(m.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
                                         tag: "span",
@@ -362,29 +362,29 @@ function Z(e) {
                                     }), (0, i.jsx)("div", {
                                         className: r()(V.Om, V.Gx)
                                     })]
-                                }), null != G && (0, i.jsx)(A.Text, {
+                                }), null != G && (0, i.jsx)(m.Text, {
                                     variant: "text-xs/medium",
                                     color: "text-muted",
                                     tag: "span",
                                     children: w.intl.format(w.t.ZoOyKB, {
                                         ruleName: G
                                     })
-                                }), null != eA && (0, i.jsxs)(i.Fragment, {
+                                }), null != em && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
                                         className: r()(V.Om, V.Gx)
-                                    }), (0, i.jsx)(A.Text, {
+                                    }), (0, i.jsx)(m.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
                                         tag: "span",
                                         className: V.__invalid_footerText,
                                         children: w.intl.format(w.t["3LYql6"], {
-                                            duration: eA
+                                            duration: em
                                         })
                                     })]
                                 }), null != el && (0, i.jsxs)(i.Fragment, {
                                     children: [(0, i.jsx)("div", {
                                         className: r()(V.Om, V.Gx)
-                                    }), (0, i.jsx)(A.Text, {
+                                    }), (0, i.jsx)(m.Text, {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
                                         tag: "span",
@@ -394,8 +394,8 @@ function Z(e) {
                                         })
                                     })]
                                 })]
-                            }), em ? (0, i.jsx)(z, {
-                                children: (0, i.jsx)(A.Text, {
+                            }), eA ? (0, i.jsx)(z, {
+                                children: (0, i.jsx)(m.Text, {
                                     variant: "text-xs/medium",
                                     color: "text-default",
                                     tag: "span",
@@ -417,11 +417,11 @@ function Z(e) {
                         }),
                         children: [(0, i.jsxs)("div", {
                             className: V.AX,
-                            children: [(0, i.jsx)(A.lmn, {
+                            children: [(0, i.jsx)(m.lmn, {
                                 size: "xs",
                                 color: u.A.unsafe_rawColors.BRAND_500.css,
                                 className: V.Dq
-                            }), (0, i.jsx)(A.QWc, {
+                            }), (0, i.jsx)(m.QWc, {
                                 variant: "primary",
                                 size: "sm",
                                 textVariant: "text-xs/normal",
@@ -435,7 +435,7 @@ function Z(e) {
                                 className: V.Om
                             }), (0, i.jsx)("div", {
                                 className: V.AX,
-                                children: (0, i.jsx)(A.QWc, {
+                                children: (0, i.jsx)(m.QWc, {
                                     onClick: () => eu(eI),
                                     variant: "primary",
                                     size: "sm",
@@ -447,7 +447,7 @@ function Z(e) {
                             className: V.Om
                         }), (0, i.jsx)("div", {
                             className: V.AX,
-                            children: (0, i.jsx)(A.QWc, {
+                            children: (0, i.jsx)(m.QWc, {
                                 onClick: ec,
                                 variant: "primary",
                                 size: "sm",
@@ -459,7 +459,7 @@ function Z(e) {
                                 className: V.Om
                             }), (0, i.jsx)("div", {
                                 className: V.AX,
-                                children: (0, i.jsx)(A.QWc, {
+                                children: (0, i.jsx)(m.QWc, {
                                     onClick: e_,
                                     variant: "primary",
                                     size: "sm",

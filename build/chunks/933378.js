@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(962173),
     m = n(733788),
     h = n(341915),
-    x = n(890687),
-    p = n(18437),
+    p = n(890687),
+    x = n(18437),
     g = n(590202),
     _ = n(971649),
     f = n(901406),
@@ -41,11 +41,11 @@ function E(e) {
         useReducedMotion: n
     } = e, s = (0, m.J)(), o = (0, j.H1)(t.id, h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR_V2), c = (0, j.Xf)({
         useReducedMotion: n
-    }), v = (0, p.Ut)(), A = (0, _.go)(), {
+    }), v = (0, x.Ut)(), A = (0, _.go)(), {
         errorHints: C,
         startingConsoleQuest: E,
         startConsoleQuest: N
-    } = (0, x.Wj)({
+    } = (0, p.Wj)({
         questId: t.id,
         beforeRequest: () => {
             v({
@@ -139,11 +139,11 @@ let N = function(e) {
     let {
         quest: t,
         taskDetails: n
-    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, x.Du)(), r = i.useMemo(() => (0, f.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
+    } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, p.Du)(), r = i.useMemo(() => (0, f.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
         steps: d,
         hasConnectedAccounts: u,
         isProgressingQuestForLaunchedGame: m,
-        isQuestComplete: p
+        isQuestComplete: x
     } = i.useMemo(() => {
         let e = r.length > 0,
             i = e && (0, v.YL)(t),
@@ -180,7 +180,7 @@ let N = function(e) {
     return (0, a.jsx)(C.Ay, {
         heading: y.intl.string(y.t.UPWlJu),
         steps: d,
-        children: u && !m && !p && (0, a.jsx)(E, {
+        children: u && !m && !x && (0, a.jsx)(E, {
             useReducedMotion: s,
             quest: t
         })

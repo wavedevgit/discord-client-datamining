@@ -1,19 +1,19 @@
 /** chunk id: 780645 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $: () => a
+    $: () => r
 });
 var i = n(627968),
     s = n(64700),
     l = n(442433),
-    r = n(93055);
+    a = n(93055);
 
-function a(e, t) {
+function r(e, t) {
     let {
-        hasAccess: a
-    } = (0, r.TW)(e);
+        hasAccess: r
+    } = (0, a.TW)(e);
     return s.useCallback(e => {
-        if (!a) {
+        if (!r) {
             e.preventDefault(), e.stopPropagation();
             return
         }(0, l.L3)(e, async () => {
@@ -25,5 +25,5 @@ function a(e, t) {
                 navId: t
             })
         })
-    }, [a, t])
+    }, [r, t])
 }

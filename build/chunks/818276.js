@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(568329),
     m = n(207869),
     h = n(158265),
-    x = n(963713),
-    p = n(277928),
+    p = n(963713),
+    x = n(277928),
     g = n(783602),
     _ = n(272111),
     f = n(596850);
@@ -29,7 +29,7 @@ let v = i.forwardRef(function(e, t) {
         taskDetails: j,
         isExpanded: A,
         isExpansionAnimationComplete: C
-    } = i.useContext(x.T), y = b.userStatus?.completedAt != null, T = (0, d.I3)(b), S = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != T ? T.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
+    } = i.useContext(p.T), y = b.userStatus?.completedAt != null, T = (0, d.I3)(b), S = i.useRef(null), E = b.userStatus?.enrolledAt != null, N = null != T ? T.percentComplete : j.percentComplete, [I, k] = i.useState(!1);
     return (0, a.jsxs)(a.Fragment, {
         children: [y && (0, a.jsx)(h.A, {
             overlayRef: s,
@@ -57,7 +57,7 @@ let v = i.forwardRef(function(e, t) {
                     children: [(0, a.jsx)(g.A, {}), (0, a.jsx)("div", {
                         className: f.yF
                     })]
-                }), E ? (0, a.jsx)(p.A, {
+                }), E ? (0, a.jsx)(x.A, {
                     contentLocation: "collapsed",
                     progressBarRef: S,
                     isExpanded: !1,

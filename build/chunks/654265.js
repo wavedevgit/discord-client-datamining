@@ -13,11 +13,11 @@ var i = n(64700),
     u = n(652215);
 
 function _(e) {
-    let [t, n] = i.useState(!1), [_, A] = i.useState(!1), m = s.default.cast(e), {
+    let [t, n] = i.useState(!1), [_, m] = i.useState(!1), A = s.default.cast(e), {
         joinRequest: E,
         guild: I
     } = (0, l.cf)([c.A, d.A, a.A, r.A], () => {
-        let e = c.A.getRequest(m);
+        let e = c.A.getRequest(A);
         if (null == e) return {
             joinRequest: null,
             isModmin: !1,
@@ -31,12 +31,12 @@ function _(e) {
         }
     });
     return i.useEffect(() => {
-        null != I || _ || (A(!0), o.A.fetchRequestToJoinGuilds())
+        null != I || _ || (m(!0), o.A.fetchRequestToJoinGuilds())
     }, [I, _]), i.useEffect(() => {
-        null == E && (n(!0), o.A.fetchGuildJoinRequest(m).finally(() => {
+        null == E && (n(!0), o.A.fetchGuildJoinRequest(A).finally(() => {
             n(!1)
         }))
-    }, [E, m]), {
+    }, [E, A]), {
         loading: t,
         joinRequest: E,
         joinRequestGuild: I

@@ -34,35 +34,35 @@ let m = function(e) {
             default:
                 throw Error(`Unsupported subscription tier: ${e}`)
         }
-    }(n)), R = (0, E.V)(), S = (0, r.A)(null != R && null != R.expires_at ? Date.parse(R.expires_at) : 0), h = null == R || R.subscription_trial?.sku_id !== n || null == R.expires_at || Object.values(S).every(e => 0 === e);
+    }(n)), h = (0, E.V)(), R = (0, r.A)(null != h && null != h.expires_at ? Date.parse(h.expires_at) : 0), S = null == h || h.subscription_trial?.sku_id !== n || null == h.expires_at || Object.values(R).every(e => 0 === e);
     if ((0, o.A)({
             type: l.ImpressionTypes.VIEW,
             name: l.ImpressionNames.TRIAL_NOTICE,
             properties: {
-                trial_id: R?.trial_id
+                trial_id: h?.trial_id
             }
         }, {
-            disableTrack: h
-        }), h) return null;
+            disableTrack: S
+        }), S) return null;
     let g = n === I.pe.TIER_2 ? p.kqX.PREMIUM_TIER_2_TRIAL_ENDING : p.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
         C = (0, _.re)({
-            intervalType: R.subscription_trial?.interval,
-            intervalCount: R.subscription_trial?.interval_count
+            intervalType: h.subscription_trial?.interval,
+            intervalCount: h.subscription_trial?.interval_count
         }),
-        O = u.A.getArticleURL(R.trial_id === I.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
+        O = u.A.getArticleURL(h.trial_id === I.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
     return (0, i.jsxs)(T.T0, {
         onClick: () => {
             t(), d.default.track(p.HAw.APP_NOTICE_CLOSED, {
                 notice_type: g,
-                trial_id: R.trial_id
+                trial_id: h.trial_id
             })
         },
         children: [(0, i.jsx)(T.In, {
-            children: (0, A.GZ)(n, S, C, O)
+            children: (0, A.GZ)(n, R, C, O)
         }), (0, i.jsx)(T.fY, {
             onClick: () => {
                 (0, c.A)({
-                    trialId: R.trial_id,
+                    trialId: h.trial_id,
                     subscriptionTier: n,
                     analyticsLocations: m,
                     analyticsObject: {
@@ -72,7 +72,7 @@ let m = function(e) {
                     }
                 }), d.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                     notice_type: g,
-                    trial_id: R.trial_id
+                    trial_id: h.trial_id
                 })
             },
             text: function(e) {

@@ -1,6 +1,6 @@
 /** chunk id: 231545 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968);
 n(64700);
@@ -28,14 +28,14 @@ function u(e) {
 let m = u(c),
     h = u(c);
 
-function x(e) {
+function p(e) {
     return o.AKn.test(e) ? (0, a.jsx)(r.Ay, {
         type: r.Ay.Types.TEXT,
         children: () => e
     }) : e
 }
 
-function p(e) {
+function x(e) {
     let {
         data: t
     } = e, n = (0, l.Ay)();
@@ -45,7 +45,7 @@ function p(e) {
             data: t,
             theme: "light" === n ? h : m,
             invertTheme: !1,
-            valueRenderer: x,
+            valueRenderer: p,
             shouldExpandNode: () => !0
         })
     })

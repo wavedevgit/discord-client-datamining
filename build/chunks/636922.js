@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(384231),
     u = n(9842),
     _ = n(734057),
-    A = n(661191),
-    m = n(141468),
+    m = n(661191),
+    A = n(141468),
     E = n(763754),
     I = n(491182),
     T = n(860227),
     f = n(538355),
-    N = n(522871),
-    C = n(699352),
+    C = n(522871),
+    N = n(699352),
     g = n(715628),
     h = n(752636),
     p = n(675722),
@@ -52,10 +52,10 @@ let M = l.memo(function(e) {
         allowHeading: G || F,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), V = t.type === x.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), z = (0, o.bG)([_.A], () => t.hasFlag(x.pr7.HAS_THREAD) && _.A.getChannel(A.default.castMessageIdAsChannelId(t.id))), Y = (0, c.$7)({
+    }), V = t.type === x.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), z = (0, o.bG)([_.A], () => t.hasFlag(x.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), Y = (0, c.$7)({
         guildId: P.guild_id,
         roleId: K.iconRoleId
-    }), W = (0, N.A)({
+    }), W = (0, C.A)({
         message: t,
         channel: P,
         enabled: j
@@ -63,7 +63,7 @@ let M = l.memo(function(e) {
     return (0, i.jsx)(I.A, {
         compact: n,
         className: r()(l, {
-            [O.M1]: (0, m.ec)(t),
+            [O.M1]: (0, A.ec)(t),
             [O.XN]: k
         }),
         disableInteraction: k,
@@ -75,7 +75,7 @@ let M = l.memo(function(e) {
             author: K,
             roleIcon: Y
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, C.J)(e, H, w),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, N.J)(e, H, w),
         childrenMessageContent: (0, g.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,

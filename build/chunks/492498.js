@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(378939),
     d = n(964486),
@@ -39,11 +39,11 @@ function j(e, t, n) {
     let i = t ? E.Ay.guildFilter : null,
         s = t ? E.Ay.roleFilter : null,
         l = t ? E.Ay.everyoneFilter : null,
-        r = null;
-    null != e && null != i && (r = i === S.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
+        a = null;
+    null != e && null != i && (a = i === S.KE7.ALL_SERVERS ? null : e.getGuildId()), c.A.fetchRecentMentions({
         before: n,
         limit: S.Ue3,
-        guildId: r,
+        guildId: a,
         roles: s,
         everyone: l
     })
@@ -52,14 +52,14 @@ function j(e, t, n) {
 function R(e) {
     let {
         onJump: t
-    } = e, n = (0, a.bG)([f.A, C.A], () => f.A.getChannel(C.A.getChannelId())), {
+    } = e, n = (0, r.bG)([f.A, C.A], () => f.A.getChannel(C.A.getChannelId())), {
         messages: l,
         hasMore: o,
         loading: h,
         guildFilter: m,
         roleFilter: _,
         everyoneFilter: x
-    } = (0, a.cf)([E.Ay], () => ({
+    } = (0, r.cf)([E.Ay], () => ({
         messages: E.Ay.getMentions(),
         hasMore: E.Ay.hasMore,
         loading: E.Ay.loading,
@@ -78,7 +78,7 @@ function R(e) {
     }, []);
     let R = s.useCallback(() => null, []);
     return (0, i.jsx)(p.Ay, {
-        className: r()(v.sH, {
+        className: a()(v.sH, {
             [v.qC]: I
         }),
         scrollerClassName: v.XG,
@@ -121,8 +121,8 @@ function L(e) {
     if (null == t) return null;
     let l = f.A.getChannel(t.channel_id);
     if (null == l || (0, h.Jm)(l) || (0, h.$v)(l)) return null;
-    let r = x.A.didAgree(l.getGuildId()),
-        a = !!(0, h.Gc)(l) && !r;
+    let a = x.A.didAgree(l.getGuildId()),
+        r = !!(0, h.Gc)(l) && !a;
     return (0, i.jsxs)("div", {
         className: v.kL,
         children: [(0, i.jsx)(N.A, {
@@ -141,7 +141,7 @@ function L(e) {
                 message: t,
                 channel: l,
                 className: v.iU,
-                hideAccessories: a,
+                hideAccessories: r,
                 compact: _.hH.getSetting(),
                 animateAvatar: !1,
                 focusProps: y,

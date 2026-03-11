@@ -5,9 +5,9 @@ n.d(t, {
     Qm: () => u,
     _J: () => E,
     di: () => I,
-    fi: () => m,
+    fi: () => A,
     k$: () => c,
-    mR: () => A,
+    mR: () => m,
     ql: () => f,
     r2: () => T,
     yc: () => o
@@ -40,12 +40,12 @@ function _(e) {
     return null == e ? void 0 : d(e) ? a.V.JOIN_RAID : a.V.DM_RAID
 }
 
-function A(e, t) {
+function m(e, t) {
     let n = [];
     return e && n.push(a.ZE.INVITES_DISABLED), t && n.push(a.ZE.DMS_DISABLED), n
 }
 
-function m(e, t) {
+function A(e, t) {
     let n = [];
     return e || n.push(a.ZE.INVITES_DISABLED), t || n.push(a.ZE.DMS_DISABLED), n
 }

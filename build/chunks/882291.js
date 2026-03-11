@@ -64,12 +64,12 @@ function g(e) {
         duration: b,
         percent: i,
         onClick: N
-    }), $ = l.useMemo(() => null == U || null == k ? null : (0, o.rB)((0, o.hc)(U, k, b)), [U, k, b]), Y = l.useMemo(() => {
+    }), Y = l.useMemo(() => null == U || null == k ? null : (0, o.rB)((0, o.hc)(U, k, b)), [U, k, b]), $ = l.useMemo(() => {
         if (null != k) return (0, o.TO)(i, k)
     }, [i, k]), {
         currentPxSpring: H
     } = (0, u.zhh)({
-        currentPxSpring: Y ?? 0,
+        currentPxSpring: $ ?? 0,
         config: x
     }, g ? "animate-always" : "animate-never"), {
         indicators: z,
@@ -81,7 +81,7 @@ function g(e) {
         timelineRect: k,
         videoDuration: b,
         targetSec: t
-    }), Z = l.useMemo(() => W(Y), [Y, W]), ee = l.useMemo(() => W(U), [U, W]), et = !A && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = l.useMemo(() => W($), [$, W]), ee = l.useMemo(() => W(U), [U, W]), et = !A && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -128,7 +128,7 @@ function g(e) {
                 className: v.G9,
                 ...K,
                 children: null != k && er.map((e, t) => (0, r.jsx)(c.A, {
-                    showGlow: T !== f.Q6.ENDED && null != Y && Y > e.startPx,
+                    showGlow: T !== f.Q6.ENDED && null != $ && $ > e.startPx,
                     segment: e,
                     currentPxSpring: H,
                     animatingIndex: X,
@@ -146,7 +146,7 @@ function g(e) {
                 let n = X === e.index,
                     l = e.targetSec;
                 return (0, r.jsx)(p.A, {
-                    currentPx: null != Y ? Y : 0,
+                    currentPx: null != $ ? $ : 0,
                     indicator: e,
                     isAnimated: n,
                     expansionSpring: J,
@@ -156,15 +156,15 @@ function g(e) {
                     onMouseLeave: () => q(null),
                     onClick: null != N ? () => N(l) : void 0
                 }, `indicator-${t}`)
-            }), F && null != $ && n && !ee && (0, r.jsx)(u.Text, {
+            }), F && null != Y && n && !ee && (0, r.jsx)(u.Text, {
                 className: v.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
                     left: null != U ? `${U}px` : "auto"
                 },
-                children: $
-            }), F && S && null != Y && !Z && (0, r.jsx)(a.animated.div, {
+                children: Y
+            }), F && S && null != $ && !Z && (0, r.jsx)(a.animated.div, {
                 className: v.Ub,
                 style: {
                     left: H.to(e => `${e}px`)

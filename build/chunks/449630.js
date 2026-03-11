@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(765671),
     h = n(793574),
-    x = n(688810),
-    p = n(395332),
+    p = n(688810),
+    x = n(395332),
     g = n(713517),
     _ = n(645507),
     f = n(932001),
@@ -68,7 +68,7 @@ function ei(e) {
         className: el
     } = e, er = __OVERLAY__, eo = (0, y.Ay)(t.id, void 0), {
         analyticsLocations: ed
-    } = (0, x.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ec = (0, C.pb)({
+    } = (0, p.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ec = (0, C.pb)({
         layout: "ACCOUNT_POPOUT",
         userId: t.id,
         guildId: void 0
@@ -77,7 +77,7 @@ function ei(e) {
         height: em
     } = (0, m.Ay)(), {
         isHoveringOrFocusing: eh,
-        isHovering: ex
+        isHovering: ep
     } = (0, g.A)(eu);
     i.useEffect(() => {
         s?.(eu.current)
@@ -86,13 +86,13 @@ function ei(e) {
     }), () => H.A.setState({
         isOpen: !1
     })), []);
-    let ep = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
+    let ex = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
         eg = L.CY.useSetting(),
         e_ = (0, Y.Q)(eg),
         ef = (0, d.bG)([G.A], () => G.A.hidePersonalInformation),
         ev = (0, v.kB)(),
         eb = L.Q_.useSetting(),
-        ej = (0, Y.T)(ep),
+        ej = (0, Y.T)(ex),
         eA = (0, K.j)(n),
         eC = (0, j.A)({
             analyticsLocations: ed
@@ -126,13 +126,13 @@ function ei(e) {
         eL = i.useCallback(() => {
             eC(), eU()
         }, [eC, eU]),
-        eB = (0, p.JY)({
+        eB = (0, x.JY)({
             location: "UserProfileAccountPopout"
         }),
-        eG = (0, p.on)({
+        eG = (0, x.on)({
             location: "UserProfileAccountPopout"
         });
-    return (0, a.jsx)(x.f5, {
+    return (0, a.jsx)(p.f5, {
         value: ed,
         children: (0, a.jsx)(C.of, {
             value: ec,
@@ -232,10 +232,10 @@ function ei(e) {
                                         label: (0, a.jsx)(q.A, {}),
                                         sublabel: null != e_ && e_,
                                         icon: () => (0, a.jsx)(u.nW6, {
-                                            status: ep,
+                                            status: ex,
                                             size: 12
                                         }),
-                                        trailing: (ev || ep === X.clD.DND) && (0, a.jsx)(u.a_I, {
+                                        trailing: (ev || ex === X.clD.DND) && (0, a.jsx)(u.a_I, {
                                             size: "xxs"
                                         }),
                                         renderSubmenu: r.Fr ? void 0 : e => {
@@ -310,7 +310,7 @@ function ei(e) {
                         })]
                     }), eo?.profileEffect != null && !eE.current && (0, a.jsx)(A.A, {
                         skuId: eo.profileEffect.skuId,
-                        isHovering: ex
+                        isHovering: ep
                     })]
                 }), eB && eG ? (0, a.jsx)(z.A, {
                     targetElementRef: eS,

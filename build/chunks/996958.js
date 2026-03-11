@@ -13,20 +13,20 @@ var a = n(627968),
     u = n(581057),
     m = n(270704),
     h = n(369496),
-    x = n(565832),
-    p = n(622697),
+    p = n(565832),
+    x = n(622697),
     g = n(259059),
     _ = n(698638),
     f = n(465692);
 
 function v() {
-    let [e, t] = (0, i.useState)(!1), [n, s] = (0, i.useState)(!1), [r, c] = (0, i.useState)(null), x = (0, u.Ay)(e => e.toolsCache), {
+    let [e, t] = (0, i.useState)(!1), [n, s] = (0, i.useState)(!1), [r, c] = (0, i.useState)(null), p = (0, u.Ay)(e => e.toolsCache), {
         setToolsCache: g,
         removeToolsCache: v
     } = (0, u.DE)(), {
         setImgCache: y
     } = (0, u.TW)(), T = (0, i.useCallback)(e => {
-        let t = x[e];
+        let t = p[e];
         null != t ? c({
             previewToolKey: t.url,
             palette: t.palette
@@ -37,7 +37,7 @@ function v() {
             ...t,
             previewToolKey: e
         })
-    }, [x]), S = (0, i.useCallback)(e => {
+    }, [p]), S = (0, i.useCallback)(e => {
         c(t => null == t ? null : {
             ...t,
             palette: e
@@ -67,7 +67,7 @@ function v() {
                 })]
             }), (0, a.jsxs)("div", {
                 className: f.uQ,
-                children: [e && (0, a.jsx)(d.Ix, {}), n && (0, a.jsx)(p.A, {
+                children: [e && (0, a.jsx)(d.Ix, {}), n && (0, a.jsx)(x.A, {
                     selected: r?.palette?.name,
                     onSelect: e => {
                         r?.previewToolKey != null && g(r.previewToolKey, r.previewToolKey, e), S(e)
@@ -95,7 +95,7 @@ function v() {
                     }
                 }), (0, a.jsx)("div", {
                     className: f.is,
-                    children: Object.values(x).map(e => {
+                    children: Object.values(p).map(e => {
                         let {
                             url: t
                         } = e;
@@ -322,7 +322,7 @@ function S(e) {
         className: f.VH,
         children: (0, a.jsx)("div", {
             className: f.X2,
-            children: (0, a.jsx)(x.A, {
+            children: (0, a.jsx)(p.A, {
                 nameplate: t
             })
         })

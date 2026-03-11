@@ -1,6 +1,6 @@
 /** chunk id: 41280 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
@@ -13,21 +13,21 @@ var a = n(627968),
     u = n(397927),
     m = n(775602),
     h = n(314098);
-let x = {
+let p = {
     mass: 10,
     tension: 550,
     friction: 140
 };
 
-function p(e) {
+function x(e) {
     let {
         className: t,
         pageMultiplier: n
-    } = e, s = (0, c.bG)([m.A], () => m.A.useReducedMotion), [r, p] = i.useState({
+    } = e, s = (0, c.bG)([m.A], () => m.A.useReducedMotion), [r, x] = i.useState({
         x: 0,
         y: 0
     }), g = i.useMemo(() => o().throttle(e => {
-        s || p({
+        s || x({
             x: (window.innerWidth - e.pageX * n) / 90,
             y: (window.innerHeight - e.pageY * n) / 90
         })
@@ -36,7 +36,7 @@ function p(e) {
     let [_, f] = (0, u.zhh)(() => ({
         x: 0,
         y: 0,
-        config: x
+        config: p
     }));
     return i.useEffect(() => {
         f({

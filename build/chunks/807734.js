@@ -22,7 +22,7 @@ let u = function(e) {
         methods: l.A.methods,
         loading: l.A.loading
     })), {
-        initiateAgeVerification: x
+        initiateAgeVerification: p
     } = (0, o.nn)({
         onComplete: t,
         entryPoint: s.q1.EXPRESSIVE_GET_STARTED,
@@ -44,7 +44,7 @@ let u = function(e) {
                 title: c.intl.string(a),
                 description: c.intl.string(i),
                 onClick: async t => {
-                    (0, s.St)(t, s.WU.EXPRESSIVE_PRIMARY, s._7.METHOD_SELECT, e), n?.(), await x(e)
+                    (0, s.St)(t, s.WU.EXPRESSIVE_PRIMARY, s._7.METHOD_SELECT, e), n?.(), await p(e)
                 }
             }
         }).filter(e => null != e),

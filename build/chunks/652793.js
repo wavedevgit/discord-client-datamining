@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(837381),
-    a = n(672117),
+    a = n(837381),
+    r = n(672117),
     o = n(397927),
     c = n(69813),
     d = n(728444),
@@ -27,7 +27,7 @@ function h(e) {
         showUnread: _ = !1,
         ref: f,
         ...x
-    } = e, C = (0, r.rm)(t), E = (0, a.O)(A) ?? "";
+    } = e, C = (0, a.rm)(t), E = (0, r.O)(A) ?? "";
     return (0, i.jsx)("li", {
         ref: f,
         children: (0, i.jsxs)(o.sqX, {

@@ -12,15 +12,15 @@ var i = n(627968),
     d = n(843472),
     u = n(565645),
     _ = n(763754),
-    A = n(447215),
-    m = n(888675),
+    m = n(447215),
+    A = n(888675),
     E = n(533567),
     I = n(306417),
     T = n(412136),
     f = n(985018),
-    N = n(782635);
+    C = n(782635);
 
-function C() {
+function N() {
     return (0, i.jsx)("svg", {
         width: "24",
         height: "24",
@@ -41,7 +41,7 @@ function g(e) {
         hasNoVotes: n,
         victorEmoji: l
     } = e;
-    if (n) t = (0, i.jsx)(C, {});
+    if (n) t = (0, i.jsx)(N, {});
     else if (null != l) {
         let e = "" !== l.name ? l.name : l.displayName;
         t = (0, i.jsx)(u.A, {
@@ -51,7 +51,7 @@ function g(e) {
         })
     }
     return null != t ? (0, i.jsx)("div", {
-        className: N.ZS,
+        className: C.ZS,
         children: t
     }) : null
 }
@@ -77,16 +77,16 @@ function h(e) {
             } = l;
             t = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: N.sj,
+                    className: C.sj,
                     children: [(0, i.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        className: N.Dq,
+                        className: C.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
                     }), (0, i.jsx)(I.Vx, {
                         size: 16,
-                        className: N.To,
+                        className: C.To,
                         isVictor: !0,
                         isExpired: !0
                     })]
@@ -117,7 +117,7 @@ function h(e) {
             })
     }
     return (0, i.jsx)("div", {
-        className: N.h_,
+        className: C.h_,
         children: t
     })
 }
@@ -143,8 +143,8 @@ function p(e) {
         }
     })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
     return (0, i.jsxs)("div", {
-        className: r()(N.kL, {
-            [N.FS]: o
+        className: r()(C.kL, {
+            [C.FS]: o
         }, t),
         children: [(0, i.jsx)(g, {
             hasNoVotes: "NO_VOTES" === s.type,
@@ -166,7 +166,7 @@ function S(e) {
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), I = (0, s.EJ)(u?.questionText ?? "", T.TU), C = (0, _.Ay)(t), g = (0, A.P)({
+    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), I = (0, s.EJ)(u?.questionText ?? "", T.TU), N = (0, _.Ay)(t), g = (0, m.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
@@ -180,20 +180,20 @@ function S(e) {
         })
     }, [t.id, h]);
     return null == u ? null : (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m.A, {
+        children: [(0, i.jsx)(A.A, {
             iconNode: (0, i.jsx)(c.YRe, {
                 size: "xs"
             }),
             timestamp: t.timestamp,
             compact: a,
             children: f.intl.format(f.t.VJcK41, {
-                username: C.nick,
-                usernameHook: g(C),
+                username: N.nick,
+                usernameHook: g(N),
                 title: I,
                 titleOnClick: S
             })
         }), (0, i.jsx)(p, {
-            className: N.E6,
+            className: C.E6,
             data: u,
             onClickPollLink: r ? void 0 : S
         })]

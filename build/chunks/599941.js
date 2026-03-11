@@ -1,15 +1,15 @@
 /** chunk id: 599941 params = (module,exports,require) **/
 n.d(t, {
     KE: () => g,
-    Tq: () => h,
+    Tq: () => S,
     XE: () => C,
-    Yc: () => S,
+    Yc: () => R,
     cY: () => T,
     dB: () => A,
     dL: () => O,
     eb: () => N,
     et: () => m,
-    hc: () => R,
+    hc: () => h,
     uP: () => p,
     uk: () => I
 }), n(321073);
@@ -108,7 +108,7 @@ let _ = [],
             }
         }
     },
-    R = () => {
+    h = () => {
         let [e, t] = (0, s.A)(c.mK), {
             loading: n,
             error: i
@@ -119,7 +119,7 @@ let _ = [],
             archiveSubscriptionListing: e
         }
     },
-    S = () => {
+    R = () => {
         let [e, t] = i.useState(!1), [n, l] = i.useState(null);
         return {
             error: n,
@@ -148,7 +148,7 @@ let _ = [],
             clearError: () => l(null)
         }
     },
-    h = e => (0, l.bG)([d.A], () => null != e ? d.A.getSubscriptionSettings(e) : void 0),
+    S = e => (0, l.bG)([d.A], () => null != e ? d.A.getSubscriptionSettings(e) : void 0),
     g = () => {
         let [e, t] = i.useState(!1), [n, l] = i.useState(null);
         return {

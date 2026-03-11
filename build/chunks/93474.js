@@ -12,12 +12,12 @@ var i = n(311907),
     d = n(753738),
     u = n(785823),
     _ = n(652215);
-let A = {},
-    m = 0,
+let m = {},
+    A = 0,
     E = {},
     I = {},
     T = e => {
-        null != A[e] && delete A[e], m++
+        null != m[e] && delete m[e], A++
     };
 
 function f(e) {
@@ -30,10 +30,10 @@ function f(e) {
         isBlockedEdit: (0, a.Qn)(i),
         messageData: i,
         errorMessage: (0, d.PD)(i, l)
-    }, A[t] = n, m++, !0
+    }, m[t] = n, A++, !0
 }
 
-function N(e) {
+function C(e) {
     let {
         channelId: t,
         messages: n
@@ -48,24 +48,24 @@ function N(e) {
         }) ? null == e || -1 === c.default.compare(e, t.id) ? t.id : void 0 : e, l);
     return null != a && I[i] !== a && (I[i] = a, !0)
 }
-class C extends i.Ay.PersistedStore {
+class N extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
     static persistKey = "GuildAutomodMessages";
     initialize(e) {
-        this.waitFor(s.A, o.A), null != e && (A = e.automodFailedMessages, E = e.mentionRaidDetectionByGuild)
+        this.waitFor(s.A, o.A), null != e && (m = e.automodFailedMessages, E = e.mentionRaidDetectionByGuild)
     }
     getState() {
         return {
-            automodFailedMessages: A,
+            automodFailedMessages: m,
             mentionRaidDetectionByGuild: E,
             lastIncidentAlertMessage: I
         }
     }
     getMessage(e) {
-        return null == e ? null : A[e] ?? null
+        return null == e ? null : m[e] ?? null
     }
     getMessagesVersion() {
-        return m
+        return A
     }
     getMentionRaidDetected(e) {
         return E[e] ?? null
@@ -74,12 +74,12 @@ class C extends i.Ay.PersistedStore {
         return I[e] ?? null
     }
 }
-let g = new C(l.h, {
+let g = new N(l.h, {
     CONNECTION_OPEN: function(e) {
-        return 0 !== Object.keys(A).length && (A = {}, m++, !0)
+        return 0 !== Object.keys(m).length && (m = {}, A++, !0)
     },
-    LOAD_MESSAGES_SUCCESS: N,
-    LOCAL_MESSAGES_LOADED: N,
+    LOAD_MESSAGES_SUCCESS: C,
+    LOCAL_MESSAGES_LOADED: C,
     MESSAGE_CREATE: function(e) {
         let {
             guildId: t,

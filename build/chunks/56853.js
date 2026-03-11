@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(765671),
     h = n(736653),
-    x = n(496885),
-    p = n(178540),
+    p = n(496885),
+    x = n(178540),
     g = n(859703),
     _ = n(341915),
     f = n(12251),
@@ -66,10 +66,10 @@ function L(e) {
     } = e, {
         ref: d,
         height: c = 0
-    } = (0, m.Ay)([n]), h = t.userStatus?.completedAt != null, x = (0, v.Vn)(t), {
-        type: p,
+    } = (0, m.Ay)([n]), h = t.userStatus?.completedAt != null, p = (0, v.Vn)(t), {
+        type: x,
         hints: g
-    } = i.useMemo(() => h || x ? {
+    } = i.useMemo(() => h || p ? {
         type: 2,
         hints: []
     } : n.length > 0 ? {
@@ -81,11 +81,11 @@ function L(e) {
     } : {
         type: 2,
         hints: []
-    }, [n, h, x, s]), _ = 2 !== p, f = (0, u.zhh)({
+    }, [n, h, p, s]), _ = 2 !== x, f = (0, u.zhh)({
         opacity: +!!_,
         height: _ ? c : 0,
         config: w.N
-    }), b = 0 === p ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === p ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
+    }), b = 0 === x ? u.EpV : u.mir, j = u.LU0.unsafe_rawColors.RED_345.css, A = 0 === x ? j : l ? u.LU0.colors.TEXT_DEFAULT : u.LU0.colors.WHITE;
     return (0, a.jsx)(r.animated.div, {
         style: {
             height: f.height,
@@ -104,7 +104,7 @@ function L(e) {
                     color: l ? "text-muted" : "always-white",
                     children: g.at(0)
                 })]
-            }), 0 === p && (0, a.jsx)(u.QWc, {
+            }), 0 === x && (0, a.jsx)(u.QWc, {
                 text: M.intl.string(M.t["yKJi+/"]),
                 onClick: () => (0, y.i)({
                     quest: t,
@@ -129,7 +129,7 @@ function B(e) {
         onCtxMenuOpen: y,
         onCtxMenuSelect: N,
         sourceQuestContent: w
-    } = e, B = (0, p.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
+    } = e, B = (0, x.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
         month: "numeric",
         day: "numeric"
     }), $ = t.userStatus?.enrolledAt != null, q = t.userStatus?.completedAt != null, {
@@ -245,7 +245,7 @@ function B(e) {
                             variant: "text-sm/medium",
                             color: Y,
                             children: M.intl.string(M.t.VAbKhK)
-                        }), (0, a.jsx)(x.A, {
+                        }), (0, a.jsx)(p.A, {
                             className: P.w$,
                             size: 16,
                             color: u.LU0.unsafe_rawColors.GREEN_360.css,

@@ -1,6 +1,6 @@
 /** chunk id: 302291 params = (module,exports,require) **/
 n.d(t, {
-    R: () => m,
+    R: () => A,
     d: () => E
 });
 var i = n(627968),
@@ -14,7 +14,7 @@ var i = n(627968),
     u = n(552691),
     _ = n(652215);
 
-function A(e, t) {
+function m(e, t) {
     let n = l.useRef(null);
     return l.useCallback(l => (r, s) => {
         let o = d.Ay.getApplicationIconURL({
@@ -43,17 +43,17 @@ function A(e, t) {
     }, [e, t.id])
 }
 
-function m(e) {
+function A(e) {
     let {
         message: t,
         channel: l,
         compact: a
-    } = e, c = (0, r.Ay)(t), d = t.application, m = (0, s.P)({
+    } = e, c = (0, r.Ay)(t), d = t.application, A = (0, s.P)({
         user: t.author,
         channelId: l.id,
         guildId: l.guild_id,
         messageId: t.id
-    }), E = A(l, t);
+    }), E = m(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(394803),
         timestamp: t.timestamp,
@@ -61,7 +61,7 @@ function m(e) {
         children: (0, u.eu)({
             application: d,
             username: c.nick,
-            usernameHook: m(c),
+            usernameHook: A(c),
             applicationNameHook: null != d ? E(d) : _.tEg
         })
     })
@@ -72,12 +72,12 @@ function E(e) {
         message: t,
         channel: l,
         compact: a
-    } = e, c = (0, r.Ay)(t), d = t.application, m = (0, s.P)({
+    } = e, c = (0, r.Ay)(t), d = t.application, A = (0, s.P)({
         user: t.author,
         channelId: l.id,
         guildId: l.guild_id,
         messageId: t.id
-    }), E = A(l, t);
+    }), E = m(l, t);
     return (0, i.jsx)(o.A, {
         icon: n(884797),
         timestamp: t.timestamp,
@@ -85,7 +85,7 @@ function E(e) {
         children: (0, u.A0)({
             application: d,
             username: c.nick,
-            usernameHook: m(c),
+            usernameHook: A(c),
             applicationNameHook: null != d ? E(d) : _.tEg
         })
     })

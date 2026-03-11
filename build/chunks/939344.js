@@ -17,17 +17,17 @@ function o(e) {
         joinable: d,
         usernameHook: u,
         onClickJoinCall: _
-    } = e, A = (0, l.Ay)(t), m = A.nick, E = u(A), I = (0, r.K)(t);
+    } = e, m = (0, l.Ay)(t), A = m.nick, E = u(m), I = (0, r.K)(t);
     return c ? (0, i.jsx)(a.A, {
         icon: n(130158),
         timestamp: t.timestamp,
         compact: o,
         children: null != I ? s.intl.format(s.t.AcqBmO, {
-            username: m,
+            username: A,
             usernameHook: E,
             callDuration: I
         }) : s.intl.format(s.t["43phHx"], {
-            username: m,
+            username: A,
             usernameHook: E
         })
     }) : (0, i.jsxs)(a.A, {
@@ -35,11 +35,11 @@ function o(e) {
         timestamp: t.timestamp,
         compact: o,
         children: [null != I ? s.intl.format(s.t["7TeC1P"], {
-            username: m,
+            username: A,
             usernameHook: E,
             callDuration: I
         }) : s.intl.format(s.t.LuB5RD, {
-            username: m,
+            username: A,
             usernameHook: E
         }), d ? (0, i.jsx)(a.A.Action, {
             onClick: _,

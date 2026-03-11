@@ -1,47 +1,59 @@
 /** chunk id: 246465 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => p
 });
 var r = n(64700),
     l = n(771253),
     i = n(412703),
     s = n(902173),
-    a = n(579473),
-    o = n(717415),
-    u = n(652215);
-let c = new Set([u.NKC.FIVE_G, u.NKC.FOUR_G, u.NKC.UNKNOWN]);
+    a = n(662903),
+    o = n(579473),
+    u = n(717415),
+    c = n(652215);
+let d = () => {},
+    m = new Set([c.NKC.FIVE_G, c.NKC.FOUR_G, c.NKC.UNKNOWN]);
 
-function d(e, t, n, u) {
-    let {
-        quest: d
-    } = r.useContext(o.VideoQuestModalContext), {
-        questConfig: m
-    } = r.useContext(o.VideoQuestConfigContext), p = r.useRef(!1), f = r.useRef(null), E = m.taskConfigV2.tasks[i.n.WATCH_VIDEO]?.assets, h = r.useMemo(() => m.features.includes(s.L.FULL_EPISODE_VIDEO_QUEST), [m.features]), v = r.useMemo(() => null != E ? l.Ay.isSupported() && null != E.videoHls ? a.fY.VIDEO_PLAYER_VIDEO_HLS : h ? null : c.has(t) || null == E.videoLowRes ? a.fY.VIDEO_PLAYER_VIDEO : a.fY.VIDEO_PLAYER_VIDEO_LOW_RES : null, [E, t, h]), x = r.useMemo(() => null != u ? {
-        url: u,
-        mimetype: "video/mp4",
-        isAnimated: !0
-    } : null != v ? (0, a.tW)(d, v, void 0, !1) : null, [d, v, u]), g = () => {
-        null != f.current && 8e5 !== f.current.config.minAutoBitrate && (f.current.config.minAutoBitrate = 8e5)
-    }, S = r.useCallback(() => {
-        null != f.current && (f.current.config.minAutoBitrate = 8e5)
-    }, []);
+function p(e, t, n, c) {
+    let p = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
+        {
+            quest: f
+        } = r.useContext(u.VideoQuestModalContext),
+        {
+            questConfig: E
+        } = r.useContext(u.VideoQuestConfigContext),
+        h = r.useRef(!1),
+        v = r.useRef(null),
+        x = E.taskConfigV2.tasks[i.n.WATCH_VIDEO]?.assets,
+        g = r.useMemo(() => E.features.includes(s.L.FULL_EPISODE_VIDEO_QUEST), [E.features]),
+        S = r.useMemo(() => null != x ? l.Ay.isSupported() && null != x.videoHls ? o.fY.VIDEO_PLAYER_VIDEO_HLS : g ? null : m.has(t) || null == x.videoLowRes ? o.fY.VIDEO_PLAYER_VIDEO : o.fY.VIDEO_PLAYER_VIDEO_LOW_RES : null, [x, t, g]),
+        A = r.useMemo(() => null != c ? {
+            url: c,
+            mimetype: "video/mp4",
+            isAnimated: !0
+        } : null != S ? (0, o.tW)(f, S, void 0, !1) : null, [f, S, c]),
+        C = () => {
+            null != v.current && v.current.config.minAutoBitrate !== a.XY && (v.current.config.minAutoBitrate = a.XY)
+        },
+        _ = r.useCallback(() => {
+            null != v.current && (v.current.config.minAutoBitrate = a.XY)
+        }, []);
     return r.useEffect(() => {
-        if (v !== a.fY.VIDEO_PLAYER_VIDEO_HLS || null == x || null == e.current || p.current) return;
-        f.current = new l.Ay({
-            backBufferLength: 20,
-            maxBufferLength: 30,
+        if (!p || S !== o.fY.VIDEO_PLAYER_VIDEO_HLS || null == A || null == e.current || h.current) return;
+        v.current = new l.Ay({
+            backBufferLength: a.OJ,
+            maxBufferLength: a.Bu,
             startPosition: n,
             startFragPrefetch: !0,
             startLevel: -1
-        }), f.current.on(l.Ay.Events.FRAG_LOADING, g), f.current.loadSource(x.url), f.current.attachMedia(e.current), p.current = !0;
-        let t = f.current;
+        }), v.current.on(l.Ay.Events.FRAG_LOADING, C), v.current.loadSource(A.url), v.current.attachMedia(e.current), h.current = !0;
+        let t = v.current;
         return () => {
-            null != t && t.off(l.Ay.Events.FRAG_LOADING, g)
+            null != t && t.off(l.Ay.Events.FRAG_LOADING, C)
         }
-    }, [x, v, e, n]), {
-        videoAssetType: v,
-        videoAsset: x,
-        hlsRef: f,
-        onFirstChunkLoaded: S
+    }, [p, A, S, e, n]), {
+        videoAssetType: S,
+        videoAsset: A,
+        hlsRef: v,
+        onFirstChunkLoaded: p ? _ : d
     }
 }

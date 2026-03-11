@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(793574),
     u = n(367727),
     _ = n(509536),
-    A = n(881635),
-    m = n(363487),
+    m = n(881635),
+    A = n(363487),
     E = n(828162),
     I = n(71393),
     T = n(888675),
     f = n(652215),
-    N = n(49999),
-    C = n(985018),
+    C = n(49999),
+    N = n(985018),
     g = n(333354),
     h = n(468406),
     p = n(274993),
@@ -57,7 +57,7 @@ function R(e) {
                 children: n
             })]
         }), (0, i.jsx)("div", {
-            children: (0, i.jsx)(A.A, {
+            children: (0, i.jsx)(m.A, {
                 guild: l,
                 analyticsLocations: r,
                 analyticsLocation: {
@@ -75,14 +75,14 @@ function x(e) {
     } = e;
     l.useEffect(() => {
         (0, u.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
-            dismissAction: N.i.AUTO_DISMISS,
+            dismissAction: C.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
-    let n = (0, m.A)(t.id);
+    let n = (0, A.A)(t.id);
     return (0, i.jsx)(R, {
-        title: C.intl.string(g.default.qGDEON),
-        body: C.intl.format(g.default["s+HTdX"], {
+        title: N.intl.string(g.default.qGDEON),
+        body: N.intl.format(g.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(s.DUT, {
                 tag: "a",
                 role: "link",

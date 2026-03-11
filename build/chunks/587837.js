@@ -1,18 +1,18 @@
 /** chunk id: 587837 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968),
     s = n(64700),
     l = n(761929),
-    r = n(423765);
+    a = n(423765);
 
-function a(e) {
+function r(e) {
     let {
         resizableNode: t,
         onResize: n,
-        onResizeEnd: a,
+        onResizeEnd: r,
         minHeight: o,
         maxHeight: c
     } = e, [d, u] = s.useState(null);
@@ -25,11 +25,11 @@ function a(e) {
         maxDimension: c,
         resizableDomNodeRef: t,
         onElementResize: n,
-        onElementResizeEnd: a,
+        onElementResizeEnd: r,
         orientation: l.R.VERTICAL_BOTTOM
     });
     return (0, i.jsx)("div", {
         onMouseDown: h,
-        className: r.D
+        className: a.D
     })
 }

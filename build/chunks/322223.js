@@ -1,6 +1,6 @@
 /** chunk id: 322223 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => R
 });
 var i = n(627968),
     l = n(64700),
@@ -19,19 +19,19 @@ var i = n(627968),
     p = n(652215),
     N = n(746080),
     m = n(985018),
-    R = n(858411);
+    h = n(858411);
 
-function S(e) {
+function R(e) {
     let {
         onDismiss: t
-    } = e, S = (0, r.bG)([_.A], () => _.A.getGuildId()), h = (0, r.bG)([u.A], () => null != S ? u.A.getChannelId(S) : null, [S]), g = S ?? null, C = (0, r.bG)([d.A], () => null != g ? d.A.getGuild(g) : null, [g]), {
+    } = e, R = (0, r.bG)([_.A], () => _.A.getGuildId()), S = (0, r.bG)([u.A], () => null != R ? u.A.getChannelId(R) : null, [R]), g = R ?? null, C = (0, r.bG)([d.A], () => null != g ? d.A.getGuild(g) : null, [g]), {
         shouldShowIncidentActions: O,
         incidentData: y,
         isUnderLockdown: x
     } = (0, T.Li)(g), f = (0, o.fw)(C?.id ?? p.dJq), P = l.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
     if (null == C || null == y || !O) return null;
     let D = e => {
-            e && f && h !== N.VV.MEMBER_SAFETY && P() ? E.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+            e && f && S !== N.VV.MEMBER_SAFETY && P() ? E.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: p.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: C.id
             }) : (0, s.mMO)(async () => {
@@ -50,22 +50,22 @@ function S(e) {
             })
         },
         U = (0, i.jsx)(a.Ay, {
-            className: R.$f,
+            className: h.$f,
             guild: C,
             size: a.Ay.Sizes.MINI
         }),
         M = (0, I.ql)(y, C.name);
     if (null != (y.dmsDisabledUntil ?? y.invitesDisabledUntil) && x) return (0, i.jsxs)(s.$Td, {
-        className: R.lm,
+        className: h.lm,
         color: s.Hv$.NEUTRAL,
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
             noticeType: p.kqX.GUILD_RAID_NOTIFICATION
         }), U, M, (0, i.jsx)(s.zr9, {
-            className: R.hP,
+            className: h.hP,
             onClick: () => D(!1),
             children: (0, i.jsxs)("div", {
-                className: R.rx,
+                className: h.rx,
                 children: [(0, i.jsx)(s.XAi, {
                     size: "xs",
                     color: "currentColor"
@@ -82,18 +82,18 @@ function S(e) {
         }) : m.intl.formatToPlainString(m.t.W87xDE, {
             guildName: C.name
         }),
-        j = f && h === N.VV.MEMBER_SAFETY;
+        j = f && S === N.VV.MEMBER_SAFETY;
     return (0, i.jsxs)(s.$Td, {
-        className: R.lm,
+        className: h.lm,
         color: s.Hv$.WARNING,
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
             noticeType: p.kqX.GUILD_RAID_NOTIFICATION
         }), U, L, !j && (0, i.jsx)(s.zr9, {
-            className: R.hP,
+            className: h.hP,
             onClick: () => D(!0),
             children: (0, i.jsx)("div", {
-                className: R.rx,
+                className: h.rx,
                 children: (0, i.jsx)("span", {
                     children: m.intl.string(m.t.zDJDhr)
                 })

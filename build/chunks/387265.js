@@ -17,10 +17,10 @@ let c = i.memo(function(e) {
     } = e, u = s.M[n], {
         isDismissed: m,
         handleToggleDismissState: h
-    } = (0, d.A)(u), [x, p] = i.useState(!1), g = i.useCallback(() => {
+    } = (0, d.A)(u), [p, x] = i.useState(!1), g = i.useCallback(() => {
         c?.(n), h()
     }, [c, h, n]), _ = i.useCallback(e => {
-        e.preventDefault(), p(!0), navigator.clipboard.writeText(n.toLowerCase())
+        e.preventDefault(), x(!0), navigator.clipboard.writeText(n.toLowerCase())
     }, [n]);
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsxs)(l.BJc, {
@@ -30,9 +30,9 @@ let c = i.memo(function(e) {
             children: [(0, a.jsx)(l.K0, {
                 size: "sm",
                 variant: "icon-only",
-                icon: x ? l.ODX : l.sjE,
+                icon: p ? l.ODX : l.sjE,
                 onClick: _,
-                "aria-label": x ? "Copied" : "Copy"
+                "aria-label": p ? "Copied" : "Copy"
             }), (0, a.jsx)(l.dOG, {
                 label: `${n.toLowerCase()} (${s.M[n]})`,
                 description: (0, o.Zm)(u) ? function(e) {

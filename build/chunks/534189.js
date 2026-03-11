@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(934551),
     l = n(311907),
-    r = n(827734),
-    a = n(922590),
+    a = n(827734),
+    r = n(922590),
     o = n(821269),
     c = n(437774),
     d = n(994500),
@@ -47,7 +47,7 @@ function O(e) {
     } = (0, l.cf)([d.A], () => ({
         relationshipType: d.A.getRelationshipType(t.id),
         originApplicationId: d.A.getOriginApplicationId(t.id)
-    })), P = (0, a.fi)(t.id), w = (0, o.q)({
+    })), P = (0, r.fi)(t.id), w = (0, o.q)({
         userId: t.id
     }), k = (0, l.bG)([u.A], () => u.A.hidePersonalInformation), V = (0, l.bG)([A.A], () => A.A.getUserProfile(t.id)?.application);
     return (0, i.jsxs)("div", {
@@ -89,7 +89,7 @@ function O(e) {
                 heading: j.intl.string(j.t.Iyka0U),
                 headingIcon: (0, i.jsx)(s.CircleErrorIcon, {
                     size: "xxs",
-                    color: r.A.colors.TEXT_STRONG
+                    color: a.A.colors.TEXT_STRONG
                 }),
                 headingColor: "text-strong",
                 children: (0, i.jsx)(c.T, {

@@ -17,11 +17,11 @@ function _(e) {
         guild: t,
         analyticsLocation: n,
         analyticsLocations: _,
-        closeLayer: A
-    } = e, [m, E] = l.useState(!1), {
+        closeLayer: m
+    } = e, [A, E] = l.useState(!1), {
         analyticsLocations: I
     } = (0, s.Ay)(_ ?? []), T = (0, a.bG)([o.default], () => o.default.getCurrentUser()), f = T?.isPremiumGroupMember();
-    async function N() {
+    async function C() {
         E(!0), await (0, c.g)({
             analyticsLocations: I,
             analyticsLocation: {
@@ -30,7 +30,7 @@ function _(e) {
                 ...n
             },
             guild: t,
-            closeLayer: A,
+            closeLayer: m,
             onClose: () => {
                 E(!1)
             }
@@ -41,8 +41,8 @@ function _(e) {
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: N,
-        loading: m,
+        onClick: C,
+        loading: A,
         disabled: f
     })
 }

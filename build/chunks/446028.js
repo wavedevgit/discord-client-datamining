@@ -16,7 +16,7 @@ function d(e) {
         message: t,
         channel: n,
         compact: d
-    } = e, u = (0, a.Ay)(t), _ = t.application, A = (0, r.P)({
+    } = e, u = (0, a.Ay)(t), _ = t.application, m = (0, r.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
@@ -33,7 +33,7 @@ function d(e) {
         children: (0, o.X)({
             application: _,
             username: u.nick,
-            usernameHook: A(u)
+            usernameHook: m(u)
         })
     })
 }

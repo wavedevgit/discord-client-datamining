@@ -2,10 +2,10 @@
 n.d(t, {
     E5: () => g,
     G6: () => m,
-    H0: () => h,
-    Vj: () => R,
+    H0: () => S,
+    Vj: () => h,
     W5: () => C,
-    nV: () => S,
+    nV: () => R,
     s6: () => N,
     wu: () => O
 });
@@ -87,7 +87,7 @@ async function m(e) {
         rejectWithError: !1
     })).body)
 }
-async function R(e) {
+async function h(e) {
     let t = A(e);
     return p((await i.Bo.patch({
         url: E.Rsh.GUILD_AUTOMOD_RULE(e.guildId, e.id),
@@ -95,13 +95,13 @@ async function R(e) {
         rejectWithError: !1
     })).body)
 }
-async function S(e, t) {
+async function R(e, t) {
     return await i.Bo.del({
         url: E.Rsh.GUILD_AUTOMOD_RULE(t, e),
         rejectWithError: !1
     }), !0
 }
-async function h(e) {
+async function S(e) {
     let t = await i.Bo.get({
         url: E.Rsh.GUILD_AUTOMOD_RULES(e),
         rejectWithError: !1

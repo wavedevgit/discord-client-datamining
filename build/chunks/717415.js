@@ -62,10 +62,10 @@ function k(e) {
     o()(null != F, "VideoQuestModal: videoTask must not be null");
     let G = (0, A.eG)(F),
         K = "portrait" === G,
-        $ = (0, p.A)(e => {
+        Y = (0, p.A)(e => {
             V(e.target.offsetHeight)
         }),
-        Y = (0, m.w)($),
+        $ = (0, m.w)(Y),
         H = i.config.features.includes(R.Li.FULL_EPISODE_VIDEO_QUEST),
         {
             enabled: z
@@ -135,7 +135,7 @@ function k(e) {
                                 performanceClockStartTime: E,
                                 orientation: G
                             }), K ? (0, r.jsxs)("div", {
-                                ref: Y,
+                                ref: $,
                                 className: I.uh,
                                 children: [(0, r.jsxs)("div", {
                                     className: I.Df,

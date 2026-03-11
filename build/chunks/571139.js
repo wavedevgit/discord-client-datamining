@@ -20,9 +20,9 @@ var l = n(503698),
     p = n(212455),
     N = n(652215),
     m = n(746080),
-    R = n(985018),
-    S = n(121615),
-    h = n(1624);
+    h = n(985018),
+    R = n(121615),
+    S = n(1624);
 let g = () => {
     let e = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
         t = (0, a.bG)([u.A], () => u.A.getGuild(e), [e]),
@@ -34,21 +34,21 @@ let g = () => {
         y = null,
         x = null,
         f = null,
-        P = [S.lm, h.lm];
+        P = [R.lm, S.lm];
     switch (O) {
         case A.B5.SUBMITTED:
-            y = R.intl.string(R.t["5iLvSx"]), x = R.intl.string(R.t.mqtdmQ), f = () => {
+            y = h.intl.string(h.t["5iLvSx"]), x = h.intl.string(h.t.mqtdmQ), f = () => {
                 (0, o.A)({
-                    title: R.intl.string(R.t.aIz1oV),
-                    subtitle: R.intl.string(R.t["13tjTU"]),
+                    title: h.intl.string(h.t.aIz1oV),
+                    subtitle: h.intl.string(h.t["13tjTU"]),
                     variant: "primary",
-                    confirmText: R.intl.string(R.t["cY+Oob"]),
+                    confirmText: h.intl.string(h.t["cY+Oob"]),
                     onConfirm: () => E.A.removeGuildJoinRequest(t.id)
                 })
             };
             break;
         case A.B5.REJECTED:
-            y = R.intl.string(R.t.lk30cY), x = R.intl.string(R.t["8RrsHr"]), f = () => {
+            y = h.intl.string(h.t.lk30cY), x = h.intl.string(h.t["8RrsHr"]), f = () => {
                 (0, c.mMO)(async () => {
                     let {
                         default: e
@@ -58,17 +58,17 @@ let g = () => {
                         ...n
                     })
                 })
-            }, P.push(S.z3);
+            }, P.push(R.z3);
             break;
         default:
-            y = R.intl.string(R.t.G5YKXP), x = R.intl.string(R.t["r8/DT+"]), f = () => {
+            y = h.intl.string(h.t.G5YKXP), x = h.intl.string(h.t["r8/DT+"]), f = () => {
                 (0, T.Ze)(t.id)
             }
     }
     return (0, i.jsxs)("div", {
         className: r()(...P),
         children: [(0, i.jsx)(c.Text, {
-            className: S.wx,
+            className: R.wx,
             variant: "text-sm/normal",
             children: y
         }), (0, i.jsx)(c.Button, {

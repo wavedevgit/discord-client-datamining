@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(3026),
     c = n(990078),
     d = n(397927),
@@ -153,7 +153,7 @@ class W extends U.Ay {
             asContainer: !0,
             text: H.intl.string(H.t.ZXxLQg),
             children: (0, i.jsx)(d.DUT, {
-                className: r()(F.Xs, n ? F.Tf : null),
+                className: a()(F.Xs, n ? F.Tf : null),
                 onClick: () => {
                     u.A.updateChatOpen(e.id, !0), this.handleClickChat()
                 },
@@ -188,7 +188,7 @@ class W extends U.Ay {
             connected: n,
             locked: s,
             connectChannelDropTarget: l,
-            connectChannelDragSource: a,
+            connectChannelDragSource: r,
             connectUserDropTarget: o,
             connectDragPreview: u,
             canReorderChannel: h,
@@ -203,7 +203,7 @@ class W extends U.Ay {
         } = this.props, {
             shouldShowGuildVerificationPopout: I
         } = this.state, N = (0, i.jsxs)("li", {
-            className: r()(this.getModeClass(), {
+            className: a()(this.getModeClass(), {
                 [F.r9]: this.isDisabled()
             }),
             "data-dnd-name": e.name,
@@ -219,7 +219,7 @@ class W extends U.Ay {
                     children: (0, i.jsxs)(w.Ay, {
                         ref: this.channelItemRef,
                         className: F.Ki,
-                        iconClassName: r()({
+                        iconClassName: a()({
                             [K.G]: null != m
                         }),
                         channel: e,
@@ -250,7 +250,7 @@ class W extends U.Ay {
                 })
             }), this.renderVoiceUsers()]
         });
-        return A && (N = o(N)), h && (N = l(a(N))), N
+        return A && (N = o(N)), h && (N = l(r(N))), N
     }
 }
 let Y = (0, A.a)((0, m.F)(W));
@@ -261,12 +261,12 @@ function z(e) {
         channel: n,
         disableSorting: s,
         isFavoriteCategory: l,
-        collapsed: r,
+        collapsed: a,
         voiceStates: o
-    } = e, c = (0, a.cf)([L.Ay], () => ({
+    } = e, c = (0, r.cf)([L.Ay], () => ({
         unread: L.Ay.hasUnread(n.id),
         mentionCount: L.Ay.getMentionCount(n.id)
-    })), d = (0, a.bG)([M.Ay], () => M.Ay.resolveUnreadSetting(n)), u = (0, a.cf)([y.A, R.A, O.A], () => {
+    })), d = (0, r.bG)([M.Ay], () => M.Ay.resolveUnreadSetting(n)), u = (0, r.cf)([y.A, R.A, O.A], () => {
         let e = y.A.getChannel(n.parent_id),
             i = R.A.getCheck(n.guild_id);
         return {
@@ -277,13 +277,13 @@ function z(e) {
             bypassLimit: O.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
-    }), h = (0, a.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, a.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), p = (0, I.zy)(n.id, N.ip.AUDIENCE), {
+    }), h = (0, r.bG)([v.A], () => v.A.isCollapsed(n.parent_id)), A = (0, T.Ay)(n.id), m = (0, r.bG)([b.A], () => b.A.getStageInstanceByChannel(n.id), [n.id]), p = (0, I.zy)(n.id, N.ip.AUDIENCE), {
         isSubscriptionGated: g,
         needSubscriptionToAccess: _
-    } = (0, f.A)(n.id), x = (0, a.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({
+    } = (0, f.A)(n.id), x = (0, r.bG)([M.Ay], () => M.Ay.isFavorite(t.id, n.id)), C = (0, S.xn)(n.id), E = (0, P.A)({
         channel: n,
         isChannelSelected: !1,
-        isChannelCollapsed: r,
+        isChannelCollapsed: a,
         voiceStates: o,
         isSubscriptionGated: g,
         needSubscriptionToAccess: _,

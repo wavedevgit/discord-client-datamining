@@ -14,14 +14,14 @@ let d = e => {
         searchQuery: t,
         selectedUsers: n,
         limit: l
-    } = e, d = (0, r.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, r.bG)([c.A], () => c.A.getReferralsRemaining()), [_, A] = i.useState(0), [m, E] = i.useState([]), [I, T] = i.useState(!1), [f, N] = i.useState(!1), [C, g] = i.useState(new Map);
+    } = e, d = (0, r.bG)([c.A], () => c.A.getRecipientStatus()), u = (0, r.bG)([c.A], () => c.A.getReferralsRemaining()), [_, m] = i.useState(0), [A, E] = i.useState([]), [I, T] = i.useState(!1), [f, C] = i.useState(!1), [N, g] = i.useState(new Map);
     a()(null != u, "Referrals remaining should not be null");
     let h = async (e, i) => {
         if (!I && !f && null != e && 0 !== u) try {
             T(!0);
-            let l = [...C.values()];
+            let l = [...N.values()];
             for (let [e, t] of d)
-                if (t === o.aK.PENDING && !C.has(e)) {
+                if (t === o.aK.PENDING && !N.has(e)) {
                     let t = await (0, s.wz)(e);
                     l.push(t)
                 } let a = await (0, o.P7)(e, t, i);
@@ -32,9 +32,9 @@ let d = e => {
                 let t = new Map(e);
                 for (let e of l) t.set(e.id, e);
                 return t
-            }), A(a.nextIndex)
+            }), m(a.nextIndex)
         } catch (e) {
-            N(!0)
+            C(!0)
         } finally {
             T(!1)
         }
@@ -44,7 +44,7 @@ let d = e => {
         getLocalReferrals: async () => {
             let e = new Map;
             for (let [t, n] of d)
-                if (n === o.aK.PENDING && !C.has(t)) {
+                if (n === o.aK.PENDING && !N.has(t)) {
                     let n = await (0, s.wz)(t);
                     e.set(n.id, n)
                 } g(e), E(Array.from(e.values()))
@@ -60,10 +60,10 @@ let d = e => {
         } = S.current;
         u > 0 ? e(0, t) : n()
     }, [t, u]), {
-        eligibleUsers: m,
+        eligibleUsers: A,
         fetchUsers: () => h(_, l),
         hasError: f,
         isFetching: I,
-        resendUsers: C
+        resendUsers: N
     }
 }

@@ -20,10 +20,10 @@ function m() {
         h = i.useCallback(e => {
             e ? t(s) : t(null)
         }, [s, t]),
-        x = i.useCallback(e => {
+        p = i.useCallback(e => {
             m(e), n && t(e)
         }, [n, t]),
-        p = (0, o.i)(e => e.showSelfActivity),
+        x = (0, o.i)(e => e.showSelfActivity),
         g = (0, o.i)(e => e.setShowSelfActivity);
     return (0, a.jsx)("div", {
         className: l()(c.nd, u.n),
@@ -39,11 +39,11 @@ function m() {
             }), (0, a.jsx)(r.ksK, {
                 label: "Application ID",
                 value: s,
-                onChange: x,
+                onChange: p,
                 disabled: !n
             }), (0, a.jsx)(r.dOG, {
                 label: "Show own voice activity (bypass self check)",
-                checked: p,
+                checked: x,
                 onChange: g
             })]
         })

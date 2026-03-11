@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(287809),
     m = n(166403),
     h = n(661191),
-    x = n(652215),
-    p = n(788868);
+    p = n(652215),
+    x = n(788868);
 let g = [{
     id: "1week",
     label: "1 Week",
@@ -54,11 +54,11 @@ let g = [{
 }];
 
 function _() {
-    let [e, t] = i.useState(!1), n = (0, s.bG)([u.default], () => u.default.getCurrentUser()), _ = (0, c.Lh)(), f = (0, s.bG)([m.A], () => m.A.getPremiumTypeSubscription()), v = null != _ ? p.VD[_]?.tenureReqNumMonths ?? 0 : 0, b = i.useCallback(async e => {
+    let [e, t] = i.useState(!1), n = (0, s.bG)([u.default], () => u.default.getCurrentUser()), _ = (0, c.Lh)(), f = (0, s.bG)([m.A], () => m.A.getPremiumTypeSubscription()), v = null != _ ? x.VD[_]?.tenureReqNumMonths ?? 0 : 0, b = i.useCallback(async e => {
         let a = new Date;
         e > 0 ? a.setMonth(a.getMonth() - e) : a.setDate(a.getDate() - 7), a.setDate(a.getDate() - 2);
         let i = {
-            subscription_status: x.Dmq.ACTIVE,
+            subscription_status: p.Dmq.ACTIVE,
             endedAt: void 0,
             premium_streak_started_at: h.default.fromTimestamp(a.getTime())
         };

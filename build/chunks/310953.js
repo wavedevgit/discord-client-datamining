@@ -19,7 +19,7 @@ function A(e) {
         withVoiceChannels: t = !1,
         withCurrentVoiceChannel: n = !1
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, i = arguments.length > 2 ? arguments[2] : void 0;
-    return I(e === u.Vc || e === c.YYv ? (0, l.g)() : a.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+    return I(e === u.Vc || e === c.YYv ? (0, l.g3)() : a.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
         currentVoiceChannelId: _.A.getVoiceChannelId(),
         selectedChannelId: _.A.getChannelId()
     }, {

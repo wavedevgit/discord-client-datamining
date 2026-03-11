@@ -12,19 +12,19 @@ var i = n(627968),
     d = n(287809),
     u = n(763754),
     _ = n(447215),
-    A = n(888675),
-    m = n(502197),
+    m = n(888675),
+    A = n(502197),
     E = n(985018),
     I = n(443300);
 
 function T(e) {
     var t;
-    let n, T, f, N, C, g, {
+    let n, T, f, C, N, g, {
             message: h,
             channel: p,
             compact: S
         } = e,
-        R = (0, m.K)(h),
+        R = (0, A.K)(h),
         x = (0, r.yK)([d.default], () => h.call?.participants != null ? h.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== h.author.id) : [], [h.author.id, h.call]),
         O = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
         M = l.useMemo(() => (0, c.L)(x, O, "VoiceSession - participants"), [x, O]),
@@ -43,21 +43,21 @@ function T(e) {
             channelId: p.id,
             guildId: p.guild_id,
             messageId: h.id
-        }), N = (0, u.Ay)(h), C = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == R ? E.intl.format(E.t["eX6e/3"], {
-            username: N.nick,
-            usernameHook: n(N)
+        }), C = (0, u.Ay)(h), N = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == R ? E.intl.format(E.t["eX6e/3"], {
+            username: C.nick,
+            usernameHook: n(C)
         }) : E.intl.format(E.t.YUbgR8, {
             userCount: M.length + 1,
-            username: N.nick,
-            usernameHook: n(N),
-            username2: C.nick,
-            username2Hook: T(C),
+            username: C.nick,
+            usernameHook: n(C),
+            username2: N.nick,
+            username2Hook: T(N),
             username3: g.nick,
             username3Hook: f(g),
             otherCount: M.length - 1,
             duration: R
         }));
-    return (0, i.jsx)(A.A, {
+    return (0, i.jsx)(m.A, {
         iconNode: (0, i.jsx)(a.HKD, {
             size: "md",
             color: s.LU0.colors.STATUS_POSITIVE

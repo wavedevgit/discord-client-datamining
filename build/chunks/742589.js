@@ -35,9 +35,9 @@ function I(e) {
         toolbar: p,
         mobileToolbar: N,
         "aria-label": m,
-        "aria-labelledby": R,
-        scrollable: S,
-        role: h,
+        "aria-labelledby": h,
+        scrollable: R,
+        role: S,
         hideSearch: g,
         hideForLater: C,
         showDivider: O,
@@ -66,9 +66,9 @@ function I(e) {
         hidden: I,
         onDoubleClick: () => A(y),
         "aria-label": m,
-        "aria-labelledby": R,
-        role: h,
-        scrollable: S,
+        "aria-labelledby": h,
+        role: S,
+        scrollable: R,
         children: t
     })
 }

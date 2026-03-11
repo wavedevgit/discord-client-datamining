@@ -6,15 +6,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(118019),
-    a = n(383501),
+    a = n(118019),
+    r = n(383501),
     o = n(728458),
     c = n(38050),
     d = n(998740),
     u = n(572808),
     h = n(241080);
 let A = () => {
-    let e = (0, l.bG)([a.A], () => a.A.getChannelId()),
+    let e = (0, l.bG)([r.A], () => r.A.getChannelId()),
         t = (0, l.bG)([d.A], () => null != e && d.A.isUserConnected(e)),
         n = (0, c.n)(e => e.genre),
         A = (0, c.n)(e => e.songIndex),
@@ -41,20 +41,20 @@ let A = () => {
             o.A.captureException(e)
         }))
     }, [p, t]), t) ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(r.A, {
+        children: [(0, i.jsx)(a.A, {
             ref: f,
             onEnded: g,
             volume: p ? 0 : _.radio,
             children: (0, i.jsx)("source", {
                 src: E?.src
             })
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(a.A, {
             ref: x,
             volume: p ? 0 : _.environment,
             children: (0, i.jsx)("source", {
                 src: I?.sounds?.[u.qi.ENVIRONMENT]
             })
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(a.A, {
             ref: C,
             volume: p ? 0 : _.campfire,
             children: (0, i.jsx)("source", {

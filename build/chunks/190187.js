@@ -16,9 +16,9 @@ let _ = function() {
         t = (0, l.bG)([r.default], () => r.default.getCurrentUser()),
         n = (0, o.k5)(),
         _ = (0, c.QQ)(),
-        A = (0, a.A)(),
-        m = t?.verified === !0 && (0, s.YE)(t, u.PremiumTypes.TIER_2) && A.fetched && A.fractionalState !== u.xc.FP_ONLY && !n && !_;
+        m = (0, a.A)(),
+        A = t?.verified === !0 && (0, s.YE)(t, u.PremiumTypes.TIER_2) && m.fetched && m.fractionalState !== u.xc.FP_ONLY && !n && !_;
     i.useEffect(() => {
-        m && !e && d.A.checkAndFetchReferralsRemaining()
-    }, [m, e])
+        A && !e && d.A.checkAndFetchReferralsRemaining()
+    }, [A, e])
 }

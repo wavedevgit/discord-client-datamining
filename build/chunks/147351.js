@@ -12,14 +12,14 @@ var i = n(627968),
     d = n(406704),
     u = n(696451),
     _ = n(576705),
-    A = n(287809),
-    m = n(954571),
+    m = n(287809),
+    A = n(954571),
     E = n(661191),
     I = n(460350),
     T = n(652215),
     f = n(48447);
 
-function N(e) {
+function C(e) {
     let {
         assets: t,
         currentUser: n,
@@ -28,7 +28,7 @@ function N(e) {
     return t[l]
 }
 
-function C(e) {
+function N(e) {
     let {
         currentUser: t,
         channel: n,
@@ -36,12 +36,12 @@ function C(e) {
         buttonLabels: d,
         stickers: u,
         event: _,
-        eventProperties: A
-    } = e, E = l.useMemo(() => N({
+        eventProperties: m
+    } = e, E = l.useMemo(() => C({
         assets: u,
         currentUser: t,
         message: a
-    }), [u, t, a]), T = l.useMemo(() => N({
+    }), [u, t, a]), T = l.useMemo(() => C({
         assets: d,
         currentUser: t,
         message: a
@@ -75,16 +75,16 @@ function C(e) {
                 event: n,
                 eventProperties: i
             } = e;
-            null != n && m.default.track(n, {
+            null != n && A.default.track(n, {
                 ...i,
                 sticker_id: t.id
             })
         }({
             sticker: E,
             event: _,
-            eventProperties: A
+            eventProperties: m
         }))
-    }, [n, a, E, _, A]);
+    }, [n, a, E, _, m]);
     return (0, i.jsx)(r.$nd, {
         icon: {
             type: "sticker",
@@ -105,7 +105,7 @@ function g(e) {
         stickers: r,
         event: s,
         eventProperties: o
-    } = e, c = A.default.getCurrentUser(), m = function(e) {
+    } = e, c = m.default.getCurrentUser(), A = function(e) {
         let {
             channel: t,
             message: n,
@@ -125,9 +125,9 @@ function g(e) {
         message: n,
         currentUser: c
     });
-    return null != c && m ? (0, i.jsx)("div", {
+    return null != c && A ? (0, i.jsx)("div", {
         className: f.S,
-        children: (0, i.jsx)(C, {
+        children: (0, i.jsx)(N, {
             currentUser: c,
             channel: t,
             message: n,

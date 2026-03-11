@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(429913),
     m = n(379848),
     h = n(183555),
-    x = n(633075),
-    p = n(735321),
+    p = n(633075),
+    x = n(735321),
     g = n(667049),
     _ = n(657331),
     f = n(384377),
@@ -33,23 +33,23 @@ function y(e) {
     } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
             a = (0, g.A)(n),
-            l = i.useMemo(() => a.filter(e => e instanceof x.R), [a]),
+            l = i.useMemo(() => a.filter(e => e instanceof p.R), [a]),
             r = (e = (0, c.ul)({
                 location: "UserProfileAccountPopoutApplicationWidgetCoachmark"
             }), i.useMemo(() => e?.filter(e => e.isEligibleForEditProfileUpsell()), [e])),
             m = i.useMemo(() => r?.map(e => e.applicationId) ?? [], [r]),
             h = (t = (0, u.A)(m), i.useMemo(() => t.filter(b.Vq), [t])),
             {
-                tokens: p,
+                tokens: x,
                 fetched: _
             } = (0, o.j)(m),
             f = (0, d.U9)(h);
         return i.useMemo(() => {
-            if (null == r || null == p || !_) return null;
+            if (null == r || null == x || !_) return null;
             let e = [],
                 t = [];
             for (let n of r) {
-                let a = p.find(e => e.application.id === n.applicationId),
+                let a = x.find(e => e.application.id === n.applicationId),
                     i = l.find(e => e.applicationId === n.applicationId),
                     s = h.find(e => e.id === n.applicationId),
                     r = f.find(e => e.context.application.id === n.applicationId);
@@ -68,7 +68,7 @@ function y(e) {
                 })
             }
             return [...e, ...t]
-        }, [r, p, _, l, h, f])
+        }, [r, x, _, l, h, f])
     }(), {
         analyticsLocations: I
     } = (0, r.Ay)();
@@ -105,9 +105,9 @@ function y(e) {
                     onClick: () => {
                         T(!0), d().then(() => {
                             let e;
-                            return e = new x.R({
+                            return e = new p.R({
                                 applicationId: r.application.id
-                            }), void((0, p.Y5)(e), S({
+                            }), void((0, x.Y5)(e), S({
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))

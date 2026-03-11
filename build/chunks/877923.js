@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(67414),
     u = n(147036),
     _ = n(888675),
-    A = n(652215),
-    m = n(731875);
+    m = n(652215),
+    A = n(731875);
 
 function E(e) {
     let {
@@ -22,7 +22,7 @@ function E(e) {
         channel: E
     } = e, I = (0, a.bG)([o.A], () => o.A.useReducedMotion), T = l.useRef(null), {
         createMultipleConfettiAt: f
-    } = l.useContext(c.x), N = l.useCallback(e => ({
+    } = l.useContext(c.x), C = l.useCallback(e => ({
         size: {
             type: "static-random",
             minValue: e.confettiSize - 6,
@@ -49,7 +49,7 @@ function E(e) {
                 let [l] = i;
                 l.intersectionRatio < .5 || (n.disconnect(), (t = new r.J_(1e3, () => {
                     let t = e.getBoundingClientRect(),
-                        n = N({
+                        n = C({
                             confettiSize: 8
                         });
                     f(t.left + t.width / 2, t.top + t.height / 2, n, 60)
@@ -60,18 +60,18 @@ function E(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [f, T, I, N]), (0, i.jsx)(_.A, {
-        contentClassName: m.o9,
-        iconContainerClassName: m.zc,
+    }, [f, T, I, C]), (0, i.jsx)(_.A, {
+        contentClassName: A.o9,
+        iconContainerClassName: A.zc,
         iconNode: (0, i.jsx)(s.XFE, {
-            colorClass: m.Kk
+            colorClass: A.Kk
         }),
         children: (0, i.jsx)(d.A, {
             innerRef: T,
             giftIntentType: t,
             recipientUser: n,
             analyticsPage: (0, u.DJ)(E),
-            analyticsSection: A.JJy.CHANNEL
+            analyticsSection: m.JJy.CHANNEL
         })
     })
 }
