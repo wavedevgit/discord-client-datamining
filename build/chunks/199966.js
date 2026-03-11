@@ -1,14 +1,13 @@
-/** chunk id: 199966, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** chunk id: 199966 params = (module,exports,require) **/
 n.d(t, {
-    _: () => a,
-    x: () => i
-}), n(65821);
-var r = n(64700);
-let i = r.createContext(void 0);
+    _: () => l,
+    x: () => s
+});
+var i = n(64700);
+let s = i.createContext(void 0);
 
-function a() {
-    let e = r.useContext(i);
+function l() {
+    let e = i.useContext(s);
     if (null == e) throw Error("useSettingsV2Context must be used within a SettingsV2Provider");
     return e
 }
