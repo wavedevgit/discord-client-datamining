@@ -170,8 +170,8 @@ function S(e) {
         [d, f] = i.useState(!1),
         [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
-        [k, O] = i.useState(!1),
-        [R, w] = i.useState(null),
+        [k, R] = i.useState(!1),
+        [O, w] = i.useState(null),
         D = e => {
             let t = new Date(e);
             return x.default.fromTimestamp(t.getTime())
@@ -281,7 +281,7 @@ function S(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        O(!k)
+                        R(!k)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -390,11 +390,11 @@ function S(e) {
                                     })))
                                 }
                             })]
-                        }), null !== R && (0, a.jsx)("div", {
+                        }), null !== O && (0, a.jsx)("div", {
                             className: j.z3,
                             children: (0, a.jsx)(u.wx6, {
                                 type: "critical",
-                                children: R
+                                children: O
                             })
                         })]
                     }), (0, a.jsxs)(u.BJc, {

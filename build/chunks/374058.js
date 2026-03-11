@@ -91,8 +91,8 @@ function k(e) {
         })]
     })
 }
-let O = new Set(["client_performance_cpu", "client_performance_memory"]),
-    R = [{
+let R = new Set(["client_performance_cpu", "client_performance_memory"]),
+    O = [{
         id: "details",
         name: "Details",
         group: y.fu.NONE,
@@ -167,7 +167,7 @@ let O = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = O.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = R.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -270,7 +270,7 @@ function M() {
             TabBar: I,
             renderSelectedTab: k
         } = (0, y.Ay)({
-            tabs: R
+            tabs: O
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,

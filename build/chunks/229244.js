@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(508575),
     I = n(847807),
     k = n(364329),
-    O = n(545986),
-    R = n(927813),
+    R = n(545986),
+    O = n(927813),
     w = n(350246);
 let D = ["png", "gif", "webp"],
     M = [...D, "jpg", "jpeg"],
@@ -267,12 +267,12 @@ function G() {
     }
 
     function X() {
-        (0, x.tU)(t.config) && (0, O.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, x.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
                 if (null != n.target) return n.target;
-            return 10 * R.A.Seconds.MINUTE
+            return 10 * O.A.Seconds.MINUTE
         }, [t.config.taskConfigV2.tasks]),
         ee = i.useMemo(() => o.n.WATCH_VIDEO in t.config.taskConfigV2.tasks, [t.config.taskConfigV2.tasks]);
     l()(!1 !== t.preview && null != t.preview, "Preview config must have property preview: true");

@@ -37,9 +37,9 @@ function A(e) {
         play: I,
         events: {
             onMouseEnter: k,
-            onMouseLeave: O
+            onMouseLeave: R
         }
-    } = (0, d.I)(E ? "undeafen" : "deafen"), R = n ? r.TJE : N, {
+    } = (0, d.I)(E ? "undeafen" : "deafen"), O = n ? r.TJE : N, {
         name: w
     } = (0, g.x5)(f.oh.AUDIO_OUTPUT), D = (0, h.A)(t, n, s), {
         analyticsLocations: M
@@ -84,7 +84,7 @@ function A(e) {
                         "aria-label": v.intl.string(v.t.wjcRFX),
                         className: b.eT,
                         disabled: s,
-                        icon: (0, a.jsx)(R, {
+                        icon: (0, a.jsx)(O, {
                             size: "custom",
                             width: 20,
                             height: 20,
@@ -98,7 +98,7 @@ function A(e) {
                         onClick: A,
                         onContextMenu: i,
                         onMouseEnter: k,
-                        onMouseLeave: O,
+                        onMouseLeave: R,
                         plated: null != y,
                         redGlow: E,
                         role: "switch",

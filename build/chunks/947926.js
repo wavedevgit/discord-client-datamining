@@ -31,8 +31,8 @@ var a = n(627968),
     N = n(963713),
     I = n(717695),
     k = n(899592),
-    O = n(546350),
-    R = n(922532),
+    R = n(546350),
+    O = n(922532),
     w = n(20732),
     D = n(147150),
     M = n(654487);
@@ -93,7 +93,7 @@ function B(e) {
         isUnfurl: ed,
         isUnfurlTimeoutActive: ec,
         onUnfurlTimeoutComplete: eu
-    } = (0, O.w)({
+    } = (0, R.w)({
         isQuestAccepted: z,
         isQuestCompleted: q,
         isQuestBarVisible: J,
@@ -110,7 +110,7 @@ function B(e) {
         handleBlur: ef,
         handleMouseEnter: ev,
         handleMouseLeave: eb
-    } = (0, R.m)({
+    } = (0, O.m)({
         quest: t,
         isExpanded: ee,
         setIsExpanded: et,

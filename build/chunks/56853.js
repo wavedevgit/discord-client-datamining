@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(398025),
     I = n(545986),
     k = n(516226),
-    O = n(720875),
-    R = n(654487),
+    R = n(720875),
+    O = n(654487),
     w = n(419367),
     D = n(652215),
     M = n(985018),
@@ -142,11 +142,11 @@ function B(e) {
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
     }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
-        location: R.rE.QUESTS_CARD
+        location: O.rE.QUESTS_CARD
     }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
         content: _.uF.QUEST_HOME_DESKTOP,
-        ctaContent: b.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_TWO,
+        ctaContent: b.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_FOUR_OPEN_GAME_LINK,
         sourceQuestContent: w
     });
     return (0, a.jsxs)("div", {
@@ -224,7 +224,7 @@ function B(e) {
                             })
                         })
                     })]
-                }), (0, a.jsx)(O.A, {
+                }), (0, a.jsx)(R.A, {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,

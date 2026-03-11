@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(901406),
     I = n(792620),
     k = n(814793),
-    O = n(241124),
-    R = n(212614),
+    R = n(241124),
+    O = n(212614),
     w = n(79545),
     D = n(646764),
     M = n(398025),
@@ -95,7 +95,7 @@ function X(e) {
         onMouseLeave: () => {
             s && r && o(!1)
         },
-        children: [null != h && (0, a.jsx)(O.Sn, {
+        children: [null != h && (0, a.jsx)(R.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
             children: e => (0, a.jsx)("img", {
                 ref: e,
@@ -103,7 +103,7 @@ function X(e) {
                 src: h.url,
                 className: Y.Ue
             })
-        }), null != u ? (0, a.jsx)(O.Sn, {
+        }), null != u ? (0, a.jsx)(R.Sn, {
             id: "QuestBarContentExpanded_video",
             children: e => (0, a.jsx)(J, {
                 ref: e,
@@ -172,14 +172,14 @@ function ee(e) {
         gameProfileSource: g.Ob.QuestBar
     }), K = (0, w.Pd)(c), {
         primaryCtaButtonVariant: z
-    } = (0, j.Op)(), q = (0, y.do)({
+    } = (0, j.Op)(), q = j.s5.useConfig({
+        location: $.rE.QUESTS_CARD
+    }), X = q.enabled && (q.variant === j.tL.LEARN_MORE_CTA_ONLY || q.variant === j.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), ee = (0, y.do)({
         quest: c,
         content: v.uF.QUEST_BAR_V2,
-        ctaContent: S.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_ONE,
+        ctaContent: q.variant === j.tL.LEARN_MORE_CTA_ONLY ? S.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_TWO_OPEN_GAME_LINK : S.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_THREE_OPEN_GAME_LINK,
         sourceQuestContent: v.uF.QUEST_BAR_V2
-    }), X = j.s5.useConfig({
-        location: $.rE.QUESTS_CARD
-    }), ee = X.enabled && (X.variant === j.tL.LEARN_MORE_CTA_ONLY || X.variant === j.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), et = (0, E.wr)(c);
+    }), et = (0, E.wr)(c);
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
             ref: N,
@@ -208,12 +208,12 @@ function ee(e) {
                         direction: "horizontal",
                         fullWidth: !0,
                         wrap: !1,
-                        children: [ee && (0, a.jsx)(m.Button, {
+                        children: [X && (0, a.jsx)(m.Button, {
                             size: "sm",
                             variant: "secondary",
                             text: et,
-                            onClick: q
-                        }), W.enabled && K === w.UA.UNENROLLED && W.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(R.A, {
+                            onClick: ee
+                        }), W.enabled && K === w.UA.UNENROLLED && W.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(O.A, {
                             quest: c,
                             surface: w.V3.QUEST_BAR_FOOTER,
                             size: "sm",
@@ -247,7 +247,7 @@ function ee(e) {
                 backdropFilter: (0, M.Q)(b.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, M.Q)(b.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [k.isAnimated ? (0, a.jsx)(O.Sn, {
+            children: [k.isAnimated ? (0, a.jsx)(R.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(J, {
                     ref: e,
@@ -255,7 +255,7 @@ function ee(e) {
                     asset: k,
                     className: Y.LO
                 })
-            }) : (0, a.jsx)(O.Sn, {
+            }) : (0, a.jsx)(R.Sn, {
                 id: "QuestBarContentExpanded_heroStatic",
                 children: e => (0, a.jsx)("img", {
                     ref: e,

@@ -30,17 +30,17 @@ var a = n(627968),
     N = n(201805),
     I = n(212614),
     k = n(79545),
-    O = n(545986),
-    R = n(654487),
+    R = n(545986),
+    O = n(654487),
     w = n(985018),
     D = n(421193);
 let M = [{
-    value: R.fO.DESKTOP,
+    value: O.fO.DESKTOP,
     get label() {
         return w.intl.string(w.t["QXc01+"])
     }
 }, {
-    value: R.fO.CONSOLE,
+    value: O.fO.CONSOLE,
     get label() {
         return w.intl.string(w.t["8lAfuB"])
     }
@@ -51,10 +51,10 @@ function P(e) {
         value: i
     } = e;
     switch (i) {
-        case R.fO.DESKTOP:
+        case O.fO.DESKTOP:
             n = (0, a.jsx)(d.kN9, {}), t = w.intl.string(w.t["QXc01+"]);
             break;
-        case R.fO.CONSOLE:
+        case O.fO.CONSOLE:
             n = (0, a.jsx)(d._xR, {}), t = w.intl.string(w.t["8lAfuB"]);
             break;
         default:
@@ -69,12 +69,12 @@ function P(e) {
 function U(e) {
     if (0 === e.length) return null;
     switch (e[0].value) {
-        case R.fO.DESKTOP:
+        case O.fO.DESKTOP:
             return (0, a.jsxs)("span", {
                 className: D.FL,
                 children: [(0, a.jsx)(d.kN9, {}), w.intl.string(w.t.g6Dr44)]
             });
-        case R.fO.CONSOLE:
+        case O.fO.CONSOLE:
             return (0, a.jsxs)("span", {
                 className: D.FL,
                 children: [(0, a.jsx)(d._xR, {}), w.intl.string(w.t.iyNbj5)]
@@ -112,7 +112,7 @@ function B(e) {
     } = e, {
         enabled: o
     } = _.K.useConfig({
-        location: R.rE.QUEST_LEARN_MORE_CTA
+        location: O.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: c,
         handleOpenExternalLink: u
@@ -142,7 +142,7 @@ function B(e) {
             icon: d.mqY,
             text: w.intl.string(w.t.YsCuyF),
             onClick: () => {
-                (0, O.d5)({
+                (0, R.d5)({
                     quest: t,
                     questContent: n,
                     sourceQuestContent: i,
@@ -166,7 +166,7 @@ function G(e) {
     } = e, {
         enabled: s
     } = _.K.useConfig({
-        location: R.rE.QUEST_LEARN_MORE_CTA
+        location: O.rE.QUEST_LEARN_MORE_CTA
     }), {
         externalLinkCta: l,
         handleOpenExternalLink: o
@@ -227,9 +227,9 @@ function F(e) {
         isEnrolling: h.A.isEnrolling(t.id),
         isQuestEnrollmentBlocked: null != h.A.questEnrollmentBlockedUntil
     })), Y = t.userStatus?.enrolledAt != null, J = t.userStatus?.completedAt != null, X = J && t.userStatus?.claimedAt == null, Z = (0, y.if)(t), ee = !(0, y.Ic)(t), et = (0, v.In)(t), en = (0, S.IO)(t), ea = (0, S.K$)(t), ei = (0, S.Cr)(t), es = (0, v.fc)(t), [el, er, eo] = (0, v.Qo)(t, es), ed = ee && et === v.F3.ACCEPTED, ec = ed && el === x.X0.SELECT, eu = ed && !ec && er.length > 1, em = g.t.useConfig({
-        location: R.rE.QUEST_HOME_DESKTOP
+        location: O.rE.QUEST_HOME_DESKTOP
     }), eh = (0, k.Pd)(t), ex = (0, m.O)(e => e.clearErrorHints), ep = i.useCallback(e => {
-        eo(e), e === R.fO.DESKTOP && (_([]), ex(t.id))
+        eo(e), e === O.fO.DESKTOP && (_([]), ex(t.id))
     }, [eo, _, ex, t.id]), {
         text: eg,
         onClick: e_
@@ -266,20 +266,20 @@ function F(e) {
     } = (0, v.zW)(t), eA = (0, f.NA)({
         quest: t,
         shortText: !0
-    }), eC = (0, v.do)({
+    }), eC = p.s5.useConfig({
+        location: O.rE.QUESTS_CARD
+    }), ey = eC.enabled && (eC.variant === p.tL.LEARN_MORE_CTA_ONLY || eC.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eT = (0, v.do)({
         quest: t,
         content: n,
-        ctaContent: j.Cy.CONTEXT_MENU_OPEN_GAME_LINK_EXP_TREATMENT_ONE,
+        ctaContent: eC.variant === p.tL.LEARN_MORE_CTA_ONLY ? j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_TWO_OPEN_GAME_LINK : j.Cy.LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON_TREATMENT_THREE_OPEN_GAME_LINK,
         sourceQuestContent: L
-    }), ey = p.s5.useConfig({
-        location: R.rE.QUESTS_CARD
-    }), eT = ey.enabled && (ey.variant === p.tL.LEARN_MORE_CTA_ONLY || ey.variant === p.tL.COMBINE_LEARN_MORE_CTA_AND_EXPRESSIVE_BUTTON), eS = null;
-    if (eT) {
+    }), eS = null;
+    if (ey) {
         let e = (0, C.wr)(t);
         eS = (0, a.jsx)(r.$nd, {
             variant: "secondary",
             text: e,
-            onClick: eC
+            onClick: eT
         })
     }
     let eE = null;
@@ -304,7 +304,7 @@ function F(e) {
         wrap: !1,
         children: [(0, a.jsx)(r.$nd, {
             variant: "secondary",
-            icon: t.config.features.includes(R.Li.CLOUD_GAMING_ACTIVITY) ? d.hpF : d._xR,
+            icon: t.config.features.includes(O.Li.CLOUD_GAMING_ACTIVITY) ? d.hpF : d._xR,
             text: eA,
             onClick: () => {
                 ej()
@@ -366,9 +366,9 @@ function F(e) {
         select: ep,
         serialize: e => {
             switch (e) {
-                case R.fO.DESKTOP:
+                case O.fO.DESKTOP:
                     return w.intl.string(w.t["QXc01+"]);
-                case R.fO.CONSOLE:
+                case O.fO.CONSOLE:
                     return w.intl.string(w.t["8lAfuB"]);
                 default:
                     return (0, u.xb)(e)
@@ -406,7 +406,7 @@ function F(e) {
         className: D.x6,
         children: (0, a.jsx)(r.$nd, {
             variant: "primary",
-            icon: (0, O.Oz)(t),
+            icon: (0, R.Oz)(t),
             onClick: e_ ?? void 0,
             text: eg,
             fullWidth: !0
@@ -429,7 +429,7 @@ function F(e) {
             text: w.intl.string(w.t.V293qn)
         }), (0, a.jsx)(r.$nd, {
             variant: "primary",
-            onClick: () => (0, O.m6)(t, n, L),
+            onClick: () => (0, R.m6)(t, n, L),
             text: w.intl.string(w.t.vY9GgG)
         })]
     }) : (0, a.jsx)("div", {
@@ -449,7 +449,7 @@ function F(e) {
                 variant: "primary",
                 onClick: e_ ?? void 0,
                 text: eg,
-                icon: (0, O.Oz)(t),
+                icon: (0, R.Oz)(t),
                 fullWidth: !0
             })]
         })
@@ -469,9 +469,9 @@ function F(e) {
                 isSelected: e => {
                     switch (el) {
                         case x.X0.DESKTOP:
-                            return e === R.fO.DESKTOP;
+                            return e === O.fO.DESKTOP;
                         case x.X0.CONSOLE:
-                            return e === R.fO.CONSOLE;
+                            return e === O.fO.CONSOLE;
                         default:
                             return !1
                     }
@@ -483,9 +483,9 @@ function F(e) {
                 select: ep,
                 serialize: e => {
                     switch (e) {
-                        case R.fO.DESKTOP:
+                        case O.fO.DESKTOP:
                             return w.intl.string(w.t["QXc01+"]);
-                        case R.fO.CONSOLE:
+                        case O.fO.CONSOLE:
                             return w.intl.string(w.t["8lAfuB"])
                     }
                 },

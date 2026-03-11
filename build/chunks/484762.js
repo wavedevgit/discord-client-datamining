@@ -1,6 +1,6 @@
 /** chunk id: 484762 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eR
+    A: () => eO
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(127242),
     I = n(869014),
     k = n(379078),
-    O = n(704554),
-    R = n(528772),
+    R = n(704554),
+    O = n(528772),
     w = n(555528),
     D = n(157257),
     M = n(532624),
@@ -427,7 +427,7 @@ let er = i.memo(function(e) {
         let e = (0, c.cf)([T.default], () => T.default.getTrackedGames()),
             t = (0, V.getPID)(),
             n = (0, c.bG)([T.default], () => T.default.isOverlayOOPEnabledForPid(t), [t]),
-            [i, s] = (0, c.yK)([R.A], () => [R.A.enabled, R.A.keepOpen]),
+            [i, s] = (0, c.yK)([O.A], () => [O.A.enabled, O.A.keepOpen]),
             l = (0, c.bG)([P.default], () => P.default.getFocusedPID()),
             r = (0, c.bG)([P.default], () => P.default.isFocusedPidOutOfProcess());
         return (0, a.jsxs)("div", {
@@ -928,14 +928,14 @@ function ey() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, x, u, o, C]), [E, I] = i.useState(S), [k, R] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
+    }), [A, x, u, o, C]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
     } = (0, z.Ay)({
         tabs: eA
     }, []);
-    (0, O.RT)(y, S, D, eC, [A]);
+    (0, R.RT)(y, S, D, eC, [A]);
     let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
@@ -1042,7 +1042,7 @@ function ey() {
                 columns: e_,
                 data: E,
                 selectedRowKey: k ?? void 0,
-                onClickRow: e => R(e.key)
+                onClickRow: e => O(e.key)
             })
         }), null != w && (0, a.jsx)(H.A, {
             className: l()(Y.st, Y.rf),
@@ -1050,7 +1050,7 @@ function ey() {
             initialHeight: null != t ? t / 3 : 300,
             children: M({
                 breadcrumb: w,
-                onClose: () => R(null)
+                onClose: () => O(null)
             })
         })]
     })
@@ -1200,7 +1200,7 @@ let eN = e => {
         })
     });
 
-function eO() {
+function eR() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsx)("div", {
             className: l()(J.nd, Y.rf),
@@ -1209,7 +1209,7 @@ function eO() {
     })
 }
 
-function eR() {
+function eO() {
     let [e, t] = i.useState("state");
     return i.useEffect(() => (x.h.dispatch({
         type: "OVERLAY_SET_DETAILED_LOGGING",
@@ -1248,6 +1248,6 @@ function eR() {
                     children: "Experiments"
                 })
             })]
-        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eO, {})]
+        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eR, {})]
     })
 }
