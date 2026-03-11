@@ -1,8 +1,8 @@
 /** chunk id: 424798 params = (module,exports,require) **/
 s.d(t, {
-    Fr: () => N,
+    Fr: () => S,
     Kk: () => T,
-    Mu: () => S,
+    Mu: () => N,
     jO: () => w
 });
 var l = s(64700),
@@ -43,7 +43,7 @@ function w(e) {
     }
 }
 
-function S(e) {
+function N(e) {
     let t = (0, r.yK)([c.A, m.A, d.A], () => a()(m.A.getThreadsForGuild(e)).values().map(e => a().values(e)).flatten().map(e => {
         let {
             id: t
@@ -53,7 +53,7 @@ function S(e) {
     return l.useMemo(() => a()(t).sort((e, t) => g.default.compare(u.Ay.lastMessageId(e), u.Ay.lastMessageId(t))).reverse().value(), [t])
 }
 
-function N(e, t, s, n) {
+function S(e, t, s, n) {
     let u = e.isModeratorReportChannel(),
         {
             showResolvedFlags: h

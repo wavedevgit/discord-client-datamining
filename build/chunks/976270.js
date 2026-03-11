@@ -16,8 +16,8 @@ var s = n(397927),
     m = n(716804),
     x = n(718019),
     f = n(31432),
-    _ = n(915614),
-    p = n(559506),
+    p = n(915614),
+    _ = n(559506),
     h = n(946356),
     g = n(810396),
     I = n(570314),
@@ -43,14 +43,14 @@ function P(e) {
         messageId: G,
         roleId: k,
         sessionId: U,
-        initialTabSection: D,
-        initialScrollTarget: w,
-        transitionState: F,
-        openedAt: B,
+        initialTabSection: w,
+        initialScrollTarget: D,
+        transitionState: B,
+        openedAt: F,
         onClose: V,
         sourceAnalyticsLocations: z = [],
         showGuildProfile: W
-    } = e, H = P === L.ME ? void 0 : P, X = (0, u.Ay)(t.id, W ? H : void 0), Y = o.Ay.getName(H, M, t), Q = (0, d.GV)(), {
+    } = e, H = P === L.ME ? void 0 : P, Y = (0, u.Ay)(t.id, W ? H : void 0), X = o.Ay.getName(H, M, t), Q = (0, d.GV)(), {
         analyticsLocations: K
     } = (0, a.Ay)([...z, l.A.USER_PROFILE_MODAL]), $ = (0, c.pb)({
         layout: "MODAL",
@@ -64,22 +64,22 @@ function P(e) {
         user: t,
         guildId: H,
         channelId: M,
-        displayProfile: X,
+        displayProfile: Y,
         onClose: V
     });
     return (0, i.jsx)(a.f5, {
         value: K,
         children: (0, i.jsx)(c.of, {
             value: $,
-            openedAt: B,
-            fetchStartedAt: X?.fetchStartedAt,
-            fetchEndedAt: X?.fetchEndedAt,
-            isLoaded: X?.isLoaded,
+            openedAt: F,
+            fetchStartedAt: Y?.fetchStartedAt,
+            fetchEndedAt: Y?.fetchEndedAt,
+            isLoaded: Y?.isLoaded,
             children: (0, i.jsx)(m.N, {
-                value: w,
+                value: D,
                 children: (0, i.jsx)(s.EOs, {
                     "data-migration-pending": !0,
-                    transitionState: F,
+                    transitionState: B,
                     className: S.zr,
                     hideShadow: !0,
                     "aria-labelledby": Q,
@@ -89,13 +89,13 @@ function P(e) {
                             children: (0, i.jsx)(s.H, {
                                 id: Q,
                                 children: R.intl.format(R.t.KRe1Fk, {
-                                    name: Y
+                                    name: X
                                 })
                             })
                         }),
                         children: (0, i.jsxs)(h.A, {
                             user: t,
-                            displayProfile: X,
+                            displayProfile: Y,
                             themeType: O.d.MODAL,
                             children: [(0, i.jsx)(v.A, {
                                 children: (0, i.jsx)(j.A, {
@@ -104,22 +104,22 @@ function P(e) {
                                     viewProfileItem: Z
                                 })
                             }), (0, i.jsxs)("div", {
-                                children: [(0, i.jsx)(_.A, {
+                                children: [(0, i.jsx)(p.A, {
                                     user: t,
-                                    displayProfile: X,
+                                    displayProfile: Y,
                                     themeType: O.d.MODAL
                                 }), (0, i.jsxs)("div", {
                                     className: S.El,
                                     children: [(0, i.jsx)(x.A, {
                                         user: t,
-                                        displayProfile: X,
+                                        displayProfile: Y,
                                         guildId: H,
                                         channelId: M,
                                         themeType: O.d.MODAL
                                     }), (0, i.jsx)(C.A, {
                                         user: t,
                                         themeType: O.d.MODAL,
-                                        hasEntered: F === s.ip4.ENTERED,
+                                        hasEntered: B === s.ip4.ENTERED,
                                         onCloseProfile: V,
                                         disableToolbar: !0
                                     }), (0, i.jsxs)("div", {
@@ -146,7 +146,7 @@ function P(e) {
                                         })]
                                     })]
                                 })]
-                            }), (0, i.jsx)(p.A, {
+                            }), (0, i.jsx)(_.A, {
                                 userId: t.id,
                                 className: S.Fd
                             }), (0, i.jsxs)("div", {
@@ -155,21 +155,21 @@ function P(e) {
                                     className: S.Xh,
                                     user: t,
                                     guildId: H,
-                                    nickname: Y,
-                                    pronouns: X?.pronouns,
+                                    nickname: X,
+                                    pronouns: Y?.pronouns,
                                     nicknameVariant: "heading-xl/bold",
                                     tags: (0, i.jsx)(f.A, {
-                                        displayProfile: X,
+                                        displayProfile: Y,
                                         themeType: O.d.MODAL,
                                         onClose: V
                                     })
                                 }), (0, i.jsx)(y.A, {
                                     user: t,
                                     currentUser: n,
-                                    displayProfile: X,
+                                    displayProfile: Y,
                                     guildId: H,
                                     items: J,
-                                    initialSection: D ?? T.RP.BOT_INFO,
+                                    initialSection: w ?? T.RP.BOT_INFO,
                                     onClose: V
                                 })]
                             })]

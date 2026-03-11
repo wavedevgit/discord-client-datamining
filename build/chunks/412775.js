@@ -16,8 +16,8 @@ var s = n(311907),
     m = n(484509),
     x = n(389996),
     f = n(46937),
-    _ = n(361311),
-    p = n(743987),
+    p = n(361311),
+    _ = n(743987),
     h = n(900179),
     g = n(280645),
     I = n(928223),
@@ -56,12 +56,12 @@ function N(e) {
             })
         }), E.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t["Uv/eTx"]),
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(p.A, {
                 applicationIds: E
             })
         }), (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t.a6XYD9),
-            children: (0, i.jsx)(p.A, {
+            children: (0, i.jsx)(_.A, {
                 userId: t.id,
                 guildId: n?.guildId,
                 tooltipDelay: j.In

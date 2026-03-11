@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(86404),
     x = n(738759),
     f = n(518477),
-    _ = n(985018),
-    p = n(781425),
+    p = n(985018),
+    _ = n(781425),
     h = n(368519);
 
 function g(e) {
@@ -85,12 +85,12 @@ function I(e) {
     return I ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)("div", {
-            className: p.Ie,
+            className: _.Ie,
             children: [(0, i.jsx)("div", {
-                className: p.hB
+                className: _.hB
             }), (0, i.jsx)("div", {
-                className: p.BI,
-                children: _.intl.string(_.t.Br1ls3)
+                className: _.BI,
+                children: p.intl.string(p.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {

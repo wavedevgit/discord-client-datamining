@@ -19,13 +19,13 @@ function u(e) {
         displayProfile: A,
         onClose: m
     } = e, {
-        analyticsLocations: x,
-        sourceAnalyticsLocations: g
+        analyticsLocations: p,
+        sourceAnalyticsLocations: x
     } = (0, s.Ay)(), {
-        context: p,
+        context: g,
         trackUserProfileAction: h
-    } = (0, r.NJ)(), I = (0, d.Ay)(t.id, i);
-    return I?.guildId == null ? null : A?.guildId != null ? (0, l.jsx)(n.Drp, {
+    } = (0, r.NJ)(), f = (0, d.Ay)(t.id, i);
+    return f?.guildId == null ? null : A?.guildId != null ? (0, l.jsx)(n.Drp, {
         id: "view-main-profile",
         label: c.intl.string(c.t.GISTta),
         subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
@@ -35,13 +35,13 @@ function u(e) {
             m?.(), (0, o.openUserProfileModal)({
                 userId: t.id,
                 guildId: i,
-                ...p,
+                ...g,
                 showGuildProfile: !1,
-                sourceAnalyticsLocations: g
+                sourceAnalyticsLocations: x
             }), h({
                 action: "PRESS_VIEW_MAIN_PROFILE",
-                analyticsLocations: x,
-                ...p
+                analyticsLocations: p,
+                ...g
             })
         }
     }) : (0, l.jsx)(n.Drp, {
@@ -54,13 +54,13 @@ function u(e) {
             m?.(), (0, o.openUserProfileModal)({
                 userId: t.id,
                 guildId: i,
-                ...p,
+                ...g,
                 showGuildProfile: !0,
-                sourceAnalyticsLocations: g
+                sourceAnalyticsLocations: x
             }), h({
                 action: "PRESS_VIEW_SERVER_PROFILE",
-                analyticsLocations: x,
-                ...p
+                analyticsLocations: p,
+                ...g
             })
         }
     })

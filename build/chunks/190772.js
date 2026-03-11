@@ -21,8 +21,8 @@ var l = s(627968),
     v = s(427262),
     T = s(456874),
     w = s(707539),
-    S = s(838541),
-    N = s(985018),
+    N = s(838541),
+    S = s(985018),
     p = s(106259);
 
 function y(e) {
@@ -53,7 +53,7 @@ function C(e) {
         className: p.W$,
         variant: "text-sm/normal",
         color: "text-default",
-        children: [N.intl.string(N.t.Jmh6n9), "\xa0 • \xa0", (0, w.aK)(s)]
+        children: [S.intl.string(S.t.Jmh6n9), "\xa0 • \xa0", (0, w.aK)(s)]
     })
 }
 
@@ -73,7 +73,7 @@ function I(e) {
         } = (0, u.Ay)(s),
         T = (0, g.gn)(t.guild_id, d.id, v),
         {
-            isBlocked: N,
+            isBlocked: S,
             isIgnored: y
         } = (0, a.cf)([A.A], () => ({
             isBlocked: A.A.isBlockedForMessage(s),
@@ -88,17 +88,17 @@ function I(e) {
                     renderedContent: n,
                     trailingIcon: a,
                     leadingIcon: r
-                } = (0, h.o)(s, e, N, y, p.BK, {
+                } = (0, h.o)(s, e, S, y, p.BK, {
                     trailingIconClass: p.sl,
                     leadingIconClass: p.aG,
-                    iconSize: S.eJ
+                    iconSize: N.eJ
                 });
             return (0, l.jsxs)(l.Fragment, {
                 children: [r, n ?? (0, l.jsx)("span", {
                     children: t
                 }), a]
             })
-        }, [s, N, y]);
+        }, [s, S, y]);
     return (0, l.jsxs)(r.Text, {
         className: p.W$,
         variant: "text-sm/normal",
@@ -140,7 +140,7 @@ function k(e) {
                     size: "custom",
                     color: "currentColor"
                 })
-            }), N.intl.format(N.t["5Wk9+o"], {
+            }), S.intl.format(S.t["5Wk9+o"], {
                 time: (0, w.aK)(n)
             })]
         }) : (0, l.jsxs)(l.Fragment, {
@@ -148,7 +148,7 @@ function k(e) {
                 className: p.my,
                 user: c,
                 size: r._3J.SIZE_16
-            }), N.intl.format(N.t["GFDmd/"], {
+            }), S.intl.format(S.t["GFDmd/"], {
                 authorHook: (e, t) => (0, l.jsx)(r.gyj, {
                     className: p.eS,
                     colorString: u?.colorString ?? null,
@@ -158,7 +158,7 @@ function k(e) {
             }), (0, l.jsx)("span", {
                 className: p.xE,
                 children: "•"
-            }), N.intl.format(N.t["5Wk9+o"], {
+            }), S.intl.format(S.t["5Wk9+o"], {
                 time: (0, w.aK)(n)
             })]
         })

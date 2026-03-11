@@ -18,26 +18,26 @@ function m(e) {
         autoFocus: t = !1,
         className: i,
         userId: m,
-        onUpdate: x
-    } = e, g = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
-        loading: p,
+        onUpdate: p
+    } = e, x = (0, s.bG)([d.A], () => d.A.hidePersonalInformation), {
+        loading: g,
         note: h
-    } = (0, o.A)(m), I = n.useRef(null);
+    } = (0, o.A)(m), f = n.useRef(null);
     return (n.useEffect(() => {
-        if (!t || g) return;
-        let e = I.current;
+        if (!t || x) return;
+        let e = f.current;
         e?.selectionStart != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
-    }, [t, g]), g) ? null : (0, l.jsx)("div", {
+    }, [t, x]), x) ? null : (0, l.jsx)("div", {
         className: i,
         children: (0, l.jsx)(a.d4u, {
-            ref: I,
+            ref: f,
             className: A.P,
-            disabled: p,
-            placeholder: p ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
+            disabled: g,
+            placeholder: g ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
             "aria-label": u.intl.string(u.t.PbMNh2),
             onBlur: e => {
                 let t = e.currentTarget.value;
-                (h ?? "") !== t && (x?.(), r.A.updateNote(m, t))
+                (h ?? "") !== t && (p?.(), r.A.updateNote(m, t))
             },
             onKeyPress: e => {
                 13 === e.which ? e.shiftKey ? (e.currentTarget.value.match(/\n/g) ?? []).length >= 5 && e.preventDefault() : (e.preventDefault(), e.currentTarget.blur()) : e.which === c.Ks6.SPACE && e.stopPropagation()

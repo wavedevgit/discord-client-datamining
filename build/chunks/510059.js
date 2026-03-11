@@ -14,12 +14,12 @@ var n = i(503698),
     u = i(681819),
     A = i(370480),
     m = i(169869),
-    x = i(532197),
-    g = i(773669),
-    p = i(307600),
+    p = i(532197),
+    x = i(773669),
+    g = i(307600),
     h = i(652215),
-    I = i(783419),
-    f = i(985018),
+    f = i(783419),
+    I = i(985018),
     j = i(882119);
 
 function v(e) {
@@ -29,7 +29,7 @@ function v(e) {
             userId: s
         } = e,
         a = i.metadata ?? {},
-        g = (0, A.An)(a[I.pK.CREATED_AT], n),
+        x = (0, A.An)(a[f.pK.CREATED_AT], n),
         v = d.A.get((0, u.ML)(i.type));
     return (0, l.jsxs)("li", {
         className: j.FI,
@@ -38,7 +38,7 @@ function v(e) {
             children: (0, l.jsx)("div", {
                 className: j.k_,
                 children: (0, l.jsx)("img", {
-                    alt: f.intl.formatToPlainString(f.t.rtm15P, {
+                    alt: I.intl.formatToPlainString(I.t.rtm15P, {
                         name: v?.name
                     }),
                     className: j.tV,
@@ -60,12 +60,12 @@ function v(e) {
                     href: t,
                     className: j.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${f.intl.string(f.t.q5jLJB)}` : `${i.name}, ${f.intl.string(f.t.q5jLJB)}`,
+                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${I.intl.string(I.t.q5jLJB)}` : `${i.name}, ${I.intl.string(I.t.q5jLJB)}`,
                     onClick: e => {
                         (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
                             platform_type: i.type,
                             other_user_id: s
-                        }), (0, p.h)({
+                        }), (0, g.h)({
                             href: t,
                             trusted: v?.type !== h.fg2.DOMAIN
                         }, e)
@@ -80,15 +80,15 @@ function v(e) {
                                 className: j.GW,
                                 children: i.name
                             })
-                        }), (0, l.jsx)(x.A, {
+                        }), (0, l.jsx)(p.A, {
                             className: j.E4,
-                            direction: x.A.Directions.RIGHT
+                            direction: p.A.Directions.RIGHT
                         })]
                     })
-                }), null != g && (0, l.jsx)(o.Text, {
+                }), null != x && (0, l.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    children: f.intl.format(f.t["9rfonh"], {
-                        date: g
+                    children: I.intl.format(I.t["9rfonh"], {
+                        date: x
                     })
                 })]
             }), (0, l.jsx)("div", {
@@ -104,7 +104,7 @@ function N(e) {
         connections: t,
         userId: i,
         className: n
-    } = e, r = (0, a.bG)([g.default], () => g.default.locale);
+    } = e, r = (0, a.bG)([x.default], () => x.default.locale);
     return 0 === t.length ? null : (0, l.jsx)("ul", {
         className: s()(j.kL, n),
         children: t.map(e => (0, l.jsx)(v, {

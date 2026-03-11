@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(950191),
     x = n(718019),
     f = n(31432),
-    _ = n(915614),
-    p = n(389996),
+    p = n(915614),
+    _ = n(389996),
     h = n(743987),
     g = n(900179),
     I = n(946356),
@@ -42,26 +42,26 @@ function R(e) {
         transitionState: G,
         openedAt: k,
         onClose: U,
-        sourceAnalyticsLocations: D = []
-    } = e, w = n === C.ME ? void 0 : n, F = (0, m.Ay)(t.id, w), B = u.Ay.getName(w, R, t), V = (0, d.GV)(), {
+        sourceAnalyticsLocations: w = []
+    } = e, D = n === C.ME ? void 0 : n, B = (0, m.Ay)(t.id, D), F = u.Ay.getName(D, R, t), V = (0, d.GV)(), {
         analyticsLocations: z
-    } = (0, a.Ay)([...D, l.A.USER_PROFILE_MODAL]), W = (0, A.pb)({
+    } = (0, a.Ay)([...w, l.A.USER_PROFILE_MODAL]), W = (0, A.pb)({
         layout: "MODAL",
         userId: t.id,
         sourceSessionId: M,
-        guildId: w,
+        guildId: D,
         channelId: R,
         messageId: S,
         roleId: P
-    }), H = s.useRef(null), X = (0, o.M)(H);
+    }), H = s.useRef(null), Y = (0, o.M)(H);
     return (0, i.jsx)(a.f5, {
         value: z,
         children: (0, i.jsx)(A.of, {
             value: W,
             openedAt: k,
-            fetchStartedAt: F?.fetchStartedAt,
-            fetchEndedAt: F?.fetchEndedAt,
-            isLoaded: F?.isLoaded,
+            fetchStartedAt: B?.fetchStartedAt,
+            fetchEndedAt: B?.fetchEndedAt,
+            isLoaded: B?.isLoaded,
             children: (0, i.jsxs)(r.EOs, {
                 "data-migration-pending": !0,
                 transitionState: G,
@@ -74,30 +74,30 @@ function R(e) {
                         children: (0, i.jsx)(r.H, {
                             id: V,
                             children: E.intl.format(E.t.KRe1Fk, {
-                                name: B
+                                name: F
                             })
                         })
                     }),
                     children: (0, i.jsxs)(I.A, {
                         user: t,
-                        displayProfile: F,
+                        displayProfile: B,
                         themeType: y.d.MODAL,
-                        ref: F?.profileEffect != null ? H : void 0,
+                        ref: B?.profileEffect != null ? H : void 0,
                         children: [(0, i.jsx)(v.A, {
                             children: (0, i.jsx)(b.A, {
                                 user: t
                             })
                         }), (0, i.jsxs)("div", {
-                            children: [(0, i.jsx)(_.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 user: t,
-                                displayProfile: F,
+                                displayProfile: B,
                                 themeType: y.d.MODAL
                             }), (0, i.jsx)("div", {
                                 className: T.El,
                                 children: (0, i.jsx)(x.A, {
                                     user: t,
-                                    displayProfile: F,
-                                    guildId: w,
+                                    displayProfile: B,
+                                    guildId: D,
                                     channelId: R,
                                     themeType: y.d.MODAL
                                 })
@@ -107,12 +107,12 @@ function R(e) {
                             children: [(0, i.jsx)(j.A, {
                                 className: T.Xh,
                                 user: t,
-                                guildId: w,
-                                nickname: B,
-                                pronouns: F?.pronouns,
+                                guildId: D,
+                                nickname: F,
+                                pronouns: B?.pronouns,
                                 nicknameVariant: "heading-xl/bold",
                                 tags: (0, i.jsx)(f.A, {
-                                    displayProfile: F,
+                                    displayProfile: B,
                                     themeType: y.d.MODAL,
                                     onClose: U
                                 })
@@ -135,15 +135,15 @@ function R(e) {
                                 }), (0, i.jsxs)(r.IpV, {
                                     fade: !0,
                                     className: L.XG,
-                                    children: [(0, i.jsx)(p.A, {
+                                    children: [(0, i.jsx)(_.A, {
                                         userId: t.id,
-                                        userBio: F?.bio,
+                                        userBio: B?.bio,
                                         setLineClamp: !1
                                     }), (0, i.jsx)(g.A, {
                                         heading: E.intl.string(E.t["A//N4k"]),
                                         children: (0, i.jsx)(h.A, {
                                             userId: t.id,
-                                            guildId: w,
+                                            guildId: D,
                                             tooltipDelay: N.In
                                         })
                                     })]
@@ -151,9 +151,9 @@ function R(e) {
                             })]
                         })]
                     })
-                }), F?.profileEffect != null && (0, i.jsx)(c.A, {
-                    skuId: F?.profileEffect?.skuId,
-                    isHovering: X
+                }), B?.profileEffect != null && (0, i.jsx)(c.A, {
+                    skuId: B?.profileEffect?.skuId,
+                    isHovering: Y
                 })]
             })
         })

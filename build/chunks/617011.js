@@ -27,7 +27,7 @@ function w(e) {
         className: s,
         onClose: a,
         context: w
-    } = e, N = (0, i.bG)([c.A], () => c.A.can(j.xBc.READ_MESSAGE_HISTORY, t)), p = (0, h.AI)(t), y = () => {
+    } = e, S = (0, i.bG)([c.A], () => c.A.can(j.xBc.READ_MESSAGE_HISTORY, t)), p = (0, h.AI)(t), y = () => {
         a(), (0, A.Tv)(t, void 0, "Thread Browser Empty State")
     }, b = n.useCallback((e, t) => {
         a(), (0, A.JA)(e, !t, f.H9.BROWSER)
@@ -69,10 +69,10 @@ function w(e) {
                     variant: "heading-md/semibold",
                     className: T.DD,
                     children: v.intl.string(v.t.E3H5lE)
-                }), N ? (0, l.jsxs)(l.Fragment, {
+                }), S ? (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("div", {
                         className: T.yF
-                    }), (0, l.jsx)(S, {
+                    }), (0, l.jsx)(N, {
                         ...C
                     })]
                 }) : null, (0, l.jsx)("div", {
@@ -108,7 +108,7 @@ function w(e) {
     })
 }
 
-function S(e) {
+function N(e) {
     let {
         query: t,
         setQuery: s,

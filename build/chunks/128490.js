@@ -16,8 +16,8 @@ var s = n(311907),
     m = n(280645),
     x = n(928223),
     f = n(518477),
-    _ = n(985018),
-    p = n(195723);
+    p = n(985018),
+    _ = n(195723);
 
 function h(e) {
     let {
@@ -28,7 +28,7 @@ function h(e) {
     } = e, I = (0, s.bG)([d.A], () => d.A.getUserProfile(t.id)?.application), j = (0, s.bG)([l.A, a.A], () => l.A.getChannel(a.A.getChannelId()));
     return (0, i.jsxs)(r.IpV, {
         fade: !0,
-        className: p.XG,
+        className: _.XG,
         children: [n?.bio != null && n?.bio !== "" && (0, i.jsx)(c.A, {
             userBio: n.bio,
             setLineClamp: !1
@@ -42,7 +42,7 @@ function h(e) {
             userId: t.id,
             guildId: n.guildId
         }), (0, i.jsx)(A.A, {
-            heading: _.intl.string(_.t["A//N4k"]),
+            heading: p.intl.string(p.t["A//N4k"]),
             children: (0, i.jsx)(u.A, {
                 userId: t.id,
                 guildId: h,

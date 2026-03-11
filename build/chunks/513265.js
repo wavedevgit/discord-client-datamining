@@ -1,6 +1,6 @@
 /** chunk id: 513265 params = (module,exports,require) **/
 i.d(t, {
-    A: () => I
+    A: () => f
 });
 var l = i(627968),
     n = i(64700),
@@ -13,9 +13,9 @@ var l = i(627968),
     u = i(384377),
     A = i(518477),
     m = i(985018),
-    x = i(845913),
-    g = i(910200);
-let p = {
+    p = i(845913),
+    x = i(910200);
+let g = {
         [A.jM.WIDGET_ADDED]: {
             message: m.intl.string(m.t.fFP1Uy),
             icon: (0, l.jsx)(d.A9s, {
@@ -58,10 +58,10 @@ let p = {
             type: n
         } = e;
         return (0, l.jsxs)("div", {
-            className: a()(g.oR, x.oR),
+            className: a()(x.oR, p.oR),
             "data-type": n,
             children: [(0, l.jsx)("div", {
-                className: x.RC,
+                className: p.RC,
                 children: i
             }), (0, l.jsx)(d.Text, {
                 color: "text-strong",
@@ -70,13 +70,13 @@ let p = {
             })]
         })
     },
-    I = e => {
+    f = e => {
         let {
             className: t,
             onAutoHide: i
-        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, g] = n.useState(!1), [I, f] = n.useState(null);
+        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = n.useState(!1), [f, I] = n.useState(null);
         n.useEffect(() => {
-            null !== s ? (g(!0), f(p[s]), d.ORC.announce(p[s].message)) : g(!1)
+            null !== s ? (x(!0), I(g[s]), d.ORC.announce(g[s].message)) : x(!1)
         }, [s]);
         let j = (0, d.pnh)(m, {
             from: {
@@ -106,11 +106,11 @@ let p = {
                 return () => clearTimeout(e)
             }
         }, [m, i]), (0, l.jsx)(l.Fragment, {
-            children: j((e, i) => i && null !== I && (0, l.jsx)(r.animated.div, {
-                className: a()(t, x.Jt),
+            children: j((e, i) => i && null !== f && (0, l.jsx)(r.animated.div, {
+                className: a()(t, p.Jt),
                 style: e,
                 children: (0, l.jsx)(h, {
-                    ...I
+                    ...f
                 })
             }))
         })

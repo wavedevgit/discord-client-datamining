@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(950191),
     x = n(249790),
     f = n(946356),
-    _ = n(254828),
-    p = n(783123),
+    p = n(254828),
+    _ = n(783123),
     h = n(652215),
     g = n(996988),
     I = n(985018),
@@ -106,7 +106,7 @@ function b(e) {
                             })
                         }), (0, i.jsxs)(r.BJc, {
                             align: "center",
-                            children: [(0, i.jsx)(p.A, {
+                            children: [(0, i.jsx)(_.A, {
                                 size: "md",
                                 isBlocked: O,
                                 onClick: () => {
@@ -116,7 +116,7 @@ function b(e) {
                                         ...S
                                     })
                                 }
-                            }), (0, i.jsx)(_.A, {
+                            }), (0, i.jsx)(p.A, {
                                 userId: t.id,
                                 onClick: () => {
                                     E(), (0, A.Wn)({

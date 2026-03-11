@@ -14,13 +14,13 @@ var n = i(503698),
     u = i(310419),
     A = i(773669),
     m = i(427157),
-    x = i(967198),
-    g = i(183555),
-    p = i(488995),
+    p = i(967198),
+    x = i(183555),
+    g = i(488995),
     h = i(985018),
-    I = i(882119);
+    f = i(882119);
 
-function f(e) {
+function I(e) {
     let {
         applicationRoleConnection: t,
         locale: i,
@@ -29,7 +29,7 @@ function f(e) {
     } = e, a = (0, d.VW)(t, i);
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("div", {
-            className: I.k_,
+            className: f.k_,
             children: null != t.application.bot ? (0, l.jsx)(o.A, {
                 user: new m.A(t.application.bot),
                 size: r._3J.SIZE_16
@@ -38,12 +38,12 @@ function f(e) {
                 size: "sm"
             })
         }), (0, l.jsxs)("div", {
-            className: I.Hd,
+            className: f.Hd,
             children: [(0, l.jsxs)(r.DUT, {
-                className: I.OB,
+                className: f.OB,
                 onClick: () => {
                     n?.(), (0, c.transitionToGlobalDiscovery)({
-                        tab: p.GlobalDiscoveryTab.APPS,
+                        tab: g.GlobalDiscoveryTab.APPS,
                         applicationId: t.application.id,
                         newSessionState: {
                             entrypoint: {
@@ -64,13 +64,13 @@ function f(e) {
                 }) : null, (0, l.jsx)(r.Text, {
                     variant: "text-xxs/normal",
                     color: "text-default",
-                    className: I.nk,
+                    className: f.nk,
                     children: h.intl.format(h.t.zIT9YA, {
                         applicationHook: () => t.application.name
                     })
                 })]
             }), null != a && a.length > 0 ? (0, l.jsx)("div", {
-                className: I.yu,
+                className: f.yu,
                 children: a
             }) : null]
         })]
@@ -84,12 +84,12 @@ function j(e) {
         onClose: n
     } = e, {
         trackUserProfileAction: r
-    } = (0, g.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([x.A], () => x.A.getGuildId());
+    } = (0, x.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
     return 0 === t.length ? null : (0, l.jsx)("ul", {
-        className: s()(I.kL, i),
+        className: s()(f.kL, i),
         children: t.map((e, t) => (0, l.jsx)("li", {
-            className: I.FI,
-            children: (0, l.jsx)(f, {
+            className: f.FI,
+            children: (0, l.jsx)(I, {
                 applicationRoleConnection: e,
                 locale: o,
                 onApplicationClicked: () => {
