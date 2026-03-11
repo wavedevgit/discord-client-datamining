@@ -2,25 +2,25 @@
 I.d(_, {
     J6: () => e,
     Jz: () => R,
-    ky: () => O,
-    qY: () => t
+    ky: () => t,
+    qY: () => O
 });
 var A = I(873298),
     S = I(632119),
     T = I(444802),
     C = I(93857);
-let O = E => null != E && E !== A.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
-    t = (E, _) => {
+let t = E => null != E && E !== A.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
+    O = (E, _) => {
         let I = (E => {
             let {
                 goreContentNonFriendDm: _,
                 goreContentFriendDm: I
             } = C.oQ.getControlledSetting(E) ?? {};
             return {
-                goreContentNonFriendDm: O(_) ? _ : (0, T.jj)({
+                goreContentNonFriendDm: t(_) ? _ : (0, T.jj)({
                     isDm: !0
                 }),
-                goreContentFriendDm: O(I) ? I : (0, T.jj)({
+                goreContentFriendDm: t(I) ? I : (0, T.jj)({
                     isDm: !0,
                     isFriend: !0
                 }),
@@ -38,7 +38,7 @@ let O = E => null != E && E !== A.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
             setting: I,
             isFriend: A = !1
         } = E;
-        if (O(I)) return I;
+        if (t(I)) return I;
         let T = C.sM.getControlledSetting(_);
         return A ? S.Bb[T] : S.fu[T]
     },

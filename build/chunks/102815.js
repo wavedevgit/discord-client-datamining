@@ -16,10 +16,10 @@ var n = a(627968),
     f = a(531260),
     b = a(914410),
     A = a(954571),
-    h = a(872725),
-    _ = a(857586),
-    R = a(788868),
-    g = a(652215),
+    _ = a(872725),
+    h = a(857586),
+    g = a(788868),
+    R = a(652215),
     x = a(985018),
     E = a(340091);
 let C = e => {
@@ -38,8 +38,8 @@ let C = e => {
         subscriptionRequired: O,
         glowing: j,
         progressGlowing: U = !1,
-        featured: L,
-        className: M,
+        featured: M,
+        className: L,
         containerClassName: w,
         tabIndex: B = 0,
         blurTint: k
@@ -54,24 +54,24 @@ let C = e => {
         }
     });
     let Y = r.useMemo(() => (0, i.debounce)(() => {
-            A.default.track(g.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+            A.default.track(R.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
                 card_type: (0, i.snakeCase)(a)
             })
         }, 800), [a]),
         W = r.useCallback(() => {
-            null != D && (D(), A.default.track(g.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+            null != D && (D(), A.default.track(R.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
                 card_type: (0, i.snakeCase)(a),
                 function_name: (0, i.snakeCase)(D.name)
             }))
         }, [D, a]),
-        H = O && V === R.xc.FP_ONLY,
+        H = O && V === g.xc.FP_ONLY,
         F = !(0, i.isEmpty)(T),
         K = F && (0, c.q)(G),
         X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
         $ = H || !(0, i.isEmpty)(y);
     return (0, n.jsx)(o.NPJ, {
-        theme: K ? g.NJ8.DARKER : void 0,
-        children: e => (0, n.jsxs)(h.A, {
+        theme: K ? R.NJ8.DARKER : void 0,
+        children: e => (0, n.jsxs)(_.A, {
             id: t,
             tabIndex: B,
             onMouseEnter: Y,
@@ -82,8 +82,8 @@ let C = e => {
             className: l()(E.Ui, w, {
                 [E.Tn]: F
             }),
-            cardClassName: l()(E.Nr, e, M, {
-                [E.j8]: L
+            cardClassName: l()(E.Nr, e, L, {
+                [E.j8]: M
             }),
             cardStyle: {
                 backgroundImage: F ? `url(${T})` : void 0,
@@ -99,7 +99,7 @@ let C = e => {
                 children: v
             }), (0, n.jsxs)("div", {
                 className: E.qh,
-                children: [L && (0, n.jsx)("div", {
+                children: [M && (0, n.jsx)("div", {
                     className: E.gW,
                     "aria-hidden": "true",
                     children: (0, n.jsx)(N, {
@@ -167,7 +167,7 @@ let C = e => {
                     })]
                 }), $ && (0, n.jsxs)("div", {
                     className: E.yk,
-                    children: [H && (0, n.jsx)(_.A, {
+                    children: [H && (0, n.jsx)(h.A, {
                         fullWidth: !0,
                         defaultTextOverride: x.intl.string(x.t.sEAnVH)
                     }), !H && (0, n.jsx)(o.$nd, {

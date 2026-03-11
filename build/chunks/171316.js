@@ -11,18 +11,18 @@ var A = I(64700),
     S = I(311907),
     T = I(873298),
     C = I(444802),
-    O = I(662502),
-    t = I(93857),
+    t = I(662502),
+    O = I(93857),
     e = I(115063),
     R = I(899847),
     N = I(842144),
     n = I(704724),
     P = I(500470),
-    D = I(834981),
-    L = I(835002);
+    L = I(834981),
+    D = I(835002);
 let i = () => {
         let E = (0, P.x)(),
-            _ = t.p7.useControlledSetting(E?.id);
+            _ = O.p7.useControlledSetting(E?.id);
         return null == E ? null : {
             explicitContentNonFriendDm: (0, n.J6)({
                 teenId: E?.id,
@@ -38,7 +38,7 @@ let i = () => {
     },
     l = () => {
         let E = (0, P.x)(),
-            _ = t.oQ.useControlledSetting(E?.id);
+            _ = O.oQ.useControlledSetting(E?.id);
         if (null == E) return null;
         let {
             goreContentNonFriendDm: I,
@@ -57,20 +57,20 @@ let i = () => {
     },
     r = () => {
         let E = (0, P.x)(),
-            _ = t.qz.useControlledSetting(E?.id),
-            I = t.yr.useControlledSetting(E?.id);
+            _ = O.qz.useControlledSetting(E?.id),
+            I = O.yr.useControlledSetting(E?.id);
         return null != I ? I : !!_ || _
     };
 
 function V() {
     let E = (0, P.x)(),
-        _ = t.up.useControlledSetting(E?.id),
+        _ = O.up.useControlledSetting(E?.id),
         I = A.useMemo(() => (0, e.Lx)(_), [_]);
     return I.mutualGuilds && !I.all
 }
 
 function Y() {
-    return (0, D.Du)()
+    return (0, L.Du)()
 }
 
 function u(E) {
@@ -81,7 +81,7 @@ function u(E) {
             if (null != I) try {
                 await R.Ay.updateTeenConsents(I, _ ? [E] : [], _ ? [] : [E])
             } catch (E) {
-                O.A.showFailedToast(L.OB.GENERIC_ERROR)
+                t.A.showFailedToast(D.OB.GENERIC_ERROR)
             }
         }, [I, E]))
     }

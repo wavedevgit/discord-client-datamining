@@ -1,7 +1,7 @@
 /** chunk id: 235365 params = (module,exports,require) **/
 a.d(t, {
-    A: () => R,
-    L: () => _
+    A: () => g,
+    L: () => h
 });
 var n = a(627968),
     r = a(64700),
@@ -17,26 +17,26 @@ var n = a(627968),
     f = a(652215),
     b = a(49370),
     A = a(985018),
-    h = a(609195);
-let _ = "orbs",
-    R = e => {
+    _ = a(609195);
+let h = "orbs",
+    g = e => {
         let {
             className: t,
             location: a
         } = e, s = m.m.useConfig({
             location: "PremiumTenureRewardsOrbsSection"
         }).enabled, {
-            analyticsLocations: R
-        } = (0, o.Ay)(a), g = r.useRef(null), x = r.useRef(!1), {
+            analyticsLocations: g
+        } = (0, o.Ay)(a), R = r.useRef(null), x = r.useRef(!1), {
             passesGeneralUIInvariant: E,
             programReward: C
         } = (0, c.F)({
             location: "PremiumTenureRewardsOrbsSection"
         });
         return E ? (0, n.jsx)(o.f5, {
-            value: R,
+            value: g,
             children: (0, n.jsx)(i.L, {
-                innerRef: g,
+                innerRef: R,
                 onChange: e => {
                     e && !x.current && (x.current = !0, u.default.track(f.HAw.PREMIUM_TENURE_REWARDS_ORBS_SECTION_IMPRESSION, {
                         program_state: C?.program_current_state
@@ -44,21 +44,21 @@ let _ = "orbs",
                 },
                 threshold: .5,
                 children: (0, n.jsxs)("div", {
-                    ref: g,
-                    id: _,
-                    className: l()(h.uW, h.Uv, h.qr, t, {
-                        [h.J4]: s
+                    ref: R,
+                    id: h,
+                    className: l()(_.uW, _.Uv, _.qr, t, {
+                        [_.J4]: s
                     }),
                     children: [(0, n.jsx)(d.DZT, {
                         variant: s ? "display-sm" : "heading-xxl/extrabold",
-                        className: h.R_,
+                        className: _.R_,
                         style: {
                             textAlign: "start"
                         },
                         children: A.intl.string(b.default.EdGvBM)
                     }), (0, n.jsx)(d.EYj, {
                         variant: s ? "text-md/medium" : "text-lg/normal",
-                        className: l()(h.VA, h.dO),
+                        className: l()(_.VA, _.dO),
                         children: A.intl.string(b.default["2KoHRF"])
                     }), (0, n.jsx)(p.A, {})]
                 })

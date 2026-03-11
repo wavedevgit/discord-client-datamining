@@ -16,10 +16,10 @@ var n = a(627968),
     f = a(649032),
     b = a(320118),
     A = a(976860),
-    h = a(780964),
-    _ = a(840065),
-    R = a(975571),
-    g = a(872725),
+    _ = a(780964),
+    h = a(840065),
+    g = a(975571),
+    R = a(872725),
     x = a(566119),
     E = a(570627),
     C = a(94264),
@@ -31,7 +31,7 @@ var n = a(627968),
     P = a(970466),
     y = a(909340),
     D = a(455482);
-let O = R.A.getArticleURL(N.MVz.ORBS_REWARDS_FAQ);
+let O = g.A.getArticleURL(N.MVz.ORBS_REWARDS_FAQ);
 
 function j(e) {
     (0, x.o8)(e), window.open(O, "_blank")
@@ -44,15 +44,15 @@ let U = e => {
         programReward: s
     } = (0, b.F)({
         location: "PremiumTenureRewardsOrbsCard"
-    }), R = E.m.useConfig({
+    }), g = E.m.useConfig({
         location: "PremiumTenureRewardsOrbsCard"
-    }).enabled, O = (0, u.A)("(min-width: 720px)"), U = (0, m.DP)(), L = r.useMemo(() => ({
+    }).enabled, O = (0, u.A)("(min-width: 720px)"), U = (0, m.DP)(), M = r.useMemo(() => ({
         hueRotate: 25,
         glowAmount: (0, o.M)(U) ? 2 : 8,
-        blurAmount: R ? 10 : 20
-    }), [U, R]);
+        blurAmount: g ? 10 : 20
+    }), [U, g]);
     if (!a || null == s) return null;
-    let M = function(e, t) {
+    let L = function(e, t) {
         let a = e.program_current_state,
             r = null != e.next_reward_date && "" !== e.next_reward_date ? (0, i.default)(new Date(e.next_reward_date), new Date) : null,
             s = e?.total_rewarded_from_program;
@@ -79,7 +79,7 @@ let U = e => {
                         text: T.intl.string(S.default.KVCfnE),
                         variant: t ? "overlay-primary" : "secondary",
                         onClick: () => {
-                            (0, x.CC)(a), (0, _.openUserSettings)(h.X.BILLING_PANEL, {
+                            (0, x.CC)(a), (0, h.openUserSettings)(_.X.BILLING_PANEL, {
                                 section: N.nc_.BILLING
                             })
                         }
@@ -97,7 +97,7 @@ let U = e => {
                                 text: T.intl.string(S.default.KVCfnE),
                                 variant: "critical-secondary",
                                 onClick: () => {
-                                    (0, x.ue)(a), (0, _.openUserSettings)(h.X.BILLING_PANEL, {
+                                    (0, x.ue)(a), (0, h.openUserSettings)(_.X.BILLING_PANEL, {
                                         section: N.nc_.BILLING
                                     })
                                 }
@@ -126,7 +126,7 @@ let U = e => {
                         variant: t ? "overlay-primary" : "secondary",
                         icon: d.tvc,
                         onClick: () => {
-                            (0, x.Jv)(a), (0, _.openUserSettings)(h.X.SUBSCRIPTIONS_PANEL, {
+                            (0, x.Jv)(a), (0, h.openUserSettings)(_.X.SUBSCRIPTIONS_PANEL, {
                                 section: N.nc_.SUBSCRIPTIONS
                             })
                         }
@@ -138,20 +138,20 @@ let U = e => {
                 return null
         }
     }(s, O);
-    if (null == M) return null;
+    if (null == L) return null;
     let {
         displayTotalLifetimeRewards: w,
         displayProgressBar: B,
         actionButton: k,
         headerText: G,
         subheaderText: V
-    } = M;
+    } = L;
     return (0, n.jsx)("div", {
         className: l()(P.Hc, t),
-        children: (0, n.jsxs)(g.A, {
+        children: (0, n.jsxs)(R.A, {
             cardType: c.sl2.CUSTOM,
             cardClassName: P.Nr,
-            ...L,
+            ...M,
             children: [(0, n.jsx)(p.A, {
                 className: P.Ki,
                 src: y.A

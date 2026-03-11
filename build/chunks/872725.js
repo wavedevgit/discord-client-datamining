@@ -34,10 +34,10 @@ let p = {
             tabIndex: s,
             className: b,
             cardClassName: A,
-            cardStyle: h = f,
-            cardType: _,
-            artboard: R = "BaseGlowRemapped",
-            fit: g = "layout",
+            cardStyle: _ = f,
+            cardType: h,
+            artboard: g = "BaseGlowRemapped",
+            fit: R = "layout",
             glowAmount: x = 8,
             blurAmount: E = 30,
             hueRotate: C = 0,
@@ -61,17 +61,17 @@ let p = {
             onMouseEnter: v,
             children: [T !== c.BW.Loading && (0, n.jsx)(o.w, {
                 buffer: P,
-                artboard: R,
+                artboard: g,
                 artboardProperties: p,
                 eventTargetRef: I,
                 className: m.Q,
                 ref: S,
-                fit: g,
+                fit: R,
                 withReducedMotion: D ? "halt" : "play"
             }), (0, n.jsx)(u.ZpM, {
-                type: _ ?? u.sl2.CUSTOM,
+                type: h ?? u.sl2.CUSTOM,
                 className: A,
-                style: h,
+                style: _,
                 children: t
             })]
         })

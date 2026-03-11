@@ -6,15 +6,15 @@ var A = I(627968),
     S = I(64700),
     T = I(421380),
     C = I(935649),
-    O = I(847599),
-    t = I(171316),
+    t = I(847599),
+    O = I(171316),
     e = I(71393),
     R = I(954571),
     N = I(975571),
     n = I(115063),
     P = I(152076),
-    D = I(762183),
-    L = I(253932),
+    L = I(762183),
+    D = I(253932),
     i = I(112469),
     l = I(871930),
     r = I(578746),
@@ -31,9 +31,9 @@ function o(E) {
     let {
         ingress: _,
         guildId: I
-    } = E, o = (0, i.q9)(), U = (0, D.K)(), M = L.$s.useSetting().includes(I), c = (0, t.uM)(), g = L.YX.useSetting(), B = L.Zr.useSetting().includes(I), F = S.useCallback(E => {
+    } = E, o = (0, i.q9)(), U = (0, L.K)(), M = D.$s.useSetting().includes(I), c = (0, O.uM)(), g = D.YX.useSetting(), B = D.Zr.useSetting().includes(I), F = S.useCallback(E => {
         let A = (0, n.xo)();
-        E ? A.delete(I) : A.add(I), L.Zr.updateSetting(Array.from(A)), R.default.track(G.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+        E ? A.delete(I) : A.add(I), D.Zr.updateSetting(Array.from(A)), R.default.track(G.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: Y.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
             ingress: _,
             guild_id: I
@@ -50,7 +50,7 @@ function o(E) {
     function f(E, _) {
         var I;
         !E && (0, P.w)() ? C.A.showAgeVerificationGetStartedModal({
-            entryPoint: O.q1.MESSAGE_REQUESTS_SETTINGS
+            entryPoint: t.q1.MESSAGE_REQUESTS_SETTINGS
         }) : _ ? F(E) : (I = !E, (0, V.O)({
             header: d.intl.string(d.t.yAfu1p),
             body: d.intl.string(d.t.Ry2z74),
@@ -58,10 +58,10 @@ function o(E) {
             cancelText: d.intl.string(d.t.p89ACt),
             confirmButtonColor: T.$n.Colors.BRAND,
             onConfirm: () => {
-                L.YX.updateSetting(I), H(I, !1)
+                D.YX.updateSetting(I), H(I, !1)
             },
             onCancel: () => {
-                L.YX.updateSetting(I), L.Zr.updateSetting(I ? e.A.getGuildIds() : []), H(I, !0)
+                D.YX.updateSetting(I), D.Zr.updateSetting(I ? e.A.getGuildIds() : []), H(I, !0)
             }
         }))
     }

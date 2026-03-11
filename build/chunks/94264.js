@@ -35,7 +35,7 @@ let p = {
         let f = (0, l.default)(new Date(r.next_reward_date), new Date),
             b = r.program_current_state === c.L.PREMIUM_CHURNING,
             A = b ? p.churning.start : p.active.start,
-            h = b ? p.churning.end : p.active.end;
+            _ = b ? p.churning.end : p.active.end;
         return (0, n.jsxs)("div", {
             className: s()(m.k, t),
             children: [(0, n.jsx)(o.Ay, {
@@ -45,7 +45,7 @@ let p = {
                 override: {
                     default: {
                         gradientStart: A,
-                        gradientEnd: h
+                        gradientEnd: _
                     }
                 }
             }), b ? (0, n.jsx)(d.tvc, {

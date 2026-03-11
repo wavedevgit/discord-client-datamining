@@ -8,8 +8,8 @@ I(64700);
 var S = I(503698),
     T = I.n(S),
     C = I(397927),
-    O = I(195043),
-    t = I(725010),
+    t = I(195043),
+    O = I(725010),
     e = I(446541),
     R = I(480357),
     N = I(606360);
@@ -19,7 +19,7 @@ function n(E) {
         header: _,
         description: I,
         relatedId: S,
-        disabled: O
+        disabled: t
     } = E;
     return (0, A.jsxs)("div", {
         className: N.wx,
@@ -29,7 +29,7 @@ function n(E) {
             children: (0, A.jsx)("label", {
                 htmlFor: S,
                 className: T()(N.DD, {
-                    [N.r9]: O
+                    [N.r9]: t
                 }),
                 children: _
             })
@@ -37,7 +37,7 @@ function n(E) {
             variant: "text-sm/normal",
             color: "text-default",
             className: T()(N.h_, {
-                [N.r9]: O
+                [N.r9]: t
             }),
             children: I
         })]
@@ -55,13 +55,13 @@ function P(E) {
     })
 }
 
-function D(E) {
+function L(E) {
     let {
         setting: _,
         className: I,
         children: S
     } = E;
-    return (0, A.jsx)(O.x, {
+    return (0, A.jsx)(t.x, {
         setting: _,
         children: (0, A.jsx)("div", {
             className: T()(N.kL, I),
@@ -70,15 +70,15 @@ function D(E) {
     })
 }
 
-function L(E) {
+function D(E) {
     let {
         setting: _,
         className: I,
         children: S,
         scrollPosition: C,
         scrollHighlightDelay: n
-    } = E, P = (0, t.s)(C);
-    return (0, A.jsx)(O.x, {
+    } = E, P = (0, O.s)(C);
+    return (0, A.jsx)(t.x, {
         setting: _,
         children: (0, A.jsxs)("div", {
             className: T()(N.kL, I, {
@@ -94,9 +94,9 @@ function L(E) {
 }
 
 function i(E) {
-    return null != E.scrollPosition ? (0, A.jsx)(L, {
+    return null != E.scrollPosition ? (0, A.jsx)(D, {
         ...E
-    }) : null != E.setting ? (0, A.jsx)(D, {
+    }) : null != E.setting ? (0, A.jsx)(L, {
         ...E
     }) : (0, A.jsx)(P, {
         ...E

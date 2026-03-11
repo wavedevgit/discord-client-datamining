@@ -1,5 +1,5 @@
 /** chunk id: 547166 params = (module,exports,require) **/
-n.d(e, {
+n.d(t, {
     A: () => o
 });
 let o = "https://cdn.discordapp.com/assets/content/09152e47812b0b36abe406a49de1cc71ebae44cd025b7f7ce471ecf1bd152285.png"

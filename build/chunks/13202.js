@@ -1,5 +1,5 @@
 /** chunk id: 13202 params = (module,exports,require) **/
 t.d(e, {
-    I: () => r
+    I: () => o
 });
-var n, r = ((n = {}).MOBILE = "mobile", n.DESKTOP = "desktop", n.WEB = "web", n.DEVICE_CODE = "device_code", n)
+var a, o = ((a = {}).MOBILE = "mobile", a.DESKTOP = "desktop", a.WEB = "web", a.DEVICE_CODE = "device_code", a)

@@ -4,7 +4,7 @@ n.d(t, {
 });
 var i = n(419954),
     s = n(780964),
-    l = n(75698),
+    l = n(807396),
     a = n(985018);
 let r = (0, i.E2)(s.X.CONNECTIONS_ADD_CONNECTIONS_SETTING, {
     Component: l.u,

@@ -25,15 +25,15 @@ let f = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             hideIcon: m,
             subscriptionTier: b,
             premiumModalAnalyticsLocation: A,
-            giftMessage: h,
-            onClick: _
-        } = e, R = (0, o.Ay)(), g = f(b);
+            giftMessage: _,
+            onClick: h
+        } = e, g = (0, o.Ay)(), R = f(b);
         return (0, n.jsx)(c.A, {
             isGift: !0,
             subscriptionTier: b,
             premiumModalAnalyticsLocation: A,
-            giftMessage: h,
-            onClick: _,
+            giftMessage: _,
+            onClick: h,
             children: e => {
                 let {
                     onClick: o
@@ -41,7 +41,7 @@ let f = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
                 return (0, n.jsxs)(i.$n, {
                     "data-migration-pending": !0,
                     innerClassName: p.Nq,
-                    color: r ?? ((0, l.Mw)(R) ? i.XD.WHITE : i.XD.BRAND),
+                    color: r ?? ((0, l.Mw)(g) ? i.XD.WHITE : i.XD.BRAND),
                     look: u ?? i.pR.OUTLINED,
                     className: s()(t, p.xP),
                     onClick: o,
@@ -51,7 +51,7 @@ let f = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
                         className: p.ez
                     }), (0, n.jsx)("span", {
                         className: s()(p._d, a?.textClassName),
-                        children: a?.textOverride ?? g
+                        children: a?.textOverride ?? R
                     })]
                 })
             }
