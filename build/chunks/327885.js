@@ -1,6 +1,6 @@
 /** chunk id: 327885 params = (module,exports,require) **/
 n.d(t, {
-    y: () => _
+    y: () => f
 });
 var a = n(64700),
     i = n(559474);
@@ -73,7 +73,10 @@ let s = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
         let i = m[e];
         if (null != i)
             for (let e of t) e.name.endsWith(".txt") || x(i, e, n, a)
-    }, _ = () => {
+    }, _ = e => {
+        let t = i.aL[e];
+        return `${e} (${t.map(e=>`.${e}`).join(", ")})`
+    }, f = () => {
         let [e, t] = a.useState(!1), [n, r] = a.useState({}), [o, d] = a.useState({}), c = a.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [];
             d(n => {
@@ -92,7 +95,7 @@ let s = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                     [e]: [...a, ...t]
                 }
             })
-        }, []), _ = a.useCallback(() => {
+        }, []), f = a.useCallback(() => {
             t(!1), d({}), r({})
         }, []);
         return {
@@ -123,10 +126,10 @@ let s = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                             names: t.collectionFiles.map(e => e.name),
                             addError: n
                         });
-                        let l = new Set(t.collectionFiles.map(e => e.name)),
-                            r = Array.from(s).filter(e => !l.has(e));
+                        let l = new Set(t.collectionFiles.map(e => (0, i.pd)(e)).filter(e => null != e)),
+                            r = Array.from(s).filter(e => !l.has(e)).map(_);
                         r.length > 0 && n("Missing required files", r);
-                        let o = Object.values(i.RN).filter(e => !s.has(e)).filter(e => !l.has(e));
+                        let o = Object.values(i.RN).filter(e => !s.has(e)).filter(e => !l.has(e)).map(_);
                         o.length > 0 && a("Missing optional assets", o)
                     })({
                         files: n,
@@ -188,6 +191,6 @@ let s = new Set([i.RN.HERO_BANNER_STATIC, i.RN.HERO_LOGO, i.RN.PDP_BACKGROUND, i
                     t(!0)
                 }
             }, [c, u]),
-            reset: _
+            reset: f
         }
     }
