@@ -5,11 +5,11 @@ I.d(_, {
     ky: () => O,
     qY: () => t
 });
-var S = I(873298),
-    A = I(632119),
+var A = I(873298),
+    S = I(632119),
     T = I(444802),
     C = I(93857);
-let O = E => null != E && E !== S.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
+let O = E => null != E && E !== A.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
     t = (E, _) => {
         let I = (E => {
             let {
@@ -24,7 +24,7 @@ let O = E => null != E && E !== S.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
                     isDm: !0,
                     isFriend: !0
                 }),
-                goreContentGuilds: S.TO.BLUR
+                goreContentGuilds: A.TO.BLUR
             }
         })(E);
         C.oQ.updateControlledSetting(E, {
@@ -36,14 +36,14 @@ let O = E => null != E && E !== S.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
         let {
             teenId: _,
             setting: I,
-            isFriend: S = !1
+            isFriend: A = !1
         } = E;
         if (O(I)) return I;
         let T = C.sM.getControlledSetting(_);
-        return S ? A.Bb[T] : A.fu[T]
+        return A ? S.Bb[T] : S.fu[T]
     },
     R = (E, _) => {
-        let I, A = (I = C.p7.getControlledSetting(E), {
+        let I, S = (I = C.p7.getControlledSetting(E), {
             explicitContentNonFriendDm: e({
                 teenId: E,
                 setting: I?.explicitContentNonFriendDm
@@ -53,10 +53,10 @@ let O = E => null != E && E !== S.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
                 setting: I?.explicitContentFriendDm,
                 isFriend: !0
             }),
-            explicitContentGuilds: S.TO.BLUR
+            explicitContentGuilds: A.TO.BLUR
         });
         C.p7.updateControlledSetting(E, {
-            ...A,
+            ...S,
             ..._
         })
     }

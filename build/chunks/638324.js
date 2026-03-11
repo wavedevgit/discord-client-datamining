@@ -2,8 +2,8 @@
 I.d(_, {
     A: () => U
 });
-var S = I(627968),
-    A = I(64700),
+var A = I(627968),
+    S = I(64700),
     T = I(421380),
     C = I(935649),
     O = I(847599),
@@ -31,9 +31,9 @@ function o(E) {
     let {
         ingress: _,
         guildId: I
-    } = E, o = (0, i.q9)(), U = (0, D.K)(), M = L.$s.useSetting().includes(I), c = (0, t.uM)(), g = L.YX.useSetting(), B = L.Zr.useSetting().includes(I), F = A.useCallback(E => {
-        let S = (0, n.xo)();
-        E ? S.delete(I) : S.add(I), L.Zr.updateSetting(Array.from(S)), R.default.track(G.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    } = E, o = (0, i.q9)(), U = (0, D.K)(), M = L.$s.useSetting().includes(I), c = (0, t.uM)(), g = L.YX.useSetting(), B = L.Zr.useSetting().includes(I), F = S.useCallback(E => {
+        let A = (0, n.xo)();
+        E ? A.delete(I) : A.add(I), L.Zr.updateSetting(Array.from(A)), R.default.track(G.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: Y.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
             ingress: _,
             guild_id: I
@@ -65,10 +65,10 @@ function o(E) {
             }
         }))
     }
-    return (0, S.jsx)(l.h, {
+    return (0, A.jsx)(l.h, {
         setting: s.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
         scrollPosition: u.d1.MESSAGE_REQUESTS_V2,
-        children: "0" === I ? (0, S.jsx)(r.Ay, {
+        children: "0" === I ? (0, A.jsx)(r.Ay, {
             title: d.intl.string(d.t["3o2ojh"]),
             value: !U && !g,
             onChange: E => f(E, !1),
@@ -77,7 +77,7 @@ function o(E) {
             note: d.intl.format(d.t.wkm9a3, {
                 helpdeskArticle: N.A.getArticleURL(G.MVz.MESSAGE_REQUESTS)
             })
-        }) : (0, S.jsx)(r.Ay, {
+        }) : (0, A.jsx)(r.Ay, {
             title: d.intl.string(d.t["3o2ojh"]),
             value: !M && !B,
             onChange: E => f(E, !0),
@@ -95,9 +95,9 @@ function U(E) {
     let {
         ingress: _ = u.bf.USER_SETTINGS_PRIVACY_SAFETY,
         guildId: I
-    } = E, A = (0, i.Tx)();
-    return (0, S.jsx)(o, {
+    } = E, S = (0, i.Tx)();
+    return (0, A.jsx)(o, {
         ingress: _,
-        guildId: I ?? A
+        guildId: I ?? S
     })
 }

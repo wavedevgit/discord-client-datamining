@@ -7,8 +7,8 @@ I.d(_, {
     uM: () => Y,
     xs: () => i
 });
-var S = I(64700),
-    A = I(311907),
+var A = I(64700),
+    S = I(311907),
     T = I(873298),
     C = I(444802),
     O = I(662502),
@@ -42,13 +42,13 @@ let i = () => {
         if (null == E) return null;
         let {
             goreContentNonFriendDm: I,
-            goreContentFriendDm: S
+            goreContentFriendDm: A
         } = _ ?? {};
         return {
             goreContentNonFriendDm: (0, n.ky)(I) ? I : (0, C.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, n.ky)(S) ? S : (0, C.jj)({
+            goreContentFriendDm: (0, n.ky)(A) ? A : (0, C.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
@@ -65,7 +65,7 @@ let i = () => {
 function V() {
     let E = (0, P.x)(),
         _ = t.up.useControlledSetting(E?.id),
-        I = S.useMemo(() => (0, e.Lx)(_), [_]);
+        I = A.useMemo(() => (0, e.Lx)(_), [_]);
     return I.mutualGuilds && !I.all
 }
 
@@ -76,8 +76,8 @@ function Y() {
 function u(E) {
     let _, I;
     return {
-        hasConsented: (_ = (0, P.k)(), (0, A.bG)([N.A], () => N.A.hasConsented(_, E))),
-        updateConsent: (I = (0, P.k)(), S.useCallback(async _ => {
+        hasConsented: (_ = (0, P.k)(), (0, S.bG)([N.A], () => N.A.hasConsented(_, E))),
+        updateConsent: (I = (0, P.k)(), A.useCallback(async _ => {
             if (null != I) try {
                 await R.Ay.updateTeenConsents(I, _ ? [E] : [], _ ? [] : [E])
             } catch (E) {

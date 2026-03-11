@@ -2,8 +2,8 @@
 I.d(_, {
     A: () => L
 });
-var S = I(627968),
-    A = I(64700),
+var A = I(627968),
+    S = I(64700),
     T = I(503698),
     C = I.n(T),
     O = I(490249),
@@ -42,16 +42,16 @@ function D(E) {
         targetBorderColor: l,
         targetColor: L,
         animationDelay: R
-    }, u = A.useRef(Y);
-    return A.useEffect(() => {
+    }, u = S.useRef(Y);
+    return S.useEffect(() => {
         u.current = Y
-    }), A.useEffect(() => {
+    }), S.useEffect(() => {
         let {
             startColor: E,
             handleRest: _,
             endColor: I,
-            targetBorderColor: S,
-            targetColor: A,
+            targetBorderColor: A,
+            targetColor: S,
             animationDelay: T
         } = u.current, {
             useReducedMotion: C
@@ -71,8 +71,8 @@ function D(E) {
             delay: T,
             immediate: C,
             to: [{
-                backgroundColor: A,
-                borderColor: S
+                backgroundColor: S,
+                borderColor: A
             }],
             config: {
                 duration: O,
@@ -91,7 +91,7 @@ function D(E) {
             },
             onRest: _
         })
-    }, [V]), (0, S.jsx)(O.animated.div, {
+    }, [V]), (0, A.jsx)(O.animated.div, {
         style: r,
         className: C()(P.h, I),
         children: _
@@ -103,10 +103,10 @@ function L(E) {
         children: _,
         scrollPosition: I,
         animationDelay: T
-    } = E, C = (0, R.bG)([n.A], () => n.A.getScrollPosition() === I), [O, t] = A.useState(!1);
-    return (A.useEffect(() => {
+    } = E, C = (0, R.bG)([n.A], () => n.A.getScrollPosition() === I), [O, t] = S.useState(!1);
+    return (S.useEffect(() => {
         C && t(!0)
-    }, [C]), O) ? (0, S.jsx)(D, {
+    }, [C]), O) ? (0, A.jsx)(D, {
         animationDelay: T,
         onFlashEnd: () => t(!1),
         children: _

@@ -64,10 +64,8 @@ function C(e) {
                     })
                 }), (0, i.jsx)(d.D, {
                     title: I.intl.string(E.default.hx5AFp),
-                    body: (0, i.jsx)("span", {
-                        children: I.intl.format(E.default.otQEii, {
-                            orbsCount: T
-                        })
+                    body: I.intl.formatToPlainString(E.default.otQEii, {
+                        orbsCount: T
                     }),
                     badge: {
                         type: "beta",
@@ -77,7 +75,7 @@ function C(e) {
                 }), (0, i.jsx)(a.Z, {
                     actions: [{
                         text: I.intl.string(I.t.pj0XBN),
-                        variant: "expressive",
+                        variant: "primary",
                         icon: c.tvc,
                         onClick: S
                     }]

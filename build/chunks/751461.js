@@ -2,8 +2,8 @@
 I.d(_, {
     A: () => d
 });
-var S = I(627968),
-    A = I(64700),
+var A = I(627968),
+    S = I(64700),
     T = I(421380),
     C = I(171316),
     O = I(71393),
@@ -28,9 +28,9 @@ function G(E) {
     let {
         ingress: _,
         guildId: I
-    } = E, r = (0, P.q9)(), G = N.$s.useSetting().includes(I), d = (0, R.K)(), a = (0, n.e)(), o = (0, C.uM)(), U = A.useCallback(E => {
-        let S = (0, e.Tb)();
-        E ? S.delete(I) : S.add(I), N.$s.updateSetting(Array.from(S)), t.default.track(Y.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    } = E, r = (0, P.q9)(), G = N.$s.useSetting().includes(I), d = (0, R.K)(), a = (0, n.e)(), o = (0, C.uM)(), U = S.useCallback(E => {
+        let A = (0, e.Tb)();
+        E ? A.delete(I) : A.add(I), N.$s.updateSetting(Array.from(A)), t.default.track(Y.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: l.m.DIRECT_MESSAGES_TOGGLE,
             ingress: _,
             guild_id: I
@@ -44,9 +44,9 @@ function G(E) {
         })
     }
     let c = a ? u.intl.string(u.t.PMsfcH) : u.intl.string(u.t.RAQUSN);
-    return (0, S.jsx)(D.h, {
+    return (0, A.jsx)(D.h, {
         setting: V.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
-        children: "0" === I ? (0, S.jsx)(L.Ay, {
+        children: "0" === I ? (0, A.jsx)(L.Ay, {
             title: c,
             note: a ? u.intl.string(u.t.XXGmuB) : u.intl.string(u.t.wbYDfT),
             value: !d,
@@ -68,7 +68,7 @@ function G(E) {
             },
             disabled: o,
             tooltipText: o ? u.intl.string(s.default["6Af/cw"]) : void 0
-        }) : (0, S.jsx)(L.Ay, {
+        }) : (0, A.jsx)(L.Ay, {
             title: c,
             note: r ? u.intl.string(u.t.V0ka0Q) : a ? u.intl.string(u.t.F9WY3f) : u.intl.string(u.t.G7c3Xo),
             value: !G,
@@ -81,9 +81,9 @@ function d(E) {
     let {
         ingress: _ = r.bf.USER_SETTINGS_PRIVACY_SAFETY,
         guildId: I
-    } = E, A = (0, P.Tx)();
-    return (0, S.jsx)(G, {
+    } = E, S = (0, P.Tx)();
+    return (0, A.jsx)(G, {
         ingress: _,
-        guildId: I ?? A
+        guildId: I ?? S
     })
 }

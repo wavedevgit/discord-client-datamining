@@ -3,8 +3,8 @@ I.d(_, {
     O: () => C,
     i: () => O
 });
-var S = I(627968),
-    A = I(397927),
+var A = I(627968),
+    S = I(397927),
     T = I(985018);
 
 function C(E) {
@@ -12,14 +12,14 @@ function C(E) {
         body: _,
         ...T
     } = E;
-    (0, A.mMO)(async () => {
+    (0, S.mMO)(async () => {
         let {
             VoidConfirmModal: E
         } = await Promise.resolve().then(I.bind(I, 397927));
-        return I => (0, S.jsx)(E, {
+        return I => (0, A.jsx)(E, {
             ...I,
             ...T,
-            children: (0, S.jsx)(A.Text, {
+            children: (0, A.jsx)(S.Text, {
                 variant: "text-md/normal",
                 children: _
             })
