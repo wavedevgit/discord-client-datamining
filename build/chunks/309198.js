@@ -51,9 +51,9 @@ function m(e) {
             }))
         }, []),
         f = s.useCallback(e => null == e ? "" : `${"*".repeat(e.length-4)}${e.slice(-4)}`, []),
-        b = null != m.phone,
-        N = m.hasFlag(u.nhx.MFA_SMS);
-    if (b || N) {
+        N = null != m.phone,
+        b = m.hasFlag(u.nhx.MFA_SMS);
+    if (N || b) {
         let e = p ? m.phone : f(m.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
@@ -66,7 +66,7 @@ function m(e) {
             })]
         })
     }
-    if (N) t = (0, i.jsx)(l.Button, {
+    if (b) t = (0, i.jsx)(l.Button, {
         variant: "critical-secondary",
         size: "sm",
         text: g.intl.string(g.t.KLWnit),
@@ -84,7 +84,7 @@ function m(e) {
                 onClick: C,
                 loading: h,
                 disabled: null != e
-            }), b ? (0, i.jsx)(l.Button, {
+            }), N ? (0, i.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: g.intl.string(g.t.Ulqq6K),

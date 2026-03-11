@@ -1,6 +1,6 @@
 /** chunk id: 320908 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => N
+    Ay: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -68,7 +68,7 @@ let I = e => {
         })]
     });
 
-function b(e) {
+function N(e) {
     let {
         variant: t = "text-lg/normal",
         withBottomMargin: n = !0,
@@ -86,7 +86,7 @@ function b(e) {
         })
     })
 }
-let N = s.forwardRef((e, t) => {
+let b = s.forwardRef((e, t) => {
     let {
         className: n,
         buttonClassName: s,
@@ -94,29 +94,29 @@ let N = s.forwardRef((e, t) => {
         isDarkMode: _
     } = e, {
         analyticsLocations: x
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), T = (0, h.QQ)(), N = (0, m.ar)(), v = (0, A.cg)(), O = (0, r.bG)([g.A], () => g.A.affinities).length > 0, j = S.intl.string(S.t.YCZldK);
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), T = (0, h.QQ)(), b = (0, m.ar)(), v = (0, A.cg)(), O = (0, r.bG)([g.A], () => g.A.affinities).length > 0, j = S.intl.string(S.t.YCZldK);
     return (0, i.jsx)(u.f5, {
         value: x,
         children: (0, i.jsxs)("div", {
             ref: t,
             className: a()(C.kL, n, {
-                [C.V1]: !N,
-                [C.Q4]: !N && O
+                [C.V1]: !b,
+                [C.Q4]: !b && O
             }),
             "data-testid": "v2-marketing-page-hero-header",
             children: [(0, i.jsxs)("div", {
-                className: N ? C.I6 : C.G1,
+                className: b ? C.I6 : C.G1,
                 children: [(0, i.jsx)(d.Heading, {
-                    variant: N ? "display-lg" : "display-md",
+                    variant: b ? "display-lg" : "display-md",
                     color: "always-white",
                     children: j
                 }), O ? (0, i.jsx)("div", {
                     className: C.DF,
                     children: (0, i.jsx)(E.A, {
                         textColor: "always-white",
-                        smallerText: !N
+                        smallerText: !b
                     })
-                }) : (0, i.jsx)(b, {}), v || T ? (0, i.jsx)("div", {
+                }) : (0, i.jsx)(N, {}), v || T ? (0, i.jsx)("div", {
                     className: C.UD,
                     children: (0, i.jsx)(p.A, {
                         className: a()(C.x6, s),
@@ -124,14 +124,14 @@ let N = s.forwardRef((e, t) => {
                     })
                 }) : (0, i.jsx)(I, {
                     subscriptionTier: l,
-                    inOfferExperience: N,
+                    inOfferExperience: b,
                     buttonClassName: s,
                     isDarkMode: _
-                }), O && (0, i.jsx)(b, {
+                }), O && (0, i.jsx)(N, {
                     variant: "text-md/normal",
                     withBottomMargin: !1
                 })]
-            }), !N && (0, i.jsx)(f, {})]
+            }), !b && (0, i.jsx)(f, {})]
         })
     })
 })

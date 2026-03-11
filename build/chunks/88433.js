@@ -1,5 +1,5 @@
 /** chunk id: 88433 params = (module,exports,require) **/
-n.d(t, {
-    A: () => i
+a.d(t, {
+    A: () => n
 });
-let i = "https://cdn.discordapp.com/assets/content/cba831409f3c95ec1055910ff5f7c621a4064e4ded636d190ff4d4c084cd30d2.webm"
+let n = "https://cdn.discordapp.com/assets/content/cba831409f3c95ec1055910ff5f7c621a4064e4ded636d190ff4d4c084cd30d2.webm"

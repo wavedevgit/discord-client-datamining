@@ -1,50 +1,51 @@
 /** chunk id: 890908 params = (module,exports,require) **/
 l.r(t), l.d(t, {
-    RevenuePlaygroundCollectionId: () => f,
-    nitroCollection: () => j,
-    paymentsCollection: () => E,
-    playgroundConfig: () => T,
-    virtualCurrencyCollection: () => S
+    RevenuePlaygroundCollectionId: () => v,
+    nitroCollection: () => T,
+    paymentsCollection: () => S,
+    playgroundConfig: () => C,
+    virtualCurrencyCollection: () => j
 });
 var a, n = l(397927),
     r = l(777595),
     i = l(527518),
-    s = l(270727),
-    o = l(473106),
+    o = l(270727),
+    s = l(473106),
     u = l(423396),
     c = l(309706),
     d = l(987274),
-    p = l(886532),
-    m = l(135791),
-    h = l(931433),
-    x = l(391622),
-    b = l(203484),
+    p = l(526838),
+    m = l(886532),
+    h = l(135791),
+    x = l(931433),
+    b = l(391622),
+    y = l(203484),
     g = l(445736),
-    y = l(504312),
-    f = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a);
-let v = ["Revenue Storybook", "Revenue Playground"],
-    E = {
+    f = l(504312),
+    v = ((a = {}).PAYMENTS = "payments", a.VIRTUAL_CURRENCY = "virtual-currency", a.NITRO = "nitro", a);
+let E = ["Revenue Storybook", "Revenue Playground"],
+    S = {
         id: "payments",
         name: "Payments",
-        groups: [o._, y.Y, c.U, g.Wo, r.v, u.Gu, b.O],
-        tags: v,
+        groups: [s._, f.Y, c.U, g.Wo, r.v, u.Gu, y.O],
+        tags: E,
         IconComponent: n.d2Y
     },
-    S = {
+    j = {
         id: "virtual-currency",
         name: "Virtual Currency",
-        groups: [s.h2, i.c$, h.V, x.e],
-        tags: v,
+        groups: [o.h2, i.c$, x.V, b.e],
+        tags: E,
         IconComponent: n.Cp8
     },
-    j = {
+    T = {
         id: "nitro",
         name: "Nitro",
-        groups: [d.I7, p.H, m.E],
-        tags: v,
+        groups: [d.I7, p.Z, m.H, h.E],
+        tags: E,
         IconComponent: n.tvc
     },
-    T = {
+    C = {
         playgroundBaseUrl: "revenue",
-        collections: [E, S, j]
+        collections: [S, j, T]
     }

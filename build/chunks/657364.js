@@ -34,8 +34,8 @@ function T() {
     let C = (0, _.Oj)(t, e) || l,
         I = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
         f = C && I,
-        b = e.isStaff(),
-        N = !e.verified;
+        N = e.isStaff(),
+        b = !e.verified;
     return (0, i.jsxs)(m.h, {
         setting: h.H.PRIVACY_DATA_REQUEST_V2,
         children: [(0, i.jsx)(m._, {
@@ -51,14 +51,14 @@ function T() {
                     date: a()(t.created_at).add(p.n83, "days").format("MMMM Do YYYY")
                 })
             })
-        }) : b ? (0, i.jsx)(o.ZpM, {
+        }) : N ? (0, i.jsx)(o.ZpM, {
             className: E.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: x.intl.string(x.t.ZPQLH2)
             })
         }) : (0, i.jsxs)(i.Fragment, {
-            children: [N ? (0, i.jsx)(o.ZpM, {
+            children: [b ? (0, i.jsx)(o.ZpM, {
                 className: E.N,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",

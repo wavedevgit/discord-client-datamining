@@ -1,5 +1,4 @@
 /** chunk id: 803758 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     j2: "discountOfferContainer__5521c",
     br: "discountOfferContent__5521c",

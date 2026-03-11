@@ -20,8 +20,8 @@ function g(e) {
         onClose: g,
         requirementsUpdated: A
     } = e, [m, h] = s.useState(""), [p, x] = s.useState(""), [E, T] = s.useState(""), [S, C] = s.useState(null), [I, f] = s.useState(null), {
-        formState: b,
-        errors: N
+        formState: N,
+        errors: b
     } = (0, a.cf)([d.A], () => ({
         formState: d.A.getFormState(),
         errors: d.A.getErrors()
@@ -52,14 +52,14 @@ function g(e) {
             }, {
                 variant: "primary",
                 text: _.intl.string(_.t.i4jeWR),
-                loading: b === u.XlH.SUBMITTING,
+                loading: N === u.XlH.SUBMITTING,
                 type: "submit"
             }],
             children: (0, i.jsxs)(r.BJc, {
                 gap: 20,
                 children: [(0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t.WBqMRQ),
-                    error: N?.password?.[0],
+                    error: b?.password?.[0],
                     type: "password",
                     value: m,
                     onChange: h,
@@ -68,7 +68,7 @@ function g(e) {
                     required: !0
                 }), (0, i.jsx)(r.ksK, {
                     label: _.intl.string(_.t["8dM4FO"]),
-                    error: N?.new_password?.[0] ?? S ?? void 0,
+                    error: b?.new_password?.[0] ?? S ?? void 0,
                     type: "password",
                     value: p,
                     onChange: x,

@@ -30,8 +30,8 @@ function S(e) {
         analyticsLocations: I
     } = (0, o.Ay)(), {
         userDisplayNameStyles: f,
-        guildDisplayNameStyles: b,
-        pendingDisplayNameStyles: N,
+        guildDisplayNameStyles: N,
+        pendingDisplayNameStyles: b,
         pendingErrors: v
     } = (0, A.B0)(t, n), [O, j] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = O === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
         j(p.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
@@ -40,9 +40,9 @@ function S(e) {
         })
     }, [I, j, n]), P = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
-    }, []), L = (0, s.useCallback)(() => {
+    }, []), D = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), D = void 0 !== N || (null != n ? null != b : null != f);
+    }, []), L = void 0 !== b || (null != n ? null != N : null != f);
     return (0, i.jsx)(m.A, {
         title: x.intl.string(E.default["86GtGH"]),
         titleIcon: R ? (0, i.jsx)(a.LpS, {
@@ -59,16 +59,16 @@ function S(e) {
                 size: "sm",
                 text: x.intl.string(E.default.vJqrIg),
                 onClick: y
-            }), null == n && D && (0, i.jsx)(a.Button, {
+            }), null == n && L && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: x.intl.string(E.default.ymq8WQ),
                 onClick: P
-            }), null != n && null != (void 0 !== N ? N : b) && (0, i.jsx)(a.Button, {
+            }), null != n && null != (void 0 !== b ? b : N) && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: x.intl.string(E.default["j/KRxc"]),
-                onClick: L
+                onClick: D
             })]
         })
     })

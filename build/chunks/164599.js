@@ -31,8 +31,8 @@ function T(e) {
         withTutorial: I = !1,
         showBorder: f = !1
     } = e, {
-        analyticsLocations: b
-    } = (0, d.Ay)(), N = _.Ay.canUsePremiumProfileCustomization(t), v = (0, g.N2)({
+        analyticsLocations: N
+    } = (0, d.Ay)(), b = _.Ay.canUsePremiumProfileCustomization(t), v = (0, g.N2)({
         user: t,
         guildId: n?.id
     }), {
@@ -40,11 +40,11 @@ function T(e) {
         errors: j
     } = (0, g.nZ)(n?.id);
     s.useEffect(() => {
-        N && u.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
+        b && u.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
             type: p.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: b
+            location_stack: N
         })
-    }, [N, b]);
+    }, [b, N]);
     let R = I ? o.wLn : r.$n;
     return (0, i.jsx)(A.A, {
         forcedDivider: C,
@@ -60,7 +60,7 @@ function T(e) {
                 size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: b,
+                        analyticsLocations: N,
                         guild: n,
                         initialSelectedEffect: l
                     })

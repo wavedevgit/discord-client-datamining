@@ -25,16 +25,16 @@ var i = n(627968),
     C = n(793574),
     I = n(688810),
     f = n(86379),
-    b = n(531260),
-    N = n(160946),
+    N = n(531260),
+    b = n(160946),
     v = n(459793),
     O = n(721668),
     j = n(976860),
     R = n(780964),
     y = n(12901),
     P = n(840065),
-    L = n(351906),
-    D = n(287809),
+    D = n(351906),
+    L = n(287809),
     G = n(166403),
     M = n(224016),
     U = n(954571),
@@ -109,9 +109,9 @@ function eg() {
         t = (0, w.nf)(),
         n = (0, S.Ay)(),
         s = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
-        l = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
+        l = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         r = l?.isPremiumWithPremiumGroup(),
-        o = (0, b.A)(),
+        o = (0, N.A)(),
         d = (0, H.d)(),
         c = null !== s && null !== s.planIdFromItems;
     if (!c && !o.isFractionalPremiumActive && !r) return null;
@@ -317,12 +317,12 @@ let eh = function() {
         {
             analyticsLocations: t
         } = (0, I.Ay)(C.A.PREMIUM_SETTINGS),
-        n = (0, u.bG)([D.default], () => D.default.getCurrentUser()),
+        n = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
-        r = (0, N.Y)(et.T7),
+        r = (0, b.Y)(et.T7),
         [o, g] = s.useState(!0),
-        A = (0, b.A)({
+        A = (0, N.A)({
             forceFetch: !0
         }),
         m = (0, u.bG)([Y.A], () => {
@@ -330,7 +330,7 @@ let eh = function() {
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         S = !(d.Fr || d.v1) && null != m,
-        j = (0, u.bG)([L.A], () => L.A.enabled),
+        j = (0, u.bG)([D.A], () => D.A.enabled),
         R = s.useRef(null);
     (0, X.i)();
     let y = (0, z.m)();

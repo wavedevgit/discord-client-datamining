@@ -1,8 +1,8 @@
 /** chunk id: 604151 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => N,
+    Ay: () => b,
     LP: () => f,
-    nK: () => b
+    nK: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -141,7 +141,7 @@ function f() {
     })
 }
 
-function b() {
+function N() {
     let e = (0, r.yK)([_.A], () => _.A.getIgnoredIDs());
     return (0, i.jsx)(I, {
         setting: p.H.IGNORED_USERS,
@@ -150,7 +150,7 @@ function b() {
     })
 }
 
-function N() {
+function b() {
     return (0, i.jsxs)(m.h, {
         setting: p.H.RESTRICTED_USERS,
         scrollPosition: h.d1.RESTRICTED_ACCOUNTS,
@@ -160,6 +160,6 @@ function N() {
             description: E.intl.format(E.t["0aNQo9"], {
                 helpArticle: A.A.getArticleURL(x.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
             })
-        }), (0, i.jsx)(f, {}), (0, i.jsx)(b, {})]
+        }), (0, i.jsx)(f, {}), (0, i.jsx)(N, {})]
     })
 }

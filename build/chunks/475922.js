@@ -1,6 +1,6 @@
 /** chunk id: 475922 params = (module,exports,require) **/
 l.d(t, {
-    q: () => s
+    q: () => o
 });
 var a = l(627968),
     n = l(64700),
@@ -17,23 +17,23 @@ let i = {
             duration: 180
         }
     },
-    s = e => {
+    o = e => {
         let t = n.useRef(null),
-            s = n.useRef(e);
-        s.current = e;
-        let o = n.useMemo(() => () => {
+            o = n.useRef(e);
+        o.current = e;
+        let s = n.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
             u = n.useCallback(e => (0, a.jsx)(r.P, {
                 ...e,
                 src: () => l.e("45492").then(l.t.bind(l, 653727, 19)),
                 ref: t,
-                initialAnimation: s.current,
+                initialAnimation: o.current,
                 markers: i
             }), []);
         return {
             events: {},
-            play: o,
+            play: s,
             getDuration: n.useCallback(() => t.current?.getDuration(), []),
             getCurrentFrame: n.useCallback(() => t.current?.getCurrentFrame() ?? null, []),
             Component: u

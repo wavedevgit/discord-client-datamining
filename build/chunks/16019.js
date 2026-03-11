@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(797255),
     I = n(288351),
     f = n(103733),
-    b = n(326180),
-    N = n(788868),
+    N = n(326180),
+    b = n(788868),
     v = n(985018),
     O = n(136423);
 let j = s.memo(s.forwardRef((e, t) => {
@@ -35,10 +35,10 @@ let j = s.memo(s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: l
     } = e, {
         analyticsLocations: j
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), y = (0, m.A)(), P = null != y, L = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
-        visibilityPercentageRef: D,
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), y = (0, m.A)(), P = null != y, D = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+        visibilityPercentageRef: L,
         visibilityPercentage: G
-    } = (0, f.U)(!L), M = (0, o.bG)([g.A], () => g.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, A.ar)() && !V;
+    } = (0, f.U)(!D), M = (0, o.bG)([g.A], () => g.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, A.ar)() && !V;
     return (0, i.jsx)(_.f5, {
         value: j,
         children: (0, i.jsx)("div", {
@@ -46,10 +46,10 @@ let j = s.memo(s.forwardRef((e, t) => {
             className: a()(O.kL, n),
             "data-testid": "marketing-page-hero-header",
             children: (0, i.jsx)("div", {
-                ref: D,
+                ref: L,
                 children: (0, i.jsxs)("div", {
                     className: O.hQ,
-                    children: [(0, i.jsx)(b.A, {
+                    children: [(0, i.jsx)(N.A, {
                         containerVisibilityPercentage: G
                     }), w && (0, i.jsx)("div", {
                         className: O.XN,
@@ -86,7 +86,7 @@ let j = s.memo(s.forwardRef((e, t) => {
                                 size: "md",
                                 fullWidth: w,
                                 hasActivePromotion: !!l,
-                                subscriptionTier: V ? N.pe.NONE : s,
+                                subscriptionTier: V ? b.pe.NONE : s,
                                 buttonTextOverride: V ? v.intl.string(v.t["2pG5Ga"]) : void 0
                             }), !w && (0, i.jsx)(x.A, {
                                 variant: "secondary",

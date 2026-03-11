@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(638324),
     I = n(428854),
     f = n(531525),
-    b = n(190363),
-    N = n(652215),
+    N = n(190363),
+    b = n(652215),
     v = n(985018);
 let O = () => (0, i.jsxs)(m.A, {
         title: v.intl.string(v.t.xVRG4P),
@@ -67,9 +67,9 @@ function P() {
         }),
         children: (0, i.jsx)(o.A, {
             parentSetting: f.H.CONTENT_SOCIAL,
-            settingsSection: N.nc_.CONTENT_AND_SOCIAL,
+            settingsSection: b.nc_.CONTENT_AND_SOCIAL,
             tabs: t,
-            defaultTabIndex: e === b.k ? 1 : void 0
+            defaultTabIndex: e === N.k ? 1 : void 0
         })
     })
 }

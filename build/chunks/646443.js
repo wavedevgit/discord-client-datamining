@@ -6,15 +6,15 @@ var a = l(627968),
     n = l(934551),
     r = l(732955),
     i = l(397927),
-    s = l(957565),
-    o = l(184339);
+    o = l(957565),
+    s = l(184339);
 let u = e => {
     let {
         label: t,
         value: l
     } = e;
     return (0, a.jsxs)("div", {
-        className: o.I,
+        className: s.I,
         children: [(0, a.jsxs)(i.Text, {
             variant: "text-sm/medium",
             children: [t, ":"]
@@ -26,7 +26,7 @@ let u = e => {
             "aria-label": "Copy Link",
             variant: "icon-only",
             icon: n.CopyIcon,
-            onClick: () => (0, s.C)(l)
+            onClick: () => (0, o.C)(l)
         })]
     })
 }

@@ -24,16 +24,16 @@ var i = n(627968),
     C = n(954571),
     I = n(927578),
     f = n(884546),
-    b = n(230084),
-    N = n(180020),
+    N = n(230084),
+    b = n(180020),
     v = n(212168),
     O = n(730588),
     j = n(63675),
     R = n(253604),
     y = n(652215),
     P = n(788868),
-    L = n(355097),
-    D = n(985018),
+    D = n(355097),
+    L = n(985018),
     G = n(567567);
 
 function M(e) {
@@ -60,7 +60,7 @@ function M(e) {
         preset: Y,
         onShuffle: z
     } = (0, _.A)(), X = s.useRef(null);
-    (0, S.A)(X, L._F.TRY_IT_OUT);
+    (0, S.A)(X, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         newestAnalyticsLocation: K,
@@ -98,7 +98,7 @@ function M(e) {
                         size: "md",
                         color: "currentColor",
                         className: G.PC
-                    }), D.intl.string(D.t.gMlDNd)]
+                    }), L.intl.string(L.t.gMlDNd)]
                 }),
                 profilePreview: (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(g.A, {
@@ -113,11 +113,11 @@ function M(e) {
                     children: [(0, i.jsxs)("div", {
                         children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/extrabold",
-                            children: D.intl.string(D.t["2zGdAW"])
+                            children: L.intl.string(L.t["2zGdAW"])
                         }), (0, i.jsx)(a.Text, {
                             className: G.h_,
                             variant: "text-sm/normal",
-                            children: D.intl.string(D.t.xeEC20)
+                            children: L.intl.string(L.t.xeEC20)
                         })]
                     }), (0, i.jsx)(j.A, {
                         className: G.fz,
@@ -136,26 +136,26 @@ function M(e) {
                         showRemoveBannerButton: null != F,
                         onBannerChange: E.xe,
                         showPremiumIcon: !1
-                    }), !k && (0, i.jsx)(b.A, {
+                    }), !k && (0, i.jsx)(N.A, {
                         className: G.fz,
                         isTryItOut: !0,
                         onAvatarChange: E.e$,
                         showRemoveAvatarButton: !1,
-                        changeAvatarButtonText: D.intl.string(D.t["7z0D1c"]),
-                        sectionTitle: D.intl.string(D.t.vtFfPX)
-                    }), (0, i.jsx)(N.A, {
+                        changeAvatarButtonText: L.intl.string(L.t["7z0D1c"]),
+                        sectionTitle: L.intl.string(L.t.vtFfPX)
+                    }), (0, i.jsx)(b.A, {
                         user: t,
                         className: G.fz
                     }), !J && (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
-                        children: D.intl.string(D.t["smo74/"])
+                        children: L.intl.string(L.t["smo74/"])
                     })]
                 })
             }), !J && (0, i.jsx)(m.d, {
                 onSubscribeModalClose: q,
                 className: G.Kv,
                 showUpsell: !0,
-                text: D.intl.format(D.t.TmfgI2, {
+                text: L.intl.format(L.t.TmfgI2, {
                     onClick: () => {
                         (0, p.K)({
                             analyticsSource: K,
@@ -163,9 +163,9 @@ function M(e) {
                         })
                     }
                 }),
-                button: U ? D.intl.string(D.t.AfRWI8) : $ ? D.intl.formatToPlainString(D.t.bkQ4bH, {
+                button: U ? L.intl.string(L.t.AfRWI8) : $ ? L.intl.formatToPlainString(L.t.bkQ4bH, {
                     percent: Q?.discount.amount
-                }) : D.intl.string(D.t.pj0XBN),
+                }) : L.intl.string(L.t.pj0XBN),
                 position: "inline"
             }), J && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {

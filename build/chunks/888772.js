@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(327337),
     I = n(842130),
     f = n(985018),
-    b = n(896498),
-    N = n(205806),
+    N = n(896498),
+    b = n(205806),
     v = n(473169),
     O = n(525351);
 
@@ -36,9 +36,9 @@ function j(e) {
         stepNumber: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: N.PM,
+        className: b.PM,
         children: [(0, i.jsx)("div", {
-            className: N.CD,
+            className: b.CD,
             children: (0, i.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-brand",
@@ -63,9 +63,9 @@ function j(e) {
 
 function R() {
     return (0, i.jsxs)("div", {
-        className: a()(N.aP, b.a, N.dO, N.p2),
+        className: a()(b.aP, N.a, b.dO, b.p2),
         children: [(0, i.jsxs)("div", {
-            className: N.Np,
+            className: b.Np,
             children: [(0, i.jsxs)("div", {
                 children: [(0, i.jsx)(d.Heading, {
                     className: v.QB,
@@ -80,12 +80,12 @@ function R() {
                     children: f.intl.string(I.default["1J/gZ4"])
                 })]
             }), (0, i.jsx)("img", {
-                className: N._u,
+                className: b._u,
                 src: O,
                 alt: f.intl.string(I.default["r+PDmu"])
             })]
         }), (0, i.jsxs)("div", {
-            className: N.Ci,
+            className: b.Ci,
             children: [(0, i.jsx)(j, {
                 header: f.intl.string(I.default["7xxAni"]),
                 description: f.intl.string(I.default["1M9So2"]),
@@ -106,7 +106,7 @@ function R() {
 function y() {
     let e = (0, m.xr)();
     return (0, i.jsxs)("div", {
-        className: a()(N.aP, b.a, N.dO),
+        className: a()(b.aP, N.a, b.dO),
         children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Heading, {
                 className: v.QB,
@@ -123,7 +123,7 @@ function y() {
                 })
             }), e ? null : (0, i.jsx)(p.A, {})]
         }), (0, i.jsx)("img", {
-            className: N._u,
+            className: b._u,
             src: O,
             alt: f.intl.string(I.default["r+PDmu"])
         })]
@@ -158,7 +158,7 @@ function P(e) {
         })
     }, "title"), [n]);
     return (0, i.jsx)("div", {
-        className: N.uW,
+        className: b.uW,
         children: (0, i.jsx)(o.hD, {
             navigator: _,
             children: (0, i.jsx)(o.PR, {
@@ -188,7 +188,7 @@ function P(e) {
         })
     })
 }
-let L = () => {
+let D = () => {
         let e = (0, A.A)(),
             t = (0, m.GR)(),
             n = e ? S.Y7 : S.kp,
@@ -202,21 +202,21 @@ let L = () => {
             sectionTitle: l,
             requests: t
         }) : (0, i.jsxs)("div", {
-            className: N.uW,
+            className: b.uW,
             children: [(0, i.jsx)(d.Text, {
                 className: v.QB,
                 variant: "eyebrow",
                 color: "text-default",
                 children: l
             }), (0, i.jsx)("div", {
-                className: N.aP,
+                className: b.aP,
                 children: (0, i.jsx)(h.A, {
                     text: f.intl.string(I.default.C4ScLD)
                 })
             })]
         })
     },
-    D = () => {
+    L = () => {
         let e = (0, m.xr)(),
             t = (0, A.A)() ? S.Y7 : S.kp,
             n = (0, _.y)(f.intl.formatToPlainString(I.default["1/PzIj"], {
@@ -225,7 +225,7 @@ let L = () => {
                 maxConnections: t
             }));
         return e ? (0, i.jsx)("div", {
-            className: N.rv,
+            className: b.rv,
             children: (0, i.jsx)(d.Text, {
                 variant: "text-xxs/medium",
                 color: "text-muted",
@@ -251,7 +251,7 @@ let L = () => {
         return null == n ? null : (0, i.jsxs)("div", {
             className: v.QX,
             children: [(0, i.jsx)(d.Heading, {
-                className: N.rH,
+                className: b.rH,
                 variant: "heading-sm/semibold",
                 children: (0, i.jsx)(d.Fmo, {
                     children: f.intl.string(I.default["7/tVhv"])
@@ -279,7 +279,7 @@ let L = () => {
     U = () => {
         let e = (0, A.A)();
         return (0, i.jsxs)("div", {
-            className: N.kL,
-            children: [e ? (0, i.jsx)(R, {}) : (0, i.jsx)(y, {}), (0, i.jsx)(L, {}), (0, i.jsx)(M, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {})]
+            className: b.kL,
+            children: [e ? (0, i.jsx)(R, {}) : (0, i.jsx)(y, {}), (0, i.jsx)(D, {}), (0, i.jsx)(M, {}), (0, i.jsx)(L, {}), (0, i.jsx)(G, {})]
         })
     }

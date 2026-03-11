@@ -1,6 +1,6 @@
 /** chunk id: 687944 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -96,13 +96,13 @@ function f(e) {
         })]
     })
 }
-let b = function(e) {
+let N = function(e) {
     let t, c, {
             subscription: g,
             invoicePreview: A,
             isLoading: p,
-            analyticsLocation: b,
-            discountInfo: N,
+            analyticsLocation: N,
+            discountInfo: b,
             renewalChurnDiscountInfo: v,
             discountOffer: O
         } = e,
@@ -117,7 +117,7 @@ let b = function(e) {
                 return n => (0, i.jsx)(t, {
                     ...n,
                     premiumSubscription: g,
-                    analyticsLocation: b,
+                    analyticsLocation: N,
                     analyticsLocations: j,
                     initialStep: e
                 })
@@ -155,9 +155,9 @@ let b = function(e) {
                             premiumSubscription: g
                         }) : (0, i.jsx)(I, {
                             premiumSubscription: g,
-                            discountInfo: N ?? v,
+                            discountInfo: b ?? v,
                             invoicePreview: A,
-                            isDiscountActive: null != N
+                            isDiscountActive: null != b
                         }), (0, i.jsx)("div", {
                             className: T.e_,
                             children: (t = _.Ay.isSwitchingPlansDisabled(g), c = _.Ay.getSwitchingPlansDisabledMessage(g), _.Ay.isBaseSubscriptionCanceled(g) ? (0, i.jsx)(l.Button, {
@@ -181,7 +181,7 @@ let b = function(e) {
                                         onClick: () => {
                                             (0, o.A)({
                                                 analyticsLocations: j,
-                                                analyticsLocation: b,
+                                                analyticsLocation: N,
                                                 analyticsObject: C,
                                                 subscription: g
                                             })

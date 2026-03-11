@@ -1,12 +1,12 @@
 /** chunk id: 391622 params = (module,exports,require) **/
 l.d(t, {
-    e: () => s
+    e: () => o
 });
 var a = l(627968),
     n = l(397927),
     r = l(324861),
     i = l(749226);
-let s = {
+let o = {
     title: "Orb Onboarding",
     stories: [{
         name: "Orb Onboarding Reset",

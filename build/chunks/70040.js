@@ -1,7 +1,7 @@
 /** chunk id: 70040 params = (module,exports,require) **/
 n.d(t, {
     Ix: () => k,
-    J3: () => L,
+    J3: () => D,
     Q3: () => w,
     mx: () => H
 });
@@ -27,22 +27,22 @@ var i = n(627968),
     C = n(811611),
     I = n(97469),
     f = n(954571),
-    b = n(544028),
-    N = n(253932),
+    N = n(544028),
+    b = n(253932),
     v = n(12901),
     O = n(652215),
     j = n(49999),
     R = n(788868),
     y = n(985018),
     P = n(21082);
-let L = () => {
+let D = () => {
     (0, p.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
         dismissAction: j.i.PRIMARY,
         forceTrack: !0
     }), (0, h.nf)(h.HP.CLIENT_THEMES), (0, v.default)()
 };
 
-function D() {
+function L() {
     let e = (0, x.O)(),
         t = (0, S.U9)(e, R.pe.TIER_2) ? y.intl.formatToPlainString(y.t.bkQ4bH, {
             percent: e?.discount.amount
@@ -66,8 +66,8 @@ function G() {
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
             text: y.intl.string(y.t["E+COuA"]),
-            onClick: L
-        }), (0, i.jsx)(D, {})]
+            onClick: D
+        }), (0, i.jsx)(L, {})]
     })
 }
 
@@ -98,7 +98,7 @@ function U() {
                 variant: "secondary",
                 fullWidth: !0,
                 text: y.intl.string(y.t["E+COuA"]),
-                onClick: () => L()
+                onClick: () => D()
             })
         }), (0, i.jsx)("div", {
             className: P.BU
@@ -128,12 +128,12 @@ function V() {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([b.A, c.A, g.A], () => ({
-            theme: b.A.theme,
+        } = (0, l.cf)([N.A, c.A, g.A], () => ({
+            theme: N.A.theme,
             useForcedColors: c.A.useForcedColors,
             gradientPreset: g.A.gradientPreset
         })),
-        a = null != N.eh.useSetting().customUserThemeSettings;
+        a = null != b.eh.useSetting().customUserThemeSettings;
     return t !== O.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
@@ -150,7 +150,7 @@ function V() {
 let w = () => (0, l.bG)([g.A], () => g.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
     text: y.intl.string(y.t.qYXrkX),
-    onClick: L
+    onClick: D
 });
 
 function H(e) {

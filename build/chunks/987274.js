@@ -7,8 +7,8 @@ l(64700);
 var n = l(397927),
     r = l(706276),
     i = l(808411),
-    s = l(919470),
-    o = l(624716),
+    o = l(919470),
+    s = l(624716),
     u = l(872725),
     c = l(985018);
 let d = {
@@ -19,7 +19,7 @@ let d = {
     },
     p = {
         name: "Tab Tooltip",
-        component: o.A,
+        component: s.A,
         id: "tab-tooltip",
         controls: {}
     },
@@ -147,7 +147,7 @@ let d = {
             controls: {}
         }, d, {
             name: "Premium Tooltip",
-            component: s.A,
+            component: o.A,
             id: "premium-tooltip",
             controls: {
                 title: {

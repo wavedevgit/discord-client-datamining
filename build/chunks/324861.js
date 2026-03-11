@@ -6,8 +6,8 @@ var a = l(64700),
     n = l(554146),
     r = l(73153),
     i = l(20439),
-    s = l(890687),
-    o = l(654487);
+    o = l(890687),
+    s = l(654487);
 let u = () => {
     let e = (0, i.A)(n.M.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
         t = (0, i.A)(n.M.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK),
@@ -19,7 +19,7 @@ let u = () => {
         }, [t, l, e]),
         {
             handleResetStatusClick: c
-        } = (0, s.j$)(o.Fw);
+        } = (0, o.j$)(s.Fw);
     return {
         resetOnboardingExperience: u,
         resetQuestStatus: c

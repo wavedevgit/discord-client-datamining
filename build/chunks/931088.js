@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(793574),
     i = l(688810),
-    s = l(95337),
-    o = l(412314),
+    o = l(95337),
+    s = l(412314),
     u = l(456459),
     c = l(473702),
     d = l(916974),
@@ -18,15 +18,15 @@ let x = e => {
         let {
             transitionState: t,
             onClose: l,
-            premiumSubscription: s,
-            premiumType: o,
+            premiumSubscription: o,
+            premiumType: s,
             churnDiscount: u,
             planId: c,
             renewalInvoice: p,
             renewalInvoiceDetails: m,
             errorOnCancel: x,
-            errorOnRedeem: g,
-            setActiveStep: y,
+            errorOnRedeem: y,
+            setActiveStep: g,
             activeStep: f
         } = e, {
             analyticsLocations: v
@@ -35,11 +35,11 @@ let x = e => {
             S(b(f))
         }, [f]), (0, a.jsx)(d.CancellationContext.Provider, {
             value: {
-                setStep: y,
-                premiumType: o,
+                setStep: g,
+                premiumType: s,
                 onClose: l,
                 transitionState: t,
-                premiumSubscription: s,
+                premiumSubscription: o,
                 analyticsLocations: v,
                 analyticsLocation: h.ThZ.USER_SETTINGS,
                 confettiCanvas: null,
@@ -58,7 +58,7 @@ let x = e => {
                 }),
                 applyOffer: () => new Promise((e, t) => {
                     setTimeout(() => {
-                        g ? t() : e()
+                        y ? t() : e()
                     }, 1e3)
                 }),
                 pauseDuration: null,
@@ -72,9 +72,9 @@ let x = e => {
             case c.g.DISCOUNT_APPLIED:
                 return (0, a.jsx)(u.V, {});
             case c.g.CONFIRM_DISCOUNT:
-                return (0, a.jsx)(o.M, {});
+                return (0, a.jsx)(s.M, {});
             case c.g.CONFIRM:
-                return (0, a.jsx)(s.r, {});
+                return (0, a.jsx)(o.r, {});
             case c.g.PREVIEW:
                 return (0, a.jsx)(p.E, {});
             case c.g.WHAT_YOU_LOSE:

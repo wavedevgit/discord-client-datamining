@@ -1,13 +1,13 @@
 /** chunk id: 309706 params = (module,exports,require) **/
 l.d(t, {
-    U: () => s
+    U: () => o
 });
 var a = l(627968);
 l(64700);
 var n = l(397927),
     r = l(99696),
     i = l(652215);
-let s = {
+let o = {
     title: "Gift Card",
     stories: [{
         name: "Redemption Modal",

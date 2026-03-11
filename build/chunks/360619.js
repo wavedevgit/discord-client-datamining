@@ -28,15 +28,15 @@ var x = n(189081),
     C = n(253932),
     I = n(368631),
     f = n(682262),
-    b = n(987281);
+    N = n(987281);
 n(531525);
-var N = n(654487);
+var b = n(654487);
 
 function v() {
     let e = (0, u.IO)().length,
         t = (0, c.l)(),
         n = (0, s.bG)([T.A], () => T.A.getSearchParams()),
-        b = (0, d.VT)(),
+        N = (0, d.VT)(),
         v = (0, f.b_)(),
         O = S.default.getCurrentUser()?.isStaff() ?? !1,
         j = (0, h.Lc)({
@@ -47,10 +47,10 @@ function v() {
         }),
         y = (0, a.H)(),
         P = (0, _.H)({
-            location: N.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+            location: b.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
-        L = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
-        D = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
+        D = (0, s.bG)([x.A], () => x.A.hasLibraryApplication()),
+        L = (0, s.bG)([p.default], () => p.default.hasTOTPEnabled()),
         G = C.Q_.useSetting(),
         M = (0, r.A)(),
         U = (0, o.A)() ?? !0,
@@ -68,7 +68,7 @@ function v() {
         unseenGiftCount: e,
         showPrepaidPaymentPastDueWarning: t,
         searchParams: n,
-        numOfPendingFamilyRequests: b,
+        numOfPendingFamilyRequests: N,
         isOverlaySupported: v,
         isStaff: O,
         isInappropriateConversationWarningEnabled: j,
@@ -76,8 +76,8 @@ function v() {
         paymentsBlocked: y,
         isEligibleForQuests: P,
         isStricterMessageRequestsEnabled: M,
-        hasLibraryApplication: L,
-        hasTOTPEnabled: D,
+        hasLibraryApplication: D,
+        hasTOTPEnabled: L,
         developerMode: G,
         isAdultUser: U,
         hasSecureFramesVerifiedUserIds: k,
@@ -85,11 +85,11 @@ function v() {
         hasBlockedUsers: V,
         hasAgeGatedFeature: H,
         isHDRAccessibilitySettingExperimentEnabled: B
-    }), [G, V, w, L, k, D, n, U, P, R, j, v, O, M, b, y, t, e, H, B])
+    }), [G, V, w, D, k, L, n, U, P, R, j, v, O, M, N, y, t, e, H, B])
 }
 
 function O(e) {
-    let t = b.a.useField("searchResults"),
+    let t = N.a.useField("searchResults"),
         n = v(),
         i = n[e],
         s = Object.fromEntries(Object.entries(n).filter(e => {

@@ -1,7 +1,7 @@
 /** chunk id: 119762 params = (module,exports,require) **/
 n.d(t, {
     Af: () => f,
-    Ay: () => b,
+    Ay: () => N,
     Ob: () => C,
     jH: () => S
 });
@@ -41,7 +41,7 @@ function C() {
         children: (0, i.jsx)(o.y$y, {})
     }) : (0, i.jsx)(o.nVY, {
         label: E.intl.string(E.t.LLS19o),
-        children: (0, i.jsx)(N, {
+        children: (0, i.jsx)(b, {
             session: e,
             current: !0
         })
@@ -81,7 +81,7 @@ function f() {
     return null == e && 0 === t.length || 0 === t.length && n?.mfaEnabled ? null : t.length > 0 || !n?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
             label: E.intl.string(E.t.xx1MWc),
-            children: [t.map(e => (0, i.jsx)(N, {
+            children: [t.map(e => (0, i.jsx)(b, {
                 session: e,
                 useChecks: l.size > 0,
                 checked: l.has(e.id_hash),
@@ -100,7 +100,7 @@ function f() {
     }) : null
 }
 
-function b() {
+function N() {
     return s.useEffect(() => ((0, c.GY)(), () => {
         (0, c.ZQ)()
     }), []), (0, i.jsxs)(h.R, {
@@ -113,7 +113,7 @@ function b() {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         session: t,
         current: n,

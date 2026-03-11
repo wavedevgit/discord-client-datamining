@@ -66,7 +66,7 @@ let m = e => {
         onRest: () => T(e => -1 * e)
     } : {
         blur: 0
-    }), C = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, a.useState)(0), [b, N] = (0, a.useState)(1), v = (0, o.zhh)({
+    }), C = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [I, f] = (0, a.useState)(0), [N, b] = (0, a.useState)(1), v = (0, o.zhh)({
         xOffset: I,
         config: {
             tension: 10,
@@ -75,7 +75,7 @@ let m = e => {
         }
     });
     return ((0, d.A)(() => {
-        f(b * (.5 * Math.random() * 5 + 2.5)), N(e => -1 * e)
+        f(N * (.5 * Math.random() * 5 + 2.5)), b(e => -1 * e)
     }, C), u) ? g : (0, l.jsx)(r.animated.div, {
         style: {
             transform: A.y?.to(e => {

@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(475922),
     i = l(534149),
-    s = l(582754),
-    o = l(736653),
+    o = l(582754),
+    s = l(736653),
     u = l(796688);
 let c = {
         width: 60,
@@ -20,12 +20,12 @@ let c = {
             onSetAnimationDurationMS: a,
             play: r,
             getDuration: i
-        } = e, s = i(), o = null != s ? 1e3 * s : 3e3;
+        } = e, o = i(), s = null != o ? 1e3 * o : 3e3;
         (0, n.useEffect)(() => {
             null !== t && t !== l.current && (l.current = t, r())
         }, [t, r, l]), (0, n.useEffect)(() => {
-            a(o)
-        }, [a, o])
+            a(s)
+        }, [a, s])
     },
     p = e => {
         let {
@@ -66,8 +66,8 @@ let c = {
         })
     },
     h = e => {
-        let t = (0, o.Ay)();
-        return (0, s.qB)(t) ? (0, a.jsx)(m, {
+        let t = (0, s.Ay)();
+        return (0, o.qB)(t) ? (0, a.jsx)(m, {
             ...e
         }) : (0, a.jsx)(p, {
             ...e

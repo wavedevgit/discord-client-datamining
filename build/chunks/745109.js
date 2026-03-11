@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(894013),
     I = n(652215),
     f = n(355097),
-    b = n(985018),
-    N = n(298109);
+    N = n(985018),
+    b = n(298109);
 
 function v() {
     let e = (0, r.bG)([p.A, x.Ay, _.A], () => {
@@ -44,9 +44,9 @@ function v() {
             guildId: t?.id
         })
     }, [t?.id, l]), (0, i.jsxs)(A.R, {
-        header: b.intl.string(b.t["vi7f+q"]),
+        header: N.intl.string(N.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
-            className: N.$H,
+            className: b.$H,
             type: "top",
             look: "brand",
             selectedItem: v,
@@ -63,14 +63,14 @@ function v() {
                 }
             },
             children: [(0, i.jsx)(o.VQ0.Item, {
-                className: N.YU,
+                className: b.YU,
                 id: f.Eq.USER_PROFILE,
-                children: b.intl.string(b.t["2p07FR"])
+                children: N.intl.string(N.t["2p07FR"])
             }, f.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
-                className: a()(N.YU, N.HY),
-                "aria-label": b.intl.string(b.t.kPHroX),
+                className: a()(b.YU, b.HY),
+                "aria-label": N.intl.string(N.t.kPHroX),
                 id: f.Eq.GUILD,
-                children: b.intl.string(b.t.kPHroX)
+                children: N.intl.string(N.t.kPHroX)
             }, f.Eq.GUILD)]
         }), v === f.Eq.GUILD ? (0, i.jsx)(u.A, {
             selectedGuild: t,

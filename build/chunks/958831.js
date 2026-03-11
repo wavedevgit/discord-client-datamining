@@ -68,7 +68,7 @@ function I(e) {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: x.$X,
-                    children: (0, i.jsx)(b, {
+                    children: (0, i.jsx)(N, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
@@ -94,15 +94,15 @@ function f(e) {
         I = s.useId(),
         f = s.useRef(null),
         {
-            query: b,
-            updateQuery: N,
+            query: N,
+            updateQuery: b,
             queryResults: v
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: T,
             autocompleterBeforeCreateSearchContext: S
         }),
-        O = (t = "" !== b, n = (0, a.yK)([g.Ay, _.A, m.A], () => {
+        O = (t = "" !== N, n = (0, a.yK)([g.Ay, _.A, m.A], () => {
             let e = m.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
@@ -123,7 +123,7 @@ function f(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(b);
+        }(N);
     s.useEffect(() => {
         let {
             current: e
@@ -139,7 +139,7 @@ function f(e) {
             let e = v[j];
             if (e?.type === h.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        L = y > 0 || "" === b ? {
+        D = y > 0 || "" === N ? {
             innerId: I,
             innerRole: "listbox",
             innerAriaLabel: p.intl.string(p.t["+N3fW7"]),
@@ -187,8 +187,8 @@ function f(e) {
         subtitle: p.intl.string(p.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
-            value: b,
-            onChange: N,
+            value: N,
+            onChange: b,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
                 if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
@@ -220,11 +220,11 @@ function f(e) {
             spellCheck: !1,
             autoFocus: !0
         }),
-        listProps: L
+        listProps: D
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         channelId: t
     } = e, {

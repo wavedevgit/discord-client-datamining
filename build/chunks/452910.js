@@ -28,16 +28,16 @@ let p = e => {
         isPremiumGetCta: T,
         onCtaClick: S,
         cardVariant: C
-    } = e, I = (0, c.V)(), f = I?.subscription_trial, b = (0, d.O)(), N = (0, r.FY)({
+    } = e, I = (0, c.V)(), f = I?.subscription_trial, N = (0, d.O)(), b = (0, r.FY)({
         intervalType: f?.interval,
         intervalCount: f?.interval_count
     }), v = (0, o.G)({
         defaultResponse: m.intl.string(m.t["8x0jKT"]),
         onNonTier2Subscriber: m.intl.string(m.t.IJI7yk),
-        onTier2TrialOffer: N,
-        onTier0TrialOffer: N,
+        onTier2TrialOffer: b,
+        onTier0TrialOffer: b,
         onDiscountOffer: m.intl.formatToPlainString(m.t.bkQ4bH, {
-            percent: b?.discount.amount
+            percent: N?.discount.amount
         })
     }), O = (0, _.Q)(C);
     return (0, i.jsxs)("div", {

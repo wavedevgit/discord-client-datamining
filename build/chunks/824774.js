@@ -48,22 +48,22 @@ function y(e) {
         V = q.length,
         W = V >= 5;
     s.useEffect(() => {
-        "" === R && B.current?.focus()
+        "" === R && z.current?.focus()
     }, [R]);
-    let z = s.useCallback(() => {
-            M("")
-        }, [M]),
-        B = s.useRef(null),
+    let z = s.useRef(null),
         {
-            results: F,
-            updateSearchText: J
+            results: B,
+            updateSearchText: F
         } = (0, m.R)({
             selectedDestinations: q,
             includeMissingDMs: !0
         }),
-        O = s.useCallback(e => {
-            M(e), J(e)
-        }, [M, J]),
+        J = s.useCallback(e => {
+            M(e), F(e)
+        }, [M, F]),
+        O = s.useCallback(() => {
+            J("")
+        }, [J]),
         Q = s.useCallback(e => {
             H(t => {
                 let l = t.findIndex(t => {
@@ -95,10 +95,10 @@ function y(e) {
                 N(), (0, i.showToast)((0, i.createToast)(S.intl.string(S.t.t5VZ88), i.ToastType.SUCCESS))
             })
         }, [w, N]),
-        $ = F.length > 0 ? (0, n.jsx)(_.x, {
+        $ = B.length > 0 ? (0, n.jsx)(_.x, {
             paddingBottom: 8,
             paddingTop: 8,
-            rowData: F,
+            rowData: B,
             handleToggleDestination: Q,
             selectedDestinations: q,
             disableSelection: W
@@ -121,10 +121,10 @@ function y(e) {
         subtitle: T,
         size: "md",
         input: (0, n.jsx)(i.IWV, {
-            ref: B,
+            ref: z,
             query: R,
-            onChange: O,
-            onClear: z,
+            onChange: J,
+            onClear: O,
             placeholder: S.intl.string(S.t["5h0QOP"]),
             "aria-label": S.intl.string(S.t["5h0QOP"]),
             autoFocus: !0

@@ -31,7 +31,7 @@ async function f() {
     _.A.fileManager.showItemInFolder(e)
 }
 
-function b(e) {
+function N(e) {
     (0, o.A)({
         title: C.intl.string(C.t["7UXEF2"]),
         subtitle: C.intl.string(C.t.IYPrRl),
@@ -39,7 +39,7 @@ function b(e) {
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
-async function N(e) {
+async function b(e) {
     let {
         onUploadStart: t,
         onUploadFinish: n
@@ -89,7 +89,7 @@ async function N(e) {
     }
 }
 async function v() {
-    await N({
+    await b({
         onUploadStart: () => I.setState({
             isUploading: !0
         }),
@@ -122,7 +122,7 @@ let O = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     label: C.intl.string(C.t["726JHL"]),
                     description: C.intl.string(C.t["/7ak9Q"]),
                     checked: e,
-                    onChange: b
+                    onChange: N
                 }), (0, i.jsx)("div", {
                     role: "group",
                     "aria-labelledby": l,

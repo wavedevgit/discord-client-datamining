@@ -24,16 +24,16 @@ var i = n(627968),
     C = n(287070),
     I = n(196291),
     f = n(101058),
-    b = n(836602),
-    N = n(814390),
+    N = n(836602),
+    b = n(814390),
     v = n(351906),
     O = n(287809),
     j = n(954571),
     R = n(927578),
     y = n(606532),
     P = n(161290),
-    L = n(652215),
-    D = n(985018),
+    D = n(652215),
+    L = n(985018),
     G = n(166378);
 
 function M() {
@@ -48,9 +48,9 @@ function M() {
             pendingNameplate: M,
             showNotice: U,
             ...k
-        } = (0, r.cf)([b.A], () => ({
-            ...b.A.getPendingChanges(),
-            showNotice: b.A.showNotice()
+        } = (0, r.cf)([N.A], () => ({
+            ...N.A.getPendingChanges(),
+            showNotice: N.A.showNotice()
         })),
         V = (0, f.V7)({
             userId: e.id,
@@ -60,7 +60,7 @@ function M() {
             pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
-        H = (0, N.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
+        H = (0, b.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
         B = R.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: F,
@@ -103,7 +103,7 @@ function M() {
         }), W && !U && (0, i.jsx)(x.d, {
             className: G.EL,
             showUpsell: W && !z,
-            text: D.intl.format(D.t.TmfgI2, {
+            text: L.intl.format(L.t.TmfgI2, {
                 onClick: () => (0, E.K)({
                     analyticsSource: Y
                 })
@@ -115,13 +115,13 @@ function M() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        j.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        j.default.track(D.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },
-                    text: D.intl.string(D.t.uw9zI7),
+                    text: L.intl.string(L.t.uw9zI7),
                     icon: d.tvc
                 })
             })

@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(503698),
     i = l.n(r),
-    s = l(732955),
-    o = l(397927),
+    o = l(732955),
+    s = l(397927),
     u = l(303136),
     c = l(975571),
     d = l(318346),
@@ -16,11 +16,11 @@ var a = l(627968),
     h = l(186541),
     x = l(266770),
     b = l(268920),
-    g = l(633217);
-let y = () => (0, a.jsx)("div", {
+    y = l(633217);
+let g = () => (0, a.jsx)("div", {
         className: h.s,
         children: (0, a.jsx)(u.A, {
-            src: g.A,
+            src: y.A,
             fallbackImage: b.A,
             className: h.Cb
         })
@@ -32,7 +32,7 @@ let y = () => (0, a.jsx)("div", {
             analyticsPage: r,
             linkPreText: u = m.intl.string(m.t["5qZv9E"]),
             linkText: b = m.intl.string(m.t.XRdyjz)
-        } = e, g = n.useCallback(() => {
+        } = e, y = n.useCallback(() => {
             null != r && (0, d.Y)({
                 pageType: r,
                 sectionType: p.JJy.ORBS_BALANCE_MENU,
@@ -41,7 +41,7 @@ let y = () => (0, a.jsx)("div", {
         }, [r]);
         return (0, a.jsxs)("div", {
             className: i()(h.kL, x.O),
-            children: [(0, a.jsx)(y, {}), (0, a.jsx)(s.$nd, {
+            children: [(0, a.jsx)(g, {}), (0, a.jsx)(o.$nd, {
                 text: t,
                 variant: "primary",
                 size: "sm",
@@ -49,16 +49,16 @@ let y = () => (0, a.jsx)("div", {
                 fullWidth: !0
             }), (0, a.jsxs)("div", {
                 className: h.kx,
-                children: [void 0 !== u && (0, a.jsxs)(o.Text, {
+                children: [void 0 !== u && (0, a.jsxs)(s.Text, {
                     variant: "text-xs/normal",
                     className: h.D5,
                     children: [u, "\xa0"]
-                }), (0, a.jsx)(o.MzZ, {
+                }), (0, a.jsx)(s.MzZ, {
                     target: "_blank",
                     rel: "author",
                     href: c.A.getArticleURL(p.MVz.ORBS_FAQ),
                     className: h.CU,
-                    onClick: g,
+                    onClick: y,
                     children: b
                 })]
             })]

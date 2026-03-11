@@ -1,6 +1,6 @@
 /** chunk id: 60508 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -24,11 +24,11 @@ var i = n(627968),
     C = n(652215),
     I = n(985018),
     f = n(520089),
-    b = n(288894);
-let N = e => {
+    N = n(288894);
+let b = e => {
     let t, n, {
             isAllPerksVisible: l,
-            setIsAllPerksVisible: N,
+            setIsAllPerksVisible: b,
             previousComponent: v,
             enablePremiumBrandRefresh: O
         } = e,
@@ -41,7 +41,7 @@ let N = e => {
         {
             analyticsLocations: P
         } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
-        [L, D] = s.useState(!1),
+        [D, L] = s.useState(!1),
         G = (0, r.bG)([c.A], () => c.A.useReducedMotion),
         M = (0, x.LQ)(),
         {
@@ -50,7 +50,7 @@ let N = e => {
         k = (0, m.d)();
     M ? (t = I.intl.string(I.t["+vt7w9"]), n = I.intl.string(I.t.LgHbnL)) : (t = I.intl.string(I.t.LgHbnL), n = I.intl.string(I.t["+vt7w9"]));
     let V = () => {
-        N(!1), A.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
+        b(!1), A.default.track(C.HAw.NITRO_HOME_NAVIGATION, {
             current_component: p.A2.SEE_ALL,
             next_component: v,
             interaction_component: "Back Button"
@@ -133,16 +133,16 @@ let N = e => {
                 }), (0, i.jsx)(o.L, {
                     innerRef: R,
                     onChange: e => {
-                        e && !L && (A.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        e && !D && (A.default.track(C.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                             location_stack: P
-                        }), D(!0))
+                        }), L(!0))
                     },
                     children: (0, i.jsx)("div", {
                         ref: R,
                         className: f._Z
                     })
                 }), (0, i.jsx)("img", {
-                    src: b,
+                    src: N,
                     className: f.Kw,
                     width: 112,
                     height: 85,

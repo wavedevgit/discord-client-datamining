@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(532624),
     I = n(975571),
     f = n(723702),
-    b = n(350535),
-    N = n(958831),
+    N = n(350535),
+    b = n(958831),
     v = n(790174),
     O = n(652215),
     j = n(650583),
@@ -33,13 +33,13 @@ var i = n(627968),
     y = n(924348),
     P = n(473169);
 
-function L(e) {
+function D(e) {
     let {
         children: t
     } = e;
     return t([A.Q_.MESSAGE, A.Q_.NAVIGATION, A.Q_.DND, A.Q_.CHAT, A.Q_.VOICE_AND_VIDEO, A.Q_.MISCELLANEOUS])
 }
-class D extends s.PureComponent {
+class L extends s.PureComponent {
     handleActionChanged = e => {
         u.A.setKeybind({
             ...this.props.keybind,
@@ -67,7 +67,7 @@ class D extends s.PureComponent {
     renderMessage() {
         let {
             keybind: e
-        } = this.props, t = b.dI(e.shortcut);
+        } = this.props, t = N.dI(e.shortcut);
         return m.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: R.intl.string(R.t["7lQlw3"])
@@ -137,7 +137,7 @@ class D extends s.PureComponent {
         let {
             action: e
         } = this.props.keybind;
-        return e === O.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(N.A, {
+        return e === O.hCu.SWITCH_TO_VOICE_CHANNEL ? (0, i.jsx)(b.A, {
             keybind: this.props.keybind
         }) : void 0
     }
@@ -260,7 +260,7 @@ class G extends s.PureComponent {
         u.A.addKeybind()
     };renderKeybinds(e) {
         return e.map((t, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(D, {
+            children: [(0, i.jsx)(L, {
                 keybind: t,
                 keybindDescriptions: this.keybindDescriptions,
                 keybindActionTypes: this.keybindActionTypes
@@ -334,7 +334,7 @@ class G extends s.PureComponent {
                             })]
                         })
                     })
-                }), (0, i.jsx)(L, {
+                }), (0, i.jsx)(D, {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
                             let n = (0, A.Gm)(e),

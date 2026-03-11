@@ -30,17 +30,17 @@ function d(e) {
         stickToMarkers: C,
         fieldLayout: I,
         usePersistentBadge: f,
-        getDismissibleBadges: b
-    } = t, [N] = s.useState(() => d()), v = p?.(), O = g(), j = A?.(), R = m?.(), y = h?.(), P = _?.(), L = f?.(), D = b?.(), G = (0, a.A)({
-        persistentBadge: L,
-        dismissibleBadges: D
+        getDismissibleBadges: N
+    } = t, [b] = s.useState(() => d()), v = p?.(), O = g(), j = A?.(), R = m?.(), y = h?.(), P = _?.(), D = f?.(), L = N?.(), G = (0, a.A)({
+        persistentBadge: D,
+        dismissibleBadges: L
     }), M = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: O,
             description: j,
             disabled: y,
-            initialValue: N,
+            initialValue: b,
             value: v,
             minValue: c,
             maxValue: u,

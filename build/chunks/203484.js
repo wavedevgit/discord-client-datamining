@@ -1,13 +1,13 @@
 /** chunk id: 203484 params = (module,exports,require) **/
 l.d(t, {
-    O: () => o
+    O: () => s
 });
 var a = l(226846),
     n = l(159176),
     r = l(948409),
     i = l(750343),
-    s = l(102957);
-let o = {
+    o = l(102957);
+let s = {
     title: "Miscellaneous",
-    stories: [n.A, r.F, i.$, a.q, s.r]
+    stories: [n.A, r.F, i.$, a.q, o.r]
 }

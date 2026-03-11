@@ -1,82 +1,81 @@
 /** chunk id: 953756 params = (module,exports,require) **/
-"use strict";
-r.d(t, {
-    Hq: () => l,
-    O7: () => o,
-    zn: () => _
+n.d(t, {
+    Hq: () => o,
+    O7: () => r,
+    zn: () => c
 });
-var n = r(627968),
-    i = r(64700);
-let a = i.createContext(null),
-    o = {
+var l = n(627968),
+    s = n(64700);
+let a = s.createContext(null),
+    r = {
         Root(e) {
             let {
                 containerInnerWidth: t,
-                children: r
-            } = e, o = i.useMemo(() => ({
+                children: n
+            } = e, r = s.useMemo(() => ({
                 isParentWidthLimited: !0,
                 parentContainerInnerWidth: t
             }), [t]);
-            return (0, n.jsx)(a.Provider, {
-                value: o,
-                children: r
+            return (0, l.jsx)(a.Provider, {
+                value: r,
+                children: n
             })
         },
         NestedContainer(e) {
             let {
                 containerOuterWidth: t,
-                containerInnerWidth: r,
-                children: o
+                containerInnerWidth: n,
+                children: r
             } = e, {
-                isParentWidthLimited: l,
-                parentContainerInnerWidth: _
-            } = s(), c = l && _ === t, d = i.useMemo(() => ({
-                isParentWidthLimited: c,
-                parentContainerInnerWidth: r
-            }), [c, r]);
-            return (0, n.jsx)(a.Provider, {
-                value: d,
-                children: o
+                isParentWidthLimited: o,
+                parentContainerInnerWidth: c
+            } = i(), d = o && c === t, u = s.useMemo(() => ({
+                isParentWidthLimited: d,
+                parentContainerInnerWidth: n
+            }), [d, n]);
+            return (0, l.jsx)(a.Provider, {
+                value: u,
+                children: r
             })
         },
         AutoMeasuredNestedContainer(e) {
             let {
                 children: t
-            } = e, [r, i, a] = _(!0);
-            return (0, n.jsx)(o.NestedContainer, {
-                containerOuterWidth: i,
+            } = e, [n, s, a] = c(!0);
+            return (0, l.jsx)(r.NestedContainer, {
+                containerOuterWidth: s,
                 containerInnerWidth: a,
-                children: t(r)
+                children: t(n)
             })
         }
     };
 
-function s() {
-    let e = i.useContext(a);
+function i() {
+    let e = s.useContext(a);
     if (null == e) throw Error("Cannot use the ComponentLayoutLimitContext system when not within the context");
     return e
 }
 
-function l(e) {
+function o(e) {
     let {
         isParentWidthLimited: t,
-        parentContainerInnerWidth: r
-    } = s();
-    return t && r === e
+        parentContainerInnerWidth: n
+    } = i();
+    return t && n === e
 }
 
-function _() {
+function c() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-        t = i.useRef(null),
-        [r, n] = i.useState(0),
-        [a, o] = i.useState(0);
-    return i.useLayoutEffect(() => {
+        t = s.useRef(null),
+        [n, l] = s.useState(0),
+        [a, r] = s.useState(0);
+    return s.useLayoutEffect(() => {
         if (null == t.current) return;
-        let r = new ResizeObserver(() => {
-            let r = t.current.getBoundingClientRect().width,
-                i = getComputedStyle(t.current);
-            n(r + (parseFloat(i.marginLeft) + parseFloat(i.marginRight))), e && o(r - (parseFloat(i.paddingLeft) + parseFloat(i.paddingRight) + parseFloat(i.borderLeftWidth) + parseFloat(i.borderRightWidth)))
+        let n = new ResizeObserver(() => {
+            let n = t.current.getBoundingClientRect().width,
+                s = getComputedStyle(t.current);
+            l(n + (parseFloat(s.marginLeft) + parseFloat(s.marginRight))), e && r(n - (parseFloat(s.paddingLeft) + parseFloat(s.paddingRight) + parseFloat(s.borderLeftWidth) + parseFloat(s.borderRightWidth)))
         });
-        return r.observe(t.current), () => r.disconnect()
-    }, [e]), [t, r, a]
+        return n.observe(t.current), () => n.disconnect()
+    }, [e]), [t, n, a]
 }

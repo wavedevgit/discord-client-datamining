@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(397927),
     i = l(166532),
-    s = l(231018),
-    o = l(685944),
+    o = l(231018),
+    s = l(685944),
     u = l(623020),
     c = l(927578),
     d = l(412463),
@@ -16,8 +16,8 @@ var a = l(627968),
     h = l(652215),
     x = l(788868),
     b = l(985018),
-    g = l(749226);
-let y = [{
+    y = l(749226);
+let g = [{
         key: i.pn.REVIEW,
         renderStep: e => (0, a.jsx)(u._, {
             ...e
@@ -102,9 +102,9 @@ let y = [{
                     applicationId: h.FYj
                 }), v = c.Ay.isPremiumSku(t);
                 return x || null == b || v ? (0, a.jsx)(p.k, {}) : (0, a.jsxs)("div", {
-                    className: g.Cd,
+                    className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: y,
+                        stepConfigs: g,
                         analyticsLocations: r,
                         applicationId: h.FYj,
                         initialPlanId: void 0,
@@ -115,9 +115,9 @@ let y = [{
                         purchaseType: h.VVm.ONE_TIME,
                         disablePurchases: !0,
                         excludeSubscriptionPlansBySKU: !0,
-                        renderHeader: (e, t, n) => l ? (0, a.jsx)(s.A, {
+                        renderHeader: (e, t, n) => l ? (0, a.jsx)(o.A, {
                             step: n
-                        }) : (0, a.jsx)(o.A, {
+                        }) : (0, a.jsx)(s.A, {
                             step: n,
                             onClose: () => t(!1)
                         }),
@@ -145,8 +145,8 @@ let y = [{
                     hideErrors: r
                 } = e, {
                     analyticsLocations: i,
-                    loadId: s,
-                    handleClose: o,
+                    loadId: o,
+                    handleClose: s,
                     handleComplete: u,
                     isFetching: m,
                     sku: b
@@ -160,27 +160,27 @@ let y = [{
                 }, [E, S]);
                 let {
                     isLoadedForPremiumSKUs: C,
-                    selectedPlan: P
+                    selectedPlan: A
                 } = (0, d.n1)({
                     subscriptionPlanId: S
                 });
-                return !m && null != b && C && v && null != P ? (0, a.jsxs)("div", {
-                    className: g.Cd,
+                return !m && null != b && C && v && null != A ? (0, a.jsxs)("div", {
+                    className: y.Cd,
                     children: [(0, a.jsx)(d.dL, {
-                        stepConfigs: y,
+                        stepConfigs: g,
                         analyticsLocations: i,
                         applicationId: x.tv,
                         initialPlanId: E,
                         skuId: t,
                         isGift: l,
                         hideErrors: r,
-                        loadId: s,
+                        loadId: o,
                         purchaseType: h.VVm.SUBSCRIPTION,
                         disablePurchases: !0,
-                        onClose: o,
+                        onClose: s,
                         onComplete: u,
                         paymentContextOverrides: {
-                            selectedPlan: P,
+                            selectedPlan: A,
                             setSelectedPlanId: j
                         }
                     }), (0, a.jsx)(f, {})]

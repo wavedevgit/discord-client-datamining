@@ -46,8 +46,8 @@ function A() {
         verticalSpacing: I
     } = (0, r.Or)(), {
         setHorizontalSpacing: f,
-        setVerticalSpacing: b
-    } = r.Or.getState(), N = c.HZ.useSetting();
+        setVerticalSpacing: N
+    } = r.Or.getState(), b = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -59,9 +59,9 @@ function A() {
         children: [(0, i.jsx)(l.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: N,
+            checked: b,
             action: () => {
-                c.HZ.updateSetting(!N)
+                c.HZ.updateSetting(!b)
             }
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
@@ -194,7 +194,7 @@ function A() {
                     value: I,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => b(e),
+                    onChange: e => N(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`
                 })

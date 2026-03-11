@@ -53,21 +53,21 @@ let T = e => {
             leftAlignHeaders: S = !1,
             showAllPerksButton: C,
             headerClassname: I
-        } = e, f = s.useRef(null), b = n === p.cJ.WHATS_NEW, N = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, m.E)();
+        } = e, f = s.useRef(null), N = n === p.cJ.WHATS_NEW, b = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, m.E)();
         s.useEffect(() => {
-            b && v()
-        }, [v, b]);
-        let O = (0, x.G4)(b),
+            N && v()
+        }, [v, N]);
+        let O = (0, x.G4)(N),
             j = (0, h.A)(),
             R = (0, x.LQ)(),
             {
                 fractionalState: y
             } = (0, d.A)(),
             P = (0, u.d)(),
-            L = _.A.useExperiment({
+            D = _.A.useExperiment({
                 location: "PremiumPerks"
             }).enabled,
-            D = (0, g.O9)(),
+            L = (0, g.O9)(),
             G = (0, x.vx)({
                 perksCards: j,
                 variant: n,
@@ -75,9 +75,9 @@ let T = e => {
                 isPremiumSubscriber: R,
                 fractionalState: y,
                 isInReverseTrial: P,
-                recurring3PPromotionExperiment: L,
-                showPremiumGroup: D,
-                isPremiumGroupMember: N?.isPremiumGroupMember()
+                recurring3PPromotionExperiment: D,
+                showPremiumGroup: L,
+                isPremiumGroupMember: b?.isPremiumGroupMember()
             }),
             M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
@@ -97,7 +97,7 @@ let T = e => {
                 className: a()(E.VA, {
                     [E.VA]: null == C || S,
                     [E.Xx]: null != C && !S,
-                    [E.Ij]: b || S,
+                    [E.Ij]: N || S,
                     [E.Ob]: M,
                     [E.dO]: S,
                     [E.br]: !S

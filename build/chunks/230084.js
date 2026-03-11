@@ -34,7 +34,7 @@ function h(e) {
         withHighlight: I = !1
     } = e, {
         newestAnalyticsLocation: f
-    } = (0, d.Ay)(), b = I ? o.wLn : r.$n, N = s.useCallback(() => {
+    } = (0, d.Ay)(), N = I ? o.wLn : r.$n, b = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
             analyticsSource: f,
@@ -51,12 +51,12 @@ function h(e) {
         forcedDivider: C,
         children: (0, i.jsxs)("div", {
             className: A.NC,
-            children: [(0, i.jsx)(b, {
+            children: [(0, i.jsx)(N, {
                 className: a()({
                     [A.yj]: I
                 }),
                 size: r.$n.Sizes.SMALL,
-                onClick: N,
+                onClick: b,
                 children: p ?? g.intl.string(g.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,

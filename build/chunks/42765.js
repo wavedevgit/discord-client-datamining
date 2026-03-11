@@ -50,7 +50,7 @@ function x() {
             label: h.intl.string(h.t["5k5OFp"])
         };
     e && (C.unshift(f), I.unshift(f));
-    let b = {
+    let N = {
         isDisabled: n,
         tooltipText: t ? h.intl.string(p.default["6Af/cw"]) : void 0
     };
@@ -64,7 +64,7 @@ function x() {
                 goreContentFriendDm: e
             }),
             options: C,
-            ...b
+            ...N
         }), (0, i.jsx)(A.A, {
             title: h.intl.string(h.t["Yh+HX1"]),
             value: T,
@@ -72,7 +72,7 @@ function x() {
                 goreContentNonFriendDm: e
             }),
             options: C,
-            ...b
+            ...N
         }), (0, i.jsx)(A.A, {
             title: h.intl.string(h.t["FP+a42"]),
             value: x,

@@ -24,16 +24,16 @@ var i = n(417597),
     C = n(795710),
     I = n(484813),
     f = n(1748),
-    b = n(772473),
-    N = n(64514),
+    N = n(772473),
+    b = n(64514),
     v = n(121818),
     O = n(536851),
     j = n(992186),
     R = n(629139),
     y = n(753563),
     P = n(584378),
-    L = n(747918),
-    D = n(330290),
+    D = n(747918),
+    L = n(330290),
     G = n(252261),
     M = n(106731);
 let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
@@ -111,7 +111,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             moreGuilds: {
                 title: g.intl.string(g.t.Bv8Pfk),
                 description: g.intl.string(g.t.JMfaTU),
-                imageSource: U(s, p, L),
+                imageSource: U(s, p, D),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
@@ -129,19 +129,19 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             stickers: {
                 title: g.intl.string(g.t["1c+xwT"]),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, I, D),
+                imageSource: U(s, I, L),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, I, D),
+                imageSource: U(s, I, L),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, I, D),
+                imageSource: U(s, I, L),
                 imageClassName: t.stickersImage
             },
             streaming: {
@@ -153,7 +153,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             superReactions: {
                 title: g.intl.string(g.t["uZt5q/"]),
                 description: g.intl.string(g.t.ZK3ZoX),
-                imageSource: U(s, f, b),
+                imageSource: U(s, f, N),
                 imageClassName: t.superReactionsImage
             },
             upload: {
@@ -169,7 +169,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             videoBackground: {
                 title: g.intl.string(g.t.NaGpTf),
                 description: g.intl.string(g.t["A8O/Qw"]),
-                imageSource: U(s, N, v),
+                imageSource: U(s, b, v),
                 imageClassName: t.videoBackgroundImage
             }
         }

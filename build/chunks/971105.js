@@ -1,6 +1,6 @@
 /** chunk id: 971105 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(927578),
     I = n(61509),
     f = n(652215),
-    b = n(788868),
-    N = n(818348),
+    N = n(788868),
+    b = n(818348),
     v = n(985018),
     O = n(166789),
     j = n(124953);
@@ -99,12 +99,12 @@ class y extends s.PureComponent {
             children: [(0, i.jsx)("div", {
                 className: O.BF,
                 children: v.intl.format(v.t["6mIX6s"], {
-                    paymentGatewayName: N.qm[e.paymentGateway]
+                    paymentGatewayName: b.qm[e.paymentGateway]
                 })
             }), (0, i.jsx)("div", {
                 className: O.Q2,
                 children: v.intl.format(v.t.eG0uZB, {
-                    paymentGatewayName: N.qm[e.paymentGateway],
+                    paymentGatewayName: b.qm[e.paymentGateway],
                     billingHistoryLink: (0, C.tW)(e.paymentGateway, "BILLING_HISTORY")
                 })
             })]
@@ -150,10 +150,10 @@ class y extends s.PureComponent {
 function P(e) {
     let t = e.skuId,
         n = e.subscription?.items[0].planId;
-    return !(null == t || null == n || Object.values(b.pe).includes(t) || (0, C.ys)(n))
+    return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, C.ys)(n))
 }
 
-function L(e) {
+function D(e) {
     let t = (0, c.bG)([E.A], () => E.A.getPayments()),
         n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
         l = s.useMemo(() => new Set(t.filter(P).map(e => {

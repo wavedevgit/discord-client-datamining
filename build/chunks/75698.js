@@ -26,16 +26,16 @@ var i = n(627968),
     C = n(263063),
     I = n(496885),
     f = n(962173),
-    b = n(71393),
-    N = n(351906),
+    N = n(71393),
+    b = n(351906),
     v = n(954571),
     O = n(975571),
     j = n(773669),
     R = n(747454),
     y = n(801264),
     P = n(790174),
-    L = n(131678),
-    D = n(138410),
+    D = n(131678),
+    L = n(138410),
     G = n(652215),
     M = n(783419),
     U = n(985018),
@@ -53,7 +53,7 @@ let V = e => {
             joinErrorMessage: "" === f.A.joinErrorMessage(n.id) ? U.intl.string(U.t.j2d6Km) : f.A.joinErrorMessage(n.id),
             showJoinErrorMessage: void 0 !== f.A.joinErrorMessage(n.id)
         }), [n.id]);
-    return null != (0, o.bG)([b.A], () => b.A.getGuild(n.guild.id), [n.guild.id]) || (t = (0, i.jsx)(_.Button, {
+    return null != (0, o.bG)([N.A], () => N.A.getGuild(n.guild.id), [n.guild.id]) || (t = (0, i.jsx)(_.Button, {
         size: "sm",
         onClick: function() {
             A.A.joinServer(n.id, () => {})
@@ -98,9 +98,9 @@ function w(e) {
             onDisconnect: h,
             account: C,
             theme: f,
-            locale: b
+            locale: N
         } = e,
-        [N, v] = s.useState(C.friendSync),
+        [b, v] = s.useState(C.friendSync),
         [j, P] = s.useState(C.visibility),
         [w, H] = s.useState(C.metadataVisibility),
         [B, F] = s.useState(C.showActivity),
@@ -205,10 +205,10 @@ function w(e) {
                     color: "currentColor"
                 })
             })]
-        })), C.twoWayLink ? null : C.type === G.fg2.XBOX ? (0, i.jsx)(D._, {}) : C.type === G.fg2.PLAYSTATION ? (0, i.jsx)(L.j, {}) : null, function(e) {
+        })), C.twoWayLink ? null : C.type === G.fg2.XBOX ? (0, i.jsx)(L._, {}) : C.type === G.fg2.PLAYSTATION ? (0, i.jsx)(D.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
-                s = (0, E.An)(t[M.pK.CREATED_AT], b);
+                s = (0, E.An)(t[M.pK.CREATED_AT], N);
             switch (e.type) {
                 case G.fg2.REDDIT:
                     n = (0, S.xE)(t, k.Nz);
@@ -275,7 +275,7 @@ function w(e) {
             })
         }(C), (G.txh.has(C.type) && (o = (0, i.jsx)(_.dOG, {
             label: U.intl.string(U.t["+KCMSi"]),
-            checked: N,
+            checked: b,
             onChange: function(e) {
                 v(e), A.A.setFriendSync(C.type, C.id, e)
             }
@@ -433,7 +433,7 @@ function Y(e) {
 }
 
 function z() {
-    let e = (0, o.bG)([N.A], () => N.A.hidePersonalInformation),
+    let e = (0, o.bG)([b.A], () => b.A.hidePersonalInformation),
         t = (0, o.bG)([f.A], () => f.A.isFetching()),
         n = (0, o.bG)([f.A], () => f.A.getAccounts()),
         s = (0, h.Ay)(),

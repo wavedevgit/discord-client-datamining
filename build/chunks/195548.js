@@ -24,12 +24,12 @@ var i = n(627968),
     C = n(428854),
     I = n(259274),
     f = n(531525),
-    b = n(985018);
+    N = n(985018);
 
-function N() {
+function b() {
     return (0, d.lX)("ProfilePrivacyCategory") ? (0, i.jsx)(T.A, {
-        title: b.intl.string(b.t.ul884f),
-        description: b.intl.string(b.t.J0SFL2),
+        title: N.intl.string(N.t.ul884f),
+        description: N.intl.string(N.t.J0SFL2),
         webSetting: f.H.PRIVACY_PROFILE_VISIBILITY,
         children: (0, i.jsx)(S.A, {})
     }) : null
@@ -37,8 +37,8 @@ function N() {
 
 function v() {
     return (0, i.jsxs)(T.A, {
-        title: b.intl.string(b.t.WWaFn5),
-        description: b.intl.format(b.t["/6sFWa"], {
+        title: N.intl.string(N.t.WWaFn5),
+        description: N.intl.format(N.t["/6sFWa"], {
             helpArticle: (0, o.aW)()
         }),
         webSetting: f.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
@@ -48,7 +48,7 @@ function v() {
 
 function O() {
     return (0, i.jsx)(T.A, {
-        title: b.intl.string(b.t.BG7QsQ),
+        title: N.intl.string(N.t.BG7QsQ),
         webSetting: f.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
         children: (0, i.jsx)(_.A, {})
     })
@@ -56,7 +56,7 @@ function O() {
 
 function j() {
     return (0, i.jsxs)(T.A, {
-        title: b.intl.string(b.t.SRZyHg),
+        title: N.intl.string(N.t.SRZyHg),
         webSetting: f.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
         children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(m.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(E.h, {
             setting: f.H.PRIVACY_DATA_CLIPS,
@@ -69,12 +69,12 @@ function R() {
     return (0, a.Ay)(() => {
         (0, l.Q)(), (0, c.s)()
     }), (0, i.jsx)(u.R, {
-        header: b.intl.string(b.t.OAuOHD),
+        header: N.intl.string(N.t.OAuOHD),
         notice: (0, i.jsx)(C.A, {
             page: C.R.DATA_AND_PRIVACY
         }),
         children: (0, i.jsxs)(s.lVW, {
-            children: [(0, i.jsx)(j, {}), (0, i.jsx)(N, {}), (0, i.jsx)(O, {}), (0, i.jsx)(v, {})]
+            children: [(0, i.jsx)(j, {}), (0, i.jsx)(b, {}), (0, i.jsx)(O, {}), (0, i.jsx)(v, {})]
         })
     })
 }

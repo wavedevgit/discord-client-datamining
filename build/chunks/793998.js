@@ -25,23 +25,23 @@ var i = n(627968),
     C = n(102615),
     I = n(246109),
     f = n(452141),
-    b = n(888772),
-    N = n(614749),
+    N = n(888772),
+    b = n(614749),
     v = n(768985),
     O = n(191627),
     j = n(652215),
     R = n(842130),
     y = n(985018),
     P = n(914280);
-let L = {
-        [O.u9.REQUESTS]: b.A,
+let D = {
+        [O.u9.REQUESTS]: N.A,
         [O.u9.ACTIVITY]: f.A,
-        [O.u9.SETTINGS]: N.A,
+        [O.u9.SETTINGS]: b.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
         [O.u9.DATA_AND_PRIVACY]: I.A
     },
-    D = {
-        [O.u9.REQUESTS]: b.A,
+    L = {
+        [O.u9.REQUESTS]: N.A,
         [O.u9.ACTIVITY]: f.A,
         [O.u9.CONTENT_AND_SOCIAL]: C.A,
         [O.u9.DATA_AND_PRIVACY]: I.A
@@ -145,7 +145,7 @@ function k() {
             }
         });
     if (l) return null;
-    let a = L[n];
+    let a = D[n];
     return (0, i.jsxs)("main", {
         className: P.kL,
         "aria-label": y.intl.string(R.default.RZqaJn),
@@ -184,7 +184,7 @@ function V() {
             n && t && void 0 === e && p.dm.updateSetting(!0)
         }, [n, t]), I) return null;
     let f = S !== O.u9.SETTINGS ? S : O.u9.ACTIVITY,
-        b = D[f];
+        N = L[f];
     return (0, i.jsx)(_.f5, {
         value: e,
         children: (0, i.jsxs)("main", {
@@ -205,7 +205,7 @@ function V() {
                 children: (0, i.jsx)(d.HOs, {
                     children: (0, i.jsx)("div", {
                         className: P.O4,
-                        children: m ? (0, i.jsx)(G, {}) : (0, i.jsx)(b, {})
+                        children: m ? (0, i.jsx)(G, {}) : (0, i.jsx)(N, {})
                     })
                 })
             })]

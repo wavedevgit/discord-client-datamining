@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(827734),
     i = l(116833),
-    s = l(397927),
-    o = l(301679),
+    o = l(397927),
+    s = l(301679),
     u = l(149757),
     c = l(788868),
     d = l(985018);
@@ -62,8 +62,8 @@ let p = {
             badgeId: h,
             showProgress: x,
             progressCircleText: b,
-            progressCirclePercent: g,
-            progressCircleUrgency: y,
+            progressCirclePercent: y,
+            progressCircleUrgency: g,
             delay: f,
             size: v,
             gradientColor: E,
@@ -77,28 +77,28 @@ let p = {
             emerald: c.Ac.PREMIUM_TENURE_36_MONTH,
             ruby: c.Ac.PREMIUM_TENURE_60_MONTH,
             opal: c.Ac.PREMIUM_TENURE_72_MONTH
-        })[h], [h]), P = null != C ? (0, u.I)(C).standard : null, A = n.useMemo(() => {
+        })[h], [h]), A = null != C ? (0, u.I)(C).standard : null, P = n.useMemo(() => {
             if (null == C) return "";
             let e = c.VD[C];
             return (d.intl.string(d.t.lG6a5x) + " " + d.intl.string(e.nameUnformatted)).toLocaleUpperCase()
         }, [C]), R = n.useMemo(() => {
-            if (!r || null == P) return;
+            if (!r || null == A) return;
             let e = x ? {
                 progressCircleText: b,
-                progressCirclePercent: g,
-                progressCircleUrgency: y
+                progressCirclePercent: y,
+                progressCircleUrgency: g
             } : {};
             return {
                 type: "dynamic",
                 component: i.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE,
                 aspectRatio: "6/4",
                 props: {
-                    src: P,
-                    alt: A,
+                    src: A,
+                    alt: P,
                     ...e
                 }
             }
-        }, [r, P, A, x, b, g, y]), _ = {
+        }, [r, A, P, x, b, y, g]), _ = {
             title: t,
             body: l,
             graphic: R,
@@ -114,7 +114,7 @@ let p = {
             estimatedTooltipHeight: S
         };
         return (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(s.Text, {
+            children: [(0, a.jsx)(o.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: "Hover or focus these buttons."
@@ -127,18 +127,18 @@ let p = {
                     width: "100%",
                     marginTop: "200px"
                 },
-                children: [(0, a.jsx)(o.L, {
+                children: [(0, a.jsx)(s.L, {
                     targetElementRef: j,
                     ..._,
-                    children: (0, a.jsx)(s.Button, {
+                    children: (0, a.jsx)(o.Button, {
                         buttonRef: j,
                         variant: "primary",
                         text: "Left"
                     })
-                }), (0, a.jsx)(o.L, {
+                }), (0, a.jsx)(s.L, {
                     targetElementRef: T,
                     ..._,
-                    children: (0, a.jsx)(s.Button, {
+                    children: (0, a.jsx)(o.Button, {
                         buttonRef: T,
                         variant: "primary",
                         text: "Right"

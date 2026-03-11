@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => T,
     dd: () => E,
-    lD: () => b
+    lD: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -56,7 +56,7 @@ function T(e) {
             gap: 32
         }), (0, i.jsx)(I, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(b, {})]
+        }), (0, i.jsx)(N, {})]
     })
 }
 
@@ -160,7 +160,7 @@ function f() {
     })
 }
 
-function b() {
+function N() {
     return (0, i.jsx)(c.x, {
         setting: A.H.ACTIVITY_PRIVACY_TOS,
         children: (0, i.jsx)(a.ZpM, {

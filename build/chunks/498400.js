@@ -24,20 +24,20 @@ var i = n(627968),
     C = n(287809),
     I = n(295405),
     f = n(166403),
-    b = n(954571),
-    N = n(474090),
+    N = n(954571),
+    b = n(474090),
     v = n(560138),
     O = n(694080),
     j = n(553081),
     R = n(422936),
     y = n(234419),
     P = n(558533),
-    L = n(788868),
-    D = n(652215),
+    D = n(788868),
+    L = n(652215),
     G = n(615434);
 let M = function(e) {
     let {
-        entrypoint: t = L.Mf.UserSettings
+        entrypoint: t = D.Mf.UserSettings
     } = e;
     (0, T.P)(E.b);
     let n = (0, h.H)(),
@@ -51,20 +51,20 @@ let M = function(e) {
         w = V?.id,
         H = (0, y.V)(),
         B = (0, R.O)(),
-        F = (0, p.Y)(L.T7),
+        F = (0, p.Y)(D.T7),
         [Y, z] = s.useState(!0),
         X = s.useRef(0),
-        W = (0, N.YE)(V, L.PremiumTypes.TIER_2),
+        W = (0, b.YE)(V, D.PremiumTypes.TIER_2),
         K = (0, r.bG)([v.A], () => v.A.hasFetched);
     s.useEffect(() => {
         K || c.xG()
     }, [K]), s.useEffect(() => {
         d.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, D.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
+            await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, L.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
         })
     }, []), s.useEffect(() => {
-        Y || b.default.track(D.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        Y || N.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
@@ -72,7 +72,7 @@ let M = function(e) {
         n && (null != H || null != B) && (0, O.u1)(H, B)
     }, [n, H, B]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
-        q = t === L.Mf.ApplicationStoreHome,
+        q = t === D.Mf.ApplicationStoreHome,
         J = Z ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(x.uK, {}) : q && W ? (0, i.jsx)(m.f5, {
             value: M,
             children: (0, i.jsx)(j.A, {

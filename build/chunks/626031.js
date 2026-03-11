@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(503698),
     i = l.n(r),
-    s = l(490249),
-    o = l(397927),
+    o = l(490249),
+    s = l(397927),
     u = l(475743),
     c = l(626584),
     d = l(572009),
@@ -16,8 +16,8 @@ var a = l(627968),
     h = l(467043);
 let x = new c.A("BalanceCounter"),
     b = (0, d._$)(void 0) === m.B.PRODUCTION,
-    g = e => null == e ? 0 : `${e.toFixed(0)}`.length,
-    y = e => {
+    y = e => null == e ? 0 : `${e.toFixed(0)}`.length,
+    g = e => {
         let {
             value: t,
             onSetDigitCount: l,
@@ -37,19 +37,19 @@ let x = new c.A("BalanceCounter"),
                 totalDelta: Math.abs(e)
             }
         }, [t, r]);
-        let y = t ?? 0,
-            f = m.current ?? y,
+        let g = t ?? 0,
+            f = m.current ?? g,
             {
                 duration: v,
                 delay: E
-            } = (0, p.Y)(y - f, u),
+            } = (0, p.Y)(g - f, u),
             {
                 number: S
-            } = (0, o.zhh)({
+            } = (0, s.zhh)({
                 from: {
-                    number: m.current ?? y
+                    number: m.current ?? g
                 },
-                number: y,
+                number: g,
                 config: {
                     mass: 1,
                     tension: 20,
@@ -58,21 +58,21 @@ let x = new c.A("BalanceCounter"),
                 },
                 delay: E,
                 onStart: () => {
-                    l(g(f))
+                    l(y(f))
                 },
                 onRest: () => {
                     if (d(c + 1), i(), !b && null !== h.current && null !== m.current) {
                         let e = Date.now();
                         x.log("Balance Counter finished updating: ", {
                             time: e - h.current.lastChangedAt,
-                            delta: y - m.current
+                            delta: g - m.current
                         })
                     }
-                    l(g(y)), m.current = y
+                    l(y(g)), m.current = g
                 }
             }),
-            j = g(Math.max(t ?? 0, S.get()));
-        return (0, a.jsx)(s.animated.div, {
+            j = y(Math.max(t ?? 0, S.get()));
+        return (0, a.jsx)(o.animated.div, {
             style: {
                 width: `calc(${j}ch)`
             },
@@ -84,15 +84,15 @@ let x = new c.A("BalanceCounter"),
             value: t,
             className: l,
             ...r
-        } = e, s = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => g(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${s?0:x}ch`;
-        return (0, a.jsx)(o.Text, {
+        } = e, o = null === t, [c, d] = (0, n.useState)(null), p = (0, n.useMemo)(() => y(t), [t]), m = (0, u.A)(p) ?? 0, x = (0, n.useMemo)(() => null === c ? Math.max(m, p) : Math.max(p, c), [m, p, c]), b = `${o?0:x}ch`;
+        return (0, a.jsx)(s.Text, {
             variant: "text-md/semibold",
-            className: i()(h.S, s ? void 0 : h.r, l),
+            className: i()(h.S, o ? void 0 : h.r, l),
             style: {
                 width: b,
-                opacity: s ? "0" : 1
+                opacity: o ? "0" : 1
             },
-            children: s ? null : (0, a.jsx)(y, {
+            children: o ? null : (0, a.jsx)(g, {
                 onSetDigitCount: e => {
                     e !== c && d(e)
                 },

@@ -24,16 +24,16 @@ var i = n(627968),
     C = n(704591),
     I = n(682829),
     f = n(103738),
-    b = n(745109),
-    N = n(890164),
+    N = n(745109),
+    b = n(890164),
     v = n(836602),
     O = n(540999),
     j = n(111162),
     R = n(954571),
     y = n(957565),
     P = n(307600),
-    L = n(723702),
-    D = n(809465),
+    D = n(723702),
+    L = n(809465),
     G = n(517235),
     M = n(81107),
     U = n(805577),
@@ -99,16 +99,16 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
             isInapproprateConversationsDefaultOn: eC,
             paymentsBlocked: eI,
             isEligibleForQuests: ef,
-            isStricterMessageRequestsEnabled: eb,
-            hasLibraryApplication: eN,
+            isStricterMessageRequestsEnabled: eN,
+            hasLibraryApplication: eb,
             hasTOTPEnabled: ev,
             developerMode: eO,
             isAdultUser: ej,
             hasSecureFramesVerifiedUserIds: eR,
             hasIgnoredUsers: ey,
             hasBlockedUsers: eP,
-            hasAgeGatedFeature: eL,
-            isHDRAccessibilitySettingExperimentEnabled: eD
+            hasAgeGatedFeature: eD,
+            isHDRAccessibilitySettingExperimentEnabled: eL
         } = e;
         return Object.freeze({
             [ea.H.SEARCH_NO_RESULTS]: {
@@ -146,7 +146,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eo.intl.string(eo.t["/52UYy"]), eo.intl.string(eo.t.sK0dmH), eo.intl.string(eo.t.XxRj7f), eo.intl.string(eo.t.DVywUB), eo.intl.string(eo.t["9KiIz6"])],
                 section: er.nc_.ACCOUNT,
                 parent: ea.H.ACCOUNT_PROFILE,
-                predicate: () => eL
+                predicate: () => eD
             },
             [ea.H.ACCOUNT_USERNAME]: {
                 searchableTitles: [eo.intl.string(eo.t["+JkHPw"])],
@@ -226,7 +226,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eo.intl.string(eo.t["vi7f+q"])],
                 label: eo.intl.string(eo.t["vi7f+q"]),
                 ariaLabel: eo.intl.string(eo.t["vi7f+q"]),
-                element: b.A,
+                element: N.A,
                 newIndicator: (0, i.jsx)(em, {}),
                 newIndicatorDismissibleContentTypes: [...eA()],
                 notice: {
@@ -297,7 +297,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: er.nc_.DATA_AND_PRIVACY,
                 searchableTitles: [eo.intl.string(eo.t.WWaFn5)],
                 parent: ea.H.DATA_PRIVACY,
-                predicate: () => (0, L.isDesktop)()
+                predicate: () => (0, D.isDesktop)()
             },
             [ea.H.PRIVACY_AND_SAFETY_PERSISTENT_VERIFICATION_CODES]: {
                 section: er.nc_.DATA_AND_PRIVACY,
@@ -387,7 +387,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: er.nc_.CONTENT_AND_SOCIAL,
                 searchableTitles: [eo.intl.string(eo.t["3o2ojh"])],
                 parent: ea.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-                predicate: () => !eb
+                predicate: () => !eN
             },
             [ea.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2]: {
                 section: er.nc_.CONTENT_AND_SOCIAL,
@@ -463,7 +463,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: er.nc_.DATA_AND_PRIVACY,
                 searchableTitles: [eo.intl.string(eo.t.Qnf32C)],
                 parent: ea.H.DATA_PRIVACY,
-                predicate: () => (0, N.W1)("SettingsRendererConfig")
+                predicate: () => (0, b.W1)("SettingsRendererConfig")
             },
             [ea.H.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY]: {
                 section: er.nc_.DATA_AND_PRIVACY,
@@ -773,7 +773,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: er.nc_.ACCESSIBILITY,
                 searchableTitles: [eo.intl.string(eo.t.nemtgW), "HDR", eo.intl.string(eo.t["O/Gjvn"])],
                 parent: ea.H.ACCESSIBILITY,
-                predicate: () => eD
+                predicate: () => eL
             },
             [ea.H.ACCESSIBILITY_APPEARANCE_UPSELL]: {
                 section: er.nc_.ACCESSIBILITY,
@@ -943,14 +943,14 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 searchableTitles: [eo.intl.string(eo.t.ZkDZov)],
                 label: eo.intl.string(eo.t.ZkDZov),
                 element: en.A,
-                predicate: () => L.isPlatformEmbedded && (0, L.isWindows)()
+                predicate: () => D.isPlatformEmbedded && (0, D.isWindows)()
             },
             [ea.H.LINUX_SETTINGS]: {
                 section: er.nc_.LINUX,
                 searchableTitles: [eo.intl.string(eo.t["7pPjTW"])],
                 label: eo.intl.string(eo.t["7pPjTW"]),
                 element: eh,
-                predicate: () => L.isPlatformEmbedded && (0, L.isLinux)()
+                predicate: () => D.isPlatformEmbedded && (0, D.isLinux)()
             },
             [ea.H.SETTINGS_ADVANCED]: {
                 section: er.nc_.ADVANCED,
@@ -968,13 +968,13 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
                 section: er.nc_.ADVANCED,
                 searchableTitles: [eo.intl.string(eo.t["eOC/F2"])],
                 parent: ea.H.SETTINGS_ADVANCED,
-                predicate: () => L.isPlatformEmbedded && !(0, L.isMac)()
+                predicate: () => D.isPlatformEmbedded && !(0, D.isMac)()
             },
             [ea.H.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY]: {
                 section: er.nc_.ADVANCED,
                 searchableTitles: [eo.intl.string(eo.t.fi3UQN)],
                 parent: ea.H.SETTINGS_ADVANCED,
-                predicate: () => eN
+                predicate: () => eb
             },
             [ea.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
                 section: er.nc_.ADVANCED,
@@ -1301,7 +1301,7 @@ let e_ = () => [l.M.CLIENT_THEMES_SETTINGS_BADGE, l.M.DEKSTOP_CUSTOM_APP_ICON_BA
             },
             [ea.H.CLIENT_DEBUG_INFO]: {
                 section: _.Fq.CUSTOM,
-                element: D.A
+                element: L.A
             }
         })
     }

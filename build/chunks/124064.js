@@ -31,15 +31,15 @@ function E(e) {
         placeholder: E,
         currentBio: T,
         disabled: S = !1
-    } = e, [C, I] = s.useState(u ?? T), [f, b] = s.useState((0, r.x7)(C)), N = s.useRef(T), v = s.useRef(!1);
+    } = e, [C, I] = s.useState(u ?? T), [f, N] = s.useState((0, r.x7)(C)), b = s.useRef(T), v = s.useRef(!1);
     return s.useEffect(() => {
-        if (N.current !== T) {
+        if (b.current !== T) {
             let e = (0, r.x7)(T);
-            I(T), b(e)
+            I(T), N(e)
         }
-        N.current = T
+        b.current = T
     }, [T]), s.useEffect(() => {
-        void 0 !== u || C === T || v.current || (I(T), b((0, r.x7)(T)))
+        void 0 !== u || C === T || v.current || (I(T), N((0, r.x7)(T)))
     }, [u, T, C]), (0, i.jsxs)(_.A, {
         title: t,
         titleId: h,
@@ -53,7 +53,7 @@ function E(e) {
             innerClassName: m.Z,
             maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
-                t !== C && (I(t), b(n), d(t))
+                t !== C && (I(t), N(n), d(t))
             },
             placeholder: E,
             channel: p,

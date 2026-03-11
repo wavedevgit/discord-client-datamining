@@ -1,12 +1,12 @@
 /** chunk id: 624716 params = (module,exports,require) **/
 l.d(t, {
-    A: () => s
+    A: () => o
 });
 var a = l(627968),
     n = l(397927),
     r = l(486164),
     i = l(557464);
-let s = () => {
+let o = () => {
     let e = {
         title: "Sample Tooltip",
         body: "This is only to be for navigation items inside of the DM view",

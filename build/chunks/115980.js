@@ -1,6 +1,6 @@
 /** chunk id: 115980 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => D,
+    Ay: () => L,
     HG: () => R,
     OH: () => y,
     ac: () => P
@@ -27,8 +27,8 @@ var i = n(627968),
     C = n(493068),
     I = n(840065),
     f = n(531525),
-    b = n(652215),
-    N = n(985018),
+    N = n(652215),
+    b = n(985018),
     v = n(231182);
 
 function O() {
@@ -40,7 +40,7 @@ function O() {
 
 function j() {
     (0, I.openUserSettings)(S.X.GIFT_PANEL, {
-        section: b.nc_.INVENTORY
+        section: N.nc_.INVENTORY
     })
 }
 
@@ -58,7 +58,7 @@ function R(e) {
         showHeader: t,
         paymentSources: a,
         defaultPaymentSourceId: o,
-        premiumSubscriptionPaymentSourceId: null != _ && _.status !== b.Dmq.CANCELED ? _.paymentSourceId : null,
+        premiumSubscriptionPaymentSourceId: null != _ && _.status !== N.Dmq.CANCELED ? _.paymentSourceId : null,
         locale: d,
         removing: g,
         submitting: A,
@@ -73,7 +73,7 @@ function y(e) {
     return (0, i.jsx)(a.po8, {
         messageType: a.YCn.INFO,
         className: t,
-        children: N.intl.format(N.t["8b+FXG"], {
+        children: b.intl.format(b.t["8b+FXG"], {
             onClick: j
         })
     })
@@ -88,7 +88,7 @@ function P() {
     })
 }
 
-function L() {
+function D() {
     let e = (0, _.wI)("UserSettingsBilling");
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(A.x, {
@@ -102,7 +102,7 @@ function L() {
                 gap: 16,
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-lg/semibold",
-                    children: N.intl.string(N.t["3pIjBH"])
+                    children: b.intl.string(b.t["3pIjBH"])
                 }), (0, i.jsx)(C.d, {})]
             })
         }), (0, i.jsx)(A.x, {
@@ -113,7 +113,7 @@ function L() {
                     gap: 16,
                     children: [(0, i.jsx)(a.Heading, {
                         variant: "heading-lg/semibold",
-                        children: N.intl.string(N.t.obLrcK)
+                        children: b.intl.string(b.t.obLrcK)
                     }), (0, i.jsx)(P, {})]
                 })
             })
@@ -123,8 +123,8 @@ function L() {
     })
 }
 
-function D() {
+function L() {
     let e = (0, l.bG)([h.default], () => null != h.default.getCurrentUser()),
         t = (0, l.bG)([m.A], () => m.A.enabled);
-    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(L, {}) : (0, i.jsx)(O, {})
+    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(D, {}) : (0, i.jsx)(O, {})
 }

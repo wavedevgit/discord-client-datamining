@@ -12,7 +12,7 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, g] = i.useState(!1), [A, m] = i.useState(!1), [h, p] = i.useState(!1), [x, E] = i.useState(!1), [T, S] = i.useState(!1), [C, I] = i.useState(!1), f = o || c || _ || A || x || C, b = i.useCallback(async e => {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, g] = i.useState(!1), [A, m] = i.useState(!1), [h, p] = i.useState(!1), [x, E] = i.useState(!1), [T, S] = i.useState(!1), [C, I] = i.useState(!1), f = o || c || _ || A || x || C, N = i.useCallback(async e => {
         if (!f) {
             d(!0);
             try {
@@ -24,7 +24,7 @@ function o(e) {
                 d(!1)
             }
         }
-    }, [f, t, n]), N = i.useCallback(async e => {
+    }, [f, t, n]), b = i.useCallback(async e => {
         if (!f) {
             u(!0);
             try {
@@ -86,8 +86,8 @@ function o(e) {
         }
     }, [T, t, n]);
     return {
-        acceptLinkRequest: b,
-        declineLinkRequest: N,
+        acceptLinkRequest: N,
+        declineLinkRequest: b,
         disconnectLinkRequest: v,
         cancelLinkRequest: O,
         selectTeenUser: R,

@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => N
+    j: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -171,7 +171,7 @@ function f(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         panelKey: t,
         notice: n,
@@ -188,7 +188,7 @@ function b(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         node: t
     } = e, {
@@ -201,7 +201,7 @@ function N(e) {
         decoration: t.decoration,
         layout: n
     });
-    if ((0, g.Iu)(n)) return (0, i.jsx)(b, {
+    if ((0, g.Iu)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

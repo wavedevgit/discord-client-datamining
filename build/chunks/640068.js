@@ -69,7 +69,7 @@ function I(e) {
         defaultOpen: g
     } = e, [m, p] = s.useState(g), [E, C] = s.useState(!1), I = s.useCallback(() => {
         p(e => !e)
-    }, []), f = (0, r.bG)([h.default], () => h.default.getId()), b = (0, A.iN)(t, f), N = (0, A.Fm)(t, f), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
+    }, []), f = (0, r.bG)([h.default], () => h.default.getId()), N = (0, A.iN)(t, f), b = (0, A.Fm)(t, f), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -116,7 +116,7 @@ function I(e) {
         children: j
     });
     let R = "";
-    return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${b??T.RE.NOT_ELIGIBLE}` : null != b ? `Currently assigned to variant ${b}` : "Currently unassigned", (0, i.jsxs)("div", {
+    return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${N??T.RE.NOT_ELIGIBLE}` : null != N ? `Currently assigned to variant ${N}` : "Currently unassigned", (0, i.jsxs)("div", {
         className: S.Os,
         children: [j, (0, i.jsx)("div", {
             children: (0, i.jsx)(u.g, {
@@ -128,7 +128,7 @@ function I(e) {
             })
         }), (0, i.jsx)("div", {
             className: S.h_,
-            children: null == N ? (0, i.jsx)(o.Text, {
+            children: null == b ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -141,7 +141,7 @@ function I(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: S.AS,
-                children: null == N ? "None" : JSON.stringify(N, void 0, 2)
+                children: null == b ? "None" : JSON.stringify(b, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,

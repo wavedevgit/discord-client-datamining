@@ -1,13 +1,13 @@
 /** chunk id: 102957 params = (module,exports,require) **/
 l.d(t, {
-    r: () => y
+    r: () => g
 });
 var a = l(627968),
     n = l(64700),
     r = l(342393),
     i = l(732955),
-    s = l(397927),
-    o = l(558179),
+    o = l(397927),
+    s = l(558179),
     u = l(156312),
     c = l(252561),
     d = l(825057);
@@ -60,8 +60,8 @@ let p = {
     },
     b = e => void 0 !== e ? JSON.stringify(e, null, 2) : "undefined";
 
-function g() {
-    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, g] = n.useState(b(x)), [y, f] = n.useState(x), [v, E] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
+function y() {
+    let [e, t] = n.useState(b(h)), [l, u] = n.useState(h), [m, y] = n.useState(b(x)), [g, f] = n.useState(x), [v, E] = n.useState(null), [S, j] = n.useState((0, a.jsx)(c.a8, {
         errorLabel: p.CONFIGURABLE,
         elementOptions: h,
         children: (0, a.jsx)(r.ExpressCheckoutElement, {
@@ -72,11 +72,11 @@ function g() {
         })
     }));
     return (0, a.jsxs)("div", {
-        children: [(0, a.jsxs)(s.Text, {
+        children: [(0, a.jsxs)(o.Text, {
             variant: "text-md/normal",
             className: d.cW,
             children: ["Try configuring options for the Stripe Element container and Express Checkout Element here. Not all settings will change the appearance or functionality of the checkout button - use this to figure out the customizability of the Express Checkout Element.", (0, a.jsx)("br", {}), (0, a.jsx)("br", {}), "Start by changing the `borderRadius` or `buttonHeight` as a test!"]
-        }), (0, a.jsxs)(s.Text, {
+        }), (0, a.jsxs)(o.Text, {
             variant: "text-md/normal",
             className: d.cW,
             children: [(0, a.jsx)("b", {
@@ -86,14 +86,14 @@ function g() {
             })]
         }), (0, a.jsx)("div", {
             className: d.PC,
-            children: (0, a.jsx)(s.fs1, {
+            children: (0, a.jsx)(o.fs1, {
                 placeholder: "Stripe Elements Container Options",
                 showCharacterCount: !0,
                 value: e,
                 onChange: t,
                 rows: 7
             })
-        }), (0, a.jsxs)(s.Text, {
+        }), (0, a.jsxs)(o.Text, {
             variant: "text-md/normal",
             className: d.cW,
             children: [(0, a.jsx)("b", {
@@ -105,14 +105,14 @@ function g() {
             })]
         }), (0, a.jsx)("div", {
             className: d.PC,
-            children: (0, a.jsx)(s.fs1, {
+            children: (0, a.jsx)(o.fs1, {
                 placeholder: "Stripe Express Checkout Element Options",
                 showCharacterCount: !0,
                 value: m,
-                onChange: g,
+                onChange: y,
                 rows: 7
             })
-        }), null != v && (0, a.jsx)(s.Text, {
+        }), null != v && (0, a.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "text-feedback-critical",
             children: v
@@ -128,7 +128,7 @@ function g() {
                         let t = JSON.parse(e),
                             l = JSON.parse(m);
                         j(null), j((0, a.jsxs)(a.Fragment, {
-                            children: [(0, a.jsxs)(s.Text, {
+                            children: [(0, a.jsxs)(o.Text, {
                                 variant: "text-md/normal",
                                 className: d.cW,
                                 children: ["Element updated at: ", new Date().toString()]
@@ -148,30 +148,30 @@ function g() {
                     }
                 }
             })
-        }), (0, a.jsx)(s.Text, {
+        }), (0, a.jsx)(o.Text, {
             variant: "text-md/normal",
             className: d.cW,
             children: "Current Element Options:"
-        }), (0, a.jsx)(s.Text, {
+        }), (0, a.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: (0, a.jsx)(o.A, {
+            children: (0, a.jsx)(s.A, {
                 className: d.wD,
                 children: `\`\` ${b(l)} \`\``
             })
-        }), (0, a.jsx)(s.Text, {
+        }), (0, a.jsx)(o.Text, {
             variant: "text-md/normal",
             className: d.cW,
             children: "Current Express Checkout Element Options:"
-        }), (0, a.jsx)(s.Text, {
+        }), (0, a.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: (0, a.jsx)(o.A, {
+            children: (0, a.jsx)(s.A, {
                 className: d.wD,
-                children: `\`\` ${b(y)} \`\``
+                children: `\`\` ${b(g)} \`\``
             })
         }), S]
     })
 }
-let y = {
+let g = {
     name: "Stripe Components",
     id: "stripe-components",
     component: function() {
@@ -180,7 +180,7 @@ let y = {
             skuIDs: [],
             activeSubscription: null,
             children: (0, a.jsxs)(c.wn, {
-                children: [(0, a.jsx)(s.Heading, {
+                children: [(0, a.jsx)(o.Heading, {
                     variant: "heading-xl/semibold",
                     children: "Stripe Express Checkout Buttons"
                 }), (0, a.jsx)(c.Hq, {
@@ -201,13 +201,13 @@ let y = {
                     return (0, a.jsx)(c.Hq, {
                         label: t,
                         children: (0, a.jsxs)("div", {
-                            children: [(0, a.jsx)(s.Text, {
+                            children: [(0, a.jsx)(o.Text, {
                                 variant: "text-md/normal",
                                 className: d.cW,
                                 children: "expressCheckoutElement.options:"
-                            }), (0, a.jsx)(s.Text, {
+                            }), (0, a.jsx)(o.Text, {
                                 variant: "text-md/normal",
-                                children: (0, a.jsx)(o.A, {
+                                children: (0, a.jsx)(s.A, {
                                     className: d.wD,
                                     children: `\`\`${b(m[e])} \`\``
                                 })
@@ -224,7 +224,7 @@ let y = {
                     }, e)
                 }), (0, a.jsx)(c.Hq, {
                     label: p.CONFIGURABLE,
-                    children: (0, a.jsx)(g, {})
+                    children: (0, a.jsx)(y, {})
                 })]
             })
         })

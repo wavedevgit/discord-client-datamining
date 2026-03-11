@@ -24,16 +24,16 @@ var i = n(627968),
     C = n(131168),
     I = n(482589),
     f = n(511484),
-    b = n(322631),
-    N = n(570627),
+    N = n(322631),
+    b = n(570627),
     v = n(568031),
     O = n(518491),
     j = n(965591),
     R = n(495022),
     y = n(157839),
     P = n(382694),
-    L = n(60508),
-    D = n(821158),
+    D = n(60508),
+    L = n(821158),
     G = n(235365),
     M = n(994763),
     U = n(788868),
@@ -44,7 +44,7 @@ var i = n(627968),
 let B = e => {
     let {
         userId: t
-    } = e, n = N.m.useConfig({
+    } = e, n = b.m.useConfig({
         location: "PremiumSubscriberHome"
     }).enabled, l = (0, r.zy)();
     s.useEffect(() => {
@@ -115,7 +115,7 @@ let B = e => {
                     }), n && (0, i.jsx)(P.A, {
                         glowingPerkId: Z
                     }), !n && (0, i.jsx)(y.A, {
-                        variant: b.cJ.WHATS_NEW,
+                        variant: N.cJ.WHATS_NEW,
                         className: w.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
@@ -125,12 +125,12 @@ let B = e => {
                         glowingPerkId: Z
                     }), !n && (0, i.jsx)(y.A, {
                         className: w.xU,
-                        variant: b.cJ.PERKS_DISCOVERABILITY,
+                        variant: N.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
-                        showAllPerksButton: (0, i.jsx)(D.A, {
+                        showAllPerksButton: (0, i.jsx)(L.A, {
                             setIsAllPerksVisible: ei,
-                            previousComponent: b.A2.HOME
+                            previousComponent: N.A2.HOME
                         })
                     }), (0, i.jsx)(v.A, {
                         className: w.Zy,
@@ -166,10 +166,10 @@ let B = e => {
                 churnDiscountOffer: ee,
                 discountedPrice: er
             })]
-        }), !n && (0, i.jsx)(L.A, {
+        }), !n && (0, i.jsx)(D.A, {
             isAllPerksVisible: en,
             setIsAllPerksVisible: ei,
-            previousComponent: b.A2.HOME,
+            previousComponent: N.A2.HOME,
             enablePremiumBrandRefresh: !0
         })]
     }) : (0, i.jsx)("div", {

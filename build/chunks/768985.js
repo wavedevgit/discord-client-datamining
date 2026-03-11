@@ -31,8 +31,8 @@ function T(e) {
         familyCenterInitialized: _.A.getIsInitialized(),
         isLoading: _.A.isLoading()
     })), f = (0, A.k)(), {
-        selectedTab: b,
-        handleTabChange: N
+        selectedTab: N,
+        handleTabChange: b
     } = (0, g.A)(), v = c.default.getCurrentUser(), O = null != T, j = C && null != v && !O;
     (0, a.Ay)(() => {
         (0, d.d)("family-center"), null != n && n()
@@ -40,7 +40,7 @@ function T(e) {
     let R = {
             isConsideredAdult: "adult" === T,
             numOfAcceptedRequests: S,
-            selectedTab: b,
+            selectedTab: N,
             selectedTeenId: f
         },
         y = i.useRef(R);
@@ -68,8 +68,8 @@ function T(e) {
         j && (0, r.yO)(E.w_.FAMILY_CENTER)
     }, [j]), {
         isLoading: I,
-        selectedTab: b,
-        handleTabChange: N,
+        selectedTab: N,
+        handleTabChange: b,
         showAgeGateModal: j
     }
 }

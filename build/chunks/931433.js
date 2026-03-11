@@ -1,13 +1,13 @@
 /** chunk id: 931433 params = (module,exports,require) **/
 l.d(t, {
-    V: () => o
+    V: () => s
 });
 var a = l(627968),
     n = l(732955),
     r = l(652165),
     i = l(749226);
-let s = "1271174907081789524",
-    o = {
+let o = "1271174907081789524",
+    s = {
         title: "Orb Checkout",
         stories: [{
             name: "Orb Checkout Modals",
@@ -52,7 +52,7 @@ let s = "1271174907081789524",
                         skuId: "1332505467980873728",
                         skuName: "Pondering Portal (Deco)"
                     }, {
-                        skuId: s,
+                        skuId: o,
                         skuName: "Oni's Curse (Deco)"
                     }].map(e => {
                         let {
@@ -64,7 +64,7 @@ let s = "1271174907081789524",
                             value: t
                         }
                     }),
-                    defaultValue: s
+                    defaultValue: o
                 }
             }
         }]

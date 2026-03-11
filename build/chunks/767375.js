@@ -24,7 +24,7 @@ var i = n(627968),
     C = n(652215),
     I = n(985018),
     f = n(228851);
-class b extends s.PureComponent {
+class N extends s.PureComponent {
     static defaultProps = {
         isEditing: !1,
         hideDivider: !1,
@@ -80,7 +80,7 @@ class b extends s.PureComponent {
         })
     }
 }
-let N = s.memo(function(e) {
+let b = s.memo(function(e) {
     let {
         paymentSource: t,
         hideDivider: n,
@@ -223,7 +223,7 @@ class v extends s.PureComponent {
             h = _.filter(e => e instanceof A.LQ),
             p = this.state.editingPayment,
             x = m.findIndex(e => e.id === p),
-            T = m.map((e, t) => (0, i.jsx)(b, {
+            T = m.map((e, t) => (0, i.jsx)(N, {
                 locale: l,
                 paymentSource: e,
                 isDefault: n === e.id,
@@ -237,7 +237,7 @@ class v extends s.PureComponent {
                 isEditing: p === e.id,
                 onEditClick: this.handleEditClick
             }, e.id));
-        return e = h.length > 0 ? h.map((e, t) => (0, i.jsx)(N, {
+        return e = h.length > 0 ? h.map((e, t) => (0, i.jsx)(b, {
             paymentSource: e,
             hideDivider: 0 === m.length || x === m.length - 1,
             isForSubscription: e.id === d,
@@ -246,7 +246,7 @@ class v extends s.PureComponent {
                 withRedemptionSuccessModal: !0,
                 source: "desktop_billing_page"
             })
-        }, e.id)) : (0, i.jsx)(N, {
+        }, e.id)) : (0, i.jsx)(b, {
             hideDivider: 0 === m.length || x === m.length - 1,
             isForSubscription: !1,
             locale: l,

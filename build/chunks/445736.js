@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(342393),
     r = l(503698),
     i = l.n(r),
-    s = l(397927),
-    o = l(942340),
+    o = l(397927),
+    s = l(942340),
     u = l(211528),
     c = l(626584),
     d = l(166532),
@@ -16,16 +16,16 @@ var a = l(627968),
     h = l(785205),
     x = l(652215),
     b = l(434598),
-    g = l(749226);
-let y = new c.A("PaymentElement.web.stories"),
+    y = l(749226);
+let g = new c.A("PaymentElement.web.stories"),
     f = () => {
         let {
             elementsAppearanceOptions: e
-        } = (0, o.E)();
+        } = (0, s.E)();
         return (0, a.jsxs)("div", {
-            children: [(0, a.jsx)(s.Heading, {
+            children: [(0, a.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                className: g.tm,
+                className: y.tm,
                 children: "Default Options"
             }), (0, a.jsx)("div", {
                 children: Object.entries(e).map(e => {
@@ -54,17 +54,17 @@ let y = new c.A("PaymentElement.web.stories"),
             handleStepChange: x.tEg,
             onBillingAddressChange: x.tEg,
             paymentElementsEnabled: !0,
-            logger: y,
+            logger: g,
             shouldLogOnChangeEvents: !0,
             continueSessionToInitialStep: void 0
         }), {
             elementsOptions: T,
             isLoading: C,
-            setupError: P,
-            customPaymentMethodIdsToSourceTypes: A
-        } = (0, o.p)({
+            setupError: A,
+            customPaymentMethodIdsToSourceTypes: P
+        } = (0, s.p)({
             onSetupError: e => {
-                y.info("Stripe Payment Element options setup error: ", e)
+                g.info("Stripe Payment Element options setup error: ", e)
             },
             elementsAppearanceOptions: {
                 theme: t,
@@ -74,12 +74,12 @@ let y = new c.A("PaymentElement.web.stories"),
                 tabBackgroundColor: m
             }
         });
-        return C || null != P || null == E ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
+        return C || null != A || null == E ? (0, a.jsx)(u.eR, {}) : (0, a.jsxs)("div", {
             children: [(0, a.jsx)("div", {
                 style: {
                     marginBottom: 16
                 },
-                children: (0, a.jsx)(s.wx6, {
+                children: (0, a.jsx)(o.wx6, {
                     type: "info",
                     children: "If you don't see the Payment Element components, that means you must be added to the correct experiment to see this story. Reach out to a Payments Engineer to get access."
                 })
@@ -104,15 +104,15 @@ let y = new c.A("PaymentElement.web.stories"),
                                 ...T
                             },
                             children: ["stripe-address-element" === v ? (0, a.jsx)("div", {
-                                className: g.R,
+                                className: y.R,
                                 children: (0, a.jsx)(u.Wf, {
                                     ...S,
-                                    customPaymentMethodIdsToSourceTypes: A,
+                                    customPaymentMethodIdsToSourceTypes: P,
                                     step: d.pn.PAYMENT_ELEMENT
                                 })
                             }) : (0, a.jsx)(u.Wf, {
                                 ...S,
-                                customPaymentMethodIdsToSourceTypes: A,
+                                customPaymentMethodIdsToSourceTypes: P,
                                 step: d.pn.PAYMENT_ELEMENT
                             }), ("joined-payment-address-elements" === v || "stripe-address-element" === v) && (0, a.jsx)(u.KS, {
                                 ...j,

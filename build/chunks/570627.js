@@ -1,8 +1,8 @@
 /** chunk id: 570627 params = (module,exports,require) **/
-n.d(t, {
-    m: () => r
+a.d(t, {
+    m: () => n
 });
-let r = (0, n(945810).mj)({
+let n = (0, a(945810).mj)({
     name: "2026-02-nitro-home-perk-cards",
     kind: "user",
     defaultConfig: {

@@ -32,15 +32,15 @@ function x(e) {
         showResetThemeButton: C = !1,
         forcedDivider: I
     } = e, f = (0, u.Ay)(t.id, E), {
-        primaryColor: b,
-        secondaryColor: N
+        primaryColor: N,
+        secondaryColor: b
     } = (0, _.A)({
         user: t,
         displayProfile: f,
         pendingThemeColors: s,
         isPreview: !0
     }), v = g.Ay.canUsePremiumProfileCustomization(t), O = null != n ? n : t.getAvatarURL(E, 80), j = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(O, j, !1);
-    if (null == b || null == N) return null;
+    if (null == N || null == b) return null;
     let y = e => {
         a(r()(e, f?.themeColors) ? void 0 : e)
     };
@@ -55,8 +55,8 @@ function x(e) {
             children: [(0, i.jsx)("div", {
                 className: p.YX,
                 children: (0, i.jsx)(A.A, {
-                    onChange: e => y([e, N]),
-                    color: b,
+                    onChange: e => y([e, b]),
+                    color: N,
                     suggestedColors: R,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
@@ -70,8 +70,8 @@ function x(e) {
             }), (0, i.jsx)("div", {
                 className: p.YX,
                 children: (0, i.jsx)(A.A, {
-                    onChange: e => y([b, e]),
-                    color: N,
+                    onChange: e => y([N, e]),
+                    color: b,
                     suggestedColors: R,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {

@@ -27,18 +27,18 @@ var i = n(627968),
     C = n(583613),
     I = n(723702),
     f = n(544028),
-    b = n(790174),
-    N = n(652215),
+    N = n(790174),
+    b = n(652215),
     v = n(650583),
     O = n(985018),
     j = n(900506),
     R = n(976092),
     y = n(20976),
     P = n(473169);
-let L = r.Ay.connectStores([f.A], () => ({
+let D = r.Ay.connectStores([f.A], () => ({
         theme: f.A.theme
     }))(c.ppr),
-    D = (0, I.isWindows)();
+    L = (0, I.isWindows)();
 
 function G(e) {
     let {
@@ -88,12 +88,12 @@ function M(e) {
         isSubgame: C = !1,
         parentGame: I
     } = e, f = (0, r.cf)([A.Ay, E.A, T.A], () => (0, A.xU)(t, A.Ay, E.A, T.A)), {
-        canToggleDetection: b,
+        canToggleDetection: N,
         isCurrentGameDetectionEnabled: R
     } = (0, r.cf)([A.Ay], () => ({
         canToggleDetection: null == I || A.Ay.isDetectionEnabled(I),
         isCurrentGameDetectionEnabled: A.Ay.isDetectionEnabled(f)
-    })), P = (0, r.bG)([A.Ay], () => A.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(f) ? C ? f.gameName : O.intl.formatToPlainString(O.t.G6BGdx, {
+    })), P = (0, r.bG)([A.Ay], () => A.Ay.getVisibleGame()), [D, G] = s.useState(!1), U = s.useMemo(() => (0, x.n1)(f) ? C ? f.gameName : O.intl.formatToPlainString(O.t.G6BGdx, {
         subgameName: f.gameName
     }) : f.name, [f, C]), [k, V] = s.useState(U ?? "???"), w = a()(y.tR, {
         [j.LO]: !l,
@@ -183,7 +183,7 @@ function M(e) {
                         })
                     })
                 }()]
-            }), m || L ? null : (0, i.jsx)("div", {
+            }), m || D ? null : (0, i.jsx)("div", {
                 className: a()(y.tR, y.oA, y.LT, j.E3),
                 children: (0, i.jsx)(d.m_, {
                     text: O.intl.string(O.t["y0B+lo"]),
@@ -191,9 +191,9 @@ function M(e) {
                         "aria-label": O.intl.string(O.t["y0B+lo"]),
                         className: j.ym,
                         onClick: function() {
-                            if (L) return;
+                            if (D) return;
                             let e = null != f.id ? E.A.getDetectableGame(f.id) : null;
-                            S.default.track(N.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
+                            S.default.track(b.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
                                 game_name: (0, x.n1)(f) ? f.gameName : f.name
                             }), G(!0), (0, c.mMO)(async () => {
@@ -205,7 +205,7 @@ function M(e) {
                                     detectedActivity: {
                                         name: f.name ?? "",
                                         application_id: e?.id ?? f.id ?? void 0,
-                                        type: N.$pd.PLAYING
+                                        type: b.$pd.PLAYING
                                     },
                                     onSubmitted: () => {}
                                 })
@@ -222,7 +222,7 @@ function M(e) {
             }), function() {
                 let {
                     detectable: e
-                } = f, t = e && b ? (0, i.jsx)(c.bMW, {
+                } = f, t = e && N ? (0, i.jsx)(c.bMW, {
                     size: "md",
                     color: "currentColor",
                     className: j.Lj,
@@ -230,14 +230,14 @@ function M(e) {
                 }) : (0, i.jsx)(c.G3N, {
                     size: "md",
                     color: "currentColor",
-                    className: b ? j.$V : j.zN,
+                    className: N ? j.$V : j.zN,
                     colorClass: j.GS
                 });
                 return (0, i.jsx)("div", {
                     className: a()(y.tR, y.oA, y.LT, j.E3),
                     children: (0, i.jsx)(d.m_, {
                         text: O.intl.string(O.t.QmitzM),
-                        children: b ? (0, i.jsx)(c.DUT, {
+                        children: N ? (0, i.jsx)(c.DUT, {
                             "aria-label": O.intl.string(O.t.QmitzM),
                             className: j.ym,
                             onClick: H,
@@ -246,7 +246,7 @@ function M(e) {
                     })
                 })
             }(), function() {
-                if (!D || null != I) return null;
+                if (!L || null != I) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
@@ -325,7 +325,7 @@ function k(e) {
     let {
         children: t
     } = e;
-    return (0, i.jsxs)(L, {
+    return (0, i.jsxs)(D, {
         className: P.eT,
         children: [(0, i.jsx)(c.G8R, {
             darkSrc: n(839628),
@@ -420,7 +420,7 @@ let V = (0, C.L_)(function() {
             className: t,
             showHeader: n = !0
         } = e;
-        return (0, i.jsxs)(b.A, {
+        return (0, i.jsxs)(N.A, {
             title: n ? O.intl.string(O.t.AVDyEj) : null,
             className: t,
             children: [(0, i.jsx)(w, {}), (0, i.jsx)(H, {}), (0, i.jsx)(c.cGx, {

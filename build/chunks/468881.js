@@ -1,6 +1,6 @@
 /** chunk id: 468881 params = (module,exports,require) **/
 n.d(t, {
-    w: () => b
+    w: () => N
 });
 var i = n(934551),
     s = n(419954),
@@ -35,7 +35,7 @@ let I = (0, s.t_)(a.X.ACCESSIBILITY_PANEL, {
             sticky: !0
         }
     }),
-    b = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
+    N = (0, s.i4)(a.X.ACCESSIBILITY_SIDEBAR_ITEM, {
         useTitle: () => C.intl.string(C.t.G0neg7),
         icon: i.AccessibilityIcon,
         useMenu: d.A,

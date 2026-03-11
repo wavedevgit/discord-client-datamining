@@ -46,9 +46,9 @@ let p = e => {
             }
         })(T), f = async () => {
             await S(p.id) && x()
-        }, b = l.role_benefits.benefits.filter(e => e.ref_type === A.bN.CHANNEL), N = l.role_benefits.benefits.filter(e => e.ref_type === A.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), O = m.intl.formatToPlainString(m.t.KsMRP5, {
-            numChannels: b.length,
-            numAdditionalBenefits: N.length,
+        }, N = l.role_benefits.benefits.filter(e => e.ref_type === A.bN.CHANNEL), b = l.role_benefits.benefits.filter(e => e.ref_type === A.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), O = m.intl.formatToPlainString(m.t.KsMRP5, {
+            numChannels: N.length,
+            numAdditionalBenefits: b.length,
             subscriptionEndDate: v
         });
         return (0, i.jsx)(r.Modal, {

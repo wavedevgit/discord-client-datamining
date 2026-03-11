@@ -1,7 +1,7 @@
 /** chunk id: 726532 params = (module,exports,require) **/
 n.d(t, {
     i: () => I,
-    j: () => b
+    j: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -83,7 +83,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             } = r,
             {
                 title: f,
-                description: b
+                description: N
             } = (() => {
                 switch (s.subscriptionStatus) {
                     case p.Dmq.CANCELED:
@@ -127,7 +127,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 className: T.wS,
                 children: [(0, i.jsx)(C, {
                     title: f,
-                    description: b,
+                    description: N,
                     button: (0, i.jsx)(a.Button, {
                         variant: "secondary",
                         text: E.intl.string(x.default.NCu2JD),
@@ -230,7 +230,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             }, `seat-available-${t}`))]
         })
     },
-    b = e => {
+    N = e => {
         let {
             subscription: t,
             analyticsLocations: c
@@ -239,8 +239,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
             isLoading: m
         } = (0, g.A)(t.id), {
             numAvailableInvites: I,
-            numTotalSeats: b,
-            numUsedSeats: N
+            numTotalSeats: N,
+            numUsedSeats: b
         } = (0, l.cf)([_.A], () => ({
             numAvailableInvites: _.A.getNumAvailableInvites(),
             numTotalSeats: _.A.getNumTotalSeats(),
@@ -272,8 +272,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, L = s.useMemo(() => !h.BE.includes(t.status) && I > 0, [t.status, I]), {
-            title: D,
+        }, D = s.useMemo(() => !h.BE.includes(t.status) && I > 0, [t.status, I]), {
+            title: L,
             description: G
         } = (() => {
             switch (j) {
@@ -317,7 +317,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: T.wS,
                 children: [(0, i.jsx)(C, {
-                    title: D,
+                    title: L,
                     description: G,
                     button: d.ki(t) ? (0, i.jsx)(a.Button, {
                         variant: "expressive",
@@ -334,7 +334,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             fullWidth: !0,
                             text: E.intl.string(x.default.Tcmclj),
                             onClick: P,
-                            disabled: !L
+                            disabled: !D
                         }), (0, i.jsx)(a.Button, {
                             variant: "secondary",
                             size: "md",
@@ -346,7 +346,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 }), (0, i.jsx)(f, {
                     premiumGroupMembers: A,
                     isLoadingPremiumGroupMembers: m,
-                    canInvite: L,
+                    canInvite: D,
                     onInvite: P,
                     onRemoveMember: e => {
                         o.default.track(p.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {
@@ -381,8 +381,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             })
                         })
                     },
-                    numTotalSeats: b,
-                    numUsedSeats: N,
+                    numTotalSeats: N,
+                    numUsedSeats: b,
                     numAvailableInvites: I
                 })]
             })]

@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(292666),
     i = l(732955),
-    s = l(397927),
-    o = l(398590),
+    o = l(397927),
+    s = l(398590),
     u = l(920050),
     c = l(102815),
     d = l(976860),
@@ -29,7 +29,7 @@ let m = {
                     ...t,
                     id: "test-id",
                     progress: null != t.progress && t.progress > 0 ? t.progress : void 0,
-                    onCtaClick: () => (0, s.showToast)((0, s.createToast)("CTA Clicked!", s.ToastType.SUCCESS))
+                    onCtaClick: () => (0, o.showToast)((0, o.createToast)("CTA Clicked!", o.ToastType.SUCCESS))
                 }), (0, a.jsx)(h, {})]
             })
         },
@@ -115,9 +115,9 @@ function h() {
             variant: "primary",
             size: "sm",
             onClick: () => {
-                (0, o.jH)(), (0, d.pX)(p.BVt.ME), setTimeout(() => (0, d.pX)(l), 200)
+                (0, s.jH)(), (0, d.pX)(p.BVt.ME), setTimeout(() => (0, d.pX)(l), 200)
             }
-        }), (0, a.jsxs)(s.Text, {
+        }), (0, a.jsxs)(o.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             style: {

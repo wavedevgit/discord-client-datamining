@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(64700),
     r = l(397927),
     i = l(405139),
-    s = l(156312),
-    o = l(19311),
+    o = l(156312),
+    s = l(19311),
     u = l(869177),
     c = l(252561),
     d = l(985018);
@@ -45,8 +45,8 @@ function m(e) {
         paymentRequestWallet: t
     } = e, l = n.useRef(null), [r, i] = n.useState(!1);
     return (0, a.jsx)(c.e_, {
-        footer: (0, a.jsx)(o.Ay, {
-            primaryCTA: o.Ay.CTAType.CONTINUE,
+        footer: (0, a.jsx)(s.Ay, {
+            primaryCTA: s.Ay.CTAType.CONTINUE,
             primaryText: d.intl.string("applePay" === t ? d.t.WoXvJL : d.t.wnVVr0),
             primaryDisabled: !r,
             onPrimary: () => void(null != l.current && l.current.show()),
@@ -67,7 +67,7 @@ let h = {
         let {
             paymentRequestWallet: t
         } = e;
-        return (0, a.jsx)(s.PaymentContextProvider, {
+        return (0, a.jsx)(o.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,

@@ -24,11 +24,11 @@ var i = n(627968),
     C = n(114074),
     I = n(413336),
     f = n(985018);
-let b = (0, o.t_)(c.X.DISPLAY_PANEL, {
+let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
         useTitle: () => f.intl.string(f.t.DVatCa),
         buildLayout: () => [C.K, E.S, T.X, x.S, S.f, (0, I.$)(!0), p.J]
     }),
-    N = [...m.j0, {
+    b = [...m.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: h.L
@@ -51,6 +51,6 @@ let b = (0, o.t_)(c.X.DISPLAY_PANEL, {
                 }, "streamer-mode")), s
             }, [e, t, n])
         },
-        getDismissibleBadges: () => N,
-        buildLayout: () => [b]
+        getDismissibleBadges: () => b,
+        buildLayout: () => [N]
     })

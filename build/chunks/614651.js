@@ -29,16 +29,16 @@ var i = n(627968),
     C = n(763754),
     I = n(20851),
     f = n(195043),
-    b = n(97469),
-    N = n(287809),
+    N = n(97469),
+    b = n(287809),
     v = n(723702),
     O = n(544028),
     j = n(964404),
     R = n(253932),
     y = n(780964),
     P = n(70040),
-    L = n(961154),
-    D = n(790174),
+    D = n(961154),
+    L = n(790174),
     G = n(840065),
     M = n(531525),
     U = n(652215),
@@ -280,7 +280,7 @@ class J extends s.Component {
             children: [this.renderPreview(), this.renderTheme()]
         }), n = (0, i.jsx)(f.x, {
             setting: M.H.APPEARANCE_ICON,
-            children: (0, i.jsx)(L.yG, {})
+            children: (0, i.jsx)(D.yG, {})
         }), s = [{
             name: V.intl.string(V.t["7iegX4"]),
             value: o.NS.COMPACT
@@ -343,7 +343,7 @@ class J extends s.Component {
             className: w.fK,
             children: (0, i.jsx)(Z, {})
         });
-        return (0, i.jsxs)(D.A, {
+        return (0, i.jsxs)(L.A, {
             title: V.intl.string(V.t["iHH+ky"]),
             children: [t, n, l, a, r, d]
         })
@@ -359,8 +359,8 @@ function Q() {
     (0, _.Ay)(() => {
         (0, x.v)()
     });
-    let a = (0, b.qo)(),
-        o = (0, r.cf)([O.A, j.Ay, m.A, N.default, p.A], () => ({
+    let a = (0, N.qo)(),
+        o = (0, r.cf)([O.A, j.Ay, m.A, b.default, p.A], () => ({
             theme: O.A.theme,
             useForcedColors: m.A.useForcedColors,
             useSystemTheme: j.Ay.useSystemTheme,
@@ -368,7 +368,7 @@ function Q() {
             zoom: m.A.zoom,
             messageGroupSpacing: m.A.messageGroupSpacing,
             displayCompactAvatars: j.Ay.displayCompactAvatars,
-            isStaff: N.default.getCurrentUser()?.isStaff ?? !1,
+            isStaff: b.default.getCurrentUser()?.isStaff ?? !1,
             gradientPreset: p.A.gradientPreset
         }));
     return (0, i.jsx)(J, {

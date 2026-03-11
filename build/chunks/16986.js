@@ -29,8 +29,8 @@ function x() {
         C = g.X6.useSetting(),
         I = g.hD.useSetting(),
         f = g.rs.useSetting(),
-        b = g.jW.useSetting(),
-        N = g.Hu.useSetting(),
+        N = g.jW.useSetting(),
+        b = g.Hu.useSetting(),
         {
             analyticsLocations: v
         } = (0, r.Ay)(a.A.TEXT_AND_IMAGES),
@@ -100,7 +100,7 @@ function x() {
                     children: [(0, i.jsx)(u.x, {
                         setting: m.H.CHAT_EMOJI_REACTIONS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: b,
+                            checked: N,
                             onChange: g.jW.updateSetting,
                             label: p.intl.string(p.t.Iv24sm)
                         })
@@ -204,7 +204,7 @@ function x() {
                             value: 1
                         }],
                         onChange: O,
-                        value: +!!N
+                        value: +!!b
                     })
                 })]
             }), (0, i.jsxs)(u.x, {

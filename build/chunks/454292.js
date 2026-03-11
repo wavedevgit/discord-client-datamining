@@ -29,8 +29,8 @@ let f = {
         screenshakeEnabled: !1,
         confettiEnabled: !1
     },
-    b = (0, l.range)(0, 11),
-    N = (0, l.range)(0, 2.25, .25),
+    N = (0, l.range)(0, 11),
+    b = (0, l.range)(0, 2.25, .25),
     v = (0, l.range)(1, 11),
     O = (0, l.range)(1, 26);
 
@@ -184,7 +184,7 @@ function P(e) {
     })
 }
 
-function L(e) {
+function D(e) {
     let {
         settings: {
             enabled: t,
@@ -222,10 +222,10 @@ function L(e) {
                 children: C.intl.string(C.t["/OOFpL"])
             }), (0, i.jsx)(d.Apm, {
                 disabled: r,
-                markers: b,
+                markers: N,
                 stickToMarkers: !0,
-                minValue: b[0],
-                maxValue: b[b.length - 1],
+                minValue: N[0],
+                maxValue: N[N.length - 1],
                 initialValue: l,
                 onValueChange: e => a({
                     combosRequiredCount: e
@@ -236,7 +236,7 @@ function L(e) {
     })
 }
 
-function D(e) {
+function L(e) {
     let {
         settings: {
             enabled: t,
@@ -266,11 +266,11 @@ function D(e) {
                 children: C.intl.string(C.t.CEOEOb)
             }), (0, i.jsx)(d.Apm, {
                 disabled: u,
-                markers: N,
+                markers: b,
                 equidistant: !0,
                 stickToMarkers: !0,
-                minValue: N[0],
-                maxValue: N[N.length - 1],
+                minValue: b[0],
+                maxValue: b[b.length - 1],
                 initialValue: s,
                 onValueChange: e => {
                     var t;
@@ -278,7 +278,7 @@ function D(e) {
                         shakeIntensity: e
                     }).shakeIntensity && t.shakeIntensity > s && (0, m._)(h.sn.MORE), r(t, 1)
                 },
-                onMarkerRender: e => e === N[N.length - 1] ? C.intl.string(C.t["4rbMWc"]) : `${100*e}%`
+                onMarkerRender: e => e === b[b.length - 1] ? C.intl.string(C.t["4rbMWc"]) : `${100*e}%`
             })]
         }), (0, i.jsx)(j, {
             disabled: u,
@@ -406,10 +406,10 @@ function k(e) {
             updateSettings: u
         }), (0, i.jsx)(M, {
             onChangePage: t
-        }), (0, i.jsx)(L, {
+        }), (0, i.jsx)(D, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(D, {
+        }), (0, i.jsx)(L, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(P, {

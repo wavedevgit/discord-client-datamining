@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(866312),
     I = n(327479),
     f = n(652215),
-    b = n(601107),
-    N = n(985018),
+    N = n(601107),
+    b = n(985018),
     v = n(141384);
 let O = [f.Dmq.PAST_DUE, f.Dmq.ACCOUNT_HOLD, f.Dmq.BILLING_RETRY],
     j = e => {
@@ -53,11 +53,11 @@ let O = [f.Dmq.PAST_DUE, f.Dmq.ACCOUNT_HOLD, f.Dmq.BILLING_RETRY],
                 A(!0), d(!1)
             }
         }, h = [{
-            text: N.intl.string(N.t.oEAioF),
+            text: b.intl.string(b.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
         }, {
-            text: N.intl.string(N.t["cY+Oob"]),
+            text: b.intl.string(b.t["cY+Oob"]),
             onClick: () => m(),
             disabled: o,
             variant: "critical-primary",
@@ -66,13 +66,13 @@ let O = [f.Dmq.PAST_DUE, f.Dmq.ACCOUNT_HOLD, f.Dmq.BILLING_RETRY],
         return (0, i.jsx)(c.Modal, {
             size: "md",
             transitionState: t,
-            title: N.intl.string(N.t.LZunzZ),
-            subtitle: N.intl.string(N.t.FClXh9),
+            title: b.intl.string(b.t.LZunzZ),
+            subtitle: b.intl.string(b.t.FClXh9),
             actions: h,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(_.wx6, {
                 type: "critical",
-                children: N.intl.string(N.t["5mlOCW"])
+                children: b.intl.string(b.t["5mlOCW"])
             }) : null
         })
     };
@@ -98,8 +98,8 @@ function R(e) {
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
     let {
         status: P
-    } = n, L = (0, S.$k)(n), D = y && !L && n.isBoostOnly && O.includes(n.status);
-    if (L) t = v.v2;
+    } = n, D = (0, S.$k)(n), L = y && !D && n.isBoostOnly && O.includes(n.status);
+    if (D) t = v.v2;
     else switch (P) {
         case f.Dmq.PAST_DUE:
         case f.Dmq.ACCOUNT_HOLD:
@@ -108,7 +108,7 @@ function R(e) {
             break;
         case f.Dmq.PAUSE_PENDING:
         case f.Dmq.PAUSED:
-            t = n.pauseReason !== b.qf.FRACTIONAL_PREMIUM ? v.C7 : v.wG;
+            t = n.pauseReason !== N.qf.FRACTIONAL_PREMIUM ? v.C7 : v.wG;
             break;
         default:
             t = v.wG
@@ -124,7 +124,7 @@ function R(e) {
                 className: v.eC,
                 children: [(0, i.jsx)("div", {
                     className: a()(v.Ab, {
-                        [v.aD]: L
+                        [v.aD]: D
                     })
                 }), (0, i.jsx)("div", {
                     children: (0, S.Uf)({
@@ -136,7 +136,7 @@ function R(e) {
                 })]
             }), r && (0, i.jsxs)("div", {
                 className: v.BQ,
-                children: [D && (0, i.jsx)("div", {
+                children: [L && (0, i.jsx)("div", {
                     className: v.x7,
                     children: (0, i.jsx)(c.QWc, {
                         variant: "always-white",
@@ -149,19 +149,19 @@ function R(e) {
                             }))
                         },
                         size: "sm",
-                        text: N.intl.string(N.t["ETE/oC"])
+                        text: b.intl.string(b.t["ETE/oC"])
                     })
                 }), (0, i.jsx)(I.A, {
                     onClick: () => (0, x.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                         section: f.nc_.GUILD_BOOSTING
                     }),
-                    text: N.intl.string(N.t["NQ5g/U"])
+                    text: b.intl.string(b.t["NQ5g/U"])
                 })]
             })]
         }), !r && (0, i.jsx)(_.Text, {
             className: v.yW,
             variant: "text-sm/normal",
-            children: N.intl.format(d.Fr ? N.t.uxYBEa : N.t.k6haR9, {
+            children: b.intl.format(d.Fr ? b.t.uxYBEa : b.t.k6haR9, {
                 openAppHook: () => (0, h.A)("app")
             })
         })]

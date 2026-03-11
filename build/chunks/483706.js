@@ -90,7 +90,7 @@ let I = e => {
             })]
         })
     },
-    b = e => {
+    N = e => {
         let {
             teenId: t
         } = e, s = (0, m.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
@@ -134,7 +134,7 @@ let I = e => {
             })]
         })
     },
-    N = () => {
+    b = () => {
         let e = (0, m.y3)(),
             t = (0, m.tl)(),
             {
@@ -174,7 +174,7 @@ let I = e => {
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
                     className: C.yF
-                }), (0, i.jsx)(b, {
+                }), (0, i.jsx)(N, {
                     teenId: e.id
                 })]
             })]
@@ -184,6 +184,6 @@ let I = e => {
         let e = (0, h.A)();
         return 0 === (0, p.vx)().length ? null : (0, i.jsx)("div", {
             className: C.kL,
-            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(N, {})
+            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(b, {})
         })
     }

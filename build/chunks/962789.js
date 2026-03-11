@@ -153,7 +153,7 @@ function f() {
     })
 }
 
-function b() {
+function N() {
     return (0, i.jsxs)("div", {
         className: S.do,
         children: [(0, i.jsx)(r.Text, {
@@ -171,13 +171,13 @@ function b() {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         applications: t
     } = e;
     return t.length > 0 ? (0, i.jsx)(C, {
         applications: t
-    }) : (0, i.jsx)(b, {})
+    }) : (0, i.jsx)(N, {})
 }
 
 function v() {
@@ -185,7 +185,7 @@ function v() {
         showLoadingIndicator: e,
         slayerSdkApplications: t
     } = (0, g.A)(!0);
-    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(N, {
+    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(b, {
         applications: t
     })
 }
@@ -197,7 +197,7 @@ function O() {
     } = (0, g.A)(!0);
     return (0, i.jsx)(m.A, {
         children: e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(b, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(I, {}), (0, i.jsx)("div", {

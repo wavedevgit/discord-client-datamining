@@ -1,12 +1,12 @@
 /** chunk id: 714126 params = (module,exports,require) **/
 l.d(t, {
-    W: () => s
+    W: () => o
 });
 var a = l(627968),
     n = l(64700),
     r = l(397927),
     i = l(798233);
-class s extends n.PureComponent {
+class o extends n.PureComponent {
     state = {
         error: null,
         info: null

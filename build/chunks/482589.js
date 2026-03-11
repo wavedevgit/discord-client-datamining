@@ -1,23 +1,23 @@
 /** chunk id: 482589 params = (module,exports,require) **/
-n.d(t, {
-    j: () => u
+a.d(t, {
+    j: () => o
 });
-var r = n(64700),
-    a = n(554146),
-    s = n(771781),
-    l = n(367727),
-    i = n(320118),
-    d = n(49999);
+var n = a(64700),
+    r = a(554146),
+    s = a(771781),
+    l = a(367727),
+    i = a(320118),
+    d = a(49999);
 
-function u() {
+function o() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
             programReward: t
         } = (0, i.F)(),
-        n = t?.last_granted_reward ?? null;
-    r.useEffect(() => {
-        e || (0, s.dD)(a.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER) || null != n && (0, l.qr)(a.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER, n, {
+        a = t?.last_granted_reward ?? null;
+    n.useEffect(() => {
+        e || (0, s.dD)(r.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER) || null != a && (0, l.qr)(r.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER, a, {
             dismissAction: d.i.INDIRECT_ACTION
         })
-    }, [e, n])
+    }, [e, a])
 }

@@ -1,6 +1,6 @@
 /** chunk id: 161290 params = (module,exports,require) **/
 n.d(t, {
-    A: () => L
+    A: () => D
 });
 var i = n(627968);
 n(64700);
@@ -25,8 +25,8 @@ var s = n(284009),
     C = n(617514),
     I = n(546849),
     f = n(101058),
-    b = n(207803),
-    N = n(836602),
+    N = n(207803),
+    b = n(836602),
     v = n(622543),
     O = n(950191),
     j = n(287809),
@@ -34,7 +34,7 @@ var s = n(284009),
     y = n(985018),
     P = n(264671);
 
-function L() {
+function D() {
     let e = (0, a.bG)([j.default], () => {
             let e = j.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
@@ -43,17 +43,17 @@ function L() {
         {
             pendingAvatar: n,
             pendingGlobalName: s,
-            pendingBanner: L,
-            pendingBio: D,
+            pendingBanner: D,
+            pendingBio: L,
             pendingPronouns: G,
             pendingAccentColor: M,
             pendingThemeColors: U,
             pendingLegacyUsernameDisabled: k,
             pendingPrimaryGuildId: V,
             errors: w
-        } = (0, a.cf)([N.A], () => {
-            let e = N.A.getPendingChanges(),
-                t = N.A.getErrors();
+        } = (0, a.cf)([b.A], () => {
+            let e = b.A.getPendingChanges(),
+                t = b.A.getErrors();
             return {
                 ...e,
                 errors: t
@@ -66,7 +66,7 @@ function L() {
         B = (0, o.EC)(),
         F = R.Ay.canUsePremiumProfileCustomization(e),
         Y = (0, u.z5)(n, e.avatar),
-        z = (0, u.Ac)(L, t?.banner),
+        z = (0, u.Ac)(D, t?.banner),
         X = (0, O.Ay)(e.id),
         W = X?.getLegacyUsername(),
         K = (w.global_name?.length ?? 0) > 0 ? w.global_name : B?.nick ?? [],
@@ -84,7 +84,7 @@ function L() {
         }), (0, i.jsx)(I.A, {
             sectionTitle: y.intl.string(y.t["+T3RI/"]),
             errors: w.pronouns,
-            onPronounsChange: b.Oz,
+            onPronounsChange: N.Oz,
             pendingPronouns: G,
             currentPronouns: t?.pronouns ?? ""
         }, "pronouns"), (0, i.jsx)(C.A, {}), (0, i.jsx)(A.A, {
@@ -105,25 +105,25 @@ function L() {
             children: [(0, i.jsx)(x.A, {
                 showRemoveBannerButton: z,
                 errors: w.banner,
-                onBannerChange: b.Iz,
+                onBannerChange: N.Iz,
                 forcedDivider: !0
             }, "banner"), (0, i.jsx)(S.A, {
                 user: e,
                 pendingAvatarSrc: H,
                 pendingColors: U,
-                onThemeColorsChange: b.Zz,
+                onThemeColorsChange: N.Zz,
                 forcedDivider: !0
             })]
         }) : (0, i.jsx)(E.A, {
             user: e,
             savedUserColor: t?.accentColor,
             pendingColor: M,
-            setPendingAccentColor: b.XW
+            setPendingAccentColor: N.XW
         }, "color"), (0, i.jsx)(_.A, {
             sectionTitle: y.intl.string(y.t.ZzAR2Y),
             errors: Z,
             onBioChange: e => (0, u.Ru)(e, t?.bio),
-            pendingBio: D,
+            pendingBio: L,
             currentBio: t?.bio ?? ""
         }, "bio"), q.length > 0 && (0, i.jsx)(d.A, {
             availablePrimaryGuilds: q,

@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(519412),
     I = n(985018),
     f = n(998663),
-    b = n(817577),
-    N = n(419455),
+    N = n(817577),
+    b = n(419455),
     v = n(288604),
     O = n(893160),
     j = n(509442);
@@ -49,12 +49,12 @@ function R() {
         }, () => (0, d.L)({
             analyticsLocations: e
         }))
-    }, [e]), L = (0, s.useCallback)(() => {
+    }, [e]), D = (0, s.useCallback)(() => {
         let e = (0, g.Ci)("openCustomAppSettings") ? _.X.DISPLAY_IN_APP_ICON_CATEGORY : _.X.APPEARANCE_IN_APP_ICON;
         (0, A.openUserSettings)(e, {
             section: S.nc_.APPEARANCE
         })
-    }, []), D = (0, E.A)(e), {
+    }, []), L = (0, E.A)(e), {
         currentDate: G,
         nDaysInMonth: M
     } = (0, s.useMemo)(() => {
@@ -73,7 +73,7 @@ function R() {
                     premiumGroupProductName: (0, T.DP)()
                 }),
                 pillText: I.intl.string(I.t.oW0eUd),
-                primaryAsset: b,
+                primaryAsset: N,
                 ctaText: I.intl.string(I.t.jVcuVY),
                 onCtaClick: () => {
                     (0, a.mMO)(async () => {
@@ -107,7 +107,7 @@ function R() {
                 title: I.intl.string(I.t.OLtTrt),
                 description: I.intl.string(I.t["di/pXR"]),
                 onCtaClick: y,
-                primaryAsset: N.A,
+                primaryAsset: b.A,
                 ctaText: I.intl.string(I.t.jVcuVY),
                 pillText: I.intl.string(I.t.y2b7CA)
             }, {
@@ -137,10 +137,10 @@ function R() {
                 description: I.intl.string(I.t["1uPk1Z"]),
                 primaryAsset: v.A,
                 ctaText: I.intl.string(I.t.y9TxXV),
-                onCtaClick: L
+                onCtaClick: D
             }],
             r = (s = s.filter(e => null != e))[0].featured,
             o = r ? 5 : 6;
-        return s.splice(+!!r, 0, D), s.length > o && s.splice(o, s.length - o), s
-    }, [D, t, R, M, G, e, y, L, P])
+        return s.splice(+!!r, 0, L), s.length > o && s.splice(o, s.length - o), s
+    }, [L, t, R, M, G, e, y, D, P])
 }

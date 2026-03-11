@@ -56,8 +56,8 @@ let p = e => {
             ellipseOpacity: C,
             customAnimationClassName: I,
             circleColor: f,
-            circleStroke: b
-        } = e, N = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !N;
+            circleStroke: N
+        } = e, b = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !b;
         return (0, s.jsx)("div", {
             className: r()(m.G3, n),
             children: (0, s.jsx)(A.A, {
@@ -65,7 +65,7 @@ let p = e => {
                     [m.uJ]: v,
                     [I ?? ""]: v
                 }),
-                progressCircleStroke: b,
+                progressCircleStroke: N,
                 progressCircleStrokeSize: a,
                 percentage: i ?? u,
                 initialPercentage: i ?? h,

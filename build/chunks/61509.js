@@ -24,16 +24,16 @@ var i = n(627968),
     C = n(235986),
     I = n(769015),
     f = n(250627),
-    b = n(871109),
-    N = n(571654),
+    N = n(871109),
+    b = n(571654),
     v = n(411342),
     O = n(179499),
     j = n(22007),
     R = n(95035),
     y = n(337095),
     P = n(871123),
-    L = n(510022),
-    D = n(378058),
+    D = n(510022),
+    L = n(378058),
     G = n(148355),
     M = n(780964),
     U = n(12901),
@@ -132,7 +132,7 @@ function e_(e) {
         guildProductListingId: n
     } = e, l = (0, f.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), a = (0, N.z)(l), r = (0, _.bG)([H.A], () => H.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
+    }), a = (0, b.z)(l), r = (0, _.bG)([H.A], () => H.A.getGuild(t)), o = l?.role_id != null && l?.attachments_count === 0 ? ei.intl.string(ei.t.H11qcT) : a, d = s.useCallback(async () => {
         r?.features.has(ee.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) ? await (0, j.A)(ee.BVt.GUILD_PRODUCT(t, n)) : await (0, j.A)(ee.BVt.CHANNEL(t)), (0, U.default)()
     }, [r, t, n]);
     return (0, i.jsxs)(i.Fragment, {
@@ -155,7 +155,7 @@ function eg(e) {
         guildProductListingId: n
     } = e, s = (0, f.Qi)(t, n, {
         requireCurrentGuild: !1
-    }), l = (0, _.bG)([b.A], () => b.A.getGuildProductFetchState(n) === b.e.FETCHING), a = s?.role_id, r = (0, _.bG)([w.A], () => null != a ? w.A.getRole(t, a) : void 0, [t, a]), o = (0, O.A)({
+    }), l = (0, _.bG)([N.A], () => N.A.getGuildProductFetchState(n) === N.e.FETCHING), a = s?.role_id, r = (0, _.bG)([w.A], () => null != a ? w.A.getRole(t, a) : void 0, [t, a]), o = (0, O.A)({
         guildId: t,
         productId: n
     }), d = (s?.attachments?.length ?? 0) > 0, c = null != r;
@@ -515,7 +515,7 @@ class eA extends s.PureComponent {
                             sku_id: t.sku.id,
                             application_id: l.id,
                             location_stack: r
-                        }), (0, L.n)({
+                        }), (0, D.n)({
                             sku: t.sku,
                             application: l,
                             analyticsLocations: r
@@ -654,7 +654,7 @@ class eA extends s.PureComponent {
             })
         } else if (null != _)
             if (t = l.isGuildProductPurchase && l.isSoftDeletedProduct ? ei.intl.string(ei.t.O7uLmw) : _.name, null != d) {
-                let t = (0, D.Id)(d);
+                let t = (0, L.Id)(d);
                 e = (0, i.jsx)(G.A, {
                     disableAnimation: !u,
                     isInteracting: u,
@@ -804,17 +804,17 @@ function em(e) {
         C = r ? g : void 0,
         I = t.subscription,
         f = (0, _.bG)([Y.A], () => null != I && I.type !== ee.rzx.PREMIUM ? Y.A.get(I.items[0].planId) : null),
-        b = (0, _.bG)([B.default], () => {
+        N = (0, _.bG)([B.default], () => {
             let e = t.isGift ? t.entitlements?.find(e => e.user?.id != null && null != e.gifterId) : null;
             return null == e ? null : B.default.getUser(e.user?.id ?? null) ?? e?.user
         }, [t]),
         {
-            analyticsLocations: N
+            analyticsLocations: b
         } = (0, x.Ay)(p.A.BILLING_SETTINGS_BILLING);
     return (0, i.jsx)(eA, {
         applicationStatistics: u,
         application: c ? h : C,
-        analyticsLocations: N,
+        analyticsLocations: b,
         guild: S,
         stickerPack: null,
         paymentSources: A,
@@ -823,7 +823,7 @@ function em(e) {
         className: a,
         payment: t,
         plan: f,
-        claimedGiftUser: b,
+        claimedGiftUser: N,
         hasLinkedToApplication: m
     })
 }

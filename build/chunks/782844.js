@@ -24,16 +24,16 @@ var i, s = n(627968),
     C = n(773669),
     I = n(544028),
     f = n(740625),
-    b = n(524738),
-    N = n(972982),
+    N = n(524738),
+    b = n(972982),
     v = n(36535),
     O = n(299116),
     j = n(457684),
     R = n(998252),
     y = n(980172),
     P = n(531525),
-    L = n(652215),
-    D = n(985018),
+    D = n(652215),
+    L = n(985018),
     G = n(139674);
 
 function M() {
@@ -60,13 +60,13 @@ function M() {
             setting: P.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
             children: (0, s.jsxs)(d.nVY, {
                 className: G.PN,
-                label: D.intl.string(D.t.pKSjEj),
+                label: L.intl.string(L.t.pKSjEj),
                 children: [e.mfaEnabled ? (0, s.jsx)(v.A, {}) : null, (0, s.jsx)(A.x, {
                     setting: P.H.ACCOUNT_CHANGE_PASSWORD,
                     children: (0, s.jsx)(O.A, {})
                 }), (0, s.jsx)(A.x, {
                     setting: P.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-                    children: (0, s.jsx)(N.A, {
+                    children: (0, s.jsx)(b.A, {
                         backupCodes: t
                     })
                 })]
@@ -97,23 +97,23 @@ class k extends l.PureComponent {
             subsection: e
         } = this.props;
         return (0, s.jsx)(f.R, {
-            header: D.intl.string(D.t["JAIM/m"]),
-            children: (0, s.jsx)(b.A, {
+            header: L.intl.string(L.t["JAIM/m"]),
+            children: (0, s.jsx)(N.A, {
                 parentSetting: P.H.ACCOUNT,
-                settingsSection: L.nc_.ACCOUNT,
+                settingsSection: D.nc_.ACCOUNT,
                 panelClassName: G.SZ,
                 onTabChange: e => {
-                    S.default.track(L.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                    S.default.track(D.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                         target_tab_name: e === P.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
                     })
                 },
                 defaultTabIndex: "ACCOUNT_STANDING" === e ? 1 : void 0,
                 tabs: [{
-                    title: D.intl.string(D.t.Am9YHi),
+                    title: L.intl.string(L.t.Am9YHi),
                     component: M,
                     setting: P.H.ACCOUNT_SECURITY_TAB
                 }, {
-                    title: D.intl.string(D.t["Vov/9o"]),
+                    title: L.intl.string(L.t["Vov/9o"]),
                     component: g.A,
                     setting: P.H.PRIVACY_AND_SAFETY_STANDING
                 }]

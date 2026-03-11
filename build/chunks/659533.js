@@ -24,8 +24,8 @@ var i = n(627968),
     C = n(652215),
     I = n(985018),
     f = n(509117),
-    b = n(6336);
-let N = e => {
+    N = n(6336);
+let b = e => {
         let {
             userRecord: t,
             placement: n
@@ -78,19 +78,19 @@ let N = e => {
         } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
         return (0, i.jsxs)("div", {
             className: f.ZM,
-            children: [(0, i.jsx)(N, {
+            children: [(0, i.jsx)(b, {
                 userRecord: s,
                 placement: 1
             }), (0, i.jsx)(v, {
                 numSentReferrals: n,
                 placement: 1
-            }), (0, i.jsx)(N, {
+            }), (0, i.jsx)(b, {
                 userRecord: l,
                 placement: 2
             }), (0, i.jsx)(v, {
                 numSentReferrals: n,
                 placement: 2
-            }), (0, i.jsx)(N, {
+            }), (0, i.jsx)(b, {
                 userRecord: a,
                 placement: 3
             })]
@@ -101,22 +101,22 @@ let N = e => {
             isInSettings: t = !1
         } = e, l = (0, r.bG)([x.A], () => x.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, E.J)(), g = s.useMemo(() => o.map(e => new A.A(e)), [o]), N = {
+        } = (0, E.J)(), g = s.useMemo(() => o.map(e => new A.A(e)), [o]), b = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === p.aK.REDEEMED && N.redeemed++, e === p.aK.CONVERTED && (N.redeemed++, N.converted++)
+            e === p.aK.REDEEMED && b.redeemed++, e === p.aK.CONVERTED && (b.redeemed++, b.converted++)
         });
-        let v = N.sent === E.Z,
+        let v = b.sent === E.Z,
             j = h.A.getArticleURL(C.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: R
             } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             y = s.useRef(null),
-            P = N.sent / E.Z * 100,
-            L = (0, i.jsxs)("div", {
+            P = b.sent / E.Z * 100,
+            D = (0, i.jsxs)("div", {
                 className: f.hE,
                 children: [(0, i.jsx)(T.Ay, {
                     percentage: P,
@@ -139,7 +139,7 @@ let N = e => {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
                         children: (0, S.dB)({
                             helpdeskArticle: j,
-                            referralsStatuses: N
+                            referralsStatuses: b
                         })
                     }), (0, i.jsx)("div", {
                         className: a()(f.Fb, {
@@ -171,7 +171,7 @@ let N = e => {
                             children: (0, i.jsxs)("div", {
                                 className: f.Zn,
                                 children: [(0, i.jsx)("img", {
-                                    src: b,
+                                    src: N,
                                     alt: "",
                                     className: f.QH
                                 }), v ? I.intl.string(I.t.SY9tyI) : I.intl.string(I.t.Lm2nFc)]
@@ -180,24 +180,24 @@ let N = e => {
                     })]
                 })]
             }),
-            D = N.redeemed === E.Z;
+            L = b.redeemed === E.Z;
         return (0, i.jsx)(_.f5, {
             value: R,
             children: (0, i.jsx)("div", {
                 className: a()({
-                    [f.f5]: D,
-                    [f.JY]: !D,
+                    [f.f5]: L,
+                    [f.JY]: !L,
                     [f.VX]: !t,
-                    [f.m$]: D && t
+                    [f.m$]: L && t
                 }),
                 children: (0, i.jsx)("div", {
                     ref: y,
                     className: a()({
                         [f.dn]: !t,
                         [f.d_]: t,
-                        [f.kS]: D
+                        [f.kS]: L
                     }),
-                    children: L
+                    children: D
                 })
             })
         })

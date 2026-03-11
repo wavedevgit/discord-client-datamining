@@ -1,6 +1,6 @@
 /** chunk id: 591203 params = (module,exports,require) **/
 n.d(t, {
-    L: () => b
+    L: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -61,7 +61,7 @@ function f(e) {
         })]
     })
 }
-let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
+let N = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
     useSearchTerms: () => [S.intl.string(S.t.nzUc3B)],
     Component: function() {
         let {
@@ -74,7 +74,7 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
         }, [E, e]), s.useEffect(() => {
             (0, _.E7)()
         }, []);
-        let b = s.useCallback((e, t) => {
+        let N = s.useCallback((e, t) => {
             let {
                 inDropdown: n
             } = t;
@@ -97,7 +97,7 @@ let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
                 onChange: e => {
                     n(null == e ? "0" : e.id)
                 },
-                renderOptionSuffix: b,
+                renderOptionSuffix: N,
                 hideDivider: !0
             }), (0, i.jsxs)(c.A, {
                 title: S.intl.format(S.t.I2TsYN, {

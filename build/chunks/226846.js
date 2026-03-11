@@ -7,8 +7,8 @@ l(64700);
 var n = l(397927),
     r = l(73079),
     i = l(156312),
-    s = l(252561),
-    o = l(818348),
+    o = l(252561),
+    s = l(818348),
     u = l(825057);
 let c = {
     name: "Choose Payment Source Type",
@@ -25,17 +25,17 @@ let c = {
             },
             isEligibleForTrial: t,
             paymentRequestWallets: c ? ["googlePay", "applePay"] : [],
-            paymentSourceTypeRestrictions: l ? [o.he.CARD.valueOf()] : null
+            paymentSourceTypeRestrictions: l ? [s.he.CARD.valueOf()] : null
         };
         return (0, a.jsx)(i.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,
-            children: (0, a.jsxs)(s.wn, {
+            children: (0, a.jsxs)(o.wn, {
                 children: [(0, a.jsx)(n.Heading, {
                     variant: "heading-xl/semibold",
                     children: "Choose Payment Source Type"
-                }), (0, a.jsx)(s.e_, {
+                }), (0, a.jsx)(o.e_, {
                     className: u.Bt,
                     children: (0, a.jsx)("div", {
                         className: u.VS,

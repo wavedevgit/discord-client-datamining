@@ -24,16 +24,16 @@ var i = n(627968),
     C = n(790114),
     I = n(836602),
     f = n(262),
-    b = n(950191),
-    N = n(854627),
+    N = n(950191),
+    b = n(854627),
     v = n(542535),
     O = n(915614),
     j = n(662758),
     R = n(957565),
     y = n(975571),
     P = n(427262),
-    L = n(837921),
-    D = n(253932),
+    D = n(837921),
+    L = n(253932),
     G = n(780964),
     M = n(192501),
     U = n(840065),
@@ -43,7 +43,7 @@ var i = n(627968),
     H = n(985018),
     B = n(536242),
     F = n(240342);
-let Y = L.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
+let Y = D.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function z() {
     (0, U.openUserSettings)(G.X.PROFILE_PANEL, {
@@ -362,7 +362,7 @@ function J(e) {
     } = e, n = (0, h.A)({
         id: t.id,
         label: H.intl.string(H.t["/AXYnE"])
-    }), l = D.Q_.useSetting(), a = s.useRef(null);
+    }), l = L.Q_.useSetting(), a = s.useRef(null);
     return l && R.p5 ? (0, i.jsx)(c.YNO, {
         targetElementRef: a,
         renderPopout: e => {
@@ -456,10 +456,10 @@ function Q(e) {
 function $(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, f.A)(n), l = D.jP.useSetting(), a = (0, r.bG)([I.A], () => I.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, N.Ay)(t.id), s = (0, f.A)(n), l = L.jP.useSetting(), a = (0, r.bG)([I.A], () => I.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: _
-    } = (0, N.A)({
+    } = (0, b.A)({
         userId: t?.id,
         size: c._3J.SIZE_80
     }), g = (0, C.A)(), A = (0, T.fk)();

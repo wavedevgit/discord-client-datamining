@@ -29,7 +29,7 @@ function p(e) {
         authorizedApplicationId: _.A.testModeApplicationId,
         authorizationError: _.A.error,
         authorizing: _.A.isFetchingAuthorization
-    })), [T, S] = s.useState(p ?? ""), [C, I] = s.useState("8080"), [f, b] = s.useState("localhost"), N = h.test(T);
+    })), [T, S] = s.useState(p ?? ""), [C, I] = s.useState("8080"), [f, N] = s.useState("localhost"), b = h.test(T);
     async function v() {
         d.SH();
         let e = function(e, t, n) {
@@ -46,15 +46,15 @@ function p(e) {
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
     let O = null != p && p === T,
         j = O ? function() {
-            d.cL(), S(""), b(null)
+            d.cL(), S(""), N(null)
         } : v,
         R = s.useMemo(() => [{
             loading: E,
-            disabled: !N || 0 === T.length || "localhost" === f && 0 === C.length,
+            disabled: !b || 0 === T.length || "localhost" === f && 0 === C.length,
             variant: O ? "critical-primary" : "active",
             text: O ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
             onClick: j
-        }], [T.length, E, O, N, C.length, j, f]);
+        }], [T.length, E, O, b, C.length, j, f]);
     return (0, i.jsxs)(l.Modal, {
         title: g.intl.string(g.t.f8fzky),
         subtitle: g.intl.string(g.t.a6Vill),
@@ -77,7 +77,7 @@ function p(e) {
                     required: !0,
                     value: T,
                     maxLength: 19,
-                    error: N ? null : g.intl.string(g.t.gPNgKO),
+                    error: b ? null : g.intl.string(g.t.gPNgKO),
                     onChange: function(e) {
                         S(e)
                     },
@@ -88,7 +88,7 @@ function p(e) {
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: g.intl.string(g.t["/GTqXG"]),
-                    disabled: !N || "" === T,
+                    disabled: !b || "" === T,
                     value: f,
                     options: [{
                         value: "localhost",
@@ -100,7 +100,7 @@ function p(e) {
                         id: "proxy"
                     }],
                     onSelectionChange: function(e) {
-                        b(e)
+                        N(e)
                     },
                     placeholder: "URL Origin Type"
                 })

@@ -26,16 +26,16 @@ var i = n(627968),
     C = n(259065),
     I = n(141468),
     f = n(963852),
-    b = n(763754),
-    N = n(20851),
+    N = n(763754),
+    b = n(20851),
     v = n(652961),
     O = n(195043),
     j = n(54570),
     R = n(8880),
     y = n(954571),
     P = n(975571),
-    L = n(964404),
-    D = n(253932),
+    D = n(964404),
+    L = n(253932),
     G = n(780964),
     M = n(397438),
     U = n(193658),
@@ -140,7 +140,7 @@ function ee(e) {
 }
 
 function et() {
-    let e = D.hH.useSetting(),
+    let e = L.hH.useSetting(),
         [t] = s.useState(() => {
             let e = (0, I.rh)({
                 ...(0, f.Ay)({
@@ -175,10 +175,10 @@ function et() {
                 })]
             }), (0, i.jsx)("div", {
                 className: W.QS,
-                children: (0, i.jsx)(N.A, {
+                children: (0, i.jsx)(b.A, {
                     compact: e,
                     author: {
-                        ...(0, b.p_)(t),
+                        ...(0, N.p_)(t),
                         colorString: "#DD80F4"
                     },
                     message: t
@@ -280,7 +280,7 @@ function ea() {
 }
 
 function er() {
-    let e = (0, r.bG)([L.Ay], () => L.Ay.hdrDynamicRange);
+    let e = (0, r.bG)([D.Ay], () => D.Ay.hdrDynamicRange);
     return (0, i.jsx)(O.x, {
         setting: H.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
         children: (0, i.jsx)(d.z6M, {
@@ -401,8 +401,8 @@ function eu() {
 }
 
 function e_() {
-    let e = D.kt.useSetting(),
-        t = D.Sf.useSetting(),
+    let e = L.kt.useSetting(),
+        t = L.Sf.useSetting(),
         {
             useReducedMotion: n,
             rawPrefersReducedMotion: l,
@@ -447,7 +447,7 @@ function e_() {
                     label: z.intl.string(z.t.Iayoh5),
                     description: null != o ? (0, v.A)(o) : void 0,
                     checked: e,
-                    onChange: D.kt.updateSetting
+                    onChange: L.kt.updateSetting
                 })
             }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
@@ -455,7 +455,7 @@ function e_() {
                     label: z.intl.string(z.t.iIaOlc),
                     description: null != c ? (0, v.A)(c) : void 0,
                     checked: t,
-                    onChange: D.Sf.updateSetting
+                    onChange: L.Sf.updateSetting
                 })
             }), (0, i.jsx)(O.x, {
                 setting: H.H.ACCESSIBILITY_STICKERS,
@@ -466,10 +466,10 @@ function e_() {
 }
 
 function eg() {
-    let e = D.S0.useSetting(),
+    let e = L.S0.useSetting(),
         t = (0, r.bG)([M.A], () => M.A.getAppliedOverrideReasonKey("animateStickers")),
         n = s.useCallback(e => {
-            D.S0.updateSetting(e)
+            L.S0.updateSetting(e)
         }, []);
     return (0, i.jsx)(d.z6M, {
         label: z.intl.string(z.t["6NtAuJ"]),
@@ -492,7 +492,7 @@ function eg() {
 
 function eA() {
     let e = (0, r.bG)([g.A], () => g.A.isSubmitButtonEnabled),
-        t = D.D_.useSetting(),
+        t = L.D_.useSetting(),
         n = s.useRef(null);
     return (0, U.A)(n, w.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
         ref: n,
@@ -517,7 +517,7 @@ function eA() {
                             location: {
                                 section: B.JJy.SETTINGS_ACCESSIBILITY
                             }
-                        }), D.D_.updateSetting(e)
+                        }), L.D_.updateSetting(e)
                     }
                 })
             })]

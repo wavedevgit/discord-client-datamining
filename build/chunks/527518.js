@@ -6,8 +6,8 @@ var a = l(627968),
     n = l(162097),
     r = l(142270),
     i = l(240248),
-    s = l(652215),
-    o = l(985018),
+    o = l(652215),
+    s = l(985018),
     u = l(749226);
 let c = {
     title: "Balance Widget",
@@ -21,10 +21,10 @@ let c = {
                 linkPreText: r
             } = e;
             return (0, a.jsx)(n.b, {
-                ctaText: (0, i.uJ)(t) ? o.intl.string(o.t.H57f41) : t,
-                linkText: (0, i.uJ)(l) ? o.intl.string(o.t["7f4H7D"]) : l,
+                ctaText: (0, i.uJ)(t) ? s.intl.string(s.t.H57f41) : t,
+                linkText: (0, i.uJ)(l) ? s.intl.string(s.t["7f4H7D"]) : l,
                 linkPreText: (0, i.uJ)(r) ? void 0 : r,
-                ctaOnClick: s.tEg
+                ctaOnClick: o.tEg
             })
         },
         controls: {
@@ -58,11 +58,11 @@ let c = {
                 className: u.tH,
                 children: (0, a.jsx)(r.SS, {
                     className: u.oz,
-                    ctaText: (0, i.uJ)(t) ? o.intl.string(o.t["J+vlIR"]) : t,
-                    ctaOnClick: s.tEg,
+                    ctaText: (0, i.uJ)(t) ? s.intl.string(s.t["J+vlIR"]) : t,
+                    ctaOnClick: o.tEg,
                     showNotificationBadge: n,
                     cardAlignment: c,
-                    linkText: (0, i.uJ)(l) ? o.intl.string(o.t.XRdyjz) : l
+                    linkText: (0, i.uJ)(l) ? s.intl.string(s.t.XRdyjz) : l
                 })
             })
         },
