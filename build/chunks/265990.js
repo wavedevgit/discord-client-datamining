@@ -85,8 +85,13 @@ let G = function(e) {
     } = T.A.useConfig({
         location: "PeopleList"
     }), [B, H] = r.useState([]), F = r.useCallback(e => {
-        V && H(t => [...t, e])
-    }, [V]);
+        let {
+            enabled: t
+        } = T.A.getConfig({
+            location: "Friend Request Accept"
+        });
+        t && H(t => [...t, e])
+    }, []);
     d !== L.m3P.PENDING && B.length > 0 && H([]);
     let [Y, W] = r.useState(() => {
         let e = {};

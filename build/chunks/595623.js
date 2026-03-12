@@ -183,8 +183,8 @@ class G {
         }), e
     }
 }
-let S = !0,
-    v = !1,
+let v = !0,
+    S = !1,
     R = g.m3P.ONLINE,
     _ = new G,
     O = !0,
@@ -192,11 +192,11 @@ let S = !0,
 
 function k() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    S && (e || R !== g.m3P.ONLINE && R !== g.m3P.ADD_FRIEND) && !v && (S = !1, v = !0, l.A.fetchRelationships())
+    v && (e || R !== g.m3P.ONLINE && R !== g.m3P.ADD_FRIEND) && !S && (v = !1, S = !0, l.A.fetchRelationships())
 }
 
 function M() {
-    if (S = !0, O ? v = !1 : k(), _ = _.reset(), P) return;
+    if (v = !0, O ? S = !1 : k(), _ = _.reset(), P) return;
     let e = _.getRelationshipCounts();
     R = 0 === e[g.eA$.FRIEND] ? 0 !== e[g.eA$.PENDING_INCOMING] ? g.m3P.PENDING : g.m3P.ADD_FRIEND : g.m3P.ONLINE
 }
@@ -217,7 +217,7 @@ class T extends a.Ay.Store {
     }
     getState() {
         return {
-            fetching: v,
+            fetching: S,
             section: R,
             rows: _
         }
@@ -237,10 +237,10 @@ let $ = new T(r.h, {
         return O = null != t, F(), !O
     },
     LOAD_RELATIONSHIPS_SUCCESS: function() {
-        v = !1
+        S = !1
     },
     LOAD_RELATIONSHIPS_FAILURE: function() {
-        S = !0, v = !0
+        v = !0, S = !0
     },
     FRIENDS_SET_INITIAL_SECTION: function(e) {
         R = e.section, P = !0

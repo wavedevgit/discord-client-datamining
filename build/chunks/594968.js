@@ -31,22 +31,24 @@ function S(e) {
         isGameRelationship: l,
         active: o,
         onAcceptFriendRequest: d
-    } = e, c = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
-        acceptFriendRequest: u,
-        cancelFriendRequest: A
+    } = e, [c, u] = r.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
+        acceptFriendRequest: h,
+        cancelFriendRequest: _
     } = (0, g.I)({
         userId: t.id,
         applicationId: n,
         isGameRelationship: l,
         location: "Friends",
-        onConfirm: d
-    }), h = r.useCallback(e => {
-        e.stopPropagation(), u()
-    }, [u]), _ = r.useCallback(e => {
-        e.stopPropagation(), A()
-    }, [A]);
+        onFinally: () => {
+            u(!1)
+        }
+    }), p = r.useCallback(e => {
+        u(!0), e.stopPropagation(), d(), h()
+    }, [h, d]), I = r.useCallback(e => {
+        e.stopPropagation(), _()
+    }, [_]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [c && (0, i.jsx)("div", {
+        children: [A && (0, i.jsx)("div", {
             className: N.ou,
             children: (0, i.jsx)(s.LpS, {
                 color: a.A.unsafe_rawColors.BRAND_500.css,
@@ -56,13 +58,14 @@ function S(e) {
             icon: s.A9s,
             actionType: E.A.ActionTypes.ACCEPT,
             tooltip: T.intl.string(T.t.Zcibdf),
-            onClick: h,
-            shouldHighlight: o
+            onClick: p,
+            shouldHighlight: o,
+            loading: c
         }), (0, i.jsx)(E.A, {
             icon: s.PGe,
             actionType: E.A.ActionTypes.DENY,
             tooltip: T.intl.string(T.t.xuio0C),
-            onClick: _,
+            onClick: I,
             shouldHighlight: o
         })]
     })
@@ -128,18 +131,29 @@ function y(e) {
         hovered: n,
         status: r,
         isGameRelationship: l,
-        applicationId: a
-    } = e, s = p.Ay.useUserTag(t);
+        applicationId: o,
+        isFriend: d
+    } = e, c = p.Ay.useUserTag(t);
     return (0, i.jsx)(f.A, {
         user: t,
         hovered: n,
         status: r,
         showAccountIdentifier: !l && !t.isProvisional,
-        subText: (0, i.jsx)(v, {
+        subText: d ? (0, i.jsxs)("div", {
+            className: N.Tl,
+            children: [(0, i.jsx)(s.Uzd, {
+                size: "sm",
+                color: a.A.colors.ICON_FEEDBACK_POSITIVE
+            }), (0, i.jsx)(s.Text, {
+                variant: "text-sm/medium",
+                color: "text-muted",
+                children: T.intl.string(T.t.bgL68y)
+            })]
+        }) : (0, i.jsx)(v, {
             isGameRelationship: l,
             isProvisional: t.isProvisional,
-            applicationId: a,
-            userTag: s
+            applicationId: o,
+            userTag: c
         })
     })
 }
@@ -174,7 +188,8 @@ function b(e) {
                 hovered: e,
                 status: g,
                 isGameRelationship: A,
-                applicationId: u
+                applicationId: u,
+                isFriend: E === C.eA$.FRIEND
             }), (0, i.jsx)("div", {
                 className: N.o1,
                 children: E === C.eA$.FRIEND ? (0, i.jsx)(s.Button, {

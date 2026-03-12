@@ -17,18 +17,20 @@ function c(e) {
         tooltip: s,
         onClick: i,
         actionType: a = 2,
-        shouldHighlight: h
+        shouldHighlight: h,
+        loading: c = !1
     } = e;
     return (0, n.jsx)(l.m, {
         text: s,
         children: (0, n.jsx)(o.DUT, {
             tag: "div",
             "aria-label": s,
-            onClick: i,
+            onClick: c ? void 0 : i,
             className: r()(u.hP, {
                 [u.Jj]: 0 === a,
                 [u.Bs]: 1 === a,
-                [u.Zt]: h
+                [u.Zt]: h,
+                [u.r9]: c
             }),
             children: (0, n.jsx)(t, {
                 className: u.Kk,
