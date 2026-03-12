@@ -88,7 +88,7 @@ function w(e) {
     })
 }
 
-function D(e) {
+function O(e) {
     let {
         channelId: t,
         messageId: n,
@@ -103,7 +103,7 @@ function D(e) {
     }))
 }
 
-function O(e) {
+function D(e) {
     let {
         channelId: t,
         messageId: n
@@ -115,7 +115,7 @@ async function k(e) {
         channelId: t,
         messageId: n,
         answerIds: i
-    } = e, r = O({
+    } = e, r = D({
         channelId: t,
         messageId: n
     }), l = a().difference(r, i), s = a().difference(i, r), d = C.default.getId(), u = [...l.map(e => ({
@@ -163,7 +163,7 @@ async function U(e) {
     });
     let l = (0, N.xt)(t, n);
     r()(null != l, "Must not be able to vote without existing state!");
-    let a = O({
+    let a = D({
         channelId: t,
         messageId: n
     });
@@ -239,7 +239,7 @@ async function B(e) {
             });
             break;
         case "cancel":
-            D({
+            O({
                 channelId: t,
                 messageId: n,
                 isEditing: !1
@@ -365,7 +365,7 @@ let F = {
         })
     },
     handlePollSubmitVote: U,
-    handleUpdateVoteEditingState: D,
+    handleUpdateVoteEditingState: O,
     handlePollActionTapped: B,
     createPoll: async function(e) {
         let {

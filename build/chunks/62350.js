@@ -34,40 +34,40 @@ var i = n(627968),
     P = n(768349),
     M = n(172799),
     w = n(985018),
-    D = n(373502);
+    O = n(373502);
 
-function O(e) {
+function D(e) {
     let {
         members: t,
         membersOnline: n,
         textColor: r
     } = e, l = [];
     return null != n && n > 0 && l.push((0, i.jsxs)("div", {
-        className: D.MY,
+        className: O.MY,
         children: [(0, i.jsx)("i", {
-            className: D.QD
+            className: O.QD
         }), (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
-            className: D.U9,
+            className: O.U9,
             color: r,
             children: w.intl.format(w.t["LC+S+m"], {
                 membersOnline: n
             })
         })]
     }, "onlineCount")), null != t && l.push((0, i.jsxs)("div", {
-        className: D.MY,
+        className: O.MY,
         children: [(0, i.jsx)("i", {
-            className: D.o6
+            className: O.o6
         }), (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
-            className: D.U9,
+            className: O.U9,
             color: r,
             children: w.intl.format(w.t.zRl6XR, {
                 count: t
             })
         })]
     }, "memberCount")), (0, i.jsx)("div", {
-        className: D.rc,
+        className: O.rc,
         children: l
     })
 }
@@ -82,11 +82,11 @@ function k(e) {
     if (null != t && null != n) {
         let e = (0, I.gU)(t, n);
         return (0, i.jsxs)("div", {
-            className: a()(D.Ix, {
-                [D.v6]: r
+            className: a()(O.Ix, {
+                [O.v6]: r
             }),
             children: [null != e ? (0, i.jsx)(e, {
-                className: D.p,
+                className: O.p,
                 size: "xs",
                 color: "currentColor"
             }) : null, (0, i.jsx)(c.A, {
@@ -102,8 +102,8 @@ function k(e) {
         })
     }
     return null != n ? (0, i.jsx)("div", {
-        className: a()(D.Ix, {
-            [D.v6]: r
+        className: a()(O.Ix, {
+            [O.v6]: r
         }),
         children: (0, i.jsx)(c.A, {
             children: (0, i.jsx)(u.Text, {
@@ -146,9 +146,9 @@ function U(e) {
             return A.id === t
         })),
         P = b.A.getChannel(l.channel?.id),
-        D = (0, d.bG)([v.A], () => null != P && v.A.can(R.xBc.USE_EMBEDDED_ACTIVITIES, P), [P]),
+        O = (0, d.bG)([v.A], () => null != P && v.A.can(R.xBc.USE_EMBEDDED_ACTIVITIES, P), [P]),
         {
-            analyticsLocations: O
+            analyticsLocations: D
         } = (0, p.Ay)(h.A.INVITE_EMBED),
         k = (0, d.yK)([m.Ay], () => null != P ? m.Ay.getEmbeddedActivitiesForChannel(P.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [P, A.id]),
         U = (0, d.yK)([S.default], () => k.map(e => S.default.getUser(e)).filter(e => null != e), [k]),
@@ -158,12 +158,12 @@ function U(e) {
                 action: "accept",
                 inviter_id: a.author.id,
                 invite_message_id: a.id
-            }, O), _.Ay.acceptInviteAndTransitionToInviteChannel({
+            }, D), _.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: l.code,
                 context: s("Invite Button Embed"),
-                analyticsLocations: O
+                analyticsLocations: D
             })
-        }, [l, a, O, s]),
+        }, [l, a, D, s]),
         F = l.state === R.elq.ACCEPTING,
         H = null != f;
     if (null == f) {
@@ -171,9 +171,9 @@ function U(e) {
         f = (0, j.DY)(l.guild)
     }
     t = H ? I ? w.intl.string(w.t.DPfdsq) : N ? w.intl.string(w.t.sqe0hj) : w.intl.string(w.t.RscU7I) : w.intl.string(w.t["2BP08E"]);
-    let V = H && !D || H && I;
-    return (D || (n = w.intl.string(w.t.hHGrWz)), null == l.code || "" === l.code || null == C) ? null : (0, i.jsx)(p.f5, {
-        value: O,
+    let V = H && !O || H && I;
+    return (O || (n = w.intl.string(w.t.hHGrWz)), null == l.code || "" === l.code || null == C) ? null : (0, i.jsx)(p.f5, {
+        value: D,
         children: (0, i.jsx)(G, {
             app: C,
             activityUsers: U,
@@ -233,7 +233,7 @@ function G(e) {
         ...y,
         onClickBanner: S,
         info: (0, i.jsxs)("div", {
-            className: D.QR,
+            className: O.QR,
             children: [(0, i.jsx)(k, {
                 channel: a,
                 guild: s,
@@ -245,7 +245,7 @@ function G(e) {
                 activityText: w.intl.formatToPlainString(w.t.yJj035, {
                     count: j
                 })
-            }) : (0, i.jsx)(O, {
+            }) : (0, i.jsx)(D, {
                 members: d,
                 membersOnline: c,
                 textColor: "none"

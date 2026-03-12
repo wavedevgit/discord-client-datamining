@@ -40,8 +40,8 @@ var i = n(627968),
     G = n(381941),
     F = n(652215),
     B = n(705751),
-    H = n(200700),
-    w = n(985018),
+    w = n(200700),
+    H = n(985018),
     V = n(509481);
 
 function q(e, t) {
@@ -147,17 +147,17 @@ function W(e) {
             try {
                 switch (parseInt(e.actionType)) {
                     case T.G.DELETE_USER_MESSAGE:
-                        return w.intl.formatToPlainString(w.t.BtKE9h, {
+                        return H.intl.formatToPlainString(H.t.BtKE9h, {
                             userName: i,
                             timestamp: l.fromNow()
                         });
                     case T.G.SET_COMPLETED:
-                        return w.intl.formatToPlainString(w.t.dyo9US, {
+                        return H.intl.formatToPlainString(H.t.dyo9US, {
                             userName: i,
                             timestamp: l.fromNow()
                         });
                     case T.G.SUBMIT_FEEDBACK:
-                        return w.intl.formatToPlainString(w.t["C9/kIO"], {
+                        return H.intl.formatToPlainString(H.t["C9/kIO"], {
                             userName: i,
                             timestamp: l.fromNow()
                         });
@@ -287,7 +287,7 @@ function Z(e) {
         }), (0, h.iN)(e))
     }, [a, X]), e_ = l.useCallback(() => {
         (0, N.E5)(a.id, s, T.G.DELETE_USER_MESSAGE)
-    }, [s, a.id]), em = (0, H.getFriendlyDurationString)(Number(et)), eA = null != en, eE = j && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
+    }, [s, a.id]), em = (0, w.getFriendlyDurationString)(Number(et)), eA = null != en, eE = j && null != ee && (null == ei || !ei.actions.hasOwnProperty(T.G.DELETE_USER_MESSAGE)), eI = a.embeds.length > 0 ? a.embeds[0].fields.find(e => "channel_id" === e.rawName)?.rawValue : null, eT = null != eI;
     return (0, i.jsx)("div", {
         onMouseEnter: _,
         onMouseLeave: p,
@@ -317,7 +317,7 @@ function Z(e) {
                             color: "text-brand",
                             tag: "span",
                             className: V.Xh,
-                            children: w.intl.string(w.t.hG1StD)
+                            children: H.intl.string(H.t.hG1StD)
                         }), (0, i.jsx)(I.A, {
                             type: B.nu.SYSTEM_DM,
                             className: V.Al
@@ -356,7 +356,7 @@ function Z(e) {
                                         variant: "text-xs/medium",
                                         color: "text-muted",
                                         tag: "span",
-                                        children: w.intl.format(w.t.SYIUTR, {
+                                        children: H.intl.format(H.t.SYIUTR, {
                                             keyword: Z
                                         })
                                     }), (0, i.jsx)("div", {
@@ -366,7 +366,7 @@ function Z(e) {
                                     variant: "text-xs/medium",
                                     color: "text-muted",
                                     tag: "span",
-                                    children: w.intl.format(w.t.ZoOyKB, {
+                                    children: H.intl.format(H.t.ZoOyKB, {
                                         ruleName: G
                                     })
                                 }), null != em && (0, i.jsxs)(i.Fragment, {
@@ -377,7 +377,7 @@ function Z(e) {
                                         color: "text-muted",
                                         tag: "span",
                                         className: V.__invalid_footerText,
-                                        children: w.intl.format(w.t["3LYql6"], {
+                                        children: H.intl.format(H.t["3LYql6"], {
                                             duration: em
                                         })
                                     })]
@@ -389,7 +389,7 @@ function Z(e) {
                                         color: "text-muted",
                                         tag: "span",
                                         className: V.nx,
-                                        children: w.intl.format(w.t["26bB2M"], {
+                                        children: H.intl.format(H.t["26bB2M"], {
                                             reason: (0, f.o2)(el)
                                         })
                                     })]
@@ -425,7 +425,7 @@ function Z(e) {
                                 variant: "primary",
                                 size: "sm",
                                 textVariant: "text-xs/normal",
-                                text: w.intl.string(w.t.DEoVWZ),
+                                text: H.intl.string(H.t.DEoVWZ),
                                 onClick: e => {
                                     eo.onContextMenuModerateUser?.(e)
                                 }
@@ -440,7 +440,7 @@ function Z(e) {
                                     variant: "primary",
                                     size: "sm",
                                     textVariant: "text-xs/normal",
-                                    text: w.intl.string(w.t.jtkj06)
+                                    text: H.intl.string(H.t.jtkj06)
                                 })
                             })]
                         }) : null, (0, i.jsx)("div", {
@@ -452,7 +452,7 @@ function Z(e) {
                                 variant: "primary",
                                 size: "sm",
                                 textVariant: "text-xs/normal",
-                                text: w.intl.string(w.t["94JbM3"])
+                                text: H.intl.string(H.t["94JbM3"])
                             })
                         }), eE ? (0, i.jsxs)(i.Fragment, {
                             children: [(0, i.jsx)("div", {
@@ -464,7 +464,7 @@ function Z(e) {
                                     variant: "primary",
                                     size: "sm",
                                     textVariant: "text-xs/normal",
-                                    text: w.intl.string(w.t["3A52tY"])
+                                    text: H.intl.string(H.t["3A52tY"])
                                 })
                             })]
                         }) : null, null != ei ? (0, i.jsx)(J, {

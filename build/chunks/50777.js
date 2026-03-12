@@ -34,8 +34,8 @@ function j(e) {
         guildId: t,
         skuId: n,
         channel: j
-    } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, M = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), w = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), D = (0, m.h)(P), {
-        analyticsLocations: O
+    } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, M = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), w = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), O = (0, m.h)(P), {
+        analyticsLocations: D
     } = (0, c.Ay)(d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, h.pE)();
     let k = (0, a.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
@@ -53,9 +53,9 @@ function j(e) {
                 applicationId: R.applicationId,
                 guildId: t,
                 isStorefront: !1,
-                analyticsLocations: O
+                analyticsLocations: D
             })
-        }, [n, R?.applicationId, t, O]),
+        }, [n, R?.applicationId, t, D]),
         H = r.useCallback(() => {
             null != R && U && (0, b.a)(R, {
                 isGift: !1
@@ -72,13 +72,13 @@ function j(e) {
                 analyticsLocations: [d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [R, k]),
-        W = null != P && null == D && !w;
-    return (L || M || W) && (null == R || null == D) ? (0, i.jsx)("div", {
+        W = null != P && null == O && !w;
+    return (L || M || W) && (null == R || null == O) ? (0, i.jsx)("div", {
         className: N.kL,
         children: (0, i.jsx)(o.y$y, {
             className: N.u1
         })
-    }) : null != R && null != D && (0, _.A)(D) && D.guildId === t ? (0, i.jsxs)("div", {
+    }) : null != R && null != O && (0, _.A)(O) && O.guildId === t ? (0, i.jsxs)("div", {
         className: N.kL,
         children: [(0, i.jsx)(v.A, {
             className: N.Nr,
@@ -87,7 +87,7 @@ function j(e) {
             guildId: t,
             variant: v.s.EMBEDDED,
             onClick: F,
-            analyticsLocations: O
+            analyticsLocations: D
         }), (0, i.jsxs)("div", {
             className: N.zH,
             children: [(0, i.jsxs)("div", {

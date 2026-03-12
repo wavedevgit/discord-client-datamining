@@ -44,8 +44,8 @@ var i = n(989349),
     G = n(859703),
     F = n(34550),
     B = n(655116),
-    H = n(105530),
-    w = n(942405),
+    w = n(105530),
+    H = n(942405),
     V = n(964404),
     q = n(617617),
     X = n(340913),
@@ -143,14 +143,14 @@ let eU = {
     }),
     eB = null;
 
-function eH(e) {
+function ew(e) {
     return ej[e] + "-untilAtLeast"
 }
 
-function ew(e, t, n) {
+function eH(e, t, n) {
     if (null == e) return;
     let i = ej[e];
-    (null == i || t || c.w.set(i, !0), eb.has(e) && (ek[e] = !0), null != n && null != i) ? c.w.set(eH(e), n.format("YYYY-MM-DDTHH:mm:ss.SSSZ")): c.w.remove(eH(e))
+    (null == i || t || c.w.set(i, !0), eb.has(e) && (ek[e] = !0), null != n && null != i) ? c.w.set(ew(e), n.format("YYYY-MM-DDTHH:mm:ss.SSSZ")): c.w.remove(ew(e))
 }
 let eV = null;
 
@@ -176,7 +176,7 @@ function eX(e) {
     if (null != n) return (0, I.k8)(n);
     let i = ej[e];
     if (null != i) {
-        let t, n = null != (t = c.w.get(eH(e))) ? l()(t) : null;
+        let t, n = null != (t = c.w.get(ew(e))) ? l()(t) : null;
         if (null != n) return n?.isAfter(l()())
     }
     let a = ek[e];
@@ -239,7 +239,7 @@ let ez = {
             let {
                 voiceState: t
             } = e;
-            return (0, H.eY)(t) === H.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+            return (0, w.eY)(t) === w.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
         }
     },
     [ex.kqX.LURKING_GUILD]: {
@@ -620,7 +620,7 @@ let ez = {
             let {
                 voiceChannelId: t
             } = e;
-            if (eX(ex.kqX.SYSTEM_SERVICE_WARNING) || !(0, w.yA)(g.Ay) || null == t || en.Ay.getMode() !== ex.TBI.PUSH_TO_TALK) return !1;
+            if (eX(ex.kqX.SYSTEM_SERVICE_WARNING) || !(0, H.yA)(g.Ay) || null == t || en.Ay.getMode() !== ex.TBI.PUSH_TO_TALK) return !1;
             let n = g.Ay.getVisibleGame();
             return null != n && !!n.elevated
         }
@@ -774,13 +774,13 @@ let eQ = new eJ(d.h, {
         eB = e.notice
     },
     NOTICE_DISMISS: function(e) {
-        return null != eB && (null == e.id || e.id === eB.id) && (ew(eB.type, e.isTemporary, e.untilAtLeast), eY())
+        return null != eB && (null == e.id || e.id === eB.id) && (eH(eB.type, e.isTemporary, e.untilAtLeast), eY())
     },
     NOTICE_DISABLE: function(e) {
         let {
             noticeType: t
         } = e;
-        return ew(t), eY()
+        return eH(t), eY()
     },
     LOGOUT: function() {
         ek = {}, eG = {}, eB = null

@@ -8,12 +8,12 @@ n.d(t, {
     I: () => j,
     Jo: () => R,
     T0: () => N,
-    UY: () => O,
+    UY: () => D,
     U_: () => H,
     VL: () => w,
     Yq: () => M,
     m: () => S,
-    r4: () => D,
+    r4: () => O,
     ri: () => U,
     yp: () => G
 }), n(938796);
@@ -143,7 +143,7 @@ function w(e, t, l, o) {
     }, [A, d, u, l, f, o])
 }
 
-function D(e, t) {
+function O(e, t) {
     return r.useCallback(n => {
         let i = p.default.getUser(e),
             r = _.A.getChannel(t);
@@ -151,7 +151,7 @@ function D(e, t) {
     }, [e, t])
 }
 
-function O(e, t, n) {
+function D(e, t, n) {
     return r.useCallback(i => {
         let r = p.default.getUser(e),
             l = _.A.getChannel(t);

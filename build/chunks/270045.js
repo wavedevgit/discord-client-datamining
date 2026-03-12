@@ -40,8 +40,8 @@ function L(e) {
         M = !0 === e.showShareLink && (0, b.E0)(e.quest.config),
         {
             handleComplete: w,
-            handleProgress: D,
-            handleResetDismissibilityClick: O,
+            handleProgress: O,
+            handleResetDismissibilityClick: D,
             handleResetStatusClick: k,
             handleOverrideDeliveryClick: U
         } = (0, g.j$)(e.quest.id),
@@ -156,7 +156,7 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "dismiss",
                 label: j.intl.string(j.t.JF6W66),
-                action: O
+                action: D
             }), (0, i.jsx)(a.Drp, {
                 id: "enrollment",
                 label: j.intl.string(j.t.taqkwK),
@@ -167,7 +167,7 @@ function L(e) {
                 id: "progress",
                 label: j.intl.string(j.t.cKSLr4),
                 action: () => {
-                    D(.9 * Math.random() + .03)
+                    O(.9 * Math.random() + .03)
                 }
             }), (0, i.jsx)(a.Drp, {
                 id: "complete",

@@ -36,13 +36,13 @@ function E(e) {
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
     } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: D
-    } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
+        shouldHideGuildPurchaseEntryPoints: O
+    } = (0, o.MH)(n), D = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
     });
-    if (null == L || D) return null;
+    if (null == L || O) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -76,7 +76,7 @@ function E(e) {
         imageUrl: P,
         name: t.name,
         description: t.description,
-        formattedPrice: O,
+        formattedPrice: D,
         role: R,
         ctaComponent: (0, i.jsx)(l.$nd, {
             ...k

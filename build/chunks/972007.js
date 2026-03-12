@@ -26,8 +26,10 @@ let d = e => {
                     l.push(t)
                 } let a = await (0, o.P7)(e, t, i);
             E(t => {
-                let i = a.users.filter(e => !n.has(e.id));
-                return (l = l.filter(e => !n.has(e.id)), 0 === e) ? [...n.values(), ...l.values(), ...i] : [...t, ...i]
+                l = l.filter(e => !n.has(e.id));
+                let i = new Set(l.map(e => e.id)),
+                    r = a.users.filter(e => !n.has(e.id) && !i.has(e.id));
+                return 0 === e ? [...n.values(), ...l.values(), ...r] : [...t, ...r]
             }), g(e => {
                 let t = new Map(e);
                 for (let e of l) t.set(e.id, e);

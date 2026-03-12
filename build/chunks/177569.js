@@ -3,9 +3,9 @@ i.d(t, {
     A: () => l
 });
 var s = i(627968),
-    a = i(158954),
+    n = i(158954),
     r = i(262427),
-    n = i(697359),
+    a = i(697359),
     o = i(985018);
 
 function l(e) {
@@ -14,7 +14,7 @@ function l(e) {
     } = e, {
         shouldRender: i,
         limitedOfferTimeLeft: l
-    } = (0, n.A)({
+    } = (0, a.A)({
         location: t
     });
     return i ? (0, s.jsx)(r.J, {
@@ -22,6 +22,6 @@ function l(e) {
             numDays: Math.max(l, 1),
             applicationName: o.intl.string(o.t.Uu8hke)
         }),
-        Icon: a.Cp8
+        Icon: n.Cp8
     }) : null
 }

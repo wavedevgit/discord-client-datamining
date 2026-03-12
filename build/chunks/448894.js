@@ -44,10 +44,10 @@ function b(e) {
     a()(null != n, "Invite cannot be null");
     let {
         target_type: w,
-        target_user: D
+        target_user: O
     } = n;
-    a()(w === C.yV.STREAM && null != D, "invalid streaming invite");
-    let O = l === D.id,
+    a()(w === C.yV.STREAM && null != O, "invalid streaming invite");
+    let D = l === O.id,
         k = n.state === f.elq.ACCEPTING,
         U = r.useCallback(() => {
             let e = "noop";
@@ -64,13 +64,13 @@ function b(e) {
         b = (0, g.DY)(n.guild)
     }
     let B = null != n.channel ? (0, m.OY)(n.channel) : null,
-        F = A.Ay.getName(D),
+        F = A.Ay.getName(O),
         H = P || !M && G,
         V = E.intl.string(E.t.I6JG46),
         W = "active";
-    G && !M ? (t = O ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    G && !M ? (t = D ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: F
-    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = O ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
+    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = D ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: F
     }));
     let q = N === b.id && null != B ? (0, i.jsx)(_.A.Channel, {
