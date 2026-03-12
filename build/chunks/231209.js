@@ -38,8 +38,8 @@ var n = s(627968),
     M = s(758836),
     P = s(652215),
     D = s(985018),
-    H = s(419447);
-let w = [M.G2.HOME, M.G2.ORBS],
+    w = s(419447);
+let H = [M.G2.HOME, M.G2.ORBS],
     U = e => {
         let {
             tab: t
@@ -48,14 +48,14 @@ let w = [M.G2.HOME, M.G2.ORBS],
             null != s && "" !== s && fetch(s).then(e => e.json()).then(e => a(e)).catch(() => a(null))
         }, [s]), t === M.G2.ORBS) ? (0, n.jsxs)(n.Fragment, {
             children: [(0, n.jsx)(N.A, {}), (0, n.jsx)("div", {
-                className: i()(H.YB, H.GS),
+                className: i()(w.YB, w.GS),
                 children: (0, n.jsx)(g.Qs, {
                     tenantId: P.FYj,
                     layoutId: "1478495181551440044"
                 })
             })]
         }) : (0, n.jsx)("div", {
-            className: i()(H.YB, H.GS),
+            className: i()(w.YB, w.GS),
             children: null != s && "" !== s && null != l ? (0, n.jsx)(g.Ay, {
                 layout: l
             }) : (0, n.jsx)(g.Qs, {
@@ -95,7 +95,7 @@ let w = [M.G2.HOME, M.G2.ORBS],
         }, {
             sessionId: x,
             tab: o
-        }), w = r.useCallback(() => {
+        }), H = r.useCallback(() => {
             P()
         }, [P]);
         return (r.useEffect(() => {
@@ -107,11 +107,11 @@ let w = [M.G2.HOME, M.G2.ORBS],
                 cacheDisabled: d
             })
         }, [N, A, R.length, u, d, x, o]), null != N) ? (0, n.jsx)(b.h, {
-            onRetry: w,
+            onRetry: H,
             errorOrigin: b.A.SHOP_PAGE,
             errorMessage: N.message
         }) : A || 0 === R.length ? (0, n.jsxs)("div", {
-            className: i()(H.g4, H.Of),
+            className: i()(w.g4, w.Of),
             children: [(0, n.jsx)(j.A, {
                 isLoading: A,
                 handleTransition: t,
@@ -154,7 +154,7 @@ let w = [M.G2.HOME, M.G2.ORBS],
                             isLoading: l,
                             numVisibleItems: s,
                             sortedSkuIds: p,
-                            buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? H.w : void 0,
+                            buttonContainerClassName: r?.type === a.g.IMMERSIVE_BANNER ? w.w : void 0,
                             prioritizeUserDiscounts: o === M.G2.HOME,
                             tab: o,
                             orbsSupportedOnly: o === M.G2.ORBS
@@ -223,8 +223,8 @@ let w = [M.G2.HOME, M.G2.ORBS],
                 return (0, n.jsx)(f.rW, {
                     blockType: e.type,
                     children: (0, n.jsx)("div", {
-                        className: i()(H.v1, H.Of, {
-                            [H.J1]: 0 === d || h
+                        className: i()(w.v1, w.Of, {
+                            [w.J1]: 0 === d || h
                         }),
                         children: u
                     }, d)
@@ -253,14 +253,14 @@ let w = [M.G2.HOME, M.G2.ORBS],
                 }
             }
         }, [i, m, f, C]), (0, n.jsx)(d.T7Y, {
-            className: H.OW,
+            className: w.OW,
             ref: i,
             onScroll: a,
             children: (0, n.jsxs)("div", {
-                className: H.bx,
+                className: w.bx,
                 children: [(0, n.jsxs)("div", {
-                    className: H.rb,
-                    children: [c && w.includes(s) ? (0, n.jsx)(U, {
+                    className: w.rb,
+                    children: [c && H.includes(s) ? (0, n.jsx)(U, {
                         tab: s
                     }) : (0, n.jsx)(F, {
                         handleTransition: t,
@@ -268,7 +268,7 @@ let w = [M.G2.HOME, M.G2.ORBS],
                         isFetchingCategories: o,
                         tab: s
                     }), s !== M.G2.CATALOG && m >= 36 && (0, n.jsxs)("div", {
-                        className: H.R$,
+                        className: w.R$,
                         children: [(0, n.jsx)(d.Heading, {
                             variant: "heading-md/semibold",
                             children: D.intl.string(D.t.Yr70c4)

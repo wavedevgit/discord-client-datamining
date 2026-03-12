@@ -1,7 +1,7 @@
 /** chunk id: 737630 params = (module,exports,require) **/
 "use strict";
 s.r(t), s.d(t, {
-    default: () => w
+    default: () => H
 });
 var n = s(627968),
     r = s(64700),
@@ -38,7 +38,7 @@ var n = s(627968),
     M = s(652215),
     P = s(650583),
     D = s(892766);
-let H = e => {
+let w = e => {
         let {
             children: t,
             shouldAddEventListener: s,
@@ -52,7 +52,7 @@ let H = e => {
             return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
         }, [s, l, n]), t
     },
-    w = function(e) {
+    H = function(e) {
         let {
             tab: t = B.G2.HOME
         } = e;
@@ -65,10 +65,10 @@ let H = e => {
                 onClose: P
             } = (0, O.tR)(),
             {
-                currentTab: w,
+                currentTab: H,
                 hasFilters: U
             } = (0, L.v)(),
-            F = r.useMemo(() => t === B.G2.HOME && w && U() ? w : t, [t, w, U]),
+            F = r.useMemo(() => t === B.G2.HOME && H && U() ? H : t, [t, H, U]),
             {
                 categories: G,
                 refreshCategories: V
@@ -118,7 +118,7 @@ let H = e => {
                 },
                 children: (0, n.jsx)(E.iM, {
                     tab: X,
-                    children: (0, n.jsx)(H, {
+                    children: (0, n.jsx)(w, {
                         onClose: P,
                         shouldAddEventListener: !1,
                         children: (0, n.jsxs)("div", {

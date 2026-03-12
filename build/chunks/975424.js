@@ -1,5 +1,4 @@
 /** chunk id: 975424 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     QZ: "effect_adebba",
     Xh: "username_adebba",

@@ -1,13 +1,12 @@
 /** chunk id: 431144 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    HO: () => r,
-    Zk: () => l,
+    HO: () => l,
+    Zk: () => r,
     px: () => a
 });
 var i, s = n(985018),
-    r = ((i = {}).COMMUNICATION = "communication", i.SOCIAL = "social", i.TIPS = "tips", i.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", i.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", i.FAMILY_CENTER_DIGEST = "family_center_digest", i);
-let l = ["tips", "recommendations_and_events", "updates_and_announcements"],
+    l = ((i = {}).COMMUNICATION = "communication", i.SOCIAL = "social", i.TIPS = "tips", i.RECOMMENDATIONS_AND_EVENTS = "recommendations_and_events", i.UPDATES_AND_ANNOUNCEMENTS = "updates_and_announcements", i.FAMILY_CENTER_DIGEST = "family_center_digest", i);
+let r = ["tips", "recommendations_and_events", "updates_and_announcements"],
     a = [{
         category: "communication",
         label: () => s.intl.string(s.t["B75+xe"]),

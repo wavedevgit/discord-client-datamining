@@ -1,5 +1,4 @@
 /** chunk id: 306776 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Hc: "baseContainer__40d5b",
     Nr: "card__40d5b",

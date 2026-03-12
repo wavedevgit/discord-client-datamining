@@ -42,8 +42,8 @@ function B(e) {
         tab: B
     } = e, M = (0, _.uM)(), P = M?.sessionId ?? "", {
         noCache: D,
-        includeUnpublished: H
-    } = (0, b.A)(), w = (0, m.W)("CollectiblesFilterableShop"), U = (0, i.bG)([d.default], () => d.default.getCurrentUser()), F = (0, i.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [G, V] = r.useState(1), K = (0, c.DP)(), z = (0, a.qB)(K), [W, Y, $] = r.useMemo(() => {
+        includeUnpublished: w
+    } = (0, b.A)(), H = (0, m.W)("CollectiblesFilterableShop"), U = (0, i.bG)([d.default], () => d.default.getCurrentUser()), F = (0, i.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [G, V] = r.useState(1), K = (0, c.DP)(), z = (0, a.qB)(K), [W, Y, $] = r.useMemo(() => {
         switch (B) {
             case A.G2.AVATAR_DECORATIONS:
                 return [v.intl.string(v.t.dRZYNE), z ? T.A : k.A, l.R.AVATAR_DECORATION];
@@ -65,7 +65,7 @@ function B(e) {
             sessionId: P,
             checkpoint: f.t.SHOP_MOUNTED,
             tab: B,
-            unpublishedCategoriesShown: H,
+            unpublishedCategoriesShown: w,
             cacheDisabled: D
         })
     }, []), r.useEffect(() => {
@@ -73,10 +73,10 @@ function B(e) {
             sessionId: P,
             checkpoint: f.t.SHOP_RENDERED,
             tab: B,
-            unpublishedCategoriesShown: H,
+            unpublishedCategoriesShown: w,
             cacheDisabled: D
         })
-    }, [P, H, D, t, B]), t || null == U) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
+    }, [P, w, D, t, B]), t || null == U) ? (0, n.jsx)(x.A, {}) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
             style: {
                 backgroundImage: `url(${Y})`
@@ -94,7 +94,7 @@ function B(e) {
                 },
                 children: (0, n.jsx)(C.A, {
                     skuId: e.skuId,
-                    prioritizedCurrency: w ? E.Hi.FIAT : void 0,
+                    prioritizedCurrency: H ? E.Hi.FIAT : void 0,
                     onClickAnalytics: (0, E.UU)(e, B, M)
                 }, e.skuId)
             }, e.skuId))

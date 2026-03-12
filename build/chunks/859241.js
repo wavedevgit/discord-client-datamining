@@ -1,57 +1,57 @@
 /** chunk id: 859241 params = (module,exports,require) **/
 t.d(_, {
-    A: () => S
+    A: () => b
 });
 var n = t(311907),
-    r = t(73153);
-let l = {},
-    o = null,
-    i = [],
+    o = t(73153);
+let i = {},
+    r = null,
+    l = [],
+    d = !1,
     a = !1,
-    c = !1,
-    d = null,
+    c = null,
     s = null;
 
 function p() {
-    c = !0
+    a = !0
 }
 class u extends n.Ay.Store {
     static displayName = "AppliedGuildBoostStore";
     getAppliedGuildBoostsForGuild(e) {
-        return null != l[e] ? l[e].subscriptions : null
+        return null != i[e] ? i[e].subscriptions : null
     }
     getLastFetchedAtForGuild(e) {
-        return null != l[e] ? l[e].lastFetchedAt : null
+        return null != i[e] ? i[e].lastFetchedAt : null
     }
     getCurrentUserAppliedBoosts() {
-        return i
+        return l
     }
     getAppliedGuildBoost(e) {
-        return i.find(_ => _.id === e)
+        return l.find(_ => _.id === e)
     }
     get isModifyingAppliedBoost() {
-        return c
+        return a
     }
     get applyBoostError() {
-        return d
+        return c
     }
     get unapplyBoostError() {
         return s
     }
     get cooldownEndsAt() {
-        return o
+        return r
     }
     get isFetchingCurrentUserAppliedBoosts() {
-        return a
+        return d
     }
 }
-let S = new u(r.h, {
+let b = new u(o.h, {
     GUILD_APPLIED_BOOSTS_FETCH_SUCCESS: function(e) {
         let {
             guildId: _,
             appliedBoosts: t
         } = e;
-        l[_] = {
+        i[_] = {
             subscriptions: t,
             lastFetchedAt: Date.now()
         }
@@ -60,13 +60,13 @@ let S = new u(r.h, {
         let {
             appliedGuildBoosts: _
         } = e;
-        a = !1, i = _
+        d = !1, l = _
     },
     APPLIED_BOOSTS_COOLDOWN_FETCH_SUCCESS: function(e) {
         let {
             endsAt: _
         } = e;
-        o = _
+        r = _
     },
     GUILD_UNAPPLY_BOOST_START: p,
     GUILD_APPLY_BOOST_START: p,
@@ -74,27 +74,27 @@ let S = new u(r.h, {
         let {
             appliedGuildBoost: _
         } = e, t = new Set(_.map(e => e.id));
-        i = [..._, ...i.filter(e => !t.has(e.id))], d = null, c = !1
+        l = [..._, ...l.filter(e => !t.has(e.id))], c = null, a = !1
     },
     GUILD_APPLY_BOOST_FAIL: function(e) {
         let {
             error: _
         } = e;
-        c = !1, d = _
+        a = !1, c = _
     },
     GUILD_UNAPPLY_BOOST_SUCCESS: function(e) {
         let {
             boostId: _
         } = e;
-        i = i.filter(e => e.id !== _), c = !1
+        l = l.filter(e => e.id !== _), a = !1
     },
     GUILD_UNAPPLY_BOOST_FAIL: function(e) {
         let {
             error: _
         } = e;
-        c = !1, s = _
+        a = !1, s = _
     },
     USER_APPLIED_BOOSTS_FETCH_START: function() {
-        a = !0
+        d = !0
     }
 })

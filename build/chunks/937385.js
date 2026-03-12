@@ -1,5 +1,5 @@
 /** chunk id: 937385 params = (module,exports,require) **/
-c.exports = {
+e.exports = {
     wx: "header__6c75d",
     iT: "modalCloseButton__6c75d",
     Qs: "content__6c75d",

@@ -16,7 +16,7 @@ var n = r(627968),
 let b = e => {
     let {
         children: t,
-        gap: r = 8,
+        gap: r = 24,
         edgeFade: i = "xl",
         hideActionsWhenDisabled: b = !0,
         className: m,
