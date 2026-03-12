@@ -4,8 +4,8 @@ i.d(t, {
 });
 var l = i(627968),
     n = i(64700),
-    a = i(397927),
-    s = i(539895),
+    s = i(397927),
+    a = i(539895),
     r = i(844330),
     d = i(253932),
     c = i(578746),
@@ -23,10 +23,10 @@ function g(e) {
         label: t,
         children: i
     } = e;
-    return (0, l.jsxs)(a.BJc, {
+    return (0, l.jsxs)(s.BJc, {
         direction: "vertical",
         gap: 4,
-        children: [(0, l.jsx)(a.Text, {
+        children: [(0, l.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-default",
             children: t
@@ -40,11 +40,11 @@ function A(e) {
         checked: i,
         onChange: n
     } = e;
-    return (0, l.jsxs)(a.BJc, {
+    return (0, l.jsxs)(s.BJc, {
         direction: "horizontal",
         justify: "space-between",
         align: "center",
-        children: [(0, l.jsx)(a.Text, {
+        children: [(0, l.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "text-default",
             children: t
@@ -67,7 +67,7 @@ let E = () => {
             guildId: j,
             inviteCode: I
         } = (0, u.lD)(),
-        v = s.A.getProps().invite?.is_nickname_changeable,
+        v = a.A.getProps().invite?.is_nickname_changeable,
         T = n.useCallback(() => {
             o.default.track(m.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
                 guild_id: j,
@@ -75,7 +75,7 @@ let E = () => {
             })
         }, [j, I]);
     return (0, l.jsxs)(r.A, {
-        icon: (0, l.jsx)(a.Zes, {
+        icon: (0, l.jsx)(s.Zes, {
             size: "refresh_sm"
         }),
         title: x.intl.string(x.t["A5wHQ/"]),
@@ -85,7 +85,7 @@ let E = () => {
         children: [v && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(g, {
                 label: x.intl.string(x.t.me1lRk),
-                children: (0, l.jsx)(a.ksK, {
+                children: (0, l.jsx)(s.ksK, {
                     placeholder: x.intl.string(x.t["09Q8yp"]),
                     maxLength: m.d0r,
                     value: t,

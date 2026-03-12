@@ -5,8 +5,8 @@ i.d(t, {
 var l = i(627968);
 i(64700);
 var n = i(503698),
-    a = i.n(n),
-    s = i(417597),
+    s = i.n(n),
+    a = i(417597),
     r = i(397927),
     d = i(966327),
     c = i(287809),
@@ -18,7 +18,7 @@ function m(e) {
         friendMemberIds: t,
         className: i,
         avatarSize: n = r._3J.SIZE_16
-    } = e, m = (0, s.yK)([c.default], () => t.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e));
+    } = e, m = (0, a.yK)([c.default], () => t.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e));
     if (0 === m.length) return null;
     let x = m[0],
         _ = {
@@ -28,7 +28,7 @@ function m(e) {
         },
         h = o.intl.format(o.t["5NHEPu"], _);
     return (0, l.jsxs)("div", {
-        className: a()(u.kL, i),
+        className: s()(u.kL, i),
         children: [(0, l.jsx)("div", {
             className: u.yA,
             style: {

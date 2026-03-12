@@ -4,8 +4,8 @@ i.d(t, {
 });
 var l = i(627968),
     n = i(64700),
-    a = i(110259),
-    s = i(158954),
+    s = i(110259),
+    a = i(158954),
     r = i(417597),
     d = i(397927),
     c = i(890698),
@@ -41,7 +41,7 @@ function O(e) {
     } = (0, x.Ay)(m.A.INVITE_MODAL);
     return (0, l.jsx)(x.f5, {
         value: i,
-        children: (0, l.jsx)(s.Modal, {
+        children: (0, l.jsx)(a.Modal, {
             "aria-label": b.intl.string(b.t.u9zxnX),
             title: b.intl.string(b.t.u9zxnX),
             subtitle: b.intl.string(b.t.FWkU6P),
@@ -122,7 +122,7 @@ function U(e) {
         channel: et,
         inviter: ei,
         target_application: el
-    } = M, en = null == M.guild && null == M.channel && null != ei, ea = w && (H?.length ?? 0) > 0 && null != ei, es = null != ee || ea;
+    } = M, en = null == M.guild && null == M.channel && null != ei, es = w && (H?.length ?? 0) > 0 && null != ei, ea = null != ee || es;
     if (null != el) t = ee?.name, i = A.Ay.createFromServer(el).getCoverImageURL(1024);
     else if (null != ee) t = ee.name, i = v.Ay.getGuildSplashURL({
         id: ee.id,
@@ -134,14 +134,14 @@ function U(e) {
         usernameHook: () => (0, l.jsx)("span", {
             children: Y
         })
-    }), J) ? (0, l.jsx)(s.dWK, {
+    }), J) ? (0, l.jsx)(a.dWK, {
         size: "md",
         "aria-labelledby": K,
         transitionState: G,
         onClose: () => (X(), Promise.resolve()),
         children: (0, l.jsx)("div", {
             className: R.g4,
-            children: (0, l.jsx)(s.y$y, {})
+            children: (0, l.jsx)(a.y$y, {})
         })
     }) : B && null != ee ? (0, l.jsx)(x.f5, {
         value: Z,
@@ -158,7 +158,7 @@ function U(e) {
         })
     }) : (0, l.jsx)(x.f5, {
         value: Z,
-        children: (0, l.jsx)(s.dWK, {
+        children: (0, l.jsx)(a.dWK, {
             size: null != i ? "xl" : "sm",
             "aria-labelledby": K,
             "aria-label": ee?.name ?? et?.name ?? "",
@@ -166,7 +166,7 @@ function U(e) {
             onClose: () => (X(), Promise.resolve()),
             trackingProps: {
                 impression: {
-                    impressionName: a.ImpressionNames.INVITE_ACCEPT,
+                    impressionName: s.ImpressionNames.INVITE_ACCEPT,
                     impressionProperties: {
                         guild_id: ee?.id,
                         invite_code: M.code
@@ -177,7 +177,7 @@ function U(e) {
                 className: R.jT,
                 children: [(0, l.jsxs)("div", {
                     className: R.FG,
-                    children: [ea && (0, l.jsxs)("div", {
+                    children: [es && (0, l.jsxs)("div", {
                         className: R.$N,
                         children: [(0, l.jsx)(o.A, {
                             user: new E.A(ei),
@@ -201,16 +201,16 @@ function U(e) {
                             id: K,
                             children: (0, l.jsx)(c.A, {
                                 invite: M,
-                                disableUser: es,
+                                disableUser: ea,
                                 error: P,
                                 friendMemberIds: H,
-                                showInvitedByHeader: !ea
+                                showInvitedByHeader: !es
                             })
                         }), (0, l.jsxs)("div", {
-                            children: [er ? (0, l.jsx)(S.A, {}) : null, (0, l.jsxs)(s.BJc, {
+                            children: [er ? (0, l.jsx)(S.A, {}) : null, (0, l.jsxs)(a.BJc, {
                                 gap: 8,
                                 align: "center",
-                                children: [null == el ? (0, l.jsx)(s.$nd, {
+                                children: [null == el ? (0, l.jsx)(a.$nd, {
                                     onClick: q,
                                     loading: V,
                                     disabled: er,
@@ -223,20 +223,20 @@ function U(e) {
                                         user: k,
                                         className: R.Mp
                                     })
-                                }) : (0, l.jsxs)(s.e2v, {
+                                }) : (0, l.jsxs)(a.e2v, {
                                     fullWidth: !0,
-                                    children: [(0, l.jsx)(s.$nd, {
+                                    children: [(0, l.jsx)(a.$nd, {
                                         variant: "secondary",
                                         text: b.intl.string(b.t.eylRaY),
                                         onClick: q,
                                         loading: V
-                                    }), (0, l.jsx)(s.$nd, {
+                                    }), (0, l.jsx)(a.$nd, {
                                         variant: "primary",
                                         text: b.intl.string(b.t.RscU7I),
                                         onClick: q,
                                         loading: V
                                     })]
-                                }), (0, l.jsx)(s.QWc, {
+                                }), (0, l.jsx)(a.QWc, {
                                     onClick: X,
                                     variant: "secondary",
                                     text: b.intl.string(b.t.ndsK4Z),

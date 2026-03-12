@@ -5,8 +5,8 @@ i.d(t, {
 });
 var l = i(64700),
     n = i(945810),
-    a = i(449054),
-    s = i(652215);
+    s = i(449054),
+    a = i(652215);
 let r = (0, n.mj)({
     name: "2026-02-silp-in-app-redesign",
     kind: "user",
@@ -32,7 +32,7 @@ function d(e, t) {
         treatment: n
     } = r.useConfig({
         location: t
-    }), [d, c] = l.useState(null), [o, u] = l.useState(!1), m = i && null != e && e.features.has(s.GuildFeatures.DISCOVERABLE);
+    }), [d, c] = l.useState(null), [o, u] = l.useState(!1), m = i && null != e && e.features.has(a.GuildFeatures.DISCOVERABLE);
     l.useEffect(() => {
         if (!m || null == e) {
             c(null), u(!1);
@@ -40,13 +40,13 @@ function d(e, t) {
         }
         u(!0);
         let t = !1;
-        return (0, a.jm)(e.id).then(e => {
+        return (0, s.jm)(e.id).then(e => {
             t || (u(!1), null != e ? c(e.guild) : c(null))
         }), () => {
             t = !0
         }
     }, [m, e]);
-    let x = i && null != e && e.features.has(s.GuildFeatures.DISCOVERABLE) && d?.is_published === !0;
+    let x = i && null != e && e.features.has(a.GuildFeatures.DISCOVERABLE) && d?.is_published === !0;
     return {
         enabled: x,
         discoveryGuild: x ? d : null,

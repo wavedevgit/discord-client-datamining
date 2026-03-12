@@ -4,8 +4,8 @@ i.d(t, {
 });
 var l = i(627968),
     n = i(64700),
-    a = i(311907),
-    s = i(397927),
+    s = i(311907),
+    a = i(397927),
     r = i(966327),
     d = i(972387),
     c = i(539895),
@@ -24,10 +24,10 @@ function p(e) {
         invite: t,
         guild: i,
         className: p
-    } = e, j = (0, a.bG)([x.default], () => x.default.getCurrentUser()), {
+    } = e, j = (0, s.bG)([x.default], () => x.default.getCurrentUser()), {
         submitting: I,
         error: v
-    } = (0, a.cf)([c.A], () => c.A.getProps()), T = n.useCallback(() => {
+    } = (0, s.cf)([c.A], () => c.A.getProps()), T = n.useCallback(() => {
         d.A.acceptInvite(t)
     }, [t]), f = (0, u.uE)(), N = "" !== f ? A.intl.format(A.t["9sWQNT"], {
         usernameHook: (e, t) => (0, l.jsx)("span", {
@@ -44,17 +44,17 @@ function p(e) {
         className: p,
         children: [null != v ? (0, l.jsx)("div", {
             className: E.Un,
-            children: (0, l.jsx)(s.wx6, {
+            children: (0, l.jsx)(a.wx6, {
                 type: "critical",
                 children: v
             })
         }) : null, L ? (0, l.jsx)(o.A, {
             className: E.sX
-        }) : null, (0, l.jsxs)(s.ButtonGroup, {
+        }) : null, (0, l.jsxs)(a.ButtonGroup, {
             fullWidthContainer: !0,
             fullWidth: !0,
             direction: "horizontal",
-            children: [(0, l.jsx)(s.Button, {
+            children: [(0, l.jsx)(a.Button, {
                 onClick: T,
                 loading: I,
                 variant: "primary",
@@ -62,12 +62,12 @@ function p(e) {
                 text: L ? A.intl.string(A.t.ZNCziL) : N,
                 icon: L || null == j ? void 0 : () => (0, l.jsx)(r.A, {
                     "aria-hidden": !0,
-                    size: s._3J.SIZE_16,
+                    size: a._3J.SIZE_16,
                     user: j
                 })
-            }), L ? null : (0, l.jsx)(s.YNO, {
+            }), L ? null : (0, l.jsx)(a.YNO, {
                 targetElementRef: C,
-                animation: s.YNO.Animation.NONE,
+                animation: a.YNO.Animation.NONE,
                 position: "top",
                 align: "right",
                 shouldShow: y,
@@ -79,9 +79,9 @@ function p(e) {
                 }),
                 children: e => (0, l.jsx)("div", {
                     ref: C,
-                    children: (0, l.jsx)(s.K0, {
+                    children: (0, l.jsx)(a.K0, {
                         ...e,
-                        icon: s.Zes,
+                        icon: a.Zes,
                         "aria-label": A.intl.string(A.t["3D5yo/"]),
                         variant: "secondary",
                         onClick: S

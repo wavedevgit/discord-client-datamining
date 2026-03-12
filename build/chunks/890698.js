@@ -5,8 +5,8 @@ i.d(t, {
 }), i(938796);
 var l = i(627968),
     n = i(64700),
-    a = i(503698),
-    s = i.n(a),
+    s = i(503698),
+    a = i.n(s),
     r = i(821418),
     d = i(665260),
     c = i(311907),
@@ -46,7 +46,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
             guild: t,
             user: i,
             application: n,
-            compact: a
+            compact: s
         } = e;
         return null != n ? (0, l.jsx)(_.A, {
             className: D.Z2,
@@ -55,7 +55,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
         }) : null != i ? (0, l.jsx)(m.eu, {
             src: null != i ? i.getAvatarURL(void 0, 80) : null,
             size: o._3J.SIZE_80,
-            className: a ? void 0 : D.my
+            className: s ? void 0 : D.my
         }) : null != t ? (0, l.jsx)(x.Ay, {
             mask: x.Ay.Masks.SQUIRCLE,
             width: 64,
@@ -77,7 +77,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
     }),
     R = e => {
         let t, i, n, {
-                invite: a,
+                invite: s,
                 disableUser: x = !1,
                 error: _,
                 flatActivityCount: S = !1,
@@ -92,21 +92,21 @@ let S = () => (0, l.jsxs)(n.Fragment, {
             } = (0, c.cf)([I.default], () => ({
                 currentUser: I.default.getCurrentUser()
             }));
-        if (null == a) return null;
+        if (null == s) return null;
         let P = null != U && U.length > 0,
-            V = null != a.guild ? v.fh(a.guild) ? a.guild : v.DY(a.guild) : null,
-            F = null != a.channel ? (0, p.OY)(a.channel) : null,
-            Y = null != a.target_application ? new E.Ay(a.target_application) : null,
-            z = x || null == a.inviter ? null : new j.A(a.inviter),
-            w = !(null != a.approximate_member_count && a.approximate_member_count > 100 || null != V && V.features.has(f.GuildFeatures.COMMUNITY)) && null != z,
+            V = null != s.guild ? v.fh(s.guild) ? s.guild : v.DY(s.guild) : null,
+            F = null != s.channel ? (0, p.OY)(s.channel) : null,
+            Y = null != s.target_application ? new E.Ay(s.target_application) : null,
+            z = x || null == s.inviter ? null : new j.A(s.inviter),
+            w = !(null != s.approximate_member_count && s.approximate_member_count > 100 || null != V && V.features.has(f.GuildFeatures.COMMUNITY)) && null != z,
             H = null,
-            B = (0, d.Lt)(a.flags ?? 0, r.Q.IS_GUEST_INVITE),
+            B = (0, d.Lt)(s.flags ?? 0, r.Q.IS_GUEST_INVITE),
             W = !1;
         if (null != V) G && (H = null == z ? y.intl.string(y.t["3rE1P8"]) : y.intl.formatToPlainString(y.t["5u47va"], {
             username: T.Ay.getFormattedName(z)
-        }), a.target_type === C.yV.STREAM && null != a.target_user && (H = y.intl.formatToPlainString(y.t.x2L32Q, {
-            username: T.Ay.getFormattedName(a.target_user)
-        })), a.target_type === C.yV.EMBEDDED_APPLICATION && null != a.target_application && (H = null != z ? y.intl.formatToPlainString(y.t.UW1Cav, {
+        }), s.target_type === C.yV.STREAM && null != s.target_user && (H = y.intl.formatToPlainString(y.t.x2L32Q, {
+            username: T.Ay.getFormattedName(s.target_user)
+        })), s.target_type === C.yV.EMBEDDED_APPLICATION && null != s.target_application && (H = null != z ? y.intl.formatToPlainString(y.t.UW1Cav, {
             username: T.Ay.getFormattedName(z)
         }) : y.intl.string(y.t.ENSuN3))), w && null == Y && (t = (0, l.jsx)(m.$v, {
             className: D.Kk,
@@ -155,7 +155,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
         return (0, l.jsxs)(o.BJc, {
             direction: "vertical",
             gap: 8,
-            className: s()(D.kL, k),
+            className: a()(D.kL, k),
             justify: "center",
             align: "center",
             children: [(0, l.jsx)(L, {
@@ -186,9 +186,9 @@ let S = () => (0, l.jsxs)(n.Fragment, {
                 children: [(0, l.jsxs)(o.BJc, {
                     direction: "vertical",
                     gap: 4,
-                    children: [null != Y || W || a?.guild?.id === N.TA ? null : (0, l.jsx)(m.R1, {
-                        online: a.approximate_presence_count,
-                        total: a.approximate_member_count,
+                    children: [null != Y || W || s?.guild?.id === N.TA ? null : (0, l.jsx)(m.R1, {
+                        online: s.approximate_presence_count,
+                        total: s.approximate_member_count,
                         flat: S,
                         renderText: P ? b : void 0
                     }), P && (0, l.jsx)(u.A, {
@@ -196,7 +196,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
                     })]
                 }), (0, l.jsx)(A.A, {
                     guild: V,
-                    roles: a.roles,
+                    roles: s.roles,
                     className: D.Ei
                 }), O || B || null == M ? (0, l.jsx)(m.xt, {
                     user: M

@@ -4,8 +4,8 @@ i.d(t, {
 });
 var l = i(627968),
     n = i(64700),
-    a = i(311907),
-    s = i(397927),
+    s = i(311907),
+    a = i(397927),
     r = i(854378),
     d = i(997590),
     c = i(714991),
@@ -22,7 +22,7 @@ function A(e) {
         guild: t,
         invite: i,
         discoveryGuild: A
-    } = e, E = i.approximate_presence_count ?? 0, p = i.approximate_member_count ?? 0, j = (0, a.bG)([u.default], () => u.default.locale), I = (0, o.P)(x.default.extractTimestamp(t.id), j), v = (0, a.bG)([d.A], () => A?.primary_category_id != null ? d.A.getCategoryName(A.primary_category_id) : null), T = t.premiumTier ?? _.TVA.NONE, f = T !== _.TVA.NONE, N = t.preferredLocale ?? A?.preferred_locale ?? null, C = n.useMemo(() => {
+    } = e, E = i.approximate_presence_count ?? 0, p = i.approximate_member_count ?? 0, j = (0, s.bG)([u.default], () => u.default.locale), I = (0, o.P)(x.default.extractTimestamp(t.id), j), v = (0, s.bG)([d.A], () => A?.primary_category_id != null ? d.A.getCategoryName(A.primary_category_id) : null), T = t.premiumTier ?? _.TVA.NONE, f = T !== _.TVA.NONE, N = t.preferredLocale ?? A?.preferred_locale ?? null, C = n.useMemo(() => {
         if ("en-US" === N) return h.intl.string(h.t.LQLMGP);
         let e = (0, h.getAvailableLocales)().find(e => e.value === N);
         return null != e ? h.intl.string(e.localizedName) : N
@@ -31,7 +31,7 @@ function A(e) {
         className: g.hn,
         children: [(0, l.jsxs)("div", {
             className: g.S7,
-            children: [(0, l.jsx)(s.Text, {
+            children: [(0, l.jsx)(a.Text, {
                 tag: "span",
                 variant: "heading-xl/semibold",
                 color: "text-strong",
@@ -44,7 +44,7 @@ function A(e) {
             className: g.He,
             online: E,
             total: p,
-            renderText: e => (0, l.jsx)(s.Text, {
+            renderText: e => (0, l.jsx)(a.Text, {
                 tag: "span",
                 variant: "text-sm/normal",
                 color: "text-subtle",
@@ -53,7 +53,7 @@ function A(e) {
         }), (0, l.jsxs)("div", {
             className: g.ov,
             children: [null != I && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(s.Text, {
+                children: [(0, l.jsx)(a.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -65,7 +65,7 @@ function A(e) {
                     "aria-hidden": !0
                 })]
             }), y && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(s.Text, {
+                children: [(0, l.jsx)(a.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -75,7 +75,7 @@ function A(e) {
                     "aria-hidden": !0
                 })]
             }), D && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(s.Text, {
+                children: [(0, l.jsx)(a.Text, {
                     tag: "span",
                     variant: "text-sm/normal",
                     color: "text-subtle",
@@ -84,7 +84,7 @@ function A(e) {
                     className: g.LO,
                     "aria-hidden": !0
                 })]
-            }), f && (0, l.jsx)(s.Text, {
+            }), f && (0, l.jsx)(a.Text, {
                 tag: "span",
                 variant: "text-sm/normal",
                 color: "text-subtle",

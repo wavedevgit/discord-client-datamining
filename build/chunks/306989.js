@@ -1,5 +1,6 @@
 /** chunk id: 306989 params = (module,exports,require) **/
 e.exports = {
+    cG: "closeButtonContainer__62e7a",
     g3: "modalContainerV1__62e7a",
     se: "bannerV1__62e7a",
     X$: "fixedContentWrapper__62e7a",
