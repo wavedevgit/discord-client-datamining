@@ -1,53 +1,53 @@
 /** chunk id: 95859 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(158954),
-    r = n(998304),
+    r = n(158954),
+    a = n(998304),
     o = n(764231),
     d = n(112848),
     c = n(627380),
     u = n(149757),
     _ = n(985018),
-    g = n(444941);
-let m = () => {
+    m = n(444941);
+let g = () => {
     let e = (0, d.$F)(),
         t = (0, d.Xb)() ?? new Date,
         n = (0, u.N)(e?.id);
     if (null == e || null == n) return null;
     let {
         id: s,
-        nameUnformatted: m,
+        nameUnformatted: g,
         tenureReqNumMonths: A,
         hasWideArt: h
-    } = e, p = _.intl.string(m), x = (0, o.T)(s, A), E = {
-        "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
+    } = e, x = _.intl.string(g), p = (0, o.T)(s, A), T = {
+        "--custom-badge-glow-color": (0, a.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
-        className: g.kL,
-        style: E,
+        className: m.kL,
+        style: T,
         children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
             src: n.standard,
-            alt: p,
-            className: l()(g.pq, {
-                [g.kQ]: e.status === d.Wo.UPCOMING,
-                [g.U]: h
+            alt: x,
+            className: l()(m.pq, {
+                [m.kQ]: e.status === d.Wo.UPCOMING,
+                [m.U]: h
             })
         }), (0, i.jsxs)("div", {
-            className: g._u,
-            children: [(0, i.jsx)(a.EYj, {
+            className: m._u,
+            children: [(0, i.jsx)(r.EYj, {
                 variant: "text-lg/semibold",
-                className: g.Vv,
-                children: p
-            }), (0, i.jsx)(a.EYj, {
-                variant: "text-md/normal",
-                className: g.Vv,
+                className: m.Vv,
                 children: x
-            }), (0, i.jsx)(a.EYj, {
+            }), (0, i.jsx)(r.EYj, {
+                variant: "text-md/normal",
+                className: m.Vv,
+                children: p
+            }), (0, i.jsx)(r.EYj, {
                 variant: "text-xs/normal",
                 children: e?.status === d.Wo.EARNED ? _.intl.format(_.t.Hu4jfi, {
                     date: t

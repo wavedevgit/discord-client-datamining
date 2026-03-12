@@ -2,7 +2,7 @@
 n.d(t, {
     $p: () => Z,
     Ay: () => Q,
-    IE: () => B,
+    IE: () => H,
     Ys: () => K,
     ac: () => W,
     y2: () => q
@@ -10,23 +10,23 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(873298),
     d = n(582754),
     c = n(397927),
     u = n(817281),
     _ = n(964486),
-    g = n(775121),
-    m = n(955572),
+    m = n(775121),
+    g = n(955572),
     A = n(775602),
     h = n(502229),
-    p = n(47671),
-    x = n(920603),
-    E = n(915089),
-    T = n(141468),
-    S = n(963852),
-    C = n(763754),
+    x = n(47671),
+    p = n(920603),
+    T = n(915089),
+    E = n(141468),
+    C = n(963852),
+    S = n(763754),
     f = n(20851),
     N = n(195043),
     b = n(97469),
@@ -34,57 +34,57 @@ var i = n(627968),
     v = n(723702),
     j = n(544028),
     O = n(964404),
-    R = n(253932),
-    y = n(780964),
+    y = n(253932),
+    R = n(780964),
     P = n(70040),
     D = n(961154),
     L = n(790174),
-    G = n(840065),
-    M = n(531525),
+    M = n(840065),
+    G = n(531525),
     U = n(652215),
     k = n(381941),
     V = n(985018),
     w = n(239589),
-    H = n(522759);
-let B = {
+    B = n(522759);
+let H = {
         COZY: "cozy",
         COMPACT: "compact"
     },
-    F = (0, E.Ld)(),
-    Y = (0, E.Ld)(),
+    F = (0, T.Ld)(),
+    Y = (0, T.Ld)(),
     z = "1337",
     X = e => {
         let t = 0;
-        return [(0, T.rh)({
-            ...(0, S.Ay)({
+        return [(0, E.rh)({
+            ...(0, C.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t.oZxkEq)
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
-        }), (0, T.rh)({
-            ...(0, S.Ay)({
+        }), (0, E.rh)({
+            ...(0, C.Ay)({
                 channelId: z,
                 content: (0, d.Mw)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4mz"])
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
-        }), (0, T.rh)({
-            ...(0, S.Ay)({
+        }), (0, E.rh)({
+            ...(0, C.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t.a0Byo5)
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
-        }), (0, T.rh)({
-            ...(0, S.Ay)({
+        }), (0, E.rh)({
+            ...(0, C.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t.bmwEWJ)
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
-        }), (0, T.rh)({
-            ...(0, S.Ay)({
+        }), (0, E.rh)({
+            ...(0, C.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t["hK9QW/"])
             }),
@@ -108,45 +108,45 @@ let B = {
     }),
     K = () => V.intl.format(V.t.Jae48E, {
         onClick: () => {
-            (0, G.openUserSettings)(y.X.SYNC_FORCED_COLORS, {
+            (0, M.openUserSettings)(R.X.SYNC_FORCED_COLORS, {
                 section: U.nc_.ACCESSIBILITY
             })
         }
     }),
     Z = () => V.intl.format(V.t["5LEQdc"], {
         onAccessibilityClick: () => {
-            (0, G.openUserSettings)(y.X.ACCESSIBILITY_PANEL, {
+            (0, M.openUserSettings)(R.X.ACCESSIBILITY_PANEL, {
                 section: U.nc_.ACCESSIBILITY
             })
         }
     }),
     q = () => {
-        let e = R.hH.useSetting(),
-            t = R.hD.useSetting(),
-            n = R.rs.useSetting(),
+        let e = y.hH.useSetting(),
+            t = y.hD.useSetting(),
+            n = y.rs.useSetting(),
             {
                 theme: l,
                 messageGroupSpacing: o
-            } = (0, r.cf)([j.A, A.A], () => ({
+            } = (0, a.cf)([j.A, A.A], () => ({
                 theme: j.A.theme,
                 messageGroupSpacing: A.A.messageGroupSpacing
             })),
             [u] = s.useState(() => X(U.NJ8.DARK)),
             [_] = s.useState(() => X(U.NJ8.LIGHT)),
-            g = t && n,
-            m = (0, d.Mw)(l) ? u : _;
+            m = t && n,
+            g = (0, d.Mw)(l) ? u : _;
         return (0, i.jsx)(c.M1G, {
             children: (0, i.jsx)(c.ZpM, {
-                className: a()(w.VH, H.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
+                className: r()(w.VH, B.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
-                children: m.map((t, n) => (0, i.jsx)(f.A, {
-                    author: (0, C.p_)(t),
+                children: g.map((t, n) => (0, i.jsx)(f.A, {
+                    author: (0, S.p_)(t),
                     message: t,
                     compact: e,
                     isGroupStart: n % 2 == 0,
                     className: 0 === n ? w.Ck : void 0,
-                    hideSimpleEmbedContent: g
+                    hideSimpleEmbedContent: m
                 }, t.id))
             })
         })
@@ -159,7 +159,7 @@ class J extends s.Component {
             label: V.intl.string(V.t.i19n5L),
             description: V.intl.string(V.t.ip0uSf),
             helperText: V.intl.format(V.t.OMkSUo, {
-                modKey: g.A.modKey
+                modKey: m.A.modKey
             }),
             initialValue: this.props.zoom,
             defaultValue: U.hH7.ZOOM_DEFAULT,
@@ -237,13 +237,13 @@ class J extends s.Component {
         let {
             value: t
         } = e;
-        R.hH.updateSetting(t === B.COMPACT), (0, m.AC)()
+        y.hH.updateSetting(t === H.COMPACT), (0, g.AC)()
     };
     handleUIDensityChange = e => {
         let {
             value: t
         } = e;
-        t !== o.NS.UNSET_UI_DENSITY && R.Xi.updateSetting(t)
+        t !== o.NS.UNSET_UI_DENSITY && y.Xi.updateSetting(t)
     };
     handleSliderRender(e) {
         return `${e.toFixed(0)}%`
@@ -257,7 +257,7 @@ class J extends s.Component {
         })
     }
     handleFontSizeChange(e) {
-        (0, m.XS)(e)
+        (0, g.XS)(e)
     }
     handleMessageSpacingChange(e) {
         switch (e) {
@@ -266,20 +266,20 @@ class J extends s.Component {
             case 8:
             case 16:
             case 24:
-                (0, m.AC)(e)
+                (0, g.AC)(e)
         }
     }
     handleZoomChange(e) {
-        (0, m.Qp)(e)
+        (0, g.Qp)(e)
     }
     render() {
         let {
             density: e
         } = this.props, t = (0, i.jsxs)(N.x, {
-            setting: M.H.APPEARANCE_THEME,
+            setting: G.H.APPEARANCE_THEME,
             children: [this.renderPreview(), this.renderTheme()]
         }), n = (0, i.jsx)(N.x, {
-            setting: M.H.APPEARANCE_ICON,
+            setting: G.H.APPEARANCE_ICON,
             children: (0, i.jsx)(D.yG, {})
         }), s = [{
             name: V.intl.string(V.t["7iegX4"]),
@@ -291,7 +291,7 @@ class J extends s.Component {
             name: V.intl.string(V.t["4cuYHx"]),
             value: o.NS.COZY
         }], l = (0, i.jsxs)(N.x, {
-            setting: M.H.APPEARANCE_LIST_SPACING,
+            setting: G.H.APPEARANCE_LIST_SPACING,
             children: [(0, i.jsx)(c.z6M, {
                 label: V.intl.string(V.t["C/5V0A"]),
                 description: V.intl.string(V.t.QLZhYk),
@@ -303,8 +303,8 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), a = (0, i.jsxs)(N.x, {
-            setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
+        }), r = (0, i.jsxs)(N.x, {
+            setting: G.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["2ed/sA"]),
                 description: V.intl.string(V.t.u9N6Qh),
@@ -313,15 +313,15 @@ class J extends s.Component {
                     description: V.intl.string(V.t.QntEEG),
                     options: [{
                         name: V.intl.string(V.t.Jqj4cZ),
-                        value: B.COZY
+                        value: H.COZY
                     }, {
                         name: V.intl.string(V.t["1JNcPS"]),
-                        value: B.COMPACT
+                        value: H.COMPACT
                     }],
                     onChange: e => this.handleMessageDisplayModeChange({
                         value: e
                     }),
-                    value: this.props.messageDisplayCompact ? B.COMPACT : B.COZY
+                    value: this.props.messageDisplayCompact ? H.COMPACT : H.COZY
                 }), this.props.messageDisplayCompact && (0, i.jsx)(c.dOG, {
                     label: V.intl.string(V.t["//vhWi"]),
                     checked: !this.props.displayCompactAvatars,
@@ -330,8 +330,8 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), r = (0, i.jsxs)(N.x, {
-            setting: M.H.APPEARANCE_SCALING_SPACING,
+        }), a = (0, i.jsxs)(N.x, {
+            setting: G.H.APPEARANCE_SCALING_SPACING,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["0Yh+ZX"]),
                 children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
@@ -345,22 +345,22 @@ class J extends s.Component {
         });
         return (0, i.jsxs)(L.A, {
             title: V.intl.string(V.t["iHH+ky"]),
-            children: [t, n, l, a, r, d]
+            children: [t, n, l, r, a, d]
         })
     }
 }
 
 function Q() {
-    let e = R.hH.useSetting(),
-        t = R.hD.useSetting(),
-        n = R.rs.useSetting(),
-        s = R.eh.useSetting(),
-        l = R.Xi.useSetting();
+    let e = y.hH.useSetting(),
+        t = y.hD.useSetting(),
+        n = y.rs.useSetting(),
+        s = y.eh.useSetting(),
+        l = y.Xi.useSetting();
     (0, _.Ay)(() => {
-        (0, x.v)()
+        (0, p.v)()
     });
-    let a = (0, b.qo)(),
-        o = (0, r.cf)([j.A, O.Ay, A.A, I.default, p.A], () => ({
+    let r = (0, b.qo)(),
+        o = (0, a.cf)([j.A, O.Ay, A.A, I.default, x.A], () => ({
             theme: j.A.theme,
             useForcedColors: A.A.useForcedColors,
             useSystemTheme: O.Ay.useSystemTheme,
@@ -369,14 +369,14 @@ function Q() {
             messageGroupSpacing: A.A.messageGroupSpacing,
             displayCompactAvatars: O.Ay.displayCompactAvatars,
             isStaff: I.default.getCurrentUser()?.isStaff ?? !1,
-            gradientPreset: p.A.gradientPreset
+            gradientPreset: x.A.gradientPreset
         }));
     return (0, i.jsx)(J, {
         messageDisplayCompact: e,
         hideSimpleEmbedContent: t && n,
         clientTheme: s,
         density: l,
-        darkSidebar: a,
+        darkSidebar: r,
         ...o
     })
 }

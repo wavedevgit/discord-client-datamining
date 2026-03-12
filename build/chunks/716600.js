@@ -21,15 +21,15 @@ function m(e) {
         componentId: t,
         promotionId: n,
         content: m,
-        renderModalProps: p,
-        analyticsLocations: g,
+        renderModalProps: g,
+        analyticsLocations: p,
         analyticsLocation: E,
         isLightTheme: I
     } = e, f = `AnnouncementModalVariant1_${t}`, {
         onClose: C
-    } = p, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
+    } = g, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
         buttonAction: m.button?.buttonAction,
-        analyticsLocations: g,
+        analyticsLocations: p,
         analyticsLocation: E,
         onClose: C
     }), x = "" !== m.helpArticleId ? () => (0, i.jsxs)(i.Fragment, {
@@ -57,7 +57,7 @@ function m(e) {
     return {
         componentId: t,
         promotionId: n,
-        renderModalProps: p,
+        renderModalProps: g,
         header: m.header,
         modalTopExtra: y,
         subHeader: m.subheader,

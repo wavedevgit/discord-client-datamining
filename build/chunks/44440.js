@@ -1,6 +1,6 @@
 /** chunk id: 44440 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p,
+    A: () => g,
     j: () => _
 });
 var i = n(627968),
@@ -40,7 +40,7 @@ function m(e) {
             categoryId: n,
             loadId: t
         })
-    }, [n, t]), A = c.A.useField("categoryId") === n, m = l.toLocaleString(o.default.locale), p = (0, u.r)({
+    }, [n, t]), A = c.A.useField("categoryId") === n, m = l.toLocaleString(o.default.locale), g = (0, u.r)({
         categoryId: n
     });
     return (0, i.jsxs)(s.DUT, {
@@ -52,7 +52,7 @@ function m(e) {
             className: h.UU,
             variant: "text-sm/medium",
             color: "text-strong",
-            children: p
+            children: g
         }), (0, i.jsx)(s.Text, {
             className: h.U9,
             variant: "text-sm/normal",
@@ -61,7 +61,7 @@ function m(e) {
         })]
     })
 }
-let p = function(e) {
+let g = function(e) {
     let {
         loadId: t
     } = e, n = (0, A.L)();

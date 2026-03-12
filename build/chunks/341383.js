@@ -15,8 +15,8 @@ var i = n(73153),
     h = n(572164),
     _ = n(399925),
     m = n(963169),
-    p = n(652896),
-    g = n(349963),
+    g = n(652896),
+    p = n(349963),
     E = n(140175),
     I = n(528772),
     f = n(123973),
@@ -32,16 +32,16 @@ var i = n(73153),
     L = n(427603),
     R = n(652215),
     P = n(731854);
-let j = new Map;
+let D = new Map;
 
-function D(e, t, n, i) {
+function j(e, t, n, i) {
     if (!S.A.isConnected()) return;
     let r = i.context ?? P.x.DEFAULT,
-        l = j.get(r);
+        l = D.get(r);
     null == l && (l = {
         held: new Set,
         priorityHeld: new Set
-    }, j.set(r, l)), n || (e ? l.held.add(i.id) : l.held.delete(i.id)), t && (e ? l.priorityHeld.add(i.id) : l.priorityHeld.delete(i.id));
+    }, D.set(r, l)), n || (e ? l.held.add(i.id) : l.held.delete(i.id)), t && (e ? l.priorityHeld.add(i.id) : l.priorityHeld.delete(i.id));
     let a = l.held.size > 0,
         s = l.priorityHeld.size > 0;
     (0, E.N)(a, s)
@@ -57,7 +57,7 @@ let M = {
     },
     [R.hCu.PUSH_TO_TALK]: {
         onTrigger(e, t) {
-            N.Ay.getMode(t.context) === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK].isPressed = e, D(e, !1, !1, t))
+            N.Ay.getMode(t.context) === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK].isPressed = e, j(e, !1, !1, t))
         },
         keyEvents: {
             keyup: !0,
@@ -67,7 +67,7 @@ let M = {
     },
     [R.hCu.PUSH_TO_TALK_PRIORITY]: {
         onTrigger(e, t) {
-            N.Ay.getMode() === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK_PRIORITY].isPressed = e, D(e, !0, !1, t))
+            N.Ay.getMode() === R.TBI.PUSH_TO_TALK && (M[R.hCu.PUSH_TO_TALK_PRIORITY].isPressed = e, j(e, !0, !1, t))
         },
         keyEvents: {
             keyup: !0,
@@ -77,7 +77,7 @@ let M = {
     },
     [R.hCu.VAD_PRIORITY]: {
         onTrigger(e, t) {
-            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (M[R.hCu.VAD_PRIORITY].isPressed = e, D(e, !0, !0, t))
+            N.Ay.getMode() === R.TBI.VOICE_ACTIVITY && (M[R.hCu.VAD_PRIORITY].isPressed = e, j(e, !0, !0, t))
         },
         keyEvents: {
             keyup: !0,
@@ -164,8 +164,8 @@ let M = {
     [R.hCu.TOGGLE_GO_LIVE_STREAMING]: {
         onTrigger() {
             let e = T.A.getCurrentUserActiveStream();
-            if (null != e) return (0, s.vN)((0, p._z)(e));
-            (0, g.A)(!0, [u.A.GO_LIVE_KEYBIND])
+            if (null != e) return (0, s.vN)((0, g._z)(e));
+            (0, p.A)(!0, [u.A.GO_LIVE_KEYBIND])
         },
         keyEvents: {
             keyup: !0,
@@ -278,7 +278,7 @@ let M = {
 };
 
 function w() {
-    j.clear(), (0, E.N)(!1, !1)
+    D.clear(), (0, E.N)(!1, !1)
 }
 class U extends c.A {
     _initialize() {

@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(560861),
-    a = n(372411),
-    r = n(88141),
+    r = n(372411),
+    a = n(88141),
     o = n(985018);
 let d = (0, i.zZ)(s.X.NOTIFICATIONS_SOUNDS_CATEGORY, {
     useTitle: () => o.intl.string(o.t.LweOYy),
-    buildLayout: () => [l.g, a.E, r.c]
+    buildLayout: () => [l.g, r.E, a.c]
 })

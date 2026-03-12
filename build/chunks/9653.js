@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(86379),
     s = n(419954),
     l = n(780964),
-    a = n(586685),
-    r = n(985018);
+    r = n(586685),
+    a = n(985018);
 let o = (0, s.E2)(l.X.GIFT_INVENTORY_LIST_SETTING, {
-    Component: a.b0,
+    Component: r.b0,
     usePredicate: () => !(0, i.H)(),
-    useSearchTerms: () => [r.intl.string(r.t["jcSP+g"]), r.intl.string(r.t["9KeUbY"])]
+    useSearchTerms: () => [a.intl.string(a.t["jcSP+g"]), a.intl.string(a.t["9KeUbY"])]
 })

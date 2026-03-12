@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(688810),
     _ = n(429913),
     m = n(70730),
-    p = n(45787),
-    g = n(275759),
+    g = n(45787),
+    p = n(275759),
     E = n(21119),
     I = n(994500),
     f = n(595623),
@@ -33,8 +33,8 @@ n(646363);
 var L = n(652215),
     R = n(788868),
     P = n(985018),
-    j = n(889382);
-let D = [];
+    D = n(889382);
+let j = [];
 
 function M() {
     d.A.transitionToSection(L.m3P.ADD_FRIEND, {
@@ -59,7 +59,7 @@ function U(e) {
         showSpamCta: n
     } = e, l = r.useMemo(() => n ? w : t !== L.m3P.PENDING ? M : void 0, [n, t]);
     return (0, i.jsx)("div", {
-        className: j.y7,
+        className: D.y7,
         children: (0, i.jsx)(S.A, {
             type: t,
             onClick: l
@@ -97,7 +97,7 @@ let G = function(e) {
         let e = {};
         for (let t of Object.values(L.m3P)) e[t] = "";
         return e
-    }), q = (0, m.p)(A.A.FRIENDS_LIST), [K, z] = r.useState(!1), $ = r.useCallback((e, t) => {
+    }), q = (0, m.p)(A.A.FRIENDS_LIST), [z, K] = r.useState(!1), $ = r.useCallback((e, t) => {
         let {
             key: n,
             ...r
@@ -142,7 +142,7 @@ let G = function(e) {
         let e = l.filter(d, Y[d]);
         return V && d === L.m3P.PENDING && "" === Y[d] && (e = a()([...e, ...B]).uniqBy("key").sortBy(e => e.nickname?.toLowerCase() ?? e.user?.globalName?.toLowerCase() ?? e.usernameLower).value()), e
     }, [B, V, l, Y, d]), ee = d === L.m3P.PENDING, et = r.useMemo(() => {
-        if (!ee) return D;
+        if (!ee) return j;
         let e = [];
         return J.forEach(t => {
             let {
@@ -167,19 +167,19 @@ let G = function(e) {
                         let e = [];
                         return J.forEach(t => {
                             t.giftIntentType === R.np.FRIEND_ANNIVERSARY && e.push(t)
-                        }), e.sort((e, t) => E.A.compareByDmProbability(e.userId, t.userId)), [K ? e : e.slice(0, g.ZD), J]
+                        }), e.sort((e, t) => E.A.compareByDmProbability(e.userId, t.userId)), [z ? e : e.slice(0, p.ZD), J]
                     }
                 default:
                     return [J]
             }
-        }, [J, d, K, q]),
+        }, [J, d, z, q]),
         er = r.useMemo(() => J.filter(e => e.type === L.eA$.PENDING_INCOMING).length, [J]),
         el = d === L.m3P.PENDING && er > 0 && er >= 5,
         ea = r.useCallback(e => {
             e.stopPropagation(), c.A.confirmClearPendingRelationships(er)
         }, [er]),
         es = r.useCallback(() => {
-            z(e => !e)
+            K(e => !e)
         }, []),
         eo = r.useCallback(e => {
             let n = ei[e],
@@ -214,12 +214,12 @@ let G = function(e) {
                     }
                 }(d, n.length, e, n.some(e => e.giftIntentType === R.np.FRIEND_ANNIVERSARY));
             return d === L.m3P.PENDING && 0 === e ? (0, i.jsxs)("div", {
-                className: j.Gf,
+                className: D.Gf,
                 children: [(0, i.jsx)(b.A, {
                     id: t,
                     title: r
                 }), el && (0, i.jsx)("div", {
-                    className: j.mt,
+                    className: D.mt,
                     children: (0, i.jsx)(o.QWc, {
                         text: P.intl.string(P.t.O8k7O4),
                         onClick: ea,
@@ -228,28 +228,28 @@ let G = function(e) {
                     })
                 })]
             }, r) : (0, i.jsx)("div", {
-                className: j.Gf,
+                className: D.Gf,
                 children: (0, i.jsx)(b.A, {
                     id: t,
                     title: r
                 })
             }, r)
         }, [ei, d, t, el, ea]),
-        ed = r.useCallback(e => d === L.m3P.ALL && 0 === e && q && en > g.ZD ? (0, i.jsx)("div", {
-            className: j.Nf,
+        ed = r.useCallback(e => d === L.m3P.ALL && 0 === e && q && en > p.ZD ? (0, i.jsx)("div", {
+            className: D.Nf,
             children: (0, i.jsx)(o.Button, {
-                icon: K ? o.tN5 : o.abt,
+                icon: z ? o.tN5 : o.abt,
                 variant: "secondary",
                 size: "sm",
-                text: P.intl.string(K ? P.t["6MwJo/"] : P.t["37C26f"]),
+                text: P.intl.string(z ? P.t["6MwJo/"] : P.t["37C26f"]),
                 onClick: es,
-                "aria-label": P.intl.string(K ? P.t["6MwJo/"] : P.t["37C26f"])
+                "aria-label": P.intl.string(z ? P.t["6MwJo/"] : P.t["37C26f"])
             })
-        }) : null, [d, en, K, es, q]);
+        }) : null, [d, en, z, es, q]);
     if (r.useEffect(() => {
-            d === L.m3P.ALL && (0, p.Ad)()
+            d === L.m3P.ALL && (0, g.Ad)()
         }, [d]), r.useEffect(() => {
-            z(!1)
+            K(!1)
         }, [d, en]), 0 === J.length && "" === Y[d]) return (0, i.jsx)(U, {
         section: d,
         showSpamCta: Z
@@ -261,7 +261,7 @@ let G = function(e) {
         children: (0, i.jsxs)(u.A, {
             section: L.JJy.FRIENDS_LIST,
             children: [k && (0, i.jsx)(y.g, {}), (0, i.jsx)("div", {
-                className: j.ON,
+                className: D.ON,
                 children: (0, i.jsx)(o.IWV, {
                     query: Y[d],
                     onChange: Q,
@@ -276,7 +276,7 @@ let G = function(e) {
                 hasSearchQuery: ec,
                 renderSectionFooter: ed,
                 footer: Z && !eu ? (0, i.jsx)("div", {
-                    className: j.RE,
+                    className: D.RE,
                     children: (0, i.jsx)(o.QWc, {
                         text: P.intl.string(P.t.R40bU2),
                         onClick: w,
@@ -285,7 +285,7 @@ let G = function(e) {
                     })
                 }) : null
             }), eu && (0, i.jsx)("div", {
-                className: j.y7,
+                className: D.y7,
                 children: (0, i.jsx)(S.A, {
                     type: S.a.SECTION_NO_RESULTS
                 }, d)

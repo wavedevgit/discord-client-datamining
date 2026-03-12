@@ -1,55 +1,55 @@
 /** chunk id: 645789 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(36525),
-    r = n(631670),
+    r = n(36525),
+    a = n(631670),
     o = n(933725),
     d = n(587600),
     c = n(207803),
     u = n(836602),
     _ = n(624826),
-    g = n(253932),
-    m = n(354694),
+    m = n(253932),
+    g = n(354694),
     A = n(592074),
     h = n(985018);
 
-function p() {
+function x() {
     let {
         canSubmit: e,
         errors: t
     } = (0, l.cf)([u.A], () => ({
         canSubmit: u.A.canSubmit(),
         errors: u.A.getErrors()
-    })), [n, p] = s.useState(!1), x = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? h.intl.string(h.t["84MExs"]) : null, [t]), E = s.useCallback(async () => {
-        p(!0);
+    })), [n, x] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? h.intl.string(h.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
+        x(!0);
         let e = u.A.getPendingChanges(),
             t = (0, d.Sk)(e),
             n = (0, d.yX)(e),
             i = (0, d.yg)(e),
             s = !0;
         if (Object.keys(t).length > 0) {
-            let n = await (0, r._L)(t);
+            let n = await (0, a._L)(t);
             if (s = s && (n?.ok ?? !1), n?.ok) {
                 let i = n.body;
                 void 0 !== e.pendingAvatar && (0, _.t)({
                     avatarHash: i.avatar,
                     avatarId: t.avatarId,
                     avatarAssetOrigin: e.pendingAvatar?.assetOrigin
-                }), (0, r.pZ)()
+                }), (0, a.pZ)()
             } else n?.body?.username != null && (0, A.E)()
         }
         if (Object.keys(n).length > 0) {
             let e = await (0, c.gi)(n);
-            s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, m.m)()
+            s = s && (e?.ok ?? !1), e?.ok ? (0, c.RE)() : (0, g.m)()
         }
         if (void 0 !== e.pendingLegacyUsernameDisabled) try {
-            await g.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, r._e)()
+            await m.m$.updateSetting(e.pendingLegacyUsernameDisabled), (0, a._e)()
         } catch {
-            (0, m.m)(), s = !1
+            (0, g.m)(), s = !1
         }
         if (Object.keys(i).length > 0) {
             let {
@@ -57,18 +57,18 @@ function p() {
             } = i;
             if (void 0 !== e) {
                 let t = await (0, o.m)(e, null !== e);
-                s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, m.m)()
+                s = s && (t?.ok ?? !1), t?.ok ? (0, a.fw)() : (0, g.m)()
             }
         }
-        s && (0, r.x8)(), p(!1)
-    }, []), T = s.useCallback(() => {
-        (0, r.IM)()
+        s && (0, a.x8)(), x(!1)
+    }, []), E = s.useCallback(() => {
+        (0, a.IM)()
     }, []);
-    return (0, i.jsx)(a.A, {
+    return (0, i.jsx)(r.A, {
         submitting: n,
-        onSave: E,
-        onReset: T,
+        onSave: T,
+        onReset: E,
         disabled: !e,
-        errorMessage: x ?? void 0
+        errorMessage: p ?? void 0
     })
 }

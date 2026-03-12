@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(998304),
     _ = n(624458),
     m = n(202384),
-    p = n(513461),
-    g = n(212455),
+    g = n(513461),
+    p = n(212455),
     E = n(892040),
     I = n(385310),
     f = n(6939),
@@ -60,12 +60,12 @@ let v = e => {
         ref: n,
         width: o,
         height: d
-    } = (0, s.Ay)(), [A, h] = r.useState(T.go.INITIAL), v = (0, l.bG)([g.A], () => g.A.getRequest(t)), y = (0, l.bG)([u.A], () => u.A.getGuild(t)), {
+    } = (0, s.Ay)(), [A, h] = r.useState(T.go.INITIAL), v = (0, l.bG)([p.A], () => p.A.getRequest(t)), y = (0, l.bG)([u.A], () => u.A.getGuild(t)), {
         hasFetchedRequestToJoinGuilds: b,
         guildPreviewDisabled: O
-    } = (0, l.cf)([g.A], () => ({
-        hasFetchedRequestToJoinGuilds: g.A.hasFetchedRequestToJoinGuilds,
-        guildPreviewDisabled: g.A.getJoinRequestGuild(t)
+    } = (0, l.cf)([p.A], () => ({
+        hasFetchedRequestToJoinGuilds: p.A.hasFetchedRequestToJoinGuilds,
+        guildPreviewDisabled: p.A.getJoinRequestGuild(t)
     }));
     r.useEffect(() => {
         null != y && (0, c.pX)(C.BVt.CHANNEL(t))
@@ -86,11 +86,11 @@ let v = e => {
         },
         P = async () => {
             await _.A.resetGuildJoinRequest(t), (0, m.Ze)(t)
-        }, j = e => {
+        }, D = e => {
             e ? R(N.intl.format(N.t["9ZezpN"], {
                 name: O?.name
             }), L)() : L()
-        }, D = R(N.intl.format(N.t.fJwWVt, {
+        }, j = R(N.intl.format(N.t.fJwWVt, {
             name: O?.name
         }), L);
     return (0, i.jsxs)("div", {
@@ -105,23 +105,23 @@ let v = e => {
             children: (() => {
                 if (null == v) return null;
                 switch (v.applicationStatus) {
-                    case p.B5.SUBMITTED:
+                    case g.B5.SUBMITTED:
                         return (0, i.jsx)(f.A, {
-                            onWithdrawApplication: () => j(!0),
+                            onWithdrawApplication: () => D(!0),
                             guild: O
                         });
-                    case p.B5.REJECTED:
+                    case g.B5.REJECTED:
                         return (0, i.jsx)(I.A, {
                             reapplyText: N.intl.string(N.t.I1LYVk),
                             onReapply: P,
                             confirmText: N.intl.string(N.t.g9tK0o),
-                            onWithdrawApplication: j,
+                            onWithdrawApplication: D,
                             rejectionReason: v.rejectionReason,
                             guild: O
                         });
                     default:
                         return (0, i.jsx)(E.K, {
-                            onDiscardApplication: D,
+                            onDiscardApplication: j,
                             onContinueApplication: () => (0, m.Ze)(t),
                             guild: O
                         })

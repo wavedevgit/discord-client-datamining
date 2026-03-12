@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(775602),
     _ = n(139286),
     m = n(871751),
-    p = n(259407),
-    g = n(915089),
+    g = n(259407),
+    p = n(915089),
     E = n(607470),
     I = n(367727),
     f = n(652176),
@@ -82,8 +82,8 @@ function L(e) {
         heroArt: L,
         heroArtClassName: R,
         modalTopExtra: P,
-        header: j,
-        headerClassName: D,
+        header: D,
+        headerClassName: j,
         subHeader: M,
         subHeaderExtra: w,
         featureCards: U,
@@ -93,14 +93,14 @@ function L(e) {
     } = e, {
         onClose: B,
         transitionState: H
-    } = b, F = (0, g.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, K] = r.useState(Date.now()), [z, $] = r.useState(0), [Q, X] = r.useState(0), [Z, J] = r.useState(!1), [ee, et] = r.useState(!0), en = r.useRef(q), ei = r.useRef(z), er = r.useRef(Q), el = r.useRef(Z), ea = r.useRef(ee), [es, eo] = r.useState(y), ed = r.useRef(!1);
+    } = b, F = (0, p.GV)(), Y = U.length % 2 == 0, W = (0, d.bG)([h.A], () => h.A.useReducedMotion), [q, z] = r.useState(Date.now()), [K, $] = r.useState(0), [Q, X] = r.useState(0), [Z, J] = r.useState(!1), [ee, et] = r.useState(!0), en = r.useRef(q), ei = r.useRef(K), er = r.useRef(Q), el = r.useRef(Z), ea = r.useRef(ee), [es, eo] = r.useState(y), ed = r.useRef(!1);
 
     function ec() {
         let e = Date.now(),
             t = e - en.current,
             n = ei.current,
             i = er.current;
-        return el.current && ($(n += t), ea.current || X(i += t)), K(e), [n, i]
+        return el.current && ($(n += t), ea.current || X(i += t)), z(e), [n, i]
     }
     return (0, _.A)({
         type: s.ImpressionTypes.MODAL,
@@ -137,8 +137,8 @@ function L(e) {
             URL.revokeObjectURL(e.src)
         })
     }, [es]), r.useEffect(() => {
-        en.current = q, ei.current = z, er.current = Q, el.current = Z, ea.current = ee
-    }, [q, z, Q, Z, ee]), r.useEffect(() => () => {
+        en.current = q, ei.current = K, er.current = Q, el.current = Z, ea.current = ee
+    }, [q, K, Q, Z, ee]), r.useEffect(() => () => {
         if ("video" === L.type || "embed" === L.type) {
             let [e, t] = ec();
             C.default.track(N.HAw.CHANGE_LOG_VIDEO_PLAYED, {
@@ -191,7 +191,7 @@ function L(e) {
                     onPlay: e => {
                         C.default.track(N.HAw.CHANGE_LOG_VIDEO_INTERACTED, {
                             change_log_id: G
-                        }), K(Date.now()), J(!0), et(e.currentTarget.muted)
+                        }), z(Date.now()), J(!0), et(e.currentTarget.muted)
                     },
                     onEnded: e => {
                         ec(), et(e.currentTarget.muted), J(!1)
@@ -219,7 +219,7 @@ function L(e) {
                     href: L.href,
                     thumbnail: L.thumbnail,
                     video: L.embed,
-                    provider: p.mt.YOUTUBE,
+                    provider: g.mt.YOUTUBE,
                     maxWidth: L.embed.width,
                     maxHeight: L.embed.height,
                     renderVideoComponent: f.$o,
@@ -236,8 +236,8 @@ function L(e) {
                     src: L.src
                 }) : null, (0, i.jsx)(A.Heading, {
                     variant: "display-md",
-                    className: a()(v.TK, D),
-                    children: j
+                    className: a()(v.TK, j),
+                    children: D
                 }), (0, i.jsxs)(A.Text, {
                     variant: "text-md/normal",
                     color: "text-subtle",

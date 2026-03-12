@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(757780),
     _ = n(748319),
     m = n(355205),
-    p = n(652234),
-    g = n(489683),
+    g = n(652234),
+    p = n(489683),
     E = n(947926),
     I = n(366811),
     f = n(652215),
@@ -59,14 +59,14 @@ let S = r.memo(function() {
         "aria-label": C.intl.string(C.t.vTl6Lk),
         children: (0, i.jsxs)(s.xpW, {
             containerRef: e,
-            children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(p.A, {}), (0, i.jsx)(d.A, {
+            children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(d.A, {
                 section: f.JJy.ACTIVITY_PANEL,
                 children: (0, i.jsx)(N, {
                     className: T.iz
                 })
             }), (0, i.jsx)(d.A, {
                 section: f.JJy.RTC_CONNECTION_PANEL,
-                children: (0, i.jsx)(g.A, {})
+                children: (0, i.jsx)(p.A, {})
             }), (0, i.jsx)(d.A, {
                 section: f.JJy.ACCOUNT_PANEL,
                 children: (0, i.jsx)(_.A, {})

@@ -5,23 +5,23 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(877624),
+    r = n.n(l),
+    a = n(877624),
     o = n(311907),
     d = n(397927),
     c = n(775602),
     u = n(793574),
     _ = n(688810),
-    g = n(560138),
-    m = n(526292),
+    m = n(560138),
+    g = n(526292),
     A = n(236834),
     h = n(549996),
-    p = n(371764),
-    x = n(65470),
-    E = n(792656),
-    T = n(224850),
-    S = n(552554),
-    C = n(797255),
+    x = n(371764),
+    p = n(65470),
+    T = n(792656),
+    E = n(224850),
+    C = n(552554),
+    S = n(797255),
     f = n(288351),
     N = n(103733),
     b = n(326180),
@@ -35,22 +35,22 @@ let O = s.memo(s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: l
     } = e, {
         analyticsLocations: O
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), y = (0, A.A)(), P = null != y, D = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), y = (0, C.N)(), R = (0, A.A)(), P = null != R, D = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         visibilityPercentageRef: L,
-        visibilityPercentage: G
-    } = (0, N.U)(!D), M = (0, o.bG)([g.A], () => g.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, m.ar)() && !V;
+        visibilityPercentage: M
+    } = (0, N.U)(!D), G = (0, o.bG)([m.A], () => m.A.affinities), U = !P && G.length > 0, k = (0, h.c)(a.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, g.ar)() && !V;
     return (0, i.jsx)(_.f5, {
         value: O,
         children: (0, i.jsx)("div", {
             ref: t,
-            className: a()(j.kL, n),
+            className: r()(j.kL, n),
             "data-testid": "marketing-page-hero-header",
             children: (0, i.jsx)("div", {
                 ref: L,
                 children: (0, i.jsxs)("div", {
                     className: j.hQ,
                     children: [(0, i.jsx)(b.A, {
-                        containerVisibilityPercentage: G
+                        containerVisibilityPercentage: M
                     }), w && (0, i.jsx)("div", {
                         className: j.XN,
                         children: (0, i.jsx)(f.A, {
@@ -68,13 +68,13 @@ let O = s.memo(s.forwardRef((e, t) => {
                         className: j.rf,
                         children: [P && (0, i.jsx)("div", {
                             className: j.eZ,
-                            children: (0, i.jsx)(C.A, {
-                                referrer: y,
+                            children: (0, i.jsx)(S.A, {
+                                referrer: R,
                                 enablePremiumBrandRefresh: !0
                             })
                         }), U && (0, i.jsx)("div", {
                             className: j.Qn,
-                            children: (0, i.jsx)(T.A, {
+                            children: (0, i.jsx)(E.A, {
                                 textColor: "text-strong",
                                 smallerText: !1,
                                 isApplicationHome: !0,
@@ -82,13 +82,13 @@ let O = s.memo(s.forwardRef((e, t) => {
                             })
                         }), (0, i.jsxs)("div", {
                             className: w ? j.es : j.UJ,
-                            children: [(0, i.jsx)(E.A, {
+                            children: [(0, i.jsx)(T.A, {
                                 size: "md",
                                 fullWidth: w,
                                 hasActivePromotion: !!l,
                                 subscriptionTier: V ? I.pe.NONE : s,
                                 buttonTextOverride: V ? v.intl.string(v.t["2pG5Ga"]) : void 0
-                            }), !w && (0, i.jsx)(x.A, {
+                            }), !w && (0, i.jsx)(p.A, {
                                 variant: "secondary",
                                 size: "md"
                             })]
@@ -98,10 +98,10 @@ let O = s.memo(s.forwardRef((e, t) => {
                                 color: "text-muted",
                                 variant: "text-xs/medium",
                                 children: v.intl.format(v.t.kt9wxs, {
-                                    cheapestMonthlyPrice: R
+                                    cheapestMonthlyPrice: y
                                 })
                             })
-                        }), null != k && "marketingPageBanner" === k.properties.properties.oneofKind && (0, i.jsx)(p.x, {
+                        }), null != k && "marketingPageBanner" === k.properties.properties.oneofKind && (0, i.jsx)(x.x, {
                             componentId: k.id,
                             promotionBannerMarketingComponentFields: k.properties.properties.marketingPageBanner
                         })]

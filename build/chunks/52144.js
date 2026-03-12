@@ -19,13 +19,13 @@ function _(e) {
         onOpen: t,
         onClose: n,
         "data-jump-section": _
-    } = e, m = (0, l.bG)([c.default], () => c.default.getCurrentUser()), p = r.useRef(null), g = (0, l.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
+    } = e, m = (0, l.bG)([c.default], () => c.default.getCurrentUser()), g = r.useRef(null), p = (0, l.bG)([d.Ay], () => m?.id != null && d.Ay.getMentionCount(m.id, A.P.NOTIFICATION_CENTER) > 0);
     return (0, i.jsx)(u.C, {
-        targetElementRef: p,
+        targetElementRef: g,
         onOpen: t,
         onClose: n,
         badgeState: {
-            badgeForYou: g
+            badgeForYou: p
         },
         popoutPosition: "bottom",
         popoutAlign: "right",
@@ -35,13 +35,13 @@ function _(e) {
                 icon: a.K$s,
                 tooltip: h.intl.string(h.t.GSmTKJ),
                 onClick: e,
-                showBadge: g || r,
+                showBadge: p || r,
                 selected: t,
                 "data-jump-section": _,
-                ref: p
+                ref: g
             }), (0, i.jsx)(o.v, {
                 location: "inbox-button",
-                targetElementRef: p
+                targetElementRef: g
             })]
         })
     })

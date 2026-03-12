@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(688810),
+    r = n(397927),
+    a = n(688810),
     o = n(65470),
     d = n(985018),
     c = n(424058),
@@ -19,19 +19,19 @@ let _ = e => {
         analyticsLocation: s
     } = e, {
         analyticsLocations: _
-    } = (0, r.Ay)(n);
-    return (0, i.jsx)(r.f5, {
+    } = (0, a.Ay)(n);
+    return (0, i.jsx)(a.f5, {
         value: _,
-        children: (0, i.jsxs)(a.hLv, {
+        children: (0, i.jsxs)(r.hLv, {
             className: l()(c.kL, c.pm, t),
             color: "purple",
             children: [(0, i.jsxs)("div", {
                 className: c.FS,
-                children: [(0, i.jsx)(a.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-xxl/bold",
                     className: c.R_,
                     children: d.intl.string(d.t.Ve9Ge6)
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-md/medium",
                     children: d.intl.string(d.t.yQ06u1)
                 }), (0, i.jsx)("div", {

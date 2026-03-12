@@ -1,33 +1,33 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    a = n(926919),
-    r = n(172272),
+    r = n(926919),
+    a = n(172272),
     o = n(540999),
     d = n(111162),
     c = n(253932),
     u = n(780964),
     _ = n(840065),
-    g = n(652215);
+    m = n(652215);
 
-function m() {
+function g() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: m,
+        isLoggingOverlayEvents: g,
         isLoggingAnalyticsEvents: A,
         isTracingRequests: h,
-        isForcedCanary: p,
-        isAxeEnabled: x,
-        preventPopoutClose: E,
-        onlyShowPreviewAppCollections: T,
-        disableAppCollectionsCache: S
+        isForcedCanary: x,
+        isAxeEnabled: p,
+        preventPopoutClose: T,
+        onlyShowPreviewAppCollections: E,
+        disableAppCollectionsCache: C
     } = (0, s.cf)([d.default, o.A], () => ({
         layoutDebuggingEnabled: d.default.layoutDebuggingEnabled,
         isDeveloper: o.A.isDeveloper,
@@ -42,18 +42,18 @@ function m() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: C,
+        horizontalSpacing: S,
         verticalSpacing: f
-    } = (0, r.Or)(), {
+    } = (0, a.Or)(), {
         setHorizontalSpacing: N,
         setVerticalSpacing: b
-    } = r.Or.getState(), I = c.HZ.useSetting();
+    } = a.Or.getState(), I = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
         action: () => {
             (0, _.openUserSettings)(u.X.DEV_OVERRIDES, {
-                section: g.nc_.DEVELOPER_OPTIONS
+                section: m.nc_.DEVELOPER_OPTIONS
             })
         },
         children: [(0, i.jsx)(l.sLh, {
@@ -66,28 +66,28 @@ function m() {
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
-            checked: p,
+            checked: x,
             action: () => {
-                (0, a.x)({
-                    canary: !p
+                (0, r.x)({
+                    canary: !x
                 })
             }
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
             id: "preview-collections",
             label: "Preview Unpublished Collections",
-            checked: T,
+            checked: E,
             action: () => {
-                (0, a.x)({
-                    onlyShowPreviewAppCollections: !T
+                (0, r.x)({
+                    onlyShowPreviewAppCollections: !E
                 })
             }
         }, "preview-collections"), (0, i.jsx)(l.sLh, {
             id: "disable-collections-cache",
             label: "Disable Collections Cache",
-            checked: S,
+            checked: C,
             action: () => {
-                (0, a.x)({
-                    disableAppCollectionsCache: !S
+                (0, r.x)({
+                    disableAppCollectionsCache: !C
                 })
             }
         }, "disable-collections-cache")]
@@ -96,7 +96,7 @@ function m() {
         label: "Logging",
         action: () => {
             (0, _.openUserSettings)(u.X.LOGGING, {
-                section: g.nc_.DEVELOPER_OPTIONS
+                section: m.nc_.DEVELOPER_OPTIONS
             })
         },
         children: [(0, i.jsx)(l.sLh, {
@@ -104,17 +104,17 @@ function m() {
             label: "Gateway Events",
             checked: n,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     logGatewayEvents: !n
                 })
             }
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: m,
+            checked: g,
             action: () => {
-                (0, a.x)({
-                    logOverlayEvents: !m
+                (0, r.x)({
+                    logOverlayEvents: !g
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
@@ -122,7 +122,7 @@ function m() {
             label: "Analytics Events",
             checked: A,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     logAnalyticsEvents: !A
                 })
             }
@@ -131,17 +131,17 @@ function m() {
             label: "Tracing Requests",
             checked: h,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     trace: !h
                 })
             }
         }, "tracing-requests"), (0, i.jsx)(l.sLh, {
             id: "prevent-popout-close",
             label: "Prevent Popouts From Closing",
-            checked: E,
+            checked: T,
             action: () => {
-                (0, a.x)({
-                    preventPopoutClose: !E
+                (0, r.x)({
+                    preventPopoutClose: !T
                 })
             }
         }, "prevent-popout-close")]
@@ -150,16 +150,16 @@ function m() {
         label: "Design/A11y Tools",
         action: () => {
             (0, _.openUserSettings)(u.X.DESIGN_TOOLS, {
-                section: g.nc_.DEVELOPER_OPTIONS
+                section: m.nc_.DEVELOPER_OPTIONS
             })
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "accessibility-auditing",
             label: "Accessibility Auditing",
-            checked: x,
+            checked: p,
             action: () => {
-                (0, a.x)({
-                    axeEnabled: !x
+                (0, r.x)({
+                    axeEnabled: !p
                 })
             }
         }, "accessibility-auditing"), (0, i.jsx)(l.sLh, {
@@ -167,7 +167,7 @@ function m() {
             label: "Enable Layout Debugging",
             checked: e,
             action: () => {
-                (0, a.x)({
+                (0, r.x)({
                     layoutDebuggingEnabled: !e
                 })
             }
@@ -178,9 +178,9 @@ function m() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: C,
+                    value: S,
                     minValue: 0,
-                    maxValue: r.YR,
+                    maxValue: a.YR,
                     onChange: e => N(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
@@ -193,7 +193,7 @@ function m() {
                     ref: t,
                     value: f,
                     minValue: 0,
-                    maxValue: r.YR,
+                    maxValue: a.YR,
                     onChange: e => b(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`

@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(932340),
     _ = n(733738),
     m = n(871432),
-    p = n(352306),
-    g = n(817199),
+    g = n(352306),
+    p = n(817199),
     E = n(540177),
     I = n(898642),
     f = n(558416),
@@ -33,8 +33,8 @@ var i = n(627968),
     L = n(113800),
     R = n(540999),
     P = n(147964),
-    j = n(531685),
-    D = n(837921),
+    D = n(531685),
+    j = n(837921),
     M = n(475815),
     w = n(71855);
 n(801416);
@@ -43,7 +43,7 @@ let U = (0, l.v)(() => ({
     })),
     G = r.memo(function() {
         r.useLayoutEffect(() => {
-            D.Ay.setMinimumSize(800, 500)
+            j.Ay.setMinimumSize(800, 500)
         }, []);
         let {
             notificationCenterVariant: e,
@@ -56,14 +56,14 @@ let U = (0, l.v)(() => ({
             location: "HeaderBar"
         }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
             enabled: B
-        } = p.s.useConfig({
+        } = g.s.useConfig({
             location: "AppTitleBar"
         });
         r.useLayoutEffect(() => {
-            D.Ay.setMinimumSize(800, 500)
+            j.Ay.setMinimumSize(800, 500)
         }, []);
         let H = (0, y.NC)(),
-            F = (0, s.bG)([j.A, x.A], () => (0, M._U)()),
+            F = (0, s.bG)([D.A, x.A], () => (0, M._U)()),
             Y = (0, a.xl)(),
             W = function(e) {
                 let {
@@ -91,7 +91,7 @@ let U = (0, l.v)(() => ({
                     }),
                     title: (0, i.jsx)(T.M, {}),
                     trailing: (0, i.jsxs)(i.Fragment, {
-                        children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(g.A, {}), (0, i.jsx)(h.A, {
+                        children: [(0, i.jsx)(m.A, {}), U ? (0, i.jsx)(L.A, {}) : null, B && (0, i.jsx)(p.A, {}), (0, i.jsx)(h.A, {
                             canShowReminder: !0
                         }), V && (0, i.jsx)(v.A, {
                             ..."RECENTS" === W ? e : {}

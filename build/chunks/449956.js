@@ -5,30 +5,30 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(688810),
-    a = n(625841),
-    r = n(74848),
+    r = n(625841),
+    a = n(74848),
     o = n(204050),
     d = n(430452),
     c = n(954571),
     u = n(948641),
     _ = n(652215),
-    g = n(731854),
-    m = n(985018);
+    m = n(731854),
+    g = n(985018);
 
 function A() {
     let e = (0, s.bG)([d.Ay], () => d.Ay.isVideoAvailable()),
         {
             id: t
-        } = (0, r.x5)(g.oh.VIDEO_INPUT),
+        } = (0, a.x5)(m.oh.VIDEO_INPUT),
         {
             analyticsLocations: n
         } = (0, l.Ay)();
-    return (0, i.jsx)(a.U, {
-        label: m.intl.string(m.t.FsQ3OR),
-        deviceType: g.oh.VIDEO_INPUT,
+    return (0, i.jsx)(r.U, {
+        label: g.intl.string(g.t.FsQ3OR),
+        deviceType: m.oh.VIDEO_INPUT,
         location: "UserSettingsCameraSelect",
         isDisabled: !e,
-        helperText: (0, o.p)() ? m.intl.format(m.t.aJYgRt, {
+        helperText: (0, o.p)() ? g.intl.format(g.t.aJYgRt, {
             onCameraSettingsClick: () => {
                 u.A.setState({
                     previewEnabled: !1

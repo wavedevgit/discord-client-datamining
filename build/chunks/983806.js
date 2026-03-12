@@ -1,23 +1,23 @@
 /** chunk id: 983806 params = (module,exports,require) **/
 n.d(t, {
-    b: () => E
+    b: () => T
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(843282),
+    r = n.n(l),
+    a = n(843282),
     o = n(397927),
     d = n(10005),
     c = n(809697),
     u = n(153739),
     _ = n(834981),
-    g = n(343906),
-    m = n(191627),
+    m = n(343906),
+    g = n(191627),
     A = n(870236),
     h = n(985018),
-    p = n(888718);
-let x = () => {
+    x = n(888718);
+let p = () => {
         let e = (0, _.vx)(),
             t = (0, u.y3)(),
             {
@@ -27,16 +27,16 @@ let x = () => {
                 label: e,
                 value: e
             })),
-            c = s.useCallback(e => (0, i.jsx)(g.O, {
+            c = s.useCallback(e => (0, i.jsx)(m.O, {
                 userId: e.value,
                 avatarSize: o._3J.SIZE_24,
                 hideUserTag: !0
             }), []);
         return 0 === e.length ? null : (0, i.jsx)("div", {
-            className: a()(p.Gq, {
-                [p.wS]: e.length > 1
+            className: r()(x.Gq, {
+                [x.wS]: e.length > 1
             }),
-            children: e.length > 1 ? (0, i.jsx)(r.Pw, {
+            children: e.length > 1 ? (0, i.jsx)(a.Pw, {
                 renderOptionLabel: c,
                 renderOptionValue: e => {
                     let [t] = e;
@@ -49,24 +49,24 @@ let x = () => {
                 isSelected: e => e === t?.id,
                 options: l,
                 "data-migration-pending": !0
-            }) : (0, i.jsx)(g.O, {
+            }) : (0, i.jsx)(m.O, {
                 userId: e[0],
                 avatarSize: o._3J.SIZE_24,
                 hideUserTag: !0
             })
         })
     },
-    E = () => {
+    T = () => {
         let {
             selectedTab: e,
             handleTabChange: t
         } = (0, c.A)(), n = s.useCallback(() => {
-            t(m.u9.ACTIVITY)
+            t(g.u9.ACTIVITY)
         }, [t]);
         return (0, i.jsxs)(o.BJc, {
             gap: 32,
             children: [(0, i.jsxs)(o.DUT, {
-                className: p.Gv,
+                className: x.Gv,
                 onClick: n,
                 "aria-label": h.intl.string(h.t.ybUZql),
                 children: [(0, i.jsx)(o.Zge, {
@@ -83,7 +83,7 @@ let x = () => {
                 justify: "space-between",
                 children: [(0, i.jsxs)(o.BJc, {
                     gap: 4,
-                    className: p.gn,
+                    className: x.gn,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
@@ -91,9 +91,9 @@ let x = () => {
                     }), (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
-                        children: h.intl.string(e === m.u9.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
+                        children: h.intl.string(e === g.u9.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
                     })]
-                }), (0, i.jsx)(x, {})]
+                }), (0, i.jsx)(p, {})]
             })]
         })
     }

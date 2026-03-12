@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(23339),
     l = n(417597),
-    a = n(397927),
-    r = n(260509),
+    r = n(397927),
+    a = n(260509),
     o = n(695515),
     d = n(254847),
     c = n(452340);
@@ -18,20 +18,20 @@ let u = e => {
     if (void 0 === n) return null;
     let {
         name: u
-    } = n, _ = (0, r.Iv)(n, 40, !0), g = null, m = 10;
-    return null == n.icon && null != u && (g = (0, s.oN)(u), m = (0, d.Y)(g)), (0, i.jsx)("div", {
+    } = n, _ = (0, a.Iv)(n, 40, !0), m = null, g = 10;
+    return null == n.icon && null != u && (m = (0, s.oN)(u), g = (0, d.Y)(m)), (0, i.jsx)("div", {
         className: c.k,
         children: (0, i.jsxs)("div", {
             style: {
-                fontSize: m
+                fontSize: g
             },
-            children: [null != g ? (0, i.jsx)("div", {
+            children: [null != m ? (0, i.jsx)("div", {
                 className: c.X,
                 "aria-hidden": !0,
-                children: g
-            }) : null, null != _ ? (0, i.jsx)(a.euF, {
+                children: m
+            }) : null, null != _ ? (0, i.jsx)(r.euF, {
                 src: _,
-                size: a._3J.SIZE_40,
+                size: r._3J.SIZE_40,
                 "aria-hidden": !0
             }) : null]
         })

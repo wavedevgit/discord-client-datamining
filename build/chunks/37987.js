@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(873298),
     s = n(419954),
     l = n(253932),
-    a = n(780964),
-    r = n(542877),
+    r = n(780964),
+    a = n(542877),
     o = n(985018);
-let d = (0, s.Qx)(a.X.CONTENT_AND_SOCIAL_IN_GAME_DMS_SETTING, {
+let d = (0, s.Qx)(r.X.CONTENT_AND_SOCIAL_IN_GAME_DMS_SETTING, {
     useTitle: () => o.intl.string(o.t["ms+Tme"]),
     useSubtitle: () => o.intl.string(o.t["4NN4+/"]),
     useOptions: () => [{
@@ -26,5 +26,5 @@ let d = (0, s.Qx)(a.X.CONTENT_AND_SOCIAL_IN_GAME_DMS_SETTING, {
         return e === i.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? i.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e
     },
     setValue: e => l.TA.updateSetting(e),
-    usePredicate: r.K
+    usePredicate: a.K
 })

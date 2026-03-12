@@ -14,8 +14,8 @@ var l = n(143236),
     h = n(636401),
     _ = n(84002),
     m = n(313731),
-    p = n(546983),
-    g = n(613057),
+    g = n(546983),
+    p = n(613057),
     E = n(652215),
     I = n(264572).Buffer;
 try {
@@ -135,7 +135,7 @@ class L extends l.EventEmitter {
                     e === location.protocol && i === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", C), t.writeHead(301), t.end()
                 },
                 s = new O(!l ? a : v.bind(null, e, t), !l ? a : y.bind(null, e, t, 400), Number(n.get("v")), r);
-            l ? (0, p.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+            l ? (0, g.j7)(s, S(e.headers).origin, n.get("client_id")).then(() => {
                 let n = "";
                 e.on("data", e => n += e), e.on("error", () => y(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
             }).catch(e => {
@@ -144,7 +144,7 @@ class L extends l.EventEmitter {
                     message: n
                 } = e;
                 return s.close(t, n)
-            }) : (s.authorization.scopes = [g.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
+            }) : (s.authorization.scopes = [p.kw], this.handleMessage(s, decodeURIComponent(n.get("payload") ?? "")));
             return
         }
         y(e, t, 404, "Not Found")
@@ -160,7 +160,7 @@ class L extends l.EventEmitter {
         }
         T.info(`Socket Opened: ${t.id}`), e.on("error", e => T.error(`WS Error: ${e.message}`)), e.on("close", (e, n) => {
             T.info(`Socket Closed: ${t.id}, code ${e}, message ${n}`), s().remove(N, e => e === t), this.emit("disconnect", t)
-        }), (0, p.j7)(t, i, n.get("client_id")).then(() => {
+        }), (0, g.j7)(t, i, n.get("client_id")).then(() => {
             N.push(t), e.on("message", e => this.handleMessage(t, e)), this.emit("connect", t)
         }).catch(e => {
             let {

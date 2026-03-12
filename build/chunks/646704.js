@@ -5,29 +5,29 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(934551),
-    a = n(158954),
-    r = n(827734),
+    r = n(158954),
+    a = n(827734),
     o = n(155984),
     d = n(419954),
     c = n(933297),
     u = n(780964),
     _ = n(616415),
-    g = n(985018);
-let m = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
-        useTitle: () => g.intl.string(g.t.trSpHX),
+    m = n(985018);
+let g = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
+        useTitle: () => m.intl.string(m.t.trSpHX),
         buildLayout: () => [_.J]
     }),
     A = (0, d.i4)(u.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(g.t.trSpHX),
+        useTitle: () => m.intl.string(m.t.trSpHX),
         icon: l.SubscriptionIcon,
         usePersistentBadge: function() {
             return s.useMemo(() => ({
                 badgeType: c.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-                useCustomBadge: () => (0, o.l)() ? (0, i.jsx)(a.EpV, {
+                useCustomBadge: () => (0, o.l)() ? (0, i.jsx)(r.EpV, {
                     size: "xs",
-                    color: r.A.unsafe_rawColors.YELLOW_300
+                    color: a.A.unsafe_rawColors.YELLOW_300
                 }) : null
             }), [])
         },
-        buildLayout: () => [m]
+        buildLayout: () => [g]
     })

@@ -6,24 +6,24 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(954571),
-    a = n(253932),
-    r = n(652215),
+    r = n(253932),
+    a = n(652215),
     o = n(985018);
 
 function d() {
-    let e = a.D_.useSetting(),
-        t = a.SI.useSetting();
+    let e = r.D_.useSetting(),
+        t = r.SI.useSetting();
     return e ? null : (0, i.jsx)(s.sLh, {
         id: "preview-markdown-toggle",
         label: o.intl.string(o.t.sHJ9wZ),
         action: () => {
             let e = !t;
-            l.default.track(r.HAw.PREVIEW_MARKDOWN_TOGGLED, {
+            l.default.track(a.HAw.PREVIEW_MARKDOWN_TOGGLED, {
                 enabled: e,
                 location: {
-                    section: r.JJy.SETTINGS_CONTEXT_MENU
+                    section: a.JJy.SETTINGS_CONTEXT_MENU
                 }
-            }), a.SI.updateSetting(e)
+            }), r.SI.updateSetting(e)
         },
         checked: t
     })

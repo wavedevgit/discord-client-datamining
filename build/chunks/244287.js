@@ -1,12 +1,12 @@
 /** chunk id: 244287 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(311907),
     s = n(384684),
     l = n(2242);
 
-function a() {
+function r() {
     return (0, i.bG)([s.A], () => (function() {
         let [e] = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [s.A], t = e.getGuildIdsWithPurchasableRoles(), n = !1;
         return (t.forEach(t => {

@@ -15,23 +15,23 @@ var i = n(451988),
     h = n(723702),
     _ = n(652215);
 let m = new i.Ep,
-    p = new i.Ep;
-class g extends a.A {
+    g = new i.Ep;
+class p extends a.A {
     _initialize() {
         r.h.subscribe("IDLE", this.handleIdleUpdate)
     }
     _terminate() {
-        m.stop(), p.stop(), r.h.unsubscribe("IDLE", this.handleIdleUpdate)
+        m.stop(), g.stop(), r.h.unsubscribe("IDLE", this.handleIdleUpdate)
     }
     handleIdleUpdate() {
         let e = c.A.getIdleSince();
         if (!h.isPlatformEmbedded) return;
-        for (let e of (m.stop(), p.stop(), s.A.getAllActiveStreams()))
+        for (let e of (m.stop(), g.stop(), s.A.getAllActiveStreams()))
             if (e.state !== _.XYD.ENDED) return;
         if (null == e) return;
         let t = u.A.getChannelId();
         if (null == t) return;
-        p.start(18e6, () => {
+        g.start(18e6, () => {
             l.default.selectVoiceChannel(null)
         });
         let n = d.A.getGuild(u.A.getGuildId());
@@ -44,4 +44,4 @@ class g extends a.A {
         })
     }
 }
-let E = new g
+let E = new p

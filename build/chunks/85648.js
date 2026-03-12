@@ -5,32 +5,32 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(934551),
-    a = n(554146),
-    r = n(397927),
+    r = n(554146),
+    a = n(397927),
     o = n(419954),
     d = n(933297),
     c = n(780964),
     u = n(358776),
     _ = n(227542),
-    g = n(264124),
-    m = n(850060),
+    m = n(264124),
+    g = n(850060),
     A = n(886854),
     h = n(729770),
-    p = n(274835),
-    x = n(505112),
-    E = n(163944),
-    T = n(41197),
-    S = n(28161),
-    C = n(114074),
+    x = n(274835),
+    p = n(505112),
+    T = n(163944),
+    E = n(41197),
+    C = n(28161),
+    S = n(114074),
     f = n(413336),
     N = n(985018);
 let b = (0, o.t_)(c.X.DISPLAY_PANEL, {
         useTitle: () => N.intl.string(N.t.DVatCa),
-        buildLayout: () => [C.K, E.S, T.X, x.S, S.f, (0, f.$)(!0), p.J]
+        buildLayout: () => [S.K, T.S, E.X, p.S, C.f, (0, f.$)(!0), x.J]
     }),
     I = [...A.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-        dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
+        dismissibleContent: r.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: h.L
     }],
     v = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
@@ -39,14 +39,14 @@ let b = (0, o.t_)(c.X.DISPLAY_PANEL, {
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {
             let e = (0, _.A)(),
-                t = (0, m.A)(),
-                n = (0, g.A)();
+                t = (0, g.A)(),
+                n = (0, m.A)();
             return s.useMemo(() => {
                 let s = [...e];
-                return null != t && s.push((0, i.jsx)(r.rXV, {
+                return null != t && s.push((0, i.jsx)(a.rXV, {
                     label: N.intl.string(N.t.Ob7VMB),
                     children: t
-                }, "text-and-images")), null != n && s.push((0, i.jsx)(r.rXV, {
+                }, "text-and-images")), null != n && s.push((0, i.jsx)(a.rXV, {
                     children: n
                 }, "streamer-mode")), s
             }, [e, t, n])

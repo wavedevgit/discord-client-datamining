@@ -1,34 +1,34 @@
 /** chunk id: 337313 params = (module,exports,require) **/
 n.d(t, {
-    S: () => g,
-    T: () => m
+    S: () => m,
+    T: () => g
 });
 var i = n(311907),
     s = n(233545),
     l = n(419954),
-    a = n(430452),
-    r = n(412780),
+    r = n(430452),
+    a = n(412780),
     o = n(287809),
     d = n(837921),
     c = n(780964),
     u = n(731854),
     _ = n(985018);
 
-function g() {
-    return (0, i.bG)([o.default, a.Ay], () => {
+function m() {
+    return (0, i.bG)([o.default, r.Ay], () => {
         let e = o.default.getCurrentUser(),
             t = e?.isStaff() ?? !1,
             n = "canary" === d.Ay.releaseChannel || "development" === d.Ay.releaseChannel,
-            i = a.Ay.supports(u.O5.CONNECTION_REPLAY);
+            i = r.Ay.supports(u.O5.CONNECTION_REPLAY);
         return t && n && i
     })
 }
-let m = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
+let g = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
     useTitle: () => _.intl.string(_.t.U4FgFK),
     useSubtitle: () => _.intl.string(_.t.Lm72RU),
     useValue: function() {
-        return (0, i.bG)([r.Ay], () => r.Ay.shouldRecordNextConnection())
+        return (0, i.bG)([a.Ay], () => a.Ay.shouldRecordNextConnection())
     },
     setValue: s.Et,
-    usePredicate: g
+    usePredicate: m
 })

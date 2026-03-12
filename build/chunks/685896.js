@@ -1,24 +1,24 @@
 /** chunk id: 685896 params = (module,exports,require) **/
 n.d(t, {
-    C: () => x
+    C: () => p
 });
 var i = n(627968),
     s = n(935399),
     l = n(158954),
-    a = n(311907),
-    r = n(793574),
+    r = n(311907),
+    a = n(793574),
     o = n(526162),
     d = n(848971),
     c = n(915089),
     u = n(419954),
     _ = n(954571),
-    g = n(780964),
-    m = n(652215),
+    m = n(780964),
+    g = n(652215),
     A = n(635917),
     h = n(788868),
-    p = n(985018);
-let x = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
-    useSearchTerms: () => [p.intl.string(p.t.gnwxvT)],
+    x = n(985018);
+let p = (0, u.E2)(m.X.DISPLAY_IN_APP_ICON, {
+    useSearchTerms: () => [x.intl.string(x.t.gnwxvT)],
     Component: function() {
         let e = (0, c.GV)(),
             {
@@ -28,11 +28,11 @@ let x = (0, u.E2)(g.X.DISPLAY_IN_APP_ICON, {
                 orientation: "horizontal",
                 labelledBy: e
             }),
-            u = (0, a.bG)([o.A], () => o.A.isUpsellPreview);
+            u = (0, r.bG)([o.A], () => o.A.isUpsellPreview);
         return (0, s.Ay)(() => {
-            u && _.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+            u && _.default.track(g.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: h.e.APP_ICON_UPSELL,
-                location_stack: [r.A.USER_SETTINGS]
+                location_stack: [a.A.USER_SETTINGS]
             })
         }), (0, i.jsx)("div", {
             ...n,

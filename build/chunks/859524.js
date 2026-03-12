@@ -3,7 +3,7 @@ n.d(t, {
     $r: () => O,
     GM: () => y,
     Lg: () => L,
-    P0: () => j,
+    P0: () => D,
     Rh: () => b,
     Vq: () => C,
     Wu: () => S,
@@ -15,7 +15,7 @@ n.d(t, {
     px: () => M,
     tI: () => P,
     xj: () => N,
-    yx: () => D
+    yx: () => j
 }), n(321073);
 var i, r = n(6161),
     l = n(681154);
@@ -31,8 +31,8 @@ var A = n(222823),
     h = n(661191),
     _ = n(4106),
     m = n(335934),
-    p = n(800319),
-    g = n(883344),
+    g = n(800319),
+    p = n(883344),
     E = n(596720),
     I = n(449e3),
     f = n(652215);
@@ -51,7 +51,7 @@ function S(e) {
     return e < -1.5 ? 4 : e < 0 ? 3 : e > 0 ? 2 : 1
 }
 async function x(e, t, n) {
-    let i = g.A.getHydratedItems(),
+    let i = p.A.getHydratedItems(),
         r = e.slice(t, n);
     if (0 === r.length) return;
     _.A.loadHydratedAttempt(C(t, n));
@@ -92,9 +92,9 @@ async function x(e, t, n) {
     })
 }
 async function v() {
-    let e = g.A.getUnreadDisplayItems(),
-        t = g.A.getReadDisplayItems(),
-        n = g.A.getNextIndexToHydrate();
+    let e = p.A.getUnreadDisplayItems(),
+        t = p.A.getReadDisplayItems(),
+        n = p.A.getNextIndexToHydrate();
     await x([...e, ...t], n, n + E.w5)
 }
 
@@ -175,12 +175,12 @@ function P(e, t, n) {
     return (null == r && (r = n?.[t]), null == i && null == r) ? 0 : null == i ? -1 : null == r ? 1 : r - i
 }
 
-function j(e) {
-    let t = [...g.A.getUnreadDisplayItems(), ...g.A.getReadDisplayItems()],
+function D(e) {
+    let t = [...p.A.getUnreadDisplayItems(), ...p.A.getReadDisplayItems()],
         n = null;
     for (let t = e.length - 1; t >= 0; t--) {
         let i = e[t];
-        if (null != i && !p.P.has(i.item.data.kind)) {
+        if (null != i && !g.P.has(i.item.data.kind)) {
             n = i.item.id;
             break
         }
@@ -190,7 +190,7 @@ function j(e) {
     return i < 0 ? [] : t.slice(0, i + 1)
 }
 
-function D(e) {
+function j(e) {
     let t, n;
     switch (e.data.kind) {
         case "message":
@@ -249,7 +249,7 @@ async function w(e) {
     } = await Promise.resolve().then(n.bind(n, 334738)), {
         AnalyticsObjectTypes: i
     } = await Promise.resolve().then(n.bind(n, 652215));
-    g.A.getDehydratedItems().forEach(n => {
+    p.A.getDehydratedItems().forEach(n => {
         n.type === E.Mm.MESSAGE && n.data.channel_type === f.rbe.GUILD_ANNOUNCEMENT && h.default.compare(A.Ay.ackMessageId(n.data.channel_id), n.data.message_id) >= 0 && t(n.data.channel_id, {
             object: e,
             objectType: i.ACK_SEMI_AUTOMATIC

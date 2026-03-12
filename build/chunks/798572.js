@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(397927),
-    r = n(500380),
+    r = n(397927),
+    a = n(500380),
     o = n(518977),
     d = n(985018),
     c = n(620433);
@@ -19,7 +19,7 @@ function u(e) {
     } = e, u = s.useCallback(() => null == t ? null : (0, i.jsx)("img", {
         alt: "",
         className: c.b,
-        src: (0, r.t)(t)
+        src: (0, a.t)(t)
     }), [t]), _ = null != n && null != t ? {
         text: n,
         leadingIcon: u
@@ -33,17 +33,17 @@ function u(e) {
             onClick: o.onClose,
             variant: "secondary"
         }],
-        children: (0, i.jsxs)(a.BJc, {
+        children: (0, i.jsxs)(r.BJc, {
             gap: 16,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: d.intl.string(d.t["J+TYwL"])
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: d.intl.string(d.t.M57KeT)
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
                 children: d.intl.string(d.t.PDsztK)
@@ -54,7 +54,7 @@ function u(e) {
 
 function _(e) {
     let t = null != e ? (0, o.Gw)(e) : null;
-    (0, a.qfG)(n => (0, i.jsx)(u, {
+    (0, r.qfG)(n => (0, i.jsx)(u, {
         ...n,
         country: e,
         countryName: t

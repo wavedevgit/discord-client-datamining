@@ -16,8 +16,8 @@ var l = n(397927),
     h = n(894778),
     _ = n(447696),
     m = n(684407),
-    p = n(919638),
-    g = n(71393),
+    g = n(919638),
+    p = n(71393),
     E = n(967198),
     I = n(287809),
     f = n(403362),
@@ -57,10 +57,10 @@ class O extends s.A {
         let s = !1,
             b = E.A.getGuildId();
         if (a === S.zY.INVITE_UNCLAIMED) {
-            let e = g.A.getGuild(b);
+            let e = p.A.getGuild(b);
             null != e && (0, u.Qd)(e) && (s = !0, (0, _.Fy)(e.id))
         }
-        let O = () => 0 === p.A.totalGuilds && !C.isPlatformEmbedded,
+        let O = () => 0 === g.A.totalGuilds && !C.isPlatformEmbedded,
             L = o.xq();
         e = [{
             key: "Unified NUF Modal",

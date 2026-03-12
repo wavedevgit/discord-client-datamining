@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(427262),
     _ = n(652215),
     m = n(985018),
-    p = n(229411);
-let g = {
+    g = n(229411);
+let p = {
     [_.g_B.NOW_PLAYING]: {
         single: (e, t) => m.intl.format(m.t.NEckza, {
             user1: e.username,
@@ -67,7 +67,7 @@ class E extends r.PureComponent {
     activityDiscordTagRef = r.createRef();
     playerAvatarRef = r.createRef();
     renderDescription(e, t) {
-        let n = g[e];
+        let n = p[e];
         return 1 === t.length ? n.single(t[0].user, e => this.renderActivityDiscordTag(e)) : 2 === t.length ? n.double(t[0].user, t[1].user, e => this.renderActivityDiscordTag(e)) : n.other(t.length)
     }
     renderActivityDiscordTag(e) {
@@ -78,18 +78,18 @@ class E extends r.PureComponent {
             clickTrap: !0,
             children: t => (0, i.jsx)("span", {
                 ref: this.activityDiscordTagRef,
-                className: p.Xh,
+                className: g.Xh,
                 ...t,
                 children: e.username
             })
         }, e.id)
     }
     renderUserTooltip = (e, t, n) => (0, i.jsxs)("div", {
-        className: p.YL,
+        className: g.YL,
         children: [(0, i.jsx)("div", {
             children: h.Ay.getUserTag(e)
         }), (0, i.jsx)(c.Ay, {
-            className: p.ER,
+            className: g.ER,
             start: t,
             end: n,
             location: c.Ay.Locations.ACTIVITY_FEED
@@ -110,8 +110,8 @@ class E extends r.PureComponent {
                 }),
                 children: (0, i.jsx)(o.euF, {
                     ref: this.playerAvatarRef,
-                    className: a()(p.jd, {
-                        [p.hC]: !r
+                    className: a()(g.jd, {
+                        [g.hC]: !r
                     }),
                     src: e.getAvatarURL(void 0, 32),
                     "aria-label": e.username,
@@ -122,7 +122,7 @@ class E extends r.PureComponent {
         }, e.id)
     };
     renderPlayerOverflow = (e, t, n) => (0, i.jsx)("div", {
-        className: p.gQ,
+        className: g.gQ,
         children: e
     }, n);
     render() {
@@ -134,9 +134,9 @@ class E extends r.PureComponent {
             userInfo: r
         } = e;
         return 0 === r.length ? null : (0, i.jsxs)("div", {
-            className: a()(p.r8, t),
+            className: a()(g.r8, t),
             children: [(0, i.jsx)(A.A, {
-                className: p.Fk,
+                className: g.Fk,
                 users: r.map(e => {
                     let {
                         user: t
@@ -147,7 +147,7 @@ class E extends r.PureComponent {
                 max: 4,
                 renderMoreUsers: this.renderPlayerOverflow
             }), (0, i.jsx)("div", {
-                className: p.h_,
+                className: g.h_,
                 children: this.renderDescription(n, r)
             })]
         })

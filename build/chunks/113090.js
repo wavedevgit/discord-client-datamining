@@ -1,29 +1,29 @@
 /** chunk id: 113090 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(64700),
     s = n(311907),
     l = n(73153),
-    a = n(233317);
+    r = n(233317);
 
-function r() {
+function a() {
     let {
         useCachedData: e = !1,
         fetch: t = !0
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, {
         premiumGroupMembership: n,
-        isFetchingMembership: r
-    } = (0, s.cf)([a.A], () => ({
-        premiumGroupMembership: a.A.getMembership(),
-        isFetchingMembership: a.A.isFetchingMembership()
+        isFetchingMembership: a
+    } = (0, s.cf)([r.A], () => ({
+        premiumGroupMembership: r.A.getMembership(),
+        isFetchingMembership: r.A.isFetchingMembership()
     }));
     return (0, i.useEffect)(() => {
-        !t || e && a.A.hasFetchedMembership() || l.h.dispatch({
+        !t || e && r.A.hasFetchedMembership() || l.h.dispatch({
             type: "PREMIUM_GROUP_MEMBERSHIP_REQUEST"
         })
     }, [t, e]), {
         premiumGroupMembership: n,
-        isLoading: r
+        isLoading: a
     }
 }

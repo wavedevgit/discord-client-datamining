@@ -1,13 +1,13 @@
 /** chunk id: 127493 params = (module,exports,require) **/
 n.d(t, {
-    Ct: () => g,
-    oO: () => m
+    Ct: () => m,
+    oO: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(750338),
     d = n(23003),
     c = n(985018),
@@ -23,8 +23,8 @@ function _(e) {
         startLeftAligned: _ = !1
     } = e;
     return (0, i.jsxs)("div", {
-        className: a()(u.boxBackdrop, t),
-        children: [(0, i.jsx)(r.Heading, {
+        className: r()(u.boxBackdrop, t),
+        children: [(0, i.jsx)(a.Heading, {
             className: u.bentoSectionHeader,
             variant: "display-md",
             color: "text-strong",
@@ -56,7 +56,7 @@ function _(e) {
         })]
     })
 }
-let g = s.memo(function(e) {
+let m = s.memo(function(e) {
         let {
             whatsNewBoxes: t
         } = (0, d.Ay)();
@@ -67,7 +67,7 @@ let g = s.memo(function(e) {
             ...e
         })
     }),
-    m = s.memo(function(e) {
+    g = s.memo(function(e) {
         let {
             bestOfBoxes: t
         } = (0, d.Ay)();

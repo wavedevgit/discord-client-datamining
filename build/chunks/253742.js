@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(765548),
     _ = n(793574),
     m = n(688810),
-    p = n(659974),
-    g = n(384059),
+    g = n(659974),
+    p = n(384059),
     E = n(480890),
     I = n(551826),
     f = n(342296),
@@ -70,9 +70,9 @@ function L(e) {
             mute: L,
             deaf: R,
             serverMute: P,
-            serverDeaf: j
+            serverDeaf: D
         } = e,
-        D = (0, s.bG)([T.Ay], () => T.Ay.isLocalMute(h.id)),
+        j = (0, s.bG)([T.Ay], () => T.Ay.isLocalMute(h.id)),
         M = (0, u.A)({
             userId: h.id,
             checkSoundSharing: !0
@@ -98,11 +98,11 @@ function L(e) {
             if (l) return O.localMute;
             if (r) return O.mute
         }({
-            serverDeaf: j,
+            serverDeaf: D,
             deaf: R,
             serverMute: P,
             mute: L,
-            localMute: D
+            localMute: j
         }) ?? {},
         H = null != B ? v.intl.formatToPlainString(v.t["1+MVBP"], {
             userName: G,
@@ -139,10 +139,10 @@ function L(e) {
         })
     }
     let Y = (0, s.bG)([N.A], () => N.A.getVoiceVolume(h.id)),
-        W = (0, p.v)({
+        W = (0, g.v)({
             isSpeaking: M,
             voiceDb: Y,
-            spreadDirection: p.O.INSET_ONLY,
+            spreadDirection: g.O.INSET_ONLY,
             maxInnerSpreadRadius: 3
         });
     return (0, i.jsx)(f.A, {
@@ -157,7 +157,7 @@ function L(e) {
             children: (0, i.jsx)(d.DUT, {
                 innerRef: t,
                 onClick: t => {
-                    e.onClick(t), (0, g.X)(l, g.O.VOICE_USER)
+                    e.onClick(t), (0, p.X)(l, p.O.VOICE_USER)
                 },
                 className: y.H,
                 onContextMenu: F,
@@ -192,7 +192,7 @@ function R(e) {
         className: l
     } = e, [c, u] = r.useState(!1), _ = (0, s.bG)([C.default], () => C.default.getId()), {
         containerRef: m,
-        maxVisibleAvatars: p
+        maxVisibleAvatars: g
     } = function(e) {
         let [t, n] = r.useState(7), i = (0, h.A)(() => {
             let t = l?.current;
@@ -207,14 +207,14 @@ function R(e) {
             containerRef: l,
             maxVisibleAvatars: t
         }
-    }(t.length - 1), [g, E] = function(e, t, n) {
+    }(t.length - 1), [p, E] = function(e, t, n) {
         let i = [];
         for (let r of e)
             if (r.user.id !== t && !i.some(e => e.user.id === r.user.id)) {
                 if (i.length >= n) return [i, !0];
                 i.push(r)
             } return [i, !1]
-    }(t, _, p), I = c ? d.QGg : d.j96, f = c ? v.intl.string(v.t["Z/Tya5"]) : v.intl.string(v.t.XR5BAc), T = (0, i.jsx)(o.m, {
+    }(t, _, g), I = c ? d.QGg : d.j96, f = c ? v.intl.string(v.t["Z/Tya5"]) : v.intl.string(v.t.XR5BAc), T = (0, i.jsx)(o.m, {
         text: f,
         ariaHidden: !0,
         children: (0, i.jsx)(d.K0, {
@@ -226,7 +226,7 @@ function R(e) {
             variant: "icon-only",
             size: "sm"
         })
-    }), N = E && c ? t : g;
+    }), N = E && c ? t : p;
     return N.length <= 0 ? null : (0, i.jsx)(d.IpV, {
         className: a()(y.XG, l),
         fade: !0,

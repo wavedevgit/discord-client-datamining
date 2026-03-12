@@ -1,58 +1,58 @@
 /** chunk id: 78837 params = (module,exports,require) **/
 n.d(t, {
-    f: () => m
+    f: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(386181),
+    r = n.n(l),
+    a = n(386181),
     o = n(650682),
     d = n(934551),
     c = n(827734),
     u = n(397927),
     _ = n(590089),
-    g = n(507259);
+    m = n(507259);
 
-function m(e) {
+function g(e) {
     let {
         ref: t,
         title: n,
         collapsedSubtitle: l,
-        isExpanded: m,
+        isExpanded: g,
         onExpandedChange: A,
         children: h,
-        animate: p = !0
-    } = e, x = s.useRef(null), [E, T] = s.useState(null), S = m && null != E;
+        animate: x = !0
+    } = e, p = s.useRef(null), [T, E] = s.useState(null), C = g && null != T;
     return s.useLayoutEffect(() => {
-        null != x.current && null == E && T(x.current.clientHeight)
-    }, [E]), (0, i.jsxs)(r.EN, {
+        null != p.current && null == T && E(p.current.clientHeight)
+    }, [T]), (0, i.jsxs)(a.EN, {
         ref: t,
-        isExpanded: m,
+        isExpanded: g,
         onExpandedChange: A,
         children: [(0, i.jsx)(_.U, {
-            ref: x,
-            style: null != E ? {
-                minHeight: E
+            ref: p,
+            style: null != T ? {
+                minHeight: T
             } : void 0,
             title: n,
-            description: S ? void 0 : l,
+            description: C ? void 0 : l,
             trailingElement: (0, i.jsx)(u.vN3, {
                 children: (0, i.jsx)(o.$, {
                     slot: "trigger",
-                    className: g.bW,
+                    className: m.bW,
                     children: (0, i.jsx)(d.ChevronLargeUpIcon, {
-                        className: a()(g.Kk, {
-                            [g.kX]: !m
+                        className: r()(m.Kk, {
+                            [m.kX]: !g
                         }),
                         color: c.A.colors.ICON_STRONG
                     })
                 })
             }),
-            onClick: () => A(!m)
-        }), (0, i.jsx)(r.kS, {
-            className: a()(g.nd, {
-                [g.t5]: !p
+            onClick: () => A(!g)
+        }), (0, i.jsx)(a.kS, {
+            className: r()(m.nd, {
+                [m.t5]: !x
             }),
             children: (0, i.jsx)(u.BJc, {
                 gap: 16,

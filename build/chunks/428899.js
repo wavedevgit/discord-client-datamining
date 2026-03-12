@@ -1,6 +1,6 @@
 /** chunk id: 428899 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -65,7 +65,7 @@ class m extends r.PureComponent {
         })
     }
 }
-let p = (0, o.A)(l.Ay.connectStores([d.A, A.A], e => {
+let g = (0, o.A)(l.Ay.connectStores([d.A, A.A], e => {
     let {
         sku: t
     } = e, n = null != t ? d.A.getApplication(t.applicationId) : null, i = null != n && null != n.primarySkuId && n.primarySkuId !== t.id ? n.primarySkuId : null;

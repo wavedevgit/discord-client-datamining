@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(726249),
     _ = n(742589),
     m = n(210714),
-    p = n(544028),
-    g = n(335934),
+    g = n(544028),
+    p = n(335934),
     E = n(883344),
     I = n(859524),
     f = n(567061),
@@ -28,7 +28,7 @@ var i = n(627968),
 let v = (0, u.A)(function(e) {
     let {
         width: t
-    } = e, n = (0, g.c)("ICYMIPage", !1);
+    } = e, n = (0, p.c)("ICYMIPage", !1);
     r.useEffect(() => {
         n || (0, s.pX)(T.BVt.ME)
     }, [n]), r.useLayoutEffect(() => {
@@ -36,7 +36,7 @@ let v = (0, u.A)(function(e) {
     }, [n]), (0, A.Ay)(() => {
         n && (0, m.d)("icymi")
     });
-    let l = (0, o.bG)([p.A], () => p.A.theme),
+    let l = (0, o.bG)([g.A], () => g.A.theme),
         u = (0, o.bG)([E.A], () => E.A.isRefreshing()),
         v = r.useRef(null);
     (0, h.HU)({
@@ -58,7 +58,7 @@ let v = (0, u.A)(function(e) {
         }
     }, []);
     let O = (0, f.E)(),
-        L = g.E2.useExperiment({
+        L = p.E2.useExperiment({
             location: "icymi page"
         }).enabled,
         R = r.useCallback(async e => {

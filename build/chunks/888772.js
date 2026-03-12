@@ -5,23 +5,23 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(889137),
+    r = n.n(l),
+    a = n(889137),
     o = n(837381),
     d = n(397927),
     c = n(260762),
     u = n(485947),
     _ = n(294433),
-    g = n(426190),
-    m = n(438732),
+    m = n(426190),
+    g = n(438732),
     A = n(834981),
     h = n(469696),
-    p = n(796497),
-    x = n(148131),
-    E = n(845197),
-    T = n(442671),
-    S = n(191627),
-    C = n(327337),
+    x = n(796497),
+    p = n(148131),
+    T = n(845197),
+    E = n(442671),
+    C = n(191627),
+    S = n(327337),
     f = n(870236),
     N = n(985018),
     b = n(609132),
@@ -61,9 +61,9 @@ function O(e) {
     })
 }
 
-function R() {
+function y() {
     return (0, i.jsxs)("div", {
-        className: a()(I.aP, b.a, I.dO, I.p2),
+        className: r()(I.aP, b.a, I.dO, I.p2),
         children: [(0, i.jsxs)("div", {
             className: I.Np,
             children: [(0, i.jsxs)("div", {
@@ -103,10 +103,10 @@ function R() {
     })
 }
 
-function y() {
+function R() {
     let e = (0, A.xr)();
     return (0, i.jsxs)("div", {
-        className: a()(I.aP, b.a, I.dO),
+        className: r()(I.aP, b.a, I.dO),
         children: [(0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Heading, {
                 className: v.QB,
@@ -121,7 +121,7 @@ function y() {
                 children: N.intl.format(f.default.yMnoDl, {
                     link: "https://support.discord.com/hc/articles/14155060633623"
                 })
-            }), e ? null : (0, i.jsx)(p.A, {})]
+            }), e ? null : (0, i.jsx)(x.A, {})]
         }), (0, i.jsx)("img", {
             className: I._u,
             src: j,
@@ -135,21 +135,21 @@ function P(e) {
         sectionType: t,
         sectionTitle: n,
         requests: l
-    } = e, a = s.useRef(null), r = `${t}-list`, _ = (0, c.A)(r), g = s.useCallback(e => {
+    } = e, r = s.useRef(null), a = `${t}-list`, _ = (0, c.A)(a), m = s.useCallback(e => {
         let {
             row: n,
             listIndex: s
-        } = e, a = l[n], r = s === l.length;
-        return null == a ? null : (0, i.jsx)(T.A, {
-            userId: a.id,
-            isLast: r,
-            children: () => t === S.Ef.ACTIVE ? (0, i.jsx)(x.w, {
-                user: a
-            }) : (0, i.jsx)(E.M, {
-                user: a
+        } = e, r = l[n], a = s === l.length;
+        return null == r ? null : (0, i.jsx)(E.A, {
+            userId: r.id,
+            isLast: a,
+            children: () => t === C.Ef.ACTIVE ? (0, i.jsx)(p.w, {
+                user: r
+            }) : (0, i.jsx)(T.M, {
+                user: r
             })
-        }, a.id)
-    }, [l, t]), m = s.useCallback(() => (0, i.jsx)(u.A, {
+        }, r.id)
+    }, [l, t]), g = s.useCallback(() => (0, i.jsx)(u.A, {
         children: (0, i.jsx)(d.Text, {
             className: v.QB,
             variant: "eyebrow",
@@ -172,33 +172,33 @@ function P(e) {
                         innerRole: s,
                         innerAriaLabel: n,
                         ref: e => {
-                            a.current = e, t.current = e?.getScrollerNode() ?? null
+                            r.current = e, t.current = e?.getScrollerNode() ?? null
                         },
-                        sectionHeight: S.h4,
-                        rowHeight: S.Gg,
-                        renderSection: m,
-                        renderRow: g,
+                        sectionHeight: C.h4,
+                        rowHeight: C.Gg,
+                        renderSection: g,
+                        renderRow: m,
                         sections: [l.length],
                         chunkSize: 30,
                         fade: !0,
                         ...o
-                    }, r)
+                    }, a)
                 }
             })
         })
     })
 }
 let D = () => {
-        let e = (0, m.A)(),
+        let e = (0, g.A)(),
             t = (0, A.GR)(),
-            n = e ? S.Y7 : S.kp,
+            n = e ? C.Y7 : C.kp,
             s = {
                 count: t.length,
                 max: n
             },
             l = (0, _.y)(N.intl.formatToPlainString(f.default["+tnO34"], s), N.intl.formatToPlainString(f.default["pu6/U0"], s));
         return t.length > 0 ? (0, i.jsx)(P, {
-            sectionType: S.Ef.ACTIVE,
+            sectionType: C.Ef.ACTIVE,
             sectionTitle: l,
             requests: t
         }) : (0, i.jsxs)("div", {
@@ -218,7 +218,7 @@ let D = () => {
     },
     L = () => {
         let e = (0, A.xr)(),
-            t = (0, m.A)() ? S.Y7 : S.kp,
+            t = (0, g.A)() ? C.Y7 : C.kp,
             n = (0, _.y)(N.intl.formatToPlainString(f.default["1/PzIj"], {
                 maxConnections: t
             }), N.intl.formatToPlainString(f.default.RcTgiE, {
@@ -233,10 +233,10 @@ let D = () => {
             })
         }) : null
     },
-    G = () => {
-        let e = (0, g.N)(),
-            t = (0, g.z)(),
-            n = (0, r.YW)({
+    M = () => {
+        let e = (0, m.N)(),
+            t = (0, m.z)(),
+            n = (0, a.YW)({
                 helpline: e,
                 throughline: t
             }).with({
@@ -246,7 +246,7 @@ let D = () => {
             })).with({
                 throughline: !0
             }, () => N.intl.format(f.default["6tsC8u"], {
-                helpLink: C.CL
+                helpLink: S.CL
             })).otherwise(() => null);
         return null == n ? null : (0, i.jsxs)("div", {
             className: v.QX,
@@ -263,23 +263,23 @@ let D = () => {
             })]
         })
     },
-    M = () => {
-        let e = (0, A.xk)(S.Ef.PENDING),
+    G = () => {
+        let e = (0, A.xk)(C.Ef.PENDING),
             t = (0, _.y)(N.intl.formatToPlainString(f.default.IkAgkG, {
                 count: e.length
             }), N.intl.formatToPlainString(f.default.Q8XnAa, {
                 count: e.length
             }));
         return 0 === e.length ? null : (0, i.jsx)(P, {
-            sectionType: S.Ef.PENDING,
+            sectionType: C.Ef.PENDING,
             sectionTitle: t,
             requests: e
         })
     },
     U = () => {
-        let e = (0, m.A)();
+        let e = (0, g.A)();
         return (0, i.jsxs)("div", {
             className: I.kL,
-            children: [e ? (0, i.jsx)(R, {}) : (0, i.jsx)(y, {}), (0, i.jsx)(D, {}), (0, i.jsx)(M, {}), (0, i.jsx)(L, {}), (0, i.jsx)(G, {})]
+            children: [e ? (0, i.jsx)(y, {}) : (0, i.jsx)(R, {}), (0, i.jsx)(D, {}), (0, i.jsx)(G, {}), (0, i.jsx)(L, {}), (0, i.jsx)(M, {})]
         })
     }

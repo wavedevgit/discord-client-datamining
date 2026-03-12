@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(609132),
+    r = n(397927),
+    a = n(609132),
     o = n(868369);
 let d = e => {
     let {
@@ -17,7 +17,7 @@ let d = e => {
         description: d
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(o.kL, r.a),
+        className: l()(o.kL, a.a),
         children: [(0, i.jsx)("div", {
             className: o.n1,
             children: (0, i.jsx)(t, {
@@ -28,13 +28,13 @@ let d = e => {
                 color: "currentColor"
             })
         }), (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-md/bold",
                 className: o.wx,
-                children: (0, i.jsx)(a.Fmo, {
+                children: (0, i.jsx)(r.Fmo, {
                     children: s
                 })
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: d

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(791498),
-    r = n(244242);
+    r = n(791498),
+    a = n(244242);
 
 function o(e) {
     let {
@@ -18,23 +18,23 @@ function o(e) {
         useVariant: c,
         useDisabled: u,
         onClick: _
-    } = t, [g, m] = s.useState(!1), A = (0, a.q)(t), h = o(), p = d?.(), x = n(), E = c?.(), T = u?.();
-    return (0, i.jsx)(r.L, {
+    } = t, [m, g] = s.useState(!1), A = (0, r.q)(t), h = o(), x = d?.(), p = n(), T = c?.(), E = u?.();
+    return (0, i.jsx)(a.L, {
         children: (0, i.jsx)(l.D0$, {
             label: h,
-            description: p,
-            disabled: T,
+            description: x,
+            disabled: E,
             layout: "horizontal",
             children: (0, i.jsx)(l.Button, {
                 onClick: () => {
                     A();
                     let e = _();
-                    e instanceof Promise && (m(!0), e.finally(() => m(!1)))
+                    e instanceof Promise && (g(!0), e.finally(() => g(!1)))
                 },
-                text: x,
-                variant: E,
-                disabled: T,
-                loading: g
+                text: p,
+                variant: T,
+                disabled: E,
+                loading: m
             })
         })
     })

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(985018),
+    r = n(397927),
+    a = n(985018),
     o = n(571073),
     d = n(274216);
 let c = e => {
@@ -26,21 +26,21 @@ let c = e => {
             className: o.yG,
             children: [(0, i.jsx)("div", {
                 className: o.FY,
-                children: (0, i.jsxs)(a.DUT, {
+                children: (0, i.jsxs)(r.DUT, {
                     onClick: n,
                     className: o.Gv,
-                    children: [(0, i.jsx)(a.n2b, {
+                    children: [(0, i.jsx)(r.n2b, {
                         color: "currentColor"
-                    }), r.intl.string(r.t["13/7kX"])]
+                    }), a.intl.string(a.t["13/7kX"])]
                 })
             }), (0, i.jsx)("div", {
                 className: o.__invalid_contentContainer,
                 children: (0, i.jsx)("div", {
                     className: o.Qs,
-                    children: (0, i.jsx)(a.Heading, {
+                    children: (0, i.jsx)(r.Heading, {
                         variant: "display-lg",
                         color: "always-white",
-                        children: r.intl.string(r.t["hqjDX/"])
+                        children: a.intl.string(a.t["hqjDX/"])
                     })
                 })
             })]

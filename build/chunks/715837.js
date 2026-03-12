@@ -1,6 +1,6 @@
 /** chunk id: 715837 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -16,8 +16,8 @@ var r = n(397927),
     h = n(406140),
     _ = n(652215),
     m = n(985018),
-    p = n(43955);
-let g = e => {
+    g = n(43955);
+let p = e => {
     let {
         guild: t
     } = e, n = (0, l.uk)(t.id)[0];
@@ -28,7 +28,7 @@ let g = e => {
         relevantSubscriptionListingIds: n?.subscription_listings_ids
     });
     let {
-        activeSubscription: g
+        activeSubscription: p
     } = (0, s.A)(n?.id), E = (0, l.Tq)(t.id), I = E?.description, {
         editStateIds: f
     } = a.d0(n?.id ?? null, t.id);
@@ -41,11 +41,11 @@ let g = e => {
             coverImageAsset: E?.cover_image_asset ?? null,
             guild: t,
             children: [null != n ? (0, i.jsx)(d.A, {
-                className: p.Ds,
+                className: g.Ds,
                 groupListingId: n.id,
-                subscription: g
+                subscription: p
             }) : null, (0, i.jsx)(c.A, {
-                subscription: g
+                subscription: p
             })]
         }), (0, i.jsx)(r.Fmo, {
             children: (0, i.jsx)(u.A, {

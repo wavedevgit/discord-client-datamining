@@ -16,8 +16,8 @@ var r = n(835245),
     h = n(933958),
     _ = n(956549),
     m = n(257269),
-    p = n(793574),
-    g = n(627363),
+    g = n(793574),
+    p = n(627363),
     E = n(121623),
     I = n(200330),
     f = n(708281),
@@ -33,8 +33,8 @@ var r = n(835245),
     L = n(998218),
     R = n(837921),
     P = n(636401),
-    j = n(43203),
-    D = n(613057),
+    D = n(43203),
+    j = n(613057),
     M = n(652215),
     w = n(654487);
 
@@ -49,7 +49,7 @@ function U(e, t) {
 }
 let G = {
     [M.e$_.INVITE_BROWSER]: {
-        scope: D.LQ,
+        scope: j.LQ,
         async handler(e) {
             let {
                 args: {
@@ -57,11 +57,11 @@ let G = {
                     ...n
                 }
             } = e;
-            return await (0, j.$)(t, "Desktop Modal", n)
+            return await (0, D.$)(t, "Desktop Modal", n)
         }
     },
     [M.e$_.GUILD_TEMPLATE_BROWSER]: {
-        scope: D.LQ,
+        scope: j.LQ,
         async handler(e) {
             let {
                 args: {
@@ -90,7 +90,7 @@ let G = {
         }
     },
     [M.e$_.GIFT_CODE_BROWSER]: {
-        scope: D.LQ,
+        scope: j.LQ,
         handler(e) {
             let {
                 args: {
@@ -126,7 +126,7 @@ let G = {
     },
     [M.e$_.DEEP_LINK]: {
         scope: {
-            [D.sm.ANY]: [D.LQ, D.hj]
+            [j.sm.ANY]: [j.LQ, j.hj]
         },
         handler(e) {
             let {
@@ -136,7 +136,7 @@ let G = {
                 }
             } = e;
             switch (R.Ay.focus(), t) {
-                case D.XK.USER_SETTINGS:
+                case j.XK.USER_SETTINGS:
                     if (null != i) {
                         let e = M.BVt.SETTINGS(i.section, i.subsection),
                             n = (0, S.default)({
@@ -145,78 +145,78 @@ let G = {
                             });
                         (0, S.trackParseSettingsUrl)(n, "deeplink"), (0, x.openUserSettings)(n.target, {
                             path: n.path
-                        }), U(i.fingerprint, (0, D.OE)(t))
+                        }), U(i.fingerprint, (0, j.OE)(t))
                     }
                     break;
-                case D.XK.CHANGELOG:
-                    null != i && ((0, N.pX)(L.A.formatPathWithQuery(M.BVt.CHANGELOGS(i.date), i.query)), U(i.fingerprint, (0, D.OE)(t)));
+                case j.XK.CHANGELOG:
+                    null != i && ((0, N.pX)(L.A.formatPathWithQuery(M.BVt.CHANGELOGS(i.date), i.query)), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.LIBRARY:
-                    (0, N.pX)(M.BVt.APPLICATION_LIBRARY), null != i && U(i.fingerprint, (0, D.OE)(t));
+                case j.XK.LIBRARY:
+                    (0, N.pX)(M.BVt.APPLICATION_LIBRARY), null != i && U(i.fingerprint, (0, j.OE)(t));
                     break;
-                case D.XK.STORE_HOME:
-                    (0, N.pX)(M.BVt.APPLICATION_STORE), null != i && U(i.fingerprint, (0, D.OE)(t));
+                case j.XK.STORE_HOME:
+                    (0, N.pX)(M.BVt.APPLICATION_STORE), null != i && U(i.fingerprint, (0, j.OE)(t));
                     break;
-                case D.XK.STORE_LISTING:
-                    null != i && ((0, N.pX)(M.BVt.APPLICATION_STORE_LISTING_SKU(i.skuId, i.slug)), U(i.fingerprint, (0, D.OE)(t)));
+                case j.XK.STORE_LISTING:
+                    null != i && ((0, N.pX)(M.BVt.APPLICATION_STORE_LISTING_SKU(i.skuId, i.slug)), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.PICK_GUILD_SETTINGS:
+                case j.XK.PICK_GUILD_SETTINGS:
                     null != i && ((0, N.pX)(M.BVt.PICK_GUILD_SETTINGS(i.section, i.subsection), {
                         search: i.search
-                    }), U(i.fingerprint, (0, D.OE)(t)));
+                    }), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.CHANNEL:
+                case j.XK.CHANNEL:
                     null != i && ((0, N.pX)(M.BVt.CHANNEL(i.guildId, i.channelId, i.messageId), {
                         search: i.search
-                    }), U(i.fingerprint, (0, D.OE)(t)));
+                    }), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.GAME_SHOP:
-                    null != i && ((0, N.pX)(M.BVt.CHANNELS_GAME_SHOP(i.guildId, i.pageIndex, i.skuId, i.slug)), U(i.fingerprint, (0, D.OE)(t)));
+                case j.XK.GAME_SHOP:
+                    null != i && ((0, N.pX)(M.BVt.CHANNELS_GAME_SHOP(i.guildId, i.pageIndex, i.skuId, i.slug)), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.QUEST_HOME:
+                case j.XK.QUEST_HOME:
                     if (null != i) {
                         let e = new URLSearchParams;
                         null != i.sort && e.set(T.L1.SORT, i.sort), null != i.filter && e.set(T.L1.FILTER, i.filter), null != i.tab && e.set(T.L1.TAB, i.tab), (0, N.pX)(M.BVt.QUEST_HOME, {
                             hash: i.questId,
                             search: `?${e.toString()}`
-                        }), U(i.fingerprint, (0, D.OE)(t))
+                        }), U(i.fingerprint, (0, j.OE)(t))
                     } else(0, N.pX)(M.BVt.QUEST_HOME);
                     break;
-                case D.XK.QUEST_PREVIEW_TOOL:
+                case j.XK.QUEST_PREVIEW_TOOL:
                     if ((0, C.U)({
                             location: w.rE.QUEST_PREVIEW_TOOL_2
                         }) && null != i) {
                         let e = new URLSearchParams;
                         e.set(T.L1.TAB, T.NC.PREVIEW_TOOL), null != i.questId && e.set(T.L1.QUEST_ID, i.questId), (0, N.pX)(M.BVt.QUEST_HOME, {
                             search: `?${e.toString()}`
-                        }), U(i.fingerprint, (0, D.OE)(t))
+                        }), U(i.fingerprint, (0, j.OE)(t))
                     }
                     break;
-                case D.XK.DISCOVERY_GAME_RESULTS:
+                case j.XK.DISCOVERY_GAME_RESULTS:
                     null != i && ((0, N.pX)(M.BVt.GLOBAL_DISCOVERY_SERVERS, {
                         search: `?game=${i.gameId}`
-                    }), U(i.fingerprint, (0, D.OE)(t)));
+                    }), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.OAUTH2:
+                case j.XK.OAUTH2:
                     let l = new URL(M.BVt.OAUTH2_AUTHORIZE, window.location.origin);
                     l.search = i.search;
                     let a = (0, I.getOAuth2AuthorizeProps)(l.toString());
                     if (null != a) return (0, I.openOAuth2ModalWithCreateGuildModal)(a), !0;
                     return !1;
-                case D.XK.ONE_TIME_LOGIN:
+                case j.XK.ONE_TIME_LOGIN:
                     if (null != i) return (0, f.N)({
                         token: i.token
-                    }), U(i.fingerprint, (0, D.OE)(t)), !0;
+                    }), U(i.fingerprint, (0, j.OE)(t)), !0;
                     return !1;
-                case D.XK.SHOP:
+                case j.XK.SHOP:
                     null != i && ((0, N.pX)(M.BVt.COLLECTIBLES_SHOP, {
                         search: i.search
-                    }), U(i.fingerprint, (0, D.OE)(t)));
+                    }), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.FEATURES:
-                    i?.path != null && ((0, N.pX)(i.path), U(i.fingerprint, (0, D.OE)(t)));
+                case j.XK.FEATURES:
+                    i?.path != null && ((0, N.pX)(i.path), U(i.fingerprint, (0, j.OE)(t)));
                     break;
-                case D.XK.ACTIVITIES:
+                case j.XK.ACTIVITIES:
                     if (null != i) {
                         let e = i.attemptId || (0, r.A)();
                         return async function(e, t, n) {
@@ -228,7 +228,7 @@ let G = {
                                     failure_reason: "activity_already_running",
                                     attempt_id: n
                                 });
-                                let r = await g.Ay.fetchApplication(e),
+                                let r = await p.Ay.fetchApplication(e),
                                     l = r?.bot?.id;
                                 if (null == l) return void b.default.track(M.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
                                     application_id: e,
@@ -247,7 +247,7 @@ let G = {
                                 await (0, _.A)({
                                     targetApplicationId: e,
                                     channelId: a,
-                                    analyticsLocations: [p.A.DEEPLINK],
+                                    analyticsLocations: [g.A.DEEPLINK],
                                     customId: d,
                                     referrerId: o
                                 }), b.default.track(M.HAw.ACTIVITY_DEEP_LINK_RECEIVED, {
@@ -264,21 +264,21 @@ let G = {
                                     attempt_id: n
                                 })
                             }
-                        }(i.applicationId, i.url, e), U(i.fingerprint, (0, D.OE)(t)), !0
+                        }(i.applicationId, i.url, e), U(i.fingerprint, (0, j.OE)(t)), !0
                     }
                     return !1;
-                case D.XK.PLAYGROUND:
+                case j.XK.PLAYGROUND:
                     if (null != i) {
                         let {
                             openPlayground: e
                         } = n(965042);
-                        e(i.collection, i.story), U(i.fingerprint, (0, D.OE)(t))
+                        e(i.collection, i.story), U(i.fingerprint, (0, j.OE)(t))
                     }
             }
         }
     },
     [M.e$_.BROWSER_HANDOFF]: {
-        scope: D.kw,
+        scope: j.kw,
         handler(e) {
             let {
                 args: {
@@ -290,7 +290,7 @@ let G = {
         }
     },
     [M.e$_.CONNECTIONS_CALLBACK]: {
-        scope: D.LQ,
+        scope: j.LQ,
         handler: async e => {
             let {
                 args: {
@@ -320,7 +320,7 @@ let G = {
         }
     },
     [M.e$_.BRAINTREE_POPUP_BRIDGE_CALLBACK]: {
-        scope: D.LQ,
+        scope: j.LQ,
         handler(e) {
             let {
                 args: {
@@ -338,7 +338,7 @@ let G = {
         }
     },
     [M.e$_.BILLING_POPUP_BRIDGE_CALLBACK]: {
-        scope: D.LQ,
+        scope: j.LQ,
         handler(e) {
             let {
                 args: {

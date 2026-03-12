@@ -1,12 +1,12 @@
 /** chunk id: 461797 params = (module,exports,require) **/
 n.d(t, {
-    Wt: () => r,
-    jB: () => a
+    Wt: () => a,
+    jB: () => r
 });
 var i = n(508425),
     s = n(559949),
     l = n(985018);
-let a = {
+let r = {
         above_the_clouds: {
             preset: "above_the_clouds",
             themeColors: [752280, 9215590],
@@ -73,4 +73,4 @@ let a = {
             getBannerSrc: e => e ? n(285974).A : n(775627).A
         }
     },
-    r = e => a[e]
+    a = e => r[e]

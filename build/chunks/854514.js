@@ -16,8 +16,8 @@ var i = n(627968),
     h = n(151252),
     _ = n(859703),
     m = n(341915),
-    p = n(579473),
-    g = n(561844),
+    g = n(579473),
+    p = n(561844),
     E = n(590202),
     I = n(415441),
     f = n(73473),
@@ -35,7 +35,7 @@ function b(e) {
         assetVideo: n
     } = e, l = r.useRef(null);
     (0, T.A)(l, S.rE.QUEST_HOME_DESKTOP);
-    let s = r.useMemo(() => (null != n ? (0, p.WV)(n.url) : null) ?? t.url, [n, t]);
+    let s = r.useMemo(() => (null != n ? (0, g.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: y.Tv,
         children: [(0, i.jsx)("div", {
@@ -77,7 +77,7 @@ function b(e) {
                     className: y.LY,
                     asset: {
                         url: s,
-                        mimetype: (0, p.vm)(s),
+                        mimetype: (0, g.vm)(s),
                         isAnimated: !1
                     },
                     assetId: s
@@ -87,7 +87,7 @@ function b(e) {
                     className: y.LY,
                     asset: {
                         url: n.url,
-                        mimetype: (0, p.vm)(n.url),
+                        mimetype: (0, g.vm)(n.url),
                         isAnimated: !0
                     },
                     assetId: n.url
@@ -101,7 +101,7 @@ function O(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, s.zy)(), p = (0, s.W6)(), {
+    } = e, l = (0, s.zy)(), g = (0, s.W6)(), {
         enabled: I
     } = (0, h.Z)({
         location: S.rE.QUEST_HOME_DESKTOP
@@ -110,11 +110,11 @@ function O(e) {
     }, []), R = (0, u.w)(L, [], {
         fireOnMount: !0
     }), P = (0, d.bG)([_.A], () => _.A.quests), {
-        dismissQuestHomeHeroContent: j
+        dismissQuestHomeHeroContent: D
     } = (0, N.I)();
     return r.useEffect(() => {
-        j(x.i.INDIRECT_ACTION)
-    }, [j]), (0, i.jsx)(f.R, {
+        D(x.i.INDIRECT_ACTION)
+    }, [D]), (0, i.jsx)(f.R, {
         adContentId: t.campaignId,
         adCreativeType: o.p.QUEST_HOME_HERO,
         questContent: m.uF.QUEST_HOME_HERO,
@@ -165,7 +165,7 @@ function O(e) {
                         }), (0, i.jsxs)(c.ButtonGroup, {
                             children: [(0, i.jsx)(c.Button, {
                                 onClick: () => {
-                                    (0, A.A)(t.ctaSponsorUrl.url), (0, g.vK)({
+                                    (0, A.A)(t.ctaSponsorUrl.url), (0, p.vK)({
                                         adContentId: t.campaignId,
                                         adCreativeType: o.p.QUEST_HOME_HERO,
                                         questContent: m.uF.QUEST_HOME_HERO,
@@ -178,14 +178,14 @@ function O(e) {
                                 variant: "overlay-primary"
                             }), t.ctaQuests.map((e, r) => P.has(e.questId) ? (0, i.jsx)(c.Button, {
                                 onClick: () => {
-                                    p.replace({
+                                    g.replace({
                                         ...l,
                                         hash: void 0
                                     }), n?.(), window.requestIdleCallback(() => {
                                         (0, C.navigateToQuestHome)({
                                             questId: e.questId
                                         })
-                                    }), (0, g.vK)({
+                                    }), (0, p.vK)({
                                         adContentId: t.campaignId,
                                         adCreativeType: o.p.QUEST_HOME_HERO,
                                         questContent: m.uF.QUEST_HOME_HERO,

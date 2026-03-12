@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(975571),
-    a = n(942405),
-    r = n(652215),
+    r = n(942405),
+    a = n(652215),
     o = n(985018);
 
 function d() {
-    (0, a.sL)("overlay-settings")
+    (0, r.sL)("overlay-settings")
 }
 
 function c(e) {
@@ -18,7 +18,7 @@ function c(e) {
         className: t,
         game: n
     } = e;
-    return (0, a.NP)() && null != n && n.elevated ? (0, i.jsx)("div", {
+    return (0, r.NP)() && null != n && n.elevated ? (0, i.jsx)("div", {
         className: t,
         children: (0, i.jsx)(s.po8, {
             messageType: s.YCn.WARNING,
@@ -29,7 +29,7 @@ function c(e) {
                 onClick: d
             }),
             children: o.intl.format(o.t["LJzl+0"], {
-                helpCenterLink: l.A.getArticleURL(r.MVz.SYSTEM_SERVICE)
+                helpCenterLink: l.A.getArticleURL(a.MVz.SYSTEM_SERVICE)
             })
         })
     }) : null

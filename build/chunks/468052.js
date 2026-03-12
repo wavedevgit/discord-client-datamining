@@ -1,17 +1,17 @@
 /** chunk id: 468052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(582754),
     l = n(736653),
-    a = n(953727);
-let r = e => {
+    r = n(953727);
+let a = e => {
     let {
         ellipseOpacity: t,
         circleColor: n,
-        ...r
+        ...a
     } = e, o = (0, l.Ay)(), d = (0, s.qB)(o), c = null != n ? n : d ? "url(#paint0_linear_1055_83268)" : "url(#paint0_linear_1282_11557)";
     return (0, i.jsxs)("svg", {
         style: {
@@ -22,8 +22,8 @@ let r = e => {
         viewBox: "0 0 100 100",
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
-        ...(0, a.A)({
-            ...r
+        ...(0, r.A)({
+            ...a
         }),
         children: [(0, i.jsxs)("svg", {
             width: "100",

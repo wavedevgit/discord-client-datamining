@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(42439),
-    a = n(424994),
-    r = n(985018);
+    r = n(424994),
+    a = n(985018);
 let o = (0, i.zZ)(s.X.REGISTERED_GAMES_ADDED_GAMES_CATEGORY, {
     buildLayout: () => [l.K],
-    useTitle: () => r.intl.string(r.t.jCOdvx),
-    useSubtitle: () => r.intl.format(r.t.KPA3m9, {
-        igdbLink: a.s8
+    useTitle: () => a.intl.string(a.t.jCOdvx),
+    useSubtitle: () => a.intl.format(a.t.KPA3m9, {
+        igdbLink: r.s8
     })
 })

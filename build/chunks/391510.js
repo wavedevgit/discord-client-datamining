@@ -15,13 +15,13 @@ var i = n(735438),
     h = n(927813),
     _ = n(636401),
     m = n(629471),
-    p = n(613057),
-    g = n(652215);
+    g = n(613057),
+    p = n(652215);
 let E = ["1402418171662569542"],
     I = {
-        [g.e$_.SET_ACTIVITY]: {
+        [p.e$_.SET_ACTIVITY]: {
             scope: {
-                [p.sm.ANY]: [l.F.RPC, l.F.RPC_ACTIVITIES_WRITE, p.hj]
+                [g.sm.ANY]: [l.F.RPC, l.F.RPC_ACTIVITIES_WRITE, g.hj]
             },
             validation: e => (0, m.A)(e).required().keys({
                 pid: e.number().min(0),
@@ -47,7 +47,7 @@ let E = ["1402418171662569542"],
                     party: (0, m.A)(e).keys({
                         id: e.string().min(2).max(128),
                         size: e.array().items(e.number().min(0)).length(2),
-                        privacy: e.number().default(g.KIY.PRIVATE).valid([g.KIY.PRIVATE, g.KIY.PUBLIC])
+                        privacy: e.number().default(p.KIY.PRIVATE).valid([p.KIY.PRIVATE, p.KIY.PUBLIC])
                     }),
                     secrets: (0, m.A)(e).keys({
                         match: e.string().min(2).max(128),
@@ -60,7 +60,7 @@ let E = ["1402418171662569542"],
                     })).min(1).max(2),
                     instance: e.boolean(),
                     supported_platforms: e.array().items(e.string().min(1).max(32)).min(1).max(10),
-                    type: e.number().default(g.$pd.PLAYING).valid(g.$pd.PLAYING, g.$pd.LISTENING, g.$pd.WATCHING, g.$pd.COMPETING),
+                    type: e.number().default(p.$pd.PLAYING).valid(p.$pd.PLAYING, p.$pd.LISTENING, p.$pd.WATCHING, p.$pd.COMPETING),
                     status_display_type: e.number().optional().valid(a.A.NAME, a.A.STATE, a.A.DETAILS)
                 }).allow(null)
             }),
@@ -73,11 +73,11 @@ let E = ["1402418171662569542"],
                     },
                     isSocketConnected: a
                 } = e;
-                if (![p.z4.IPC, p.z4.WEBSOCKET, p.z4.POST_MESSAGE].includes(n.transport)) throw new _.A({
-                    errorCode: g.Lw6.INVALID_COMMAND
+                if (![g.z4.IPC, g.z4.WEBSOCKET, g.z4.POST_MESSAGE].includes(n.transport)) throw new _.A({
+                    errorCode: p.Lw6.INVALID_COMMAND
                 }, `command not available from "${n.transport}" transport`);
-                if (null == i && p.z4.IPC === n.transport) throw new _.A({
-                    errorCode: g.Lw6.INVALID_COMMAND
+                if (null == i && g.z4.IPC === n.transport) throw new _.A({
+                    errorCode: p.Lw6.INVALID_COMMAND
                 }, "nonzero pid required");
                 if (null == l) return s.h.dispatch({
                     type: "LOCAL_ACTIVITY_UPDATE",
@@ -89,8 +89,8 @@ let E = ["1402418171662569542"],
                 l.name || (l.name = n.application.name);
                 let I = n.application.id;
                 l.application_id = I;
-                let f = n.transport === p.z4.POST_MESSAGE;
-                l.platform = f ? g.yTV.EMBEDDED : g.yTV.DESKTOP;
+                let f = n.transport === g.z4.POST_MESSAGE;
+                l.platform = f ? p.yTV.EMBEDDED : p.yTV.DESKTOP;
                 let C = d.A.getApplication(I ?? void 0),
                     T = l.instance ?? !1,
                     N = l.party?.privacy;
@@ -105,16 +105,16 @@ let E = ["1402418171662569542"],
                     buttons: O,
                     type: L
                 } = l;
-                if (null == L && (l.type = g.$pd.PLAYING), null != y) {
+                if (null == L && (l.type = p.$pd.PLAYING), null != y) {
                     let e = r().values(y).filter(e => !!e);
                     if (null != v && r().intersection(e, [v.id]).length > 0 && !E.includes(n.application.id)) throw new _.A({
-                        errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
+                        errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot match the party id");
                     if (r().uniq(e).length < e.length) throw new _.A({
-                        errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
+                        errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets must be unique");
                     if (null != O) throw new _.A({
-                        errorCode: g.Lw6.INVALID_ACTIVITY_SECRET
+                        errorCode: p.Lw6.INVALID_ACTIVITY_SECRET
                     }, "secrets cannot currently be sent with buttons")
                 }
                 if (null != O && (m.button_urls = O.map(e => e.url), l.buttons = O.map(e => e.label)), l.metadata = m, null != b)
@@ -146,7 +146,7 @@ let E = ["1402418171662569542"],
                         state: l.state ?? "",
                         has_urls: null != l.state_url || null != l.details_url || l.assets?.large_url != null || l.assets?.small_url != null
                     };
-                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(g.HAw.ACTIVITY_UPDATED, A), l
+                    return null != d && (A.has_match_secret = !!d.match, A.has_join_secret = !!d.join), null != x && (A.has_images = !!(x.large_image || x.small_image || x.invite_cover_image)), null != c && (A.party_max = null != c.size && c.size[1] > 0 ? c.size[1] : void 0, A.party_id = c.id), u.default.track(p.HAw.ACTIVITY_UPDATED, A), l
                 })
             }
         }

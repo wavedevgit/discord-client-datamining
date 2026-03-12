@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(736653),
     _ = n(291661),
     m = n(607470),
-    p = n(287809),
-    g = n(954571),
+    g = n(287809),
+    p = n(954571),
     E = n(341915),
     I = n(890687),
     f = n(579473),
@@ -30,7 +30,7 @@ var i = n(627968),
 let b = (0, r.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, l] = (0, r.useState)(!1), [b, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), j = (0, r.useRef)(null), D = (0, r.useRef)(null), M = (0, d.bG)([p.default], () => p.default.getCurrentUser()), {
+    } = e, [n, l] = (0, r.useState)(!1), [b, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), D = (0, r.useRef)(null), j = (0, r.useRef)(null), M = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
@@ -41,14 +41,14 @@ let b = (0, r.memo)(function(e) {
         let {
             height: t
         } = e;
-        if (!F || null == t || null == j.current || null == P.current || null == D.current) return;
+        if (!F || null == t || null == D.current || null == P.current || null == j.current) return;
         let n = P.current.getBoundingClientRect(),
-            i = j.current.getBoundingClientRect(),
-            r = D.current.getBoundingClientRect();
+            i = D.current.getBoundingClientRect(),
+            r = j.current.getBoundingClientRect();
         O((i.top - n.top - r.height) / 2)
     });
-    let K = (0, c.Mw)(G),
-        z = (0, r.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
+    let z = (0, c.Mw)(G),
+        K = (0, r.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
         $ = (0, r.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         Q = n ? U + 8 : 0,
         {
@@ -57,7 +57,7 @@ let b = (0, r.memo)(function(e) {
             ...J
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         ee = () => {
-            l(!0), g.default.track(x.HAw.QUEST_HOVER, {
+            l(!0), p.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...J
             })
@@ -66,7 +66,7 @@ let b = (0, r.memo)(function(e) {
             l(!1)
         },
         en = e => {
-            R(!0), g.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
+            R(!0), p.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
                 source: e,
                 asset_id: e,
                 quest_id: t.id
@@ -84,7 +84,7 @@ let b = (0, r.memo)(function(e) {
                 [y.yo]: n
             }),
             children: [null != M && F && null != q && (0, i.jsx)("div", {
-                ref: D,
+                ref: j,
                 className: y.FX,
                 style: {
                     top: b
@@ -116,18 +116,18 @@ let b = (0, r.memo)(function(e) {
                 onError: () => en($.url)
             }), (0, i.jsx)("div", {
                 className: a()(y.Lw, {
-                    [y.en]: K,
-                    [y.So]: !K
+                    [y.en]: z,
+                    [y.So]: !z
                 })
             }), (0, i.jsx)("div", {
-                ref: j,
+                ref: D,
                 className: y.r$,
                 style: {
                     transform: `translateY(-${Q}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
                     logotypeClassName: a()(y.wm, {
-                        [y.A0]: z
+                        [y.A0]: K
                     }),
                     quest: t,
                     withGameTile: !1
@@ -144,9 +144,9 @@ let b = (0, r.memo)(function(e) {
                     })
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
-                    color: K ? "text-muted" : "always-white",
+                    color: z ? "text-muted" : "always-white",
                     style: {
-                        opacity: K ? 1 : .75
+                        opacity: z ? 1 : .75
                     },
                     children: v.intl.format(v.t["kXVcV+"], {
                         reward: B.name,

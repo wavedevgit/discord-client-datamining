@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(419954),
     s = n(253932),
     l = n(780964),
-    a = n(358776),
-    r = n(985018);
+    r = n(358776),
+    a = n(985018);
 let o = (0, i.zD)(l.X.CHAT_INLINE_MEDIA_UPLOADS, {
-    useTitle: () => r.intl.string(r.t.VP11No),
-    useSubtitle: () => (0, a.bp)("Uploads") ? null : r.intl.formatToPlainString(r.t.qjjvqO, {
+    useTitle: () => a.intl.string(a.t.VP11No),
+    useSubtitle: () => (0, r.bp)("Uploads") ? null : a.intl.formatToPlainString(a.t.qjjvqO, {
         maxSize: 10
     }),
     useValue: s.X6.useSetting,

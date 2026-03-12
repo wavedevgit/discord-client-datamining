@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(871930),
     l = n(578746),
-    a = n(975571),
-    r = n(171316),
+    r = n(975571),
+    a = n(171316),
     o = n(652215),
     d = n(870236),
     c = n(985018);
@@ -15,12 +15,12 @@ function u() {
     let {
         hasConsented: e,
         updateConsent: t
-    } = (0, r.lH)(o.YAq.USAGE_STATISTICS);
+    } = (0, a.lH)(o.YAq.USAGE_STATISTICS);
     return (0, i.jsx)(s.h, {
         children: (0, i.jsx)(l.Ay, {
             title: c.intl.string(d.default.HjstRR),
             note: c.intl.format(d.default.Z5yJZy, {
-                helpdeskArticle: a.A.getArticleURL(o.MVz.DATA_PRIVACY_CONTROLS)
+                helpdeskArticle: r.A.getArticleURL(o.MVz.DATA_PRIVACY_CONTROLS)
             }),
             value: e,
             onChange: t

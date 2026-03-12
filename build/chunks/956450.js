@@ -1,49 +1,49 @@
 /** chunk id: 956450 params = (module,exports,require) **/
-A.d(_, {
-    default: () => P
+E.d(A, {
+    default: () => R
 });
-var I = A(627968);
-A(64700);
-var T = A(397927),
-    O = A(780964),
-    S = A(840065),
-    C = A(257110),
-    e = A(706069),
-    R = A(652215),
-    N = A(531525),
-    t = A(265626);
-let P = E => {
+var e = E(627968);
+E(64700);
+var I = E(397927),
+    T = E(780964),
+    C = E(840065),
+    t = E(257110),
+    S = E(706069),
+    i = E(652215),
+    n = E(531525),
+    N = E(265626);
+let R = _ => {
     let {
-        transitionState: _,
-        onClose: A,
-        classificationId: P,
-        source: i
-    } = E, n = (0, C.A)(), D = () => {
-        A(), (0, S.openUserSettings)(O.X.ACCOUNT_PANEL, {
-            section: R.nc_.ACCOUNT,
-            subsection: N.H.PRIVACY_AND_SAFETY_STANDING
+        transitionState: A,
+        onClose: E,
+        classificationId: R,
+        source: a
+    } = _, l = (0, t.A)(), O = () => {
+        E(), (0, C.openUserSettings)(T.X.ACCOUNT_PANEL, {
+            section: i.nc_.ACCOUNT,
+            subsection: n.H.PRIVACY_AND_SAFETY_STANDING
         })
     };
-    return (0, I.jsxs)(T.EOs, {
-        className: t.CR,
-        transitionState: _,
+    return (0, e.jsxs)(I.EOs, {
+        className: N.CR,
+        transitionState: A,
         parentComponent: "ClassificationDetailModal",
         "data-migration-pending": !0,
-        children: [(0, I.jsx)("div", {
-            className: t.Hc,
-            children: (0, I.jsx)(T.s_y, {
+        children: [(0, e.jsx)("div", {
+            className: N.Hc,
+            children: (0, e.jsx)(I.s_y, {
                 "data-migration-pending": !0,
-                className: t.g8,
-                onClick: A
+                className: N.g8,
+                onClick: E
             })
-        }), (0, I.jsx)(T.$mQ, {
+        }), (0, e.jsx)(I.$mQ, {
             "data-migration-pending": !0,
-            className: t.jE,
-            children: n ? (0, I.jsx)(T.y$y, {}) : (0, I.jsx)(e.A, {
-                classificationId: P,
-                source: i,
-                onError: D,
-                onClose: D
+            className: N.jE,
+            children: l ? (0, e.jsx)(I.y$y, {}) : (0, e.jsx)(S.A, {
+                classificationId: R,
+                source: a,
+                onError: O,
+                onClose: O
             })
         })]
     })

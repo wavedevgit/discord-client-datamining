@@ -5,38 +5,38 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(498642),
+    r = n(397927),
+    a = n(498642),
     o = n(954571),
     d = n(743790),
     c = n(10077),
     u = n(652215),
     _ = n(730844),
-    g = n(985018),
-    m = n(127050);
+    m = n(985018),
+    g = n(127050);
 
 function A(e) {
     let {
         guild: t,
         isActivityRestricted: n,
         onToggleActivityRestrictedGuild: s
-    } = e, o = (0, l.bG)([r.A], () => r.A.getMemberCount(t.id));
-    return (0, i.jsxs)(a.BJc, {
+    } = e, o = (0, l.bG)([a.A], () => a.A.getMemberCount(t.id));
+    return (0, i.jsxs)(r.BJc, {
         as: "li",
         direction: "horizontal",
         align: "center",
         gap: 20,
         children: [(0, i.jsx)("div", {
-            className: m.FO,
+            className: g.FO,
             children: (0, i.jsx)(d.$, {
                 guild: t,
                 size: 48
             })
         }), (0, i.jsx)("div", {
-            className: m.QH,
-            children: (0, i.jsx)(a.dOG, {
+            className: g.QH,
+            children: (0, i.jsx)(r.dOG, {
                 label: t.name,
-                description: g.intl.format(g.t.zRl6XR, {
+                description: m.intl.format(m.t.zRl6XR, {
                     count: o ?? 0
                 }),
                 checked: !n,
@@ -54,106 +54,106 @@ let h = function() {
         searchQuery: t,
         setSearchQuery: n,
         sortOrder: l,
-        setSortOrder: r,
+        setSortOrder: a,
         hasActivityRestrictedGuilds: d,
         onToggleAllActivityRestrictedGuilds: h,
-        onToggleActivityRestrictedGuild: p,
-        isActivityRestricted: x,
-        numActivityRestrictedGuilds: E,
-        numTotalGuilds: T
-    } = (0, c.M)(), S = (0, s.useId)();
+        onToggleActivityRestrictedGuild: x,
+        isActivityRestricted: p,
+        numActivityRestrictedGuilds: T,
+        numTotalGuilds: E
+    } = (0, c.M)(), C = (0, s.useId)();
     return (0, i.jsxs)("div", {
-        className: m.iE,
+        className: g.iE,
         children: [(0, i.jsxs)("div", {
-            className: m.N1,
-            children: [(0, i.jsx)(a.IWV, {
+            className: g.N1,
+            children: [(0, i.jsx)(r.IWV, {
                 query: t,
                 onChange: n,
                 onClear: () => {
                     o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                         interaction: "search_cleared",
                         sort_order: l,
-                        activity_restricted_guild_count: E,
-                        total_guild_count: T
+                        activity_restricted_guild_count: T,
+                        total_guild_count: E
                     }), n("")
                 },
                 onFocus: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_focused",
                     sort_order: l,
-                    activity_restricted_guild_count: E,
-                    total_guild_count: T
+                    activity_restricted_guild_count: T,
+                    total_guild_count: E
                 }),
                 onBlur: () => o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                     interaction: "search_blurred",
                     sort_order: l,
-                    activity_restricted_guild_count: E,
-                    total_guild_count: T
+                    activity_restricted_guild_count: T,
+                    total_guild_count: E
                 }),
-                placeholder: g.intl.string(g.t["H+nRYw"]),
-                "aria-label": g.intl.string(g.t["5h0QOP"]),
+                placeholder: m.intl.string(m.t["H+nRYw"]),
+                "aria-label": m.intl.string(m.t["5h0QOP"]),
                 inputProps: {
-                    "aria-controls": S,
+                    "aria-controls": C,
                     "aria-expanded": !0
                 }
             }), e.length > 0 && (0, i.jsxs)("div", {
-                className: m.gO,
-                children: [(0, i.jsx)(a.l6P, {
-                    label: g.intl.string(g.t.LxVjvJ),
+                className: g.gO,
+                children: [(0, i.jsx)(r.l6P, {
+                    label: m.intl.string(m.t.LxVjvJ),
                     hideLabel: !0,
                     options: [{
                         id: c.c.SERVER_ORDER,
-                        label: g.intl.string(g.t.STMPJ2),
+                        label: m.intl.string(m.t.STMPJ2),
                         value: c.c.SERVER_ORDER
                     }, {
                         id: c.c.RECENTLY_JOINED,
-                        label: g.intl.string(g.t.CbaapP),
+                        label: m.intl.string(m.t.CbaapP),
                         value: c.c.RECENTLY_JOINED
                     }, {
                         id: c.c.ACTIVITY_SHARING_ON,
-                        label: g.intl.string(_.default.ZI51JZ),
+                        label: m.intl.string(_.default.ZI51JZ),
                         value: c.c.ACTIVITY_SHARING_ON
                     }, {
                         id: c.c.ACTIVITY_SHARING_OFF,
-                        label: g.intl.string(_.default["+kxafn"]),
+                        label: m.intl.string(_.default["+kxafn"]),
                         value: c.c.ACTIVITY_SHARING_OFF
                     }],
                     onSelectionChange: e => {
                         o.default.track(u.HAw.ACTIVITY_SHARING_SETTINGS_INTERACTED, {
                             interaction: "sort_order_changed",
                             sort_order: e,
-                            activity_restricted_guild_count: E,
-                            total_guild_count: T
-                        }), r(e)
+                            activity_restricted_guild_count: T,
+                            total_guild_count: E
+                        }), a(e)
                     },
                     value: l,
                     selectionMode: "single"
-                }), (0, i.jsx)(a.QWc, {
+                }), (0, i.jsx)(r.QWc, {
                     variant: "primary",
                     onClick: h,
-                    text: d ? g.intl.string(g.t["7lxcLO"]) : g.intl.string(g.t.zh6UEs)
+                    text: d ? m.intl.string(m.t["7lxcLO"]) : m.intl.string(m.t.zh6UEs)
                 })]
             })]
-        }), (0, i.jsx)(a.AC4, {
+        }), (0, i.jsx)(r.AC4, {
             "aria-live": "polite",
             role: "region",
-            children: g.intl.format(_.default.EvzDff, {
+            children: m.intl.format(_.default.EvzDff, {
                 count: e.length
             })
         }), (0, i.jsxs)("ul", {
-            className: m.X1,
-            id: S,
-            "aria-label": g.intl.string(g.t["7hB4kg"]),
+            className: g.X1,
+            id: C,
+            "aria-label": m.intl.string(m.t["7hB4kg"]),
             children: [0 === e.length && (0, i.jsx)("div", {
-                className: m.pb,
-                children: (0, i.jsx)(a.Text, {
-                    className: m.R$,
+                className: g.pb,
+                children: (0, i.jsx)(r.Text, {
+                    className: g.R$,
                     variant: "text-lg/medium",
-                    children: g.intl.string(g.t["Xe+fJM"])
+                    children: m.intl.string(m.t["Xe+fJM"])
                 })
             }), e.map(e => (0, i.jsx)(A, {
                 guild: e,
-                isActivityRestricted: x(e.id),
-                onToggleActivityRestrictedGuild: p
+                isActivityRestricted: p(e.id),
+                onToggleActivityRestrictedGuild: x
             }, e.id))]
         })]
     })

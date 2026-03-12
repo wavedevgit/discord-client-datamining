@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(827734),
-    a = n(397927),
-    r = n(985018),
+    r = n(397927),
+    a = n(985018),
     o = n(683604);
 
 function d(e) {
@@ -14,46 +14,46 @@ function d(e) {
         children: t,
         lineClamp: n = 2,
         ...d
-    } = e, [c, u] = s.useState(!1), [_, g] = s.useState(null), m = null != _ && (0, i.jsx)("button", {
+    } = e, [c, u] = s.useState(!1), [_, m] = s.useState(null), g = null != _ && (0, i.jsx)("button", {
         className: o.x6,
         onClick: () => u(e => !e),
-        children: (0, i.jsxs)(a.Text, {
+        children: (0, i.jsxs)(r.Text, {
             className: o.B0,
             variant: "text-sm/medium",
             color: "text-brand",
-            children: [c ? r.intl.string(r.t["JQX/Pb"]) : r.intl.string(r.t.Fbrd8J), c ? (0, i.jsx)(a.tN5, {
+            children: [c ? a.intl.string(a.t["JQX/Pb"]) : a.intl.string(a.t.Fbrd8J), c ? (0, i.jsx)(r.tN5, {
                 color: l.A.colors.TEXT_BRAND,
                 size: "xs"
-            }) : (0, i.jsx)(a.abt, {
+            }) : (0, i.jsx)(r.abt, {
                 color: l.A.colors.TEXT_BRAND,
                 size: "xs"
             })]
         })
-    }), [A, h] = s.useState(null), p = s.useCallback(() => {
+    }), [A, h] = s.useState(null), x = s.useCallback(() => {
         if (null == A) return;
         let {
             scrollHeight: e,
             clientHeight: t
         } = A;
-        e > t && g({
+        e > t && m({
             truncatedHeight: t,
             expandedHeight: e
         })
     }, [A]);
     s.useEffect(() => {
-        requestAnimationFrame(p)
-    }, [p, t, n]);
-    let x = "auto";
-    return null != _ && (x = c ? `${_.expandedHeight}px` : `${_.truncatedHeight}px`), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(a.Text, {
+        requestAnimationFrame(x)
+    }, [x, t, n]);
+    let p = "auto";
+    return null != _ && (p = c ? `${_.expandedHeight}px` : `${_.truncatedHeight}px`), (0, i.jsxs)("div", {
+        children: [(0, i.jsx)(r.Text, {
             ...d,
             className: o.Qs,
             lineClamp: c ? void 0 : n,
             ref: h,
             style: {
-                height: x
+                height: p
             },
             children: t
-        }), m]
+        }), g]
     })
 }

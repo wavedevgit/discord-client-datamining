@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(975807),
-    a = n(95035),
-    r = n(975571),
+    r = n(95035),
+    a = n(975571),
     o = n(975662),
     d = n(88001),
     c = n(652215),
     u = n(518582),
     _ = n(985018),
-    g = n(817577);
-let m = () => {
-        (0, l.A)(r.A.getArticleURL(c.MVz.PREMIUM_GROUP_ABOUT))
+    m = n(817577);
+let g = () => {
+        (0, l.A)(a.A.getArticleURL(c.MVz.PREMIUM_GROUP_ABOUT))
     },
     A = () => ({
         name: o.U.PREMIUM_GROUP,
@@ -23,13 +23,13 @@ let m = () => {
             totalSeats: d.aw,
             premiumGroupProductName: (0, d.DP)()
         }),
-        description: (0, i.jsx)(a.A, {
-            onClick: m,
+        description: (0, i.jsx)(r.A, {
+            onClick: g,
             children: _.intl.string(u.default.yYyGJH)
         }),
         descriptionCta: _.intl.string(_.t.jVcuVY),
         pillText: _.intl.string(_.t.oW0eUd).toLocaleUpperCase(),
-        perkImage: g,
+        perkImage: m,
         onCtaClick: () => {
             (0, s.mMO)(async () => {
                 let {

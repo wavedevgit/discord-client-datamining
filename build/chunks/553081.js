@@ -1,27 +1,27 @@
 /** chunk id: 553081 params = (module,exports,require) **/
 n.d(t, {
-    A: () => B
+    A: () => H
 }), n(321073), n(323874), n(14289), n(35956);
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(873263),
+    r = n.n(l),
+    a = n(873263),
     o = n(311907),
     d = n(230109),
     c = n(397927),
     u = n(73153),
     _ = n(793574),
-    g = n(688810),
-    m = n(726649),
+    m = n(688810),
+    g = n(726649),
     A = n(611924),
     h = n(961250),
-    p = n(320118),
-    x = n(622543),
-    E = n(576622),
-    T = n(166403),
-    S = n(954571),
-    C = n(131168),
+    x = n(320118),
+    p = n(622543),
+    T = n(576622),
+    E = n(166403),
+    C = n(954571),
+    S = n(131168),
     f = n(482589),
     N = n(511484),
     b = n(322631),
@@ -29,40 +29,40 @@ var i = n(627968),
     v = n(568031),
     j = n(518491),
     O = n(965591),
-    R = n(495022),
-    y = n(157839),
+    y = n(495022),
+    R = n(157839),
     P = n(382694),
     D = n(60508),
     L = n(821158),
-    G = n(235365),
-    M = n(994763),
+    M = n(235365),
+    G = n(994763),
     U = n(788868),
     k = n(652215),
     V = n(985018),
     w = n(865047),
-    H = n(288894);
-let B = e => {
+    B = n(288894);
+let H = e => {
     let {
         userId: t
     } = e, n = I.m.useConfig({
         location: "PremiumSubscriberHome"
-    }).enabled, l = (0, r.zy)();
+    }).enabled, l = (0, a.zy)();
     s.useEffect(() => {
         u.h.wait(async () => {
             let e = [(0, h.Ay)()];
-            null != t && e.push((0, E.A)(t)), await Promise.all(e)
+            null != t && e.push((0, T.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
         $(!0)
-    }, []), (0, f.j)(), (0, A.P)(m.b);
-    let B = s.useRef(null),
+    }, []), (0, f.j)(), (0, A.P)(g.b);
+    let H = s.useRef(null),
         F = s.useRef(null),
-        Y = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
+        Y = (0, o.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
         {
             isReady: z,
             programReward: X,
             isEligible: W
-        } = (0, p.F)({
+        } = (0, x.F)({
             location: "PremiumSubscriberHome"
         }),
         {
@@ -84,21 +84,21 @@ let B = e => {
                 scrollBlock: "start"
             } : {}
         }, [l.search]);
-    (0, M.z)(K ?? "", null != K, q, J);
-    let [Q, $] = s.useState(!1), ee = (0, C.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, N.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
+    (0, G.z)(K ?? "", null != K, q, J);
+    let [Q, $] = s.useState(!1), ee = (0, S.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), er = null != ee && null != Y && Y.status === k.Dmq.CANCELED, ea = (0, N.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && er, {
         analyticsLocations: ed
-    } = (0, g.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
-    return null != (0, o.bG)([x.A], () => null != t ? x.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
+    } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
+    return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(c.GtU, {
-            className: a()(w.xW, {
+            className: r()(w.xW, {
                 [w.J4]: n
             }),
-            ref: B,
+            ref: H,
             children: [(0, i.jsx)(c.hLv, {
                 color: "nitro-pink",
-                className: a()(w.kL, w.Gd),
+                className: r()(w.kL, w.Gd),
                 offsetBottom: .8 * !!n,
-                children: (0, i.jsxs)(g.f5, {
+                children: (0, i.jsxs)(m.f5, {
                     value: ed,
                     children: [(0, i.jsx)(d.L, {
                         innerRef: et,
@@ -110,20 +110,20 @@ let B = e => {
                             className: w.v1,
                             enablePremiumBrandRefresh: !0,
                             userDiscountOffer: ee,
-                            discountedPrice: er
+                            discountedPrice: ea
                         })
                     }), n && (0, i.jsx)(P.A, {
                         glowingPerkId: Z
-                    }), !n && (0, i.jsx)(y.A, {
+                    }), !n && (0, i.jsx)(R.A, {
                         variant: b.cJ.WHATS_NEW,
                         className: w.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
-                    }), null != X && W && (0, i.jsx)(G.A, {
+                    }), null != X && W && (0, i.jsx)(M.A, {
                         location: _.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION
-                    }), n && (0, i.jsx)(R.A, {
+                    }), n && (0, i.jsx)(y.A, {
                         glowingPerkId: Z
-                    }), !n && (0, i.jsx)(y.A, {
+                    }), !n && (0, i.jsx)(R.A, {
                         className: w.xU,
                         variant: b.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
@@ -144,7 +144,7 @@ let B = e => {
                     }), (0, i.jsx)(d.L, {
                         innerRef: F,
                         onChange: e => {
-                            e && !ec && (S.default.track(k.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                            e && !ec && (C.default.track(k.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                                 location_stack: ed
                             }), eu(!0))
                         },
@@ -153,18 +153,18 @@ let B = e => {
                             className: w._Z
                         })
                     }), (0, i.jsx)("img", {
-                        src: H,
+                        src: B,
                         className: w.Kw,
                         width: 112,
                         height: 85,
                         alt: V.intl.string(V.t.X4IxWL)
                     })]
                 })
-            }), ea && null != er && (0, i.jsx)(O.A, {
+            }), er && null != ea && (0, i.jsx)(O.A, {
                 isVisible: eo && Q,
                 premiumSubscription: Y,
                 churnDiscountOffer: ee,
-                discountedPrice: er
+                discountedPrice: ea
             })]
         }), !n && (0, i.jsx)(D.A, {
             isAllPerksVisible: en,
@@ -173,7 +173,7 @@ let B = e => {
             enablePremiumBrandRefresh: !0
         })]
     }) : (0, i.jsx)("div", {
-        className: a()(w.kL, w.Lq),
+        className: r()(w.kL, w.Lq),
         children: (0, i.jsx)(c.y$y, {})
     })
 }

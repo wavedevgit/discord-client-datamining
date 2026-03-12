@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(707592),
     _ = n(698441),
     m = n(935159),
-    p = n(695400),
-    g = n(435328),
+    g = n(695400),
+    p = n(435328),
     E = n(539446),
     I = n(508654),
     f = n(9448),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(287809),
     R = n(182028),
     P = n(652215),
-    j = n(988794),
-    D = n(985018),
+    D = n(988794),
+    j = n(985018),
     M = n(105466);
 
 function w(e) {
@@ -43,11 +43,11 @@ function w(e) {
     } = e, l = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(l?.id), [l]), {
         isStageNoticeHidden: w,
         isEventNoticeHidden: G
-    } = (0, s.cf)([p.A], () => ({
-        isStageNoticeHidden: p.A.isLiveChannelNoticeHidden({
+    } = (0, s.cf)([g.A], () => ({
+        isStageNoticeHidden: g.A.isLiveChannelNoticeHidden({
             stageId: b?.id
         }),
-        isEventNoticeHidden: p.A.isLiveChannelNoticeHidden({
+        isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
     }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
@@ -56,8 +56,8 @@ function w(e) {
     }, [Y]);
     let {
         noticeType: q,
-        title: K,
-        location: z,
+        title: z,
+        location: K,
         locationIcon: $,
         canListenIn: Q,
         buttonText: X,
@@ -76,29 +76,29 @@ function w(e) {
             listenerCount: c,
             isEventNoticeHidden: u,
             isStageNoticeHidden: h,
-            isStudyRoomNotice: p
+            isStudyRoomNotice: g
         } = e, E = null != n && null != r && !h, I = null != t ? (0, C.G3)(t) : null;
-        if (p && null != r) {
+        if (g && null != r) {
             let e = (0, A.gU)(r);
             return {
                 noticeType: 3,
                 title: `📚☕ ${r.name}`,
-                location: D.intl.string(D.t.LZA6Na),
+                location: j.intl.string(j.t.LZA6Na),
                 locationIcon: null != e ? (0, i.jsx)(e, {
                     size: "xs",
                     color: "currentColor",
                     className: M.NR
                 }) : null,
                 canListenIn: l,
-                buttonText: D.intl.string(D.t.wBoE6L),
+                buttonText: j.intl.string(j.t.wBoE6L),
                 users: [],
                 overflowUsers: null
             }
         }
         if (null == t || u) {
             if (E) {
-                let e = D.intl.string(D.t.ZYO5OK);
-                return a?.speaker ? e = D.intl.string(D.t["/cnSFc"]) : null != a && (e = D.intl.string(D.t.btSGOj)), {
+                let e = j.intl.string(j.t.ZYO5OK);
+                return a?.speaker ? e = j.intl.string(j.t["/cnSFc"]) : null != a && (e = j.intl.string(j.t.btSGOj)), {
                     noticeType: 0,
                     title: n.topic,
                     location: r.name,
@@ -132,9 +132,9 @@ function w(e) {
                     })
                 }
             }
-        } else if (t.entity_type === j.Ps.STAGE_INSTANCE && E) {
-            let e = D.intl.string(D.t.ZYO5OK);
-            return a?.speaker ? e = D.intl.string(D.t["/cnSFc"]) : null != a && (e = D.intl.string(D.t.btSGOj)), {
+        } else if (t.entity_type === D.Ps.STAGE_INSTANCE && E) {
+            let e = j.intl.string(j.t.ZYO5OK);
+            return a?.speaker ? e = j.intl.string(j.t["/cnSFc"]) : null != a && (e = j.intl.string(j.t.btSGOj)), {
                 noticeType: 0,
                 title: n.topic,
                 location: r.name,
@@ -167,7 +167,7 @@ function w(e) {
                     })]
                 })
             }
-        } else if (t.entity_type === j.Ps.EXTERNAL) {
+        } else if (t.entity_type === D.Ps.EXTERNAL) {
             let e = (0, f.oF)(t);
             if (null == e) return {
                 noticeType: null
@@ -176,7 +176,7 @@ function w(e) {
             return {
                 noticeType: 1,
                 title: t.name,
-                location: (0, g.l)(e, !0),
+                location: (0, p.l)(e, !0),
                 locationIcon: (0, i.jsx)(d.BT6, {
                     size: "custom",
                     color: "currentColor",
@@ -185,7 +185,7 @@ function w(e) {
                     className: M.NR
                 }),
                 canListenIn: !1,
-                buttonText: D.intl.string(D.t.iW6Xuo),
+                buttonText: j.intl.string(j.t.iW6Xuo),
                 onClose: () => (0, m.iF)({
                     eventId: t?.id
                 }),
@@ -206,7 +206,7 @@ function w(e) {
                     })]
                 })
             }
-        } else if (t.entity_type === j.Ps.VOICE && null != r) {
+        } else if (t.entity_type === D.Ps.VOICE && null != r) {
             let e = (0, A.gU)(r),
                 n = _.Ay.getUserCount(t.id, I);
             return {
@@ -219,7 +219,7 @@ function w(e) {
                     className: M.NR
                 }) : null,
                 canListenIn: l,
-                buttonText: D.intl.string(D.t.nxUtoQ),
+                buttonText: j.intl.string(j.t.nxUtoQ),
                 onClose: () => (0, m.iF)({
                     eventId: t?.id
                 }),
@@ -262,7 +262,7 @@ function w(e) {
         children: [null != ee ? (0, i.jsx)(d.DUT, {
             onClick: ee,
             className: M.VN,
-            "aria-label": D.intl.string(D.t.WAI6xu),
+            "aria-label": j.intl.string(j.t.WAI6xu),
             children: (0, i.jsx)(d.PGe, {
                 size: "md",
                 color: "currentColor",
@@ -277,7 +277,7 @@ function w(e) {
             }), (0, i.jsx)(d.Text, {
                 variant: "text-xs/semibold",
                 color: "text-feedback-positive",
-                children: D.intl.string(D.t.dI3q4h)
+                children: j.intl.string(j.t.dI3q4h)
             })]
         }), (Z.length > 0 || null != J) && (0, i.jsxs)("div", {
             className: M.lF,
@@ -289,14 +289,14 @@ function w(e) {
             variant: "text-md/medium",
             color: "text-strong",
             className: a()(M.DD, M.VD),
-            children: K
+            children: z
         }), (0, i.jsxs)("div", {
             className: M.j5,
             children: [$, (0, i.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 className: M.C5,
-                children: z
+                children: K
             })]
         }), Q || 1 === q ? (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,

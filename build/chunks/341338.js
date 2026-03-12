@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(73153),
     _ = n(436946),
     m = n(339048),
-    p = n(800342),
-    g = n(820284),
+    g = n(800342),
+    p = n(820284),
     E = n(774334),
     I = n(707606),
     f = n(490415),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(773669),
     R = n(544028),
     P = n(71393),
-    j = n(576705),
-    D = n(609276),
+    D = n(576705),
+    j = n(609276),
     M = n(286805),
     w = n(469778),
     U = n(67480),
@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(371794),
     W = n(970672),
     q = n(109495),
-    K = n(179389),
-    z = n(893638),
+    z = n(179389),
+    K = n(893638),
     $ = n(283508),
     Q = n(852860),
     X = n(363994),
@@ -197,7 +197,7 @@ class ed extends r.PureComponent {
             channel: e,
             guild: t
         } = this.props;
-        return null != e && null != t && (j.A.can(el.xBc.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, i.jsx)(A.K0, {
+        return null != e && null != t && (D.A.can(el.xBc.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, i.jsx)(A.K0, {
             "aria-label": es.intl.string(es.t.zJrgTG),
             variant: "icon-only",
             size: "sm",
@@ -246,7 +246,7 @@ class ed extends r.PureComponent {
                     className: eo.eZ,
                     currentStoreListingId: null != l ? l.id : null,
                     onStoreListingSelect: e => {
-                        null != t && (0, p.ct)(t.id, {
+                        null != t && (0, g.ct)(t.id, {
                             slug: r,
                             analyticsSource: {
                                 page: s.page,
@@ -364,7 +364,7 @@ class ed extends r.PureComponent {
             pageSize: n,
             isFocused: r
         } = this.props;
-        return (0, i.jsx)(g.A, {
+        return (0, i.jsx)(p.A, {
             section: el.JJy.HERO,
             children: (0, i.jsx)(Q.A, {
                 pageSize: n,
@@ -397,7 +397,7 @@ class ed extends r.PureComponent {
         })
     }
     renderFeatures(e) {
-        return (0, i.jsx)(z.A, {
+        return (0, i.jsx)(K.A, {
             sku: e
         })
     }
@@ -419,7 +419,7 @@ class ed extends r.PureComponent {
                 children: es.intl.format(es.t.tluX4B, {
                     name: n.name
                 })
-            }), (0, i.jsx)(E.A, {}), (0, i.jsx)(K.A, {
+            }), (0, i.jsx)(E.A, {}), (0, i.jsx)(z.A, {
                 applicationId: e.id,
                 blurb: t.summary,
                 description: l,
@@ -547,10 +547,10 @@ class ed extends r.PureComponent {
             className: eo.I,
             children: [(0, i.jsx)(v.HI, {
                 location: e.name
-            }), this.renderJsonLD(), (0, i.jsx)(g.A, {
+            }), this.renderJsonLD(), (0, i.jsx)(p.A, {
                 section: el.JJy.NAVIGATION,
                 children: this.renderHeader(e, t)
-            }), (0, i.jsx)(g.A, {
+            }), (0, i.jsx)(p.A, {
                 section: el.JJy.BODY,
                 children: this.renderListing()
             })]
@@ -561,7 +561,7 @@ class ed extends r.PureComponent {
         })
     }
 }
-let ec = (0, I.A)((0, f.A)(o.Ay.connectStores([M.A, R.A, L.default, V.A, G.A, U.A, k.A, C.A, T.A, D.A, P.A, w.A], e => {
+let ec = (0, I.A)((0, f.A)(o.Ay.connectStores([M.A, R.A, L.default, V.A, G.A, U.A, k.A, C.A, T.A, j.A, P.A, w.A], e => {
     let t, n, i, {
         inputSkuId: r,
         applicationId: l,
@@ -583,7 +583,7 @@ let ec = (0, I.A)((0, f.A)(o.Ay.connectStores([M.A, R.A, L.default, V.A, G.A, U.
         application: null != l ? T.A.getApplication(l) : null,
         isFetchingEntitlements: null != l && w.A.applicationIdsFetching.has(l),
         didFetchEntitlements: null != l && w.A.applicationIdsFetched.has(l),
-        shouldFetchStatistics: o && null != l && D.A.shouldFetchStatisticsForApplication(l),
+        shouldFetchStatistics: o && null != l && j.A.shouldFetchStatisticsForApplication(l),
         sku: n,
         isFocused: V.A.isFocused(),
         storeListing: G.A.getStoreListing({

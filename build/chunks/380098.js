@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(122817),
     s = n(665260),
     l = n(315069),
-    a = n(260811),
-    r = n(557009),
+    r = n(260811),
+    a = n(557009),
     o = n(202613),
     d = n(272207),
     c = n(652215),
@@ -36,7 +36,7 @@ class _ extends l.A {
     entitlements;
     static createFromServer(e) {
         let t = null != e.payment_source ? o.Ay.createFromServer(e.payment_source) : null,
-            n = null != e.sku ? a.A.createFromServer(e.sku) : null,
+            n = null != e.sku ? r.A.createFromServer(e.sku) : null,
             i = null != e.subscription ? d.A.createFromServer(e.subscription) : null;
         return new _({
             id: e.id,
@@ -61,7 +61,7 @@ class _ extends l.A {
             hasInvoiceURL: e.has_invoice_url,
             hasRefundInvoiceURLs: e.has_refund_invoice_urls,
             premiumRefundDisqualificationReasons: e.premium_refund_disqualification_reasons,
-            entitlements: null != e.entitlements ? e.entitlements.map(e => r.A.createFromServer(e)) : void 0
+            entitlements: null != e.entitlements ? e.entitlements.map(e => a.A.createFromServer(e)) : void 0
         })
     }
     constructor(e) {

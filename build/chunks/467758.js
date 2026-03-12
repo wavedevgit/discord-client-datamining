@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(734066),
     s = n(419954),
     l = n(780964),
-    a = n(764800),
-    r = n(464895),
+    r = n(764800),
+    a = n(464895),
     o = n(729134),
     d = n(766667),
     c = n(985018);
@@ -20,5 +20,5 @@ let u = (0, s.zZ)(l.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
         });
         return e
     },
-    buildLayout: () => [a.$, r.X, o.C, d.p]
+    buildLayout: () => [r.$, a.X, o.C, d.p]
 })

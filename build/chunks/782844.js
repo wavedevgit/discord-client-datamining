@@ -5,23 +5,23 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(284009),
-    r = n.n(a),
+    r = n(284009),
+    a = n.n(r),
     o = n(311907),
     d = n(397927),
     c = n(98207),
     u = n(631670),
     _ = n(974544),
-    g = n(210742),
-    m = n(195043),
+    m = n(210742),
+    g = n(195043),
     A = n(130771),
     h = n(576622),
-    p = n(670492),
-    x = n(351906),
-    E = n(628965),
-    T = n(287809),
-    S = n(954571),
-    C = n(773669),
+    x = n(670492),
+    p = n(351906),
+    T = n(628965),
+    E = n(287809),
+    C = n(954571),
+    S = n(773669),
     f = n(544028),
     N = n(740625),
     b = n(524738),
@@ -29,19 +29,19 @@ var i, s = n(627968),
     v = n(36535),
     j = n(299116),
     O = n(457684),
-    R = n(998252),
-    y = n(980172),
+    y = n(998252),
+    R = n(980172),
     P = n(531525),
     D = n(652215),
     L = n(985018),
-    G = n(221432);
+    M = n(221432);
 
-function M() {
-    let e = (0, o.bG)([T.default], () => {
-            let e = T.default.getCurrentUser();
-            return r()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
+function G() {
+    let e = (0, o.bG)([E.default], () => {
+            let e = E.default.getCurrentUser();
+            return a()(null != e, "SecuritySettingsTab: currentUser cannot be undefined"), e
         }),
-        t = (0, o.bG)([p.A], () => p.A.getBackupCodes()),
+        t = (0, o.bG)([x.A], () => x.A.getBackupCodes()),
         {
             teams: n,
             loading: i
@@ -49,29 +49,29 @@ function M() {
             refreshOnDepChange: !0
         });
     return (0, s.jsxs)(d.lVW, {
-        children: [(0, s.jsxs)(m.x, {
+        children: [(0, s.jsxs)(g.x, {
             setting: P.H.ACCOUNT_PROFILE,
-            children: [(0, s.jsx)(R.A, {
+            children: [(0, s.jsx)(y.A, {
                 currentUser: e
-            }), (0, s.jsx)(y.A, {
+            }), (0, s.jsx)(R.A, {
                 currentUser: e
             })]
-        }), (0, s.jsx)(m.x, {
+        }), (0, s.jsx)(g.x, {
             setting: P.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
             children: (0, s.jsxs)(d.nVY, {
-                className: G.PN,
+                className: M.PN,
                 label: L.intl.string(L.t.pKSjEj),
-                children: [e.mfaEnabled ? (0, s.jsx)(v.A, {}) : null, (0, s.jsx)(m.x, {
+                children: [e.mfaEnabled ? (0, s.jsx)(v.A, {}) : null, (0, s.jsx)(g.x, {
                     setting: P.H.ACCOUNT_CHANGE_PASSWORD,
                     children: (0, s.jsx)(j.A, {})
-                }), (0, s.jsx)(m.x, {
+                }), (0, s.jsx)(g.x, {
                     setting: P.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
                     children: (0, s.jsx)(I.A, {
                         backupCodes: t
                     })
                 })]
             })
-        }), (0, s.jsxs)(m.x, {
+        }), (0, s.jsxs)(g.x, {
             setting: P.H.ACCOUNT_REMOVAL,
             children: [(0, s.jsx)(d.cGx, {}), (0, s.jsx)(O.A, {
                 currentUser: e,
@@ -101,20 +101,20 @@ class k extends l.PureComponent {
             children: (0, s.jsx)(b.A, {
                 parentSetting: P.H.ACCOUNT,
                 settingsSection: D.nc_.ACCOUNT,
-                panelClassName: G.SZ,
+                panelClassName: M.SZ,
                 onTabChange: e => {
-                    S.default.track(D.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+                    C.default.track(D.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                         target_tab_name: e === P.H.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
                     })
                 },
                 defaultTabIndex: "ACCOUNT_STANDING" === e ? 1 : void 0,
                 tabs: [{
                     title: L.intl.string(L.t.Am9YHi),
-                    component: M,
+                    component: G,
                     setting: P.H.ACCOUNT_SECURITY_TAB
                 }, {
                     title: L.intl.string(L.t["Vov/9o"]),
-                    component: g.A,
+                    component: m.A,
                     setting: P.H.PRIVACY_AND_SAFETY_STANDING
                 }]
             })
@@ -125,11 +125,11 @@ class k extends l.PureComponent {
     }
 }
 let V = () => {
-    let e = (0, o.bG)([T.default], () => T.default.getCurrentUser()),
-        t = (0, o.bG)([x.A], () => x.A.hidePersonalInformation),
+    let e = (0, o.bG)([E.default], () => E.default.getCurrentUser()),
+        t = (0, o.bG)([p.A], () => p.A.hidePersonalInformation),
         n = (0, o.bG)([f.A], () => f.A.theme),
-        i = (0, o.bG)([C.default], () => C.default.locale),
-        l = (0, o.bG)([E.A], () => E.A.getSubsection());
+        i = (0, o.bG)([S.default], () => S.default.locale),
+        l = (0, o.bG)([T.A], () => T.A.getSubsection());
     return null == e ? null : (0, s.jsx)(k, {
         theme: n,
         currentUser: e,

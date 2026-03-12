@@ -18,7 +18,7 @@ let _ = function(e) {
         scrollContainerRef: t
     } = e, n = (0, l.bG)([a.A], () => a.A.notificationItem(), []), {
         showDot: _
-    } = (0, d.A)(), m = r.useRef(null), [p, g] = r.useState(!1), {
+    } = (0, d.A)(), m = r.useRef(null), [g, p] = r.useState(!1), {
         data: E,
         loading: I,
         isRefreshing: f,
@@ -41,12 +41,12 @@ let _ = function(e) {
         O = r.useCallback(() => {
             if (b) return;
             let e = t.current;
-            null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || p || I || x || (g(!0), (0, s._x)().finally(() => {
+            null == e || !(e.scrollHeight - e.scrollTop - e.clientHeight < 300) || g || I || x || (p(!0), (0, s._x)().finally(() => {
                 setTimeout(() => {
-                    g(!1)
+                    p(!1)
                 }, 300)
             }))
-        }, [I, p, x, b, t]);
+        }, [I, g, x, b, t]);
     r.useEffect(() => {
         let e = t.current;
         if (null != e) return e.addEventListener("scroll", O), () => {
@@ -129,7 +129,7 @@ let _ = function(e) {
         }), (0, i.jsxs)("div", {
             ref: m,
             className: h.j,
-            children: [E.map(e => P(e)), !b && (p || x) && (0, i.jsx)("div", {
+            children: [E.map(e => P(e)), !b && (g || x) && (0, i.jsx)("div", {
                 style: {
                     padding: "16px",
                     textAlign: "center"

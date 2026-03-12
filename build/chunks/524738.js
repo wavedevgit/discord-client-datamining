@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(397927),
+    r = n.n(l),
+    a = n(397927),
     o = n(252452),
     d = n(55029),
     c = n(602090);
@@ -19,42 +19,42 @@ let u = e => {
             defaultTab: o,
             onTabChange: d,
             orientation: u = "horizontal"
-        } = e, _ = o ?? t[0], [g, m] = s.useState(_ ?? t[0]);
+        } = e, _ = o ?? t[0], [m, g] = s.useState(_ ?? t[0]);
         s.useEffect(() => {
-            m(_)
+            g(_)
         }, [_]);
         let A = s.useMemo(() => {
-            let e = g.component;
+            let e = m.component;
             return (0, i.jsx)(e, {})
-        }, [g]);
+        }, [m]);
         return (0, i.jsxs)("div", {
-            className: a()(c.P5, {
+            className: r()(c.P5, {
                 [c.Vd]: "vertical" === u
             }),
-            children: [(0, i.jsx)(r.VQ0, {
-                className: a()(c.$H, {
+            children: [(0, i.jsx)(a.VQ0, {
+                className: r()(c.$H, {
                     [c.Vd]: "vertical" === u
                 }, l),
-                selectedItem: g.setting,
+                selectedItem: m.setting,
                 onItemSelect: e => {
-                    m(t.find(t => t.setting === e) ?? t[0]), d?.(e)
+                    g(t.find(t => t.setting === e) ?? t[0]), d?.(e)
                 },
                 orientation: u,
                 type: "vertical" === u ? "side" : "top",
                 look: "brand",
-                children: t.map(e => (0, i.jsx)(r.VQ0.Item, {
-                    className: a()(c.Mf, {
+                children: t.map(e => (0, i.jsx)(a.VQ0.Item, {
+                    className: r()(c.Mf, {
                         [c.Vd]: "vertical" === u,
-                        [c.wH]: e.setting === g.setting
+                        [c.wH]: e.setting === m.setting
                     }),
                     id: e.setting,
                     "aria-label": e.title,
                     children: e.title
                 }, e.setting))
-            }), (0, i.jsx)(r.VQ0.Panel, {
-                id: g.setting,
-                "aria-labelledby": g.title,
-                className: a()(c.NM, n, {
+            }), (0, i.jsx)(a.VQ0.Panel, {
+                id: m.setting,
+                "aria-labelledby": m.title,
+                className: r()(c.NM, n, {
                     [c.Vd]: "vertical" === u
                 }),
                 children: A
@@ -67,19 +67,19 @@ let u = e => {
             settingsSection: n,
             parentSetting: s,
             panelClassName: l,
-            defaultTabIndex: a,
-            onTabChange: r,
+            defaultTabIndex: r,
+            onTabChange: a,
             orientation: c = "horizontal"
         } = e, {
             viewableTabs: _,
-            filteredTab: g
-        } = (0, d.A)(t, s), m = (null != a ? t[a] : null) ?? g ?? _[0];
+            filteredTab: m
+        } = (0, d.A)(t, s), g = (null != r ? t[r] : null) ?? m ?? _[0];
         return (0, i.jsx)(u, {
             tabs: _,
             orientation: c,
-            defaultTab: m,
+            defaultTab: g,
             onTabChange: e => {
-                o.A.setSection(n, e), r?.(e)
+                o.A.setSection(n, e), a?.(e)
             },
             panelClassName: l
         })

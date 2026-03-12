@@ -16,8 +16,8 @@ var r = n(179771),
     h = n(795816),
     _ = n(851907),
     m = n(980142),
-    p = n(572946),
-    g = n(293588),
+    g = n(572946),
+    p = n(293588),
     E = n(20015),
     I = n(267102),
     f = n(869146),
@@ -33,8 +33,8 @@ var r = n(179771),
     L = n(636401),
     R = n(90924),
     P = n(629471),
-    j = n(569475),
-    D = n(954843),
+    D = n(569475),
+    j = n(954843),
     M = n(546983),
     w = n(613057),
     U = n(652215),
@@ -182,7 +182,7 @@ let V = {
                 channel: l,
                 guild: s,
                 frame: d
-            } = (0, D.W)(), c = (0, _.Ay)({
+            } = (0, j.W)(), c = (0, _.Ay)({
                 application: t.application,
                 channelId: l?.id
             }), u = null != c ? f.A.getWindow(c) : void 0;
@@ -225,7 +225,7 @@ let V = {
             if (null == n) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No application.");
-            let i = (0, j.A)()?.id;
+            let i = (0, D.A)()?.id;
             return new Promise((e, t) => {
                 ! function(e, t) {
                     let n;
@@ -281,11 +281,11 @@ let V = {
             if (!(0, E.n)(t.application, U.gfo.EMBEDDED)) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let r = (0, j.A)();
+            let r = (0, D.A)();
             if (!b.A.isDiscordCdnUrl(n)) throw new L.A({
                 errorCode: U.Lw6.INVALID_PAYLOAD
             }, "mediaUrl must be a Discord CDN url");
-            (0, p.g)({
+            (0, g.g)({
                 applicationId: i,
                 channelId: r?.id,
                 mediaUrl: n
@@ -319,7 +319,7 @@ let V = {
             if (!(0, E.n)(n.application, U.gfo.EMBEDDED)) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let A = (0, j.A)();
+            let A = (0, D.A)();
             if (null == A && s) throw new L.A({
                 errorCode: U.Lw6.INVALID_COMMAND
             }, "No channel found");
@@ -345,7 +345,7 @@ let V = {
                 let n = !1,
                     r = (0, M.d5)(c),
                     l = a.SYi;
-                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || r.context === U.BRT.POPOUT) && (l = a.KX8), (0, g.m)({
+                (f.A.getWindowOpen(U.MLl.ACTIVITY_POPOUT) || r.context === U.BRT.POPOUT) && (l = a.KX8), (0, p.m)({
                     applicationId: u,
                     channel: A,
                     command: {

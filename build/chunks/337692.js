@@ -1,32 +1,32 @@
 /** chunk id: 337692 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(64700),
     s = n(77509),
     l = n(128747);
-let a = [];
+let r = [];
 
-function r(e) {
+function a(e) {
     let {
         visible: t,
         autocompleterResultTypes: n,
-        autocompleterOptions: r,
+        autocompleterOptions: a,
         autocompleterBeforeCreateSearchContext: o
-    } = e, [d, c] = i.useState(""), [u, _] = i.useState(a), g = i.useCallback((e, t) => {
-        "" === (t = t.trim()).trim() ? _(a) : _(e)
+    } = e, [d, c] = i.useState(""), [u, _] = i.useState(r), m = i.useCallback((e, t) => {
+        "" === (t = t.trim()).trim() ? _(r) : _(e)
     }, []);
     i.useEffect(() => s.A.addRouteChangeListener(() => {
         c("")
     }), []);
-    let [m] = i.useState(() => new l.A(g, n, void 0, r));
+    let [g] = i.useState(() => new l.A(m, n, void 0, a));
     return i.useEffect(() => {
-        t ? (o?.(m), m.createSearchContext()) : (m.clean(), c(""))
-    }, [t, m, o]), {
+        t ? (o?.(g), g.createSearchContext()) : (g.clean(), c(""))
+    }, [t, g, o]), {
         queryResults: u,
         query: d,
         updateQuery: i.useCallback(e => {
-            c(e), m.search(e)
-        }, [m])
+            c(e), g.search(e)
+        }, [g])
     }
 }

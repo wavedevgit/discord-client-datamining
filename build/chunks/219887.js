@@ -1,19 +1,19 @@
 /** chunk id: 219887 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(887555),
-    r = n(235986),
+    r = n(887555),
+    a = n(235986),
     o = n(812745),
     d = n(202613),
     c = n(739508),
     u = n(240248),
     _ = n(985018),
-    g = n(332369);
-class m extends s.PureComponent {
+    m = n(332369);
+class g extends s.PureComponent {
     static defaultProps = {
         isForSubscription: !1,
         isDefault: !1,
@@ -49,9 +49,9 @@ class m extends s.PureComponent {
             brand: (0, u.$G)(e.brand),
             last_4: e.last4
         }) : e instanceof d.SJ ? _.intl.string(_.t["2dgEq+"]) : e instanceof d.A0 ? _.intl.string(_.t["edKX/1"]) : e instanceof d.Qh ? _.intl.string(_.t["y+0MQZ"]) : e instanceof d.Tu ? _.intl.string(_.t.u25uL0) : e instanceof d.Ux ? _.intl.string(_.t.boznHN) : e instanceof d.F_ ? _.intl.string(_.t.PjehcF) : e instanceof d.Xj ? _.intl.string(_.t.T5davE) : e instanceof d.am ? _.intl.string(_.t.J0A1Vk) : e instanceof d._1 ? _.intl.string(_.t.jYOezc) : e instanceof d.i6 ? _.intl.string(_.t.CSVexi) : e instanceof d.cg ? _.intl.string(_.t["43J8JK"]) : e instanceof d.UG ? _.intl.string(_.t["1ITkfq"]) : e instanceof d.EE ? null == e.bank ? _.intl.string(_.t.nSbwqC) : _.intl.format(_.t["9kUlRU"], {
-            bank: (0, a.o)(e.bank)
+            bank: (0, r.o)(e.bank)
         }) : e instanceof d.rJ ? _.intl.format(_.t.hSPoZw, {
-            bank: (0, a.j)(e.bank)
+            bank: (0, r.j)(e.bank)
         }) : e instanceof d.FQ ? _.intl.string(_.t["+rbTmL"]) : e instanceof d.Pw ? _.intl.string(_.t.RFi12i) : e instanceof d.LQ ? _.intl.string(_.t["6EEgNt"]) : _.intl.string(_.t.jdPblk)
     }
     renderDescription() {
@@ -80,7 +80,7 @@ class m extends s.PureComponent {
             paymentSource: e
         } = this.props;
         return e instanceof d.LQ ? (0, i.jsx)("div", {
-            className: g.k7,
+            className: m.k7,
             children: (0, i.jsx)(l.pVd, {
                 size: "xs",
                 color: "currentColor"
@@ -95,29 +95,29 @@ class m extends s.PureComponent {
             paymentSource: t,
             showSubtext: n,
             isForSubscription: s,
-            showPaymentSourceIcon: a,
+            showPaymentSourceIcon: r,
             showLabels: o
         } = this.props, d = this.renderSubText();
-        return (0, i.jsxs)(r.A, {
-            children: [a && this.renderIcon(), (0, i.jsxs)(r.A, {
-                direction: r.A.Direction.VERTICAL,
-                className: g.Wi,
-                children: [(0, i.jsxs)(r.A, {
-                    align: r.A.Align.CENTER,
+        return (0, i.jsxs)(a.A, {
+            children: [r && this.renderIcon(), (0, i.jsxs)(a.A, {
+                direction: a.A.Direction.VERTICAL,
+                className: m.Wi,
+                children: [(0, i.jsxs)(a.A, {
+                    align: a.A.Align.CENTER,
                     children: [this.renderDescription(), o && e ? (0, i.jsx)("div", {
-                        className: g.Zn,
+                        className: m.Zn,
                         children: _.intl.string(_.t.bBvAEH)
                     }) : null, s ? (0, i.jsx)("div", {
-                        className: g.NV,
+                        className: m.NV,
                         children: _.intl.string(_.t.YCrcPL)
                     }) : null, o && t.invalid ? (0, i.jsx)("div", {
-                        className: g.tG,
+                        className: m.tG,
                         children: _.intl.string(_.t["851k93"])
                     }) : null]
                 }), n && null != d ? (0, i.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    className: g.Sv,
+                    className: m.Sv,
                     children: d
                 }) : null]
             })]

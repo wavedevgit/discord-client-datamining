@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(582754),
     _ = n(397927),
     m = n(73153),
-    p = n(442433),
-    g = n(92077),
+    g = n(442433),
+    p = n(92077),
     E = n(979604),
     I = n(707606),
     f = n(456412),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(531685),
     R = n(255438),
     P = n(674378),
-    j = n(505806),
-    D = n(250632),
+    D = n(505806),
+    j = n(250632),
     M = n(652215),
     w = n(985018),
     U = n(532439);
@@ -285,7 +285,7 @@ class W extends r.PureComponent {
         } = this.props;
         return this.renderBody({
             message: w.intl.format(w.t.z1oxGO, {
-                remove: () => g.Vt(e.applicationId, e.branchId)
+                remove: () => p.Vt(e.applicationId, e.branchId)
             }),
             foregroundColor: (0, h.qB)(e.theme) ? u.A.unsafe_rawColors.PRIMARY_300.css : u.A.unsafe_rawColors.PRIMARY_500.css,
             percent: 100
@@ -383,7 +383,7 @@ class W extends r.PureComponent {
             message: A
         })
     };renderProgressPatching() {
-        return (0, i.jsx)(j.A, {
+        return (0, i.jsx)(D.A, {
             getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
             updateInterval: 5e3,
             children: this.renderProgressPatchingBody
@@ -443,21 +443,21 @@ class W extends r.PureComponent {
 let q = () => (0, i.jsx)(V, {
         icon: _.udU,
         tooltip: w.intl.string(w.t.YGm6SZ),
-        onClick: () => g.U()
+        onClick: () => p.U()
     }),
-    K = () => (0, i.jsx)(V, {
+    z = () => (0, i.jsx)(V, {
         icon: _.E$n,
         tooltip: w.intl.string(w.t.TVAd5J),
-        onClick: () => g.v7()
+        onClick: () => p.v7()
     }),
-    z = e => {
+    K = e => {
         let {
             item: t
         } = e;
         return (0, i.jsx)(V, {
             icon: _.z$m,
             tooltip: w.intl.string(w.t["Eqb+LN"]),
-            onClick: () => g.BO(t.applicationId, t.branchId)
+            onClick: () => p.BO(t.applicationId, t.branchId)
         })
     },
     $ = e => {
@@ -467,7 +467,7 @@ let q = () => (0, i.jsx)(V, {
         return (0, i.jsx)(V, {
             icon: _.PGe,
             tooltip: w.intl.string(w.t["0lFmC9"]),
-            onClick: () => g.ZT(t.applicationId, t.branchId)
+            onClick: () => p.ZT(t.applicationId, t.branchId)
         })
     },
     Q = [{
@@ -502,9 +502,9 @@ let q = () => (0, i.jsx)(V, {
                 libraryApplication: e.libraryApplication,
                 size: "sm",
                 source: M.ThZ.APPLICATION_LIBRARY_UPDATES
-            }) : null : null != e.state ? e.state.type !== M.WTw.UP_TO_DATE && (n = e.index > 0 ? (0, i.jsx)(z, {
+            }) : null : null != e.state ? e.state.type !== M.WTw.UP_TO_DATE && (n = e.index > 0 ? (0, i.jsx)(K, {
                 item: e
-            }) : null != t && t.paused ? (0, i.jsx)(q, {}) : (0, i.jsx)(K, {
+            }) : null != t && t.paused ? (0, i.jsx)(q, {}) : (0, i.jsx)(z, {
                 item: e
             }), r = (0, i.jsx)($, {
                 item: e
@@ -531,7 +531,7 @@ class X extends r.PureComponent {
         } = this.props;
         e.forEach(e => {
             e.finished && m.h.wait(() => {
-                g.Vt(e.applicationId, e.branchId)
+                p.Vt(e.applicationId, e.branchId)
             })
         }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = !0
     }
@@ -555,7 +555,7 @@ class X extends r.PureComponent {
             className: U.xP,
             children: [(0, i.jsxs)("div", {
                 className: U.U1,
-                children: [(0, i.jsx)(D.A, {
+                children: [(0, i.jsx)(j.A, {
                     className: a()(U.e4, U.Eg),
                     title: w.intl.string(w.t.ytoXKr),
                     getHistoricalTotalBytes: b.A.getHistoricalTotalBytesDownloaded,
@@ -563,7 +563,7 @@ class X extends r.PureComponent {
                         saturation: 1
                     }).hex(),
                     animate: r
-                }), (0, i.jsx)(D.A, {
+                }), (0, i.jsx)(j.A, {
                     className: a()(U.e4, U.pn),
                     title: w.intl.string(w.t.SjohhI),
                     getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
@@ -586,7 +586,7 @@ class X extends r.PureComponent {
                 },
                 rowProps: {
                     onContextMenu: (e, t) => {
-                        p.L3(e, async () => {
+                        g.L3(e, async () => {
                             let {
                                 default: e
                             } = await n.e("881").then(n.bind(n, 163368));

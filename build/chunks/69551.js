@@ -1,27 +1,27 @@
 /** chunk id: 69551 params = (module,exports,require) **/
 n.d(t, {
-    l: () => m
+    l: () => g
 });
 var i = n(311907),
     s = n(890138),
     l = n(817281),
-    a = n(47671),
-    r = n(419954),
+    r = n(47671),
+    a = n(419954),
     o = n(284016),
     d = n(544028),
     c = n(253932),
     u = n(780964),
     _ = n(652215),
-    g = n(985018);
-let m = (0, r.zD)(u.X.DISPLAY_SYNC_THEME, {
-    useTitle: () => g.intl.string(g.t["/B+kEV"]),
-    useSearchTerms: () => [g.intl.string(g.t.Ksh3ik)],
+    m = n(985018);
+let g = (0, a.zD)(u.X.DISPLAY_SYNC_THEME, {
+    useTitle: () => m.intl.string(m.t["/B+kEV"]),
+    useSearchTerms: () => [m.intl.string(m.t.Ksh3ik)],
     useValue: function() {
         return (0, i.bG)([o.A], () => !1 !== o.A.shouldSync("appearance"))
     },
     setValue: function(e) {
         let t = d.A.theme,
-            n = a.A.gradientPreset?.id ?? null,
+            n = r.A.gradientPreset?.id ?? null,
             i = c.eh.getSetting()?.customUserThemeSettings != null;
         (0, s.u)(_.HAw.SYNC_ACROSS_CLIENTS_TOGGLED, {
             is_sync_enabled: e,

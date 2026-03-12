@@ -1,32 +1,32 @@
 /** chunk id: 21316 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 }), n(321073);
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(197305),
+    r = n(397927),
+    a = n(197305),
     o = n(711014),
     d = n(686423),
     c = n(358172),
     u = n(985018),
     _ = n(291552);
-let g = function(e) {
+let m = function(e) {
     let {
         canAddBoosts: t,
         canApplyBoosts: n
-    } = e, g = (0, l.bG)([r.A], () => r.A.affinities), m = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
-        let e = g.slice(0, 3).map(e => e.guildId);
-        for (let t = 0; t < m.length && !(e.length >= 3); t++) {
-            let n = m[t];
+    } = e, m = (0, l.bG)([a.A], () => a.A.affinities), g = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
+        let e = m.slice(0, 3).map(e => e.guildId);
+        for (let t = 0; t < g.length && !(e.length >= 3); t++) {
+            let n = g[t];
             e.includes(n) || e.push(n)
         }
         return e
-    }, [g, m]);
+    }, [m, g]);
     return 0 === A.length ? null : (0, i.jsxs)("div", {
         className: _.iE,
-        children: [t && (0, i.jsx)(a.Heading, {
+        children: [t && (0, i.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
             className: _.wx,
             children: u.intl.string(u.t.r90Wgo)
@@ -34,6 +34,6 @@ let g = function(e) {
             className: _.ZS,
             guildId: e,
             boostingVariant: !0
-        }, e)), m.length > 3 && n && (0, i.jsx)(d.A, {})]
+        }, e)), g.length > 3 && n && (0, i.jsx)(d.A, {})]
     })
 }

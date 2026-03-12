@@ -1,7 +1,7 @@
 /** chunk id: 890164 params = (module,exports,require) **/
 n.d(t, {
-    W1: () => r,
-    lX: () => a
+    W1: () => a,
+    lX: () => r
 });
 var i = n(945810),
     s = n(945939);
@@ -20,13 +20,13 @@ let l = (0, i.mj)({
             }
         }
     }),
-    a = e => {
+    r = e => {
         let t = l.useConfig({
                 location: e
             }).enabled,
             n = (0, s.Q6)(e);
         return t || n
     },
-    r = e => l.getConfig({
+    a = e => l.getConfig({
         location: e
     }).enabled || (0, s.De)(e)

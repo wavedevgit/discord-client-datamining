@@ -1,25 +1,25 @@
 /** chunk id: 773349 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(417597),
+    r = n.n(l),
+    a = n(417597),
     o = n(397927),
     d = n(287809),
     c = n(427262),
     u = n(283900),
     _ = n(31435);
-let g = s.memo(e => {
+let m = s.memo(e => {
     let {
         userId: t,
         subText: n,
         className: s
-    } = e, l = (0, r.bG)([d.default], () => d.default.getUser(t));
+    } = e, l = (0, a.bG)([d.default], () => d.default.getUser(t));
     return void 0 === l ? null : (0, i.jsxs)("div", {
-        className: a()(_.k, s),
+        className: r()(_.k, s),
         children: [(0, i.jsx)(u.H, {
             user: l,
             avatarSize: o._3J.SIZE_40
@@ -39,5 +39,5 @@ let g = s.memo(e => {
         })]
     })
 });
-g.displayName = "FamilyCenterActivityUserRow";
-let m = g
+m.displayName = "FamilyCenterActivityUserRow";
+let g = m

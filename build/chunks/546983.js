@@ -1,10 +1,10 @@
 /** chunk id: 546983 params = (module,exports,require) **/
 n.d(t, {
-    Au: () => g,
+    Au: () => p,
     d5: () => _,
     j7: () => m,
     kS: () => h,
-    l6: () => p
+    l6: () => g
 });
 var i = n(684013),
     r = n(833551),
@@ -44,14 +44,14 @@ let m = async (e, t, n) => {
     }, "No Client ID Specified"));
     let i = a.Ay.releaseChannel !== u.BIo.CANARY && !A.includes(n) && e.transport !== c.z4.POST_MESSAGE;
     return await (0, d.e2)(n, i, e.abortController.signal), (0, d.uM)(e, n, t)
-}, p = () => (0, d.BB)(e => {
+}, g = () => (0, d.BB)(e => {
     let t = [];
     return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => ({
         type: e[0],
         code: e[1],
         name: (0, s.Qd)(e) ?? "unknown"
     }))), t
-}), g = e => (0, d.Ub)(e, e => {
+}), p = e => (0, d.Ub)(e, e => {
     let t = "";
     return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, s.dI)(e.modeOptions.shortcut)), t
 })

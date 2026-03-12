@@ -1,12 +1,12 @@
 /** chunk id: 119695 params = (module,exports,require) **/
 n.d(t, {
-    I: () => r
+    I: () => a
 });
 var i = n(419954),
     s = n(780964),
     l = n(119762),
-    a = n(985018);
-let r = (0, i.E2)(s.X.SESSIONS_CURRENT_SESSION_SETTING, {
+    r = n(985018);
+let a = (0, i.E2)(s.X.SESSIONS_CURRENT_SESSION_SETTING, {
     Component: l.Ob,
-    useSearchTerms: () => [a.intl.string(a.t["+1h0k/"])]
+    useSearchTerms: () => [r.intl.string(r.t["+1h0k/"])]
 })

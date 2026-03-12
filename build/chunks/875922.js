@@ -26,8 +26,8 @@ function A(e) {
             return t.id
         }),
         m = 1 === A.length && 1 === n.length,
-        p = n.length - A.length > 0;
-    return (m || t) && !p && 0 !== _.length ? (0, i.jsx)(l.Drp, {
+        g = n.length - A.length > 0;
+    return (m || t) && !g && 0 !== _.length ? (0, i.jsx)(l.Drp, {
         id: "message",
         action: function() {
             a.A.openPrivateChannel({

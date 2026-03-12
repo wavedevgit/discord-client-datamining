@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(491182),
     _ = n(860227),
     m = n(538355),
-    p = n(699352),
-    g = n(715628),
+    g = n(699352),
+    p = n(715628),
     E = n(752636),
     I = n(675722),
     f = n(268719),
@@ -38,14 +38,14 @@ let v = r.memo(function(e) {
         subscribeToComponentDispatch: L,
         renderThreadAccessory: R,
         ...P
-    } = e, j = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), D = t.isFirstMessageInForumPost(y), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+    } = e, D = t.type === N.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), j = t.isFirstMessageInForumPost(y), M = (0, c.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: w,
         hasSpoilerEmbeds: U,
         hasBailedAst: G
     } = (0, m.A)(t, {
         hideSimpleEmbedContent: v,
-        allowList: D || M,
-        allowHeading: D || M,
+        allowList: j || M,
+        allowHeading: j || M,
         allowLinks: !0,
         previewLinkTarget: !0
     }), k = (0, s.rm)(t.id), V = (0, A.Ay)(t), B = (0, o.bG)([C.A], () => t.hasFlag(N.pr7.HAS_THREAD) && C.A.getChannel(T.default.castMessageIdAsChannelId(t.id))), H = (0, d.$7)({
@@ -56,9 +56,9 @@ let v = r.memo(function(e) {
         compact: !1,
         className: a()(n, S.i, {
             [x.M1]: (0, u.ec)(t),
-            [x.XN]: j
+            [x.XN]: D
         }),
-        disableInteraction: j,
+        disableInteraction: D,
         childrenExecutedCommand: (0, f.A)(t, y, !1),
         childrenHeader: (0, E.A)({
             message: t,
@@ -72,11 +72,11 @@ let v = r.memo(function(e) {
             hideTimestamp: !0,
             hideGuildTag: !1
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, p.J)(e, U, G),
-        childrenMessageContent: (0, g.A)(e, w),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, g.J)(e, U, G),
+        childrenMessageContent: (0, p.A)(e, w),
         childrenSystemMessage: (0, I.A)({
             ...e,
-            disableInteraction: j
+            disableInteraction: D
         }),
         onContextMenu: r,
         onClick: l,

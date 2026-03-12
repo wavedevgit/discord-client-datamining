@@ -1,6 +1,6 @@
 /** chunk id: 294446 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(323874), n(14289), n(35956);
 var i = n(627968);
 n(64700);
@@ -16,15 +16,15 @@ var r = n(397927),
     h = n(990007),
     _ = n(546983),
     m = n(652215),
-    p = n(985018);
-let g = (0, h.A)(e => {
+    g = n(985018);
+let p = (0, h.A)(e => {
     let {
         clientId: t,
         authorizations: n,
         scopes: c,
         parsedPermissions: u,
         responseType: h,
-        redirectUri: g,
+        redirectUri: p,
         codeChallenge: E,
         codeChallengeMethod: I,
         state: f,
@@ -44,19 +44,19 @@ let g = (0, h.A)(e => {
             application: R,
             channelId: T
         }) ? P = r.KX8 : L.context === m.BRT.POPOUT && (P = r.KX8);
-        let j = !1,
-            D = n => {
+        let D = !1,
+            j = n => {
                 let {
                     clientId: l,
                     location: s
                 } = n;
                 if (null == l || l === t) {
-                    if (j = !0, null == s) {
+                    if (D = !0, null == s) {
                         a(new A.A({
                             errorCode: m.Lw6.OAUTH2_ERROR
                         }, "OAuth2 Error: No location provided")), L.lock();
                         return
-                    }(e(s), null == g || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, r.qfG)(e => (0, i.jsx)(d.Sm, {
+                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, r.qfG)(e => (0, i.jsx)(d.Sm, {
                         application: R,
                         ...e
                     }), {
@@ -78,10 +78,10 @@ let g = (0, h.A)(e => {
                 function n() {
                     (0, r.OoC)(e) && (0, r.qfG)(e => (0, i.jsx)(o.f, {
                         ...e,
-                        title: p.intl.string(p.t.j2d6Km),
-                        subtitle: p.intl.string(p.t["4LKmN5"]),
+                        title: g.intl.string(g.t.j2d6Km),
+                        subtitle: g.intl.string(g.t["4LKmN5"]),
                         actions: [{
-                            text: p.intl.string(p.t.cpT0Cq),
+                            text: g.intl.string(g.t.cpT0Cq),
                             onClick: e.onClose
                         }]
                     }))
@@ -98,9 +98,9 @@ let g = (0, h.A)(e => {
             clientId: t,
             scopes: c ?? [],
             disclosures: x ?? [],
-            callback: D,
+            callback: j,
             responseType: h,
-            redirectUri: g,
+            redirectUri: p,
             codeChallenge: E,
             codeChallengeMethod: I,
             state: f,
@@ -114,7 +114,7 @@ let g = (0, h.A)(e => {
         }), {
             modalKey: O,
             onCloseCallback: () => {
-                M(), j || (a(new A.A({
+                M(), D || (a(new A.A({
                     errorCode: m.Lw6.OAUTH2_ERROR
                 }, "User cancelled authorization")), L.lock())
             }

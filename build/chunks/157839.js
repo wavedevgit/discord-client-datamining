@@ -1,114 +1,114 @@
 /** chunk id: 157839 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     d = n(531260),
     c = n(287809),
     u = n(637073),
     _ = n(398523),
-    g = n(612669),
-    m = n(180022),
+    m = n(612669),
+    g = n(180022),
     A = n(513570),
     h = n(975662),
-    p = n(322631),
-    x = n(17307),
-    E = n(204593);
-let T = e => {
+    x = n(322631),
+    p = n(17307),
+    T = n(204593);
+let E = e => {
         let {
             showAllPerksButton: t,
             leftAlignHeaders: n,
             title: s,
             headerClassname: l
-        } = e, a = (0, i.jsx)(o.Heading, {
+        } = e, r = (0, i.jsx)(o.Heading, {
             variant: "heading-xxl/extrabold",
             color: "text-strong",
-            className: null != l ? l : E.R_,
+            className: null != l ? l : T.R_,
             children: s
         });
-        return null == t ? a : n ? (0, i.jsxs)("div", {
-            className: E.bV,
-            children: [a, null != t && (0, i.jsx)("div", {
-                className: E.W0,
+        return null == t ? r : n ? (0, i.jsxs)("div", {
+            className: T.bV,
+            children: [r, null != t && (0, i.jsx)("div", {
+                className: T.W0,
                 children: t
             })]
         }) : (0, i.jsx)("div", {
-            className: E.kL,
+            className: T.kL,
             children: (0, i.jsx)("div", {
-                className: E.pr,
-                children: a
+                className: T.pr,
+                children: r
             })
         })
     },
-    S = e => {
+    C = e => {
         let {
             className: t,
             variant: n,
             noBackground: l = !1,
-            leftAlignHeaders: S = !1,
-            showAllPerksButton: C,
+            leftAlignHeaders: C = !1,
+            showAllPerksButton: S,
             headerClassname: f
-        } = e, N = s.useRef(null), b = n === p.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
+        } = e, N = s.useRef(null), b = n === x.cJ.WHATS_NEW, I = (0, a.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
             b && v()
         }, [v, b]);
-        let j = (0, x.G4)(b),
+        let j = (0, p.G4)(b),
             O = (0, h.A)(),
-            R = (0, x.LQ)(),
+            y = (0, p.LQ)(),
             {
-                fractionalState: y
+                fractionalState: R
             } = (0, d.A)(),
             P = (0, u.d)(),
             D = _.A.useExperiment({
                 location: "PremiumPerks"
             }).enabled,
-            L = (0, g.O9)(),
-            G = (0, x.vx)({
+            L = (0, m.O9)(),
+            M = (0, p.vx)({
                 perksCards: O,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
-                isPremiumSubscriber: R,
-                fractionalState: y,
+                isPremiumSubscriber: y,
+                fractionalState: R,
                 isInReverseTrial: P,
                 recurring3PPromotionExperiment: D,
                 showPremiumGroup: L,
                 isPremiumGroupMember: I?.isPremiumGroupMember()
             }),
-            M = G.some(e => null != e.pillText);
+            G = M.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
             ref: N,
-            className: a()(E.uW, {
-                [E.qO]: !S,
-                [E.Uv]: S
+            className: r()(T.uW, {
+                [T.qO]: !C,
+                [T.Uv]: C
             }, t),
-            children: [(0, i.jsx)(T, {
-                showAllPerksButton: C,
-                leftAlignHeaders: S,
+            children: [(0, i.jsx)(E, {
+                showAllPerksButton: S,
+                leftAlignHeaders: C,
                 title: j.title,
                 headerClassname: f
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
-                className: a()(E.VA, {
-                    [E.VA]: null == C || S,
-                    [E.Xx]: null != C && !S,
-                    [E.Ij]: b || S,
-                    [E.Ob]: M,
-                    [E.dO]: S,
-                    [E.br]: !S
+                className: r()(T.VA, {
+                    [T.VA]: null == S || C,
+                    [T.Xx]: null != S && !C,
+                    [T.Ij]: b || C,
+                    [T.Ob]: G,
+                    [T.dO]: C,
+                    [T.br]: !C
                 }),
                 children: j.subtitle
-            }), !S && null != C && (0, i.jsx)("div", {
-                className: E.xk,
-                children: C
+            }), !C && null != S && (0, i.jsx)("div", {
+                className: T.xk,
+                children: S
             }), (0, i.jsx)("div", {
-                className: E.Ui,
-                children: G.map((e, t) => (0, i.jsx)(m.A, {
+                className: T.Ui,
+                children: M.map((e, t) => (0, i.jsx)(g.A, {
                     ...e,
                     forceShadow: l
                 }, `${e.name}_${t}`))

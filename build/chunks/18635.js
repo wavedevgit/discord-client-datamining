@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(726249),
     _ = n(915089),
     m = n(346084),
-    p = n(742589),
-    g = n(95550),
+    g = n(742589),
+    p = n(95550),
     E = n(608881),
     I = n(210714),
     f = n(544028),
@@ -32,7 +32,7 @@ var i = n(627968),
 function O() {
     return (0, i.jsx)("div", {
         className: b.N3,
-        children: (0, i.jsx)(g.Ay, {
+        children: (0, i.jsx)(p.Ay, {
             tooltip: y.intl.string(y.t["HfOgA/"])
         })
     })
@@ -51,17 +51,17 @@ let L = function(e) {
     }, [l, n]), r.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
-    let g = (0, o.bG)([f.A], () => f.A.theme),
+    let p = (0, o.bG)([f.A], () => f.A.theme),
         L = (0, T.kX)(),
         {
             section: R,
             rows: P
         } = (0, o.cf)([C.Ay], () => C.Ay.getState()),
-        j = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
-        D = r.useMemo(() => P.getRelationshipCounts(), [P]);
+        D = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
+        j = r.useMemo(() => P.getRelationshipCounts(), [P]);
     r.useEffect(() => {
-        null != t && A.A.setInitialSection(t), 0 === D[x.eA$.FRIEND] && 0 === D[x.eA$.PENDING_INCOMING] && 0 === D[x.eA$.PENDING_OUTGOING] && 0 === D[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
-    }, [t, D]);
+        null != t && A.A.setInitialSection(t), 0 === j[x.eA$.FRIEND] && 0 === j[x.eA$.PENDING_INCOMING] && 0 === j[x.eA$.PENDING_OUTGOING] && 0 === j[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
+    }, [t, j]);
     let M = e => {
             A.A.transitionToSection(e, {
                 explicit: !0
@@ -76,7 +76,7 @@ let L = function(e) {
             className: b.AS
         }, {
             id: x.m3P.ALL,
-            show: D[x.eA$.FRIEND] > 0,
+            show: j[x.eA$.FRIEND] > 0,
             content: y.intl.string(y.t.PfjFjR),
             className: b.AS
         }, {
@@ -94,15 +94,15 @@ let L = function(e) {
             className: b.AS
         }, {
             id: x.m3P.SUGGESTIONS,
-            show: j > 0,
+            show: D > 0,
             content: (0, i.jsxs)(i.Fragment, {
                 children: [y.intl.string(y.t["8rSi1/"]), (0, i.jsx)(d.hVq, {
-                    count: j,
+                    count: D,
                     className: b.qS
                 })]
             }),
             ariaLabel: y.intl.formatToPlainString(y.t.AbMQp7, {
-                count: j.toString()
+                count: D.toString()
             }),
             className: b.AS
         }, {
@@ -127,20 +127,20 @@ let L = function(e) {
         children: [(0, i.jsx)(h.HI, {
             location: y.intl.string(y.t.TdEu5X)
         }), (0, i.jsx)(d.NPJ, {
-            theme: g,
-            children: e => (0, i.jsxs)(p.A, {
+            theme: p,
+            children: e => (0, i.jsxs)(g.A, {
                 className: e,
                 toolbar: (0, i.jsx)(O, {}),
                 role: "navigation",
                 "aria-labelledby": w,
                 scrollable: !0,
-                children: [(0, i.jsx)(p.A.Icon, {
+                children: [(0, i.jsx)(g.A.Icon, {
                     icon: d.$yI,
                     "aria-hidden": !0
-                }), (0, i.jsx)(p.A.Title, {
+                }), (0, i.jsx)(g.A.Title, {
                     id: w,
                     children: y.intl.string(y.t.TdEu5X)
-                }), (0, i.jsx)(p.A.Divider, {}), (0, i.jsx)(d.VQ0, {
+                }), (0, i.jsx)(g.A.Divider, {}), (0, i.jsx)(d.VQ0, {
                     "aria-label": y.intl.string(y.t.TdEu5X),
                     selectedItem: R,
                     type: "top-pill",

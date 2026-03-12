@@ -1,18 +1,18 @@
 /** chunk id: 104954 params = (module,exports,require) **/
 n.d(t, {
     $: () => o,
-    s: () => r
+    s: () => a
 });
 var i = n(562465),
     s = n(73153),
     l = n(631670),
-    a = n(652215);
+    r = n(652215);
 
-function r() {
+function a() {
     return s.h.dispatch({
         type: "LOAD_DATA_HARVEST_TYPE_START"
     }), i.Bo.get({
-        url: a.Rsh.USER_HARVEST,
+        url: r.Rsh.USER_HARVEST,
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(e => {

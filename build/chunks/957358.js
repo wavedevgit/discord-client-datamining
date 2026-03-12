@@ -55,20 +55,20 @@ class d extends r.PureComponent {
             _ = this.maxValue;
         h.strokeStyle = a, h.lineWidth = d;
         let m = i.height - h.lineWidth,
-            p = h.createLinearGradient(0, 0, 0, m);
-        if (null != u) p.addColorStop(0, u);
+            g = h.createLinearGradient(0, 0, 0, m);
+        if (null != u) g.addColorStop(0, u);
         else {
             let {
                 r: e,
                 g: t,
                 b: n
             } = s.E2(a);
-            p.addColorStop(0, `rgba(${e}, ${t}, ${n}, 0)`)
+            g.addColorStop(0, `rgba(${e}, ${t}, ${n}, 0)`)
         }
-        p.addColorStop(1, this.fillColor), h.fillStyle = p;
-        let g = r.length >= o ? o : r.length;
+        g.addColorStop(1, this.fillColor), h.fillStyle = g;
+        let p = r.length >= o ? o : r.length;
         h.setTransform(1, 0, 0, -1, 0, i.height), h.clearRect(0, 0, i.width, i.height), h.translate(0, .5 * h.lineWidth);
-        let E = Math.floor(i.width / (g - 3)),
+        let E = Math.floor(i.width / (p - 3)),
             I = .5 * E;
         h.translate(E - E * A, 0), h.beginPath();
         let f = -E;

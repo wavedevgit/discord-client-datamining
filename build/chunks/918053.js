@@ -1,12 +1,12 @@
 /** chunk id: 918053 params = (module,exports,require) **/
 n.d(t, {
-    $: () => g
+    $: () => m
 });
 var i = n(391973),
     s = n(395011),
     l = n(897720),
-    a = n(419954),
-    r = n(555528),
+    r = n(419954),
+    a = n(555528),
     o = n(780964),
     d = n(790076),
     c = n(652215);
@@ -16,10 +16,10 @@ var u = n(985018);
 function _() {
     let e = s.A.getWidgetByType(c.uss.VOICE_V3);
     if (null == e) return null;
-    let t = r.A.getWidget(e.id);
+    let t = a.A.getWidget(e.id);
     return null != t && (0, l.ZO)(t) ? t : null
 }
-let g = (0, a.sN)(o.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
+let m = (0, r.sN)(o.X.OVERLAY_VOICE_WIDGET_MAX_USERS, {
     useTitle: () => u.intl.string(u.t["X/Uyzc"]),
     minValue: d.G6 - 1,
     maxValue: d.PP,

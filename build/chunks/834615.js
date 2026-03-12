@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(341915),
     _ = n(33621),
     m = n(714510),
-    p = n(890687),
-    g = n(579473),
+    g = n(890687),
+    p = n(579473),
     E = n(18437),
     I = n(590202),
     f = n(710969),
@@ -32,20 +32,20 @@ var i = n(627968),
     L = n(654487),
     R = n(652215),
     P = n(985018),
-    j = n(928921);
+    D = n(928921);
 
-function D(e) {
+function j(e) {
     let {
         quest: t
-    } = e, n = (0, p.S5)(t.config.expiresAt), r = (0, p.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
+    } = e, n = (0, g.S5)(t.config.expiresAt), r = (0, g.S5)(t.config.rewardsConfig.rewardsExpireAt), l = (0, s.bG)([c.A], () => c.A.getState().theme), a = (0, o.Mwr)(l) ? R.NJ8.DARK : R.NJ8.LIGHT, d = t.userStatus?.completedAt != null;
     return (0, i.jsxs)("div", {
-        className: j.R_,
+        className: D.R_,
         children: [(0, i.jsx)("img", {
-            className: j.tb,
+            className: D.tb,
             alt: "",
-            src: (0, g.tW)(t, g.fY.GAME_TILE, a).url
+            src: (0, p.tW)(t, p.fY.GAME_TILE, a).url
         }), (0, i.jsxs)("div", {
-            className: j.UD,
+            className: D.UD,
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-strong",
@@ -69,9 +69,9 @@ function M(e) {
     let {
         nodeRef: t,
         quest: n
-    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [g, T] = r.useState(!1), R = r.useCallback(() => T(!0), []), M = r.useCallback(() => T(!1), []), {
+    } = e, l = (0, E.Ut)(), c = (0, s.bG)([A.A], () => A.A.isEnrolling(n.id), [n]), [p, T] = r.useState(!1), R = r.useCallback(() => T(!0), []), M = r.useCallback(() => T(!1), []), {
         launchInGameActivity: w
-    } = (0, p.zW)(n), U = _.t.useConfig({
+    } = (0, g.zW)(n), U = _.t.useConfig({
         location: L.rE.ACTIVITY_PANEL
     }), G = (0, v.Pd)(n), k = r.useCallback(e => {
         e.stopPropagation()
@@ -105,22 +105,22 @@ function M(e) {
         quest: n,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL
-    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, p.fc)(n), K = (0, m.mU)({
+    }), Y = n.userStatus?.enrolledAt != null, W = n.userStatus?.completedAt != null, q = (0, g.fc)(n), z = (0, m.mU)({
         quest: n,
         taskDetails: q,
         location: L.rE.ACTIVITY_PANEL,
         questContent: h.uF.ACTIVITY_PANEL,
         sourceQuestContent: h.uF.ACTIVITY_PANEL,
         gameProfileSource: d.Ob.QuestActivityPanel
-    }), z = (0, C.vA)(n), $ = (0, m.NA)({
+    }), K = (0, C.vA)(n), $ = (0, m.NA)({
         quest: n
-    }), Q = z ? $ : P.intl.string(P.t.l7E81v);
+    }), Q = K ? $ : P.intl.string(P.t.l7E81v);
     return (0, i.jsxs)("div", {
         ref: e => {
             t.current = e
         },
-        className: a()(j.iE, {
-            [j.tJ]: Y
+        className: a()(D.iE, {
+            [D.tJ]: Y
         }),
         onClick: k,
         onKeyPress: k,
@@ -129,8 +129,8 @@ function M(e) {
         onBlur: M,
         onMouseLeave: M,
         children: [(0, i.jsxs)("div", {
-            className: j.Wp,
-            children: [Y ? (0, i.jsx)(D, {
+            className: D.Wp,
+            children: [Y ? (0, i.jsx)(j, {
                 quest: n
             }) : (0, i.jsx)(y.A, {}), (0, i.jsx)(N.C, {
                 quest: n,
@@ -144,24 +144,24 @@ function M(e) {
                     children: (0, i.jsx)(o.jNK, {
                         size: "md",
                         color: "currentColor",
-                        className: j.Bx
+                        className: D.Bx
                     })
                 })
             })]
         }), !Y && (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(D, {
+            children: [(0, i.jsx)(j, {
                 quest: n
             }), (0, i.jsx)("div", {
-                className: j.GA,
+                className: D.GA,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: K
+                    children: z
                 })
             })]
         }), Y && !W && (0, i.jsx)(b.A, {
-            autoplay: g,
-            className: j.t3,
+            autoplay: p,
+            className: D.t3,
             quest: n,
             questContent: h.uF.ACTIVITY_PANEL,
             location: L.rE.ACTIVITY_PANEL,
@@ -169,10 +169,10 @@ function M(e) {
             sourceQuestContent: h.uF.ACTIVITY_PANEL,
             gameProfileSource: d.Ob.QuestActivityPanel
         }), (0, i.jsxs)("div", {
-            className: j.uz,
+            className: D.uz,
             children: [!Y && (0, i.jsxs)(o.ButtonGroup, {
                 size: "sm",
-                direction: z ? "vertical" : "horizontal",
+                direction: K ? "vertical" : "horizontal",
                 fullWidth: !0,
                 children: [(0, i.jsx)(o.Button, {
                     variant: "secondary",

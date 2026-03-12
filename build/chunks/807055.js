@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(64700),
     s = n(989349),
     l = n.n(s),
-    a = n(405269);
-let r = l().duration(30, "days");
+    r = n(405269);
+let a = l().duration(30, "days");
 
 function o(e, t) {
-    return i.useMemo(() => (0, a.i$)(t ? null != e.outboundRedemptionEndDate ? l()(e.outboundRedemptionEndDate) : l()(e.endDate).add(r) : l()(e.endDate), "LL"), [e, t])
+    return i.useMemo(() => (0, r.i$)(t ? null != e.outboundRedemptionEndDate ? l()(e.outboundRedemptionEndDate) : l()(e.endDate).add(a) : l()(e.endDate), "LL"), [e, t])
 }

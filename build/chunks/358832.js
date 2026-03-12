@@ -1,6 +1,6 @@
 /** chunk id: 358832 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(64700),
@@ -59,6 +59,6 @@ class m extends r.PureComponent {
         }) : null
     }
 }
-let p = l.Ay.connectStores([u.A], () => ({
+let g = l.Ay.connectStores([u.A], () => ({
     mode: u.A.getState()
 }))(m)

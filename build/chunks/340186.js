@@ -5,36 +5,36 @@ n.d(t, {
 var i = n(934551),
     s = n(554146),
     l = n(419954),
-    a = n(933297),
-    r = n(780964),
+    r = n(933297),
+    a = n(780964),
     o = n(358776),
     d = n(850060),
     c = n(729770),
     u = n(176817),
     _ = n(74973),
-    g = n(256464),
-    m = n(982770),
+    m = n(256464),
+    g = n(982770),
     A = n(461158),
     h = n(81453),
-    p = n(289882),
-    x = n(427887),
-    E = n(222323),
-    T = n(411476),
-    S = n(985018);
-let C = (0, l.t_)(r.X.CHAT_PANEL, {
-        useTitle: () => S.intl.string(S.t["/VQax8"]),
-        buildLayout: () => [m.M, u.f, _.z, x.J, h.n, E.p, T.U, A.W, p.o, g.c]
+    x = n(289882),
+    p = n(427887),
+    T = n(222323),
+    E = n(411476),
+    C = n(985018);
+let S = (0, l.t_)(a.X.CHAT_PANEL, {
+        useTitle: () => C.intl.string(C.t["/VQax8"]),
+        buildLayout: () => [g.M, u.f, _.z, p.J, h.n, T.p, E.U, A.W, x.o, m.c]
     }),
     f = [{
-        badgeType: a.Xi.STRONGLY_DISCOURAGED_CUSTOM,
+        badgeType: r.Xi.STRONGLY_DISCOURAGED_CUSTOM,
         dismissibleContent: s.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: c.L
     }],
-    N = (0, l.i4)(r.X.CHAT_SIDEBAR_ITEM, {
-        useTitle: () => S.intl.string(S.t["/VQax8"]),
+    N = (0, l.i4)(a.X.CHAT_SIDEBAR_ITEM, {
+        useTitle: () => C.intl.string(C.t["/VQax8"]),
         icon: i.ChatIcon,
         usePredicate: () => !(0, o.Ci)("ChatSidebarItem"),
         useMenu: d.A,
         getDismissibleBadges: () => f,
-        buildLayout: () => [C]
+        buildLayout: () => [S]
     })

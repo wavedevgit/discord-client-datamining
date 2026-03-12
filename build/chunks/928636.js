@@ -14,8 +14,8 @@ var i, r = n(627968),
     h = n(397927),
     _ = n(956793),
     m = n(492684),
-    p = n(212245),
-    g = n(573648),
+    g = n(212245),
+    p = n(573648),
     E = n(447031),
     I = n(908289),
     f = n(682261),
@@ -31,8 +31,8 @@ var i, r = n(627968),
     L = n(587895),
     R = n(47167),
     P = n(402216),
-    j = n(939341),
-    D = n(681827),
+    D = n(939341),
+    j = n(681827),
     M = n(755395),
     w = n(826673),
     U = n(609425),
@@ -45,8 +45,8 @@ var i, r = n(627968),
     Y = n(594262),
     W = n(378570),
     q = n(345942),
-    K = n(804980),
-    z = n(260509),
+    z = n(804980),
+    K = n(260509),
     $ = n(961350),
     Q = n(734057),
     X = n(287809),
@@ -180,7 +180,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
         }
         return null
     },
-    ep = e => {
+    eg = e => {
         let {
             activity: t,
             analyticsLocations: n
@@ -216,7 +216,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
             })]
         })
     };
-var eg = ((i = eg || {}).XBOX = "XBOX", i.SPOTIFY = "SPOTIFY", i.MULTIPLE = "MULTIPLE", i);
+var ep = ((i = ep || {}).XBOX = "XBOX", i.SPOTIFY = "SPOTIFY", i.MULTIPLE = "MULTIPLE", i);
 let eE = e => {
     let t, {
         src: n,
@@ -260,7 +260,7 @@ let eE = e => {
         children: t
     }) : t
 };
-eE.Src = eg;
+eE.Src = ep;
 let eI = e => {
     let {
         priorityUser: t,
@@ -339,7 +339,7 @@ ef.Header = eI, ef.Body = e => {
         partySize: i,
         members: a,
         onChannelContextMenu: o
-    } = e, d = l.useRef(null), c = (0, R.Ay)(n, !0), u = (0, z.Iv)(t, 32), A = (0, z.Rb)(t);
+    } = e, d = l.useRef(null), c = (0, R.Ay)(n, !0), u = (0, K.Iv)(t, 32), A = (0, K.Rb)(t);
     return (0, r.jsx)(eu, {
         children: (0, r.jsxs)("div", {
             className: ea.iO,
@@ -416,7 +416,7 @@ ef.Header = eI, ef.Body = e => {
                 partySize: i,
                 members: l
             })]
-        }), (0, r.jsx)(ep, {
+        }), (0, r.jsx)(eg, {
             activity: a,
             analyticsLocations: s
         })]
@@ -440,7 +440,7 @@ ef.Header = eI, ef.Body = e => {
     } = e_({
         activity: t,
         user: l
-    }), _ = (0, j.C4)(o)?.src ?? n(960648), m = (0, x.A)({
+    }), _ = (0, D.C4)(o)?.src ?? n(960648), m = (0, x.A)({
         application: o,
         analyticsLocations: a
     });
@@ -488,7 +488,7 @@ ef.Header = eI, ef.Body = e => {
                 activity: t,
                 user: l
             })]
-        }), (0, r.jsx)(ep, {
+        }), (0, r.jsx)(eg, {
             activity: t,
             analyticsLocations: a
         })]
@@ -558,7 +558,7 @@ ef.Header = eI, ef.Body = e => {
             assets: u,
             application_id: A
         } = i;
-    return null != u && (0, N.A)(i) && (t = (0, r.jsx)(D.A, {
+    return null != u && (0, N.A)(i) && (t = (0, r.jsx)(j.A, {
         className: ea.E6,
         aspectRatio: 16 / 9,
         children: (0, r.jsxs)(h.DUT, {
@@ -583,7 +583,7 @@ ef.Header = eI, ef.Body = e => {
             }),
             children: [(0, r.jsx)("img", {
                 alt: "",
-                src: g.A.get(er.fg2.TWITCH).icon.lightSVG,
+                src: p.A.get(er.fg2.TWITCH).icon.lightSVG,
                 className: ea.Gq
             }), (0, r.jsxs)("div", {
                 children: [eo(d), null != c ? ed(c) : null]
@@ -649,14 +649,14 @@ ef.Header = eI, ef.Body = e => {
         })
     }, [c]);
     let u = (0, d.yK)([X.default, $.default], () => Array.from(a).map(e => $.default.getId() === e ? null : X.default.getUser(e)).filter(et.Vq)),
-        A = (0, p.p)(),
+        A = (0, g.p)(),
         {
             analyticsLocations: _
         } = (0, y.Ay)();
     if (null == c) return null;
     let m = L.A.getApplication(c);
     if (null == m) return null;
-    let g = null != t.created_at && t.created_at > 0 ? {
+    let p = null != t.created_at && t.created_at > 0 ? {
             start: t.created_at
         } : void 0,
         I = (0, ee.uD)(m.id, s, 300);
@@ -673,13 +673,13 @@ ef.Header = eI, ef.Body = e => {
                     variant: "text-sm/semibold",
                     children: m.name
                 })
-            }), null != g ? (0, r.jsx)("div", {
+            }), null != p ? (0, r.jsx)("div", {
                 className: ea.T$,
                 children: (0, r.jsx)(h.Text, {
                     color: "text-muted",
                     variant: "text-sm/normal",
                     children: (0, r.jsx)(ec, {
-                        timestamps: g
+                        timestamps: p
                     })
                 })
             }) : null]
@@ -691,7 +691,7 @@ ef.Header = eI, ef.Body = e => {
                 className: ea.pV
             }) : null, (0, r.jsxs)("div", {
                 className: ea.d4,
-                children: [(0, r.jsx)(K.LN, {
+                children: [(0, r.jsx)(z.LN, {
                     users: u,
                     guildId: i,
                     channelId: n.id

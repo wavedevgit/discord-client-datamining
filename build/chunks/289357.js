@@ -17,8 +17,8 @@ var i, r = n(627968),
     h = n(214884),
     _ = n(976860),
     m = n(323443),
-    p = n(63995),
-    g = n(69407),
+    g = n(63995),
+    p = n(69407),
     E = n(110618),
     I = n(446600),
     f = n(964175),
@@ -34,8 +34,8 @@ var i, r = n(627968),
     L = n(435328),
     R = n(539446),
     P = n(563312),
-    j = n(508654),
-    D = n(9448),
+    D = n(508654),
+    j = n(9448),
     M = n(974930),
     w = n(666394),
     U = n(988794),
@@ -156,15 +156,15 @@ function Y(e) {
     let {
         guildEvent: t,
         noticeType: n
-    } = e, i = (0, D.oF)(t), a = null != i ? (0, L.l)(i, !0) : null, o = (0, D.WN)(t), c = (0, u.gU)(o), {
+    } = e, i = (0, j.oF)(t), a = null != i ? (0, L.l)(i, !0) : null, o = (0, j.WN)(t), c = (0, u.gU)(o), {
         startTime: A,
         endTime: h
     } = (0, P.Ay)(t), {
         startDateTimeString: _,
         upcomingEvent: m,
-        diffMinutes: p
-    } = (0, M.CC)(A.toISOString(), h?.toISOString()), g = m ? p > 0 ? k.intl.formatToPlainString(k.t.PQlCWk, {
-        minutes: p
+        diffMinutes: g
+    } = (0, M.CC)(A.toISOString(), h?.toISOString()), p = m ? g > 0 ? k.intl.formatToPlainString(k.t.PQlCWk, {
+        minutes: g
     }) : k.intl.string(k.t.WINqKV) : k.intl.formatToPlainString(k.t.DC6h3G, {
         date: _
     });
@@ -214,7 +214,7 @@ function Y(e) {
                 color: "text-default",
                 variant: "text-xs/normal",
                 className: V.Sv,
-                children: g
+                children: p
             })]
         }), (0, r.jsxs)("div", {
             className: s()(V.fI, V.pF),
@@ -244,7 +244,7 @@ function Y(e) {
 function W(e) {
     let {
         guildEvent: t
-    } = e, n = (0, D.oF)(t);
+    } = e, n = (0, j.oF)(t);
     return null == n ? null : (0, r.jsx)(B, {
         onClickCloseIcon: () => (0, y.iF)({
             eventId: t?.id
@@ -286,7 +286,7 @@ function q(e) {
     })
 }
 
-function K(e) {
+function z(e) {
     let {
         channel: t,
         label: n
@@ -306,11 +306,11 @@ function K(e) {
     })
 }
 
-function z(e) {
+function K(e) {
     let {
         stageInstance: t,
         channel: n
-    } = e, i = (0, o.yK)([p.A], () => [...new Set(p.A.getMutableParticipants(n.id, g.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([p.A], () => p.A.getParticipantCount(n.id, g.ip.AUDIENCE), [n.id]), a = k.intl.formatToPlainString(k.t["+v2pN2"], {
+    } = e, i = (0, o.yK)([g.A], () => [...new Set(g.A.getMutableParticipants(n.id, p.ip.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.bG)([g.A], () => g.A.getParticipantCount(n.id, p.ip.AUDIENCE), [n.id]), a = k.intl.formatToPlainString(k.t["+v2pN2"], {
         count: `${l}`
     });
     return (0, r.jsx)(B, {
@@ -377,7 +377,7 @@ function Q(e) {
                 className: V.c8,
                 children: (0, E.c)(a, u, t?.id, n.length)
             })]
-        }) : null, A && null == h && (0, r.jsx)(K, {
+        }) : null, A && null == h && (0, r.jsx)(z, {
             channel: t,
             label: _
         })]
@@ -388,7 +388,7 @@ let X = l.memo(function(e) {
         guild: t
     } = e, {
         showRedesignedLiveChannelNotice: n
-    } = (0, A.P)(!0), i = (0, R.V)(t.id), l = (0, j.BP)(t.id), a = (0, j.WG)(t.id), s = (0, o.bG)([I.A], () => I.A.getStageInstanceByChannel(i?.id), [i]), {
+    } = (0, A.P)(!0), i = (0, R.V)(t.id), l = (0, D.BP)(t.id), a = (0, D.WG)(t.id), s = (0, o.bG)([I.A], () => I.A.getStageInstanceByChannel(i?.id), [i]), {
         isStageNoticeHidden: d,
         isEventNoticeHidden: c
     } = (0, o.cf)([b.A], () => ({
@@ -402,10 +402,10 @@ let X = l.memo(function(e) {
     if (n) return (0, r.jsx)(h.A, {
         guild: t
     });
-    null == l || c ? _ && (u = (0, r.jsx)(z, {
+    null == l || c ? _ && (u = (0, r.jsx)(K, {
         stageInstance: s,
         channel: i
-    })) : l.entity_type === U.Ps.STAGE_INSTANCE && _ ? u = (0, r.jsx)(z, {
+    })) : l.entity_type === U.Ps.STAGE_INSTANCE && _ ? u = (0, r.jsx)(K, {
         stageInstance: s,
         channel: i
     }) : l.entity_type === U.Ps.EXTERNAL ? u = (0, r.jsx)(W, {

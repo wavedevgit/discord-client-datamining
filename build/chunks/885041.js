@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(956793),
     _ = n(271866),
     m = n(18422),
-    p = n(159084),
-    g = n(775602),
+    g = n(159084),
+    p = n(775602),
     E = n(502229),
     I = n(836753),
     f = n(196492),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(105220),
     R = n(10088),
     P = n(778830),
-    j = n(619036),
-    D = n(131876),
+    D = n(619036),
+    j = n(131876),
     M = n(5591),
     w = n(746793),
     U = n(272613),
@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(811917),
     W = n(746094),
     q = n(257402),
-    K = n(216954),
-    z = n(735831),
+    z = n(216954),
+    K = n(735831),
     $ = n(136334),
     Q = n(142120),
     X = n(507263),
@@ -69,8 +69,8 @@ var i = n(627968),
     eh = n(682492),
     e_ = n(584257),
     em = n(64585),
-    ep = n(281913),
-    eg = n(334116),
+    eg = n(281913),
+    ep = n(334116),
     eE = n(194970),
     eI = n(414967),
     ef = n(499454),
@@ -86,8 +86,8 @@ var i = n(627968),
     eL = n(138298),
     eR = n(940382),
     eP = n(194045),
-    ej = n(212371),
-    eD = n(882991),
+    eD = n(212371),
+    ej = n(882991),
     eM = n(863922),
     ew = n(353202),
     eU = n(823162),
@@ -100,8 +100,8 @@ var i = n(627968),
     eY = n(840065),
     eW = n(32294),
     eq = n(639823),
-    eK = n(961350),
-    ez = n(761640),
+    ez = n(961350),
+    eK = n(761640),
     e$ = n(734057),
     eQ = n(650048),
     eX = n(71393),
@@ -135,7 +135,7 @@ let ti = !1;
         }
     })
 }));
-let tr = (0, p.z)(e => {
+let tr = (0, g.z)(e => {
         let {
             location: t
         } = e;
@@ -168,7 +168,7 @@ let tr = (0, p.z)(e => {
             })
         })
     }),
-    tl = (0, p.z)(e => {
+    tl = (0, g.z)(e => {
         let {
             location: t
         } = e, r = (0, eh.parsePlaygroundUrl)(t.pathname);
@@ -199,11 +199,11 @@ let tr = (0, p.z)(e => {
             })
         })
     }),
-    ta = s.Ay.connectStores([Q.A, eQ.A, eK.default], () => ({
+    ta = s.Ay.connectStores([Q.A, eQ.A, ez.default], () => ({
         isConnected: Q.A.isConnected(),
         defaultRoute: eQ.A.defaultRoute,
         defaultRouteFallback: eQ.A.fallbackRoute,
-        token: eK.default.getToken()
+        token: ez.default.getToken()
     }))(class extends r.Component {
         render() {
             let {
@@ -226,7 +226,7 @@ let tr = (0, p.z)(e => {
             return null
         }
     }),
-    ts = (0, p.z)((0, b.C)(L.A, null, {
+    ts = (0, g.z)((0, b.C)(L.A, null, {
         passProps: !1
     })),
     to = (0, b.C)(Z.default, null, {
@@ -251,7 +251,7 @@ function tc(e) {
 let tu = [{
     path: [e8.BVt.ACTIVITY_DETAILS(":applicationId")],
     render: function(e) {
-        return (0, e5.wR)() || eK.default.getLoginStatus() === e8.aUe.LOGGING_IN || !eK.default.allowLogoutRedirect() ? ts(e) : (0, i.jsx)(N.A, {
+        return (0, e5.wR)() || ez.default.getLoginStatus() === e8.aUe.LOGGING_IN || !ez.default.allowLogoutRedirect() ? ts(e) : (0, i.jsx)(N.A, {
             applicationId: e.match.params.applicationId
         })
     }
@@ -523,10 +523,10 @@ class t_ extends r.PureComponent {
     historyUnlisten = () => {};
     rewriterUnlisten = () => {};
     componentDidMount() {
-        e3.Ay.setZoomFactor(g.A.zoom), eO.A.init(), O.A.initialize(), eE.A.initialize(), q.A.initialize(), eq.A.initialize(), K.A.initialize(), eC.A.initialize(), k.A.initialize(), es.A.initialize(), E.A.init(), $.A.init(), z.A.init(), eA.A.initialize(), S.A.initialize(), H.A.initialize(), eT.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eW.A.initialize(), er.Ay.initialize(), eg.A.initialize(), C.A.initialize(), el.A.init(), j.A.init(), e9.A.init(), f.A.initialize(), eU.A.init(), e7.A.init(), eV.A.init(), ej.A.initialize(), eD.A.initialize(), ek.A.initialize(), eH.A.init(), B.A.initialize(), I.A.initialize(), eP.A.initialize(), em.A.initialize(), e_.A.initialize(), ep.A.initialize(), D.A.initialize(), M.A.initialize(), W.A.initialize(), ea.A.initialize(), eo.A.initialize(), eN.A.initialize(), eI.A.initialize(), G.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eS.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.A.addRouteChangeListener(this.handleHistoryChange)
+        e3.Ay.setZoomFactor(p.A.zoom), eO.A.init(), O.A.initialize(), eE.A.initialize(), q.A.initialize(), eq.A.initialize(), z.A.initialize(), eC.A.initialize(), k.A.initialize(), es.A.initialize(), E.A.init(), $.A.init(), K.A.init(), eA.A.initialize(), S.A.initialize(), H.A.initialize(), eT.A.initialize(), T.Ay.initialize(), F.Ay.initialize(), eW.A.initialize(), er.Ay.initialize(), ep.A.initialize(), C.A.initialize(), el.A.init(), D.A.init(), e9.A.init(), f.A.initialize(), eU.A.init(), e7.A.init(), eV.A.init(), eD.A.initialize(), ej.A.initialize(), ek.A.initialize(), eH.A.init(), B.A.initialize(), I.A.initialize(), eP.A.initialize(), em.A.initialize(), e_.A.initialize(), eg.A.initialize(), j.A.initialize(), M.A.initialize(), W.A.initialize(), ea.A.initialize(), eo.A.initialize(), eN.A.initialize(), eI.A.initialize(), G.A.initialize(), P.A.initialize(), x.A.initialize(), this.rewriterUnlisten = eS.A.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eS.A.addRouteChangeListener(this.handleHistoryChange)
     }
     componentWillUnmount() {
-        eO.A.terminate(), eq.A.terminate(), eC.A.terminate(), eE.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eW.A.terminate(), C.A.terminate(), eT.A.terminate(), eg.A.terminate(), ek.A.terminate(), f.A.terminate(), B.A.terminate(), eo.A.terminate(), I.A.terminate(), eN.A.terminate(), eP.A.terminate(), em.A.terminate(), e_.A.terminate(), ep.A.terminate(), D.A.terminate(), M.A.terminate(), eI.A.terminate(), G.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), ea.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+        eO.A.terminate(), eq.A.terminate(), eC.A.terminate(), eE.A.terminate(), O.A.terminate(), T.Ay.terminate(), F.Ay.terminate(), eW.A.terminate(), C.A.terminate(), eT.A.terminate(), ep.A.terminate(), ek.A.terminate(), f.A.terminate(), B.A.terminate(), eo.A.terminate(), I.A.terminate(), eN.A.terminate(), eP.A.terminate(), em.A.terminate(), e_.A.terminate(), eg.A.terminate(), j.A.terminate(), M.A.terminate(), eI.A.terminate(), G.A.terminate(), Y.A.terminate(), P.A.terminate(), x.A.terminate(), W.A.terminate(), ea.A.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
     }
     handleHistoryChange(e) {
         let {
@@ -535,7 +535,7 @@ class t_ extends r.PureComponent {
         } = e;
         ! function(e) {
             if (Q.A.isConnected() || Q.A.isTryingToConnect()) return;
-            let t = eK.default.getToken();
+            let t = ez.default.getToken();
             null == t || (0, eb.Q)(e) && d.A.startSession(t)
         }(t),
         function(e, t) {
@@ -550,7 +550,7 @@ class t_ extends r.PureComponent {
             if (o && _ && A.A.selectGuild(i), o && d) {
                 let n = eJ.A.getChannelId(u),
                     o = n !== r,
-                    d = null != ez.Ay.getGuildSidebarState(i);
+                    d = null != eK.Ay.getGuildSidebarState(i);
                 if (!ti || _ || o || null != a) {
                     ti = !0, h.default.selectChannel({
                         guildId: i,
@@ -562,8 +562,8 @@ class t_ extends r.PureComponent {
                     } = (0, l.parse)(t);
                     null != e && eM.Ay.setSelectedSummary(r, e)
                 }
-                if (d && o && null != r && null != ez.Ay.getCurrentSidebarChannelId(r) && eL.A.closeChannelSidebar(r), null != s && c) {
-                    let e = ez.Ay.getCurrentSidebarChannelId(n),
+                if (d && o && null != r && null != eK.Ay.getCurrentSidebarChannelId(r) && eL.A.closeChannelSidebar(r), null != s && c) {
+                    let e = eK.Ay.getCurrentSidebarChannelId(n),
                         t = e !== s;
                     if (null != r && null != s && t)
                         if (d)(0, ey.bG)(e8.BVt.CHANNEL(i, s, a));

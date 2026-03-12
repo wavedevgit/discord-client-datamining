@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(442433),
     _ = n(793574),
     m = n(688810),
-    p = n(384059),
-    g = n(480890),
+    g = n(384059),
+    p = n(480890),
     E = n(160761),
     I = n(173660),
     f = n(430452),
@@ -36,8 +36,8 @@ function O(e) {
     } = e, O = r.useRef(null), {
         mute: L,
         suppress: R
-    } = (0, I.A)(t), P = (0, s.bG)([f.Ay], () => f.Ay.isDeaf()), j = L || R || P, [D, M] = r.useState(!1), w = t.getGuildId(), U = (0, T.VE)({
-        isSoundboardButtonDisabled: j
+    } = (0, I.A)(t), P = (0, s.bG)([f.Ay], () => f.Ay.isDeaf()), D = L || R || P, [j, M] = r.useState(!1), w = t.getGuildId(), U = (0, T.VE)({
+        isSoundboardButtonDisabled: D
     }), [G, k] = (0, E.DP)(U), {
         analyticsLocations: V,
         parentAnalyticsLocation: B
@@ -52,7 +52,7 @@ function O(e) {
                 guildId: w,
                 sourceAnalyticsLocations: V,
                 ...t,
-                onInteraction: (0, g.s)("SoundboardContextMenu", _.A.RTC_PANEL)
+                onInteraction: (0, p.s)("SoundboardContextMenu", _.A.RTC_PANEL)
             })
         })
     }
@@ -63,23 +63,23 @@ function O(e) {
             onMouseEnter: W,
             onMouseLeave: q
         }
-    } = (0, d.E)(), K = r.useCallback(() => {
-        j || M(!D)
-    }, [j, D]);
+    } = (0, d.E)(), z = r.useCallback(() => {
+        D || M(!j)
+    }, [D, j]);
     return (0, C.Vo)({
         event: x.jej.TOGGLE_SOUNDBOARD,
-        handler: K
+        handler: z
     }), (0, i.jsx)(m.f5, {
         value: V,
         children: (0, i.jsx)(c.m, {
             targetElementRef: O,
             text: L ? y.intl.string(y.t["Ox4/zU"]) : R ? y.intl.string(y.t["+YBKYI"]) : P ? y.intl.string(y.t.X1lQli) : y.intl.string(y.t["6EJvHt"]),
             asContainer: !0,
-            shouldShow: !D,
+            shouldShow: !j,
             children: (0, i.jsx)(A.YNO, {
                 targetElementRef: O,
                 animation: A.YNO.Animation.FADE,
-                shouldShow: D,
+                shouldShow: j,
                 position: "top",
                 onRequestClose: () => M(!1),
                 renderPopout: e => {
@@ -103,14 +103,14 @@ function O(e) {
                         "data-migration-pending": !0,
                         ...e,
                         className: a()(b.x6, b.Sq, {
-                            [b.W4]: D,
-                            [b.r9]: j
+                            [b.W4]: j,
+                            [b.r9]: D
                         }),
                         wrapperClassName: b.x6,
                         innerClassName: b.bk,
-                        disabled: j,
+                        disabled: D,
                         onClick: () => {
-                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!D), Y(), (0, p.X)(B, p.O.SOUNDBOARD)
+                            null != G && G !== o.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && k(v.i.UNKNOWN), M(!j), Y(), (0, g.X)(B, g.O.SOUNDBOARD)
                         },
                         onMouseEnter: e => {
                             l.onMouseEnter?.(e), W()

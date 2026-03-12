@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(944791),
     _ = n(775602),
     m = n(793574),
-    p = n(139286),
-    g = n(197111),
+    g = n(139286),
+    p = n(197111),
     E = n(10088),
     I = n(979286),
     f = n(726249),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(783531),
     R = n(334465),
     P = n(318346),
-    j = n(151252),
-    D = n(142270),
+    D = n(151252),
+    j = n(142270),
     M = n(531685),
     w = n(954571),
     U = n(676279),
@@ -46,8 +46,8 @@ var i = n(627968),
     Y = n(890687),
     W = n(590202),
     q = n(885459),
-    K = n(545986),
-    z = n(419818),
+    z = n(545986),
+    K = n(419818),
     $ = n(203879),
     Q = n(409389),
     X = n(881172),
@@ -70,12 +70,12 @@ var i = n(627968),
     e_ = n(602557);
 let em = r.createContext({});
 
-function ep(e) {
+function eg(e) {
     let {
         onLoadComplete: t
     } = e, {
         enabled: n
-    } = (0, j.Z)({
+    } = (0, D.Z)({
         location: ei.rE.QUEST_HOME_DESKTOP
     }), l = (0, c.bG)([_.A], () => _.A.useReducedMotion), s = (0, c.bG)([M.A], () => M.A.isFocused()), {
         ref: o,
@@ -110,7 +110,7 @@ function ep(e) {
     })
 }
 
-function eg(e) {
+function ep(e) {
     let {
         onLoadComplete: t
     } = e;
@@ -149,14 +149,14 @@ function eE(e) {
         isLoading: _
     } = (0, Y.vG)(), {
         enabled: m
-    } = (0, j.Z)({
+    } = (0, D.Z)({
         location: ei.rE.QUEST_HOME_DESKTOP
     }), {
-        enabled: p
+        enabled: g
     } = H.sn.useConfig({
         location: ei.rE.QUEST_HOME_DESKTOP
-    }), g = r.useRef(null), E = r.useCallback(() => {
-        g.current?.resetSortingFiltering()
+    }), p = r.useRef(null), E = r.useCallback(() => {
+        p.current?.resetSortingFiltering()
     }, []);
     return (0, i.jsxs)(et.X.Provider, {
         value: u,
@@ -164,7 +164,7 @@ function eE(e) {
             onScroll: d,
             ref: u,
             children: [function() {
-                if (!o && p) {
+                if (!o && g) {
                     if (A !== Y.NC.ALL) return null;
                     if (_) return (0, i.jsx)(ee.H, {});
                     if (null != h) return (0, i.jsx)(ee.A, {
@@ -176,12 +176,12 @@ function eE(e) {
             }(), (0, i.jsx)(v.A, {
                 children: (0, i.jsxs)("div", {
                     className: a()(eo.Qs, {
-                        [eo.HR]: p && !m && A !== Y.NC.ALL
+                        [eo.HR]: g && !m && A !== Y.NC.ALL
                     }),
                     children: [n, s ? A === Y.NC.CLAIMED ? (0, i.jsx)(X.A, {
                         onSelectTab: c
                     }) : A === Y.NC.PREVIEW_TOOL ? (0, i.jsx)(q.A, {}) : (0, i.jsx)(Q.A, {
-                        ref: g
+                        ref: p
                     }) : null]
                 })
             })]
@@ -206,14 +206,14 @@ let eI = function(e) {
     let {
         onScroll: U,
         scrollPosition: H
-    } = (0, S.G)(), q = z.A.getState().getUtmCurrentContext(), $ = (0, Z.W)(e => e.registerAssetLoad), Q = r.useRef(q);
+    } = (0, S.G)(), q = K.A.getState().getUtmCurrentContext(), $ = (0, Z.W)(e => e.registerAssetLoad), Q = r.useRef(q);
     r.useEffect(() => {
         Q.current = q
     }), r.useEffect(() => {
         let {
             current: e
         } = Q;
-        (0, p.x)({
+        (0, g.x)({
             name: d.ImpressionNames.QUEST_HOME,
             type: d.ImpressionTypes.VIEW,
             properties: {
@@ -227,7 +227,7 @@ let eI = function(e) {
     }, [v]);
     let {
         enabled: X
-    } = (0, j.Z)({
+    } = (0, D.Z)({
         location: ei.rE.QUEST_HOME_DESKTOP
     }), ee = r.useCallback(() => {
         X ? window.open(er.X7G.PAID_TERMS_ORBS) : window.open(G.A.getArticleURL(er.MVz.QUESTS_LEARN_MORE))
@@ -263,7 +263,7 @@ let eI = function(e) {
             i = e.get(Y.L1.TAB);
         if (eA && i === Y.NC.PREVIEW_TOOL) {
             let t = e.get(Y.L1.QUEST_ID);
-            g.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
+            p.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
                 type: ea.XK.QUEST_PREVIEW_TOOL,
                 params: {
                     questId: t,
@@ -277,7 +277,7 @@ let eI = function(e) {
             let t = (0, k.uJ)(n.hash) ? null : n.hash.substring(1),
                 r = e.get(Y.L1.SORT),
                 l = e.get(Y.L1.FILTER);
-            g.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
+            p.A.openNativeAppModal("quests", er.e$_.DEEP_LINK, {
                 type: ea.XK.QUEST_HOME,
                 params: {
                     questId: (0, k.uJ)(t) ? void 0 : t,
@@ -291,7 +291,7 @@ let eI = function(e) {
         t && (0, T.Dr)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING)
     }, [t]);
     let eh = r.useCallback(() => {
-            (0, K.navigateToQuestHome)({
+            (0, z.navigateToQuestHome)({
                 fromContent: V.uF.QUEST_HOME_MOVE_CALLOUT_DISCOVER
             }), w.default.track(er.HAw.QUEST_CONTENT_CLICKED, {
                 cta_name: W.Cy.VIEW_QUESTS,
@@ -334,7 +334,7 @@ let eI = function(e) {
                             onClick: eh
                         }),
                         className: eo.Gj,
-                        children: (0, i.jsx)(eg, {
+                        children: (0, i.jsx)(ep, {
                             onLoadComplete: $
                         })
                     }),
@@ -383,7 +383,7 @@ let eI = function(e) {
                         className: a()(eo.cI, eo.GF),
                         children: [(0, i.jsx)("div", {
                             className: a()(eo.nY, eo.vu)
-                        }), (0, i.jsx)(ep, {
+                        }), (0, i.jsx)(eg, {
                             onLoadComplete: $
                         })]
                     }),
@@ -391,9 +391,9 @@ let eI = function(e) {
                         selectedTabId: v,
                         handleTransition: e_,
                         tabs: M,
-                        endContent: (0, i.jsx)(D.SS, {
+                        endContent: (0, i.jsx)(j.SS, {
                             analyticsPage: er.liQ.GLOBAL_DISCOVERY_QUESTS,
-                            cardAlignment: D.cP.END,
+                            cardAlignment: j.cP.END,
                             ctaText: es.intl.string(es.t["J+vlIR"]),
                             ctaOnClick: eu
                         }),
@@ -413,7 +413,7 @@ let eI = function(e) {
                         className: eo.cI,
                         children: [(0, i.jsx)("div", {
                             className: eo.nY
-                        }), (0, i.jsx)(ep, {
+                        }), (0, i.jsx)(eg, {
                             onLoadComplete: $
                         })]
                     }),

@@ -18,7 +18,7 @@ let _ = () => {
         t = !(0, o.ueM)(),
         [n, _] = (0, d.RF)(t ? s.M.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, e?.version ?? 0, void 0, !0),
         m = (0, u.bv)(e),
-        p = null != n ? ((e, t) => {
+        g = null != n ? ((e, t) => {
             if (t?.type === l.G.COACHTIP || e.hasPreviewAssets) {
                 let n = null != t ? {
                     title: () => t.title,
@@ -63,11 +63,11 @@ let _ = () => {
             }
             return null
         })(m, e) : null,
-        g = i.useCallback(() => {
-            null != p && _(h.i.AUTO)
-        }, [p, _]);
+        p = i.useCallback(() => {
+            null != g && _(h.i.AUTO)
+        }, [g, _]);
     return {
-        shopButtonDisplayOptions: p,
-        dismissShopButtonDC: g
+        shopButtonDisplayOptions: g,
+        dismissShopButtonDC: p
     }
 }

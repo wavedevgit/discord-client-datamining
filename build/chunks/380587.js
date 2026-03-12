@@ -1,67 +1,67 @@
 /** chunk id: 380587 params = (module,exports,require) **/
 n.d(t, {
-    Ev: () => E,
-    Ow: () => T,
+    Ev: () => T,
+    Ow: () => E,
     Xj: () => N,
-    aK: () => S,
-    m3: () => C
+    aK: () => C,
+    m3: () => S
 });
 var i = n(627968),
     s = n(64700),
     l = n(687123),
-    a = n(397927),
-    r = n(935649),
+    r = n(397927),
+    a = n(935649),
     o = n(847599),
     d = n(36149),
     c = n(444802),
     u = n(207560),
     _ = n(558001),
-    g = n(866945),
-    m = n(840387),
+    m = n(866945),
+    g = n(840387),
     A = n(933297),
     h = n(975571),
-    p = n(835002),
-    x = n(985018);
+    x = n(835002),
+    p = n(985018);
 
-function E() {
+function T() {
     let e = (0, c.WX)();
-    return (0, i.jsx)(g.e, {
-        label: x.t.EUo0yj,
+    return (0, i.jsx)(m.e, {
+        label: p.t.EUo0yj,
         labelHook: () => {
             window.open(h.A.getArticleURL(e), "_blank")
         },
-        noticeType: p.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
+        noticeType: x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
     })
 }
 
-function T() {
-    return (0, i.jsx)(g.e, {
-        label: x.t.OX4ybh,
+function E() {
+    return (0, i.jsx)(m.e, {
+        label: p.t.OX4ybh,
         labelHook: () => {
-            r.A.showAgeVerificationGetStartedModal({
+            a.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
             })
         },
-        noticeType: p.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
+        noticeType: x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
     })
 }
 
-function S() {
-    let e = (0, m.Z)(),
+function C() {
+    let e = (0, g.Z)(),
         t = (0, c.WX)(),
         n = s.useCallback(() => {
-            window.open(h.A.getArticleURL(t), "_blank"), (0, _.N)(p.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, p.YX.LEARN_MORE)
+            window.open(h.A.getArticleURL(t), "_blank"), (0, _.N)(x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, x.YX.LEARN_MORE)
         }, [t]),
         l = s.useCallback(() => {
-            (0, _.N)(p.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, p.YX.VIEWED)
+            (0, _.N)(x.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, x.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (e) return {
             type: A.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: l,
-            useText: () => x.intl.format(x.t.EUo0yj, {
-                hook: (e, t) => (0, i.jsx)(a.MzZ, {
+            useText: () => p.intl.format(p.t.EUo0yj, {
+                hook: (e, t) => (0, i.jsx)(r.MzZ, {
                     onClick: n,
                     children: e
                 }, t)
@@ -70,25 +70,25 @@ function S() {
     }, [n, e, l])
 }
 
-function C() {
+function S() {
     let e = (0, u.SJ)(),
         t = (0, d.b8)(),
         n = e && !t,
         l = s.useCallback(() => {
-            r.A.showAgeVerificationGetStartedModal({
+            a.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
-            }), (0, _.N)(p.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, p.YX.LEARN_MORE)
+            }), (0, _.N)(x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, x.YX.LEARN_MORE)
         }, []),
         c = s.useCallback(() => {
-            (0, _.N)(p.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, p.YX.VIEWED)
+            (0, _.N)(x.YA.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE, x.YX.VIEWED)
         }, []);
     return s.useMemo(() => {
         if (n) return {
             type: A.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: c,
-            useText: () => x.intl.format(x.t.OX4ybh, {
-                hook: (e, t) => (0, i.jsx)(a.MzZ, {
+            useText: () => p.intl.format(p.t.OX4ybh, {
+                hook: (e, t) => (0, i.jsx)(r.MzZ, {
                     onClick: l,
                     children: e
                 }, t)
@@ -100,27 +100,27 @@ function C() {
 function f() {
     let e = (0, c.WX)();
     s.useEffect(() => {
-        (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.VIEWED)
+        (0, _.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.VIEWED)
     }, []);
     let t = s.useCallback(() => {
-            window.open(h.A.getArticleURL(e), "_blank"), (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.LEARN_MORE)
+            window.open(h.A.getArticleURL(e), "_blank"), (0, _.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.LEARN_MORE)
         }, [e]),
         n = s.useCallback(() => {
-            r.A.showAgeVerificationGetStartedModal({
+            a.A.showAgeVerificationGetStartedModal({
                 entryPoint: o.q1.CONTENT_AND_SOCIAL_NOTICE
-            }), (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.CONFIRM_AGE)
+            }), (0, _.N)(x.YA.AGE_CONFIRMATION_NOTICE, x.YX.CONFIRM_AGE)
         }, []);
-    return (0, i.jsx)(a.po8, {
-        messageType: a.YCn.INFO,
-        action: (0, i.jsx)(a.QWc, {
+    return (0, i.jsx)(r.po8, {
+        messageType: r.YCn.INFO,
+        action: (0, i.jsx)(r.QWc, {
             variant: "secondary",
             size: "sm",
             textVariant: "text-sm/medium",
-            text: x.intl.string(x.t.FDSSia),
+            text: p.intl.string(p.t.FDSSia),
             onClick: n
         }),
-        children: x.intl.format(x.t.mFgsfg, {
-            hook: (e, n) => (0, i.jsx)(a.MzZ, {
+        children: p.intl.format(p.t.mFgsfg, {
+            hook: (e, n) => (0, i.jsx)(r.MzZ, {
                 onClick: t,
                 children: e
             }, n)

@@ -1,13 +1,13 @@
 /** chunk id: 278616 params = (module,exports,require) **/
 n.d(t, {
-    R: () => r,
+    R: () => a,
     g: () => o
 });
 var i = n(417597),
     s = n(617617),
     l = n(632119),
-    a = n(444802);
-let r = () => {
+    r = n(444802);
+let a = () => {
         let e = (0, i.cf)([s.A], () => s.A.settings.textAndImages?.explicitContentSettings ?? (0, l.C$)());
         return {
             explicitContentGuilds: (0, l.Ys)({
@@ -25,16 +25,16 @@ let r = () => {
         }
     },
     o = () => {
-        let e = (0, i.cf)([s.A], () => s.A.settings.textAndImages?.goreContentSettings ?? (0, a.T4)());
+        let e = (0, i.cf)([s.A], () => s.A.settings.textAndImages?.goreContentSettings ?? (0, r.T4)());
         return {
-            goreContentGuilds: (0, a.gC)({
+            goreContentGuilds: (0, r.gC)({
                 setting: e?.goreContentGuilds
             }),
-            goreContentNonFriendDm: (0, a.gC)({
+            goreContentNonFriendDm: (0, r.gC)({
                 setting: e?.goreContentNonFriendDm,
                 isDm: !0
             }),
-            goreContentFriendDm: (0, a.gC)({
+            goreContentFriendDm: (0, r.gC)({
                 setting: e?.goreContentFriendDm,
                 isDm: !0,
                 isFriend: !0

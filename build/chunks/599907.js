@@ -17,8 +17,8 @@ var i = n(627968),
     h = n(635350),
     _ = n(726187),
     m = n(542678),
-    p = n(714991),
-    g = n(776231),
+    g = n(714991),
+    p = n(776231),
     E = n(486020),
     I = n(351022),
     f = n(244229),
@@ -43,7 +43,7 @@ function y(e) {
         }
     }, [t.id, l]), P = r.useCallback(e => {
         e && !_ && (m(!0), s?.(t.id))
-    }, [t.id, _, s]), j = r.useCallback(e => {
+    }, [t.id, _, s]), D = r.useCallback(e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -53,21 +53,21 @@ function y(e) {
                 guild: t
             })
         })
-    }, [t]), D = (0, u.Ay)(), M = t.features.has(C.GuildFeatures.HUB), w = r.useMemo(() => {
+    }, [t]), j = (0, u.Ay)(), M = t.features.has(C.GuildFeatures.HUB), w = r.useMemo(() => {
         let e = E.Ay.getGuildDiscoverySplashURL({
             id: t.id,
             splash: t.discoverySplash,
-            size: 300 * (0, g.mZ)()
+            size: 300 * (0, p.mZ)()
         });
         if (null != e) return e;
         if (M) return v;
-        switch (D) {
+        switch (j) {
             case C.NJ8.DARK:
                 return S;
             case C.NJ8.LIGHT:
                 return x
         }
-    }, [t.discoverySplash, t.id, M, D]), U = r.useMemo(() => E.Ay.getGuildIconURL({
+    }, [t.discoverySplash, t.id, M, j]), U = r.useMemo(() => E.Ay.getGuildIconURL({
         id: t.id,
         icon: t.icon,
         size: 48
@@ -90,7 +90,7 @@ function y(e) {
                 className: N.Nr,
                 onClick: R,
                 disabled: I,
-                onContextMenu: j,
+                onContextMenu: D,
                 "aria-label": T.intl.string(T.t["M9wQ+f"]),
                 children: [(0, i.jsxs)("div", {
                     className: N.wx,
@@ -132,7 +132,7 @@ function y(e) {
                     className: N.gI,
                     children: [(0, i.jsxs)("div", {
                         className: N.DD,
-                        children: [(0, i.jsx)(p.A, {
+                        children: [(0, i.jsx)(g.A, {
                             className: N.n2,
                             guild: t,
                             tooltipColor: d.STz.Colors.PRIMARY

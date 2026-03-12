@@ -16,19 +16,19 @@ var r = n(503698),
     h = n(379848),
     _ = n(193699),
     m = n(153488),
-    p = n(426389),
-    g = n(652215),
+    g = n(426389),
+    p = n(652215),
     E = n(985018),
     I = n(486527);
 
 function f() {
     let {
         analyticsLocations: e
-    } = (0, u.Ay)(c.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([m.A], () => m.A.hasConsented(g.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, A.GV)();
+    } = (0, u.Ay)(c.A.ACTIVE_NOW_COLUMN), t = (0, a.bG)([m.A], () => m.A.hasConsented(p.YAq.PERSONALIZATION)) ? [] : [s.M.NOW_PLAYING_CONSENT_CARD], n = (0, A.GV)();
     return (0, i.jsx)(u.f5, {
         value: e,
         children: (0, i.jsx)(d.A, {
-            section: g.JJy.ACTIVE_NOW_COLUMN,
+            section: p.JJy.ACTIVE_NOW_COLUMN,
             children: (0, i.jsx)("aside", {
                 className: l()(I.kL, "refresh-active-now"),
                 "aria-labelledby": n,
@@ -52,7 +52,7 @@ function f() {
                                     markAsDismissed: n
                                 })
                             }
-                        }), (0, i.jsx)(p.A, {})]
+                        }), (0, i.jsx)(g.A, {})]
                     })
                 })
             })

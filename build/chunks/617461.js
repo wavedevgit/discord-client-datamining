@@ -1,11 +1,11 @@
 /** chunk id: 617461 params = (module,exports,require) **/
 n.d(t, {
-    $: () => a,
+    $: () => r,
     e: () => l
 });
 var i, s = n(945810),
     l = ((i = {}).CONTROL = "CONTROL", i.VARIANT_1 = "VARIANT_1", i.VARIANT_2 = "VARIANT_2", i.VARIANT_3 = "VARIANT_3", i.VARIANT_4 = "VARIANT_4", i.VARIANT_5 = "VARIANT_5", i);
-let a = (0, s.mj)({
+let r = (0, s.mj)({
     kind: "user",
     name: "2026-02-referral-program-copy-sender",
     defaultConfig: {

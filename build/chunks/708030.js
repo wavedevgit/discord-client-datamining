@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(432334),
-    r = n(820190);
+    r = n(432334),
+    a = n(820190);
 let o = function(e) {
     let {
         className: t,
@@ -16,17 +16,17 @@ let o = function(e) {
         useReducedMotion: d
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(r.sn, t),
+        className: l()(a.sn, t),
         children: [o ? (0, i.jsx)("img", {
-            className: l()(r.$J, r.qX),
+            className: l()(a.$J, a.qX),
             src: n(208294),
             alt: ""
-        }) : (0, i.jsx)(a.A, {
-            className: r.$J,
+        }) : (0, i.jsx)(r.A, {
+            className: a.$J,
             boostInCooldown: s,
             useReducedMotion: d
         }), !o && s && (0, i.jsx)("img", {
-            className: r.De,
+            className: a.De,
             src: n(595454),
             alt: ""
         })]

@@ -1,6 +1,6 @@
 /** chunk id: 507060 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => D
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(775121),
     _ = n(268218),
     m = n(361158),
-    p = n(97469),
-    g = n(186111),
+    g = n(97469),
+    p = n(186111),
     E = n(203982),
     I = n(652215),
     f = n(985018),
@@ -262,9 +262,9 @@ class P extends r.PureComponent {
     }
 }
 
-function j(e) {
-    let t = (0, p.NC)(),
-        n = (0, o.bG)([g.A], () => g.A.getLayers()),
+function D(e) {
+    let t = (0, g.NC)(),
+        n = (0, o.bG)([p.A], () => p.A.getLayers()),
         r = (0, m.xr)(e => e.fullScreenLayers.length > 0 && !e.fullScreenLayers.some(e => e.options.showAppUnderLayer));
     return (0, i.jsx)(P, {
         ...e,

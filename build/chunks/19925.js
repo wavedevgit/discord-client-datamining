@@ -21,7 +21,7 @@ function h(e) {
         categoryId: l,
         query: n,
         languageCode: a
-    }), [l, a, n]), u = (0, r.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, r.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, p = i.useCallback(() => {
+    }), [l, a, n]), u = (0, r.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, r.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
         let e = o.A.getGuildIds(c),
             n = o.A.getTotal(c);
         if (null == e || null == n) return;
@@ -39,9 +39,9 @@ function h(e) {
         guildIds: u,
         loading: m || h,
         searchResultsQuery: _,
-        loadMore: p,
+        loadMore: g,
         searchCategoryId: l
-    }), [u, m, h, _, p, l])
+    }), [u, m, h, _, g, l])
 }
 
 function _(e) {

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(989349),
-    r = n.n(a),
+    r = n(989349),
+    a = n.n(r),
     o = n(397927),
     d = n(496431),
     c = n(985018),
@@ -16,24 +16,24 @@ let _ = e => {
     let {
         expiresAt: t,
         className: n
-    } = e, s = (0, d.A)(r()(t).toDate(), 1e3);
+    } = e, s = (0, d.A)(a()(t).toDate(), 1e3);
     if (null == s) return null;
     let {
-        days: a,
+        days: r,
         hours: _,
-        minutes: g,
-        seconds: m
+        minutes: m,
+        seconds: g
     } = s, A = [{
-        unitValue: a,
+        unitValue: r,
         unitType: "days"
     }, {
         unitValue: _,
         unitType: "hours"
     }, {
-        unitValue: g,
+        unitValue: m,
         unitType: "minutes"
     }, {
-        unitValue: m,
+        unitValue: g,
         unitType: "seconds"
     }];
     return (0, i.jsxs)("div", {

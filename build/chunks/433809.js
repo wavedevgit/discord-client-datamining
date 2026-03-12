@@ -5,29 +5,29 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    a = n(873298),
-    r = n(253932),
+    r = n(873298),
+    a = n(253932),
     o = n(871930),
     d = n(531525),
     c = n(985018);
 
 function u() {
-    let e = r.KP.useSetting(),
+    let e = a.KP.useSetting(),
         t = s.useMemo(() => [{
             name: c.intl.string(c.t.Boxc8R),
             desc: c.intl.string(c.t["nLj+nc"]),
-            value: a.KP.FRIENDS_AND_ALL_GUILDS
+            value: r.KP.FRIENDS_AND_ALL_GUILDS
         }, {
             name: c.intl.string(c.t.YOIKBt),
             desc: c.intl.string(c.t.y0JZ4s),
-            value: a.KP.FRIENDS_AND_SMALL_GUILDS
+            value: r.KP.FRIENDS_AND_SMALL_GUILDS
         }, {
             name: c.intl.string(c.t.u0nlJv),
             desc: c.intl.string(c.t["4jnKHu"]),
-            value: a.KP.FRIENDS_ONLY
+            value: r.KP.FRIENDS_ONLY
         }], []),
         n = s.useCallback(e => {
-            r.KP.updateSetting(e)
+            a.KP.updateSetting(e)
         }, []);
     return (0, i.jsxs)(o.h, {
         setting: d.H.PRIVACY_PROFILE_VISIBILITY,

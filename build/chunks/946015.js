@@ -5,37 +5,37 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(597833),
+    r = n.n(l),
+    a = n(597833),
     o = n(913953);
 let d = {
-        VERTICAL: r.yG,
-        HORIZONTAL: r.OZ,
-        HORIZONTAL_REVERSE: r.y0
+        VERTICAL: a.yG,
+        HORIZONTAL: a.OZ,
+        HORIZONTAL_REVERSE: a.y0
     },
     c = {
-        START: r.KF,
-        END: r.HA,
-        CENTER: r.pb,
-        BETWEEN: r.G1,
-        AROUND: r.nm
+        START: a.KF,
+        END: a.HA,
+        CENTER: a.pb,
+        BETWEEN: a.G1,
+        AROUND: a.nm
     },
     u = {
-        NO_WRAP: r.B,
-        WRAP: r.aR,
-        WRAP_REVERSE: r.KM
+        NO_WRAP: a.B,
+        WRAP: a.aR,
+        WRAP_REVERSE: a.KM
     },
     _ = {
-        START: r.j$,
-        END: r.S_,
-        CENTER: r.YO,
-        STRETCH: r.ai
+        START: a.j$,
+        END: a.S_,
+        CENTER: a.YO,
+        STRETCH: a.ai
     },
-    g = {
+    m = {
         SMALL: o.sf,
         LARGE: o.S6
     };
-class m extends s.PureComponent {
+class g extends s.PureComponent {
     static defaultProps = {
         className: o.Gu,
         style: {},
@@ -47,7 +47,7 @@ class m extends s.PureComponent {
             className: t,
             shrink: n,
             grow: l,
-            basis: r,
+            basis: a,
             style: d,
             wrap: c,
             ...u
@@ -55,10 +55,10 @@ class m extends s.PureComponent {
             style: {
                 flexGrow: l,
                 flexShrink: n,
-                flexBasis: r,
+                flexBasis: a,
                 ...d
             },
-            className: t === o.Gu ? t : a()(o.Gu, t),
+            className: t === o.Gu ? t : r()(o.Gu, t),
             ...u
         };
         if (!c && "string" != typeof e && 1 === s.Children.count(e)) {
@@ -66,7 +66,7 @@ class m extends s.PureComponent {
             return _.style = {
                 ..._.style,
                 ...n.props.style
-            }, _.className = a()(n.props.className, t), s.cloneElement(n, _)
+            }, _.className = r()(n.props.className, t), s.cloneElement(n, _)
         }
         return (0, i.jsx)("div", {
             ..._,
@@ -75,12 +75,12 @@ class m extends s.PureComponent {
     }
 }
 class A extends s.PureComponent {
-    static Child = m;
+    static Child = g;
     static Direction = d;
     static Align = _;
     static Justify = c;
     static Wrap = u;
-    static Gutter = g;
+    static Gutter = m;
     static defaultProps = {
         direction: d.HORIZONTAL,
         justify: c.START,
@@ -98,13 +98,13 @@ class A extends s.PureComponent {
             direction: n,
             justify: s,
             align: l,
-            wrap: r,
+            wrap: a,
             shrink: d,
             grow: c,
             basis: u,
             style: _,
-            gutter: g,
-            ...m
+            gutter: m,
+            ...g
         } = this.props, A = {
             flexShrink: d,
             flexGrow: c,
@@ -113,8 +113,8 @@ class A extends s.PureComponent {
         };
         return (0, i.jsx)("div", {
             style: A,
-            className: a()(o.Uu, n, s, l, r, g, t),
-            ...m,
+            className: r()(o.Uu, n, s, l, a, m, t),
+            ...g,
             children: e
         })
     }

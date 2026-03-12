@@ -20,8 +20,8 @@ let _ = e => {
         onRequestClose: _,
         onClick: m
     } = e, {
-        analyticsLocations: p
-    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), g = (0, s.Ay)(), E = (0, a.Mw)(g) ? t.assetDark : t.assetLight, I = r.useRef(_);
+        analyticsLocations: g
+    } = (0, d.Ay)(o.A.HOME_PAGE_SHOP_TAB), p = (0, s.Ay)(), E = (0, a.Mw)(p) ? t.assetDark : t.assetLight, I = r.useRef(_);
     return I.current = _, r.useEffect(() => () => {
         I.current?.()
     }, []), (0, i.jsx)(l.AM, {
@@ -43,7 +43,7 @@ let _ = e => {
             variant: "primary",
             onClick: () => {
                 m?.(), (0, c.pX)(A.BVt.COLLECTIBLES_SHOP), (0, u.Cz)({
-                    analyticsLocations: p,
+                    analyticsLocations: g,
                     analyticsSource: o.A.HOME_PAGE_SHOP_TAB
                 })
             }

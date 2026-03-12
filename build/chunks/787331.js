@@ -21,9 +21,9 @@ function m(e) {
         user: t,
         nickname: n,
         status: m,
-        isFocused: p
+        isFocused: g
     } = e, {
-        analyticsLocations: g
+        analyticsLocations: p
     } = (0, a.Ay)(), E = e => {
         e?.stopPropagation(), l.A.addRelationship({
             userId: t.id,
@@ -37,11 +37,11 @@ function m(e) {
         e?.stopPropagation(), s.A.ignore(t.id)
     }, f = m === A.clD.OFFLINE ? A.clD.UNKNOWN : m;
     return (0, i.jsx)(c.A, {
-        isFocused: p,
+        isFocused: g,
         user: t,
         onClick: () => (0, o.openUserProfileModal)({
             userId: t.id,
-            sourceAnalyticsLocations: g
+            sourceAnalyticsLocations: p
         }),
         children: e => {
             let l = (0, i.jsxs)(i.Fragment, {

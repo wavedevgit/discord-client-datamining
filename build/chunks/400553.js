@@ -6,27 +6,27 @@ var i = n(627968);
 n(64700);
 var s = n(417597),
     l = n(435371),
-    a = n(397927),
-    r = n(695515),
+    r = n(397927),
+    a = n(695515),
     o = n(923531),
     d = n(397808),
     c = n(254847),
     u = n(773349),
     _ = n(994987),
-    g = n(870236),
-    m = n(985018),
+    m = n(870236),
+    g = n(985018),
     A = n(511527);
 let h = () => {
-    let e = (0, s.bG)([r.A], () => r.A.getTopUserActivities()),
-        t = (0, s.bG)([r.A], () => r.A.getTopGuildActivities());
+    let e = (0, s.bG)([a.A], () => a.A.getTopUserActivities()),
+        t = (0, s.bG)([a.A], () => a.A.getTopGuildActivities());
     return 0 === e.length && 0 === t.length ? null : (0, i.jsxs)("div", {
         className: A.kL,
         children: [e.length > 0 && (0, i.jsxs)("div", {
             className: A.A2,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "text-md/medium",
                 className: A.bV,
-                children: m.intl.string(g.default.BxbvS7)
+                children: g.intl.string(m.default.BxbvS7)
             }), (0, i.jsx)("div", {
                 className: A.Ce,
                 children: 1 === e.length ? (0, i.jsx)(u.A, {
@@ -41,10 +41,10 @@ let h = () => {
             })]
         }), t.length > 0 && (0, i.jsxs)("div", {
             className: A.A2,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "text-md/medium",
                 className: A.bV,
-                children: m.intl.string(g.default.Lq9Set)
+                children: g.intl.string(m.default.Lq9Set)
             }), 1 === t.length ? (0, i.jsx)(c.A, {
                 guildId: t[0].guild_id,
                 customSubtext: (0, o.fq)(t[0].messages_sent, t[0].call_count),
@@ -52,7 +52,7 @@ let h = () => {
             }) : (0, i.jsx)("div", {
                 className: A.Ce,
                 children: t.map(e => {
-                    let t = r.A.getGuild(e.guild_id),
+                    let t = a.A.getGuild(e.guild_id),
                         n = t?.name ?? "Unknown Server";
                     return (0, i.jsx)(l.un, {
                         title: n,

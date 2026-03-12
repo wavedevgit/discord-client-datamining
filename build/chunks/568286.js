@@ -1,33 +1,33 @@
 /** chunk id: 568286 params = (module,exports,require) **/
 n.d(t, {
-    q: () => x
+    q: () => p
 });
 var i = n(627968),
     s = n(64700),
     l = n(989349),
-    a = n.n(l),
-    r = n(158954),
+    r = n.n(l),
+    a = n(158954),
     o = n(397927),
     d = n(384904),
     c = n(793574),
     u = n(688810),
     _ = n(915089),
-    g = n(250253),
-    m = n(2242),
+    m = n(250253),
+    g = n(2242),
     A = n(985018),
     h = n(823470);
-let p = e => {
+let x = e => {
         let {
             transitionState: t,
             groupListing: n,
             listing: l,
-            subscription: p,
-            onClose: x
-        } = e, E = (0, _.GV)(), {
-            analyticsLocations: T
+            subscription: x,
+            onClose: p
+        } = e, T = (0, _.GV)(), {
+            analyticsLocations: E
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-            cancelSubscription: S,
-            error: C,
+            cancelSubscription: C,
+            error: S,
             submitting: f
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
@@ -44,20 +44,20 @@ let p = e => {
                 error: i,
                 submitting: t
             }
-        })(T), N = async () => {
-            await S(p.id) && x()
-        }, b = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+        })(E), N = async () => {
+            await C(x.id) && p()
+        }, b = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), v = r()(x.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
             numChannels: b.length,
             numAdditionalBenefits: I.length,
             subscriptionEndDate: v
         });
-        return (0, i.jsx)(r.Modal, {
+        return (0, i.jsx)(a.Modal, {
             transitionState: t,
-            "aria-labelledby": E,
+            "aria-labelledby": T,
             actions: [{
                 text: A.intl.string(A.t.EP6EPb),
                 variant: "secondary",
-                onClick: x
+                onClick: p
             }, {
                 variant: "critical-primary",
                 text: A.intl.string(A.t.F6lUDF),
@@ -66,13 +66,13 @@ let p = e => {
             }],
             title: A.intl.string(A.t.O6l5tM),
             subtitle: j,
-            onClose: x,
+            onClose: p,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
-                children: [null != C ? (0, i.jsx)(o.wx6, {
+                children: [null != S ? (0, i.jsx)(o.wx6, {
                     type: "critical",
-                    children: C.message
-                }) : null, (0, i.jsx)(g.x, {
+                    children: S.message
+                }) : null, (0, i.jsx)(m.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
                     className: h.P
@@ -80,8 +80,8 @@ let p = e => {
             })
         })
     },
-    x = e => {
-        (0, o.qfG)(t => (0, i.jsx)(p, {
+    p = e => {
+        (0, o.qfG)(t => (0, i.jsx)(x, {
             ...t,
             ...e
         }))

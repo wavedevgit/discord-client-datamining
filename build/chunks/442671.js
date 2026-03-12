@@ -1,33 +1,33 @@
 /** chunk id: 442671 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(615300),
+    r = n.n(l),
+    a = n(615300),
     o = n(837381),
     d = n(158954),
     c = n(688810),
     u = n(657331),
     _ = n(635281);
-let g = e => {
+let m = e => {
     let {
         userId: t,
         children: n,
         isLast: l,
-        className: g
-    } = e, [m, A] = s.useState(!1), {
+        className: m
+    } = e, [g, A] = s.useState(!1), {
         analyticsLocations: h
-    } = (0, c.Ay)(), p = s.useCallback(() => {
+    } = (0, c.Ay)(), x = s.useCallback(() => {
         (0, u.openUserProfileModal)({
             userId: t,
             sourceAnalyticsLocations: h
         })
-    }, [t, h]), x = () => {
+    }, [t, h]), p = () => {
         A(!0)
-    }, E = () => {
+    }, T = () => {
         A(!1)
     };
     return (0, i.jsx)(o.tG, {
@@ -37,19 +37,19 @@ let g = e => {
                 left: -8,
                 right: -8
             },
-            children: (0, i.jsx)(r.A.div, {
+            children: (0, i.jsx)(a.A.div, {
                 style: {
                     opacity: 1
                 },
-                className: a()(_.KG, g, {
+                className: r()(_.KG, m, {
                     [_.HV]: l,
-                    [_.vu]: m
+                    [_.vu]: g
                 }),
-                onMouseEnter: x,
-                onMouseLeave: E,
-                onClick: p,
+                onMouseEnter: p,
+                onMouseLeave: T,
+                onClick: x,
                 ...e,
-                children: n(m)
+                children: n(g)
             })
         })
     })

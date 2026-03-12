@@ -1,6 +1,6 @@
 /** chunk id: 38894 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(64700),
@@ -61,7 +61,7 @@ function m(e) {
     })
 }
 
-function p(e) {
+function g(e) {
     let {
         selectedTab: t,
         onScroll: n,

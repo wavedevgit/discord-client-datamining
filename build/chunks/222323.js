@@ -1,12 +1,12 @@
 /** chunk id: 222323 params = (module,exports,require) **/
 n.d(t, {
-    p: () => r
+    p: () => a
 });
 var i = n(419954),
     s = n(780964),
     l = n(604434),
-    a = n(985018);
-let r = (0, i.zZ)(s.X.CHAT_TEXT_BOX_CATEGORY, {
-    useTitle: () => a.intl.string(a.t.afR0pI),
+    r = n(985018);
+let a = (0, i.zZ)(s.X.CHAT_TEXT_BOX_CATEGORY, {
+    useTitle: () => r.intl.string(r.t.afR0pI),
     buildLayout: () => [l.m]
 })

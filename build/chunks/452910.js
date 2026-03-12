@@ -1,34 +1,34 @@
 /** chunk id: 452910 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(421380),
-    r = n(927578),
+    r = n(421380),
+    a = n(927578),
     o = n(545334),
     d = n(422936),
     c = n(234419),
     u = n(396375),
     _ = n(543233),
-    g = n(76707),
-    m = n(788868),
+    m = n(76707),
+    g = n(788868),
     A = n(985018),
     h = n(538662);
-let p = e => {
+let x = e => {
     let {
         title: t,
         titleClassName: n,
         buttonClassName: s,
-        subtitle: p,
-        description: x,
-        descriptionCta: E,
-        isPremiumGetCta: T,
-        onCtaClick: S,
-        cardVariant: C
-    } = e, f = (0, c.V)(), N = f?.subscription_trial, b = (0, d.O)(), I = (0, r.FY)({
+        subtitle: x,
+        description: p,
+        descriptionCta: T,
+        isPremiumGetCta: E,
+        onCtaClick: C,
+        cardVariant: S
+    } = e, f = (0, c.V)(), N = f?.subscription_trial, b = (0, d.O)(), I = (0, a.FY)({
         intervalType: N?.interval,
         intervalCount: N?.interval_count
     }), v = (0, o.G)({
@@ -39,30 +39,30 @@ let p = e => {
         onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
             percent: b?.discount.amount
         })
-    }), j = (0, _.Q)(C);
+    }), j = (0, _.Q)(S);
     return (0, i.jsxs)("div", {
         className: l()(h.L_, j?.overlayContainer?.className),
-        children: [(0, i.jsx)(g.A, {
+        children: [(0, i.jsx)(m.A, {
             title: t,
             cardVariantStyleInfo: j,
             titleClassName: n,
-            subtitle: p,
-            description: x,
+            subtitle: x,
+            description: p,
             isOverlay: !0
-        }), T && (0, i.jsx)(u.A, {
+        }), E && (0, i.jsx)(u.A, {
             className: s,
-            look: a.$n.Looks.BLANK,
-            color: a.$n.Colors.CUSTOM,
-            subscriptionTier: m.pe.TIER_2,
+            look: r.$n.Looks.BLANK,
+            color: r.$n.Colors.CUSTOM,
+            subscriptionTier: g.pe.TIER_2,
             textOptions: {
                 textOverride: v
             },
             showGradient: !0
-        }), null != E && null != S && (0, i.jsx)(a.$n, {
+        }), null != T && null != C && (0, i.jsx)(r.$n, {
             "data-migration-pending": !0,
             className: s,
-            onClick: S,
-            children: E
+            onClick: C,
+            children: T
         })]
     })
 }

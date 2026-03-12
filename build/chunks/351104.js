@@ -6,32 +6,32 @@ var i = n(627968);
 n(64700);
 var s = n(935649),
     l = n(847599),
-    a = n(152076),
-    r = n(93857),
+    r = n(152076),
+    a = n(93857),
     o = n(871930),
     d = n(578746),
     c = n(975571),
     u = n(171316),
     _ = n(500470),
-    g = n(652215),
-    m = n(985018);
+    m = n(652215),
+    g = n(985018);
 
 function A() {
     let e = (0, _.k)() ?? void 0,
         t = (0, u.KK)(),
-        n = r.ES.useControlledSetting(e);
+        n = a.ES.useControlledSetting(e);
     return (0, i.jsx)(o.h, {
         children: (0, i.jsx)(d.Ay, {
-            title: m.intl.string(m.t["3o2ojh"]),
+            title: g.intl.string(g.t["3o2ojh"]),
             value: !t && !n,
             onChange: t => {
-                !t && (0, a.w)() ? s.A.showAgeVerificationGetStartedModal({
+                !t && (0, r.w)() ? s.A.showAgeVerificationGetStartedModal({
                     entryPoint: l.q1.MESSAGE_REQUESTS_SETTINGS
-                }) : r.ES.updateControlledSetting(e, !t)
+                }) : a.ES.updateControlledSetting(e, !t)
             },
             disabled: t,
-            note: m.intl.format(m.t.IoztJ0, {
-                helpdeskArticle: c.A.getArticleURL(g.MVz.MESSAGE_REQUESTS)
+            note: g.intl.format(g.t.IoztJ0, {
+                helpdeskArticle: c.A.getArticleURL(m.MVz.MESSAGE_REQUESTS)
             })
         })
     })

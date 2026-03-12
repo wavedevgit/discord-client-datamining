@@ -16,8 +16,8 @@ var r = n(873263),
     h = n(71393),
     _ = n(309010),
     m = n(967198),
-    p = n(486020),
-    g = n(652215),
+    g = n(486020),
+    p = n(652215),
     E = n(165610),
     I = n(985018),
     f = n(870236),
@@ -42,7 +42,7 @@ function T() {
                 isFrameInFocusedMode: d.A.getFrameLayoutMode() === E.y.FOCUSED
             }
         }),
-        L = null != b ? p.Ay.getApplicationIconURL({
+        L = null != b ? g.Ay.getApplicationIconURL({
             id: b.id,
             icon: b.icon,
             bot: b.bot
@@ -65,19 +65,19 @@ function T() {
         className: C.$f
     }), e = x.name) : null != N && (N.isDM() || N.isGroupDM()) ? (e = I.intl.string(I.t.YUU0RF), R = (0, i.jsx)(a.pVd, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.ICYMI) ? (e = I.intl.string(I.t["jnXV/V"]), R = (0, i.jsx)(a.gXB, {
+    })) : t.pathname.startsWith(p.BVt.ICYMI) ? (e = I.intl.string(I.t["jnXV/V"]), R = (0, i.jsx)(a.gXB, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.GLOBAL_DISCOVERY) ? (e = I.intl.string(I.t["4nEZLk"]), R = (0, i.jsx)(a.QGJ, {
+    })) : t.pathname.startsWith(p.BVt.GLOBAL_DISCOVERY) ? (e = I.intl.string(I.t["4nEZLk"]), R = (0, i.jsx)(a.QGJ, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.NITRO_HOME) ? (e = I.intl.string(I.t.Ipxkog), R = (0, i.jsx)(a.tvc, {
+    })) : t.pathname.startsWith(p.BVt.NITRO_HOME) ? (e = I.intl.string(I.t.Ipxkog), R = (0, i.jsx)(a.tvc, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.COLLECTIBLES_SHOP) ? (e = I.intl.string(I.t.pWG4ze), R = (0, i.jsx)(a.U1X, {
+    })) : t.pathname.startsWith(p.BVt.COLLECTIBLES_SHOP) ? (e = I.intl.string(I.t.pWG4ze), R = (0, i.jsx)(a.U1X, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.FRIENDS) ? (e = I.intl.string(I.t.TdEu5X), R = (0, i.jsx)(a.$yI, {
+    })) : t.pathname.startsWith(p.BVt.FRIENDS) ? (e = I.intl.string(I.t.TdEu5X), R = (0, i.jsx)(a.$yI, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.FAMILY_CENTER) ? (e = I.intl.string(f.default.RZqaJn), R = (0, i.jsx)(a.nFg, {
+    })) : t.pathname.startsWith(p.BVt.FAMILY_CENTER) ? (e = I.intl.string(f.default.RZqaJn), R = (0, i.jsx)(a.nFg, {
         size: "sm"
-    })) : t.pathname.startsWith(g.BVt.QUEST_HOME) && (e = I.intl.string(I.t.JALI2K), R = (0, i.jsx)(a.r2v, {
+    })) : t.pathname.startsWith(p.BVt.QUEST_HOME) && (e = I.intl.string(I.t.JALI2K), R = (0, i.jsx)(a.r2v, {
         size: "sm"
     })), null == e || "" === e) ? null : (0, i.jsxs)("div", {
         className: C.DD,

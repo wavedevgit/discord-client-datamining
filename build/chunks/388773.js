@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(641324),
-    r = n(46373),
+    r = n(641324),
+    a = n(46373),
     o = n(78837),
     d = n(985018),
     c = n(177259);
@@ -17,40 +17,40 @@ function u(e) {
         } = e,
         [u, _] = s.useState(!1),
         {
-            layout: g,
-            collapseAfter: m,
+            layout: m,
+            collapseAfter: g,
             useCollapsibleTitle: A,
             useCollapsedSubtitle: h
         } = n,
-        p = null != m ? g.slice(0, m) : g,
-        x = null != m ? g.slice(m) : [],
-        E = A?.(u, x.length) ?? (t = x.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
+        x = null != g ? m.slice(0, g) : m,
+        p = null != g ? m.slice(g) : [],
+        T = A?.(u, p.length) ?? (t = p.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
             count: t
         }) : d.intl.formatToPlainString(d.t["8JRFyZ"], {
             count: t
         })),
-        T = h?.();
+        E = h?.();
     return (0, i.jsxs)(l.BJc, {
         gap: 8,
-        children: [p.map((e, t) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(a.A, {
-                node: e
-            }), t !== p.length - 1 && (0, i.jsx)(r.A, {})]
-        }, e.key)), x.length > 0 && (0, i.jsxs)("div", {
-            className: c.CT,
+        children: [x.map((e, t) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(r.A, {
+                node: e
+            }), t !== x.length - 1 && (0, i.jsx)(a.A, {})]
+        }, e.key)), p.length > 0 && (0, i.jsxs)("div", {
+            className: c.CT,
+            children: [(0, i.jsx)(a.A, {
                 className: c.mn
             }), (0, i.jsx)(o.f, {
-                title: E,
-                collapsedSubtitle: T,
+                title: T,
+                collapsedSubtitle: E,
                 isExpanded: u,
                 onExpandedChange: _,
                 children: (0, i.jsx)(l.BJc, {
                     gap: 8,
-                    children: x.map((e, t) => (0, i.jsxs)(s.Fragment, {
-                        children: [(0, i.jsx)(a.A, {
+                    children: p.map((e, t) => (0, i.jsxs)(s.Fragment, {
+                        children: [(0, i.jsx)(r.A, {
                             node: e
-                        }), t !== x.length - 1 && (0, i.jsx)(r.A, {})]
+                        }), t !== p.length - 1 && (0, i.jsx)(a.A, {})]
                     }, e.key))
                 })
             })]

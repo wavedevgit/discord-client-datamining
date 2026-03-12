@@ -1,6 +1,6 @@
 /** chunk id: 51264 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 });
 var i = n(627968),
     r = n(64700),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(985018),
     _ = n(588116);
 let m = "isHideDevBanner",
-    p = () => {
+    g = () => {
         let [e, t] = (0, r.useState)(o.w.get(m, "false")?.toString() === "true"), n = (0, s.bG)([c.A], () => (0, u.kK)() ? c.A.getCurrentBuildOverride().overrides?.discord_web : null);
         if (e) return null;
         let l = () => {
                 o.w.set(m, !0), t(!0)
             },
-            p = () => (0, i.jsx)(d.DUT, {
+            g = () => (0, i.jsx)(d.DUT, {
                 onClick: l,
                 className: _.b,
                 "aria-label": h.intl.string(h.t.WAI6xu),
@@ -35,13 +35,13 @@ let m = "isHideDevBanner",
             className: a()(_.Wz, _.DM),
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
-            }), h.intl.string(h.t.Wj3LW4), (0, i.jsx)(p, {})]
+            }), h.intl.string(h.t.Wj3LW4), (0, i.jsx)(g, {})]
         }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsxs)("div", {
             className: a()(_.Wz, _.mr),
             children: [(0, i.jsx)(A.A, {
                 className: _.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "510269"
-            }), (0, i.jsx)(p, {})]
+                buildNumber: "510307"
+            }), (0, i.jsx)(g, {})]
         }) : null
     }

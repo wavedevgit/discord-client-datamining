@@ -1,15 +1,15 @@
 /** chunk id: 17307 params = (module,exports,require) **/
 n.d(t, {
-    G4: () => g,
-    LQ: () => m,
+    G4: () => m,
+    LQ: () => g,
     t4: () => u,
     vx: () => _
 }), n(321073);
 var i = n(311907),
     s = n(582754),
     l = n(287809),
-    a = n(166403),
-    r = n(927578),
+    r = n(166403),
+    a = n(927578),
     o = n(322631),
     d = n(788868),
     c = n(985018);
@@ -21,8 +21,8 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
             hideCardsOnNarrowScreen: i,
             isPremiumSubscriber: s,
             fractionalState: l,
-            isInReverseTrial: a,
-            recurring3PPromotionExperiment: r,
+            isInReverseTrial: r,
+            recurring3PPromotionExperiment: a,
             showPremiumGroup: c,
             isPremiumGroupMember: u
         } = e, _ = [];
@@ -37,29 +37,29 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         perksCards: n,
                         recurring3PPromotionExperiment: i,
                         showPremiumGroup: s
-                    } = e, l = null != n.tenureBadge ? [n.tenureBadge] : [], a = 3 - l.length, r = e => {
+                    } = e, l = null != n.tenureBadge ? [n.tenureBadge] : [], r = 3 - l.length, a = e => {
                         let {
                             card: n
                         } = e;
-                        t.length < a && t.push(n)
+                        t.length < r && t.push(n)
                     };
-                    return s && r({
+                    return s && a({
                         card: n.premiumGroup
-                    }), i && r({
+                    }), i && a({
                         card: n.recurring3PPromotions
-                    }), r({
+                    }), a({
                         card: n.displayNameStyles
-                    }), r({
+                    }), a({
                         card: n.customThemes
-                    }), r({
+                    }), a({
                         card: n.permadecos
-                    }), r({
+                    }), a({
                         card: n.newAppStylesUpdateJune2024
                     }), t.push(...l), t
                 })({
                     cards: _,
                     perksCards: t,
-                    recurring3PPromotionExperiment: r,
+                    recurring3PPromotionExperiment: a,
                     showPremiumGroup: c
                 });
                 break;
@@ -67,17 +67,17 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 _ = !1 === s ? [t.serverBoosts, t.superReactions, t.earlyAccessSeeAllVariant, t.specialShopPerks] : [t.customAppIcons, t.moreEmojiPower, t.customSoundsEverywhere, t.specialStickerAccess];
                 break;
             case o.cJ.CARD_CAROUSEL_SECOND_ROW:
-                _ = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === d.xc.FP_ONLY ? a ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
+                _ = !1 === s ? [t.customSoundsEverywhere, t.specialStickerAccess] : l === d.xc.FP_ONLY ? r ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions];
                 break;
             case o.cJ.CARD_CAROUSEL_THIRD_ROW:
-                _ = l === d.xc.FP_ONLY ? a ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
+                _ = l === d.xc.FP_ONLY ? r ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge] : [t.entranceSoundsSeeAllVariation, t.badge]
         }
         return i && (_ = _.filter(e => !e.hideOnNarrowScreen)), _
     },
-    g = e => {
-        let t = (0, i.bG)([a.A], () => a.A.getPremiumTypeSubscription()),
-            n = null != t ? r.Ay.getPremiumPlanItem(t) : null,
-            s = (null != n ? r.Ay.getSkuIdForPlan(n.planId) : null) === d.pe.TIER_2;
+    m = e => {
+        let t = (0, i.bG)([r.A], () => r.A.getPremiumTypeSubscription()),
+            n = null != t ? a.Ay.getPremiumPlanItem(t) : null,
+            s = (null != n ? a.Ay.getSkuIdForPlan(n.planId) : null) === d.pe.TIER_2;
         return e ? s ? {
             title: c.intl.string(c.t.Aw5DRm),
             subtitle: c.intl.string(c.t.aHdO6o)
@@ -89,7 +89,7 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
             subtitle: c.intl.string(c.t["5TFEXv"])
         }
     },
-    m = () => {
+    g = () => {
         let e = (0, i.bG)([l.default], () => l.default.getCurrentUser());
-        return (0, r.TW)(e)
+        return (0, a.TW)(e)
     }

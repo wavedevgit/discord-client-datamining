@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(71393),
     _ = n(486020),
     m = n(998304),
-    p = n(817818),
-    g = n(967305),
+    g = n(817818),
+    p = n(967305),
     E = n(985018),
     I = n(490346),
     f = n(457898);
@@ -30,7 +30,7 @@ function C(e) {
         width: C,
         height: T
     } = (0, d.Ay)(), N = r.useCallback(() => {
-        null != t && null != n && ((0, p.sy)(t), (0, g.default)({
+        null != t && null != n && ((0, g.sy)(t), (0, p.default)({
             guildId: t,
             returnChannelId: n
         }))

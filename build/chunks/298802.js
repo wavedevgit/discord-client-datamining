@@ -1,18 +1,18 @@
 /** chunk id: 298802 params = (module,exports,require) **/
 n.d(t, {
-    G: () => g
+    G: () => m
 });
 var i = n(311907),
     s = n(775121),
     l = n(955572),
-    a = n(775602),
-    r = n(419954),
+    r = n(775602),
+    a = n(419954),
     o = n(723702),
     d = n(780964),
     c = n(358776),
     u = n(652215),
     _ = n(985018);
-let g = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
+let m = (0, a.sN)(d.X.APPEARANCE_ZOOM, {
     usePredicate: () => o.isPlatformEmbedded,
     useTitle: () => _.intl.string(_.t.i19n5L),
     useSubtitle: () => (0, c.bp)("Zoom") ? _.intl.format(_.t["x9PK/3"], {
@@ -23,8 +23,8 @@ let g = (0, r.sN)(d.X.APPEARANCE_ZOOM, {
     minValue: u.hH7.ZOOM_SCALES["0"],
     maxValue: u.hH7.ZOOM_SCALES[u.hH7.ZOOM_SCALES.length - 1],
     useDefaultValue: () => u.hH7.ZOOM_DEFAULT,
-    getInitialValue: () => a.A.zoom,
-    useExternalValue: () => (0, i.bG)([a.A], () => a.A.zoom),
+    getInitialValue: () => r.A.zoom,
+    useExternalValue: () => (0, i.bG)([r.A], () => r.A.zoom),
     onValueRender: e => `${e.toFixed(0)}%`,
     setValue: e => (0, l.Qp)(e),
     useSearchTerms: () => [_.intl.string(_.t.ip0uSf)],

@@ -1,20 +1,20 @@
 /** chunk id: 740625 params = (module,exports,require) **/
 n.d(t, {
-    R: () => r
+    R: () => a
 });
 var i = n(627968),
     s = n(397927),
     l = n(790114),
-    a = n(32063);
-let r = e => {
+    r = n(32063);
+let a = e => {
     let {
         children: t,
         header: n,
-        notice: r
+        notice: a
     } = e, o = (0, l.A)();
     return (0, i.jsxs)("div", {
-        className: a.r,
-        children: [r, !o && (0, i.jsx)(s.Fmo, {
+        className: r.r,
+        children: [a, !o && (0, i.jsx)(s.Fmo, {
             children: (0, i.jsx)(s.Heading, {
                 variant: "heading-xl/semibold",
                 color: "text-strong",

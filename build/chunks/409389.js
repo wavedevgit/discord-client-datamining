@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(352670),
     _ = n(654487),
     m = n(985018),
-    p = n(339235);
-let g = [],
+    g = n(339235);
+let p = [],
     E = d.L1.SORT,
     I = d.L1.FILTER,
     f = r.forwardRef(function(e, t) {
@@ -27,7 +27,7 @@ let g = [],
             if ((0, o.uJ)(e)) return null;
             let t = e.split(",").map(e => (0, _.WQ)(e)).filter(s.Vq);
             return t.length > 0 ? t : null
-        })(n.get(I)) ?? g, [n]), N = r.useCallback(e => {
+        })(n.get(I)) ?? p, [n]), N = r.useCallback(e => {
             f({
                 [E]: e
             })
@@ -49,14 +49,14 @@ let g = [],
             sortMethod: C,
             filters: T
         }), [C, T])), O = r.useCallback(() => {
-            S(g)
-        }, [S]), L = r.useRef(null), R = r.useRef(null), P = (0, l.zy)(), j = (0, l.W6)();
+            S(p)
+        }, [S]), L = r.useRef(null), R = r.useRef(null), P = (0, l.zy)(), D = (0, l.W6)();
         return r.useEffect(() => {
-            "" !== P.hash && null != L.current && null != R.current && (C !== L.current || T !== R.current) && j.replace({
+            "" !== P.hash && null != L.current && null != R.current && (C !== L.current || T !== R.current) && D.replace({
                 ...P,
                 hash: void 0
             })
-        }, [C, T, P, j]), r.useEffect(() => {
+        }, [C, T, P, D]), r.useEffect(() => {
             L.current = C
         }, [C]), r.useEffect(() => {
             R.current = T
@@ -70,15 +70,15 @@ let g = [],
             }
         }), [O, N]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                className: p.Mj,
+                className: g.Mj,
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-lg/medium",
                     children: m.intl.string(m.t.giYD00)
                 }), (0, i.jsxs)("div", {
-                    className: p.Nf,
+                    className: g.Nf,
                     children: [(0, i.jsx)(u.A, {
                         onChange: N,
-                        optionClassName: p.Uq,
+                        optionClassName: g.Uq,
                         selectedSortMethod: C
                     }), (0, i.jsx)(c.A, {
                         onChange: S,

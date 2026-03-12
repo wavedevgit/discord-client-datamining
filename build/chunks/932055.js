@@ -1,14 +1,14 @@
 /** chunk id: 932055 params = (module,exports,require) **/
 n.d(t, {
-    Jz: () => g,
-    i: () => m,
+    Jz: () => m,
+    i: () => g,
     vd: () => _
 }), n(321073);
 var i = n(311907),
     s = n(264686),
     l = n(839214),
-    a = n(419954),
-    r = n(400492),
+    r = n(419954),
+    a = n(400492),
     o = n(803224),
     d = n(780964),
     c = n(985018);
@@ -23,20 +23,20 @@ function _() {
     })
 }
 
-function g(e) {
+function m(e) {
     let t = u.getField("currentPlayingSound");
     t?.stop();
-    let n = (0, r.Ak)(e);
+    let n = (0, a.Ak)(e);
     u.setState({
         currentPlayingSound: n
     })
 }
 
-function m(e) {
-    return (0, a.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
+function g(e) {
+    return (0, r.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
         useTitle: e.useTitle,
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {
-            onClick: () => g(e.sound)
+            onClick: () => m(e.sound)
         }),
         useValue: () => {
             let t = (0, i.bG)([o.A], () => o.A.isSoundDisabled(e.sound)),

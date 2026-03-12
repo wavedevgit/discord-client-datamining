@@ -5,80 +5,80 @@ n.d(t, {
 var i = n(419117),
     s = n(419954),
     l = n(780964),
-    a = n(932055),
-    r = n(985018);
+    r = n(932055),
+    a = n(985018);
 let o = [{
-        useTitle: () => r.intl.string(r.t.hK51Yg),
+        useTitle: () => a.intl.string(a.t.hK51Yg),
         sound: "deafen"
     }, {
-        useTitle: () => r.intl.string(r.t.XiejaJ),
+        useTitle: () => a.intl.string(a.t.XiejaJ),
         sound: "undeafen"
     }, {
-        useTitle: () => r.intl.string(r.t.w4m945),
+        useTitle: () => a.intl.string(a.t.w4m945),
         sound: "mute"
     }, {
-        useTitle: () => r.intl.string(r.t.YqAjXy),
+        useTitle: () => a.intl.string(a.t.YqAjXy),
         sound: "unmute"
     }, {
-        useTitle: () => r.intl.string(r.t.JoTq8n),
+        useTitle: () => a.intl.string(a.t.JoTq8n),
         sound: "camera_on"
     }, {
-        useTitle: () => r.intl.string(r.t["8P6tQ6"]),
+        useTitle: () => a.intl.string(a.t["8P6tQ6"]),
         sound: "camera_off"
     }, {
-        useTitle: () => r.intl.string(r.t["juL9/L"]),
+        useTitle: () => a.intl.string(a.t["juL9/L"]),
         sound: "disconnect"
     }, {
-        useTitle: () => r.intl.string(r.t.x98vQq),
+        useTitle: () => a.intl.string(a.t.x98vQq),
         sound: "ptt_start"
     }, {
-        useTitle: () => r.intl.string(r.t["1HjRqC"]),
+        useTitle: () => a.intl.string(a.t["1HjRqC"]),
         sound: "ptt_stop"
     }, {
-        useTitle: () => r.intl.string(r.t["9JB1Ck"]),
+        useTitle: () => a.intl.string(a.t["9JB1Ck"]),
         sound: "user_join"
     }, {
-        useTitle: () => r.intl.string(r.t.KUBBNt),
+        useTitle: () => a.intl.string(a.t.KUBBNt),
         sound: "user_leave"
     }, {
-        useTitle: () => r.intl.string(r.t.EZjqUT),
+        useTitle: () => a.intl.string(a.t.EZjqUT),
         sound: "user_moved"
     }, {
-        useTitle: () => r.intl.string(r.t.LnNlQh),
+        useTitle: () => a.intl.string(a.t.LnNlQh),
         sound: "call_calling"
     }, {
-        useTitle: () => r.intl.string(r.t.Nd8P5y),
+        useTitle: () => a.intl.string(a.t.Nd8P5y),
         sound: "stream_started"
     }, {
-        useTitle: () => r.intl.string(r.t["9bYj+G"]),
+        useTitle: () => a.intl.string(a.t["9bYj+G"]),
         sound: "stream_ended"
     }, {
-        useTitle: () => r.intl.string(r.t.KccUI1),
+        useTitle: () => a.intl.string(a.t.KccUI1),
         sound: "stream_user_joined"
     }, {
-        useTitle: () => r.intl.string(r.t.dsjkiN),
+        useTitle: () => a.intl.string(a.t.dsjkiN),
         sound: "stream_user_left"
     }, {
-        useTitle: () => r.intl.string(r.t.nFOcf9),
+        useTitle: () => a.intl.string(a.t.nFOcf9),
         sound: "activity_launch"
     }, {
-        useTitle: () => r.intl.string(r.t["a6lw/u"]),
+        useTitle: () => a.intl.string(a.t["a6lw/u"]),
         sound: "activity_end"
     }, {
-        useTitle: () => r.intl.string(r.t.KaFxrY),
+        useTitle: () => a.intl.string(a.t.KaFxrY),
         sound: "activity_user_join"
     }, {
-        useTitle: () => r.intl.string(r.t.S14z9n),
+        useTitle: () => a.intl.string(a.t.S14z9n),
         sound: "activity_user_left"
     }, {
-        useTitle: () => r.intl.string(r.t.CP3DC3),
+        useTitle: () => a.intl.string(a.t.CP3DC3),
         sound: "reconnect"
     }],
     d = (0, s.D1)(l.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
         collapseAfter: 4,
-        useCollapsibleTitle: (e, t) => e ? r.intl.formatToPlainString(r.t["0JYT98"], {
+        useCollapsibleTitle: (e, t) => e ? a.intl.formatToPlainString(a.t["0JYT98"], {
             count: t
-        }) : r.intl.formatToPlainString(r.t.ji1uNt, {
+        }) : a.intl.formatToPlainString(a.t.ji1uNt, {
             count: t
         }),
         useCollapsedSubtitle: () => (0, i.A)(l.X.VOICE_AND_VIDEO_SOUNDS_LIST, {
@@ -86,8 +86,8 @@ let o = [{
         }),
         initialize: function() {
             return () => {
-                (0, a.vd)()
+                (0, r.vd)()
             }
         },
-        buildLayout: () => o.map(e => (0, a.i)(e))
+        buildLayout: () => o.map(e => (0, r.i)(e))
     })

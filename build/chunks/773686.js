@@ -1,27 +1,27 @@
 /** chunk id: 773686 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => _
 });
 var i = n(626584),
-    s = n(260509),
+    r = n(260509),
     l = n(961350),
     a = n(696451),
-    r = n(317525),
+    s = n(317525),
     o = n(71393),
     d = n(860689),
     c = n(9865),
     u = n(7864),
-    _ = n(723176);
-let g = new i.A("Guilds"),
-    m = new class {
+    A = n(723176);
+let h = new i.A("Guilds"),
+    _ = new class {
         async getAsync(e) {
             let t = performance.now(),
-                n = await _.A.guilds(e).getMany(),
+                n = await A.A.guilds(e).getMany(),
                 i = performance.now();
-            return g.verbose(`loaded in ${i-t}ms (guilds: ${n.length})`), n
+            return h.verbose(`loaded in ${i-t}ms (guilds: ${n.length})`), n
         }
         async getOneAsync(e, t) {
-            return await _.A.guilds(e).get(t)
+            return await A.A.guilds(e).get(t)
         }
         actions = {
             BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
@@ -40,15 +40,15 @@ let g = new i.A("Guilds"),
                 if ("unavailable" === n.data_mode) continue;
                 let e = o.A.getGuild(n.id);
                 if (null != e) {
-                    let i = r.A.getUnsafeMutableRoles(n.id),
-                        s = "partial" === n.data_mode ? u.ly(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : c.hd(n.id, n.roles);
-                    this.put(d.Me(d.kI(n, e), c.cH(s), a.Ay.getSelfMember(n.id)), t)
+                    let i = s.A.getUnsafeMutableRoles(n.id),
+                        r = "partial" === n.data_mode ? u.ly(n.id, i, n.partial_updates.roles, n.partial_updates.deleted_role_ids) : c.hd(n.id, n.roles);
+                    this.put(d.Me(d.kI(n, e), c.cH(r), a.Ay.getSelfMember(n.id)), t)
                 }
             }
         }
         handleConnectionOpen(e, t) {
             let n = [...e.guilds.map(e => e.id), ...e.unavailableGuilds];
-            for (let i of (_.A.guildsTransaction(t).deleteAllExcept(n), e.guilds)) this.putOne(i, t)
+            for (let i of (A.A.guildsTransaction(t).deleteAllExcept(n), e.guilds)) this.putOne(i, t)
         }
         handleGuildCreate(e, t) {
             this.putOne(e.guild, t)
@@ -63,7 +63,7 @@ let g = new i.A("Guilds"),
         }
         handleGuildRoleChange(e, t) {
             let n = o.A.getGuild(e.guildId),
-                i = r.A.getUnsafeMutableRoles(e.guildId);
+                i = s.A.getUnsafeMutableRoles(e.guildId);
             null != n && this.put(d.Me(n, c.cH({
                 ...i,
                 [e.role.id]: c.Wj(e.guildId, e.role)
@@ -73,26 +73,26 @@ let g = new i.A("Guilds"),
             let n = o.A.getGuild(e.guildId);
             if (null != n) {
                 let i = {
-                    ...r.A.getUnsafeMutableRoles(e.guildId)
+                    ...s.A.getUnsafeMutableRoles(e.guildId)
                 };
                 delete i[e.roleId];
-                let s = a.Ay.getSelfMember(e.guildId);
-                null != s && (s = {
-                    ...s,
-                    roles: s.roles.filter(t => t !== e.roleId)
-                }), this.put(d.Me(n, c.cH(i), s), t)
+                let r = a.Ay.getSelfMember(e.guildId);
+                null != r && (r = {
+                    ...r,
+                    roles: r.roles.filter(t => t !== e.roleId)
+                }), this.put(d.Me(n, c.cH(i), r), t)
             }
         }
         handleGuildMemberAdd(e, t) {
             if (null != e.joinedAt && e.user.id === l.default.getId()) {
                 let n = o.A.getGuild(e.guildId);
-                null != n && this.put(d.Me((0, s.kn)(n, e.joinedAt), c.cH(r.A.getUnsafeMutableRoles(n.id)), a.Ay.getSelfMember(n.id)), t)
+                null != n && this.put(d.Me((0, r.kn)(n, e.joinedAt), c.cH(s.A.getUnsafeMutableRoles(n.id)), a.Ay.getSelfMember(n.id)), t)
             }
         }
         handleGuildMemberUpdate(e, t) {
             if (e.user.id !== l.default.getId()) return;
             let n = o.A.getGuild(e.guildId);
-            null != n && this.put(d.Me(n, c.cH(r.A.getUnsafeMutableRoles(n.id)), {
+            null != n && this.put(d.Me(n, c.cH(s.A.getUnsafeMutableRoles(n.id)), {
                 roles: e.roles,
                 userId: e.user.id
             }), t)
@@ -101,17 +101,17 @@ let g = new i.A("Guilds"),
         putOne(e, t) {
             let n = e.members.find(e => e.user.id === l.default.getId()),
                 i = o.A.getGuild(e.id),
-                s = c.j_(e.id, e.roles, r.A.getUnsafeMutableRoles(e.id)),
-                a = d.Me(d.Wj(e, i), c.cH(s), null != n ? {
+                r = c.j_(e.id, e.roles, s.A.getUnsafeMutableRoles(e.id)),
+                a = d.Me(d.Wj(e, i), c.cH(r), null != n ? {
                     userId: n.user.id,
                     roles: n.roles
                 } : null);
             this.put(a, t)
         }
         put(e, t) {
-            _.A.guildsTransaction(t).put(e)
+            A.A.guildsTransaction(t).put(e)
         }
         delete(e, t) {
-            _.A.guildsTransaction(t).delete(e)
+            A.A.guildsTransaction(t).delete(e)
         }
     }

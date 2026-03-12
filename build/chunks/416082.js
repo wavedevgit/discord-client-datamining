@@ -25,9 +25,9 @@ let _ = function(e) {
             query: o.A.getField("fetchedQuery"),
             languageCode: o.A.getField("languageCode")
         })
-    }, [t]), p = n === c.Iq ? u.intl.string(u.t.Ivw1Is) : u.intl.formatToPlainString(u.t["+1WAFb"], {
+    }, [t]), g = n === c.Iq ? u.intl.string(u.t.Ivw1Is) : u.intl.formatToPlainString(u.t["+1WAFb"], {
         categoryName: _
-    }), g = n === c.Iq ? u.intl.string(u.t.aXvEjd) : u.intl.format(u.t.XLioqn, {
+    }), p = n === c.Iq ? u.intl.string(u.t.aXvEjd) : u.intl.format(u.t.XLioqn, {
         onClick: m
     });
     return (0, i.jsxs)("div", {
@@ -39,11 +39,11 @@ let _ = function(e) {
         }), (0, i.jsx)(a.Heading, {
             variant: "heading-xl/semibold",
             className: A.wx,
-            children: p
+            children: g
         }), (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: g
+            children: p
         })]
     })
 }

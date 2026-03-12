@@ -5,25 +5,25 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(743790),
-    a = n(419954),
-    r = n(933297),
+    r = n(419954),
+    a = n(933297),
     o = n(71393),
     d = n(711014),
     c = n(253932),
     u = n(780964),
     _ = n(985018);
 
-function g() {
+function m() {
     let e = c.JG.useSetting();
     return (0, s.bG)([d.Ay, o.A], () => {
         let t = new Set(e);
         return d.Ay.getFlattenedGuildIds().filter(e => null != o.A.getGuild(e) && !t.has(e))
     }, [e])
 }
-let m = {
-        type: r.wF.STACKED_ICONS,
+let g = {
+        type: a.wF.STACKED_ICONS,
         useIcons: function() {
-            let e = g(),
+            let e = m(),
                 t = (0, s.bG)([o.A], () => e.slice(0, 2).map(e => o.A.getGuild(e)).filter(e => null != e), [e]);
             return 0 === t.length ? null : t.length >= 2 ? {
                 frontIcon: {
@@ -31,14 +31,14 @@ let m = {
                         guild: t[0],
                         size: 48
                     }),
-                    shape: r.NF.SQUIRCLE
+                    shape: a.NF.SQUIRCLE
                 },
                 backIcon: {
                     icon: (0, i.jsx)(l.$, {
                         guild: t[1],
                         size: 48
                     }),
-                    shape: r.NF.SQUIRCLE
+                    shape: a.NF.SQUIRCLE
                 }
             } : {
                 frontIcon: {
@@ -46,14 +46,14 @@ let m = {
                         guild: t[0],
                         size: 48
                     }),
-                    shape: r.NF.SQUIRCLE
+                    shape: a.NF.SQUIRCLE
                 }
             }
         }
     },
-    A = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
+    A = (0, r.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
-            let e = g();
+            let e = m();
             if (0 === e.length) return _.intl.format(_.t.QJIJ5p, {});
             let t = o.A.getGuild(e[0]),
                 n = t?.name ?? "",
@@ -66,10 +66,10 @@ let m = {
             })
         },
         useTrailingDecoration: function() {
-            return m
+            return g
         },
         destinationKey: u.X.ACTIVITY_PRIVACY_PANEL
     }),
-    h = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
+    h = (0, r.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
         buildLayout: () => [A]
     })

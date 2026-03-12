@@ -18,9 +18,9 @@ var i = n(627968),
 function m(e) {
     let t = (0, s.TZ)(e),
         m = _.dR.some(t => e?.id !== h.Vc && d.Ib(t, e)),
-        p = e?.defaultMessageNotifications === u.orn.ALL_MESSAGES,
-        g = (0, c.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? u.dJq),
-        E = t && (m || p) && !g,
+        g = e?.defaultMessageNotifications === u.orn.ALL_MESSAGES,
+        p = (0, c.G$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? u.dJq),
+        E = t && (m || g) && !p,
         I = r.useCallback(() => {
             (0, c._$)(l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, e?.id ?? u.dJq, !0, A.i.DISMISS)
         }, [e]),
@@ -33,7 +33,7 @@ function m(e) {
             return n => (0, i.jsx)(t, {
                 guild: e,
                 canEveryoneModerate: m,
-                isDefaultNotificationsAllMessages: p,
+                isDefaultNotificationsAllMessages: g,
                 ...n
             })
         }, {
@@ -42,5 +42,5 @@ function m(e) {
             type: l.V[l.V.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
             guild_id: e?.id ?? u.dJq
         }), f.current = !0)
-    }, [m, e, I, p, E])
+    }, [m, e, I, g, E])
 }

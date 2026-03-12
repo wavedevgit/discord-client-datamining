@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(485947),
     _ = n(831062),
     m = n(954571),
-    p = n(336590),
-    g = n(471271),
+    g = n(336590),
+    p = n(471271),
     E = n(957283),
     I = n(284306),
     f = n(790499),
@@ -31,7 +31,7 @@ function y() {
     let e = r.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
-        l = (0, p.r)(),
+        l = (0, g.r)(),
         y = (0, c.w)(),
         b = (0, A.A)("message-requests-spam-list"),
         {
@@ -42,7 +42,7 @@ function y() {
         }, []),
         {
             rejectAll: R
-        } = (0, g.t)({
+        } = (0, p.t)({
             onError: L
         }),
         P = r.useCallback(() => {
@@ -55,7 +55,7 @@ function y() {
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
         })
     });
-    let j = r.useCallback(e => {
+    let D = r.useCallback(e => {
             let {
                 row: n
             } = e, r = t[n], s = t[n + 1]?.channel?.id, o = r.channel.id;
@@ -70,7 +70,7 @@ function y() {
                 hasSingleMessageRequest: l
             }, o)
         }, [t, l, O]),
-        D = r.useCallback(() => (0, i.jsxs)(h.A, {
+        j = r.useCallback(() => (0, i.jsxs)(h.A, {
             className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n
@@ -111,8 +111,8 @@ function y() {
                     paddingBottom: 24,
                     sectionHeight: 26,
                     rowHeight: 73,
-                    renderSection: D,
-                    renderRow: j,
+                    renderSection: j,
+                    renderRow: D,
                     sections: [t.length],
                     chunkSize: 30,
                     fade: !0,

@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(417597),
     s = n(954571),
     l = n(899847),
-    a = n(695515),
-    r = n(191627),
+    r = n(695515),
+    a = n(191627),
     o = n(652215);
 let d = () => ({
-    selectedTab: (0, i.bG)([a.A], () => a.A.getSelectedTab()),
+    selectedTab: (0, i.bG)([r.A], () => r.A.getSelectedTab()),
     handleTabChange: e => {
         l.Ay.selectTab(e), s.default.track(o.HAw.FAMILY_CENTER_ACTION, {
-            action: r.qb.TabChange,
+            action: a.qb.TabChange,
             tab: e
         })
     }

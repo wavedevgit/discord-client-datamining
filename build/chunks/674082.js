@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(311907),
     s = n(419954),
     l = n(994500),
-    a = n(975571),
-    r = n(780964),
+    r = n(975571),
+    a = n(780964),
     o = n(961583),
     d = n(276221),
     c = n(652215),
     u = n(985018);
-let _ = (0, s.zZ)(r.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
+let _ = (0, s.zZ)(a.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
     useTitle: () => u.intl.string(u.t.LVwR56),
     useSubtitle: () => u.intl.format(u.t["0aNQo9"], {
-        helpArticle: a.A.getArticleURL(c.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
+        helpArticle: r.A.getArticleURL(c.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
     }),
     buildLayout: () => [o.T, d.H],
     usePredicate: () => {

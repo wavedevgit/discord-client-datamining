@@ -1,90 +1,87 @@
 /** chunk id: 360619 params = (module,exports,require) **/
 n.d(t, {
-    AC: () => I,
-    NI: () => v,
-    PH: () => b
+    AC: () => b,
+    NI: () => I,
+    PH: () => N
 }), n(321073);
 var i = n(64700),
     s = n(311907);
 n(361739);
 var l = n(406360),
-    a = n(86379),
-    r = n(643015),
+    r = n(86379),
+    a = n(643015),
     o = n(945276),
     d = n(35587),
     c = n(677402),
     u = n(207560),
     _ = n(818143),
-    g = n(639555),
-    m = n(617641),
+    m = n(639555),
+    g = n(617641),
     A = n(961350);
 n(540999);
 var h = n(189081),
-    p = n(994500),
-    x = n(628965),
-    E = n(287809),
+    x = n(994500),
+    p = n(628965),
     T = n(253932),
-    S = n(368631),
+    E = n(368631),
     C = n(682262),
-    f = n(987281);
+    S = n(987281);
 n(531525);
-var N = n(654487);
+var f = n(654487);
 
-function b() {
+function N() {
     let e = (0, d.IO)().length,
-        t = (0, s.bG)([x.A], () => x.A.getSearchParams()),
+        t = (0, s.bG)([p.A], () => p.A.getSearchParams()),
         n = (0, C.b_)(),
-        f = E.default.getCurrentUser()?.isStaff() ?? !1,
-        b = (0, m.Lc)({
+        S = (0, g.Lc)({
             location: "settings"
         }),
-        I = (0, g.Rv)({
+        N = (0, m.Rv)({
             location: "settings"
         }),
-        v = (0, a.H)(),
-        j = (0, c.H)({
-            location: N.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
+        b = (0, r.H)(),
+        I = (0, c.H)({
+            location: f.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),
-        O = (0, s.bG)([h.A], () => h.A.hasLibraryApplication()),
-        R = (0, s.bG)([A.default], () => A.default.hasTOTPEnabled()),
-        y = T.Q_.useSetting(),
-        P = (0, r.A)(),
-        D = (0, o.A)() ?? !0,
-        L = (0, _.G)()?.length > 0,
+        v = (0, s.bG)([h.A], () => h.A.hasLibraryApplication()),
+        j = (0, s.bG)([A.default], () => A.default.hasTOTPEnabled()),
+        O = T.Q_.useSetting(),
+        y = (0, a.A)(),
+        R = (0, o.A)() ?? !0,
+        P = (0, _.G)()?.length > 0,
         {
-            hasBlockedUsers: G,
-            hasIgnoredUsers: M
-        } = (0, s.cf)([p.A], () => ({
-            hasBlockedUsers: p.A.getBlockedIDs().length > 0,
-            hasIgnoredUsers: p.A.getIgnoredIDs().length > 0
+            hasBlockedUsers: D,
+            hasIgnoredUsers: L
+        } = (0, s.cf)([x.A], () => ({
+            hasBlockedUsers: x.A.getBlockedIDs().length > 0,
+            hasIgnoredUsers: x.A.getIgnoredIDs().length > 0
         })),
-        U = (0, u.fk)(),
-        k = (0, l.i)("useGenerateUserSettingsSections");
-    return i.useMemo(() => (0, S.zj)({
+        M = (0, u.fk)(),
+        G = (0, l.i)("useGenerateUserSettingsSections");
+    return i.useMemo(() => (0, E.zj)({
         unseenGiftCount: e,
         searchParams: t,
         isOverlaySupported: n,
-        isStaff: f,
-        isInappropriateConversationWarningEnabled: b,
-        isInapproprateConversationsDefaultOn: I,
-        paymentsBlocked: v,
-        isEligibleForQuests: j,
-        isStricterMessageRequestsEnabled: P,
-        hasLibraryApplication: O,
-        hasTOTPEnabled: R,
-        developerMode: y,
-        isAdultUser: D,
-        hasSecureFramesVerifiedUserIds: L,
-        hasIgnoredUsers: M,
-        hasBlockedUsers: G,
-        hasAgeGatedFeature: U,
-        isHDRAccessibilitySettingExperimentEnabled: k
-    }), [y, G, M, O, L, R, t, D, j, I, b, n, f, P, v, e, U, k])
+        isInappropriateConversationWarningEnabled: S,
+        isInapproprateConversationsDefaultOn: N,
+        paymentsBlocked: b,
+        isEligibleForQuests: I,
+        isStricterMessageRequestsEnabled: y,
+        hasLibraryApplication: v,
+        hasTOTPEnabled: j,
+        developerMode: O,
+        isAdultUser: R,
+        hasSecureFramesVerifiedUserIds: P,
+        hasIgnoredUsers: L,
+        hasBlockedUsers: D,
+        hasAgeGatedFeature: M,
+        isHDRAccessibilitySettingExperimentEnabled: G
+    }), [O, D, L, v, P, j, t, R, I, N, S, n, y, b, e, M, G])
 }
 
-function I(e) {
-    let t = f.a.useField("searchResults"),
-        n = b(),
+function b(e) {
+    let t = S.a.useField("searchResults"),
+        n = N(),
         i = n[e],
         s = Object.fromEntries(Object.entries(n).filter(e => {
             let [t, n] = e;
@@ -102,16 +99,16 @@ function I(e) {
             }] = e;
             return [t, n]
         })),
-        a = new Set,
-        r = e => {
+        r = new Set,
+        a = e => {
             let t = s[e];
             if (null == t) return;
-            a.add(e);
+            r.add(e);
             let n = t.parent;
-            null != n && r(n)
+            null != n && a(n)
         },
         o = e => {
-            for (let t of (a.add(e), Object.entries(l).filter(t => {
+            for (let t of (r.add(e), Object.entries(l).filter(t => {
                     let [n, i] = t;
                     return i === e
                 }).map(e => {
@@ -120,16 +117,16 @@ function I(e) {
                 }))) o(t)
         };
     for (let e of t.filter(e => e in s))
-        if (!a.has(e)) {
+        if (!r.has(e)) {
             if (null != s[e].element && null == s[e].parent) {
-                a.clear();
+                r.clear();
                 break
             }
-            Object.values(l).includes(e) && o(e), r(e)
-        } return a
+            Object.values(l).includes(e) && o(e), a(e)
+        } return r
 }
 
-function v(e) {
+function I(e) {
     return Array.from(new Map(Object.entries(e).filter(e => {
         let [t, n] = e;
         return null != n.searchableTitles && (null == n.predicate || n.predicate()) && (null == n.unsearchable || !1 === n.unsearchable)

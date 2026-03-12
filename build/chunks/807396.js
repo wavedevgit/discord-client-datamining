@@ -6,23 +6,23 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(158954),
+    r = n.n(l),
+    a = n(158954),
     o = n(311907),
     d = n(827734),
     c = n(990078),
     u = n(582754),
     _ = n(397927),
-    g = n(73153),
-    m = n(77468),
+    m = n(73153),
+    g = n(77468),
     A = n(289498),
     h = n(736653),
-    p = n(573648),
-    x = n(681819),
-    E = n(370480),
-    T = n(882997),
-    S = n(373498),
-    C = n(169869),
+    x = n(573648),
+    p = n(681819),
+    T = n(370480),
+    E = n(882997),
+    C = n(373498),
+    S = n(169869),
     f = n(263063),
     N = n(496885),
     b = n(962173),
@@ -30,13 +30,13 @@ var i = n(627968),
     v = n(351906),
     j = n(954571),
     O = n(975571),
-    R = n(773669),
-    y = n(801264),
+    y = n(773669),
+    R = n(801264),
     P = n(523104),
     D = n(856220),
     L = n(652215),
-    G = n(783419),
-    M = n(985018),
+    M = n(783419),
+    G = n(985018),
     U = n(197168);
 let k = e => {
     let t, {
@@ -45,20 +45,20 @@ let k = e => {
         {
             isJoining: s,
             joinErrorMessage: l,
-            showJoinErrorMessage: a
+            showJoinErrorMessage: r
         } = (0, o.cf)([b.A], () => ({
             isJoining: b.A.isJoining(n.id),
-            joinErrorMessage: "" === b.A.joinErrorMessage(n.id) ? M.intl.string(M.t.j2d6Km) : b.A.joinErrorMessage(n.id),
+            joinErrorMessage: "" === b.A.joinErrorMessage(n.id) ? G.intl.string(G.t.j2d6Km) : b.A.joinErrorMessage(n.id),
             showJoinErrorMessage: void 0 !== b.A.joinErrorMessage(n.id)
         }), [n.id]);
     return null != (0, o.bG)([I.A], () => I.A.getGuild(n.guild.id), [n.guild.id]) || (t = (0, i.jsx)(_.Button, {
         size: "sm",
         onClick: function() {
-            m.A.joinServer(n.id, () => {})
+            g.A.joinServer(n.id, () => {})
         },
         disabled: s,
         variant: "primary",
-        text: s ? M.intl.string(M.t.RXvQQu) : M.intl.string(M.t.XpeFYr)
+        text: s ? G.intl.string(G.t.RXvQQu) : G.intl.string(G.t.XpeFYr)
     })), (0, i.jsxs)("div", {
         className: U.iA,
         children: [(0, i.jsxs)("div", {
@@ -74,7 +74,7 @@ let k = e => {
                     color: "text-strong",
                     children: n.guild.name
                 }), (0, i.jsx)(_.MzZ, {
-                    href: p.A.get(n.type)?.getPlatformUserUrl?.(n.account),
+                    href: x.A.get(n.type)?.getPlatformUserUrl?.(n.account),
                     children: (0, i.jsx)(_.Text, {
                         variant: "text-xs/normal",
                         color: "text-default",
@@ -82,7 +82,7 @@ let k = e => {
                     })
                 })]
             }), t]
-        }), a && (0, i.jsx)(_.Text, {
+        }), r && (0, i.jsx)(_.Text, {
             variant: "text-xs/normal",
             color: "text-feedback-critical",
             className: U.R,
@@ -92,24 +92,24 @@ let k = e => {
 };
 
 function V(e) {
-    let t, n, l, a, o, g, A, {
+    let t, n, l, r, o, m, A, {
             onDisconnect: h,
             account: f,
             theme: b,
             locale: I
         } = e,
         [v, j] = s.useState(f.friendSync),
-        [R, V] = s.useState(f.visibility),
-        [w, H] = s.useState(f.metadataVisibility),
-        [B, F] = s.useState(f.showActivity),
+        [y, V] = s.useState(f.visibility),
+        [w, B] = s.useState(f.metadataVisibility),
+        [H, F] = s.useState(f.showActivity),
         [Y, z] = s.useState(null),
         [X, W] = s.useState(null),
         [K, Z] = s.useState(!1),
         [q, J] = s.useState([]),
-        Q = (0, x.ML)(f.type),
-        $ = p.A.get(Q);
+        Q = (0, p.ML)(f.type),
+        $ = x.A.get(Q);
     s.useEffect(() => {
-        j(f.friendSync), V(f.visibility), H(f.metadataVisibility), F(f.showActivity)
+        j(f.friendSync), V(f.visibility), B(f.metadataVisibility), F(f.showActivity)
     }, [f]);
     let ee = {
             inProgressVisibility: Y,
@@ -124,11 +124,11 @@ function V(e) {
             inProgressVisibility: e,
             inProgressMetadataVisibility: t
         } = et.current;
-        null != e && (V(e), m.A.setVisibility(f.type, f.id, e), z(null)), null != t && (H(t), m.A.setMetadataVisibility(f.type, f.id, t), W(null))
+        null != e && (V(e), g.A.setVisibility(f.type, f.id, e), z(null)), null != t && (B(t), g.A.setMetadataVisibility(f.type, f.id, t), W(null))
     }, [f]), (0, i.jsxs)("div", {
         className: U.FI,
-        children: [(t = p.A.get(f.type), n = p.A.get(Q), l = "1" === (f.metadata ?? {})[G.pK.TWITTER_VERIFIED], a = null, t.type === L.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
-            text: M.intl.string(M.t.Jebrww),
+        children: [(t = x.A.get(f.type), n = x.A.get(Q), l = "1" === (f.metadata ?? {})[M.pK.TWITTER_VERIFIED], r = null, t.type === L.fg2.TWITTER && l && (r = (0, i.jsx)(c.m, {
+            text: G.intl.string(G.t.Jebrww),
             children: (0, i.jsx)(N.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
                 children: (0, i.jsx)(_.Uzd, {
@@ -150,9 +150,9 @@ function V(e) {
                         variant: "text-md/semibold",
                         className: U.RW,
                         children: f.name
-                    }), null != a && (0, i.jsx)("div", {
+                    }), null != r && (0, i.jsx)("div", {
                         className: U.cG,
-                        children: a
+                        children: r
                     })]
                 }), (0, i.jsx)(_.Text, {
                     variant: "text-xs/normal",
@@ -163,34 +163,34 @@ function V(e) {
             }), (0, i.jsx)(_.DUT, {
                 className: U.uH,
                 onClick: function() {
-                    let e = p.A.get(f.type);
-                    (0, _.qfG)(t => (0, i.jsx)(r.Modal, {
-                        title: M.intl.formatToPlainString(M.t.U5x12f, {
+                    let e = x.A.get(f.type);
+                    (0, _.qfG)(t => (0, i.jsx)(a.Modal, {
+                        title: G.intl.formatToPlainString(G.t.U5x12f, {
                             name: e.name
                         }),
-                        subtitle: M.intl.format(M.t.VgqIPj, {
+                        subtitle: G.intl.format(G.t.VgqIPj, {
                             provider: e.name
                         }),
                         actions: [{
-                            text: M.intl.string(M.t["ETE/oC"]),
+                            text: G.intl.string(G.t["ETE/oC"]),
                             onClick: t.onClose,
                             variant: "secondary"
                         }, {
-                            text: M.intl.string(M.t.bsbMVz),
+                            text: G.intl.string(G.t.bsbMVz),
                             onClick: () => {
                                 h(), t.onClose()
                             },
                             variant: "primary"
                         }],
                         ...t,
-                        children: (0, S.A)(f) && (0, i.jsx)(y.A, {
-                            children: M.intl.format(M.t.COW3Xn, {
+                        children: (0, C.A)(f) && (0, i.jsx)(R.A, {
+                            children: G.intl.format(G.t.COW3Xn, {
                                 platformName: e.name
                             })
                         })
                     }))
                 },
-                "aria-label": M.intl.string(M.t.ppppRJ),
+                "aria-label": G.intl.string(G.t.ppppRJ),
                 focusProps: {
                     offset: {
                         top: -4,
@@ -206,61 +206,61 @@ function V(e) {
         })), f.twoWayLink ? null : f.type === L.fg2.XBOX ? (0, i.jsx)(D._, {}) : f.type === L.fg2.PLAYSTATION ? (0, i.jsx)(P.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
-                s = (0, E.An)(t[G.pK.CREATED_AT], I);
+                s = (0, T.An)(t[M.pK.CREATED_AT], I);
             switch (e.type) {
                 case L.fg2.REDDIT:
-                    n = (0, C.xE)(t, U.Nz);
+                    n = (0, S.xE)(t, U.Nz);
                     break;
                 case L.fg2.STEAM:
-                    n = (0, C.dy)(t, U.Nz);
+                    n = (0, S.dy)(t, U.Nz);
                     break;
                 case L.fg2.BLUESKY:
                 case L.fg2.TWITTER:
                 case L.fg2.MASTODON:
-                    n = (0, C.ED)(t, U.Nz);
+                    n = (0, S.ED)(t, U.Nz);
                     break;
                 case L.fg2.EBAY:
-                    n = (0, C.ub)(t, U.Nz);
+                    n = (0, S.ub)(t, U.Nz);
                     break;
                 case L.fg2.PAYPAL:
-                    n = (0, C.gZ)(t, U.Nz);
+                    n = (0, S.gZ)(t, U.Nz);
                     break;
                 case L.fg2.TIKTOK:
-                    n = (0, C.HU)(t, U.Nz)
+                    n = (0, S.HU)(t, U.Nz)
             }
             null !== s && (null == n && (n = []), n?.push((0, i.jsx)(_.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 className: U.M4,
-                children: M.intl.format(M.t["9rfonh"], {
+                children: G.intl.format(G.t["9rfonh"], {
                     date: s
                 })
             }, "member-since")));
             let l = q.includes(e.id),
-                a = M.intl.string(M.t.wzzjk9);
+                r = G.intl.string(G.t.wzzjk9);
             if (null == n || 0 === n.length)
-                if (!0 !== p.A.get(e.type).hasMetadata) return null;
+                if (!0 !== x.A.get(e.type).hasMetadata) return null;
                 else n = [(0, i.jsx)(_.LpS, {
                     className: U.Z3,
-                    text: M.intl.string(M.t.y2b7CA)
+                    text: G.intl.string(G.t.y2b7CA)
                 }, "badge"), (0, i.jsx)(_.Text, {
                     variant: "text-xs/normal",
                     className: U.vt,
-                    children: M.intl.format(M.t.Up2ni7, {
+                    children: G.intl.format(G.t.Up2ni7, {
                         helpdeskUrl: O.A.getArticleURL(L.MVz.CONNECTION_DETAILS)
                     })
-                }, "label")], a = M.intl.string(M.t["LVh3/5"]);
-            return l && (a = M.intl.string(M.t.i4jeWR)), n.push((0, i.jsx)("div", {
+                }, "label")], r = G.intl.string(G.t["LVh3/5"]);
+            return l && (r = G.intl.string(G.t.i4jeWR)), n.push((0, i.jsx)("div", {
                 className: U.jy,
                 children: (0, i.jsx)(_.Button, {
-                    text: a,
+                    text: r,
                     variant: "secondary",
                     size: "sm",
                     loading: K,
                     disabled: l,
-                    "aria-label": M.intl.string(M.t.sCkLYH),
+                    "aria-label": G.intl.string(G.t.sCkLYH),
                     onClick: l ? void 0 : () => {
-                        Z(!0), m.A.refresh(e.type, e.id).finally(() => {
+                        Z(!0), g.A.refresh(e.type, e.id).finally(() => {
                             setTimeout(() => {
                                 q.push(e.id), J(q), Z(!1)
                             }, 2e3)
@@ -272,69 +272,69 @@ function V(e) {
                 children: n
             })
         }(f), (L.txh.has(f.type) && (o = (0, i.jsx)(_.dOG, {
-            label: M.intl.string(M.t["+KCMSi"]),
+            label: G.intl.string(G.t["+KCMSi"]),
             checked: v,
             onChange: function(e) {
-                j(e), m.A.setFriendSync(f.type, f.id, e)
+                j(e), g.A.setFriendSync(f.type, f.id, e)
             }
-        })), L.ewM.has(f.type) && (g = (0, i.jsx)(_.dOG, {
-            label: M.intl.format(M.t["6u6J0q"], {
+        })), L.ewM.has(f.type) && (m = (0, i.jsx)(_.dOG, {
+            label: G.intl.format(G.t["6u6J0q"], {
                 platform: $.name
             }),
-            checked: B,
+            checked: H,
             onChange: function(e) {
-                F(e), m.A.setShowActivity(f.type, f.id, e)
+                F(e), g.A.setShowActivity(f.type, f.id, e)
             }
-        })), p.A.get(f.type)?.hasMetadata === !0 && (A = (0, i.jsx)(_.dOG, {
-            label: M.intl.string(M.t.FYKGsL),
+        })), x.A.get(f.type)?.hasMetadata === !0 && (A = (0, i.jsx)(_.dOG, {
+            label: G.intl.string(G.t.FYKGsL),
             checked: 1 === w,
             onChange: function(e) {
                 let {
                     verified: t
                 } = f, n = +!!e;
                 if (e && !t) {
-                    W(n), (0, T.A)({
+                    W(n), (0, E.A)({
                         platformType: f.type,
                         location: "User Settings"
                     });
                     return
                 }
-                H(n), m.A.setMetadataVisibility(f.type, f.id, n)
+                B(n), g.A.setMetadataVisibility(f.type, f.id, n)
             },
-            disabled: 1 !== R || null == f.metadata
+            disabled: 1 !== y || null == f.metadata
         })), (0, i.jsxs)("div", {
             className: U.HZ,
             children: [(0, i.jsx)(_.dOG, {
-                label: M.intl.string(M.t.f7yOAX),
-                checked: 1 === R,
+                label: G.intl.string(G.t.f7yOAX),
+                checked: 1 === y,
                 onChange: function(e) {
                     let {
                         verified: t
                     } = f, n = +!!e;
                     if (e && !t) {
-                        z(n), (0, T.A)({
+                        z(n), (0, E.A)({
                             platformType: f.type,
                             location: "User Settings"
                         });
                         return
                     }
-                    V(n), m.A.setVisibility(f.type, f.id, n)
+                    V(n), g.A.setVisibility(f.type, f.id, n)
                 }
-            }), A, g, o]
+            }), A, m, o]
         })), function() {
             if (f.revoked || f.integrations.length > 0) return (0, i.jsx)(_.cGx, {})
-        }(), f.revoked ? (0, i.jsx)(r.po8, {
-            messageType: r.YCn.INFO,
-            children: M.intl.format(M.t["6C4lgA"], {
+        }(), f.revoked ? (0, i.jsx)(a.po8, {
+            messageType: a.YCn.INFO,
+            children: G.intl.format(G.t["6C4lgA"], {
                 onReconnect: function() {
-                    (0, T.A)({
+                    (0, E.A)({
                         platformType: f.type,
                         location: "User Settings"
                     })
                 }
             })
         }) : f.integrations.length > 0 ? (0, i.jsx)(_.D0$, {
-            label: M.intl.string(M.t.fOe3fZ),
+            label: G.intl.string(G.t.fOe3fZ),
             children: f.integrations.map(e => (0, i.jsx)(k, {
                 integration: e
             }, e.id))
@@ -344,17 +344,17 @@ function V(e) {
 
 function w() {
     return (0, i.jsx)(_.D0$, {
-        label: M.intl.string(M.t.ZeDrUf),
-        description: M.intl.format(M.t["oYc+Gz"], {
+        label: G.intl.string(G.t.ZeDrUf),
+        description: G.intl.format(G.t["oYc+Gz"], {
             privacyPolicyUrl: L.X7G.PRIVACY
         }),
-        children: (0, i.jsx)(B, {})
+        children: (0, i.jsx)(H, {})
     })
 }
 
-function H(e) {
-    let t = p.A.get(e);
-    (0, T.A)({
+function B(e) {
+    let t = x.A.get(e);
+    (0, E.A)({
         platformType: t.type
     }), j.default.track(L.HAw.ACCOUNT_LINK_STEP, {
         previous_step: "desktop connections",
@@ -363,8 +363,8 @@ function H(e) {
     })
 }
 
-function B() {
-    let e = (0, x.gn)();
+function H() {
+    let e = (0, p.gn)();
     return (0, i.jsxs)("div", {
         className: U.lA,
         children: [e.slice(0, 10).map(e => (0, i.jsx)(A.A, {
@@ -372,24 +372,24 @@ function B() {
             className: U.__invalid_accountButton,
             innerClassName: U.U$
         }, e.type)), (0, i.jsx)(c.m, {
-            text: M.intl.string(M.t.QqTz8b),
+            text: G.intl.string(G.t.QqTz8b),
             children: (0, i.jsx)("div", {
-                className: a()(U.ej, U.__invalid_accountButton),
+                className: r()(U.ej, U.__invalid_accountButton),
                 children: (0, i.jsx)(_.vN3, {
                     children: (0, i.jsx)("button", {
-                        className: a()(U.R8, U.U$),
+                        className: r()(U.R8, U.U$),
                         type: "button",
                         onClick: function() {
-                            g.h.dispatch({
+                            m.h.dispatch({
                                 type: "CONNECTIONS_GRID_MODAL_SHOW",
-                                onComplete: H
+                                onComplete: B
                             })
                         },
-                        "aria-label": M.intl.string(M.t.Zhcj9X),
+                        "aria-label": G.intl.string(G.t.Zhcj9X),
                         children: (0, i.jsx)(_._BQ, {
                             color: "currentColor",
                             size: "md",
-                            "aria-label": M.intl.string(M.t.QqTz8b)
+                            "aria-label": G.intl.string(G.t.QqTz8b)
                         })
                     })
                 })
@@ -403,26 +403,26 @@ function F(e) {
         fetching: n,
         accounts: s,
         theme: l,
-        locale: a
+        locale: r
     } = e;
     return t = n ? (0, i.jsx)(_.y$y, {
         type: _.y$y.Type.SPINNING_CIRCLE
     }) : 0 === s.length ? (0, i.jsx)(_.ppr, {
         theme: l,
         children: (0, i.jsx)(_.SGT, {
-            note: M.intl.string(M.t.WenGZ2),
-            children: M.intl.string(M.t.aoLS84)
+            note: G.intl.string(G.t.WenGZ2),
+            children: G.intl.string(G.t.aoLS84)
         })
-    }) : s.filter(e => p.A.isSupported(e.type)).map((e, t) => (0, i.jsx)(V, {
+    }) : s.filter(e => x.A.isSupported(e.type)).map((e, t) => (0, i.jsx)(V, {
         theme: l,
         account: e,
-        locale: a,
+        locale: r,
         onDisconnect: () => (function(e) {
             let {
                 type: t,
                 id: n
             } = e;
-            m.A.disconnect(t, n)
+            g.A.disconnect(t, n)
         })(e)
     }, t)), (0, i.jsx)("div", {
         className: U.V,
@@ -435,7 +435,7 @@ function Y() {
         t = (0, o.bG)([b.A], () => b.A.isFetching()),
         n = (0, o.bG)([b.A], () => b.A.getAccounts()),
         s = (0, h.Ay)(),
-        l = (0, o.bG)([R.default], () => R.default.locale);
+        l = (0, o.bG)([y.default], () => y.default.locale);
     return e ? null : (0, i.jsx)(F, {
         fetching: t,
         accounts: n,

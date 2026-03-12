@@ -20,8 +20,8 @@ let A = r.forwardRef(function(e, t) {
         disabled: h = !1,
         color: _,
         colorClass: m,
-        tooltip: p,
-        "aria-label": g,
+        tooltip: g,
+        "aria-label": p,
         "aria-expanded": E,
         "aria-haspopup": I,
         "data-jump-section": f
@@ -32,7 +32,7 @@ let A = r.forwardRef(function(e, t) {
     });
     return (0, i.jsx)(o.m_, {
         position: "bottom",
-        text: p,
+        text: g,
         ariaHidden: !0,
         children: (0, i.jsx)(d.DUT, {
             innerRef: t,
@@ -43,7 +43,7 @@ let A = r.forwardRef(function(e, t) {
                 [u.r9]: h
             }),
             role: "button",
-            "aria-label": null != g ? g : p,
+            "aria-label": null != p ? p : g,
             "aria-haspopup": I,
             "aria-expanded": E,
             "data-jump-section": f,

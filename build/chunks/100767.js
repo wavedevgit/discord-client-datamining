@@ -1,9 +1,9 @@
 /** chunk id: 100767 params = (module,exports,require) **/
 n.d(t, {
     $j: () => s,
-    _X: () => r,
+    _X: () => a,
     aW: () => l,
-    wz: () => a
+    wz: () => r
 });
 var i = n(8880);
 let s = null != window.speechSynthesis;
@@ -18,10 +18,10 @@ function l(e, t) {
     return s.rate = i.A.speechRate, s
 }
 
-function a(e, t) {
+function r(e, t) {
     s && (e.voice = t, speechSynthesis.speak(e))
 }
 
-function r() {
+function a() {
     s && speechSynthesis.cancel()
 }

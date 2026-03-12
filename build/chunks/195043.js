@@ -1,10 +1,10 @@
 /** chunk id: 195043 params = (module,exports,require) **/
-function I(E) {
+function E(_) {
     let {
-        children: _
-    } = E;
-    return _
+        children: t
+    } = _;
+    return t
 }
-A.d(_, {
-    x: () => I
+A.d(t, {
+    x: () => E
 }), A(64700)

@@ -1,35 +1,35 @@
 /** chunk id: 464639 params = (module,exports,require) **/
 n.d(t, {
-    e: () => g
+    e: () => m
 });
 var i = n(311907),
     s = n(827343),
     l = n(419954),
-    a = n(430452),
-    r = n(780964),
+    r = n(430452),
+    a = n(780964),
     o = n(731854),
     d = n(985018);
-let c = (0, l.sN)(r.X.VOICE_GLOBAL_ATTENUATION_SLIDER, {
+let c = (0, l.sN)(a.X.VOICE_GLOBAL_ATTENUATION_SLIDER, {
         useTitle: () => d.intl.string(d.t.AlybXj),
-        setValue: e => s.A.setAttenuation(e, a.Ay.getAttenuateWhileSpeakingSelf(), a.Ay.getAttenuateWhileSpeakingOthers()),
+        setValue: e => s.A.setAttenuation(e, r.Ay.getAttenuateWhileSpeakingSelf(), r.Ay.getAttenuateWhileSpeakingOthers()),
         minValue: 0,
         maxValue: 100,
-        getInitialValue: () => a.Ay.getAttenuation()
+        getInitialValue: () => r.Ay.getAttenuation()
     }),
-    u = (0, l.zD)(r.X.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
+    u = (0, l.zD)(a.X.VOICE_GLOBAL_ATTENUATION_FOR_SELF_SETTING, {
         useTitle: () => d.intl.string(d.t["9dHxRY"]),
-        useValue: () => (0, i.bG)([a.Ay], () => a.Ay.getAttenuateWhileSpeakingSelf()),
-        setValue: e => s.A.setAttenuation(a.Ay.getAttenuation(), e, a.Ay.getAttenuateWhileSpeakingOthers())
+        useValue: () => (0, i.bG)([r.Ay], () => r.Ay.getAttenuateWhileSpeakingSelf()),
+        setValue: e => s.A.setAttenuation(r.Ay.getAttenuation(), e, r.Ay.getAttenuateWhileSpeakingOthers())
     }),
-    _ = (0, l.zD)(r.X.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
+    _ = (0, l.zD)(a.X.VOICE_GLOBAL_ATTENUATION_FOR_OTHERS_SETTING, {
         useTitle: () => d.intl.string(d.t.SMt0Gr),
-        useValue: () => (0, i.bG)([a.Ay], () => a.Ay.getAttenuateWhileSpeakingOthers()),
-        setValue: e => s.A.setAttenuation(a.Ay.getAttenuation(), a.Ay.getAttenuateWhileSpeakingSelf(), e)
+        useValue: () => (0, i.bG)([r.Ay], () => r.Ay.getAttenuateWhileSpeakingOthers()),
+        setValue: e => s.A.setAttenuation(r.Ay.getAttenuation(), r.Ay.getAttenuateWhileSpeakingSelf(), e)
     }),
-    g = (0, l.FW)(r.X.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
+    m = (0, l.FW)(a.X.VOICE_GLOBAL_ATTENUATION_FIELD_SET, {
         variant: "compact",
         useTitle: () => d.intl.string(d.t.oSdBvW),
         useSubtitle: () => d.intl.string(d.t["0A/8Rt"]),
-        usePredicate: () => (0, i.bG)([a.Ay], () => a.Ay.supports(o.O5.ATTENUATION)),
+        usePredicate: () => (0, i.bG)([r.Ay], () => r.Ay.supports(o.O5.ATTENUATION)),
         buildLayout: () => [c, u, _]
     })

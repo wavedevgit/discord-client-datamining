@@ -5,16 +5,16 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(115980),
-    a = n(985018);
-let r = (0, i.E2)(s.X.BILLING_TRANSACTION_HISTORY, {
+    r = n(985018);
+let a = (0, i.E2)(s.X.BILLING_TRANSACTION_HISTORY, {
         Component: l.ac,
-        useSearchTerms: () => [a.intl.string(a.t.obLrcK)]
+        useSearchTerms: () => [r.intl.string(r.t.obLrcK)]
     }),
     o = (0, i.E2)(s.X.BILLING_REDEMPTION_REDIRECT, {
         Component: l.OH,
-        useSearchTerms: () => [a.intl.string(a.t.obLrcK)]
+        useSearchTerms: () => [r.intl.string(r.t.obLrcK)]
     }),
     d = (0, i.zZ)(s.X.BILLING_TRANSACTION_HISTORY_CATEGORY, {
-        useTitle: () => a.intl.string(a.t.obLrcK),
-        buildLayout: () => [r, o]
+        useTitle: () => r.intl.string(r.t.obLrcK),
+        buildLayout: () => [a, o]
     })

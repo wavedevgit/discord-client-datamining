@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(612025),
-    a = n(112469),
-    r = n(380587),
+    r = n(112469),
+    a = n(380587),
     o = n(589641),
     d = n(657875),
     c = n(785048),
     u = n(705013),
     _ = n(794145),
-    g = n(404096),
-    m = n(985018);
+    m = n(404096),
+    g = n(985018);
 let A = (0, i.zZ)(s.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
-    useTitle: () => m.intl.string(m.t.eYaT7L),
+    useTitle: () => g.intl.string(g.t.eYaT7L),
     useInlineNotice: function() {
         let e = (0, o.I)(),
-            t = (0, r.Xj)();
-        if ((0, a.Tx)() === l.YG) return e ?? t
+            t = (0, a.Xj)();
+        if ((0, r.Tx)() === l.YG) return e ?? t
     },
-    buildLayout: () => [d.a, _.V, g.w, u.H, c.U]
+    buildLayout: () => [d.a, _.V, m.w, u.H, c.U]
 })

@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(934551),
     s = n(419954),
     l = n(780964),
-    a = n(682262),
-    r = n(644619),
+    r = n(682262),
+    a = n(644619),
     o = n(474069),
     d = n(985018);
 let c = (0, s.t_)(l.X.REGISTERED_GAMES_PANEL, {
         useTitle: () => d.intl.string(d.t.AVDyEj),
-        buildLayout: () => [o.i, r.G]
+        buildLayout: () => [o.i, a.G]
     }),
     u = (0, s.i4)(l.X.REGISTERED_GAMES_SIDEBAR_ITEM, {
         useTitle: () => d.intl.string(d.t.AVDyEj),
         icon: i.GameControllerIcon,
-        usePredicate: a.Pi,
+        usePredicate: r.Pi,
         buildLayout: () => [c]
     })

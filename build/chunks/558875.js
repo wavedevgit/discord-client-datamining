@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(158954),
     s = n(419954),
     l = n(780964),
-    a = n(324734),
-    r = n(336018),
+    r = n(324734),
+    a = n(336018),
     o = n(985018);
 let d = (0, s.zZ)(l.X.DEVELOPER_CATEGORY, {
-        buildLayout: () => [r.w, a.A]
+        buildLayout: () => [a.w, r.A]
     }),
     c = (0, s.t_)(l.X.DEVELOPER_PANEL, {
         useTitle: () => o.intl.string(o.t["0BRxRp"]),

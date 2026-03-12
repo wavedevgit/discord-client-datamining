@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(894389),
-    a = n(949350),
-    r = n(501750),
+    r = n(949350),
+    a = n(501750),
     o = n(92348),
     d = n(646704),
     c = n(985018);
 let u = (0, i.WI)(s.X.BILLING_SECTION, {
     useTitle: () => c.intl.string(c.t["4uOdGr"]),
-    buildLayout: () => [r.y, o.w, d.i, a.Q, l.b]
+    buildLayout: () => [a.y, o.w, d.i, r.Q, l.b]
 })

@@ -14,8 +14,8 @@ var l = n(735438),
     h = n(652215),
     _ = n(737045);
 let m = new Set,
-    p = h.XlH.CLOSED,
-    g = !1,
+    g = h.XlH.CLOSED,
+    p = !1,
     E = null,
     I = null,
     f = null,
@@ -35,7 +35,7 @@ function x(e) {
 function v() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
-    I = E = x(f), null == E[T] && (T = e), r = null != C, i = c.r(f, C), N = null, g = !1, p = h.XlH.CLOSED, m.clear()
+    I = E = x(f), null == E[T] && (T = e), r = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
 }
 class y extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
@@ -43,7 +43,7 @@ class y extends s.Ay.Store {
         this.waitFor(u.A, A.A)
     }
     hasChanges() {
-        return g
+        return p
     }
     showNotice() {
         return this.hasChanges()
@@ -61,7 +61,7 @@ class y extends s.Ay.Store {
         return T
     }
     get formState() {
-        return p
+        return g
     }
     get isLockable() {
         return r
@@ -102,7 +102,7 @@ let b = new y(d.h, {
         }, E = {
             ...E,
             [t]: l
-        }, m.add(t), p = h.XlH.OPEN, g = !a().isEqual(E, I), i = c.r(f, C)
+        }, m.add(t), g = h.XlH.OPEN, p = !a().isEqual(E, I), i = c.r(f, C)
     },
     CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
         let {
@@ -118,7 +118,7 @@ let b = new y(d.h, {
         u.A.getSection() === h.p_A.PERMISSIONS && v()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-        p = h.XlH.CLOSED, E = null, I = null, f = null, C = null, g = !1, m.clear(), T = null, N = null
+        g = h.XlH.CLOSED, E = null, I = null, f = null, C = null, p = !1, m.clear(), T = null, N = null
     },
     CHANNEL_UPDATES: function(e) {
         let {
@@ -143,13 +143,13 @@ let b = new y(d.h, {
         return n
     },
     CHANNEL_SETTINGS_PERMISSIONS_SUBMITTING: function() {
-        p = h.XlH.SUBMITTING
+        g = h.XlH.SUBMITTING
     },
     CHANNEL_SETTINGS_PERMISSIONS_SAVE_SUCCESS: function(e) {
         let {
             silent: t
         } = e;
-        t ? p = h.XlH.OPEN : (p = h.XlH.CLOSED, v())
+        t ? g = h.XlH.OPEN : (g = h.XlH.CLOSED, v())
     },
     CHANNEL_SETTINGS_PERMISSIONS_SET_ADVANCED_MODE: function(e) {
         let {

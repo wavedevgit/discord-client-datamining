@@ -1,19 +1,19 @@
 /** chunk id: 326911 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(869038),
+    r = n(397927),
+    a = n(869038),
     o = n(459357),
     d = n(99696),
     c = n(499454),
     u = n(351906),
     _ = n(954571),
-    g = n(45938),
-    m = n(652215),
+    m = n(45938),
+    g = n(652215),
     A = n(985018);
 class h extends s.Component {
     state = {
@@ -30,7 +30,7 @@ class h extends s.Component {
         } = this.props;
         return {
             ...e,
-            object: m.ZSU.BUTTON_CTA
+            object: g.ZSU.BUTTON_CTA
         }
     }
     handleChange = e => {
@@ -59,19 +59,19 @@ class h extends s.Component {
                 });
                 return
             } catch {}
-            let e = (0, g.Vd)(t);
+            let e = (0, m.Vd)(t);
             if (null == e) return void this.setState({
                 hasError: !0
             });
-            let i = await r.A.resolveGiftCode(e);
+            let i = await a.A.resolveGiftCode(e);
             if (null != i && null != i.giftCode.promotion) throw this.setState({
                 isPromoCode: !0
             }), Error("Cannnot redeem promotion code as gift");
-            _.default.track(m.HAw.OPEN_MODAL, {
+            _.default.track(g.HAw.OPEN_MODAL, {
                 type: "gift_accept",
                 location: {
                     ...this.analyticsLocation,
-                    object: m.ZSU.BUTTON_CTA
+                    object: g.ZSU.BUTTON_CTA
                 }
             }), (0, c.h)({
                 processedCode: e
@@ -97,12 +97,12 @@ class h extends s.Component {
             hasError: s,
             isPromoCode: l
         } = this.state;
-        return (0, i.jsx)(a.nVY, {
+        return (0, i.jsx)(r.nVY, {
             label: A.intl.string(A.t["il+VCo"]),
             children: (0, i.jsx)("form", {
                 onSubmit: this.handleSubmit,
-                children: (0, i.jsxs)(a.M_l, {
-                    children: [(0, i.jsx)(a.ksK, {
+                children: (0, i.jsxs)(r.M_l, {
+                    children: [(0, i.jsx)(r.ksK, {
                         label: A.intl.string(A.t.SeKIoS),
                         type: e ? "password" : "text",
                         value: t,
@@ -115,7 +115,7 @@ class h extends s.Component {
                             }
                         }) : null,
                         fullWidth: !0
-                    }), (0, i.jsx)(a.Button, {
+                    }), (0, i.jsx)(r.Button, {
                         variant: "primary",
                         text: A.intl.string(A.t.KIpp7M),
                         type: "submit",
@@ -127,7 +127,7 @@ class h extends s.Component {
     }
 }
 
-function p() {
+function x() {
     let {
         enabled: e
     } = (0, o.c)({

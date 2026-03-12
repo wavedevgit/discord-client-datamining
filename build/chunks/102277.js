@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(311907),
     s = n(419954),
     l = n(287809),
-    a = n(780964),
-    r = n(858526),
+    r = n(780964),
+    a = n(858526),
     o = n(32096),
     d = n(545214),
     c = n(985018);
-let u = (0, s.E2)(a.X.ACCOUNT_ENABLE_MFA_SETTING, {
+let u = (0, s.E2)(r.X.ACCOUNT_ENABLE_MFA_SETTING, {
     useSearchTerms: () => [c.intl.string(c.t.m0FidJ)],
     usePredicate: function() {
         let e = (0, o.b)(),
@@ -20,5 +20,5 @@ let u = (0, s.E2)(a.X.ACCOUNT_ENABLE_MFA_SETTING, {
             return null != n && !n.mfaEnabled && !e && !t
         })
     },
-    Component: r.A
+    Component: a.A
 })

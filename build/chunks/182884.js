@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(641324),
-    a = n(985018),
-    r = n(993856);
+    r = n(985018),
+    a = n(993856);
 
 function o(e) {
     let {
@@ -21,8 +21,8 @@ function o(e) {
         children: [(0, i.jsx)(s.Heading, {
             variant: "heading-md/semibold",
             color: "text-muted",
-            className: r.D,
-            children: a.intl.string(a.t.rPREPG)
+            className: a.D,
+            children: r.intl.string(r.t.rPREPG)
         }), t.layout.map(e => (0, i.jsx)(l.A, {
             node: e
         }, e.key))]

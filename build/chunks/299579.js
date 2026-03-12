@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(449054),
     _ = n(351022),
     m = n(282026),
-    p = n(965660),
-    g = n(19925),
+    g = n(965660),
+    p = n(19925),
     E = n(44440),
     I = n(22862),
     f = n(416082),
@@ -57,9 +57,9 @@ function O(e) {
         searchResultsQuery: N,
         loadMore: O,
         searchCategoryId: L
-    } = (0, g.I)({
+    } = (0, p.I)({
         loadId: t
-    }), R = 0 === o.length && !h, P = r.useContext(u.AnalyticsContext), [j, D] = r.useState((0, p.YP)()), [M, w] = r.useState(!0), U = r.useRef(M), [G, k] = r.useState(3), V = r.useRef(G), B = r.useRef(null), H = r.useCallback(e => {
+    }), R = 0 === o.length && !h, P = r.useContext(u.AnalyticsContext), [D, j] = r.useState((0, g.YP)()), [M, w] = r.useState(!0), U = r.useRef(M), [G, k] = r.useState(3), V = r.useRef(G), B = r.useRef(null), H = r.useCallback(e => {
         null == e || R || h || 336 * (o.length / G) <= e.height && O()
     }, [R, h, o.length, G, O]), F = r.useCallback(e => {
         let t = e.contentRect;
@@ -71,20 +71,20 @@ function O(e) {
         i !== V.current && (V.current = i, k(i)), H(t)
     }, [M, H]), Y = (0, c.w)(F, [M, H]);
     r.useEffect(() => {
-        D((0, p.YP)())
+        j((0, g.YP)())
     }, [N]), r.useEffect(() => {
         b({
             loadId: t,
-            searchId: j,
+            searchId: D,
             query: N,
             guildResults: o.map(_.A.getGuild).filter(A.Vq),
             analyticsContext: P,
             categoryId: L
         })
-    }, [P, o, t, L, j, N]);
+    }, [P, o, t, L, D, N]);
     let W = r.useCallback(e => n(e, L), [n, L]),
         q = r.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
-        K = r.useCallback((e, n, r) => {
+        z = r.useCallback((e, n, r) => {
             switch (e) {
                 case 0:
                     return (0, i.jsxs)("div", {
@@ -114,7 +114,7 @@ function O(e) {
                     }, r)
             }
         }, [R, M, t]),
-        z = r.useCallback(e => {
+        K = r.useCallback(e => {
             switch (e) {
                 case 0:
                     let t = M ? 16 : 68;
@@ -208,8 +208,8 @@ function O(e) {
             itemGutter: 16,
             padding: ee,
             renderItem: Z,
-            renderSection: K,
-            getSectionHeight: z,
+            renderSection: z,
+            getSectionHeight: K,
             getItemKey: $,
             getItemHeight: Q,
             chunkSize: 24,

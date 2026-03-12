@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(780964),
-    r = n(840065),
+    r = n(780964),
+    a = n(840065),
     o = n(473145),
     d = n(652215),
     c = n(788868),
@@ -16,11 +16,11 @@ function _(e) {
     let {
         guildBoostSlot: t,
         onClose: _,
-        hasCancelableGuildBoostSlot: g,
-        premiumSubscription: m,
+        hasCancelableGuildBoostSlot: m,
+        premiumSubscription: g,
         onSelect: A,
         fractionalState: h
-    } = e, p = {
+    } = e, x = {
         transfer: {
             label: null != t.premiumGuildSubscription ? u.intl.string(u.t["PR0n//"]) : u.intl.string(u.t["+fmEYG"]),
             subtext: t.isOnCooldown() ? u.intl.string(u.t.XnB8M0) : null,
@@ -28,8 +28,8 @@ function _(e) {
         },
         cancel: {
             label: u.intl.string(u.t.twFU3R),
-            subtext: g ? null : u.intl.string(u.t.oQ9lOh),
-            disabled: !g
+            subtext: m ? null : u.intl.string(u.t.oQ9lOh),
+            disabled: !m
         },
         uncancel: {
             label: u.intl.string(u.t["2glQNp"]),
@@ -37,18 +37,18 @@ function _(e) {
             disabled: !1
         }
     };
-    switch (m.status) {
+    switch (g.status) {
         case d.Dmq.PAST_DUE:
-            p.cancel.disabled = !0, p.cancel.subtext = u.intl.string(u.t.WnL6DV), p.uncancel.disabled = !0;
+            x.cancel.disabled = !0, x.cancel.subtext = u.intl.string(u.t.WnL6DV), x.uncancel.disabled = !0;
             break;
         case d.Dmq.PAUSE_PENDING:
         case d.Dmq.PAUSED:
-            h === c.xc.NONE && (p.transfer.disabled = !0, p.transfer.subtext = u.intl.string(u.t.LiLRRT), p.cancel.subtext = u.intl.string(u.t["1ywaWL"]), p.cancel.disabled = !0, p.uncancel.disabled = !0)
+            h === c.xc.NONE && (x.transfer.disabled = !0, x.transfer.subtext = u.intl.string(u.t.LiLRRT), x.cancel.subtext = u.intl.string(u.t["1ywaWL"]), x.cancel.disabled = !0, x.uncancel.disabled = !0)
     }
-    let x = s.useMemo(() => m.isPausedOrPausePending && h === c.xc.NONE ? (0, i.jsx)(l.Drp, {
+    let p = s.useMemo(() => g.isPausedOrPausePending && h === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
-        action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
+        action: () => (0, a.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL, {
             section: d.nc_.SUBSCRIPTIONS
         }),
         iconLeft: l.xmO,
@@ -56,7 +56,7 @@ function _(e) {
             type: "icon",
             icon: l.xmO
         }
-    }) : null, [h, m]);
+    }) : null, [h, g]);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         onSelect: A,
@@ -66,8 +66,8 @@ function _(e) {
         onClose: _,
         children: [(0, i.jsx)(l.Drp, {
             id: "apply",
-            label: p.transfer.label,
-            subtext: p.transfer.subtext,
+            label: x.transfer.label,
+            subtext: x.transfer.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -80,11 +80,11 @@ function _(e) {
                     })
                 })
             },
-            disabled: p.transfer.disabled
+            disabled: x.transfer.disabled
         }), (0, o.I5)(t) ? (0, i.jsx)(l.Drp, {
             id: "uncancel",
-            label: p.uncancel.label,
-            subtext: p.uncancel.subtext,
+            label: x.uncancel.label,
+            subtext: x.uncancel.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -96,11 +96,11 @@ function _(e) {
                     })
                 })
             },
-            disabled: p.uncancel.disabled
+            disabled: x.uncancel.disabled
         }) : (0, i.jsx)(l.Drp, {
             id: "cancel",
-            label: p.cancel.label,
-            subtext: p.cancel.subtext,
+            label: x.cancel.label,
+            subtext: x.cancel.subtext,
             action: function() {
                 (0, l.mMO)(async () => {
                     let {
@@ -112,8 +112,8 @@ function _(e) {
                     })
                 })
             },
-            disabled: p.cancel.disabled,
+            disabled: x.cancel.disabled,
             color: "danger"
-        }), x]
+        }), p]
     })
 }

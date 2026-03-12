@@ -1,6 +1,6 @@
 /** chunk id: 636805 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var r = n(554146),
     h = n(853742),
     _ = n(652215),
     m = n(49999);
-class p extends s.A {
+class g extends s.A {
     _initialize() {
         a.h.subscribe("CHANNEL_SELECT", this.handleChannelSelect)
     }
@@ -24,10 +24,10 @@ class p extends s.A {
         a.h.unsubscribe("CHANNEL_SELECT", this.handleChannelSelect)
     }
     handleChannelSelect(e) {
-        let t, a, s, p, g, {
+        let t, a, s, g, p, {
             guildId: E
         } = e;
-        if (null == E || (t = u.A.getGuild(E), a = !!t?.features.has(_.GuildFeatures.COMMUNITY), s = A.A.can(_.xBc.MANAGE_CHANNELS, t), p = (0, o.k8)(r.M.FORUM_CHANNEL_UPSELL_MODAL), g = c.A.getMemberCount(E) ?? 0, !a || !s || p || !(g >= 200))) return;
+        if (null == E || (t = u.A.getGuild(E), a = !!t?.features.has(_.GuildFeatures.COMMUNITY), s = A.A.can(_.xBc.MANAGE_CHANNELS, t), g = (0, o.k8)(r.M.FORUM_CHANNEL_UPSELL_MODAL), p = c.A.getMemberCount(E) ?? 0, !a || !s || g || !(p >= 200))) return;
         (0, h.zd)(), (0, d.Vh)(r.M.FORUM_CHANNEL_UPSELL_MODAL);
         let I = function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : m.i.DISMISS;
@@ -55,4 +55,4 @@ class p extends s.A {
         })
     }
 }
-let g = new p
+let p = new g

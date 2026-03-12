@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(723702),
-    r = n(837921),
+    r = n(723702),
+    a = n(837921),
     o = n(332191),
     d = n(985018);
 class c extends s.PureComponent {
@@ -19,35 +19,35 @@ class c extends s.PureComponent {
     }
     async componentDidMount() {
         this.setState({
-            openOnStartup: await r.Ay.getOpenOnStart(),
-            startMinimized: await r.Ay.getSetting("START_MINIMIZED", !1),
-            minimizeToTray: await r.Ay.getSetting("MINIMIZE_TO_TRAY", !0)
+            openOnStartup: await a.Ay.getOpenOnStart(),
+            startMinimized: await a.Ay.getSetting("START_MINIMIZED", !1),
+            minimizeToTray: await a.Ay.getSetting("MINIMIZE_TO_TRAY", !0)
         })
     }
     handleToggleOpenOnStartup = () => {
         let e = !this.state.openOnStartup;
         this.setState({
             openOnStartup: e
-        }), r.Ay.send("TOGGLE_OPEN_ON_STARTUP", e)
+        }), a.Ay.send("TOGGLE_OPEN_ON_STARTUP", e)
     };
     handleToggleStartMinimized = () => {
         let e = !this.state.startMinimized;
         this.setState({
             startMinimized: e
-        }), r.Ay.send("TOGGLE_START_MINIMIZED", e)
+        }), a.Ay.send("TOGGLE_START_MINIMIZED", e)
     };
     handleToggleMinimizeToTray = () => {
         let e = !this.state.minimizeToTray;
         this.setState({
             minimizeToTray: e
-        }), r.Ay.send("TOGGLE_MINIMIZE_TO_TRAY", e)
+        }), a.Ay.send("TOGGLE_MINIMIZE_TO_TRAY", e)
     };
     render() {
         let {
             openOnStartup: e,
             startMinimized: t,
             minimizeToTray: n
-        } = this.state, s = (0, a.isLinux)() ? d.intl.string(d.t["7pPjTW"]) : d.intl.string(d.t.ZkDZov);
+        } = this.state, s = (0, r.isLinux)() ? d.intl.string(d.t["7pPjTW"]) : d.intl.string(d.t.ZkDZov);
         return (0, i.jsxs)(l.BJc, {
             gap: 16,
             children: [(0, i.jsx)(l.Heading, {
@@ -60,7 +60,7 @@ class c extends s.PureComponent {
                     description: d.intl.string(d.t["s/cQrU"]),
                     checked: e,
                     onChange: this.handleToggleOpenOnStartup
-                }), (0, a.isWindows)() ? (0, i.jsx)(l.dOG, {
+                }), (0, r.isWindows)() ? (0, i.jsx)(l.dOG, {
                     label: d.intl.string(d.t.n7Yjes),
                     description: d.intl.string(d.t.o2FSjB),
                     checked: !!e && t,

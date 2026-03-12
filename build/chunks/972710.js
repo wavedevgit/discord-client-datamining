@@ -1,27 +1,27 @@
 /** chunk id: 972710 params = (module,exports,require) **/
 n.d(t, {
-    C: () => R
+    C: () => y
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(284009),
-    o = n.n(r),
+    r = n.n(l),
+    a = n(284009),
+    o = n.n(a),
     d = n(607399),
     c = n(158954),
     u = n(311907),
     _ = n(397927),
-    g = n(384904),
-    m = n(793574),
+    m = n(384904),
+    g = n(793574),
     A = n(688810),
     h = n(701273),
-    p = n(780964),
-    x = n(840065),
-    E = n(287809),
-    T = n(954571),
-    S = n(927578),
-    C = n(866312),
+    x = n(780964),
+    p = n(840065),
+    T = n(287809),
+    E = n(954571),
+    C = n(927578),
+    S = n(866312),
     f = n(327479),
     N = n(652215),
     b = n(601107),
@@ -33,24 +33,24 @@ let j = [N.Dmq.PAST_DUE, N.Dmq.ACCOUNT_HOLD, N.Dmq.BILLING_RETRY],
             transitionState: t,
             onClose: n,
             subscription: l,
-            analyticsLocations: a,
-            analyticsLocation: r
-        } = e, [o, d] = s.useState(!1), [u, m] = s.useState(!1);
+            analyticsLocations: r,
+            analyticsLocation: a
+        } = e, [o, d] = s.useState(!1), [u, g] = s.useState(!1);
         s.useEffect(() => {
-            T.default.track(N.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
+            E.default.track(N.HAw.GUILD_BOOST_PAST_DUE_CANCEL_MODAL_VIEWED, {
                 subscription_id: l.id,
-                location_stack: a
+                location_stack: r
             })
         }, []);
         let A = async () => {
-            d(!0), m(!1);
+            d(!0), g(!1);
             try {
-                await (0, g.M2)(l.id, a, r), T.default.track(N.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
+                await (0, m.M2)(l.id, r, a), E.default.track(N.HAw.GUILD_BOOST_PAST_DUE_CANCELLATION_FLOW_COMPLETED, {
                     subscription_id: l.id,
-                    location_stack: a
-                }), (0, g.hP)(), n()
+                    location_stack: r
+                }), (0, m.hP)(), n()
             } catch (e) {
-                m(!0), d(!1)
+                g(!0), d(!1)
             }
         }, h = [{
             text: I.intl.string(I.t.oEAioF),
@@ -77,28 +77,28 @@ let j = [N.Dmq.PAST_DUE, N.Dmq.ACCOUNT_HOLD, N.Dmq.BILLING_RETRY],
         })
     };
 
-function R(e) {
+function y(e) {
     let t, {
             subscription: n,
             renewalInvoicePreview: s,
             fractionalPremiumInfo: l,
-            fromStandaloneBillingPage: r = !0,
-            analyticsLocation: g
+            fromStandaloneBillingPage: a = !0,
+            analyticsLocation: m
         } = e,
-        T = (0, u.bG)([E.default], () => {
-            let e = E.default.getCurrentUser();
+        E = (0, u.bG)([T.default], () => {
+            let e = T.default.getCurrentUser();
             return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
         }),
         {
-            analyticsLocations: R
-        } = (0, A.Ay)(m.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        y = (0, C.A)({
+            analyticsLocations: y
+        } = (0, A.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
+        R = (0, S.A)({
             location: "GuildBoostingHeader"
         });
-    if (0 === (0, S.bx)(n.additionalPlans)) return null;
+    if (0 === (0, C.bx)(n.additionalPlans)) return null;
     let {
         status: P
-    } = n, D = (0, S.$k)(n), L = y && !D && n.isBoostOnly && j.includes(n.status);
+    } = n, D = (0, C.$k)(n), L = R && !D && n.isBoostOnly && j.includes(n.status);
     if (D) t = v.v2;
     else switch (P) {
         case N.Dmq.PAST_DUE:
@@ -115,7 +115,7 @@ function R(e) {
     }
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: a()(t, v.Qn),
+            className: r()(t, v.Qn),
             children: [(0, i.jsx)("div", {
                 className: v.Kq
             }), (0, i.jsx)("div", {
@@ -123,18 +123,18 @@ function R(e) {
             }), (0, i.jsxs)("div", {
                 className: v.eC,
                 children: [(0, i.jsx)("div", {
-                    className: a()(v.Ab, {
+                    className: r()(v.Ab, {
                         [v.aD]: D
                     })
                 }), (0, i.jsx)("div", {
-                    children: (0, S.Uf)({
+                    children: (0, C.Uf)({
                         subscription: n,
                         renewalInvoicePreview: s,
-                        user: T,
+                        user: E,
                         fractionalPremiumInfo: l
                     })
                 })]
-            }), r && (0, i.jsxs)("div", {
+            }), a && (0, i.jsxs)("div", {
                 className: v.BQ,
                 children: [L && (0, i.jsx)("div", {
                     className: v.x7,
@@ -144,21 +144,21 @@ function R(e) {
                             j.includes(n.status) && (0, _.mMO)(async () => e => (0, i.jsx)(O, {
                                 ...e,
                                 subscription: n,
-                                analyticsLocations: R,
-                                analyticsLocation: g
+                                analyticsLocations: y,
+                                analyticsLocation: m
                             }))
                         },
                         size: "sm",
                         text: I.intl.string(I.t["ETE/oC"])
                     })
                 }), (0, i.jsx)(f.A, {
-                    onClick: () => (0, x.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+                    onClick: () => (0, p.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                         section: N.nc_.GUILD_BOOSTING
                     }),
                     text: I.intl.string(I.t["NQ5g/U"])
                 })]
             })]
-        }), !r && (0, i.jsx)(_.Text, {
+        }), !a && (0, i.jsx)(_.Text, {
             className: v.yW,
             variant: "text-sm/normal",
             children: I.intl.format(d.Fr ? I.t.uxYBEa : I.t.k6haR9, {

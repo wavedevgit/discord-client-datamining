@@ -1,6 +1,6 @@
 /** chunk id: 632130 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => g
 }), n(321073);
 var i = n(339048),
     r = n(830382),
@@ -72,7 +72,7 @@ function m(e) {
     }, "No application.");
     return i.LM(n)
 }
-let p = {
+let g = {
     [A.e$_.GET_SKUS]: {
         [u.sm.ANY]: [u.VH, u.hj],
         handler: _

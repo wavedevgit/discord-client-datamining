@@ -5,23 +5,23 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(417597),
-    r = n(554146),
+    r = n(417597),
+    a = n(554146),
     o = n(736653),
     d = n(793574),
     c = n(688810),
     u = n(531260),
     _ = n(915618),
-    g = n(793943),
-    m = n(826673),
+    m = n(793943),
+    g = n(826673),
     A = n(259065),
     h = n(206835),
-    p = n(976860),
-    x = n(780964),
-    E = n(358776),
-    T = n(840065),
-    S = n(430452),
-    C = n(287809),
+    x = n(976860),
+    p = n(780964),
+    T = n(358776),
+    E = n(840065),
+    C = n(430452),
+    S = n(287809),
     f = n(166403),
     N = n(255438),
     b = n(975571),
@@ -29,19 +29,19 @@ var i, s = n(627968),
     v = n(364558),
     j = n(161319),
     O = n(55691),
-    R = n(95859),
-    y = n(30084),
+    y = n(95859),
+    R = n(30084),
     P = n(322631),
     D = n(17307),
     L = n(788868),
-    G = n(652215),
-    M = n(49999),
+    M = n(652215),
+    G = n(49999),
     U = n(355097),
     k = n(985018),
     V = n(674547),
     w = n(241015),
-    H = n(561852),
-    B = n(522799),
+    B = n(561852),
+    H = n(522799),
     F = n(795710),
     Y = n(484813),
     z = n(659980),
@@ -59,47 +59,47 @@ var i, s = n(627968),
     ei = n(201337),
     es = n(754316),
     el = n(977838),
-    ea = n(330290),
-    er = n(260972),
+    er = n(330290),
+    ea = n(260972),
     eo = n(899225),
     ed = n(106731),
     ec = n(419455),
     eu = n(509442),
     e_ = n(20462),
-    eg = n(307966),
-    em = n(864579),
+    em = n(307966),
+    eg = n(864579),
     eA = ((i = {}).CLIENT_THEMES = "clientThemes", i.CLIPS = "clips", i.EARLY_ACCESS = "earlyAccess", i.ENTRANCE_SOUNDS = "entranceSounds", i.PROFILES = "profiles", i.SERVER_BOOSTS = "serverBoosts", i.GREY_SERVER_BOOSTS = "greyServerBoosts", i.SPECIAL_MEMBER_PRICING = "specialMemberPricing", i.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", i.SPECIAL_SHOP_PERKS = "specialShopPerks", i.SUPER_REACTIONS = "superReactions", i.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", i.CUSTOM_APP_ICONS = "customAppIcons", i.MORE_EMOJI_POWER = "moreEmojiPower", i.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", i.SPECIAL_STICKER_ACCESS = "specialStickerAccess", i.LARGE_UPLOADS = "largeUploads", i.HD_VIDEO = "hdVideo", i.BADGE = "badge", i.GREY_BADGE = "greyBadge", i.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", i.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", i.REFERRAL_PROGRAM = "referralProgram", i.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", i.SERVER_PROFILES = "serverProfiles", i.TENURE_BADGE = "tenureBadge", i.PERMADECOS = "permadecos", i.CUSTOM_THEMES = "customThemes", i.DISPLAY_NAME_STYLES = "displayNameStyles", i.RECURRING_3P_PROMOTIONS = "recurring3PPromotions", i.PREMIUM_GROUP = "premiumGroup", i);
 let eh = () => {
     let {
         analyticsLocations: e
     } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, o.Ay)(), n = (0, N.Xq)(L.f3 / 1024, {
         useKibibytes: !0
-    }), i = (0, a.bG)([f.A], () => f.A.getPremiumTypeSubscription()), eA = null != i ? I.Ay.getPremiumPlanItem(i) : null, eh = (null != eA ? I.Ay.getSkuIdForPlan(eA.planId) : null) === L.pe.TIER_2, ep = C.default.getCurrentUser(), ex = (0, I.TW)(ep, L.PremiumTypes.TIER_2), eE = (0, I.TW)(ep, L.PremiumTypes.TIER_0), eT = (0, _.A)(S.Ay), {
-        isFractionalPremiumActive: eS
-    } = (0, u.A)(), eC = null != i && i.hasPremiumAtLeast(L.PremiumTypes.TIER_2), ef = (0, m.JZ)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eN = (0, h.A)({
+    }), i = (0, r.bG)([f.A], () => f.A.getPremiumTypeSubscription()), eA = null != i ? I.Ay.getPremiumPlanItem(i) : null, eh = (null != eA ? I.Ay.getSkuIdForPlan(eA.planId) : null) === L.pe.TIER_2, ex = S.default.getCurrentUser(), ep = (0, I.TW)(ex, L.PremiumTypes.TIER_2), eT = (0, I.TW)(ex, L.PremiumTypes.TIER_0), eE = (0, _.A)(C.Ay), {
+        isFractionalPremiumActive: eC
+    } = (0, u.A)(), eS = null != i && i.hasPremiumAtLeast(L.PremiumTypes.TIER_2), ef = (0, g.JZ)(a.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eN = (0, h.A)({
         scrollPosition: U._F.TRY_IT_OUT,
         analyticsLocations: e
     }), eb = () => {
-        (0, T.openUserSettings)(x.X.SOUNDBOARD_CATEGORY, {
-            section: G.nc_.VOICE,
+        (0, E.openUserSettings)(p.X.SOUNDBOARD_CATEGORY, {
+            section: M.nc_.VOICE,
             subsection: U.MJ,
             analyticsLocations: e
         })
     }, eI = () => {
-        (0, p.pX)(G.BVt.COLLECTIBLES_SHOP)
+        (0, x.pX)(M.BVt.COLLECTIBLES_SHOP)
     }, ev = () => {
-        let e = (0, E.Ci)("openCustomAppSettings") ? x.X.DISPLAY_IN_APP_ICON_CATEGORY : x.X.APPEARANCE_IN_APP_ICON;
-        (0, T.openUserSettings)(e, {
-            section: G.nc_.APPEARANCE
+        let e = (0, T.Ci)("openCustomAppSettings") ? p.X.DISPLAY_IN_APP_ICON_CATEGORY : p.X.APPEARANCE_IN_APP_ICON;
+        (0, E.openUserSettings)(e, {
+            section: M.nc_.APPEARANCE
         })
     }, ej = l.useCallback(() => {
-        (0, T.openUserSettings)(x.X.PROFILE_PANEL, {
-            section: G.nc_.PROFILE_CUSTOMIZATION,
+        (0, E.openUserSettings)(p.X.PROFILE_PANEL, {
+            section: M.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
         }, () => (0, A.L)({
             analyticsLocations: e
         }))
-    }, [e]), eO = new Date, eR = new Date(eO.getFullYear(), eO.getMonth() + 1, 0).getDate(), ey = eO.getDate() / eR * 100, eP = {
+    }, [e]), eO = new Date, ey = new Date(eO.getFullYear(), eO.getMonth() + 1, 0).getDate(), eR = eO.getDate() / ey * 100, eP = {
         clientThemes: {
             name: "clientThemes",
             title: k.intl.string(k.t.kWM48G),
@@ -107,28 +107,28 @@ let eh = () => {
             description: k.intl.string(k.t.jBTTws),
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: () => {
-                let t = (0, E.Ci)("openClientThemes");
-                (0, T.openUserSettings)(t ? x.X.DISPLAY_THEME_CATEGORY : x.X.APPEARANCE_PANEL, {
-                    section: G.nc_.APPEARANCE,
+                let t = (0, T.Ci)("openClientThemes");
+                (0, E.openUserSettings)(t ? p.X.DISPLAY_THEME_CATEGORY : p.X.APPEARANCE_PANEL, {
+                    section: M.nc_.APPEARANCE,
                     analyticsLocations: e
                 })
             },
             perkImage: z
         },
-        clips: ex ? {
+        clips: ep ? {
             name: "clips",
             title: k.intl.string(k.t.z2jK6X),
             subtitle: k.intl.string(k.t["hxy0/R"]),
             description: k.intl.string(k.t.Z6v86b),
-            descriptionCta: eT ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.hvVgAZ),
+            descriptionCta: eE ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.hvVgAZ),
             pillText: k.intl.string(k.t.EYxi0o),
-            onCtaClick: eT ? () => {
-                (0, T.openUserSettings)(x.X.CLIPS_PANEL, {
-                    section: G.nc_.CLIPS,
+            onCtaClick: eE ? () => {
+                (0, E.openUserSettings)(p.X.CLIPS_PANEL, {
+                    section: M.nc_.CLIPS,
                     analyticsLocations: e
                 })
             } : () => {
-                window.open(b.A.getArticleURL(G.MVz.CLIPS), "_blank")
+                window.open(b.A.getArticleURL(M.MVz.CLIPS), "_blank")
             },
             perkImage: K
         } : {
@@ -139,7 +139,7 @@ let eh = () => {
             pillText: k.intl.string(k.t.EYxi0o),
             perkImage: K
         },
-        earlyAccess: ex ? {
+        earlyAccess: ep ? {
             name: "earlyAccess",
             title: k.intl.string(k.t.UkLVeJ),
             subtitle: k.intl.string(k.t.xf9ePm),
@@ -153,7 +153,7 @@ let eh = () => {
             isPremiumGetCta: !0,
             perkImage: q
         },
-        earlyAccessSeeAllVariant: ex ? {
+        earlyAccessSeeAllVariant: ep ? {
             name: "earlyAccessSeeAllVariant",
             title: k.intl.string(k.t.UkLVeJ),
             subtitle: k.intl.string(k.t.xf9ePm),
@@ -167,7 +167,7 @@ let eh = () => {
             isPremiumGetCta: !0,
             perkImage: J
         },
-        entranceSounds: ex ? {
+        entranceSounds: ep ? {
             name: "entranceSounds",
             title: k.intl.string(k.t["f4M+H9"]),
             subtitle: k.intl.string(k.t["7ZCYvC"]),
@@ -182,7 +182,7 @@ let eh = () => {
             description: k.intl.string(k.t["3smf/f"]),
             perkImage: $
         },
-        entranceSoundsSeeAllVariation: ex ? {
+        entranceSoundsSeeAllVariation: ep ? {
             name: "entranceSoundsSeeAllVariation",
             title: k.intl.string(k.t["f4M+H9"]),
             subtitle: k.intl.string(k.t["7ZCYvC"]),
@@ -210,17 +210,17 @@ let eh = () => {
             name: "serverBoosts",
             title: k.intl.string(k.t["NyDu/6"]),
             subtitle: k.intl.string(k.t["4pEwXL"]),
-            description: eS ? null : k.intl.string(k.t.jsyNHm),
+            description: eC ? null : k.intl.string(k.t.jsyNHm),
             descriptionCta: k.intl.string(k.t.jVcuVY),
-            onCtaClick: eS ? void 0 : () => {
-                (0, T.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-                    section: G.nc_.GUILD_BOOSTING,
+            onCtaClick: eC ? void 0 : () => {
+                (0, E.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+                    section: M.nc_.GUILD_BOOSTING,
                     analyticsLocations: e
                 })
             },
             perkImage: W,
-            hideOnNarrowScreen: !eS,
-            imageOverlayText: eS ? k.intl.string(k.t["/VzCKE"]).toLocaleUpperCase() : void 0
+            hideOnNarrowScreen: !eC,
+            imageOverlayText: eC ? k.intl.string(k.t["/VzCKE"]).toLocaleUpperCase() : void 0
         },
         greyServerBoosts: {
             name: "greyServerBoosts",
@@ -274,14 +274,14 @@ let eh = () => {
             name: "badge",
             title: k.intl.string(k.t.dcFfSJ),
             subtitle: k.intl.string(k.t["37MFFq"]),
-            perkImage: H,
+            perkImage: B,
             description: k.intl.string(k.t.T1IS4j)
         },
         greyBadge: {
             name: "greyBadge",
             title: k.intl.string(k.t.dcFfSJ),
             subtitle: k.intl.string(k.t["37MFFq"]),
-            perkImage: eg.A,
+            perkImage: em.A,
             description: k.intl.string(k.t.T1IS4j),
             imageOverlayText: k.intl.string(k.t["/VzCKE"]).toLocaleUpperCase()
         },
@@ -305,14 +305,14 @@ let eh = () => {
             name: "customSoundsEverywhere",
             title: k.intl.string(k.t.LWsArT),
             subtitle: k.intl.string(k.t.bTzbVk),
-            perkImage: (0, D.t4)(t, B, F),
+            perkImage: (0, D.t4)(t, H, F),
             description: k.intl.string(k.t.JLnOM2)
         },
         specialStickerAccess: {
             name: "specialStickerAccess",
             title: k.intl.string(k.t.tzdIwI),
             subtitle: k.intl.string(k.t.hJG8ZN),
-            perkImage: (0, D.t4)(t, Y, ea),
+            perkImage: (0, D.t4)(t, Y, er),
             description: k.intl.string(k.t.e7FKCi)
         },
         largeUploads: {
@@ -330,7 +330,7 @@ let eh = () => {
             name: "hdVideo",
             title: k.intl.string(k.t.RSXQYO),
             subtitle: k.intl.string(k.t.ymCPxp),
-            perkImage: er,
+            perkImage: ea,
             description: k.intl.string(k.t["4WgB/4"])
         },
         newAppStylesUpdateJune2024: {
@@ -338,9 +338,9 @@ let eh = () => {
             title: k.intl.string(k.t.XQCSri),
             subtitle: k.intl.string(k.t.HC5wVV),
             description: k.intl.string(k.t.ee7wQ7),
-            descriptionCta: ex || eE ? k.intl.string(k.t.y9TxXV) : k.intl.string(k.t.d8o6lc),
-            isPremiumGetCta: !(ex || eE),
-            onCtaClick: ex || eE ? ev : void 0,
+            descriptionCta: ep || eT ? k.intl.string(k.t.y9TxXV) : k.intl.string(k.t.d8o6lc),
+            isPremiumGetCta: !(ep || eT),
+            onCtaClick: ep || eT ? ev : void 0,
             perkImage: en
         },
         referralProgram: {
@@ -348,7 +348,7 @@ let eh = () => {
             title: k.intl.string(k.t.tPY4o9),
             subtitle: k.intl.string(k.t.JY0grC),
             description: k.intl.format(k.t["2JqTF6"], {
-                helpdeskArticle: b.A.getArticleURL(G.MVz.REFERRAL_PROGRAM)
+                helpdeskArticle: b.A.getArticleURL(M.MVz.REFERRAL_PROGRAM)
             }),
             descriptionCta: k.intl.string(k.t.JST6jl),
             isPremiumGetCta: !eh || void 0,
@@ -358,9 +358,9 @@ let eh = () => {
             name: "serverProfiles",
             title: k.intl.string(k.t.I9TYMg),
             subtitle: k.intl.string(k.t.HMSHeH),
-            descriptionCta: ex ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.JST6jl),
-            isPremiumGetCta: !ex,
-            onCtaClick: ex ? eN : void 0,
+            descriptionCta: ep ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.JST6jl),
+            isPremiumGetCta: !ep,
+            onCtaClick: ep ? eN : void 0,
             perkImage: el
         },
         permadecos: {
@@ -368,17 +368,17 @@ let eh = () => {
             title: k.intl.string(k.t["57ngoo"]),
             subtitle: k.intl.string(k.t.piFFjd),
             description: k.intl.format(k.t.Pd7olh, {
-                learnMoreLink: b.A.getArticleURL(G.MVz.PERMADECOS)
+                learnMoreLink: b.A.getArticleURL(M.MVz.PERMADECOS)
             }),
-            descriptionCta: ex ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.JST6jl),
-            isPremiumGetCta: !ex,
-            onCtaClick: ex ? () => {
-                ef || (0, m.Dr)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
-                    dismissAction: M.i.TAKE_ACTION
+            descriptionCta: ep ? k.intl.string(k.t.jVcuVY) : k.intl.string(k.t.JST6jl),
+            isPremiumGetCta: !ep,
+            onCtaClick: ep ? () => {
+                ef || (0, g.Dr)(a.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
+                    dismissAction: G.i.TAKE_ACTION
                 }), eN()
             } : void 0,
-            pillText: ef || !ex ? void 0 : k.intl.string(k.t.y2b7CA).toLocaleUpperCase(),
-            perkImage: em.A
+            pillText: ef || !ep ? void 0 : k.intl.string(k.t.y2b7CA).toLocaleUpperCase(),
+            perkImage: eg.A
         },
         customThemes: {
             name: "customThemes",
@@ -386,7 +386,7 @@ let eh = () => {
             subtitle: k.intl.string(V.default.i3n50h),
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: () => {
-                (0, g.nf)(g.HP.CUSTOM_THEME)
+                (0, m.nf)(m.HP.CUSTOM_THEME)
             },
             perkImage: eu.A
         },
@@ -396,15 +396,15 @@ let eh = () => {
             subtitle: k.intl.string(w.default.jhmU5E),
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: ej,
-            dismissibleContentType: r.M.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,
+            dismissibleContentType: a.M.DISPLAY_NAME_STYLES_NITRO_HOME_TILE,
             perkImage: ec.A,
             pillText: k.intl.string(k.t.y2b7CA).toLocaleUpperCase()
         },
         recurring3PPromotions: {
             name: "recurring3PPromotions",
             title: k.intl.string(k.t.m7PucM),
-            subtitle: ep?.isFractionalPremiumWithNoStandardSub() ? k.intl.string(k.t.E1ONHQ) : k.intl.format(k.t["43kZKL"], {
-                days: eR - eO.getDate()
+            subtitle: ex?.isFractionalPremiumWithNoStandardSub() ? k.intl.string(k.t.E1ONHQ) : k.intl.format(k.t["43kZKL"], {
+                days: ey - eO.getDate()
             }),
             onCtaClick: () => (0, j.uE)({
                 analyticsLocations: e
@@ -414,19 +414,19 @@ let eh = () => {
             descriptionCta: k.intl.string(k.t.w7s5Qr),
             cardVariant: P.PJ.RECURRING_3P_PROMOTIONS,
             customContent: (0, s.jsx)(O.U, {
-                percentage: ey,
-                isFNUserWithNoStandardSub: !!ep?.isFractionalPremiumWithNoStandardSub()
+                percentage: eR,
+                isFNUserWithNoStandardSub: !!ex?.isFractionalPremiumWithNoStandardSub()
             })
         },
         premiumGroup: (0, v.u)()
     };
-    return ex && eC && (eP.tenureBadge = {
+    return ep && eS && (eP.tenureBadge = {
         name: "tenureBadge",
         title: k.intl.string(k.t.rnsqpa),
         pillText: k.intl.string(k.t["jyYgZ+"]).toLocaleUpperCase(),
-        perkComponent: (0, s.jsx)(R.A, {}),
+        perkComponent: (0, s.jsx)(y.A, {}),
         cardVariant: P.PJ.NITRO_GRADIENT_HOVER_BORDER,
-        onClick: () => (0, y.D)({
+        onClick: () => (0, R.D)({
             analyticsLocations: e
         })
     }), eP

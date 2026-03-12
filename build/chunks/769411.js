@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(582754),
-    a = n(736653),
-    r = n(344904),
+    r = n(736653),
+    a = n(344904),
     o = n(295460);
 let d = "url(#gradient)",
     c = e => {
@@ -16,63 +16,63 @@ let d = "url(#gradient)",
             animationClassName: c,
             initialPercentage: u = 0,
             progressCircleStrokeSize: _ = 2,
-            progressCircleVariation: g,
-            progressCircleStroke: m
-        } = e, A = 43 + _ / 2, h = 2 * Math.PI * A, [p, x] = s.useState(u);
+            progressCircleVariation: m,
+            progressCircleStroke: g
+        } = e, A = 43 + _ / 2, h = 2 * Math.PI * A, [x, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
-                x(t)
+                p(t)
             }, 200);
             return () => clearTimeout(e)
         }, [t]);
-        let E = (0, a.Ay)(),
-            T = (0, l.qB)(E),
-            S = (e => {
+        let T = (0, r.Ay)(),
+            E = (0, l.qB)(T),
+            C = (e => {
                 switch (e) {
-                    case r.BN.NITRO_GEM:
-                    case r.BN.AVATAR_DECO:
+                    case a.BN.NITRO_GEM:
+                    case a.BN.AVATAR_DECO:
                         return "var(--background-base-low)";
-                    case r.BN.NITRO_LOGO:
+                    case a.BN.NITRO_LOGO:
                         return "var(--premium-tier-2-purple)";
                     default:
                         return
                 }
-            })(g),
-            C = ((e, t) => {
+            })(m),
+            S = ((e, t) => {
                 switch (e) {
-                    case r.BN.NITRO_LOGO:
+                    case a.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
-                    case r.BN.NITRO_GEM:
-                    case r.BN.AVATAR_DECO:
+                    case a.BN.NITRO_GEM:
+                    case a.BN.AVATAR_DECO:
                     default:
                         return
                 }
-            })(g, T),
-            f = m ?? ((e, t) => {
+            })(m, E),
+            f = g ?? ((e, t) => {
                 switch (t) {
-                    case r.BN.NITRO_GEM:
-                    case r.BN.AVATAR_DECO:
+                    case a.BN.NITRO_GEM:
+                    case a.BN.AVATAR_DECO:
                         return d;
-                    case r.BN.NITRO_LOGO:
+                    case a.BN.NITRO_LOGO:
                         return e ? "url(#gradient_nitro_logo)" : d;
                     default:
                         return
                 }
-            })(T, g);
+            })(E, m);
         return (0, i.jsxs)("div", {
             className: o.Ap,
             children: [(0, i.jsxs)("svg", {
                 viewBox: "0 0 100 100",
                 className: o.fB,
                 children: [(0, i.jsx)("circle", {
-                    className: g === r.BN.NITRO_GEM || g === r.BN.AVATAR_DECO ? o.F3 : void 0,
+                    className: m === a.BN.NITRO_GEM || m === a.BN.AVATAR_DECO ? o.F3 : void 0,
                     fill: "transparent",
                     strokeWidth: _,
                     r: `${A}`,
                     cx: "50%",
                     cy: "50%",
-                    stroke: S,
-                    strokeOpacity: C
+                    stroke: C,
+                    strokeOpacity: S
                 }), (0, i.jsx)("circle", {
                     stroke: f,
                     strokeWidth: _,
@@ -80,7 +80,7 @@ let d = "url(#gradient)",
                     strokeDasharray: `${h} ${h}`,
                     className: c,
                     style: {
-                        strokeDashoffset: (1 - p / 100) * h
+                        strokeDashoffset: (1 - x / 100) * h
                     },
                     r: `${A}`,
                     cx: "50%",

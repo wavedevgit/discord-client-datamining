@@ -1,24 +1,24 @@
 /** chunk id: 320134 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(195043);
 
-function a(e) {
+function r(e) {
     let {
         children: t,
         title: n,
-        description: a,
-        webSetting: r
+        description: r,
+        webSetting: a
     } = e;
     return (0, i.jsxs)(l.x, {
-        setting: r,
+        setting: a,
         children: [(0, i.jsx)(s.nVY, {
             label: n,
-            description: a,
+            description: r,
             children: t
         }), (0, i.jsx)(s.cGx, {
             gap: 32

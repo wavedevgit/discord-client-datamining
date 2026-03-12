@@ -5,34 +5,34 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    a = n(793574),
-    r = n(688810),
+    r = n(793574),
+    a = n(688810),
     o = n(823092),
     d = n(954571),
     c = n(979286),
     u = n(492499),
     _ = n(652215),
-    g = n(788868),
-    m = n(985018),
+    m = n(788868),
+    g = n(985018),
     A = n(300461);
 let h = () => {
     let {
         analyticsLocations: e
-    } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
+    } = (0, a.Ay)(r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
         popoutAsset: h,
-        title: p,
-        body: x,
-        version: E,
-        revertTextColor: T
-    } = (0, u.M)(), S = s.useContext(o.gl), C = S?.navigateWithValidation ?? (e => e());
+        title: x,
+        body: p,
+        version: T,
+        revertTextColor: E
+    } = (0, u.M)(), C = s.useContext(o.gl), S = C?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: g.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+            type: m.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: e,
-            version: E
+            version: T
         })
-    }, [e, E]), (0, i.jsxs)("div", {
+    }, [e, T]), (0, i.jsxs)("div", {
         ref: t,
         className: A.kL,
         style: {
@@ -51,23 +51,23 @@ let h = () => {
             className: A.Em,
             children: [(0, i.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
-                color: T ? "text-overlay-dark" : "currentColor",
+                color: E ? "text-overlay-dark" : "currentColor",
                 className: A.DD,
-                children: p
+                children: x
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
-                color: T ? "text-overlay-dark" : "currentColor",
-                children: x
+                color: E ? "text-overlay-dark" : "currentColor",
+                children: p
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                C(() => (0, c.Cz)({
+                S(() => (0, c.Cz)({
                     analyticsLocations: e,
-                    analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+                    analyticsSource: r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))
             },
             variant: "overlay-primary",
-            text: m.intl.string(m.t.fYfGgK)
+            text: g.intl.string(g.t.fYfGgK)
         })]
     })
 }

@@ -5,47 +5,47 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(665260),
-    a = n(171316),
-    r = n(115063),
+    r = n(171316),
+    a = n(115063),
     o = n(253932),
     d = n(871930),
     c = n(578746),
     u = n(531525),
     _ = n(652215),
-    g = n(985018),
-    m = n(870236);
+    m = n(985018),
+    g = n(870236);
 
 function A() {
     let e = o.FA.useSetting(),
-        t = s.useMemo(() => (0, r.Lx)(e), [e]),
-        n = (0, a.uM)();
+        t = s.useMemo(() => (0, a.Lx)(e), [e]),
+        n = (0, r.uM)();
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.h, {
             setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
             children: (0, i.jsx)(c.Ay, {
-                title: g.intl.string(g.t["7x9dyE"]),
+                title: m.intl.string(m.t["7x9dyE"]),
                 value: t.all,
                 onChange: e => o.FA.updateSetting(e ? _.yKI : _.yKI & ~_.dzt.NO_RELATION),
                 disabled: n,
-                tooltipText: n ? g.intl.string(m.default["6Af/cw"]) : void 0
+                tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : void 0
             })
         }), (0, i.jsx)(d.h, {
             setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
             children: (0, i.jsx)(c.Ay, {
-                title: g.intl.string(g.t.NfeuZ3),
+                title: m.intl.string(m.t.NfeuZ3),
                 value: t.all || t.mutualFriends,
                 onChange: t => o.FA.updateSetting(t ? l.UI(e, _.dzt.MUTUAL_FRIENDS) : l.iE(e, _.dzt.MUTUAL_FRIENDS, _.dzt.NO_RELATION)),
                 disabled: n,
-                tooltipText: n ? g.intl.string(m.default["6Af/cw"]) : void 0
+                tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : void 0
             })
         }), (0, i.jsx)(d.h, {
             setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,
             children: (0, i.jsx)(c.Ay, {
-                title: g.intl.string(g.t.qsMfsH),
+                title: m.intl.string(m.t.qsMfsH),
                 value: t.all || t.mutualGuilds,
                 onChange: t => o.FA.updateSetting(t ? l.UI(e, _.dzt.MUTUAL_GUILDS) : l.iE(e, _.dzt.MUTUAL_GUILDS, _.dzt.NO_RELATION)),
                 disabled: n,
-                tooltipText: n ? g.intl.string(m.default["6Af/cw"]) : void 0
+                tooltipText: n ? m.intl.string(g.default["6Af/cw"]) : void 0
             })
         })]
     })

@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(657331),
     _ = n(994500),
     m = n(287809),
-    p = n(427262),
-    g = n(390848),
+    g = n(427262),
+    p = n(390848),
     E = n(513297),
     I = n(414711),
     f = n(723690),
@@ -34,7 +34,7 @@ function S(e) {
     } = e, [c, u] = r.useState(!1), A = m.default.getCurrentUser()?.isStaff() && t?.isStaff(), {
         acceptFriendRequest: h,
         cancelFriendRequest: _
-    } = (0, g.I)({
+    } = (0, p.I)({
         userId: t.id,
         applicationId: n,
         isGameRelationship: l,
@@ -42,7 +42,7 @@ function S(e) {
         onFinally: () => {
             u(!1)
         }
-    }), p = r.useCallback(e => {
+    }), g = r.useCallback(e => {
         u(!0), e.stopPropagation(), d(), h()
     }, [h, d]), I = r.useCallback(e => {
         e.stopPropagation(), _()
@@ -58,7 +58,7 @@ function S(e) {
             icon: s.A9s,
             actionType: E.A.ActionTypes.ACCEPT,
             tooltip: T.intl.string(T.t.Zcibdf),
-            onClick: p,
+            onClick: g,
             shouldHighlight: o,
             loading: c
         }), (0, i.jsx)(E.A, {
@@ -79,7 +79,7 @@ function x(e) {
         active: a
     } = e, {
         cancelFriendRequest: o
-    } = (0, g.I)({
+    } = (0, p.I)({
         userId: t,
         applicationId: n,
         isGameRelationship: l,
@@ -133,7 +133,7 @@ function y(e) {
         isGameRelationship: l,
         applicationId: o,
         isFriend: d
-    } = e, c = p.Ay.useUserTag(t);
+    } = e, c = g.Ay.useUserTag(t);
     return (0, i.jsx)(f.A, {
         user: t,
         hovered: n,
@@ -168,11 +168,11 @@ function b(e) {
         isGameRelationship: A,
         onAcceptFriendRequest: m
     } = e, {
-        analyticsLocations: p
-    } = (0, d.Ay)(), g = a === C.clD.OFFLINE ? C.clD.UNKNOWN : a, E = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), f = r.useCallback(() => (0, h.openUserProfileModal)({
+        analyticsLocations: g
+    } = (0, d.Ay)(), p = a === C.clD.OFFLINE ? C.clD.UNKNOWN : a, E = (0, l.bG)([_.A], () => _.A.getRelationshipType(t.id)), f = r.useCallback(() => (0, h.openUserProfileModal)({
         userId: t.id,
-        sourceAnalyticsLocations: p
-    }), [p, t.id]), T = e => {
+        sourceAnalyticsLocations: g
+    }), [g, t.id]), T = e => {
         e.stopPropagation(), o.A.openPrivateChannel({
             recipientIds: [t.id]
         })
@@ -186,7 +186,7 @@ function b(e) {
             children: [(0, i.jsx)(y, {
                 user: t,
                 hovered: e,
-                status: g,
+                status: p,
                 isGameRelationship: A,
                 applicationId: u,
                 isFriend: E === C.eA$.FRIEND

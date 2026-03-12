@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(954571),
-    a = n(191627),
-    r = n(652215),
+    r = n(191627),
+    a = n(652215),
     o = n(870236),
     d = n(985018);
 
@@ -25,8 +25,8 @@ function c() {
                 return t => (0, i.jsx)(e, {
                     ...t
                 })
-            }), l.default.track(r.HAw.FAMILY_CENTER_ACTION, {
-                action: a.qb.ShowQRCodeModal
+            }), l.default.track(a.HAw.FAMILY_CENTER_ACTION, {
+                action: r.qb.ShowQRCodeModal
             })
         }
     })

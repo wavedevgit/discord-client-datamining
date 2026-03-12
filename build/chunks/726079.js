@@ -19,8 +19,8 @@ function d(e) {
     } = e, [A, h] = r.useState(!1), _ = r.useRef(null), m = r.useCallback(() => {
         h(!1), n?.()
     }, [n]), {
-        handlePrimaryAction: p,
-        handleContextMenu: g
+        handlePrimaryAction: g,
+        handleContextMenu: p
     } = (0, s.B)(m), E = r.useCallback(() => {
         h(e => {
             let i = !e;
@@ -29,10 +29,10 @@ function d(e) {
     }, [n, t]), I = r.useCallback(() => (0, i.jsx)("div", {
         className: o.k,
         children: (0, i.jsx)(a.$, {
-            onPrimaryAction: p,
-            onContextMenu: g
+            onPrimaryAction: g,
+            onContextMenu: p
         })
-    }), [g, p]);
+    }), [p, g]);
     return (0, i.jsx)(l.YNO, {
         targetElementRef: _,
         animation: l.YNO.Animation.NONE,

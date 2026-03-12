@@ -15,8 +15,8 @@ var i = n(627968),
     h = n(965660),
     _ = n(601193),
     m = n(202575),
-    p = n(19925),
-    g = n(689817),
+    g = n(19925),
+    p = n(689817),
     E = n(38894),
     I = n(299579),
     f = n(324580),
@@ -35,16 +35,16 @@ function S() {
             tabs: x,
             selectedTab: v,
             setSelectedTab: y
-        } = (0, g.f)(),
+        } = (0, p.f)(),
         b = (0, h.Ub)(v),
         O = !f.R0.has(v),
         {
             searchQuery: L,
             onSearchTextChange: R,
             onClearSearch: P,
-            onSearchSubmit: j,
-            isSearchVisible: D
-        } = (0, p.X)({
+            onSearchSubmit: D,
+            isSearchVisible: j
+        } = (0, g.X)({
             loadId: e.current
         }),
         M = _.A.useField("searchBarState"),
@@ -63,14 +63,14 @@ function S() {
         }),
         V = u.A.useField("fetchedQuery"),
         B = r.useCallback(e => {
-            y(e), D && P()
-        }, [D, P, y]),
-        H = r.useMemo(() => D ? x.filter(e => {
+            y(e), j && P()
+        }, [j, P, y]),
+        H = r.useMemo(() => j ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
-        }) : x, [x, D]),
+        }) : x, [x, j]),
         F = r.useRef(new A.A(b)),
         {
             onGuildCardSeen: Y,
@@ -84,27 +84,27 @@ function S() {
     }, [b]), r.useEffect(() => {
         S()
     }, [v, S]), r.useEffect(() => {
-        D || u.A.setState({
+        j || u.A.setState({
             scrollPosition: null
         })
-    }, [D]), (0, i.jsxs)("div", {
+    }, [j]), (0, i.jsxs)("div", {
         className: N.kL,
         children: [(0, i.jsxs)(o.Ay, {
-            variant: D ? o.Z5.RELATIVE : o.Z5.OVERLAY,
-            children: [!D && (0, i.jsx)(o.ns, {
+            variant: j ? o.Z5.RELATIVE : o.Z5.OVERLAY,
+            children: [!j && (0, i.jsx)(o.ns, {
                 scrollPosition: n
-            }), D ? (0, i.jsx)(o.XQ, {
+            }), j ? (0, i.jsx)(o.XQ, {
                 icon: l.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
                 icon: l.RR9
-            }), !D && (0, i.jsx)(d.A, {
+            }), !j && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), D && (0, i.jsx)(l.Heading, {
+            }), j && (0, i.jsx)(l.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,
@@ -116,12 +116,12 @@ function S() {
                 placeholder: T.intl.string(T.t["5h0QOP"]),
                 onTextChange: R,
                 onClear: P,
-                onSubmit: j,
+                onSubmit: D,
                 onCollapsedClick: U,
-                state: D ? C.GlobalDiscoverySearchBarState.DEFAULT : M,
+                state: j ? C.GlobalDiscoverySearchBarState.DEFAULT : M,
                 onBlur: G
             })]
-        }), D ? (0, i.jsx)(I.A, {
+        }), j ? (0, i.jsx)(I.A, {
             loadId: e.current,
             onGuildCardClick: W,
             onGuildCardSeen: Y

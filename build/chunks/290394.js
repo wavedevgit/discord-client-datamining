@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    a = n.n(l),
-    r = n(935399),
+    r = n.n(l),
+    a = n(935399),
     o = n(311907),
     d = n(397927),
     c = n(54570),
     u = n(8880),
     _ = n(75804),
-    g = n(985018);
-let m = a().debounce(e => {
+    m = n(985018);
+let g = r().debounce(e => {
     (0, c.zU)(e)
 }, 250);
 
@@ -22,22 +22,22 @@ function A() {
     return (0, i.jsxs)(d.BJc, {
         gap: 16,
         children: [(0, i.jsx)(d.Apm, {
-            label: g.intl.string(g.t.lsW5Ev),
-            description: g.intl.string(g.t.Ci4wMS),
+            label: m.intl.string(m.t.lsW5Ev),
+            description: m.intl.string(m.t.Ci4wMS),
             markers: _.P,
             initialValue: e,
             defaultValue: 1,
             stickToMarkers: !0,
-            onValueChange: m,
+            onValueChange: g,
             onValueRender: e => `x${e.toFixed(2)}`,
             onMarkerRender: e => 0 === e ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: g.intl.string(g.t["493lwX"])
+                children: m.intl.string(m.t["493lwX"])
             }) : 10 === e ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: g.intl.string(g.t.ZSZEdS)
+                children: m.intl.string(m.t.ZSZEdS)
             }) : 1 === e ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "text-feedback-positive",
@@ -49,15 +49,15 @@ function A() {
 
 function h() {
     let [e, t] = s.useState(!1);
-    return (0, r.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
-        text: g.intl.string(g.t.SKNnqq),
+    return (0, a.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
+        text: m.intl.string(m.t.SKNnqq),
         icon: e ? d.E$n : d.udU,
         size: "sm",
         onClick: () => {
             if (e) {
                 (0, c.pr)(), t(!1);
                 return
-            }(0, c.AU)(g.intl.string(g.t.PKaNJL), !0, void 0, () => t(!0), () => t(!1)), t(!0)
+            }(0, c.AU)(m.intl.string(m.t.PKaNJL), !0, void 0, () => t(!0), () => t(!1)), t(!0)
         }
     })
 }

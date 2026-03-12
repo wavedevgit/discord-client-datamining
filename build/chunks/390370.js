@@ -6,20 +6,20 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(854627),
-    a = n(837921),
-    r = n(834981),
+    r = n(837921),
+    a = n(834981),
     o = n(475833),
     d = n(553946);
-let c = a.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF;
+let c = r.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF;
 
 function u(e) {
     let {
         otherUser: t,
         status: n
-    } = e, a = (0, r.XC)(t.id, n), {
+    } = e, r = (0, a.XC)(t.id, n), {
         avatarSrc: u,
         avatarDecorationSrc: _,
-        eventHandlers: g
+        eventHandlers: m
     } = (0, l.A)({
         userId: t.id,
         size: s._3J.SIZE_40,
@@ -27,7 +27,7 @@ function u(e) {
     });
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            ...g,
+            ...m,
             children: (0, i.jsx)(c, {
                 className: d.my,
                 src: u,
@@ -45,7 +45,7 @@ function u(e) {
             }), (0, i.jsx)(s.Text, {
                 color: "text-muted",
                 variant: "text-xs/normal",
-                children: a
+                children: r
             })]
         })]
     })

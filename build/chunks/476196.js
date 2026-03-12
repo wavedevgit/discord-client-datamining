@@ -1,12 +1,12 @@
 /** chunk id: 476196 params = (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => A
 });
 var i = n(735438),
-    s = n.n(i),
+    r = n.n(i),
     l = n(626584),
     a = n(617617),
-    r = n(961350),
+    s = n(961350),
     o = n(723176),
     d = n(989950);
 let c = new l.A("UserSettingsProto");
@@ -22,12 +22,12 @@ class u {
             n = await o.A.userSettings(e).getMany(),
             i = performance.now();
         c.verbose(`loaded in ${i-t}ms (settings: ${n.length})`);
-        let s = {};
-        for (let e of n) s[e.id] = e.value;
-        return s
+        let r = {};
+        for (let e of n) r[e.id] = e.value;
+        return r
     }
     handleUserSettingsProtoChange = () => {
-        let e = r.default.getId(),
+        let e = s.default.getId(),
             t = d.A.database(e);
         t?.transaction(e => {
             let t = a.A.computeState(),
@@ -43,7 +43,7 @@ class u {
             })
         }, "handleUserSettingsProtoChange")
     };
-    throttledOnChange = s().debounce(this.handleUserSettingsProtoChange, 0);
+    throttledOnChange = r().debounce(this.handleUserSettingsProtoChange, 0);
     resetInMemoryState() {}
 }
-let _ = new u
+let A = new u
