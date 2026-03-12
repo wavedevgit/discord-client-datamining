@@ -13,17 +13,17 @@ var l = n(665260),
     a = n(71393),
     o = n(576705),
     s = n(287809),
-    d = n(661191),
-    u = n(340837),
+    u = n(661191),
+    d = n(340837),
     c = n(652215);
 let A = (e, t) => {
     var n;
-    let o = (0, i.bG)([r.Ay], () => (0, l.Lt)(r.Ay.getMember(e, t)?.flags ?? 0, u.D.DID_REJOIN)),
+    let o = (0, i.bG)([r.Ay], () => (0, l.Lt)(r.Ay.getMember(e, t)?.flags ?? 0, d.D.DID_REJOIN)),
         c = (0, i.bG)([a.A], () => {
             let t = a.A.getGuild(e);
             return null != t && function(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 7,
-                    n = d.default.extractTimestamp(e.id);
+                    n = u.default.extractTimestamp(e.id);
                 return Date.now() - n < 864e5 * t
             }(t)
         }),
@@ -40,8 +40,8 @@ let A = (e, t) => {
             s = t?.joinedAt == null ? null : new Date(t.joinedAt)
         }
         if (null == s) return !1;
-        let d = Date.now() - s.getTime();
-        return (null == l || d <= 864e5 * l) && d >= 864e5 * i
+        let u = Date.now() - s.getTime();
+        return (null == l || u <= 864e5 * l) && u >= 864e5 * i
     })(e, n, t), [n, e, t]) && !c && !A && !o
 };
 

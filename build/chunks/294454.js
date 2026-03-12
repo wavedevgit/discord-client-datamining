@@ -24,7 +24,7 @@ function i(e) {
     (0, s.pp)(t.channel_id, t.id, i), (0, l.mMO)(async () => {
         let {
             ForwardModal: e
-        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("79996")]).then(n.bind(n, 911269));
+        } = await Promise.all([n.e("96758"), n.e("43622"), n.e("8622")]).then(n.bind(n, 911269));
         return n => (0, a.jsx)(e, {
             ...n,
             message: t,

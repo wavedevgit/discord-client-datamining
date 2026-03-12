@@ -24,7 +24,7 @@ function a(e, t) {
             case l.o9.PERK: {
                 let {
                     default: s
-                } = await Promise.all([n.e("63379"), n.e("34249")]).then(n.bind(n, 940481));
+                } = await Promise.all([n.e("63379"), n.e("39619")]).then(n.bind(n, 940481));
                 return n => (0, i.jsx)(s, {
                     guildId: e,
                     powerup: t,

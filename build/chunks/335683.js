@@ -1,5 +1,4 @@
 /** chunk id: 335683 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__3efc4",
     e1: "cardContainerWithoutTopIndicator__3efc4",

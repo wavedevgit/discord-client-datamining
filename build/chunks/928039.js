@@ -1,45 +1,44 @@
 /** chunk id: 928039 params = (module,exports,require) **/
-"use strict";
-s.d(t, {
-    A: () => i
+n.d(t, {
+    A: () => o
 });
-var a = s(64700),
-    r = s(884362),
-    n = s(311907),
-    l = s(775602);
+var a = n(64700),
+    l = n(884362),
+    r = n(311907),
+    s = n(775602);
 
-function i(e, t, s) {
-    let i = (0, n.bG)([l.A], () => l.A.keyboardModeEnabled),
-        u = a.useCallback(e => {
-            let s = document.querySelector(e),
+function o(e, t, n) {
+    let o = (0, r.bG)([s.A], () => s.A.keyboardModeEnabled),
+        i = a.useCallback(e => {
+            let n = document.querySelector(e),
                 a = t.current;
-            null != s && null != a && (s.focus(), a.scrollIntoViewNode({
-                node: s,
+            null != n && null != a && (n.focus(), a.scrollIntoViewNode({
+                node: n,
                 padding: 80
             }))
         }, [t]),
         c = a.useCallback(() => new Promise(e => {
-            let s = t.current;
-            if (null == s) return e();
-            s.scrollTo({
+            let n = t.current;
+            if (null == n) return e();
+            n.scrollTo({
                 to: 0,
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]),
-        d = a.useCallback(() => new Promise(e => {
-            let s = t.current;
-            if (null == s) return e();
-            s.scrollTo({
+        u = a.useCallback(() => new Promise(e => {
+            let n = t.current;
+            if (null == n) return e();
+            n.scrollTo({
                 to: Number.MAX_SAFE_INTEGER,
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]);
-    return (0, r.Ay)({
+    return (0, l.Ay)({
         id: e,
-        isEnabled: i,
-        setFocus: u,
+        isEnabled: o,
+        setFocus: i,
         scrollToStart: c,
-        scrollToEnd: d,
-        orientation: s?.orientation
+        scrollToEnd: u,
+        orientation: n?.orientation
     })
 }

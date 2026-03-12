@@ -1,6 +1,6 @@
 /** chunk id: 263642 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 });
 var i = n(627968);
 n(64700);
@@ -27,22 +27,22 @@ function m(e) {
     }) : null
 }
 
-function g(e) {
+function p(e) {
     let {
         voiceState: t,
         awaitingRemoteSessionInfo: n
     } = e, r = null != n ? (0, u.X)(n.type) : null, d = (0, a.bG)([o.A], () => o.A.getSessionById(t?.sessionId ?? "")?.clientInfo.os), c = r ?? d;
     if (null == c || !A.hv.has(c)) return null;
-    let g = null != n,
-        p = g ? c === A.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : c === A.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
+    let p = null != n,
+        g = p ? c === A.f$.XBOX ? h.intl.string(h.t.UjA4HX) : h.intl.string(h.t.QCw1oW) : c === A.f$.XBOX ? h.intl.format(h.t["ynEs/Y"], {}) : h.intl.format(h.t.TZ17Bg, {});
     return (0, i.jsxs)("div", {
-        className: l()(_.zr, g ? _.jI : _.aW),
+        className: l()(_.zr, p ? _.jI : _.aW),
         children: [(0, i.jsx)(m, {
             platform: c
         }), (0, i.jsx)(s.Text, {
-            color: g ? "text-strong" : "always-white",
+            color: p ? "text-strong" : "always-white",
             variant: "text-xs/medium",
-            children: p
+            children: g
         })]
     })
 }

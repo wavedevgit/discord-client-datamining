@@ -8,7 +8,7 @@ var i = e(627968),
     a = e(397927),
     d = e(967198),
     s = e(652215),
-    c = e(665606),
+    c = e(525736),
     o = e(985018);
 
 function A(n) {
@@ -18,7 +18,7 @@ function A(n) {
             (0, a.mMO)(async () => {
                 let {
                     default: t
-                } = await Promise.all([e.e("59839"), e.e("33032")]).then(e.bind(e, 889186));
+                } = await Promise.all([e.e("59839"), e.e("4452")]).then(e.bind(e, 889186));
                 return e => (0, i.jsx)(t, {
                     ...e,
                     parentId: n.id

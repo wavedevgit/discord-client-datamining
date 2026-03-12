@@ -1,32 +1,32 @@
 /** chunk id: 324050 params = (module,exports,require) **/
-let i;
-n.d(t, {
-    A: () => o
+let n;
+a.d(t, {
+    A: () => c
 });
-var l = n(311907),
-    r = n(73153);
-let s = {
+var r = a(311907),
+    l = a(73153);
+let i = {
     lastGuildDismissedTime: {}
 };
-class a extends l.Ay.DeviceSettingsStore {
+class s extends r.Ay.DeviceSettingsStore {
     static displayName = "ApplicationSubscriptionChannelNoticeStore";
     static persistKey = "ApplicationSubscriptionChannelNoticeStore";
     initialize() {
-        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s;
-        i = e
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : i;
+        n = e
     }
     getUserAgnosticState() {
-        return i
+        return n
     }
     getLastGuildDismissedTime(e) {
-        return i.lastGuildDismissedTime[e]
+        return n.lastGuildDismissedTime[e]
     }
 }
-let o = new a(r.h, {
+let c = new s(l.h, {
     APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
         let {
             guildId: t
         } = e;
-        i.lastGuildDismissedTime[t] = Date.now()
+        n.lastGuildDismissedTime[t] = Date.now()
     }
 })

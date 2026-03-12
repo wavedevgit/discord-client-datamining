@@ -7,7 +7,7 @@ var r = n(627968),
     a = n(64700),
     s = n(503698),
     i = n.n(s),
-    l = n(610084);
+    l = n(120690);
 
 function u() {
     let [t] = a.useState(() => Math.floor(1600 * Math.random()) / 1e3);

@@ -1,8 +1,8 @@
 /** chunk id: 414345 params = (module,exports,require) **/
 n.d(t, {
-    g1: () => c
+    g1: () => a
 });
-let a = (0, n(250105).Ay)({
+let i = (0, n(250105).Ay)({
     kind: "user",
     name: "2026-02-premium-brand-refresh-2026",
     defaultConfig: {
@@ -21,12 +21,12 @@ let a = (0, n(250105).Ay)({
     }
 });
 
-function c(e) {
+function a(e) {
     let {
         location: t,
         onPremiumTryItOutProfile: n = !1
-    } = e, c = a.getConfig({
+    } = e, a = i.getConfig({
         location: t
     }).treatment;
-    return !0 === n ? "UPDATE_ALL" === c : "CONTROL" !== c
+    return !0 === n ? "UPDATE_ALL" === a : "CONTROL" !== a
 }

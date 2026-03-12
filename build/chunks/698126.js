@@ -20,7 +20,7 @@ var i = n(627968),
     _ = n(166444),
     f = n(652215),
     x = n(790782),
-    C = n(728444);
+    C = n(719550);
 
 function E(e, t) {
     let n = t.getGuildId();

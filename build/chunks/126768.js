@@ -1,32 +1,32 @@
 /** chunk id: 126768 params = (module,exports,require) **/
-_.d(t, {
-    default: () => b
+t.d(s, {
+    default: () => d
 });
-var a = _(627968),
-    n = _(64700),
-    c = _(158954),
-    s = _(707539),
-    r = _(617011),
-    o = _(985018),
-    i = _(515470);
+var a = t(627968),
+    n = t(64700),
+    i = t(158954),
+    r = t(707539),
+    l = t(617011),
+    o = t(985018),
+    c = t(969444);
 
-function b(e) {
+function d(e) {
     let {
-        channel: t,
-        onClose: _,
-        transitionState: b
+        channel: s,
+        onClose: t,
+        transitionState: d
     } = e;
     return n.useEffect(() => {
-        (0, s.D3)()
-    }, []), (0, a.jsx)(c.dWK, {
-        transitionState: b,
+        (0, r.D3)()
+    }, []), (0, a.jsx)(i.dWK, {
+        transitionState: d,
         "aria-label": o.intl.string(o.t.B2panI),
         size: "lg",
-        onClose: _,
-        children: (0, a.jsx)(r.A, {
-            className: i.T,
-            channel: t,
-            onClose: _,
+        onClose: t,
+        children: (0, a.jsx)(l.A, {
+            className: c.T,
+            channel: s,
+            onClose: t,
             context: "modal"
         })
     })

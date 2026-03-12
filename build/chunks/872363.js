@@ -24,7 +24,7 @@ var i = n(627968),
     S = n(652215),
     I = n(788868),
     T = n(985018),
-    N = n(176273);
+    N = n(506927);
 let y = (0, o.xI)(h.A.LIVE_INDICATOR_BORDER_RADIUS),
     b = {
         opacity: 0,

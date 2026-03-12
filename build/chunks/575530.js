@@ -13,7 +13,7 @@ var i = n(627968),
     c = n(427603),
     h = n(302614),
     g = n(980504),
-    m = n(32160);
+    m = n(538482);
 let p = s.memo(function() {
     let [e, t] = (0, l.yK)([r.A], () => [r.A.enabled, r.A.keepOpen]), n = (0, l.bG)([u.A], () => u.A.getVoiceChannelId()), s = (0, l.bG)([d.A], () => d.A.getChannel(n), [n]), p = s?.getGuildId();
     return e && null != s ? (0, i.jsx)(h.A, {

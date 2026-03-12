@@ -9,7 +9,7 @@ function l(e, t) {
     (0, s.mMO)(async () => {
         let {
             default: s
-        } = await n.e("32140").then(n.bind(n, 608391));
+        } = await n.e("32140").then(n.bind(n, 830772));
         return n => (0, a.jsx)(s, {
             guildId: e,
             gameInstance: t,

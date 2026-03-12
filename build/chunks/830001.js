@@ -20,7 +20,7 @@ var i = n(627968),
     x = n(633817),
     E = n(652215),
     T = n(985018),
-    S = n(722125);
+    S = n(812335);
 let C = [{
         badgeType: g.Xi.NEW,
         dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE

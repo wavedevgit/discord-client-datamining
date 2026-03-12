@@ -1,21 +1,21 @@
 /** chunk id: 647006 params = (module,exports,require) **/
-n.d(t, {
-    a: () => r
+a.d(t, {
+    a: () => s
 });
-var i = n(20015),
-    s = n(652215);
+var n = a(20015),
+    i = a(652215);
 
-function r(e) {
+function s(e) {
     if (null == e) return;
     let t = {
         flags: e
     };
     return {
-        guildPresences: (0, i.n)(t, s.gfo.GATEWAY_PRESENCE),
-        guildMembers: (0, i.n)(t, s.gfo.GATEWAY_GUILD_MEMBERS),
-        messageContent: (0, i.n)(t, s.gfo.GATEWAY_MESSAGE_CONTENT),
-        guildPresencesLimited: (0, i.n)(t, s.gfo.GATEWAY_PRESENCE_LIMITED),
-        guildMembersLimited: (0, i.n)(t, s.gfo.GATEWAY_GUILD_MEMBERS_LIMITED),
-        messageContentLimited: (0, i.n)(t, s.gfo.GATEWAY_MESSAGE_CONTENT_LIMITED)
+        guildPresences: (0, n.n)(t, i.gfo.GATEWAY_PRESENCE),
+        guildMembers: (0, n.n)(t, i.gfo.GATEWAY_GUILD_MEMBERS),
+        messageContent: (0, n.n)(t, i.gfo.GATEWAY_MESSAGE_CONTENT),
+        guildPresencesLimited: (0, n.n)(t, i.gfo.GATEWAY_PRESENCE_LIMITED),
+        guildMembersLimited: (0, n.n)(t, i.gfo.GATEWAY_GUILD_MEMBERS_LIMITED),
+        messageContentLimited: (0, n.n)(t, i.gfo.GATEWAY_MESSAGE_CONTENT_LIMITED)
     }
 }

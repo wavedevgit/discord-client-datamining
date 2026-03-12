@@ -1,30 +1,29 @@
 /** chunk id: 203312 params = (module,exports,require) **/
-"use strict";
-s.d(t, {
+n.d(t, {
     A: () => d
 });
-var n = s(627968);
-s(64700);
-var r = s(503698),
-    l = s.n(r),
-    i = s(397927),
-    a = s(993408),
-    o = s(985018),
-    c = s(933122);
+var r = n(627968);
+n(64700);
+var i = n(503698),
+    a = n.n(i),
+    l = n(397927),
+    s = n(993408),
+    c = n(985018),
+    o = n(399508);
 let d = e => {
     let {
         category: t,
-        daysRemainingText: s = o.t.Io7ozn,
-        className: r
+        daysRemainingText: n = c.t.Io7ozn,
+        className: i
     } = e;
-    if (!(0, a.HF)(t.unpublishedAt)) return null;
-    let d = (0, a.WU)(t.unpublishedAt),
-        u = d > 1 ? o.intl.formatToPlainString(s, {
+    if (!(0, s.HF)(t.unpublishedAt)) return null;
+    let d = (0, s.WU)(t.unpublishedAt),
+        u = d > 1 ? c.intl.formatToPlainString(n, {
             days: d
-        }) : o.intl.string(o.t.Bc13HF);
-    return (0, n.jsx)(i.LpS, {
+        }) : c.intl.string(c.t.Bc13HF);
+    return (0, r.jsx)(l.LpS, {
         disableColor: !0,
         text: u,
-        className: l()(c.q, r)
+        className: a()(o.q, i)
     })
 }

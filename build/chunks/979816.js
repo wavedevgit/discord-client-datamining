@@ -1,36 +1,36 @@
 /** chunk id: 979816 params = (module,exports,require) **/
-n.d(e, {
-    XO: () => _,
-    hX: () => c,
-    iI: () => d,
-    i_: () => o
+n.d(i, {
+    XO: () => a,
+    hX: () => o,
+    iI: () => A,
+    i_: () => S
 });
-var i = n(311907),
-    a = n(71393),
-    r = n(576705),
+var e = n(311907),
+    r = n(71393),
+    E = n(576705),
     s = n(652215);
 let l = function(t) {
-    let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.A,
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : r.A,
-        i = e.getGuild(t);
-    return null != i && n.can(s.xBc.MANAGE_GUILD, i)
+    let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.A,
+        e = i.getGuild(t);
+    return null != e && n.can(s.xBc.MANAGE_GUILD, e)
 };
 
-function o(t) {
+function S(t) {
     return null != t && l(t)
 }
 
-function c(t) {
+function o(t) {
     return l(t)
 }
 
-function d(t) {
-    return (0, i.bG)([a.A, r.A], () => l(t, a.A, r.A), [t])
+function A(t) {
+    return (0, e.bG)([r.A, E.A], () => l(t, r.A, E.A), [t])
 }
 
-function _(t) {
-    return (0, i.bG)([a.A], () => {
-        let e = a.A.getGuild(t);
-        return e?.features.has(s.GuildFeatures.COMMUNITY) || !1
+function a(t) {
+    return (0, e.bG)([r.A], () => {
+        let i = r.A.getGuild(t);
+        return i?.features.has(s.GuildFeatures.COMMUNITY) || !1
     }, [t])
 }

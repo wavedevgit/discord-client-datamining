@@ -8,7 +8,7 @@ var l = e(665260),
     s = e(397927),
     r = e(652215),
     a = e(985018),
-    d = e(638329);
+    d = e(592519);
 let u = {
     size: "md",
     color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT

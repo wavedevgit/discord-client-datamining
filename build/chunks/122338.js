@@ -9,7 +9,7 @@ var i = n(627968),
     r = n(735321),
     o = n(394245),
     c = n(985018),
-    d = n(542467);
+    d = n(315657);
 let u = l.memo(function(e) {
     let {
         currentTags: t,

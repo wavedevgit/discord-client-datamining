@@ -1,10 +1,10 @@
 /** chunk id: 438732 params = (module,exports,require) **/
-_.d(t, {
-    A: () => a
+n.d(t, {
+    A: () => r
 });
-var o = _(311907),
-    r = _(695515);
+var l = n(311907),
+    a = n(695515);
 
-function a() {
-    return "adult" === (0, o.bG)([r.A], () => r.A.getAgeGroup())
+function r() {
+    return "adult" === (0, l.bG)([a.A], () => a.A.getAgeGroup())
 }

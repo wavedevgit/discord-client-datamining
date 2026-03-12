@@ -1,61 +1,61 @@
 /** chunk id: 93055 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     Af: () => b,
-    CJ: () => E,
-    Fe: () => C,
-    Rm: () => p,
-    TW: () => A
-}), n(321073);
-var i = n(478437),
-    r = n(311907);
-n(734057);
-var a = n(808728),
-    l = n(967198),
-    d = n(287809),
-    o = n(474090);
-n(661191);
-var u = n(181079),
-    s = n(379587),
-    f = n(11531),
-    c = n(957300),
-    h = n(652215),
-    v = n(788868);
+    CJ: () => g,
+    Fe: () => p,
+    Rm: () => C,
+    TW: () => v
+}), t(321073);
+var i = t(478437),
+    r = t(311907);
+t(734057);
+var l = t(808728),
+    a = t(967198),
+    d = t(287809),
+    s = t(474090);
+t(661191);
+var o = t(181079),
+    u = t(379587),
+    c = t(11531),
+    h = t(957300),
+    A = t(652215),
+    f = t(788868);
 
-function A(e) {
+function v(e) {
     let {
-        enabled: t,
-        hasHigherPrivileges: n
-    } = (0, s.m)({
+        enabled: n,
+        hasHigherPrivileges: t
+    } = (0, u.m)({
         location: e
-    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), a = o.Ay.isPremiumExactly(i, v.PremiumTypes.TIER_2);
+    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), l = s.Ay.isPremiumExactly(i, f.PremiumTypes.TIER_2);
     return {
-        hasAccess: t && a,
-        isExperimentEnabled: t,
-        isPreviewMode: (0, c.E)(e => e.isPreviewMode),
-        hasHigherPrivileges: n
+        hasAccess: n && l,
+        isExperimentEnabled: n,
+        isPreviewMode: (0, h.E)(e => e.isPreviewMode),
+        hasHigherPrivileges: t
     }
 }
 
 function b(e) {
-    return (0, r.bG)([u.A], () => u.A.getFavorite(e))
+    return (0, r.bG)([o.A], () => o.A.getFavorite(e))
 }
 
-function p() {
-    return (0, r.bG)([a.Ay], () => a.Ay.getChannels(h.YYv))[i.r.GUILD_CATEGORY].map(e => ({
+function C() {
+    return (0, r.bG)([l.Ay], () => l.Ay.getChannels(A.YYv))[i.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function C() {
-    return (0, r.bG)([l.A], () => l.A.getGuildId()) === h.YYv
+function p() {
+    return (0, r.bG)([a.A], () => a.A.getGuildId()) === A.YYv
 }
 
-function E() {
-    let e = (0, f.J)(e => e.favoriteAdded);
+function g() {
+    let e = (0, c.J)(e => e.favoriteAdded);
     return {
         favoriteAdded: e,
-        notifyFavoriteAdded: (0, f.J)(e => e.notifyFavoriteAdded),
-        clearFavoriteAdded: (0, f.J)(e => e.clearFavoriteAdded)
+        notifyFavoriteAdded: (0, c.J)(e => e.notifyFavoriteAdded),
+        clearFavoriteAdded: (0, c.J)(e => e.clearFavoriteAdded)
     }
 }

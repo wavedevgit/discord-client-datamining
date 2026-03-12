@@ -1,5 +1,6 @@
 /** chunk id: 678783 params = (module,exports,require) **/
-n.r(e.exports = {
+"use strict";
+r.r(e.exports = {
     boxBackdrop: "boxBackdrop__53b4c",
     bentoSectionHeader: "bentoSectionHeader__53b4c",
     bentoBoxesGrid: "bentoBoxesGrid__53b4c",

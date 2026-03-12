@@ -29,7 +29,7 @@ var i = n(627968),
     p = n(896018),
     D = n(652215),
     O = n(985018),
-    G = n(986700);
+    G = n(977402);
 
 function j(e) {
     let t = (0, o.bG)([m.A], () => m.A.useReducedMotion),

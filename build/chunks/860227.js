@@ -1,36 +1,37 @@
 /** chunk id: 860227 params = (module,exports,require) **/
-t.d(a, {
-    CJ: () => s,
-    JH: () => l,
+"use strict";
+n.d(t, {
+    CJ: () => a,
+    JH: () => c,
     XL: () => d,
-    ZD: () => C,
-    d$: () => c,
-    fF: () => E,
-    nS: () => _,
-    xl: () => i
+    ZD: () => h,
+    d$: () => o,
+    fF: () => m,
+    nS: () => r,
+    xl: () => u
 });
-var n = t(264927),
-    r = t(143413),
-    o = t(652215);
+var l = n(264927),
+    i = n(143413),
+    s = n(652215);
 
-function s(e) {
+function a(e) {
     return `message-content-${e.id}`
 }
 
-function _(e) {
+function r(e) {
     return `message-reply-context-${e.id}`
 }
 
-function c(e, a) {
-    let t = a ?? e.id;
-    return `message-username-${t}`
+function o(e, t) {
+    let n = t ?? e.id;
+    return `message-username-${n}`
 }
 
-function i(e) {
+function u(e) {
     return `message-timestamp-${e.id}`
 }
 
-function l(e) {
+function c(e) {
     return `message-reactions-${e.id}`
 }
 
@@ -38,39 +39,39 @@ function d(e) {
     return `message-accessories-${e.id}`
 }
 
-function E(e, a, t) {
-    let l = e.type === o.lAJ.REPLY && null != e.messageReference,
-        E = e.embeds.length > 0,
-        C = e.attachments.length > 0,
-        A = e.stickerItems.length > 0,
-        u = e.codedLinks.length > 0,
-        N = e.components.length > 0,
-        O = e.hasFlag(o.pr7.HAS_THREAD),
-        m = E || C || A || u || O || N || e.type === o.lAJ.THREAD_CREATED,
-        R = E && e.content === e.embeds[0].url && e.embeds[0].type === o.Auw.GIFV,
-        T = e.type !== o.lAJ.DEFAULT || !R && "" !== e.content,
-        I = (0, r.A)(e),
-        p = !I && t?.hasTimestamp !== !1,
-        P = c(e, a),
-        f = _(e),
-        S = I ? "" : `${l?f:P} ${n.lW}`;
-    if (T) {
-        let a = s(e);
-        S += ` ${a}`
+function m(e, t, n) {
+    let c = e.type === s.lAJ.REPLY && null != e.messageReference,
+        m = e.embeds.length > 0,
+        h = e.attachments.length > 0,
+        g = e.stickerItems.length > 0,
+        p = e.codedLinks.length > 0,
+        A = e.components.length > 0,
+        f = e.hasFlag(s.pr7.HAS_THREAD),
+        x = m || h || g || p || f || A || e.type === s.lAJ.THREAD_CREATED,
+        v = m && e.content === e.embeds[0].url && e.embeds[0].type === s.Auw.GIFV,
+        j = e.type !== s.lAJ.DEFAULT || !v && "" !== e.content,
+        N = (0, i.A)(e),
+        b = !N && n?.hasTimestamp !== !1,
+        C = o(e, t),
+        E = r(e),
+        I = N ? "" : `${c?E:C} ${l.lW}`;
+    if (j) {
+        let t = a(e);
+        I += ` ${t}`
     }
-    if (m) {
-        let a = d(e);
-        S += ` ${a}`
+    if (x) {
+        let t = d(e);
+        I += ` ${t}`
     }
-    if (p) {
-        let a = i(e);
-        S += ` ${n.l6} ${a}`
+    if (b) {
+        let t = u(e);
+        I += ` ${l.l6} ${t}`
     }
-    return S.trim()
+    return I.trim()
 }
 
-function C(e) {
+function h(e) {
     if (0 === e.reactions.length) return;
-    let a = l(e);
-    return `${n.oz} ${a}`
+    let t = c(e);
+    return `${l.oz} ${t}`
 }

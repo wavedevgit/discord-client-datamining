@@ -13,7 +13,7 @@ var a = n(627968),
     u = n(446868),
     m = n(652215),
     h = n(985018),
-    p = n(441609);
+    p = n(26939);
 let x = c.A.getArticleURL(m.MVz.VERIFICATION_FAQ);
 class g extends i.PureComponent {
     static defaultProps = {

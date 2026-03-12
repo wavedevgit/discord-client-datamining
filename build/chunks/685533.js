@@ -24,7 +24,7 @@ var n = s(627968),
     b = s(998694),
     A = s(438166),
     S = s(652215),
-    v = s(695865);
+    v = s(221875);
 let I = {
     flattenProductVariants: !0
 };

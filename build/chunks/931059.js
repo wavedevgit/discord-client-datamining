@@ -20,7 +20,7 @@ let {
     hr: () => n.e("3317").then(n.t.bind(n, 426228, 19)),
     hu: () => n.e("24242").then(n.t.bind(n, 304361, 19)),
     it: () => n.e("53144").then(n.t.bind(n, 429099, 19)),
-    ja: () => n.e("85748").then(n.t.bind(n, 40428, 19)),
+    ja: () => n.e("85748").then(n.t.bind(n, 818047, 19)),
     ko: () => n.e("43621").then(n.t.bind(n, 791780, 19)),
     lt: () => n.e("75159").then(n.t.bind(n, 782250, 19)),
     nl: () => n.e("76829").then(n.t.bind(n, 866988, 19)),

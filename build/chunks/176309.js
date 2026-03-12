@@ -1,5 +1,4 @@
 /** chunk id: 176309 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     U0: "draftBadgeContainer_ea81a9",
     KR: "tierName_ea81a9",

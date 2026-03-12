@@ -14,8 +14,8 @@ var n = i(627968),
     m = i(565150),
     h = i(521502),
     p = i(851023),
-    f = i(349688),
-    x = i(914905),
+    x = i(349688),
+    f = i(914905),
     v = i(176634),
     g = i(101555),
     b = i(386976),
@@ -27,7 +27,7 @@ var n = i(627968),
     k = i(256252),
     C = i(382913),
     E = i(985018),
-    A = i(433963);
+    A = i(168029);
 let O = ["Android", "iOS", "Windows Mobile", "Windows", "Linux", "Mac OS X"].map(e => ({
     id: e,
     label: e,
@@ -58,19 +58,19 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "60e1f9b14fafc5ed39317f6c6b0efd0e5c37ffb8" !== e.body.hash) {
-                let e = new Date("1773272534548"),
+            if (null != e.body && "b193773d914fb6af1e143cc5ce9f671b1dae3bb7" !== e.body.hash) {
+                let e = new Date("1773273190171"),
                     t = new Date,
                     i = (0, S.Tf)(t, e);
                 i.hours > 6 && ep(i.hours)
             }
         })
     }, []);
-    let ef = (0, r.bG)([_.default], () => {
+    let ex = (0, r.bG)([_.default], () => {
             let e = _.default.getCurrentUser();
             return e?.isStaff() || e?.isStaffPersonal()
         }),
-        ex = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
+        ef = (0, r.bG)([h.A], () => h.A.getCurrentBuildOverride().overrides?.discord_web),
         {
             overridesInfo: ev
         } = (0, j.hI)(),
@@ -105,7 +105,7 @@ function L(e) {
                 priority: D,
                 feature: e,
                 url: V,
-                buildOverride: ex?.id ?? null,
+                buildOverride: ef?.id ?? null,
                 experimentOverrides: eb
             }, !0 === U ? {
                 overridePlatformInformation: U,
@@ -118,7 +118,7 @@ function L(e) {
             } : {
                 overridePlatformInformation: U
             }, t).catch(() => em(!0));
-        ed(!1), null != a && a.ok ? (ef && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
+        ed(!1), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), L(), (0, d.mMO)(async () => {
             let {
                 default: e
             } = await i.e("71256").then(i.bind(i, 369323));
@@ -132,8 +132,8 @@ function L(e) {
         async function e() {
             K(await (0, k.xt)())
         }
-        ef && e()
-    }, [ef]), a.useEffect(() => {
+        ex && e()
+    }, [ex]), a.useEffect(() => {
         W.length > 0 && N.current?.scrollIntoView({
             behavior: "smooth",
             block: "end"
@@ -163,7 +163,7 @@ function L(e) {
             autoFocus: !1
         }, {
             variant: "primary",
-            text: ef ? "Submit and Open Report" : "Submit Report",
+            text: ex ? "Submit and Open Report" : "Submit Report",
             loading: eu,
             onClick: ej,
             autoFocus: !1
@@ -172,7 +172,7 @@ function L(e) {
         children: (0, n.jsxs)("div", {
             children: [(0, n.jsxs)(d.BJc, {
                 gap: 8,
-                children: [null != ex && (0, n.jsxs)(d.wx6, {
+                children: [null != ef && (0, n.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -181,11 +181,11 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.format(E.t["yY60+7"], {
                             buildOverrideHook: () => (0, n.jsx)("b", {
-                                children: ex?.id
+                                children: ef?.id
                             })
                         })
                     })]
-                }), null == ex && null != eh && (0, n.jsxs)(d.wx6, {
+                }), null == ef && null != eh && (0, n.jsxs)(d.wx6, {
                     type: "critical",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -196,7 +196,7 @@ function L(e) {
                         variant: "text-sm/normal",
                         children: E.intl.string(E.t.x18RUs)
                     })]
-                }), ef && Object.keys(eb).length > 0 && (0, n.jsxs)(d.wx6, {
+                }), ex && Object.keys(eb).length > 0 && (0, n.jsxs)(d.wx6, {
                     type: "warning",
                     children: [(0, n.jsx)(d.Heading, {
                         variant: "heading-md/medium",
@@ -229,7 +229,7 @@ function L(e) {
                     placeholder: "What did you expect to see?",
                     value: I,
                     onChange: R,
-                    description: ef ? "You can add additional information/media on the ticket after submitting" : void 0,
+                    description: ex ? "You can add additional information/media on the ticket after submitting" : void 0,
                     autosize: !0
                 }), (0, n.jsx)(o.Te, {
                     label: E.intl.string(E.t.xMXLda),
@@ -273,7 +273,7 @@ function L(e) {
                     maxVisibleItems: 4,
                     closeOnSelect: !0,
                     "data-migration-pending": !0
-                }), ef && (0, n.jsx)(d.ZiE, {
+                }), ex && (0, n.jsx)(d.ZiE, {
                     selectionMode: "single",
                     label: E.intl.string(E.t["77VVd8"]),
                     value: $,
@@ -358,8 +358,8 @@ function L(e) {
                         children: W.length > 0 && W.map(e => (0, n.jsxs)("div", {
                             className: A.oh,
                             children: [(0, n.jsxs)("div", {
-                                children: [(0, n.jsx)(x.J, {
-                                    size: f.L.SMALL,
+                                children: [(0, n.jsx)(f.J, {
+                                    size: x.L.SMALL,
                                     upload: e
                                 }), (0, n.jsx)("div", {
                                     className: A.eA,

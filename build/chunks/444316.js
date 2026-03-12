@@ -1,54 +1,53 @@
 /** chunk id: 444316 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => h
+i.d(t, {
+    A: () => m
 });
-var i = n(627968);
-n(64700);
-var s = n(503698),
-    r = n.n(s),
-    l = n(417597),
-    a = n(397927),
-    o = n(966327),
-    d = n(287809),
-    c = n(985018),
-    u = n(36522);
+var l = i(627968);
+i(64700);
+var n = i(503698),
+    a = i.n(n),
+    s = i(417597),
+    r = i(397927),
+    d = i(966327),
+    c = i(287809),
+    o = i(985018),
+    u = i(290616);
 
-function h(e) {
+function m(e) {
     let {
         friendMemberIds: t,
-        className: n,
-        avatarSize: s = a._3J.SIZE_16
-    } = e, h = (0, l.yK)([d.default], () => t.slice(0, 3).map(e => d.default.getUser(e)).filter(e => null != e));
-    if (0 === h.length) return null;
-    let _ = h[0],
-        p = {
+        className: i,
+        avatarSize: n = r._3J.SIZE_16
+    } = e, m = (0, s.yK)([c.default], () => t.slice(0, 3).map(e => c.default.getUser(e)).filter(e => null != e));
+    if (0 === m.length) return null;
+    let x = m[0],
+        _ = {
             count: t.length - 1,
-            username: _.username,
-            username2: 2 === t.length && h.length >= 2 ? h[1].username : ""
+            username: x.username,
+            username2: 2 === t.length && m.length >= 2 ? m[1].username : ""
         },
-        g = c.intl.format(c.t["5NHEPu"], p);
-    return (0, i.jsxs)("div", {
-        className: r()(u.kL, n),
-        children: [(0, i.jsx)("div", {
+        h = o.intl.format(o.t["5NHEPu"], _);
+    return (0, l.jsxs)("div", {
+        className: a()(u.kL, i),
+        children: [(0, l.jsx)("div", {
             className: u.yA,
             style: {
-                maxHeight: `${(0,a.FT9)(s)}px`
+                maxHeight: `${(0,r.FT9)(n)}px`
             },
-            children: h.map((e, t) => (0, i.jsx)("div", {
+            children: m.map((e, t) => (0, l.jsx)("div", {
                 className: u.R3,
                 style: {
-                    zIndex: h.length - t
+                    zIndex: m.length - t
                 },
-                children: (0, i.jsx)(o.A, {
+                children: (0, l.jsx)(d.A, {
                     user: e,
-                    size: s
+                    size: n
                 })
             }, e.id))
-        }), (0, i.jsx)(a.Text, {
+        }), (0, l.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
-            children: g
+            children: h
         })]
     })
 }

@@ -1,45 +1,45 @@
 /** chunk id: 513963 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var i = n(627968),
-    l = n(64700),
+var l = n(627968),
+    i = n(64700),
     r = n(732955),
     a = n(817281),
-    s = n(951829),
-    o = n(985018);
+    o = n(951829),
+    s = n(985018);
 
-function d(e) {
+function u(e) {
     let {
         type: t,
         onConfirm: n,
-        onClose: d,
-        ...c
-    } = e, [u, h] = l.useState(!1), A = l.useCallback(() => {
-        u && a.Ay.updatedUnsyncedSettings({
+        onClose: u,
+        ...d
+    } = e, [c, A] = i.useState(!1), h = i.useCallback(() => {
+        c && a.Ay.updatedUnsyncedSettings({
             disableHideSelfStreamAndVideoConfirmationAlert: !0
-        }), n(), d()
-    }, [n, u, d]), _ = t === s.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), g = t === s.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
-    return (0, i.jsx)(r.aFV, {
+        }), n(), u()
+    }, [n, c, u]), g = t === o.f.STREAM ? s.intl.string(s.t["/lFMWr"]) : s.intl.string(s.t.xzxhZS), f = t === o.f.STREAM ? s.intl.string(s.t.xaOX7d) : s.intl.string(s.t.oU1p9O);
+    return (0, l.jsx)(r.aFV, {
         size: "md",
-        actionBarInput: (0, i.jsx)(r.Sc0, {
-            checked: u,
-            onChange: e => h(e),
-            label: o.intl.string(o.t["JdIQ/Y"]),
+        actionBarInput: (0, l.jsx)(r.Sc0, {
+            checked: c,
+            onChange: e => A(e),
+            label: s.intl.string(s.t["JdIQ/Y"]),
             labelType: "secondary"
         }),
         actions: [{
             variant: "secondary",
-            text: o.intl.string(o.t["ETE/oC"]),
-            onClick: d
+            text: s.intl.string(s.t["ETE/oC"]),
+            onClick: u
         }, {
             variant: "primary",
-            text: o.intl.string(o.t.BddRzS),
-            onClick: A
+            text: s.intl.string(s.t.BddRzS),
+            onClick: h
         }],
-        title: _,
-        subtitle: g,
-        onClose: d,
-        ...c
+        title: g,
+        subtitle: f,
+        onClose: u,
+        ...d
     })
 }

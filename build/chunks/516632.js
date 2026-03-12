@@ -1,5 +1,4 @@
 /** chunk id: 516632 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper__2ea32",
     Kk: "icon__2ea32",
@@ -12,7 +11,7 @@ e.exports = {
     J1: "modeSelected__2ea32",
     yg: "modeLocked__2ea32",
     zc: "iconContainer__2ea32",
-    h5: "iconContainerWithGuildIcon__2ea32",
+    QO: "favoritesIconWrapper__2ea32",
     ow: "favoritesSuggestion__2ea32",
     ae: "basicChannelRowLink__2ea32",
     Y5: "linkTop__2ea32",
@@ -20,7 +19,6 @@ e.exports = {
     VA: "subtitle__2ea32",
     Y_: "children__2ea32",
     F4: "modeMuted__2ea32",
-    Is: "iconWithGuildIcon__2ea32",
     d4: "modeConnected__2ea32",
     IA: "notInteractive__2ea32",
     WS: "unreadImportant__2ea32",

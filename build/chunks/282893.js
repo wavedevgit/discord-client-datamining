@@ -1,5 +1,5 @@
 /** chunk id: 282893 params = (module,exports,require) **/
-e.exports = {
+c.exports = {
     WG: "channelRow_d295eb",
     GC: "channelRowDisabled_d295eb",
     HA: "channelName_d295eb",

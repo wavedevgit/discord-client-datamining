@@ -1,45 +1,44 @@
 /** chunk id: 704037 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
-    l: () => A
-}), n(667532);
-var i = n(627968),
-    s = n(64700),
-    l = n(311907),
-    a = n(397927),
-    r = n(573435),
-    o = n(71393),
-    c = n(967198),
-    d = n(743790),
-    u = n(960016);
+i.d(t, {
+    l: () => x
+}), i(667532);
+var s = i(627968),
+    n = i(64700),
+    l = i(311907),
+    a = i(397927),
+    r = i(573435),
+    d = i(71393),
+    c = i(967198),
+    u = i(743790),
+    o = i(735050);
 
-function h(e) {
+function m(e) {
     let {
         children: t,
-        iconSize: n
+        iconSize: i
     } = e;
-    return (0, i.jsx)(r.Ay, {
-        className: u.Iu,
+    return (0, s.jsx)(r.Ay, {
+        className: o.Iu,
         mask: r.Ay.Masks.SQUIRCLE,
-        width: n + 5,
-        height: n + 5,
+        width: i + 5,
+        height: i + 5,
         children: t
     })
 }
 
-function A(e) {
+function x(e) {
     let {
         guildIds: t,
-        iconSize: n = 20,
+        iconSize: i = 20,
         prioritizeSelectedGuild: r = !1
-    } = e, A = (0, l.bG)([c.A], () => r ? c.A.getGuildId() : null, [r]), m = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => m.filter(e => null != e), [m]), {
-        visibleGuilds: g,
-        numTruncated: _
-    } = (0, s.useMemo)(() => {
-        let e = [...p];
-        if (null != A) {
-            let t = e.findIndex(e => e.id === A);
-            t > 0 && (e.splice(t, 1), e.unshift(p[t]))
+    } = e, x = (0, l.bG)([c.A], () => r ? c.A.getGuildId() : null, [r]), h = (0, l.yK)([d.A], () => t.map(e => d.A.getGuild(e)), [t]), j = (0, n.useMemo)(() => h.filter(e => null != e), [h]), {
+        visibleGuilds: f,
+        numTruncated: I
+    } = (0, n.useMemo)(() => {
+        let e = [...j];
+        if (null != x) {
+            let t = e.findIndex(e => e.id === x);
+            t > 0 && (e.splice(t, 1), e.unshift(j[t]))
         }
         return 4 === e.length ? {
             visibleGuilds: e,
@@ -48,22 +47,22 @@ function A(e) {
             visibleGuilds: e.slice(0, 3),
             numTruncated: e.length - 3
         }
-    }, [p, A]);
-    return (0, i.jsxs)("div", {
-        className: u.WM,
-        children: [g.map(e => (0, i.jsx)(h, {
-            iconSize: n,
-            children: (0, i.jsx)(d.$, {
+    }, [j, x]);
+    return (0, s.jsxs)("div", {
+        className: o.WM,
+        children: [f.map(e => (0, s.jsx)(m, {
+            iconSize: i,
+            children: (0, s.jsx)(u.$, {
                 guild: e,
-                size: n
+                size: i
             })
-        }, e.id)), _ > 0 && (0, i.jsx)(h, {
-            iconSize: n,
-            children: (0, i.jsxs)(a.Text, {
-                className: u.br,
+        }, e.id)), I > 0 && (0, s.jsx)(m, {
+            iconSize: i,
+            children: (0, s.jsxs)(a.Text, {
+                className: o.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",
-                children: ["+", _]
+                children: ["+", I]
             })
         })]
     })

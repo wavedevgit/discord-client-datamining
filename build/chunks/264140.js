@@ -111,8 +111,8 @@ var f = n(483270),
     eZ = n(991275),
     e0 = n(59e3),
     e1 = n(377045),
-    e9 = n(402216),
-    e7 = n(746080),
+    e7 = n(402216),
+    e9 = n(746080),
     e6 = n(652215),
     e2 = n(5867),
     e3 = n(806931),
@@ -121,7 +121,7 @@ var f = n(483270),
     e4 = n(957173),
     te = n(516607),
     tt = n(985018),
-    tn = n(638990);
+    tn = n(370808);
 let ti = (0, P.Fe)({
     createPromise: () => n.e("46875").then(n.bind(n, 625846)),
     webpackId: 625846,
@@ -224,7 +224,7 @@ class ts extends s.PureComponent {
         o()(null != s, "Missing user in Channel.openDMContextMenu"), (0, _.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("60770")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("72164")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 user: s,
@@ -237,7 +237,7 @@ class ts extends s.PureComponent {
         let {
             channel: e
         } = this.props;
-        return e?.hasFlag(e7.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, i.jsx)(q.A, {
+        return e?.hasFlag(e9.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, i.jsx)(q.A, {
             channelId: e.id,
             showTrailingDivider: !0
         }) : null
@@ -257,7 +257,7 @@ class ts extends s.PureComponent {
             premiumIndicatorEnabled: t
         } = this.props;
         return e?.type !== e3.lp.STREAM ? null : (0, i.jsx)(W.A, {
-            size: e9.Ay.Sizes.LARGE,
+            size: e7.Ay.Sizes.LARGE,
             participant: e,
             showQuality: !0,
             premiumIndicator: t

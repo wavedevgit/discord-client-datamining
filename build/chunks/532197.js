@@ -1,14 +1,14 @@
 /** chunk id: 532197 params = (module,exports,require) **/
 "use strict";
-s.d(t, {
-    A: () => o
+n.d(t, {
+    A: () => _
 });
-var a = s(627968),
-    r = s(64700),
-    n = s(503698),
-    l = s.n(n),
-    i = s(397927),
-    u = s(262633);
+var a = n(627968),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
+    i = n(397927),
+    o = n(515259);
 let c = {
         UP: "up",
         RIGHT: "right",
@@ -17,11 +17,11 @@ let c = {
     },
     d = {
         [c.UP]: "",
-        [c.RIGHT]: u.pG,
-        [c.DOWN]: u.TR,
-        [c.LEFT]: u.kb
+        [c.RIGHT]: o.pG,
+        [c.DOWN]: o.TR,
+        [c.LEFT]: o.kb
     };
-class A extends r.PureComponent {
+class u extends l.PureComponent {
     static Directions = c;
     render() {
         let {
@@ -31,10 +31,10 @@ class A extends r.PureComponent {
         return (0, a.jsx)(i.z$m, {
             size: "md",
             color: "currentColor",
-            className: l()(t, {
+            className: r()(t, {
                 [d[e]]: !0
             })
         })
     }
 }
-let o = A
+let _ = u

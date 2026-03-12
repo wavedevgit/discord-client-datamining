@@ -1,4 +1,4 @@
 /** chunk id: 231588 params = (module,exports,require) **/
 "use strict";
-var r = n(791553).match(/firefox\/(\d+)/i);
+var r = n(458696).match(/firefox\/(\d+)/i);
 e.exports = !!r && +r[1]
