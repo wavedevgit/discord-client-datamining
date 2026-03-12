@@ -1,45 +1,46 @@
 /** chunk id: 513963 params = (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var l = n(627968),
-    i = n(64700),
-    r = n(732955),
-    a = n(817281),
-    o = n(951829),
-    s = n(985018);
+var i = n(627968),
+    s = n(64700),
+    l = n(732955),
+    r = n(817281),
+    a = n(951829),
+    o = n(985018);
 
-function u(e) {
+function c(e) {
     let {
         type: t,
         onConfirm: n,
-        onClose: u,
+        onClose: c,
         ...d
-    } = e, [c, A] = i.useState(!1), h = i.useCallback(() => {
-        c && a.Ay.updatedUnsyncedSettings({
+    } = e, [u, h] = s.useState(!1), A = s.useCallback(() => {
+        u && r.Ay.updatedUnsyncedSettings({
             disableHideSelfStreamAndVideoConfirmationAlert: !0
-        }), n(), u()
-    }, [n, c, u]), g = t === o.f.STREAM ? s.intl.string(s.t["/lFMWr"]) : s.intl.string(s.t.xzxhZS), f = t === o.f.STREAM ? s.intl.string(s.t.xaOX7d) : s.intl.string(s.t.oU1p9O);
-    return (0, l.jsx)(r.aFV, {
+        }), n(), c()
+    }, [n, u, c]), m = t === a.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), p = t === a.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
+    return (0, i.jsx)(l.aFV, {
         size: "md",
-        actionBarInput: (0, l.jsx)(r.Sc0, {
-            checked: c,
-            onChange: e => A(e),
-            label: s.intl.string(s.t["JdIQ/Y"]),
+        actionBarInput: (0, i.jsx)(l.Sc0, {
+            checked: u,
+            onChange: e => h(e),
+            label: o.intl.string(o.t["JdIQ/Y"]),
             labelType: "secondary"
         }),
         actions: [{
             variant: "secondary",
-            text: s.intl.string(s.t["ETE/oC"]),
-            onClick: u
+            text: o.intl.string(o.t["ETE/oC"]),
+            onClick: c
         }, {
             variant: "primary",
-            text: s.intl.string(s.t.BddRzS),
-            onClick: h
+            text: o.intl.string(o.t.BddRzS),
+            onClick: A
         }],
-        title: g,
-        subtitle: f,
-        onClose: u,
+        title: m,
+        subtitle: p,
+        onClose: c,
         ...d
     })
 }

@@ -33,7 +33,7 @@ let M = (0, u.A)((0, a.A)(function(e) {
         guildId: n.getGuildId?.() ?? null
     }, t), {
         toggleFavoriteItem: M
-    } = (0, h.$X)(N.x.MESSAGES, n, t), p = (0, c.Ay)(n), S = (0, f.A)({
+    } = (0, h.$X)(N.x.MESSAGES, n, t), p = (0, c.A)(n), S = (0, f.A)({
         id: n.id,
         label: y.intl.string(y.t.gFHI3k)
     }), C = (0, A.A)(n), x = (0, E.Ay)(n), T = (0, v.os)("ReportToModChannelContextMenu");

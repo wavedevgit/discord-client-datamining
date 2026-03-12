@@ -142,9 +142,11 @@ let k = s.memo(function(e) {
         }, [t, d, o]), p = null;
         t.type === I.Uo.INCOMING_FRIEND_REQUESTS && null != t.other_user ? p = (0, i.jsx)(y.A, {
             userId: t.other_user.id
-        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user && (p = (0, i.jsx)(y.A, {
+        }) : t.type === I.Uo.INCOMING_GAME_FRIEND_REQUESTS && null != t.other_user ? p = (0, i.jsx)(y.A, {
             userId: t.other_user.id,
             applicationId: t.applicationId
+        }) : (t.type === I.hW.FRIEND_REQUEST_ACCEPTED || t.type === I.hW.GAME_FRIEND_REQUEST_ACCEPTED) && null != t.other_user && (p = (0, i.jsx)(y.R, {
+            userId: t.other_user.id
         }));
         let g = null != t.local_id,
             _ = (0, b.A)({

@@ -90,7 +90,7 @@ function Y(n) {
     } = n, d = t.isGuildStageVoice(), o = (0, l.bG)([p.A], () => d ? p.A.getStageInstanceByChannel(t.id) : void 0, [d, t.id]), u = (0, f.A)(t), g = (0, m.A)(t), x = (0, b.Qs)(t.id), j = (0, v.A)(x?.id, i, t), U = (0, D.A)(t, o), H = (0, h.m)(t), Y = (0, h.y)(t), w = (0, N.A)(t), z = (0, S.A)(t), Q = (0, y.A)(t), R = (0, _.A)(t, i, o), W = (0, B.A)(t, i), F = (0, M.A)(t, i), q = (0, P.A)(t, i.id), K = (0, G.A)(t, i), J = (0, E.A)(t, i), $ = (0, X.A)(t), nn = (0, A.A)({
         id: t.id,
         label: Z.intl.string(Z.t.gFHI3k)
-    }), nt = (0, k.A)(t), ni = (0, c.A)(t), ne = (0, T.A)(t), nl = (0, C.A)(t), nr = (0, L.Ay)(t), na = (0, V.os)("ChannelListVoiceContextMenuNormal"), ns = (0, O.Ay)(t), nd = (0, I.A)();
+    }), nt = (0, k.A)(t), ni = (0, c.A)(t), ne = (0, T.A)(t), nl = (0, C.A)(t), nr = (0, L.A)(t), na = (0, V.os)("ChannelListVoiceContextMenuNormal"), ns = (0, O.Ay)(t), nd = (0, I.A)();
     return (0, e.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",

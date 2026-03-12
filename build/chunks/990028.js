@@ -2,25 +2,25 @@
 t.d(n, {
     A: () => c
 });
-var r = t(627968);
+var i = t(627968);
 t(64700);
-var i = t(311907),
+var r = t(311907),
     l = t(397927),
     a = t(969043),
     d = t(226698),
-    u = t(376708),
-    s = t(985018),
-    o = t(733045);
+    o = t(376708),
+    u = t(985018),
+    s = t(733045);
 
 function c(e) {
     let n = e.isArchivedThread(),
-        t = (0, u.uW)(e),
+        t = (0, o.uW)(e),
         {
             firstMessage: c
-        } = (0, i.bG)([a.A], () => a.A.getMessage(e.id), [e.id]);
-    return !t || n || null == c ? null : (0, r.jsx)(l.Drp, {
+        } = (0, r.bG)([a.A], () => a.A.getMessage(e.id), [e.id]);
+    return !t || n || null == c ? null : (0, i.jsx)(l.Drp, {
         id: "resolve-report",
-        label: s.intl.string(o.default["8yIKem"]),
+        label: u.intl.string(s.default["8yIKem"]),
         action: () => d.A.resolveFlag(e.id)
     })
 }

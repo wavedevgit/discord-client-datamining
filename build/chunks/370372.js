@@ -17,8 +17,8 @@ var r = t(397927),
     f = t(979807),
     v = t(671470),
     b = t(769591),
-    C = t(533957),
-    p = t(886393),
+    p = t(533957),
+    C = t(886393),
     g = t(477190),
     m = t(307623),
     _ = t(317910),
@@ -35,7 +35,7 @@ function S(e) {
     let {
         channel: n,
         onSelect: t
-    } = e, a = (0, x.A)(n), d = (0, p.A)(n), o = (0, h.m)(n), c = (0, h.y)(n), C = (0, A.A)(n), g = (0, f.A)(n), m = (0, v.A)(n), E = (0, O.Ay)(n), y = (0, T.A)(n), N = (0, _.A)(n), S = (0, u.A)({
+    } = e, a = (0, x.A)(n), d = (0, C.A)(n), o = (0, h.m)(n), c = (0, h.y)(n), p = (0, A.A)(n), g = (0, f.A)(n), m = (0, v.A)(n), E = (0, O.A)(n), y = (0, T.A)(n), N = (0, _.A)(n), S = (0, u.A)({
         id: n.id,
         label: R.intl.string(R.t.gFHI3k)
     }), G = (0, s.A)(n), j = (0, I.Ay)(n), X = (0, b.os)("ChannelContextFavoritesMenu");
@@ -54,7 +54,7 @@ function S(e) {
         }), (0, i.jsxs)(r.rXV, {
             children: [E, X ? j : y]
         }), (0, i.jsx)(r.rXV, {
-            children: C
+            children: p
         }), (0, i.jsx)(r.rXV, {
             children: N
         }), (0, i.jsx)(r.rXV, {
@@ -74,7 +74,7 @@ function G(e) {
         channel: n,
         guild: t,
         onSelect: a
-    } = e, d = (0, x.A)(n), o = (0, p.A)(n), c = (0, h.m)(n), A = (0, h.y)(n), f = (0, y.A)(n), v = (0, O.Ay)(n), N = (0, _.A)(n), S = (0, E.A)(n, t), G = (0, C.A)(n, t), j = (0, g.A)(n, t), X = (0, m.A)(n), U = (0, u.A)({
+    } = e, d = (0, x.A)(n), o = (0, C.A)(n), c = (0, h.m)(n), A = (0, h.y)(n), f = (0, y.A)(n), v = (0, O.A)(n), N = (0, _.A)(n), S = (0, E.A)(n, t), G = (0, p.A)(n, t), j = (0, g.A)(n, t), X = (0, m.A)(n), U = (0, u.A)({
         id: n.id,
         label: R.intl.string(R.t.gFHI3k)
     }), M = (0, s.A)(n), w = (0, T.A)(n), L = (0, I.Ay)(n), F = (0, b.os)("ChannelContextMenuNormal");

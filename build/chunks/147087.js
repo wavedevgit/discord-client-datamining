@@ -2,9 +2,9 @@
 t.d(n, {
     b: () => l
 });
-var r = t(311907),
-    i = t(287809);
+var i = t(311907),
+    r = t(287809);
 
 function l() {
-    return (0, r.bG)([i.default], () => i.default.getCurrentUser()?.isStaff() ?? !1)
+    return (0, i.bG)([r.default], () => r.default.getCurrentUser()?.isStaff() ?? !1)
 }

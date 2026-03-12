@@ -57,7 +57,7 @@ function O(n) {
         channel: t,
         guild: e,
         onSelect: a
-    } = n, d = (0, y.A)(t), c = (0, C.Ay)(t), o = (0, f.A)(t), v = (0, h.A)(t), G = (0, g.A)(t), O = (0, b.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, p.A)(t), M = (0, s.A)({
+    } = n, d = (0, y.A)(t), c = (0, C.A)(t), o = (0, f.A)(t), v = (0, h.A)(t), G = (0, g.A)(t), O = (0, b.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, p.A)(t), M = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
     }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), L = (0, x.Ay)(t);

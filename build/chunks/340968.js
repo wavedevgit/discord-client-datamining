@@ -19,8 +19,8 @@ var l = e(397927),
     g = e(475777),
     h = e(995102),
     b = e(288104),
-    y = e(661504),
-    x = e(969128),
+    x = e(661504),
+    y = e(969128),
     N = e(652215),
     C = e(985018);
 let D = (0, a.A)(function(n) {
@@ -29,10 +29,10 @@ let D = (0, a.A)(function(n) {
         guild: e,
         includeTopic: a = !1,
         onSelect: c
-    } = n, D = (0, x.A)(t), v = (0, h.Ay)(t), j = (0, b.A)(t), I = (0, A.A)(t), T = (0, u.A)(t), f = (0, p.A)(t), G = (0, g.A)(t, e), L = (0, o.A)(t, e), M = (0, E.A)(t, e, N.rbe.GUILD_TEXT), O = (0, E.A)(t, e, N.rbe.GUILD_VOICE), U = (0, _.A)(t), X = (0, d.A)({
+    } = n, D = (0, y.A)(t), v = (0, h.A)(t), j = (0, b.A)(t), I = (0, A.A)(t), T = (0, u.A)(t), f = (0, p.A)(t), G = (0, g.A)(t, e), L = (0, o.A)(t, e), M = (0, E.A)(t, e, N.rbe.GUILD_TEXT), O = (0, E.A)(t, e, N.rbe.GUILD_VOICE), U = (0, _.A)(t), X = (0, d.A)({
         id: t.id,
         label: C.intl.string(C.t.gFHI3k)
-    }), H = (0, s.os)("ChannelTitleContextMenu"), P = (0, y.Ay)(t);
+    }), H = (0, s.os)("ChannelTitleContextMenu"), P = (0, x.Ay)(t);
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",

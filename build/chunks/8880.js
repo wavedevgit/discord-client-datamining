@@ -1,64 +1,65 @@
 /** chunk id: 8880 params = (module,exports,require) **/
-i.d(e, {
+"use strict";
+n.d(t, {
     A: () => o
 });
-var n = i(311907),
-    r = i(73153);
+var i = n(311907),
+    s = n(73153);
 let l = {
         speechRate: 1,
         currentMessage: null
     },
-    s = l;
-class a extends n.Ay.DeviceSettingsStore {
+    r = l;
+class a extends i.Ay.DeviceSettingsStore {
     static displayName = "TTSStore";
     static persistKey = "TTSStore";
     static migrations = [];
-    initialize(t) {
-        s = {
+    initialize(e) {
+        r = {
             ...l,
-            ...t ?? null
+            ...e ?? null
         }
     }
-    isSpeakingMessage(t, e) {
+    isSpeakingMessage(e, t) {
         let {
-            currentMessage: i
-        } = s;
-        return null !== i && i.channelId === t && i.messageId === e
+            currentMessage: n
+        } = r;
+        return null !== n && n.channelId === e && n.messageId === t
     }
     get currentMessage() {
-        return s.currentMessage
+        return r.currentMessage
     }
     get speechRate() {
-        return s.speechRate
+        return r.speechRate
     }
     getUserAgnosticState() {
-        return s
+        return r
     }
 }
-let o = new a(r.h, __OVERLAY__ ? {} : {
-    SPEAKING_MESSAGE: function(t) {
+let o = new a(s.h, __OVERLAY__ ? {} : {
+    SPEAKING_MESSAGE: function(e) {
         let {
-            messageId: e,
-            channelId: i
-        } = t;
-        s = {
-            ...s,
+            messageId: t,
+            channelId: n
+        } = e;
+        r = {
+            ...r,
             currentMessage: {
-                messageId: e,
-                channelId: i
+                messageId: t,
+                channelId: n
             }
         }
     },
     STOP_SPEAKING: function() {
-        s = {
-            ...s,
+        r = {
+            ...r,
             currentMessage: null
         }
     },
-    SET_TTS_SPEECH_RATE: function(t) {
-        s = {
-            ...s,
-            speechRate: t.speechRate
+    SET_TTS_SPEECH_RATE: function(e) {
+        r = {
+            ...r,
+            speechRate: e.speechRate
         }
     }
 })

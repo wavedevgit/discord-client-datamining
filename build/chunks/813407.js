@@ -36,7 +36,7 @@ let C = (0, d.A)((0, a.A)(function(e) {
         kind: "CHANNEL",
         channel: n,
         guildId: t.id
-    }, a), T = (0, c.A)(n, t), b = (0, _.A)(n), S = (0, E.Ay)(n), x = (0, g.A)(n), O = (0, N.A)({
+    }, a), T = (0, c.A)(n, t), b = (0, _.A)(n), S = (0, E.A)(n), x = (0, g.A)(n), O = (0, N.A)({
         id: n.id,
         label: D.intl.string(D.t.gFHI3k)
     }), U = (0, s.A)(n), R = (0, y.Ay)(n), L = (0, h.os)("OverlayChannelListTextChannelContextMenu");

@@ -18,9 +18,9 @@ var r = t(311907),
     g = t(661504),
     f = t(304694),
     h = t(671483),
-    y = t(217563),
-    I = t(50268),
-    N = t(769591),
+    I = t(217563),
+    N = t(50268),
+    y = t(769591),
     p = t(446600),
     C = t(914853),
     D = t(708653),
@@ -35,14 +35,14 @@ let M = (0, u.A)((0, s.A)(function(e) {
         widgetType: u
     } = e, o = n.isGuildStageVoice(), _ = (0, r.bG)([p.A], () => o ? p.A.getStageInstanceByChannel(n.id) : void 0, [o, n.id]), M = (0, A.A)(n), S = (0, d.A)(n), {
         toggleFavoriteItem: j
-    } = (0, D.Ay)(C.x.VOICE, n, u), O = (0, E.Ay)(n), U = (0, v.A)(n), G = (0, c.A)(n, t, _), L = (0, b.A)({
+    } = (0, D.Ay)(C.x.VOICE, n, u), O = (0, E.A)(n), U = (0, v.A)(n), G = (0, c.A)(n, t, _), L = (0, b.A)({
         kind: "CHANNEL",
         channel: n,
         guildId: t.id
-    }, u), T = (0, I.A)({
+    }, u), T = (0, N.A)({
         id: n.id,
         label: x.intl.string(x.t.gFHI3k)
-    }), R = (0, f.A)(n), m = (0, h.A)(n, t), k = (0, y.A)(n, t.id), F = (0, N.os)("OverlayChannelListVoiceChannelContextMenu"), H = (0, g.Ay)(n);
+    }), R = (0, f.A)(n), m = (0, h.A)(n, t), k = (0, I.A)(n, t.id), F = (0, y.os)("OverlayChannelListVoiceChannelContextMenu"), H = (0, g.Ay)(n);
     return (0, i.jsxs)(l.W1t, {
         navId: "overlay-channel-context",
         onClose: a.Z_,

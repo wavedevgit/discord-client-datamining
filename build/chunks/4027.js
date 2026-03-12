@@ -1,6 +1,6 @@
 /** chunk id: 4027 params = (module,exports,require) **/
 e.d(t, {
-    default: () => y
+    default: () => G
 });
 var i = e(627968);
 e(64700);
@@ -27,10 +27,10 @@ function v(n) {
     let {
         channel: t,
         onSelect: a
-    } = n, d = t.isOwner(j.default.getId()), o = (0, _.A)(t), x = (0, m.Ay)(t), b = (0, c.A)({
+    } = n, d = t.isOwner(j.default.getId()), o = (0, _.A)(t), x = (0, m.A)(t), b = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), v = (0, s.A)(t), O = (0, h.y)(t), y = (0, A.A)(t), G = (0, f.A)(t), X = d ? (0, i.jsx)(l.Drp, {
+    }), v = (0, s.A)(t), O = (0, h.y)(t), G = (0, A.A)(t), X = (0, f.A)(t), y = d ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: p.intl.string(p.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -52,11 +52,11 @@ function v(n) {
         children: [(0, i.jsx)(l.rXV, {
             children: o
         }), (0, i.jsx)(l.rXV, {
-            children: G
+            children: X
         }), (0, i.jsx)(l.rXV, {
-            children: y
+            children: G
         }), (0, i.jsxs)(l.rXV, {
-            children: [X, (0, i.jsx)(l.Drp, {
+            children: [y, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: p.intl.string(p.t["5Q9+/L"]),
                 action: () => (0, g.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
@@ -78,10 +78,10 @@ function O(n) {
         channel: t,
         selected: a,
         onSelect: d
-    } = n, o = t.isOwner(j.default.getId()), A = (0, _.A)(t), f = (0, m.Ay)(t), b = (0, x.A)(t, a), v = (0, c.A)({
+    } = n, o = t.isOwner(j.default.getId()), A = (0, _.A)(t), f = (0, m.A)(t), b = (0, x.A)(t, a), v = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
-    }), O = (0, s.A)(t), y = (0, h.m)(t), G = (0, h.y)(t), X = o ? (0, i.jsx)(l.Drp, {
+    }), O = (0, s.A)(t), G = (0, h.m)(t), X = (0, h.y)(t), y = o ? (0, i.jsx)(l.Drp, {
         id: "instant-invites",
         label: p.intl.string(p.t.ngRFjZ),
         action: () => (0, l.mMO)(async () => {
@@ -103,9 +103,9 @@ function O(n) {
         children: [(0, i.jsx)(l.rXV, {
             children: A
         }), (0, i.jsx)(l.rXV, {
-            children: y
+            children: G
         }), (0, i.jsxs)(l.rXV, {
-            children: [X, (0, i.jsx)(l.Drp, {
+            children: [y, (0, i.jsx)(l.Drp, {
                 id: "edit-gdm",
                 label: p.intl.string(p.t["5Q9+/L"]),
                 action: () => (0, g.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
@@ -115,13 +115,13 @@ function O(n) {
         }), (0, i.jsx)(l.rXV, {
             children: f
         }), (0, i.jsxs)(l.rXV, {
-            children: [G, b]
+            children: [X, b]
         }), (0, i.jsx)(l.rXV, {
             children: v
         })]
     })
 }
-let y = (0, d.A)((0, a.A)(function(n) {
+let G = (0, d.A)((0, a.A)(function(n) {
     return (0, o.A)() ? (0, i.jsx)(v, {
         ...n
     }) : (0, i.jsx)(O, {

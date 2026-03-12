@@ -26,8 +26,8 @@ var r = t(397927),
     v = t(795144),
     C = t(671470),
     E = t(222311),
-    y = t(803664),
-    T = t(29293),
+    T = t(803664),
+    y = t(29293),
     V = t(509302),
     D = t(497600),
     G = t(773699),
@@ -62,13 +62,13 @@ function B(n) {
     }), A = (0, U.A)({
         user: e,
         context: s
-    }), h = (0, W.A)(e.id), f = (0, F.g)(t.id, "DMUserContextMenu"), g = (0, F.A)(e, f), j = (0, m.Ay)(t), p = (0, b.A)({
+    }), h = (0, W.A)(e.id), f = (0, F.g)(t.id, "DMUserContextMenu"), g = (0, F.A)(e, f), j = (0, m.A)(t), p = (0, b.A)({
         id: e.id,
         label: J.intl.string(J.t["/AXYnE"])
     }), E = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), y = (0, _.A)(t), T = (0, I.y)(t), V = (0, v.A)(t), D = (0, C.A)(t), G = (0, O.A)({
+    }), T = (0, _.A)(t), y = (0, I.y)(t), V = (0, v.A)(t), D = (0, C.A)(t), G = (0, O.A)({
         channel: t
     }), N = t.isManaged(), R = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -79,7 +79,7 @@ function B(n) {
         onSelect: u,
         onInteraction: c,
         children: [(0, i.jsx)(r.rXV, {
-            children: !(R && !(0, x.A)(t.id)) && y
+            children: !(R && !(0, x.A)(t.id)) && T
         }), (0, i.jsx)(r.rXV, {
             children: D
         }), (0, i.jsx)(r.rXV, {
@@ -91,7 +91,7 @@ function B(n) {
         }), (!R || (0, x.A)(t.id)) && (0, i.jsx)(r.rXV, {
             children: d && j
         }), (0, i.jsx)(r.rXV, {
-            children: T
+            children: y
         }), (0, i.jsx)(r.rXV, {
             children: G
         }), (0, i.jsxs)(r.rXV, {
@@ -126,11 +126,11 @@ function K(n) {
         user: e,
         channelId: t.id,
         context: K
-    }), ne = (0, T.A)({
+    }), ne = (0, y.A)({
         user: e
     }), nt = (0, W.A)(e.id), ni = (0, R.A)(t.id, d), nr = (0, M.A)({
         user: e
-    }), nl = (0, u.A)(null, e), nd = (0, L.A)(e.id), na = (0, F.g)(t.id, "DMUserContextMenu"), ns = (0, F.A)(e, na), nu = (0, y.A)({
+    }), nl = (0, u.A)(null, e), nd = (0, L.A)(e.id), na = (0, F.g)(t.id, "DMUserContextMenu"), ns = (0, F.A)(e, na), nu = (0, T.A)({
         user: e
     }), nc = (0, V.A)({
         user: e
@@ -146,19 +146,19 @@ function K(n) {
     }), nj = (0, S.A)({
         user: e,
         location: "DMUserContextMenu"
-    }), nx = (0, m.Ay)(t), n_ = (0, b.A)({
+    }), nx = (0, m.A)(t), n_ = (0, b.A)({
         id: e.id,
         label: J.intl.string(J.t["/AXYnE"])
     }), nm = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), nb = (0, _.A)(t), np = (0, h.A)(e.id), nI = (0, A.A)(t.id), nv = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), ny = (0, G.A)({
+    }), nb = (0, _.A)(t), np = (0, h.A)(e.id), nI = (0, A.A)(t.id), nv = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), nT = (0, G.A)({
         commandType: s.kc.USER,
         commandTargetId: e.id,
         channel: t,
         guildId: void 0,
         onHeightUpdate: H
-    }), nT = (0, I.m)(t), nV = (0, I.y)(t), nD = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
+    }), ny = (0, I.m)(t), nV = (0, I.y)(t), nD = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
         channel: t
     }), nU = t.isManaged(), nR = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -171,7 +171,7 @@ function K(n) {
         children: [(0, i.jsx)(r.rXV, {
             children: !(nR && !(0, x.A)(t.id)) && nb
         }), (0, i.jsxs)(r.rXV, {
-            children: [nT, nG]
+            children: [ny, nG]
         }), (0, i.jsx)(r.rXV, {
             children: nD
         }), (0, i.jsx)(r.rXV, {
@@ -186,7 +186,7 @@ function K(n) {
             }), (0, i.jsx)(r.rXV, {
                 children: w && nl
             }), (0, i.jsxs)(r.rXV, {
-                children: [ny, c && nC, c && nA, w && nh, c && nf, w && nr, nu, nc, no, w && nj, w && ng]
+                children: [nT, c && nC, c && nA, w && nh, c && nf, w && nr, nu, nc, no, w && nj, w && ng]
             }), (0, i.jsx)(r.rXV, {
                 children: a && nx
             }), p && (0, i.jsxs)(r.rXV, {

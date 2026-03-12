@@ -30,7 +30,7 @@ let y = (0, d.A)((0, a.A)(function(e) {
         kind: "CHANNEL",
         channel: t,
         guildId: t.getGuildId?.() ?? null
-    }, I), S = (0, o.A)(t), _ = (0, c.Ay)(t), {
+    }, I), S = (0, o.A)(t), _ = (0, c.A)(t), {
         toggleFavoriteItem: b
     } = (0, h.Ay)(g.x.MESSAGES, t, I), x = (0, s.A)(t, a), p = (0, A.A)({
         id: t.id,

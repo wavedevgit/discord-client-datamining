@@ -1,6 +1,6 @@
 /** chunk id: 565846 params = (module,exports,require) **/
 i.d(n, {
-    A: () => m
+    A: () => b
 });
 var e = i(627968);
 i(64700);
@@ -17,25 +17,25 @@ var l = i(311907),
 i(253913);
 var h = i(985018);
 
-function m(t) {
+function b(t) {
     let n = (0, l.bG)([g.A], () => g.A.getChannel(t), [t]),
         i = (0, c.NI)(n),
-        m = (0, l.bG)([g.A], () => g.A.getChannel(n?.parent_id), [n]),
-        b = (0, u.OT)(m),
+        b = (0, l.bG)([g.A], () => g.A.getChannel(n?.parent_id), [n]),
+        m = (0, u.OT)(b),
         p = (0, u.kt)(n),
         f = p.length >= 5,
         v = (0, c.Id)(n),
         j = (0, l.bG)([d.Ay], () => {
             let t = new Set;
-            for (let n of b ?? [])
+            for (let n of m ?? [])
                 if (null != n.emojiId) {
                     let i = d.Ay.getUsableCustomEmojiById(n.emojiId);
                     i?.animated && t.add(n.emojiId)
                 } return t
-        }, [b]);
+        }, [m]);
     if (null == n) return (0, a.Z_)(), null;
-    if (!i || __OVERLAY__ || !n.isForumPost() || b?.length === 0 || !v || n.isModeratorReportChannel()) return null;
-    let _ = b?.map(t => {
+    if (!i || __OVERLAY__ || !n.isForumPost() || m?.length === 0 || !v || n.isModeratorReportChannel()) return null;
+    let x = m?.map(t => {
         let i = p.includes(t),
             l = null != t.emojiId || null != t.emojiName;
         return (0, e.jsx)(r.sLh, {
@@ -75,6 +75,6 @@ function m(t) {
     return (0, e.jsx)(r.Drp, {
         id: "edit-tags",
         label: h.intl.string(h.t["436ZFw"]),
-        children: _
+        children: x
     })
 }

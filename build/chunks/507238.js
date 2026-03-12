@@ -39,7 +39,7 @@ function E(e, n) {
         action: () => a.A.updateGuildNotificationSettings(t, {
             muted: !0
         }, d.fd.Muted),
-        children: (0, c.gv)().map(e => {
+        children: (0, c.g)().map(e => {
             let {
                 value: l,
                 label: s
