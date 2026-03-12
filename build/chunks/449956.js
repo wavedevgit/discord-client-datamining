@@ -1,6 +1,6 @@
 /** chunk id: 449956 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var i = n(627968),
     s = n(311907),
@@ -13,9 +13,9 @@ var i = n(627968),
     u = n(948641),
     _ = n(652215),
     g = n(731854),
-    A = n(985018);
+    m = n(985018);
 
-function m() {
+function A() {
     let e = (0, s.bG)([d.Ay], () => d.Ay.isVideoAvailable()),
         {
             id: t
@@ -24,11 +24,11 @@ function m() {
             analyticsLocations: n
         } = (0, l.Ay)();
     return (0, i.jsx)(a.U, {
-        label: A.intl.string(A.t.FsQ3OR),
+        label: m.intl.string(m.t.FsQ3OR),
         deviceType: g.oh.VIDEO_INPUT,
         location: "UserSettingsCameraSelect",
         isDisabled: !e,
-        helperText: (0, o.p)() ? A.intl.format(A.t.aJYgRt, {
+        helperText: (0, o.p)() ? m.intl.format(m.t.aJYgRt, {
             onCameraSettingsClick: () => {
                 u.A.setState({
                     previewEnabled: !1

@@ -1,6 +1,6 @@
 /** chunk id: 364558 params = (module,exports,require) **/
 n.d(t, {
-    u: () => m
+    u: () => A
 });
 var i = n(627968),
     s = n(397927),
@@ -13,10 +13,10 @@ var i = n(627968),
     u = n(518582),
     _ = n(985018),
     g = n(817577);
-let A = () => {
+let m = () => {
         (0, l.A)(r.A.getArticleURL(c.MVz.PREMIUM_GROUP_ABOUT))
     },
-    m = () => ({
+    A = () => ({
         name: o.U.PREMIUM_GROUP,
         title: _.intl.string(u.default.YkvksF),
         subtitle: _.intl.formatToPlainString(u.default.JlyGQj, {
@@ -24,7 +24,7 @@ let A = () => {
             premiumGroupProductName: (0, d.DP)()
         }),
         description: (0, i.jsx)(a.A, {
-            onClick: A,
+            onClick: m,
             children: _.intl.string(u.default.yYyGJH)
         }),
         descriptionCta: _.intl.string(_.t.jVcuVY),

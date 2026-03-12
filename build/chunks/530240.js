@@ -1,6 +1,6 @@
 /** chunk id: 530240 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O,
+    A: () => j,
     N: () => v
 }), n(321073);
 var i = n(627968),
@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(545934),
     _ = n(71393),
     g = n(473145),
-    A = n(927578),
-    m = n(661191),
+    m = n(927578),
+    A = n(661191),
     h = n(101135),
     p = n(708030),
     x = n(358172),
@@ -24,7 +24,7 @@ var i = n(627968),
     S = n(985018),
     C = n(904004);
 
-function I(e) {
+function f(e) {
     let {
         guildTier: t,
         guildBoostSlot: n,
@@ -39,7 +39,7 @@ function I(e) {
                 date: e
             })
         }
-        let e = null != n.premiumGuildSubscription ? m.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
+        let e = null != n.premiumGuildSubscription ? A.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
         return S.intl.formatToPlainString(S.t.lY2Bur, {
             date: new Date(e)
         })
@@ -95,15 +95,15 @@ function I(e) {
     }))
 }
 
-function f(e) {
+function N(e) {
     let {
         guildTier: t,
         guildBoostSlot: n,
         premiumSubscription: l,
         hasCancelableGuildBoostSlot: u,
         showAltText: _,
-        isLastGuildBoostSlot: A
-    } = e, m = (0, a.bG)([o.A], () => o.A.useReducedMotion), x = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), E = s.useMemo(() => null != x && x > new Date, [x]), T = (0, g.I5)(n), f = (0, d.A)(), N = s.useRef(null);
+        isLastGuildBoostSlot: m
+    } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), x = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), E = s.useMemo(() => null != x && x > new Date, [x]), T = (0, g.I5)(n), N = (0, d.A)(), b = s.useRef(null);
     return (0, i.jsxs)("div", {
         className: C.PW,
         children: [(0, i.jsxs)("div", {
@@ -111,22 +111,22 @@ function f(e) {
             children: [(0, i.jsx)(p.A, {
                 isCanceled: T,
                 hasCooldown: E,
-                useReducedMotion: m
+                useReducedMotion: A
             }), (0, i.jsx)("div", {
                 className: C.vh,
                 children: null != x && E && !T ? (0, i.jsx)(h.A, {
                     className: C.xm,
                     cooldown: x.getTime()
-                }) : (0, i.jsx)(I, {
+                }) : (0, i.jsx)(f, {
                     guildTier: t,
                     guildBoostSlot: n,
                     showAltText: _,
                     isCanceled: T,
                     premiumSubscription: l,
-                    fractionalPremiumInfo: f
+                    fractionalPremiumInfo: N
                 })
             }), (0, i.jsx)(r.YNO, {
-                targetElementRef: N,
+                targetElementRef: b,
                 renderPopout: function(e) {
                     let {
                         closePopout: t
@@ -136,14 +136,14 @@ function f(e) {
                         guildBoostSlot: n,
                         premiumSubscription: l,
                         hasCancelableGuildBoostSlot: u,
-                        fractionalState: f.fractionalState
+                        fractionalState: N.fractionalState
                     })
                 },
                 position: "right",
                 align: "center",
                 children: e => (0, i.jsx)(r.DUT, {
                     ...e,
-                    innerRef: N,
+                    innerRef: b,
                     "aria-label": S.intl.string(S.t.PdRCRg),
                     className: C.oU,
                     children: (0, i.jsx)(r.FHP, {
@@ -152,13 +152,13 @@ function f(e) {
                     })
                 })
             })]
-        }), !A && (0, i.jsx)("div", {
+        }), !m && (0, i.jsx)("div", {
             className: C.eX
         })]
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         guildId: t,
         guildBoostSlotRecords: n,
@@ -171,7 +171,7 @@ function N(e) {
         children: [(0, i.jsx)(x.A, {
             guildId: t,
             boostingVariant: !1
-        }), n.map((e, t) => (0, i.jsx)(f, {
+        }), n.map((e, t) => (0, i.jsx)(N, {
             guildTier: o?.premiumTier,
             guildBoostSlot: e,
             premiumSubscription: s,
@@ -182,17 +182,17 @@ function N(e) {
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         guildId: t,
         appliedGuildBoosts: n,
         premiumSubscription: s
-    } = e, l = (0, a.bG)([_.A], () => _.A.getGuild(t), [t]), r = m.default.fromTimestamp(Date.now());
+    } = e, l = (0, a.bG)([_.A], () => _.A.getGuild(t), [t]), r = A.default.fromTimestamp(Date.now());
     if (n.forEach(e => {
-            (null == r || 0 > m.default.compare(e.id, r)) && (r = e.id)
+            (null == r || 0 > A.default.compare(e.id, r)) && (r = e.id)
         }), null == r) return null;
     let o = u.A.createFromServer({
-        id: m.default.fromTimestamp(Date.now()),
+        id: A.default.fromTimestamp(Date.now()),
         subscription_id: s.id,
         canceled: !1,
         premium_guild_subscription: {
@@ -206,7 +206,7 @@ function b(e) {
         children: [(0, i.jsx)(x.A, {
             guildId: t,
             boostingVariant: !1
-        }), n.map((e, t) => (0, i.jsx)(f, {
+        }), n.map((e, t) => (0, i.jsx)(N, {
             guildTier: l?.premiumTier,
             guildBoostSlot: o,
             premiumSubscription: s,
@@ -232,7 +232,7 @@ function v(e) {
         className: C.iE,
         children: [(0, i.jsx)("div", {
             className: C.kL,
-            children: m.default.keys(l).map(e => (0, i.jsx)(b, {
+            children: A.default.keys(l).map(e => (0, i.jsx)(I, {
                 guildId: e,
                 premiumSubscription: n,
                 appliedGuildBoosts: l[e]
@@ -243,7 +243,7 @@ function v(e) {
     })
 }
 
-function O(e) {
+function j(e) {
     let {
         guildBoostSlots: t,
         premiumSubscription: n
@@ -274,12 +274,12 @@ function O(e) {
         }
     }, [t]);
     if (null == n || 0 === Object.keys(r).length) return null;
-    let d = o > A.Ay.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
+    let d = o > m.Ay.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
     return (0, i.jsxs)("div", {
         className: C.iE,
         children: [(0, i.jsx)("div", {
             className: C.kL,
-            children: m.default.keys(r).map(e => (0, i.jsx)(N, {
+            children: A.default.keys(r).map(e => (0, i.jsx)(b, {
                 guildId: e,
                 guildBoostSlotRecords: r[e],
                 premiumSubscription: n,

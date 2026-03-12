@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(975571),
     _ = n(942405),
     g = n(652215),
-    A = n(985018),
-    m = n(802871);
+    m = n(985018),
+    A = n(802871);
 
 function h(e) {
     let {
@@ -23,19 +23,19 @@ function h(e) {
         application: n
     } = e;
     return null == t || null == n ? (0, i.jsx)("div", {
-        className: m.zc,
+        className: A.zc,
         children: (0, i.jsx)(r.EpV, {
             size: "sm",
             color: r.LU0.colors.TEXT_FEEDBACK_WARNING
         })
     }) : (0, i.jsxs)("div", {
-        className: m.nt,
+        className: A.nt,
         children: [(0, i.jsx)(d.A, {
             game: n,
             pid: t.pid,
             size: d.M.MEDIUM
         }), (0, i.jsx)("div", {
-            className: m.Am,
+            className: A.Am,
             children: (0, i.jsx)(r.EpV, {
                 size: "sm",
                 color: r.LU0.colors.TEXT_FEEDBACK_WARNING
@@ -70,27 +70,27 @@ function x(e) {
         runningGameApplication: o
     } = p(n);
     return s ? (0, i.jsxs)("div", {
-        className: l()(m.kL, t),
+        className: l()(A.kL, t),
         children: [(0, i.jsx)(h, {
             game: a,
             application: o
         }), (0, i.jsxs)("div", {
-            className: m.FS,
+            className: A.FS,
             children: [(0, i.jsx)(r.Text, {
                 variant: "text-sm/medium",
                 color: "text-strong",
-                children: "voice" === n ? A.intl.string(A.t.vxfv7v) : null != a ? A.intl.string(A.t.fAYU2G) : A.intl.string(A.t["9V4X/c"])
+                children: "voice" === n ? m.intl.string(m.t.vxfv7v) : null != a ? m.intl.string(m.t.fAYU2G) : m.intl.string(m.t["9V4X/c"])
             }), (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-muted",
-                children: A.intl.format(A.t["/y6htt"], {
+                children: m.intl.format(m.t["/y6htt"], {
                     helpCenterLink: u.A.getArticleURL(g.MVz.SYSTEM_SERVICE)
                 })
             })]
         }), (0, i.jsx)(r.Button, {
             variant: "secondary",
             size: "sm",
-            text: A.intl.string(A.t["1iI46O"]),
+            text: m.intl.string(m.t["1iI46O"]),
             onClick: function() {
                 (0, _.sL)(n + (null != a ? "-with-game" : "-no-game"))
             }

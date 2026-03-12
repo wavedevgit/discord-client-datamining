@@ -13,12 +13,12 @@ var i = n(64700),
     u = n(473146),
     _ = n(709747),
     g = n(985018);
-let A = (0, a.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
+let m = (0, a.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
         buildLayout: () => [d.V, u.E, c.R, _.Y]
     }),
-    m = (0, a.t_)(o.X.GIFT_PANEL, {
+    A = (0, a.t_)(o.X.GIFT_PANEL, {
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
-        buildLayout: () => [A]
+        buildLayout: () => [m]
     }),
     h = (0, a.i4)(o.X.GIFT_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["jcSP+g"]),
@@ -29,5 +29,5 @@ let A = (0, a.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
                 useCount: () => (0, l.IO)().length
             }), [])
         },
-        buildLayout: () => [m]
+        buildLayout: () => [A]
     })

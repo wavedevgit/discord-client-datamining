@@ -1,8 +1,8 @@
 /** chunk id: 599669 params = (module,exports,require) **/
 n.d(t, {
-    Ak: () => $,
-    pc: () => Q,
-    zT: () => F
+    Ak: () => F,
+    pc: () => X,
+    zT: () => J
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -21,34 +21,33 @@ var i = n(627968),
     x = n(69882),
     S = n(596034),
     f = n(241989),
-    A = n(263063),
-    g = n(156312),
-    h = n(534479),
-    P = n(908419),
-    T = n(340034),
-    b = n(888751),
-    j = n(216641),
-    E = n(543767),
-    N = n(874638),
-    U = n(735164),
-    C = n(778307),
-    R = n(692440),
-    _ = n(71393),
-    D = n(351906),
-    L = n(615405),
-    w = n(295405),
-    M = n(97352),
-    O = n(166403),
-    G = n(927578),
-    k = n(580630),
-    B = n(652215),
-    V = n(788868),
-    Y = n(818348),
-    W = n(985018),
-    q = n(523376),
-    K = n(272360);
+    A = n(156312),
+    g = n(534479),
+    h = n(908419),
+    P = n(340034),
+    T = n(888751),
+    b = n(216641),
+    j = n(543767),
+    E = n(874638),
+    N = n(735164),
+    U = n(778307),
+    C = n(692440),
+    R = n(71393),
+    _ = n(351906),
+    D = n(615405),
+    L = n(295405),
+    w = n(97352),
+    M = n(166403),
+    O = n(927578),
+    G = n(580630),
+    k = n(652215),
+    B = n(788868),
+    V = n(818348),
+    Y = n(985018),
+    W = n(523376),
+    q = n(272360);
 
-function H(e) {
+function K(e) {
     let {
         hasLegalTermsFlash: t,
         legalTermsNodeRef: n,
@@ -66,11 +65,11 @@ function H(e) {
         startDate: x
     } = e, {
         immediateDelivery: f
-    } = (0, P.U)();
+    } = (0, h.U)();
     return p ? (0, i.jsx)(S._, {
         variant: {
             type: S.I.Subscription,
-            purchaseButtonText: W.intl.string(W.t.eUEeCt),
+            purchaseButtonText: Y.intl.string(Y.t.eUEeCt),
             totalDue: v,
             renewalPrice: y,
             currency: I,
@@ -80,7 +79,7 @@ function H(e) {
         },
         paymentSourceType: d,
         immediateDelivery: f
-    }) : (0, i.jsx)(C.A, {
+    }) : (0, i.jsx)(U.A, {
         isActive: t,
         ref: n,
         children: null != a && (0, i.jsx)(m.A, {
@@ -91,7 +90,7 @@ function H(e) {
                 paymentSourceType: d,
                 proratedAmount: s,
                 basePrice: a,
-                productLine: B.EZt.BOOST
+                productLine: k.EZt.BOOST
             }),
             showPricingLink: u,
             showWithdrawalWaiver: c,
@@ -100,7 +99,7 @@ function H(e) {
     })
 }
 
-function J(e) {
+function H(e) {
     let {
         paymentSources: t,
         paymentSourceId: n,
@@ -108,8 +107,8 @@ function J(e) {
         onPaymentSourceChange: l,
         onPaymentSourceAdd: a,
         shouldUseUnifiedCheckoutUI: s = !1
-    } = e, c = (0, u.bG)([D.A], () => D.A.hidePersonalInformation), o = (0, u.bG)([w.A], () => null != r ? w.A.getPaymentSource(r) : null), m = {
-        label: W.intl.string(W.t["mmDvV+"]),
+    } = e, c = (0, u.bG)([_.A], () => _.A.hidePersonalInformation), o = (0, u.bG)([L.A], () => null != r ? L.A.getPaymentSource(r) : null), m = {
+        label: Y.intl.string(Y.t["mmDvV+"]),
         selectedPaymentSourceId: n,
         hidePersonalInformation: c,
         shouldUseUnifiedCheckoutUI: s
@@ -117,7 +116,7 @@ function J(e) {
         ...m,
         paymentSources: null != o ? [o] : [],
         selectedPaymentSourceId: o?.id,
-        tooltipText: W.intl.string(W.t.XiuuV9),
+        tooltipText: Y.intl.string(Y.t.XiuuV9),
         dropdownLoading: null == o,
         disabled: !0
     } : {
@@ -131,13 +130,13 @@ function J(e) {
     })
 }
 
-function F(e) {
-    return W.intl.format(W.t.IeaYqg, {
+function J(e) {
+    return Y.intl.format(Y.t.IeaYqg, {
         endDate: e
     })
 }
 
-function $(e) {
+function F(e) {
     let {
         text: t,
         className: n
@@ -145,25 +144,25 @@ function $(e) {
     return (0, i.jsxs)("div", {
         className: n,
         children: [(0, i.jsx)("div", {
-            className: K.bU
+            className: q.bU
         }), (0, i.jsx)(c.Text, {
             variant: "text-sm/normal",
-            className: K.b7,
+            className: q.b7,
             children: t
         }), (0, i.jsx)("div", {
-            className: K.bU
+            className: q.bU
         })]
     })
 }
 
-function z(e) {
+function $(e) {
     let {
         notice: t
     } = e;
-    return "reverseTrial" === t.type ? (0, i.jsx)($, {
+    return "reverseTrial" === t.type ? (0, i.jsx)(F, {
         text: t.text,
-        className: K.jk
-    }) : (0, i.jsx)(R.wP, {
+        className: q.jk
+    }) : (0, i.jsx)(C.wP, {
         proratedInvoice: t.proratedInvoicePreview,
         renewalInvoice: t.renewalInvoicePreview
     })
@@ -193,9 +192,9 @@ function Z(e) {
             proratedInvoicePreview: c
         } = e;
         return {
-            label: W.intl.formatToPlainString(W.t.a3cAOg, {
+            label: Y.intl.formatToPlainString(Y.t.a3cAOg, {
                 numGuildSubscriptions: t,
-                planName: (0, G.Mn)(n.id, !1, i)
+                planName: (0, O.Mn)(n.id, !1, i)
             }),
             value: i ? r : l,
             subscriptionDiscount: a,
@@ -208,52 +207,52 @@ function Z(e) {
     })(e), m = [];
     if (0 !== l && m.push({
             id: "base-plan-adjustment",
-            label: W.intl.formatToPlainString(W.t.ZSVged, {
-                planName: (0, G.RH)(a[0].subscriptionPlanId)
+            label: Y.intl.formatToPlainString(Y.t.ZSVged, {
+                planName: (0, O.RH)(a[0].subscriptionPlanId)
             }),
-            tooltip: W.intl.string(W.t.JmwQJM),
+            tooltip: Y.intl.string(Y.t.JmwQJM),
             amount: l
         }), 0 !== s && m.push({
             id: "guild-boosting-adjustment",
-            label: W.intl.string(W.t["+as5ZZ"]),
-            tooltip: W.intl.string(W.t.JmwQJM),
+            label: Y.intl.string(Y.t["+as5ZZ"]),
+            tooltip: Y.intl.string(Y.t.JmwQJM),
             amount: s
         }), c) {
         let {
             lineItems: e,
             hasSubscriptionCredit: t,
             currency: n
-        } = (0, b.EA)({
+        } = (0, T.EA)({
             id: "main-line-item",
             amount: r,
             ...d
         }), l = [...e, ...m];
-        return (0, i.jsx)(T.ID, {
-            label: W.intl.string(q.default.eoXh7B),
+        return (0, i.jsx)(P.ID, {
+            label: Y.intl.string(W.default.eoXh7B),
             lineItems: l,
             currency: n,
             hasSubscriptionCredit: t
         })
     }
-    return (0, i.jsxs)(U.Yx, {
-        children: [(0, i.jsx)(U.Xd, {
-            children: W.intl.string(W.t.CWIwms)
-        }), (0, i.jsx)(U.f0, {
+    return (0, i.jsxs)(N.Yx, {
+        children: [(0, i.jsx)(N.Xd, {
+            children: Y.intl.string(Y.t.CWIwms)
+        }), (0, i.jsx)(N.f0, {
             ...d
-        }), m.map(e => (0, i.jsx)(U.oR, {
-            label: (0, i.jsx)(R.sw, {
+        }), m.map(e => (0, i.jsx)(N.oR, {
+            label: (0, i.jsx)(C.sw, {
                 label: e.label,
                 tooltipText: e.tooltip
             }),
-            value: (0, k.$g)(e.amount, u.currency)
-        }, e.id)), (0, i.jsx)(U.pK, {}), (0, i.jsx)(U.Sd, {
-            label: W.intl.format(u.taxInclusive ? t ? W.t.BqdxQt : W.t.XH4raN : W.t.RUI48E, {}),
+            value: (0, G.$g)(e.amount, u.currency)
+        }, e.id)), (0, i.jsx)(N.pK, {}), (0, i.jsx)(N.Sd, {
+            label: Y.intl.format(u.taxInclusive ? t ? Y.t.BqdxQt : Y.t.XH4raN : Y.t.RUI48E, {}),
             value: n
         }), o]
     })
 }
 
-function X(e) {
+function z(e) {
     let {
         premiumSubscription: t,
         proratedInvoicePreview: n,
@@ -263,7 +262,7 @@ function X(e) {
         priceOptions: s,
         shouldUseUnifiedCheckoutUI: u
     } = e;
-    return null != t ? (0, i.jsx)(R.m0, {
+    return null != t ? (0, i.jsx)(C.m0, {
         premiumSubscription: t,
         proratedInvoice: n,
         renewalInvoice: r,
@@ -272,7 +271,7 @@ function X(e) {
         isPrepaidPaymentSource: l,
         isTrial: a,
         shouldUseUnifiedCheckoutUI: u
-    }) : (0, i.jsx)(R.m0, {
+    }) : (0, i.jsx)(C.m0, {
         renewalInvoice: r,
         priceOptions: s,
         isPrepaidPaymentSource: l,
@@ -281,7 +280,7 @@ function X(e) {
     })
 }
 
-function Q(e) {
+function X(e) {
     let {
         guildId: t,
         paymentSources: n,
@@ -290,14 +289,14 @@ function Q(e) {
         premiumSubscriptionPaymentSourceId: d,
         premiumSubscriptionPlan: m,
         newAdditionalPlans: S,
-        onPaymentSourceChange: P,
-        onPaymentSourceAdd: T,
-        onPurchaseTermsChange: b,
-        legalTermsNodeRef: U,
-        hasLegalTermsFlash: C
-    } = e, D = (0, I.D7)({
+        onPaymentSourceChange: h,
+        onPaymentSourceAdd: P,
+        onPurchaseTermsChange: T,
+        legalTermsNodeRef: N,
+        hasLegalTermsFlash: U
+    } = e, _ = (0, I.D7)({
         location: "GuildBoostingReview"
-    }), w = function(e) {
+    }), L = function(e) {
         let t, {
                 guildId: n,
                 priceOptions: i,
@@ -305,37 +304,37 @@ function Q(e) {
                 premiumSubscriptionPlan: s,
                 newAdditionalPlans: c
             } = e,
-            o = (0, u.bG)([_.A], () => _.A.getGuild(n), [n]);
+            o = (0, u.bG)([R.A], () => R.A.getGuild(n), [n]);
         a()(null != o, "Missing guild");
         let d = s.interval,
             m = s.intervalCount,
-            p = (0, u.bG)([M.A], () => M.A.getForSkuAndInterval((0, G.mH)(V.pe.GUILD), d, m));
+            p = (0, u.bG)([w.A], () => w.A.getForSkuAndInterval((0, O.mH)(B.pe.GUILD), d, m));
         a()(null != p, "Missing guildBoostingSubscriptionPlan");
-        let I = (0, G.J$)(i.paymentSourceId),
-            x = (0, u.bG)([O.A], () => O.A.inReverseTrial()),
+        let I = (0, O.J$)(i.paymentSourceId),
+            x = (0, u.bG)([M.A], () => M.A.inReverseTrial()),
             {
                 setInvoicePreview: S
-            } = (0, g.P5)(),
+            } = (0, A.P5)(),
             f = i.paymentSourceId;
-        t = null != l ? (0, G.Om)(l, c[0].quantity, c[0].planId) : c;
+        t = null != l ? (0, O.Om)(l, c[0].quantity, c[0].planId) : c;
         let {
-            analyticsLocations: A
-        } = (0, v.Ay)(), [h] = (0, E.Kq)({
+            analyticsLocations: g
+        } = (0, v.Ay)(), [h] = (0, j.Kq)({
             subscriptionId: l?.id,
             items: t,
             renewal: !1,
             applyEntitlements: !0,
             paymentSourceId: f,
             currency: i.currency,
-            analyticsLocations: A,
+            analyticsLocations: g,
             analyticsLocation: y.A.GUILD_BOOSTING_REVIEW_PRORATED
-        }), [P] = (0, E.Kq)({
+        }), [P] = (0, j.Kq)({
             subscriptionId: l?.id,
             items: t,
             renewal: !0,
             paymentSourceId: f,
             currency: i.currency,
-            analyticsLocations: A,
+            analyticsLocations: g,
             analyticsLocation: y.A.GUILD_BOOSTING_REVIEW_RENEWAL
         });
         return r.useEffect(() => {
@@ -356,32 +355,32 @@ function Q(e) {
         premiumSubscriptionPlan: m,
         newAdditionalPlans: S
     }), {
-        guild: B,
-        paymentSourceId: $,
-        isPrepaid: Q,
-        isReverseTrial: ee,
-        proratedInvoicePreview: et,
-        renewalInvoicePreview: en
-    } = w;
-    if (null == et || null == en) return D ? (0, i.jsx)(x.Ed, {}) : (0, i.jsx)(h.A, {});
-    let ei = (0, i.jsx)(X, {
+        guild: k,
+        paymentSourceId: F,
+        isPrepaid: X,
+        isReverseTrial: Q,
+        proratedInvoicePreview: ee,
+        renewalInvoicePreview: et
+    } = L;
+    if (null == ee || null == et) return _ ? (0, i.jsx)(x.Ed, {}) : (0, i.jsx)(g.A, {});
+    let en = (0, i.jsx)(z, {
             premiumSubscription: o,
-            proratedInvoicePreview: et,
-            renewalInvoicePreview: en,
-            isPrepaid: Q,
-            isReverseTrial: ee,
+            proratedInvoicePreview: ee,
+            renewalInvoicePreview: et,
+            isPrepaid: X,
+            isReverseTrial: Q,
             priceOptions: l,
-            shouldUseUnifiedCheckoutUI: D
+            shouldUseUnifiedCheckoutUI: _
         }),
-        er = (0, i.jsx)(J, {
+        ei = (0, i.jsx)(H, {
             paymentSources: n,
-            paymentSourceId: $,
+            paymentSourceId: F,
             premiumSubscriptionPaymentSourceId: d,
-            onPaymentSourceChange: P,
-            onPaymentSourceAdd: T,
-            shouldUseUnifiedCheckoutUI: D
+            onPaymentSourceChange: h,
+            onPaymentSourceAdd: P,
+            shouldUseUnifiedCheckoutUI: _
         }),
-        el = function(e) {
+        er = function(e) {
             let {
                 hasLegalTermsFlash: t,
                 legalTermsNodeRef: n,
@@ -392,12 +391,12 @@ function Q(e) {
                 paymentSources: u,
                 paymentSourceId: c,
                 shouldUseUnifiedCheckoutUI: o
-            } = e, d = (0, j.g)(u, c), m = {
+            } = e, d = (0, b.g)(u, c), m = {
                 amount: l.subtotal,
                 currency: l.currency,
                 tax: l.tax,
                 taxInclusive: !1
-            }, p = s.M.EEA_COUNTRIES.has(L.A.ipCountryCodeWithFallback);
+            }, p = s.M.EEA_COUNTRIES.has(D.A.ipCountryCodeWithFallback);
             return {
                 shouldUseUnifiedCheckoutUI: o,
                 hasLegalTermsFlash: t,
@@ -406,7 +405,7 @@ function Q(e) {
                 premiumSubscriptionPlan: r,
                 basePrice: m,
                 proratedAmount: a.total,
-                showPricingLink: a.currency !== Y.Yr.USD,
+                showPricingLink: a.currency !== V.Yr.USD,
                 showWithdrawalWaiver: p,
                 paymentSourceType: d,
                 totalDue: a.total,
@@ -415,20 +414,20 @@ function Q(e) {
                 startDate: l.subscriptionPeriodEnd
             }
         }({
-            hasLegalTermsFlash: C,
-            legalTermsNodeRef: U,
-            onPurchaseTermsChange: b,
+            hasLegalTermsFlash: U,
+            legalTermsNodeRef: N,
+            onPurchaseTermsChange: T,
             premiumSubscriptionPlan: m,
-            renewalInvoicePreview: en,
-            proratedInvoicePreview: et,
+            renewalInvoicePreview: et,
+            proratedInvoicePreview: ee,
             paymentSources: n,
-            paymentSourceId: $,
-            shouldUseUnifiedCheckoutUI: D
+            paymentSourceId: F,
+            shouldUseUnifiedCheckoutUI: _
         }),
-        ea = (0, i.jsx)(H, {
-            ...el
+        el = (0, i.jsx)(K, {
+            ...er
         }),
-        es = function(e) {
+        ea = function(e) {
             let {
                 premiumSubscription: t,
                 premiumSubscriptionPlan: n,
@@ -440,16 +439,16 @@ function Q(e) {
                 guildBoostingSubscriptionPlan: u,
                 isPrepaid: c,
                 isReverseTrial: o
-            } = s, d = n.interval, m = n.intervalCount, y = e => (0, N.Z)(i.invoiceItems).find(t => V.pW.has(t.subscriptionPlanId) && e(t)), v = y(e => e.amount >= 0);
+            } = s, d = n.interval, m = n.intervalCount, y = e => (0, E.Z)(i.invoiceItems).find(t => B.pW.has(t.subscriptionPlanId) && e(t)), v = y(e => e.amount >= 0);
             a()(null != v, "Missing guild boosting invoice item");
             let I = y(e => e.amount < 0),
                 x = null != I ? v.quantity - I.quantity : v.quantity,
-                S = i.invoiceItems.filter(e => (0, G.xq)(e.subscriptionPlanId)),
+                S = i.invoiceItems.filter(e => (0, O.xq)(e.subscriptionPlanId)),
                 f = S.reduce((e, t) => e + t.amount, 0),
-                A = (0, E.sL)(v) * x,
-                g = (0, k.$g)(A, i.currency),
-                h = (0, k.CE)(g, d, m),
-                P = (0, k.$g)(i.total, i.currency) + (i.currency !== Y.Yr.USD ? "*" : ""),
+                A = (0, j.sL)(v) * x,
+                g = (0, G.$g)(A, i.currency),
+                h = (0, G.CE)(g, d, m),
+                P = (0, G.$g)(i.total, i.currency) + (i.currency !== V.Yr.USD ? "*" : ""),
                 T = i.total - A - f,
                 b = v.discounts.map(e => {
                     let t = e.amount / v.quantity;
@@ -458,7 +457,7 @@ function Q(e) {
                         amount: t * x
                     }
                 }),
-                j = b.find(e => e.type === p.iS.SUBSCRIPTION_PLAN),
+                N = b.find(e => e.type === p.iS.SUBSCRIPTION_PLAN),
                 U = b.find(e => e.type === p.iS.ENTITLEMENT),
                 C = v.subscriptionPlanPrice * x;
             return {
@@ -468,12 +467,12 @@ function Q(e) {
                 isReverseTrial: o,
                 formattedGuildBoostPrice: g,
                 formattedGuildBoostRate: h,
-                formattedOriginalAmountGuildBoostRate: (0, k.CE)((0, k.$g)(C, i.currency), d, m),
+                formattedOriginalAmountGuildBoostRate: (0, G.CE)((0, G.$g)(C, i.currency), d, m),
                 formattedTotal: P,
                 basePlanAdjustment: f,
                 basePlanInvoiceItems: S,
                 guildBoostingAdjustment: T,
-                subscriptionDiscount: j,
+                subscriptionDiscount: N,
                 entitlementDiscount: U,
                 originalAmount: C,
                 premiumSubscription: t,
@@ -484,17 +483,17 @@ function Q(e) {
         }({
             premiumSubscription: o,
             premiumSubscriptionPlan: m,
-            proratedInvoicePreview: et,
-            renewalInvoicePreview: en,
+            proratedInvoicePreview: ee,
+            renewalInvoicePreview: et,
             priceOptions: l,
-            reviewState: w
+            reviewState: L
         }),
-        eu = (0, i.jsx)(Z, {
-            ...es,
-            shouldUseUnifiedCheckoutUI: D,
-            subscriptionInvoiceDetailsContent: ei
+        es = (0, i.jsx)(Z, {
+            ...ea,
+            shouldUseUnifiedCheckoutUI: _,
+            subscriptionInvoiceDetailsContent: en
         }),
-        ec = function(e) {
+        eu = function(e) {
             let {
                 isPrepaid: t,
                 isReverseTrial: n,
@@ -506,10 +505,10 @@ function Q(e) {
             if (t) return null;
             if (n && null != i) return {
                 type: "reverseTrial",
-                text: F(i.currentPeriodEnd)
+                text: J(i.currentPeriodEnd)
             };
             if (a) return null;
-            let s = (0, R.DK)({
+            let s = (0, C.DK)({
                 proratedInvoice: r,
                 renewalInvoice: l
             });
@@ -520,14 +519,14 @@ function Q(e) {
                 renewalInvoicePreview: l
             }
         }({
-            isPrepaid: Q,
-            isReverseTrial: ee,
+            isPrepaid: X,
+            isReverseTrial: Q,
             premiumSubscription: o,
-            proratedInvoicePreview: et,
-            renewalInvoicePreview: en,
-            shouldUseUnifiedCheckoutUI: D
+            proratedInvoicePreview: ee,
+            renewalInvoicePreview: et,
+            shouldUseUnifiedCheckoutUI: _
         });
-    if (D) {
+    if (_) {
         let e = function(e, t, n) {
                 let {
                     addedQuantity: r,
@@ -538,49 +537,42 @@ function Q(e) {
                     subscriptionDiscount: o
                 } = t, d = null != o;
                 return {
-                    label: W.intl.formatToPlainString(W.t.a3cAOg, {
+                    label: Y.intl.formatToPlainString(Y.t.a3cAOg, {
                         numGuildSubscriptions: r,
-                        planName: (0, G.Mn)(l.id, !1, a)
+                        planName: (0, O.Mn)(l.id, !1, a)
                     }),
-                    description: W.intl.format(q.default["8imbq5"], {
-                        guildName: e.name,
-                        guildIcon: () => (0, i.jsx)(A.Ay, {
-                            guild: e,
-                            size: A.Ay.Sizes.SMOL,
-                            style: {
-                                display: "inline-flex",
-                                verticalAlign: "middle"
-                            }
-                        })
-                    }),
+                    target: {
+                        type: "boost",
+                        guild: e
+                    },
                     graphic: (0, i.jsx)(f.a6, {}),
                     price: s,
                     PriceIcon: d ? c.tvc : void 0,
-                    priceTooltip: d ? W.intl.string(q.default.YUNJJa) : void 0,
+                    priceTooltip: d ? Y.intl.string(W.default.YUNJJa) : void 0,
                     priceSubText: d ? u : void 0,
                     bottomSubText: n?.text ?? null
                 }
-            }(B, es, ec),
+            }(k, ea, eu),
             t = (0, i.jsx)(f.f7, {
                 ...e
             });
         return (0, i.jsx)(x.rg, {
             shouldShowGlobalNotices: !0,
             purchaseItemContent: t,
-            subscriptionDetailsContent: ei,
-            paymentSelectContent: er,
-            invoiceSummaryContent: eu,
-            legalContent: ea,
-            invoiceTotalDueValue: es.formattedTotal,
-            invoiceTotalDueLabel: W.intl.string(q.default.R0cZsM)
+            subscriptionDetailsContent: en,
+            paymentSelectContent: ei,
+            invoiceSummaryContent: es,
+            legalContent: el,
+            invoiceTotalDueValue: ea.formattedTotal,
+            invoiceTotalDueLabel: Y.intl.string(W.default.R0cZsM)
         })
     }
     return (0, i.jsxs)("div", {
-        children: [null != ec && (0, i.jsx)(z, {
-            notice: ec
-        }), eu, (0, i.jsx)("div", {
-            className: K.LC,
-            children: er
-        }), ea]
+        children: [null != eu && (0, i.jsx)($, {
+            notice: eu
+        }), es, (0, i.jsx)("div", {
+            className: q.LC,
+            children: ei
+        }), el]
     })
 }

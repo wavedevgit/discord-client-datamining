@@ -1,6 +1,6 @@
 /** chunk id: 455611 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -38,7 +38,7 @@ function g(e) {
     })
 }
 
-function A(e) {
+function m(e) {
     let {
         backupCodes: t
     } = e, n = s.useCallback(e => e.map(e => (0, i.jsx)(g, {

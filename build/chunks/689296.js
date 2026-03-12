@@ -14,7 +14,7 @@ function d(e) {
         children: t,
         lineClamp: n = 2,
         ...d
-    } = e, [c, u] = s.useState(!1), [_, g] = s.useState(null), A = null != _ && (0, i.jsx)("button", {
+    } = e, [c, u] = s.useState(!1), [_, g] = s.useState(null), m = null != _ && (0, i.jsx)("button", {
         className: o.x6,
         onClick: () => u(e => !e),
         children: (0, i.jsxs)(a.Text, {
@@ -29,17 +29,17 @@ function d(e) {
                 size: "xs"
             })]
         })
-    }), [m, h] = s.useState(null), p = s.useCallback(() => {
-        if (null == m) return;
+    }), [A, h] = s.useState(null), p = s.useCallback(() => {
+        if (null == A) return;
         let {
             scrollHeight: e,
             clientHeight: t
-        } = m;
+        } = A;
         e > t && g({
             truncatedHeight: t,
             expandedHeight: e
         })
-    }, [m]);
+    }, [A]);
     s.useEffect(() => {
         requestAnimationFrame(p)
     }, [p, t, n]);
@@ -54,6 +54,6 @@ function d(e) {
                 height: x
             },
             children: t
-        }), A]
+        }), m]
     })
 }

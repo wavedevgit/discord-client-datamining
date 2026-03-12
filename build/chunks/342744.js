@@ -1,6 +1,6 @@
 /** chunk id: 342744 params = (module,exports,require) **/
 n.d(t, {
-    default: () => f
+    default: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(923408),
     _ = n(198982),
     g = n(136857),
-    A = n(793574),
-    m = n(688810),
+    m = n(793574),
+    A = n(688810),
     h = n(253390),
     p = n(166403),
     x = n(927578),
@@ -48,7 +48,7 @@ function C(e) {
     })
 }
 
-function I() {
+function f() {
     return (0, i.jsxs)("div", {
         className: T.rf,
         children: [(0, i.jsx)("div", {
@@ -59,39 +59,39 @@ function I() {
     })
 }
 
-function f(e) {
+function N(e) {
     let {
         guildBoostSlotId: t,
         transitionState: n,
         onClose: l
     } = e, {
         analyticsLocations: u
-    } = (0, m.Ay)(A.A.GUILD_BOOST_UNCANCELLATION_MODAL);
+    } = (0, A.Ay)(m.A.GUILD_BOOST_UNCANCELLATION_MODAL);
     s.useEffect(() => {
         p.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
     let T = (0, o.bG)([p.A], () => p.A.getPremiumTypeSubscription()),
-        [f, N] = s.useState(1),
-        [b, v] = s.useState(!1),
-        [O, j] = s.useState(null),
+        [N, b] = s.useState(1),
+        [I, v] = s.useState(!1),
+        [j, O] = s.useState(null),
         R = s.useCallback(async () => {
             if (null != T) try {
-                v(!0), j(null);
+                v(!0), O(null);
                 let e = (0, h.v)(T, 1);
-                a()((0, x.bx)(e) <= (0, x.bx)(T.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(T, e, t, u), N(2)
+                a()((0, x.bx)(e) <= (0, x.bx)(T.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(T, e, t, u), b(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
-                j(E.intl.string(e.code === g.tG.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq7 : E.t["5mlOCW"])), v(!1)
+                O(E.intl.string(e.code === g.tG.BILLING_PAUSE_INVALID_UPDATE ? E.t.dq4vq7 : E.t["5mlOCW"])), v(!1)
             }
         }, [T, t, u]);
-    return (0, i.jsx)(m.f5, {
+    return (0, i.jsx)(A.f5, {
         value: u,
         children: (0, i.jsx)(r.Modal, {
             transitionState: n,
             onClose: async () => await l(),
             size: "sm",
             title: (() => {
-                switch (f) {
+                switch (N) {
                     case 1:
                         return E.intl.string(E.t.l52ih2);
                     case 2:
@@ -101,17 +101,17 @@ function f(e) {
                 }
             })(),
             actions: (() => {
-                switch (f) {
+                switch (N) {
                     case 1:
                         return [{
                             variant: "secondary",
                             text: E.intl.string(E.t.oEAioF),
-                            disabled: b,
+                            disabled: I,
                             onClick: l
                         }, {
                             variant: "primary",
                             text: E.intl.string(E.t.etZP4B),
-                            loading: b,
+                            loading: I,
                             onClick: R
                         }];
                     case 2:
@@ -126,15 +126,15 @@ function f(e) {
             })(),
             children: (() => {
                 if (null == T) return (0, i.jsx)(d.y$y, {});
-                switch (f) {
+                switch (N) {
                     case 1:
                         return (0, i.jsx)(C, {
-                            errorMsg: O
+                            errorMsg: j
                         });
                     case 2:
-                        return (0, i.jsx)(I, {});
+                        return (0, i.jsx)(f, {});
                     default:
-                        throw Error(`Unexpected step: ${f}`)
+                        throw Error(`Unexpected step: ${N}`)
                 }
             })()
         })

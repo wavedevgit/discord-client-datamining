@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(159001),
     _ = n(954571),
     g = n(927578),
-    A = n(919395),
-    m = n(128450),
+    m = n(919395),
+    A = n(128450),
     h = n(652215),
     p = n(49999),
     x = n(985018),
@@ -27,23 +27,23 @@ function S(e) {
         guildId: n,
         className: S
     } = e, C = g.Ay.canUsePremiumProfileCustomization(t), {
-        analyticsLocations: I
+        analyticsLocations: f
     } = (0, o.Ay)(), {
-        userDisplayNameStyles: f,
-        guildDisplayNameStyles: N,
-        pendingDisplayNameStyles: b,
+        userDisplayNameStyles: N,
+        guildDisplayNameStyles: b,
+        pendingDisplayNameStyles: I,
         pendingErrors: v
-    } = (0, A.B0)(t, n), [O, j] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = O === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
-        j(p.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
-            analyticsLocations: I,
+    } = (0, m.B0)(t, n), [j, O] = (0, d.kn)([l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE]), R = j === l.M.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, y = (0, s.useCallback)(() => {
+        O(p.i.TAKE_ACTION), _.default.track(h.HAw.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, c.L)({
+            analyticsLocations: f,
             guildId: n
         })
-    }, [I, j, n]), P = (0, s.useCallback)(() => {
+    }, [f, O, n]), P = (0, s.useCallback)(() => {
         (0, r.dM)(null), _.default.track(h.HAw.DISPLAY_NAME_STYLES_REMOVED)
     }, []), D = (0, s.useCallback)(() => {
         (0, u.mZ)(null)
-    }, []), L = void 0 !== b || (null != n ? null != N : null != f);
-    return (0, i.jsx)(m.A, {
+    }, []), L = void 0 !== I || (null != n ? null != b : null != N);
+    return (0, i.jsx)(A.A, {
         title: x.intl.string(E.default["86GtGH"]),
         titleIcon: R ? (0, i.jsx)(a.LpS, {
             text: x.intl.string(x.t.y2b7CA),
@@ -64,7 +64,7 @@ function S(e) {
                 size: "sm",
                 text: x.intl.string(E.default.ymq8WQ),
                 onClick: P
-            }), null != n && null != (void 0 !== b ? b : N) && (0, i.jsx)(a.Button, {
+            }), null != n && null != (void 0 !== I ? I : b) && (0, i.jsx)(a.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: x.intl.string(E.default["j/KRxc"]),

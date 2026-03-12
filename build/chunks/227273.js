@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(688810),
     _ = n(800172),
     g = n(953143),
-    A = n(954571),
-    m = n(52167),
+    m = n(954571),
+    A = n(52167),
     h = n(652215),
     p = n(985018),
     x = n(399143);
@@ -45,8 +45,8 @@ let E = e => {
             imageSource: l,
             imageClassName: r,
             titleBadge: d,
-            isNew: A = !1,
-            isEarlyAccess: m = !1
+            isNew: m = !1,
+            isEarlyAccess: A = !1
         } = e, {
             analyticsLocations: h
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD);
@@ -54,11 +54,11 @@ let E = e => {
             value: h,
             children: (0, i.jsxs)("div", {
                 className: a()(x.perkCard, s),
-                children: [A ? (0, i.jsx)(g.A, {
+                children: [m ? (0, i.jsx)(g.A, {
                     className: x.perkCardNewBadge,
                     shouldInheritBackgroundColor: !0,
                     shouldInheritTextColor: !0
-                }) : null, m ? (0, i.jsx)(_.A, {
+                }) : null, A ? (0, i.jsx)(_.A, {
                     className: x.perkCardEarlyAccessBadge
                 }) : null, (0, i.jsx)("img", {
                     src: l,
@@ -82,7 +82,7 @@ let E = e => {
         let {
             className: t,
             isSubscriberNitroHome: n = !1
-        } = e, [l, c] = s.useState(!1), _ = (0, m.d)({
+        } = e, [l, c] = s.useState(!1), _ = (0, A.d)({
             styles: x
         }), g = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
             analyticsLocations: S
@@ -112,7 +112,7 @@ let E = e => {
                     }),
                     children: (0, i.jsx)(E, {
                         onClick: () => {
-                            A.default.track(h.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                            m.default.track(h.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
                                 location_stack: S,
                                 was_expanded: l
                             }), c(!l)

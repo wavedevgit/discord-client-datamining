@@ -25,7 +25,7 @@ let g = e => {
             children: [t, " ", n]
         })
     },
-    A = e => {
+    m = e => {
         let {
             text: t,
             variant: n
@@ -36,7 +36,7 @@ let g = e => {
             children: t
         })
     },
-    m = e => {
+    A = e => {
         let {
             includes: t
         } = e;
@@ -66,10 +66,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["09yRK3"])
                     }),
-                    column1: (0, i.jsx)(A, {
+                    column1: (0, i.jsx)(m, {
                         text: a.Ay.formatPriceString(e, o.WT.MONTH)
                     }),
-                    column2: (0, i.jsx)(A, {
+                    column2: (0, i.jsx)(m, {
                         text: n ? h : a.Ay.formatPriceString(t, o.WT.MONTH)
                     }),
                     withBottomBorder: !0
@@ -78,10 +78,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.vaDeDV)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !0
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -89,10 +89,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.DmfiwT)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !0
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -100,10 +100,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.OuItFi)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !0
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -111,10 +111,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["9kRJS8"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !0
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -122,10 +122,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["ufhQC+"])
                     }),
-                    column1: (0, i.jsx)(A, {
+                    column1: (0, i.jsx)(m, {
                         text: (0, a.EJ)(o.PremiumTypes.TIER_0)
                     }),
-                    column2: (0, i.jsx)(A, {
+                    column2: (0, i.jsx)(m, {
                         text: (0, a.EJ)(o.PremiumTypes.TIER_2)
                     })
                 },
@@ -133,10 +133,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.VwxlMw)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(A, {
+                    column2: (0, i.jsx)(m, {
                         text: c.intl.string(c.t.XdN6KU)
                     })
                 },
@@ -147,10 +147,10 @@ let g = e => {
                             percentageOff: (0, r.l9)(l.default.locale, o.oX / 100)
                         })
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -158,10 +158,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.tFbcuM)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -169,10 +169,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(u.default["86GtGH"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -180,10 +180,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["aR/zTk"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -191,10 +191,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.IzrZHz)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -202,10 +202,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["HwNg/Z"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -213,10 +213,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["y+HHL9"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !0
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -224,10 +224,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.qQxxVc)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !0
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -235,10 +235,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.xi0NBE)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     }),
                     withBottomBorder: !0
@@ -247,10 +247,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t.MfsUHm)
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -258,10 +258,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["A+0H1f"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -269,10 +269,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["il8+nC"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     })
                 },
@@ -282,10 +282,10 @@ let g = e => {
                             maxChars: d.CS1
                         })
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     }),
                     withBottomBorder: !0
@@ -324,10 +324,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["93xPy3"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     }),
                     withBottomBorder: !0
@@ -336,10 +336,10 @@ let g = e => {
                     label: (0, i.jsx)(g, {
                         text: c.intl.string(c.t["5BJqNF"])
                     }),
-                    column1: (0, i.jsx)(m, {
+                    column1: (0, i.jsx)(A, {
                         includes: !1
                     }),
-                    column2: (0, i.jsx)(m, {
+                    column2: (0, i.jsx)(A, {
                         includes: !0
                     }),
                     withBottomBorder: !1

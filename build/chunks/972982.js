@@ -1,6 +1,6 @@
 /** chunk id: 972982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(961350),
     _ = n(670492),
     g = n(287809),
-    A = n(464477),
-    m = n(709913),
+    m = n(464477),
+    A = n(709913),
     h = n(455611),
     p = n(858526),
     x = n(309198),
@@ -30,7 +30,7 @@ class C extends s.PureComponent {
             togglingSMS: s
         } = this.props;
         return (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(m.A, {
+            children: [(0, i.jsx)(A.A, {
                 backupCodes: e,
                 currentUser: n,
                 hasTOTPEnabled: t
@@ -60,11 +60,11 @@ class C extends s.PureComponent {
         let {
             currentUser: e
         } = this.props;
-        return A.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, i.jsx)(T.A, {}) : (0, i.jsx)(E.A, {})
+        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, i.jsx)(T.A, {}) : (0, i.jsx)(E.A, {})
     }
 }
 
-function I(e) {
+function f(e) {
     let t = (0, r.bG)([g.default], () => g.default.getCurrentUser());
     a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
     let n = (0, r.cf)([_.A, u.default], () => ({

@@ -14,25 +14,25 @@ var s = n(417597),
     u = n(773349),
     _ = n(994987),
     g = n(870236),
-    A = n(985018),
-    m = n(511527);
+    m = n(985018),
+    A = n(511527);
 let h = () => {
     let e = (0, s.bG)([r.A], () => r.A.getTopUserActivities()),
         t = (0, s.bG)([r.A], () => r.A.getTopGuildActivities());
     return 0 === e.length && 0 === t.length ? null : (0, i.jsxs)("div", {
-        className: m.kL,
+        className: A.kL,
         children: [e.length > 0 && (0, i.jsxs)("div", {
-            className: m.A2,
+            className: A.A2,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
-                className: m.bV,
-                children: A.intl.string(g.default.BxbvS7)
+                className: A.bV,
+                children: m.intl.string(g.default.BxbvS7)
             }), (0, i.jsx)("div", {
-                className: m.Ce,
+                className: A.Ce,
                 children: 1 === e.length ? (0, i.jsx)(u.A, {
                     userId: e[0].user_id,
                     subText: (0, o.fq)(e[0].dms_sent, e[0].call_count),
-                    className: m.q3
+                    className: A.q3
                 }) : e.map(e => (0, i.jsx)(_.A, {
                     userId: e.user_id,
                     dmsSent: e.dms_sent,
@@ -40,17 +40,17 @@ let h = () => {
                 }, e.user_id))
             })]
         }), t.length > 0 && (0, i.jsxs)("div", {
-            className: m.A2,
+            className: A.A2,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-md/medium",
-                className: m.bV,
-                children: A.intl.string(g.default.Lq9Set)
+                className: A.bV,
+                children: m.intl.string(g.default.Lq9Set)
             }), 1 === t.length ? (0, i.jsx)(c.A, {
                 guildId: t[0].guild_id,
                 customSubtext: (0, o.fq)(t[0].messages_sent, t[0].call_count),
-                className: m._S
+                className: A._S
             }) : (0, i.jsx)("div", {
-                className: m.Ce,
+                className: A.Ce,
                 children: t.map(e => {
                     let t = r.A.getGuild(e.guild_id),
                         n = t?.name ?? "Unknown Server";

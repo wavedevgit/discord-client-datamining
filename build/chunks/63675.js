@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(950191),
     _ = n(101928),
     g = n(927578),
-    A = n(911180),
-    m = n(128450),
+    m = n(911180),
+    A = n(128450),
     h = n(985018),
     p = n(890069);
 
@@ -30,33 +30,33 @@ function x(e) {
         className: T,
         showPremiumIcon: S = !0,
         showResetThemeButton: C = !1,
-        forcedDivider: I
-    } = e, f = (0, u.Ay)(t.id, E), {
-        primaryColor: N,
-        secondaryColor: b
+        forcedDivider: f
+    } = e, N = (0, u.Ay)(t.id, E), {
+        primaryColor: b,
+        secondaryColor: I
     } = (0, _.A)({
         user: t,
-        displayProfile: f,
+        displayProfile: N,
         pendingThemeColors: s,
         isPreview: !0
-    }), v = g.Ay.canUsePremiumProfileCustomization(t), O = null != n ? n : t.getAvatarURL(E, 80), j = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(O, j, !1);
-    if (null == N || null == b) return null;
+    }), v = g.Ay.canUsePremiumProfileCustomization(t), j = null != n ? n : t.getAvatarURL(E, 80), O = (0, d.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, c.rh)(j, O, !1);
+    if (null == b || null == I) return null;
     let y = e => {
-        a(r()(e, f?.themeColors) ? void 0 : e)
+        a(r()(e, N?.themeColors) ? void 0 : e)
     };
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(A.A, {
         title: h.intl.string(h.t.DMeO2X),
         disabled: !v && !x,
         className: l()(p.__invalid_profileThemesSection, T),
         showPremiumIcon: S,
-        forcedDivider: I,
+        forcedDivider: f,
         children: (0, i.jsxs)("div", {
             className: p.hd,
             children: [(0, i.jsx)("div", {
                 className: p.YX,
-                children: (0, i.jsx)(A.A, {
-                    onChange: e => y([e, b]),
-                    color: N,
+                children: (0, i.jsx)(m.A, {
+                    onChange: e => y([e, I]),
+                    color: b,
                     suggestedColors: R,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {
@@ -69,9 +69,9 @@ function x(e) {
                 })
             }), (0, i.jsx)("div", {
                 className: p.YX,
-                children: (0, i.jsx)(A.A, {
-                    onChange: e => y([N, e]),
-                    color: b,
+                children: (0, i.jsx)(m.A, {
+                    onChange: e => y([b, e]),
+                    color: I,
                     suggestedColors: R,
                     showEyeDropper: !0,
                     label: (0, i.jsx)(d.Text, {

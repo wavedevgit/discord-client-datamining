@@ -14,11 +14,11 @@ var i = n(311907),
     _ = n(985018);
 let g = (e, t) => {
     let n, g = e === s.qT.MEMBER,
-        A = (0, d.A)({
+        m = (0, d.A)({
             useCachedData: !0,
             fetch: g
         }),
-        m = (0, i.bG)([a.A], () => a.A.getPremiumGroupSubscription());
+        A = (0, i.bG)([a.A], () => a.A.getPremiumGroupSubscription());
     return e === s.qT.UNSPECIFIED ? null : {
         subheaderString: null == (n = e === s.qT.PRIMARY ? (e => {
             if (null == e) return null;
@@ -31,8 +31,8 @@ let g = (e, t) => {
                 a = n.interval,
                 d = n.intervalCount;
             return (0, o.CE)(s, a, d)
-        })(m) : null == A ? null : _.intl.format(u.default.Nu9LNm, {
-            primaryName: A,
+        })(A) : null == m ? null : _.intl.format(u.default.Nu9LNm, {
+            primaryName: m,
             premiumGroupProductName: (0, c.DP)()
         })) ? "..." : n,
         bodyString: e === s.qT.PRIMARY ? _.intl.format(u.default["+R/K74"], {

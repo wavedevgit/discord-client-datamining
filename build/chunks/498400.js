@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(73825),
     _ = n(974544),
     g = n(107834),
-    A = n(793574),
-    m = n(688810),
+    m = n(793574),
+    A = n(688810),
     h = n(86379),
     p = n(160946),
     x = n(459793),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(611924),
     S = n(351906),
     C = n(287809),
-    I = n(295405),
-    f = n(166403),
-    N = n(954571),
-    b = n(474090),
+    f = n(295405),
+    N = n(166403),
+    b = n(954571),
+    I = n(474090),
     v = n(560138),
-    O = n(694080),
-    j = n(553081),
+    j = n(694080),
+    O = n(553081),
     R = n(422936),
     y = n(234419),
     P = n(558533),
@@ -44,9 +44,9 @@ let M = function(e) {
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
-        } = (0, m.Ay)(A.A.PREMIUM_MARKETING),
-        U = (0, r.bG)([f.A], () => f.A.hasFetchedSubscriptions()),
-        k = (0, r.bG)([I.A], () => I.A.hasFetchedPaymentSources),
+        } = (0, A.Ay)(m.A.PREMIUM_MARKETING),
+        U = (0, r.bG)([N.A], () => N.A.hasFetchedSubscriptions()),
+        k = (0, r.bG)([f.A], () => f.A.hasFetchedPaymentSources),
         V = (0, r.bG)([C.default], () => C.default.getCurrentUser()),
         w = V?.id,
         H = (0, y.V)(),
@@ -54,7 +54,7 @@ let M = function(e) {
         F = (0, p.Y)(D.T7),
         [Y, z] = s.useState(!0),
         X = s.useRef(0),
-        W = (0, b.YE)(V, D.PremiumTypes.TIER_2),
+        W = (0, I.YE)(V, D.PremiumTypes.TIER_2),
         K = (0, r.bG)([v.A], () => v.A.hasFetched);
     s.useEffect(() => {
         K || c.xG()
@@ -64,18 +64,18 @@ let M = function(e) {
             await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, L.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
         })
     }, []), s.useEffect(() => {
-        Y || N.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        Y || b.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
     }, [l, Y]), s.useEffect(() => {
-        n && (null != H || null != B) && (0, O.u1)(H, B)
+        n && (null != H || null != B) && (0, j.u1)(H, B)
     }, [n, H, B]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
         q = t === D.Mf.ApplicationStoreHome,
-        J = Z ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(x.uK, {}) : q && W ? (0, i.jsx)(m.f5, {
+        J = Z ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(x.uK, {}) : q && W ? (0, i.jsx)(A.f5, {
             value: M,
-            children: (0, i.jsx)(j.A, {
+            children: (0, i.jsx)(O.A, {
                 userId: w
             })
         }) : U && F && k ? null : (0, i.jsx)("div", {
@@ -84,7 +84,7 @@ let M = function(e) {
         });
     return null != J ? (0, i.jsxs)(i.Fragment, {
         children: [q && (0, i.jsx)(g.A, {}), J]
-    }) : (0, i.jsx)(m.f5, {
+    }) : (0, i.jsx)(A.f5, {
         value: M,
         children: (0, i.jsx)(P.A, {
             entrypoint: t

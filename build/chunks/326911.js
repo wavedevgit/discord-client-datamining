@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(351906),
     _ = n(954571),
     g = n(45938),
-    A = n(652215),
-    m = n(985018);
+    m = n(652215),
+    A = n(985018);
 class h extends s.Component {
     state = {
         codeInput: "",
@@ -30,7 +30,7 @@ class h extends s.Component {
         } = this.props;
         return {
             ...e,
-            object: A.ZSU.BUTTON_CTA
+            object: m.ZSU.BUTTON_CTA
         }
     }
     handleChange = e => {
@@ -67,11 +67,11 @@ class h extends s.Component {
             if (null != i && null != i.giftCode.promotion) throw this.setState({
                 isPromoCode: !0
             }), Error("Cannnot redeem promotion code as gift");
-            _.default.track(A.HAw.OPEN_MODAL, {
+            _.default.track(m.HAw.OPEN_MODAL, {
                 type: "gift_accept",
                 location: {
                     ...this.analyticsLocation,
-                    object: A.ZSU.BUTTON_CTA
+                    object: m.ZSU.BUTTON_CTA
                 }
             }), (0, c.h)({
                 processedCode: e
@@ -98,18 +98,18 @@ class h extends s.Component {
             isPromoCode: l
         } = this.state;
         return (0, i.jsx)(a.nVY, {
-            label: m.intl.string(m.t["il+VCo"]),
+            label: A.intl.string(A.t["il+VCo"]),
             children: (0, i.jsx)("form", {
                 onSubmit: this.handleSubmit,
                 children: (0, i.jsxs)(a.M_l, {
                     children: [(0, i.jsx)(a.ksK, {
-                        label: m.intl.string(m.t.SeKIoS),
+                        label: A.intl.string(A.t.SeKIoS),
                         type: e ? "password" : "text",
                         value: t,
                         onChange: this.handleChange,
                         placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-                        error: !l && s ? m.intl.string(m.t.Y11a2u) : null,
-                        helperText: l ? m.intl.format(m.t.gPt3PE, {
+                        error: !l && s ? A.intl.string(A.t.Y11a2u) : null,
+                        helperText: l ? A.intl.format(A.t.gPt3PE, {
                             promoLink: () => {
                                 window.open(`https://discord.com/billing/promotions/${t}`)
                             }
@@ -117,7 +117,7 @@ class h extends s.Component {
                         fullWidth: !0
                     }), (0, i.jsx)(a.Button, {
                         variant: "primary",
-                        text: m.intl.string(m.t.KIpp7M),
+                        text: A.intl.string(A.t.KIpp7M),
                         type: "submit",
                         loading: n
                     })]

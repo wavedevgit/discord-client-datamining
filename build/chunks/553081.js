@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(73153),
     _ = n(793574),
     g = n(688810),
-    A = n(726649),
-    m = n(611924),
+    m = n(726649),
+    A = n(611924),
     h = n(961250),
     p = n(320118),
     x = n(622543),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(166403),
     S = n(954571),
     C = n(131168),
-    I = n(482589),
-    f = n(511484),
-    N = n(322631),
-    b = n(570627),
+    f = n(482589),
+    N = n(511484),
+    b = n(322631),
+    I = n(570627),
     v = n(568031),
-    O = n(518491),
-    j = n(965591),
+    j = n(518491),
+    O = n(965591),
     R = n(495022),
     y = n(157839),
     P = n(382694),
@@ -44,7 +44,7 @@ var i = n(627968),
 let B = e => {
     let {
         userId: t
-    } = e, n = b.m.useConfig({
+    } = e, n = I.m.useConfig({
         location: "PremiumSubscriberHome"
     }).enabled, l = (0, r.zy)();
     s.useEffect(() => {
@@ -54,7 +54,7 @@ let B = e => {
         })
     }, [t]), s.useEffect(() => {
         $(!0)
-    }, []), (0, I.j)(), (0, m.P)(A.b);
+    }, []), (0, f.j)(), (0, A.P)(m.b);
     let B = s.useRef(null),
         F = s.useRef(null),
         Y = (0, o.bG)([T.A], () => T.A.getPremiumTypeSubscription()),
@@ -85,7 +85,7 @@ let B = e => {
             } : {}
         }, [l.search]);
     (0, M.z)(K ?? "", null != K, q, J);
-    let [Q, $] = s.useState(!1), ee = (0, C.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, f.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
+    let [Q, $] = s.useState(!1), ee = (0, C.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, N.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
         analyticsLocations: ed
     } = (0, g.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
     return null != (0, o.bG)([x.A], () => null != t ? x.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
@@ -105,7 +105,7 @@ let B = e => {
                         onChange: e => el(e),
                         threshold: .1,
                         active: !0,
-                        children: (0, i.jsx)(O.A, {
+                        children: (0, i.jsx)(j.A, {
                             buttonVisibilityRef: et,
                             className: w.v1,
                             enablePremiumBrandRefresh: !0,
@@ -115,7 +115,7 @@ let B = e => {
                     }), n && (0, i.jsx)(P.A, {
                         glowingPerkId: Z
                     }), !n && (0, i.jsx)(y.A, {
-                        variant: N.cJ.WHATS_NEW,
+                        variant: b.cJ.WHATS_NEW,
                         className: w.Iw,
                         noBackground: !0,
                         leftAlignHeaders: !0
@@ -125,12 +125,12 @@ let B = e => {
                         glowingPerkId: Z
                     }), !n && (0, i.jsx)(y.A, {
                         className: w.xU,
-                        variant: N.cJ.PERKS_DISCOVERABILITY,
+                        variant: b.cJ.PERKS_DISCOVERABILITY,
                         noBackground: !0,
                         leftAlignHeaders: !0,
                         showAllPerksButton: (0, i.jsx)(L.A, {
                             setIsAllPerksVisible: ei,
-                            previousComponent: N.A2.HOME
+                            previousComponent: b.A2.HOME
                         })
                     }), (0, i.jsx)(v.A, {
                         className: w.Zy,
@@ -160,7 +160,7 @@ let B = e => {
                         alt: V.intl.string(V.t.X4IxWL)
                     })]
                 })
-            }), ea && null != er && (0, i.jsx)(j.A, {
+            }), ea && null != er && (0, i.jsx)(O.A, {
                 isVisible: eo && Q,
                 premiumSubscription: Y,
                 churnDiscountOffer: ee,
@@ -169,7 +169,7 @@ let B = e => {
         }), !n && (0, i.jsx)(D.A, {
             isAllPerksVisible: en,
             setIsAllPerksVisible: ei,
-            previousComponent: N.A2.HOME,
+            previousComponent: b.A2.HOME,
             enablePremiumBrandRefresh: !0
         })]
     }) : (0, i.jsx)("div", {

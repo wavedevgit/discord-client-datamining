@@ -1,7 +1,7 @@
 /** chunk id: 119762 params = (module,exports,require) **/
 n.d(t, {
-    Af: () => f,
-    Ay: () => N,
+    Af: () => N,
+    Ay: () => b,
     Ob: () => C,
     jH: () => S
 });
@@ -16,8 +16,8 @@ var i = n(627968),
     u = n(754333),
     _ = n(287809),
     g = n(791606),
-    A = n(403362),
-    m = n(780964),
+    m = n(403362),
+    A = n(780964),
     h = n(740625),
     p = n(840065),
     x = n(652215),
@@ -41,14 +41,14 @@ function C() {
         children: (0, i.jsx)(o.y$y, {})
     }) : (0, i.jsx)(o.nVY, {
         label: E.intl.string(E.t.LLS19o),
-        children: (0, i.jsx)(b, {
+        children: (0, i.jsx)(I, {
             session: e,
             current: !0
         })
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         checked: t,
         otherSessions: n
@@ -73,7 +73,7 @@ function I(e) {
     })
 }
 
-function f() {
+function N() {
     let {
         currentSession: e,
         otherSessions: t
@@ -81,7 +81,7 @@ function f() {
     return null == e && 0 === t.length || 0 === t.length && n?.mfaEnabled ? null : t.length > 0 || !n?.mfaEnabled ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)(o.nVY, {
             label: E.intl.string(E.t.xx1MWc),
-            children: [t.map(e => (0, i.jsx)(b, {
+            children: [t.map(e => (0, i.jsx)(I, {
                 session: e,
                 useChecks: l.size > 0,
                 checked: l.has(e.id_hash),
@@ -92,7 +92,7 @@ function f() {
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(v, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: T.wq,
-            children: (0, i.jsx)(I, {
+            children: (0, i.jsx)(f, {
                 checked: l,
                 otherSessions: t
             })
@@ -100,7 +100,7 @@ function f() {
     }) : null
 }
 
-function N() {
+function b() {
     return s.useEffect(() => ((0, c.GY)(), () => {
         (0, c.ZQ)()
     }), []), (0, i.jsxs)(h.R, {
@@ -108,12 +108,12 @@ function N() {
         children: [(0, i.jsx)(S, {}), (0, i.jsxs)(o.BJc, {
             gap: 24,
             className: T.Mf,
-            children: [(0, i.jsx)(C, {}), (0, i.jsx)(f, {})]
+            children: [(0, i.jsx)(C, {}), (0, i.jsx)(N, {})]
         })]
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         session: t,
         current: n,
@@ -122,7 +122,7 @@ function b(e) {
         useChecks: r
     } = e, d = t.client_info?.location ?? t.client_info?.ip, _ = t.client_info?.platform, {
         text: g,
-        icon: m
+        icon: A
     } = function(e) {
         switch (e?.toLowerCase().trim()) {
             case null:
@@ -145,7 +145,7 @@ function b(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), h = n ? null : (0, u.Y)(t.approx_last_used_time), p = [g, _].filter(A.Vq), x = [d, h].filter(A.Vq);
+    }(t.client_info?.os), h = n ? null : (0, u.Y)(t.approx_last_used_time), p = [g, _].filter(m.Vq), x = [d, h].filter(m.Vq);
     return (0, i.jsxs)("div", {
         className: a()(T.dZ, {
             [T.gg]: n
@@ -154,7 +154,7 @@ function b(e) {
             className: T.OC,
             children: [(0, i.jsx)("div", {
                 className: T.km,
-                children: (0, i.jsx)(m, {
+                children: (0, i.jsx)(A, {
                     size: "md",
                     color: "currentColor"
                 })
@@ -236,7 +236,7 @@ function v() {
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
                         children: E.intl.format(E.t["044+8i"], {
-                            onClick: () => (0, p.openUserSettings)(m.X.ACCOUNT_PANEL, {
+                            onClick: () => (0, p.openUserSettings)(A.X.ACCOUNT_PANEL, {
                                 section: x.nc_.ACCOUNT,
                                 analyticsLocations: [d.A.USER_SETTINGS_SESSIONS]
                             })

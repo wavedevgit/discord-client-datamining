@@ -13,8 +13,8 @@ var i, s = n(627968),
     u = n(631670),
     _ = n(974544),
     g = n(210742),
-    A = n(195043),
-    m = n(130771),
+    m = n(195043),
+    A = n(130771),
     h = n(576622),
     p = n(670492),
     x = n(351906),
@@ -22,13 +22,13 @@ var i, s = n(627968),
     T = n(287809),
     S = n(954571),
     C = n(773669),
-    I = n(544028),
-    f = n(740625),
-    N = n(524738),
-    b = n(972982),
+    f = n(544028),
+    N = n(740625),
+    b = n(524738),
+    I = n(972982),
     v = n(36535),
-    O = n(299116),
-    j = n(457684),
+    j = n(299116),
+    O = n(457684),
     R = n(998252),
     y = n(980172),
     P = n(531525),
@@ -45,35 +45,35 @@ function M() {
         {
             teams: n,
             loading: i
-        } = (0, m.A)({
+        } = (0, A.A)({
             refreshOnDepChange: !0
         });
     return (0, s.jsxs)(d.lVW, {
-        children: [(0, s.jsxs)(A.x, {
+        children: [(0, s.jsxs)(m.x, {
             setting: P.H.ACCOUNT_PROFILE,
             children: [(0, s.jsx)(R.A, {
                 currentUser: e
             }), (0, s.jsx)(y.A, {
                 currentUser: e
             })]
-        }), (0, s.jsx)(A.x, {
+        }), (0, s.jsx)(m.x, {
             setting: P.H.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
             children: (0, s.jsxs)(d.nVY, {
                 className: G.PN,
                 label: L.intl.string(L.t.pKSjEj),
-                children: [e.mfaEnabled ? (0, s.jsx)(v.A, {}) : null, (0, s.jsx)(A.x, {
+                children: [e.mfaEnabled ? (0, s.jsx)(v.A, {}) : null, (0, s.jsx)(m.x, {
                     setting: P.H.ACCOUNT_CHANGE_PASSWORD,
-                    children: (0, s.jsx)(O.A, {})
-                }), (0, s.jsx)(A.x, {
+                    children: (0, s.jsx)(j.A, {})
+                }), (0, s.jsx)(m.x, {
                     setting: P.H.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
-                    children: (0, s.jsx)(b.A, {
+                    children: (0, s.jsx)(I.A, {
                         backupCodes: t
                     })
                 })]
             })
-        }), (0, s.jsxs)(A.x, {
+        }), (0, s.jsxs)(m.x, {
             setting: P.H.ACCOUNT_REMOVAL,
-            children: [(0, s.jsx)(d.cGx, {}), (0, s.jsx)(j.A, {
+            children: [(0, s.jsx)(d.cGx, {}), (0, s.jsx)(O.A, {
                 currentUser: e,
                 userTeamsLoading: i,
                 userTeams: n
@@ -96,9 +96,9 @@ class k extends l.PureComponent {
         let {
             subsection: e
         } = this.props;
-        return (0, s.jsx)(f.R, {
+        return (0, s.jsx)(N.R, {
             header: L.intl.string(L.t["JAIM/m"]),
-            children: (0, s.jsx)(N.A, {
+            children: (0, s.jsx)(b.A, {
                 parentSetting: P.H.ACCOUNT,
                 settingsSection: D.nc_.ACCOUNT,
                 panelClassName: G.SZ,
@@ -127,7 +127,7 @@ class k extends l.PureComponent {
 let V = () => {
     let e = (0, o.bG)([T.default], () => T.default.getCurrentUser()),
         t = (0, o.bG)([x.A], () => x.A.hidePersonalInformation),
-        n = (0, o.bG)([I.A], () => I.A.theme),
+        n = (0, o.bG)([f.A], () => f.A.theme),
         i = (0, o.bG)([C.default], () => C.default.locale),
         l = (0, o.bG)([E.A], () => E.A.getSubsection());
     return null == e ? null : (0, s.jsx)(k, {

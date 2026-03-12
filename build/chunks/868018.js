@@ -20,7 +20,7 @@ function g() {
         return d.Ay.getFlattenedGuildIds().filter(e => null != o.A.getGuild(e) && !t.has(e))
     }, [e])
 }
-let A = {
+let m = {
         type: r.wF.STACKED_ICONS,
         useIcons: function() {
             let e = g(),
@@ -51,7 +51,7 @@ let A = {
             }
         }
     },
-    m = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
+    A = (0, a.AK)(u.X.PROFILE_PRIVACY_TO_ACTIVITY_PRIVACY_NAVIGATOR, {
         useSubtitle: function() {
             let e = g();
             if (0 === e.length) return _.intl.format(_.t.QJIJ5p, {});
@@ -66,10 +66,10 @@ let A = {
             })
         },
         useTrailingDecoration: function() {
-            return A
+            return m
         },
         destinationKey: u.X.ACTIVITY_PRIVACY_PANEL
     }),
     h = (0, a.gN)(u.X.PROFILE_PRIVACY_RELATED_SETTINGS, {
-        buildLayout: () => [m]
+        buildLayout: () => [A]
     })

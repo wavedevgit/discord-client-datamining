@@ -58,7 +58,7 @@ function q(e) {
         priceOptions: q
     } = e, {
         setInvoicePreview: K
-    } = (0, S.P5)(), H = (0, h.A)(), J = t.interval, F = t.intervalCount, $ = (0, c.bG)([C.A], () => C.A.getForSkuAndInterval((0, w.mH)(B.pe.GUILD), J, F)), z = (0, c.bG)([U.default], () => U.default.getCurrentUser()), Z = (0, I.A)({
+    } = (0, S.P5)(), H = (0, h.A)(), J = t.interval, F = t.intervalCount, $ = (0, c.bG)([C.A], () => C.A.getForSkuAndInterval((0, w.mH)(B.pe.GUILD), J, F)), Z = (0, c.bG)([U.default], () => U.default.getCurrentUser()), z = (0, I.A)({
         forceFetch: !1
     });
     u()(null != $, "Missing guildBoostingSubscriptionPlan");
@@ -88,7 +88,7 @@ function q(e) {
     }, [K, ei]);
     let el = !et && null == ei && null == er,
         ea = (0, g.V)()?.subscription_trial?.sku_id === B.pe.TIER_2,
-        es = w.Ay.hasBoostDiscount(z),
+        es = w.Ay.hasBoostDiscount(Z),
         eu = ei?.findInvoiceItemByPlanId($.id),
         ec = null != eu ? {
             amount: eu.amount,
@@ -97,8 +97,8 @@ function q(e) {
             currency: q.currency
         } : w.Ay.getPrice($.id, es, !1, q),
         eo = n * ec.amount,
-        ed = (0, c.bG)([R.A], () => R.A.inReverseTrial() && w.Ay.hasBoostDiscount(z) && null != P),
-        em = w.Ay.hasBoostDiscount(z) && null != P && w.Ay.isPremiumAtLeast(w.Ay.getPremiumType(P.planId), B.PremiumTypes.TIER_1) ? Y.intl.format(Y.t.hf6YOY, {
+        ed = (0, c.bG)([R.A], () => R.A.inReverseTrial() && w.Ay.hasBoostDiscount(Z) && null != P),
+        em = w.Ay.hasBoostDiscount(Z) && null != P && w.Ay.isPremiumAtLeast(w.Ay.getPremiumType(P.planId), B.PremiumTypes.TIER_1) ? Y.intl.format(Y.t.hf6YOY, {
             planName: w.Ay.getTierDisplayNameByPlanId(P.planId)
         }) : Y.intl.format(ea ? Y.t.ba1L74 : Y.t.fkffDT, {
             onPremiumSubscriptionClick: b,
@@ -111,10 +111,10 @@ function q(e) {
             ipCountryCode: ev
         } = (0, A.A)(),
         eI = "HR" === ev && ec.currency === V.Yr.EUR,
-        ex = Z.fractionalState === B.xc.FP_SUB_PAUSED;
+        ex = z.fractionalState === B.xc.FP_SUB_PAUSED;
     return s(el), (0, i.jsxs)("div", {
         children: [ex && (0, i.jsx)(j.vi, {
-            fractionalPremiumInfo: Z
+            fractionalPremiumInfo: z
         }), ed && null != P ? (0, i.jsx)(O.Ak, {
             text: (0, O.zT)(P.currentPeriodEnd)
         }) : (0, i.jsx)("div", {

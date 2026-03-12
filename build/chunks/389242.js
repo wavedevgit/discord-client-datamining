@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(406274),
     _ = n(871930),
     g = n(578746),
-    A = n(531525),
-    m = n(985018);
+    m = n(531525),
+    A = n(985018);
 
 function h() {
     let e = (0, u.A)() ?? !0,
@@ -28,13 +28,13 @@ function h() {
             }) : c.Kg.updateSetting(e)
         }, [n]);
     return (0, i.jsx)(_.h, {
-        setting: A.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_IOS_V2,
+        setting: m.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_IOS_V2,
         children: (0, i.jsx)(g.Ay, {
-            title: m.intl.string(m.t["L+yTsa"]),
+            title: A.intl.string(A.t["L+yTsa"]),
             value: t,
             onChange: x,
             disabled: p,
-            note: m.intl.string(m.t.hiM8pU)
+            note: A.intl.string(A.t.hiM8pU)
         })
     })
 }

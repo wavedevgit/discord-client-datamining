@@ -1,6 +1,6 @@
 /** chunk id: 351104 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => m
+    Z: () => A
 });
 var i = n(627968);
 n(64700);
@@ -14,15 +14,15 @@ var s = n(935649),
     u = n(171316),
     _ = n(500470),
     g = n(652215),
-    A = n(985018);
+    m = n(985018);
 
-function m() {
+function A() {
     let e = (0, _.k)() ?? void 0,
         t = (0, u.KK)(),
         n = r.ES.useControlledSetting(e);
     return (0, i.jsx)(o.h, {
         children: (0, i.jsx)(d.Ay, {
-            title: A.intl.string(A.t["3o2ojh"]),
+            title: m.intl.string(m.t["3o2ojh"]),
             value: !t && !n,
             onChange: t => {
                 !t && (0, a.w)() ? s.A.showAgeVerificationGetStartedModal({
@@ -30,7 +30,7 @@ function m() {
                 }) : r.ES.updateControlledSetting(e, !t)
             },
             disabled: t,
-            note: A.intl.format(A.t.IoztJ0, {
+            note: m.intl.format(m.t.IoztJ0, {
                 helpdeskArticle: c.A.getArticleURL(g.MVz.MESSAGE_REQUESTS)
             })
         })

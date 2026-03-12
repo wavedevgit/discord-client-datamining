@@ -1,6 +1,6 @@
 /** chunk id: 320908 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => b
+    Ay: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(688810),
     _ = n(953143),
     g = n(560138),
-    A = n(40185),
-    m = n(526292),
+    m = n(40185),
+    A = n(526292),
     h = n(89366),
     p = n(194509),
     x = n(396375),
@@ -22,7 +22,7 @@ var i = n(627968),
     T = n(552554),
     S = n(985018),
     C = n(247560);
-let I = e => {
+let f = e => {
         let {
             inOfferExperience: t,
             subscriptionTier: n,
@@ -56,7 +56,7 @@ let I = e => {
             children: [u, " ", _]
         })
     },
-    f = () => (0, i.jsxs)(i.Fragment, {
+    N = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.p, {
             className: C.zd
         }), (0, i.jsx)(_.p, {
@@ -68,7 +68,7 @@ let I = e => {
         })]
     });
 
-function N(e) {
+function b(e) {
     let {
         variant: t = "text-lg/normal",
         withBottomMargin: n = !0,
@@ -86,7 +86,7 @@ function N(e) {
         })
     })
 }
-let b = s.forwardRef((e, t) => {
+let I = s.forwardRef((e, t) => {
     let {
         className: n,
         buttonClassName: s,
@@ -94,44 +94,44 @@ let b = s.forwardRef((e, t) => {
         isDarkMode: _
     } = e, {
         analyticsLocations: x
-    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), T = (0, h.QQ)(), b = (0, m.ar)(), v = (0, A.cg)(), O = (0, r.bG)([g.A], () => g.A.affinities).length > 0, j = S.intl.string(S.t.YCZldK);
+    } = (0, u.Ay)(c.A.PREMIUM_MARKETING_HERO_CTA), T = (0, h.QQ)(), I = (0, A.ar)(), v = (0, m.cg)(), j = (0, r.bG)([g.A], () => g.A.affinities).length > 0, O = S.intl.string(S.t.YCZldK);
     return (0, i.jsx)(u.f5, {
         value: x,
         children: (0, i.jsxs)("div", {
             ref: t,
             className: a()(C.kL, n, {
-                [C.V1]: !b,
-                [C.Q4]: !b && O
+                [C.V1]: !I,
+                [C.Q4]: !I && j
             }),
             "data-testid": "v2-marketing-page-hero-header",
             children: [(0, i.jsxs)("div", {
-                className: b ? C.I6 : C.G1,
+                className: I ? C.I6 : C.G1,
                 children: [(0, i.jsx)(d.Heading, {
-                    variant: b ? "display-lg" : "display-md",
+                    variant: I ? "display-lg" : "display-md",
                     color: "always-white",
-                    children: j
-                }), O ? (0, i.jsx)("div", {
+                    children: O
+                }), j ? (0, i.jsx)("div", {
                     className: C.DF,
                     children: (0, i.jsx)(E.A, {
                         textColor: "always-white",
-                        smallerText: !b
+                        smallerText: !I
                     })
-                }) : (0, i.jsx)(N, {}), v || T ? (0, i.jsx)("div", {
+                }) : (0, i.jsx)(b, {}), v || T ? (0, i.jsx)("div", {
                     className: C.UD,
                     children: (0, i.jsx)(p.A, {
                         className: a()(C.x6, s),
                         color: o.XD.WHITE
                     })
-                }) : (0, i.jsx)(I, {
+                }) : (0, i.jsx)(f, {
                     subscriptionTier: l,
-                    inOfferExperience: b,
+                    inOfferExperience: I,
                     buttonClassName: s,
                     isDarkMode: _
-                }), O && (0, i.jsx)(N, {
+                }), j && (0, i.jsx)(b, {
                     variant: "text-md/normal",
                     withBottomMargin: !1
                 })]
-            }), !b && (0, i.jsx)(f, {})]
+            }), !I && (0, i.jsx)(N, {})]
         })
     })
 })

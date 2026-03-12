@@ -19,8 +19,8 @@ function _(e) {
         guildBadge: l,
         guildId: _,
         guildName: g,
-        guildIcon: A,
-        guildIconSize: m
+        guildIcon: m,
+        guildIconSize: A
     } = e, h = s.useRef(null), [p, x] = s.useState(!1);
     return s.useEffect(() => {
         let e = h.current;
@@ -32,8 +32,8 @@ function _(e) {
             children: [(0, i.jsx)(o.j, {
                 guildId: _,
                 guildName: g,
-                guildIcon: A,
-                iconSize: m,
+                guildIcon: m,
+                iconSize: A,
                 className: u.rr,
                 animate: !1
             }), (0, i.jsx)("div", {

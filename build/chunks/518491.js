@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(775602),
     _ = n(793574),
     g = n(688810),
-    A = n(366999),
-    m = n(531260),
+    m = n(366999),
+    A = n(531260),
     h = n(166403),
     p = n(786300),
     x = n(975571),
@@ -23,13 +23,13 @@ var s = n(503698),
     T = n(40185),
     S = n(89366),
     C = n(637073),
-    I = n(422936),
-    f = n(234419),
-    N = n(549996),
-    b = n(371764),
+    f = n(422936),
+    N = n(234419),
+    b = n(549996),
+    I = n(371764),
     v = n(130946),
-    O = n(103411),
-    j = n(534217),
+    j = n(103411),
+    O = n(534217),
     R = n(194509),
     y = n(396375),
     P = n(65470),
@@ -71,27 +71,27 @@ let q = (e, t, s) => {
             shouldShowReferralProgressBar: o
         } = e, {
             headingText: d,
-            headingTop: A,
+            headingTop: m,
             showPill: p,
             userDiscountOffer: x,
             discountedPrice: T,
             buttonVisibilityRef: S
         } = en(), {
             analyticsLocations: C
-        } = (0, g.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), O = (0, N.c)(a.C.MARKETING_PAGE_BANNER), R = null;
-        null != O && "marketingPageBanner" === O.properties.properties.oneofKind ? R = (0, i.jsx)(b.x, {
-            componentId: O.id,
-            promotionBannerMarketingComponentFields: O.properties.properties.marketingPageBanner
+        } = (0, g.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), j = (0, b.c)(a.C.MARKETING_PAGE_BANNER), R = null;
+        null != j && "marketingPageBanner" === j.properties.properties.oneofKind ? R = (0, i.jsx)(I.x, {
+            componentId: j.id,
+            promotionBannerMarketingComponentFields: j.properties.properties.marketingPageBanner
         }) : n ? R = (0, i.jsx)(v.A, {
             variant: v.c.SUBSCRIBER_HOME
-        }) : s ? R = (0, i.jsx)(V.A, {}) : o && (R = (0, i.jsx)(j.S, {}));
+        }) : s ? R = (0, i.jsx)(V.A, {}) : o && (R = (0, i.jsx)(O.S, {}));
         let y = (0, r.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
             M = null != y && y.status === Y.Dmq.CANCELED && null != x,
-            k = (0, f.V)(),
-            K = (0, I.O)(),
+            k = (0, N.V)(),
+            K = (0, f.O)(),
             Z = (0, L.U9)(K, F.pe.TIER_2) ? F.pe.TIER_2 : void 0,
             J = null != y && y.status !== Y.Dmq.ACCOUNT_HOLD && y.hasAnyPremiumNitro,
-            Q = (0, m.A)().isFractionalPremiumActive && !J && null == R && !M,
+            Q = (0, A.A)().isFractionalPremiumActive && !J && null == R && !M,
             $ = (0, r.bG)([u.A], () => u.A.useReducedMotion),
             {
                 visibilityPercentageRef: ee,
@@ -104,7 +104,7 @@ let q = (e, t, s) => {
             children: (0, i.jsxs)("div", {
                 className: W.Qs,
                 ref: ee,
-                children: [p && A, (0, i.jsxs)("div", {
+                children: [p && m, (0, i.jsxs)("div", {
                     className: W.N1,
                     children: [(0, i.jsx)(H.A, {
                         containerVisibilityPercentage: et
@@ -156,8 +156,8 @@ let q = (e, t, s) => {
             discountedPrice: o,
             buttonVisibilityRef: u
         } = en(), {
-            analyticsLocations: A
-        } = (0, g.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), p = (0, r.bG)([h.A], () => h.A.getPremiumTypeSubscription()), x = null != p && p.status === Y.Dmq.CANCELED && null != a, T = (0, f.V)(), S = (0, I.O)(), C = (0, L.U9)(S, F.pe.TIER_2) ? F.pe.TIER_2 : void 0, N = null != p && p.status !== Y.Dmq.ACCOUNT_HOLD && p.hasAnyPremiumNitro, b = (0, m.A)().isFractionalPremiumActive && !N && !x;
+            analyticsLocations: m
+        } = (0, g.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), p = (0, r.bG)([h.A], () => h.A.getPremiumTypeSubscription()), x = null != p && p.status === Y.Dmq.CANCELED && null != a, T = (0, N.V)(), S = (0, f.O)(), C = (0, L.U9)(S, F.pe.TIER_2) ? F.pe.TIER_2 : void 0, b = null != p && p.status !== Y.Dmq.ACCOUNT_HOLD && p.hasAnyPremiumNitro, I = (0, A.A)().isFractionalPremiumActive && !b && !x;
         return (0, i.jsxs)("div", {
             className: l()(X.kL, t),
             "data-testid": "subscriber-nitro-home-hero-header",
@@ -189,7 +189,7 @@ let q = (e, t, s) => {
                     })
                 }), (0, i.jsxs)("div", {
                     className: X.$J,
-                    children: [b && (0, i.jsx)(y.A, {
+                    children: [I && (0, i.jsx)(y.A, {
                         color: d.XD.BRAND,
                         className: l()(X.x6, X.xF),
                         subscriptionTier: T?.subscription_trial?.sku_id ?? C
@@ -200,7 +200,7 @@ let q = (e, t, s) => {
                             icon: c.tvc,
                             size: "md",
                             text: z.intl.string(z.t.zrCzVB),
-                            onClick: () => q(A, p, U.g.CONFIRM_DISCOUNT),
+                            onClick: () => q(m, p, U.g.CONFIRM_DISCOUNT),
                             fullWidth: !0
                         }), (0, i.jsx)(P.A, {
                             variant: "overlay-secondary",
@@ -253,7 +253,7 @@ let q = (e, t, s) => {
                             },
                             className: X.x6
                         })
-                    }), (0, i.jsx)(j.S, {
+                    }), (0, i.jsx)(O.S, {
                         className: X.Qq
                     })]
                 })
@@ -309,17 +309,17 @@ let q = (e, t, s) => {
             discountedPrice: r
         } = e, {
             analyticsLocations: d
-        } = (0, g.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), u = (0, C.d)(), h = (0, T.cg)(), p = (0, S.QQ)(), E = z.intl.string(z.t.qYKftX), I = (0, O.m)(), f = (0, i.jsx)(Q, {
+        } = (0, g.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), u = (0, C.d)(), h = (0, T.cg)(), p = (0, S.QQ)(), E = z.intl.string(z.t.qYKftX), f = (0, j.m)(), N = (0, i.jsx)(Q, {
             className: t
-        }), N = z.intl.string(z.t.ifwQZb), {
-            fractionalState: b,
+        }), b = z.intl.string(z.t.ifwQZb), {
+            fractionalState: I,
             endsAt: v
-        } = (0, m.A)(), j = (0, A.Ay)(v, A.yE.CREDITS_ENDS_IN);
-        u || h ? f = (0, i.jsx)(ee, {
+        } = (0, A.A)(), O = (0, m.Ay)(v, m.yE.CREDITS_ENDS_IN);
+        u || h ? N = (0, i.jsx)(ee, {
             isEligibleForBogoPromotion: h
-        }) : I && (E = z.intl.string(z.t.qYKftX), f = (0, i.jsx)($, {}));
+        }) : f && (E = z.intl.string(z.t.qYKftX), N = (0, i.jsx)($, {}));
         let R = null;
-        if (b === F.xc.NONE || u) R = n ? (0, i.jsx)(k.A, {
+        if (I === F.xc.NONE || u) R = n ? (0, i.jsx)(k.A, {
             enablePremiumBrandRefresh: !0,
             text: E
         }) : (0, i.jsx)(M.ir, {
@@ -353,12 +353,12 @@ let q = (e, t, s) => {
                         className: X.eL,
                         children: n ? (0, i.jsx)(k.A, {
                             enablePremiumBrandRefresh: !0,
-                            text: j
+                            text: O
                         }) : (0, i.jsx)(M.R, {
                             className: l()(X.Av, {
                                 [X.R]: !p
                             }),
-                            text: j,
+                            text: O,
                             colorOptions: M.at.PREMIUM_TIER_2_WHITE_FILL,
                             icon: e,
                             gap: !1
@@ -371,7 +371,7 @@ let q = (e, t, s) => {
             value: d,
             children: (0, i.jsx)(et.Provider, {
                 value: {
-                    headingText: N,
+                    headingText: b,
                     headingTop: R,
                     showPill: p,
                     userDiscountOffer: a,
@@ -382,8 +382,8 @@ let q = (e, t, s) => {
                     className: t,
                     isEligibleForBogoPromotion: h,
                     isInReverseTrial: u,
-                    shouldShowReferralProgressBar: I
-                }) : f
+                    shouldShowReferralProgressBar: f
+                }) : N
             })
         })
     }

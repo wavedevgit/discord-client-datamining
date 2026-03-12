@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(975571),
     _ = n(115063),
     g = n(104954),
-    A = n(975648),
-    m = n(871930),
+    m = n(975648),
+    A = n(871930),
     h = n(531525),
     p = n(652215),
     x = n(985018),
@@ -25,25 +25,25 @@ function T() {
         {
             currentHarvestType: t,
             awaitingInitialRequest: l
-        } = (0, r.cf)([A.A], () => ({
-            currentHarvestType: A.A.harvestType,
-            awaitingInitialRequest: A.A.requestingHarvest
+        } = (0, r.cf)([m.A], () => ({
+            currentHarvestType: m.A.harvestType,
+            awaitingInitialRequest: m.A.requestingHarvest
         })),
         [T, S] = s.useState(!1);
     if (null == e) return null;
     let C = (0, _.Oj)(t, e) || l,
-        I = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
-        f = C && I,
-        N = e.isStaff(),
-        b = !e.verified;
-    return (0, i.jsxs)(m.h, {
+        f = null != t && a()().diff(a()(t.created_at), "days") < p.n83,
+        N = C && f,
+        b = e.isStaff(),
+        I = !e.verified;
+    return (0, i.jsxs)(A.h, {
         setting: h.H.PRIVACY_DATA_REQUEST_V2,
-        children: [(0, i.jsx)(m._, {
+        children: [(0, i.jsx)(A._, {
             header: x.intl.string(x.t.XAHCgJ),
             description: x.intl.format(x.t.P3kNfr, {
                 helpdeskArticle: u.A.getArticleURL(p.MVz.GDPR_REQUEST_DATA)
             })
-        }), f ? (0, i.jsx)(o.ZpM, {
+        }), N ? (0, i.jsx)(o.ZpM, {
             className: E.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
@@ -51,14 +51,14 @@ function T() {
                     date: a()(t.created_at).add(p.n83, "days").format("MMMM Do YYYY")
                 })
             })
-        }) : N ? (0, i.jsx)(o.ZpM, {
+        }) : b ? (0, i.jsx)(o.ZpM, {
             className: E.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: x.intl.string(x.t.ZPQLH2)
             })
         }) : (0, i.jsxs)(i.Fragment, {
-            children: [b ? (0, i.jsx)(o.ZpM, {
+            children: [I ? (0, i.jsx)(o.ZpM, {
                 className: E.N,
                 children: (0, i.jsx)(o.Text, {
                     variant: "text-md/normal",

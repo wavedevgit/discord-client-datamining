@@ -14,8 +14,8 @@ var s = n(311907),
     u = n(71393),
     _ = n(67480),
     g = n(163437),
-    A = n(185438),
-    m = n(572566),
+    m = n(185438),
+    A = n(572566),
     h = n(652215),
     p = n(985018),
     x = n(103224);
@@ -25,13 +25,13 @@ function E(e) {
         app: t,
         currentSubscription: n,
         currentListing: l,
-        alternativeListings: A,
+        alternativeListings: m,
         navigateToHome: h,
         subscriptionGroup: E,
         renewalSkuId: S
-    } = e, C = (0, r.A)(t, 100), I = (0, g.PJ)(E.flags), f = I ? a.RR9 : a.nys, N = I ? p.intl.string(p.t["46YF2D"]) : p.intl.string(p.t.fFyGiA), b = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => I && null != b ? u.A.getGuild(b) : void 0, [b, I]), O = (0, s.bG)([_.A], () => {
+    } = e, C = (0, r.A)(t, 100), f = (0, g.PJ)(E.flags), N = f ? a.RR9 : a.nys, b = f ? p.intl.string(p.t["46YF2D"]) : p.intl.string(p.t.fFyGiA), I = n.metadata?.application_subscription_guild_id, v = (0, s.bG)([u.A], () => f && null != I ? u.A.getGuild(I) : void 0, [I, f]), j = (0, s.bG)([_.A], () => {
         if (null != S) return _.A.get(S)
-    }, [S]), j = (0, m.Y)(n.currentPeriodEnd);
+    }, [S]), O = (0, A.Y)(n.currentPeriodEnd);
     return (0, i.jsxs)("div", {
         children: [(0, i.jsxs)("div", {
             className: x.wx,
@@ -49,10 +49,10 @@ function E(e) {
                     children: [(0, i.jsxs)(a.Heading, {
                         variant: "heading-md/normal",
                         className: x.N4,
-                        children: [(0, i.jsx)(f, {
+                        children: [(0, i.jsx)(N, {
                             size: "xs",
                             color: "currentColor"
-                        }), " ", N]
+                        }), " ", b]
                     }), null != v && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(a.Text, {
                             variant: "text-md/normal",
@@ -102,26 +102,26 @@ function E(e) {
                         variant: "eyebrow",
                         color: "text-brand",
                         children: p.intl.string(p.t.fHIpOY)
-                    }), null != O && (0, i.jsx)(a.Text, {
+                    }), null != j && (0, i.jsx)(a.Text, {
                         variant: "text-sm/semibold",
                         color: "text-subtle",
                         children: p.intl.format(p.t["OQk+jr"], {
-                            endDate: j
+                            endDate: O
                         })
                     })]
                 })
-            }), A.map(e => e.skuId === S ? (0, i.jsx)(d.A, {
+            }), m.map(e => e.skuId === S ? (0, i.jsx)(d.A, {
                 storeListing: e,
                 cta: (0, i.jsx)(a.Text, {
                     variant: "text-sm/semibold",
                     color: "text-subtle",
                     children: p.intl.format(p.t.nn88hB, {
-                        startDate: j
+                        startDate: O
                     })
                 })
             }, e.id) : (0, i.jsx)(T, {
                 storeListing: e,
-                guildId: b,
+                guildId: I,
                 navigateToHome: h
             }, e.id))]
         })]
@@ -135,7 +135,7 @@ function T(e) {
         navigateToHome: s
     } = e, {
         openModal: a
-    } = (0, A.A)({
+    } = (0, m.A)({
         analyticsLocation: h.ThZ.APP_SUBSCRIPTIONS_MANAGEMENT,
         skuId: t.skuId,
         initialSubscribeForGuild: n,

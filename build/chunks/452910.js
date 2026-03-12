@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(396375),
     _ = n(543233),
     g = n(76707),
-    A = n(788868),
-    m = n(985018),
+    m = n(788868),
+    A = n(985018),
     h = n(538662);
 let p = e => {
     let {
@@ -28,23 +28,23 @@ let p = e => {
         isPremiumGetCta: T,
         onCtaClick: S,
         cardVariant: C
-    } = e, I = (0, c.V)(), f = I?.subscription_trial, N = (0, d.O)(), b = (0, r.FY)({
-        intervalType: f?.interval,
-        intervalCount: f?.interval_count
+    } = e, f = (0, c.V)(), N = f?.subscription_trial, b = (0, d.O)(), I = (0, r.FY)({
+        intervalType: N?.interval,
+        intervalCount: N?.interval_count
     }), v = (0, o.G)({
-        defaultResponse: m.intl.string(m.t["8x0jKT"]),
-        onNonTier2Subscriber: m.intl.string(m.t.IJI7yk),
-        onTier2TrialOffer: b,
-        onTier0TrialOffer: b,
-        onDiscountOffer: m.intl.formatToPlainString(m.t.bkQ4bH, {
-            percent: N?.discount.amount
+        defaultResponse: A.intl.string(A.t["8x0jKT"]),
+        onNonTier2Subscriber: A.intl.string(A.t.IJI7yk),
+        onTier2TrialOffer: I,
+        onTier0TrialOffer: I,
+        onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
+            percent: b?.discount.amount
         })
-    }), O = (0, _.Q)(C);
+    }), j = (0, _.Q)(C);
     return (0, i.jsxs)("div", {
-        className: l()(h.L_, O?.overlayContainer?.className),
+        className: l()(h.L_, j?.overlayContainer?.className),
         children: [(0, i.jsx)(g.A, {
             title: t,
-            cardVariantStyleInfo: O,
+            cardVariantStyleInfo: j,
             titleClassName: n,
             subtitle: p,
             description: x,
@@ -53,7 +53,7 @@ let p = e => {
             className: s,
             look: a.$n.Looks.BLANK,
             color: a.$n.Colors.CUSTOM,
-            subscriptionTier: A.pe.TIER_2,
+            subscriptionTier: m.pe.TIER_2,
             textOptions: {
                 textOverride: v
             },

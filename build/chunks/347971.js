@@ -21,12 +21,13 @@ function u() {
             if (null == e || "" === e) return void c.setState({
                 error: "URL is required"
             });
-            let t = (0, o.default)(e);
-            null == t ? c.setState({
+            let t = (0, o.default)({
+                path: e
+            });
+            ((0, o.trackParseSettingsUrl)(t, "devtools"), null == t.target) ? c.setState({
                 error: "String did not match expected format"
-            }) : (0, d.openUserSettingsFromParsedUrl)({
-                match: t,
-                urlOrigin: "devtools"
+            }): (0, d.openUserSettings)(t.target, {
+                path: t.path
             })
         }, []);
     return (0, a.jsxs)(s.nVY, {

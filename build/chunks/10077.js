@@ -25,18 +25,18 @@ let c = {
 };
 
 function u() {
-    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), _ = d.map(e => u[e]), g = a.Pw.useSetting(), [A, m] = (0, s.useState)(g);
+    let [e, t] = (0, s.useState)(""), [n, i] = (0, s.useState)("server-order"), d = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), u = (0, l.bG)([r.A], () => r.A.getGuilds()), _ = d.map(e => u[e]), g = a.Pw.useSetting(), [m, A] = (0, s.useState)(g);
     (0, s.useEffect)(() => {
-        m(g)
+        A(g)
     }, [g]);
     let h = async e => {
-        m(e);
+        A(e);
         try {
             await a.Pw.updateSetting(e)
         } catch (e) {
-            m(g)
+            A(g)
         }
-    }, p = 0 !== A.length, [x, E] = (0, s.useState)(() => c[n](_, g)), T = x.map(e => u[e.id]).filter(Boolean);
+    }, p = 0 !== m.length, [x, E] = (0, s.useState)(() => c[n](_, g)), T = x.map(e => u[e.id]).filter(Boolean);
     return {
         guilds: "" === e ? T : T.filter(t => t.name.toLowerCase().includes(e.toLowerCase())),
         sortOrder: n,
@@ -49,15 +49,15 @@ function u() {
             let {
                 checked: t,
                 guildId: n
-            } = e, i = new Set(A);
+            } = e, i = new Set(m);
             t ? i.delete(n) : i.add(n), h([...i])
         },
-        isActivityRestricted: e => A.includes(e),
+        isActivityRestricted: e => m.includes(e),
         hasActivityRestrictedGuilds: p,
         onToggleAllActivityRestrictedGuilds: () => {
             p ? h([]) : h(d)
         },
         numTotalGuilds: d.length,
-        numActivityRestrictedGuilds: A.length
+        numActivityRestrictedGuilds: m.length
     }
 }

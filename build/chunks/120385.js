@@ -29,7 +29,7 @@ async function _(e) {
 function g(e) {
     let {
         payment: t
-    } = e, [n, l] = s.useState(null), [o, g] = s.useState(null), A = async e => {
+    } = e, [n, l] = s.useState(null), [o, g] = s.useState(null), m = async e => {
         try {
             let n = await _(t.id);
             l(n);
@@ -38,15 +38,15 @@ function g(e) {
         } catch (e) {
             g(e.body?.message)
         }
-    }, m = null != t.paymentSource && t.status === d.__.COMPLETED, h = n?.invoiceLink, p = n?.refundInvoiceLinks;
+    }, A = null != t.paymentSource && t.status === d.__.COMPLETED, h = n?.invoiceLink, p = n?.refundInvoiceLinks;
     return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
-            onClick: () => A(!1),
+            onClick: () => m(!1),
             children: c.intl.formatToPlainString(c.t.R0xzCN, {})
         }), t.hasRefundInvoiceURLs ? (0, i.jsx)(a.MzZ, {
             className: u.oe,
-            onClick: () => A(!0),
+            onClick: () => m(!0),
             children: c.intl.formatToPlainString(c.t["3x6NGw"], {})
         }) : null, null != o && "" !== o && (0, i.jsx)(a.wx6, {
             type: "critical",
@@ -65,7 +65,7 @@ function g(e) {
             type: "critical",
             children: o
         })]
-    }) : m ? (0, i.jsx)("div", {
+    }) : A ? (0, i.jsx)("div", {
         className: u.It,
         children: (0, i.jsx)(a.MzZ, {
             onClick: () => {

@@ -1,6 +1,6 @@
 /** chunk id: 332191 params = (module,exports,require) **/
 n.d(t, {
-    J: () => A
+    J: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -14,14 +14,14 @@ var i = n(627968),
     _ = n(985018),
     g = n(378945);
 
-function A() {
+function m() {
     let e = (0, o.XQ)(),
         [t, n] = s.useState(!1),
-        [A, m] = s.useState(() => (0, o.TC)()),
+        [m, A] = s.useState(() => (0, o.TC)()),
         h = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
         p = s.useCallback(async () => {
-            n(!0), A ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), m((0, o.TC)())
-        }, [A]);
+            n(!0), m ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), A((0, o.TC)())
+        }, [m]);
     if (!e) return null;
     let x = "running" === h.state;
     return (0, i.jsxs)("div", {
@@ -38,7 +38,7 @@ function A() {
                 children: _.intl.format(_.t["8CAL+D"], {
                     helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), A ? (0, i.jsx)(a.Text, {
+            }), m ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: x ? "text-feedback-positive" : "text-feedback-warning",
                 children: x ? _.intl.string(_.t.KHVMkW) : _.intl.format(_.t["5Rlr0b"], {
@@ -69,10 +69,10 @@ function A() {
                 })
             }) : null]
         }), (0, i.jsx)(a.Button, {
-            variant: A ? "critical-secondary" : "primary",
+            variant: m ? "critical-secondary" : "primary",
             loading: t,
             onClick: p,
-            text: A ? _.intl.string(_.t.pAwbdL) : _.intl.string(_.t["1iI46O"])
+            text: m ? _.intl.string(_.t.pAwbdL) : _.intl.string(_.t["1iI46O"])
         })]
     })
 }

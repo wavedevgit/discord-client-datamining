@@ -1,7 +1,7 @@
 /** chunk id: 932055 params = (module,exports,require) **/
 n.d(t, {
     Jz: () => g,
-    i: () => A,
+    i: () => m,
     vd: () => _
 }), n(321073);
 var i = n(311907),
@@ -32,7 +32,7 @@ function g(e) {
     })
 }
 
-function A(e) {
+function m(e) {
     return (0, a.zD)(`${d.X.SOUNDS_LIST_ITEM_PREFIX}${e.sound}`, {
         useTitle: e.useTitle,
         useSubtitle: () => c.intl.format(c.t.OOiGCM, {

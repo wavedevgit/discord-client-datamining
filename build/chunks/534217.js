@@ -1,6 +1,6 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => N
+    S: () => b
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(427262),
     _ = n(326084),
     g = n(851746),
-    A = n(617461),
-    m = n(664654),
+    m = n(617461),
+    A = n(664654),
     h = n(303682),
     p = n(652215),
     x = n(985018),
@@ -48,7 +48,7 @@ let S = e => {
             children: t
         })
     },
-    I = e => {
+    f = e => {
         let {
             referralSentUsers: t
         } = e;
@@ -56,7 +56,7 @@ let S = e => {
             className: E.L$,
             children: (() => {
                 let e = [];
-                for (let n = 0; n < m.Z; n++)
+                for (let n = 0; n < A.Z; n++)
                     if (t?.[n] !== void 0) {
                         let s = (0, i.jsx)(S, {
                             user: t[n]
@@ -71,7 +71,7 @@ let S = e => {
             })()
         })
     },
-    f = e => {
+    N = e => {
         let {
             nReferralsSent: t
         } = e;
@@ -81,7 +81,7 @@ let S = e => {
             background: E.cq,
             strokeSize: .8,
             ringColorOverrideClassName: E.e0,
-            overlayClassName: t === m.Z ? E.ys : void 0,
+            overlayClassName: t === A.Z ? E.ys : void 0,
             children: (0, i.jsx)(r._V3, {
                 src: T.A,
                 height: 93,
@@ -90,22 +90,22 @@ let S = e => {
             })
         })
     },
-    N = e => {
+    b = e => {
         let {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, m.J)(), o = (0, a.bG)([g.A], () => g.A.getRecipientStatus()), u = (0, a.bG)([g.A], () => g.A.getHasEligibleFriends()), T = o.size === m.Z && [...o.values()].every(e => e === _.aK.REDEEMED), S = o.size === m.Z;
+        } = (0, A.J)(), o = (0, a.bG)([g.A], () => g.A.getRecipientStatus()), u = (0, a.bG)([g.A], () => g.A.getHasEligibleFriends()), T = o.size === A.Z && [...o.values()].every(e => e === _.aK.REDEEMED), S = o.size === A.Z;
         return (0, i.jsxs)("div", {
             className: l()(E.kL, t),
             children: [(0, i.jsx)("div", {
                 className: E.G3,
-                children: (0, i.jsx)(f, {
+                children: (0, i.jsx)(N, {
                     nReferralsSent: o.size
                 })
             }), (0, i.jsxs)("div", {
                 className: E.IH,
-                children: [(0, i.jsx)(I, {
+                children: [(0, i.jsx)(f, {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
                     className: E.n4,
@@ -118,7 +118,7 @@ let S = e => {
                         color: "text-subtle",
                         children: !1 === u ? x.intl.format(x.t["zWhX/Q"], {
                             helpdeskArticle: c.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
-                        }) : s.length === m.Z ? !0 === T ? x.intl.format(x.t["1aEjsH"], {
+                        }) : s.length === A.Z ? !0 === T ? x.intl.format(x.t["1aEjsH"], {
                             helpdeskArticle: c.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
                         }) : x.intl.format(x.t["+u3AOO"], {
                             helpdeskArticle: c.A.getArticleURL(p.MVz.REFERRAL_PROGRAM)
@@ -130,20 +130,20 @@ let S = e => {
                     variant: "primary",
                     disabled: !1 === u || !0 === S,
                     text: (() => {
-                        switch (A.$.getConfig({
+                        switch (m.$.getConfig({
                                 location: "ReferralBanner"
                             }).variation) {
-                            case A.e.CONTROL:
+                            case m.e.CONTROL:
                                 return x.intl.string(x.t.Lm2nFc);
-                            case A.e.VARIANT_1:
+                            case m.e.VARIANT_1:
                                 return x.intl.string(x.t["8wL38m"]);
-                            case A.e.VARIANT_2:
+                            case m.e.VARIANT_2:
                                 return x.intl.string(x.t["Pr/W5F"]);
-                            case A.e.VARIANT_3:
+                            case m.e.VARIANT_3:
                                 return x.intl.string(x.t.ojpNKb);
-                            case A.e.VARIANT_4:
+                            case m.e.VARIANT_4:
                                 return x.intl.string(x.t["YL8/wJ"]);
-                            case A.e.VARIANT_5:
+                            case m.e.VARIANT_5:
                                 return x.intl.string(x.t.C7iByj)
                         }
                     })(),

@@ -1,6 +1,6 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -15,13 +15,13 @@ var s = n(311907),
     _ = n(840065),
     g = n(652215);
 
-function A() {
+function m() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: A,
-        isLoggingAnalyticsEvents: m,
+        isLoggingOverlayEvents: m,
+        isLoggingAnalyticsEvents: A,
         isTracingRequests: h,
         isForcedCanary: p,
         isAxeEnabled: x,
@@ -43,11 +43,11 @@ function A() {
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
         horizontalSpacing: C,
-        verticalSpacing: I
+        verticalSpacing: f
     } = (0, r.Or)(), {
-        setHorizontalSpacing: f,
-        setVerticalSpacing: N
-    } = r.Or.getState(), b = c.HZ.useSetting();
+        setHorizontalSpacing: N,
+        setVerticalSpacing: b
+    } = r.Or.getState(), I = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -59,9 +59,9 @@ function A() {
         children: [(0, i.jsx)(l.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: b,
+            checked: I,
             action: () => {
-                c.HZ.updateSetting(!b)
+                c.HZ.updateSetting(!I)
             }
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
@@ -111,19 +111,19 @@ function A() {
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: A,
+            checked: m,
             action: () => {
                 (0, a.x)({
-                    logOverlayEvents: !A
+                    logOverlayEvents: !m
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
             id: "analytics-events",
             label: "Analytics Events",
-            checked: m,
+            checked: A,
             action: () => {
                 (0, a.x)({
-                    logAnalyticsEvents: !m
+                    logAnalyticsEvents: !A
                 })
             }
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
@@ -181,7 +181,7 @@ function A() {
                     value: C,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => f(e),
+                    onChange: e => N(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -191,10 +191,10 @@ function A() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: I,
+                    value: f,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => N(e),
+                    onChange: e => b(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`
                 })

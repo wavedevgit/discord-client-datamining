@@ -1,10 +1,10 @@
 /** chunk id: 762183 params = (module,exports,require) **/
-I.d(_, {
-    K: () => S
+A.d(_, {
+    K: () => T
 });
-var A = I(253932);
-let S = () => {
-    let E = A.Zt.useSetting(),
-        _ = A.n6.useSetting();
+var I = A(253932);
+let T = () => {
+    let E = I.Zt.useSetting(),
+        _ = I.n6.useSetting();
     return null != _ ? _ : !!E || E
 }

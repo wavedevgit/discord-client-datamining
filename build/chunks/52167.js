@@ -13,8 +13,8 @@ var i = n(417597),
     u = n(652215),
     _ = n(355097),
     g = n(985018),
-    A = n(420643),
-    m = n(755165),
+    m = n(420643),
+    A = n(755165),
     h = n(542838),
     p = n(9523),
     x = n(416999),
@@ -22,13 +22,13 @@ var i = n(417597),
     T = n(252373),
     S = n(522799),
     C = n(795710),
-    I = n(484813),
-    f = n(1748),
-    N = n(772473),
-    b = n(64514),
+    f = n(484813),
+    N = n(1748),
+    b = n(772473),
+    I = n(64514),
     v = n(121818),
-    O = n(536851),
-    j = n(992186),
+    j = n(536851),
+    O = n(992186),
     R = n(629139),
     y = n(753563),
     P = n(584378),
@@ -56,20 +56,20 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             badgeAlt: {
                 title: g.intl.string(g.t["5cYMu0"]),
                 description: g.intl.string(g.t.vxk9va),
-                imageSource: U(s, A, m),
+                imageSource: U(s, m, A),
                 imageClassName: t.badgeNewImage
             },
             clientThemes: {
                 title: g.intl.string(g.t["/xvEMy"]),
                 description: g.intl.string(g.t.HKWdjj),
                 className: t.clientThemesCard,
-                imageSource: O,
+                imageSource: j,
                 imageClassName: t.clientThemesImage
             },
             customAppIcons: {
                 title: g.intl.string(g.t.OuItFi),
                 description: g.intl.string(g.t.mPyrE6),
-                imageSource: j,
+                imageSource: O,
                 imageClassName: t.customAppIconImage
             },
             emoji: {
@@ -129,19 +129,19 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             stickers: {
                 title: g.intl.string(g.t["1c+xwT"]),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, I, L),
+                imageSource: U(s, f, L),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, I, L),
+                imageSource: U(s, f, L),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: g.intl.string(g.t.tzdIwI),
                 description: g.intl.string(g.t.hJG8ZN),
-                imageSource: U(s, I, L),
+                imageSource: U(s, f, L),
                 imageClassName: t.stickersImage
             },
             streaming: {
@@ -153,7 +153,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             superReactions: {
                 title: g.intl.string(g.t["uZt5q/"]),
                 description: g.intl.string(g.t.ZK3ZoX),
-                imageSource: U(s, f, N),
+                imageSource: U(s, N, b),
                 imageClassName: t.superReactionsImage
             },
             upload: {
@@ -169,7 +169,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             videoBackground: {
                 title: g.intl.string(g.t.NaGpTf),
                 description: g.intl.string(g.t["A8O/Qw"]),
-                imageSource: U(s, b, v),
+                imageSource: U(s, I, v),
                 imageClassName: t.videoBackgroundImage
             }
         }

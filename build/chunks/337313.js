@@ -1,7 +1,7 @@
 /** chunk id: 337313 params = (module,exports,require) **/
 n.d(t, {
     S: () => g,
-    T: () => A
+    T: () => m
 });
 var i = n(311907),
     s = n(233545),
@@ -23,7 +23,7 @@ function g() {
         return t && n && i
     })
 }
-let A = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
+let m = (0, l.zD)(c.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
     useTitle: () => _.intl.string(_.t.U4FgFK),
     useSubtitle: () => _.intl.string(_.t.Lm72RU),
     useValue: function() {

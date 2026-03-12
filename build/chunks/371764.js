@@ -14,8 +14,8 @@ var s = n(110259),
     u = n(212245),
     _ = n(688810),
     g = n(139286),
-    A = n(975571),
-    m = n(498470),
+    m = n(975571),
+    A = n(498470),
     h = n(637706),
     p = n(985018),
     x = n(577504);
@@ -34,7 +34,7 @@ let E = e => {
             component_id: t
         }
     });
-    let S = (0, m.h)({
+    let S = (0, A.h)({
             buttonAction: n.button?.buttonAction ?? o.dz.OPEN_TIER_2_PAYMENT_MODAL,
             analyticsLocations: E,
             analyticsLocation: T.location
@@ -62,7 +62,7 @@ let E = e => {
                 children: [C, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(c.MzZ, {
                         className: x.$T,
-                        href: A.A.getArticleURL(n.helpArticleId),
+                        href: m.A.getArticleURL(n.helpArticleId),
                         children: p.intl.string(p.t["sBp+u0"])
                     })]
                 })]

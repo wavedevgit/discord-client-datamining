@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(775602),
     _ = n(531260),
     g = n(657516),
-    A = n(983511),
-    m = n(342744),
+    m = n(983511),
+    A = n(342744),
     h = n(87719),
     p = n(287809),
     x = n(166403),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(927578),
     S = n(432334),
     C = n(101135),
-    I = n(708030),
-    f = n(652215),
-    N = n(788868),
-    b = n(985018),
+    f = n(708030),
+    N = n(652215),
+    b = n(788868),
+    I = n(985018),
     v = n(412026);
 
-function O(e) {
+function j(e) {
     let {
         guildBoostSlot: t,
         isCancellable: n,
@@ -37,20 +37,20 @@ function O(e) {
         premiumSubscription: r,
         useReducedMotion: u,
         fractionalState: _
-    } = e, g = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), A = (0, E.I5)(t), m = r?.isPaused === !0 && _ === N.xc.NONE, h = b.intl.string(b.t.mOWsF1);
+    } = e, g = s.useMemo(() => null != t.cooldownEndsAt ? new Date(t.cooldownEndsAt) : null, [t]), m = (0, E.I5)(t), A = r?.isPaused === !0 && _ === b.xc.NONE, h = I.intl.string(I.t.mOWsF1);
     return (0, i.jsxs)("li", {
         className: v.Hp,
         children: [(0, i.jsxs)("div", {
             className: v.YL,
-            children: [(0, i.jsx)(I.A, {
+            children: [(0, i.jsx)(f.A, {
                 className: v.W6,
                 hasCooldown: t.isOnCooldown(),
-                isCanceled: A,
+                isCanceled: m,
                 useReducedMotion: u
-            }), A && null != r ? (0, i.jsx)(c.Text, {
+            }), m && null != r ? (0, i.jsx)(c.Text, {
                 color: "text-muted",
                 variant: "text-sm/medium",
-                children: b.intl.format(b.t.Z4ULRD, {
+                children: I.intl.format(I.t.Z4ULRD, {
                     date: r.currentPeriodEnd
                 })
             }) : t.isOnCooldown() && null != g ? (0, i.jsx)(C.A, {
@@ -59,12 +59,12 @@ function O(e) {
                 className: v.__invalid_unappliedGuildBoostSlotDescription,
                 color: "text-muted",
                 variant: "text-sm/medium",
-                children: b.intl.string(b.t["2mcafz"])
+                children: I.intl.string(I.t["2mcafz"])
             })]
         }), (0, i.jsxs)("div", {
             className: v.E7,
-            children: [n && !A && (0, i.jsx)(o.A, {
-                shouldShow: m,
+            children: [n && !m && (0, i.jsx)(o.A, {
+                shouldShow: A,
                 text: h,
                 "aria-label": h.toString(),
                 children: e => (0, i.jsx)("div", {
@@ -72,14 +72,14 @@ function O(e) {
                     children: (0, i.jsx)(d.QWc, {
                         ...e,
                         variant: "primary",
-                        text: b.intl.string(b.t.twFU3R),
+                        text: I.intl.string(I.t.twFU3R),
                         onClick: () => l(t),
-                        disabled: m,
+                        disabled: A,
                         size: "sm"
                     })
                 })
-            }), A && (0, i.jsx)(o.A, {
-                shouldShow: m,
+            }), m && (0, i.jsx)(o.A, {
+                shouldShow: A,
                 text: h,
                 "aria-label": h.toString(),
                 children: e => (0, i.jsx)("div", {
@@ -87,9 +87,9 @@ function O(e) {
                     children: (0, i.jsx)(d.QWc, {
                         ...e,
                         variant: "primary",
-                        text: b.intl.string(b.t["2glQNp"]),
+                        text: I.intl.string(I.t["2glQNp"]),
                         onClick: () => a(t),
-                        disabled: m,
+                        disabled: A,
                         size: "sm"
                     })
                 })
@@ -98,15 +98,15 @@ function O(e) {
     }, t.id)
 }
 
-function j(e) {
-    (0, c.mMO)(async () => t => (0, i.jsx)(A.default, {
+function O(e) {
+    (0, c.mMO)(async () => t => (0, i.jsx)(m.default, {
         ...t,
         guildBoostSlot: e
     }))
 }
 
 function R(e) {
-    (0, c.mMO)(async () => t => (0, i.jsx)(m.default, {
+    (0, c.mMO)(async () => t => (0, i.jsx)(A.default, {
         ...t,
         guildBoostSlotId: e.id
     }))
@@ -115,15 +115,15 @@ let y = function(e) {
     let t, n, l, {
             guildBoostSlots: d
         } = e,
-        A = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
-        m = A?.isPausedOrPausePending === !0,
+        m = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+        A = m?.isPausedOrPausePending === !0,
         {
             fractionalState: C
         } = (0, _.A)(),
-        I = (0, r.bG)([u.A], () => u.A.useReducedMotion),
+        f = (0, r.bG)([u.A], () => u.A.useReducedMotion),
         y = (0, r.bG)([p.default], () => p.default.getCurrentUser()),
-        P = C === N.xc.FP_SUB_PAUSED,
-        D = m && !P,
+        P = C === b.xc.FP_SUB_PAUSED,
+        D = A && !P,
         {
             appliedGuildBoostSlots: L,
             unappliedGuildBoostSlots: G,
@@ -146,7 +146,7 @@ let y = function(e) {
                 allGuildBoostsAreOnCooldown: s
             }
         }, [d]),
-        V = null != A ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(A.planId) : 0,
+        V = null != m ? T.Ay.getNumIncludedPremiumGuildSubscriptionSlots(m.planId) : 0,
         w = Math.max(0, V - L.length),
         H = M > V,
         B = V === d.length,
@@ -155,16 +155,16 @@ let y = function(e) {
             let e = [];
             for (let t = 0; t < F; t++) e.push((0, i.jsx)(S.A, {
                 className: v.YA,
-                useReducedMotion: I
+                useReducedMotion: f
             }, t));
             return e
-        }, [F, I]),
+        }, [F, f]),
         z = s.useMemo(() => G.find(e => e.isAvailable()), [G]);
     if (0 === G.length) return null;
     let X = G.length;
-    if (t = B ? b.intl.formatToPlainString(k ? b.t["3DW6Dc"] : b.t["/u15Qc"], {
+    if (t = B ? I.intl.formatToPlainString(k ? I.t["3DW6Dc"] : I.t["/u15Qc"], {
             numUnappliedGuildBoostSlots: X
-        }) : b.intl.formatToPlainString(k ? b.t["3DW6Dc"] : b.t.BPadnO, {
+        }) : I.intl.formatToPlainString(k ? I.t["3DW6Dc"] : I.t.BPadnO, {
             numUnappliedGuildBoostSlots: X
         }), T.Ay.isPremium(y)) {
         let e = (e, t) => (0, i.jsx)(c.DUT, {
@@ -175,16 +175,16 @@ let y = function(e) {
             },
             children: e
         }, t);
-        n = k ? b.intl.format(b.t.omcpSE, {
+        n = k ? I.intl.format(I.t.omcpSE, {
             learnMoreHook: e
-        }) : b.intl.format(b.t["5mAkVi"], {
+        }) : I.intl.format(I.t["5mAkVi"], {
             numUnappliedGuildBoostSlots: X,
             learnMoreHook: e
         })
-    } else n = k ? b.intl.string(b.t["8pcUZi"]) : b.intl.formatToPlainString(b.t.Kaw82o, {
+    } else n = k ? I.intl.string(I.t["8pcUZi"]) : I.intl.formatToPlainString(I.t.Kaw82o, {
         numUnappliedGuildBoostSlots: X
     });
-    return l = m && C === N.xc.NONE ? b.intl.string(b.t.mOWsF1) : b.intl.string(b.t.xr4m5B), (0, i.jsx)("div", {
+    return l = A && C === b.xc.NONE ? I.intl.string(I.t.mOWsF1) : I.intl.string(I.t.xr4m5B), (0, i.jsx)("div", {
         className: v.iE,
         children: (0, i.jsxs)("div", {
             className: a()(v.Qs, [v.Yq]),
@@ -216,14 +216,14 @@ let y = function(e) {
                         "aria-label": l.toString(),
                         children: e => (0, i.jsx)(c.Button, {
                             variant: "primary",
-                            text: b.intl.string(b.t.BMx1iy),
+                            text: I.intl.string(I.t.BMx1iy),
                             ...e,
                             disabled: null == z || D,
                             onClick: null != z ? () => {
                                 (0, c.mMO)(async () => e => (0, i.jsx)(g.default, {
                                     ...e,
                                     guildBoostSlots: [z],
-                                    locationSection: f.JJy.SETTINGS_PREMIUM
+                                    locationSection: N.JJy.SETTINGS_PREMIUM
                                 }))
                             } : void 0
                         })
@@ -231,13 +231,13 @@ let y = function(e) {
                 })]
             }), (!B || U) && (0, i.jsx)("ul", {
                 className: v.LU,
-                children: G.map(e => (0, i.jsx)(O, {
+                children: G.map(e => (0, i.jsx)(j, {
                     guildBoostSlot: e,
                     isCancellable: H,
-                    onCancel: j,
+                    onCancel: O,
                     onUncancel: R,
-                    premiumSubscription: A,
-                    useReducedMotion: I,
+                    premiumSubscription: m,
+                    useReducedMotion: f,
                     fractionalState: C
                 }, e.id))
             })]

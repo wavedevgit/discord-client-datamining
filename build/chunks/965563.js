@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(612025),
     _ = n(303351),
     g = n(985018),
-    A = n(21973);
-let m = {
+    m = n(21973);
+let A = {
     label: () => g.intl.string(g.t["32u1Dx"]),
     value: u.YG
 };
@@ -38,7 +38,7 @@ function h() {
                 label: t.name,
                 value: t.id,
                 leading: (0, i.jsx)(r.Ay, {
-                    className: A.cl,
+                    className: m.cl,
                     guild: t,
                     size: r.Ay.Sizes.SMALLER,
                     active: !0
@@ -46,16 +46,16 @@ function h() {
             }
         }).filter(c.Vq);
         return p || e.unshift({
-            ...m,
-            id: m.value,
-            label: m.label(),
+            ...A,
+            id: A.value,
+            label: A.label(),
             leading: (0, i.jsx)("div", {
-                className: A.KP,
+                className: m.KP,
                 children: (0, i.jsx)(a.pVd, {
                     size: "sm",
                     color: "white",
                     "aria-hidden": !0,
-                    className: A.cl
+                    className: m.cl
                 })
             })
         }), e

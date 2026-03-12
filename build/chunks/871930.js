@@ -1,45 +1,45 @@
 /** chunk id: 871930 params = (module,exports,require) **/
-I.d(_, {
-    _: () => n,
-    h: () => i
+A.d(_, {
+    _: () => N,
+    h: () => r
 });
-var A = I(627968);
-I(64700);
-var S = I(503698),
-    T = I.n(S),
-    C = I(397927),
-    t = I(195043),
-    O = I(725010),
-    e = I(446541),
-    R = I(792691),
-    N = I(4354);
+var I = A(627968);
+A(64700);
+var T = A(503698),
+    S = A.n(T),
+    t = A(397927),
+    e = A(195043),
+    C = A(725010),
+    O = A(446541),
+    R = A(792691),
+    n = A(4354);
 
-function n(E) {
+function N(E) {
     let {
         header: _,
-        description: I,
-        relatedId: S,
-        disabled: t
+        description: A,
+        relatedId: T,
+        disabled: e
     } = E;
-    return (0, A.jsxs)("div", {
-        className: N.wx,
-        children: [(0, A.jsx)(C.Heading, {
+    return (0, I.jsxs)("div", {
+        className: n.wx,
+        children: [(0, I.jsx)(t.Heading, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: (0, A.jsx)("label", {
-                htmlFor: S,
-                className: T()(N.DD, {
-                    [N.r9]: t
+            children: (0, I.jsx)("label", {
+                htmlFor: T,
+                className: S()(n.DD, {
+                    [n.r9]: e
                 }),
                 children: _
             })
-        }), (0, A.jsx)(C.Text, {
+        }), (0, I.jsx)(t.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            className: T()(N.h_, {
-                [N.r9]: t
+            className: S()(n.h_, {
+                [n.r9]: e
             }),
-            children: I
+            children: A
         })]
     })
 }
@@ -47,58 +47,58 @@ function n(E) {
 function P(E) {
     let {
         className: _,
-        children: I
+        children: A
     } = E;
-    return (0, A.jsx)("div", {
-        className: T()(N.kL, _),
-        children: I
+    return (0, I.jsx)("div", {
+        className: S()(n.kL, _),
+        children: A
     })
 }
 
-function L(E) {
+function i(E) {
     let {
         setting: _,
-        className: I,
-        children: S
+        className: A,
+        children: T
     } = E;
-    return (0, A.jsx)(t.x, {
+    return (0, I.jsx)(e.x, {
         setting: _,
-        children: (0, A.jsx)("div", {
-            className: T()(N.kL, I),
-            children: S
+        children: (0, I.jsx)("div", {
+            className: S()(n.kL, A),
+            children: T
         })
     })
 }
 
-function D(E) {
+function l(E) {
     let {
         setting: _,
-        className: I,
-        children: S,
-        scrollPosition: C,
-        scrollHighlightDelay: n
-    } = E, P = (0, O.s)(C);
-    return (0, A.jsx)(t.x, {
+        className: A,
+        children: T,
+        scrollPosition: t,
+        scrollHighlightDelay: N
+    } = E, P = (0, C.s)(t);
+    return (0, I.jsx)(e.x, {
         setting: _,
-        children: (0, A.jsxs)("div", {
-            className: T()(N.kL, I, {
-                [R.m]: null != C
+        children: (0, I.jsxs)("div", {
+            className: S()(n.kL, A, {
+                [R.m]: null != t
             }),
             ref: P,
-            children: [S, null != C ? (0, A.jsx)(e.A, {
-                animationDelay: n,
-                scrollPosition: C
+            children: [T, null != t ? (0, I.jsx)(O.A, {
+                animationDelay: N,
+                scrollPosition: t
             }) : null]
         })
     })
 }
 
-function i(E) {
-    return null != E.scrollPosition ? (0, A.jsx)(D, {
+function r(E) {
+    return null != E.scrollPosition ? (0, I.jsx)(l, {
         ...E
-    }) : null != E.setting ? (0, A.jsx)(L, {
+    }) : null != E.setting ? (0, I.jsx)(i, {
         ...E
-    }) : (0, A.jsx)(P, {
+    }) : (0, I.jsx)(P, {
         ...E
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 953701 params = (module,exports,require) **/
 n.d(t, {
-    I: () => A
+    I: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(780964),
     _ = n(985018),
     g = n(730844);
-let A = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
+let m = (0, d.Qx)(u.X.ACTIVITY_PRIVACY_PER_GUILD_DEFAULT_SETTING, {
     useTitle: () => (0, r.i)("GuildActivitySharingDefaultSetting") ? _.intl.string(_.t.vpgck1) : _.intl.string(g.default["/LHVbt"]),
     useOptions: function() {
         let e = (0, r.i)("GuildActivitySharingDefaultSetting");

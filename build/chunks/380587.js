@@ -2,7 +2,7 @@
 n.d(t, {
     Ev: () => E,
     Ow: () => T,
-    Xj: () => f,
+    Xj: () => N,
     aK: () => S,
     m3: () => C
 });
@@ -17,8 +17,8 @@ var i = n(627968),
     u = n(207560),
     _ = n(558001),
     g = n(866945),
-    A = n(840387),
-    m = n(933297),
+    m = n(840387),
+    A = n(933297),
     h = n(975571),
     p = n(835002),
     x = n(985018);
@@ -47,7 +47,7 @@ function T() {
 }
 
 function S() {
-    let e = (0, A.Z)(),
+    let e = (0, m.Z)(),
         t = (0, c.WX)(),
         n = s.useCallback(() => {
             window.open(h.A.getArticleURL(t), "_blank"), (0, _.N)(p.YA.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE, p.YX.LEARN_MORE)
@@ -57,7 +57,7 @@ function S() {
         }, []);
     return s.useMemo(() => {
         if (e) return {
-            type: m.lT.INLINE_NOTICE,
+            type: A.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: l,
             useText: () => x.intl.format(x.t.EUo0yj, {
@@ -84,7 +84,7 @@ function C() {
         }, []);
     return s.useMemo(() => {
         if (n) return {
-            type: m.lT.INLINE_NOTICE,
+            type: A.lT.INLINE_NOTICE,
             noticeType: "info",
             trackView: c,
             useText: () => x.intl.format(x.t.OX4ybh, {
@@ -97,7 +97,7 @@ function C() {
     }, [l, n, c])
 }
 
-function I() {
+function f() {
     let e = (0, c.WX)();
     s.useEffect(() => {
         (0, _.N)(p.YA.AGE_CONFIRMATION_NOTICE, p.YX.VIEWED)
@@ -128,13 +128,13 @@ function I() {
     })
 }
 
-function f() {
+function N() {
     let e = (0, u.aX)(l.t.REACTIVE_CHECK),
         t = (0, d.b8)();
     return s.useMemo(() => {
         if (e && !t) return {
-            type: m.lT.STRONGLY_DISCOURAGED_CUSTOM,
-            notice: I
+            type: A.lT.STRONGLY_DISCOURAGED_CUSTOM,
+            notice: f
         }
     }, [e, t])
 }

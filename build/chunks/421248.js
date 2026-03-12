@@ -14,8 +14,8 @@ var s = n(873298),
     u = n(171316),
     _ = n(945276),
     g = n(86689),
-    A = n(639383),
-    m = n(355097),
+    m = n(639383),
+    A = n(355097),
     h = n(531525),
     p = n(985018),
     x = n(870236);
@@ -35,47 +35,47 @@ function E() {
                 entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.Jz)(e)
         },
-        I = [{
+        f = [{
             value: s.TO.BLUR,
             label: p.intl.string(p.t.S49Uad)
         }, {
             value: s.TO.BLOCK,
             label: p.intl.string(p.t["D/157Y"])
         }],
-        f = [{
+        N = [{
             value: s.TO.BLUR,
             label: p.intl.string(p.t.S49Uad)
         }],
-        N = {
+        b = {
             value: s.TO.SHOW,
             label: p.intl.string(p.t["5k5OFp"])
         };
-    e && (I.unshift(N), f.unshift(N));
-    let b = {
+    e && (f.unshift(b), N.unshift(b));
+    let I = {
         isDisabled: n,
         tooltipText: t ? p.intl.string(x.default["6Af/cw"]) : void 0
     };
     return (0, i.jsxs)(g.E, {
         setting: h.H.PRIVACY_SENSITIVE_MEDIA_V2,
-        scrollPosition: m.d1.EXPLICIT_MEDIA_REDACTION_V2,
+        scrollPosition: A.d1.EXPLICIT_MEDIA_REDACTION_V2,
         description: p.intl.string(p.t.Wnojv1),
-        children: [(0, i.jsx)(A.A, {
+        children: [(0, i.jsx)(m.A, {
             title: p.intl.string(p.t["+uI23H"]),
             value: T,
             onChange: e => C({
                 explicitContentFriendDm: e
             }),
-            options: I,
-            ...b
-        }), (0, i.jsx)(A.A, {
+            options: f,
+            ...I
+        }), (0, i.jsx)(m.A, {
             title: p.intl.string(p.t["Yh+HX1"]),
             value: S,
             onChange: e => C({
                 explicitContentNonFriendDm: e
             }),
-            options: I,
-            ...b
-        }), (0, i.jsx)(A.A, {
+            options: f,
+            ...I
+        }), (0, i.jsx)(m.A, {
             title: p.intl.string(p.t["FP+a42"]),
             value: E,
             onChange: e => C({
@@ -83,7 +83,7 @@ function E() {
             }),
             isDisabled: !e || n,
             tooltipText: t ? p.intl.string(x.default["6Af/cw"]) : void 0,
-            options: f
+            options: N
         })]
     })
 }

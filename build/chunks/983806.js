@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(153739),
     _ = n(834981),
     g = n(343906),
-    A = n(191627),
-    m = n(870236),
+    m = n(191627),
+    A = n(870236),
     h = n(985018),
     p = n(888718);
 let x = () => {
@@ -61,7 +61,7 @@ let x = () => {
             selectedTab: e,
             handleTabChange: t
         } = (0, c.A)(), n = s.useCallback(() => {
-            t(A.u9.ACTIVITY)
+            t(m.u9.ACTIVITY)
         }, [t]);
         return (0, i.jsxs)(o.BJc, {
             gap: 32,
@@ -87,11 +87,11 @@ let x = () => {
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: h.intl.string(m.default.RZqaJn)
+                        children: h.intl.string(A.default.RZqaJn)
                     }), (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
-                        children: h.intl.string(e === A.u9.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
+                        children: h.intl.string(e === m.u9.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
                     })]
                 }), (0, i.jsx)(x, {})]
             })]

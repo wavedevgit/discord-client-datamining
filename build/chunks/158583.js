@@ -1,6 +1,6 @@
 /** chunk id: 158583 params = (module,exports,require) **/
 n.d(t, {
-    T: () => f
+    T: () => N
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(12901),
     _ = n(287809),
     g = n(975571),
-    A = n(474090),
-    m = n(181079),
+    m = n(474090),
+    A = n(181079),
     h = n(422258),
     p = n(957300),
     x = n(652215),
@@ -23,7 +23,7 @@ var i = n(627968),
     S = n(985018);
 let C = g.A.getArticleURL(x.MVz.FAVORITES_GUILD);
 
-function I() {
+function f() {
     let e = (0, p.E)(e => e.enterPreview),
         {
             analyticsLocations: t
@@ -57,11 +57,11 @@ function I() {
     })
 }
 
-function f() {
-    let e = (0, l.bG)([m.A], () => m.A.favoriteGuildEnabled);
+function N() {
+    let e = (0, l.bG)([A.A], () => A.A.favoriteGuildEnabled);
     return (0, l.bG)([_.default], () => {
         let e = _.default.getCurrentUser();
-        return null != e && A.Ay.isPremiumExactly(e, E.PremiumTypes.TIER_2)
+        return null != e && m.Ay.isPremiumExactly(e, E.PremiumTypes.TIER_2)
     }) ? (0, i.jsx)(a.dOG, {
         checked: e,
         description: S.intl.format(T.default.GR2KOG, {
@@ -70,5 +70,5 @@ function f() {
         onChange: h.tV,
         label: S.intl.string(T.default.OT1NK5),
         badge: "beta"
-    }) : (0, i.jsx)(I, {})
+    }) : (0, i.jsx)(f, {})
 }

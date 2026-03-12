@@ -1,7 +1,7 @@
 /** chunk id: 127493 params = (module,exports,require) **/
 n.d(t, {
     Ct: () => g,
-    oO: () => A
+    oO: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -67,7 +67,7 @@ let g = s.memo(function(e) {
             ...e
         })
     }),
-    A = s.memo(function(e) {
+    m = s.memo(function(e) {
         let {
             bestOfBoxes: t
         } = (0, d.Ay)();

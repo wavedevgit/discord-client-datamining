@@ -21,8 +21,8 @@ let g = s.memo(function(e) {
     } = e, {
         useTitle: n,
         layout: g,
-        useCollapsedSubtitle: A
-    } = t, [m, h] = s.useState(!0), [p, x] = s.useState(() => _(t)), E = s.useRef(p), T = s.useRef(_(t) ? "navigation" : null);
+        useCollapsedSubtitle: m
+    } = t, [A, h] = s.useState(!0), [p, x] = s.useState(() => _(t)), E = s.useRef(p), T = s.useRef(_(t) ? "navigation" : null);
     s.useEffect(() => r.A.subscribe(e => e.requestAccordionOpenKey, e => {
         e === t.key && (E.current ? o.A.notifyAccordionExpanded(t.key) : (T.current = "navigation", h(!1), x(!0)))
     }, {
@@ -42,19 +42,19 @@ let g = s.memo(function(e) {
             }
         }, [p, t.key]),
         C = s.useMemo(() => (0, l.debounce)(S, 50), [S]),
-        I = (0, a.w)(C),
-        f = n?.(p),
-        N = A?.(),
-        b = (0, c.q)(t);
+        f = (0, a.w)(C),
+        N = n?.(p),
+        b = m?.(),
+        I = (0, c.q)(t);
     return (0, i.jsx)(u.f, {
-        ref: I,
-        title: f,
-        collapsedSubtitle: N,
+        ref: f,
+        title: N,
+        collapsedSubtitle: b,
         isExpanded: p,
         onExpandedChange: e => {
-            T.current = "user", b(), x(e)
+            T.current = "user", I(), x(e)
         },
-        animate: m,
+        animate: A,
         children: g.map(e => (0, i.jsx)(d.A, {
             node: e
         }, e.key))

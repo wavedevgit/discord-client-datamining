@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(840065),
     _ = n(899847),
     g = n(936926),
-    A = n(809697),
-    m = n(153739),
+    m = n(809697),
+    A = n(153739),
     h = n(534654),
     p = n(834981),
     x = n(191627),
@@ -22,7 +22,7 @@ var i = n(627968),
     T = n(870236),
     S = n(985018),
     C = n(324034);
-let I = e => {
+let f = e => {
         let {
             title: t,
             buttonText: n,
@@ -48,7 +48,7 @@ let I = e => {
             })]
         })
     },
-    f = () => {
+    N = () => {
         let e = (0, p.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
@@ -90,10 +90,10 @@ let I = e => {
             })]
         })
     },
-    N = e => {
+    b = e => {
         let {
             teenId: t
-        } = e, s = (0, m.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
+        } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
         return (0, i.jsxs)(l.BJc, {
             padding: {
                 top: 12,
@@ -134,12 +134,12 @@ let I = e => {
             })]
         })
     },
-    b = () => {
-        let e = (0, m.y3)(),
-            t = (0, m.tl)(),
+    I = () => {
+        let e = (0, A.y3)(),
+            t = (0, A.tl)(),
             {
                 handleTabChange: n
-            } = (0, A.A)(),
+            } = (0, m.A)(),
             a = (0, g.Vh)({
                 location: "TimeControlsRow"
             });
@@ -161,20 +161,20 @@ let I = e => {
                     color: "text-muted",
                     children: S.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(I, {
+            }), (0, i.jsx)(f, {
                 title: S.intl.string(S.t["+o1pDZ"]),
                 buttonText: S.intl.string(S.t.bt75uw),
                 onButtonPress: () => r(x.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
                 className: C.yF
-            }), (0, i.jsx)(I, {
+            }), (0, i.jsx)(f, {
                 title: S.intl.string(S.t.OAuOHD),
                 buttonText: S.intl.string(S.t.bt75uw),
                 onButtonPress: () => r(x.u9.DATA_AND_PRIVACY)
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
                     className: C.yF
-                }), (0, i.jsx)(N, {
+                }), (0, i.jsx)(b, {
                     teenId: e.id
                 })]
             })]
@@ -184,6 +184,6 @@ let I = e => {
         let e = (0, h.A)();
         return 0 === (0, p.vx)().length ? null : (0, i.jsx)("div", {
             className: C.kL,
-            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(b, {})
+            children: e ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {})
         })
     }

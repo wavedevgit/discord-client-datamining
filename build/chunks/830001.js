@@ -1,6 +1,6 @@
 /** chunk id: 830001 params = (module,exports,require) **/
 n.d(t, {
-    f: () => f
+    f: () => N
 });
 var i = n(627968),
     s = n(934551),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(103738),
     _ = n(419954),
     g = n(933297),
-    A = n(836602),
-    m = n(854627),
+    m = n(836602),
+    A = n(854627),
     h = n(287809),
     p = n(780964),
     x = n(633817),
@@ -28,10 +28,10 @@ let C = [{
         badgeType: g.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
-    I = (0, _.t_)(p.X.PROFILE_PANEL, {
+    f = (0, _.t_)(p.X.PROFILE_PANEL, {
         useTitle: () => T.intl.string(T.t["vi7f+q"]),
         notice: {
-            stores: [A.A],
+            stores: [m.A],
             element: u.A
         },
         initialize: () => () => o.h.wait(() => {
@@ -39,14 +39,14 @@ let C = [{
         }),
         buildLayout: () => [x.I]
     }),
-    f = (0, _.i4)(p.X.PROFILE_SIDEBAR_ITEM, {
+    N = (0, _.i4)(p.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t["vi7f+q"]),
         icon: function() {
             let e = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
                 {
                     avatarSrc: t,
                     avatarDecorationSrc: n
-                } = (0, m.A)({
+                } = (0, A.A)({
                     userId: e?.id,
                     size: r._3J.SIZE_48
                 });
@@ -62,7 +62,7 @@ let C = [{
                 {
                     avatarSrc: t,
                     avatarDecorationSrc: n
-                } = (0, m.A)({
+                } = (0, A.A)({
                     userId: e?.id,
                     size: r._3J.SIZE_48
                 });
@@ -96,5 +96,5 @@ let C = [{
             })
         },
         getDismissibleBadges: () => C,
-        buildLayout: () => [I]
+        buildLayout: () => [f]
     })

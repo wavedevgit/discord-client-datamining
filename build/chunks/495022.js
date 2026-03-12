@@ -14,7 +14,7 @@ var i = n(627968),
 function u(e) {
     let {
         glowingPerkId: t = null
-    } = e, n = (0, o.Ay)(), u = null != t ? n.find(e => e?.id === t) : null, [_, g] = (0, s.useState)(u?.categories[0] ?? o.jW.BEST_OF_NITRO), A = (0, s.useMemo)(() => n.filter(e => null != e && e.categories.includes(_)), [n, _]);
+    } = e, n = (0, o.Ay)(), u = null != t ? n.find(e => e?.id === t) : null, [_, g] = (0, s.useState)(u?.categories[0] ?? o.jW.BEST_OF_NITRO), m = (0, s.useMemo)(() => n.filter(e => null != e && e.categories.includes(_)), [n, _]);
     return (0, i.jsxs)("div", {
         className: c.uW,
         children: [(0, i.jsx)(l.Heading, {
@@ -36,7 +36,7 @@ function u(e) {
         }), (0, i.jsx)(a.A, {
             gap: 20,
             className: c.jG,
-            children: A.map(e => {
+            children: m.map(e => {
                 if (null != e) return (0, i.jsx)(r.S, {
                     ...e,
                     glowing: t === e.id,

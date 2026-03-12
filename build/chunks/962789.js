@@ -1,6 +1,6 @@
 /** chunk id: 962789 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O,
+    A: () => j,
     T: () => v
 }), n(321073);
 var i = n(627968),
@@ -14,8 +14,8 @@ var i = n(627968),
     u = n(253932),
     _ = n(780964),
     g = n(978304),
-    A = n(840065),
-    m = n(744479),
+    m = n(840065),
+    A = n(744479),
     h = n(871930),
     p = n(578746),
     x = n(531525),
@@ -88,7 +88,7 @@ function C(e) {
                 children: l
             }), (0, i.jsxs)(r.DUT, {
                 onClick: () => {
-                    (0, A.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
+                    (0, m.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
                         section: E.nc_.AUTHORIZED_APPS
                     })
                 },
@@ -112,7 +112,7 @@ function C(e) {
     })
 }
 
-function I() {
+function f() {
     let e = u.Zk.useSetting();
     return (0, i.jsx)(h.h, {
         setting: x.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
@@ -127,7 +127,7 @@ function I() {
     })
 }
 
-function f() {
+function N() {
     let e = u.TA.useSetting(),
         t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
@@ -153,7 +153,7 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     return (0, i.jsxs)("div", {
         className: S.do,
         children: [(0, i.jsx)(r.Text, {
@@ -171,13 +171,13 @@ function N() {
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         applications: t
     } = e;
     return t.length > 0 ? (0, i.jsx)(C, {
         applications: t
-    }) : (0, i.jsx)(N, {})
+    }) : (0, i.jsx)(b, {})
 }
 
 function v() {
@@ -185,24 +185,24 @@ function v() {
         showLoadingIndicator: e,
         slayerSdkApplications: t
     } = (0, g.A)(!0);
-    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(b, {
+    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(I, {
         applications: t
     })
 }
 
-function O() {
+function j() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t
     } = (0, g.A)(!0);
-    return (0, i.jsx)(m.A, {
+    return (0, i.jsx)(A.A, {
         children: e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsxs)(i.Fragment, {
-            children: [(0, i.jsx)(b, {
+            children: [(0, i.jsx)(I, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(I, {}), (0, i.jsx)("div", {
+                children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
                     className: S.yF
-                }), (0, i.jsx)(f, {})]
+                }), (0, i.jsx)(N, {})]
             })]
         })
     })

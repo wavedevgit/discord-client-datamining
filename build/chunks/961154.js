@@ -16,13 +16,13 @@ var s = n(311907),
     u = n(793943),
     _ = n(792656),
     g = n(954571),
-    A = n(12901),
-    m = n(652215),
+    m = n(12901),
+    A = n(652215),
     h = n(788868),
     p = n(985018),
     x = n(223354);
 let E = () => {
-    (0, u.nf)(u.HP.APP_ICON), (0, A.default)()
+    (0, u.nf)(u.HP.APP_ICON), (0, m.default)()
 };
 
 function T() {
@@ -30,8 +30,8 @@ function T() {
         subscriptionTier: h.pe.TIER_2,
         defaultTextOverride: p.intl.string(p.t.mr4K7D),
         premiumModalAnalyticsLocation: {
-            object: m.ZSU.BUTTON_CTA,
-            objectType: m.AnalyticsObjectTypes.BUY
+            object: A.ZSU.BUTTON_CTA,
+            objectType: A.AnalyticsObjectTypes.BUY
         },
         fullWidth: !0
     })
@@ -41,7 +41,7 @@ let S = () => {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS), t = (0, s.bG)([d.A], () => d.A.isUpsellPreview);
     return (0, a.Ay)(() => {
-        t && g.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
+        t && g.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
             type: h.e.APP_ICON_UPSELL,
             location_stack: e
         })

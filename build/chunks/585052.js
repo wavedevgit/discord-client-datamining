@@ -1,6 +1,6 @@
 /** chunk id: 585052 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968),
     s = n(64700),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(652215),
     g = n(985018);
 
-function A() {
+function m() {
     let e = (0, d.o)(),
         t = s.useMemo(() => (0, r.YS)(), []);
     return (0, i.jsxs)(c.h, {

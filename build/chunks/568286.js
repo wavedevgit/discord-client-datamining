@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(688810),
     _ = n(915089),
     g = n(250253),
-    A = n(2242),
-    m = n(985018),
+    m = n(2242),
+    A = n(985018),
     h = n(823470);
 let p = e => {
         let {
@@ -28,7 +28,7 @@ let p = e => {
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
             cancelSubscription: S,
             error: C,
-            submitting: I
+            submitting: f
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
             return {
@@ -44,28 +44,28 @@ let p = e => {
                 error: i,
                 submitting: t
             }
-        })(T), f = async () => {
+        })(T), N = async () => {
             await S(p.id) && x()
-        }, N = l.role_benefits.benefits.filter(e => e.ref_type === A.bN.CHANNEL), b = l.role_benefits.benefits.filter(e => e.ref_type === A.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), O = m.intl.formatToPlainString(m.t.KsMRP5, {
-            numChannels: N.length,
-            numAdditionalBenefits: b.length,
+        }, b = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), v = a()(p.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+            numChannels: b.length,
+            numAdditionalBenefits: I.length,
             subscriptionEndDate: v
         });
         return (0, i.jsx)(r.Modal, {
             transitionState: t,
             "aria-labelledby": E,
             actions: [{
-                text: m.intl.string(m.t.EP6EPb),
+                text: A.intl.string(A.t.EP6EPb),
                 variant: "secondary",
                 onClick: x
             }, {
                 variant: "critical-primary",
-                text: m.intl.string(m.t.F6lUDF),
-                onClick: f,
-                loading: I
+                text: A.intl.string(A.t.F6lUDF),
+                onClick: N,
+                loading: f
             }],
-            title: m.intl.string(m.t.O6l5tM),
-            subtitle: O,
+            title: A.intl.string(A.t.O6l5tM),
+            subtitle: j,
             onClose: x,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,

@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(235986),
     _ = n(147964),
     g = n(985018),
-    A = n(76985),
-    m = n(522759);
+    m = n(76985),
+    A = n(522759);
 let h = /^\d+$|^$/;
 
 function p(e) {
@@ -29,7 +29,7 @@ function p(e) {
         authorizedApplicationId: _.A.testModeApplicationId,
         authorizationError: _.A.error,
         authorizing: _.A.isFetchingAuthorization
-    })), [T, S] = s.useState(p ?? ""), [C, I] = s.useState("8080"), [f, N] = s.useState("localhost"), b = h.test(T);
+    })), [T, S] = s.useState(p ?? ""), [C, f] = s.useState("8080"), [N, b] = s.useState("localhost"), I = h.test(T);
     async function v() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,21 +40,21 @@ function p(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(f, C, T);
+        }(N, C, T);
         null != await d.q1(T, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
-    let O = null != p && p === T,
-        j = O ? function() {
-            d.cL(), S(""), N(null)
+    let j = null != p && p === T,
+        O = j ? function() {
+            d.cL(), S(""), b(null)
         } : v,
         R = s.useMemo(() => [{
             loading: E,
-            disabled: !b || 0 === T.length || "localhost" === f && 0 === C.length,
-            variant: O ? "critical-primary" : "active",
-            text: O ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
-            onClick: j
-        }], [T.length, E, O, b, C.length, j, f]);
+            disabled: !I || 0 === T.length || "localhost" === N && 0 === C.length,
+            variant: j ? "critical-primary" : "active",
+            text: j ? g.intl.string(g.t.d6TR3I) : g.intl.string(g.t.qwuK5I),
+            onClick: O
+        }], [T.length, E, j, I, C.length, O, N]);
     return (0, i.jsxs)(l.Modal, {
         title: g.intl.string(g.t.f8fzky),
         subtitle: g.intl.string(g.t.a6Vill),
@@ -62,7 +62,7 @@ function p(e) {
         onClose: t,
         transitionState: n,
         children: [null == x ? null : (0, i.jsx)("div", {
-            className: m.SX,
+            className: A.SX,
             children: (0, i.jsx)(r.wx6, {
                 type: "critical",
                 children: x
@@ -71,25 +71,25 @@ function p(e) {
             direction: u.A.Direction.VERTICAL,
             align: u.A.Align.START,
             children: [(0, i.jsx)("div", {
-                className: A.I,
+                className: m.I,
                 children: (0, i.jsx)(r.ksK, {
                     label: g.intl.string(g.t.P6TzgI),
                     required: !0,
                     value: T,
                     maxLength: 19,
-                    error: b ? null : g.intl.string(g.t.gPNgKO),
+                    error: I ? null : g.intl.string(g.t.gPNgKO),
                     onChange: function(e) {
                         S(e)
                     },
                     disabled: E
                 })
             }), (0, i.jsx)("div", {
-                className: A.I,
+                className: m.I,
                 children: (0, i.jsx)(r.l6P, {
                     selectionMode: "single",
                     label: g.intl.string(g.t["/GTqXG"]),
-                    disabled: !b || "" === T,
-                    value: f,
+                    disabled: !I || "" === T,
+                    value: N,
                     options: [{
                         value: "localhost",
                         label: g.intl.string(g.t["+Y9Y6r"]),
@@ -100,18 +100,18 @@ function p(e) {
                         id: "proxy"
                     }],
                     onSelectionChange: function(e) {
-                        N(e)
+                        b(e)
                     },
                     placeholder: "URL Origin Type"
                 })
-            }), "localhost" !== f ? null : (0, i.jsx)("div", {
-                className: A.I,
+            }), "localhost" !== N ? null : (0, i.jsx)("div", {
+                className: m.I,
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
                     label: g.intl.string(g.t.fF4zxq),
                     value: C,
                     maxLength: 5,
-                    onChange: e => I(e),
+                    onChange: e => f(e),
                     disabled: E
                 })
             })]

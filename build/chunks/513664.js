@@ -2,7 +2,7 @@
 n.d(t, {
     Ay: () => T,
     dd: () => E,
-    lD: () => N
+    lD: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     u = n(723702),
     _ = n(253932),
     g = n(790174),
-    A = n(531525),
-    m = n(652215),
+    m = n(531525),
+    A = n(652215),
     h = n(985018),
     p = n(730844),
     x = n(13476);
@@ -50,13 +50,13 @@ function T(e) {
     return (0, i.jsxs)(g.A, {
         className: t,
         title: h.intl.string(h.t.Cq98yL),
-        children: [(0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
+        children: [(0, i.jsx)(N, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(C, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(I, {}), (0, i.jsx)(a.cGx, {
+        }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(N, {})]
+        }), (0, i.jsx)(b, {})]
     })
 }
 
@@ -116,11 +116,11 @@ function C() {
     })
 }
 
-function I() {
+function f() {
     let e = _.e.useSetting(),
         t = _.UM.useSetting();
     return (0, i.jsx)(c.x, {
-        setting: A.H.ACTIVITY_PRIVACY_RICH_PRESENCE,
+        setting: m.H.ACTIVITY_PRIVACY_RICH_PRESENCE,
         children: (0, i.jsxs)(a.nVY, {
             label: h.intl.string(p.default["5rYBAQ"]),
             children: [(0, i.jsx)(a.dOG, {
@@ -140,11 +140,11 @@ function I() {
     })
 }
 
-function f() {
+function N() {
     let e = _.tz.useSetting(),
         t = u.isPlatformEmbedded ? h.intl.string(p.default.UQ9RHJ) : h.intl.string(h.t.oKqC4t);
     return (0, i.jsx)(c.x, {
-        setting: A.H.ACTIVITY_PRIVACY_STATUS,
+        setting: m.H.ACTIVITY_PRIVACY_STATUS,
         children: (0, i.jsxs)(a.BJc, {
             gap: 32,
             children: [(0, i.jsx)("div", {
@@ -160,17 +160,17 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     return (0, i.jsx)(c.x, {
-        setting: A.H.ACTIVITY_PRIVACY_TOS,
+        setting: m.H.ACTIVITY_PRIVACY_TOS,
         children: (0, i.jsx)(a.ZpM, {
             type: a.ZpM.Types.PRIMARY,
             className: x.AX,
             children: (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 children: h.intl.format(h.t.xvCsx4, {
-                    termsLink: m.X7G.TERMS,
-                    privacyLink: m.X7G.PRIVACY
+                    termsLink: A.X7G.TERMS,
+                    privacyLink: A.X7G.PRIVACY
                 })
             })
         })

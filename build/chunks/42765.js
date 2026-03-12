@@ -14,8 +14,8 @@ var s = n(873298),
     u = n(171316),
     _ = n(945276),
     g = n(86689),
-    A = n(639383),
-    m = n(531525),
+    m = n(639383),
+    A = n(531525),
     h = n(985018),
     p = n(870236);
 
@@ -41,46 +41,46 @@ function x() {
             value: s.TO.BLOCK,
             label: h.intl.string(h.t["D/157Y"])
         }],
-        I = [{
+        f = [{
             value: s.TO.BLUR,
             label: h.intl.string(h.t.S49Uad)
         }],
-        f = {
+        N = {
             value: s.TO.SHOW,
             label: h.intl.string(h.t["5k5OFp"])
         };
-    e && (C.unshift(f), I.unshift(f));
-    let N = {
+    e && (C.unshift(N), f.unshift(N));
+    let b = {
         isDisabled: n,
         tooltipText: t ? h.intl.string(p.default["6Af/cw"]) : void 0
     };
     return (0, i.jsxs)(g.E, {
-        setting: m.H.GORE_MEDIA_REDACTION,
+        setting: A.H.GORE_MEDIA_REDACTION,
         description: h.intl.string(h.t.XgH9eh),
-        children: [(0, i.jsx)(A.A, {
+        children: [(0, i.jsx)(m.A, {
             title: h.intl.string(h.t["+uI23H"]),
             value: E,
             onChange: e => S({
                 goreContentFriendDm: e
             }),
             options: C,
-            ...N
-        }), (0, i.jsx)(A.A, {
+            ...b
+        }), (0, i.jsx)(m.A, {
             title: h.intl.string(h.t["Yh+HX1"]),
             value: T,
             onChange: e => S({
                 goreContentNonFriendDm: e
             }),
             options: C,
-            ...N
-        }), (0, i.jsx)(A.A, {
+            ...b
+        }), (0, i.jsx)(m.A, {
             title: h.intl.string(h.t["FP+a42"]),
             value: x,
             onChange: e => S({
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,
-            options: I,
+            options: f,
             tooltipText: t ? h.intl.string(p.default["6Af/cw"]) : void 0
         })]
     })

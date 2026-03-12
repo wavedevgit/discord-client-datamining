@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(73153),
     _ = n(339048),
     g = n(736653),
-    A = n(46054),
-    m = n(728364),
+    m = n(46054),
+    A = n(728364),
     h = n(807055),
     p = n(264779),
     x = n(35587),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(465794),
     S = n(212168),
     C = n(976860),
-    I = n(287809),
-    f = n(469778),
-    N = n(45938),
-    b = n(927578),
+    f = n(287809),
+    N = n(469778),
+    b = n(45938),
+    I = n(927578),
     v = n(780964),
-    O = n(411121),
-    j = n(12901),
+    j = n(411121),
+    O = n(12901),
     R = n(840065),
     y = n(652215),
     P = n(788868),
@@ -43,29 +43,29 @@ function G(e) {
             disabled: o
         } = e,
         [d, u] = s.useState(!1),
-        [_, m] = s.useState(!1),
+        [_, A] = s.useState(!1),
         x = () => u(e => !e),
         T = (0, g.Ay)(),
         S = (0, p.WD)(n.id, T),
         C = null != l,
-        I = (0, h.A)(n, C);
+        f = (0, h.A)(n, C);
     C && d ? t = D.intl.format(D.t.pkxVx6, {
-        endDate: I,
+        endDate: f,
         onClickDetails: x
     }) : C && !d ? t = D.intl.format(D.t["4sFeob"], {
-        endDate: I,
+        endDate: f,
         onClickDetails: x
     }) : !C && d ? t = D.intl.format(D.t["RBnE+l"], {
-        endDate: I,
+        endDate: f,
         onClickDetails: x
     }) : C || d || (t = D.intl.format(D.t["57+7Qn"], {
-        endDate: I,
+        endDate: f,
         onClickDetails: x
     }));
-    let f = C ? D.intl.string(D.t["2cHUti"]) : D.intl.string(D.t.O13yhz),
-        N = s.useCallback(() => m(!1), []),
+    let N = C ? D.intl.string(D.t["2cHUti"]) : D.intl.string(D.t.O13yhz),
+        b = s.useCallback(() => A(!1), []),
         {
-            outboundTitle: b,
+            outboundTitle: I,
             outboundTermsAndConditions: v
         } = n;
     return (0, i.jsxs)(i.Fragment, {
@@ -85,7 +85,7 @@ function G(e) {
                     }), (0, i.jsxs)("div", {
                         children: [(0, i.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
-                            children: b
+                            children: I
                         }), (0, i.jsx)(c.Text, {
                             variant: "text-sm/normal",
                             color: "text-default",
@@ -94,8 +94,8 @@ function G(e) {
                         })]
                     })]
                 }), !o && (0, i.jsx)(c.Button, {
-                    text: f,
-                    onClick: () => m(!0),
+                    text: N,
+                    onClick: () => A(!0),
                     disabled: o,
                     size: "sm"
                 })]
@@ -103,31 +103,31 @@ function G(e) {
                 className: L.GL,
                 variant: "text-xs/normal",
                 color: "text-default",
-                children: A.A.parse(v, !1, {
+                children: m.A.parse(v, !1, {
                     allowLinks: !0
                 })
             })]
         }), _ && (0, i.jsx)(c.aFV, {
             renderModal: e => (0, i.jsx)(E.A, {
                 ...e,
-                onClose: N,
+                onClose: b,
                 onClaim: r,
                 code: l,
                 outboundPromotion: n
             }),
-            onCloseRequest: N
+            onCloseRequest: b
         })]
     })
 }
 let M = function(e) {
     let {
         inOldSettings: t = !1
-    } = e, n = (0, d.yK)([f.A], () => f.A.getGiftable()), [l, r] = o().partition(n, e => {
+    } = e, n = (0, d.yK)([N.A], () => N.A.getGiftable()), [l, r] = o().partition(n, e => {
         let {
             giftCodeBatchId: t
         } = e;
         return null == t
-    }), g = (0, d.bG)([I.default], () => b.Ay.isPremiumExactly(I.default.getCurrentUser(), P.PremiumTypes.TIER_2)), A = o().groupBy(l, e => (0, N.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [h, p] = s.useState(!1);
+    }), g = (0, d.bG)([f.default], () => I.Ay.isPremiumExactly(f.default.getCurrentUser(), P.PremiumTypes.TIER_2)), m = o().groupBy(l, e => (0, b.Kx)(e.skuId, e.subscriptionPlanId, e.giftStyle)), [h, p] = s.useState(!1);
     s.useEffect(() => {
         u.h.wait(() => {
             (0, _.XJ)().then(() => p(!0))
@@ -139,7 +139,7 @@ let M = function(e) {
         claimedEndedOutboundPromotions: U,
         claimedOutboundPromotionCodeMap: k,
         addClaimedOutboundPromotionCode: V
-    } = (0, x.y7)(), w = M.length + U.length > 0, H = m.m.useExperiment({
+    } = (0, x.y7)(), w = M.length + U.length > 0, H = A.m.useExperiment({
         location: "EntitlementGifts"
     }, {
         autoTrackExposure: !1,
@@ -170,7 +170,7 @@ let M = function(e) {
                         className: L.Qw,
                         children: D.intl.format(D.t.G4fwxK, {
                             onClick: () => {
-                                (0, j.default)(), (0, C.pX)(y.BVt.APPLICATION_STORE)
+                                (0, O.default)(), (0, C.pX)(y.BVt.APPLICATION_STORE)
                             }
                         })
                     }), (0, i.jsx)(T.A, {
@@ -211,25 +211,25 @@ let M = function(e) {
                             code: k[e.id],
                             addClaimedOutboundPromotionCode: V,
                             disabled: !g
-                        }, e.id)), null != e ? (0, i.jsx)(O.A, {
+                        }, e.id)), null != e ? (0, i.jsx)(j.A, {
                             className: L.uI,
                             skuId: e.skuId,
                             subscriptionPlanId: e.subscriptionPlanId,
                             entitlements: [e],
                             giftCodeBatchId: P.FB
-                        }, (0, N.Kx)(e.skuId, e.subscriptionPlanId)) : null, s.length > 0 ? (0, i.jsx)(O.A, {
+                        }, (0, b.Kx)(e.skuId, e.subscriptionPlanId)) : null, s.length > 0 ? (0, i.jsx)(j.A, {
                             className: L.uI,
                             skuId: s[0].skuId,
                             subscriptionPlanId: s[0].subscriptionPlanId,
                             entitlements: s,
                             giftCodeBatchId: P.Bu
-                        }, (0, N.Kx)(s[0].skuId, s[0].subscriptionPlanId)) : null, l.length > 0 ? (0, i.jsx)(O.A, {
+                        }, (0, b.Kx)(s[0].skuId, s[0].subscriptionPlanId)) : null, l.length > 0 ? (0, i.jsx)(j.A, {
                             className: L.uI,
                             skuId: l[0].skuId,
                             subscriptionPlanId: l[0].subscriptionPlanId,
                             entitlements: l,
                             giftCodeBatchId: P.Bu
-                        }, (0, N.Kx)(l[0].skuId, l[0].subscriptionPlanId)) : null]
+                        }, (0, b.Kx)(l[0].skuId, l[0].subscriptionPlanId)) : null]
                     })
                 })]
             })
@@ -242,7 +242,7 @@ let M = function(e) {
                 }),
                 children: [(0, i.jsx)(c.cGx, {
                     className: L.yF
-                }), 0 === Object.keys(A).length ? (0, i.jsxs)("div", {
+                }), 0 === Object.keys(m).length ? (0, i.jsxs)("div", {
                     className: L.p$,
                     children: [(0, i.jsx)("div", {
                         className: L.QT
@@ -259,17 +259,17 @@ let M = function(e) {
                             }
                         })
                     })]
-                }) : o().keys(A).map(e => {
+                }) : o().keys(m).map(e => {
                     let {
                         skuId: t,
                         subscriptionPlanId: n,
                         giftStyle: s
-                    } = (0, N.X6)(e);
-                    return (0, i.jsx)(O.A, {
+                    } = (0, b.X6)(e);
+                    return (0, i.jsx)(j.A, {
                         className: L.uI,
                         skuId: t,
                         subscriptionPlanId: n,
-                        entitlements: A[e],
+                        entitlements: m[e],
                         giftStyle: s
                     }, e)
                 })]

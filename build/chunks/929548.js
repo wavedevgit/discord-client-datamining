@@ -1,6 +1,6 @@
 /** chunk id: 929548 params = (module,exports,require) **/
 n.d(t, {
-    L: () => O
+    L: () => j
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(827343),
     _ = n(77729),
     g = n(839214),
-    A = n(98919),
-    m = n(487329),
+    m = n(98919),
+    A = n(487329),
     h = n(419954),
     p = n(430452),
     x = n(353835),
@@ -22,16 +22,16 @@ var i = n(627968),
     T = n(652215),
     S = n(731854),
     C = n(985018);
-let I = (0, g.D)(() => ({
+let f = (0, g.D)(() => ({
     isUploading: !1,
     isDisabled: !1
 }));
-async function f() {
+async function N() {
     let e = await _.A.fileManager.getLogPath();
     _.A.fileManager.showItemInFolder(e)
 }
 
-function N(e) {
+function b(e) {
     (0, o.A)({
         title: C.intl.string(C.t["7UXEF2"]),
         subtitle: C.intl.string(C.t.IYPrRl),
@@ -39,7 +39,7 @@ function N(e) {
         onConfirm: () => u.A.setDebugLogging(e)
     })
 }
-async function b(e) {
+async function I(e) {
     let {
         onUploadStart: t,
         onUploadFinish: n
@@ -51,14 +51,14 @@ async function b(e) {
             message: {
                 message: "User Live Dump"
             }
-        }), await (0, A.a)(T.Umv.RTC), e = C.intl.string(C.t["fKBB8+"]), t = C.intl.string(C.t.BvyxE7), (0, r.A)({
+        }), await (0, m.a)(T.Umv.RTC), e = C.intl.string(C.t["fKBB8+"]), t = C.intl.string(C.t.BvyxE7), (0, r.A)({
             title: e,
             subtitle: t
         })
     } catch (a) {
         var s;
         let e, t, n, l;
-        s = a.displayMessage, e = C.intl.string(C.t.QZg0J7), t = s ?? C.intl.string(C.t.VzHcSm), n = (0, m.B1)(m.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = C.intl.formatToPlainString(C.t.ejOT95, {
+        s = a.displayMessage, e = C.intl.string(C.t.QZg0J7), t = s ?? C.intl.string(C.t.VzHcSm), n = (0, A.B1)(A.iy.DEBUG_LOG_UPLOAD_FAILED)?.errorCode, l = C.intl.formatToPlainString(C.t.ejOT95, {
             errorCode: n
         }), (0, c.qfG)(n => (0, i.jsx)(c.VoidConfirmModal, {
             header: e,
@@ -89,17 +89,17 @@ async function b(e) {
     }
 }
 async function v() {
-    await b({
-        onUploadStart: () => I.setState({
+    await I({
+        onUploadStart: () => f.setState({
             isUploading: !0
         }),
-        onUploadFinish: () => I.setState({
+        onUploadFinish: () => f.setState({
             isUploading: !1,
             isDisabled: !0
         })
     })
 }
-let O = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
+let j = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     useSearchTerms: () => [C.intl.string(C.t["726JHL"]), C.intl.string(C.t.EbwFfR), C.intl.string(C.t.nuPtYi)],
     usePredicate: function() {
         let e = (0, a.bG)([p.Ay], () => p.Ay.supports(S.O5.DEBUG_LOGGING));
@@ -107,8 +107,8 @@ let O = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
     },
     Component: function() {
         let e = (0, a.bG)([p.Ay], () => p.Ay.getDebugLogging()),
-            t = I.useField("isUploading"),
-            n = I.useField("isDisabled"),
+            t = f.useField("isUploading"),
+            n = f.useField("isDisabled"),
             l = s.useId();
         return (0, i.jsxs)("fieldset", {
             children: [(0, i.jsx)(c.AC4, {
@@ -122,7 +122,7 @@ let O = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                     label: C.intl.string(C.t["726JHL"]),
                     description: C.intl.string(C.t["/7ak9Q"]),
                     checked: e,
-                    onChange: N
+                    onChange: b
                 }), (0, i.jsx)("div", {
                     role: "group",
                     "aria-labelledby": l,
@@ -137,7 +137,7 @@ let O = (0, h.E2)(E.X.VOICE_AND_VIDEO_DEBUG_LOGGING, {
                         }), (0, i.jsx)(c.Button, {
                             variant: "secondary",
                             text: C.intl.string(C.t.nuPtYi),
-                            onClick: f,
+                            onClick: N,
                             "aria-label": C.intl.string(C.t["L/hFOe"])
                         })]
                     })

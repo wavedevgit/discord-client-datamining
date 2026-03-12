@@ -14,8 +14,8 @@ var s = n(503698),
     u = n(721923),
     _ = n(864310),
     g = n(71393),
-    A = n(473145),
-    m = n(652215),
+    m = n(473145),
+    A = n(652215),
     h = n(985018),
     p = n(725048);
 let x = function(e) {
@@ -60,7 +60,7 @@ let x = function(e) {
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
-                    children: (0, A.gb)(x.premiumTier, {
+                    children: (0, m.gb)(x.premiumTier, {
                         useLevels: !1
                     })
                 })]
@@ -68,10 +68,10 @@ let x = function(e) {
         }), s ? (0, i.jsx)(u.A, {
             guild: x,
             analyticsLocation: {
-                page: m.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                section: m.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-                object: m.ZSU.BUTTON_CTA,
-                objectType: m.AnalyticsObjectTypes.BUY
+                page: A.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                section: A.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+                object: A.ZSU.BUTTON_CTA,
+                objectType: A.AnalyticsObjectTypes.BUY
             },
             pauseAnimation: !0,
             size: r.$n.Sizes.MEDIUM,
@@ -84,7 +84,7 @@ let x = function(e) {
                 (0, c.K)({
                     guildId: x.id,
                     location: {
-                        section: m.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+                        section: A.JJy.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
                     }
                 })
             }

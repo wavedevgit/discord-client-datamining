@@ -13,14 +13,14 @@ var i = n(934551),
     u = n(108804),
     _ = n(198987),
     g = n(315943),
-    A = n(475061),
-    m = n(985018);
+    m = n(475061),
+    A = n(985018);
 let h = (0, s.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
-        useTitle: () => m.intl.string(m.t.B1fFpf),
-        buildLayout: () => [A.p, c.Q, o.i, g.H, _.t, u.U, d.r]
+        useTitle: () => A.intl.string(A.t.B1fFpf),
+        buildLayout: () => [m.p, c.Q, o.i, g.H, _.t, u.U, d.r]
     }),
     p = (0, s.i4)(a.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
-        useTitle: () => m.intl.string(m.t.B1fFpf),
+        useTitle: () => A.intl.string(A.t.B1fFpf),
         usePredicate: () => l.Ay.isSupported(),
         icon: i.MicrophoneIcon,
         useMenu: r.A,

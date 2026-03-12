@@ -35,8 +35,8 @@ let g = s.forwardRef(function(e, t) {
         titleId: l,
         description: o,
         children: g,
-        className: A,
-        errors: m,
+        className: m,
+        errors: A,
         disabled: h = !1,
         hideDivider: p = !1,
         showBorder: x = !1,
@@ -46,7 +46,7 @@ let g = s.forwardRef(function(e, t) {
         showPremiumIcon: C = !1
     } = e;
     return (0, i.jsx)("div", {
-        className: a()(u.fz, A, {
+        className: a()(u.fz, m, {
             [u.r9]: h,
             [u.Ai]: p,
             [u.Ac]: x,
@@ -71,8 +71,8 @@ let g = s.forwardRef(function(e, t) {
                 className: u.yV,
                 "data-migration-pending": !0,
                 children: o
-            }) : null, g, null != m && (0, i.jsx)(_, {
-                errors: m
+            }) : null, g, null != A && (0, i.jsx)(_, {
+                errors: A
             })]
         })
     })

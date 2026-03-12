@@ -22,8 +22,8 @@ let _ = e => {
         days: a,
         hours: _,
         minutes: g,
-        seconds: A
-    } = s, m = [{
+        seconds: m
+    } = s, A = [{
         unitValue: a,
         unitType: "days"
     }, {
@@ -33,7 +33,7 @@ let _ = e => {
         unitValue: g,
         unitType: "minutes"
     }, {
-        unitValue: A,
+        unitValue: m,
         unitType: "seconds"
     }];
     return (0, i.jsxs)("div", {
@@ -44,7 +44,7 @@ let _ = e => {
             children: c.intl.string(c.t["/ARFVE"])
         }), (0, i.jsx)("div", {
             className: u.$R,
-            children: m.map((e, t) => (function(e, t) {
+            children: A.map((e, t) => (function(e, t) {
                 let n, [s, l] = 1 === (n = e.unitValue.toString()).length ? ["0", n[0]] : [n[0], n[1]];
                 return (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
@@ -91,7 +91,7 @@ let _ = e => {
                         children: ":"
                     })]
                 })
-            })(e, t === m.length - 1))
+            })(e, t === A.length - 1))
         })]
     })
 }

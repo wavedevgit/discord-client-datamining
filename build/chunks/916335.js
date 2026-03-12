@@ -13,14 +13,14 @@ var i = n(627968),
     u = n(20851),
     _ = n(95701),
     g = n(486020),
-    A = n(253932),
-    m = n(652215),
+    m = n(253932),
+    A = n(652215),
     h = n(985018),
     p = n(468209);
 let x = new _.nA({
         id: "1337",
         guild_id: "1337",
-        type: m.rbe.GUILD_TEXT,
+        type: A.rbe.GUILD_TEXT,
         name: "preview"
     }),
     E = [{
@@ -42,14 +42,14 @@ function T(e) {
             channelId: x.id,
             content: e
         }),
-        state: m.cmJ.SENT,
+        state: A.cmJ.SENT,
         reactions: t
     })
 }
 
 function S() {
-    let e = A.hH.useSetting(),
-        t = A.jW.useSetting(),
+    let e = m.hH.useSetting(),
+        t = m.jW.useSetting(),
         n = s.useMemo(() => [T(h.intl.formatToPlainString(h.t.BknJRT, {}), t ? [{
             emoji: {
                 id: null,

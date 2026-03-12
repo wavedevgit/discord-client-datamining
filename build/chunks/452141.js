@@ -14,15 +14,15 @@ var s = n(417597),
     u = n(113065),
     _ = n(966735),
     g = n(483706),
-    A = n(870236),
-    m = n(985018),
+    m = n(870236),
+    A = n(985018),
     h = n(948595);
 let p = () => {
     let e = (0, o.vx)().length > 0,
         t = (0, s.bG)([a.default], () => a.default.getCurrentUser()),
-        n = (0, r.y)(m.intl.string(A.default["5RZ8Tq"]), m.intl.string(A.default.bmhCnL)),
-        p = (0, r.y)(m.intl.string(A.default.XKnFFq), m.intl.string(A.default["68zfxD"])),
-        x = (0, r.y)(m.intl.string(A.default["Rm/6a0"]), m.intl.string(A.default["1xPTwE"]));
+        n = (0, r.y)(A.intl.string(m.default["5RZ8Tq"]), A.intl.string(m.default.bmhCnL)),
+        p = (0, r.y)(A.intl.string(m.default.XKnFFq), A.intl.string(m.default["68zfxD"])),
+        x = (0, r.y)(A.intl.string(m.default["Rm/6a0"]), A.intl.string(m.default["1xPTwE"]));
     return void 0 === t ? null : (0, i.jsxs)("div", {
         className: h.kL,
         children: [e ? null : (0, i.jsxs)(i.Fragment, {
@@ -33,15 +33,15 @@ let p = () => {
                 className: h.yk,
                 children: [(0, i.jsx)(_.A, {
                     icon: l.MBj,
-                    header: m.intl.string(A.default["001l3m"]),
+                    header: A.intl.string(m.default["001l3m"]),
                     description: n
                 }), (0, i.jsx)(_.A, {
                     icon: l.bMW,
-                    header: m.intl.string(A.default.yipAeP),
+                    header: A.intl.string(m.default.yipAeP),
                     description: p
                 }), (0, i.jsx)(_.A, {
                     icon: l.yVk,
-                    header: m.intl.string(A.default.hhOuMe),
+                    header: A.intl.string(m.default.hhOuMe),
                     description: x
                 })]
             })]

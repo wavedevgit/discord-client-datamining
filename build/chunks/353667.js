@@ -1,6 +1,6 @@
 /** chunk id: 353667 params = (module,exports,require) **/
 n.d(t, {
-    j: () => b
+    j: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(351906),
     _ = n(823092),
     g = n(963935),
-    A = n(894858),
-    m = n(272053),
+    m = n(894858),
+    A = n(272053),
     h = n(397274),
     p = n(641324),
     x = n(46373),
@@ -94,7 +94,7 @@ function C(e) {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         layout: t,
         decoration: n
@@ -113,23 +113,23 @@ function I(e) {
     })
 }
 
-function f(e) {
+function N(e) {
     let {
         panelKey: t,
         layout: n,
         notice: l,
         decoration: a
-    } = e, r = A.A.useState(e => {
+    } = e, r = m.A.useState(e => {
         let {
             currentTabKeys: n
         } = e;
         return n.get(t)
     }) ?? n[0].key;
     s.useEffect(() => {
-        let e = A.A.getField("currentTabKeys");
+        let e = m.A.getField("currentTabKeys");
         if (n.some(n => n.key === e.get(t))) return;
         let i = new Map(e);
-        i.set(t, n[0].key), A.A.setState({
+        i.set(t, n[0].key), m.A.setState({
             currentTabKeys: i
         })
     }, [n, t]);
@@ -141,7 +141,7 @@ function f(e) {
             className: E.$H,
             selectedItem: r,
             onItemSelect: e => {
-                m.A.navigate(e, {
+                A.A.navigate(e, {
                     onTransitionStart: () => {
                         let t = n.find(t => t.key === e);
                         t?.onItemSelect?.()
@@ -163,7 +163,7 @@ function f(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(I, {
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(f, {
                 layout: o.layout,
                 decoration: a
             })
@@ -171,7 +171,7 @@ function f(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let {
         panelKey: t,
         notice: n,
@@ -181,27 +181,27 @@ function N(e) {
     return (0, i.jsx)(C, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(I, {
+        children: (0, i.jsx)(f, {
             layout: l,
             decoration: s
         })
     })
 }
 
-function b(e) {
+function I(e) {
     let {
         node: t
     } = e, {
         layout: n
     } = t;
     if ((0, r.bG)([u.A], () => u.A.hidePersonalInformation) && t.hideInStreamerMode) return (0, i.jsx)(c.A, {});
-    if ((0, g.zY)(n)) return (0, i.jsx)(f, {
+    if ((0, g.zY)(n)) return (0, i.jsx)(N, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,
         layout: n
     });
-    if ((0, g.Iu)(n)) return (0, i.jsx)(N, {
+    if ((0, g.Iu)(n)) return (0, i.jsx)(b, {
         panelKey: t.key,
         notice: t.notice,
         decoration: t.decoration,

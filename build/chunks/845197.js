@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(834981),
     _ = n(53719),
     g = n(390370),
-    A = n(191627),
-    m = n(870236),
+    m = n(191627),
+    A = n(870236),
     h = n(985018),
     p = n(386787);
 
@@ -61,22 +61,22 @@ function x(e) {
             className: p.zH,
             children: (0, i.jsx)(g.A, {
                 otherUser: t,
-                status: A.Ef.PENDING
+                status: m.Ef.PENDING
             })
         }), (0, i.jsx)("div", {
             className: p.o1,
             children: l ? (0, i.jsx)(_.A, {
                 icon: o.PGe,
-                tooltip: h.intl.string(m.default.e5iHmZ),
+                tooltip: h.intl.string(A.default.e5iHmZ),
                 onClick: C
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [x ? null : (0, i.jsx)(_.A, {
                     icon: o.A9s,
-                    tooltip: h.intl.string(m.default.krWQZK),
+                    tooltip: h.intl.string(A.default.krWQZK),
                     onClick: T
                 }), (0, i.jsx)(_.A, {
                     icon: o.PGe,
-                    tooltip: h.intl.string(m.default.bBDeNI),
+                    tooltip: h.intl.string(A.default.bBDeNI),
                     onClick: S
                 })]
             })

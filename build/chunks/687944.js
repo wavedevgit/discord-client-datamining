@@ -1,6 +1,6 @@
 /** chunk id: 687944 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var s = n(990078),
     u = n(392943),
     _ = n(927578),
     g = n(580630),
-    A = n(511484),
-    m = n(811611),
+    m = n(511484),
+    A = n(811611),
     h = n(473702),
     p = n(788868),
     x = n(652215),
@@ -28,7 +28,7 @@ let C = {
     object: x.ZSU.CARD
 };
 
-function I(e) {
+function f(e) {
     let {
         premiumSubscription: t,
         discountInfo: n,
@@ -44,11 +44,11 @@ function I(e) {
     });
     if (null == d) return null;
     let u = (0, g.$g)(d.amount, s.currency),
-        A = (0, _.y8)(p.gD.PREMIUM_MONTH_TIER_2, !1, !1, {
+        m = (0, _.y8)(p.gD.PREMIUM_MONTH_TIER_2, !1, !1, {
             currency: t.currency,
             paymentSourceId: t.paymentSourceId
         }),
-        m = (0, g.$g)(A.amount, A.currency);
+        A = (0, g.$g)(m.amount, m.currency);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -62,22 +62,22 @@ function I(e) {
             children: a ? E.intl.format(E.t["3ZiutU"], {
                 percent: n.percentage,
                 numMonths: n.duration,
-                regularPrice: m
+                regularPrice: A
             }) : E.intl.format(E.t.N43FMx, {
                 numMonths: n.duration,
                 discountedPrice: u,
                 billingPeriod: E.intl.string(E.t.FPybU7),
-                fullPrice: m
+                fullPrice: A
             })
         })]
     })
 }
 
-function f(e) {
+function N(e) {
     let {
         discountOffer: t,
         premiumSubscription: n
-    } = e, s = (0, A.tQ)(n, p.gD.PREMIUM_MONTH_TIER_2, t);
+    } = e, s = (0, m.tQ)(n, p.gD.PREMIUM_MONTH_TIER_2, t);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-xl/semibold",
@@ -96,18 +96,18 @@ function f(e) {
         })]
     })
 }
-let N = function(e) {
+let b = function(e) {
     let t, c, {
             subscription: g,
-            invoicePreview: A,
+            invoicePreview: m,
             isLoading: p,
-            analyticsLocation: N,
-            discountInfo: b,
+            analyticsLocation: b,
+            discountInfo: I,
             renewalChurnDiscountInfo: v,
-            discountOffer: O
+            discountOffer: j
         } = e,
         {
-            analyticsLocations: j
+            analyticsLocations: O
         } = (0, r.Ay)(a.A.CHURN_DISCOUNT_SUBSCRIPTION_HEADER),
         R = e => {
             (0, l.mMO)(async () => {
@@ -117,14 +117,14 @@ let N = function(e) {
                 return n => (0, i.jsx)(t, {
                     ...n,
                     premiumSubscription: g,
-                    analyticsLocation: N,
-                    analyticsLocations: j,
+                    analyticsLocation: b,
+                    analyticsLocations: O,
                     initialStep: e
                 })
             })
         },
-        y = _.Ay.getPlanIdFromInvoice(g, A),
-        P = (0, m.ux)(O?.expires_at);
+        y = _.Ay.getPlanIdFromInvoice(g, m),
+        P = (0, A.ux)(j?.expires_at);
     return (0, d.m1)(y) ? null : (0, i.jsx)("div", {
         className: T.S6,
         children: (0, i.jsx)(l.hLv, {
@@ -142,7 +142,7 @@ let N = function(e) {
                         className: T.tD,
                         variant: "text-sm/medium",
                         color: "text-strong",
-                        children: null != O && P
+                        children: null != j && P
                     })]
                 }), (0, i.jsx)("div", {
                     className: T.T
@@ -150,14 +150,14 @@ let N = function(e) {
                     className: T.ly,
                     children: [(0, i.jsxs)("div", {
                         className: T.Yc,
-                        children: [null != O ? (0, i.jsx)(f, {
-                            discountOffer: O,
+                        children: [null != j ? (0, i.jsx)(N, {
+                            discountOffer: j,
                             premiumSubscription: g
-                        }) : (0, i.jsx)(I, {
+                        }) : (0, i.jsx)(f, {
                             premiumSubscription: g,
-                            discountInfo: b ?? v,
-                            invoicePreview: A,
-                            isDiscountActive: null != b
+                            discountInfo: I ?? v,
+                            invoicePreview: m,
+                            isDiscountActive: null != I
                         }), (0, i.jsx)("div", {
                             className: T.e_,
                             children: (t = _.Ay.isSwitchingPlansDisabled(g), c = _.Ay.getSwitchingPlansDisabledMessage(g), _.Ay.isBaseSubscriptionCanceled(g) ? (0, i.jsx)(l.Button, {
@@ -180,8 +180,8 @@ let N = function(e) {
                                         size: "md",
                                         onClick: () => {
                                             (0, o.A)({
-                                                analyticsLocations: j,
-                                                analyticsLocation: N,
+                                                analyticsLocations: O,
+                                                analyticsLocation: b,
                                                 analyticsObject: C,
                                                 subscription: g
                                             })

@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(637073),
     _ = n(398523),
     g = n(612669),
-    A = n(180022),
-    m = n(513570),
+    m = n(180022),
+    A = n(513570),
     h = n(975662),
     p = n(322631),
     x = n(17307),
@@ -52,13 +52,13 @@ let T = e => {
             noBackground: l = !1,
             leftAlignHeaders: S = !1,
             showAllPerksButton: C,
-            headerClassname: I
-        } = e, f = s.useRef(null), N = n === p.cJ.WHATS_NEW, b = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, m.E)();
+            headerClassname: f
+        } = e, N = s.useRef(null), b = n === p.cJ.WHATS_NEW, I = (0, r.bG)([c.default], () => c.default.getCurrentUser()), v = (0, A.E)();
         s.useEffect(() => {
-            N && v()
-        }, [v, N]);
-        let O = (0, x.G4)(N),
-            j = (0, h.A)(),
+            b && v()
+        }, [v, b]);
+        let j = (0, x.G4)(b),
+            O = (0, h.A)(),
             R = (0, x.LQ)(),
             {
                 fractionalState: y
@@ -69,7 +69,7 @@ let T = e => {
             }).enabled,
             L = (0, g.O9)(),
             G = (0, x.vx)({
-                perksCards: j,
+                perksCards: O,
                 variant: n,
                 hideCardsOnNarrowScreen: !1,
                 isPremiumSubscriber: R,
@@ -77,11 +77,11 @@ let T = e => {
                 isInReverseTrial: P,
                 recurring3PPromotionExperiment: D,
                 showPremiumGroup: L,
-                isPremiumGroupMember: b?.isPremiumGroupMember()
+                isPremiumGroupMember: I?.isPremiumGroupMember()
             }),
             M = G.some(e => null != e.pillText);
         return (0, i.jsxs)("div", {
-            ref: f,
+            ref: N,
             className: a()(E.uW, {
                 [E.qO]: !S,
                 [E.Uv]: S
@@ -89,26 +89,26 @@ let T = e => {
             children: [(0, i.jsx)(T, {
                 showAllPerksButton: C,
                 leftAlignHeaders: S,
-                title: O.title,
-                headerClassname: I
+                title: j.title,
+                headerClassname: f
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/normal",
                 color: "text-strong",
                 className: a()(E.VA, {
                     [E.VA]: null == C || S,
                     [E.Xx]: null != C && !S,
-                    [E.Ij]: N || S,
+                    [E.Ij]: b || S,
                     [E.Ob]: M,
                     [E.dO]: S,
                     [E.br]: !S
                 }),
-                children: O.subtitle
+                children: j.subtitle
             }), !S && null != C && (0, i.jsx)("div", {
                 className: E.xk,
                 children: C
             }), (0, i.jsx)("div", {
                 className: E.Ui,
-                children: G.map((e, t) => (0, i.jsx)(A.A, {
+                children: G.map((e, t) => (0, i.jsx)(m.A, {
                     ...e,
                     forceShadow: l
                 }, `${e.name}_${t}`))

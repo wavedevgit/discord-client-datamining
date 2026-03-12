@@ -1,6 +1,6 @@
 /** chunk id: 559248 params = (module,exports,require) **/
 n.d(t, {
-    M: () => A
+    M: () => m
 });
 var i = n(627968),
     s = n(989349),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(287809),
     _ = n(531525),
     g = n(788868);
-let A = () => {
+let m = () => {
     let e = (0, a.bG)([u.default], () => u.default.getCurrentUser()),
         t = (0, a.bG)([d.A], () => {
             let e = d.A.getCreatedAtOverride();

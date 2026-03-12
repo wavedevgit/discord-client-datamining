@@ -1,7 +1,7 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f,
-    c: () => I
+    A: () => N,
+    c: () => f
 });
 var i, s = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var l = n(503698),
     u = n(311364),
     _ = n(975571),
     g = n(40185),
-    A = n(396375),
-    m = n(788868),
+    m = n(396375),
+    A = n(788868),
     h = n(652215),
     p = n(985018),
     x = n(363978),
@@ -23,8 +23,8 @@ var l = n(503698),
     T = n(967521),
     S = n(767032),
     C = n(990521),
-    I = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
-let f = function(e) {
+    f = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
+let N = function(e) {
     let {
         variant: t
     } = e, n = (0, g.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;
@@ -58,12 +58,12 @@ let f = function(e) {
                     children: p.intl.format(p.t["lVOH/p"], {
                         helpCenterLink: _.A.getArticleURL(h.MVz.SUMMER_BOGO_2025)
                     })
-                }), (0, s.jsx)(A.A, {
+                }), (0, s.jsx)(m.A, {
                     textOptions: {
                         textOverride: p.intl.string(p.t.J61px0),
                         textClassName: x.cZ
                     },
-                    subscriptionTier: m.pe.TIER_2,
+                    subscriptionTier: A.pe.TIER_2,
                     showIcon: !1,
                     className: x.xF,
                     color: l
@@ -102,12 +102,12 @@ let f = function(e) {
                     children: p.intl.format(p.t["lVOH/p"], {
                         helpCenterLink: _.A.getArticleURL(h.MVz.SUMMER_BOGO_2025)
                     })
-                }), (0, s.jsx)(A.A, {
+                }), (0, s.jsx)(m.A, {
                     textOptions: {
                         textOverride: p.intl.string(p.t.J61px0),
                         textClassName: x.cZ
                     },
-                    subscriptionTier: m.pe.TIER_2,
+                    subscriptionTier: A.pe.TIER_2,
                     showIcon: !1,
                     className: x.xF,
                     color: l
@@ -145,8 +145,8 @@ let f = function(e) {
                     helpCenterLink: _.A.getArticleURL(h.MVz.SUMMER_BOGO_2025)
                 })
             })]
-        }), (0, s.jsx)(A.A, {
-            subscriptionTier: m.pe.TIER_2,
+        }), (0, s.jsx)(m.A, {
+            subscriptionTier: A.pe.TIER_2,
             showIcon: !0,
             shinyButtonClassName: x.Xp,
             hasActivePromotion: !0

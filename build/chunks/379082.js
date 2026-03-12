@@ -1,6 +1,6 @@
 /** chunk id: 379082 params = (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(64700),
     s = n(989349),
@@ -14,18 +14,18 @@ var i = n(64700),
     _ = n(652215),
     g = n(985018);
 
-function A(e) {
+function m(e) {
     let t = (0, u.M)(e),
         n = (0, a.bG)([c.A], () => c.A.getSubscriptionListingForPlan(t)),
         s = (0, a.bG)([c.A], () => null != n ? c.A.getSubscriptionGroupListingForSubscriptionListing(n.id) : null),
-        A = (0, a.bG)([r.A], () => r.A.getGuild(s?.guild_id)),
-        [m, h] = i.useState(!1),
+        m = (0, a.bG)([r.A], () => r.A.getGuild(s?.guild_id)),
+        [A, h] = i.useState(!1),
         {
             fetchSubscriptionsSettings: p
         } = (0, d.XE)();
     i.useEffect(() => {
-        m && null != A && null == c.A.getSubscriptionSettings(A.id) && p(A.id)
-    }, [m, A, p]);
+        A && null != m && null == c.A.getSubscriptionSettings(m.id) && p(m.id)
+    }, [A, m, p]);
     let x = null == n ? void 0 : function(e) {
         let {
             subscription: t
@@ -43,8 +43,8 @@ function A(e) {
         subscription: e
     });
     return {
-        guild: A,
-        expanded: m,
+        guild: m,
+        expanded: A,
         handleToggleExpanded: () => h(e => !e),
         listing: n,
         groupListing: s,

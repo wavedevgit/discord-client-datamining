@@ -14,8 +14,8 @@ var i = n(934551),
     u = n(729770),
     _ = n(859669),
     g = n(662802),
-    A = n(988208),
-    m = n(819070),
+    m = n(988208),
+    A = n(819070),
     h = n(352694),
     p = n(136451),
     x = n(985018);
@@ -36,7 +36,7 @@ let E = [{
         initialize: () => {
             (0, l.v)()
         },
-        buildLayout: () => [h.S, g._, p.u, A.U, m.M, _.d]
+        buildLayout: () => [h.S, g._, p.u, m.U, A.M, _.d]
     }),
     S = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => x.intl.string(x.t["iHH+ky"]),

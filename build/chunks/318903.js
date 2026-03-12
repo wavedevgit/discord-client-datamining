@@ -19,7 +19,7 @@ function u(e) {
         useTrailingDecoration: u,
         useTitle: _,
         useSubtitle: g
-    } = t, A = u?.(), m = g?.(), {
+    } = t, m = u?.(), A = g?.(), {
         parentPanelNode: h,
         parentSidebarItemNode: p
     } = (0, a.x)(n), x = _?.(), E = h?.useTitle?.(), T = x ?? E, S = (0, r.q)(t);
@@ -27,7 +27,7 @@ function u(e) {
     let C = null != p ? p.icon : void 0;
     return (0, i.jsx)(o.U, {
         title: T,
-        description: m,
+        description: A,
         leadingElement: null != C && (0, i.jsx)("div", {
             className: c.z,
             children: (0, i.jsx)(C, {
@@ -36,8 +36,8 @@ function u(e) {
         }),
         trailingElement: (0, i.jsxs)("div", {
             className: c.M,
-            children: [null != A && (0, i.jsx)(d.Q, {
-                decoration: A
+            children: [null != m && (0, i.jsx)(d.Q, {
+                decoration: m
             }), (0, i.jsx)(s.uhT, {})]
         }),
         onClick: () => {

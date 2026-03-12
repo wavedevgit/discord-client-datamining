@@ -1,7 +1,7 @@
 /** chunk id: 17307 params = (module,exports,require) **/
 n.d(t, {
     G4: () => g,
-    LQ: () => A,
+    LQ: () => m,
     t4: () => u,
     vx: () => _
 }), n(321073);
@@ -89,7 +89,7 @@ let u = (e, t, n) => (0, s.Mw)(e) ? t : n,
             subtitle: c.intl.string(c.t["5TFEXv"])
         }
     },
-    A = () => {
+    m = () => {
         let e = (0, i.bG)([l.default], () => l.default.getCurrentUser());
         return (0, r.TW)(e)
     }

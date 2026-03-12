@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(536432),
     _ = n(792348),
     g = n(674168),
-    A = n(989799),
-    m = n(69217),
+    m = n(989799),
+    A = n(69217),
     h = n(985018),
     p = n(768271);
 
@@ -36,7 +36,7 @@ function x(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(r.lGe, {
-                children: (0, i.jsx)(A.A, {
+                children: (0, i.jsx)(m.A, {
                     suppressPlaySound: !0,
                     shouldShowLockedSounds: !1,
                     guildId: null,
@@ -48,7 +48,7 @@ function x(e) {
                 })
             })
         },
-        children: e => (0, i.jsx)(m.dT, {
+        children: e => (0, i.jsx)(A.dT, {
             ...e,
             ref: _,
             onClick: () => {
@@ -73,7 +73,7 @@ function E(e) {
         emojiName: t.emojiName,
         soundName: t.name
     });
-    return (0, i.jsx)(m.dT, {
+    return (0, i.jsx)(A.dT, {
         onClick: n,
         text: s,
         children: (0, i.jsx)(r.HKD, {
@@ -122,7 +122,7 @@ function T(e) {
             className: p.kL,
             children: [(0, i.jsx)(x, {
                 onSelect: s
-            }), l && !n && (0, i.jsx)(m.dT, {
+            }), l && !n && (0, i.jsx)(A.dT, {
                 onClick: () => s(null),
                 text: h.intl.string(h.t.jmtcGA),
                 children: (0, i.jsx)(r.ucK, {

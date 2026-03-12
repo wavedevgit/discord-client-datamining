@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(271478),
     _ = n(49463),
     g = n(386976),
-    A = n(257433),
-    m = n(32523),
+    m = n(257433),
+    A = n(32523),
     h = n(961350),
     p = n(71393),
     x = n(957565),
@@ -29,7 +29,7 @@ function C() {
     } = (0, g.op)(), {
         experiments: n,
         overridesInfo: l
-    } = (0, m.hI)(), a = s.useMemo(() => ({
+    } = (0, A.hI)(), a = s.useMemo(() => ({
         ...n,
         ...e
     }), [n, e]), r = s.useMemo(() => ({
@@ -44,7 +44,7 @@ function C() {
             onChange: c,
             onClear: () => c("")
         }), u.length > 0 ? u.map(e => {
-            let t = "guild" === e.experiment.kind ? f : I;
+            let t = "guild" === e.experiment.kind ? N : f;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -61,21 +61,21 @@ function C() {
     })
 }
 
-function I(e) {
+function f(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
         defaultOpen: g
-    } = e, [m, p] = s.useState(g), [E, C] = s.useState(!1), I = s.useCallback(() => {
+    } = e, [A, p] = s.useState(g), [E, C] = s.useState(!1), f = s.useCallback(() => {
         p(e => !e)
-    }, []), f = (0, r.bG)([h.default], () => h.default.getId()), N = (0, A.iN)(t, f), b = (0, A.Fm)(t, f), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
+    }, []), N = (0, r.bG)([h.default], () => h.default.getId()), b = (0, m.iN)(t, N), I = (0, m.Fm)(t, N), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), O = s.useCallback(e => {
+    })), j = s.useCallback(e => {
         (0, x.C)((0, d.yA)(n), () => {
             (0, o.showToast)({
                 id: "experiment-link-copied",
@@ -83,9 +83,9 @@ function I(e) {
                 type: o.ToastType.SUCCESS
             }), e.preventDefault(), e.stopPropagation()
         })
-    }, [n]), j = (0, i.jsx)(o.sqX, {
+    }, [n]), O = (0, i.jsx)(o.sqX, {
         "aria-label": "Toggle visibility",
-        onClick: I,
+        onClick: f,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -95,7 +95,7 @@ function I(e) {
                     align: "center",
                     gap: 4,
                     children: [t.title, " ", x.p5 && (0, i.jsx)(o.DUT, {
-                        onClick: O,
+                        onClick: j,
                         children: (0, i.jsx)(o.qYV, {
                             size: "xs"
                         })
@@ -111,14 +111,14 @@ function I(e) {
             })]
         })
     });
-    if (!m) return (0, i.jsx)("div", {
+    if (!A) return (0, i.jsx)("div", {
         className: S.Os,
-        children: j
+        children: O
     });
     let R = "";
-    return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${N??T.RE.NOT_ELIGIBLE}` : null != N ? `Currently assigned to variant ${N}` : "Currently unassigned", (0, i.jsxs)("div", {
+    return R = t.system === c.l5.LEGACY ? `Currently assigned to bucket ${b??T.RE.NOT_ELIGIBLE}` : null != b ? `Currently assigned to variant ${b}` : "Currently unassigned", (0, i.jsxs)("div", {
         className: S.Os,
-        children: [j, (0, i.jsx)("div", {
+        children: [O, (0, i.jsx)("div", {
             children: (0, i.jsx)(u.g, {
                 label: t.system === c.l5.LEGACY ? "Bucket Override" : "Variant Override",
                 description: R,
@@ -128,7 +128,7 @@ function I(e) {
             })
         }), (0, i.jsx)("div", {
             className: S.h_,
-            children: null == b ? (0, i.jsx)(o.Text, {
+            children: null == I ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -141,7 +141,7 @@ function I(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: S.AS,
-                children: null == b ? "None" : JSON.stringify(b, void 0, 2)
+                children: null == I ? "None" : JSON.stringify(I, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,
@@ -172,12 +172,12 @@ function I(e) {
     })
 }
 
-function f(e) {
+function N(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l
-    } = e, [d, c] = s.useState(null != l), [g, A] = s.useState(!1), m = s.useCallback(() => {
+    } = e, [d, c] = s.useState(null != l), [g, m] = s.useState(!1), A = s.useCallback(() => {
         c(e => !e)
     }, []), h = (0, r.bG)([_.A], () => _.A.getLoadedGuildExperiment(n)), x = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(T.Vh.GUILD, n), e => {
         let [t, n] = e;
@@ -196,8 +196,8 @@ function f(e) {
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
-    }), I = (0, i.jsx)(o.DUT, {
-        onClick: m,
+    }), f = (0, i.jsx)(o.DUT, {
+        onClick: A,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -217,7 +217,7 @@ function f(e) {
     });
     return d ? (0, i.jsxs)("div", {
         className: S.Os,
-        children: [I, (0, i.jsx)(u.g, {
+        children: [f, (0, i.jsx)(u.g, {
             label: "Bucket Override",
             description: `Current Assignments: ${C}`,
             experiment: t,
@@ -269,13 +269,13 @@ function f(e) {
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
-                onClick: () => A(!0)
+                onClick: () => m(!0)
             })
         }), (0, i.jsx)(o.cGx, {
             className: S.yF
         })]
     }) : (0, i.jsx)("div", {
         className: S.Os,
-        children: I
+        children: f
     })
 }

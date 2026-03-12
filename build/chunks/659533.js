@@ -1,6 +1,6 @@
 /** chunk id: 659533 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => O
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(793574),
     _ = n(688810),
     g = n(854627),
-    A = n(427157),
-    m = n(954571),
+    m = n(427157),
+    A = n(954571),
     h = n(975571),
     p = n(326084),
     x = n(851746),
@@ -22,10 +22,10 @@ var i = n(627968),
     T = n(344904),
     S = n(221688),
     C = n(652215),
-    I = n(985018),
-    f = n(930371),
-    N = n(6336);
-let b = e => {
+    f = n(985018),
+    N = n(930371),
+    b = n(6336);
+let I = e => {
         let {
             userRecord: t,
             placement: n
@@ -43,14 +43,14 @@ let b = e => {
             ...l
         }) : (0, i.jsx)(c.Heading, {
             variant: "heading-md/semibold",
-            className: f.n5,
+            className: N.n5,
             children: n
         });
         return (0, i.jsx)(o.m_, {
-            text: I.intl.string(I.t.UnKHdo),
+            text: f.intl.string(f.t.UnKHdo),
             shouldShow: !a,
             children: (0, i.jsx)("div", {
-                className: f.Lg,
+                className: N.Lg,
                 children: r
             })
         })
@@ -61,99 +61,99 @@ let b = e => {
             placement: n
         } = e;
         return (0, i.jsxs)("div", {
-            className: f.Ip,
+            className: N.Ip,
             children: [(0, i.jsx)("div", {
-                className: f.Ej
+                className: N.Ej
             }), (0, i.jsx)("div", {
                 className: a()({
-                    [f.ch]: t > n,
-                    [f.q_]: t === n
+                    [N.ch]: t > n,
+                    [N.q_]: t === n
                 })
-            })]
-        })
-    },
-    O = e => {
-        let {
-            userRecords: t
-        } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
-        return (0, i.jsxs)("div", {
-            className: f.ZM,
-            children: [(0, i.jsx)(b, {
-                userRecord: s,
-                placement: 1
-            }), (0, i.jsx)(v, {
-                numSentReferrals: n,
-                placement: 1
-            }), (0, i.jsx)(b, {
-                userRecord: l,
-                placement: 2
-            }), (0, i.jsx)(v, {
-                numSentReferrals: n,
-                placement: 2
-            }), (0, i.jsx)(b, {
-                userRecord: a,
-                placement: 3
             })]
         })
     },
     j = e => {
         let {
+            userRecords: t
+        } = e, n = t.length, s = n < 1 ? null : t[0], l = n < 2 ? null : t[1], a = n < 3 ? null : t[2];
+        return (0, i.jsxs)("div", {
+            className: N.ZM,
+            children: [(0, i.jsx)(I, {
+                userRecord: s,
+                placement: 1
+            }), (0, i.jsx)(v, {
+                numSentReferrals: n,
+                placement: 1
+            }), (0, i.jsx)(I, {
+                userRecord: l,
+                placement: 2
+            }), (0, i.jsx)(v, {
+                numSentReferrals: n,
+                placement: 2
+            }), (0, i.jsx)(I, {
+                userRecord: a,
+                placement: 3
+            })]
+        })
+    },
+    O = e => {
+        let {
             isInSettings: t = !1
         } = e, l = (0, r.bG)([x.A], () => x.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, E.J)(), g = s.useMemo(() => o.map(e => new A.A(e)), [o]), b = {
+        } = (0, E.J)(), g = s.useMemo(() => o.map(e => new m.A(e)), [o]), I = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === p.aK.REDEEMED && b.redeemed++, e === p.aK.CONVERTED && (b.redeemed++, b.converted++)
+            e === p.aK.REDEEMED && I.redeemed++, e === p.aK.CONVERTED && (I.redeemed++, I.converted++)
         });
-        let v = b.sent === E.Z,
-            j = h.A.getArticleURL(C.MVz.REFERRAL_PROGRAM),
+        let v = I.sent === E.Z,
+            O = h.A.getArticleURL(C.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: R
             } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             y = s.useRef(null),
-            P = b.sent / E.Z * 100,
+            P = I.sent / E.Z * 100,
             D = (0, i.jsxs)("div", {
-                className: f.hE,
+                className: N.hE,
                 children: [(0, i.jsx)(T.Ay, {
                     percentage: P,
                     progressCircleVariation: T.BN.NITRO_LOGO,
                     iconClassName: a()({
-                        [f.VC]: !t,
-                        [f.ER]: t
+                        [N.VC]: !t,
+                        [N.ER]: t
                     })
                 }), (0, i.jsxs)("div", {
-                    className: f.Ns,
+                    className: N.Ns,
                     children: [(0, i.jsx)(c.Heading, {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-                        className: f.R0,
+                        className: N.R0,
                         children: (0, S.X8)({
                             hasSentAll: v
                         })
-                    }), (0, i.jsx)(O, {
+                    }), (0, i.jsx)(j, {
                         userRecords: g
                     }), (0, i.jsx)(c.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
                         children: (0, S.dB)({
-                            helpdeskArticle: j,
-                            referralsStatuses: b
+                            helpdeskArticle: O,
+                            referralsStatuses: I
                         })
                     }), (0, i.jsx)("div", {
-                        className: a()(f.Fb, {
-                            [f.jv]: !t
+                        className: a()(N.Fb, {
+                            [N.jv]: !t
                         }),
                         children: (0, i.jsx)(c.wLn, {
                             "data-migration-pending": !0,
-                            className: f.r$,
+                            className: N.r$,
                             color: d.XD.CUSTOM,
                             onClick: () => (e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                m.default.track(C.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                A.default.track(C.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {
@@ -169,33 +169,33 @@ let b = e => {
                             }),
                             onlyShineOnHover: !0,
                             children: (0, i.jsxs)("div", {
-                                className: f.Zn,
+                                className: N.Zn,
                                 children: [(0, i.jsx)("img", {
-                                    src: N,
+                                    src: b,
                                     alt: "",
-                                    className: f.QH
-                                }), v ? I.intl.string(I.t.SY9tyI) : I.intl.string(I.t.Lm2nFc)]
+                                    className: N.QH
+                                }), v ? f.intl.string(f.t.SY9tyI) : f.intl.string(f.t.Lm2nFc)]
                             })
                         })
                     })]
                 })]
             }),
-            L = b.redeemed === E.Z;
+            L = I.redeemed === E.Z;
         return (0, i.jsx)(_.f5, {
             value: R,
             children: (0, i.jsx)("div", {
                 className: a()({
-                    [f.f5]: L,
-                    [f.JY]: !L,
-                    [f.VX]: !t,
-                    [f.m$]: L && t
+                    [N.f5]: L,
+                    [N.JY]: !L,
+                    [N.VX]: !t,
+                    [N.m$]: L && t
                 }),
                 children: (0, i.jsx)("div", {
                     ref: y,
                     className: a()({
-                        [f.dn]: !t,
-                        [f.d_]: t,
-                        [f.kS]: L
+                        [N.dn]: !t,
+                        [N.d_]: t,
+                        [N.kS]: L
                     }),
                     children: D
                 })

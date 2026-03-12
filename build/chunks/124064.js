@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(95701),
     _ = n(128450),
     g = n(652215),
-    A = n(985018),
-    m = n(656420);
+    m = n(985018),
+    A = n(656420);
 let h = (0, d.Ld)(),
     p = (0, u.createChannelRecord)({
         id: "1",
@@ -31,34 +31,34 @@ function E(e) {
         placeholder: E,
         currentBio: T,
         disabled: S = !1
-    } = e, [C, I] = s.useState(u ?? T), [f, N] = s.useState((0, r.x7)(C)), b = s.useRef(T), v = s.useRef(!1);
+    } = e, [C, f] = s.useState(u ?? T), [N, b] = s.useState((0, r.x7)(C)), I = s.useRef(T), v = s.useRef(!1);
     return s.useEffect(() => {
-        if (b.current !== T) {
+        if (I.current !== T) {
             let e = (0, r.x7)(T);
-            I(T), N(e)
+            f(T), b(e)
         }
-        b.current = T
+        I.current = T
     }, [T]), s.useEffect(() => {
-        void 0 !== u || C === T || v.current || (I(T), N((0, r.x7)(T)))
+        void 0 !== u || C === T || v.current || (f(T), b((0, r.x7)(T)))
     }, [u, T, C]), (0, i.jsxs)(_.A, {
         title: t,
         titleId: h,
-        description: A.intl.string(A.t.Bbw6Ac),
+        description: m.intl.string(m.t.Bbw6Ac),
         errors: n,
         disabled: S,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": x,
             "aria-labelledby": h,
-            className: m.i,
-            innerClassName: m.Z,
+            className: A.i,
+            innerClassName: A.Z,
             maxCharacterCount: g.NA2,
             onChange: function(e, t, n) {
-                t !== C && (I(t), N(n), d(t))
+                t !== C && (f(t), b(n), d(t))
             },
             placeholder: E,
             channel: p,
             textValue: C,
-            richValue: f,
+            richValue: N,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
             type: a.oU.PROFILE_BIO_INPUT,
@@ -79,7 +79,7 @@ function E(e) {
             }
         }), (0, i.jsx)(l.AC4, {
             id: x,
-            children: A.intl.format(A.t["+DFxLc"], {
+            children: m.intl.format(m.t["+DFxLc"], {
                 maxLength: g.NA2
             })
         })]

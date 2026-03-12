@@ -13,9 +13,9 @@ var i = n(627968),
     u = n(652215),
     _ = n(730844),
     g = n(985018),
-    A = n(127050);
+    m = n(127050);
 
-function m(e) {
+function A(e) {
     let {
         guild: t,
         isActivityRestricted: n,
@@ -27,13 +27,13 @@ function m(e) {
         align: "center",
         gap: 20,
         children: [(0, i.jsx)("div", {
-            className: A.FO,
+            className: m.FO,
             children: (0, i.jsx)(d.$, {
                 guild: t,
                 size: 48
             })
         }), (0, i.jsx)("div", {
-            className: A.QH,
+            className: m.QH,
             children: (0, i.jsx)(a.dOG, {
                 label: t.name,
                 description: g.intl.format(g.t.zRl6XR, {
@@ -63,9 +63,9 @@ let h = function() {
         numTotalGuilds: T
     } = (0, c.M)(), S = (0, s.useId)();
     return (0, i.jsxs)("div", {
-        className: A.iE,
+        className: m.iE,
         children: [(0, i.jsxs)("div", {
-            className: A.N1,
+            className: m.N1,
             children: [(0, i.jsx)(a.IWV, {
                 query: t,
                 onChange: n,
@@ -96,7 +96,7 @@ let h = function() {
                     "aria-expanded": !0
                 }
             }), e.length > 0 && (0, i.jsxs)("div", {
-                className: A.gO,
+                className: m.gO,
                 children: [(0, i.jsx)(a.l6P, {
                     label: g.intl.string(g.t.LxVjvJ),
                     hideLabel: !0,
@@ -140,17 +140,17 @@ let h = function() {
                 count: e.length
             })
         }), (0, i.jsxs)("ul", {
-            className: A.X1,
+            className: m.X1,
             id: S,
             "aria-label": g.intl.string(g.t["7hB4kg"]),
             children: [0 === e.length && (0, i.jsx)("div", {
-                className: A.pb,
+                className: m.pb,
                 children: (0, i.jsx)(a.Text, {
-                    className: A.R$,
+                    className: m.R$,
                     variant: "text-lg/medium",
                     children: g.intl.string(g.t["Xe+fJM"])
                 })
-            }), e.map(e => (0, i.jsx)(m, {
+            }), e.map(e => (0, i.jsx)(A, {
                 guild: e,
                 isActivityRestricted: x(e.id),
                 onToggleActivityRestrictedGuild: p

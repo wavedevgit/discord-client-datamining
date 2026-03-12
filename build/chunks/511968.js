@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(3432),
     _ = n(580630),
     g = n(240248),
-    A = n(237218),
-    m = n(689296),
+    m = n(237218),
+    A = n(689296),
     h = n(194180);
 
 function p(e) {
@@ -26,7 +26,7 @@ function p(e) {
         applicationId: p,
         benefits: x,
         description: E
-    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, A.t)(p, n.thumbnail, 256), [p, n.thumbnail]), {
+    } = n, T = s.useMemo(() => null == n.thumbnail ? null : (0, m.t)(p, n.thumbnail, 256), [p, n.thumbnail]), {
         data: S
     } = (0, c.j)(n.skuId), C = s.useMemo(() => {
         if (null == S || 0 === S.length) return null;
@@ -56,7 +56,7 @@ function p(e) {
         }),
         children: [!(0, g.uJ)(E) && (0, i.jsx)("div", {
             className: h.h_,
-            children: (0, i.jsx)(m.A, {
+            children: (0, i.jsx)(A.A, {
                 variant: "text-sm/medium",
                 children: E
             })

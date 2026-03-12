@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(775602),
     _ = n(793574),
     g = n(688810),
-    A = n(726649),
-    m = n(611924),
+    m = n(726649),
+    A = n(611924),
     h = n(649032),
     p = n(26508),
     x = n(166403),
@@ -22,13 +22,13 @@ var i = n(627968),
     T = n(927578),
     S = n(40185),
     C = n(994763),
-    I = n(130946),
-    f = n(407775),
-    N = n(817267),
-    b = n(736455),
+    f = n(130946),
+    N = n(407775),
+    b = n(817267),
+    I = n(736455),
     v = n(509388),
-    O = n(400292),
-    j = n(536195),
+    j = n(400292),
+    O = n(536195),
     R = n(577174),
     y = n(127493),
     P = n(23003),
@@ -40,7 +40,7 @@ var i = n(627968),
     k = n(475616);
 let V = () => {
     let e = (0, r.zy)();
-    (0, m.P)(A.b);
+    (0, A.P)(m.b);
     let t = s.useRef(null),
         n = s.useRef(null),
         l = s.useRef(null),
@@ -65,7 +65,7 @@ let V = () => {
     let en = (0, p.DK)(h.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
     (0, C.z)(P.NI.ORB_REWARDS, ei);
-    let es = [b.k.HOME, b.k.WHATS_NEW, b.k.BEST_OF_NITRO, b.k.PLANS, b.k.COMPARE],
+    let es = [I.k.HOME, I.k.WHATS_NEW, I.k.BEST_OF_NITRO, I.k.PLANS, I.k.COMPARE],
         {
             navBarSections: el,
             activeSectionId: ea
@@ -82,7 +82,7 @@ let V = () => {
                 [k.Hq]: !H
             }),
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(N.A, {
+            children: [(0, i.jsx)(b.A, {
                 className: k.yH
             }), (0, i.jsx)(R.A, {
                 navBarSections: el,
@@ -105,8 +105,8 @@ let V = () => {
                     })
                 }), ee && (0, i.jsx)("div", {
                     className: k.Hz,
-                    children: (0, i.jsx)(I.A, {
-                        variant: I.c.APPLICATION_NITRO_HOME
+                    children: (0, i.jsx)(f.A, {
+                        variant: f.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
                     className: k.So,
@@ -130,14 +130,14 @@ let V = () => {
                         onChange: e => z(e),
                         threshold: .1,
                         active: !0,
-                        children: (0, i.jsx)(f.hy, {
+                        children: (0, i.jsx)(N.hy, {
                             innerRef: n
                         })
                     })
                 }), (0, i.jsx)("div", {
                     className: k.aC,
                     ref: eu.ref,
-                    children: (0, i.jsx)(j.A, {})
+                    children: (0, i.jsx)(O.A, {})
                 })]
             }), (0, i.jsx)(d.L, {
                 innerRef: V,
@@ -152,11 +152,11 @@ let V = () => {
                 })
             }), (0, i.jsx)(v.A, {
                 ref: w
-            }), (0, i.jsx)(O.A, {
+            }), (0, i.jsx)(j.A, {
                 isVisible: !B && !Y && K,
                 subscriptionTier: $,
                 isEligibleForBogoPromotion: ee
-            }), (0, i.jsx)(N.A, {
+            }), (0, i.jsx)(b.A, {
                 className: k.MF
             })]
         });

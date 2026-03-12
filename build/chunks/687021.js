@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(836602),
     _ = n(71393),
     g = n(711014),
-    A = n(403362),
-    m = n(985018),
+    m = n(403362),
+    A = n(985018),
     h = n(651203);
 
 function p(e) {
@@ -28,7 +28,7 @@ function p(e) {
     } = e;
     return (0, i.jsx)(c.A, {
         className: a()(h.u, n),
-        title: m.intl.string(m.t.ref7Ki),
+        title: A.intl.string(A.t.ref7Ki),
         hideDivider: l,
         forcedDivider: !0,
         children: (0, i.jsx)(x, {
@@ -53,7 +53,7 @@ function x(e) {
                 label: t.name,
                 value: t.id
             }
-        }).filter(A.Vq);
+        }).filter(m.Vq);
         return null != n && e.unshift(n), e
     }, [p, x, n]), T = s.useCallback(e => {
         let t = e?.label === n?.label && e?.value === n?.value;
@@ -75,7 +75,7 @@ function x(e) {
         options: E,
         renderOptionPrefix: T,
         renderOptionSuffix: a,
-        placeholder: m.intl.string(m.t["kMgj+e"]),
+        placeholder: A.intl.string(A.t["kMgj+e"]),
         "data-migration-pending": !0
     })
 }

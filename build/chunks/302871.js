@@ -1,6 +1,6 @@
 /** chunk id: 302871 params = (module,exports,require) **/
 n.d(t, {
-    u: () => A
+    u: () => m
 });
 var i = n(627968),
     s = n(311907),
@@ -13,7 +13,7 @@ var i = n(627968),
     u = n(70040),
     _ = n(985018),
     g = n(879481);
-let A = (0, o.E2)(d.X.APPEARANCE_CLIENT_THEMES, {
+let m = (0, o.E2)(d.X.APPEARANCE_CLIENT_THEMES, {
     useSearchTerms: () => [_.intl.string(_.t.Ksh3ik), _.intl.string(_.t["0EzVst"]), _.intl.string(_.t.OCOOiI)],
     Component: () => {
         let e = (0, s.bG)([a.A], () => a.A.useForcedColors);

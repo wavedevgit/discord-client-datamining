@@ -1,6 +1,6 @@
 /** chunk id: 591203 params = (module,exports,require) **/
 n.d(t, {
-    L: () => N
+    L: () => b
 });
 var i = n(627968),
     s = n(64700),
@@ -13,8 +13,8 @@ var i = n(627968),
     u = n(419954),
     _ = n(796774),
     g = n(209932),
-    A = n(536432),
-    m = n(984813),
+    m = n(536432),
+    A = n(984813),
     h = n(595953),
     p = n(975571),
     x = n(780964),
@@ -24,7 +24,7 @@ n(980504);
 var S = n(985018),
     C = n(972628);
 
-function I(e) {
+function f(e) {
     return (0, l.bG)([g.A], () => {
         if (null == e) return null;
         let {
@@ -35,10 +35,10 @@ function I(e) {
     })
 }
 
-function f(e) {
+function N(e) {
     let {
         guildId: t
-    } = e, n = (0, l.bG)([E.A], () => E.A.settings.guilds?.guilds?.[t]?.joinSound), s = I(n);
+    } = e, n = (0, l.bG)([E.A], () => E.A.settings.guilds?.guilds?.[t]?.joinSound), s = f(n);
     if (null == n || null == s) return null;
     let {
         emojiId: o,
@@ -61,24 +61,24 @@ function f(e) {
         })]
     })
 }
-let N = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
+let b = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
     useSearchTerms: () => [S.intl.string(S.t.nzUc3B)],
     Component: function() {
         let {
             analyticsLocations: e
-        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, m.mz)(t), u = I(r), x = r?.type === m.PP.GLOBAL, E = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
+        } = (0, o.Ay)(), [t, n] = s.useState("0"), r = (0, A.mz)(t), u = f(r), x = r?.type === A.PP.GLOBAL, E = (0, l.bG)([g.A], () => g.A.hasFetchedAllSounds()) && null != r && null == u;
         s.useEffect(() => {
-            E && (0, A.ND)({
+            E && (0, m.ND)({
                 location: e
             })
         }, [E, e]), s.useEffect(() => {
             (0, _.E7)()
         }, []);
-        let N = s.useCallback((e, t) => {
+        let b = s.useCallback((e, t) => {
             let {
                 inDropdown: n
             } = t;
-            return null == e ? null : n ? (0, i.jsx)(f, {
+            return null == e ? null : n ? (0, i.jsx)(N, {
                 guildId: e.value
             }) : null
         }, []);
@@ -97,7 +97,7 @@ let N = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
                 onChange: e => {
                     n(null == e ? "0" : e.id)
                 },
-                renderOptionSuffix: N,
+                renderOptionSuffix: b,
                 hideDivider: !0
             }), (0, i.jsxs)(c.A, {
                 title: S.intl.format(S.t.I2TsYN, {
@@ -111,7 +111,7 @@ let N = (0, u.E2)(x.X.ENTRANCE_SOUNDS_SETTING, {
                     sound: u,
                     isGlobal: x,
                     onSelect: n => {
-                        null == n ? (0, A.Dv)(t, e) : (0, A.un)(t, n, e)
+                        null == n ? (0, m.Dv)(t, e) : (0, m.un)(t, n, e)
                     }
                 }), E && (0, i.jsx)(a.po8, {
                     className: C.lm,
