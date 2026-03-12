@@ -1,24 +1,24 @@
 /** chunk id: 807651 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => p
 });
-var l = i(627968);
-i(64700);
-var n = i(630054),
-    s = i(688810),
-    a = i(722868),
-    r = i(822775),
-    o = i(982985),
-    d = i(853397),
-    c = i(290090),
-    u = i(697250),
-    A = i(102951),
-    m = i(652215);
+var l = n(627968);
+n(64700);
+var i = n(630054),
+    s = n(688810),
+    a = n(722868),
+    r = n(822775),
+    o = n(982985),
+    d = n(853397),
+    c = n(290090),
+    u = n(697250),
+    A = n(102951),
+    m = n(652215);
 
 function p(e) {
     let {
         user: t,
-        currentUser: i,
+        currentUser: n,
         guildId: p,
         channelId: x,
         displayProfile: g,
@@ -39,7 +39,7 @@ function p(e) {
     } = (0, A.J)({
         userId: t.id
     }), E = v.length > 0 || N || y;
-    return h === m.eA$.BLOCKED ? null : t.id === i.id ? (0, l.jsxs)(l.Fragment, {
+    return h === m.eA$.BLOCKED ? null : t.id === n.id ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(r.A, {
             user: t,
             guildId: p,
@@ -54,7 +54,7 @@ function p(e) {
     }) : t.bot ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.e, {
             userId: t.id,
-            onClose: n.A.popAll,
+            onClose: i.A.popAll,
             autoFocus: !0
         }), (0, l.jsx)(d.Zt, {
             user: t,
@@ -64,7 +64,7 @@ function p(e) {
     }) : h === m.eA$.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.e, {
             userId: t.id,
-            onClose: n.A.popAll,
+            onClose: i.A.popAll,
             autoFocus: !0
         }), (0, l.jsx)(d.Zt, {
             user: t,
@@ -73,7 +73,7 @@ function p(e) {
     }) : h === m.eA$.FRIEND || h === m.eA$.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.e, {
             userId: t.id,
-            onClose: n.A.popAll,
+            onClose: i.A.popAll,
             autoFocus: !0
         }), (0, l.jsx)(u.Ef, {
             user: t,
@@ -87,7 +87,7 @@ function p(e) {
     }) : h === m.eA$.NONE && E ? (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.e, {
             userId: t.id,
-            onClose: n.A.popAll,
+            onClose: i.A.popAll,
             autoFocus: !0
         }), (0, l.jsx)(u.ES, {
             user: t,
@@ -110,7 +110,7 @@ function p(e) {
             autoFocus: !0
         }), (0, l.jsx)(o.l, {
             userId: t.id,
-            onClose: n.A.popAll,
+            onClose: i.A.popAll,
             variant: "secondary"
         }), (0, l.jsx)(d.Zt, {
             user: t,

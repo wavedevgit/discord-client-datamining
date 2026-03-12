@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     r = n(311907),
-    l = n(397927),
-    a = n(351906),
+    a = n(397927),
+    l = n(351906),
     d = n(183555),
     o = n(382120),
     c = n(128490),
@@ -14,9 +14,9 @@ var i = n(627968),
     A = n(412775),
     m = n(86404),
     x = n(738759),
-    f = n(518477),
-    p = n(985018),
-    _ = n(230836),
+    p = n(518477),
+    _ = n(985018),
+    f = n(230836),
     h = n(735633);
 
 function g(e) {
@@ -25,29 +25,29 @@ function g(e) {
         user: n,
         currentUser: s,
         displayProfile: r,
-        guildId: l,
-        channelId: a,
+        guildId: a,
+        channelId: l,
         onClose: d
     } = e;
-    return t === f.RP.ACTIVITY ? (0, i.jsx)(u.A, {
+    return t === p.RP.ACTIVITY ? (0, i.jsx)(u.A, {
         user: n,
         currentUser: s,
-        guildId: l,
+        guildId: a,
         onClose: d
-    }) : t === f.RP.MUTUAL_FRIENDS ? (0, i.jsx)(m.A, {
+    }) : t === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(m.A, {
         user: n,
-        guildId: l,
-        channelId: a,
+        guildId: a,
+        channelId: l,
         onClose: d
-    }) : t === f.RP.MUTUAL_GUILDS ? (0, i.jsx)(x.A, {
+    }) : t === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(x.A, {
         user: n,
         onClose: d
-    }) : t === f.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
+    }) : t === p.RP.BOT_DATA_ACCESS ? (0, i.jsx)(o.A, {
         user: n
-    }) : t === f.RP.BOT_INFO ? (0, i.jsx)(c.A, {
+    }) : t === p.RP.BOT_INFO ? (0, i.jsx)(c.A, {
         user: n,
         displayProfile: r,
-        guildId: l,
+        guildId: a,
         onClose: d
     }) : (0, i.jsx)(A.A, {
         user: n,
@@ -63,11 +63,11 @@ function I(e) {
         displayProfile: o,
         guildId: c,
         items: u,
-        initialSection: A = f.RP.USER_INFO,
+        initialSection: A = p.RP.USER_INFO,
         onClose: m
     } = e, {
         trackUserProfileAction: x
-    } = (0, d.NJ)(), I = (0, r.bG)([a.A], () => a.A.hidePersonalInformation), [j, b] = s.useState(() => u.find(e => {
+    } = (0, d.NJ)(), I = (0, r.bG)([l.A], () => l.A.hidePersonalInformation), [j, b] = s.useState(() => u.find(e => {
         let {
             section: t
         } = e;
@@ -85,17 +85,17 @@ function I(e) {
     return I ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)("div", {
-            className: _.Ie,
+            className: f.Ie,
             children: [(0, i.jsx)("div", {
-                className: _.hB
+                className: f.hB
             }), (0, i.jsx)("div", {
-                className: _.BI,
-                children: p.intl.string(p.t.Br1ls3)
+                className: f.BI,
+                children: _.intl.string(_.t.Br1ls3)
             })]
         })
     }) : (0, i.jsxs)("div", {
         className: h.kL,
-        children: [(0, i.jsx)(l.VQ0, {
+        children: [(0, i.jsx)(a.VQ0, {
             className: h.$H,
             type: "top",
             selectedItem: j,
@@ -105,11 +105,11 @@ function I(e) {
                     section: t,
                     text: n
                 } = e;
-                return (0, i.jsx)(l.VQ0.Item, {
+                return (0, i.jsx)(a.VQ0.Item, {
                     className: h.YU,
                     id: t,
                     "aria-label": n,
-                    children: (0, i.jsx)(l.Text, {
+                    children: (0, i.jsx)(a.Text, {
                         variant: "text-sm/normal",
                         children: n
                     })

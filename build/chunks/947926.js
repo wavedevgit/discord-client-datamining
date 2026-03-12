@@ -24,8 +24,8 @@ var a = n(627968),
     j = n(792620),
     A = n(241124),
     C = n(73473),
-    T = n(201805),
-    y = n(545986),
+    y = n(201805),
+    T = n(545986),
     S = n(139210),
     E = n(568329),
     N = n(818276),
@@ -74,7 +74,7 @@ function V(e) {
     }), V = (0, d.bG)([x.A], () => null != x.A.questEnrollmentBlockedUntil), {
         isQuestBarVisible: W,
         reason: H
-    } = (0, T.TQ)({
+    } = (0, y.TQ)({
         quest: t,
         location: L.rE.QUESTS_BAR
     }), K = (0, d.bG)([p.A], () => p.A.hasLayers()), z = i.useRef(null), $ = i.useMemo(() => (0, j.vv)(t), [t]), q = t.id, Q = t.userStatus?.enrolledAt != null, Y = (0, c.A)(Q), J = t.userStatus?.completedAt != null, {
@@ -136,8 +136,8 @@ function V(e) {
         isQuestEnrollmentBlocked: V,
         impressionRef: z
     });
-    let eT = i.useRef(null),
-        ey = i.useRef(null),
+    let ey = i.useRef(null),
+        eT = i.useRef(null),
         eS = i.useRef(null),
         eE = (0, b.fc)(t),
         eN = h.H1.useSetting();
@@ -149,7 +149,7 @@ function V(e) {
                 })
             }
         }, [ee, eN, q]), i.useEffect(() => {
-            $ && (0, y.l9)()
+            $ && (0, T.l9)()
         }, [$]), !_ || !ee && er && !Z || X) return X ? u.log("Not rendered due to asset error") : _ || u.log("Not rendered due to ineligibility"), null;
     let eI = 70 + 78 * !!J;
     return (0, a.jsx)(C.R, {
@@ -189,8 +189,8 @@ function V(e) {
                         springConfig: ec,
                         isExpanded: ea,
                         children: (0, a.jsx)(E.oK, {
-                            expandedContentRef: eT,
-                            collapsedContentRef: ey,
+                            expandedContentRef: ey,
+                            collapsedContentRef: eT,
                             expansionSpring: eo,
                             children: (0, a.jsxs)(R.C, {
                                 quest: t,
@@ -204,13 +204,13 @@ function V(e) {
                                 onGameSheetClose: ev,
                                 collapsedHeight: eI,
                                 children: [(0, a.jsx)(N.A, {
-                                    ref: ey,
+                                    ref: eT,
                                     className: B.Qs,
                                     overlayRef: eS
                                 }, J ? "collapsed-with-rewards" : "collapsed-without-rewards"), (0, a.jsx)(I.A, {
                                     className: B.Qs,
                                     overlayRef: eS,
-                                    ref: eT,
+                                    ref: ey,
                                     isUnfurl: em,
                                     children: (0, a.jsxs)(a.Fragment, {
                                         children: [(0, a.jsx)(w.A, {}), !Q && (0, a.jsx)(S.A, {
@@ -246,7 +246,7 @@ function W(e) {
     })
 }
 let H = 21552 == n.j ? function() {
-    let e = (0, T.dN)();
+    let e = (0, y.dN)();
     if (null == e) return null;
     let t = (0, _.RL)(e.config) ? (0, a.jsx)(W, {
         quest: e

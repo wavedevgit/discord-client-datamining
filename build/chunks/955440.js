@@ -12,6 +12,6 @@ let r = (0, n.UT)(s.A, {
         let e = s.A.getForSKU(t);
         return 0 === e.length ? null : e
     },
-    load: t => (0, l.ur)(t),
+    load: t => (0, l.ur)(t).then(() => {}),
     getIsLoading: t => s.A.isFetchingForSKU(t)
 })

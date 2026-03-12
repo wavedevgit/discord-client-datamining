@@ -1,36 +1,36 @@
 /** chunk id: 510059 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => N
 });
-var l = i(627968);
-i(64700);
-var n = i(503698),
-    s = i.n(n),
-    a = i(311907),
-    r = i(990078),
-    o = i(397927),
-    d = i(573648),
-    c = i(58149),
-    u = i(681819),
-    A = i(370480),
-    m = i(169869),
-    p = i(532197),
-    x = i(773669),
-    g = i(307600),
-    h = i(652215),
-    f = i(783419),
-    I = i(985018),
-    j = i(884293);
+var l = n(627968);
+n(64700);
+var i = n(503698),
+    s = n.n(i),
+    a = n(311907),
+    r = n(990078),
+    o = n(397927),
+    d = n(573648),
+    c = n(58149),
+    u = n(681819),
+    A = n(370480),
+    m = n(169869),
+    p = n(532197),
+    x = n(773669),
+    g = n(307600),
+    h = n(652215),
+    f = n(783419),
+    I = n(985018),
+    j = n(884293);
 
 function v(e) {
     let t, {
-            account: i,
-            locale: n,
+            account: n,
+            locale: i,
             userId: s
         } = e,
-        a = i.metadata ?? {},
-        x = (0, A.An)(a[f.pK.CREATED_AT], n),
-        v = d.A.get((0, u.ML)(i.type));
+        a = n.metadata ?? {},
+        x = (0, A.An)(a[f.pK.CREATED_AT], i),
+        v = d.A.get((0, u.ML)(n.type));
     return (0, l.jsxs)("li", {
         className: j.FI,
         children: [(0, l.jsx)(r.m, {
@@ -48,22 +48,22 @@ function v(e) {
         }), (0, l.jsxs)("div", {
             className: j.Hd,
             children: [(0, l.jsxs)("div", {
-                children: [null == (t = v?.getPlatformUserUrl?.(i)) ? (0, l.jsx)(r.m, {
+                children: [null == (t = v?.getPlatformUserUrl?.(n)) ? (0, l.jsx)(r.m, {
                     overflowOnly: !0,
-                    text: i.name,
+                    text: n.name,
                     children: (0, l.jsx)(o.Text, {
                         variant: "text-sm/normal",
                         className: j.GW,
-                        children: i.name
+                        children: n.name
                     })
                 }) : (0, l.jsx)(o.MzZ, {
                     href: t,
                     className: j.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${I.intl.string(I.t.q5jLJB)}` : `${i.name}, ${I.intl.string(I.t.q5jLJB)}`,
+                    "aria-label": v?.name != null ? `${v.name}, ${n.name}, ${I.intl.string(I.t.q5jLJB)}` : `${n.name}, ${I.intl.string(I.t.q5jLJB)}`,
                     onClick: e => {
                         (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
-                            platform_type: i.type,
+                            platform_type: n.type,
                             other_user_id: s
                         }), (0, g.h)({
                             href: t,
@@ -74,11 +74,11 @@ function v(e) {
                         className: j.vi,
                         children: [(0, l.jsx)(r.m, {
                             overflowOnly: !0,
-                            text: i.name,
+                            text: n.name,
                             children: (0, l.jsx)(o.Text, {
                                 variant: "text-sm/normal",
                                 className: j.GW,
-                                children: i.name
+                                children: n.name
                             })
                         }), (0, l.jsx)(p.A, {
                             className: j.E4,
@@ -93,7 +93,7 @@ function v(e) {
                 })]
             }), (0, l.jsx)("div", {
                 className: j.yu,
-                children: i.type === h.fg2.REDDIT ? (0, m.xE)(a) : i.type === h.fg2.STEAM ? (0, m.dy)(a) : i.type === h.fg2.BLUESKY || i.type === h.fg2.MASTODON || i.type === h.fg2.TWITTER ? (0, m.ED)(a) : i.type === h.fg2.PAYPAL ? (0, m.gZ)(a) : i.type === h.fg2.EBAY ? (0, m.ub)(a) : i.type === h.fg2.TIKTOK ? (0, m.HU)(a) : null
+                children: n.type === h.fg2.REDDIT ? (0, m.xE)(a) : n.type === h.fg2.STEAM ? (0, m.dy)(a) : n.type === h.fg2.BLUESKY || n.type === h.fg2.MASTODON || n.type === h.fg2.TWITTER ? (0, m.ED)(a) : n.type === h.fg2.PAYPAL ? (0, m.gZ)(a) : n.type === h.fg2.EBAY ? (0, m.ub)(a) : n.type === h.fg2.TIKTOK ? (0, m.HU)(a) : null
             })]
         })]
     })
@@ -102,14 +102,14 @@ function v(e) {
 function N(e) {
     let {
         connections: t,
-        userId: i,
-        className: n
+        userId: n,
+        className: i
     } = e, r = (0, a.bG)([x.default], () => x.default.locale);
     return 0 === t.length ? null : (0, l.jsx)("ul", {
-        className: s()(j.kL, n),
+        className: s()(j.kL, i),
         children: t.map(e => (0, l.jsx)(v, {
             account: e,
-            userId: i,
+            userId: n,
             locale: r
         }, `${e.type}:${e.id}`))
     })

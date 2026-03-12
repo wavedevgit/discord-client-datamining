@@ -1,8 +1,8 @@
 /** chunk id: 137365 params = (module,exports,require) **/
 n.d(t, {
-    D7: () => y,
+    D7: () => T,
     Md: () => b,
-    _S: () => T,
+    _S: () => y,
     a1: () => C,
     g_: () => S,
     h2: () => E,
@@ -128,7 +128,7 @@ function C() {
     }), v(), f.info("END Frecency\n")
 }
 
-function T() {
+function y() {
     let e = l.A.getProps();
     f.info("START Quick Switcher State"), f.info(`Query: ${e.query}`), e.results.forEach(e => {
         switch (f.info(`Result Type: ${e.type}`), e.type) {
@@ -157,7 +157,7 @@ function T() {
         f.info(`frecency score: ${o.A.getScoreWithoutFetchingLatest(e.record.id)}`), v()
     }), f.info("END Quick Switcher State\n")
 }
-async function y() {
+async function T() {
     f.info("START User Search Worker State");
     let e = await a.A.requestDebugState();
     null == e ? f.info("Unable to get debug state from User Search Worker") : (Object.entries(JSON.parse(e.users)).forEach(e => {

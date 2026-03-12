@@ -29,8 +29,8 @@ function A(e) {
         awaitingRemote: s,
         onClick: A,
         iconForeground: C,
-        nameplate: T,
-        shouldShowOutputDeviceChangedTooltip: y,
+        nameplate: y,
+        shouldShowOutputDeviceChangedTooltip: T,
         dismissTooltips: S
     } = e, E = t || n, {
         Component: N,
@@ -99,7 +99,7 @@ function A(e) {
                         onContextMenu: i,
                         onMouseEnter: k,
                         onMouseLeave: R,
-                        plated: null != T,
+                        plated: null != y,
                         redGlow: E,
                         role: "switch",
                         tooltipText: D
@@ -117,18 +117,18 @@ function A(e) {
                         }),
                         onClick: i,
                         onContextMenu: i,
-                        plated: null != T,
+                        plated: null != y,
                         redGlow: E,
-                        tooltipType: y ? "green_void_do_not_use" : void 0,
-                        tooltipForceOpen: y,
-                        tooltipPositionKey: y ? v.intl.formatToPlainString(v.t["f+DDY/"], {
+                        tooltipType: T ? "green_void_do_not_use" : void 0,
+                        tooltipForceOpen: T,
+                        tooltipPositionKey: T ? v.intl.formatToPlainString(v.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : void 0,
                         tooltipShouldShow: !d,
-                        tooltipText: y ? v.intl.format(v.t["f+DDY/"], {
+                        tooltipText: T ? v.intl.format(v.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : v.intl.string(v.t.aA4Vce),
-                        "aria-label": y ? v.intl.formatToPlainString(v.t["f+DDY/"], {
+                        "aria-label": T ? v.intl.formatToPlainString(v.t["f+DDY/"], {
                             outputDeviceName: w
                         }) : v.intl.string(v.t.aA4Vce)
                     })]

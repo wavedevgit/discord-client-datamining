@@ -16,5 +16,5 @@ let o = (0, i.UT)(l.A, {
     },
     load: e => (null == e && r.A.addBreadcrumb({
         message: "Error loading subscription plans: skuId is null"
-    }), null != e ? (0, s.ur)(e) : Promise.reject())
+    }), null != e ? (0, s.ur)(e).then(() => {}) : Promise.reject())
 })

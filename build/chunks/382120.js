@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(158954),
     r = n(311907),
-    l = n(397927),
-    a = n(973925),
+    a = n(397927),
+    l = n(973925),
     d = n(622543),
     o = n(985018),
     c = n(433500);
@@ -30,10 +30,10 @@ function u(e) {
             })
         }), (0, i.jsxs)("div", {
             className: c.qg,
-            children: [(0, i.jsx)(l.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "text-xs/semibold",
                 children: n
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 children: s
             })]
@@ -48,23 +48,23 @@ function A(e) {
         hasMessageContent: A,
         hasGuildPresences: m,
         hasGuildMembers: x
-    } = (0, a.Z)(n);
+    } = (0, l.Z)(n);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
         className: c.XG,
         children: [A && (0, i.jsx)(u, {
-            icon: l.oyn,
+            icon: a.oyn,
             title: o.intl.string(o.t["7Tmhfu"]),
             description: o.intl.string(o.t.eu5x7z)
         }), m && (0, i.jsx)(u, {
-            icon: l._xR,
+            icon: a._xR,
             title: o.intl.string(o.t.awYSsM),
             description: o.intl.string(o.t.TpsXoC)
         }), x && (0, i.jsx)(u, {
-            icon: l.nFg,
+            icon: a.nFg,
             title: o.intl.string(o.t.WuKeSJ),
             description: o.intl.string(o.t.wOBmtV)
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             children: o.intl.format(o.t.b6nqk0, {
                 helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"

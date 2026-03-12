@@ -25,9 +25,9 @@ function o(e) {
         f(!1), g.current || c || o(!1)
     }, [c, o]), C = a.useCallback(() => {
         f(!1), c || o(!1), g.current = !1
-    }, [c, o]), T = a.useCallback(() => {
+    }, [c, o]), y = a.useCallback(() => {
         b(!0)
-    }, []), y = a.useCallback(() => {
+    }, []), T = a.useCallback(() => {
         b(!1), o(!1)
     }, [o]), S = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
@@ -78,8 +78,8 @@ function o(e) {
         handleCtxMenuOpened: j,
         handleCtxMenuClosed: A,
         handleCtxMenuSelection: C,
-        handleGameSheetOpened: T,
-        handleGameSheetClosed: y,
+        handleGameSheetOpened: y,
+        handleGameSheetClosed: T,
         handleFocus: S,
         handleFocusWithoutDelay: E,
         handleBlur: N,

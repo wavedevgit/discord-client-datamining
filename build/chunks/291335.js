@@ -1,32 +1,32 @@
 /** chunk id: 291335 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => j
 });
-var l = i(627968);
-i(64700);
-var n = i(503698),
-    s = i.n(n),
-    a = i(311907),
-    r = i(397927),
-    o = i(730134),
-    d = i(169869),
-    c = i(837057),
-    u = i(310419),
-    A = i(773669),
-    m = i(427157),
-    p = i(967198),
-    x = i(183555),
-    g = i(488995),
-    h = i(985018),
-    f = i(884293);
+var l = n(627968);
+n(64700);
+var i = n(503698),
+    s = n.n(i),
+    a = n(311907),
+    r = n(397927),
+    o = n(730134),
+    d = n(169869),
+    c = n(837057),
+    u = n(310419),
+    A = n(773669),
+    m = n(427157),
+    p = n(967198),
+    x = n(183555),
+    g = n(488995),
+    h = n(985018),
+    f = n(884293);
 
 function I(e) {
     let {
         applicationRoleConnection: t,
-        locale: i,
-        onApplicationClicked: n,
+        locale: n,
+        onApplicationClicked: i,
         selectedGuildId: s
-    } = e, a = (0, d.VW)(t, i);
+    } = e, a = (0, d.VW)(t, n);
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("div", {
             className: f.k_,
@@ -42,7 +42,7 @@ function I(e) {
             children: [(0, l.jsxs)(r.DUT, {
                 className: f.OB,
                 onClick: () => {
-                    n?.(), (0, c.transitionToGlobalDiscovery)({
+                    i?.(), (0, c.transitionToGlobalDiscovery)({
                         tab: g.GlobalDiscoveryTab.APPS,
                         applicationId: t.application.id,
                         newSessionState: {
@@ -80,13 +80,13 @@ function I(e) {
 function j(e) {
     let {
         applicationRoleConnections: t,
-        className: i,
-        onClose: n
+        className: n,
+        onClose: i
     } = e, {
         trackUserProfileAction: r
     } = (0, x.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
     return 0 === t.length ? null : (0, l.jsx)("ul", {
-        className: s()(f.kL, i),
+        className: s()(f.kL, n),
         children: t.map((e, t) => (0, l.jsx)("li", {
             className: f.FI,
             children: (0, l.jsx)(I, {
@@ -95,7 +95,7 @@ function j(e) {
                 onApplicationClicked: () => {
                     r({
                         action: "PRESS_APP_CONNECTION"
-                    }), n()
+                    }), i()
                 },
                 selectedGuildId: d ?? void 0
             })

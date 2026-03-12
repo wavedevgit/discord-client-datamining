@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     r = n(397927),
-    l = n(734057),
-    a = n(309010),
+    a = n(734057),
+    l = n(309010),
     d = n(622543),
     o = n(987112),
     c = n(389996),
@@ -15,9 +15,9 @@ var s = n(311907),
     A = n(900179),
     m = n(280645),
     x = n(928223),
-    f = n(518477),
-    p = n(985018),
-    _ = n(199385);
+    p = n(518477),
+    _ = n(985018),
+    f = n(199385);
 
 function h(e) {
     let {
@@ -25,10 +25,10 @@ function h(e) {
         displayProfile: n,
         guildId: h,
         onClose: g
-    } = e, I = (0, s.bG)([d.A], () => d.A.getUserProfile(t.id)?.application), j = (0, s.bG)([l.A, a.A], () => l.A.getChannel(a.A.getChannelId()));
+    } = e, I = (0, s.bG)([d.A], () => d.A.getUserProfile(t.id)?.application), j = (0, s.bG)([a.A, l.A], () => a.A.getChannel(l.A.getChannelId()));
     return (0, i.jsxs)(r.IpV, {
         fade: !0,
-        className: _.XG,
+        className: f.XG,
         children: [n?.bio != null && n?.bio !== "" && (0, i.jsx)(c.A, {
             userBio: n.bio,
             setLineClamp: !1
@@ -42,11 +42,11 @@ function h(e) {
             userId: t.id,
             guildId: n.guildId
         }), (0, i.jsx)(A.A, {
-            heading: p.intl.string(p.t["A//N4k"]),
+            heading: _.intl.string(_.t["A//N4k"]),
             children: (0, i.jsx)(u.A, {
                 userId: t.id,
                 guildId: h,
-                tooltipDelay: f.In
+                tooltipDelay: p.In
             })
         }), (0, i.jsx)(x.A, {
             userId: t.id

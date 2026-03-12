@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(201805),
     A = n(545986),
     C = n(194267),
-    T = n(963713),
-    y = n(758836),
+    y = n(963713),
+    T = n(758836),
     S = n(985018),
     E = n(976499);
 
@@ -144,7 +144,7 @@ let I = e => {
             sourceQuestContent: m
         }), x = i.useCallback(e => {
             r?.(e), (0, _.ks)(t.config) && t.userStatus?.claimedAt != null ? (0, d.Cz)({
-                tab: y.G2.ORBS,
+                tab: T.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : p()
@@ -170,7 +170,7 @@ let I = e => {
             onGameSheetOpen: u,
             onGameSheetClose: m,
             taskDetails: h
-        } = i.useContext(T.T), p = d.userStatus?.completedAt != null, x = (0, f.vv)(d), g = r !== c.X0.SELECT && !s && !l, _ = null;
+        } = i.useContext(y.T), p = d.userStatus?.completedAt != null, x = (0, f.vv)(d), g = r !== c.X0.SELECT && !s && !l, _ = null;
         return p ? _ = (0, a.jsx)(w, {
             quest: d,
             sourceQuestContent: t

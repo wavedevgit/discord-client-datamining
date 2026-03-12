@@ -24,8 +24,8 @@ var a = n(627968),
     j = n(755039),
     A = n(29160),
     C = n(793574),
-    T = n(688810),
-    y = n(325445),
+    y = n(688810),
+    T = n(325445),
     S = n(954921),
     E = n(521502),
     N = n(380610),
@@ -78,8 +78,8 @@ var a = n(627968),
     ej = n(994314),
     eA = n(485599),
     eC = n(809991),
-    eT = n(226513),
-    ey = n(383952),
+    ey = n(226513),
+    eT = n(383952),
     eS = n(245750),
     eE = n(652215),
     eN = n(654487),
@@ -111,8 +111,8 @@ function eU(e) {
         size: (0, S.Te)(h._3J.SIZE_32)
     }), A = (0, M.A)(), {
         updateOpenPopoutRef: C,
-        highlightBadge: T,
-        setHighlightBadge: y
+        highlightBadge: y,
+        setHighlightBadge: T
     } = function() {
         let e = i.useRef(null),
             t = i.useCallback(t => {
@@ -157,7 +157,7 @@ function eU(e) {
                 } = e;
                 return (0, a.jsx)(F.A, {
                     currentUser: o,
-                    highlightBadge: T,
+                    highlightBadge: y,
                     openedAt: t,
                     onClose: () => {
                         n?.()
@@ -173,7 +173,7 @@ function eU(e) {
             fixed: !0,
             ignoreModalClicks: !0,
             onRequestClose: () => {
-                u(), y(void 0)
+                u(), T(void 0)
             },
             children: e => {
                 C(e);
@@ -299,7 +299,7 @@ class eL extends i.PureComponent {
                 } = (0, J.d)({
                     location: "Account"
                 });
-                return (0, a.jsx)(T.f5, {
+                return (0, a.jsx)(y.f5, {
                     value: t,
                     children: (0, a.jsx)(e, {
                         onClose: p.Z_,
@@ -318,7 +318,7 @@ class eL extends i.PureComponent {
             let {
                 default: e
             } = await n.e("78827").then(n.bind(n, 385318));
-            return () => (0, a.jsx)(T.f5, {
+            return () => (0, a.jsx)(y.f5, {
                 value: t,
                 children: (0, a.jsx)(e, {
                     onClose: p.Z_,
@@ -588,13 +588,13 @@ function eB(e) {
         accountContainerRef: j,
         deviceChangedTooltipType: A,
         shouldShowPTTJoinTooltip: C = !1,
-        dismissTooltips: T,
-        speaking: y
+        dismissTooltips: y,
+        speaking: T
     } = e, S = (0, W.K)(b);
     return (0, a.jsxs)("div", {
         className: eR.Uo,
         style: S,
-        children: [(0, a.jsx)(ey.A, {
+        children: [(0, a.jsx)(eT.A, {
             accountContainerRef: j,
             selfMute: n,
             serverMute: s,
@@ -610,9 +610,9 @@ function eB(e) {
             shouldShowInputDeviceChangedTooltip: !o && "input" === A,
             shouldShowSpeakingWhilePTTTooltip: d,
             shouldShowPTTJoinTooltip: C,
-            dismissTooltips: T,
-            speaking: y
-        }), (0, a.jsx)(eT.A, {
+            dismissTooltips: y,
+            speaking: T
+        }), (0, a.jsx)(ey.A, {
             selfDeaf: t,
             serverDeaf: l,
             onClick: h,
@@ -621,7 +621,7 @@ function eB(e) {
             iconForeground: null != b ? eR.t4 : void 0,
             nameplate: b,
             shouldShowOutputDeviceChangedTooltip: "output" === A,
-            dismissTooltips: T
+            dismissTooltips: y
         }), (0, a.jsx)(eS.A, {
             webBuildOverride: c,
             onClick: _,
@@ -703,11 +703,11 @@ function eF() {
         w = (0, c.bG)([L.default], () => null != L.default.getAwaitingRemoteSessionInfo()),
         D = (0, c.bG)([ec.A], () => ec.A.getGuildId()),
         M = e?.avatarDecoration,
-        P = (0, y.A)(M),
+        P = (0, T.A)(M),
         U = ev.Ay.useName(e) ?? "",
         {
             analyticsLocations: B
-        } = (0, T.Ay)(C.A.ACCOUNT),
+        } = (0, y.Ay)(C.A.ACCOUNT),
         G = (0, V.r)({
             user: e,
             guildId: void 0
@@ -746,7 +746,7 @@ function eF() {
                 Y()
         }
     }, [q, Y]);
-    return (0, a.jsx)(T.f5, {
+    return (0, a.jsx)(y.f5, {
         value: B,
         children: (0, a.jsx)(eL, {
             currentUser: e,

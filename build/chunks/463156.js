@@ -1,23 +1,23 @@
 /** chunk id: 463156 params = (module,exports,require) **/
-i.d(t, {
+n.d(t, {
     A: () => c
 });
-var l = i(627968),
-    n = i(64700),
-    s = i(311907),
-    a = i(397927),
-    r = i(958805),
-    o = i(61881),
-    d = i(985018);
+var l = n(627968),
+    i = n(64700),
+    s = n(311907),
+    a = n(397927),
+    r = n(958805),
+    o = n(61881),
+    d = n(985018);
 
 function c(e) {
     let {
         isCurrentUser: t,
-        onClose: i,
+        onClose: n,
         className: c
-    } = e, u = (0, s.bG)([o.A], () => o.A.hasUnsavedChanges()), A = n.useCallback(() => {
-        t && u ? r.A.notifyUnsavedWidgets() : i()
-    }, [t, u, i]);
+    } = e, u = (0, s.bG)([o.A], () => o.A.hasUnsavedChanges()), A = i.useCallback(() => {
+        t && u ? r.A.notifyUnsavedWidgets() : n()
+    }, [t, u, n]);
     return (0, l.jsx)("div", {
         className: c,
         children: (0, l.jsx)(a.K0, {
