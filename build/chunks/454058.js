@@ -12,8 +12,8 @@ var i = n(311907),
     o = n(808728),
     u = n(696451),
     c = n(71393),
-    C = n(222823),
-    g = n(543465),
+    g = n(222823),
+    C = n(543465),
     A = n(927813),
     I = n(661191),
     _ = n(652215);
@@ -23,7 +23,7 @@ let E = new Set,
 
 function y(e, t) {
     let n = p[e];
-    null != n && null != t && n.has(t) && g.Ay.isOptInEnabled(e) && !h.A.getChannel(t)?.isThread() && null == C.Ay.ackMessageId(t) && s.h.wait(() => (0, l.ack)(t, {
+    null != n && null != t && n.has(t) && C.Ay.isOptInEnabled(e) && !h.A.getChannel(t)?.isThread() && null == g.Ay.ackMessageId(t) && s.h.wait(() => (0, l.ack)(t, {
         object: _.ZSU.ACK_RECENT_CHANNEL_NEW_CHANNEL_VIEWED,
         objectType: _.AnalyticsObjectTypes.ACK_AUTOMATIC
     }, !0, !0, I.default.atPreviousMillisecond(t)))
@@ -38,20 +38,20 @@ function f(e) {
     let i = new Date(n).getTime();
     0 !== t.length && (p[e] = new Set(t.filter(t => {
         let n = I.default.extractTimestamp(t);
-        return null == C.Ay.getTrackedAckMessageId(t) && n > Date.now() - A.A.Millis.WEEK && n > a.A.getGuildRecentsDismissedAt(e) && n > i && !g.Ay.isChannelOrParentOptedIn(e, t)
+        return null == g.Ay.getTrackedAckMessageId(t) && n > Date.now() - A.A.Millis.WEEK && n > a.A.getGuildRecentsDismissedAt(e) && n > i && !C.Ay.isChannelOrParentOptedIn(e, t)
     })), S[e] = Date.now())
 }
 
 function L() {
     I.default.keys(p).forEach(e => {
         let t = p[e];
-        p[e] = new Set([...t].filter(t => !g.Ay.isChannelOrParentOptedIn(e, t)))
+        p[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
     })
 }
 class v extends i.Ay.Store {
     static displayName = "NewChannelsStore";
     initialize() {
-        this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, C.Ay, g.Ay, a.A), this.syncWith([g.Ay], L)
+        this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], L)
     }
     getNewChannelIds(e) {
         return null != e && null == p[e] && f(e), null != e ? p[e] ?? E : E
@@ -59,7 +59,7 @@ class v extends i.Ay.Store {
     shouldIndicateNewChannel(e, t) {
         if (null == e) return !1;
         let n = c.A.getGuild(e);
-        return null != n && !!n.features.has(_.GuildFeatures.COMMUNITY) && (null != e && null == p[e] && f(e), p[e]?.has(t) && null == C.Ay.getTrackedAckMessageId(t))
+        return null != n && !!n.features.has(_.GuildFeatures.COMMUNITY) && (null != e && null == p[e] && f(e), p[e]?.has(t) && null == g.Ay.getTrackedAckMessageId(t))
     }
 }
 let N = new v(s.h, {
