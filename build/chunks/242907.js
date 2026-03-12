@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(158954),
-    l = n(311907),
-    a = n(414798),
+    a = n(311907),
+    l = n(414798),
     s = n(529200),
     o = n(406704),
     d = n(961350),
@@ -24,10 +24,10 @@ function A(e) {
             banned: f,
             channelId: C
         } = e,
-        E = (0, l.bG)([d.default], () => d.default.getId()),
+        E = (0, a.bG)([d.default], () => d.default.getId()),
         I = m.Ay.useName(x),
         b = E === x.id,
-        T = (0, l.bG)([c.A, u.A], () => {
+        T = (0, a.bG)([c.A, u.A], () => {
             let e = c.A.getChannel(C);
             if (null == e) return !1;
             if (e.isPrivate()) return !0;
@@ -48,7 +48,7 @@ function A(e) {
             _._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
                 plainText: t,
                 rawText: n
-            }), null != C && a.A.startTyping(C)
+            }), null != C && l.A.startTyping(C)
         },
         text: p.intl.string(p.t.P8tvKG)
     })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(s.A, {

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(938796);
 var i = n(665260),
     r = n(311907),
-    l = n(506774),
-    a = n(73153),
+    a = n(506774),
+    l = n(73153),
     s = n(961350),
     o = n(734057),
     d = n(576705),
@@ -18,13 +18,13 @@ let m = "ChannelFollowingBumpChannels",
 class g extends r.Ay.Store {
     static displayName = "ChannelFollowingPublishBumpStore";
     initialize() {
-        this.waitFor(s.default, o.A, d.A, c.default), h = new Set(l.w.get(m))
+        this.waitFor(s.default, o.A, d.A, c.default), h = new Set(a.w.get(m))
     }
     shouldShowBump(e) {
         return p.has(e)
     }
 }
-let A = new g(a.h, {
+let A = new g(l.h, {
     MESSAGE_CREATE: function(e) {
         let {
             channelId: t,
@@ -32,9 +32,9 @@ let A = new g(a.h, {
             optimistic: r
         } = e;
         if (r || h.has(t)) return !1;
-        let l = o.A.getChannel(t),
-            a = c.default.getCurrentUser();
-        if (!(null != l && l.type === _.rbe.GUILD_ANNOUNCEMENT && (0, u.A)(n) && (null != a && n.author?.id === a.id ? d.A.can(_.xBc.SEND_MESSAGES, l) : d.A.can(_.xBc.MANAGE_MESSAGES, l)) && !i.Lt(Number(n.flags), _.pr7.CROSSPOSTED))) return !1;
+        let a = o.A.getChannel(t),
+            l = c.default.getCurrentUser();
+        if (!(null != a && a.type === _.rbe.GUILD_ANNOUNCEMENT && (0, u.A)(n) && (null != l && n.author?.id === l.id ? d.A.can(_.xBc.SEND_MESSAGES, a) : d.A.can(_.xBc.MANAGE_MESSAGES, a)) && !i.Lt(Number(n.flags), _.pr7.CROSSPOSTED))) return !1;
         p.add(n.id)
     },
     MESSAGE_UPDATE: function(e) {
@@ -56,6 +56,6 @@ let A = new g(a.h, {
         let {
             channelId: t
         } = e;
-        h.add(t), l.w.set(m, h), p.clear()
+        h.add(t), a.w.set(m, h), p.clear()
     }
 })

@@ -1,6 +1,6 @@
 /** chunk id: 716956 params = (module,exports,require) **/
 t.d(n, {
-    A: () => o
+    A: () => d
 });
 var r = t(627968);
 t(64700);
@@ -8,9 +8,10 @@ var l = t(503698),
     s = t.n(l),
     a = t(397927),
     i = t(303612),
-    u = t(648760);
+    u = t(648760),
+    c = t(767659);
 
-function c(e) {
+function o(e) {
     let {
         className: n,
         onClose: t
@@ -26,14 +27,14 @@ function c(e) {
     })
 }
 
-function o(e) {
+function d(e) {
     let {
         guildProductListing: n,
         onClose: t,
         className: l
     } = e;
     return (0, r.jsxs)(a.rQ0, {
-        className: s()(u.wx, l),
+        className: s()(u.wx, c.GI, l),
         separator: !1,
         "data-migration-pending": !0,
         children: [(0, r.jsx)(i.A, {
@@ -41,7 +42,7 @@ function o(e) {
             listing: n,
             imageSize: 500,
             alt: ""
-        }), (0, r.jsx)(c, {
+        }), (0, r.jsx)(o, {
             className: u.b,
             onClose: t
         })]

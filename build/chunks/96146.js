@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(412703),
-    l = n(397927),
-    a = n(890687),
+    a = n(397927),
+    l = n(890687),
     s = n(590202),
     o = n(792620),
     d = n(814793),
@@ -20,10 +20,10 @@ let h = function(e) {
         analyticsCtxQuestContent: h,
         analyticsCtxSourceQuestContent: p,
         size: g
-    } = e, A = (0, a.fc)(t), x = function(e, t, n, i) {
+    } = e, A = (0, l.fc)(t), x = function(e, t, n, i) {
         let {
             launchInGameActivity: r
-        } = (0, a.zW)(e);
+        } = (0, l.zW)(e);
         return (0, o.K$)(e) ? () => {
             (0, u.Fy)(e)
         } : (0, o.IO)(e) ? () => {
@@ -42,13 +42,13 @@ let h = function(e) {
         if ((0, d.vA)(t)) return t.config.features.includes(_.Li.START_QUEST_CTA) ? (0, o.vl)(t) ? t.config.features.includes(_.Li.CLOUD_GAMING_ACTIVITY) ? m.intl.string(m.t["+qoymD"]) : m.intl.string(m.t["Ie9++s"]) : m.intl.string(m.t["hRIVy+"]) : m.intl.string(m.t.l7E81v);
         return m.intl.string(m.t["9KoPyB"])
     }(0, t, A);
-    return null == x ? (0, i.jsx)(l.Button, {
+    return null == x ? (0, i.jsx)(a.Button, {
         size: g,
         variant: "secondary",
         disabled: !0,
         text: C,
         fullWidth: !0
-    }) : (0, i.jsx)(l.Button, {
+    }) : (0, i.jsx)(a.Button, {
         size: g,
         variant: "primary",
         onClick: x,

@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(311907),
     r = n(346835),
-    l = n(257269),
-    a = n(652215);
+    a = n(257269),
+    l = n(652215);
 let s = (0, i.UT)(r.A, {
-    getQueryId: a.fic.CUSTOM_ACTIVITY_LINK,
+    getQueryId: l.fic.CUSTOM_ACTIVITY_LINK,
     get: (e, t) => null == e || null == t ? null : r.A.getOne(e, t),
-    load: (e, t) => (0, l.Py)(e, t)
+    load: (e, t) => (0, a.Py)(e, t)
 })

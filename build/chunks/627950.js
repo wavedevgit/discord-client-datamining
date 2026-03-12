@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(686956),
     r = n(22007),
-    l = n(734057),
-    a = n(71393),
+    a = n(734057),
+    l = n(71393),
     s = n(954571),
     o = n(449054),
     d = n(652215);
@@ -14,17 +14,17 @@ async function c(e) {
     let t = e.messageReference.guild_id,
         n = e.messageReference.channel_id,
         c = e.messageReference.message_id,
-        u = l.A.getChannel(n),
+        u = a.A.getChannel(n),
         _ = !1;
-    if (null == u && null != t && null == a.A.getGuild(t)) try {
+    if (null == u && null != t && null == l.A.getGuild(t)) try {
         await (0, o.Z2)(t, {
             object: d.ZSU.FORWARD_BREADCRUMB
         }, {
             shouldNavigate: !1
-        }), _ = !0, await (0, i.k)(t), u = l.A.getChannel(n)
+        }), _ = !0, await (0, i.k)(t), u = a.A.getChannel(n)
     } catch {}
     s.default.track(d.HAw.FORWARD_BREADCRUMB_CLICKED, {
-        guild_id: l.A.getBasicChannel(e.channel_id)?.guild_id,
+        guild_id: a.A.getBasicChannel(e.channel_id)?.guild_id,
         channel_id: e.channel_id,
         message_id: e.id,
         breadcrumb_guild_id: t,

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(172218),
     o = n(317097),
     d = n(565645),
@@ -18,7 +18,7 @@ var i = n(627968),
 let g = r.memo(function(e) {
         let t, n, {
                 useChatFontScaling: r,
-                hideEmoji: l,
+                hideEmoji: a,
                 emoji: s,
                 className: g,
                 count: A,
@@ -44,23 +44,23 @@ let g = r.memo(function(e) {
                 accentColor: e,
                 backgroundColor: i,
                 opacity: r
-            } = j, l = (0, o.xp)(i ?? "", r) ?? "";
-            N && (M.borderColor = i), M.background = l, t = e, n = e
+            } = j, a = (0, o.xp)(i ?? "", r) ?? "";
+            N && (M.borderColor = i), M.background = a, t = e, n = e
         }
-        let w = {
+        let O = {
             minWidth: P,
             color: t,
             borderColor: n
         };
         return (0, i.jsxs)("div", {
-            className: a()(L.reaction, L.reactionInner, g, {
+            className: l()(L.reaction, L.reactionInner, g, {
                 [L.reactionMe]: N,
                 [L.reactionReadOnly]: I && !b && !T
             }),
             style: M,
             children: [(0, i.jsx)(d.A, {
-                className: a()({
-                    [L.hideEmoji]: l
+                className: l()({
+                    [L.hideEmoji]: a
                 }),
                 emojiId: s.id,
                 emojiName: s.name,
@@ -68,7 +68,7 @@ let g = r.memo(function(e) {
                 animated: y && s.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
-                style: w,
+                style: O,
                 children: R
             })]
         })
@@ -77,17 +77,17 @@ let g = r.memo(function(e) {
         let {
             showImmediate: t,
             reactions: n,
-            ...l
-        } = e, [a, o] = r.useState(!1), [d, c] = r.useTransition(), u = r.useCallback(e => {
-            !e || a || d || c(() => {
+            ...a
+        } = e, [l, o] = r.useState(!1), [d, c] = r.useTransition(), u = r.useCallback(e => {
+            !e || l || d || c(() => {
                 o(!0)
             })
-        }, [a, d]), h = (0, s.K)(u), p = a && !d || t ? m.qT : g;
+        }, [l, d]), h = (0, s.K)(u), p = l && !d || t ? m.qT : g;
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
                 ref: h
             }), n.map(e => (0, i.jsx)(p, {
-                ...l,
+                ...a,
                 ...e,
                 emojiSize: "reaction"
             }, `${e.type===_.v.BURST?"burst:":""}${e.emoji.id??0}:${e.emoji.name}`))]

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    l = n(397927),
-    a = n(456060),
+    a = n(397927),
+    l = n(456060),
     s = n(793574),
     o = n(688810),
     d = n(572211),
@@ -47,12 +47,12 @@ function T(e) {
         if (t === v.id) return !0;
         let n = p.A.getGameByApplication(v);
         return null != n && t === n.id
-    })), w = (0, r.bG)([h.A], () => h.A.getCurrentUserActiveStream()), O = (0, r.bG)([g.A], () => g.A.getChannelId()), D = f.default.extractTimestamp(T.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
-        children: (0, a.Wf)(T, S, t)
+    })), O = (0, r.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, r.bG)([g.A], () => g.A.getChannelId()), w = f.default.extractTimestamp(T.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
+        children: (0, l.Wf)(T, S, t)
     }), {
         analyticsLocations: U
     } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = b.intl.string(I.default["5+172e"]), B = !1;
-    return D ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != w ? (G = b.intl.string(I.default.P0wwmM), B = !0) : O !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
+    return w ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != O ? (G = b.intl.string(I.default.P0wwmM), B = !0) : D !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
         header: b.intl.string(I.default.nAyuPp),
         title: v.name,
         staticBannerSrc: j,
@@ -65,7 +65,7 @@ function T(e) {
             trackingArea: c.kY.STREAM,
             disabled: B,
             onClick: () => {
-                null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, l.mMO)(async () => {
+                null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
@@ -83,7 +83,7 @@ function T(e) {
             channelId: S.id,
             messageId: T.id,
             onView: N,
-            isDeadEnd: D
+            isDeadEnd: w
         }
     })
 }

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    l = n(311907),
-    a = n(554146),
+    a = n(311907),
+    l = n(554146),
     s = n(342494),
     o = n(397927),
     d = n(735991),
@@ -35,9 +35,9 @@ var i = n(627968),
 
 function M(e) {
     var t, n;
-    let M, w, {
-            analyticsLocations: O,
-            application: D,
+    let M, O, {
+            analyticsLocations: D,
+            application: w,
             channel: k,
             currentUserId: U,
             currentUserPresenceActivity: G,
@@ -47,7 +47,7 @@ function M(e) {
             partyStatusElement: V,
             presenceActivity: W
         } = e,
-        q = (0, d.Ag)(D),
+        q = (0, d.Ag)(w),
         {
             iconSrc: Y,
             name: z
@@ -63,22 +63,22 @@ function M(e) {
                 }),
                 name: e.activity?.name_override ?? t.name
             }
-        }(F, D),
+        }(F, w),
         Q = (0, N.I)({
             messageId: F.id,
             presenceActivity: W,
-            application: D
+            application: w
         }) ?? void 0,
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = D.id, n = F.author.id, M = (0, f.d)(t), w = (0, l.bG)([m.A, C.A], () => {
+        } = (t = w.id, n = F.author.id, M = (0, f.d)(t), O = (0, a.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: w?.id ?? void 0,
+                applicationId: O?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
@@ -86,8 +86,8 @@ function M(e) {
             launchableAppId: M
         }),
         X = (0, y.A)({
-            application: D,
-            analyticsLocations: O
+            application: w,
+            analyticsLocations: D
         }),
         Z = r.useMemo(() => {
             if (null != X) return {
@@ -97,7 +97,7 @@ function M(e) {
                 onClick: X
             }
         }, [X]),
-        $ = (0, p.F)(D),
+        $ = (0, p.F)(w),
         ee = r.useMemo(() => null != K ? K : null != $ && q ? $ : void 0, [q, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
@@ -106,31 +106,31 @@ function M(e) {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
             startAuthorization: er
-        } = (0, _.RD)(D),
-        el = (0, u.z)(er, ei),
-        ea = !(0, v.A)(W, F, D.id),
-        es = (0, T.n$)(z, F.activity?.type, ea),
+        } = (0, _.RD)(w),
+        ea = (0, u.z)(er, ei),
+        el = !(0, v.A)(W, F, w.id),
+        es = (0, T.n$)(z, F.activity?.type, el),
         eo = r.useRef(null),
-        ed = (0, l.bG)([E.A], () => E.A.getMessages(k.id)),
+        ed = (0, a.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
-            return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
+            return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
                 contentTypes: e,
                 children: e => {
                     let {
                         visibleContent: t,
                         markAsDismissed: n
                     } = e;
-                    if (t === a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(s.AM, {
+                    if (t === l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(s.AM, {
                         graphic: {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
                             props: {
-                                application: D
+                                application: w
                             }
                         },
                         title: P.intl.formatToPlainString(P.t["lo6H6+"], {
-                            gameName: D.name
+                            gameName: w.name
                         }),
                         body: P.intl.string(P.t.qYAzOp),
                         targetElementRef: eo,
@@ -144,9 +144,9 @@ function M(e) {
                 }
             })
         };
-    return ea ? (0, i.jsx)(j.A, {
+    return el ? (0, i.jsx)(j.A, {
         message: F,
-        application: D,
+        application: w,
         applicationName: z,
         channel: k,
         header: es,
@@ -159,14 +159,14 @@ function M(e) {
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        analyticsLocations: O,
+        analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: el,
+        startAuthorization: ea,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
         message: F,
-        application: D,
+        application: w,
         applicationName: z,
         channel: k,
         header: es,
@@ -182,10 +182,10 @@ function M(e) {
         currentUserPresenceActivity: G,
         hideParty: B,
         partyStatusElement: V,
-        analyticsLocations: O,
+        analyticsLocations: D,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: el,
+        startAuthorization: ea,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

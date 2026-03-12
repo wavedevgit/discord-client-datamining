@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(989349),
-    l = n.n(r),
-    a = n(827734),
+    a = n.n(r),
+    l = n(827734),
     s = n(397927),
     o = n(393033),
     d = n(239093),
@@ -75,10 +75,10 @@ function p(e) {
     } = e, n = {
         default: (0, i.jsx)(s.koX, {
             size: "xs",
-            color: a.A.colors.TEXT_LINK.css
+            color: l.A.colors.TEXT_LINK.css
         }),
         danger: (0, i.jsx)(s.id, {
-            color: a.A.colors.ICON_FEEDBACK_CRITICAL
+            color: l.A.colors.ICON_FEEDBACK_CRITICAL
         })
     };
     return null != t && t in n ? (0, i.jsx)("div", {
@@ -122,7 +122,7 @@ function A(e) {
                 children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     children: c.intl.format(c.t.eevFb6, {
-                        daysAgo: (t = n.timestamp ?? 0, l()().diff(l().unix(t), "days"))
+                        daysAgo: (t = n.timestamp ?? 0, a()().diff(a().unix(t), "days"))
                     })
                 })
             }), (0, i.jsx)("div", {

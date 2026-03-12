@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(64700),
     r = n(311907),
-    l = n(735991),
-    a = n(297486),
+    a = n(735991),
+    l = n(297486),
     s = n(837057),
     o = n(310419),
     d = n(734057),
@@ -25,20 +25,20 @@ function f(e) {
         isDiscoverable: t,
         customInstallUrl: n,
         installParams: i,
-        integrationTypesConfig: a
+        integrationTypesConfig: l
     } = e, s = (0, h.Ie)({
         customInstallUrl: n,
         installParams: i,
-        integrationTypesConfig: a
+        integrationTypesConfig: l
     }), o = (0, r.bG)([_.A], () => _.A.getGuildId() ?? void 0), m = (0, r.bG)([d.A, c.A, u.A], () => {
         let e = d.A.getChannel(u.A.getChannelId());
         return null != e && (e.isPrivate() || c.A.can(g.xBc.SEND_MESSAGES, e))
-    }, []), p = (0, l.V1)(e, o) && m;
+    }, []), p = (0, a.V1)(e, o) && m;
     return {
         isDiscoverable: t,
         customInstallUrl: n,
         installParams: i,
-        integrationTypesConfig: a,
+        integrationTypesConfig: l,
         canViewApp: t || p,
         canOpenAppLauncher: p,
         isInstallable: s,
@@ -50,14 +50,14 @@ function C(e, t) {
     let {
         canViewApp: n,
         canOpenAppLauncher: r,
-        isInstallable: l,
+        isInstallable: a,
         customInstallUrl: d,
         installParams: c,
         integrationTypesConfig: u,
         selectedGuildId: _
     } = f(e);
     return i.useMemo(() => n ? () => {
-        (t?.(), r) ? (0, a.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
+        (t?.(), r) ? (0, l.hg)(e.id) : (0, s.transitionToGlobalDiscovery)({
             tab: A.GlobalDiscoveryTab.APPS,
             applicationId: e.id,
             newSessionState: {
@@ -66,7 +66,7 @@ function C(e, t) {
                 }
             }
         })
-    } : l ? () => {
+    } : a ? () => {
         t?.(), (0, m.o)({
             applicationId: e.id,
             customInstallUrl: d,
@@ -75,7 +75,7 @@ function C(e, t) {
             guildId: _,
             source: "app_message_embed"
         })
-    } : void 0, [e.id, r, n, d, c, u, l, t, _])
+    } : void 0, [e.id, r, n, d, c, u, a, t, _])
 }
 
 function E(e) {

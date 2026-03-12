@@ -4,9 +4,9 @@ n.d(t, {
     u: () => C
 }), n(323874), n(14289), n(35956);
 var i, r = n(627968),
-    l = n(64700),
-    a = n(503698),
-    s = n.n(a),
+    a = n(64700),
+    l = n(503698),
+    s = n.n(l),
     o = n(299619),
     d = n(172218),
     c = n(158954),
@@ -44,7 +44,7 @@ function I(e) {
     let {
         title: n,
         header: i,
-        footer: a,
+        footer: l,
         info: C,
         staticBannerSrc: I,
         videoBannerSrc: b,
@@ -71,8 +71,8 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, w = (0, u.bG)([m.A], () => m.A.useReducedMotion), O = l.useRef(!1), D = (0, d.K)(e => {
-        !1 === O.current && e && (N?.onView?.(), (0, g.wV)({
+    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, O = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = a.useRef(!1), w = (0, d.K)(e => {
+        !1 === D.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
             referrerId: N.referrerId,
@@ -80,11 +80,11 @@ function I(e) {
             guildId: N.guildId,
             channelId: N.channelId,
             messageId: N.messageId
-        }), O.current = !0)
-    }, void 0), k = null != I, U = null != b && !1 === w, G = k || U, B = 0 === T ? f.pv : f.$g, F = l.useRef(null), H = l.useCallback(() => {
+        }), D.current = !0)
+    }, void 0), k = null != I, U = null != b && !1 === O, G = k || U, B = 0 === T ? f.pv : f.$g, F = a.useRef(null), H = a.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = l.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), W = l.useMemo(() => {
+    }, []), V = a.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), W = a.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: N.id,
@@ -95,7 +95,7 @@ function I(e) {
                 isDeadEnd: N.isDeadEnd
             })
         }
-    }, [j, N]), q = l.useMemo(() => {
+    }, [j, N]), q = a.useMemo(() => {
         if (null != L) return e => {
             L(e), (0, g.gx)({
                 applicationId: N.id,
@@ -108,7 +108,7 @@ function I(e) {
         }
     }, [L, N]);
     return (0, r.jsxs)("div", {
-        ref: D,
+        ref: w,
         className: f.E6,
         children: [G && (0, r.jsxs)(E, {
             onClick: q,
@@ -174,8 +174,8 @@ function I(e) {
                         let {
                             label: n,
                             icon: i,
-                            onClick: l,
-                            disabled: a,
+                            onClick: a,
+                            disabled: l,
                             disabledReason: s,
                             submitting: o,
                             trackingArea: d,
@@ -188,13 +188,13 @@ function I(e) {
                             targetElementRef: h,
                             children: (0, r.jsx)(c.K0, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: a || null != s,
+                                disabled: l || null != s,
                                 loading: o,
                                 icon: i,
                                 "aria-label": n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    l(e), (0, g.gx)({
+                                    a(e), (0, g.gx)({
                                         applicationId: N.id,
                                         linkType: N.linkType,
                                         area: d,
@@ -208,13 +208,13 @@ function I(e) {
                             className: f.uc,
                             children: [(0, r.jsx)(c.$nd, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: a || null != s,
+                                disabled: l || null != s,
                                 loading: o,
                                 icon: i,
                                 text: n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    l(e), (0, g.gx)({
+                                    a(e), (0, g.gx)({
                                         applicationId: N.id,
                                         linkType: N.linkType,
                                         area: d,
@@ -233,7 +233,7 @@ function I(e) {
                         }, n)
                     })
                 })]
-            }), null != a && a]
+            }), null != l && l]
         })]
     })
 }

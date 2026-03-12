@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    l = n.n(r),
-    a = n(311907),
+    a = n.n(r),
+    l = n(311907),
     s = n(397927),
     o = n(442433),
     d = n(143413),
@@ -25,7 +25,7 @@ function C(e) {
     let {
         message: t,
         compact: n
-    } = e, r = (0, a.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
+    } = e, r = (0, l.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
     return null == r ? null : (0, i.jsx)(E, {
         channel: r,
         compact: n,
@@ -40,8 +40,8 @@ function E(e) {
             compact: C,
             isSystemMessage: E
         } = e,
-        I = (0, a.bG)([m.A], () => m.A.getCount(u.id)),
-        b = (t = u, r = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, a.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
+        I = (0, l.bG)([m.A], () => m.A.getCount(u.id)),
+        b = (t = u, r = (0, l.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, l.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -60,7 +60,7 @@ function E(e) {
         T = null != I && I > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: l()(f.GI, {
+            className: a()(f.GI, {
                 [f.E]: !C,
                 [f.E_]: E
             })
@@ -86,7 +86,7 @@ function E(e) {
                 })
             },
             "aria-roledescription": x.intl.string(x.t["8ipxiY"]),
-            className: l()(f.kL, {
+            className: a()(f.kL, {
                 [f.og]: E
             }),
             children: (0, i.jsxs)(s.RDc, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    l = n.n(r),
-    a = n(126031),
+    a = n.n(r),
+    l = n(126031),
     s = n(397927),
     o = n(438437),
     d = n(306417),
@@ -21,7 +21,7 @@ function _(e) {
     } = e;
     return (0, i.jsxs)("div", {
         className: u.AA,
-        children: [t && (0, i.jsx)(a.s, {
+        children: [t && (0, i.jsx)(l.s, {
             children: c.intl.string(c.t["8DAM+5"])
         }), (0, i.jsxs)(s.Text, {
             variant: "text-md/semibold",
@@ -40,24 +40,24 @@ function m(e) {
         answer: t,
         isExpired: n,
         myAvatarUrl: r,
-        canShowVoteCounts: a
+        canShowVoteCounts: l
     } = e, s = !0 === t.isSelected, o = !0 === t.didSelfVote, c = !0 === t.isVictor;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Dt, {
-            attachmentClassName: l()(u.oh, {
-                [u.Wx]: a
+            attachmentClassName: a()(u.oh, {
+                [u.Wx]: l
             }),
             emojiClassName: u.Zg,
             media: t.pollMedia,
             fallback: (0, i.jsx)("div", {
-                className: l()(u.oh, u.nb)
+                className: a()(u.oh, u.nb)
             })
         }), s && (0, i.jsx)(d.Vx, {
             size: 40,
             isVictor: c,
             isExpired: n,
             className: u.Dt
-        }), a && (0, i.jsxs)(i.Fragment, {
+        }), l && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(_, {
                 didSelfVote: o,
                 percentage: t.votesPercentage,
@@ -78,12 +78,12 @@ function h(e) {
         isExpired: t,
         myAvatarUrl: n,
         answersInteraction: r,
-        canShowVoteCounts: a,
+        canShowVoteCounts: l,
         ...s
     } = e;
     return (0, i.jsx)(d.Fh, {
         className: u.ry,
-        answerClassName: l()(u.ZF, {
+        answerClassName: a()(u.ZF, {
             [u.EK]: r !== o.CQ.LIST
         }),
         myAvatarUrl: n,
@@ -93,7 +93,7 @@ function h(e) {
             isExpired: t,
             myAvatarUrl: n,
             answersInteraction: r,
-            canShowVoteCounts: a
+            canShowVoteCounts: l
         }),
         ...s
     })

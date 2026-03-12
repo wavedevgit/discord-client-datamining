@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(490249),
     o = n(827734),
     d = n(990078),
@@ -34,13 +34,13 @@ let L = (0, s.animated)(c.abt),
         let {
             isQuestExpired: t,
             quest: n,
-            location: l,
+            location: a,
             size: R,
             expansionSpring: P,
             isAnimating: M,
-            isExpanded: w,
-            isInteracting: O,
-            contentPosition: D,
+            isExpanded: O,
+            isInteracting: D,
+            contentPosition: w,
             toggleExpanded: k,
             sourceQuestContent: U
         } = e, {
@@ -49,12 +49,12 @@ let L = (0, s.animated)(c.abt),
         } = (0, u.Ay)(), [F, H] = r.useState(null), [V, W] = r.useState(null), q = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), W(t.scrollWidth)
-        }), Y = (0, _.w)(q), z = (0, v.a3)(l), Q = l === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, S.rE.QUESTS_CARD, l, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
+        }), Y = (0, _.w)(q), z = (0, v.a3)(a), Q = a === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, S.rE.QUESTS_CARD, a, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
             e.stopPropagation(), e.currentTarget.blur(), k(), X({
                 questId: n.id,
-                questContent: l,
-                questContentCTA: w ? x.Cy.COLLAPSE : x.Cy.EXPAND,
-                questContentPosition: D,
+                questContent: a,
+                questContentCTA: O ? x.Cy.COLLAPSE : x.Cy.EXPAND,
+                questContentPosition: w,
                 sourceQuestContent: U
             })
         }, en = (0, i.jsx)(E.Ay, {
@@ -67,7 +67,7 @@ let L = (0, s.animated)(c.abt),
             withGameTile: !Q || null == n.config.cosponsorMetadata
         });
         return (0, i.jsxs)("div", {
-            className: a()(j.nw, {
+            className: l()(j.nw, {
                 [j.fu]: z,
                 [j.Gg]: Q,
                 [j.e5]: "xs" === R
@@ -78,7 +78,7 @@ let L = (0, s.animated)(c.abt),
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
-                isInteracting: O,
+                isInteracting: D,
                 containerClassName: j.v7,
                 imageSize: {
                     width: 660,
@@ -87,9 +87,9 @@ let L = (0, s.animated)(c.abt),
                 imageClassName: j.Z5
             }), (0, i.jsxs)("div", {
                 className: j.wx,
-                "aria-expanded": w,
+                "aria-expanded": O,
                 children: [(0, i.jsxs)(s.animated.div, {
-                    className: a()(j.VW, {
+                    className: l()(j.VW, {
                         [j.eX]: Q
                     }),
                     style: {
@@ -105,9 +105,9 @@ let L = (0, s.animated)(c.abt),
                                 range: [0, 1],
                                 output: [1, 0]
                             })),
-                            visibility: M || !w ? "inherit" : "hidden"
+                            visibility: M || !O ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !M && w,
+                        "aria-hidden": !M && O,
                         children: (0, i.jsxs)(c.sqX, {
                             "aria-label": N.intl.string(N.t.dcl9MQ),
                             onClick: et,
@@ -116,7 +116,7 @@ let L = (0, s.animated)(c.abt),
                                 className: j.SY,
                                 children: (0, i.jsx)(b.A, {
                                     quest: n,
-                                    questContent: l,
+                                    questContent: a,
                                     className: j.EK,
                                     sourceQuestContent: U
                                 })
@@ -137,7 +137,7 @@ let L = (0, s.animated)(c.abt),
                         ref: e => {
                             G.current = e
                         },
-                        className: a()(j.Yu, {
+                        className: l()(j.Yu, {
                             [j.fu]: z,
                             [j.Gg]: Q
                         }),
@@ -146,9 +146,9 @@ let L = (0, s.animated)(c.abt),
                                 range: [0, 1],
                                 output: [0, 1]
                             })),
-                            visibility: M || w ? "inherit" : "hidden"
+                            visibility: M || O ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !M && !w,
+                        "aria-hidden": !M && !O,
                         children: (0, i.jsxs)("div", {
                             className: j.uA,
                             children: [(0, i.jsxs)("div", {
@@ -193,9 +193,9 @@ let L = (0, s.animated)(c.abt),
                         }) : v.wl
                     },
                     children: [(0, i.jsx)(C.C, {
-                        questContent: l,
+                        questContent: a,
                         quest: n,
-                        questContentPosition: D,
+                        questContentPosition: w,
                         shouldShowDisclosure: !0,
                         hideLearnMore: z,
                         showShareLink: !t && Q,
@@ -203,9 +203,9 @@ let L = (0, s.animated)(c.abt),
                         children: e => (0, i.jsx)(s.animated.div, {
                             style: {
                                 opacity: (0, T.a)(P),
-                                visibility: M || w ? "inherit" : "hidden"
+                                visibility: M || O ? "inherit" : "hidden"
                             },
-                            "aria-hidden": !M && !w,
+                            "aria-hidden": !M && !O,
                             children: (0, i.jsx)(c.DUT, {
                                 ...e,
                                 className: j.P0,
@@ -216,10 +216,10 @@ let L = (0, s.animated)(c.abt),
                                 })
                             })
                         })
-                    }), !(0, v.rW)(l) && (0, i.jsx)(c.DUT, {
+                    }), !(0, v.rW)(a) && (0, i.jsx)(c.DUT, {
                         onClick: et,
                         className: j.P0,
-                        "aria-label": w ? N.intl.string(N.t.iTcuma) : N.intl.string(N.t.dcl9MQ),
+                        "aria-label": O ? N.intl.string(N.t.iTcuma) : N.intl.string(N.t.dcl9MQ),
                         children: (0, i.jsx)(L, {
                             style: {
                                 rotate: P.to({

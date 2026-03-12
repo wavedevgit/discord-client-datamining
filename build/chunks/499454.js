@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    l = n(287809),
-    a = n(166403),
+    a = n(287809),
+    l = n(166403),
     s = n(203982),
     o = n(927578),
     d = n(598653),
@@ -19,7 +19,7 @@ function _(e) {
         channelContext: _,
         customGiftMessage: m,
         giftInfo: h
-    } = e, p = !1, g = null, A = l.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
+    } = e, p = !1, g = null, A = a.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
     (0, r.mMO)(async () => {
         let {
             default: e
@@ -31,7 +31,7 @@ function _(e) {
             emojiName: h?.emoji?.name,
             soundId: h?.sound?.id,
             onComplete: (e, t) => {
-                g = e, t && (p = t, e.isSubscription && null == a.A.getPremiumSubscription(!1) && (0, d.o)(!0))
+                g = e, t && (p = t, e.isSubscription && null == l.A.getPremiumSubscription(!1) && (0, d.o)(!0))
             },
             ...n
         })

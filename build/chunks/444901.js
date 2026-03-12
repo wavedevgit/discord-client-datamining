@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(544420),
@@ -29,13 +29,13 @@ function T(e) {
         message: t,
         applicationName: n,
         iconSrc: r,
-        channel: l,
+        channel: a,
         currentUserId: s,
         viewAction: d
     } = e, c = (0, m.Ay)(t), u = (0, h.P)({
         user: t.author,
-        channelId: l.id,
-        guildId: l.guild_id,
+        channelId: a.id,
+        guildId: a.guild_id,
         messageId: t.id
     })(c);
     return (0, i.jsx)(p.A, {
@@ -51,7 +51,7 @@ function T(e) {
                     children: [(0, i.jsx)("img", {
                         alt: E.intl.string(E.t["2B/phM"]),
                         src: r,
-                        className: a()(b.Gt, _.M.XSMALL)
+                        className: l()(b.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-muted",
@@ -67,8 +67,8 @@ function v(e) {
     let {
         message: t,
         application: n,
-        applicationName: l,
-        channel: a,
+        applicationName: a,
+        channel: l,
         header: _,
         currentUserId: m,
         launchableAppId: h,
@@ -83,9 +83,9 @@ function v(e) {
         showAuthButton: R,
         startAuthorization: P,
         accountLinkButtonRef: M,
-        renderAccountLinkUpsell: w
-    } = e, O = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
-        actions: D,
+        renderAccountLinkUpsell: O
+    } = e, D = (0, s.bG)([g.A], () => g.A.getMessages(l.id)), {
+        actions: w,
         hasAccountLinkButton: k
     } = r.useMemo(() => {
         let e = [],
@@ -102,7 +102,7 @@ function v(e) {
                     })
                 }
             }] : null != b && (e = [b], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, O, n.id, j)) return {
+            if (!(0, x.p)(t.id, D, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
@@ -122,33 +122,33 @@ function v(e) {
             actions: e,
             hasAccountLinkButton: r
         }
-    }, [p, h, b, O, j, n.id, t.id, R, P, L, M]), U = D.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, b, D, j, n.id, t.id, R, P, L, M]), U = w.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
-    let G = D.length > 0,
+    let G = w.length > 0,
         B = r.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: I.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, l, a, m, G)
-        }), [t, l, a, m, G]);
-    return 0 === D.length ? (0, i.jsx)(T, {
+            children: (0, A.BE)(t, a, l, m, G)
+        }), [t, a, l, m, G]);
+    return 0 === w.length ? (0, i.jsx)(T, {
         message: t,
-        applicationName: l,
+        applicationName: a,
         iconSrc: y,
-        channel: a,
+        channel: l,
         currentUserId: m,
         viewAction: S
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.h, {
             header: _,
-            title: l,
+            title: a,
             staticBannerSrc: v,
             onClickBanner: S,
             bannerAspectRatio: c.u.ACTIVITY,
             iconSrc: y ?? void 0,
             info: B,
-            actions: D,
+            actions: w,
             primaryActionFirst: !0,
             onClickContent: S,
             trackingConfig: {
@@ -156,11 +156,11 @@ function v(e) {
                 linkType: C.J.RICH_PRESENCE_INVITE,
                 onView: N,
                 referrerId: t.author.id,
-                guildId: a.guild_id,
+                guildId: l.guild_id,
                 channelId: t.channel_id,
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), k ? w() : null]
+        }), k ? O() : null]
     })
 }

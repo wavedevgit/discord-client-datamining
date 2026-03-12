@@ -1,10 +1,10 @@
 /** chunk id: 589590 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var i = n(735438),
     r = n(842901);
-let l = (0, i.memoize)(function(e) {
+let a = (0, i.memoize)(function(e) {
     let {
         theme: t,
         layoutType: n

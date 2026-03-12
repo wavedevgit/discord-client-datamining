@@ -12,6 +12,7 @@ let n = e => {
     } = e;
     return (0, r.jsx)("section", {
         style: {
+            alignSelf: "start",
             marginTop: l,
             marginBottom: l,
             padding: t

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(110259),
     o = n(311907),
     d = n(827734),
@@ -30,7 +30,7 @@ function S(e) {
     let {
         guildId: t
     } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
-        loading: l,
+        loading: a,
         subscriptionsSettings: S
     } = (0, C.G)(t), {
         listingsLoaded: y
@@ -48,8 +48,8 @@ function S(e) {
         disableTrack: null == n
     });
     let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
-    return l || !y ? (0, i.jsx)("div", {
-        className: a()(v.lm, v.dc),
+    return a || !y ? (0, i.jsx)("div", {
+        className: l()(v.lm, v.dc),
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == S ? null : (0, i.jsxs)("div", {
         className: v.lm,

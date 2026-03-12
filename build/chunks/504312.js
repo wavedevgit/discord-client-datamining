@@ -664,12 +664,10 @@ let y = {
             id: "checkout-store-country-row",
             component: e => {
                 let {
-                    storeCountry: t,
-                    relocationCountry: l
+                    storeCountry: t
                 } = e;
                 return (0, a.jsx)(c.s7, {
-                    storeCountry: t,
-                    relocationCountry: l
+                    storeCountry: t
                 })
             },
             controls: {
@@ -678,15 +676,6 @@ let y = {
                     type: "select",
                     defaultValue: o.d.US,
                     options: f
-                },
-                relocationCountry: {
-                    label: "Relocation Country",
-                    type: "select",
-                    defaultValue: null,
-                    options: [{
-                        label: "None",
-                        value: null
-                    }, ...f]
                 }
             }
         }]

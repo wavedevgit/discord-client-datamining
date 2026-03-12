@@ -109,8 +109,8 @@ let u = 6,
             perPage: t,
             paginationPosition: o = "bottom",
             children: a
-        } = e, s = Math.max(1, Math.min(u, Math.floor(l))), [d, h] = n.useState(0), [p, _] = n.useState(t), [T, E] = n.useState(n.Children.count(a)), S = n.Children.count(a), A = null == t || t < 1 ? 0 : Math.ceil(S / t), b = null != t && t > 0, C = b && A > 1;
-        (p !== t || T !== S) && (_(t), E(S), h(0));
+        } = e, s = Math.max(1, Math.min(u, Math.floor(l))), [d, h] = n.useState(0), [p, _] = n.useState(t), [T, S] = n.useState(n.Children.count(a)), E = n.Children.count(a), A = null == t || t < 1 ? 0 : Math.ceil(E / t), b = null != t && t > 0, C = b && A > 1;
+        (p !== t || T !== E) && (_(t), S(E), h(0));
         let g = n.useMemo(() => b ? n.Children.toArray(a).slice(t * d, t * (d + 1)) : a, [d, t, a, b]);
         return (0, r.jsxs)(r.Fragment, {
             children: [C && "top" === o && (0, r.jsx)(m, {

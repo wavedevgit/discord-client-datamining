@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(311907),
-    a = n(846293),
+    a = n(311907),
+    l = n(846293),
     s = n(820284),
     o = n(688810),
     d = n(107123),
@@ -36,12 +36,12 @@ function N(e) {
     } = e, {
         invite: j,
         inviteError: L
-    } = (0, l.cf)([g.A], () => ({
+    } = (0, a.cf)([g.A], () => ({
         invite: g.A.getInvite(t),
         inviteError: g.A.getInviteError(t)
     }), [t]), R = null == j;
     r.useEffect(() => {
-        R && a.Ay.resolveInvite(t)
+        R && l.Ay.resolveInvite(t)
     }, [t, R]);
     let P = j ?? {
             state: y.elq.RESOLVING,
@@ -50,19 +50,19 @@ function N(e) {
         {
             analyticsLocations: M
         } = (0, o.Ay)(),
-        w = (0, l.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
-        O = (0, l.bG)([h.default], () => h.default.getId()),
-        D = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
+        O = (0, a.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
+        D = (0, a.bG)([h.default], () => h.default.getId()),
+        w = (0, a.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
         k = () => {
-            null != P.channel && a.Ay.transitionToInviteSync(P)
+            null != P.channel && l.Ay.transitionToInviteSync(P)
         },
         U = () => {
-            let e = null == w && j?.guild != null ? A.DY(j.guild) : w;
+            let e = null == O && j?.guild != null ? A.DY(j.guild) : O;
             (0, m.g)({
                 guild: e,
-                isMember: null != w,
+                isMember: null != O,
                 analyticsLocations: M
-            }) === m.W.PROCEED && a.Ay.acceptInviteAndTransitionToInviteChannel({
+            }) === m.W.PROCEED && l.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: t,
                 context: N("Invite Button Embed")
             })
@@ -70,8 +70,8 @@ function N(e) {
         G = (0, i.jsx)(I.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
-            currentUserId: O,
-            guild: w,
+            currentUserId: D,
+            guild: O,
             invite: P,
             message: n
         });
@@ -99,7 +99,7 @@ function N(e) {
                     G = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: k,
                         onAcceptInstantInvite: U,
-                        currentUserId: O,
+                        currentUserId: D,
                         invite: P,
                         message: n
                     });
@@ -116,19 +116,19 @@ function N(e) {
                         G = (0, i.jsx)(S.A, {
                             onTransitionToInviteChannel: k,
                             onAcceptInstantInvite: U,
-                            currentUserId: O,
+                            currentUserId: D,
                             message: n,
-                            guild: w,
+                            guild: O,
                             invite: P
                         });
                         break
                     }
                     if ((0, _.ly)(P)) {
                         G = (0, i.jsx)(u.Ay, {
-                            guildScheduledEvent: D,
+                            guildScheduledEvent: w,
                             guild: P.guild,
                             channel: P.channel,
-                            isMember: null != w,
+                            isMember: null != O,
                             onAcceptInstantInvite: U,
                             onTransitionToInviteChannel: k
                         });
@@ -144,7 +144,7 @@ function N(e) {
                     }(0, d.v)(P) && (G = (0, i.jsx)(b.A, {
                         onTransitionToInviteChannel: k,
                         onAcceptInstantInvite: U,
-                        isMemberOfGuild: null != w,
+                        isMemberOfGuild: null != O,
                         invite: P,
                         message: n
                     }))

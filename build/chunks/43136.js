@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    a = n(284009),
+    l = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(241524),
@@ -52,7 +52,7 @@ function y(e) {
     let {
         coverImageAsset: t,
         isPreview: n = !1
-    } = e, r = h.kt.useSetting(), l = (0, f.j)() && r, [a, s] = (0, m.A)(t, l), o = l ? (0, i.jsx)(u.A, {
+    } = e, r = h.kt.useSetting(), a = (0, f.j)() && r, [l, s] = (0, m.A)(t, a), o = a ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
         className: v.N4,
@@ -65,7 +65,7 @@ function y(e) {
         className: v.N4
     });
     return (0, i.jsx)("div", {
-        ref: a,
+        ref: l,
         className: v.El,
         children: null == s || n ? o : (0, i.jsx)("img", {
             src: s,
@@ -79,24 +79,24 @@ function N(e) {
     let {
         guild: t,
         subscriptionsSettings: n
-    } = e, l = t.id, {
+    } = e, a = t.id, {
         nickname: u,
         nickcolor: m
     } = (0, s.cf)([p.Ay, g.default], () => {
         let e = g.default.getCurrentUser();
-        a()(null != e, "user cannot be null");
-        let t = p.Ay.getMember(l, e.id);
+        l()(null != e, "user cannot be null");
+        let t = p.Ay.getMember(a, e.id);
         return {
             nickname: t?.nick ?? x.Ay.getName(e),
             nickcolor: t?.colorString ?? void 0
         }
-    }, [l]), {
+    }, [a]), {
         isTruncated: h,
         ExpandableTextContainer: A
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = r.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, E.k)(), M = R === I.B.GUILD_PRODUCTS_PREVIEW ? T.intl.string(T.t["LvXy/H"]) : T.intl.string(T.t.XyqKh8), w = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, E.k)(), M = R === I.B.GUILD_PRODUCTS_PREVIEW ? T.intl.string(T.t["LvXy/H"]) : T.intl.string(T.t.XyqKh8), O = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
@@ -109,7 +109,7 @@ function N(e) {
                 size: 4
             }), (0, i.jsx)(S, {
                 onClick: () => (0, b.A)({
-                    guildId: l
+                    guildId: a
                 })
             })]
         })]
@@ -162,7 +162,7 @@ function N(e) {
                     })
                 }), (0, i.jsx)(o.hKd, {
                     size: 9
-                }), w]
+                }), O]
             })]
         }), (0, i.jsx)(y, {
             coverImageAsset: n?.cover_image_asset,

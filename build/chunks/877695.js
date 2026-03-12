@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(311907),
     o = n(397927),
     d = n(846293),
@@ -29,7 +29,7 @@ function v(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
-        message: l,
+        message: a,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
     } = e, _ = r.useRef(null), [h, g] = r.useState(!0), [v, y] = r.useState(!1), N = t.state === I.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
@@ -48,7 +48,7 @@ function v(e) {
             transition: j ? void 0 : "height 0.2s ease"
         } : {}, [h, v, j]);
     return null == L ? (0, i.jsx)(E.A, {}) : (0, i.jsxs)(o.sqX, {
-        className: a()(T.Gg, {
+        className: l()(T.Gg, {
             [T.vk]: v && h
         }),
         onClick: R,
@@ -82,13 +82,13 @@ function v(e) {
                 text: b.intl.string(b.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
-            className: a()(T.qr, {
+            className: l()(T.qr, {
                 [T.iK]: v
             }),
             children: [v && h ? (0, i.jsx)("div", {
                 className: T.D7
             }) : null, (0, i.jsx)("div", {
-                className: a()(T.z8, {
+                className: l()(T.z8, {
                     [T.it]: v && h
                 }),
                 children: (0, i.jsx)("div", {
@@ -97,7 +97,7 @@ function v(e) {
                         invite: t,
                         profile: L,
                         isMemberOfGuild: n,
-                        message: l,
+                        message: a,
                         submitting: N,
                         onTransitionToInviteChannel: d,
                         onAcceptInstantInvite: u
@@ -112,8 +112,8 @@ function S(e) {
     let {
         invite: t,
         profile: n,
-        isMemberOfGuild: l,
-        message: a,
+        isMemberOfGuild: a,
+        message: l,
         submitting: s,
         onTransitionToInviteChannel: o,
         onAcceptInstantInvite: c
@@ -123,14 +123,14 @@ function S(e) {
     } = (0, h.Ay)(n, h.cn.INVITE, t.code), {
         analyticsLocations: A
     } = (0, _.Ay)(u.A.INVITE_EMBED), x = r.useCallback(() => {
-        let e = l ? "transition" : "accept";
+        let e = a ? "transition" : "accept";
         (0, d.he)({
             invite: t,
             action: e,
-            inviter_id: a.author.id,
-            invite_message_id: a.id
+            inviter_id: l.author.id,
+            invite_message_id: l.id
         }, A)
-    }, [t, a, A, l]);
+    }, [t, l, A, a]);
     return null == p ? null : (0, i.jsx)(g.Y, {
         guildId: m,
         ctaType: p,

@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(125017),
     r = n(833349),
-    l = n(287613),
-    a = n(659051),
+    a = n(287613),
+    l = n(659051),
     s = n(702631),
     o = n(652215);
 
 function d(e, t, n, d) {
-    if (t.author.id === d || !(0, a.A)(e, t, n.id) || t.activity?.type !== o.xL.JOIN_REQUEST || !(0, r.A)(e, o.jUm.JOIN)) return !1;
+    if (t.author.id === d || !(0, l.A)(e, t, n.id) || t.activity?.type !== o.xL.JOIN_REQUEST || !(0, r.A)(e, o.jUm.JOIN)) return !1;
     let c = (0, i._)(e);
-    return !(!(0, l.A)(c) || (0, s.U)(c))
+    return !(!(0, a.A)(c) || (0, s.U)(c))
 }

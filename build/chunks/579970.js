@@ -1,13 +1,13 @@
 /** chunk id: 579970 params = (module,exports,require) **/
 n.d(t, {
-    q: () => a
+    q: () => l
 });
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    l = n(500208);
+    a = n(500208);
 
-function a(e, t) {
+function l(e, t) {
     (0, r.mMO)(async () => {
         let {
             default: r
@@ -18,6 +18,6 @@ function a(e, t) {
             ...n
         })
     }, {
-        modalKey: l.DG
+        modalKey: a.DG
     })
 }

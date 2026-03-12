@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(990078),
-    a = n(319060),
+    a = n(990078),
+    l = n(319060),
     s = n(397927),
     o = n(793574),
     d = n(58149),
@@ -19,13 +19,13 @@ var i = n(627968),
     A = n(652215),
     x = n(788868),
     f = n(998162);
-let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
+let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
     E = e => {
         let {
             renderableSticker: t,
             channel: n,
-            isInteracting: a
-        } = e, _ = r.useRef(null), [E, I] = r.useState(!0), [b, T] = r.useState(String(Date.now())), [v] = (0, m.Zq)(t, a), {
+            isInteracting: l
+        } = e, _ = r.useRef(null), [E, I] = r.useState(!0), [b, T] = r.useState(String(Date.now())), [v] = (0, m.Zq)(t, l), {
             analyticsLocations: S
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
             className: f.Zl,
@@ -57,7 +57,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         let {
                             onClick: n
                         } = e;
-                        return (0, i.jsx)(l.m, {
+                        return (0, i.jsx)(a.m, {
                             ...u.Uk,
                             shouldShow: E,
                             __unsupportedReactNodeAsText: (0, u.yR)(y),
@@ -80,7 +80,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                 },
                                 tag: "span",
                                 children: (0, i.jsx)(p.A, {
-                                    isInteracting: a,
+                                    isInteracting: l,
                                     size: C,
                                     sticker: v ?? t
                                 })

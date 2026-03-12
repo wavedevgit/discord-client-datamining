@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(158954),
-    a = n(311907),
+    a = n(158954),
+    l = n(311907),
     s = n(990078),
     o = n(397927),
     d = n(442433),
@@ -38,7 +38,7 @@ class C extends r.PureComponent {
         let {
             libraryApplication: t,
             onDropdownOpen: r,
-            onDropdownClose: l
+            onDropdownClose: a
         } = this.props;
         if (r?.(e), null == t) throw Error("Unexpected missing libraryApplication");
         d.L3(e, async () => {
@@ -51,7 +51,7 @@ class C extends r.PureComponent {
                 onPlay: this.handleClick
             })
         }, {
-            onClose: l
+            onClose: a
         })
     };
     handleClick = () => {
@@ -79,16 +79,16 @@ class C extends r.PureComponent {
         let {
             fullWidth: n,
             size: r,
-            disabledVariant: a = "secondary",
+            disabledVariant: l = "secondary",
             tooltipPosition: o
         } = this.props;
         return (0, i.jsxs)("div", {
             className: f.Yr,
-            children: [(0, i.jsx)(l.$nd, {
+            children: [(0, i.jsx)(a.$nd, {
                 text: e,
                 fullWidth: n,
                 size: r,
-                variant: a,
+                variant: l,
                 disabled: !0
             }), (0, i.jsx)(s.m, {
                 text: t,
@@ -105,20 +105,20 @@ class C extends r.PureComponent {
             size: t,
             variant: n,
             isLaunchable: r,
-            isLaunching: a,
+            isLaunching: l,
             isRunning: s,
             hideNotLaunchable: d
         } = this.props;
-        return r ? s ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(l.e2v, {
+        return r ? s ? this.renderDisabledButton(x.intl.string(x.t["3elwAB"])) : (0, i.jsxs)(a.e2v, {
             size: t,
             wrap: !1,
             fullWidth: e,
-            children: [(0, i.jsx)(l.$nd, {
+            children: [(0, i.jsx)(a.$nd, {
                 text: x.intl.string(x.t["359Pbd"]),
                 variant: n,
-                loading: a,
+                loading: l,
                 onClick: this.handleClick
-            }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(l.K0, {
+            }), this.hasMultipleLaunchOptions() ? (0, i.jsx)(a.K0, {
                 icon: o.abt,
                 "aria-label": x.intl.string(x.t.KTPVLL),
                 variant: "secondary",
@@ -132,11 +132,11 @@ function E(e) {
     let {
         applicationId: t,
         libraryApplication: n
-    } = e, r = (0, c.p)(), [l, s] = (0, a.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, a.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, a.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
+    } = e, r = (0, c.p)(), [a, s] = (0, l.yK)([m.A, _.A, h.A], () => [m.A.isConnected(t) || _.A.isLaunchable(t) || null != n && h.A.isLaunchable(n.id, n.branchId), _.A.launchingGames.has(t)], [t, n]), o = (0, l.bG)([u.Ay], () => new Set(u.Ay.getRunningVerifiedApplicationIds()).has(t), [t]), d = (0, l.bG)([h.A], () => null != n ? h.A.getState(n.id, n.branchId) : null, [n]);
     return (0, i.jsx)(C, {
         ...e,
         analyticsContext: r,
-        isLaunchable: l,
+        isLaunchable: a,
         isLaunching: s,
         isRunning: o,
         dispatchState: d

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(801541);
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(889137),
     o = n(966974),
     d = n(397927),
@@ -33,12 +33,12 @@ function A(e) {
         buttonLabel: t,
         secondaryLabel: n,
         handleClick: r,
-        isInteractive: l,
+        isInteractive: a,
         className: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: a()(p.ez, s),
-        children: [l ? (0, i.jsx)(d.QWc, {
+        className: l()(p.ez, s),
+        children: [a ? (0, i.jsx)(d.QWc, {
             text: t,
             onClick: r,
             variant: "secondary",
@@ -61,8 +61,8 @@ function x(e) {
     let {
         action: t,
         channelId: n,
-        messageId: l,
-        isInteractive: a,
+        messageId: a,
+        isInteractive: l,
         className: s
     } = e, {
         actionButtonRef: o,
@@ -70,10 +70,10 @@ function x(e) {
     } = (0, m.Mg)(), _ = r.useCallback(async () => {
         t?.type != null && (await c.A.handlePollActionTapped({
             channelId: n,
-            messageId: l,
+            messageId: a,
             type: t.type
         }), u(t.type))
-    }, [t?.type, n, l, u]);
+    }, [t?.type, n, a, u]);
     return null == t ? null : "button" === t.presentation || "secondaryButton" === t.presentation ? (0, i.jsx)(d.Button, {
         buttonRef: o,
         onClick: _,
@@ -91,7 +91,7 @@ function x(e) {
         buttonLabel: t.label,
         secondaryLabel: t.secondaryLabel,
         handleClick: _,
-        isInteractive: a,
+        isInteractive: l,
         className: s
     })
 }
@@ -100,7 +100,7 @@ function f(e) {
     let t, {
             message: n,
             poll: r,
-            className: l
+            className: a
         } = e,
         c = (0, _.hd)(r.containerStyle),
         m = (t = {
@@ -118,7 +118,7 @@ function f(e) {
             ...t
         })).otherwise(() => null));
     return null == m ? null : (0, i.jsx)("div", {
-        className: a()(p.kL, c, l),
+        className: l()(p.kL, c, a),
         children: (0, i.jsxs)(d.Fmo, {
             children: [(0, i.jsxs)("div", {
                 className: p.wx,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(417597),
-    l = n(732955),
-    a = n(492749),
+    a = n(732955),
+    l = n(492749),
     s = n(827186),
     o = n(465932),
     d = n(317525),
@@ -35,14 +35,14 @@ function E(e) {
         thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: O
-    } = (0, o.MH)(n), D = (0, g.X)(t), k = (0, x.A)({
+    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), M = (0, g.z)(t), O = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: D
+    } = (0, o.MH)(n), w = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: E
     });
-    if (null == L || O) return null;
+    if (null == L || D) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -51,13 +51,13 @@ function E(e) {
         G = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: w,
+            showEditProduct: O,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: w ? () => {
+            onEditProduct: O ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
@@ -76,9 +76,9 @@ function E(e) {
         imageUrl: P,
         name: t.name,
         description: t.description,
-        formattedPrice: D,
+        formattedPrice: w,
         role: R,
-        ctaComponent: (0, i.jsx)(l.$nd, {
+        ctaComponent: (0, i.jsx)(a.$nd, {
             ...k
         }),
         productType: M,

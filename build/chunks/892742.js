@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(397927),
-    a = n(341915),
+    a = n(397927),
+    l = n(341915),
     s = n(890687),
     o = n(710969),
     d = n(814793),
@@ -26,7 +26,7 @@ function p(e) {
         fetchPolicy: "cache-or-network",
         callerSource: "embed"
     }), A = r.useMemo(() => (0, o.vc)(t, n, p), [t, n, p]), x = r.useMemo(() => p.find(e => e.id === t), [t, p]);
-    return g ? (0, i.jsx)(l.y$y, {
+    return g ? (0, i.jsx)(a.y$y, {
         className: h.u
     }) : null == A ? null != x ? (0, i.jsx)(c.g, {
         questId: t
@@ -35,8 +35,8 @@ function p(e) {
         reason: u.o.NOT_FOUND
     }) : (0, d.E0)(A.config) ? (0, i.jsx)(m.R, {
         quest: A,
-        location: a.uF.QUESTS_EMBED,
-        sourceQuestContent: a.uF.QUESTS_EMBED
+        location: l.uF.QUESTS_EMBED,
+        sourceQuestContent: l.uF.QUESTS_EMBED
     }, A.id) : (0, i.jsx)(_.S, {
         questId: t
     })

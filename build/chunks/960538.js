@@ -4,8 +4,8 @@ n.d(t, {
 }), n(938796);
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(111956),
     o = n.n(s),
     d = n(665260),
@@ -52,7 +52,7 @@ class b extends r.Component {
         } = e, {
             channel: n,
             message: r
-        } = this.props, l = (0, i.jsx)(A.C, {
+        } = this.props, a = (0, i.jsx)(A.C, {
             closePopout: t,
             channel: n,
             onSelectEmoji: e => {
@@ -75,8 +75,8 @@ class b extends r.Component {
                 } = e;
                 return t ? (0, i.jsx)(_.lGe, {
                     "aria-label": C.intl.string(C.t["7Xqzdj"]),
-                    children: l
-                }) : l
+                    children: a
+                }) : a
             }
         })
     };
@@ -86,7 +86,7 @@ class b extends r.Component {
             className: t,
             children: n,
             useChatFontScaling: r,
-            tabIndex: l = 0
+            tabIndex: a = 0
         } = this.props, {
             isReactionPickerActive: s
         } = this.state;
@@ -99,7 +99,7 @@ class b extends r.Component {
             };
         return e.type === x.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, i.jsx)(h._x, {
             message: e,
-            className: a()(o.reactionBtn, t)
+            className: l()(o.reactionBtn, t)
         }) : (0, i.jsx)(_.YNO, {
             targetElementRef: this.ref,
             shouldShow: s,
@@ -116,13 +116,13 @@ class b extends r.Component {
                     children: (0, i.jsxs)(_.DUT, {
                         ...e,
                         innerRef: this.ref,
-                        tabIndex: l,
+                        tabIndex: a,
                         onClick: e => {
                             this.handleAddReactionClick(e)
                         },
                         onMouseEnter: () => (0, m.K)(f.Vl.AddReactionPopoutMouseEntered),
                         onFocus: () => (0, m.K)(f.Vl.AddReactionPopoutFocused),
-                        className: a()(o.reactionBtn, {
+                        className: l()(o.reactionBtn, {
                             [o.active]: s
                         }, t),
                         children: [(0, i.jsx)(_.nm2, {

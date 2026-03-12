@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(989349),
-    l = n.n(r),
-    a = n(827734),
+    a = n.n(r),
+    l = n(827734),
     s = n(397927),
     o = n(239093),
     d = n(985018),
@@ -40,7 +40,7 @@ function u(e) {
                 className: c.U1,
                 children: [(0, i.jsx)(s.id, {
                     className: c.QW,
-                    color: a.A.colors.ICON_FEEDBACK_CRITICAL
+                    color: l.A.colors.ICON_FEEDBACK_CRITICAL
                 }), (0, i.jsx)(s.Text, {
                     variant: "text-md/semibold",
                     children: d.intl.string(d.t["4CxGXi"])
@@ -50,7 +50,7 @@ function u(e) {
                 children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     children: d.intl.format(d.t.eevFb6, {
-                        daysAgo: l()().diff(l().unix(m), "days")
+                        daysAgo: a()().diff(a().unix(m), "days")
                     })
                 })
             }), (0, i.jsx)("div", {

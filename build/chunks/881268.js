@@ -1,14 +1,14 @@
 /** chunk id: 881268 params = (module,exports,require) **/
 n.d(t, {
-    X: () => a
+    X: () => l
 });
 var i = n(562465),
     r = n(198982),
-    l = n(652215);
-let a = async (e, t) => {
+    a = n(652215);
+let l = async (e, t) => {
     try {
         return (await i.Bo.get({
-            url: l.Rsh.PRICE_TIERS,
+            url: a.Rsh.PRICE_TIERS,
             query: {
                 price_tier_type: t,
                 guild_id: e

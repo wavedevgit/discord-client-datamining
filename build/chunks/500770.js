@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    l = n.n(r),
-    a = n(397927),
+    a = n.n(r),
+    l = n(397927),
     s = n(915089),
     o = n(308234),
     d = n(724609),
@@ -22,15 +22,15 @@ function m(e) {
         children: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(_.v0, r),
+        className: a()(_.v0, r),
         children: [s, !t && (0, i.jsxs)("div", {
             className: _.su,
-            children: [(0, i.jsx)(a.XAi, {
+            children: [(0, i.jsx)(l.XAi, {
                 size: "xs",
                 className: _.hz,
                 color: "currentColor",
                 "aria-hidden": !0
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: "always-white",
                 className: _.__invalid_unlockText,
@@ -48,11 +48,11 @@ function h(e) {
         onShowFullDescription: t,
         variant: n
     } = e, r = (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: n,
             color: null != t ? "text-link" : "interactive-text-hover",
             children: u.intl.string(u.t["5fmYjW"])
-        }), (0, i.jsx)(a.EdP, {
+        }), (0, i.jsx)(l.EdP, {
             size: "xs",
             color: "currentColor",
             className: _.D6
@@ -61,8 +61,8 @@ function h(e) {
     return null == t ? (0, i.jsx)("div", {
         className: _.dO,
         children: r
-    }) : (0, i.jsx)(a.DUT, {
-        className: l()(_.dO, _.hY),
+    }) : (0, i.jsx)(l.DUT, {
+        className: a()(_.dO, _.hY),
         onClick: e => {
             e.stopPropagation(), null != t && t()
         },
@@ -107,13 +107,13 @@ function p(e) {
             className: _.MS,
             children: [(0, i.jsxs)("div", {
                 className: _.Ag,
-                children: [(0, i.jsx)(a.Heading, {
+                children: [(0, i.jsx)(l.Heading, {
                     variant: "text-md/medium",
                     color: "text-strong",
                     className: _.tZ,
                     id: L,
                     children: n
-                }), (0, i.jsx)(a.M1G, {
+                }), (0, i.jsx)(l.M1G, {
                     children: (0, i.jsx)(o.A, {
                         variant: N,
                         color: "text-muted",
@@ -124,7 +124,7 @@ function p(e) {
                     onShowFullDescription: x,
                     variant: N
                 }), b || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
-                    children: [(0, i.jsx)(a.hKd, {
+                    children: [(0, i.jsx)(l.hKd, {
                         size: 16
                     }), (0, i.jsx)(c.A, {
                         role: p
@@ -133,12 +133,12 @@ function p(e) {
             }), E]
         }), (0, i.jsxs)("div", {
             className: _.kP,
-            children: [(0, i.jsx)(a.Text, {
+            children: [(0, i.jsx)(l.Text, {
                 variant: "text-md/medium",
                 color: "interactive-text-active",
                 className: _.__invalid_productPrice,
                 children: d ?? u.intl.string(u.t["4uLhAp"])
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(l.Text, {
                 variant: "text-xxs/normal",
                 color: "text-default",
                 className: _.__invalid_productType,
@@ -153,7 +153,7 @@ function p(e) {
         })]
     });
     return null == C ? (0, i.jsx)("article", {
-        className: l()(_.Um, I ? _.sG : _.Wi),
+        className: a()(_.Um, I ? _.sG : _.Wi),
         "aria-labelledby": L,
         children: R
     }) : (0, i.jsx)("div", {
@@ -161,12 +161,12 @@ function p(e) {
             width: v,
             height: S
         },
-        children: (0, i.jsx)(a.sqX, {
+        children: (0, i.jsx)(l.sqX, {
             tag: "article",
             "aria-label": u.intl.formatToPlainString(u.t["e+TmJa"], {
                 productName: n
             }),
-            className: l()(_.Um, I ? _.sG : _.Wi, _.GA),
+            className: a()(_.Um, I ? _.sG : _.Wi, _.GA),
             onClick: C,
             children: R
         })

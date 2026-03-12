@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(503698),
+    l = n.n(a),
     s = n(989349),
     o = n.n(s),
     d = n(397927),
@@ -24,11 +24,11 @@ let E = e => {
     let {
         reportingUserId: t,
         guildId: n,
-        compact: l,
+        compact: a,
         channel: s,
         messageId: E,
         reportedTimestamp: I
-    } = e, b = h.default.getUser(t), T = r.useMemo(() => l ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [l]), v = (0, m.P)({
+    } = e, b = h.default.getUser(t), T = r.useMemo(() => a ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [a]), v = (0, m.P)({
         user: b,
         channelId: s.id,
         guildId: n,
@@ -38,7 +38,7 @@ let E = e => {
         onUserClick: v
     }) : A.intl.string(g.default.xpRjfS);
     return (0, i.jsxs)("div", {
-        className: a()(f.NB, f.JZ, T),
+        className: l()(f.NB, f.JZ, T),
         children: [(0, i.jsx)(d.euF, {
             src: S,
             size: d._3J.SIZE_16,

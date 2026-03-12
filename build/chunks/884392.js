@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(412703),
-    l = n(311907),
-    a = n(397927),
+    a = n(311907),
+    l = n(397927),
     s = n(829219),
     o = n(859703),
     d = n(890687),
@@ -46,7 +46,7 @@ let g = function(e) {
         questContentRowIndex: I
     }, T = n.id, {
         isEnrolling: v
-    } = (0, l.cf)([o.A], () => ({
+    } = (0, a.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(T)
     }), [T]), S = (0, _.Oz)(n), y = function(e, t) {
         let {
@@ -103,7 +103,7 @@ let g = function(e) {
             questContentRowIndex: b.questContentRowIndex
         }), t?.()
     });
-    return (0, i.jsx)(a.Button, {
+    return (0, i.jsx)(l.Button, {
         size: g,
         loading: v,
         variant: A,

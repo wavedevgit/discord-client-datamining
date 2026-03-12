@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    a = n(284009),
+    l = n.n(a),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -26,7 +26,7 @@ var i = n(627968),
 function b(e) {
     let t, {
             invite: n,
-            currentUserId: l,
+            currentUserId: a,
             guild: b,
             message: T,
             onTransitionToInviteChannel: v,
@@ -41,13 +41,13 @@ function b(e) {
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         P = null != n && n.target_type === C.yV.STREAM && null != n.target_user && null != j,
         M = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
-    a()(null != n, "Invite cannot be null");
+    l()(null != n, "Invite cannot be null");
     let {
-        target_type: w,
-        target_user: O
+        target_type: O,
+        target_user: D
     } = n;
-    a()(w === C.yV.STREAM && null != O, "invalid streaming invite");
-    let D = l === O.id,
+    l()(O === C.yV.STREAM && null != D, "invalid streaming invite");
+    let w = a === D.id,
         k = n.state === f.elq.ACCEPTING,
         U = r.useCallback(() => {
             let e = "noop";
@@ -64,13 +64,13 @@ function b(e) {
         b = (0, g.DY)(n.guild)
     }
     let B = null != n.channel ? (0, m.OY)(n.channel) : null,
-        F = A.Ay.getName(O),
+        F = A.Ay.getName(D),
         H = P || !M && G,
         V = E.intl.string(E.t.I6JG46),
         W = "active";
-    G && !M ? (t = D ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
+    G && !M ? (t = w ? E.intl.string(E.t.oBLoZJ) : E.intl.formatToPlainString(E.t["0QJmA+"], {
         name: F
-    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = D ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
+    }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = w ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: F
     }));
     let q = N === b.id && null != B ? (0, i.jsx)(_.A.Channel, {
