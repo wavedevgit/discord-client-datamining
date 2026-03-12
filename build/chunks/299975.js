@@ -6,27 +6,27 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(722523),
-    r = n(490557),
-    a = n(568065),
+    a = n(490557),
+    r = n(568065),
     o = n(136708),
     c = n(985018),
     d = n(331176);
 
 function u(e, t) {
     if (null == t) return;
-    let u = a.HO.has(t.skuId);
+    let u = r.HO.has(t.skuId);
     (0, s.mMO)(async () => {
         let {
-            default: a
+            default: r
         } = await n.e("957").then(n.bind(n, 523084));
-        return n => (0, i.jsx)(a, {
+        return n => (0, i.jsx)(r, {
             title: c.intl.formatToPlainString(o.default.lFuOFF, {
                 perkName: t.title
             }),
             description: c.intl.formatToPlainString(o.default.y3wHot, {
                 perkName: t.title
             }),
-            image: (0, i.jsx)(r.l, {
+            image: (0, i.jsx)(a.l, {
                 className: d.Sl,
                 powerup: t
             }),

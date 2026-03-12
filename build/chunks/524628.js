@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(158954),
-    a = n(311907),
+    a = n(158954),
+    r = n(311907),
     o = n(775602),
     c = n(266576);
 
@@ -16,8 +16,8 @@ function d(e) {
     let {
         withHeader: t = !0,
         size: n = 15
-    } = e, s = (0, a.bG)([o.A], () => o.A.useReducedMotion);
-    return (0, i.jsxs)(r.BJc, {
+    } = e, s = (0, r.bG)([o.A], () => o.A.useReducedMotion);
+    return (0, i.jsxs)(a.BJc, {
         gap: 4,
         children: [t && (0, i.jsx)("div", {
             className: l()(c.iE, {
@@ -46,7 +46,7 @@ function u(e) {
 }
 
 function h() {
-    let e = (0, a.bG)([o.A], () => o.A.useReducedMotion);
+    let e = (0, r.bG)([o.A], () => o.A.useReducedMotion);
     return (0, i.jsxs)("div", {
         style: {
             display: "flex",

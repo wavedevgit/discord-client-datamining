@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(192308),
-    a = n(435371),
+    a = n(192308),
+    r = n(435371),
     o = n(397927),
     c = n(964486),
     d = n(544231),
@@ -22,7 +22,7 @@ var i = n(627968),
 let x = s.memo(function(e) {
     let {
         channel: t
-    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, r.useHasAnyModalOpen)(), N = (0, l.bG)([p.A], () => p.A.hasLayers()), b = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(b());
+    } = e, x = (0, u.u)(t.id), C = (0, h.S)(t.id), E = (0, A.e)(t.id), I = (0, a.useHasAnyModalOpen)(), N = (0, l.bG)([p.A], () => p.A.hasLayers()), b = s.useCallback(() => C ? f.intl.string(f.t["16QyDv"]) : null != E ? f.intl.string(f.t.kCN9i0) : null, [C, E]), S = s.useMemo(() => (C || null != E) && !I && !N, [C, E, I, N]), [T, v] = s.useState(b());
     s.useEffect(() => {
         null != E && null != x && (o.ORC.announce(f.intl.string(f.t.acsXuG)), setTimeout(() => {
             (0, d.xi)(t.id, [E.id])
@@ -79,7 +79,7 @@ let x = s.memo(function(e) {
             isNudgeWarning: null != E
         }))
     }, [E, x, t]);
-    return null == x ? null : (0, i.jsx)(a.m_, {
+    return null == x ? null : (0, i.jsx)(r.m_, {
         forceOpen: S,
         text: T,
         position: "bottom",

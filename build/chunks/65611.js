@@ -10,14 +10,14 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(827734),
-    a = n(397927),
+    a = n(827734),
+    r = n(397927),
     o = n(513461),
     c = n(791606),
     d = n(365067);
 
 function u(e, t, n) {
-    return (0, i.jsx)(a.hVq, {
+    return (0, i.jsx)(r.hVq, {
         count: e,
         color: t,
         "aria-hidden": n
@@ -25,8 +25,8 @@ function u(e, t, n) {
 }
 
 function h() {
-    return (0, i.jsx)(a.fkz, {
-        icon: (0, a.kHD)(c.A),
+    return (0, i.jsx)(r.fkz, {
+        icon: (0, r.kHD)(c.A),
         disableColor: !0,
         className: d.yk
     })
@@ -38,18 +38,18 @@ function A(e) {
         video: i,
         screenshare: s,
         isCurrentUserConnected: l,
-        liveStage: r,
+        liveStage: a,
         activeEvent: o,
         activity: c
     } = e;
-    if (o) t = a.CTc;
-    else if (r) t = a.qux;
-    else if (s) t = a.kN9;
-    else if (i) t = a.npA;
-    else if (n) t = a.HKD;
+    if (o) t = r.CTc;
+    else if (a) t = r.qux;
+    else if (s) t = r.kN9;
+    else if (i) t = r.npA;
+    else if (n) t = r.HKD;
     else {
         if (!c) return null;
-        t = a.k9F
+        t = r.k9F
     }
     return p({
         icon: t,
@@ -63,13 +63,13 @@ function m(e) {
     } = e, [n, i] = function(e) {
         switch (e) {
             case o.B5.SUBMITTED:
-                return [void 0, a.O4];
+                return [void 0, r.O4];
             case o.B5.REJECTED:
-                return [r.A.unsafe_rawColors.RED_400.css, a.PGe];
+                return [a.A.unsafe_rawColors.RED_400.css, r.PGe];
             case o.B5.APPROVED:
-                return [r.A.unsafe_rawColors.GREEN_360.css, a.A9s];
+                return [a.A.unsafe_rawColors.GREEN_360.css, r.A9s];
             default:
-                return [void 0, a.R2l]
+                return [void 0, r.R2l]
         }
     }(t);
     return p({
@@ -84,7 +84,7 @@ function p(e) {
         color: n,
         isCurrentUserConnected: s
     } = e;
-    return (0, i.jsx)(a.fkz, {
+    return (0, i.jsx)(r.fkz, {
         icon: t,
         className: l()(d.bG, {
             [d.gB]: s

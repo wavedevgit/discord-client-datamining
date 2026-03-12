@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(732955),
-    r = n(817281),
-    a = n(951829),
+    a = n(817281),
+    r = n(951829),
     o = n(985018);
 
 function c(e) {
@@ -17,10 +17,10 @@ function c(e) {
         onClose: c,
         ...d
     } = e, [u, h] = s.useState(!1), A = s.useCallback(() => {
-        u && r.Ay.updatedUnsyncedSettings({
+        u && a.Ay.updatedUnsyncedSettings({
             disableHideSelfStreamAndVideoConfirmationAlert: !0
         }), n(), c()
-    }, [n, u, c]), m = t === a.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), p = t === a.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
+    }, [n, u, c]), m = t === r.f.STREAM ? o.intl.string(o.t["/lFMWr"]) : o.intl.string(o.t.xzxhZS), p = t === r.f.STREAM ? o.intl.string(o.t.xaOX7d) : o.intl.string(o.t.oU1p9O);
     return (0, i.jsx)(l.aFV, {
         size: "md",
         actionBarInput: (0, i.jsx)(l.Sc0, {

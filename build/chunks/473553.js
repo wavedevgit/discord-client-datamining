@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(311907),
-    a = n(554146),
+    a = n(311907),
+    r = n(554146),
     o = n(397927),
     c = n(932001),
     d = n(625180),
@@ -36,13 +36,13 @@ function O(e) {
     let {
         quest: t,
         applicationId: n
-    } = e, r = (0, f.fc)(t), u = (0, _.mU)({
+    } = e, a = (0, f.fc)(t), u = (0, _.mU)({
         quest: t,
-        taskDetails: r,
+        taskDetails: a,
         location: T.rE.QUEST_ACTIVITY_HEADER,
         questContent: m.uF.QUEST_ACTIVITY_HEADER,
         sourceQuestContent: m.uF.RUNNING_ACTIVITY
-    }), [A, p] = s.useState(!1), g = s.useRef(null), C = s.useRef(null), [b, O] = (0, c.kn)([a.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
+    }), [A, p] = s.useState(!1), g = s.useRef(null), C = s.useRef(null), [b, O] = (0, c.kn)([r.M.QUEST_ACTIVITY_HEADER_INTRO], void 0, !0), {
         completedRatio: L,
         completedRatioDisplay: M,
         percentComplete: D
@@ -160,11 +160,11 @@ function O(e) {
 function L(e) {
     let {
         applicationId: t
-    } = e, a = (0, r.bG)([A.A], () => A.A.quests), c = (0, r.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, C.jm)(a, t, !0)[0], [a, t]), {
+    } = e, r = (0, a.bG)([A.A], () => A.A.quests), c = (0, a.bG)([u.A], () => u.A.theme), d = s.useMemo(() => (0, C.jm)(r, t, !0)[0], [r, t]), {
         enabled: h
     } = g.Ym.useConfig({
         location: T.rE.QUEST_ACTIVITY_HEADER
-    }), _ = (0, r.bG)([p.A], () => p.A.getState().autoEnroll), f = d?.id, x = (0, r.bG)([p.A], () => p.A.isDismissed(f), [f]);
+    }), _ = (0, a.bG)([p.A], () => p.A.getState().autoEnroll), f = d?.id, x = (0, a.bG)([p.A], () => p.A.isDismissed(f), [f]);
     return (s.useEffect(() => {
         !h || null == d || d.userStatus?.enrolledAt != null || _ || x || (0, o.mMO)(async () => {
             let {

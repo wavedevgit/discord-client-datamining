@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(456412),
-    a = n(313961),
+    a = n(456412),
+    r = n(313961),
     o = n(63995),
     c = n(113783),
     d = n(69407),
@@ -23,9 +23,9 @@ var i = n(627968),
 function x(e) {
     return e.type === d.wY.VOICE
 }
-let C = (0, r.A)(e => {
+let C = (0, a.A)(e => {
     let t, n, {
-            channel: r,
+            channel: a,
             width: C,
             onScroll: E,
             popoutType: I
@@ -34,15 +34,15 @@ let C = (0, r.A)(e => {
             selectedParticipantId: N,
             largeStream: b,
             chatOpen: S
-        } = (0, l.cf)([a.A], () => ({
-            selectedParticipantId: a.A.getSelectedParticipantId(r.id),
-            largeStream: a.A.getStageStreamSize(r.id),
-            chatOpen: a.A.getChatOpen(r.id)
-        }), [r.id]),
-        T = (0, c.uy)(r.id),
-        v = (0, c.zy)(r.id, d.ip.AUDIENCE),
-        y = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(r.id, N) : null),
-        j = (0, c.E5)(r.id, d.ip.SPEAKER),
+        } = (0, l.cf)([r.A], () => ({
+            selectedParticipantId: r.A.getSelectedParticipantId(a.id),
+            largeStream: r.A.getStageStreamSize(a.id),
+            chatOpen: r.A.getChatOpen(a.id)
+        }), [a.id]),
+        T = (0, c.uy)(a.id),
+        v = (0, c.zy)(a.id, d.ip.AUDIENCE),
+        y = (0, l.bG)([o.A], () => null != N ? o.A.getParticipant(a.id, N) : null),
+        j = (0, c.E5)(a.id, d.ip.SPEAKER),
         R = j.filter(x),
         O = null != j.find(e => e.type === d.wY.STREAM),
         L = Math.floor((C - 32) / 102),
@@ -52,8 +52,8 @@ let C = (0, r.A)(e => {
             [d.ip.AUDIENCE]: L,
             [d.ip.SELECTED]: 1
         },
-        G = (0, u.Uo)(r.id),
-        [U, P] = (0, u.RG)(r.id, D, G),
+        G = (0, u.Uo)(a.id),
+        [U, P] = (0, u.RG)(a.id, D, G),
         w = [Math.max(U[0] ?? 1, 1), Math.max(U[1] ?? 1, 1), U[2]],
         {
             speakerTileWidth: k,
@@ -79,7 +79,7 @@ let C = (0, r.A)(e => {
                 onClick: () => K(!F),
                 collapsed: F,
                 speakers: R,
-                channel: r,
+                channel: a,
                 isStreamLive: O
             }, `speaker-header-${t}`) : 2 === t ? 0 === v ? null : (0, i.jsx)(p.A, {
                 participantCount: v,
@@ -87,7 +87,7 @@ let C = (0, r.A)(e => {
                 className: f.wx,
                 onClick: () => Y(!W),
                 collapsed: W,
-                channel: r
+                channel: a
             }, `audience-header-${t}`) : null
         },
         sectionHeight: e => 48,
@@ -103,7 +103,7 @@ let C = (0, r.A)(e => {
                     return (0, i.jsx)("div", {
                         className: f.Od,
                         children: (0, i.jsx)(g.A, {
-                            channel: r,
+                            channel: a,
                             participant: l[0],
                             width: B,
                             popoutType: I
@@ -114,7 +114,7 @@ let C = (0, r.A)(e => {
                     return (0, i.jsx)(s.Fragment, {
                         children: (0, i.jsx)(m.A, {
                             tileWidth: k,
-                            channel: r,
+                            channel: a,
                             participants: l,
                             selectedParticipant: y,
                             popoutType: I
@@ -123,7 +123,7 @@ let C = (0, r.A)(e => {
                 case 2:
                     if (W) return null;
                     return (0, i.jsx)(h.A, {
-                        channel: r,
+                        channel: a,
                         participants: l,
                         maxTiles: L
                     }, `audience-${t}-${n}`);

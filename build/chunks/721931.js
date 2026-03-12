@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(636920),
+    a = n.n(l),
+    r = n(636920),
     o = n(581445),
     c = n(513679);
 
@@ -22,8 +22,8 @@ function d(e) {
         d?.(u?.current)
     }, [u, d]), (0, i.jsx)("div", {
         ref: u,
-        className: r()(c.popover, o.kL),
-        children: (0, i.jsx)(a.Z, {
+        className: a()(c.popover, o.kL),
+        children: (0, i.jsx)(r.Z, {
             hangStatusActivity: t,
             channel: n,
             userId: l,

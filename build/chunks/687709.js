@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(562465),
     s = n(73153),
     l = n(198982),
-    r = n(867455),
-    a = n(966833),
+    a = n(867455),
+    r = n(966833),
     o = n(157559),
     c = n(652215),
     d = n(985018);
@@ -17,17 +17,17 @@ let u = {
                 id: n,
                 name: s
             } = e;
-            await r.A.unarchiveThreadIfNecessary(e.id), i.Bo.put({
+            await a.A.unarchiveThreadIfNecessary(e.id), i.Bo.put({
                 url: c.Rsh.PIN(n, t),
                 rejectWithError: !0
             }).catch(t => {
                 let n = new l.LG(t),
                     i = n.code,
-                    r = d.intl.string(d.t.j2d6Km),
-                    a = d.intl.string(d.t.fEptJP);
+                    a = d.intl.string(d.t.j2d6Km),
+                    r = d.intl.string(d.t.fEptJP);
                 if (null != i) switch (i) {
                     case c.t02.TOO_MANY_PINS_IN_CHANNEL:
-                        r = d.intl.string(d.t.HI88Q3), a = e.isPrivate() ? d.intl.formatToPlainString(d.t.Q89oQU, {
+                        a = d.intl.string(d.t.HI88Q3), r = e.isPrivate() ? d.intl.formatToPlainString(d.t.Q89oQU, {
                             maxPins: c.KL3
                         }) : d.intl.formatToPlainString(d.t.NnO1S5, {
                             maxPins: c.KL3,
@@ -35,32 +35,32 @@ let u = {
                         });
                         break;
                     case c.t02.INVALID_ACCESS:
-                        r = d.intl.string(d.t["25gfQX"]), a = d.intl.string(d.t.QNnTwN);
+                        a = d.intl.string(d.t["25gfQX"]), r = d.intl.string(d.t.QNnTwN);
                         break;
                     case c.t02.INVALID_PIN_MESSAGE_CHANNEL:
-                        r = d.intl.string(d.t["Q5G6+m"]), a = d.intl.string(d.t["5hgPfC"]);
+                        a = d.intl.string(d.t["Q5G6+m"]), r = d.intl.string(d.t["5hgPfC"]);
                         break;
                     case c.t02.INVALID_THREAD_ARCHIVE_STATE:
-                        r = d.intl.string(d.t.fu6Lbl), a = d.intl.string(d.t.FmrcZM);
+                        a = d.intl.string(d.t.fu6Lbl), r = d.intl.string(d.t.FmrcZM);
                         break;
                     case c.t02.INVALID_ACTION_SYSTEM_MESSAGE:
-                        r = d.intl.string(d.t["zV0/FC"]), a = d.intl.string(d.t.C4a7xI);
+                        a = d.intl.string(d.t["zV0/FC"]), r = d.intl.string(d.t.C4a7xI);
                         break;
                     case c.t02.UNKNOWN_MESSAGE:
-                        r = d.intl.string(d.t.fkqPro), a = d.intl.string(d.t.H6fRIg);
+                        a = d.intl.string(d.t.fkqPro), r = d.intl.string(d.t.H6fRIg);
                         break;
                     default:
-                        r = d.intl.string(d.t.HI88Q3), a = n.getAnyErrorMessage() ?? d.intl.string(d.t.fEptJP)
+                        a = d.intl.string(d.t.HI88Q3), r = n.getAnyErrorMessage() ?? d.intl.string(d.t.fEptJP)
                 }
                 o.A.show({
-                    title: r,
-                    body: a,
+                    title: a,
+                    body: r,
                     confirmText: d.intl.string(d.t.BddRzS)
                 })
             })
         },
         async unpinMessage(e, t) {
-            await r.A.unarchiveThreadIfNecessary(e.id), i.Bo.del({
+            await a.A.unarchiveThreadIfNecessary(e.id), i.Bo.del({
                 url: c.Rsh.PIN(e.id, t),
                 oldFormErrors: !0,
                 rejectWithError: !0
@@ -81,21 +81,21 @@ let u = {
         fetchPins(e, t) {
             let n = t?.reset ?? !1,
                 l = t?.limit ?? 25,
-                r = t?.before;
+                a = t?.before;
             (n || function(e, t) {
-                let n = a.A.getPins(e);
+                let n = r.A.getPins(e);
                 if (null == n) return !0;
                 switch (n.state) {
-                    case a.e.FAILED:
+                    case r.e.FAILED:
                         return !0;
-                    case a.e.LOADING:
-                    case a.e.LOADED_FINISHED:
+                    case r.e.LOADING:
+                    case r.e.LOADED_FINISHED:
                         return !1;
-                    case a.e.LOADED_HAS_MORE:
+                    case r.e.LOADED_HAS_MORE:
                         if (null == t) return 0 === n.items.length;
                         return n.items.at(-1).pinnedAt === t
                 }
-            }(e, r)) && (s.h.dispatch({
+            }(e, a)) && (s.h.dispatch({
                 type: "LOAD_PINNED_MESSAGES",
                 channelId: e,
                 reset: n
@@ -103,7 +103,7 @@ let u = {
                 url: c.Rsh.PINS(e),
                 query: {
                     limit: l,
-                    before: r?.toISOString()
+                    before: a?.toISOString()
                 },
                 retries: 2,
                 oldFormErrors: !0,

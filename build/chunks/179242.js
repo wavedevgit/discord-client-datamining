@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(163126),
     l = n(688810),
-    r = n(114212),
-    a = n(345942),
+    a = n(114212),
+    r = n(345942),
     o = n(183555),
     c = n(913453),
     d = n(229187),
@@ -49,7 +49,7 @@ function x(e) {
                     user: t,
                     guild: n,
                     nick: s,
-                    onSelect: () => (0, a.u)(n.id)
+                    onSelect: () => (0, r.u)(n.id)
                 }, n.id)
             })
         }), T && S && (0, i.jsx)(h.A, {
@@ -63,10 +63,10 @@ function x(e) {
                 length: I
             }).map((e, t) => (0, i.jsxs)("div", {
                 className: f.nC,
-                children: [(0, i.jsx)(r.FQ, {
+                children: [(0, i.jsx)(a.FQ, {
                     width: 40,
                     opacity: .08
-                }), (0, i.jsx)(r.FQ, {
+                }), (0, i.jsx)(a.FQ, {
                     width: 135,
                     opacity: .08
                 })]

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(490249),
+    a = n.n(l),
+    r = n(490249),
     o = n(607399),
     c = n(311907),
     d = n(990078),
@@ -36,21 +36,21 @@ function T(e) {
     } = e, {
         value: c
     } = n.springs;
-    return (0, i.jsx)(a.animated.div, {
+    return (0, i.jsx)(r.animated.div, {
         className: S.nI,
         style: {
             opacity: c,
             transform: c.to(e => `translateY(-${(1-e)*90}px)`)
         },
-        children: (0, i.jsx)(a.animated.div, {
-            className: r()(S._e, {
+        children: (0, i.jsx)(r.animated.div, {
+            className: a()(S._e, {
                 [S.fr]: o.Fr
             }),
             style: {
                 transform: c.to(e => `translateY(${(1-e)*90}px)`)
             },
             children: (0, i.jsx)("img", {
-                className: r()(S.Q, {
+                className: a()(S.Q, {
                     [S.fr]: o.Fr
                 }),
                 src: x.Ay.getGuildBannerURL({
@@ -94,9 +94,9 @@ function v(e) {
         })
     });
     return l ? (0, i.jsx)("div", {
-        className: r()(S.pS, S.W$),
+        className: a()(S.pS, S.W$),
         children: h
-    }) : (0, i.jsx)(a.animated.div, {
+    }) : (0, i.jsx)(r.animated.div, {
         className: S.pS,
         style: s ? {
             opacity: o
@@ -134,8 +134,8 @@ function O(e) {
     let {
         bannerVisible: t,
         guild: l,
-        onClick: r,
-        onContextMenu: a,
+        onClick: a,
+        onContextMenu: r,
         ariaControls: o,
         ariaExpanded: A,
         children: g
@@ -166,8 +166,8 @@ function O(e) {
             }),
             "aria-controls": o,
             "aria-expanded": A,
-            onContextMenu: a,
-            onClick: r,
+            onContextMenu: r,
+            onClick: a,
             children: [(0, i.jsxs)("div", {
                 className: S.LO,
                 children: [(0, i.jsx)(E.A, {
@@ -204,7 +204,7 @@ let L = s.memo(function(e) {
         ref: t,
         bannerVisible: n,
         controller: l,
-        className: a,
+        className: r,
         onClick: d,
         onContextMenu: h,
         onMouseDown: m,
@@ -242,7 +242,7 @@ let L = s.memo(function(e) {
                 "data-has-banner": q(),
                 "data-banner-visible": n,
                 ref: K,
-                className: r()(a, {
+                className: a()(r, {
                     [S.kL]: !0,
                     [S.r9]: q(),
                     [S.Pi]: n,
@@ -252,11 +252,11 @@ let L = s.memo(function(e) {
                 onMouseDown: m,
                 onContextMenu: h,
                 children: [(0, i.jsxs)("header", {
-                    className: r()(S.wx, R, {
+                    className: a()(S.wx, R, {
                         [S.jD]: o.Fr
                     }),
                     children: [(0, i.jsx)("div", {
-                        className: r()(S.VW, S.Nk),
+                        className: a()(S.VW, S.Nk),
                         children: (0, i.jsx)(O, {
                             bannerVisible: n,
                             guild: N,
@@ -301,17 +301,17 @@ function M(e) {
         theme: n
     } = (0, u.wRf)(), s = t.springs.value;
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.animated.div, {
+        children: [(0, i.jsx)(r.animated.div, {
             className: S.UL,
             style: {
                 opacity: s.to(e => .5 * e)
             }
-        }), (0, i.jsx)(a.animated.div, {
+        }), (0, i.jsx)(r.animated.div, {
             className: S.ze,
             style: {
                 opacity: s.to(e => e)
             }
-        }), (0, i.jsx)(a.animated.div, {
+        }), (0, i.jsx)(r.animated.div, {
             className: S.iI,
             style: {
                 opacity: s.to(e => (1 - e) * 6),

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(554146),
+    a = n.n(l),
+    r = n(554146),
     o = n(827734),
     c = n(990078),
     d = n(397927),
@@ -33,23 +33,23 @@ function T(e) {
         guild: n,
         width: s,
         inPopout: l,
-        handleClose: r,
-        userParticipantCount: a
+        handleClose: a,
+        userParticipantCount: r
     } = e;
     return s < 250 ? (0, i.jsx)(v, {
         channel: t,
         guild: n,
         width: s,
         inPopout: l,
-        handleClose: r,
-        userParticipantCount: a
-    }) : a > 1 ? (0, i.jsx)(j, {
+        handleClose: a,
+        userParticipantCount: r
+    }) : r > 1 ? (0, i.jsx)(j, {
         channel: t,
         guild: n,
         width: s,
         inPopout: l,
-        handleClose: r,
-        userParticipantCount: a
+        handleClose: a,
+        userParticipantCount: r
     }) : (0, i.jsx)(y, {
         channel: t,
         guild: n,
@@ -65,7 +65,7 @@ function v(e) {
         handleClose: s
     } = e, {
         analyticsLocations: l,
-        newestAnalyticsLocation: a
+        newestAnalyticsLocation: r
     } = (0, p.Ay)(m.A.VC_TILE_ACTIVITY_SHELF_BUTTON);
     return (0, i.jsx)(p.f5, {
         value: l,
@@ -84,7 +84,7 @@ function v(e) {
                                 type: "contextless"
                             },
                             openInPopout: n,
-                            analyticsLocation: a
+                            analyticsLocation: r
                         })
                     },
                     className: b.F1,
@@ -102,7 +102,7 @@ function v(e) {
                 theme: I.NJ8.DARK,
                 children: e => (0, i.jsx)(d.DUT, {
                     onClick: s,
-                    className: r()(e, b.lg),
+                    className: a()(e, b.lg),
                     children: (0, i.jsx)(d.aXh, {
                         size: "md",
                         color: "currentColor",
@@ -119,7 +119,7 @@ function y(e) {
     let {
         channel: t,
         guild: l,
-        inPopout: a
+        inPopout: r
     } = e;
     s.useEffect(() => {
         C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
@@ -144,7 +144,7 @@ function y(e) {
                 source: I.PE1.ACTIVITY_ENTRY_POINT_TILE
             })
         }, {
-            contextKey: a ? d.KX8 : d.SYi
+            contextKey: r ? d.KX8 : d.SYi
         })
     }
 
@@ -156,7 +156,7 @@ function y(e) {
             } : {
                 type: "contextless"
             },
-            openInPopout: a,
+            openInPopout: r,
             analyticsLocation: c
         })
     }
@@ -166,7 +166,7 @@ function y(e) {
             disableAdaptiveTheme: !0,
             theme: I.NJ8.MIDNIGHT,
             children: e => (0, i.jsxs)(E.A, {
-                className: r()(b.zr, b.co, e),
+                className: a()(b.zr, b.co, e),
                 children: [(0, i.jsx)("img", {
                     src: S,
                     className: b.Qw,
@@ -224,7 +224,7 @@ function j(e) {
                 variant: o > 550 ? "text-md/semibold" : "text-sm/semibold",
                 children: N.intl.string(N.t["7BKMcG"])
             }) : null, (0, i.jsx)("div", {
-                className: r()(b.Di, {
+                className: a()(b.Di, {
                     [b.qy]: o <= 300
                 }),
                 children: g.map(e => (0, i.jsx)(A.C, {
@@ -241,7 +241,7 @@ function j(e) {
                         tile_type: "activity suggestion",
                         close_type: "permanent",
                         n_participants: c
-                    }), (0, f.Dr)(a.M.VC_TILE_ACTIVITIES_ENTRY_POINT)
+                    }), (0, f.Dr)(r.M.VC_TILE_ACTIVITIES_ENTRY_POINT)
                 },
                 children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(d.Text, {
                     variant: "text-sm/medium",

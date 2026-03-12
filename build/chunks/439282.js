@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     c = n(80682),
     d = n(845056),
@@ -36,7 +36,7 @@ var i = n(627968),
 function L(e) {
     let t, {
         channel: l,
-        guild: a,
+        guild: r,
         onAction: h,
         voiceStates: g,
         isChannelSelected: _,
@@ -64,7 +64,7 @@ function L(e) {
             channel_id: l.id
         })
     }, [L, l.id]), L) ? (0, i.jsxs)(o.HOs, {
-        className: r()(O.popover, j.kL),
+        className: a()(O.popover, j.kL),
         children: [(0, i.jsx)(M, {
             channel: l,
             isChannelSelected: _,
@@ -79,18 +79,18 @@ function L(e) {
         }, t)), b.map((e, t) => {
             let {
                 members: n,
-                activity: r
-            } = e, a = r.application_id;
-            return (null != N && (a = N), R && null != a && T.sQ.has(a)) ? (0, i.jsxs)(s.Fragment, {
+                activity: a
+            } = e, r = a.application_id;
+            return (null != N && (r = N), R && null != r && T.sQ.has(r)) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(E.A, {
-                    presenceActivity: r,
+                    presenceActivity: a,
                     channel: l,
                     members: n,
                     onAction: h
                 }), (0, i.jsx)(p.A, {
                     className: j.L,
                     rewardOfferNoticeClassName: j.Nh,
-                    applicationId: a,
+                    applicationId: r,
                     userIds: n.map(e => e.user.id),
                     location: "voice_channel",
                     guildId: l.guild_id,
@@ -99,7 +99,7 @@ function L(e) {
                     cardSpec: v.Z.SIZE_110
                 })]
             }, `${t}-with-gifting-breadcrumb`) : (0, i.jsx)(E.A, {
-                presenceActivity: r,
+                presenceActivity: a,
                 channel: l,
                 members: n,
                 onAction: h
@@ -120,7 +120,7 @@ function L(e) {
                                 } = await Promise.all([n.e("51145"), n.e("70617")]).then(n.bind(n, 585265));
                                 return t => (0, i.jsx)(e, {
                                     ...t,
-                                    guild: a
+                                    guild: r
                                 })
                             })
                         }
@@ -136,14 +136,14 @@ function M(e) {
         channel: t,
         isChannelSelected: n,
         voiceStatesCount: s
-    } = e, l = (0, a.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), o = (0, a.bG)([f.A], () => f.A.hasVideo(t.id)), c = (0, C.Ay)({
+    } = e, l = (0, r.bG)([_.A], () => !_.A.can(S.xBc.CONNECT, t)), o = (0, r.bG)([f.A], () => f.A.hasVideo(t.id)), c = (0, C.Ay)({
         channel: t,
         locked: l,
         video: o,
         selected: n
-    }), d = (0, a.bG)([g.A], () => g.A.getGuild(t.guild_id));
+    }), d = (0, r.bG)([g.A], () => g.A.getGuild(t.guild_id));
     return null == (0, h.gU)(t, d) ? null : (0, i.jsxs)("div", {
-        className: r()(j.oT, R.oT),
+        className: a()(j.oT, R.oT),
         children: [(0, i.jsx)(I.A, {
             channel: t
         }), c ? (0, i.jsx)(N.A, {

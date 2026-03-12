@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(323073),
-    a = n(58736),
+    a = n(323073),
+    r = n(58736),
     o = n(707539),
     c = n(617011),
     d = n(985018),
@@ -16,7 +16,7 @@ var i = n(627968),
 function h(e) {
     let {
         channel: t
-    } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, r.vL)(t), p = s.useCallback(() => {
+    } = e, [n, h] = s.useState(!1), A = s.useRef(null), m = (0, a.vL)(t), p = s.useCallback(() => {
         h(!1)
     }, []), g = s.useCallback(() => {
         n || (0, o.D3)("Popout"), h(!n)
@@ -44,7 +44,7 @@ function h(e) {
             let {
                 isShown: n
             } = t;
-            return (0, i.jsx)(a.In, {
+            return (0, i.jsx)(r.In, {
                 ...e,
                 ref: A,
                 className: u.Kk,
