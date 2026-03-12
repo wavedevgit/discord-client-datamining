@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(554146),
-    a = n(397927),
-    r = n(442433),
+    r = n(397927),
+    a = n(442433),
     o = n(826673),
     c = n(508654),
     d = n(222823),
@@ -30,7 +30,7 @@ function g(e) {
         mentionCount: d.Ay.getMentionCount(t.id, A.P.GUILD_EVENT)
     }), [t.id]), x = (0, s.bG)([u.Ay], () => u.Ay.isMuteScheduledEventsEnabled(t.id));
     async function C() {
-        await (0, a.mMO)(async () => {
+        await (0, r.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("51354"), n.e("7453"), n.e("47585")]).then(n.bind(n, 926956));
@@ -46,7 +46,7 @@ function g(e) {
         }) : m.intl.string(m.t.tlopTM);
     return (0, i.jsx)(h.G, {
         id: `upcoming-events-${t.id}`,
-        renderIcon: e => (0, i.jsx)(a.CTc, {
+        renderIcon: e => (0, i.jsx)(r.CTc, {
             size: "md",
             color: "currentColor",
             className: e
@@ -55,7 +55,7 @@ function g(e) {
         selected: g,
         onClick: C,
         onContextMenu: e => {
-            (0, r.L3)(e, async () => {
+            (0, a.L3)(e, async () => {
                 let {
                     default: e
                 } = await n.e("71742").then(n.bind(n, 502029));
@@ -66,7 +66,7 @@ function g(e) {
             })
         },
         showUnread: _ && !x,
-        trailing: !x && f > 0 ? (0, i.jsx)(a.hVq, {
+        trailing: !x && f > 0 ? (0, i.jsx)(r.hVq, {
             className: p.Do,
             disableColor: !0,
             count: f

@@ -22,8 +22,8 @@ function f(e) {
         guildId: n,
         textClassName: f,
         tooltipDelay: h
-    } = e, E = (0, s.bG)([u.default], () => u.default.locale), x = (0, s.bG)([d.A], () => null != n ? d.A.getGuild(n) : null), N = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), g = (0, r.An)(m.default.extractTimestamp(t), E), T = (0, r.An)(N?.joinedAt, E);
-    return null == x || null == N ? (0, l.jsx)(i.Text, {
+    } = e, x = (0, s.bG)([u.default], () => u.default.locale), E = (0, s.bG)([d.A], () => null != n ? d.A.getGuild(n) : null), N = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), g = (0, r.An)(m.default.extractTimestamp(t), x), v = (0, r.An)(N?.joinedAt, x);
+    return null == E || null == N ? (0, l.jsx)(i.Text, {
         variant: "text-sm/normal",
         className: f,
         children: g
@@ -51,17 +51,17 @@ function f(e) {
         }), (0, l.jsxs)("div", {
             className: p.R1,
             children: [(0, l.jsx)(a.m, {
-                text: x.name,
+                text: E.name,
                 delay: h,
                 children: (0, l.jsx)(o.Ay, {
-                    guild: x,
+                    guild: E,
                     size: o.Ay.Sizes.SMOL,
                     className: p.$f
                 })
             }), (0, l.jsx)(i.Text, {
                 variant: "text-sm/normal",
                 className: f,
-                children: T
+                children: v
             })]
         })]
     })

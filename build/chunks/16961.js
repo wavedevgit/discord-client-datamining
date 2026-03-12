@@ -1,13 +1,13 @@
 /** chunk id: 16961 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    G: () => a
+    G: () => r
 });
 var i = n(723702),
     s = n(837921),
     l = n(652215);
 
-function a() {
+function r() {
     let e = i.isPlatformEmbedded && s.Ay.supportsFeature(l.BYE.POPOUT_WINDOWS);
     return !i.isPlatformEmbedded || e
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(735438),
+    r = n.n(l),
+    a = n(735438),
     o = n(490249),
     c = n(311907),
     d = n(397927),
@@ -40,7 +40,7 @@ function j(e) {
     } = (0, c.cf)([E.A], () => ({
         isBlocked: E.A.isBlockedForMessage(t),
         isIgnored: E.A.isIgnoredForMessage(t)
-    }), [t]), r = (0, g.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
+    }), [t]), a = (0, g.X4)(t), o = s.useContext(m.A), [u, C] = s.useState(!1), N = s.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(t.channel_id, !0), A.A.jumpToMessage({
             channelId: t.channel_id,
             messageId: t.id,
@@ -73,7 +73,7 @@ function j(e) {
         },
         onClick: N,
         children: [(0, i.jsxs)("div", {
-            className: a()(v.kn, {
+            className: r()(v.kn, {
                 [v.mK]: t.mentioned
             }),
             children: [null != L ? null : R, y ?? L ?? (0, i.jsx)("span", {
@@ -81,10 +81,10 @@ function j(e) {
             }), null != L ? null : j]
         }), (0, i.jsx)("img", {
             alt: "",
-            src: r?.guildMemberAvatar != null && null != o ? (0, I.s7)({
+            src: a?.guildMemberAvatar != null && null != o ? (0, I.s7)({
                 guildId: o,
                 userId: t.author.id,
-                avatar: r.guildMemberAvatar
+                avatar: a.guildMemberAvatar
             }) : t.author.getAvatarURL(o, 32),
             className: v.my
         })]
@@ -104,8 +104,8 @@ function R(e) {
             isFrozen: n,
             count: i,
             lingerMs: l
-        } = e, [a, r] = s.useState([]), [o, d] = s.useState(!1), h = s.useRef(null), A = s.useRef(void 0), m = s.useCallback(() => {
-            r([]), d(!0)
+        } = e, [r, a] = s.useState([]), [o, d] = s.useState(!1), h = s.useRef(null), A = s.useRef(void 0), m = s.useCallback(() => {
+            a([]), d(!0)
         }, []);
         s.useEffect(() => {
             function e(e) {
@@ -114,7 +114,7 @@ function R(e) {
                     message: i,
                     optimistic: s
                 } = e;
-                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), r(e => [...e, i.id]))
+                n !== t || i.type === S.lAJ.STAGE_START || i.type === S.lAJ.STAGE_END || i.type === S.lAJ.STAGE_TOPIC || i.type === S.lAJ.STAGE_SPEAKER || i.type === S.lAJ.STAGE_RAISE_HAND || s || (clearTimeout(A.current), A.current = setTimeout(m, l), a(e => [...e, i.id]))
             }
             return u.h.subscribe("MESSAGE_CREATE", e), () => {
                 u.h.unsubscribe("MESSAGE_CREATE", e)
@@ -122,12 +122,12 @@ function R(e) {
         }, [t, m, i, l]), s.useEffect(() => () => {
             clearTimeout(A.current)
         }, []), s.useEffect(() => {
-            a.length > 3 && r(e => {
+            r.length > 3 && a(e => {
                 let t = e.length - 3;
                 return [...e.slice(t)]
             })
-        }, [a]), n && null == h.current ? h.current = a : n || null == h.current || (h.current = null);
-        let p = h.current ?? a;
+        }, [r]), n && null == h.current ? h.current = r : n || null == h.current || (h.current = null);
+        let p = h.current ?? r;
         return {
             toastsHidden: o,
             toastMessages: (0, c.yK)([C.A], () => p.map(e => C.A.getMessage(t, e)), [t, p]).filter(b.Vq)
@@ -148,7 +148,7 @@ function R(e) {
         for (let n of m) {
             let i = p.current[n.id] ?? 0;
             e[n.id] = t, t += i + 8
-        }(0, r.isEqual)(e, x.current) || _(e)
+        }(0, a.isEqual)(e, x.current) || _(e)
     }, [m]);
     let E = m.map(e => ({
             message: e,
@@ -192,7 +192,7 @@ function R(e) {
     return (0, i.jsx)(d.NPJ, {
         theme: S.NJ8.DARK,
         children: e => (0, i.jsx)("div", {
-            className: a()(n, e),
+            className: r()(n, e),
             onMouseEnter: () => {
                 h(!0)
             },

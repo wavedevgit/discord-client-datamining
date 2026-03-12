@@ -1,22 +1,22 @@
 /** chunk id: 884569 params = (module,exports,require) **/
-i.d(e, {
+t.d(e, {
     B: () => c
 });
-var t = i(627968);
-i(64700);
-var r = i(311907),
-    l = i(397927),
-    a = i(367130),
-    d = i(486227),
-    s = i(287809),
-    u = i(985018);
+var i = t(627968);
+t(64700);
+var r = t(311907),
+    l = t(397927),
+    d = t(367130),
+    a = t(486227),
+    s = t(287809),
+    u = t(985018);
 
 function c(n) {
     let e = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
-        i = (0, d.E)(n.id);
-    return e?.isStaff() === !0 && n.isDM() && null == i ? (0, t.jsx)(l.Drp, {
+        t = (0, a.E)(n.id);
+    return e?.isStaff() === !0 && n.isDM() && null == t ? (0, i.jsx)(l.Drp, {
         id: "mark-as-likely-ato",
         label: u.intl.string(u.t.AWKKgc),
-        action: () => (0, a.a)(n.id)
+        action: () => (0, d.a)(n.id)
     }) : null
 }

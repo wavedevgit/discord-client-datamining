@@ -1,58 +1,58 @@
 /** chunk id: 385913 params = (module,exports,require) **/
-i.d(e, {
+t.d(e, {
     default: () => q
 });
-var t = i(627968);
-i(64700);
-var r = i(397927),
-    l = i(442433),
-    a = i(847767),
-    d = i(358367),
-    s = i(155718),
-    u = i(468389),
-    c = i(793574),
-    o = i(810845),
-    A = i(854182),
-    h = i(734337),
-    f = i(465424),
-    g = i(855187),
-    j = i(479335),
-    x = i(343328),
-    _ = i(848977),
-    m = i(995102),
-    p = i(50268),
-    b = i(515610),
-    I = i(133238),
-    v = i(795144),
-    C = i(671470),
-    E = i(222311),
-    y = i(803664),
-    T = i(29293),
-    D = i(509302),
-    V = i(497600),
-    G = i(773699),
-    N = i(239211),
-    U = i(707378),
-    R = i(486524),
-    O = i(631637),
-    X = i(984894),
-    S = i(399476),
-    M = i(889460),
-    P = i(460597),
-    F = i(313998),
-    Y = i(198229),
-    k = i(243949),
-    L = i(972432),
-    W = i(77544),
-    w = i(652215),
-    J = i(985018);
+var i = t(627968);
+t(64700);
+var r = t(397927),
+    l = t(442433),
+    d = t(847767),
+    a = t(358367),
+    s = t(155718),
+    u = t(468389),
+    c = t(793574),
+    o = t(810845),
+    A = t(854182),
+    h = t(734337),
+    f = t(465424),
+    g = t(855187),
+    j = t(479335),
+    x = t(343328),
+    _ = t(848977),
+    m = t(995102),
+    b = t(50268),
+    p = t(515610),
+    I = t(133238),
+    v = t(795144),
+    C = t(671470),
+    E = t(222311),
+    y = t(803664),
+    T = t(29293),
+    V = t(509302),
+    D = t(497600),
+    G = t(773699),
+    N = t(239211),
+    U = t(707378),
+    R = t(486524),
+    O = t(631637),
+    X = t(984894),
+    S = t(399476),
+    M = t(889460),
+    P = t(460597),
+    F = t(313998),
+    Y = t(198229),
+    k = t(243949),
+    L = t(972432),
+    W = t(77544),
+    w = t(652215),
+    J = t(985018);
 
 function B(n) {
     let {
         user: e,
-        channel: i,
-        showMute: a = !0,
-        targetIsUser: d = !1,
+        channel: t,
+        showMute: d = !0,
+        targetIsUser: a = !1,
         context: s,
         onSelect: u,
         onInteraction: c
@@ -62,40 +62,40 @@ function B(n) {
     }), A = (0, U.A)({
         user: e,
         context: s
-    }), h = (0, W.A)(e.id), f = (0, F.g)(i.id, "DMUserContextMenu"), g = (0, F.A)(e, f), j = (0, m.Ay)(i), b = (0, p.A)({
+    }), h = (0, W.A)(e.id), f = (0, F.g)(t.id, "DMUserContextMenu"), g = (0, F.A)(e, f), j = (0, m.Ay)(t), p = (0, b.A)({
         id: e.id,
         label: J.intl.string(J.t["/AXYnE"])
-    }), E = (0, p.A)({
-        id: i.id,
+    }), E = (0, b.A)({
+        id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), y = (0, _.A)(i), T = (0, I.y)(i), D = (0, v.A)(i), V = (0, C.A)(i), G = (0, O.A)({
-        channel: i
-    }), N = i.isManaged(), R = e.isNonUserBot();
-    return (0, t.jsxs)(r.W1t, {
+    }), y = (0, _.A)(t), T = (0, I.y)(t), V = (0, v.A)(t), D = (0, C.A)(t), G = (0, O.A)({
+        channel: t
+    }), N = t.isManaged(), R = e.isNonUserBot();
+    return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: l.Z_,
         "aria-label": J.intl.string(J.t.liqwPJ),
         onSelect: u,
         onInteraction: c,
-        children: [(0, t.jsx)(r.rXV, {
-            children: !(R && !(0, x.A)(i.id)) && y
-        }), (0, t.jsx)(r.rXV, {
-            children: V
-        }), (0, t.jsx)(r.rXV, {
+        children: [(0, i.jsx)(r.rXV, {
+            children: !(R && !(0, x.A)(t.id)) && y
+        }), (0, i.jsx)(r.rXV, {
             children: D
-        }), (0, t.jsxs)(r.rXV, {
-            children: [!R && (0, t.jsxs)(t.Fragment, {
+        }), (0, i.jsx)(r.rXV, {
+            children: V
+        }), (0, i.jsxs)(r.rXV, {
+            children: [!R && (0, i.jsxs)(i.Fragment, {
                 children: [A, !N && g, h]
-            }), (0, x.A)(i.id) && o]
-        }), (!R || (0, x.A)(i.id)) && (0, t.jsx)(r.rXV, {
-            children: a && j
-        }), (0, t.jsx)(r.rXV, {
+            }), (0, x.A)(t.id) && o]
+        }), (!R || (0, x.A)(t.id)) && (0, i.jsx)(r.rXV, {
+            children: d && j
+        }), (0, i.jsx)(r.rXV, {
             children: T
-        }), (0, t.jsx)(r.rXV, {
+        }), (0, i.jsx)(r.rXV, {
             children: G
-        }), (0, t.jsxs)(r.rXV, {
-            children: [b, !d && E]
+        }), (0, i.jsxs)(r.rXV, {
+            children: [p, !a && E]
         })]
     })
 }
@@ -103,11 +103,11 @@ function B(n) {
 function K(n) {
     let {
         user: e,
-        channel: i,
-        channelSelected: a = !1,
-        showMute: d = !0,
+        channel: t,
+        channelSelected: d = !1,
+        showMute: a = !0,
         showMediaItems: c = !1,
-        showChannelCallItems: b = !1,
+        showChannelCallItems: p = !1,
         showModalItems: w = !0,
         targetIsUser: B = !1,
         context: K,
@@ -122,91 +122,91 @@ function K(n) {
         context: K
     }), Q = (0, f.D)({
         userId: e.id
-    }), nn = (0, V.A)({
+    }), nn = (0, D.A)({
         user: e,
-        channelId: i.id,
+        channelId: t.id,
         context: K
     }), ne = (0, T.A)({
         user: e
-    }), ni = (0, W.A)(e.id), nt = (0, R.A)(i.id, a), nr = (0, M.A)({
+    }), nt = (0, W.A)(e.id), ni = (0, R.A)(t.id, d), nr = (0, M.A)({
         user: e
-    }), nl = (0, u.A)(null, e), na = (0, L.A)(e.id), nd = (0, F.g)(i.id, "DMUserContextMenu"), ns = (0, F.A)(e, nd), nu = (0, y.A)({
+    }), nl = (0, u.A)(null, e), nd = (0, L.A)(e.id), na = (0, F.g)(t.id, "DMUserContextMenu"), ns = (0, F.A)(e, na), nu = (0, y.A)({
         user: e
-    }), nc = (0, D.A)({
+    }), nc = (0, V.A)({
         user: e
     }), no = (0, P.A)({
         user: e
     }), nA = (0, Y.A)(e.id), nh = (0, j.u)({
         userId: e.id,
-        channelId: i.id,
-        guildId: i.getGuildId()
-    }), nf = (0, X.A)(e.id, i.id), ng = (0, N.A)({
+        channelId: t.id,
+        guildId: t.getGuildId()
+    }), nf = (0, X.A)(e.id, t.id), ng = (0, N.A)({
         user: e,
         location: "DMUserContextMenu"
     }), nj = (0, S.A)({
         user: e,
         location: "DMUserContextMenu"
-    }), nx = (0, m.Ay)(i), n_ = (0, p.A)({
+    }), nx = (0, m.Ay)(t), n_ = (0, b.A)({
         id: e.id,
         label: J.intl.string(J.t["/AXYnE"])
-    }), nm = (0, p.A)({
-        id: i.id,
+    }), nm = (0, b.A)({
+        id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), np = (0, _.A)(i), nb = (0, h.A)(e.id), nI = (0, A.A)(i.id), nv = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(i.id, e.id), ny = (0, G.A)({
+    }), nb = (0, _.A)(t), np = (0, h.A)(e.id), nI = (0, A.A)(t.id), nv = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), ny = (0, G.A)({
         commandType: s.kc.USER,
         commandTargetId: e.id,
-        channel: i,
+        channel: t,
         guildId: void 0,
         onHeightUpdate: H
-    }), nT = (0, I.m)(i), nD = (0, I.y)(i), nV = (0, v.A)(i), nG = (0, C.A)(i), nN = (0, O.A)({
-        channel: i
-    }), nU = i.isManaged(), nR = e.isNonUserBot();
-    return (0, t.jsxs)(r.W1t, {
+    }), nT = (0, I.m)(t), nV = (0, I.y)(t), nD = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
+        channel: t
+    }), nU = t.isManaged(), nR = e.isNonUserBot();
+    return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: l.Z_,
         "aria-label": J.intl.string(J.t.liqwPJ),
         onSelect: q,
         onInteraction: Z,
-        children: [(0, t.jsx)(r.rXV, {
-            children: !(nR && !(0, x.A)(i.id)) && np
-        }), (0, t.jsxs)(r.rXV, {
+        children: [(0, i.jsx)(r.rXV, {
+            children: !(nR && !(0, x.A)(t.id)) && nb
+        }), (0, i.jsxs)(r.rXV, {
             children: [nT, nG]
-        }), (0, t.jsx)(r.rXV, {
-            children: nV
-        }), (0, t.jsx)(r.rXV, {
-            children: !nR && nv
-        }), (0, t.jsxs)(r.rXV, {
-            children: [!nR && (0, t.jsxs)(t.Fragment, {
-                children: [w && z, Q, $, !nU && ns, w && nn, w && ne, ni]
-            }), (0, x.A)(i.id) && z, nt]
-        }), !nR && (0, t.jsxs)(t.Fragment, {
-            children: [(0, t.jsx)(r.rXV, {
-                children: c && na
-            }), (0, t.jsx)(r.rXV, {
-                children: w && nl
-            }), (0, t.jsxs)(r.rXV, {
-                children: [ny, c && nC, c && nA, w && nh, c && nf, w && nr, nu, nc, no, w && nj, w && ng]
-            }), (0, t.jsx)(r.rXV, {
-                children: d && nx
-            }), b && (0, t.jsxs)(r.rXV, {
-                children: [nE, nI, nb]
-            })]
-        }), (0, x.A)(i.id) && (0, t.jsx)(r.rXV, {
-            children: d && nx
-        }), (0, t.jsx)(r.rXV, {
+        }), (0, i.jsx)(r.rXV, {
             children: nD
-        }), (0, t.jsx)(r.rXV, {
+        }), (0, i.jsx)(r.rXV, {
+            children: !nR && nv
+        }), (0, i.jsxs)(r.rXV, {
+            children: [!nR && (0, i.jsxs)(i.Fragment, {
+                children: [w && z, Q, $, !nU && ns, w && nn, w && ne, nt]
+            }), (0, x.A)(t.id) && z, ni]
+        }), !nR && (0, i.jsxs)(i.Fragment, {
+            children: [(0, i.jsx)(r.rXV, {
+                children: c && nd
+            }), (0, i.jsx)(r.rXV, {
+                children: w && nl
+            }), (0, i.jsxs)(r.rXV, {
+                children: [ny, c && nC, c && nA, w && nh, c && nf, w && nr, nu, nc, no, w && nj, w && ng]
+            }), (0, i.jsx)(r.rXV, {
+                children: a && nx
+            }), p && (0, i.jsxs)(r.rXV, {
+                children: [nE, nI, np]
+            })]
+        }), (0, x.A)(t.id) && (0, i.jsx)(r.rXV, {
+            children: a && nx
+        }), (0, i.jsx)(r.rXV, {
+            children: nV
+        }), (0, i.jsx)(r.rXV, {
             children: nN
-        }), (0, t.jsxs)(r.rXV, {
+        }), (0, i.jsxs)(r.rXV, {
             children: [n_, !B && nm]
         })]
     })
 }
-let q = (0, d.A)((0, a.A)(function(n) {
-    return (0, b.A)() ? (0, t.jsx)(B, {
+let q = (0, a.A)((0, d.A)(function(n) {
+    return (0, p.A)() ? (0, i.jsx)(B, {
         ...n
-    }) : (0, t.jsx)(K, {
+    }) : (0, i.jsx)(K, {
         ...n
     })
 }, {

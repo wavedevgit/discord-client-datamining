@@ -25,8 +25,8 @@ var t = n(627968),
     G = n(595818),
     D = n(685073),
     M = n(534400),
-    O = n(647534),
-    j = n(857071),
+    j = n(647534),
+    O = n(857071),
     m = n(36942),
     L = n(149280),
     U = n(260509),
@@ -53,8 +53,8 @@ let F = l.memo(function(e) {
     let k = (0, d.bG)([C.Ay], () => C.Ay.isGuildCollapsed(i.id), [i.id]),
         {
             canAccessSettings: B,
-            canManageChannels: V,
-            showGuildAnalytics: W
+            canManageChannels: W,
+            showGuildAnalytics: V
         } = (0, d.cf)([N.A], () => ({
             canAccessSettings: N.A.canAccessGuildSettings(i),
             canManageChannels: N.A.can(S.xBc.MANAGE_CHANNELS, i),
@@ -62,7 +62,7 @@ let F = l.memo(function(e) {
         }), [i]),
         J = (0, h.ic)(i),
         Y = (0, U.bM)(i, X),
-        K = (0, d.bG)([j.A], () => j.A.isLurking(i.id), [i.id]),
+        K = (0, d.bG)([O.A], () => O.A.isLurking(i.id), [i.id]),
         Z = (0, d.bG)([_.Ay], () => _.Ay.isCurrentUserGuest(i.id)),
         Q = (0, v.A)(i.id, !0),
         $ = (0, o.Ay)(i),
@@ -222,7 +222,7 @@ let F = l.memo(function(e) {
                     guildTag: i.profile.tag,
                     inline: !1
                 }),
-                action: () => (0, O.A)(i.id)
+                action: () => (0, j.A)(i.id)
             })]
         }), (0, t.jsxs)(s.rXV, {
             children: [q, B ? (0, t.jsx)(s.Drp, {
@@ -236,7 +236,7 @@ let F = l.memo(function(e) {
                 action: () => {
                     x.A.open(i.id, (0, G.x)())
                 }
-            }) : null, W ? (0, t.jsx)(s.Drp, {
+            }) : null, V ? (0, t.jsx)(s.Drp, {
                 id: "insights",
                 label: H.intl.string(H.t["0wWfUG"]),
                 icon: s.Uy2,
@@ -245,7 +245,7 @@ let F = l.memo(function(e) {
                     icon: s.Uy2
                 },
                 action: () => x.A.open(i.id, S.BEX.ANALYTICS)
-            }) : null, V ? (0, t.jsxs)(t.Fragment, {
+            }) : null, W ? (0, t.jsxs)(t.Fragment, {
                 children: [(0, t.jsx)(s.Drp, {
                     id: "create-channel",
                     label: H.intl.string(H.t["fUYU+j"]),

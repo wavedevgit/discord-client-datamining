@@ -19,13 +19,13 @@ var l = n(627968),
     p = n(535185),
     f = n(148839),
     h = n(607399),
-    E = n(311907),
-    x = n(3026),
+    x = n(311907),
+    E = n(3026),
     N = n(435371),
     g = n(397927),
-    T = n(308528),
-    v = n(442433),
-    S = n(960076),
+    v = n(308528),
+    S = n(442433),
+    T = n(960076),
     C = n(397244),
     _ = n(714114),
     j = n(729551),
@@ -159,8 +159,8 @@ let ei = en.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
             className: A,
             role: p,
             "aria-posinset": f,
-            "aria-setsize": E,
-            listItemRef: x,
+            "aria-setsize": x,
+            listItemRef: E,
             ...N
         } = e;
         return (0, l.jsx)(D.A, {
@@ -174,8 +174,8 @@ let ei = en.Ay.getEnableHardwareAcceleration() ? g.JsQ : g.euF,
                 ...er
             },
             "aria-posinset": f,
-            "aria-setsize": E,
-            ref: x,
+            "aria-setsize": x,
+            ref: E,
             children: (0, l.jsx)(g.HG8, {
                 as: "div",
                 selected: n,
@@ -220,9 +220,9 @@ function eA(e) {
         ref: ee,
         "aria-posinset": et,
         "aria-setsize": en
-    } = e, [em, eA] = s.useState(!1), [ep, ef] = s.useState(!1), [eh, eE] = s.useState(!1), ex = s.useRef(null), [eN, eg] = s.useState(!1), eT = (0, m.K)(s.useCallback(e => {
+    } = e, [em, eA] = s.useState(!1), [ep, ef] = s.useState(!1), [eh, ex] = s.useState(!1), eE = s.useRef(null), [eN, eg] = s.useState(!1), ev = (0, m.K)(s.useCallback(e => {
         eg(e)
-    }, [])), ev = s.useRef(null), eS = ee ?? ev, eC = (0, A.A)(eS, eT), {
+    }, [])), eS = s.useRef(null), eT = ee ?? eS, eC = (0, A.A)(eT, ev), {
         showMenuItemPopover: e_,
         markMenuItemPopoverAsDismissed: ej
     } = (0, k.z)({
@@ -240,13 +240,13 @@ function eA(e) {
         animateOnHover: !(a || em || ep || eh)
     }), [eb, eR] = s.useState({
         maskImage: "none"
-    }), eL = s.useRef(null), eU = t.isMultiUserDM(), ew = t.isSystemDM(), eD = !eU && !ew && t.type === el.rbe.DM, eO = eD && r?.primaryGuild != null, eG = (0, E.bG)([X.Ay], () => X.Ay.isChannelMuted(t.getGuildId(), t.id)), {
+    }), eL = s.useRef(null), eU = t.isMultiUserDM(), ew = t.isSystemDM(), eD = !eU && !ew && t.type === el.rbe.DM, eO = eD && r?.primaryGuild != null, eG = (0, x.bG)([X.Ay], () => X.Ay.isChannelMuted(t.getGuildId(), t.id)), {
         ignored: eQ,
         blocked: ek
-    } = (0, E.cf)([J.A], () => ({
+    } = (0, x.cf)([J.A], () => ({
         ignored: J.A.isIgnored(t.getRecipientId()),
         blocked: J.A.isBlocked(t.getRecipientId())
-    })), eP = eD && eQ, eF = eD && ek, eV = (eG || eP || eF) && !(a || em), eq = (0, E.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (a || em || eh), eW = () => {
+    })), eP = eD && eQ, eF = eD && ek, eV = (eG || eP || eF) && !(a || em), eq = (0, x.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (a || em || eh), eW = () => {
         eA(!0)
     }, eK = () => {
         eA(!1)
@@ -256,16 +256,16 @@ function eA(e) {
         ef(!1)
     }, eJ = function(e) {
         let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-        null != e && (e.preventDefault(), e.stopPropagation()), T.A.closePrivateChannel(t.id, a, n)
+        null != e && (e.preventDefault(), e.stopPropagation()), v.A.closePrivateChannel(t.id, a, n)
     }, eZ = () => {
-        T.A.preload(el.ME, t.id)
+        v.A.preload(el.ME, t.id)
     }, eX = e => {
         e.stopPropagation()
     }, e0 = e => {
-        e.target === e.currentTarget && ex.current?.click()
+        e.target === e.currentTarget && eE.current?.click()
     }, e1 = e => {
         let s = "contextmenu" === e.type ? c.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : c.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-        eE(!0), t.isMultiUserDM() ? (0, v.L3)(e, async () => {
+        ex(!0), t.isMultiUserDM() ? (0, S.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("60200"), n.e("2456")]).then(n.bind(n, 4027));
@@ -277,8 +277,8 @@ function eA(e) {
         }, {
             impressionName: s,
             noBlurEvent: !0,
-            onClose: () => eE(!1)
-        }) : (0, v.L3)(e, async () => {
+            onClose: () => ex(!1)
+        }) : (0, S.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("49182")]).then(n.bind(n, 385913));
@@ -290,7 +290,7 @@ function eA(e) {
             })
         }, {
             impressionName: s,
-            onClose: () => eE(!1)
+            onClose: () => ex(!1)
         })
     }, e2 = e => {
         e.preventDefault(), e.stopPropagation();
@@ -340,7 +340,7 @@ function eA(e) {
         channel: t,
         muted: eG,
         userStatus: B
-    })].filter(Boolean).join(", "), e8 = (0, E.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+    })].filter(Boolean).join(", "), e8 = (0, x.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
         waveShouldShow: e5,
         wavePressed: te
     } = (0, w.A)(t, e8), {
@@ -358,7 +358,7 @@ function eA(e) {
             maskImage: `linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) ${n}px, rgba(0, 0, 0, 0))`
         })
     });
-    return s.useLayoutEffect(tn, [em, tn]), (0, p.g)(eS, tn), (0, l.jsx)(d.tG, {
+    return s.useLayoutEffect(tn, [em, tn]), (0, p.g)(eT, tn), (0, l.jsx)(d.tG, {
         id: t.id,
         children: e => {
             let {
@@ -370,8 +370,8 @@ function eA(e) {
                 role: n,
                 focusProps: {
                     ...er,
-                    focusTarget: ex,
-                    ringTarget: eS
+                    focusTarget: eE,
+                    ringTarget: eT
                 },
                 ref: eC,
                 onMouseEnter: eW,
@@ -406,7 +406,7 @@ function eA(e) {
                         children: e7
                     }), (0, l.jsx)(u.N_, {
                         style: eb,
-                        innerRef: ex,
+                        innerRef: eE,
                         to: el.BVt.CHANNEL(el.ME, t.id),
                         className: ea.nf,
                         "aria-label": e4,
@@ -433,7 +433,7 @@ function eA(e) {
                                     });
                                 o()(null != r, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                                 let n = null;
-                                return r.isSystemUser() || (n = (0, S.A)(h) ? el.clD.STREAMING : B), (0, l.jsx)(ei, {
+                                return r.isSystemUser() || (n = (0, T.A)(h) ? el.clD.STREAMING : B), (0, l.jsx)(ei, {
                                     ...eM,
                                     size: g._3J.SIZE_32,
                                     src: ey,
@@ -470,7 +470,7 @@ function eA(e) {
                                 textClassName: ea.XD,
                                 iconClassName: eV ? ea.tG : void 0
                             }) : null,
-                            name: (0, l.jsx)(x.A, {
+                            name: (0, l.jsx)(E.A, {
                                 className: i()(ea.uN, {
                                     [ea.e8]: e3
                                 }),
@@ -502,7 +502,7 @@ function eA(e) {
                         }) : null]
                     })]
                 }), e_ && (0, l.jsx)(P.A, {
-                    targetElementRef: eS,
+                    targetElementRef: eT,
                     markMenuItemPopoverAsDismissed: ej
                 })]
             })
@@ -514,7 +514,7 @@ let ep = 21552 == n.j ? e => {
         channel: t,
         selected: n,
         ...s
-    } = e, a = (0, E.bG)([ee.default], () => ee.default.getUser(t.getRecipientId())), i = a?.id, r = (0, E.cf)([Y.A, K.A], () => {
+    } = e, a = (0, x.bG)([ee.default], () => ee.default.getUser(t.getRecipientId())), i = a?.id, r = (0, x.cf)([Y.A, K.A], () => {
         let e;
         if (t.isMultiUserDM()) {
             let n = Y.A.getState().statuses;
@@ -533,7 +533,7 @@ let ep = 21552 == n.j ? e => {
         userId: i
     }), u = (0, q.r)({
         user: a
-    }), c = (0, E.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != a && Z.A.isTyping(t.id, t.getRecipientId()), [t, a]);
+    }), c = (0, x.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != a && Z.A.isTyping(t.id, t.getRecipientId()), [t, a]);
     return t.isMultiUserDM() ? (0, l.jsx)(eA, {
         channel: t,
         selected: n,

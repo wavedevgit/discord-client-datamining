@@ -410,7 +410,7 @@ function eh(e) {
         guildId: t,
         hideSelectedChannel: n,
         selectedChannelId: l
-    } = e, d = (0, T.$)("GuildSidebar", "favorite-guild-header-context"), c = (0, s.bG)([W.A], () => W.A.getGuild(t)), A = (0, C.A)(t), h = (0, s.bG)([H.A], () => H.A.getGuildDimensions(t).scrollTo), y = (0, s.bG)([$.A], () => $.A.getChannelId()), L = (0, s.bG)([K.A], () => K.A.can(er.xBc.MANAGE_GUILD, c)), G = (0, s.bG)([F.A], () => F.A.isUnavailable(t)), k = (0, s.bG)([Q.default], () => Q.default.getCurrentUser()), {
+    } = e, d = (0, T.$)("favorite-guild-header-context"), c = (0, s.bG)([W.A], () => W.A.getGuild(t)), A = (0, C.A)(t), h = (0, s.bG)([H.A], () => H.A.getGuildDimensions(t).scrollTo), y = (0, s.bG)([$.A], () => $.A.getChannelId()), L = (0, s.bG)([K.A], () => K.A.can(er.xBc.MANAGE_GUILD, c)), G = (0, s.bG)([F.A], () => F.A.isUnavailable(t)), k = (0, s.bG)([Q.default], () => Q.default.getCurrentUser()), {
         enableStudyGroup: Y
     } = (0, O.y)(c), Z = (0, E.Ay)(e => e.currentlyShown.has(o.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION)), [J, ee] = r.useState(!Z), et = (0, _.A)(t), {
         analyticsLocations: en

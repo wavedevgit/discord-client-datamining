@@ -5,25 +5,18 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(442433),
-    a = n(93055);
+    l = n(442433);
 
-function r(e, t) {
-    let {
-        hasAccess: r
-    } = (0, a.TW)(e);
-    return s.useCallback(e => {
-        if (!r) {
-            e.preventDefault(), e.stopPropagation();
-            return
-        }(0, l.L3)(e, async () => {
+function r(e) {
+    return s.useCallback(t => {
+        (0, l.L3)(t, async () => {
             let {
-                default: e
+                default: t
             } = await n.e("38167").then(n.bind(n, 342186));
-            return n => (0, i.jsx)(e, {
+            return n => (0, i.jsx)(t, {
                 ...n,
-                navId: t
+                navId: e
             })
         })
-    }, [r, t])
+    }, [e])
 }

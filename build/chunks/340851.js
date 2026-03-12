@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(990078),
     c = n(397927),
     d = n(367513),
@@ -68,7 +68,7 @@ function F(e) {
         count: t
     });
     return (0, i.jsxs)("div", {
-        className: a()(B.yJ, {
+        className: r()(B.yJ, {
             [B.Nr]: n
         }),
         children: [(0, i.jsx)("div", {
@@ -108,8 +108,8 @@ let K = (0, m.J)(function(e) {
         isWatching: ei,
         isGuest: es,
         priority: el,
-        showPreview: ea,
-        hidePreview: er,
+        showPreview: er,
+        hidePreview: ea,
         shouldShowHoverPopout: eo,
         previewIsOpen: ec,
         otherClientSessionType: ed,
@@ -127,13 +127,13 @@ let K = (0, m.J)(function(e) {
     } = (0, U.fC)({
         guildId: m.guild_id,
         location: "VoiceUser"
-    }), eE = s.useRef(null), [eI, eN] = s.useState(!1), eb = s.useRef(null), [eS, eT] = s.useState(!1), [ev, ey] = s.useState(!1), [ej, eR] = s.useState(!1), [eO, eL] = s.useState(!1), eM = ev || eO || ej, eD = eS || eM, eG = ef?.session_id != null, eU = (0, r.bG)([R.A], () => R.A.hasVoiceDareForUserId(l.id), [l.id]), eP = (0, j.Uk)("VoiceUser") && eU, ew = () => {
+    }), eE = s.useRef(null), [eI, eN] = s.useState(!1), eb = s.useRef(null), [eS, eT] = s.useState(!1), [ev, ey] = s.useState(!1), [ej, eR] = s.useState(!1), [eO, eL] = s.useState(!1), eM = ev || eO || ej, eD = eS || eM, eG = ef?.session_id != null, eU = (0, a.bG)([R.A], () => R.A.hasVoiceDareForUserId(l.id), [l.id]), eP = (0, j.Uk)("VoiceUser") && eU, ew = () => {
         eN(!eI)
     }, ek = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
         null != t && n.has(t) && (ej && eR(!1), ev && ey(!1)), eV()
     }, eV = () => {
-        er?.(l.id)
+        ea?.(l.id)
     }, eB = e => {
         eC || (e ? eb.current = setTimeout(() => {
             eT(!0)
@@ -151,7 +151,7 @@ let K = (0, m.J)(function(e) {
                 channelId: m.id,
                 guildId: m.guild_id
             };
-            O.default.getId() !== l.id && h.default.selectVoiceChannel(m.id), ei ? ((0, I.A)(e), d.A.selectParticipant(e.channelId, (0, C._z)(e))) : (0, A.Nl)(e), er?.(l.id)
+            O.default.getId() !== l.id && h.default.selectVoiceChannel(m.id), ei ? ((0, I.A)(e), d.A.selectParticipant(e.channelId, (0, C._z)(e))) : (0, A.Nl)(e), ea?.(l.id)
         },
         eK = e => {
             (0, u.L3)(e, async () => {
@@ -197,7 +197,7 @@ let K = (0, m.J)(function(e) {
             className: B.kZ,
             "data-dnd-name": m.name,
             onMouseEnter: eh ? void 0 : () => {
-                !eI && (en || ex || eG || eP || eC) && ea?.(l.id)
+                !eI && (en || ex || eG || eP || eC) && er?.(l.id)
             },
             onMouseLeave: eh ? void 0 : eV,
             children: (0, i.jsx)(v.A, {
@@ -233,7 +233,7 @@ let K = (0, m.J)(function(e) {
                             otherClientSessionType: ed,
                             voicePlatform: eu,
                             embeddedApplication: z,
-                            avatarContainerClass: a()({
+                            avatarContainerClass: r()({
                                 [B.dj]: !0
                             }),
                             disabled: eh && !n,
@@ -255,18 +255,18 @@ let K = (0, m.J)(function(e) {
                             ...s
                         })
                     });
-                    let r = () => null;
-                    return ex && eD && !eC ? r = eW : eC ? r = () => (0, i.jsx)(P.A, {
+                    let a = () => null;
+                    return ex && eD && !eC ? a = eW : eC ? a = () => (0, i.jsx)(P.A, {
                         channel: m,
                         user: l,
                         onAction: eV,
                         onWatchStream: en ? eF : void 0,
                         hangStatusActivity: e_,
                         renderSelfHangStatus: eW
-                    }) : en ? r = ez : eG && l.id !== O.default.getId() ? r = eY : ex && (r = eW), (0, i.jsx)(c.YNO, {
+                    }) : en ? a = ez : eG && l.id !== O.default.getId() ? a = eY : ex && (a = eW), (0, i.jsx)(c.YNO, {
                         targetElementRef: eE,
                         position: "right",
-                        renderPopout: r,
+                        renderPopout: a,
                         shouldShow: (eo || ex && eM && (!eC || ep)) && !eI,
                         onRequestClose: ek,
                         align: ex && eD && !ep && !eC ? "center" : void 0,

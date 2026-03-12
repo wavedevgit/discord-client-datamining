@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     o = n(397927),
     c = n(187508),
     d = n(851109),
@@ -42,7 +42,7 @@ function _(e) {
             } = (0, h.U4)(), {
                 hasMoreMentions: t,
                 mentionsLoading: n
-            } = (0, r.cf)([c.Ay], () => ({
+            } = (0, a.cf)([c.Ay], () => ({
                 hasMoreMentions: c.Ay.hasMore,
                 mentionsLoading: c.Ay.loading
             })), i = Math.min(e, 25), s = e > i || t || n, l = (0, o.o6S)(i) + 6 * !!s;
@@ -96,7 +96,7 @@ function _(e) {
                         minHeight: 13,
                         minWidth: 13
                     },
-                    className: a()(p.xF, p.pw, {
+                    className: r()(p.xF, p.pw, {
                         [p.wH]: u
                     })
                 })),

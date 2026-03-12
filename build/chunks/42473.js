@@ -24,13 +24,13 @@ let A = s.forwardRef(function(e, t) {
             innerClassName: p,
             className: f,
             redGlow: h,
-            onMouseEnter: E,
-            onMouseLeave: x,
+            onMouseEnter: x,
+            onMouseLeave: E,
             "aria-label": N,
             "aria-checked": g,
-            role: T,
-            plated: v
-        } = e, S = "function" == typeof c ? (0, l.jsx)(c, {
+            role: v,
+            plated: S
+        } = e, T = "function" == typeof c ? (0, l.jsx)(c, {
             width: 20,
             height: 20,
             size: "custom",
@@ -50,17 +50,17 @@ let A = s.forwardRef(function(e, t) {
                 [m.Xr]: h,
                 [m.r9]: o,
                 [m.Sn]: !o,
-                [m.ZQ]: v,
-                [m.OH]: h && v
+                [m.ZQ]: S,
+                [m.OH]: h && S
             }),
             onClick: e => {
                 null != a && a(e)
             },
             onMouseDown: r,
-            onMouseEnter: E,
-            onMouseLeave: x,
+            onMouseEnter: x,
+            onMouseLeave: E,
             onContextMenu: s,
-            role: T,
+            role: v,
             "aria-checked": g,
             focusProps: {
                 offset: {
@@ -74,8 +74,8 @@ let A = s.forwardRef(function(e, t) {
                 width: 20,
                 height: 20,
                 mask: d.Ay.Masks.PANEL_BUTTON,
-                children: S
-            }) : S, n]
+                children: T
+            }) : T, n]
         })
     }),
     p = s.forwardRef(function(e, t) {
@@ -113,7 +113,7 @@ let A = s.forwardRef(function(e, t) {
                 onFocus: p,
                 onBlur: f,
                 "aria-label": h,
-                ...E
+                ...x
             } = e;
             return (0, l.jsx)(c.STz, {
                 "data-migration-pending": !0,
@@ -155,7 +155,7 @@ let A = s.forwardRef(function(e, t) {
                             m?.(), f?.()
                         },
                         "aria-label": h,
-                        ...E,
+                        ...x,
                         ref: t
                     })
                 }

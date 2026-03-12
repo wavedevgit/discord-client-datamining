@@ -84,9 +84,11 @@ function G(e) {
         onClose: l.Z_,
         "aria-label": R.intl.string(R.t.Xm41aV),
         onSelect: a,
-        children: [(0, i.jsxs)(r.rXV, {
-            children: [d, c]
-        }, "mark-as-read-or-favorite"), (0, i.jsxs)(r.rXV, {
+        children: [(0, i.jsx)(r.rXV, {
+            children: d
+        }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
+            children: c
+        }), (0, i.jsxs)(r.rXV, {
             children: [S, f, o]
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
             children: [v, F ? L : w]

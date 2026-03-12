@@ -1,6 +1,6 @@
 /** chunk id: 414808 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var l = n(627968),
     s = n(64700),
@@ -16,22 +16,22 @@ var l = n(627968),
     p = n(788868),
     f = n(525736),
     h = n(985018),
-    E = n(988572);
+    x = n(988572);
 
-function x(e) {
+function E(e) {
     let {
         targetElementRef: t,
         markMenuItemPopoverAsDismissed: n
-    } = e, [x, N] = s.useState("top"), g = s.useRef(null), T = s.useRef(null), {
-        hasAccess: v
+    } = e, [E, N] = s.useState("top"), g = s.useRef(null), v = s.useRef(null), {
+        hasAccess: S
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
-        analyticsLocations: S
+        analyticsLocations: T
     } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), C = (0, a.bG)([d.A], () => d.A.hasStoredFavorites());
     s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {
-            null == T.current && (T.current = window.requestAnimationFrame(() => {
-                T.current = null, (() => {
+            null == v.current && (v.current = window.requestAnimationFrame(() => {
+                v.current = null, (() => {
                     let e = t.current?.getBoundingClientRect();
                     if (null == e) return;
                     let n = g.current?.getBoundingClientRect().height ?? 0;
@@ -40,24 +40,24 @@ function x(e) {
             }))
         };
         return e(), window.addEventListener("resize", e), window.addEventListener("scroll", e, !0), () => {
-            null != T.current && (window.cancelAnimationFrame(T.current), T.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
+            null != v.current && (window.cancelAnimationFrame(v.current), v.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
         }
     }, [t]);
     let _ = s.useCallback(() => {
-            n?.(A.i.TAKE_ACTION), v || (0, c.A)({
+            n?.(A.i.TAKE_ACTION), S || (0, c.A)({
                 subscriptionTier: p.pe.TIER_2,
-                analyticsLocations: S
+                analyticsLocations: T
             })
-        }, [n, S, v]),
+        }, [n, T, S]),
         j = C ? f.default.TWuDTt : f.default["25YCHl"];
     return (0, l.jsx)(i.AM, {
         targetElementRef: t,
         gradientColor: "purple",
         position: "right",
         alignmentStrategy: "edge",
-        align: x,
+        align: E,
         caretConfig: {
-            align: "top" === x ? "start" : "end"
+            align: "top" === E ? "start" : "end"
         },
         popoverRef: g,
         badge: {
@@ -65,18 +65,18 @@ function x(e) {
             variant: "expressive"
         },
         graphic: {
-            src: E.A,
+            src: x.A,
             type: "image",
             aspectRatio: "16/9"
         },
-        title: h.intl.string(v ? j : f.default.A3ZjbM),
-        body: h.intl.string(v ? f.default.DFjrWw : f.default.qJUI2v),
+        title: h.intl.string(S ? j : f.default.A3ZjbM),
+        body: h.intl.string(S ? f.default.DFjrWw : f.default.qJUI2v),
         onRequestClose: () => n?.(A.i.USER_DISMISS),
         actions: [{
-            icon: v ? void 0 : r.tvc,
-            text: v ? h.intl.string(f.default["+h9aza"]) : h.intl.string(f.default["avps/2"]),
+            icon: S ? void 0 : r.tvc,
+            text: S ? h.intl.string(f.default["+h9aza"]) : h.intl.string(f.default["avps/2"]),
             onClick: () => _(),
-            variant: v ? "secondary" : "expressive"
+            variant: S ? "secondary" : "expressive"
         }]
     })
 }

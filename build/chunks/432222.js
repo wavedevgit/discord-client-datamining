@@ -1,6 +1,6 @@
 /** chunk id: 432222 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => E
 });
 var l = n(64700),
     s = n(989349),
@@ -16,10 +16,10 @@ var l = n(64700),
     p = n(661191),
     f = n(652215),
     h = n(381941),
-    E = n(985018);
+    x = n(985018);
 
-function x(e, t) {
-    let [n, s] = l.useState(!1), x = l.useCallback(async () => {
+function E(e, t) {
+    let [n, s] = l.useState(!1), E = l.useCallback(async () => {
         if (!n) {
             s(!0), (0, u.pX)(f.BVt.CHANNEL(f.ME, e.id));
             try {
@@ -27,15 +27,15 @@ function x(e, t) {
                     location: h.Hx.SEND_WAVE
                 })
             } catch (e) {
-                e.ok || 429 !== e.status || (0, r.showToast)((0, r.createToast)(E.intl.string(E.t.Whhv4w), r.ToastType.FAILURE))
+                e.ok || 429 !== e.status || (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.Whhv4w), r.ToastType.FAILURE))
             }
             m.default.track(f.HAw.WAVE_CTA_CLICKED, {
                 source: "DM Channel"
             }), s(!1)
         }
-    }, [e.id, n]), N = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot), g = N ? e.getRecipientId() : null, T = (0, i.bG)([d.A], () => null != g && d.A.isFriend(g)), v = (0, i.bG)([d.A], () => null != g && d.A.isIgnored(g)), S = p.default.extractTimestamp(e.id), C = (0, A.v0)(a()(), a()(S), 18144e5), _ = (0, c.l)(e.id);
+    }, [e.id, n]), N = e.isDM() && !e.isSystemDM() && !e.rawRecipients.some(e => e.bot), g = N ? e.getRecipientId() : null, v = (0, i.bG)([d.A], () => null != g && d.A.isFriend(g)), S = (0, i.bG)([d.A], () => null != g && d.A.isIgnored(g)), T = p.default.extractTimestamp(e.id), C = (0, A.v0)(a()(), a()(T), 18144e5), _ = (0, c.l)(e.id);
     return {
-        waveShouldShow: N && T && !v && null == t && C && null == _,
-        wavePressed: x
+        waveShouldShow: N && v && !S && null == t && C && null == _,
+        wavePressed: E
     }
 }
