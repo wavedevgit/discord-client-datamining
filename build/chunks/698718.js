@@ -41,10 +41,10 @@ var i = n(627968),
     G = n(133343),
     F = n(35277),
     H = n(595914),
-    B = n(627235),
-    V = n(151271),
-    K = n(81400),
-    z = n(870006),
+    B = n(151271),
+    V = n(81400),
+    K = n(870006),
+    z = n(837024),
     W = n(316031),
     Y = n(870136),
     q = n(834651),
@@ -644,7 +644,7 @@ class e1 extends l.PureComponent {
         let {
             activeView: t
         } = e;
-        (0, V.bf)(t, this.props.chatInputType, this.props.channel.id)
+        (0, B.bf)(t, this.props.chatInputType, this.props.channel.id)
     };
     handleOpenAppLauncher = e => {
         let {
@@ -670,7 +670,7 @@ class e1 extends l.PureComponent {
         }) : null != s && (0, W.n)(s) && null != l && !eb.A.can(eW.xBc.ADMINISTRATOR, l) ? (0, i.jsx)(q.j, {
             guild: l,
             disabledUntil: s
-        }) : a ? (0, i.jsx)(z.u, {
+        }) : a ? (0, i.jsx)(K.u, {
             guild: l
         }) : null
     };
@@ -829,10 +829,10 @@ let e2 = l.memo(function(e) {
         accessibilityLabel: r
     } = (0, eF.A)({
         channel: t
-    }), o = (0, ec.L)(eR.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, K.uZ)(n?.id), u = (0, h.bG)([eR.default], () => eR.default.getCurrentUser()), A = (0, h.bG)([eN.Ay], () => null != u && (eN.Ay.getMember(n?.id ?? eW.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([es.A], () => es.A.isEnabled()), p = (0, eo.A)(t.id), f = (0, J.A)(t.id), E = (0, eA.D)(t.id), x = (0, h.bG)([e_.A], () => e_.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([ea.Ay, eC.default], () => ea.Ay.getUserCombo(eC.default.getId(), t.id)), I = (0, _.rj)(t), T = (0, _.aW)(t), N = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
+    }), o = (0, ec.L)(eR.default.getCurrentUser(), t), [c] = (0, Y.c)(n?.id), d = (0, V.uZ)(n?.id), u = (0, h.bG)([eR.default], () => eR.default.getCurrentUser()), A = (0, h.bG)([eN.Ay], () => null != u && (eN.Ay.getMember(n?.id ?? eW.dJq, u?.id)?.isPending ?? !1)), g = (0, h.bG)([es.A], () => es.A.isEnabled()), p = (0, eo.A)(t.id), f = (0, J.A)(t.id), E = (0, eA.D)(t.id), x = (0, h.bG)([e_.A], () => e_.A.getAlsoSendToChannel(t.id)), S = (0, h.bG)([ea.Ay, eC.default], () => ea.Ay.getUserCombo(eC.default.getId(), t.id)), I = (0, _.rj)(t), T = (0, _.aW)(t), N = I.length > 0 || t.rateLimitPerUser > 0 || null != S || null != T, {
         showLinkedLobbyApplicationLoadingIndicator: y
     } = (0, eG.A)(t.linkedLobby), b = (0, H.A)("ChannelChat");
-    return (0, B.A)(t), (0, i.jsx)(e1, {
+    return (0, z.A)(t), (0, i.jsx)(e1, {
         channel: t,
         isEditing: null != (0, h.bG)([eT.A], () => eT.A.getEditingMessageId(t.id)),
         hasModalOpen: (0, m.red)(m.DXt),
