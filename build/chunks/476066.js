@@ -38,22 +38,22 @@ let b = {
             orientation: D = "landscape",
             videoUrlOverride: R,
             src: L,
-            poster: I,
-            initialTimeSec: M = 0,
-            onProgressUpdate: j,
+            poster: M,
+            initialTimeSec: j = 0,
+            onProgressUpdate: I,
             onEnded: w,
             onError: k,
             maxSeekableTimeSec: O,
             seekForwardRestricted: P = !1,
             captionTrackUrl: Q,
-            transcriptText: V,
-            renderEndScreen: U,
+            transcriptText: U,
+            renderEndScreen: V,
             onPlayerStateChange: B,
             onFullscreenChange: F,
             onVolumeChange: G,
             onLoadStart: K,
-            onLoadEnd: Y,
-            onFirstFrame: $,
+            onLoadEnd: $,
+            onFirstFrame: Y,
             onBufferingStart: H,
             onBufferingEnd: z,
             onFocusChange: W,
@@ -70,17 +70,17 @@ let b = {
             targetRef: ei
         } = (0, g.O7)(), [es, ea] = l.useState(T ? u.Q6.PLAYING : u.Q6.PAUSED), [eo, eu] = l.useState(!1), [ec, ed] = l.useState(!1), [em, ep] = l.useState(0), [ef, eE] = l.useState(null), eh = l.useCallback(e => {
             eE(null), ep(e)
-        }, []), [ev, ex] = l.useState(!1), [eg, eS] = l.useState(!0), [eA, eC] = l.useState(!1), [e_, eb] = l.useState([]), [ey, eT] = l.useState(!1), [eN, eD] = l.useState(!1), eR = l.useRef(!0), eL = l.useRef(null), eI = l.useRef(null), eM = l.useRef(0);
+        }, []), [ev, ex] = l.useState(!1), [eg, eS] = l.useState(!0), [eA, eC] = l.useState(!1), [e_, eb] = l.useState([]), [ey, eT] = l.useState(!1), [eN, eD] = l.useState(!1), eR = l.useRef(!0), eL = l.useRef(null), eM = l.useRef(null), ej = l.useRef(0);
         l.useLayoutEffect(() => {
-            eM.current = performance.now()
+            ej.current = performance.now()
         }, []);
-        let [ej, ew] = l.useState(.3), [ek, eO] = l.useState(!1), [eP, eQ] = l.useState(!1), [eV, eU] = l.useState(!1), [eB, eF] = l.useState(!1), eG = (0, o.bG)([m.A], () => m.A.useReducedMotion), eK = (0, l.useRef)(null), eY = (0, l.useRef)(null), e$ = l.useRef(!0), [eH, ez] = l.useState(null), eW = l.useCallback((e, t) => {
+        let [eI, ew] = l.useState(.3), [ek, eO] = l.useState(!1), [eP, eQ] = l.useState(!1), [eU, eV] = l.useState(!1), [eB, eF] = l.useState(!1), eG = (0, o.bG)([m.A], () => m.A.useReducedMotion), eK = (0, l.useRef)(null), e$ = (0, l.useRef)(null), eY = l.useRef(!0), [eH, ez] = l.useState(null), eW = l.useCallback((e, t) => {
             k?.(e, t)
         }, [k]), {
             isHlsActive: eq
         } = (0, A.Ay)(eK, {
             src: ee,
-            initialTimeSec: M,
+            initialTimeSec: j,
             onError: eW,
             onHlsInstance: Z
         }), [eX, eJ] = l.useState(!1), [eZ, e0] = l.useState(null), e1 = O ?? eK.current?.duration ?? 0, [e6, e2] = l.useState(u.oA.MD), e7 = {
@@ -88,7 +88,7 @@ let b = {
             [u.oA.LG]: 58
         };
         (0, d.u5)(() => {
-            e$.current && (e$.current = !1)
+            eY.current && (eY.current = !1)
         });
         let e4 = l.useCallback(function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
@@ -191,8 +191,8 @@ let b = {
                     }
             }, []);
         l.useEffect(() => {
-            if (null == eY.current) return;
-            let e = eY.current;
+            if (null == e$.current) return;
+            let e = e$.current;
             return e.addEventListener("load", tc), () => {
                 null != e && e.removeEventListener("load", tc)
             }
@@ -200,7 +200,7 @@ let b = {
         let td = e => {
             if (null != eK.current && es === u.Q6.PLAYING) {
                 if (eg && eS(!1), eA) {
-                    let e = null != eI.current ? performance.now() - eI.current : null;
+                    let e = null != eM.current ? performance.now() - eM.current : null;
                     z?.(e), eC(!1)
                 }
                 e4(u.Q6.PLAYING, "buffering_recovery")
@@ -235,11 +235,11 @@ let b = {
             config: b
         }));
         l.useEffect(() => (th({
-            captionHeightSpring: eV && null != eZ ? tf.current?.clientHeight ?? 0 : 0,
+            captionHeightSpring: eU && null != eZ ? tf.current?.clientHeight ?? 0 : 0,
             immediate: eG
         }), () => {
             tE.stop()
-        }), [eV, th, eG, eZ, tE]), l.useEffect(() => (tp({
+        }), [eU, th, eG, eZ, tE]), l.useEffect(() => (tp({
             controlBarAnimSpring: tn || ey ? 1 : 0,
             immediate: eG
         }), () => {
@@ -272,7 +272,7 @@ let b = {
                     "--custom-footer-horizontal-padding": "20px",
                     "--custom-footer-bottom": "4px"
                 },
-                children: [tv && U?.({
+                children: [tv && V?.({
                     replay: tx
                 }), (0, r.jsxs)(p.A, {
                     ref: e => {
@@ -286,11 +286,11 @@ let b = {
                         [_.IR]: !0
                     }),
                     controls: !1,
-                    poster: I,
+                    poster: M,
                     disablePictureInPicture: !0,
                     "data-testid": "discord-web-video-player-video",
                     onTimeUpdate: e => {
-                        null != eK.current && (j?.(eK.current.currentTime, eK.current.duration), eh(eK.current.currentTime / eK.current.duration * 100))
+                        null != eK.current && (I?.(eK.current.currentTime, eK.current.duration), eh(eK.current.currentTime / eK.current.duration * 100))
                     },
                     onEnded: e => {
                         e4(u.Q6.ENDED, "playback_complete"), eC(!1), w?.()
@@ -298,23 +298,23 @@ let b = {
                     onLoadedData: e => {
                         if (eg) {
                             let e = null != eL.current ? performance.now() - eL.current : null;
-                            Y?.(e), eS(!1)
+                            $?.(e), eS(!1)
                         }
                     },
                     onLoadedMetadata: e => {
-                        null != eK.current && (M > 0 && ts(M, !1), ek ? eK.current.volume = 0 : eK.current.volume = ej)
+                        null != eK.current && (j > 0 && ts(j, !1), ek ? eK.current.volume = 0 : eK.current.volume = eI)
                     },
                     onLoadStart: () => {
                         eL.current = performance.now(), K?.()
                     },
                     onPlaying: () => {
                         if (!eR.current) return;
-                        let e = 0 !== N ? N : eM.current,
+                        let e = 0 !== N ? N : ej.current,
                             t = performance.now() - e;
-                        $?.(t), eR.current = !1
+                        Y?.(t), eR.current = !1
                     },
                     onWaiting: e => {
-                        eI.current = performance.now(), H?.(), eC(!0)
+                        eM.current = performance.now(), H?.(), eC(!0)
                     },
                     onProgress: e => {
                         if (null == eK.current) return;
@@ -343,7 +343,7 @@ let b = {
                     },
                     crossOrigin: "anonymous",
                     children: [null != Q && (0, r.jsx)("track", {
-                        ref: eY,
+                        ref: e$,
                         src: Q,
                         label: "English",
                         kind: "captions",
@@ -381,7 +381,7 @@ let b = {
                         })], e => e < .3 ? "none" : "auto")
                     },
                     children: J()
-                }), eP && es !== u.Q6.ENDED && null != V && (0, r.jsxs)(r.Fragment, {
+                }), eP && es !== u.Q6.ENDED && null != U && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(c.DUT, {
                         onClick: () => {
                             es === u.Q6.PAUSED && e4(u.Q6.PLAYING, "user"), eQ(!1)
@@ -399,7 +399,7 @@ let b = {
                             marginBottom: (0, a.to)([tm, tE], (e, t) => `${e*e7[e6]+t}px`)
                         },
                         children: (0, r.jsx)(v.X, {
-                            text: V,
+                            text: U,
                             onClose: () => {
                                 eQ(!1)
                             }
@@ -426,7 +426,7 @@ let b = {
                     }) : (0, r.jsx)(c.E$n, {
                         className: _.PK
                     })
-                }, es), eV && null != eZ && !tv && (0, r.jsx)(a.animated.div, {
+                }, es), eU && null != eZ && !tv && (0, r.jsx)(a.animated.div, {
                     className: _.o$,
                     ref: tf,
                     "data-testid": "discord-web-video-player-captions",
@@ -459,7 +459,7 @@ let b = {
                         },
                         children: (0, r.jsx)(h.A, {
                             percent: null != ef ? ef : em,
-                            animate: !0 !== e$.current && !ev,
+                            animate: !0 !== eY.current && !ev,
                             interactionEnabled: !P && eN,
                             backgroundColor: tn ? void 0 : "rgba(0, 0, 0, 0.0)",
                             playerState: es,
@@ -500,20 +500,20 @@ let b = {
                             visible: tn,
                             seekForwardEnabled: !P,
                             hideCaptionBtn: null == Q,
-                            hideTranscriptBtn: null == V,
+                            hideTranscriptBtn: null == U,
                             hideSkipButtons: "portrait" === D,
                             size: e6,
-                            volume: ej,
+                            volume: eI,
                             muted: ek,
                             transcriptEnabled: eP,
-                            captionEnabled: eV,
+                            captionEnabled: eU,
                             fullScreenEnabled: eB,
                             handlePlaybackBtnClick: ta,
                             handleTranscriptBtnClick: () => {
                                 eQ(!eP)
                             },
                             handleCaptionBtnClick: () => {
-                                eU(!eV)
+                                eV(!eU)
                             },
                             handleFullScreenBtnClick: () => {
                                 let e = !eB,

@@ -36,16 +36,16 @@ function S(e) {
         transcriptEnabled: D,
         captionEnabled: R,
         fullScreenEnabled: L,
-        handlePlaybackBtnClick: I,
-        handleTranscriptBtnClick: M,
-        handleCaptionBtnClick: j,
+        handlePlaybackBtnClick: M,
+        handleTranscriptBtnClick: j,
+        handleCaptionBtnClick: I,
         handleFullScreenBtnClick: w,
         handleSeekBackBtnClick: k,
         handleSeekForwardBtnClick: O,
         handleControlBarPendingInteraction: P,
         onVolumeChange: Q,
-        onMutedChange: V
-    } = e, U = (0, o.bG)([p.A], () => p.A.useReducedMotion), B = (0, o.bG)([p.A], () => p.A.keyboardModeEnabled), [F, G] = l.useState(N ? 0 : T), [K, Y] = l.useState(!1), [$, H] = l.useState(!1), [{
+        onMutedChange: U
+    } = e, V = (0, o.bG)([p.A], () => p.A.useReducedMotion), B = (0, o.bG)([p.A], () => p.A.keyboardModeEnabled), [F, G] = l.useState(N ? 0 : T), [K, $] = l.useState(!1), [Y, H] = l.useState(!1), [{
         volumeAnimSpring: z
     }, W] = (0, m.zhh)(() => ({
         from: {
@@ -59,18 +59,18 @@ function S(e) {
     })), q = l.useRef(null), X = l.useCallback(e => {
         null != t.current && (e !== t.current.volume && (t.current.volume = e), e !== F && G(e))
     }, [t, F]), J = l.useCallback(() => {
-        null != t.current && (0 === F ? (X(T), V(!1), Q(T)) : (Q(F), X(0), V(!0)))
-    }, [t, F, X, T, V, Q]), Z = () => {
-        Y(!0)
+        null != t.current && (0 === F ? (X(T), U(!1), Q(T)) : (Q(F), X(0), U(!0)))
+    }, [t, F, X, T, U, Q]), Z = () => {
+        $(!0)
     }, ee = () => {
-        Y(!1)
+        $(!1)
     }, et = l.useCallback(e => {
         switch (e.key) {
             case c.TJ.PLAYBACK:
-                I();
+                M();
                 break;
             case c.TJ.SPACE:
-                B || (e.preventDefault(), I());
+                B || (e.preventDefault(), M());
                 break;
             case c.TJ.SEEK_BACK:
                 k();
@@ -79,7 +79,7 @@ function S(e) {
                 O();
                 break;
             case c.TJ.CAPTION:
-                j();
+                I();
                 break;
             case c.TJ.FULLSCREEN:
                 w();
@@ -87,15 +87,15 @@ function S(e) {
             case c.TJ.MUTE:
                 J()
         }
-    }, [j, w, I, k, O, J, B]);
+    }, [I, w, M, k, O, J, B]);
     l.useEffect(() => {
         null != q.current && q.current.focus()
     }, []), l.useEffect(() => (W({
-        volumeAnimSpring: $ || K ? 1 : 0,
-        immediate: U
+        volumeAnimSpring: Y || K ? 1 : 0,
+        immediate: V
     }), () => {
         z.stop()
-    }), [$, K, W, U, z]), l.useEffect(() => (window.addEventListener("keydown", et), () => {
+    }), [Y, K, W, V, z]), l.useEffect(() => (window.addEventListener("keydown", et), () => {
         window.removeEventListener("keydown", et)
     }), [et]);
     let en = 0 === F ? m._RO : F < .5 ? m.S24 : m.HKD,
@@ -113,7 +113,7 @@ function S(e) {
                 ariaLabel: el,
                 tooltipLabel: el,
                 shortcut: c.TJ.PLAYBACK,
-                onClick: I,
+                onClick: M,
                 ref: q,
                 buttonSize: f.AU[y],
                 "data-testid": "discord-web-video-player-play-pause-btn"
@@ -187,10 +187,10 @@ function S(e) {
                         minValue: 0,
                         maxValue: 1,
                         onValueChange: e => {
-                            X(e), Q(e), $ && (H(!1), P(!1)), N && e > 0 && V(!1)
+                            X(e), Q(e), Y && (H(!1), P(!1)), N && e > 0 && U(!1)
                         },
                         asValueChanges: e => {
-                            X(e), $ || (H(!0), P(!0))
+                            X(e), Y || (H(!0), P(!0))
                         },
                         fillStyles: {
                             backgroundColor: u.A.colors.WHITE.css
@@ -209,7 +209,7 @@ function S(e) {
                 iconComponent: m.ueQ,
                 animationTime: i,
                 visible: S,
-                onClick: M,
+                onClick: j,
                 active: D && n !== c.Q6.ENDED,
                 disabled: n === c.Q6.ENDED,
                 ariaLabel: x.intl.string(x.t.KCzjTi),
@@ -221,7 +221,7 @@ function S(e) {
                 animationTime: i,
                 visible: S,
                 active: R,
-                onClick: j,
+                onClick: I,
                 ariaLabel: x.intl.string(x.t.bDSZO1),
                 tooltipLabel: x.intl.string(x.t.bDSZO1),
                 shortcut: c.TJ.CAPTION,

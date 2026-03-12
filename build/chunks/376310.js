@@ -6,8 +6,8 @@ n.d(t, {
 var a, i = n(627968),
     r = n(64700),
     s = n(503698),
-    o = n.n(s),
-    l = n(837381),
+    l = n.n(s),
+    o = n(837381),
     c = n(311907),
     d = n(990078),
     u = n(397927),
@@ -35,14 +35,14 @@ function T(e) {
         name: S,
         emojiId: E,
         emojiName: y
-    } = t, v = null != T, [j, M] = r.useState(!1), R = (0, c.bG)([f.Ay], () => null != E ? f.Ay.getUsableCustomEmojiById(E) : null), N = v || null != x, w = (!v || !j) && (null != E || null != y), O = 0 === a, k = r.useRef(null), D = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), L = (0, i.jsxs)(i.Fragment, {
+    } = t, v = null != T, [j, R] = r.useState(!1), M = (0, c.bG)([f.Ay], () => null != E ? f.Ay.getUsableCustomEmojiById(E) : null), N = v || null != x, w = (!v || !j) && (null != E || null != y), O = 0 === a, k = r.useRef(null), D = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), L = (0, i.jsxs)(i.Fragment, {
         children: [w ? (0, i.jsx)(m.A, {
-            className: o()(A.emoji, {
+            className: l()(A.emoji, {
                 [A.small]: O
             }),
             emojiId: E,
             emojiName: y,
-            animated: !!R?.animated,
+            animated: !!M?.animated,
             size: "reaction"
         }) : null, j && v && (0, i.jsx)("div", {
             className: A.closeCircle,
@@ -59,7 +59,7 @@ function T(e) {
         })]
     }), U = {
         key: t.id,
-        className: o()(A.pill, {
+        className: l()(A.pill, {
             [A.disabled]: s,
             [A.clickable]: N,
             [A.small]: O,
@@ -81,9 +81,9 @@ function T(e) {
                 })
             }))
         },
-        onMouseEnter: () => v && M(!0),
-        onMouseLeave: () => v && M(!1)
-    }, G = (0, l.rm)(`forum-tag-${t.id}`);
+        onMouseEnter: () => v && R(!0),
+        onMouseLeave: () => v && R(!1)
+    }, G = (0, o.rm)(`forum-tag-${t.id}`);
     return N ? (0, i.jsx)(u.DUT, {
         ...G,
         innerRef: k,
@@ -119,7 +119,7 @@ function C(e) {
             }, e.id))
         }),
         children: (0, i.jsx)("div", {
-            className: o()(A.pill, {
+            className: l()(A.pill, {
                 [A.small]: r
             }),
             children: (0, i.jsxs)(u.Text, {

@@ -21,28 +21,28 @@ let g = i.memo(function(e) {
             compact: s = !1,
             timestamp: g,
             timestampFormat: A,
-            isVisibleOnlyOnHover: f = !1,
-            cozyAlt: x = !1,
+            isVisibleOnlyOnHover: x = !1,
+            cozyAlt: f = !1,
             isInline: v = !0,
             id: j,
             isEdited: N = !1,
-            application: b,
-            tooltipPosition: C
-        } = e, E = i.useMemo(() => new Date(g), [g]), I = i.useMemo(() => (0, u.K7)(E), [E]), R = o.PZ.useSetting(), T = i.useMemo(() => null != A ? (0, u.i$)(E, A, R) : s ? (0, u.i$)(E, "LT", R) : (0, u.mk)(E, !0), [E, A, s, R]), y = i.useMemo(() => s ? (0, d.A)(T) : null, [s, T]), _ = i.useMemo(() => N ? m.intl.formatToPlainString(m.t.CDzOFd, {
+            application: C,
+            tooltipPosition: b
+        } = e, E = i.useMemo(() => new Date(g), [g]), I = i.useMemo(() => (0, u.K7)(E), [E]), y = o.PZ.useSetting(), T = i.useMemo(() => null != A ? (0, u.i$)(E, A, y) : s ? (0, u.i$)(E, "LT", y) : (0, u.mk)(E, !0), [E, A, s, y]), R = i.useMemo(() => s ? (0, d.A)(T) : null, [s, T]), _ = i.useMemo(() => N ? m.intl.formatToPlainString(m.t.CDzOFd, {
             timeFormatted: I
         }) : I, [N, I]);
         return (0, l.jsx)("span", {
-            className: a()(n, y, {
+            className: a()(n, R, {
                 [h.vE]: !0,
-                [h.ET]: f,
+                [h.ET]: x,
                 [h.YQ]: v,
-                [h.CC]: x
+                [h.CC]: f
             }),
-            children: null == b ? (0, l.jsx)(r.m, {
+            children: null == C ? (0, l.jsx)(r.m, {
                 asContainer: !0,
                 __unsupportedReactNodeAsText: (0, u.i$)(E, "LLLL"),
                 "aria-label": _,
-                position: C,
+                position: b,
                 delay: 750,
                 children: (0, l.jsx)(p, {
                     timeFormatted: T,
@@ -52,7 +52,7 @@ let g = i.memo(function(e) {
                     children: t
                 })
             }) : (0, l.jsx)(c.A, {
-                application: b,
+                application: C,
                 compact: s,
                 children: (0, l.jsx)(p, {
                     timeFormatted: T,

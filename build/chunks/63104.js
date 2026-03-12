@@ -25,9 +25,9 @@ function A(e) {
         forcedIconColor: i,
         className: o,
         iconClassName: A
-    } = e, [f, x] = (0, r.yK)([c.A], () => [c.A.desaturateUserColors, c.A.saturation]), v = (0, u.rdh)(h).hex(), j = t ?? v, N = (0, a.$k)((0, a.LX)(j), !1, f ? x : null), b = (0, u.rdh)(g).hex(), C = (0, u.rdh)(p).hex(), E = null != i ? i : (0, d.j)({
+    } = e, [x, f] = (0, r.yK)([c.A], () => [c.A.desaturateUserColors, c.A.saturation]), v = (0, u.rdh)(h).hex(), j = t ?? v, N = (0, a.$k)((0, a.LX)(j), !1, x ? f : null), C = (0, u.rdh)(g).hex(), b = (0, u.rdh)(p).hex(), E = null != i ? i : (0, d.j)({
         backgroundColor: j,
-        colors: [b, C]
+        colors: [C, b]
     }), I = n / 8;
     return (0, l.jsx)("div", {
         style: {

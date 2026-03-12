@@ -23,12 +23,12 @@ var a = n(627968),
     j = n(201805),
     A = n(495242),
     C = n(52093),
-    y = n(985018),
-    T = n(757978);
+    T = n(985018),
+    y = n(757978);
 
 function S(e) {
     return (0, a.jsx)(d.Text, {
-        className: T.eW,
+        className: y.eW,
         color: "text-muted",
         variant: "text-xxs/normal",
         children: e.children
@@ -63,9 +63,9 @@ function E(e) {
         let e = C.length > 0,
             n = t.config.messages.gameTitle;
         return {
-            header: e ? (0, b.ui)(t) ? y.intl.string(y.t.N33EuL) : y.intl.formatToPlainString(y.t["28Ql27"], {
+            header: e ? (0, b.ui)(t) ? T.intl.string(T.t.N33EuL) : T.intl.formatToPlainString(T.t["28Ql27"], {
                 gameTitle: n
-            }) : (0, b.ui)(t) ? y.intl.string(y.t.YstzGO) : y.intl.formatToPlainString(y.t.gX0Qcx, {
+            }) : (0, b.ui)(t) ? T.intl.string(T.t.YstzGO) : T.intl.formatToPlainString(T.t.gX0Qcx, {
                 gameTitle: n
             }),
             renderBody: e ? () => (0, a.jsx)(a.Fragment, {
@@ -75,7 +75,7 @@ function E(e) {
                             s = (0, f.IG)(e),
                             l = (0, f.$J)(e);
                         return (0, a.jsx)(S, {
-                            children: y.intl.format(s, {
+                            children: T.intl.format(s, {
                                 account_name: i?.name,
                                 onClick: () => {
                                     (0, f.v0)({
@@ -96,38 +96,38 @@ function E(e) {
                     }, n)
                 })
             }) : () => (0, a.jsx)(d.Text, {
-                className: T.eW,
+                className: y.eW,
                 color: "text-muted",
                 variant: "text-xxs/normal",
-                children: (0, b.ui)(t) ? y.intl.string(y.t.bUyEZZ) : y.intl.format(y.t.GXqvC1, {
+                children: (0, b.ui)(t) ? T.intl.string(T.t.bUyEZZ) : T.intl.format(T.t.GXqvC1, {
                     gameTitle: n
                 })
             })
         }
     }, [C, t, s, A]);
     return (0, a.jsxs)("div", {
-        className: T.XK,
+        className: y.XK,
         children: [(0, a.jsxs)("div", {
-            className: T.oK,
+            className: y.oK,
             children: [(0, a.jsx)(d.EpV, {
                 size: "custom",
                 color: "currentColor",
-                className: 0 === C.length ? T.pH : T.JA,
+                className: 0 === C.length ? y.pH : y.JA,
                 width: 16,
                 height: 16
             }), (0, a.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 children: I
             }), (0, a.jsx)(d.DUT, {
-                className: l()(T.w, {
-                    [T.r9]: E
+                className: l()(y.w, {
+                    [y.r9]: E
                 }),
                 onClick: () => N(),
                 children: c.render()
             })]
         }), (0, a.jsxs)("div", {
             className: l()({
-                [T.Iu]: E
+                [y.Iu]: E
             }),
             children: [k(), 0 === C.length ? null : (0, a.jsx)(S, {
                 children: o
@@ -159,14 +159,14 @@ let N = function(e) {
                 isComplete: e || i || o
             }, {
                 renderContent: () => (0, a.jsx)(C.L5, {
-                    children: (0, b.ui)(t) ? y.intl.string(y.t["5tXqFe"]) : y.intl.formatToPlainString(y.t["+8JB6Y"], {
+                    children: (0, b.ui)(t) ? T.intl.string(T.t["5tXqFe"]) : T.intl.formatToPlainString(T.t["+8JB6Y"], {
                         gameTitle: s
                     })
                 }),
                 isComplete: i || o
             }, {
                 renderContent: () => (0, a.jsx)(C.L5, {
-                    children: y.intl.formatToPlainString(y.t.HhfrYS, {
+                    children: T.intl.formatToPlainString(T.t.HhfrYS, {
                         numMinutes: n.targetMinutes
                     })
                 }),
@@ -178,7 +178,7 @@ let N = function(e) {
         }
     }, [l, r.length, t, n.targetMinutes]);
     return (0, a.jsx)(C.Ay, {
-        heading: y.intl.string(y.t.UPWlJu),
+        heading: T.intl.string(T.t.UPWlJu),
         steps: d,
         children: u && !m && !x && (0, a.jsx)(E, {
             useReducedMotion: s,

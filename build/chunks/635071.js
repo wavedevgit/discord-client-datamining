@@ -3,8 +3,8 @@ a.d(t, {
     A: () => N,
     w: () => P
 });
-var n, r = a(627968),
-    l = a(64700),
+var n, l = a(627968),
+    r = a(64700),
     i = a(503698),
     s = a.n(i),
     c = a(607399),
@@ -17,8 +17,8 @@ var n, r = a(627968),
     A = a(688810),
     m = a(922301),
     h = a(750112),
-    g = a(73392),
-    I = a(386467),
+    I = a(73392),
+    g = a(386467),
     C = a(534400),
     T = a(176201),
     E = a(676608),
@@ -50,7 +50,7 @@ function N(e) {
         decorations: H,
         previewGuildId: W,
         subscribeToGroupId: k
-    } = e, j = l.useRef(null), V = l.useContext(I.A), K = n?.guild_id ?? V, {
+    } = e, j = r.useRef(null), V = r.useContext(g.A), K = n?.guild_id ?? V, {
         analyticsLocations: z
     } = (0, A.Ay)(p.A.USERNAME), $ = N ? "@" : "", {
         nick: J,
@@ -58,9 +58,9 @@ function N(e) {
         colorStrings: Y,
         colorRoleName: Z,
         displayNameStyles: q
-    } = t, X = (0, o.bG)([S.A], () => S.A.roleStyle), ee = "username" === X, et = (0, g.a)({
+    } = t, X = (0, o.bG)([S.A], () => S.A.roleStyle), ee = "username" === X, et = (0, I.a)({
         displayNameStyles: q
-    }), ea = (0, o.bG)([D.A], () => null == t.guildId || null == t.colorRoleId ? null : D.A.getRole(t.guildId, t.colorRoleId)), en = (0, E.jV)(W ?? K, ea), er = (0, v.A)(a), el = l.useContext(u.C), ei = el?.animate || G, es = en && (0, T.kz)(t), ec = ee && es, eo = n?.isPrivate() && null != q;
+    }), ea = (0, o.bG)([D.A], () => null == t.guildId || null == t.colorRoleId ? null : D.A.getRole(t.guildId, t.colorRoleId)), en = (0, E.jV)(W ?? K, ea), el = (0, v.A)(a), er = r.useContext(u.C), ei = er?.animate || G, es = en && (0, T.kz)(t), ec = ee && es, eo = n?.isPrivate() && null != q;
     (0, b.A)({
         shouldSubscribe: eo || ec,
         subscribeToGroupId: k,
@@ -89,7 +89,7 @@ function N(e) {
         })(),
         onClick: M,
         onContextMenu: F,
-        children: eo ? (0, r.jsx)(h.A, {
+        children: eo ? (0, l.jsx)(h.A, {
             userName: ed,
             displayNameStyles: q,
             effectDisplayType: ei ? m.G.ANIMATED : m.G.PLAIN,
@@ -99,18 +99,18 @@ function N(e) {
         }) : ed,
         "data-text": $ + J,
         "data-username-has-gradient": !!es || void 0
-    }, ep = l.useMemo(() => U ? null : (0, r.jsx)(C.Cw, {
+    }, ep = r.useMemo(() => U ? null : (0, l.jsx)(C.Cw, {
         primaryGuild: t.primaryGuild,
         userId: a.author.id,
         contextGuildId: K,
         className: L.s4,
         badgeSize: P ? y.Sl.SIZE_12 : void 0
-    }), [P, t.primaryGuild, K, a.author.id, U]), eA = i ?? a.author, em = null != B && null != G ? (0, r.jsx)(R.A, {
+    }), [P, t.primaryGuild, K, a.author.id, U]), eA = i ?? a.author, em = null != B && null != G ? (0, l.jsx)(R.A, {
         targetElementRef: j,
         user: eA,
         renderPopout: B,
         shouldShow: G,
-        shouldPreload: er,
+        shouldPreload: el,
         position: c.Fr ? "window_center" : "right",
         avatarUrl: null != t.guildMemberAvatar && null != K ? (0, f.s7)({
             guildId: K,
@@ -125,8 +125,8 @@ function N(e) {
                 onClick: t,
                 ...a
             } = e;
-            return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(d.DUT, {
+            return (0, l.jsxs)(l.Fragment, {
+                children: [(0, l.jsx)(d.DUT, {
                     tag: "span",
                     innerRef: j,
                     ...a,
@@ -135,22 +135,22 @@ function N(e) {
                 }), ep]
             })
         }
-    }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(d.DUT, {
+    }) : (0, l.jsxs)(l.Fragment, {
+        children: [(0, l.jsx)(d.DUT, {
             ...eS,
             className: s()(eS.className, x)
         }), ep]
-    }), eh = null != H ? H[0] : null, eg = null != H ? H[1] : null;
-    return (0, r.jsxs)(A.f5, {
+    }), eh = null != H ? H[0] : null, eI = null != H ? H[1] : null;
+    return (0, l.jsxs)(A.f5, {
         value: z,
-        children: [null != eh && !O && P ? (0, r.jsxs)(r.Fragment, {
+        children: [null != eh && !O && P ? (0, l.jsxs)(l.Fragment, {
             children: [" ", eh, " "]
-        }) : null, "dot" === X ? (0, r.jsx)(d.WYI, {
+        }) : null, "dot" === X ? (0, l.jsx)(d.WYI, {
             color: Q,
             colors: es ? Y : null,
             name: Z,
             className: L.m4,
             hoverOverride: ei
-        }) : null, em, null != eg ? eg : null, null == eh || O || P ? null : eh]
+        }) : null, em, null != eI ? eI : null, null == eh || O || P ? null : eh]
     })
 }

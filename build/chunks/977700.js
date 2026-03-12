@@ -32,7 +32,7 @@ function f(e) {
         (0, r.Dr)(t, {
             dismissAction: e
         })
-    }, y = () => {
+    }, T = () => {
         (0, c.openUserSettings)(d.X.NOTIFICATIONS_PANEL, {
             section: p.nc_.NOTIFICATIONS,
             analyticsLocations: A
@@ -70,7 +70,7 @@ function f(e) {
                                 tag: "span",
                                 className: _.nf,
                                 style: j,
-                                onClick: y,
+                                onClick: T,
                                 children: e
                             }, t)
                         })

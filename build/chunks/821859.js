@@ -41,9 +41,9 @@ function E(e) {
         handleMouseLeave: D,
         handleMouseMove: R,
         handleKeyDown: L,
-        hoveredAtX: I,
-        maxSeekableX: M,
-        isHovering: j,
+        hoveredAtX: M,
+        maxSeekableX: j,
+        isHovering: I,
         handleClick: w,
         ariaProps: k
     } = (0, m.A)({
@@ -54,27 +54,27 @@ function E(e) {
         duration: g,
         percent: n,
         onClick: A
-    }), O = l.useMemo(() => null == I || null == T ? null : (0, u.rB)((0, u.hc)(I, T, g)), [I, T, g]), P = l.useMemo(() => {
+    }), O = l.useMemo(() => null == M || null == T ? null : (0, u.rB)((0, u.hc)(M, T, g)), [M, T, g]), P = l.useMemo(() => {
         if (null != T) return (0, u.TO)(n, T)
     }, [n, T]), [{
         currentPxSpring: Q
-    }, V] = (0, c.zhh)(() => ({
+    }, U] = (0, c.zhh)(() => ({
         currentPxSpring: 0,
         config: f
     }));
     l.useEffect(() => {
-        V({
+        U({
             currentPxSpring: P ?? 0,
             immediate: !i
         })
-    }, [P, i, V]);
-    let U = T?.width != null && T?.width !== 0 ? T?.width : 1,
+    }, [P, i, U]);
+    let V = T?.width != null && T?.width !== 0 ? T?.width : 1,
         B = l.useMemo(() => [{
             startPx: 0,
-            endPx: U,
+            endPx: V,
             leftIndicatorIndex: null,
             rightIndicatorIndex: null
-        }], [U]);
+        }], [V]);
     return (0, r.jsx)("div", {
         className: p.jD,
         ref: y,
@@ -101,24 +101,24 @@ function E(e) {
                     segment: e,
                     currentPxSpring: Q,
                     backgroundColor: h,
-                    timelineWidth: U,
+                    timelineWidth: V,
                     preloadedBuffers: x,
-                    maxSeekableX: M,
+                    maxSeekableX: j,
                     interactionEnabled: E,
                     useNewStyles: !0,
                     progressFillClassName: p.UA,
                     glowClassName: p.pN,
                     showGlow: v !== o.Q6.ENDED
                 }, t))
-            }), j && null != O && t && (0, r.jsx)(c.Text, {
+            }), I && null != O && t && (0, r.jsx)(c.Text, {
                 className: p.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
-                    left: null != I ? `${I}px` : "auto"
+                    left: null != M ? `${M}px` : "auto"
                 },
                 children: O
-            }), j && E && null != P && (0, r.jsx)(a.animated.div, {
+            }), I && E && null != P && (0, r.jsx)(a.animated.div, {
                 className: p.Ub,
                 style: {
                     left: Q.to(e => `${e}px`)

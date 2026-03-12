@@ -54,7 +54,7 @@ let g = e => {
         a.useEffect(() => {
             j(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
         }, [A, v]);
-        let M = a.useCallback(e => {
+        let R = a.useCallback(e => {
                 if (j(e), "" === e) {
                     S(null), w(!1), N(""), k(null), g({
                         value: e,
@@ -90,7 +90,7 @@ let g = e => {
                     isValid: !0
                 }))
             }, [g, T]),
-            R = a.useCallback(e => {
+            M = a.useCallback(e => {
                 if (N(e), "" === e || !x.test(e)) {
                     k(o.intl.string(o.t["24xrGb"])), g({
                         value: C,
@@ -124,7 +124,7 @@ let g = e => {
                             })]
                         })
                     }), (0, l.jsx)(r.ksK, {
-                        onChange: M,
+                        onChange: R,
                         value: C,
                         error: I,
                         placeholder: s,
@@ -142,7 +142,7 @@ let g = e => {
                             })]
                         })
                     }), (0, l.jsx)(r.ksK, {
-                        onChange: R,
+                        onChange: M,
                         value: T,
                         error: y,
                         placeholder: m

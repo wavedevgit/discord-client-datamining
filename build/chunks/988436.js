@@ -24,8 +24,8 @@ var a = n(627968),
     j = n(792620),
     A = n(73473),
     C = n(201805),
-    y = n(818348),
-    T = n(985018),
+    T = n(818348),
+    y = n(985018),
     S = n(767504);
 
 function E(e) {
@@ -38,7 +38,7 @@ function E(e) {
     } = e, [I, k] = (0, i.useState)(n), R = (0, x.UX)(), O = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
-    }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), U = (0, j.YL)(t), L = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(L) ? y.NJ.DARK : y.NJ.LIGHT, {
+    }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), U = (0, j.YL)(t), L = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(L) ? T.NJ.DARK : T.NJ.LIGHT, {
         startConsoleQuest: G,
         startingConsoleQuest: F
     } = (0, x.Wj)({
@@ -58,7 +58,7 @@ function E(e) {
     return (0, a.jsx)(r.Modal, {
         transitionState: s,
         onClose: A,
-        title: T.intl.string(T.t.W5lmKt),
+        title: y.intl.string(y.t.W5lmKt),
         subtitle: R.message,
         actions: [{
             variant: "secondary",
@@ -70,11 +70,11 @@ function E(e) {
                 impressionId: w,
                 sourceQuestContent: E
             })),
-            text: T.intl.string(T.t["qiS+xj"])
+            text: y.intl.string(y.t["qiS+xj"])
         }, {
             variant: "primary",
             onClick: () => A(),
-            text: T.intl.string(T.t.cpT0Cq)
+            text: y.intl.string(y.t.cpT0Cq)
         }],
         children: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsxs)("div", {
@@ -82,7 +82,7 @@ function E(e) {
                 children: [(0, a.jsx)(u.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: T.intl.string(T.t["+/hZM/"])
+                    children: y.intl.string(y.t["+/hZM/"])
                 }), (0, a.jsxs)(u.DUT, {
                     className: l()(S.Tm, {
                         [S.r9]: F
@@ -92,7 +92,7 @@ function E(e) {
                         variant: "text-sm/medium",
                         color: "currentColor",
                         className: S.Zf,
-                        children: T.intl.string(T.t.wzzjk9)
+                        children: y.intl.string(y.t.wzzjk9)
                     })]
                 })]
             }), (0, a.jsxs)("div", {
@@ -101,12 +101,12 @@ function E(e) {
                     icon: (0, a.jsx)(u.kN9, {
                         size: "sm"
                     }),
-                    text: T.intl.string(T.t.br3uIi)
+                    text: y.intl.string(y.t.br3uIi)
                 }), (0, a.jsx)(N, {
                     icon: (0, a.jsx)(u._xR, {
                         size: "sm"
                     }),
-                    text: T.intl.string(T.t.XF4wuA),
+                    text: y.intl.string(y.t.XF4wuA),
                     errors: U ? void 0 : P.map(e => e.message),
                     gameTile: U ? (0, a.jsx)(d.m, {
                         "aria-label": t.config.messages.gameTitle,
@@ -118,7 +118,7 @@ function E(e) {
                             }), (0, a.jsx)(u.Text, {
                                 variant: "text-xs/normal",
                                 color: "text-muted",
-                                children: T.intl.string(T.t.STpNEC)
+                                children: y.intl.string(y.t.STpNEC)
                             })]
                         }),
                         children: (0, a.jsx)("img", {

@@ -3,12 +3,12 @@ let n;
 a.d(t, {
     A: () => c
 });
-var r = a(311907),
-    l = a(73153);
+var l = a(311907),
+    r = a(73153);
 let i = {
     lastGuildDismissedTime: {}
 };
-class s extends r.Ay.DeviceSettingsStore {
+class s extends l.Ay.DeviceSettingsStore {
     static displayName = "ApplicationSubscriptionChannelNoticeStore";
     static persistKey = "ApplicationSubscriptionChannelNoticeStore";
     initialize() {
@@ -22,7 +22,7 @@ class s extends r.Ay.DeviceSettingsStore {
         return n.lastGuildDismissedTime[e]
     }
 }
-let c = new s(l.h, {
+let c = new s(r.h, {
     APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
         let {
             guildId: t

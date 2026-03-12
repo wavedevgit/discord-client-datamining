@@ -46,24 +46,24 @@ function m(e, t, n) {
         g = e.stickerItems.length > 0,
         p = e.codedLinks.length > 0,
         A = e.components.length > 0,
-        f = e.hasFlag(s.pr7.HAS_THREAD),
-        x = m || h || g || p || f || A || e.type === s.lAJ.THREAD_CREATED,
+        x = e.hasFlag(s.pr7.HAS_THREAD),
+        f = m || h || g || p || x || A || e.type === s.lAJ.THREAD_CREATED,
         v = m && e.content === e.embeds[0].url && e.embeds[0].type === s.Auw.GIFV,
         j = e.type !== s.lAJ.DEFAULT || !v && "" !== e.content,
         N = (0, i.A)(e),
-        b = !N && n?.hasTimestamp !== !1,
-        C = o(e, t),
+        C = !N && n?.hasTimestamp !== !1,
+        b = o(e, t),
         E = r(e),
-        I = N ? "" : `${c?E:C} ${l.lW}`;
+        I = N ? "" : `${c?E:b} ${l.lW}`;
     if (j) {
         let t = a(e);
         I += ` ${t}`
     }
-    if (x) {
+    if (f) {
         let t = d(e);
         I += ` ${t}`
     }
-    if (b) {
+    if (C) {
         let t = u(e);
         I += ` ${l.l6} ${t}`
     }

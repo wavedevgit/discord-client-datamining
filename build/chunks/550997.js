@@ -2,8 +2,8 @@
 "use strict";
 let l;
 n.r(t), n.d(t, {
-    default: () => b,
-    renderChangelogMessageMarkup: () => C
+    default: () => C,
+    renderChangelogMessageMarkup: () => b
 });
 var i = n(791332),
     s = n.n(i),
@@ -18,16 +18,16 @@ let c = s().defaultRules.lheading,
     g = s().defaultRules.list,
     p = s().defaultRules.blockQuote,
     A = s().defaultRules.paragraph,
-    f = /\{(.+?)}/,
-    x = /^\$(\w+?)\$/;
+    x = /\{(.+?)}/,
+    f = /^\$(\w+?)\$/;
 l = n(482644);
 let v = e => {
         let {
             transformUpperCase: t = !1
         } = e;
         return (e, n, l) => {
-            let i = f.exec(e[1]),
-                a = e[1].replace(f, "");
+            let i = x.exec(e[1]),
+                a = e[1].replace(x, "");
             return t && (a = a.toUpperCase()), {
                 className: null != i ? i[1] : null,
                 level: "=" === e[2] ? 1 : 2,
@@ -51,7 +51,7 @@ let v = e => {
         },
         interpolation: {
             order: o.Ay.order,
-            match: e => x.exec(e),
+            match: e => f.exec(e),
             parse(e, t, n) {
                 let l = n.interpolations[e[1]];
                 return null == l ? {
@@ -90,7 +90,7 @@ function N(e) {
         ...j(e)
     }
 }
-let b = {
+let C = {
     getDefaultRules: N,
     getSpecialRules: e => ({
         ...j(e),
@@ -117,7 +117,7 @@ let b = {
     })
 };
 
-function C(e, t, n) {
+function b(e, t, n) {
     return {
         hasSpoilerEmbeds: !1,
         hasBailedAst: !1,

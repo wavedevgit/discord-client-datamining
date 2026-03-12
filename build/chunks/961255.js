@@ -36,13 +36,13 @@ let E = {
             index: T
         } = n, {
             completedRatio: N
-        } = (0, d.O9)(h), [D, R] = l.useState(!1), L = b - p.Ue, I = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, M = 0 === T && N < 1, {
-            fill: j
+        } = (0, d.O9)(h), [D, R] = l.useState(!1), L = b - p.Ue, M = t >= L ? Math.min(1, (t - L) / (y - L)) : 0, j = 0 === T && N < 1, {
+            fill: I
         } = (0, o.zhh)({
-            fill: 100 * I,
+            fill: 100 * M,
             config: E,
             onRest: () => {
-                I <= 0 && R(!1)
+                M <= 0 && R(!1)
             },
             onStart: () => {
                 R(!0)
@@ -50,13 +50,13 @@ let E = {
         });
         return (0, r.jsxs)(a.animated.div, {
             className: s()(f.ck, {
-                [f.a]: M && D,
-                [f.C9]: !M && D
+                [f.a]: j && D,
+                [f.C9]: !j && D
             }),
             style: {
                 left: i ? x.to(e => b - e) : b,
                 "--custom-indicator-size": i ? x.to(e => `${p.lS+2*e}px`) : `${p.lS}px`,
-                "--custom-indicator-fill": j.to(e => e)
+                "--custom-indicator-fill": I.to(e => e)
             },
             children: [(0, r.jsx)(o.DUT, {
                 className: f.E6,

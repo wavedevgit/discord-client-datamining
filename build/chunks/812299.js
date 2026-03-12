@@ -5,8 +5,8 @@ a.d(t, {
 });
 var n = a(627968);
 a(64700);
-var r = a(709066),
-    l = a(455207),
+var l = a(709066),
+    r = a(455207),
     i = a(943667),
     s = a(222590);
 
@@ -17,14 +17,14 @@ function c(e) {
         user: s,
         isRepliedMessage: c
     } = e;
-    return a?.isSystemDM() ? t = r.A.Types.SYSTEM_DM : null != a && (0, i.A)(a) ? t = (0, l.MZ)(a) ? r.A.Types.OFFICIAL : r.A.Types.SERVER : s?.bot ? t = r.A.Types.BOT : null != n && n.isForumPost() && n.ownerId === s?.id && !c && (t = r.A.Types.ORIGINAL_POSTER), t
+    return a?.isSystemDM() ? t = l.A.Types.SYSTEM_DM : null != a && (0, i.A)(a) ? t = (0, r.MZ)(a) ? l.A.Types.OFFICIAL : l.A.Types.SERVER : s?.bot ? t = l.A.Types.BOT : null != n && n.isForumPost() && n.ownerId === s?.id && !c && (t = l.A.Types.ORIGINAL_POSTER), t
 }
 
 function o(e) {
     let {
         message: t,
         channel: a,
-        user: l,
+        user: r,
         compact: i,
         isRepliedMessage: o,
         hideIcon: u = !1,
@@ -32,16 +32,16 @@ function o(e) {
     } = e, d = c({
         message: t,
         channel: a,
-        user: l,
+        user: r,
         compact: i,
         isRepliedMessage: o,
         hideIcon: u,
         children: _
     });
-    return null == d ? null : (0, n.jsx)(r.A, {
+    return null == d ? null : (0, n.jsx)(l.A, {
         className: i ? s.jW : s.RQ,
         type: d,
-        verified: l?.isVerifiedBot(),
+        verified: r?.isVerifiedBot(),
         hideIcon: u,
         useRemSizes: !0,
         children: _

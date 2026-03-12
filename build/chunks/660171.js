@@ -101,7 +101,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, n, C, E, h]), I = r.useCallback(e => {
+    }, [x, t, f, n, C, E, h]), M = r.useCallback(e => {
         null != t.current && null != e && C({
             questId: x,
             event: m.HAw.QUEST_VIDEO_PAUSED,
@@ -114,7 +114,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, n, C, E, h]), M = r.useCallback((e, n) => {
+    }, [x, t, f, n, C, E, h]), j = r.useCallback((e, n) => {
         null != t.current && C({
             questId: x,
             event: e ? m.HAw.QUEST_VIDEO_APP_FOCUSED : m.HAw.QUEST_VIDEO_APP_UNFOCUSED,
@@ -126,7 +126,7 @@ function f(e) {
             },
             sourceQuestContent: h
         })
-    }, [x, t, f, C, E, h]), j = r.useCallback(() => {
+    }, [x, t, f, C, E, h]), I = r.useCallback(() => {
         null != t.current && (y.current += 1, C({
             questId: x,
             event: m.HAw.QUEST_VIDEO_BUFFERING_STARTED,
@@ -249,7 +249,7 @@ function f(e) {
                 sourceQuestContent: h
             })
         }, [x, t, f, n, C, E, h]),
-        V = r.useCallback(e => {
+        U = r.useCallback(e => {
             null != t.current && C({
                 questId: x,
                 event: m.HAw.QUEST_VIDEO_VOLUME_CHANGED,
@@ -268,14 +268,14 @@ function f(e) {
         trackQuestVideoTimeToFirstFrame: D,
         trackQuestVideoProgressed: R,
         trackQuestVideoResumed: L,
-        trackQuestVideoPaused: I,
-        trackQuestVideoFocusChange: M,
+        trackQuestVideoPaused: M,
+        trackQuestVideoFocusChange: j,
         trackQuestContentClick: k,
-        trackQuestVideoBufferingStarted: j,
+        trackQuestVideoBufferingStarted: I,
         trackQuestVideoBufferingEnded: w,
         trackQuestVideoSegmentWatched: O,
         trackQuestVideoFullscreenChanged: Q,
         trackQuestVideoError: P,
-        trackQuestVideoVolumeChanged: V
+        trackQuestVideoVolumeChanged: U
     }
 }

@@ -26,11 +26,11 @@ function c(e) {
     i.useEffect(() => {
         C && null != v.current && j(v.current.scrollHeight)
     }, [C, c]);
-    let y = i.useCallback(() => {
+    let T = i.useCallback(() => {
             let e = !C;
             A || f(e), h?.(e), e && null != x && x()
         }, [C, A, h, x]),
-        T = i.useMemo(() => {
+        y = i.useMemo(() => {
             if (C) {
                 if (null != g) return {
                     maxHeight: "number" == typeof g ? `${g}px` : g
@@ -46,7 +46,7 @@ function c(e) {
         }),
         children: [(0, a.jsxs)(r.DUT, {
             className: d.wx,
-            onClick: y,
+            onClick: T,
             children: [null != t && (0, a.jsx)("div", {
                 className: d.Y5,
                 children: t
@@ -76,7 +76,7 @@ function c(e) {
             className: l()(d.Qs, {
                 [d.Sg]: C
             }),
-            style: T,
+            style: y,
             children: c
         })]
     })

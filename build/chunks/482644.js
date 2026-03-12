@@ -1,8 +1,8 @@
 /** chunk id: 482644 params = (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    baseRules: () => b,
-    customRules: () => C
+    baseRules: () => C,
+    customRules: () => b
 });
 var l = n(627968),
     i = n(64700),
@@ -18,8 +18,8 @@ var l = n(627968),
     g = n(840065),
     p = n(954571),
     A = n(652215),
-    f = n(559868),
-    x = n(816169);
+    x = n(559868),
+    f = n(816169);
 let v = o().defaultRules.link,
     j = {
         section: A.JJy.SETTINGS_CHANGELOG
@@ -34,8 +34,8 @@ let v = o().defaultRules.link,
             className: l
         }, n)
     },
-    b = null != d.A ? d.A.defaultRules : null,
-    C = {
+    C = null != d.A ? d.A.defaultRules : null,
+    b = {
         link: {
             parse(e, t, n) {
                 let l, i = e[2],
@@ -48,11 +48,11 @@ let v = o().defaultRules.link,
                         section: A.nc_.PREMIUM
                     }), n.changeLog.track(A.HAw.CHANGE_LOG_CTA_CLICKED, {
                         cta_type: "nitro"
-                    }), (0, u.OoC)(f.lb), e.preventDefault()
+                    }), (0, u.OoC)(x.lb), e.preventDefault()
                 } : a ? e => {
                     (0, m.pX)(i), n.changeLog.track(A.HAw.CHANGE_LOG_CTA_CLICKED, {
                         ...p.default.getCampaignParams(i)
-                    }), (0, c.bz)(), (0, u.OoC)(f.lb), e.preventDefault()
+                    }), (0, c.bz)(), (0, u.OoC)(x.lb), e.preventDefault()
                 } : () => {
                     n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(A.HAw.CHANGE_LOG_CTA_CLICKED, {
                         target: i,
@@ -78,7 +78,7 @@ let v = o().defaultRules.link,
                 var s;
                 return (0, l.jsx)(N, {
                     level: t.level,
-                    className: a()(x["heading-md/bold"], ...null == (s = t.className) ? [] : s.split(" ").map(t => e[t])),
+                    className: a()(f["heading-md/bold"], ...null == (s = t.className) ? [] : s.split(" ").map(t => e[t])),
                     children: n(t.content, i)
                 }, i.key)
             }
@@ -86,7 +86,7 @@ let v = o().defaultRules.link,
         heading: {
             react: (e, t, n) => (0, l.jsx)(N, {
                 level: e.level,
-                className: x["heading-md/bold"],
+                className: f["heading-md/bold"],
                 children: t(e.content, n)
             }, n.key)
         },
@@ -100,13 +100,13 @@ let v = o().defaultRules.link,
             }
         },
         blockQuote: {
-            react: b?.blockQuote.react
+            react: C?.blockQuote.react
         },
         list: e => ({
             react(t, n, i) {
                 let s = t.ordered ? "ol" : "ul",
                     r = t.items.map((t, s) => (0, l.jsx)("li", {
-                        className: a()(x["text-md/normal"], e.listItem),
+                        className: a()(f["text-md/normal"], e.listItem),
                         children: n(t, i)
                     }, s));
                 return (0, l.jsx)(s, {
@@ -118,7 +118,7 @@ let v = o().defaultRules.link,
         }),
         paragraph: e => ({
             react: (t, n, i) => (0, l.jsx)("p", {
-                className: a()(x["text-md/normal"], e.paragraph),
+                className: a()(f["text-md/normal"], e.paragraph),
                 children: n(t.content, i)
             }, i.key)
         })

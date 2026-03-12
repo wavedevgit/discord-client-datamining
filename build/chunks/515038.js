@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(516226),
     A = n(720875),
     C = n(713457),
-    y = n(419367),
-    T = n(985018),
+    T = n(419367),
+    y = n(985018),
     S = n(962734);
 let E = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
@@ -48,13 +48,13 @@ function N(e) {
     } = (0, d.zhh)({
         expansionSpring: +!!s,
         config: {
-            ...y.N,
+            ...T.N,
             clamp: !0
         }
     }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, x.O9)(t), Q = (0, p.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, x.O9)(t), Q = (0, p.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? y.intl.format(y.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -66,7 +66,7 @@ function N(e) {
     }) : H ? (0, a.jsx)(I, {
         questId: t.id,
         children: M
-    }) : K ? T.intl.format(T.t.ro1sze, {
+    }) : K ? y.intl.format(y.t.ro1sze, {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -75,7 +75,7 @@ function N(e) {
                 customSize: 14
             }), z]
         }, t.id)
-    }) : T.intl.format(T.t["0IUT4Y"], {
+    }) : y.intl.format(y.t["0IUT4Y"], {
         rewardWithArticleHook: () => (0, a.jsx)(I, {
             questId: t.id,
             children: P
@@ -145,7 +145,7 @@ function N(e) {
                     variant: "eyebrow",
                     color: "text-brand",
                     className: S.G$,
-                    children: T.intl.format(T.t.EAYZAr, {
+                    children: y.intl.format(y.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, a.jsx)(d.Text, {

@@ -22,35 +22,35 @@ function A(e) {
         guild: t,
         message: n
     } = e, A = i.useRef(null), {
-        voiceState: f,
-        voiceChannel: x
+        voiceState: x,
+        voiceChannel: f
     } = (0, o.A)({
         userId: n.author.id,
         guildId: t.id
-    }), [v, j] = i.useState(!1), N = (0, s.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), b = i.useRef(new a.J_(50, () => {
+    }), [v, j] = i.useState(!1), N = (0, s.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), C = i.useRef(new a.J_(50, () => {
         j(!0)
-    })), C = i.useRef(new a.J_(175, () => {
+    })), b = i.useRef(new a.J_(175, () => {
         j(!1)
     }));
     i.useEffect(() => {
-        let e = b.current,
-            t = C.current;
+        let e = C.current,
+            t = b.current;
         return () => {
             e.cancel(), t.cancel()
         }
     }, []);
     let E = i.useCallback(() => {
-            C.current.cancel(), b.current.delay()
-        }, []),
-        I = i.useCallback(() => {
             b.current.cancel(), C.current.delay()
         }, []),
-        R = (0, s.bG)([m.A], () => {
-            if (null == x) return !1;
-            let e = (0, u.r9)() && (0, u.UK)(x.id);
-            return (x.isPrivate() || m.A.can(g.xBc.CONNECT, x)) && !e
+        I = i.useCallback(() => {
+            C.current.cancel(), b.current.delay()
+        }, []),
+        y = (0, s.bG)([m.A], () => {
+            if (null == f) return !1;
+            let e = (0, u.r9)() && (0, u.UK)(f.id);
+            return (f.isPrivate() || m.A.can(g.xBc.CONNECT, f)) && !e
         });
-    return null != f && null != x && x.isGuildVocal() && R && !N ? (0, l.jsx)(r.YNO, {
+    return null != x && null != f && f.isGuildVocal() && y && !N ? (0, l.jsx)(r.YNO, {
         targetElementRef: A,
         animation: r.YNO.Animation.TRANSLATE,
         align: "center",
@@ -62,7 +62,7 @@ function A(e) {
             onMouseEnter: E,
             onMouseLeave: I,
             children: (0, l.jsx)(h.A, {
-                channel: x,
+                channel: f,
                 message: n
             })
         }),
@@ -76,7 +76,7 @@ function A(e) {
                 color: "currentColor",
                 width: 20,
                 height: 20,
-                channel: x
+                channel: f
             })
         })
     }) : null

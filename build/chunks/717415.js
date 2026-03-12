@@ -1,7 +1,7 @@
 /** chunk id: 717415 params = (module,exports,require) **/
 n.r(t), n.d(t, {
     VideoQuestConfigContext: () => w,
-    VideoQuestModalContext: () => j,
+    VideoQuestModalContext: () => I,
     default: () => O
 });
 var r = n(627968),
@@ -32,9 +32,9 @@ var r = n(627968),
     D = n(583235),
     R = n(654487),
     L = n(985018),
-    I = n(407481),
-    M = n(221190);
-let j = l.createContext({
+    M = n(407481),
+    j = n(221190);
+let I = l.createContext({
         quest: null,
         sourceQuestContent: null,
         videoSessionId: "",
@@ -58,14 +58,14 @@ function k(e) {
         impressionRef: f,
         parentModalOpenStartClockTime: E,
         sourceQuestContent: h
-    } = e, C = (0, S.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, V] = l.useState(142), [U, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
+    } = e, C = (0, S.Yh)(i), w = (0, x.LS)(i), k = (0, g.go)(), [O, P] = l.useState(C.progressSeconds), [Q, U] = l.useState(142), [V, B] = l.useState(!1), F = i.config.taskConfigV2?.tasks?.[u.n.WATCH_VIDEO];
     o()(null != F, "VideoQuestModal: videoTask must not be null");
     let G = (0, A.eG)(F),
         K = "portrait" === G,
-        Y = (0, p.A)(e => {
-            V(e.target.offsetHeight)
+        $ = (0, p.A)(e => {
+            U(e.target.offsetHeight)
         }),
-        $ = (0, m.w)(Y),
+        Y = (0, m.w)($),
         H = i.config.features.includes(R.Li.FULL_EPISODE_VIDEO_QUEST),
         {
             enabled: z
@@ -85,11 +85,11 @@ function k(e) {
             videoSessionId: c,
             isPortrait: K,
             onClose: n,
-            isFullscreenEnabled: U,
+            isFullscreenEnabled: V,
             useNewProgressBarStyling: W,
             setIsFullscreenEnabled: B
-        }), [i, h, c, K, n, U, W, B]);
-    return (0, r.jsx)(j.Provider, {
+        }), [i, h, c, K, n, V, W, B]);
+    return (0, r.jsx)(I.Provider, {
         value: X,
         children: (0, r.jsx)("div", {
             style: K ? {
@@ -99,13 +99,13 @@ function k(e) {
                 "data-migration-pending": !0,
                 transitionState: t,
                 size: d.rIJ.DYNAMIC,
-                className: s()(M.CR, {
-                    [M.VX]: "landscape" === G,
-                    [M.Zy]: "portrait" === G
+                className: s()(j.CR, {
+                    [j.VX]: "landscape" === G,
+                    [j.Zy]: "portrait" === G
                 }),
                 parentComponent: "Modal",
                 children: [!W && (0, r.jsx)("div", {
-                    className: M.z6,
+                    className: j.z6,
                     children: (0, r.jsx)(d.K0, {
                         variant: "icon-only",
                         icon: e => (0, r.jsx)(d.PGe, {
@@ -119,14 +119,14 @@ function k(e) {
                     ref: e => {
                         f.current = e
                     },
-                    className: M.NE,
+                    className: j.NE,
                     children: (0, r.jsx)("div", {
-                        className: M.S3,
+                        className: j.S3,
                         style: {
                             "--custom-footer-horizontal-padding": `${W?20:16}px`
                         },
                         children: (0, r.jsxs)("div", {
-                            className: M.jE,
+                            className: j.jE,
                             children: [(0, r.jsx)(N.A, {
                                 targetTimeSec: F.target,
                                 parentTransitionState: t,
@@ -135,17 +135,17 @@ function k(e) {
                                 performanceClockStartTime: E,
                                 orientation: G
                             }), K ? (0, r.jsxs)("div", {
-                                ref: $,
-                                className: I.uh,
+                                ref: Y,
+                                className: M.uh,
                                 children: [(0, r.jsxs)("div", {
-                                    className: I.Df,
+                                    className: M.Df,
                                     children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: I.eX,
+                                    className: M.eX,
                                     children: [(0, r.jsx)("div", {
-                                        className: I.uP,
+                                        className: M.uP,
                                         children: (0, r.jsx)("div", {
-                                            className: I.ne,
+                                            className: M.ne,
                                             children: (0, r.jsx)(b.A, {})
                                         })
                                     }), (0, r.jsx)(_.A, {
@@ -153,12 +153,12 @@ function k(e) {
                                     })]
                                 })]
                             }) : (0, r.jsxs)("div", {
-                                className: I.nR,
+                                className: M.nR,
                                 children: [(0, r.jsxs)("div", {
-                                    className: I.uu,
+                                    className: M.uu,
                                     children: [w ? null : (0, r.jsx)(T.A, {}), (0, r.jsx)(y.A, {})]
                                 }), (0, r.jsxs)("div", {
-                                    className: I.NY,
+                                    className: M.NY,
                                     children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(_.A, {
                                         handlePrimaryCtaClick: q
                                     })]

@@ -6,7 +6,7 @@ t.d(a, {
     R6: () => v,
     SX: () => E,
     UB: () => x,
-    YE: () => S
+    YE: () => O
 }), t(938796);
 var n = t(627968),
     i = t(64700),
@@ -152,14 +152,14 @@ function x(e) {
     })
 }
 
-function S(e) {
-    return "CLIP" === e.item.type ? (0, n.jsx)(O, {
+function O(e) {
+    return "CLIP" === e.item.type ? (0, n.jsx)(S, {
         attachment: e.item.originalItem,
         message: e.message
     }) : null
 }
 
-function O(e) {
+function S(e) {
     let {
         attachment: a,
         message: t

@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(708403),
     A = n(260880),
     C = n(303054),
-    y = n(231643),
-    T = n(985018),
+    T = n(231643),
+    y = n(985018),
     S = n(891026),
     E = n(930821);
 let N = [{
@@ -95,7 +95,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
     O = [{
         id: "details",
         name: "Details",
-        group: y.fu.NONE,
+        group: T.fu.NONE,
         render: e => {
             let {
                 loggedEvent: {
@@ -269,7 +269,7 @@ function M() {
         {
             TabBar: I,
             renderSelectedTab: k
-        } = (0, y.Ay)({
+        } = (0, T.Ay)({
             tabs: O
         }, []);
     return (0, a.jsxs)("div", {
@@ -283,11 +283,11 @@ function M() {
                 size: c.$n.Sizes.ICON,
                 onClick: b.eY,
                 children: (0, a.jsx)("span", {
-                    title: T.intl.string(T.t.VkKicb),
+                    title: y.intl.string(y.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": T.intl.string(T.t.VkKicb)
+                        "aria-label": y.intl.string(y.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {

@@ -23,7 +23,7 @@ var a = n(582754),
     j = n(128640),
     A = n(146925),
     C = n(789996);
-let y = {
+let T = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: " #D76C1F, #F79C53",
             light: " #8E2A0B, #D4681C"
@@ -57,7 +57,7 @@ let y = {
             light: " #6881D4, #956CB8, #5491A0"
         }
     },
-    T = {
+    y = {
         [r.Ac.PREMIUM_TENURE_1_MONTH]: {
             dark: o.A,
             light: g.A
@@ -96,8 +96,8 @@ function S() {
     let e = (0, l.A)(),
         t = (0, a.Mw)((0, i.Ay)());
     if (!e) return null;
-    let n = y[e],
-        o = T[e],
+    let n = T[e],
+        o = y[e],
         d = {
             currentBadge: (0, s.e0)(e),
             currentBadgeTextGradient: t ? n?.dark : n?.light,
@@ -106,7 +106,7 @@ function S() {
         c = r.sp.indexOf(e);
     if (c > 0) {
         let e = r.sp[c - 1],
-            n = y[e];
+            n = T[e];
         d.prevBadge = (0, s.e0)(e), d.prevBadgeTextGradient = t ? n?.dark : n?.light
     }
     return d

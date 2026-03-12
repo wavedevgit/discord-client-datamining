@@ -22,45 +22,45 @@ let p = function(e) {
         contentOnly: s = !1,
         zalgo: p = !0,
         preview: A = !1,
-        disableInteraction: f = !1,
-        childrenRepliedMessage: x,
+        disableInteraction: x = !1,
+        childrenRepliedMessage: f,
         childrenExecutedCommand: v,
         childrenHeader: j,
         childrenSystemMessage: N,
-        childrenButtons: b,
-        childrenMessageContent: C,
+        childrenButtons: C,
+        childrenMessageContent: b,
         childrenAccessories: E,
         messageRef: I,
-        focusProps: R = {
+        focusProps: y = {
             offset: {
                 left: 4,
                 right: 4
             }
         },
         hasThread: T,
-        isSystemMessage: y,
+        isSystemMessage: R,
         hasReply: _,
         author: S,
         onMouseEnter: M,
         onMouseLeave: k,
         ...O
-    } = e, P = (0, r.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), w = (0, m.jV)(S?.guildId, P) && (0, d.kz)(S), [G, D] = i.useState(!1), L = i.useCallback(e => {
-        D(!0), M?.(e)
+    } = e, w = (0, r.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), G = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [D, P] = i.useState(!1), L = i.useCallback(e => {
+        P(!0), M?.(e)
     }, [M]), U = i.useCallback(e => {
-        D(!1), k?.(e)
-    }, [k]), B = (0, c.W)({
+        P(!1), k?.(e)
+    }, [k]), $ = (0, c.W)({
         location: "BaseMessage"
-    }), $ = (0, l.jsx)(o.C.Provider, {
+    }), H = (0, l.jsx)(o.C.Provider, {
         value: {
-            animate: G,
-            setAnimate: D
+            animate: D,
+            setAnimate: P
         },
         children: (0, l.jsx)(u.vN3, {
-            ...R,
+            ...y,
             children: (0, l.jsxs)("div", {
                 className: a()(t, {
-                    [g.D7]: w,
-                    [g.e8]: B && S?.displayNameStyles != null && S?.guildId == null,
+                    [g.D7]: G,
+                    [g.e8]: $ && S?.displayNameStyles != null && S?.guildId == null,
                     [g.iE]: !0,
                     [g.kl]: s,
                     [g.oE]: n,
@@ -68,7 +68,7 @@ let p = function(e) {
                     [g.E]: !n,
                     [g.GZ]: p,
                     [g.pR]: T,
-                    [g.X4]: y,
+                    [g.X4]: R,
                     [g.h8]: _
                 }),
                 ref: I,
@@ -76,17 +76,17 @@ let p = function(e) {
                 role: "article",
                 onMouseEnter: L,
                 onMouseLeave: U,
-                children: [x, v, (0, l.jsxs)("div", {
+                children: [f, v, (0, l.jsxs)("div", {
                     className: g.PG,
-                    children: [N, j, null == N && C]
-                }), E, null != b ? (0, l.jsx)("div", {
+                    children: [N, j, null == N && b]
+                }), E, null != C ? (0, l.jsx)("div", {
                     className: g.UD,
-                    children: b
+                    children: C
                 }) : null]
             })
         })
     });
-    return f ? (0, l.jsx)(u.M1G, {
-        children: $
-    }) : $
+    return x ? (0, l.jsx)(u.M1G, {
+        children: H
+    }) : H
 }

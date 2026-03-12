@@ -1,6 +1,6 @@
 /** chunk id: 163233 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => T
 }), n(321073);
 var a = n(627968),
     i = n(64700),
@@ -24,11 +24,11 @@ var a = n(627968),
     A = n(518477),
     C = n(985018);
 
-function y(e) {
+function T(e) {
     let {
         targetElementRef: t,
         onClose: n
-    } = e, [y, T] = i.useState(!1), {
+    } = e, [T, y] = i.useState(!1), {
         trackUserProfileEditAction: S
     } = (0, h.NJ)(), E = (0, s.bG)([v.default], () => v.default.getId()), N = function() {
         let e, t, n = (0, s.bG)([v.default], () => v.default.getId()),
@@ -103,7 +103,7 @@ function y(e) {
                 actions: [o ? {
                     text: C.intl.string(C.t.VSLDly),
                     onClick: () => {
-                        T(!0), d().then(() => {
+                        y(!0), d().then(() => {
                             let e;
                             return e = new p.R({
                                 applicationId: r.application.id
@@ -111,20 +111,20 @@ function y(e) {
                                 action: "WIDGET_ADDED",
                                 ...e.getProfileEditAnalyticsOptions()
                             }), (0, f.XA)(A.jM.WIDGET_ADDED))
-                        }).finally(() => T(!1))
+                        }).finally(() => y(!1))
                     },
-                    loading: y
+                    loading: T
                 } : {
                     text: C.intl.string(C.t["DSJi3+"]),
                     onClick: () => {
                         r.authFlow.initiate({
                             onConfirm: () => {
-                                T(!0), d().finally(() => T(!1))
+                                y(!0), d().finally(() => y(!1))
                             },
                             analyticsLocations: I
                         })
                     },
-                    loading: y
+                    loading: T
                 }]
             })
         }

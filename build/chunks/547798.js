@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(179690),
     A = n(309010),
     C = n(837921),
-    y = n(652215),
-    T = n(327337),
+    T = n(652215),
+    y = n(327337),
     S = n(431804),
     E = n(560774),
     N = n(522759);
@@ -70,7 +70,7 @@ function k() {
                             ...n
                         })
                     }, {
-                        modalKey: T.V
+                        modalKey: y.V
                     })
                 }
             })
@@ -150,7 +150,7 @@ function k() {
                 text: "Trigger Suspicious Sessions Notifications",
                 onClick: () => {
                     o.Bo.post({
-                        url: y.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
+                        url: T.Rsh.AUTH_SESSION_NOTIFICATIONS_DEBUG,
                         rejectWithError: !0
                     })
                 }

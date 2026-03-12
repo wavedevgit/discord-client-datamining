@@ -1,6 +1,6 @@
 /** chunk id: 139210 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -24,15 +24,15 @@ n(272111);
 var j = n(985018),
     A = n(229170);
 let C = (0, r.animated)(p.Ay),
-    y = e => {
+    T = e => {
         let {
             withUnfurlTimeout: t,
             unfurlTimeoutDurationInMilliseconds: n,
             onUnfurlTimeoutComplete: s
         } = e, p = (0, u.go)(), {
-            expansionSpring: y
+            expansionSpring: T
         } = i.useContext(_.PW), {
-            onCtxMenuOpen: T,
+            onCtxMenuOpen: y,
             onCtxMenuClose: S,
             onCtxMenuSelect: E,
             isExpanded: N,
@@ -63,7 +63,7 @@ let C = (0, r.animated)(p.Ay),
                 logotypeStyle: {
                     height: 24,
                     maxWidth: 92,
-                    transform: (0, r.to)([y.to({
+                    transform: (0, r.to)([T.to({
                         range: [0, 1],
                         output: [1, 1]
                     })], e => `scale(${e})`)
@@ -75,7 +75,7 @@ let C = (0, r.animated)(p.Ay),
                 [A.tT]: w
             }),
             style: {
-                transform: (0, r.to)([y.to({
+                transform: (0, r.to)([T.to({
                     range: [0, 1],
                     output: [6, 0]
                 })], e => `translateY(${e}px)`)
@@ -83,7 +83,7 @@ let C = (0, r.animated)(p.Ay),
             children: [(0, a.jsx)(r.animated.div, {
                 className: A.Tu,
                 style: {
-                    opacity: (0, x.a)(y.to({
+                    opacity: (0, x.a)(T.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
@@ -94,7 +94,7 @@ let C = (0, r.animated)(p.Ay),
             }), (0, a.jsxs)(r.animated.div, {
                 className: A.P0,
                 style: {
-                    opacity: (0, x.a)(y.to({
+                    opacity: (0, x.a)(T.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
@@ -117,7 +117,7 @@ let C = (0, r.animated)(p.Ay),
                         onTimeoutComplete: s
                     })
                 }) : (0, a.jsx)(h.C, {
-                    onOpen: T,
+                    onOpen: y,
                     onClose: S,
                     onSelect: E,
                     questContent: d.uF.QUEST_BAR_V2,

@@ -2,10 +2,10 @@
 a.d(t, {
     A: () => _
 });
-var n, r = a(627968);
+var n, l = a(627968);
 a(64700);
-var l = a(503698),
-    i = a.n(l),
+var r = a(503698),
+    i = a.n(r),
     s = a(953727),
     c = a(59937),
     o = ((n = {}).LEFT = "LEFT", n.RIGHT = "RIGHT", n.UP = "UP", n.DOWN = "DOWN", n.UP_LEFT = "UP_LEFT", n.DOWN_RIGHT = "DOWN_RIGHT", n);
@@ -14,13 +14,13 @@ let u = e => {
         width: t = 24,
         height: a = 24,
         color: n = "currentColor",
-        direction: l,
+        direction: r,
         foreground: o,
         className: u,
         title: _,
         ...d
     } = e;
-    return (0, r.jsxs)("svg", {
+    return (0, l.jsxs)("svg", {
         ...(0, s.A)(d),
         width: t,
         height: a,
@@ -41,11 +41,11 @@ let u = e => {
                 default:
                     throw Error(`Invalid Direction ${e}`)
             }
-        }(l)),
+        }(r)),
         viewBox: "0 0 24 24",
-        children: [null != _ ? (0, r.jsx)("title", {
+        children: [null != _ ? (0, l.jsx)("title", {
             children: _
-        }) : null, (0, r.jsx)("polygon", {
+        }) : null, (0, l.jsx)("polygon", {
             className: o,
             fill: n,
             fillRule: "nonzero",

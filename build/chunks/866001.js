@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(231545),
     A = n(708403),
     C = n(260880),
-    y = n(303054),
-    T = n(231643),
+    T = n(303054),
+    y = n(231643),
     S = n(652215),
     E = n(704623),
     N = n(930821);
@@ -60,7 +60,7 @@ function R(e) {
         trace: e
     })), [t]);
     return (0, a.jsx)(h.IpV, {
-        children: (0, a.jsx)(y.A, {
+        children: (0, a.jsx)(T.A, {
             columns: k,
             data: n
         })
@@ -69,7 +69,7 @@ function R(e) {
 let O = [{
     id: "action",
     name: "Action",
-    group: T.fu.NONE,
+    group: y.fu.NONE,
     render(e) {
         let {
             actionLog: t
@@ -99,7 +99,7 @@ let O = [{
 }, {
     id: "traces",
     name: "Store Handlers",
-    group: T.fu.NONE,
+    group: y.fu.NONE,
     render(e) {
         let {
             actionLog: t
@@ -121,7 +121,7 @@ function w(e) {
                 className: E.ik
             }), "Error"]
         }),
-        group: T.fu.NONE,
+        group: y.fu.NONE,
         render(e) {
             let {
                 actionLog: t
@@ -149,7 +149,7 @@ function w(e) {
     }] : O, [t]), {
         TabBar: r,
         renderSelectedTab: o
-    } = (0, T.Ay)({
+    } = (0, y.Ay)({
         tabs: s
     }, [s]);
     return (0, a.jsxs)(C.A, {
@@ -259,7 +259,7 @@ function P() {
             c(r), f(e)
         }, [r]),
         C = t.trim().length > 0,
-        T = i.useMemo(() => C ? m : g ? d : r, [r, m, C, g, d]),
+        y = i.useMemo(() => C ? m : g ? d : r, [r, m, C, g, d]),
         S = g ? "Enable Event Tracking" : "Pause Event Tracking";
     return (0, a.jsxs)("div", {
         ref: e,
@@ -282,9 +282,9 @@ function P() {
                 onClear: () => n(""),
                 placeholder: "Search by action name"
             })]
-        }), (0, a.jsx)(y.A, {
+        }), (0, a.jsx)(T.A, {
             columns: D,
-            data: T,
+            data: y,
             selectedRowKey: v?.id.toString(),
             onClickRow: e => b(e.actionLog)
         }), null != v && (0, a.jsx)(w, {

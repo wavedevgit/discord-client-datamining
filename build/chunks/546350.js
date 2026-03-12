@@ -18,9 +18,9 @@ function o(e) {
         onUnfurlDismissed: u
     } = e, m = d && !t && !c, [h, p] = a.useState(m ? "unfurledWithTimeout" : "none"), x = (0, i.bG)([l.A], () => l.A.useReducedMotion), [g, _] = a.useState(m), [f, v] = a.useState(!g), [b, j] = a.useState(!0), A = a.useRef(o), C = a.useCallback(e => {
         n || (v(!1), _(e))
-    }, [n]), y = a.useCallback(() => {
+    }, [n]), T = a.useCallback(() => {
         C(!0)
-    }, [C]), T = a.useCallback(() => {
+    }, [C]), y = a.useCallback(() => {
         C(!1)
     }, [C]), S = t ? r.ZV : r.Ko, [{
         expansionSpring: E
@@ -75,8 +75,8 @@ function o(e) {
     return {
         isExpanded: g,
         setIsExpanded: C,
-        expandQuestBar: y,
-        collapseQuestBar: T,
+        expandQuestBar: T,
+        collapseQuestBar: y,
         isExpansionAnimationComplete: f,
         isVisibilityAnimationAtRest: b,
         expansionSpring: E,

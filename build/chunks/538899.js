@@ -6,8 +6,8 @@ var a = n(627968),
     i = n(64700),
     r = n(158954),
     s = n(311907),
-    o = n(562465),
-    l = n(732955),
+    l = n(562465),
+    o = n(732955),
     c = n(843472),
     d = n(608299),
     u = n(425059),
@@ -28,8 +28,8 @@ var a = n(627968),
     y = n(652215),
     v = n(818348),
     j = n(985018),
-    M = n(181549);
-async function R(e) {
+    R = n(181549);
+async function M(e) {
     let t, {
             thread: n,
             attachments: a,
@@ -37,13 +37,13 @@ async function R(e) {
             guild: r,
             onClose: s
         } = e,
-        l = A.default.castChannelIdAsMessageId(n.id),
+        o = A.default.castChannelIdAsMessageId(n.id),
         m = new u.A;
     m.on("progress", e => {
         let t = (0, g.o2)(r.id);
         e.currentSize > t && (m.cancel(), i(!1), s(), (0, T.V)(n, (0, C.LJ)(a)))
     });
-    let p = h.A.getMessage(n.id, l),
+    let p = h.A.getMessage(n.id, o),
         b = null != p ? p.attachments : [];
     i(!0);
     try {
@@ -54,8 +54,8 @@ async function R(e) {
     }
     let I = [...b, ...t.map((e, t) => (0, x.OW)(e, t)) ?? []];
     try {
-        await o.Bo.patch({
-            url: y.Rsh.MESSAGE(n.id, l),
+        await l.Bo.patch({
+            url: y.Rsh.MESSAGE(n.id, o),
             body: {
                 attachments: I
             },
@@ -70,7 +70,7 @@ function N(e) {
     let {
         threadId: t,
         attachments: n,
-        sendMessage: o,
+        sendMessage: l,
         transitionState: c,
         onClose: d
     } = e, u = (0, s.bG)([p.A], () => p.A.getChannel(t), [t]), _ = (0, s.bG)([b.A], () => b.A.getGuild(u?.getGuildId()), [u]), f = (0, s.bG)([p.A], () => p.A.getChannel(u?.parent_id), [u]), h = n[0]?.item, [g, A] = i.useState(null);
@@ -88,12 +88,12 @@ function N(e) {
         y = i.useCallback(() => {
             (0, I.jh)({
                 added: !1
-            }), o(), d()
-        }, [o, d]),
+            }), l(), d()
+        }, [l, d]),
         N = i.useCallback(() => {
             null != u && null != _ && ((0, I.jh)({
                 added: !0
-            }), R({
+            }), M({
                 thread: u,
                 attachments: n,
                 setIsUploading: C,
@@ -106,7 +106,7 @@ function N(e) {
         subtitle: j.intl.string(j.t["0Ycgw5"]),
         transitionState: c,
         onClose: d,
-        actionBarInput: (0, a.jsx)(l.QWc, {
+        actionBarInput: (0, a.jsx)(o.QWc, {
             variant: "secondary",
             disabled: T,
             onClick: d,
@@ -130,7 +130,7 @@ function N(e) {
                 threadId: t,
                 goToThread: v.tE,
                 overrideMedia: x,
-                className: M.u
+                className: R.u
             })
         })
     })

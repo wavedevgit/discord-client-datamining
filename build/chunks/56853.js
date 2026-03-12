@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(710969),
     A = n(792620),
     C = n(814793),
-    y = n(988436),
-    T = n(918338),
+    T = n(988436),
+    y = n(918338),
     S = n(270045),
     E = n(57718),
     N = n(398025),
@@ -106,7 +106,7 @@ function L(e) {
                 })]
             }), 0 === x && (0, a.jsx)(u.QWc, {
                 text: M.intl.string(M.t["yKJi+/"]),
-                onClick: () => (0, y.i)({
+                onClick: () => (0, T.i)({
                     quest: t,
                     errorHints: n,
                     sourceQuestContent: o
@@ -126,7 +126,7 @@ function B(e) {
         warningHints: l,
         isVisibleInViewport: r,
         onCtxMenuClose: m,
-        onCtxMenuOpen: y,
+        onCtxMenuOpen: T,
         onCtxMenuSelect: N,
         sourceQuestContent: w
     } = e, B = (0, x.O)(e => e.getErrorHints(t.id)), G = B.length > 0 ? B : s, F = (0, A.IO)(t), V = (0, h.Ay)(), W = ((0, c.Mw)(V) ? D.NJ8.DARK : D.NJ8.LIGHT) === D.NJ8.DARK, H = (0, v.LS)(t), K = t.userStatus?.claimedAt != null, z = (0, v.S5)(t.config.expiresAt, {
@@ -153,7 +153,7 @@ function B(e) {
         className: P.kL,
         children: [(0, a.jsx)("div", {
             className: P.IC,
-            children: (0, a.jsx)(T.A, {
+            children: (0, a.jsx)(y.A, {
                 quest: t,
                 isInteracting: n,
                 hideAssets: !r,
@@ -204,7 +204,7 @@ function B(e) {
                             })
                         })
                     }), (0, a.jsx)(S.C, {
-                        onOpen: y,
+                        onOpen: T,
                         onClose: m,
                         onSelect: N,
                         questContent: _.uF.QUEST_HOME_DESKTOP,

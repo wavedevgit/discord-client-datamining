@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(206835),
     A = n(182592),
     C = n(183555),
-    y = n(950191),
-    T = n(657331),
+    T = n(950191),
+    y = n(657331),
     S = n(718019),
     E = n(31432),
     N = n(915614),
@@ -66,7 +66,7 @@ function ei(e) {
         highlightBadge: ei,
         openedAt: es,
         className: el
-    } = e, er = __OVERLAY__, eo = (0, y.Ay)(t.id, void 0), {
+    } = e, er = __OVERLAY__, eo = (0, T.Ay)(t.id, void 0), {
         analyticsLocations: ed
     } = (0, p.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ec = (0, C.pb)({
         layout: "ACCOUNT_POPOUT",
@@ -97,8 +97,8 @@ function ei(e) {
         eC = (0, j.A)({
             analyticsLocations: ed
         }),
-        ey = (0, W.TW)(t),
-        eT = i.useRef(null),
+        eT = (0, W.TW)(t),
+        ey = i.useRef(null),
         eS = i.useRef(null),
         eE = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
         eN = i.useMemo(() => (0, _.A)(), []),
@@ -109,7 +109,7 @@ function ei(e) {
         }, 500)
     }, []);
     let eR = e => {
-            n?.(), (0, T.openUserProfileModal)({
+            n?.(), (0, y.openUserProfileModal)({
                 customStatusPrompt: eN,
                 sourceAnalyticsLocations: ed,
                 ...ec,
@@ -166,7 +166,7 @@ function ei(e) {
                             themeType: ee.d.POPOUT,
                             onOpenProfile: er ? void 0 : eR
                         }), (0, a.jsx)(P.A, {
-                            ref: eT,
+                            ref: ey,
                             user: t,
                             themeType: ee.d.POPOUT,
                             onCloseProfile: n,
@@ -206,7 +206,7 @@ function ei(e) {
                             widgets: eo?.widgets,
                             onOpenUserProfileModal: eR
                         }), (0, a.jsx)(I.A, {
-                            isPremiumUser: ey,
+                            isPremiumUser: eT,
                             onInteraction: n
                         }), (0, a.jsx)(R.A, {
                             user: t,

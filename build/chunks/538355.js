@@ -20,17 +20,17 @@ function p(e, t) {
     let {
         hideSimpleEmbedContent: p,
         formatInline: A = !1,
-        noStyleAndInteraction: f = !1,
-        isInteracting: x = !1,
+        noStyleAndInteraction: x = !1,
+        isInteracting: f = !1,
         allowHeading: v = !1,
         allowList: j = !1,
         allowLinks: N = !1,
-        allowDevLinks: b = !1,
-        previewLinkTarget: C = !1,
+        allowDevLinks: C = !1,
+        previewLinkTarget: b = !1,
         viewingChannelId: E
     } = t, I = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [R, T] = i.useState(!1), y = i.useCallback(e => {
+    }), [y, T] = i.useState(!1), R = i.useCallback(e => {
         e && T(!0)
     }, []);
     return i.useEffect(() => {
@@ -61,26 +61,26 @@ function p(e, t) {
                         channelId: e.channel_id,
                         viewingChannelId: E,
                         guildId: (0, a.U)(e),
-                        setHasSpoilerEmbeds: y
+                        setHasSpoilerEmbeds: R
                     },
                     children: (0, l.jsx)(g, {
                         content: e.content
                     })
                 })
             }),
-            hasSpoilerEmbeds: R,
+            hasSpoilerEmbeds: y,
             hasBailedAst: !1
         } : (0, r.Ay)(e, {
             hideSimpleEmbedContent: p,
             formatInline: A,
-            noStyleAndInteraction: f,
-            isInteracting: x,
+            noStyleAndInteraction: x,
+            isInteracting: f,
             allowHeading: v,
             allowList: j,
             allowLinks: N,
-            allowDevLinks: b,
-            previewLinkTarget: C,
+            allowDevLinks: C,
+            previewLinkTarget: b,
             viewingChannelId: E
         })
-    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, p, A, f, x, v, j, N, C, b, E, I.enabled, R])
+    }, [e.content, e.customRenderedContent, e.embeds, e.interaction, e.state, e.type, p, A, x, f, v, j, N, b, C, E, I.enabled, y])
 }

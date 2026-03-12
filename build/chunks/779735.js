@@ -30,7 +30,7 @@ let g = e => {
         root_node_id: T,
         success_node_id: N,
         fail_node_id: I
-    } = n, [S, y] = a.useState(T), [k, E] = a.useState(void 0), [w, M] = a.useState(void 0), [R, L] = a.useState([]), [O, G] = a.useState(void 0), [D, U] = a.useState(void 0), [P, B] = a.useState(void 0);
+    } = n, [S, y] = a.useState(T), [k, E] = a.useState(void 0), [w, R] = a.useState(void 0), [M, L] = a.useState([]), [O, G] = a.useState(void 0), [D, U] = a.useState(void 0), [P, B] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -45,7 +45,7 @@ let g = e => {
                 ...e,
                 destination: ["", a.button.target]
             });
-            if (L([...R, e]), null != a.key && v?.(a.key), E(void 0), M(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
+            if (L([...M, e]), null != a.key && v?.(a.key), E(void 0), R(void 0), t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
                 let e = t.record.id;
                 d.Ay.trackWithMetadata(p.HAw.IAR_NAVIGATE, {
                     message_id: e,
@@ -58,12 +58,12 @@ let g = e => {
             y(l)
         },
         V = async e => {
-            let l = b ? await (0, m.zC)(n, t, [...R, e]) : await (0, m.bo)(n, t, [...R, e], f),
+            let l = b ? await (0, m.zC)(n, t, [...M, e]) : await (0, m.bo)(n, t, [...M, e], f),
                 a = l?.body?.report_id;
             null != a && G(a), U(j[e.nodeRef].report_type), A?.(a)
         }, F = () => {
-            if (R.length < 1) return;
-            let e = [...R],
+            if (M.length < 1) return;
+            let e = [...M],
                 n = e.pop(),
                 l = n?.nodeRef ?? T;
             if (t.name === _.t0.MESSAGE || t.name === _.t0.FIRST_DM) {
@@ -76,7 +76,7 @@ let g = e => {
                     next_node: j[l].id
                 })
             }
-            E(n?.multiSelect?.state), M(n?.textInput), y(l), L(e), v?.("..")
+            E(n?.multiSelect?.state), R(n?.textInput), y(l), L(e), v?.("..")
         }, W = a.useCallback((e, t) => {
             let n;
             for (let t in j) {
@@ -87,14 +87,14 @@ let g = e => {
                 }
             }
             if (null == n) return;
-            let l = R.findIndex(e => e.nodeRef === n.id);
+            let l = M.findIndex(e => e.nodeRef === n.id);
             if (l >= 0) {
-                let e = R.slice(0, l),
-                    t = R[l];
-                M(t?.textInput), E(t?.multiSelect?.state), L(e)
-            } else L([]), M(void 0), E(void 0);
+                let e = M.slice(0, l),
+                    t = M[l];
+                R(t?.textInput), E(t?.multiSelect?.state), L(e)
+            } else L([]), R(void 0), E(void 0);
             B(t), y(n.id)
-        }, [j, R]);
+        }, [j, M]);
     a.useEffect(() => {
         null != P && B(void 0)
     }, [P]);
@@ -133,7 +133,7 @@ let g = e => {
                         node: e,
                         reportType: t,
                         reportSubType: D,
-                        history: R,
+                        history: M,
                         onModalClose: g.onClose,
                         onSelectChild: H,
                         onNavigateBack: F,

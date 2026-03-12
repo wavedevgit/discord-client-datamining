@@ -41,17 +41,17 @@ function g(e) {
         onScrubForward: R,
         "data-testid": L
     } = e, {
-        quest: I,
-        sourceQuestContent: M,
-        useNewProgressBarStyling: j
+        quest: M,
+        sourceQuestContent: j,
+        useNewProgressBarStyling: I
     } = l.useContext(m.VideoQuestModalContext), {
         contRef: w,
         boundingRect: k,
         handleMouseEnter: O,
         handleMouseLeave: P,
         handleMouseMove: Q,
-        handleKeyDown: V,
-        hoveredAtX: U,
+        handleKeyDown: U,
+        hoveredAtX: V,
         maxSeekableX: B,
         isHovering: F,
         handleClick: G,
@@ -64,12 +64,12 @@ function g(e) {
         duration: b,
         percent: i,
         onClick: N
-    }), Y = l.useMemo(() => null == U || null == k ? null : (0, o.rB)((0, o.hc)(U, k, b)), [U, k, b]), $ = l.useMemo(() => {
+    }), $ = l.useMemo(() => null == V || null == k ? null : (0, o.rB)((0, o.hc)(V, k, b)), [V, k, b]), Y = l.useMemo(() => {
         if (null != k) return (0, o.TO)(i, k)
     }, [i, k]), {
         currentPxSpring: H
     } = (0, u.zhh)({
-        currentPxSpring: $ ?? 0,
+        currentPxSpring: Y ?? 0,
         config: x
     }, g ? "animate-always" : "animate-never"), {
         indicators: z,
@@ -81,7 +81,7 @@ function g(e) {
         timelineRect: k,
         videoDuration: b,
         targetSec: t
-    }), Z = l.useMemo(() => W($), [$, W]), ee = l.useMemo(() => W(U), [U, W]), et = !A && j, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
+    }), Z = l.useMemo(() => W(Y), [Y, W]), ee = l.useMemo(() => W(V), [V, W]), et = !A && I, en = k?.width != null && k?.width !== 0 ? k?.width : 1, er = l.useMemo(() => ((e, t) => {
         let n = [{
             startPx: 0,
             endPx: t,
@@ -110,8 +110,8 @@ function g(e) {
         ref: w,
         "data-testid": L,
         style: {
-            "--custom-timeline-height": `${j||F?4:2}px`,
-            "--custom-initial-timeline-height": `${j?4:2}px`
+            "--custom-timeline-height": `${I||F?4:2}px`,
+            "--custom-initial-timeline-height": `${I?4:2}px`
         },
         children: (0, r.jsxs)(u.DUT, {
             className: s()(v.KF, {
@@ -122,13 +122,13 @@ function g(e) {
             onMouseEnter: O,
             onMouseLeave: P,
             onMouseMove: Q,
-            onKeyDown: V,
+            onKeyDown: U,
             tabIndex: S ? void 0 : -1,
             children: [(0, r.jsx)("div", {
                 className: v.G9,
                 ...K,
                 children: null != k && er.map((e, t) => (0, r.jsx)(c.A, {
-                    showGlow: T !== f.Q6.ENDED && null != $ && $ > e.startPx,
+                    showGlow: T !== f.Q6.ENDED && null != Y && Y > e.startPx,
                     segment: e,
                     currentPxSpring: H,
                     animatingIndex: X,
@@ -138,7 +138,7 @@ function g(e) {
                     preloadedBuffers: _,
                     maxSeekableX: B,
                     interactionEnabled: S,
-                    useNewStyles: j,
+                    useNewStyles: I,
                     progressFillClassName: et ? h.QR : h.UA,
                     glowClassName: et ? h.Um : h.U5
                 }, t))
@@ -146,25 +146,25 @@ function g(e) {
                 let n = X === e.index,
                     l = e.targetSec;
                 return (0, r.jsx)(p.A, {
-                    currentPx: null != $ ? $ : 0,
+                    currentPx: null != Y ? Y : 0,
                     indicator: e,
                     isAnimated: n,
                     expansionSpring: J,
-                    quest: I,
-                    sourceQuestContent: M,
+                    quest: M,
+                    sourceQuestContent: j,
                     onMouseEnter: () => q(e.index),
                     onMouseLeave: () => q(null),
                     onClick: null != N ? () => N(l) : void 0
                 }, `indicator-${t}`)
-            }), F && null != Y && n && !ee && (0, r.jsx)(u.Text, {
+            }), F && null != $ && n && !ee && (0, r.jsx)(u.Text, {
                 className: v.Ey,
                 variant: "text-xs/normal",
                 color: "always-white",
                 style: {
-                    left: null != U ? `${U}px` : "auto"
+                    left: null != V ? `${V}px` : "auto"
                 },
-                children: Y
-            }), F && S && null != $ && !Z && (0, r.jsx)(a.animated.div, {
+                children: $
+            }), F && S && null != Y && !Z && (0, r.jsx)(a.animated.div, {
                 className: v.Ub,
                 style: {
                     left: H.to(e => `${e}px`)

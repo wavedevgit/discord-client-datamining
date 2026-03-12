@@ -3,8 +3,8 @@ a.d(t, {
     A: () => s
 });
 var n = a(64700),
-    r = a(473193),
-    l = a(203982),
+    l = a(473193),
+    r = a(203982),
     i = a(652215);
 
 function s(e) {
@@ -12,12 +12,12 @@ function s(e) {
         shouldSubscribe: t,
         subscribeToGroupId: a,
         authorId: s
-    } = e, c = n.useContext(r.C);
+    } = e, c = n.useContext(l.C);
     n.useEffect(() => {
         if (!t || null == c || null == a || null == s) return;
         let {
             setAnimate: e
         } = c;
-        return l._.subscribeKeyed(i.zOV.ANIMATE_CHAT_AVATAR, `${a}:${s}`, e), () => void l._.unsubscribeKeyed(i.zOV.ANIMATE_CHAT_AVATAR, `${a}:${s}`, e)
+        return r._.subscribeKeyed(i.zOV.ANIMATE_CHAT_AVATAR, `${a}:${s}`, e), () => void r._.unsubscribeKeyed(i.zOV.ANIMATE_CHAT_AVATAR, `${a}:${s}`, e)
     }, [t, s, a, c])
 }

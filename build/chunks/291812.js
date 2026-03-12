@@ -1,9 +1,9 @@
 /** chunk id: 291812 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => x,
+    Ay: () => f,
     _A: () => A,
-    sP: () => f
+    sP: () => x
 });
 var l = n(627968),
     i = n(64700),
@@ -23,7 +23,7 @@ function A(e, t) {
     return e.type === m.lAJ.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(m.pr7.SOURCE_MESSAGE_DELETED) ? h.intl.string(h.t.JOtgSw) : t
 }
 
-function f(e, t) {
+function x(e, t) {
     let {
         message: n
     } = t, {
@@ -31,7 +31,7 @@ function f(e, t) {
     } = e;
     return (0, u.A)(e, t, ["message"]) && n.content === l.content && n.state === l.state && n.editedTimestamp?.toString() === l.editedTimestamp?.toString()
 }
-let x = i.memo(function(e) {
+let f = i.memo(function(e) {
     let {
         className: t,
         message: n,
@@ -39,10 +39,10 @@ let x = i.memo(function(e) {
         content: r,
         onUpdate: u,
         contentRef: h,
-        compact: f
-    } = e, x = n.state === m.cmJ.SEND_FAILED, v = n.state === m.cmJ.SENDING, j = n.isCommandType(), N = n.editedTimestamp?.toString(), b = i.useRef(!1);
+        compact: x
+    } = e, f = n.state === m.cmJ.SEND_FAILED, v = n.state === m.cmJ.SENDING, j = n.isCommandType(), N = n.editedTimestamp?.toString(), C = i.useRef(!1);
     return i.useLayoutEffect(() => {
-        b.current ? null != u && u() : b.current = !0
+        C.current ? null != u && u() : C.current = !0
     }, [u, n.content, r, N, s]), (0, l.jsxs)("div", {
         id: (0, c.CJ)(n),
         ref: h,
@@ -50,13 +50,13 @@ let x = i.memo(function(e) {
             [g.BK]: !0,
             [g.Tn]: v && !j,
             [g.nB]: "rtl" === o()(n.content),
-            [g.Ix]: x,
+            [g.Ix]: f,
             [g.w3]: n.isUnsupported
         }),
         children: [s ?? A(n, r), (0, l.jsx)(d.A, {
             message: n,
-            compact: f,
+            compact: x,
             location: d.O.WITH_CONTENT
         })]
     })
-}, f)
+}, x)

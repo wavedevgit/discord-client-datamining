@@ -3,32 +3,32 @@ a.d(t, {
     e: () => c
 });
 var n = a(627968),
-    r = a(64700),
-    l = a(503698),
-    i = a.n(l),
+    l = a(64700),
+    r = a(503698),
+    i = a.n(r),
     s = a(167196);
 
 function c() {
-    let [e, t] = r.useState(!1);
+    let [e, t] = l.useState(!1);
     return {
         isTruncated: e,
-        ExpandableTextContainer: r.memo(function(e) {
+        ExpandableTextContainer: l.memo(function(e) {
             let {
                 showAll: a = !1,
-                className: r,
-                children: l,
+                className: l,
+                children: r,
                 lineClamp: c = 2
             } = e;
             return (0, n.jsx)("div", {
                 ref: e => {
                     null != e && t(e.scrollHeight - e.clientHeight > 1)
                 },
-                className: i()(s.I, r),
+                className: i()(s.I, l),
                 style: a ? void 0 : {
                     lineClamp: c,
                     WebkitLineClamp: c
                 },
-                children: l
+                children: r
             })
         })
     }
