@@ -1,5 +1,5 @@
 /** chunk id: 53516 params = (module,exports,require) **/
-i.d(e, {
-    V: () => n
+n.d(e, {
+    V: () => i
 });
-let n = "PHONE_VERIFICATION_MODAL_KEY"
+let i = "PHONE_VERIFICATION_MODAL_KEY"

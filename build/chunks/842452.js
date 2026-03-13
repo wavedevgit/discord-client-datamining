@@ -50,18 +50,18 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 onContextMenu: H,
                 renderChildNode: F,
                 folderButtonSize: K,
-                folderButtonContent: W,
-                "aria-setsize": Y,
+                folderButtonContent: Y,
+                "aria-setsize": W,
                 "aria-posinset": z
             } = e,
             {
                 id: q,
                 name: X,
-                children: J
+                children: Q
             } = u,
-            [Q, $] = s.useState(!1),
+            [J, $] = s.useState(!1),
             [Z, ee] = s.useState(!1),
-            et = Q || Z,
+            et = J || Z,
             en = (0, m.qK)("FolderItem");
         s.useEffect(() => {
             w && $(!1)
@@ -84,7 +84,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
             ee(e)
         }, []), er = s.useCallback(e => {
             ("ArrowRight" === e.key && !O || "ArrowLeft" === e.key && O) && B()
-        }, [B, O]), ea = null != X && "" !== X ? X : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = J.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
+        }, [B, O]), ea = null != X && "" !== X ? X : null != U && "" !== U ? U : S.intl.string(S.t.xV9hVh), eo = (0, c.Vd)(`${q}`), ec = `folder-items-${q}`, ed = (t = Q.length, n = (0, h.rdh)(h.LU0.modules.guildbar.FOLDER_SIZE), l = (0, h.rdh)(h.LU0.modules.guildbar.AVATAR_SIZE), t * (l + (o = (0, h.rdh)(h.LU0.space.SPACE_XS))) - o + (o - (n - l) / 2) + (0, h.rdh)(h.LU0.space.SPACE_4)), eu = (0, h.pnh)(!ei && O, {
             from: {
                 height: 0
             },
@@ -100,7 +100,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
         }), eh = s.useCallback(e => g?.(q, e), [g, q]), eA = (0, i.jsxs)(I.c, {
             children: [(0, i.jsx)(f.A, {
                 disabled: ei || O,
-                hovered: Q,
+                hovered: J,
                 selected: R,
                 unread: G,
                 className: v.Io
@@ -134,8 +134,8 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         onHoverChange: $,
                         onKeyDown: er,
                         treeItemProps: eo,
-                        folderButtonContent: W,
-                        "aria-setsize": Y,
+                        folderButtonContent: Y,
+                        "aria-setsize": W,
                         "aria-posinset": z
                     })
                 })
@@ -171,7 +171,7 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         height: e.height.to(e => e * ed)
                     },
                     "aria-label": u.name,
-                    children: J.map((t, n) => F(t, n, J.length, e.height))
+                    children: Q.map((t, n) => F(t, n, Q.length, e.height))
                 }, s)
             }), P && O ? (0, i.jsx)(C.qv, {
                 name: ea,

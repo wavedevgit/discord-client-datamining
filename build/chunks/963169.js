@@ -1,16 +1,16 @@
 /** chunk id: 963169 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     MS: () => a,
     OE: () => o,
     Qb: () => c
 });
-var n = i(73153),
-    r = i(976860),
-    l = i(954571),
-    s = i(652215);
+var i = n(73153),
+    r = n(976860),
+    l = n(954571),
+    s = n(652215);
 
 function a() {
-    n.h.dispatch({
+    i.h.dispatch({
         type: "ROUTE_CHANGED"
     })
 }

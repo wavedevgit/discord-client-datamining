@@ -290,14 +290,14 @@ function K() {
                 }
             return e
         }(),
-        i = (e = n, t = [], T.A.getSortedPrivateChannels().forEach(n => W(e, t, null, n.id)), L.Ay.getFlattenedGuildIds().forEach(n => {
+        i = (e = n, t = [], T.A.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), L.Ay.getFlattenedGuildIds().forEach(n => {
             if (null == n) return;
             let i = v.Ay.getSelectableChannelIds(n),
                 s = x.A.getActiveJoinedUnreadThreadsForGuild(n);
             i.forEach(i => {
-                W(e, t, n, i);
+                Y(e, t, n, i);
                 let l = s[i] ?? {};
-                for (let i in l) W(e, t, n, i)
+                for (let i in l) Y(e, t, n, i)
             })
         }), d().sortBy(t, e => e.sortOrder)),
         s = d().uniq(i.map(e => e.guildId)).filter(G.Vq);
@@ -312,7 +312,7 @@ function K() {
     }
 }
 
-function W(e, t, n, i) {
+function Y(e, t, n, i) {
     if (null == i) return;
     let s = T.A.getChannel(i);
     if (null == s || !S.Le.has(s.type) && M.Ay.isGuildOrCategoryOrChannelMuted(n, s.id)) return;
@@ -352,7 +352,7 @@ function W(e, t, n, i) {
             if (null != n) {
                 let e = U.default.extractTimestamp(n);
                 if (Date.now() - e > z) return 8;
-                if (Date.now() - e > Y) return 6
+                if (Date.now() - e > W) return 6
             }
             if (i.isThread()) {
                 let e = (0, I.l)(i);
@@ -377,7 +377,7 @@ function W(e, t, n, i) {
         messages: []
     })
 }
-let Y = 2 * D.A.Millis.DAY,
+let W = 2 * D.A.Millis.DAY,
     z = 10 * D.A.Millis.DAY;
 
 function q(e) {

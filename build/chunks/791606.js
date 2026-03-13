@@ -1,28 +1,28 @@
 /** chunk id: 791606 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => a
 });
-var i = n(627968);
-n(64700);
-var r = n(953727);
+var l = t(627968);
+t(64700);
+var r = t(953727);
 
 function a(e) {
     let {
-        width: t = 32,
-        height: n = 32,
+        width: n = 32,
+        height: t = 32,
         color: a = "currentColor",
-        ...l
+        ...s
     } = e;
-    return (0, i.jsxs)("svg", {
-        ...(0, r.A)(l),
-        width: t,
-        height: n,
+    return (0, l.jsxs)("svg", {
+        ...(0, r.A)(s),
+        width: n,
+        height: t,
         viewBox: "0 0 12 12",
         fill: "none",
-        children: [(0, i.jsx)("path", {
+        children: [(0, l.jsx)("path", {
             d: "M7.25 1H4.75V7.25H7.25V1Z",
             fill: a
-        }), (0, i.jsx)("path", {
+        }), (0, l.jsx)("path", {
             d: "M4.75 9.75C4.75 10.4167 5.33333 11 6 11C6.66667 11 7.25 10.4167 7.25 9.75C7.25 9.08333 6.66667 8.5 6 8.5C5.33333 8.5 4.75 9.08333 4.75 9.75Z",
             fill: a
         })]

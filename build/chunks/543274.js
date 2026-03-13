@@ -57,18 +57,18 @@ function v(e) {
             openInPopout: B,
             analyticsLocation: F
         })
-    }, [t, B, F, H]), W = [];
-    L || W.push(r.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && W.push(r.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || W.push(r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
-    let Y = s.useRef(!1),
+    }, [t, B, F, H]), Y = [];
+    L || Y.push(r.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && Y.push(r.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || Y.push(r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+    let W = s.useRef(!1),
         z = s.useRef(null);
     return (0, i.jsx)(x.Ay, {
-        contentTypes: W,
+        contentTypes: Y,
         children: e => {
             let {
                 visibleContent: s,
                 markAsDismissed: l
             } = e, c = s === r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !M;
-            return Y.current && !c && l(S.i.AUTO_DISMISS), Y.current !== c && (Y.current = c), (0, i.jsx)(o.YNO, {
+            return W.current && !c && l(S.i.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(o.YNO, {
                 targetElementRef: z,
                 fixed: !0,
                 shouldShow: M && (v === N.P.ACTIVITY || null == v),

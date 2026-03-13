@@ -1,40 +1,40 @@
 /** chunk id: 32167 params = (module,exports,require) **/
 i.d(t, {
-    default: () => u
+    default: () => o
 });
 var s = i(627968),
-    n = i(64700),
-    a = i(158954),
-    l = i(397927),
+    l = i(64700),
+    n = i(158954),
+    a = i(397927),
     r = i(365258),
-    d = i(929120),
-    c = i(985018);
+    c = i(929120),
+    d = i(985018);
 
-function u(e) {
+function o(e) {
     let {
         direction: t,
         affectedGuildIds: i,
-        settingName: u,
-        onClose: o,
+        settingName: o,
+        onClose: u,
         transitionState: m
     } = e, x = t === r.AI.RESTRICTING, {
         title: h,
         subtitle: j,
-        confirmText: f,
-        toastContent: I
-    } = (0, r.ae)(x, u), b = (0, n.useMemo)(() => () => {
-        (0, r.gF)(t, i), (0, l.showToast)((0, l.createToast)(I, l.ToastType.SUCCESS))
-    }, [t, i, I]);
-    return (0, s.jsx)(a.ConfirmModal, {
+        confirmText: I,
+        toastContent: T
+    } = (0, r.ae)(x, o), f = (0, l.useMemo)(() => () => {
+        (0, r.gF)(t, i), (0, a.showToast)((0, a.createToast)(T, a.ToastType.SUCCESS))
+    }, [t, i, T]);
+    return (0, s.jsx)(n.ConfirmModal, {
         title: h,
         subtitle: j,
-        confirmText: f,
-        cancelText: c.intl.string(c.t.X1rGEm),
+        confirmText: I,
+        cancelText: d.intl.string(d.t.X1rGEm),
         variant: "primary",
-        onConfirm: b,
-        onClose: o,
+        onConfirm: f,
+        onClose: u,
         transitionState: m,
-        children: (0, s.jsx)(d.n, {
+        children: (0, s.jsx)(c.n, {
             guildIds: i,
             direction: t
         })

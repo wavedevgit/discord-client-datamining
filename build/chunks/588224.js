@@ -55,8 +55,8 @@ let k = s.memo(e => {
             userIds: t
         } = e;
         return t.has(x)
-    }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, a.yK)([T.A], () => [T.A.getStreamForUser(x, l.getGuildId()), T.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, a.bG)([O.A], () => O.A.getSessionById(r)), X = D.Ay.useName(s), J = (0, a.bG)([M.A], () => M.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
-        enableHangStatus: Q
+    }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], Y = (0, u.YY)(K?.application_id).data ?? void 0, [W, z] = (0, a.yK)([T.A], () => [T.A.getStreamForUser(x, l.getGuildId()), T.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, a.bG)([O.A], () => O.A.getSessionById(r)), X = D.Ay.useName(s), Q = (0, a.bG)([M.A], () => M.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
+        enableHangStatus: J
     } = (0, g.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
@@ -68,7 +68,7 @@ let k = s.memo(e => {
         location: "VoiceUsers"
     }, {
         autoTrackExposure: K?.session_id != null
-    }), es = en || Q;
+    }), es = en || J;
     return (0, i.jsx)(E.A, {
         shakeLocation: P.uD.VOICE_USER,
         isShaking: k,
@@ -78,7 +78,7 @@ let k = s.memo(e => {
             canDrag: e.canDrag && !V,
             disconnected: et,
             otherClientSessionType: q?.clientInfo?.os,
-            voicePlatform: J,
+            voicePlatform: Q,
             localMute: S && !C,
             localVideoDisabled: R,
             mute: t || S,
@@ -87,13 +87,13 @@ let k = s.memo(e => {
             ringing: B,
             priority: w,
             embeddedApplication: F[0],
-            isStreaming: null != Y && Y.channelId === l.id,
+            isStreaming: null != W && W.channelId === l.id,
             isWatching: null != z && z.state !== U.XYD.ENDED,
             isGuest: V,
             isSelf: C,
             requestToStreamActivity: ei ? K : void 0,
-            application: es && K?.session_id != null ? W : void 0,
-            showHangStatus: $ && Q && (C || null != ee),
+            application: es && K?.session_id != null ? Y : void 0,
+            showHangStatus: $ && J && (C || null != ee),
             hangStatusActivity: C ? Z : ee
         })
     })
@@ -128,7 +128,7 @@ let V = [],
             t && (O(!0), H.current.cancel(), L.current = e, B.current.delay())
         }, [t]), K = s.useCallback(e => {
             t && (B.current.cancel(), L.current = null, O(!1), H.current.delay())
-        }, [t]), W = (0, a.yK)([R.A], () => {
+        }, [t]), Y = (0, a.yK)([R.A], () => {
             if (d) return [];
             let e = new Set;
             return M?.forEach(t => {
@@ -140,8 +140,8 @@ let V = [],
                 })
             }), Array.from(e)
         });
-        (0, h.A)(W);
-        let Y = (() => {
+        (0, h.A)(Y);
+        let W = (() => {
             if (null == M || 0 === M.length) return null;
             let e = d && M.length > u + 1 ? M.slice(0, u) : M,
                 t = A.A.getGuildRingingUsers(l.id),
@@ -182,13 +182,13 @@ let V = [],
                 numUsers: M.length - u
             })), s
         })();
-        return null == Y && null == E ? null : (0, i.jsxs)(S.Wr, {
+        return null == W && null == E ? null : (0, i.jsxs)(S.Wr, {
             className: r()(f, w.p_, {
                 [w.yZ]: d,
                 [w.lY]: _,
                 [w.fT]: I
             }),
             collapsed: d,
-            children: [Y, E]
+            children: [W, E]
         })
     }

@@ -45,13 +45,13 @@ var i = n(627968),
     H = n(263715),
     F = n(987344),
     K = n(750448),
-    W = n(845211),
-    Y = n(941604),
+    Y = n(845211),
+    W = n(941604),
     z = n(246884),
     q = n(497140),
     X = n(34247),
-    J = n(850729),
-    Q = n(521872),
+    Q = n(850729),
+    J = n(521872),
     $ = n(827975),
     Z = n(369915),
     ee = n(232879),
@@ -191,10 +191,10 @@ function ec(e) {
             location: "GuildsBar"
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(J.C, {}), C === O.RK.SERVER_RAIL_TOP && (0, i.jsx)(L.A, {}), r ? (0, i.jsx)(y.A, {
+        children: [(0, i.jsx)(Q.C, {}), C === O.RK.SERVER_RAIL_TOP && (0, i.jsx)(L.A, {}), r ? (0, i.jsx)(y.A, {
             shouldShowIntroPopover: p,
             markIntroPopoverAsDismissed: d
-        }) : null, !t && (0, i.jsx)(W.A, {}), x.map(e => (0, i.jsx)(en.A, {
+        }) : null, !t && (0, i.jsx)(Y.A, {}), x.map(e => (0, i.jsx)(en.A, {
             guildId: e
         }, e)), (0, i.jsx)(et.A, {
             onActivate: n
@@ -226,7 +226,7 @@ function ed(e) {
         }), c, (0, i.jsx)($.A, {}), s ? null : (0, i.jsx)(z.A, {
             disableTooltip: r.length > 0,
             lastTargetNode: o[o.length - 1]
-        }), s ? null : t, n ? null : (0, i.jsx)(Y.A, {})]
+        }), s ? null : t, n ? null : (0, i.jsx)(W.A, {})]
     })
 }
 
@@ -248,13 +248,13 @@ function eu(e) {
     } = (0, B.A)(), S = s.useRef(!1), [y] = s.useState(() => new p.Ep), j = s.useRef(null), G = s.useRef(null), {
         ref: U,
         ...P
-    } = (0, d.$y)(), w = (0, _.R7z)(), [W, Y] = s.useState(!1), z = (0, _.rdh)(g.A.modules.guildbar.AVATAR_SIZE), q = (0, _.rdh)(g.A.space.SPACE_XS), J = (0, v.A)("GuildsBar"), {
+    } = (0, d.$y)(), w = (0, _.R7z)(), [Y, W] = s.useState(!1), z = (0, _.rdh)(g.A.modules.guildbar.AVATAR_SIZE), q = (0, _.rdh)(g.A.space.SPACE_XS), Q = (0, v.A)("GuildsBar"), {
         pathname: $
     } = (0, c.zy)(), {
         entrypoint: et
     } = (0, O.X8)({
         location: "GuildsBar"
-    }), en = +!!J + +(et === O.RK.SERVER_RAIL_TOP), eu = s.useMemo(() => {
+    }), en = +!!Q + +(et === O.RK.SERVER_RAIL_TOP), eu = s.useMemo(() => {
         let e, t, n = (e = z + q, {
             iconSize: z,
             iconTotalSize: e,
@@ -263,7 +263,7 @@ function eu(e) {
             heightBeforeGuilds: er + t + en * e,
             bottomInset: 16
         });
-        return new eo(o, Y, ei.tEg, () => {
+        return new eo(o, W, ei.tEg, () => {
             j.current?.calculateState(), G.current?.calculateState()
         }, n)
     }, [z, q, o, en]);
@@ -365,7 +365,7 @@ function eu(e) {
                         children: [(0, i.jsxs)(_.zCo, {
                             className: r()({
                                 [el.XG]: !0,
-                                [el.qw]: W
+                                [el.qw]: Y
                             }),
                             experimental_useStack: !0,
                             gap: "xs",
@@ -374,7 +374,7 @@ function eu(e) {
                             children: [(0, i.jsx)(ec, {
                                 scrollToTop: em,
                                 lurkingGuildIds: A
-                            }), (0, i.jsx)(Q.A, {}), (0, i.jsx)(ed, {
+                            }), (0, i.jsx)(J.A, {}), (0, i.jsx)(ed, {
                                 guildDiscoveryButton: eg,
                                 disableAppDownload: t,
                                 isOverlay: n,
@@ -382,7 +382,7 @@ function eu(e) {
                                 lurkingGuildIds: A
                             })]
                         }), e_ && (0, i.jsxs)("div", {
-                            children: [(0, i.jsx)(Q.A, {
+                            children: [(0, i.jsx)(J.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
                                 className: el.JU,

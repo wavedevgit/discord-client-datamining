@@ -45,13 +45,13 @@ var i = n(627968),
     H = n(574172),
     F = n(869146),
     K = n(976860),
-    W = n(326567),
-    Y = n(964404),
+    Y = n(326567),
+    W = n(964404),
     z = n(105225),
     q = n(874739),
     X = n(461782),
-    J = n(447404),
-    Q = n(401685),
+    Q = n(447404),
+    J = n(401685),
     $ = n(20465),
     Z = n(156652),
     ee = n(622770),
@@ -113,9 +113,9 @@ function ew(e) {
         canInvite: r,
         onToggleChat: a,
         maybeLeaveFullScreen: o
-    } = e, c = (0, Q.Bx)(), u = (0, d.bG)([L.A], () => s?.type === eL.lp.ACTIVITY ? L.A.getApplication(s.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
+    } = e, c = (0, J.Bx)(), u = (0, d.bG)([L.A], () => s?.type === eL.lp.ACTIVITY ? L.A.getApplication(s.applicationId) : void 0), h = t === eM.DUB.NO_CHAT ? ee.A.Directions.UP : ee.A.Directions.DOWN, A = [eM.DUB.FULL_SCREEN, eM.DUB.NO_CHAT].includes(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [r && c < Q.vs.NO_INVITE ? (0, i.jsx)(en.A, {
+        children: [r && c < J.vs.NO_INVITE ? (0, i.jsx)(en.A, {
             channel: n,
             stream: s?.type === eL.lp.STREAM ? (0, P.Iy)(s.id) : void 0,
             className: eG.jZ,
@@ -146,7 +146,7 @@ class ek extends s.PureComponent {
     _videoBackgroundTooltipTimeout = new h.Ep;
     _lastIdleProps = null;
     state = {
-        resizedHeight: Y.Ay.callHeaderHeight
+        resizedHeight: W.Ay.callHeaderHeight
     };
     getRootNode() {
         return (this.props.popoutWindow?.window ?? window).document.getElementById("app-mount")
@@ -316,7 +316,7 @@ class ek extends s.PureComponent {
                 this.trackCallTileContextMenuImpression(e, eL.qs.USER);
                 let u = em.default.getUser(e.id);
                 if (null != u) {
-                    if (s) return (0, W.r)(t, u, r, d, (e, t) => (0, eO.Y)({
+                    if (s) return (0, Y.r)(t, u, r, d, (e, t) => (0, eO.Y)({
                         menuItemProps: t,
                         menuName: e,
                         entrypoint: eL.GK.THREE_DOT,
@@ -548,7 +548,7 @@ class ek extends s.PureComponent {
             useExternalHeader: a,
             renderHeader: o
         } = this.viewProperties;
-        return o ? (0, i.jsx)(J.A, {
+        return o ? (0, i.jsx)(Q.A, {
             children: (0, i.jsx)("div", {
                 className: eG.dL,
                 children: a ? e?.() : (0, i.jsx)(ev.A, {
@@ -719,13 +719,13 @@ let eV = function(e) {
         selectedStream: K
     } = (0, d.cf)([ea.A], () => ({
         selectedStream: null != k ? ea.A.getActiveStreamForStreamKey(k.id) : null
-    }), [k]), W = (0, d.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, d.bG)([eo.default], () => eo.default.getId()), {
+    }), [k]), Y = (0, d.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, d.bG)([eo.default], () => eo.default.getId()), {
         popoutWindow: q,
         popoutWindowAlwaysOnTop: X
     } = (0, d.cf)([F.A], () => ({
         popoutWindow: F.A.getWindow(eM.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: F.A.getIsAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT)
-    })), J = (0, d.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), Q = (0, d.bG)([ec.A], () => ec.A.getToastsEnabled(t.id)), $ = (0, d.bG)([G.default], () => G.default.getAwaitingRemoteSessionInfo()), Z = (0, d.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = s.useCallback(e => {
+    })), Q = (0, d.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), J = (0, d.bG)([ec.A], () => ec.A.getToastsEnabled(t.id)), $ = (0, d.bG)([G.default], () => G.default.getAwaitingRemoteSessionInfo()), Z = (0, d.bG)([W.Ay], () => W.Ay.callHeaderHeight), ee = s.useCallback(e => {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
@@ -772,8 +772,8 @@ let eV = function(e) {
                 children: (0, i.jsxs)(ej.CB, {
                     children: [(0, i.jsx)(ek, {
                         channel: t,
-                        guild: W,
-                        hasConnectPermission: J,
+                        guild: Y,
+                        hasConnectPermission: Q,
                         participantsOpen: P,
                         renderExternalHeader: n,
                         appContext: f,
@@ -792,7 +792,7 @@ let eV = function(e) {
                         selectedParticipant: k,
                         allActiveStreams: H,
                         connectedEmbeddedActivity: ei ?? void 0,
-                        showChatToasts: Q,
+                        showChatToasts: J,
                         storedCallHeaderHeight: Z,
                         updateStoredCallHeaderHeight: ee,
                         wrapperRef: c,

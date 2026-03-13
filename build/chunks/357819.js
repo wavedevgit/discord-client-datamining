@@ -65,7 +65,7 @@ let C = (0, r.A)(e => {
         B = b ? C - 32 : Math.min(C - 64, 3 * k + 8),
         H = e => e === U.length - 1 || 0 === v && 1 === e,
         [F, K] = s.useState(!1),
-        [W, Y] = s.useState(!1);
+        [Y, W] = s.useState(!1);
     return (0, i.jsx)(A.A, {
         sections: w,
         renderSection: e => {
@@ -85,8 +85,8 @@ let C = (0, r.A)(e => {
                 participantCount: v,
                 label: _.intl.string(_.t["3foUu5"]),
                 className: f.wx,
-                onClick: () => Y(!W),
-                collapsed: W,
+                onClick: () => W(!Y),
+                collapsed: Y,
                 channel: r
             }, `audience-header-${t}`) : null
         },
@@ -121,7 +121,7 @@ let C = (0, r.A)(e => {
                         })
                     }, `speakers-${t}-${n}`);
                 case 2:
-                    if (W) return null;
+                    if (Y) return null;
                     return (0, i.jsx)(h.A, {
                         channel: r,
                         participants: l,
@@ -131,7 +131,7 @@ let C = (0, r.A)(e => {
                     return null
             }
         },
-        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? B / g.i + 8 : 1 === e ? F ? 0 : V : 98 * !W,
+        rowHeight: e => null == P[e][0] ? 0 : 0 === e ? B / g.i + 8 : 1 === e ? F ? 0 : V : 98 * !Y,
         renderFooter: e => {
             let {
                 section: t

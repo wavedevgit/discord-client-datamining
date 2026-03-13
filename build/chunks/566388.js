@@ -46,13 +46,13 @@ var i = n(627968),
     H = n(571909),
     F = n(374873),
     K = n(623413),
-    W = n(707251),
-    Y = n(357819),
+    Y = n(707251),
+    W = n(357819),
     z = n(717965),
     q = n(696842),
     X = n(895903),
-    J = n(542372),
-    Q = n(533233),
+    Q = n(542372),
+    J = n(533233),
     $ = n(652215),
     Z = n(806931),
     ee = n(985018),
@@ -72,7 +72,7 @@ function es(e) {
         selectedParticipant: c
     } = e, {
         parentAnalyticsLocation: d
-    } = (0, p.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => r?.window ?? window, [r]), N = (0, J.A)({
+    } = (0, p.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => r?.window ?? window, [r]), N = (0, Q.A)({
         channel: t,
         appContext: n,
         popoutOpen: l,
@@ -151,13 +151,13 @@ function er(e) {
         } = (0, H.Ay)();
     (0, H.vI)(n);
     let P = (0, o.bG)([L.A], () => L.A.getToastsEnabled(n.id)),
-        B = (0, Q.A)(n) ? null != y ? "84px" : "124px" : null != y ? "0px" : "48px";
+        B = (0, J.A)(n) ? null != y ? "84px" : "124px" : null != y ? "0px" : "48px";
     return U && (B = "0px"), t = U ? (0, i.jsx)(X.A, {
         channel: n,
         onContinueClick: () => {
             (0, H.ek)(!1), N || (0, w.cy)(n)
         }
-    }) : N ? (0, i.jsx)(Y.A, {
+    }) : N ? (0, i.jsx)(W.A, {
         channel: n,
         onScroll: M,
         popoutType: A
@@ -189,7 +189,7 @@ function er(e) {
                 selectedParticipant: y
             })
         }) : null,
-        renderHeader: () => (0, i.jsx)(W.A, {
+        renderHeader: () => (0, i.jsx)(Y.A, {
             toggleRequestToSpeakSidebar: l,
             showRequestToSpeakSidebar: c,
             channel: n

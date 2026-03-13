@@ -54,11 +54,11 @@ function w(e) {
     (0, c.Eq)(H, "VoiceUserActivities");
     let F = (0, u.Ay)(t),
         K = s.useMemo(() => F.filter(e => e.embeddedActivity.userIds.has(n.id)), [F, n.id]),
-        W = Array.from((0, u.Rz)(K).values()),
-        Y = (0, C.W)(),
+        Y = Array.from((0, u.Rz)(K).values()),
+        W = (0, C.W)(),
         z = (0, E.i)(e => e.showSelfActivity),
         [q, X] = (0, a.yK)([N.A], () => [N.A.getStreamForUser(n.id, t.getGuildId()), N.A.getActiveStreamForUser(n.id, t.getGuildId())], [t, n.id]),
-        [J, Q] = (0, a.yK)([y.A, S.A, T.A, A.default], () => (0, m.eo)(t, y.A, S.A, T.A, A.default)),
+        [Q, J] = (0, a.yK)([y.A, S.A, T.A, A.default], () => (0, m.eo)(t, y.A, S.A, T.A, A.default)),
         $ = (0, a.bG)([b.default], () => b.default.getId()),
         Z = (0, a.bG)([v.A], () => (0, p.nr)(q, v.A), [q]),
         ee = (0, d.me)(n, w ?? Z),
@@ -81,7 +81,7 @@ function w(e) {
         }),
         er = (0, h.r9)() && (0, h.UK)(t.id),
         ea = null != q && !er,
-        eo = ee.length + W.length > 0,
+        eo = ee.length + Y.length > 0,
         ec = null != V,
         ed = n.id === b.default.getId() && !z,
         eu = ea || eo || ec && es;
@@ -119,12 +119,12 @@ function w(e) {
             streamActivity: Z,
             user: n,
             currentUserId: $,
-            canWatch: J,
-            unavailableReason: Q,
+            canWatch: Q,
+            unavailableReason: J,
             onWatchStream: k,
             onAction: l,
             showHeader: ei
-        }), W.map(e => (0, i.jsx)(L.A, {
+        }), Y.map(e => (0, i.jsx)(L.A, {
             embeddedApp: e,
             presenceActivity: e.presenceActivity ?? void 0,
             channel: t,
@@ -132,7 +132,7 @@ function w(e) {
             enableUserHoverActivities: ei
         }, e.application.id)), ee.map(e => {
             let r = e.application_id;
-            return (null != Y && (r = Y), el && null != r && D.sQ.has(r)) ? (0, i.jsxs)(s.Fragment, {
+            return (null != W && (r = W), el && null != r && D.sQ.has(r)) ? (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(L.A, {
                     presenceActivity: e,
                     channel: t,

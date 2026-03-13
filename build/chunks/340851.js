@@ -93,13 +93,13 @@ let K = (0, m.J)(function(e) {
         mute: H,
         localMute: F,
         localVideoDisabled: K,
-        deaf: W,
-        video: Y,
+        deaf: Y,
+        video: W,
         embeddedApplication: z,
         serverMute: q,
         serverDeaf: X,
-        nick: J,
-        ringing: Q,
+        nick: Q,
+        ringing: J,
         speaking: $,
         disconnected: Z,
         connectUserDragSource: ee,
@@ -155,7 +155,7 @@ let K = (0, m.J)(function(e) {
             };
             O.default.getId() !== l.id && h.default.selectVoiceChannel(m.id), ei ? ((0, I.A)(e), d.A.selectParticipant(e.channelId, (0, C._z)(e))) : (0, A.Nl)(e), ea?.(l.id)
         },
-        eW = e => {
+        eY = e => {
             (0, u.L3)(e, async () => {
                 let {
                     default: e
@@ -173,7 +173,7 @@ let K = (0, m.J)(function(e) {
                 })
             })
         },
-        eY = e => ep ? (0, i.jsx)(b.h, {
+        eW = e => ep ? (0, i.jsx)(b.h, {
             ...e,
             channel: m,
             setIsHangStatusInputFocused: ej,
@@ -222,11 +222,11 @@ let K = (0, m.J)(function(e) {
                             localVideoDisabled: K,
                             isStreaming: en,
                             isGuest: es,
-                            video: Y,
+                            video: W,
                             priority: el,
-                            ringing: Q,
-                            deaf: W,
-                            nick: J,
+                            ringing: J,
+                            deaf: Y,
+                            nick: Q,
                             collapsed: t,
                             overlap: t,
                             serverMute: q,
@@ -242,7 +242,7 @@ let K = (0, m.J)(function(e) {
                             selected: eI,
                             onClick: n ? void 0 : ek,
                             onDoubleClick: eK,
-                            onContextMenu: eW,
+                            onContextMenu: eY,
                             guildId: m.guild_id,
                             isSelf: ep,
                             application: eg,
@@ -258,14 +258,14 @@ let K = (0, m.J)(function(e) {
                         })
                     });
                     let a = () => null;
-                    return ex && eG && !eC ? a = eY : eC ? a = () => (0, i.jsx)(P.A, {
+                    return ex && eG && !eC ? a = eW : eC ? a = () => (0, i.jsx)(P.A, {
                         channel: m,
                         user: l,
                         onAction: eB,
                         onWatchStream: en ? eK : void 0,
                         hangStatusActivity: e_,
-                        renderSelfHangStatus: eY
-                    }) : en ? a = eq : eU && l.id !== O.default.getId() ? a = ez : ex && (a = eY), (0, i.jsx)(c.YNO, {
+                        renderSelfHangStatus: eW
+                    }) : en ? a = eq : eU && l.id !== O.default.getId() ? a = ez : ex && (a = eW), (0, i.jsx)(c.YNO, {
                         targetElementRef: eE,
                         position: "right",
                         renderPopout: a,

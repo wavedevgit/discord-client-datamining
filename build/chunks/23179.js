@@ -230,14 +230,14 @@ let V = [],
             {
                 paginationTotalCount: F,
                 paginationMaxIndex: K,
-                isPaginationTotalCountLimited: W
+                isPaginationTotalCountLimited: Y
             } = (0, S.o)({
                 totalResults: n.totalResults,
                 isSearching: n.isSearching
             }),
-            Y = s.useCallback((e, t) => {
+            W = s.useCallback((e, t) => {
                 let n = K + 1;
-                if (!W || e.targetPage !== n) return t;
+                if (!Y || e.targetPage !== n) return t;
                 {
                     let e = D.intl.formatToPlainString(D.t["E+2azY"], {
                         maxPages: n
@@ -248,7 +248,7 @@ let V = [],
                         children: t
                     })
                 }
-            }, [W, K]),
+            }, [Y, K]),
             z = s.useCallback(e => {
                 e === b || n.isSearching || ((0, v.L6)({
                     searchContext: t,
@@ -287,8 +287,8 @@ let V = [],
                     newPageIndex: e
                 }), N(e)
             }, [N, t, r]),
-            J = Math.floor(n.offset / L.T_y),
-            Q = W && J >= K,
+            Q = Math.floor(n.offset / L.T_y),
+            J = Y && Q >= K,
             $ = K + 1,
             Z = (0, a.yK)([T.A], () => {
                 if (0 !== n.offset) return V;
@@ -324,7 +324,7 @@ let V = [],
             }), (0, i.jsxs)(d.T7Y, {
                 ref: U,
                 className: G.XG,
-                children: [Q && !n.isSearching && (0, i.jsx)(d.po8, {
+                children: [J && !n.isSearching && (0, i.jsx)(d.po8, {
                     className: G.VC,
                     messageType: d.YCn.WARNING,
                     children: D.intl.formatToPlainString(D.t["E+2azY"], {
@@ -346,8 +346,8 @@ let V = [],
                     onClick: q,
                     onScrollTo: H,
                     onPageChange: X,
-                    paginationTotalCount: W ? F : void 0,
-                    renderPageWrapper: Y,
+                    paginationTotalCount: Y ? F : void 0,
+                    renderPageWrapper: W,
                     onBlockedResultsClick: j,
                     searchRequestAnalyticsId: r,
                     searchResultsQuery: R,

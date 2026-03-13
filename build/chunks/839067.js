@@ -1,11 +1,11 @@
 /** chunk id: 839067 params = (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => l
 });
 var i = n(311907),
     r = n(73153);
 let a = null;
-class l extends i.Ay.Store {
+class s extends i.Ay.Store {
     static displayName = "ApplicationStoreLocationStore";
     getCurrentPath() {
         return null != a ? a.pathname : null
@@ -19,7 +19,7 @@ class l extends i.Ay.Store {
         throw Error("Should not reset the store this way outside of a test environment")
     }
 }
-let s = new l(r.h, {
+let l = new s(r.h, {
     APPLICATION_STORE_LOCATION_CHANGE: function(e) {
         let {
             location: t

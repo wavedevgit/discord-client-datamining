@@ -46,13 +46,13 @@ var f = n(483270),
     H = n(713842),
     F = n(91242),
     K = n(857253),
-    W = n(872363),
-    Y = n(211059),
+    Y = n(872363),
+    W = n(211059),
     z = n(547015),
     q = n(561446),
     X = n(300233),
-    J = n(721592),
-    Q = n(403363),
+    Q = n(721592),
+    J = n(403363),
     $ = n(397036),
     Z = n(732044),
     ee = n(733441),
@@ -100,13 +100,13 @@ var f = n(483270),
     eH = n(919638),
     eF = n(71393),
     eK = n(290863),
-    eW = n(383501),
-    eY = n(309010),
+    eY = n(383501),
+    eW = n(309010),
     ez = n(967198),
     eq = n(287809),
     eX = n(977997),
-    eJ = n(47167),
-    eQ = n(698718),
+    eQ = n(47167),
+    eJ = n(698718),
     e$ = n(812771),
     eZ = n(991275),
     e0 = n(59e3),
@@ -256,7 +256,7 @@ class ts extends s.PureComponent {
             selectedParticipant: e,
             premiumIndicatorEnabled: t
         } = this.props;
-        return e?.type !== e3.lp.STREAM ? null : (0, i.jsx)(W.A, {
+        return e?.type !== e3.lp.STREAM ? null : (0, i.jsx)(Y.A, {
             size: e9.Ay.Sizes.LARGE,
             participant: e,
             showQuality: !0,
@@ -538,7 +538,7 @@ class ts extends s.PureComponent {
             channelIsContentGated: s,
             inCall: l
         } = this.props;
-        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(Q.A, {
+        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(J.A, {
             guildId: t.id
         }) : (0, i.jsx)(X.H, {
             guildId: t.id,
@@ -568,7 +568,7 @@ class ts extends s.PureComponent {
                 sidebarState: n
             }, e.id)
         }
-        return (0, i.jsx)(eQ.A, {
+        return (0, i.jsx)(eJ.A, {
             channel: e,
             guild: t,
             chatInputType: M.oU.NORMAL
@@ -645,7 +645,7 @@ class ts extends s.PureComponent {
                 guildId: t
             })
         }, {
-            onCloseCallback: () => Y.A.viewPrompt(e4.X.REAL_NAME_PROMPT, t),
+            onCloseCallback: () => W.A.viewPrompt(e4.X.REAL_NAME_PROMPT, t),
             modalKey: "Guild Hub Real Name Modal"
         }), l && (0, p.mMO)(async () => {
             let {
@@ -783,15 +783,15 @@ let tl = (0, C.A)(ts),
     tr = s.memo(function(e) {
         let {
             providedChannel: t
-        } = e, [n, l] = s.useState(null), r = (0, h.bG)([eY.A], () => eY.A.getChannelId()), a = (0, h.bG)([eY.A], () => eY.A.getVoiceChannelId()), o = (0, h.bG)([eV.A], () => t ?? eV.A.getChannel(r), [r, t]), c = (0, h.bG)([ez.A], () => ez.A.getGuildId()) === e6.YYv, {
+        } = e, [n, l] = s.useState(null), r = (0, h.bG)([eW.A], () => eW.A.getChannelId()), a = (0, h.bG)([eW.A], () => eW.A.getVoiceChannelId()), o = (0, h.bG)([eV.A], () => t ?? eV.A.getChannel(r), [r, t]), c = (0, h.bG)([ez.A], () => ez.A.getGuildId()) === e6.YYv, {
             hasAccess: p
         } = (0, B.TW)("ConnectedChannel"), _ = c && !p ? null : o, f = (0, h.bG)([eV.A], () => eV.A.getChannel(a), [a]), x = _?.parent_id, C = (0, h.bG)([eV.A], () => eV.A.getChannel(x), [x]), b = (0, h.bG)([eF.A], () => eF.A.getGuild(_?.guild_id), [_]), {
             needSubscriptionToAccess: y
-        } = (0, J.A)(_?.id ?? void 0), O = (0, h.bG)([R.A], () => {
+        } = (0, Q.A)(_?.id ?? void 0), O = (0, h.bG)([R.A], () => {
             let e = null != r ? R.A.getParticipants(r) : [],
                 t = null != r ? R.A.getActivityParticipants(r) : [];
             return e.length - t.length > 0
-        }, [r]), L = (0, K.A)(), M = (0, h.bG)([eY.A], () => (L?.channelId ?? eY.A.getVoiceChannelId()) === _?.id), D = (0, h.bG)([N.Ay], () => null != _ ? N.Ay.getSelfEmbeddedActivityForChannel(_.id) : null, [_]), G = (0, h.bG)([eW.A], () => eW.A.isConnected()), U = (0, I.A)(G), P = G && !1 === U;
+        }, [r]), L = (0, K.A)(), M = (0, h.bG)([eW.A], () => (L?.channelId ?? eW.A.getVoiceChannelId()) === _?.id), D = (0, h.bG)([N.Ay], () => null != _ ? N.Ay.getSelfEmbeddedActivityForChannel(_.id) : null, [_]), G = (0, h.bG)([eY.A], () => eY.A.isConnected()), U = (0, I.A)(G), P = G && !1 === U;
         s.useEffect(() => {
             M && P && null != D && null != _ && g.A.selectParticipant(_.id, (0, j.Qt)({
                 applicationId: D.applicationId,
@@ -801,15 +801,15 @@ let tl = (0, C.A)(ts),
         let w = (0, h.bG)([N.Ay], () => N.Ay.getCurrentEmbeddedActivity()),
             k = (0, h.bG)([N.Ay], () => N.Ay.getActivityPanelMode()),
             H = null != w && !(0, S.A)(_?.id) && k === e2.Gd.PANEL,
-            W = (0, h.bG)([eX.A], () => null != _ && _.isVocalThread() && !d().isEmpty(eX.A.getVoiceStatesForChannel(_.id)), [_]),
-            Y = null != _ && _.isPrivate() && !H && O,
-            z = _?.isGuildVocal() || Y || W,
+            Y = (0, h.bG)([eX.A], () => null != _ && _.isVocalThread() && !d().isEmpty(eX.A.getVoiceStatesForChannel(_.id)), [_]),
+            W = null != _ && _.isPrivate() && !H && O,
+            z = _?.isGuildVocal() || W || Y,
             q = (0, h.bG)([F.A], () => F.A.getFrameLayoutMode() === e8.y.FOCUSED),
             {
                 welcomeModalChannelId: X
             } = (0, u.zy)(),
-            Q = (0, h.bG)([em.A], () => null != _ && em.A.isLurking(_.guild_id), [_]),
-            $ = (0, h.bG)([eP.A], () => eP.A.hasSeen(_?.guild_id, Q), [_, Q]),
+            J = (0, h.bG)([em.A], () => null != _ && em.A.isLurking(_.guild_id), [_]),
+            $ = (0, h.bG)([eP.A], () => eP.A.hasSeen(_?.guild_id, J), [_, J]),
             Z = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e2.Gd.PANEL ? N.Ay.getFocusedLayout() === e2.E8.NO_CHAT ? e6.DUB.NO_CHAT : e6.DUB.NORMAL : null != r ? R.A.getLayout(r) : e6.DUB.NORMAL, [r]),
             ee = (0, eh.A)(b?.id),
             et = (0, ew.A)(X, b?.id),
@@ -823,8 +823,8 @@ let tl = (0, C.A)(ts),
             es = b?.id,
             el = (0, h.bG)([ek.Ay], () => ek.Ay.getGuildSidebarState(es), [es]),
             er = (0, ep.lI)(),
-            ea = (0, eJ.Ay)(_),
-            eo = (0, eJ.Ay)(_, !0),
+            ea = (0, eQ.Ay)(_),
+            eo = (0, eQ.Ay)(_, !0),
             ec = (0, h.bG)([R.A], () => null != _ ? R.A.getSelectedParticipant(_.id) : null),
             ed = (0, v.vL)(_),
             eu = null != _ && a === _.id,
@@ -876,7 +876,7 @@ let tl = (0, C.A)(ts),
             voiceChannel: f,
             layout: Z,
             needSubscriptionToAccess: y,
-            isLurking: Q,
+            isLurking: J,
             hasModalOpen: eS,
             section: en,
             channelSidebarState: ei,

@@ -45,18 +45,18 @@ var i = n(627968),
     H = n(977997),
     F = n(147036),
     K = n(338234),
-    W = n(557534),
-    Y = n(68437),
+    Y = n(557534),
+    W = n(68437),
     z = n(166444),
     q = n(439282),
     X = n(562991),
-    J = n(588224);
+    Q = n(588224);
 n(281405);
-var Q = n(652215),
+var J = n(652215),
     $ = n(349828),
     Z = n(985018),
     ee = n(719550);
-class et extends W.Ay {
+class et extends Y.Ay {
     state = {
         shouldShowActivities: !1,
         shouldShowGuildVerificationPopout: !1,
@@ -207,14 +207,14 @@ class et extends W.Ay {
             withGuildIcon: s,
             tabIndex: l
         } = this.props;
-        return (0, i.jsx)(J.A, {
+        return (0, i.jsx)(Q.A, {
             channel: e,
             collapsed: n,
             collapsedMax: 6,
             voiceStates: t,
             withGuildIcon: s,
             tabIndex: l,
-            location: Q.ThZ.GUILD_CHANNEL_LIST
+            location: J.ThZ.GUILD_CHANNEL_LIST
         })
     }
     renderHangoutWindow() {
@@ -433,11 +433,11 @@ function ei(e) {
         let e = U.A.getChannel(n.parent_id),
             i = w.A.getCheck(n.guild_id);
         return {
-            canManageChannel: k.A.can(Q.xBc.MANAGE_CHANNELS, n),
-            canReorderChannel: !0 !== s && (t.id === $.Vc || (null != e ? k.A.can(Q.xBc.MANAGE_CHANNELS, e) : k.A.can(Q.xBc.MANAGE_CHANNELS, t))),
-            canMoveMembers: k.A.can(Q.xBc.MOVE_MEMBERS, n),
-            locked: !k.A.can(Q.xBc.CONNECT, n),
-            bypassLimit: k.A.can(Q.xBc.MOVE_MEMBERS, n),
+            canManageChannel: k.A.can(J.xBc.MANAGE_CHANNELS, n),
+            canReorderChannel: !0 !== s && (t.id === $.Vc || (null != e ? k.A.can(J.xBc.MANAGE_CHANNELS, e) : k.A.can(J.xBc.MANAGE_CHANNELS, t))),
+            canMoveMembers: k.A.can(J.xBc.MOVE_MEMBERS, n),
+            locked: !k.A.can(J.xBc.CONNECT, n),
+            bypassLimit: k.A.can(J.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !i.canChat
         }
     }), A = (0, a.bG)([H.A], () => H.A.hasVideo(n.id)), m = (0, p.Ay)(n), g = (0, E.Ay)(n), x = (0, y.Qs)(n.id), C = (0, a.bG)([f.A], () => null != f.A.getStartTime(n), [n]), {
@@ -459,7 +459,7 @@ function ei(e) {
     }), {
         enableHighlight: G,
         enableWaveformIcon: P
-    } = (0, _.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = G && F, W = P && F, z = (0, Y.A)({
+    } = (0, _.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = G && F, Y = P && F, z = (0, W.A)({
         channel: n,
         isChannelSelected: r,
         isChannelCollapsed: o,
@@ -472,7 +472,7 @@ function ei(e) {
     return (0, i.jsx)(en, {
         channelName: g,
         embeddedApps: m,
-        embeddedActivityType: Q.$pd.PLAYING,
+        embeddedActivityType: J.$pd.PLAYING,
         video: A,
         hasActiveEvent: null != x,
         isSubscriptionGated: I,
@@ -491,6 +491,6 @@ function ei(e) {
         hasChannelInfo: null != z,
         hasStartTime: C,
         shouldHighlightChannel: K,
-        shouldUseAnimatedWaveform: W
+        shouldUseAnimatedWaveform: Y
     })
 }

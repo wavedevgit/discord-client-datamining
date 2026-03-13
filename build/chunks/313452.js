@@ -131,8 +131,8 @@ function D(e) {
         })),
         K = !F && B,
         {
-            messageCategoryOpenStates: W,
-            toggleOpenState: Y
+            messageCategoryOpenStates: Y,
+            toggleOpenState: W
         } = (0, C.A)(),
         z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, p.Ay], () => {
             let e = E.A.getChannelInfoMap();
@@ -194,31 +194,31 @@ function D(e) {
                 })
             })), e
         }, [n, l]),
-        J = 0 === n.length && 0 === l.length && H,
-        Q = 0 === n.length && 0 === l.length && !F && B,
+        Q = 0 === n.length && 0 === l.length && H,
+        J = 0 === n.length && 0 === l.length && !F && B,
         $ = s.useMemo(() => {
             let e = [];
-            return Q ? e.push(A()) : J ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => m([e], !0))), e.push(...n.map(e => m([e], !1)))) : o().each(L, t => {
+            return J ? e.push(A()) : Q ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => m([e], !0))), e.push(...n.map(e => m([e], !1)))) : o().each(L, t => {
                 0 !== X[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
-                    isOpen: W[t],
+                    isOpen: Y[t],
                     toggleOpenedState: () => {
-                        let e = W[t];
-                        Y(t), (0, x.Ut)({
+                        let e = Y[t];
+                        W(t), (0, x.Ut)({
                             section: t,
                             enabled: !e,
                             viewId: U
                         })
                     }
-                }, t)), W[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
+                }, t)), Y[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, l, A, W, Y, X, G, m, J, Q, U]),
+        }, [n, l, A, Y, W, X, G, m, Q, J, U]),
         Z = $[$.length - 1],
         ee = s.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     s.useEffect(() => {
-        Q || et(0 === X.UNREAD.length)
-    }, [X, Q, et]);
+        J || et(0 === X.UNREAD.length)
+    }, [X, J, et]);
     let en = (n.length > 0 || l.length > 0) && null != a && B;
     ! function(e) {
         let {
@@ -235,13 +235,13 @@ function D(e) {
         loadingInitial: K
     });
     let ei = s.useCallback(() => {
-        let e = L.filter(e => W[e]).reduce((e, t) => e + X[t].length, 0),
+        let e = L.filter(e => Y[e]).reduce((e, t) => e + X[t].length, 0),
             t = P.current?.getScrollerState();
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
-    }, [W, X]);
+    }, [Y, X]);
     s.useEffect(() => {
-        Q || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
-    }, [ei, a, Q, B, ee, z]);
+        J || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
+    }, [ei, a, J, B, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
         return (0, i.jsx)(b.A, {

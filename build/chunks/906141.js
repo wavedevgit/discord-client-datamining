@@ -52,13 +52,13 @@ let k = s.memo(function e(t) {
             treatSpam: F
         } = t,
         K = G.sl8.has(l.type) ? l.messageReference : void 0,
-        W = (0, a.bG)([A.A], () => A.A.getMessageByReference(K)),
-        Y = (0, a.bG)([p.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED ? p.A.getChannel(W.message.channel_id) : null),
+        Y = (0, a.bG)([A.A], () => A.A.getMessageByReference(K)),
+        W = (0, a.bG)([p.A], () => l.type === G.lAJ.THREAD_STARTER_MESSAGE && Y.state === A.a.LOADED ? p.A.getChannel(Y.message.channel_id) : null),
         z = m.X6.useSetting(),
         q = m.hD.useSetting(),
         X = m.rs.useSetting(),
-        J = m.kt.useSetting(),
-        Q = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
+        Q = m.kt.useSetting(),
+        J = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
         $ = (0, u.A)(s?.id),
         {
             disableReactionCreates: Z
@@ -69,14 +69,14 @@ let k = s.memo(function e(t) {
             hasBailedAst: en
         } = (0, v.A)(l, {
             hideSimpleEmbedContent: q && X,
-            allowList: Q,
-            allowHeading: Q,
+            allowList: J,
+            allowHeading: J,
             allowLinks: !0,
             previewLinkTarget: !0
         }),
         ei = (0, I.Ay)(l),
         es = (0, a.bG)([p.A], () => l.hasFlag(G.pr7.HAS_THREAD) && p.A.getChannel(_.default.castMessageIdAsChannelId(l.id))),
-        el = l.type === G.lAJ.THREAD_STARTER_MESSAGE && W.state === A.a.LOADED && null != Y,
+        el = l.type === G.lAJ.THREAD_STARTER_MESSAGE && Y.state === A.a.LOADED && null != W,
         er = !el && void 0 === n,
         ea = (0, y.A)({
             message: l,
@@ -89,8 +89,8 @@ let k = s.memo(function e(t) {
         eu = (0, S.fF)(l);
     return el ? (0, i.jsx)(e, {
         ...t,
-        message: W.message,
-        channel: Y,
+        message: Y.message,
+        channel: W,
         hasThread: !1
     }) : (g.A.isBlockedForMessage(l) ? n = U.t["+FcYM/"] : g.A.isIgnoredForMessage(l) ? n = U.t["VFWjc+"] : (0, C.kf)(l) && F && (n = U.t.xfkfTK), void 0 !== n) ? (0, i.jsx)(V, {
         className: D,
@@ -104,7 +104,7 @@ let k = s.memo(function e(t) {
             [w.XN]: B,
             [w._A]: t.isGroupStart
         }),
-        childrenRepliedMessage: (0, M.A)(l, s, K, W, o),
+        childrenRepliedMessage: (0, M.A)(l, s, K, Y, o),
         childrenHeader: (0, R.A)({
             ...t,
             author: ei,
@@ -126,10 +126,10 @@ let k = s.memo(function e(t) {
             inlineAttachmentMedia: z,
             inlineEmbedMedia: q,
             renderEmbeds: X,
-            gifAutoPlay: J,
+            gifAutoPlay: Q,
             poll: ed,
-            showListsAndHeaders: Q,
-            showMaskedLinks: Q,
+            showListsAndHeaders: J,
+            showMaskedLinks: J,
             shouldHideMediaOptions: $,
             enabledContentHarmTypeFlags: eo,
             ctaButtonType: ec

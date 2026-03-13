@@ -51,22 +51,22 @@ function k(e) {
         layout: "SIDEBAR",
         userId: t.id,
         channelId: g.id
-    }), W = s.useRef(null), {
-        isHoveringOrFocusing: Y,
+    }), Y = s.useRef(null), {
+        isHoveringOrFocusing: W,
         isHovering: z
-    } = (0, h.A)(W), q = (0, x.fC)(), X = (0, o.zhh)({
+    } = (0, h.A)(Y), q = (0, x.fC)(), X = (0, o.zhh)({
         opacity: +(null != q.interactionType),
         config: {
             duration: 150
         }
-    }), J = e => {
+    }), Q = e => {
         (0, C.openUserProfileModal)({
             sourceAnalyticsLocations: F,
             hideRestrictedProfile: !0,
             ...K,
             ...e
         })
-    }, Q = B?.widgets != null && B.widgets.length > 0, {
+    }, J = B?.widgets != null && B.widgets.length > 0, {
         defaultWishlistId: $
     } = (0, a.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
@@ -84,7 +84,7 @@ function k(e) {
             children: (0, i.jsx)(x.Hl, {
                 value: q,
                 children: (0, i.jsxs)(T.A, {
-                    ref: W,
+                    ref: Y,
                     user: t,
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
@@ -109,7 +109,7 @@ function k(e) {
                                 user: t,
                                 displayProfile: B,
                                 themeType: U.d.SIDEBAR,
-                                animateOnHoverOrFocusOnly: !Y,
+                                animateOnHoverOrFocusOnly: !W,
                                 className: w.vK
                             }), (0, i.jsx)(N.A, {
                                 userId: t.id,
@@ -119,7 +119,7 @@ function k(e) {
                                 displayProfile: B,
                                 channelId: g.id,
                                 themeType: U.d.SIDEBAR,
-                                onOpenProfile: k ? void 0 : J
+                                onOpenProfile: k ? void 0 : Q
                             }), (0, i.jsx)(O.A, {
                                 user: t,
                                 channelId: g.id,
@@ -131,14 +131,14 @@ function k(e) {
                             currentUser: n,
                             displayProfile: B,
                             channel: g,
-                            isHoveringOrFocusing: null == q.interactionType && Y,
-                            onOpenProfile: k ? void 0 : J
-                        }), Q && (0, i.jsx)("div", {
+                            isHoveringOrFocusing: null == q.interactionType && W,
+                            onOpenProfile: k ? void 0 : Q
+                        }), J && (0, i.jsx)("div", {
                             className: w.sJ,
                             children: (0, i.jsx)(S.A, {
                                 user: t,
                                 widgets: B.widgets,
-                                onOpenUserProfileModal: J
+                                onOpenUserProfileModal: Q
                             })
                         }), null != ee && ee.length > 0 && (0, i.jsx)("div", {
                             className: w.vS,
@@ -148,7 +148,7 @@ function k(e) {
                                 wishlistId: $,
                                 title: P.intl.string(P.t["7lZ31J"]),
                                 onClick: () => {
-                                    J?.({
+                                    Q?.({
                                         tabSection: G.RP.WISHLIST
                                     })
                                 }
@@ -158,7 +158,7 @@ function k(e) {
                             channelId: g.id
                         })]
                     }), !k && (0, i.jsx)(V, {
-                        handleOpenProfile: J,
+                        handleOpenProfile: Q,
                         analyticsLocations: F,
                         context: K
                     }), B?.profileEffect != null && (0, i.jsx)(A.A, {

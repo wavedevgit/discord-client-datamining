@@ -1,7 +1,7 @@
 /** chunk id: 483270 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => J
+    A: () => Q
 });
 var i = n(627968),
     s = n(64700),
@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(985018),
     F = n(624934),
     K = n(268053);
-let W = k.Ay.getEnableHardwareAcceleration(),
-    Y = 44 + V.b,
+let Y = k.Ay.getEnableHardwareAcceleration(),
+    W = 44 + V.b,
     z = s.memo(function(e) {
         let {
             channel: t,
@@ -75,7 +75,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 plainText: e,
                 rawText: n
             }), p.A.startTyping(t.id)
-        }, [_, t]), Y = s.useCallback(e => {
+        }, [_, t]), W = s.useCallback(e => {
             e.stopPropagation(), (0, C.K)({
                 guildId: t.guild_id,
                 location: {
@@ -88,7 +88,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
             guildId: t.guild_id
         }), [q, X] = s.useState(!1);
         if (null == _) return null;
-        let J = A?.premiumSince;
+        let Q = A?.premiumSince;
         return (0, i.jsx)(T.A, {
             targetElementRef: o,
             user: _,
@@ -108,7 +108,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                 return (0, i.jsx)(V.A, {
                     ref: o,
                     onContextMenu: F,
-                    shouldAnimateStatus: W,
+                    shouldAnimateStatus: Y,
                     user: _,
                     currentUser: f,
                     nick: A?.nick,
@@ -123,8 +123,8 @@ let W = k.Ay.getEnableHardwareAcceleration(),
                     isMobile: N,
                     selected: q,
                     applicationStream: D,
-                    premiumSince: null == J ? null : new Date(J),
-                    onClickPremiumGuildIcon: Y,
+                    premiumSince: null == Q ? null : new Date(Q),
+                    onClickPremiumGuildIcon: W,
                     itemProps: G,
                     lostPermissionTooltipText: P ? void 0 : H.intl.string(H.t["/QcoTz"]),
                     isOwner: k,
@@ -195,7 +195,7 @@ let W = k.Ay.getEnableHardwareAcceleration(),
         }) : null
     });
 
-function J(e) {
+function Q(e) {
     var t, n;
     let l, a, u, m, p, {
             channel: x,
@@ -210,7 +210,7 @@ function J(e) {
         {
             navigator: T,
             listRef: v
-        } = (t = E, n = Y, l = (0, h.bG)([g.A], () => g.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
+        } = (t = E, n = W, l = (0, h.bG)([g.A], () => g.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
             let i = a.current;
             if (null == i) return;
             let s = parseInt(t, 10),
@@ -257,7 +257,7 @@ function J(e) {
                 channel_type: x.type,
                 guild_id: x.guild_id
             })
-        }, [x.guild_id, x.id, x.type]), y) return (0, i.jsx)(Q, {
+        }, [x.guild_id, x.id, x.type]), y) return (0, i.jsx)(J, {
         channel: x
     });
     let j = o().omit(T.containerProps, ["ref"]),
@@ -285,7 +285,7 @@ function J(e) {
                                 guildId: C.id
                             }, n.id)
                         },
-                        rowHeight: Y,
+                        rowHeight: W,
                         renderRow: e => {
                             let {
                                 section: t,
@@ -318,7 +318,7 @@ function J(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         channel: t
     } = e;

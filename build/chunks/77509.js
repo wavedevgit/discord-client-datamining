@@ -1,13 +1,13 @@
 /** chunk id: 77509 params = (module,exports,require) **/
-i.d(e, {
+n.d(e, {
     A: () => d
 });
-var n = i(984083),
-    r = i(142120),
-    l = i(366811),
-    s = i(612716),
-    a = i(976860),
-    o = i(652215);
+var i = n(984083),
+    r = n(142120),
+    l = n(366811),
+    s = n(612716),
+    a = n(976860),
+    o = n(652215);
 class c {
     unlistenHistory;
     unlistenKeyboardChange;
@@ -33,9 +33,9 @@ class c {
             if (this.executeRouteRewrites(t, e)) return;
             if (!(0, s.o)(t)) return void(0, a.bG)(o.BVt.ME)
         }
-        let i = l.A.getState();
-        for (let n of (i.basePath !== t.pathname && i.resetPath(t.pathname), this.listeners)) try {
-            n(t, e)
+        let n = l.A.getState();
+        for (let i of (n.basePath !== t.pathname && n.resetPath(t.pathname), this.listeners)) try {
+            i(t, e)
         } catch (t) {
             console.warn("RouteManager.listen: A route listener has caused an error", t.message)
         }
@@ -43,10 +43,10 @@ class c {
     };
     executeRouteRewrites(t, e) {
         if (this.routeChangeCount += 1, this.routeChangeCount < 10)
-            for (let i of this.rewrites) {
+            for (let n of this.rewrites) {
                 let r = (0, a.JK)().location.pathname,
-                    l = i(t, e);
-                if (null != l) return (0, n.Z)({
+                    l = n(t, e);
+                if (null != l) return (0, i.Z)({
                     message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
                     data: {
                         replacePath: l.path,

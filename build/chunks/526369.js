@@ -60,8 +60,8 @@ function T(e) {
         H = (0, a.bG)([c.Ay], () => c.Ay.getEmbeddedActivitiesForChannel(y.id).length <= 0),
         F = (0, A.JZ)(o.M.VC_TILE_ACTIVITIES_ENTRY_POINT),
         K = (0, d.et)(y.id) !== d.xy.CAN_LAUNCH,
-        W = null != G && G === y.id,
-        Y = P.map(e => t => (0, i.jsx)(E.Ay, {
+        Y = null != G && G === y.id,
+        W = P.map(e => t => (0, i.jsx)(E.Ay, {
             participant: e,
             channel: y,
             className: S.V,
@@ -83,19 +83,19 @@ function T(e) {
         }
     }, {
         trackOnInitialLoad: !0
-    }, []), null != D && !V && (!(U >= 2) || !H || K || F || W ? B && 1 === U && k && (H && !K ? Y.push(e => (0, i.jsx)(C.y, {
+    }, []), null != D && !V && (!(U >= 2) || !H || K || F || Y ? B && 1 === U && k && (H && !K ? W.push(e => (0, i.jsx)(C.y, {
         channel: y,
         guild: D,
         width: e,
         inPopout: M,
         handleClose: w,
         userParticipantCount: U
-    })) : Y.push(e => (0, i.jsx)(N.A, {
+    })) : W.push(e => (0, i.jsx)(N.A, {
         width: e,
         channel: y,
         guild: D,
         inPopout: M
-    }))) : Y.push(e => (0, i.jsx)(C.y, {
+    }))) : W.push(e => (0, i.jsx)(C.y, {
         channel: y,
         guild: D,
         width: e,
@@ -109,6 +109,6 @@ function T(e) {
         keyExtractor: z,
         paddingTop: 64,
         paddingBottom: 64,
-        children: Y
+        children: W
     })
 }

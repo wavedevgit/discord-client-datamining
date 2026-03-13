@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(652215),
     F = n(985018),
     K = n(980461),
-    W = n(549661);
-let Y = _.oU.THREAD_CREATION;
+    Y = n(549661);
+let W = _.oU.THREAD_CREATION;
 
 function z(e) {
     let {
@@ -204,7 +204,7 @@ function X(e) {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    m(!0), null == e && (e = r.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
+                    m(!0), null == e && (e = r.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = S.A.getStickerPreview(t.id, W.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
                     let a = (i.name ?? "").trim(),
                         c = (o || null == n) && 0 === a.length,
                         u = "" === e && (null == s || 0 === s.length) && 0 === l.length;
@@ -218,7 +218,7 @@ function X(e) {
                         content: e,
                         stickers: s,
                         uploads: l,
-                        type: Y,
+                        type: W,
                         channel: null == n ? t : null
                     });
                     if (!g) return m(!1), {
@@ -233,7 +233,7 @@ function X(e) {
                             shouldRefocus: !0
                         }
                     }
-                    return (0, T.x5)(t.id, Y.drafts.type), m(!1), {
+                    return (0, T.x5)(t.id, W.drafts.type), m(!1), {
                         shouldClear: !0,
                         shouldRefocus: !1
                     }
@@ -269,12 +269,12 @@ function X(e) {
                         children: [(0, i.jsxs)(I.Ay, {
                             channelId: "create-thread-null",
                             children: [(0, i.jsx)("div", {
-                                className: r()(W.P0, K.P0),
+                                className: r()(Y.P0, K.P0),
                                 children: (0, i.jsx)(w, {
-                                    className: W.Kk
+                                    className: Y.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
-                                children: [(0, i.jsx)(Q, {
+                                children: [(0, i.jsx)(J, {
                                     parentChannel: n,
                                     parentMessageId: l,
                                     threadSettings: p,
@@ -284,7 +284,7 @@ function X(e) {
                                     isGeneratingAI: N,
                                     enableAIFeatures: b,
                                     getThreadNameInputAccessory: v
-                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(J, {
+                                }), n.type === H.rbe.GUILD_TEXT ? (0, i.jsx)(Q, {
                                     startedFromMessage: null != l,
                                     threadSettings: p,
                                     updateThreadSettings: _,
@@ -316,7 +316,7 @@ function X(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         startedFromMessage: t,
         threadSettings: n,
@@ -337,7 +337,7 @@ function J(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         parentChannel: t,
         parentMessageId: n,
@@ -408,7 +408,7 @@ function $(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(C.A, {
             channelId: t.id,
-            type: Y,
+            type: W,
             canAttachFiles: E
         }), (0, i.jsx)("div", {
             className: K.xN,
@@ -416,7 +416,7 @@ function $(e) {
                 error: I
             })
         }), (0, i.jsx)(x.Ay, {
-            type: Y,
+            type: W,
             channel: t,
             placeholder: F.intl.string(F.t.taZfIC),
             textValue: n.textValue,

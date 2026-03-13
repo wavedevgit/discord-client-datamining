@@ -116,7 +116,7 @@ function P(e) {
             }]
         }), [w]),
         K = k(v, l, a),
-        W = k(y, l, null);
+        Y = k(y, l, null);
     (0, A.Ay)(() => {
         u.h.dispatch({
             type: "NOTIFICATIONS_INBOX_OPEN"
@@ -154,7 +154,7 @@ function P(e) {
                 },
                 isUnread: x.Ay.hasUnread(r) ?? !1
             }
-        }(K, W);
+        }(K, Y);
         null != i && I.A.inboxItemClick({
             message: i,
             channel: {
@@ -172,10 +172,10 @@ function P(e) {
         })
     });
     let {
-        filterStyle: Y
+        filterStyle: W
     } = (0, E.X8)({
         location: "NotificationsInboxSidebar"
-    }), z = Y === E.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
+    }), z = W === E.yF.DROPDOWN && l !== O.Io.ALL, q = (0, O.Yw)(l);
     return (0, i.jsx)("nav", {
         className: r()(D.kL, {
             [D.Yu]: t
@@ -195,7 +195,7 @@ function P(e) {
                 className: D.cl,
                 renderMessageGroup: B,
                 messages: l === O.Io.BOOKMARKS ? F : K,
-                unreadMessages: l === O.Io.BOOKMARKS ? [] : W,
+                unreadMessages: l === O.Io.BOOKMARKS ? [] : Y,
                 listName: "notifications-inbox",
                 renderLoadingState: V,
                 ignoreGrouping: l === O.Io.BOOKMARKS,

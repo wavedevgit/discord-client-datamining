@@ -1,15 +1,15 @@
 /** chunk id: 212168 params = (module,exports,require) **/
 n.d(t, {
-    A: () => c,
+    A: () => _,
     i: () => d
 });
 var i, r = n(627968),
     a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    s = n(503698),
+    l = n.n(s),
     o = n(342108),
     d = ((i = {}).PREMIUM = "premium", i.LIMITED = "limited", i);
-let _ = {
+let c = {
         premium: {
             border: o.wU,
             background: o.gI
@@ -19,25 +19,25 @@ let _ = {
             background: o.pm
         }
     },
-    c = a.forwardRef(function(e, t) {
+    _ = a.forwardRef(function(e, t) {
         let {
             children: n,
             type: i = "premium",
             isShown: a,
-            hasBackground: l = !1,
+            hasBackground: s = !1,
             className: d,
-            backgroundClassName: c
+            backgroundClassName: _
         } = e;
         if (!a) return n;
         let {
             border: u,
             background: A
-        } = _[i];
+        } = c[i];
         return (0, r.jsx)("div", {
             ref: t,
-            className: s()(u, d),
+            className: l()(u, d),
             children: (0, r.jsx)("div", {
-                className: s()(l ? A : o.Tp, c),
+                className: l()(s ? A : o.Tp, _),
                 children: n
             })
         })

@@ -48,19 +48,19 @@ let M = s.memo(function(e) {
         [B, H] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, V?.id ?? ""),
         F = B === o.M.GAME_SHOP_NEW_BADGE && null != V,
         K = null == k || "loading" === k.state || F || t.id !== (0, g.zf)() || !w,
-        [W, Y] = (0, A.RF)(K ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
-        z = W === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
+        [Y, W] = (0, A.RF)(K ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
+        z = Y === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
         q = F || z,
-        X = s.useMemo(() => F ? H : Y, [F, H, Y]);
+        X = s.useMemo(() => F ? H : W, [F, H, W]);
     s.useEffect(() => {
         l && q && X(j.i.INDIRECT_ACTION)
     }, [X, l, q]);
-    let J = s.useCallback(() => {
+    let Q = s.useCallback(() => {
             X(j.i.TAKE_ACTION);
             let e = f.A.getStorefrontState(t.id)?.activePage ?? 0;
             (0, p.pX)(y.BVt.CHANNELS_GAME_SHOP(t.id, e))
         }, [t.id, X]),
-        Q = s.useCallback(() => {
+        J = s.useCallback(() => {
             (0, C.X)({
                 guildId: t.id,
                 forceFetch: F
@@ -100,8 +100,8 @@ let M = s.memo(function(e) {
                 children: t?.id === (0, g.zf)() ? R.intl.string(R.t.xFQAPs) : R.intl.string(R.t.vyaWs7)
             }),
             selected: l,
-            onMouseDown: Q,
-            onClick: J,
+            onMouseDown: J,
+            onClick: Q,
             onContextMenu: Z,
             trailing: (0, i.jsxs)(i.Fragment, {
                 children: [F && (0, i.jsx)(u.LpS, {
@@ -109,7 +109,7 @@ let M = s.memo(function(e) {
                     color: c.A.colors.BACKGROUND_BRAND.css
                 }), a]
             })
-        }), [t.id, l, Q, J, Z, F]),
+        }), [t.id, l, J, Q, Z, F]),
         en = s.useMemo(() => {
             if (null == V) return;
             let e = null != V.assetId ? T.A.toURLSafe((0, S.YE)(V.applicationId, V.assetId, 128, "webp")) : void 0,
@@ -125,8 +125,8 @@ let M = s.memo(function(e) {
                     applicationName: V.applicationName
                 });
                 return (0, i.jsx)(I.A, {
-                    onActionClick: J,
-                    onActionMouseDown: Q,
+                    onActionClick: Q,
+                    onActionMouseDown: J,
                     onRender: ee,
                     onRequestClose: $,
                     targetElementRef: D,
@@ -137,14 +137,14 @@ let M = s.memo(function(e) {
                 })
             }
             return z ? (0, i.jsx)(E.A, {
-                onActionClick: J,
-                onActionMouseDown: Q,
+                onActionClick: Q,
+                onActionMouseDown: J,
                 onRender: ee,
                 onRequestClose: $,
                 targetElementRef: D,
                 applicationName: R.intl.string(R.t.Uu8hke)
             }) : null
-        }, [F, w, V, J, Q, ee, $, en, z]);
+        }, [F, w, V, Q, J, ee, $, en, z]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(N.A, {
             ref: M,

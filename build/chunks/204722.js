@@ -1,7 +1,7 @@
 /** chunk id: 204722 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => Y,
+    W: () => W,
     f: () => z
 });
 var i = n(627968),
@@ -46,9 +46,9 @@ var i = n(627968),
     H = n(654487),
     F = n(985018),
     K = n(738072),
-    W = n(95610);
+    Y = n(95610);
 
-function Y(e, t, n) {
+function W(e, t, n) {
     return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, p.A)(t, V.jUm.JOIN))
 }
 let z = s.memo(function(e) {
@@ -66,7 +66,7 @@ let z = s.memo(function(e) {
             application: D,
             analyticsContext: H,
             inviteButtonRef: z,
-            accountLinkButtonRef: Q,
+            accountLinkButtonRef: J,
             startAuthorization: $,
             canStartAuthorization: Z,
             hasAlreadyLinked: ee,
@@ -74,7 +74,7 @@ let z = s.memo(function(e) {
         } = e, {
             parentAnalyticsLocation: en,
             analyticsLocations: ei
-        } = (0, f.Ay)(), es = (0, L.A)(D), el = Y(D, M, I), {
+        } = (0, f.Ay)(), es = (0, L.A)(D), el = W(D, M, I), {
             enabled: er
         } = y._.useConfig({
             location: "activity-panel"
@@ -143,7 +143,7 @@ let z = s.memo(function(e) {
         }, []), s.useEffect(() => {
             ee && (eb(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null))
         }, [ee]);
-        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(J, {
+        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(Q, {
                 guildId: es.guildId,
                 applicationId: es.id
             }),
@@ -209,7 +209,7 @@ let z = s.memo(function(e) {
                 }, n = u.Fzq, s = null != _ ? F.intl.formatToPlainString(F.t.AB5gTy, {
                     game: _.name
                 }) : F.intl.string(F.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, G.gV)(A.type) && (s = F.intl.string(F.t.uQn9B8))), (0, i.jsx)("div", {
-                    className: W.IF,
+                    className: Y.IF,
                     children: (0, i.jsx)(k.A, {
                         tooltipText: s,
                         disabled: e,
@@ -245,12 +245,12 @@ let z = s.memo(function(e) {
                     }, 9e4))
                 },
                 connectionApp: et,
-                ref: Q
+                ref: J
             }),
             eM = !Z || ee ? null : (0, i.jsx)(d.AM, {
                 title: F.intl.string(F.t.ULvRFd),
                 body: F.intl.string(F.t["HJJDr+"]),
-                targetElementRef: Q,
+                targetElementRef: J,
                 position: "top",
                 align: "center",
                 caretConfig: {
@@ -262,7 +262,7 @@ let z = s.memo(function(e) {
                 }
             });
         return null == ev && null == ey && null == ej && null == eR && null == eL && null == eS && null == eT ? null : (0, i.jsxs)("div", {
-            className: W.o1,
+            className: Y.o1,
             children: [eS ?? eL ?? ey, eT, ev, ej ?? eR ?? eO, eM]
         })
     }),
@@ -310,11 +310,11 @@ function X(e) {
         }, [g, x, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: W.IF,
+            className: Y.IF,
             children: [(0, i.jsx)("div", {
-                className: W.uD,
+                className: Y.uD,
                 children: (0, i.jsx)("div", {
-                    className: W.Z9
+                    className: Y.Z9
                 })
             }), (0, i.jsx)(k.A, {
                 ref: a,
@@ -334,7 +334,7 @@ function X(e) {
     })
 }
 
-function J(e) {
+function Q(e) {
     let {
         applicationId: t,
         guildId: n

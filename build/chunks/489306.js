@@ -102,8 +102,8 @@ function R(e) {
                 [B, H] = (0, E.W2)(null != t && !T && !G && !k && null != V, e),
                 F = B === r.M.EXPIRING_POWERUP_COACHMARK,
                 K = (0, h.TS)(e, "useGuildPowerupsChannelListPopout"),
-                [W, Y] = (0, E.rd)(null != t && !T && !G && !k && !F && K),
-                z = W === r.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK,
+                [Y, W] = (0, E.rd)(null != t && !T && !G && !k && !F && K),
+                z = Y === r.M.GAME_SERVER_HOSTING_BATCH_RELEASE_V2_COACHMARK,
                 q = i.useMemo(() => {
                     if (null == t || T || G || z || k || F) return;
                     let n = function(e, t) {
@@ -164,7 +164,7 @@ function R(e) {
                     }(e, R, j, O);
                     if (null != s) return s
                 }, [e, t, T, G, z, k, F, j, R, O]),
-                [X, J] = (0, E.ru)(null != q);
+                [X, Q] = (0, E.ru)(null != q);
             return i.useMemo(() => {
                 if (null != t) {
                     if (T) return {
@@ -197,16 +197,16 @@ function R(e) {
                     };
                     if (z) return {
                         type: _.o.GAME_SERVER_NEW_GAMES,
-                        markAsDismissed: Y
+                        markAsDismissed: W
                     };
                     if (X === r.M.GUILD_POWERUP_NOTIFICATION && null != q) return {
                         ...q,
                         markAsDismissed: e => {
-                            J(e), q.markAsDismissed(e)
+                            Q(e), q.markAsDismissed(e)
                         }
                     }
                 }
-            }, [t, T, C, q, X, J, G, D, L, k, U, w, F, V, H, z, Y])
+            }, [t, T, C, q, X, Q, G, D, L, k, U, w, F, V, H, z, W])
         }(e, n ?? void 0);
     if (null !== n && (null != m || j || null != R)) return {
         indicator: m,

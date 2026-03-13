@@ -46,13 +46,13 @@ var i = n(627968),
     H = n(884452),
     F = n(137089),
     K = n(506792),
-    W = n(724591),
-    Y = n(573956),
+    Y = n(724591),
+    W = n(573956),
     z = n(141515),
     q = n(463938),
     X = n(779881),
-    J = n(998986),
-    Q = n(732077),
+    Q = n(998986),
+    J = n(732077),
     $ = n(689025),
     Z = n(698126),
     ee = n(667425),
@@ -431,12 +431,12 @@ class eh extends s.PureComponent {
                         selected: a === ea.VV.ROLE_SUBSCRIPTIONS
                     }, el.n.GUILD_ROLE_SUBSCRIPTIONS);
                 case el.n.GUILD_SHOP:
-                    return (0, i.jsx)(J.A, {
+                    return (0, i.jsx)(Q.A, {
                         guild: l,
                         selected: a === ea.VV.GUILD_SHOP
                     }, el.n.GUILD_SHOP);
                 case el.n.GUILD_GAME_SHOP:
-                    return (0, i.jsx)(W.A, {
+                    return (0, i.jsx)(Y.A, {
                         guild: l,
                         selected: a === ea.VV.GAME_SHOP
                     }, el.n.GUILD_GAME_SHOP);
@@ -445,7 +445,7 @@ class eh extends s.PureComponent {
                         guild: l
                     });
                 case el.n.CHANNELS_AND_ROLES:
-                    return (0, i.jsx)(Y.G, {
+                    return (0, i.jsx)(W.G, {
                         guild: l,
                         selected: a === ea.VV.CHANNEL_BROWSER || a === ea.VV.CUSTOMIZE_COMMUNITY
                     }, el.n.CHANNELS_AND_ROLES);
@@ -504,7 +504,7 @@ class eh extends s.PureComponent {
                         disableManageChannels: h,
                         canBeNewChannel: m && t === d.recentsSectionNumber,
                         isFavoriteCategory: E
-                    }), x.threadCount > 0 ? (0, i.jsx)(Q.A, {
+                    }), x.threadCount > 0 ? (0, i.jsx)(J.A, {
                         withGuildIcon: p,
                         channel: I,
                         sortedThreadIds: x.threadIds,

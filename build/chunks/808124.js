@@ -48,7 +48,7 @@ let N = e => {
         }), [B, H] = s.useState({
             x: 0,
             y: 0
-        }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), q = (0, d.w)(e => {
+        }), [F, K] = s.useState(!1), Y = s.useRef(null), [W, z] = s.useState(null), q = (0, d.w)(e => {
             let {
                 contentRect: t,
                 target: n
@@ -58,8 +58,8 @@ let N = e => {
                 y: l / 2 + i.y
             });
             let d = Math.max(r, a);
-            if (y(Math.max(o, c)), L(d), null != W.current) {
-                let e = W.current.getBoundingClientRect();
+            if (y(Math.max(o, c)), L(d), null != Y.current) {
+                let e = Y.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
                     y: e.top - i.top
@@ -89,7 +89,7 @@ let N = e => {
         s.useEffect(() => {
             X(O)
         }, [O, X]);
-        let J = s.useCallback(e => {
+        let Q = s.useCallback(e => {
             let t = q.current?.getBoundingClientRect();
             if (null == t) return;
             let n = t.height / j,
@@ -129,7 +129,7 @@ let N = e => {
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
+                    !1 !== G && (w(P + Math.abs(e.movementX) + Math.abs(e.movementY)), Q({
                         x: M.x + e.movementX,
                         y: M.y + e.movementY
                     })), H({
@@ -158,7 +158,7 @@ let N = e => {
                             [I.R]: n
                         }),
                         children: [(0, i.jsx)("div", {
-                            ref: W,
+                            ref: Y,
                             children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
                                 "aria-label": E.intl.string(C.default.W7TAH4),
@@ -209,10 +209,10 @@ let N = e => {
                 }), (0, i.jsx)(f.A, {
                     open: F,
                     close: () => K(!1),
-                    triggerRef: W,
-                    style: null != Y ? {
-                        left: Y.x,
-                        top: Y.y
+                    triggerRef: Y,
+                    style: null != W ? {
+                        left: W.x,
+                        top: W.y
                     } : void 0
                 }), (0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
                     className: r()(I.Lw, {

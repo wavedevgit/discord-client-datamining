@@ -151,8 +151,8 @@ function F(e) {
     }, {
         autoTrackExposure: !1
     }), {
-        status: W,
-        isMobileOnline: Y,
+        status: Y,
+        isMobileOnline: W,
         activities: z
     } = (0, d.cf)([L.A], () => ({
         status: L.A.getStatus(n.id, a),
@@ -172,10 +172,10 @@ function F(e) {
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K, z]), {
-        voiceChannel: J
+        voiceChannel: Q
     } = (0, g.A)({
         userId: n.id
-    }), Q = (0, I.Ay)(J), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === C || "sending" === C, ee = s.useCallback(e => {
+    }), J = (0, I.Ay)(Q), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === C || "sending" === C, ee = s.useCallback(e => {
         e.stopPropagation(), k || F()
     }, [F, k]), et = s.useCallback(async () => {
         if (Z) return;
@@ -218,9 +218,9 @@ function F(e) {
     if (null == c) return null;
     let el = M.Ay.getName(n),
         er = P.intl.string(P.t.jYnGPG),
-        ea = W !== h.clD.OFFLINE ? W : void 0,
+        ea = Y !== h.clD.OFFLINE ? Y : void 0,
         eo = K && null != q.text,
-        ec = K && null != J && null != Q;
+        ec = K && null != Q && null != J;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
@@ -237,7 +237,7 @@ function F(e) {
             src: ei,
             avatarDecoration: en,
             status: K ? ea : void 0,
-            isMobile: K ? Y : void 0,
+            isMobile: K ? W : void 0,
             ...es
         }), (0, i.jsxs)("div", {
             className: w.VW,
@@ -251,7 +251,7 @@ function F(e) {
                 children: [ec ? (0, i.jsx)(S.A, {
                     size: "custom",
                     color: $,
-                    channel: J,
+                    channel: Q,
                     className: w.RI
                 }) : null != X ? (0, i.jsx)(_.A, {
                     icon: X,
@@ -260,7 +260,7 @@ function F(e) {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: ec ? Q : q.text
+                    children: ec ? J : q.text
                 })]
             })]
         }), "sending" === C && (0, i.jsx)("div", {
