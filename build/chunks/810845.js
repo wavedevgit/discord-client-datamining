@@ -1,42 +1,39 @@
 /** chunk id: 810845 params = (module,exports,require) **/
 t.d(n, {
-    A: () => f
+    A: () => p
 });
 var l = t(627968),
     i = t(64700),
-    a = t(311907),
-    r = t(397927),
+    r = t(311907),
+    a = t(397927),
     s = t(367513),
     d = t(401843),
-    o = t(574172),
-    c = t(954571),
-    u = t(911900),
-    A = t(313961),
-    h = t(806931),
-    g = t(652215),
-    p = t(985018);
+    c = t(574172),
+    o = t(954571),
+    u = t(313961),
+    A = t(806931),
+    h = t(652215),
+    g = t(985018);
 
-function f(e, n) {
-    let {
-        enabled: t
-    } = u.A.useConfig({
-        location: "useCallTilePopoutItem"
-    }), f = (0, a.bG)([A.A], () => A.A.getParticipant(e, n)), I = (0, a.bG)([A.A], () => A.A.isParticipantPoppedOut(e, n)), m = i.useCallback(() => {
-        null != f && ((0, h.Ay)(f) && (0, d.A9)(f.stream, {
-            forceMultiple: !0
-        }), s.A.popoutParticipant(e, f.id), o.openCallTilePopout(e, f.id), c.default.track(g.HAw.CALL_TILE_POPPED_OUT, {
-            channel_id: e,
-            tile_type: (0, h.Ay)(f) ? "stream" : "user"
-        }))
-    }, [f, e]);
-    return I || null == f || !t || f.type === h.lp.ACTIVITY ? null : (0, l.jsx)(r.Drp, {
+function p(e, n) {
+    let t = (0, r.bG)([u.A], () => u.A.getParticipant(e, n)),
+        p = (0, r.bG)([u.A], () => u.A.isParticipantPoppedOut(e, n)),
+        f = i.useCallback(() => {
+            null != t && ((0, A.Ay)(t) && (0, d.A9)(t.stream, {
+                forceMultiple: !0
+            }), s.A.popoutParticipant(e, t.id), c.openCallTilePopout(e, t.id), o.default.track(h.HAw.CALL_TILE_POPPED_OUT, {
+                channel_id: e,
+                tile_type: (0, A.Ay)(t) ? "stream" : "user"
+            }))
+        }, [t, e]);
+    return p || null == t || t.type === A.lp.ACTIVITY ? null : (0, l.jsx)(a.Drp, {
         id: "call-tile-popout",
-        label: (0, h.Ay)(f) ? p.intl.string(p.t.Cm4aDQ) : null != f.streamId ? p.intl.string(p.t["8Xyas9"]) : p.intl.string(p.t.ifpl2s),
-        action: m,
-        icon: r.tfB,
+        label: (0, A.Ay)(t) ? g.intl.string(g.t.Cm4aDQ) : null != t.streamId ? g.intl.string(g.t["8Xyas9"]) : g.intl.string(g.t.ifpl2s),
+        action: f,
+        icon: a.tfB,
         leadingAccessory: {
             type: "icon",
-            icon: r.tfB
+            icon: a.tfB
         }
     })
 }
