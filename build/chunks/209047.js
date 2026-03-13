@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(990078),
-    a = n(397927),
-    r = n(976860),
+    r = n(397927),
+    a = n(976860),
     o = n(93055),
     c = n(652215),
     d = n(525736),
@@ -20,7 +20,7 @@ function A(e) {
     } = e, {
         hasAccess: n
     } = (0, o.TW)("FavoriteGuildHeaderActionButton"), A = s.useRef(null), m = n ? u.intl.string(d.default.G9fGlP) : u.intl.string(u.t.ojM1xJ), p = s.useCallback(() => {
-        (0, r.pX)(c.BVt.ME)
+        (0, a.pX)(c.BVt.ME)
     }, []), g = s.useCallback(e => {
         let {
             closePopout: t
@@ -34,7 +34,7 @@ function A(e) {
             })
         })
     }, []);
-    return n ? (0, i.jsx)(a.YNO, {
+    return n ? (0, i.jsx)(r.YNO, {
         targetElementRef: A,
         position: "bottom",
         align: "left",
@@ -49,12 +49,12 @@ function A(e) {
                 position: "bottom",
                 asContainer: !0,
                 shouldShow: !s,
-                children: (0, i.jsx)(a.DUT, {
+                children: (0, i.jsx)(r.DUT, {
                     innerRef: A,
                     className: t,
                     "aria-label": m,
                     ...e,
-                    children: (0, i.jsx)(a.TIR, {
+                    children: (0, i.jsx)(r.TIR, {
                         color: "currentColor",
                         size: "refresh_sm"
                     })
@@ -65,11 +65,11 @@ function A(e) {
         text: m,
         position: "bottom",
         asContainer: !0,
-        children: (0, i.jsx)(a.DUT, {
+        children: (0, i.jsx)(r.DUT, {
             className: t,
             "aria-label": m,
             onClick: p,
-            children: (0, i.jsx)(a.PGe, {
+            children: (0, i.jsx)(r.PGe, {
                 color: "currentColor",
                 size: "refresh_sm"
             })

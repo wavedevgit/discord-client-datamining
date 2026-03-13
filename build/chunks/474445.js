@@ -1,11 +1,11 @@
 /** chunk id: 474445 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
-    a = n(311907),
-    r = n(562465),
+    r = n(311907),
+    a = n(562465),
     s = n(397927),
     o = n(73153),
     d = n(147087),
@@ -15,25 +15,25 @@ var i = n(627968),
     A = n(327475);
 let m = new Map;
 
-function p(e, t) {
-    let p, {
-            handleTranslate: f,
+function f(e, t) {
+    let f, {
+            handleTranslate: p,
             handleRevertTranslation: h,
             isTranslating: y,
             isTranslated: E
         } = function(e) {
-            let [t, n] = l.useState(!1), i = (0, a.bG)([c.default], () => c.default.locale);
+            let [t, n] = l.useState(!1), i = (0, r.bG)([c.default], () => c.default.locale);
             return {
-                handleTranslate: l.useCallback(async (l, a) => {
+                handleTranslate: l.useCallback(async (l, r) => {
                     if (t) return;
                     let d = l ?? i;
                     n(!0);
-                    let c = a ?? (0, g.getAvailableLocales)().find(e => e.value === d)?.name ?? d;
+                    let c = r ?? (0, g.getAvailableLocales)().find(e => e.value === d)?.name ?? d;
                     m.has(e.id) || m.set(e.id, e.content), (0, s.showToast)((0, s.createToast)(g.intl.formatToPlainString(g.t.Znl8Z8, {
                         targetLanguage: c
                     }), s.ToastType.AI));
                     try {
-                        let t = await r.Bo.post({
+                        let t = await a.Bo.post({
                             url: u.Rsh.AI_TRANSLATE,
                             body: {
                                 content: e.content,
@@ -70,7 +70,7 @@ function p(e, t) {
                 isTranslated: m.has(e.id)
             }
         }(e),
-        _ = (p = (0, g.getAvailableLocales)(), l.useMemo(() => p.map(e => {
+        S = (f = (0, g.getAvailableLocales)(), l.useMemo(() => f.map(e => {
             let t;
             try {
                 t = n(579832)(`./${e.value}.png`)
@@ -89,12 +89,12 @@ function p(e, t) {
                     type: "image",
                     src: t
                 },
-                action: () => f(e.value, e.name),
+                action: () => p(e.value, e.name),
                 disabled: y
             }, e.value)
-        }), [f, y, p])),
-        S = (0, d.b)();
-    return null != e.content && "" !== e.content.trim() && S ? E ? (0, i.jsx)(s.Drp, {
+        }), [p, y, f])),
+        _ = (0, d.b)();
+    return null != e.content && "" !== e.content.trim() && _ ? E ? (0, i.jsx)(s.Drp, {
         id: "revert-translation",
         label: g.intl.string(g.t.JC9BXn),
         leadingAccessory: {
@@ -107,12 +107,12 @@ function p(e, t) {
     }) : (0, i.jsx)(s.Drp, {
         id: "translate",
         label: y ? g.intl.string(g.t.SVKIdU) : g.intl.string(g.t["6epDlR"]),
-        action: () => f(),
+        action: () => p(),
         leadingAccessory: {
             type: "icon",
             icon: s.UaP
         },
         disabled: y,
-        children: _
+        children: S
     }) : null
 }

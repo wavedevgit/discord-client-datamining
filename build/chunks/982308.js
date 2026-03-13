@@ -1,12 +1,12 @@
 /** chunk id: 982308 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => T
 });
 var i = n(627968);
 n(64700);
 var l = n(503698),
-    a = n.n(l),
-    r = n(311907),
+    r = n.n(l),
+    a = n(311907),
     s = n(990078),
     o = n(397927),
     d = n(822123),
@@ -15,13 +15,13 @@ var l = n(503698),
     g = n(406704),
     A = n(253932),
     m = n(576705),
-    p = n(486020),
-    f = n(690521),
+    f = n(486020),
+    p = n(690521),
     h = n(652215),
     y = n(307731),
     E = n(985018),
-    _ = n(696678);
-let S = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+    S = n(696678);
+let _ = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
 function b(e) {
     let {
@@ -29,15 +29,15 @@ function b(e) {
         isFocused: n
     } = e, {
         animated: l,
-        src: r,
+        src: a,
         surrogates: o
     } = t;
-    return null == r && null != t.id ? r = p.Ay.getEmojiURL({
+    return null == a && null != t.id ? a = f.Ay.getEmojiURL({
         id: t.id,
         animated: !!l,
         size: 20
-    }) : null == r && (r = f.Ay.getURL(o)), (0, i.jsx)(s.m, {
-        text: (0, f.N)(t),
+    }) : null == a && (a = p.Ay.getURL(o)), (0, i.jsx)(s.m, {
+        text: (0, p.N)(t),
         hideOnClick: !0,
         spacing: 16,
         forceOpen: n,
@@ -45,32 +45,32 @@ function b(e) {
             "aria-label": E.intl.formatToPlainString(E.t["/iYSo6"], {
                 emojiName: t.name
             }),
-            className: a()(_.x6, {
-                [_.in]: n
+            className: r()(S.x6, {
+                [S.in]: n
             }),
-            children: null == r || "" === r.trim() ? (0, i.jsx)("span", {
-                className: a()("emoji", "emoji-text", _.Kk),
+            children: null == a || "" === a.trim() ? (0, i.jsx)("span", {
+                className: r()("emoji", "emoji-text", S.Kk),
                 children: o
             }) : (0, i.jsx)("img", {
-                className: _.Kk,
-                src: r,
+                className: S.Kk,
+                src: a,
                 alt: ""
             })
         })
     })
 }
 
-function v(e, t) {
-    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && S.indexOf(e.uniqueName ?? "") >= 0) && !f.Ay.isEmojiPremiumLocked({
+function T(e, t) {
+    let n = (0, d.D6)(t.guild_id).filter(e => !(e.useSpriteSheet && _.indexOf(e.uniqueName ?? "") >= 0) && !p.Ay.isEmojiPremiumLocked({
         emoji: e,
         channel: t,
         intention: y.b_.REACTION
     }));
     n.length > 4 && (n.length = 4);
     let l = A.jW.useSetting(),
-        a = (0, g.Id)(t);
-    return (0, r.bG)([m.A], () => l && a && (t.isPrivate() || m.A.can(h.xBc.ADD_REACTIONS, t)), [t, a, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
-        className: _.iE,
+        r = (0, g.Id)(t);
+    return (0, a.bG)([m.A], () => l && r && (t.isPrivate() || m.A.can(h.xBc.ADD_REACTIONS, t)), [t, r, l]) && n.length > 0 ? (0, i.jsx)(o.rXV, {
+        className: S.iE,
         children: n.map((n, l) => (0, i.jsx)(o.Drp, {
             id: `quickreact-${n.id??l}`,
             render: e => {

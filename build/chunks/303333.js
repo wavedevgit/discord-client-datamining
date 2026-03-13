@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(990078),
-    r = n(397927),
+    r = n(990078),
+    a = n(397927),
     o = n(309698),
     c = n(888697),
     d = n(581007),
@@ -39,22 +39,22 @@ function _(e) {
             })
         }), (0, i.jsxs)("div", {
             className: g.n_,
-            children: [(0, i.jsx)(a.m, {
+            children: [(0, i.jsx)(r.m, {
                 text: p.intl.string(m.default.XJ4UpB),
-                children: (0, i.jsx)(r.DUT, {
+                children: (0, i.jsx)(a.DUT, {
                     className: g.HF,
                     onClick: l,
-                    children: (0, i.jsx)(r.R2l, {
+                    children: (0, i.jsx)(a.R2l, {
                         size: "xs",
                         color: "currentColor"
                     })
                 })
-            }), (0, i.jsx)(a.m, {
+            }), (0, i.jsx)(r.m, {
                 text: p.intl.string(m.default.XV4qT6),
-                children: (0, i.jsx)(r.DUT, {
+                children: (0, i.jsx)(a.DUT, {
                     className: g.HF,
                     onClick: o,
-                    children: (0, i.jsx)(r.ucK, {
+                    children: (0, i.jsx)(a.ucK, {
                         size: "xs",
                         color: "currentColor"
                     })
@@ -74,13 +74,13 @@ function f(e) {
     }, [t]);
     return (0, i.jsx)("div", {
         className: g._o,
-        children: (0, i.jsxs)(r.DUT, {
+        children: (0, i.jsxs)(a.DUT, {
             className: g.hH,
             onClick: n,
-            children: [(0, i.jsx)(r.XGR, {
+            children: [(0, i.jsx)(a.XGR, {
                 size: "xs",
                 color: "currentColor"
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "currentColor",
                 children: p.intl.string(m.default.NGcIOF)
@@ -94,12 +94,12 @@ function x(e) {
         channel: t,
         isConnected: n
     } = e, {
-        enableHangoutWindow: a
+        enableHangoutWindow: r
     } = (0, d.Dm)({
         guildId: t.guild_id,
         location: "HangoutWindow"
-    }), r = (0, l.bG)([o.A], () => o.A.getChannelStatus(t), [t]), c = s.useMemo(() => (0, u.TP)(r), [r]), h = s.useMemo(() => null == r ? null : (0, u.K7)(r), [r]);
-    return a ? null != r && c && null != h ? (0, i.jsx)(_, {
+    }), a = (0, l.bG)([o.A], () => o.A.getChannelStatus(t), [t]), c = s.useMemo(() => (0, u.TP)(a), [a]), h = s.useMemo(() => null == a ? null : (0, u.K7)(a), [a]);
+    return r ? null != a && c && null != h ? (0, i.jsx)(_, {
         channel: t,
         imageUrl: h
     }) : n ? (0, i.jsx)(f, {

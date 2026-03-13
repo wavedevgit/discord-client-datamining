@@ -1,14 +1,13 @@
 /** chunk id: 453738 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => E
 });
-var i = n(627968);
-n(64700);
-var s = n(311907),
-    l = n(732955),
-    a = n(397927),
-    r = n(835835),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
+    a = n(835835),
     o = n(381849),
     c = n(549973),
     d = n(976860),
@@ -27,63 +26,90 @@ function f(e, t) {
     return !0
 }
 
-function x(e) {
+function x(e, t) {
+    if (e.size !== t.size) return !1;
+    for (let n of e)
+        if (!t.has(n)) return !1;
+    return !0
+}
+
+function C(e) {
     let {
         conversation: t,
         color: n,
-        index: s,
-        onJump: l
-    } = e, r = u.default.extractTimestamp(t.start_message_id), d = u.default.extractTimestamp(t.end_message_id), h = (0, c.e)({
-        timestamp: r
-    }), A = Math.max(1, Math.round((d - r) / 1e3)), m = (0, o.WR)({
-        seconds: A,
-        getFormatter: o.i
-    }), g = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type), f = null != g ? (0, p.i)(g.content_json) : null;
-    return (0, i.jsxs)(a.DUT, {
-        className: _.Nm,
+        index: l,
+        isInViewport: a,
+        scrollTarget: d,
+        onJump: h,
+        onHoverStart: A,
+        onHoverEnd: m
+    } = e, g = s.useRef(null);
+    s.useEffect(() => {
+        null != d && null != g.current && g.current.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        })
+    }, [d]);
+    let f = u.default.extractTimestamp(t.start_message_id),
+        x = u.default.extractTimestamp(t.end_message_id),
+        C = (0, c.e)({
+            timestamp: f
+        }),
+        E = Math.max(1, Math.round((x - f) / 1e3)),
+        I = (0, o.WR)({
+            seconds: E,
+            getFormatter: o.i
+        }),
+        N = t.summary_map?.entries.find(e => "TOPIC_EXTRACTION_SUMMARY" === e.summary_type),
+        b = null != N ? (0, p.i)(N.content_json) : null;
+    return (0, i.jsxs)(r.DUT, {
+        innerRef: g,
+        className: `${_.Nm}${a?` ${_.Sk}`:""}`,
         style: {
-            backgroundColor: n
+            backgroundColor: a ? n.replace(/,\s*0\.12\)$/, ", 0.24)") : n
         },
-        onClick: () => l(t),
+        onClick: () => h(t),
+        onMouseEnter: () => A(t.id),
+        onMouseLeave: m,
         children: [(0, i.jsx)("div", {
             className: _.PY,
-            children: (0, i.jsx)(a.Text, {
+            children: (0, i.jsx)(r.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
                 className: _.So,
-                children: f?.title ?? (t.keywords.length > 0 ? t.keywords.join(", ") : `Conversation ${s+1}`)
+                children: b?.title ?? (t.keywords.length > 0 ? t.keywords.join(", ") : `Conversation ${l+1}`)
             })
         }), (0, i.jsxs)("div", {
             className: _.FR,
-            children: [(0, i.jsxs)(a.Text, {
+            children: [(0, i.jsxs)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                children: [h, " ago"]
-            }), (0, i.jsxs)(a.Text, {
+                children: [C, " ago"]
+            }), (0, i.jsxs)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: [t.message_count, " messages"]
             })]
         }), (0, i.jsxs)("div", {
             className: _.FR,
-            children: [(0, i.jsxs)(a.Text, {
+            children: [(0, i.jsxs)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                children: [m, " duration"]
-            }), (0, i.jsxs)(a.Text, {
+                children: [I, " duration"]
+            }), (0, i.jsxs)(r.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: [t.user_count, " users"]
             })]
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "text-default",
             className: _.g5,
-            children: f?.brief_summary ?? `${t.message_count} messages \xb7 ${t.user_count} participants`
-        }), null != f && f.key_points.length > 0 && (0, i.jsx)("ul", {
+            children: b?.brief_summary ?? `${t.message_count} messages \xb7 ${t.user_count} participants`
+        }), null != b && b.key_points.length > 0 && (0, i.jsx)("ul", {
             className: _.JP,
-            children: f.key_points.map((e, t) => (0, i.jsx)("li", {
-                children: (0, i.jsx)(a.Text, {
+            children: b.key_points.map((e, t) => (0, i.jsx)("li", {
+                children: (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: e
@@ -93,33 +119,33 @@ function x(e) {
             className: _.so,
             children: [(0, i.jsxs)("div", {
                 className: _.a7,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
                     color: "text-default",
                     children: t.substance?.score?.toFixed(2) ?? "—"
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: "Substance"
                 })]
             }), (0, i.jsxs)("div", {
                 className: _.a7,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
                     color: "text-default",
                     children: t.engagement?.score?.toFixed(2) ?? "—"
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: "Engagement"
                 })]
             }), (0, i.jsxs)("div", {
                 className: _.a7,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
                     color: "text-default",
                     children: t.dynamics?.score?.toFixed(2) ?? "—"
-                }), (0, i.jsx)(a.Text, {
+                }), (0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "text-default",
                     children: "Dynamics"
@@ -129,62 +155,93 @@ function x(e) {
     })
 }
 
-function C(e) {
+function E(e) {
     let {
         channel: t
-    } = e, n = (0, s.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, s.bG)([m.A], () => m.A.hasMoreConversations(t.id), [t.id]), c = (0, s.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), u = (0, s.bG)([m.A], () => m.A.getLastConversationId(t.id), [t.id]), p = (0, s.bG)([h.A], () => h.A.isHighlightingEnabled(), []);
+    } = e, n = (0, l.bG)([m.A], () => m.A.getChannelConversations(t.id), [t.id], f), o = (0, l.bG)([m.A], () => m.A.getVisibleConversationIds(t.id), [t.id], x), c = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "before"), [t.id]), u = (0, l.bG)([m.A], () => m.A.hasMoreConversations(t.id, "after"), [t.id]), p = (0, l.bG)([m.A], () => m.A.isPendingFetch(t.id), [t.id]), E = (0, l.bG)([h.A], () => h.A.isHighlightingEnabled(), []), I = (0, l.bG)([m.A], () => m.A.getScrollToConversation(t.id), [t.id]), N = s.useCallback(e => {
+        (0, A.UA)(t.id, e)
+    }, [t.id]), b = s.useCallback(() => {
+        (0, A.UA)(null, null)
+    }, []);
 
-    function C(e) {
+    function S(e) {
         (0, d.pX)(g.BVt.CHANNEL(e.guild_id, e.channel_id, e.start_message_id))
     }
     return (0, i.jsxs)("aside", {
         "aria-label": "Conversations",
         className: _.zr,
-        children: [(0, i.jsx)(r.Y9, {
-            icon: a.oyn,
+        children: [(0, i.jsx)(a.Y9, {
+            icon: r.oyn,
             title: "Conversations",
             children: (0, i.jsx)("div", {
                 className: _.y6,
-                children: (0, i.jsx)(a.K0, {
-                    icon: p ? a.bMW : a.G3N,
-                    "aria-label": p ? "Hide highlights" : "Show highlights",
+                children: (0, i.jsx)(r.K0, {
+                    icon: E ? r.bMW : r.G3N,
+                    "aria-label": E ? "Hide highlights" : "Show highlights",
                     variant: "secondary",
                     size: "sm",
-                    onClick: A.E
+                    onClick: A.Eg
                 })
             })
-        }), (0, i.jsx)("div", {
+        }), (0, i.jsxs)("div", {
             className: _.Qs,
-            children: 0 === n.length ? (0, i.jsx)(a.Text, {
-                variant: "text-sm/normal",
-                color: "text-muted",
-                className: _.BI,
-                children: "No conversations available."
-            }) : n.map((e, t) => {
+            children: [c && (0, i.jsx)("div", {
+                className: _.f,
+                children: (0, i.jsx)(r.DUT, {
+                    className: _.Qf,
+                    onClick: function() {
+                        if (0 === n.length || p) return;
+                        let e = n[0].conversation;
+                        (0, A.WF)({
+                            channelId: t.id,
+                            before: e.start_message_id
+                        })
+                    },
+                    children: (0, i.jsx)(r.Text, {
+                        variant: "text-sm/medium",
+                        color: "text-link",
+                        children: p ? "Loading..." : "Load previous conversations"
+                    })
+                })
+            }), 0 !== n.length || p ? n.map((e, t) => {
                 let {
                     conversation: n,
                     color: s
                 } = e;
-                return (0, i.jsx)(x, {
+                return (0, i.jsx)(C, {
                     conversation: n,
                     color: s,
                     index: t,
-                    onJump: C
+                    isInViewport: o.has(n.id),
+                    scrollTarget: I?.conversationId === n.id ? I.seq : null,
+                    onJump: S,
+                    onHoverStart: N,
+                    onHoverEnd: b
                 }, n.id)
-            })
-        }), o && (0, i.jsx)("div", {
-            className: _.f,
-            children: (0, i.jsx)(l.$nd, {
-                variant: "secondary",
-                size: "md",
-                fullWidth: !0,
-                loading: c,
-                disabled: c,
-                text: "Load more",
-                onClick: () => {
-                    c || (0, A.W)(t.id, 5, u ?? void 0, !0)
-                }
-            })
+            }) : (0, i.jsx)(r.Text, {
+                variant: "text-sm/normal",
+                color: "text-muted",
+                className: _.BI,
+                children: "No conversations available."
+            }), u && (0, i.jsx)("div", {
+                className: _.f,
+                children: (0, i.jsx)(r.DUT, {
+                    className: _.Qf,
+                    onClick: function() {
+                        if (0 === n.length || p) return;
+                        let e = n[n.length - 1].conversation;
+                        (0, A.WF)({
+                            channelId: t.id,
+                            after: e.end_message_id
+                        })
+                    },
+                    children: (0, i.jsx)(r.Text, {
+                        variant: "text-sm/medium",
+                        color: "text-link",
+                        children: p ? "Loading..." : "Load newer conversations"
+                    })
+                })
+            })]
         })]
     })
 }

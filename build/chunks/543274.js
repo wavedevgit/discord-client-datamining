@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(554146),
-    r = n(990078),
+    r = n(554146),
+    a = n(990078),
     o = n(397927),
     c = n(155718),
     d = n(933958),
@@ -58,7 +58,7 @@ function v(e) {
             analyticsLocation: F
         })
     }, [t, B, F, H]), W = [];
-    L || W.push(a.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && W.push(a.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || W.push(a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+    L || W.push(r.M.ACTIVITIES_MINI_SHELF_SPARKLES), (0, A.A)(t.id) && !L && W.push(r.M.ACTIVITY_GDM_ROCKET_SPARKLE), L || W.push(r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
     let Y = s.useRef(!1),
         z = s.useRef(null);
     return (0, i.jsx)(x.Ay, {
@@ -67,7 +67,7 @@ function v(e) {
             let {
                 visibleContent: s,
                 markAsDismissed: l
-            } = e, c = s === a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !M;
+            } = e, c = s === r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !M;
             return Y.current && !c && l(S.i.AUTO_DISMISS), Y.current !== c && (Y.current = c), (0, i.jsx)(o.YNO, {
                 targetElementRef: z,
                 fixed: !0,
@@ -98,7 +98,7 @@ function v(e) {
                     }) : (0, i.jsx)(i.Fragment, {})
                 },
                 children: () => (0, i.jsx)(x.GY, {
-                    contentType: a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE,
+                    contentType: r.M.ACTIVITIES_VOICE_LAUNCHER_BADGE,
                     latestVersion: P,
                     children: e => {
                         let {
@@ -106,7 +106,7 @@ function v(e) {
                             markAsDismissed: n
                         } = e;
                         return (0, i.jsxs)(i.Fragment, {
-                            children: [(0, i.jsx)(r.m, {
+                            children: [(0, i.jsx)(a.m, {
                                 text: T.intl.string(T.t.P8vmUv),
                                 forceOpen: !0,
                                 shouldShow: c,
@@ -118,13 +118,13 @@ function v(e) {
                                         label: k ? void 0 : O,
                                         isActivityActive: w,
                                         onClick: () => {
-                                            K(), (s === a.M.ACTIVITIES_MINI_SHELF_SPARKLES || s === a.M.ACTIVITY_GDM_ROCKET_SPARKLE || s === a.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || s === a.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || s === a.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(S.i.TAKE_ACTION), t === a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(S.i.TAKE_ACTION)
+                                            K(), (s === r.M.ACTIVITIES_MINI_SHELF_SPARKLES || s === r.M.ACTIVITY_GDM_ROCKET_SPARKLE || s === r.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_1_SPARKLES || s === r.M.ACTIVITIES_WATCH_TOGETHER_APRIL_2023_WEEK_2_SPARKLES || s === r.M.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP) && l(S.i.TAKE_ACTION), t === r.M.ACTIVITIES_VOICE_LAUNCHER_BADGE && n(S.i.TAKE_ACTION)
                                         },
                                         onMouseEnter: V,
                                         onMouseLeave: U
                                     })
                                 })
-                            }), t === a.M.ACTIVITIES_VOICE_LAUNCHER_BADGE ? (0, i.jsx)(p.a, {
+                            }), t === r.M.ACTIVITIES_VOICE_LAUNCHER_BADGE ? (0, i.jsx)(p.a, {
                                 top: 2,
                                 right: 2,
                                 size: 6

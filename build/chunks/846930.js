@@ -7,23 +7,23 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(713322);
-let r = () => (0, i.jsx)("div", {
-        className: a.jH
+    r = n(713322);
+let a = () => (0, i.jsx)("div", {
+        className: r.jH
     }),
     o = () => (0, i.jsx)("div", {
-        className: a.L1
+        className: r.L1
     }),
     c = e => {
         let {
             width: t
         } = e;
         return (0, i.jsxs)("div", {
-            className: a.Ix,
+            className: r.Ix,
             children: [(0, i.jsx)("div", {
-                className: a.p
+                className: r.p
             }), (0, i.jsx)("div", {
-                className: a.HA,
+                className: r.HA,
                 style: {
                     width: `${t}px`
                 }
@@ -35,8 +35,8 @@ let r = () => (0, i.jsx)("div", {
             withBannerPadding: t
         } = e;
         return (0, i.jsxs)("div", {
-            className: l()(a.kL, {
-                [a.o5]: t
+            className: l()(r.kL, {
+                [r.o5]: t
             }),
             children: [(0, i.jsx)(o, {}), (0, i.jsx)(c, {
                 width: 100
@@ -50,7 +50,7 @@ let r = () => (0, i.jsx)("div", {
                 width: 112
             }), (0, i.jsx)(c, {
                 width: 175
-            }), (0, i.jsx)(r, {}), (0, i.jsx)(o, {}), (0, i.jsx)(c, {
+            }), (0, i.jsx)(a, {}), (0, i.jsx)(o, {}), (0, i.jsx)(c, {
                 width: 100
             }), (0, i.jsx)(c, {
                 width: 74

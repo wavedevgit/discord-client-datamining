@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(837381),
-    a = n(311907),
-    r = n(827734),
+    r = n(311907),
+    a = n(827734),
     o = n(397927),
     c = n(941971),
     d = n(900848),
@@ -26,8 +26,8 @@ var C = n(652215),
     I = n(877066);
 
 function N() {
-    let e = (0, a.bG)([m.default], () => m.default.getCurrentUser());
-    return (0, a.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, E.P.NOTIFICATION_CENTER) > 0)
+    let e = (0, r.bG)([m.default], () => m.default.getCurrentUser());
+    return (0, r.bG)([h.Ay], () => e?.id != null && h.Ay.getMentionCount(e.id, E.P.NOTIFICATION_CENTER) > 0)
 }
 
 function b(e) {
@@ -53,7 +53,7 @@ function b(e) {
             unreadChannelIds: n
         } = (0, g.U4)(), s = N(), {
             badge: l,
-            dimensions: a
+            dimensions: r
         } = (0, _.ux)({
             isSelected: e
         });
@@ -64,7 +64,7 @@ function b(e) {
                     width: 13,
                     position: "relative"
                 },
-                color: r.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
+                color: a.A.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css
             }) : null,
             unreadChannelsCount: 0,
             badgeDimensions: {
@@ -74,9 +74,9 @@ function b(e) {
         } : {
             badge: l,
             unreadChannelsCount: n.length,
-            badgeDimensions: a
+            badgeDimensions: r
         }
-    }(S), R = T === p.U5.LEGACY ? o.K$s : o.XFE, O = (0, a.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
+    }(S), R = T === p.U5.LEGACY ? o.K$s : o.XFE, O = (0, r.bG)([A.A], () => A.A.getChannelId()), L = s.useMemo(() => {
         if (T === p.U5.SIDEBAR) return C.BVt.CHANNEL(C.gNP, O)
     }, [T, O]);
     return (0, i.jsxs)(d.c, {

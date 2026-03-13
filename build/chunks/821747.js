@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(311907),
-    r = n(827343),
+    r = n(311907),
+    a = n(827343),
     o = n(384059),
     c = n(20504),
     d = n(430452),
@@ -29,7 +29,7 @@ function p(e) {
     } = e, {
         currentVolume: x,
         muted: C
-    } = (0, a.cf)([d.Ay], () => ({
+    } = (0, r.cf)([d.Ay], () => ({
         currentVolume: d.Ay.getLocalVolume(p, g),
         muted: d.Ay.isLocalMute(p, g)
     }));
@@ -43,10 +43,10 @@ function p(e) {
             muted: C,
             maxValue: h.isPlatformEmbedded ? 200 : 100,
             onValueChange: e => {
-                e > 0 && C && r.A.toggleLocalMute(p, g), r.A.setLocalVolume(p, (0, u.w)(e), g)
+                e > 0 && C && a.A.toggleLocalMute(p, g), a.A.setLocalVolume(p, (0, u.w)(e), g)
             },
             onToggleMute: () => {
-                null != f && (0, o.X)(f, o.O.VOLUME, C), r.A.toggleLocalMute(p, g)
+                null != f && (0, o.X)(f, o.O.VOLUME, C), a.A.toggleLocalMute(p, g)
             }
         })
     })

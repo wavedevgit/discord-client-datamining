@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(490249),
+    r = n.n(l),
+    a = n(490249),
     o = n(158954),
     c = n(311907),
     d = n(397927),
@@ -46,9 +46,9 @@ let N = s.forwardRef((e, t) => {
         ref: t,
         className: I.hQ,
         children: [(0, i.jsx)("div", {
-            className: a()(I.L$, u)
-        }), (0, i.jsx)(r.animated.div, {
-            className: a()(I.qB, {
+            className: r()(I.L$, u)
+        }), (0, i.jsx)(a.animated.div, {
+            className: r()(I.qB, {
                 [I.mu]: A <= 5
             }),
             style: m
@@ -68,7 +68,7 @@ let N = s.forwardRef((e, t) => {
             }), (0, i.jsxs)("div", {
                 className: I.Ui,
                 children: [(0, i.jsx)(o.EYj, {
-                    className: a()(I.Qq, I.ue),
+                    className: r()(I.Qq, I.ue),
                     variant: "text-xs/semibold",
                     children: h ? E.intl.formatToPlainString(C.default["Ehpq+7"], {
                         appliedBoostCount: n
@@ -80,7 +80,7 @@ let N = s.forwardRef((e, t) => {
                     width: 12,
                     height: 12,
                     direction: p.A.Directions.RIGHT,
-                    className: a()(I.Qq, I.ue)
+                    className: r()(I.Qq, I.ue)
                 })]
             })]
         })]
@@ -91,7 +91,7 @@ function b(e) {
     let {
         guild: t,
         withMargin: l
-    } = e, r = s.useRef(null), o = (0, _.A)(t), p = (0, g.A)(t.id), C = s.useCallback(() => {
+    } = e, a = s.useRef(null), o = (0, _.A)(t), p = (0, g.A)(t.id), C = s.useCallback(() => {
         (0, f.A)(t.id, h.A.GUILD_BOOSTING_SIDEBAR_DISPLAY)
     }, [t.id]), E = (0, c.bG)([m.A], () => m.A.getCountForGuild(t.id) ?? 0);
     s.useEffect(() => {
@@ -119,19 +119,19 @@ function b(e) {
                 }
             },
             onClick: C,
-            className: a()(I.kL, {
+            className: r()(I.kL, {
                 [I.aF]: l
             }),
             onContextMenu: b,
             children: (0, i.jsx)(N, {
-                ref: r,
+                ref: a,
                 appliedBoostCount: E,
                 maxBoostCount: o,
                 premiumSubscriberCount: t.premiumSubscriberCount
             })
         }), (0, i.jsx)(x.a, {
             guild: t,
-            targetElementRef: r
+            targetElementRef: a
         })]
     })
 }

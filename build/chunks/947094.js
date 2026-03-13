@@ -1,12 +1,12 @@
 /** chunk id: 947094 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(311907),
     s = n(73153);
 let l = new Set;
-class a extends i.Ay.PersistedStore {
+class r extends i.Ay.PersistedStore {
     static displayName = "ForumChannelAdminOnboardingGuideStore";
     static persistKey = "ForumChannelAdminOnboardingGuideStore";
     initialize(e) {
@@ -19,7 +19,7 @@ class a extends i.Ay.PersistedStore {
         return l
     }
 }
-let r = new a(s.h, {
+let a = new r(s.h, {
     ADMIN_ONBOARDING_GUIDE_HIDE: function(e) {
         let {
             channelId: t,

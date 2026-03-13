@@ -17,9 +17,9 @@ function a(t) {
         variant: d = "secondary",
         fullWidth: u,
         onAction: c,
-        ...m
+        ...A
     } = t, {
-        label: A,
+        label: m,
         tooltip: p,
         loading: h,
         disabled: g,
@@ -31,14 +31,14 @@ function a(t) {
             variant: d,
             size: o,
             icon: r.L5T,
-            text: A,
+            text: m,
             fullWidth: u,
             onClick: () => {
                 c?.(), f()
             },
             disabled: g,
             loading: h,
-            ...m
+            ...A
         })
     })
 }

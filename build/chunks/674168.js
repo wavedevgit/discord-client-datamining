@@ -1,6 +1,6 @@
 /** chunk id: 674168 params = (module,exports,require) **/
 n.d(t, {
-    m: () => S
+    m: () => f
 });
 var i = n(627968);
 n(64700);
@@ -14,27 +14,27 @@ var r = n(311907),
     c = n(840065),
     u = n(287809),
     A = n(927578),
-    E = n(652215),
-    I = n(49999),
+    I = n(652215),
+    E = n(49999),
     g = n(788868),
     h = n(355097),
     C = n(985018),
     p = n(752060);
 
-function S(e) {
+function f(e) {
     var t;
     let {
         onClose: n,
-        markAsDismissed: S
-    } = e, f = (0, r.bG)([u.default], () => u.default.getCurrentUser()), T = (t = f?.premiumType) === g.PremiumTypes.TIER_2 ? C.intl.string(C.t.jqO5Qn) : null == t ? C.intl.string(C.t.f2qjw5) : C.intl.string(C.t.SblICW), m = A.Ay.canUseCustomCallSounds(f);
+        markAsDismissed: f
+    } = e, S = (0, r.bG)([u.default], () => u.default.getCurrentUser()), m = (t = S?.premiumType) === g.PremiumTypes.TIER_2 ? C.intl.string(C.t.jqO5Qn) : null == t ? C.intl.string(C.t.f2qjw5) : C.intl.string(C.t.SblICW), T = A.Ay.canUseCustomCallSounds(S);
     return (0, i.jsxs)(d.A, {
         isShown: !0,
         type: d.i.PREMIUM,
         className: p.ne,
         backgroundClassName: p.u4,
-        children: [null != S ? (0, i.jsx)(s.DUT, {
+        children: [null != f ? (0, i.jsx)(s.DUT, {
             className: p.VN,
-            onClick: () => S?.(I.i.DISMISS),
+            onClick: () => f?.(E.i.DISMISS),
             "aria-label": C.intl.string(C.t.cpT0Cq),
             children: (0, i.jsx)(s.PGe, {
                 size: "xs",
@@ -53,13 +53,13 @@ function S(e) {
             })]
         }), (0, i.jsx)(a.E, {
             variant: "text-sm/normal",
-            children: T
-        }), m ? (0, i.jsx)(s.Button, {
+            children: m
+        }), T ? (0, i.jsx)(s.Button, {
             onClick: function() {
                 (0, c.openUserSettings)(_.X.SOUNDBOARD_CATEGORY, {
-                    section: E.nc_.VOICE,
+                    section: I.nc_.VOICE,
                     subsection: h.MJ
-                }), n?.(), S?.(I.i.PRIMARY)
+                }), n?.(), f?.(E.i.PRIMARY)
             },
             text: C.intl.string(C.t.RzWDqY),
             fullWidth: !0
@@ -69,11 +69,11 @@ function S(e) {
             },
             subscriptionTier: g.pe.TIER_2,
             premiumModalAnalyticsLocation: {
-                section: E.JJy.SOUNDBOARD_SOUND_PICKER,
-                object: E.ZSU.BUTTON_CTA
+                section: I.JJy.SOUNDBOARD_SOUND_PICKER,
+                object: I.ZSU.BUTTON_CTA
             },
             color: l.$n.Colors.GREEN,
-            onSubscribeModalClose: () => S?.(I.i.PRIMARY)
+            onSubscribeModalClose: () => f?.(E.i.PRIMARY)
         })]
     })
 }

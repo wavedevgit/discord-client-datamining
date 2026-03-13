@@ -7,8 +7,8 @@ n.d(t, {
 var i = n(627968),
     s = n(575593),
     l = n(397927),
-    a = n(576030),
-    r = n(245068),
+    r = n(576030),
+    a = n(245068),
     o = n(44120),
     c = n(353157),
     d = n(957785),
@@ -40,7 +40,7 @@ function g(e, t) {
     } = t, x = null != e.bundleItems && e.bundleItems.length > 0, C = null != n && n > 0, E = _ && !C, I = C ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), N = {
         title: E ? h.intl.string(h.t.HFhcqh) : I,
         body: E ? h.intl.string(h.t.ilhtIa) : void 0,
-        renderIcon: E ? a.GM : void 0,
+        renderIcon: E ? r.GM : void 0,
         shouldShow: !0
     }, b = !x && e.collectiblesItem.type === s.R.PROFILE_EFFECT;
     return (0, i.jsx)(d.A, {
@@ -56,7 +56,7 @@ function g(e, t) {
                 };
                 return (0, i.jsx)("div", {
                     className: A.hT,
-                    children: (0, i.jsx)(r.X, {
+                    children: (0, i.jsx)(a.X, {
                         product: t,
                         isHighlighted: !1,
                         user: l
@@ -80,15 +80,15 @@ function g(e, t) {
 function _(e, t) {
     let {
         profileOwner: n,
-        analyticsLocations: a,
-        wishlistId: r,
+        analyticsLocations: r,
+        wishlistId: a,
         onViewWishlist: o
     } = t, c = null != e.bundleItems && e.bundleItems.length > 0, d = g(e, {
         profileOwner: n,
-        analyticsLocations: a,
+        analyticsLocations: r,
         onViewWishlist: o,
         isSingleCard: !0,
-        wishlistId: r,
+        wishlistId: a,
         index: 0
     }), u = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
@@ -108,7 +108,7 @@ function _(e, t) {
             className: m.S7,
             children: [(0, i.jsx)(l.DUT, {
                 onClick: () => {
-                    p(e, n, a)
+                    p(e, n, r)
                 },
                 className: m.Hh,
                 "aria-label": h.intl.string(h.t.pLPjsb),

@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    a = n(397927),
-    r = n(275667),
+    r = n(397927),
+    a = n(275667),
     o = n(576437),
     c = n(408486),
     d = n(769015),
@@ -28,7 +28,7 @@ function g(e) {
         source: u.Ob.RtcPanel,
         trackEntryPointImpression: !0
     });
-    return (0, i.jsx)(a.DUT, {
+    return (0, i.jsx)(r.DUT, {
         onClick: s,
         className: l()(null != s && p.On),
         children: (0, i.jsx)(A.A, {
@@ -58,7 +58,7 @@ function _(e) {
                 game: n,
                 pid: s?.pid,
                 ref: A
-            }), t ? (0, i.jsx)(a.npA, {
+            }), t ? (0, i.jsx)(r.npA, {
                 size: "md",
                 color: "currentColor",
                 className: p.it
@@ -72,7 +72,7 @@ function _(e) {
                 children: [null != f ? (0, i.jsx)(g, {
                     name: f,
                     applicationId: n?.id
-                }) : null, (0, i.jsx)(r.G, {
+                }) : null, (0, i.jsx)(a.G, {
                     onClick: l
                 })]
             })

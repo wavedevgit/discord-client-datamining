@@ -13,14 +13,14 @@ var i = n(735438),
     c = n(366811),
     u = n(309010),
     A = n(967198),
-    E = n(711014),
-    I = n(287809),
+    I = n(711014),
+    E = n(287809),
     g = n(619921),
     h = n(265422),
     C = n(652215);
 let p = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
-        t = E.Ay.getFlattenedGuildIds(),
+        t = I.Ay.getFlattenedGuildIds(),
         {
             enabled: n,
             hasHigherPrivileges: i
@@ -29,20 +29,20 @@ let p = r().throttle(function() {
         }),
         r = (0, l.dD)(a.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
         p = (0, s.k8)(a.M.FAVORITES_SERVER_ONBOARDING_INTRO),
-        S = function(e) {
+        f = function(e) {
             let t = c.A.getState().guildId;
             if (null == t) return -2;
             if (t === C.YYv) return -1;
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (S += e) || (0, _.J)(o.A, I.default, A.A, {
+    if (-1 !== (f += e) || (0, _.J)(o.A, E.default, A.A, {
             favoritesGuildXPEnabled: n,
             hasHigherPrivileges: i,
             isMenuItemDCSelected: r,
             isIntroDCDismissed: p
-        }) || (S += e), -3 === S && (S = t.length - 1), S >= t.length || -2 === S) return void(0, h.a)(g.A.getHomeLink());
-    let f = -1 === S ? C.YYv : t[S],
-        T = u.A.getChannelId(f);
-    (0, h.i)(f, T === f ? null : T, !1)
+        }) || (f += e), -3 === f && (f = t.length - 1), f >= t.length || -2 === f) return void(0, h.a)(g.A.getHomeLink());
+    let S = -1 === f ? C.YYv : t[f],
+        m = u.A.getChannelId(S);
+    (0, h.i)(S, m === S ? null : m, !1)
 }, C.ugG)

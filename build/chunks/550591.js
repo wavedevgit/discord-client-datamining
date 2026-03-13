@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(435371),
+    r = n.n(l),
+    a = n(435371),
     o = n(118433);
 
 function c(e) {
@@ -24,12 +24,12 @@ function c(e) {
         className: o.SH,
         children: n
     }), [n, c]), p = l ? t : (0, i.jsx)("div", {
-        className: a()(o.pm, {
+        className: r()(o.pm, {
             [o.wH]: A
         }),
         children: t
     });
-    return (0, i.jsx)(r.m_, {
+    return (0, i.jsx)(a.m_, {
         __unsupportedReactNodeAsText: m,
         position: "right",
         spacing: 12,

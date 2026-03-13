@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(417597),
     s = n(554146),
     l = n(41200),
-    a = n(932001),
-    r = n(903223),
+    r = n(932001),
+    a = n(903223),
     o = n(496767),
     c = n(134413),
     d = n(701785),
@@ -42,8 +42,8 @@ function I(e) {
         G = (0, g.C$)(e.id, "useGuildActionRows"),
         U = e.features.has(E.GuildFeatures.GAME_SERVERS),
         P = (0, _.N)("useGuildActionRows"),
-        [w] = (0, a.kn)(G && P && !U ? [s.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0),
-        k = (0, r.ws)(e, {
+        [w] = (0, r.kn)(G && P && !U ? [s.M.EMPTY_GAME_SERVER_TAB] : [], void 0, !0),
+        k = (0, a.ws)(e, {
             location: "guild-action-rows"
         });
     return O && R.push(C.n.GUILD_HUB_HEADER_OPTIONS), !y && S && v && null != T && T.length > 0 ? R.push(C.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR) : k && R.push(C.n.GUILD_PREMIUM_PROGRESS_BAR), !O && S && R.push(C.n.GUILD_HOME), t && R.push(C.n.GUILD_SCHEDULED_EVENTS), !O && L && R.push(C.n.CHANNELS_AND_ROLES), I && R.push(C.n.GUILD_ROLE_SUBSCRIPTIONS), N && R.push(C.n.GUILD_SHOP), b && R.push(C.n.GUILD_GAME_SHOP), (j && (L || M) || n && e.features.has(E.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && R.push(C.n.GUILD_MOD_DASH_MEMBER_SAFETY), D && R.push(C.n.GUILD_BOOSTS), G && (U ? R.push(C.n.GAME_SERVERS) : null != w && R.push(C.n.GAME_SERVERS_EMPTY)), R

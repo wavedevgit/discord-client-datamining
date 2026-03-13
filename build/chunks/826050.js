@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    a = n.n(l),
-    r = n(615300),
+    r = n.n(l),
+    a = n(615300),
     o = n(451988),
     c = n(397927),
     d = n(203982),
@@ -21,7 +21,7 @@ let m = {
 class p extends s.PureComponent {
     state = {
         shown: !1,
-        translateY: new r.A.Value(0)
+        translateY: new a.A.Value(0)
     };
     static contextType = c.CZY;
     rootRef = s.createRef();
@@ -59,16 +59,16 @@ class p extends s.PureComponent {
         let {
             reducedMotion: t
         } = this.context;
-        !0 !== t.enabled && r.A.spring(this.state.translateY, {
+        !0 !== t.enabled && a.A.spring(this.state.translateY, {
             toValue: Math.min(e, 250),
             ...m
         }).start()
     }
     renderArrowGroup(e) {
         return (0, i.jsxs)("div", {
-            className: a()(A.XN, e),
-            children: [(0, i.jsx)(r.A.div, {
-                className: a()(A.Hf, A.xM),
+            className: r()(A.XN, e),
+            children: [(0, i.jsx)(a.A.div, {
+                className: r()(A.Hf, A.xM),
                 style: this.getStyle(),
                 children: (0, i.jsx)("img", {
                     alt: "",
@@ -76,14 +76,14 @@ class p extends s.PureComponent {
                     className: A.D6
                 })
             }), (0, i.jsx)("div", {
-                className: a()(A.Hf, A.JM),
+                className: r()(A.Hf, A.JM),
                 children: (0, i.jsx)("img", {
                     alt: "",
                     src: n(162206),
                     className: A.D6
                 })
             }), (0, i.jsx)("div", {
-                className: a()(A.Hf, A.QJ),
+                className: r()(A.Hf, A.QJ),
                 children: (0, i.jsx)("img", {
                     alt: "",
                     src: n(298607),
@@ -112,7 +112,7 @@ class p extends s.PureComponent {
         } = this.state;
         return (0, i.jsxs)("div", {
             ref: this.rootRef,
-            className: a()(A.d$, {
+            className: r()(A.d$, {
                 [A.SP]: t,
                 [A.tG]: e
             }),

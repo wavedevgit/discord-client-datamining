@@ -1,6 +1,6 @@
 /** chunk id: 142524 params = (module,exports,require) **/
 i.d(e, {
-    A: () => x
+    A: () => _
 });
 var n = i(627968),
     l = i(64700),
@@ -11,23 +11,23 @@ var n = i(627968),
     d = i(643501),
     u = i(616356),
     c = i(961350),
-    m = i(71393),
-    A = i(576705),
+    A = i(71393),
+    m = i(576705),
     p = i(290863),
     h = i(977997),
     g = i(954571),
     f = i(279250),
     T = i(834757),
-    v = i(727353),
-    C = i(652215),
-    S = i(633800);
-class E extends l.PureComponent {
+    S = i(727353),
+    E = i(652215),
+    C = i(633800);
+class v extends l.PureComponent {
     componentDidMount() {
         let {
             user: t,
             streamApplication: e
         } = this.props;
-        g.default.track(C.HAw.OPEN_POPOUT, {
+        g.default.track(E.HAw.OPEN_POPOUT, {
             type: "Stream Preview",
             other_user_id: t.id,
             application_id: null != e ? e.id : null,
@@ -48,22 +48,22 @@ class E extends l.PureComponent {
             activeStream: d,
             currentUserId: u,
             canWatch: c,
-            unavailableReason: m,
-            streamApplication: A
+            unavailableReason: A,
+            streamApplication: m
         } = this.props;
         return null == i ? null : (0, n.jsx)("div", {
-            className: s()(S.yt, {
-                [S.P0]: l
+            className: s()(C.yt, {
+                [C.P0]: l
             }),
-            children: (0, n.jsx)(v.Z, {
+            children: (0, n.jsx)(S.Z, {
                 stream: i,
                 activeStream: d,
                 streamActivity: t,
-                streamApplication: A,
+                streamApplication: m,
                 user: e,
                 currentUserId: u,
                 canWatch: c ?? !1,
-                unavailableReason: m,
+                unavailableReason: A,
                 onWatchStream: o,
                 onAction: r,
                 hideTip: a
@@ -72,24 +72,24 @@ class E extends l.PureComponent {
     }
 }
 
-function x(t) {
+function _(t) {
     let {
         user: e,
         channel: i,
         ...r
-    } = t, [s, g] = (0, a.yK)([h.A, m.A, A.A, d.default], () => (0, f.eo)(i, h.A, m.A, A.A, d.default)), v = (0, a.bG)([u.A], () => u.A.getStreamForUser(e.id, i.getGuildId())), C = (0, a.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(v)), S = (0, a.bG)([c.default], () => c.default.getId()), x = (0, T.AO)(v), y = (0, a.bG)([p.A], () => (0, T.nr)(v, p.A)), _ = l.useMemo(() => ({
+    } = t, [s, g] = (0, a.yK)([h.A, A.A, m.A, d.default], () => (0, f.eo)(i, h.A, A.A, m.A, d.default)), S = (0, a.bG)([u.A], () => u.A.getStreamForUser(e.id, i.getGuildId())), E = (0, a.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(S)), C = (0, a.bG)([c.default], () => c.default.getId()), _ = (0, T.AO)(S), x = (0, a.bG)([p.A], () => (0, T.nr)(S, p.A)), y = l.useMemo(() => ({
         [i.guild_id]: [e.id]
     }), [i.guild_id, e.id]);
-    return (0, o.Eq)(_, "StreamPreviewPopout"), (0, n.jsx)(E, {
+    return (0, o.Eq)(y, "StreamPreviewPopout"), (0, n.jsx)(v, {
         ...r,
         canWatch: s,
         unavailableReason: g,
         user: e,
-        streamApplication: x,
-        stream: v,
-        activeStream: C,
-        currentUserId: S,
-        activity: y,
+        streamApplication: _,
+        stream: S,
+        activeStream: E,
+        currentUserId: C,
+        activity: x,
         channel: i
     })
 }

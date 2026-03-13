@@ -4,16 +4,16 @@ n.d(t, {
 });
 var i = n(311907),
     l = n(73153),
-    a = n(967198);
-let r = null,
+    r = n(967198);
+let a = null,
     s = null,
     o = {
         reportedMessages: {}
     };
 
 function d() {
-    let e = a.A.getLastSelectedGuildId();
-    e !== r && (s = null, r = e ?? null)
+    let e = r.A.getLastSelectedGuildId();
+    e !== a && (s = null, a = e ?? null)
 }
 class c extends i.Ay.PersistedStore {
     static displayName = "ReportToModStore";
@@ -25,7 +25,7 @@ class c extends i.Ay.PersistedStore {
         null != e && (o.reportedMessages = Object.fromEntries(Object.entries(e.reportedMessages).map(e => {
             let [t, n] = e;
             return [t, new Set(n)]
-        }))), this.syncWith([a.A], d)
+        }))), this.syncWith([r.A], d)
     }
     getState() {
         return o
@@ -53,14 +53,14 @@ let u = new c(l.h, {
             user: t,
             guildId: n
         } = e;
-        n !== r || null != s && s.set(t.id, !0)
+        n !== a || null != s && s.set(t.id, !0)
     },
     GUILD_BAN_REMOVE: function(e) {
         let {
             user: t,
             guildId: n
         } = e;
-        n !== r || null != s && s.set(t.id, !1)
+        n !== a || null != s && s.set(t.id, !1)
     },
     GUILD_SETTINGS_LOADED_BANS_BATCH: function(e) {
         let {
@@ -68,16 +68,16 @@ let u = new c(l.h, {
             guildId: n,
             userIds: i
         } = e;
-        if (n !== r) return;
+        if (n !== a) return;
         let l = new Set(t.map(e => e.user?.id)),
-            a = Array.from(new Set(i ?? [])).filter(e => !l.has(e));
+            r = Array.from(new Set(i ?? [])).filter(e => !l.has(e));
         null == s && (s = new Map), l.forEach(e => {
             s?.set(e, !0)
-        }), a.forEach(e => {
+        }), r.forEach(e => {
             s?.set(e, !1)
         })
     },
     LOGOUT: function() {
-        r = null, s = null, o.reportedMessages = {}
+        a = null, s = null, o.reportedMessages = {}
     }
 })

@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    a = n(517997),
-    r = n(519222),
+    r = n(517997),
+    a = n(519222),
     s = n(985018);
 
 function o(e, t) {
-    return (0, a.u)(t, e) ? (0, i.jsx)(l.Drp, {
+    return (0, r.u)(t, e) ? (0, i.jsx)(l.Drp, {
         id: "reply",
         label: s.intl.string(s.t["5IEsGx"]),
         leadingAccessory: {
@@ -19,7 +19,7 @@ function o(e, t) {
         },
         icon: l.W4J,
         action: n => {
-            (0, r.$b)(t, e, n)
+            (0, a.$b)(t, e, n)
         }
     }) : null
 }

@@ -2,7 +2,7 @@
 n.d(t, {
     BD: () => p,
     US: () => h,
-    X8: () => S,
+    X8: () => f,
     mH: () => g
 });
 var i = n(757942),
@@ -19,8 +19,8 @@ let A = (e, t) => {
         let n = s.A.getChannel(t);
         return null != n && ((0, l.Gw)(n.type) || c.kvI.GUILD_VOCAL.has(n.type) ? o.Ay.getMentionCount(t) > 0 || d.A.getVoiceChannelId() === t : (!_.Ay.isChannelMuted(e, t) || o.Ay.getMentionCount(t) > 0) && (0, r.Y)(n))
     },
-    E = (e, t) => t === u.P.GUILD_EVENT ? !_.Ay.isMuteScheduledEventsEnabled(e) && o.Ay.hasUnread(e, t) : o.Ay.hasUnread(e, t),
-    I = (e, t) => {
+    I = (e, t) => t === u.P.GUILD_EVENT ? !_.Ay.isMuteScheduledEventsEnabled(e) && o.Ay.hasUnread(e, t) : o.Ay.hasUnread(e, t),
+    E = (e, t) => {
         let n = s.A.getChannel(t);
         return null != n && !!c.kvI.GUILD_VOCAL.has(n.type) && (o.Ay.getMentionCount(t) > 0 || d.A.getVoiceChannelId() === t && o.Ay.getUnreadCount(t) > 0)
     },
@@ -32,8 +32,8 @@ let A = (e, t) => {
             return (0, i.A)(1, {
                 channelPredicate: A,
                 guildPredicate: t => t === e || !_.Ay.isMuted(t),
-                guildFeaturePredicate: E,
-                ensureChatIsVisible: I,
+                guildFeaturePredicate: I,
+                ensureChatIsVisible: E,
                 withVoiceChannels: !0
             }), !1
         }
@@ -46,8 +46,8 @@ let A = (e, t) => {
             return (0, i.A)(-1, {
                 channelPredicate: A,
                 guildPredicate: t => t === e || !_.Ay.isMuted(t),
-                guildFeaturePredicate: E,
-                ensureChatIsVisible: I,
+                guildFeaturePredicate: I,
+                ensureChatIsVisible: E,
                 withVoiceChannels: !0
             }), !1
         }
@@ -58,16 +58,16 @@ let A = (e, t) => {
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(1, {
             channelPredicate: C,
-            ensureChatIsVisible: I,
+            ensureChatIsVisible: E,
             withVoiceChannels: !0
         }), !1)
     },
-    S = {
+    f = {
         binds: ["mod+shift+alt+up"],
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(-1, {
             channelPredicate: C,
-            ensureChatIsVisible: I,
+            ensureChatIsVisible: E,
             withVoiceChannels: !0
         }), !1)
     }

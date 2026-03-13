@@ -1,7 +1,7 @@
 /** chunk id: 123902 params = (module,exports,require) **/
 i.d(e, {
     A: () => g,
-    V: () => m
+    V: () => A
 });
 var n, l = i(627968),
     r = i(64700),
@@ -11,8 +11,8 @@ var n, l = i(627968),
     d = i(765671),
     u = i(371664),
     c = i(271678),
-    m = ((n = {}).BLACK = "BLACK", n.GRAY = "GRAY", n);
-let A = {
+    A = ((n = {}).BLACK = "BLACK", n.GRAY = "GRAY", n);
+let m = {
         BLACK: c.Ql,
         GRAY: c.wm
     },
@@ -31,38 +31,38 @@ function g(t) {
         progress: i,
         size: n = "md",
         gradientStart: s = o.A.unsafe_rawColors.YELLOW_260.css,
-        gradientEnd: m = o.A.unsafe_rawColors.GREEN_360.css,
+        gradientEnd: A = o.A.unsafe_rawColors.GREEN_360.css,
         className: g,
         notchClassName: f,
         children: T
-    } = t, v = p[n], {
-        ref: C,
-        width: S
-    } = (0, d.Ay)(), E = r.useMemo(() => null != S ? h(S) : 0, [S]), x = r.useMemo(() => {
-        let t = Math.abs(h(E * (100 - Math.max(0, Math.min(100, i))) / 100) - E);
+    } = t, S = p[n], {
+        ref: E,
+        width: C
+    } = (0, d.Ay)(), v = r.useMemo(() => null != C ? h(C) : 0, [C]), _ = r.useMemo(() => {
+        let t = Math.abs(h(v * (100 - Math.max(0, Math.min(100, i))) / 100) - v);
         return {
             transform: `translateX(${t}px)`
         }
-    }, [i, E]), y = r.useMemo(() => ({
-        width: `${E}px`,
-        background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${m})`
-    }), [m, s, i, E]);
+    }, [i, v]), x = r.useMemo(() => ({
+        width: `${v}px`,
+        background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${A})`
+    }), [A, s, i, v]);
     return (0, l.jsxs)("div", {
         className: c.iE,
-        ref: C,
+        ref: E,
         style: {
-            height: v
+            height: S
         },
         children: [(0, l.jsxs)("div", {
             className: a()(c.kL, g),
-            style: y,
+            style: x,
             children: [(0, l.jsx)("div", {
                 className: c.qB,
-                style: x
-            }), 0 !== E && (0, l.jsx)(u.A, {
-                width: E,
-                height: v,
-                className: a()(c.DR, A[e], f)
+                style: _
+            }), 0 !== v && (0, l.jsx)(u.A, {
+                width: v,
+                height: S,
+                className: a()(c.DR, m[e], f)
             })]
         }), T]
     })

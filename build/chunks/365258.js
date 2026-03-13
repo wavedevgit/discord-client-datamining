@@ -1,12 +1,12 @@
 /** chunk id: 365258 params = (module,exports,require) **/
 n.d(t, {
-    AB: () => T,
+    AB: () => m,
     AI: () => u,
     Xc: () => C,
-    ae: () => S,
+    ae: () => f,
     g8: () => h,
-    gF: () => m,
-    gS: () => f,
+    gF: () => T,
+    gS: () => S,
     vz: () => p
 });
 var i, r = n(873298),
@@ -20,7 +20,7 @@ var i, r = n(873298),
     u = ((i = {}).RESTRICTING = "restricting", i.EXPANDING = "expanding", i);
 let A = r.Qd;
 
-function E(e) {
+function I(e) {
     switch (e) {
         case A.ACTIVITY_STATUS_OFF:
             return 2;
@@ -32,20 +32,20 @@ function E(e) {
             return -1
     }
 }
-let I = new Map([
+let E = new Map([
     [r.KP.FRIENDS_AND_ALL_GUILDS, A.ACTIVITY_STATUS_OFF],
     [r.KP.FRIENDS_AND_SMALL_GUILDS, A.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS],
     [r.KP.FRIENDS_ONLY, A.ACTIVITY_STATUS_ON]
 ]);
 
 function g(e) {
-    return I.get(e) ?? A.ACTIVITY_STATUS_OFF
+    return E.get(e) ?? A.ACTIVITY_STATUS_OFF
 }
 
 function h(e, t) {
     if (e === t) return null;
-    let n = E(e),
-        i = E(t);
+    let n = I(e),
+        i = I(t);
     if (n < 0 || i < 0) return null;
     let r = i < n ? "restricting" : "expanding",
         a = (0, _.Kk)(),
@@ -93,7 +93,7 @@ function p(e, t) {
     }
 }
 
-function S(e, t) {
+function f(e, t) {
     return {
         title: c.intl.string(e ? c.t.jRx1Aa : c.t.S0Y0bh),
         subtitle: c.intl.format(e ? c.t.Fs96LO : c.t.GcoYX8, {
@@ -104,10 +104,10 @@ function S(e, t) {
     }
 }
 
-function f(e, t) {
+function S(e, t) {
     let n = g(t),
         i = a._Z.getSetting();
-    if (i === n || E(g(e)) > E(n) != E(i) > E(n)) return null;
+    if (i === n || I(g(e)) > I(n) != I(i) > I(n)) return null;
     let l = h(i, n);
     if (null == l) return null;
     let s = function(e) {
@@ -130,11 +130,11 @@ function f(e, t) {
     }
 }
 
-function T(e) {
+function m(e) {
     return [...e].sort((e, t) => l.A.getScoreWithoutFetchingLatest(t) - l.A.getScoreWithoutFetchingLatest(e))
 }
 
-function m(e, t) {
+function T(e, t) {
     let n = (0, _.Kk)(),
         i = new Set(t);
     if ("restricting" === e) {

@@ -9,11 +9,11 @@ var n, l, r = i(627968),
     d = i(985018),
     u = ((n = u || {}).ACTIVITY_FEED = "ACTIVITY_FEED", n.ACTIVITY_FEED_NEW = "ACTIVITY_FEED_NEW", n.USER_ACTIVITY = "USER_ACTIVITY", n.GAME_LIBRARY_TIME_PLAYED = "GAME_LIBRARY_TIME_PLAYED", n.GAME_LIBRARY_LAST_PLAYED = "GAME_LIBRARY_LAST_PLAYED", n),
     c = ((l = c || {}).START = "START", l.END = "END", l.TIME = "TIME", l);
-let m = t => (e, i) => null == i ? "" : d.intl.format(t(), {
+let A = t => (e, i) => null == i ? "" : d.intl.format(t(), {
         time: e,
         ...i
     }),
-    A = {
+    m = {
         ACTIVITY_FEED: {
             START: {
                 [a.pJ.SECONDS]: () => d.intl.string(d.t["ahzZr+"]),
@@ -51,10 +51,10 @@ let m = t => (e, i) => null == i ? "" : d.intl.format(t(), {
         },
         ACTIVITY_FEED_NEW: {
             START: {
-                [a.pJ.SECONDS]: m(() => d.t.Bf3PRU),
-                [a.pJ.MINUTES]: m(() => d.t["A9P+dT"]),
-                [a.pJ.HOURS]: m(() => d.t.KwVzfh),
-                [a.pJ.DAYS]: m(() => d.t.hbUpBN)
+                [a.pJ.SECONDS]: A(() => d.t.Bf3PRU),
+                [a.pJ.MINUTES]: A(() => d.t["A9P+dT"]),
+                [a.pJ.HOURS]: A(() => d.t.KwVzfh),
+                [a.pJ.DAYS]: A(() => d.t.hbUpBN)
             },
             END: {
                 [a.pJ.SECONDS]: t => d.intl.formatToPlainString(d.t.C3MTOD, {
@@ -191,7 +191,7 @@ function p(t) {
         };
         getTimeUnit(t, e, i) {
             let n = (0, a.Ul)(t, t => (function(t, e, i) {
-                let n = A[i];
+                let n = m[i];
                 if (null != n) {
                     let i = n[e];
                     if (null != i) return null != i[t]
@@ -221,13 +221,13 @@ function p(t) {
             } = this.state, d = this.getType();
             if (null == d) return null;
             let u = this.getTimeUnit(o, e, d),
-                c = A[e][d];
+                c = m[e][d];
             if (null == c) return null;
-            let m = c[u],
+            let A = c[u],
                 p = Math.floor((0, a.eZ)(o, u));
             return (0, r.jsx)(t, {
                 ...s,
-                children: m?.(p, i, n, l)
+                children: A?.(p, i, n, l)
             })
         }
     }

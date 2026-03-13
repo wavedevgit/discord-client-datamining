@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(272812),
-    a = n(200749),
-    r = n(652215),
+    r = n(200749),
+    a = n(652215),
     o = n(985018),
     c = n(728481),
     d = n(828230);
@@ -22,9 +22,9 @@ function u(e) {
     } = e;
     return (0, i.jsx)(l.A, {
         className: c.zr,
-        children: (0, i.jsx)(a.A, {
+        children: (0, i.jsx)(r.A, {
             artURL: d,
-            size: (0, a.J)(h),
+            size: (0, r.J)(h),
             header: o.intl.string(o.t.O4FiWi),
             onCTAClick: () => (0, s.mMO)(async () => {
                 let {
@@ -34,7 +34,7 @@ function u(e) {
                     ...n,
                     guild: u,
                     channel: t,
-                    source: r.PE1.CHANNEL_CALL
+                    source: a.PE1.CHANNEL_CALL
                 })
             }, {
                 contextKey: A ? s.KX8 : s.SYi

@@ -13,16 +13,16 @@ var i = n(735438),
     c = n(863005),
     u = n(152007),
     A = n(617617),
-    E = n(961350),
-    I = n(924985),
+    I = n(961350),
+    E = n(924985),
     g = n(734057),
     h = n(945886),
     C = n(760751),
     p = n(576705),
-    S = n(222823),
-    f = n(309010),
-    T = n(543465),
-    m = n(403362),
+    f = n(222823),
+    S = n(309010),
+    m = n(543465),
+    T = n(403362),
     b = n(661191),
     N = n(32603),
     L = n(355097);
@@ -31,8 +31,8 @@ let O = null,
     G = new N.Ay;
 
 function U() {
-    let e = f.A.getChannelId(),
-        t = f.A.getVoiceChannelId();
+    let e = S.A.getChannelId(),
+        t = S.A.getVoiceChannelId();
     return O = e, R = t, G.clear()
 }
 
@@ -83,8 +83,8 @@ function x(e) {
 }
 
 function V() {
-    let e = f.A.getChannelId(),
-        t = f.A.getVoiceChannelId(),
+    let e = S.A.getChannelId(),
+        t = S.A.getVoiceChannelId(),
         n = O !== e || R !== t;
     return !!n && (r()([O, R, e, t]).uniq().forEach(e => {
         null != e && G.nonPositionalChannelIdUpdate(e) && (n = !0)
@@ -118,7 +118,7 @@ function B(e) {
 class H extends a.Ay.Store {
     static displayName = "ChannelListStore";
     initialize() {
-        this.waitFor(c.A, E.default, I.A, g.A, h.A, s.Ay, C.A, d.A, _.Ay, u.A, p.A, S.Ay, f.A, T.Ay, A.A)
+        this.waitFor(c.A, I.default, E.A, g.A, h.A, s.Ay, C.A, d.A, _.Ay, u.A, p.A, f.Ay, S.A, m.Ay, A.A)
     }
     getGuild(e, t) {
         let n = G.getGuild(e, t?.guildActionRows ?? [], t?.channelNoticeRows ?? []);
@@ -152,7 +152,7 @@ let W = new H(l.h, {
         let {
             channels: t
         } = e, n = !1;
-        return r()(t).map(e => g.A.getChannel(e.channelId)?.guild_id).filter(m.Vq).uniq().forEach(e => {
+        return r()(t).map(e => g.A.getChannel(e.channelId)?.guild_id).filter(T.Vq).uniq().forEach(e => {
             G.clearGuildId(e) && (n = !0)
         }), n
     },
@@ -226,7 +226,7 @@ let W = new H(l.h, {
             guildId: t,
             user: n
         } = e;
-        return E.default.getId() === n.id && G.clearGuildId(t)
+        return I.default.getId() === n.id && G.clearGuildId(t)
     },
     GUILD_MUTE_EXPIRED: D,
     GUILD_ROLE_CREATE: D,

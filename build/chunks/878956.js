@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var l = n(397927),
-    a = n(965407),
-    r = n(249700),
+    r = n(965407),
+    a = n(249700),
     s = n(652215),
     o = n(985018);
 
@@ -18,6 +18,6 @@ function d(e, t) {
             type: "icon",
             icon: l.fNY
         },
-        action: () => (0, r.A)(t, e, void 0, a.A.getOptions(e.id))
+        action: () => (0, a.A)(t, e, void 0, r.A.getOptions(e.id))
     })
 }

@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(554146),
-    a = n(192308),
-    r = n(990078),
+    r = n(192308),
+    a = n(990078),
     o = n(397927),
     c = n(932001),
     d = n(652793),
@@ -26,7 +26,7 @@ let x = s.memo(function(e) {
     } = e, [C, E] = (0, c.ww)([l.M.GAME_SERVER_HOSTING_NEW_BADGE], t), I = C === l.M.GAME_SERVER_HOSTING_NEW_BADGE, N = s.useCallback(() => {
         E(m.i.USER_DISMISS), (0, u.pX)(h.BVt.CHANNEL(t, A.VV.GAME_SERVERS))
     }, [t, E]), b = s.useCallback(e => {
-        e.stopPropagation(), (0, a.openModalLazy)(async () => {
+        e.stopPropagation(), (0, r.openModalLazy)(async () => {
             let {
                 default: e
             } = await n.e("2872").then(n.bind(n, 128459));
@@ -39,7 +39,7 @@ let x = s.memo(function(e) {
         className: _.c,
         children: [(0, i.jsx)("div", {
             className: f.Xs,
-            children: (0, i.jsx)(r.m, {
+            children: (0, i.jsx)(a.m, {
                 text: g.intl.string(g.t.fgq1gs),
                 position: "top",
                 children: (0, i.jsx)(o.DUT, {

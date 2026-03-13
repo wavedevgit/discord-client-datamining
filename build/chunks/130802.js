@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(311907),
-    r = n(342494),
+    r = n(311907),
+    a = n(342494),
     o = n(397927),
     c = n(827827),
     d = n(253932),
@@ -43,7 +43,7 @@ function f(e) {
     let {
         showCurrentGame: t,
         shouldShowStatus: n = !1
-    } = e, i = (0, a.bG)([u.A], () => u.A.getStatus());
+    } = e, i = (0, r.bG)([u.A], () => u.A.getStatus());
     return (0, s.jsxs)("div", {
         className: p.E3,
         children: [(0, s.jsxs)("div", {
@@ -170,7 +170,7 @@ function b(e) {
         showPopout: t,
         popoutState: n,
         handleClose: i,
-        popoutTargetRef: a,
+        popoutTargetRef: r,
         children: u
     } = e, [p, _] = (0, l.useState)(n), f = (0, l.useRef)(null), x = function(e) {
         if (null === e) return null;
@@ -239,8 +239,8 @@ function b(e) {
             textLink: l
         } = x;
         return (0, s.jsxs)(s.Fragment, {
-            children: [(0, s.jsx)(r.AM, {
-                targetElementRef: a,
+            children: [(0, s.jsx)(a.AM, {
+                targetElementRef: r,
                 shouldShow: !0,
                 position: "top",
                 align: "center",

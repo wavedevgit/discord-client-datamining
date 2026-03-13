@@ -8,8 +8,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(116833),
-    a = n(342494),
-    r = n(522055),
+    r = n(342494),
+    a = n(522055),
     o = n(738072),
     c = n(985018),
     d = n(66883);
@@ -23,8 +23,8 @@ function u(e) {
         targetElementRef: u,
         onClick: h,
         onClose: A
-    } = e, m = (0, s.bG)([r.A], () => null != c && r.A.getGlobalCatalogGame(c)?.can_market === !0, [c]);
-    return (0, i.jsx)(a.AM, {
+    } = e, m = (0, s.bG)([a.A], () => null != c && a.A.getGlobalCatalogGame(c)?.can_market === !0, [c]);
+    return (0, i.jsx)(r.AM, {
         size: "lg",
         title: t,
         body: n,

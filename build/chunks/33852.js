@@ -17,7 +17,7 @@ function d(t) {
         size: d = "sm",
         onAction: u,
         icon: c,
-        ...m
+        ...A
     } = t;
     return (0, l.bG)([a.A], () => a.A.getAccounts().some(t => t.type === e.type)) ? null : (0, n.jsx)(r.Button, {
         onClick: () => {
@@ -33,6 +33,6 @@ function d(t) {
             platform: e.name
         }),
         fullWidth: !0,
-        ...m
+        ...A
     })
 }

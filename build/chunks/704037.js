@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    a = n(397927),
-    r = n(573435),
+    r = n(397927),
+    a = n(573435),
     o = n(71393),
     c = n(967198),
     d = n(743790),
@@ -18,9 +18,9 @@ function h(e) {
         children: t,
         iconSize: n
     } = e;
-    return (0, i.jsx)(r.Ay, {
+    return (0, i.jsx)(a.Ay, {
         className: u.Iu,
-        mask: r.Ay.Masks.SQUIRCLE,
+        mask: a.Ay.Masks.SQUIRCLE,
         width: n + 5,
         height: n + 5,
         children: t
@@ -31,8 +31,8 @@ function A(e) {
     let {
         guildIds: t,
         iconSize: n = 20,
-        prioritizeSelectedGuild: r = !1
-    } = e, A = (0, l.bG)([c.A], () => r ? c.A.getGuildId() : null, [r]), m = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => m.filter(e => null != e), [m]), {
+        prioritizeSelectedGuild: a = !1
+    } = e, A = (0, l.bG)([c.A], () => a ? c.A.getGuildId() : null, [a]), m = (0, l.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, s.useMemo)(() => m.filter(e => null != e), [m]), {
         visibleGuilds: g,
         numTruncated: _
     } = (0, s.useMemo)(() => {
@@ -59,7 +59,7 @@ function A(e) {
             })
         }, e.id)), _ > 0 && (0, i.jsx)(h, {
             iconSize: n,
-            children: (0, i.jsxs)(a.Text, {
+            children: (0, i.jsxs)(r.Text, {
                 className: u.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",

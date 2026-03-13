@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    a = n(503698),
-    r = n.n(a),
+    r = n(503698),
+    a = n.n(r),
     o = n(397927),
     c = n(235986),
     d = n(919706),
@@ -19,8 +19,8 @@ function A(e) {
         disableGradients: t = !1,
         renderHeader: n,
         renderBottomLeft: i,
-        renderBottomCenter: a,
-        renderBottomRight: r,
+        renderBottomCenter: r,
+        renderBottomRight: a,
         renderCenter: d
     } = e, h = l.useRef(null);
     return (0, s.jsx)(o.xpW, {
@@ -46,13 +46,13 @@ function A(e) {
                     grow: 1,
                     justify: c.A.Justify.CENTER,
                     align: c.A.Align.CENTER,
-                    children: a?.()
+                    children: r?.()
                 }), (0, s.jsx)(c.A, {
                     grow: 1,
                     justify: c.A.Justify.END,
                     align: c.A.Align.CENTER,
                     className: u.i$,
-                    children: r?.()
+                    children: a?.()
                 })]
             })]
         })
@@ -65,7 +65,7 @@ function m(e) {
         onDoubleClick: n,
         onActive: i,
         onForceIdle: l,
-        idle: a,
+        idle: r,
         children: o,
         renderChatToasts: c,
         renderVoiceChannelEffects: h,
@@ -73,8 +73,8 @@ function m(e) {
         ...p
     } = e;
     return (0, s.jsxs)("div", {
-        className: r()(u.zr, {
-            [u.N7]: a
+        className: a()(u.zr, {
+            [u.N7]: r
         }),
         style: m,
         onMouseMove: i,

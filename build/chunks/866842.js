@@ -14,20 +14,20 @@ var i = n(64700),
     c = n(698441),
     u = n(863005),
     A = n(152007),
-    E = n(95701),
-    I = n(924985),
+    I = n(95701),
+    E = n(924985),
     g = n(734057),
     h = n(945886),
     C = n(760751),
     p = n(576705),
-    S = n(222823),
-    f = n(309010),
-    T = n(543465),
-    m = n(403362),
+    f = n(222823),
+    S = n(309010),
+    m = n(543465),
+    T = n(403362),
     b = n(32603),
     N = n(349828),
     L = n(818348);
-let O = 21552 == n.j ? [s.Ay, o.A, c.Ay, u.A, A.A, I.A, g.A, C.A, p.A, S.Ay, f.A, T.Ay] : null;
+let O = 21552 == n.j ? [s.Ay, o.A, c.Ay, u.A, A.A, E.A, g.A, C.A, p.A, f.Ay, S.A, m.Ay] : null;
 
 function R() {
     let e, t = function() {
@@ -49,10 +49,10 @@ function R() {
 
 function G(e) {
     let t = e ?? o.A.getFavoriteChannels(),
-        n = T.Ay.isGuildCollapsed(N.Vc),
-        i = f.A.getChannelId(),
+        n = m.Ay.isGuildCollapsed(N.Vc),
+        i = S.A.getChannelId(),
         r = g.A.getChannel(i),
-        s = f.A.getVoiceChannelId(),
+        s = S.A.getVoiceChannelId(),
         d = [],
         c = {};
     for (let e in t) {
@@ -79,8 +79,8 @@ function G(e) {
                 _ = null != r && r.isThread() && r.parent_id === e.id,
                 c = (d || _ || !l ? u.A.getActiveJoinedRelevantThreadsForParent(e.guild_id, e.id) : u.A.getActiveJoinedUnreadThreadsForParent(e.guild_id, e.id)) ?? {},
                 A = (0, b.wF)(e, c, r, s, n),
-                I = h.A.isCollapsed(e.id),
-                g = T.Ay.isChannelMuted(e.guild_id, e.id),
+                E = h.A.isCollapsed(e.id),
+                g = m.Ay.isChannelMuted(e.guild_id, e.id),
                 C = {
                     id: e.id,
                     record: e,
@@ -88,13 +88,13 @@ function G(e) {
                     position: t[e.id].order,
                     threadIds: A,
                     threadCount: a().size(A),
-                    isCollapsed: I,
+                    isCollapsed: E,
                     isMuted: g,
                     isFirstVoiceChannel: !1,
-                    subtitle: (0, b.go)(e, I, !1)
+                    subtitle: (0, b.go)(e, E, !1)
                 };
-            return d || _ || !a().isEmpty(c) || S.Ay.getMentionCount(e.id) > 0 ? C : n && g || l && (g || o || (0, E.gV)(e.type) || (0, E.ig)(e.type) && !1 === S.Ay.hasUnread(e.id)) ? null : C
-        }).filter(m.Vq).sortBy(e => {
+            return d || _ || !a().isEmpty(c) || f.Ay.getMentionCount(e.id) > 0 ? C : n && g || l && (g || o || (0, I.gV)(e.type) || (0, I.ig)(e.type) && !1 === f.Ay.hasUnread(e.id)) ? null : C
+        }).filter(T.Vq).sortBy(e => {
             let {
                 record: t
             } = e;
@@ -121,8 +121,8 @@ function G(e) {
             } = e, i = o.A.getCategoryRecord(t);
             if (null == i) return null;
             let r = c[t] ?? [],
-                a = T.Ay.isChannelMuted(N.Vc, t),
-                l = I.A.isCollapsed(t),
+                a = m.Ay.isChannelMuted(N.Vc, t),
+                l = E.A.isCollapsed(t),
                 s = null;
             return {
                 isMuted: a,
