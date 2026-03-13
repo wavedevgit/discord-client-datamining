@@ -16,13 +16,13 @@ var r = n(627968),
     f = n(775602),
     g = n(253932),
     h = n(894858),
-    p = n(272053),
-    y = n(189857),
+    y = n(272053),
+    p = n(189857),
     _ = n(674085),
     x = n(890690),
-    v = n(652099);
+    b = n(652099);
 
-function b(e) {
+function v(e) {
     let {
         category: t,
         onClick: n,
@@ -37,8 +37,8 @@ function b(e) {
         id: u,
         children: e => (0, r.jsxs)(m.DUT, {
             onClick: n,
-            className: s()(v.AS, {
-                [v.vu]: i
+            className: s()(b.AS, {
+                [b.vu]: i
             }),
             ...e,
             children: [g, null != a && !i && (0, r.jsx)(_.A, {
@@ -115,7 +115,7 @@ function A(e) {
             }
         }(o);
     return (0, x.u)(t), (0, r.jsxs)("div", {
-        className: v.o8,
+        className: b.o8,
         role: "list",
         style: {
             "--custom-nav-count": t.length,
@@ -123,24 +123,24 @@ function A(e) {
             "--custom-nav-width": "2px"
         },
         children: [(0, r.jsx)("div", {
-            className: v.u4,
+            className: b.u4,
             "aria-hidden": "true",
             ref: _,
             children: (0, r.jsx)(c.animated.div, {
-                className: v.FF,
+                className: b.FF,
                 style: j,
                 ref: d
             })
         }), (0, r.jsx)("div", {
-            className: v.gu,
+            className: b.gu,
             "aria-hidden": "true",
             ref: A
         }), t.map(e => {
-            let t = (0, y.H)(e.key, n, a);
-            return (0, r.jsx)(b, {
+            let t = (0, p.H)(e.key, n, a);
+            return (0, r.jsx)(v, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void p.A.navigate(t, {
+                    return t = e.key, void y.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

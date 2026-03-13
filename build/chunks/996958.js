@@ -24,8 +24,8 @@ function v() {
         setToolsCache: g,
         removeToolsCache: v
     } = (0, u.DE)(), {
-        setImgCache: y
-    } = (0, u.TW)(), T = (0, i.useCallback)(e => {
+        setImgCache: T
+    } = (0, u.TW)(), y = (0, i.useCallback)(e => {
         let t = p[e];
         null != t ? c({
             previewToolKey: t.url,
@@ -91,7 +91,7 @@ function v() {
                         let t = URL.createObjectURL(e[0]),
                             n = e[0],
                             a = await n.arrayBuffer();
-                        y(t, t, (0, h.nI)(a)), g(t, t, m.Wj)
+                        T(t, t, (0, h.nI)(a)), g(t, t, m.Wj)
                     }
                 }), (0, a.jsx)("div", {
                     className: f.is,
@@ -101,7 +101,7 @@ function v() {
                         } = e;
                         return (0, a.jsx)(j, {
                             src: t,
-                            onSetStatic: T,
+                            onSetStatic: y,
                             removeAsset: E
                         }, t)
                     })
@@ -155,12 +155,12 @@ function b(e) {
             children: [(0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "Memberlist"
-            }), (0, a.jsx)(y, {
+            }), (0, a.jsx)(T, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 children: "DMs"
-            }), (0, a.jsx)(T, {
+            }), (0, a.jsx)(y, {
                 nameplate: t
             }), (0, a.jsx)(l.Text, {
                 variant: "text-sm/semibold",
@@ -248,7 +248,7 @@ function C(e) {
     })
 }
 
-function y(e) {
+function T(e) {
     let {
         nameplate: t
     } = e, n = (0, s.bG)([c.default], () => c.default.getCurrentUser());
@@ -284,7 +284,7 @@ function y(e) {
     })
 }
 
-function T(e) {
+function y(e) {
     let {
         nameplate: t
     } = e;

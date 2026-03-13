@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(397927),
+    a = s.n(l),
+    i = s(397927),
     o = s(564322),
     c = s(287344),
     d = s(785330),
@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(177366),
     f = s(212602),
     x = s(662166),
-    C = s(919610),
-    E = s(685533),
+    E = s(919610),
+    C = s(685533),
     b = s(773591),
     A = s(758836),
     S = s(652215),
@@ -32,7 +32,7 @@ function L(e) {
         tab: t,
         categories: s,
         initialCategoryId: l,
-        showFilterInitially: i = !0,
+        showFilterInitially: a = !0,
         onUnmount: u
     } = e;
     (0, g.S)();
@@ -43,13 +43,13 @@ function L(e) {
         h = (0, c.f)("Shop Browse"),
         {
             setCategoryRef: f,
-            handleScrollToCategory: C
+            handleScrollToCategory: E
         } = (0, p.k0)(_.current),
-        [E, b] = r.useState(i),
+        [C, b] = r.useState(a),
         [A, v] = r.useState(!1);
     return r.useEffect(() => {
-        null != l && C(l)
-    }, [l, C]), r.useEffect(() => () => {
+        null != l && E(l)
+    }, [l, E]), r.useEffect(() => () => {
         null != u && u()
     }, []), r.useEffect(() => {
         let e = () => {
@@ -60,7 +60,7 @@ function L(e) {
         className: I.VM,
         children: (0, n.jsxs)("main", {
             className: I.MY,
-            children: [(0, n.jsx)(a.GtU, {
+            children: [(0, n.jsx)(i.GtU, {
                 className: I.OW,
                 ref: _,
                 onScroll: m,
@@ -75,7 +75,7 @@ function L(e) {
                     })
                 }) : (0, n.jsx)(j, {
                     isSmallScreen: A,
-                    filterBarOpen: E,
+                    filterBarOpen: C,
                     setFilterBarOpen: b,
                     tab: t,
                     scrollerRef: _,
@@ -83,9 +83,9 @@ function L(e) {
                     setCategoryRef: f,
                     initialCategoryId: l
                 })
-            }), E && !A && (0, n.jsx)("div", {
+            }), C && !A && (0, n.jsx)("div", {
                 className: I.yF
-            }), E && !A && (0, n.jsx)(a.HOs, {
+            }), C && !A && (0, n.jsx)(i.HOs, {
                 className: I.kT,
                 children: (0, n.jsx)(x.A, {})
             })]
@@ -105,7 +105,7 @@ let j = e => {
     } = e, j = r.useRef(null), k = (0, g.v)(e => e.hasDefaultFilters()), T = (0, _.uM)(), {
         handlePageChange: O,
         currentPage: y
-    } = (0, C.Z)(c), N = r.useCallback(e => {
+    } = (0, E.Z)(c), N = r.useCallback(e => {
         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: T?.sessionId,
             page_section: T?.pageSection,
@@ -141,18 +141,18 @@ let j = e => {
                     className: I.lQ,
                     children: (0, n.jsx)(m.A, {})
                 }), (0, n.jsxs)("div", {
-                    className: i()(I.wR, {
+                    className: a()(I.wR, {
                         [I.Im]: t
                     }),
                     children: [(0, n.jsxs)("div", {
                         className: I.Ul,
-                        children: [(0, n.jsx)(a.Text, {
+                        children: [(0, n.jsx)(i.Text, {
                             variant: "text-md/semibold",
                             children: v.intl.string(v.t.uaX705)
                         }), (0, n.jsx)(f.A, {})]
                     }), (0, n.jsx)("div", {
                         ref: R,
-                        children: (0, n.jsx)(a.Button, {
+                        children: (0, n.jsx)(i.Button, {
                             onClick: () => {
                                 let e = !s;
                                 u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -167,14 +167,14 @@ let j = e => {
                             },
                             variant: "secondary",
                             text: v.intl.string(s ? v.t.fYtm6f : v.t["TeTYE+"]),
-                            icon: a.RgP,
+                            icon: i.RgP,
                             iconPosition: "end"
                         })
                     })]
                 }), s && t && (0, n.jsx)("div", {
                     className: I.Dh,
                     ref: j,
-                    children: (0, n.jsx)(a.T7Y, {
+                    children: (0, n.jsx)(i.T7Y, {
                         className: I.Qo,
                         children: (0, n.jsx)(x.A, {})
                     })
@@ -193,7 +193,7 @@ let j = e => {
                     handlePageChange: N,
                     initialCategoryId: L
                 })
-            }) : (0, n.jsx)(E.A, {
+            }) : (0, n.jsx)(C.A, {
                 scrollerRef: c,
                 tab: o
             }, o)]

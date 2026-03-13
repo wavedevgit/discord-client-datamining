@@ -38,9 +38,11 @@ function m() {
     let S = s.useCallback(e => {
         u.A.setState({
             query: e
-        })
+        }), a.A.maybeTrackQueryEntered()
     }, []);
-    return (0, i.jsx)("div", {
+    return s.useEffect(() => () => {
+        a.A.terminate()
+    }, []), (0, i.jsx)("div", {
         style: {
             marginBottom: "8px"
         },
@@ -49,12 +51,12 @@ function m() {
             query: e,
             onClear: n,
             onChange: S,
+            onFocus: e => t(!0, e),
+            onBlur: e => t(!1, e),
             placeholder: h.intl.string(h.t["5h0QOP"]),
             inputProps: {
                 "aria-label": h.intl.string(h.t.pk9BWW),
-                "aria-expanded": !0,
-                onFocus: e => t(!0, e),
-                onBlur: e => t(!1, e)
+                "aria-expanded": !0
             }
         })
     })

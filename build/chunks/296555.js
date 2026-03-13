@@ -1,7 +1,7 @@
 /** chunk id: 296555 params = (module,exports,require) **/
 n.d(t, {
-    B: () => T,
-    G: () => y
+    B: () => y,
+    G: () => T
 });
 var a = n(627968),
     i = n(64700),
@@ -333,7 +333,7 @@ let h = i.createContext({
             })]
         })
     },
-    y = () => {
+    T = () => {
         let [e, t] = i.useState("preview");
         return (0, a.jsxs)("div", {
             className: m.kL,
@@ -355,7 +355,7 @@ let h = i.createContext({
             })]
         })
     },
-    T = e => {
+    y = e => {
         let {
             children: t
         } = e, [n, s] = i.useState(() => () => {}), l = i.useMemo(() => ({

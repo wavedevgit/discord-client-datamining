@@ -23,14 +23,14 @@ var a = n(627968),
     j = n(438038),
     A = n(439075),
     C = n(223344),
-    y = n(589939),
-    T = n(443960),
+    T = n(589939),
+    y = n(443960),
     S = n(899860),
     E = n(633581),
     N = n(508575),
     I = n(847807),
-    k = n(364329),
-    R = n(545986),
+    R = n(364329),
+    k = n(545986),
     O = n(927813),
     w = n(767944);
 let D = ["png", "gif", "webp"],
@@ -138,7 +138,7 @@ function G() {
             ...e,
             preview: !0
         })
-    }, []), [u, L] = i.useState(k.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
+    }, []), [u, L] = i.useState(R.b.UNENROLLED), [G, F] = i.useState(!1), [V, W] = i.useState(!1), [H, K] = i.useState(null), z = (e = t.config, (0, r.YW)(e).with({
         configVersion: 2
     }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -267,7 +267,7 @@ function G() {
     }
 
     function X() {
-        (0, p.tU)(t.config) && (0, R.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
+        (0, p.tU)(t.config) && (0, k.hJ)(t, h.uF.GIFT_INVENTORY_FOR_YOU, h.uF.INTERNAL_PREVIEW_TOOL, !0)
     }
     let Z = i.useMemo(() => {
             for (let [e, n] of Object.entries(t.config.taskConfigV2.tasks))
@@ -288,13 +288,13 @@ function G() {
             children: (0, a.jsx)(E.A, {
                 onSelect: function(e) {
                     K(e), null == e || (L(function(e) {
-                        if (null == e.userStatus) return k.b.UNENROLLED;
-                        if (null != e.userStatus.claimedAt) return k.b.CLAIMED;
-                        if (null != e.userStatus.completedAt) return k.b.COMPLETED_100;
+                        if (null == e.userStatus) return R.b.UNENROLLED;
+                        if (null != e.userStatus.claimedAt) return R.b.CLAIMED;
+                        if (null != e.userStatus.completedAt) return R.b.COMPLETED_100;
                         let t = (0, x.Yh)(e),
                             n = t.progressSeconds,
                             a = t.targetSeconds;
-                        return n / a >= 1 ? k.b.COMPLETED_100 : n / a >= .75 ? k.b.COMPLETED_75 : n / a >= .5 ? k.b.COMPLETED_50 : n / a >= .25 ? k.b.COMPLETED_25 : k.b.ENROLLED
+                        return n / a >= 1 ? R.b.COMPLETED_100 : n / a >= .75 ? R.b.COMPLETED_75 : n / a >= .5 ? R.b.COMPLETED_50 : n / a >= .25 ? R.b.COMPLETED_25 : R.b.ENROLLED
                     }(e)), c(e))
                 },
                 quest: H
@@ -375,56 +375,56 @@ function G() {
             children: "Assets"
         }), (0, a.jsxs)("div", {
             className: w.OA,
-            children: [(0, a.jsx)(T.A, {
+            children: [(0, a.jsx)(y.A, {
                 title: "Hero",
                 assetKey: "hero",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.hero
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Hero Video (optional)",
                 assetKey: "heroVideo",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.heroVideo ?? void 0
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Quest Bar Hero",
                 assetKey: "questBarHero",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.questBarHero
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Quest Bar Hero Video (optional)",
                 assetKey: "questBarHeroVideo",
                 onFileChange: $,
                 filters: P,
                 initialValue: t.config.assets.questBarHeroVideo ?? void 0
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Game Tile",
                 assetKey: "gameTile",
                 onFileChange: $,
                 filters: [...M, "svg"],
                 initialValue: t.config.assets.gameTile
-            }), (0, a.jsx)(T.A, {
+            }), (0, a.jsx)(y.A, {
                 title: "Logotype",
                 assetKey: "logotype",
                 onFileChange: $,
                 filters: [...D, "svg"],
                 initialValue: t.config.assets.logotype
             }), ee && (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsx)(T.A, {
+                children: [(0, a.jsx)(y.A, {
                     title: "Quest Video",
                     assetKey: "videoPlayerVideo",
                     onFileChange: q,
                     filters: P,
                     initialValue: et?.assets.video.url
-                }), (0, a.jsx)(T.A, {
+                }), (0, a.jsx)(y.A, {
                     title: "Quest Video (Low Resolution)",
                     assetKey: "videoPlayerVideoLowRes",
                     onFileChange: q,
                     filters: P,
                     initialValue: et?.assets.videoLowRes?.url
-                }), (0, a.jsx)(T.A, {
+                }), (0, a.jsx)(y.A, {
                     title: "Video Player Thumbnail (optional)",
                     assetKey: "videoPlayerThumbnail",
                     onFileChange: q,
@@ -449,7 +449,7 @@ function G() {
                     assetKey: "nameWithArticle",
                     onMessageChange: (e, t) => Y(e, t, n),
                     initialValue: e.messages.nameWithArticle
-                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(T.A, {
+                }), e.type !== d.l.VIRTUAL_CURRENCY && (0, a.jsx)(y.A, {
                     title: "Asset",
                     assetKey: "asset",
                     onFileChange: (e, a) => (function(e, n, a) {
@@ -513,16 +513,16 @@ function G() {
             }), (0, a.jsx)("div", {
                 className: w.OA,
                 children: (0, a.jsx)(I.A, {})
-            }), (0, a.jsx)(k.A, {
+            }), (0, a.jsx)(R.A, {
                 onChange: function(e) {
                     switch (L(e), e) {
-                        case k.b.UNENROLLED:
+                        case R.b.UNENROLLED:
                             c({
                                 ...t,
                                 userStatus: null
                             });
                             break;
-                        case k.b.ENROLLED:
+                        case R.b.ENROLLED:
                             c({
                                 ...t,
                                 userStatus: U({
@@ -530,7 +530,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_25:
+                        case R.b.COMPLETED_25:
                             c({
                                 ...t,
                                 userStatus: U({
@@ -539,7 +539,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_50:
+                        case R.b.COMPLETED_50:
                             c({
                                 ...t,
                                 userStatus: U({
@@ -548,7 +548,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_75:
+                        case R.b.COMPLETED_75:
                             c({
                                 ...t,
                                 userStatus: U({
@@ -557,7 +557,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.COMPLETED_100:
+                        case R.b.COMPLETED_100:
                             c({
                                 ...t,
                                 userStatus: U({
@@ -567,7 +567,7 @@ function G() {
                                 })
                             });
                             break;
-                        case k.b.CLAIMED:
+                        case R.b.CLAIMED:
                             c({
                                 ...t,
                                 userStatus: U({
@@ -587,7 +587,7 @@ function G() {
             children: "Component Previews"
         }), (0, a.jsxs)("div", {
             className: w.$$,
-            children: [(0, a.jsxs)(y.A, {
+            children: [(0, a.jsxs)(T.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -612,7 +612,7 @@ function G() {
                         })
                     })]
                 })]
-            }), (0, a.jsxs)(y.A, {
+            }), (0, a.jsxs)(T.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -630,7 +630,7 @@ function G() {
                         sourceQuestContent: h.uF.INTERNAL_PREVIEW_TOOL
                     })
                 })]
-            }), (0, a.jsxs)(y.A, {
+            }), (0, a.jsxs)(T.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -664,7 +664,7 @@ function G() {
                         F(e)
                     }
                 })
-            }), (0, a.jsxs)(y.A, {
+            }), (0, a.jsxs)(T.A, {
                 withBorder: !0,
                 children: [(0, a.jsx)(m.Heading, {
                     variant: "heading-sm/semibold",
@@ -683,7 +683,7 @@ function G() {
                     checked: V,
                     onChange: W
                 })
-            }), ee && (0, a.jsxs)(y.A, {
+            }), ee && (0, a.jsxs)(T.A, {
                 withBorder: !0,
                 allowClicks: !0,
                 children: [(0, a.jsx)(m.Heading, {

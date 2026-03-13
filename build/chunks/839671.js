@@ -149,7 +149,7 @@ function j(e) {
             },
             className: x.yO,
             title: r,
-            href: (0, d.L)(t.url),
+            href: (0, d.L$)(t.url),
             target: "_blank",
             rel: "noreferrer noopener",
             children: i

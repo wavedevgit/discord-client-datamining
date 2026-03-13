@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(172218),
+    a = s.n(l),
+    i = s(172218),
     o = s(696292),
     c = s(651162),
     d = s(311907),
@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(440938),
     f = s(993408),
     x = s(212407),
-    C = s(521e3),
-    E = s(938191),
+    E = s(521e3),
+    C = s(938191),
     b = s(815280),
     A = s(60140),
     S = s(758836),
@@ -44,9 +44,9 @@ let j = {
             heroBlock: k,
             tab: T,
             onVisibilityChange: O
-        } = e, y = (0, a.K)(e => {
+        } = e, y = (0, i.K)(e => {
             O?.(e)
-        }, .1, null != O), N = r.useRef(null), R = (0, E.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
+        }, .1, null != O), N = r.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -61,13 +61,13 @@ let j = {
             heroBannerAnimatedUrl: l.heroBannerAnimatedUrl
         }, [k, l]), {
             bannerDisplayConfig: D,
-            logoDisplayConfig: w,
-            heroLogo: H,
+            logoDisplayConfig: H,
+            heroLogo: w,
             heroBannerStatic: U,
             heroBannerAnimated: F,
             heroBannerRive: G
-        } = (0, x.Kk)(P), V = D?.responsive ?? !1, K = D?.backgroundStyle, z = null != G, W = T === S.G2.ORBS, Y = null != l && l.isOrbsExclusive, $ = W ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
-            W ? ((0, g.Y)({
+        } = (0, x.Kk)(P), V = D?.responsive ?? !1, K = D?.backgroundStyle, W = null != G, z = T === S.G2.ORBS, Y = null != l && l.isOrbsExclusive, $ = z ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
+            z ? ((0, g.Y)({
                 pageType: v.liQ.SHOP_ORBS_TAB,
                 sectionType: v.JJy.ORBS_SHOP_HERO_BLOCK,
                 ctaObject: v.ZSU.CTA_TO_QUEST_HOME
@@ -90,13 +90,13 @@ let j = {
         return null != B && (t || P !== j) ? (0, n.jsxs)("div", {
             ref: y,
             className: L.os,
-            children: [z ? (0, C.VA)({
+            children: [W ? (0, E.VA)({
                 isCustomCursorEnabled: R,
                 className: L.Xt,
                 riveEventTargetRef: N
             }) : null, (0, n.jsx)("div", {
-                className: i()(L.vK, {
-                    [L.cN]: z,
+                className: a()(L.vK, {
+                    [L.cN]: W,
                     [L.no]: V
                 }),
                 style: null != K ? {
@@ -111,7 +111,7 @@ let j = {
                 })
             }), (0, n.jsxs)("div", {
                 className: L.xX,
-                children: [z ? (0, n.jsx)("div", {
+                children: [W ? (0, n.jsx)("div", {
                     className: L.fy,
                     children: !t && (0, n.jsx)(u.Button, {
                         variant: "overlay-primary",
@@ -119,7 +119,7 @@ let j = {
                         text: $
                     })
                 }) : (0, n.jsxs)("div", {
-                    className: i()(L.bC, {
+                    className: a()(L.bC, {
                         [L.no]: V
                     }),
                     children: [t ? (0, n.jsx)("div", {
@@ -132,11 +132,11 @@ let j = {
                             className: L.v0
                         }), (0, n.jsxs)("div", {
                             className: L.Wq,
-                            children: [null != H && (0, n.jsx)("img", {
+                            children: [null != w && (0, n.jsx)("img", {
                                 className: L.rm,
-                                src: H,
+                                src: w,
                                 alt: P.name,
-                                style: w?.toDesktopStyles()
+                                style: H?.toDesktopStyles()
                             }), null != P.title && (0, n.jsx)(u.Heading, {
                                 variant: "heading-xxl/bold",
                                 className: L.DD,
@@ -144,7 +144,7 @@ let j = {
                                 children: P.title
                             }), null != P.summary && "" !== P.summary && (0, n.jsx)(u.Text, {
                                 variant: "text-md/normal",
-                                className: W ? L.h4 : L.Tm,
+                                className: z ? L.h4 : L.Tm,
                                 style: null != P.bannerTextColor ? {
                                     color: P.bannerTextColor
                                 } : void 0,

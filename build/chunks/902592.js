@@ -1,6 +1,6 @@
 /** chunk id: 902592 params = (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => k,
+    default: () => R,
     openDevToolsPopout: () => S
 });
 var a = n(627968),
@@ -24,9 +24,9 @@ var a = n(627968),
     j = n(652215),
     A = n(985018),
     C = n(993572),
-    y = n(930821);
+    T = n(930821);
 
-function T(e) {
+function y(e) {
     let {
         resizableNode: t,
         onResize: n,
@@ -49,7 +49,7 @@ function S() {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
         withTitleBar: !0,
-        children: (0, a.jsx)(k, {
+        children: (0, a.jsx)(R, {
             mobile: !1,
             isPopout: !0
         })
@@ -83,7 +83,7 @@ function E(e) {
         }
     }), (0, a.jsxs)(f.xG, {
         children: [(0, a.jsxs)(m.Ay, {
-            className: y.jr,
+            className: T.jr,
             toolbar: t ? null : (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(m.Ay.Icon, {
                     icon: d.tfB,
@@ -124,7 +124,7 @@ function N() {
             width: n
         },
         "data-app-right-panel": !0,
-        children: [(0, a.jsx)(T, {
+        children: [(0, a.jsx)(y, {
             resizableNode: e,
             onResize: s,
             onResizeEnd: l
@@ -147,7 +147,7 @@ function I() {
         children: (0, a.jsx)(d.DUT, {
             onClick: g.pf,
             children: (0, a.jsxs)(m.Ay, {
-                className: l()(y.jr, C.J$),
+                className: l()(T.jr, C.J$),
                 toolbar: (0, a.jsx)(x.A, {
                     direction: x.A.Directions.UP
                 }),
@@ -162,7 +162,7 @@ function I() {
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         mobile: t,
         isPopout: n = !1

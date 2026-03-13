@@ -1,42 +1,41 @@
 /** chunk id: 987281 params = (module,exports,require) **/
 n.d(t, {
-    V: () => _,
-    a: () => u
+    V: () => u,
+    a: () => c
 });
 var i = n(64700),
     s = n(964486),
     l = n(839214),
-    r = n(324593),
-    a = n(535762),
-    o = n(152056),
-    d = n(360619),
-    c = n(531525);
-let u = (0, l.D)(() => ({
-    searchResults: c.R,
+    r = n(535762),
+    a = n(152056),
+    o = n(360619),
+    d = n(531525);
+let c = (0, l.D)(() => ({
+    searchResults: d.R,
     hasSearchResults: !1
 }));
 
-function _() {
-    let e = o.A.useField("query"),
-        t = (0, d.PH)(),
-        n = i.useRef(new a.A((0, d.NI)(t))),
+function u() {
+    let e = a.A.useField("query"),
+        t = (0, o.PH)(),
+        n = i.useRef(new r.A((0, o.NI)(t))),
         l = i.useCallback(async e => {
             let t = await n.current.search(e.trim());
-            u.setState({
+            c.setState({
                 searchResults: t,
                 hasSearchResults: !0
             })
         }, []);
     i.useEffect(() => {
-        "" === e || e.length < 2 ? u.resetState() : (l(e), r.A.maybeTrackQueryEntered())
+        "" === e || e.length < 2 ? c.resetState() : l(e)
     }, [e, l]), (0, s.Ay)(() => () => {
-        u.resetState(), o.A.setState({
+        c.resetState(), a.A.setState({
             query: ""
-        }), r.A.terminate()
+        })
     });
-    let c = u.useField("searchResults");
+    let d = c.useField("searchResults");
     return {
-        hasSearchResults: u.useField("hasSearchResults"),
-        searchResults: c
+        hasSearchResults: c.useField("hasSearchResults"),
+        searchResults: d
     }
 }

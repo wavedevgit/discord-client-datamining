@@ -1,37 +1,37 @@
 /** chunk id: 145963 params = (module,exports,require) **/
-r.d(e, {
-    UV: () => E,
-    rZ: () => u,
-    uC: () => T
+n.d(e, {
+    UV: () => I,
+    rZ: () => T,
+    uC: () => E
 });
-var n = r(627968),
-    i = r(64700),
-    o = r(505779),
-    a = r(397927),
-    l = r(880405),
-    s = r(305080),
-    c = r(985018),
-    I = r(435740);
+var r = n(627968),
+    i = n(64700),
+    o = n(505779),
+    l = n(397927),
+    a = n(59544),
+    s = n(305080),
+    c = n(985018),
+    u = n(435740);
 
-function E() {
+function I() {
     return i.useMemo(() => ({
         [o.V.STEAM]: {
-            icon: a.NXQ,
+            icon: l.NXQ,
             text: c.intl.string(c.t.FsANs4),
             "aria-label": c.intl.string(c.t["P+ePTG"])
         },
         [o.V.ROBLOX]: {
-            icon: a.H0M,
+            icon: l.H0M,
             text: c.intl.string(c.t["pJ+P+h"]),
             "aria-label": c.intl.string(c.t.tYxpdf)
         },
         [o.V.BATTLENET]: {
-            icon: a.aG0,
+            icon: l.aG0,
             text: c.intl.string(c.t["A7grp+"]),
             "aria-label": c.intl.string(c.t.x9at20)
         },
         [o.V.RIOT]: {
-            icon: a.ALT,
+            icon: l.ALT,
             text: c.intl.string(c.t.h6MapL),
             "aria-label": c.intl.string(c.t["528nvc"])
         },
@@ -40,34 +40,34 @@ function E() {
             "aria-label": c.intl.string(c.t.WWTqYn)
         },
         [o.V.EPICGAMES]: {
-            icon: a.r_I,
+            icon: l.r_I,
             text: c.intl.string(c.t.ZbBMHa),
             "aria-label": c.intl.string(c.t.BwX0UW)
         }
     }), [])
 }
 
-function T(t) {
+function E(t) {
     let {
         website: e
-    } = t, r = E()[e.category];
-    return null == r ? null : (0, n.jsx)(u, {
-        ...r,
-        onClick: () => window.open((0, l.L)(e.url), "_blank", "noreferrer noopener")
+    } = t, n = (0, a.A)(e.url), i = I()[e.category];
+    return null == i || null == n ? null : (0, r.jsx)(T, {
+        ...i,
+        onClick: () => window.open(n, "_blank", "noreferrer noopener")
     })
 }
 
-function u(t) {
+function T(t) {
     let {
         ...e
     } = t, {
-        isTwoColumn: r
+        isTwoColumn: n
     } = (0, s.c)();
-    return (0, n.jsx)("div", {
-        className: I.U,
-        children: (0, n.jsx)(a.Button, {
+    return (0, r.jsx)("div", {
+        className: u.U,
+        children: (0, r.jsx)(l.Button, {
             ...e,
-            variant: r ? "overlay-secondary" : "secondary",
+            variant: n ? "overlay-secondary" : "secondary",
             fullWidth: !0,
             role: "link"
         })

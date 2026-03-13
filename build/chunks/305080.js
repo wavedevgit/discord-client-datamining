@@ -1,13 +1,13 @@
 /** chunk id: 305080 params = (module,exports,require) **/
-r.d(e, {
+n.d(e, {
     D: () => i,
     c: () => o
 });
-var n = r(64700);
-let i = n.createContext(void 0);
+var r = n(64700);
+let i = r.createContext(void 0);
 
 function o() {
-    let t = n.useContext(i);
+    let t = r.useContext(i);
     if (void 0 === t) throw Error("useGameProfileV2Context must be used within a GameProfileV2Provider");
     return t
 }

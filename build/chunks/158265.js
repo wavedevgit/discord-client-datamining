@@ -30,17 +30,17 @@ let A = e => {
         quest: A,
         isExpanded: C
     } = i.useContext(g.T), {
-        expansionSpring: y
+        expansionSpring: T
     } = i.useContext(x.PW), {
-        completionSpring: T,
+        completionSpring: y,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = i.useRef(null), R = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(R), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), R = i.useRef(null), k = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(k), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), L = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
         if (I) return;
         let e = n.current,
-            t = k.current;
+            t = R.current;
         if (null != t && null != e && L.isReady) {
             var a, i, s, l;
             let {
@@ -90,35 +90,35 @@ let A = e => {
                 }
             }), 100)
         }
-    }, [n, k, L, I]), F = (0, u.A)(C);
+    }, [n, R, L, I]), F = (0, u.A)(C);
     return (i.useEffect(() => {
         E && C && !F && (S(), G())
     }, [C, E, S, G, F]), i.useEffect(() => {
-        E && !R && O && setTimeout(() => {
+        E && !k && O && setTimeout(() => {
             S(), G()
         }, 200)
-    }, [E, O, R, S, G]), i.useEffect(() => {
+    }, [E, O, k, S, G]), i.useEffect(() => {
         L.isReady && (!N.current && E && (S(), G()), N.current = E)
     }, [E, N, G, S, L]), i.useEffect(() => {
         s && E && (S(), G())
     }, [s, E, S, G]), I) ? null : (0, a.jsxs)("div", {
         className: b.iE,
         "aria-hidden": "true",
-        ref: k,
+        ref: R,
         children: [(0, a.jsx)(d.animated.div, {
             className: b.Tp,
             style: {
-                opacity: (0, p.a)(T)
+                opacity: (0, p.a)(y)
             }
         }), (0, a.jsx)(d.animated.div, {
             className: l()(b.sJ, b.ix),
             style: {
-                opacity: (0, p.a)(T)
+                opacity: (0, p.a)(y)
             }
         }), (0, a.jsxs)(d.animated.div, {
             className: b.KG,
             style: {
-                transform: y.to({
+                transform: T.to({
                     range: [0, 1],
                     output: [-35, 0]
                 }).to(e => `translateY(${e}px)`)
@@ -136,7 +136,7 @@ let A = e => {
             }), null != t.current && (0, o.createPortal)((0, a.jsx)(d.animated.div, {
                 className: l()(b.sJ, b.d7),
                 style: {
-                    opacity: (0, p.a)(T)
+                    opacity: (0, p.a)(y)
                 }
             }), t.current)]
         })]

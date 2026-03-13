@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(64700),
     r = s(873263),
     l = s(976860),
-    i = s(840065),
-    a = s(652215);
+    a = s(840065),
+    i = s(652215);
 
 function o() {
     let {
@@ -16,9 +16,9 @@ function o() {
     return {
         onClose: n.useCallback(() => {
             if (0 === o) {
-                (0, l.aX)(), (0, i.openUserSettings)();
+                (0, l.aX)(), (0, a.openUserSettings)();
                 return
-            }(0, l.EL)() ? (0, l.aX)() : (0, l.pX)(a.BVt.APP)
+            }(0, l.EL)() ? (0, l.aX)() : (0, l.pX)(i.BVt.APP)
         }, [o]),
         source: o,
         ...t

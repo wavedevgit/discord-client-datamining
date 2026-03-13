@@ -3,7 +3,7 @@ n.d(t, {
     DB: () => N,
     ZL: () => S,
     ln: () => E,
-    t0: () => T
+    t0: () => y
 });
 var a = n(64700),
     i = n(873298),
@@ -27,27 +27,27 @@ var a = n(64700),
 let A = [v.NJ8.DARK, v.NJ8.LIGHT, v.NJ8.DARKER, v.NJ8.MIDNIGHT],
     C = [i.NS.COMPACT, i.NS.COZY, i.NS.DEFAULT];
 
-function y(e) {
+function T(e) {
     return e[Math.floor(Math.random() * e.length)]
 }
-async function T() {
+async function y() {
     let e, t = (e = _.default.getCurrentUser(), f.Ay.canUseClientThemes(e) ? Object.keys(b.ag).map(e => Number(e)) : []),
         n = t.length > 0 && Math.random() > .7;
     try {
         if (n) {
             let e, n = [...t, null],
-                a = y(n);
+                a = T(n);
             if (null != a) {
                 let t = b.ag[a];
                 e = t?.theme ?? v.NJ8.DARK
-            } else e = y([v.NJ8.DARK, v.NJ8.DARKER, v.NJ8.MIDNIGHT]);
+            } else e = T([v.NJ8.DARK, v.NJ8.DARKER, v.NJ8.MIDNIGHT]);
             await l.u_({
                 theme: e,
                 backgroundGradientPresetId: a ?? void 0,
                 customUserThemeSettings: void 0
             }, g.Sb.INFREQUENT_USER_ACTION)
         } else {
-            let e = y(A);
+            let e = T(A);
             await l.u_({
                 theme: e,
                 backgroundGradientPresetId: void 0,
@@ -64,11 +64,11 @@ async function S() {
         i = n.length > 0;
     if (a || i) try {
         if (a) {
-            let e = y([...t, null]);
+            let e = T([...t, null]);
             (0, u.Dx)(e)
         }
         if (i) {
-            let e = y([...n, null]);
+            let e = T([...n, null]);
             (0, u.pX)(e)
         }
         let e = h.A.getPendingChanges(),
@@ -79,11 +79,11 @@ async function S() {
 
 function E() {
     try {
-        let e = y(v.hH7.FONT_SIZES);
+        let e = T(v.hH7.FONT_SIZES);
         (0, r.XS)(e);
-        let t = y(j.qh);
+        let t = T(j.qh);
         (0, r.AC)(t);
-        let n = y(C);
+        let n = T(C);
         x.Xi.updateSetting(n)
     } catch (e) {}
 }
@@ -101,8 +101,8 @@ function N() {
             j = e?.collectibles?.nameplate?.skuId,
             A = null != b ? a.find(e => e.skuId === b) ?? null : null,
             C = null != j ? i.find(e => e.skuId === j) ?? null : null,
-            y = o.A.fontSize,
-            T = o.A.messageGroupSpacing,
+            T = o.A.fontSize,
+            y = o.A.messageGroupSpacing,
             S = x.Xi.getSetting();
         return () => {
             try {
@@ -113,7 +113,7 @@ function N() {
                 }, g.Sb.INFREQUENT_USER_ACTION), (0, u.Dx)(A), (0, u.pX)(C);
                 let e = h.A.getPendingChanges(),
                     t = (0, m.Sk)(e);
-                (0, s._L)(t).finally(s.pZ), (0, r.XS)(y), (0, r.AC)(T), x.Xi.updateSetting(S)
+                (0, s._L)(t).finally(s.pZ), (0, r.XS)(T), (0, r.AC)(y), x.Xi.updateSetting(S)
             } catch (e) {}
         }
     }, [])

@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(397927),
+    a = s.n(l),
+    i = s(397927),
     o = s(496431),
     c = s(854818),
     d = s(985018),
@@ -29,13 +29,13 @@ let _ = {
         if (null != m && Object.values(h).every(e => 0 === e)) return null;
         let p = null != g ? u[g] : void 0,
             f = null != g ? u[_[g]] : void 0;
-        return (0, n.jsx)(a.DUT, {
-            className: i()(u.nagBar, p),
+        return (0, n.jsx)(i.DUT, {
+            className: a()(u.nagBar, p),
             onClick: s,
             "aria-label": d.intl.string(d.t["wjws+K"]),
             children: (0, n.jsxs)("div", {
                 className: u.content,
-                children: [(0, n.jsx)(a.Text, {
+                children: [(0, n.jsx)(i.Text, {
                     variant: "text-md/medium",
                     color: "always-white",
                     className: u.message,

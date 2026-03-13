@@ -23,14 +23,14 @@ var a = n(627968),
     j = n(403362),
     A = n(603047),
     C = n(435738),
-    y = n(99753),
-    T = n(868068),
+    T = n(99753),
+    y = n(868068),
     S = n(476398),
     E = n(405311),
     N = n(424994),
     I = n(973350),
-    k = n(930821);
-let R = [{
+    R = n(930821);
+let k = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -72,7 +72,7 @@ let R = [{
 function O(e) {
     let {
         type: t
-    } = e, n = (0, u.bG)([y.A], () => y.A.getFilters()), i = n?.types?.has(t) ?? !1;
+    } = e, n = (0, u.bG)([T.A], () => T.A.getFilters()), i = n?.types?.has(t) ?? !1;
     return (0, a.jsx)(h.dOG, {
         checked: i,
         onChange: function() {
@@ -91,8 +91,8 @@ function O(e) {
 
 function w() {
     var e;
-    let t, n = (0, u.bG)([y.A], () => y.A.getFeed(N.X1.GLOBAL_FEED)),
-        s = (0, u.bG)([y.A], () => y.A.getDebugImpressionCappingDisabled()),
+    let t, n = (0, u.bG)([T.A], () => T.A.getFeed(N.X1.GLOBAL_FEED)),
+        s = (0, u.bG)([T.A], () => T.A.getDebugImpressionCappingDisabled()),
         l = (0, u.bG)([C.A], () => C.A.getDebugFastImpressionCappingEnabled()),
         r = (e = n?.entries?.map(e => e.content), Object.keys(t = o().groupBy(e, e => e.content_type)).map(e => {
             let n = t[e];
@@ -102,7 +102,7 @@ function w() {
                 entries: n
             }
         })),
-        d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
+        d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
         [O, w] = i.useState(""),
         M = (0, u.bG)([b.A, x.A], () => parseInt(O) > 0 ? O : b.A.searchGamesByName(O)[0] ?? x.A.getApplicationByName(O)?.id, [O]),
         P = (0, v.A)({
@@ -120,7 +120,7 @@ function w() {
         L = (0, g.A)(U).filter(j.Vq),
         B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: k.nd,
+        className: R.nd,
         children: (0, a.jsxs)(h.IpV, {
             className: I.Qs,
             children: [(0, a.jsxs)(h.BJc, {
@@ -129,7 +129,7 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: R,
+                    columns: k,
                     data: r
                 }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
@@ -213,7 +213,7 @@ function w() {
                     children: "Activity Sharing"
                 }), (0, a.jsx)(h.l6P, {
                     label: "Force show game",
-                    options: T.K.map(e => ({
+                    options: y.K.map(e => ({
                         label: e,
                         value: e,
                         id: e

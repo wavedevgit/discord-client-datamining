@@ -40,7 +40,7 @@ let A = {
         [f.qf.DEFERRED_START]: "Deferred Start",
         [f.qf.USER_TEMPORARY_BAN]: "User Temp Ban"
     },
-    y = [{
+    T = [{
         id: "unpaid",
         label: "Unpaid",
         value: _.Dmq.UNPAID
@@ -78,7 +78,7 @@ let A = {
         value: _.Dmq.PAUSE_PENDING
     }];
 
-function T(e) {
+function y(e) {
     let {
         subscription: t,
         onClose: n,
@@ -170,7 +170,7 @@ function S(e) {
         [d, f] = i.useState(!1),
         [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
-        [k, R] = i.useState(!1),
+        [R, k] = i.useState(!1),
         [O, w] = i.useState(null),
         D = e => {
             let t = new Date(e);
@@ -281,7 +281,7 @@ function S(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        R(!k)
+                        k(!R)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -290,9 +290,9 @@ function S(e) {
                             children: "Active Discount Info"
                         })
                     }), (0, a.jsx)(m.A, {
-                        direction: k ? m.A.Directions.UP : m.A.Directions.DOWN
+                        direction: R ? m.A.Directions.UP : m.A.Directions.DOWN
                     })]
-                }), k && (0, a.jsxs)("ul", {
+                }), R && (0, a.jsxs)("ul", {
                     className: j.j3,
                     children: [(0, a.jsxs)("li", {
                         children: [(0, a.jsx)(u.Text, {
@@ -362,7 +362,7 @@ function S(e) {
                     children: [(0, a.jsx)(u.l6P, {
                         label: "Status",
                         value: s.status,
-                        options: y,
+                        options: T,
                         onSelectionChange: e => {
                             M({
                                 status: e
@@ -383,7 +383,7 @@ function S(e) {
                                 size: "sm",
                                 text: "Time Travel",
                                 onClick: () => {
-                                    (0, u.mMO)(() => Promise.resolve(e => (0, a.jsx)(T, {
+                                    (0, u.mMO)(() => Promise.resolve(e => (0, a.jsx)(y, {
                                         subscription: s,
                                         onUpdated: r,
                                         ...e

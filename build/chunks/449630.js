@@ -23,14 +23,14 @@ var a = n(627968),
     j = n(206835),
     A = n(182592),
     C = n(183555),
-    y = n(950191),
-    T = n(657331),
+    T = n(950191),
+    y = n(657331),
     S = n(718019),
     E = n(31432),
     N = n(915614),
     I = n(223330),
-    k = n(559506),
-    R = n(646986),
+    R = n(559506),
+    k = n(646986),
     O = n(379654),
     w = n(946356),
     D = n(810396),
@@ -66,7 +66,7 @@ function ei(e) {
         highlightBadge: ei,
         openedAt: es,
         className: el
-    } = e, er = __OVERLAY__, eo = (0, y.Ay)(t.id, void 0), {
+    } = e, er = __OVERLAY__, eo = (0, T.Ay)(t.id, void 0), {
         analyticsLocations: ed
     } = (0, p.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ec = (0, C.pb)({
         layout: "ACCOUNT_POPOUT",
@@ -97,19 +97,19 @@ function ei(e) {
         eC = (0, j.A)({
             analyticsLocations: ed
         }),
-        ey = (0, W.TW)(t),
-        eT = i.useRef(null),
+        eT = (0, W.TW)(t),
+        ey = i.useRef(null),
         eS = i.useRef(null),
         eE = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
         eN = i.useMemo(() => (0, _.A)(), []),
-        [eI, ek] = i.useState(!0);
+        [eI, eR] = i.useState(!0);
     i.useEffect(() => {
         setTimeout(() => {
-            ek(!1)
+            eR(!1)
         }, 500)
     }, []);
-    let eR = e => {
-            n?.(), (0, T.openUserProfileModal)({
+    let ek = e => {
+            n?.(), (0, y.openUserProfileModal)({
                 customStatusPrompt: eN,
                 sourceAnalyticsLocations: ed,
                 ...ec,
@@ -147,7 +147,7 @@ function ei(e) {
                 "data-layer": "base",
                 children: [(0, a.jsx)(Q.A, {
                     displayProfile: eo,
-                    handleOpenUserProfileModal: eR,
+                    handleOpenUserProfileModal: ek,
                     height: em
                 }), (0, a.jsxs)(w.A, {
                     className: en.BK,
@@ -164,9 +164,9 @@ function ei(e) {
                             user: t,
                             displayProfile: eo,
                             themeType: ee.d.POPOUT,
-                            onOpenProfile: er ? void 0 : eR
+                            onOpenProfile: er ? void 0 : ek
                         }), (0, a.jsx)(P.A, {
-                            ref: eT,
+                            ref: ey,
                             user: t,
                             themeType: ee.d.POPOUT,
                             onCloseProfile: n,
@@ -177,13 +177,13 @@ function ei(e) {
                         style: {
                             pointerEvents: eI ? "none" : void 0
                         },
-                        children: [(0, a.jsx)(k.A, {
+                        children: [(0, a.jsx)(R.A, {
                             userId: t.id
                         }), (0, a.jsx)(D.A, {
                             user: t,
                             className: en.Xh,
                             nickname: V.Ay.getName(void 0, null, t),
-                            onOpenProfile: er ? void 0 : eR,
+                            onOpenProfile: er ? void 0 : ek,
                             pronouns: eo?.pronouns,
                             tags: (0, a.jsx)(E.A, {
                                 displayProfile: eo,
@@ -204,14 +204,14 @@ function ei(e) {
                         }), eO && (0, a.jsx)(O.A, {
                             user: t,
                             widgets: eo?.widgets,
-                            onOpenUserProfileModal: eR
+                            onOpenUserProfileModal: ek
                         }), (0, a.jsx)(I.A, {
-                            isPremiumUser: ey,
+                            isPremiumUser: eT,
                             onInteraction: n
-                        }), (0, a.jsx)(R.A, {
+                        }), (0, a.jsx)(k.A, {
                             user: t,
                             currentUser: t,
-                            onOpenUserProfileModal: eR,
+                            onOpenUserProfileModal: ek,
                             onClose: n
                         }), (0, a.jsxs)("div", {
                             className: en.T_,

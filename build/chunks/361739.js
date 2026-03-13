@@ -142,7 +142,7 @@ let b = function(e) {
         closeAction: p
     });
 
-    function I() {
+    function y() {
         return null == i ? null : (0, s.jsx)(h.FQk, {
             className: o()(E.noticeRegion, {
                 [E.noticeRegionHiddenSidebar]: b
@@ -188,7 +188,7 @@ let b = function(e) {
                 if ("custom" === f) return (0, s.jsxs)(u.F, {
                     component: "div",
                     className: E.contentRegion,
-                    children: [t, n, !d.Fr && P, I()]
+                    children: [t, n, !d.Fr && P, y()]
                 });
                 if ("scrollableCustom" === f) return (0, s.jsxs)(u.F, {
                     component: "div",
@@ -207,7 +207,7 @@ let b = function(e) {
                                 })
                             })
                         }), !d.Fr && P]
-                    }), I()]
+                    }), y()]
                 });
                 let i = _[f ?? "default"];
                 return (0, s.jsxs)(u.F, {
@@ -238,7 +238,7 @@ let b = function(e) {
                                 })
                             }), !d.Fr && P]
                         })]
-                    }), I()]
+                    }), y()]
                 })
             }()]
         }))

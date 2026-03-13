@@ -24,7 +24,7 @@ var a = n(627968),
     A = n(512126),
     C = n(930821);
 
-function y() {
+function T() {
     let e = (0, d.yK)([f.default], () => f.default.getSortedChannels()[1]),
         [t, n] = i.useState(e.length > 0 ? e[0].channelId : void 0),
         {
@@ -71,7 +71,7 @@ function y() {
     })
 }
 
-function T() {
+function y() {
     let e = i.useCallback(() => {
         u.A.openPrivateChannel({
             recipientIds: [j.K]
@@ -101,8 +101,8 @@ function S() {
         className: l()(C.nd, A.nd),
         children: [e, (0, a.jsx)("div", {
             className: A.yF
-        }), (0, a.jsx)(y, {}), (0, a.jsx)("div", {
+        }), (0, a.jsx)(T, {}), (0, a.jsx)("div", {
             className: A.yF
-        }), (0, a.jsx)(T, {})]
+        }), (0, a.jsx)(y, {})]
     })
 }

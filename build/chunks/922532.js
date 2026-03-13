@@ -25,9 +25,9 @@ function o(e) {
         f(!1), g.current || c || o(!1)
     }, [c, o]), C = a.useCallback(() => {
         f(!1), c || o(!1), g.current = !1
-    }, [c, o]), y = a.useCallback(() => {
+    }, [c, o]), T = a.useCallback(() => {
         b(!0)
-    }, []), T = a.useCallback(() => {
+    }, []), y = a.useCallback(() => {
         b(!1), o(!1)
     }, [o]), S = a.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
@@ -54,7 +54,7 @@ function o(e) {
         }), g.current = !0, S({
             withDelay: !0
         })
-    }, [S, h, t.id]), k = a.useCallback(() => {
+    }, [S, h, t.id]), R = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
@@ -67,8 +67,8 @@ function o(e) {
         }), g.current = !1, N()
     }, [N, h, t.id]);
     return a.useEffect(() => {
-        v && k()
-    }, [v, k]), a.useLayoutEffect(() => {
+        v && R()
+    }, [v, R]), a.useLayoutEffect(() => {
         u && !m && g.current && d()
     }, [d, u, m]), a.useLayoutEffect(() => {
         c || !u || m || g.current || o(!1)
@@ -78,12 +78,12 @@ function o(e) {
         handleCtxMenuOpened: j,
         handleCtxMenuClosed: A,
         handleCtxMenuSelection: C,
-        handleGameSheetOpened: y,
-        handleGameSheetClosed: T,
+        handleGameSheetOpened: T,
+        handleGameSheetClosed: y,
         handleFocus: S,
         handleFocusWithoutDelay: E,
         handleBlur: N,
         handleMouseEnter: I,
-        handleMouseLeave: k
+        handleMouseLeave: R
     }
 }

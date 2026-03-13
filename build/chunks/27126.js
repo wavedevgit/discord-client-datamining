@@ -52,7 +52,7 @@ function v() {
                 total: e
             })
         },
-        y = e => {
+        T = e => {
             let t = m.A.getUserAffinity(e);
             return t?.dmProbability != null ? `${(100*t.dmProbability).toFixed(3)}%` : "N/A"
         };
@@ -141,7 +141,7 @@ function v() {
                                 n = t?.username ?? `Unknown User (${e})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
-                                children: [n, " (", y(e), ")"]
+                                children: [n, " (", T(e), ")"]
                             }, e)
                         })]
                     }), b.length > 0 && (0, a.jsxs)(o.BJc, {
@@ -154,7 +154,7 @@ function v() {
                                 n = t?.username ?? `Unknown User (${e})`;
                             return (0, a.jsxs)(o.Text, {
                                 variant: "text-xs/normal",
-                                children: [n, " (", y(e), ")"]
+                                children: [n, " (", T(e), ")"]
                             }, e)
                         })]
                     })]

@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(989349),
-    i = s.n(l),
-    a = s(158954),
+    a = s.n(l),
+    i = s(158954),
     o = s(311907),
     c = s(230109),
     d = s(688810),
@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(67480),
     f = s(954571),
     x = s(440938),
-    C = s(652215),
-    E = s(188275),
+    E = s(652215),
+    C = s(188275),
     b = s(985018),
     A = s(413194);
 let S = {
@@ -36,17 +36,17 @@ let S = {
             analyticsLocations: j
         } = (0, d.Ay)(), k = r.useRef(null), T = r.useRef(!1), O = r.useRef(null);
         r.useEffect(() => {
-            for (let e of s)(0, u.qf)(E.Kf, e)
+            for (let e of s)(0, u.qf)(C.Kf, e)
         }, [s]);
         let y = r.useMemo(() => {
-                let e = i()(),
-                    t = Math.max(i()(l).diff(e, "days"), 1);
+                let e = a()(),
+                    t = Math.max(a()(l).diff(e, "days"), 1);
                 return b.intl.formatToPlainString(b.t.BXpdIg, {
                     days: t
                 })
             }, [l]),
             N = r.useCallback((e, t) => {
-                f.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                f.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: L?.sessionId,
                     page_type: v,
                     page_category: L?.pageCategory,
@@ -60,19 +60,19 @@ let S = {
             }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]),
             R = r.useCallback(() => {
                 (0, g.X)({
-                    guildId: E.Kf
+                    guildId: C.Kf
                 })
             }, []),
             B = r.useCallback(() => {
                 N("go_to_game_shop"), (0, g.default)({
-                    guildId: E.Kf
+                    guildId: C.Kf
                 })
             }, [N]),
             M = r.useCallback(e => {
                 N("card_click", e), (0, m.R)({
                     skuId: e,
-                    applicationId: E.XR,
-                    guildId: E.Kf,
+                    applicationId: C.XR,
+                    guildId: C.Kf,
                     isStorefront: !1,
                     analyticsLocations: j
                 })
@@ -82,7 +82,7 @@ let S = {
             }, [N, t]),
             D = r.useCallback(e => {
                 T.current || (e ? null === O.current && (O.current = setTimeout(() => {
-                    T.current = !0, O.current = null, f.default.track(C.HAw.COLLECTIBLES_TILE_IMPRESSION, {
+                    T.current = !0, O.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
                         collectibles_shop_session_id: L?.sessionId,
                         page_type: v,
                         page_category: L?.pageCategory,
@@ -104,7 +104,7 @@ let S = {
                     className: A.kL,
                     children: [(0, n.jsx)("div", {
                         className: A.b,
-                        children: (0, n.jsx)(a.JnF, {
+                        children: (0, n.jsx)(i.JnF, {
                             size: "sm",
                             variant: "icon-only",
                             onClick: P
@@ -113,7 +113,7 @@ let S = {
                         className: A.xf,
                         children: [null != y && (0, n.jsx)("div", {
                             className: A.qw,
-                            children: (0, n.jsx)(a.Exy, {
+                            children: (0, n.jsx)(i.Exy, {
                                 type: {
                                     text: `${b.intl.string(b.t.yYEZGi)} (${y})`
                                 },
@@ -121,13 +121,13 @@ let S = {
                             })
                         }), (0, n.jsxs)("div", {
                             className: A.B5,
-                            children: [(0, n.jsx)(a.DZT, {
+                            children: [(0, n.jsx)(i.DZT, {
                                 variant: "heading-xl/semibold",
                                 color: "always-white",
                                 children: b.intl.string(b.t["z/QEIP"])
-                            }), (0, n.jsx)(a.$nd, {
+                            }), (0, n.jsx)(i.$nd, {
                                 variant: "overlay-primary",
-                                icon: a.I9m,
+                                icon: i.I9m,
                                 iconPosition: "end",
                                 text: b.intl.string(b.t["kq/75v"]),
                                 onMouseDown: R,
@@ -140,8 +140,8 @@ let S = {
                             className: A.$2,
                             children: s.map((e, t) => (0, n.jsx)(h.A, {
                                 skuId: e,
-                                applicationId: E.XR,
-                                guildId: E.Kf,
+                                applicationId: C.XR,
+                                guildId: C.Kf,
                                 positionInSection: t,
                                 onClick: () => M(e)
                             }, e))

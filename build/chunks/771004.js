@@ -72,44 +72,30 @@ function v(e) {
     let {
         detectedGame: t,
         trackAction: n
-    } = e, [i, h] = l.useState(t?.summaryLocalized != null), [p, _] = l.useState(!0), [v, j] = l.useState(!1), A = l.useRef(null), {
-        width: E,
-        height: I
+    } = e, [i, s] = l.useState(!0), [o, h] = l.useState(!1), p = l.useRef(null), {
+        width: _,
+        height: v
     } = (0, u.A)(), {
-        isTwoColumn: b
+        isTwoColumn: j
     } = (0, x.c)();
     return (l.useEffect(() => {
-        let e = A.current;
-        null != e && j(e.scrollHeight - e.clientHeight > 1 || !p)
-    }, [A, E, I, p, b]), null == t.summary) ? null : (0, a.jsxs)("div", {
+        let e = p.current;
+        null != e && h(e.scrollHeight - e.clientHeight > 1 || !i)
+    }, [p, _, v, i, j]), null == t.summary) ? null : (0, a.jsxs)("div", {
         className: r()(g.fi, g.mX),
-        children: [null != t.summaryLocalized && (0, a.jsxs)("div", {
-            className: r()(g.nM, g.Lc),
-            children: [(0, a.jsx)(s.PencilSparkleIcon, {
-                color: o.A.colors.TEXT_DEFAULT,
-                size: "xs"
-            }), (0, a.jsx)(c.EYj, {
-                variant: "text-md/medium",
-                color: "text-default",
-                children: i ? f.intl.format(f.t.aZ2iIp, {
-                    onShowOriginal: () => h(!1)
-                }) : f.intl.format(f.t["/2ylF4"], {
-                    onShowTranslated: () => h(!0)
-                })
-            })]
-        }), (0, a.jsx)(c.EYj, {
-            ref: A,
-            lineClamp: p ? b ? 8 : 5 : void 0,
+        children: [(0, a.jsx)(c.EYj, {
+            ref: p,
+            lineClamp: i ? j ? 8 : 5 : void 0,
             variant: "text-sm/normal",
-            children: i ? t.summaryLocalized : t.summary
-        }), v && (0, a.jsx)(d.DUT, {
+            children: t.summary
+        }), o && (0, a.jsx)(d.DUT, {
             className: g.vk,
             onClick: () => {
-                n(p ? m.Ws.ShowMore : m.Ws.ShowLess), _(!p)
+                n(i ? m.Ws.ShowMore : m.Ws.ShowLess), s(!i)
             },
             children: (0, a.jsx)(c.EYj, {
                 variant: "text-sm/semibold",
-                children: p ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
+                children: i ? f.intl.string(f.t.lBeKY2) : f.intl.string(f.t["6MwJo/"])
             })
         })]
     })

@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(401864),
+    a = s.n(l),
+    i = s(401864),
     o = s(124987),
     c = s(397927),
     d = s(954571),
@@ -23,7 +23,7 @@ let x = () => {
         sort: e,
         onSetSort: t,
         hasRelevanceFilters: s
-    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), C = s(), E = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || C), [C]), b = r.useCallback(e => {
+    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), C = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), b = r.useCallback(e => {
         let {
             sortType: t,
             sortDirection: s
@@ -32,7 +32,7 @@ let x = () => {
             label: p.intl.string(p.t["51Bhiz"]),
             value: "recent",
             id: "recent"
-        } : t === o.$.PRICE ? s === a.A.ASC ? {
+        } : t === o.$.PRICE ? s === i.A.ASC ? {
             label: p.intl.string(p.t.m8RVU2),
             value: "price-asc",
             id: "price-asc"
@@ -52,23 +52,23 @@ let x = () => {
     }, []), A = r.useCallback(e => ({
         recent: {
             sortType: o.$.RECENCY,
-            sortDirection: a.A.DESC
+            sortDirection: i.A.DESC
         },
         "price-asc": {
             sortType: o.$.PRICE,
-            sortDirection: a.A.ASC
+            sortDirection: i.A.ASC
         },
         "price-desc": {
             sortType: o.$.PRICE,
-            sortDirection: a.A.DESC
+            sortDirection: i.A.DESC
         },
         popularity: {
             sortType: o.$.POPULARITY,
-            sortDirection: a.A.DESC
+            sortDirection: i.A.DESC
         },
         relevance: {
             sortType: o.$.RELEVANCE,
-            sortDirection: a.A.DESC
+            sortDirection: i.A.DESC
         }
     })[e], []), S = r.useCallback(e => {
         let s = b(A(e));
@@ -83,13 +83,13 @@ let x = () => {
         }), t(A(e))
     }, [l, b, A, t]), v = b(e);
     return (0, n.jsx)("div", {
-        className: i()(f.k, {
+        className: a()(f.k, {
             [g.jP]: x
         }),
         children: (0, n.jsx)(c.l6P, {
             label: p.intl.string(p.t.uaX705),
             hideLabel: !0,
-            options: E.map(b),
+            options: C.map(b),
             onSelectionChange: S,
             value: v.value,
             selectionMode: "single",

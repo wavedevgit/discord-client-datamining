@@ -70,7 +70,7 @@ function A() {
         [n, s] = i.useState("511651880837840896"),
         [m, _] = i.useState([]),
         [A, C] = i.useState(!1),
-        y = i.useCallback(async () => {
+        T = i.useCallback(async () => {
             try {
                 C(!0), await (0, c.hP)(), await (0, u.eO)(t.id), _(await b())
             } finally {
@@ -78,9 +78,9 @@ function A() {
             }
         }, [t]);
     i.useEffect(() => {
-        y()
-    }, [y]);
-    let T = i.useMemo(() => m.filter(e => e.status !== g.Dmq.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
+        T()
+    }, [T]);
+    let y = i.useMemo(() => m.filter(e => e.status !== g.Dmq.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [m]),
         S = async () => {
             await o.Bo.post({
                 url: "/debug/subscription",
@@ -88,12 +88,12 @@ function A() {
                     plan_id: n
                 },
                 rejectWithError: !1
-            }), await y()
+            }), await T()
         }, E = async () => {
             await o.Bo.del({
                 url: "/debug/subscription",
                 rejectWithError: !1
-            }), await y()
+            }), await T()
         };
     return (0, a.jsx)(d.IpV, {
         className: v.nd,
@@ -111,7 +111,7 @@ function A() {
                     size: "sm",
                     variant: "icon-only",
                     disabled: A,
-                    onClick: y
+                    onClick: T
                 })]
             }), (0, a.jsx)("section", {
                 className: l()([f.uW, f.Uo]),
@@ -133,7 +133,7 @@ function A() {
                 })
             }), null != e && (0, a.jsx)(x.A, {
                 subscription: e,
-                onUpdated: y
+                onUpdated: T
             }), (0, a.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
                 className: v.wx,
@@ -146,14 +146,14 @@ function A() {
                     text: "End All Subscriptions",
                     onClick: E
                 })
-            }), T.length > 0 && (0, a.jsxs)(a.Fragment, {
+            }), y.length > 0 && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.Heading, {
                     variant: "heading-lg/semibold",
                     className: v.wx,
                     children: "Previous Subscriptions"
-                }), T.map(e => (0, a.jsx)(x.A, {
+                }), y.map(e => (0, a.jsx)(x.A, {
                     subscription: e,
-                    onUpdated: y
+                    onUpdated: T
                 }, e.id))]
             })]
         })

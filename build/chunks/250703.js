@@ -17,7 +17,7 @@ var r = n(627968),
     g = n(985018),
     h = n(389985);
 
-function p(e) {
+function y(e) {
     let {
         icon: t,
         label: n,
@@ -32,7 +32,7 @@ function p(e) {
     })
 }
 
-function y(e) {
+function p(e) {
     let {
         setting: t,
         onClose: n
@@ -45,7 +45,7 @@ function y(e) {
                 direction: "horizontal",
                 align: "center",
                 className: h.y9,
-                children: [l.Fr && (0, r.jsx)(p, {
+                children: [l.Fr && (0, r.jsx)(y, {
                     icon: c.fEi,
                     onClick: () => d.A.setState({
                         showNavigationMobile: !0
@@ -54,7 +54,7 @@ function y(e) {
                 }), null != t && (0, r.jsx)(f.E, {
                     node: t
                 })]
-            }), (0, r.jsx)(p, {
+            }), (0, r.jsx)(y, {
                 icon: c.d$L,
                 onClick: n,
                 label: g.intl.string(g.t.cpT0Cq)
@@ -72,7 +72,7 @@ let _ = i.memo(function(e) {
             [h.Hw]: l.Fr,
             [h.n7]: i
         }),
-        children: [(0, r.jsx)(y, {
+        children: [(0, r.jsx)(p, {
             setting: n,
             onClose: t
         }), (0, r.jsx)("div", {

@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(172218),
-    i = s(417597),
-    a = s(397927),
+    a = s(417597),
+    i = s(397927),
     o = s(287809),
     c = s(440938),
     d = s(940980),
@@ -19,14 +19,14 @@ var n = s(627968),
     p = s(751304),
     f = s(561769),
     x = s(159439),
-    C = s(998694),
-    E = s(758836),
+    E = s(998694),
+    C = s(758836),
     b = s(892766);
 
 function A(e) {
     let {
         category: t
-    } = e, s = (0, i.bG)([o.default], () => o.default.getCurrentUser()), r = (0, _.X)(t.products), l = (0, u.p)()(r), a = (0, d.W)("CollectiblesCatalogContent"), g = (0, c.uM)();
+    } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), r = (0, _.X)(t.products), l = (0, u.p)()(r), i = (0, d.W)("CollectiblesCatalogContent"), g = (0, c.uM)();
     return null == s || 0 === l.length ? null : (0, n.jsx)("div", {
         className: b.vY,
         children: l.map((e, t) => (0, n.jsx)(c.R9, {
@@ -36,8 +36,8 @@ function A(e) {
             children: (0, n.jsx)(p.A, {
                 skuId: e.skuId,
                 skipLimitedTimeCheck: !0,
-                prioritizedCurrency: a ? f.Hi.FIAT : void 0,
-                onClickAnalytics: (0, f.UU)(e, E.G2.CATALOG, g)
+                prioritizedCurrency: i ? f.Hi.FIAT : void 0,
+                onClickAnalytics: (0, f.UU)(e, C.G2.CATALOG, g)
             }, e.skuId)
         }, e.skuId))
     })
@@ -46,12 +46,12 @@ function A(e) {
 function S(e) {
     let {
         category: t
-    } = e, [s, i] = r.useState(!1), a = (0, l.K)(e => {
-        i(e)
+    } = e, [s, a] = r.useState(!1), i = (0, l.K)(e => {
+        a(e)
     }, .15);
     return (0, n.jsxs)("div", {
         className: b.EF,
-        ref: a,
+        ref: i,
         children: [(0, n.jsx)(m.A, {
             category: t
         }), (0, n.jsx)(A, {
@@ -65,12 +65,12 @@ function v(e) {
         categories: t,
         setCategoryRef: s,
         currentPage: l,
-        handlePageChange: i,
+        handlePageChange: a,
         initialCategoryId: o
     } = e, d = (0, c.uM)(), u = (0, x.U)(), _ = d?.sessionId ?? "", {
         noCache: m,
         includeUnpublished: p
-    } = (0, C.A)(), f = r.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
+    } = (0, E.A)(), f = r.useMemo(() => t.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
         let {
             products: t
         } = e;
@@ -84,18 +84,18 @@ function v(e) {
         if (o === A.current) return;
         let e = f.findIndex(e => e.skuId === o);
         if (-1 === e) return;
-        let t = Math.floor(e / E.l5) + 1;
-        t !== l && i(t), A.current = o
-    }, [o, f, i, l]);
+        let t = Math.floor(e / C.l5) + 1;
+        t !== l && a(t), A.current = o
+    }, [o, f, a, l]);
     let v = r.useMemo(() => {
-        let e = (l - 1) * E.l5;
-        return f.slice(e, e + E.l5)
+        let e = (l - 1) * C.l5;
+        return f.slice(e, e + C.l5)
     }, [f, l]);
     return (r.useEffect(() => {
         (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_MOUNTED,
-            tab: E.G2.CATALOG,
+            tab: C.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
@@ -103,7 +103,7 @@ function v(e) {
         u || 0 === v.length || (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_RENDERED,
-            tab: E.G2.CATALOG,
+            tab: C.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
@@ -121,11 +121,11 @@ function v(e) {
             })
         }, e.skuId)), (0, n.jsx)("div", {
             className: b.Ej,
-            children: (0, n.jsx)(a.mgR, {
+            children: (0, n.jsx)(i.mgR, {
                 currentPage: l,
                 totalCount: f.length,
-                pageSize: E.l5,
-                onPageChange: i,
+                pageSize: C.l5,
+                onPageChange: a,
                 disablePaginationGap: !0
             })
         })]

@@ -29,7 +29,7 @@ function b(e) {
         rowIndex: m,
         impressionRef: b,
         sourceQuestContent: j
-    } = e, [A, C] = i.useState(!1), [y, T] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
+    } = e, [A, C] = i.useState(!1), [T, y] = i.useState([]), S = (0, o.aC)(t), E = i.useMemo(() => (0, u.vv)(t), [t]), N = (0, d.u0)(), I = i.useCallback(() => {
         C(!0), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER,
@@ -40,7 +40,7 @@ function b(e) {
             },
             sourceQuestContent: j
         }), E && (0, h.l9)()
-    }, [N, t.id, s, E, j, r]), k = i.useCallback(() => {
+    }, [N, t.id, s, E, j, r]), R = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER_OFF,
@@ -51,7 +51,7 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), R = i.useContext(x.X), {
+    }, [N, t.id, s, j, r]), k = i.useContext(x.X), {
         visibilityElementRef: O,
         almostVisibleInViewport: w
     } = function(e) {
@@ -66,7 +66,7 @@ function b(e) {
             }, !0),
             almostVisibleInViewport: t
         }
-    }(R?.current?.getScrollerNode() ?? null);
+    }(k?.current?.getScrollerNode() ?? null);
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
@@ -74,13 +74,13 @@ function b(e) {
         },
         className: l()(v.k, n),
         onMouseEnter: I,
-        onMouseLeave: k,
+        onMouseLeave: R,
         onFocus: I,
-        onBlur: k,
+        onBlur: R,
         children: [(0, a.jsx)(g.A, {
             quest: t,
             isHovering: A,
-            errorHints: y,
+            errorHints: T,
             warningHints: S,
             isVisibleInViewport: w,
             sourceQuestContent: j
@@ -90,7 +90,7 @@ function b(e) {
             isHovering: A,
             contentPosition: r,
             rowIndex: m,
-            onReceiveErrorHints: T,
+            onReceiveErrorHints: y,
             isVisibleInViewport: w,
             sourceQuestContent: j
         })]

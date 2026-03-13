@@ -319,8 +319,7 @@ class Y extends r.Ay.Store {
                 type: "RESET_SOCKET",
                 args: {
                     error: e,
-                    action: "loadCacheAsync",
-                    clearCache: !0
+                    action: "loadCacheAsync"
                 }
             })
         }

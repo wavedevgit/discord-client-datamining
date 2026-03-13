@@ -24,14 +24,14 @@ var p = n(173628),
     j = n(648514),
     A = n(866001),
     C = n(855936),
-    y = n(489967),
-    T = n(2915),
+    T = n(489967),
+    y = n(2915),
     S = n(986789),
     E = n(821306),
     N = n(226936),
     I = n(27126),
-    k = n(498336),
-    R = n(615112),
+    R = n(498336),
+    k = n(615112),
     O = n(501379),
     w = n(517538),
     D = n(211162),
@@ -136,7 +136,7 @@ function ec() {
             name: "Feedback",
             group: er.fu.USERS,
             tags: ["surveys"],
-            render: () => (0, a.jsx)(y.A, {})
+            render: () => (0, a.jsx)(T.A, {})
         }), e.push({
             id: "overlay",
             name: "Overlay v3",
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",
@@ -305,7 +305,7 @@ function ec() {
             name: "Fractional Nitro",
             group: er.fu.PREMIUM,
             tags: ["entitlements", "quests"],
-            render: () => (0, a.jsx)(T.A, {})
+            render: () => (0, a.jsx)(y.A, {})
         })), e.push({
             id: "gifting_intent",
             name: "Gifting Intent",
@@ -329,7 +329,7 @@ function ec() {
             name: "Skill Trees",
             group: er.fu.BOOSTING,
             tags: ["boosting", "powerups", "server tag"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "game_server",
             name: "Game Server",

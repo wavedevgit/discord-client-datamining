@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(708403),
     A = n(260880),
     C = n(303054),
-    y = n(231643),
-    T = n(985018),
+    T = n(231643),
+    y = n(985018),
     S = n(891026),
     E = n(930821);
 let N = [{
@@ -59,7 +59,7 @@ function I(e) {
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         name: t,
         children: n,
@@ -91,11 +91,11 @@ function k(e) {
         })]
     })
 }
-let R = new Set(["client_performance_cpu", "client_performance_memory"]),
+let k = new Set(["client_performance_cpu", "client_performance_memory"]),
     O = [{
         id: "details",
         name: "Details",
-        group: y.fu.NONE,
+        group: T.fu.NONE,
         render: e => {
             let {
                 loggedEvent: {
@@ -167,7 +167,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = R.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = k.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -185,7 +185,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                             }
                         })(d, t, n) : null;
                         return (0, a.jsxs)("div", {
-                            children: [(0, a.jsx)(k, {
+                            children: [(0, a.jsx)(R, {
                                 name: `${n}:`,
                                 copyValue: {
                                     [n]: i || null
@@ -196,7 +196,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                                     className: S.HO,
                                     children: "null"
                                 })
-                            }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
+                            }, n), null !== s && null !== s.average && (0, a.jsx)(R, {
                                 name: `${n}_avg:`,
                                 copyValue: {
                                     [n]: i || null
@@ -268,8 +268,8 @@ function M() {
         j = g.find(e => e.key === _),
         {
             TabBar: I,
-            renderSelectedTab: k
-        } = (0, y.Ay)({
+            renderSelectedTab: R
+        } = (0, T.Ay)({
             tabs: O
         }, []);
     return (0, a.jsxs)("div", {
@@ -283,11 +283,11 @@ function M() {
                 size: c.$n.Sizes.ICON,
                 onClick: b.eY,
                 children: (0, a.jsx)("span", {
-                    title: T.intl.string(T.t.VkKicb),
+                    title: y.intl.string(y.t.VkKicb),
                     children: (0, a.jsx)(u.ucK, {
                         size: "md",
                         color: "currentColor",
-                        "aria-label": T.intl.string(T.t.VkKicb)
+                        "aria-label": y.intl.string(y.t.VkKicb)
                     })
                 })
             }), (0, a.jsx)("div", {
@@ -323,7 +323,7 @@ function M() {
             className: S.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-            children: [(0, a.jsx)(I, {}), k({
+            children: [(0, a.jsx)(I, {}), R({
                 loggedEvent: j,
                 onClose: () => f(void 0),
                 filteredEvents: g

@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(554146),
+    a = s.n(l),
+    i = s(554146),
     o = s(230109),
     c = s(397927),
     d = s(367727),
@@ -19,8 +19,8 @@ var n = s(627968),
     p = s(590180),
     f = s(597783),
     x = s(212407),
-    C = s(758836),
-    E = s(652215),
+    E = s(758836),
+    C = s(652215),
     b = s(49999),
     A = s(818348),
     S = s(985018),
@@ -48,20 +48,20 @@ let I = e => {
         {
             bannerURL: B
         } = (0, x.w$)(t),
-        M = s === C.G2.ORBS,
+        M = s === E.G2.ORBS,
         P = null != t.ctaRoute && "" !== t.ctaRoute,
         D = !0 !== t.disableCta && (null != t.ctaText && "" !== t.ctaText || P),
-        w = null != t.logoURL && "" !== t.logoURL,
-        H = r.useCallback(() => {
+        H = null != t.logoURL && "" !== t.logoURL,
+        w = r.useCallback(() => {
             if (O(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
-                (0, d.$l)(a.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
+                (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
                     dismissAction: b.i.USER_DISMISS
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
         U = r.useCallback(e => {
-            g.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
                 sku_id: y,
                 page_type: s,
@@ -90,7 +90,7 @@ let I = e => {
             }
         }, [t.ctaRoute, U]);
     if (null == B || T) return null;
-    let G = i()(v.nM, v.Tq, v.TS, v.YB, {
+    let G = a()(v.nM, v.Tq, v.TS, v.YB, {
             [v._1]: M,
             [v.vb]: P
         }),
@@ -100,12 +100,12 @@ let I = e => {
                 children: (0, n.jsx)(c.JnF, {
                     size: "sm",
                     onClick: e => {
-                        e.stopPropagation(), H()
+                        e.stopPropagation(), w()
                     },
                     "aria-label": S.intl.string(S.t.WAI6xu)
                 })
             }), (0, n.jsx)("div", {
-                className: i()(v.zK, {
+                className: a()(v.zK, {
                     [v._1]: M
                 }),
                 style: null != j ? {
@@ -115,12 +115,12 @@ let I = e => {
                     ref: L,
                     src: B,
                     alt: t.title,
-                    className: i()(v.LN, {
+                    className: a()(v.LN, {
                         [v.d5]: M
                     })
                 })
             }), (0, n.jsx)("div", {
-                className: i()(v.Ep, {
+                className: a()(v.Ep, {
                     [v.Qq]: D
                 }),
                 style: {
@@ -142,7 +142,7 @@ let I = e => {
                         lineClamp: 2,
                         variant: M ? "text-md/medium" : "text-sm/medium",
                         children: M ? S.intl.format(S.t.SFFP7K, {
-                            helpdeskArticle: m.A.getArticleURL(E.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
+                            helpdeskArticle: m.A.getArticleURL(C.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
                         }) : t.body
                     }), D && (0, n.jsxs)("div", {
                         className: v.nP,
@@ -152,7 +152,7 @@ let I = e => {
                                 e.stopPropagation(), F(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
-                        }), w && (0, n.jsx)("img", {
+                        }), H && (0, n.jsx)("img", {
                             src: t.logoURL,
                             alt: "",
                             className: v.bU
@@ -170,11 +170,11 @@ let I = e => {
             children: P ? (0, n.jsx)(c.DUT, {
                 innerRef: I,
                 onClick: () => F(null),
-                className: i()(e, G),
+                className: a()(e, G),
                 children: V
             }) : (0, n.jsx)("div", {
                 ref: I,
-                className: i()(e, G),
+                className: a()(e, G),
                 children: V
             })
         })

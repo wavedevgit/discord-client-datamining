@@ -6,8 +6,8 @@ s.d(t, {
 var n = s(627968),
     r = s(64700),
     l = s(503698),
-    i = s.n(l),
-    a = s(311907),
+    a = s.n(l),
+    i = s(311907),
     o = s(397927),
     c = s(720462),
     d = s(287809),
@@ -19,24 +19,24 @@ var n = s(627968),
     p = s(751304),
     f = s(561769),
     x = s(758836),
-    C = s(985018),
-    E = s(419447);
+    E = s(985018),
+    C = s(419447);
 let b = e => {
     let {
         shelf: t,
         handleTransition: s,
         tab: l
-    } = e, b = (0, a.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, a.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, u.uM)(), I = (0, m.A)(), L = r.useMemo(() => I(t.rankedSkuIds), [t.rankedSkuIds, I]), j = (0, h.X)(L);
+    } = e, b = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, i.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, u.uM)(), I = (0, m.A)(), L = r.useMemo(() => I(t.rankedSkuIds), [t.rankedSkuIds, I]), j = (0, h.X)(L);
     return null == b ? null : (0, n.jsxs)("div", {
-        className: i()(E.Vp, E.YB),
+        className: a()(C.Vp, C.YB),
         children: [(0, n.jsxs)("div", {
-            className: E.$6,
+            className: C.$6,
             children: [(0, n.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 children: t.name
             }), (0, n.jsx)(o.Button, {
                 variant: "secondary",
-                text: C.intl.formatToPlainString(C.t.bc9RBE, {
+                text: E.intl.formatToPlainString(E.t.bc9RBE, {
                     category_name: t.name
                 }),
                 onClick: () => {

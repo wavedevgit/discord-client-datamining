@@ -7,8 +7,8 @@ var n = s(627968);
 s(64700);
 var r = s(503698),
     l = s.n(r),
-    i = s(172218),
-    a = s(651162),
+    a = s(172218),
+    i = s(651162),
     o = s(311907),
     c = s(397927),
     d = s(287809),
@@ -24,7 +24,7 @@ let p = {
         unpublishedAt: void 0,
         categorySkuId: void 0,
         summary: "",
-        type: a.g.REWARD_HERO,
+        type: i.g.REWARD_HERO,
         categoryStoreListingId: "",
         rewardSkuId: void 0
     },
@@ -33,13 +33,13 @@ let p = {
             isLoading: t = !1,
             heroBlock: s,
             tab: r,
-            onVisibilityChange: a
-        } = e, u = (0, i.K)(e => {
-            a?.(e)
-        }, .1, null != a), f = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
+            onVisibilityChange: i
+        } = e, u = (0, a.K)(e => {
+            i?.(e)
+        }, .1, null != i), f = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
             bannerDisplayConfig: x,
-            logoDisplayConfig: C,
-            heroLogo: E,
+            logoDisplayConfig: E,
+            heroLogo: C,
             heroBannerStatic: b,
             heroBannerAnimated: A
         } = (0, _.Kk)(s), S = x?.responsive ?? !1, v = x?.backgroundStyle;
@@ -70,11 +70,11 @@ let p = {
                         className: h.Hw,
                         children: (0, n.jsxs)("div", {
                             className: h.Wq,
-                            children: [null != E && (0, n.jsx)("img", {
+                            children: [null != C && (0, n.jsx)("img", {
                                 className: h.rm,
-                                src: E,
+                                src: C,
                                 alt: s.name,
-                                style: C?.toDesktopStyles()
+                                style: E?.toDesktopStyles()
                             }), null != s.title && (0, n.jsx)(c.Heading, {
                                 variant: "heading-xxl/bold",
                                 className: h.DD,

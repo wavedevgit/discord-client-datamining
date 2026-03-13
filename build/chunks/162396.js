@@ -1,7 +1,7 @@
 /** chunk id: 162396 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => y
 });
 var r = n(627968),
     i = n(64700),
@@ -44,7 +44,7 @@ function h(e) {
     })
 }
 
-function p() {
+function y() {
     let e = i.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(d.A, {
