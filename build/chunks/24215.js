@@ -68,7 +68,7 @@ let E = () => {
             inviteCode: I
         } = (0, u.lD)(),
         v = a.A.getProps().invite?.is_nickname_changeable,
-        T = n.useCallback(() => {
+        f = n.useCallback(() => {
             o.default.track(m.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
                 guild_id: j,
                 invite_code: I
@@ -80,7 +80,7 @@ let E = () => {
         }),
         title: x.intl.string(x.t["A5wHQ/"]),
         subtitle: x.intl.string(x.t.UKCSEd),
-        onOpen: T,
+        onOpen: f,
         maxHeight: v ? 220 : 130,
         children: [v && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(g, {

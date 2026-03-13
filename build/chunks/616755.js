@@ -1,6 +1,6 @@
 /** chunk id: 616755 params = (module,exports,require) **/
 i.d(t, {
-    A: () => T
+    A: () => f
 });
 var l = i(627968),
     n = i(64700),
@@ -130,7 +130,7 @@ function v(e) {
     })
 }
 
-function T(e) {
+function f(e) {
     let {
         guild: t,
         invite: i,

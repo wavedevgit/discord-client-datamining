@@ -27,11 +27,11 @@ function p(e) {
     } = e, j = (0, s.bG)([x.default], () => x.default.getCurrentUser()), {
         submitting: I,
         error: v
-    } = (0, s.cf)([c.A], () => c.A.getProps()), T = n.useCallback(() => {
+    } = (0, s.cf)([c.A], () => c.A.getProps()), f = n.useCallback(() => {
         d.A.acceptInvite(t)
-    }, [t]), f = (0, u.uE)(), N = "" !== f ? A.intl.format(A.t["9sWQNT"], {
+    }, [t]), T = (0, u.uE)(), N = "" !== T ? A.intl.format(A.t["9sWQNT"], {
         usernameHook: (e, t) => (0, l.jsx)("span", {
-            children: f
+            children: T
         }, t)
     }) : A.intl.string(A.t["e/6Ogt"]), C = n.useRef(null), [y, D] = n.useState(!1), S = n.useCallback(() => {
         y || _.default.track(g.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
@@ -55,7 +55,7 @@ function p(e) {
             fullWidth: !0,
             direction: "horizontal",
             children: [(0, l.jsx)(a.Button, {
-                onClick: T,
+                onClick: f,
                 loading: I,
                 variant: "primary",
                 disabled: L,

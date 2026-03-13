@@ -23,8 +23,8 @@ var l = i(627968),
     j = i(427157),
     I = i(287809),
     v = i(860689),
-    T = i(427262),
-    f = i(652215),
+    f = i(427262),
+    T = i(652215),
     N = i(330936),
     C = i(172799),
     y = i(985018),
@@ -98,16 +98,16 @@ let S = () => (0, l.jsxs)(n.Fragment, {
             F = null != s.channel ? (0, p.OY)(s.channel) : null,
             Y = null != s.target_application ? new E.Ay(s.target_application) : null,
             z = x || null == s.inviter ? null : new j.A(s.inviter),
-            w = !(null != s.approximate_member_count && s.approximate_member_count > 100 || null != V && V.features.has(f.GuildFeatures.COMMUNITY)) && null != z,
+            w = !(null != s.approximate_member_count && s.approximate_member_count > 100 || null != V && V.features.has(T.GuildFeatures.COMMUNITY)) && null != z,
             H = null,
             B = (0, d.Lt)(s.flags ?? 0, r.Q.IS_GUEST_INVITE),
             W = !1;
         if (null != V) G && (H = null == z ? y.intl.string(y.t["3rE1P8"]) : y.intl.formatToPlainString(y.t["5u47va"], {
-            username: T.Ay.getFormattedName(z)
+            username: f.Ay.getFormattedName(z)
         }), s.target_type === C.yV.STREAM && null != s.target_user && (H = y.intl.formatToPlainString(y.t.x2L32Q, {
-            username: T.Ay.getFormattedName(s.target_user)
+            username: f.Ay.getFormattedName(s.target_user)
         })), s.target_type === C.yV.EMBEDDED_APPLICATION && null != s.target_application && (H = null != z ? y.intl.formatToPlainString(y.t.UW1Cav, {
-            username: T.Ay.getFormattedName(z)
+            username: f.Ay.getFormattedName(z)
         }) : y.intl.string(y.t.ENSuN3))), w && null == Y && (t = (0, l.jsx)(m.$v, {
             className: D.Kk,
             guild: V,
@@ -132,7 +132,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
         }));
         else if (null != F) {
             if (null == z) throw Error("no inviter in group DM invite");
-            let e = T.Ay.getFormattedName(z);
+            let e = f.Ay.getFormattedName(z);
             null != F.name && "" !== F.name ? (H = y.intl.formatToPlainString(y.t["5u47va"], {
                 username: e
             }), i = F.name, null != F.icon && (t = (0, l.jsx)(m.F4, {
@@ -140,7 +140,7 @@ let S = () => (0, l.jsxs)(n.Fragment, {
                 size: o._3J.SIZE_32
             }))) : (H = y.intl.string(y.t.OsdY8B), i = e)
         } else if (null != z) {
-            let e = T.Ay.getFormattedName(z, !0);
+            let e = f.Ay.getFormattedName(z, !0);
             i = y.intl.formatToPlainString(y.t["4aF92R"], {
                 username: e
             }), W = !0, n = null != _ ? null : (0, l.jsx)(m.tK, {

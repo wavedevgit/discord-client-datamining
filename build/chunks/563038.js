@@ -22,8 +22,8 @@ var l = i(627968),
     j = i(287809),
     I = i(954571),
     v = i(486020),
-    T = i(723702),
-    f = i(837921),
+    f = i(723702),
+    T = i(837921),
     N = i(430914),
     C = i(260451),
     y = i(972387),
@@ -87,7 +87,7 @@ function U(e) {
             isLoading: J
         } = (0, C.q)(M?.guild ?? null, "AcceptInviteModal");
     n.useEffect(() => {
-        !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? f.Ay.minimize() : f.Ay.restore(), f.Ay.focus())
+        !__OVERLAY__ && f.isPlatformEmbedded && ((0, f.isWindows)() ? T.Ay.minimize() : T.Ay.restore(), T.Ay.focus())
     }, []);
     let K = (0, _.GV)(),
         {

@@ -1,29 +1,29 @@
 /** chunk id: 982985 params = (module,exports,require) **/
-n.d(l, {
+i.d(l, {
     e: () => u,
     l: () => A
 });
-var i = n(627968),
-    t = n(64700),
-    s = n(397927),
-    a = n(308528),
-    r = n(993401),
-    o = n(518477),
-    d = n(985018);
+var n = i(627968),
+    t = i(64700),
+    s = i(397927),
+    a = i(308528),
+    r = i(993401),
+    o = i(518477),
+    d = i(985018);
 
 function c(e) {
     let {
         userId: l,
-        onClose: n
-    } = e, i = t.useCallback(() => {
+        onClose: i
+    } = e, n = t.useCallback(() => {
         a.A.openPrivateChannel({
             recipientIds: l
-        }), n?.(), (0, s.s7G)()
-    }, [l, n]);
+        }), i?.(), (0, s.s7G)()
+    }, [l, i]);
     return {
         action: o.pt.SEND_MESSAGE,
         icon: s.oyn,
-        onClick: i,
+        onClick: n,
         text: d.intl.string(d.t.zROXEV)
     }
 }
@@ -31,14 +31,14 @@ function c(e) {
 function u(e) {
     let {
         userId: l,
-        onClose: n,
+        onClose: i,
         variant: t = "primary",
         ...s
     } = e, a = c({
         userId: l,
-        onClose: n
+        onClose: i
     });
-    return (0, i.jsx)(r.FD, {
+    return (0, n.jsx)(r.FD, {
         variant: t,
         ...a,
         ...s
@@ -48,7 +48,7 @@ function u(e) {
 function A(e) {
     let {
         userId: l,
-        onClose: n,
+        onClose: i,
         variant: t = "primary",
         ...s
     } = e, {
@@ -56,9 +56,9 @@ function A(e) {
         ...o
     } = c({
         userId: l,
-        onClose: n
+        onClose: i
     });
-    return (0, i.jsx)(r.q3, {
+    return (0, n.jsx)(r.q3, {
         tooltipText: a,
         "aria-label": a,
         variant: t,

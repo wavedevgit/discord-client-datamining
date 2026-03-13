@@ -1,20 +1,20 @@
 /** chunk id: 722868 params = (module,exports,require) **/
-n.d(l, {
+i.d(l, {
     A: () => u
 });
-var i = n(627968),
-    t = n(397927),
-    s = n(688810),
-    a = n(562153),
-    r = n(183555),
-    o = n(657331),
-    d = n(950191),
-    c = n(985018);
+var n = i(627968),
+    t = i(397927),
+    s = i(688810),
+    a = i(562153),
+    r = i(183555),
+    o = i(657331),
+    d = i(950191),
+    c = i(985018);
 
 function u(e) {
     let {
         user: l,
-        guildId: n,
+        guildId: i,
         channelId: u,
         displayProfile: A,
         onClose: m
@@ -24,17 +24,17 @@ function u(e) {
     } = (0, s.Ay)(), {
         context: g,
         trackUserProfileAction: h
-    } = (0, r.NJ)(), f = (0, d.Ay)(l.id, n);
-    return f?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, i.jsx)(t.Drp, {
+    } = (0, r.NJ)(), f = (0, d.Ay)(l.id, i);
+    return f?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, n.jsx)(t.Drp, {
         id: "view-server-profile",
         label: c.intl.string(c.t.DisZzB),
         subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
-            displayName: a.Ay.getName(n, u, l)
+            displayName: a.Ay.getName(i, u, l)
         }),
         action: () => {
             m?.(), (0, o.openUserProfileModal)({
                 userId: l.id,
-                guildId: n,
+                guildId: i,
                 ...g,
                 showGuildProfile: !0,
                 sourceAnalyticsLocations: x
@@ -44,7 +44,7 @@ function u(e) {
                 ...g
             })
         }
-    }) : (0, i.jsx)(t.Drp, {
+    }) : (0, n.jsx)(t.Drp, {
         id: "view-main-profile",
         label: c.intl.string(c.t.GISTta),
         subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
@@ -53,7 +53,7 @@ function u(e) {
         action: () => {
             m?.(), (0, o.openUserProfileModal)({
                 userId: l.id,
-                guildId: n,
+                guildId: i,
                 ...g,
                 showGuildProfile: !1,
                 sourceAnalyticsLocations: x
