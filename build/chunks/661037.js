@@ -4,8 +4,8 @@ i.d(t, {
 });
 var n = i(627968),
     l = i(64700),
-    a = i(284009),
-    s = i.n(a),
+    s = i(284009),
+    a = i.n(s),
     r = i(421380),
     d = i(397927),
     o = i(915089),
@@ -15,8 +15,8 @@ var n = i(627968),
     p = i(997509),
     g = i(71393),
     S = i(751394),
-    b = i(720619),
-    A = i(985018),
+    A = i(720619),
+    b = i(985018),
     C = i(559075);
 
 function h(e) {
@@ -24,19 +24,19 @@ function h(e) {
         className: t,
         guildId: i,
         onChange: l,
-        isGuildIncluded: a
+        isGuildIncluded: s
     } = e, {
-        options: s
-    } = (0, b.A)({
-        isGuildIncluded: a
+        options: a
+    } = (0, A.A)({
+        isGuildIncluded: s
     });
     return (0, n.jsx)("div", {
         className: t,
         children: (0, n.jsx)(d.ZiE, {
             onSelectionChange: l,
             value: i,
-            options: s,
-            placeholder: A.intl.string(A.t.etZ9tX),
+            options: a,
+            placeholder: b.intl.string(b.t.etZ9tX),
             selectionMode: "single"
         })
     })
@@ -46,9 +46,9 @@ function m(e) {
     let {
         transitionState: t,
         onClose: i,
-        feature: a,
-        section: b,
-        subsection: A
+        feature: s,
+        section: A,
+        subsection: b
     } = e, m = (0, o.GV)(), {
         canCreateGuild: E,
         createGuildCta: v,
@@ -57,7 +57,7 @@ function m(e) {
         title: _,
         description: I,
         isGuildSupported: F
-    } = (0, S.q)(a), [N, O] = l.useState(), [j, T] = l.useState(!1), R = async () => {
+    } = (0, S.q)(s), [N, O] = l.useState(), [j, T] = l.useState(!1), R = async () => {
         T(!0);
         let e = await new Promise(e => {
             u.A.openCreateGuildModal({
@@ -68,7 +68,7 @@ function m(e) {
             g.A.addChangeListener(function i() {
                 null != g.A.getGuild(e) && (g.A.removeChangeListener(i), t())
             })
-        }), p.A.open(e, b, void 0, A), i?.()
+        }), p.A.open(e, A, void 0, b), i?.()
     };
     return (0, n.jsxs)(d.EOs, {
         transitionState: t,
@@ -105,7 +105,7 @@ function m(e) {
                         variant: "primary",
                         text: M,
                         onClick: () => {
-                            s()(null != N, "Guild ID must not be null on click"), G.A.hasSeenCreatorOnboardingForGuild(N) || (0, c.G)(N), p.A.open(N, b, void 0, A), i?.()
+                            a()(null != N, "Guild ID must not be null on click"), G.A.hasSeenCreatorOnboardingForGuild(N) || (0, c.G)(N), p.A.open(N, A, void 0, b), i?.()
                         },
                         disabled: null == N
                     })]

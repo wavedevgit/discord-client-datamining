@@ -52,7 +52,7 @@ function E(e) {
         j = C ? f.default.TWuDTt : f.default["25YCHl"];
     return (0, l.jsx)(i.AM, {
         targetElementRef: t,
-        gradientColor: "purple",
+        gradientColor: "nitro-pink",
         position: "right",
         alignmentStrategy: "edge",
         align: E,

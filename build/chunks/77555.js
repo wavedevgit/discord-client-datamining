@@ -18,12 +18,12 @@ function c(e) {
         handleToggleDestination: d,
         disableSelection: _,
         rowClassName: h,
-        ...f
+        ...b
     } = e, {
         sections: p,
-        sectionHeight: m,
-        renderRow: g,
-        rowHeight: C
+        sectionHeight: f,
+        renderRow: m,
+        rowHeight: g
     } = (0, i.s)({
         rowData: t,
         message: n,
@@ -32,7 +32,7 @@ function c(e) {
         handleToggleDestination: d,
         disableSelection: _,
         rowClassName: h
-    }), b = l.useRef(null), k = (0, o.A)("forward-modal", b);
+    }), C = l.useRef(null), k = (0, o.A)("forward-modal", C);
     return (0, a.jsx)(r.hD, {
         navigator: k,
         children: (0, a.jsx)(r.PR, {
@@ -43,14 +43,14 @@ function c(e) {
                 } = e;
                 return (0, a.jsx)(s.OZj, {
                     ref: e => {
-                        b.current = e, t.current = e?.getScrollerNode() ?? null
+                        C.current = e, t.current = e?.getScrollerNode() ?? null
                     },
                     ...n,
-                    ...f,
+                    ...b,
                     sections: p,
-                    sectionHeight: m,
-                    renderRow: g,
-                    rowHeight: C
+                    sectionHeight: f,
+                    renderRow: m,
+                    rowHeight: g
                 })
             }
         })

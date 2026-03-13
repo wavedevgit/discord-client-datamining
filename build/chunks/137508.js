@@ -1,6 +1,6 @@
 /** chunk id: 137508 params = (module,exports,require) **/
 n.d(t, {
-    t: () => f
+    t: () => b
 });
 var a = n(627968),
     l = n(64700),
@@ -13,27 +13,27 @@ var a = n(627968),
     d = n(457417),
     _ = n(985018),
     h = n(189936);
-let f = () => {
+let b = () => {
     let {
         message: e,
         channel: t,
         updateMessageText: n
-    } = (0, d.Vw)(), f = (0, r.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [p, m] = l.useState(() => (0, i.ur)(f)), {
-        textValue: g,
-        richValue: C
+    } = (0, d.Vw)(), b = (0, r.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [p, f] = l.useState(() => (0, i.ur)(b)), {
+        textValue: m,
+        richValue: g
     } = p;
     (0, l.useEffect)(() => {
-        n(g)
-    }, [n, g]);
-    let b = l.useCallback((t, n, a) => {
-            m({
+        n(m)
+    }, [n, m]);
+    let C = l.useCallback((t, n, a) => {
+            f({
                 textValue: n,
                 richValue: a
             }), s.A.saveDraft(e.channel_id, n, u.C.ChannelMessage)
         }, [e]),
         [k, A] = l.useState(!1),
-        w = l.useCallback(() => A(!0), []),
-        x = l.useCallback(() => A(!1), []);
+        x = l.useCallback(() => A(!0), []),
+        w = l.useCallback(() => A(!1), []);
     (0, l.useEffect)(() => () => {
         s.A.clearDraft(e.channel_id, u.C.ChannelMessage)
     }, [e]);
@@ -43,14 +43,14 @@ let f = () => {
     });
     return (0, a.jsx)(c.Ay, {
         innerClassName: h.O,
-        onChange: b,
+        onChange: C,
         placeholder: _.intl.string(_.t.ZroO3G),
         channel: t,
-        textValue: g,
-        richValue: C,
+        textValue: m,
+        richValue: g,
         type: o.oU.SHARE_CUSTOM_CLIENT_THEME_INPUT,
-        onBlur: x,
-        onFocus: w,
+        onBlur: w,
+        onFocus: x,
         focused: k,
         onSubmit: E,
         parentModalKey: d.dJ,

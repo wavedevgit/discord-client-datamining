@@ -2,10 +2,10 @@
 s.d(t, {
     A: () => A
 });
-var l = s(627968);
+var i = s(627968);
 s(64700);
-var i = s(311907),
-    a = s(397927),
+var a = s(311907),
+    l = s(397927),
     n = s(478063),
     r = s(287809);
 let A = function(e) {
@@ -14,20 +14,20 @@ let A = function(e) {
         size: s,
         status: A,
         isTyping: u,
-        className: _,
-        ...c
-    } = e, h = a.vCh[s], d = (0, i.yK)([r.default], () => t.slice(0, 2).map(e => {
+        className: d,
+        ..._
+    } = e, c = l.vCh[s], o = (0, a.yK)([r.default], () => t.slice(0, 2).map(e => {
         let t = r.default.getUser(e);
-        if (null != t) return t.getAvatarURL(void 0, h.size, !1)
-    }), [t, h.size]);
-    return (0, l.jsx)(n.A, {
-        "aria-label": c["aria-label"],
-        "aria-hidden": c["aria-hidden"],
-        backSrc: d[0],
-        frontSrc: d[1],
+        if (null != t) return t.getAvatarURL(void 0, c.size, !1)
+    }), [t, c.size]);
+    return (0, i.jsx)(n.A, {
+        "aria-label": _["aria-label"],
+        "aria-hidden": _["aria-hidden"],
+        backSrc: o[0],
+        frontSrc: o[1],
         size: s,
         status: A,
         isTyping: u ?? !1,
-        className: _
+        className: d
     })
 }

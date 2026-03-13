@@ -2,35 +2,35 @@
 s.d(t, {
     A: () => A
 });
-var l = s(627968),
-    i = s(64700),
-    a = s(397927),
+var i = s(627968),
+    a = s(64700),
+    l = s(397927),
     n = s(571694),
     r = s(954376);
-let A = i.memo(function(e) {
+let A = a.memo(function(e) {
     let {
         channel: t,
         size: s,
-        facepileSizeOverride: i,
+        facepileSizeOverride: a,
         isTyping: A,
         status: u,
-        className: _,
-        animated: c = !1,
-        ...h
+        className: d,
+        animated: _ = !1,
+        ...c
     } = e;
-    return t.recipients.length >= 2 && null == t.icon ? (0, l.jsx)(r.A, {
-        "aria-label": h["aria-label"],
-        "aria-hidden": h["aria-hidden"],
-        className: _,
+    return t.recipients.length >= 2 && null == t.icon ? (0, i.jsx)(r.A, {
+        "aria-label": c["aria-label"],
+        "aria-hidden": c["aria-hidden"],
+        className: d,
         recipients: t.recipients,
-        size: i ?? s,
+        size: a ?? s,
         isTyping: A,
         status: u
-    }) : (0, l.jsx)(a.euF, {
-        "aria-hidden": h["aria-hidden"],
-        "aria-label": h["aria-label"],
-        className: _,
+    }) : (0, i.jsx)(l.euF, {
+        "aria-hidden": c["aria-hidden"],
+        "aria-label": c["aria-label"],
+        className: d,
         size: s,
-        src: (0, n.Y)(t, 80, c)
+        src: (0, n.Y)(t, 80, _)
     })
 })

@@ -26,7 +26,7 @@ let c = () => {
     (0, l.useEffect)(() => {
         h(n)
     }, [h, n]);
-    let f = (0, l.useCallback)(t => {
+    let b = (0, l.useCallback)(t => {
             let n = e.findIndex(e => {
                 let {
                     type: n,
@@ -48,7 +48,7 @@ let c = () => {
         rowData: _,
         message: c,
         originChannel: u,
-        handleToggleDestination: f,
+        handleToggleDestination: b,
         selectedDestinations: e,
         disableSelection: p,
         rowClassName: i.q

@@ -1,6 +1,6 @@
 /** chunk id: 277978 params = (module,exports,require) **/
 n.d(t, {
-    CustomThemesShareModalWrapper: () => b
+    CustomThemesShareModalWrapper: () => C
 });
 var a = n(627968),
     l = n(64700),
@@ -13,23 +13,23 @@ var a = n(627968),
     d = n(95701),
     _ = n(954571),
     h = n(467135),
-    f = n(739031),
+    b = n(739031),
     p = n(457417),
-    m = n(567951),
-    g = n(285188),
-    C = n(652215);
-let b = e => {
+    f = n(567951),
+    m = n(285188),
+    g = n(652215);
+let C = e => {
     let {
         transitionState: t,
         onClose: n
-    } = e, b = (0, l.useRef)((0, p.E3)()).current, {
+    } = e, C = (0, l.useRef)((0, p.E3)()).current, {
         selectedDestinations: k,
         messageText: A,
-        canSend: w,
-        setSend: x,
+        canSend: x,
+        setSend: w,
         updateMessage: E,
         updateChannel: M
-    } = (0, r.P)(b), [y, S] = l.useState(!1), {
+    } = (0, r.P)(C), [y, S] = l.useState(!1), {
         colors: v,
         chassisMixAmount: T,
         gradientAngle: j
@@ -37,7 +37,7 @@ let b = e => {
         colors: v.map(e => e.replace("#", "")),
         gradient_angle: j,
         base_mix: T,
-        base_theme: (0, f.O)(I)
+        base_theme: (0, b.O)(I)
     }), [v, j, T, I]), R = l.useMemo(() => (0, d.createChannelRecord)({
         id: "1",
         type: s.r.DM
@@ -51,16 +51,16 @@ let b = e => {
         E(D), M(R), S(!0)
     }, [D, R, E, M]);
     let O = l.useCallback(async () => {
-        if (!w()) return Promise.reject();
-        await (0, g.N)(k, P, A), _.default.track(C.HAw.CUSTOM_THEME_SHARED, {
+        if (!x()) return Promise.reject();
+        await (0, m.N)(k, P, A), _.default.track(g.HAw.CUSTOM_THEME_SHARED, {
             num_destinations: k.length
         }), await n()
-    }, [P, k, A, w, n]);
+    }, [P, k, A, x, n]);
     return ((0, l.useEffect)(() => {
-        x(O)
-    }, [O, x]), y) ? (0, a.jsx)(p.KH.Provider, {
-        value: b,
-        children: (0, a.jsx)(m.y, {
+        w(O)
+    }, [O, w]), y) ? (0, a.jsx)(p.KH.Provider, {
+        value: C,
+        children: (0, a.jsx)(f.y, {
             transitionState: t,
             onClose: n
         })

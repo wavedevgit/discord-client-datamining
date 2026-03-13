@@ -33,7 +33,6 @@ function h(e) {
         guild: t,
         isOwner: f,
         canManageGuildRoleSubscriptions: (0, a.X9)(t),
-        isMonetizationWaitlistEnabledForGuild: (0, i.Kw)(t.id),
         isGuildEligibleForRoleSubscriptions: (0, r.OV)(t.id),
         isExpeditedMonetizationOnboardingGuild: (0, i.Sm)(t),
         isUserInCreatorMonetizationEligibleCountry: (0, i.Z1)(),

@@ -109,7 +109,7 @@ function B(e) {
             e && (0, C.u)(L.YYv), ex ? (eo || (0, v.tV)(!0), e && (0, o.mMO)(async () => {
                 let {
                     default: e
-                } = await Promise.all([n.e("59839"), n.e("23006")]).then(n.bind(n, 889186));
+                } = await Promise.all([n.e("59839"), n.e("84315")]).then(n.bind(n, 889186));
                 return t => (0, i.jsx)(e, {
                     ...t,
                     parentId: null
@@ -178,7 +178,7 @@ function B(e) {
             })
         }), $ && (0, i.jsx)(r.AM, {
             targetElementRef: ei,
-            gradientColor: "purple",
+            gradientColor: "nitro-pink",
             position: "right",
             alignmentStrategy: "edge",
             align: "top",

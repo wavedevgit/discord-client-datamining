@@ -18,7 +18,7 @@ function d(t) {
         (0, r.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([i.e("59839"), i.e("23006")]).then(i.bind(i, 889186));
+            } = await Promise.all([i.e("59839"), i.e("84315")]).then(i.bind(i, 889186));
             return a => (0, e.jsx)(t, {
                 ...a
             })
@@ -46,7 +46,7 @@ function d(t) {
                 label: c.intl.string(s.default.G9fGlP),
                 trailingIndicator: {
                     type: "icon",
-                    icon: r.j96
+                    icon: r.TIR
                 },
                 action: u
             })

@@ -77,7 +77,7 @@ function h(e) {
         ...h
     } = e, {
         analyticsLocations: S
-    } = (0, _.Ay)(O ?? []), g = r.useCallback(async (e, n, r) => {
+    } = (0, _.Ay)(O ?? []), b = r.useCallback(async (e, n, r) => {
         let {
             withMessage: c,
             closeAfterSend: _
@@ -99,7 +99,7 @@ function h(e) {
         } finally {
             r(!1)
         }
-    }, [i, t, a]), b = r.useMemo(() => [{
+    }, [i, t, a]), g = r.useMemo(() => [{
         variant: "secondary",
         text: void 0,
         onClick: () => {
@@ -122,7 +122,7 @@ function h(e) {
             guildId: t
         }),
         customSubtitle: p.intl.string(p.t.yiaXeN),
-        customSendHandler: g,
-        additionalActions: b
+        customSendHandler: b,
+        additionalActions: g
     })
 }

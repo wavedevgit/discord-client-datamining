@@ -4,15 +4,15 @@ i.d(t, {
 });
 var n = i(64700),
     l = i(311907),
-    a = i(217238),
-    s = i(641411),
+    s = i(217238),
+    a = i(641411),
     r = i(594792),
     d = i(576705),
     o = i(985018);
 let u = {
         "server-subscriptions-onboarding": r.A,
-        "server-subscriptions-finish-setting-up": s.A,
-        "server-subscriptions-create-tier-from-template": a.A
+        "server-subscriptions-finish-setting-up": a.A,
+        "server-subscriptions-create-tier-from-template": s.A
     },
     c = {
         title: () => o.intl.string(o.t.V42OaH),
@@ -25,17 +25,17 @@ let u = {
     };
 
 function G(e) {
-    let [t] = n.useState(null == e ? void 0 : u[e]), i = c.useIsGuildSupported(), l = t?.useIsGuildSupported?.(), a = {
+    let [t] = n.useState(null == e ? void 0 : u[e]), i = c.useIsGuildSupported(), l = t?.useIsGuildSupported?.(), s = {
         ...c,
         ...t ?? {}
     };
     return {
-        title: a.title(),
-        description: a.description(),
-        selectGuildCta: a.selectGuildCta(),
-        createGuildDescription: a.createGuildDescription(),
-        createGuildCta: a.createGuildCta(),
-        canCreateGuild: a.canCreateGuild,
+        title: s.title(),
+        description: s.description(),
+        selectGuildCta: s.selectGuildCta(),
+        createGuildDescription: s.createGuildDescription(),
+        createGuildCta: s.createGuildCta(),
+        canCreateGuild: s.canCreateGuild,
         isGuildSupported: (e, t) => i(e, t) && l?.(e, t) !== !1
     }
 }

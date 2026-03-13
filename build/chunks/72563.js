@@ -2,16 +2,16 @@
 s.d(t, {
     i: () => u
 });
-var l = s(64700),
-    i = s(311907),
-    a = s(287809),
+var i = s(64700),
+    a = s(311907),
+    l = s(287809),
     n = s(403362),
     r = s(427262),
     A = s(985018);
 
 function u(e) {
-    let t = (0, i.yK)([a.default], () => e.recipients.map(e => a.default.getUser(e)).filter(n.Vq).map(e => r.Ay.getName(e)));
-    return l.useMemo(() => {
+    let t = (0, a.yK)([l.default], () => e.recipients.map(e => l.default.getUser(e)).filter(n.Vq).map(e => r.Ay.getName(e)));
+    return i.useMemo(() => {
         if ("" === e.name) return null;
         if (0 === t.length) return null;
         if (1 === t.length) return A.intl.formatToPlainString(A.t["J+Wpst"], {

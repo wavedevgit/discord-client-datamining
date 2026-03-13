@@ -1,66 +1,66 @@
 /** chunk id: 255266 params = (module,exports,require) **/
 s.d(t, {
-    A: () => I,
-    q: () => c
+    A: () => h,
+    q: () => _
 });
-var l, i = s(627968),
-    a = s(503698),
-    n = s.n(a),
+var i, a = s(627968),
+    l = s(503698),
+    n = s.n(l),
     r = s(713654),
     A = s(573435),
     u = s(260509),
-    _ = s(982554),
-    c = ((l = {}).SMALL_32 = "SMALL_32", l);
-let h = {
+    d = s(982554),
+    _ = ((i = {}).SMALL_32 = "SMALL_32", i);
+let c = {
         SMALL_32: 24
     },
-    d = {
+    o = {
         SMALL_32: [13, 11, 10, 10, 10, 10, 10]
     },
-    I = function(e) {
+    h = function(e) {
         let {
             className: t,
             iconClassName: s,
-            size: l,
-            channel: a,
-            guild: c,
-            locked: I,
-            hasActiveThreads: o
+            size: i,
+            channel: l,
+            guild: _,
+            locked: h,
+            hasActiveThreads: I
         } = e;
-        if (null == c) return null;
-        let L = (0, u.Iv)(c, 48),
-            E = d[l],
-            N = h[l],
-            C = (0, r.gU)(a, c, {
-                locked: I,
-                hasActiveThreads: o
+        if (null == _) return null;
+        let L = (0, u.Iv)(_, 48),
+            E = o[i],
+            N = c[i],
+            C = (0, r.gU)(l, _, {
+                locked: h,
+                hasActiveThreads: I
             });
         if (null == C) return null;
-        let f = null != c ? (0, u.Rb)(c) : "";
-        return (0, i.jsxs)("div", {
+        let P = null != _ ? (0, u.Rb)(_) : "";
+        return (0, a.jsxs)("div", {
             role: "img",
             className: t,
-            children: [(0, i.jsx)(A.Ay, {
+            children: [(0, a.jsx)(A.Ay, {
                 mask: A.hW.GUILD_ICON_WITH_CHANNEL_TYPE,
-                children: null != L ? (0, i.jsx)("img", {
+                children: null != L ? (0, a.jsx)("img", {
                     alt: "",
                     src: L,
-                    className: _.Aq,
+                    className: d.Aq,
                     style: {
                         width: N,
                         height: N
                     }
-                }) : (0, i.jsx)("div", {
-                    className: n()(_.Aq, _.q9),
+                }) : (0, a.jsx)("div", {
+                    className: n()(d.Aq, d.q9),
                     style: {
-                        fontSize: f.length - 1 > E.length ? E[E.length - 1] : E[f.length - 1],
+                        fontSize: P.length - 1 > E.length ? E[E.length - 1] : E[P.length - 1],
                         width: N,
                         height: N
                     },
-                    children: f
+                    children: P
                 })
-            }), (0, i.jsx)(C, {
-                className: n()(_.Kk, _.Is, s),
+            }), (0, a.jsx)(C, {
+                className: n()(d.Kk, d.Is, s),
                 color: "currentColor"
             })]
         })
