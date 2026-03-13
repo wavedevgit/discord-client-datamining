@@ -178,12 +178,12 @@ let eh = [er.lp.ACTIVITY],
             e1 = s.useCallback((e, t, n) => {
                 I?.(u, e, t, n)
             }, [I, u]),
-            e7 = null,
             e9 = null,
+            e7 = null,
             e6 = "";
         switch (u.type) {
             case er.lp.STREAM:
-                e7 = (0, i.jsx)(en.A, {
+                e9 = (0, i.jsx)(en.A, {
                     participant: u,
                     selected: Q,
                     popoutType: p,
@@ -191,7 +191,7 @@ let eh = [er.lp.ACTIVITY],
                     fit: ef,
                     onVideoResize: X,
                     paused: ex
-                }), e9 = (0, i.jsx)(en.D, {
+                }), e7 = (0, i.jsx)(en.D, {
                     participant: u,
                     selected: Q,
                     width: q,
@@ -203,7 +203,7 @@ let eh = [er.lp.ACTIVITY],
                 });
                 break;
             case er.lp.USER:
-                e7 = (0, i.jsx)(ei.A, {
+                e9 = (0, i.jsx)(ei.A, {
                     channel: z,
                     inCall: J,
                     participant: u,
@@ -217,7 +217,7 @@ let eh = [er.lp.ACTIVITY],
                     ignored: eg,
                     noVideoRender: eA || eU,
                     pulseSpeakingIndicator: eC
-                }), e9 = (0, i.jsx)(ei.s, {
+                }), e7 = (0, i.jsx)(ei.s, {
                     participant: u,
                     channelId: z.id
                 }), e6 = ed.intl.formatToPlainString(ed.t["iC/x/Q"], {
@@ -225,7 +225,7 @@ let eh = [er.lp.ACTIVITY],
                 });
                 break;
             case er.lp.ACTIVITY:
-                e7 = (0, i.jsx)(ee.Ay, {
+                e9 = (0, i.jsx)(ee.Ay, {
                     interactible: em,
                     participant: u,
                     selected: Q,
@@ -236,7 +236,7 @@ let eh = [er.lp.ACTIVITY],
                 });
                 break;
             case er.lp.HIDDEN_STREAM:
-                e7 = (0, i.jsx)(en.A, {
+                e9 = (0, i.jsx)(en.A, {
                     participant: u,
                     selected: Q,
                     width: q,
@@ -312,9 +312,9 @@ let eh = [er.lp.ACTIVITY],
                                             height: e2?.current?.clientHeight ?? 0
                                         }
                                     })
-                                }) : null, e7, es ? null : (0, i.jsx)("div", {
+                                }) : null, e9, es ? null : (0, i.jsx)("div", {
                                     className: eu.hD,
-                                    children: e9
+                                    children: e7
                                 }), Q ? (0, i.jsx)("div", {
                                     className: eu._Q,
                                     children: (0, i.jsx)(e8, {

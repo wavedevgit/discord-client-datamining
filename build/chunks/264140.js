@@ -111,8 +111,8 @@ var f = n(483270),
     eZ = n(991275),
     e0 = n(59e3),
     e1 = n(377045),
-    e7 = n(402216),
-    e9 = n(746080),
+    e9 = n(402216),
+    e7 = n(746080),
     e6 = n(652215),
     e2 = n(5867),
     e3 = n(806931),
@@ -237,7 +237,7 @@ class ts extends s.PureComponent {
         let {
             channel: e
         } = this.props;
-        return e?.hasFlag(e9.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, i.jsx)(q.A, {
+        return e?.hasFlag(e7.lx.IS_JOIN_REQUEST_INTERVIEW_CHANNEL) ? (0, i.jsx)(q.A, {
             channelId: e.id,
             showTrailingDivider: !0
         }) : null
@@ -257,7 +257,7 @@ class ts extends s.PureComponent {
             premiumIndicatorEnabled: t
         } = this.props;
         return e?.type !== e3.lp.STREAM ? null : (0, i.jsx)(W.A, {
-            size: e7.Ay.Sizes.LARGE,
+            size: e9.Ay.Sizes.LARGE,
             participant: e,
             showQuality: !0,
             premiumIndicator: t
