@@ -41,8 +41,6 @@ function b(e) {
         value: y,
         children: (0, i.jsx)(A.of, {
             value: j,
-            fetchStartedAt: S?.fetchStartedAt,
-            fetchEndedAt: S?.fetchEndedAt,
             isLoaded: S?.isLoaded,
             children: (0, i.jsx)(_.A, {
                 ref: R,

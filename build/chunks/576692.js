@@ -21,12 +21,12 @@ function u(e) {
         innerClassName: d,
         rounded: c = !0,
         "aria-hidden": h
-    } = e, g = null != n, I = i.useId(), A = `${I}-lower_badge_masks`, f = `${I}-shape_mask`, E = `${I}-stroke_mask`, m = r?.width != null ? r.width : 16, S = r?.height != null ? r.height : 16, p = {
+    } = e, g = null != n, I = i.useId(), A = `${I}-lower_badge_masks`, f = `${I}-shape_mask`, E = `${I}-stroke_mask`, m = r?.width != null ? r.width : 16, S = r?.height != null ? r.height : 16, _ = {
         width: t + 8,
         height: t + 8,
         x: -4,
         y: -4
-    }, N = c ? (0, l.jsx)("circle", {
+    }, p = c ? (0, l.jsx)("circle", {
         id: f,
         cx: t / 2,
         cy: t / 2,
@@ -48,14 +48,14 @@ function u(e) {
         },
         "aria-hidden": h,
         children: [(0, l.jsxs)("svg", {
-            width: p.width,
-            height: p.height,
-            viewBox: `${p.x} ${p.y} ${p.width} ${p.height}`,
+            width: _.width,
+            height: _.height,
+            viewBox: `${_.x} ${_.y} ${_.width} ${_.height}`,
             className: s()(a.JW, a.Pm),
             overflow: "visible",
             role: "none",
             children: [(0, l.jsxs)("defs", {
-                children: [N, g ? (0, l.jsx)("rect", {
+                children: [p, g ? (0, l.jsx)("rect", {
                     id: A,
                     x: t - (m + 4) + 2,
                     y: t - (S + 4) + 2,

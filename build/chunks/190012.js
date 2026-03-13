@@ -23,7 +23,7 @@ function f(e, t) {
     } = (0, r.cf)([c.A], () => ({
         isBlocked: c.A.isBlocked(e.author.id),
         isIgnored: c.A.isIgnored(e.author.id)
-    }), [e.author.id]), E = (0, s.Ay)(t.id, e.id), m = (0, r.bG)([d.default], () => d.default.getId()), S = (0, o.Ay)(e).nick, p = e.type !== i.l.USER_JOIN && e.author.id === m ? A.intl.string(A.t.LuZzxn) : S, N = (0, r.bG)([h.default], () => e.mentions.length > 0 ? h.default.getUser(e.mentions[0]) : void 0), T = (0, o.d8)(N, t).nick;
+    }), [e.author.id]), E = (0, s.Ay)(t.id, e.id), m = (0, r.bG)([d.default], () => d.default.getId()), S = (0, o.Ay)(e).nick, _ = e.type !== i.l.USER_JOIN && e.author.id === m ? A.intl.string(A.t.LuZzxn) : S, p = (0, r.bG)([h.default], () => e.mentions.length > 0 ? h.default.getUser(e.mentions[0]) : void 0), N = (0, o.d8)(p, t).nick;
     return function(e, t) {
         let {
             isBlocked: n,
@@ -232,9 +232,9 @@ function f(e, t) {
         message: e,
         channel: t,
         currentUserId: m,
-        authorNick: p,
-        otherUser: N,
-        otherUserNick: T,
+        authorNick: _,
+        otherUser: p,
+        otherUserNick: N,
         isBlocked: n,
         isIgnored: f,
         isCallActive: E

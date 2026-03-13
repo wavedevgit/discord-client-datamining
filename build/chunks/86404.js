@@ -1,34 +1,34 @@
 /** chunk id: 86404 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var i = n(627968),
     s = n(64700),
     r = n(397927),
-    a = n(163126),
-    l = n(688810),
-    d = n(183555),
-    o = n(913453),
+    l = n(163126),
+    a = n(688810),
+    o = n(183555),
+    d = n(913453),
     c = n(229187),
     u = n(657331),
-    A = n(503062),
-    m = n(985018),
+    m = n(503062),
+    A = n(985018),
     x = n(230836);
 
-function p(e) {
+function _(e) {
     let {
         user: t,
         guildId: n,
-        channelId: p,
-        onClose: _
+        channelId: _,
+        onClose: p
     } = e, {
         mutualFriends: f
-    } = (0, o.A)(t), {
+    } = (0, d.A)(t), {
         analyticsLocations: h
-    } = (0, l.Ay)(), {
+    } = (0, a.Ay)(), {
         context: g,
         trackUserProfileAction: I
-    } = (0, d.NJ)(), j = (0, a.A)();
+    } = (0, o.NJ)(), j = (0, l.A)();
     return s.useEffect(() => {
         (0, c.A)(t.id, j)
     }, [t.id, j]), (0, i.jsx)(r.IpV, {
@@ -43,7 +43,7 @@ function p(e) {
                 className: x.on
             }), (0, i.jsx)("div", {
                 className: x.BI,
-                children: m.intl.string(m.t["/5p4gx"])
+                children: A.intl.string(A.t["/5p4gx"])
             })]
         }) : f.map(e => {
             let {
@@ -51,14 +51,14 @@ function p(e) {
                 user: s,
                 status: r
             } = e;
-            return (0, i.jsx)(A.A, {
+            return (0, i.jsx)(m.A, {
                 user: s,
                 status: r,
                 guildId: n,
-                channelId: p,
+                channelId: _,
                 onSelect: () => {
                     var e;
-                    _?.(), I({
+                    p?.(), I({
                         action: "PRESS_MUTUAL_FRIEND"
                     }), e = s.id, (0, u.openUserProfileModal)({
                         ...g,

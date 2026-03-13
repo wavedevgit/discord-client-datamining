@@ -1,9 +1,9 @@
 /** chunk id: 513265 params = (module,exports,require) **/
-n.d(t, {
+n.d(l, {
     A: () => f
 });
-var l = n(627968),
-    i = n(64700),
+var i = n(627968),
+    t = n(64700),
     s = n(503698),
     a = n.n(s),
     r = n(490249),
@@ -18,7 +18,7 @@ var l = n(627968),
 let g = {
         [A.jM.WIDGET_ADDED]: {
             message: m.intl.string(m.t.fFP1Uy),
-            icon: (0, l.jsx)(d.A9s, {
+            icon: (0, i.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
@@ -26,7 +26,7 @@ let g = {
         },
         [A.jM.WIDGET_REMOVED]: {
             message: m.intl.string(m.t.zzsK7h),
-            icon: (0, l.jsx)(d.A9s, {
+            icon: (0, i.jsx)(d.A9s, {
                 size: "sm",
                 color: d.LU0.colors.STATUS_POSITIVE.css
             }),
@@ -34,7 +34,7 @@ let g = {
         },
         [A.jM.WIDGET_SAVE_FAILURE]: {
             message: m.intl.string(m.t["84MExs"]),
-            icon: (0, l.jsx)(d.d$L, {
+            icon: (0, i.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -43,7 +43,7 @@ let g = {
         },
         [A.jM.SOMETHING_WENT_WRONG]: {
             message: m.intl.string(m.t.F8FvUy),
-            icon: (0, l.jsx)(d.d$L, {
+            icon: (0, i.jsx)(d.d$L, {
                 size: "sm",
                 color: d.LU0.colors.ICON_FEEDBACK_CRITICAL
             }),
@@ -53,29 +53,29 @@ let g = {
     },
     h = e => {
         let {
-            message: t,
+            message: l,
             icon: n,
-            type: i
+            type: t
         } = e;
-        return (0, l.jsxs)("div", {
+        return (0, i.jsxs)("div", {
             className: a()(x.oR, p.oR),
-            "data-type": i,
-            children: [(0, l.jsx)("div", {
+            "data-type": t,
+            children: [(0, i.jsx)("div", {
                 className: p.RC,
                 children: n
-            }), (0, l.jsx)(d.Text, {
+            }), (0, i.jsx)(d.Text, {
                 color: "text-strong",
                 variant: "text-sm/semibold",
-                children: t
+                children: l
             })]
         })
     },
     f = e => {
         let {
-            className: t,
+            className: l,
             onAutoHide: n
-        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = i.useState(!1), [f, I] = i.useState(null);
-        i.useEffect(() => {
+        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = t.useState(!1), [f, I] = t.useState(null);
+        t.useEffect(() => {
             null !== s ? (x(!0), I(g[s]), d.ORC.announce(g[s].message)) : x(!1)
         }, [s]);
         let j = (0, d.pnh)(m, {
@@ -98,18 +98,18 @@ let g = {
                 clamp: !0
             }
         }, "animate-always");
-        return i.useEffect(() => {
+        return t.useEffect(() => {
             if (m) {
                 let e = setTimeout(() => {
                     n?.()
                 }, 2e3);
                 return () => clearTimeout(e)
             }
-        }, [m, n]), (0, l.jsx)(l.Fragment, {
-            children: j((e, n) => n && null !== f && (0, l.jsx)(r.animated.div, {
-                className: a()(t, p.Jt),
+        }, [m, n]), (0, i.jsx)(i.Fragment, {
+            children: j((e, n) => n && null !== f && (0, i.jsx)(r.animated.div, {
+                className: a()(l, p.Jt),
                 style: e,
-                children: (0, l.jsx)(h, {
+                children: (0, i.jsx)(h, {
                     ...f
                 })
             }))

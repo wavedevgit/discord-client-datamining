@@ -1,6 +1,6 @@
 /** chunk id: 953013 params = (module,exports,require) **/
 n.d(t, {
-    o: () => C
+    o: () => y
 }), n(321073);
 var l = n(627968),
     i = n(64700),
@@ -59,7 +59,7 @@ function S(e) {
             })
     }
 }
-let p = i.memo(function(e) {
+let _ = i.memo(function(e) {
         let {
             message: t
         } = e;
@@ -68,7 +68,7 @@ let p = i.memo(function(e) {
             noStyleAndInteraction: !0
         }).content
     }),
-    N = i.memo(function(e) {
+    p = i.memo(function(e) {
         let {
             markup: t,
             channelId: n
@@ -79,7 +79,7 @@ let p = i.memo(function(e) {
         })
     });
 
-function T(e) {
+function N(e) {
     let {
         channel: t,
         typingUserIds: n
@@ -110,7 +110,7 @@ function T(e) {
     })
 }
 
-function _(e) {
+function T(e) {
     let t, {
             channel: n,
             message: i
@@ -122,10 +122,10 @@ function _(e) {
         color: u,
         trailingIcon: o
     } = r;
-    return "text" === r.type ? t = r.text : "markup" === r.type ? t = (0, l.jsx)(N, {
+    return "text" === r.type ? t = r.text : "markup" === r.type ? t = (0, l.jsx)(p, {
         markup: r.markup,
         channelId: i.channel_id
-    }) : "message" === r.type && (t = (0, l.jsx)(p, {
+    }) : "message" === r.type && (t = (0, l.jsx)(_, {
         message: r.message
     })), (0, l.jsxs)("div", {
         className: s()(m.Sl, {
@@ -143,7 +143,7 @@ function _(e) {
     })
 }
 
-function C(e) {
+function y(e) {
     let {
         channel: t,
         message: n,
@@ -163,10 +163,10 @@ function C(e) {
             return (h.A.getUserAffinity(t)?.communicationProbability ?? 0) - i
         })
     }, [t.id, i]);
-    return r.length > 0 ? (0, l.jsx)(T, {
+    return r.length > 0 ? (0, l.jsx)(N, {
         channel: t,
         typingUserIds: r
-    }) : null == n ? null : (0, l.jsx)(_, {
+    }) : null == n ? null : (0, l.jsx)(T, {
         channel: t,
         message: n
     })

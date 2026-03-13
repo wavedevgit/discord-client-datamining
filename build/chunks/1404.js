@@ -25,45 +25,45 @@ function c(e) {
         onClick: E,
         onContextMenu: m,
         onMouseEnter: S,
-        onMouseLeave: p,
-        className: N,
-        rowInnerClassName: T
-    } = e, _ = (0, a.rm)(t), [C, y] = i.useState(!1), x = i.useRef(null), [M, v] = i.useState(!1);
+        onMouseLeave: _,
+        className: p,
+        rowInnerClassName: N
+    } = e, T = (0, a.rm)(t), [y, C] = i.useState(!1), x = i.useRef(null), [v, M] = i.useState(!1);
     return i.useEffect(() => {
         if (null == r || x.current === r) return;
         x.current = r;
         let e = Date.now();
-        r > e || e - r > o.WS || v(!0)
+        r > e || e - r > o.WS || M(!0)
     }, [r]), (0, l.jsxs)("div", {
         ref: c,
-        className: s()(d.nM, N, {
+        className: s()(d.nM, p, {
             [d.SS]: n
         }),
         onAnimationEnd: e => {
-            "friendsWidgetRowRecentlyAdded" === e.animationName && v(!1)
+            "friendsWidgetRowRecentlyAdded" === e.animationName && M(!1)
         },
         children: [null != h ? (0, l.jsx)("div", {
             className: d.oT,
             children: h
         }) : null, (0, l.jsx)(u.A, {
-            innerClassName: s()(d.bL, T),
-            className: M ? d.fc : void 0,
+            innerClassName: s()(d.bL, N),
+            className: v ? d.fc : void 0,
             onClick: E,
             onContextMenu: m,
             onMouseEnter: e => {
-                y(!0), S?.(e)
+                C(!0), S?.(e)
             },
             onMouseLeave: e => {
-                y(!1), p?.(e)
+                C(!1), _?.(e)
             },
             avatar: g,
             name: I,
             subText: A,
-            hovered: C,
-            ..._,
+            hovered: y,
+            ...T,
             children: null != f ? (0, l.jsx)("div", {
                 className: d.cm,
-                children: f(C)
+                children: f(y)
             }) : null
         })]
     })

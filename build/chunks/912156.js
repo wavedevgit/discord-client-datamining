@@ -1,6 +1,6 @@
 /** chunk id: 912156 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y,
+    A: () => C,
     Q: () => A
 });
 var l, i = n(627968),
@@ -35,22 +35,22 @@ let f = {
         SMALL_32: [12, 11, 9.5],
         MEDIUM_40: [14, 13, 11]
     },
-    p = {
+    _ = {
         TINY_24: I.d7,
         SMALL_32: I.OI,
         MEDIUM_40: I.H5
     },
-    N = {
+    p = {
         TINY_24: 12,
         SMALL_32: 16,
         MEDIUM_40: 20
     };
 
-function T(e, t) {
+function N(e, t) {
     return 0 === e.length ? 0 : t.length <= 0 ? e[0] : t.length > e.length ? e[e.length - 1] : e[t.length - 1] ?? e[e.length - 1]
 }
 
-function _(e) {
+function T(e) {
     let {
         size: t
     } = e, n = (0, g.Kj)(t), l = 2.5 * n.status, i = (l - n.status) / 2, r = n.status, s = n.size - l + i - n.stroke - n.offset, a = n.size - r - n.stroke - n.offset, u = l + 2 * n.stroke, o = r + 2 * n.stroke, d = (n.status + 2 * n.stroke) / 2, c = n.size - l + i - n.offset, h = n.size - r;
@@ -68,7 +68,7 @@ function _(e) {
         indicatorY: h
     }
 }
-let C = r.memo(function(e) {
+let y = r.memo(function(e) {
         let {
             avatarSize: t,
             typingFillColor: n
@@ -76,7 +76,7 @@ let C = r.memo(function(e) {
             statusWidth: r,
             statusHeight: s,
             dotRadius: a
-        } = _({
+        } = T({
             size: t
         });
         return (0, i.jsx)(d.Ay, {
@@ -95,7 +95,7 @@ let C = r.memo(function(e) {
             })
         })
     }),
-    y = function(e) {
+    C = function(e) {
         var t;
         let n, {
                 className: l,
@@ -104,16 +104,16 @@ let C = r.memo(function(e) {
                 channel: o,
                 guild: h,
                 isTyping: A = !1,
-                typingFillColor: y
+                typingFillColor: C
             } = e,
             x = r.useId();
         if (null == h) return null;
-        let M = m[u],
-            v = E[u],
+        let v = m[u],
+            M = E[u],
             D = f[u],
             R = (0, c.Iv)(h, 48),
-            U = N[u],
-            O = (() => {
+            O = p[u],
+            U = (() => {
                 switch (u) {
                     case "TINY_24":
                         return g._3.SIZE_24;
@@ -127,7 +127,7 @@ let C = r.memo(function(e) {
             })(),
             G = 0 === (n = null != (t = o?.name ?? "") ? t.replace(/[-_]+/g, " ").replace(/'s /g, " ").replace(/\w+/g, e => e[0]).replace(/\s/g, "") : "").length ? "?" : n.slice(0, 3),
             w = (0, c.Rb)(h),
-            F = (0, i.jsxs)("div", {
+            L = (0, i.jsxs)("div", {
                 className: a()(I.zr, l),
                 role: "img",
                 style: {
@@ -136,36 +136,36 @@ let C = r.memo(function(e) {
                 },
                 children: [(0, i.jsx)(d.Ay, {
                     mask: d.hW.CHANNEL_ICON_WITH_GUILD_ICON,
-                    width: v,
-                    height: v,
+                    width: M,
+                    height: M,
                     children: null != R ? (0, i.jsx)("img", {
                         alt: h.name,
                         src: R,
                         className: I.es,
                         style: {
-                            width: v,
-                            height: v
+                            width: M,
+                            height: M
                         }
                     }) : (0, i.jsx)("div", {
                         className: a()(I.TT, I.q9),
                         style: {
-                            fontSize: T(M, w),
-                            width: v,
-                            height: v
+                            fontSize: N(v, w),
+                            width: M,
+                            height: M
                         },
                         children: w
                     })
                 }), (0, i.jsx)("div", {
-                    className: a()(I._C, p[u], s),
+                    className: a()(I._C, _[u], s),
                     "aria-hidden": !0,
                     children: (0, i.jsx)(d.Ay, {
                         mask: d.hW.SQUIRCLE,
-                        width: U,
-                        height: U,
+                        width: O,
+                        height: O,
                         children: (0, i.jsx)("div", {
-                            className: a()(p[u], I.q9),
+                            className: a()(_[u], I.q9),
                             style: {
-                                fontSize: T(S[u], G)
+                                fontSize: N(S[u], G)
                             },
                             children: G
                         })
@@ -173,7 +173,7 @@ let C = r.memo(function(e) {
                 })]
             }),
             {
-                iconSize: L,
+                iconSize: F,
                 avatarCutoutX: b,
                 avatarCutoutY: k,
                 avatarCutoutWidth: P,
@@ -181,8 +181,8 @@ let C = r.memo(function(e) {
                 avatarCutoutRadius: V,
                 indicatorX: H,
                 indicatorY: Y
-            } = _({
-                size: O
+            } = T({
+                size: U
             });
         return A ? (0, i.jsxs)("div", {
             className: I.J4,
@@ -192,23 +192,23 @@ let C = r.memo(function(e) {
                 height: D
             },
             children: [(0, i.jsxs)("svg", {
-                width: L,
-                height: L,
-                viewBox: `0 0 ${L} ${L}`,
+                width: F,
+                height: F,
+                viewBox: `0 0 ${F} ${F}`,
                 className: I._S,
                 "aria-hidden": !0,
                 children: [(0, i.jsx)("defs", {
                     children: (0, i.jsxs)("mask", {
                         id: x,
-                        width: L,
-                        height: L,
+                        width: F,
+                        height: F,
                         children: [(0, i.jsx)("rect", {
                             x: 0,
                             y: 0,
-                            width: L,
-                            height: L,
-                            rx: Math.round(.3 * L),
-                            ry: Math.round(.3 * L),
+                            width: F,
+                            height: F,
+                            rx: Math.round(.3 * F),
+                            ry: Math.round(.3 * F),
                             fill: "white"
                         }), (0, i.jsx)("rect", {
                             x: b,
@@ -223,11 +223,11 @@ let C = r.memo(function(e) {
                 }), (0, i.jsx)("foreignObject", {
                     x: 0,
                     y: 0,
-                    width: L,
-                    height: L,
+                    width: F,
+                    height: F,
                     overflow: "visible",
                     mask: `url(#${x})`,
-                    children: F
+                    children: L
                 })]
             }), (0, i.jsx)("div", {
                 className: I.RL,
@@ -235,10 +235,10 @@ let C = r.memo(function(e) {
                     left: H,
                     top: Y
                 },
-                children: (0, i.jsx)(C, {
-                    avatarSize: O,
-                    typingFillColor: y
+                children: (0, i.jsx)(y, {
+                    avatarSize: U,
+                    typingFillColor: C
                 })
             })]
-        }) : F
+        }) : L
     }

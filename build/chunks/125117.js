@@ -89,7 +89,7 @@ function E(e, t) {
 }
 
 function m(e) {
-    let [t, n] = l.useState(""), [i, r] = E(t, e.friendRequests), [s, a] = E(t, e.suggestions), [u, o] = E(t, e.sameActivity), [d, c] = E(t, e.activities), [h, g] = E(t, e.inGame), [I, f] = E(t, e.online), [m, S] = E(t, e.offline), p = l.useMemo(() => {
+    let [t, n] = l.useState(""), [i, r] = E(t, e.friendRequests), [s, a] = E(t, e.suggestions), [u, o] = E(t, e.sameActivity), [d, c] = E(t, e.activities), [h, g] = E(t, e.inGame), [I, f] = E(t, e.online), [m, S] = E(t, e.offline), _ = l.useMemo(() => {
         if ("" === t.trim()) return e.groups;
         let n = t.toLowerCase();
         return e.groups.map(e => {
@@ -99,11 +99,11 @@ function m(e) {
                 users: t
             }
         }).filter(e => e.users.length > 0)
-    }, [t, e.groups]), N = l.useCallback(() => {
+    }, [t, e.groups]), p = l.useCallback(() => {
         n(""), r(), a(), o(), c(), g(), f(), S()
     }, [r, a, o, c, g, f, S]);
     return {
-        groups: p,
+        groups: _,
         friendRequests: i,
         suggestions: s,
         sameActivity: u,
@@ -114,6 +114,6 @@ function m(e) {
         currentActivityName: e.currentActivityName,
         searchQuery: t,
         setSearchQuery: n,
-        clearSearch: N
+        clearSearch: p
     }
 }

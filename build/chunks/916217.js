@@ -5,17 +5,17 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     r = n(397927),
-    a = n(793574),
-    l = n(688810),
-    d = n(915089),
-    o = n(713517),
+    l = n(793574),
+    a = n(688810),
+    o = n(915089),
+    d = n(713517),
     c = n(182592),
     u = n(562153),
-    A = n(183555),
-    m = n(950191),
+    m = n(183555),
+    A = n(950191),
     x = n(718019),
-    p = n(31432),
-    _ = n(915614),
+    _ = n(31432),
+    p = n(915614),
     f = n(389996),
     h = n(743987),
     g = n(900179),
@@ -26,8 +26,8 @@ var i = n(627968),
     N = n(518477),
     C = n(652215),
     y = n(996988),
-    E = n(985018),
-    T = n(200445),
+    T = n(985018),
+    E = n(200445),
     L = n(199385),
     P = n(735633);
 
@@ -36,85 +36,81 @@ function O(e) {
         user: t,
         guildId: n,
         channelId: O,
-        messageId: S,
-        roleId: R,
+        messageId: R,
+        roleId: S,
         sessionId: M,
         transitionState: G,
-        openedAt: k,
-        onClose: U,
-        sourceAnalyticsLocations: w = []
-    } = e, B = n === C.ME ? void 0 : n, D = (0, m.Ay)(t.id, B), F = u.Ay.getName(B, O, t), V = (0, d.GV)(), {
-        analyticsLocations: z
-    } = (0, l.Ay)([...w, a.A.USER_PROFILE_MODAL]), W = (0, A.pb)({
+        onClose: k,
+        sourceAnalyticsLocations: U = []
+    } = e, w = n === C.ME ? void 0 : n, B = (0, A.Ay)(t.id, w), D = u.Ay.getName(w, O, t), F = (0, o.GV)(), {
+        analyticsLocations: V
+    } = (0, a.Ay)([...U, l.A.USER_PROFILE_MODAL]), z = (0, m.pb)({
         layout: "MODAL",
         userId: t.id,
         sourceSessionId: M,
-        guildId: B,
+        guildId: w,
         channelId: O,
-        messageId: S,
-        roleId: R
-    }), H = s.useRef(null), X = (0, o.M)(H);
-    return (0, i.jsx)(l.f5, {
-        value: z,
-        children: (0, i.jsx)(A.of, {
-            value: W,
-            openedAt: k,
-            fetchStartedAt: D?.fetchStartedAt,
-            fetchEndedAt: D?.fetchEndedAt,
-            isLoaded: D?.isLoaded,
+        messageId: R,
+        roleId: S
+    }), W = s.useRef(null), H = (0, d.M)(W);
+    return (0, i.jsx)(a.f5, {
+        value: V,
+        children: (0, i.jsx)(m.of, {
+            value: z,
+            isLoaded: B?.isLoaded,
             children: (0, i.jsxs)(r.EOs, {
                 "data-migration-pending": !0,
                 transitionState: G,
-                className: T.zr,
+                className: E.zr,
                 hideShadow: !0,
-                "aria-labelledby": V,
+                "aria-labelledby": F,
                 parentComponent: "NonUserBotProfileModal",
                 children: [(0, i.jsx)(r.Fmo, {
                     component: (0, i.jsx)(r.AC4, {
                         children: (0, i.jsx)(r.H, {
-                            id: V,
-                            children: E.intl.format(E.t.KRe1Fk, {
-                                name: F
+                            id: F,
+                            children: T.intl.format(T.t.KRe1Fk, {
+                                name: D
                             })
                         })
                     }),
                     children: (0, i.jsxs)(I.A, {
                         user: t,
-                        displayProfile: D,
+                        displayProfile: B,
                         themeType: y.d.MODAL,
-                        ref: D?.profileEffect != null ? H : void 0,
+                        ref: B?.profileEffect != null ? W : void 0,
                         children: [(0, i.jsx)(v.A, {
                             children: (0, i.jsx)(b.A, {
                                 user: t
                             })
                         }), (0, i.jsxs)("div", {
-                            children: [(0, i.jsx)(_.A, {
+                            children: [(0, i.jsx)(p.A, {
                                 user: t,
-                                displayProfile: D,
+                                displayProfile: B,
                                 themeType: y.d.MODAL
                             }), (0, i.jsx)("div", {
-                                className: T.El,
+                                className: E.El,
                                 children: (0, i.jsx)(x.A, {
                                     user: t,
-                                    displayProfile: D,
-                                    guildId: B,
+                                    displayProfile: B,
+                                    guildId: w,
                                     channelId: O,
                                     themeType: y.d.MODAL
                                 })
                             })]
                         }), (0, i.jsxs)("div", {
-                            className: T.rf,
+                            className: E.rf,
                             children: [(0, i.jsx)(j.A, {
-                                className: T.Xh,
+                                className: E.Xh,
                                 user: t,
-                                guildId: B,
-                                nickname: F,
-                                pronouns: D?.pronouns,
+                                guildId: w,
+                                nickname: D,
+                                pronouns: B?.pronouns,
                                 nicknameVariant: "heading-xl/bold",
-                                tags: (0, i.jsx)(p.A, {
-                                    displayProfile: D,
+                                tags: (0, i.jsx)(_.A, {
+                                    displayProfile: B,
                                     themeType: y.d.MODAL,
-                                    onClose: U
+                                    onClose: k
                                 })
                             }), (0, i.jsxs)("div", {
                                 className: P.kL,
@@ -126,10 +122,10 @@ function O(e) {
                                     children: (0, i.jsx)(r.VQ0.Item, {
                                         className: P.YU,
                                         id: N.RP.BOT_INFO,
-                                        "aria-label": E.intl.string(E.t.ZzAR2Y),
+                                        "aria-label": T.intl.string(T.t.ZzAR2Y),
                                         children: (0, i.jsx)(r.Text, {
                                             variant: "text-sm/normal",
-                                            children: E.intl.string(E.t.ZzAR2Y)
+                                            children: T.intl.string(T.t.ZzAR2Y)
                                         })
                                     }, N.RP.BOT_INFO)
                                 }), (0, i.jsxs)(r.IpV, {
@@ -137,13 +133,13 @@ function O(e) {
                                     className: L.XG,
                                     children: [(0, i.jsx)(f.A, {
                                         userId: t.id,
-                                        userBio: D?.bio,
+                                        userBio: B?.bio,
                                         setLineClamp: !1
                                     }), (0, i.jsx)(g.A, {
-                                        heading: E.intl.string(E.t["A//N4k"]),
+                                        heading: T.intl.string(T.t["A//N4k"]),
                                         children: (0, i.jsx)(h.A, {
                                             userId: t.id,
-                                            guildId: B,
+                                            guildId: w,
                                             tooltipDelay: N.In
                                         })
                                     })]
@@ -151,9 +147,9 @@ function O(e) {
                             })]
                         })]
                     })
-                }), D?.profileEffect != null && (0, i.jsx)(c.A, {
-                    skuId: D?.profileEffect?.skuId,
-                    isHovering: X
+                }), B?.profileEffect != null && (0, i.jsx)(c.A, {
+                    skuId: B?.profileEffect?.skuId,
+                    isHovering: H
                 })]
             })
         })

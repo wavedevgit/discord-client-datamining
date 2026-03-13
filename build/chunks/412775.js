@@ -6,17 +6,17 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     r = n(397927),
-    a = n(821269),
-    l = n(437774),
-    d = n(773669),
-    o = n(967198),
+    l = n(821269),
+    a = n(437774),
+    o = n(773669),
+    d = n(967198),
     c = n(351906),
     u = n(183555),
-    A = n(346713),
-    m = n(484509),
+    m = n(346713),
+    A = n(484509),
     x = n(389996),
-    p = n(46937),
-    _ = n(361311),
+    _ = n(46937),
+    p = n(361311),
     f = n(743987),
     h = n(900179),
     g = n(280645),
@@ -32,13 +32,13 @@ function N(e) {
         onClose: N
     } = e, {
         trackUserProfileAction: C
-    } = (0, u.NJ)(), y = (0, s.bG)([o.A], () => o.A.getGuildId()), E = (0, a.q)({
+    } = (0, u.NJ)(), y = (0, s.bG)([d.A], () => d.A.getGuildId()), T = (0, l.q)({
         userId: t.id
-    }), T = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([d.default], () => d.default.locale), P = (0, m.A)(t.id), O = (0, A.A)(t.id);
+    }), E = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, A.A)(t.id), O = (0, m.A)(t.id);
     return (0, i.jsxs)(r.IpV, {
         fade: !0,
         className: v.XG,
-        children: [n?.bio != null && n?.bio !== "" && !T && (0, i.jsx)(x.A, {
+        children: [n?.bio != null && n?.bio !== "" && !E && (0, i.jsx)(x.A, {
             userBio: n.bio,
             setLineClamp: !1
         }), n?.guildId != null && (0, i.jsx)(g.A, {
@@ -51,13 +51,13 @@ function N(e) {
                 color: r.LU0.colors.TEXT_STRONG
             }),
             headingColor: "text-default",
-            children: (0, i.jsx)(l.T, {
+            children: (0, i.jsx)(a.T, {
                 userId: t.id
             })
-        }), E.length > 0 && (0, i.jsx)(h.A, {
+        }), T.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t["Uv/eTx"]),
-            children: (0, i.jsx)(_.A, {
-                applicationIds: E
+            children: (0, i.jsx)(p.A, {
+                applicationIds: T
             })
         }), (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t.a6XYD9),
@@ -69,7 +69,7 @@ function N(e) {
         }), P.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t["3fe7U5"]),
             scrollTargetId: j.bk.CONNECTIONS,
-            children: (0, i.jsx)(p.Ay, {
+            children: (0, i.jsx)(_.Ay, {
                 connectedAccounts: P,
                 className: v.oQ,
                 userId: t.id,
@@ -77,7 +77,7 @@ function N(e) {
             })
         }), O.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t.PHjkRE),
-            children: O.map(e => (0, i.jsx)(p.Wc, {
+            children: O.map(e => (0, i.jsx)(_.Wc, {
                 className: v.MI,
                 applicationRoleConnection: e,
                 locale: L,

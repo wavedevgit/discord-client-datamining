@@ -45,56 +45,53 @@ function k(e) {
         user: t,
         currentUser: n,
         channel: g
-    } = e, k = __OVERLAY__, B = (0, f.Ay)(t.id), H = (0, c.Ay)(), F = s.useRef(Date.now()), {
-        analyticsLocations: K
-    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), W = (0, p.pb)({
+    } = e, k = __OVERLAY__, B = (0, f.Ay)(t.id), H = (0, c.Ay)(), {
+        analyticsLocations: F
+    } = (0, u.Ay)(d.A.USER_PROFILE_SIDEBAR), K = (0, p.pb)({
         layout: "SIDEBAR",
         userId: t.id,
         channelId: g.id
-    }), Y = s.useRef(null), {
-        isHoveringOrFocusing: z,
-        isHovering: q
-    } = (0, h.A)(Y), X = (0, x.fC)(), J = (0, o.zhh)({
-        opacity: +(null != X.interactionType),
+    }), W = s.useRef(null), {
+        isHoveringOrFocusing: Y,
+        isHovering: z
+    } = (0, h.A)(W), q = (0, x.fC)(), X = (0, o.zhh)({
+        opacity: +(null != q.interactionType),
         config: {
             duration: 150
         }
-    }), Q = e => {
+    }), J = e => {
         (0, C.openUserProfileModal)({
-            sourceAnalyticsLocations: K,
+            sourceAnalyticsLocations: F,
             hideRestrictedProfile: !0,
-            ...W,
+            ...K,
             ...e
         })
-    }, $ = B?.widgets != null && B.widgets.length > 0, {
-        defaultWishlistId: Z
+    }, Q = B?.widgets != null && B.widgets.length > 0, {
+        defaultWishlistId: $
     } = (0, a.cf)([_.A], () => ({
         defaultWishlistId: _.A.getFirstWishlistId(t.id)
     })), {
-        wishlist: ee
+        wishlist: Z
     } = (0, m.fw)({
-        wishlistId: Z,
+        wishlistId: $,
         userId: t.id
-    }), et = s.useMemo(() => null == ee ? null : ee.items.filter(e => !e.isOwned), [ee]);
+    }), ee = s.useMemo(() => null == Z ? null : Z.items.filter(e => !e.isOwned), [Z]);
     return (0, i.jsx)(u.f5, {
-        value: K,
+        value: F,
         children: (0, i.jsx)(p.of, {
-            value: W,
-            openedAt: F.current,
-            fetchStartedAt: B?.fetchStartedAt,
-            fetchEndedAt: B?.fetchEndedAt,
+            value: K,
             isLoaded: B?.isLoaded,
             children: (0, i.jsx)(x.Hl, {
-                value: X,
+                value: q,
                 children: (0, i.jsxs)(T.A, {
-                    ref: Y,
+                    ref: W,
                     user: t,
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
                     themeOverride: H,
                     privateBanner: B?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
-                    children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
-                        style: J,
+                    children: [null != q.interactionType && (0, i.jsx)(l.animated.div, {
+                        style: X,
                         className: w.tB
                     }), (0, i.jsxs)(r.d_W, {
                         children: [(0, i.jsxs)(y.A, {
@@ -112,7 +109,7 @@ function k(e) {
                                 user: t,
                                 displayProfile: B,
                                 themeType: U.d.SIDEBAR,
-                                animateOnHoverOrFocusOnly: !z,
+                                animateOnHoverOrFocusOnly: !Y,
                                 className: w.vK
                             }), (0, i.jsx)(N.A, {
                                 userId: t.id,
@@ -122,7 +119,7 @@ function k(e) {
                                 displayProfile: B,
                                 channelId: g.id,
                                 themeType: U.d.SIDEBAR,
-                                onOpenProfile: k ? void 0 : Q
+                                onOpenProfile: k ? void 0 : J
                             }), (0, i.jsx)(O.A, {
                                 user: t,
                                 channelId: g.id,
@@ -134,24 +131,24 @@ function k(e) {
                             currentUser: n,
                             displayProfile: B,
                             channel: g,
-                            isHoveringOrFocusing: null == X.interactionType && z,
-                            onOpenProfile: k ? void 0 : Q
-                        }), $ && (0, i.jsx)("div", {
+                            isHoveringOrFocusing: null == q.interactionType && Y,
+                            onOpenProfile: k ? void 0 : J
+                        }), Q && (0, i.jsx)("div", {
                             className: w.sJ,
                             children: (0, i.jsx)(S.A, {
                                 user: t,
                                 widgets: B.widgets,
-                                onOpenUserProfileModal: Q
+                                onOpenUserProfileModal: J
                             })
-                        }), null != et && et.length > 0 && (0, i.jsx)("div", {
+                        }), null != ee && ee.length > 0 && (0, i.jsx)("div", {
                             className: w.vS,
                             children: (0, i.jsx)(D.A, {
                                 profileOwner: t,
-                                unownedWishlistItems: et,
-                                wishlistId: Z,
+                                unownedWishlistItems: ee,
+                                wishlistId: $,
                                 title: P.intl.string(P.t["7lZ31J"]),
                                 onClick: () => {
-                                    Q?.({
+                                    J?.({
                                         tabSection: G.RP.WISHLIST
                                     })
                                 }
@@ -161,12 +158,12 @@ function k(e) {
                             channelId: g.id
                         })]
                     }), !k && (0, i.jsx)(V, {
-                        handleOpenProfile: Q,
-                        analyticsLocations: K,
-                        context: W
+                        handleOpenProfile: J,
+                        analyticsLocations: F,
+                        context: K
                     }), B?.profileEffect != null && (0, i.jsx)(A.A, {
                         skuId: B?.profileEffect?.skuId,
-                        isHovering: q
+                        isHovering: z
                     })]
                 })
             })

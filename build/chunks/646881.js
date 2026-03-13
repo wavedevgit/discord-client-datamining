@@ -1,7 +1,7 @@
 /** chunk id: 646881 params = (module,exports,require) **/
 n.d(t, {
     $: () => S,
-    A: () => p
+    A: () => _
 });
 var l = n(627968),
     i = n(64700),
@@ -24,8 +24,8 @@ function S() {
     let {
         onPrimaryAction: e,
         onContextMenu: t
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = (0, d.b4)(), f = n?.id, S = n?.altId, p = (0, r.bG)([a.default], () => a.default.getCurrentUser()) ?? null, N = null != S ? S : f, T = A.Ay.useField("activeTab"), _ = A.Ay.useField("setActiveTab"), C = i.useCallback(e => {
-        e !== T && (_(e), (0, u.YX)(E.uss.FRIENDS, {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = (0, d.b4)(), f = n?.id, S = n?.altId, _ = (0, r.bG)([a.default], () => a.default.getCurrentUser()) ?? null, p = null != S ? S : f, N = A.Ay.useField("activeTab"), T = A.Ay.useField("setActiveTab"), y = i.useCallback(e => {
+        e !== N && (T(e), (0, u.YX)(E.uss.FRIENDS, {
             type: u.Z5.TAB_SELECTED,
             value: function(e) {
                 switch (e) {
@@ -40,31 +40,31 @@ function S() {
                 }
             }(e)
         }))
-    }, [T, _]), y = (0, r.bG)([s.A], () => null == N ? null : s.A.getApplicationActivity(N), [N]) ?? null;
+    }, [N, T]), C = (0, r.bG)([s.A], () => null == p ? null : s.A.getApplicationActivity(p), [p]) ?? null;
     return (0, l.jsxs)("div", {
         className: m.kL,
         children: [(0, l.jsx)(h.b, {
-            currentUser: p,
-            activity: y,
+            currentUser: _,
+            activity: C,
             currentGameName: n?.name ?? null,
-            activeTab: T,
-            onTabChange: C
+            activeTab: N,
+            onTabChange: y
         }), (0, l.jsx)("div", {
             className: m.Qs,
-            children: T === o.x.FRIENDS ? (0, l.jsx)(c.F, {
+            children: N === o.x.FRIENDS ? (0, l.jsx)(c.F, {
                 onPrimaryAction: e,
                 onContextMenu: t
-            }) : T === o.x.MESSAGES ? (0, l.jsx)(g.t, {
+            }) : N === o.x.MESSAGES ? (0, l.jsx)(g.t, {
                 onPrimaryAction: e,
                 onContextMenu: t
-            }) : T === o.x.VOICE ? (0, l.jsx)(I.T, {
+            }) : N === o.x.VOICE ? (0, l.jsx)(I.T, {
                 onPrimaryAction: e,
                 onContextMenu: t
             }) : null
         })]
     })
 }
-let p = i.memo(function(e) {
+let _ = i.memo(function(e) {
     let {
         locked: t
     } = e, {

@@ -19,37 +19,37 @@ var l = n(311907),
     E = n(652215);
 let m = Number.MAX_SAFE_INTEGER,
     S = new i.J(e => [e.tab], e => e.sortKey),
-    p = new Set(Object.values(A.x)),
-    N = new Map,
-    T = !1;
+    _ = new Set(Object.values(A.x)),
+    p = new Map,
+    N = !1;
 
-function _(e, t, n) {
+function T(e, t, n) {
     return e < t ? t : e > n ? n : e
 }
 
-function C(e, t) {
+function y(e, t) {
     return String(e).padStart(t, "0")
 }
 
-function y(e) {
-    return Number.isFinite(e) ? Math.floor(_(e, 0, m)) : Date.now()
+function C(e) {
+    return Number.isFinite(e) ? Math.floor(T(e, 0, m)) : Date.now()
 }
 
 function x(e) {
     return e ? "0" : "1"
 }
 
-function M(e, t) {
+function v(e, t) {
     return `${e}:${t}`
 }
 
-function v(e) {
-    let t = N.get(e);
-    return null == t && (t = new Map, N.set(e, t)), t
+function M(e) {
+    let t = p.get(e);
+    return null == t && (t = new Map, p.set(e, t)), t
 }
 
 function D(e) {
-    return Array.from(v(e).values())
+    return Array.from(M(e).values())
 }
 
 function R() {
@@ -62,14 +62,14 @@ function R() {
     return t > 0 ? t : 1
 }
 
-function U(e) {
+function O(e) {
     return {
         hasMention: h.Ay.getMentionCount(e) > 0,
         hasUnread: h.Ay.hasUnread(e)
     }
 }
 
-function O(e, t) {
+function U(e, t) {
     let n = u.A.getChannel(t);
     if (null == n) return !1;
     switch (e) {
@@ -99,7 +99,7 @@ function G(e) {
             addedTimestampMs: o
         } = e,
         d = {
-            rowId: M(l, i),
+            rowId: v(l, i),
             tab: l,
             targetId: i,
             isOnline: r,
@@ -109,7 +109,7 @@ function G(e) {
             addedTimestampMs: o,
             sortKey: ""
         };
-    return d.sortKey = [(t = d).tab, x(t.isOnline), C(Math.round((1 - _(t.affinityScore, 0, 1)) * 1e6), 7), x(t.hasMention), x(t.hasUnread), (n = _(t.addedTimestampMs, 0, m), C(m - n, 16)), t.rowId].join("\0"), d
+    return d.sortKey = [(t = d).tab, x(t.isOnline), y(Math.round((1 - T(t.affinityScore, 0, 1)) * 1e6), 7), x(t.hasMention), x(t.hasUnread), (n = T(t.addedTimestampMs, 0, m), y(m - n, 16)), t.rowId].join("\0"), d
 }
 
 function w(e) {
@@ -138,7 +138,7 @@ function w(e) {
                 {
                     hasMention: o,
                     hasUnread: d
-                } = null != a ? U(a) : {
+                } = null != a ? O(a) : {
                     hasMention: !1,
                     hasUnread: !1
                 };
@@ -164,21 +164,21 @@ function w(e) {
     if (null == u.A.getChannel(n)) return {
         kind: "NOT_READY_YET"
     };
-    if (!O(t, n)) return r ? {
+    if (!U(t, n)) return r ? {
         kind: "INVALID"
     } : {
         kind: "NOT_READY_YET"
     };
     let d = function(e, t, n, l) {
-        if (!O(e, t)) return null;
+        if (!U(e, t)) return null;
         let i = u.A.getChannel(t);
         if (null == i) return null;
         let r = i.getGuildId() ?? null,
-            s = _((null != r ? o.A.getGuildAffinity(r)?.score ?? 0 : 0) / l, 0, 1),
+            s = T((null != r ? o.A.getGuildAffinity(r)?.score ?? 0 : 0) / l, 0, 1),
             {
                 hasMention: d,
                 hasUnread: c
-            } = (0, a.ke)(i.type) || i.isDM() || i.isMultiUserDM() || i.isPrivate() ? U(t) : {
+            } = (0, a.ke)(i.type) || i.isDM() || i.isMultiUserDM() || i.isPrivate() ? O(t) : {
                 hasMention: !1,
                 hasUnread: !1
             };
@@ -202,18 +202,18 @@ function w(e) {
     }
 }
 
-function F(e, t) {
+function L(e, t) {
     return e.rowId !== t.rowId || e.tab !== t.tab || e.targetId !== t.targetId || e.isOnline !== t.isOnline || e.affinityScore !== t.affinityScore || e.hasMention !== t.hasMention || e.hasUnread !== t.hasUnread || e.addedTimestampMs !== t.addedTimestampMs || e.sortKey !== t.sortKey
 }
 
-function L(e) {
+function F(e) {
     let {
         pruneInvalid: t
     } = e, n = new Set(S.values().map(e => e.rowId)), l = R(), i = !1;
-    for (let e of p) {
-        let r = v(e);
+    for (let e of _) {
+        let r = M(e);
         for (let [s, a] of r.entries()) {
-            let u = M(e, s),
+            let u = v(e, s),
                 o = w({
                     tab: e,
                     targetId: s,
@@ -225,7 +225,7 @@ function L(e) {
                 case "BUILT": {
                     let e = o.row,
                         t = S.get(e.rowId);
-                    (null == t || F(t, e)) && (i = S.set(e.rowId, e) || i);
+                    (null == t || L(t, e)) && (i = S.set(e.rowId, e) || i);
                     break
                 }
                 case "NOT_READY_YET":
@@ -244,8 +244,8 @@ function L(e) {
 }
 
 function b(e, t) {
-    let n = v(e).delete(t),
-        l = S.delete(M(e, t));
+    let n = M(e).delete(t),
+        l = S.delete(v(e, t));
     return n || l
 }
 
@@ -255,7 +255,7 @@ function k(e) {
         targetId: n,
         pruneInvalid: l,
         guildAffinityNormalizationMax: i
-    } = e, r = v(t), s = r.get(n), a = M(t, n);
+    } = e, r = M(t), s = r.get(n), a = v(t, n);
     if (null == s) return S.delete(a);
     let u = w({
         tab: t,
@@ -268,7 +268,7 @@ function k(e) {
         case "BUILT": {
             let e = u.row,
                 t = S.get(e.rowId);
-            return !!(null == t || F(t, e)) && S.set(e.rowId, e)
+            return !!(null == t || L(t, e)) && S.set(e.rowId, e)
         }
         case "NOT_READY_YET":
             return S.delete(a);
@@ -282,12 +282,12 @@ function k(e) {
 function P(e, t) {
     let {
         pruneInvalid: n
-    } = t, l = v(e);
+    } = t, l = M(e);
     if (0 === l.size && 0 === S.values(e).length) return !1;
     let i = R(),
         r = !1,
         s = new Set;
-    for (let t of l.keys()) s.add(M(e, t)), r = k({
+    for (let t of l.keys()) s.add(v(e, t)), r = k({
         tab: e,
         targetId: t,
         pruneInvalid: n,
@@ -300,7 +300,7 @@ function P(e, t) {
 function j(e, t) {
     let {
         pruneInvalid: n
-    } = t, l = v(A.x.FRIENDS);
+    } = t, l = M(A.x.FRIENDS);
     if (0 === l.size) return !1;
     let i = R(),
         r = !1;
@@ -314,10 +314,10 @@ function j(e, t) {
 }
 
 function V(e) {
-    let t = T,
+    let t = N,
         n = R(),
         l = !1;
-    return v(A.x.MESSAGES).has(e) && (l = k({
+    return M(A.x.MESSAGES).has(e) && (l = k({
         tab: A.x.MESSAGES,
         targetId: e,
         pruneInvalid: t,
@@ -328,7 +328,7 @@ function V(e) {
 }
 
 function H() {
-    return T = !0, L({
+    return N = !0, F({
         pruneInvalid: !0
     })
 }
@@ -338,8 +338,8 @@ class Y extends l.Ay.PersistedStore {
     initialize(e) {
         this.waitFor(u.A, o.A, d.A, c.A, h.Ay, g.A, s.A, I.default),
             function(e) {
-                N = new Map, S.clear();
-                for (let t of p)(function(e, t) {
+                p = new Map, S.clear();
+                for (let t of _)(function(e, t) {
                     let n = function(e, t) {
                             if (null == e) return [];
                             switch (t) {
@@ -353,17 +353,17 @@ class Y extends l.Ay.PersistedStore {
                                     return t
                             }
                         }(e, t),
-                        l = v(t),
+                        l = M(t),
                         i = 0;
                     for (let e of n) {
                         let t = null == e || "string" != typeof e.targetId ? null : {
                             targetId: e.targetId,
-                            addedTimestampMs: y(e.addedTimestampMs)
+                            addedTimestampMs: C(e.addedTimestampMs)
                         };
                         null != t && (l.set(t.targetId, t), i += 1)
                     };
                 })(e, t)
-            }(e), L({
+            }(e), F({
                 pruneInvalid: !1
             })
     }
@@ -378,20 +378,20 @@ class Y extends l.Ay.PersistedStore {
         return [S.values(e).map(e => e.targetId), S.version]
     }
     isFavorite(e, t) {
-        return [v(e).has(t), S.version]
+        return [M(e).has(t), S.version]
     }
 }
 let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
     z = new Y(r.h, __OVERLAY__ ? {} : {
         OVERLAY_FRIENDS_WIDGET_SET_FAVORITE: W(function(e) {
-            let t = M(e.tab, e.targetId);
+            let t = v(e.tab, e.targetId);
             if (!e.isFavorite) {
-                let n = v(e.tab).delete(e.targetId),
+                let n = M(e.tab).delete(e.targetId),
                     l = S.delete(t);
                 return n || l
             }
-            let n = y(e.addedTimestampMs ?? v(e.tab).get(e.targetId)?.addedTimestampMs ?? Date.now()),
-                l = v(e.tab);
+            let n = C(e.addedTimestampMs ?? M(e.tab).get(e.targetId)?.addedTimestampMs ?? Date.now()),
+                l = M(e.tab);
             l.set(e.targetId, {
                 targetId: e.targetId,
                 addedTimestampMs: n
@@ -402,13 +402,13 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
                     targetId: e.targetId,
                     addedTimestampMs: n,
                     guildAffinityNormalizationMax: i,
-                    pruneInvalid: T
+                    pruneInvalid: N
                 });
             switch (r.kind) {
                 case "BUILT": {
                     let e = r.row,
                         t = S.get(e.rowId);
-                    (null == t || F(t, e)) && S.set(e.rowId, e);
+                    (null == t || L(t, e)) && S.set(e.rowId, e);
                     break
                 }
                 case "NOT_READY_YET":
@@ -428,7 +428,7 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
         CACHE_LOADED_LAZY: W(H),
         FRIENDS_LIST_POPOUT_MOUNTED: W(H),
         PRESENCE_UPDATES: W(function(e) {
-            let t = v(A.x.FRIENDS);
+            let t = M(A.x.FRIENDS);
             if (0 === t.size) return !1;
             let n = R(),
                 l = !1;
@@ -437,14 +437,14 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
                 null != e && t.has(e) && (l = k({
                     tab: A.x.FRIENDS,
                     targetId: e,
-                    pruneInvalid: T,
+                    pruneInvalid: N,
                     guildAffinityNormalizationMax: n
                 }) || l)
             }
             return l
         }),
         PRESENCES_REPLACE: W(function(e) {
-            let t = v(A.x.FRIENDS);
+            let t = M(A.x.FRIENDS);
             if (0 === t.size) return !1;
             let n = R(),
                 l = !1;
@@ -453,7 +453,7 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
                 null != e && t.has(e) && (l = k({
                     tab: A.x.FRIENDS,
                     targetId: e,
-                    pruneInvalid: T,
+                    pruneInvalid: N,
                     guildAffinityNormalizationMax: n
                 }) || l)
             }
@@ -461,11 +461,11 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
         }),
         LOAD_USER_AFFINITIES_V2_SUCCESS: W(function() {
             return P(A.x.FRIENDS, {
-                pruneInvalid: T
+                pruneInvalid: N
             })
         }),
         LOAD_GUILD_AFFINITIES_SUCCESS: W(function() {
-            let e = T;
+            let e = N;
             return P(A.x.MESSAGES, {
                 pruneInvalid: e
             }) || P(A.x.VOICE, {
@@ -476,11 +476,11 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
         MESSAGE_ACK: W(e => V(e.channelId)),
         CHANNEL_ACK: W(e => V(e.channelId)),
         CHANNEL_UPDATES: W(function(e) {
-            let t = T,
+            let t = N,
                 n = R(),
                 l = !1,
-                i = v(A.x.MESSAGES),
-                r = v(A.x.VOICE);
+                i = M(A.x.MESSAGES),
+                r = M(A.x.VOICE);
             for (let s of e.channels) {
                 let e = s?.id;
                 null != e && (i.has(e) && (l = k({
@@ -504,17 +504,17 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
             if (null == t) return !1;
             let n = !1;
             return n = b(A.x.MESSAGES, t) || n, n = b(A.x.VOICE, t) || n, n = j(t, {
-                pruneInvalid: T
+                pruneInvalid: N
             }) || n
         }),
         RELATIONSHIP_ADD: W(function(e) {
             let t = e.relationship?.id;
-            if (null == t || !v(A.x.FRIENDS).has(t)) return !1;
+            if (null == t || !M(A.x.FRIENDS).has(t)) return !1;
             let n = R();
             return k({
                 tab: A.x.FRIENDS,
                 targetId: t,
-                pruneInvalid: T,
+                pruneInvalid: N,
                 guildAffinityNormalizationMax: n
             })
         }),
@@ -523,7 +523,7 @@ let W = e => (0, f.v$)(e, "OverlayFriendsWidgetFavoritesStore"),
             return null != t && b(A.x.FRIENDS, t)
         }),
         LOGOUT: W(function() {
-            let e = S.size() > 0 || N.size > 0;
-            return S.clear(), N = new Map, T = !1, e
+            let e = S.size() > 0 || p.size > 0;
+            return S.clear(), p = new Map, N = !1, e
         })
     })

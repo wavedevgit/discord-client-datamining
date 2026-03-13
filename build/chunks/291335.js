@@ -1,11 +1,11 @@
 /** chunk id: 291335 params = (module,exports,require) **/
-n.d(t, {
+n.d(l, {
     A: () => j
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var t = n(503698),
+    s = n.n(t),
     a = n(311907),
     r = n(397927),
     o = n(730134),
@@ -22,29 +22,29 @@ var i = n(503698),
 
 function I(e) {
     let {
-        applicationRoleConnection: t,
+        applicationRoleConnection: l,
         locale: n,
-        onApplicationClicked: i,
+        onApplicationClicked: t,
         selectedGuildId: s
-    } = e, a = (0, d.VW)(t, n);
-    return (0, l.jsxs)(l.Fragment, {
-        children: [(0, l.jsx)("div", {
+    } = e, a = (0, d.VW)(l, n);
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)("div", {
             className: f.k_,
-            children: null != t.application.bot ? (0, l.jsx)(o.A, {
-                user: new m.A(t.application.bot),
+            children: null != l.application.bot ? (0, i.jsx)(o.A, {
+                user: new m.A(l.application.bot),
                 size: r._3J.SIZE_16
-            }) : (0, l.jsx)(r._7Z, {
+            }) : (0, i.jsx)(r._7Z, {
                 color: "currentColor",
                 size: "sm"
             })
-        }), (0, l.jsxs)("div", {
+        }), (0, i.jsxs)("div", {
             className: f.Hd,
-            children: [(0, l.jsxs)(r.DUT, {
+            children: [(0, i.jsxs)(r.DUT, {
                 className: f.OB,
                 onClick: () => {
-                    i?.(), (0, c.transitionToGlobalDiscovery)({
+                    t?.(), (0, c.transitionToGlobalDiscovery)({
                         tab: g.GlobalDiscoveryTab.APPS,
-                        applicationId: t.application.id,
+                        applicationId: l.application.id,
                         newSessionState: {
                             entrypoint: {
                                 name: u.sW.APPLICATION_DIRECTORY_URL
@@ -53,23 +53,23 @@ function I(e) {
                         }
                     })
                 },
-                children: [null != t.platform_name ? (0, l.jsx)(r.Text, {
+                children: [null != l.platform_name ? (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: t.platform_name
-                }) : null, null != t.platform_username ? (0, l.jsx)(r.Text, {
+                    children: l.platform_name
+                }) : null, null != l.platform_username ? (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: t.platform_username
-                }) : null, (0, l.jsx)(r.Text, {
+                    children: l.platform_username
+                }) : null, (0, i.jsx)(r.Text, {
                     variant: "text-xxs/normal",
                     color: "text-default",
                     className: f.nk,
                     children: h.intl.format(h.t.zIT9YA, {
-                        applicationHook: () => t.application.name
+                        applicationHook: () => l.application.name
                     })
                 })]
-            }), null != a && a.length > 0 ? (0, l.jsx)("div", {
+            }), null != a && a.length > 0 ? (0, i.jsx)("div", {
                 className: f.yu,
                 children: a
             }) : null]
@@ -79,26 +79,26 @@ function I(e) {
 
 function j(e) {
     let {
-        applicationRoleConnections: t,
+        applicationRoleConnections: l,
         className: n,
-        onClose: i
+        onClose: t
     } = e, {
         trackUserProfileAction: r
     } = (0, x.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
-    return 0 === t.length ? null : (0, l.jsx)("ul", {
+    return 0 === l.length ? null : (0, i.jsx)("ul", {
         className: s()(f.kL, n),
-        children: t.map((e, t) => (0, l.jsx)("li", {
+        children: l.map((e, l) => (0, i.jsx)("li", {
             className: f.FI,
-            children: (0, l.jsx)(I, {
+            children: (0, i.jsx)(I, {
                 applicationRoleConnection: e,
                 locale: o,
                 onApplicationClicked: () => {
                     r({
                         action: "PRESS_APP_CONNECTION"
-                    }), i()
+                    }), t()
                 },
                 selectedGuildId: d ?? void 0
             })
-        }, `${t}-${e.application.id}`))
+        }, `${l}-${e.application.id}`))
     })
 }

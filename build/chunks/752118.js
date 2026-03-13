@@ -90,7 +90,9 @@ let y = function(t) {
         S = r.useCallback(async t => {
             t.preventDefault();
             let e = null;
-            if (M !== (y?.nick ?? "") && ((e = e ?? {}).nick = M), null == e) return void o();
+            if (M !== (y?.nick ?? "") && (e = {
+                    nick: M
+                }), null == e) return void o();
             try {
                 _(!0), await i.Bo.patch({
                     url: h.Rsh.GUILD_MEMBER(c, n.id),

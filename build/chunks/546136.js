@@ -1,26 +1,26 @@
 /** chunk id: 546136 params = (module,exports,require) **/
-n.d(t, {
+n.d(l, {
     A: () => d
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var t = n(503698),
+    s = n.n(t),
     a = n(397927),
     r = n(336092);
 
 function o(e) {
     let {
-        onClick: t
+        onClick: l
     } = e;
-    return (0, l.jsxs)(a.DUT, {
+    return (0, i.jsxs)(a.DUT, {
         className: r.cS,
         "aria-label": "Close editing panel",
-        onClick: t,
-        children: [(0, l.jsx)(a._BQ, {
+        onClick: l,
+        children: [(0, i.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
-        }), (0, l.jsx)(a._BQ, {
+        }), (0, i.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
         })]
@@ -29,20 +29,20 @@ function o(e) {
 
 function d(e) {
     let {
-        onClose: t,
+        onClose: l,
         className: n
     } = e;
-    return (0, l.jsxs)("aside", {
+    return (0, i.jsxs)("aside", {
         className: s()(r.nd, n),
-        children: [(0, l.jsx)("div", {
+        children: [(0, i.jsx)("div", {
             className: r.wx,
-            children: (0, l.jsx)(o, {
-                onClick: t
+            children: (0, i.jsx)(o, {
+                onClick: l
             })
-        }), (0, l.jsx)(a.HOs, {
+        }), (0, i.jsx)(a.HOs, {
             className: r.XG,
             fade: !0,
-            children: (0, l.jsx)("div", {})
+            children: (0, i.jsx)("div", {})
         })]
     })
 }

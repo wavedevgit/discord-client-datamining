@@ -28,15 +28,15 @@ function I(e) {
         targetId: n,
         shouldStopPropagation: f,
         widgetType: I
-    }), p = m ? r.Gg5 : r.yA2, N = (0, r.rdh)(r.LU0.colors.ICON_FEEDBACK_WARNING), T = (0, r.rdh)(r.LU0.colors.ICON_DEFAULT), _ = t === a.x.FRIENDS ? m ? g.intl.string(h.default.Xr8XHk) : g.intl.string(h.default.w1MU8Y) : m ? g.intl.string(h.default.dvUElD) : g.intl.string(h.default.iK1QsY);
+    }), _ = m ? r.Gg5 : r.yA2, p = (0, r.rdh)(r.LU0.colors.ICON_FEEDBACK_WARNING), N = (0, r.rdh)(r.LU0.colors.ICON_DEFAULT), T = t === a.x.FRIENDS ? m ? g.intl.string(h.default.Xr8XHk) : g.intl.string(h.default.w1MU8Y) : m ? g.intl.string(h.default.dvUElD) : g.intl.string(h.default.iK1QsY);
     return (0, l.jsx)(u.S, {
-        tooltipText: _,
+        tooltipText: T,
         showTooltip: A,
         className: E,
         onClick: S,
-        children: (0, l.jsx)(p, {
+        children: (0, l.jsx)(_, {
             size: "sm",
-            color: m ? N.hex() : T.hex()
+            color: m ? p.hex() : N.hex()
         })
     })
 }
