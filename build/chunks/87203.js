@@ -21,7 +21,7 @@ function p() {
     if (!(0, r.L)()) return;
     let e = A.Ay.isVideoEnabled(),
         t = Object.values(A.Ay.getVideoDevices())[0],
-        n = !1 === (t?.disabled ?? !0),
+        n = t?.disabled ?? !0,
         p = A.Ay.supportsInApp(g.O5.VIDEO) && A.Ay.supportsInApp(g.O5.DESKTOP_CAPTURE),
         E = u.A.getChannel(h.A.getChannelId()),
         I = _.default.getCurrentUser()?.id;
@@ -40,8 +40,8 @@ function p() {
                 });
             if (!(0, s.Bw)(E.guild_id) || !p || null == t || t.voiceState.suppress) return
         }
-        return e ? i.A.setVideoEnabled(!1) : !e && n ? (0, c.A)(() => {
+        return e ? i.A.setVideoEnabled(!1) : !1 === n ? (0, c.A)(() => {
             i.A.setVideoEnabled(!0)
-        }, m.BRT.APP, !0) : n || (0, d.A)(), !1
+        }, m.BRT.APP, !0) : (0, d.A)(), !1
     }
 }

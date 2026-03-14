@@ -85,7 +85,7 @@ function x(e) {
                     })]
                 }), (0, i.jsx)("div", {
                     children: (0, i.jsx)(l.DUT, {
-                        onClick: _ ? () => {
+                        onClick: () => {
                             var e;
                             return e = !t.triggerMetadata?.mentionRaidProtectionEnabled, void n({
                                 ...t,
@@ -94,7 +94,7 @@ function x(e) {
                                     mentionRaidProtectionEnabled: e
                                 }
                             })
-                        } : void 0,
+                        },
                         children: (0, i.jsx)(l.P7L, {
                             checked: t.triggerMetadata?.mentionRaidProtectionEnabled,
                             disabled: !_

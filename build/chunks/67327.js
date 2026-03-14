@@ -397,7 +397,7 @@ class J extends n.Component {
                     })]
                 })]
             }), null != n.giftStyle && !o && this.step !== V.frR.ERROR && !A && !e && x && (null == f || null == y ? (0, s.jsx)(q, {
-                openedGift: x && !A && !e
+                openedGift: !0
             }) : (0, s.jsx)(U.A, {
                 confettiTarget: this.modalRef.current,
                 emojiURL: y

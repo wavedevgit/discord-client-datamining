@@ -99,7 +99,7 @@ let ef = e => {
         return n ? (0, i.jsx)(u.DUT, {
             tag: "span",
             className: ex.wz,
-            onClick: () => n && open(em.A.getArticleURL(eR.MVz.AV_ERROR_CODES)),
+            onClick: () => open(em.A.getArticleURL(eR.MVz.AV_ERROR_CODES)),
             children: s
         }) : s
     },

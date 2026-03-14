@@ -31,6 +31,6 @@ function m(e) {
                 isProfileOpen: !_
             }), r.A.toggleUserProfileSidebarSection()
         },
-        selected: _ && g && !n
+        selected: _ && !n
     })
 }

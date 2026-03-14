@@ -69,7 +69,7 @@ function m(e) {
             })
         })]
     }) : a && (t = (0, l.jsxs)(l.Fragment, {
-        children: [a && (0, l.jsx)(_, {
+        children: [(0, l.jsx)(_, {
             width: h,
             className: r()({
                 [o.ce]: !0,

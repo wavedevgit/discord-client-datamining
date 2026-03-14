@@ -69,7 +69,7 @@ function D(e, t, D, O, T) {
         H = (0, A.A)(t, e.id),
         Y = null != F && null != D && h.A.canWithPartialContext(v.xBc.VIEW_CHANNEL, {
             channelId: F
-        }) && !G ? [(!V || V && !w) && h.A.canWithPartialContext(v.xBc.MUTE_MEMBERS, {
+        }) && !G ? [(!V || !w) && h.A.canWithPartialContext(v.xBc.MUTE_MEMBERS, {
             channelId: D
         }) ? (0, l.jsx)(d.sLh, {
             id: "voice-mute",
@@ -79,7 +79,7 @@ function D(e, t, D, O, T) {
             action: () => {
                 !1 === P && X(b.Nj.MUTE), s.A.setServerMute(t, e.id, !P)
             }
-        }, "voice-mute") : null, (!V || V && !w) && h.A.canWithPartialContext(v.xBc.DEAFEN_MEMBERS, {
+        }, "voice-mute") : null, (!V || !w) && h.A.canWithPartialContext(v.xBc.DEAFEN_MEMBERS, {
             channelId: D
         }) ? (0, l.jsx)(d.sLh, {
             id: "voice-deafen",

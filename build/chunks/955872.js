@@ -102,7 +102,7 @@ function G() {
             })
         }), W && !U && (0, i.jsx)(p.d, {
             className: M.EL,
-            showUpsell: W && !z,
+            showUpsell: !z,
             text: L.intl.format(L.t.TmfgI2, {
                 onClick: () => (0, T.K)({
                     analyticsSource: Y

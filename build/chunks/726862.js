@@ -180,7 +180,7 @@ function b(e) {
                         }),
                         label: j.intl.string(j.t.uCebZa)
                     }), n.inOnboarding ? (0, i.jsx)(d.Checkbox, {
-                        checked: !!(n.inOnboarding && n.required),
+                        checked: n.required ?? !1,
                         onChange: e => (0, _.NF)(t, n.id, {
                             required: e
                         }),

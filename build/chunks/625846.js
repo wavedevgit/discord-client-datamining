@@ -863,9 +863,8 @@ function eM(e) {
     let eI = I.length > 0 && !w && (b || null != A),
         eM = !__OVERLAY__ && !L && !w && k && (0 === P.textValue.trim().length || P.textValue.trim() === eb) && 0 === ej.length && !eo;
     i.useLayoutEffect(() => {
-        let e = eI || eM;
-        if (!e) return F(0);
-        null != ey.current && F(e ? ey.current.clientHeight : 0)
+        if (!(eI || eM)) return F(0);
+        null != ey.current && F(ey.current.clientHeight)
     }, [F, eI, eM, ey]);
     let ek = (0, u.Ay)({
             id: `${r.id}-tags-navigator`,

@@ -72,7 +72,7 @@ function es(e) {
         selectedParticipant: c
     } = e, {
         parentAnalyticsLocation: d
-    } = (0, p.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => r?.window ?? window, [r]), N = (0, Q.A)({
+    } = (0, p.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => r?.window ?? window, [r]), N = (0, Q.A)({
         channel: t,
         appContext: n,
         popoutOpen: l,
@@ -238,7 +238,7 @@ function ea(e) {
     let {
         width: R = 0,
         ref: O
-    } = (0, h.Ay)(), L = !b || b && v === $.BRT.POPOUT;
+    } = (0, h.Ay)(), L = !b || v === $.BRT.POPOUT;
     return (0, i.jsx)(p.f5, {
         value: T,
         children: (0, i.jsxs)(f.qh, {
