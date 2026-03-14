@@ -27,7 +27,7 @@ function g(e) {
     let _ = (0, r.bG)([h.A], () => h.A.getGuildId()) === A.YYv,
         f = (0, r.bG)([u.A], () => u.A.theme);
     return _ ? (0, i.jsxs)("div", {
-        className: p.j,
+        className: p.A,
         children: [l.Fr && (0, i.jsx)(c.Ay, {
             children: null
         }), (0, i.jsx)(o.A, {

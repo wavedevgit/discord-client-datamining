@@ -1,16 +1,17 @@
 /** chunk id: 85808 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B3: () => o,
-    Bo: () => c
+    B3: () => c,
+    Bo: () => d
 });
 var i = n(924985),
     s = n(576705),
     l = n(32603),
     r = n(281405),
-    a = n(652215);
+    a = n(652215),
+    o = n(349828);
 
-function o(e, t, n) {
+function c(e, t, n) {
     return {
         hasDivider: ! function(e, t) {
             if (t === l.PU) {
@@ -18,12 +19,12 @@ function o(e, t, n) {
                 return 1 === t.length && t[0] === r.n.GUILD_PREMIUM_PROGRESS_BAR || e.getGuildActionSection().isEmpty()
             }
             return 0 === e.getSections(!1)[t]
-        }(e, n) && (n === l.PU || !!t && (n === l.HP || n !== l.bK && (n === e.recentsSectionNumber || (e.voiceChannelsSectionNumber, !1)))),
+        }(e, n) && (n === l.PU || (e.id === o.Vc ? n !== e.getSections(!1).length - 1 : !!t && (n === l.HP || n !== l.bK && (n === e.recentsSectionNumber || (e.voiceChannelsSectionNumber, !1))))),
         canHaveVoiceSummary: n !== l.PU && n !== l.HP && n !== l.bK && n !== e.recentsSectionNumber && n !== e.voiceChannelsSectionNumber
     }
 }
 
-function c(e) {
+function d(e) {
     let {
         category: t,
         voiceStates: n,
