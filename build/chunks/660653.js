@@ -1,22 +1,22 @@
 /** chunk id: 660653 params = (module,exports,require) **/
 r.d(e, {
     Wb: () => i,
-    uh: () => l
+    uh: () => s
 });
 var n = r(993408),
-    s = r(442759);
+    l = r(442759);
 
 function a(t) {
     var e;
     let r;
     return e = t.items, {
-        firstProfileEffect: (r = new s.Ym(e)).firstProfileEffect,
+        firstProfileEffect: (r = new l.Ym(e)).firstProfileEffect,
         firstAvatarDecoration: r.firstAvatarDecoration,
         firstNameplate: r.firstNameplate
     }
 }
 
-function l(t) {
+function s(t) {
     return function(t) {
         let {
             firstAvatarDecoration: e,

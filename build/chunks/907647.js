@@ -14,21 +14,21 @@ var r = t(397927),
     u = t(848977),
     A = t(995102),
     h = t(288104),
-    _ = t(661504),
-    f = t(50268),
+    f = t(661504),
+    _ = t(50268),
     b = t(133238),
-    g = t(769591),
-    E = t(652215),
+    E = t(769591),
+    g = t(652215),
     p = t(641131),
     j = t(985018);
 let x = (0, c.A)((0, a.A)(function(n) {
     let {
         channel: e,
         onSelect: t
-    } = n, a = (0, u.A)(e), c = (0, s.A)(e), d = (0, b.m)(e), E = (0, b.y)(e), x = (0, A.A)(e), C = (0, f.A)({
+    } = n, a = (0, u.A)(e), c = (0, s.A)(e), d = (0, b.m)(e), g = (0, b.y)(e), x = (0, A.A)(e), v = (0, _.A)({
         id: e.id,
         label: j.intl.string(j.t.gFHI3k)
-    }), v = (0, o.A)(e), N = (0, h.A)(e), y = (0, _.Ay)(e), G = (0, g.os)("ReportToModChannelContextMenu");
+    }), C = (0, o.A)(e), G = (0, h.A)(e), N = (0, f.Ay)(e), y = (0, E.os)("ReportToModChannelContextMenu");
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "report-to-mod-channel-context",
@@ -42,15 +42,15 @@ let x = (0, c.A)((0, a.A)(function(n) {
         }), (0, i.jsx)(r.rXV, {
             children: c
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
-            children: [x, G ? y : N]
+            children: [x, y ? N : G]
         }, "notifications"), (0, i.jsx)(r.rXV, {
-            children: v
-        }), (0, i.jsx)(r.rXV, {
-            children: E
-        }), (0, i.jsx)(r.rXV, {
             children: C
+        }), (0, i.jsx)(r.rXV, {
+            children: g
+        }), (0, i.jsx)(r.rXV, {
+            children: v
         }, "developer-actions")]
     })
 }, {
-    object: E.ZSU.CONTEXT_MENU
+    object: g.ZSU.CONTEXT_MENU
 }), [d.A.CONTEXT_MENU, d.A.REPORT_TO_MOD_CHANNEL_CONTEXT_MENU])

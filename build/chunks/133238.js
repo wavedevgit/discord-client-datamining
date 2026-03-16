@@ -70,7 +70,7 @@ function _(e) {
     ] = l().partition(n, e => "null" === e.channel.id);
 
     function N(n) {
-        r(), (0, f.Jz)(e.id, n)
+        r(), c.A.favoriteGuildEnabled || (0, f.tV)(!0), (0, f.Jz)(e.id, n)
     }
     if (0 === G.length) return O(d.Gg5, () => N(null));
     let S = p.intl.string(v.default.CgmkFJ);

@@ -22,8 +22,8 @@ var r = t(397927),
     m = t(995102),
     b = t(50268),
     p = t(515610),
-    I = t(133238),
-    v = t(795144),
+    v = t(133238),
+    I = t(795144),
     C = t(671470),
     E = t(222311),
     T = t(803664),
@@ -68,7 +68,7 @@ function B(n) {
     }), E = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), T = (0, _.A)(t), y = (0, I.y)(t), V = (0, v.A)(t), D = (0, C.A)(t), G = (0, O.A)({
+    }), T = (0, _.A)(t), y = (0, v.y)(t), V = (0, I.A)(t), D = (0, C.A)(t), G = (0, O.A)({
         channel: t
     }), N = t.isManaged(), R = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -152,13 +152,13 @@ function K(n) {
     }), nm = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), nb = (0, _.A)(t), np = (0, h.A)(e.id), nI = (0, A.A)(t.id), nv = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), nT = (0, G.A)({
+    }), nb = (0, _.A)(t), np = (0, h.A)(e.id), nv = (0, A.A)(t.id), nI = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), nT = (0, G.A)({
         commandType: s.kc.USER,
         commandTargetId: e.id,
         channel: t,
         guildId: void 0,
         onHeightUpdate: H
-    }), ny = (0, I.m)(t), nV = (0, I.y)(t), nD = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
+    }), ny = (0, v.m)(t), nV = (0, v.y)(t), nD = (0, I.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
         channel: t
     }), nU = t.isManaged(), nR = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -175,7 +175,7 @@ function K(n) {
         }), (0, i.jsx)(r.rXV, {
             children: nD
         }), (0, i.jsx)(r.rXV, {
-            children: !nR && nv
+            children: !nR && nI
         }), (0, i.jsxs)(r.rXV, {
             children: [!nR && (0, i.jsxs)(i.Fragment, {
                 children: [w && z, Q, $, !nU && ns, w && nn, w && ne, nt]
@@ -190,7 +190,7 @@ function K(n) {
             }), (0, i.jsx)(r.rXV, {
                 children: a && nx
             }), p && (0, i.jsxs)(r.rXV, {
-                children: [nE, nI, np]
+                children: [nE, nv, np]
             })]
         }), (0, x.A)(t.id) && (0, i.jsx)(r.rXV, {
             children: a && nx
