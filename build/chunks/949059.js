@@ -24,5 +24,5 @@ let h = (0, a.zD)(u.X.EXPERIMENTAL_UNREADS, {
             num_guilds_with_new_setting: r.A.getGuildsArray().filter(e => o.Ay.resolveGuildUnreadSetting(e) === g.e.ONLY_MENTIONS).length
         }))
     },
-    usePredicate: () => (0, i.bG)([d.default, o.Ay], () => d.default.getCurrentUser()?.isStaff() || o.Ay.useNewNotifications)
+    usePredicate: () => (0, i.bG)([d.default, o.Ay], () => d.default.getCurrentUser()?.isStaff() || d.default.getCurrentUser()?.isStaffPersonal() || o.Ay.useNewNotifications)
 })

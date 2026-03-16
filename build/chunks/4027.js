@@ -17,17 +17,17 @@ var l = e(397927),
     f = e(671470),
     g = e(73028),
     j = e(961350),
-    x = e(605691),
-    _ = e(848977),
-    m = e(995102),
-    b = e(652215),
+    _ = e(605691),
+    x = e(848977),
+    b = e(995102),
+    m = e(652215),
     p = e(985018);
 
 function v(n) {
     let {
         channel: t,
         onSelect: a
-    } = n, d = t.isOwner(j.default.getId()), o = (0, _.A)(t), x = (0, m.A)(t), b = (0, c.A)({
+    } = n, d = t.isOwner(j.default.getId()), o = (0, x.A)(t), _ = (0, b.A)(t), m = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
     }), v = (0, s.A)(t), O = (0, h.y)(t), G = (0, A.A)(t), X = (0, f.A)(t), y = d ? (0, i.jsx)(l.Drp, {
@@ -64,11 +64,11 @@ function v(n) {
         }), (0, i.jsx)(l.rXV, {
             children: v
         }), (0, i.jsx)(l.rXV, {
-            children: x
+            children: _
         }), (0, i.jsx)(l.rXV, {
             children: O
         }), (0, i.jsx)(l.rXV, {
-            children: b
+            children: m
         })]
     })
 }
@@ -78,7 +78,7 @@ function O(n) {
         channel: t,
         selected: a,
         onSelect: d
-    } = n, o = t.isOwner(j.default.getId()), A = (0, _.A)(t), f = (0, m.A)(t), b = (0, x.A)(t, a), v = (0, c.A)({
+    } = n, o = t.isOwner(j.default.getId()), A = (0, x.A)(t), f = (0, b.A)(t), m = (0, _.A)(t, a), v = (0, c.A)({
         id: t.id,
         label: p.intl.string(p.t.gFHI3k)
     }), O = (0, s.A)(t), G = (0, h.m)(t), X = (0, h.y)(t), y = o ? (0, i.jsx)(l.Drp, {
@@ -115,7 +115,7 @@ function O(n) {
         }), (0, i.jsx)(l.rXV, {
             children: f
         }), (0, i.jsxs)(l.rXV, {
-            children: [X, b]
+            children: [X, m]
         }), (0, i.jsx)(l.rXV, {
             children: v
         })]
@@ -128,5 +128,5 @@ let G = (0, d.A)((0, a.A)(function(n) {
         ...n
     })
 }, {
-    object: b.ZSU.CONTEXT_MENU
+    object: m.ZSU.CONTEXT_MENU
 }), [u.A.CONTEXT_MENU, u.A.GROUP_DM_MENU])

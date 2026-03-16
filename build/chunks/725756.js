@@ -16,17 +16,17 @@ var r = e(397927),
     g = e(134725),
     h = e(23724),
     _ = e(477190),
-    p = e(307623),
-    b = e(317910),
+    b = e(307623),
+    p = e(317910),
     y = e(848977),
-    C = e(995102),
-    f = e(288104),
+    f = e(995102),
+    C = e(288104),
     x = e(661504),
     j = e(969128),
     v = e(90509),
     E = e(985018);
 
-function G(n) {
+function O(n) {
     let {
         channel: t,
         onSelect: e
@@ -52,12 +52,12 @@ function G(n) {
     })
 }
 
-function O(n) {
+function G(n) {
     let {
         channel: t,
         guild: e,
         onSelect: a
-    } = n, d = (0, y.A)(t), c = (0, C.A)(t), o = (0, f.A)(t), v = (0, h.A)(t), G = (0, g.A)(t), O = (0, b.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, p.A)(t), M = (0, s.A)({
+    } = n, d = (0, y.A)(t), c = (0, f.A)(t), o = (0, C.A)(t), v = (0, h.A)(t), O = (0, g.A)(t), G = (0, p.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, b.A)(t), M = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
     }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), L = (0, x.Ay)(t);
@@ -70,20 +70,20 @@ function O(n) {
         children: [(0, i.jsx)(r.rXV, {
             children: d
         }, "mark-as-read"), (0, i.jsxs)(r.rXV, {
-            children: [I, v, G]
+            children: [I, v, O]
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
             children: [c, U ? L : o]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [O, N, T, m]
+            children: [G, N, T, m]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
             children: M
         }, "developer-actions")]
     })
 }
 let N = (0, a.A)(function(n) {
-    return (0, c.A)() ? (0, i.jsx)(G, {
+    return (0, c.A)() ? (0, i.jsx)(O, {
         ...n
-    }) : (0, i.jsx)(O, {
+    }) : (0, i.jsx)(G, {
         ...n
     })
 }, [d.A.CONTEXT_MENU, d.A.CHANNEL_CATEGORY_MENU])

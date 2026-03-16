@@ -16,8 +16,8 @@ var i = n(397927),
     E = n(73028),
     f = n(961350),
     g = n(914853),
-    h = n(708653),
-    v = n(297460),
+    v = n(708653),
+    h = n(297460),
     I = n(652215),
     N = n(985018);
 let y = (0, d.A)((0, a.A)(function(e) {
@@ -26,16 +26,16 @@ let y = (0, d.A)((0, a.A)(function(e) {
         selected: a,
         onSelect: d,
         widgetType: I
-    } = e, y = t.isOwner(f.default.getId()), M = (0, v.A)({
+    } = e, y = t.isOwner(f.default.getId()), M = (0, h.A)({
         kind: "CHANNEL",
         channel: t,
         guildId: t.getGuildId?.() ?? null
     }, I), S = (0, o.A)(t), _ = (0, c.A)(t), {
         toggleFavoriteItem: b
-    } = (0, h.Ay)(g.x.MESSAGES, t, I), x = (0, s.A)(t, a), p = (0, A.A)({
+    } = (0, v.Ay)(g.x.MESSAGES, t, I), x = (0, s.A)(t, a), D = (0, A.A)({
         id: t.id,
         label: N.intl.string(N.t.gFHI3k)
-    }), D = y ? (0, r.jsx)(i.Drp, {
+    }), p = y ? (0, r.jsx)(i.Drp, {
         id: "instant-invites",
         label: N.intl.string(N.t.ngRFjZ),
         action: () => (0, i.mMO)(async () => {
@@ -56,7 +56,7 @@ let y = (0, d.A)((0, a.A)(function(e) {
         children: [(0, r.jsxs)(i.rXV, {
             children: [S, M, b]
         }), (0, r.jsxs)(i.rXV, {
-            children: [D, (0, r.jsx)(i.Drp, {
+            children: [p, (0, r.jsx)(i.Drp, {
                 id: "edit-gdm",
                 label: N.intl.string(N.t["5Q9+/L"]),
                 action: () => (0, E.U)(t.id, u.A.GROUP_DM_CONTEXT_MENU)
@@ -66,7 +66,7 @@ let y = (0, d.A)((0, a.A)(function(e) {
         }), (0, r.jsx)(i.rXV, {
             children: x
         }), (0, r.jsx)(i.rXV, {
-            children: p
+            children: D
         })]
     })
 }, {

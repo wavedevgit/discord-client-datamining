@@ -18,8 +18,8 @@ var i = n(311907),
     E = n(589051),
     f = n(509295),
     g = n(406595),
-    h = n(652215),
-    v = n(895867),
+    v = n(652215),
+    h = n(895867),
     I = n(985018);
 
 function N(e) {
@@ -27,12 +27,12 @@ function N(e) {
 }
 
 function y(e) {
-    return e ? I.intl.string(v.default.Xr8XHk) : I.intl.string(v.default.w1MU8Y)
+    return e ? I.intl.string(h.default.Xr8XHk) : I.intl.string(h.default.w1MU8Y)
 }
 
 function M(e, t, n) {
     let {
-        hasFriendList: v
+        hasFriendList: h
     } = (0, E.M8)("useOverlayFavoritesToggleMenuItems"), I = "CHANNEL" === t.kind ? t.channel.id : t.userId, M = function(e, t) {
         let [n] = (0, i.bG)([g.A], () => g.A.isFavorite(e, t), [e, t], o.D);
         return n
@@ -46,9 +46,9 @@ function M(e, t, n) {
                     case e === A.x.MESSAGES && r:
                         return !0;
                     case e === A.x.MESSAGES && (0, a.ke)(n.type):
-                        return u.A.can(h.xBc.READ_MESSAGE_HISTORY, n);
+                        return u.A.can(v.xBc.READ_MESSAGE_HISTORY, n);
                     case e === A.x.VOICE && (0, a.ay)(n.type):
-                        return (0, a.ay)(n.type) && u.A.can(h.xBc.VIEW_CHANNEL, n);
+                        return (0, a.ay)(n.type) && u.A.can(v.xBc.VIEW_CHANNEL, n);
                     case e === A.x.FRIENDS:
                     default:
                         return !1
@@ -65,7 +65,7 @@ function M(e, t, n) {
                 throw Error(`Unhandled overlay favorite target: ${String(t)}`)
         }
     });
-    if (!v || !S) return {
+    if (!h || !S) return {
         isFavorite: M,
         toggleFavoriteItem: null,
         addFavoriteItem: null,
@@ -74,7 +74,7 @@ function M(e, t, n) {
     let _ = "CHANNEL" === t.kind ? N : y,
         b = "CHANNEL" === t.kind ? "overlay-favorite-channel" : "overlay-favorite-user",
         x = "CHANNEL" === t.kind ? "overlay-unfavorite-channel" : "overlay-unfavorite-user",
-        p = (0, r.jsx)(l.Drp, {
+        D = (0, r.jsx)(l.Drp, {
             id: b,
             label: _(!1),
             action: () => {
@@ -90,7 +90,7 @@ function M(e, t, n) {
                 })
             }
         }),
-        D = (0, r.jsx)(l.Drp, {
+        p = (0, r.jsx)(l.Drp, {
             id: x,
             label: _(!0),
             color: "danger",
@@ -109,9 +109,9 @@ function M(e, t, n) {
         });
     return {
         isFavorite: M,
-        toggleFavoriteItem: M ? D : p,
-        addFavoriteItem: p,
-        removeFavoriteItem: D
+        toggleFavoriteItem: M ? p : D,
+        addFavoriteItem: D,
+        removeFavoriteItem: p
     }
 }
 

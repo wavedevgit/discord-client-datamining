@@ -1,13 +1,13 @@
 /** chunk id: 586068 params = (module,exports,require) **/
 n.d(t, {
     KJ: () => L,
-    N_: () => R,
+    N_: () => v,
     OS: () => T,
     Y9: () => y,
     c3: () => b,
     lg: () => O,
     nG: () => N,
-    vw: () => v
+    vw: () => R
 });
 var i = n(627968),
     r = n(64700),
@@ -509,7 +509,7 @@ class y extends r.Component {
         })
     }
 }
-class R extends r.Component {
+class v extends r.Component {
     renderContent() {
         let e, t, {
                 link: n,
@@ -558,7 +558,7 @@ class R extends r.Component {
         })
     }
 }
-class v extends r.Component {
+class R extends r.Component {
     renderContent() {
         let e, t, {
             navigationRecord: n,

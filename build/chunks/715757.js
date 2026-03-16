@@ -1,10 +1,10 @@
 /** chunk id: 715757 params = (module,exports,require) **/
 t.d(n, {
     Qo: () => f,
-    V: () => h,
-    W1: () => A,
+    V: () => A,
+    W1: () => h,
     ml: () => v,
-    vb: () => p
+    vb: () => b
 });
 var i = t(64700),
     r = t(311907),
@@ -24,11 +24,11 @@ function f(e) {
     })
 }
 
-function h(e) {
+function A(e) {
     return (0, u.uW)(e)
 }
 
-function A(e) {
+function h(e) {
     return (0, u.xJ)(e)
 }
 
@@ -47,7 +47,7 @@ function v(e) {
     }, [t, n])
 }
 
-function p(e) {
+function b(e) {
     let n = e?.messageSnapshots[0]?.moderatorReport?.reported_user_id;
     null != n && (0, a.wz)(n)
 }

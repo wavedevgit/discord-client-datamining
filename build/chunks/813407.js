@@ -18,10 +18,10 @@ var r = t(397927),
     y = t(661504),
     _ = t(969128),
     N = t(50268),
-    h = t(769591),
-    p = t(914853),
-    v = t(708653),
-    f = t(297460),
+    v = t(769591),
+    f = t(914853),
+    h = t(708653),
+    p = t(297460),
     I = t(652215),
     D = t(985018);
 let C = (0, d.A)((0, a.A)(function(e) {
@@ -32,14 +32,14 @@ let C = (0, d.A)((0, a.A)(function(e) {
         onSelect: d
     } = e, o = (0, A.A)(n), I = (0, u.A)(n), {
         toggleFavoriteItem: C
-    } = (0, v.Ay)(p.x.MESSAGES, n, a), M = (0, f.A)({
+    } = (0, h.Ay)(f.x.MESSAGES, n, a), M = (0, p.A)({
         kind: "CHANNEL",
         channel: n,
         guildId: t.id
     }, a), T = (0, c.A)(n, t), b = (0, _.A)(n), S = (0, E.A)(n), x = (0, g.A)(n), O = (0, N.A)({
         id: n.id,
         label: D.intl.string(D.t.gFHI3k)
-    }), U = (0, s.A)(n), R = (0, y.Ay)(n), L = (0, h.os)("OverlayChannelListTextChannelContextMenu");
+    }), U = (0, s.A)(n), R = (0, y.Ay)(n), L = (0, v.os)("OverlayChannelListTextChannelContextMenu");
     return (0, i.jsxs)(r.W1t, {
         navId: "overlay-channel-context",
         onClose: l.Z_,

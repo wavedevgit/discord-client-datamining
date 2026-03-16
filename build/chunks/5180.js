@@ -1,15 +1,19 @@
 /** chunk id: 5180 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Y: () => r
+    IF: () => d,
+    YC: () => l
 });
 var i = n(349828),
-    s = n(652215),
-    l = n(985018);
+    r = n(652215),
+    a = n(985018);
 
-function r(e) {
+function l(e) {
     if (null != e) {
         var t;
-        return (t = e.id) === i.Vc || t === s.YYv ? l.intl.string(l.t.wMWyci) : e.name
+        return (t = e.id) === i.Vc || t === r.YYv ? a.intl.string(a.t.wMWyci) : e.name
     }
+}
+
+function d(e, t) {
+    return !e.isThread() || t
 }

@@ -37,13 +37,13 @@ var i = t(397927),
     O = t(313998),
     V = t(198229),
     F = t(243949),
-    G = t(972432),
-    k = t(77544),
+    k = t(972432),
+    G = t(77544),
     L = t(566396),
     P = t(571964),
     X = t(708653),
-    w = t(297460),
-    B = t(652215),
+    B = t(297460),
+    w = t(652215),
     H = t(985018);
 let W = (0, d.A)((0, a.A)(function(e) {
     let {
@@ -52,7 +52,7 @@ let W = (0, d.A)((0, a.A)(function(e) {
         channelSelected: a = !1,
         showMute: d = !0,
         showMediaItems: o = !1,
-        showChannelCallItems: B = !1,
+        showChannelCallItems: w = !1,
         showModalItems: W = !0,
         targetIsUser: Y = !1,
         context: J,
@@ -60,7 +60,7 @@ let W = (0, d.A)((0, a.A)(function(e) {
         onHeightUpdate: K,
         onInteraction: $,
         widgetType: q
-    } = e, z = (0, w.A)({
+    } = e, z = (0, B.A)({
         kind: "DM_USER",
         userId: n.id
     }, q), Q = (0, F.A)({
@@ -75,9 +75,9 @@ let W = (0, d.A)((0, a.A)(function(e) {
         context: J
     }), er = (0, b.A)({
         user: n
-    }), ei = (0, k.A)(n.id), el = (0, j.A)(t.id, a), ea = (0, U.A)({
+    }), ei = (0, G.A)(n.id), el = (0, j.A)(t.id, a), ea = (0, U.A)({
         user: n
-    }), ed = (0, u.A)(null, n), es = (0, G.A)(n.id), eu = (0, O.g)(t.id, "OverlayDMUserContextMenu"), eo = (0, O.A)(n, eu), ec = (0, x.A)({
+    }), ed = (0, u.A)(null, n), es = (0, k.A)(n.id), eu = (0, O.g)(t.id, "OverlayDMUserContextMenu"), eo = (0, O.A)(n, eu), ec = (0, x.A)({
         user: n
     }), eA = (0, S.A)({
         user: n
@@ -137,7 +137,7 @@ let W = (0, d.A)((0, a.A)(function(e) {
                 children: [o && eh, W && eE, o && eI, eM, W && ea, ec, eA, eg, W && ev, W && ep, o && em]
             }), (0, r.jsx)(i.rXV, {
                 children: d && e_
-            }), B && (0, r.jsxs)(i.rXV, {
+            }), w && (0, r.jsxs)(i.rXV, {
                 children: [ej, eD, ey]
             })]
         }), (0, E.A)(t.id) && (0, r.jsx)(i.rXV, {
@@ -149,5 +149,5 @@ let W = (0, d.A)((0, a.A)(function(e) {
         })]
     })
 }, {
-    object: B.ZSU.CONTEXT_MENU
+    object: w.ZSU.CONTEXT_MENU
 }), [o.A.CONTEXT_MENU, o.A.OVERLAY, o.A.DM_USER_MENU])

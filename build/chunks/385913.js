@@ -22,12 +22,12 @@ var r = t(397927),
     m = t(995102),
     b = t(50268),
     p = t(515610),
-    v = t(133238),
-    I = t(795144),
+    I = t(133238),
+    v = t(795144),
     C = t(671470),
     E = t(222311),
-    T = t(803664),
-    y = t(29293),
+    y = t(803664),
+    T = t(29293),
     V = t(509302),
     D = t(497600),
     G = t(773699),
@@ -36,8 +36,8 @@ var r = t(397927),
     R = t(486524),
     O = t(631637),
     X = t(984894),
-    S = t(399476),
-    M = t(889460),
+    M = t(399476),
+    S = t(889460),
     P = t(460597),
     F = t(313998),
     Y = t(198229),
@@ -68,7 +68,7 @@ function B(n) {
     }), E = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), T = (0, _.A)(t), y = (0, v.y)(t), V = (0, I.A)(t), D = (0, C.A)(t), G = (0, O.A)({
+    }), y = (0, _.A)(t), T = (0, I.y)(t), V = (0, v.A)(t), D = (0, C.A)(t), G = (0, O.A)({
         channel: t
     }), N = t.isManaged(), R = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -79,7 +79,7 @@ function B(n) {
         onSelect: u,
         onInteraction: c,
         children: [(0, i.jsx)(r.rXV, {
-            children: !(R && !(0, x.A)(t.id)) && T
+            children: !(R && !(0, x.A)(t.id)) && y
         }), (0, i.jsx)(r.rXV, {
             children: D
         }), (0, i.jsx)(r.rXV, {
@@ -91,7 +91,7 @@ function B(n) {
         }), (!R || (0, x.A)(t.id)) && (0, i.jsx)(r.rXV, {
             children: d && j
         }), (0, i.jsx)(r.rXV, {
-            children: y
+            children: T
         }), (0, i.jsx)(r.rXV, {
             children: G
         }), (0, i.jsxs)(r.rXV, {
@@ -126,11 +126,11 @@ function K(n) {
         user: e,
         channelId: t.id,
         context: K
-    }), ne = (0, y.A)({
+    }), ne = (0, T.A)({
         user: e
-    }), nt = (0, W.A)(e.id), ni = (0, R.A)(t.id, d), nr = (0, M.A)({
+    }), nt = (0, W.A)(e.id), ni = (0, R.A)(t.id, d), nr = (0, S.A)({
         user: e
-    }), nl = (0, u.A)(null, e), nd = (0, L.A)(e.id), na = (0, F.g)(t.id, "DMUserContextMenu"), ns = (0, F.A)(e, na), nu = (0, T.A)({
+    }), nl = (0, u.A)(null, e), nd = (0, L.A)(e.id), na = (0, F.g)(t.id, "DMUserContextMenu"), ns = (0, F.A)(e, na), nu = (0, y.A)({
         user: e
     }), nc = (0, V.A)({
         user: e
@@ -143,7 +143,7 @@ function K(n) {
     }), nh = (0, X.A)(e.id, t.id), ng = (0, N.A)({
         user: e,
         location: "DMUserContextMenu"
-    }), nj = (0, S.A)({
+    }), nj = (0, M.A)({
         user: e,
         location: "DMUserContextMenu"
     }), nx = (0, m.A)(t), n_ = (0, b.A)({
@@ -152,13 +152,13 @@ function K(n) {
     }), nm = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), nb = (0, _.A)(t), np = (0, f.A)(e.id), nv = (0, A.A)(t.id), nI = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), nT = (0, G.A)({
+    }), nb = (0, _.A)(t), np = (0, f.A)(e.id), nI = (0, A.A)(t.id), nv = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), ny = (0, G.A)({
         commandType: s.kc.USER,
         commandTargetId: e.id,
         channel: t,
         guildId: void 0,
         onHeightUpdate: H
-    }), ny = (0, v.m)(t), nV = (0, v.y)(t), nD = (0, I.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
+    }), nT = (0, I.m)(t), nV = (0, I.y)(t), nD = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
         channel: t
     }), nU = t.isManaged(), nR = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -171,11 +171,11 @@ function K(n) {
         children: [(0, i.jsx)(r.rXV, {
             children: !(nR && !(0, x.A)(t.id)) && nb
         }), (0, i.jsxs)(r.rXV, {
-            children: [ny, nG]
+            children: [nT, nG]
         }), (0, i.jsx)(r.rXV, {
             children: nD
         }), (0, i.jsx)(r.rXV, {
-            children: !nR && nI
+            children: !nR && nv
         }), (0, i.jsxs)(r.rXV, {
             children: [!nR && (0, i.jsxs)(i.Fragment, {
                 children: [w && z, Q, $, !nU && ns, w && nn, w && ne, nt]
@@ -186,11 +186,11 @@ function K(n) {
             }), (0, i.jsx)(r.rXV, {
                 children: w && nl
             }), (0, i.jsxs)(r.rXV, {
-                children: [nT, c && nC, c && nA, w && nf, c && nh, w && nr, nu, nc, no, w && nj, w && ng]
+                children: [ny, c && nC, c && nA, w && nf, c && nh, w && nr, nu, nc, no, w && nj, w && ng]
             }), (0, i.jsx)(r.rXV, {
                 children: a && nx
             }), p && (0, i.jsxs)(r.rXV, {
-                children: [nE, nv, np]
+                children: [nE, nI, np]
             })]
         }), (0, x.A)(t.id) && (0, i.jsx)(r.rXV, {
             children: a && nx

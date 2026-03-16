@@ -389,7 +389,7 @@ class eh extends r.PureComponent {
     render() {
         let {
             guild: e
-        } = this.props, t = (0, C.Y)(e);
+        } = this.props, t = (0, C.YC)(e);
         return (0, i.jsxs)("nav", {
             className: ec.kL,
             onContextMenu: this.handleContextMenu,

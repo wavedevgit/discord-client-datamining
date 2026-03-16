@@ -17,9 +17,9 @@ var r = t(311907),
     v = t(288104),
     g = t(661504),
     f = t(304694),
-    h = t(671483),
-    I = t(217563),
-    N = t(50268),
+    I = t(671483),
+    N = t(217563),
+    h = t(50268),
     y = t(769591),
     p = t(446600),
     C = t(914853),
@@ -35,21 +35,21 @@ let M = (0, u.A)((0, s.A)(function(e) {
         widgetType: u
     } = e, o = n.isGuildStageVoice(), _ = (0, r.bG)([p.A], () => o ? p.A.getStageInstanceByChannel(n.id) : void 0, [o, n.id]), M = (0, A.A)(n), S = (0, d.A)(n), {
         toggleFavoriteItem: j
-    } = (0, D.Ay)(C.x.VOICE, n, u), O = (0, E.A)(n), U = (0, v.A)(n), G = (0, c.A)(n, t, _), L = (0, b.A)({
+    } = (0, D.Ay)(C.x.VOICE, n, u), O = (0, E.A)(n), U = (0, v.A)(n), L = (0, c.A)(n, t, _), G = (0, b.A)({
         kind: "CHANNEL",
         channel: n,
         guildId: t.id
-    }, u), T = (0, N.A)({
+    }, u), T = (0, h.A)({
         id: n.id,
         label: x.intl.string(x.t.gFHI3k)
-    }), R = (0, f.A)(n), m = (0, h.A)(n, t), k = (0, I.A)(n, t.id), F = (0, y.os)("OverlayChannelListVoiceChannelContextMenu"), H = (0, g.Ay)(n);
+    }), R = (0, f.A)(n), m = (0, I.A)(n, t), k = (0, N.A)(n, t.id), F = (0, y.os)("OverlayChannelListVoiceChannelContextMenu"), H = (0, g.Ay)(n);
     return (0, i.jsxs)(l.W1t, {
         navId: "overlay-channel-context",
         onClose: a.Z_,
         "aria-label": x.intl.string(x.t.Xm41aV),
         onSelect: s,
         children: [(0, i.jsxs)(l.rXV, {
-            children: [L, j, G, S]
+            children: [G, j, L, S]
         }, "primary-actions"), (0, i.jsxs)(l.rXV, {
             children: [k, M, m, R]
         }, "voice-actions"), (0, i.jsxs)(l.rXV, {

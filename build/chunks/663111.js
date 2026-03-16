@@ -57,7 +57,7 @@ function N() {
         draggable: !1
     })) : b ? (e = f.intl.string(f.t.HcoRu0), P = (0, i.jsx)(a.XFE, {
         size: "sm"
-    })) : null != v ? (e = (0, o.Y)(v), P = y ? (0, i.jsx)(a.Gg5, {
+    })) : null != v ? (e = (0, o.YC)(v), P = y ? (0, i.jsx)(a.Gg5, {
         size: "sm"
     }) : (0, i.jsx)(u.Ay, {
         guild: v,

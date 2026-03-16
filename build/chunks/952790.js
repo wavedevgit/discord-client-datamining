@@ -126,7 +126,7 @@ function R(e) {
         variant: "text-md/semibold",
         lineClamp: 1,
         className: T.UU,
-        children: (0, h.Y)(t)
+        children: (0, h.YC)(t)
     })
 }
 let O = [b.Vc, N.gNP];
@@ -140,7 +140,7 @@ function L(e) {
         ariaControls: o,
         ariaExpanded: m,
         children: _
-    } = e, f = (0, h.Y)(l), C = (0, c.bG)([x.A], () => (0, p.K)(x.A, l)), E = s.useCallback(() => {
+    } = e, f = (0, h.YC)(l), C = (0, c.bG)([x.A], () => (0, p.K)(x.A, l)), E = s.useCallback(() => {
         C ? (0, u.mMO)(async () => {
             let {
                 default: e

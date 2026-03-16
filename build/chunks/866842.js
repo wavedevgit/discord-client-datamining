@@ -1,7 +1,7 @@
 /** chunk id: 866842 params = (module,exports,require) **/
 n.d(t, {
     Om: () => y,
-    g3: () => R
+    g3: () => v
 }), n(321073);
 var i = n(64700),
     r = n(735438),
@@ -33,9 +33,9 @@ function y() {
     let e = function() {
         let {
             hasAccess: e
-        } = (0, d.TW)("FavoritesGuildChannelList"), [t, n] = i.useState(() => R()), r = i.useMemo(() => R({}), []);
+        } = (0, d.TW)("FavoritesGuildChannelList"), [t, n] = i.useState(() => v()), r = i.useMemo(() => v({}), []);
         return i.useEffect(() => {
-            let e = a().throttle(() => n(R()), 100);
+            let e = a().throttle(() => n(v()), 100);
             return O.forEach(t => t.addChangeListener(e)), () => O.forEach(t => t.removeChangeListener(e))
         }, []), e ? t : r
     }();
@@ -51,7 +51,7 @@ function y() {
     }
 }
 
-function R(e) {
+function v(e) {
     let t = e ?? o.A.getFavoriteChannels(),
         n = S.Ay.isGuildCollapsed(N.Vc),
         i = m.A.getChannelId(),
@@ -143,10 +143,10 @@ function R(e) {
                 }
             }
         }).filter(e => null != e).value(),
-        R = 0;
+        v = 0;
     for (let e of [O, ...y])
-        for (let t of (e.position = ++R, e.channelList)) t.position = ++R;
-    let v = {
+        for (let t of (e.position = ++v, e.channelList)) t.position = ++v;
+    let R = {
             isEmpty: () => !0,
             getRows: () => [],
             getRow: () => null
@@ -178,7 +178,7 @@ function R(e) {
                 channel: n.channelList[t]
             }
         },
-        getGuildActionSection: () => v,
+        getGuildActionSection: () => R,
         getChannelNoticeSection: () => G,
         getFirstVoiceChannel: () => null,
         getSectionRowsFromChannel(e) {

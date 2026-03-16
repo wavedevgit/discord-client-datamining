@@ -22,27 +22,25 @@ let p = r().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
         t = E.Ay.getFlattenedGuildIds(),
         {
-            enabled: n,
-            hasHigherPrivileges: i
+            enabled: n
         } = d.o.getConfig({
             location: "navigateToServer"
         }),
-        r = (0, s.dD)(a.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
-        p = (0, l.k8)(a.M.FAVORITES_SERVER_ONBOARDING_INTRO),
-        f = function(e) {
+        i = (0, s.dD)(a.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM),
+        r = (0, l.k8)(a.M.FAVORITES_SERVER_ONBOARDING_INTRO),
+        p = function(e) {
             let t = _.A.getState().guildId;
             if (null == t) return -2;
             if (t === C.YYv) return -1;
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (f += e) || (0, c.J)(o.A, g.default, A.A, {
+    if (-1 !== (p += e) || (0, c.J)(o.A, g.default, A.A, {
             favoritesGuildXPEnabled: n,
-            hasHigherPrivileges: i,
-            isMenuItemDCSelected: r,
-            isIntroDCDismissed: p
-        }) || (f += e), -3 === f && (f = t.length - 1), f >= t.length || -2 === f) return void(0, h.a)(I.A.getHomeLink());
-    let m = -1 === f ? C.YYv : t[f],
-        S = u.A.getChannelId(m);
-    (0, h.i)(m, S === m ? null : S, !1)
+            isMenuItemDCSelected: i,
+            isIntroDCDismissed: r
+        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, h.a)(I.A.getHomeLink());
+    let f = -1 === p ? C.YYv : t[p],
+        m = u.A.getChannelId(f);
+    (0, h.i)(f, m === f ? null : m, !1)
 }, C.ugG)

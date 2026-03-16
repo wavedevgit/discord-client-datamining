@@ -1,6 +1,6 @@
 /** chunk id: 297460 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => v
 });
 var r = n(627968);
 n(64700);
@@ -17,10 +17,10 @@ var i = n(311907),
     f = n(895867),
     g = n(985018);
 
-function h(e, t) {
+function v(e, t) {
     let {
         hasChat: n
-    } = (0, o.M8)("useOverlayTextChatToggleMenuItem"), h = "DM_USER" === e.kind ? e.userId : null, v = (0, i.bG)([d.A], () => null != h ? d.A.getDMFromUserId(h) ?? null : null, [h]), I = "CHANNEL" === e.kind ? e.channel.id : v, N = (0, i.bG)([s.A], () => {
+    } = (0, o.M8)("useOverlayTextChatToggleMenuItem"), v = "DM_USER" === e.kind ? e.userId : null, h = (0, i.bG)([d.A], () => null != v ? d.A.getDMFromUserId(v) ?? null : null, [v]), I = "CHANNEL" === e.kind ? e.channel.id : h, N = (0, i.bG)([s.A], () => {
         if (null == I) return !1;
         let [e] = s.A.getSessionEntries();
         for (let t of e)
@@ -69,7 +69,7 @@ function h(e, t) {
                                     kind: c.bB.DM_USER,
                                     userId: e.userId,
                                     messageId: null,
-                                    existingChannelId: v
+                                    existingChannelId: h
                                 },
                                 source: A.B.MANUAL,
                                 widgetType: t

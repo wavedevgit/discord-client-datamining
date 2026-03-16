@@ -1,19 +1,18 @@
 /** chunk id: 458829 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    x: () => d
+    x: () => o
 });
 var i = n(284009),
-    s = n.n(i),
-    l = n(827343),
-    r = n(956793),
-    a = n(430452),
-    o = n(108713),
-    c = n(350701);
+    l = n.n(i),
+    r = n(827343),
+    a = n(956793),
+    d = n(430452),
+    u = n(108713),
+    s = n(350701);
 
-function d(e, t) {
+function o(e, t) {
     let n = e.sessionId ?? "";
-    (0, o.Fc)(n), (0, o.ZG)();
+    (0, u.Fc)(n), (0, u.ZG)();
     let i = t ?? e.channelId;
-    s()(null != i, "attempted to transfer to unknown channel"), e.selfMute !== a.Ay.isSelfMute() && l.A.toggleSelfMute(), e.selfDeaf !== a.Ay.isSelfDeaf() && l.A.toggleSelfDeaf(), (0, c.A)(i, "discord_client", n), r.default.selectVoiceChannel(i, !1)
+    l()(null != i, "attempted to transfer to unknown channel"), e.selfMute !== d.Ay.isSelfMute() && r.A.toggleSelfMute(), e.selfDeaf !== d.Ay.isSelfDeaf() && r.A.toggleSelfDeaf(), (0, s.A)(i, "discord_client", n), a.default.selectVoiceChannel(i, !1)
 }
