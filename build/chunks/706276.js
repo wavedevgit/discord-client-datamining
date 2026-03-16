@@ -91,7 +91,7 @@ let x = () => {
                 status: d.lT7.PAID
             })), l !== o.g.PREVIEW && null !== C && A(null)
         }, [l, y, j, f, C]);
-        let D = n.useCallback(async () => {
+        let M = n.useCallback(async () => {
             N(!0), await (0, r.mMO)(async () => t => (0, a.jsx)(c.m, {
                 ...t,
                 onClose: () => {
@@ -136,8 +136,8 @@ let x = () => {
             }))
         }, [e, y, f, C, P, _, l, j]);
         return (0, n.useEffect)(() => {
-            I && D()
-        }, [l, I, D]), (0, a.jsxs)(s.LB, {
+            I && M()
+        }, [l, I, M]), (0, a.jsxs)(s.LB, {
             children: [(0, a.jsx)(s.MG, {
                 children: (0, a.jsx)(r.l6P, {
                     label: "Premium Subscription",

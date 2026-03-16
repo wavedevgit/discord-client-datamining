@@ -16,7 +16,7 @@ var r = t(311907),
 function A(n) {
     let {
         channel: e
-    } = n, t = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(e), h = (0, d.y)(e), f = (0, c.Q)(e), g = (0, u.m)(e), j = (0, a.B)(e);
+    } = n, t = (0, r.bG)([o.default], () => o.default.getCurrentUser()), A = (0, s.P)(e), f = (0, d.y)(e), h = (0, c.Q)(e), g = (0, u.m)(e), j = (0, a.B)(e);
     return t?.isStaff() !== !0 ? null : (0, i.jsxs)(l.Drp, {
         id: "dev tools",
         label: "Dev Tools",
@@ -25,9 +25,9 @@ function A(n) {
         }), (0, i.jsx)(l.rXV, {
             children: g
         }), (0, i.jsx)(l.rXV, {
-            children: f
-        }), (0, i.jsx)(l.rXV, {
             children: h
+        }), (0, i.jsx)(l.rXV, {
+            children: f
         }), (0, i.jsx)(l.rXV, {
             children: j
         })]

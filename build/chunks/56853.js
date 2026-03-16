@@ -161,7 +161,8 @@ function B(e) {
                     width: 1320,
                     height: 370
                 },
-                containerClassName: P.l1
+                containerClassName: P.l1,
+                imageClassName: P.c8
             })
         }), (0, a.jsx)("div", {
             className: P.Lw

@@ -51,6 +51,7 @@ function _(e) {
                 type: "icon",
                 icon: e
             },
+            iconLeft: e,
             action: n,
             children: t
         })

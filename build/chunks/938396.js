@@ -43,11 +43,11 @@ function N() {
     (0, E.RQ)(), (0, h.pX)(`${T.BV.NITRO_HOME}?section=${v.L}`)
 }
 
-function D() {
+function M() {
     (0, E.gP)(), (0, h.pX)(`${T.BV.NITRO_HOME}?section=${v.L}`)
 }
 
-function M() {
+function D() {
     (0, E.b)(), window.open(y.A.getArticleURL(j.MVz.ORBS_FAQ), "_blank")
 }
 
@@ -129,9 +129,9 @@ function O(e) {
                             color: _ ? "text-default" : "text-muted",
                             className: P.CU,
                             children: _ ? A.intl.format(C.default.juvXqj, {
-                                deepLinkToNitroOrbs: D
+                                deepLinkToNitroOrbs: M
                             }) : A.intl.format(C.default.fhAVek, {
-                                helpdeskArticle: M
+                                helpdeskArticle: D
                             })
                         })]
                     })]

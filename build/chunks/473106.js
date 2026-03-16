@@ -49,14 +49,14 @@ let N = {
         name: "Checkout Test Panel",
         id: "checkout-test-panel",
         component: () => {
-            let [e, t] = n.useState(_.pe.TIER_2), [l, f] = n.useState(null), v = (0, o.yK)([A.A], () => A.A.getGuildsArray()), [N] = (0, o.yK)([P.A], () => [P.A.getPremiumSubscription()]), D = v.map(e => ({
+            let [e, t] = n.useState(_.pe.TIER_2), [l, f] = n.useState(null), v = (0, o.yK)([A.A], () => A.A.getGuildsArray()), [N] = (0, o.yK)([P.A], () => [P.A.getPremiumSubscription()]), M = v.map(e => ({
                 id: e.id,
                 value: e,
                 label: e.name
-            })), [M, O] = n.useState(D.length > 0 ? D[0].value : null), [L, B] = n.useState(""), [w, V] = n.useState({
+            })), [D, O] = n.useState(M.length > 0 ? M[0].value : null), [L, B] = n.useState(""), [w, V] = n.useState({
                 plan_id: _.gD.PREMIUM_MONTH_TIER_2,
                 gift: "true"
-            }), U = "true" !== w.gift && null != N, [G, H] = n.useState(D.length > 0 ? D[0].value : null), {
+            }), U = "true" !== w.gift && null != N, [G, H] = n.useState(M.length > 0 ? M[0].value : null), {
                 analyticsLocations: F
             } = (0, x.Ay)(h.A.PAYMENT_FLOW_TEST_PAGE), [$, W] = n.useState(""), [Y, z] = n.useState(R.dJq), {
                 balance: q,
@@ -147,13 +147,13 @@ let N = {
                             gap: 8,
                             children: [(0, a.jsx)(c.l6P, {
                                 label: "Boost",
-                                value: M,
-                                options: D,
+                                value: D,
+                                options: M,
                                 onSelectionChange: O,
                                 selectionMode: "single",
                                 fullWidth: !0
-                            }), null != M ? (0, a.jsx)(y.A, {
-                                guild: M,
+                            }), null != D ? (0, a.jsx)(y.A, {
+                                guild: D,
                                 analyticsLocation: {}
                             }) : (0, a.jsx)("div", {
                                 children: "No Guild to boost"
@@ -289,7 +289,7 @@ let N = {
                             children: [(0, a.jsx)(c.l6P, {
                                 label: "Premium Server Subscription For",
                                 value: G,
-                                options: D,
+                                options: M,
                                 onSelectionChange: H,
                                 selectionMode: "single",
                                 fullWidth: !0

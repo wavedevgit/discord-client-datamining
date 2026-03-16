@@ -13,8 +13,8 @@ var r = t(397927),
     c = t(793574),
     o = t(810845),
     A = t(854182),
-    h = t(734337),
-    f = t(465424),
+    f = t(734337),
+    h = t(465424),
     g = t(855187),
     j = t(479335),
     x = t(343328),
@@ -62,7 +62,7 @@ function B(n) {
     }), A = (0, U.A)({
         user: e,
         context: s
-    }), h = (0, W.A)(e.id), f = (0, F.g)(t.id, "DMUserContextMenu"), g = (0, F.A)(e, f), j = (0, m.A)(t), p = (0, b.A)({
+    }), f = (0, W.A)(e.id), h = (0, F.g)(t.id, "DMUserContextMenu"), g = (0, F.A)(e, h), j = (0, m.A)(t), p = (0, b.A)({
         id: e.id,
         label: J.intl.string(J.t["/AXYnE"])
     }), E = (0, b.A)({
@@ -86,7 +86,7 @@ function B(n) {
             children: V
         }), (0, i.jsxs)(r.rXV, {
             children: [!R && (0, i.jsxs)(i.Fragment, {
-                children: [A, !N && g, h]
+                children: [A, !N && g, f]
             }), (0, x.A)(t.id) && o]
         }), (!R || (0, x.A)(t.id)) && (0, i.jsx)(r.rXV, {
             children: d && j
@@ -120,7 +120,7 @@ function K(n) {
     }), $ = (0, U.A)({
         user: e,
         context: K
-    }), Q = (0, f.D)({
+    }), Q = (0, h.D)({
         userId: e.id
     }), nn = (0, D.A)({
         user: e,
@@ -136,11 +136,11 @@ function K(n) {
         user: e
     }), no = (0, P.A)({
         user: e
-    }), nA = (0, Y.A)(e.id), nh = (0, j.u)({
+    }), nA = (0, Y.A)(e.id), nf = (0, j.u)({
         userId: e.id,
         channelId: t.id,
         guildId: t.getGuildId()
-    }), nf = (0, X.A)(e.id, t.id), ng = (0, N.A)({
+    }), nh = (0, X.A)(e.id, t.id), ng = (0, N.A)({
         user: e,
         location: "DMUserContextMenu"
     }), nj = (0, S.A)({
@@ -152,7 +152,7 @@ function K(n) {
     }), nm = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), nb = (0, _.A)(t), np = (0, h.A)(e.id), nv = (0, A.A)(t.id), nI = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), nT = (0, G.A)({
+    }), nb = (0, _.A)(t), np = (0, f.A)(e.id), nv = (0, A.A)(t.id), nI = (0, E.A)(e), nC = (0, g.A)(e.id), nE = (0, o.A)(t.id, e.id), nT = (0, G.A)({
         commandType: s.kc.USER,
         commandTargetId: e.id,
         channel: t,
@@ -186,7 +186,7 @@ function K(n) {
             }), (0, i.jsx)(r.rXV, {
                 children: w && nl
             }), (0, i.jsxs)(r.rXV, {
-                children: [nT, c && nC, c && nA, w && nh, c && nf, w && nr, nu, nc, no, w && nj, w && ng]
+                children: [nT, c && nC, c && nA, w && nf, c && nh, w && nr, nu, nc, no, w && nj, w && ng]
             }), (0, i.jsx)(r.rXV, {
                 children: a && nx
             }), p && (0, i.jsxs)(r.rXV, {

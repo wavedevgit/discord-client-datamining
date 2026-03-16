@@ -8,7 +8,6 @@ l.d(t, {
     Z1: () => h,
     lz: () => T,
     mi: () => R,
-    n2: () => k,
     s2: () => A,
     t$: () => p,
     yJ: () => j,
@@ -407,46 +406,5 @@ function R() {
             size: "md",
             text: "Open File Upload Upsell"
         })
-    })
-}
-let _ = [{
-    id: "ended",
-    label: "Reverse Trial Ended",
-    value: d.e.REVERSE_TRIAL_ENDED_UPSELL
-}, {
-    id: "followup",
-    label: "Reverse Trial Followup",
-    value: d.e.REVERSE_TRIAL_FOLLOWUP_UPSELL
-}];
-
-function k() {
-    let [e, t] = n.useState(d.e.REVERSE_TRIAL_ENDED_UPSELL), r = n.useCallback(() => {
-        (0, i.mMO)(async () => {
-            let {
-                default: t
-            } = await l.e("78723").then(l.bind(l, 199630));
-            return l => (0, a.jsx)(t, {
-                upsellType: e,
-                ...l
-            })
-        })
-    }, [e]);
-    return (0, a.jsxs)(o.LB, {
-        children: [(0, a.jsx)(o.MG, {
-            children: (0, a.jsx)(i.l6P, {
-                label: "Upsell Type",
-                placeholder: "Select type",
-                onSelectionChange: e => t(e),
-                value: e,
-                options: _,
-                selectionMode: "single",
-                fullWidth: !0
-            })
-        }), (0, a.jsx)(i.Button, {
-            onClick: r,
-            variant: "primary",
-            size: "md",
-            text: "Open Reverse Trial Upsell"
-        })]
     })
 }

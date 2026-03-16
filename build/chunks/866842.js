@@ -30,7 +30,7 @@ var i = n(64700),
 let O = 21552 == n.j ? [l.Ay, o.A, _.Ay, u.A, A.A, g.A, I.A, C.A, p.A, f.Ay, m.A, S.Ay] : null;
 
 function y() {
-    let e, t = function() {
+    let e = function() {
         let {
             hasAccess: e
         } = (0, d.TW)("FavoritesGuildChannelList"), [t, n] = i.useState(() => R()), r = i.useMemo(() => R({}), []);
@@ -40,10 +40,14 @@ function y() {
         }, []), e ? t : r
     }();
     return {
-        guildChannels: t,
-        hasShownFavoritedChannels: (e = !1, t.forEachShownChannel(() => {
-            e = !0
-        }), e)
+        guildChannels: e,
+        hasShownFavoritedChannels: function(e) {
+            if (e.getSections().length > b.TF) return !0;
+            let t = !1;
+            return e.forEachShownChannel(() => {
+                t = !0
+            }), t
+        }(e)
     }
 }
 

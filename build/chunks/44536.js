@@ -33,7 +33,7 @@ let O = (0, a.A)(function(e) {
     } = e, a = (0, c.A)(n), d = (0, h.A)(n), O = (0, g.A)(n), I = (0, s.A)(n), G = (0, p.A)(n), N = (0, f.A)(n), S = (0, o.A)({
         id: n.id,
         label: R.intl.string(R.t.DQ797g)
-    }), j = (0, A.A)(n, "Context Menu"), x = (0, b.A)(n), F = (0, E.A)(n), U = (0, T.A)(n), w = (0, m.A)(n), L = (0, C.A)(n.id), M = (0, v.A)(n), P = (0, y.A)(n), D = (0, u.m)(n), Y = (0, u.y)(n), J = (0, _.A)(n);
+    }), j = (0, A.A)(n, "Context Menu"), x = (0, b.A)(n), F = (0, E.A)(n), U = (0, T.A)(n), L = (0, m.A)(n), w = (0, C.A)(n.id), M = (0, v.A)(n), P = (0, y.A)(n), D = (0, u.m)(n), Y = (0, u.y)(n), J = (0, _.A)(n);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -45,7 +45,7 @@ let O = (0, a.A)(function(e) {
         }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
             children: D
         }), (0, i.jsxs)(r.rXV, {
-            children: [j, M, I, G, w, L, a]
+            children: [j, M, I, G, L, w, a]
         }, "thread-actions"), (0, i.jsxs)(r.rXV, {
             children: [O, U]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
