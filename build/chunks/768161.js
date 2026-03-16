@@ -124,7 +124,7 @@ function I(t) {
             T(!0), N(null);
             try {
                 let e = await (0, p.Ng)(t, U ? void 0 : S.trim(), U ? j ?? void 0 : void 0);
-                i?.(), l(), g.default.track(m.HAw.GIFT_CARD_REDEMPTION_COMPLETED, {
+                i?.(e), l(), g.default.track(m.HAw.GIFT_CARD_REDEMPTION_COMPLETED, {
                     source: b,
                     load_id: I
                 }), o && (0, p.cV)({

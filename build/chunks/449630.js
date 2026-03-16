@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(206835),
     A = n(182592),
     C = n(183555),
-    T = n(950191),
-    y = n(657331),
+    y = n(950191),
+    T = n(657331),
     S = n(718019),
     E = n(31432),
     N = n(915614),
@@ -65,7 +65,7 @@ function ei(e) {
         setPopoutRef: s,
         highlightBadge: ei,
         className: es
-    } = e, el = __OVERLAY__, er = (0, T.Ay)(t.id, void 0), {
+    } = e, el = __OVERLAY__, er = (0, y.Ay)(t.id, void 0), {
         analyticsLocations: eo
     } = (0, p.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ed = (0, C.pb)({
         layout: "ACCOUNT_POPOUT",
@@ -97,8 +97,8 @@ function ei(e) {
             analyticsLocations: eo
         }),
         eC = (0, W.TW)(t),
-        eT = i.useRef(null),
         ey = i.useRef(null),
+        eT = i.useRef(null),
         eS = i.useRef((0, H.A)(e => e.shouldRenderTenureLevelUp)),
         eE = i.useMemo(() => (0, _.A)(), []),
         [eN, eI] = i.useState(!0);
@@ -108,7 +108,7 @@ function ei(e) {
         }, 500)
     }, []);
     let eR = e => {
-            n?.(), (0, y.openUserProfileModal)({
+            n?.(), (0, T.openUserProfileModal)({
                 customStatusPrompt: eE,
                 sourceAnalyticsLocations: eo,
                 ...ed,
@@ -162,7 +162,7 @@ function ei(e) {
                             themeType: ee.d.POPOUT,
                             onOpenProfile: el ? void 0 : eR
                         }), (0, a.jsx)(P.A, {
-                            ref: eT,
+                            ref: ey,
                             user: t,
                             themeType: ee.d.POPOUT,
                             onCloseProfile: n,
@@ -222,7 +222,7 @@ function ei(e) {
                                         trailing: eM ? (0, a.jsx)(u.LpS, {
                                             text: et.intl.string(et.t.y2b7CA)
                                         }) : void 0,
-                                        ref: ey
+                                        ref: eT
                                     }), (0, a.jsx)($.N3, {
                                         action: "PRESS_SET_STATUS",
                                         label: (0, a.jsx)(q.A, {}),
@@ -309,7 +309,7 @@ function ei(e) {
                         isHovering: eh
                     })]
                 }), eL && eB ? (0, a.jsx)(z.A, {
-                    targetElementRef: ey,
+                    targetElementRef: eT,
                     onClose: n
                 }) : null, (0, a.jsx)(b.A, {})]
             })

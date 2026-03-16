@@ -23,8 +23,8 @@ var a = n(627968),
     j = n(239093),
     A = n(536242),
     C = n(985018),
-    T = n(62959),
-    y = n(700129);
+    y = n(62959),
+    T = n(700129);
 
 function S(e) {
     let {
@@ -87,7 +87,7 @@ let E = function(e) {
         dismissable: E,
         graphic: {
             type: "image",
-            src: y.A
+            src: T.A
         },
         title: (0, f.ST)(n),
         subtitle: (0, f.mK)(n, () => {
@@ -111,7 +111,7 @@ let E = function(e) {
                     right: 12
                 },
                 align: "center",
-                className: T.W,
+                className: y.W,
                 children: [(0, a.jsx)(o.mir, {
                     size: "lg",
                     color: "currentColor"

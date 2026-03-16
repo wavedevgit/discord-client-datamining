@@ -34,7 +34,7 @@ let C = async () => {
     } catch (e) {
         return []
     }
-}, T = async (e, t) => {
+}, y = async (e, t) => {
     try {
         await r.Bo.post({
             url: v.Rsh.CREATE_USER_OFFER(e, t),
@@ -43,7 +43,7 @@ let C = async () => {
     } catch {} finally {
         await (0, u._D)()
     }
-}, y = async (e, t) => {
+}, T = async (e, t) => {
     try {
         await r.Bo.del({
             url: v.Rsh.UPDATE_USER_OFFER(e, t),
@@ -91,11 +91,11 @@ function I(e) {
         offer: t,
         offerOptions: n,
         forceRefetch: s
-    } = e, [o, m] = i.useState(!1), [h, _] = i.useState(!1), [f, A] = i.useState(!1), [C, T] = i.useState(!1);
+    } = e, [o, m] = i.useState(!1), [h, _] = i.useState(!1), [f, A] = i.useState(!1), [C, y] = i.useState(!1);
     i.useEffect(() => {
-        f && T(!0);
+        f && y(!0);
         let e = setTimeout(() => {
-            T(!1)
+            y(!1)
         }, 500);
         return () => {
             clearTimeout(e)
@@ -267,7 +267,7 @@ function I(e) {
             })]
         }), (0, a.jsx)(d.DUT, {
             onClick: async () => {
-                A(!0), await y(S, "trial"), s(), A(!1)
+                A(!0), await T(S, "trial"), s(), A(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -300,7 +300,7 @@ function R(e) {
     }, [_]);
     let {
         id: C,
-        expires_at: T,
+        expires_at: y,
         applied_at: S,
         discount_id: E,
         discount: N
@@ -309,7 +309,7 @@ function R(e) {
             value: t
         } = e;
         return t === E
-    })?.label ?? "Unknown", R = null != T, O = null != T && new Date(T).getTime() < Date.now(), k = async () => {
+    })?.label ?? "Unknown", R = null != y, O = null != y && new Date(y).getTime() < Date.now(), k = async () => {
         f(!0), R ? await w({
             expiresAt: null
         }) : await (0, u.u1)(void 0, t), s(), f(!1)
@@ -408,7 +408,7 @@ function R(e) {
                 children: ["Expires (", (0, c.A)(), "):"]
             }), (0, a.jsx)("input", {
                 type: "datetime-local",
-                value: (0, x.Xm)(T),
+                value: (0, x.Xm)(y),
                 onChange: e => w({
                     expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
                 })
@@ -437,7 +437,7 @@ function R(e) {
         }), (0, a.jsx)(d.DUT, {
             className: j.aR,
             onClick: async () => {
-                f(!0), await y(C, "discount"), s(), f(!1)
+                f(!0), await T(C, "discount"), s(), f(!1)
             },
             children: (0, a.jsx)(d.ucK, {
                 size: "md",
@@ -454,7 +454,7 @@ function R(e) {
 }
 
 function O() {
-    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, p] = i.useState(), [x, g] = i.useState([]), [b, y] = i.useState([]), [O, k] = i.useState(!0), [w, D] = i.useState(10080), [M, P] = i.useState([]), {
+    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, p] = i.useState(), [x, g] = i.useState([]), [b, T] = i.useState([]), [O, k] = i.useState(!0), [w, D] = i.useState(10080), [M, P] = i.useState([]), {
         entitlements: U,
         deleteFractionalPremium: L,
         refreshEntitlementList: B
@@ -477,13 +477,13 @@ function O() {
         })
     }, [e, n, l, c, O]), i.useEffect(() => {
         O && (k(!1), h.A.forceReset(), (0, u._D)(), S().then(e => {
-            g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), y(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
+            g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), T(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
         }))
     }, [O]);
     let G = async () => {
-        null != l && (await T(l, "trial"), k(!0))
+        null != l && (await y(l, "trial"), k(!0))
     }, F = async () => {
-        null != c && (await T(c, "discount"), k(!0))
+        null != c && (await y(c, "discount"), k(!0))
     }, V = async () => {
         await E(), k(!0)
     }, W = async () => {
