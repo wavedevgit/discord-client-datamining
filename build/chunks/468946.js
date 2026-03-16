@@ -3,8 +3,8 @@ n.d(t, {
     A: () => g
 });
 var a = n(627968),
-    s = n(281445),
-    l = n(158954),
+    l = n(281445),
+    s = n(158954),
     i = n(736653),
     r = n(27023),
     d = n(818348),
@@ -16,7 +16,7 @@ var a = n(627968),
 
 function v() {
     let e = (0, i.Ay)();
-    return (0, a.jsx)(l.EYj, {
+    return (0, a.jsx)(s.EYj, {
         variant: "text-sm/medium",
         className: u.Q,
         children: c.intl.format(o.default.fcJiY8, {
@@ -33,5 +33,5 @@ function g() {
     let {
         gameProvider: e
     } = (0, r.bv)();
-    return e === s.X.SHOCKBYTE ? (0, a.jsx)(v, {}) : null
+    return e === l.X.SHOCKBYTE ? (0, a.jsx)(v, {}) : null
 }

@@ -29,10 +29,12 @@ function v() {
         let t = p[e];
         null != t ? c({
             previewToolKey: t.url,
-            palette: t.palette
+            palette: t.palette,
+            skuId: "0"
         }) : c(t => null == t ? {
             previewToolKey: e,
-            palette: m.Wj
+            palette: m.Wj,
+            skuId: "0"
         } : {
             ...t,
             previewToolKey: e

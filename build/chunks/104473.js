@@ -3,10 +3,10 @@ r.d(t, {
     AZ: () => u,
     kz: () => s
 });
-var o = r(627968);
+var a = r(627968);
 r(64700);
-var n = r(397927),
-    a = r(476066),
+var o = r(397927),
+    n = r(476066),
     i = r(6503);
 let s = "https://cdn.discordapp.com/assets/media_channel/admin_edu_discord_birthday.mp4";
 
@@ -14,21 +14,21 @@ function l(e) {
     let {
         orientation: t,
         thumbnailUrl: r,
-        onReplay: n
+        onReplay: o
     } = e;
-    return (0, o.jsxs)(o.Fragment, {
-        children: [(0, o.jsx)(i.nY, {
+    return (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(i.nY, {
             url: r
-        }), (0, o.jsx)(i.KP, {}), (0, o.jsxs)(i.zj, {
+        }), (0, a.jsx)(i.KP, {}), (0, a.jsxs)(i.zj, {
             orientation: t,
-            children: [(0, o.jsx)(i.Kb, {
+            children: [(0, a.jsx)(i.Kb, {
                 url: r,
                 orientation: t
-            }), (0, o.jsx)(i.lx, {
+            }), (0, a.jsx)(i.lx, {
                 title: "Watch Again",
                 subtitle: "Replay this video",
                 ctaBtnLabel: "Replay",
-                onCTAClick: n,
+                onCTAClick: o,
                 orientation: t
             })]
         })]
@@ -43,19 +43,19 @@ function d(e) {
         videoUrl: s,
         showEndScreen: d
     } = e;
-    return (0, o.jsx)("div", {
+    return (0, a.jsx)("div", {
         style: {
             width: "landscape" === t ? "640px" : "360px",
             height: "landscape" === t ? "360px" : "640px",
             margin: "0 auto",
             backgroundColor: "#000"
         },
-        children: (0, o.jsx)(a.A, {
+        children: (0, a.jsx)(n.A, {
             src: s,
             autoplay: r,
             orientation: t,
             seekForwardRestricted: i,
-            parentTransitionState: n.ip4.ENTERED,
+            parentTransitionState: o.ip4.ENTERED,
             targetTimeSec: 1 / 0,
             onOptimisticProgressUpdate: () => {},
             performanceClockStartTime: 0,
@@ -66,7 +66,7 @@ function d(e) {
                 let {
                     replay: r
                 } = e;
-                return (0, o.jsx)(l, {
+                return (0, a.jsx)(l, {
                     orientation: t,
                     thumbnailUrl: "https://cdn.discordapp.com/assets/og_img_discord_home.png",
                     onReplay: r

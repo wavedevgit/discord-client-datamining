@@ -2,10 +2,10 @@
 r.d(t, {
     Vy: () => d
 });
-var o = r(627968);
+var a = r(627968);
 r(64700);
-var n = r(397927),
-    a = r(432806),
+var o = r(397927),
+    n = r(931135),
     i = r(762168),
     s = r(652215);
 
@@ -28,7 +28,7 @@ function l(e) {
             streamProgressSeconds: u.target
         })
     } : _;
-    return (0, o.jsx)("div", {
+    return (0, a.jsx)("div", {
         style: {
             width: c ? "400px" : "100%",
             maxWidth: c ? void 0 : "800px",
@@ -37,12 +37,12 @@ function l(e) {
             borderRadius: "8px",
             overflow: "hidden"
         },
-        children: (0, o.jsx)(i.sn, {
+        children: (0, a.jsx)(i.sn, {
             quest: p,
             isPortrait: c,
-            children: (0, o.jsx)(a.A, {
+            children: (0, a.jsx)(n.A, {
                 targetTimeSec: u.target,
-                parentTransitionState: n.ip4.ENTERED,
+                parentTransitionState: o.ip4.ENTERED,
                 onOptimisticProgressUpdate: s.tEg,
                 autoplay: r,
                 performanceClockStartTime: 0,

@@ -12,20 +12,8 @@ async function o() {
     let e = s.A.bogoPromotion,
         t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
         r = await (0, n.nq)(),
-        {
-            enabled: l
-        } = a.oy.getCurrentConfig({
-            location: "153d31_6"
-        }, {
-            autoTrackExposure: !1
-        }),
-        {
-            enabled: o
-        } = i.A.getCurrentConfig({
-            location: "153d31_7"
-        }, {
-            autoTrackExposure: t && l && r
-        });
+        l = (0, a.RK)("bogo announcement modal eligibility"),
+        o = (0, i.BI)("bogo announcement modal marketing");
     return t && o && l && r
 }
 

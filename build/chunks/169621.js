@@ -3,15 +3,15 @@ r.r(t), r.d(t, {
     playgroundConfig: () => s,
     videoQuestCollection: () => i
 });
-var o = r(397927),
-    n = r(104473),
-    a = r(758889);
+var a = r(397927),
+    o = r(104473),
+    n = r(758889);
 let i = {
         id: "video-quest",
         name: "Video Quest",
-        groups: [r(762168).cs, a.Vy, n.AZ],
+        groups: [r(762168).cs, n.Vy, o.AZ],
         tags: ["Video Quest", "Quests", "Video Player"],
-        IconComponent: o.udU
+        IconComponent: a.udU
     },
     s = {
         playgroundBaseUrl: "video-quest",

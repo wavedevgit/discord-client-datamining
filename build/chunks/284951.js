@@ -1,7 +1,7 @@
 /** chunk id: 284951 params = (module,exports,require) **/
 r.d(t, {
-    I4: () => m,
-    Oc: () => u,
+    I4: () => u,
+    Oc: () => m,
     Qi: () => d,
     fB: () => T,
     ku: () => c,
@@ -75,7 +75,7 @@ let o = [{
         Icon: n.clX,
         getText: () => l.intl.string(l.t.CNIZfy)
     }],
-    u = [{
+    m = [{
         Icon: n.JMY,
         getText: () => l.intl.formatToPlainString(l.t.p8QVLT, {
             maxUploadPremium: (0, a.EJ)(s.PremiumTypes.TIER_2, {
@@ -98,7 +98,7 @@ let o = [{
         Icon: n.clX,
         getText: () => l.intl.string(l.t.CNIZfy)
     }],
-    m = [{
+    u = [{
         Icon: n.A9s,
         getText: () => l.intl.string(l.t.KjrZ8Z)
     }, {

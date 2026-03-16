@@ -1,13 +1,13 @@
 /** chunk id: 548392 params = (module,exports,require) **/
 n.d(t, {
-    AI: () => f,
+    AI: () => b,
     N4: () => j,
-    cp: () => b
+    cp: () => f
 });
 var a = n(627968);
 n(64700);
-var s = n(503698),
-    l = n.n(s),
+var l = n(503698),
+    s = n.n(l),
     i = n(284009),
     r = n.n(i),
     d = n(340287),
@@ -35,10 +35,10 @@ function g(e) {
     let {
         onNext: t,
         stepLoading: n,
-        gameServerInstance: s,
-        availableBoostCount: l,
+        gameServerInstance: l,
+        availableBoostCount: s,
         planCost: i
-    } = (0, c.bv)(), r = i > 0 && l < i, d = i > 0 ? null != s ? m.intl.string(u.default.e3Q5Kz) : m.intl.string(u.default["cmSy/b"]) : m.intl.string(m.t.K344S7);
+    } = (0, c.bv)(), r = i > 0 && s < i, d = i > 0 ? null != l ? m.intl.string(u.default.e3Q5Kz) : m.intl.string(u.default["cmSy/b"]) : m.intl.string(m.t.K344S7);
     return (0, a.jsx)(o.Button, {
         variant: r || i > 0 ? "expressive" : "primary",
         text: d,
@@ -50,7 +50,7 @@ function g(e) {
     })
 }
 
-function b(e) {
+function f(e) {
     let {
         stepAction: t
     } = (0, c.bv)(), n = t?.onNext?.type;
@@ -68,25 +68,25 @@ function b(e) {
     }
 }
 
-function f(e) {
+function b(e) {
     let t, {
             onBack: n,
-            stepAction: s
+            stepAction: l
         } = (0, c.bv)(),
-        l = s?.onBack?.type;
-    switch (l) {
+        s = l?.onBack?.type;
+    switch (s) {
         case "go-to-step":
             t = m.intl.string(m.t["13/7kX"]);
             break;
         case "close":
             t = m.intl.string(m.t.cpT0Cq)
     }
-    return r()(null != t, `Invalid stepType ${l}`), (0, a.jsx)(o.Button, {
+    return r()(null != t, `Invalid stepType ${s}`), (0, a.jsx)(o.Button, {
         ...e,
         variant: "secondary",
         text: t,
         onClick: n,
-        icon: "go-to-step" === l ? o.rJJ : void 0,
+        icon: "go-to-step" === s ? o.rJJ : void 0,
         iconPosition: "start"
     })
 }
@@ -95,13 +95,13 @@ function j(e) {
     let {
         step: t,
         className: n,
-        children: s
+        children: l
     } = e, {
         footerNode: i,
         step: r
     } = (0, c.bv)();
     return null == i || r !== t ? null : d.createPortal((0, a.jsx)("div", {
-        className: l()(x.q, n),
-        children: s
+        className: s()(x.q, n),
+        children: l
     }), i, t)
 }

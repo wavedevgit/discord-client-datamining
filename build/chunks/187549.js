@@ -1,6 +1,6 @@
 /** chunk id: 187549 params = (module,exports,require) **/
 n.d(t, {
-    U: () => s
+    U: () => l
 });
 let a = (0, n(945810).mj)({
     name: "2025-11-shockbyte-degraded",
@@ -15,7 +15,7 @@ let a = (0, n(945810).mj)({
     }
 });
 
-function s(e) {
+function l(e) {
     return a.useConfig({
         location: e
     }).enabled

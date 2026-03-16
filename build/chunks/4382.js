@@ -2,7 +2,7 @@
 r.d(t, {
     PV: () => c,
     ro: () => d,
-    xs: () => u
+    xs: () => m
 });
 var n = r(397927),
     i = r(927578),
@@ -55,7 +55,7 @@ let c = [{
         Icon: n.clX,
         getText: () => o.intl.string(o.t.CNIZfy)
     }],
-    u = [{
+    m = [{
         Icon: n.JMY,
         getText: () => o.intl.formatToPlainString(o.t.p8QVLT, {
             maxUploadPremium: (0, i.EJ)(a.PremiumTypes.TIER_2, {

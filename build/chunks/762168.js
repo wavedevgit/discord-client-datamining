@@ -7,9 +7,9 @@ r.d(t, {
     kK: () => g,
     sn: () => S
 });
-var o = r(627968),
-    n = r(64700),
-    a = r(412703),
+var a = r(627968),
+    o = r(64700),
+    n = r(412703),
     i = r(440703),
     s = r(267548),
     l = r(668824),
@@ -17,26 +17,26 @@ var o = r(627968),
     c = r(104473),
     u = r(341915),
     _ = r(73473),
-    p = r(717415),
-    f = r(471535),
+    p = r(752231),
+    f = r(839727),
     b = r(652215);
 
 function m(e) {
     let {
         url: t,
         width: r = 640,
-        height: o = 360,
-        target: n = 60,
+        height: a = 360,
+        target: o = 60,
         videoTitle: i = "Test Video Quest"
     } = e;
     return {
-        type: a.n.WATCH_VIDEO,
-        target: n,
+        type: n.n.WATCH_VIDEO,
+        target: o,
         assets: {
             video: {
                 url: t,
                 width: r,
-                height: o
+                height: a
             }
         },
         messages: {
@@ -50,15 +50,15 @@ function g() {
         {
             streamProgressSeconds: t = 0,
             completedAt: r = null,
-            enrolledAt: o = null,
-            claimedAt: n = null
+            enrolledAt: a = null,
+            claimedAt: o = null
         } = e;
     return {
         userId: "123",
         questId: C,
-        enrolledAt: o,
+        enrolledAt: a,
         completedAt: r,
-        claimedAt: n,
+        claimedAt: o,
         claimedTier: null,
         lastStreamHeartbeatAt: null,
         streamProgressSeconds: t,
@@ -118,7 +118,7 @@ function v(e) {
             taskConfigV2: {
                 joinOperator: l.K.AND,
                 tasks: {
-                    [a.n.WATCH_VIDEO]: e
+                    [n.n.WATCH_VIDEO]: e
                 }
             },
             features: [],
@@ -139,11 +139,11 @@ function S(e) {
     let {
         quest: t,
         isPortrait: r,
-        children: a,
+        children: n,
         isFullscreenEnabled: i = !1,
         useNewStyling: s = !1,
         setIsFullscreenEnabled: l = b.tEg
-    } = e, d = n.useMemo(() => ({
+    } = e, d = o.useMemo(() => ({
         quest: t,
         sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
         videoSessionId: "playground-session",
@@ -152,18 +152,18 @@ function S(e) {
         isFullscreenEnabled: i,
         setIsFullscreenEnabled: l,
         useNewProgressBarStyling: s
-    }), [t, r, i, l, s]), c = n.useMemo(() => ({
+    }), [t, r, i, l, s]), c = o.useMemo(() => ({
         questConfig: t.config
     }), [t.config]);
-    return (0, o.jsx)(_.R, {
+    return (0, a.jsx)(_.R, {
         questOrQuests: t,
         questContent: u.uF.VIDEO_MODAL,
         sourceQuestContent: u.uF.INTERNAL_PREVIEW_TOOL,
-        children: (e, t) => (0, o.jsx)(p.VideoQuestConfigContext.Provider, {
+        children: (e, t) => (0, a.jsx)(p.VideoQuestConfigContext.Provider, {
             value: c,
-            children: (0, o.jsx)(p.VideoQuestModalContext.Provider, {
+            children: (0, a.jsx)(p.VideoQuestModalContext.Provider, {
                 value: d,
-                children: a
+                children: n
             })
         })
     })
@@ -173,15 +173,15 @@ function h(e) {
     let {
         orientation: t,
         autoplay: r,
-        questCompleted: a,
+        questCompleted: n,
         useNewStyling: i,
         videoUrl: s
-    } = e, l = "portrait" === t, [c, u] = n.useState(!1), _ = m({
+    } = e, l = "portrait" === t, [c, u] = o.useState(!1), _ = m({
         url: s,
         width: l ? 360 : 640,
         height: l ? 640 : 360,
         videoTitle: l ? "Test Portrait Video" : "Test Landscape Video"
-    }), p = v(_), C = a ? {
+    }), p = v(_), C = n ? {
         ...p,
         userStatus: g({
             enrolledAt: p.userStatus?.enrolledAt ?? null,
@@ -189,7 +189,7 @@ function h(e) {
             streamProgressSeconds: _.target
         })
     } : p;
-    return (0, o.jsx)("div", {
+    return (0, a.jsx)("div", {
         style: {
             width: l ? "400px" : "100%",
             maxWidth: l ? void 0 : "800px",
@@ -199,13 +199,13 @@ function h(e) {
             overflow: "hidden",
             "--custom-footer-horizontal-padding": "20px"
         },
-        children: (0, o.jsx)(S, {
+        children: (0, a.jsx)(S, {
             quest: C,
             isPortrait: l,
             isFullscreenEnabled: c,
             setIsFullscreenEnabled: u,
             useNewStyling: i,
-            children: (0, o.jsx)(f.A, {
+            children: (0, a.jsx)(f.A, {
                 targetTimeSec: _.target,
                 parentTransitionState: d.ip4.ENTERED,
                 onOptimisticProgressUpdate: b.tEg,

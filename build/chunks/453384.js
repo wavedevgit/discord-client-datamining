@@ -2,20 +2,20 @@
 r.d(t, {
     A: () => p
 });
-var o = r(627968),
-    n = r(64700),
-    a = r(503698),
-    i = r.n(a),
+var a = r(627968),
+    o = r(64700),
+    n = r(503698),
+    i = r.n(n),
     s = r(497766),
     l = r(397927),
     d = r(398025),
     c = r(419367),
     u = r(638322);
 let _ = "var(--background-mod-strong)",
-    p = n.forwardRef((e, t) => {
+    p = o.forwardRef((e, t) => {
         let {
             percentComplete: r,
-            size: a = 42,
+            size: n = 42,
             style: p = "default",
             percentCompleteText: f,
             percentCompleteTextVariant: b = "text-lg/medium",
@@ -26,7 +26,7 @@ let _ = "var(--background-mod-strong)",
             strokeWidth: 3
         } : {
             strokeWidth: 4
-        }, C = a / 2, v = a / 2 - g / 2, S = 2 * Math.PI * v, h = S - r * S, x = n.useMemo(() => ({
+        }, C = n / 2, v = n / 2 - g / 2, S = 2 * Math.PI * v, h = S - r * S, x = o.useMemo(() => ({
             strokeDasharray: `${S} ${S}`,
             strokeDashoffset: h
         }), [S, h]), {
@@ -35,36 +35,36 @@ let _ = "var(--background-mod-strong)",
             progressTextAnimation: +(null != f && 1 !== r),
             config: c.N
         });
-        return (0, o.jsxs)("div", {
+        return (0, a.jsxs)("div", {
             className: u.A7,
             ref: t,
             style: {
-                width: a,
-                height: a,
+                width: n,
+                height: n,
                 padding: g + 2
             },
-            children: [(0, o.jsxs)("div", {
+            children: [(0, a.jsxs)("div", {
                 className: u.vW,
-                children: [m, (0, o.jsxs)(s.animated.div, {
+                children: [m, (0, a.jsxs)(s.animated.div, {
                     style: {
                         opacity: (0, d.a)(y),
                         inset: g
                     },
                     className: i()(u.rD, u.qk),
-                    children: [(0, o.jsx)("div", {
+                    children: [(0, a.jsx)("div", {
                         className: i()(u.rD, u.LU)
-                    }), (0, o.jsx)(l.Text, {
+                    }), (0, a.jsx)(l.Text, {
                         variant: b,
                         color: "text-strong",
                         className: u.l_,
                         children: f
                     })]
                 })]
-            }), (0, o.jsxs)("svg", {
+            }), (0, a.jsxs)("svg", {
                 className: u.hr,
-                height: a,
-                width: a,
-                children: [(0, o.jsx)("circle", {
+                height: n,
+                width: n,
+                children: [(0, a.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,
                     fill: "transparent",
@@ -72,7 +72,7 @@ let _ = "var(--background-mod-strong)",
                     cx: C,
                     cy: C,
                     stroke: _
-                }), (0, o.jsx)("circle", {
+                }), (0, a.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,
                     fill: "transparent",
@@ -80,7 +80,7 @@ let _ = "var(--background-mod-strong)",
                     cx: C,
                     cy: C,
                     stroke: _
-                }), (0, o.jsx)("circle", {
+                }), (0, a.jsx)("circle", {
                     className: u.qB,
                     strokeWidth: g,
                     fill: "transparent",
