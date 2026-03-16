@@ -13,7 +13,7 @@ function i(e) {
         guildId: t
     } = e, n = (0, l.bG)([r.A], () => null != t ? r.A.getStorefrontData(t) : void 0, [t]);
     return a.useEffect(() => {
-        null != t && (0, s.Rw)(t, {
+        null != t && n?.state !== "fetched" && n?.state !== "loading" && (0, s.Rw)(t, {
             eager: !1
         })
     }, [t, n]), n
