@@ -39,6 +39,7 @@ let d = {
                         blurAmount: e.blurAmount,
                         hueRotate: e.hueRotate,
                         cardType: n.sl2.PRIMARY,
+                        glowing: !0,
                         children: (0, a.jsxs)("div", {
                             style: {
                                 padding: 16,

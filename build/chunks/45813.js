@@ -156,7 +156,8 @@ class A extends n.PureComponent {
                 children: [this.renderVideo(), x(e.body, !1, {
                     changeLog: this,
                     interpolations: k,
-                    onLinkClick: this.trackLinkClick
+                    onLinkClick: this.trackLinkClick,
+                    allowList: !0
                 })]
             })
         })

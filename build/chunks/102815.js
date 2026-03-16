@@ -38,7 +38,7 @@ let C = e => {
         ctaText: O,
         onCtaClick: j,
         subscriptionRequired: U,
-        glowing: M,
+        glowing: M = !1,
         progressGlowing: L = !1,
         featured: w,
         className: B,
@@ -78,9 +78,10 @@ let C = e => {
             tabIndex: G,
             onMouseEnter: H,
             cardType: u.sl2.PRIMARY,
+            glowing: M,
             hueRotate: 25,
-            glowAmount: M ? (0, c.M)(Y) ? 2 : 8 : 0,
-            blurAmount: 10 * !!M,
+            glowAmount: (0, c.M)(Y) ? 2 : 8,
+            blurAmount: 10,
             className: l()(E.Ui, k, {
                 [E.Tn]: X
             }),

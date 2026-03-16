@@ -38,36 +38,37 @@ let p = {
             cardType: h,
             artboard: g = "BaseGlowRemapped",
             fit: R = "layout",
-            glowAmount: x = 8,
-            blurAmount: E = 30,
-            hueRotate: C = 0,
-            isReducedMotion: N,
-            onMouseEnter: v
-        } = e, I = r.useRef(null), S = r.useRef(null), {
-            status: T,
-            buffer: P
-        } = (0, c.CE)(i.A), y = r.useContext(d.C), D = N ?? y.reducedMotion.enabled, O = {
-            "--custom-glow-amount": `${x}px`,
-            "--custom-blur-amount": `${E}px`,
-            "--custom-hue-rotate": `${C}deg`,
-            "--custom-glow-opacity": +(0 !== x)
+            glowing: x = !1,
+            glowAmount: E = 8,
+            blurAmount: C = 30,
+            hueRotate: N = 0,
+            isReducedMotion: v,
+            onMouseEnter: I
+        } = e, S = r.useRef(null), T = r.useRef(null), {
+            status: P,
+            buffer: y
+        } = (0, c.CE)(x ? i.A : null), D = r.useContext(d.C), O = v ?? D.reducedMotion.enabled, j = {
+            "--custom-glow-amount": `${E}px`,
+            "--custom-blur-amount": `${C}px`,
+            "--custom-hue-rotate": `${N}deg`,
+            "--custom-glow-opacity": +(0 !== E)
         };
         return (0, n.jsxs)("div", {
             id: a,
-            ref: I,
+            ref: S,
             tabIndex: s,
             className: l()(m.k, b),
-            style: O,
-            onMouseEnter: v,
-            children: [T !== c.BW.Loading && (0, n.jsx)(o.w, {
-                buffer: P,
+            style: j,
+            onMouseEnter: I,
+            children: [x && P !== c.BW.Loading && (0, n.jsx)(o.w, {
+                buffer: y,
                 artboard: g,
                 artboardProperties: p,
-                eventTargetRef: I,
+                eventTargetRef: S,
                 className: m.Q,
-                ref: S,
+                ref: T,
                 fit: R,
-                withReducedMotion: D ? "halt" : "play"
+                withReducedMotion: O ? "halt" : "play"
             }), (0, n.jsx)(u.ZpM, {
                 type: h ?? u.sl2.CUSTOM,
                 className: A,
