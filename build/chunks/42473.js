@@ -23,8 +23,8 @@ let A = s.forwardRef(function(e, t) {
             iconForeground: A,
             innerClassName: p,
             className: f,
-            redGlow: h,
-            onMouseEnter: x,
+            redGlow: x,
+            onMouseEnter: h,
             onMouseLeave: E,
             "aria-label": N,
             "aria-checked": g,
@@ -47,17 +47,17 @@ let A = s.forwardRef(function(e, t) {
             innerClassName: p,
             wrapperClassName: i()(m.x6, f),
             className: i()(m.x6, f, {
-                [m.Xr]: h,
+                [m.Xr]: x,
                 [m.r9]: o,
                 [m.Sn]: !o,
                 [m.ZQ]: S,
-                [m.OH]: h && S
+                [m.OH]: x && S
             }),
             onClick: e => {
                 null != a && a(e)
             },
             onMouseDown: r,
-            onMouseEnter: x,
+            onMouseEnter: h,
             onMouseLeave: E,
             onContextMenu: s,
             role: v,
@@ -112,14 +112,14 @@ let A = s.forwardRef(function(e, t) {
                 onContextMenu: d,
                 onFocus: p,
                 onBlur: f,
-                "aria-label": h,
-                ...x
+                "aria-label": x,
+                ...h
             } = e;
             return (0, l.jsx)(c.STz, {
                 "data-migration-pending": !0,
                 tooltipClassName: m.RF,
                 tooltipContentClassName: m.In,
-                "aria-label": h,
+                "aria-label": x,
                 forceOpen: s,
                 shouldShow: a,
                 color: c.oMw.GREEN,
@@ -133,7 +133,7 @@ let A = s.forwardRef(function(e, t) {
                         onContextMenu: i,
                         onFocus: c,
                         onBlur: m,
-                        "aria-label": h
+                        "aria-label": x
                     } = e;
                     return (0, l.jsx)(A, {
                         onClick: e => {
@@ -154,8 +154,8 @@ let A = s.forwardRef(function(e, t) {
                         onBlur: () => {
                             m?.(), f?.()
                         },
-                        "aria-label": h,
-                        ...x,
+                        "aria-label": x,
+                        ...h,
                         ref: t
                     })
                 }

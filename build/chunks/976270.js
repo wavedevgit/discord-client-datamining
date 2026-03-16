@@ -43,9 +43,9 @@ function S(e) {
         messageId: G,
         roleId: k,
         sessionId: U,
-        initialTabSection: w,
-        initialScrollTarget: B,
-        transitionState: D,
+        initialTabSection: B,
+        initialScrollTarget: D,
+        transitionState: w,
         onClose: F,
         sourceAnalyticsLocations: V = [],
         showGuildProfile: z
@@ -72,10 +72,10 @@ function S(e) {
             value: K,
             isLoaded: H?.isLoaded,
             children: (0, i.jsx)(A.N, {
-                value: B,
+                value: D,
                 children: (0, i.jsx)(s.EOs, {
                     "data-migration-pending": !0,
-                    transitionState: D,
+                    transitionState: w,
                     className: R.zr,
                     hideShadow: !0,
                     "aria-labelledby": Y,
@@ -115,7 +115,7 @@ function S(e) {
                                     }), (0, i.jsx)(C.A, {
                                         user: t,
                                         themeType: P.d.MODAL,
-                                        hasEntered: D === s.ip4.ENTERED,
+                                        hasEntered: w === s.ip4.ENTERED,
                                         onCloseProfile: F,
                                         disableToolbar: !0
                                     }), (0, i.jsxs)("div", {
@@ -165,7 +165,7 @@ function S(e) {
                                     displayProfile: H,
                                     guildId: W,
                                     items: $,
-                                    initialSection: w ?? E.RP.BOT_INFO,
+                                    initialSection: B ?? E.RP.BOT_INFO,
                                     onClose: F
                                 })]
                             })]

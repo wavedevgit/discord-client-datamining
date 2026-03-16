@@ -8,8 +8,8 @@ var i = n(397927),
     a = n(688810),
     r = n(612630),
     d = n(657331),
-    o = n(961350),
-    s = n(351906),
+    s = n(961350),
+    o = n(351906),
     u = n(652215),
     c = n(518477),
     A = n(985018);
@@ -19,16 +19,16 @@ function g(e) {
         user: t,
         guildId: n,
         channelId: g,
-        context: m
+        context: b
     } = e, {
-        id: b
+        id: m
     } = t, {
         loading: f,
         note: E
-    } = (0, r.A)(b), x = !f && null != E && E.length > 0, h = m === u.BRT.POPOUT || m === u.BRT.OVERLAY, {
+    } = (0, r.A)(m), x = !f && null != E && E.length > 0, h = b === u.BRT.POPOUT || b === u.BRT.OVERLAY, {
         analyticsLocations: C
     } = (0, a.Ay)();
-    return b === o.default.getId() || s.A.hidePersonalInformation || h ? null : (0, l.jsx)(i.Drp, {
+    return m === s.default.getId() || o.A.hidePersonalInformation || h ? null : (0, l.jsx)(i.Drp, {
         id: "note",
         label: f ? A.intl.string(A.t["WLKx/9"]) : x ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
         subtext: A.intl.string(A.t.r1BOdd),
@@ -40,7 +40,7 @@ function g(e) {
                 guildId: n,
                 channelId: g,
                 sourceAnalyticsLocations: C,
-                appContext: m
+                appContext: b
             })
         }
     })

@@ -14,8 +14,8 @@ var l = t(627968),
     A = t(734057),
     g = t(71393),
     m = t(576705),
-    f = t(287809),
-    x = t(985018);
+    x = t(287809),
+    f = t(985018);
 
 function b(e, n, b) {
     let p = i.useMemo(() => ({
@@ -24,23 +24,23 @@ function b(e, n, b) {
     (0, d.Eq)(p, "useThreadAdminActionItems"), (0, r.bG)([m.A], () => m.A.getGuildVersion(n), [n]);
     let h = (0, r.bG)([A.A], () => A.A.getChannel(b)),
         E = (0, r.bG)([g.A], () => g.A.getGuild(n), [n]),
-        C = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
-        _ = (0, s.A)(h, "Context Menu"),
+        _ = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
+        C = (0, s.A)(h, "Context Menu"),
         N = (0, c.qi)(h?.id);
-    return C?.id === e.id ? [_] : null == E || null == h || null == C ? [] : [N ? (0, l.jsx)(a.Drp, {
+    return _?.id === e.id ? [C] : null == E || null == h || null == _ ? [] : [N ? (0, l.jsx)(a.Drp, {
         id: "remove",
-        label: h.isForumPost() ? x.intl.formatToPlainString(x.t.v2KNNx, {
+        label: h.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
             user: e.username
-        }) : x.intl.formatToPlainString(x.t["27xWaT"], {
+        }) : f.intl.formatToPlainString(f.t["27xWaT"], {
             user: e.username
         }),
         color: "danger",
         action: () => o.A.removeMember(h.id, e.id, "Context Menu")
     }) : null, (0, u.L7)(e, E) ? (0, l.jsx)(a.Drp, {
         id: "kick",
-        label: N ? x.intl.formatToPlainString(x.t["1Ie87p"], {
+        label: N ? f.intl.formatToPlainString(f.t["1Ie87p"], {
             user: e.username
-        }) : x.intl.formatToPlainString(x.t["9l/iTS"], {
+        }) : f.intl.formatToPlainString(f.t["9l/iTS"], {
             user: e.username
         }),
         color: "danger",
@@ -56,9 +56,9 @@ function b(e, n, b) {
         })
     }) : null, (0, u.EZ)(e, E) ? (0, l.jsx)(a.Drp, {
         id: "ban",
-        label: N ? x.intl.formatToPlainString(x.t.i62APf, {
+        label: N ? f.intl.formatToPlainString(f.t.i62APf, {
             user: e.username
-        }) : x.intl.formatToPlainString(x.t.WnpUBi, {
+        }) : f.intl.formatToPlainString(f.t.WnpUBi, {
             user: e.username
         }),
         color: "danger",

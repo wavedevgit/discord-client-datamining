@@ -8,14 +8,14 @@ var i = n(397927),
     a = n(442433),
     r = n(847767),
     d = n(358367),
-    o = n(468389),
-    s = n(793574),
+    s = n(468389),
+    o = n(793574),
     u = n(465424),
     c = n(50268),
     A = n(346247),
     g = n(700210),
-    m = n(803664),
-    b = n(29293),
+    b = n(803664),
+    m = n(29293),
     f = n(509302),
     E = n(497600),
     x = n(291247),
@@ -26,9 +26,9 @@ var i = n(397927),
     j = n(448290),
     v = n(301541),
     I = n(252726),
-    y = n(460597),
-    S = n(198229),
-    D = n(243949),
+    S = n(460597),
+    D = n(198229),
+    y = n(243949),
     O = n(180798),
     T = n(972432),
     _ = n(77544),
@@ -40,14 +40,14 @@ let U = (0, d.A)((0, r.A)(function(e) {
         guildId: n,
         showModalItems: r = !0,
         showMediaItems: d = !1,
-        showChatItems: s = !0,
+        showChatItems: o = !0,
         context: U,
         onSelect: G
     } = e, R = {
         page: N.liQ.GUILD_CHANNEL,
         section: N.JJy.CHAT_USERNAME,
         object: N.ZSU.CONTEXT_MENU_ITEM
-    }, B = (0, D.A)({
+    }, B = (0, y.A)({
         userId: t.id,
         guildId: n
     }), V = (0, j.A)(t, n, U), P = (0, v.A)(t.id, U), k = (0, _.A)(t.id), w = (0, C.A)({
@@ -59,9 +59,9 @@ let U = (0, d.A)((0, r.A)(function(e) {
         user: t,
         guildId: n,
         context: U
-    }), W = (0, b.A)({
+    }), W = (0, m.A)({
         user: t
-    }), X = (0, T.A)(t.id), H = (0, S.A)(t.id), Y = (0, A.A)({
+    }), X = (0, T.A)(t.id), H = (0, D.A)(t.id), Y = (0, A.A)({
         guildId: n,
         userId: t.id,
         analyticsLocation: R,
@@ -72,11 +72,11 @@ let U = (0, d.A)((0, r.A)(function(e) {
     }), q = (0, p.A)({
         user: t,
         guildId: n
-    }), z = (0, o.A)(null, t), Z = (0, m.A)({
+    }), z = (0, s.A)(null, t), Z = (0, b.A)({
         user: t
     }), $ = (0, f.A)({
         user: t
-    }), Q = (0, y.A)({
+    }), Q = (0, S.A)({
         user: t
     }), ee = (0, h.A)({
         user: t,
@@ -98,7 +98,7 @@ let U = (0, d.A)((0, r.A)(function(e) {
         onSelect: G,
         children: [!er && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)(i.rXV, {
-                children: [r && B, s && V, P, F, w, r && K, r && W, k]
+                children: [r && B, o && V, P, F, w, r && K, r && W, k]
             }), d && (0, l.jsx)(i.rXV, {
                 children: X
             }), (0, l.jsx)(i.rXV, {
@@ -116,4 +116,4 @@ let U = (0, d.A)((0, r.A)(function(e) {
     })
 }, {
     object: N.ZSU.CONTEXT_MENU
-}), [s.A.CONTEXT_MENU, s.A.GUILD_USER_MENU])
+}), [o.A.CONTEXT_MENU, o.A.GUILD_USER_MENU])

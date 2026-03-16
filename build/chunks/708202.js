@@ -15,27 +15,27 @@ var i = t(311907),
     A = t(688810),
     g = t(465424),
     m = t(50268),
-    f = t(346247),
-    x = t(222311),
+    x = t(346247),
+    f = t(222311),
     b = t(164891),
     p = t(734057),
     h = t(309010),
     E = t(803664),
-    C = t(29293),
-    _ = t(509302),
+    _ = t(29293),
+    C = t(509302),
     N = t(497600),
-    j = t(773699),
+    T = t(773699),
     v = t(239211),
-    T = t(707378),
+    j = t(707378),
     G = t(399476),
     I = t(889460),
     O = t(448290),
-    y = t(301541),
-    M = t(252726),
+    M = t(301541),
+    y = t(252726),
     U = t(460597),
     S = t(313998),
-    R = t(146359),
-    P = t(243949),
+    P = t(146359),
+    R = t(243949),
     D = t(180798),
     V = t(77544),
     k = t(652215),
@@ -48,33 +48,33 @@ let L = (0, s.A)((0, d.A)(function(e) {
         context: s,
         onSelect: L,
         onHeightUpdate: H
-    } = e, W = d.id, K = (0, P.A)({
+    } = e, W = d.id, K = (0, R.A)({
         userId: n.id,
         guildId: t,
         channelId: W
-    }), w = (0, O.A)(n, t, s), F = (0, y.A)(n.id, s), X = (0, V.A)(n.id), q = (0, T.A)({
+    }), w = (0, O.A)(n, t, s), F = (0, M.A)(n.id, s), X = (0, V.A)(n.id), q = (0, j.A)({
         user: n,
         context: s
-    }), J = (0, g.D)({
+    }), Z = (0, g.D)({
         userId: n.id
-    }), Z = (0, i.bG)([h.A, p.A], () => {
+    }), z = (0, i.bG)([h.A, p.A], () => {
         let e = h.A.getVoiceChannelId();
         return p.A.getChannel(e)
     }), {
-        enabled: z
+        enabled: J
     } = b.A.useExperiment({
-        guildId: Z?.guild_id,
+        guildId: z?.guild_id,
         location: "ThreadUserContextMenu"
-    }), Q = z ? Z?.id : null, Y = (0, S.A)(n, Q), $ = (0, N.A)({
+    }), Q = J ? z?.id : null, Y = (0, S.A)(n, Q), $ = (0, N.A)({
         user: n,
         guildId: t,
         channelId: W,
         context: s
-    }), ee = (0, C.A)({
+    }), ee = (0, _.A)({
         user: n
     }), {
         analyticsLocations: en
-    } = (0, A.Ay)(c.A.THREAD_USER_MENU), et = (0, f.A)({
+    } = (0, A.Ay)(c.A.THREAD_USER_MENU), et = (0, x.A)({
         guildId: t,
         userId: n.id,
         analyticsLocation: {
@@ -89,7 +89,7 @@ let L = (0, s.A)((0, d.A)(function(e) {
         guildId: t
     }), ei = (0, o.A)(null, n), er = (0, E.A)({
         user: n
-    }), ea = (0, _.A)({
+    }), ea = (0, C.A)({
         user: n
     }), ed = (0, U.A)({
         user: n
@@ -103,31 +103,31 @@ let L = (0, s.A)((0, d.A)(function(e) {
         guildId: t,
         channelId: W,
         location: "ThreadUserContextMenu"
-    }), eo = (0, R.A)(n, t, W), ec = (0, D.A)(n.id, t), eA = (0, M.A)(n, t), eg = (0, m.A)({
+    }), eo = (0, P.A)(n, t, W), ec = (0, D.A)(n.id, t), eA = (0, y.A)(n, t), eg = (0, m.A)({
         id: n.id,
         label: B.intl.string(B.t["/AXYnE"])
-    }), em = (0, x.A)(n), ef = (0, j.A)({
+    }), em = (0, f.A)(n), ex = (0, T.A)({
         commandType: u.kc.USER,
         commandTargetId: n.id,
         channel: d,
         guildId: t,
         onHeightUpdate: H
-    }), ex = n.isNonUserBot();
+    }), ef = n.isNonUserBot();
     return (0, l.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: a.Z_,
         "aria-label": B.intl.string(B.t.liqwPJ),
         onSelect: L,
-        children: [!ex && (0, l.jsxs)(l.Fragment, {
+        children: [!ef && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(r.rXV, {
                 children: em
             }), (0, l.jsxs)(r.rXV, {
-                children: [K, w, F, J, q, Y, $, ee, X]
+                children: [K, w, F, Z, q, Y, $, ee, X]
             }), (0, l.jsx)(r.rXV, {
                 children: ei
             }), (0, l.jsxs)(r.rXV, {
-                children: [et, ef, el, er, ea, ed, eu, es]
+                children: [et, ex, el, er, ea, ed, eu, es]
             }), (0, l.jsx)(r.rXV, {
                 children: eo
             }), (0, l.jsxs)(r.rXV, {

@@ -8,14 +8,14 @@ var i = n(311907),
     a = n(545442),
     r = n(397927),
     d = n(775602),
-    o = n(504049),
-    s = n(997509),
+    s = n(504049),
+    o = n(997509),
     u = n(676608),
     c = n(34457),
     A = n(696451),
     g = n(317525),
-    m = n(71393),
-    b = n(576705),
+    b = n(71393),
+    m = n(576705),
     f = n(403362),
     E = n(652215),
     x = n(985018),
@@ -51,32 +51,32 @@ function p(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
         h = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
-        p = (0, i.bG)([m.A], () => m.A.getGuild(t)),
+        p = (0, i.bG)([b.A], () => b.A.getGuild(t)),
         j = (0, i.bG)([g.A], () => g.A.getSortedRoles(t)),
         v = (0, i.bG)([d.A], () => d.A.roleStyle),
-        I = (0, o.$9)(t, {
+        I = (0, s.$9)(t, {
             location: a,
             targetUserId: e
         }),
         {
-            userRoles: y,
-            isGuildMember: S,
-            canManageRoles: D
-        } = (0, i.cf)([A.Ay, b.A], () => {
+            userRoles: S,
+            isGuildMember: D,
+            canManageRoles: y
+        } = (0, i.cf)([A.Ay, m.A], () => {
             let n = A.Ay.getMember(t, e);
             return {
                 userRoles: null != n ? n.roles : [],
                 isGuildMember: null != n,
-                canManageRoles: null != p && b.A.can(E.xBc.MANAGE_ROLES, p)
+                canManageRoles: null != p && m.A.can(E.xBc.MANAGE_ROLES, p)
             }
         }, [e, t, p]),
         O = (0, u.Ay)(t, e);
-    if (__OVERLAY__ || null == y || null == p || !S) return null;
-    let T = b.A.getHighestRole(p),
-        _ = D && !h ? j.map(n => {
+    if (__OVERLAY__ || null == S || null == p || !D) return null;
+    let T = m.A.getHighestRole(p),
+        _ = y && !h ? j.map(n => {
             if ((0, c.Oy)(n)) return null;
-            let i = n.managed || !b.A.isRoleHigher(p, T, n),
-                a = y.includes(n.id);
+            let i = n.managed || !m.A.isRoleHigher(p, T, n),
+                a = S.includes(n.id);
             return i && !a ? null : (0, l.jsx)(r.sLh, {
                 id: n.id,
                 leadingAccessory: C(n, v, O),
@@ -84,11 +84,11 @@ function p(e, t) {
                 label: n.name,
                 disabled: i,
                 action: () => {
-                    y.includes(n.id) ? (s.A.updateMemberRoles(t, e, y.filter(e => e !== n.id), [], [n.id]), I(o.Nj.REMOVE_ROLE)) : (s.A.updateMemberRoles(t, e, y.concat([n.id]), [n.id], []), I(o.Nj.ADD_ROLE))
+                    S.includes(n.id) ? (o.A.updateMemberRoles(t, e, S.filter(e => e !== n.id), [], [n.id]), I(s.Nj.REMOVE_ROLE)) : (o.A.updateMemberRoles(t, e, S.concat([n.id]), [n.id], []), I(s.Nj.ADD_ROLE))
                 },
                 checked: a
             }, n.id)
-        }) : j.map(e => (0, c.Oy)(e) || !y.includes(e.id) ? null : (0, l.jsx)(r.Drp, {
+        }) : j.map(e => (0, c.Oy)(e) || !S.includes(e.id) ? null : (0, l.jsx)(r.Drp, {
             id: e.id,
             leadingAccessory: C(e, v, O),
             iconLeft: M(e, v, O),

@@ -15,8 +15,8 @@ var l = n(627968),
     A = n(49999),
     p = n(788868),
     f = n(665606),
-    h = n(985018),
-    x = n(988572);
+    x = n(985018),
+    h = n(988572);
 
 function E(e) {
     let {
@@ -26,7 +26,7 @@ function E(e) {
         hasAccess: S
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
         analyticsLocations: T
-    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), C = (0, a.bG)([d.A], () => d.A.hasStoredFavorites());
+    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), _ = (0, a.bG)([d.A], () => d.A.hasStoredFavorites());
     s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {
@@ -43,13 +43,13 @@ function E(e) {
             null != v.current && (window.cancelAnimationFrame(v.current), v.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
         }
     }, [t]);
-    let _ = s.useCallback(() => {
+    let C = s.useCallback(() => {
             n?.(A.i.TAKE_ACTION), S || (0, c.A)({
                 subscriptionTier: p.pe.TIER_2,
                 analyticsLocations: T
             })
         }, [n, T, S]),
-        j = C ? f.default.TWuDTt : f.default["25YCHl"];
+        j = _ ? f.default.TWuDTt : f.default["25YCHl"];
     return (0, l.jsx)(i.AM, {
         targetElementRef: t,
         gradientColor: "nitro-pink",
@@ -65,17 +65,17 @@ function E(e) {
             variant: "expressive"
         },
         graphic: {
-            src: x.A,
+            src: h.A,
             type: "image",
             aspectRatio: "16/9"
         },
-        title: h.intl.string(S ? j : f.default.A3ZjbM),
-        body: h.intl.string(S ? f.default.DFjrWw : f.default.qJUI2v),
+        title: x.intl.string(S ? j : f.default.A3ZjbM),
+        body: x.intl.string(S ? f.default.DFjrWw : f.default.qJUI2v),
         onRequestClose: () => n?.(A.i.USER_DISMISS),
         actions: [{
             icon: S ? void 0 : r.tvc,
-            text: S ? h.intl.string(f.default["+h9aza"]) : h.intl.string(f.default["avps/2"]),
-            onClick: () => _(),
+            text: S ? x.intl.string(f.default["+h9aza"]) : x.intl.string(f.default["avps/2"]),
+            onClick: () => C(),
             variant: S ? "secondary" : "expressive"
         }]
     })

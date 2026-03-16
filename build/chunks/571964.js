@@ -8,8 +8,8 @@ var i = n(311907),
     r = n(397927),
     a = n(545059),
     d = n(870391),
-    o = n(994500),
-    s = n(589051),
+    s = n(994500),
+    o = n(589051),
     u = n(985018);
 
 function c(e) {
@@ -19,7 +19,7 @@ function c(e) {
         groupId: A
     } = e, {
         hasFriendList: g
-    } = (0, s.M8)("useManageFriendGroupsItems"), f = t.id, [E, b] = (0, i.yK)([o.A, d.A], () => [o.A.isFriend(f), d.A.getGroups()], [f]);
+    } = (0, o.M8)("useManageFriendGroupsItems"), f = t.id, [E, b] = (0, i.yK)([s.A, d.A], () => [s.A.isFriend(f), d.A.getGroups()], [f]);
     if (!g || !E) return null;
     let h = [];
     return b.length > 0 ? h.push((0, l.jsxs)(r.Drp, {

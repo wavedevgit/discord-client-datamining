@@ -8,35 +8,35 @@ var i = n(311907),
     a = n(397927),
     r = n(157559),
     d = n(827343),
-    o = n(209932),
-    s = n(430452),
+    s = n(209932),
+    o = n(430452),
     u = n(383501),
     c = n(967198),
     A = n(287809),
     g = n(954571),
-    m = n(652215),
-    b = n(731854),
+    b = n(652215),
+    m = n(731854),
     f = n(985018),
     E = n(946818);
 
 function x(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.x.DEFAULT,
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : m.x.DEFAULT,
         n = (0, i.bG)([A.default], () => A.default.getCurrentUser()?.id === e),
-        x = (0, i.bG)([o.A], () => o.A.isLocalSoundboardMuted(e)),
+        x = (0, i.bG)([s.A], () => s.A.isLocalSoundboardMuted(e)),
         {
             muted: h,
             deafened: C = !1,
             localVideoDisabled: M = !1,
             localVideoAutoDisabled: p = !1
-        } = (0, i.cf)([s.Ay], () => n ? {
-            muted: s.Ay.isSelfMute(t),
-            deafened: s.Ay.isSelfDeaf(t)
+        } = (0, i.cf)([o.Ay], () => n ? {
+            muted: o.Ay.isSelfMute(t),
+            deafened: o.Ay.isSelfDeaf(t)
         } : {
-            muted: s.Ay.isLocalMute(e, t),
-            localVideoDisabled: s.Ay.isLocalVideoDisabled(e, t),
-            localVideoAutoDisabled: s.Ay.isLocalVideoAutoDisabled(e, t)
+            muted: o.Ay.isLocalMute(e, t),
+            localVideoDisabled: o.Ay.isLocalVideoDisabled(e, t),
+            localVideoAutoDisabled: o.Ay.isLocalVideoAutoDisabled(e, t)
         }, [n, t, e]),
-        j = s.Ay.supports(b.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(a.sLh, {
+        j = o.Ay.supports(m.O5.DISABLE_VIDEO) && !n ? (0, l.jsx)(a.sLh, {
             id: "disable-video",
             label: f.intl.string(f.t["4MMsWF"]),
             action: () => {
@@ -45,9 +45,9 @@ function x(e) {
                     body: f.intl.string(f.t.EhaK6B),
                     confirmText: f.intl.string(f.t.ND1my3),
                     cancelText: f.intl.string(f.t.jEqEhy),
-                    onConfirm: () => d.A.setDisableLocalVideo(e, m.bb8.MANUAL_ENABLED)
+                    onConfirm: () => d.A.setDisableLocalVideo(e, b.bb8.MANUAL_ENABLED)
                 });
-                let n = M ? m.bb8.MANUAL_ENABLED : m.bb8.DISABLED;
+                let n = M ? b.bb8.MANUAL_ENABLED : b.bb8.DISABLED;
                 d.A.setDisableLocalVideo(e, n, t)
             },
             checked: M,
@@ -66,7 +66,7 @@ function x(e) {
             label: f.intl.string(f.t.LxhEuG),
             action: () => {
                 let n = u.A.getRTCConnection();
-                g.default.track(m.HAw.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
+                g.default.track(b.HAw.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
                     guild_id: c.A.getGuildId(),
                     target_user_id: e,
                     media_session_id: n?.getMediaSessionId(),
