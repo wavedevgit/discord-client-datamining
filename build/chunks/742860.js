@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(651892),
     N = n(901406),
     I = n(792620),
-    R = n(814793),
-    O = n(241124),
+    O = n(814793),
+    R = n(241124),
     k = n(212614),
     w = n(79545),
     D = n(646764),
@@ -96,7 +96,7 @@ function Z(e) {
         onMouseLeave: () => {
             s && r && o(!1)
         },
-        children: [null != h && (0, a.jsx)(O.Sn, {
+        children: [null != h && (0, a.jsx)(R.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
             children: e => (0, a.jsx)("img", {
                 ref: e,
@@ -104,7 +104,7 @@ function Z(e) {
                 src: h.url,
                 className: J.Ue
             })
-        }), null != u ? (0, a.jsx)(O.Sn, {
+        }), null != u ? (0, a.jsx)(R.Sn, {
             id: "QuestBarContentExpanded_video",
             children: e => (0, a.jsx)(X, {
                 ref: e,
@@ -155,7 +155,7 @@ function et(e) {
         taskDetails: _
     } = i.useContext(W.T), {
         expansionSpring: b
-    } = i.useContext(L.PW), N = i.useRef(null), I = (0, d.bG)([f.A], () => f.A.isEnrolling(c.id), [c]), R = i.useMemo(() => (0, T.tW)(c, t ? T.fY.QUEST_BAR_HERO_IMAGE : T.fY.QUEST_BAR_HERO), [c, t]), D = (0, C.NA)({
+    } = i.useContext(L.PW), N = i.useRef(null), I = (0, d.bG)([f.A], () => f.A.isEnrolling(c.id), [c]), O = i.useMemo(() => (0, T.tW)(c, t ? T.fY.QUEST_BAR_HERO_IMAGE : T.fY.QUEST_BAR_HERO), [c, t]), D = (0, C.NA)({
         quest: c
     }), U = i.useMemo(() => (0, T.tW)(c, T.fY.HERO_IMAGE), [c]), B = i.useMemo(() => null == U ? {} : {
         backgroundImage: `url(${U.url})`
@@ -248,21 +248,21 @@ function et(e) {
                 backdropFilter: (0, M.Q)(b.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, M.Q)(b.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [R.isAnimated ? (0, a.jsx)(O.Sn, {
+            children: [O.isAnimated ? (0, a.jsx)(R.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(X, {
                     ref: e,
                     autoPlay: !0,
-                    asset: R,
+                    asset: O,
                     className: J.LO
                 })
-            }) : (0, a.jsx)(O.Sn, {
+            }) : (0, a.jsx)(R.Sn, {
                 id: "QuestBarContentExpanded_heroStatic",
                 children: e => (0, a.jsx)("img", {
                     ref: e,
                     alt: "",
                     className: J.LO,
-                    src: R.url
+                    src: O.url
                 })
             }), (0, a.jsx)("div", {
                 className: l()(J.tV, {
@@ -357,7 +357,7 @@ async function ea(e, t, n, a) {
         questContentCTA: n,
         sourceQuestContent: a,
         sourceQuestContentCTA: n
-    }) : (0, R.vA)(e) ? await (0, _.Oy)(e.id, {
+    }) : (0, O.vA)(e) ? await (0, _.Oy)(e.id, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a
@@ -382,7 +382,7 @@ let ei = i.forwardRef(function(e, t) {
         expansionSpring: p
     } = i.useContext(L.PW), {
         launchInGameActivity: x
-    } = (0, y.zW)(h), g = (0, R.vA)(h), _ = i.useCallback(async () => {
+    } = (0, y.zW)(h), g = (0, O.vA)(h), _ = i.useCallback(async () => {
         let e = g ? S.Cy.START_QUEST : S.Cy.ACCEPT_QUEST;
         await ea(h, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
     }, [h, x, g]), f = h.userStatus?.enrolledAt != null, b = u && m;

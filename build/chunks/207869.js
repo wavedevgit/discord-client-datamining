@@ -67,7 +67,7 @@ let I = e => {
             text: l
         })
     },
-    R = e => {
+    O = e => {
         let {
             quest: t,
             sourceQuestContent: n
@@ -86,7 +86,7 @@ let I = e => {
             text: S.intl.string(S.t.csptqV)
         })
     },
-    O = e => {
+    R = e => {
         let {
             quest: t
         } = e, n = (0, u.NA)({
@@ -178,9 +178,9 @@ let I = e => {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h
-        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(O, {
+        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(R, {
             quest: d
-        }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(R, {
+        }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(O, {
             quest: d,
             sourceQuestContent: t
         }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(k, {

@@ -37,27 +37,27 @@ let C = (0, r.animated)(p.Ay),
             onCtxMenuSelect: E,
             isExpanded: N,
             isExpansionAnimationComplete: I,
-            quest: R
-        } = i.useContext(f.T), O = i.useCallback(() => {
-            (0, g.Zc)(R, {
+            quest: O
+        } = i.useContext(f.T), R = i.useCallback(() => {
+            (0, g.Zc)(O, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_DISCLOSURE,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [R]), k = i.useCallback(() => {
-            (0, m.pu)(R, {
+        }, [O]), k = i.useCallback(() => {
+            (0, m.pu)(O, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
                 impressionId: p,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [p, R]), w = N && I, D = (0, a.jsx)(o.DUT, {
+        }, [p, O]), w = N && I, D = (0, a.jsx)(o.DUT, {
             onClick: k,
             className: l()(A.vk, {
                 [A.wm]: w
             }),
             children: (0, a.jsx)(C, {
-                quest: R,
+                quest: O,
                 withGameTile: !1,
                 logotypeClassName: A.Iu,
                 logotypeStyle: {
@@ -101,7 +101,7 @@ let C = (0, r.animated)(p.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: A.y8,
-                    onClick: O,
+                    onClick: R,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",
@@ -121,7 +121,7 @@ let C = (0, r.animated)(p.Ay),
                     onClose: S,
                     onSelect: E,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: R,
+                    quest: O,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,

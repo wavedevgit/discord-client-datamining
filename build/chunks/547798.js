@@ -1,6 +1,6 @@
 /** chunk id: 547798 params = (module,exports,require) **/
 n.d(t, {
-    A: () => R
+    A: () => O
 });
 var a = n(627968),
     i = n(64700),
@@ -33,7 +33,7 @@ function I() {
     throw Error("Send help")
 }
 
-function R() {
+function O() {
     let e = v.j0.useSetting(),
         [t, s] = i.useState(!1);
     return t ? {} : (0, a.jsxs)(c.HOs, {
