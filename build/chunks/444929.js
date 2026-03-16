@@ -1,12 +1,12 @@
 /** chunk id: 444929 params = (module,exports,require) **/
 n.d(t, {
-    u: () => a
+    u: () => r
 });
 var i = n(419954),
     s = n(780964),
     l = n(768908),
-    r = n(985018);
-let a = (0, i.E2)(s.X.REGISTERED_GAMES_CURRENT_GAME_SETTING, {
-    useSearchTerms: () => [r.intl.string(r.t["MY9/Oe"])],
+    a = n(985018);
+let r = (0, i.E2)(s.X.REGISTERED_GAMES_CURRENT_GAME_SETTING, {
+    useSearchTerms: () => [a.intl.string(a.t["MY9/Oe"])],
     Component: l.cH
 })

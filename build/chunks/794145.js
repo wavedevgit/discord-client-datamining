@@ -1,12 +1,12 @@
 /** chunk id: 794145 params = (module,exports,require) **/
 n.d(t, {
-    V: () => C
+    V: () => S
 });
 var i = n(421380),
     s = n(171316),
     l = n(419954),
-    r = n(71393),
-    a = n(954571),
+    a = n(71393),
+    r = n(954571),
     o = n(115063),
     d = n(762183),
     c = n(253932),
@@ -20,12 +20,12 @@ var i = n(421380),
     p = n(652215),
     T = n(985018);
 let E = (e, t) => {
-        a.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
+        r.default.track(p.HAw.GUILD_DEFAULT_DMS_UPDATED, {
             default_guilds_restricted: e,
             applied_to_existing_guilds: t
         })
     },
-    C = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
+    S = (0, l.zD)(u.X.CONTENT_AND_SOCIAL_PERMISSIONS_DMS_SETTING, {
         useTitle: () => (0, m.e)() ? T.intl.string(T.t.PMsfcH) : T.intl.string(T.t.RAQUSN),
         useSubtitle: () => {
             let e = (0, g.Tx)(),
@@ -57,12 +57,12 @@ let E = (e, t) => {
                         c.n6.updateSetting(n), E(n, !1)
                     },
                     onCancel: () => {
-                        c.n6.updateSetting(n), c.$s.updateSetting(n ? r.A.getGuildIds() : []), E(n, !0)
+                        c.n6.updateSetting(n), c.$s.updateSetting(n ? a.A.getGuildIds() : []), E(n, !0)
                     }
                 })
             } else {
                 let n = (0, o.Tb)();
-                e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), a.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+                e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), r.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
                     action: h.m.DIRECT_MESSAGES_TOGGLE,
                     ingress: x.bf.USER_SETTINGS_PRIVACY_SAFETY,
                     guild_id: t

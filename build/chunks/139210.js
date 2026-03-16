@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(503698),
     l = n.n(s),
-    r = n(490249),
+    r = n(497766),
     o = n(397927),
     d = n(341915),
     c = n(590202),
@@ -22,7 +22,7 @@ var a = n(627968),
     b = n(152515);
 n(272111);
 var j = n(985018),
-    A = n(229170);
+    A = n(116224);
 let C = (0, r.animated)(p.Ay),
     T = e => {
         let {
@@ -38,13 +38,13 @@ let C = (0, r.animated)(p.Ay),
             isExpanded: N,
             isExpansionAnimationComplete: I,
             quest: R
-        } = i.useContext(f.T), k = i.useCallback(() => {
+        } = i.useContext(f.T), O = i.useCallback(() => {
             (0, g.Zc)(R, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_DISCLOSURE,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [R]), O = i.useCallback(() => {
+        }, [R]), k = i.useCallback(() => {
             (0, m.pu)(R, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
@@ -52,7 +52,7 @@ let C = (0, r.animated)(p.Ay),
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
         }, [p, R]), w = N && I, D = (0, a.jsx)(o.DUT, {
-            onClick: O,
+            onClick: k,
             className: l()(A.vk, {
                 [A.wm]: w
             }),
@@ -101,7 +101,7 @@ let C = (0, r.animated)(p.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: A.y8,
-                    onClick: k,
+                    onClick: O,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",

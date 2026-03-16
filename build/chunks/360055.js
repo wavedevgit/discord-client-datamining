@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     s = n(935649),
     l = n(847599),
-    r = n(36149),
-    a = n(323073),
+    a = n(36149),
+    r = n(323073),
     o = n(419954),
     d = n(264249),
     c = n(253932),
@@ -19,12 +19,12 @@ let g = (0, o.zD)(u.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_SETTING, {
     useValue: d.tI,
     useDisabled: () => {
         let e = (0, _.A)() ?? !0,
-            t = (0, a.sP)(),
-            n = (0, r.yM)();
+            t = (0, r.sP)(),
+            n = (0, a.yM)();
         return i.useMemo(() => (!t || !!n) && !e, [t, e, n])
     },
     setValue: e => {
-        (0, a.p5)() && e ? s.A.showAgeVerificationGetStartedModal({
+        (0, r.p5)() && e ? s.A.showAgeVerificationGetStartedModal({
             entryPoint: l.q1.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
         }) : c.Kg.updateSetting(e)
     }

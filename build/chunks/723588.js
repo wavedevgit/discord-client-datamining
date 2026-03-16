@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(732955),
     l = n(397927),
-    r = n(985018),
-    a = n(34240),
+    a = n(985018),
+    r = n(109878),
     o = n(713052);
 
 function d(e) {
@@ -18,38 +18,38 @@ function d(e) {
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.Heading, {
             variant: "heading-md/bold",
-            children: r.intl.string(r.t["KzCF/6"])
+            children: a.intl.string(a.t["KzCF/6"])
         }), (0, i.jsx)(l.hKd, {
             size: 4
         }), (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
-            className: a.yV,
-            children: r.intl.string(r.t["3D7qCu"])
+            className: r.yV,
+            children: a.intl.string(a.t["3D7qCu"])
         }), (0, i.jsx)(l.hKd, {
             size: 24
         }), (0, i.jsxs)("div", {
-            className: a.Nr,
+            className: r.Nr,
             children: [(0, i.jsx)("img", {
                 src: o,
                 alt: "",
-                className: a.RI
+                className: r.RI
             }), (0, i.jsxs)("div", {
-                className: a.FS,
+                className: r.FS,
                 children: [(0, i.jsx)(l.Heading, {
                     variant: "heading-xl/semibold",
-                    className: a.wx,
-                    children: r.intl.string(r.t["KzCF/6"])
+                    className: r.wx,
+                    children: a.intl.string(a.t["KzCF/6"])
                 }), (0, i.jsx)(l.Text, {
                     variant: "text-md/normal",
-                    className: a.h_,
-                    children: r.intl.format(r.t["m+pcOO"], {
+                    className: r.h_,
+                    children: a.intl.format(a.t["m+pcOO"], {
                         numSubscriptions: n
                     })
                 })]
             }), (0, i.jsx)(s.$nd, {
                 size: "sm",
                 variant: "overlay-primary",
-                text: r.intl.string(r.t["3a8Xxj"]),
+                text: a.intl.string(a.t["3a8Xxj"]),
                 onClick: t
             })]
         })]

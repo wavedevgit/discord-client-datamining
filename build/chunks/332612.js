@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(803306),
+    a = n(397927),
+    r = n(803306),
     o = n(966327),
     d = n(688810);
 n(936388), n(714763);
@@ -17,7 +17,7 @@ var _ = n(657331),
     m = n(287809),
     g = n(427262),
     A = n(985018),
-    h = n(704288);
+    h = n(32086);
 
 function x(e) {
     let {
@@ -32,34 +32,34 @@ function x(e) {
         sourceAnalyticsLocations: u
     }), [t, u]);
     return s.useEffect(() => {
-        (0, a.wz)(t)
+        (0, r.wz)(t)
     }, [t]), (0, i.jsxs)("div", {
         className: h.uW,
         children: [null != x && (0, i.jsx)(o.A, {
             className: h.my,
             user: x,
-            size: r._3J.SIZE_40
+            size: a._3J.SIZE_40
         }), (0, i.jsxs)("div", {
             className: h.Qq,
-            children: [(0, i.jsx)(r.DUT, {
+            children: [(0, i.jsx)(a.DUT, {
                 className: h.Xh,
                 onClick: E,
-                children: (0, i.jsx)(r.Text, {
+                children: (0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
                     color: "interactive-text-active",
                     children: p
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
                 children: A.intl.format(A.t["/MBjYF"], {
                     count: n
                 })
             })]
-        }), (0, i.jsx)(r.DUT, {
+        }), (0, i.jsx)(a.DUT, {
             onClick: T,
             className: h.Qz,
-            children: (0, i.jsx)(r.ucK, {
+            children: (0, i.jsx)(a.ucK, {
                 size: "xs"
             })
         })]
@@ -71,7 +71,7 @@ function p(e) {
         className: t,
         userId: n,
         verification: l,
-        index: a
+        index: r
     } = e, o = (0, c.tC)(l.timestamp), d = s.useCallback(() => {
         (0, c.W0)(n, l.verifiedKey)
     }, [l.verifiedKey, n]);
@@ -79,23 +79,23 @@ function p(e) {
         className: t,
         children: [(0, i.jsxs)("div", {
             className: h.Qq,
-            children: [(0, i.jsx)(r.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 color: "interactive-text-active",
                 children: A.intl.format(A.t.N4qBBO, {
-                    index: a + 1
+                    index: r + 1
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: o
             })]
-        }), (0, i.jsx)(r.DUT, {
+        }), (0, i.jsx)(a.DUT, {
             className: h.Kk,
             onClick: d,
-            children: (0, i.jsx)(r.PGe, {
+            children: (0, i.jsx)(a.PGe, {
                 size: "md",
-                color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT
+                color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         })]
     })
@@ -121,4 +121,4 @@ function T(e) {
         }, `${l}-${e.timestamp}`))]
     })
 }
-n(522759)
+n(473169)

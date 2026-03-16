@@ -9,7 +9,7 @@ var n = r(627968),
     l = r(854627),
     o = r(560138),
     c = r(985018),
-    d = r(906174);
+    d = r(521512);
 
 function u() {
     let e = (0, a.bG)([o.A], () => o.A.affinities.slice(0, 3)),

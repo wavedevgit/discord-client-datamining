@@ -1,28 +1,28 @@
 /** chunk id: 432334 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(213854);
-let a = function(e) {
+    a = n(202160);
+let r = function(e) {
     let {
         className: t,
         imageClassName: s,
-        boostInCooldown: a,
+        boostInCooldown: r,
         useReducedMotion: o
     } = e;
     return (0, i.jsx)("div", {
-        className: l()(r.h4, t, {
-            [r.K2]: a
+        className: l()(a.h4, t, {
+            [a.K2]: r
         }),
         children: (0, i.jsx)("img", {
-            className: l()(r.Sl, s, {
-                [r.x8]: a
+            className: l()(a.Sl, s, {
+                [a.x8]: r
             }),
-            src: a ? n(88331) : o ? n(960954) : n(524779),
+            src: r ? n(88331) : o ? n(960954) : n(524779),
             alt: ""
         })
     })

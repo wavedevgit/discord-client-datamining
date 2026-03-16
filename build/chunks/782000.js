@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(915618),
     s = n(572164),
     l = n(399925),
-    r = n(419954),
-    a = n(430452),
+    a = n(419954),
+    r = n(430452),
     o = n(723702),
     d = n(780964),
     c = n(985018);
-let u = (0, r.zD)(d.X.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
+let u = (0, a.zD)(d.X.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
     useTitle: () => c.intl.string(c.t.yXvykv),
     useSubtitle: () => c.intl.string(c.t.YP3ujk),
     useValue: s.XT,
@@ -20,7 +20,7 @@ let u = (0, r.zD)(d.X.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
     }),
     usePredicate: () => {
         let e = (0, o.isWindows)(),
-            t = (0, i.A)(a.Ay);
+            t = (0, i.A)(r.Ay);
         return e && t
     }
 })

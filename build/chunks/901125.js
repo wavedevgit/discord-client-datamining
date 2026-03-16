@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(780964),
+    a = n(397927),
+    r = n(780964),
     o = n(840065),
     d = n(975571),
     c = n(927578),
@@ -15,7 +15,7 @@ var s = n(503698),
     _ = n(788868),
     m = n(652215),
     g = n(985018),
-    A = n(643323);
+    A = n(158793);
 let h = e => {
     let t, n, {
             premiumSubscription: s,
@@ -26,16 +26,16 @@ let h = e => {
     if (null == s) return null;
     let T = null != s ? c.Ay.getPremiumPlanItem(s) : null;
     if (c.Ay.isBoostOnlySubscription(s) ? t = g.intl.string(g.t.Uj0md3) : null != T && (t = c.Ay.getTierDisplayNameByPlanId(T.planId)), null == t) return null;
-    let E = () => (0, o.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
+    let E = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL, {
             section: m.nc_.SUBSCRIPTIONS
         }),
-        C = (null != T ? c.Ay.getSkuIdForPlan(T.planId) : null) === _.pe.TIER_1;
-    return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(r.ZpM, {
+        S = (null != T ? c.Ay.getSkuIdForPlan(T.planId) : null) === _.pe.TIER_1;
+    return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(a.ZpM, {
         className: l()(A.kL, h, {
             [A.He]: p
         }),
-        type: r.ZpM.Types.CUSTOM,
-        children: [(0, i.jsx)(r.EpV, {
+        type: a.ZpM.Types.CUSTOM,
+        children: [(0, i.jsx)(a.EpV, {
             size: "custom",
             width: 20,
             height: 20,
@@ -43,10 +43,10 @@ let h = e => {
             className: l()(A.Kk, {
                 [A.Pt]: p
             })
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-sm/medium",
             color: n,
-            children: C ? g.intl.format(g.t["tYuv+T"], {
+            children: S ? g.intl.format(g.t["tYuv+T"], {
                 helpdeskArticle: d.A.getArticleURL(m.MVz.PREMIUM_DETAILS),
                 onSubscriptionsClick: E
             }) : g.intl.format(g.t.xHRgU2, {

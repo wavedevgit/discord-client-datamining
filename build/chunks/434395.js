@@ -6,12 +6,12 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(531260),
+    a = n(397927),
+    r = n(531260),
     o = n(927578),
     d = n(788868),
     c = n(985018),
-    u = n(713173);
+    u = n(416179);
 
 function _(e) {
     let {
@@ -19,10 +19,10 @@ function _(e) {
         renewalMutations: s,
         className: _,
         analyticsLocation: m
-    } = e, g = (0, a.A)(), A = t.currentPeriodEnd;
+    } = e, g = (0, r.A)(), A = t.currentPeriodEnd;
     return g.fractionalState === d.xc.FP_SUB_PAUSED && (A = g.endsAt.toDate()), (0, i.jsxs)("div", {
         className: l()(u.zr, _),
-        children: [(0, i.jsx)(r.EpV, {
+        children: [(0, i.jsx)(a.EpV, {
             size: "custom",
             width: 20,
             height: 20,
@@ -34,9 +34,9 @@ function _(e) {
                 planName: t.hasExternalPlanChange ? (0, o.OU)(s) : o.Ay.getDisplayName(s.planId),
                 date: A
             })
-        }), t.isPurchasedExternally ? null : (0, i.jsx)(r.MzZ, {
+        }), t.isPurchasedExternally ? null : (0, i.jsx)(a.MzZ, {
             onClick: e => {
-                e.preventDefault(), (0, r.mMO)(async () => {
+                e.preventDefault(), (0, a.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("65975").then(n.bind(n, 702698));

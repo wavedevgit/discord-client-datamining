@@ -1,12 +1,12 @@
 /** chunk id: 955872 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
     l = n(284009),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(230109),
     d = n(397927),
     c = n(73153),
@@ -20,48 +20,48 @@ var i = n(627968),
     p = n(202639),
     T = n(407217),
     E = n(919395),
-    C = n(884546),
-    S = n(287070),
+    S = n(884546),
+    C = n(287070),
     f = n(196291),
-    N = n(101058),
-    b = n(836602),
+    b = n(101058),
+    N = n(836602),
     I = n(814390),
     v = n(351906),
     j = n(287809),
-    O = n(954571),
-    y = n(927578),
-    R = n(606532),
+    y = n(954571),
+    R = n(927578),
+    O = n(606532),
     P = n(161290),
     D = n(652215),
     L = n(985018),
-    M = n(683380);
+    G = n(166378);
 
-function G() {
-    let e = (0, a.bG)([j.default], () => {
+function M() {
+    let e = (0, r.bG)([j.default], () => {
             let e = j.default.getCurrentUser();
-            return r()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
+            return a()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        t = (0, a.bG)([v.A], () => v.A.hidePersonalInformation),
+        t = (0, r.bG)([v.A], () => v.A.hidePersonalInformation),
         {
             pendingBio: n,
             pendingAvatar: l,
-            pendingNameplate: G,
+            pendingNameplate: M,
             showNotice: U,
             ...k
-        } = (0, a.cf)([b.A], () => ({
-            ...b.A.getPendingChanges(),
-            showNotice: b.A.showNotice()
+        } = (0, r.cf)([N.A], () => ({
+            ...N.A.getPendingChanges(),
+            showNotice: N.A.showNotice()
         })),
-        V = (0, N.V7)({
+        V = (0, b.V7)({
             userId: e.id,
             image: l
         }),
         w = (0, E.lw)({
-            pendingValue: G,
+            pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
         B = (0, I.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
-        H = y.Ay.canUsePremiumProfileCustomization(e),
+        H = R.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: F,
             newestAnalyticsLocation: Y
@@ -70,11 +70,11 @@ function G() {
     let [z, X] = s.useState(!1), W = !H, K = s.useRef(null);
     return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(g.f5, {
         value: F,
-        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(C.A, {
-            profilePreview: (0, i.jsx)(S.A, {
+        children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
+            profilePreview: (0, i.jsx)(C.A, {
                 user: e,
                 canUsePremiumCustomization: H,
-                onUpsellClick: R.A,
+                onUpsellClick: O.A,
                 pendingBio: B,
                 ...k,
                 pendingAvatar: V
@@ -83,7 +83,7 @@ function G() {
                 user: e,
                 nameplate: w,
                 ...k,
-                className: null == w ? M.tJ : void 0,
+                className: null == w ? G.tJ : void 0,
                 isHighlighted: !0
             }),
             children: (0, i.jsx)(P.A, {})
@@ -101,7 +101,7 @@ function G() {
                 })
             })
         }), W && !U && (0, i.jsx)(p.d, {
-            className: M.EL,
+            className: G.EL,
             showUpsell: !z,
             text: L.intl.format(L.t.TmfgI2, {
                 onClick: () => (0, T.K)({
@@ -111,11 +111,11 @@ function G() {
             textVariant: "heading-md/medium",
             useUpdatedStyling: !0,
             button: (0, i.jsx)("div", {
-                className: M.Xl,
+                className: G.Xl,
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        O.default.track(D.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        y.default.track(D.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"

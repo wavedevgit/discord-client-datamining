@@ -1,74 +1,74 @@
 /** chunk id: 294520 params = (module,exports,require) **/
-n.d(t, {
-    K6: () => E,
-    eJ: () => I,
+i.d(t, {
+    K6: () => f,
+    eJ: () => T,
     iW: () => p,
-    rx: () => T,
-    sC: () => f,
-    tt: () => h
-}), n(938796);
-var r = n(665260),
-    i = n(417597),
-    a = n(930125),
-    o = n(338717),
-    l = n(282108),
-    _ = n(256265),
-    s = n(253932),
-    c = n(576705),
-    d = n(863439),
-    u = n(652215),
-    m = n(985018);
+    rx: () => E,
+    sC: () => g,
+    tt: () => A
+}), i(938796);
+var n = i(665260),
+    l = i(417597),
+    a = i(930125),
+    s = i(338717),
+    r = i(282108),
+    o = i(256265),
+    u = i(253932),
+    d = i(576705),
+    c = i(863439),
+    h = i(652215),
+    m = i(985018);
 let p = (e, t) => {
         let {
-            spoiler: n,
-            flags: i = 0
-        } = e, _ = (0, l.b)({
+            spoiler: i,
+            flags: l = 0
+        } = e, o = (0, r.b)({
             type: a.D.Attachment,
             media: e
-        }, t), s = (0, l.$V)({
+        }, t), u = (0, r.$V)({
             type: a.D.Attachment,
             media: e
         }, t);
-        return _.length > 0 ? _[0] : s ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : n || (0, r.Lt)(i, u.sbO.IS_SPOILER) ? o.Oc.SPOILER : null
+        return o.length > 0 ? o[0] : u ? s.Oc.POTENTIAL_EXPLICIT_CONTENT : i || (0, n.Lt)(l, h.sbO.IS_SPOILER) ? s.Oc.SPOILER : null
     },
-    f = (e, t, n, r) => {
-        let i = (0, l.b)({
+    g = (e, t, i, n) => {
+        let l = (0, r.b)({
                 type: a.D.Embed,
                 media: e
-            }, r),
-            _ = !t.author.bot && (0, l.$V)({
+            }, n),
+            o = !t.author.bot && (0, r.$V)({
                 type: a.D.Embed,
                 media: e
-            }, r);
-        return i.length > 0 ? i[0] : _ ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : n ? o.Oc.SPOILER : null
+            }, n);
+        return l.length > 0 ? l[0] : o ? s.Oc.POTENTIAL_EXPLICIT_CONTENT : i ? s.Oc.SPOILER : null
     },
-    h = function(e, t) {
-        let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-            r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-            i = (0, l.b)({
+    A = function(e, t) {
+        let i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+            n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+            l = (0, r.b)({
                 type: a.D.GenericMedia,
                 media: e
             }, t),
-            _ = !r && (0, l.$V)({
+            o = !n && (0, r.$V)({
                 type: a.D.GenericMedia,
                 media: e
             }, t);
-        return i.includes(o.Oc.EXPLICIT_CONTENT) ? o.Oc.EXPLICIT_CONTENT : i.includes(o.Oc.GORE_CONTENT) ? o.Oc.GORE_CONTENT : i.includes(o.Oc.SELF_HARM_CONTENT) ? o.Oc.SELF_HARM_CONTENT : _ ? o.Oc.POTENTIAL_EXPLICIT_CONTENT : n ? o.Oc.SPOILER : null
+        return l.includes(s.Oc.EXPLICIT_CONTENT) ? s.Oc.EXPLICIT_CONTENT : l.includes(s.Oc.GORE_CONTENT) ? s.Oc.GORE_CONTENT : l.includes(s.Oc.SELF_HARM_CONTENT) ? s.Oc.SELF_HARM_CONTENT : o ? s.Oc.POTENTIAL_EXPLICIT_CONTENT : i ? s.Oc.SPOILER : null
     };
 
-function E(e, t, n) {
+function f(e, t, i) {
     if (null == e) return [!1, void 0];
-    let r = function(e) {
+    let n = function(e) {
         switch (e.type) {
-            case _.vV.EMBED:
+            case o.vV.EMBED:
                 return {
                     type: a.D.Embed, media: e
                 };
-            case _.vV.ATTACHMENT:
+            case o.vV.ATTACHMENT:
                 return {
                     type: a.D.Attachment, media: e
                 };
-            case _.vV.COMPONENT:
+            case o.vV.COMPONENT:
                 return {
                     type: a.D.GenericMedia, media: e.srcUnfurledMediaItem
                 };
@@ -76,26 +76,26 @@ function E(e, t, n) {
                 return null
         }
     }(e);
-    if (null == r) return [!1, void 0];
-    let i = (0, l.b)(r, n),
-        s = (0, l.$V)(r, n);
-    return i.length > 0 ? [!0, i[0]] : s ? [!0, o.Oc.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, o.Oc.SPOILER] : [!1, void 0]
+    if (null == n) return [!1, void 0];
+    let l = (0, r.b)(n, i),
+        u = (0, r.$V)(n, i);
+    return l.length > 0 ? [!0, l[0]] : u ? [!0, s.Oc.POTENTIAL_EXPLICIT_CONTENT] : e.spoiler ? [t, s.Oc.SPOILER] : [!1, void 0]
 }
 
-function I(e) {
+function T(e) {
     let {
         channel: t,
-        media: n
-    } = e, r = (0, i.bG)([c.A], () => null != t && c.A.can(u.xBc.MANAGE_MESSAGES, t)), o = s.gs.useSetting(), _ = (0, l.O8)(a.v.GUILD);
-    return E(n, !(0, d.A)(o, r), _)
+        media: i
+    } = e, n = (0, l.bG)([d.A], () => null != t && d.A.can(h.xBc.MANAGE_MESSAGES, t)), s = u.gs.useSetting(), o = (0, r.O8)(a.v.GUILD);
+    return f(i, !(0, c.A)(s, n), o)
 }
-let T = e => {
+let E = e => {
     switch (e) {
-        case o.Oc.EXPLICIT_CONTENT:
-        case o.Oc.GORE_CONTENT:
-        case o.Oc.SELF_HARM_CONTENT:
+        case s.Oc.EXPLICIT_CONTENT:
+        case s.Oc.GORE_CONTENT:
+        case s.Oc.SELF_HARM_CONTENT:
             return m.intl.string(m.t.SEgHFh);
-        case o.Oc.SPOILER:
+        case s.Oc.SPOILER:
             return m.intl.string(m.t["XpfDH+"]);
         default:
             return

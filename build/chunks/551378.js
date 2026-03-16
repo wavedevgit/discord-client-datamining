@@ -6,17 +6,17 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(294433),
+    a = n(397927),
+    r = n(294433),
     o = n(438732),
     d = n(809697),
     c = n(834981),
     u = n(796497),
     _ = n(191627),
-    m = n(870236),
+    m = n(842130),
     g = n(985018),
-    A = n(28138),
-    h = n(609132),
+    A = n(555064),
+    h = n(896498),
     x = n(272673),
     p = n(607913);
 let T = () => {
@@ -27,7 +27,7 @@ let T = () => {
             } = (0, d.A)();
         return (0, c.xr)() || t && e ? null : (0, i.jsx)("div", {
             className: A.x6,
-            children: t ? (0, i.jsx)(r.Button, {
+            children: t ? (0, i.jsx)(a.Button, {
                 variant: "primary",
                 text: g.intl.string(g.t.LhlgY9),
                 onClick: () => n(_.u9.REQUESTS)
@@ -36,8 +36,8 @@ let T = () => {
     },
     E = () => {
         let e = (0, o.A)(),
-            t = (0, a.y)(g.intl.string(m.default["T7GyW+"]), g.intl.string(m.default.goKE2b)),
-            n = (0, a.y)(g.intl.format(m.default.MXjDSv, {
+            t = (0, r.y)(g.intl.string(m.default["T7GyW+"]), g.intl.string(m.default.goKE2b)),
+            n = (0, r.y)(g.intl.format(m.default.MXjDSv, {
                 articleLink: "https://support.discord.com/hc/articles/14155060633623"
             }), g.intl.format(m.default.EMCf6j, {
                 articleLink: "https://support.discord.com/hc/articles/14155043715735"
@@ -48,12 +48,12 @@ let T = () => {
                 children: [(0, i.jsx)("div", {
                     children: (0, i.jsxs)("div", {
                         className: A.TK,
-                        children: [(0, i.jsx)(r.Heading, {
+                        children: [(0, i.jsx)(a.Heading, {
                             variant: "heading-xl/medium",
-                            children: (0, i.jsx)(r.Fmo, {
+                            children: (0, i.jsx)(a.Fmo, {
                                 children: t
                             })
-                        }), (0, i.jsx)(r.Text, {
+                        }), (0, i.jsx)(a.Text, {
                             variant: "text-sm/medium",
                             color: "text-muted",
                             children: n

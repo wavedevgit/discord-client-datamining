@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     l = n(692798),
-    r = n(419954),
-    a = n(780964),
+    a = n(419954),
+    r = n(780964),
     o = n(385803),
     d = n(985018);
-let c = (0, r.E2)(a.X.DISPLAY_DEFAULT_THEMES, {
+let c = (0, a.E2)(r.X.DISPLAY_DEFAULT_THEMES, {
     useSearchTerms: () => [d.intl.string(d.t.Ksh3ik)],
     Component: function() {
         return (0, i.jsxs)(l.Ay, {

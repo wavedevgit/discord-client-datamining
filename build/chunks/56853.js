@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(503698),
     l = n.n(s),
-    r = n(490249),
+    r = n(497766),
     o = n(417597),
     d = n(990078),
     c = n(582754),
@@ -30,12 +30,12 @@ var a = n(627968),
     N = n(398025),
     I = n(545986),
     R = n(516226),
-    k = n(720875),
-    O = n(654487),
+    O = n(720875),
+    k = n(654487),
     w = n(419367),
     D = n(652215),
     M = n(985018),
-    P = n(679643);
+    P = n(627669);
 
 function U(e) {
     let {
@@ -142,7 +142,7 @@ function B(e) {
             sourceQuestContentCTA: b.Cy.QUEST_HOME_TILE_HEADER_WATCH_VIDEO
         })
     }, [F, t, w]), X = (0, o.bG)([g.A], () => g.A.getQuestHomeHeroConfig()), Z = i.useMemo(() => null != X && (0, C.I0)(X, t.id), [X, t.id]), ee = f.s5.useConfig({
-        location: O.rE.QUESTS_CARD
+        location: k.rE.QUESTS_CARD
     }), et = ee.enabled && ee.variant === f.tL.INFO_ICON, en = (0, v.do)({
         quest: t,
         content: _.uF.QUEST_HOME_DESKTOP,
@@ -224,7 +224,7 @@ function B(e) {
                             })
                         })
                     })]
-                }), (0, a.jsx)(k.A, {
+                }), (0, a.jsx)(O.A, {
                     showPlaceholder: !r,
                     width: 100,
                     height: 30,

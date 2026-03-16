@@ -17,7 +17,7 @@ var i = n(627968),
     f = n(939899),
     p = n(518477),
     h = n(985018),
-    _ = n(751636);
+    _ = n(369134);
 let A = {
     [r.x.FAVORITE_GAMES]: {
         placeholder: () => ({

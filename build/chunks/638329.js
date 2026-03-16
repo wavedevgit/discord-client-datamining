@@ -1,4 +1,4 @@
 /** chunk id: 638329 params = (module,exports,require) **/
-e.exports = {
+t.exports = {
     R: "heading__66230"
 }

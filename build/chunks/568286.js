@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(989349),
-    r = n.n(l),
-    a = n(158954),
+    a = n.n(l),
+    r = n(158954),
     o = n(397927),
     d = n(384904),
     c = n(793574),
@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(250253),
     g = n(2242),
     A = n(985018),
-    h = n(823470);
+    h = n(289324);
 let x = e => {
         let {
             transitionState: t,
@@ -26,8 +26,8 @@ let x = e => {
         } = e, T = (0, _.GV)(), {
             analyticsLocations: E
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
-            cancelSubscription: C,
-            error: S,
+            cancelSubscription: S,
+            error: C,
             submitting: f
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
@@ -44,14 +44,14 @@ let x = e => {
                 error: i,
                 submitting: t
             }
-        })(E), N = async () => {
-            await C(x.id) && p()
-        }, b = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), v = r()(x.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
-            numChannels: b.length,
+        })(E), b = async () => {
+            await S(x.id) && p()
+        }, N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), v = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+            numChannels: N.length,
             numAdditionalBenefits: I.length,
             subscriptionEndDate: v
         });
-        return (0, i.jsx)(a.Modal, {
+        return (0, i.jsx)(r.Modal, {
             transitionState: t,
             "aria-labelledby": T,
             actions: [{
@@ -61,7 +61,7 @@ let x = e => {
             }, {
                 variant: "critical-primary",
                 text: A.intl.string(A.t.F6lUDF),
-                onClick: N,
+                onClick: b,
                 loading: f
             }],
             title: A.intl.string(A.t.O6l5tM),
@@ -69,9 +69,9 @@ let x = e => {
             onClose: p,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
-                children: [null != S ? (0, i.jsx)(o.wx6, {
+                children: [null != C ? (0, i.jsx)(o.wx6, {
                     type: "critical",
-                    children: S.message
+                    children: C.message
                 }) : null, (0, i.jsx)(m.x, {
                     listingId: l.id,
                     guildId: n.guild_id,

@@ -18,7 +18,7 @@ var a = n(627968),
     g = n(43708),
     _ = n(14752),
     f = n(930442),
-    v = n(870120),
+    v = n(553622),
     b = n(778765),
     j = n(73269);
 let A = {
@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [y, E] = i.useState(!1), [N, I] = i.useState(!1), [R, k] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [d, j] = i.useState(!0), T = i.useRef({}), [y, E] = i.useState(!1), [N, I] = i.useState(!1), [R, O] = i.useState(8), [k, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -133,9 +133,9 @@ let A = {
             accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: O,
+            effects: k,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [O]), F = y ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [k]), F = y ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
@@ -185,11 +185,11 @@ let A = {
                 skuId: e.skuId,
                 name: U,
                 config: {
-                    effects: O,
+                    effects: k,
                     stillFrames: D
                 }
             })
-        }, [O, D, U]), i.useEffect(() => () => {
+        }, [k, D, U]), i.useEffect(() => () => {
             P.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), P.current = []
@@ -206,7 +206,7 @@ let A = {
                     onChange: e => {
                         let t = V(e);
                         null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, O.length);
+                            let n = await (0, _.Ay)(e, t, k.length);
                             w(e => [...e, n])
                         })
                     },
@@ -279,7 +279,7 @@ let A = {
                         max: 24,
                         step: 2,
                         value: R,
-                        onChange: e => k(+e.target.value)
+                        onChange: e => O(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
                         children: [R, "px"]
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(O),
+                                fileContents: () => (0, _.rs)(k),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -396,7 +396,7 @@ let A = {
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: O,
+                                        effects: k,
                                         stillFrames: D
                                     }
                                 }),
@@ -431,7 +431,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), O.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), k.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(v.uW, v.l7),
                         children: [(0, a.jsx)(c.Text, {
                             variant: "text-md/bold",
@@ -459,7 +459,7 @@ let A = {
                                 w([]), M(A)
                             }
                         })
-                    }), O.map((e, t) => (0, a.jsxs)("div", {
+                    }), k.map((e, t) => (0, a.jsxs)("div", {
                         className: v.ec,
                         children: [(0, a.jsxs)("div", {
                             className: v.D1,

@@ -1,12 +1,12 @@
 /** chunk id: 490510 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 }), n(321073);
 var i = n(627968),
     s = n(64700),
     l = n(735438),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(827734),
     d = n(435371),
     c = n(397927),
@@ -20,18 +20,18 @@ var i = n(627968),
     p = n(168943),
     T = n(680243),
     E = n(843401),
-    C = n(430452),
-    S = n(532624),
+    S = n(430452),
+    C = n(532624),
     f = n(975571),
-    N = n(723702),
-    b = n(350535),
+    b = n(723702),
+    N = n(350535),
     I = n(958831),
     v = n(790174),
     j = n(652215),
-    O = n(650583),
-    y = n(985018),
-    R = n(171150),
-    P = n(522759);
+    y = n(650583),
+    R = n(985018),
+    O = n(924348),
+    P = n(473169);
 
 function D(e) {
     let {
@@ -67,18 +67,18 @@ class L extends s.PureComponent {
     renderMessage() {
         let {
             keybind: e
-        } = this.props, t = b.dI(e.shortcut);
+        } = this.props, t = N.dI(e.shortcut);
         return A.A.hasBind(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
-            children: y.intl.string(y.t["7lQlw3"])
-        }) : O.Yy.has(t) ? (0, i.jsx)(c.po8, {
+            children: R.intl.string(R.t["7lQlw3"])
+        }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
-            children: y.intl.format(y.t.MOIaNd, {
+            children: R.intl.format(R.t.MOIaNd, {
                 keyboardNavArticle: f.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
             })
         }) : (0, i.jsx)(c.Text, {
             variant: "text-md/normal",
-            className: R.qD,
+            className: O.qD,
             children: this.props.keybindDescriptions[e.action]
         })
     }
@@ -88,40 +88,40 @@ class L extends s.PureComponent {
             enabled: t
         } = this.props.keybind;
         return (0, i.jsxs)("div", {
-            className: R.YI,
+            className: O.YI,
             children: [(0, i.jsxs)("div", {
-                className: R.PO,
+                className: O.PO,
                 children: [(0, i.jsx)("div", {
-                    className: R.AS,
+                    className: O.AS,
                     children: (0, i.jsx)(c.l6P, {
                         selectionMode: "single",
-                        label: y.intl.string(y.t.UUpAD6),
+                        label: R.intl.string(R.t.UUpAD6),
                         value: this.props.keybind.action,
                         options: this.props.keybindActionTypes,
                         onSelectionChange: this.handleActionChanged,
                         disabled: e
                     })
                 }), (0, i.jsx)("div", {
-                    className: R.AS,
+                    className: O.AS,
                     children: (0, i.jsx)(c.D0$, {
-                        label: y.intl.string(y.t["1La4tC"]),
+                        label: R.intl.string(R.t["1La4tC"]),
                         children: (0, i.jsx)(_.A, {
                             defaultValue: this.props.keybind.shortcut,
                             onChange: this.handleShortcutChange
                         })
                     })
                 }), !e && (0, i.jsx)("div", {
-                    className: R.d9,
+                    className: O.d9,
                     children: (0, i.jsx)(c.K0, {
                         variant: "icon-only",
                         onClick: this.handleDeleteKeybind,
                         icon: c.ucK,
-                        "aria-label": y.intl.string(y.t.qEHmmB)
+                        "aria-label": R.intl.string(R.t.qEHmmB)
                     })
                 }), (0, i.jsx)("div", {
-                    className: R.ZW,
+                    className: O.ZW,
                     children: (0, i.jsx)(d.m_, {
-                        text: y.intl.string(y.t.uCD7qK),
+                        text: R.intl.string(R.t.uCD7qK),
                         children: (0, i.jsx)("div", {
                             children: (0, i.jsx)(c.dOG, {
                                 checked: t,
@@ -142,7 +142,7 @@ class L extends s.PureComponent {
         }) : void 0
     }
 }
-class M extends s.PureComponent {
+class G extends s.PureComponent {
     get keybindActionTypes() {
         let {
             overlaySupported: e,
@@ -153,88 +153,88 @@ class M extends s.PureComponent {
         } = this.props, l = [{
             id: "unassigned",
             value: j.hCu.UNASSIGNED,
-            label: y.intl.string(y.t["0Uh579"])
+            label: R.intl.string(R.t["0Uh579"])
         }, {
             id: "push-to-talk",
             value: j.hCu.PUSH_TO_TALK,
-            label: y.intl.string(y.t.Y5lgTP)
+            label: R.intl.string(R.t.Y5lgTP)
         }, {
             id: "push-to-talk-priority",
             value: j.hCu.PUSH_TO_TALK_PRIORITY,
-            label: y.intl.string(y.t.DkSwJ2)
+            label: R.intl.string(R.t.DkSwJ2)
         }, {
             id: "push-to-mute",
             value: j.hCu.PUSH_TO_MUTE,
-            label: y.intl.string(y.t.hSCRqd)
+            label: R.intl.string(R.t.hSCRqd)
         }, {
             id: "vad-priority",
             value: j.hCu.VAD_PRIORITY,
-            label: y.intl.string(y.t["49d6Nd"])
+            label: R.intl.string(R.t["49d6Nd"])
         }, {
             id: "toggle-mute",
             value: j.hCu.TOGGLE_MUTE,
-            label: y.intl.string(y.t.PlkYKD)
+            label: R.intl.string(R.t.PlkYKD)
         }, {
             id: "toggle-deafen",
             value: j.hCu.TOGGLE_DEAFEN,
-            label: y.intl.string(y.t.NvGq1K)
+            label: R.intl.string(R.t.NvGq1K)
         }, {
             id: "toggle-voice-mode",
             value: j.hCu.TOGGLE_VOICE_MODE,
-            label: y.intl.string(y.t.Wa5H9S)
+            label: R.intl.string(R.t.Wa5H9S)
         }, {
             id: "toggle-streamer-mode",
             value: j.hCu.TOGGLE_STREAMER_MODE,
-            label: y.intl.string(y.t.BK0Ncc)
+            label: R.intl.string(R.t.BK0Ncc)
         }];
         return (0, p.L)() && l.push({
             id: "toggle-camera",
             value: j.hCu.TOGGLE_CAMERA,
-            label: y.intl.string(y.t.hf8JVT)
+            label: R.intl.string(R.t.hf8JVT)
         }), e && (l.push({
             id: "toggle-overlay-input-lock",
             value: j.hCu.TOGGLE_OVERLAY_INPUT_LOCK,
-            label: y.intl.string(y.t.VsAZcC)
+            label: R.intl.string(R.t.VsAZcC)
         }), l.push({
             id: "activate-overlay-region-text-widget",
             value: j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
-            label: y.intl.string(y.t.hurHWo)
-        })), t && ((0, N.isWindows)() || C.Ay.getUseSystemScreensharePicker()) && l.push({
+            label: R.intl.string(R.t.hurHWo)
+        })), t && ((0, b.isWindows)() || S.Ay.getUseSystemScreensharePicker()) && l.push({
             id: "toggle-go-live-streaming",
             value: j.hCu.TOGGLE_GO_LIVE_STREAMING,
-            label: y.intl.string(y.t.ybdjJD)
-        }), (0, N.isDesktop)() && (l.push({
+            label: R.intl.string(R.t.ybdjJD)
+        }), (0, b.isDesktop)() && (l.push({
             id: "navigate-back",
             value: j.hCu.NAVIGATE_BACK,
-            label: y.intl.string(y.t.gRSaOa)
+            label: R.intl.string(R.t.gRSaOa)
         }, {
             id: "navigate-forward",
             value: j.hCu.NAVIGATE_FORWARD,
-            label: y.intl.string(y.t.zOXpjU)
+            label: R.intl.string(R.t.zOXpjU)
         }, {
             id: "switch-to-voice-channel",
             value: j.hCu.SWITCH_TO_VOICE_CHANNEL,
-            label: y.intl.string(y.t.ty7Lxy)
+            label: R.intl.string(R.t.ty7Lxy)
         }, {
             id: "disconnect-from-voice-channel",
             value: j.hCu.DISCONNECT_FROM_VOICE_CHANNEL,
-            label: y.intl.string(y.t.CV7mT7)
+            label: R.intl.string(R.t.CV7mT7)
         }), n && l.push({
             id: "soundboard",
             value: j.hCu.SOUNDBOARD,
-            label: y.intl.string(y.t.yPH4xm)
+            label: R.intl.string(R.t.yPH4xm)
         }, {
             id: "soundboard-hold",
             value: j.hCu.SOUNDBOARD_HOLD,
-            label: y.intl.string(y.t["1xFbP/"])
+            label: R.intl.string(R.t["1xFbP/"])
         }), i && (l.push({
             id: "save-clip",
             value: j.hCu.SAVE_CLIP,
-            label: y.intl.string(y.t.U4URzP)
+            label: R.intl.string(R.t.U4URzP)
         }), s && l.push({
             id: "save-screenshot",
             value: j.hCu.SAVE_SCREENSHOT,
-            label: y.intl.string(y.t["+WloFH"])
+            label: R.intl.string(R.t["+WloFH"])
         }))), l
     }
     get keybindDescriptions() {
@@ -244,17 +244,17 @@ class M extends s.PureComponent {
             enableClips: n,
             enableScreenshotKeybind: i
         } = this.props, s = {
-            [j.hCu.UNASSIGNED]: y.intl.string(y.t.rvlNLv),
-            [j.hCu.PUSH_TO_MUTE]: y.intl.string(y.t.xtESim),
-            [j.hCu.PUSH_TO_TALK]: y.intl.string(y.t.wTcBSy),
-            [j.hCu.PUSH_TO_TALK_PRIORITY]: y.intl.string(y.t.FhHvWH),
-            [j.hCu.TOGGLE_MUTE]: y.intl.string(y.t.X2fbUm),
-            [j.hCu.TOGGLE_DEAFEN]: y.intl.string(y.t.MjREZV),
-            [j.hCu.TOGGLE_VOICE_MODE]: y.intl.string(y.t.snm5YW),
-            [j.hCu.TOGGLE_STREAMER_MODE]: y.intl.string(y.t.YszLLx),
-            [j.hCu.VAD_PRIORITY]: y.intl.string(y.t.rSe8IZ)
+            [j.hCu.UNASSIGNED]: R.intl.string(R.t.rvlNLv),
+            [j.hCu.PUSH_TO_MUTE]: R.intl.string(R.t.xtESim),
+            [j.hCu.PUSH_TO_TALK]: R.intl.string(R.t.wTcBSy),
+            [j.hCu.PUSH_TO_TALK_PRIORITY]: R.intl.string(R.t.FhHvWH),
+            [j.hCu.TOGGLE_MUTE]: R.intl.string(R.t.X2fbUm),
+            [j.hCu.TOGGLE_DEAFEN]: R.intl.string(R.t.MjREZV),
+            [j.hCu.TOGGLE_VOICE_MODE]: R.intl.string(R.t.snm5YW),
+            [j.hCu.TOGGLE_STREAMER_MODE]: R.intl.string(R.t.YszLLx),
+            [j.hCu.VAD_PRIORITY]: R.intl.string(R.t.rSe8IZ)
         };
-        return (0, p.L)() && (s[j.hCu.TOGGLE_CAMERA] = y.intl.string(y.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = y.intl.string(y.t.IoP5vc)), t && (0, N.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = y.intl.string(y.t.s4C238)), (0, N.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = y.intl.string(y.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = y.intl.string(y.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, N.isWindows)() ? y.intl.string(y.t["5wJefL"]) : y.intl.string(y.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, N.isWindows)() ? y.intl.string(y.t.RRkZc9) : y.intl.string(y.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = y.intl.string(y.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = y.intl.string(y.t.m0zd57)))), s
+        return (0, p.L)() && (s[j.hCu.TOGGLE_CAMERA] = R.intl.string(R.t.v1JBtL)), e && (s[j.hCu.TOGGLE_OVERLAY_INPUT_LOCK] = R.intl.string(R.t.IoP5vc)), t && (0, b.isWindows)() && (s[j.hCu.TOGGLE_GO_LIVE_STREAMING] = R.intl.string(R.t.s4C238)), (0, b.isDesktop)() && (s[j.hCu.NAVIGATE_BACK] = R.intl.string(R.t.nKDlEt), s[j.hCu.NAVIGATE_FORWARD] = R.intl.string(R.t.DK0FFk), s[j.hCu.SOUNDBOARD] = (0, b.isWindows)() ? R.intl.string(R.t["5wJefL"]) : R.intl.string(R.t.gzjsSP), s[j.hCu.SOUNDBOARD_HOLD] = (0, b.isWindows)() ? R.intl.string(R.t.RRkZc9) : R.intl.string(R.t.laNlTl), n && (s[j.hCu.SAVE_CLIP] = R.intl.string(R.t.z3Wbam), i && (s[j.hCu.SAVE_SCREENSHOT] = R.intl.string(R.t.m0zd57)))), s
     }
     handleAddKeybind = () => {
         u.A.addKeybind()
@@ -269,14 +269,14 @@ class M extends s.PureComponent {
     }
     renderKeybindWarning() {
         return (0, i.jsxs)("div", {
-            className: R.$e,
+            className: O.$e,
             children: [(0, i.jsx)(c.mir, {
                 size: "xs",
                 color: o.A.colors.ICON_SUBTLE
             }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: y.intl.string(y.t.NoKjWP)
+                children: R.intl.string(R.t.NoKjWP)
             })]
         })
     }
@@ -284,52 +284,52 @@ class M extends s.PureComponent {
         let {
             enableClips: e,
             enableScreenshotKeybind: t
-        } = this.props, n = r()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = r()((0, g.Bx)()).filter(e => e.description !== y.intl.string(y.t.HnNtEI)).groupBy(e => e.group).value();
+        } = this.props, n = a()(this.props.keybinds).reject(e => e.managed && ![j.hCu.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, j.hCu.SAVE_CLIP, j.hCu.SAVE_SCREENSHOT].includes(e.action)).reject(t => !e && (t.action === j.hCu.SAVE_CLIP || t.action === j.hCu.SAVE_SCREENSHOT)).reject(e => !t && e.action === j.hCu.SAVE_SCREENSHOT).reject(e => !this.props.allowSoundboard && (e.action === j.hCu.SOUNDBOARD || e.action === j.hCu.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => !0 === e.managed ? -1 : 0).value(), l = a()((0, g.Bx)()).filter(e => e.description !== R.intl.string(R.t.HnNtEI)).groupBy(e => e.group).value();
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(v.A, {
-                title: y.intl.string(y.t.T9DA2K),
+                title: R.intl.string(R.t.T9DA2K),
                 className: P.IE,
-                children: N.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
+                children: b.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
-                        className: R.OQ,
+                        className: O.OQ,
                         children: [this.renderKeybindWarning(), (0, i.jsx)("div", {
-                            className: R.c9,
+                            className: O.c9,
                             children: (0, i.jsx)(c.Button, {
                                 size: "md",
                                 onClick: this.handleAddKeybind,
-                                text: y.intl.string(y.t.zk6Xbs),
+                                text: R.intl.string(R.t.zk6Xbs),
                                 variant: "primary"
                             })
                         })]
                     }), (0, i.jsx)(E.A, {
-                        className: R.Qo,
+                        className: O.Qo,
                         sourcePage: "keybinds"
                     }), n.length > 0 && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(c.cGx, {}), this.renderKeybinds(n)]
                     }), (0, i.jsx)(c.cGx, {})]
                 }) : (0, i.jsx)(c.po8, {
                     messageType: c.YCn.INFO,
-                    className: R.Ly,
-                    children: y.intl.format(y.t.mPi3F3, {
+                    className: O.Ly,
+                    children: R.intl.format(R.t.mPi3F3, {
                         downloadLink: j.X7G.DOWNLOAD
                     })
                 })
             }), (0, i.jsxs)(c.BJc, {
                 gap: 48,
                 children: [(0, i.jsx)(c.nVY, {
-                    label: y.intl.string(y.t.Lz5KHI),
+                    label: R.intl.string(R.t.Lz5KHI),
                     children: (0, i.jsx)("div", {
-                        className: R.jh,
+                        className: O.jh,
                         children: (0, i.jsxs)("div", {
-                            className: R.yZ,
+                            className: O.yZ,
                             children: [(0, i.jsx)(c.Text, {
                                 variant: "text-md/normal",
-                                children: y.intl.string(y.t.sMWLBj)
+                                children: R.intl.string(R.t.sMWLBj)
                             }), (0, i.jsx)("div", {
-                                className: R.DM,
+                                className: O.DM,
                                 children: (0, i.jsx)(c.e7I, {
                                     shortcut: m.z.binds["0"],
-                                    className: R.LE
+                                    className: O.LE
                                 })
                             })]
                         })
@@ -338,24 +338,24 @@ class M extends s.PureComponent {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
                             let n = (0, g.Gm)(e),
-                                r = (0, g.zF)(e),
-                                a = l[e];
+                                a = (0, g.zF)(e),
+                                r = l[e];
                             return (0, i.jsx)(c.nVY, {
                                 label: n,
-                                description: r,
+                                description: a,
                                 children: (0, i.jsx)("div", {
-                                    className: R.jh,
-                                    children: a.map((e, t) => (0, i.jsxs)(s.Fragment, {
+                                    className: O.jh,
+                                    children: r.map((e, t) => (0, i.jsxs)(s.Fragment, {
                                         children: [0 !== t && (0, i.jsx)(c.cGx, {}), (0, i.jsxs)("div", {
-                                            className: R.yZ,
+                                            className: O.yZ,
                                             children: [(0, i.jsx)(c.Text, {
                                                 variant: "text-md/normal",
                                                 children: e.description
                                             }), (0, i.jsx)("div", {
-                                                className: R.DM,
+                                                className: O.DM,
                                                 children: e.binds.map(e => (0, i.jsx)(c.e7I, {
                                                     shortcut: e,
-                                                    className: R.LE
+                                                    className: O.LE
                                                 }, e))
                                             })]
                                         })]
@@ -370,21 +370,21 @@ class M extends s.PureComponent {
     }
 }
 
-function G() {
+function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, a.bG)([S.Ay], () => S.Ay.getState()),
-        t = (0, a.bG)([C.Ay], () => (0, x.A)(C.Ay)),
-        n = (0, a.bG)([T.A], () => T.A.isSupported),
+    let e = (0, r.bG)([C.Ay], () => C.Ay.getState()),
+        t = (0, r.bG)([S.Ay], () => (0, x.A)(S.Ay)),
+        n = (0, r.bG)([T.A], () => T.A.isSupported),
         l = (0, h.sw)(),
-        r = (0, h.BW)();
-    return (0, i.jsx)(M, {
+        a = (0, h.BW)();
+    return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,
         overlaySupported: n,
-        allowSoundboard: (0, N.isWindows)(),
+        allowSoundboard: (0, b.isWindows)(),
         enableClips: l,
-        enableScreenshotKeybind: r
+        enableScreenshotKeybind: a
     })
 }

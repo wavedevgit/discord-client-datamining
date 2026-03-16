@@ -5,20 +5,20 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(665260),
-    r = n(171316),
-    a = n(115063),
+    a = n(171316),
+    r = n(115063),
     o = n(253932),
     d = n(871930),
     c = n(578746),
     u = n(531525),
     _ = n(652215),
     m = n(985018),
-    g = n(870236);
+    g = n(842130);
 
 function A() {
     let e = o.FA.useSetting(),
-        t = s.useMemo(() => (0, a.Lx)(e), [e]),
-        n = (0, r.uM)();
+        t = s.useMemo(() => (0, r.Lx)(e), [e]),
+        n = (0, a.uM)();
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.h, {
             setting: u.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS,

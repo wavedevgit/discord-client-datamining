@@ -6,14 +6,14 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(490249),
-    a = n(421380),
+    a = n(497766),
+    r = n(421380),
     o = n(397927),
     d = n(736653),
     c = n(194509),
     u = n(396375),
     _ = n(652215),
-    m = n(455951);
+    m = n(178501);
 let g = function(e) {
     let {
         isVisible: t,
@@ -30,7 +30,7 @@ let g = function(e) {
     }), h = {
         section: _.JJy.MARKETING_FLOATING_CTA
     }, x = (0, d.Ay)(), p = (0, o.Mwr)(x);
-    return (0, i.jsx)(r.animated.div, {
+    return (0, i.jsx)(a.animated.div, {
         className: l()(m.iE, {
             [m.H8]: s,
             [m.q4]: !t
@@ -39,7 +39,7 @@ let g = function(e) {
         children: (0, i.jsxs)("div", {
             className: s ? m.zW : m.iJ,
             children: [(0, i.jsx)(u.A, {
-                color: p ? a.XD.BRAND_INVERTED : void 0,
+                color: p ? r.XD.BRAND_INVERTED : void 0,
                 className: l()(m.x6, {
                     [m.Ph]: p
                 }),

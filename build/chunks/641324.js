@@ -1,13 +1,13 @@
 /** chunk id: 641324 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => b
 });
 var i = n(627968);
 n(64700);
 var s = n(963935),
     l = n(347606),
-    r = n(244242),
-    a = n(578598),
+    a = n(244242),
+    r = n(578598),
     o = n(318903),
     d = n(44909),
     c = n(98254),
@@ -21,8 +21,8 @@ var s = n(963935),
     p = n(388773),
     T = n(691116),
     E = n(353667),
-    C = n(182884),
-    S = n(115617);
+    S = n(182884),
+    C = n(115617);
 
 function f(e) {
     let {
@@ -47,7 +47,7 @@ function f(e) {
                 node: t
             });
         case s.Z6.RELATED:
-            return (0, i.jsx)(C.A, {
+            return (0, i.jsx)(S.A, {
                 node: t
             });
         case s.Z6.CATEGORY:
@@ -59,7 +59,7 @@ function f(e) {
                 node: t
             });
         case s.Z6.SPLIT:
-            return (0, i.jsx)(S.A, {
+            return (0, i.jsx)(C.A, {
                 node: t
             });
         case s.Z6.TOGGLE:
@@ -71,7 +71,7 @@ function f(e) {
                 node: t
             });
         case s.Z6.BUTTON:
-            return (0, i.jsx)(a.D, {
+            return (0, i.jsx)(r.D, {
                 node: t
             });
         case s.Z6.SELECT:
@@ -95,13 +95,13 @@ function f(e) {
                 node: t
             });
         case s.Z6.CUSTOM:
-            return (0, i.jsx)(r.L, {
+            return (0, i.jsx)(a.L, {
                 children: (0, i.jsx)(t.Component, {})
             })
     }
 }
 
-function N(e) {
+function b(e) {
     let {
         node: t
     } = e;

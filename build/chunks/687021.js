@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(444550),
     d = n(263063),
     c = n(128450),
@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(711014),
     g = n(403362),
     A = n(985018),
-    h = n(651203);
+    h = n(306505);
 
 function x(e) {
     let {
@@ -23,17 +23,17 @@ function x(e) {
         className: n,
         globalOption: s,
         hideDivider: l = !1,
-        onChange: a,
+        onChange: r,
         renderOptionSuffix: o
     } = e;
     return (0, i.jsx)(c.A, {
-        className: r()(h.u, n),
+        className: a()(h.u, n),
         title: A.intl.string(A.t.ref7Ki),
         hideDivider: l,
         forcedDivider: !0,
         children: (0, i.jsx)(p, {
             guildId: t,
-            onChange: a,
+            onChange: r,
             renderOptionSuffix: o,
             globalOption: s
         })
@@ -45,8 +45,8 @@ function p(e) {
         guildId: t,
         globalOption: n,
         onChange: l,
-        renderOptionSuffix: r
-    } = e, c = (0, a.bG)([u.A], () => u.A.showNotice()), x = (0, a.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), p = (0, a.bG)([_.A], () => _.A.getGuilds()), T = s.useMemo(() => {
+        renderOptionSuffix: a
+    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), x = (0, r.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), p = (0, r.bG)([_.A], () => _.A.getGuilds()), T = s.useMemo(() => {
         let e = x.map(e => {
             let t = p[e];
             return null == t ? null : {
@@ -74,7 +74,7 @@ function p(e) {
         value: t,
         options: T,
         renderOptionPrefix: E,
-        renderOptionSuffix: r,
+        renderOptionSuffix: a,
         placeholder: A.intl.string(A.t["kMgj+e"]),
         "data-migration-pending": !0
     })

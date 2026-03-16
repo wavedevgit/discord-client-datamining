@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, s = n(627968),
     l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    a = n(503698),
+    r = n.n(a),
     o = n(507392),
     d = n.n(o),
     c = n(735438),
@@ -15,7 +15,7 @@ var i, s = n(627968),
     m = n(235986),
     g = n(350535),
     A = n(985018),
-    h = n(379602),
+    h = n(181204),
     x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
 let p = {
     DEFAULT: h.__invalid_default,
@@ -83,7 +83,7 @@ class T extends l.PureComponent {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: a()(h.Qm, p[t], {
+                className: r()(h.Qm, p[t], {
                     [h.Qz]: i
                 }),
                 children: (0, s.jsxs)(m.A, {

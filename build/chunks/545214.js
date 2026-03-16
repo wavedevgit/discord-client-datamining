@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(311907),
     s = n(419954),
     l = n(287809),
-    r = n(780964),
-    a = n(100817),
+    a = n(780964),
+    r = n(327605),
     o = n(32096),
     d = n(985018);
 
@@ -19,8 +19,8 @@ function c() {
         });
     return !e && t
 }
-let u = (0, s.E2)(r.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
+let u = (0, s.E2)(a.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
     useSearchTerms: () => [d.intl.string(d.t.m0FidJ)],
     usePredicate: c,
-    Component: a.A
+    Component: r.A
 })

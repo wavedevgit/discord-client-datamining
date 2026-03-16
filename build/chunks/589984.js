@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(290595),
-    a = n(171316),
+    a = n(290595),
+    r = n(171316),
     o = n(153488),
     d = n(975571),
     c = n(871930),
@@ -15,18 +15,18 @@ var i = n(627968),
     m = n(531525),
     g = n(652215),
     A = n(985018),
-    h = n(870236);
+    h = n(842130);
 
 function x() {
-    let e = (0, a.uM)(),
+    let e = (0, r.uM)(),
         t = (0, l.bG)([o.A], () => o.A.hasConsented(g.YAq.USAGE_STATISTICS)),
         n = s.useCallback(e => {
-            e ? (0, r.U)([g.YAq.USAGE_STATISTICS], []).catch(_.i) : (0, _.O)({
+            e ? (0, a.U)([g.YAq.USAGE_STATISTICS], []).catch(_.i) : (0, _.O)({
                 header: A.intl.string(A.t.OdPCbN),
                 body: A.intl.string(A.t.MGWabA),
                 confirmText: A.intl.string(A.t["D3+rU4"]),
                 cancelText: A.intl.string(A.t.kYpG0u),
-                onConfirm: () => (0, r.U)([], [g.YAq.USAGE_STATISTICS]).catch(_.i)
+                onConfirm: () => (0, a.U)([], [g.YAq.USAGE_STATISTICS]).catch(_.i)
             })
         }, []);
     return (0, i.jsx)(c.h, {

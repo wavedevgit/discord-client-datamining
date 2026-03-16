@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     l = n(311907),
-    r = n(827343),
-    a = n(117178),
+    a = n(827343),
+    r = n(117178),
     o = n(419954),
     d = n(430452),
     c = n(780964),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(903427),
     m = n(652215),
     g = n(985018),
-    A = n(251349);
+    A = n(755087);
 let h = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
     useSearchTerms: () => [g.intl.string(g.t["pS+K2L"]), g.intl.string(g.t.nuFtHH)],
     usePredicate: _.P,
@@ -36,9 +36,9 @@ let h = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
             layout: "horizontal-responsive",
             children: (0, i.jsx)("div", {
                 className: A.e,
-                children: (0, i.jsx)(a.A, {
+                children: (0, i.jsx)(r.A, {
                     defaultValue: e,
-                    onChange: e => r.A.setMode(m.TBI.PUSH_TO_TALK, {
+                    onChange: e => a.A.setMode(m.TBI.PUSH_TO_TALK, {
                         shortcut: e
                     })
                 })

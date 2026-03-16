@@ -5,7 +5,7 @@ n.d(t, {
 });
 var i = n(627968),
     s = n(64700),
-    l = n(490249),
+    l = n(497766),
     r = n(837381),
     a = n(311907),
     o = n(397927),
@@ -27,7 +27,7 @@ var i = n(627968),
     b = n(65611),
     S = n(652215),
     T = n(985018),
-    v = n(2724);
+    v = n(308294);
 let y = {
     friction: 28,
     tension: 600
@@ -137,7 +137,7 @@ class R extends s.PureComponent {
         null != s ? (0, c.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("72164")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("60770")]).then(n.bind(n, 385913));
             return n => (0, i.jsx)(e, {
                 ...n,
                 channel: t,

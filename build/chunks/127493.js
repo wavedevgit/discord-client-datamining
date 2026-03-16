@@ -6,12 +6,12 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(397927),
+    a = n.n(l),
+    r = n(397927),
     o = n(750338),
     d = n(23003),
     c = n(985018),
-    u = n(678783);
+    u = n(150605);
 
 function _(e) {
     let {
@@ -23,8 +23,8 @@ function _(e) {
         startLeftAligned: _ = !1
     } = e;
     return (0, i.jsxs)("div", {
-        className: r()(u.boxBackdrop, t),
-        children: [(0, i.jsx)(a.Heading, {
+        className: a()(u.boxBackdrop, t),
+        children: [(0, i.jsx)(r.Heading, {
             className: u.bentoSectionHeader,
             variant: "display-md",
             color: "text-strong",

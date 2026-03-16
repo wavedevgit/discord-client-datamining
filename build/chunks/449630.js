@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(915614),
     I = n(223330),
     R = n(559506),
-    k = n(646986),
-    O = n(379654),
+    O = n(646986),
+    k = n(379654),
     w = n(946356),
     D = n(810396),
     M = n(376285),
@@ -55,8 +55,8 @@ var a = n(627968),
     Z = n(49999),
     ee = n(996988),
     et = n(985018),
-    en = n(161774),
-    ea = n(435953);
+    en = n(423648),
+    ea = n(183959);
 
 function ei(e) {
     let {
@@ -115,9 +115,9 @@ function ei(e) {
                 ...e
             })
         },
-        ek = er?.widgets != null && er.widgets.length > 0,
-        eO = ek ? [] : [c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-        [ew, eD] = (0, f.kn)(eO),
+        eO = er?.widgets != null && er.widgets.length > 0,
+        ek = eO ? [] : [c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+        [ew, eD] = (0, f.kn)(ek),
         eM = ew === c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
         eP = i.useCallback(() => {
             eD(Z.i.USER_DISMISS), n()
@@ -197,14 +197,14 @@ function ei(e) {
                             bio: er?.bio,
                             hidePersonalInformation: e_,
                             onClose: n
-                        }), ek && (0, a.jsx)(O.A, {
+                        }), eO && (0, a.jsx)(k.A, {
                             user: t,
                             widgets: er?.widgets,
                             onOpenUserProfileModal: eR
                         }), (0, a.jsx)(I.A, {
                             isPremiumUser: eC,
                             onInteraction: n
-                        }), (0, a.jsx)(k.A, {
+                        }), (0, a.jsx)(O.A, {
                             user: t,
                             currentUser: t,
                             onOpenUserProfileModal: eR,

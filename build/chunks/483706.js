@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(397927),
-    a = n(308528),
+    a = n(397927),
+    r = n(308528),
     o = n(922529),
     d = n(780964),
     c = n(12901),
@@ -19,9 +19,9 @@ var i = n(627968),
     x = n(834981),
     p = n(191627),
     T = n(652215),
-    E = n(870236),
-    C = n(985018),
-    S = n(324034);
+    E = n(842130),
+    S = n(985018),
+    C = n(191248);
 let f = e => {
         let {
             title: t,
@@ -40,7 +40,7 @@ let f = e => {
             children: [(0, i.jsx)(l.EYj, {
                 variant: "text-md/medium",
                 children: t
-            }), (0, i.jsx)(r.Button, {
+            }), (0, i.jsx)(a.Button, {
                 text: n,
                 onClick: s,
                 variant: "secondary",
@@ -48,7 +48,7 @@ let f = e => {
             })]
         })
     },
-    N = () => {
+    b = () => {
         let e = (0, x.vx)(),
             t = () => {
                 (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
@@ -65,23 +65,23 @@ let f = e => {
                 gap: 4,
                 children: [(0, i.jsx)(l.EYj, {
                     variant: "text-sm/semibold",
-                    children: C.intl.string(E.default.ahKIJO)
+                    children: S.intl.string(E.default.ahKIJO)
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: C.intl.format(E.default.X9rW0j, {
-                        openSettingsHook: (e, n) => (0, i.jsx)(r.MzZ, {
+                    children: S.intl.format(E.default.X9rW0j, {
+                        openSettingsHook: (e, n) => (0, i.jsx)(a.MzZ, {
                             onClick: t,
                             children: e
                         }, n)
                     })
                 })]
-            }), (0, i.jsx)(r.Button, {
-                text: C.intl.formatToPlainString(E.default.ggcjPR, {
+            }), (0, i.jsx)(a.Button, {
+                text: S.intl.formatToPlainString(E.default.ggcjPR, {
                     count: e.length
                 }),
                 onClick: () => {
-                    (0, c.default)(), a.A.openPrivateChannel({
+                    (0, c.default)(), r.A.openPrivateChannel({
                         recipientIds: e
                     })
                 },
@@ -90,10 +90,10 @@ let f = e => {
             })]
         })
     },
-    b = e => {
+    N = e => {
         let {
             teenId: t
-        } = e, s = (0, A.y3)(), a = s?.restrictedSchedule?.rules.length ?? 0;
+        } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
         return (0, i.jsxs)(l.BJc, {
             padding: {
                 top: 12,
@@ -108,18 +108,18 @@ let f = e => {
                 gap: 4,
                 children: [(0, i.jsx)(l.EYj, {
                     variant: "text-md/medium",
-                    children: C.intl.string(E.default["1Op+NP"])
+                    children: S.intl.string(E.default["1Op+NP"])
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: 0 === a ? C.intl.string(E.default.fOBIZH) : C.intl.formatToPlainString(E.default.XfwcpX, {
-                        count: a
+                    children: 0 === r ? S.intl.string(E.default.fOBIZH) : S.intl.formatToPlainString(E.default.XfwcpX, {
+                        count: r
                     })
                 })]
-            }), (0, i.jsx)(r.Button, {
-                text: C.intl.string(E.default.OwFF4o),
+            }), (0, i.jsx)(a.Button, {
+                text: S.intl.string(E.default.OwFF4o),
                 onClick: () => {
-                    (0, r.mMO)(async () => {
+                    (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("38842").then(n.bind(n, 6241));
@@ -140,13 +140,13 @@ let f = e => {
             {
                 handleTabChange: n
             } = (0, g.A)(),
-            r = (0, m.Vh)({
+            a = (0, m.Vh)({
                 location: "TimeControlsRow"
             });
         s.useEffect(() => {
             e?.id != null && t && _.Ay.fetchTeenSettingsAndConsents(e?.id)
         }, [e?.id, t]);
-        let a = e => {
+        let r = e => {
             n(e)
         };
         return (0, i.jsxs)(i.Fragment, {
@@ -155,26 +155,26 @@ let f = e => {
                 gap: 4,
                 children: [(0, i.jsx)(l.EYj, {
                     variant: "text-sm/semibold",
-                    children: C.intl.string(E.default.ahKIJO)
+                    children: S.intl.string(E.default.ahKIJO)
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: C.intl.string(E.default.Sv236e)
+                    children: S.intl.string(E.default.Sv236e)
                 })]
             }), (0, i.jsx)(f, {
-                title: C.intl.string(C.t["+o1pDZ"]),
-                buttonText: C.intl.string(C.t.bt75uw),
-                onButtonPress: () => a(p.u9.CONTENT_AND_SOCIAL)
+                title: S.intl.string(S.t["+o1pDZ"]),
+                buttonText: S.intl.string(S.t.bt75uw),
+                onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
-                className: S.yF
+                className: C.yF
             }), (0, i.jsx)(f, {
-                title: C.intl.string(C.t.OAuOHD),
-                buttonText: C.intl.string(C.t.bt75uw),
-                onButtonPress: () => a(p.u9.DATA_AND_PRIVACY)
-            }), r && e?.id != null && (0, i.jsxs)(i.Fragment, {
+                title: S.intl.string(S.t.OAuOHD),
+                buttonText: S.intl.string(S.t.bt75uw),
+                onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
+            }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
-                    className: S.yF
-                }), (0, i.jsx)(b, {
+                    className: C.yF
+                }), (0, i.jsx)(N, {
                     teenId: e.id
                 })]
             })]
@@ -183,7 +183,7 @@ let f = e => {
     v = () => {
         let e = (0, h.A)();
         return 0 === (0, x.vx)().length ? null : (0, i.jsx)("div", {
-            className: S.kL,
-            children: e ? (0, i.jsx)(N, {}) : (0, i.jsx)(I, {})
+            className: C.kL,
+            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(I, {})
         })
     }

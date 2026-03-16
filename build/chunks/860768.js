@@ -20,7 +20,7 @@ class h extends r.PureComponent {
         (0, l.mMO)(async () => {
             let {
                 default: t
-            } = await Promise.all([n.e("43600"), n.e("75013")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("42821")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(t, {
                 ...n,
                 guild: e,

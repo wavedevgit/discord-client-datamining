@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(873298),
     l = n(935649),
-    r = n(847599),
-    a = n(390248),
+    a = n(847599),
+    r = n(390248),
     o = n(632119),
     d = n(278616),
     c = n(771888),
@@ -18,7 +18,7 @@ var s = n(873298),
     A = n(355097),
     h = n(531525),
     x = n(985018),
-    p = n(870236);
+    p = n(842130);
 
 function T() {
     let e = (0, _.A)() ?? !0,
@@ -27,12 +27,12 @@ function T() {
         {
             explicitContentGuilds: T,
             explicitContentFriendDm: E,
-            explicitContentNonFriendDm: C
+            explicitContentNonFriendDm: S
         } = (0, d.R)(),
-        S = e => {
+        C = e => {
             let t = Object.values(e);
-            (0, a.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
-                entryPoint: r.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
+            (0, r.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
+                entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.Jz)(e)
         },
         f = [{
@@ -42,15 +42,15 @@ function T() {
             value: s.TO.BLOCK,
             label: x.intl.string(x.t["D/157Y"])
         }],
-        N = [{
+        b = [{
             value: s.TO.BLUR,
             label: x.intl.string(x.t.S49Uad)
         }],
-        b = {
+        N = {
             value: s.TO.SHOW,
             label: x.intl.string(x.t["5k5OFp"])
         };
-    e && (f.unshift(b), N.unshift(b));
+    e && (f.unshift(N), b.unshift(N));
     let I = {
         isDisabled: n,
         tooltipText: t ? x.intl.string(p.default["6Af/cw"]) : void 0
@@ -62,15 +62,15 @@ function T() {
         children: [(0, i.jsx)(g.A, {
             title: x.intl.string(x.t["+uI23H"]),
             value: E,
-            onChange: e => S({
+            onChange: e => C({
                 explicitContentFriendDm: e
             }),
             options: f,
             ...I
         }), (0, i.jsx)(g.A, {
             title: x.intl.string(x.t["Yh+HX1"]),
-            value: C,
-            onChange: e => S({
+            value: S,
+            onChange: e => C({
                 explicitContentNonFriendDm: e
             }),
             options: f,
@@ -78,12 +78,12 @@ function T() {
         }), (0, i.jsx)(g.A, {
             title: x.intl.string(x.t["FP+a42"]),
             value: T,
-            onChange: e => S({
+            onChange: e => C({
                 explicitContentGuilds: e
             }),
             isDisabled: !e || n,
             tooltipText: t ? x.intl.string(p.default["6Af/cw"]) : void 0,
-            options: N
+            options: b
         })]
     })
 }

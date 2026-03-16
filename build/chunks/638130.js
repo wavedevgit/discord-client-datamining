@@ -6,21 +6,21 @@ var i = n(627968);
 n(64700);
 var s = n(444802),
     l = n(975571),
-    r = n(524738),
-    a = n(421248),
+    a = n(524738),
+    r = n(421248),
     o = n(42765),
     d = n(871930),
     c = n(355097),
     u = n(531525),
     _ = n(652215),
     m = n(985018),
-    g = n(831306);
+    g = n(456144);
 
 function A() {
     let e = (0, s.WX)(),
         t = [{
             title: m.intl.string(m.t.GYpoAq),
-            component: a.Z,
+            component: r.Z,
             orientation: "vertical",
             setting: u.H.SEXUALLY_EXPLICIT_MEDIA_REDACTION
         }, {
@@ -37,7 +37,7 @@ function A() {
             description: m.intl.format(m.t.dliU4j, {
                 learnMoreLink: l.A.getArticleURL(e)
             })
-        }), (0, i.jsx)(r.A, {
+        }), (0, i.jsx)(a.A, {
             parentSetting: u.H.CONTENT_SOCIAL,
             settingsSection: _.nc_.CONTENT_AND_SOCIAL,
             tabs: t,

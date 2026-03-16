@@ -1,12 +1,12 @@
 /** chunk id: 900686 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(64700),
     s = n(522579),
     l = n(77729),
-    r = n(723702);
-class a extends i.Component {
+    a = n(723702);
+class r extends i.Component {
     getFileContents() {
         let {
             fileContents: e
@@ -20,7 +20,7 @@ class a extends i.Component {
                 fileName: n,
                 onDownload: i
             } = this.props;
-        r.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), i?.()
+        a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), i?.()
     };
     downloadNative(e, t) {
         l.A.fileManager.saveWithDialog(e, t)

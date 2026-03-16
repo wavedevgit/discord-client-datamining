@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(934551),
     s = n(419954),
     l = n(780964),
-    r = n(23901),
-    a = n(985018);
+    a = n(23901),
+    r = n(985018);
 let o = (0, s.t_)(l.X.LANGUAGE_AND_TIME_PANEL, {
-        useTitle: () => a.intl.string(a.t.KyFVyi),
-        buildLayout: () => [r.F]
+        useTitle: () => r.intl.string(r.t.KyFVyi),
+        buildLayout: () => [a.F]
     }),
     d = (0, s.i4)(l.X.LANGUAGE_AND_TIME_SIDEBAR_ITEM, {
         icon: i.LanguageIcon,
-        useTitle: () => a.intl.string(a.t.KyFVyi),
+        useTitle: () => r.intl.string(r.t.KyFVyi),
         buildLayout: () => [o]
     })

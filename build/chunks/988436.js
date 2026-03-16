@@ -26,7 +26,7 @@ var a = n(627968),
     C = n(201805),
     T = n(818348),
     y = n(985018),
-    S = n(767504);
+    S = n(868566);
 
 function E(e) {
     let {
@@ -35,7 +35,7 @@ function E(e) {
         transitionState: s,
         onClose: A,
         sourceQuestContent: E
-    } = e, [I, R] = (0, i.useState)(n), k = (0, x.UX)(), O = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
+    } = e, [I, R] = (0, i.useState)(n), O = (0, x.UX)(), k = (0, _.Ut)(), w = (0, v.vU)()?.getId(), D = (0, o.bG)([m.A], () => m.A.useReducedMotion), M = (0, C.Xf)({
         useReducedMotion: D,
         className: S.Zf
     }), P = I.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), U = (0, j.YL)(t), L = (0, o.bG)([h.A], () => h.A.getState().theme), B = (0, c.Mw)(L) ? T.NJ.DARK : T.NJ.LIGHT, {
@@ -44,7 +44,7 @@ function E(e) {
     } = (0, x.Wj)({
         questId: t.id,
         beforeRequest: () => {
-            M.startAnimation(), O({
+            M.startAnimation(), k({
                 questId: t.id,
                 questContent: p.uF.CONNECTIONS_MODAL,
                 questContentCTA: f.Cy.DEFIBRILLATOR,
@@ -59,7 +59,7 @@ function E(e) {
         transitionState: s,
         onClose: A,
         title: y.intl.string(y.t.W5lmKt),
-        subtitle: k.message,
+        subtitle: O.message,
         actions: [{
             variant: "secondary",
             onClick: () => void(A(), (0, b.b6)({

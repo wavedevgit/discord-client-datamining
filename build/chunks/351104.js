@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(935649),
     l = n(847599),
-    r = n(152076),
-    a = n(93857),
+    a = n(152076),
+    r = n(93857),
     o = n(871930),
     d = n(578746),
     c = n(975571),
@@ -19,15 +19,15 @@ var s = n(935649),
 function A() {
     let e = (0, _.k)() ?? void 0,
         t = (0, u.KK)(),
-        n = a.ES.useControlledSetting(e);
+        n = r.ES.useControlledSetting(e);
     return (0, i.jsx)(o.h, {
         children: (0, i.jsx)(d.Ay, {
             title: g.intl.string(g.t["3o2ojh"]),
             value: !t && !n,
             onChange: t => {
-                !t && (0, r.w)() ? s.A.showAgeVerificationGetStartedModal({
+                !t && (0, a.w)() ? s.A.showAgeVerificationGetStartedModal({
                     entryPoint: l.q1.MESSAGE_REQUESTS_SETTINGS
-                }) : a.ES.updateControlledSetting(e, !t)
+                }) : r.ES.updateControlledSetting(e, !t)
             },
             disabled: t,
             note: g.intl.format(g.t.IoztJ0, {

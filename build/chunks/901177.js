@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(158954),
     s = n(419954),
     l = n(780964),
-    r = n(115980),
-    a = n(985018);
+    a = n(115980),
+    r = n(985018);
 let o = (0, s.E2)(l.X.BILLING_PAYMENT_METHODS, {
-        Component: r.HG,
-        useSearchTerms: () => [a.intl.string(a.t.W26xGQ)]
+        Component: a.HG,
+        useSearchTerms: () => [r.intl.string(r.t.W26xGQ)]
     }),
     d = (0, s.zZ)(l.X.BILLING_PAYMENT_METHODS_CATEGORY, {
-        useTitle: () => a.intl.string(a.t.W26xGQ),
+        useTitle: () => r.intl.string(r.t.W26xGQ),
         icon: i.XAi,
-        useSubtitle: () => a.intl.string(a.t.h6V3uK),
+        useSubtitle: () => r.intl.string(r.t.h6V3uK),
         buildLayout: () => [o]
     })

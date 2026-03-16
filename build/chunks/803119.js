@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(419954),
     s = n(902416),
     l = n(253932),
-    r = n(780964),
-    a = n(985018);
-let o = (0, i.zD)(r.X.VOICE_ACTIVITY_NOTIFICATIONS, {
-    useTitle: () => a.intl.string(a.t.ypvsEi),
+    a = n(780964),
+    r = n(985018);
+let o = (0, i.zD)(a.X.VOICE_ACTIVITY_NOTIFICATIONS, {
+    useTitle: () => r.intl.string(r.t.ypvsEi),
     useValue: l.Bh.useSetting,
     setValue: s.r
 })

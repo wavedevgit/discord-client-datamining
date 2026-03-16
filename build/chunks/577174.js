@@ -6,20 +6,20 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(742589),
-    r = n(65470),
-    a = n(736455),
+    a = n(65470),
+    r = n(736455),
     o = n(985018),
-    d = n(798294);
+    d = n(731176);
 let c = e => {
     let {
         navBarSections: t,
         activeSectionId: n
     } = e, c = {
-        [a.k.HOME]: o.intl.string(o.t.uGRXjS),
-        [a.k.WHATS_NEW]: o.intl.string(o.t["mfcR/v"]),
-        [a.k.BEST_OF_NITRO]: o.intl.string(o.t.xQKkE8),
-        [a.k.PLANS]: o.intl.string(o.t.wyNMnm),
-        [a.k.COMPARE]: o.intl.string(o.t.pwD7If)
+        [r.k.HOME]: o.intl.string(o.t.uGRXjS),
+        [r.k.WHATS_NEW]: o.intl.string(o.t["mfcR/v"]),
+        [r.k.BEST_OF_NITRO]: o.intl.string(o.t.xQKkE8),
+        [r.k.PLANS]: o.intl.string(o.t.wyNMnm),
+        [r.k.COMPARE]: o.intl.string(o.t.pwD7If)
     }, u = Object.values(t).sort((e, t) => e.order - t.order);
     return (0, i.jsx)(l.A, {
         className: d.TQ,
@@ -49,7 +49,7 @@ let c = e => {
                         }, l)
                     })
                 })]
-            }), (0, i.jsx)(r.A, {
+            }), (0, i.jsx)(a.A, {
                 size: "sm",
                 variant: "overlay-secondary"
             })]

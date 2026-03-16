@@ -18,7 +18,7 @@ var a = n(627968),
     g = n(56853),
     _ = n(515038),
     f = n(652215),
-    v = n(830317);
+    v = n(348655);
 
 function b(e) {
     let {
@@ -51,8 +51,8 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), k = i.useContext(x.X), {
-        visibilityElementRef: O,
+    }, [N, t.id, s, j, r]), O = i.useContext(x.X), {
+        visibilityElementRef: k,
         almostVisibleInViewport: w
     } = function(e) {
         let [t, n] = i.useState(!1), a = i.useCallback(e => {
@@ -66,11 +66,11 @@ function b(e) {
             }, !0),
             almostVisibleInViewport: t
         }
-    }(k?.current?.getScrollerNode() ?? null);
+    }(O?.current?.getScrollerNode() ?? null);
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
-            b.current = e, O.current = e
+            b.current = e, k.current = e
         },
         className: l()(v.k, n),
         onMouseEnter: I,

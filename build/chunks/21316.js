@@ -5,18 +5,18 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(197305),
+    a = n(397927),
+    r = n(197305),
     o = n(711014),
     d = n(686423),
     c = n(358172),
     u = n(985018),
-    _ = n(291552);
+    _ = n(853762);
 let m = function(e) {
     let {
         canAddBoosts: t,
         canApplyBoosts: n
-    } = e, m = (0, l.bG)([a.A], () => a.A.affinities), g = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
+    } = e, m = (0, l.bG)([r.A], () => r.A.affinities), g = (0, l.bG)([o.Ay], () => o.Ay.getFlattenedGuildIds()), A = s.useMemo(() => {
         let e = m.slice(0, 3).map(e => e.guildId);
         for (let t = 0; t < g.length && !(e.length >= 3); t++) {
             let n = g[t];
@@ -26,7 +26,7 @@ let m = function(e) {
     }, [m, g]);
     return 0 === A.length ? null : (0, i.jsxs)("div", {
         className: _.iE,
-        children: [t && (0, i.jsx)(r.Heading, {
+        children: [t && (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             className: _.wx,
             children: u.intl.string(u.t.r90Wgo)

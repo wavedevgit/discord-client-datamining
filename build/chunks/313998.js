@@ -26,7 +26,7 @@ var i = t(503698),
     _ = t(806931),
     N = t(49999),
     j = t(985018),
-    v = t(717694);
+    v = t(951808);
 
 function T(e, n) {
     let t = (0, d.bG)([C.A], () => C.A.getVoiceChannelId()),
@@ -67,7 +67,7 @@ function G(e, n) {
             disableTrack: O || !y
         }, [e.id]), O) return null;
     if (M) {
-        let t = y ? j.intl.string(j.t["3Hv9qQ"]) : "add" === G ? j.intl.string(j.t.xlwRY6) : j.intl.string(j.t.bHa9kN);
+        let t = y ? j.intl.string(j.t["3Hv9qQ"]) : T ? j.intl.string(j.t.RDheZm) : j.intl.string(j.t.bHa9kN);
         return (0, l.jsx)(u.Drp, {
             id: "ring",
             label: t,

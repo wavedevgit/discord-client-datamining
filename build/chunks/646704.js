@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(934551),
-    r = n(158954),
-    a = n(827734),
+    a = n(158954),
+    r = n(827734),
     o = n(155984),
     d = n(419954),
     c = n(933297),
@@ -23,9 +23,9 @@ let g = (0, d.t_)(u.X.SUBSCRIPTIONS_PANEL, {
         usePersistentBadge: function() {
             return s.useMemo(() => ({
                 badgeType: c.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-                useCustomBadge: () => (0, o.l)() ? (0, i.jsx)(r.EpV, {
+                useCustomBadge: () => (0, o.l)() ? (0, i.jsx)(a.EpV, {
                     size: "xs",
-                    color: a.A.unsafe_rawColors.YELLOW_300
+                    color: r.A.unsafe_rawColors.YELLOW_300
                 }) : null
             }), [])
         },

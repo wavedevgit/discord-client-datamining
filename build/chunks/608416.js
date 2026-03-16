@@ -8,8 +8,8 @@ n.d(t, {
     aV: () => m
 });
 var i, s, l = n(627968),
-    r = n(64700),
-    a = n(490249),
+    a = n(64700),
+    r = n(497766),
     o = n(397927),
     d = n(396583);
 let c = 3e3,
@@ -40,7 +40,7 @@ let A = e => {
         loop: !0
     } : {
         y: 0
-    }), A = i?.path === "sine" ? Math.sin : Math.cos, [h, x] = (0, r.useState)(1), p = (0, o.zhh)(null != n ? {
+    }), A = i?.path === "sine" ? Math.sin : Math.cos, [h, x] = (0, a.useState)(1), p = (0, o.zhh)(null != n ? {
         from: {
             scale: h > 0 ? n.startScale : n.endScale
         },
@@ -53,7 +53,7 @@ let A = e => {
         onRest: () => x(e => -1 * e)
     } : {
         scale: 1
-    }), [T, E] = (0, r.useState)(1), C = (0, o.zhh)(null != t ? {
+    }), [T, E] = (0, a.useState)(1), S = (0, o.zhh)(null != t ? {
         from: {
             blur: T > 0 ? t.startBlurRadius : t.endBlurRadius
         },
@@ -66,17 +66,17 @@ let A = e => {
         onRest: () => E(e => -1 * e)
     } : {
         blur: 0
-    }), S = (0, r.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [f, N] = (0, r.useState)(0), [b, I] = (0, r.useState)(1), v = (0, o.zhh)({
+    }), C = (0, a.useMemo)(() => Math.round((750 + (200 * Math.random() - 100)) * _), [_]), [f, b] = (0, a.useState)(0), [N, I] = (0, a.useState)(1), v = (0, o.zhh)({
         xOffset: f,
         config: {
             tension: 10,
             friction: 10,
-            duration: S
+            duration: C
         }
     });
     return ((0, d.A)(() => {
-        N(b * (.5 * Math.random() * 5 + 2.5)), I(e => -1 * e)
-    }, S), u) ? m : (0, l.jsx)(a.animated.div, {
+        b(N * (.5 * Math.random() * 5 + 2.5)), I(e => -1 * e)
+    }, C), u) ? m : (0, l.jsx)(r.animated.div, {
         style: {
             transform: g.y?.to(e => {
                 if (null == i) return "translateY(0px)";
@@ -90,7 +90,7 @@ let A = e => {
             }),
             translateX: c ? v.xOffset.to(e => `${e}px`) : 0,
             scale: p.scale,
-            filter: C.blur?.to(e => `blur(${e}px)`),
+            filter: S.blur?.to(e => `blur(${e}px)`),
             opacity: null != s && s.changeOpacity ? s.containerVisibilityPercentage : 1
         },
         children: m

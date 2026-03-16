@@ -1,23 +1,23 @@
 /** chunk id: 994763 params = (module,exports,require) **/
 n.d(t, {
-    z: () => r
+    z: () => a
 });
 var i = n(64700),
     s = n(311907),
     l = n(775602);
 
-function r(e, t, n, r) {
+function a(e, t, n, a) {
     ! function(e, t, n) {
-        let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "start",
-            a = arguments.length > 4 ? arguments[4] : void 0,
+        let a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "start",
+            r = arguments.length > 4 ? arguments[4] : void 0,
             o = (0, s.bG)([l.A], () => l.A.useReducedMotion),
             d = i.useRef(!1);
         i.useEffect(() => {
             if (!t || d.current) return;
             let n = {
                     behavior: o ? "auto" : "smooth",
-                    block: r,
-                    inline: a
+                    block: a,
+                    inline: r
                 },
                 i = e();
             if (null != i && i.offsetHeight > 0) {
@@ -39,8 +39,8 @@ function r(e, t, n, r) {
             return _(), () => {
                 s = !0, null != l && cancelAnimationFrame(l), c.disconnect()
             }
-        }, [t, o, r, a, ...n]), i.useEffect(() => {
+        }, [t, o, a, r, ...n]), i.useEffect(() => {
             t || (d.current = !1)
         }, [t])
-    }(() => document.getElementById(e), t, [e], n, r)
+    }(() => document.getElementById(e), t, [e], n, a)
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(793574),
-    a = n(688810),
+    a = n(793574),
+    r = n(688810),
     o = n(46054),
     d = n(753806),
     c = n(145331),
@@ -25,15 +25,15 @@ function p() {
         p = m.gs.useSetting(),
         T = m.SY.useSetting(),
         E = m._z.useSetting(),
-        C = m.j7.useSetting(),
-        S = m.X6.useSetting(),
+        S = m.j7.useSetting(),
+        C = m.X6.useSetting(),
         f = m.hD.useSetting(),
-        N = m.rs.useSetting(),
-        b = m.jW.useSetting(),
+        b = m.rs.useSetting(),
+        N = m.jW.useSetting(),
         I = m.Hu.useSetting(),
         {
             analyticsLocations: v
-        } = (0, a.Ay)(r.A.TEXT_AND_IMAGES),
+        } = (0, r.Ay)(a.A.TEXT_AND_IMAGES),
         j = s.useCallback(e => {
             let t = 1 === e;
             t ? d.A.cleanUpPrivateChannelSearchState() : d.A.cleanUpSearchState({
@@ -63,7 +63,7 @@ function p() {
                     }), (0, i.jsx)(u.x, {
                         setting: A.H.CHAT_INLINE_MEDIA_UPLOADS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: S,
+                            checked: C,
                             description: x.intl.formatToPlainString(x.t.qjjvqO, {
                                 maxSize: 10
                             }),
@@ -87,7 +87,7 @@ function p() {
                     children: (0, i.jsx)(u.x, {
                         setting: A.H.CHAT_EMBEDS_LINK_PREVIEWS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: N,
+                            checked: b,
                             onChange: m.rs.updateSetting,
                             label: x.intl.string(x.t.xX0ZTA)
                         })
@@ -100,14 +100,14 @@ function p() {
                     children: [(0, i.jsx)(u.x, {
                         setting: A.H.CHAT_EMOJI_REACTIONS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: b,
+                            checked: N,
                             onChange: m.jW.updateSetting,
                             label: x.intl.string(x.t.Iv24sm)
                         })
                     }), (0, i.jsx)(u.x, {
                         setting: A.H.CHAT_EMOJI_EMOTICONS,
                         children: (0, i.jsx)(l.dOG, {
-                            checked: C,
+                            checked: S,
                             description: o.A.parse(x.intl.string(x.t["20dvuQ"])),
                             onChange: m.j7.updateSetting,
                             label: x.intl.string(x.t["79qal8"])

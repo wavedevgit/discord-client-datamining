@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(900062);
+    a = n.n(l),
+    r = n(252052);
 
 function o(e) {
     let {
@@ -21,12 +21,12 @@ function o(e) {
         }), e
     }, [o]);
     return (0, i.jsxs)("div", {
-        className: r()(a.iE, t),
+        className: a()(r.iE, t),
         children: [(0, i.jsx)("div", {
-            className: r()(a.wx, l),
+            className: a()(r.wx, l),
             children: n
         }), d && (0, i.jsx)("div", {
-            className: a.Qs,
+            className: r.Qs,
             children: o
         })]
     })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(934551),
-    r = n(554146),
-    a = n(397927),
+    a = n(554146),
+    r = n(397927),
     o = n(419954),
     d = n(933297),
     c = n(780964),
@@ -20,21 +20,21 @@ var i = n(627968),
     p = n(505112),
     T = n(163944),
     E = n(41197),
-    C = n(28161),
-    S = n(114074),
+    S = n(28161),
+    C = n(114074),
     f = n(413336),
-    N = n(985018);
-let b = (0, o.t_)(c.X.DISPLAY_PANEL, {
-        useTitle: () => N.intl.string(N.t.DVatCa),
-        buildLayout: () => [S.K, T.S, E.X, p.S, C.f, (0, f.$)(!0), x.J]
+    b = n(985018);
+let N = (0, o.t_)(c.X.DISPLAY_PANEL, {
+        useTitle: () => b.intl.string(b.t.DVatCa),
+        buildLayout: () => [C.K, T.S, E.X, p.S, S.f, (0, f.$)(!0), x.J]
     }),
     I = [...A.j0, {
         badgeType: d.Xi.STRONGLY_DISCOURAGED_CUSTOM,
-        dismissibleContent: r.M.FAVORITES_GUILD_NEW_BADGE,
+        dismissibleContent: a.M.FAVORITES_GUILD_NEW_BADGE,
         StronglyDiscouragedCustomComponent: h.L
     }],
     v = (0, o.i4)(c.X.DISPLAY_SIDEBAR_ITEM, {
-        useTitle: () => N.intl.string(N.t.DVatCa),
+        useTitle: () => b.intl.string(b.t.DVatCa),
         icon: l.PaintPaletteIcon,
         usePredicate: () => (0, u.bp)("DisplaySidebarItem"),
         useMenu: function() {
@@ -43,14 +43,14 @@ let b = (0, o.t_)(c.X.DISPLAY_PANEL, {
                 n = (0, m.A)();
             return s.useMemo(() => {
                 let s = [...e];
-                return null != t && s.push((0, i.jsx)(a.rXV, {
-                    label: N.intl.string(N.t.Ob7VMB),
+                return null != t && s.push((0, i.jsx)(r.rXV, {
+                    label: b.intl.string(b.t.Ob7VMB),
                     children: t
-                }, "text-and-images")), null != n && s.push((0, i.jsx)(a.rXV, {
+                }, "text-and-images")), null != n && s.push((0, i.jsx)(r.rXV, {
                     children: n
                 }, "streamer-mode")), s
             }, [e, t, n])
         },
         getDismissibleBadges: () => I,
-        buildLayout: () => [b]
+        buildLayout: () => [N]
     })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(403362),
     l = n(780964),
-    r = n(358776),
-    a = n(468881),
+    a = n(358776),
+    r = n(468881),
     o = n(830842),
     d = n(886854),
     c = n(340186),
@@ -22,7 +22,7 @@ var i = n(419954),
 let E = (0, i.WI)(l.X.APP_SECTION, {
     useTitle: () => T.intl.string(T.t.f2n1TP),
     buildLayout: function() {
-        let e = (0, r.Ci)("AppSection_buildLayout");
-        return [e ? x.q : null, e ? null : d.yj, e ? u.S : null, a.w, e ? null : x.q, A.z, e ? null : c.g, _.$, m.w, e ? null : p.$, e ? null : g.a, e ? null : h.i, e ? null : o._].filter(s.Vq)
+        let e = (0, a.Ci)("AppSection_buildLayout");
+        return [e ? x.q : null, e ? null : d.yj, e ? u.S : null, r.w, e ? null : x.q, A.z, e ? null : c.g, _.$, m.w, e ? null : p.$, e ? null : g.a, e ? null : h.i, e ? null : o._].filter(s.Vq)
     }
 })

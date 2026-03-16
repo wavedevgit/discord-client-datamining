@@ -16,7 +16,7 @@ var n, i = a(627968),
     p = a(486020),
     _ = a(240248),
     g = a(985018),
-    x = a(544561),
+    x = a(420783),
     A = ((n = {})[n.SMALL = (0, _.xI)(d.A.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", n[n.LARGE = (0, _.xI)(d.A.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", n);
 let C = {
         [A.SMALL]: x.Ps,

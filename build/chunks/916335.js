@@ -1,12 +1,12 @@
 /** chunk id: 916335 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(775602),
+    a = n(397927),
+    r = n(775602),
     o = n(141468),
     d = n(963852),
     c = n(763754),
@@ -16,7 +16,7 @@ var i = n(627968),
     g = n(253932),
     A = n(652215),
     h = n(985018),
-    x = n(468209);
+    x = n(317911);
 let p = new _.nA({
         id: "1337",
         guild_id: "1337",
@@ -24,13 +24,13 @@ let p = new _.nA({
         name: "preview"
     }),
     T = [{
-        status: r.clD.IDLE,
+        status: a.clD.IDLE,
         discriminator: "2"
     }, {
-        status: r.clD.DND,
+        status: a.clD.DND,
         discriminator: "3"
     }, {
-        status: r.clD.ONLINE,
+        status: a.clD.ONLINE,
         mobile: !0,
         discriminator: "4"
     }];
@@ -47,7 +47,7 @@ function E(e) {
     })
 }
 
-function C() {
+function S() {
     let e = g.hH.useSetting(),
         t = g.jW.useSetting(),
         n = s.useMemo(() => [E(h.intl.formatToPlainString(h.t.BknJRT, {}), t ? [{
@@ -71,11 +71,11 @@ function C() {
             me_burst: !1,
             burst_count: 0
         }] : []), E(h.intl.formatToPlainString(h.t["4rDfgM"], {}))], [t]),
-        o = (0, l.bG)([a.A], () => a.A.messageGroupSpacing);
-    return (0, i.jsx)(r.M1G, {
+        o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
+    return (0, i.jsx)(a.M1G, {
         children: (0, i.jsx)("section", {
             "aria-label": h.intl.string(h.t.RC22qg),
-            children: (0, i.jsxs)(r.IpV, {
+            children: (0, i.jsxs)(a.IpV, {
                 className: x.VH,
                 children: [(0, i.jsx)("ol", {
                     className: x.DZ,
@@ -104,15 +104,15 @@ function C() {
                                 discriminator: n,
                                 mobile: s = !1
                             } = e;
-                            return (0, i.jsx)(r.euF, {
+                            return (0, i.jsx)(a.euF, {
                                 status: t,
                                 isMobile: s,
-                                size: r._3J.SIZE_32,
+                                size: a._3J.SIZE_32,
                                 src: m.Ay.getDefaultAvatarURL(void 0, n),
                                 "aria-label": h.intl.string(h.t.VKE5TK)
                             }, t)
                         })
-                    }), (0, i.jsx)(r.Button, {
+                    }), (0, i.jsx)(a.Button, {
                         text: h.intl.string(h.t["2RHHgz"]),
                         size: "sm",
                         variant: "primary"

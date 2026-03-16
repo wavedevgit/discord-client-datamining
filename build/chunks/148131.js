@@ -5,22 +5,22 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(284009),
-    r = n.n(l),
-    a = n(417597),
+    a = n.n(l),
+    r = n(417597),
     o = n(397927),
     d = n(287809),
     c = n(53719),
     u = n(390370),
     _ = n(191627),
-    m = n(870236),
+    m = n(842130),
     g = n(985018),
-    A = n(386787);
+    A = n(487693);
 
 function h(e) {
     let {
         user: t
-    } = e, l = (0, a.bG)([d.default], () => d.default.getCurrentUser()), h = s.useCallback(() => {
-        r()(void 0 !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
+    } = e, l = (0, r.bG)([d.default], () => d.default.getCurrentUser()), h = s.useCallback(() => {
+        a()(void 0 !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("43139").then(n.bind(n, 179950));

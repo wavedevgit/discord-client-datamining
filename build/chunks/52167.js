@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(417597),
     s = n(582754),
     l = n(736653),
-    r = n(780964),
-    a = n(287809),
+    a = n(780964),
+    r = n(287809),
     o = n(255438),
     d = n(927578),
     c = n(788868),
@@ -20,28 +20,28 @@ var i = n(417597),
     p = n(416999),
     T = n(338832),
     E = n(252373),
-    C = n(522799),
-    S = n(795710),
+    S = n(522799),
+    C = n(795710),
     f = n(484813),
-    N = n(1748),
-    b = n(772473),
+    b = n(1748),
+    N = n(772473),
     I = n(64514),
     v = n(121818),
     j = n(536851),
-    O = n(992186),
-    y = n(629139),
-    R = n(753563),
+    y = n(992186),
+    R = n(629139),
+    O = n(753563),
     P = n(584378),
     D = n(747918),
     L = n(330290),
-    M = n(252261),
-    G = n(106731);
+    G = n(252261),
+    M = n(106731);
 let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
     k = e => {
         let {
             styles: t
-        } = e, s = (0, l.Ay)(), k = (0, i.bG)([a.default], () => {
-            let e = a.default.getCurrentUser();
+        } = e, s = (0, l.Ay)(), k = (0, i.bG)([r.default], () => {
+            let e = r.default.getCurrentUser();
             return d.Ay.canUsePremiumProfileCustomization(e)
         }), V = (0, o.Xq)(c.f3 / 1024, {
             useKibibytes: !0
@@ -69,13 +69,13 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             customAppIcons: {
                 title: m.intl.string(m.t.OuItFi),
                 description: m.intl.string(m.t.mPyrE6),
-                imageSource: O,
+                imageSource: y,
                 imageClassName: t.customAppIconImage
             },
             emoji: {
                 title: m.intl.string(m.t["R2IV/Q"]),
                 description: m.intl.string(m.t.R5Xag2),
-                imageSource: y,
+                imageSource: R,
                 imageClassName: t.emojiImage
             },
             guildProfile: {
@@ -86,7 +86,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                             let {
                                 openUserSettings: t
                             } = n(840065);
-                            t(r.X.PROFILE_PANEL, {
+                            t(a.X.PROFILE_PANEL, {
                                 section: u.nc_.PROFILE_CUSTOMIZATION,
                                 scrollPosition: _._F.TRY_IT_OUT,
                                 analyticsLocations: e
@@ -105,7 +105,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             longerMessages: {
                 title: m.intl.string(m.t.BUScid),
                 description: m.intl.string(m.t.vN6XpQ),
-                imageSource: U(s, R, P),
+                imageSource: U(s, O, P),
                 imageClassName: t.longerMessagesImage
             },
             moreGuilds: {
@@ -123,7 +123,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             soundboard: {
                 title: m.intl.string(m.t["lGcW+c"]),
                 description: m.intl.string(m.t["/fDyO+"]),
-                imageSource: U(s, C, S),
+                imageSource: U(s, S, C),
                 imageClassName: t.soundboardImage
             },
             stickers: {
@@ -147,13 +147,13 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
             streaming: {
                 title: m.intl.string(m.t.RSXQYO),
                 description: m.intl.string(m.t.ymCPxp),
-                imageSource: M,
+                imageSource: G,
                 imageClassName: t.streamingImage
             },
             superReactions: {
                 title: m.intl.string(m.t["uZt5q/"]),
                 description: m.intl.string(m.t.ZK3ZoX),
-                imageSource: U(s, N, b),
+                imageSource: U(s, b, N),
                 imageClassName: t.superReactionsImage
             },
             upload: {
@@ -163,7 +163,7 @@ let U = (e, t, n) => (0, s.Mw)(e) ? t : n,
                 description: m.intl.formatToPlainString(m.t["HI+cfm"], {
                     premiumMaxSize: V
                 }),
-                imageSource: G,
+                imageSource: M,
                 imageClassName: t.uploadImage
             },
             videoBackground: {

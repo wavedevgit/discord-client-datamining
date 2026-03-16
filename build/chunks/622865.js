@@ -1,6 +1,6 @@
 /** chunk id: 622865 params = (module,exports,require) **/
 t.r(a), t.d(a, {
-    default: () => s,
+    default: () => o,
     messagesLoader: () => r
 });
 let {
@@ -38,5 +38,5 @@ let {
     "zh-TW": () => t.e("31759").then(t.t.bind(t, 275250, 19)),
     "en-US": () => t.e("18703").then(t.bind(t, 28018))
 }, "en-US"), {
-    makeMessagesProxy: o
-} = t(932433), s = o(r)
+    makeMessagesProxy: s
+} = t(932433), o = s(r)

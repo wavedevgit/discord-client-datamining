@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(64700),
     s = n(934551),
     l = n(554146),
-    r = n(200921),
-    a = n(419954),
+    a = n(200921),
+    r = n(419954),
     o = n(933297),
     d = n(780964),
     c = n(358776),
@@ -15,10 +15,10 @@ var i = n(64700),
     _ = n(119695),
     m = n(766761),
     g = n(985018);
-let A = (0, a.zZ)(d.X.SESSIONS_CATEGORY, {
+let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
         buildLayout: () => [_.I, m.A],
-        initialize: () => ((0, r.GY)(), () => {
-            (0, r.ZQ)()
+        initialize: () => ((0, a.GY)(), () => {
+            (0, a.ZQ)()
         }),
         useInlineNotice: function() {
             return i.useMemo(() => ({
@@ -27,12 +27,12 @@ let A = (0, a.zZ)(d.X.SESSIONS_CATEGORY, {
             }), [])
         }
     }),
-    h = (0, a.t_)(d.X.SESSIONS_PANEL, {
+    h = (0, r.t_)(d.X.SESSIONS_PANEL, {
         useTitle: () => (0, c._A)("SessionsPanel") ? g.intl.string(g.t.mEndXM) : g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
         buildLayout: () => [A]
     }),
-    x = (0, a.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
+    x = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
         getDismissibleBadges: function() {

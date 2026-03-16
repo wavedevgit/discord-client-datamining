@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(97260),
     d = n(337692),
     c = n(235986),
@@ -17,21 +17,21 @@ var i = n(627968),
     A = n(967198),
     h = n(926140),
     x = n(985018),
-    p = n(42177);
+    p = n(777563);
 
 function T() {}
 let E = [h.rD.VOICE_CHANNEL];
 
-function C(e) {
+function S(e) {
     e.setOptions({
         voiceChannelGuildFilter: null
     }), e.setLimit(1 / 0)
 }
 
-function S() {
+function C() {
     return (0, i.jsx)("div", {
         className: p.i1,
-        children: (0, i.jsx)(a.Text, {
+        children: (0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             className: p.GN,
@@ -47,11 +47,11 @@ function f(e) {
     s.useEffect(() => {
         n.current = t
     });
-    let [l, r] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
-        (0, a.mMO)(async () => e => (0, i.jsx)(N, {
+    let [l, a] = s.useState(t.params?.channelId ?? void 0), d = s.useCallback(() => {
+        (0, r.mMO)(async () => e => (0, i.jsx)(b, {
             ...e,
             onSelect: e => {
-                r(e), o.A.setKeybind({
+                a(e), o.A.setKeybind({
                     ...n.current,
                     params: {
                         channelId: e
@@ -62,19 +62,19 @@ function f(e) {
     }, []);
     return (0, i.jsx)("div", {
         className: p.a8,
-        children: (0, i.jsx)(a.D0$, {
+        children: (0, i.jsx)(r.D0$, {
             label: x.intl.string(x.t.q4JpM8),
             children: (0, i.jsxs)(c.A, {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
                     className: p.$X,
-                    children: (0, i.jsx)(b, {
+                    children: (0, i.jsx)(N, {
                         channelId: l
                     })
                 }), (0, i.jsx)(c.A.Child, {
                     grow: 0,
                     shrink: 0,
-                    children: (0, i.jsx)(a.Button, {
+                    children: (0, i.jsx)(r.Button, {
                         variant: "primary",
                         text: x.intl.string(x.t.Dm8O4e),
                         onClick: d
@@ -85,24 +85,24 @@ function f(e) {
     })
 }
 
-function N(e) {
+function b(e) {
     let t, n, {
             transitionState: o,
             onClose: c,
             onSelect: T
         } = e,
         f = s.useId(),
-        N = s.useRef(null),
+        b = s.useRef(null),
         {
-            query: b,
+            query: N,
             updateQuery: I,
             queryResults: v
         } = (0, d.A)({
             visible: !0,
             autocompleterResultTypes: E,
-            autocompleterBeforeCreateSearchContext: C
+            autocompleterBeforeCreateSearchContext: S
         }),
-        j = (t = "" !== b, n = (0, r.yK)([m.Ay, _.A, A.A], () => {
+        j = (t = "" !== N, n = (0, a.yK)([m.Ay, _.A, A.A], () => {
             let e = A.A.getGuildId();
             if (t || null == e) return [];
             let n = [];
@@ -113,8 +113,8 @@ function N(e) {
             return n
         }, [t]), t ? null : n),
         {
-            focusedIndex: O,
-            setFocusedIndex: y
+            focusedIndex: y,
+            setFocusedIndex: R
         } = function(e) {
             let [t, n] = s.useState(0), i = s.useRef(e);
             return e !== i.current && 0 !== t && n(0), s.useEffect(() => {
@@ -123,28 +123,28 @@ function N(e) {
                 focusedIndex: t,
                 setFocusedIndex: n
             }
-        }(b);
+        }(N);
     s.useEffect(() => {
         let {
             current: e
-        } = N;
-        null == e || e.isItemVisible(0, O, !0) || e.scrollToIndex({
+        } = b;
+        null == e || e.isItemVisible(0, y, !0) || e.scrollToIndex({
             section: 0,
-            row: O
+            row: y
         })
-    }, [O]);
-    let R = null != j ? j.length : v.length,
+    }, [y]);
+    let O = null != j ? j.length : v.length,
         P = (() => {
-            if (null != j) return j[O]?.id;
-            let e = v[O];
+            if (null != j) return j[y]?.id;
+            let e = v[y];
             if (e?.type === h.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        D = R > 0 || "" === b ? {
+        D = O > 0 || "" === N ? {
             innerId: f,
             innerRole: "listbox",
             innerAriaLabel: x.intl.string(x.t["+N3fW7"]),
-            ref: N,
-            sections: [R],
+            ref: b,
+            sections: [O],
             renderRow: function(e) {
                 let {
                     row: t
@@ -160,12 +160,12 @@ function N(e) {
                     id: n.id,
                     channel: n,
                     category: s,
-                    focused: O === t,
-                    onMouseEnter: () => y(t),
+                    focused: y === t,
+                    onMouseEnter: () => R(t),
                     onClick: () => {
                         T(n.id), c()
                     },
-                    onFocus: () => y(t),
+                    onFocus: () => R(t),
                     children: null != l ? (0, i.jsx)("div", {
                         className: p.J5,
                         children: l.name
@@ -176,7 +176,7 @@ function N(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(S, {}),
+            renderRow: () => (0, i.jsx)(C, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
@@ -186,8 +186,8 @@ function N(e) {
         title: x.intl.string(x.t.Dm8O4e),
         subtitle: x.intl.string(x.t.q4JpM8),
         actions: void 0,
-        input: (0, i.jsx)(a.ksK, {
-            value: b,
+        input: (0, i.jsx)(r.ksK, {
+            value: N,
             onChange: I,
             onKeyDown: function(e) {
                 let t = e.key.toLowerCase();
@@ -197,25 +197,25 @@ function N(e) {
                         break;
                     case "enter": {
                         let e = (() => {
-                            if (null != j) return j[O];
-                            let e = v[O];
+                            if (null != j) return j[y];
+                            let e = v[y];
                             if (e?.type === h.rD.VOICE_CHANNEL) return e.record
                         })();
                         null == e ? T(void 0) : T(e.id), c();
                         break
                     }
                     case "arrowup":
-                        0 === O ? y(R - 1) : y(O - 1);
+                        0 === y ? R(O - 1) : R(y - 1);
                         break;
                     case "arrowdown":
-                        O >= R - 1 ? y(0) : y(O + 1)
+                        y >= O - 1 ? R(0) : R(y + 1)
                 }
             },
             placeholder: x.intl.string(x.t.tG0r7g),
             role: "combobox",
             "aria-controls": f,
-            "aria-expanded": R > 0,
-            "aria-activedescendant": R > 0 && null != P ? P : void 0,
+            "aria-expanded": O > 0,
+            "aria-activedescendant": O > 0 && null != P ? P : void 0,
             "aria-autocomplete": "list",
             spellCheck: !1,
             autoFocus: !0
@@ -224,14 +224,14 @@ function N(e) {
     })
 }
 
-function b(e) {
+function N(e) {
     let {
         channelId: t
     } = e, {
         channel: n,
         category: s,
         guild: l
-    } = (0, r.cf)([_.A, g.A], () => {
+    } = (0, a.cf)([_.A, g.A], () => {
         let e = null != t ? _.A.getChannel(t) : void 0;
         return null != e ? {
             channel: e,
@@ -243,7 +243,7 @@ function b(e) {
             guild: void 0
         }
     });
-    return null == n ? (0, i.jsx)(a.Text, {
+    return null == n ? (0, i.jsx)(r.Text, {
         variant: "text-md/medium",
         color: "text-muted",
         className: p.GN,

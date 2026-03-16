@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(955572),
     s = n(419954),
     l = n(253932),
-    r = n(780964),
-    a = n(614651),
+    a = n(780964),
+    r = n(614651),
     o = n(985018);
-let d = (0, s.Qx)(r.X.APPEARANCE_MESSAGE_DISPLAY_MODE, {
+let d = (0, s.Qx)(a.X.APPEARANCE_MESSAGE_DISPLAY_MODE, {
     useTitle: () => o.intl.string(o.t.nKRoPv),
     useSubtitle: () => o.intl.string(o.t.QntEEG),
     useOptions: () => [{
         name: o.intl.string(o.t.Jqj4cZ),
-        value: a.IE.COZY
+        value: r.IE.COZY
     }, {
         name: o.intl.string(o.t["1JNcPS"]),
-        value: a.IE.COMPACT
+        value: r.IE.COMPACT
     }],
-    useValue: () => l.hH.useSetting() ? a.IE.COMPACT : a.IE.COZY,
+    useValue: () => l.hH.useSetting() ? r.IE.COMPACT : r.IE.COZY,
     setValue: e => {
-        l.hH.updateSetting(e === a.IE.COMPACT), (0, i.AC)()
+        l.hH.updateSetting(e === r.IE.COMPACT), (0, i.AC)()
     }
 })

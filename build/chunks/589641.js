@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(308528),
-    a = n(171316),
+    a = n(308528),
+    r = n(171316),
     o = n(834981),
     d = n(558001),
     c = n(866945),
@@ -15,14 +15,14 @@ var i = n(627968),
     _ = n(12901),
     m = n(835002),
     g = n(985018),
-    A = n(870236);
+    A = n(842130);
 
 function h() {
     let e = (0, o.vx)();
     return (0, i.jsx)(c.e, {
         label: A.default.i284fU,
         labelHook: () => {
-            (0, _.default)(), r.A.openPrivateChannel({
+            (0, _.default)(), a.A.openPrivateChannel({
                 recipientIds: e
             })
         },
@@ -32,10 +32,10 @@ function h() {
 }
 
 function x() {
-    let e = (0, a.uM)(),
+    let e = (0, r.uM)(),
         t = (0, o.vx)(),
         n = s.useCallback(() => {
-            (0, _.default)(), r.A.openPrivateChannel({
+            (0, _.default)(), a.A.openPrivateChannel({
                 recipientIds: t
             }), (0, d.N)(m.YA.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE, m.YX.LEARN_MORE)
         }, [t]),

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(284009),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     d = n(73153),
     c = n(974544),
@@ -20,17 +20,17 @@ var i = n(627968),
     p = n(836602),
     T = n(622543),
     E = n(696451),
-    C = n(351906),
-    S = n(287809),
+    S = n(351906),
+    C = n(287809),
     f = n(975571),
-    N = n(927578),
-    b = n(159001),
+    b = n(927578),
+    N = n(159001),
     I = n(65767),
     v = n(281052),
     j = n(687021),
-    O = n(652215),
-    y = n(985018),
-    R = n(61687);
+    y = n(652215),
+    R = n(985018),
+    O = n(764121);
 
 function P(e) {
     (0, o.mMO)(async () => {
@@ -40,7 +40,7 @@ function P(e) {
         return n => (0, i.jsx)(t, {
             source: {
                 ...e,
-                page: O.liQ.GUILD_MEMBER_PROFILE_SETTINGS
+                page: y.liQ.GUILD_MEMBER_PROFILE_SETTINGS
             },
             ...n
         })
@@ -53,14 +53,14 @@ function D(e) {
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), D = (0, a.bG)([S.default], () => {
-        let e = S.default.getCurrentUser();
-        return r()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), L = (0, a.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, D.id) : null), M = (0, a.bG)([T.A], () => !T.A.isFetchingProfile(D.id, t?.id)), G = (0, a.bG)([C.A], () => C.A.hidePersonalInformation), {
+    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), D = (0, r.bG)([C.default], () => {
+        let e = C.default.getCurrentUser();
+        return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
+    }), L = (0, r.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, D.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(D.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: U,
         pendingNameplate: k,
         ...V
-    } = (0, a.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, x.V7)({
+    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, x.V7)({
         userId: D.id,
         image: U
     }), B = (0, g.lw)({
@@ -71,12 +71,12 @@ function D(e) {
     }), {
         pendingDisplayNameStyles: H
     } = (0, g.B0)(D, t?.id);
-    return (s.useEffect(() => () => d.h.wait(b.IM), []), G) ? (0, i.jsx)(c.A, {}) : M ? (0, i.jsxs)(_.f5, {
+    return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(_.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: y.intl.format(y.t["/PTB2E"], {
-                helpCenterLink: f.A.getArticleURL(O.MVz.GUILD_PROFILES)
+            children: R.intl.format(R.t["/PTB2E"], {
+                helpCenterLink: f.A.getArticleURL(y.MVz.GUILD_PROFILES)
             })
         }), null != t ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(j.A, {
@@ -85,8 +85,8 @@ function D(e) {
             }), (0, i.jsx)(A.A, {
                 profilePreviewTitle: (0, i.jsx)(o.Heading, {
                     variant: "heading-md/medium",
-                    className: R.Y,
-                    children: y.intl.formatToPlainString(y.t.Tc0slG, {
+                    className: O.Y,
+                    children: R.intl.formatToPlainString(R.t.Tc0slG, {
                         guildName: t?.name
                     })
                 }),
@@ -96,7 +96,7 @@ function D(e) {
                     pendingDisplayNameStyles: H,
                     user: D,
                     guild: t,
-                    canUsePremiumCustomization: N.Ay.canUsePremiumProfileCustomization(D),
+                    canUsePremiumCustomization: b.Ay.canUsePremiumProfileCustomization(D),
                     onUpsellClick: P
                 }),
                 nameplatePreview: (0, i.jsx)(m.A, {
@@ -105,7 +105,7 @@ function D(e) {
                     user: D,
                     guildId: t?.id,
                     nameplate: B,
-                    className: null == B ? R.t : void 0,
+                    className: null == B ? O.t : void 0,
                     isHighlighted: !0
                 }),
                 children: (0, i.jsx)(v.A, {})

@@ -1,41 +1,41 @@
 /** chunk id: 560010 params = (module,exports,require) **/
-t.d(s, {
-    A: () => a
+n.d(t, {
+    A: () => r
 });
-var l = t(311907),
-    n = t(73153);
-let i = {};
-class o extends l.Ay.Store {
+var i = n(311907),
+    l = n(73153);
+let s = {};
+class a extends i.Ay.Store {
     static displayName = "ChannelFollowerStatsStore";
     getFollowerStatsForChannel(e) {
-        return i[e]
+        return s[e]
     }
 }
-let a = new o(n.h, {
+let r = new a(l.h, {
     CONNECTION_OPEN: function() {
-        i = {}
+        s = {}
     },
     CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS: function(e) {
         let {
-            channelId: s,
-            stats: t
+            channelId: t,
+            stats: n
         } = e;
-        t = null != t ? t : {}, i[s] = {
+        n = null != n ? n : {}, s[t] = {
             loadingStatus: "succeeded",
             lastFetched: Date.now(),
-            channelsFollowing: t.channels_following,
-            guildMembers: t.guild_members,
-            guildsFollowing: t.guilds_following,
-            usersSeenEver: t.users_seen_ever,
-            subscribersGainedSinceLastPost: t.subscribers_gained_since_last_post,
-            subscribersLostSinceLastPost: t.subscribers_lost_since_last_post
+            channelsFollowing: n.channels_following,
+            guildMembers: n.guild_members,
+            guildsFollowing: n.guilds_following,
+            usersSeenEver: n.users_seen_ever,
+            subscribersGainedSinceLastPost: n.subscribers_gained_since_last_post,
+            subscribersLostSinceLastPost: n.subscribers_lost_since_last_post
         }
     },
     CHANNEL_FOLLOWER_STATS_FETCH_FAILURE: function(e) {
         let {
-            channelId: s
+            channelId: t
         } = e;
-        i[s] = {
+        s[t] = {
             loadingStatus: "failed",
             lastFetched: Date.now(),
             channelsFollowing: 0,

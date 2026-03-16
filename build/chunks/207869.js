@@ -26,7 +26,7 @@ var a = n(627968),
     T = n(963713),
     y = n(758836),
     S = n(985018),
-    E = n(976499);
+    E = n(703653);
 
 function N(e) {
     let {
@@ -86,7 +86,7 @@ let I = e => {
             text: S.intl.string(S.t.csptqV)
         })
     },
-    k = e => {
+    O = e => {
         let {
             quest: t
         } = e, n = (0, u.NA)({
@@ -103,7 +103,7 @@ let I = e => {
             text: n
         }) : null
     },
-    O = e => {
+    k = e => {
         let {
             quest: t,
             sourceQuestContent: n,
@@ -178,12 +178,12 @@ let I = e => {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h
-        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(k, {
+        }) : (0, v.vA)(d) ? _ = (0, a.jsx)(O, {
             quest: d
         }) : r === c.X0.CONSOLE && n ? _ = (0, a.jsx)(R, {
             quest: d,
             sourceQuestContent: t
-        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(O, {
+        }) : g && (0, v.ui)(d) ? _ = (0, a.jsx)(k, {
             quest: d,
             sourceQuestContent: t,
             taskDetails: h,

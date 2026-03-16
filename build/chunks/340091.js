@@ -1,10 +1,12 @@
 /** chunk id: 340091 params = (module,exports,require) **/
+"use strict";
 e.exports = {
     Ui: "cardContainer_cf5b44",
     Nr: "card_cf5b44",
     Io: "pill_cf5b44",
     Wi: "descriptionWrapper_cf5b44",
     h_: "description_cf5b44",
+    LF: "premiumGroupLink_cf5b44",
     XV: "descriptionClamped_cf5b44",
     j8: "featured_cf5b44",
     Cj: "ctaPlaceholder_cf5b44",

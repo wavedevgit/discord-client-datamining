@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(775602),
-    r = n(590180),
-    a = n(898461),
+    a = n(590180),
+    r = n(898461),
     o = n(207803),
     d = n(954571),
     c = n(461797),
@@ -34,9 +34,9 @@ function g() {
                 displayNameStyles: n.displayNameStyles
             }
         }, [t, e]),
-        x = (0, s.bG)([r.A], () => {
-            let e = r.A.getProduct(A);
-            return (0, a.T)(e?.items[0]) ? e.items[0] : null
+        x = (0, s.bG)([a.A], () => {
+            let e = a.A.getProduct(A);
+            return (0, r.T)(e?.items[0]) ? e.items[0] : null
         });
     (0, i.useEffect)(() => {
         (0, o.w5)({

@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(189213),
-    r = n(397927),
-    a = n(98207),
+    a = n(397927),
+    r = n(98207),
     o = n(985018),
-    d = n(528398);
+    d = n(876692);
 class c extends s.PureComponent {
     _input;
     state = {
@@ -21,7 +21,7 @@ class c extends s.PureComponent {
         this._input = e
     };
     handleRetry = async () => {
-        await a.A.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
+        await r.A.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
             retrySuccess: !0
         })
     };
@@ -30,7 +30,7 @@ class c extends s.PureComponent {
             isLoading: !0
         });
         try {
-            await a.A.confirmViewBackupCodes(this.state.code, !1), this.props.onClose()
+            await r.A.confirmViewBackupCodes(this.state.code, !1), this.props.onClose()
         } catch (e) {
             if (null == e.body) return;
             e.body.message && this.setState({
@@ -54,10 +54,10 @@ class c extends s.PureComponent {
             code: t,
             errorMessage: n,
             retrySuccess: s
-        } = this.state, a = s ? (0, i.jsx)(r.ZpM, {
-            type: r.ZpM.Types.SUCCESS,
+        } = this.state, r = s ? (0, i.jsx)(a.ZpM, {
+            type: a.ZpM.Types.SUCCESS,
             className: d.Nr,
-            children: (0, i.jsx)(r.Text, {
+            children: (0, i.jsx)(a.Text, {
                 variant: "text-md/normal",
                 children: o.intl.string(o.t.j4qu8n)
             })
@@ -77,15 +77,15 @@ class c extends s.PureComponent {
             }],
             onClose: this.props.onClose,
             transitionState: e,
-            children: (0, i.jsxs)(r.BJc, {
+            children: (0, i.jsxs)(a.BJc, {
                 direction: "vertical",
                 gap: 8,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     color: "text-default",
                     variant: "text-md/normal",
                     className: d.YK,
                     children: o.intl.string(o.t["37S9yU"])
-                }), a, (0, i.jsx)(r.ksK, {
+                }), r, (0, i.jsx)(a.ksK, {
                     inputRef: this.setRef,
                     label: o.intl.string(o.t.TjGb4Q),
                     onChange: this.handleCodeChange,
@@ -94,11 +94,11 @@ class c extends s.PureComponent {
                     autoComplete: "one-time-code",
                     autoFocus: !0,
                     error: n
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
-                    children: (0, i.jsx)(r.DUT, {
+                    children: (0, i.jsx)(a.DUT, {
                         onClick: this.handleRetry,
-                        children: (0, i.jsx)(r.MzZ, {
+                        children: (0, i.jsx)(a.MzZ, {
                             children: o.intl.string(o.t.PZgmxv)
                         })
                     })

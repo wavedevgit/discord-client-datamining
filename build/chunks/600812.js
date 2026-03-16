@@ -1,12 +1,12 @@
 /** chunk id: 600812 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 }), n(321073);
 var i = n(64700),
     s = n(771781),
     l = n(933297);
 
-function r(e) {
+function a(e) {
     let {
         persistentBadge: t,
         dismissibleBadges: n

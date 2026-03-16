@@ -6,18 +6,18 @@ var i = n(311907),
     s = n(73153);
 let l = !1;
 
-function r() {
+function a() {
     l = !1
 }
-class a extends i.Ay.Store {
+class r extends i.Ay.Store {
     isTogglesDisabled() {
         return l
     }
 }
-let o = new a(s.h, {
+let o = new r(s.h, {
     AD_PERSONALIZATION_TOGGLES_RESTRICTED: function(e) {
         l = e.disabled ?? !1
     },
-    CONNECTION_OPEN: r,
-    LOGOUT: r
+    CONNECTION_OPEN: a,
+    LOGOUT: a
 })

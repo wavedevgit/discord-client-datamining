@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(34006);
-let a = /[^0-9]/g;
+    a = n(34006);
+let r = /[^0-9]/g;
 class o extends s.PureComponent {
     _inputRef;
     selectionStart = 0;
@@ -26,9 +26,9 @@ class o extends s.PureComponent {
             onChange: i
         } = this.props, s = this._inputRef;
         if (e === n || null == s || null == n) return;
-        let l = (0, r.N)(e),
+        let l = (0, a.N)(e),
             o = s.selectionStart;
-        l === n && l.length <= 3 && n.includes("/") && !e.includes("/") ? l = l.replace(a, "") : l === n && e.includes("/") && !n.includes("/") && (l += "/"), l.length > e.length && (o += l.length - e.length), this.selectionStart = o, null != i && i(l, t)
+        l === n && l.length <= 3 && n.includes("/") && !e.includes("/") ? l = l.replace(r, "") : l === n && e.includes("/") && !n.includes("/") && (l += "/"), l.length > e.length && (o += l.length - e.length), this.selectionStart = o, null != i && i(l, t)
     };
     render() {
         return (0, i.jsx)(l.ksK, {

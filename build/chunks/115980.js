@@ -1,15 +1,15 @@
 /** chunk id: 115980 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => L,
-    HG: () => y,
-    OH: () => R,
+    HG: () => R,
+    OH: () => O,
     ac: () => P
 });
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(384904),
+    a = n(397927),
+    r = n(384904),
     o = n(974544),
     d = n(971105),
     c = n(767375),
@@ -23,42 +23,42 @@ var i = n(627968),
     p = n(295405),
     T = n(166403),
     E = n(773669),
-    C = n(780964),
-    S = n(493068),
+    S = n(780964),
+    C = n(493068),
     f = n(840065),
-    N = n(531525),
-    b = n(652215),
+    b = n(531525),
+    N = n(652215),
     I = n(985018),
-    v = n(679864);
+    v = n(231182);
 
 function j() {
     return (0, i.jsx)("div", {
         className: v.oE,
-        children: (0, i.jsx)(r.y$y, {})
+        children: (0, i.jsx)(a.y$y, {})
     })
 }
 
-function O() {
-    (0, f.openUserSettings)(C.X.GIFT_PANEL, {
-        section: b.nc_.INVENTORY
+function y() {
+    (0, f.openUserSettings)(S.X.GIFT_PANEL, {
+        section: N.nc_.INVENTORY
     })
 }
 
-function y(e) {
+function R(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, l.bG)([x.A], () => x.A.isSyncing), r = (0, l.bG)([p.A], () => p.A.paymentSources), o = (0, l.bG)([p.A], () => p.A.defaultPaymentSourceId), d = (0, l.bG)([E.default], () => E.default.locale), _ = (0, l.bG)([T.A], () => T.A.getPremiumTypeSubscription()), m = (0, l.bG)([x.A], () => x.A.isRemovingPaymentSource), g = (0, l.bG)([x.A], () => x.A.isUpdatingPaymentSource), {
+    } = e, n = (0, l.bG)([x.A], () => x.A.isSyncing), a = (0, l.bG)([p.A], () => p.A.paymentSources), o = (0, l.bG)([p.A], () => p.A.defaultPaymentSourceId), d = (0, l.bG)([E.default], () => E.default.locale), _ = (0, l.bG)([T.A], () => T.A.getPremiumTypeSubscription()), m = (0, l.bG)([x.A], () => x.A.isRemovingPaymentSource), g = (0, l.bG)([x.A], () => x.A.isUpdatingPaymentSource), {
         enabled: A
     } = (0, u.c)({
         location: "UserSettingsBilling"
     });
     return (s.useEffect(() => {
-        a.$o(), a.hP()
-    }, []), n && 0 === Object.keys(r).length) ? (0, i.jsx)(j, {}) : (0, i.jsx)(c.A, {
+        r.$o(), r.hP()
+    }, []), n && 0 === Object.keys(a).length) ? (0, i.jsx)(j, {}) : (0, i.jsx)(c.A, {
         showHeader: t,
-        paymentSources: r,
+        paymentSources: a,
         defaultPaymentSourceId: o,
-        premiumSubscriptionPaymentSourceId: null != _ && _.status !== b.Dmq.CANCELED ? _.paymentSourceId : null,
+        premiumSubscriptionPaymentSourceId: null != _ && _.status !== N.Dmq.CANCELED ? _.paymentSourceId : null,
         locale: d,
         removing: m,
         submitting: g,
@@ -66,15 +66,15 @@ function y(e) {
     })
 }
 
-function R(e) {
+function O(e) {
     let {
         className: t
     } = e;
-    return (0, i.jsx)(r.po8, {
-        messageType: r.YCn.INFO,
+    return (0, i.jsx)(a.po8, {
+        messageType: a.YCn.INFO,
         className: t,
         children: I.intl.format(I.t["8b+FXG"], {
-            onClick: O
+            onClick: y
         })
     })
 }
@@ -92,32 +92,32 @@ function D() {
     let e = (0, _.wI)("UserSettingsBilling");
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.x, {
-            setting: N.H.BILLING_PAYMENT_METHODS,
-            children: (0, i.jsx)(y, {
+            setting: b.H.BILLING_PAYMENT_METHODS,
+            children: (0, i.jsx)(R, {
                 showHeader: !0
             })
         }), e && (0, i.jsx)(g.x, {
-            setting: N.H.BILLING_STORE_COUNTRY,
-            children: (0, i.jsxs)(r.BJc, {
+            setting: b.H.BILLING_STORE_COUNTRY,
+            children: (0, i.jsxs)(a.BJc, {
                 gap: 16,
-                children: [(0, i.jsx)(r.Heading, {
+                children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-lg/semibold",
                     children: I.intl.string(I.t["3pIjBH"])
-                }), (0, i.jsx)(S.d, {})]
+                }), (0, i.jsx)(C.d, {})]
             })
         }), (0, i.jsx)(g.x, {
-            setting: N.H.BILLING_TRANSACTION_HISTORY,
+            setting: b.H.BILLING_TRANSACTION_HISTORY,
             children: (0, i.jsx)("div", {
                 className: v.TI,
-                children: (0, i.jsxs)(r.BJc, {
+                children: (0, i.jsxs)(a.BJc, {
                     gap: 16,
-                    children: [(0, i.jsx)(r.Heading, {
+                    children: [(0, i.jsx)(a.Heading, {
                         variant: "heading-lg/semibold",
                         children: I.intl.string(I.t.obLrcK)
                     }), (0, i.jsx)(P, {})]
                 })
             })
-        }), (0, i.jsx)(R, {
+        }), (0, i.jsx)(O, {
             className: v.Dt
         })]
     })

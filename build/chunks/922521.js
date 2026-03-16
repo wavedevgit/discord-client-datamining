@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(815657),
-    r = n(463570),
-    a = n(604095),
+    a = n(463570),
+    r = n(604095),
     o = n(54863);
 let d = (0, i.zZ)(s.X.LINUX_CATEGORY, {
-    buildLayout: () => [l.P, r.y, o.V],
+    buildLayout: () => [l.P, a.y, o.V],
     initialize: () => {
-        (0, a._s)()
+        (0, r._s)()
     }
 })

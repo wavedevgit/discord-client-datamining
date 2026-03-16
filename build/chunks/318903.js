@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     l = n(272053),
-    r = n(688897),
-    a = n(791498),
+    a = n(688897),
+    r = n(791498),
     o = n(590089),
     d = n(876813),
-    c = n(40937);
+    c = n(191563);
 
 function u(e) {
     let {
@@ -22,15 +22,15 @@ function u(e) {
     } = t, g = u?.(), A = m?.(), {
         parentPanelNode: h,
         parentSidebarItemNode: x
-    } = (0, r.x)(n), p = _?.(), T = h?.useTitle?.(), E = p ?? T, C = (0, a.q)(t);
+    } = (0, a.x)(n), p = _?.(), T = h?.useTitle?.(), E = p ?? T, S = (0, r.q)(t);
     if (null == h || null == E) return null;
-    let S = null != x ? x.icon : void 0;
+    let C = null != x ? x.icon : void 0;
     return (0, i.jsx)(o.U, {
         title: E,
         description: A,
-        leadingElement: null != S && (0, i.jsx)("div", {
+        leadingElement: null != C && (0, i.jsx)("div", {
             className: c.z,
-            children: (0, i.jsx)(S, {
+            children: (0, i.jsx)(C, {
                 color: "currentColor"
             })
         }),
@@ -43,7 +43,7 @@ function u(e) {
         onClick: () => {
             l.A.navigate(n, {
                 animateSidebarScroll: !1
-            }), C()
+            }), S()
         }
     })
 }

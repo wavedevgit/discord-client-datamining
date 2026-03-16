@@ -10,7 +10,7 @@ var i = n(627968),
     o = n(405269),
     d = n(652215),
     c = n(985018),
-    u = n(366688);
+    u = n(671818);
 let A = e => {
         let {
             IconComponent: t,

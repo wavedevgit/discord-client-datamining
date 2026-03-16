@@ -1,12 +1,12 @@
 /** chunk id: 490415 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968),
     s = n(64700),
     l = n(961350);
 
-function r(e) {
+function a(e) {
     return class extends s.Component {
         state = {
             isAuthenticated: l.default.isAuthenticated()

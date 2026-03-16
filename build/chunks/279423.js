@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(627968),
     s = n(158954),
     l = n(964486),
-    r = n(933297),
-    a = n(224497);
+    a = n(933297),
+    r = n(471675);
 
 function o(e) {
     let {
         notice: t
     } = e, {
         noticeType: n,
-        useText: r
-    } = t, a = r();
+        useText: a
+    } = t, r = a();
     return (0, l.Ay)(() => {
         t.trackView?.()
     }), (0, i.jsx)(s.wx6, {
         type: n,
-        children: a
+        children: r
     })
 }
 
@@ -37,11 +37,11 @@ function c(e) {
         notice: t
     } = e;
     switch (t.type) {
-        case r.lT.INLINE_NOTICE:
+        case a.lT.INLINE_NOTICE:
             return (0, i.jsx)(o, {
                 notice: t
             });
-        case r.lT.STRONGLY_DISCOURAGED_CUSTOM:
+        case a.lT.STRONGLY_DISCOURAGED_CUSTOM:
             return (0, i.jsx)(d, {
                 notice: t
             })
@@ -53,7 +53,7 @@ function u(e) {
         notice: t
     } = e;
     return (0, i.jsx)("div", {
-        className: a.l,
+        className: r.l,
         children: (0, i.jsx)(c, {
             notice: t
         })

@@ -1,22 +1,22 @@
 /** chunk id: 55691 params = (module,exports,require) **/
 n.d(t, {
-    U: () => a
+    U: () => r
 });
 var i = n(627968),
     s = n(5661),
     l = n(161319),
-    r = n(782373);
-let a = e => {
+    a = n(74019);
+let r = e => {
     let {
         percentage: t,
         isFNUserWithNoStandardSub: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: r.k,
+        className: a.k,
         children: [!1 === n && (0, i.jsx)(l.PR, {
             percentage: t
         }), (0, i.jsx)("div", {
-            className: r.Z,
+            className: a.Z,
             children: (0, i.jsx)(s.G, {})
         })]
     })

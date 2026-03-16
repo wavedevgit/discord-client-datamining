@@ -6,14 +6,14 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(975571),
-    r = n(927578),
-    a = n(580630),
+    a = n(927578),
+    r = n(580630),
     o = n(780964),
     d = n(840065),
     c = n(652215),
     u = n(788868),
     _ = n(985018),
-    m = n(448285);
+    m = n(689507);
 let g = function(e) {
     let {
         hasAppliedGuildBoosts: t,
@@ -47,8 +47,8 @@ let g = function(e) {
             })
         };
         let m = u.hd[u.gD.PREMIUM_MONTH_GUILD],
-            g = r.Ay.getDefaultPrice(m.id, n),
-            A = (0, a.CE)((0, a.$g)(g.amount, g.currency), m.interval, m.intervalCount);
+            g = a.Ay.getDefaultPrice(m.id, n),
+            A = (0, r.CE)((0, r.$g)(g.amount, g.currency), m.interval, m.intervalCount);
         return {
             subtitle: n ? _.intl.string(_.t.bhPzXR) : _.intl.string(_.t.Zs9h9Z),
             flavor: _.intl.formatToPlainString(_.t.PGgTdA, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(574381),
     s = n(311907),
     l = n(314116),
-    r = n(827343),
-    a = n(77729),
+    a = n(827343),
+    r = n(77729),
     o = n(480862),
     d = n(729410),
     c = n(419954),
@@ -30,11 +30,11 @@ let g = (0, c.zD)(_.X.VOICE_AND_VIDEO_OPENH264, {
         return (0, s.bG)([u.Ay], () => u.Ay.getOpenH264Enabled())
     },
     setValue: function(e) {
-        r.A.setOpenH264Enabled(e), (0, l.A)({
+        a.A.setOpenH264Enabled(e), (0, l.A)({
             title: m.intl.string(m.t["9jf31O"]),
             subtitle: m.intl.string(m.t["J2wg+X"]),
             confirmText: m.intl.string(m.t.BddRzS),
-            onConfirm: () => a.A.app.relaunch()
+            onConfirm: () => r.A.app.relaunch()
         })
     },
     useSearchTerms: () => ["open", "OpenH264", "H264", "codec"]

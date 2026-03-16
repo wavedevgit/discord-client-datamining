@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(827734),
-    r = n(397927),
-    a = n(985018),
-    o = n(683604);
+    a = n(397927),
+    r = n(985018),
+    o = n(927078);
 
 function d(e) {
     let {
@@ -17,14 +17,14 @@ function d(e) {
     } = e, [c, u] = s.useState(!1), [_, m] = s.useState(null), g = null != _ && (0, i.jsx)("button", {
         className: o.x6,
         onClick: () => u(e => !e),
-        children: (0, i.jsxs)(r.Text, {
+        children: (0, i.jsxs)(a.Text, {
             className: o.B0,
             variant: "text-sm/medium",
             color: "text-brand",
-            children: [c ? a.intl.string(a.t["JQX/Pb"]) : a.intl.string(a.t.Fbrd8J), c ? (0, i.jsx)(r.tN5, {
+            children: [c ? r.intl.string(r.t["JQX/Pb"]) : r.intl.string(r.t.Fbrd8J), c ? (0, i.jsx)(a.tN5, {
                 color: l.A.colors.TEXT_BRAND,
                 size: "xs"
-            }) : (0, i.jsx)(r.abt, {
+            }) : (0, i.jsx)(a.abt, {
                 color: l.A.colors.TEXT_BRAND,
                 size: "xs"
             })]
@@ -45,7 +45,7 @@ function d(e) {
     }, [x, t, n]);
     let p = "auto";
     return null != _ && (p = c ? `${_.expandedHeight}px` : `${_.truncatedHeight}px`), (0, i.jsxs)("div", {
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(a.Text, {
             ...d,
             className: o.Qs,
             lineClamp: c ? void 0 : n,

@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(990078),
-    a = n(582754),
+    a = n(990078),
+    r = n(582754),
     o = n(397927),
     d = n(736653),
     c = n(573648),
@@ -15,7 +15,7 @@ var s = n(503698),
     _ = n(882997),
     m = n(954571),
     g = n(652215),
-    A = n(501154);
+    A = n(277816);
 let h = e => {
     let {
         disabled: t = !1,
@@ -24,7 +24,7 @@ let h = e => {
         innerClassName: h,
         onConnect: x
     } = e, p = (0, d.Ay)(), T = c.A.get((0, u.ML)(n));
-    return (0, i.jsx)(r.m, {
+    return (0, i.jsx)(a.m, {
         text: T.name,
         children: (0, i.jsx)("div", {
             className: l()(A.iE, s),
@@ -34,7 +34,7 @@ let h = e => {
                     type: "button",
                     disabled: t,
                     style: {
-                        backgroundImage: `url('${(0,a.Mw)(p)?T.icon.darkSVG:T.icon.lightSVG}')`
+                        backgroundImage: `url('${(0,r.Mw)(p)?T.icon.darkSVG:T.icon.lightSVG}')`
                     },
                     onClick: null != x ? x : () => {
                         let e;

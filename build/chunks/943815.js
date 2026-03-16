@@ -2,7 +2,7 @@
 t.d(a, {
     A: () => o
 });
-var n = t(222590);
+var n = t(679740);
 let r = {
         LATIN12: n.Xh,
         LATIN24: n.ID,

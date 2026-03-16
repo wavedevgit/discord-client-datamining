@@ -1,12 +1,12 @@
 /** chunk id: 440774 params = (module,exports,require) **/
 n.d(t, {
-    B: () => a
+    B: () => r
 });
 var i = n(419954),
     s = n(780964),
     l = n(962789),
-    r = n(985018);
-let a = (0, i.E2)(s.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES, {
-    useSearchTerms: () => [r.intl.string(r.t.YpCiMt)],
+    a = n(985018);
+let r = (0, i.E2)(s.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES, {
+    useSearchTerms: () => [a.intl.string(a.t.YpCiMt)],
     Component: l.T
 })

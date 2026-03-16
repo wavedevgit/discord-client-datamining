@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(311907),
     s = n(926919),
     l = n(419954),
-    r = n(111162),
-    a = n(780964);
-let o = (0, l.zD)(a.X.LAYOUT_DEBUGGING, {
+    a = n(111162),
+    r = n(780964);
+let o = (0, l.zD)(r.X.LAYOUT_DEBUGGING, {
     useTitle: () => "Enable Layout Debugging",
     useSubtitle: () => "Renders a grid on top of the app to help debug layout alignment issues.",
-    useValue: () => (0, i.bG)([r.default], () => r.default.layoutDebuggingEnabled),
+    useValue: () => (0, i.bG)([a.default], () => a.default.layoutDebuggingEnabled),
     setValue: e => {
         (0, s.x)({
             layoutDebuggingEnabled: e

@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(802385),
-    r = n(34014),
-    a = n(985018);
+    a = n(34014),
+    r = n(985018);
 let o = (0, i.zZ)(s.X.CONTRAST, {
-    useTitle: () => a.intl.string(a.t["TYyfO/"]),
-    buildLayout: () => [l.Q, r.r]
+    useTitle: () => r.intl.string(r.t["TYyfO/"]),
+    buildLayout: () => [l.Q, a.r]
 })

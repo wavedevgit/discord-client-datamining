@@ -26,8 +26,8 @@ var a = n(627968),
     T = n(303054),
     y = n(231643),
     S = n(652215),
-    E = n(704623),
-    N = n(930821);
+    E = n(84113),
+    N = n(661251);
 
 function I(e) {
     return parseFloat(e.toFixed(3))
@@ -52,7 +52,7 @@ let R = [{
     }
 }];
 
-function k(e) {
+function O(e) {
     let {
         actionLog: t
     } = e, n = i.useMemo(() => t.traces.map(e => ({
@@ -66,7 +66,7 @@ function k(e) {
         })
     })
 }
-let O = [{
+let k = [{
     id: "action",
     name: "Action",
     group: y.fu.NONE,
@@ -104,7 +104,7 @@ let O = [{
         let {
             actionLog: t
         } = e;
-        return (0, a.jsx)(k, {
+        return (0, a.jsx)(O, {
             actionLog: t
         })
     }
@@ -114,7 +114,7 @@ function w(e) {
     let {
         actionLog: t,
         initialHeight: n
-    } = e, s = i.useMemo(() => t.error ? [...O, {
+    } = e, s = i.useMemo(() => t.error ? [...k, {
         id: "error",
         name: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(f.A, {
@@ -146,7 +146,7 @@ function w(e) {
                 })]
             })
         }
-    }] : O, [t]), {
+    }] : k, [t]), {
         TabBar: r,
         renderSelectedTab: o
     } = (0, y.Ay)({

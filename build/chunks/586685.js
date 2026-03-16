@@ -9,8 +9,8 @@ var i = n(627968);
 n(64700);
 var s = n(820284),
     l = n(793574),
-    r = n(688810),
-    a = n(459793),
+    a = n(688810),
+    r = n(459793),
     o = n(980545),
     d = n(195043),
     c = n(326911),
@@ -52,8 +52,8 @@ function h(e) {
 function x() {
     let {
         analyticsLocations: e
-    } = (0, r.Ay)(l.A.USER_SETTINGS_GIFT_INVENTORY);
-    return (0, i.jsxs)(r.f5, {
+    } = (0, a.Ay)(l.A.USER_SETTINGS_GIFT_INVENTORY);
+    return (0, i.jsxs)(a.f5, {
         value: e,
         children: [(0, i.jsx)(d.x, {
             setting: _.H.GIFT_CODE_REDEMPTION,
@@ -70,7 +70,7 @@ function x() {
             })
         }), (0, i.jsx)(d.x, {
             setting: _.H.GIFT_BLOCKED_PAYMENTS,
-            children: (0, i.jsx)(a.uK, {})
+            children: (0, i.jsx)(r.uK, {})
         })]
     })
 }

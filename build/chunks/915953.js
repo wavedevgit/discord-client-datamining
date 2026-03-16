@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(600812),
-    a = n(791498),
+    a = n(600812),
+    r = n(791498),
     o = n(244242);
 
 function d(e) {
@@ -26,20 +26,20 @@ function d(e) {
         onValueRender: p,
         asValueChanges: T,
         markers: E,
-        onMarkerRender: C,
-        stickToMarkers: S,
+        onMarkerRender: S,
+        stickToMarkers: C,
         fieldLayout: f,
-        usePersistentBadge: N,
-        getDismissibleBadges: b
-    } = t, [I] = s.useState(() => d()), v = x?.(), j = m(), O = g?.(), y = A?.(), R = h?.(), P = _?.(), D = N?.(), L = b?.(), M = (0, r.A)({
+        usePersistentBadge: b,
+        getDismissibleBadges: N
+    } = t, [I] = s.useState(() => d()), v = x?.(), j = m(), y = g?.(), R = A?.(), O = h?.(), P = _?.(), D = b?.(), L = N?.(), G = (0, a.A)({
         persistentBadge: D,
         dismissibleBadges: L
-    }), G = (0, a.q)(t);
+    }), M = (0, r.q)(t);
     return (0, i.jsxs)(o.L, {
         children: [(0, i.jsx)(l.Apm, {
             label: j,
-            description: O,
-            disabled: R,
+            description: y,
+            disabled: O,
             initialValue: I,
             value: v,
             minValue: c,
@@ -48,18 +48,18 @@ function d(e) {
             onValueRender: p,
             asValueChanges: T,
             onValueChange: e => {
-                G(), n?.(e)
+                M(), n?.(e)
             },
             orientation: "horizontal",
             markers: E,
-            onMarkerRender: C,
-            stickToMarkers: S,
+            onMarkerRender: S,
+            stickToMarkers: C,
             layout: f,
-            badge: M
-        }), null != y && (0, i.jsx)(l.Text, {
+            badge: G
+        }), null != R && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: y
+            children: R
         })]
     })
 }

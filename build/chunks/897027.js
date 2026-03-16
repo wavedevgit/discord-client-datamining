@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(807276),
-    r = n(952549),
-    a = n(172689),
+    a = n(952549),
+    r = n(172689),
     o = n(931975),
     d = n(189540),
     c = n(534771),
@@ -17,5 +17,5 @@ var i = n(419954),
 let A = (0, i.FW)(s.X.NOTIFICATION_SELECTION_FIELD_SET, {
     variant: "compact",
     useTitle: () => g.intl.string(g.t.FEVRDV),
-    buildLayout: () => [d.L, m.q, l.Z, r.E, _.N, a.M, c.q, u.q, o.q]
+    buildLayout: () => [d.L, m.q, l.Z, a.E, _.N, r.M, c.q, u.q, o.q]
 })

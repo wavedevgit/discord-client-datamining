@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(926919),
-    a = n(172272),
+    a = n(926919),
+    r = n(172272),
     o = n(540999),
     d = n(111162),
     c = n(253932),
@@ -27,7 +27,7 @@ function g() {
         isAxeEnabled: p,
         preventPopoutClose: T,
         onlyShowPreviewAppCollections: E,
-        disableAppCollectionsCache: C
+        disableAppCollectionsCache: S
     } = (0, s.cf)([d.default, o.A], () => ({
         layoutDebuggingEnabled: d.default.layoutDebuggingEnabled,
         isDeveloper: o.A.isDeveloper,
@@ -42,12 +42,12 @@ function g() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: S,
+        horizontalSpacing: C,
         verticalSpacing: f
-    } = (0, a.Or)(), {
-        setHorizontalSpacing: N,
-        setVerticalSpacing: b
-    } = a.Or.getState(), I = c.HZ.useSetting();
+    } = (0, r.Or)(), {
+        setHorizontalSpacing: b,
+        setVerticalSpacing: N
+    } = r.Or.getState(), I = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
@@ -68,7 +68,7 @@ function g() {
             label: "Forced Canary",
             checked: x,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     canary: !x
                 })
             }
@@ -77,17 +77,17 @@ function g() {
             label: "Preview Unpublished Collections",
             checked: E,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     onlyShowPreviewAppCollections: !E
                 })
             }
         }, "preview-collections"), (0, i.jsx)(l.sLh, {
             id: "disable-collections-cache",
             label: "Disable Collections Cache",
-            checked: C,
+            checked: S,
             action: () => {
-                (0, r.x)({
-                    disableAppCollectionsCache: !C
+                (0, a.x)({
+                    disableAppCollectionsCache: !S
                 })
             }
         }, "disable-collections-cache")]
@@ -104,7 +104,7 @@ function g() {
             label: "Gateway Events",
             checked: n,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     logGatewayEvents: !n
                 })
             }
@@ -113,7 +113,7 @@ function g() {
             label: "Overlay RPC Events",
             checked: g,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     logOverlayEvents: !g
                 })
             }
@@ -122,7 +122,7 @@ function g() {
             label: "Analytics Events",
             checked: A,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     logAnalyticsEvents: !A
                 })
             }
@@ -131,7 +131,7 @@ function g() {
             label: "Tracing Requests",
             checked: h,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     trace: !h
                 })
             }
@@ -140,7 +140,7 @@ function g() {
             label: "Prevent Popouts From Closing",
             checked: T,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     preventPopoutClose: !T
                 })
             }
@@ -158,7 +158,7 @@ function g() {
             label: "Accessibility Auditing",
             checked: p,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     axeEnabled: !p
                 })
             }
@@ -167,7 +167,7 @@ function g() {
             label: "Enable Layout Debugging",
             checked: e,
             action: () => {
-                (0, r.x)({
+                (0, a.x)({
                     layoutDebuggingEnabled: !e
                 })
             }
@@ -178,10 +178,10 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: S,
+                    value: C,
                     minValue: 0,
-                    maxValue: a.YR,
-                    onChange: e => N(e),
+                    maxValue: r.YR,
+                    onChange: e => b(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -193,8 +193,8 @@ function g() {
                     ref: t,
                     value: f,
                     minValue: 0,
-                    maxValue: a.YR,
-                    onChange: e => b(e),
+                    maxValue: r.YR,
+                    onChange: e => N(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`
                 })

@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var s = n(490249),
+var s = n(497766),
     l = n(397927),
-    r = n(65470),
-    a = n(792656),
+    a = n(65470),
+    r = n(792656),
     o = n(652215),
-    d = n(529504);
+    d = n(433538);
 let c = function(e) {
     let {
         isVisible: t,
@@ -31,13 +31,13 @@ let c = function(e) {
         "data-mtctest-ignore": "true",
         children: (0, i.jsxs)("div", {
             className: d.U,
-            children: [(0, i.jsx)(a.A, {
+            children: [(0, i.jsx)(r.A, {
                 size: "md",
                 subscriptionTier: n,
                 hasActivePromotion: !!c,
                 isPersistentCTA: !0,
                 premiumModalAnalyticsLocation: _
-            }), (0, i.jsx)(r.A, {
+            }), (0, i.jsx)(a.A, {
                 variant: "secondary",
                 size: "md"
             })]

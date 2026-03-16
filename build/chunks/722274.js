@@ -6,18 +6,18 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(465794),
-    r = n(795269),
-    a = n(652215),
+    a = n(795269),
+    r = n(652215),
     o = n(985018),
-    d = n(809658),
+    d = n(82652),
     c = n(888283);
 let u = () => {
     let e = {
-        section: a.JJy.REVERSE_TRIAL_BANNER
+        section: r.JJy.REVERSE_TRIAL_BANNER
     };
     return (0, i.jsxs)("div", {
         className: d.vK,
-        children: [(0, i.jsx)(r.R, {
+        children: [(0, i.jsx)(a.R, {
             text: o.intl.string(o.t.qYKftX),
             className: d.Io
         }), (0, i.jsx)("img", {

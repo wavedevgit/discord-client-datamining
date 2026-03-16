@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(627968),
     s = n(444802),
     l = n(524738),
-    r = n(871930),
-    a = n(975571),
+    a = n(871930),
+    r = n(975571),
     o = n(688912),
     d = n(443357),
     c = n(985018),
-    u = n(446170);
+    u = n(770747);
 
 function _() {
     let e = (0, s.WX)(),
@@ -25,11 +25,11 @@ function _() {
             component: () => (0, i.jsx)(d.q, {}),
             orientation: "vertical"
         }];
-    return (0, i.jsxs)(r.h, {
-        children: [(0, i.jsx)(r._, {
+    return (0, i.jsxs)(a.h, {
+        children: [(0, i.jsx)(a._, {
             header: c.intl.string(c.t["Hj/But"]),
             description: c.intl.format(c.t["H/Icz+"], {
-                learnMoreLink: a.A.getArticleURL(e)
+                learnMoreLink: r.A.getArticleURL(e)
             })
         }), (0, i.jsx)(l._, {
             tabs: t,

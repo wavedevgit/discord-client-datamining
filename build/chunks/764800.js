@@ -5,19 +5,19 @@ n.d(t, {
 var i = n(274372),
     s = n(399925),
     l = n(419954),
-    r = n(780964),
-    a = n(696016),
+    a = n(780964),
+    r = n(696016),
     o = n(985018);
 let d = (() => {
-        let e = [a.wN];
-        for (let t = 10; t <= a.qh; t += 10) e.push(t);
-        return e[e.length - 1] !== a.qh && e.push(a.qh), e
+        let e = [r.wN];
+        for (let t = 10; t <= r.qh; t += 10) e.push(t);
+        return e[e.length - 1] !== r.qh && e.push(r.qh), e
     })(),
-    c = (0, l.sN)(r.X.CLIPS_AUTO_CLIP_STORAGE_LIMIT, {
+    c = (0, l.sN)(a.X.CLIPS_AUTO_CLIP_STORAGE_LIMIT, {
         useTitle: () => o.intl.string(o.t.yfsrDI),
         useSubtitle: () => o.intl.string(o.t.vlDHdC),
-        minValue: a.wN,
-        maxValue: a.qh,
+        minValue: r.wN,
+        maxValue: r.qh,
         getInitialValue: () => i.A.getSettings().maxAutoClips,
         onValueRender: e => `${Math.floor(e)}`,
         asValueChanges: e => s.e6(Math.floor(e)),

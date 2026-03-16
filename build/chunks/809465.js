@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(481613),
-    a = n.n(r),
+    a = n(481613),
+    r = n.n(a),
     o = n(397927),
     d = n(77729),
     c = n(521502),
@@ -15,21 +15,21 @@ var s = n(503698),
     _ = n(206845),
     m = n(837921),
     g = n(985018),
-    A = n(536087);
+    A = n(355893);
 
 function h(e) {
     let {
         compact: t = !1
-    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, r = "511416", h = "2323478ae30e50bc2fa68d8a320b40d80a0f0ceb".substring(0, 7), x = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, C = function() {
-        let e = a()?.os?.toString();
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "511568", h = "2977f85d991eb29827fe567903ae8972117524b0".substring(0, 7), x = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
+        let e = r()?.os?.toString();
         if (null == e || null == d.A) return null;
         let t = d.A.os.release,
             [n, i, s] = m.Ay.parsedOSRelease;
         return e.includes("Windows 10") && void 0 !== s && s >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
-    }(), S = [s, r, `(${h})`];
-    return (null != x && (S.push(`Host ${x}`), null != T && S.push(T.toLowerCase()), null != p && S.push(`(${p})`)), S.push(`Build Override: ${null!=E?E.id:"N/A"}`), null != C && S.push(C), t) ? (0, i.jsxs)(i.Fragment, {
+    }(), C = [s, a, `(${h})`];
+    return (null != x && (C.push(`Host ${x}`), null != T && C.push(T.toLowerCase()), null != p && C.push(`(${p})`)), C.push(`Build Override: ${null!=E?E.id:"N/A"}`), null != S && C.push(S), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
-            copyValue: S.join(" "),
+            copyValue: C.join(" "),
             text: g.intl.string(g.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
@@ -44,7 +44,7 @@ function h(e) {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [s, " ", r, " ", (0, i.jsxs)("span", {
+                        children: [s, " ", a, " ", (0, i.jsxs)("span", {
                             className: A.Pc,
                             children: ["(", h, ")"]
                         })]
@@ -75,7 +75,7 @@ function h(e) {
         })]
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
-            copyValue: S.join(" "),
+            copyValue: C.join(" "),
             text: g.intl.string(g.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
@@ -91,7 +91,7 @@ function h(e) {
                         className: A.n8,
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: [s, " ", r, " ", (0, i.jsxs)("span", {
+                        children: [s, " ", a, " ", (0, i.jsxs)("span", {
                             className: A.Pc,
                             children: ["(", h, ")"]
                         })]
@@ -117,12 +117,12 @@ function h(e) {
                                 children: ["(", p, ")"]
                             }) : null]
                         }), " "]
-                    }) : null, null != C ? (0, i.jsx)(o.Text, {
+                    }) : null, null != S ? (0, i.jsx)(o.Text, {
                         tag: "span",
                         className: l()(A.n8, A.os),
                         variant: "text-xs/normal",
                         color: "text-muted",
-                        children: C
+                        children: S
                     }) : null]
                 })
             })

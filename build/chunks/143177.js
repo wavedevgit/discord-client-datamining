@@ -1,11 +1,11 @@
 /** chunk id: 143177 params = (module,exports,require) **/
 n.d(t, {
-    Y: () => r
+    Y: () => a
 });
 var i = n(419954),
     s = n(253932),
     l = n(780964);
-let r = (0, i.zD)(l.X.AD_OVERRIDE, {
+let a = (0, i.zD)(l.X.AD_OVERRIDE, {
     useTitle: () => "Always Deliver Ads",
     useSubtitle: () => "Makes the user targetable for all active ads.",
     useValue: () => s.HZ.useSetting(),

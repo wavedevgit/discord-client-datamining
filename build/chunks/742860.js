@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(503698),
     l = n.n(s),
-    r = n(490249),
+    r = n(497766),
     o = n(889137),
     d = n(311907),
     c = n(827734),
@@ -30,8 +30,8 @@ var a = n(627968),
     N = n(901406),
     I = n(792620),
     R = n(814793),
-    k = n(241124),
-    O = n(212614),
+    O = n(241124),
+    k = n(212614),
     w = n(79545),
     D = n(646764),
     M = n(398025),
@@ -50,7 +50,7 @@ var a = n(627968),
     q = n(654487),
     Q = n(272111),
     Y = n(985018),
-    J = n(569752);
+    J = n(993710);
 let X = i.forwardRef(function(e, t) {
     let {
         isHovered: n,
@@ -96,7 +96,7 @@ function Z(e) {
         onMouseLeave: () => {
             s && r && o(!1)
         },
-        children: [null != h && (0, a.jsx)(k.Sn, {
+        children: [null != h && (0, a.jsx)(O.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
             children: e => (0, a.jsx)("img", {
                 ref: e,
@@ -104,7 +104,7 @@ function Z(e) {
                 src: h.url,
                 className: J.Ue
             })
-        }), null != u ? (0, a.jsx)(k.Sn, {
+        }), null != u ? (0, a.jsx)(O.Sn, {
             id: "QuestBarContentExpanded_video",
             children: e => (0, a.jsx)(X, {
                 ref: e,
@@ -214,7 +214,7 @@ function et(e) {
                             variant: "secondary",
                             text: et,
                             onClick: Z
-                        }), V.enabled && K === w.UA.UNENROLLED && V.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(O.A, {
+                        }), V.enabled && K === w.UA.UNENROLLED && V.enabledQuestStates.has(w.UA.UNENROLLED) ? (0, a.jsx)(k.A, {
                             quest: c,
                             surface: w.V3.QUEST_BAR_FOOTER,
                             size: "sm",
@@ -248,7 +248,7 @@ function et(e) {
                 backdropFilter: (0, M.Q)(b.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, M.Q)(b.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [R.isAnimated ? (0, a.jsx)(k.Sn, {
+            children: [R.isAnimated ? (0, a.jsx)(O.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(X, {
                     ref: e,
@@ -256,7 +256,7 @@ function et(e) {
                     asset: R,
                     className: J.LO
                 })
-            }) : (0, a.jsx)(k.Sn, {
+            }) : (0, a.jsx)(O.Sn, {
                 id: "QuestBarContentExpanded_heroStatic",
                 children: e => (0, a.jsx)("img", {
                     ref: e,

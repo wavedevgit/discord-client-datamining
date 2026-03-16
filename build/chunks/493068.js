@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(732955),
-    a = n(397927),
+    a = n(732955),
+    r = n(397927),
     o = n(813077),
     d = n(500380),
     c = n(518977),
@@ -16,7 +16,7 @@ var i = n(627968),
     m = n(780964),
     g = n(798572),
     A = n(985018),
-    h = n(103128);
+    h = n(13506);
 
 function x() {
     let e = (0, l.bG)([_.default], () => _.default.getCurrentUser()?.storeCountry),
@@ -28,11 +28,11 @@ function x() {
         }, [e?.country]);
     if (null == e) return (0, i.jsxs)("div", {
         className: h.OO,
-        children: [(0, i.jsx)(a.Text, {
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: A.intl.string(A.t.jGL0O5)
-        }), (0, i.jsx)(r.$nd, {
+        }), (0, i.jsx)(a.$nd, {
             variant: "secondary",
             size: "sm",
             text: A.intl.string(A.t.EeFkoB),
@@ -53,16 +53,16 @@ function x() {
                 })
             }), (0, i.jsxs)("div", {
                 className: h.d0,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-md/semibold",
                     children: o
-                }), null != t ? (0, i.jsx)(a.Text, {
+                }), null != t ? (0, i.jsx)(r.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
                     children: t
                 }) : null]
             })]
-        }), (0, i.jsx)(r.$nd, {
+        }), (0, i.jsx)(a.$nd, {
             variant: "secondary",
             size: "sm",
             text: A.intl.string(A.t.EeFkoB),

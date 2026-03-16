@@ -1,12 +1,12 @@
 /** chunk id: 830001 params = (module,exports,require) **/
 n.d(t, {
-    f: () => N
+    f: () => b
 });
 var i = n(627968),
     s = n(934551),
     l = n(311907),
-    r = n(554146),
-    a = n(397927),
+    a = n(554146),
+    r = n(397927),
     o = n(73153),
     d = n(631670),
     c = n(252452),
@@ -20,13 +20,13 @@ var i = n(627968),
     p = n(633817),
     T = n(652215),
     E = n(985018),
-    C = n(812335);
-let S = [{
+    S = n(722125);
+let C = [{
         badgeType: m.Xi.NEW,
-        dismissibleContent: r.M.WIDGETS_USER_SETTINGS_NEW_BADGE
+        dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE
     }, {
         badgeType: m.Xi.NEW,
-        dismissibleContent: r.M.DISPLAY_NAME_STYLES_NEW_BADGE
+        dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
     f = (0, _.t_)(x.X.PROFILE_PANEL, {
         useTitle: () => E.intl.string(E.t["vi7f+q"]),
@@ -39,7 +39,7 @@ let S = [{
         }),
         buildLayout: () => [p.I]
     }),
-    N = (0, _.i4)(x.X.PROFILE_SIDEBAR_ITEM, {
+    b = (0, _.i4)(x.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => E.intl.string(E.t["vi7f+q"]),
         icon: function() {
             let e = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
@@ -48,12 +48,12 @@ let S = [{
                     avatarDecorationSrc: n
                 } = (0, A.A)({
                     userId: e?.id,
-                    size: a._3J.SIZE_48
+                    size: r._3J.SIZE_48
                 });
-            return (0, i.jsx)(a.euF, {
+            return (0, i.jsx)(r.euF, {
                 src: t,
                 avatarDecoration: n,
-                size: a._3J.SIZE_20,
+                size: r._3J.SIZE_20,
                 "aria-hidden": !0
             })
         },
@@ -64,25 +64,25 @@ let S = [{
                     avatarDecorationSrc: n
                 } = (0, A.A)({
                     userId: e?.id,
-                    size: a._3J.SIZE_48
+                    size: r._3J.SIZE_48
                 });
             return null == e ? null : (0, i.jsxs)("div", {
-                className: C.a5,
-                children: [(0, i.jsx)(a.euF, {
+                className: S.a5,
+                children: [(0, i.jsx)(r.euF, {
                     src: t,
                     avatarDecoration: n,
-                    size: a._3J.SIZE_48,
+                    size: r._3J.SIZE_48,
                     "aria-label": E.intl.string(E.t.lqaIxI)
                 }), (0, i.jsxs)("div", {
-                    className: C.FS,
-                    children: [(0, i.jsx)(a.Text, {
+                    className: S.FS,
+                    children: [(0, i.jsx)(r.Text, {
                         color: "text-strong",
                         variant: "text-md/medium",
                         lineClamp: 1,
                         children: e.globalName ?? e.username
                     }), (0, i.jsxs)("div", {
-                        className: C.Fk,
-                        children: [(0, i.jsx)(a.Text, {
+                        className: S.Fk,
+                        children: [(0, i.jsx)(r.Text, {
                             variant: "text-sm/normal",
                             color: "currentColor",
                             lineClamp: 1,
@@ -95,6 +95,6 @@ let S = [{
                 })]
             })
         },
-        getDismissibleBadges: () => S,
+        getDismissibleBadges: () => C,
         buildLayout: () => [f]
     })

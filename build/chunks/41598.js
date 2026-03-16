@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(933297),
     l = n(780964),
-    r = n(540237),
-    a = n(903718),
+    a = n(540237),
+    r = n(903718),
     o = n(193660),
     d = n(379897),
     c = n(21117),
@@ -18,7 +18,7 @@ let A = (0, i.zZ)(l.X.ACCESSIBILITY_OVERVIEW, {
     useSubnavLabel: () => g.intl.string(g.t.fTNxW7),
     useInlineNotice: () => ({
         type: s.lT.STRONGLY_DISCOURAGED_CUSTOM,
-        notice: r.A
+        notice: a.A
     }),
-    buildLayout: () => [_.V, a.E, m.k, d.j, u.G, c.b, o.w]
+    buildLayout: () => [_.V, r.E, m.k, d.j, u.G, c.b, o.w]
 })

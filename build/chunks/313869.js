@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(143236),
     s = n(723702),
     l = n(837921),
-    r = n(350535),
-    a = n(650583);
+    a = n(350535),
+    r = n(650583);
 let o = [],
     d = (e, t, n) => {
         let i = +!(0, s.isWindows)();
-        (e !== a.zY.MOUSE_BUTTON || n !== i) && o.forEach(i => i._handleEvent(e, t, n))
+        (e !== r.zY.MOUSE_BUTTON || n !== i) && o.forEach(i => i._handleEvent(e, t, n))
     };
 class c extends i.EventEmitter {
     combo = [];
@@ -21,12 +21,12 @@ class c extends i.EventEmitter {
         this.removeAllListeners(), 0 === (o = o.filter(e => e !== this)).length && l.Ay.setOnInputEventCallback(null)
     }
     toString() {
-        return (0, r.dI)(this.combo)
+        return (0, a.dI)(this.combo)
     }
     _handleEvent(e, t, n) {
         0 === t ? this.combo = this.combo.filter(t => {
             let [i, s] = t;
             return i !== e || s !== n
-        }) : (this.combo.push([e, n, (0, r._$)()]), this.emit("change", this))
+        }) : (this.combo.push([e, n, (0, a._$)()]), this.emit("change", this))
     }
 }

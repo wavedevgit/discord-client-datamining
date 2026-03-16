@@ -8,7 +8,7 @@ var i = n(627968),
     a = n.n(s),
     r = n(284009),
     o = n.n(r),
-    c = n(490249),
+    c = n(497766),
     d = n(835245),
     u = n(311907),
     h = n(827734),
@@ -49,8 +49,8 @@ var i = n(627968),
 n(827669), n(294920);
 var Y = n(478644),
     q = n(985018),
-    J = n(204794),
-    $ = n(178588);
+    J = n(401376),
+    $ = n(111314);
 
 function Z(e, t, n) {
     let i = e.startsWith("attachment://"),
@@ -206,7 +206,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
         handleOuterClick: e1
     } = (0, V.MD)(v, eT, b.id), {
         handleAutocompleteVisibilityChange: e2
-    } = (0, V.uW)(v, b.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, v, eT), e5 = (0, V.HG)(eT), e9 = (0, V.C)({
+    } = (0, V.uW)(v, b.id), e3 = (0, V.NO)(eT), e7 = (0, V.Vu)(eB, v, eT), e5 = (0, V.HG)(eT), e6 = (0, V.C)({
         editorRef: eT,
         disabled: eR,
         textValue: s,
@@ -215,9 +215,9 @@ let X = l.memo(l.forwardRef(function(e, t) {
         submit: eH
     });
     (0, G.R)(eG, b.guild_id, b.id);
-    let [e6, e4] = l.useState(!1), e8 = l.useCallback(() => {
+    let [e9, e4] = l.useState(!1), e8 = l.useCallback(() => {
         e1(), e4(!0)
-    }, [e1]), te = e6 || s.length > 0 || null != e_ || ef.length > 0, {
+    }, [e1]), te = e9 || s.length > 0 || null != e_ || ef.length > 0, {
         editorHeaderHeight: tt,
         paddingTop: tn
     } = (0, A.zhh)({
@@ -438,7 +438,7 @@ let X = l.memo(l.forwardRef(function(e, t) {
                 onSelectGIF: e7,
                 onSelectEmoji: e3,
                 onSelectKaomoji: e5,
-                onSelectSticker: e9,
+                onSelectSticker: e6,
                 channel: b,
                 closeOnModalOuterClick: eA,
                 parentModalKey: eg,

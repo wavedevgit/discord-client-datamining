@@ -1,88 +1,88 @@
 /** chunk id: 171316 params = (module,exports,require) **/
-A.d(t, {
-    KK: () => d,
-    NZ: () => a,
-    gr: () => s,
+_.d(e, {
+    KK: () => a,
+    NZ: () => o,
+    gr: () => N,
     lH: () => D,
-    uM: () => o,
-    xs: () => u
+    uM: () => O,
+    xs: () => d
 });
-var E = A(64700),
-    e = A(311907),
-    C = A(873298),
-    T = A(444802),
-    I = A(662502),
-    S = A(93857),
-    n = A(115063),
-    R = A(899847),
-    i = A(842144),
-    l = A(704724),
-    r = A(500470),
-    N = A(834981),
-    O = A(835002);
-let u = () => {
-        let _ = (0, r.x)(),
-            t = S.p7.useControlledSetting(_?.id);
-        return null == _ ? null : {
-            explicitContentNonFriendDm: (0, l.J6)({
-                teenId: _?.id,
-                setting: t?.explicitContentNonFriendDm
+var E = _(64700),
+    A = _(311907),
+    I = _(873298),
+    n = _(444802),
+    S = _(662502),
+    T = _(93857),
+    C = _(115063),
+    i = _(899847),
+    l = _(842144),
+    R = _(704724),
+    r = _(500470),
+    u = _(834981),
+    s = _(835002);
+let d = () => {
+        let t = (0, r.x)(),
+            e = T.p7.useControlledSetting(t?.id);
+        return null == t ? null : {
+            explicitContentNonFriendDm: (0, R.J6)({
+                teenId: t?.id,
+                setting: e?.explicitContentNonFriendDm
             }),
-            explicitContentFriendDm: (0, l.J6)({
-                teenId: _?.id,
-                setting: t?.explicitContentFriendDm,
+            explicitContentFriendDm: (0, R.J6)({
+                teenId: t?.id,
+                setting: e?.explicitContentFriendDm,
                 isFriend: !0
             }),
-            explicitContentGuilds: C.TO.BLUR
+            explicitContentGuilds: I.TO.BLUR
         }
     },
-    s = () => {
-        let _ = (0, r.x)(),
-            t = S.oQ.useControlledSetting(_?.id);
-        if (null == _) return null;
+    N = () => {
+        let t = (0, r.x)(),
+            e = T.oQ.useControlledSetting(t?.id);
+        if (null == t) return null;
         let {
-            goreContentNonFriendDm: A,
+            goreContentNonFriendDm: _,
             goreContentFriendDm: E
-        } = t ?? {};
+        } = e ?? {};
         return {
-            goreContentNonFriendDm: (0, l.ky)(A) ? A : (0, T.jj)({
+            goreContentNonFriendDm: (0, R.ky)(_) ? _ : (0, n.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, l.ky)(E) ? E : (0, T.jj)({
+            goreContentFriendDm: (0, R.ky)(E) ? E : (0, n.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
-            goreContentGuilds: C.TO.BLUR
+            goreContentGuilds: I.TO.BLUR
         }
     },
-    d = () => {
-        let _ = (0, r.x)(),
-            t = S.qz.useControlledSetting(_?.id),
-            A = S.yr.useControlledSetting(_?.id);
-        return null != A ? A : !!t || t
+    a = () => {
+        let t = (0, r.x)(),
+            e = T.qz.useControlledSetting(t?.id),
+            _ = T.yr.useControlledSetting(t?.id);
+        return null != _ ? _ : !!e || e
     };
 
-function a() {
-    let _ = (0, r.x)(),
-        t = S.up.useControlledSetting(_?.id),
-        A = E.useMemo(() => (0, n.Lx)(t), [t]);
-    return A.mutualGuilds && !A.all
-}
-
 function o() {
-    return (0, N.Du)()
+    let t = (0, r.x)(),
+        e = T.up.useControlledSetting(t?.id),
+        _ = E.useMemo(() => (0, C.Lx)(e), [e]);
+    return _.mutualGuilds && !_.all
 }
 
-function D(_) {
-    let t, A;
+function O() {
+    return (0, u.Du)()
+}
+
+function D(t) {
+    let e, _;
     return {
-        hasConsented: (t = (0, r.k)(), (0, e.bG)([i.A], () => i.A.hasConsented(t, _))),
-        updateConsent: (A = (0, r.k)(), E.useCallback(async t => {
-            if (null != A) try {
-                await R.Ay.updateTeenConsents(A, t ? [_] : [], t ? [] : [_])
-            } catch (_) {
-                I.A.showFailedToast(O.OB.GENERIC_ERROR)
+        hasConsented: (e = (0, r.k)(), (0, A.bG)([l.A], () => l.A.hasConsented(e, t))),
+        updateConsent: (_ = (0, r.k)(), E.useCallback(async e => {
+            if (null != _) try {
+                await i.Ay.updateTeenConsents(_, e ? [t] : [], e ? [] : [t])
+            } catch (t) {
+                S.A.showFailedToast(s.OB.GENERIC_ERROR)
             }
-        }, [A, _]))
+        }, [_, t]))
     }
 }

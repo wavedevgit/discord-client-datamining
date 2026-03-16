@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(397927),
-    r = n(757036),
-    a = n(128450),
+    a = n(757036),
+    r = n(128450),
     o = n(180020),
     d = n(576705),
     c = n(684732),
     u = n(652215),
     _ = n(788868),
     m = n(985018),
-    g = n(367915);
+    g = n(131025);
 
 function A(e) {
     let {
@@ -23,8 +23,8 @@ function A(e) {
         username: h,
         user: x,
         guild: p
-    } = e, T = n ?? A, E = (0, s.bG)([d.A], () => d.A.can(u.xBc.CHANGE_NICKNAME, p) || d.A.can(u.xBc.MANAGE_NICKNAMES, p)), C = (0, r.L)(_.PremiumTypes.TIER_2);
-    return (0, i.jsxs)(a.A, {
+    } = e, T = n ?? A, E = (0, s.bG)([d.A], () => d.A.can(u.xBc.CHANGE_NICKNAME, p) || d.A.can(u.xBc.MANAGE_NICKNAMES, p)), S = (0, a.L)(_.PremiumTypes.TIER_2);
+    return (0, i.jsxs)(r.A, {
         title: m.intl.string(m.t.me1lRk),
         errors: t,
         children: [(0, i.jsx)(l.ksK, {
@@ -36,7 +36,7 @@ function A(e) {
             },
             disabled: !E,
             helperText: E ? void 0 : m.intl.string(m.t.gzjxQi)
-        }), C && (0, i.jsx)(o.A, {
+        }), S && (0, i.jsx)(o.A, {
             user: x,
             guildId: p.id,
             className: g.F

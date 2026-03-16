@@ -21,7 +21,7 @@ var n = a(627968),
     g = a(788868),
     R = a(652215),
     x = a(985018),
-    E = a(355313);
+    E = a(340091);
 let C = e => {
     let {
         id: t,
@@ -33,18 +33,20 @@ let C = e => {
         primaryAssetClassName: S,
         backgroundAssetUrl: T,
         progress: P,
-        ctaText: y,
-        onCtaClick: D,
-        subscriptionRequired: O,
-        glowing: j,
-        progressGlowing: U = !1,
-        featured: M,
-        className: L,
-        containerClassName: w,
-        tabIndex: B = 0,
-        blurTint: k
-    } = e, G = (0, m.DP)(), {
-        fractionalState: V
+        ctaIcon: y,
+        ctaIconPosition: D,
+        ctaText: O,
+        onCtaClick: j,
+        subscriptionRequired: U,
+        glowing: M,
+        progressGlowing: L = !1,
+        featured: w,
+        className: B,
+        containerClassName: k,
+        tabIndex: G = 0,
+        blurTint: V
+    } = e, Y = (0, m.DP)(), {
+        fractionalState: W
     } = (0, f.A)();
     (0, p.A)({
         type: d.ImpressionTypes.VIEW,
@@ -53,40 +55,40 @@ let C = e => {
             name: t
         }
     });
-    let Y = r.useMemo(() => (0, i.debounce)(() => {
+    let H = r.useMemo(() => (0, i.debounce)(() => {
             A.default.track(R.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
                 card_type: (0, i.snakeCase)(a)
             })
         }, 800), [a]),
-        W = r.useCallback(() => {
-            null != D && (D(), A.default.track(R.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+        F = r.useCallback(() => {
+            null != j && (j(), A.default.track(R.HAw.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
                 card_type: (0, i.snakeCase)(a),
-                function_name: (0, i.snakeCase)(D.name)
+                function_name: (0, i.snakeCase)(j.name)
             }))
-        }, [D, a]),
-        H = O && V === g.xc.FP_ONLY,
-        F = !(0, i.isEmpty)(T),
-        K = F && (0, c.q)(G),
-        X = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
-        $ = H || !(0, i.isEmpty)(y);
+        }, [j, a]),
+        K = U && W === g.xc.FP_ONLY,
+        X = !(0, i.isEmpty)(T),
+        $ = X && (0, c.q)(Y),
+        z = (0, u.rdh)(u.LU0.colors.BACKGROUND_BASE_LOW).hex(),
+        J = K || !(0, i.isEmpty)(O);
     return (0, n.jsx)(o.NPJ, {
-        theme: K ? R.NJ8.DARKER : void 0,
+        theme: $ ? R.NJ8.DARKER : void 0,
         children: e => (0, n.jsxs)(_.A, {
             id: t,
-            tabIndex: B,
-            onMouseEnter: Y,
+            tabIndex: G,
+            onMouseEnter: H,
             cardType: u.sl2.PRIMARY,
             hueRotate: 25,
-            glowAmount: j ? (0, c.M)(G) ? 2 : 8 : 0,
-            blurAmount: 10 * !!j,
-            className: l()(E.Ui, w, {
-                [E.Tn]: F
+            glowAmount: M ? (0, c.M)(Y) ? 2 : 8 : 0,
+            blurAmount: 10 * !!M,
+            className: l()(E.Ui, k, {
+                [E.Tn]: X
             }),
-            cardClassName: l()(E.Nr, e, L, {
-                [E.j8]: M
+            cardClassName: l()(E.Nr, e, B, {
+                [E.j8]: w
             }),
             cardStyle: {
-                backgroundImage: F ? `url(${T})` : void 0,
+                backgroundImage: X ? `url(${T})` : void 0,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundOrigin: "padding-box",
@@ -99,7 +101,7 @@ let C = e => {
                 children: v
             }), (0, n.jsxs)("div", {
                 className: E.qh,
-                children: [M && (0, n.jsx)("div", {
+                children: [w && (0, n.jsx)("div", {
                     className: E.gW,
                     "aria-hidden": "true",
                     children: (0, n.jsx)(N, {
@@ -115,12 +117,12 @@ let C = e => {
                 children: [(0, n.jsx)("div", {
                     className: E.u_,
                     style: {
-                        "--custom-tint-color": k ?? X
+                        "--custom-tint-color": V ?? z
                     },
                     "aria-hidden": !0
                 }), (0, n.jsxs)("div", {
                     className: E.P_,
-                    children: [H && (0, n.jsxs)("div", {
+                    children: [K && (0, n.jsxs)("div", {
                         className: E.d_,
                         children: [(0, n.jsx)(u.tvc, {
                             size: "sm",
@@ -160,20 +162,22 @@ let C = e => {
                             variant: b.qP.BLUE,
                             progress: (0, i.clamp)(P, 0, 1),
                             maximum: 1,
-                            glowing: U
+                            glowing: L
                         })
-                    }), $ && (0, n.jsx)("div", {
+                    }), J && (0, n.jsx)("div", {
                         className: E.Cj
                     })]
-                }), $ && (0, n.jsxs)("div", {
+                }), J && (0, n.jsxs)("div", {
                     className: E.yk,
-                    children: [H && (0, n.jsx)(h.A, {
+                    children: [K && (0, n.jsx)(h.A, {
                         fullWidth: !0,
                         defaultTextOverride: x.intl.string(x.t.sEAnVH)
-                    }), !H && (0, n.jsx)(o.$nd, {
-                        text: y,
-                        variant: !F && (0, c.q)(G) ? "primary" : "overlay-primary",
-                        onClick: W
+                    }), !K && (0, n.jsx)(o.$nd, {
+                        icon: y,
+                        iconPosition: D,
+                        text: O,
+                        variant: !X && (0, c.q)(Y) ? "primary" : "overlay-primary",
+                        onClick: F
                     })]
                 })]
             })]

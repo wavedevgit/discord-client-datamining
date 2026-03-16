@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(311907),
     s = n(166403),
     l = n(927578),
-    r = n(422936),
-    a = n(234419),
+    a = n(422936),
+    r = n(234419),
     o = n(788868);
 
 function d(e) {
@@ -21,7 +21,7 @@ function d(e) {
         onNonTier2Subscriber: g,
         onTier2Subscriber: A,
         onCustomCriteria: h
-    } = e, x = (0, a.V)(), p = (0, r.O)(), T = (0, i.bG)([s.A], () => s.A.getPremiumTypeSubscription()), E = l.Ay.getPremiumTypeFromSubscription(T);
+    } = e, x = (0, r.V)(), p = (0, a.O)(), T = (0, i.bG)([s.A], () => s.A.getPremiumTypeSubscription()), E = l.Ay.getPremiumTypeFromSubscription(T);
     if (null != h) {
         let e = h();
         if (null != e) return e

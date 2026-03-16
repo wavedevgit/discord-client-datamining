@@ -48,24 +48,24 @@ let L = (0, s.A)((0, d.A)(function(e) {
         context: s,
         onSelect: L,
         onHeightUpdate: H
-    } = e, W = d.id, w = (0, P.A)({
+    } = e, W = d.id, K = (0, P.A)({
         userId: n.id,
         guildId: t,
         channelId: W
-    }), K = (0, O.A)(n, t, s), F = (0, y.A)(n.id, s), X = (0, V.A)(n.id), q = (0, T.A)({
+    }), w = (0, O.A)(n, t, s), F = (0, y.A)(n.id, s), X = (0, V.A)(n.id), q = (0, T.A)({
         user: n,
         context: s
     }), J = (0, g.D)({
         userId: n.id
-    }), Y = (0, i.bG)([h.A, p.A], () => {
+    }), Z = (0, i.bG)([h.A, p.A], () => {
         let e = h.A.getVoiceChannelId();
         return p.A.getChannel(e)
     }), {
-        enabled: Z
+        enabled: z
     } = b.A.useExperiment({
-        guildId: Y?.guild_id,
+        guildId: Z?.guild_id,
         location: "ThreadUserContextMenu"
-    }), z = Z ? Y?.id : null, Q = (0, S.A)(n, z), $ = (0, N.A)({
+    }), Q = z ? Z?.id : null, Y = (0, S.A)(n, Q), $ = (0, N.A)({
         user: n,
         guildId: t,
         channelId: W,
@@ -123,7 +123,7 @@ let L = (0, s.A)((0, d.A)(function(e) {
             children: [(0, l.jsx)(r.rXV, {
                 children: em
             }), (0, l.jsxs)(r.rXV, {
-                children: [w, K, F, J, q, Q, $, ee, X]
+                children: [K, w, F, J, q, Y, $, ee, X]
             }), (0, l.jsx)(r.rXV, {
                 children: ei
             }), (0, l.jsxs)(r.rXV, {

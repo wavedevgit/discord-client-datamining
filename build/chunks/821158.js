@@ -6,11 +6,11 @@ var i = n(627968);
 n(64700);
 var s = n(421380),
     l = n(397927),
-    r = n(954571),
-    a = n(322631),
+    a = n(954571),
+    r = n(322631),
     o = n(652215),
     d = n(985018),
-    c = n(865047);
+    c = n(520089);
 let u = e => {
     let {
         setIsAllPerksVisible: t,
@@ -23,9 +23,9 @@ let u = e => {
         shineSize: l._Jd.SMALL,
         className: c.Wg,
         onClick: () => {
-            t(!0), r.default.track(o.HAw.NITRO_HOME_NAVIGATION, {
+            t(!0), a.default.track(o.HAw.NITRO_HOME_NAVIGATION, {
                 current_component: n,
-                next_component: a.A2.SEE_ALL,
+                next_component: r.A2.SEE_ALL,
                 interaction_component: "See All Button"
             })
         },

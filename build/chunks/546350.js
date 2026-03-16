@@ -69,7 +69,7 @@ function o(e) {
     let R = a.useCallback(() => {
             "unfurledWithTimeout" === h && (p("unfurledWithTimeoutCanceled"), u())
         }, [u, h]),
-        k = a.useCallback(() => {
+        O = a.useCallback(() => {
             C(!1), u()
         }, [C, u]);
     return {
@@ -83,7 +83,7 @@ function o(e) {
         visibilitySpring: I,
         springConfig: S,
         onQuestBarFocus: R,
-        onUnfurlTimeoutComplete: k,
+        onUnfurlTimeoutComplete: O,
         isUnfurl: "none" !== h,
         isUnfurlTimeoutActive: "unfurledWithTimeout" === h
     }

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(936504),
-    r = n(946015),
-    a = n(311907),
+    a = n(946015),
+    r = n(311907),
     o = n(397927),
     d = n(100406),
     c = n(878460),
@@ -14,15 +14,15 @@ var i = n(627968),
     _ = n(12901),
     m = n(652215),
     g = n(431144),
-    A = n(870236),
+    A = n(842130),
     h = n(985018),
-    x = n(617331);
+    x = n(753765);
 let p = () => {
     let e = u.dm.useSetting(),
         {
             categories: t,
             initialized: n
-        } = (0, a.cf)([c.A], () => c.A.getEmailSettings());
+        } = (0, r.cf)([c.A], () => c.A.getEmailSettings());
     return s.useEffect(() => {
         null == n && (0, d.cR)()
     }, [n]), (0, i.jsx)("div", {
@@ -38,9 +38,9 @@ let p = () => {
                 className: x.MT,
                 type: o.ZpM.Types.CUSTOM,
                 outline: !0,
-                children: (0, i.jsxs)(r.s, {
-                    justify: r.s.Justify.END,
-                    children: [(0, i.jsx)(r.s.Child, {
+                children: (0, i.jsxs)(a.s, {
+                    justify: a.s.Justify.END,
+                    children: [(0, i.jsx)(a.s.Child, {
                         children: (0, i.jsx)(o.Text, {
                             variant: "text-sm/semibold",
                             color: "text-default",

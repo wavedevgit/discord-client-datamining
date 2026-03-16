@@ -1,19 +1,19 @@
 /** chunk id: 652961 params = (module,exports,require) **/
 n.d(t, {
-    F: () => a
+    F: () => r
 });
 var i = n(311907),
     s = n(397438),
     l = n(815968),
-    r = n(985018);
+    a = n(985018);
 
-function a(e) {
+function r(e) {
     return (0, i.bG)([s.A], () => (function(e) {
         switch (e) {
             case l._A.REDUCED_MOTION:
-                return r.intl.format(r.t["1dT9V4"], {});
+                return a.intl.format(a.t["1dT9V4"], {});
             case l._A.REDUCED_MOTION_STICKERS:
-                return r.intl.string(r.t["2ExvRu"]);
+                return a.intl.string(a.t["2ExvRu"]);
             default:
                 return
         }

@@ -1,15 +1,15 @@
 /** chunk id: 707685 params = (module,exports,require) **/
 a.d(t, {
-    b: () => l,
-    w: () => s
+    b: () => s,
+    w: () => l
 });
 var n = a(803842),
     i = a(652215);
-let s = {
+let l = {
         [i.IWg.MODAL_CAROUSEL_NEXT]: n.$0,
         [i.IWg.MODAL_CAROUSEL_PREV]: n.$4,
         [i.IWg.CLOSE_MODAL]: n.cu
     },
-    l = {
+    s = {
         [i.IWg.CLOSE_MODAL]: n.cu
     }

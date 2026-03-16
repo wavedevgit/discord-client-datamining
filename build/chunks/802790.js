@@ -6,11 +6,11 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(775602),
-    a = n(235986),
+    a = n(775602),
+    r = n(235986),
     o = n(899343),
     d = n(796012),
-    c = n(855206);
+    c = n(752472);
 
 function u(e) {
     let {
@@ -24,10 +24,10 @@ function u(e) {
         purchaseScene: d.V1.Scenes.STARS,
         errorScene: d.V1.Scenes.ERROR,
         successScene: d.V1.Scenes.SUCCESS
-    }), g = (0, s.bG)([r.A], () => r.A.useReducedMotion);
+    }), g = (0, s.bG)([a.A], () => a.A.useReducedMotion);
     return (0, i.jsxs)(l.rQ0, {
         "data-migration-pending": !0,
-        align: a.A.Align.START,
+        align: r.A.Align.START,
         className: c.wx,
         separator: !1,
         children: [(0, i.jsx)(d.V1, {

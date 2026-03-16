@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(355622),
-    a = n(408018),
+    a = n(355622),
+    r = n(408018),
     o = n(133343),
     d = n(915089),
     c = n(840065),
@@ -14,7 +14,7 @@ var i = n(627968),
     _ = n(128450),
     m = n(652215),
     g = n(985018),
-    A = n(656420);
+    A = n(973746);
 let h = (0, d.Ld)(),
     x = (0, u.createChannelRecord)({
         id: "1",
@@ -30,22 +30,22 @@ function T(e) {
         pendingBio: u,
         placeholder: T,
         currentBio: E,
-        disabled: C = !1
-    } = e, [S, f] = s.useState(u ?? E), [N, b] = s.useState((0, a.x7)(S)), I = s.useRef(E), v = s.useRef(!1);
+        disabled: S = !1
+    } = e, [C, f] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(C)), I = s.useRef(E), v = s.useRef(!1);
     return s.useEffect(() => {
         if (I.current !== E) {
-            let e = (0, a.x7)(E);
-            f(E), b(e)
+            let e = (0, r.x7)(E);
+            f(E), N(e)
         }
         I.current = E
     }, [E]), s.useEffect(() => {
-        void 0 !== u || S === E || v.current || (f(E), b((0, a.x7)(E)))
-    }, [u, E, S]), (0, i.jsxs)(_.A, {
+        void 0 !== u || C === E || v.current || (f(E), N((0, r.x7)(E)))
+    }, [u, E, C]), (0, i.jsxs)(_.A, {
         title: t,
         titleId: h,
         description: g.intl.string(g.t.Bbw6Ac),
         errors: n,
-        disabled: C,
+        disabled: S,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": p,
             "aria-labelledby": h,
@@ -53,15 +53,15 @@ function T(e) {
             innerClassName: A.Z,
             maxCharacterCount: m.NA2,
             onChange: function(e, t, n) {
-                t !== S && (f(t), b(n), d(t))
+                t !== C && (f(t), N(n), d(t))
             },
             placeholder: T,
             channel: x,
-            textValue: S,
-            richValue: N,
+            textValue: C,
+            richValue: b,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,
-            type: r.oU.PROFILE_BIO_INPUT,
+            type: a.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
                 v.current = !1
             },

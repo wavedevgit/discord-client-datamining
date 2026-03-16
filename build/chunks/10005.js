@@ -5,18 +5,18 @@ n.d(t, {
 var i = n(64700),
     s = n(198982),
     l = n(899847),
-    r = n(695515),
-    a = n(191627);
+    a = n(695515),
+    r = n(191627);
 
 function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [h, x] = i.useState(!1), [p, T] = i.useState(!1), [E, C] = i.useState(!1), [S, f] = i.useState(!1), N = o || c || _ || g || p || S, b = i.useCallback(async e => {
-        if (!N) {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [h, x] = i.useState(!1), [p, T] = i.useState(!1), [E, S] = i.useState(!1), [C, f] = i.useState(!1), b = o || c || _ || g || p || C, N = i.useCallback(async e => {
+        if (!b) {
             d(!0);
             try {
-                await (0, l.nt)(e, a.Ef.ACTIVE), n?.()
+                await (0, l.nt)(e, r.Ef.ACTIVE), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
@@ -24,11 +24,11 @@ function o(e) {
                 d(!1)
             }
         }
-    }, [N, t, n]), I = i.useCallback(async e => {
-        if (!N) {
+    }, [b, t, n]), I = i.useCallback(async e => {
+        if (!b) {
             u(!0);
             try {
-                await (0, l.nt)(e, a.Ef.DECLINED), n?.()
+                await (0, l.nt)(e, r.Ef.DECLINED), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
@@ -36,11 +36,11 @@ function o(e) {
                 u(!1)
             }
         }
-    }, [N, t, n]), v = i.useCallback(async e => {
-        if (!N) {
+    }, [b, t, n]), v = i.useCallback(async e => {
+        if (!b) {
             m(!0);
             try {
-                await (0, l.nt)(e, a.Ef.INACTIVE), n?.()
+                await (0, l.nt)(e, r.Ef.INACTIVE), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
@@ -48,8 +48,8 @@ function o(e) {
                 m(!1)
             }
         }
-    }, [N, t, n]), j = i.useCallback(async e => {
-        if (!N) {
+    }, [b, t, n]), j = i.useCallback(async e => {
+        if (!b) {
             A(!0);
             try {
                 await (0, l.e$)(e), n?.()
@@ -60,7 +60,7 @@ function o(e) {
                 A(!1)
             }
         }
-    }, [N, t, n]), O = i.useCallback(async () => {
+    }, [b, t, n]), y = i.useCallback(async () => {
         if (!h) {
             x(!0);
             try {
@@ -72,26 +72,26 @@ function o(e) {
                 x(!1)
             }
         }
-    }, [h, t, n]), y = i.useCallback(async e => {
+    }, [h, t, n]), R = i.useCallback(async e => {
         if (!E) {
-            C(!0);
+            S(!0);
             try {
                 await l.Ay.fetchTeenActivity(e), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                C(!1)
+                S(!1)
             }
         }
     }, [E, t, n]);
     return {
-        acceptLinkRequest: b,
+        acceptLinkRequest: N,
         declineLinkRequest: I,
         disconnectLinkRequest: v,
         cancelLinkRequest: j,
-        selectTeenUser: y,
-        getLinkCode: O,
+        selectTeenUser: R,
+        getLinkCode: y,
         requestLink: i.useCallback(async (e, i) => {
             if (!p) {
                 T(!0);
@@ -106,14 +106,14 @@ function o(e) {
             }
         }, [p, t, n]),
         loadMore: i.useCallback(async e => {
-            let n = r.A.getActionsForDisplayType(e),
+            let n = a.A.getActionsForDisplayType(e),
                 i = n[n.length - 1],
-                a = r.A.getStartId(),
-                o = r.A.getSelectedTeenId();
-            if (!S && null != a && null != o) {
+                r = a.A.getStartId(),
+                o = a.A.getSelectedTeenId();
+            if (!C && null != r && null != o) {
                 f(!0);
                 try {
-                    await l.Ay.fetchMoreTeenActivity(o, e, a, i.event_id)
+                    await l.Ay.fetchMoreTeenActivity(o, e, r, i.event_id)
                 } catch (n) {
                     let e = new s.LG(n);
                     t?.(e)
@@ -121,7 +121,7 @@ function o(e) {
                     f(!1)
                 }
             }
-        }, [S, t]),
+        }, [C, t]),
         isAcceptLoading: o,
         isDeclineLoading: c,
         isDisconnectLoading: _,
@@ -129,6 +129,6 @@ function o(e) {
         isGetLinkCodeLoading: h,
         isSelectTeenUserLoading: E,
         isRequestingLink: p,
-        isMoreLoading: S
+        isMoreLoading: C
     }
 }

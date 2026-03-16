@@ -5,20 +5,20 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(397927),
-    a = n(15285),
+    a = n(397927),
+    r = n(15285),
     o = n(942405),
     d = n(403362),
     c = n(975571),
     u = n(652215),
     _ = n(985018),
-    m = n(378945);
+    m = n(476555);
 
 function g() {
     let e = (0, o.XQ)(),
         [t, n] = s.useState(!1),
         [g, A] = s.useState(() => (0, o.TC)()),
-        h = (0, l.bG)([a.Ay], () => a.Ay.getSystemServiceStatus("input-service")),
+        h = (0, l.bG)([r.Ay], () => r.Ay.getSystemServiceStatus("input-service")),
         x = s.useCallback(async () => {
             n(!0), g ? await (0, o.z8)("windows-settings") : await (0, o.sL)("windows-settings"), n(!1), A((0, o.TC)())
         }, [g]);
@@ -28,17 +28,17 @@ function g() {
         className: m.q,
         children: [(0, i.jsxs)("div", {
             className: m.L,
-            children: [(0, i.jsx)(r.Text, {
+            children: [(0, i.jsx)(a.Text, {
                 variant: "text-md/medium",
                 color: "text-strong",
                 children: _.intl.string(_.t.roHq80)
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: _.intl.format(_.t["8CAL+D"], {
                     helpCenterLink: c.A.getArticleURL(u.MVz.SYSTEM_SERVICE)
                 })
-            }), g ? (0, i.jsx)(r.Text, {
+            }), g ? (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 color: p ? "text-feedback-positive" : "text-feedback-warning",
                 children: p ? _.intl.string(_.t.KHVMkW) : _.intl.format(_.t["5Rlr0b"], {
@@ -68,7 +68,7 @@ function g() {
                     }(h)
                 })
             }) : null]
-        }), (0, i.jsx)(r.Button, {
+        }), (0, i.jsx)(a.Button, {
             variant: g ? "critical-secondary" : "primary",
             loading: t,
             onClick: x,

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(935649),
-    r = n(847599),
-    a = n(36149),
+    a = n(847599),
+    r = n(36149),
     o = n(323073),
     d = n(264249),
     c = n(253932),
@@ -20,11 +20,11 @@ function h() {
     let e = (0, d.hT)(),
         t = (0, u.A)() ?? !0,
         n = (0, o.sP)(),
-        h = (0, a.yM)(),
+        h = (0, r.yM)(),
         x = s.useMemo(() => (!n || !!h) && !t, [n, t, h]),
         p = s.useCallback(e => {
             n && e ? l.A.showAgeVerificationGetStartedModal({
-                entryPoint: r.q1.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
+                entryPoint: a.q1.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
             }) : c.Qe.updateSetting(e)
         }, [n]);
     return (0, i.jsx)(_.h, {

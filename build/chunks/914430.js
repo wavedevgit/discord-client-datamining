@@ -1,11 +1,11 @@
 /** chunk id: 914430 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     Al: () => d,
     Gv: () => r,
-    fh: () => l,
-    rZ: () => a
+    fh: () => a,
+    rZ: () => l
 });
-var i = t(73153);
+var i = n(73153);
 
 function r(e) {
     i.h.dispatch({
@@ -14,14 +14,14 @@ function r(e) {
     })
 }
 
-function l(e) {
+function a(e) {
     i.h.dispatch({
         type: "CATEGORY_EXPAND",
         id: e
     })
 }
 
-function a(e) {
+function l(e) {
     i.h.dispatch({
         type: "CATEGORY_COLLAPSE_ALL",
         guildId: e

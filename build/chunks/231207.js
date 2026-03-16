@@ -30,9 +30,9 @@ var a = n(627968),
     N = n(166403),
     I = n(652215),
     R = n(788868),
-    k = n(606793);
+    O = n(734399);
 
-function O(e) {
+function k(e) {
     let {
         selectedGuildForGuildSub: t
     } = e, n = (0, v.uk)(t?.id)[0];
@@ -66,7 +66,7 @@ let w = function() {
     return (0, a.jsx)(x.f5, {
         value: H,
         children: (0, a.jsx)(c.IpV, {
-            className: k.XG,
+            className: O.XG,
             children: (0, a.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 24,
@@ -252,12 +252,12 @@ let w = function() {
                             variant: "text-sm/normal",
                             children: "Virtual Currency Balance:"
                         }), Y ? (0, a.jsx)("div", {
-                            className: k.wG,
+                            className: O.wG,
                             children: (0, a.jsx)(c.y$y, {
                                 type: c.tVU.SPINNING_CIRCLE
                             })
                         }) : (0, a.jsxs)("div", {
-                            className: k.dB,
+                            className: O.dB,
                             children: [null !== J && (0, a.jsxs)(c.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", J.message]
@@ -291,7 +291,7 @@ let w = function() {
                         fullWidth: !0
                     }), (0, a.jsx)(f.H, {
                         guildId: V?.id,
-                        children: (0, a.jsx)(O, {
+                        children: (0, a.jsx)(k, {
                             selectedGuildForGuildSub: V
                         })
                     })]

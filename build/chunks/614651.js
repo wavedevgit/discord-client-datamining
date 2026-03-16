@@ -10,8 +10,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(873298),
     d = n(582754),
     c = n(397927),
@@ -25,27 +25,27 @@ var i = n(627968),
     p = n(920603),
     T = n(915089),
     E = n(141468),
-    C = n(963852),
-    S = n(763754),
+    S = n(963852),
+    C = n(763754),
     f = n(20851),
-    N = n(195043),
-    b = n(97469),
+    b = n(195043),
+    N = n(97469),
     I = n(287809),
     v = n(723702),
     j = n(544028),
-    O = n(964404),
-    y = n(253932),
-    R = n(780964),
+    y = n(964404),
+    R = n(253932),
+    O = n(780964),
     P = n(70040),
     D = n(961154),
     L = n(790174),
-    M = n(840065),
-    G = n(531525),
+    G = n(840065),
+    M = n(531525),
     U = n(652215),
     k = n(381941),
     V = n(985018),
-    w = n(239589),
-    B = n(522759);
+    w = n(944255),
+    B = n(473169);
 let H = {
         COZY: "cozy",
         COMPACT: "compact"
@@ -56,35 +56,35 @@ let H = {
     X = e => {
         let t = 0;
         return [(0, E.rh)({
-            ...(0, C.Ay)({
+            ...(0, S.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t.oZxkEq)
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
         }), (0, E.rh)({
-            ...(0, C.Ay)({
+            ...(0, S.Ay)({
                 channelId: z,
                 content: (0, d.Mw)(e) ? V.intl.string(V.t["WGb/v7"]) : V.intl.string(V.t["62m4mz"])
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
         }), (0, E.rh)({
-            ...(0, C.Ay)({
+            ...(0, S.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t.a0Byo5)
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
         }), (0, E.rh)({
-            ...(0, C.Ay)({
+            ...(0, S.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t.bmwEWJ)
             }),
             state: U.cmJ.SENT,
             id: `${t++}`
         }), (0, E.rh)({
-            ...(0, C.Ay)({
+            ...(0, S.Ay)({
                 channelId: z,
                 content: V.intl.string(V.t["hK9QW/"])
             }),
@@ -108,26 +108,26 @@ let H = {
     }),
     K = () => V.intl.format(V.t.Jae48E, {
         onClick: () => {
-            (0, M.openUserSettings)(R.X.SYNC_FORCED_COLORS, {
+            (0, G.openUserSettings)(O.X.SYNC_FORCED_COLORS, {
                 section: U.nc_.ACCESSIBILITY
             })
         }
     }),
     Z = () => V.intl.format(V.t["5LEQdc"], {
         onAccessibilityClick: () => {
-            (0, M.openUserSettings)(R.X.ACCESSIBILITY_PANEL, {
+            (0, G.openUserSettings)(O.X.ACCESSIBILITY_PANEL, {
                 section: U.nc_.ACCESSIBILITY
             })
         }
     }),
     q = () => {
-        let e = y.hH.useSetting(),
-            t = y.hD.useSetting(),
-            n = y.rs.useSetting(),
+        let e = R.hH.useSetting(),
+            t = R.hD.useSetting(),
+            n = R.rs.useSetting(),
             {
                 theme: l,
                 messageGroupSpacing: o
-            } = (0, a.cf)([j.A, A.A], () => ({
+            } = (0, r.cf)([j.A, A.A], () => ({
                 theme: j.A.theme,
                 messageGroupSpacing: A.A.messageGroupSpacing
             })),
@@ -137,11 +137,11 @@ let H = {
             g = (0, d.Mw)(l) ? u : _;
         return (0, i.jsx)(c.M1G, {
             children: (0, i.jsx)(c.ZpM, {
-                className: r()(w.VH, B.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
+                className: a()(w.VH, B.C2, e ? w.Me : void 0, `group-spacing-${null!=o?o:e?k.y5:k.ES}`),
                 outline: !0,
                 "aria-hidden": !0,
                 children: g.map((t, n) => (0, i.jsx)(f.A, {
-                    author: (0, S.p_)(t),
+                    author: (0, C.p_)(t),
                     message: t,
                     compact: e,
                     isGroupStart: n % 2 == 0,
@@ -237,13 +237,13 @@ class J extends s.Component {
         let {
             value: t
         } = e;
-        y.hH.updateSetting(t === H.COMPACT), (0, g.AC)()
+        R.hH.updateSetting(t === H.COMPACT), (0, g.AC)()
     };
     handleUIDensityChange = e => {
         let {
             value: t
         } = e;
-        t !== o.NS.UNSET_UI_DENSITY && y.Xi.updateSetting(t)
+        t !== o.NS.UNSET_UI_DENSITY && R.Xi.updateSetting(t)
     };
     handleSliderRender(e) {
         return `${e.toFixed(0)}%`
@@ -275,11 +275,11 @@ class J extends s.Component {
     render() {
         let {
             density: e
-        } = this.props, t = (0, i.jsxs)(N.x, {
-            setting: G.H.APPEARANCE_THEME,
+        } = this.props, t = (0, i.jsxs)(b.x, {
+            setting: M.H.APPEARANCE_THEME,
             children: [this.renderPreview(), this.renderTheme()]
-        }), n = (0, i.jsx)(N.x, {
-            setting: G.H.APPEARANCE_ICON,
+        }), n = (0, i.jsx)(b.x, {
+            setting: M.H.APPEARANCE_ICON,
             children: (0, i.jsx)(D.yG, {})
         }), s = [{
             name: V.intl.string(V.t["7iegX4"]),
@@ -290,8 +290,8 @@ class J extends s.Component {
         }, {
             name: V.intl.string(V.t["4cuYHx"]),
             value: o.NS.COZY
-        }], l = (0, i.jsxs)(N.x, {
-            setting: G.H.APPEARANCE_LIST_SPACING,
+        }], l = (0, i.jsxs)(b.x, {
+            setting: M.H.APPEARANCE_LIST_SPACING,
             children: [(0, i.jsx)(c.z6M, {
                 label: V.intl.string(V.t["C/5V0A"]),
                 description: V.intl.string(V.t.QLZhYk),
@@ -303,8 +303,8 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), r = (0, i.jsxs)(N.x, {
-            setting: G.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
+        }), a = (0, i.jsxs)(b.x, {
+            setting: M.H.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["2ed/sA"]),
                 description: V.intl.string(V.t.u9N6Qh),
@@ -330,8 +330,8 @@ class J extends s.Component {
             }), (0, i.jsx)(c.cGx, {
                 className: w.yF
             })]
-        }), a = (0, i.jsxs)(N.x, {
-            setting: G.H.APPEARANCE_SCALING_SPACING,
+        }), r = (0, i.jsxs)(b.x, {
+            setting: M.H.APPEARANCE_SCALING_SPACING,
             children: [(0, i.jsxs)(c.nVY, {
                 label: V.intl.string(V.t["0Yh+ZX"]),
                 children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
@@ -345,29 +345,29 @@ class J extends s.Component {
         });
         return (0, i.jsxs)(L.A, {
             title: V.intl.string(V.t["iHH+ky"]),
-            children: [t, n, l, r, a, d]
+            children: [t, n, l, a, r, d]
         })
     }
 }
 
 function Q() {
-    let e = y.hH.useSetting(),
-        t = y.hD.useSetting(),
-        n = y.rs.useSetting(),
-        s = y.eh.useSetting(),
-        l = y.Xi.useSetting();
+    let e = R.hH.useSetting(),
+        t = R.hD.useSetting(),
+        n = R.rs.useSetting(),
+        s = R.eh.useSetting(),
+        l = R.Xi.useSetting();
     (0, _.Ay)(() => {
         (0, p.v)()
     });
-    let r = (0, b.qo)(),
-        o = (0, a.cf)([j.A, O.Ay, A.A, I.default, x.A], () => ({
+    let a = (0, N.qo)(),
+        o = (0, r.cf)([j.A, y.Ay, A.A, I.default, x.A], () => ({
             theme: j.A.theme,
             useForcedColors: A.A.useForcedColors,
-            useSystemTheme: O.Ay.useSystemTheme,
+            useSystemTheme: y.Ay.useSystemTheme,
             fontSize: A.A.fontSize,
             zoom: A.A.zoom,
             messageGroupSpacing: A.A.messageGroupSpacing,
-            displayCompactAvatars: O.Ay.displayCompactAvatars,
+            displayCompactAvatars: y.Ay.displayCompactAvatars,
             isStaff: I.default.getCurrentUser()?.isStaff ?? !1,
             gradientPreset: x.A.gradientPreset
         }));
@@ -376,7 +376,7 @@ function Q() {
         hideSimpleEmbedContent: t && n,
         clientTheme: s,
         density: l,
-        darkSidebar: r,
+        darkSidebar: a,
         ...o
     })
 }

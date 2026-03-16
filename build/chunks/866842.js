@@ -139,12 +139,15 @@ function R(e) {
                 }
             }
         }).filter(e => null != e).value(),
-        R = {
+        R = 0;
+    for (let e of [O, ...y])
+        for (let t of (e.position = ++R, e.channelList)) t.position = ++R;
+    let v = {
             isEmpty: () => !0,
             getRows: () => [],
             getRow: () => null
         },
-        v = {
+        G = {
             isEmpty: () => !0,
             getRows: () => [],
             getRow: () => null
@@ -171,8 +174,8 @@ function R(e) {
                 channel: n.channelList[t]
             }
         },
-        getGuildActionSection: () => R,
-        getChannelNoticeSection: () => v,
+        getGuildActionSection: () => v,
+        getChannelNoticeSection: () => G,
         getFirstVoiceChannel: () => null,
         getSectionRowsFromChannel(e) {
             let t = [O, ...y];

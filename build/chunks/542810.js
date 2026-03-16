@@ -1,0 +1,2 @@
+/** chunk id: 542810 params = (module,exports,require) **/
+p.exports = JSON.parse('{"XJ4UpB":["Изменить изображение"],"XV4qT6":["Удалить изображение"],"1OwLy1":["Ещё"],"HkszWk":["Выбрать GIF"],"bjP2Do":["Загрузить изображение"]}')

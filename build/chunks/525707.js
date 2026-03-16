@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(86379),
     s = n(419954),
     l = n(780964),
-    r = n(586685),
-    a = n(985018);
+    a = n(586685),
+    r = n(985018);
 let o = (0, s.E2)(l.X.GIFT_CODE_REDEMPTION_SETTING, {
-    Component: r.VD,
+    Component: a.VD,
     usePredicate: () => !(0, i.H)(),
-    useSearchTerms: () => [a.intl.string(a.t["jcSP+g"]), a.intl.string(a.t["il+VCo"])]
+    useSearchTerms: () => [r.intl.string(r.t["jcSP+g"]), r.intl.string(r.t["il+VCo"])]
 })

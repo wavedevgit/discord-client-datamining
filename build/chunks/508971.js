@@ -6,13 +6,13 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(989349),
-    a = n.n(r),
+    a = n(989349),
+    r = n.n(a),
     o = n(397927),
     d = n(405269),
     c = n(927018),
     u = n(906688),
-    _ = n(416005);
+    _ = n(869295);
 
 function m(e) {
     let {
@@ -20,30 +20,30 @@ function m(e) {
         dateUnlocked: n
     } = e, s = (0, c.vM)(t);
     if (null == s) return null;
-    let r = null != n,
+    let a = null != n,
         {
             name: m,
             description: g,
             hideDescriptionUntilUnlock: A,
             onAction: h
         } = s,
-        x = A && !r,
-        p = r ? "text-strong" : "text-muted",
-        T = r ? "text-default" : "text-muted",
-        E = a()(n),
-        C = null != h && r,
-        S = C ? o.DUT : "div";
-    return (0, i.jsxs)(S, {
-        className: l()(_.kL, C && _.b),
+        x = A && !a,
+        p = a ? "text-strong" : "text-muted",
+        T = a ? "text-default" : "text-muted",
+        E = r()(n),
+        S = null != h && a,
+        C = S ? o.DUT : "div";
+    return (0, i.jsxs)(C, {
+        className: l()(_.kL, S && _.b),
         onClick: () => {
-            C && h()
+            S && h()
         },
         children: [(0, i.jsx)("div", {
             className: _.zc,
             children: (0, i.jsx)(u.A, {
                 achievementId: t,
                 size: u.A.Sizes.SIZE_40,
-                unlocked: r
+                unlocked: a
             })
         }), (0, i.jsxs)("div", {
             className: _.VW,

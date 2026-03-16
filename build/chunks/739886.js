@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(120929),
-    r = n(312574),
-    a = n(861061),
+    a = n(312574),
+    r = n(861061),
     o = n(985018);
 let d = (0, i.WI)(s.X.ACTIVITY_SECTION, {
     useTitle: () => o.intl.string(o.t.SmHCFf),
-    buildLayout: () => [l.T, a.J, r.u]
+    buildLayout: () => [l.T, r.J, a.u]
 })

@@ -1,13 +1,13 @@
 /** chunk id: 857544 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => y
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(735438),
-    o = n.n(a),
+    a = n.n(l),
+    r = n(735438),
+    o = n.n(r),
     d = n(158954),
     c = n(435371),
     u = n(397927),
@@ -19,11 +19,11 @@ var i = n(627968),
     x = n(544028),
     p = n(652215),
     T = n(986238),
-    E = n(258588),
-    C = n(436833),
-    S = n(522759);
+    E = n(138666),
+    S = n(506823),
+    C = n(473169);
 let f = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
-    N = [{
+    b = [{
         id: "branch",
         value: "branch",
         label: "Branch Name"
@@ -33,7 +33,7 @@ let f = ["discord_web", "discord_marketing", "discord_developers", "discord_ios"
         label: "Commit SHA"
     }];
 
-function b(e) {
+function N(e) {
     return "discord_ios" in e || "discord_android" in e
 }
 class I extends s.Component {
@@ -61,20 +61,20 @@ class I extends s.Component {
         } = this.props;
         return (0, i.jsxs)(h.A, {
             direction: h.A.Direction.VERTICAL,
-            className: r()(E.oS, S.SX, C.N, E.nM),
+            className: a()(E.oS, C.SX, S.N, E.nM),
             children: [(0, i.jsx)(_.A, {
-                className: r()(E.lL, {
+                className: a()(E.lL, {
                     [E.zi]: s
                 }),
                 onClick: s ? void 0 : this.handleRemoveBuildOverride
             }), (0, i.jsxs)(h.A, {
-                className: S.QB,
+                className: C.QB,
                 children: [(0, i.jsx)(h.A.Child, {
                     basis: "50%",
                     children: (0, i.jsx)(u.l6P, {
                         selectionMode: "single",
                         label: "Override Type",
-                        options: N,
+                        options: b,
                         onSelectionChange: this.handleOverrideTypeChanged,
                         value: t,
                         disabled: s
@@ -229,7 +229,7 @@ class v extends s.Component {
     renderEmpty() {
         return (0, i.jsx)(u.ppr, {
             theme: x.A.theme,
-            className: r()(S.eT, S.SX),
+            className: a()(C.eT, C.SX),
             children: (0, i.jsx)(u.SGT, {
                 children: "You have no build overrides configured."
             })
@@ -287,7 +287,7 @@ class v extends s.Component {
             }), (0, i.jsx)(u.Button, {
                 variant: "primary",
                 text: "Save Build Overrides",
-                disabled: b(t ?? {}),
+                disabled: N(t ?? {}),
                 onClick: this.handleSaveChanges,
                 loading: e
             })]
@@ -300,10 +300,10 @@ class v extends s.Component {
             buildOverrides: s
         } = this.state;
         e = t ? (0, i.jsx)(u.y$y, {
-            className: S.QX
+            className: C.QX
         }) : null != s && 0 === Object.keys(s).length ? this.renderEmpty() : this.renderItems();
         let l = !n && !t && this.getAvailableProjects().length > 0,
-            r = b(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
+            a = N(s ?? {}) && "stable" !== window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, i.jsx)(u.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
                 children: "Mobile build overrides must be generated using the desktop/web stable client for now!"
@@ -325,7 +325,7 @@ class v extends s.Component {
                     })),
                     onSelectionChange: this.handleAddBuildOverride,
                     disabled: !l
-                }), r, e, (0, i.jsxs)(u.ButtonGroup, {
+                }), a, e, (0, i.jsxs)(u.ButtonGroup, {
                     justify: "end",
                     children: [this.renderRefreshButton(), this.renderLinkButton(), this.renderSaveButton()]
                 })]
@@ -464,7 +464,7 @@ class j extends s.Component {
         }), 0 === e.meta.user_ids.length && this.setStatusMessage("Warning! No users added to the whitelist! This link could be used by anyone to override their build.", 1))
     };
     isMobile() {
-        return b(this.props.buildOverrides ?? {})
+        return N(this.props.buildOverrides ?? {})
     }
     renderSettingsForm() {
         let {
@@ -473,8 +473,8 @@ class j extends s.Component {
             userIdEntry: n,
             userIdEntryError: s,
             allowedVersions: l,
-            allowedVersionEntry: r,
-            allowedVersionEntryError: a,
+            allowedVersionEntry: a,
+            allowedVersionEntryError: r,
             allowLoggedOut: o,
             experiments: d,
             experimentsError: c
@@ -502,9 +502,9 @@ class j extends s.Component {
                 children: [(0, i.jsx)(u.ksK, {
                     label: "Add allowed app version (required)",
                     autoFocus: !0,
-                    value: r,
+                    value: a,
                     onKeyDown: this.handleAllowedVersionEnter,
-                    error: a,
+                    error: r,
                     onChange: this.handleAllowedVersionEntry,
                     placeholder: "Example: 34",
                     trailing: {
@@ -585,4 +585,4 @@ class j extends s.Component {
         })
     }
 }
-let O = v
+let y = v

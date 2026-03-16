@@ -1,23 +1,23 @@
 /** chunk id: 178856 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
 var s = n(397927),
-    l = n(249692);
-let r = e => {
+    l = n(391526);
+let a = e => {
     let {
         label: t,
         onClick: n,
-        submitting: r
+        submitting: a
     } = e;
     return (0, i.jsx)(s.DUT, {
-        onClick: r ? void 0 : n,
+        onClick: a ? void 0 : n,
         className: l.x6,
         children: (0, i.jsxs)("div", {
             className: l.hQ,
-            children: [r ? (0, i.jsx)(s.y$y, {
+            children: [a ? (0, i.jsx)(s.y$y, {
                 type: s.y$y.Type.PULSING_ELLIPSIS,
                 className: l.__invalid_spinner
             }) : (0, i.jsx)(s.Text, {

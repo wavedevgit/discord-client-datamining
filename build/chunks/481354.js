@@ -11,17 +11,17 @@ function l(e) {
         width: t = 106,
         height: n = 43,
         color: l = "currentColor",
-        foreground: r,
-        ...a
+        foreground: a,
+        ...r
     } = e;
     return (0, i.jsx)("svg", {
-        ...(0, s.A)(a),
+        ...(0, s.A)(r),
         width: t,
         height: n,
         viewBox: "0 0 106 43",
         children: (0, i.jsxs)("g", {
             fill: l,
-            className: r,
+            className: a,
             fillRule: "evenodd",
             "aria-hidden": !0,
             children: [(0, i.jsx)("path", {

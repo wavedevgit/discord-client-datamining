@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(574381),
-    r = n(158954),
-    a = n(314116),
+    a = n(158954),
+    r = n(314116),
     o = n(419954),
     d = n(837921),
     c = n(780964),
@@ -18,8 +18,8 @@ let g = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
     useSearchTerms: () => [m.intl.string(m.t["/HIxyY"]), m.intl.string(m.t.B0hqpb)],
     Component: function() {
         let [e] = s.useState(() => d.Ay.getEnableHardwareAcceleration()), t = (0, u.bp)("HardwareAccelerationSetting"), n = t ? m.intl.string(m.t["/HIxyY"]) : m.intl.string(m.t["eOC/F2"]), l = t ? m.intl.string(m.t.B0hqpb) : m.intl.string(m.t.Afc7l6);
-        return (0, i.jsxs)(r.BJc, {
-            children: [(0, i.jsx)(r.dOG, {
+        return (0, i.jsxs)(a.BJc, {
+            children: [(0, i.jsx)(a.dOG, {
                 label: n,
                 description: l,
                 checked: e,
@@ -34,7 +34,7 @@ let g = (0, o.E2)(c.X.ADVANCED_HARDWARE_ACCELERATION, {
 
 function A(e) {
     let t = e ? m.intl.format(m.t.LYXRxL, {}) : m.intl.format(m.t.uDP3Kz, {});
-    (0, a.A)({
+    (0, r.A)({
         title: m.intl.string(m.t.aqpAvn),
         subtitle: t,
         confirmText: m.intl.string(m.t.vT7ckk),

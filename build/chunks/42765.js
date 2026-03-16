@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(873298),
     l = n(935649),
-    r = n(847599),
-    a = n(390248),
+    a = n(847599),
+    r = n(390248),
     o = n(444802),
     d = n(278616),
     c = n(771888),
@@ -17,7 +17,7 @@ var s = n(873298),
     g = n(639383),
     A = n(531525),
     h = n(985018),
-    x = n(870236);
+    x = n(842130);
 
 function p() {
     let e = (0, _.A)() ?? !0,
@@ -28,13 +28,13 @@ function p() {
             goreContentFriendDm: T,
             goreContentNonFriendDm: E
         } = (0, d.g)(),
-        C = e => {
+        S = e => {
             let t = Object.values(e);
-            (0, a.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
-                entryPoint: r.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
+            (0, r.hK)() && t.includes(s.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
+                entryPoint: a.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.qY)(e)
         },
-        S = [{
+        C = [{
             value: s.TO.BLUR,
             label: h.intl.string(h.t.S49Uad)
         }, {
@@ -45,12 +45,12 @@ function p() {
             value: s.TO.BLUR,
             label: h.intl.string(h.t.S49Uad)
         }],
-        N = {
+        b = {
             value: s.TO.SHOW,
             label: h.intl.string(h.t["5k5OFp"])
         };
-    e && (S.unshift(N), f.unshift(N));
-    let b = {
+    e && (C.unshift(b), f.unshift(b));
+    let N = {
         isDisabled: n,
         tooltipText: t ? h.intl.string(x.default["6Af/cw"]) : void 0
     };
@@ -60,23 +60,23 @@ function p() {
         children: [(0, i.jsx)(g.A, {
             title: h.intl.string(h.t["+uI23H"]),
             value: T,
-            onChange: e => C({
+            onChange: e => S({
                 goreContentFriendDm: e
             }),
-            options: S,
-            ...b
+            options: C,
+            ...N
         }), (0, i.jsx)(g.A, {
             title: h.intl.string(h.t["Yh+HX1"]),
             value: E,
-            onChange: e => C({
+            onChange: e => S({
                 goreContentNonFriendDm: e
             }),
-            options: S,
-            ...b
+            options: C,
+            ...N
         }), (0, i.jsx)(g.A, {
             title: h.intl.string(h.t["FP+a42"]),
             value: p,
-            onChange: e => C({
+            onChange: e => S({
                 goreContentGuilds: e
             }),
             isDisabled: !e || n,

@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(397927),
+    a = n.n(l),
+    r = n(397927),
     o = n(641324),
-    d = n(97291);
+    d = n(702421);
 
 function c(e) {
     let {
@@ -16,14 +16,14 @@ function c(e) {
         subtitle: n,
         isHiddenVisually: s
     } = e;
-    return null == t || "" === t ? null : s ? (0, i.jsx)(a.AC4, {
+    return null == t || "" === t ? null : s ? (0, i.jsx)(r.AC4, {
         tag: "legend",
         children: t
-    }) : (0, i.jsx)(a.Text, {
+    }) : (0, i.jsx)(r.Text, {
         tag: "legend",
         variant: "text-md/semibold",
         color: "text-strong",
-        className: r()(d.DD, {
+        className: a()(d.DD, {
             [d.h0]: null != n && "" !== n
         }),
         children: t
@@ -35,7 +35,7 @@ let u = s.memo(function(e) {
     } = e, {
         useTitle: n,
         useSubtitle: l,
-        layout: r,
+        layout: a,
         variant: u = "default",
         isTitleHiddenVisually: _
     } = t, m = n(), g = l?.(), A = s.useId(), h = null != m && "" !== m, x = null != g && "" !== g, p = function(e) {
@@ -52,18 +52,18 @@ let u = s.memo(function(e) {
             title: m,
             subtitle: g,
             isHiddenVisually: _
-        }), x ? (0, i.jsx)(a.Text, {
+        }), x ? (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             id: A,
             className: d.VA,
             children: g
-        }) : null, (0, i.jsx)(a.BJc, {
+        }) : null, (0, i.jsx)(r.BJc, {
             gap: p,
             padding: {
                 top: h && !_ ? 16 : 0
             },
-            children: r.map(e => (0, i.jsx)(o.A, {
+            children: a.map(e => (0, i.jsx)(o.A, {
                 node: e
             }, e.key))
         })]

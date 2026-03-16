@@ -6,14 +6,14 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(421380),
-    a = n(397927),
+    a = n(421380),
+    r = n(397927),
     o = n(688810),
     d = n(385612),
     c = n(128450),
     u = n(339984),
     _ = n(985018),
-    m = n(738296);
+    m = n(52506);
 
 function g(e) {
     let {
@@ -28,8 +28,8 @@ function g(e) {
         forcedDivider: T,
         withHighlight: E = !1
     } = e, {
-        newestAnalyticsLocation: C
-    } = (0, o.Ay)(), S = E ? a.wLn : r.$n;
+        newestAnalyticsLocation: S
+    } = (0, o.Ay)(), C = E ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
         className: A,
         title: _.intl.string(_.t.Vgdusv),
@@ -39,14 +39,14 @@ function g(e) {
         forcedDivider: T,
         children: (0, i.jsxs)("div", {
             className: m.NC,
-            children: [(0, i.jsx)(S, {
+            children: [(0, i.jsx)(C, {
                 className: l()({
                     [m.yj]: E
                 }),
-                size: r.$n.Sizes.SMALL,
+                size: a.$n.Sizes.SMALL,
                 onClick: () => (0, d.XD)({
                     uploadType: u.HL.BANNER,
-                    analyticsSource: C,
+                    analyticsSource: S,
                     guildId: g,
                     isTryItOut: p
                 }),
@@ -54,7 +54,7 @@ function g(e) {
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: m.DT,
-                children: (0, i.jsx)(a.Button, {
+                children: (0, i.jsx)(r.Button, {
                     variant: "secondary",
                     size: "sm",
                     text: null != g ? _.intl.string(_.t.jHlJNS) : _.intl.string(_.t.tT9n7D),

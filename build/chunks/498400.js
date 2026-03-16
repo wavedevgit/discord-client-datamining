@@ -1,12 +1,12 @@
 /** chunk id: 498400 params = (module,exports,require) **/
 n.d(t, {
-    A: () => G
+    A: () => M
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(311907),
+    a = n.n(l),
+    r = n(311907),
     o = n(397927),
     d = n(73153),
     c = n(384904),
@@ -20,22 +20,22 @@ var i = n(627968),
     p = n(459793),
     T = n(726649),
     E = n(611924),
-    C = n(351906),
-    S = n(287809),
+    S = n(351906),
+    C = n(287809),
     f = n(295405),
-    N = n(166403),
-    b = n(954571),
+    b = n(166403),
+    N = n(954571),
     I = n(474090),
     v = n(560138),
     j = n(694080),
-    O = n(553081),
-    y = n(422936),
-    R = n(234419),
+    y = n(553081),
+    R = n(422936),
+    O = n(234419),
     P = n(558533),
     D = n(788868),
     L = n(652215),
-    M = n(916692);
-let G = function(e) {
+    G = n(615434);
+let M = function(e) {
     let {
         entrypoint: t = D.Mf.UserSettings
     } = e;
@@ -43,19 +43,19 @@ let G = function(e) {
     let n = (0, h.H)(),
         {
             sourceAnalyticsLocations: l,
-            analyticsLocations: G
+            analyticsLocations: M
         } = (0, A.Ay)(g.A.PREMIUM_MARKETING),
-        U = (0, a.bG)([N.A], () => N.A.hasFetchedSubscriptions()),
-        k = (0, a.bG)([f.A], () => f.A.hasFetchedPaymentSources),
-        V = (0, a.bG)([S.default], () => S.default.getCurrentUser()),
+        U = (0, r.bG)([b.A], () => b.A.hasFetchedSubscriptions()),
+        k = (0, r.bG)([f.A], () => f.A.hasFetchedPaymentSources),
+        V = (0, r.bG)([C.default], () => C.default.getCurrentUser()),
         w = V?.id,
-        B = (0, R.V)(),
-        H = (0, y.O)(),
+        B = (0, O.V)(),
+        H = (0, R.O)(),
         F = (0, x.Y)(D.T7),
         [Y, z] = s.useState(!0),
         X = s.useRef(0),
         W = (0, I.YE)(V, D.PremiumTypes.TIER_2),
-        K = (0, a.bG)([v.A], () => v.A.hasFetched);
+        K = (0, r.bG)([v.A], () => v.A.hasFetched);
     s.useEffect(() => {
         K || c.xG()
     }, [K]), s.useEffect(() => {
@@ -64,28 +64,28 @@ let G = function(e) {
             await Promise.all([c.hP(), c.$o(), (0, u.zS)(null, null, L.tF5.DISCOVERY)]), X.current = Date.now() - e, z(!1)
         })
     }, []), s.useEffect(() => {
-        Y || b.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
+        Y || N.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
             load_duration_ms: X.current
         })
     }, [l, Y]), s.useEffect(() => {
         n && (null != B || null != H) && (0, j.u1)(B, H)
     }, [n, B, H]);
-    let Z = (0, a.bG)([C.A], () => C.A.enabled),
+    let Z = (0, r.bG)([S.A], () => S.A.enabled),
         q = t === D.Mf.ApplicationStoreHome,
         J = Z ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && W ? (0, i.jsx)(A.f5, {
-            value: G,
-            children: (0, i.jsx)(O.A, {
+            value: M,
+            children: (0, i.jsx)(y.A, {
                 userId: w
             })
         }) : U && F && k ? null : (0, i.jsx)("div", {
-            className: r()(M.kL, M.Lq),
+            className: a()(G.kL, G.Lq),
             children: (0, i.jsx)(o.y$y, {})
         });
     return null != J ? (0, i.jsxs)(i.Fragment, {
         children: [q && (0, i.jsx)(m.A, {}), J]
     }) : (0, i.jsx)(A.f5, {
-        value: G,
+        value: M,
         children: (0, i.jsx)(P.A, {
             entrypoint: t
         })

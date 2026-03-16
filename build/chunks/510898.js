@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(403362),
-    a = n(143582),
+    a = n(403362),
+    r = n(143582),
     o = n(915043),
     d = n(888848),
     c = n(331441),
@@ -60,7 +60,7 @@ function g(e) {
             null != t && (T(t => ({
                 ...t,
                 [e.id]: d.G.LOADING
-            })), (0, a._R)(t).then(() => {
+            })), (0, r._R)(t).then(() => {
                 T(t => ({
                     ...t,
                     [e.id]: d.G.DONE
@@ -75,7 +75,7 @@ function g(e) {
     }, [t]);
     let {
         loadState: E
-    } = (0, o.E)(), C = E !== o.mJ.LOADED;
+    } = (0, o.E)(), S = E !== o.mJ.LOADED;
     switch (A) {
         case c.R.HOME:
             return (0, i.jsx)(i.Fragment, {
@@ -84,19 +84,19 @@ function g(e) {
                     children: (0, i.jsx)(d.A, {
                         subscription: e,
                         navigateToSwitchPlan: x,
-                        loadingState: C ? d.G.LOADING : p[e.id] ?? d.G.LOADING
+                        loadingState: S ? d.G.LOADING : p[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: S, ...f
+                route: C, ...f
             } = l;
             return (0, i.jsx)(u.A, {
                 ...f,
                 navigateToHome: h
             });
         default:
-            (0, r.xb)(A)
+            (0, a.xb)(A)
     }
 }

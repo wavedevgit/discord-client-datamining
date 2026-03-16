@@ -29,9 +29,9 @@ var a = n(627968),
     E = n(42473),
     N = n(731854),
     I = n(985018),
-    R = n(83214),
-    k = n(845775),
-    O = n(565204),
+    R = n(807880),
+    O = n(368149),
+    k = n(709502),
     w = n(973324);
 
 function D(e) {
@@ -135,14 +135,14 @@ function D(e) {
                 } = n, o = s ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
                     ref: ee,
-                    className: l()(k.Lh, {
-                        [k.v8]: et,
-                        [k.q6]: s
+                    className: l()(O.Lh, {
+                        [O.v8]: et,
+                        [O.q6]: s
                     }),
                     children: [(0, a.jsx)(E.A, {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
-                        className: k.eT,
+                        className: O.eT,
                         disabled: M,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
@@ -164,20 +164,20 @@ function D(e) {
                         role: "switch",
                         ...t,
                         children: ed ? (0, a.jsx)("div", {
-                            className: l()(O.U, {
-                                [O.z]: z
+                            className: l()(k.U, {
+                                [k.z]: z
                             })
                         }) : null
                     }), (0, a.jsx)(E.A, {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),
-                        className: l()(k.UT, {
-                            [k.q6]: s
+                        className: l()(O.UT, {
+                            [O.q6]: s
                         }),
                         disabled: M,
                         icon: (0, a.jsx)(o, {
-                            className: k.$$,
+                            className: O.$$,
                             size: "custom",
                             width: 12,
                             height: 12,

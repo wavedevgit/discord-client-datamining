@@ -1,13 +1,13 @@
 /** chunk id: 534217 params = (module,exports,require) **/
 n.d(t, {
-    S: () => b
+    S: () => N
 }), n(321073);
 var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(311907),
-    a = n(397927),
+    a = n(311907),
+    r = n(397927),
     o = n(854627),
     d = n(954571),
     c = n(975571),
@@ -19,9 +19,9 @@ var s = n(503698),
     h = n(303682),
     x = n(652215),
     p = n(985018),
-    T = n(463271),
+    T = n(146449),
     E = n(544879);
-let C = e => {
+let S = e => {
         let {
             user: t
         } = e, {
@@ -29,17 +29,17 @@ let C = e => {
             eventHandlers: s
         } = (0, o.A)({
             userId: t.id,
-            size: a._3J.SIZE_24
+            size: r._3J.SIZE_24
         });
-        return (0, i.jsx)(a.euF, {
+        return (0, i.jsx)(r.euF, {
             className: T.bj,
             src: n,
             "aria-label": (0, u.mG)(t),
-            size: a._3J.SIZE_24,
+            size: r._3J.SIZE_24,
             ...s
         }, t.id)
     },
-    S = e => {
+    C = e => {
         let {
             slotIndex: t
         } = e;
@@ -58,12 +58,12 @@ let C = e => {
                 let e = [];
                 for (let n = 0; n < A.Z; n++)
                     if (t?.[n] !== void 0) {
-                        let s = (0, i.jsx)(C, {
+                        let s = (0, i.jsx)(S, {
                             user: t[n]
                         }, t[n].id);
                         e.push(s)
                     } else {
-                        let t = (0, i.jsx)(S, {
+                        let t = (0, i.jsx)(C, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -71,18 +71,18 @@ let C = e => {
             })()
         })
     },
-    N = e => {
+    b = e => {
         let {
             nReferralsSent: t
         } = e;
-        return (0, i.jsx)(a.a3E, {
+        return (0, i.jsx)(r.a3E, {
             percent: 33.3 * t,
             colorOverride: "#53ac66",
             background: T.cq,
             strokeSize: .8,
             ringColorOverrideClassName: T.e0,
             overlayClassName: t === A.Z ? T.ys : void 0,
-            children: (0, i.jsx)(a._V3, {
+            children: (0, i.jsx)(r._V3, {
                 src: E.A,
                 height: 93,
                 width: 93,
@@ -90,17 +90,17 @@ let C = e => {
             })
         })
     },
-    b = e => {
+    N = e => {
         let {
             className: t
         } = e, {
             referralSentUsers: s
-        } = (0, A.J)(), o = (0, r.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, r.bG)([m.A], () => m.A.getHasEligibleFriends()), E = o.size === A.Z && [...o.values()].every(e => e === _.aK.REDEEMED), C = o.size === A.Z;
+        } = (0, A.J)(), o = (0, a.bG)([m.A], () => m.A.getRecipientStatus()), u = (0, a.bG)([m.A], () => m.A.getHasEligibleFriends()), E = o.size === A.Z && [...o.values()].every(e => e === _.aK.REDEEMED), S = o.size === A.Z;
         return (0, i.jsxs)("div", {
             className: l()(T.kL, t),
             children: [(0, i.jsx)("div", {
                 className: T.G3,
-                children: (0, i.jsx)(N, {
+                children: (0, i.jsx)(b, {
                     nReferralsSent: o.size
                 })
             }), (0, i.jsxs)("div", {
@@ -109,11 +109,11 @@ let C = e => {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
                     className: T.n4,
-                    children: [(0, i.jsx)(a.Heading, {
+                    children: [(0, i.jsx)(r.Heading, {
                         variant: "heading-lg/semibold",
                         color: "text-strong",
                         children: p.intl.string(p.t.USo4s7)
-                    }), (0, i.jsx)(a.Text, {
+                    }), (0, i.jsx)(r.Text, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: !1 === u ? p.intl.format(p.t["zWhX/Q"], {
@@ -126,9 +126,9 @@ let C = e => {
                             helpdeskArticle: c.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
                         })
                     })]
-                }), (0, i.jsx)(a.Button, {
+                }), (0, i.jsx)(r.Button, {
                     variant: "primary",
-                    disabled: !1 === u || !0 === C,
+                    disabled: !1 === u || !0 === S,
                     text: (() => {
                         switch (g.$.getConfig({
                                 location: "ReferralBanner"
@@ -154,7 +154,7 @@ let C = e => {
                         } = e;
                         d.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                             location_stack: s
-                        }), (0, a.mMO)(async () => {
+                        }), (0, r.mMO)(async () => {
                             let {
                                 default: e
                             } = await Promise.resolve().then(n.bind(n, 303682));

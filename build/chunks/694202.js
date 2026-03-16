@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(345584),
-    r = n(253816),
-    a = n(763656),
+    a = n(253816),
+    r = n(763656),
     o = n(352345),
     d = n(985018);
 let c = (0, i.zZ)(s.X.OVERLAY_ENABLE_CATEGORY, {
     useSubnavLabel: () => d.intl.string(d.t["/dp6yY"]),
-    buildLayout: () => [r.a, o.z, a.k, l.C]
+    buildLayout: () => [a.a, o.z, r.k, l.C]
 })

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(273166),
+    a = n.n(l),
+    r = n(273166),
     o = n(885996),
     d = n(397927),
     c = n(963342),
@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(240248),
     g = n(237218),
     A = n(689296),
-    h = n(194180);
+    h = n(542858);
 
 function x(e) {
     let {
@@ -27,14 +27,14 @@ function x(e) {
         benefits: p,
         description: T
     } = n, E = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(x, n.thumbnail, 256), [x, n.thumbnail]), {
-        data: C
-    } = (0, c.j)(n.skuId), S = s.useMemo(() => {
-        if (null == C || 0 === C.length) return null;
-        let e = C[0];
+        data: S
+    } = (0, c.j)(n.skuId), C = s.useMemo(() => {
+        if (null == S || 0 === S.length) return null;
+        let e = S[0];
         return (0, _._J)(e)
-    }, [C]);
-    return null == S ? null : (0, i.jsxs)(a.q, {
-        className: r()(h.iE, l),
+    }, [S]);
+    return null == C ? null : (0, i.jsxs)(r.q, {
+        className: a()(h.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: h.qd,
@@ -49,7 +49,7 @@ function x(e) {
                         children: n.summary
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-md/medium",
-                        children: S
+                        children: C
                     })]
                 })]
             }), t]

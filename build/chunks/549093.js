@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(873298),
     s = n(815807),
     l = n(419954),
-    r = n(253932),
-    a = n(780964),
+    a = n(253932),
+    r = n(780964),
     o = n(985018);
-let d = (0, l.Hn)(a.X.REACTION_NOTIFICATIONS, {
+let d = (0, l.Hn)(r.X.REACTION_NOTIFICATIONS, {
     useTitle: () => o.intl.string(o.t.Wxj9Hp),
     useOptions: () => [{
         id: "enabled",
@@ -23,6 +23,6 @@ let d = (0, l.Hn)(a.X.REACTION_NOTIFICATIONS, {
         label: o.intl.string(o.t["xu+UDU"]),
         value: i.Tz.NOTIFICATIONS_DISABLED
     }],
-    useValue: r.Zp.useSetting,
-    setValue: e => (0, s.n4)(e, r.Zp.getSetting())
+    useValue: a.Zp.useSetting,
+    setValue: e => (0, s.n4)(e, a.Zp.getSetting())
 })

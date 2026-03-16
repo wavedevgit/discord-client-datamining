@@ -7,8 +7,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(110259),
-    a = n(732955),
+    a = n(110259),
+    r = n(732955),
     o = n(397927),
     d = n(688810),
     c = n(139286),
@@ -16,9 +16,9 @@ var s = n(503698),
     _ = n(996254),
     m = n(12901),
     g = n(738419),
-    A = n(674547),
+    A = n(520650),
     h = n(985018),
-    x = n(110948),
+    x = n(996554),
     p = n(114149);
 
 function T(e) {
@@ -28,8 +28,8 @@ function T(e) {
         analyticsLocations: n
     } = (0, d.Ay)();
     (0, c.A)({
-        name: r.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
-        type: r.ImpressionTypes.VIEW,
+        name: a.ImpressionNames.CUSTOM_THEMES_APPEARANCE_SETTINGS_BANNER,
+        type: a.ImpressionTypes.VIEW,
         properties: {
             location_stack: n
         }
@@ -59,7 +59,7 @@ function T(e) {
             })]
         }), (0, i.jsx)("div", {
             className: x.UD,
-            children: (0, i.jsx)(a.$nd, {
+            children: (0, i.jsx)(r.$nd, {
                 variant: "primary",
                 text: h.intl.string(h.t.uw9zI7),
                 onClick: () => {

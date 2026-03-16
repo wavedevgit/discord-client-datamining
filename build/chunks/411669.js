@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(666196),
-    r = n(653022),
-    a = n(802385),
+    a = n(653022),
+    r = n(802385),
     o = n(34014),
     d = n(903718),
     c = n(379897),
@@ -16,5 +16,5 @@ var i = n(419954),
     g = n(985018);
 let A = (0, i.zZ)(s.X.COLOR_AND_CONTRAST_CATEGORY, {
     useTitle: () => g.intl.string(g.t.JqvyiY),
-    buildLayout: () => [m.V, d.E, a.Q, c.j, o.r, u.b, _.K, l.k, r.V]
+    buildLayout: () => [m.V, d.E, r.Q, c.j, o.r, u.b, _.K, l.k, a.V]
 })

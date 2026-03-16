@@ -1,13 +1,13 @@
 /** chunk id: 200921 params = (module,exports,require) **/
 n.d(t, {
-    GY: () => r,
+    GY: () => a,
     U0: () => o,
-    ZQ: () => a
+    ZQ: () => r
 });
 var i = n(562465),
     s = n(73153),
     l = n(652215);
-async function r() {
+async function a() {
     let e = await i.Bo.get({
         url: l.Rsh.AUTH_SESSIONS,
         rejectWithError: !1
@@ -18,7 +18,7 @@ async function r() {
     }), e
 }
 
-function a() {
+function r() {
     s.h.dispatch({
         type: "FETCH_AUTH_SESSIONS_SUCCESS",
         sessions: []

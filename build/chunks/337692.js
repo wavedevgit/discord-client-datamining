@@ -1,25 +1,25 @@
 /** chunk id: 337692 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => r
 });
 var i = n(64700),
     s = n(77509),
     l = n(128747);
-let r = [];
+let a = [];
 
-function a(e) {
+function r(e) {
     let {
         visible: t,
         autocompleterResultTypes: n,
-        autocompleterOptions: a,
+        autocompleterOptions: r,
         autocompleterBeforeCreateSearchContext: o
-    } = e, [d, c] = i.useState(""), [u, _] = i.useState(r), m = i.useCallback((e, t) => {
-        "" === (t = t.trim()).trim() ? _(r) : _(e)
+    } = e, [d, c] = i.useState(""), [u, _] = i.useState(a), m = i.useCallback((e, t) => {
+        "" === (t = t.trim()).trim() ? _(a) : _(e)
     }, []);
     i.useEffect(() => s.A.addRouteChangeListener(() => {
         c("")
     }), []);
-    let [g] = i.useState(() => new l.A(m, n, void 0, a));
+    let [g] = i.useState(() => new l.A(m, n, void 0, r));
     return i.useEffect(() => {
         t ? (o?.(g), g.createSearchContext()) : (g.clean(), c(""))
     }, [t, g, o]), {

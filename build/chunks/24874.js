@@ -5,9 +5,9 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(513664),
-    r = n(985018),
-    a = n(730844);
+    a = n(985018),
+    r = n(536482);
 let o = (0, i.E2)(s.X.ACTIVITY_PRIVACY_PER_GUILD_SETTING, {
-    useSearchTerms: () => [r.intl.string(a.default["/LHVbt"])],
+    useSearchTerms: () => [a.intl.string(r.default["/LHVbt"])],
     Component: l.dd
 })

@@ -16,7 +16,7 @@ var l = n(503698),
     E = n(366098),
     T = n(418208),
     A = n(985018),
-    I = n(698781);
+    I = n(496447);
 
 function p(e) {
     if (!e && (0, T.Cf)()) return void a.A.showAgeVerificationGetStartedModal({

@@ -1,114 +1,114 @@
 /** chunk id: 446541 params = (module,exports,require) **/
-A.d(t, {
-    A: () => O
+_.d(e, {
+    A: () => s
 });
-var E = A(627968),
-    e = A(64700),
-    C = A(503698),
-    T = A.n(C),
-    I = A(490249),
-    S = A(615300),
-    n = A(397927),
-    R = A(311907),
-    i = A(775602),
-    l = A(628965),
-    r = A(792691);
+var E = _(627968),
+    A = _(64700),
+    I = _(503698),
+    n = _.n(I),
+    S = _(497766),
+    T = _(615300),
+    C = _(397927),
+    i = _(311907),
+    l = _(775602),
+    R = _(628965),
+    r = _(480357);
 
-function N(_) {
+function u(t) {
     let {
-        children: t,
-        className: A,
-        onFlashEnd: C,
-        animationDelay: R = 500
-    } = _, l = n.LU0.colors.TEXT_LINK, N = (0, n.rdh)(l).spring({
+        children: e,
+        className: _,
+        onFlashEnd: I,
+        animationDelay: i = 500
+    } = t, R = C.LU0.colors.TEXT_LINK, u = (0, C.rdh)(R).spring({
         opacity: 0
-    }), O = (0, n.rdh)(l).spring({
+    }), s = (0, C.rdh)(R).spring({
         opacity: .1
-    }), u = (0, n.rdh)(l).spring({
+    }), d = (0, C.rdh)(R).spring({
         opacity: 0
-    }), s = (0, n.rdh)(l).spring({
+    }), N = (0, C.rdh)(R).spring({
         opacity: 1
-    }), [d, a] = (0, n.zhh)(() => ({
+    }), [a, o] = (0, C.zhh)(() => ({
         from: {
-            backgroundColor: N,
-            borderColor: N
+            backgroundColor: u,
+            borderColor: u
         }
-    }), "animate-never"), o = {
-        startColor: N,
-        handleRest: _ => {
-            _.finished && C?.()
+    }), "animate-never"), O = {
+        startColor: u,
+        handleRest: t => {
+            t.finished && I?.()
         },
-        endColor: u,
-        targetBorderColor: s,
-        targetColor: O,
-        animationDelay: R
-    }, D = e.useRef(o);
-    return e.useEffect(() => {
-        D.current = o
-    }), e.useEffect(() => {
+        endColor: d,
+        targetBorderColor: N,
+        targetColor: s,
+        animationDelay: i
+    }, D = A.useRef(O);
+    return A.useEffect(() => {
+        D.current = O
+    }), A.useEffect(() => {
         let {
-            startColor: _,
-            handleRest: t,
-            endColor: A,
+            startColor: t,
+            handleRest: e,
+            endColor: _,
             targetBorderColor: E,
-            targetColor: e,
-            animationDelay: C
+            targetColor: A,
+            animationDelay: I
         } = D.current, {
-            useReducedMotion: T
-        } = i.A, I = 200 * !T;
-        a({
+            useReducedMotion: n
+        } = l.A, S = 200 * !n;
+        o({
             reset: !0,
             immediate: !1,
             to: {
-                backgroundColor: _,
-                borderColor: _
+                backgroundColor: t,
+                borderColor: t
             },
             config: {
-                duration: I,
-                easing: S.A.Easing.ease
+                duration: S,
+                easing: T.A.Easing.ease
             }
-        }), a({
-            delay: C,
-            immediate: T,
+        }), o({
+            delay: I,
+            immediate: n,
             to: [{
-                backgroundColor: e,
+                backgroundColor: A,
                 borderColor: E
             }],
             config: {
-                duration: I,
-                easing: S.A.Easing.ease
+                duration: S,
+                easing: T.A.Easing.ease
             }
-        }), a({
-            delay: C + 200 + 200,
-            immediate: T,
+        }), o({
+            delay: I + 200 + 200,
+            immediate: n,
             to: [{
-                backgroundColor: A,
-                borderColor: A
+                backgroundColor: _,
+                borderColor: _
             }],
             config: {
-                duration: I,
-                easing: S.A.Easing.ease
+                duration: S,
+                easing: T.A.Easing.ease
             },
-            onRest: t
+            onRest: e
         })
-    }, [a]), (0, E.jsx)(I.animated.div, {
-        style: d,
-        className: T()(r.h, A),
-        children: t
+    }, [o]), (0, E.jsx)(S.animated.div, {
+        style: a,
+        className: n()(r.h, _),
+        children: e
     })
 }
 
-function O(_) {
+function s(t) {
     let {
-        children: t,
-        scrollPosition: A,
-        animationDelay: C
-    } = _, T = (0, R.bG)([l.A], () => l.A.getScrollPosition() === A), [I, S] = e.useState(!1);
-    return (e.useEffect(() => {
-        T && S(!0)
-    }, [T]), I) ? (0, E.jsx)(N, {
-        animationDelay: C,
-        onFlashEnd: () => S(!1),
-        children: t
-    }) : t
+        children: e,
+        scrollPosition: _,
+        animationDelay: I
+    } = t, n = (0, i.bG)([R.A], () => R.A.getScrollPosition() === _), [S, T] = A.useState(!1);
+    return (A.useEffect(() => {
+        n && T(!0)
+    }, [n]), S) ? (0, E.jsx)(u, {
+        animationDelay: I,
+        onFlashEnd: () => T(!1),
+        children: e
+    }) : e
 }

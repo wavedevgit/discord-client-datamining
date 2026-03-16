@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(793574),
-    a = n(688810),
+    a = n(793574),
+    r = n(688810),
     o = n(823092),
     d = n(954571),
     c = n(979286),
@@ -14,18 +14,18 @@ var i = n(627968),
     _ = n(652215),
     m = n(788868),
     g = n(985018),
-    A = n(300461);
+    A = n(844551);
 let h = () => {
     let {
         analyticsLocations: e
-    } = (0, a.Ay)(r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
+    } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
         popoutAsset: h,
         title: x,
         body: p,
         version: T,
         revertTextColor: E
-    } = (0, u.M)(), C = s.useContext(o.gl), S = C?.navigateWithValidation ?? (e => e());
+    } = (0, u.M)(), S = s.useContext(o.gl), C = S?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
             type: m.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
@@ -61,9 +61,9 @@ let h = () => {
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                S(() => (0, c.Cz)({
+                C(() => (0, c.Cz)({
                     analyticsLocations: e,
-                    analyticsSource: r.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
+                    analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))
             },
             variant: "overlay-primary",

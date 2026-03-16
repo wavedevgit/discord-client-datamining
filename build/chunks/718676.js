@@ -2,13 +2,13 @@
 n.d(t, {
     A: () => a
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    r = n(980848);
-let a = () => (0, l.jsx)("div", {
+var l = n(397927),
+    r = n(644230);
+let a = () => (0, i.jsx)("div", {
     className: r._,
-    children: (0, l.jsx)(i.nvX, {
+    children: (0, i.jsx)(l.nvX, {
         dotRadius: 4,
         themed: !0
     })

@@ -3,32 +3,32 @@ n.d(t, {
     A: () => x
 });
 var l = n(627968),
-    a = n(64700),
-    r = n(503698),
-    i = n.n(r),
-    s = n(46054),
-    d = n(465364),
-    o = n(207963),
-    c = n(647901),
+    s = n(64700),
+    a = n(503698),
+    r = n.n(a),
+    i = n(46054),
+    o = n(465364),
+    c = n(207963),
+    d = n(647901),
     u = n(560438),
-    _ = n(914362),
-    m = n(830412);
+    h = n(483496),
+    m = n(206314);
 
 function x(e) {
     let t, {
             content: n,
-            className: r
+            className: a
         } = e,
-        x = (t = (0, o.jc)(), (0, a.useMemo)(() => {
+        x = (t = (0, c.jc)(), (0, s.useMemo)(() => {
             let e;
-            return null === t ? null : (e = null != t.message ? (0, d.ko)(t.message, u.l) : (0, d.Le)({
+            return null === t ? null : (e = null != t.message ? (0, o.ko)(t.message, u.l) : (0, o.Le)({
                 channelId: t.channelId,
                 renderOptions: u.l
-            }), s.A.parse(n, !0, e))
+            }), i.A.parse(n, !0, e))
         }, [n, t])),
-        p = (0, c.X)();
+        g = (0, d.X)();
     return (0, l.jsx)("div", {
-        className: i()(r, m.PT, _.T, p.className),
+        className: r()(a, m.PT, h.T, g.className),
         children: x
     })
 }

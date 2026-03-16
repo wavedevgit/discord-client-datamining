@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(421380),
-    a = n(397927),
+    a = n(421380),
+    r = n(397927),
     o = n(416052),
     d = n(793574),
     c = n(688810),
     u = n(915089),
     _ = n(264779),
     m = n(985018),
-    g = n(712569);
+    g = n(424019);
 
 function A(e) {
     let {
@@ -35,10 +35,10 @@ function A(e) {
         transitionState: n,
         children: (0, i.jsxs)("div", {
             className: g.t4,
-            children: [(0, i.jsx)(a.Heading, {
+            children: [(0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
                 children: m.intl.string(m.t.iufib1)
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: g.G3,
                 children: m.intl.string(m.t.eAn6z2)
@@ -53,18 +53,18 @@ let h = function(e) {
         code: h,
         outboundPromotion: x,
         transitionState: p
-    } = e, [T, E] = s.useState(null), C = (0, u.GV)(), {
-        analyticsLocations: S
+    } = e, [T, E] = s.useState(null), S = (0, u.GV)(), {
+        analyticsLocations: C
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
         null == h && (0, _.kd)({
             promotionId: x.id,
-            analyticsLocations: S
+            analyticsLocations: C
         }).then(e => n(e)).catch(e => E(e?.body?.code))
-    }, [h, x.id, n, S]), null != T) ? (0, i.jsx)(A, {
+    }, [h, x.id, n, C]), null != T) ? (0, i.jsx)(A, {
         onClose: t,
         transitionState: p
-    }) : null == h ? (0, i.jsx)(a.y$y, {
+    }) : null == h ? (0, i.jsx)(r.y$y, {
         className: g.Lq
     }) : (0, i.jsx)(l.Modal, {
         title: "",
@@ -74,10 +74,10 @@ let h = function(e) {
             className: g.N1,
             children: [(0, i.jsx)("div", {
                 className: g.Qw
-            }), (0, i.jsx)(a.Heading, {
+            }), (0, i.jsx)(r.Heading, {
                 variant: "heading-xl/semibold",
                 children: m.intl.string(m.t["23BfZh"])
-            }), (0, i.jsx)(a.Text, {
+            }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: g.G3,
                 children: x.outboundRedemptionModalBody
@@ -96,17 +96,17 @@ let h = function(e) {
             }
         }],
         transitionState: p,
-        "aria-label": C,
+        "aria-label": S,
         children: (0, i.jsxs)("div", {
-            children: [(0, i.jsx)(a.cGx, {
+            children: [(0, i.jsx)(r.cGx, {
                 className: g.M5
             }), (0, i.jsx)(l.D0$, {
                 label: m.intl.string(m.t.s9LFQh),
                 helperText: m.intl.string(m.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
                     value: h,
-                    buttonColor: r.$n.Colors.BRAND,
-                    buttonLook: r.$n.Looks.FILLED,
+                    buttonColor: a.$n.Colors.BRAND,
+                    buttonLook: a.$n.Looks.FILLED,
                     delay: 1e3
                 })
             })]

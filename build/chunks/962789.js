@@ -6,8 +6,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(873298),
-    r = n(990078),
-    a = n(397927),
+    a = n(990078),
+    r = n(397927),
     o = n(486020),
     d = n(975571),
     c = n(661191),
@@ -21,9 +21,9 @@ var i = n(627968),
     p = n(531525),
     T = n(652215),
     E = n(985018),
-    C = n(761547);
+    S = n(419205);
 
-function S(e) {
+function C(e) {
     let {
         applications: t
     } = e, n = s.useMemo(() => t.sort((e, t) => c.default.compare(t.id, e.id)), [t]), l = s.useMemo(() => {
@@ -37,7 +37,7 @@ function S(e) {
             s = n.length - 3;
         return s > 0 ? E.intl.format(E.t.sHFdTg, {
             gameList: t,
-            plusMoreHook: (e, t) => (0, i.jsx)(a.Text, {
+            plusMoreHook: (e, t) => (0, i.jsx)(r.Text, {
                 tag: "span",
                 variant: "text-sm/medium",
                 color: "text-muted",
@@ -53,25 +53,25 @@ function S(e) {
             if (null == s) break;
             let {
                 icon: l,
-                name: a,
+                name: r,
                 id: d
             } = s, c = o.Ay.getApplicationIconURL({
                 id: d,
                 icon: l
             });
-            e.push((0, i.jsx)(r.m, {
-                __unsupportedReactNodeAsText: a,
+            e.push((0, i.jsx)(a.m, {
+                __unsupportedReactNodeAsText: r,
                 children: (0, i.jsx)("img", {
                     src: c,
-                    "aria-label": a,
-                    className: C.Kk
+                    "aria-label": r,
+                    className: S.Kk
                 })
             }, d))
         }
         let t = n.length - 3;
         return t > 0 && e.push((0, i.jsx)("div", {
-            className: C.lK,
-            children: (0, i.jsx)(a.Text, {
+            className: S.lK,
+            children: (0, i.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: `+${t}`
@@ -79,34 +79,34 @@ function S(e) {
         }, "omitted")), e
     }, [n]);
     return (0, i.jsxs)("div", {
-        className: C.wx,
+        className: S.wx,
         children: [(0, i.jsxs)("div", {
-            className: C.kX,
-            children: [(0, i.jsx)(a.Text, {
+            className: S.kX,
+            children: [(0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-strong",
                 children: l
-            }), (0, i.jsxs)(a.DUT, {
+            }), (0, i.jsxs)(r.DUT, {
                 onClick: () => {
                     (0, g.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
                         section: T.nc_.AUTHORIZED_APPS
                     })
                 },
-                className: C.bJ,
-                children: [(0, i.jsx)(a.Text, {
+                className: S.bJ,
+                children: [(0, i.jsx)(r.Text, {
                     variant: "text-xs/normal",
                     color: "interactive-text-default",
                     children: E.intl.format(E.t.oYaYOe, {})
-                }), (0, i.jsx)(a._BQ, {
+                }), (0, i.jsx)(r._BQ, {
                     size: "xxs",
-                    color: a.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
-                    className: C.g7
+                    color: r.LU0.colors.INTERACTIVE_TEXT_DEFAULT,
+                    className: S.g7
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: C.yF
+            className: S.yF
         }), (0, i.jsx)("div", {
-            className: C.lJ,
+            className: S.lJ,
             children: d
         })]
     })
@@ -127,7 +127,7 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     let e = u.TA.useSetting(),
         t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
@@ -145,7 +145,7 @@ function N() {
         children: [(0, i.jsx)(h._, {
             header: E.intl.string(E.t["ms+Tme"]),
             description: E.intl.string(E.t["4NN4+/"])
-        }), (0, i.jsx)(a.z6M, {
+        }), (0, i.jsx)(r.z6M, {
             value: t,
             options: n,
             onChange: e => u.TA.updateSetting(e)
@@ -153,15 +153,15 @@ function N() {
     })
 }
 
-function b() {
+function N() {
     return (0, i.jsxs)("div", {
-        className: C.do,
-        children: [(0, i.jsx)(a.Text, {
+        className: S.do,
+        children: [(0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: C.xV,
+            className: S.xV,
             children: E.intl.string(E.t["+0U77d"])
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
             children: E.intl.format(E.t.V8wClM, {
@@ -175,9 +175,9 @@ function I(e) {
     let {
         applications: t
     } = e;
-    return t.length > 0 ? (0, i.jsx)(S, {
+    return t.length > 0 ? (0, i.jsx)(C, {
         applications: t
-    }) : (0, i.jsx)(b, {})
+    }) : (0, i.jsx)(N, {})
 }
 
 function v() {
@@ -185,7 +185,7 @@ function v() {
         showLoadingIndicator: e,
         slayerSdkApplications: t
     } = (0, m.A)(!0);
-    return e ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(I, {
+    return e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsx)(I, {
         applications: t
     })
 }
@@ -196,13 +196,13 @@ function j() {
         slayerSdkApplications: t
     } = (0, m.A)(!0);
     return (0, i.jsx)(A.A, {
-        children: e ? (0, i.jsx)(a.y$y, {}) : (0, i.jsxs)(i.Fragment, {
+        children: e ? (0, i.jsx)(r.y$y, {}) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(I, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
-                    className: C.yF
-                }), (0, i.jsx)(N, {})]
+                    className: S.yF
+                }), (0, i.jsx)(b, {})]
             })]
         })
     })

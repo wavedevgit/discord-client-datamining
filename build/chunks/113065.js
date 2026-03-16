@@ -6,28 +6,28 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(294433),
+    a = n(397927),
+    r = n(294433),
     o = n(299628),
-    d = n(870236),
+    d = n(842130),
     c = n(985018),
-    u = n(176983),
-    _ = n(609132);
+    u = n(121113),
+    _ = n(896498);
 let m = () => {
     let e = c.intl.string(d.default.tr8Gni),
-        t = (0, a.y)(c.intl.string(d.default["3xKGSE"]), c.intl.string(d.default.XbgrG7));
-    return (0, i.jsxs)(r.BJc, {
+        t = (0, r.y)(c.intl.string(d.default["3xKGSE"]), c.intl.string(d.default.XbgrG7));
+    return (0, i.jsxs)(a.BJc, {
         className: l()(u.k, _.a),
         gap: 24,
         padding: 24,
-        children: [(0, i.jsxs)(r.BJc, {
+        children: [(0, i.jsxs)(a.BJc, {
             gap: 8,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 variant: "heading-md/bold",
-                children: (0, i.jsx)(r.Fmo, {
+                children: (0, i.jsx)(a.Fmo, {
                     children: e
                 })
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/medium",
                 color: "text-muted",
                 children: t

@@ -1,5 +1,4 @@
 /** chunk id: 434598 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     ny: "paymentElementStoryContainer__1f918",
     u1: "paymentElementStepModalBody__1f918",

@@ -15,7 +15,7 @@ var n = a(627968),
     x = a(652215),
     u = a(49999),
     h = a(985018),
-    v = a(487708);
+    v = a(864562);
 
 function p(t) {
     let {
@@ -44,7 +44,7 @@ function p(t) {
             (0, l.mMO)(async () => {
                 let {
                     default: t
-                } = await Promise.all([a.e("64233"), a.e("10923")]).then(a.bind(a, 409200));
+                } = await Promise.all([a.e("64233"), a.e("9743")]).then(a.bind(a, 409200));
                 return a => (0, n.jsx)(t, {
                     ...a,
                     channelType: x.rbe.GUILD_FORUM,

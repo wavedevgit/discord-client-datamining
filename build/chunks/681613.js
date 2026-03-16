@@ -15,7 +15,7 @@ var i = n(627968),
     h = n(427262),
     _ = n(652215),
     m = n(985018),
-    g = n(229411);
+    g = n(239997);
 let p = {
     [_.g_B.NOW_PLAYING]: {
         single: (e, t) => m.intl.format(m.t.NEckza, {

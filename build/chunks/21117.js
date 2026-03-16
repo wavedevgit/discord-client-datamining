@@ -5,13 +5,13 @@ n.d(t, {
 var i = n(64700),
     s = n(311907),
     l = n(955572),
-    r = n(406360),
-    a = n(419954),
+    a = n(406360),
+    r = n(419954),
     o = n(933297),
     d = n(964404),
     c = n(780964),
     u = n(985018);
-let _ = (0, a.Qx)(c.X.HIGH_DYNAMIC_RANGE, {
+let _ = (0, r.Qx)(c.X.HIGH_DYNAMIC_RANGE, {
     useTitle: () => u.intl.string(u.t.nemtgW),
     useSubtitle: () => u.intl.string(u.t["O/Gjvn"]),
     usePersistentBadge: () => ({
@@ -29,7 +29,7 @@ let _ = (0, a.Qx)(c.X.HIGH_DYNAMIC_RANGE, {
         }], [])
     },
     usePredicate: function() {
-        return (0, r.i)("HDRDynamicRangeSetting")
+        return (0, a.i)("HDRDynamicRangeSetting")
     },
     setValue: function(e) {
         (0, l.FU)(e)

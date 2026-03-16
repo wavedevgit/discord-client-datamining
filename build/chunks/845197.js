@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(284009),
-    r = n.n(l),
-    a = n(417597),
+    a = n.n(l),
+    r = n(417597),
     o = n(397927),
     d = n(287809),
     c = n(438732),
@@ -14,15 +14,15 @@ var i = n(627968),
     _ = n(53719),
     m = n(390370),
     g = n(191627),
-    A = n(870236),
+    A = n(842130),
     h = n(985018),
-    x = n(386787);
+    x = n(487693);
 
 function p(e) {
     let {
         user: t
-    } = e, l = (0, c.A)(), p = (0, u.xr)(), T = (0, a.bG)([d.default], () => d.default.getCurrentUser()), E = s.useCallback(() => {
-        r()(void 0 !== T, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
+    } = e, l = (0, c.A)(), p = (0, u.xr)(), T = (0, r.bG)([d.default], () => d.default.getCurrentUser()), E = s.useCallback(() => {
+        a()(void 0 !== T, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("31385").then(n.bind(n, 58144));
@@ -32,8 +32,8 @@ function p(e) {
                 otherUser: t
             })
         })
-    }, [T, t]), C = s.useCallback(() => {
-        r()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
+    }, [T, t]), S = s.useCallback(() => {
+        a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("84811").then(n.bind(n, 389094));
@@ -43,8 +43,8 @@ function p(e) {
                 otherUser: t
             })
         })
-    }, [T, t]), S = s.useCallback(() => {
-        r()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
+    }, [T, t]), C = s.useCallback(() => {
+        a()(void 0 !== T, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("17219").then(n.bind(n, 187278));
@@ -68,7 +68,7 @@ function p(e) {
             children: l ? (0, i.jsx)(_.A, {
                 icon: o.PGe,
                 tooltip: h.intl.string(A.default.e5iHmZ),
-                onClick: S
+                onClick: C
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [p ? null : (0, i.jsx)(_.A, {
                     icon: o.A9s,
@@ -77,7 +77,7 @@ function p(e) {
                 }), (0, i.jsx)(_.A, {
                     icon: o.PGe,
                     tooltip: h.intl.string(A.default.bBDeNI),
-                    onClick: C
+                    onClick: S
                 })]
             })
         })]

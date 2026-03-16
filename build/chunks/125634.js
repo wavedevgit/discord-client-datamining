@@ -1,5 +1,4 @@
 /** chunk id: 125634 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     hQ: "contentContainer__58471",
     s: "assetContainer__58471",

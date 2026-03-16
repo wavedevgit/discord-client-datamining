@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(317097),
     l = n(397927),
-    r = n(767944);
+    r = n(350246);
 let o = function(e) {
     let {
         colorKey: t,

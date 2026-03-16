@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(628441);
+    a = n(397927),
+    r = n(252823);
 
 function o(e) {
     let {
@@ -18,8 +18,8 @@ function o(e) {
     } = e;
     return (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": !0,
-        className: l()(a._, n),
-        children: (0, i.jsx)(r.Button, {
+        className: l()(r._, n),
+        children: (0, i.jsx)(a.Button, {
             ...o,
             variant: "overlay-primary",
             size: "sm",

@@ -5,7 +5,7 @@ a.d(l, {
 var t = a(627968),
     o = a(206471),
     n = a(397927),
-    i = a(783780);
+    i = a(860606);
 let s = {
     title: "Text",
     stories: [{

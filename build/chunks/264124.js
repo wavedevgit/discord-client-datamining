@@ -6,17 +6,17 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(397927),
-    r = n(55619),
-    a = n(351906),
+    a = n(55619),
+    r = n(351906),
     o = n(985018);
 
 function d() {
-    let e = (0, s.bG)([a.A], () => a.A.enabled, []);
+    let e = (0, s.bG)([r.A], () => r.A.enabled, []);
     return (0, i.jsx)(l.sLh, {
         id: "streamer-mode-toggle",
         label: o.intl.string(o.t.p9ZAJZ),
         action: () => {
-            r.A.setEnabled(!e)
+            a.A.setEnabled(!e)
         },
         checked: e
     })

@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(502572),
-    r = n(732955),
-    a = n(397927),
+    a = n(732955),
+    r = n(397927),
     o = n(688810),
     d = n(531260),
     c = n(987144),
     u = n(473145),
     _ = n(652215),
     m = n(985018),
-    g = n(894137);
+    g = n(572523);
 let A = function() {
     let e = s.useRef(null),
         {
@@ -24,7 +24,7 @@ let A = function() {
         } = (0, d.A)();
 
     function h(n) {
-        null != e.current && (0, a.OoC)(e.current), (0, c.g)({
+        null != e.current && (0, r.OoC)(e.current), (0, c.g)({
             analyticsLocation: {
                 page: _.liQ.GUILD_BOOSTING_USER_SETTINGS,
                 section: _.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
@@ -36,7 +36,7 @@ let A = function() {
         })
     }
     async function x() {
-        e.current = await (0, a.mMO)(async () => {
+        e.current = await (0, r.mMO)(async () => {
             let {
                 default: e
             } = await Promise.resolve().then(n.bind(n, 770101));
@@ -46,7 +46,7 @@ let A = function() {
             })
         }, {
             onCloseRequest: () => {
-                null != e.current && (0, a.OoC)(e.current)
+                null != e.current && (0, r.OoC)(e.current)
             }
         })
     }
@@ -55,20 +55,20 @@ let A = function() {
     });
     return (0, i.jsxs)("div", {
         className: g.iE,
-        children: [(0, i.jsx)(a._Jp, {
-            color: a.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+        children: [(0, i.jsx)(r._Jp, {
+            color: r.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
             className: g.$J
-        }), (0, i.jsx)(a.Text, {
+        }), (0, i.jsx)(r.Text, {
             className: g.C,
             color: "text-default",
             variant: "text-sm/medium",
             children: m.intl.format(m.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
                     let n = null != p,
-                        s = (0, a.Oer)(e),
+                        s = (0, r.Oer)(e),
                         o = (0, i.jsx)("div", {
                             className: g.lO,
-                            children: (0, i.jsx)(r.QWc, {
+                            children: (0, i.jsx)(a.QWc, {
                                 variant: "primary",
                                 onClick: n ? void 0 : x,
                                 text: s,

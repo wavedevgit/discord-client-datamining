@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(877624),
+    a = n.n(l),
+    r = n(877624),
     o = n(311907),
     d = n(230109),
     c = n(582754),
@@ -20,29 +20,29 @@ var i = n(627968),
     p = n(954571),
     T = n(927578),
     E = n(40185),
-    C = n(526292),
-    S = n(234419),
+    S = n(526292),
+    C = n(234419),
     f = n(690737),
-    N = n(320908),
-    b = n(412260),
+    b = n(320908),
+    N = n(412260),
     I = n(396375),
     v = n(106922),
     j = n(501007),
-    O = n(901125),
-    y = n(729230),
-    R = n(227273),
+    y = n(901125),
+    R = n(729230),
+    O = n(227273),
     P = n(244778),
     D = n(788868),
     L = n(652215),
-    M = n(985018),
-    G = n(443137),
-    U = n(552559),
+    G = n(985018),
+    M = n(639179),
+    U = n(432221),
     k = n(288894);
 let V = e => {
         let {
             inOfferExperience: t
         } = e;
-        return t ? (0, i.jsx)(y.A, {
+        return t ? (0, i.jsx)(R.A, {
             lifted: t
         }) : null
     },
@@ -52,7 +52,7 @@ let V = e => {
             t = s.useRef(null),
             n = s.useRef(null),
             l = (0, _.Ay)(),
-            y = (0, c.Mw)(l),
+            R = (0, c.Mw)(l),
             [w, B] = s.useState(!1),
             [H, F] = s.useState(!1),
             [Y, z] = s.useState(!1),
@@ -61,13 +61,13 @@ let V = e => {
             Z = null != K ? (0, T.EL)(K) : null,
             q = null != Z ? T.Ay.getSkuIdForPlan(Z.planId) : null,
             J = null !== q && q !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
-            Q = (0, S.V)(),
+            Q = (0, C.V)(),
             $ = Q?.subscription_trial?.sku_id,
-            ee = (0, C.ar)(),
+            ee = (0, S.ar)(),
             et = (0, E.cg)(),
             en = et ?? !1,
-            ei = (0, o.bG)([b.A], () => {
-                let e = b.A.getMarketingComponentByType(a.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+            ei = (0, o.bG)([N.A], () => {
+                let e = N.A.getMarketingComponentByType(r.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
                 return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
             }),
             {
@@ -88,28 +88,28 @@ let V = e => {
                     tier0CTAButton: (0, i.jsx)(I.A, {
                         showIcon: !1,
                         subscriptionTier: D.pe.TIER_0,
-                        className: G.Ph,
+                        className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: G.Qr
+                        buttonShineClassName: M.Qr
                     }),
                     tier2CTAButton: $ === D.pe.TIER_0 ? (0, i.jsx)(I.A, {
                         showIcon: !1,
                         subscriptionTier: D.pe.TIER_2,
-                        className: G.Ph,
+                        className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
-                        buttonShineClassName: G.Qr
+                        buttonShineClassName: M.Qr
                     }) : (0, i.jsx)(I.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
                         subscriptionTier: D.pe.TIER_2,
-                        className: G.Ph,
+                        className: M.Ph,
                         hasActivePromotion: en,
                         textOptions: {
-                            textClassName: G.Ac
+                            textClassName: M.Ac
                         },
-                        buttonShineClassName: G.Qr
+                        buttonShineClassName: M.Qr
                     })
                 })
             })
@@ -117,15 +117,15 @@ let V = e => {
         return (0, i.jsxs)("div", {
             className: U.kL,
             "data-cy": "tier-0-marketing-page",
-            children: [(0, i.jsx)(O.A, {
+            children: [(0, i.jsx)(y.A, {
                 premiumSubscription: K,
-                className: r()(U.R3, {
+                className: a()(U.R3, {
                     [U.aZ]: ee
                 })
             }), (0, i.jsx)(V, {
                 inOfferExperience: ee
             }), (0, i.jsxs)("div", {
-                className: r()({
+                className: a()({
                     [U.V1]: !ee
                 }),
                 children: [null != ei && (0, i.jsx)(v.c, {
@@ -136,19 +136,19 @@ let V = e => {
                     onChange: e => B(e),
                     threshold: 0,
                     active: !0,
-                    children: (0, i.jsx)(N.Ay, {
+                    children: (0, i.jsx)(b.Ay, {
                         ref: t,
                         subscriptionTier: J,
-                        className: r()({
+                        className: a()({
                             [U.p7]: ee,
                             [U.Pw]: ee,
                             [U.AG]: et,
                             [U.Cv]: null != K
                         }),
-                        isDarkMode: y
+                        isDarkMode: R
                     })
                 })]
-            }), el, (0, i.jsx)(R.A, {
+            }), el, (0, i.jsx)(O.A, {
                 className: U.B_
             }), (0, i.jsx)("div", {
                 className: U.aC,
@@ -179,7 +179,7 @@ let V = e => {
                 className: U.Kw,
                 width: 112,
                 height: 85,
-                alt: M.intl.string(M.t.X4IxWL)
+                alt: G.intl.string(G.t.X4IxWL)
             })]
         })
     }

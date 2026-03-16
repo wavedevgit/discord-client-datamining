@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(158954),
-    r = n(975571),
-    a = n(809505),
+    a = n(975571),
+    r = n(809505),
     o = n(253932),
     d = n(84373),
     c = n(871930),
@@ -16,13 +16,13 @@ var i = n(627968),
 
 function g() {
     let e = (0, d.o)(),
-        t = s.useMemo(() => (0, a.YS)(), []);
+        t = s.useMemo(() => (0, r.YS)(), []);
     return (0, i.jsxs)(c.h, {
         setting: u.H.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
         children: [(0, i.jsx)(c._, {
             header: m.intl.string(m.t.tiCXaH),
             description: m.intl.format(m.t.RvjRRI, {
-                appealLink: r.A.getArticleURL(_.MVz.SAFE_DIRECT_MESSAGING)
+                appealLink: a.A.getArticleURL(_.MVz.SAFE_DIRECT_MESSAGING)
             })
         }), (0, i.jsx)(l.z6M, {
             value: e,

@@ -5,11 +5,11 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(490249),
+    a = n.n(l),
+    r = n(497766),
     o = n(397927),
     d = n(180022),
-    c = n(765835);
+    c = n(915693);
 let u = e => {
     let {
         cards: t,
@@ -41,7 +41,7 @@ let u = e => {
                 onClick: x ? () => {
                     m(e => 0 === e ? h - g : e - 1)
                 } : void 0,
-                className: r()({
+                className: a()({
                     [c.v5]: x,
                     [c.$T]: !x
                 }),
@@ -55,7 +55,7 @@ let u = e => {
                     let {
                         x: s
                     } = e;
-                    return (0, i.jsx)(a.animated.div, {
+                    return (0, i.jsx)(r.animated.div, {
                         className: c.Nr,
                         style: {
                             transform: s?.to(e => `translate3d(${e}%,0,0)`)

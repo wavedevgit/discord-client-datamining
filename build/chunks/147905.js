@@ -8,7 +8,7 @@ var n = i(627968),
     s = i(64700),
     l = i(503698),
     a = i.n(l),
-    r = i(490249),
+    r = i(497766),
     d = i(311907),
     o = i(397927),
     u = i(442433),
@@ -36,7 +36,7 @@ var n = i(627968),
     O = i(810412),
     b = i(652215),
     k = i(985018),
-    G = i(975424);
+    G = i(585990);
 
 function M(e) {
     switch (e) {
@@ -456,7 +456,7 @@ let z = s.memo(function(e) {
                 x || (0, u.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([i.e("97262"), i.e("87997"), i.e("42537")]).then(i.bind(i, 180812));
+                    } = await Promise.all([i.e("97262"), i.e("87997"), i.e("68277")]).then(i.bind(i, 180812));
                     return (0, O.YX)(b.uss.VOICE_V3, {
                         type: O.Z5.VOICE,
                         value: O.IP.SETTINGS_OPENED,

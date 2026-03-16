@@ -1,6 +1,6 @@
 /** chunk id: 53705 params = (module,exports,require) **/
 n.d(t, {
-    $: () => r,
+    $: () => a,
     L: () => l
 });
 var i = n(73153),
@@ -15,6 +15,6 @@ function l(e, t) {
     })
 }
 
-function r() {
+function a() {
     for (let e in s.A.enabled()) l(e, !1)
 }

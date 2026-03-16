@@ -6,14 +6,14 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(158954),
-    a = n(998304),
+    a = n(158954),
+    r = n(998304),
     o = n(764231),
     d = n(112848),
     c = n(627380),
     u = n(149757),
     _ = n(985018),
-    m = n(444941);
+    m = n(706627);
 let g = () => {
     let e = (0, d.$F)(),
         t = (0, d.Xb)() ?? new Date,
@@ -25,7 +25,7 @@ let g = () => {
         tenureReqNumMonths: A,
         hasWideArt: h
     } = e, x = _.intl.string(g), p = (0, o.T)(s, A), T = {
-        "--custom-badge-glow-color": (0, a.KU)(e.glowColor, .5)
+        "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
         className: m.kL,
@@ -39,15 +39,15 @@ let g = () => {
             })
         }), (0, i.jsxs)("div", {
             className: m._u,
-            children: [(0, i.jsx)(r.EYj, {
+            children: [(0, i.jsx)(a.EYj, {
                 variant: "text-lg/semibold",
                 className: m.Vv,
                 children: x
-            }), (0, i.jsx)(r.EYj, {
+            }), (0, i.jsx)(a.EYj, {
                 variant: "text-md/normal",
                 className: m.Vv,
                 children: p
-            }), (0, i.jsx)(r.EYj, {
+            }), (0, i.jsx)(a.EYj, {
                 variant: "text-xs/normal",
                 children: e?.status === d.Wo.EARNED ? _.intl.format(_.t.Hu4jfi, {
                     date: t

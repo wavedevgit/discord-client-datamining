@@ -2,13 +2,13 @@
 n.d(t, {
     Ay: () => E,
     dd: () => T,
-    lD: () => b
+    lD: () => N
 });
 var i = n(627968),
     s = n(64700),
     l = n(873298),
-    r = n(397927),
-    a = n(334726),
+    a = n(397927),
+    r = n(334726),
     o = n(365258),
     d = n(285058),
     c = n(195043),
@@ -18,8 +18,8 @@ var i = n(627968),
     g = n(531525),
     A = n(652215),
     h = n(985018),
-    x = n(730844),
-    p = n(13476);
+    x = n(536482),
+    p = n(208746);
 
 function T() {
     let e = _.tz.useSetting();
@@ -27,14 +27,14 @@ function T() {
         className: p.QF,
         children: [(0, i.jsxs)("div", {
             className: p.v_,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 className: p.n7,
                 variant: "heading-md/medium",
                 color: "text-strong",
                 children: h.intl.string(h.t.TqdOvC)
             }), !e && (0, i.jsx)("div", {
                 className: p.ZT,
-                children: (0, i.jsx)(r.wx6, {
+                children: (0, i.jsx)(a.wx6, {
                     type: "warning",
                     children: h.intl.string(x.default["xxI0/W"])
                 })
@@ -50,23 +50,23 @@ function E(e) {
     return (0, i.jsxs)(m.A, {
         className: t,
         title: h.intl.string(h.t.Cq98yL),
-        children: [(0, i.jsx)(N, {}), (0, i.jsx)(r.cGx, {
+        children: [(0, i.jsx)(b, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(S, {}), (0, i.jsx)(r.cGx, {
+        }), (0, i.jsx)(C, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(f, {}), (0, i.jsx)(r.cGx, {
+        }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(b, {})]
+        }), (0, i.jsx)(N, {})]
     })
 }
 
-function C(e) {
+function S(e) {
     let t = _._Z.getSetting();
-    if (_._Z.updateSetting(e), !(0, a.r)("UserSettingsActivityPrivacy")) return;
+    if (_._Z.updateSetting(e), !(0, r.r)("UserSettingsActivityPrivacy")) return;
     let s = (0, o.g8)(t, e);
     if (null == s) return;
     let l = (0, o.Xc)(e);
-    (0, r.mMO)(async () => {
+    (0, a.mMO)(async () => {
         let {
             default: e
         } = await n.e("41996").then(n.bind(n, 32167));
@@ -79,9 +79,9 @@ function C(e) {
     })
 }
 
-function S() {
+function C() {
     let e = _._Z.useSetting(),
-        t = (0, a.i)("UserSettingsActivityPrivacy"),
+        t = (0, r.i)("UserSettingsActivityPrivacy"),
         n = s.useMemo(() => t ? [{
             value: l.Qd.ACTIVITY_STATUS_OFF,
             name: h.intl.string(h.t.FzgQna),
@@ -104,14 +104,14 @@ function S() {
             name: h.intl.string(x.default.m3oL7Q)
         }], [t]),
         o = t ? h.intl.string(h.t.vpgck1) : h.intl.string(x.default["/LHVbt"]);
-    return (0, i.jsxs)(r.nVY, {
+    return (0, i.jsxs)(a.nVY, {
         label: h.intl.string(x.default.TG0QsS),
         description: h.intl.string(x.default.OO17Lg),
-        children: [(0, i.jsx)(r.z6M, {
+        children: [(0, i.jsx)(a.z6M, {
             label: o,
             options: n,
             value: e,
-            onChange: C
+            onChange: S
         }), (0, i.jsx)(T, {})]
     })
 }
@@ -121,15 +121,15 @@ function f() {
         t = _.UM.useSetting();
     return (0, i.jsx)(c.x, {
         setting: g.H.ACTIVITY_PRIVACY_RICH_PRESENCE,
-        children: (0, i.jsxs)(r.nVY, {
+        children: (0, i.jsxs)(a.nVY, {
             label: h.intl.string(x.default["5rYBAQ"]),
-            children: [(0, i.jsx)(r.dOG, {
+            children: [(0, i.jsx)(a.dOG, {
                 label: h.intl.string(x.default.khuuzv),
                 description: h.intl.string(x.default["8EWsJ8"]),
                 id: "allow-friends-to-join-my-game",
                 checked: e,
                 onChange: e => _.e.updateSetting(e)
-            }), (0, i.jsx)(r.dOG, {
+            }), (0, i.jsx)(a.dOG, {
                 label: h.intl.string(x.default.Uz5Ipi),
                 description: h.intl.string(x.default.CZI2Gb),
                 id: "allow-vc-join-without-request",
@@ -140,16 +140,16 @@ function f() {
     })
 }
 
-function N() {
+function b() {
     let e = _.tz.useSetting(),
         t = u.isPlatformEmbedded ? h.intl.string(x.default.UQ9RHJ) : h.intl.string(h.t.oKqC4t);
     return (0, i.jsx)(c.x, {
         setting: g.H.ACTIVITY_PRIVACY_STATUS,
-        children: (0, i.jsxs)(r.BJc, {
+        children: (0, i.jsxs)(a.BJc, {
             gap: 32,
             children: [(0, i.jsx)("div", {
                 children: h.intl.string(x.default.t2YsrV)
-            }), (0, i.jsx)(r.dOG, {
+            }), (0, i.jsx)(a.dOG, {
                 label: h.intl.string(x.default.WhdCGP),
                 description: t,
                 id: "share-my-activity",
@@ -160,13 +160,13 @@ function N() {
     })
 }
 
-function b() {
+function N() {
     return (0, i.jsx)(c.x, {
         setting: g.H.ACTIVITY_PRIVACY_TOS,
-        children: (0, i.jsx)(r.ZpM, {
-            type: r.ZpM.Types.PRIMARY,
+        children: (0, i.jsx)(a.ZpM, {
+            type: a.ZpM.Types.PRIMARY,
             className: p.AX,
-            children: (0, i.jsx)(r.Text, {
+            children: (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 children: h.intl.format(h.t.xvCsx4, {
                     termsLink: A.X7G.TERMS,

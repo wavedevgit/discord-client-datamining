@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(311907),
     l = n(688810),
-    r = n(625841),
-    a = n(74848),
+    a = n(625841),
+    r = n(74848),
     o = n(204050),
     d = n(430452),
     c = n(954571),
@@ -19,11 +19,11 @@ function A() {
     let e = (0, s.bG)([d.Ay], () => d.Ay.isVideoAvailable()),
         {
             id: t
-        } = (0, a.x5)(m.oh.VIDEO_INPUT),
+        } = (0, r.x5)(m.oh.VIDEO_INPUT),
         {
             analyticsLocations: n
         } = (0, l.Ay)();
-    return (0, i.jsx)(r.U, {
+    return (0, i.jsx)(a.U, {
         label: g.intl.string(g.t.FsQ3OR),
         deviceType: m.oh.VIDEO_INPUT,
         location: "UserSettingsCameraSelect",

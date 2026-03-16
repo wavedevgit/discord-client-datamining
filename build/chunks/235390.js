@@ -1,8 +1,8 @@
 /** chunk id: 235390 params = (module,exports,require) **/
-r.d(t, {
-    MA: () => o
+n.d(t, {
+    MA: () => l
 });
-let n = (0, r(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2025-04_ignore_user_feedback",
     label: "Ignore User Feedback Experiment",
@@ -27,8 +27,8 @@ let n = (0, r(600975).C)({
     }]
 });
 
-function o(e) {
-    return n.getCurrentConfig({
+function l(e) {
+    return i.getCurrentConfig({
         location: e
     }, {
         autoTrackExposure: !0

@@ -5,13 +5,13 @@ n.d(t, {
 var i = n(627968),
     s = n(873298),
     l = n(397927),
-    r = n(365258),
-    a = n(419954),
+    a = n(365258),
+    r = n(419954),
     o = n(890164),
     d = n(253932),
     c = n(780964),
     u = n(985018);
-let _ = (0, a.Qx)(c.X.PROFILE_PRIVACY_SETTING, {
+let _ = (0, r.Qx)(c.X.PROFILE_PRIVACY_SETTING, {
     useTitle: () => u.intl.string(u.t.Qnf32C),
     useOptions: () => [{
         name: u.intl.string(u.t.Boxc8R),
@@ -30,7 +30,7 @@ let _ = (0, a.Qx)(c.X.PROFILE_PRIVACY_SETTING, {
     setValue: function(e) {
         let t = d.KP.getSetting();
         if (d.KP.updateSetting(e), !(0, o.W1)("ProfilePrivacySetting")) return;
-        let s = (0, r.gS)(t, e);
+        let s = (0, a.gS)(t, e);
         null != s && (0, l.mMO)(async () => {
             let {
                 default: e

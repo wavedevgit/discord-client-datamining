@@ -1,15 +1,15 @@
 /** chunk id: 100549 params = (module,exports,require) **/
 n.d(t, {
-    $: () => a
+    $: () => r
 });
 var i = n(419954),
     s = n(780964),
     l = n(985018);
-let r = (0, i.AK)(s.X.DISPLAY_CHAT_ACCESSIBLITY_NAVIGATOR, {
+let a = (0, i.AK)(s.X.DISPLAY_CHAT_ACCESSIBLITY_NAVIGATOR, {
         useSubtitle: () => l.intl.string(l.t.UDr3Iy),
         useSearchTerms: () => [l.intl.string(l.t.UDr3Iy)],
         destinationKey: s.X.ACCESSIBILITY_PANEL
     }),
-    a = (0, i.gN)(s.X.DISPLAY_CHAT_RELATED_SETTINGS, {
-        buildLayout: () => [r]
+    r = (0, i.gN)(s.X.DISPLAY_CHAT_RELATED_SETTINGS, {
+        buildLayout: () => [a]
     })

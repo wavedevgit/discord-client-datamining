@@ -1,114 +1,114 @@
 /** chunk id: 370372 params = (module,exports,require) **/
-t.d(n, {
-    default: () => j
+e.d(r, {
+    default: () => H
 });
-var i = t(627968);
-t(64700);
-var r = t(397927),
-    l = t(442433),
-    a = t(847767),
-    d = t(358367),
-    s = t(468389),
-    o = t(793574),
-    u = t(50268),
-    c = t(515610),
-    h = t(133238),
-    A = t(795144),
-    f = t(979807),
-    v = t(671470),
-    b = t(769591),
-    p = t(533957),
-    C = t(886393),
-    g = t(477190),
-    m = t(307623),
-    _ = t(317910),
-    E = t(475777),
-    x = t(848977),
-    O = t(995102),
-    T = t(288104),
-    I = t(661504),
-    y = t(969128),
-    N = t(652215),
-    R = t(985018);
+var i = e(627968);
+e(64700);
+var t = e(397927),
+    l = e(442433),
+    s = e(847767),
+    c = e(358367),
+    a = e(468389),
+    d = e(793574),
+    A = e(50268),
+    o = e(515610),
+    h = e(133238),
+    x = e(795144),
+    j = e(979807),
+    X = e(671470),
+    u = e(769591),
+    V = e(533957),
+    N = e(886393),
+    E = e(477190),
+    C = e(307623),
+    _ = e(317910),
+    m = e(475777),
+    b = e(848977),
+    g = e(995102),
+    v = e(288104),
+    S = e(661504),
+    f = e(969128),
+    k = e(652215),
+    p = e(985018);
 
-function S(e) {
+function M(n) {
     let {
-        channel: n,
-        onSelect: t
-    } = e, a = (0, x.A)(n), d = (0, C.A)(n), o = (0, h.m)(n), c = (0, h.y)(n), p = (0, A.A)(n), g = (0, f.A)(n), m = (0, v.A)(n), E = (0, O.A)(n), y = (0, T.A)(n), N = (0, _.A)(n), S = (0, u.A)({
-        id: n.id,
-        label: R.intl.string(R.t.gFHI3k)
-    }), G = (0, s.A)(n), j = (0, I.Ay)(n), X = (0, b.os)("ChannelContextFavoritesMenu");
-    return (0, i.jsxs)(r.W1t, {
+        channel: r,
+        onSelect: e
+    } = n, s = (0, b.A)(r), c = (0, N.A)(r), d = (0, h.m)(r), o = (0, h.y)(r), V = (0, x.A)(r), E = (0, j.A)(r), C = (0, X.A)(r), m = (0, g.A)(r), f = (0, v.A)(r), k = (0, _.A)(r), M = (0, A.A)({
+        id: r.id,
+        label: p.intl.string(p.t.gFHI3k)
+    }), T = (0, a.A)(r), H = (0, S.Ay)(r), I = (0, u.os)("ChannelContextFavoritesMenu");
+    return (0, i.jsxs)(t.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
         onClose: l.Z_,
-        "aria-label": R.intl.string(R.t.Xm41aV),
-        onSelect: t,
-        children: [(0, i.jsx)(r.rXV, {
-            children: a
-        }), (0, i.jsx)(r.rXV, {
-            children: g
-        }), (0, i.jsxs)(r.rXV, {
-            children: [o, m]
-        }), (0, i.jsxs)(r.rXV, {
-            children: [E, X ? j : y]
-        }), (0, i.jsx)(r.rXV, {
-            children: p
-        }), (0, i.jsx)(r.rXV, {
-            children: N
-        }), (0, i.jsx)(r.rXV, {
-            children: G
-        }), (0, i.jsx)(r.rXV, {
+        "aria-label": p.intl.string(p.t.Xm41aV),
+        onSelect: e,
+        children: [(0, i.jsx)(t.rXV, {
+            children: s
+        }), (0, i.jsx)(t.rXV, {
+            children: E
+        }), (0, i.jsxs)(t.rXV, {
+            children: [d, C]
+        }), (0, i.jsxs)(t.rXV, {
+            children: [m, I ? H : f]
+        }), (0, i.jsx)(t.rXV, {
+            children: V
+        }), (0, i.jsx)(t.rXV, {
+            children: k
+        }), (0, i.jsx)(t.rXV, {
+            children: T
+        }), (0, i.jsx)(t.rXV, {
+            children: o
+        }), (0, i.jsx)(t.rXV, {
             children: c
-        }), (0, i.jsx)(r.rXV, {
-            children: d
-        }), (0, i.jsx)(r.rXV, {
-            children: S
+        }), (0, i.jsx)(t.rXV, {
+            children: M
         })]
     })
 }
 
-function G(e) {
+function T(n) {
     let {
-        channel: n,
-        guild: t,
-        onSelect: a
-    } = e, d = (0, x.A)(n), o = (0, C.A)(n), c = (0, h.m)(n), A = (0, h.y)(n), f = (0, y.A)(n), v = (0, O.A)(n), N = (0, _.A)(n), S = (0, E.A)(n, t), G = (0, p.A)(n, t), j = (0, g.A)(n, t), X = (0, m.A)(n), U = (0, u.A)({
-        id: n.id,
-        label: R.intl.string(R.t.gFHI3k)
-    }), M = (0, s.A)(n), w = (0, T.A)(n), L = (0, I.Ay)(n), F = (0, b.os)("ChannelContextMenuNormal");
-    return (0, i.jsxs)(r.W1t, {
+        channel: r,
+        guild: e,
+        onSelect: s
+    } = n, c = (0, b.A)(r), d = (0, N.A)(r), o = (0, h.m)(r), x = (0, h.y)(r), j = (0, f.A)(r), X = (0, g.A)(r), k = (0, _.A)(r), M = (0, m.A)(r, e), T = (0, V.A)(r, e), H = (0, E.A)(r, e), I = (0, C.A)(r), L = (0, A.A)({
+        id: r.id,
+        label: p.intl.string(p.t.gFHI3k)
+    }), y = (0, a.A)(r), U = (0, v.A)(r), B = (0, S.Ay)(r), F = (0, u.os)("ChannelContextMenuNormal");
+    return (0, i.jsxs)(t.W1t, {
         "data-menu-migrated": !0,
         navId: "channel-context",
         onClose: l.Z_,
-        "aria-label": R.intl.string(R.t.Xm41aV),
-        onSelect: a,
-        children: [(0, i.jsx)(r.rXV, {
-            children: d
-        }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
+        "aria-label": p.intl.string(p.t.Xm41aV),
+        onSelect: s,
+        children: [(0, i.jsx)(t.rXV, {
             children: c
-        }), (0, i.jsxs)(r.rXV, {
-            children: [S, f, o]
-        }, "channel-actions"), (0, i.jsxs)(r.rXV, {
-            children: [v, F ? L : w]
-        }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [N, G, j, X]
-        }, "admin-actions"), (0, i.jsx)(r.rXV, {
-            children: M
-        }), (0, i.jsx)(r.rXV, {
-            children: A
-        }), (0, i.jsx)(r.rXV, {
-            children: U
+        }, "mark-as-read-or-favorite"), (0, i.jsx)(t.rXV, {
+            children: o
+        }), (0, i.jsxs)(t.rXV, {
+            children: [M, j, d]
+        }, "channel-actions"), (0, i.jsxs)(t.rXV, {
+            children: [X, F ? B : U]
+        }, "notifications"), (0, i.jsxs)(t.rXV, {
+            children: [k, T, H, I]
+        }, "admin-actions"), (0, i.jsx)(t.rXV, {
+            children: y
+        }), (0, i.jsx)(t.rXV, {
+            children: x
+        }), (0, i.jsx)(t.rXV, {
+            children: L
         }, "developer-actions")]
     })
 }
-let j = (0, d.A)((0, a.A)(function(e) {
-    return (0, c.A)() ? (0, i.jsx)(S, {
-        ...e
-    }) : (0, i.jsx)(G, {
-        ...e
+let H = (0, c.A)((0, s.A)(function(n) {
+    return (0, o.A)() ? (0, i.jsx)(M, {
+        ...n
+    }) : (0, i.jsx)(T, {
+        ...n
     })
 }, {
-    object: N.ZSU.CONTEXT_MENU
-}), [o.A.CONTEXT_MENU, o.A.CHANNEL_LIST_TEXT_CHANNEL_MENU])
+    object: k.ZSU.CONTEXT_MENU
+}), [d.A.CONTEXT_MENU, d.A.CHANNEL_LIST_TEXT_CHANNEL_MENU])

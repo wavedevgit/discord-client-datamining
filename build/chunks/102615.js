@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(397927),
     l = n(502060),
-    r = n(772927),
-    a = n(983806),
+    a = n(772927),
+    r = n(983806),
     o = n(683167),
     d = n(351104),
     c = n(46184),
@@ -15,13 +15,13 @@ var s = n(397927),
     _ = n(985018);
 let m = () => (0, i.jsxs)(s.BJc, {
     gap: 32,
-    children: [(0, i.jsx)(a.b, {}), (0, i.jsxs)("div", {
+    children: [(0, i.jsx)(r.b, {}), (0, i.jsxs)("div", {
         children: [(0, i.jsx)(l.G, {
             title: _.intl.string(_.t.xVRG4P),
             children: (0, i.jsx)(u.f, {})
         }), (0, i.jsx)(l.G, {
             title: _.intl.string(_.t["y62Z/d"]),
-            children: (0, i.jsxs)(r.A, {
+            children: (0, i.jsxs)(a.A, {
                 children: [(0, i.jsx)(o.A, {}), (0, i.jsx)(d.Z, {})]
             })
         }), (0, i.jsx)(l.G, {

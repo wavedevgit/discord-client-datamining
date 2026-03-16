@@ -1,12 +1,12 @@
 /** chunk id: 227273 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => S
 });
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(417597),
+    a = n.n(l),
+    r = n(417597),
     o = n(397927),
     d = n(775602),
     c = n(793574),
@@ -17,7 +17,7 @@ var i = n(627968),
     A = n(52167),
     h = n(652215),
     x = n(985018),
-    p = n(399143);
+    p = n(657989);
 let T = e => {
         let {
             isShowingAll: t,
@@ -43,7 +43,7 @@ let T = e => {
             description: n,
             className: s,
             imageSource: l,
-            imageClassName: a,
+            imageClassName: r,
             titleBadge: d,
             isNew: g = !1,
             isEarlyAccess: A = !1
@@ -53,7 +53,7 @@ let T = e => {
         return (0, i.jsx)(u.f5, {
             value: h,
             children: (0, i.jsxs)("div", {
-                className: r()(p.perkCard, s),
+                className: a()(p.perkCard, s),
                 children: [g ? (0, i.jsx)(m.A, {
                     className: p.perkCardNewBadge,
                     shouldInheritBackgroundColor: !0,
@@ -63,7 +63,7 @@ let T = e => {
                 }) : null, (0, i.jsx)("img", {
                     src: l,
                     alt: "",
-                    className: r()(a, p.perksCardArt)
+                    className: a()(r, p.perksCardArt)
                 }), (0, i.jsxs)("div", {
                     children: [(0, i.jsxs)(o.Heading, {
                         variant: "heading-lg/extrabold",
@@ -78,17 +78,17 @@ let T = e => {
             })
         })
     },
-    C = e => {
+    S = e => {
         let {
             className: t,
             isSubscriberNitroHome: n = !1
         } = e, [l, c] = s.useState(!1), _ = (0, A.d)({
             styles: p
-        }), m = (0, a.bG)([d.A], () => d.A.useReducedMotion), {
-            analyticsLocations: C
-        } = (0, u.Ay)(), S = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
+        }), m = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
+            analyticsLocations: S
+        } = (0, u.Ay)(), C = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
         return (0, i.jsxs)("div", {
-            className: r()(p.perksContainer, t, {
+            className: a()(p.perksContainer, t, {
                 [p.partiallyHidden]: n && !l,
                 [p.subscriberNitroHome]: n,
                 [p.reducedMotion]: m
@@ -98,29 +98,29 @@ let T = e => {
                 className: p.perksTitle,
                 children: n ? x.intl.string(x.t.QX14gI) : x.intl.string(x.t.RGadQR)
             }), (0, i.jsx)("div", {
-                className: r()(p.perkCardContainer, {
+                className: a()(p.perkCardContainer, {
                     [p.perkCardContainerExpanded]: l
                 }),
-                children: S.map(e => null != e && (0, i.jsx)(E, {
+                children: C.map(e => null != e && (0, i.jsx)(E, {
                     ...e
                 }, e.title))
             }), n && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)("div", {
-                    className: r()({
+                    className: a()({
                         [p.sizeGizmo]: !l,
                         [p.sizeGizmoExpanded]: l
                     }),
                     children: (0, i.jsx)(T, {
                         onClick: () => {
                             g.default.track(h.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-                                location_stack: C,
+                                location_stack: S,
                                 was_expanded: l
                             }), c(!l)
                         },
                         isShowingAll: l
                     })
                 }), (0, i.jsx)("div", {
-                    className: r()(p.cover, {
+                    className: a()(p.cover, {
                         [p.hidden]: l
                     })
                 })]

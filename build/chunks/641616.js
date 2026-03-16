@@ -31,8 +31,8 @@ var p = n(173628),
     N = n(226936),
     I = n(27126),
     R = n(498336),
-    k = n(615112),
-    O = n(501379),
+    O = n(615112),
+    k = n(501379),
     w = n(517538),
     D = n(211162),
     M = n(436102),
@@ -94,8 +94,8 @@ function ec() {
         }];
         return m.A.isDeveloper && (e.push({
             id: "shop",
-            name: "Shop",
-            group: er.fu.BILLING,
+            name: "Shop Overrides",
+            group: er.fu.SHOP,
             render: () => (0, a.jsx)(J.h, {})
         }), e.push({
             id: "payment_flow_modals",
@@ -105,8 +105,8 @@ function ec() {
             render: () => (0, a.jsx)(V.A, {})
         }), e.push({
             id: "shop_collectibles",
-            name: "Shop Collectibles",
-            group: er.fu.BILLING,
+            name: "Collectibles Preview",
+            group: er.fu.SHOP,
             render: () => (0, a.jsx)(l.A, {})
         }), e.push({
             id: "quick_actions",
@@ -184,7 +184,7 @@ function ec() {
             name: "Intl",
             group: er.fu.UI,
             tags: ["i18n", "localization", "messages"],
-            render: () => (0, a.jsx)(O.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "colors",
             name: "Colors",
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(O.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",

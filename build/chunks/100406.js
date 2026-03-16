@@ -7,12 +7,12 @@ n.d(t, {
 var i = n(110259),
     s = n(933681),
     l = n(73153),
-    r = n(499785),
-    a = n(431144),
+    a = n(499785),
+    r = n(431144),
     o = n(652215);
 async function d() {
     try {
-        let e = await r.A.get({
+        let e = await a.A.get({
             url: o.Rsh.EMAIL_SETTINGS,
             trackedActionData: {
                 event: i.NetworkActionNames.EMAIL_SETTINGS_FETCH,
@@ -43,7 +43,7 @@ async function c(e, t) {
         }
     });
     try {
-        let n = await r.A.patch({
+        let n = await a.A.patch({
             url: o.Rsh.EMAIL_SETTINGS,
             body: {
                 settings: {
@@ -72,7 +72,7 @@ async function c(e, t) {
     }
 }
 async function u() {
-    let e = a.Zk.reduce((e, t) => ({
+    let e = r.Zk.reduce((e, t) => ({
         ...e,
         [t]: !1
     }), {});
@@ -81,7 +81,7 @@ async function u() {
         updates: e
     });
     try {
-        let t = await r.A.patch({
+        let t = await a.A.patch({
             url: o.Rsh.EMAIL_SETTINGS,
             body: {
                 settings: {

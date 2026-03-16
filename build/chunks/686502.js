@@ -24,7 +24,7 @@ var i = n(627968),
     E = n(272812),
     I = n(652215),
     N = n(985018),
-    b = n(556614),
+    b = n(89996),
     S = n(867010);
 
 function T(e) {
@@ -34,7 +34,8 @@ function T(e) {
         width: s,
         inPopout: l,
         handleClose: r,
-        userParticipantCount: a
+        userParticipantCount: a,
+        activitiesEnabled: o = !0
     } = e;
     return s < 250 ? (0, i.jsx)(v, {
         channel: t,
@@ -54,7 +55,8 @@ function T(e) {
         channel: t,
         guild: n,
         width: s,
-        inPopout: l
+        inPopout: l,
+        activitiesEnabled: o
     })
 }
 
@@ -119,7 +121,8 @@ function y(e) {
     let {
         channel: t,
         guild: l,
-        inPopout: a
+        inPopout: a,
+        activitiesEnabled: o = !0
     } = e;
     s.useEffect(() => {
         C.default.track(I.HAw.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
@@ -128,15 +131,15 @@ function y(e) {
         })
     }, []);
     let {
-        analyticsLocations: o,
-        newestAnalyticsLocation: c
+        analyticsLocations: c,
+        newestAnalyticsLocation: u
     } = (0, p.Ay)(m.A.VC_TILE_ACTIVITY_INVITE);
 
-    function u() {
+    function h() {
         (0, d.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("43600"), n.e("28136"), n.e("97710")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("28136"), n.e("74918")]).then(n.bind(n, 234355));
             return n => (0, i.jsx)(e, {
                 ...n,
                 guild: l,
@@ -148,7 +151,7 @@ function y(e) {
         })
     }
 
-    function h() {
+    function A() {
         (0, g.A)({
             context: null != t ? {
                 type: "channel",
@@ -157,11 +160,11 @@ function y(e) {
                 type: "contextless"
             },
             openInPopout: a,
-            analyticsLocation: c
+            analyticsLocation: u
         })
     }
     return (0, i.jsx)(p.f5, {
-        value: o,
+        value: c,
         children: (0, i.jsx)(d.NPJ, {
             disableAdaptiveTheme: !0,
             theme: I.NJ8.MIDNIGHT,
@@ -178,12 +181,12 @@ function y(e) {
                         variant: "secondary",
                         icon: d.Rvf,
                         text: N.intl.string(N.t["EE+P0H"]),
-                        onClick: u
-                    }), (0, i.jsx)(d.Button, {
+                        onClick: h
+                    }), o && (0, i.jsx)(d.Button, {
                         variant: "secondary",
                         icon: d.k9F,
                         text: N.intl.string(N.t.qnFavR),
-                        onClick: h
+                        onClick: A
                     })]
                 })]
             })

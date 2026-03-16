@@ -28,9 +28,9 @@ var a = n(627968),
     S = n(476398),
     E = n(405311),
     N = n(424994),
-    I = n(973350),
-    R = n(930821);
-let k = [{
+    I = n(750100),
+    R = n(661251);
+let O = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -63,13 +63,13 @@ let k = [{
         let {
             type: t
         } = e;
-        return (0, a.jsx)(O, {
+        return (0, a.jsx)(k, {
             type: t
         })
     }
 }];
 
-function O(e) {
+function k(e) {
     let {
         type: t
     } = e, n = (0, u.bG)([T.A], () => T.A.getFilters()), i = n?.types?.has(t) ?? !1;
@@ -103,8 +103,8 @@ function w() {
             }
         })),
         d = (0, u.bG)([T.A], () => T.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
-        [O, w] = i.useState(""),
-        M = (0, u.bG)([b.A, x.A], () => parseInt(O) > 0 ? O : b.A.searchGamesByName(O)[0] ?? x.A.getApplicationByName(O)?.id, [O]),
+        [k, w] = i.useState(""),
+        M = (0, u.bG)([b.A, x.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? x.A.getApplicationByName(k)?.id, [k]),
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
@@ -129,7 +129,7 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: k,
+                    columns: O,
                     data: r
                 }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
@@ -195,9 +195,9 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (O === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (k === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
                     },
-                    error: O.length > 0 && null == P ? `No game profile for ${M??O+" - try by id"}.` : void 0,
+                    error: k.length > 0 && null == P ? `No game profile for ${M??k+" - try by id"}.` : void 0,
                     helperText: null != P ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: L.map(e => (0, a.jsx)("li", {

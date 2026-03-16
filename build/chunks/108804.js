@@ -5,10 +5,10 @@ n.d(t, {
 var i = n(419954),
     s = n(780964),
     l = n(591203),
-    r = n(169930),
-    a = n(170021),
+    a = n(169930),
+    r = n(170021),
     o = n(985018);
 let d = (0, i.zZ)(s.X.SOUNDBOARD_CATEGORY, {
     useTitle: () => o.intl.string(o.t.ABjMWI),
-    buildLayout: () => [r._, a.H, l.L]
+    buildLayout: () => [a._, r.H, l.L]
 })

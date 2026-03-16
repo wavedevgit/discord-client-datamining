@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(421380),
-    r = n(397927),
-    a = n(736653),
+    a = n(397927),
+    r = n(736653),
     o = n(793574),
     d = n(688810),
     c = n(465794),
@@ -15,7 +15,7 @@ var i = n(627968),
     m = n(652215),
     g = n(788868),
     A = n(985018),
-    h = n(834058),
+    h = n(547568),
     x = n(896237),
     p = n(448085);
 
@@ -24,15 +24,15 @@ function T(e) {
         user: t,
         showOverlay: n,
         children: T
-    } = e, E = (0, a.Ay)(), {
-        analyticsLocations: C
+    } = e, E = (0, r.Ay)(), {
+        analyticsLocations: S
     } = (0, d.Ay)(o.A.PREMIUM_UPSELL_OVERLAY);
     return (s.useEffect(() => {
         n && u.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-            location_stack: C,
+            location_stack: S,
             type: g.e.PREMIUM_GUILD_MEMBER_PROFILE_UPSELL_INLINE
         })
-    }, [n, C]), n) ? (0, i.jsxs)("div", {
+    }, [n, S]), n) ? (0, i.jsxs)("div", {
         className: h.ry,
         children: [(0, i.jsx)("div", {
             children: T
@@ -55,11 +55,11 @@ function T(e) {
                 }(E)
             }), (0, i.jsxs)("div", {
                 className: h._9,
-                children: [(0, i.jsx)(r.Text, {
+                children: [(0, i.jsx)(a.Text, {
                     variant: "text-lg/semibold",
                     color: "always-white",
                     children: A.intl.string(A.t.dMaDFX)
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "always-white",
                     children: A.intl.string(A.t.F7sgFH)

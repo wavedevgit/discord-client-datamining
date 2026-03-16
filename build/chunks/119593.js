@@ -19,7 +19,7 @@ var a = l(627968),
     _ = l(639245),
     f = l(652215),
     j = l(985018),
-    b = l(313883);
+    b = l(159453);
 let I = s.memo(function(e) {
         let {
             guild: n

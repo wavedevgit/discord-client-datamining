@@ -1,37 +1,37 @@
 /** chunk id: 877156 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => g
 });
-var l = t(627968),
-    i = t(64700),
-    r = t(311907),
-    s = t(732955),
-    a = t(397927),
-    o = t(775602),
-    u = t(688810),
-    d = t(580314),
-    c = t(674658),
-    p = t(898461),
-    m = t(837015),
-    E = t(61750),
-    _ = t(369496),
-    x = t(550111),
-    S = t(287809),
-    P = t(482132),
-    T = t(758836),
-    I = t(985018),
-    h = t(920144);
+var l = n(627968),
+    i = n(64700),
+    r = n(311907),
+    s = n(732955),
+    a = n(397927),
+    o = n(775602),
+    u = n(688810),
+    d = n(580314),
+    c = n(674658),
+    p = n(898461),
+    m = n(837015),
+    E = n(61750),
+    _ = n(369496),
+    x = n(550111),
+    S = n(287809),
+    P = n(482132),
+    T = n(758836),
+    I = n(985018),
+    h = n(401506);
 
 function g(e) {
     let {
-        rewardSkuId: n,
-        onClose: t
+        rewardSkuId: t,
+        onClose: n
     } = e, g = (0, r.bG)([S.default], () => S.default.getCurrentUser()), A = (0, r.bG)([o.A], () => o.A.useReducedMotion), {
         analyticsLocations: f
     } = (0, u.Ay)(), j = a._3J.SIZE_32, {
         product: R,
         isFetching: M
-    } = (0, c.q)(n), [C, y] = i.useState(!1), N = R?.items[0], {
+    } = (0, c.q)(t), [C, y] = i.useState(!1), N = R?.items[0], {
         isNameplateReward: O,
         nameplateData: v,
         rewardAvatarDecorationSrc: b
@@ -88,7 +88,7 @@ function g(e) {
                     text: I.intl.string(I.t.kMYVwv),
                     loading: M,
                     onClick: () => {
-                        null != R && (t(), (0, E.A)({
+                        null != R && (n(), (0, E.A)({
                             product: R,
                             shouldShowPromotionalExperience: !0,
                             analyticsLocations: f,

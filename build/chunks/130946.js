@@ -1,13 +1,13 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N,
+    A: () => b,
     c: () => f
 });
 var i, s = n(627968);
 n(64700);
 var l = n(503698),
-    r = n.n(l),
-    a = n(421380),
+    a = n.n(l),
+    r = n(421380),
     o = n(397927),
     d = n(736653),
     c = n(793574),
@@ -18,16 +18,16 @@ var l = n(503698),
     A = n(788868),
     h = n(652215),
     x = n(985018),
-    p = n(363978),
+    p = n(816128),
     T = n(137815),
     E = n(967521),
-    C = n(767032),
-    S = n(990521),
+    S = n(767032),
+    C = n(990521),
     f = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
-let N = function(e) {
+let b = function(e) {
     let {
         variant: t
-    } = e, n = (0, m.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
+    } = e, n = (0, m.cg)(), i = (0, d.Ay)(), l = (0, o.Mwr)(i) ? r.XD.BRAND_INVERTED : r.XD.BRAND;
     return n ? "APPLICATION_NITRO_HOME" === t ? (0, s.jsx)(() => (0, s.jsx)(u.Y, {
         newLocations: [c.A.PREMIUM_MARKETING_PAGE_BANNER],
         children: (0, s.jsxs)("div", {
@@ -38,7 +38,7 @@ let N = function(e) {
                     className: p.N4
                 })
             }), (0, s.jsx)("div", {
-                className: r()(p.Fg, p.cj),
+                className: a()(p.Fg, p.cj),
                 children: (0, s.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "always-white",
@@ -85,7 +85,7 @@ let N = function(e) {
                 className: p.V9,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: C.A,
+                    src: S.A,
                     className: p.$V
                 })
             }), (0, s.jsxs)("div", {
@@ -116,7 +116,7 @@ let N = function(e) {
                 className: p.m0,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: S.A,
+                    src: C.A,
                     className: p.$V
                 })
             })]

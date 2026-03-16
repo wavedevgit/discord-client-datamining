@@ -1,12 +1,12 @@
 /** chunk id: 431475 params = (module,exports,require) **/
 n.d(t, {
-    C: () => a
+    C: () => r
 });
 var i = n(454292),
     s = n(419954),
     l = n(780964),
-    r = n(985018);
-let a = (0, s.E2)(l.X.POGGERMODE_SETTING, {
+    a = n(985018);
+let r = (0, s.E2)(l.X.POGGERMODE_SETTING, {
     Component: i.A,
-    useSearchTerms: () => [r.intl.string(r.t.AtCukI), r.intl.string(r.t.mqxwJO), r.intl.string(r.t.wVS5Sd), r.intl.string(r.t.Xz0ole), r.intl.string(r.t["Ax+IoW"]), r.intl.string(r.t["6jI0hd"]), r.intl.string(r.t.s0KCgF)]
+    useSearchTerms: () => [a.intl.string(a.t.AtCukI), a.intl.string(a.t.mqxwJO), a.intl.string(a.t.wVS5Sd), a.intl.string(a.t.Xz0ole), a.intl.string(a.t["Ax+IoW"]), a.intl.string(a.t["6jI0hd"]), a.intl.string(a.t.s0KCgF)]
 })

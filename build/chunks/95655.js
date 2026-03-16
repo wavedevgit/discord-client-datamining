@@ -16,7 +16,7 @@ var i = n(627968),
     A = n(954571),
     m = n(652215),
     p = n(985018),
-    g = n(242633);
+    g = n(202115);
 let _ = e => {
         let {
             channel: t
@@ -46,7 +46,7 @@ let _ = e => {
                     onClick: () => {
                         (0, u.U)(s, o.A.HEADER_BAR)
                     },
-                    onContextMenu: e => (0, a.L3)(e, () => Promise.all([n.e("97262"), n.e("60200"), n.e("54712")]).then(n.bind(n, 4027)).then(e => {
+                    onContextMenu: e => (0, a.L3)(e, () => Promise.all([n.e("97262"), n.e("60200"), n.e("98750")]).then(n.bind(n, 4027)).then(e => {
                         let {
                             default: n
                         } = e;

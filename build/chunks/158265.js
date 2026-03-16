@@ -8,7 +8,7 @@ var a = n(627968),
     l = n.n(s),
     r = n(106778),
     o = n(340287),
-    d = n(490249),
+    d = n(497766),
     c = n(311907),
     u = n(475743),
     m = n(775602),
@@ -19,7 +19,7 @@ var a = n(627968),
     _ = n(772244),
     f = n(272111),
     v = n(851110),
-    b = n(655207),
+    b = n(307725),
     j = n(231901);
 let A = e => {
     let {
@@ -34,7 +34,7 @@ let A = e => {
     } = i.useContext(x.PW), {
         completionSpring: y,
         startCompletionAnimation: S
-    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), R = i.useRef(null), k = (0, c.bG)([h.A], () => h.A.hasLayers()), O = (0, u.A)(k), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
+    } = (0, _.R)(), E = A.userStatus?.completedAt != null, N = i.useRef(!1), I = (0, c.bG)([m.A], () => m.A.useReducedMotion), R = i.useRef(null), O = (0, c.bG)([h.A], () => h.A.hasLayers()), k = (0, u.A)(O), [w, D] = i.useState(null), [M, P] = i.useState(null), U = i.useRef(new r.OH({
         gravity: 0,
         wind: 0
     })), L = (0, r.f9)(w, M), B = i.useMemo(() => [f.r3], []), G = i.useCallback(() => {
@@ -94,10 +94,10 @@ let A = e => {
     return (i.useEffect(() => {
         E && C && !F && (S(), G())
     }, [C, E, S, G, F]), i.useEffect(() => {
-        E && !k && O && setTimeout(() => {
+        E && !O && k && setTimeout(() => {
             S(), G()
         }, 200)
-    }, [E, O, k, S, G]), i.useEffect(() => {
+    }, [E, k, O, S, G]), i.useEffect(() => {
         L.isReady && (!N.current && E && (S(), G()), N.current = E)
     }, [E, N, G, S, L]), i.useEffect(() => {
         s && E && (S(), G())

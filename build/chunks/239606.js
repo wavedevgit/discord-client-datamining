@@ -6,7 +6,7 @@ var n = i(627968),
     t = i(64700),
     s = i(503698),
     a = i.n(s),
-    r = i(490249),
+    r = i(497766),
     o = i(311907),
     d = i(397927),
     c = i(770178),
@@ -70,7 +70,7 @@ var n = i(627968),
     ep = i(652215),
     ex = i(996988),
     eg = i(985018),
-    eh = i(156614);
+    eh = i(661388);
 let ef = {
     "compact-sm": {
         avatarOffsetX: 16
@@ -204,8 +204,8 @@ function eI(e) {
         eq = (0, h.fi)(l.id),
         eQ = (0, D.A)(l.id),
         e0 = (0, L.A)(l.id),
-        e9 = (0, p.GV)(),
-        e1 = eg.intl.format(eg.t.KRe1Fk, {
+        e1 = (0, p.GV)(),
+        e9 = eg.intl.format(eg.t.KRe1Fk, {
             name: ez
         });
     return t.useEffect(() => {
@@ -231,15 +231,15 @@ function eI(e) {
                         hideShadow: !0,
                         className: eh.root,
                         transitionState: eN,
-                        "aria-labelledby": e9,
+                        "aria-labelledby": e1,
                         parentComponent: "UserProfileModalV2",
                         children: [(0, n.jsxs)(d.bfh, {
                             isShaking: eL,
                             intensity: 1.4,
                             children: [(0, n.jsx)(d.AC4, {
                                 children: (0, n.jsx)(d.H, {
-                                    id: e9,
-                                    children: e1
+                                    id: e1,
+                                    children: e9
                                 })
                             }), (0, n.jsx)(d.Fmo, {
                                 children: (0, n.jsx)(ej, {

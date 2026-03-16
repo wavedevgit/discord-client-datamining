@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(753806),
     s = n(145331),
     l = n(419954),
-    r = n(253932),
-    a = n(780964),
+    a = n(253932),
+    r = n(780964),
     o = n(358776),
     d = n(652215),
     c = n(985018);
-let u = (0, l.Qx)(a.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
+let u = (0, l.Qx)(r.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
     useTitle: () => (0, o.bp)("DefaultDMSearchBehavior") ? c.intl.string(c.t.VkoLsy) : c.intl.string(c.t["NxjN+q"]),
     useSearchTerms: () => [c.intl.string(c.t["t4+fbe"])],
     useOptions: function() {
@@ -23,15 +23,15 @@ let u = (0, l.Qx)(a.X.CHAT_MESSAGE_SEARCH_DEFAULT_DM_SEARCH_BEHAVIOR, {
             value: 1
         }]
     },
-    useValue: () => +!!r.Hu.useSetting(),
+    useValue: () => +!!a.Hu.useSetting(),
     setValue: e => {
         let t = 1 === e;
         t ? i.A.cleanUpPrivateChannelSearchState() : i.A.cleanUpSearchState({
             type: d.I4_.DMS
         }), (0, s._k)({
-            prevIsCrossDMSettingEnabled: r.Hu.getSetting(),
+            prevIsCrossDMSettingEnabled: a.Hu.getSetting(),
             isCrossDMSettingEnabled: t,
             location: s.vy.USER_SETTINGS
-        }), r.Hu.updateSetting(t)
+        }), a.Hu.updateSetting(t)
     }
 })

@@ -1,13 +1,13 @@
 /** chunk id: 31760 params = (module,exports,require) **/
 n.d(t, {
-    J: () => C,
+    J: () => S,
     q: () => E
 });
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(419954),
-    a = n(933297),
+    a = n(419954),
+    r = n(933297),
     o = n(780964),
     d = n(143177),
     c = n(350017),
@@ -25,11 +25,11 @@ function E(e) {
     let {
         label: t,
         description: n,
-        placeholder: r,
-        overrideId: a,
+        placeholder: a,
+        overrideId: r,
         setOverride: o,
         fetchOverride: d
-    } = e, [c, u] = s.useState(a ?? ""), _ = s.useRef(null), [m, g] = s.useState(0), A = () => {
+    } = e, [c, u] = s.useState(r ?? ""), _ = s.useRef(null), [m, g] = s.useState(0), A = () => {
         null != _.current && (clearTimeout(_.current), _.current = null)
     };
     return s.useEffect(() => A, []), (0, i.jsx)(l.D0$, {
@@ -37,7 +37,7 @@ function E(e) {
         label: t,
         description: n,
         children: (0, i.jsx)(l.ksK, {
-            placeholder: r,
+            placeholder: a,
             error: 2 === m ? "Failed to fetch override" : void 0,
             successMessage: 3 === m ? "Override applied" : void 0,
             value: c,
@@ -58,11 +58,11 @@ function E(e) {
         })
     })
 }
-let C = (0, r.zZ)(o.X.DEV_OVERRIDES, {
+let S = (0, a.zZ)(o.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
     buildLayout: () => [x.U, p.l, u.B, _.q, g.g, d.Y, h.s, m.t, A.T, c.s],
     useInlineNotice: () => ({
-        type: a.lT.INLINE_NOTICE,
+        type: r.lT.INLINE_NOTICE,
         noticeType: "info",
         useText: () => T.intl.format(T.t.UeZJlg, {
             link: "https://i.dis.gd/dev-settings-changes"

@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(397927),
-    r = n(688810),
-    a = n(590547),
+    a = n(688810),
+    r = n(590547),
     o = n(919395),
     d = n(128450),
     c = n(985018),
-    u = n(352126);
+    u = n(888920);
 
 function _(e) {
     let {
@@ -19,13 +19,13 @@ function _(e) {
         titleIcon: _
     } = e, {
         analyticsLocations: m
-    } = (0, r.Ay)(), g = null != n, {
+    } = (0, a.Ay)(), g = null != n, {
         userNameplate: A,
         guildNameplate: h,
         pendingNameplate: x,
         pendingErrors: p
     } = (0, o.rv)(t, n?.id), T = s.useCallback(() => {
-        (0, a.p)({
+        (0, r.p)({
             analyticsLocations: m,
             guildId: n?.id
         })

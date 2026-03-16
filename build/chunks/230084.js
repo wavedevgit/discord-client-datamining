@@ -5,15 +5,15 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(421380),
+    a = n.n(l),
+    r = n(421380),
     o = n(397927),
     d = n(688810),
     c = n(385612),
     u = n(128450),
     _ = n(339984),
     m = n(985018),
-    g = n(760160);
+    g = n(897570);
 let A = [{
     name: "gif",
     extensions: ["gif"]
@@ -29,33 +29,33 @@ function h(e) {
         guildId: p,
         className: T,
         disabled: E = !1,
-        isTryItOut: C = !1,
-        forcedDivider: S,
+        isTryItOut: S = !1,
+        forcedDivider: C,
         withHighlight: f = !1
     } = e, {
-        newestAnalyticsLocation: N
-    } = (0, d.Ay)(), b = f ? o.wLn : a.$n, I = s.useCallback(() => {
+        newestAnalyticsLocation: b
+    } = (0, d.Ay)(), N = f ? o.wLn : r.$n, I = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
-            analyticsSource: N,
-            filters: C ? A : void 0,
+            analyticsSource: b,
+            filters: S ? A : void 0,
             guildId: p,
-            isTryItOut: C
+            isTryItOut: S
         })
-    }, [p, N, C]);
+    }, [p, b, S]);
     return (0, i.jsx)(u.A, {
         className: T,
         title: h,
         errors: n,
         disabled: E,
-        forcedDivider: S,
+        forcedDivider: C,
         children: (0, i.jsxs)("div", {
             className: g.NC,
-            children: [(0, i.jsx)(b, {
-                className: r()({
+            children: [(0, i.jsx)(N, {
+                className: a()({
                     [g.yj]: f
                 }),
-                size: a.$n.Sizes.SMALL,
+                size: r.$n.Sizes.SMALL,
                 onClick: I,
                 children: x ?? m.intl.string(m.t["4OynCD"])
             }), t && (0, i.jsx)("div", {

@@ -8,8 +8,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(311907),
-    r = n(554146),
-    a = n(582754),
+    a = n(554146),
+    r = n(582754),
     o = n(397927),
     d = n(955572),
     c = n(775602),
@@ -23,32 +23,32 @@ var i = n(627968),
     p = n(422936),
     T = n(234419),
     E = n(792656),
-    C = n(511484),
-    S = n(811611),
+    S = n(511484),
+    C = n(811611),
     f = n(97469),
-    N = n(954571),
-    b = n(544028),
+    b = n(954571),
+    N = n(544028),
     I = n(253932),
     v = n(12901),
     j = n(652215),
-    O = n(49999),
-    y = n(788868),
-    R = n(985018),
-    P = n(318684);
+    y = n(49999),
+    R = n(788868),
+    O = n(985018),
+    P = n(21082);
 let D = () => {
-    (0, x.Dr)(r.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
-        dismissAction: O.i.PRIMARY,
+    (0, x.Dr)(a.M.CLIENT_THEMES_SPARKLE_PREVIEW, {
+        dismissAction: y.i.PRIMARY,
         forceTrack: !0
     }), (0, h.nf)(h.HP.CLIENT_THEMES), (0, v.default)()
 };
 
 function L() {
     let e = (0, p.O)(),
-        t = (0, C.U9)(e, y.pe.TIER_2) ? R.intl.formatToPlainString(R.t.bkQ4bH, {
+        t = (0, S.U9)(e, R.pe.TIER_2) ? O.intl.formatToPlainString(O.t.bkQ4bH, {
             percent: e?.discount.amount
-        }) : R.intl.string(R.t.mr4K7D);
+        }) : O.intl.string(O.t.mr4K7D);
     return (0, i.jsx)(E.A, {
-        subscriptionTier: y.pe.TIER_2,
+        subscriptionTier: R.pe.TIER_2,
         defaultTextOverride: t,
         premiumModalAnalyticsLocation: {
             object: j.ZSU.BUTTON_CTA,
@@ -58,31 +58,31 @@ function L() {
     })
 }
 
-function M() {
+function G() {
     let e = (0, l.bG)([m.A], () => m.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === y.pe.TIER_2;
+        t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
     return !e || t ? null : (0, i.jsxs)("div", {
         className: P.gY,
         children: [(0, i.jsx)(o.Button, {
             variant: "secondary",
-            text: R.intl.string(R.t["E+COuA"]),
+            text: O.intl.string(O.t["E+COuA"]),
             onClick: D
         }), (0, i.jsx)(L, {})]
     })
 }
 
-function G(e) {
+function M(e) {
     let {
         children: t
     } = e, n = (0, l.bG)([m.A], () => m.A.isPreview), {
-        analyticsLocations: r
+        analyticsLocations: a
     } = (0, _.Ay)(u.A.USER_SETTINGS);
     return (s.useEffect(() => {
-        n && N.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: y.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
-            location_stack: r
+        n && b.default.track(j.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: R.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
+            location_stack: a
         })
-    }, [n, r]), n) ? (0, i.jsx)("div", {
+    }, [n, a]), n) ? (0, i.jsx)("div", {
         className: P._$,
         children: t
     }) : t
@@ -90,21 +90,21 @@ function G(e) {
 
 function U() {
     let e = (0, l.bG)([m.A], () => m.A.isPreview),
-        t = (0, T.V)()?.subscription_trial?.sku_id === y.pe.TIER_2;
+        t = (0, T.V)()?.subscription_trial?.sku_id === R.pe.TIER_2;
     return e && t ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
             className: P.c7,
             children: (0, i.jsx)(o.Button, {
                 variant: "secondary",
                 fullWidth: !0,
-                text: R.intl.string(R.t["E+COuA"]),
+                text: O.intl.string(O.t["E+COuA"]),
                 onClick: () => D()
             })
         }), (0, i.jsx)("div", {
             className: P.BU
-        }), (0, i.jsx)(S.Ay, {
-            type: y.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
-            subscriptionTier: y.pe.TIER_2
+        }), (0, i.jsx)(C.Ay, {
+            type: R.e.PREMIUM_CLIENT_THEME_SETTINGS_UPSELL,
+            subscriptionTier: R.pe.TIER_2
         })]
     }) : null
 }
@@ -113,10 +113,10 @@ let k = () => (0, i.jsx)("div", {
         type: A.v0.SETTINGS,
         children: [(0, i.jsx)(A.Ay.Basic, {
             className: P.a6
-        }), (0, i.jsx)(V, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(G, {
+        }), (0, i.jsx)(V, {}), (0, i.jsx)(g.A, {}), (0, i.jsxs)(M, {
             children: [(0, i.jsx)(A.Ay.Gradient, {
                 disabled: !1,
-                renderCTAButtons: () => (0, i.jsx)(M, {})
+                renderCTAButtons: () => (0, i.jsx)(G, {})
             }), (0, i.jsx)(U, {})]
         })]
     })
@@ -128,19 +128,19 @@ function V() {
             theme: t,
             useForcedColors: n,
             gradientPreset: s
-        } = (0, l.cf)([b.A, c.A, m.A], () => ({
-            theme: b.A.theme,
+        } = (0, l.cf)([N.A, c.A, m.A], () => ({
+            theme: N.A.theme,
             useForcedColors: c.A.useForcedColors,
             gradientPreset: m.A.gradientPreset
         })),
-        r = null != I.eh.useSetting().customUserThemeSettings;
+        a = null != I.eh.useSetting().customUserThemeSettings;
     return t !== j.NJ8.LIGHT ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.cGx, {
             gap: 24
         }), (0, i.jsx)(o.dOG, {
-            label: R.intl.string(R.t.yF54Ks),
-            checked: e && (0, a.qB)(t) && !n,
-            disabled: t !== j.NJ8.LIGHT || n || null != s || r,
+            label: O.intl.string(O.t.yF54Ks),
+            checked: e && (0, r.qB)(t) && !n,
+            disabled: t !== j.NJ8.LIGHT || n || null != s || a,
             onChange: d.LO
         }), (0, i.jsx)(o.cGx, {
             gap: 24
@@ -149,7 +149,7 @@ function V() {
 }
 let w = () => (0, l.bG)([m.A], () => m.A.isPreview) ? null : (0, i.jsx)(o.Button, {
     variant: "primary",
-    text: R.intl.string(R.t.qYXrkX),
+    text: O.intl.string(O.t.qYXrkX),
     onClick: D
 });
 
@@ -159,10 +159,10 @@ function B(e) {
     } = e;
     return (0, i.jsx)(A.Ay, {
         type: A.v0.SETTINGS,
-        children: (0, i.jsxs)(G, {
+        children: (0, i.jsxs)(M, {
             children: [(0, i.jsx)(A.ew, {
                 isCoachmark: !1,
-                renderCTAButtons: () => (0, i.jsx)(M, {}),
+                renderCTAButtons: () => (0, i.jsx)(G, {}),
                 headingClassName: P.EK,
                 titleTextVariant: "text-md/semibold",
                 titleClassName: P.cI,

@@ -6,16 +6,16 @@ var i = n(627968);
 n(64700);
 var s = n(311907),
     l = n(256311),
-    r = n(883600),
-    a = n(419954),
+    a = n(883600),
+    r = n(419954),
     o = n(780964),
     d = n(31760);
-let c = (0, a.E2)(o.X.CHANGE_LOG_OVERRIDE, {
+let c = (0, r.E2)(o.X.CHANGE_LOG_OVERRIDE, {
     useSearchTerms: () => ["changelog override", "change log override"],
     Component: function() {
-        let e = (0, s.bG)([r.A], () => r.A.overrideId()),
+        let e = (0, s.bG)([a.A], () => a.A.overrideId()),
             t = async e => {
-                let t = r.A.getChangelog(e, "en-US");
+                let t = a.A.getChangelog(e, "en-US");
                 return null != t ? t : await l.A.fetchChangelog(e, "en-US", !1, !0) ?? null
             };
         return (0, i.jsx)(d.q, {

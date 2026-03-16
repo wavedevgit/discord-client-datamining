@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(417597),
-    a = n(421380),
+    a = n(417597),
+    r = n(421380),
     o = n(397927),
     d = n(263063),
     c = n(509536),
@@ -17,13 +17,13 @@ var s = n(503698),
     g = n(473145),
     A = n(652215),
     h = n(985018),
-    x = n(725048);
+    x = n(246930);
 let p = function(e) {
     let {
         className: t,
         guildId: n,
         boostingVariant: s
-    } = e, p = (0, r.bG)([m.A], () => m.A.getGuild(n), [n]), T = (0, _.A)(p?.id).total;
+    } = e, p = (0, a.bG)([m.A], () => m.A.getGuild(n), [n]), T = (0, _.A)(p?.id).total;
     return null == p ? (0, i.jsx)("div", {
         className: l()(t, x.bo),
         children: (0, i.jsx)("div", {
@@ -74,8 +74,8 @@ let p = function(e) {
                 objectType: A.AnalyticsObjectTypes.BUY
             },
             pauseAnimation: !0,
-            size: a.$n.Sizes.MEDIUM,
-            color: a.$n.Colors.PRIMARY,
+            size: r.$n.Sizes.MEDIUM,
+            color: r.$n.Colors.PRIMARY,
             buttonText: h.intl.string(h.t.aBHecF)
         }) : (0, i.jsx)(o.Button, {
             variant: "secondary",

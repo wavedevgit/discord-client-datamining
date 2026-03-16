@@ -5,13 +5,13 @@ n.d(t, {
 var i = n(574381),
     s = n(419954),
     l = n(837921),
-    r = n(780964),
-    a = n(358776),
+    a = n(780964),
+    r = n(358776),
     o = n(604095),
     d = n(985018);
-let c = (0, s.zD)(r.X.OS_MINIMIZE_TO_TRAY, {
-    useTitle: () => (0, a.bp)("OsMinimizeToTray") ? d.intl.string(d.t.dJ5MUh) : d.intl.string(d.t.abLFes),
-    useSubtitle: () => (0, a.bp)("OsMinimizeToTray") ? d.intl.string(d.t.nQavHr) : d.intl.string(d.t["mVuX+j"]),
+let c = (0, s.zD)(a.X.OS_MINIMIZE_TO_TRAY, {
+    useTitle: () => (0, r.bp)("OsMinimizeToTray") ? d.intl.string(d.t.dJ5MUh) : d.intl.string(d.t.abLFes),
+    useSubtitle: () => (0, r.bp)("OsMinimizeToTray") ? d.intl.string(d.t.nQavHr) : d.intl.string(d.t["mVuX+j"]),
     usePredicate: () => i.Av && !(0, i.cX)(),
     useValue: () => o.fk.useState(e => e.minimizeToTray),
     setValue: o.tA,

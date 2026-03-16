@@ -6,9 +6,9 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(126100),
-    o = n(522759),
+    a = n(397927),
+    r = n(534),
+    o = n(473169),
     d = n(327499);
 let c = e => {
     let {
@@ -16,12 +16,12 @@ let c = e => {
         className: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(n, a.I),
+        className: l()(n, r.I),
         children: [(0, i.jsx)("img", {
-            className: a.S,
+            className: r.S,
             src: d,
             alt: ""
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             className: o.Ot,
             variant: "text-sm/medium",
             color: "text-muted",

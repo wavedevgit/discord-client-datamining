@@ -1,6 +1,6 @@
 /** chunk id: 465895 params = (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => O
 });
 var a = n(627968),
     i = n(64700),
@@ -20,8 +20,8 @@ var a = n(627968),
     f = n(367744),
     v = n(652215),
     b = n(788868),
-    j = n(872985),
-    A = n(930821);
+    j = n(815907),
+    A = n(661251);
 let C = async () => {
     try {
         let {
@@ -107,14 +107,14 @@ function I(e) {
         redeemed_at: N,
         trial_id: I,
         subscription_trial: R,
-        referrer: k
-    } = t, O = n.find(e => {
+        referrer: O
+    } = t, k = n.find(e => {
         let {
             value: t
         } = e;
         return t === I
     })?.label ?? "Unknown";
-    null != k && (O = `${O} from @${k.username}`);
+    null != O && (k = `${k} from @${O.username}`);
     let w = null != E,
         D = null != E && new Date(E).getTime() < Date.now(),
         M = R?.sku_id === b.pe.TIER_0,
@@ -167,7 +167,7 @@ function I(e) {
             children: (0, a.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
                 color: "always-white",
-                children: O
+                children: k
             })
         }), (0, a.jsxs)(d.DUT, {
             className: l()(j.nM, j.QB),
@@ -239,7 +239,7 @@ function I(e) {
                 children: "Referrer ID:"
             }), (0, a.jsx)("input", {
                 type: "text",
-                value: k?.id ?? "",
+                value: O?.id ?? "",
                 onChange: e => U({
                     referrerId: e.target.value
                 })
@@ -309,7 +309,7 @@ function R(e) {
             value: t
         } = e;
         return t === E
-    })?.label ?? "Unknown", R = null != T, k = null != T && new Date(T).getTime() < Date.now(), O = async () => {
+    })?.label ?? "Unknown", R = null != T, O = null != T && new Date(T).getTime() < Date.now(), k = async () => {
         f(!0), R ? await w({
             expiresAt: null
         }) : await (0, u.u1)(void 0, t), s(), f(!1)
@@ -349,7 +349,7 @@ function R(e) {
         }
     }, [o, h]);
     let D = "Active";
-    return k && (D = "Expired"), R && (D = "Acked"), (0, a.jsxs)("div", {
+    return O && (D = "Expired"), R && (D = "Acked"), (0, a.jsxs)("div", {
         className: l()(j.Nr, j.id),
         children: [(0, a.jsx)("div", {
             className: l()(j.nM, j.S7),
@@ -416,10 +416,10 @@ function R(e) {
         }), (0, a.jsxs)("div", {
             className: j.fC,
             children: [(0, a.jsx)(d.DUT, {
-                onClick: O,
+                onClick: k,
                 className: l()(j.qS, j.vk, {
                     [j.R1]: R,
-                    [j._7]: k
+                    [j._7]: O
                 }),
                 children: (0, a.jsx)(d.Text, {
                     variant: "eyebrow",
@@ -453,8 +453,8 @@ function R(e) {
     })
 }
 
-function k() {
-    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, p] = i.useState(), [x, g] = i.useState([]), [b, y] = i.useState([]), [k, O] = i.useState(!0), [w, D] = i.useState(10080), [M, P] = i.useState([]), {
+function O() {
+    let [e, t] = i.useState([]), [n, s] = i.useState([]), [l, r] = i.useState(), [c, p] = i.useState(), [x, g] = i.useState([]), [b, y] = i.useState([]), [O, k] = i.useState(!0), [w, D] = i.useState(10080), [M, P] = i.useState([]), {
         entitlements: U,
         deleteFractionalPremium: L,
         refreshEntitlementList: B
@@ -464,7 +464,7 @@ function k() {
     }, [B]), i.useEffect(() => {
         P(U.filter(e => e.sourceType === v.GD.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
     }, [U]), i.useEffect(() => {
-        (0 === e.length || 0 === n.length || k) && C().then(e => {
+        (0 === e.length || 0 === n.length || O) && C().then(e => {
             let n = Object.keys(e.trial).map(t => ({
                     label: t,
                     value: e.trial[t]
@@ -475,17 +475,17 @@ function k() {
                 }));
             t(n), s(a), null == l && r(n[0].value), null == c && p(a[0].value)
         })
-    }, [e, n, l, c, k]), i.useEffect(() => {
-        k && (O(!1), h.A.forceReset(), (0, u._D)(), S().then(e => {
+    }, [e, n, l, c, O]), i.useEffect(() => {
+        O && (k(!1), h.A.forceReset(), (0, u._D)(), S().then(e => {
             g(e.trial.sort((e, t) => e.id.localeCompare(t.id))), y(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
         }))
-    }, [k]);
+    }, [O]);
     let G = async () => {
-        null != l && (await T(l, "trial"), O(!0))
+        null != l && (await T(l, "trial"), k(!0))
     }, F = async () => {
-        null != c && (await T(c, "discount"), O(!0))
+        null != c && (await T(c, "discount"), k(!0))
     }, V = async () => {
-        await E(), O(!0)
+        await E(), k(!0)
     }, W = async () => {
         let e = new Date(Date.now() + 60 * w * 1e3).toISOString();
         await N(e), B()
@@ -520,7 +520,7 @@ function k() {
                         variant: "primary",
                         size: "sm",
                         text: "Refresh DevTools",
-                        onClick: () => O(!0)
+                        onClick: () => k(!0)
                     })]
                 })]
             }), (0, a.jsx)("section", {
@@ -589,7 +589,7 @@ function k() {
                 }), x.map(t => (0, a.jsx)(I, {
                     offer: t,
                     offerOptions: e,
-                    forceRefetch: () => O(!0)
+                    forceRefetch: () => k(!0)
                 }, t.id))]
             }), b.length > 0 && (0, a.jsxs)("section", {
                 className: j.uW,
@@ -599,7 +599,7 @@ function k() {
                 }), b.map(e => (0, a.jsx)(R, {
                     offer: e,
                     offerOptions: n,
-                    forceRefetch: () => O(!0)
+                    forceRefetch: () => k(!0)
                 }, e.id))]
             }), (0, a.jsx)("section", {
                 className: j.uW,

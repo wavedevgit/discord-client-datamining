@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(421380),
+    a = n.n(l),
+    r = n(421380),
     o = n(397927),
     d = n(688810),
     c = n(309635),
@@ -18,7 +18,7 @@ var i = n(627968),
     h = n(652215),
     x = n(788868),
     p = n(985018),
-    T = n(971065);
+    T = n(97671);
 
 function E(e) {
     let {
@@ -26,46 +26,46 @@ function E(e) {
         guild: n,
         initialSelectedEffect: l,
         className: E,
-        sectionTitle: C,
-        forcedDivider: S = !1,
+        sectionTitle: S,
+        forcedDivider: C = !1,
         withTutorial: f = !1,
-        showBorder: N = !1
+        showBorder: b = !1
     } = e, {
-        analyticsLocations: b
+        analyticsLocations: N
     } = (0, d.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), v = (0, m.N2)({
         user: t,
         guildId: n?.id
     }), {
         pendingProfileEffect: j,
-        errors: O
+        errors: y
     } = (0, m.nZ)(n?.id);
     s.useEffect(() => {
         I && u.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
             type: x.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: b
+            location_stack: N
         })
-    }, [I, b]);
-    let y = f ? o.wLn : a.$n;
+    }, [I, N]);
+    let R = f ? o.wLn : r.$n;
     return (0, i.jsx)(g.A, {
-        forcedDivider: S,
+        forcedDivider: C,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
-        title: C,
-        showBorder: N,
-        errors: O,
+        title: S,
+        showBorder: b,
+        errors: y,
         className: E,
         children: (0, i.jsxs)("div", {
             className: T.NC,
-            children: [(0, i.jsx)(y, {
-                size: a.$n.Sizes.SMALL,
+            children: [(0, i.jsx)(R, {
+                size: r.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.W)({
-                        analyticsLocations: b,
+                        analyticsLocations: N,
                         guild: n,
                         initialSelectedEffect: l
                     })
                 },
-                className: r()({
+                className: a()({
                     [T.yj]: f
                 }),
                 children: p.intl.string(p.t["/dRfCf"])

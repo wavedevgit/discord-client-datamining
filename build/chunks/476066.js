@@ -6,7 +6,7 @@ var r = n(627968),
     l = n(64700),
     i = n(503698),
     s = n.n(i),
-    a = n(490249),
+    a = n(497766),
     o = n(311907),
     u = n(876230),
     c = n(397927),
@@ -22,7 +22,7 @@ var r = n(627968),
     S = n(267956),
     A = n(662903),
     C = n(838541),
-    _ = n(221190);
+    _ = n(681636);
 let b = {
         tension: 250,
         friction: 5,
@@ -83,7 +83,7 @@ let b = {
             initialTimeSec: j,
             onError: eW,
             onHlsInstance: Z
-        }), [eX, eJ] = l.useState(!1), [eZ, e0] = l.useState(null), e1 = O ?? eK.current?.duration ?? 0, [e6, e2] = l.useState(u.oA.MD), e7 = {
+        }), [eX, eJ] = l.useState(!1), [eZ, e0] = l.useState(null), e1 = O ?? eK.current?.duration ?? 0, [e6, e7] = l.useState(u.oA.MD), e2 = {
             [u.oA.MD]: 50,
             [u.oA.LG]: 58
         };
@@ -140,7 +140,7 @@ let b = {
         let tn = !e9 && (ec || eo || es === u.Q6.ENDED),
             tr = l.useCallback(() => {
                 let e = (0, f.qf)(eK.current?.parentNode, eK.current);
-                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tr), eF(!1), F?.(!1), e2(u.oA.MD))
+                null == e || (0, f._U)(e) || (e.removeEventListener(f.Wb, tr), eF(!1), F?.(!1), e7(u.oA.MD))
             }, [F]),
             tl = () => {
                 null == eK.current || (ts(Math.max(eK.current.currentTime - 10, 0)), es === u.Q6.ENDED && e4(u.Q6.PAUSED, "seek"))
@@ -396,7 +396,7 @@ let b = {
                         }),
                         "data-testid": "discord-web-video-player-transcript",
                         style: {
-                            marginBottom: (0, a.to)([tm, tE], (e, t) => `${e*e7[e6]+t}px`)
+                            marginBottom: (0, a.to)([tm, tE], (e, t) => `${e*e2[e6]+t}px`)
                         },
                         children: (0, r.jsx)(v.X, {
                             text: U,
@@ -433,7 +433,7 @@ let b = {
                     style: {
                         translateY: (0, a.to)([tm.to({
                             range: [0, 1],
-                            output: [-20, -e7[e6]]
+                            output: [-20, -e2[e6]]
                         })], e => `${e}px`)
                     },
                     children: (0, r.jsx)(c.Text, {
@@ -447,7 +447,7 @@ let b = {
                     style: {
                         height: (0, a.to)([tm.to({
                             range: [0, 1],
-                            output: [0, e7[e6]]
+                            output: [0, e2[e6]]
                         })], e => `${e}px`)
                     },
                     children: [(0, r.jsx)(a.animated.div, {
@@ -518,7 +518,7 @@ let b = {
                             handleFullScreenBtnClick: () => {
                                 let e = !eB,
                                     t = (0, f.qf)(eK.current?.parentNode, eK.current);
-                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tr), F?.(!0), e2(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tr), F?.(!1), (0, f.sP)(t), e2(u.oA.MD)), eF(e)
+                                e && null != t ? ((0, f.tl)(t), t.addEventListener(f.Wb, tr), F?.(!0), e7(u.oA.LG)) : e || null == t || (t.removeEventListener(f.Wb, tr), F?.(!1), (0, f.sP)(t), e7(u.oA.MD)), eF(e)
                             },
                             handleSeekBackBtnClick: tl,
                             handleSeekForwardBtnClick: ti,

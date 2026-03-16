@@ -1,62 +1,62 @@
 /** chunk id: 704724 params = (module,exports,require) **/
-A.d(t, {
-    J6: () => n,
-    Jz: () => R,
-    ky: () => I,
-    qY: () => S
+_.d(e, {
+    J6: () => C,
+    Jz: () => i,
+    ky: () => S,
+    qY: () => T
 });
-var E = A(873298),
-    e = A(632119),
-    C = A(444802),
-    T = A(93857);
-let I = _ => null != _ && _ !== E.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
-    S = (_, t) => {
-        let A = (_ => {
+var E = _(873298),
+    A = _(632119),
+    I = _(444802),
+    n = _(93857);
+let S = t => null != t && t !== E.TO.UNSET_EXPLICIT_CONTENT_REDACTION,
+    T = (t, e) => {
+        let _ = (t => {
             let {
-                goreContentNonFriendDm: t,
-                goreContentFriendDm: A
-            } = T.oQ.getControlledSetting(_) ?? {};
+                goreContentNonFriendDm: e,
+                goreContentFriendDm: _
+            } = n.oQ.getControlledSetting(t) ?? {};
             return {
-                goreContentNonFriendDm: I(t) ? t : (0, C.jj)({
+                goreContentNonFriendDm: S(e) ? e : (0, I.jj)({
                     isDm: !0
                 }),
-                goreContentFriendDm: I(A) ? A : (0, C.jj)({
+                goreContentFriendDm: S(_) ? _ : (0, I.jj)({
                     isDm: !0,
                     isFriend: !0
                 }),
                 goreContentGuilds: E.TO.BLUR
             }
-        })(_);
-        T.oQ.updateControlledSetting(_, {
-            ...A,
-            ...t
+        })(t);
+        n.oQ.updateControlledSetting(t, {
+            ..._,
+            ...e
         })
     },
-    n = _ => {
+    C = t => {
         let {
-            teenId: t,
-            setting: A,
+            teenId: e,
+            setting: _,
             isFriend: E = !1
-        } = _;
-        if (I(A)) return A;
-        let C = T.sM.getControlledSetting(t);
-        return E ? e.Bb[C] : e.fu[C]
+        } = t;
+        if (S(_)) return _;
+        let I = n.sM.getControlledSetting(e);
+        return E ? A.Bb[I] : A.fu[I]
     },
-    R = (_, t) => {
-        let A, e = (A = T.p7.getControlledSetting(_), {
-            explicitContentNonFriendDm: n({
-                teenId: _,
-                setting: A?.explicitContentNonFriendDm
+    i = (t, e) => {
+        let _, A = (_ = n.p7.getControlledSetting(t), {
+            explicitContentNonFriendDm: C({
+                teenId: t,
+                setting: _?.explicitContentNonFriendDm
             }),
-            explicitContentFriendDm: n({
-                teenId: _,
-                setting: A?.explicitContentFriendDm,
+            explicitContentFriendDm: C({
+                teenId: t,
+                setting: _?.explicitContentFriendDm,
                 isFriend: !0
             }),
             explicitContentGuilds: E.TO.BLUR
         });
-        T.p7.updateControlledSetting(_, {
-            ...e,
-            ...t
+        n.p7.updateControlledSetting(t, {
+            ...A,
+            ...e
         })
     }

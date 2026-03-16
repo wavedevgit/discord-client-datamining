@@ -6,7 +6,7 @@ var a = n(627968),
     i = n(64700),
     s = n(503698),
     l = n.n(s),
-    r = n(490249),
+    r = n(497766),
     o = n(311907),
     d = n(397927),
     c = n(765671),
@@ -25,7 +25,7 @@ var a = n(627968),
     C = n(713457),
     T = n(419367),
     y = n(985018),
-    S = n(962734);
+    S = n(196240);
 let E = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function N(e) {
@@ -35,8 +35,8 @@ function N(e) {
         isHovering: s,
         contentPosition: N,
         rowIndex: R,
-        isVisibleInViewport: k,
-        onReceiveErrorHints: O,
+        isVisibleInViewport: O,
+        onReceiveErrorHints: k,
         sourceQuestContent: w
     } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), U = t.userStatus?.enrolledAt != null, {
         ref: L,
@@ -97,7 +97,7 @@ function N(e) {
             },
             className: S.z,
             children: [(0, a.jsx)(A.A, {
-                showPlaceholder: !k,
+                showPlaceholder: !O,
                 width: 80,
                 height: 80,
                 children: (0, a.jsxs)("div", {
@@ -165,7 +165,7 @@ function N(e) {
             questContent: n,
             contentPosition: N,
             rowIndex: R,
-            onReceiveErrorHints: O,
+            onReceiveErrorHints: k,
             sourceQuestContent: w
         })]
     })

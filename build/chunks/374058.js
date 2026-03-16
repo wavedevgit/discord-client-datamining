@@ -25,8 +25,8 @@ var a = n(627968),
     C = n(303054),
     T = n(231643),
     y = n(985018),
-    S = n(891026),
-    E = n(930821);
+    S = n(76584),
+    E = n(661251);
 let N = [{
     key: "event",
     cellClassName: S.Hz,
@@ -91,8 +91,8 @@ function R(e) {
         })]
     })
 }
-let k = new Set(["client_performance_cpu", "client_performance_memory"]),
-    O = [{
+let O = new Set(["client_performance_cpu", "client_performance_memory"]),
+    k = [{
         id: "details",
         name: "Details",
         group: T.fu.NONE,
@@ -167,7 +167,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = k.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = O.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -270,7 +270,7 @@ function M() {
             TabBar: I,
             renderSelectedTab: R
         } = (0, T.Ay)({
-            tabs: O
+            tabs: k
         }, []);
     return (0, a.jsxs)("div", {
         ref: e,

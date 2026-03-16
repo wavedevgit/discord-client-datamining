@@ -19,8 +19,8 @@ var a = n(627968),
     _ = n(42473),
     f = n(731854),
     v = n(985018),
-    b = n(845775),
-    j = n(141119);
+    b = n(368149),
+    j = n(631121);
 
 function A(e) {
     let {
@@ -37,9 +37,9 @@ function A(e) {
         play: I,
         events: {
             onMouseEnter: R,
-            onMouseLeave: k
+            onMouseLeave: O
         }
-    } = (0, d.I)(E ? "undeafen" : "deafen"), O = n ? r.TJE : N, {
+    } = (0, d.I)(E ? "undeafen" : "deafen"), k = n ? r.TJE : N, {
         name: w
     } = (0, g.x5)(f.oh.AUDIO_OUTPUT), D = (0, h.A)(t, n, s), {
         analyticsLocations: M
@@ -84,7 +84,7 @@ function A(e) {
                         "aria-label": v.intl.string(v.t.wjcRFX),
                         className: b.eT,
                         disabled: s,
-                        icon: (0, a.jsx)(O, {
+                        icon: (0, a.jsx)(k, {
                             size: "custom",
                             width: 20,
                             height: 20,
@@ -98,7 +98,7 @@ function A(e) {
                         onClick: A,
                         onContextMenu: i,
                         onMouseEnter: R,
-                        onMouseLeave: k,
+                        onMouseLeave: O,
                         plated: null != T,
                         redGlow: E,
                         role: "switch",

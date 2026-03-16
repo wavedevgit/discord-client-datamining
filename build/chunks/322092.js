@@ -6,8 +6,8 @@ var i = n(627968);
 n(64700);
 var s = n(503698),
     l = n.n(s),
-    r = n(397927),
-    a = n(234840);
+    a = n(397927),
+    r = n(164974);
 
 function o(e) {
     let {
@@ -19,35 +19,35 @@ function o(e) {
         ctaMessage: c
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(a.kL, d),
+        className: l()(r.kL, d),
         children: [(0, i.jsxs)("div", {
-            className: a.FS,
-            children: [(0, i.jsx)(r.EpV, {
+            className: r.FS,
+            children: [(0, i.jsx)(a.EpV, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor",
-                className: a.QW
-            }), (0, i.jsx)(r.hKd, {
+                className: r.QW
+            }), (0, i.jsx)(a.hKd, {
                 size: 10,
                 horizontal: !0
             }), (0, i.jsxs)("div", {
-                children: [(0, i.jsx)(r.hKd, {
+                children: [(0, i.jsx)(a.hKd, {
                     size: 1
-                }), (0, i.jsx)(r.Text, {
-                    className: a.pq,
+                }), (0, i.jsx)(a.Text, {
+                    className: r.pq,
                     variant: "text-sm/normal",
                     children: t
-                }), null != n && (0, i.jsx)(r.Text, {
-                    className: l()(a.pq, a.z3),
+                }), null != n && (0, i.jsx)(a.Text, {
+                    className: l()(r.pq, r.z3),
                     variant: "text-sm/normal",
                     children: n
                 })]
             })]
-        }), (0, i.jsx)(r.hKd, {
+        }), (0, i.jsx)(a.hKd, {
             size: 16,
             horizontal: !0
-        }), (0, i.jsx)(r.Button, {
+        }), (0, i.jsx)(a.Button, {
             variant: "critical-secondary",
             size: "sm",
             onClick: s,

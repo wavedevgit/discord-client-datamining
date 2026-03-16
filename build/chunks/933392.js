@@ -5,20 +5,20 @@ n.d(t, {
 var i = n(311907),
     s = n(73153),
     l = n(380098);
-let r = [];
+let a = [];
 
-function a(e) {
+function r(e) {
     let {
         payment: t
-    } = e, n = l.A.createFromServer(t), i = r.findIndex(e => e.id === t.id); - 1 === i ? (r.push(n), r.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : r[i] = n, r = [...r]
+    } = e, n = l.A.createFromServer(t), i = a.findIndex(e => e.id === t.id); - 1 === i ? (a.push(n), a.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime())) : a[i] = n, a = [...a]
 }
 class o extends i.Ay.Store {
     static displayName = "PaymentStore";
     getPayment(e) {
-        return r.find(t => t.id === e)
+        return a.find(t => t.id === e)
     }
     getPayments() {
-        return r
+        return a
     }
 }
 let d = new o(s.h, {
@@ -28,13 +28,13 @@ let d = new o(s.h, {
         } = e;
         for (let e of t) {
             let t = l.A.createFromServer(e),
-                n = r.findIndex(t => t.id === e.id); - 1 !== n ? r[n] = t : r.push(t)
+                n = a.findIndex(t => t.id === e.id); - 1 !== n ? a[n] = t : a.push(t)
         }
-        r.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), r = [...r]
+        a.sort((e, t) => t.createdAt.getTime() - e.createdAt.getTime()), a = [...a]
     },
-    PAYMENT_UPDATE: a,
-    BILLING_PAYMENT_FETCH_SUCCESS: a,
+    PAYMENT_UPDATE: r,
+    BILLING_PAYMENT_FETCH_SUCCESS: r,
     LOGOUT: function() {
-        r = []
+        a = []
     }
 })

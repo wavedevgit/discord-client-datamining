@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(627968),
     s = n(64700),
     l = n(503698),
-    r = n.n(l),
-    a = n(386181),
+    a = n.n(l),
+    r = n(386181),
     o = n(650682),
     d = n(934551),
     c = n(827734),
     u = n(397927),
     _ = n(590089),
-    m = n(507259);
+    m = n(747625);
 
 function g(e) {
     let {
@@ -23,10 +23,10 @@ function g(e) {
         onExpandedChange: A,
         children: h,
         animate: x = !0
-    } = e, p = s.useRef(null), [T, E] = s.useState(null), C = g && null != T;
+    } = e, p = s.useRef(null), [T, E] = s.useState(null), S = g && null != T;
     return s.useLayoutEffect(() => {
         null != p.current && null == T && E(p.current.clientHeight)
-    }, [T]), (0, i.jsxs)(a.EN, {
+    }, [T]), (0, i.jsxs)(r.EN, {
         ref: t,
         isExpanded: g,
         onExpandedChange: A,
@@ -36,13 +36,13 @@ function g(e) {
                 minHeight: T
             } : void 0,
             title: n,
-            description: C ? void 0 : l,
+            description: S ? void 0 : l,
             trailingElement: (0, i.jsx)(u.vN3, {
                 children: (0, i.jsx)(o.$, {
                     slot: "trigger",
                     className: m.bW,
                     children: (0, i.jsx)(d.ChevronLargeUpIcon, {
-                        className: r()(m.Kk, {
+                        className: a()(m.Kk, {
                             [m.kX]: !g
                         }),
                         color: c.A.colors.ICON_STRONG
@@ -50,8 +50,8 @@ function g(e) {
                 })
             }),
             onClick: () => A(!g)
-        }), (0, i.jsx)(a.kS, {
-            className: r()(m.nd, {
+        }), (0, i.jsx)(r.kS, {
+            className: a()(m.nd, {
                 [m.t5]: !x
             }),
             children: (0, i.jsx)(u.BJc, {

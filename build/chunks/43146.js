@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968),
     s = n(397927),
     l = n(600812),
-    r = n(791498),
-    a = n(244242);
+    a = n(791498),
+    r = n(244242);
 
 function o(e) {
     let {
@@ -21,11 +21,11 @@ function o(e) {
         usePersistentBadge: m,
         hasIcon: g,
         getDismissibleBadges: A
-    } = t, h = d(), x = c?.(), p = n(), T = u?.() ?? !1, E = _?.(), C = m?.(), S = A?.(), f = (0, l.A)({
-        persistentBadge: C,
-        dismissibleBadges: S
-    }), N = (0, r.q)(t);
-    return (0, i.jsxs)(a.L, {
+    } = t, h = d(), x = c?.(), p = n(), T = u?.() ?? !1, E = _?.(), S = m?.(), C = A?.(), f = (0, l.A)({
+        persistentBadge: S,
+        dismissibleBadges: C
+    }), b = (0, a.q)(t);
+    return (0, i.jsxs)(r.L, {
         children: [(0, i.jsx)(s.dOG, {
             label: h,
             description: x,
@@ -33,7 +33,7 @@ function o(e) {
             checked: p,
             hasIcon: g,
             onChange: e => {
-                N(), o(e)
+                b(), o(e)
             },
             disabled: T
         }), T && null != E ? (0, i.jsx)(s.po8, {
