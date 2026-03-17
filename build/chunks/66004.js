@@ -11,8 +11,8 @@ var n = i(627968),
     d = i(58149),
     u = i(667050),
     c = i(407781),
-    A = i(652215),
-    m = i(6694);
+    m = i(652215),
+    A = i(6694);
 
 function p(t) {
     let {
@@ -43,7 +43,7 @@ function p(t) {
                         url: t,
                         userId: l
                     };
-                T(t => [...t, c]), d.Ay.trackWithMetadata(A.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
+                T(t => [...t, c]), d.Ay.trackWithMetadata(m.HAw.VOICE_CHANNEL_EFFECT_VIEWED, {
                     channel_id: e,
                     guild_id: i
                 })
@@ -61,12 +61,12 @@ function p(t) {
         })
     }, []);
     return g ? null : (0, n.jsx)("div", {
-        className: m.Y,
+        className: A.Y,
         style: {
             width: h.width
         },
         children: (0, n.jsx)("div", {
-            className: m.z,
+            className: A.z,
             children: f.map(t => (0, n.jsx)(c.A, {
                 containerDimensions: h,
                 effect: t,

@@ -44,14 +44,14 @@ class x extends r.PureComponent {
             className: x,
             forceAddReactions: f,
             reactionClassName: C,
-            useChatFontScaling: E,
-            forceHideReactionCreates: I,
-            remainingReactions: T,
+            useChatFontScaling: I,
+            forceHideReactionCreates: E,
+            remainingReactions: v,
             combinedReactions: b,
-            visibleReactionsCount: v
+            visibleReactionsCount: T
         } = this.props, {
             disableTransitionAppear: S
-        } = this.state, y = E ? g : p, N = v > 0;
+        } = this.state, y = I ? g : p, N = T > 0;
         if (!N && !f) return null;
         let j = f || N;
         return (0, i.jsxs)(s.F, {
@@ -74,9 +74,9 @@ class x extends r.PureComponent {
                 isLurking: r,
                 isPendingMember: l,
                 isForumToolbar: d,
-                useChatFontScaling: E,
+                useChatFontScaling: I,
                 className: C
-            }), T > 0 && (0, i.jsx)(o.DUT, {
+            }), v > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
                     t.stopPropagation(), (0, m.$l)(A, e)
                 },
@@ -85,13 +85,13 @@ class x extends r.PureComponent {
                 children: (0, i.jsxs)(o.Text, {
                     className: y.reactionInner,
                     variant: "text-sm/normal",
-                    children: ["+", T]
+                    children: ["+", v]
                 })
-            }), !t && !I && (0, i.jsx)(c.t, {
+            }), !t && !E && (0, i.jsx)(c.t, {
                 tabIndex: j || this.state.isHovered ? 0 : -1,
                 message: e,
                 channel: A,
-                useChatFontScaling: E,
+                useChatFontScaling: I,
                 isHovered: this.state.isHovered,
                 className: a()({
                     [y.forceShow]: j

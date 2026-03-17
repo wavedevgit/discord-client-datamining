@@ -1,6 +1,6 @@
 /** chunk id: 960538 params = (module,exports,require) **/
 n.d(t, {
-    t: () => T
+    t: () => v
 }), n(938796);
 var i = n(627968),
     r = n(64700),
@@ -20,9 +20,9 @@ var i = n(627968),
     x = n(652215),
     f = n(307731),
     C = n(985018),
-    E = n(233080),
-    I = n(710504);
-class T extends r.Component {
+    I = n(233080),
+    E = n(710504);
+class v extends r.Component {
     state = {
         isReactionPickerActive: !1
     };
@@ -91,7 +91,7 @@ class T extends r.Component {
             isReactionPickerActive: s
         } = this.state;
         if (e.state === x.cmJ.SENDING || (0, d.Lt)(e.flags, x.pr7.EPHEMERAL)) return null;
-        let o = r ? I : E,
+        let o = r ? E : I,
             c = {
                 size: "sm",
                 color: "currentColor",

@@ -1,6 +1,6 @@
 /** chunk id: 709634 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
     r = n(64700),
@@ -20,22 +20,22 @@ var i = n(627968),
     x = n(197172),
     f = n(679740),
     C = n(513653);
-let E = e => {
+let I = e => {
     let {
         reportingUserId: t,
         guildId: n,
         compact: l,
         channel: s,
-        messageId: E,
-        reportedTimestamp: I
-    } = e, T = h.default.getUser(t), b = r.useMemo(() => l ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [l]), v = (0, m.P)({
-        user: T,
+        messageId: I,
+        reportedTimestamp: E
+    } = e, v = h.default.getUser(t), b = r.useMemo(() => l ? (0, _.A)((0, p.i$)(o()(), "LT")) : null, [l]), T = (0, m.P)({
+        user: v,
         channelId: s.id,
         guildId: n,
-        messageId: E
-    })((0, c.m2)(T, s)), S = null != T ? T.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != T ? A.intl.format(g.default["+zqXZs"], {
-        username: T.username,
-        onUserClick: v
+        messageId: I
+    })((0, c.m2)(v, s)), S = null != v ? v.getAvatarURL(n, (0, d.FT9)(d._3J.SIZE_16)) : C, y = null != v ? A.intl.format(g.default["+zqXZs"], {
+        username: v.username,
+        onUserClick: T
     }) : A.intl.string(g.default.xpRjfS);
     return (0, i.jsxs)("div", {
         className: a()(f.NB, f.JZ, b),
@@ -56,7 +56,7 @@ let E = e => {
                 className: x.Ek,
                 children: "•"
             }), (0, i.jsx)(u.A, {
-                timestamp: I,
+                timestamp: E,
                 className: x.vE
             })]
         })]

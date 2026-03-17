@@ -1,6 +1,6 @@
 /** chunk id: 484724 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
     r = n(64700),
@@ -21,18 +21,18 @@ var i = n(627968),
     f = n(427080),
     C = n(652215);
 
-function E(e) {
+function I(e) {
     let {
         code: t
-    } = e, [n, E, I] = t.split("-"), {
-        analyticsLocations: T
+    } = e, [n, I, E] = t.split("-"), {
+        analyticsLocations: v
     } = (0, s.Ay)(), {
         guildScheduledEvent: b,
-        guild: v,
+        guild: T,
         channel: S,
         isMember: y
     } = (0, l.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
-        let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
+        let e = A.Ay.getGuildScheduledEvent(I) ?? void 0,
             t = h.A.getGuild(n),
             i = _.A.getChannel(e?.channel_id);
         return {
@@ -41,19 +41,19 @@ function E(e) {
             channel: i,
             isMember: m.Ay.isMember(n, p.default.getCurrentUser()?.id)
         }
-    }, [n, E]);
+    }, [n, I]);
     return r.useEffect(() => {
-        b?.id == null && x.A.fetchGuildEvent(n, E), g.A.getGuildEventUserCounts(n, E, null != I ? [I] : []), g.A.getGuildEventsForCurrentUser(n)
-    }, [E, n, b?.id, I]), (0, i.jsx)(f.Ay, {
-        guild: v,
+        b?.id == null && x.A.fetchGuildEvent(n, I), g.A.getGuildEventUserCounts(n, I, null != E ? [E] : []), g.A.getGuildEventsForCurrentUser(n)
+    }, [I, n, b?.id, E]), (0, i.jsx)(f.Ay, {
+        guild: T,
         channel: S,
         guildScheduledEvent: b,
         isMember: y,
         onAcceptInstantInvite: () => {
             if ((0, c.g)({
-                    guild: v,
+                    guild: T,
                     isMember: y,
-                    analyticsLocations: T
+                    analyticsLocations: v
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
                 a.A.joinGuild(n, {
@@ -64,6 +64,6 @@ function E(e) {
         onTransitionToInviteChannel: function() {
             (0, d.V)(n) ? (0, o.Ze)(n) : S?.isGuildStageVoice() ? (0, u.av)(S) : S?.isGuildVoice() && x.A.joinVoiceEvent(S.guild_id, S.id)
         },
-        recurrenceId: I
+        recurrenceId: E
     })
 }

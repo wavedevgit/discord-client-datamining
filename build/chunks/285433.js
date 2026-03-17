@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(590202),
     f = n(918338),
     C = n(270045),
-    E = n(57718),
-    I = n(847641),
-    T = n(646764),
+    I = n(57718),
+    E = n(847641),
+    v = n(646764),
     b = n(398025),
-    v = n(433745),
+    T = n(433745),
     S = n(654487),
     y = n(818348),
     N = n(985018),
@@ -39,8 +39,8 @@ let L = (0, s.animated)(c.abt),
             expansionSpring: P,
             isAnimating: M,
             isExpanded: D,
-            isInteracting: O,
-            contentPosition: w,
+            isInteracting: w,
+            contentPosition: O,
             toggleExpanded: k,
             sourceQuestContent: U
         } = e, {
@@ -49,20 +49,20 @@ let L = (0, s.animated)(c.abt),
         } = (0, u.Ay)(), [F, H] = r.useState(null), [V, W] = r.useState(null), q = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), W(t.scrollWidth)
-        }), Y = (0, _.w)(q), z = (0, v.a3)(l), Q = l === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, S.rE.QUESTS_CARD, l, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
+        }), Y = (0, _.w)(q), z = (0, T.a3)(l), Q = l === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, S.rE.QUESTS_CARD, l, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
             e.stopPropagation(), e.currentTarget.blur(), k(), X({
                 questId: n.id,
                 questContent: l,
                 questContentCTA: D ? x.Cy.COLLAPSE : x.Cy.EXPAND,
-                questContentPosition: w,
+                questContentPosition: O,
                 sourceQuestContent: U
             })
-        }, en = (0, i.jsx)(E.Ay, {
+        }, en = (0, i.jsx)(I.Ay, {
             className: j.Iu,
             logotypeClassName: ee ? j.qN : void 0,
-            gameTileSize: E.LU.MEDIUM,
+            gameTileSize: I.LU.MEDIUM,
             quest: n,
-            separatorSpacing: E.C8.MEDIUM,
+            separatorSpacing: I.C8.MEDIUM,
             theme: y.NJ.DARK,
             withGameTile: !Q || null == n.config.cosponsorMetadata
         });
@@ -78,7 +78,7 @@ let L = (0, s.animated)(c.abt),
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
-                isInteracting: O,
+                isInteracting: w,
                 containerClassName: j.v7,
                 imageSize: {
                     width: 660,
@@ -95,7 +95,7 @@ let L = (0, s.animated)(c.abt),
                     style: {
                         y: z ? P.to({
                             range: [0, 1],
-                            output: [v.es, 0]
+                            output: [T.es, 0]
                         }) : void 0
                     },
                     children: [z && (0, i.jsx)(s.animated.div, {
@@ -114,7 +114,7 @@ let L = (0, s.animated)(c.abt),
                             className: j._F,
                             children: [(0, i.jsx)("div", {
                                 className: j.SY,
-                                children: (0, i.jsx)(T.A, {
+                                children: (0, i.jsx)(v.A, {
                                     quest: n,
                                     questContent: l,
                                     className: j.EK,
@@ -124,7 +124,7 @@ let L = (0, s.animated)(c.abt),
                                 className: j.if,
                                 children: [(0, i.jsxs)("div", {
                                     className: j.dc,
-                                    children: [en, (0, i.jsx)(I.A, {
+                                    children: [en, (0, i.jsx)(E.A, {
                                         color: "always-white"
                                     })]
                                 }), (0, i.jsx)(c.Text, {
@@ -153,7 +153,7 @@ let L = (0, s.animated)(c.abt),
                             className: j.uA,
                             children: [(0, i.jsxs)("div", {
                                 className: j._V,
-                                children: [en, Q ? null : (0, i.jsx)(I.A, {
+                                children: [en, Q ? null : (0, i.jsx)(E.A, {
                                     color: "always-white"
                                 })]
                             }), (0, i.jsxs)("div", {
@@ -189,13 +189,13 @@ let L = (0, s.animated)(c.abt),
                     style: {
                         top: z ? P.to({
                             range: [0, 1],
-                            output: [v.es / 2 - v.uR / 2, v.wl]
-                        }) : v.wl
+                            output: [T.es / 2 - T.uR / 2, T.wl]
+                        }) : T.wl
                     },
                     children: [(0, i.jsx)(C.C, {
                         questContent: l,
                         quest: n,
-                        questContentPosition: w,
+                        questContentPosition: O,
                         shouldShowDisclosure: !0,
                         hideLearnMore: z,
                         showShareLink: !t && Q,
@@ -216,7 +216,7 @@ let L = (0, s.animated)(c.abt),
                                 })
                             })
                         })
-                    }), !(0, v.rW)(l) && (0, i.jsx)(c.DUT, {
+                    }), !(0, T.rW)(l) && (0, i.jsx)(c.DUT, {
                         onClick: et,
                         className: j.P0,
                         "aria-label": D ? N.intl.string(N.t.iTcuma) : N.intl.string(N.t.dcl9MQ),

@@ -1,6 +1,6 @@
 /** chunk id: 836261 params = (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => E
 });
 var i = n(627968),
     r = n(311907),
@@ -30,8 +30,8 @@ function C(e) {
     } = e, h = (0, u.Ut)(), p = (0, r.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
         useReducedMotion: p
     }), C = (0, o.O)(e => e.setErrorHints), {
-        startingConsoleQuest: E,
-        startConsoleQuest: I
+        startingConsoleQuest: I,
+        startConsoleQuest: E
     } = (0, c.Wj)({
         questId: t.id,
         beforeRequest: () => {
@@ -51,8 +51,8 @@ function C(e) {
     return (0, i.jsx)(l.$n, {
         "data-migration-pending": !0,
         color: l.XD.PRIMARY,
-        onClick: I,
-        disabled: E,
+        onClick: E,
+        disabled: I,
         className: f.x,
         children: (0, i.jsxs)("div", {
             className: f.t,
@@ -61,7 +61,7 @@ function C(e) {
     })
 }
 
-function E(e) {
+function I(e) {
     let {
         quest: t,
         surface: n,
@@ -72,8 +72,8 @@ function E(e) {
         size: u
     } = e, p = (0, c.RR)({
         quest: t
-    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, T, b] = (0, c.Qo)(t, E);
-    return f || I === d.X0.DESKTOP ? (0, i.jsx)(a.Button, {
+    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), I = (0, c.fc)(t), [E, v, b] = (0, c.Qo)(t, I);
+    return f || E === d.X0.DESKTOP ? (0, i.jsx)(a.Button, {
         variant: "secondary",
         size: u,
         disabled: !0,
@@ -104,7 +104,7 @@ function E(e) {
         analyticsCtxQuestContentRowIndex: o
     })
 }
-let I = function(e) {
+let E = function(e) {
     let {
         quest: t,
         surface: n,
@@ -114,7 +114,7 @@ let I = function(e) {
         analyticsCtxQuestContentRowIndex: o,
         size: d
     } = e;
-    return (0, p.g5)(t) && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(E, {
+    return (0, p.g5)(t) && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(I, {
         quest: t,
         surface: n,
         size: d,

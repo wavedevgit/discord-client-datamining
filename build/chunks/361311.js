@@ -1,47 +1,47 @@
 /** chunk id: 361311 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => o
 });
-var i = t(627968);
-t(64700);
-var s = t(397927),
-    l = t(429913),
-    a = t(102876),
-    r = t(985018);
+var l = n(627968);
+n(64700);
+var s = n(397927),
+    a = n(429913),
+    i = n(102876),
+    r = n(985018);
 
 function o(e) {
     let {
-        applicationIds: n
-    } = e, t = (0, l.A)(n).filter(e => null != e);
-    if (0 === t.length) return null;
+        applicationIds: t
+    } = e, n = (0, a.A)(t).filter(e => null != e);
+    if (0 === n.length) return null;
     let o = null;
-    if (1 === t.length) o = r.intl.format(r.t.wQ6urw, {
-        applicationName: () => (0, i.jsx)(a.A, {
-            application: t[0]
-        }, t[0].id)
+    if (1 === n.length) o = r.intl.format(r.t.wQ6urw, {
+        applicationName: () => (0, l.jsx)(i.A, {
+            application: n[0]
+        }, n[0].id)
     });
-    else if (2 === t.length) o = r.intl.format(r.t.C98CSN, {
-        applicationName: () => (0, i.jsx)(a.A, {
-            application: t[0]
-        }, t[0].id),
-        applicationName2: () => (0, i.jsx)(a.A, {
-            application: t[1]
-        }, t[1].id)
+    else if (2 === n.length) o = r.intl.format(r.t.C98CSN, {
+        applicationName: () => (0, l.jsx)(i.A, {
+            application: n[0]
+        }, n[0].id),
+        applicationName2: () => (0, l.jsx)(i.A, {
+            application: n[1]
+        }, n[1].id)
     });
     else {
-        let e = t[t.length - 1],
-            n = t.slice(0, -1);
+        let e = n[n.length - 1],
+            t = n.slice(0, -1);
         o = r.intl.format(r.t.UxpwAh, {
-            applications: () => n.map(e => (0, i.jsx)(a.A, {
+            applications: () => t.map(e => (0, l.jsx)(i.A, {
                 application: e,
                 useComma: !0
             }, e.id)),
-            applicationNameLast: () => (0, i.jsx)(a.A, {
+            applicationNameLast: () => (0, l.jsx)(i.A, {
                 application: e
             }, e.id)
         })
     }
-    return (0, i.jsx)(s.Text, {
+    return (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
         children: o
     })

@@ -1,6 +1,6 @@
 /** chunk id: 485724 params = (module,exports,require) **/
 n.d(t, {
-    J: () => O.J,
+    J: () => w.J,
     W: () => U
 }), n(321073), n(134528), n(947204);
 var i = n(627968),
@@ -21,11 +21,11 @@ var i = n(627968),
     x = n(207371),
     f = n(205184),
     C = n(773669),
-    E = n(961350),
-    I = n(734057),
-    T = n(994500),
+    I = n(961350),
+    E = n(734057),
+    v = n(994500),
     b = n(967198),
-    v = n(287809),
+    T = n(287809),
     S = n(486020),
     y = n(204776),
     N = n(725606),
@@ -35,8 +35,8 @@ var i = n(627968),
     P = n(138175),
     M = n(112150),
     D = n(574660),
-    O = n(768349),
-    w = n(985018),
+    w = n(768349),
+    O = n(985018),
     k = n(22658);
 
 function U(e) {
@@ -50,15 +50,15 @@ function U(e) {
     } = e, {
         name: f,
         bot: C
-    } = t = (0, P.b)(t), T = C?.id, b = (0, h.Ag)(t), v = S.Ay.getApplicationIconURL({
+    } = t = (0, P.b)(t), v = C?.id, b = (0, h.Ag)(t), T = S.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         bot: C
     }), {
         staticBannerSrc: y,
         videoBannerSrc: L,
-        bannerAspectRatio: O
-    } = (0, M.f)(t), k = (0, s.bG)([E.default], () => a ?? E.default.getId(), [a]), {
+        bannerAspectRatio: w
+    } = (0, M.f)(t), k = (0, s.bG)([I.default], () => a ?? I.default.getId(), [a]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -71,10 +71,10 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), z = null != T && b && Y, Q = W && b, K = (0, x.e)(t), J = (0, D.F)(t), X = (0, D.t)(t), Z = r.useMemo(() => {
+    }), z = null != v && b && Y, Q = W && b, K = (0, x.e)(t), J = (0, D.F)(t), X = (0, D.t)(t), Z = r.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
-            label: w.intl.string(w.t.RscU7I),
+            label: O.intl.string(O.t.RscU7I),
             trackingArea: R.kY.PLAY,
             onClick() {
                 A.A.launchFrame({
@@ -82,7 +82,7 @@ function U(e) {
                 })
             }
         }) : (Q && e.push({
-            label: null == H ? w.intl.string(w.t.RscU7I) : V ? w.intl.string(w.t.DPfdsq) : w.intl.string(w.t.sqe0hj),
+            label: null == H ? O.intl.string(O.t.RscU7I) : V ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, d.su)({
@@ -97,19 +97,19 @@ function U(e) {
             },
             disabled: V
         }), !Q && z && e.push({
-            label: w.intl.string(w.t.JeK1Wg),
+            label: O.intl.string(O.t.JeK1Wg),
             trackingArea: R.kY.PLAY,
             onClick() {
                 (0, m.Q)({
                     appId: t.id,
-                    botId: T,
+                    botId: v,
                     analyticsLocations: U,
                     customId: l,
                     referrerId: k
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, z, H, V, F, q, l, k, U, T]), $ = b ? (0, i.jsx)(B, {
+    }, [b, X, K, t.id, Q, z, H, V, F, q, l, k, U, v]), $ = b ? (0, i.jsx)(B, {
         app: t
     }) : (0, i.jsx)(G, {
         app: t
@@ -119,8 +119,8 @@ function U(e) {
         staticBannerSrc: y,
         videoBannerSrc: L,
         onClickBanner: J,
-        bannerAspectRatio: O,
-        iconSrc: v,
+        bannerAspectRatio: w,
+        iconSrc: T,
         info: $,
         actions: Z,
         onClickContent: J,
@@ -130,7 +130,7 @@ function U(e) {
             referrerId: k,
             activityCustomId: l,
             onView: g,
-            guildId: I.A.getChannel(o.channel_id)?.guild_id,
+            guildId: E.A.getChannel(o.channel_id)?.guild_id,
             channelId: o.channel_id,
             messageId: o.id
         }
@@ -151,7 +151,7 @@ function G(e) {
                 compactDisplay: "short"
             }),
             i = t.directoryEntry?.guild_count ?? 0;
-        return 0 === i ? null : w.intl.format(w.t["6IW6Wi"], {
+        return 0 === i ? null : O.intl.format(O.t["6IW6Wi"], {
             guildCount: e.format(i)
         })
     }, [t.directoryEntry?.guild_count, n, a]), c = t.categories?.at(0)?.name;
@@ -180,12 +180,12 @@ function B(e) {
     } = e, {
         tags: n,
         maxParticipants: l = 0
-    } = t, d = (0, s.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([v.default, T.A], () => {
+    } = t, d = (0, s.bG)([b.A], () => b.A.getGuildId() ?? void 0, []), c = (0, f.s)(t.id), u = (0, s.yK)([T.default, v.A], () => {
         let e = [];
         for (let [t, n] of c.entries()) {
             if (t >= 5) break;
-            let i = v.default.getUser(n.author_id),
-                r = T.A.isFriend(n.author_id);
+            let i = T.default.getUser(n.author_id),
+                r = v.A.isFriend(n.author_id);
             null != i && r && e.push(i)
         }
         return e
@@ -193,7 +193,7 @@ function B(e) {
         if (u.length > 0) return (0, i.jsx)(L.$, {
             activityUsers: u,
             guildId: d,
-            activityText: w.intl.formatToPlainString(w.t["IJa+46"], {
+            activityText: O.intl.formatToPlainString(O.t["IJa+46"], {
                 count: u.length
             })
         });
@@ -201,11 +201,11 @@ function B(e) {
             children: [(0, i.jsx)(o.Y3C, {
                 size: "xxs",
                 color: "currentColor"
-            }), w.intl.string(w.t.TsWCdW)]
+            }), O.intl.string(O.t.TsWCdW)]
         });
-        let e = l > 0 ? w.intl.format(w.t.z8EAJW, {
+        let e = l > 0 ? O.intl.format(O.t.z8EAJW, {
             count: l
-        }) : w.intl.string(w.t.RjceQU);
+        }) : O.intl.string(O.t.RjceQU);
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "xxs",

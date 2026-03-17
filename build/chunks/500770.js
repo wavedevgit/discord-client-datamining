@@ -82,11 +82,11 @@ function p(e) {
         onShowFullDescription: x,
         productType: f,
         onTapCard: C,
-        actionMenu: E,
-        showOpaqueBackground: I = !1,
-        hideRoleTag: T = !1,
+        actionMenu: I,
+        showOpaqueBackground: E = !1,
+        hideRoleTag: v = !1,
         lineClamp: b = 1,
-        cardWidth: v = 332,
+        cardWidth: T = 332,
         cardHeight: S,
         thumbnailHeight: y = 187,
         descriptionTextVariant: N = "text-sm/normal",
@@ -123,14 +123,14 @@ function p(e) {
                 }), A && (0, i.jsx)(h, {
                     onShowFullDescription: x,
                     variant: N
-                }), T || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
+                }), v || null == p || "" === p.name ? null : (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)(a.hKd, {
                         size: 16
                     }), (0, i.jsx)(c.A, {
                         role: p
                     })]
                 })]
-            }), E]
+            }), I]
         }), (0, i.jsxs)("div", {
             className: _.kP,
             children: [(0, i.jsx)(a.Text, {
@@ -153,12 +153,12 @@ function p(e) {
         })]
     });
     return null == C ? (0, i.jsx)("article", {
-        className: l()(_.Um, I ? _.sG : _.Wi),
+        className: l()(_.Um, E ? _.sG : _.Wi),
         "aria-labelledby": L,
         children: R
     }) : (0, i.jsx)("div", {
         style: {
-            width: v,
+            width: T,
             height: S
         },
         children: (0, i.jsx)(a.sqX, {
@@ -166,7 +166,7 @@ function p(e) {
             "aria-label": u.intl.formatToPlainString(u.t["e+TmJa"], {
                 productName: n
             }),
-            className: l()(_.Um, I ? _.sG : _.Wi, _.GA),
+            className: l()(_.Um, E ? _.sG : _.Wi, _.GA),
             onClick: C,
             children: R
         })

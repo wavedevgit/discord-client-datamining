@@ -26,22 +26,22 @@ function C(e) {
         message: t,
         compact: n
     } = e, r = (0, a.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
-    return null == r ? null : (0, i.jsx)(E, {
+    return null == r ? null : (0, i.jsx)(I, {
         channel: r,
         compact: n,
         isSystemMessage: (0, d.A)(t)
     })
 }
 
-function E(e) {
+function I(e) {
     var t;
     let r, d, c, {
             channel: u,
             compact: C,
-            isSystemMessage: E
+            isSystemMessage: I
         } = e,
-        I = (0, a.bG)([m.A], () => m.A.getCount(u.id)),
-        T = (t = u, r = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, a.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
+        E = (0, a.bG)([m.A], () => m.A.getCount(u.id)),
+        v = (t = u, r = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, a.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -57,12 +57,12 @@ function E(e) {
                 children: (0, h.aK)(c)
             })]
         })),
-        b = null != I && I > 0;
+        b = null != E && E > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: l()(f.GI, {
                 [f.E]: !C,
-                [f.E_]: E
+                [f.E_]: I
             })
         }), (0, i.jsx)(s.DUT, {
             onClick: function(e) {
@@ -87,7 +87,7 @@ function E(e) {
             },
             "aria-roledescription": x.intl.string(x.t["8ipxiY"]),
             className: l()(f.kL, {
-                [f.og]: E
+                [f.og]: I
             }),
             children: (0, i.jsxs)(s.RDc, {
                 children: [(0, i.jsxs)("div", {
@@ -100,7 +100,7 @@ function E(e) {
                     }), (0, i.jsx)("span", {
                         className: f.lO,
                         "aria-hidden": !b,
-                        children: (0, _.ub)(I, u.id)
+                        children: (0, _.ub)(E, u.id)
                     })]
                 }), (0, i.jsx)(s.Text, {
                     variant: "text-sm/normal",
@@ -108,7 +108,7 @@ function E(e) {
                     lineClamp: 1,
                     color: "text-default",
                     className: f.sb,
-                    children: T
+                    children: v
                 })]
             })
         })]

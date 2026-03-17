@@ -17,8 +17,8 @@ function o(t) {
         guildId: d,
         source: u,
         size: c = "sm",
-        variant: A = "secondary",
-        onAction: m,
+        variant: m = "secondary",
+        onAction: A,
         ...p
     } = t, {
         tooltip: h,
@@ -31,9 +31,9 @@ function o(t) {
         children: (0, n.jsx)(r.K0, {
             icon: r.J2m,
             size: c,
-            variant: A,
+            variant: m,
             onClick: () => {
-                m?.(), T()
+                A?.(), T()
             },
             disabled: f,
             loading: g,

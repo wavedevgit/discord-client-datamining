@@ -13,8 +13,8 @@ var l = i(503698),
     d = i(592182),
     u = i(587895),
     c = i(402216),
-    A = i(12351),
-    m = i(769015),
+    m = i(12351),
+    A = i(769015),
     p = i(877315),
     h = i(607407),
     g = i(652215),
@@ -48,7 +48,7 @@ function E(t) {
     }) : f.intl.string(f.t["Jpkr/q"]), O = (0, n.jsxs)(n.Fragment, {
         children: [I && (0, n.jsxs)("div", {
             className: T.WG,
-            children: [null != D && (0, n.jsx)(m.A, {
+            children: [null != D && (0, n.jsx)(A.A, {
                 game: D,
                 className: T.lK
             }), (0, n.jsx)(a.Text, {
@@ -109,8 +109,8 @@ function E(t) {
                 channelId: e.channelId,
                 className: T.lx,
                 onAction: y
-            }), !N && (0, n.jsx)(A.A, {
-                type: A.A.Types.INLINE,
+            }), !N && (0, n.jsx)(m.A, {
+                type: m.A.Types.INLINE,
                 className: T.PP,
                 children: __OVERLAY__ ? f.intl.string(f.t.YRdw70) : f.intl.string(f.t.CCTgbF)
             })]
@@ -132,8 +132,8 @@ function C(t) {
         activeStream: l,
         user: s,
         currentUserId: u,
-        canWatch: A,
-        unavailableReason: m,
+        canWatch: m,
+        unavailableReason: A,
         onWatchStream: S,
         onAction: E,
         showHeader: C = !1,
@@ -156,13 +156,13 @@ function C(t) {
             children: [(0, n.jsx)(h.A, {
                 className: T.oz,
                 stream: e
-            }), A ? (0, n.jsx)("div", {
+            }), m ? (0, n.jsx)("div", {
                 className: T.xD,
                 children: (0, n.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, p.A)(e, l, u, m)
+                    children: (0, p.A)(e, l, u, A)
                 })
             }) : null]
         }) : (0, n.jsxs)("div", {
@@ -170,13 +170,13 @@ function C(t) {
             children: [(0, n.jsx)(h.A, {
                 className: T.oz,
                 stream: e
-            }), A ? (0, n.jsx)("div", {
+            }), m ? (0, n.jsx)("div", {
                 className: T.xD,
                 children: (0, n.jsx)(a.Text, {
                     variant: "text-sm/normal",
                     color: "none",
                     className: T.ON,
-                    children: (0, p.A)(e, l, u, m)
+                    children: (0, p.A)(e, l, u, A)
                 })
             }) : null]
         }), (0, n.jsx)("div", {

@@ -27,16 +27,16 @@ function h(e) {
         size: f,
         height: C
     } = (0, u.L)(), {
-        expansionSpring: E,
-        isAnimating: I,
-        isExpanded: T,
+        expansionSpring: I,
+        isAnimating: E,
+        isExpanded: v,
         toggleExpanded: b
     } = (0, u.s)({
         initiallyExpanded: h || (0, _.RA)({
             location: n,
             quest: t
         })
-    }), [v, S] = r.useState(!1), y = () => S(!0), N = () => S(!1), j = C ?? _._B;
+    }), [T, S] = r.useState(!1), y = () => S(!0), N = () => S(!1), j = C ?? _._B;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
@@ -45,7 +45,7 @@ function h(e) {
         sourceQuestContent: g,
         children: e => (0, i.jsx)(l.animated.div, {
             style: {
-                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : E.to({
+                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : I.to({
                     range: [0, 1],
                     output: [_.es, j]
                 })
@@ -64,10 +64,10 @@ function h(e) {
                     location: n,
                     quest: t,
                     size: f,
-                    expansionSpring: E,
-                    isInteracting: v,
-                    isAnimating: I,
-                    isExpanded: T,
+                    expansionSpring: I,
+                    isInteracting: T,
+                    isAnimating: E,
+                    isExpanded: v,
                     contentPosition: p,
                     toggleExpanded: b,
                     sourceQuestContent: g
@@ -76,9 +76,9 @@ function h(e) {
                     isQuestExpired: A,
                     location: n,
                     size: f,
-                    isFocused: v,
-                    isExpanded: T,
-                    isAnimating: I,
+                    isFocused: T,
+                    isExpanded: v,
+                    isAnimating: E,
                     contentPosition: p,
                     sourceQuestContent: g
                 })]

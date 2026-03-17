@@ -21,11 +21,11 @@ var r = n(503698),
     x = n(18437),
     f = n(590202),
     C = n(92246),
-    E = n(792620),
-    I = n(201805),
-    T = n(212614),
+    I = n(792620),
+    E = n(201805),
+    v = n(212614),
     b = n(79545),
-    v = n(646764),
+    T = n(646764),
     S = n(545986),
     y = n(433745),
     N = n(654487),
@@ -66,7 +66,7 @@ function M(e) {
         questContent: r,
         questContentPosition: l,
         sourceQuestContent: a
-    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, I._c)({
+    } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, E._c)({
         progressState: n,
         quest: t,
         questContent: r,
@@ -93,17 +93,17 @@ let D = e => {
         quest: t,
         location: n,
         size: r,
-        isFocused: I,
+        isFocused: E,
         isQuestExpired: D,
-        isExpanded: O,
-        isAnimating: w,
+        isExpanded: w,
+        isAnimating: O,
         contentPosition: k,
         sourceQuestContent: U
     } = e, G = (0, A.In)(t), B = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = O || w, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = w || O, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: N.rE.QUESTS_CARD,
@@ -112,7 +112,7 @@ let D = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, E.vv)(t);
+    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
@@ -134,8 +134,8 @@ let D = e => {
                         children: (0, i.jsx)(d.EpV, {
                             color: d.LU0.colors.WHITE
                         })
-                    }), (0, i.jsx)(v.A, {
-                        autoplay: I,
+                    }), (0, i.jsx)(T.A, {
+                        autoplay: E,
                         className: l()({
                             [R.Lu]: "lg" === r,
                             [R.je]: "sm" === r,
@@ -241,7 +241,7 @@ let D = e => {
                         })
                     },
                     text: L.intl.string(L.t.LLLLPD)
-                }), !Z && (K.enabled && J === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(T.A, {
+                }), !Z && (K.enabled && J === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(v.A, {
                     quest: t,
                     surface: b.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,

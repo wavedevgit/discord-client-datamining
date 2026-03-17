@@ -12,8 +12,8 @@ var l = i(503698),
     d = i(397927),
     u = i(707606),
     c = i(573648),
-    A = i(235986),
-    m = i(338234),
+    m = i(235986),
+    A = i(338234),
     p = i(159426),
     h = i(25528),
     g = i(655724),
@@ -52,9 +52,9 @@ let R = (0, u.A)(t => {
     } = t, W = (0, o.bG)([S.default], () => {
         let t = S.default.getCurrentUser();
         return a()(null != t, "UserActivityActions: currentUser cannot be undefined"), t
-    }), B = H === _.O.STREAM_PREVIEW || null != s, k = (0, C.A)(e), Y = k || B ? A.A.Direction.HORIZONTAL : A.A.Direction.VERTICAL, z = e?.type === b.$pd.HANG_STATUS, $ = (0, o.bG)([E.A, T.A], () => z ? T.A.getChannel(E.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([T.A], () => null != G ? T.A.getChannel(G) : null, [G]), {
+    }), B = H === _.O.STREAM_PREVIEW || null != s, k = (0, C.A)(e), Y = k || B ? m.A.Direction.HORIZONTAL : m.A.Direction.VERTICAL, $ = e?.type === b.$pd.HANG_STATUS, z = (0, o.bG)([E.A, T.A], () => $ ? T.A.getChannel(E.A.getVoiceStateForUser(l.id)?.channelId) : null), J = (0, o.bG)([T.A], () => null != G ? T.A.getChannel(G) : null, [G]), {
         enableUserHoverActivities: K
-    } = (0, m.fC)({
+    } = (0, A.fC)({
         guildId: R ?? J?.guild_id,
         location: "UserActivityActions"
     }), {
@@ -64,12 +64,12 @@ let R = (0, u.A)(t => {
         location: "UserActivityActions"
     }, {
         autoTrackExposure: !1
-    }), q = null != J && K && Z && (0, h.F9)(e), X = Y === A.A.Direction.VERTICAL;
-    return (0, n.jsx)(A.A, {
+    }), q = null != J && K && Z && (0, h.F9)(e), X = Y === m.A.Direction.VERTICAL;
+    return (0, n.jsx)(m.A, {
         grow: 0,
-        align: A.A.Align.STRETCH,
+        align: m.A.Align.STRETCH,
         direction: Y,
-        wrap: X ? A.A.Wrap.WRAP : A.A.Wrap.NO_WRAP,
+        wrap: X ? m.A.Wrap.WRAP : m.A.Wrap.NO_WRAP,
         className: r()(u, M.jx, X ? M.Vd : M.xM),
         children: (() => {
             if ((0, v.A)(e)) return (0, n.jsx)(x.A, {
@@ -118,10 +118,10 @@ let R = (0, u.A)(t => {
                 isCurrentUser: W.id === l.id,
                 applicationStream: s,
                 onAction: F
-            }) : z && null != $ ? (0, n.jsx)(N.A, {
+            }) : $ && null != z ? (0, n.jsx)(N.A, {
                 userId: l.id,
                 variant: w,
-                hangStatusChannel: $,
+                hangStatusChannel: z,
                 onAction: F
             }) : (0, n.jsxs)(n.Fragment, {
                 children: [q && (0, n.jsx)(g.B, {

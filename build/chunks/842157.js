@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(205184),
     f = n(689168),
     C = n(403362),
-    E = n(456060),
-    I = n(131724),
-    T = n(987709),
+    I = n(456060),
+    E = n(131724),
+    v = n(987709),
     b = n(850670),
-    v = n(206589),
+    T = n(206589),
     S = n(154297),
     y = n(467078),
     N = n(833349),
@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(878831),
     M = n(652215),
     D = n(768349),
-    O = n(985018),
-    w = n(609653);
+    w = n(985018),
+    O = n(609653);
 
 function k(e) {
     let {
@@ -89,19 +89,19 @@ function k(e) {
         }
     }).filter(C.Vq), [o]);
     if (!(null != n || c.length > 0)) return null;
-    let u = null != n ? (0, S.C)(n) : O.intl.string(O.t["4dGUP0"]);
+    let u = null != n ? (0, S.C)(n) : w.intl.string(w.t["4dGUP0"]);
     return (0, i.jsxs)("div", {
-        className: w.qr,
+        className: O.qr,
         children: [(0, i.jsx)("div", {
-            className: w.E6,
+            className: O.E6,
             children: c.map((e, t) => (0, i.jsx)("div", {
-                className: w.F2,
+                className: O.F2,
                 children: e
             }, t))
         }), (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
-            className: w.kB,
+            className: O.kB,
             children: u
         })]
     })
@@ -133,7 +133,7 @@ function U(e) {
         accountLinkButtonRef: X,
         renderAccountLinkUpsell: Z
     } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = r.useMemo(() => null != $ ? (0, i.jsxs)("div", {
-        className: w.Ym,
+        className: O.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
             color: "currentColor"
@@ -150,20 +150,20 @@ function U(e) {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
-        }), O.intl.string(O.t.TsWCdW)]
+        }), w.intl.string(w.t.TsWCdW)]
     }) : null, [en]), er = r.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
-        className: w.dS,
+        className: O.dS,
         color: "none",
         lineClamp: 2,
-        children: [et ? (0, E.YC)(t, a, s, S, !1) : ee, et ? null : ei]
+        children: [et ? (0, I.YC)(t, a, s, S, !1) : ee, et ? null : ei]
     }), [et, t, a, s, S, ee, ei]), el = r.useMemo(() => (0, i.jsxs)("div", {
-        className: w.pq,
+        className: O.pq,
         children: [er, q || et ? null : Y]
     }), [er, q, et, Y]), ea = !!L, es = (0, A.e)(n), {
         canJoin: eo,
         remoteJoinPlatform: ed
-    } = (0, I.D)({
+    } = (0, E.D)({
         presenceActivity: V,
         currentUserPresenceActivity: W,
         currentUserId: S,
@@ -172,7 +172,7 @@ function U(e) {
         isEmbeddedApplication: R,
         isFrameApplication: es,
         isGameLaunchable: ea
-    }), ec = (0, I.M)(V, W, t, n), eu = (0, T.E)(V, t, n, S), e_ = (0, v.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
+    }), ec = (0, E.M)(V, W, t, n), eu = (0, v.E)(V, t, n, S), e_ = (0, T.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
     } = r.useMemo(() => {
@@ -180,7 +180,7 @@ function U(e) {
             n = !0,
             i = !1;
         eo ? e = {
-            label: O.intl.string(O.t.VJlc0S),
+            label: w.intl.string(w.t.VJlc0S),
             trackingArea: h.kY.JOIN,
             submitting: eh,
             onClick: () => {
@@ -208,7 +208,7 @@ function U(e) {
                 })
             }
         } : em && K ? (e = {
-            label: O.intl.string(O.t.lw71Nf),
+            label: w.intl.string(w.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({
@@ -216,13 +216,13 @@ function U(e) {
                 })
             }
         }, n = !1) : ec ? (e = {
-            label: O.intl.string(O.t.VJlc0S),
+            label: w.intl.string(w.t.VJlc0S),
             trackingArea: h.kY.SYNC,
             onClick: () => {
                 null != V && _.OH(V, t.author.id)
             }
         }, n = !1) : eu ? e = {
-            label: O.intl.string(O.t["hC/Zey"]),
+            label: w.intl.string(w.t["hC/Zey"]),
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
@@ -233,16 +233,16 @@ function U(e) {
                 })
             },
             disabled: t.author.id === S,
-            disabledReason: t.author.id === S ? O.intl.string(O.t.IBl8ID) : void 0
+            disabledReason: t.author.id === S ? w.intl.string(w.t.IBl8ID) : void 0
         } : e_ ? e = {
-            label: O.intl.string(O.t.KC26NR),
+            label: w.intl.string(w.t.KC26NR),
             trackingArea: h.kY.PLAY,
             onClick: () => {},
             disabled: !0
         } : null != U && (e = U, n = !1);
         let r = [];
         return null != e && (r.push(e), Q && n && (r.push({
-            label: O.intl.string(O.t.lw71Nf),
+            label: w.intl.string(w.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
                 J({

@@ -23,12 +23,12 @@ var i = n(889137),
     x = n(969632),
     f = n(438437),
     C = n(842901),
-    E = n(589590),
-    I = n(708676),
-    T = n(652215),
+    I = n(589590),
+    E = n(708676),
+    v = n(652215),
     b = n(985018);
-let v = {
-    channelId: T.dJq,
+let T = {
+    channelId: v.dJq,
     selectedAnswerIds: new Set,
     submitting: !1,
     editing: !1,
@@ -51,15 +51,15 @@ function N(e, t) {
         poll: i
     } = e;
     if (null == i) return;
-    let r = e.state === T.cmJ.SENT,
-        l = r ? n ?? (0, I.J)(i.expiry) : "",
+    let r = e.state === v.cmJ.SENT,
+        l = r ? n ?? (0, E.J)(i.expiry) : "",
         a = null == l && r,
         {
             selectedAnswerIds: s,
             submitting: m,
             editing: h,
             showResults: p
-        } = t ?? (0, A.xt)(e.getChannelId(), e.id) ?? v,
+        } = t ?? (0, A.xt)(e.getChannelId(), e.id) ?? T,
         g = e.reactions,
         x = !0;
     if (!y(e)) {
@@ -68,23 +68,23 @@ function N(e, t) {
     }
     let f = s.size > 0,
         C = g.some(e => !0 === e.me_vote),
-        E = !h && C,
-        b = E || a || p,
+        I = !h && C,
+        b = I || a || p,
         S = r && x && (!C || h || b),
         N = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         j = null != N ? u.Ay.getSelfMember(N) : null,
         L = (0, o.TR)(j),
         R = (0, d.Z)(j),
-        P = !m && f && !E && r && !L && !R;
+        P = !m && f && !I && r && !L && !R;
     return {
         poll: i,
         canTapAnswers: S,
-        canRemoveVote: E && r && !a,
+        canRemoveVote: I && r && !a,
         canShowVoteCounts: b,
         canSubmitVote: P,
         expirationLabel: l,
         hasSelectedAnswer: f,
-        hasVoted: E,
+        hasVoted: I,
         hasVoteRecorded: C,
         isEditingVote: h,
         isExpired: a,
@@ -110,9 +110,9 @@ function j(e, t) {
     let _ = m.default.getCurrentUser();
     if (null == _) return;
     let A = l.A.useReducedMotion,
-        I = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
-        T = (0, C.T)(_, I),
-        v = u.answers,
+        E = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
+        v = (0, C.T)(_, E),
+        T = u.answers,
         y = u.layout_type,
         j = N(e, t, {
             formattedExpirationLabel: d
@@ -124,8 +124,8 @@ function j(e, t) {
         canShowVoteCounts: P,
         canSubmitVote: M,
         expirationLabel: D = b.intl.string(b.t["e+J3JZ"]),
-        hasSelectedAnswer: O,
-        hasVoted: w,
+        hasSelectedAnswer: w,
+        hasVoted: O,
         isEditingVote: k,
         isExpired: U,
         isInteractive: G,
@@ -136,20 +136,20 @@ function j(e, t) {
         showResults: W
     } = j, q = (0, x.aw)(B), Y = b.intl.formatToPlainString(b.t.XRkuof, {
         count: q
-    }), z = Math.max(...v.map(e => {
+    }), z = Math.max(...T.map(e => {
         let t = S(B, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
-    })), Q = v.map(e => {
+    })), Q = T.map(e => {
         let t, l = `${e.answer_id}`,
             o = S(B, l),
             d = o?.count_details?.vote ?? 0,
             c = 0 === q ? 0 : d / q,
             u = F.has(l),
             _ = d >= z && 0 !== d,
-            m = w && (o?.me_vote ?? !1),
+            m = O && (o?.me_vote ?? !1),
             g = (t = {
                 didSelfVote: m,
-                hasVoted: w,
+                hasVoted: O,
                 isExpired: U,
                 isSelected: u,
                 isLeader: _,
@@ -222,7 +222,7 @@ function j(e, t) {
     }), K = (0, i.YW)({
         isExpired: U,
         canSubmitVote: M,
-        hasVoted: w,
+        hasVoted: O,
         isEditingVote: k,
         canRemoveVote: R,
         isInteractive: G,
@@ -236,7 +236,7 @@ function j(e, t) {
     }, () => ({
         label: b.intl.string(b.t.JwkNU4),
         presentation: "button",
-        enabled: O,
+        enabled: w,
         type: "submit"
     })).with({
         canRemoveVote: !0
@@ -283,7 +283,7 @@ function j(e, t) {
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
-    })), Z = !G || U || w || W ? void 0 : {
+    })), Z = !G || U || O || W ? void 0 : {
         label: b.intl.string(b.t["/KHAUF"]),
         presentation: "textButton",
         enabled: !0,
@@ -318,7 +318,7 @@ function j(e, t) {
         }, () => f.CQ.CHECKBOXES).exhaustive(),
         answerTapAccessibilityLabel: V ? J : void 0,
         layoutType: y,
-        resources: (0, E.A)({
+        resources: (0, I.A)({
             theme: o,
             layoutType: y
         }),
@@ -327,11 +327,11 @@ function j(e, t) {
         isInteractive: G,
         canTapAnswers: L,
         canSelectMultipleAnswers: $,
-        hasSelectedAnswer: O,
+        hasSelectedAnswer: w,
         canShowVoteCounts: P,
-        hasVoted: w,
+        hasVoted: O,
         isExpired: U,
-        myAvatarUrl: T,
+        myAvatarUrl: v,
         secondaryAction: X,
         tertiaryAction: Z
     }

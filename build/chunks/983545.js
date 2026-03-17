@@ -25,7 +25,7 @@ let d = {
             setItemTypeFilter: s,
             reset: a,
             setCurrentTab: b
-        } = (0, o.v)(), p = r.useMemo(() => e !== c.G2.ORBS || t ? (0, c.dF)(e) ? c.G2.CATALOG : e : c.G2.HOME, [e, t]), [E, S] = r.useState(p), [h, A] = r.useState(c.Pf.VISIBLE);
+        } = (0, o.v)(), p = r.useMemo(() => e !== c.G2.ORBS || t ? (0, c.dF)(e) ? c.G2.CATALOG : e : c.G2.HOME, [e, t]), [E, S] = r.useState(p), [A, h] = r.useState(c.Pf.VISIBLE);
         r.useEffect(() => {
             b(E)
         }, [E, b]), r.useEffect(() => {
@@ -46,16 +46,16 @@ let d = {
             if (E !== e) {
                 if (t) {
                     let e;
-                    A(c.Pf.OUT), await (e = 1.1 * c.H1, new Promise(t => setTimeout(t, e)))
+                    h(c.Pf.OUT), await (e = 1.1 * c.H1, new Promise(t => setTimeout(t, e)))
                 }
-                S([c.G2.HOME, c.G2.ORBS].includes(e) ? e : c.G2.CATALOG), t && A(c.Pf.IN), f.push(u.BVt.COLLECTIBLES_SHOP_WITH_TAB(e), {
+                S([c.G2.HOME, c.G2.ORBS].includes(e) ? e : c.G2.CATALOG), t && h(c.Pf.IN), f.push(u.BVt.COLLECTIBLES_SHOP_WITH_TAB(e), {
                     shallow: !0
-                }), A(c.Pf.VISIBLE)
+                }), h(c.Pf.VISIBLE)
             }
         }, [f, s, a, E, m]);
         return {
             selectedTab: E,
-            transitionState: h,
+            transitionState: A,
             transitionToTab: C
         }
     }

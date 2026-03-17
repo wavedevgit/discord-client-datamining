@@ -21,11 +21,11 @@ var i = n(627968),
     x = n(67480),
     f = n(328968),
     C = n(954571),
-    E = n(957565),
-    I = n(943775),
-    T = n(997997),
+    I = n(957565),
+    E = n(943775),
+    v = n(997997),
     b = n(658575),
-    v = n(376374),
+    T = n(376374),
     S = n(652215),
     y = n(435220),
     N = n(985018),
@@ -64,7 +64,7 @@ function P(e) {
         data: c
     } = (0, u.YY)(t), [m, h, g, x] = (0, s.yK)([_.A, A.A, p.A], () => {
         let e = _.A.getApplication(t),
-            n = null != e ? (0, I.A)(e, 45) : void 0,
+            n = null != e ? (0, E.A)(e, 45) : void 0,
             i = p.A.getBasicChannel(l.channel_id)?.guild_id;
         return [A.A.getStoreLayout(t), A.A.getFetchStatus(t), i, n]
     }, [t, l.channel_id]);
@@ -72,15 +72,15 @@ function P(e) {
         h === A.N.NONE && (0, d.V)(t)
     }, [t, h]);
     let f = m.subscriptions.length,
-        E = m.otps.length,
-        v = r.useMemo(() => f > 0 && E > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
+        I = m.otps.length,
+        T = r.useMemo(() => f > 0 && I > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
             subCount: f,
-            itemCount: E
+            itemCount: I
         }) : f > 0 ? N.intl.formatToPlainString(N.t.GSfibA, {
             count: f
-        }) : E > 0 ? N.intl.formatToPlainString(N.t.j7Go5A, {
-            count: E
-        }) : N.intl.string(N.t.rMA98g), [E, f]);
+        }) : I > 0 ? N.intl.formatToPlainString(N.t.j7Go5A, {
+            count: I
+        }) : N.intl.string(N.t.rMA98g), [I, f]);
     if (!a || null == c) return null;
     let L = () => {
         (0, o.mMO)(async () => {
@@ -100,10 +100,10 @@ function P(e) {
         title: N.intl.formatToPlainString(N.t.XDRjs5, {
             appName: c.name
         }),
-        description: v,
+        description: T,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(c.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, T.K)(t, T.C.STORE_EMBED)
+            (0, v.K)(t, v.C.STORE_EMBED)
         },
         iconSrc: x,
         onIconClick: () => {
@@ -151,16 +151,16 @@ function M(e) {
         }
     }(l, t), {
         data: A
-    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(a.channel_id)?.guild_id, [a]), f = r.useMemo(() => null != A ? (0, I.A)(A, 45) : void 0, [A]), E = (0, b.G)(A?.id ?? ""), {
+    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(a.channel_id)?.guild_id, [a]), f = r.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
         openModal: P,
         subscriptionPurchaseButtonState: M
     } = (0, h.A)({
         skuId: l,
         initialSubscribeForGuild: x
     });
-    if (!E || null == A || null == c) return null;
-    let O = c.type === S.Puh.SUBSCRIPTION,
-        w = !!O && (0, m.bg)(c.flags),
+    if (!I || null == A || null == c) return null;
+    let w = c.type === S.Puh.SUBSCRIPTION,
+        O = !!w && (0, m.bg)(c.flags),
         k = () => {
             (0, o.mMO)(async () => {
                 let {
@@ -176,8 +176,8 @@ function M(e) {
         },
         U = () => {
             (0, o.mMO)(async () => {
-                let e = O ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
-                    t = O ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
+                let e = w ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
+                    t = w ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
                     let r = () => {
                         n.onClose(), k()
@@ -187,7 +187,7 @@ function M(e) {
                         appId: A.id,
                         skuId: c.id,
                         guildId: x,
-                        subscriptionType: w ? "user" : "guild",
+                        subscriptionType: O ? "user" : "guild",
                         onClose: n.onClose,
                         onHeaderTitleClick: r
                     }) : null != t ? (0, i.jsx)(t, {
@@ -200,7 +200,7 @@ function M(e) {
                 }
             })
         },
-        G = O ? w ? (0, i.jsxs)(i.Fragment, {
+        G = w ? O ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(o.nys, {
                 size: "custom",
                 width: 12,
@@ -227,7 +227,7 @@ function M(e) {
         description: G,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, T.K)(A.id, T.C.SKU_EMBED, l)
+            (0, v.K)(A.id, v.C.SKU_EMBED, l)
         },
         iconSrc: f,
         onIconClick: () => {
@@ -249,10 +249,10 @@ function M(e) {
                     })
                 },
                 text: N.intl.string(N.t.DXYfjO)
-            }), O ? null != _ ? (0, i.jsx)(v.rc, {
+            }), w ? null != _ ? (0, i.jsx)(T.rc, {
                 onClick: P,
                 appId: A.id,
-                subscriptionType: w ? "user" : "guild",
+                subscriptionType: O ? "user" : "guild",
                 skuId: c.id,
                 icon: o.U1X,
                 onHasClicked: B,
@@ -262,7 +262,7 @@ function M(e) {
                 variant: "primary",
                 text: N.intl.string(N.t.uuzaAK),
                 onClick: U
-            }) : (0, i.jsx)(v.$P, {
+            }) : (0, i.jsx)(T.$P, {
                 appId: A.id,
                 sku: c,
                 icon: o.U1X,
@@ -296,14 +296,14 @@ function D(e) {
                     color: "text-muted",
                     children: t
                 })]
-            }), E.p5 && (0, i.jsx)(o.K0, {
+            }), I.p5 && (0, i.jsx)(o.K0, {
                 "aria-label": N.intl.string(N.t.WqhZss),
                 icon: () => (0, i.jsx)(o.qYV, {
                     size: "xs"
                 }),
                 size: "sm",
                 onClick: () => {
-                    (0, E.C)(l, () => {
+                    (0, I.C)(l, () => {
                         (0, o.showToast)((0, o.createToast)(N.intl.string(N.t["L/PwZf"]), o.ToastType.SUCCESS)), d()
                     })
                 },

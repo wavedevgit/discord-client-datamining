@@ -20,36 +20,39 @@ function p(e) {
         user: l,
         currentUser: i,
         guildId: p,
+        originGuildId: g,
         channelId: x,
-        displayProfile: g,
-        relationshipType: h,
-        onClose: f
+        displayProfile: h,
+        relationshipType: f,
+        onClose: I,
+        onChangeGuildId: j
     } = e, {
-        newestAnalyticsLocation: j
-    } = (0, s.Ay)(), I = (0, a.A)({
+        newestAnalyticsLocation: v
+    } = (0, s.Ay)(), N = (0, a.A)({
         user: l,
-        guildId: p,
+        guildId: g,
         channelId: x,
-        displayProfile: g,
-        onClose: f
+        displayProfile: h,
+        onClose: I,
+        onChangeGuildId: j
     }), {
-        gameFriends: v,
-        hasOutgoingPendingGameFriends: N,
-        hasIncomingPendingGameFriends: y
+        gameFriends: y,
+        hasOutgoingPendingGameFriends: E,
+        hasIncomingPendingGameFriends: C
     } = (0, A.J)({
         userId: l.id
-    }), E = v.length > 0 || N || y;
-    return h === m.eA$.BLOCKED ? null : l.id === i.id ? (0, n.jsxs)(n.Fragment, {
+    }), T = y.length > 0 || E || C;
+    return f === m.eA$.BLOCKED ? null : l.id === i.id ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(r.A, {
             user: l,
             guildId: p,
-            onClose: f
+            onClose: I
         }), (0, n.jsx)(c.A, {
-            onClose: f
+            onClose: I
         }), (0, n.jsx)(d.Zt, {
             user: l,
             guildId: p,
-            viewProfileItem: I
+            viewProfileItem: N
         })]
     }) : l.bot ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(o.e, {
@@ -59,9 +62,9 @@ function p(e) {
         }), (0, n.jsx)(d.Zt, {
             user: l,
             guildId: p,
-            viewProfileItem: I
+            viewProfileItem: N
         })]
-    }) : h === m.eA$.PENDING_INCOMING ? (0, n.jsxs)(n.Fragment, {
+    }) : f === m.eA$.PENDING_INCOMING ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(o.e, {
             userId: l.id,
             onClose: t.A.popAll,
@@ -70,43 +73,43 @@ function p(e) {
             user: l,
             guildId: p
         })]
-    }) : h === m.eA$.FRIEND || h === m.eA$.PENDING_OUTGOING ? (0, n.jsxs)(n.Fragment, {
+    }) : f === m.eA$.FRIEND || f === m.eA$.PENDING_OUTGOING ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(o.e, {
             userId: l.id,
             onClose: t.A.popAll,
             autoFocus: !0
         }), (0, n.jsx)(u.Ef, {
             user: l,
-            relationshipType: h,
-            analyticsLocation: j
+            relationshipType: f,
+            analyticsLocation: v
         }), (0, n.jsx)(d.Zt, {
             user: l,
             guildId: p,
-            viewProfileItem: I
+            viewProfileItem: N
         })]
-    }) : h === m.eA$.NONE && E ? (0, n.jsxs)(n.Fragment, {
+    }) : f === m.eA$.NONE && T ? (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(o.e, {
             userId: l.id,
             onClose: t.A.popAll,
             autoFocus: !0
         }), (0, n.jsx)(u.ES, {
             user: l,
-            analyticsLocation: j,
-            gameFriends: v,
+            analyticsLocation: v,
+            gameFriends: y,
             tooltipPosition: "top",
             tooltipAlign: "center",
-            hasIncomingPendingGameFriends: y,
-            hasOutgoingPendingGameFriends: N
+            hasIncomingPendingGameFriends: C,
+            hasOutgoingPendingGameFriends: E
         }), (0, n.jsx)(d.Zt, {
             user: l,
             guildId: p,
-            viewProfileItem: I
+            viewProfileItem: N
         })]
     }) : (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(u.cO, {
             variant: "primary",
             userId: l.id,
-            analyticsLocation: j,
+            analyticsLocation: v,
             autoFocus: !0
         }), (0, n.jsx)(o.l, {
             userId: l.id,
@@ -115,7 +118,7 @@ function p(e) {
         }), (0, n.jsx)(d.Zt, {
             user: l,
             guildId: p,
-            viewProfileItem: I
+            viewProfileItem: N
         })]
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 480191 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => w
 });
 var i = n(627968),
     r = n(64700),
@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(112758),
     f = n(754459),
     C = n(967144),
-    E = n(342296),
-    I = n(253932),
-    T = n(696451),
+    I = n(342296),
+    E = n(253932),
+    v = n(696451),
     b = n(287809),
-    v = n(486020),
+    T = n(486020),
     S = n(449054),
     y = n(218394),
     N = n(19178),
@@ -35,14 +35,14 @@ var i = n(627968),
     M = n(780247),
     D = n(278664);
 
-function O(e) {
+function w(e) {
     let {
         embedUrl: t,
         message: n,
         channel: l
-    } = e, O = r.useRef(null), w = r.useRef(null), k = (0, j.D)(t, n), {
+    } = e, w = r.useRef(null), O = r.useRef(null), k = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, l, U, !0), B = I.kt.useSetting(), F = (0, y.j)(), [H, V] = r.useState(!1), [W, q] = r.useState(k?.coverImage == null), Y = (0, o.bG)([T.Ay, b.default], () => T.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([T.Ay], () => k?.authorId != null ? T.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, l, U, !0), B = E.kt.useSetting(), F = (0, y.j)(), [H, V] = r.useState(!1), [W, q] = r.useState(k?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([v.Ay], () => k?.authorId != null ? v.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
         reducedMotion: $
     } = r.useContext(c.CZY), [ee, et] = r.useState(!1), en = r.useCallback(() => {
         V(!0)
@@ -59,7 +59,7 @@ function O(e) {
         }))
     }, [k, l, Y]);
     if (null == k) return null;
-    let el = (0, v.F_)({
+    let el = (0, T.F_)({
             avatarDecoration: Q,
             size: (0, h.Te)(c._3J.SIZE_40),
             canAnimate: ee
@@ -128,8 +128,8 @@ function O(e) {
                 })]
             }), (0, i.jsxs)("div", {
                 className: M._5,
-                children: [null != k.authorId && null != ea && (0, i.jsx)(E.A, {
-                    targetElementRef: w,
+                children: [null != k.authorId && null != ea && (0, i.jsx)(I.A, {
+                    targetElementRef: O,
                     userId: k.authorId,
                     guildId: k.guildId,
                     channelId: l.id,
@@ -143,7 +143,7 @@ function O(e) {
                         onMouseLeave: es,
                         children: (0, i.jsx)(c.euF, {
                             ...e,
-                            ref: w,
+                            ref: O,
                             size: c._3J.SIZE_40,
                             src: ea,
                             "aria-label": P.intl.string(P.t.KXz3XB),
@@ -178,8 +178,8 @@ function O(e) {
                                 colorString: K,
                                 colorStrings: Z,
                                 className: M.fh
-                            }) : (0, i.jsx)(E.A, {
-                                targetElementRef: O,
+                            }) : (0, i.jsx)(I.A, {
+                                targetElementRef: w,
                                 userId: k.authorId,
                                 guildId: k.guildId,
                                 channelId: l.id,
@@ -189,7 +189,7 @@ function O(e) {
                                 newAnalyticsLocations: [u.A.USERNAME],
                                 children: e => (0, i.jsx)(c.V30, {
                                     ...e,
-                                    ref: O,
+                                    ref: w,
                                     name: k.authorName,
                                     colorString: K,
                                     colorStrings: Z,

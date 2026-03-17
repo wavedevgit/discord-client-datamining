@@ -1,6 +1,6 @@
 /** chunk id: 444901 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => T
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -20,9 +20,9 @@ var i = n(627968),
     x = n(472590),
     f = n(878831),
     C = n(768349),
-    E = n(985018),
-    I = n(609653),
-    T = n(103467);
+    I = n(985018),
+    E = n(609653),
+    v = n(103467);
 
 function b(e) {
     let {
@@ -40,18 +40,18 @@ function b(e) {
     })(c);
     return (0, i.jsx)(p.A, {
         compact: !1,
-        children: E.intl.format(s === t.author.id ? E.t.anvg2q : E.t.AxVbYF, {
+        children: I.intl.format(s === t.author.id ? I.t.anvg2q : I.t.AxVbYF, {
             username: c.nick,
             usernameHook: u,
             applicationHook: () => {
                 let e = null != d ? o.MzZ : "div";
                 return (0, i.jsxs)(e, {
                     onClick: d,
-                    className: I.Lf,
+                    className: E.Lf,
                     children: [(0, i.jsx)("img", {
-                        alt: E.intl.string(E.t["2B/phM"]),
+                        alt: I.intl.string(I.t["2B/phM"]),
                         src: r,
-                        className: a()(T.Gt, _.M.XSMALL)
+                        className: a()(v.Gt, _.M.XSMALL)
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-sm/semibold",
                         color: "text-muted",
@@ -63,7 +63,7 @@ function b(e) {
     })
 }
 
-function v(e) {
+function T(e) {
     let {
         message: t,
         application: n,
@@ -73,8 +73,8 @@ function v(e) {
         currentUserId: m,
         launchableAppId: h,
         isEmbeddedApplication: p,
-        tryWithGdnAction: T,
-        staticBannerSrc: v,
+        tryWithGdnAction: v,
+        staticBannerSrc: T,
         onClickContent: S,
         iconSrc: y,
         onView: N,
@@ -84,15 +84,15 @@ function v(e) {
         startAuthorization: P,
         accountLinkButtonRef: M,
         renderAccountLinkUpsell: D
-    } = e, O = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
-        actions: w,
+    } = e, w = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
+        actions: O,
         hasAccountLinkButton: k
     } = r.useMemo(() => {
         let e = [],
             i = !0,
             r = !1;
         if (null != h ? e = [{
-                label: E.intl.string(E.t["s+J8Dl"]),
+                label: I.intl.string(I.t["s+J8Dl"]),
                 trackingArea: u.kY.PLAY,
                 isDeadEnd: !0,
                 onClick: () => {
@@ -101,13 +101,13 @@ function v(e) {
                         embedded: p
                     })
                 }
-            }] : null != T && (e = [T], i = !1), e.length > 0)
-            if (!(0, x.p)(t.id, O, n.id, j)) return {
+            }] : null != v && (e = [v], i = !1), e.length > 0)
+            if (!(0, x.p)(t.id, w, n.id, j)) return {
                 actions: [],
                 hasAccountLinkButton: !1
             };
             else R && i && (e.push({
-                label: E.intl.string(E.t.lw71Nf),
+                label: I.intl.string(I.t.lw71Nf),
                 trackingArea: u.kY.CONNECT_ACCOUNT,
                 onClick: () => {
                     P({
@@ -122,17 +122,17 @@ function v(e) {
             actions: e,
             hasAccountLinkButton: r
         }
-    }, [p, h, T, O, j, n.id, t.id, R, P, L, M]), U = w.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, v, w, j, n.id, t.id, R, P, L, M]), U = O.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
-    let G = w.length > 0,
+    let G = O.length > 0,
         B = r.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
-            className: I.h_,
+            className: E.h_,
             color: "none",
             lineClamp: 3,
             children: (0, A.BE)(t, l, a, m, G)
         }), [t, l, a, m, G]);
-    return 0 === w.length ? (0, i.jsx)(b, {
+    return 0 === O.length ? (0, i.jsx)(b, {
         message: t,
         applicationName: l,
         iconSrc: y,
@@ -143,12 +143,12 @@ function v(e) {
         children: [(0, i.jsx)(c.h, {
             header: _,
             title: l,
-            staticBannerSrc: v,
+            staticBannerSrc: T,
             onClickBanner: S,
             bannerAspectRatio: c.u.ACTIVITY,
             iconSrc: y ?? void 0,
             info: B,
-            actions: w,
+            actions: O,
             primaryActionFirst: !0,
             onClickContent: S,
             trackingConfig: {

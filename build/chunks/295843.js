@@ -21,13 +21,13 @@ var i = n(627968),
     x = n(286805),
     f = n(67480),
     C = n(328968),
-    E = n(371794),
-    I = n(652215),
-    T = n(985018),
+    I = n(371794),
+    E = n(652215),
+    v = n(985018),
     b = n(187663);
-class v extends r.Component {
+class T extends r.Component {
     static defaultProps = {
-        renderFallback: I.tEg
+        renderFallback: E.tEg
     };
     state = {
         playing: !1,
@@ -42,8 +42,8 @@ class v extends r.Component {
         } = this.props;
         return {
             ...e,
-            section: null != t ? t : I.JJy.APPLICATION_EMBED,
-            object: I.ZSU.CARD
+            section: null != t ? t : E.JJy.APPLICATION_EMBED,
+            object: E.ZSU.CARD
         }
     }
     componentDidMount() {
@@ -74,7 +74,7 @@ class v extends r.Component {
             sku: e
         } = this.props;
         if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-        return (0, E.vy)(e.id, {
+        return (0, I.vy)(e.id, {
             slug: e.slug,
             analyticsSource: this.analyticsLocation
         })
@@ -93,7 +93,7 @@ class v extends r.Component {
             className: b.h,
             color: s.$n.Colors.GREEN,
             size: s.$n.Sizes.SMALL,
-            children: T.intl.string(T.t["W+NB90"])
+            children: v.intl.string(v.t["W+NB90"])
         })
     }
     renderApplicationTile = (e, t) => {
@@ -136,7 +136,7 @@ class v extends r.Component {
         });
         if (null == n) return null;
         let s = null != n && n.primarySkuId === r,
-            o = null != l && l.hasFlag(I.hM6.HIDDEN);
+            o = null != l && l.hasFlag(E.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
             className: b.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
@@ -144,7 +144,7 @@ class v extends r.Component {
                 disabledVariant: "primary",
                 size: "sm",
                 className: b.h,
-                source: I.ThZ.MESSAGE_EMBED,
+                source: E.ThZ.MESSAGE_EMBED,
                 onClick: this.handleActionButtonClick
             }), t && !o || e.premium ? null : (0, i.jsx)(u.A, {
                 type: u.A.Types.EMBED,
@@ -163,11 +163,11 @@ class v extends r.Component {
         } = this.props, s = n > m.Tm;
         return null == e || null == t ? r ? a() : (0, i.jsx)(m.Wb, {
             isHorizontal: s
-        }) : e.productLine === I.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
-            section: I.JJy.APPLICATION_EMBED,
+        }) : e.productLine === E.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
+            section: E.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(d.A, {
-            section: I.JJy.APPLICATION_EMBED,
+            section: E.JJy.APPLICATION_EMBED,
             children: (0, i.jsx)(l.N_, {
                 onClick: this.handleLinkClick,
                 to: this.getStoreListingLocation(),
@@ -193,6 +193,6 @@ function y(e) {
         libraryApplication: null != n ? A.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let N = (0, p.A)((0, h.A)(v)),
+let N = (0, p.A)((0, h.A)(T)),
     j = a.Ay.connectStores(S, y)(N),
-    L = (0, h.A)(a.Ay.connectStores(S, y)(v))
+    L = (0, h.A)(a.Ay.connectStores(S, y)(T))

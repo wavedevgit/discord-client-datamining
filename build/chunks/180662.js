@@ -21,11 +21,11 @@ var i = n(284009),
     x = n(505527),
     f = n(9842),
     C = n(961350),
-    E = n(734057),
-    I = n(31717),
-    T = n(834942),
+    I = n(734057),
+    E = n(31717),
+    v = n(834942),
     b = n(320501),
-    v = n(522602),
+    T = n(522602),
     S = n(491037),
     y = n(335759),
     N = n(862780),
@@ -72,7 +72,7 @@ function D(e) {
         channelId: t,
         messageId: n,
         answerId: i
-    } = e, r = E.A.getChannel(t);
+    } = e, r = I.A.getChannel(t);
     if (null == r) return;
     if (g.A.isLurking(r.guild_id)) return void M({
         guildId: r.guild_id,
@@ -88,7 +88,7 @@ function D(e) {
     })
 }
 
-function O(e) {
+function w(e) {
     let {
         channelId: t,
         messageId: n,
@@ -103,7 +103,7 @@ function O(e) {
     }))
 }
 
-function w(e) {
+function O(e) {
     let {
         channelId: t,
         messageId: n
@@ -115,7 +115,7 @@ async function k(e) {
         channelId: t,
         messageId: n,
         answerIds: i
-    } = e, r = w({
+    } = e, r = O({
         channelId: t,
         messageId: n
     }), l = a().difference(r, i), s = a().difference(i, r), d = C.default.getId(), u = [...l.map(e => ({
@@ -150,20 +150,20 @@ async function U(e) {
     let {
         channelId: t,
         messageId: n
-    } = e, i = E.A.getChannel(t);
+    } = e, i = I.A.getChannel(t);
     if (null == i) return;
     if (g.A.isLurking(i.guild_id)) return void M({
         guildId: i.guild_id,
         title: R.intl.string(R.t.Qic1FD),
         body: R.intl.string(R.t["5sHHoy"])
     });
-    if (!T.A.canChatInGuild(i.guild_id)) return void u.A.show({
+    if (!v.A.canChatInGuild(i.guild_id)) return void u.A.show({
         title: R.intl.string(R.t.p245wu),
         body: R.intl.string(R.t["U/uodt"])
     });
     let l = (0, N.xt)(t, n);
     r()(null != l, "Must not be able to vote without existing state!");
-    let a = w({
+    let a = O({
         channelId: t,
         messageId: n
     });
@@ -203,7 +203,7 @@ async function G(e) {
     let {
         channelId: t,
         messageId: n
-    } = e, i = E.A.getChannel(t);
+    } = e, i = I.A.getChannel(t);
     if (null != i) return g.A.isLurking(i.guild_id) ? void M({
         guildId: i.guild_id,
         title: R.intl.string(R.t.B9QnBp),
@@ -239,7 +239,7 @@ async function B(e) {
             });
             break;
         case "cancel":
-            O({
+            w({
                 channelId: t,
                 messageId: n,
                 isEditing: !1
@@ -365,7 +365,7 @@ let F = {
         })
     },
     handlePollSubmitVote: U,
-    handleUpdateVoteEditingState: O,
+    handleUpdateVoteEditingState: w,
     handlePollActionTapped: B,
     createPoll: async function(e) {
         let {
@@ -376,7 +376,7 @@ let F = {
             duration: l,
             layout: a,
             onClose: o
-        } = e, d = v.A.getUploads(t.id, I.C.Poll), c = i.map(e => {
+        } = e, d = T.A.getUploads(t.id, E.C.Poll), c = i.map(e => {
             let t = d?.findIndex(t => t.id === e.localCreationAnswerId),
                 n = {
                     attachment_ids: -1 !== t ? [`${t}`] : void 0

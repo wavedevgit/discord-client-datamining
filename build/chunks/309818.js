@@ -1,6 +1,6 @@
 /** chunk id: 309818 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -21,29 +21,29 @@ var i = n(627968),
     f = n(985018),
     C = n(563111);
 
-function E(e) {
+function I(e) {
     let t, {
             invite: n,
             message: l,
-            currentUserId: E,
-            onTransitionToInviteChannel: I,
-            onAcceptInstantInvite: T
+            currentUserId: I,
+            onTransitionToInviteChannel: E,
+            onAcceptInstantInvite: v
         } = e,
-        b = E === l.author.id,
-        v = n.state === x.elq.ACCEPTING,
+        b = I === l.author.id,
+        T = n.state === x.elq.ACCEPTING,
         S = (0, o.bG)([h.A], () => null != n.channel ? h.A.getChannel(n.channel.id) : null, [n]);
     a()(null == S || S.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: y
     } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != S, j = r.useCallback(() => {
         let e = "noop";
-        N ? (I(), e = "transition") : (T(), e = "accept"), (0, d.he)({
+        N ? (E(), e = "transition") : (v(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
             inviter_id: l.author.id,
             invite_message_id: l.id
         }, y)
-    }, [n, l, y, N, I, T]);
+    }, [n, l, y, N, E, v]);
     if (null == S) {
         if (null == n.channel) return (0, i.jsx)(A.A, {});
         S = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -79,7 +79,7 @@ function E(e) {
                 })]
             }), (0, i.jsx)(s.$nd, {
                 onClick: j,
-                loading: v,
+                loading: T,
                 disabled: N,
                 variant: P,
                 text: R,

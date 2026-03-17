@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(71393),
     f = n(954571),
     C = n(722888),
-    E = n(43136),
-    I = n(575926),
-    T = n(652215),
+    I = n(43136),
+    E = n(575926),
+    v = n(652215),
     b = n(985018),
-    v = n(266847);
+    T = n(266847);
 
 function S(e) {
     let {
@@ -37,9 +37,9 @@ function S(e) {
     } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
     }), j = r.useCallback(async () => {
-        f.default.track(T.HAw.GUILD_SHOP_EMBED_CLICKED, {
+        f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
             ...(0, _.H$)(t)
-        }), await (0, g.A)(T.BVt.SERVER_SHOP(t))
+        }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
     }, [t]);
     (0, m.A)({
         type: s.ImpressionTypes.VIEW,
@@ -49,24 +49,24 @@ function S(e) {
     });
     let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
     return l || !y ? (0, i.jsx)("div", {
-        className: a()(v.lm, v.dc),
+        className: a()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == S ? null : (0, i.jsxs)("div", {
-        className: v.lm,
-        children: [(0, i.jsx)(E.C, {
+        className: T.lm,
+        children: [(0, i.jsx)(I.C, {
             coverImageAsset: S.cover_image_asset ?? null
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsxs)("div", {
-            className: v.qs,
-            children: [(0, i.jsx)(I.h, {
+            className: T.qs,
+            children: [(0, i.jsx)(E.h, {
                 height: "16px",
                 width: "16px",
                 color: d.A.colors.INTERACTIVE_TEXT_DEFAULT.css
             }), (0, i.jsx)(u.Heading, {
                 variant: "heading-sm/semibold",
                 color: "interactive-text-default",
-                className: v.Nl,
+                className: T.Nl,
                 children: b.intl.string(b.t.al5EXL)
             })]
         }), (0, i.jsx)(u.hKd, {
@@ -89,11 +89,11 @@ function S(e) {
         }), (0, i.jsx)(A.A, {}), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsxs)("div", {
-            className: v.kS,
+            className: T.kS,
             children: [(0, i.jsx)(h.Ay, {
                 guild: n
             }), (0, i.jsxs)("ul", {
-                className: v.q6,
+                className: T.q6,
                 children: [(0, i.jsx)("li", {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
@@ -112,10 +112,10 @@ function S(e) {
                     })
                 })]
             }), (0, i.jsx)("div", {
-                className: v.$h,
+                className: T.$h,
                 children: (0, i.jsx)(c.$nd, {
                     onClick: j,
-                    icon: I.A,
+                    icon: E.A,
                     text: b.intl.string(b.t.jXx1CC)
                 })
             })]

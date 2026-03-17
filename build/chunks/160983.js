@@ -1,6 +1,6 @@
 /** chunk id: 160983 params = (module,exports,require) **/
 i.d(l, {
-    A: () => x
+    A: () => g
 }), i(321073);
 var n = i(777480),
     t = i(107563),
@@ -15,14 +15,14 @@ var n = i(777480),
     m = i(518477),
     p = i(985018);
 
-function x(e) {
+function g(e) {
     let {
         user: l,
         currentUser: i
     } = e, {
-        mutualFriendsCount: x,
-        mutualGuilds: g
-    } = (0, d.A)(l), h = g?.length, f = (0, o.A)(l), j = (0, c.A)(l.id), I = (0, r.A)(l.id), v = [], N = l.id === i?.id, y = a.A.getFirstWishlistId(l.id), E = null != y, T = E ? a.A.getWishlistSettings(l.id, y) : null, C = (E ? t.A.getWishlistItems(y) : []).length > 0, _ = j.length > 0;
+        mutualFriendsCount: g,
+        mutualGuilds: x
+    } = (0, d.A)(l), h = x?.length, f = (0, o.A)(l), I = (0, c.A)(l.id), j = (0, r.A)(l.id), v = [], N = l.id === i?.id, y = a.A.getFirstWishlistId(l.id), E = null != y, C = E ? a.A.getWishlistSettings(l.id, y) : null, T = (E ? t.A.getWishlistItems(y) : []).length > 0, _ = I.length > 0;
     (N || _) && v.push({
         text: p.intl.string(p.t.laViwx),
         section: m.RP.WIDGETS
@@ -30,14 +30,14 @@ function x(e) {
         text: p.intl.string(p.t.chq59f),
         section: m.RP.ACTIVITY
     });
-    let P = !1 === l.nsfwAllowed,
-        O = s.A.isFriend(l.id),
-        b = T?.visibility === n.a.PUBLIC;
-    return (N || !N && C && b && I && (!P || P && O)) && v.push({
+    let b = !1 === l.nsfwAllowed,
+        P = s.A.isFriend(l.id),
+        O = C?.visibility === n.a.PUBLIC;
+    return (N || !N && T && O && j && (!b || b && P)) && v.push({
         text: p.intl.string(p.t["7lZ31J"]),
         section: m.RP.WISHLIST
     }), l.id !== i?.id && f && (v.push({
-        text: (0, u.A)(x),
+        text: (0, u.A)(g),
         section: m.RP.MUTUAL_FRIENDS
     }), v.push({
         text: (0, A.A)(h),

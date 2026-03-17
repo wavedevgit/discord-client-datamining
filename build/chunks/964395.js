@@ -51,7 +51,6 @@ function R(e) {
         N?.id != null && (0, g.openUserProfileModal)({
             userId: N.id,
             tabSection: j.RP.WISHLIST,
-            showGuildProfile: !1,
             sourceAnalyticsLocations: [c.A.SOCIAL_LAYER_STOREFRONT]
         })
     }, [N]), M = s.useCallback(() => {

@@ -22,30 +22,30 @@ function x(e) {
     let {
         code: t,
         message: n
-    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), E = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [I, T] = r.useState(!1), b = r.useCallback(e => {
-        e && T(!0)
-    }, []), v = (0, l.K)(b), S = r.useCallback(() => {
+    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, v] = r.useState(!1), b = r.useCallback(e => {
+        e && v(!0)
+    }, []), T = (0, l.K)(b), S = r.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
             device_platform: a.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
-            guild_id: E,
+            guild_id: I,
             channel_id: n.channel_id
         })
-    }, [t, E, n.author.id, n.channel_id]);
+    }, [t, I, n.author.id, n.channel_id]);
     return (r.useEffect(() => {
         (0, m.eP)(t)
     }, [t]), r.useEffect(() => {
-        I && C === h.e.FETCHED && S()
-    }, [I, C, S]), r.useEffect(() => {
-        I && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+        E && C === h.e.FETCHED && S()
+    }, [E, C, S]), r.useEffect(() => {
+        E && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
             device_platform: a.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
-            guild_id: E,
+            guild_id: I,
             channel_id: n.channel_id
         })
-    }, [I, E, f, n.author.id, n.channel_id]), f) ? (0, i.jsxs)(d.A, {
-        containerRef: v,
+    }, [E, I, f, n.author.id, n.channel_id]), f) ? (0, i.jsxs)(d.A, {
+        containerRef: T,
         children: [(0, i.jsx)(d.A.Header, {
             text: g.intl.string(g.t.j4KtLa)
         }), (0, i.jsx)(d.A.Body, {
@@ -61,7 +61,7 @@ function x(e) {
             })
         })]
     }) : null == x || C === h.e.FETCHING ? (0, i.jsxs)(d.A, {
-        containerRef: v,
+        containerRef: T,
         children: [(0, i.jsx)(d.A.Header, {
             text: g.intl.string(g.t.m9hXGR)
         }), (0, i.jsx)(d.A.Body, {

@@ -1,6 +1,6 @@
 /** chunk id: 628979 params = (module,exports,require) **/
 s.d(t, {
-    A: () => A
+    A: () => h
 });
 var r = s(627968),
     l = s(64700),
@@ -15,14 +15,14 @@ var r = s(627968),
     p = s(758836),
     E = s(652215),
     S = s(985018),
-    h = s(450331);
+    A = s(450331);
 
-function A(e) {
+function h(e) {
     let {
         handleTransition: t,
         selectedTab: s,
         isNarrow: a,
-        hasText: A
+        hasText: h
     } = e, {
         searchQuery: m,
         onSetSearchQuery: f
@@ -35,8 +35,8 @@ function A(e) {
     }, [C, f]), l.useEffect(() => {
         T(m)
     }, [m]), l.useEffect(() => {
-        x(a && A)
-    }, [a, A]);
+        x(a && h)
+    }, [a, h]);
     let R = l.useCallback(e => {
             "Enter" === e.key && f(C)
         }, [C, f]),
@@ -54,10 +54,10 @@ function A(e) {
         v = l.useCallback(() => {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), N(p.uY.SEARCH_ICON), x(!0), setTimeout(() => O.current?.focus())
         }, [s, t, N]),
-        G = l.useCallback(() => {
+        I = l.useCallback(() => {
             s !== p.G2.CATALOG && t(p.G2.CATALOG), N(p.uY.SEARCH_BAR)
         }, [s, t, N]),
-        I = l.useCallback(() => {
+        G = l.useCallback(() => {
             T(""), f(""), N(p.uY.SEARCH_BAR_CLEAR), a && x(!1)
         }, [f, N, a]),
         _ = l.useCallback(() => {
@@ -65,7 +65,7 @@ function A(e) {
         }, [a, C]),
         j = a && !L,
         F = (0, r.jsx)(i.DUT, {
-            className: h.qc,
+            className: A.qc,
             onClick: v,
             children: (0, r.jsx)(i.$p$, {
                 size: "sm",
@@ -78,7 +78,7 @@ function A(e) {
             onKeyDown: R,
             query: C,
             onChange: T,
-            onClear: I,
+            onClear: G,
             onBlur: _,
             placeholder: "en-US" === y ? S.intl.string(S.t.arz34K) : S.intl.string(S.t["hIt/Nm"])
         }),
@@ -90,13 +90,13 @@ function A(e) {
         style: k,
         children: F
     }) : (0, r.jsx)("div", {
-        className: n()(h.ON, {
-            [h.Nz]: L
+        className: n()(A.ON, {
+            [A.Nz]: L
         }),
         style: k,
         children: (0, r.jsx)(i.DUT, {
             ignoreKeyPress: !0,
-            onClick: G,
+            onClick: I,
             children: P
         })
     })

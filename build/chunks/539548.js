@@ -13,14 +13,14 @@ var s = t(311907),
     c = t(622543),
     u = t(146655),
     m = t(489379),
-    A = t(900179),
-    x = t(837924),
+    x = t(900179),
+    A = t(837924),
     p = t(558628),
     _ = t(842241),
     f = t(282797),
     h = t(518477),
-    j = t(652215),
-    g = t(985018),
+    g = t(652215),
+    j = t(985018),
     I = t(78702),
     b = t(781425);
 
@@ -47,8 +47,8 @@ function v(e) {
     return k || U || !P ? (0, i.jsxs)(l.IpV, {
         className: I.XG,
         fade: !0,
-        children: [k ? (0, i.jsx)(A.A, {
-            "aria-label": g.intl.string(g.t.J6STd9),
+        children: [k ? (0, i.jsx)(x.A, {
+            "aria-label": j.intl.string(j.t.J6STd9),
             children: (0, i.jsxs)("ul", {
                 className: I.Ci,
                 children: [null != T && (0, i.jsx)("li", {
@@ -59,7 +59,7 @@ function v(e) {
                         onClose: N
                     })
                 }), y.map((e, s) => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(x.A, {
+                    children: (0, i.jsx)(A.A, {
                         user: n,
                         currentUser: t,
                         activity: e,
@@ -74,11 +74,11 @@ function v(e) {
                     })
                 })]
             })
-        }) : null, U ? (0, i.jsx)(A.A, {
-            heading: g.intl.string(g.t.M0zgnT),
-            introText: R ? g.intl.format(g.t["4bk9Ak"], {
+        }) : null, U ? (0, i.jsx)(x.A, {
+            heading: j.intl.string(j.t.M0zgnT),
+            introText: R ? j.intl.format(j.t["4bk9Ak"], {
                 learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
-                    href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
+                    href: d.A.getArticleURL(g.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, n)
             }) : void 0,

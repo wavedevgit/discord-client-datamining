@@ -13,8 +13,8 @@ var s = t(311907),
     c = t(389996),
     u = t(743987),
     m = t(900179),
-    A = t(280645),
-    x = t(928223),
+    x = t(280645),
+    A = t(928223),
     p = t(518477),
     _ = t(985018),
     f = t(195723);
@@ -24,21 +24,21 @@ function h(e) {
         user: n,
         displayProfile: t,
         guildId: h,
-        onClose: j
-    } = e, g = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), I = (0, s.bG)([a.A, r.A], () => a.A.getChannel(r.A.getChannelId()));
+        onClose: g
+    } = e, j = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), I = (0, s.bG)([a.A, r.A], () => a.A.getChannel(r.A.getChannelId()));
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: f.XG,
         children: [t?.bio != null && t?.bio !== "" && (0, i.jsx)(c.A, {
             userBio: t.bio,
             setLineClamp: !1
-        }), g?.popularApplicationCommandIds != null && null != I && (0, i.jsx)(d.A, {
-            applicationId: g.id,
-            commandIds: g.popularApplicationCommandIds,
+        }), j?.popularApplicationCommandIds != null && null != I && (0, i.jsx)(d.A, {
+            applicationId: j.id,
+            commandIds: j.popularApplicationCommandIds,
             channel: I,
             guildId: h,
-            onClick: j
-        }), t?.guildId != null && (0, i.jsx)(A.A, {
+            onClick: g
+        }), t?.guildId != null && (0, i.jsx)(x.A, {
             userId: n.id,
             guildId: t.guildId
         }), (0, i.jsx)(m.A, {
@@ -48,7 +48,7 @@ function h(e) {
                 guildId: h,
                 tooltipDelay: p.In
             })
-        }), (0, i.jsx)(x.A, {
+        }), (0, i.jsx)(A.A, {
             userId: n.id
         })]
     })

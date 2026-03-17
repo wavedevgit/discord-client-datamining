@@ -17,31 +17,31 @@ function u(e) {
         guildId: i,
         channelId: u,
         displayProfile: A,
-        onClose: m
+        onClose: m,
+        onChangeGuildId: p
     } = e, {
-        analyticsLocations: p,
+        analyticsLocations: g,
         sourceAnalyticsLocations: x
     } = (0, s.Ay)(), {
-        context: g,
-        trackUserProfileAction: h
-    } = (0, r.NJ)(), f = (0, d.Ay)(l.id, i);
-    return f?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, n.jsx)(t.Drp, {
+        context: h,
+        trackUserProfileAction: f
+    } = (0, r.NJ)(), I = (0, d.Ay)(l.id, i);
+    return I?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, n.jsx)(t.Drp, {
         id: "view-server-profile",
         label: c.intl.string(c.t.DisZzB),
         subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
             displayName: a.Ay.getName(i, u, l)
         }),
         action: () => {
-            m?.(), (0, o.openUserProfileModal)({
+            null != p ? p(i ?? null) : (m?.(), (0, o.openUserProfileModal)({
                 userId: l.id,
+                ...h,
                 guildId: i,
-                ...g,
-                showGuildProfile: !0,
                 sourceAnalyticsLocations: x
-            }), h({
+            })), f({
                 action: "PRESS_VIEW_SERVER_PROFILE",
-                analyticsLocations: p,
-                ...g
+                analyticsLocations: g,
+                ...h
             })
         }
     }) : (0, n.jsx)(t.Drp, {
@@ -51,16 +51,16 @@ function u(e) {
             displayName: a.Ay.getName(void 0, void 0, l)
         }),
         action: () => {
-            m?.(), (0, o.openUserProfileModal)({
+            null != p ? p(null) : (m?.(), (0, o.openUserProfileModal)({
                 userId: l.id,
-                guildId: i,
-                ...g,
-                showGuildProfile: !1,
+                ...h,
+                guildId: void 0,
+                originGuildId: i,
                 sourceAnalyticsLocations: x
-            }), h({
+            })), f({
                 action: "PRESS_VIEW_MAIN_PROFILE",
-                analyticsLocations: p,
-                ...g
+                analyticsLocations: g,
+                ...h
             })
         }
     })

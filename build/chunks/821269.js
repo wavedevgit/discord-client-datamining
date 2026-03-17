@@ -1,22 +1,22 @@
 /** chunk id: 821269 params = (module,exports,require) **/
-t.d(n, {
-    q: () => d
+n.d(t, {
+    q: () => u
 });
-var i = t(64700),
-    s = t(311907),
-    l = t(994500),
-    a = t(287809),
-    r = t(922590);
+var l = n(64700),
+    s = n(311907),
+    a = n(994500),
+    i = n(287809),
+    r = n(922590);
 let o = [];
 
-function d(e) {
+function u(e) {
     let {
-        userId: n
-    } = e, t = (0, s.bG)([l.A, a.default], () => l.A.isFriend(n) || a.default.getUser(n)?.isProvisional), d = (0, r.f1)(n);
-    return i.useMemo(() => t ? o : d.map(e => {
+        userId: t
+    } = e, n = (0, s.bG)([a.A, i.default], () => a.A.isFriend(t) || i.default.getUser(t)?.isProvisional), u = (0, r.f1)(t);
+    return l.useMemo(() => n ? o : u.map(e => {
         let {
-            applicationId: n
+            applicationId: t
         } = e;
-        return n
-    }), [d, t])
+        return t
+    }), [u, n])
 }

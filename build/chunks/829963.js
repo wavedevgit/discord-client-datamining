@@ -25,11 +25,11 @@ function p(e) {
         partyStatusElement: x,
         currentUserPresenceActivity: f,
         onClickContent: C,
-        onView: E,
-        guildId: I
-    } = e, T = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), v = r.useMemo(() => {
+        onView: I,
+        guildId: E
+    } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = r.useMemo(() => {
         let e = [];
-        return T || e.push({
+        return v || e.push({
             label: b.label ?? m.intl.string(m.t.VJlc0S),
             trackingArea: s.kY.SYNC,
             onClick: () => {
@@ -38,7 +38,7 @@ function p(e) {
             disabled: b.disabled,
             disabledReason: b.disabled ? b.tooltip : void 0
         }), e
-    }, [T, b]), S = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+    }, [v, b]), S = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
     }) : t.name, y = g?.timestamps?.start ?? g?.created_at, N = r.useMemo(() => null != y ? (0, i.jsxs)("div", {
@@ -70,14 +70,14 @@ function p(e) {
         title: S,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,
         info: j,
-        actions: v,
+        actions: T,
         onClickContent: C,
         trackingConfig: {
             id: t.id,
             linkType: _.J.RICH_PRESENCE_INVITE,
-            onView: E,
+            onView: I,
             referrerId: n.author.id,
-            guildId: I,
+            guildId: E,
             channelId: n.channel_id,
             messageId: n.id
         }

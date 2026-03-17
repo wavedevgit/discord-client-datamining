@@ -1,6 +1,6 @@
 /** chunk id: 877695 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => T
 });
 var i = n(627968),
     r = n(64700),
@@ -20,40 +20,40 @@ var i = n(627968),
     x = n(42780),
     f = n(860689),
     C = n(897288),
-    E = n(168428),
-    I = n(652215),
-    T = n(985018),
+    I = n(168428),
+    E = n(652215),
+    v = n(985018),
     b = n(875871);
 
-function v(e) {
+function T(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
         message: l,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
-    } = e, _ = r.useRef(null), [h, g] = r.useState(!0), [v, y] = r.useState(!1), N = t.state === I.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    } = e, _ = r.useRef(null), [h, g] = r.useState(!0), [T, y] = r.useState(!1), N = t.state === E.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
     r.useLayoutEffect(() => {
         y((_.current?.clientHeight ?? 0) > 292)
     }, [y]);
     let L = (0, m.oO)(t),
         R = r.useCallback(() => {
-            !v || h && g(!1)
-        }, [h, v]),
+            !T || h && g(!1)
+        }, [h, T]),
         P = r.useCallback(() => {
-            !v || h || g(!0)
-        }, [h, v]),
-        M = r.useMemo(() => v && _.current?.clientHeight != null ? {
+            !T || h || g(!0)
+        }, [h, T]),
+        M = r.useMemo(() => T && _.current?.clientHeight != null ? {
             height: h ? 292 : _.current.clientHeight + 36 + 48,
             transition: j ? void 0 : "height 0.2s ease"
-        } : {}, [h, v, j]);
-    return null == L ? (0, i.jsx)(E.A, {}) : (0, i.jsxs)(o.sqX, {
+        } : {}, [h, T, j]);
+    return null == L ? (0, i.jsx)(I.A, {}) : (0, i.jsxs)(o.sqX, {
         className: a()(b.Gg, {
-            [b.vk]: v && h
+            [b.vk]: T && h
         }),
         onClick: R,
         style: M,
-        "aria-label": T.intl.string(T.t.dcl9MQ),
+        "aria-label": v.intl.string(v.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: b.uY,
             ref: _,
@@ -72,24 +72,24 @@ function v(e) {
                 roles: t.roles,
                 className: b.Ei
             })]
-        }), v && !h ? (0, i.jsx)("div", {
+        }), T && !h ? (0, i.jsx)("div", {
             className: b.Se,
             children: (0, i.jsx)(o.QWc, {
                 textVariant: "text-xs/medium",
                 variant: "secondary",
                 size: "sm",
                 onClick: P,
-                text: T.intl.string(T.t.xdCLeM)
+                text: v.intl.string(v.t.xdCLeM)
             })
         }) : null, (0, i.jsxs)("div", {
             className: a()(b.qr, {
-                [b.iK]: v
+                [b.iK]: T
             }),
-            children: [v && h ? (0, i.jsx)("div", {
+            children: [T && h ? (0, i.jsx)("div", {
                 className: b.D7
             }) : null, (0, i.jsx)("div", {
                 className: a()(b.z8, {
-                    [b.it]: v && h
+                    [b.it]: T && h
                 }),
                 children: (0, i.jsx)("div", {
                     className: b.UD,

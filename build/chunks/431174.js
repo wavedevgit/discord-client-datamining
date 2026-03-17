@@ -20,9 +20,9 @@ var i = n(627968),
     x = n(306417),
     f = n(290794),
     C = n(985018),
-    E = n(121272);
+    I = n(121272);
 
-function I(e) {
+function E(e) {
     let {
         percentage: t,
         label: n,
@@ -31,12 +31,12 @@ function I(e) {
     } = e, o = (0, m.GV)(), {
         channelId: d,
         messageId: c
-    } = (0, f.Tu)(), [A, x] = r.useState(""), [C, I] = r.useState(!1), T = "" !== A && C, b = r.useCallback(() => {
+    } = (0, f.Tu)(), [A, x] = r.useState(""), [C, E] = r.useState(!1), v = "" !== A && C, b = r.useCallback(() => {
         x((0, g.$m)(c, d, a))
-    }, [c, d, a]), v = r.useCallback(() => {
-        b(), I(!0)
+    }, [c, d, a]), T = r.useCallback(() => {
+        b(), E(!0)
     }, [b]), S = r.useCallback(() => {
-        I(!1)
+        E(!1)
     }, []), y = r.useCallback(() => {
         (0, p.e)({
             channelId: d,
@@ -49,7 +49,7 @@ function I(e) {
             h.A.removeReactChangeListener(b)
         }
     }, [C, b]), (0, i.jsxs)("div", {
-        className: E.AA,
+        className: I.AA,
         children: [l ? (0, i.jsxs)(i.Fragment, {
             children: ["" !== A ? (0, i.jsx)(u.m, {
                 __unsupportedReactNodeAsText: (0, i.jsx)(_.Text, {
@@ -58,29 +58,29 @@ function I(e) {
                     scaleFontToUserSetting: !0,
                     children: A
                 }),
-                forceOpen: T,
+                forceOpen: v,
                 "aria-label": !1,
                 children: (0, i.jsx)(_.QWc, {
-                    onMouseEnter: v,
+                    onMouseEnter: T,
                     onMouseLeave: S,
-                    onFocus: v,
+                    onFocus: T,
                     onBlur: S,
                     onClick: y,
-                    "aria-describedby": T ? o : void 0,
+                    "aria-describedby": v ? o : void 0,
                     text: n,
                     variant: "secondary",
                     textVariant: "text-xs/semibold"
                 })
             }) : (0, i.jsx)(_.QWc, {
-                onMouseEnter: v,
+                onMouseEnter: T,
                 onMouseLeave: S,
-                onFocus: v,
+                onFocus: T,
                 onBlur: S,
                 onClick: y,
                 text: n,
                 variant: "secondary",
                 textVariant: "text-xs/semibold"
-            }), T && (0, i.jsx)(s.s, {
+            }), v && (0, i.jsx)(s.s, {
                 id: o,
                 children: A
             })]
@@ -98,7 +98,7 @@ function I(e) {
     })
 }
 
-function T(e) {
+function v(e) {
     let {
         percentage: t,
         shouldAnimate: n
@@ -115,7 +115,7 @@ function T(e) {
         }
     }, "animate-always");
     return (0, i.jsx)(o.animated.span, {
-        className: E.an,
+        className: I.an,
         style: r,
         "aria-hidden": !0
     })
@@ -156,7 +156,7 @@ function b(e) {
     })).otherwise(() => null)
 }
 
-function v(e) {
+function T(e) {
     let {
         answer: t,
         isExpired: n,
@@ -165,25 +165,25 @@ function v(e) {
         canShowVoterDetails: o
     } = e, d = !0 === t.isSelected, c = !0 === t.didSelfVote, u = !0 === t.isVictor, m = t.shouldAnimateTransition;
     return (0, i.jsxs)("div", {
-        className: a()(E.Fk, {
-            [E.EK]: r !== A.CQ.LIST,
-            [E.wH]: d
+        className: a()(I.Fk, {
+            [I.EK]: r !== A.CQ.LIST,
+            [I.wH]: d
         }),
-        children: [l ? (0, i.jsx)(T, {
+        children: [l ? (0, i.jsx)(v, {
             percentage: t.votesPercentage,
             shouldAnimate: m
         }) : null, null != t.pollMedia.emoji && (0, i.jsx)(x.Fb, {
-            className: E.Zg,
+            className: I.Zg,
             emoji: t.pollMedia.emoji
         }), (0, i.jsx)(_.Text, {
-            className: E.Pf,
+            className: I.Pf,
             variant: "text-sm/semibold",
             color: "none",
             scaleFontToUserSetting: !0,
             children: t.pollMedia.text
         }), t.didSelfVote && (0, i.jsx)(s.s, {
             children: C.intl.string(C.t["8DAM+5"])
-        }), l && (0, i.jsx)(I, {
+        }), l && (0, i.jsx)(E, {
             percentage: t.votesPercentage,
             label: t.votes,
             canShowVoterDetails: o,
@@ -194,7 +194,7 @@ function v(e) {
             didSelfVote: c,
             isVictor: u,
             isExpired: n,
-            className: E.ck
+            className: I.ck
         })]
     })
 }
@@ -208,11 +208,11 @@ function S(e) {
         ...a
     } = e;
     return (0, i.jsx)(x.Fh, {
-        className: E.ry,
-        answerClassName: E.ZF,
+        className: I.ry,
+        answerClassName: I.ZF,
         answersInteraction: n,
         canTapAnswers: l,
-        renderAnswerContent: e => (0, i.jsx)(v, {
+        renderAnswerContent: e => (0, i.jsx)(T, {
             answer: e,
             isExpired: t,
             answersInteraction: n,

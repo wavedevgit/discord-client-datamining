@@ -37,7 +37,6 @@ function v(e) {
         userId: n,
         guildId: r,
         channelId: a,
-        showGuildProfile: !0,
         icon: l.nys,
         label: j.intl.string(j.t.iXAna6)
     }), c = (0, m.A)(n, d, l.oyn), g = (0, C.A)(n), b = (0, x.A)(n), f = (0, o.A)(n), E = (0, u.A)(n), S = (0, A.A)();

@@ -26,12 +26,12 @@ function x(e, t) {
             return d.Ay.isMember(x?.guildId, e)
         }, [x]),
         C = (0, r.bG)([l.A], () => null != x && x?.channelId != null && l.A.isChannelGated(x.guildId, x.channelId), [x]),
-        E = t.hasFlag(A.pr7.IS_CROSSPOST),
+        I = t.hasFlag(A.pr7.IS_CROSSPOST),
         {
-            rawMediaPostEmbedData: I,
-            guild: T,
+            rawMediaPostEmbedData: E,
+            guild: v,
             parentChannel: b,
-            user: v,
+            user: T,
             selectedGuildId: S,
             canAccess: y
         } = (0, r.cf)([p.A, c.A, o.A, _.default, u.A], () => {
@@ -52,22 +52,22 @@ function x(e, t) {
         }, [x]),
         N = i.useMemo(() => {
             let e = (0, g.tU)({
-                mediaPostEmbedData: I,
-                guild: T,
+                mediaPostEmbedData: E,
+                guild: v,
                 parentChannel: b,
-                user: v,
+                user: T,
                 selectedGuildId: S,
                 canAccess: y
             });
             return null == e ? null : {
                 ...e,
-                user: v
+                user: T
             }
-        }, [I, T, b, v, S, y]);
+        }, [E, v, b, T, S, y]);
     return i.useEffect(() => {
         if (x?.threadId != null) {
             let e = p.A.getEmbedFetchState(x.threadId);
-            !0 !== n || e !== p.e.NOT_FETCHED || f && !1 === C || !f && E || (0, m.O0)(x?.threadId)
+            !0 !== n || e !== p.e.NOT_FETCHED || f && !1 === C || !f && I || (0, m.O0)(x?.threadId)
         }
-    }, [x, n, f, C, E]), N
+    }, [x, n, f, C, I]), N
 }

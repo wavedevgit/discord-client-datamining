@@ -1,7 +1,7 @@
 /** chunk id: 123902 params = (module,exports,require) **/
 i.d(e, {
     A: () => g,
-    V: () => A
+    V: () => m
 });
 var n, l = i(627968),
     r = i(64700),
@@ -11,8 +11,8 @@ var n, l = i(627968),
     d = i(765671),
     u = i(371664),
     c = i(477412),
-    A = ((n = {}).BLACK = "BLACK", n.GRAY = "GRAY", n);
-let m = {
+    m = ((n = {}).BLACK = "BLACK", n.GRAY = "GRAY", n);
+let A = {
         BLACK: c.Ql,
         GRAY: c.wm
     },
@@ -31,7 +31,7 @@ function g(t) {
         progress: i,
         size: n = "md",
         gradientStart: s = o.A.unsafe_rawColors.YELLOW_260.css,
-        gradientEnd: A = o.A.unsafe_rawColors.GREEN_360.css,
+        gradientEnd: m = o.A.unsafe_rawColors.GREEN_360.css,
         className: g,
         notchClassName: f,
         children: T
@@ -45,8 +45,8 @@ function g(t) {
         }
     }, [i, v]), x = r.useMemo(() => ({
         width: `${v}px`,
-        background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${A})`
-    }), [A, s, i, v]);
+        background: i <= 0 ? "none" : `linear-gradient(to right, ${s}, ${m})`
+    }), [m, s, i, v]);
     return (0, l.jsxs)("div", {
         className: c.iE,
         ref: E,
@@ -62,7 +62,7 @@ function g(t) {
             }), 0 !== v && (0, l.jsx)(u.A, {
                 width: v,
                 height: S,
-                className: a()(c.DR, m[e], f)
+                className: a()(c.DR, A[e], f)
             })]
         }), T]
     })

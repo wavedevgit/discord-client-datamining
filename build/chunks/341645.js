@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(392054),
     f = n(572211),
     C = n(178910),
-    E = n(354287),
-    I = n(574660),
-    T = n(853390),
+    I = n(354287),
+    E = n(574660),
+    v = n(853390),
     b = n(611010),
-    v = n(961350),
+    T = n(961350),
     S = n(734057),
     y = n(290863),
     N = n(287809),
@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(403362),
     M = n(218394),
     D = n(255345),
-    O = n(652215),
-    w = n(360469),
+    w = n(652215),
+    O = n(360469),
     k = n(768349),
     U = n(985018),
     G = n(356053);
@@ -48,7 +48,7 @@ let B = r.memo(e => {
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
             i((new Date().getTime() - t) / R.A.Millis.SECOND)
         }), () => e.stop()
-    }, [d, t]), (0, T.fU)(n)
+    }, [d, t]), (0, v.fU)(n)
 });
 B.displayName = "ActivityRuntimeCounter";
 let F = r.memo(function(e) {
@@ -59,12 +59,12 @@ let F = r.memo(function(e) {
             message: u
         } = e,
         {
-            analyticsLocations: T
+            analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
         M = (0, s.bG)([S.A], () => S.A.getChannel(l), [l]),
         F = M?.isThread?.() ? M?.parent_id : l,
-        H = (0, s.bG)([v.default], () => v.default.getId()),
+        H = (0, s.bG)([T.default], () => T.default.getId()),
         {
             embeddedActivity: V,
             currentEmbeddedActivity: W,
@@ -87,7 +87,7 @@ let F = r.memo(function(e) {
         K = Q?.details,
         J = r.useMemo(() => {
             let e = new b.Ay(n);
-            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = w.Gl), e
+            return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = O.Gl), e
         }, [n]),
         X = (0, p.vG)({
             userId: H,
@@ -104,7 +104,7 @@ let F = r.memo(function(e) {
         ee = r.useId(),
         et = null != q && q.isLaunching && q.componentId === ee,
         en = async () => {
-            j.default.track(O.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+            j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: l,
                 channel_type: M?.type,
@@ -114,18 +114,18 @@ let F = r.memo(function(e) {
                 targetApplicationId: n.id,
                 channelId: l,
                 locationObject: R.location,
-                analyticsLocations: T,
+                analyticsLocations: v,
                 componentId: ee,
                 commandOrigin: x.iw.ACTIVITY_INSTANCE_EMBED
             }) : await (0, m.A)({
                 applicationId: V.applicationId,
                 activityChannelId: l,
                 locationObject: R.location,
-                analyticsLocations: T,
+                analyticsLocations: v,
                 componentId: ee
             })
-        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, I.F)(J, () => {
-            j.default.track(O.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
+        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, E.F)(J, () => {
+            j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: l,
                 channel_type: M?.type,
@@ -145,7 +145,7 @@ let F = r.memo(function(e) {
         }),
         ed = [{
             label: $.text,
-            trackingArea: E.kY.PLAY,
+            trackingArea: I.kY.PLAY,
             onClick: en,
             disabled: $.disabled,
             disabledReason: t,

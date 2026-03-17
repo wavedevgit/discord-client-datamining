@@ -46,8 +46,8 @@ function m(e) {
         user: n
     } = e, t = (0, l.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
         hasMessageContent: m,
-        hasGuildPresences: A,
-        hasGuildMembers: x
+        hasGuildPresences: x,
+        hasGuildMembers: A
     } = (0, r.Z)(t);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
@@ -56,11 +56,11 @@ function m(e) {
             icon: a.oyn,
             title: d.intl.string(d.t["7Tmhfu"]),
             description: d.intl.string(d.t.eu5x7z)
-        }), A && (0, i.jsx)(u, {
+        }), x && (0, i.jsx)(u, {
             icon: a._xR,
             title: d.intl.string(d.t.awYSsM),
             description: d.intl.string(d.t.TpsXoC)
-        }), x && (0, i.jsx)(u, {
+        }), A && (0, i.jsx)(u, {
             icon: a.nFg,
             title: d.intl.string(d.t.WuKeSJ),
             description: d.intl.string(d.t.wOBmtV)

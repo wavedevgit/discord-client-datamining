@@ -1,6 +1,6 @@
 /** chunk id: 240783 params = (module,exports,require) **/
 t.d(n, {
-    A: () => g
+    A: () => j
 });
 var i = t(627968),
     s = t(64700),
@@ -12,14 +12,14 @@ var i = t(627968),
     c = t(128490),
     u = t(539548),
     m = t(412775),
-    A = t(86404),
-    x = t(738759),
+    x = t(86404),
+    A = t(738759),
     p = t(518477),
     _ = t(985018),
     f = t(781425),
     h = t(368519);
 
-function j(e) {
+function g(e) {
     let {
         section: n,
         user: t,
@@ -34,12 +34,12 @@ function j(e) {
         currentUser: s,
         guildId: a,
         onClose: o
-    }) : n === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(A.A, {
+    }) : n === p.RP.MUTUAL_FRIENDS ? (0, i.jsx)(x.A, {
         user: t,
         guildId: a,
         channelId: r,
         onClose: o
-    }) : n === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(x.A, {
+    }) : n === p.RP.MUTUAL_GUILDS ? (0, i.jsx)(A.A, {
         user: t,
         onClose: o
     }) : n === p.RP.BOT_DATA_ACCESS ? (0, i.jsx)(d.A, {
@@ -56,7 +56,7 @@ function j(e) {
     })
 }
 
-function g(e) {
+function j(e) {
     let {
         user: n,
         currentUser: t,
@@ -64,10 +64,10 @@ function g(e) {
         guildId: c,
         items: u,
         initialSection: m = p.RP.USER_INFO,
-        onClose: A
+        onClose: x
     } = e, {
-        trackUserProfileAction: x
-    } = (0, o.NJ)(), g = (0, l.bG)([r.A], () => r.A.hidePersonalInformation), [I, b] = s.useState(() => u.find(e => {
+        trackUserProfileAction: A
+    } = (0, o.NJ)(), j = (0, l.bG)([r.A], () => r.A.hidePersonalInformation), [I, b] = s.useState(() => u.find(e => {
         let {
             section: n
         } = e;
@@ -77,12 +77,12 @@ function g(e) {
         null == u.find(e => e.section === I) && b(u[0].section)
     }, [u, I]);
     let v = s.useCallback(e => {
-        x({
+        A({
             action: "PRESS_SECTION",
             section: e
         }), b(e)
-    }, [x]);
-    return g ? (0, i.jsx)("div", {
+    }, [A]);
+    return j ? (0, i.jsx)("div", {
         className: h.kL,
         children: (0, i.jsxs)("div", {
             className: f.Ie,
@@ -115,14 +115,14 @@ function g(e) {
                     })
                 }, n)
             })
-        }), (0, i.jsx)(j, {
+        }), (0, i.jsx)(g, {
             items: u,
             section: I,
             user: n,
             currentUser: t,
             displayProfile: d,
             guildId: c,
-            onClose: A
+            onClose: x
         })]
     })
 }

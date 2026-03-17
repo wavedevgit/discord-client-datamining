@@ -3,9 +3,9 @@ n.d(t, {
     Dt: () => D,
     Fb: () => P,
     Fh: () => j,
-    Vx: () => O,
+    Vx: () => w,
     e5: () => k,
-    k$: () => w
+    k$: () => O
 }), n(801541);
 var i = n(627968),
     r = n(64700),
@@ -25,9 +25,9 @@ var i = n(627968),
     x = n(969632),
     f = n(438437),
     C = n(290794),
-    E = n(789646),
-    I = n(985018),
-    T = n(846537);
+    I = n(789646),
+    E = n(985018),
+    v = n(846537);
 
 function b(e) {
     let {
@@ -35,19 +35,19 @@ function b(e) {
         children: n
     } = e;
     return (0, i.jsx)("ul", {
-        "aria-label": I.intl.string(I.t.sJpqBS),
+        "aria-label": E.intl.string(E.t.sJpqBS),
         className: t,
         children: n
     })
 }
 
-function v(e) {
+function T(e) {
     let {
         className: t,
         children: n
     } = e;
     return (0, i.jsx)("div", {
-        "aria-label": I.intl.string(I.t.sJpqBS),
+        "aria-label": E.intl.string(E.t.sJpqBS),
         role: "group",
         className: t,
         children: n
@@ -65,7 +65,7 @@ function S(e) {
         orientation: "vertical"
     });
     return (0, i.jsx)("div", {
-        "aria-label": I.intl.string(I.t.sJpqBS),
+        "aria-label": E.intl.string(E.t.sJpqBS),
         ref: r,
         ...l,
         className: t,
@@ -82,10 +82,10 @@ function y(e) {
         children: s
     } = e, {
         pollAnswerRef: o
-    } = (0, E.Mg)();
+    } = (0, I.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "checkbox",
-        className: a()(t, T.Sn),
+        className: a()(t, v.Sn),
         onClick: n,
         "aria-checked": r,
         ref: l ? o : void 0,
@@ -103,10 +103,10 @@ function N(e) {
         isFirstAnswer: o
     } = e, {
         pollAnswerRef: d
-    } = (0, E.Mg)();
+    } = (0, I.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "radio",
-        className: a()(t, T.Sn),
+        className: a()(t, v.Sn),
         onClick: r,
         "aria-checked": l,
         tabIndex: s ? l ? 0 : -1 : o ? 0 : -1,
@@ -139,7 +139,7 @@ function j(e) {
     })).with({
         answersInteraction: f.CQ.CHECKBOXES
     }, () => ({
-        ContainerComponent: v,
+        ContainerComponent: T,
         answerElementType: 2
     })).with({
         canTapAnswers: !0,
@@ -217,7 +217,7 @@ function R(e) {
     } = e, r = (0, g.j)(), l = m.kt.useSetting();
     return (0, i.jsx)(_.Ay, {
         className: n,
-        imageClassName: T.Bw,
+        imageClassName: v.Bw,
         src: null != t.proxy_url && "" !== t.proxy_url ? t.proxy_url : t.url,
         alt: t.description ?? (0, x.Kj)(t.filename),
         responsive: !0,
@@ -272,7 +272,7 @@ function D(e) {
     })) : void 0 !== a ? a : null
 }
 
-function O(e) {
+function w(e) {
     let {
         isVictor: t,
         isExpired: n,
@@ -311,7 +311,7 @@ function O(e) {
     })
 }
 
-function w(e) {
+function O(e) {
     let {
         isSelected: t,
         size: n,
@@ -319,12 +319,12 @@ function w(e) {
     } = e, l = {
         width: n,
         height: n,
-        background: T.So,
+        background: v.So,
         "aria-hidden": !0
     };
     return t ? (0, i.jsx)(p.A, {
         ...l,
-        foreground: T.dY,
+        foreground: v.dY,
         className: r
     }) : (0, i.jsx)(h.A, {
         ...l,
@@ -339,8 +339,8 @@ function k(e) {
         className: r
     } = e, l = .85 * n;
     return (0, i.jsx)("div", {
-        className: a()(T.kv, {
-            [T.H7]: t
+        className: a()(v.kv, {
+            [v.H7]: t
         }, r),
         style: {
             width: n,

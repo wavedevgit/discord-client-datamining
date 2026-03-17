@@ -15,8 +15,8 @@ var r = s(627968),
     p = s(151252),
     E = s(142270),
     S = s(287809),
-    h = s(365491),
-    A = s(628979),
+    A = s(365491),
+    h = s(628979),
     m = s(494573),
     f = s(758836),
     C = s(652215);
@@ -35,11 +35,11 @@ function O(e) {
         location: "collectibles_shop_header_bar"
     }), {
         searchQuery: x
-    } = (0, h.v)(), R = l.useRef(null), [N, v] = l.useState(!1);
+    } = (0, A.v)(), R = l.useRef(null), [N, v] = l.useState(!1);
     (0, i.g)(R, l.useCallback(e => {
         v(e.contentRect.width < 800)
     }, []));
-    let G = l.useMemo(() => [{
+    let I = l.useMemo(() => [{
             tab: f.G2.HOME,
             label: g.intl.string(g.t["xNiB/O"])
         }, {
@@ -50,21 +50,20 @@ function O(e) {
             tab: f.G2.ORBS,
             label: g.intl.string(g.t.EBYkzk)
         }] : []], [L]),
-        I = t === f.G2.ORBS ? C.liQ.SHOP_ORBS_TAB : C.liQ.COLLECTIBLES_SHOP,
+        G = t === f.G2.ORBS ? C.liQ.SHOP_ORBS_TAB : C.liQ.COLLECTIBLES_SHOP,
         _ = l.useCallback(() => {
             (0, b.Y)({
-                pageType: I,
+                pageType: G,
                 sectionType: C.JJy.ORBS_BALANCE_MENU,
                 ctaObject: C.ZSU.CTA_TO_QUEST_HOME
             }), (0, u.navigateToQuestHome)({
                 fromContent: a.u.ORBS_BALANCE_MENU
             })
-        }, [I]),
+        }, [G]),
         j = l.useCallback(() => {
             O?.id != null && (0, d.openUserProfileModal)({
                 userId: O.id,
-                tabSection: T.RP.WISHLIST,
-                showGuildProfile: !1
+                tabSection: T.RP.WISHLIST
             })
         }, [O?.id]),
         F = l.useCallback(e => {
@@ -76,7 +75,7 @@ function O(e) {
             disableDoubleClick: !0,
             className: y.jr,
             toolbar: (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(A.A, {
+                children: [(0, r.jsx)(h.A, {
                     handleTransition: s,
                     selectedTab: t,
                     isNarrow: N,
@@ -90,7 +89,7 @@ function O(e) {
                         color: "currentColor"
                     })
                 }), L && (0, r.jsx)(E.SS, {
-                    analyticsPage: I,
+                    analyticsPage: G,
                     cardAlignment: E.SS.CardAlignment.END,
                     ctaText: g.intl.string(g.t.VC4Mq0),
                     ctaOnClick: _
@@ -107,7 +106,7 @@ function O(e) {
                     color: o.LU0.colors.TEXT_DEFAULT
                 })
             }), (0, r.jsx)(m.A, {
-                tabs: G,
+                tabs: I,
                 selectedTab: t,
                 onTabSelect: F
             })]

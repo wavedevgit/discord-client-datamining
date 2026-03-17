@@ -12,8 +12,8 @@ var l = i(311907),
     d = i(401843),
     u = i(279250),
     c = i(267102),
-    A = i(616356),
-    m = i(734057),
+    m = i(616356),
+    A = i(734057),
     p = i(203982),
     h = i(652215),
     g = i(985018);
@@ -26,15 +26,15 @@ function f(t) {
     } = t, {
         activeStream: T,
         watchingOtherStream: S
-    } = (0, l.cf)([A.A], () => ({
-        activeStream: A.A.getActiveStreamForApplicationStream(i),
-        watchingOtherStream: null != i && A.A.getAllActiveStreamsForChannel(i.channelId).filter(t => {
+    } = (0, l.cf)([m.A], () => ({
+        activeStream: m.A.getActiveStreamForApplicationStream(i),
+        watchingOtherStream: null != i && m.A.getAllActiveStreamsForChannel(i.channelId).filter(t => {
             let {
                 ownerId: e
             } = t;
             return e !== i.ownerId
         }).length > 0
-    })), E = (0, l.bG)([m.A], () => m.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(E), _ = (0, c.aL)(), x = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, y = t => {
+    })), E = (0, l.bG)([A.A], () => A.A.getChannel(i?.channelId)), [C, v] = (0, u.zP)(E), _ = (0, c.aL)(), x = null != T && null != i && T.state !== h.XYD.ENDED && T.ownerId === i.ownerId, y = t => {
         null != i && (f?.(), o.default.selectVoiceChannel(i.channelId), x || (0, d.Nl)(i, {
             forceMultiple: t
         }), _.dispatch(h.jej.POPOUT_CLOSE), p._.dispatch(h.jej.MODAL_CLOSE), a.A.popAll())

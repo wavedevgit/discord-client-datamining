@@ -11,8 +11,8 @@ var n = i(627968),
     d = i(643501),
     u = i(616356),
     c = i(961350),
-    A = i(71393),
-    m = i(576705),
+    m = i(71393),
+    A = i(576705),
     p = i(290863),
     h = i(977997),
     g = i(954571),
@@ -48,8 +48,8 @@ class v extends l.PureComponent {
             activeStream: d,
             currentUserId: u,
             canWatch: c,
-            unavailableReason: A,
-            streamApplication: m
+            unavailableReason: m,
+            streamApplication: A
         } = this.props;
         return null == i ? null : (0, n.jsx)("div", {
             className: s()(C.yt, {
@@ -59,11 +59,11 @@ class v extends l.PureComponent {
                 stream: i,
                 activeStream: d,
                 streamActivity: t,
-                streamApplication: m,
+                streamApplication: A,
                 user: e,
                 currentUserId: u,
                 canWatch: c ?? !1,
-                unavailableReason: A,
+                unavailableReason: m,
                 onWatchStream: o,
                 onAction: r,
                 hideTip: a
@@ -77,7 +77,7 @@ function _(t) {
         user: e,
         channel: i,
         ...r
-    } = t, [s, g] = (0, a.yK)([h.A, A.A, m.A, d.default], () => (0, f.eo)(i, h.A, A.A, m.A, d.default)), S = (0, a.bG)([u.A], () => u.A.getStreamForUser(e.id, i.getGuildId())), E = (0, a.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(S)), C = (0, a.bG)([c.default], () => c.default.getId()), _ = (0, T.AO)(S), x = (0, a.bG)([p.A], () => (0, T.nr)(S, p.A)), y = l.useMemo(() => ({
+    } = t, [s, g] = (0, a.yK)([h.A, m.A, A.A, d.default], () => (0, f.eo)(i, h.A, m.A, A.A, d.default)), S = (0, a.bG)([u.A], () => u.A.getStreamForUser(e.id, i.getGuildId())), E = (0, a.bG)([u.A], () => u.A.getActiveStreamForApplicationStream(S)), C = (0, a.bG)([c.default], () => c.default.getId()), _ = (0, T.AO)(S), x = (0, a.bG)([p.A], () => (0, T.nr)(S, p.A)), y = l.useMemo(() => ({
         [i.guild_id]: [e.id]
     }), [i.guild_id, e.id]);
     return (0, o.Eq)(y, "StreamPreviewPopout"), (0, n.jsx)(v, {

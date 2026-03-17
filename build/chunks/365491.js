@@ -1,7 +1,7 @@
 /** chunk id: 365491 params = (module,exports,require) **/
 s.d(t, {
     S: () => m,
-    v: () => h
+    v: () => A
 });
 var r = s(64700),
     l = s(353640),
@@ -49,7 +49,7 @@ let d = {
         } = e;
         return t.size > 0 || s.size > 0 || "" !== r.trim() ? p : l.size > 0 ? b : d
     },
-    h = (0, l.v)((0, a.eh)((e, t) => ({
+    A = (0, l.v)((0, a.eh)((e, t) => ({
         ...E,
         hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === d.sortType && t().sort.sortDirection === d.sortDirection,
         hasFilters: () => {
@@ -185,7 +185,7 @@ let d = {
             })
         }
     }))),
-    A = e => {
+    h = e => {
         let {
             itemTypeFilters: t,
             colorFilters: s,
@@ -235,14 +235,14 @@ let d = {
                 };
                 0 !== r.limit && l()
             };
-            r(A(h.getState()));
-            let l = h.subscribe(A, r, {
+            r(h(A.getState()));
+            let l = A.subscribe(h, r, {
                     equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
                 }),
-                a = h.subscribe(e => e.hasFilters(), (e, t) => {
+                a = A.subscribe(e => e.hasFilters(), (e, t) => {
                     if (!e && t) {
-                        let e = h.getState();
-                        e.userHasSelectedSort || h.setState({
+                        let e = A.getState();
+                        e.userHasSelectedSort || A.setState({
                             sort: S(e)
                         })
                     }

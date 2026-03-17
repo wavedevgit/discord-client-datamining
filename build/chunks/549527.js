@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(643204),
     f = n(535421),
     C = n(112758),
-    E = n(754459),
-    I = n(538355),
-    T = n(699352),
+    I = n(754459),
+    E = n(538355),
+    v = n(699352),
     b = n(378570),
-    v = n(138298),
+    T = n(138298),
     S = n(253932),
     y = n(761640),
     N = n(734057),
@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(994500),
     M = n(309010),
     D = n(287809),
-    O = n(954571),
-    w = n(709634),
+    w = n(954571),
+    O = n(709634),
     k = n(652215),
     U = n(381941),
     G = n(618231);
@@ -52,11 +52,11 @@ function B(e) {
             r = M.A.getCurrentlySelectedChannelId(),
             l = y.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
             a = r === i && l === e?.id;
-        null == e || null == n || a || null == i || (v.A.openModReportAsSidebar({
+        null == e || null == n || a || null == i || (T.A.openModReportAsSidebar({
             channelId: e.id,
             baseChannelId: i,
             guildId: e.guild_id
-        }), (0, b.iN)(i), O.default.track(k.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
+        }), (0, b.iN)(i), w.default.track(k.HAw.MODERATOR_REPORT_ORIGINAL_MESSAGE_LINK_CLICKED, {
             moderator_report_id: t.channel_id,
             destination_channel_id: i,
             destination_message_id: t.id
@@ -99,7 +99,7 @@ function F(e) {
         let {
             popouts: n,
             setPopout: i
-        } = (0, E.A)(e.id, U.Fd), {
+        } = (0, I.A)(e.id, U.Fd), {
             usernameProfile: l,
             avatarProfile: a
         } = n, s = (0, C.m)(e, t, l, i);
@@ -116,7 +116,7 @@ function F(e) {
         }
     }(t, l);
     return (0, i.jsx)(g.A, {
-        childrenExecutedCommand: (0, i.jsx)(w.A, {
+        childrenExecutedCommand: (0, i.jsx)(O.A, {
             reportingUserId: a,
             guildId: l.guild_id,
             channel: l,
@@ -174,7 +174,7 @@ function H(e) {
             content: A,
             hasSpoilerEmbeds: x,
             hasBailedAst: f
-        } = (0, I.A)(d, {
+        } = (0, E.A)(d, {
             hideSimpleEmbedContent: u && m,
             isInteracting: !1,
             formatInline: !1,
@@ -195,7 +195,7 @@ function H(e) {
                 channel: C,
                 reportingUserId: n?.moderatorReport?.reporting_user_id,
                 reportedTimestamp: t.timestamp
-            }), (0, T.A)({
+            }), (0, v.A)({
                 channelMessageProps: {
                     message: d,
                     channel: C,

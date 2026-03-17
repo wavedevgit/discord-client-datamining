@@ -19,21 +19,21 @@ var i, r = n(627968),
     x = n(194871),
     f = n(966846),
     C = n(674378),
-    E = n(723702),
-    I = n(541830),
-    T = n(715671),
+    I = n(723702),
+    E = n(541830),
+    v = n(715671),
     b = n(598429),
-    v = n(652215),
+    T = n(652215),
     S = n(985018),
     y = n(643966),
     N = ((i = N || {}).PLAY = "play", i.NOW_PLAYING = "now_playing", i.INSTALL = "install", i.UPDATE = "update", i.PAUSED = "paused", i.LOCATE = "locate", i.UNINSTALLING = "uninstalling", i.QUEUED = "queued", i.DOWNLOADING = "downloading", i.UNSUPPORTED_OS = "unsupported_os", i.ADD_TO_LIBRARY = "add_to_library", i.PREORDER_WAIT = "preorder_wait", i);
 let j = Object.freeze({
-    [v.Hf6.PLAY]: "play",
-    [v.Hf6.INSTALL]: "install",
-    [v.Hf6.UPDATE]: "update",
-    [v.Hf6.PAUSE]: "downloading",
-    [v.Hf6.MOVE_UP]: "queued",
-    [v.Hf6.RESUME]: "paused"
+    [T.Hf6.PLAY]: "play",
+    [T.Hf6.INSTALL]: "install",
+    [T.Hf6.UPDATE]: "update",
+    [T.Hf6.PAUSE]: "downloading",
+    [T.Hf6.MOVE_UP]: "queued",
+    [T.Hf6.RESUME]: "paused"
 });
 class L extends l.Component {
     static defaultProps = {
@@ -46,7 +46,7 @@ class L extends l.Component {
     get analyticsLocation() {
         return {
             ...this.props.analyticsContext.location,
-            object: v.ZSU.BUTTON_CTA
+            object: T.ZSU.BUTTON_CTA
         }
     }
     _uninstallStringIndex = null;
@@ -81,7 +81,7 @@ class L extends l.Component {
             let {
                 libraryApplication: e
             } = this.props;
-            await u.V(e.id, e.branchId, e.getFlags() & ~v.hM6.HIDDEN), (0, h.pX)(v.BVt.APPLICATION_LIBRARY)
+            await u.V(e.id, e.branchId, e.getFlags() & ~T.hM6.HIDDEN), (0, h.pX)(T.BVt.APPLICATION_LIBRARY)
         } catch (e) {
             new m.A("LibraryApplicationButton").error(e)
         }
@@ -91,13 +91,13 @@ class L extends l.Component {
             libraryApplication: e,
             source: t
         } = this.props;
-        T.installApplication(e.id, e.branchId, t)
+        v.installApplication(e.id, e.branchId, t)
     };
     handleUpdate = () => {
         let {
             libraryApplication: e
         } = this.props;
-        T.updateApplication(e.id, e.branchId)
+        v.updateApplication(e.id, e.branchId)
     };
     onClickHandlers = {
         add_to_library: this.handleAddToLibrary,
@@ -119,7 +119,7 @@ class L extends l.Component {
         if (e.isHidden()) return "add_to_library";
         if (e.isPreorder()) return "preorder_wait";
         let i = null != n ? j[n] : null;
-        return null != i ? i : null != t && t.type === v.WTw.UNINSTALLING ? "uninstalling" : (0, E.isWeb)() ? "play" : "unsupported_os"
+        return null != i ? i : null != t && t.type === T.WTw.UNINSTALLING ? "uninstalling" : (0, I.isWeb)() ? "play" : "unsupported_os"
     }
     renderPlayButton() {
         let {
@@ -181,7 +181,7 @@ class L extends l.Component {
         if (e) return null;
         let n = C.z0(t);
         if (null == n) return null;
-        let i = n.type === v.WTw.UNINSTALLING ? c.iCB.INDETERMINATE : C.uA(Number(n.progress), Number(n.total));
+        let i = n.type === T.WTw.UNINSTALLING ? c.iCB.INDETERMINATE : C.uA(Number(n.progress), Number(n.total));
         return (0, r.jsx)(c.iCB, {
             percent: i,
             size: c.iCB.Sizes.XSMALL,
@@ -217,7 +217,7 @@ class L extends l.Component {
         if ("play" === n) return this.renderPlayButton();
         if ("preorder_wait" === n) {
             let e;
-            return this.renderDisabledButton(n, null != (e = I.zJ(t.sku)) ? S.intl.formatToPlainString(S.t.Aqe2ZC, {
+            return this.renderDisabledButton(n, null != (e = E.zJ(t.sku)) ? S.intl.formatToPlainString(S.t.Aqe2ZC, {
                 date: e
             }) : null)
         }

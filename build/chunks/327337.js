@@ -2,7 +2,7 @@
 i.d(e, {
     CL: () => a,
     Ht: () => o,
-    RU: () => A,
+    RU: () => m,
     Rx: () => l,
     V: () => d,
     cb: () => u,
@@ -19,4 +19,4 @@ let l = "SAFETY_WARNING_BANNER_WEB",
     d = "PRIVATE_DM_SAFETY_TOOLS_MODAL",
     u = "SafetyToolsActionSheet-web",
     c = () => [n.intl.string(n.t["26fDv4"]), n.intl.string(n.t.togDfk), n.intl.string(n.t.O4Ljca)],
-    A = () => [n.intl.string(n.t.bCWw8l), n.intl.string(n.t.mzSucz), n.intl.string(n.t.ZkmC7s)]
+    m = () => [n.intl.string(n.t.bCWw8l), n.intl.string(n.t.mzSucz), n.intl.string(n.t.ZkmC7s)]

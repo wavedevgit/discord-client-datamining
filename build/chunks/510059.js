@@ -15,12 +15,12 @@ var t = i(503698),
     A = i(370480),
     m = i(169869),
     p = i(532197),
-    x = i(773669),
-    g = i(307600),
+    g = i(773669),
+    x = i(307600),
     h = i(652215),
     f = i(783419),
-    j = i(985018),
-    I = i(882119);
+    I = i(985018),
+    j = i(882119);
 
 function v(e) {
     let l, {
@@ -29,70 +29,70 @@ function v(e) {
             userId: s
         } = e,
         a = i.metadata ?? {},
-        x = (0, A.An)(a[f.pK.CREATED_AT], t),
+        g = (0, A.An)(a[f.pK.CREATED_AT], t),
         v = d.A.get((0, u.ML)(i.type));
     return (0, n.jsxs)("li", {
-        className: I.FI,
+        className: j.FI,
         children: [(0, n.jsx)(r.m, {
             __unsupportedReactNodeAsText: v?.name,
             children: (0, n.jsx)("div", {
-                className: I.k_,
+                className: j.k_,
                 children: (0, n.jsx)("img", {
-                    alt: j.intl.formatToPlainString(j.t.rtm15P, {
+                    alt: I.intl.formatToPlainString(I.t.rtm15P, {
                         name: v?.name
                     }),
-                    className: I.tV,
+                    className: j.tV,
                     src: v?.icon.lightPNG
                 })
             })
         }), (0, n.jsxs)("div", {
-            className: I.Hd,
+            className: j.Hd,
             children: [(0, n.jsxs)("div", {
                 children: [null == (l = v?.getPlatformUserUrl?.(i)) ? (0, n.jsx)(r.m, {
                     overflowOnly: !0,
                     text: i.name,
                     children: (0, n.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        className: I.GW,
+                        className: j.GW,
                         children: i.name
                     })
                 }) : (0, n.jsx)(o.MzZ, {
                     href: l,
-                    className: I.Y2,
+                    className: j.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${j.intl.string(j.t.q5jLJB)}` : `${i.name}, ${j.intl.string(j.t.q5jLJB)}`,
+                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${I.intl.string(I.t.q5jLJB)}` : `${i.name}, ${I.intl.string(I.t.q5jLJB)}`,
                     onClick: e => {
                         (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
                             platform_type: i.type,
                             other_user_id: s
-                        }), (0, g.h)({
+                        }), (0, x.h)({
                             href: l,
                             trusted: v?.type !== h.fg2.DOMAIN
                         }, e)
                     },
                     children: (0, n.jsxs)("div", {
-                        className: I.vi,
+                        className: j.vi,
                         children: [(0, n.jsx)(r.m, {
                             overflowOnly: !0,
                             text: i.name,
                             children: (0, n.jsx)(o.Text, {
                                 variant: "text-sm/normal",
-                                className: I.GW,
+                                className: j.GW,
                                 children: i.name
                             })
                         }), (0, n.jsx)(p.A, {
-                            className: I.E4,
+                            className: j.E4,
                             direction: p.A.Directions.RIGHT
                         })]
                     })
-                }), null != x && (0, n.jsx)(o.Text, {
+                }), null != g && (0, n.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    children: j.intl.format(j.t["9rfonh"], {
-                        date: x
+                    children: I.intl.format(I.t["9rfonh"], {
+                        date: g
                     })
                 })]
             }), (0, n.jsx)("div", {
-                className: I.yu,
+                className: j.yu,
                 children: i.type === h.fg2.REDDIT ? (0, m.xE)(a) : i.type === h.fg2.STEAM ? (0, m.dy)(a) : i.type === h.fg2.BLUESKY || i.type === h.fg2.MASTODON || i.type === h.fg2.TWITTER ? (0, m.ED)(a) : i.type === h.fg2.PAYPAL ? (0, m.gZ)(a) : i.type === h.fg2.EBAY ? (0, m.ub)(a) : i.type === h.fg2.TIKTOK ? (0, m.HU)(a) : null
             })]
         })]
@@ -104,9 +104,9 @@ function N(e) {
         connections: l,
         userId: i,
         className: t
-    } = e, r = (0, a.bG)([x.default], () => x.default.locale);
+    } = e, r = (0, a.bG)([g.default], () => g.default.locale);
     return 0 === l.length ? null : (0, n.jsx)("ul", {
-        className: s()(I.kL, t),
+        className: s()(j.kL, t),
         children: l.map(e => (0, n.jsx)(v, {
             account: e,
             userId: i,

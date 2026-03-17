@@ -36,16 +36,16 @@ let g = function(e) {
         preClickCallback: x,
         analyticsCtxQuestContent: f,
         analyticsCtxSourceQuestContent: C,
-        analyticsCtxQuestContentPosition: E,
-        analyticsCtxQuestContentRowIndex: I
-    } = e, T = {
+        analyticsCtxQuestContentPosition: I,
+        analyticsCtxQuestContentRowIndex: E
+    } = e, v = {
         questContent: f,
         questContentCTA: p(c),
         sourceQuestContent: C,
-        questContentPosition: E,
-        questContentRowIndex: I
+        questContentPosition: I,
+        questContentRowIndex: E
     }, b = n.id, {
-        isEnrolling: v
+        isEnrolling: T
     } = (0, l.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(b)
     }), [b]), S = (0, _.Oz)(n), y = function(e, t) {
@@ -87,25 +87,25 @@ let g = function(e) {
         }
     }(c, n), j = (t = y ?? void 0, c === r.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
-            questContent: T.questContent,
-            questContentCTA: T.questContentCTA,
-            sourceQuestContent: T.sourceQuestContent,
+            questContent: v.questContent,
+            questContentCTA: v.questContentCTA,
+            sourceQuestContent: v.sourceQuestContent,
             sourceQuestContentCTA: p(c),
-            questContentPosition: T.questContentPosition,
-            questContentRowIndex: T.questContentRowIndex
+            questContentPosition: v.questContentPosition,
+            questContentRowIndex: v.questContentRowIndex
         })
     }: async () => {
         await (0, s.Oy)(n.id, {
-            questContent: T.questContent,
-            questContentCTA: T.questContentCTA,
-            sourceQuestContent: T.sourceQuestContent,
-            questContentPosition: T.questContentPosition,
-            questContentRowIndex: T.questContentRowIndex
+            questContent: v.questContent,
+            questContentCTA: v.questContentCTA,
+            sourceQuestContent: v.sourceQuestContent,
+            questContentPosition: v.questContentPosition,
+            questContentRowIndex: v.questContentRowIndex
         }), t?.()
     });
     return (0, i.jsx)(a.Button, {
         size: g,
-        loading: v,
+        loading: T,
         variant: A,
         onClick: () => {
             x?.(), j()

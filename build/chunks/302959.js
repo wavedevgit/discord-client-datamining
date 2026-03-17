@@ -12,8 +12,8 @@ var n = i(627968),
     d = i(587895),
     u = i(806246),
     c = i(890330),
-    A = i(172710),
-    m = i(616356),
+    m = i(172710),
+    A = i(616356),
     p = i(734057),
     h = i(71393),
     g = i(977997),
@@ -56,7 +56,7 @@ let v = a.A.Types,
             hideHeader: E = !1,
             showChannelDetails: v = !1,
             ..._
-        } = t, x = (0, r.bG)([g.A, p.A], () => p.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), y = (0, c.v)("UserActivityContainer", x), I = (0, r.bG)([m.A], () => o ? m.A.getAnyStreamForUser(i.id) : null), N = e?.type === S.$pd.HANG_STATUS && y ? x : null, j = (0, r.bG)([h.A, g.A, p.A], () => (0, s.A)(e, S.jUm.EMBEDDED) ? h.A.getGuild(p.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != N ? h.A.getGuild(N.getGuildId()) : null), D = (0, r.bG)([h.A], () => null != I ? h.A.getGuild(I.guildId) : null), P = (0, r.bG)([d.A], () => {
+        } = t, x = (0, r.bG)([g.A, p.A], () => p.A.getChannel(g.A.getVoiceStateForUser(i.id)?.channelId)), y = (0, c.v)("UserActivityContainer", x), I = (0, r.bG)([A.A], () => o ? A.A.getAnyStreamForUser(i.id) : null), N = e?.type === S.$pd.HANG_STATUS && y ? x : null, j = (0, r.bG)([h.A, g.A, p.A], () => (0, s.A)(e, S.jUm.EMBEDDED) ? h.A.getGuild(p.A.getChannel(g.A.getVoiceStateForSession(i.id, e?.session_id)?.channelId)?.getGuildId()) : null != N ? h.A.getGuild(N.getGuildId()) : null), D = (0, r.bG)([h.A], () => null != I ? h.A.getGuild(I.guildId) : null), P = (0, r.bG)([d.A], () => {
             if (null != e)
                 if (null != e.application_id) return d.A.getApplication(e.application_id);
                 else return d.A.getApplicationByName(e.name);
@@ -84,8 +84,8 @@ let v = a.A.Types,
                 activity: e,
                 user: i
             }) : null,
-            onOpenSpotifyTrack: A.Mp,
-            onOpenSpotifyArtist: A.mN,
-            onOpenSpotifyAlbum: A.QX
+            onOpenSpotifyTrack: m.Mp,
+            onOpenSpotifyArtist: m.mN,
+            onOpenSpotifyAlbum: m.QX
         }) : null
     }

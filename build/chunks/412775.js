@@ -13,14 +13,14 @@ var s = t(311907),
     c = t(351906),
     u = t(183555),
     m = t(346713),
-    A = t(484509),
-    x = t(389996),
+    x = t(484509),
+    A = t(389996),
     p = t(46937),
     _ = t(361311),
     f = t(743987),
     h = t(900179),
-    j = t(280645),
-    g = t(928223),
+    g = t(280645),
+    j = t(928223),
     I = t(518477),
     b = t(985018),
     v = t(195723);
@@ -34,14 +34,14 @@ function N(e) {
         trackUserProfileAction: y
     } = (0, u.NJ)(), C = (0, s.bG)([d.A], () => d.A.getGuildId()), T = (0, a.q)({
         userId: n.id
-    }), E = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, A.A)(n.id), R = (0, m.A)(n.id);
+    }), E = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, x.A)(n.id), R = (0, m.A)(n.id);
     return (0, i.jsxs)(l.IpV, {
         fade: !0,
         className: v.XG,
-        children: [t?.bio != null && t?.bio !== "" && !E && (0, i.jsx)(x.A, {
+        children: [t?.bio != null && t?.bio !== "" && !E && (0, i.jsx)(A.A, {
             userBio: t.bio,
             setLineClamp: !1
-        }), t?.guildId != null && (0, i.jsx)(j.A, {
+        }), t?.guildId != null && (0, i.jsx)(g.A, {
             userId: n.id,
             guildId: t.guildId
         }), n.isProvisional && (0, i.jsx)(h.A, {
@@ -88,7 +88,7 @@ function N(e) {
                 },
                 selectedGuildId: C ?? void 0
             }, e.application.id))
-        }), (0, i.jsx)(g.A, {
+        }), (0, i.jsx)(j.A, {
             userId: n.id
         })]
     })

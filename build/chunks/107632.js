@@ -26,8 +26,8 @@ var i = t(311907),
     p = t(734057),
     S = t(309010),
     j = t(803664),
-    G = t(29293),
-    y = t(497600),
+    y = t(29293),
+    G = t(497600),
     N = t(291247),
     v = t(773699),
     O = t(239211),
@@ -42,8 +42,8 @@ var i = t(311907),
     L = t(198229),
     k = t(243949),
     F = t(180798),
-    w = t(972432),
-    K = t(77544),
+    K = t(972432),
+    w = t(77544),
     X = t(652215),
     W = t(985018);
 let H = (0, s.A)((0, d.A)(function(e) {
@@ -68,21 +68,20 @@ let H = (0, s.A)((0, d.A)(function(e) {
     }, et = (0, k.A)({
         userId: n.id,
         guildId: t,
-        channelId: ee,
-        showGuildProfile: !0
-    }), el = (0, B.A)(n, t, q), ei = (0, R.A)(n.id, q), er = (0, K.A)(n.id), ea = (0, T.A)({
+        channelId: ee
+    }), el = (0, B.A)(n, t, q), ei = (0, R.A)(n.id, q), er = (0, w.A)(n.id), ea = (0, T.A)({
         user: n,
         context: q
     }), ed = (0, h.D)({
         userId: n.id
-    }), es = (0, y.A)({
+    }), es = (0, G.A)({
         user: n,
         guildId: t,
         channelId: ee,
         context: q
-    }), eo = (0, G.A)({
+    }), eo = (0, y.A)({
         user: n
-    }), eu = (0, w.A)(n.id), ec = (0, L.A)(n.id), eA = (0, x.u)({
+    }), eu = (0, K.A)(n.id), ec = (0, L.A)(n.id), eA = (0, x.u)({
         userId: n.id,
         channelId: ee,
         guildId: d.getGuildId()
@@ -109,7 +108,7 @@ let H = (0, s.A)((0, d.A)(function(e) {
     }), eb = (0, N.A)(n, t, ee), ef = (0, F.A)(n.id, t), eM = (0, P.A)(n, t), eI = (0, C.A)({
         id: n.id,
         label: W.intl.string(W.t["/AXYnE"])
-    }), ep = (0, _.A)(n.id, ee), eS = (0, E.A)(n.id), ej = (0, g.A)(ee), eG = (0, M.A)(n), ey = (0, I.A)(n, t, ee), eN = (0, A.A)(ee, n.id), ev = (0, i.bG)([p.A], () => null != Z ? p.A.getChannel(Z) : null), eO = (0, v.A)({
+    }), ep = (0, _.A)(n.id, ee), eS = (0, E.A)(n.id), ej = (0, g.A)(ee), ey = (0, M.A)(n), eG = (0, I.A)(n, t, ee), eN = (0, A.A)(ee, n.id), ev = (0, i.bG)([p.A], () => null != Z ? p.A.getChannel(Z) : null), eO = (0, v.A)({
         commandType: o.kc.USER,
         commandTargetId: n.id,
         channel: ev ?? d,
@@ -126,7 +125,7 @@ let H = (0, s.A)((0, d.A)(function(e) {
         onInteraction: $,
         children: [!eB && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)(r.rXV, {
-                children: [eG, s && !J && eD, J && ey]
+                children: [ey, s && !J && eD, J && eG]
             }), (0, l.jsxs)(r.rXV, {
                 children: [Y && et, c && el, ei, ed, ea, eU, Y && es, Y && eo, er]
             }), s && (0, l.jsx)(r.rXV, {

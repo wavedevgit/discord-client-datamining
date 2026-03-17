@@ -1,6 +1,6 @@
 /** chunk id: 443642 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => I
 });
 var i = n(627968),
     r = n(64700),
@@ -20,12 +20,12 @@ var i = n(627968),
     x = n(788868),
     f = n(444736);
 let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
-    E = e => {
+    I = e => {
         let {
             renderableSticker: t,
             channel: n,
             isInteracting: a
-        } = e, _ = r.useRef(null), [E, I] = r.useState(!0), [T, b] = r.useState(String(Date.now())), [v] = (0, m.Zq)(t, a), {
+        } = e, _ = r.useRef(null), [I, E] = r.useState(!0), [v, b] = r.useState(String(Date.now())), [T] = (0, m.Zq)(t, a), {
             analyticsLocations: S
         } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
             className: f.Zl,
@@ -33,7 +33,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                 size: "xs",
                 color: "currentColor",
                 className: f.lA
-            }), (v ?? t).name]
+            }), (T ?? t).name]
         });
         return (0, i.jsx)(c.f5, {
             value: S,
@@ -42,9 +42,9 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                 children: (0, i.jsx)(s.YNO, {
                     align: "center",
                     animation: s.YNO.Animation.TRANSLATE,
-                    positionKey: T,
+                    positionKey: v,
                     onRequestClose: () => {
-                        I(!0)
+                        E(!0)
                     },
                     renderPopout: e => (0, i.jsx)(g.A, {
                         ...e,
@@ -59,12 +59,12 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         } = e;
                         return (0, i.jsx)(l.m, {
                             ...u.Uk,
-                            shouldShow: E,
+                            shouldShow: I,
                             __unsupportedReactNodeAsText: (0, u.yR)(y),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;
-                                null != (e = v) && d.Ay.trackWithMetadata(A.HAw.EXPRESSION_TOOLTIP_VIEWED, {
+                                null != (e = T) && d.Ay.trackWithMetadata(A.HAw.EXPRESSION_TOOLTIP_VIEWED, {
                                     type: x.e.STICKER_IN_MESSAGE_HOVER,
                                     expression_id: e.id,
                                     expression_name: e.name,
@@ -76,13 +76,13 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                 innerRef: _,
                                 className: f.q7,
                                 onClick: e => {
-                                    I(!E), n(e)
+                                    E(!I), n(e)
                                 },
                                 tag: "span",
                                 children: (0, i.jsx)(p.A, {
                                     isInteracting: a,
                                     size: C,
-                                    sticker: v ?? t
+                                    sticker: T ?? t
                                 })
                             })
                         })

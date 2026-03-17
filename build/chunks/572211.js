@@ -1,6 +1,6 @@
 /** chunk id: 572211 params = (module,exports,require) **/
 n.d(t, {
-    h: () => I,
+    h: () => E,
     u: () => C
 }), n(323874), n(14289), n(35956);
 var i, r = n(627968),
@@ -21,7 +21,7 @@ var i, r = n(627968),
     f = n(112247),
     C = ((i = {})[i.BOT = 0] = "BOT", i[i.ACTIVITY = 1] = "ACTIVITY", i);
 
-function E(e) {
+function I(e) {
     let {
         onClick: t,
         children: n,
@@ -39,17 +39,17 @@ function E(e) {
     })
 }
 
-function I(e) {
+function E(e) {
     var t;
     let {
         title: n,
         header: i,
         footer: a,
         info: C,
-        staticBannerSrc: I,
-        videoBannerSrc: T,
+        staticBannerSrc: E,
+        videoBannerSrc: v,
         bannerAspectRatio: b = 0,
-        iconSrc: v,
+        iconSrc: T,
         actions: S = [],
         primaryActionFirst: y = !1,
         trackingConfig: N,
@@ -71,8 +71,8 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, D = (0, u.bG)([m.A], () => m.A.useReducedMotion), O = l.useRef(!1), w = (0, d.K)(e => {
-        !1 === O.current && e && (N?.onView?.(), (0, g.wV)({
+    } = (0, h.A)(T ?? E), M = `linear-gradient(45deg, ${R}, ${P})`, D = (0, u.bG)([m.A], () => m.A.useReducedMotion), w = l.useRef(!1), O = (0, d.K)(e => {
+        !1 === w.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
             referrerId: N.referrerId,
@@ -80,11 +80,11 @@ function I(e) {
             guildId: N.guildId,
             channelId: N.channelId,
             messageId: N.messageId
-        }), O.current = !0)
-    }, void 0), k = null != I, U = null != T && !1 === D, G = k || U, B = 0 === b ? f.pv : f.$g, F = l.useRef(null), H = l.useCallback(() => {
+        }), w.current = !0)
+    }, void 0), k = null != E, U = null != v && !1 === D, G = k || U, B = 0 === b ? f.pv : f.$g, F = l.useRef(null), H = l.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = l.useMemo(() => !!U && new URL(T).pathname.endsWith(".gif"), [U, T]), W = l.useMemo(() => {
+    }, []), V = l.useMemo(() => !!U && new URL(v).pathname.endsWith(".gif"), [U, v]), W = l.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: N.id,
@@ -108,9 +108,9 @@ function I(e) {
         }
     }, [L, N]);
     return (0, r.jsxs)("div", {
-        ref: w,
+        ref: O,
         className: f.E6,
-        children: [G && (0, r.jsxs)(E, {
+        children: [G && (0, r.jsxs)(I, {
             onClick: q,
             className: s()(f.cy, B, {
                 [f.wk]: U
@@ -118,11 +118,11 @@ function I(e) {
             children: [U && (V ? (0, r.jsx)("div", {
                 className: f.O9,
                 style: {
-                    backgroundImage: `url(${T})`
+                    backgroundImage: `url(${v})`
                 }
             }) : (0, r.jsx)(o.A, {
                 ref: F,
-                src: T,
+                src: v,
                 mediaLayoutType: x.dG.MOSAIC,
                 loop: !0,
                 muted: !0,
@@ -130,7 +130,7 @@ function I(e) {
             })), k && (0, r.jsx)("div", {
                 className: f.LR,
                 style: {
-                    backgroundImage: `url(${I})`
+                    backgroundImage: `url(${E})`
                 },
                 onTransitionEnd: H
             })]
@@ -145,15 +145,15 @@ function I(e) {
                     color: "none",
                     className: f.wx,
                     children: i
-                }), (0, r.jsxs)(E, {
+                }), (0, r.jsxs)(I, {
                     onClick: W,
                     className: s()(f.FG, {
                         [f.ry]: null != W
                     }),
-                    children: [null != v && (0, r.jsx)("div", {
+                    children: [null != T && (0, r.jsx)("div", {
                         className: f._8,
                         style: {
-                            backgroundImage: `url(${v})`
+                            backgroundImage: `url(${T})`
                         }
                     }), (0, r.jsxs)("div", {
                         className: f.Qs,

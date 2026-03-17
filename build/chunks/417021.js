@@ -12,14 +12,14 @@ var i = t(627968),
     c = t(562153),
     u = t(183555),
     m = t(672385),
-    A = t(950191),
-    x = t(249790),
+    x = t(950191),
+    A = t(249790),
     p = t(946356),
     _ = t(254828),
     f = t(783123),
     h = t(652215),
-    j = t(996988),
-    g = t(985018),
+    g = t(996988),
+    j = t(985018),
     I = t(599929);
 
 function b(e) {
@@ -37,18 +37,17 @@ function b(e) {
     } = (0, r.Ay)([...T, L ? a.A.BLOCKED_PROFILE_MODAL : a.A.IGNORED_PROFILE_MODAL]), R = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
-        showGuildProfile: !0,
         guildId: E,
         channelId: b,
         messageId: v,
         roleId: N
     }), O = [{
         icon: l.yr3,
-        description: g.intl.string(g.t.kcuWva)
+        description: j.intl.string(j.t.kcuWva)
     }, {
         icon: l.yr3,
-        description: g.intl.string(L ? g.t.QxrDY1 : g.t.W6fjkS)
-    }], S = (0, A.Ay)(n.id, E), M = c.Ay.getName(S?.guildId, b, n), G = g.intl.formatToPlainString(g.t.KRe1Fk, {
+        description: j.intl.string(L ? j.t.QxrDY1 : j.t.W6fjkS)
+    }], S = (0, x.Ay)(n.id, E), M = c.Ay.getName(S?.guildId, b, n), G = j.intl.formatToPlainString(j.t.KRe1Fk, {
         name: M
     });
     return (0, i.jsx)(r.f5, {
@@ -65,12 +64,12 @@ function b(e) {
                 children: (0, i.jsxs)(p.A, {
                     user: n,
                     displayProfile: S,
-                    themeType: j.d.MODAL_V2,
+                    themeType: g.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: I.Tp
                     }), (0, i.jsxs)("div", {
                         className: I.Qs,
-                        children: [(0, i.jsx)(x.A, {
+                        children: [(0, i.jsx)(A.A, {
                             user: n,
                             guildId: E
                         }), (0, i.jsxs)("div", {
@@ -78,11 +77,11 @@ function b(e) {
                             children: [(0, i.jsx)(l.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
-                                children: g.intl.string(g.t.b33pLD)
+                                children: j.intl.string(j.t.b33pLD)
                             }), (0, i.jsx)(l.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
-                                children: g.intl.format(L ? g.t.T7QiLn : g.t.MnEowy, {
+                                children: j.intl.format(L ? j.t.T7QiLn : j.t.MnEowy, {
                                     username: M
                                 })
                             })]

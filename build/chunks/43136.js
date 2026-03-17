@@ -21,11 +21,11 @@ var i = n(627968),
     x = n(427262),
     f = n(218394),
     C = n(386952),
-    E = n(381969),
-    I = n(920814),
-    T = n(235665),
+    I = n(381969),
+    E = n(920814),
+    v = n(235665),
     b = n(985018),
-    v = n(425666);
+    T = n(425666);
 
 function S(e) {
     let {
@@ -33,7 +33,7 @@ function S(e) {
     } = e;
     return (0, i.jsxs)(o.DUT, {
         onClick: t,
-        className: v.dO,
+        className: T.dO,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/medium",
             color: "text-strong",
@@ -43,7 +43,7 @@ function S(e) {
             horizontal: !0
         }), (0, i.jsx)(A.A, {
             direction: A.A.Directions.RIGHT,
-            className: v.wY
+            className: T.wY
         })]
     })
 }
@@ -55,22 +55,22 @@ function y(e) {
     } = e, r = h.kt.useSetting(), l = (0, f.j)() && r, [a, s] = (0, m.A)(t, l), o = l ? (0, i.jsx)(u.A, {
         autoPlay: !0,
         loop: !0,
-        className: v.N4,
+        className: T.N4,
         width: 655,
         poster: (0, c.n)("server_products/storefront/default-header.png"),
         src: (0, c.n)("server_products/storefront/default-header.mov")
     }) : (0, i.jsx)("img", {
         src: (0, c.n)("server_products/storefront/default-header.png"),
         alt: "",
-        className: v.N4
+        className: T.N4
     });
     return (0, i.jsx)("div", {
         ref: a,
-        className: v.El,
+        className: T.El,
         children: null == s || n ? o : (0, i.jsx)("img", {
             src: s,
             alt: "",
-            className: v.N4
+            className: T.N4
         })
     })
 }
@@ -96,7 +96,7 @@ function N(e) {
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = r.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, E.k)(), M = R === I.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), D = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, I.k)(), M = R === E.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), D = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
@@ -108,7 +108,7 @@ function N(e) {
             children: [(0, i.jsx)(o.hKd, {
                 size: 4
             }), (0, i.jsx)(S, {
-                onClick: () => (0, T.A)({
+                onClick: () => (0, v.A)({
                     guildId: l
                 })
             })]
@@ -119,9 +119,9 @@ function N(e) {
         children: P ? M : b.intl.string(b.t["NY/FIW"])
     });
     return (0, i.jsxs)("div", {
-        className: v.kL,
+        className: T.kL,
         children: [(0, i.jsxs)("div", {
-            className: v.op,
+            className: T.op,
             children: [(0, i.jsx)("div", {
                 children: (0, i.jsx)(_.Ay, {
                     guild: t,

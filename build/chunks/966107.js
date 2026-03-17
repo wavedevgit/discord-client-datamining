@@ -2,10 +2,10 @@
 i.d(e, {
     JH: () => d,
     RK: () => o,
-    ST: () => A,
+    ST: () => m,
     Sk: () => u,
     UK: () => c,
-    xf: () => m
+    xf: () => A
 });
 var n = i(562465),
     l = i(73153),
@@ -52,7 +52,7 @@ function c(t) {
     })
 }
 
-function A(t) {
+function m(t) {
     return n.Bo.put({
         url: a.Rsh.CHANNEL_RECIPIENT_REJECT_BATCH(),
         body: {
@@ -62,6 +62,6 @@ function A(t) {
     })
 }
 
-function m() {
+function A() {
     r.A.getLocationMetadata()
 }

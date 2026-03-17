@@ -20,11 +20,11 @@ var i = n(627968),
     x = n(235986),
     f = n(242874),
     C = n(499454),
-    E = n(75825),
-    I = n(976860),
-    T = n(871123),
+    I = n(75825),
+    E = n(976860),
+    v = n(871123),
     b = n(317560),
-    v = n(780964),
+    T = n(780964),
     S = n(840065),
     y = n(961350),
     N = n(30793),
@@ -34,8 +34,8 @@ var i = n(627968),
     P = n(56739),
     M = n(954571),
     D = n(45938),
-    O = n(927578),
-    w = n(615396),
+    w = n(927578),
+    O = n(615396),
     k = n(427262),
     U = n(295843),
     G = n(652215),
@@ -68,7 +68,7 @@ class W extends r.PureComponent {
         return e >= _.Tm
     }
     handleViewInventory() {
-        (0, S.openUserSettings)(v.X.GIFT_PANEL, {
+        (0, S.openUserSettings)(T.X.GIFT_PANEL, {
             section: G.nc_.INVENTORY
         })
     }
@@ -107,13 +107,13 @@ class q extends r.Component {
         let {
             libraryApplication: t
         } = this.props;
-        e.preventDefault(), null != t && t.isHidden() ? (0, I.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, I.pX)(G.BVt.APPLICATION_LIBRARY, {
+        e.preventDefault(), null != t && t.isHidden() ? (0, E.pX)(G.BVt.APPLICATION_LIBRARY_SETTINGS) : (0, E.pX)(G.BVt.APPLICATION_LIBRARY, {
             state: {
                 applicationId: null != t ? t.id : void 0
             }
         })
     };handleVerificationClick = e => {
-        e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(v.X.ACCOUNT_PANEL, {
+        e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(T.X.ACCOUNT_PANEL, {
             section: G.nc_.ACCOUNT
         })
     };handleAccept = e => {
@@ -144,13 +144,13 @@ class q extends r.Component {
             sku: n,
             skuApplication: i
         } = this.props;
-        null != n && (0, T.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, b.R)({
+        null != n && (0, v.bF)(n) && null != i && null != i.guildId ? (e.preventDefault(), (0, b.R)({
             skuId: n.id,
             applicationId: i.id,
             guildId: i.guildId,
             isStorefront: !1,
             analyticsLocations: [p.A.GIFT_CODE_EMBED]
-        })) : null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(v.X.NITRO_PANEL, {
+        })) : null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(T.X.NITRO_PANEL, {
             section: G.nc_.PREMIUM
         }))
     };handleClaimPromotion = e => {
@@ -198,7 +198,7 @@ class q extends r.Component {
         } = this.props, l = {
             onClick: this.handleAccept,
             color: c.$n.Colors.BRAND
-        }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && r || e.isExistingPremiumSubscriptionDisallowed && (0, O.TW)(n);
+        }, a = !e.isSubscription && null != t || !e.isSelfRedeemable && r || e.isExistingPremiumSubscriptionDisallowed && (0, w.TW)(n);
         return (e.redeemed || a || e.isClaimed || !n.verified) && (l.color = c.$n.Colors.BRAND, l.disabled = !0), (0, i.jsx)(c.$n, {
             ...l,
             className: (0, A.hU)(e) ? H.UQ : null,
@@ -236,7 +236,7 @@ class q extends r.Component {
         let s = i.isPreorder() ? F.intl.formatToPlainString(F.t.evinTd, {
             name: i.name
         }) : i.name;
-        if (e.redeemed) return e.isSubscription || (0, A.hU)(e) || (0, T.bF)(i) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
+        if (e.redeemed) return e.isSubscription || (0, A.hU)(e) || (0, v.bF)(i) ? F.intl.string(F.t.mVC3Cv) : F.intl.format(F.t["ss/L+/"], {
             skuName: s,
             onViewInLibrary: this.handleViewLibrary
         });
@@ -307,7 +307,7 @@ class q extends r.Component {
             className: r,
             children: [n && (0, i.jsx)(P.A, {
                 className: H.nr
-            }), null != e.giftStyle && (0, i.jsx)(E.A, {
+            }), null != e.giftStyle && (0, i.jsx)(I.A, {
                 defaultAnimationState: e.redeemed ? f.oA.LOOP : f.oA.IDLE,
                 giftStyle: e.giftStyle,
                 className: l
@@ -328,7 +328,7 @@ class q extends r.Component {
             sku: n
         } = this.props;
         if (null == e) return null;
-        let r = null != e.giftStyle && !(0, T.bF)(n);
+        let r = null != e.giftStyle && !(0, v.bF)(n);
         return (0, i.jsx)(U.k, {
             skuId: e.skuId,
             onEmbedClick: this.handleEmbedClick,
@@ -381,7 +381,7 @@ let Y = (0, h.A)((0, m.A)(q)),
         } = (0, d.cf)([N.A], () => ({
             giftCode: N.A.get(t),
             resolved: N.A.getIsResolved(t)
-        })), a = (0, d.bG)([L.default], () => null != r && null != r.userId ? L.default.getUser(r.userId) : null), s = (0, d.bG)([R.A], () => null != r ? R.A.get(r.skuId) : null), o = (0, d.bG)([j.A], () => null != s && r?.entitlementBranches != null ? D.YI(r.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, w.zz)(r?.subscriptionPlanId), _ = (0, d.bG)([y.default], () => null != r ? y.default.getId() === r.userId : y.default.getId() === n.id);
+        })), a = (0, d.bG)([L.default], () => null != r && null != r.userId ? L.default.getUser(r.userId) : null), s = (0, d.bG)([R.A], () => null != r ? R.A.get(r.skuId) : null), o = (0, d.bG)([j.A], () => null != s && r?.entitlementBranches != null ? D.YI(r.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, O.zz)(r?.subscriptionPlanId), _ = (0, d.bG)([y.default], () => null != r ? y.default.getId() === r.userId : y.default.getId() === n.id);
         return (0, i.jsx)(Y, {
             ...e,
             skuApplication: c,

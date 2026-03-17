@@ -14,8 +14,8 @@ var n = i(627968),
     A = i(518477),
     m = i(985018),
     p = i(845913),
-    x = i(910200);
-let g = {
+    g = i(910200);
+let x = {
         [A.jM.WIDGET_ADDED]: {
             message: m.intl.string(m.t.fFP1Uy),
             icon: (0, n.jsx)(d.A9s, {
@@ -58,7 +58,7 @@ let g = {
             type: t
         } = e;
         return (0, n.jsxs)("div", {
-            className: a()(x.oR, p.oR),
+            className: a()(g.oR, p.oR),
             "data-type": t,
             children: [(0, n.jsx)("div", {
                 className: p.RC,
@@ -74,11 +74,11 @@ let g = {
         let {
             className: l,
             onAutoHide: i
-        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, x] = t.useState(!1), [f, j] = t.useState(null);
+        } = e, s = (0, u.fu)(), A = (0, o.bG)([c.A], () => c.A.useReducedMotion), [m, g] = t.useState(!1), [f, I] = t.useState(null);
         t.useEffect(() => {
-            null !== s ? (x(!0), j(g[s]), d.ORC.announce(g[s].message)) : x(!1)
+            null !== s ? (g(!0), I(x[s]), d.ORC.announce(x[s].message)) : g(!1)
         }, [s]);
-        let I = (0, d.pnh)(m, {
+        let j = (0, d.pnh)(m, {
             from: {
                 transform: A ? "translateY(0)" : "translateY(-12px)",
                 opacity: 0
@@ -106,7 +106,7 @@ let g = {
                 return () => clearTimeout(e)
             }
         }, [m, i]), (0, n.jsx)(n.Fragment, {
-            children: I((e, i) => i && null !== f && (0, n.jsx)(r.animated.div, {
+            children: j((e, i) => i && null !== f && (0, n.jsx)(r.animated.div, {
                 className: a()(l, p.Jt),
                 style: e,
                 children: (0, n.jsx)(h, {

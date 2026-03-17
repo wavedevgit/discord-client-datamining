@@ -24,9 +24,9 @@ function A(e) {
             banned: f,
             channelId: C
         } = e,
-        E = (0, l.bG)([d.default], () => d.default.getId()),
-        I = m.Ay.useName(x),
-        T = E === x.id,
+        I = (0, l.bG)([d.default], () => d.default.getId()),
+        E = m.Ay.useName(x),
+        v = I === x.id,
         b = (0, l.bG)([c.A, u.A], () => {
             let e = c.A.getChannel(C);
             if (null == e) return !1;
@@ -38,8 +38,8 @@ function A(e) {
             }
             return u.A.can(h.xBc.SEND_MESSAGES, e)
         });
-    return T ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != I && b ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
-        username: I
+    return v ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != E && b ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
+        username: E
     }), n = (0, i.jsx)(r.$nd, {
         onClick: function() {
             let {

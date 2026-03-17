@@ -1,6 +1,6 @@
 /** chunk id: 291335 params = (module,exports,require) **/
 i.d(l, {
-    A: () => I
+    A: () => j
 });
 var n = i(627968);
 i(64700);
@@ -15,12 +15,12 @@ var t = i(503698),
     A = i(773669),
     m = i(427157),
     p = i(967198),
-    x = i(183555),
-    g = i(488995),
+    g = i(183555),
+    x = i(488995),
     h = i(985018),
     f = i(882119);
 
-function j(e) {
+function I(e) {
     let {
         applicationRoleConnection: l,
         locale: i,
@@ -43,7 +43,7 @@ function j(e) {
                 className: f.OB,
                 onClick: () => {
                     t?.(), (0, c.transitionToGlobalDiscovery)({
-                        tab: g.GlobalDiscoveryTab.APPS,
+                        tab: x.GlobalDiscoveryTab.APPS,
                         applicationId: l.application.id,
                         newSessionState: {
                             entrypoint: {
@@ -77,19 +77,19 @@ function j(e) {
     })
 }
 
-function I(e) {
+function j(e) {
     let {
         applicationRoleConnections: l,
         className: i,
         onClose: t
     } = e, {
         trackUserProfileAction: r
-    } = (0, x.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
+    } = (0, g.NJ)(), o = (0, a.bG)([A.default], () => A.default.locale), d = (0, a.bG)([p.A], () => p.A.getGuildId());
     return 0 === l.length ? null : (0, n.jsx)("ul", {
         className: s()(f.kL, i),
         children: l.map((e, l) => (0, n.jsx)("li", {
             className: f.FI,
-            children: (0, n.jsx)(j, {
+            children: (0, n.jsx)(I, {
                 applicationRoleConnection: e,
                 locale: o,
                 onApplicationClicked: () => {
