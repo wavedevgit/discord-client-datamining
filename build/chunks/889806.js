@@ -291,7 +291,7 @@ function B(e) {
         H(e)
     }, [])), {
         showMenuItemPopover: K,
-        markMenuItemPopoverAsDismissed: Y
+        markMenuItemPopoverAsDismissed: W
     } = (0, f.z)({
         location: "TextChannel",
         isChannelSelected: d,
@@ -316,7 +316,7 @@ function B(e) {
         hasChannelInfo: null != w,
         enableActivities: G,
         showMenuItemPopover: K,
-        markMenuItemPopoverAsDismissed: Y,
+        markMenuItemPopoverAsDismissed: W,
         channelItemRef: F
     })
 }

@@ -3,8 +3,8 @@ n.d(t, {
     R: () => h
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(497766);
+    l = n(64700),
+    r = n(497766);
 n(311907), n(859703);
 var a = n(341915),
     s = n(890687),
@@ -36,14 +36,14 @@ function h(e) {
             location: n,
             quest: t
         })
-    }), [T, S] = r.useState(!1), y = () => S(!0), N = () => S(!1), j = C ?? _._B;
+    }), [T, S] = l.useState(!1), y = () => S(!0), N = () => S(!1), j = C ?? _._B;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
         questContentPosition: p,
         trackGuildAndChannelMetadata: n === a.uF.QUESTS_EMBED,
         sourceQuestContent: g,
-        children: e => (0, i.jsx)(l.animated.div, {
+        children: e => (0, i.jsx)(r.animated.div, {
             style: {
                 maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : I.to({
                     range: [0, 1],

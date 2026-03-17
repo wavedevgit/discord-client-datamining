@@ -4,9 +4,9 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(851907),
-    a = n(587895),
+var a = n(397927),
+    r = n(851907),
+    l = n(587895),
     s = n(200330),
     o = n(321987),
     d = n(595244),
@@ -36,34 +36,34 @@ let p = (0, h.A)(e => {
         integrationType: v,
         pid: y,
         signal: b
-    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? a.A.getApplication(t);
-    return new Promise((e, a) => {
+    } = e, O = `OAuth2Authorize_${t}_${C}_${T}`, L = null != v ? n?.get(v) : void 0, R = L?.application ?? l.A.getApplication(t);
+    return new Promise((e, l) => {
         let L = (0, _.d5)(y),
-            P = r.SYi;
-        null != R && null != (0, l.Ay)({
+            P = a.SYi;
+        null != R && null != (0, r.Ay)({
             application: R,
             channelId: T
-        }) ? P = r.KX8 : L.context === m.BRT.POPOUT && (P = r.KX8);
+        }) ? P = a.KX8 : L.context === m.BRT.POPOUT && (P = a.KX8);
         let D = !1,
-            j = n => {
+            M = n => {
                 let {
-                    clientId: l,
+                    clientId: r,
                     location: s
                 } = n;
-                if (null == l || l === t) {
+                if (null == r || r === t) {
                     if (D = !0, null == s) {
-                        a(new A.A({
+                        l(new A.A({
                             errorCode: m.Lw6.OAUTH2_ERROR
                         }, "OAuth2 Error: No location provided")), L.lock();
                         return
-                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, r.qfG)(e => (0, i.jsx)(d.Sm, {
+                    }(e(s), null == p || null == R) ? L.lock(): null == new URL(s).searchParams.get("error") ? (0, a.qfG)(e => (0, i.jsx)(d.Sm, {
                         application: R,
                         ...e
                     }), {
                         onCloseCallback: () => {
                             L.lock()
                         }
-                    }, P) : (0, r.qfG)(e => (0, i.jsx)(d.xb, {
+                    }, P) : (0, a.qfG)(e => (0, i.jsx)(d.xb, {
                         ...e
                     }), {
                         onCloseCallback: () => {
@@ -73,10 +73,10 @@ let p = (0, h.A)(e => {
                 }
             },
             {
-                cleanup: M
+                cleanup: j
             } = function(e, t) {
                 function n() {
-                    (0, r.OoC)(e) && (0, r.qfG)(e => (0, i.jsx)(o.f, {
+                    (0, a.OoC)(e) && (0, a.qfG)(e => (0, i.jsx)(o.f, {
                         ...e,
                         title: g.intl.string(g.t.j2d6Km),
                         subtitle: g.intl.string(g.t["4LKmN5"]),
@@ -92,13 +92,13 @@ let p = (0, h.A)(e => {
                     }
                 }
             }(O, b);
-        (0, r.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
+        (0, a.qfG)(e => (0, i.jsx)(s.OAuth2AuthorizeModal, {
             ...e,
             authorizations: n,
             clientId: t,
             scopes: c ?? [],
             disclosures: x ?? [],
-            callback: j,
+            callback: M,
             responseType: h,
             redirectUri: p,
             codeChallenge: E,
@@ -114,7 +114,7 @@ let p = (0, h.A)(e => {
         }), {
             modalKey: O,
             onCloseCallback: () => {
-                M(), D || (a(new A.A({
+                j(), D || (l(new A.A({
                     errorCode: m.Lw6.OAUTH2_ERROR
                 }, "User cancelled authorization")), L.lock())
             }
@@ -122,7 +122,7 @@ let p = (0, h.A)(e => {
     })
 }, function(e, t, n) {
     if ((0, _.kS)(n) || !c.isPlatformEmbedded) return;
-    let i = (0, l.Ay)({
+    let i = (0, r.Ay)({
         application: e,
         channelId: t
     });

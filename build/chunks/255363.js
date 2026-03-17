@@ -1,12 +1,12 @@
 /** chunk id: 255363 params = (module,exports,require) **/
-n.d(t, {
-    N: () => r
+s.d(e, {
+    N: () => n
 });
-var i = n(73153);
+var i = s(73153);
 
-function r(e) {
+function n(t) {
     i.h.wait(() => i.h.dispatch({
         type: "APPLICATION_STORE_LOCATION_CHANGE",
-        location: e
+        location: t
     }))
 }

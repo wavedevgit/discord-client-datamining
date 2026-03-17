@@ -40,10 +40,10 @@ let I = e => {
             e.onload = null
         }
     }, []);
-    let y = l?.skuId ?? "",
+    let N = l?.skuId ?? "",
         {
-            handleCardVisibilityChange: N
-        } = (0, f.Z)(y, "home", "marketing wide banner"),
+            handleCardVisibilityChange: y
+        } = (0, f.Z)(N, "home", "marketing wide banner"),
         R = (0, h.uM)(),
         {
             bannerURL: B
@@ -60,10 +60,10 @@ let I = e => {
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
-        U = r.useCallback(e => {
+        F = r.useCallback(e => {
             g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
-                sku_id: y,
+                sku_id: N,
                 page_type: s,
                 page_section: R?.pageSection,
                 page_category: R?.pageCategory,
@@ -71,10 +71,10 @@ let I = e => {
                 tile_position: String(R?.tilePosition),
                 cta_name: e
             })
-        }, [R, y, s]),
-        F = r.useCallback(function() {
+        }, [R, N, s]),
+        G = r.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-            if (U(e), null != t.ctaRoute && "" !== t.ctaRoute) {
+            if (F(e), null != t.ctaRoute && "" !== t.ctaRoute) {
                 let e = t.ctaRoute;
                 if (e.includes("game-shop")) {
                     let t = e.match(/\/channels\/([0-9]+)\/game-shop\/([0-9]+)/);
@@ -88,9 +88,9 @@ let I = e => {
                     }
                 } else(0, u.pX)(e)
             }
-        }, [t.ctaRoute, U]);
+        }, [t.ctaRoute, F]);
     if (null == B || T) return null;
-    let G = a()(v.nM, v.Tq, v.TS, v.YB, {
+    let U = a()(v.nM, v.Tq, v.TS, v.YB, {
             [v._1]: M,
             [v.vb]: P
         }),
@@ -149,7 +149,7 @@ let I = e => {
                         children: [(0, n.jsx)(c.Button, {
                             variant: "overlay-primary",
                             onClick: e => {
-                                e.stopPropagation(), F(t.ctaText ?? S.intl.string(S.t.jVcuVY))
+                                e.stopPropagation(), G(t.ctaText ?? S.intl.string(S.t.jVcuVY))
                             },
                             text: t.ctaText ?? S.intl.string(S.t.jVcuVY)
                         }), H && (0, n.jsx)("img", {
@@ -165,16 +165,16 @@ let I = e => {
         theme: M ? void 0 : A.NJ.DARK,
         children: e => (0, n.jsx)(o.L, {
             innerRef: I,
-            onChange: N,
+            onChange: y,
             threshold: 0,
             children: P ? (0, n.jsx)(c.DUT, {
                 innerRef: I,
-                onClick: () => F(null),
-                className: a()(e, G),
+                onClick: () => G(null),
+                className: a()(e, U),
                 children: V
             }) : (0, n.jsx)("div", {
                 ref: I,
-                className: a()(e, G),
+                className: a()(e, U),
                 children: V
             })
         })

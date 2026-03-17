@@ -3,17 +3,17 @@ n.d(t, {
     A: () => o
 });
 var i = n(136722),
-    r = n(311907),
-    l = n(808728),
-    a = n(576705),
+    a = n(311907),
+    r = n(808728),
+    l = n(576705),
     s = n(652215);
 
 function o(e) {
-    let t = (0, r.bG)([l.Ay], () => l.Ay.getChannels(e)[l.I6] ?? [], [e]);
+    let t = (0, a.bG)([r.Ay], () => r.Ay.getChannels(e)[r.I6] ?? [], [e]);
     return 0 === t.length ? 0 : t.filter(e => {
         let {
             channel: t
         } = e;
-        return a.A.can(i.kg(s.xBc.SEND_MESSAGES, s.xBc.VIEW_CHANNEL), t)
+        return l.A.can(i.kg(s.xBc.SEND_MESSAGES, s.xBc.VIEW_CHANNEL), t)
     }).length
 }

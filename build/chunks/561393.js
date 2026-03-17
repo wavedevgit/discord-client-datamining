@@ -3,8 +3,8 @@ n.d(t, {
     A: () => s
 });
 var i = n(627968),
-    r = n(792620),
-    l = n(96146),
+    l = n(792620),
+    r = n(96146),
     a = n(836261);
 let s = function(e) {
     let {
@@ -17,9 +17,9 @@ let s = function(e) {
         analyticsCtxQuestContentRowIndex: u,
         size: _
     } = e;
-    return (0, r.t)({
+    return (0, l.t)({
         quest: t
-    }) || (0, r.g5)(t) ? (0, i.jsx)(a.A, {
+    }) || (0, l.g5)(t) ? (0, i.jsx)(a.A, {
         quest: t,
         surface: s,
         size: _,
@@ -27,7 +27,7 @@ let s = function(e) {
         analyticsCtxSourceQuestContent: d,
         analyticsCtxQuestContentPosition: c,
         analyticsCtxQuestContentRowIndex: u
-    }) : (0, i.jsx)(l.Ay, {
+    }) : (0, i.jsx)(r.Ay, {
         quest: t,
         taskType: n,
         size: _,

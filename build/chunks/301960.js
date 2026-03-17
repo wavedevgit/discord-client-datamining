@@ -185,18 +185,18 @@ function F(e) {
             messageId: n.id,
             interactionData: n.interactionData
         })), [a, n.id, n.interactionData]),
-        w = (0, N.Am)(n),
-        H = w?.type === m.G4.APPLICATION_COMMAND && null != w.target_user ? new p.A(w.target_user) : null,
-        V = w?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
+        H = (0, N.Am)(n),
+        w = H?.type === m.G4.APPLICATION_COMMAND && null != H.target_user ? new p.A(H.target_user) : null,
+        V = H?.type === m.G4.APPLICATION_COMMAND && null != n.messageReference && null != e.renderTargetMessage,
         q = (0, M.d8)(n.interaction?.user, a),
-        X = (0, M.d8)(H, a),
+        X = (0, M.d8)(w, a),
         K = l.useMemo(() => e.compact ? (0, U.A)((0, O.i$)(d()(), "LT")) : null, [e.compact]),
-        z = (0, A.Gp)(a.id),
-        Y = n.interaction;
-    if (null == Y || null == q) return null;
+        Y = (0, A.Gp)(a.id),
+        z = n.interaction;
+    if (null == z || null == q) return null;
     let W = () => {
-        let t = b(e, Y.user, 0, q, e => F(e, Y.user, [I.A.AVATAR]), D),
-            n = k(e, Y.user, 0, q, e => F(e, Y.user));
+        let t = b(e, z.user, 0, q, e => F(e, z.user, [I.A.AVATAR]), D),
+            n = k(e, z.user, 0, q, e => F(e, z.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
@@ -278,11 +278,11 @@ function F(e) {
         }
     }), V && null != e.renderTargetMessage ? t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), e.renderTargetMessage()]
-    }) : null != H && (t = (0, i.jsxs)(i.Fragment, {
+    }) : null != w && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
-            if (null == H) return null;
-            let t = b(e, H, 1, X, e => F(e, H, [I.A.AVATAR]), D),
-                n = k(e, H, 1, X, e => F(e, H));
+            if (null == w) return null;
+            let t = b(e, w, 1, X, e => F(e, w, [I.A.AVATAR]), D),
+                n = k(e, w, 1, X, e => F(e, w));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
             }, "target")
@@ -303,7 +303,7 @@ function F(e) {
                 guildId: a.guild_id
             })
         };
-        t = z ? L.intl.format(L.t.kfV8WM, {
+        t = Y ? L.intl.format(L.t.kfV8WM, {
             userHook: W,
             activityHook: () => (0, i.jsx)(_.DUT, {
                 tag: "span",

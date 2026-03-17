@@ -6,8 +6,8 @@ n.d(t, {
     j8: () => N
 }), n(801541);
 var i = n(889137),
-    r = n(966974),
-    l = n(775602),
+    l = n(966974),
+    r = n(775602),
     a = n(508675),
     s = n(7584),
     o = n(229527),
@@ -51,9 +51,9 @@ function N(e, t) {
         poll: i
     } = e;
     if (null == i) return;
-    let r = e.state === v.cmJ.SENT,
-        l = r ? n ?? (0, E.J)(i.expiry) : "",
-        a = null == l && r,
+    let l = e.state === v.cmJ.SENT,
+        r = l ? n ?? (0, E.J)(i.expiry) : "",
+        a = null == r && l,
         {
             selectedAnswerIds: s,
             submitting: m,
@@ -70,26 +70,26 @@ function N(e, t) {
         C = g.some(e => !0 === e.me_vote),
         I = !h && C,
         b = I || a || p,
-        S = r && x && (!C || h || b),
+        S = l && x && (!C || h || b),
         N = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         j = null != N ? u.Ay.getSelfMember(N) : null,
         L = (0, o.TR)(j),
         R = (0, d.Z)(j),
-        P = !m && f && !I && r && !L && !R;
+        P = !m && f && !I && l && !L && !R;
     return {
         poll: i,
         canTapAnswers: S,
-        canRemoveVote: I && r && !a,
+        canRemoveVote: I && l && !a,
         canShowVoteCounts: b,
         canSubmitVote: P,
-        expirationLabel: l,
+        expirationLabel: r,
         hasSelectedAnswer: f,
         hasVoted: I,
         hasVoteRecorded: C,
         isEditingVote: h,
         isExpired: a,
         isInteractive: x,
-        isSent: r,
+        isSent: l,
         reactions: g,
         selectedAnswerIds: s,
         submitting: m,
@@ -109,7 +109,7 @@ function j(e, t) {
     if (null == u) return;
     let _ = m.default.getCurrentUser();
     if (null == _) return;
-    let A = l.A.useReducedMotion,
+    let A = r.A.useReducedMotion,
         E = c.A.getChannel(e.getChannelId())?.getGuildId?.(),
         v = (0, C.T)(_, E),
         T = u.answers,
@@ -122,8 +122,8 @@ function j(e, t) {
         canTapAnswers: L,
         canRemoveVote: R,
         canShowVoteCounts: P,
-        canSubmitVote: M,
-        expirationLabel: D = b.intl.string(b.t["e+J3JZ"]),
+        canSubmitVote: D,
+        expirationLabel: M = b.intl.string(b.t["e+J3JZ"]),
         hasSelectedAnswer: w,
         hasVoted: O,
         isEditingVote: k,
@@ -140,11 +140,11 @@ function j(e, t) {
         let t = S(B, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
-        let t, l = `${e.answer_id}`,
-            o = S(B, l),
+        let t, r = `${e.answer_id}`,
+            o = S(B, r),
             d = o?.count_details?.vote ?? 0,
             c = 0 === q ? 0 : d / q,
-            u = F.has(l),
+            u = F.has(r),
             _ = d >= z && 0 !== d,
             m = O && (o?.me_vote ?? !1),
             g = (t = {
@@ -180,7 +180,7 @@ function j(e, t) {
                 showResults: !0
             }, () => "notVoted").otherwise(() => "normalVote"));
         return {
-            answerId: l,
+            answerId: r,
             pollMedia: {
                 text: e.poll_media.text,
                 emoji: function(e) {
@@ -191,17 +191,17 @@ function j(e, t) {
                     if (null == e) return;
                     let i = e.animated;
                     null == i && null != e.id && (i = a.Ay.getCustomEmojiById(e.id)?.animated ?? !1);
-                    let r = t && (i ?? !1);
+                    let l = t && (i ?? !1);
                     return {
                         id: null == e.id ? null : `${e.id}`,
                         name: e.name,
                         displayName: null == e.id ? s.Ay.convertSurrogateToName(e.name) : e.name,
                         src: null == e.id ? p.Ay.getURL(e.name) : h.Ay.getEmojiURL({
                             id: e.id,
-                            animated: r,
+                            animated: l,
                             size: n
                         }),
-                        animated: r
+                        animated: l
                     }
                 }(e.poll_media.emoji, {
                     animateEmoji: n
@@ -215,13 +215,13 @@ function j(e, t) {
             style: g,
             shouldAnimateTransition: H && !A,
             votesPercentage: Math.round(100 * c),
-            votes: (0, i.YW)(y).with(r.Z.IMAGE_ONLY_ANSWERS, () => `(${d.toLocaleString()})`).otherwise(() => b.intl.formatToPlainString(b.t.XRkuof, {
+            votes: (0, i.YW)(y).with(l.Z.IMAGE_ONLY_ANSWERS, () => `(${d.toLocaleString()})`).otherwise(() => b.intl.formatToPlainString(b.t.XRkuof, {
                 count: d
             }))
         }
     }), K = (0, i.YW)({
         isExpired: U,
-        canSubmitVote: M,
+        canSubmitVote: D,
         hasVoted: O,
         isEditingVote: k,
         canRemoveVote: R,
@@ -256,7 +256,7 @@ function j(e, t) {
     })).otherwise(() => ({
         label: b.intl.string(b.t.JwkNU4),
         presentation: "button",
-        enabled: M,
+        enabled: D,
         type: "submit"
     })), J = (0, g.isIOS)() ? b.intl.string(b.t["PVATM/"]) : b.intl.string(b.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
@@ -278,7 +278,7 @@ function j(e, t) {
         type: "cancel"
     })).otherwise(() => ({
         label: Y,
-        secondaryLabel: D,
+        secondaryLabel: M,
         accessibilityHint: J,
         presentation: "text",
         enabled: !0,

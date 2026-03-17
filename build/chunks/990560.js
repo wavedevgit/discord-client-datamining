@@ -3,8 +3,8 @@ n.d(t, {
     A: () => R
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(846293),
     s = n(820284),
     o = n(688810),
@@ -38,14 +38,14 @@ function R(e) {
         getAcceptInviteContext: R
     } = e, {
         invite: P,
-        inviteError: M
-    } = (0, l.cf)([A.A], () => ({
+        inviteError: D
+    } = (0, r.cf)([A.A], () => ({
         invite: A.A.getInvite(t),
         inviteError: A.A.getInviteError(t)
-    }), [t]), D = null == P;
-    r.useEffect(() => {
-        D && a.Ay.resolveInvite(t)
-    }, [t, D]);
+    }), [t]), M = null == P;
+    l.useEffect(() => {
+        M && a.Ay.resolveInvite(t)
+    }, [t, M]);
     let w = P ?? {
             state: L.elq.RESOLVING,
             code: ""
@@ -53,9 +53,9 @@ function R(e) {
         {
             analyticsLocations: O
         } = (0, o.Ay)(),
-        k = (0, l.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
-        U = (0, l.bG)([p.default], () => p.default.getId()),
-        G = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(w.guild_scheduled_event?.id), [w]),
+        k = (0, r.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
+        U = (0, r.bG)([p.default], () => p.default.getId()),
+        G = (0, r.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(w.guild_scheduled_event?.id), [w]),
         B = () => {
             null != w.channel && a.Ay.transitionToInviteSync(w)
         },
@@ -93,7 +93,7 @@ function R(e) {
         case L.elq.ERROR:
             H = (0, i.jsx)(C.A, {
                 author: n.author,
-                inviteError: M
+                inviteError: D
             });
             break;
         default:

@@ -31,8 +31,8 @@ var n = s(627968),
     k = s(613258),
     T = s(152568),
     O = s(758836),
-    y = s(652215),
-    N = s(985018),
+    N = s(652215),
+    y = s(985018),
     R = s(201073);
 let B = e => {
         let {
@@ -43,7 +43,7 @@ let B = e => {
         } = e, {
             noCache: d,
             includeUnpublished: _
-        } = (0, E.A)(), [x, k] = r.useState(!1), y = (0, g.uM)(), B = y?.sessionId ?? "";
+        } = (0, E.A)(), [x, k] = r.useState(!1), N = (0, g.uM)(), B = N?.sessionId ?? "";
         r.useEffect(() => {
             (0, p.z)({
                 sessionId: B,
@@ -92,7 +92,7 @@ let B = e => {
                 categories: []
             }), (0, n.jsx)(A.A, {
                 isLoading: M,
-                title: c === O.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
+                title: c === O.G2.ORBS ? y.intl.string(y.t.dFgeuZ) : y.intl.string(y.t.NSv5KV),
                 numVisibleItems: s,
                 tab: c
             })]
@@ -120,7 +120,7 @@ let B = e => {
                     case i.g.FEED:
                         let h = e.sortedSkuIds;
                         _ = (0, n.jsx)(A.A, {
-                            title: c === O.G2.ORBS ? N.intl.string(N.t.dFgeuZ) : N.intl.string(N.t.NSv5KV),
+                            title: c === O.G2.ORBS ? y.intl.string(y.t.dFgeuZ) : y.intl.string(y.t.NSv5KV),
                             isLoading: l,
                             numVisibleItems: s,
                             sortedSkuIds: h,
@@ -239,15 +239,15 @@ let B = e => {
                         className: R.R$,
                         children: [(0, n.jsx)(c.Heading, {
                             variant: "heading-md/semibold",
-                            children: N.intl.string(N.t.Yr70c4)
+                            children: y.intl.string(y.t.Yr70c4)
                         }), (0, n.jsx)(c.Button, {
                             variant: "primary",
-                            text: N.intl.string(N.t.AfrvRD),
+                            text: y.intl.string(y.t.AfrvRD),
                             onClick: () => {
                                 t({
                                     sourceButton: "shop all button",
                                     shouldAnimate: !0
-                                }), _.default.track(y.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                                }), _.default.track(N.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                                     collectibles_shop_session_id: u?.sessionId,
                                     page_type: s,
                                     page_category: s === O.G2.HOME ? void 0 : u?.pageCategory,

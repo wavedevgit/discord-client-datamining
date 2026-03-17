@@ -6,7 +6,7 @@ n.d(t, {
 function i(e) {
     let t, n = !1;
     return function() {
-        for (var i = arguments.length, r = Array(i), l = 0; l < i; l++) r[l] = arguments[l];
-        return n || (n = !0, t = e(...r)), t
+        for (var i = arguments.length, a = Array(i), r = 0; r < i; r++) a[r] = arguments[r];
+        return n || (n = !0, t = e(...a)), t
     }
 }

@@ -54,7 +54,7 @@ function b(e) {
         onMouseLeave: K
     } = (0, m.A)(200, 300);
 
-    function Y(e) {
+    function W(e) {
         null != L && (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -68,7 +68,7 @@ function b(e) {
         })
     }
 
-    function W() {
+    function Y() {
         (0, u.X)(v, u.O.SOUNDBOARD), S === I.P.SOUNDBOARD ? (T?.(void 0), K()) : (null != S ? (j(), F()) : j(), T?.(I.P.SOUNDBOARD))
     }
     let z = s.useRef(null);
@@ -111,8 +111,8 @@ function b(e) {
             label: M ? N.intl.string(N.t["Ox4/zU"]) : D ? N.intl.string(N.t["+YBKYI"]) : G ? N.intl.string(N.t.X1lQli) : void 0,
             iconComponent: y,
             disabled: U,
-            onContextMenu: Y,
-            onClick: W,
+            onContextMenu: W,
+            onClick: Y,
             onMouseEnter: e => {
                 R(), "focus" !== e.type && F()
             },

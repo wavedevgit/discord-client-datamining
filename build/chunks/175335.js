@@ -3,9 +3,9 @@ n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(110259),
     o = n(311907),
     d = n(827734),
@@ -30,13 +30,13 @@ function S(e) {
     let {
         guildId: t
     } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
-        loading: l,
+        loading: r,
         subscriptionsSettings: S
     } = (0, C.G)(t), {
         listingsLoaded: y
     } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
-    }), j = r.useCallback(async () => {
+    }), j = l.useCallback(async () => {
         f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
             ...(0, _.H$)(t)
         }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
@@ -48,7 +48,7 @@ function S(e) {
         disableTrack: null == n
     });
     let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
-    return l || !y ? (0, i.jsx)("div", {
+    return r || !y ? (0, i.jsx)("div", {
         className: a()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == S ? null : (0, i.jsxs)("div", {

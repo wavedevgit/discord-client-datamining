@@ -3,10 +3,10 @@ n.d(t, {
     A: () => T
 });
 var i = n(64700),
-    r = n(498419),
-    l = n.n(r),
-    a = n(481613),
-    s = n.n(a),
+    a = n(498419),
+    r = n.n(a),
+    l = n(481613),
+    s = n.n(l),
     o = n(311907),
     d = n(800828),
     c = n(912309),
@@ -23,7 +23,7 @@ let f = new Set(["Blink", "Gecko", "WebKit"]),
     C = E.tEg;
 if (m.isPlatformEmbedded) C = e => g.Ay.setBadge(e);
 else if (f.has(s().layout)) {
-    let e = new(l())({
+    let e = new(r())({
         animation: "none"
     });
     C = t => {
@@ -40,8 +40,8 @@ function T() {
                 t = (0, c.dH)([h.A, d.A]),
                 n = u.default.hasAnyUnread(),
                 i = A.A.getDisableUnreadBadge(),
-                r = e + t;
-            return 0 === r && n && !i && (r = -1), r
+                a = e + t;
+            return 0 === a && n && !i && (a = -1), a
         });
     i.useEffect(() => {
         if (!e) return;

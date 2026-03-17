@@ -3,21 +3,21 @@ n.d(t, {
     Cf: () => u,
     RA: () => a,
     _B: () => c,
-    a3: () => r,
+    a3: () => l,
     es: () => s,
-    rW: () => l,
+    rW: () => r,
     tN: () => _,
     uR: () => d,
     wl: () => o
 });
 var i = n(341915);
 
-function r(e) {
+function l(e) {
     return [i.uF.GIFT_INVENTORY_FOR_YOU, i.uF.GIFT_INVENTORY_OTHER].includes(e)
 }
 
-function l(e) {
-    return e === i.uF.GIFT_INVENTORY_FOR_YOU || !r(e)
+function r(e) {
+    return e === i.uF.GIFT_INVENTORY_FOR_YOU || !l(e)
 }
 
 function a(e) {
@@ -27,7 +27,7 @@ function a(e) {
     } = e, {
         userStatus: i
     } = t;
-    return i?.enrolledAt != null && null == i.completedAt || l(n)
+    return i?.enrolledAt != null && null == i.completedAt || r(n)
 }
 let s = 100,
     o = 20,

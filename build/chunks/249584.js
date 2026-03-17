@@ -5,11 +5,11 @@ n.d(t, {
     HW: () => K,
     K8: () => Q,
     Mr: () => Z,
-    UB: () => Y,
+    UB: () => W,
     YX: () => J,
     bo: () => z,
     jz: () => q,
-    lw: () => W,
+    lw: () => Y,
     mn: () => X
 });
 var i = n(627968),
@@ -81,7 +81,7 @@ function K(e) {
     })
 }
 
-function Y(e) {
+function W(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -111,7 +111,7 @@ function Y(e) {
     })
 }
 
-function W(e) {
+function Y(e) {
     let {
         guildId: t,
         powerups: n,

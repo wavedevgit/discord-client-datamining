@@ -46,8 +46,8 @@ var i = n(627968),
     H = n(111162),
     F = n(430452),
     K = n(290863),
-    Y = n(485296),
-    W = n(977997),
+    W = n(485296),
+    Y = n(977997),
     z = n(712687),
     q = n(790381),
     X = n(266080),
@@ -115,8 +115,8 @@ let eh = [ea.lp.ACTIVITY],
                 hasVideo: ek
             } = (0, el.A)(u, eR),
             eV = (0, c.bG)([G.A], () => null !== eL && G.A.isUserPlayingSounds(eL), [eL]),
-            eB = (t = eR, n = u, l = z.getGuildId(), a = n.type !== ea.lp.ACTIVITY ? n.user.id : n.applicationId, o = (0, c.cf)([W.A], () => {
-                let e = W.A.getVoiceState(l, a);
+            eB = (t = eR, n = u, l = z.getGuildId(), a = n.type !== ea.lp.ACTIVITY ? n.user.id : n.applicationId, o = (0, c.cf)([Y.A], () => {
+                let e = Y.A.getVoiceState(l, a);
                 return {
                     muted: e?.mute ?? !1,
                     deafened: e?.deaf ?? !1,
@@ -143,17 +143,17 @@ let eh = [ea.lp.ACTIVITY],
             }),
             eH = u.type === ea.lp.STREAM && eL === eR,
             eF = (0, c.bG)([w.A], () => u.type === ea.lp.USER && null != eL ? w.A.getEffectForUserId(eL) : null),
-            eK = (0, c.bG)([W.A], () => W.A.getVoicePlatformForChannel(z.id, eL ?? er.dJq)),
+            eK = (0, c.bG)([Y.A], () => Y.A.getVoicePlatformForChannel(z.id, eL ?? er.dJq)),
             {
-                showGameIcon: eY
+                showGameIcon: eW
             } = T.Ay.useExperiment({
                 location: "voice_users"
             }, {
                 autoTrackExposure: !1
             }),
-            eW = (0, c.bG)([K.A], () => eY && null != eL ? K.A.findActivity(eL, e => null != e.application_id && e.type === er.$pd.PLAYING) : null, [eY, eL]),
-            ez = (0, c.bG)([B.A], () => eW?.application_id != null ? B.A.getDetectableGame(eW.application_id) : null),
-            eq = (0, c.bG)([g.A], () => null != ez && eW?.application_id != null ? g.A.getApplication(eW?.application_id) : void 0),
+            eY = (0, c.bG)([K.A], () => eW && null != eL ? K.A.findActivity(eL, e => null != e.application_id && e.type === er.$pd.PLAYING) : null, [eW, eL]),
+            ez = (0, c.bG)([B.A], () => eY?.application_id != null ? B.A.getDetectableGame(eY.application_id) : null),
+            eq = (0, c.bG)([g.A], () => null != ez && eY?.application_id != null ? g.A.getApplication(eY?.application_id) : void 0),
             eX = (0, D.UF)({
                 userId: eL,
                 channelId: z.id
@@ -247,7 +247,7 @@ let eh = [ea.lp.ACTIVITY],
                 })
         }
         let e2 = s.useRef(null),
-            e3 = (0, c.bG)([Y.A], () => u.type === ea.lp.USER ? Y.A.getVoiceVolume(u.id) : -1 / 0),
+            e3 = (0, c.bG)([W.A], () => u.type === ea.lp.USER ? W.A.getVoiceVolume(u.id) : -1 / 0),
             e5 = (0, x.v)({
                 isSpeaking: eP,
                 voiceDb: e3,
@@ -481,8 +481,8 @@ let e_ = s.memo(e => {
         popoutType: B,
         paused: H,
         controlsBottom: K,
-        streamId: Y
-    } = e, W = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), q = (0, b.A)({
+        streamId: W
+    } = e, Y = (0, c.bG)([F.Ay], () => null != T && F.Ay.isLocalVideoAutoDisabled(T, (0, f.A)(E)), [T, E]), q = (0, b.A)({
         userId: T,
         guildId: v.getGuildId()
     }), X = (0, S.a)({
@@ -521,7 +521,7 @@ let e_ = s.memo(e => {
         }, "animate-always"),
         ei = [];
     return A && E === ea.lp.STREAM && ei.push((0, i.jsx)(j.A, {
-        streamId: Y,
+        streamId: W,
         paused: H
     }, "zoom-controls")), A ? B === C.N.CALL_TILE && (ei.push((0, i.jsx)(eg, {
         channelId: v.id,
@@ -559,7 +559,7 @@ let e_ = s.memo(e => {
             className: r()(eu.Ik, {
                 [eu.EX]: l < 195
             }),
-            children: W || m === er.bb8.AUTO_PROBING ? t ? (0, i.jsx)("div", {
+            children: Y || m === er.bb8.AUTO_PROBING ? t ? (0, i.jsx)("div", {
                 className: eu.h5,
                 children: (0, i.jsx)(h.OCo, {
                     size: "md",

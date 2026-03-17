@@ -34,17 +34,17 @@ function T(e) {
     } = e, {
         name: S,
         emojiId: R,
-        emojiName: y
-    } = t, D = null != T, [C, M] = a.useState(!1), j = (0, u.bG)([m.Ay], () => null != R ? m.Ay.getUsableCustomEmojiById(R) : null), I = D || null != x, _ = (!D || !C) && (null != R || null != y), L = 0 === l, w = a.useRef(null), G = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), O = (0, i.jsxs)(i.Fragment, {
+        emojiName: D
+    } = t, y = null != T, [C, M] = a.useState(!1), j = (0, u.bG)([m.Ay], () => null != R ? m.Ay.getUsableCustomEmojiById(R) : null), I = y || null != x, _ = (!y || !C) && (null != R || null != D), L = 0 === l, w = a.useRef(null), O = (0, u.bG)([f.A], () => f.A.keyboardModeEnabled), G = (0, i.jsxs)(i.Fragment, {
         children: [_ ? (0, i.jsx)(g.A, {
             className: r()(A.emoji, {
                 [A.small]: L
             }),
             emojiId: R,
-            emojiName: y,
+            emojiName: D,
             animated: !!j?.animated,
             size: "reaction"
-        }) : null, C && D && (0, i.jsx)("div", {
+        }) : null, C && y && (0, i.jsx)("div", {
             className: A.closeCircle,
             children: (0, i.jsx)(d.PGe, {
                 size: "md",
@@ -67,7 +67,7 @@ function T(e) {
             [A[t.color]]: null != t.color && !I
         }, c),
         onClick: e => {
-            x?.(e), T?.(t), G || null == w.current || w.current.blur()
+            x?.(e), T?.(t), O || null == w.current || w.current.blur()
         },
         onContextMenu: e => {
             let l;
@@ -81,8 +81,8 @@ function T(e) {
                 })
             }))
         },
-        onMouseEnter: () => D && M(!0),
-        onMouseLeave: () => D && M(!1)
+        onMouseEnter: () => y && M(!0),
+        onMouseLeave: () => y && M(!1)
     }, k = (0, o.rm)(`forum-tag-${t.id}`);
     return I ? (0, i.jsx)(d.DUT, {
         ...k,
@@ -96,10 +96,10 @@ function T(e) {
         role: "button",
         "aria-pressed": v,
         ...P,
-        children: O
+        children: G
     }) : (0, i.jsx)("div", {
         ...P,
-        children: O
+        children: G
     })
 }
 

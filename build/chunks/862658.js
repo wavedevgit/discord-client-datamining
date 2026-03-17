@@ -1,9 +1,9 @@
 /** chunk id: 862658 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(73153);
-let r = {
+let a = {
     closeSidebar() {
         i.h.dispatch({
             type: "MOBILE_WEB_SIDEBAR_CLOSE"

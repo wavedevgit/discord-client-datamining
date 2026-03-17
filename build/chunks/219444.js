@@ -4,8 +4,8 @@ n.d(t, {
     Vf: () => a
 });
 var i = n(600975),
-    r = n(652215);
-let l = (0, i.C)({
+    l = n(652215);
+let r = (0, i.C)({
     kind: "guild",
     id: "2023-03_guild_media_channel",
     label: "Media Channel",
@@ -24,8 +24,8 @@ let l = (0, i.C)({
 function a(e) {
     let {
         enabled: t
-    } = l.useExperiment({
-        guildId: e?.id ?? r.dJq,
+    } = r.useExperiment({
+        guildId: e?.id ?? l.dJq,
         location: "96e84c_1"
     }, {
         autoTrackExposure: !0

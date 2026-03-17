@@ -1,6 +1,6 @@
 /** chunk id: 385913 params = (module,exports,require) **/
 t.d(e, {
-    default: () => q
+    default: () => Z
 });
 var i = t(627968);
 t(64700);
@@ -21,15 +21,15 @@ var r = t(397927),
     _ = t(848977),
     m = t(995102),
     b = t(50268),
-    p = t(515610),
+    p = t(93055),
     I = t(133238),
     v = t(795144),
     C = t(671470),
     E = t(222311),
     y = t(803664),
-    T = t(29293),
-    V = t(509302),
-    D = t(497600),
+    D = t(29293),
+    T = t(509302),
+    V = t(497600),
     G = t(773699),
     N = t(239211),
     U = t(707378),
@@ -68,7 +68,7 @@ function B(n) {
     }), E = (0, b.A)({
         id: t.id,
         label: J.intl.string(J.t.gFHI3k)
-    }), y = (0, _.A)(t), T = (0, I.y)(t), V = (0, v.A)(t), D = (0, C.A)(t), G = (0, O.A)({
+    }), y = (0, _.A)(t), D = (0, I.y)(t), T = (0, v.A)(t), V = (0, C.A)(t), G = (0, O.A)({
         channel: t
     }), N = t.isManaged(), R = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -81,9 +81,9 @@ function B(n) {
         children: [(0, i.jsx)(r.rXV, {
             children: !(R && !(0, x.A)(t.id)) && y
         }), (0, i.jsx)(r.rXV, {
-            children: D
-        }), (0, i.jsx)(r.rXV, {
             children: V
+        }), (0, i.jsx)(r.rXV, {
+            children: T
         }), (0, i.jsxs)(r.rXV, {
             children: [!R && (0, i.jsxs)(i.Fragment, {
                 children: [A, !N && g, f]
@@ -91,7 +91,7 @@ function B(n) {
         }), (!R || (0, x.A)(t.id)) && (0, i.jsx)(r.rXV, {
             children: d && j
         }), (0, i.jsx)(r.rXV, {
-            children: T
+            children: D
         }), (0, i.jsx)(r.rXV, {
             children: G
         }), (0, i.jsxs)(r.rXV, {
@@ -111,9 +111,9 @@ function K(n) {
         showModalItems: w = !0,
         targetIsUser: B = !1,
         context: K,
-        onSelect: q,
-        onHeightUpdate: H,
-        onInteraction: Z
+        onSelect: Z,
+        onHeightUpdate: q,
+        onInteraction: H
     } = n, z = (0, k.A)({
         userId: e.id,
         guildId: null
@@ -122,17 +122,17 @@ function K(n) {
         context: K
     }), Q = (0, h.D)({
         userId: e.id
-    }), nn = (0, D.A)({
+    }), nn = (0, V.A)({
         user: e,
         channelId: t.id,
         context: K
-    }), ne = (0, T.A)({
+    }), ne = (0, D.A)({
         user: e
     }), nt = (0, W.A)(e.id), ni = (0, R.A)(t.id, d), nr = (0, S.A)({
         user: e
     }), nl = (0, u.A)(null, e), nd = (0, L.A)(e.id), na = (0, F.g)(t.id, "DMUserContextMenu"), ns = (0, F.A)(e, na), nu = (0, y.A)({
         user: e
-    }), nc = (0, V.A)({
+    }), nc = (0, T.A)({
         user: e
     }), no = (0, P.A)({
         user: e
@@ -157,8 +157,8 @@ function K(n) {
         commandTargetId: e.id,
         channel: t,
         guildId: void 0,
-        onHeightUpdate: H
-    }), nT = (0, I.m)(t), nV = (0, I.y)(t), nD = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
+        onHeightUpdate: q
+    }), nD = (0, I.m)(t), nT = (0, I.y)(t), nV = (0, v.A)(t), nG = (0, C.A)(t), nN = (0, O.A)({
         channel: t
     }), nU = t.isManaged(), nR = e.isNonUserBot();
     return (0, i.jsxs)(r.W1t, {
@@ -166,14 +166,14 @@ function K(n) {
         navId: "user-context",
         onClose: l.Z_,
         "aria-label": J.intl.string(J.t.liqwPJ),
-        onSelect: q,
-        onInteraction: Z,
+        onSelect: Z,
+        onInteraction: H,
         children: [(0, i.jsx)(r.rXV, {
             children: !(nR && !(0, x.A)(t.id)) && nb
         }), (0, i.jsxs)(r.rXV, {
-            children: [nT, nG]
+            children: [nD, nG]
         }), (0, i.jsx)(r.rXV, {
-            children: nD
+            children: nV
         }), (0, i.jsx)(r.rXV, {
             children: !nR && nv
         }), (0, i.jsxs)(r.rXV, {
@@ -195,7 +195,7 @@ function K(n) {
         }), (0, x.A)(t.id) && (0, i.jsx)(r.rXV, {
             children: a && nx
         }), (0, i.jsx)(r.rXV, {
-            children: nV
+            children: nT
         }), (0, i.jsx)(r.rXV, {
             children: nN
         }), (0, i.jsxs)(r.rXV, {
@@ -203,8 +203,8 @@ function K(n) {
         })]
     })
 }
-let q = (0, a.A)((0, d.A)(function(n) {
-    return (0, p.A)() ? (0, i.jsx)(B, {
+let Z = (0, a.A)((0, d.A)(function(n) {
+    return (0, p.DZ)() ? (0, i.jsx)(B, {
         ...n
     }) : (0, i.jsx)(K, {
         ...n

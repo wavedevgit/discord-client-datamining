@@ -16,11 +16,11 @@ var i = n(627968),
     T = n(954571),
     A = n(927578),
     I = n(379848),
-    p = n(49999),
-    N = n(652215),
+    N = n(49999),
+    p = n(652215),
     m = n(788868),
-    h = n(985018),
-    R = n(210320);
+    R = n(985018),
+    h = n(210320);
 let S = e => {
     let {
         dismissibleContent: t
@@ -32,8 +32,8 @@ let S = e => {
         autoTrackExposure: !1,
         disable: S
     }), C = l.useCallback(() => {
-        T.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, _.openUserSettings)(u.X.GIFT_PANEL, {
-            section: N.nc_.INVENTORY
+        T.default.track(p.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, _.openUserSettings)(u.X.GIFT_PANEL, {
+            section: p.nc_.INVENTORY
         }), d.Ay.dismissOutboundPromotionNotice()
     }, []);
     return null == n ? null : (0, i.jsx)(I.YS, {
@@ -42,7 +42,7 @@ let S = e => {
         timeRecurringConfig: {
             cooldownDurationMs: 0
         },
-        groupName: p.m.NOTICE_BAR,
+        groupName: N.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
         children: e => {
             let {
@@ -52,20 +52,20 @@ let S = e => {
             if (t === s.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, i.jsxs)(a.$Td, {
                 color: a.Hv$.PREMIUM_TIER_2,
                 children: [(0, i.jsx)(a.PMB, {
-                    noticeType: N.kqX.OUTBOUND_PROMOTION,
+                    noticeType: p.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        d.Ay.dismissOutboundPromotionNotice(), null !== n && n(p.i.USER_DISMISS)
+                        d.Ay.dismissOutboundPromotionNotice(), null !== n && n(N.i.USER_DISMISS)
                     }
                 }), (0, i.jsx)(a.tvc, {
                     size: "md",
                     color: "currentColor",
-                    className: R.P
-                }), g ? h.intl.string(h.t["5JMiOo"]) : h.intl.string(h.t["Pzh+G2"]), (0, i.jsx)(a.Z_L, {
-                    noticeType: N.kqX.OUTBOUND_PROMOTION,
+                    className: h.P
+                }), g ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, i.jsx)(a.Z_L, {
+                    noticeType: p.kqX.OUTBOUND_PROMOTION,
                     onClick: () => {
-                        C(), null !== n && n(p.i.TAKE_ACTION)
+                        C(), null !== n && n(N.i.TAKE_ACTION)
                     },
-                    children: h.intl.string(h.t.jVcuVY)
+                    children: R.intl.string(R.t.jVcuVY)
                 })]
             })
         }

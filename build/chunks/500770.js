@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
+var l = n(503698),
+    r = n.n(l),
     a = n(397927),
     s = n(915089),
     o = n(308234),
@@ -18,11 +18,11 @@ function m(e) {
     let {
         hidePurchaseToUnlockBadge: t,
         showDraftBadge: n,
-        className: r,
+        className: l,
         children: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: l()(_.v0, r),
+        className: r()(_.v0, l),
         children: [s, !t && (0, i.jsxs)("div", {
             className: _.su,
             children: [(0, i.jsx)(a.XAi, {
@@ -47,7 +47,7 @@ function h(e) {
     let {
         onShowFullDescription: t,
         variant: n
-    } = e, r = (0, i.jsxs)(i.Fragment, {
+    } = e, l = (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.Text, {
             variant: n,
             color: null != t ? "text-link" : "interactive-text-hover",
@@ -60,13 +60,13 @@ function h(e) {
     });
     return null == t ? (0, i.jsx)("div", {
         className: _.dO,
-        children: r
+        children: l
     }) : (0, i.jsx)(a.DUT, {
-        className: l()(_.dO, _.hY),
+        className: r()(_.dO, _.hY),
         onClick: e => {
             e.stopPropagation(), null != t && t()
         },
-        children: r
+        children: l
     })
 }
 
@@ -74,7 +74,7 @@ function p(e) {
     let {
         imageUrl: t,
         name: n,
-        description: r,
+        description: l,
         formattedPrice: d,
         role: p,
         ctaComponent: g,
@@ -118,7 +118,7 @@ function p(e) {
                         variant: N,
                         color: "text-muted",
                         lineClamp: b,
-                        text: r
+                        text: l
                     })
                 }), A && (0, i.jsx)(h, {
                     onShowFullDescription: x,
@@ -153,7 +153,7 @@ function p(e) {
         })]
     });
     return null == C ? (0, i.jsx)("article", {
-        className: l()(_.Um, E ? _.sG : _.Wi),
+        className: r()(_.Um, E ? _.sG : _.Wi),
         "aria-labelledby": L,
         children: R
     }) : (0, i.jsx)("div", {
@@ -166,7 +166,7 @@ function p(e) {
             "aria-label": u.intl.formatToPlainString(u.t["e+TmJa"], {
                 productName: n
             }),
-            className: l()(_.Um, E ? _.sG : _.Wi, _.GA),
+            className: r()(_.Um, E ? _.sG : _.Wi, _.GA),
             onClick: C,
             children: R
         })

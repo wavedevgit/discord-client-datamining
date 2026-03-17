@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(576705),
     F = n(309010),
     K = n(287809),
-    Y = n(993838),
-    W = n(849736),
+    W = n(993838),
+    Y = n(849736),
     z = n(776781),
     q = n(233993),
     X = n(312006),
@@ -145,7 +145,7 @@ function eA(e) {
         onClick: () => {
             ((0, f.X)(n, f.O.SPEAK_ON_STAGE), s) ? d.A.showAgeVerificationGetStartedModal({
                 entryPoint: u.q1.STAGE_CHANNEL_RAISE_HAND
-            }): (0, W.e7)(t, !1)
+            }): (0, Y.e7)(t, !1)
         },
         iconComponent: s ? a.O1p : a.LvC,
         label: eo.intl.string(s ? eo.t.NzITVo : eo.t["8Joh+p"])
@@ -167,7 +167,7 @@ function em(e) {
             channel: t,
             appContext: n
         } = e;
-        ((0, f.X)(h.A.VOICE_CONTROL_TRAY, f.O.DISCONNECT), (0, et.A)(t)) ? (0, Y.j3)(t, n) : o.default.disconnect()
+        ((0, f.X)(h.A.VOICE_CONTROL_TRAY, f.O.DISCONNECT), (0, et.A)(t)) ? (0, W.j3)(t, n) : o.default.disconnect()
     })({
         channel: t,
         appContext: r
@@ -191,7 +191,7 @@ function em(e) {
                     children: (0, i.jsx)(a.Drp, {
                         id: "end-stage",
                         color: "danger",
-                        action: () => (0, Y.$q)(t, r),
+                        action: () => (0, W.$q)(t, r),
                         label: eo.intl.string(eo.t["Fmx5y/"]),
                         icon: a.aXh,
                         leadingAccessory: {
@@ -240,7 +240,7 @@ function ep(e) {
         iconComponent: a.U$V,
         label: eo.intl.string(eo.t.ezLpY6),
         onClick: () => {
-            (0, f.X)(n, f.O.MOVE_TO_AUDIENCE), (0, W.Tf)(t)
+            (0, f.X)(n, f.O.MOVE_TO_AUDIENCE), (0, Y.Tf)(t)
         }
     })
 }
@@ -286,12 +286,12 @@ let e_ = s.memo(function(e) {
     } = (0, v.A)(), I = (0, j.A)(t), {
         limit: N,
         reachedLimit: b
-    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, Y = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: ea.GK.CARET
-    }), W = s.useRef(null), q = s.useRef(null);
+    }), Y = s.useRef(null), q = s.useRef(null);
     if (null == S) return null;
     let X = (0, i.jsx)(a.YNO, {
-        targetElementRef: W,
+        targetElementRef: Y,
         renderPopout: e => {
             let {
                 closePopout: t
@@ -317,7 +317,7 @@ let e_ = s.memo(function(e) {
                 isShown: s
             } = t;
             return (0, i.jsx)(k.A, {
-                ref: W,
+                ref: Y,
                 centerButton: !0,
                 hasPermission: I,
                 enabled: f,
@@ -351,7 +351,7 @@ let e_ = s.memo(function(e) {
                             renderOutputVolume: !0,
                             renderDeafen: !0,
                             minimal: !0,
-                            onInteraction: Y
+                            onInteraction: W
                         })
                     })
                 },

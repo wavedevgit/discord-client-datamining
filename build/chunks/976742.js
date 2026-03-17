@@ -26,7 +26,7 @@ var n = s(627968),
 function A(e) {
     let {
         category: t
-    } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), r = (0, _.X)(t.products), l = (0, u.p)()(r), i = (0, d.W)("CollectiblesCatalogContent"), g = (0, c.uM)();
+    } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), r = (0, _.X)(t.products), l = (0, u.p)()(r), i = (0, d.W)("CollectiblesCatalogContent");
     return null == s || 0 === l.length ? null : (0, n.jsx)("div", {
         className: b.vY,
         children: l.map((e, t) => (0, n.jsx)(c.R9, {
@@ -36,8 +36,7 @@ function A(e) {
             children: (0, n.jsx)(p.A, {
                 skuId: e.skuId,
                 skipLimitedTimeCheck: !0,
-                prioritizedCurrency: i ? f.Hi.FIAT : void 0,
-                onClickAnalytics: (0, f.UU)(e, C.G2.CATALOG, g)
+                prioritizedCurrency: i ? f.Hi.FIAT : void 0
             }, e.skuId)
         }, e.skuId))
     })

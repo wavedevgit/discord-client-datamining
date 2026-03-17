@@ -268,7 +268,7 @@ function eA(e) {
         eh(!0), t.isMultiUserDM() ? (0, S.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("60200"), n.e("24273")]).then(n.bind(n, 4027));
+            } = await Promise.all([n.e("97262"), n.e("60200"), n.e("91763")]).then(n.bind(n, 4027));
             return n => (0, l.jsx)(e, {
                 ...n,
                 channel: t,
@@ -281,7 +281,7 @@ function eA(e) {
         }) : (0, S.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("40867")]).then(n.bind(n, 385913));
+            } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("76779")]).then(n.bind(n, 385913));
             return n => (0, l.jsx)(e, {
                 ...n,
                 user: r,

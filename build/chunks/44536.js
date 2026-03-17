@@ -33,7 +33,7 @@ let O = (0, a.A)(function(e) {
     } = e, a = (0, c.A)(n), d = (0, A.A)(n), O = (0, g.A)(n), I = (0, s.A)(n), G = (0, b.A)(n), N = (0, f.A)(n), S = (0, o.A)({
         id: n.id,
         label: R.intl.string(R.t.DQ797g)
-    }), F = (0, h.A)(n, "Context Menu"), j = (0, p.A)(n), x = (0, E.A)(n), U = (0, T.A)(n), w = (0, C.A)(n), L = (0, m.A)(n.id), M = (0, v.A)(n), P = (0, y.A)(n), D = (0, u.m)(n), Y = (0, u.y)(n), J = (0, _.A)(n);
+    }), j = (0, h.A)(n, "Context Menu"), F = (0, p.A)(n), x = (0, E.A)(n), U = (0, T.A)(n), L = (0, C.A)(n), w = (0, m.A)(n.id), D = (0, v.A)(n), M = (0, y.A)(n), Y = (0, u.m)(n), J = (0, u.y)(n), P = (0, _.A)(n);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
@@ -43,15 +43,15 @@ let O = (0, a.A)(function(e) {
         children: [(0, i.jsx)(r.rXV, {
             children: d
         }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
-            children: D
+            children: Y
         }), (0, i.jsxs)(r.rXV, {
-            children: [F, M, I, G, w, L, a]
+            children: [j, D, I, G, L, w, a]
         }, "thread-actions"), (0, i.jsxs)(r.rXV, {
             children: [O, U]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [P, j, J, x, N]
+            children: [M, F, P, x, N]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
-            children: Y
+            children: J
         }), (0, i.jsx)(r.rXV, {
             children: S
         }, "developer-actions")]

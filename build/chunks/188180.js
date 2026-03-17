@@ -49,11 +49,11 @@ function _(e) {
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(b), S = _?.(a), N = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(g.A, {
+    }(b), N = _?.(a), S = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(g.A, {
         badge: c
-    }) : null != S ? (0, r.jsx)(h.A, {
-        badge: S
-    }) : void 0, [a, c, S]);
+    }) : null != N ? (0, r.jsx)(h.A, {
+        badge: N
+    }) : void 0, [a, c, N]);
     return (0, r.jsxs)(t, {
         "data-settings-sidebar-item": u,
         className: y.DB,
@@ -75,7 +75,7 @@ function _(e) {
                     color: A,
                     children: v
                 })]
-            }), N]
+            }), S]
         }), m]
     })
 }

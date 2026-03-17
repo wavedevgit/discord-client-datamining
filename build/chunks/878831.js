@@ -1,12 +1,12 @@
 /** chunk id: 878831 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(110259),
-    r = n(139286);
+    l = n(139286);
 
-function l(e, t) {
-    (0, r.A)({
+function r(e, t) {
+    (0, l.A)({
         name: i.ImpressionNames.CLOUD_PLAY_CTA,
         type: i.ImpressionTypes.VIEW,
         properties: {

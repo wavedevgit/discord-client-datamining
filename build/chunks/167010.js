@@ -4,31 +4,31 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(985018),
-    a = n(578368),
+var a = n(397927),
+    r = n(985018),
+    l = n(578368),
     s = n(330766);
 
 function o() {
     return (0, i.jsx)("div", {
-        className: a.kL,
+        className: l.kL,
         children: (0, i.jsxs)("div", {
-            className: a.Qs,
+            className: l.Qs,
             children: [(0, i.jsx)("img", {
                 src: s,
-                alt: l.intl.string(l.t.MvLOqp)
-            }), (0, i.jsx)(r.hKd, {
+                alt: r.intl.string(r.t.MvLOqp)
+            }), (0, i.jsx)(a.hKd, {
                 size: 12
-            }), (0, i.jsx)(r.Heading, {
-                className: a.wx,
+            }), (0, i.jsx)(a.Heading, {
+                className: l.wx,
                 variant: "heading-lg/semibold",
-                children: l.intl.string(l.t.t18lFj)
-            }), (0, i.jsx)(r.hKd, {
+                children: r.intl.string(r.t.t18lFj)
+            }), (0, i.jsx)(a.hKd, {
                 size: 8
-            }), (0, i.jsx)(r.Text, {
+            }), (0, i.jsx)(a.Text, {
                 color: "text-default",
                 variant: "text-sm/normal",
-                children: l.intl.string(l.t.TvGJgk)
+                children: r.intl.string(r.t.TvGJgk)
             })]
         })
     })

@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(574172),
     F = n(869146),
     K = n(976860),
-    Y = n(326567),
-    W = n(964404),
+    W = n(326567),
+    Y = n(964404),
     z = n(105225),
     q = n(874739),
     X = n(461782),
@@ -146,7 +146,7 @@ class ek extends s.PureComponent {
     _videoBackgroundTooltipTimeout = new h.Ep;
     _lastIdleProps = null;
     state = {
-        resizedHeight: W.Ay.callHeaderHeight
+        resizedHeight: Y.Ay.callHeaderHeight
     };
     getRootNode() {
         return (this.props.popoutWindow?.window ?? window).document.getElementById("app-mount")
@@ -316,7 +316,7 @@ class ek extends s.PureComponent {
                 this.trackCallTileContextMenuImpression(e, eL.qs.USER);
                 let u = em.default.getUser(e.id);
                 if (null != u) {
-                    if (s) return (0, Y.r)(t, u, r, d, (e, t) => (0, eO.Y)({
+                    if (s) return (0, W.r)(t, u, r, d, (e, t) => (0, eO.Y)({
                         menuItemProps: t,
                         menuName: e,
                         entrypoint: eL.GK.THREE_DOT,
@@ -329,7 +329,7 @@ class ek extends s.PureComponent {
                             return (0, g.L3)(t, async () => {
                                 let {
                                     default: t
-                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("29168")]).then(n.bind(n, 385913));
+                                } = await Promise.all([n.e("97262"), n.e("42128"), n.e("39778"), n.e("78646")]).then(n.bind(n, 385913));
                                 return n => (0, i.jsx)(t, {
                                     ...n,
                                     showChannelCallItems: !0,
@@ -719,13 +719,13 @@ let eV = function(e) {
         selectedStream: K
     } = (0, d.cf)([ea.A], () => ({
         selectedStream: null != k ? ea.A.getActiveStreamForStreamKey(k.id) : null
-    }), [k]), Y = (0, d.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, d.bG)([eo.default], () => eo.default.getId()), {
+    }), [k]), W = (0, d.bG)([eu.A], () => eu.A.getGuild(t.getGuildId())), z = (0, d.bG)([eo.default], () => eo.default.getId()), {
         popoutWindow: q,
         popoutWindowAlwaysOnTop: X
     } = (0, d.cf)([F.A], () => ({
         popoutWindow: F.A.getWindow(eM.MLl.CHANNEL_CALL_POPOUT),
         popoutWindowAlwaysOnTop: F.A.getIsAlwaysOnTop(eM.MLl.CHANNEL_CALL_POPOUT)
-    })), Q = (0, d.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), J = (0, d.bG)([ec.A], () => ec.A.getToastsEnabled(t.id)), $ = (0, d.bG)([G.default], () => G.default.getAwaitingRemoteSessionInfo()), Z = (0, d.bG)([W.Ay], () => W.Ay.callHeaderHeight), ee = s.useCallback(e => {
+    })), Q = (0, d.bG)([eh.A], () => eh.A.can(eM.xBc.CONNECT, t)), J = (0, d.bG)([ec.A], () => ec.A.getToastsEnabled(t.id)), $ = (0, d.bG)([G.default], () => G.default.getAwaitingRemoteSessionInfo()), Z = (0, d.bG)([Y.Ay], () => Y.Ay.callHeaderHeight), ee = s.useCallback(e => {
         x.Ay.updatedUnsyncedSettings({
             callHeaderHeight: e
         })
@@ -772,7 +772,7 @@ let eV = function(e) {
                 children: (0, i.jsxs)(ej.CB, {
                     children: [(0, i.jsx)(ek, {
                         channel: t,
-                        guild: Y,
+                        guild: W,
                         hasConnectPermission: Q,
                         participantsOpen: P,
                         renderExternalHeader: n,

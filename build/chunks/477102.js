@@ -763,7 +763,7 @@ let v = {
     AddFavoriteChannelModal: async () => {
         let {
             default: e
-        } = await Promise.all([n.e("59839"), n.e("22500")]).then(n.bind(n, 889186));
+        } = await n.e("59839").then(n.bind(n, 889186));
         return t => (0, a.jsx)(e, {
             ...t,
             parentId: null

@@ -1,33 +1,35 @@
 /** chunk id: 775427 params = (module,exports,require) **/
 r.d(t, {
-    J: () => d
+    J: () => h
 });
 var n = r(33851),
     s = r.n(n),
     l = r(311907),
-    a = r(253932),
-    i = r(734057),
-    o = r(71393),
-    c = r(967198),
-    u = r(652215);
+    a = r(5180),
+    i = r(253932),
+    o = r(734057),
+    c = r(71393),
+    u = r(967198),
+    d = r(652215);
 
-function d(e) {
+function h(e) {
     let {
         guildId: t,
         channelId: r
-    } = e, n = a.Hu.useSetting();
-    return (0, l.bG)([o.A, i.A, c.A], () => {
-        let e = o.A.getGuild(t),
-            s = i.A.getChannel(r);
-        return c.A.getGuildId() === u.YYv ? {
-            type: u.I4_.FAVORITES
+    } = e, n = i.Hu.useSetting();
+    return (0, l.bG)([c.A, o.A, u.A], () => {
+        let e = c.A.getGuild(t),
+            s = o.A.getChannel(r),
+            l = u.A.getGuildId();
+        return (0, a.ai)(l) ? {
+            type: d.I4_.FAVORITES
         } : null != t && null != e ? {
-            type: u.I4_.GUILD,
+            type: d.I4_.GUILD,
             guildId: t
         } : null != r && null != s && s.isPrivate() ? n ? {
-            type: u.I4_.DMS
+            type: d.I4_.DMS
         } : {
-            type: u.I4_.CHANNEL,
+            type: d.I4_.CHANNEL,
             channelId: r
         } : null
     }, [r, t, n], s())

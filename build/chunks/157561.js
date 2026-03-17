@@ -4,8 +4,8 @@ a.d(t, {
 });
 var n = a(64700),
     i = a(416730),
-    s = a(620140),
-    l = a(412461),
+    l = a(620140),
+    s = a(412461),
     r = a(310419),
     o = a(656106),
     c = a(652215);
@@ -27,9 +27,9 @@ function d(e) {
                 query: ""
             })
         }, []),
-        h = n.useCallback(() => {
-            let e = (0, s.A)();
-            (0, l.TR)(c.HAw.APP_DIRECTORY_SEARCH_STARTED, {
+        m = n.useCallback(() => {
+            let e = (0, l.A)();
+            (0, s.TR)(c.HAw.APP_DIRECTORY_SEARCH_STARTED, {
                 search_term: a,
                 category: e.name,
                 current_page: r.ev.HOME,
@@ -42,6 +42,6 @@ function d(e) {
         searchQuery: a,
         onSearchTextChange: d,
         onClearSearch: u,
-        onSearchSubmit: h
+        onSearchSubmit: m
     }
 }

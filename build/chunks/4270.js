@@ -3,9 +3,9 @@ n.d(t, {
     A: () => y
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(837381),
     o = n(731738),
     d = n(397927),
@@ -28,16 +28,16 @@ var i = n(627968),
     v = n(843284);
 
 function y() {
-    let e = r.useRef(null),
+    let e = a.useRef(null),
         t = (0, I.A)(),
         n = (0, f.I)(),
-        l = (0, g.r)(),
+        r = (0, g.r)(),
         y = (0, c.w)(),
         b = (0, A.A)("message-requests-spam-list"),
         {
             channelId: O
         } = (0, E.N)(),
-        L = r.useCallback(() => {
+        L = a.useCallback(() => {
             (0, d.showToast)((0, d.createToast)(x.intl.string(x.t["EDYbS+"]), d.ToastType.FAILURE))
         }, []),
         {
@@ -45,7 +45,7 @@ function y() {
         } = (0, p.t)({
             onError: L
         }),
-        P = r.useCallback(() => {
+        P = a.useCallback(() => {
             R(t.map(e => e.channel.id))
         }, [t, R]);
     (0, u.Ay)(() => {
@@ -55,22 +55,22 @@ function y() {
             name: o.K.SPAM_MESSAGE_REQUEST_VIEW
         })
     });
-    let D = r.useCallback(e => {
+    let D = a.useCallback(e => {
             let {
                 row: n
-            } = e, r = t[n], s = t[n + 1]?.channel?.id, o = r.channel.id;
+            } = e, a = t[n], s = t[n + 1]?.channel?.id, o = a.channel.id;
             return (0, i.jsx)(T.A, {
                 index: n,
-                className: a()({
+                className: l()({
                     [v.wH]: null != O && O === o,
                     [v.wZ]: null != O && O === s
                 }),
-                channel: r.channel,
-                user: r.user,
-                hasSingleMessageRequest: l
+                channel: a.channel,
+                user: a.user,
+                hasSingleMessageRequest: r
             }, o)
-        }, [t, l, O]),
-        j = r.useCallback(() => (0, i.jsxs)(h.A, {
+        }, [t, r, O]),
+        M = a.useCallback(() => (0, i.jsxs)(h.A, {
             className: v.Gf,
             children: [x.intl.format(x.t.C79Edh, {
                 count: n
@@ -96,27 +96,27 @@ function y() {
         children: (0, i.jsx)(s.PR, {
             children: n => {
                 let {
-                    ref: r,
-                    role: l,
-                    ...a
+                    ref: a,
+                    role: r,
+                    ...l
                 } = n;
                 return (0, i.jsx)(d.B8B, {
                     className: v.p_,
-                    innerRole: l,
+                    innerRole: r,
                     innerAriaLabel: x.intl.string(x.t.e7GWjQ),
                     ref: t => {
-                        e.current = t, r.current = t?.getScrollerNode() ?? null
+                        e.current = t, a.current = t?.getScrollerNode() ?? null
                     },
                     paddingTop: 24,
                     paddingBottom: 24,
                     sectionHeight: 26,
                     rowHeight: 73,
-                    renderSection: j,
+                    renderSection: M,
                     renderRow: D,
                     sections: [t.length],
                     chunkSize: 30,
                     fade: !0,
-                    ...a
+                    ...l
                 }, "message-requests-spam-list")
             }
         })

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 });
 var i = n(562465),
-    r = n(10716),
-    l = n(458664),
-    a = n(587895),
+    a = n(10716),
+    r = n(458664),
+    l = n(587895),
     s = n(20015),
     o = n(147964),
     d = n(954571),
@@ -30,16 +30,16 @@ let g = {
                 }
             } = e;
             (0, u.lG)(t.transport), (0, u.D2)(t.application);
-            let r = t.application.id,
+            let a = t.application.id,
                 o = (0, h.A)(),
                 A = o?.getGuildId(),
-                _ = a.A.getApplication(r);
+                _ = l.A.getApplication(a);
             if (!(0, s.n)(_, m.gfo.EMBEDDED_FIRST_PARTY)) throw new c.A({
                 errorCode: m.Lw6.INVALID_COMMAND
             }, "This application cannot access this API");
-            let g = (0, l.D)(r),
+            let g = (0, r.D)(a),
                 p = {
-                    activity_application_id: r,
+                    activity_application_id: a,
                     activity_channel_type: o?.type,
                     activity_guild_id: A,
                     activity_user_session_id: g?.activityUserSessionId
@@ -62,7 +62,7 @@ let g = {
             return i.Bo.post({
                 url: m.Rsh.APPLICATION_TICKET(n),
                 body: {
-                    test_mode: o.A.inTestModeForApplication(n) || r.A.inDevModeForApplication(n)
+                    test_mode: o.A.inTestModeForApplication(n) || a.A.inDevModeForApplication(n)
                 },
                 retries: 3,
                 oldFormErrors: !0,

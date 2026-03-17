@@ -3,9 +3,9 @@ n.d(t, {
     A: () => d
 });
 var i = n(73153),
-    r = n(976860),
-    l = n(837921),
-    a = n(546983),
+    a = n(976860),
+    r = n(837921),
+    l = n(546983),
     s = n(613057),
     o = n(652215);
 let d = {
@@ -20,14 +20,14 @@ let d = {
                     pid: d
                 }
             } = e;
-            (0, a.d5)(d).context === o.BRT.OVERLAY ? i.h.dispatch({
+            (0, l.d5)(d).context === o.BRT.OVERLAY ? i.h.dispatch({
                 type: "OVERLAY_OPEN_MESSAGE",
                 guildId: t,
                 channelId: n,
                 messageId: s
-            }) : ((0, r.bG)({
+            }) : ((0, a.bG)({
                 pathname: o.BVt.CHANNEL(t, n, s)
-            }), l.Ay.focus())
+            }), r.Ay.focus())
         }
     }
 }

@@ -6,14 +6,14 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
+var l = n(503698),
+    r = n.n(l),
     a = n(622413),
     s = n(797232);
 let o = 660,
     d = e => (0, i.jsx)(a.A, {
         ...e,
-        className: l()(e.className, {
+        className: r()(e.className, {
             [s.sN]: !e.isHorizontal,
             [s.wO]: e.isHorizontal
         })
@@ -27,7 +27,7 @@ let o = 660,
             media: () => (0, i.jsx)("div", {
                 className: s.FR,
                 children: (0, i.jsx)("div", {
-                    className: l()(s.Wv, {
+                    className: r()(s.Wv, {
                         [s._n]: t
                     }),
                     children: (0, i.jsx)("div", {
@@ -36,7 +36,7 @@ let o = 660,
                 })
             }),
             title: () => (0, i.jsx)("div", {
-                className: l()(s.GE, {
+                className: r()(s.GE, {
                     [s.E9]: t
                 })
             })

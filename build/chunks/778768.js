@@ -151,8 +151,8 @@ function F(e) {
     }, {
         autoTrackExposure: !1
     }), {
-        status: Y,
-        isMobileOnline: W,
+        status: W,
+        isMobileOnline: Y,
         activities: z
     } = (0, d.cf)([L.A], () => ({
         status: L.A.getStatus(n.id, a),
@@ -218,7 +218,7 @@ function F(e) {
     if (null == c) return null;
     let el = M.Ay.getName(n),
         er = P.intl.string(P.t.jYnGPG),
-        ea = Y !== h.clD.OFFLINE ? Y : void 0,
+        ea = W !== h.clD.OFFLINE ? W : void 0,
         eo = K && null != q.text,
         ec = K && null != Q && null != J;
     return (0, i.jsxs)(h.DUT, {
@@ -237,7 +237,7 @@ function F(e) {
             src: ei,
             avatarDecoration: en,
             status: K ? ea : void 0,
-            isMobile: K ? W : void 0,
+            isMobile: K ? Y : void 0,
             ...es
         }), (0, i.jsxs)("div", {
             className: w.VW,

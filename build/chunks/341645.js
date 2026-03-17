@@ -3,9 +3,9 @@ n.d(t, {
     A: () => F
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(311907),
     o = n(451988),
     d = n(397927),
@@ -32,18 +32,18 @@ var i = n(627968),
     L = n(486020),
     R = n(927813),
     P = n(403362),
-    M = n(218394),
-    D = n(255345),
+    D = n(218394),
+    M = n(255345),
     w = n(652215),
     O = n(360469),
     k = n(768349),
     U = n(985018),
     G = n(356053);
-let B = r.memo(e => {
+let B = l.memo(e => {
     let {
         start: t
-    } = e, [n, i] = r.useState(0), l = (0, M.j)(), a = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === l || a;
-    return r.useEffect(() => {
+    } = e, [n, i] = l.useState(0), r = (0, D.j)(), a = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === r || a;
+    return l.useEffect(() => {
         let e = new o.IX;
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
             i((new Date().getTime() - t) / R.A.Millis.SECOND)
@@ -51,10 +51,10 @@ let B = r.memo(e => {
     }, [d, t]), (0, v.fU)(n)
 });
 B.displayName = "ActivityRuntimeCounter";
-let F = r.memo(function(e) {
+let F = l.memo(function(e) {
     let t, {
             application: n,
-            channelId: l,
+            channelId: r,
             guildId: o,
             message: u
         } = e,
@@ -62,8 +62,8 @@ let F = r.memo(function(e) {
             analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        M = (0, s.bG)([S.A], () => S.A.getChannel(l), [l]),
-        F = M?.isThread?.() ? M?.parent_id : l,
+        D = (0, s.bG)([S.A], () => S.A.getChannel(r), [r]),
+        F = D?.isThread?.() ? D?.parent_id : r,
         H = (0, s.bG)([T.default], () => T.default.getId()),
         {
             embeddedActivity: V,
@@ -85,53 +85,53 @@ let F = r.memo(function(e) {
             return null
         }, [n.id, Y]),
         K = Q?.details,
-        J = r.useMemo(() => {
+        J = l.useMemo(() => {
             let e = new b.Ay(n);
             return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = O.Gl), e
         }, [n]),
         X = (0, p.vG)({
             userId: H,
-            channelId: l,
+            channelId: r,
             application: J
         }),
         Z = null == V,
-        $ = (0, D.I3)({
+        $ = (0, M.I3)({
             embeddedActivity: V,
             joinability: X,
             currentEmbeddedActivity: W,
-            channel: M
+            channel: D
         }),
-        ee = r.useId(),
+        ee = l.useId(),
         et = null != q && q.isLaunching && q.componentId === ee,
         en = async () => {
             j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
-                channel_id: l,
-                channel_type: M?.type,
+                channel_id: r,
+                channel_type: D?.type,
                 is_activity_start: Z,
                 cta: "Play"
             }), Z ? await (0, h.A)({
                 targetApplicationId: n.id,
-                channelId: l,
+                channelId: r,
                 locationObject: R.location,
                 analyticsLocations: v,
                 componentId: ee,
                 commandOrigin: x.iw.ACTIVITY_INSTANCE_EMBED
             }) : await (0, m.A)({
                 applicationId: V.applicationId,
-                activityChannelId: l,
+                activityChannelId: r,
                 locationObject: R.location,
                 analyticsLocations: v,
                 componentId: ee
             })
-        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, E.F)(J, () => {
+        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), el = (0, E.F)(J, () => {
             j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
-                channel_id: l,
-                channel_type: M?.type,
+                channel_id: r,
+                channel_type: D?.type,
                 cta: "View"
             })
-        }), el = L.Ay.getApplicationIconURL({
+        }), er = L.Ay.getApplicationIconURL({
             id: n.id,
             icon: n.icon,
             bot: n.bot
@@ -154,7 +154,7 @@ let F = r.memo(function(e) {
     return (0, i.jsx)(f.h, {
         header: U.intl.string(U.t.pkq6Vq),
         title: n.name,
-        iconSrc: el,
+        iconSrc: er,
         info: (0, i.jsx)("div", {
             className: G.QR,
             children: Z ? (0, i.jsx)(d.Text, {
@@ -201,12 +201,12 @@ let F = r.memo(function(e) {
             })
         }),
         actions: ed,
-        onClickContent: er,
+        onClickContent: el,
         trackingConfig: {
             id: n.id,
             linkType: k.J.ACTIVITY_INSTANCE,
             guildId: o,
-            channelId: l,
+            channelId: r,
             messageId: u.id,
             isDeadEnd: Z
         }

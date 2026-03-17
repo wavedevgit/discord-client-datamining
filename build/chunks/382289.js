@@ -1,9 +1,9 @@
 /** chunk id: 382289 params = (module,exports,require) **/
 n(321073);
 var i = n(735438),
-    r = n.n(i),
-    l = n(311907),
-    a = n(73153),
+    a = n.n(i),
+    r = n(311907),
+    l = n(73153),
     s = n(734057),
     o = n(967198),
     d = n(661191),
@@ -17,19 +17,19 @@ function m(e) {
     let t = A[e];
     if (null == t) return;
     let n = d.default.fromTimestamp(Date.now() - 9e5),
-        i = r().findIndex(t, e => d.default.compare(e.id, n) > 0);
+        i = a().findIndex(t, e => d.default.compare(e.id, n) > 0);
     if (-1 === i) A[e] = [];
     else {
         let n = Math.max(i, t.length - 26);
-        A[e] = r().slice(t, n)
+        A[e] = a().slice(t, n)
     }
     h[e] = Date.now()
 }
 
 function g(e, t, n, i) {
     u[e].add(t);
-    let r = h[t];
-    (null == r || r + 3e5 > Date.now()) && m(t), null == A[t] && (A[t] = []), A[t].push({
+    let a = h[t];
+    (null == a || a + 3e5 > Date.now()) && m(t), null == A[t] && (A[t] = []), A[t].push({
         id: n,
         userId: i
     })
@@ -41,7 +41,7 @@ function p(e) {
     } = e;
     delete A[t.id], delete h[t.id]
 }
-class E extends l.Ay.Store {
+class E extends r.Ay.Store {
     initialize() {
         this.waitFor(s.A, o.A)
     }
@@ -59,7 +59,7 @@ class E extends l.Ay.Store {
         return null == u[e] && !_[e]?.loading
     }
 }
-new E(a.h, {
+new E(l.h, {
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t,
@@ -71,22 +71,22 @@ new E(a.h, {
         i.forEach(e => {
             m(e), A[e]?.length === 0 && delete A[e]
         });
-        let l = r().chain(Array.from(i)).filter(e => e in A).sortBy(e => -(A[e]?.length ?? 0)).value();
-        u[n] = new Set(l)
+        let r = a().chain(Array.from(i)).filter(e => e in A).sortBy(e => -(A[e]?.length ?? 0)).value();
+        u[n] = new Set(r)
     },
     MESSAGE_CREATE: function(e) {
         let {
             channelId: t,
             message: n,
             optimistic: i,
-            isPushNotification: r
+            isPushNotification: a
         } = e;
-        if (i || r) return !1;
-        let l = s.A.getChannel(t);
-        if (null == l) return !1;
-        let a = l.guild_id;
-        if (null == a || null == u[a]) return !1;
-        g(a, t, n.id, n.author?.id)
+        if (i || a) return !1;
+        let r = s.A.getChannel(t);
+        if (null == r) return !1;
+        let l = r.guild_id;
+        if (null == l || null == u[l]) return !1;
+        g(l, t, n.id, n.author?.id)
     },
     GUILD_DELETE: function(e) {
         let {

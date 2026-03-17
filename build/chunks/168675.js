@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(652215),
     F = n(985018),
     K = n(770587),
-    Y = n(790687);
-let W = _.oU.THREAD_CREATION;
+    W = n(790687);
+let Y = _.oU.THREAD_CREATION;
 
 function z(e) {
     let {
@@ -204,7 +204,7 @@ function X(e) {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
-                    m(!0), null == e && (e = r.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = S.A.getStickerPreview(t.id, W.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
+                    m(!0), null == e && (e = r.textValue), e = e.trim(), (null == s || 0 === s.length) && (s = S.A.getStickerPreview(t.id, Y.drafts.type)?.map(e => e.id)), (null == l || 0 === l.length) && (l = L.A.getUploads(t.id, j.C.FirstThreadMessage));
                     let a = (i.name ?? "").trim(),
                         c = (o || null == n) && 0 === a.length,
                         u = "" === e && (null == s || 0 === s.length) && 0 === l.length;
@@ -218,7 +218,7 @@ function X(e) {
                         content: e,
                         stickers: s,
                         uploads: l,
-                        type: W,
+                        type: Y,
                         channel: null == n ? t : null
                     });
                     if (!g) return m(!1), {
@@ -233,7 +233,7 @@ function X(e) {
                             shouldRefocus: !0
                         }
                     }
-                    return (0, T.x5)(t.id, W.drafts.type), m(!1), {
+                    return (0, T.x5)(t.id, Y.drafts.type), m(!1), {
                         shouldClear: !0,
                         shouldRefocus: !1
                     }
@@ -269,9 +269,9 @@ function X(e) {
                         children: [(0, i.jsxs)(I.Ay, {
                             channelId: "create-thread-null",
                             children: [(0, i.jsx)("div", {
-                                className: r()(Y.P0, K.P0),
+                                className: r()(W.P0, K.P0),
                                 children: (0, i.jsx)(w, {
-                                    className: Y.Kk
+                                    className: W.Kk
                                 })
                             }), (0, i.jsxs)(o.nVY, {
                                 children: [(0, i.jsx)(J, {
@@ -408,7 +408,7 @@ function $(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(C.A, {
             channelId: t.id,
-            type: W,
+            type: Y,
             canAttachFiles: E
         }), (0, i.jsx)("div", {
             className: K.xN,
@@ -416,7 +416,7 @@ function $(e) {
                 error: I
             })
         }), (0, i.jsx)(x.Ay, {
-            type: W,
+            type: Y,
             channel: t,
             placeholder: F.intl.string(F.t.taZfIC),
             textValue: n.textValue,

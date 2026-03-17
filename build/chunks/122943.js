@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(863439),
@@ -21,12 +21,12 @@ var i = n(627968),
     I = n(985018),
     f = n(536791),
     C = n(206314);
-let T = r.memo(function(e) {
+let T = a.memo(function(e) {
     let {
         channel: t
     } = e, {
         loaded: n,
-        error: l,
+        error: r,
         message: T
     } = (0, g.I)(t), {
         isBlocked: N,
@@ -36,13 +36,13 @@ let T = r.memo(function(e) {
         isIgnored: null != T && m.A.isIgnoredForMessage(T)
     }), [T]), x = (0, s.bG)([_.A], () => _.A.can(p.xBc.MANAGE_MESSAGES, t)), v = h.gs.useSetting(), {
         content: y
-    } = r.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
+    } = a.useMemo(() => T?.content != null && "" !== T.content ? (0, c.Ay)(T, {
         formatInline: !0,
         noStyleAndInteraction: !0
     }) : {
         content: null
     }, [T]), b = null;
-    if (l) b = (0, i.jsx)(o.Text, {
+    if (r) b = (0, i.jsx)(o.Text, {
         className: f.G4,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -65,7 +65,7 @@ let T = r.memo(function(e) {
         let {
             contentPlaceholder: e,
             renderedContent: t
-        } = (0, u.o)(T, y, N, S, a()(f.BK, C.tZ), {
+        } = (0, u.o)(T, y, N, S, l()(f.BK, C.tZ), {
             leadingIconClass: f.AF,
             trailingIconClass: f.AF,
             iconSize: E.eJ

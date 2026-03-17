@@ -3,9 +3,9 @@ n.d(t, {
     A: () => p
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
 var i = n(311907),
-    r = n(554146),
-    l = n(873298),
-    a = n(406935),
+    a = n(554146),
+    r = n(873298),
+    l = n(406935),
     s = n(506774),
     o = n(168186),
     d = n(450510),
@@ -32,13 +32,13 @@ let p = [{
     run(e) {
         if (null != e.inbox) return !1;
         let t = !1,
-            n = l.Q0.create();
+            n = r.Q0.create();
         e.inbox = n, s.w.get("seenInboxTutorial", !1) && (n.viewedTutorial = !0, t = !0);
         let i = s.w.get("recentsButtonTab2");
-        null != i && (n.currentTab = "Recent Mentions" === i ? l.Y2.MENTIONS : l.Y2.UNREADS, t = !0);
-        let r = s.w.get("unread-messages-collapsed-channels") ?? {};
-        for (let n in r) {
-            if (!r[n]) continue;
+        null != i && (n.currentTab = "Recent Mentions" === i ? r.Y2.MENTIONS : r.Y2.UNREADS, t = !0);
+        let a = s.w.get("unread-messages-collapsed-channels") ?? {};
+        for (let n in a) {
+            if (!a[n]) continue;
             let i = c.A.getChannel(n);
             null != i && (t = !0, (0, A.gc)(e, i.guild_id ?? "0", i.id, e => {
                 e.collapsedInInbox = !0
@@ -59,14 +59,14 @@ let p = [{
         })]);
         if (null == t) return !1;
         let n = !1;
-        return null != t.diversitySurrogate && "" !== t.diversitySurrogate && (null == e.textAndImages && (e.textAndImages = l.oJ.create()), null == e.textAndImages.diversitySurrogate && (e.textAndImages.diversitySurrogate = a.hU.create()), e.textAndImages.diversitySurrogate.value = t.diversitySurrogate, n = !0), n
+        return null != t.diversitySurrogate && "" !== t.diversitySurrogate && (null == e.textAndImages && (e.textAndImages = r.oJ.create()), null == e.textAndImages.diversitySurrogate && (e.textAndImages.diversitySurrogate = l.hU.create()), e.textAndImages.diversitySurrogate.value = t.diversitySurrogate, n = !0), n
     },
     cleanup() {}
 }, {
     version: 4,
     run(e) {
         let t = !1;
-        return (!0 === s.w.get("HAS_SEEN_HUB_UPSELL") || d.HP.hasHiddenHotspot(d._2.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = m(e, r.M.HUB_WAITLIST_UPSELL)), t
+        return (!0 === s.w.get("HAS_SEEN_HUB_UPSELL") || d.HP.hasHiddenHotspot(d._2.HUB_SECOND_EMAIL_CONNECTION_UPSELL)) && (t = m(e, a.M.HUB_WAITLIST_UPSELL)), t
     },
     cleanup() {
         s.w.remove("HAS_SEEN_HUB_UPSELL")
@@ -75,55 +75,55 @@ let p = [{
     version: 5,
     run(e) {
         let t = !1;
-        e.textAndImages = e.textAndImages ?? l.oJ.create(), e.notifications = e.notifications ?? l.TY.create(), e.privacy = e.privacy ?? l.E.create(), e.voiceAndVideo = e.voiceAndVideo ?? l.GY.create(), e.gameLibrary = e.gameLibrary ?? l.F1.create(), e.debug = e.debug ?? l.X9.create();
+        e.textAndImages = e.textAndImages ?? r.oJ.create(), e.notifications = e.notifications ?? r.TY.create(), e.privacy = e.privacy ?? r.E.create(), e.voiceAndVideo = e.voiceAndVideo ?? r.GY.create(), e.gameLibrary = e.gameLibrary ?? r.F1.create(), e.debug = e.debug ?? r.X9.create();
         let n = s.w.get("UserSettingsStore") ?? {};
-        return "boolean" == typeof n.useRichChatTextBox && (e.textAndImages.useRichChatInput = a._t.create({
+        return "boolean" == typeof n.useRichChatTextBox && (e.textAndImages.useRichChatInput = l._t.create({
             value: n.useRichChatTextBox
-        }), t = !0), "string" == typeof n.renderSpoilers && (e.textAndImages.renderSpoilers = a.hU.create({
+        }), t = !0), "string" == typeof n.renderSpoilers && (e.textAndImages.renderSpoilers = l.hU.create({
             value: n.renderSpoilers
-        }), t = !0), "boolean" == typeof n.useThreadSidebar && (e.textAndImages.useThreadSidebar = a._t.create({
+        }), t = !0), "boolean" == typeof n.useThreadSidebar && (e.textAndImages.useThreadSidebar = l._t.create({
             value: n.useThreadSidebar
-        }), t = !0), "boolean" == typeof n.showInAppNotifications && (e.notifications.showInAppNotifications = a._t.create({
+        }), t = !0), "boolean" == typeof n.showInAppNotifications && (e.notifications.showInAppNotifications = l._t.create({
             value: n.showInAppNotifications
-        }), t = !0), n.emojiPickerCollapsedSections instanceof Array && (e.textAndImages.emojiPickerCollapsedSections = n.emojiPickerCollapsedSections, t = !0), n.stickerPickerCollapsedSections instanceof Array && (e.textAndImages.stickerPickerCollapsedSections = n.stickerPickerCollapsedSections, t = !0), "boolean" == typeof n.viewImageDescriptions && (e.textAndImages.viewImageDescriptions = a._t.create({
+        }), t = !0), n.emojiPickerCollapsedSections instanceof Array && (e.textAndImages.emojiPickerCollapsedSections = n.emojiPickerCollapsedSections, t = !0), n.stickerPickerCollapsedSections instanceof Array && (e.textAndImages.stickerPickerCollapsedSections = n.stickerPickerCollapsedSections, t = !0), "boolean" == typeof n.viewImageDescriptions && (e.textAndImages.viewImageDescriptions = l._t.create({
             value: n.viewImageDescriptions
-        }), t = !0), "boolean" == typeof n.showCommandSuggestions && (e.textAndImages.showCommandSuggestions = a._t.create({
+        }), t = !0), "boolean" == typeof n.showCommandSuggestions && (e.textAndImages.showCommandSuggestions = l._t.create({
             value: n.showCommandSuggestions
-        }), t = !0), "boolean" == typeof n.alwaysPreviewVideo && (e.voiceAndVideo.alwaysPreviewVideo = a._t.create({
+        }), t = !0), "boolean" == typeof n.alwaysPreviewVideo && (e.voiceAndVideo.alwaysPreviewVideo = l._t.create({
             value: n.alwaysPreviewVideo
-        }), t = !0), "boolean" == typeof n.notifyFriendsOnGoLive && (e.notifications.notifyFriendsOnGoLive = a._t.create({
+        }), t = !0), "boolean" == typeof n.notifyFriendsOnGoLive && (e.notifications.notifyFriendsOnGoLive = l._t.create({
             value: n.notifyFriendsOnGoLive
-        }), t = !0), "boolean" == typeof n.installShortcutDesktop && (e.gameLibrary.installShortcutDesktop = a._t.create({
+        }), t = !0), "boolean" == typeof n.installShortcutDesktop && (e.gameLibrary.installShortcutDesktop = l._t.create({
             value: n.installShortcutDesktop
-        }), t = !0), "boolean" == typeof n.installShortcutStartMenu && (e.gameLibrary.installShortcutStartMenu = a._t.create({
+        }), t = !0), "boolean" == typeof n.installShortcutStartMenu && (e.gameLibrary.installShortcutStartMenu = l._t.create({
             value: n.installShortcutStartMenu
-        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyFriends && (e.privacy.allowActivityPartyPrivacyFriends = a._t.create({
+        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyFriends && (e.privacy.allowActivityPartyPrivacyFriends = l._t.create({
             value: n.allowActivityPartyPrivacyFriends
-        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyVoiceChannel && (e.privacy.allowActivityPartyPrivacyVoiceChannel = a._t.create({
+        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyVoiceChannel && (e.privacy.allowActivityPartyPrivacyVoiceChannel = l._t.create({
             value: n.allowActivityPartyPrivacyVoiceChannel
-        }), t = !0), "boolean" == typeof n.rtcPanelShowVoiceStates && (e.debug.rtcPanelShowVoiceStates = a._t.create({
+        }), t = !0), "boolean" == typeof n.rtcPanelShowVoiceStates && (e.debug.rtcPanelShowVoiceStates = l._t.create({
             value: n.rtcPanelShowVoiceStates
         }), t = !0), t
     },
     cleanup() {}
 }, {
     version: 7,
-    run: e => g(e, d._2.APPLICATION_COMMAND_TOOLTIP, r.M.APPLICATION_COMMAND_TOOLTIP),
+    run: e => g(e, d._2.APPLICATION_COMMAND_TOOLTIP, a.M.APPLICATION_COMMAND_TOOLTIP),
     cleanup() {}
 }, {
     version: 8,
-    run: e => g(e, d._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, r.M.CHANNELINFO_CHANNELBANNER_NOTICE),
+    run: e => g(e, d._2.CHANNEL_BANNER_MEMBER_LIST_NOTICE, a.M.CHANNELINFO_CHANNELBANNER_NOTICE),
     cleanup() {}
 }, {
     version: 9,
-    run: e => (d.HP.hasHiddenHotspot(d._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(_.JE, "true"), g(e, d._2.MULTI_ACCOUNT_TOOLTIP, r.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
+    run: e => (d.HP.hasHiddenHotspot(d._2.MULTI_ACCOUNT_TOOLTIP) && s.w.set(_.JE, "true"), g(e, d._2.MULTI_ACCOUNT_TOOLTIP, a.M.ACCOUNT_MULTIACCOUNT_TOOLTIP)),
     cleanup() {}
 }, {
     version: 10,
     run(e) {
-        let t = g(e, d._2.HUB_LINK_CHANNEL_NOTICE, r.M.CHANNEL_NOTICE_HUBLINK),
+        let t = g(e, d._2.HUB_LINK_CHANNEL_NOTICE, a.M.CHANNEL_NOTICE_HUBLINK),
             n = s.w.get("channelNotices") ?? {};
-        return !1 === n[h.n5X.INVITE] && m(e, r.M.CHANNEL_NOTICE_INVITE) && (t = !0), !1 === n[h.n5X.QUICKSWITCHER] && m(e, r.M.CHANNEL_NOTICE_QUICKSWITCHER) && (t = !0), !1 === n[h.n5X.GUILD_BOOSTING] && m(e, r.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (t = !0), t
+        return !1 === n[h.n5X.INVITE] && m(e, a.M.CHANNEL_NOTICE_INVITE) && (t = !0), !1 === n[h.n5X.QUICKSWITCHER] && m(e, a.M.CHANNEL_NOTICE_QUICKSWITCHER) && (t = !0), !1 === n[h.n5X.GUILD_BOOSTING] && m(e, a.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION) && (t = !0), t
     },
     cleanup() {
         s.w.remove("channelNotices")
@@ -132,14 +132,14 @@ let p = [{
     version: 11,
     run(e) {
         let t = !1;
-        return g(e, d._2.GUILD_EVENT_UPSELL, r.M.GUILD_HEADER_EVENT_UPSELL) && (t = !0), g(e, d._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, r.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = !0), t
+        return g(e, d._2.GUILD_EVENT_UPSELL, a.M.GUILD_HEADER_EVENT_UPSELL) && (t = !0), g(e, d._2.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP, a.M.GUILD_HEADER_ANIMATED_GUILD_BANNER) && (t = !0), t
     },
     cleanup() {}
 }, {
     version: 12,
     run(e) {
         let t = !1;
-        return s.w.get("hideNag") && m(e, r.M.NAGBAR_NOTICE_DOWNLOAD) && (t = !0), s.w.get("hideConnectSpotify") && m(e, r.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = !0), s.w.get("hideConnectPlayStation") && m(e, r.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = !0), t
+        return s.w.get("hideNag") && m(e, a.M.NAGBAR_NOTICE_DOWNLOAD) && (t = !0), s.w.get("hideConnectSpotify") && m(e, a.M.NAGBAR_NOTICE_CONNECT_SPOTIFY) && (t = !0), s.w.get("hideConnectPlayStation") && m(e, a.M.NAGBAR_NOTICE_CONNECT_PLAYSTATION) && (t = !0), t
     },
     cleanup() {
         s.w.remove("hideNag"), s.w.remove("hideConnectSpotify"), s.w.remove("hideConnectPlayStation")
@@ -148,18 +148,18 @@ let p = [{
     version: 13,
     run(e) {
         let t = !1;
-        return s.w.get("hidePremiumPromo") && m(e, r.M.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = !0), s.w.get("hidePremiumTier2TrialEnding") && m(e, r.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = !0), s.w.get("hidePremiumReactivateNotice") && m(e, r.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = !0), t
+        return s.w.get("hidePremiumPromo") && m(e, a.M.NAGBAR_NOTICE_PREMIUM_PROMO) && (t = !0), s.w.get("hidePremiumTier2TrialEnding") && m(e, a.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (t = !0), s.w.get("hidePremiumReactivateNotice") && m(e, a.M.NAGBAR_NOTICE_PREMIUM_REACTIVATE) && (t = !0), t
     },
     cleanup() {
         s.w.remove("hidePremiumPromo"), s.w.remove("hidePremiumTier2TrialEnding"), s.w.remove("hidePremiumReactivateNotice")
     }
 }, {
     version: 14,
-    run: e => g(e, d._2.ACTIVITY_BEB_TUTORIAL, r.M.ACTIVITIES_TUTORIAL_COACH_MARK),
+    run: e => g(e, d._2.ACTIVITY_BEB_TUTORIAL, a.M.ACTIVITIES_TUTORIAL_COACH_MARK),
     cleanup() {}
 }, {
     version: 15,
-    run: e => g(e, d._2.NOW_PLAYING_CONSENT_CARD, r.M.NOW_PLAYING_CONSENT_CARD),
+    run: e => g(e, d._2.NOW_PLAYING_CONSENT_CARD, a.M.NOW_PLAYING_CONSENT_CARD),
     cleanup() {}
 }, {
     version: 16,
@@ -167,7 +167,7 @@ let p = [{
         let t = s.w.get("PromotionsPersistedStore");
         if (null == t) return !1;
         let n = t._state.lastDismissedOutboundPromotionStartDate;
-        return null != n && (null == e.userContent && (e.userContent = l.YW.create()), null == e.userContent.lastDismissedOutboundPromotionStartDate) && (e.userContent.lastDismissedOutboundPromotionStartDate = a.hU.create({
+        return null != n && (null == e.userContent && (e.userContent = r.YW.create()), null == e.userContent.lastDismissedOutboundPromotionStartDate) && (e.userContent.lastDismissedOutboundPromotionStartDate = l.hU.create({
             value: n
         }), !0)
     },
@@ -180,7 +180,7 @@ let p = [{
         } = i.Ay.PersistedStore.migrateAndReadStoreState("ExpressionSuggestionsPersistedStore", null);
         if (null == t) return !1;
         let n = t.expressionSuggestionsEnabled;
-        return null != n && (null == e.textAndImages && (e.textAndImages = l.oJ.create()), null == e.textAndImages.expressionSuggestionsEnabled) && (e.textAndImages.expressionSuggestionsEnabled = a._t.create({
+        return null != n && (null == e.textAndImages && (e.textAndImages = r.oJ.create()), null == e.textAndImages.expressionSuggestionsEnabled) && (e.textAndImages.expressionSuggestionsEnabled = l._t.create({
             value: n
         }), !0)
     },
@@ -191,14 +191,14 @@ let p = [{
     version: 18,
     run(e) {
         let t = !1;
-        return g(e, d._2.GUILD_DELETE_FEEDBACK, r.M.GUILD_DELETE_FEEDBACK) && (t = !0), g(e, d._2.GUILD_LEAVE_FEEDBACK, r.M.GUILD_LEAVE_FEEDBACK) && (t = !0), t
+        return g(e, d._2.GUILD_DELETE_FEEDBACK, a.M.GUILD_DELETE_FEEDBACK) && (t = !0), g(e, d._2.GUILD_LEAVE_FEEDBACK, a.M.GUILD_LEAVE_FEEDBACK) && (t = !0), t
     },
     cleanup() {}
 }, {
     version: 19,
     run(e) {
         let t = !1;
-        return s.w.get("forumHelperCardStorageKey") && (t = m(e, r.M.FORUM_CHANNEL_HELPER_CARD)), t
+        return s.w.get("forumHelperCardStorageKey") && (t = m(e, a.M.FORUM_CHANNEL_HELPER_CARD)), t
     },
     cleanup() {
         s.w.remove("forumHelperCardStorageKey")
@@ -209,7 +209,7 @@ let p = [{
         let t = s.w.get("lastChangeLogId");
         if (null == t) return !1;
         if (!(0, o.hT)(t)) return s.w.remove("lastChangeLogId"), !1;
-        if (null == e.userContent) e.userContent = l.YW.create();
+        if (null == e.userContent) e.userContent = r.YW.create();
         else if (null != e.userContent && null != e.userContent.lastReceivedChangelogId && "0" !== e.userContent.lastReceivedChangelogId) return s.w.remove("lastChangeLogId"), !1;
         return e.userContent.lastReceivedChangelogId = t, !0
     },
@@ -218,6 +218,6 @@ let p = [{
     }
 }, {
     version: 21,
-    run: e => e.appearance?.uiDensity === l.NS.COMPACT && (e.appearance.uiDensity = l.NS.DEFAULT, !0),
+    run: e => e.appearance?.uiDensity === r.NS.COMPACT && (e.appearance.uiDensity = r.NS.DEFAULT, !0),
     cleanup() {}
 }]

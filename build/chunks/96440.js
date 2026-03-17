@@ -3,8 +3,8 @@ n.d(t, {
     W: () => b
 }), n(321073);
 var i = n(627968),
-    r = n(311907),
-    l = n(793574),
+    l = n(311907),
+    r = n(793574),
     a = n(688810),
     s = n(522305),
     o = n(735991),
@@ -39,11 +39,11 @@ function b(e) {
         botUserId: t?.bot?.id
     }), j = null != t && (0, o.Ag)(t), L = null != y && j && N, {
         analyticsLocations: R
-    } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), P = (0, r.bG)([A.A], () => A.A.getChannelId()), M = (0, E.et)(P), D = (0, r.bG)([C.Ay], () => {
+    } = (0, a.Ay)(r.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, E.et)(P), M = (0, l.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), w = (0, r.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, I.A)(), k = M === E.xy.CAN_LAUNCH, U = null != D && w?.compositeInstanceId === D, G = null != n ? n : b.customId, B = (0, p.e)(t), F = [];
+    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, I.A)(), k = D === E.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, G = null != n ? n : b.customId, B = (0, p.e)(t), F = [];
     B ? F.push({
         label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,
@@ -53,13 +53,13 @@ function b(e) {
             })
         }
     }) : (k && F.push({
-        label: null == D ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
+        label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, f.su)({
                 channelId: P ?? void 0,
                 applicationId: t.id,
-                isStart: null == D,
+                isStart: null == M,
                 embeddedActivitiesManager: O,
                 customId: G,
                 referrerId: T,

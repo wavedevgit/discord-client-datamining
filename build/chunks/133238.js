@@ -75,12 +75,12 @@ function E(e) {
         r(), c.A.favoriteGuildEnabled || (0, f.tV)(!0), (0, f.Jz)(e.id, n)
     }
     if (0 === N.length) return I(d.Gg5, () => S(null));
-    let F = p.intl.string(b.default.CgmkFJ);
+    let j = p.intl.string(b.default.CgmkFJ);
     return I(d.Gg5, () => S(null), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.rXV, {
             children: (0, i.jsx)(d.Drp, {
                 id: `favorite-${G.channel.id}`,
-                label: F,
+                label: j,
                 action: () => S("null" === G.channel.id ? null : G.channel.id)
             }, G.channel.id)
         }), (0, i.jsx)(d.rXV, {

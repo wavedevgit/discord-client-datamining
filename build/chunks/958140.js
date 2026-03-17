@@ -51,7 +51,7 @@ function P(e) {
     } = (0, x.$j)({
         guildId: t.guild_id,
         location: "HangStatusPicker"
-    }), F = (0, E.hy)(B), K = s.useRef(null), [Y, W] = s.useState(w?.status ?? ""), [z, q] = s.useState(w?.emoji ?? null), [X, Q] = s.useState(!1), J = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[J], Z = V.length > 0, ee = null == Y || "" === Y.trim(), et = (0, b.A)(t), en = Y.trim().length > 0 && Y.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = Y.length > 0 || null != z, [ea, eo] = (0, p.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
+    }), F = (0, E.hy)(B), K = s.useRef(null), [W, Y] = s.useState(w?.status ?? ""), [z, q] = s.useState(w?.emoji ?? null), [X, Q] = s.useState(!1), J = (0, d.bG)([C.A], () => C.A.getCurrentHangStatus()), $ = F[J], Z = V.length > 0, ee = null == W || "" === W.trim(), et = (0, b.A)(t), en = W.trim().length > 0 && W.trim() !== w?.status?.trim() || null != z && !o()(z, w?.emoji), [ei, es] = s.useState(!1), el = (0, d.bG)([C.A], () => C.A.getFavoritedStatuses().length >= C.x), er = W.length > 0 || null != z, [ea, eo] = (0, p.kn)([u.M.HANG_STATUS_POPOVER_NUX]);
     s.useEffect(() => {
         _.default.track(O.HAw.HANG_STATUS_PICKER_OPENED, {
             ...(0, I.A)(t.id),
@@ -59,35 +59,35 @@ function P(e) {
             num_recents: k.length
         })
     }, []), s.useEffect(() => {
-        Y.trim().length > 0 && ei && es(!1), null == z && ei && es(!1)
-    }, [Y, z, ei]), s.useEffect(() => {
-        X || Y !== (w?.status ?? "") && "" !== Y.trim() ? n(!0) : n(!1)
-    }, [Y, w?.status, z, w?.emoji, n, X]), s.useEffect(() => {
+        W.trim().length > 0 && ei && es(!1), null == z && ei && es(!1)
+    }, [W, z, ei]), s.useEffect(() => {
+        X || W !== (w?.status ?? "") && "" !== W.trim() ? n(!0) : n(!1)
+    }, [W, w?.status, z, w?.emoji, n, X]), s.useEffect(() => {
         a?.(K?.current)
     }, [K, a]);
     let ec = s.useCallback(e => {
-            e !== J && ((0, f.Iq)(e, !0), null != z && q(null), "" !== Y.trim() && W(""))
-        }, [J, z, Y]),
+            e !== J && ((0, f.Iq)(e, !0), null != z && q(null), "" !== W.trim() && Y(""))
+        }, [J, z, W]),
         ed = s.useCallback(() => {
-            q(null), W(""), Q(!1)
+            q(null), Y(""), Q(!1)
         }, []),
         eu = s.useCallback(e => {
             let {
                 emoji: t,
                 status: n
             } = e;
-            o()(t, w?.emoji) && n === w?.status || ((0, f.hS)(e.status, e.emoji, !0), q(e.emoji), W(e.status))
+            o()(t, w?.emoji) && n === w?.status || ((0, f.hS)(e.status, e.emoji, !0), q(e.emoji), Y(e.status))
         }, [w?.emoji, w?.status]),
         eh = s.useCallback(e => {
-            e?.preventDefault?.(), null != z && 0 === Y.trim().length && es(!0), ee || (eu({
-                status: Y,
+            e?.preventDefault?.(), null != z && 0 === W.trim().length && es(!0), ee || (eu({
+                status: W,
                 emoji: z ?? {
                     id: null,
                     name: "\uD83D\uDCAD",
                     animated: !1
                 }
             }), P.current?.blur(), Q(!1))
-        }, [Y, z, eu, ee]),
+        }, [W, z, eu, ee]),
         eA = s.useCallback(() => {
             let e = null,
                 n = null;
@@ -101,7 +101,7 @@ function P(e) {
                         name: e?.optionallyDiverseSequence ?? "",
                         animated: !1
                     }, 1 === et.length)) break; while (null == e || e?.name == null || o()(z, n));
-            null != n && e?.name != null && (q(n), W(e.name), Q(!0), P.current?.focus(), _.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, I.A)(t.id)))
+            null != n && e?.name != null && (q(n), Y(e.name), Q(!0), P.current?.focus(), _.default.track(O.HAw.HANG_STATUS_RANDOMIZER_CLICKED, (0, I.A)(t.id)))
         }, [et, z, t.id]),
         em = s.useCallback((e, n) => {
             let i = (0, N.A)(n);
@@ -145,10 +145,10 @@ function P(e) {
             }, `${n}-${t}`)
         }, [B, eu, ec, F, em]),
         ef = s.useCallback(() => {
-            (0, f.eK)(!0, H), q(null), W(""), Q(!1)
+            (0, f.eK)(!0, H), q(null), Y(""), Q(!1)
         }, [H]),
         ex = s.useCallback(e => {
-            Q(!0), W(e.substring(0, 60))
+            Q(!0), Y(e.substring(0, 60))
         }, []);
     return (0, i.jsxs)("div", {
         ref: K,
@@ -177,7 +177,7 @@ function P(e) {
                     className: D.bd,
                     children: [(0, i.jsx)(A.ksK, {
                         inputRef: P,
-                        value: X || er ? Y : $?.title ?? "",
+                        value: X || er ? W : $?.title ?? "",
                         onBlur: ep,
                         onFocus: eg,
                         onChange: ex,
@@ -196,7 +196,7 @@ function P(e) {
                             icon: A.KS6,
                             onClick: eh,
                             "aria-label": M.intl.string(M.t["R3BPH+"]),
-                            disabled: 0 === Y.length
+                            disabled: 0 === W.length
                         } : void 0 : {
                             icon: A.ucK,
                             onClick: ef,

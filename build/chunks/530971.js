@@ -43,7 +43,7 @@ function A(e) {
             return s === e.skuId
         })), [s]),
         O = (0, o.f)("CollectiblesContent"),
-        y = r.useCallback(e => {
+        N = r.useCallback(e => {
             let {
                 sourceButton: t,
                 categorySkuId: s,
@@ -57,22 +57,22 @@ function A(e) {
             L(s), k(!r), c(i, a)
         }, [A, c, u]),
         {
-            searchError: N
+            searchError: y
         } = (0, g.S)();
-    return null != N ? (0, n.jsx)(E.A, {}) : null != p ? (0, n.jsx)(h.h, {
+    return null != y ? (0, n.jsx)(E.A, {}) : null != p ? (0, n.jsx)(h.h, {
         onRetry: _,
         errorMessage: p,
         errorOrigin: h.A.SHOP_PAGE
     }) : t === C.G2.HOME && O ? (0, n.jsx)(x.A, {
         tab: l.g.HOME,
         transitionState: d,
-        handleTransition: y
+        handleTransition: N
     }) : t === C.G2.ORBS && O ? (0, n.jsx)(x.A, {
         tab: l.g.ORBS,
         transitionState: d,
-        handleTransition: y
+        handleTransition: N
     }) : b.includes(t) ? (0, n.jsx)(f.A, {
-        handleTransition: y,
+        handleTransition: N,
         tab: t,
         transitionState: d
     }) : (0, n.jsx)(m.A, {

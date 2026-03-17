@@ -6,14 +6,14 @@ var n = i(627968);
 i(64700);
 var l = i(311907),
     s = i(397927),
-    r = i(576705),
-    a = i(652215),
-    d = i(349828),
+    r = i(5180),
+    a = i(576705),
+    d = i(652215),
     c = i(985018);
 
 function o(e) {
-    let t = (0, l.bG)([r.A], () => r.A.can(a.xBc.MANAGE_CHANNELS, e));
-    return __OVERLAY__ ? null : e.id === d.Vc ? (0, n.jsx)(s.Drp, {
+    let t = (0, l.bG)([a.A], () => a.A.can(d.xBc.MANAGE_CHANNELS, e));
+    return __OVERLAY__ ? null : (0, r.ai)(e.id) ? (0, n.jsx)(s.Drp, {
         id: "create-category",
         label: c.intl.string(c.t["ISN+NM"]),
         action: () => (0, s.mMO)(async () => {
@@ -33,7 +33,7 @@ function o(e) {
             } = await Promise.all([i.e("8018"), i.e("93142"), i.e("64233"), i.e("76738")]).then(i.bind(i, 409200));
             return i => (0, n.jsx)(t, {
                 ...i,
-                channelType: a.rbe.GUILD_TEXT,
+                channelType: d.rbe.GUILD_TEXT,
                 guildId: e.id
             })
         })
@@ -46,7 +46,7 @@ function o(e) {
             } = await Promise.all([i.e("8018"), i.e("93142"), i.e("64233"), i.e("76738")]).then(i.bind(i, 409200));
             return i => (0, n.jsx)(t, {
                 ...i,
-                channelType: a.rbe.GUILD_CATEGORY,
+                channelType: d.rbe.GUILD_CATEGORY,
                 guildId: e.id
             })
         })

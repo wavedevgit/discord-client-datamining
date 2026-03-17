@@ -1,10 +1,10 @@
 /** chunk id: 795982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => M
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(158954),
+    l = n(64700),
+    r = n(158954),
     a = n(311907),
     s = n(52133),
     o = n(827734),
@@ -37,7 +37,7 @@ function L() {
             size: "xs",
             className: j.nr,
             color: o.A.colors.TEXT_MUTED
-        }), (0, i.jsx)(l.EYj, {
+        }), (0, i.jsx)(r.EYj, {
             className: j.TK,
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, a.bG)([x.A, v.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, a.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
+    } = e, _ = l.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, a.bG)([x.A, v.default, E.A, I.A, C.A, u.A], () => _.getForwardInfo(x.A, v.default, E.A, I.A, C.A, u.A).footerInfo, [_], s.A), h = (0, a.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = l.useCallback(() => {
         (0, T.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -64,7 +64,7 @@ function R(e) {
             alt: ""
         }) : null, null == m.originIconUrl && h?.isThread() ? (0, i.jsx)(P, {
             channel: h
-        }) : null, (0, i.jsx)(l.EYj, {
+        }) : null, (0, i.jsx)(r.EYj, {
             className: j.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -81,20 +81,20 @@ function P(e) {
         channel: t
     } = e, n = (0, g.Vp)({
         location: "ForwardFooter"
-    }), l = r.useMemo(() => (0, c.gU)(t), [t]);
-    return n.enabled && null != l ? (0, i.jsx)(l, {
+    }), r = l.useMemo(() => (0, c.gU)(t), [t]);
+    return n.enabled && null != r ? (0, i.jsx)(r, {
         className: j.yl,
         size: "xs",
         color: "currentColor"
     }) : null
 }
 
-function M(e) {
+function D(e) {
     let {
         message: t,
         snapshot: n,
-        index: l
-    } = e, s = r.useMemo(() => (0, S.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, a.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
+        index: r
+    } = e, s = l.useMemo(() => (0, S.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, a.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
         hasBailedAst: I
@@ -132,18 +132,18 @@ function M(e) {
             }), (0, i.jsx)(R, {
                 message: t,
                 snapshot: n,
-                index: l
+                index: r
             })]
         })]
-    }, l)
+    }, r)
 }
 
-function D(e) {
+function M(e) {
     let {
         message: t
     } = e;
     return (0, i.jsx)(i.Fragment, {
-        children: t.messageSnapshots.map((e, n) => (0, i.jsx)(M, {
+        children: t.messageSnapshots.map((e, n) => (0, i.jsx)(D, {
             message: t,
             snapshot: e,
             index: n

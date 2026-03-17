@@ -27,9 +27,9 @@ let f = "ease-in-out",
     b = [6, 10, 9, 16, 8],
     S = 6.67 / 8,
     R = "M16.5 18H16a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-.5v-.5a2.5 2.5 0 0 0-5 0v.5Zm3.5 0v-.5a1 1 0 1 0-2 0v.5h2Z",
-    y = `translate(${12.33-15*S}, ${1-15.5*S}) scale(${S})`;
+    D = `translate(${12.33-15*S}, ${1-15.5*S}) scale(${S})`;
 
-function D(e, t) {
+function y(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : m,
         l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 2,
         i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 16;
@@ -53,13 +53,13 @@ let M = {
         },
         states: {
             burst: {
-                getHeights: e => D(e, 4),
+                getHeights: e => y(e, 4),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => D(e, 3),
+                getHeights: e => y(e, 3),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
@@ -85,49 +85,49 @@ let M = {
                 getNextState: () => "waveBuildCenter"
             },
             waveBuildCenter: {
-                getHeights: e => D(e, 3, E),
+                getHeights: e => y(e, 3, E),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildRight1"
             },
             waveBuildRight1: {
-                getHeights: e => D(e, 4, N, 1),
+                getHeights: e => y(e, 4, N, 1),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveBuildRight2"
             },
             waveBuildRight2: {
-                getHeights: e => D(e, 4, A, 1),
+                getHeights: e => y(e, 4, A, 1),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "wavePeakRight"
             },
             wavePeakRight: {
-                getHeights: e => D(e, 4, x, 1),
+                getHeights: e => y(e, 4, x, 1),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveReturnLeft1"
             },
             waveReturnLeft1: {
-                getHeights: e => D(e, 5, T),
+                getHeights: e => y(e, 5, T),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "waveReturnLeft2"
             },
             waveReturnLeft2: {
-                getHeights: e => D(e, 5, v),
+                getHeights: e => y(e, 5, v),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(32, 64),
                 getNextState: () => "burst"
             },
             burst: {
-                getHeights: e => D(e, 4),
+                getHeights: e => y(e, 4),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => D(e, 3),
+                getHeights: e => y(e, 3),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
@@ -142,13 +142,13 @@ let M = {
         },
         states: {
             burst: {
-                getHeights: e => D(e, 7, b),
+                getHeights: e => y(e, 7, b),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(3e3, 6e3),
                 getNextState: () => "quiet"
             },
             quiet: {
-                getHeights: e => D(e, 4, b),
+                getHeights: e => y(e, 4, b),
                 getAnimationDelay: () => C(64, 128),
                 getStateDuration: () => C(1e3, 3e3),
                 getNextState: () => "burst"
@@ -198,23 +198,23 @@ function I(e) {
         }, []),
         b = (0, r.K)(v, .15),
         S = i.useRef([, , , , , ].fill(0)),
-        D = M[f],
+        y = M[f],
         C = !A || !x,
         I = (m - 18) / 2,
-        _ = C ? 0 : D.transitionConfig.durationMs,
+        _ = C ? 0 : y.transitionConfig.durationMs,
         L = i.useRef(null),
         w = i.useMemo(() => ({
             transitionProperty: "transform",
             transitionDuration: `${_}ms`,
-            transitionTimingFunction: D.transitionConfig.timingFunction
-        }), [D.transitionConfig.timingFunction, _]),
-        G = i.useMemo(() => ({
+            transitionTimingFunction: y.transitionConfig.timingFunction
+        }), [y.transitionConfig.timingFunction, _]),
+        O = i.useMemo(() => ({
             ...w,
             width: 2,
             height: 16,
             backgroundColor: u
         }), [w, u]),
-        O = i.useMemo(() => ({
+        G = i.useMemo(() => ({
             left: I,
             top: (m - 16) / 2,
             width: 18,
@@ -234,10 +234,10 @@ function I(e) {
             }
         }, [L]);
     i.useLayoutEffect(() => {
-        C || P(D.states[D.firstState].getHeights(S.current))
-    }, [P, D, C]), t = i.useRef(D.firstState), n = i.useRef(null), a = !C, i.useEffect(() => {
+        C || P(y.states[y.firstState].getHeights(S.current))
+    }, [P, y, C]), t = i.useRef(y.firstState), n = i.useRef(null), a = !C, i.useEffect(() => {
         if (!a) return;
-        t.current = D.firstState, n.current = null;
+        t.current = y.firstState, n.current = null;
         let e = null,
             l = !1;
         n.current = {
@@ -263,9 +263,9 @@ function I(e) {
                 if (l) return;
                 e = null, i.now = Date.now();
                 let n = t.current,
-                    a = D.states[n];
+                    a = y.states[n];
                 if (null == a) {
-                    t.current = D.firstState, r(0);
+                    t.current = y.firstState, r(0);
                     return
                 }
                 try {
@@ -278,16 +278,16 @@ function I(e) {
                 if (0 === i.stateEndTime || i.now >= i.stateEndTime) {
                     let e = a.getNextState();
                     t.current = e;
-                    let n = D.states[e];
+                    let n = y.states[e];
                     null != n && s(n)
                 }
                 r(a.getAnimationDelay())
             },
-            c = D.states[t.current];
+            c = y.states[t.current];
         return null != c && s(c), r(0), () => {
             l = !0, o()
         }
-    }, [P, a, D, S]);
+    }, [P, a, y, S]);
     let k = E ? `url(#${N})` : void 0;
     return (0, l.jsx)("span", {
         ref: b,
@@ -313,17 +313,17 @@ function I(e) {
                         children: (0, l.jsx)("div", {
                             ref: L,
                             className: g.Gb,
-                            style: O,
+                            style: G,
                             children: p.map(e => (0, l.jsx)("div", {
                                 className: g.M0,
-                                style: G
+                                style: O
                             }, e))
                         })
                     })
                 })
             }), E && (0, l.jsx)("path", {
                 d: R,
-                transform: y,
+                transform: D,
                 fill: u,
                 fillRule: "evenodd",
                 clipRule: "evenodd"
@@ -372,7 +372,7 @@ function _(e) {
                 })
             }), s && (0, l.jsx)("path", {
                 d: R,
-                transform: y,
+                transform: D,
                 fill: t,
                 fillRule: "evenodd",
                 clipRule: "evenodd"

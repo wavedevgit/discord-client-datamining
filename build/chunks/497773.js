@@ -4,16 +4,16 @@ a.d(t, {
 });
 var n = a(64700),
     i = a(311907),
-    s = a(620140),
-    l = a(38181),
+    l = a(620140),
+    s = a(38181),
     r = a(412461),
     o = a(310419),
     c = a(656106),
     d = a(652215);
 
 function u(e) {
-    let t = (0, i.bG)([l.A], () => l.A.getCategories()),
-        a = (0, s.A)(),
+    let t = (0, i.bG)([s.A], () => s.A.getCategories()),
+        a = (0, l.A)(),
         u = n.useMemo(() => [{
             id: a.id.toString(),
             label: a.name
@@ -21,21 +21,21 @@ function u(e) {
             id: e.id.toString(),
             label: e.name
         }))], [t, a]),
-        h = (0, o.R4)(),
-        m = n.useCallback(e => {
+        m = (0, o.R4)(),
+        h = n.useCallback(e => {
             let t = u.find(t => t.id === e);
             null != t && ((0, r.TR)(d.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
                 category: t.label,
                 category_id: Number(t.id),
-                current_page: h?.type
+                current_page: m?.type
             }), (0, c.kq)({
                 categoryId: e
             }))
-        }, [h?.type, u]),
+        }, [m?.type, u]),
         p = null != e && u.some(t => t.id === e) ? e : u[0].id;
     return {
         tabs: u,
         selectedTab: p,
-        onSelectTab: m
+        onSelectTab: h
     }
 }

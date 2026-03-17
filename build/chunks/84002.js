@@ -1,23 +1,23 @@
 /** chunk id: 84002 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(652215);
-let r = "<removed>";
+let a = "<removed>";
 
-function l(e) {
+function r(e) {
     var t, n;
-    let l = {
+    let r = {
         ...e
     };
-    return "object" == typeof(t = l).args && "string" == typeof t.cmd && (l = function(e) {
+    return "object" == typeof(t = r).args && "string" == typeof t.cmd && (r = function(e) {
         switch (e.cmd) {
             case i.e$_.AUTHENTICATE:
             case i.e$_.GET_PROVIDER_ACCESS_TOKEN:
                 return {
                     ...e, args: {
                         ...e.args,
-                        access_token: r
+                        access_token: a
                     }
                 };
             default:
@@ -25,14 +25,14 @@ function l(e) {
                     ...e
                 }
         }
-    }(l)), "object" == typeof(n = l).data && "string" == typeof n.cmd && (l = function(e) {
+    }(r)), "object" == typeof(n = r).data && "string" == typeof n.cmd && (r = function(e) {
         switch (e.cmd) {
             case i.e$_.AUTHENTICATE:
             case i.e$_.GET_PROVIDER_ACCESS_TOKEN:
                 return {
                     ...e, data: {
                         ...e.data,
-                        access_token: r
+                        access_token: a
                     }
                 };
             default:
@@ -40,5 +40,5 @@ function l(e) {
                     ...e
                 }
         }
-    }(l)), l
+    }(r)), r
 }

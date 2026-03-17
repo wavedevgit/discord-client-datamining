@@ -38,7 +38,7 @@ let L = r.memo(function(e) {
         readyToClaim: k,
         collectibleProductSkuIds: T,
         collectedSkuIds: O
-    } = (0, E.K)(t, s), y = (0, o.bG)([p.A], () => p.A.isClaiming === s);
+    } = (0, E.K)(t, s), N = (0, o.bG)([p.A], () => p.A.isClaiming === s);
     return (0, n.jsx)(c.L, {
         onChange: l,
         threshold: 0,
@@ -163,7 +163,7 @@ let L = r.memo(function(e) {
                                 text: C.intl.string(C.t.VnVTNc),
                                 fullWidth: !0,
                                 disabled: !k,
-                                loading: y
+                                loading: N
                             })
                         })
                     })]

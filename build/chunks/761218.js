@@ -38,14 +38,14 @@ let S = {
         r.useEffect(() => {
             for (let e of s)(0, u.qf)(C.Kf, e)
         }, [s]);
-        let y = r.useMemo(() => {
+        let N = r.useMemo(() => {
                 let e = a()(),
                     t = Math.max(a()(l).diff(e, "days"), 1);
                 return b.intl.formatToPlainString(b.t.BXpdIg, {
                     days: t
                 })
             }, [l]),
-            N = r.useCallback((e, t) => {
+            y = r.useCallback((e, t) => {
                 f.default.track(E.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                     collectibles_shop_session_id: L?.sessionId,
                     page_type: v,
@@ -64,22 +64,22 @@ let S = {
                 })
             }, []),
             B = r.useCallback(() => {
-                N("go_to_game_shop"), (0, g.default)({
+                y("go_to_game_shop"), (0, g.default)({
                     guildId: C.Kf
                 })
-            }, [N]),
+            }, [y]),
             M = r.useCallback(e => {
-                N("card_click", e), (0, m.R)({
+                y("card_click", e), (0, m.R)({
                     skuId: e,
                     applicationId: C.XR,
                     guildId: C.Kf,
                     isStorefront: !1,
                     analyticsLocations: j
                 })
-            }, [N, j]),
+            }, [y, j]),
             P = r.useCallback(() => {
-                N("dismiss"), t()
-            }, [N, t]),
+                y("dismiss"), t()
+            }, [y, t]),
             D = r.useCallback(e => {
                 T.current || (e ? null === O.current && (O.current = setTimeout(() => {
                     T.current = !0, O.current = null, f.default.track(E.HAw.COLLECTIBLES_TILE_IMPRESSION, {
@@ -111,11 +111,11 @@ let S = {
                         })
                     }), (0, n.jsxs)("div", {
                         className: A.xf,
-                        children: [null != y && (0, n.jsx)("div", {
+                        children: [null != N && (0, n.jsx)("div", {
                             className: A.qw,
                             children: (0, n.jsx)(i.Exy, {
                                 type: {
-                                    text: `${b.intl.string(b.t.yYEZGi)} (${y})`
+                                    text: `${b.intl.string(b.t.yYEZGi)} (${N})`
                                 },
                                 variant: "brand"
                             })

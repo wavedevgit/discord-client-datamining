@@ -47,8 +47,8 @@ var i = n(627968),
     H = n(123973),
     F = n(447404),
     K = n(246356),
-    Y = n(401685),
-    W = n(710801),
+    W = n(401685),
+    Y = n(710801),
     z = n(496841),
     q = n(383831),
     X = n(905216),
@@ -359,7 +359,7 @@ function ev(e) {
             color: "join",
             channel: t,
             className: eI.uH
-        }), m ? (0, i.jsx)(W.A, {
+        }), m ? (0, i.jsx)(Y.A, {
             color: "disconnect",
             channel: t,
             className: eI.uH,
@@ -380,7 +380,7 @@ let ej = function(e) {
         onDisconnectCall: l,
         exitFullScreen: a,
         idleProps: c
-    } = e, u = (0, Y.Bx)(), A = s.useRef(null), [p, g] = s.useState(void 0), x = (0, d.bG)([er.default], () => {
+    } = e, u = (0, W.Bx)(), A = s.useRef(null), [p, g] = s.useState(void 0), x = (0, d.bG)([er.default], () => {
         let e = er.default.getCurrentUser();
         return o()(null != e, "CenterControlTray: currentUser cannot be undefined"), e
     }), {
@@ -394,7 +394,7 @@ let ej = function(e) {
         canGoLive: G
     } = (0, d.cf)([es.Ay], () => ({
         canGoLive: (0, M.A)(es.Ay)
-    })), U = (0, O.A)(), k = (0, d.bG)([R.default], () => null != R.default.getAwaitingRemoteSessionInfo()), V = null != U, F = (0, d.bG)([el.A], () => (U?.channelId ?? el.A.getVoiceChannelId()) === t.id), W = (0, B.A)({
+    })), U = (0, O.A)(), k = (0, d.bG)([R.default], () => null != R.default.getAwaitingRemoteSessionInfo()), V = null != U, F = (0, d.bG)([el.A], () => (U?.channelId ?? el.A.getVoiceChannelId()) === t.id), Y = (0, B.A)({
         channelId: t.id
     }), z = (0, d.bG)([f.Ay], () => f.Ay.getCurrentEmbeddedActivity()), {
         reachedLimit: q,
@@ -522,7 +522,7 @@ let ej = function(e) {
                             })
                         }
                     })]
-                }), u < Y.vs.MINIMAL ? (0, i.jsxs)("div", {
+                }), u < W.vs.MINIMAL ? (0, i.jsxs)("div", {
                     className: eI.qi,
                     children: [!V && (0, i.jsx)(eb, {
                         channel: t,
@@ -540,7 +540,7 @@ let ej = function(e) {
                         themeable: !0,
                         whichPopoutIsOpen: p,
                         setWhichPopoutIsOpen: g
-                    }), W && (0, i.jsx)(eA.A, {
+                    }), Y && (0, i.jsx)(eA.A, {
                         channel: t,
                         themeable: !0,
                         whichPopoutIsOpen: p,

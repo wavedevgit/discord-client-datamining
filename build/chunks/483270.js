@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(985018),
     F = n(767952),
     K = n(701939);
-let Y = k.Ay.getEnableHardwareAcceleration(),
-    W = 44 + V.b,
+let W = k.Ay.getEnableHardwareAcceleration(),
+    Y = 44 + V.b,
     z = s.memo(function(e) {
         let {
             channel: t,
@@ -75,7 +75,7 @@ let Y = k.Ay.getEnableHardwareAcceleration(),
                 plainText: e,
                 rawText: n
             }), p.A.startTyping(t.id)
-        }, [_, t]), W = s.useCallback(e => {
+        }, [_, t]), Y = s.useCallback(e => {
             e.stopPropagation(), (0, C.K)({
                 guildId: t.guild_id,
                 location: {
@@ -108,7 +108,7 @@ let Y = k.Ay.getEnableHardwareAcceleration(),
                 return (0, i.jsx)(V.A, {
                     ref: o,
                     onContextMenu: F,
-                    shouldAnimateStatus: Y,
+                    shouldAnimateStatus: W,
                     user: _,
                     currentUser: f,
                     nick: A?.nick,
@@ -124,7 +124,7 @@ let Y = k.Ay.getEnableHardwareAcceleration(),
                     selected: q,
                     applicationStream: D,
                     premiumSince: null == Q ? null : new Date(Q),
-                    onClickPremiumGuildIcon: W,
+                    onClickPremiumGuildIcon: Y,
                     itemProps: G,
                     lostPermissionTooltipText: P ? void 0 : H.intl.string(H.t["/QcoTz"]),
                     isOwner: k,
@@ -210,7 +210,7 @@ function Q(e) {
         {
             navigator: T,
             listRef: v
-        } = (t = E, n = W, l = (0, h.bG)([g.A], () => g.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
+        } = (t = E, n = Y, l = (0, h.bG)([g.A], () => g.A.keyboardModeEnabled), a = s.useRef(null), u = s.useCallback((e, t) => {
             let i = a.current;
             if (null == i) return;
             let s = parseInt(t, 10),
@@ -285,7 +285,7 @@ function Q(e) {
                                 guildId: C.id
                             }, n.id)
                         },
-                        rowHeight: W,
+                        rowHeight: Y,
                         renderRow: e => {
                             let {
                                 section: t,

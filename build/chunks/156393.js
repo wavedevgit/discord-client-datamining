@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
-    a = n(554146),
+var a = n(503698),
+    r = n.n(a),
+    l = n(554146),
     s = n(397927),
     o = n(366999),
     d = n(826673),
@@ -17,9 +17,9 @@ var r = n(503698),
 function h(e) {
     let {
         expiresAt: t
-    } = e, n = (0, o.Ay)(t, o.yE.SHORT_TIME), r = (0, d.k8)(a.M.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);
-    return "" === n ? null : (n = n.toUpperCase(), r) ? (0, i.jsxs)("div", {
-        className: l()(A.Fg, A.Hh, {}),
+    } = e, n = (0, o.Ay)(t, o.yE.SHORT_TIME), a = (0, d.k8)(l.M.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2);
+    return "" === n ? null : (n = n.toUpperCase(), a) ? (0, i.jsxs)("div", {
+        className: r()(A.Fg, A.Hh, {}),
         children: [(0, i.jsx)(s.O4, {
             size: "custom",
             width: 14,

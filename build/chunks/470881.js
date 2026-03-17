@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(681154),
-    l = n(311907),
-    a = n(397927),
+var a = n(681154),
+    r = n(311907),
+    l = n(397927),
     s = n(429913),
     o = n(287809),
     d = n(985018),
@@ -15,7 +15,7 @@ var r = n(681154),
 function u(e) {
     let {
         item: t
-    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, u = n?.extra, A = n?.author_id, h = n?.content_type, _ = u?.type === "played_game_extra" || u?.type === "launched_activity_extra" ? u.application_id : void 0, m = (0, s.h)(_), g = (0, l.bG)([o.default], () => null != A ? o.default.getUser(A) : null, [A]), p = h === r.ContentInventoryEntryType.TOP_GAME, E = m?.getIconURL(240);
+    } = e, n = "contentInventory" === t.data.kind ? t.data.content : null, u = n?.extra, A = n?.author_id, h = n?.content_type, _ = u?.type === "played_game_extra" || u?.type === "launched_activity_extra" ? u.application_id : void 0, m = (0, s.h)(_), g = (0, r.bG)([o.default], () => null != A ? o.default.getUser(A) : null, [A]), p = h === a.ContentInventoryEntryType.TOP_GAME, E = m?.getIconURL(240);
     return u?.type !== "played_game_extra" || "contentInventory" !== t.data.kind || null == m || null == g || null == E ? null : (0, i.jsx)("div", {
         className: c.kL,
         children: (0, i.jsxs)("div", {
@@ -26,13 +26,13 @@ function u(e) {
                 className: c.Gt
             }), (0, i.jsxs)("div", {
                 className: c.Vx,
-                children: [(0, i.jsx)(a.Text, {
+                children: [(0, i.jsx)(l.Text, {
                     variant: "text-md/semibold",
                     color: "text-strong",
                     children: m.name
                 }), p && (0, i.jsx)("div", {
                     className: c.qS,
-                    children: (0, i.jsx)(a.Text, {
+                    children: (0, i.jsx)(l.Text, {
                         variant: "text-xs/semibold",
                         color: "text-brand",
                         children: d.intl.string(d.t["/50eHi"])

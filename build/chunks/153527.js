@@ -5,8 +5,8 @@ a.d(t, {
 });
 var n, i = a(627968);
 a(64700);
-var s = a(503698),
-    l = a.n(s),
+var l = a(503698),
+    s = a.n(l),
     r = a(742589),
     o = a(571338),
     c = a(403299),
@@ -17,18 +17,18 @@ function u(e) {
         selectedTabId: t,
         handleTransition: a,
         tabs: n,
-        state: s = "DEFAULT",
+        state: l = "DEFAULT",
         onAvailableWidthChange: d,
         icon: u,
-        endContent: h,
-        children: m
+        endContent: m,
+        children: h
     } = e;
     return (0, i.jsxs)(r.A, {
         className: c.jr,
-        toolbar: h,
+        toolbar: m,
         hideForLater: !0,
         hideSearch: !0,
-        children: ["DEFAULT" === s && (0, i.jsxs)(i.Fragment, {
+        children: ["DEFAULT" === l && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(u, {
                 color: "currentColor",
                 size: "md"
@@ -39,10 +39,10 @@ function u(e) {
                 onAvailableWidthChange: d
             })]
         }), (0, i.jsx)("div", {
-            className: l()(c.w4, {
-                [c.cS]: "SEARCH" === s
+            className: s()(c.w4, {
+                [c.cS]: "SEARCH" === l
             }),
-            children: m
+            children: h
         })]
     })
 }

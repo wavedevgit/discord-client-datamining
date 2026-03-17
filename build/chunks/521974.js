@@ -4,8 +4,8 @@ a.d(t, {
 });
 var n = a(627968),
     i = a(64700),
-    s = a(503698),
-    l = a.n(s),
+    l = a(503698),
+    s = a.n(l),
     r = a(397927),
     o = a(488995),
     c = a(51e4);
@@ -14,11 +14,11 @@ function d(e) {
     let {
         state: t,
         query: a,
-        placeholder: s,
+        placeholder: l,
         onTextChange: d,
         onCollapsedClick: u,
-        onClear: h,
-        onBlur: m,
+        onClear: m,
+        onBlur: h,
         onSubmit: p
     } = e, _ = i.useRef(null), g = i.useCallback(e => {
         "Enter" === e.key && p()
@@ -33,18 +33,18 @@ function d(e) {
             color: r.LU0.colors.ICON_STRONG
         })
     }) : (0, n.jsx)("div", {
-        className: l()(c.ON, {
+        className: s()(c.ON, {
             [c.Nz]: t === o.GlobalDiscoverySearchBarState.FLOATING
         }),
         children: (0, n.jsx)(r.IWV, {
             size: "sm",
             ref: _,
             query: a,
-            placeholder: s,
+            placeholder: l,
             onChange: d,
-            onClear: h,
+            onClear: m,
             onKeyDown: g,
-            onBlur: m
+            onBlur: h
         })
     })
 }

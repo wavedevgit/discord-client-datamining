@@ -4,9 +4,9 @@ n.d(t, {
     i: () => A
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(397927),
     o = n(442433),
     d = n(492749),
@@ -21,8 +21,8 @@ function g(e) {
     let {
         showEditProduct: t,
         showUnpublishProduct: n,
-        showCopyLink: r,
-        showTestDownload: l,
+        showCopyLink: l,
+        showTestDownload: r,
         showDeleteProduct: a,
         showReportProduct: o,
         onEditProduct: d,
@@ -52,7 +52,7 @@ function g(e) {
                         icon: s.R2l
                     },
                     action: d
-                }), r && (0, i.jsx)(s.Drp, {
+                }), l && (0, i.jsx)(s.Drp, {
                     id: "guild-product-copy-link",
                     label: h.intl.string(h.t.XR26uj),
                     icon: s.qYV,
@@ -61,7 +61,7 @@ function g(e) {
                         icon: s.qYV
                     },
                     action: _
-                }), l && (0, i.jsx)(s.Drp, {
+                }), r && (0, i.jsx)(s.Drp, {
                     id: "guild-product-test-download",
                     label: h.intl.string(h.t.aXoI6U),
                     icon: s.s3U,
@@ -98,7 +98,7 @@ function A(e) {
     let {
         product: t,
         guildId: n,
-        showEditProduct: l,
+        showEditProduct: r,
         showUnpublishProduct: a,
         showTestDownload: o,
         showCopyLink: d,
@@ -110,7 +110,7 @@ function A(e) {
         onCopyProductLink: x,
         onTestDownload: f,
         onReportProduct: C
-    } = e, I = r.useRef(null);
+    } = e, I = l.useRef(null);
     return (0, i.jsx)("div", {
         onClick: e => {
             e.stopPropagation()
@@ -125,7 +125,7 @@ function A(e) {
                 ...e,
                 guildId: n,
                 productId: t.id,
-                showEditProduct: l,
+                showEditProduct: r,
                 showUnpublishProduct: a,
                 showCopyLink: d,
                 showTestDownload: o,
@@ -140,7 +140,7 @@ function A(e) {
             }),
             children: (e, n) => {
                 let {
-                    isShown: r
+                    isShown: l
                 } = n;
                 return (0, i.jsx)(s.DUT, {
                     ...e,
@@ -149,7 +149,7 @@ function A(e) {
                         productName: t.name
                     }),
                     "aria-haspopup": "listbox",
-                    "aria-expanded": r,
+                    "aria-expanded": l,
                     className: p.hC,
                     children: (0, i.jsx)(s.FHP, {
                         size: "md",
@@ -167,8 +167,8 @@ function x(e) {
     let {
         product: t,
         guildId: n,
-        onEditProduct: r,
-        onUnpublishProduct: l,
+        onEditProduct: l,
+        onUnpublishProduct: r,
         onDeleteProduct: x,
         onCopyProductLink: f,
         onTestDownload: C,
@@ -179,7 +179,7 @@ function x(e) {
         className: a()(p.gc, p.Um, {
             [p.r9]: I
         }),
-        onClick: I ? void 0 : r,
+        onClick: I ? void 0 : l,
         onContextMenu: function(e) {
             (0, o.L3)(e, () => Promise.resolve(e => (0, i.jsx)(g, {
                 ...e,
@@ -192,8 +192,8 @@ function x(e) {
                 showTestDownload: null != t.attachments,
                 showDeleteProduct: !0,
                 showReportProduct: !1,
-                onEditProduct: r,
-                onUnpublishProduct: l,
+                onEditProduct: l,
+                onUnpublishProduct: r,
                 onDeleteProduct: x,
                 onCopyLink: f,
                 onTestDownload: C,
@@ -245,8 +245,8 @@ function x(e) {
                 showTestDownload: null != t.attachments,
                 showDeleteProduct: !0,
                 showReportProduct: !1,
-                onEditProduct: r,
-                onUnpublishProduct: l,
+                onEditProduct: l,
+                onUnpublishProduct: r,
                 onDeleteProduct: x,
                 onCopyProductLink: f,
                 onTestDownload: C,

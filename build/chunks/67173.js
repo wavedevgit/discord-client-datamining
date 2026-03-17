@@ -3,9 +3,9 @@ n.d(t, {
     A: () => R
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(497766),
     o = n(837381),
     d = n(158954),
@@ -33,7 +33,7 @@ let O = Math.ceil(Math.sqrt(115200)),
     R = function(e) {
         let {
             selected: t
-        } = e, n = (0, o.rm)("quests"), l = r.useRef(null), {
+        } = e, n = (0, o.rm)("quests"), r = a.useRef(null), {
             shouldShowPopover: R,
             shouldShowGradientAndBadge: P,
             dismissOnboardingContent: D
@@ -41,25 +41,25 @@ let O = Math.ceil(Math.sqrt(115200)),
             let e = (0, A.useHasAnyModalOpen)(),
                 t = (0, c.bG)([I.A], () => I.A.quests.size > 0),
                 [n, i] = (0, E.kn)(!e && t ? [u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], v.m.PRIVATE_CHANNELS_LIST, !0),
-                l = r.useCallback(() => {
+                r = a.useCallback(() => {
                     i(v.i.TAKE_ACTION)
                 }, [i]),
-                a = n === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
+                l = n === u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING,
                 s = (0, p.JZ)(u.M.QUEST_HOME_ENTRYPOINT_ONBOARDING);
             return {
-                shouldShowPopover: a,
+                shouldShowPopover: l,
                 shouldShowGradientAndBadge: t && !s,
-                dismissOnboardingContent: l
+                dismissOnboardingContent: r
             }
         }(), {
-            shouldShowQuestHomeHeroContent: j,
-            dismissQuestHomeHeroContent: M,
+            shouldShowQuestHomeHeroContent: M,
+            dismissQuestHomeHeroContent: j,
             questHomeHeroConfig: w
-        } = (0, C.I)(), U = r.useCallback(() => {
+        } = (0, C.I)(), U = a.useCallback(() => {
             S.A.getState().setUtmCurrentContext({
                 utmContentCurrent: "PRIMARY_QUEST_HOME"
-            }), j && M()
-        }, [j, M]), [{
+            }), M && j()
+        }, [M, j]), [{
             glowSpring: G
         }, k] = (0, _.zhh)(() => ({
             from: {
@@ -85,15 +85,15 @@ let O = Math.ceil(Math.sqrt(115200)),
             }
         })), H = (0, f.cR)({
             questHomeHeroConfig: w,
-            shouldShowQuestHomeHeroContent: j
-        }), F = r.useCallback(() => {
+            shouldShowQuestHomeHeroContent: M
+        }), F = a.useCallback(() => {
             B({
                 shineSpring: 1
             }), k({
                 glowSpring: 1,
                 delay: 200
             }), H.handleMouseEnter()
-        }, [B, k, H]), Y = r.useCallback(() => {
+        }, [B, k, H]), Y = a.useCallback(() => {
             B({
                 shineSpring: 0,
                 immediate: !0
@@ -101,7 +101,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 0,
                 delay: 0
             }), H.handleMouseLeave()
-        }, [B, k, H]), W = r.useCallback(() => {
+        }, [B, k, H]), W = a.useCallback(() => {
             B({
                 shineSpring: 1,
                 delay: 500
@@ -109,14 +109,14 @@ let O = Math.ceil(Math.sqrt(115200)),
                 glowSpring: 1,
                 delay: 700
             }), H.handleOnboardingPopoutRender()
-        }, [B, k, H]), [q, z] = r.useState(-1), K = r.useCallback(e => {
-            z(e.contentRect.width)
-        }, []), $ = (0, g.w)(K, [], {
+        }, [B, k, H]), [K, q] = a.useState(-1), z = a.useCallback(e => {
+            q(e.contentRect.width)
+        }, []), $ = (0, g.w)(z, [], {
             fireOnMount: !0
-        }), Q = !j && P, X = !j && R, Z = j && w?.questHomeEntrypoint?.tooltipTitle != null, {
+        }), Q = !M && P, X = !M && R, Z = M && w?.questHomeEntrypoint?.tooltipTitle != null, {
             inlineCssProperties: J,
             shouldShowQuestHomeHeroGradient: ee
-        } = r.useMemo(() => {
+        } = a.useMemo(() => {
             let e = {
                     "--custom-shine-dimensions": "240px",
                     "--custom-shine-rotated-dimensions-delta": `${L}px`
@@ -124,15 +124,15 @@ let O = Math.ceil(Math.sqrt(115200)),
                 t = w?.questHomeEntrypoint?.linearGradientStart,
                 n = w?.questHomeEntrypoint?.linearGradientEnd,
                 i = w?.questHomeEntrypoint?.radialGradientStart,
-                r = w?.questHomeEntrypoint?.radialGradientEnd;
-            j && (null != t && null != n && (e["--custom-quest-home-hero-linear-gradient-start"] = t, e["--custom-quest-home-hero-linear-gradient-end"] = n), null != i && null != r && (e["--custom-quest-home-hero-radial-gradient-start"] = i, e["--custom-quest-home-hero-radial-gradient-end"] = r));
-            let l = null != i && null != r,
-                a = null != t && null != n;
+                a = w?.questHomeEntrypoint?.radialGradientEnd;
+            M && (null != t && null != n && (e["--custom-quest-home-hero-linear-gradient-start"] = t, e["--custom-quest-home-hero-linear-gradient-end"] = n), null != i && null != a && (e["--custom-quest-home-hero-radial-gradient-start"] = i, e["--custom-quest-home-hero-radial-gradient-end"] = a));
+            let r = null != i && null != a,
+                l = null != t && null != n;
             return {
                 inlineCssProperties: e,
-                shouldShowQuestHomeHeroGradient: j && (l || a)
+                shouldShowQuestHomeHeroGradient: M && (r || l)
             }
-        }, [j, w]), et = (0, i.jsx)("div", {
+        }, [M, w]), et = (0, i.jsx)("div", {
             className: b.iE,
             onMouseEnter: F,
             onMouseLeave: Y,
@@ -141,19 +141,19 @@ let O = Math.ceil(Math.sqrt(115200)),
             ref: $,
             style: J,
             children: (0, i.jsxs)(m.z9, {
-                className: a()({
+                className: l()({
                     [b.VU]: Q || ee,
                     [b.jR]: Q,
-                    [b.XO]: j
+                    [b.XO]: M
                 }),
                 icon: _.r2v,
-                listItemRef: l,
+                listItemRef: r,
                 onClick: U,
                 route: x.BVt.QUEST_HOME,
                 selected: t,
                 text: y.intl.string(y.t.JALI2K),
                 ...n,
-                children: [j && (0, i.jsxs)(i.Fragment, {
+                children: [M && (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsx)("div", {
                         className: b.qS,
                         children: (0, i.jsx)(d.Exy, {
@@ -171,7 +171,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                     children: [(0, i.jsx)(s.animated.div, {
                         className: b.q2,
                         style: {
-                            transform: V.to(e => `translateX(calc(${e*q}px + ${e*O}px)) translateY(-50%) rotate(45deg)`)
+                            transform: V.to(e => `translateX(calc(${e*K}px + ${e*O}px)) translateY(-50%) rotate(45deg)`)
                         }
                     }), (0, i.jsx)(s.animated.div, {
                         className: b.ys,
@@ -204,7 +204,7 @@ let O = Math.ceil(Math.sqrt(115200)),
                 asContainer: !0,
                 children: et
             }) : et, X && (0, i.jsx)(T.A, {
-                targetElementRef: l,
+                targetElementRef: r,
                 onNavigateToQuestHome: U,
                 onRender: W,
                 onRequestClose: D

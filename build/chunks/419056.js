@@ -1,17 +1,17 @@
 /** chunk id: 419056 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(627968);
 n(64700);
-var r = n(397927);
+var l = n(397927);
 
-function l(e, t) {
-    (0, r.mMO)(async () => {
+function r(e, t) {
+    (0, l.mMO)(async () => {
         let {
-            default: r
+            default: l
         } = await n.e("90850").then(n.bind(n, 909401));
-        return n => (0, i.jsx)(r, {
+        return n => (0, i.jsx)(l, {
             channelId: e,
             messageId: t,
             ...n

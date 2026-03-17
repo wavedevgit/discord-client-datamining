@@ -115,13 +115,13 @@ function T(e) {
         isSingleCard: 1 === t.length
     }, e.skuId)) : null, [R, L, T, n, t.length, G, v]), [H, F] = (0, c.RF)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL, (0, o.c)(l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL), void 0, !0), K = H !== l.M.SLAYER_STOREFRONT_ORBS_REWARD_WISHLIST_UPSELL;
     if (0 === P.length) return null;
-    let Y = P;
-    return null != w && ((0, m.L)(w) ? Y = (0, C.z)(w, {
+    let W = P;
+    return null != w && ((0, m.L)(w) ? W = (0, C.z)(w, {
         profileOwner: n,
         analyticsLocations: R,
         wishlistId: v,
         onViewWishlist: T
-    }) : (0, p.$)(w) && (Y = (0, h.A)(w, {
+    }) : (0, p.$)(w) && (W = (0, h.A)(w, {
         profileOwner: n,
         analyticsLocations: R,
         wishlistId: v,
@@ -142,7 +142,7 @@ function T(e) {
             })]
         }), (0, i.jsx)("div", {
             className: S.vY,
-            children: L ? B : Y
+            children: L ? B : W
         }), !K && k.has(I.EZt.SOCIAL_LAYER_GAME_ITEM) && (0, i.jsx)(u.A, {
             location: "user_profile_sidebar_wishlist_breadcrumb",
             className: S.EK,

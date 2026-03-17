@@ -1,11 +1,11 @@
 /** chunk id: 178629 params = (module,exports,require) **/
 a.d(t, {
-    G: () => s
+    G: () => l
 });
 var n = a(64700),
     i = a(664336);
 
-function s() {
+function l() {
     let e = n.useRef(new i.A),
         t = n.useCallback(t => {
             e.current.handleScroll(t)

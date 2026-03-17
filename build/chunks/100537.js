@@ -1,11 +1,11 @@
 /** chunk id: 100537 params = (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => M
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(827734),
     d = n(421380),
@@ -37,29 +37,29 @@ let D = {
     [L.E8.RESIZABLE]: P.Ig
 };
 
-function j(e) {
+function M(e) {
     let {
         frame: t
-    } = e, n = (0, p.h)(t.applicationId), l = (0, u.A)(), {
-        selectedChannelId: j,
-        selectedVoiceChannelId: M
+    } = e, n = (0, p.h)(t.applicationId), r = (0, u.A)(), {
+        selectedChannelId: M,
+        selectedVoiceChannelId: j
     } = (0, s.cf)([S.A], () => ({
         selectedChannelId: S.A.getChannelId(),
         selectedVoiceChannelId: S.A.getVoiceChannelId()
-    })), w = (0, s.bG)([E.A], () => null != M && j === M && E.A.getChatOpen(M), [j, M]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = r.useRef(null), V = r.useRef(null), [B, H] = r.useState({
+    })), w = (0, s.bG)([E.A], () => null != j && M === j && E.A.getChatOpen(j), [M, j]), U = (0, s.bG)([f.Ay], () => f.Ay.callChatSidebarWidth), G = (0, c.rdh)(o.A.modules.chat.RESIZE_HANDLE_WIDTH), k = a.useRef(null), V = a.useRef(null), [B, H] = a.useState({
         width: 0,
         height: 0
-    }), F = r.useCallback(() => {
+    }), F = a.useCallback(() => {
         x.A.updateFrameLayoutMode({
             applicationId: t.applicationId,
             layoutMode: b.y.PIP
         })
-    }, [t.applicationId]), Y = r.useCallback(() => {
+    }, [t.applicationId]), Y = a.useCallback(() => {
         x.A.stopFrame({
             applicationId: t.applicationId
         })
     }, [t.applicationId]);
-    r.useLayoutEffect(() => {
+    a.useLayoutEffect(() => {
         if (null == V.current) return;
         let e = new ResizeObserver(() => {
             H({
@@ -68,9 +68,9 @@ function j(e) {
             })
         });
         return e.observe(V.current), () => e.disconnect()
-    }, []), r.useEffect(() => {
+    }, []), a.useEffect(() => {
         let e = e => {
-            null == k.current || (0, c.HG$)(k.current, e.target) || l || x.A.updateFrameLayoutMode({
+            null == k.current || (0, c.HG$)(k.current, e.target) || r || x.A.updateFrameLayoutMode({
                 applicationId: t.applicationId,
                 layoutMode: b.y.PIP
             })
@@ -78,15 +78,15 @@ function j(e) {
         return document.addEventListener("mousedown", e), () => {
             document.removeEventListener("mousedown", e)
         }
-    }, [t.applicationId, l]);
+    }, [t.applicationId, r]);
     let W = B.width / Math.max(B.height, 1) < L.B5,
+        K = 0,
         q = 0,
-        z = 0,
-        K = (0, h.A)(n?.id);
-    if (!K) {
+        z = (0, h.A)(n?.id);
+    if (!z) {
         let e = B.width,
             t = B.height;
-        W ? ((t = B.width / L.B5) > B.height && (e = (t = B.height) * L.B5), z = (B.height - t) / 2) : ((e = Math.min(B.height * L.B5, B.width)) > B.width && (t = (e = B.width) / L.B5), q = (B.width - e) / 2)
+        W ? ((t = B.width / L.B5) > B.height && (e = (t = B.height) * L.B5), q = (B.height - t) / 2) : ((e = Math.min(B.height * L.B5, B.width)) > B.width && (t = (e = B.width) / L.B5), K = (B.width - e) / 2)
     }
     let $ = L.E8.NO_CHAT,
         Q = (0, m.G)();
@@ -96,7 +96,7 @@ function j(e) {
     return (0, i.jsx)(c.NPJ, {
         theme: O.NJ8.DARK,
         children: e => (0, i.jsxs)("div", {
-            className: a()(P.iE, D[$], e),
+            className: l()(P.iE, D[$], e),
             ref: k,
             style: {
                 right: w && !Number.isNaN(X) ? X : 0
@@ -106,14 +106,14 @@ function j(e) {
             }), (0, i.jsx)("div", {
                 className: P.lq,
                 children: (0, i.jsx)("div", {
-                    className: a()(P.ht, {
-                        [P.kK]: K
+                    className: l()(P.ht, {
+                        [P.kK]: z
                     }),
                     style: {
-                        paddingLeft: q,
-                        paddingRight: q,
-                        paddingTop: z,
-                        paddingBottom: z
+                        paddingLeft: K,
+                        paddingRight: K,
+                        paddingTop: q,
+                        paddingBottom: q
                     },
                     ref: V,
                     children: (0, i.jsx)(v.A, {

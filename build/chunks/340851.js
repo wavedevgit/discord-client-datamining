@@ -93,8 +93,8 @@ let K = (0, m.J)(function(e) {
         mute: H,
         localMute: F,
         localVideoDisabled: K,
-        deaf: Y,
-        video: W,
+        deaf: W,
+        video: Y,
         embeddedApplication: z,
         serverMute: q,
         serverDeaf: X,
@@ -155,7 +155,7 @@ let K = (0, m.J)(function(e) {
             };
             O.default.getId() !== l.id && h.default.selectVoiceChannel(m.id), ei ? ((0, I.A)(e), d.A.selectParticipant(e.channelId, (0, C._z)(e))) : (0, A.Nl)(e), ea?.(l.id)
         },
-        eY = e => {
+        eW = e => {
             (0, u.L3)(e, async () => {
                 let {
                     default: e
@@ -173,7 +173,7 @@ let K = (0, m.J)(function(e) {
                 })
             })
         },
-        eW = e => ep ? (0, i.jsx)(b.h, {
+        eY = e => ep ? (0, i.jsx)(b.h, {
             ...e,
             channel: m,
             setIsHangStatusInputFocused: ej,
@@ -222,10 +222,10 @@ let K = (0, m.J)(function(e) {
                             localVideoDisabled: K,
                             isStreaming: en,
                             isGuest: es,
-                            video: W,
+                            video: Y,
                             priority: el,
                             ringing: J,
-                            deaf: Y,
+                            deaf: W,
                             nick: Q,
                             collapsed: t,
                             overlap: t,
@@ -242,7 +242,7 @@ let K = (0, m.J)(function(e) {
                             selected: eI,
                             onClick: n ? void 0 : ek,
                             onDoubleClick: eK,
-                            onContextMenu: eY,
+                            onContextMenu: eW,
                             guildId: m.guild_id,
                             isSelf: ep,
                             application: eg,
@@ -258,14 +258,14 @@ let K = (0, m.J)(function(e) {
                         })
                     });
                     let a = () => null;
-                    return ex && eG && !eC ? a = eW : eC ? a = () => (0, i.jsx)(P.A, {
+                    return ex && eG && !eC ? a = eY : eC ? a = () => (0, i.jsx)(P.A, {
                         channel: m,
                         user: l,
                         onAction: eB,
                         onWatchStream: en ? eK : void 0,
                         hangStatusActivity: e_,
-                        renderSelfHangStatus: eW
-                    }) : en ? a = eq : eU && l.id !== O.default.getId() ? a = ez : ex && (a = eW), (0, i.jsx)(c.YNO, {
+                        renderSelfHangStatus: eY
+                    }) : en ? a = eq : eU && l.id !== O.default.getId() ? a = ez : ex && (a = eY), (0, i.jsx)(c.YNO, {
                         targetElementRef: eE,
                         position: "right",
                         renderPopout: a,

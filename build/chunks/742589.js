@@ -32,11 +32,11 @@ function I(e) {
         innerClassname: d,
         transparent: u = !1,
         hidden: I = !1,
-        toolbar: p,
-        mobileToolbar: N,
+        toolbar: N,
+        mobileToolbar: p,
         "aria-label": m,
-        "aria-labelledby": h,
-        scrollable: R,
+        "aria-labelledby": R,
+        scrollable: h,
         role: S,
         hideSearch: g,
         hideForLater: C,
@@ -52,10 +52,10 @@ function I(e) {
         className: n,
         innerClassName: d,
         toolbar: function() {
-            if (null == p) return null;
+            if (null == N) return null;
             let e = null != r && !g;
-            return l.Fr ? N : (0, i.jsxs)(i.Fragment, {
-                children: [p, e && !(0, E.jq)(r) ? (0, i.jsx)(c.Ay, {
+            return l.Fr ? p : (0, i.jsxs)(i.Fragment, {
+                children: [N, e && !(0, E.jq)(r) ? (0, i.jsx)(c.Ay, {
                     guildId: s,
                     channelId: r,
                     className: T.$P
@@ -66,14 +66,14 @@ function I(e) {
         hidden: I,
         onDoubleClick: () => A(y),
         "aria-label": m,
-        "aria-labelledby": h,
+        "aria-labelledby": R,
         role: S,
-        scrollable: R,
+        scrollable: h,
         children: t
     })
 }
 
-function p(e) {
+function N(e) {
     let {
         children: t,
         className: n,
@@ -92,7 +92,7 @@ function p(e) {
     })
 }
 
-function N(e) {
+function p(e) {
     let {
         isAuthenticated: t = !0,
         ...n
@@ -104,11 +104,11 @@ function N(e) {
         children: t ? (0, i.jsx)(I, {
             ...n,
             className: n.className
-        }) : (0, i.jsx)(p, {
+        }) : (0, i.jsx)(N, {
             ...n,
             className: n.className
         })
     })
 }
-N.Title = _.Ay.Title, N.Icon = _.Ay.Icon, N.ChannelIcon = _.Ay.ChannelIcon, N.Divider = _.Ay.Divider, N.Caret = _.Ay.Caret;
-let m = N
+p.Title = _.Ay.Title, p.Icon = _.Ay.Icon, p.ChannelIcon = _.Ay.ChannelIcon, p.Divider = _.Ay.Divider, p.Caret = _.Ay.Caret;
+let m = p

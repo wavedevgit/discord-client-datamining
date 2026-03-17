@@ -4,15 +4,15 @@ a.d(t, {
 });
 var n = a(627968),
     i = a(64700),
-    s = a(503698),
-    l = a.n(s),
+    l = a(503698),
+    s = a.n(l),
     r = a(3666),
     o = a(397927),
     c = a(770178),
     d = a(742589),
     u = a(124589),
-    h = a(488995),
-    m = a(985018),
+    m = a(488995),
+    h = a(985018),
     p = a(402664);
 
 function _(e) {
@@ -20,14 +20,14 @@ function _(e) {
         id: t,
         label: a,
         selected: i,
-        handleTransition: s,
+        handleTransition: l,
         ...r
     } = e;
     return (0, n.jsx)(d.A.Title, {
         ...r,
-        onClick: () => s(t),
+        onClick: () => l(t),
         wrapperClassName: p.Vn,
-        className: l()(p.Mf, {
+        className: s()(p.Mf, {
             [p.wH]: i
         }),
         children: a
@@ -38,7 +38,7 @@ function g(e) {
     let {
         onTabSelect: t,
         tabs: a,
-        selectedTab: s,
+        selectedTab: l,
         selected: r
     } = e, c = i.useRef(null);
     return (0, n.jsx)(o.YNO, {
@@ -48,7 +48,7 @@ function g(e) {
                 closePopout: i
             } = e;
             return (0, n.jsx)(u.A, {
-                selectedTab: s,
+                selectedTab: l,
                 onClose: i,
                 tabs: a,
                 onTabSelect: t
@@ -64,12 +64,12 @@ function g(e) {
                 ...e,
                 ref: c,
                 wrapperClassName: p.Vn,
-                className: l()(p.Mf, p.OS, {
+                className: s()(p.Mf, p.OS, {
                     [p.wH]: r
                 }),
-                id: h.GlobalDiscoverySharedTabId.MORE,
-                "aria-label": m.intl.string(m.t["UKOtz+"]),
-                children: [m.intl.string(m.t["UKOtz+"]), a ? (0, n.jsx)(o.tN5, {
+                id: m.GlobalDiscoverySharedTabId.MORE,
+                "aria-label": h.intl.string(h.t["UKOtz+"]),
+                children: [h.intl.string(h.t["UKOtz+"]), a ? (0, n.jsx)(o.tN5, {
                     size: "xs"
                 }) : (0, n.jsx)(o.abt, {
                     size: "xs"
@@ -83,35 +83,35 @@ function x(e) {
     let {
         className: t,
         selectedTab: a,
-        tabs: s,
+        tabs: l,
         onTabSelect: o,
         onAvailableWidthChange: d
-    } = e, [u, h] = i.useState(0), m = i.useRef(u), {
+    } = e, [u, m] = i.useState(0), h = i.useRef(u), {
         lastVisibleIndex: x,
         onItemLayout: A,
-        overflowItemsRef: C,
+        overflowItemsRef: f,
         itemWidthsRef: b
     } = (0, r.Wv)({
-        items: s,
+        items: l,
         itemGapPx: 24,
         maxLines: 1,
         containerWidth: u
-    }), v = i.useMemo(() => s.slice(0, x + 1), [x, s]), f = i.useMemo(() => s.slice(x + 1), [x, s]), j = i.useRef(null), I = i.useCallback(e => {
+    }), C = i.useMemo(() => l.slice(0, x + 1), [x, l]), v = i.useMemo(() => l.slice(x + 1), [x, l]), j = i.useRef(null), I = i.useCallback(e => {
         let t = e.contentRect.width;
-        if (null == t || m.current === t) return;
-        h(t), m.current = t;
+        if (null == t || h.current === t) return;
+        m(t), h.current = t;
         let a = t - b.current.reduce((e, t, a) => e + t + 24 * (0 !== a));
         d?.(a)
     }, [b, d]);
     (0, c.g)(j, I);
-    let E = 0 !== u,
-        S = f.some(e => e.id === a);
+    let S = 0 !== u,
+        E = v.some(e => e.id === a);
     return (0, n.jsxs)("div", {
-        className: l()(p.kL, t),
+        className: s()(p.kL, t),
         ref: j,
         children: [(0, n.jsxs)("div", {
             className: p.Kk,
-            children: [s.map((e, t) => (0, n.jsx)(r.Ae, {
+            children: [l.map((e, t) => (0, n.jsx)(r.Ae, {
                 index: t,
                 onItemLayout: A,
                 children: (0, n.jsx)(_, {
@@ -121,26 +121,26 @@ function x(e) {
                     handleTransition: o
                 }, e.id)
             }, e.id)), (0, n.jsx)("div", {
-                ref: C,
+                ref: f,
                 children: (0, n.jsx)(g, {
-                    tabs: f,
+                    tabs: v,
                     onTabSelect: o,
                     selectedTab: a,
-                    selected: S
+                    selected: E
                 })
             })]
-        }), E && (0, n.jsxs)("div", {
+        }), S && (0, n.jsxs)("div", {
             className: p.vR,
-            children: [v.map(e => (0, n.jsx)(_, {
+            children: [C.map(e => (0, n.jsx)(_, {
                 id: e.id,
                 label: e.label,
                 selected: a === e.id,
                 handleTransition: o
-            }, e.id)), 0 !== f.length ? (0, n.jsx)(g, {
-                tabs: f,
+            }, e.id)), 0 !== v.length ? (0, n.jsx)(g, {
+                tabs: v,
                 onTabSelect: o,
                 selectedTab: a,
-                selected: S
+                selected: E
             }) : null]
         })]
     })

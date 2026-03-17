@@ -44,9 +44,9 @@ let j = {
             heroBlock: k,
             tab: T,
             onVisibilityChange: O
-        } = e, y = (0, i.K)(e => {
+        } = e, N = (0, i.K)(e => {
             O?.(e)
-        }, .1, null != O), N = r.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
+        }, .1, null != O), y = r.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -63,10 +63,10 @@ let j = {
             bannerDisplayConfig: D,
             logoDisplayConfig: H,
             heroLogo: w,
-            heroBannerStatic: U,
-            heroBannerAnimated: F,
-            heroBannerRive: G
-        } = (0, x.Kk)(P), V = D?.responsive ?? !1, K = D?.backgroundStyle, W = null != G, z = T === S.G2.ORBS, Y = null != l && l.isOrbsExclusive, $ = z ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
+            heroBannerStatic: F,
+            heroBannerAnimated: G,
+            heroBannerRive: U
+        } = (0, x.Kk)(P), V = D?.responsive ?? !1, K = D?.backgroundStyle, W = null != U, z = T === S.G2.ORBS, Y = null != l && l.isOrbsExclusive, $ = z ? I.intl.string(I.t["1CdL8d"]) : I.intl.string(I.t.xYKa1T), Z = () => {
             z ? ((0, g.Y)({
                 pageType: v.liQ.SHOP_ORBS_TAB,
                 sectionType: v.JJy.ORBS_SHOP_HERO_BLOCK,
@@ -88,12 +88,12 @@ let j = {
             }))
         };
         return null != B && (t || P !== j) ? (0, n.jsxs)("div", {
-            ref: y,
+            ref: N,
             className: L.os,
             children: [W ? (0, E.VA)({
                 isCustomCursorEnabled: R,
                 className: L.Xt,
-                riveEventTargetRef: N
+                riveEventTargetRef: y
             }) : null, (0, n.jsx)("div", {
                 className: a()(L.vK, {
                     [L.cN]: W,
@@ -102,12 +102,12 @@ let j = {
                 style: null != K ? {
                     background: K
                 } : void 0,
-                children: null != U && (0, n.jsx)(b.A, {
-                    bannerStatic: U,
-                    bannerAnimated: F,
-                    bannerRive: G,
+                children: null != F && (0, n.jsx)(b.A, {
+                    bannerStatic: F,
+                    bannerAnimated: G,
+                    bannerRive: U,
                     isResponsive: V,
-                    eventTargetRef: N
+                    eventTargetRef: y
                 })
             }), (0, n.jsxs)("div", {
                 className: L.xX,

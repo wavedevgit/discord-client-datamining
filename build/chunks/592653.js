@@ -5,9 +5,9 @@ n.d(t, {
     t$: () => _
 });
 var i = n(735438),
-    r = n.n(i),
-    l = n(933958),
-    a = n(969151),
+    a = n.n(i),
+    r = n(933958),
+    l = n(969151),
     s = n(287809),
     o = n(403362),
     d = n(562153),
@@ -15,20 +15,20 @@ var i = n(735438),
     u = n(613057);
 
 function A() {
-    let e = l.Ay.getCurrentEmbeddedActivity();
+    let e = r.Ay.getCurrentEmbeddedActivity();
     if (null == e) return {
         participants: []
     };
-    let t = (0, a.D)(e.location),
-        n = (0, a.H)(e.location);
+    let t = (0, l.D)(e.location),
+        n = (0, l.H)(e.location);
     return {
         participants: Array.from(e.userIds, e => {
             let i = s.default.getUser(e);
             if (null == i) return;
-            let r = (0, d.tJ)(t, n, i);
+            let a = (0, d.tJ)(t, n, i);
             return {
                 ...(0, c.A)(i),
-                nickname: r ?? void 0
+                nickname: a ?? void 0
             }
         }).filter(o.Vq)
     }
@@ -43,6 +43,6 @@ let h = {
                 prevState: t,
                 dispatch: n
             } = e, i = A();
-            return r().isEqual(i, t) || n(i), i
+            return a().isEqual(i, t) || n(i), i
         }
     }

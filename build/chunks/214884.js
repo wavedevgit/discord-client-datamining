@@ -3,9 +3,9 @@ n.d(t, {
     A: () => w
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(827734),
     d = n(397927),
@@ -33,14 +33,14 @@ var i = n(627968),
     R = n(182028),
     P = n(652215),
     D = n(988794),
-    j = n(985018),
-    M = n(861968);
+    M = n(985018),
+    j = n(861968);
 
 function w(e) {
     let {
         guild: t,
         isStudyRoomNotice: n = !1
-    } = e, l = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(l?.id), [l]), {
+    } = e, r = (0, E.V)(t.id), u = (0, I.BP)(t.id), b = (0, s.bG)([v.A], () => v.A.getStageInstanceByChannel(r?.id), [r]), {
         isStageNoticeHidden: w,
         isEventNoticeHidden: G
     } = (0, s.cf)([g.A], () => ({
@@ -50,119 +50,119 @@ function w(e) {
         isEventNoticeHidden: g.A.isLiveChannelNoticeHidden({
             eventId: u?.id
         })
-    }), [b, u]), k = l?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, l)), F = (0, y.A)(l?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
-    r.useEffect(() => {
+    }), [b, u]), k = r?.id, V = (0, s.yK)([S.A], () => [...new Set(S.A.getMutableParticipants(k, x.ip.SPEAKER).map(e => e.user))], [k]), B = (0, s.bG)([S.A], () => null != k ? S.A.getParticipantCount(k, x.ip.AUDIENCE) : 0, [k]), H = (0, s.bG)([O.A], () => O.A.can(P.xBc.CONNECT, r)), F = (0, y.A)(r?.id), Y = u?.creator_id, W = (0, s.bG)([L.default], () => L.default.getUser(Y), [Y]);
+    a.useEffect(() => {
         null != Y && (0, c.wz)(Y)
     }, [Y]);
     let {
-        noticeType: q,
-        title: z,
-        location: K,
+        noticeType: K,
+        title: q,
+        location: z,
         locationIcon: $,
         canListenIn: Q,
         buttonText: X,
         users: Z,
         overflowUsers: J,
         onClose: ee
-    } = r.useMemo(() => (function(e) {
+    } = a.useMemo(() => (function(e) {
         let {
             guildEvent: t,
             stageInstance: n,
-            activeChannel: r,
-            canConnect: l,
-            myRole: a,
+            activeChannel: a,
+            canConnect: r,
+            myRole: l,
             eventCreator: s,
             speakers: o,
             listenerCount: c,
             isEventNoticeHidden: u,
             isStageNoticeHidden: h,
             isStudyRoomNotice: g
-        } = e, E = null != n && null != r && !h, I = null != t ? (0, C.G3)(t) : null;
-        if (g && null != r) {
-            let e = (0, A.gU)(r);
+        } = e, E = null != n && null != a && !h, I = null != t ? (0, C.G3)(t) : null;
+        if (g && null != a) {
+            let e = (0, A.gU)(a);
             return {
                 noticeType: 3,
-                title: `📚☕ ${r.name}`,
-                location: j.intl.string(j.t.LZA6Na),
+                title: `📚☕ ${a.name}`,
+                location: M.intl.string(M.t.LZA6Na),
                 locationIcon: null != e ? (0, i.jsx)(e, {
                     size: "xs",
                     color: "currentColor",
-                    className: M.NR
+                    className: j.NR
                 }) : null,
-                canListenIn: l,
-                buttonText: j.intl.string(j.t.wBoE6L),
+                canListenIn: r,
+                buttonText: M.intl.string(M.t.wBoE6L),
                 users: [],
                 overflowUsers: null
             }
         }
         if (null == t || u) {
             if (E) {
-                let e = j.intl.string(j.t.ZYO5OK);
-                return a?.speaker ? e = j.intl.string(j.t["/cnSFc"]) : null != a && (e = j.intl.string(j.t.btSGOj)), {
+                let e = M.intl.string(M.t.ZYO5OK);
+                return l?.speaker ? e = M.intl.string(M.t["/cnSFc"]) : null != l && (e = M.intl.string(M.t.btSGOj)), {
                     noticeType: 0,
                     title: n.topic,
-                    location: r.name,
+                    location: a.name,
                     locationIcon: (0, i.jsx)(d.qux, {
                         size: "custom",
                         color: "currentColor",
                         width: 16,
                         height: 16,
-                        className: M.NR
+                        className: j.NR
                     }),
-                    canListenIn: l,
+                    canListenIn: r,
                     buttonText: e,
                     onClose: () => (0, m.iF)({
                         stageId: n?.id
                     }),
                     users: o.length > 5 ? o.slice(0, 5) : o,
                     overflowUsers: c < 1 ? null : (0, i.jsxs)("div", {
-                        className: M.Io,
+                        className: j.Io,
                         children: [(0, i.jsx)(d.LoC, {
                             size: "custom",
                             color: "currentColor",
                             width: 12,
                             height: 12,
-                            className: M.nW
+                            className: j.nW
                         }), (0, i.jsx)(d.Text, {
                             variant: "text-xs/medium",
                             color: "text-default",
-                            className: M.W8,
+                            className: j.W8,
                             children: c
                         })]
                     })
                 }
             }
         } else if (t.entity_type === D.Ps.STAGE_INSTANCE && E) {
-            let e = j.intl.string(j.t.ZYO5OK);
-            return a?.speaker ? e = j.intl.string(j.t["/cnSFc"]) : null != a && (e = j.intl.string(j.t.btSGOj)), {
+            let e = M.intl.string(M.t.ZYO5OK);
+            return l?.speaker ? e = M.intl.string(M.t["/cnSFc"]) : null != l && (e = M.intl.string(M.t.btSGOj)), {
                 noticeType: 0,
                 title: n.topic,
-                location: r.name,
+                location: a.name,
                 locationIcon: (0, i.jsx)(d.qux, {
                     size: "custom",
                     color: "currentColor",
                     width: 16,
                     height: 16,
-                    className: M.NR
+                    className: j.NR
                 }),
-                canListenIn: l,
+                canListenIn: r,
                 buttonText: e,
                 onClose: () => (0, m.iF)({
                     stageId: n?.id
                 }),
                 users: o.length > 5 ? o.slice(0, 5) : o,
                 overflowUsers: c < 1 ? null : (0, i.jsxs)("div", {
-                    className: M.Io,
+                    className: j.Io,
                     children: [(0, i.jsx)(d.LoC, {
                         size: "custom",
                         color: "currentColor",
                         width: 12,
                         height: 12,
-                        className: M.nW
+                        className: j.nW
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-default",
-                        className: M.W8,
+                        className: j.W8,
                         children: c
                     })]
                 })
@@ -182,60 +182,60 @@ function w(e) {
                     color: "currentColor",
                     width: 16,
                     height: 16,
-                    className: M.NR
+                    className: j.NR
                 }),
                 canListenIn: !1,
-                buttonText: j.intl.string(j.t.iW6Xuo),
+                buttonText: M.intl.string(M.t.iW6Xuo),
                 onClose: () => (0, m.iF)({
                     eventId: t?.id
                 }),
                 users: null == s ? [] : [s],
                 overflowUsers: n < 1 ? null : (0, i.jsxs)("div", {
-                    className: M.Io,
+                    className: j.Io,
                     children: [(0, i.jsx)(d.Gg5, {
                         size: "custom",
                         color: "currentColor",
                         width: 12,
                         height: 12,
-                        className: M.nW
+                        className: j.nW
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-default",
-                        className: M.W8,
+                        className: j.W8,
                         children: n
                     })]
                 })
             }
-        } else if (t.entity_type === D.Ps.VOICE && null != r) {
-            let e = (0, A.gU)(r),
+        } else if (t.entity_type === D.Ps.VOICE && null != a) {
+            let e = (0, A.gU)(a),
                 n = _.Ay.getUserCount(t.id, I);
             return {
                 noticeType: 2,
                 title: t.name,
-                location: r.name,
+                location: a.name,
                 locationIcon: null != e ? (0, i.jsx)(e, {
                     size: "xs",
                     color: "currentColor",
-                    className: M.NR
+                    className: j.NR
                 }) : null,
-                canListenIn: l,
-                buttonText: j.intl.string(j.t.nxUtoQ),
+                canListenIn: r,
+                buttonText: M.intl.string(M.t.nxUtoQ),
                 onClose: () => (0, m.iF)({
                     eventId: t?.id
                 }),
                 users: null == s ? [] : [s],
                 overflowUsers: n < 1 ? null : (0, i.jsxs)("div", {
-                    className: M.Io,
+                    className: j.Io,
                     children: [(0, i.jsx)(d.Gg5, {
                         size: "custom",
                         color: "currentColor",
                         width: 12,
                         height: 12,
-                        className: M.nW
+                        className: j.nW
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-xs/medium",
                         color: "text-default",
-                        className: M.W8,
+                        className: j.W8,
                         children: n
                     })]
                 })
@@ -247,7 +247,7 @@ function w(e) {
     })({
         guildEvent: u,
         stageInstance: b,
-        activeChannel: l,
+        activeChannel: r,
         canConnect: H,
         myRole: F,
         eventCreator: W,
@@ -256,20 +256,20 @@ function w(e) {
         isEventNoticeHidden: G,
         isStageNoticeHidden: w,
         isStudyRoomNotice: n
-    }), [u, b, l, H, F, W, V, B, G, w, n]);
-    return null == q ? null : (0, i.jsxs)("div", {
-        className: M.kL,
+    }), [u, b, r, H, F, W, V, B, G, w, n]);
+    return null == K ? null : (0, i.jsxs)("div", {
+        className: j.kL,
         children: [null != ee ? (0, i.jsx)(d.DUT, {
             onClick: ee,
-            className: M.VN,
-            "aria-label": j.intl.string(j.t.WAI6xu),
+            className: j.VN,
+            "aria-label": M.intl.string(M.t.WAI6xu),
             children: (0, i.jsx)(d.PGe, {
                 size: "md",
                 color: "currentColor",
-                className: M.ut
+                className: j.ut
             })
         }) : null, (0, i.jsxs)("div", {
-            className: M.wx,
+            className: j.wx,
             children: [(0, i.jsx)(R.A, {
                 color: o.A.unsafe_rawColors.GREEN_230.css,
                 width: 16,
@@ -277,10 +277,10 @@ function w(e) {
             }), (0, i.jsx)(d.Text, {
                 variant: "text-xs/semibold",
                 color: "text-feedback-positive",
-                children: j.intl.string(j.t.dI3q4h)
+                children: M.intl.string(M.t.dI3q4h)
             })]
         }), (Z.length > 0 || null != J) && (0, i.jsxs)("div", {
-            className: M.lF,
+            className: j.lF,
             children: [Z.map(e => (0, i.jsx)(U, {
                 user: e,
                 guildId: t.id
@@ -288,25 +288,25 @@ function w(e) {
         }), (0, i.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: a()(M.DD, M.VD),
-            children: z
+            className: l()(j.DD, j.VD),
+            children: q
         }), (0, i.jsxs)("div", {
-            className: M.j5,
+            className: j.j5,
             children: [$, (0, i.jsx)(d.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
-                className: M.C5,
-                children: K
+                className: j.C5,
+                children: z
             })]
-        }), Q || 1 === q ? (0, i.jsx)("div", {
+        }), Q || 1 === K ? (0, i.jsx)("div", {
             "data-button-hoisted-classname-wrapper": !0,
-            className: M.x6,
+            className: j.x6,
             children: (0, i.jsx)(d.Button, {
                 variant: "active",
                 size: "sm",
                 text: X,
                 onClick: () => {
-                    if (Q) null != l && null != l.getGuildId() && ((0, N.av)(l), (0, T.uh)(l.getGuildId(), l.id));
+                    if (Q) null != r && null != r.getGuildId() && ((0, N.av)(r), (0, T.uh)(r.getGuildId(), r.id));
                     else {
                         if (null == u) return;
                         (0, h.uR)({
@@ -324,20 +324,20 @@ function U(e) {
     let {
         user: t,
         guildId: n
-    } = e, l = r.useRef(null);
+    } = e, r = a.useRef(null);
     return (0, i.jsx)(b.A, {
-        targetElementRef: l,
+        targetElementRef: r,
         user: t,
         guildId: n,
         newAnalyticsLocations: [u.A.AVATAR],
         clickTrap: !0,
         children: e => (0, i.jsx)(d.euF, {
             ...e,
-            ref: l,
+            ref: r,
             src: t.getAvatarURL(n, 24),
             "aria-label": t.username,
             size: d._3J.SIZE_24,
-            className: M.my
+            className: j.my
         })
     })
 }

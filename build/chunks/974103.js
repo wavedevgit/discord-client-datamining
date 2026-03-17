@@ -1,30 +1,30 @@
 /** chunk id: 974103 params = (module,exports,require) **/
-n.d(t, {
-    ic: () => c,
-    nc: () => o,
-    w: () => d
+n.d(e, {
+    ic: () => u,
+    nc: () => s,
+    w: () => o
 });
-var i = n(311907);
+var l = n(311907);
 n(928108);
-var l = n(576705),
+var i = n(576705),
     a = n(903093),
     r = n(610136),
-    s = n(652215);
+    d = n(652215);
 
-function o(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.A;
-    return t.can(s.xBc.BAN_MEMBERS, e) || t.can(s.xBc.KICK_MEMBERS, e) || t.can(s.xBc.MODERATE_MEMBERS, e) || t.can(s.xBc.MANAGE_GUILD, e)
+function s(t) {
+    let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.A;
+    return e.can(d.xBc.BAN_MEMBERS, t) || e.can(d.xBc.KICK_MEMBERS, t) || e.can(d.xBc.MODERATE_MEMBERS, t) || e.can(d.xBc.MANAGE_GUILD, t)
 }
 
-function c(e) {
-    let t = (0, i.bG)([l.A], () => o(e, l.A), [e]),
-        n = (0, i.bG)([r.A], () => null != e ? r.A.getGuildIncident(e.id) : null, [e]);
-    return !(null != n && (0, a.k$)(n)) && t
+function u(t) {
+    let e = (0, l.bG)([i.A], () => s(t, i.A), [t]),
+        n = (0, l.bG)([r.A], () => null != t ? r.A.getGuildIncident(t.id) : null, [t]);
+    return !(null != n && (0, a.k$)(n)) && e
 }
 
-function d(e) {
-    return (0, i.bG)([l.A], () => (function(e) {
-        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.A;
-        return t.can(s.xBc.MANAGE_GUILD, e)
-    })(e, l.A), [e])
+function o(t) {
+    return (0, l.bG)([i.A], () => (function(t) {
+        let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.A;
+        return e.can(d.xBc.MANAGE_GUILD, t)
+    })(t, i.A), [t])
 }

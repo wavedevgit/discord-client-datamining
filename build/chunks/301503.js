@@ -3,9 +3,9 @@ n.d(t, {
     A: () => S
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(397927),
-    a = n(178629),
+    a = n(64700),
+    r = n(397927),
+    l = n(178629),
     s = n(770472),
     o = n(737823),
     d = (n(153527), n(876622)),
@@ -25,12 +25,12 @@ var i = n(627968),
     N = n(734539);
 
 function S() {
-    let e = r.useRef((0, h.YP)()),
+    let e = a.useRef((0, h.YP)()),
         {
             onScroll: t,
             scrollPosition: n,
             resetScrollPosition: S
-        } = (0, a.G)(),
+        } = (0, l.G)(),
         {
             tabs: x,
             selectedTab: v,
@@ -43,11 +43,11 @@ function S() {
             onSearchTextChange: R,
             onClearSearch: P,
             onSearchSubmit: D,
-            isSearchVisible: j
+            isSearchVisible: M
         } = (0, g.X)({
             loadId: e.current
         }),
-        M = _.A.useField("searchBarState"),
+        j = _.A.useField("searchBarState"),
         {
             onTabsAvailableWidthChange: w,
             onCollapsedSearchBarClick: U,
@@ -56,22 +56,22 @@ function S() {
         } = (0, s.p)({
             isSearchBarVisible: O,
             isSearchBarEmpty: "" === L.trim(),
-            searchBarState: M,
+            searchBarState: j,
             setSearchBarState: e => _.A.setState({
                 searchBarState: e
             })
         }),
         V = u.A.useField("fetchedQuery"),
-        B = r.useCallback(e => {
-            y(e), j && P()
-        }, [j, P, y]),
-        H = r.useMemo(() => j ? x.filter(e => {
+        B = a.useCallback(e => {
+            y(e), M && P()
+        }, [M, P, y]),
+        H = a.useMemo(() => M ? x.filter(e => {
             let {
                 id: t
             } = e;
             return !f.R0.has(t)
-        }) : x, [x, j]),
-        F = r.useRef(new A.A(b)),
+        }) : x, [x, M]),
+        F = a.useRef(new A.A(b)),
         {
             onGuildCardSeen: Y,
             onGuildCardClick: W
@@ -79,32 +79,32 @@ function S() {
             guildDiscoveryCardSeenManager: F.current,
             loadId: e.current
         });
-    return r.useEffect(() => {
+    return a.useEffect(() => {
         F.current.flushSeenGuilds(e.current)
-    }, [b]), r.useEffect(() => {
+    }, [b]), a.useEffect(() => {
         S()
-    }, [v, S]), r.useEffect(() => {
-        j || u.A.setState({
+    }, [v, S]), a.useEffect(() => {
+        M || u.A.setState({
             scrollPosition: null
         })
-    }, [j]), (0, i.jsxs)("div", {
+    }, [M]), (0, i.jsxs)("div", {
         className: N.kL,
         children: [(0, i.jsxs)(o.Ay, {
-            variant: j ? o.Z5.RELATIVE : o.Z5.OVERLAY,
-            children: [!j && (0, i.jsx)(o.ns, {
+            variant: M ? o.Z5.RELATIVE : o.Z5.OVERLAY,
+            children: [!M && (0, i.jsx)(o.ns, {
                 scrollPosition: n
-            }), j ? (0, i.jsx)(o.XQ, {
-                icon: l.Zge,
+            }), M ? (0, i.jsx)(o.XQ, {
+                icon: r.Zge,
                 onClick: P
             }) : (0, i.jsx)(o.T4, {
-                icon: l.RR9
-            }), !j && (0, i.jsx)(d.A, {
+                icon: r.RR9
+            }), !M && (0, i.jsx)(d.A, {
                 className: k,
                 tabs: H,
                 selectedTab: v,
                 onTabSelect: B,
                 onAvailableWidthChange: w
-            }), j && (0, i.jsx)(l.Heading, {
+            }), M && (0, i.jsx)(r.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 className: N.ov,
@@ -118,10 +118,10 @@ function S() {
                 onClear: P,
                 onSubmit: D,
                 onCollapsedClick: U,
-                state: j ? C.GlobalDiscoverySearchBarState.DEFAULT : M,
+                state: M ? C.GlobalDiscoverySearchBarState.DEFAULT : j,
                 onBlur: G
             })]
-        }), j ? (0, i.jsx)(I.A, {
+        }), M ? (0, i.jsx)(I.A, {
             loadId: e.current,
             onGuildCardClick: W,
             onGuildCardSeen: Y

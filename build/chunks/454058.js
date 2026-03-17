@@ -1,6 +1,6 @@
 /** chunk id: 454058 params = (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => m
 });
 var i = n(311907),
     s = n(73153),
@@ -42,16 +42,16 @@ function f(e) {
     })), S[e] = Date.now())
 }
 
-function L() {
+function v() {
     I.default.keys(p).forEach(e => {
         let t = p[e];
         p[e] = new Set([...t].filter(t => !C.Ay.isChannelOrParentOptedIn(e, t)))
     })
 }
-class v extends i.Ay.Store {
+class L extends i.Ay.Store {
     static displayName = "NewChannelsStore";
     initialize() {
-        this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], L)
+        this.waitFor(d.default, h.A, o.Ay, u.Ay, c.A, g.Ay, C.Ay, a.A), this.syncWith([C.Ay], v)
     }
     getNewChannelIds(e) {
         return null != e && null == p[e] && f(e), null != e ? p[e] ?? E : E
@@ -62,7 +62,7 @@ class v extends i.Ay.Store {
         return null != n && !!n.features.has(_.GuildFeatures.COMMUNITY) && (null != e && null == p[e] && f(e), p[e]?.has(t) && null == g.Ay.getTrackedAckMessageId(t))
     }
 }
-let N = new v(s.h, {
+let m = new L(s.h, {
     BULK_CLEAR_RECENTS: function(e) {
         let {
             guildId: t,

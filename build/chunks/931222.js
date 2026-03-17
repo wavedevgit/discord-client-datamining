@@ -3,9 +3,9 @@ n.d(t, {
     L: () => d
 }), n(321073), n(667532);
 var i = n(64700),
-    r = n(311907),
-    l = n(499118),
-    a = n(351022),
+    a = n(311907),
+    r = n(499118),
+    l = n(351022),
     s = n(282026),
     o = n(324580);
 
@@ -13,17 +13,17 @@ function d() {
     let e = s.A.useField("fetchedQuery"),
         t = s.A.useField("resultsInitialCategoryId"),
         n = s.A.useField("languageCode"),
-        d = (0, r.bG)([a.A], () => null == t ? 0 : a.A.getTotal({
+        d = (0, a.bG)([l.A], () => null == t ? 0 : l.A.getTotal({
             categoryId: t,
             query: e,
             languageCode: n
         }) ?? 0),
-        c = (0, r.bG)([a.A], () => a.A.getTotal({
+        c = (0, a.bG)([l.A], () => l.A.getTotal({
             categoryId: o.Iq,
             query: e,
             languageCode: n
         }) ?? 0),
-        u = (0, r.bG)([l.A], () => l.A.getVisibleTabs());
+        u = (0, a.bG)([r.A], () => r.A.getVisibleTabs());
     return i.useMemo(() => {
         if (null == u) return null;
         if (null == t) return u;

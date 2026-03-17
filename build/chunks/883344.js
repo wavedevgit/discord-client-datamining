@@ -3,9 +3,9 @@ n.d(t, {
     A: () => ex
 }), n(321073);
 var i = n(681154),
-    r = n(311907),
-    l = n(73153),
-    a = n(99753),
+    a = n(311907),
+    r = n(73153),
+    l = n(99753),
     s = n(20805),
     o = n(583846),
     d = n(49463),
@@ -33,8 +33,8 @@ var i = n(681154),
     R = n(424994);
 let P = +C.A.Millis.DAY,
     D = 3 * C.A.Millis.DAY,
-    j = [],
-    M = null,
+    M = [],
+    j = null,
     w = 0,
     U = [],
     G = [],
@@ -45,9 +45,9 @@ let P = +C.A.Millis.DAY,
     F = {},
     Y = {},
     W = 0,
+    K = !1,
     q = !1,
     z = !1,
-    K = !1,
     $ = null,
     Q = null,
     X = 0,
@@ -57,9 +57,9 @@ let P = +C.A.Millis.DAY,
     et = [],
     en = 0,
     ei = !0,
-    er = !1,
-    el = new Set,
     ea = !1,
+    er = new Set,
+    el = !1,
     es = !1,
     eo = 0,
     ed = 0;
@@ -83,10 +83,10 @@ function eu(e) {
 }
 
 function eA(e, t, n, i) {
-    let r = e.filter(e => e.type !== n);
+    let a = e.filter(e => e.type !== n);
     return t.forEach((e, t) => {
-        (t + 1) * i < r.length ? r.splice((t + 1) * i, 0, e) : r.push(e)
-    }), r
+        (t + 1) * i < a.length ? a.splice((t + 1) * i, 0, e) : a.push(e)
+    }), a
 }
 
 function eh() {
@@ -124,10 +124,10 @@ function e_() {
 }
 
 function em(e) {
-    let t, n, r, l, d;
-    if (U.length > 0 && (j = U, U = [], G = []), W++, null != e) Z = e.newUnread, J = e.newRead;
+    let t, n, a, r, d;
+    if (U.length > 0 && (M = U, U = [], G = []), W++, null != e) Z = e.newUnread, J = e.newRead;
     else {
-        let [e, t] = eg(j);
+        let [e, t] = eg(M);
         Z = e, J = t
     }
     v.A.onlyShowRecentGeneratedCandidates() || (function() {
@@ -170,7 +170,7 @@ function em(e) {
         t.forEach(e => {
             V[e.id] = e, null != b.A.getReadTimestamp(e.id) ? i.push(e) : n.push(e)
         }), Z = eA(Z, n, y.Mm.GUILD_EVENT, 7), J = eA(J, i, y.Mm.GUILD_EVENT, 7)
-    }(), t = new Set, n = {}, r = [], l = [], (d = a.A.getFeed(R.X1.GLOBAL_FEED)?.entries ?? []).sort((e, t) => e.rank - t.rank).slice(0, 5), d.forEach(e => {
+    }(), t = new Set, n = {}, a = [], r = [], (d = l.A.getFeed(R.X1.GLOBAL_FEED)?.entries ?? []).sort((e, t) => e.rank - t.rank).slice(0, 5), d.forEach(e => {
         if (t.has(e.content.id) || e.content.content_type !== i.ContentInventoryEntryType.PLAYED_GAME && e.content.content_type !== i.ContentInventoryEntryType.CUSTOM_STATUS && e.content.content_type !== i.ContentInventoryEntryType.TOP_GAME || (0, o.I5)(e.content)) return;
         if ((0, s.zD)(e.content)) {
             if (null == n[e.content.author_id] && (n[e.content.author_id] = new Set), n[e.content.author_id].has(e.content.extra.application_id)) return;
@@ -182,7 +182,7 @@ function em(e) {
             score: 15,
             activity: e.content
         });
-        let a = {
+        let l = {
             id: e.content.id,
             type: y.Mm.ACTIVITY,
             score: 15,
@@ -191,14 +191,14 @@ function em(e) {
                 content_id: e.content.id
             }
         };
-        t.add(e.content.id), V[a.id] = a, null != b.A.getReadTimestamp(a.id) ? l.push(a) : r.push(a)
-    }), Z = eA(Z, r, y.Mm.ACTIVITY, 5), J = eA(J, l, y.Mm.ACTIVITY, 5), eh()), null != k.load_id && M !== k.load_id && (S.k.trackFeedLoaded({
+        t.add(e.content.id), V[l.id] = l, null != b.A.getReadTimestamp(l.id) ? r.push(l) : a.push(l)
+    }), Z = eA(Z, a, y.Mm.ACTIVITY, 5), J = eA(J, r, y.Mm.ACTIVITY, 5), eh()), null != k.load_id && j !== k.load_id && (S.k.trackFeedLoaded({
         newTrackingProps: k,
-        hasNewContent: z,
+        hasNewContent: q,
         unreadFeedItems: Z,
         readFeedItems: J,
         homeSessionId: "gravity"
-    }), M = k.load_id ?? null, k = {}), ee = 0, Z.length + J.length === 0 && (es = !0), (0, O.kx)([...Z, ...J], 0, y.w5), er = !1
+    }), j = k.load_id ?? null, k = {}), ee = 0, Z.length + J.length === 0 && (es = !0), (0, O.kx)([...Z, ...J], 0, y.w5), ea = !1
 }
 
 function eg(e) {
@@ -206,8 +206,8 @@ function eg(e) {
         n = [],
         i = [];
     return e.forEach(e => {
-        let r = null != b.A.getReadTimestamp(e.id);
-        e.type === y.Mm.MESSAGE && e.data.message_context?.external_content_application_id == null && (r = r || !(0, O.$r)(e.data.channel_id, e.data.message_id)), r ? t.push(e) : e.type === y.Mm.MESSAGE && e.data.has_mention ? i.push(e) : n.push(e)
+        let a = null != b.A.getReadTimestamp(e.id);
+        e.type === y.Mm.MESSAGE && e.data.message_context?.external_content_application_id == null && (a = a || !(0, O.$r)(e.data.channel_id, e.data.message_id)), a ? t.push(e) : e.type === y.Mm.MESSAGE && e.data.has_mention ? i.push(e) : n.push(e)
     }), [
         [...i, ...n], t.sort((e, t) => (0, O.tI)(e.id, t.id))
     ]
@@ -215,8 +215,8 @@ function eg(e) {
 
 function ep(e, t) {
     let n = [],
-        i = new Set(j.map(e => e.id));
-    for (let r of e) !(r.type === y.Mm.RECOMMENDED_GUILDS || i.has(r.id)) && null == b.A.getReadTimestamp(r.id) && (r.type !== y.Mm.MESSAGE || (0, O.$r)(r.data.channel_id, r.data.message_id) && r.data.channel_id !== t) && n.push(r);
+        i = new Set(M.map(e => e.id));
+    for (let a of e) !(a.type === y.Mm.RECOMMENDED_GUILDS || i.has(a.id)) && null == b.A.getReadTimestamp(a.id) && (a.type !== y.Mm.MESSAGE || (0, O.$r)(a.data.channel_id, a.data.message_id) && a.data.channel_id !== t) && n.push(a);
     return n
 }
 
@@ -225,7 +225,7 @@ function eE(e, t) {
 }
 
 function eI(e, t) {
-    (0, O.Wu)(t) === O.n$.MUTED && (j = eE(j, e), Z = eE(Z, e), J = eE(J, e), U = eE(U, e), G = eE(G, e))
+    (0, O.Wu)(t) === O.n$.MUTED && (M = eE(M, e), Z = eE(Z, e), J = eE(J, e), U = eE(U, e), G = eE(G, e))
 }
 
 function ef(e, t) {
@@ -233,7 +233,7 @@ function ef(e, t) {
 }
 
 function eC(e, t) {
-    (0, O.Wu)(t) === O.n$.MUTED && (j = ef(j, e), Z = ef(Z, e), J = ef(J, e), U = ef(U, e), G = ef(G, e))
+    (0, O.Wu)(t) === O.n$.MUTED && (M = ef(M, e), Z = ef(Z, e), J = ef(J, e), U = ef(U, e), G = ef(G, e))
 }
 
 function eT(e) {
@@ -241,31 +241,31 @@ function eT(e) {
         type: t,
         messageId: n,
         userId: i,
-        emoji: r,
-        reactionType: l
-    } = e, a = B[n];
-    if (null == a || a.type !== y.Mm.MESSAGE) return !1;
+        emoji: a,
+        reactionType: r
+    } = e, l = B[n];
+    if (null == l || l.type !== y.Mm.MESSAGE) return !1;
     let s = A.default.getId() === i;
-    "MESSAGE_REACTION_ADD" === t ? a.message = a.message.addReaction(r, s, e.colors, l) : a.message = a.message.removeReaction(r, s, l)
+    "MESSAGE_REACTION_ADD" === t ? l.message = l.message.addReaction(a, s, e.colors, r) : l.message = l.message.removeReaction(a, s, r)
 }
 
 function eN(e) {
     let {
         channelId: t
     } = e, n = [], i = [];
-    Z.forEach((e, r) => {
-        (r > ee || !K) && e.type === y.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
+    Z.forEach((e, a) => {
+        (a > ee || !z) && e.type === y.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : i.push(e)
     });
-    let r = z,
-        [l, a] = eg(U);
-    if (G = ep(l, t), z = K ? r && G.length >= y.$P : r && ec(i, U), 0 === n.length && r === z) return !1;
+    let a = q,
+        [r, l] = eg(U);
+    if (G = ep(r, t), q = z ? a && G.length >= y.$P : a && ec(i, U), 0 === n.length && a === q) return !1;
     0 !== n.length && (Z = i, J = [...J, ...n])
 }
-class eS extends r.Ay.PersistedStore {
+class eS extends a.Ay.PersistedStore {
     static displayName = "ICYMIStore";
     static persistKey = "ICYMIStore";
     initialize(e) {
-        this.waitFor(A.default, h.A, a.A, d.A, _.A, c.Ay, m.A, v.A, b.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((j = e.dehydratedItems ?? []).forEach(e => {
+        this.waitFor(A.default, h.A, l.A, d.A, _.A, c.Ay, m.A, v.A, b.A, g.A, p.A, E.Ay, I.A, f.Ay), null != e && ((M = e.dehydratedItems ?? []).forEach(e => {
             V[e.id] = e
         }), F = e.customGuildScores ?? {}, Y = e.customChannelScoresByGuild ?? {}, X = e.numOpens ?? 0, w = e.lastOpened ?? 0, en = e.lastJoinedRecommendedGuild ?? 0, ed = e.lastTakenICYMISurvey ?? 0)
     }
@@ -273,7 +273,7 @@ class eS extends r.Ay.PersistedStore {
         return W
     }
     getDehydratedItems() {
-        return j
+        return M
     }
     getNewDehydratedItems() {
         return U
@@ -319,19 +319,19 @@ class eS extends r.Ay.PersistedStore {
         return F
     }
     hasNewContent() {
-        return z
+        return q
     }
     getCurrentStatusAttachments(e) {
         return null == $ || $[0] !== e ? [] : $[1]
     }
     getLoadId() {
-        return M
+        return j
     }
     hasOpenedEnoughTimes() {
         return 5 === X
     }
     hasOpened() {
-        return K
+        return z
     }
     getDiscoverableGuilds() {
         return et
@@ -340,16 +340,16 @@ class eS extends r.Ay.PersistedStore {
         return ei
     }
     isRefreshing() {
-        return er
+        return ea
     }
     isHydrating() {
-        return el.size > 0
+        return er.size > 0
     }
     notificationItem() {
         return Q
     }
     getIsTabFocused() {
-        return ea
+        return el
     }
     isFirstPageHydrated() {
         return es
@@ -365,7 +365,7 @@ class eS extends r.Ay.PersistedStore {
     }
     getState() {
         return {
-            dehydratedItems: j,
+            dehydratedItems: M,
             numOpens: X,
             customGuildScores: F,
             customChannelScoresByGuild: Y,
@@ -375,16 +375,16 @@ class eS extends r.Ay.PersistedStore {
         }
     }
 }
-let ex = new eS(l.h, {
+let ex = new eS(r.h, {
     LOGOUT: function() {
-        j = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, M = null, F = {}, Y = {}, W = 0, q = !1, z = !1, K = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, er = !1, el = new Set, Q = null, ea = !1, es = !1, $ = null, eo = 0
+        M = [], U = [], G = [], V = {}, k = {}, B = {}, H = {}, j = null, F = {}, Y = {}, W = 0, K = !1, q = !1, z = !1, Z = [], J = [], ee = 0, w = 0, en = 0, ei = !0, ea = !1, er = new Set, Q = null, el = !1, es = !1, $ = null, eo = 0
     },
     LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
         let {
             messageItem: t,
             customStatusItem: n
         } = e;
-        if (null != n) return Q = n, null != M && (U = U.length > 0 ? U : [...j], e_(), em()), !0;
+        if (null != n) return Q = n, null != j && (U = U.length > 0 ? U : [...M], e_(), em()), !0;
         if (null != t) {
             let e = {
                 id: t.message.id,
@@ -400,8 +400,8 @@ let ex = new eS(l.h, {
             if (V[t.message.id] = e, B[t.message.id] = {
                     ...e,
                     message: (0, u.rh)(t.message)
-                }, null == M && null == k) {
-                let [t, n] = eg(j = [e, ...j]);
+                }, null == j && null == k) {
+                let [t, n] = eg(M = [e, ...M]);
                 Z = t, J = n
             } else U = [e, ...U], em();
             return !0
@@ -413,16 +413,16 @@ let ex = new eS(l.h, {
             items: t,
             loadId: n,
             startTime: i,
-            isInitialLoad: r,
-            isReloading: l
+            isInitialLoad: a,
+            isReloading: r
         } = e;
         U = function(e) {
             let {
                 contentGenerationEnabled: t
             } = (0, x.o$)("processRawItems", !1), n = v.A.onlyShowRecentGeneratedCandidates(), i = new Set(y.H8);
             n ? i = new Set([y.Mm.GENERATED_CANDIDATE]) : t && i.add(y.Mm.GENERATED_CANDIDATE);
-            let r = e.filter(e => i.has(e.type)).filter(eu);
-            return n && r.sort((e, t) => N.default.extractTimestamp(t.id) - N.default.extractTimestamp(e.id)), r.map(e => {
+            let a = e.filter(e => i.has(e.type)).filter(eu);
+            return n && a.sort((e, t) => N.default.extractTimestamp(t.id) - N.default.extractTimestamp(e.id)), a.map(e => {
                 if (e.type === y.Mm.MESSAGE && null != e.data.message_context) {
                     let t = {};
                     null != e.data.message_context.reply_message_id && 0 !== parseInt(e.data.message_context.reply_message_id) && (t.reply_message_id = e.data.message_context.reply_message_id), null != e.data.message_context.before_message_id && 0 !== parseInt(e.data.message_context.before_message_id) && (t.before_message_id = e.data.message_context.before_message_id), null != e.data.message_context.after_message_id && 0 !== parseInt(e.data.message_context.after_message_id) && (t.after_message_id = e.data.message_context.after_message_id), null != e.data.message_context.external_content_application_id && 0 !== parseInt(e.data.message_context.external_content_application_id) && (t.external_content_application_id = e.data.message_context.external_content_application_id), null != e.data.message_context.reference_message_id && 0 !== parseInt(e.data.message_context.reference_message_id) && (t.reference_message_id = e.data.message_context.reference_message_id), e.data.message_context = t
@@ -434,22 +434,22 @@ let ex = new eS(l.h, {
             load_time_millis: Date.now() - i,
             feed_item_ids: U.map(e => e.id)
         };
-        let [a, s] = eg(U);
-        if (G = ep(a), !K || 0 === W || r) W = 0, !ea && ec(a, U) ? (z = !0, q = !0) : z = !1, em({
-            newUnread: a,
+        let [l, s] = eg(U);
+        if (G = ep(l), !z || 0 === W || a) W = 0, !el && ec(l, U) ? (q = !0, K = !0) : q = !1, em({
+            newUnread: l,
             newRead: s
         });
         else {
             W > 0 && (Q = null);
             let e = G.length > y.$P;
-            l || (z = e), e && ((0, O.kx)([...a, ...s], 0, y.w5), a.length + s.length === 0 && (es = !0))
+            r || (q = e), e && ((0, O.kx)([...l, ...s], 0, y.w5), l.length + s.length === 0 && (es = !0))
         }
         S.k.trackFeedLoaded({
             newTrackingProps: k,
-            hasNewContent: z,
-            unreadFeedItems: a,
+            hasNewContent: q,
+            unreadFeedItems: l,
             readFeedItems: s,
-            homeSessionId: ea ? "foreground_load" : "background_load"
+            homeSessionId: el ? "foreground_load" : "background_load"
         })
     },
     LOAD_ICYMI_HYDRATED: function(e) {
@@ -457,9 +457,9 @@ let ex = new eS(l.h, {
             messageItems: t,
             activityItems: n,
             generatedCandidateItems: i,
-            requestMessageItems: r,
-            requestActivityItems: l,
-            requestGeneratedCandidateItems: a,
+            requestMessageItems: a,
+            requestActivityItems: r,
+            requestGeneratedCandidateItems: l,
             startingIndex: s,
             endingIndex: o
         } = e;
@@ -469,7 +469,7 @@ let ex = new eS(l.h, {
         let d = t.reduce((e, t) => (e[t.message.id] = t, e), {}),
             c = n.reduce((e, t) => (e[t.id] = t, e), {}),
             u = i.reduce((e, t) => (e[t.content_id] = t, e), {});
-        r.forEach(e => {
+        a.forEach(e => {
             let t = d[e.message_id];
             if (null == t) {
                 H[e.message_id] = !0;
@@ -496,7 +496,7 @@ let ex = new eS(l.h, {
                     message: i
                 }
             } else B[t.message.id] = (0, O.Rh)(t, n)
-        }), l.forEach(e => {
+        }), r.forEach(e => {
             let t = c[e.content_id];
             if (null == t) {
                 H[e.content_id] = !0;
@@ -511,7 +511,7 @@ let ex = new eS(l.h, {
                 ...n,
                 activity: t
             }
-        }), a.forEach(e => {
+        }), l.forEach(e => {
             let t = u[e.content_id];
             if (null == t) {
                 H[e.content_id] = !0;
@@ -526,7 +526,7 @@ let ex = new eS(l.h, {
                 ...n,
                 candidate: (0, O.GM)(t)
             }
-        }), s === ee && (ee = o), el.delete((0, O.Vq)(s, o))
+        }), s === ee && (ee = o), er.delete((0, O.Vq)(s, o))
     },
     LOAD_ICYMI_CUSTOM_SCORES: function(e) {
         let {
@@ -566,10 +566,10 @@ let ex = new eS(l.h, {
     },
     RELOAD_ICYMI: function() {
         if (0 === U.length) return !1;
-        em(), z = !1
+        em(), q = !1
     },
     ICYMI_TAB_OPENED: function() {
-        K = !0, w = Date.now(), q && (q = !1, z = !1), X < 5 && X++
+        z = !0, w = Date.now(), K && (K = !1, q = !1), X < 5 && X++
     },
     ICYMI_FEEDBACK_GIVEN: function() {
         X = 6
@@ -581,8 +581,8 @@ let ex = new eS(l.h, {
             reactions: n
         } = e, i = B[t];
         if (null == i || i.type !== y.Mm.MESSAGE) return !1;
-        let r = A.default.getId();
-        i.message = i.message.addReactionBatch(n, r)
+        let a = A.default.getId();
+        i.message = i.message.addReactionBatch(n, a)
     },
     MESSAGE_REACTION_REMOVE: eT,
     MESSAGE_REACTION_REMOVE_ALL: function(e) {
@@ -615,25 +615,25 @@ let ex = new eS(l.h, {
         let {
             refreshing: t
         } = e;
-        er = t
+        ea = t
     },
     LOAD_ICYMI_HYDRATED_ATTEMPT: function(e) {
         let {
             hydrationId: t
         } = e;
-        el.add(t)
+        er.add(t)
     },
     LOAD_ICYMI_HYDRATED_FAILED: function(e) {
         let {
             hydrationId: t
         } = e;
-        el.delete(t)
+        er.delete(t)
     },
     ICYMI_SET_FOCUSED_TAB: function(e) {
         let {
             focused: t
         } = e;
-        ea = t
+        el = t
     },
     LOAD_ICYMI_CURRENT_STATUS_MEDIA: function(e) {
         let {

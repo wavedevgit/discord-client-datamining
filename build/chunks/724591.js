@@ -48,10 +48,10 @@ let M = s.memo(function(e) {
         [B, H] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, V?.id ?? ""),
         F = B === o.M.GAME_SHOP_NEW_BADGE && null != V,
         K = null == k || "loading" === k.state || F || t.id !== (0, g.zf)() || !w,
-        [Y, W] = (0, A.RF)(K ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
-        z = Y === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
+        [W, Y] = (0, A.RF)(K ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
+        z = W === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
         q = F || z,
-        X = s.useMemo(() => F ? H : W, [F, H, W]);
+        X = s.useMemo(() => F ? H : Y, [F, H, Y]);
     s.useEffect(() => {
         l && q && X(j.i.INDIRECT_ACTION)
     }, [X, l, q]);

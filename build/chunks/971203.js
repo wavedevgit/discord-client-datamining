@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
-    a = n(397927),
+    a = n(64700),
+    r = n(311907),
+    l = n(397927),
     s = n(956793),
     o = n(58149),
     d = n(378570),
@@ -17,10 +17,10 @@ var i = n(627968),
     m = n(985018);
 
 function g(e) {
-    let t = r.useContext(h.AnalyticsContext),
+    let t = a.useContext(h.AnalyticsContext),
         n = e.voiceChannels[0],
-        g = (0, l.bG)([u.A], () => null != n && u.A.can(_.xBc.CONNECT, n.channel));
-    return null == n ? null : [(0, i.jsx)(a.Drp, {
+        g = (0, r.bG)([u.A], () => null != n && u.A.can(_.xBc.CONNECT, n.channel));
+    return null == n ? null : [(0, i.jsx)(l.Drp, {
         id: "join-voice",
         action: function() {
             (0, d.iN)(n.channel.id), s.default.selectVoiceChannel(n.channel.id), o.Ay.trackWithMetadata(_.HAw.ACTIVITY_FEED_VOICE_CHANNEL_VISITED, {
@@ -35,7 +35,7 @@ function g(e) {
         },
         label: m.intl.string(m.t["8yOlh9"]),
         disabled: !g
-    }, "join-voice"), (0, i.jsx)(a.Drp, {
+    }, "join-voice"), (0, i.jsx)(l.Drp, {
         id: "goto-server",
         action: function() {
             (0, c.u)(n.guild.id), o.Ay.trackWithMetadata(_.HAw.ACTIVITY_FEED_GUILD_VISITED, {

@@ -1,21 +1,21 @@
 /** chunk id: 75587 params = (module,exports,require) **/
-n.d(t, {
-    A: () => o
+s.d(e, {
+    A: () => d
 });
-var i = n(627968);
-n(64700);
-var r = n(873263),
-    l = n(707606),
-    a = n(145293),
-    s = n(652215);
-let o = (0, l.A)(function() {
-    return (0, i.jsxs)(r.dO, {
-        children: [(0, i.jsx)(r.qh, {
-            path: s.BVt.APPLICATION_STORE,
+var i = s(627968);
+s(64700);
+var n = s(873263),
+    r = s(707606),
+    o = s(145293),
+    a = s(652215);
+let d = (0, r.A)(function() {
+    return (0, i.jsxs)(n.dO, {
+        children: [(0, i.jsx)(n.qh, {
+            path: a.BVt.APPLICATION_STORE,
             exact: !0,
-            render: () => (0, i.jsx)(a.A, {})
-        }), (0, i.jsx)(r.rd, {
-            to: s.BVt.APP
+            render: () => (0, i.jsx)(o.A, {})
+        }), (0, i.jsx)(n.rd, {
+            to: a.BVt.APP
         })]
     })
 })

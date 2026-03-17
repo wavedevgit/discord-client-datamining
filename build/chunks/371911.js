@@ -70,13 +70,13 @@ function y(e) {
         }, [y, l, P]);
     s.useEffect(() => (x._.subscribe(S.jej.TOGGLE_INBOX, K), () => void x._.unsubscribe(S.jej.TOGGLE_INBOX, K)), [K]);
     let {
-        enabled: Y,
-        inInbox: W
+        enabled: W,
+        inInbox: Y
     } = A.A.useConfig({
         location: "RecentsPopout"
-    }), z = (0, o.bG)([m.A], () => m.A.hasOverdueReminder(), []) && Y && W;
+    }), z = (0, o.bG)([m.A], () => m.A.hasOverdueReminder(), []) && W && Y;
     s.useEffect(() => {
-        k !== c.Y2.BOOKMARKS || Y || W || V(c.Y2.MENTIONS), k === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
+        k !== c.Y2.BOOKMARKS || W || Y || V(c.Y2.MENTIONS), k === c.Y2.GAME_INVITES && V(c.Y2.MENTIONS)
     });
     let q = s.useCallback(e => {
             e.shiftKey || F()
@@ -111,7 +111,7 @@ function y(e) {
                             }),
                             children: k === c.Y2.FOR_YOU ? (0, i.jsx)(C.Ay, {}) : k === c.Y2.MENTIONS ? (0, i.jsx)(E.A, {
                                 onJump: q
-                            }) : Y && W && k === c.Y2.BOOKMARKS ? (0, i.jsx)(p.J, {
+                            }) : W && Y && k === c.Y2.BOOKMARKS ? (0, i.jsx)(p.J, {
                                 closePopout: F
                             }) : k === c.Y2.SCHEDULED ? (0, i.jsx)(N.w, {}) : (0, i.jsx)(a.tH, {
                                 fallback: (0, i.jsx)(b.T, {}),

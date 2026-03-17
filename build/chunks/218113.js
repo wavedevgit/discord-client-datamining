@@ -1,16 +1,16 @@
 /** chunk id: 218113 params = (module,exports,require) **/
-n.d(t, {
-    Qs: () => r,
-    Sz: () => c,
-    aE: () => o,
-    f7: () => s
+n.d(e, {
+    Qs: () => d,
+    Sz: () => s,
+    aE: () => u,
+    f7: () => r
 });
 var i = n(136722),
     l = n(818348),
     a = n(985018);
-let r = 2,
-    s = 2,
-    o = () => [{
+let d = 2,
+    r = 2,
+    u = () => [{
         id: "1",
         value: 1,
         label: a.intl.string(a.t["GA/d4I"])
@@ -35,4 +35,4 @@ let r = 2,
         value: 24,
         label: a.intl.string(a.t["W0+LsV"])
     }],
-    c = i.kg(l.xB.ADMINISTRATOR, l.xB.MANAGE_GUILD, l.xB.BAN_MEMBERS, l.xB.KICK_MEMBERS, l.xB.MODERATE_MEMBERS)
+    s = i.kg(l.xB.ADMINISTRATOR, l.xB.MANAGE_GUILD, l.xB.BAN_MEMBERS, l.xB.KICK_MEMBERS, l.xB.MODERATE_MEMBERS)

@@ -5,8 +5,8 @@ a.d(t, {
 var n = a(627968);
 a(64700);
 var i = a(503698),
-    s = a.n(i),
-    l = a(397927),
+    l = a.n(i),
+    s = a(397927),
     r = a(1305);
 
 function o(e) {
@@ -18,12 +18,12 @@ function o(e) {
         className: r.kL,
         children: [t ? (0, n.jsx)("div", {
             className: r.dc,
-            children: (0, n.jsx)(l.y$y, {
+            children: (0, n.jsx)(s.y$y, {
                 className: r.u1,
-                type: l.y$y.Type.SPINNING_CIRCLE
+                type: s.y$y.Type.SPINNING_CIRCLE
             })
         }) : null, (0, n.jsx)("div", {
-            className: s()({
+            className: l()({
                 [r.Lq]: t
             }),
             children: a

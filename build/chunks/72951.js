@@ -3,8 +3,8 @@ n.d(t, {
     A: () => c
 });
 var i = n(627968),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     a = n(397927),
     s = n(47167),
     o = n(713654),
@@ -14,12 +14,12 @@ function c(e) {
     let {
         className: t,
         channel: n,
-        guild: r,
+        guild: l,
         onClick: c
-    } = e, u = (0, o.gU)(n, r), _ = (0, s.Ay)(n);
+    } = e, u = (0, o.gU)(n, l), _ = (0, s.Ay)(n);
     return (0, i.jsxs)(a.DUT, {
         onClick: c,
-        className: l()(d.UP, t),
+        className: r()(d.UP, t),
         children: [null != u && (0, i.jsx)(u, {
             className: d.p,
             color: "currentColor",
@@ -30,7 +30,7 @@ function c(e) {
             variant: "text-xs/medium",
             lineClamp: 1,
             color: "currentColor",
-            children: [r.name, " / ", _]
+            children: [l.name, " / ", _]
         }), (0, i.jsx)(a._BQ, {
             className: d.t4,
             color: "currentColor",

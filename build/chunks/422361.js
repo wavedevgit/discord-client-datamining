@@ -45,8 +45,8 @@ var i = n(627968),
     H = n(977997),
     F = n(147036),
     K = n(338234),
-    Y = n(557534),
-    W = n(68437),
+    W = n(557534),
+    Y = n(68437),
     z = n(166444),
     q = n(439282),
     X = n(562991),
@@ -56,7 +56,7 @@ var J = n(652215),
     $ = n(349828),
     Z = n(985018),
     ee = n(728444);
-class et extends Y.Ay {
+class et extends W.Ay {
     state = {
         shouldShowActivities: !1,
         shouldShowGuildVerificationPopout: !1,
@@ -459,7 +459,7 @@ function ei(e) {
     }), {
         enableHighlight: G,
         enableWaveformIcon: P
-    } = (0, _.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = G && F, Y = P && F, z = (0, W.A)({
+    } = (0, _.b)(t.id, "VoiceChannel"), F = null != c && c.length > 0, K = G && F, W = P && F, z = (0, Y.A)({
         channel: n,
         isChannelSelected: r,
         isChannelCollapsed: o,
@@ -491,6 +491,6 @@ function ei(e) {
         hasChannelInfo: null != z,
         hasStartTime: C,
         shouldHighlightChannel: K,
-        shouldUseAnimatedWaveform: Y
+        shouldUseAnimatedWaveform: W
     })
 }

@@ -3,10 +3,10 @@ n.d(t, {
     H: () => h,
     L: () => A
 });
-var i, r = n(627968);
+var i, a = n(627968);
 n(64700);
-var l = n(768569),
-    a = n(164554),
+var r = n(768569),
+    l = n(164554),
     s = n(305498),
     o = n(909255),
     d = n(374079),
@@ -29,7 +29,7 @@ function h(e) {
     } = e;
     switch (n) {
         case "churn_discount":
-            if (null != A && null != h) return (0, r.jsx)(c.A, {
+            if (null != A && null != h) return (0, a.jsx)(c.A, {
                 targetElementRef: i,
                 discountOffer: A,
                 premiumSubscription: h,
@@ -38,31 +38,31 @@ function h(e) {
             });
             break;
         case "premium_group":
-            return (0, r.jsx)(l.p, {
+            return (0, a.jsx)(r.p, {
                 targetElementRef: i,
                 dismissPopover: p,
                 children: t
             });
         case "orbs_upsell":
-            if (_) return (0, r.jsx)(d.A, {
+            if (_) return (0, a.jsx)(d.A, {
                 targetElementRef: i,
                 dismissPopover: p,
                 numOrbs: m,
                 children: t
             });
-            return (0, r.jsx)(o.A, {
+            return (0, a.jsx)(o.A, {
                 targetElementRef: i,
                 dismissPopover: p,
                 children: t
             });
         case "orbs_intro":
-            return (0, r.jsx)(a.A, {
+            return (0, a.jsx)(l.A, {
                 targetElementRef: i,
                 dismissPopover: p,
                 children: t
             });
         case "orbs_drop":
-            if (null != g) return (0, r.jsx)(s.A, {
+            if (null != g) return (0, a.jsx)(s.A, {
                 targetElementRef: i,
                 dismissPopover: E,
                 lastGrantedRewardAmount: g,
@@ -70,7 +70,7 @@ function h(e) {
             });
             break;
         case "tooltip":
-            return (0, r.jsx)(u.A, {
+            return (0, a.jsx)(u.A, {
                 children: t
             })
     }

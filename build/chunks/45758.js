@@ -5,8 +5,8 @@ a.d(t, {
 var n = a(627968);
 a(64700);
 var i = a(503698),
-    s = a.n(i),
-    l = a(397927),
+    l = a.n(i),
+    s = a(397927),
     r = a(650964);
 let o = function(e) {
     let {
@@ -15,7 +15,7 @@ let o = function(e) {
         selectedTab: i,
         className: o
     } = e;
-    return (0, n.jsx)(l.VQ0, {
+    return (0, n.jsx)(s.VQ0, {
         type: "top-pill",
         selectedItem: i,
         onItemSelect: a,
@@ -26,9 +26,9 @@ let o = function(e) {
                 label: i,
                 count: o
             } = e;
-            return (0, n.jsx)(l.VQ0.Item, {
+            return (0, n.jsx)(s.VQ0.Item, {
                 id: a,
-                className: s()(r.V, {
+                className: l()(r.V, {
                     [r.r]: 0 === t
                 }),
                 "aria-label": i,

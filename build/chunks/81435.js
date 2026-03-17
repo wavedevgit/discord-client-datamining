@@ -1,7 +1,7 @@
 /** chunk id: 81435 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => Y
+    A: () => W
 });
 var i = n(627968),
     s = n(64700),
@@ -322,7 +322,7 @@ function K(e) {
         })]
     })
 }
-let Y = (0, s.memo)(function(e) {
+let W = (0, s.memo)(function(e) {
     let {
         message: t,
         groupedMessages: l,

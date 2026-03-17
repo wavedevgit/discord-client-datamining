@@ -4,15 +4,15 @@ a.d(t, {
 });
 var n = a(627968),
     i = a(64700),
-    s = a(503698),
-    l = a.n(s),
+    l = a(503698),
+    s = a.n(l),
     r = a(791332),
     o = a.n(r),
     c = a(397927),
     d = a(558179),
     u = a(151890),
-    h = a(985018),
-    m = a(191817);
+    m = a(985018),
+    h = a(191817);
 let p = o().parserFor(u.A),
     _ = o().reactFor(o().ruleOutput(u.A, "react"));
 
@@ -20,7 +20,7 @@ function g(e) {
     let {
         description: t,
         supportsMarkdown: a
-    } = e, [s, r] = i.useState(!1), o = i.useRef(null);
+    } = e, [l, r] = i.useState(!1), o = i.useRef(null);
     i.useEffect(() => {
         if (null == o.current) return;
         let e = new ResizeObserver(() => {
@@ -28,18 +28,18 @@ function g(e) {
         });
         return e.observe(o.current), () => e.disconnect()
     }, []);
-    let [u, h] = i.useState(!1), g = i.useCallback(() => {
-        h(e => !e)
+    let [u, m] = i.useState(!1), g = i.useCallback(() => {
+        m(e => !e)
     }, []);
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)("div", {
             ref: o,
-            className: l()({
-                [m.mA]: !u,
-                [m.ii]: !u && "Safari" === platform.name
+            className: s()({
+                [h.mA]: !u,
+                [h.ii]: !u && "Safari" === platform.name
             }),
             children: a ? (0, n.jsx)(d.A, {
-                className: m.R4,
+                className: h.R4,
                 parser: p,
                 output: _,
                 state: {
@@ -51,7 +51,7 @@ function g(e) {
                 color: "text-default",
                 children: t
             })
-        }), s || u ? (0, n.jsx)(x, {
+        }), l || u ? (0, n.jsx)(x, {
             isShowingMore: u,
             onToggle: g
         }) : null]
@@ -62,48 +62,48 @@ function x(e) {
     let {
         onToggle: t,
         isShowingMore: a
-    } = e, s = i.useMemo(() => (0, n.jsxs)("div", {
-        className: m.eR,
+    } = e, l = i.useMemo(() => (0, n.jsxs)("div", {
+        className: h.eR,
         children: [(0, n.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "interactive-text-default",
-            children: a ? h.intl.string(h.t["vtfc4+"]) : h.intl.string(h.t.ZDRyuq)
+            children: a ? m.intl.string(m.t["vtfc4+"]) : m.intl.string(m.t.ZDRyuq)
         }), a ? (0, n.jsx)(c.tN5, {
             size: "md",
             color: "currentColor",
-            className: m.ys
+            className: h.ys
         }) : (0, n.jsx)(c.abt, {
             size: "md",
             color: "currentColor",
-            className: m.ys
+            className: h.ys
         })]
     }), [a]);
     return (0, n.jsxs)(c.DUT, {
-        className: m.dO,
+        className: h.dO,
         onClick: t,
         children: [(0, n.jsx)("div", {
-            className: m.yF
-        }), s, (0, n.jsx)("div", {
-            className: m.yF
+            className: h.yF
+        }), l, (0, n.jsx)("div", {
+            className: h.yF
         })]
     })
 }
 let A = function(e) {
     let {
         application: t
-    } = e, a = t.directory_entry?.detailed_description, s = t.directory_entry?.short_description, l = i.useMemo(() => null != a && a.length > 0 ? (0, n.jsx)(g, {
+    } = e, a = t.directory_entry?.detailed_description, l = t.directory_entry?.short_description, s = i.useMemo(() => null != a && a.length > 0 ? (0, n.jsx)(g, {
         description: a,
         supportsMarkdown: !0
-    }) : null != s && s.length > 0 ? (0, n.jsx)(g, {
-        description: s,
+    }) : null != l && l.length > 0 ? (0, n.jsx)(g, {
+        description: l,
         supportsMarkdown: !1
-    }) : null, [a, s]);
-    return null == l ? null : (0, n.jsxs)("div", {
-        className: m.l4,
+    }) : null, [a, l]);
+    return null == s ? null : (0, n.jsxs)("div", {
+        className: h.l4,
         children: [(0, n.jsx)(c.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: h.intl.string(h.t.txraKS)
-        }), l]
+            children: m.intl.string(m.t.txraKS)
+        }), s]
     })
 }

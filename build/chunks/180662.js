@@ -1,12 +1,12 @@
 /** chunk id: 180662 params = (module,exports,require) **/
 n.d(t, {
     A: () => F,
-    e: () => D
+    e: () => M
 });
 var i = n(284009),
-    r = n.n(i),
-    l = n(735438),
-    a = n.n(l),
+    l = n.n(i),
+    r = n(735438),
+    a = n.n(r),
     s = n(966974),
     o = n(311907),
     d = n(582754),
@@ -36,19 +36,19 @@ var i = n(284009),
 function P(e, t) {
     let n = [...t],
         i = 0,
-        r = 0;
+        l = 0;
     for (let t of n) {
         let n = e?.find(e => e.answer_id === parseInt(t))?.poll_media;
-        n?.text != null && (i += 1), n?.emoji != null && (r += 1)
+        n?.text != null && (i += 1), n?.emoji != null && (l += 1)
     }
     return {
         analyticsSelectedAnswerIds: n,
         selectedTextAnswersCount: i,
-        selectedEmojiAnswersCount: r
+        selectedEmojiAnswersCount: l
     }
 }
 
-function M(e) {
+function D(e) {
     let {
         guildId: t,
         title: n,
@@ -67,23 +67,23 @@ function M(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         channelId: t,
         messageId: n,
         answerId: i
-    } = e, r = I.A.getChannel(t);
-    if (null == r) return;
-    if (g.A.isLurking(r.guild_id)) return void M({
-        guildId: r.guild_id,
+    } = e, l = I.A.getChannel(t);
+    if (null == l) return;
+    if (g.A.isLurking(l.guild_id)) return void D({
+        guildId: l.guild_id,
         title: R.intl.string(R.t["7LpysO"]),
         body: R.intl.string(R.t["5sHHoy"])
     });
-    let l = b.A.getMessage(t, n);
-    if (null == l || null == l.poll || 0 === l.poll.answers.length) return;
-    let a = i ?? String(l.poll.answers[0].answer_id);
+    let r = b.A.getMessage(t, n);
+    if (null == r || null == r.poll || 0 === r.poll.answers.length) return;
+    let a = i ?? String(r.poll.answers[0].answer_id);
     S.W({
-        message: l,
+        message: r,
         initialAnswerId: a
     })
 }
@@ -115,10 +115,10 @@ async function k(e) {
         channelId: t,
         messageId: n,
         answerIds: i
-    } = e, r = O({
+    } = e, l = O({
         channelId: t,
         messageId: n
-    }), l = a().difference(r, i), s = a().difference(i, r), d = C.default.getId(), u = [...l.map(e => ({
+    }), r = a().difference(l, i), s = a().difference(i, l), d = C.default.getId(), u = [...r.map(e => ({
         type: "MESSAGE_REACTION_REMOVE",
         id: e
     })), ...s.map(e => ({
@@ -128,10 +128,10 @@ async function k(e) {
         let e;
         for (let {
                 id: i,
-                type: r
+                type: l
             }
             of u) e = c.h.dispatch({
-            type: r,
+            type: l,
             channelId: t,
             messageId: n,
             emoji: {
@@ -152,7 +152,7 @@ async function U(e) {
         messageId: n
     } = e, i = I.A.getChannel(t);
     if (null == i) return;
-    if (g.A.isLurking(i.guild_id)) return void M({
+    if (g.A.isLurking(i.guild_id)) return void D({
         guildId: i.guild_id,
         title: R.intl.string(R.t.Qic1FD),
         body: R.intl.string(R.t["5sHHoy"])
@@ -161,15 +161,15 @@ async function U(e) {
         title: R.intl.string(R.t.p245wu),
         body: R.intl.string(R.t["U/uodt"])
     });
-    let l = (0, N.xt)(t, n);
-    r()(null != l, "Must not be able to vote without existing state!");
+    let r = (0, N.xt)(t, n);
+    l()(null != r, "Must not be able to vote without existing state!");
     let a = O({
         channelId: t,
         messageId: n
     });
     try {
-        let e = [...l.selectedAnswerIds.values()];
-        (0, N.A2)(t, n, e => (r()(null != e, "Must not be able to vote without existing state!"), {
+        let e = [...r.selectedAnswerIds.values()];
+        (0, N.A2)(t, n, e => (l()(null != e, "Must not be able to vote without existing state!"), {
             ...e,
             submitting: !0,
             editing: !1
@@ -204,7 +204,7 @@ async function G(e) {
         channelId: t,
         messageId: n
     } = e, i = I.A.getChannel(t);
-    if (null != i) return g.A.isLurking(i.guild_id) ? void M({
+    if (null != i) return g.A.isLurking(i.guild_id) ? void D({
         guildId: i.guild_id,
         title: R.intl.string(R.t.B9QnBp),
         body: R.intl.string(R.t.BVZCTn)
@@ -253,13 +253,13 @@ async function B(e) {
                 } = e;
                 (0, N.A2)(t, n, e => {
                     let i = null == e || !e.showResults,
-                        r = b.A.getMessage(t, n),
-                        l = null != r ? r.reactions.reduce((e, t) => e + (t.count_details?.vote ?? 0), 0) : 0;
+                        l = b.A.getMessage(t, n),
+                        r = null != l ? l.reactions.reduce((e, t) => e + (t.count_details?.vote ?? 0), 0) : 0;
                     return p.Ay.trackWithMetadata(L.HAw.POLL_SHOW_RESULTS_CLICKED, {
                         channel_id: t,
                         message_id: n,
                         show_results: i,
-                        votes_count: l
+                        votes_count: r
                     }), {
                         channelId: t,
                         selectedAnswerIds: new Set,
@@ -274,13 +274,13 @@ async function B(e) {
             });
             break;
         case "showVoterDetails":
-            D({
+            M({
                 channelId: t,
                 messageId: n
             });
             break;
         default:
-            r()(!1, `Unknown poll action type: ${i}`)
+            l()(!1, `Unknown poll action type: ${i}`)
     }
 }
 let F = {
@@ -290,7 +290,7 @@ let F = {
             ...n
         } = e, {
             channelId: i,
-            messageId: l,
+            messageId: r,
             message: a
         } = function(e) {
             let {
@@ -302,35 +302,35 @@ let F = {
                 channelId: t,
                 messageId: n
             };
-            let l = f.A.getMessage(t, n);
-            if (null != l.message) return {
+            let r = f.A.getMessage(t, n);
+            if (null != r.message) return {
                 channelId: t,
                 messageId: n,
-                message: l.message
+                message: r.message
             };
-            throw r()(null != i, "Tapped on a non-existent poll message"), Error()
+            throw l()(null != i, "Tapped on a non-existent poll message"), Error()
         }(n), {
             tapShouldOpenVotersModal: s
         } = (0, j.j8)(a) ?? {};
-        if (!0 === s) return void D({
+        if (!0 === s) return void M({
             channelId: i,
-            messageId: l,
+            messageId: r,
             answerId: t
         });
         let o = a.poll?.allow_multiselect;
-        (0, N.A2)(i, l, e => {
+        (0, N.A2)(i, r, e => {
             if (null == e) {
                 let e = new Set([t]),
                     {
                         analyticsSelectedAnswerIds: n,
-                        selectedTextAnswersCount: r,
+                        selectedTextAnswersCount: l,
                         selectedEmojiAnswersCount: s
                     } = P(a.poll?.answers, e);
                 return p.Ay.trackWithMetadata(L.HAw.POLL_VOTE_SELECTED, {
                     channel_id: i,
-                    message_id: l,
+                    message_id: r,
                     selected_answer_ids: n,
-                    selected_text_answers_count: r,
+                    selected_text_answers_count: l,
                     selected_emoji_answers_count: s
                 }), {
                     channelId: i,
@@ -343,21 +343,21 @@ let F = {
             let n = {
                     ...e
                 },
-                r = new Set(n.selectedAnswerIds);
-            if (n.selectedAnswerIds = r, r.has(t)) r.delete(t);
+                l = new Set(n.selectedAnswerIds);
+            if (n.selectedAnswerIds = l, l.has(t)) l.delete(t);
             else {
                 if (!o)
-                    for (let e of r) r.delete(e);
-                r.add(t)
+                    for (let e of l) l.delete(e);
+                l.add(t)
             }
             let {
                 analyticsSelectedAnswerIds: s,
                 selectedTextAnswersCount: d,
                 selectedEmojiAnswersCount: c
-            } = P(a.poll?.answers, r);
+            } = P(a.poll?.answers, l);
             return p.Ay.trackWithMetadata(L.HAw.POLL_VOTE_SELECTED, {
                 channel_id: i,
-                message_id: l,
+                message_id: r,
                 selected_answer_ids: s,
                 selected_text_answers_count: d,
                 selected_emoji_answers_count: c
@@ -372,8 +372,8 @@ let F = {
             channel: t,
             question: n,
             answers: i,
-            allowMultiSelect: r,
-            duration: l,
+            allowMultiSelect: l,
+            duration: r,
             layout: a,
             onClose: o
         } = e, d = T.A.getUploads(t.id, E.C.Poll), c = i.map(e => {
@@ -396,8 +396,8 @@ let F = {
                 text: n.trim()
             },
             answers: c,
-            allow_multiselect: r,
-            duration: l,
+            allow_multiselect: l,
+            duration: r,
             layout_type: a
         };
         try {

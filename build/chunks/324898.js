@@ -12,22 +12,22 @@ var s = n(503698),
     a = n(311907),
     o = n(990078),
     d = n(397927),
-    c = n(317525),
-    u = n(576705),
-    m = n(488926),
-    g = n(349828),
+    c = n(5180),
+    u = n(317525),
+    m = n(576705),
+    g = n(488926),
     x = n(124759),
     h = n(985018),
     _ = n(690450);
 
 function p(e) {
-    return x.dR.filter(t => e?.id !== g.Vc && m.Ib(t, e))
+    return x.dR.filter(t => !(0, c.ai)(e?.id) && g.Ib(t, e))
 }
 
 function A(e) {
     let {
         guild: t
-    } = e, s = (0, a.bG)([c.A], () => c.A.getEveryoneRole(t)), m = p(t), g = m.length > 0, A = x.dR.some(e => !u.A.can(e, t, null, {
+    } = e, s = (0, a.bG)([u.A], () => u.A.getEveryoneRole(t)), c = p(t), g = c.length > 0, A = x.dR.some(e => !m.A.can(e, t, null, {
         [s.id]: {
             ...s,
             permissions: r.TF(s.permissions, e)
@@ -43,7 +43,7 @@ function A(e) {
                 variant: "text-sm/medium",
                 color: "text-default",
                 children: h.intl.format(h.t.RXAtdO, {
-                    numPerms: m.length
+                    numPerms: c.length
                 })
             })]
         }), g ? (0, i.jsx)(d.EpV, {

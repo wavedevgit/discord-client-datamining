@@ -4,9 +4,9 @@ n.d(t, {
     X: () => _
 });
 var i = n(64700),
-    r = n(311907),
-    l = n(449054),
-    a = n(417426),
+    a = n(311907),
+    r = n(449054),
+    l = n(417426),
     s = n(747550),
     o = n(351022),
     d = n(282026),
@@ -17,17 +17,17 @@ var i = n(64700),
 function h(e) {
     let {
         loadId: t
-    } = e, n = d.A.useField("fetchedQuery"), l = d.A.useField("categoryId"), a = d.A.useField("languageCode"), c = i.useMemo(() => ({
-        categoryId: l,
+    } = e, n = d.A.useField("fetchedQuery"), r = d.A.useField("categoryId"), l = d.A.useField("languageCode"), c = i.useMemo(() => ({
+        categoryId: r,
         query: n,
-        languageCode: a
-    }), [l, a, n]), u = (0, r.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, r.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
+        languageCode: l
+    }), [r, l, n]), u = (0, a.bG)([o.A], () => o.A.getGuildIds(c) ?? A.VX), h = (0, a.bG)([o.A], () => o.A.getIsFetching(c) ?? !1), _ = d.A.useField("resultsQuery"), m = _ !== n, g = i.useCallback(() => {
         let e = o.A.getGuildIds(c),
             n = o.A.getTotal(c);
         if (null == e || null == n) return;
         let i = o.A.getIsFetching(c),
-            r = o.A.getIsInitialFetchComplete(c);
-        i || !r || e.length >= n || s.A.loadMoreCategoryResults({
+            a = o.A.getIsInitialFetchComplete(c);
+        i || !a || e.length >= n || s.A.loadMoreCategoryResults({
             loadId: t,
             offset: e.length,
             categoryId: d.A.getField("categoryId"),
@@ -40,14 +40,14 @@ function h(e) {
         loading: m || h,
         searchResultsQuery: _,
         loadMore: g,
-        searchCategoryId: l
-    }), [u, m, h, _, g, l])
+        searchCategoryId: r
+    }), [u, m, h, _, g, r])
 }
 
 function _(e) {
     let {
         loadId: t
-    } = e, n = u.A.useField("isSearchVisible"), r = d.A.useField("query");
+    } = e, n = u.A.useField("isSearchVisible"), a = d.A.useField("query");
     i.useEffect(() => {
         (0, c.Mu)()
     }, []);
@@ -57,10 +57,10 @@ function _(e) {
         })
     }, []);
     return {
-        searchQuery: r,
+        searchQuery: a,
         onSearchTextChange: o,
         onClearSearch: i.useCallback(() => {
-            l.gp(t), a.A.clearSearchResults(), a.A.resetSearchLayout(), d.A.setState({
+            r.gp(t), l.A.clearSearchResults(), l.A.resetSearchLayout(), d.A.setState({
                 query: "",
                 fetchedQuery: "",
                 resultsQuery: "",
@@ -75,16 +75,16 @@ function _(e) {
             let e = d.A.getField("query"),
                 n = d.A.getField("fetchedQuery");
             if ("" === e.trim() || e === n) return;
-            a.A.clearSearchResults();
+            l.A.clearSearchResults();
             let i = d.A.getField("languageCode"),
-                r = d.A.getField("categoryId");
+                a = d.A.getField("categoryId");
             d.A.setState({
-                resultsInitialCategoryId: r
+                resultsInitialCategoryId: a
             }), u.A.setState({
                 isSearchVisible: !0
             }), s.A.loadCategoryResultsAndCounts({
                 loadId: t,
-                categoryId: r,
+                categoryId: a,
                 query: e,
                 languageCode: i
             })

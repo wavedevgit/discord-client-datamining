@@ -3,8 +3,8 @@ n.d(t, {
     A: () => a
 });
 var i = n(64700),
-    r = n(181658),
-    l = n(985018);
+    l = n(181658),
+    r = n(985018);
 
 function a(e) {
     let [t, n] = i.useState(!1), [a, s] = i.useState(null);
@@ -13,7 +13,7 @@ function a(e) {
         try {
             return s(null), n(!0), await e(...i)
         } catch (e) {
-            e.message !== l.intl.string(l.t.N2yb9a) && s(e instanceof r.A ? e : new r.A(e))
+            e.message !== r.intl.string(r.t.N2yb9a) && s(e instanceof l.A ? e : new l.A(e))
         } finally {
             n(!1)
         }

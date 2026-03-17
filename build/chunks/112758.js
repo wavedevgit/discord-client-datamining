@@ -10,16 +10,16 @@ n.d(t, {
     T0: () => N,
     UY: () => O,
     U_: () => H,
-    VL: () => D,
-    Yq: () => M,
+    VL: () => M,
+    Yq: () => D,
     m: () => S,
     r4: () => w,
     ri: () => U,
     yp: () => G
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(621466),
+    l = n(64700),
+    r = n(621466),
     a = n(665260),
     s = n(442433),
     o = n(843472),
@@ -40,7 +40,7 @@ var i = n(627968),
     v = n(652215);
 
 function b(e, t, n) {
-    return r.useCallback(() => {
+    return l.useCallback(() => {
         n({
             [e]: !t
         })
@@ -48,41 +48,41 @@ function b(e, t, n) {
 }
 
 function T(e, t, n) {
-    return r.useCallback(i => {
-        let r = p.default.getUser(e);
-        if (null == r) return;
+    return l.useCallback(i => {
+        let l = p.default.getUser(e);
+        if (null == l) return;
         if (i.preventDefault(), i.stopPropagation(), !i.shiftKey) return void n();
-        let l = `@${f.Ay.getUserTag(r,{decoration:"never"})}`,
+        let r = `@${f.Ay.getUserTag(l,{decoration:"never"})}`,
             a = `<@${e}>`;
         A._.dispatchToLastSubscribed(v.jej.INSERT_TEXT, {
-            plainText: l,
+            plainText: r,
             rawText: a
         }), d.A.startTyping(t)
     }, [e, t, n])
 }
 
 function S(e, t, n, i) {
-    let r = b("usernameProfile", n, i);
-    return T(e.author.id, t.id, r)
+    let l = b("usernameProfile", n, i);
+    return T(e.author.id, t.id, l)
 }
 
 function y(e, t, n, i) {
-    let r = b("referencedUsernameProfile", n, i);
-    return T(e?.author.id, t.id, r)
+    let l = b("referencedUsernameProfile", n, i);
+    return T(e?.author.id, t.id, l)
 }
 
 function N(e, t, n, i) {
-    let r = b("interactionUsernameProfile", n, i);
-    return T(e?.user.id, t.id, r)
+    let l = b("interactionUsernameProfile", n, i);
+    return T(e?.user.id, t.id, l)
 }
 
 function j(e, t, n, i) {
-    let r = b("referencedUsernameProfile", n, i);
-    return T(e, t.id, r)
+    let l = b("referencedUsernameProfile", n, i);
+    return T(e, t.id, l)
 }
 
 function L(e) {
-    return r.useCallback(t => {
+    return l.useCallback(t => {
         t.preventDefault(), t.stopPropagation(), e()
     }, [e])
 }
@@ -95,18 +95,18 @@ function P(e, t) {
     return L(b("referencedAvatarProfile", e, t))
 }
 
-function M(e, t) {
+function D(e, t) {
     return L(b("interactionAvatarProfile", e, t))
 }
 
-function D(e, t, l, o) {
+function M(e, t, r, o) {
     let {
         id: d
     } = t, {
         id: u,
         flags: p
     } = e, A = (0, a.Lt)(p, v.pr7.EPHEMERAL), f = (0, c.Us)();
-    return r.useCallback((e, t) => {
+    return l.useCallback((e, t) => {
         if (A) return;
         if (!x.isPlatformEmbedded) {
             let t = e.target;
@@ -114,60 +114,60 @@ function D(e, t, l, o) {
             let n = window.getSelection();
             if (null != n && !n.isCollapsed && (n.focusNode === e.target || t.contains(n.focusNode))) return
         }
-        let r = _.A.getChannel(d),
+        let l = _.A.getChannel(d),
             a = h.A.getMessage(d, u),
             c = m.A.isEditing(d, u);
-        null == r || null == a || c || (g.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+        null == l || null == a || c || (g.default.track(v.HAw.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
             message_id: u,
             channel: d,
             location: "right_click"
-        }), l({
+        }), r({
             contextMenu: !0
         }), (0, s.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("91991"), n.e("24202"), n.e("21597"), n.e("5873"), n.e("1636"), n.e("24172")]).then(n.bind(n, 547983));
+            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("63238"), n.e("24202"), n.e("21597"), n.e("5873"), n.e("1636"), n.e("24172")]).then(n.bind(n, 547983));
             return n => (0, i.jsx)(e, {
                 ...n,
                 message: a,
-                channel: r,
+                channel: l,
                 mediaItem: t,
                 shouldHideMediaOptions: o
             })
         }, {
-            onClose: () => l({
+            onClose: () => r({
                 contextMenu: !1
             }),
             context: f
         }))
-    }, [A, d, u, l, f, o])
+    }, [A, d, u, r, f, o])
 }
 
 function w(e, t) {
-    return r.useCallback(n => {
+    return l.useCallback(n => {
         let i = p.default.getUser(e),
-            r = _.A.getChannel(t);
-        null != i && null != r && (n.stopPropagation(), (0, C.wQ)(n, i, r))
+            l = _.A.getChannel(t);
+        null != i && null != l && (n.stopPropagation(), (0, C.wQ)(n, i, l))
     }, [e, t])
 }
 
 function O(e, t, n) {
-    return r.useCallback(i => {
-        let r = p.default.getUser(e),
-            l = _.A.getChannel(t);
-        null != r && null != l && (i.stopPropagation(), (0, C.B8)(i, {
-            user: r,
-            channel: l,
+    return l.useCallback(i => {
+        let l = p.default.getUser(e),
+            r = _.A.getChannel(t);
+        null != l && null != r && (i.stopPropagation(), (0, C.B8)(i, {
+            user: l,
+            channel: r,
             moderationAlertId: n
         }))
     }, [e, t, n])
 }
 
 function k(e, t) {
-    return r.useCallback(n => {
+    return l.useCallback(n => {
         let i = p.default.getUser(e),
-            r = _.A.getChannel(t);
-        null != i && null != r && (n.stopPropagation(), (0, C.pB)(n, i, r.guild_id))
+            l = _.A.getChannel(t);
+        null != i && null != l && (n.stopPropagation(), (0, C.pB)(n, i, l.guild_id))
     }, [e, t])
 }
 
@@ -177,7 +177,7 @@ function U(e, t) {
     } = e, {
         id: i
     } = t;
-    return r.useCallback(e => {
+    return l.useCallback(e => {
         e.altKey && (e.preventDefault(), (0, I.A)(i, n))
     }, [i, n])
 }
@@ -187,12 +187,12 @@ function G(e) {
         groupId: t,
         message: n,
         defaultValue: i
-    } = e, l = n.author.id, a = `${t}:${l}`, s = r.useRef(i), [o, d] = r.useState(i);
+    } = e, r = n.author.id, a = `${t}:${r}`, s = l.useRef(i), [o, d] = l.useState(i);
     s.current = o || s.current;
-    let c = r.useCallback(() => {
+    let c = l.useCallback(() => {
             (0, u.cE)(), o || (A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, a, !0), d(!0))
         }, [o, a]),
-        _ = r.useCallback(() => {
+        _ = l.useCallback(() => {
             A._.dispatchKeyed(v.zOV.ANIMATE_CHAT_AVATAR, a, !1), d(!1)
         }, [a]);
     return {
@@ -204,14 +204,14 @@ function G(e) {
 }
 
 function B(e, t) {
-    let [n, i] = r.useState(!1), [a, s] = r.useState(!1);
+    let [n, i] = l.useState(!1), [a, s] = l.useState(!1);
     return {
-        handleFocus: r.useCallback(t => {
-            let n = (0, l.BF)(t)?.activeElement ?? null;
+        handleFocus: l.useCallback(t => {
+            let n = (0, r.BF)(t)?.activeElement ?? null;
             (t.target === t.currentTarget || t.currentTarget.contains(n)) && (s(!0), i(!0)), null != e && e(t)
         }, [e]),
-        handleBlur: r.useCallback(e => {
-            let n = (0, l.BF)(e)?.activeElement ?? null;
+        handleBlur: l.useCallback(e => {
+            let n = (0, r.BF)(e)?.activeElement ?? null;
             e.target !== e.currentTarget && e.currentTarget.contains(n) || i(!1), null != t && t(e)
         }, [t]),
         isFocused: n,
@@ -220,7 +220,7 @@ function B(e, t) {
 }
 
 function F(e, t) {
-    return r.useCallback(() => {
+    return l.useCallback(() => {
         let {
             messageReference: n
         } = e, i = () => {
@@ -237,7 +237,7 @@ function F(e, t) {
 
 function H(e, t) {
     let n = b("interactionData", e, t);
-    return r.useCallback(e => {
+    return l.useCallback(e => {
         e.preventDefault(), e.stopPropagation(), n()
     }, [n])
 }

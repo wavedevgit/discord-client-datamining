@@ -19,8 +19,8 @@ var n = r(503698),
     g = r(525723),
     C = r(57020),
     h = r(985018),
-    I = r(865687);
-let f = t => {
+    f = r(865687);
+let I = t => {
         let {
             product: e,
             badgeOverride: r,
@@ -28,22 +28,22 @@ let f = t => {
             className: c,
             prioritizedCurrency: x
         } = t, {
-            isPurchased: f,
+            isPurchased: I,
             isPartiallyOwnedBundle: k
-        } = (0, m.h)(e), v = (0, A.G0)(e), j = (0, s.bG)([d.A], () => d.A.getCategoryForProduct(e.skuId)), T = j?.unpublishedAt != null ? (0, A.WU)(j.unpublishedAt) : null, E = (0, s.bG)([u.default], () => u.default.getCurrentUser()), y = o.Ay.canUseCollectibles(E), _ = (0, g.V_)(e), {
-            isOrbExclusive: b
+        } = (0, m.h)(e), v = (0, A.G0)(e), j = (0, s.bG)([d.A], () => d.A.getCategoryForProduct(e.skuId)), E = j?.unpublishedAt != null ? (0, A.WU)(j.unpublishedAt) : null, T = (0, s.bG)([u.default], () => u.default.getCurrentUser()), _ = o.Ay.canUseCollectibles(T), y = (0, g.V_)(e), {
+            isOrbExclusive: R
         } = (0, C.F)({
             product: e,
-            isPremiumUser: y,
+            isPremiumUser: _,
             prioritizedCurrency: x,
-            hasDiscountOffer: null != _
-        }), R = r;
-        if (null == R && (!n && (0, A.HF)(j?.unpublishedAt) ? R = p.AW.LIMITED_TIME : !k && !f && (0, A.aT)(e.skuId) ? R = p.AW.NEW : b ? R = p.AW.ORBS_EXCLUSIVE : v && (R = p.AW.NITRO_EXCLUSIVE)), null == R || R === p.AW.NONE) return null;
+            hasDiscountOffer: null != y
+        }), b = r;
+        if (null == b && (!n && (0, A.HF)(j?.unpublishedAt) ? b = p.AW.LIMITED_TIME : !k && !I && (0, A.aT)(e.skuId) ? b = p.AW.NEW : R ? b = p.AW.ORBS_EXCLUSIVE : v && (b = p.AW.NITRO_EXCLUSIVE)), null == b || b === p.AW.NONE) return null;
         let L = null;
-        switch (R) {
+        switch (b) {
             case p.AW.LIMITED_TIME:
-                L = null != T ? T > 1 ? h.intl.formatToPlainString(h.t.Io7ozn, {
-                    days: T
+                L = null != E ? E > 1 ? h.intl.formatToPlainString(h.t.Io7ozn, {
+                    days: E
                 }) : h.intl.string(h.t.Bc13HF) : h.intl.string(h.t["h/uBCR"]);
                 break;
             case p.AW.NEW:
@@ -58,7 +58,7 @@ let f = t => {
         return (0, i.jsx)(a.LpS, {
             text: L,
             disableColor: !0,
-            className: l()(c, I.$)
+            className: l()(c, f.$)
         })
     },
     k = t => {
@@ -71,7 +71,7 @@ let f = t => {
         } = t, a = (0, p.Vm)(e), u = (0, c.Q)(a);
         if (null == a) return null;
         let o = (0, x.rb)(a, u);
-        return (0, i.jsx)(f, {
+        return (0, i.jsx)(I, {
             product: o,
             badgeOverride: r,
             skipLimitedTimeCheck: s,

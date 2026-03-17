@@ -3,9 +3,9 @@ let i;
 n.d(t, {
     Ay: () => N
 });
-var r = n(73153),
-    l = n(31728),
-    a = n(272355),
+var a = n(73153),
+    r = n(31728),
+    l = n(272355),
     s = n(87001),
     o = n(734057),
     d = n(186111),
@@ -28,7 +28,7 @@ function E() {
     if (!c.A.isOpen(t)) return !1;
     let n = c.A.pipHavenWindow;
     if (null == n || n.id !== t) return i = null, !1;
-    r.h.wait(() => l.VN(t)), i = null
+    a.h.wait(() => r.VN(t)), i = null
 }
 
 function I() {
@@ -37,21 +37,21 @@ function I() {
 
 function f() {
     let e, t, n = u.A.getChannelId(),
-        a = null != n ? o.A.getChannel(n) : null;
+        l = null != n ? o.A.getChannel(n) : null;
     if (e = u.A.getChannelId(), t = A.A.getChannelId(), null == e || !m.A.isUserConnected(e) || e === t || s.A.getWindowOpen(g.MLl.CHANNEL_CALL_POPOUT) || 0) return E();
-    if (null != a && m.A.isUserConnected(a.id)) {
-        if (i !== a.id) {
-            let e = p(a.id);
+    if (null != l && m.A.isUserConnected(l.id)) {
+        if (i !== l.id) {
+            let e = p(l.id);
             if (c.A.isOpen(e)) return !1;
             if (null != i) {
                 let e = i;
-                r.h.wait(() => l.VN(e))
+                a.h.wait(() => r.VN(e))
             }
-            return r.h.wait(() => {
-                l.ho(e, g.o1q.HAVEN, {
-                    channel: a
-                }), I() && l.jD(e)
-            }), i = a.id, !0
+            return a.h.wait(() => {
+                r.ho(e, g.o1q.HAVEN, {
+                    channel: l
+                }), I() && r.jD(e)
+            }), i = l.id, !0
         }
         return !1
     }
@@ -63,15 +63,15 @@ function C() {
         let e = (void 0) ?? i;
         if (null == e) return;
         let t = p(e);
-        c.A.isOpen(t) && r.h.wait(() => l.jD(t));
+        c.A.isOpen(t) && a.h.wait(() => r.jD(t));
         return
     }
     let e = (void 0) ?? i;
     if (null == e) return;
     let t = p(e);
-    c.A.isOpen(t) && r.h.wait(() => l.WU(t))
+    c.A.isOpen(t) && a.h.wait(() => r.WU(t))
 }
-class T extends a.A {
+class T extends l.A {
     _initialize() {
         A.A.addChangeListener(f), h.A.addChangeListener(f), u.A.addChangeListener(f), _.A.addChangeListener(f), d.A.addChangeListener(C), m.A.addChangeListener(f), s.A.addChangeListener(f)
     }

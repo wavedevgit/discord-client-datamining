@@ -48,7 +48,7 @@ let N = e => {
         }), [B, H] = s.useState({
             x: 0,
             y: 0
-        }), [F, K] = s.useState(!1), Y = s.useRef(null), [W, z] = s.useState(null), q = (0, d.w)(e => {
+        }), [F, K] = s.useState(!1), W = s.useRef(null), [Y, z] = s.useState(null), q = (0, d.w)(e => {
             let {
                 contentRect: t,
                 target: n
@@ -58,8 +58,8 @@ let N = e => {
                 y: l / 2 + i.y
             });
             let d = Math.max(r, a);
-            if (y(Math.max(o, c)), L(d), null != Y.current) {
-                let e = Y.current.getBoundingClientRect();
+            if (y(Math.max(o, c)), L(d), null != W.current) {
+                let e = W.current.getBoundingClientRect();
                 z({
                     x: e.left - i.left,
                     y: e.top - i.top
@@ -158,7 +158,7 @@ let N = e => {
                             [I.R]: n
                         }),
                         children: [(0, i.jsx)("div", {
-                            ref: Y,
+                            ref: W,
                             children: (0, i.jsx)(o.K0, {
                                 variant: "icon-only",
                                 "aria-label": E.intl.string(C.default.W7TAH4),
@@ -209,10 +209,10 @@ let N = e => {
                 }), (0, i.jsx)(f.A, {
                     open: F,
                     close: () => K(!1),
-                    triggerRef: Y,
-                    style: null != W ? {
-                        left: W.x,
-                        top: W.y
+                    triggerRef: W,
+                    style: null != Y ? {
+                        left: Y.x,
+                        top: Y.y
                     } : void 0
                 }), (0, i.jsx)(_.A, {}), (0, i.jsx)("div", {
                     className: r()(I.Lw, {

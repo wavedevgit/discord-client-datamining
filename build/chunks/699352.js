@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(21878),
-    l = n(756369);
+var l = n(21878),
+    r = n(756369);
 
 function a(e) {
     let {
@@ -28,9 +28,9 @@ function a(e) {
         disableComponentInteractivity: A,
         className: x
     } = e;
-    return u ? null : (0, i.jsx)(r.A, {
+    return u ? null : (0, i.jsx)(l.A, {
         message: t,
-        children: (0, i.jsx)(l.Ay, {
+        children: (0, i.jsx)(r.Ay, {
             className: x,
             isInteracting: c,
             message: t,
@@ -51,15 +51,15 @@ function a(e) {
 
 function s(e, t, n) {
     let {
-        message: r,
+        message: l,
         channel: a,
         compact: s = !1,
         renderThreadAccessory: o,
         disableReactionCreates: d,
         disableReactionUpdates: c
     } = e;
-    return (0, i.jsx)(l.OC, {
-        message: r,
+    return (0, i.jsx)(r.OC, {
+        message: l,
         channel: a,
         compact: s,
         hasSpoilerEmbeds: t,

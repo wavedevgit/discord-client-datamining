@@ -5,8 +5,8 @@ a.d(t, {
 var n = a(627968);
 a(64700);
 var i = a(503698),
-    s = a.n(i),
-    l = a(397927),
+    l = a.n(i),
+    s = a(397927),
     r = a(985018),
     o = a(775233),
     c = a(500226);
@@ -18,7 +18,7 @@ function d(e) {
         className: i
     } = e;
     return (0, n.jsxs)("div", {
-        className: s()(o.kL, i),
+        className: l()(o.kL, i),
         children: [(0, n.jsx)("div", {
             className: o.ZS,
             children: (0, n.jsx)("img", {
@@ -26,11 +26,11 @@ function d(e) {
                 src: c,
                 alt: r.intl.string(r.t["/UJaI2"])
             })
-        }), (0, n.jsx)(l.Heading, {
+        }), (0, n.jsx)(s.Heading, {
             variant: "heading-xl/semibold",
             className: o.wx,
             children: t
-        }), (0, n.jsx)(l.Text, {
+        }), (0, n.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: a

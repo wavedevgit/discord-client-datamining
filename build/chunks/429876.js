@@ -104,8 +104,8 @@ let j = e => {
         initialCategoryId: L
     } = e, j = r.useRef(null), k = (0, g.v)(e => e.hasDefaultFilters()), T = (0, _.uM)(), {
         handlePageChange: O,
-        currentPage: y
-    } = (0, E.Z)(c), N = r.useCallback(e => {
+        currentPage: N
+    } = (0, E.Z)(c), y = r.useCallback(e => {
         u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: T?.sessionId,
             page_section: T?.pageSection,
@@ -184,13 +184,13 @@ let j = e => {
                 tab: o
             }, o) : (0, n.jsx)(_.R9, {
                 newValue: {
-                    pageIndex: y
+                    pageIndex: N
                 },
                 children: (0, n.jsx)(h.A, {
                     categories: d,
                     setCategoryRef: p,
-                    currentPage: y,
-                    handlePageChange: N,
+                    currentPage: N,
+                    handlePageChange: y,
                     initialCategoryId: L
                 })
             }) : (0, n.jsx)(C.A, {

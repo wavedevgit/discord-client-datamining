@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    l = n(64700),
+    r = n(284009),
+    a = n.n(r),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -26,7 +26,7 @@ var i = n(627968),
 function v(e) {
     let t, {
             invite: n,
-            currentUserId: l,
+            currentUserId: r,
             guild: v,
             message: b,
             onTransitionToInviteChannel: T,
@@ -40,16 +40,16 @@ function v(e) {
             analyticsLocations: R
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         P = null != n && n.target_type === C.yV.STREAM && null != n.target_user && null != j,
-        M = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
+        D = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
     a()(null != n, "Invite cannot be null");
     let {
-        target_type: D,
+        target_type: M,
         target_user: w
     } = n;
-    a()(D === C.yV.STREAM && null != w, "invalid streaming invite");
-    let O = l === w.id,
+    a()(M === C.yV.STREAM && null != w, "invalid streaming invite");
+    let O = r === w.id,
         k = n.state === f.elq.ACCEPTING,
-        U = r.useCallback(() => {
+        U = l.useCallback(() => {
             let e = "noop";
             P ? (T(), e = "transition") : (S(), e = "accept"), (0, d.he)({
                 invite: n,
@@ -65,10 +65,10 @@ function v(e) {
     }
     let B = null != n.channel ? (0, m.OY)(n.channel) : null,
         F = A.Ay.getName(w),
-        H = P || !M && G,
+        H = P || !D && G,
         V = I.intl.string(I.t.I6JG46),
         W = "active";
-    G && !M ? (t = O ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
+    G && !D ? (t = O ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
         name: F
     }), V = I.intl.string(I.t.Wdi5E1)) : (W = "active", P && (V = I.intl.string(I.t.Q1W99y), W = "secondary"), t = O ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: F
@@ -86,10 +86,10 @@ function v(e) {
                 className: E.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: v,
-                    onClick: G && M ? U : void 0
+                    onClick: G && D ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,
-                    onClick: G && M ? U : void 0,
+                    onClick: G && D ? U : void 0,
                     children: q
                 })]
             }), (0, i.jsx)(s.$nd, {

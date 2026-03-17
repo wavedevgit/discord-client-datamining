@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(765671),
@@ -26,23 +26,23 @@ function C(e) {
         guildId: t,
         channelId: n
     } = e, {
-        ref: l,
+        ref: r,
         width: C,
         height: T
-    } = (0, d.Ay)(), N = r.useCallback(() => {
+    } = (0, d.Ay)(), N = a.useCallback(() => {
         null != t && null != n && ((0, g.sy)(t), (0, p.default)({
             guildId: t,
             returnChannelId: n
         }))
-    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = r.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
+    }, [t, n]), S = (0, s.bG)([h.A], () => h.A.getGuild(t)), x = a.useMemo(() => null == S ? null : _.Ay.getGuildSplashURL({
         id: S.id,
         splash: S.splash
     }), [S]), v = (0, u.S)(x);
     return (0, i.jsxs)("div", {
-        className: a()(I.kf, f.iW, {
+        className: l()(I.kf, f.iW, {
             [f.Me]: null == x
         }),
-        ref: l,
+        ref: r,
         children: [null != x ? (0, i.jsx)(c.A, {
             className: f.xX,
             src: x,
@@ -57,7 +57,7 @@ function C(e) {
         }), null != x && (0, i.jsx)("div", {
             className: f.D7
         }), (0, i.jsxs)("div", {
-            className: a()(I.Cj, I.Vw),
+            className: l()(I.Cj, I.Vw),
             children: [(0, i.jsxs)("div", {
                 className: I.wx,
                 children: [(0, i.jsx)(o.Heading, {

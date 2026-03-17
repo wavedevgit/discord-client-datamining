@@ -1,34 +1,34 @@
 /** chunk id: 979282 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968);
 n(64700);
-var r = n(518620),
-    l = n(901319);
+var a = n(518620),
+    r = n(901319);
 
-function a(e) {
+function l(e) {
     let {
         rows: t,
         renderRow: n,
-        renderSection: a,
+        renderSection: l,
         isVirtualizedList: s,
         hasSearchQuery: o,
         sectionFilter: d,
         footer: c,
         renderSectionFooter: u
     } = e;
-    return s ? (0, i.jsx)(r.A, {
+    return s ? (0, i.jsx)(a.A, {
         rows: t,
         renderRow: n,
-        renderSection: a,
+        renderSection: l,
         footer: c,
         sectionFilter: d,
         renderSectionFooter: u
-    }) : (0, i.jsx)(l.A, {
+    }) : (0, i.jsx)(r.A, {
         rows: t,
         renderRow: n,
-        renderSection: a,
+        renderSection: l,
         sectionFilter: d,
         hasSearchQuery: o,
         footer: c,

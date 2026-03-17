@@ -1,12 +1,12 @@
 /** chunk id: 620140 params = (module,exports,require) **/
 a.d(t, {
-    A: () => l,
-    C: () => s
+    A: () => s,
+    C: () => l
 });
 var n = a(435220),
     i = a(985018);
 
-function s(e) {
+function l(e) {
     switch (e.id) {
         case 4:
             return i.intl.string(i.t["3m9Egb"]);
@@ -22,7 +22,7 @@ function s(e) {
     return ""
 }
 
-function l() {
+function s() {
     return {
         id: n.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
         name: i.intl.string(i.t.ijDDwz)

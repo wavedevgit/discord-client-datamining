@@ -1,7 +1,7 @@
 /** chunk id: 829861 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => Y
+    A: () => W
 });
 var i = n(627968),
     s = n(64700),
@@ -49,12 +49,12 @@ let F = D.DN.SIZE_32,
         [k.E8.RESIZABLE]: H.Ig
     };
 
-function Y(e) {
+function W(e) {
     let {
         maxHeight: t,
         connectedLocation: n,
         renderExternalHeader: l
-    } = e, Y = (0, L.A)(), W = (0, a.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, a.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(W), Q = (0, j.Rz)(X), J = s.useCallback(() => {
+    } = e, W = (0, L.A)(), Y = (0, a.yK)([y.Ay], () => y.Ay.getEmbeddedActivitiesForLocation(n), [n]), z = (0, O.H)(n), q = (0, a.bG)([E.A], () => E.A.getChannel(z)), X = (0, j.IQ)(Y), Q = (0, j.Rz)(X), J = s.useCallback(() => {
         (0, v.gk)(k.Gd.PIP)
     }, []), $ = s.useRef(null), Z = (0, a.bG)([y.Ay], () => y.Ay.getFocusedLayout()), ee = Z !== k.E8.NO_CHAT, [et, en] = s.useState(_.Ay.activityPanelHeight ?? t ?? null), ei = s.useCallback(e => {
         u.Ay.updatedUnsyncedSettings({
@@ -77,13 +77,13 @@ function Y(e) {
     let ea = el.width / Math.max(el.height, 1) < k.B5,
         eo = 0,
         ec = 0,
-        ed = (0, R.A)(Y?.id);
+        ed = (0, R.A)(W?.id);
     if (!ed) {
         let e = el.width,
             t = el.height;
         ea ? ((t = el.width / k.B5) > el.height && (e = (t = el.height) * k.B5), ec = (el.height - t) / 2) : ((e = Math.min(el.height * k.B5)) > el.width && (t = (e = el.width) / k.B5), eo = (el.width - e) / 2)
     }
-    let eu = Q.get(Y?.id ?? ""),
+    let eu = Q.get(W?.id ?? ""),
         eh = (0, a.bG)([N.A], () => N.A.getChannelId()),
         eA = (0, a.yK)([I.Ay], () => null == q ? [] : Array.from(eu?.embeddedActivity.userIds ?? []).map(e => I.Ay.getMember(q.guild_id, e)), [eu, q]),
         em = s.useMemo(() => {
@@ -117,7 +117,7 @@ function Y(e) {
             }, [o, e, n, t])
         }(ee, et, t),
         eg = (0, P.G)();
-    if (null == Y) return null;
+    if (null == W) return null;
     let e_ = [];
     null != eu && (e_ = Array.from(eu.embeddedActivity.userIds).map(e => b.default.getUser(e)).filter(e => null != e && void 0 !== e));
     let ef = e => {
@@ -142,7 +142,7 @@ function Y(e) {
             ref: $,
             style: ep,
             children: [l?.(), (0, i.jsx)(g.A, {
-                applicationId: Y.id
+                applicationId: W.id
             }), (0, i.jsxs)("div", {
                 className: H.lq,
                 children: [ee ? null : (0, i.jsx)("div", {
@@ -151,7 +151,7 @@ function Y(e) {
                         color: "text-strong",
                         variant: "text-md/semibold",
                         className: H.qd,
-                        children: Y?.name
+                        children: W?.name
                     })
                 }), (0, i.jsx)("div", {
                     className: r()(H.ht, {
@@ -166,7 +166,7 @@ function Y(e) {
                     ref: es,
                     children: (0, i.jsx)(M.A, {
                         className: H.pU,
-                        embedId: (0, U.A)(n.id, Y.id)
+                        embedId: (0, U.A)(n.id, W.id)
                     })
                 }), null != eh ? (0, i.jsxs)("div", {
                     className: H.qr,
@@ -192,7 +192,7 @@ function Y(e) {
                         }), (0, i.jsx)("div", {
                             className: H.pt,
                             children: (0, i.jsx)(x.A, {
-                                applicationId: Y.id,
+                                applicationId: W.id,
                                 location: n,
                                 centerButton: !0,
                                 color: "disconnect"
@@ -203,7 +203,7 @@ function Y(e) {
                         onOpenPopout: () => {
                             (0, m.zV)(V.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, G.A)({
                                 onConfirm: async () => {
-                                    Y?.id != null && null != z && await (0, v.od)(Y.id, z), (0, v.jp)()
+                                    W?.id != null && null != z && await (0, v.od)(W.id, z), (0, v.jp)()
                                 }
                             })
                         },

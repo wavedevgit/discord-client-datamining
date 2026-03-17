@@ -1,6 +1,6 @@
 /** chunk id: 55400 params = (module,exports,require) **/
 n.d(t, {
-    w: () => r
+    w: () => a
 });
 let i = (0, n(600975).C)({
     kind: "user",
@@ -18,7 +18,7 @@ let i = (0, n(600975).C)({
     }]
 });
 
-function r() {
+function a() {
     return i.useExperiment({
         location: "c10bec_1"
     }, {

@@ -3,11 +3,11 @@ n.d(t, {
     A: () => a
 });
 var i = n(562465),
-    r = n(73153),
-    l = n(652215);
+    l = n(73153),
+    r = n(652215);
 let a = {
     createChannelFollower: (e, t) => i.Bo.post({
-        url: l.Rsh.CHANNEL_FOLLOWERS(t),
+        url: r.Rsh.CHANNEL_FOLLOWERS(t),
         body: {
             webhook_channel_id: e
         },
@@ -15,38 +15,38 @@ let a = {
         rejectWithError: !1
     }),
     async fetchChannelFollowerStats(e) {
-        r.h.dispatch({
+        l.h.dispatch({
             type: "CHANNEL_FOLLOWER_STATS_FETCH_START"
         });
         try {
             let t = await i.Bo.get({
-                url: l.Rsh.CHANNEL_FOLLOWER_STATS(e),
+                url: r.Rsh.CHANNEL_FOLLOWER_STATS(e),
                 body: {
                     channel_id: e
                 },
                 oldFormErrors: !0,
                 rejectWithError: !0
             });
-            r.h.dispatch({
+            l.h.dispatch({
                 type: "CHANNEL_FOLLOWER_STATS_FETCH_SUCCESS",
                 stats: t.body,
                 channelId: e
             })
         } catch (t) {
-            r.h.dispatch({
+            l.h.dispatch({
                 type: "CHANNEL_FOLLOWER_STATS_FETCH_FAILURE",
                 channelId: e
             })
         }
     },
     dismissPublishBump(e) {
-        r.h.dispatch({
+        l.h.dispatch({
             type: "CHANNEL_FOLLOWING_PUBLISH_BUMP_DISMISSED",
             messageId: e
         })
     },
     permanentlyHidePublishBump(e) {
-        r.h.dispatch({
+        l.h.dispatch({
             type: "CHANNEL_FOLLOWING_PUBLISH_BUMP_HIDE_PERMANENTLY",
             channelId: e
         })

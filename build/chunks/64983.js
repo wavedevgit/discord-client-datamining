@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    a = n(64700),
+    r = n(735438),
+    l = n.n(r),
     s = n(421380),
     o = n(397927),
     d = n(58149),
@@ -15,13 +15,13 @@ var i = n(627968),
     h = n(652215),
     _ = n(985018),
     m = n(978927);
-let g = a().debounce(d.Ay.trackWithMetadata, 500),
+let g = l().debounce(d.Ay.trackWithMetadata, 500),
     p = e => {
         let {
             guild: t,
             title: n,
-            message: l,
-            image: a,
+            message: r,
+            image: l,
             type: u,
             imageMarginX: A,
             imageMarginTop: p,
@@ -32,7 +32,7 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
             cta: T,
             ctaColor: N
         } = e;
-        r.useEffect(() => {
+        a.useEffect(() => {
             g(h.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: u,
                 guild_id: t.id
@@ -70,18 +70,18 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
                     color: "currentColor",
                     className: m.ut
                 })
-            }), null != a && (0, i.jsx)("div", {
+            }), null != l && (0, i.jsx)("div", {
                 className: m.ZS,
                 style: {
                     marginTop: `${p}px`,
                     marginLeft: x,
                     marginRight: x
                 },
-                children: "string" == typeof a ? (0, i.jsx)("img", {
+                children: "string" == typeof l ? (0, i.jsx)("img", {
                     className: m.Sl,
-                    src: a,
+                    src: l,
                     alt: ""
-                }) : a
+                }) : l
             }), (0, i.jsxs)("div", {
                 className: m.iU,
                 children: [null != n ? (0, i.jsx)(o.Heading, {
@@ -90,7 +90,7 @@ let g = a().debounce(d.Ay.trackWithMetadata, 500),
                     children: n
                 }) : null, (0, i.jsx)(o.Text, {
                     variant: "text-sm/normal",
-                    children: l
+                    children: r
                 }), S]
             })]
         })

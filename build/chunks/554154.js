@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(342494),
-    l = n(997509),
-    a = n(652215),
+var a = n(342494),
+    r = n(997509),
+    l = n(652215),
     s = n(49999),
     o = n(985018);
 
@@ -16,7 +16,7 @@ function d(e) {
         markAsDismissed: n,
         targetElementRef: d
     } = e;
-    return (0, i.jsx)(r.HZ, {
+    return (0, i.jsx)(a.HZ, {
         targetElementRef: d,
         title: o.intl.string(o.t.gCgirr),
         body: o.intl.string(o.t.fLMZFw),
@@ -25,7 +25,7 @@ function d(e) {
             text: o.intl.string(o.t.BQq86h),
             variant: "primary",
             onClick: () => {
-                l.A.open(t, a.BEX.ROLE_SUBSCRIPTIONS, void 0, a.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE)
+                r.A.open(t, l.BEX.ROLE_SUBSCRIPTIONS, void 0, l.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE)
             }
         },
         onRequestClose: () => n(s.i.USER_DISMISS),

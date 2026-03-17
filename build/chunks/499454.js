@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(287809),
+var l = n(397927),
+    r = n(287809),
     a = n(166403),
     s = n(203982),
     o = n(927578),
@@ -19,8 +19,8 @@ function _(e) {
         channelContext: _,
         customGiftMessage: m,
         giftInfo: h
-    } = e, p = !1, g = null, A = l.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
-    (0, r.mMO)(async () => {
+    } = e, p = !1, g = null, A = r.default.getCurrentUser(), x = (0, o.CC)(A?.premiumType, c.PremiumTypes.TIER_0);
+    (0, l.mMO)(async () => {
         let {
             default: e
         } = await n.e("14439").then(n.bind(n, 67327));

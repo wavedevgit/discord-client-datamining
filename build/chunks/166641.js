@@ -3,9 +3,9 @@ n.d(t, {
     A: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(397927),
-    a = n(686956),
+    a = n(64700),
+    r = n(397927),
+    l = n(686956),
     s = n(292455),
     o = n(701508),
     d = n(979590),
@@ -19,7 +19,7 @@ var i = n(627968),
 let p = function(e) {
     let {
         onScroll: t
-    } = e, n = (0, A.A)(), p = r.useMemo(() => n.map(e => ({
+    } = e, n = (0, A.A)(), p = a.useMemo(() => n.map(e => ({
         ...e,
         presenceCount: void 0,
         memberCount: void 0,
@@ -34,7 +34,7 @@ let p = function(e) {
             children: (0, i.jsx)(s.A, {})
         }), (0, i.jsxs)(d.A, {
             children: [n.length > 0 ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     className: m.G,
                     variant: "heading-lg/semibold",
                     color: "text-strong",
@@ -43,7 +43,7 @@ let p = function(e) {
                     className: m.Q,
                     children: [p.map(e => (0, i.jsx)(h.nO, {
                         guild: e,
-                        onClick: () => a.A.transitionToGuildSync(e.id)
+                        onClick: () => l.A.transitionToGuildSync(e.id)
                     }, e.id)), (0, i.jsx)(u.A, {
                         hasHub: !0
                     })]
@@ -57,12 +57,12 @@ let p = function(e) {
                 className: g.yF
             }), (0, i.jsxs)("div", {
                 className: g.ed,
-                children: [(0, i.jsxs)(l.Text, {
+                children: [(0, i.jsxs)(r.Text, {
                     className: g.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",
                     children: [_.intl.string(_.t.O1k9XX), " "]
-                }), (0, i.jsx)(l.Text, {
+                }), (0, i.jsx)(r.Text, {
                     className: g.Qq,
                     variant: "text-sm/medium",
                     color: "text-default",

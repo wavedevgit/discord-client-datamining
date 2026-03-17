@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(985018),
-    a = n(400783);
+var a = n(397927),
+    r = n(985018),
+    l = n(400783);
 
 function s(e) {
     let {
@@ -15,33 +15,33 @@ function s(e) {
         guild: s
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.EL,
+        className: l.EL,
         children: [(0, i.jsx)("div", {
-            className: a.P0,
-            children: (0, i.jsx)(r.pun, {
+            className: l.P0,
+            children: (0, i.jsx)(a.pun, {
                 size: "md",
-                color: r.LU0.colors.INTERACTIVE_TEXT_ACTIVE
+                color: a.LU0.colors.INTERACTIVE_TEXT_ACTIVE
             })
-        }), (0, i.jsx)(r.Heading, {
+        }), (0, i.jsx)(a.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: null != s ? l.intl.formatToPlainString(l.t.f5Jaw7, {
+            children: null != s ? r.intl.formatToPlainString(r.t.f5Jaw7, {
                 guildName: s.name
-            }) : l.intl.string(l.t["0sTyEb"])
+            }) : r.intl.string(r.t["0sTyEb"])
         }), (0, i.jsxs)("div", {
-            className: a.rn,
-            children: [(0, i.jsx)(r.Button, {
+            className: l.rn,
+            children: [(0, i.jsx)(a.Button, {
                 fullWidth: !0,
                 onClick: n,
                 variant: "secondary",
                 size: "md",
-                text: l.intl.string(l.t.h3aGmv)
-            }), (0, i.jsx)(r.Button, {
+                text: r.intl.string(r.t.h3aGmv)
+            }), (0, i.jsx)(a.Button, {
                 fullWidth: !0,
                 onClick: t,
                 variant: "critical-primary",
                 size: "md",
-                text: l.intl.string(l.t.OQFlFD)
+                text: r.intl.string(r.t.OQFlFD)
             })]
         })]
     })

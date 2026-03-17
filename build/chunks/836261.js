@@ -3,8 +3,8 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    r = n(311907),
-    l = n(421380),
+    l = n(311907),
+    r = n(421380),
     a = n(397927),
     s = n(775602),
     o = n(178540),
@@ -27,7 +27,7 @@ function C(e) {
         analyticsCtxSourceQuestContent: a,
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: m
-    } = e, h = (0, u.Ut)(), p = (0, r.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
+    } = e, h = (0, u.Ut)(), p = (0, l.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
         useReducedMotion: p
     }), C = (0, o.O)(e => e.setErrorHints), {
         startingConsoleQuest: I,
@@ -48,9 +48,9 @@ function C(e) {
             A.stopAnimation(), C(t.id, e)
         }
     });
-    return (0, i.jsx)(l.$n, {
+    return (0, i.jsx)(r.$n, {
         "data-migration-pending": !0,
-        color: l.XD.PRIMARY,
+        color: r.XD.PRIMARY,
         onClick: E,
         disabled: I,
         className: f.x,
@@ -65,8 +65,8 @@ function I(e) {
     let {
         quest: t,
         surface: n,
-        analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContent: l,
+        analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: u
@@ -86,20 +86,20 @@ function I(e) {
             (0, h.se)({
                 quest: t
             }, {
-                content: r,
+                content: l,
                 ctaContent: _.Cy.CONNECT_CONSOLE,
                 position: s,
                 rowIndex: o,
                 impressionId: g,
-                sourceQuestContent: l
+                sourceQuestContent: r
             })
         },
         text: x.intl.string(x.t.Cfye4v),
         fullWidth: !0
     }) : (0, i.jsx)(C, {
         quest: t,
-        analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContent: l,
+        analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     })
@@ -108,8 +108,8 @@ let E = function(e) {
     let {
         quest: t,
         surface: n,
-        analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContent: l,
+        analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: d
@@ -118,8 +118,8 @@ let E = function(e) {
         quest: t,
         surface: n,
         size: d,
-        analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: l,
+        analyticsCtxQuestContent: l,
+        analyticsCtxSourceQuestContent: r,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     }) : (0, i.jsx)(a.Button, {

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    r = n(311907),
-    l = n(397927),
-    a = n(975807),
+    a = n(311907),
+    r = n(397927),
+    l = n(975807),
     s = n(64983),
     o = n(152621),
     d = n(194362),
@@ -20,7 +20,7 @@ function g(e) {
     let {
         guild: t,
         markAsDismissed: n
-    } = e, g = ((0, r.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
+    } = e, g = ((0, a.bG)([c.A], () => c.A.getUnclaimedGameIdsForGuild(t.id), [t.id]) ?? [])[0] ?? null, {
         coverImageUrl: p,
         gameName: E
     } = (0, o.A)(g, _.intl.string(_.t.VQq92a));
@@ -35,7 +35,7 @@ function g(e) {
         message: I,
         cta: (0, i.jsxs)("span", {
             className: m.m,
-            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(l.I9m, {
+            children: [_.intl.string(_.t["2u6ZlY"]), (0, i.jsx)(r.I9m, {
                 size: "xs",
                 color: "currentColor"
             })]
@@ -48,7 +48,7 @@ function g(e) {
         onClick: async () => {
             n(h.i.TAKE_ACTION);
             let e = await (0, d.a)(A.dSh.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY);
-            (0, a.A)(e)
+            (0, l.A)(e)
         }
     })
 }

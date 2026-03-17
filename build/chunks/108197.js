@@ -129,7 +129,7 @@ let R = s.memo(function(e) {
     }, [t.id]), B = null == L ? 0 : L.length, {
         role: H,
         ...F
-    } = (0, a.rm)(t.id), K = s.useRef(null), Y = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
+    } = (0, a.rm)(t.id), K = s.useRef(null), W = G > 0 ? S.intl.formatToPlainString(S.t["ZL7+I6"], {
         channelName: t.name,
         mentionCount: G
     }) : D ? S.intl.formatToPlainString(S.t.YlVvmc, {
@@ -174,7 +174,7 @@ let R = s.memo(function(e) {
                     innerRef: K,
                     className: v.nf,
                     onClick: w,
-                    "aria-label": Y,
+                    "aria-label": W,
                     focusProps: {
                         enabled: !1
                     },

@@ -18,26 +18,26 @@ var i = r(627968),
     g = r(525723),
     C = r(57020),
     h = r(985018),
-    I = r(491153);
-let f = t => {
+    f = r(491153);
+let I = t => {
         let {
             product: e,
             prioritizedCurrency: r
         } = t, o = (0, l.bG)([a.default], () => a.default.getCurrentUser()), m = u.Ay.canUseCollectibles(o), {
             isDisabled: p
         } = (0, c.I)(e.skuId), {
-            isPurchased: f,
+            isPurchased: I,
             isPartiallyOwnedBundle: k
-        } = (0, A.h)(e), v = (0, d.G0)(e), j = (0, d.tt)(e), T = n.useMemo(() => (0, d.fT)(e, m), [e, m]), E = (0, g.V_)(e), {
-            checkoutEligiblePrices: y,
-            hasSufficientOrbs: _,
-            shouldCheckoutWithOrbs: b
+        } = (0, A.h)(e), v = (0, d.G0)(e), j = (0, d.tt)(e), E = n.useMemo(() => (0, d.fT)(e, m), [e, m]), T = (0, g.V_)(e), {
+            checkoutEligiblePrices: _,
+            hasSufficientOrbs: y,
+            shouldCheckoutWithOrbs: R
         } = (0, C.F)({
             product: e,
             isPremiumUser: m,
             prioritizedCurrency: r,
-            hasDiscountOffer: null != E
-        }), R = v && !m;
+            hasDiscountOffer: null != T
+        }), b = v && !m;
         return p ? (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
@@ -48,7 +48,7 @@ let f = t => {
             color: "text-muted",
             lineClamp: 1,
             children: h.intl.string(h.t.BEjTij)
-        }) : f && !R ? (0, i.jsx)(s.Text, {
+        }) : I && !b ? (0, i.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             lineClamp: 1,
@@ -63,14 +63,14 @@ let f = t => {
             color: "text-strong",
             lineClamp: 1,
             children: h.intl.string(h.t.rt69oo)
-        }) : 0 === y.length ? null : (0, i.jsx)(x.x, {
-            priceAmount: y[0].amount,
-            priceCurrency: y[0].currency,
-            discount: T,
+        }) : 0 === _.length ? null : (0, i.jsx)(x.x, {
+            priceAmount: _[0].amount,
+            priceCurrency: _[0].currency,
+            discount: E,
             nitroIconType: m ? "default" : void 0,
             nitroIconSize: "sm",
-            discountOfferAmount: E,
-            className: b && !_ ? I.c : void 0,
+            discountOfferAmount: T,
+            className: R && !y ? f.c : void 0,
             variant: "text-md/bold"
         })
     },
@@ -81,7 +81,7 @@ let f = t => {
         } = t, n = (0, p.Vm)(e), l = (0, o.Q)(n);
         if (null == n) return null;
         let s = (0, m.rb)(n, l);
-        return (0, i.jsx)(f, {
+        return (0, i.jsx)(I, {
             product: s,
             prioritizedCurrency: r
         })

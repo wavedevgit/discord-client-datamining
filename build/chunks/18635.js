@@ -3,9 +3,9 @@ n.d(t, {
     A: () => L
 }), n(323874), n(14289), n(35956);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(873263),
     o = n(311907),
     d = n(397927),
@@ -40,15 +40,15 @@ function O() {
 let L = function(e) {
     let {
         initialSection: t
-    } = e, n = (0, s.zy)(), l = (0, s.W6)();
-    r.useEffect(() => {
+    } = e, n = (0, s.zy)(), r = (0, s.W6)();
+    a.useEffect(() => {
         "true" === new URLSearchParams(n.search).get("confirm-age") && c.h.dispatch({
             type: "AGE_GATE_MODAL_OPEN",
             source: v.w_.DEEP_LINK_PROMPT
         }).then(() => {
-            l.replace(x.BVt.ME)
+            r.replace(x.BVt.ME)
         })
-    }, [l, n]), r.useEffect(() => {
+    }, [r, n]), a.useEffect(() => {
         u.I(x.BVt.FRIENDS), (0, I.d)("friends")
     }, []);
     let p = (0, o.bG)([f.A], () => f.A.theme),
@@ -58,11 +58,11 @@ let L = function(e) {
             rows: P
         } = (0, o.cf)([C.Ay], () => C.Ay.getState()),
         D = (0, o.bG)([m.A], () => m.A.getSuggestionCount()),
-        j = r.useMemo(() => P.getRelationshipCounts(), [P]);
-    r.useEffect(() => {
-        null != t && A.A.setInitialSection(t), 0 === j[x.eA$.FRIEND] && 0 === j[x.eA$.PENDING_INCOMING] && 0 === j[x.eA$.PENDING_OUTGOING] && 0 === j[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
-    }, [t, j]);
-    let M = e => {
+        M = a.useMemo(() => P.getRelationshipCounts(), [P]);
+    a.useEffect(() => {
+        null != t && A.A.setInitialSection(t), 0 === M[x.eA$.FRIEND] && 0 === M[x.eA$.PENDING_INCOMING] && 0 === M[x.eA$.PENDING_OUTGOING] && 0 === M[x.eA$.BLOCKED] && A.A.transitionToSection(x.m3P.ADD_FRIEND)
+    }, [t, M]);
+    let j = e => {
             A.A.transitionToSection(e, {
                 explicit: !0
             })
@@ -76,7 +76,7 @@ let L = function(e) {
             className: b.AS
         }, {
             id: x.m3P.ALL,
-            show: j[x.eA$.FRIEND] > 0,
+            show: M[x.eA$.FRIEND] > 0,
             content: y.intl.string(y.t.PfjFjR),
             className: b.AS
         }, {
@@ -112,7 +112,7 @@ let L = function(e) {
                 children: y.intl.string(y.t.j0wbE5)
             }),
             ariaLabel: y.intl.string(y.t.j0wbE5),
-            className: a()(b.AS, b.GU)
+            className: l()(b.AS, b.GU)
         }],
         k = null,
         V = (0, i.jsx)("div", {
@@ -144,7 +144,7 @@ let L = function(e) {
                     "aria-label": y.intl.string(y.t.TdEu5X),
                     selectedItem: R,
                     type: "top-pill",
-                    onItemSelect: M,
+                    onItemSelect: j,
                     className: b.$H,
                     children: G.filter(e => e.show).map(e => (0, i.jsx)(d.VQ0.Item, {
                         id: e.id,

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    l = n(64700),
+    r = n(284009),
+    a = n.n(r),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -24,26 +24,26 @@ var i = n(627968),
 function I(e) {
     let t, {
             invite: n,
-            message: l,
+            message: r,
             currentUserId: I,
             onTransitionToInviteChannel: E,
             onAcceptInstantInvite: v
         } = e,
-        b = I === l.author.id,
+        b = I === r.author.id,
         T = n.state === x.elq.ACCEPTING,
         S = (0, o.bG)([h.A], () => null != n.channel ? h.A.getChannel(n.channel.id) : null, [n]);
     a()(null == S || S.isPrivate(), "must be a private channel");
     let {
         analyticsLocations: y
-    } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != S, j = r.useCallback(() => {
+    } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != S, j = l.useCallback(() => {
         let e = "noop";
         N ? (E(), e = "transition") : (v(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
-            inviter_id: l.author.id,
-            invite_message_id: l.id
+            inviter_id: r.author.id,
+            invite_message_id: r.id
         }, y)
-    }, [n, l, y, N, E, v]);
+    }, [n, r, y, N, E, v]);
     if (null == S) {
         if (null == n.channel) return (0, i.jsx)(A.A, {});
         S = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
@@ -60,10 +60,10 @@ function I(e) {
     let R = f.intl.string(f.t.XpeFYr),
         P = "active";
     N && (R = f.intl.string(f.t.cEnaWx), P = "secondary");
-    let M = f.intl.string(f.t["3p3/BK"]);
-    return b && (M = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
+    let D = f.intl.string(f.t["3p3/BK"]);
+    return b && (D = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
-            text: M
+            text: D
         }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: C.iH,

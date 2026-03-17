@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(311907),
-    l = n(397927),
+var l = n(311907),
+    r = n(397927),
     a = n(529200),
     s = n(635491),
     o = n(122906),
@@ -17,7 +17,7 @@ var r = n(311907),
 function m(e) {
     let {
         code: t
-    } = e, m = (0, r.bG)([o.A], () => o.A.getGuildTemplate(t));
+    } = e, m = (0, l.bG)([o.A], () => o.A.getGuildTemplate(t));
     if (null == m || m.state === d.QB.RESOLVING) return (0, i.jsxs)(a.A, {
         children: [(0, i.jsx)(a.A.Header, {
             text: c.intl.string(c.t.Xj87Yf)
@@ -37,13 +37,13 @@ function m(e) {
             })]
         })]
     });
-    let h = __OVERLAY__ ? (0, i.jsx)(l.Button, {
+    let h = __OVERLAY__ ? (0, i.jsx)(r.Button, {
         disabled: !0,
         variant: "secondary",
         text: c.intl.string(c.t.W7NTWm)
-    }) : (0, i.jsx)(l.Button, {
+    }) : (0, i.jsx)(r.Button, {
         onClick: () => {
-            (0, l.mMO)(async () => {
+            (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("7726"), n.e("4042")]).then(n.bind(n, 72715));

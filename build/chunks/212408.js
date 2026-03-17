@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(990078),
-    l = n(985018),
-    a = n(359774);
+var a = n(990078),
+    r = n(985018),
+    l = n(359774);
 let s = Math.ceil(2 * Math.PI * 20),
     o = e => {
         let t, n, o, d, {
@@ -15,27 +15,27 @@ let s = Math.ceil(2 * Math.PI * 20),
             } = e,
             A = Math.max(0, Math.min(1, u / c)),
             h = `${Math.floor(100*A)}%`;
-        return (0, i.jsx)(r.m, {
-            text: l.intl.formatToPlainString(l.t["2eoRMh"], {
+        return (0, i.jsx)(a.m, {
+            text: r.intl.formatToPlainString(r.t["2eoRMh"], {
                 used: h
             }),
             children: (0, i.jsxs)("div", {
-                className: a.iE,
+                className: l.iE,
                 role: "progressbar",
-                "aria-label": l.intl.formatToPlainString(l.t["2eoRMh"], {
+                "aria-label": r.intl.formatToPlainString(r.t["2eoRMh"], {
                     used: h
                 }),
                 children: [(0, i.jsxs)("svg", {
                     viewBox: "25 25 50 50",
-                    className: a.JW,
+                    className: l.JW,
                     "aria-hidden": !0,
                     children: [(0, i.jsx)("circle", {
-                        className: a.Tp,
+                        className: l.Tp,
                         cx: "50",
                         cy: "50",
                         r: 20
                     }), (0, i.jsx)("circle", {
-                        className: a.CU,
+                        className: l.CU,
                         cx: "50",
                         cy: "50",
                         r: 20,
@@ -43,7 +43,7 @@ let s = Math.ceil(2 * Math.PI * 20),
                         strokeDasharray: (d = Math.floor(s * A), `${d}, ${s}`)
                     })]
                 }), (0, i.jsx)("aside", {
-                    className: a.Y3,
+                    className: l.Y3,
                     "aria-hidden": !0,
                     children: h
                 })]

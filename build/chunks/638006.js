@@ -1,6 +1,6 @@
 /** chunk id: 638006 params = (module,exports,require) **/
 r.d(e, {
-    A: () => y
+    A: () => _
 });
 var i = r(627968),
     n = r(503698),
@@ -18,8 +18,8 @@ var i = r(627968),
     g = r(561769),
     C = r(846957),
     h = r(929283),
-    I = r(245068),
-    f = r(761365),
+    f = r(245068),
+    I = r(761365),
     k = r(550674),
     v = r(8056);
 let j = t => {
@@ -38,18 +38,18 @@ let j = t => {
                     [v.zj]: (o || d) && !r,
                     [v.Ge]: c
                 }),
-                children: (0, i.jsx)(T, {
+                children: (0, i.jsx)(E, {
                     product: e,
                     isCardHovered: r,
                     showDefaultAvatar: n,
                     disableAnimation: a
                 })
-            }), o && (0, i.jsx)(E, {
+            }), o && (0, i.jsx)(T, {
                 hidden: r
             })]
         })
     },
-    T = t => {
+    E = t => {
         let {
             product: e,
             isCardHovered: r,
@@ -74,14 +74,14 @@ let j = t => {
                     avatarSize: o._3J.SIZE_120
                 });
             case s.R.NAMEPLATE:
-                return (0, i.jsx)(f.A, {
+                return (0, i.jsx)(I.A, {
                     nameplate: m,
                     user: a,
                     isHighlighted: x,
                     showDefaultAvatar: n
                 });
             case s.R.BUNDLE:
-                return (0, i.jsx)(I.X, {
+                return (0, i.jsx)(f.X, {
                     product: e,
                     user: a,
                     isHighlighted: x,
@@ -97,7 +97,7 @@ let j = t => {
                 return null
         }
     },
-    E = t => {
+    T = t => {
         let {
             hidden: e
         } = t;
@@ -111,7 +111,7 @@ let j = t => {
             })
         })
     },
-    y = t => {
+    _ = t => {
         let {
             skuId: e,
             isCardHovered: r,

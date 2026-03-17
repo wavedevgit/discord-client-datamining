@@ -124,7 +124,7 @@ let N = s.memo(function() {
                         t.isGuildVocal() ? (0, c.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("57287"), n.e("40394"), n.e("69701")]).then(n.bind(n, 698193));
+                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("57287"), n.e("40394"), n.e("15512")]).then(n.bind(n, 698193));
                             return n => (0, i.jsx)(e, {
                                 ...n,
                                 channel: t,
@@ -133,7 +133,7 @@ let N = s.memo(function() {
                         }) : (0, c.L3)(e, async () => {
                             let {
                                 default: e
-                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("57287"), n.e("34180")]).then(n.bind(n, 370372));
+                            } = await Promise.all([n.e("97262"), n.e("21420"), n.e("57287"), n.e("79841")]).then(n.bind(n, 370372));
                             return n => (0, i.jsx)(e, {
                                 ...n,
                                 channel: t,

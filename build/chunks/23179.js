@@ -230,14 +230,14 @@ let V = [],
             {
                 paginationTotalCount: F,
                 paginationMaxIndex: K,
-                isPaginationTotalCountLimited: Y
+                isPaginationTotalCountLimited: W
             } = (0, S.o)({
                 totalResults: n.totalResults,
                 isSearching: n.isSearching
             }),
-            W = s.useCallback((e, t) => {
+            Y = s.useCallback((e, t) => {
                 let n = K + 1;
-                if (!Y || e.targetPage !== n) return t;
+                if (!W || e.targetPage !== n) return t;
                 {
                     let e = D.intl.formatToPlainString(D.t["E+2azY"], {
                         maxPages: n
@@ -248,7 +248,7 @@ let V = [],
                         children: t
                     })
                 }
-            }, [Y, K]),
+            }, [W, K]),
             z = s.useCallback(e => {
                 e === b || n.isSearching || ((0, v.L6)({
                     searchContext: t,
@@ -288,7 +288,7 @@ let V = [],
                 }), N(e)
             }, [N, t, r]),
             Q = Math.floor(n.offset / L.T_y),
-            J = Y && Q >= K,
+            J = W && Q >= K,
             $ = K + 1,
             Z = (0, a.yK)([T.A], () => {
                 if (0 !== n.offset) return V;
@@ -346,8 +346,8 @@ let V = [],
                     onClick: q,
                     onScrollTo: H,
                     onPageChange: X,
-                    paginationTotalCount: Y ? F : void 0,
-                    renderPageWrapper: W,
+                    paginationTotalCount: W ? F : void 0,
+                    renderPageWrapper: Y,
                     onBlockedResultsClick: j,
                     searchRequestAnalyticsId: r,
                     searchResultsQuery: R,

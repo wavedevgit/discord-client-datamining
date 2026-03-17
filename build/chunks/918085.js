@@ -3,11 +3,11 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    s = n(740916),
-    o = n(678480),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
+    s = n(714384),
+    o = n(740916),
     d = n(191931),
     c = n(886352),
     u = n(132696),
@@ -18,7 +18,7 @@ var i = n(627968),
     g = n(622413),
     A = n(652215),
     x = n(430317);
-class f extends r.PureComponent {
+class f extends l.PureComponent {
     static defaultProps = {
         showMediaPlaceholder: !1,
         isMouseOver: !1,
@@ -31,17 +31,17 @@ class f extends r.PureComponent {
             inLibrary: e,
             sku: t,
             renderCustomActions: n,
-            isMouseOver: r,
-            showBuyInline: l
-        } = this.props, a = (l || !t.requiresPayment) && !e;
+            isMouseOver: l,
+            showBuyInline: r
+        } = this.props, a = (r || !t.requiresPayment) && !e;
         return null != n ? n() : (0, i.jsxs)("div", {
             className: x.ED,
-            children: [(0, i.jsx)(s.A, {
-                type: s.A.Types.DIRECTORY_TILE,
+            children: [(0, i.jsx)(o.A, {
+                type: o.A.Types.DIRECTORY_TILE,
                 sku: t,
                 inLibrary: e,
-                className: a && r ? x.ae : x.Ek
-            }), (0, i.jsx)(o.E, {
+                className: a && l ? x.ae : x.Ek
+            }), (0, i.jsx)(s.E, {
                 systems: [A.uje.WINDOWS],
                 className: x.iD
             }), a ? (0, i.jsx)("div", {
@@ -54,7 +54,7 @@ class f extends r.PureComponent {
             playing: e,
             muted: t,
             showMediaPlaceholder: n,
-            onToggleMute: l,
+            onToggleMute: r,
             sku: s,
             isHorizontal: o,
             storeListing: p
@@ -65,7 +65,7 @@ class f extends r.PureComponent {
             containerClassName: x.A$,
             backgroundImageClassName: x.iZ,
             foregroundImageClassName: x.O7
-        }) : (0, i.jsxs)(r.Fragment, {
+        }) : (0, i.jsxs)(l.Fragment, {
             children: [(0, i.jsx)(u.A, {
                 className: a()(x.H1, {
                     [x.ZC]: o
@@ -76,7 +76,7 @@ class f extends r.PureComponent {
                 playing: e,
                 muted: t,
                 placeholder: n,
-                onToggleMute: l,
+                onToggleMute: r,
                 splashClassName: x.ZI,
                 splashPlaceholderClassName: x.NB
             }), s.exclusive ? (0, i.jsx)(c.A, {
@@ -95,17 +95,17 @@ class f extends r.PureComponent {
             sku: e,
             storeListing: t,
             isHorizontal: n,
-            className: r,
-            renderCustomTagline: l,
+            className: l,
+            renderCustomTagline: r,
             renderCustomTitle: a,
             renderCustomMedia: s,
             isEmbed: o
         } = this.props, d = o ? p.ug : g.A;
         return (0, i.jsx)(d, {
-            className: r,
+            className: l,
             renderMedia: null != s ? s : this.renderMedia,
             renderTitle: null != a ? a : () => e.name,
-            renderTagline: null != l ? l : () => t.tagline,
+            renderTagline: null != r ? r : () => t.tagline,
             renderActions: this.renderActions,
             isHorizontal: n
         })

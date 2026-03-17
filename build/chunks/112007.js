@@ -3,8 +3,8 @@ n.d(t, {
     A: () => T
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(821418),
+    l = n(64700),
+    r = n(821418),
     a = n(665260),
     s = n(311907),
     o = n(990078),
@@ -34,32 +34,32 @@ function T(e) {
             message: R,
             currentUserId: P
         } = e,
-        M = P === R.author.id,
+        D = P === R.author.id,
         {
-            channel: D,
+            channel: M,
             approximate_member_count: w,
             approximate_presence_count: O
         } = L,
         k = L.state === E.elq.ACCEPTING,
-        U = null != D ? (0, A.OY)(D) : null,
+        U = null != M ? (0, A.OY)(M) : null,
         G = null != j,
         B = null != U,
         F = null != U && U.isGuildStageVoice(),
-        H = (0, a.Lt)(L.flags ?? 0, l.Q.IS_GUEST_INVITE),
+        H = (0, a.Lt)(L.flags ?? 0, r.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
         W = j?.features.has(E.GuildFeatures.HUB) ?? !1,
         q = j?.id,
         {
             analyticsLocations: Y
         } = (0, _.Ay)(u.A.INVITE_EMBED),
-        [z, Q] = r.useState(!1),
-        K = r.useCallback(() => Q(!1), []),
-        J = r.useRef(null),
+        [z, Q] = l.useState(!1),
+        K = l.useCallback(() => Q(!1), []),
+        J = l.useRef(null),
         X = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
-        Z = r.useCallback(() => {
+        Z = l.useCallback(() => {
             Q(!0), (0, c.Pq)(q, "show profile", Y)
         }, [q, Y]),
-        $ = r.useCallback(() => {
+        $ = l.useCallback(() => {
             let e = "noop";
             G ? (y(), e = "transition") : (N(), e = "accept"), (0, c.he)({
                 invite: L,
@@ -74,7 +74,7 @@ function T(e) {
     }
     let ee = (0, C.l)({
         isVoiceChannel: V,
-        isOwnInvite: M,
+        isOwnInvite: D,
         isGuest: H,
         isHubGuild: W,
         isStage: F,

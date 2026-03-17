@@ -44,15 +44,15 @@ let M = l.memo(function(e) {
         ...b
     } = e, k = t.type === x.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: B,
-        hasSpoilerEmbeds: w,
-        hasBailedAst: H
+        hasSpoilerEmbeds: H,
+        hasBailedAst: w
     } = (0, f.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || F,
         allowHeading: G || F,
         allowLinks: !0,
         previewLinkTarget: !0
-    }), V = t.type === x.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), z = (0, o.bG)([_.A], () => t.hasFlag(x.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), Y = (0, c.$7)({
+    }), V = t.type === x.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(x.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), z = (0, c.$7)({
         guildId: P.guild_id,
         roleId: K.iconRoleId
     }), W = (0, C.A)({
@@ -73,9 +73,9 @@ let M = l.memo(function(e) {
             ...e,
             guildId: P.guild_id,
             author: K,
-            roleIcon: Y
+            roleIcon: z
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, N.J)(e, w, H),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, N.J)(e, H, w),
         childrenMessageContent: (0, g.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,
@@ -83,7 +83,7 @@ let M = l.memo(function(e) {
         }),
         onContextMenu: a,
         onClick: M,
-        hasThread: y && null != z && t.hasFlag(x.pr7.HAS_THREAD),
+        hasThread: y && null != Y && t.hasFlag(x.pr7.HAS_THREAD),
         hasReply: t.type === x.lAJ.REPLY,
         "aria-labelledby": J,
         "aria-describedby": Q,

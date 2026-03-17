@@ -3,9 +3,9 @@ n.d(t, {
     A: () => m
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(735438),
     o = n(873263),
     d = n(397927),
@@ -19,11 +19,11 @@ function m(e) {
     let {
         quests: t,
         excludedQuests: n,
-        isFetching: l,
+        isFetching: r,
         hasFetched: m,
         hasFiltersApplied: g = !1,
         onClearFilters: p
-    } = e, E = r.useRef(!1), I = (0, o.zy)(), f = r.useMemo(() => {
+    } = e, E = a.useRef(!1), I = (0, o.zy)(), f = a.useMemo(() => {
         if (I.hash.length > 0) {
             let e = I.hash.slice(1),
                 i = (0, u.vc)(e, t, n);
@@ -31,19 +31,19 @@ function m(e) {
         }
         return null
     }, [t, n, I.hash]);
-    r.useEffect(() => {
+    a.useEffect(() => {
         E.current = !1
-    }, [I.hash]), r.useEffect(() => {
-        if (null == f || E.current || l || !m) return;
+    }, [I.hash]), a.useEffect(() => {
+        if (null == f || E.current || r || !m) return;
         let e = document.getElementById(`quest-tile-${f}`);
         e?.scrollIntoView({
             behavior: "smooth",
             block: "center"
         }), E.current = !0
-    }, [t, f, I, l, m]);
+    }, [t, f, I, r, m]);
     let C = null != f,
-        [T, N] = r.useState(window.innerWidth);
-    r.useEffect(() => {
+        [T, N] = a.useState(window.innerWidth);
+    a.useEffect(() => {
         let e = (0, s.debounce)(() => {
             N(window.innerWidth)
         }, 250);
@@ -52,7 +52,7 @@ function m(e) {
         }
     }, []);
     let S = T >= 1610 ? 3 : T >= 1340 ? 2 : 1;
-    return l && 0 === t.length ? (0, i.jsx)(d.y$y, {
+    return r && 0 === t.length ? (0, i.jsx)(d.y$y, {
         className: _.u1
     }) : 0 === t.length ? (0, i.jsxs)("div", {
         className: _.y7,
@@ -75,7 +75,7 @@ function m(e) {
                 questContent: c.uF.QUEST_HOME_DESKTOP,
                 contentPosition: t,
                 rowIndex: n,
-                className: a()(_.d, {
+                className: l()(_.d, {
                     [_.wH]: C && e.id === f,
                     [_.tP]: C && e.id !== f
                 }),

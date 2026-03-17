@@ -3,9 +3,9 @@ n.d(t, {
     A: () => P
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(735438),
-    a = n.n(l),
+    a = n(64700),
+    r = n(735438),
+    l = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(157559),
@@ -34,27 +34,27 @@ function L(e) {
     let {
         user: t,
         applicationId: n,
-        isGameRelationship: l,
-        onSelect: a
-    } = e, A = r.useCallback(() => {
+        isGameRelationship: r,
+        onSelect: l
+    } = e, A = a.useCallback(() => {
         c.A.openPrivateChannel({
             recipientIds: t.id,
             joinCall: !0
         })
-    }, [t.id]), h = r.useCallback(() => {
+    }, [t.id]), h = a.useCallback(() => {
         c.A.openPrivateChannel({
             recipientIds: t.id,
             joinCall: !0,
             joinCallVideo: !0
         })
-    }, [t.id]), _ = r.useCallback(() => {
+    }, [t.id]), _ = a.useCallback(() => {
         f.A.removeFriend({
             userId: t.id,
-            applicationId: l ? n : null,
+            applicationId: r ? n : null,
             location: "Friends"
         })
-    }, [n, l, t.id]), m = r.useCallback(() => {
-        let e = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [n, r, t.id]), m = a.useCallback(() => {
+        let e = r ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
         d.A.show({
             title: b.intl.formatToPlainString(b.t.fPLvZd, {
                 name: I.Ay.getName(t)
@@ -67,13 +67,13 @@ function L(e) {
             cancelText: b.intl.string(b.t["ETE/oC"]),
             onConfirm: _
         })
-    }, [_, l, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = l ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
+    }, [_, r, t]), g = (0, s.bG)([p.Ay], () => p.Ay.supports(y.O5.VIDEO)), E = t.isProvisional, C = r ? b.intl.string(b.t.RLcE6x) : b.intl.string(b.t.cvSt1J);
     return (0, i.jsxs)(o.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "friend-row",
         "aria-label": b.intl.string(b.t.liqwPJ),
         onClose: u.Z_,
-        onSelect: a,
+        onSelect: l,
         children: [!E && g ? (0, i.jsx)(o.Drp, {
             id: "start-video-call",
             label: b.intl.string(b.t.oCqlGG),
@@ -90,8 +90,8 @@ function L(e) {
         })]
     })
 }
-class R extends r.PureComponent {
-    peopleListItemRef = r.createRef();
+class R extends a.PureComponent {
+    peopleListItemRef = a.createRef();
     state = {
         isActiveRow: !1
     };
@@ -106,7 +106,7 @@ class R extends r.PureComponent {
             user: t
         } = this.props;
         e.stopPropagation();
-        let n = a().find(g.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
+        let n = l().find(g.A.getMutablePrivateChannels(), e => e.type === x.rbe.DM && e.getRecipientId() === t.id);
         null != n ? (0, m.pX)(x.BVt.CHANNEL(x.ME, n.id)) : c.A.openPrivateChannel({
             recipientIds: t.id
         })
@@ -115,12 +115,12 @@ class R extends r.PureComponent {
         let {
             user: t,
             isGameRelationship: n,
-            applicationId: r
+            applicationId: a
         } = this.props;
         (0, u.jA)(e, e => (0, i.jsx)(L, {
             ...e,
             user: t,
-            applicationId: r,
+            applicationId: a,
             isGameRelationship: n
         }), {
             onClose: () => {
@@ -137,9 +137,9 @@ class R extends r.PureComponent {
             user: e,
             isFocused: t,
             activities: n,
-            applicationStream: r,
-            status: l,
-            isMobile: a,
+            applicationStream: a,
+            status: r,
+            isMobile: l,
             isVR: s,
             isGameRelationship: d,
             giftIntentType: c,
@@ -156,10 +156,10 @@ class R extends r.PureComponent {
             onOtherHover: () => p ? null : (0, u.Z_)(),
             onClick: this.handleOpenPrivateChannel,
             giftIntentType: c,
-            status: l,
+            status: r,
             activities: n,
-            applicationStream: r,
-            isMobile: a,
+            applicationStream: a,
+            isMobile: l,
             isVR: s,
             isGameRelationship: d
         }) : (0, i.jsx)(T.A, {
@@ -173,14 +173,14 @@ class R extends r.PureComponent {
                 className: O.a4,
                 children: [(0, i.jsx)(S.A, {
                     user: e,
-                    status: l,
-                    isMobile: a,
+                    status: r,
+                    isMobile: l,
                     isVR: s,
                     subText: (0, i.jsx)(N.A, {
                         hovered: t,
                         activities: n,
-                        applicationStream: r,
-                        status: l,
+                        applicationStream: a,
+                        status: r,
                         user: e,
                         userIgnored: E.A.isIgnored(e.id)
                     }),

@@ -4,28 +4,28 @@ a.d(t, {
 }), a(323874), a(14289), a(35956);
 var n = a(627968),
     i = a(64700),
-    s = a(873263),
-    l = a(935573),
+    l = a(873263),
+    s = a(935573),
     r = a(994369),
     o = a(311907),
     c = a(397927),
     d = a(475743),
     u = a(979590),
-    h = a(783531),
-    m = a(961350),
+    m = a(783531),
+    h = a(961350),
     p = a(354138),
     _ = a(620140),
     g = a(212534),
     x = a(38181),
     A = a(651753),
-    C = a(767599),
+    f = a(767599),
     b = a(412461),
-    v = a(867333),
-    f = a(487953),
+    C = a(867333),
+    v = a(487953),
     j = a(310419),
     I = a(656106),
-    E = a(847525),
-    S = a(734786),
+    S = a(847525),
+    E = a(734786),
     N = a(435220),
     y = a(652215),
     T = a(563962);
@@ -34,12 +34,12 @@ function R(e) {
     let {
         onSelectApplication: t,
         onScroll: a
-    } = e, R = (0, o.bG)([m.default], () => m.default.isAuthenticated()), L = i.useRef(null), P = (0, s.zy)(), D = i.useRef(null), {
+    } = e, R = (0, o.bG)([h.default], () => h.default.isAuthenticated()), P = i.useRef(null), L = (0, l.zy)(), D = i.useRef(null), {
         query: O,
         page: k,
-        categoryId: M
+        categoryId: G
     } = i.useMemo(() => {
-        let e = new URLSearchParams(P.search),
+        let e = new URLSearchParams(L.search),
             t = e.get("page"),
             a = null != t ? Number(t) : 1;
         return {
@@ -47,7 +47,7 @@ function R(e) {
             page: a,
             categoryId: Number(e.get("category_id")) ?? N.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
         }
-    }, [P.search]), G = (0, o.bG)([x.A], () => x.A.getCategories()), U = i.useMemo(() => G?.find(e => e.id === M), [G, M]), w = i.useCallback(e => {
+    }, [L.search]), M = (0, o.bG)([x.A], () => x.A.getCategories()), U = i.useMemo(() => M?.find(e => e.id === G), [M, G]), w = i.useCallback(e => {
         (0, b.TR)(y.HAw.APP_DIRECTORY_SEARCHED, {
             search_term: O,
             num_results: e,
@@ -58,7 +58,7 @@ function R(e) {
         })
     }, [O, k, U?.name, U?.id]);
     i.useEffect(() => {
-        L.current?.scrollTo({
+        P.current?.scrollTo({
             to: 0
         }), O !== D.current && (D.current = O, p.$P({
             query: O,
@@ -68,28 +68,28 @@ function R(e) {
         })), p.$P({
             query: O,
             options: {
-                categoryId: M,
+                categoryId: G,
                 page: k,
                 pageSize: N.PAGE_SIZE,
                 source: r.V.APP_DIRECTORY
             },
             onSuccessCallback: w
         })
-    }, [M, k, O, w]);
+    }, [G, k, O, w]);
     let {
-        fetchState: V,
-        searchResults: H
+        fetchState: H,
+        searchResults: V
     } = (0, o.cf)([A.A], () => ({
         fetchState: A.A.getFetchState({
             query: O,
-            categoryId: M,
+            categoryId: G,
             page: k,
             pageSize: N.PAGE_SIZE,
             source: r.V.APP_DIRECTORY
         }),
         searchResults: A.A.getSearchResults({
             query: O,
-            categoryId: M,
+            categoryId: G,
             page: k,
             pageSize: N.PAGE_SIZE,
             source: r.V.APP_DIRECTORY
@@ -100,16 +100,16 @@ function R(e) {
             source: r.V.APP_DIRECTORY
         });
         return null != e ? {
-            [C.lj]: e.totalCount,
+            [f.lj]: e.totalCount,
             ...e.countsByCategory
         } : {}
-    }), F = (0, d.A)(H), Y = i.useMemo(() => V === g.e.FETCHING ? F : H, [V, F, H]), z = i.useCallback(e => {
+    }), F = (0, d.A)(V), Y = i.useMemo(() => H === g.e.FETCHING ? F : V, [H, F, V]), z = i.useCallback(e => {
         (0, I.JX)({
             query: O,
-            categoryId: M,
+            categoryId: G,
             page: e
         })
-    }, [M, O]), X = i.useCallback(e => {
+    }, [G, O]), X = i.useCallback(e => {
         (0, b.TR)(y.HAw.APP_DIRECTORY_CATEGORY_CLICKED, {
             category: e.name,
             category_id: e.id,
@@ -129,8 +129,8 @@ function R(e) {
     }, [Y?.loadId, t, O]), K = (0, _.A)();
     return (0, n.jsxs)("div", {
         className: T.kL,
-        children: [(0, n.jsx)(h.A, {
-            ref: L,
+        children: [(0, n.jsx)(m.A, {
+            ref: P,
             onScroll: a,
             children: (0, n.jsxs)("div", {
                 className: T.WH,
@@ -141,22 +141,22 @@ function R(e) {
                         className: T.hQ,
                         children: [(0, n.jsx)("div", {
                             className: T.$B,
-                            children: (0, n.jsx)(E.e, {
+                            children: (0, n.jsx)(S.e, {
                                 countsByCategory: B,
-                                selectedCategoryId: M,
+                                selectedCategoryId: G,
                                 onSelectCategory: X
                             })
-                        }), (0, n.jsx)(v.A, {
-                            loading: V === g.e.FETCHING,
-                            children: V === g.e.FETCHED && (null == Y || Y?.results.length === 0) ? (0, n.jsx)(S.A, {
-                                selectedCategoryId: M ?? K.id,
+                        }), (0, n.jsx)(C.A, {
+                            loading: H === g.e.FETCHING,
+                            children: H === g.e.FETCHED && (null == Y || Y?.results.length === 0) ? (0, n.jsx)(E.A, {
+                                selectedCategoryId: G ?? K.id,
                                 searchAllCategories: () => X(K)
                             }) : (0, n.jsx)("div", {
                                 className: T.Qs,
                                 children: Y?.results.map((e, t) => {
-                                    if (e.type === l.j.APPLICATION) {
+                                    if (e.type === s.j.APPLICATION) {
                                         let a = e.data;
-                                        return (0, n.jsx)(f.A, {
+                                        return (0, n.jsx)(v.A, {
                                             application: a,
                                             onSelectApplication: e => W(e, t),
                                             showCategory: !0
@@ -181,9 +181,9 @@ function R(e) {
             className: T.pn,
             children: (0, n.jsx)("div", {
                 className: T.jv,
-                children: (0, n.jsx)(E.A, {
+                children: (0, n.jsx)(S.A, {
                     countsByCategory: B,
-                    selectedCategoryId: M,
+                    selectedCategoryId: G,
                     onSelectCategory: X
                 })
             })

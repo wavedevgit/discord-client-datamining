@@ -4,9 +4,9 @@ n.d(t, {
     H: () => L
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(873263),
     o = n(323889),
     d = n(311907),
@@ -33,9 +33,9 @@ function b(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, l = r.useRef(null);
-    (0, T.A)(l, S.rE.QUEST_HOME_DESKTOP);
-    let s = r.useMemo(() => (null != n ? (0, g.WV)(n.url) : null) ?? t.url, [n, t]);
+    } = e, r = a.useRef(null);
+    (0, T.A)(r, S.rE.QUEST_HOME_DESKTOP);
+    let s = a.useMemo(() => (null != n ? (0, g.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: y.Tv,
         children: [(0, i.jsx)("div", {
@@ -48,14 +48,14 @@ function b(e) {
                 alt: t.altText
             })
         }), (0, i.jsx)("div", {
-            className: a()(y.LO, y.jx, y.hw),
+            className: l()(y.LO, y.jx, y.hw),
             children: (0, i.jsx)("img", {
                 className: y.LY,
                 src: t.url,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a()(y.LO, y.jx, y.Co),
+            className: l()(y.LO, y.jx, y.Co),
             children: (0, i.jsx)("img", {
                 className: y.LY,
                 src: t.url,
@@ -71,7 +71,7 @@ function b(e) {
             children: (0, i.jsx)(I.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: l,
+                assetRef: r,
                 imageAsset: {
                     alt: n.altText,
                     className: y.LY,
@@ -101,18 +101,18 @@ function O(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, s.zy)(), g = (0, s.W6)(), {
+    } = e, r = (0, s.zy)(), g = (0, s.W6)(), {
         enabled: I
     } = (0, h.Z)({
         location: S.rE.QUEST_HOME_DESKTOP
-    }), [T, O] = r.useState("display-lg"), L = r.useCallback(e => {
+    }), [T, O] = a.useState("display-lg"), L = a.useCallback(e => {
         e.contentRect.width < 500 ? O("display-md") : O("display-lg")
     }, []), R = (0, u.w)(L, [], {
         fireOnMount: !0
     }), P = (0, d.bG)([_.A], () => _.A.quests), {
         dismissQuestHomeHeroContent: D
     } = (0, N.I)();
-    return r.useEffect(() => {
+    return a.useEffect(() => {
         D(x.i.INDIRECT_ACTION)
     }, [D]), (0, i.jsx)(f.R, {
         adContentId: t.campaignId,
@@ -120,7 +120,7 @@ function O(e) {
         questContent: m.uF.QUEST_HOME_HERO,
         sourceQuestContent: m.uF.QUEST_HOME_HERO,
         children: e => (0, i.jsx)("div", {
-            className: a()(y.iE, "theme-midnight", {
+            className: l()(y.iE, "theme-midnight", {
                 [y.Qx]: !I
             }),
             ref: t => {
@@ -176,10 +176,10 @@ function O(e) {
                                 size: "md",
                                 text: t.ctaSponsorUrl.title,
                                 variant: "overlay-primary"
-                            }), t.ctaQuests.map((e, r) => P.has(e.questId) ? (0, i.jsx)(c.Button, {
+                            }), t.ctaQuests.map((e, a) => P.has(e.questId) ? (0, i.jsx)(c.Button, {
                                 onClick: () => {
                                     g.replace({
-                                        ...l,
+                                        ...r,
                                         hash: void 0
                                     }), n?.(), window.requestIdleCallback(() => {
                                         (0, C.navigateToQuestHome)({
@@ -196,7 +196,7 @@ function O(e) {
                                 size: "md",
                                 text: e.title,
                                 variant: "color-mix"
-                            }, r) : null)]
+                            }, a) : null)]
                         })]
                     })]
                 }), (0, i.jsx)(b, {
@@ -210,7 +210,7 @@ function O(e) {
 
 function L() {
     return (0, i.jsx)("div", {
-        className: a()(y.iE, y.FG, y.B3),
+        className: l()(y.iE, y.FG, y.B3),
         children: (0, i.jsx)(c.y$y, {})
     })
 }

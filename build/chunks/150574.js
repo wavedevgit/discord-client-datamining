@@ -3,9 +3,9 @@ n.d(t, {
     A: () => b
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(575593),
     o = n(440703),
     d = n(311907),
@@ -27,29 +27,29 @@ var i = n(627968),
     x = n(652215),
     v = n(985018),
     y = n(834600);
-let b = (0, r.memo)(function(e) {
+let b = (0, a.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, l] = (0, r.useState)(!1), [b, O] = (0, r.useState)(24), [L, R] = (0, r.useState)(!1), P = (0, r.useRef)(null), D = (0, r.useRef)(null), j = (0, r.useRef)(null), M = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
+    } = e, [n, r] = (0, a.useState)(!1), [b, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
         month: "numeric",
         day: "numeric"
-    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], q = W?.type === s.R.AVATAR_DECORATION ? W : null;
+    }), V = t.userStatus?.claimedTier ?? 0, B = t.config.rewards[V], H = B?.type === o.l.FRACTIONAL_PREMIUM, F = B?.type === o.l.COLLECTIBLE, Y = B?.type === o.l.VIRTUAL_CURRENCY, W = B?.collectibleProduct?.items?.[0], K = W?.type === s.R.AVATAR_DECORATION ? W : null;
     (0, A.i4)(P, e => {
         let {
             height: t
         } = e;
-        if (!F || null == t || null == D.current || null == P.current || null == j.current) return;
+        if (!F || null == t || null == D.current || null == P.current || null == M.current) return;
         let n = P.current.getBoundingClientRect(),
             i = D.current.getBoundingClientRect(),
-            r = j.current.getBoundingClientRect();
-        O((i.top - n.top - r.height) / 2)
+            a = M.current.getBoundingClientRect();
+        O((i.top - n.top - a.height) / 2)
     });
-    let z = (0, c.Mw)(G),
-        K = (0, r.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
-        $ = (0, r.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
+    let q = (0, c.Mw)(G),
+        z = (0, a.useMemo)(() => null != t.config.cosponsorMetadata, [t]),
+        $ = (0, a.useMemo)(() => (0, f.tW)(t, f.fY.REWARD), [t]),
         Q = n ? U + 8 : 0,
         {
             content_position: X,
@@ -57,13 +57,13 @@ let b = (0, r.memo)(function(e) {
             ...J
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         ee = () => {
-            l(!0), p.default.track(x.HAw.QUEST_HOVER, {
+            r(!0), p.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...J
             })
         },
         et = () => {
-            l(!1)
+            r(!1)
         },
         en = e => {
             R(!0), p.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
@@ -80,18 +80,18 @@ let b = (0, r.memo)(function(e) {
             onBlur: et,
             onMouseEnter: ee,
             onMouseLeave: et,
-            className: a()(y.kL, {
+            className: l()(y.kL, {
                 [y.yo]: n
             }),
-            children: [null != M && F && null != q && (0, i.jsx)("div", {
-                ref: j,
+            children: [null != j && F && null != K && (0, i.jsx)("div", {
+                ref: M,
                 className: y.FX,
                 style: {
                     top: b
                 },
                 children: (0, i.jsx)(_.A, {
-                    avatarDecorationOverride: q,
-                    user: M,
+                    avatarDecorationOverride: K,
+                    user: j,
                     guildId: null,
                     animateOnHover: !n
                 })
@@ -115,9 +115,9 @@ let b = (0, r.memo)(function(e) {
                 alt: t.config.messages.questName,
                 onError: () => en($.url)
             }), (0, i.jsx)("div", {
-                className: a()(y.Lw, {
-                    [y.en]: z,
-                    [y.So]: !z
+                className: l()(y.Lw, {
+                    [y.en]: q,
+                    [y.So]: !q
                 })
             }), (0, i.jsx)("div", {
                 ref: D,
@@ -126,8 +126,8 @@ let b = (0, r.memo)(function(e) {
                     transform: `translateY(-${Q}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
-                    logotypeClassName: a()(y.wm, {
-                        [y.A0]: K
+                    logotypeClassName: l()(y.wm, {
+                        [y.A0]: z
                     }),
                     quest: t,
                     withGameTile: !1
@@ -144,9 +144,9 @@ let b = (0, r.memo)(function(e) {
                     })
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
-                    color: z ? "text-muted" : "always-white",
+                    color: q ? "text-muted" : "always-white",
                     style: {
-                        opacity: z ? 1 : .75
+                        opacity: q ? 1 : .75
                     },
                     children: v.intl.format(v.t["kXVcV+"], {
                         reward: B.name,

@@ -33,10 +33,10 @@ function v(e) {
                 query: ""
             }), s.A.terminate()
         }, []),
-        [v, S] = i.useState(!1);
+        [v, N] = i.useState(!1);
     return (i.useLayoutEffect(() => {
         let e = () => {
-            null == u.default.getCurrentUser() && (S(!0), (0, h.default)())
+            null == u.default.getCurrentUser() && (N(!0), (0, h.default)())
         };
         return o.default.addChangeListener(e), () => o.default.removeChangeListener(e)
     }, []), v) ? null : (0, r.jsx)(l.A, {

@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(562465),
-    l = n(451988),
-    a = n(397927),
+var a = n(562465),
+    r = n(451988),
+    l = n(397927),
     s = n(339048),
     o = n(10716),
     d = n(587895),
@@ -25,14 +25,14 @@ let E = 10 * h.A.Millis.SECOND,
             handler(e) {
                 let {
                     socket: t
-                } = e, r = t.application.id;
+                } = e, a = t.application.id;
                 try {
                     var o;
                     let e;
-                    if (null == r) throw new m.A({
+                    if (null == a) throw new m.A({
                         errorCode: p.Lw6.INVALID_COMMAND
                     }, "No application.");
-                    let t = d.A.getApplication(r);
+                    let t = d.A.getApplication(a);
                     if (null == t) throw new m.A({
                         errorCode: p.Lw6.INVALID_ENTITLEMENT
                     }, "SKU does not exist.");
@@ -44,19 +44,19 @@ let E = 10 * h.A.Millis.SECOND,
                         if (!e) throw new m.A({
                             errorCode: p.Lw6.INVALID_ENTITLEMENT
                         }, "User does not have entitlement.")
-                    }), (0, l.BK)(E).then(() => {
+                    }), (0, r.BK)(E).then(() => {
                         throw new m.A({
                             errorCode: p.Lw6.INVALID_ENTITLEMENT
                         }, "Timed out fetching entitlement.")
                     })])
                 } catch (e) {
-                    throw e.code === p.Lw6.INVALID_ENTITLEMENT && (_.Ay.focus(null, !0), (0, a.mMO)(async () => {
+                    throw e.code === p.Lw6.INVALID_ENTITLEMENT && (_.Ay.focus(null, !0), (0, l.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            applicationId: r
+                            applicationId: a
                         })
                     })), e
                 }
@@ -67,14 +67,14 @@ let E = 10 * h.A.Millis.SECOND,
             handler(e) {
                 let {
                     socket: t
-                } = e, l = t.application.id;
-                if (null == l) throw new m.A({
+                } = e, r = t.application.id;
+                if (null == r) throw new m.A({
                     errorCode: p.Lw6.INVALID_COMMAND
                 }, "No application.");
-                return r.Bo.post({
-                    url: p.Rsh.ENTITLEMENT_TICKET(l),
+                return a.Bo.post({
+                    url: p.Rsh.ENTITLEMENT_TICKET(r),
                     body: {
-                        test_mode: A.A.inTestModeForApplication(l) || o.A.inDevModeForApplication(l)
+                        test_mode: A.A.inTestModeForApplication(r) || o.A.inDevModeForApplication(r)
                     },
                     retries: 3,
                     oldFormErrors: !0,
@@ -85,13 +85,13 @@ let E = 10 * h.A.Millis.SECOND,
                     } = e;
                     return t
                 }).catch(e => {
-                    throw _.Ay.focus(null, !0), (0, a.mMO)(async () => {
+                    throw _.Ay.focus(null, !0), (0, l.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            applicationId: l
+                            applicationId: r
                         })
                     }), e
                 })

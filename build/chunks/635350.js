@@ -4,8 +4,8 @@ a.d(t, {
 });
 var n = a(627968),
     i = a(64700),
-    s = a(503698),
-    l = a.n(s),
+    l = a(503698),
+    s = a.n(l),
     r = a(397927),
     o = a(330640);
 let c = i.memo(function(e) {
@@ -13,19 +13,19 @@ let c = i.memo(function(e) {
         onClick: t,
         onContextMenu: a,
         className: i,
-        disabled: s,
+        disabled: l,
         children: c,
         "aria-label": d,
         ref: u
     } = e;
     return (0, n.jsx)(r.sqX, {
         ref: u,
-        className: l()(o.Nr, i, {
+        className: s()(o.Nr, i, {
             [o.vk]: null != t,
-            [o.r9]: s
+            [o.r9]: l
         }),
         onContextMenu: a,
-        onClick: s ? void 0 : t,
+        onClick: l ? void 0 : t,
         "aria-label": d,
         children: c
     })

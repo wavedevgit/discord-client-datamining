@@ -1,12 +1,12 @@
 /** chunk id: 509282 params = (module,exports,require) **/
 n.d(t, {
-    $: () => M,
+    $: () => D,
     G: () => P
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(284009),
-    a = n.n(l),
+    l = n(64700),
+    r = n(284009),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(996759),
@@ -59,21 +59,21 @@ let L = (0, s.UT)([x.A, f.A, g.A], {
 function P(e) {
     let {
         appId: t,
-        message: l
+        message: r
     } = e, a = (0, b.G)(t), {
         data: c
     } = (0, u.YY)(t), [m, h, g, x] = (0, s.yK)([_.A, A.A, p.A], () => {
         let e = _.A.getApplication(t),
             n = null != e ? (0, E.A)(e, 45) : void 0,
-            i = p.A.getBasicChannel(l.channel_id)?.guild_id;
+            i = p.A.getBasicChannel(r.channel_id)?.guild_id;
         return [A.A.getStoreLayout(t), A.A.getFetchStatus(t), i, n]
-    }, [t, l.channel_id]);
-    r.useEffect(() => {
+    }, [t, r.channel_id]);
+    l.useEffect(() => {
         h === A.N.NONE && (0, d.V)(t)
     }, [t, h]);
     let f = m.subscriptions.length,
         I = m.otps.length,
-        T = r.useMemo(() => f > 0 && I > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
+        T = l.useMemo(() => f > 0 && I > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
             subCount: f,
             itemCount: I
         }) : f > 0 ? N.intl.formatToPlainString(N.t.GSfibA, {
@@ -95,7 +95,7 @@ function P(e) {
             })
         })
     };
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(M, {
         appName: c.name,
         title: N.intl.formatToPlainString(N.t.XDRjs5, {
             appName: c.name
@@ -127,10 +127,10 @@ function P(e) {
     })
 }
 
-function M(e) {
+function D(e) {
     let {
         appId: t,
-        skuId: l,
+        skuId: r,
         message: a
     } = e, {
         parentSku: d,
@@ -140,22 +140,22 @@ function M(e) {
     } = function(e, t) {
         let {
             data: n
-        } = L(e), i = n?.sku, r = n?.subscriptionPlan, l = n?.storeListing, {
+        } = L(e), i = n?.sku, l = n?.subscriptionPlan, r = n?.storeListing, {
             data: a
         } = R(e, i?.application?.id ?? i?.applicationId);
         return {
             parentSku: a,
             sku: i?.applicationId === t ? i : null,
-            storeListing: l,
-            subscriptionPlan: r
+            storeListing: r,
+            subscriptionPlan: l
         }
-    }(l, t), {
+    }(r, t), {
         data: A
-    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(a.channel_id)?.guild_id, [a]), f = r.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
+    } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(a.channel_id)?.guild_id, [a]), f = l.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
         openModal: P,
-        subscriptionPurchaseButtonState: M
+        subscriptionPurchaseButtonState: D
     } = (0, h.A)({
-        skuId: l,
+        skuId: r,
         initialSubscribeForGuild: x
     });
     if (!I || null == A || null == c) return null;
@@ -179,7 +179,7 @@ function M(e) {
                 let e = w ? (await Promise.resolve().then(n.bind(n, 168393))).SubscriptionDetailsModal : null,
                     t = w ? null : (await Promise.resolve().then(n.bind(n, 963179))).ItemDetailsModal;
                 return n => {
-                    let r = () => {
+                    let l = () => {
                         n.onClose(), k()
                     };
                     return null != e && null != d ? (0, i.jsx)(e, {
@@ -189,13 +189,13 @@ function M(e) {
                         guildId: x,
                         subscriptionType: O ? "user" : "guild",
                         onClose: n.onClose,
-                        onHeaderTitleClick: r
+                        onHeaderTitleClick: l
                     }) : null != t ? (0, i.jsx)(t, {
                         transitionState: n.transitionState,
                         appId: A.id,
-                        skuId: l,
+                        skuId: r,
                         onClose: n.onClose,
-                        onHeaderTitleClick: r
+                        onHeaderTitleClick: l
                     }) : null
                 }
             })
@@ -221,13 +221,13 @@ function M(e) {
             area: "purchase_button"
         })
     };
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(M, {
         appName: A.name,
         title: c.name,
         description: G,
         link: `${location.protocol}//${location.host}${S.BVt.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(A.id,y.GlobalDiscoveryAppsSections.STORE)}`,
         onLinkCopy: () => {
-            (0, v.K)(A.id, v.C.SKU_EMBED, l)
+            (0, v.K)(A.id, v.C.SKU_EMBED, r)
         },
         iconSrc: f,
         onIconClick: () => {
@@ -257,7 +257,7 @@ function M(e) {
                 icon: o.U1X,
                 onHasClicked: B,
                 subscriptionPlan: _,
-                state: M
+                state: D
             }) : (0, i.jsx)(o.Button, {
                 variant: "primary",
                 text: N.intl.string(N.t.uuzaAK),
@@ -272,12 +272,12 @@ function M(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         appName: t,
         title: n,
-        description: r,
-        link: l,
+        description: l,
+        link: r,
         iconSrc: a,
         onIconClick: s,
         onLinkCopy: d,
@@ -303,7 +303,7 @@ function D(e) {
                 }),
                 size: "sm",
                 onClick: () => {
-                    (0, I.C)(l, () => {
+                    (0, I.C)(r, () => {
                         (0, o.showToast)((0, o.createToast)(N.intl.string(N.t["L/PwZf"]), o.ToastType.SUCCESS)), d()
                     })
                 },
@@ -322,19 +322,19 @@ function D(e) {
                     })
                 }), (0, i.jsxs)("div", {
                     className: j.Tf,
-                    style: null == r ? {
+                    style: null == l ? {
                         justifyContent: "space-evenly"
                     } : void 0,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "heading-md/semibold",
                         tag: "div",
                         children: n
-                    }), null != r && (0, i.jsx)(o.Text, {
+                    }), null != l && (0, i.jsx)(o.Text, {
                         variant: "heading-md/medium",
                         color: "text-muted",
                         tag: "div",
                         className: j.h_,
-                        children: r
+                        children: l
                     })]
                 })]
             }), c]

@@ -51,10 +51,10 @@ function k(e) {
         layout: "SIDEBAR",
         userId: t.id,
         channelId: g.id
-    }), Y = s.useRef(null), {
-        isHoveringOrFocusing: W,
+    }), W = s.useRef(null), {
+        isHoveringOrFocusing: Y,
         isHovering: z
-    } = (0, h.A)(Y), q = (0, x.fC)(), X = (0, o.zhh)({
+    } = (0, h.A)(W), q = (0, x.fC)(), X = (0, o.zhh)({
         opacity: +(null != q.interactionType),
         config: {
             duration: 150
@@ -84,7 +84,7 @@ function k(e) {
             children: (0, i.jsx)(x.Hl, {
                 value: q,
                 children: (0, i.jsxs)(T.A, {
-                    ref: Y,
+                    ref: W,
                     user: t,
                     displayProfile: B,
                     themeType: U.d.SIDEBAR,
@@ -109,7 +109,7 @@ function k(e) {
                                 user: t,
                                 displayProfile: B,
                                 themeType: U.d.SIDEBAR,
-                                animateOnHoverOrFocusOnly: !W,
+                                animateOnHoverOrFocusOnly: !Y,
                                 className: w.vK
                             }), (0, i.jsx)(N.A, {
                                 userId: t.id,
@@ -131,7 +131,7 @@ function k(e) {
                             currentUser: n,
                             displayProfile: B,
                             channel: g,
-                            isHoveringOrFocusing: null == q.interactionType && W,
+                            isHoveringOrFocusing: null == q.interactionType && Y,
                             onOpenProfile: k ? void 0 : Q
                         }), J && (0, i.jsx)("div", {
                             className: w.sJ,

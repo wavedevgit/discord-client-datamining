@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(934551),
-    l = n(232582),
-    a = n(732955),
+var a = n(934551),
+    r = n(232582),
+    l = n(732955),
     s = n(397927),
     o = n(954571),
     d = n(975571),
@@ -27,7 +27,7 @@ function m(e) {
         isLightTheme: I
     } = e, f = `AnnouncementModalVariant1_${t}`, {
         onClose: C
-    } = g, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === l.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
+    } = g, T = m.button?.copy ?? h.intl.string(h.t.YScQSF), N = m.button?.buttonAction === r.dz.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button", S = (0, u.h)({
         buttonAction: m.button?.buttonAction,
         analyticsLocations: p,
         analyticsLocation: E,
@@ -73,7 +73,7 @@ function m(e) {
         changeLogId: f,
         button: () => {
             let e = Date.now();
-            return (0, i.jsx)(a.$nd, {
+            return (0, i.jsx)(l.$nd, {
                 variant: "expressive",
                 size: "md",
                 onClick: () => {
@@ -85,7 +85,7 @@ function m(e) {
                     }), S()
                 },
                 text: T,
-                icon: r.NitroWheelIcon
+                icon: a.NitroWheelIcon
             })
         }
     }

@@ -50,8 +50,8 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                 onContextMenu: H,
                 renderChildNode: F,
                 folderButtonSize: K,
-                folderButtonContent: Y,
-                "aria-setsize": W,
+                folderButtonContent: W,
+                "aria-setsize": Y,
                 "aria-posinset": z
             } = e,
             {
@@ -134,8 +134,8 @@ let y = (0, g.xI)(u.A.FOLDER_ITEM_ANIMATION_DURATION),
                         onHoverChange: $,
                         onKeyDown: er,
                         treeItemProps: eo,
-                        folderButtonContent: Y,
-                        "aria-setsize": W,
+                        folderButtonContent: W,
+                        "aria-setsize": Y,
                         "aria-posinset": z
                     })
                 })

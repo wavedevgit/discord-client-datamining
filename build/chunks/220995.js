@@ -75,7 +75,7 @@ function T(e) {
                 })
             })
         }, [G, t]),
-        [Y, W] = (0, u.zhh)(() => ({
+        [W, Y] = (0, u.zhh)(() => ({
             from: {
                 height: "0px"
             },
@@ -89,13 +89,13 @@ function T(e) {
             }
         })),
         z = s.useCallback(e => {
-            P(!0), W({
+            P(!0), Y({
                 to: {
                     height: "0px"
                 },
                 onRest: () => F(e)
             })
-        }, [W, F]),
+        }, [Y, F]),
         q = s.useCallback(() => (null != j.current && clearTimeout(j.current), j.current = setTimeout(() => z("timeout"), 1e4), L(e => e + 1), () => {
             null != j.current && clearTimeout(j.current)
         }), [z]),
@@ -138,7 +138,7 @@ function T(e) {
             } = e;
             return (0, i.jsx)(a.animated.div, {
                 className: N.lY,
-                style: Y,
+                style: W,
                 children: (0, i.jsx)(u.DUT, {
                     innerRef: T,
                     className: r()({

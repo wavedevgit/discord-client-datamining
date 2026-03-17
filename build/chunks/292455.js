@@ -1,15 +1,15 @@
 /** chunk id: 292455 params = (module,exports,require) **/
 a.d(t, {
-    A: () => l
+    A: () => s
 });
 var n = a(627968),
     i = a(238502),
-    s = a(262834);
+    l = a(262834);
 
-function l() {
+function s() {
     let e = (0, i.J)();
     return (0, n.jsx)("div", {
-        className: s.pm,
+        className: l.pm,
         children: (0, n.jsx)("div", {
             className: e
         })

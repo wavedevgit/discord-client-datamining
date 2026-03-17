@@ -1,16 +1,16 @@
 /** chunk id: 901898 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(507698);
 
-function r(e) {
+function a(e) {
     let {
         userId: t,
         nick: n,
-        guildId: r,
-        avatar: l,
-        avatarDecoration: a,
+        guildId: a,
+        avatar: r,
+        avatarDecoration: l,
         banner: s,
         bio: o,
         pronouns: d,
@@ -19,9 +19,9 @@ function r(e) {
     return {
         user_id: t,
         nick: n,
-        guild_id: r,
-        avatar: l,
-        avatar_decoration_data: (0, i.Xq)(a),
+        guild_id: a,
+        avatar: r,
+        avatar_decoration_data: (0, i.Xq)(l),
         banner: s,
         bio: o,
         pronouns: d,

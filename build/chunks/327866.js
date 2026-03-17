@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(64700),
-    r = n(311907),
-    l = n(827343),
-    a = n(800828),
+    a = n(311907),
+    r = n(827343),
+    l = n(800828),
     s = n(912309),
     o = n(780964),
     d = n(840065),
@@ -26,9 +26,9 @@ class f extends i.PureComponent {
             muted: t,
             speaking: n,
             connected: i,
-            unread: r
-        } = this.props, l = I;
-        return (0, g.isMac)() && !i ? l : (0, g.isLinux)() || !i ? (r && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
+            unread: a
+        } = this.props, r = I;
+        return (0, g.isMac)() && !i ? r : (0, g.isLinux)() || !i ? (a && (r = "UNREAD"), r) : r = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
     };
     componentDidMount() {
         p.Ay.setSystemTrayIcon(this.getIcon())
@@ -44,16 +44,16 @@ class f extends i.PureComponent {
     }
 }
 let C = () => null;
-g.isPlatformEmbedded && (p.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", () => l.A.toggleSelfMute({
+g.isPlatformEmbedded && (p.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", () => r.A.toggleSelfMute({
     location: "System Tray"
-})), p.Ay.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => l.A.toggleSelfDeaf()), p.Ay.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
+})), p.Ay.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => r.A.toggleSelfDeaf()), p.Ay.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
     (0, d.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
         section: E.nc_.VOICE
     })
-}), C = r.Ay.connectStores([h.A, u.Ay, m.A, c.default, _.A, A.A, a.A], () => {
+}), C = a.Ay.connectStores([h.A, u.Ay, m.A, c.default, _.A, A.A, l.A], () => {
     let e = c.default.getTotalMentionCount(),
         t = c.default.hasAnyUnread(),
-        n = (0, s.dH)([_.A, a.A]),
+        n = (0, s.dH)([_.A, l.A]),
         i = !A.A.getDisableUnreadBadge() && !!(t || e + n > 0);
     return {
         connected: h.A.isConnected(),

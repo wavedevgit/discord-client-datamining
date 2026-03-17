@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(696292),
     o = n(397927),
     d = n(881615),
@@ -27,7 +27,7 @@ var i = n(627968),
 function S(e) {
     let {
         tab: t
-    } = e, n = g.A.useField("selectedTab"), l = r.useMemo(() => (function(e) {
+    } = e, n = g.A.useField("selectedTab"), r = a.useMemo(() => (function(e) {
         switch (e) {
             case I.GlobalDiscoveryTab.SERVERS:
                 return (0, i.jsx)(o.RR9, {
@@ -42,7 +42,7 @@ function S(e) {
                     color: "currentColor"
                 })
         }
-    })(t), [t]), T = r.useMemo(() => (0, p.t)(t), [t]), S = n === t, x = r.useCallback(() => {
+    })(t), [t]), T = a.useMemo(() => (0, p.t)(t), [t]), S = n === t, x = a.useCallback(() => {
         switch (t) {
             case I.GlobalDiscoveryTab.QUESTS:
                 return S && _.A.resetState(), m.default.track(f.HAw.DISCOVERY_QUEST_TAB_CLICKED, {
@@ -80,12 +80,12 @@ function S(e) {
     }, [t, S]);
     return (0, i.jsxs)(o.DUT, {
         onClick: x,
-        className: a()(N.pc, {
+        className: l()(N.pc, {
             [N.wH]: S
         }),
         children: [(0, i.jsx)("div", {
             className: N.wz,
-            children: l
+            children: r
         }), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "none",

@@ -9,7 +9,7 @@ var r = e(397927),
     a = e(358367),
     d = e(793574),
     s = e(50268),
-    c = e(515610),
+    c = e(93055),
     o = e(849867),
     A = e(795144),
     u = e(769591),
@@ -60,7 +60,7 @@ function G(n) {
     } = n, d = (0, y.A)(t), c = (0, f.A)(t), o = (0, C.A)(t), v = (0, h.A)(t), O = (0, g.A)(t), G = (0, p.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, b.A)(t), M = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
-    }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), L = (0, x.Ay)(t);
+    }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), D = (0, x.Ay)(t);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated-auto": !0,
         navId: "channel-context",
@@ -72,7 +72,7 @@ function G(n) {
         }, "mark-as-read"), (0, i.jsxs)(r.rXV, {
             children: [I, v, O]
         }, "channel-actions"), (0, i.jsxs)(r.rXV, {
-            children: [c, U ? L : o]
+            children: [c, U ? D : o]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
             children: [G, N, T, m]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
@@ -81,7 +81,7 @@ function G(n) {
     })
 }
 let N = (0, a.A)(function(n) {
-    return (0, c.A)() ? (0, i.jsx)(O, {
+    return (0, c.DZ)() ? (0, i.jsx)(O, {
         ...n
     }) : (0, i.jsx)(G, {
         ...n

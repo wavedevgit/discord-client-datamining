@@ -3,8 +3,8 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(158954),
+    l = n(64700),
+    r = n(158954),
     a = n(311907),
     s = n(308528),
     o = n(846293),
@@ -27,7 +27,7 @@ function C(e) {
         getAcceptInviteContext: C
     } = e, I = (0, a.bG)([m.default], () => m.default.getId()), E = t.inviter?.id === I, v = t.state === A.elq.ACCEPTING, {
         analyticsLocations: b
-    } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, a.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), S = r.useCallback(() => {
+    } = (0, c.Ay)(d.A.INVITE_EMBED), T = (0, a.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), S = l.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != h.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -37,7 +37,7 @@ function C(e) {
             inviter_id: n.author.id,
             invite_message_id: n.id
         }, b)
-    }, [t, n, b]), y = r.useCallback(() => {
+    }, [t, n, b]), y = l.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
@@ -57,7 +57,7 @@ function C(e) {
     T ? (j = x.intl.string(x.t.xhxnPn), L = "secondary") : E && (j = x.intl.string(x.t.ib7Ng1), L = "secondary");
     let R = E ? x.intl.string(x.t.eQyu1F) : x.intl.string(x.t.PYJHW6),
         P = null != t.inviter ? `${t.inviter.username}` : "",
-        M = null != t.inviter ? g.Ay.getUserTag(t.inviter) : "";
+        D = null != t.inviter ? g.Ay.getUserTag(t.inviter) : "";
     return (0, i.jsxs)(u.A, {
         children: [(0, i.jsx)(u.A.Header, {
             text: R
@@ -70,9 +70,9 @@ function C(e) {
                 }), (0, i.jsx)(u.A.Info, {
                     title: P,
                     onClick: T ? N : void 0,
-                    children: M
+                    children: D
                 })]
-            }), (0, i.jsx)(l.$nd, {
+            }), (0, i.jsx)(r.$nd, {
                 onClick: N,
                 text: j,
                 loading: v,

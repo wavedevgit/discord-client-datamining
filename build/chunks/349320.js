@@ -3,9 +3,9 @@ n.d(t, {
     L: () => S
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(158954),
     o = n(51264),
     d = n(820284),
@@ -40,8 +40,8 @@ function N(e) {
         })
     })
 }
-let S = r.memo(function() {
-    let e = r.useRef(null);
+let S = a.memo(function() {
+    let e = a.useRef(null);
     (0, c.i4)(e, e => {
         let {
             height: t
@@ -53,7 +53,7 @@ let S = r.memo(function() {
     } = (0, h.A)();
     return (0, i.jsx)("section", {
         ref: e,
-        className: a()(T.C3, {
+        className: l()(T.C3, {
             [T.aB]: t
         }),
         "aria-label": C.intl.string(C.t.vTl6Lk),

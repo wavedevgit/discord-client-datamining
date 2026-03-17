@@ -12,15 +12,15 @@ n.d(t, {
     be: () => w,
     kx: () => x,
     n$: () => T,
-    px: () => M,
+    px: () => j,
     tI: () => P,
     xj: () => N,
-    yx: () => j
+    yx: () => M
 }), n(321073);
-var i, r = n(6161),
-    l = n(681154);
+var i, a = n(6161),
+    r = n(681154);
 n(311907), n(256265);
-var a = n(698441),
+var l = n(698441),
     s = n(141468),
     o = n(95701),
     d = n(383233),
@@ -52,15 +52,15 @@ function S(e) {
 }
 async function x(e, t, n) {
     let i = p.A.getHydratedItems(),
-        r = e.slice(t, n);
-    if (0 === r.length) return;
+        a = e.slice(t, n);
+    if (0 === a.length) return;
     _.A.loadHydratedAttempt(C(t, n));
-    let l = r.filter(e => null == i[e.id]),
-        a = l.filter(e => e.type === E.Mm.MESSAGE).map(e => ({
+    let r = a.filter(e => null == i[e.id]),
+        l = r.filter(e => e.type === E.Mm.MESSAGE).map(e => ({
             channel_id: e.data.channel_id,
             message_id: e.data.message_id
         })),
-        s = l.map(e => {
+        s = r.map(e => {
             if (e.type === E.Mm.MESSAGE) {
                 let t = [];
                 return e.data.message_context?.reply_message_id != null && t.push({
@@ -76,17 +76,17 @@ async function x(e, t, n) {
             }
             return []
         }).flat().filter(Boolean),
-        o = l.filter(e => e.type === E.Mm.ACTIVITY).map(e => ({
+        o = r.filter(e => e.type === E.Mm.ACTIVITY).map(e => ({
             user_id: e.data.user_id,
             content_id: e.data.content_id
         })),
-        d = l.filter(e => e.type === E.Mm.GENERATED_CANDIDATE).map(e => ({
+        d = r.filter(e => e.type === E.Mm.GENERATED_CANDIDATE).map(e => ({
             content_id: e.data.content_id,
             guild_id: e.data.guild_id,
             channel_id: e.data.channel_id
         }));
     await _.A.fetchHydrated(t, n, {
-        messageItems: [...a, ...s],
+        messageItems: [...l, ...s],
         activityItems: o,
         generatedCandidateItems: d
     })
@@ -150,10 +150,10 @@ function R(e) {
         activity: {
             id: e.id,
             author_id: e.data.user_id,
-            author_type: r.ContentInventoryAuthorType.USER,
+            author_type: a.ContentInventoryAuthorType.USER,
             traits: [],
             participants: [],
-            content_type: l.ContentInventoryEntryType.CUSTOM_STATUS,
+            content_type: r.ContentInventoryEntryType.CUSTOM_STATUS,
             extra: {
                 type: "custom_status_extra",
                 status: e.data.text ?? "",
@@ -171,8 +171,8 @@ function R(e) {
 function P(e, t, n) {
     let i = I.A.getReadTimestamp(e);
     null == i && (i = n?.[e]);
-    let r = I.A.getReadTimestamp(t);
-    return (null == r && (r = n?.[t]), null == i && null == r) ? 0 : null == i ? -1 : null == r ? 1 : r - i
+    let a = I.A.getReadTimestamp(t);
+    return (null == a && (a = n?.[t]), null == i && null == a) ? 0 : null == i ? -1 : null == a ? 1 : a - i
 }
 
 function D(e) {
@@ -190,7 +190,7 @@ function D(e) {
     return i < 0 ? [] : t.slice(0, i + 1)
 }
 
-function j(e) {
+function M(e) {
     let t, n;
     switch (e.data.kind) {
         case "message":
@@ -203,18 +203,18 @@ function j(e) {
             t = e.data.threadChannel.id;
             break;
         case "guildEvent":
-            n = a.Ay.getGuildScheduledEvent(e.data.eventId)?.guild_id;
+            n = l.Ay.getGuildScheduledEvent(e.data.eventId)?.guild_id;
             break;
         default:
             return !1
     }
     let i = c.A.getChannel(t);
     if (i?.nsfw) return !0;
-    let r = null != (n = i?.guild_id ?? n) ? u.A.getGuild(n) : null;
-    return r?.nsfwLevel === f.ftr.EXPLICIT || r?.nsfwLevel === f.ftr.AGE_RESTRICTED
+    let a = null != (n = i?.guild_id ?? n) ? u.A.getGuild(n) : null;
+    return a?.nsfwLevel === f.ftr.EXPLICIT || a?.nsfwLevel === f.ftr.AGE_RESTRICTED
 }
 
-function M(e) {
+function j(e) {
     switch (e.data.kind) {
         case "end":
             return "end";
@@ -229,7 +229,7 @@ function M(e) {
         case "guildEvent":
             return "guild_event";
         case "contentInventory":
-            if (e.data.content.content_type === l.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
+            if (e.data.content.content_type === r.ContentInventoryEntryType.CUSTOM_STATUS) return "hotwheels_custom_status";
             return "hotwheels_gaming_activity";
         case "recommendedGuilds":
             return "recommended_guilds";

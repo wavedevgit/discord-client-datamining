@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(503698),
-    l = n.n(r),
+var l = n(503698),
+    r = n.n(l),
     a = n(311907),
     s = n(397927),
     o = n(442433),
@@ -25,9 +25,9 @@ function C(e) {
     let {
         message: t,
         compact: n
-    } = e, r = (0, a.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
-    return null == r ? null : (0, i.jsx)(I, {
-        channel: r,
+    } = e, l = (0, a.bG)([c.A], () => c.A.getChannel(u.default.castMessageIdAsChannelId(t.id)));
+    return null == l ? null : (0, i.jsx)(I, {
+        channel: l,
         compact: n,
         isSystemMessage: (0, d.A)(t)
     })
@@ -35,13 +35,13 @@ function C(e) {
 
 function I(e) {
     var t;
-    let r, d, c, {
+    let l, d, c, {
             channel: u,
             compact: C,
             isSystemMessage: I
         } = e,
         E = (0, a.bG)([m.A], () => m.A.getCount(u.id)),
-        v = (t = u, r = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, a.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == r ? (0, i.jsxs)(i.Fragment, {
+        v = (t = u, l = (0, a.bG)([m.A], () => m.A.getMostRecentMessage(t.id)), d = (0, a.bG)([m.A], () => m.A.getCount(t.id)), c = (0, h.JO)(t), t.threadMetadata?.archived ? x.intl.string(x.t.ZTo4HS) : null == d || 0 === d ? x.intl.string(x.t.HYtNyE) : null == l ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("span", {
                 children: x.intl.string(x.t.ZTo4HS)
             }), (0, i.jsx)("span", {
@@ -50,7 +50,7 @@ function I(e) {
             })]
         }) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(p.A, {
-                message: r,
+                message: l,
                 channel: t
             }), (0, i.jsx)("span", {
                 className: f.vE,
@@ -60,7 +60,7 @@ function I(e) {
         b = null != E && E > 0;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
-            className: l()(f.GI, {
+            className: r()(f.GI, {
                 [f.E]: !C,
                 [f.E_]: I
             })
@@ -78,7 +78,7 @@ function I(e) {
                 (0, o.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("23074"), n.e("91448")]).then(n.bind(n, 44536));
+                    } = await Promise.all([n.e("94989"), n.e("91448")]).then(n.bind(n, 44536));
                     return t => (0, i.jsx)(e, {
                         channel: u,
                         ...t
@@ -86,7 +86,7 @@ function I(e) {
                 })
             },
             "aria-roledescription": x.intl.string(x.t["8ipxiY"]),
-            className: l()(f.kL, {
+            className: r()(f.kL, {
                 [f.og]: I
             }),
             children: (0, i.jsxs)(s.RDc, {

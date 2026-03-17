@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(49999),
-    a = n(985018),
+var a = n(397927),
+    r = n(49999),
+    l = n(985018),
     s = n(850517);
 
 function o(e) {
@@ -17,16 +17,16 @@ function o(e) {
         className: s.kL,
         children: [(0, i.jsx)("div", {
             className: s.Wn
-        }), (0, i.jsx)(r.Text, {
+        }), (0, i.jsx)(a.Text, {
             variant: "text-sm/normal",
             className: s.Qs,
-            children: a.intl.string(a.t.rdzeVP)
-        }), (0, i.jsx)(r.Button, {
+            children: l.intl.string(l.t.rdzeVP)
+        }), (0, i.jsx)(a.Button, {
             variant: "overlay-primary",
-            text: a.intl.string(a.t["NX+WJN"]),
+            text: l.intl.string(l.t["NX+WJN"]),
             fullWidth: !0,
             onClick: () => {
-                t(l.i.AUTO)
+                t(r.i.AUTO)
             }
         })]
     })

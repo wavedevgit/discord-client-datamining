@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(607399),
-    a = n(311907),
+    a = n(64700),
+    r = n(607399),
+    l = n(311907),
     s = n(397927),
     o = n(384904),
     d = n(9113),
@@ -31,20 +31,20 @@ var i = n(627968),
 function b(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([g.A], () => g.A.getGuild(t), [t]), b = (0, a.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, a.bG)([p.A], () => p.A.isSubscriptionFetching), P = (0, E.X)(), {
+    } = e, n = (0, l.bG)([g.A], () => g.A.getGuild(t), [t]), b = (0, l.bG)([_.A], () => _.A.isConnected()), O = (0, A.A)(t), L = (0, I.A)(t), R = (0, l.bG)([p.A], () => p.A.isSubscriptionFetching), P = (0, E.X)(), {
         shouldHideGuildPurchaseEntryPoints: D,
-        restrictionsLoading: j
-    } = (0, h.MH)(t), M = null == n || !P || R || j;
+        restrictionsLoading: M
+    } = (0, h.MH)(t), j = null == n || !P || R || M;
     (0, c.HU)({
         subsection: v.intl.string(v.t["KzCF/6"]),
         location: n?.name
-    }), (0, d.A)(l.Fr ? "role-subscriptions-overview" : void 0);
-    let w = b && (null == n || !(O || L) || D && !j);
-    if (r.useEffect(() => {
+    }), (0, d.A)(r.Fr ? "role-subscriptions-overview" : void 0);
+    let w = b && (null == n || !(O || L) || D && !M);
+    if (a.useEffect(() => {
             o.hP()
-        }, []), r.useEffect(() => {
-            w && !l.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
-        }, [t, w]), l.Fr && w) {
+        }, []), a.useEffect(() => {
+            w && !r.Fr && (0, u.B)(t, x.VV.ROLE_SUBSCRIPTIONS)
+        }, [t, w]), r.Fr && w) {
         let e = null == n ? T.b.NOT_GUILD_MEMBER : T.b.GUILD_NOT_ELIGIBLE;
         return (0, i.jsx)(T.k, {
             errorType: e
@@ -53,7 +53,7 @@ function b(e) {
     return (0, i.jsxs)("div", {
         className: y.kL,
         children: [(0, i.jsxs)(m.A, {
-            toolbar: (0, i.jsx)(r.Fragment, {}),
+            toolbar: (0, i.jsx)(a.Fragment, {}),
             className: y.jr,
             children: [(0, i.jsx)(m.A.Icon, {
                 icon: (0, s.kHD)(f.A),
@@ -69,7 +69,7 @@ function b(e) {
                 className: y.XG,
                 children: (0, i.jsx)("div", {
                     className: y.gT,
-                    children: M ? (0, i.jsx)(s.y$y, {}) : (0, i.jsx)(C.A, {
+                    children: j ? (0, i.jsx)(s.y$y, {}) : (0, i.jsx)(C.A, {
                         guild: n
                     })
                 })

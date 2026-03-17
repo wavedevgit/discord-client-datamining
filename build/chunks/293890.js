@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(73153),
-    a = n(298990),
+var a = n(397927),
+    r = n(73153),
+    l = n(298990),
     s = n(846293),
     o = n(684013),
     d = n(980142),
@@ -59,19 +59,19 @@ let I = new c.A("RPCCommandsOverlay"),
                         type: n,
                         pid: i
                     }
-                } = e, r = t.application.id;
-                if (null == r) throw new h.A({
+                } = e, a = t.application.id;
+                if (null == a) throw new h.A({
                     errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
-                let l = u.A.getApplicationActivity(r);
-                if (null == l || null == l.secrets || !(0, _.px)(n, l.party, l.secrets)) throw new h.A({
+                let r = u.A.getApplicationActivity(a);
+                if (null == r || null == r.secrets || !(0, _.px)(n, r.party, r.secrets)) throw new h.A({
                     errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
                 }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
                 let {
                     lock: s,
                     context: o
-                } = (0, g.d5)(i), c = (0, d.A)(l, A.A);
-                return (0, a.qf)(l, c, o).then(() => {
+                } = (0, g.d5)(i), c = (0, d.A)(r, A.A);
+                return (0, l.qf)(r, c, o).then(() => {
                     if (s(), c) throw new h.A({
                         errorCode: E.Lw6.NO_ELIGIBLE_ACTIVITY
                     }, "No eligible activity for application. Ensure user does have have privacy enabled.")
@@ -104,18 +104,18 @@ let I = new c.A("RPCCommandsOverlay"),
                         errorCode: E.Lw6.INVALID_INVITE
                     }, `Invalid invite id: ${i}`);
                     let {
-                        context: r,
-                        lock: a
+                        context: a,
+                        lock: l
                     } = (0, g.d5)(n);
                     return new Promise(e => {
-                        l.h.dispatch({
+                        r.h.dispatch({
                             type: "INVITE_MODAL_OPEN",
                             invite: t,
                             code: i,
-                            context: r,
+                            context: a,
                             resolve: e
                         })
-                    }).then(a)
+                    }).then(l)
                 })
             }
         },
@@ -129,9 +129,9 @@ let I = new c.A("RPCCommandsOverlay"),
                     args: {
                         pid: t
                     },
-                    socket: l
-                } = e, a = l.application.id;
-                if (null == a) throw new h.A({
+                    socket: r
+                } = e, l = r.application.id;
+                if (null == l) throw new h.A({
                     errorCode: E.Lw6.INVALID_COMMAND
                 }, "No application.");
                 let {
@@ -139,17 +139,17 @@ let I = new c.A("RPCCommandsOverlay"),
                     context: o
                 } = (0, g.d5)(t);
                 return new Promise(e => {
-                    (0, r.mMO)(async () => {
+                    (0, a.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("96531").then(n.bind(n, 880510));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            mediaEngineContext: a,
-                            subtitle: l.application.name ?? void 0
+                            mediaEngineContext: l,
+                            subtitle: r.application.name ?? void 0
                         })
                     }, {
-                        contextKey: o === E.BRT.POPOUT ? r.KX8 : r.SYi,
+                        contextKey: o === E.BRT.POPOUT ? a.KX8 : a.SYi,
                         onCloseCallback: () => {
                             s(), e()
                         }

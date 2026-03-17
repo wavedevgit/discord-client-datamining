@@ -4,30 +4,30 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(158954),
-    l = n(827734),
-    a = n(321365);
+var a = n(158954),
+    r = n(827734),
+    l = n(321365);
 
 function s(e) {
     let {
         imageSrc: t
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.kL,
+        className: l.kL,
         children: [(0, i.jsx)("div", {
-            className: a.j3,
+            className: l.j3,
             children: (0, i.jsx)("img", {
-                className: a.Su,
+                className: l.Su,
                 src: t,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: a.gm,
+            className: l.gm,
             children: (0, i.jsx)("div", {
-                className: a.WA,
-                children: (0, i.jsx)(r.j96, {
+                className: l.WA,
+                children: (0, i.jsx)(a.j96, {
                     size: "sm",
-                    color: l.A.colors.TEXT_BRAND
+                    color: r.A.colors.TEXT_BRAND
                 })
             })
         })]

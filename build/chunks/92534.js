@@ -3,9 +3,9 @@ n.d(t, {
     B: () => p
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(308368),
-    a = n(308528),
+    a = n(64700),
+    r = n(308368),
+    l = n(308528),
     s = n(442433),
     o = n(49229),
     d = n(956793),
@@ -19,13 +19,13 @@ var i = n(627968),
 
 function p(e) {
     return {
-        handlePrimaryAction: r.useCallback(t => {
+        handlePrimaryAction: a.useCallback(t => {
             switch (t.type) {
                 case u.c.OPEN_DIRECT_MESSAGE:
                     if (null == t.userId) return;
                     (async () => {
                         try {
-                            let e = await a.A.getOrEnsurePrivateChannel(t.userId);
+                            let e = await l.A.getOrEnsurePrivateChannel(t.userId);
                             d.default.selectPrivateChannel(e)
                         } catch {}
                     })();
@@ -85,7 +85,7 @@ function p(e) {
                     break;
                 case u.c.SEND_ACTIVITY_INVITE:
                     if (null == t.userId || null == t.activity) return;
-                    l.A.sendActivityInviteUser({
+                    r.A.sendActivityInviteUser({
                         type: _.xL.JOIN,
                         userId: t.userId,
                         activity: t.activity,
@@ -94,7 +94,7 @@ function p(e) {
                     break;
                 case u.c.ASK_TO_JOIN:
                     if (null == t.userId || null == t.activity) return;
-                    l.A.sendActivityInviteUser({
+                    r.A.sendActivityInviteUser({
                         type: _.xL.JOIN_REQUEST,
                         userId: t.userId,
                         activity: t.activity,
@@ -107,7 +107,7 @@ function p(e) {
                         n = t.userId;
                     (async () => {
                         try {
-                            let t = await a.A.getOrEnsurePrivateChannel(n);
+                            let t = await l.A.getOrEnsurePrivateChannel(n);
                             d.default.selectPrivateChannel(t);
                             let i = h.A.getChannel(t);
                             if (null == i) return;
@@ -140,7 +140,7 @@ function p(e) {
                     t.type
             }
         }, [e]),
-        handleContextMenu: r.useCallback(e => {
+        handleContextMenu: a.useCallback(e => {
             switch (e.type) {
                 case u.K.FRIEND_ROW:
                     if (null == e.user) return;
@@ -228,9 +228,9 @@ function p(e) {
                     let t = e.guild?.id ?? null;
                     (0, s.L3)(e.event, async () => {
                         let {
-                            default: r
+                            default: a
                         } = await Promise.all([n.e("97262"), n.e("32418"), n.e("47969")]).then(n.bind(n, 668569));
-                        return n => (0, i.jsx)(r, {
+                        return n => (0, i.jsx)(a, {
                             ...n,
                             user: e.user,
                             guildId: t ?? void 0,

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => C
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(964892),
-    a = n(208756),
+    a = n(64700),
+    r = n(964892),
+    l = n(208756),
     s = n(135564),
     o = n(916845),
     d = n(627330),
@@ -29,7 +29,7 @@ function C(e) {
         numOrbs: T
     } = e, {
         analyticsLocations: N
-    } = (0, A.Ay)(u.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION), S = r.useCallback(() => {
+    } = (0, A.Ay)(u.A.PREMIUM_MARKETING_NITRO_HOME_ORBS_SECTION), S = a.useCallback(() => {
         n(p.i.TAKE_ACTION), (0, h.A)({
             subscriptionTier: m.pe.TIER_2,
             analyticsLocations: N,
@@ -42,7 +42,7 @@ function C(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             children: C
-        }), (0, i.jsx)(l.x, {
+        }), (0, i.jsx)(r.x, {
             targetElementRef: t,
             onRequestClose: () => n(p.i.USER_DISMISS),
             alignmentStrategy: "edge",
@@ -72,7 +72,7 @@ function C(e) {
                         variant: "expressive"
                     },
                     className: f.Q
-                }), (0, i.jsx)(a.Z, {
+                }), (0, i.jsx)(l.Z, {
                     actions: [{
                         text: I.intl.string(I.t.pj0XBN),
                         variant: "primary",

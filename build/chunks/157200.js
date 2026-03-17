@@ -24,7 +24,7 @@ let p = t => {
             icon: p,
             prioritizedCurrency: g,
             onClickAnalytics: C
-        } = t, h = (0, a.Mk)(), I = h?.tab, f = (0, s.uM)(), k = (0, A.X)(e, g), v = (0, c.ql)(e, l.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
+        } = t, h = (0, a.Mk)(), f = h?.tab, I = (0, s.uM)(), k = (0, A.X)(e, g), v = (0, c.ql)(e, l.A.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, C);
         return null != o || null != p ? (0, i.jsx)(n.K0, {
             variant: "primary",
             "aria-label": x.intl.string(x.t.SKNnqq),
@@ -34,7 +34,7 @@ let p = t => {
             }
         }) : k ? (0, i.jsx)(s.R9, {
             newValue: {
-                pageCategory: I === m.G2.HOME ? void 0 : f?.pageCategory
+                pageCategory: f === m.G2.HOME ? void 0 : I?.pageCategory
             },
             children: (0, i.jsx)(d.A, {
                 primary: !0,

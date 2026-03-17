@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(989349),
-    l = n.n(r),
+var l = n(989349),
+    r = n.n(l),
     a = n(827734),
     s = n(397927),
     o = n(393033),
@@ -51,7 +51,7 @@ function h(e) {
     let {
         ctaType: t,
         classificationId: n,
-        learnMoreLink: r
+        learnMoreLink: l
     } = e;
     switch (t) {
         case d.xw.POLICY_VIOLATION_DETAIL:
@@ -60,9 +60,9 @@ function h(e) {
                 classificationId: n
             });
         case d.xw.LEARN_MORE_LINK:
-            if (null == r) return null;
+            if (null == l) return null;
             return (0, i.jsx)(m, {
-                learnMoreLink: r
+                learnMoreLink: l
             });
         default:
             return null
@@ -91,12 +91,12 @@ function g(e) {
     let {
         children: t,
         theme: n
-    } = e, r = {
+    } = e, l = {
         default: u._y,
         danger: u.yk
     };
     return (0, i.jsx)("div", {
-        className: r[n ?? "default"],
+        className: l[n ?? "default"],
         children: t
     })
 }
@@ -122,7 +122,7 @@ function A(e) {
                 children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     children: c.intl.format(c.t.eevFb6, {
-                        daysAgo: (t = n.timestamp ?? 0, l()().diff(l().unix(t), "days"))
+                        daysAgo: (t = n.timestamp ?? 0, r()().diff(r().unix(t), "days"))
                     })
                 })
             }), (0, i.jsx)("div", {

@@ -35,16 +35,16 @@ let f = e => (0, n.jsx)("div", {
             products: s,
             tab: r,
             totalCards: l
-        } = e, c = (0, a.uM)(), d = (0, o.W)("HeroBlockCards");
+        } = e, c = (0, o.W)("HeroBlockCards");
         if (t) return (0, n.jsx)(n.Fragment, {
             children: [...Array(l ?? 4)].map((e, t) => (0, n.jsx)(m.A, {}, t))
         });
-        let u = null != l ? s.slice(0, l) : s;
+        let d = null != l ? s.slice(0, l) : s;
         return (0, n.jsx)(g.v3.Provider, {
             value: {
                 flattenProductVariants: !1
             },
-            children: u.map((e, t) => {
+            children: d.map((e, t) => {
                 let s = i.A.getCategoryForProduct(e.skuId);
                 return null == e || null == s ? null : (0, n.jsx)(a.R9, {
                     newValue: {
@@ -54,8 +54,7 @@ let f = e => (0, n.jsx)("div", {
                     },
                     children: (0, n.jsx)(_.A, {
                         skuId: e?.skuId,
-                        prioritizedCurrency: r === h.G2.ORBS ? g.Hi.ORBS : d ? g.Hi.FIAT : void 0,
-                        onClickAnalytics: (0, g.UU)(e, r, c)
+                        prioritizedCurrency: r === h.G2.ORBS ? g.Hi.ORBS : c ? g.Hi.FIAT : void 0
                     }, e.skuId)
                 }, e.skuId)
             })

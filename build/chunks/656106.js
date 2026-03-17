@@ -8,13 +8,13 @@ a.d(t, {
 }), a(323874), a(14289), a(35956);
 var n = a(976860),
     i = a(767599),
-    s = a(310419),
-    l = a(652215);
+    l = a(310419),
+    s = a(652215);
 let r = () => {
         let e = {
-            previousView: (0, s.R4)()
+            previousView: (0, l.R4)()
         };
-        (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS, {
+        (0, n.pX)(s.BVt.GLOBAL_DISCOVERY_APPS, {
             state: e
         })
     },
@@ -22,9 +22,9 @@ let r = () => {
         let {
             categoryId: t
         } = e, a = {
-            previousView: (0, s.R4)()
+            previousView: (0, l.R4)()
         };
-        (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
+        (0, n.pX)(s.BVt.GLOBAL_DISCOVERY_APPS_CATEGORY(t), {
             state: a
         })
     },
@@ -32,9 +32,9 @@ let r = () => {
         let {
             applicationId: t
         } = e, a = {
-            previousView: (0, s.R4)()
+            previousView: (0, l.R4)()
         };
-        (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
+        (0, n.pX)(s.BVt.GLOBAL_DISCOVERY_APPS_PROFILE(t), {
             state: a
         })
     },
@@ -44,9 +44,9 @@ let r = () => {
             categoryId: t,
             page: a
         } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, r = {
-            previousView: (0, s.R4)()
+            previousView: (0, l.R4)()
         }, o = new URLSearchParams;
-        null != e && "" !== e && o.set("q", e), null != t && t !== i.lj && o.set("category_id", t.toString()), null != a && a > 1 && o.set("page", a.toString()), (0, n.pX)(l.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
+        null != e && "" !== e && o.set("q", e), null != t && t !== i.lj && o.set("category_id", t.toString()), null != a && a > 1 && o.set("page", a.toString()), (0, n.pX)(s.BVt.GLOBAL_DISCOVERY_APPS_SEARCH, {
             state: r,
             search: o.toString()
         })

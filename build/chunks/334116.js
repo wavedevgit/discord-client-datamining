@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    r = n(73153),
-    l = n(391973),
-    a = n(272355),
+    a = n(73153),
+    r = n(391973),
+    l = n(272355),
     s = n(958005),
     o = n(268218),
     d = n(555528),
@@ -38,13 +38,13 @@ let h = (0, o.Fe)({
         webpackId: 860051,
         name: "PopoutWindowActivity"
     });
-class E extends a.A {
+class E extends l.A {
     _observer = null;
     _initialize() {
-        r.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), r.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), r.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), r.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
+        a.h.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
     }
     _terminate() {
-        r.h.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), r.h.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), r.h.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), r.h.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
+        a.h.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), a.h.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), a.h.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), a.h.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
     }
     handleOpenChannelCallPopout(e) {
         let {
@@ -65,8 +65,8 @@ class E extends a.A {
         let {
             channelId: t,
             participantId: n
-        } = e, r = (0, s.A)(t, n);
-        c.open(r, e => (0, i.jsx)(_, {
+        } = e, a = (0, s.A)(t, n);
+        c.open(a, e => (0, i.jsx)(_, {
             windowKey: e,
             channelId: t,
             participantId: n
@@ -102,7 +102,7 @@ class E extends a.A {
         })
     }
     handleOpenActivityPopout() {
-        (0, l.Vz)(A.G, d.A.getDefaultLayout(A.G, 4), 4), c.open(u.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(p, {
+        (0, r.Vz)(A.G, d.A.getDefaultLayout(A.G, 4), 4), c.open(u.MLl.ACTIVITY_POPOUT, e => (0, i.jsx)(p, {
             windowKey: e
         }), {
             defaultWidth: 854,

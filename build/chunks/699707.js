@@ -49,8 +49,8 @@ function T(e) {
         V = h.default.getId(),
         [B, H] = s.useState(null),
         F = (0, c.A)(B),
-        [K, Y] = s.useState(!0),
-        [W, z] = s.useState(!1),
+        [K, W] = s.useState(!0),
+        [Y, z] = s.useState(!1),
         q = L.type === E.lp.ACTIVITY,
         X = (0, d.A)(q ? L.applicationId : void 0),
         Q = !q && null != L.streamId,
@@ -72,7 +72,7 @@ function T(e) {
     let ed = Math.max(0, 72 - (U - eo) / 2);
     s.useEffect(() => {
         let e = setTimeout(() => {
-            Y(!1)
+            W(!1)
         }, 250);
         return () => {
             clearTimeout(e)
@@ -132,7 +132,7 @@ function T(e) {
             }
         }, eh),
         ef = s.useCallback(e => {
-            H(e), Y(!1)
+            H(e), W(!1)
         }, []),
         ex = $ ? [] : (0, f.Cf)(v, L, V),
         {
@@ -217,7 +217,7 @@ function T(e) {
                     selectedParticipantId: L.id,
                     inCall: R,
                     popoutType: j,
-                    paused: W || !M
+                    paused: Y || !M
                 })
             })]
         }), ex.length > 0 ? (0, i.jsx)(_.A, {

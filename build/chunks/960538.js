@@ -3,9 +3,9 @@ n.d(t, {
     t: () => v
 }), n(938796);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(111956),
     o = n.n(s),
     d = n(665260),
@@ -22,19 +22,19 @@ var i = n(627968),
     C = n(985018),
     I = n(233080),
     E = n(710504);
-class v extends r.Component {
+class v extends l.Component {
     state = {
         isReactionPickerActive: !1
     };
-    ref = r.createRef();
+    ref = l.createRef();
     onAddReaction = (e, t) => {
         if (null == e) return;
         let {
             channel: n,
             message: i,
-            isForumToolbar: r
+            isForumToolbar: l
         } = this.props;
-        (0, p.BB)(n.id, i.id, (0, g.jq)(e), r ? p.qN.FORUM_TOOLBAR : p.qN.MESSAGE_INLINE_BUTTON, {
+        (0, p.BB)(n.id, i.id, (0, g.jq)(e), l ? p.qN.FORUM_TOOLBAR : p.qN.MESSAGE_INLINE_BUTTON, {
             burst: t
         })
     };
@@ -51,22 +51,22 @@ class v extends r.Component {
             closePopout: t
         } = e, {
             channel: n,
-            message: r
-        } = this.props, l = (0, i.jsx)(A.C, {
+            message: l
+        } = this.props, r = (0, i.jsx)(A.C, {
             closePopout: t,
             channel: n,
             onSelectEmoji: e => {
                 let {
                     emoji: n,
                     willClose: i,
-                    isBurst: r
+                    isBurst: l
                 } = e;
-                this.onAddReaction(n, r), i && (r ? o()(t, 150)() : t())
+                this.onAddReaction(n, l), i && (l ? o()(t, 150)() : t())
             },
             analyticsOverride: {
                 openPopoutType: "message_reaction_emoji_picker"
             },
-            messageId: r.id
+            messageId: l.id
         });
         return (0, i.jsx)(c.M.Consumer, {
             children: e => {
@@ -75,8 +75,8 @@ class v extends r.Component {
                 } = e;
                 return t ? (0, i.jsx)(_.lGe, {
                     "aria-label": C.intl.string(C.t["7Xqzdj"]),
-                    children: l
-                }) : l
+                    children: r
+                }) : r
             }
         })
     };
@@ -85,13 +85,13 @@ class v extends r.Component {
             message: e,
             className: t,
             children: n,
-            useChatFontScaling: r,
-            tabIndex: l = 0
+            useChatFontScaling: l,
+            tabIndex: r = 0
         } = this.props, {
             isReactionPickerActive: s
         } = this.state;
         if (e.state === x.cmJ.SENDING || (0, d.Lt)(e.flags, x.pr7.EPHEMERAL)) return null;
-        let o = r ? E : I,
+        let o = l ? E : I,
             c = {
                 size: "sm",
                 color: "currentColor",
@@ -106,17 +106,17 @@ class v extends r.Component {
             onRequestClose: this.handleReactionPickerToggle,
             renderPopout: this.renderReactionPopout,
             position: "right",
-            children: (e, r) => {
+            children: (e, l) => {
                 let {
                     isShown: s
-                } = r;
+                } = l;
                 return (0, i.jsx)(u.m_, {
                     asContainer: !0,
                     text: C.intl.string(C.t.lfIHs4),
                     children: (0, i.jsxs)(_.DUT, {
                         ...e,
                         innerRef: this.ref,
-                        tabIndex: l,
+                        tabIndex: r,
                         onClick: e => {
                             this.handleAddReactionClick(e)
                         },

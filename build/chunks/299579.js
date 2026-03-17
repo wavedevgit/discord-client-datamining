@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(735438),
     o = n.n(s),
     d = n(397927),
@@ -50,7 +50,7 @@ function O(e) {
     let {
         loadId: t,
         onGuildCardSeen: n,
-        onGuildCardClick: l
+        onGuildCardClick: r
     } = e, {
         guildIds: o,
         loading: h,
@@ -59,20 +59,20 @@ function O(e) {
         searchCategoryId: L
     } = (0, p.I)({
         loadId: t
-    }), R = 0 === o.length && !h, P = r.useContext(u.AnalyticsContext), [D, j] = r.useState((0, g.YP)()), [M, w] = r.useState(!0), U = r.useRef(M), [G, k] = r.useState(3), V = r.useRef(G), B = r.useRef(null), H = r.useCallback(e => {
+    }), R = 0 === o.length && !h, P = a.useContext(u.AnalyticsContext), [D, M] = a.useState((0, g.YP)()), [j, w] = a.useState(!0), U = a.useRef(j), [G, k] = a.useState(3), V = a.useRef(G), B = a.useRef(null), H = a.useCallback(e => {
         null == e || R || h || 336 * (o.length / G) <= e.height && O()
-    }, [R, h, o.length, G, O]), F = r.useCallback(e => {
+    }, [R, h, o.length, G, O]), F = a.useCallback(e => {
         let t = e.contentRect;
         if (null == t) return;
         let n = t.width;
         n < 1024 && U.current ? (U.current = !1, w(!1)) : n > 1024 && !U.current && (U.current = !0, w(!0));
         let i = 1;
-        for (n -= 450 * !!M, n -= 280; n > 0;) n -= 264, i += 1;
+        for (n -= 450 * !!j, n -= 280; n > 0;) n -= 264, i += 1;
         i !== V.current && (V.current = i, k(i)), H(t)
-    }, [M, H]), Y = (0, c.w)(F, [M, H]);
-    r.useEffect(() => {
-        j((0, g.YP)())
-    }, [N]), r.useEffect(() => {
+    }, [j, H]), Y = (0, c.w)(F, [j, H]);
+    a.useEffect(() => {
+        M((0, g.YP)())
+    }, [N]), a.useEffect(() => {
         b({
             loadId: t,
             searchId: D,
@@ -82,9 +82,9 @@ function O(e) {
             categoryId: L
         })
     }, [P, o, t, L, D, N]);
-    let W = r.useCallback(e => n(e, L), [n, L]),
-        q = r.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
-        z = r.useCallback((e, n, r) => {
+    let W = a.useCallback(e => n(e, L), [n, L]),
+        K = a.useMemo(() => h ? [o.length, 0] : [o.length], [o.length, h]),
+        q = a.useCallback((e, n, a) => {
             switch (e) {
                 case 0:
                     return (0, i.jsxs)("div", {
@@ -92,10 +92,10 @@ function O(e) {
                             paddingLeft: n.left,
                             width: n.width - 16
                         },
-                        className: a()(S.R_, {
-                            [S.Ze]: !M
+                        className: l()(S.R_, {
+                            [S.Ze]: !j
                         }),
-                        children: [!M && (0, i.jsxs)("div", {
+                        children: [!j && (0, i.jsxs)("div", {
                             className: S.eW,
                             children: [(0, i.jsx)(I.A, {
                                 loadId: t
@@ -105,27 +105,27 @@ function O(e) {
                         }), R && (0, i.jsx)(f.A, {
                             loadId: t
                         })]
-                    }, r);
+                    }, a);
                 case 1:
                     return (0, i.jsx)(d.y$y, {
-                        className: a()(S.u1, {
-                            [S.qx]: M
+                        className: l()(S.u1, {
+                            [S.qx]: j
                         })
-                    }, r)
+                    }, a)
             }
-        }, [R, M, t]),
-        K = r.useCallback(e => {
+        }, [R, j, t]),
+        z = a.useCallback(e => {
             switch (e) {
                 case 0:
-                    let t = M ? 16 : 68;
+                    let t = j ? 16 : 68;
                     return R ? t + 448 : t;
                 case 1:
                     return 120;
                 default:
                     throw Error(`[getSectionHeight] Failed for section: ${e}`)
             }
-        }, [R, M]),
-        $ = r.useCallback((e, t) => {
+        }, [R, j]),
+        $ = a.useCallback((e, t) => {
             switch (e) {
                 case 0:
                     return o[t];
@@ -135,7 +135,7 @@ function O(e) {
                     throw Error(`[getItemKey] Failed for section: ${e}`)
             }
         }, [o]),
-        Q = r.useCallback(e => {
+        Q = a.useCallback(e => {
             switch (e) {
                 case 0:
                     return 320;
@@ -145,14 +145,14 @@ function O(e) {
                     throw Error(`[getItemHeight] Failed for section: ${e}`)
             }
         }, []),
-        X = r.useCallback(async (e, t, n, i) => {
-            await l(e, t, n, i);
-            let r = B.current?.getScrollerState()?.scrollTop;
-            null != r && m.A.setState({
-                scrollPosition: r
+        X = a.useCallback(async (e, t, n, i) => {
+            await r(e, t, n, i);
+            let a = B.current?.getScrollerState()?.scrollTop;
+            null != a && m.A.setState({
+                scrollPosition: a
             })
-        }, [l]),
-        Z = r.useCallback((e, t, n, r) => {
+        }, [r]),
+        Z = a.useCallback((e, t, n, a) => {
             if (0 !== e) return null;
             {
                 let e = o[t];
@@ -163,10 +163,10 @@ function O(e) {
                         onClick: async e => await X(e, t, L, y),
                         onView: e => W(e)
                     })
-                }, r)
+                }, a)
             }
         }, [o, X, W, L]);
-    r.useEffect(() => {
+    a.useEffect(() => {
         let e = B.current;
         return () => {
             let t = e?.getScrollerState()?.scrollTop;
@@ -174,7 +174,7 @@ function O(e) {
                 scrollPosition: t
             })
         }
-    }, []), r.useLayoutEffect(() => {
+    }, []), a.useLayoutEffect(() => {
         let e = m.A.getField("scrollPosition");
         null != e && setTimeout(() => {
             B.current?.scrollTo({
@@ -188,7 +188,7 @@ function O(e) {
             })
         })
     }, []);
-    let J = r.useMemo(() => (0, s.debounce)(() => {
+    let J = a.useMemo(() => (0, s.debounce)(() => {
             let e = B.current?.getScrollerState();
             if (null == e) return;
             let t = e.scrollTop + e.offsetHeight;
@@ -196,25 +196,25 @@ function O(e) {
         }, 100, {
             leading: !0
         }), [O]),
-        ee = M ? x : v;
+        ee = j ? x : v;
     return (0, i.jsx)("div", {
         className: S.kL,
         ref: Y,
         children: (0, i.jsx)(d.a0_, {
             ref: B,
             className: S.kf,
-            sections: q,
+            sections: K,
             columns: G,
             itemGutter: 16,
             padding: ee,
             renderItem: Z,
-            renderSection: z,
-            getSectionHeight: K,
+            renderSection: q,
+            getSectionHeight: z,
             getItemKey: $,
             getItemHeight: Q,
             chunkSize: 24,
             onScroll: J,
-            renderAccessory: e => M ? (0, i.jsx)("div", {
+            renderAccessory: e => j ? (0, i.jsx)("div", {
                 className: S.pz,
                 style: {
                     height: e

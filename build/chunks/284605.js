@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(417597),
-    l = n(732955),
+var l = n(417597),
+    r = n(732955),
     a = n(492749),
     s = n(827186),
     o = n(465932),
@@ -35,7 +35,7 @@ function I(e) {
         thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), D = (0, _.BB)(L), {
+    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), D = (0, g.z)(t), M = (0, _.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: w
     } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
@@ -51,13 +51,13 @@ function I(e) {
         G = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: D,
+            showEditProduct: M,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: D ? () => {
+            onEditProduct: M ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
@@ -78,10 +78,10 @@ function I(e) {
         description: t.description,
         formattedPrice: O,
         role: R,
-        ctaComponent: (0, i.jsx)(l.$nd, {
+        ctaComponent: (0, i.jsx)(r.$nd, {
             ...k
         }),
-        productType: M,
+        productType: D,
         shouldShowFullDescriptionButton: E,
         onShowFullDescription: U,
         onTapCard: U,

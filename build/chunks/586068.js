@@ -1,13 +1,13 @@
 /** chunk id: 586068 params = (module,exports,require) **/
 n.d(t, {
     KJ: () => L,
-    N_: () => v,
+    N_: () => y,
     OS: () => T,
-    Y9: () => y,
+    Y9: () => R,
     c3: () => b,
     lg: () => O,
     nG: () => N,
-    vw: () => R
+    vw: () => U
 });
 var i = n(627968),
     r = n(64700),
@@ -495,7 +495,7 @@ class O extends r.Component {
         })
     }
 }
-class y extends r.Component {
+class R extends r.Component {
     render() {
         return (0, i.jsx)("div", {
             className: m.__invalid_resultDefault,
@@ -509,7 +509,7 @@ class y extends r.Component {
         })
     }
 }
-class v extends r.Component {
+class y extends r.Component {
     renderContent() {
         let e, t, {
                 link: n,
@@ -558,7 +558,7 @@ class v extends r.Component {
         })
     }
 }
-class R extends r.Component {
+class U extends r.Component {
     renderContent() {
         let e, t, {
             navigationRecord: n,

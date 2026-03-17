@@ -22,17 +22,17 @@ function T(e) {
         textColor: r,
         isApplicationHome: c,
         enablePremiumBrandRefresh: T
-    } = e, I = (0, a.bG)([d.A], () => d.A.affinities.slice(0, 3).reverse()), p = I.map((e, t) => (0, i.jsx)(A, {
+    } = e, I = (0, a.bG)([d.A], () => d.A.affinities.slice(0, 3).reverse()), N = I.map((e, t) => (0, i.jsx)(A, {
         affinity: e,
         applyMask: t !== I.length - 1,
         size: T ? u._3.SIZE_24 : u._3.SIZE_32
-    }, e.id)), N = e => null != e.globalName ? e.globalName : e.username, m = l.useMemo(() => 3 === I.length ? _.intl.formatToPlainString(_.t.c7ETJH, {
-        username: N(I[2])
+    }, e.id)), p = e => null != e.globalName ? e.globalName : e.username, m = l.useMemo(() => 3 === I.length ? _.intl.formatToPlainString(_.t.c7ETJH, {
+        username: p(I[2])
     }) : 2 === I.length ? _.intl.formatToPlainString(_.t["st8Rh/"], {
-        username: N(I[1]),
-        otherUsername: N(I[0])
+        username: p(I[1]),
+        otherUsername: p(I[0])
     }) : 1 === I.length ? _.intl.formatToPlainString(_.t.dpjXPL, {
-        username: N(I[0])
+        username: p(I[0])
     }) : "", [I]);
     return 0 === I.length ? null : (0, i.jsxs)("div", {
         className: s()(T ? E.bD : E.kL, n, {
@@ -40,7 +40,7 @@ function T(e) {
         }),
         children: [(0, i.jsx)("div", {
             className: E.zc,
-            children: p
+            children: N
         }), (0, i.jsx)("div", {
             className: E.FS,
             children: (0, i.jsx)(function() {

@@ -1,10 +1,10 @@
 /** chunk id: 13403 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => D
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(554146),
     s = n(342494),
     o = n(397927),
@@ -33,9 +33,9 @@ var i = n(627968),
     R = n(49999),
     P = n(985018);
 
-function M(e) {
+function D(e) {
     var t, n;
-    let M, D, {
+    let D, M, {
             analyticsLocations: w,
             application: O,
             channel: k,
@@ -72,24 +72,24 @@ function M(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = O.id, n = F.author.id, M = (0, f.d)(t), D = (0, l.bG)([m.A, C.A], () => {
+        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: D?.id ?? void 0,
+                applicationId: M?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
             }),
-            launchableAppId: M
+            launchableAppId: D
         }),
         X = (0, y.A)({
             application: O,
             analyticsLocations: w
         }),
-        Z = r.useMemo(() => {
+        Z = l.useMemo(() => {
             if (null != X) return {
                 label: P.intl.string(P.t["jaYS/h"]),
                 icon: o.hpF,
@@ -98,20 +98,20 @@ function M(e) {
             }
         }, [X]),
         $ = (0, p.F)(O),
-        ee = r.useMemo(() => null != K ? K : null != $ && q ? $ : void 0, [q, K, $]),
+        ee = l.useMemo(() => null != K ? K : null != $ && q ? $ : void 0, [q, K, $]),
         et = c.A.useConfig({
             location: "RichPresenceGameActivityInviteEmbed"
         }),
         {
             canStartAuthorization: en,
             hasAlreadyLinked: ei,
-            startAuthorization: er
+            startAuthorization: el
         } = (0, _.RD)(O),
-        el = (0, u.z)(er, ei),
+        er = (0, u.z)(el, ei),
         ea = !(0, T.A)(W, F, O.id),
         es = (0, b.n$)(z, F.activity?.type, ea),
-        eo = r.useRef(null),
-        ed = (0, l.bG)([I.A], () => I.A.getMessages(k.id)),
+        eo = l.useRef(null),
+        ed = (0, r.bG)([I.A], () => I.A.getMessages(k.id)),
         ec = () => {
             let e = [];
             return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
@@ -161,7 +161,7 @@ function M(e) {
         presenceActivity: W,
         analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: el,
+        startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
@@ -185,7 +185,7 @@ function M(e) {
         analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: el,
+        startAuthorization: er,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

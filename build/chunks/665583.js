@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(681154),
-    l = n(900062),
-    a = n(470881),
+var a = n(681154),
+    r = n(900062),
+    l = n(470881),
     s = n(497302),
     o = n(670861);
 
@@ -27,13 +27,13 @@ function d(e) {
             });
         case "contentInventory":
             switch (t.data.content.content_type) {
-                case r.ContentInventoryEntryType.CUSTOM_STATUS:
-                    return (0, i.jsx)(l.A, {
+                case a.ContentInventoryEntryType.CUSTOM_STATUS:
+                    return (0, i.jsx)(r.A, {
                         item: t
                     });
-                case r.ContentInventoryEntryType.PLAYED_GAME:
-                case r.ContentInventoryEntryType.TOP_GAME:
-                    return (0, i.jsx)(a.A, {
+                case a.ContentInventoryEntryType.PLAYED_GAME:
+                case a.ContentInventoryEntryType.TOP_GAME:
+                    return (0, i.jsx)(l.A, {
                         item: t
                     });
                 default:

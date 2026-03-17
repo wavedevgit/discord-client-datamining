@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(735438),
     o = n(421380),
     d = n(397927),
@@ -19,7 +19,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         let {
             guild: t,
             title: n,
-            message: l,
+            message: r,
             image: s,
             type: g,
             imageStyles: p,
@@ -34,7 +34,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             centerText: v,
             className: y
         } = e;
-        r.useEffect(() => {
+        a.useEffect(() => {
             m(A.HAw.CHANNEL_NOTICE_VIEWED, {
                 notice_type: g,
                 guild_id: t.id
@@ -60,7 +60,7 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
         "function" == typeof n ? O = n() : null != n && (O = (0, i.jsx)(d.Text, {
             variant: "text-md/medium",
             color: "text-strong",
-            className: a()(_.DD, {
+            className: l()(_.DD, {
                 [_.vG]: null == s
             }, {
                 [_.gX]: v
@@ -68,17 +68,17 @@ let m = (0, s.debounce)(c.Ay.trackWithMetadata, 500),
             children: n
         }));
         let L = null;
-        "function" == typeof l ? L = l() : null != l && (L = (0, i.jsx)(d.Text, {
-            className: a()({
+        "function" == typeof r ? L = r() : null != r && (L = (0, i.jsx)(d.Text, {
+            className: l()({
                 [_.gX]: v
             }),
             variant: "text-sm/normal",
             color: "text-muted",
-            children: l
+            children: r
         }));
         let R = null != E ? `${E}px` : "16px";
         return (0, i.jsxs)("div", {
-            className: a()(_.kL, y),
+            className: l()(_.kL, y),
             children: [!0 === C ? null : (0, i.jsx)(d.DUT, {
                 onClick: () => {
                     c.Ay.trackWithMetadata(A.HAw.CHANNEL_NOTICE_CLOSED, {

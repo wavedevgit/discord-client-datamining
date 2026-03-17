@@ -46,7 +46,7 @@ var V = n(652215),
     H = n(985018),
     F = n(728444),
     K = n(834201);
-class Y extends U.Ay {
+class W extends U.Ay {
     channelItemRef = s.createRef();
     state = {
         shouldShowGuildVerificationPopout: !1
@@ -253,7 +253,7 @@ class Y extends U.Ay {
         return A && (N = o(N)), h && (N = l(a(N))), N
     }
 }
-let W = (0, A.a)((0, m.F)(Y));
+let Y = (0, A.a)((0, m.F)(W));
 
 function z(e) {
     let {
@@ -289,7 +289,7 @@ function z(e) {
         needSubscriptionToAccess: _,
         enableConnectedUserLimit: C || n.userLimit > 0 && n.userLimit < V.RCc
     }), j = e.connected && null == E;
-    return (0, i.jsx)(W, {
+    return (0, i.jsx)(Y, {
         categoryCollapsed: h,
         connectAction: A,
         numAudience: p,

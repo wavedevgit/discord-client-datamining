@@ -4,15 +4,15 @@ a.d(t, {
 });
 var n = a(627968),
     i = a(64700),
-    s = a(311907),
-    l = a(292455),
+    l = a(311907),
+    s = a(292455),
     r = a(701508),
     o = a(979590),
     c = a(783531),
     d = a(620140),
     u = a(38181),
-    h = a(111737),
-    m = a(573),
+    m = a(111737),
+    h = a(573),
     p = a(401186);
 let _ = function(e) {
     let {
@@ -23,22 +23,22 @@ let _ = function(e) {
         g.current?.scrollTo({
             to: 0
         })
-    }, []), A = (0, s.bG)([u.A], () => u.A.getCategories()), C = i.useMemo(() => A.find(e => e.id === t), [A, t]), b = i.useMemo(() => null != C ? (0, d.C)(C) : "", [C]);
+    }, []), A = (0, l.bG)([u.A], () => u.A.getCategories()), f = i.useMemo(() => A.find(e => e.id === t), [A, t]), b = i.useMemo(() => null != f ? (0, d.C)(f) : "", [f]);
     return (0, n.jsxs)(c.A, {
         onScroll: _,
         ref: g,
         children: [(0, n.jsx)(r.A, {
-            title: C?.name ?? "",
+            title: f?.name ?? "",
             description: b,
-            children: (0, n.jsx)(l.A, {})
+            children: (0, n.jsx)(s.A, {})
         }), (0, n.jsx)(o.A, {
-            children: null == C ? (0, n.jsx)("div", {
+            children: null == f ? (0, n.jsx)("div", {
                 className: p.U,
-                children: (0, n.jsx)(h.A, {
+                children: (0, n.jsx)(m.A, {
                     className: p.z
                 })
-            }) : (0, n.jsx)(m.A, {
-                categoryId: C.id,
+            }) : (0, n.jsx)(h.A, {
+                categoryId: f.id,
                 onSelectApplication: a,
                 resetScroll: x
             })

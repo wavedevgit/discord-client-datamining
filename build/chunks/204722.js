@@ -1,7 +1,7 @@
 /** chunk id: 204722 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => W,
+    W: () => Y,
     f: () => z
 });
 var i = n(627968),
@@ -46,9 +46,9 @@ var i = n(627968),
     H = n(654487),
     F = n(985018),
     K = n(294726),
-    Y = n(275540);
+    W = n(275540);
 
-function W(e, t, n) {
+function Y(e, t, n) {
     return null != e && (null != n ? n.applicationId === e.id : null != t && (t.application_id === e.id || e.linkedGames?.some(e => e.id === t.application_id)) && t.type === V.$pd.PLAYING && (0, p.A)(t, V.jUm.JOIN))
 }
 let z = s.memo(function(e) {
@@ -74,7 +74,7 @@ let z = s.memo(function(e) {
         } = e, {
             parentAnalyticsLocation: en,
             analyticsLocations: ei
-        } = (0, f.Ay)(), es = (0, L.A)(D), el = W(D, M, I), {
+        } = (0, f.Ay)(), es = (0, L.A)(D), el = Y(D, M, I), {
             enabled: er
         } = y._.useConfig({
             location: "activity-panel"
@@ -209,7 +209,7 @@ let z = s.memo(function(e) {
                 }, n = u.Fzq, s = null != _ ? F.intl.formatToPlainString(F.t.AB5gTy, {
                     game: _.name
                 }) : F.intl.string(F.t.FeUKeA)) : (e = !0, t = null, n = u.Fzq, null != A && (0, G.gV)(A.type) && (s = F.intl.string(F.t.uQn9B8))), (0, i.jsx)("div", {
-                    className: Y.IF,
+                    className: W.IF,
                     children: (0, i.jsx)(k.A, {
                         tooltipText: s,
                         disabled: e,
@@ -262,7 +262,7 @@ let z = s.memo(function(e) {
                 }
             });
         return null == ev && null == ey && null == ej && null == eR && null == eL && null == eS && null == eT ? null : (0, i.jsxs)("div", {
-            className: Y.o1,
+            className: W.o1,
             children: [eS ?? eL ?? ey, eT, ev, ej ?? eR ?? eO, eM]
         })
     }),
@@ -310,11 +310,11 @@ function X(e) {
         }, [g, x, n]);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: Y.IF,
+            className: W.IF,
             children: [(0, i.jsx)("div", {
-                className: Y.uD,
+                className: W.uD,
                 children: (0, i.jsx)("div", {
-                    className: Y.Z9
+                    className: W.Z9
                 })
             }), (0, i.jsx)(k.A, {
                 ref: a,

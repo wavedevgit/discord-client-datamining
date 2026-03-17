@@ -3,8 +3,8 @@ n.d(t, {
     A: () => U
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(379834),
+    l = n(64700),
+    r = n(379834),
     a = n(934551),
     s = n(27989),
     o = n(311907),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(755420),
     R = n(877044),
     P = n(878831),
-    M = n(652215),
-    D = n(768349),
+    D = n(652215),
+    M = n(768349),
     w = n(985018),
     O = n(609653);
 
@@ -41,12 +41,12 @@ function k(e) {
     let {
         presenceActivity: t,
         remoteJoinPlatform: n,
-        isGameLaunchable: l
+        isGameLaunchable: r
     } = e, o = (0, L.z4)({
         platforms: t?.supported_platforms,
-        currentPlatform: M.yTV.DESKTOP,
-        isGameLaunchable: l
-    }), c = r.useMemo(() => o.map(e => {
+        currentPlatform: D.yTV.DESKTOP,
+        isGameLaunchable: r
+    }), c = l.useMemo(() => o.map(e => {
         switch (e) {
             case L.FL.MOBILE:
                 return (0, i.jsx)(d.u6o, {
@@ -132,7 +132,7 @@ function U(e) {
         startAuthorization: J,
         accountLinkButtonRef: X,
         renderAccountLinkUpsell: Z
-    } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = r.useMemo(() => null != $ ? (0, i.jsxs)("div", {
+    } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = l.useMemo(() => null != $ ? (0, i.jsxs)("div", {
         className: O.Ym,
         children: [(0, i.jsx)(d._xR, {
             size: "xxs",
@@ -146,21 +146,21 @@ function U(e) {
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [$, V?.timestamps?.end]), et = (0, b.v)(t), en = (0, x.s)(n.id), ei = r.useMemo(() => en.some(e => (0, g.CZ)(e) === l.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
+    }) : null, [$, V?.timestamps?.end]), et = (0, b.v)(t), en = (0, x.s)(n.id), ei = l.useMemo(() => en.some(e => (0, g.CZ)(e) === r.m.GLOBAL) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.Y3C, {
             size: "xxs",
             color: "currentColor"
         }), w.intl.string(w.t.TsWCdW)]
-    }) : null, [en]), er = r.useMemo(() => (0, i.jsxs)(d.Text, {
+    }) : null, [en]), el = l.useMemo(() => (0, i.jsxs)(d.Text, {
         variant: "text-xs/normal",
         className: O.dS,
         color: "none",
         lineClamp: 2,
         children: [et ? (0, I.YC)(t, a, s, S, !1) : ee, et ? null : ei]
-    }), [et, t, a, s, S, ee, ei]), el = r.useMemo(() => (0, i.jsxs)("div", {
+    }), [et, t, a, s, S, ee, ei]), er = l.useMemo(() => (0, i.jsxs)("div", {
         className: O.pq,
-        children: [er, q || et ? null : Y]
-    }), [er, q, et, Y]), ea = !!L, es = (0, A.e)(n), {
+        children: [el, q || et ? null : Y]
+    }), [el, q, et, Y]), ea = !!L, es = (0, A.e)(n), {
         canJoin: eo,
         remoteJoinPlatform: ed
     } = (0, E.D)({
@@ -172,10 +172,10 @@ function U(e) {
         isEmbeddedApplication: R,
         isFrameApplication: es,
         isGameLaunchable: ea
-    }), ec = (0, E.M)(V, W, t, n), eu = (0, v.E)(V, t, n, S), e_ = (0, T.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
+    }), ec = (0, E.M)(V, W, t, n), eu = (0, v.E)(V, t, n, S), e_ = (0, T.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, D.xL.JOIN) === D.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
-    } = r.useMemo(() => {
+    } = l.useMemo(() => {
         let e = null,
             n = !0,
             i = !1;
@@ -190,13 +190,13 @@ function U(e) {
                     applicationId: V.application_id,
                     channelId: s.id,
                     messageId: t.id,
-                    source: M.ThZ.MESSAGE_EMBED,
+                    source: D.ThZ.MESSAGE_EMBED,
                     analyticsLocations: z,
-                    embedded: (0, N.A)(V, M.jUm.EMBEDDED),
+                    embedded: (0, N.A)(V, D.jUm.EMBEDDED),
                     remotePartyId: null != ed ? V.party?.id : void 0
                 }), (0, j.A)({
-                    type: M.UqL.JOIN,
-                    source: M.ThZ.MESSAGE_EMBED,
+                    type: D.UqL.JOIN,
+                    source: D.ThZ.MESSAGE_EMBED,
                     userId: t.author.id,
                     guildId: s.guild_id,
                     channelId: s.id,
@@ -226,10 +226,10 @@ function U(e) {
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
-                    type: M.xL.JOIN,
+                    type: D.xL.JOIN,
                     channelId: s.id,
                     activity: V,
-                    location: M.ThZ.MESSAGE_EMBED
+                    location: D.ThZ.MESSAGE_EMBED
                 })
             },
             disabled: t.author.id === S,
@@ -240,8 +240,8 @@ function U(e) {
             onClick: () => {},
             disabled: !0
         } : null != U && (e = U, n = !1);
-        let r = [];
-        return null != e && (r.push(e), Q && n && (r.push({
+        let l = [];
+        return null != e && (l.push(e), Q && n && (l.push({
             label: w.intl.string(w.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
@@ -253,12 +253,12 @@ function U(e) {
             iconButton: !0,
             buttonRef: X
         }), i = !0)), {
-            actions: r,
+            actions: l,
             hasAccountLinkButton: i
         }
     }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, z, ed, S, eh, Q, J, X, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(eA, z);
-    let ex = r.useMemo(() => e_ ? null : (0, i.jsx)(k, {
+    let ex = l.useMemo(() => e_ ? null : (0, i.jsx)(k, {
         presenceActivity: V,
         remoteJoinPlatform: ed,
         isGameLaunchable: ea
@@ -271,13 +271,13 @@ function U(e) {
             onClickBanner: B,
             bannerAspectRatio: m.u.ACTIVITY,
             iconSrc: F ?? void 0,
-            info: el,
+            info: er,
             actions: ep,
             primaryActionFirst: !0,
             onClickContent: B,
             trackingConfig: {
                 id: n.id,
-                linkType: D.J.RICH_PRESENCE_INVITE,
+                linkType: M.J.RICH_PRESENCE_INVITE,
                 onView: H,
                 referrerId: t.author.id,
                 guildId: s.guild_id,

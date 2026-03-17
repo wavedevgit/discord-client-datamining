@@ -4,8 +4,8 @@ n.d(t, {
     w: () => s
 });
 var i = n(562465),
-    r = n(198982),
-    l = n(652215);
+    l = n(198982),
+    r = n(652215);
 async function a(e) {
     let {
         channelId: t,
@@ -14,14 +14,14 @@ async function a(e) {
     } = e;
     try {
         await i.Bo.put({
-            url: l.Rsh.POLL_ANSWERS(t, n),
+            url: r.Rsh.POLL_ANSWERS(t, n),
             body: {
                 answer_ids: a
             },
             rejectWithError: !1
         })
     } catch (e) {
-        throw new r.LG(e)
+        throw new l.LG(e)
     }
 }
 async function s(e) {
@@ -31,10 +31,10 @@ async function s(e) {
     } = e;
     try {
         await i.Bo.post({
-            url: l.Rsh.POLL_EXPIRE(t, n),
+            url: r.Rsh.POLL_EXPIRE(t, n),
             rejectWithError: !1
         })
     } catch (e) {
-        throw new r.LG(e)
+        throw new l.LG(e)
     }
 }

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(284009),
     o = n.n(s),
     d = n(421380),
@@ -51,13 +51,13 @@ function S(e, t) {
 function x(e) {
     let {
         placeholder: t = g.intl.string(g.t["Rn/sLl"])
-    } = e, n = r.useRef(null), l = r.useRef(null), [s, A] = r.useReducer(S, f), {
+    } = e, n = a.useRef(null), r = a.useRef(null), [s, A] = a.useReducer(S, f), {
         canSend: x,
         hint: v,
         error: y,
         success: b
     } = s;
-    return r.useEffect(() => {
+    return a.useEffect(() => {
         null != b && (o()(null != n.current, "Input is submitting when not mounted"), n.current.value = "", n.current.focus())
     }, [b, n]), (0, i.jsxs)("form", {
         onSubmit: e => {
@@ -96,11 +96,11 @@ function x(e) {
             })]
         }), (0, i.jsx)(c.vN3, {
             focusTarget: n,
-            ringTarget: l,
+            ringTarget: r,
             ringClassName: p.hN,
             children: (0, i.jsxs)("div", {
-                ref: l,
-                className: a()(p.fc, {
+                ref: r,
+                className: l()(p.fc, {
                     [p.kX]: b,
                     [p.z3]: y
                 }),
@@ -114,10 +114,10 @@ function x(e) {
                         if (e.key !== m.N$.Enter && t.includes("#")) {
                             o()(null != n.current, "Input is handling keypress when not mounted");
                             let i = t.indexOf("#"),
-                                r = n.current.selectionStart,
-                                l = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
-                                a = e.which >= 48 && e.which <= 57;
-                            null != r && r > i && /^(.+?#\d{4})$/.test(t) && !l ? e.preventDefault() : null == r || !(r > i) || a || l || e.preventDefault()
+                                a = n.current.selectionStart,
+                                r = e.key === m.N$.Backspace || e.key === m.N$.ArrowRight || e.key === m.N$.ArrowLeft,
+                                l = e.which >= 48 && e.which <= 57;
+                            null != a && a > i && /^(.+?#\d{4})$/.test(t) && !r ? e.preventDefault() : null == a || !(a > i) || l || r || e.preventDefault()
                         }
                     },
                     onChange: e => {

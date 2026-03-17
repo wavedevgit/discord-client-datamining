@@ -1,22 +1,22 @@
 /** chunk id: 116219 params = (module,exports,require) **/
 a.d(t, {
-    A: () => m
+    A: () => h
 }), a(321073);
 var n = a(627968),
     i = a(64700),
-    s = a(230109),
-    l = a(397927),
+    l = a(230109),
+    s = a(397927),
     r = a(735991),
     o = a(486020),
     c = a(841985),
     d = a(569495),
     u = a(985018),
-    h = a(240815);
-let m = function(e) {
+    m = a(240815);
+let h = function(e) {
     let {
         application: t,
         onButtonsVisibilityChange: a
-    } = e, m = i.useRef(null), p = i.useMemo(() => o.Ay.getApplicationIconURL({
+    } = e, h = i.useRef(null), p = i.useMemo(() => o.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         size: 96
@@ -30,14 +30,14 @@ let m = function(e) {
             bannerType: "detail",
             iconURL: p
         }), (0, n.jsx)("div", {
-            className: h.H,
+            className: m.H,
             style: {
                 height: 52
             },
             children: (0, n.jsx)("img", {
                 src: p,
                 alt: "",
-                className: h.my,
+                className: m.my,
                 height: 96,
                 width: 96,
                 style: {
@@ -46,29 +46,29 @@ let m = function(e) {
                 }
             })
         }), (0, n.jsxs)("div", {
-            className: h.op,
+            className: m.op,
             children: [(0, n.jsxs)("div", {
-                className: h.tJ,
-                children: [(0, n.jsx)(l.Heading, {
+                className: m.tJ,
+                children: [(0, n.jsx)(s.Heading, {
                     variant: "heading-xxl/bold",
                     color: "text-strong",
                     lineClamp: 1,
                     children: t.name
                 }), (0, n.jsx)("div", {
-                    className: h.A7,
-                    children: _.map((e, t) => (0, n.jsx)(l.Text, {
-                        className: h.MO,
+                    className: m.A7,
+                    children: _.map((e, t) => (0, n.jsx)(s.Text, {
+                        className: m.MO,
                         variant: "text-xs/normal",
                         color: "text-muted",
                         children: e
                     }, t))
                 })]
-            }), (0, n.jsx)(s.L, {
-                innerRef: m,
+            }), (0, n.jsx)(l.L, {
+                innerRef: h,
                 onChange: a,
                 active: !0,
                 children: (0, n.jsx)(d.A, {
-                    ref: m,
+                    ref: h,
                     application: t,
                     size: "md"
                 })

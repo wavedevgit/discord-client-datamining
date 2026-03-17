@@ -1,8 +1,8 @@
 /** chunk id: 81400 params = (module,exports,require) **/
 n.d(t, {
-    EC: () => N,
+    EC: () => p,
     j8: () => m,
-    uZ: () => p
+    uZ: () => N
 }), n(938796);
 var i = n(64700),
     l = n(417597),
@@ -19,7 +19,7 @@ var i = n(64700),
     A = n(355097),
     I = n(985018);
 
-function p(e) {
+function N(e) {
     return (0, l.bG)([a.default, o.Ay], () => {
         if (null == e) return !1;
         let t = a.default.getId();
@@ -27,7 +27,7 @@ function p(e) {
     }, [e])
 }
 
-function N(e) {
+function p(e) {
     return (0, l.cf)([a.default, o.Ay, u.A, c.A], () => {
         let t = {
                 nick: void 0,

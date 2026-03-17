@@ -131,8 +131,8 @@ function D(e) {
         })),
         K = !F && B,
         {
-            messageCategoryOpenStates: Y,
-            toggleOpenState: W
+            messageCategoryOpenStates: W,
+            toggleOpenState: Y
         } = (0, C.A)(),
         z = (t = (0, d.yK)([E.A], () => E.A.getNotifyingChannelIds() ?? []), (0, d.bG)([E.A, p.Ay], () => {
             let e = E.A.getChannelInfoMap();
@@ -201,18 +201,18 @@ function D(e) {
             return J ? e.push(A()) : Q ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => m([e], !0))), e.push(...n.map(e => m([e], !1)))) : o().each(L, t => {
                 0 !== X[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
-                    isOpen: Y[t],
+                    isOpen: W[t],
                     toggleOpenedState: () => {
-                        let e = Y[t];
-                        W(t), (0, x.Ut)({
+                        let e = W[t];
+                        Y(t), (0, x.Ut)({
                             section: t,
                             enabled: !e,
                             viewId: U
                         })
                     }
-                }, t)), Y[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
+                }, t)), W[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, l, A, Y, W, X, G, m, Q, J, U]),
+        }, [n, l, A, W, Y, X, G, m, Q, J, U]),
         Z = $[$.length - 1],
         ee = s.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
@@ -235,10 +235,10 @@ function D(e) {
         loadingInitial: K
     });
     let ei = s.useCallback(() => {
-        let e = L.filter(e => Y[e]).reduce((e, t) => e + X[t].length, 0),
+        let e = L.filter(e => W[e]).reduce((e, t) => e + X[t].length, 0),
             t = P.current?.getScrollerState();
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
-    }, [Y, X]);
+    }, [W, X]);
     s.useEffect(() => {
         J || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
     }, [ei, a, J, B, ee, z]);

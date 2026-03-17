@@ -1,10 +1,10 @@
 /** chunk id: 882171 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => r
 });
 var i = n(139675),
-    r = n(360469);
+    l = n(360469);
 
-function l(e, t) {
-    return null == e || null == e.assets || null == e.assets.large_image ? null : (0, i.uD)(t, e.assets.large_image, [r.Ig, r.Ig])
+function r(e, t) {
+    return null == e || null == e.assets || null == e.assets.large_image ? null : (0, i.uD)(t, e.assets.large_image, [l.Ig, l.Ig])
 }

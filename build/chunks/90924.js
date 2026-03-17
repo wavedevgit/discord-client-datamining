@@ -13,15 +13,15 @@ n.d(t, {
     e2: () => $,
     hk: () => w,
     lG: () => J,
-    px: () => q,
+    px: () => K,
     qG: () => V,
     sq: () => Q,
-    uM: () => K
+    uM: () => z
 }), n(321073), n(938796), n(735438);
 var i = n(567243),
-    r = n(179771),
-    l = n(562465),
-    a = n(898467),
+    a = n(179771),
+    r = n(562465),
+    l = n(898467),
     s = n(843472),
     o = n(956518),
     d = n(587895),
@@ -55,10 +55,10 @@ let L = x.A.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)?.host ?? "localhost",
     }(),
     P = RegExp(`^${S.A.escape("https://")}(?:[a-z]+\\.)?(${S.A.escape(R)}|discordapp.com|discord.com)$`),
     D = +T.A.Millis.MINUTE,
-    j = {};
+    M = {};
 
-function M(e) {
-    return "customEmoji" === e.type && (e.type = "emoji"), "emoji" === e.type && e.src && (e.src = w(e.src)), Array.isArray(e.content) && (e.content = e.content.map(M)), e
+function j(e) {
+    return "customEmoji" === e.type && (e.type = "emoji"), "emoji" === e.type && e.src && (e.src = w(e.src)), Array.isArray(e.content) && (e.content = e.content.map(j)), e
 }
 
 function w(e) {
@@ -80,7 +80,7 @@ function G(e, t) {
         })
     })), Promise.all(n).then(() => {
         let n = (!e.isNSFW() || f.default.getCurrentUser()?.nsfwAllowed === !0) && t ? E.A.getMessages(e.id).toArray().map(k) : [],
-            r = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
+            a = Object.values(C.A.getVoiceStatesForChannel(e.id)).map(t => V(i, e.id, t));
         return {
             id: e.id,
             name: e.name,
@@ -91,7 +91,7 @@ function G(e, t) {
             guild_id: i,
             position: e.position,
             messages: n,
-            voice_states: r
+            voice_states: a
         }
     })
 }
@@ -99,18 +99,18 @@ function G(e, t) {
 function k(e) {
     let t = c.A.parseToAST(e.content, !0, {
             channelId: e.channel_id
-        }).map(M),
+        }).map(j),
         n = m.A.getChannel(e.channel_id),
         i = null != e.author ? new _.A(e.author) : void 0,
-        r = null != e.author ? (0, u.FT)(i, n) : void 0;
+        a = null != e.author ? (0, u.FT)(i, n) : void 0;
     return {
         id: e.id,
         blocked: e.blocked,
         bot: e.bot,
         content: e.content,
         content_parsed: t.length ? t : void 0,
-        nick: r?.nick,
-        author_color: r?.colorString,
+        nick: a?.nick,
+        author_color: a?.colorString,
         edited_timestamp: e.edited_timestamp || e.editedTimestamp,
         timestamp: e.timestamp,
         tts: e.tts,
@@ -128,9 +128,9 @@ function k(e) {
 function V(e, t, n) {
     let {
         mute: i,
-        deaf: r,
-        selfMute: l,
-        selfDeaf: a,
+        deaf: a,
+        selfMute: r,
+        selfDeaf: l,
         suppress: s,
         userId: o
     } = n, d = f.default.getUser(o);
@@ -142,9 +142,9 @@ function V(e, t, n) {
         pan: p.Ay.getLocalPan(d.id),
         voice_state: {
             mute: i,
-            deaf: r,
-            self_mute: l,
-            self_deaf: a,
+            deaf: a,
+            self_mute: r,
+            self_deaf: l,
             suppress: s
         },
         user: (0, y.A)(d)
@@ -187,7 +187,7 @@ function F(e) {
 
 function Y(e, t, n) {
     let i = g.A.getGuild(e.getGuildId());
-    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(r.F.MESSAGES_READ) > -1
+    return (null != i ? i.application_id : e.getApplicationId()) === t || n.indexOf(a.F.MESSAGES_READ) > -1
 }
 
 function W(e) {
@@ -201,12 +201,12 @@ function W(e) {
     }
 }
 
-function q(e, t, n) {
+function K(e, t, n) {
     return e === O.xL.JOIN && null != t && null != t.id && null != n.join
 }
 
-function z(e) {
-    return l.Bo.get({
+function q(e) {
+    return r.Bo.get({
         url: O.Rsh.APPLICATION_RPC(e),
         oldFormErrors: !0,
         retries: 3,
@@ -222,7 +222,7 @@ function z(e) {
         }, "Invalid Client ID")
     })
 }
-async function K(e, t, n) {
+async function z(e, t, n) {
     let i = d.A.getApplication(t);
     if ("string" == typeof n)
         if (e.transport === b.z4.POST_MESSAGE) {
@@ -231,29 +231,29 @@ async function K(e, t, n) {
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
         } else {
-            let e = await z(t);
+            let e = await q(t);
             if (i = A.Ay.createFromServer(e), !U(n, e.rpc_origins)) throw new v.A({
                 closeCode: O.YI$.INVALID_ORIGIN
             }, "Invalid Origin")
-        } null == i && (i = A.Ay.createFromServer(await z(t)));
+        } null == i && (i = A.Ay.createFromServer(await q(t)));
     let {
-        id: r,
-        name: l,
-        icon: a,
+        id: a,
+        name: r,
+        icon: l,
         coverImage: s,
         flags: c
     } = i;
     e.application = {
-        id: r,
-        name: l,
-        icon: a,
+        id: a,
+        name: r,
+        icon: l,
         coverImage: s,
         flags: c
     }
 }
 async function $(e, t, n) {
-    let i = j[e];
-    null == i && (i = new a.A(t ? 2 : 60, D), j[e] = i);
+    let i = M[e];
+    null == i && (i = new l.A(t ? 2 : 60, D), M[e] = i);
     try {
         await i.process(n)
     } catch (e) {

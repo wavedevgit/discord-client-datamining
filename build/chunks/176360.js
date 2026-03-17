@@ -1,10 +1,10 @@
 /** chunk id: 176360 params = (module,exports,require) **/
-let i, r;
+let i, a;
 n.d(t, {
     A: () => b
 });
-var l = n(735438),
-    a = n.n(l),
+var r = n(735438),
+    l = n.n(r),
     s = n(311907),
     o = n(506774),
     d = n(73153),
@@ -35,7 +35,7 @@ function x(e) {
 function v() {
     if (f = u.A.getChannel(), C = u.A.getCategory(), null == f) return !1;
     let e = f.getGuildId();
-    I = E = x(f), null == E[T] && (T = e), r = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
+    I = E = x(f), null == E[T] && (T = e), a = null != C, i = c.r(f, C), N = null, p = !1, g = h.XlH.CLOSED, m.clear()
 }
 class y extends s.Ay.Store {
     static displayName = "ChannelSettingsPermissionsStore";
@@ -64,7 +64,7 @@ class y extends s.Ay.Store {
         return g
     }
     get isLockable() {
-        return r
+        return a
     }
     get locked() {
         return i
@@ -92,17 +92,17 @@ let b = new y(d.h, {
         let {
             id: t,
             allow: n,
-            deny: r
-        } = e, l = E?.[t];
-        if (null == l || null == f) return !1;
-        l = {
-            ...l,
+            deny: a
+        } = e, r = E?.[t];
+        if (null == r || null == f) return !1;
+        r = {
+            ...r,
             allow: n,
-            deny: r
+            deny: a
         }, E = {
             ...E,
-            [t]: l
-        }, m.add(t), g = h.XlH.OPEN, p = !a().isEqual(E, I), i = c.r(f, C)
+            [t]: r
+        }, m.add(t), g = h.XlH.OPEN, p = !l().isEqual(E, I), i = c.r(f, C)
     },
     CHANNEL_SETTINGS_PERMISSIONS_SELECT_PERMISSION: function(e) {
         let {

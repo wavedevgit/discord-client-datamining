@@ -68,8 +68,8 @@ let P = s.memo(function(e) {
         mediaState: H,
         unavailable: F = !1,
         badge: K = 0,
-        isMentionLowImportance: Y,
-        contextMenu: W = U,
+        isMentionLowImportance: W,
+        contextMenu: Y = U,
         draggable: z = !1,
         sorting: q = !1,
         preloadOnClick: X = !0,
@@ -81,7 +81,7 @@ let P = s.memo(function(e) {
         id: ee,
         parentId: et
     } = t, en = e.upperBadge ?? (F ? (0, O.em)() : null != H ? (0, O.oi)(H) : void 0), ei = e.lowerBadge ?? void 0;
-    null == ei && K > 0 ? ei = (0, O.wN)(K, Y ? A.LU0.colors.BACKGROUND_MOD_STRONG.css : A.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) ?? void 0 : null == ei && null != Q && (ei = (0, O.eW)({
+    null == ei && K > 0 ? ei = (0, O.wN)(K, W ? A.LU0.colors.BACKGROUND_MOD_STRONG.css : A.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) ?? void 0 : null == ei && null != Q && (ei = (0, O.eW)({
         guildJoinRequestStatus: Q
     }) ?? void 0);
     let es = e.lowerBadgeSize ?? {
@@ -126,8 +126,8 @@ let P = s.memo(function(e) {
         }, [P, w, F, X]),
         ex = (0, u.bG)([E.Ay], () => E.Ay.isCurrentUserGuest(ee)),
         eC = s.useCallback(e => {
-            null == w || ex || W(e, w)
-        }, [w, W, ex]),
+            null == w || ex || Y(e, w)
+        }, [w, Y, ex]),
         eE = s.useCallback(e => {
             "ArrowLeft" === e.key && null != et && document.querySelector(`[aria-owns=folder-items-${et}]`)?.focus()
         }, [et]),

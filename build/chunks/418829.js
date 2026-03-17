@@ -29,10 +29,10 @@ function h(e) {
         searchQuery: v,
         clearSearchQuery: A
     } = e, j = d.A.useField("currentPanelKey"), {
-        node: S,
-        visibleDirectory: N,
+        node: N,
+        visibleDirectory: S,
         accessibleDirectory: C
-    } = (0, u.Ay)(t, v ?? ""), k = null != n && N.entry(n)?.parentPanelKey != null ? n : h, E = i.useMemo(() => {
+    } = (0, u.Ay)(t, v ?? ""), k = null != n && S.entry(n)?.parentPanelKey != null ? n : h, E = i.useMemo(() => {
         let e = C.entry(j ?? k)?.parentPanelKey;
         if (null != e) return C.getPanelOrThrow(e)
     }, [j, C, k]), {
@@ -43,10 +43,10 @@ function h(e) {
             accessibleDirectory: C,
             onPanelChange: x,
             navigateWithValidation: (e, t) => {
-                null == N.entry(e) && A?.(), w(t)
+                null == S.entry(e) && A?.(), w(t)
             }
         })
-    }, [C, w, x, A, N]);
+    }, [C, w, x, A, S]);
     let [T, I] = i.useState(!0);
     (0, a.Ay)(() => (m.A.navigate(k, {
         animatePanelScroll: !1,
@@ -56,17 +56,17 @@ function h(e) {
         m.A.reset(), f.A.reset(), d.A.resetState()
     }));
     let R = i.useMemo(() => ({
-            visibleDirectory: N,
+            visibleDirectory: S,
             accessibleDirectory: C
-        }), [N, C]),
+        }), [S, C]),
         D = i.useMemo(() => () => w(p), [w, p]),
-        M = null != j ? N.get(j) : void 0;
+        M = null != j ? S.get(j) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: R,
         children: (0, r.jsxs)("div", {
             className: g.k,
             children: [(0, r.jsx)(l.L, {
-                root: S,
+                root: N,
                 onClose: D,
                 footer: y,
                 emptyState: b,

@@ -3,8 +3,8 @@ n.d(t, {
     C: () => R
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(311907),
+    l = n(64700),
+    r = n(311907),
     a = n(397927),
     s = n(442433),
     o = n(181658),
@@ -31,15 +31,15 @@ var i = n(627968),
     j = n(985018);
 
 function L(e) {
-    let t = (0, l.bG)([m.A], () => m.A.questDeliveryOverride, []),
+    let t = (0, r.bG)([m.A], () => m.A.questDeliveryOverride, []),
         n = (0, I.vy)(e.questContent),
         c = [h.uF.QUEST_BAR_V2, h.uF.QUEST_BAR].includes(e.questContent),
         L = (0, A.Ut)(),
         R = (0, f.go)(),
         P = (0, C.wr)(e.quest),
-        M = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
+        D = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
         {
-            handleComplete: D,
+            handleComplete: M,
             handleProgress: w,
             handleResetDismissibilityClick: O,
             handleResetStatusClick: k,
@@ -52,9 +52,9 @@ function L(e) {
             sourceQuestContent: e.sourceQuestContent
         }),
         B = (0, b.Lk)({
-            isShareable: M,
+            isShareable: D,
             questId: e.quest.id,
-            trackingCtx: r.useMemo(() => ({
+            trackingCtx: l.useMemo(() => ({
                 content: e.questContent,
                 position: e.questContentPosition,
                 ctaContent: x.Cy.CONTEXT_MENU_COPY_LINK,
@@ -65,13 +65,13 @@ function L(e) {
         F = e => (0, a.showToast)((0, a.createToast)(new o.A(e, e.status).message, a.ToastType.FAILURE)),
         H = () => (0, _.CV)(e.quest.id).catch(F),
         V = (0, g.nv)(e.quest),
-        W = r.useMemo(() => (0, i.jsx)(a.sLh, {
+        W = l.useMemo(() => (0, i.jsx)(a.sLh, {
             id: "delivery",
             label: "Show in Quest Bar",
             checked: t?.id === e.quest.id,
             action: U
         }), [U, e.quest.id, t?.id]),
-        q = r.useCallback(() => {
+        q = l.useCallback(() => {
             (0, d.pX)(y.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
         Y = e.shouldShowDisclosure && e.quest.id !== S.Fw;
@@ -94,7 +94,7 @@ function L(e) {
                     type: "icon",
                     icon: a.We5
                 }
-            }), M && (0, i.jsx)(a.Drp, {
+            }), D && (0, i.jsx)(a.Drp, {
                 id: "share-link",
                 label: j.intl.string(j.t.RDE0Sc),
                 action: B,
@@ -172,7 +172,7 @@ function L(e) {
             }), (0, i.jsx)(a.Drp, {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
-                action: D
+                action: M
             }), (0, E.g5)(e.quest) && (0, i.jsxs)(a.Drp, {
                 id: "console",
                 label: "Console Heartbeat",
@@ -210,14 +210,14 @@ function R(e) {
     let {
         children: t,
         onOpen: n,
-        onClose: l,
+        onClose: r,
         preventIdle: s,
         quest: o,
         questContent: d,
         questContentPosition: u,
         sourceQuestContent: _,
         ...m
-    } = e, h = (0, A.Ut)(), p = r.useRef(null), g = r.useCallback(() => {
+    } = e, h = (0, A.Ut)(), p = l.useRef(null), g = l.useCallback(() => {
         h({
             questId: o.id,
             questContent: d,
@@ -229,7 +229,7 @@ function R(e) {
     return (0, i.jsx)(a.YNO, {
         targetElementRef: p,
         onRequestOpen: g,
-        onRequestClose: l,
+        onRequestClose: r,
         renderPopout: e => {
             let {
                 closePopout: t

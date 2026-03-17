@@ -1,16 +1,16 @@
 /** chunk id: 752319 params = (module,exports,require) **/
 var i = n(311907),
-    r = n(73153),
-    l = n(287809),
-    a = n(652215);
-let s = a.XlH.CLOSED,
+    a = n(73153),
+    r = n(287809),
+    l = n(652215);
+let s = l.XlH.CLOSED,
     o = {},
     d = null;
 
 function c() {
-    let e = l.default.getCurrentUser();
+    let e = r.default.getCurrentUser();
     if (null == e) return u();
-    s = a.XlH.OPEN, o = {}, d = {
+    s = l.XlH.OPEN, o = {}, d = {
         ...{
             userId: e.id,
             username: e.username,
@@ -25,28 +25,28 @@ function c() {
 }
 
 function u() {
-    s = a.XlH.CLOSED, d = null, o = {}
+    s = l.XlH.CLOSED, d = null, o = {}
 }
 
 function A() {
-    s = a.XlH.OPEN, o = {}
+    s = l.XlH.OPEN, o = {}
 }
 class h extends i.Ay.Store {
     static displayName = "UserSettingsAccountStore";
     initialize() {
-        this.waitFor(l.default)
+        this.waitFor(r.default)
     }
     getErrors() {
         return o
     }
     getSubmitting() {
-        return s === a.XlH.SUBMITTING
+        return s === l.XlH.SUBMITTING
     }
     getSettings() {
         return d
     }
 }
-new h(r.h, {
+new h(a.h, {
     USER_SETTINGS_MODAL_OPEN: function() {
         c()
     },
@@ -54,11 +54,11 @@ new h(r.h, {
     USER_SETTINGS_MODAL_CLOSE: u,
     LOGOUT: u,
     USER_SETTINGS_MODAL_SUBMIT: function() {
-        s = a.XlH.SUBMITTING
+        s = l.XlH.SUBMITTING
     },
     USER_SETTINGS_MODAL_SUBMIT_FAILURE: function(e) {
-        if (s !== a.XlH.SUBMITTING) return !1;
-        s = a.XlH.OPEN, o = e.errors ?? {}
+        if (s !== l.XlH.SUBMITTING) return !1;
+        s = l.XlH.OPEN, o = e.errors ?? {}
     },
     USER_SETTINGS_MODAL_UPDATE_ACCOUNT: function(e) {
         let {
@@ -71,7 +71,7 @@ new h(r.h, {
     },
     USER_SETTINGS_MODAL_SUBMIT_COMPLETE: A,
     USER_SETTINGS_MODAL_RESET: function() {
-        let e = l.default.getCurrentUser();
+        let e = r.default.getCurrentUser();
         A(), null != e && (d = {
             ...{
                 userId: e.id,

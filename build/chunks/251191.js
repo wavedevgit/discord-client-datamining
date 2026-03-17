@@ -26,7 +26,7 @@ let b = e => {
         shelf: t,
         handleTransition: s,
         tab: l
-    } = e, b = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, i.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, u.uM)(), I = (0, m.A)(), L = r.useMemo(() => I(t.rankedSkuIds), [t.rankedSkuIds, I]), j = (0, h.X)(L);
+    } = e, b = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, i.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, m.A)(), I = r.useMemo(() => v(t.rankedSkuIds), [t.rankedSkuIds, v]), L = (0, h.X)(I);
     return null == b ? null : (0, n.jsxs)("div", {
         className: a()(C.Vp, C.YB),
         children: [(0, n.jsxs)("div", {
@@ -51,7 +51,7 @@ let b = e => {
         }), (0, n.jsx)(c.A, {
             gap: "xl",
             children: (0, n.jsx)(n.Fragment, {
-                children: j.map((e, s) => {
+                children: L.map((e, s) => {
                     if (null == _.A.getCategoryForProduct(e.skuId) || null == e) return null;
                     let r = e.skuId;
                     return (0, n.jsx)(u.R9, {
@@ -62,8 +62,7 @@ let b = e => {
                         },
                         children: (0, n.jsx)(p.A, {
                             skuId: r,
-                            prioritizedCurrency: l === x.G2.ORBS ? f.Hi.ORBS : A ? f.Hi.FIAT : void 0,
-                            onClickAnalytics: (0, f.UU)(e, l, v)
+                            prioritizedCurrency: l === x.G2.ORBS ? f.Hi.ORBS : A ? f.Hi.FIAT : void 0
                         }, r)
                     }, r)
                 })

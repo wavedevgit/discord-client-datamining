@@ -3,9 +3,9 @@ n.d(t, {
     _: () => d
 });
 var i = n(627968),
-    r = n(397927),
-    l = n(341915),
-    a = n(439075),
+    a = n(397927),
+    r = n(341915),
+    l = n(439075),
     s = n(985018),
     o = n(816751);
 let d = e => {
@@ -16,17 +16,17 @@ let d = e => {
         className: o.x3,
         children: (0, i.jsxs)("div", {
             className: o.B0,
-            children: [(0, i.jsx)(r.Heading, {
+            children: [(0, i.jsx)(a.Heading, {
                 className: o.R_,
                 variant: "heading-md/semibold",
                 children: s.intl.string(s.t["5wnpF3"])
-            }), (0, i.jsx)(a.A, {
+            }), (0, i.jsx)(l.A, {
                 className: o.d,
                 quest: t,
-                questContent: l.uF.QUEST_HOME_DESKTOP,
+                questContent: r.uF.QUEST_HOME_DESKTOP,
                 contentPosition: 0,
                 rowIndex: 0,
-                sourceQuestContent: l.uF.INTERNAL_PREVIEW_TOOL
+                sourceQuestContent: r.uF.INTERNAL_PREVIEW_TOOL
             })]
         })
     })

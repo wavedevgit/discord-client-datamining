@@ -2,7 +2,7 @@
 t.d(n, {
     Af: () => b,
     CJ: () => E,
-    Fe: () => _,
+    DZ: () => _,
     Rm: () => p,
     TW: () => v
 }), t(321073);
@@ -17,7 +17,7 @@ t(661191);
 var u = t(181079),
     s = t(379587),
     c = t(11531),
-    f = t(957300),
+    f = t(5180),
     A = t(652215),
     h = t(788868);
 
@@ -31,7 +31,6 @@ function v(e) {
     return {
         hasAccess: n && l,
         isExperimentEnabled: n,
-        isPreviewMode: (0, f.E)(e => e.isPreviewMode),
         hasHigherPrivileges: t
     }
 }
@@ -48,7 +47,8 @@ function p() {
 }
 
 function _() {
-    return (0, r.bG)([a.A], () => a.A.getGuildId()) === A.YYv
+    let e = (0, r.bG)([a.A], () => a.A.getGuildId());
+    return (0, f.ai)(e)
 }
 
 function E() {

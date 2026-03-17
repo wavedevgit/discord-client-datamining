@@ -46,8 +46,8 @@ var i = n(627968),
     H = n(571909),
     F = n(374873),
     K = n(623413),
-    Y = n(707251),
-    W = n(357819),
+    W = n(707251),
+    Y = n(357819),
     z = n(717965),
     q = n(696842),
     X = n(895903),
@@ -157,7 +157,7 @@ function er(e) {
         onContinueClick: () => {
             (0, H.ek)(!1), N || (0, w.cy)(n)
         }
-    }) : N ? (0, i.jsx)(W.A, {
+    }) : N ? (0, i.jsx)(Y.A, {
         channel: n,
         onScroll: M,
         popoutType: A
@@ -189,7 +189,7 @@ function er(e) {
                 selectedParticipant: y
             })
         }) : null,
-        renderHeader: () => (0, i.jsx)(Y.A, {
+        renderHeader: () => (0, i.jsx)(W.A, {
             toggleRequestToSpeakSidebar: l,
             showRequestToSpeakSidebar: c,
             channel: n

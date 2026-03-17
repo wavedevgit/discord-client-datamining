@@ -4,9 +4,9 @@ n.r(t), n.d(t, {
     useAppSidebarState: () => U
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(353640),
-    a = n(574381),
+    a = n(64700),
+    r = n(353640),
+    l = n(574381),
     s = n(311907),
     o = n(397927),
     d = n(526900),
@@ -34,16 +34,16 @@ var i = n(627968),
     R = n(540999),
     P = n(147964),
     D = n(531685),
-    j = n(837921),
-    M = n(475815),
+    M = n(837921),
+    j = n(475815),
     w = n(71855);
 n(801416);
-let U = (0, l.v)(() => ({
+let U = (0, r.v)(() => ({
         isOpen: !0
     })),
-    G = r.memo(function() {
-        r.useLayoutEffect(() => {
-            j.Ay.setMinimumSize(800, 500)
+    G = a.memo(function() {
+        a.useLayoutEffect(() => {
+            M.Ay.setMinimumSize(800, 500)
         }, []);
         let {
             notificationCenterVariant: e,
@@ -54,24 +54,24 @@ let U = (0, l.v)(() => ({
             hasBugReporterAccess: n
         } = A.A.useConfig({
             location: "HeaderBar"
-        }), l = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
+        }), r = (0, s.bG)([R.A], () => R.A.isDeveloper), U = (0, O.Uk)("VoiceDareTitleBarButton"), G = (0, s.bG)([P.A, c.A], () => b.Q_.getSetting() && null != P.A.testModeApplicationId && null != c.A.getApplication(P.A.testModeApplicationId) && (0, u.A)(c.A.getApplication(P.A.testModeApplicationId))), k = null !== e && t === N.RK.TITLE_BAR_LEFT, V = null === e, {
             enabled: B
         } = g.s.useConfig({
             location: "AppTitleBar"
         });
-        r.useLayoutEffect(() => {
-            j.Ay.setMinimumSize(800, 500)
+        a.useLayoutEffect(() => {
+            M.Ay.setMinimumSize(800, 500)
         }, []);
         let H = (0, y.NC)(),
-            F = (0, s.bG)([D.A, x.A], () => (0, M._U)()),
-            Y = (0, a.xl)(),
+            F = (0, s.bG)([D.A, x.A], () => (0, j._U)()),
+            Y = (0, l.xl)(),
             W = function(e) {
                 let {
                     showBackForwardButtons: t,
                     showNotificationsInbox: n,
                     showRecentsButton: i
                 } = e;
-                return r.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
+                return a.useMemo(() => t ? "BACK_FORWARD_NAVIGATION" : n ? "NOTIFICATIONS_INBOX" : i ? "RECENTS" : "HELP", [t, n, i])
             }({
                 showBackForwardButtons: Y,
                 showNotificationsInbox: k,
@@ -99,7 +99,7 @@ let U = (0, l.v)(() => ({
                             focusSectionProps: "HELP" === W ? e : void 0
                         }) : (0, i.jsx)(I.A, {
                             focusSectionProps: "HELP" === W ? e : void 0
-                        }), l && (0, i.jsx)(E.R, {}), G && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
+                        }), r && (0, i.jsx)(E.R, {}), G && (0, i.jsx)(d.A, {}), (0, i.jsx)(C.A, {})]
                     })
                 })
             })

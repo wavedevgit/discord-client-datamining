@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 });
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    l = n(64700),
+    r = n(503698),
+    a = n.n(r),
     s = n(311907),
     o = n(397927),
     d = n(846293),
@@ -29,21 +29,21 @@ function T(e) {
     let {
         invite: t,
         isMemberOfGuild: n,
-        message: l,
+        message: r,
         onTransitionToInviteChannel: d,
         onAcceptInstantInvite: u
-    } = e, _ = r.useRef(null), [h, g] = r.useState(!0), [T, y] = r.useState(!1), N = t.state === E.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
-    r.useLayoutEffect(() => {
+    } = e, _ = l.useRef(null), [h, g] = l.useState(!0), [T, y] = l.useState(!1), N = t.state === E.elq.ACCEPTING, j = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    l.useLayoutEffect(() => {
         y((_.current?.clientHeight ?? 0) > 292)
     }, [y]);
     let L = (0, m.oO)(t),
-        R = r.useCallback(() => {
+        R = l.useCallback(() => {
             !T || h && g(!1)
         }, [h, T]),
-        P = r.useCallback(() => {
+        P = l.useCallback(() => {
             !T || h || g(!0)
         }, [h, T]),
-        M = r.useMemo(() => T && _.current?.clientHeight != null ? {
+        D = l.useMemo(() => T && _.current?.clientHeight != null ? {
             height: h ? 292 : _.current.clientHeight + 36 + 48,
             transition: j ? void 0 : "height 0.2s ease"
         } : {}, [h, T, j]);
@@ -52,7 +52,7 @@ function T(e) {
             [b.vk]: T && h
         }),
         onClick: R,
-        style: M,
+        style: D,
         "aria-label": v.intl.string(v.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: b.uY,
@@ -97,7 +97,7 @@ function T(e) {
                         invite: t,
                         profile: L,
                         isMemberOfGuild: n,
-                        message: l,
+                        message: r,
                         submitting: N,
                         onTransitionToInviteChannel: d,
                         onAcceptInstantInvite: u
@@ -112,7 +112,7 @@ function S(e) {
     let {
         invite: t,
         profile: n,
-        isMemberOfGuild: l,
+        isMemberOfGuild: r,
         message: a,
         submitting: s,
         onTransitionToInviteChannel: o,
@@ -122,15 +122,15 @@ function S(e) {
         ctaType: p
     } = (0, h.Ay)(n, h.cn.INVITE, t.code), {
         analyticsLocations: A
-    } = (0, _.Ay)(u.A.INVITE_EMBED), x = r.useCallback(() => {
-        let e = l ? "transition" : "accept";
+    } = (0, _.Ay)(u.A.INVITE_EMBED), x = l.useCallback(() => {
+        let e = r ? "transition" : "accept";
         (0, d.he)({
             invite: t,
             action: e,
             inviter_id: a.author.id,
             invite_message_id: a.id
         }, A)
-    }, [t, a, A, l]);
+    }, [t, a, A, r]);
     return null == p ? null : (0, i.jsx)(g.Y, {
         guildId: m,
         ctaType: p,

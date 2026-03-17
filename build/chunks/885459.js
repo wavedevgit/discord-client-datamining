@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 }), n(323874), n(14289), n(35956), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(873263),
-    a = n(311907),
+    a = n(64700),
+    r = n(873263),
+    l = n(311907),
     s = n(73153),
     o = n(829219),
     d = n(859703),
@@ -25,28 +25,28 @@ let g = function(e) {
         questId: n,
         setQuestId: g
     } = function(e) {
-        let t = (0, l.W6)(),
-            [n, i] = r.useState(e),
+        let t = (0, r.W6)(),
+            [n, i] = a.useState(e),
             {
-                search: a
-            } = (0, l.zy)();
-        return r.useEffect(() => {
-            let t = m(a);
+                search: l
+            } = (0, r.zy)();
+        return a.useEffect(() => {
+            let t = m(l);
             null != t ? i(t) : null != e && i(e)
-        }, [e, a]), r.useEffect(() => {
-            if (null == n || m(a) === n) return;
+        }, [e, l]), a.useEffect(() => {
+            if (null == n || m(l) === n) return;
             let e = new URLSearchParams;
             e.set(c.L1.TAB, c.NC.PREVIEW_TOOL), e.set(c.L1.QUEST_ID, n), t.push(`${_.BVt.QUEST_HOME}?${e.toString()}`)
-        }, [n, t, a]), {
+        }, [n, t, l]), {
             questId: n,
             setQuestId: i
         }
-    }(t), p = (0, a.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, a.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
-    r.useEffect(() => {
+    }(t), p = (0, l.bG)([d.A], () => null != n ? d.A.getQuest(n) : void 0, [n]), E = (0, l.bG)([d.A], () => null != n ? d.A.getQuestLoadedViaPreview(n) : null, [n]);
+    a.useEffect(() => {
         null != n && (0, o.dQ)(n).then(() => {
             (0, o.Gt)(n)
         })
-    }, [n]), r.useEffect(() => {
+    }, [n]), a.useEffect(() => {
         let e = e => {
             let {
                 quest_id: t
@@ -57,7 +57,7 @@ let g = function(e) {
             s.h.unsubscribe("QUEST_PREVIEW_UPDATE", e)
         }
     }, [n]);
-    let [I, f] = r.useState([]);
+    let [I, f] = a.useState([]);
     return (0, i.jsx)(A.A, {
         controls: (0, i.jsx)(u.A, {
             questId: n,

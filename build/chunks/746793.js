@@ -3,9 +3,9 @@ n.d(t, {
     A: () => O
 }), n(321073);
 var i = n(627968),
-    r = n(64700),
-    l = n(503698),
-    a = n.n(l),
+    a = n(64700),
+    r = n(503698),
+    l = n.n(r),
     s = n(735438),
     o = n.n(s),
     d = n(311907),
@@ -27,7 +27,7 @@ var i = n(627968),
     x = n(652215),
     v = n(985018),
     y = n(281733);
-class b extends r.PureComponent {
+class b extends a.PureComponent {
     videoRef = null;
     _noProblemsTimeout = null;
     _problemsTimeout = null;
@@ -125,19 +125,19 @@ class b extends r.PureComponent {
         let {
             ready: n,
             hide: i,
-            problems: r
+            problems: a
         } = this.state, {
-            connected: l,
-            soundpack: a
-        } = this.props, s = l && n && !i && !r;
-        e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && (0, E.D)(), l && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
+            connected: r,
+            soundpack: l
+        } = this.props, s = r && n && !i && !a;
+        e.soundpack !== l && (this._connectedSound = this.createSound()), e.connected !== r || s ? (r && (0, E.D)(), r && null != this.videoRef && c.w.get(x.wqg) && this._connectedSound.play(), this.setState({
             problems: !1,
-            hide: l
+            hide: r
         })) : t.hide !== i ? (i ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
             shouldRender: !0
         }), setTimeout(() => this.setState({
             shouldRender: !i
-        }), 200)) : t.problems !== r && r && A.A.checkIncidents()
+        }), 200)) : t.problems !== a && a && A.A.checkIncidents()
     }
     componentWillUnmount() {
         this.clearProblemsTimeout()
@@ -167,9 +167,9 @@ class b extends r.PureComponent {
         } = this.state;
         if (!this.state.shouldRender) return null;
         {
-            let r = this._loadingText,
-                l = null;
-            return null != this._eventLoadingText && (r = this._eventLoadingText), null != t && (r = t.name, l = t.incident_updates[0].body), (0, i.jsxs)("div", {
+            let a = this._loadingText,
+                r = null;
+            return null != this._eventLoadingText && (a = this._eventLoadingText), null != t && (a = t.name, r = t.incident_updates[0].body), (0, i.jsxs)("div", {
                 className: y.kL,
                 "data-fade": n,
                 style: {
@@ -183,7 +183,7 @@ class b extends r.PureComponent {
                         loop: !e,
                         setRef: this.setVideoRef,
                         onReady: this.handleReady,
-                        className: a()(y.bE, this.state.ready ? y.Gc : "")
+                        className: l()(y.bE, this.state.ready ? y.Gc : "")
                     }), (0, i.jsxs)("div", {
                         className: y.Qq,
                         children: [null != t ? null : (0, i.jsx)("div", {
@@ -191,14 +191,14 @@ class b extends r.PureComponent {
                             children: v.intl.string(v.t.v0R1Lh)
                         }), (0, i.jsx)("div", {
                             className: null != t ? y.DD : y.uN,
-                            children: r
+                            children: a
                         }), (0, i.jsx)("div", {
                             className: y.rf,
-                            children: l
+                            children: r
                         })]
                     })]
                 }), (0, i.jsxs)("div", {
-                    className: a()(y.Bk, {
+                    className: l()(y.Bk, {
                         [y.ly]: this.state.problems
                     }),
                     children: [(0, i.jsx)("div", {
@@ -238,14 +238,14 @@ let O = d.Ay.connectStores([_.A, f.A, p.A, h.A], () => ({
     let {
         isTryingToConnect: t,
         connected: n,
-        incident: r,
-        soundpack: l,
-        reducedMotion: a
+        incident: a,
+        soundpack: r,
+        reducedMotion: l
     } = e;
     return t ? (0, i.jsx)(b, {
-        reducedMotion: a,
-        soundpack: l,
+        reducedMotion: l,
+        soundpack: r,
         connected: n,
-        incident: r
+        incident: a
     }) : null
 })
