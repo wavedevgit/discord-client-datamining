@@ -10,8 +10,8 @@ var l = n(503698),
     s = n(342952),
     r = n(435371),
     o = n(397927),
-    c = n(915089),
-    d = n(457047);
+    d = n(915089),
+    c = n(457047);
 
 function u(e) {
     let {
@@ -20,12 +20,12 @@ function u(e) {
         size: l = o._3J.SIZE_16,
         maxUsers: r = 4,
         ...u
-    } = e, m = (0, c.GV)();
+    } = e, m = (0, d.GV)();
     return (0, i.jsxs)("div", {
-        className: a()(n, d.k),
+        className: a()(n, c.k),
         children: [(0, i.jsx)(s.I, {
             "aria-labelledby": m,
-            overflowCountClassName: d.j,
+            overflowCountClassName: c.j,
             size: l,
             maxUsers: r,
             ...u
@@ -43,7 +43,7 @@ function m(e) {
         label: t,
         className: n,
         overflowCountClassName: l,
-        size: c = o._3J.SIZE_16,
+        size: d = o._3J.SIZE_16,
         maxUsers: u = 4,
         onClick: m,
         ...g
@@ -58,9 +58,9 @@ function m(e) {
                 onClick: m,
                 "aria-label": t,
                 children: (0, i.jsx)(s.I, {
-                    size: c,
+                    size: d,
                     maxUsers: u,
-                    overflowCountClassName: a()(d.j, l),
+                    overflowCountClassName: a()(c.j, l),
                     "aria-hidden": !0,
                     ...g
                 })

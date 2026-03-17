@@ -9,14 +9,14 @@ var l = n(503698),
     s = n(688807),
     r = n(152621),
     o = n(287809),
-    c = n(735321),
-    d = n(451395),
+    d = n(735321),
+    c = n(451395),
     u = n(823016),
     m = n(788593),
     g = n(858808),
     x = n(685049),
-    f = n(617086),
-    p = n(985018),
+    p = n(617086),
+    f = n(985018),
     h = n(461349),
     _ = n(616060);
 
@@ -31,7 +31,7 @@ function A(e) {
     } = e, {
         manageFocusOnReorder: o
     } = (0, u.r)();
-    return (0, i.jsx)(d.mG, {
+    return (0, i.jsx)(c.mG, {
         index: t,
         itemId: l.applicationId,
         listType: n,
@@ -40,10 +40,10 @@ function A(e) {
             imageSrc: a,
             gameName: s
         },
-        "aria-label": p.intl.formatToPlainString(p.t["0dR3gw"], {
+        "aria-label": f.intl.formatToPlainString(f.t["0dR3gw"], {
             positionNumber: t + 1
         }),
-        onReorder: (e, t) => (0, c.Un)(n, e, t),
+        onReorder: (e, t) => (0, d.Un)(n, e, t),
         onEnd: () => o(l.applicationId),
         className: _.kL,
         dropBeforeClassName: _.A,
@@ -61,8 +61,8 @@ function I(e) {
         game: t,
         userId: n,
         widgetType: l,
-        guildId: c,
-        channelId: p,
+        guildId: d,
+        channelId: f,
         disableInteraction: I = !1,
         index: j,
         onRemoveGame: v,
@@ -73,7 +73,7 @@ function I(e) {
         isLoading: N
     } = (0, r.A)(t.applicationId), {
         registerDragHandleRef: S
-    } = (0, u.r)(), y = (0, f.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
+    } = (0, u.r)(), y = (0, p.A)(t.applicationId).length > 0, C = o.default.getCurrentUser(), R = C?.id === n, k = !I && R, {
         isDragging: L
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
@@ -87,14 +87,14 @@ function I(e) {
             className: a()(y ? _.kO : void 0, null == T || I ? void 0 : h.iL),
             hideTooltip: L,
             coverRef: E
-        }), k && (0, i.jsx)(d.jV, {
+        }), k && (0, i.jsx)(c.jV, {
             buttonRef: S(t.applicationId),
             className: _.BU
         }), !I && (0, i.jsx)(x.d, {
             userId: n,
             applicationId: t.applicationId,
-            guildId: c,
-            channelId: p,
+            guildId: d,
+            channelId: f,
             className: _.Ez
         }), k && (0, i.jsx)(g.A, {
             game: t,

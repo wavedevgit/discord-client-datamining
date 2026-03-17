@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    a = n(397927),
-    l = n(572211),
+    l = n(397927),
+    a = n(572211),
     s = n(354287),
     o = n(693879),
     d = n(353411),
@@ -27,23 +27,23 @@ function p(e) {
         onClickContent: C,
         onView: E,
         guildId: I
-    } = e, b = (0, u.w)(f, g), T = (0, d.Gq)(g, n.author, "Invite Embed"), v = r.useMemo(() => {
+    } = e, T = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), v = r.useMemo(() => {
         let e = [];
-        return b || e.push({
-            label: T.label ?? m.intl.string(m.t.VJlc0S),
+        return T || e.push({
+            label: b.label ?? m.intl.string(m.t.VJlc0S),
             trackingArea: s.kY.SYNC,
             onClick: () => {
-                T.onClick()
+                b.onClick()
             },
-            disabled: T.disabled,
-            disabledReason: T.disabled ? T.tooltip : void 0
+            disabled: b.disabled,
+            disabledReason: b.disabled ? b.tooltip : void 0
         }), e
-    }, [b, T]), S = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+    }, [T, b]), S = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
     }) : t.name, y = g?.timestamps?.start ?? g?.created_at, N = r.useMemo(() => null != y ? (0, i.jsxs)("div", {
         className: h.Ym,
-        children: [(0, i.jsx)(a.T7G, {
+        children: [(0, i.jsx)(l.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
@@ -57,7 +57,7 @@ function p(e) {
         })]
     }) : null, [y, g?.timestamps?.end]), j = r.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
-        children: [(0, i.jsx)(a.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-xs/normal",
             className: h.dS,
             color: "none",
@@ -65,7 +65,7 @@ function p(e) {
             children: N
         }), A ? null : x]
     }), [N, A, x]);
-    return (0, i.jsx)(l.h, {
+    return (0, i.jsx)(a.h, {
         header: p,
         title: S,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,

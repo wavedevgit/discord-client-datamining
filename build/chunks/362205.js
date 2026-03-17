@@ -16,8 +16,8 @@ var r = n(627968),
     f = n(775602),
     g = n(253932),
     h = n(894858),
-    y = n(272053),
-    p = n(189857),
+    p = n(272053),
+    y = n(189857),
     _ = n(674085),
     x = n(890690),
     b = n(637577);
@@ -136,11 +136,11 @@ function A(e) {
             "aria-hidden": "true",
             ref: A
         }), t.map(e => {
-            let t = (0, p.H)(e.key, n, a);
+            let t = (0, y.H)(e.key, n, a);
             return (0, r.jsx)(v, {
                 onClick: () => {
                     var t;
-                    return t = e.key, void y.A.navigate(t, {
+                    return t = e.key, void p.A.navigate(t, {
                         showNavigationMobile: !1
                     })
                 },

@@ -1,7 +1,7 @@
 /** chunk id: 34442 params = (module,exports,require) **/
 n.d(t, {
     IU: () => x,
-    dE: () => f
+    dE: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -9,8 +9,8 @@ var i = n(627968),
     s = n(397927),
     r = n(383329),
     o = n(183555),
-    c = n(735321),
-    d = n(958338),
+    d = n(735321),
+    c = n(958338),
     u = n(985018),
     m = n(810824);
 
@@ -20,8 +20,8 @@ function g(e) {
         widget: n,
         onAddGame: g,
         children: x,
-        ...f
-    } = e, p = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+        ...p
+    } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
         trackUserProfileEditAction: h
     } = (0, o.NJ)(), [_, A] = l.useState(""), I = l.useRef(""), {
         options: j,
@@ -29,8 +29,8 @@ function g(e) {
     } = (0, r.R)(), {
         applicationIds: E,
         onAddGame: T
-    } = (0, d.S)(t), b = l.useCallback(e => {
-        (0, c.ew)({
+    } = (0, c.S)(t), b = l.useCallback(e => {
+        (0, d.ew)({
             widgetType: t,
             game: {
                 applicationId: e
@@ -45,12 +45,12 @@ function g(e) {
                 id: String(e.value),
                 value: String(e.value),
                 label: e.label,
-                disabled: p.has(e.value)
+                disabled: f.has(e.value)
             }])),
             t = E.map(t => e.get(t)).filter(e => null != e && !e.disabled),
             n = [...e.values()].filter(e => !t.includes(e));
         return [...t, ...n]
-    }, [j, p, E]), S = l.useMemo(() => ({
+    }, [j, f, E]), S = l.useMemo(() => ({
         ...v,
         threshold: a.Ht.rankings.CONTAINS,
         keys: ["label"]
@@ -64,7 +64,7 @@ function g(e) {
         }), A(n), I.current = n
     }, [_, h, t, y]);
     return (0, i.jsx)(s.YNO, {
-        ...f,
+        ...p,
         onRequestOpen: () => {
             h({
                 action: "PRESS_ADD_GAME",
@@ -132,7 +132,7 @@ function x(e) {
     })
 }
 
-function f(e) {
+function p(e) {
     let t = l.useRef(null);
     return (0, i.jsx)(g, {
         targetElementRef: t,

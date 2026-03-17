@@ -4,13 +4,13 @@ n.d(e, {
     t: () => u
 });
 var r = n(627968),
-    a = n(64700),
-    s = n(503698),
-    i = n.n(s),
+    s = n(64700),
+    a = n(503698),
+    i = n.n(a),
     l = n(610084);
 
 function u() {
-    let [t] = a.useState(() => Math.floor(1600 * Math.random()) / 1e3);
+    let [t] = s.useState(() => Math.floor(1600 * Math.random()) / 1e3);
     return (0, r.jsx)("div", {
         className: i()(l.Vl, l.Yf),
         style: {
@@ -20,7 +20,7 @@ function u() {
 }
 
 function c() {
-    let [t] = a.useState(() => Math.floor(60 * Math.random()) + 20);
+    let [t] = s.useState(() => Math.floor(60 * Math.random()) + 20);
     return (0, r.jsx)("div", {
         className: l.RC,
         style: {

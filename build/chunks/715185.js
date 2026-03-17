@@ -1,15 +1,14 @@
 /** chunk id: 715185 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    H: () => d,
-    M: () => o
+    H: () => i,
+    M: () => d
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(41770),
-    s = a(785330);
-let i = {
+    o = a(785330);
+let s = {
         id: "dummy-show-of-skeletons",
         children: [{
             block: "ContainedHero",
@@ -79,7 +78,7 @@ let i = {
             }]
         }]
     },
-    o = {
+    d = {
         name: "SubLayout",
         id: "sub-layout-basic",
         component: () => (0, l.jsxs)("div", {
@@ -92,13 +91,13 @@ let i = {
             }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here, the \"popular picks\" are actually a sub layout with the id 'dummy-popular-picks'"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
+            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(o.Ay, {
                 layout: n.uG
             })]
         }),
         controls: {}
     },
-    d = {
+    i = {
         name: "SubLayout - Loading State",
         id: "sub-layout-skeleton",
         component: () => (0, l.jsxs)("div", {
@@ -108,8 +107,8 @@ let i = {
             }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here we use the `Skeleton` component to show the shop cards loading while the (dummy) Shop Cards SubLayout are resolving (it will never stop loading for demonstration purposes)"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
-                layout: i
+            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(o.Ay, {
+                layout: s
             })]
         }),
         controls: {}

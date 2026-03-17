@@ -1,22 +1,21 @@
 /** chunk id: 481859 params = (module,exports,require) **/
-"use strict";
-s.d(t, {
+a.d(t, {
     A: () => i
 });
-var a = s(627968);
-s(64700);
-var r = s(503698),
-    n = s.n(r),
-    l = s(813287);
+var s = a(627968);
+a(64700);
+var l = a(503698),
+    n = a.n(l),
+    r = a(813287);
 
 function i(e) {
     let {
         children: t,
-        tag: s,
-        className: r
+        tag: a,
+        className: l
     } = e;
-    return s = null != s ? s : "h3", (0, a.jsx)(s, {
-        className: n()(l.D, r),
+    return a = null != a ? a : "h3", (0, s.jsx)(a, {
+        className: n()(r.D, l),
         children: t
     })
 }

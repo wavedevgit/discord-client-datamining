@@ -21,8 +21,8 @@ function f(e) {
         defaultTarget: f,
         onPanelChange: g,
         sidebarFooter: h,
-        emptyState: y,
-        searchQuery: p,
+        emptyState: p,
+        searchQuery: y,
         clearSearchQuery: _,
         searchBar: x,
         ...b
@@ -49,9 +49,9 @@ function f(e) {
                 target: n,
                 defaultTarget: f,
                 onPanelChange: g,
-                emptyState: y,
+                emptyState: p,
                 sidebarFooter: h,
-                searchQuery: p,
+                searchQuery: y,
                 clearSearchQuery: _,
                 searchBar: x
             })

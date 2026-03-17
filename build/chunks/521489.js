@@ -22,8 +22,8 @@ function g(e) {
         returnRef: a,
         "aria-label": g,
         onClose: h,
-        trackingProps: y,
-        children: p
+        trackingProps: p,
+        children: y
     } = e, _ = i.useId(), x = i.useMemo(() => ({
         id: _,
         headingId: `heading-${_}`,
@@ -40,8 +40,8 @@ function g(e) {
             "aria-label": g,
             "aria-labelledby": null != g ? void 0 : x.headingId,
             returnRef: a,
-            ...y,
-            impressionType: y?.impressionType ?? o.ImpressionTypes.MODAL,
+            ...p,
+            impressionType: p?.impressionType ?? o.ImpressionTypes.MODAL,
             children: (0, r.jsx)(c.Fmo, {
                 forceLevel: 1,
                 children: (0, r.jsx)("div", {
@@ -58,7 +58,7 @@ function g(e) {
                                     theme: v,
                                     children: e => (0, r.jsx)("div", {
                                         className: s()(e, m.h_),
-                                        children: p
+                                        children: y
                                     })
                                 })
                             })

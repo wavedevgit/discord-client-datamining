@@ -1,5 +1,4 @@
 /** chunk id: 858411 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     lm: "notice__36c3e",
     $f: "guildIcon__36c3e",

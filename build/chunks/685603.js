@@ -1,7 +1,7 @@
 /** chunk id: 685603 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E,
+    A: () => x,
     P: () => h
 });
 var i, s = n(627968),
@@ -85,7 +85,7 @@ function m(e, t) {
             throw Error(`getOrientedCoords: Invalid orientation: ${e}`)
     }
 }
-class x extends l.Component {
+class E extends l.Component {
     static Operations = h;
     static defaultProps = {
         snapOrientation: !0,
@@ -253,9 +253,9 @@ class x extends l.Component {
         let {
             width: f,
             height: g
-        } = _(n, this.size), x = t - p, E = e - h, y = (0, d.fh)((0, d.Ly)({
-            top: x,
-            left: E,
+        } = _(n, this.size), E = t - p, x = e - h, y = (0, d.fh)((0, d.Ly)({
+            top: E,
+            left: x,
             bottom: void 0,
             right: void 0
         }, s, l, f, g)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
@@ -475,4 +475,4 @@ class x extends l.Component {
         })
     }
 }
-let E = x
+let x = E

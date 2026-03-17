@@ -16,8 +16,8 @@ var r = n(627968),
     f = n(199966),
     g = n(894858),
     h = n(397274),
-    y = n(189857),
-    p = n(188180),
+    p = n(189857),
+    y = n(188180),
     _ = n(133457),
     x = n(985018),
     b = n(658646);
@@ -27,25 +27,25 @@ function v(e) {
         root: t,
         onClose: n,
         footer: a,
-        emptyState: p,
+        emptyState: y,
         searchBar: v
     } = e, j = g.A.useField("showNavigationMobile"), S = i.useRef(null), [N] = i.useState(t), {
         accessibleDirectory: C
-    } = (0, f._)(), k = i.useMemo(() => (0, y.Z)(N, C), [N, C]), [E] = (0, d.kn)(k.allDismissibleContents);
+    } = (0, f._)(), k = i.useMemo(() => (0, p.Z)(N, C), [N, C]), [E] = (0, d.kn)(k.allDismissibleContents);
     (0, _.B)({
         visibleContent: E,
         dismissibleBadges: k,
         accessibleDirectory: C
     });
-    let [w, I] = i.useMemo(() => {
+    let [w, T] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), T = (0, m.NC)(), R = (0, u.A)("settings-sidebar", S);
+    }, [t.layout]), I = (0, m.NC)(), R = (0, u.A)("settings-sidebar", S);
     return (0, r.jsx)(c.NPJ, {
-        theme: T,
+        theme: I,
         children: e => (0, r.jsxs)("div", {
             className: s()(b.pz, e, {
                 [b.Hw]: o.Fr,
@@ -69,7 +69,7 @@ function v(e) {
                         dismissibleBadges: k,
                         hoisted: !0
                     }, e.key))
-                }), null != v && (0, r.jsx)(v, {}), null != p && 0 === I.length && (0, r.jsx)(p, {})]
+                }), null != v && (0, r.jsx)(v, {}), null != y && 0 === T.length && (0, r.jsx)(y, {})]
             }), (0, r.jsx)(l.hD, {
                 navigator: R,
                 children: (0, r.jsx)(l.PR, {
@@ -87,7 +87,7 @@ function v(e) {
                             ...n,
                             children: [(0, r.jsx)("nav", {
                                 className: b.C$,
-                                children: I.map(e => (0, r.jsx)(A, {
+                                children: T.map(e => (0, r.jsx)(A, {
                                     section: e,
                                     visibleContent: E,
                                     dismissibleBadges: k
@@ -119,7 +119,7 @@ function A(e) {
                 color: "text-muted",
                 children: s
             })
-        }), t.layout.map(e => (0, r.jsx)(p.X, {
+        }), t.layout.map(e => (0, r.jsx)(y.X, {
             node: e,
             visibleContent: n,
             dismissibleBadges: i,

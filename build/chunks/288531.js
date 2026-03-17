@@ -1,12 +1,12 @@
 /** chunk id: 288531 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => D
 });
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    l = n(696292),
+    l = n.n(r),
+    a = n(696292),
     s = n(311907),
     o = n(435371),
     d = n(397927),
@@ -23,8 +23,8 @@ var r = n(503698),
     C = n(92246),
     E = n(792620),
     I = n(201805),
-    b = n(212614),
-    T = n(79545),
+    T = n(212614),
+    b = n(79545),
     v = n(646764),
     S = n(545986),
     y = n(433745),
@@ -38,10 +38,10 @@ function P(e) {
         containerSize: t,
         onClick: n,
         text: r,
-        tabIndex: a
+        tabIndex: l
     } = e;
     return "xs" === t ? (0, i.jsx)(d.DUT, {
-        tabIndex: a,
+        tabIndex: l,
         className: R.CU,
         tag: "span",
         onClick: n,
@@ -52,7 +52,7 @@ function P(e) {
         })
     }) : (0, i.jsx)(d.Button, {
         fullWidth: !0,
-        tabIndex: a,
+        tabIndex: l,
         variant: "secondary",
         onClick: n,
         text: r
@@ -64,17 +64,17 @@ function M(e) {
         quest: t,
         progressState: n,
         questContent: r,
-        questContentPosition: a,
-        sourceQuestContent: l
+        questContentPosition: l,
+        sourceQuestContent: a
     } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, E.vv)(t), _ = (0, E.Cr)(t), m = (0, I._c)({
         progressState: n,
         quest: t,
         questContent: r,
-        questContentPosition: a,
+        questContentPosition: l,
         inGiftInventory: !1,
         isVideoQuest: u,
         inGameQuest: _,
-        sourceQuestContent: l
+        sourceQuestContent: a
     });
     return (0, i.jsx)(o.m_, {
         text: m.tooltipText,
@@ -88,14 +88,14 @@ function M(e) {
         })
     }, m.tooltipText)
 }
-let O = e => {
+let D = e => {
     let {
         quest: t,
         location: n,
         size: r,
         isFocused: I,
-        isQuestExpired: O,
-        isExpanded: D,
+        isQuestExpired: D,
+        isExpanded: O,
         isAnimating: w,
         contentPosition: k,
         sourceQuestContent: U
@@ -103,20 +103,20 @@ let O = e => {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = D || w, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = O || w, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: N.rE.QUESTS_CARD,
-        questContent: l.u.QUESTS_EMBED,
+        questContent: a.u.QUESTS_EMBED,
         sourceQuestContent: U,
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), J = (0, T.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = O && !H, $ = (0, E.vv)(t);
+    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, E.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
-            className: a()(R.nw, {
+            className: l()(R.nw, {
                 [R.dF]: "sm" === r,
                 [R.e5]: "xs" === r
             }),
@@ -129,14 +129,14 @@ let O = e => {
                 shouldShow: Z,
                 children: (0, i.jsxs)("div", {
                     className: R.D9,
-                    children: [O && (0, i.jsx)("div", {
+                    children: [D && (0, i.jsx)("div", {
                         className: R.FL,
                         children: (0, i.jsx)(d.EpV, {
                             color: d.LU0.colors.WHITE
                         })
                     }), (0, i.jsx)(v.A, {
                         autoplay: I,
-                        className: a()({
+                        className: l()({
                             [R.Lu]: "lg" === r,
                             [R.je]: "sm" === r,
                             [R.ks]: "xs" === r
@@ -153,7 +153,7 @@ let O = e => {
                 children: [!$ && (0, i.jsx)(d.Text, {
                     variant: (0, y.a3)(n) && !F && "lg" === r ? "text-lg/medium" : "lg" === r ? "text-md/medium" : "sm" === r ? "text-sm/medium" : "text-xs/medium",
                     className: R.$p,
-                    children: O ? L.intl.formatToPlainString(L.t["ge+AJp"], {
+                    children: D ? L.intl.formatToPlainString(L.t["ge+AJp"], {
                         questName: t.config.messages.questName
                     }) : W
                 }), (0, i.jsx)(d.Text, {
@@ -165,8 +165,8 @@ let O = e => {
                             locale: n,
                             isQuestExpired: i,
                             collectibleQuestRewardDescription: r,
-                            formattedCompletionDate: a
-                        } = e, l = t.userStatus?.completedAt != null, s = l && t.userStatus?.claimedAt != null, o = (0, C.kr)({
+                            formattedCompletionDate: l
+                        } = e, a = t.userStatus?.completedAt != null, s = a && t.userStatus?.claimedAt != null, o = (0, C.kr)({
                             quest: t
                         }), d = (0, C.mH)(t.config);
                         if (s) {
@@ -177,17 +177,17 @@ let O = e => {
                                 n = e?.messages.nameWithArticle ?? null;
                             return null != n ? L.intl.formatToPlainString(L.t.RrxtPU, {
                                 reward: n,
-                                date: a
+                                date: l
                             }) : L.intl.formatToPlainString(L.t.zNoqRe, {
                                 reward: d,
-                                date: a
+                                date: l
                             })
                         }
-                        if (l) return o ? L.intl.formatToPlainString(L.t["l1jCM/"], {
-                            date: a
+                        if (a) return o ? L.intl.formatToPlainString(L.t["l1jCM/"], {
+                            date: l
                         }) : L.intl.formatToPlainString(L.t.zNoqRe, {
                             reward: d,
-                            date: a
+                            date: l
                         });
                         let c = o ? (0, C.cg)({
                             quest: t,
@@ -203,7 +203,7 @@ let O = e => {
                     }({
                         quest: t,
                         locale: X,
-                        isQuestExpired: O,
+                        isQuestExpired: D,
                         collectibleQuestRewardDescription: z,
                         formattedCompletionDate: B
                     })
@@ -241,9 +241,9 @@ let O = e => {
                         })
                     },
                     text: L.intl.string(L.t.LLLLPD)
-                }), !Z && (K.enabled && J === T.UA.UNENROLLED && K.enabledQuestStates.has(T.UA.UNENROLLED) ? (0, i.jsx)(b.A, {
+                }), !Z && (K.enabled && J === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(T.A, {
                     quest: t,
-                    surface: T.V3.QUEST_EMBED,
+                    surface: b.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: U,
                     analyticsCtxQuestContentPosition: k

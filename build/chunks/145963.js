@@ -1,72 +1,72 @@
 /** chunk id: 145963 params = (module,exports,require) **/
-n.d(e, {
-    UV: () => I,
-    rZ: () => T,
-    uC: () => E
+n.d(t, {
+    UV: () => u,
+    rZ: () => x,
+    uC: () => m
 });
-var r = n(627968),
-    i = n(64700),
-    o = n(505779),
-    l = n(397927),
-    a = n(59544),
-    s = n(305080),
+var a = n(627968),
+    l = n(64700),
+    i = n(505779),
+    r = n(397927),
+    s = n(59544),
+    o = n(305080),
     c = n(985018),
-    u = n(937418);
+    d = n(937418);
 
-function I() {
-    return i.useMemo(() => ({
-        [o.V.STEAM]: {
-            icon: l.NXQ,
+function u() {
+    return l.useMemo(() => ({
+        [i.V.STEAM]: {
+            icon: r.NXQ,
             text: c.intl.string(c.t.FsANs4),
             "aria-label": c.intl.string(c.t["P+ePTG"])
         },
-        [o.V.ROBLOX]: {
-            icon: l.H0M,
+        [i.V.ROBLOX]: {
+            icon: r.H0M,
             text: c.intl.string(c.t["pJ+P+h"]),
             "aria-label": c.intl.string(c.t.tYxpdf)
         },
-        [o.V.BATTLENET]: {
-            icon: l.aG0,
+        [i.V.BATTLENET]: {
+            icon: r.aG0,
             text: c.intl.string(c.t["A7grp+"]),
             "aria-label": c.intl.string(c.t.x9at20)
         },
-        [o.V.RIOT]: {
-            icon: l.ALT,
+        [i.V.RIOT]: {
+            icon: r.ALT,
             text: c.intl.string(c.t.h6MapL),
             "aria-label": c.intl.string(c.t["528nvc"])
         },
-        [o.V.MINECRAFT]: {
+        [i.V.MINECRAFT]: {
             text: c.intl.string(c.t["HZbmO+"]),
             "aria-label": c.intl.string(c.t.WWTqYn)
         },
-        [o.V.EPICGAMES]: {
-            icon: l.r_I,
+        [i.V.EPICGAMES]: {
+            icon: r.r_I,
             text: c.intl.string(c.t.ZbBMHa),
             "aria-label": c.intl.string(c.t.BwX0UW)
         }
     }), [])
 }
 
-function E(t) {
+function m(e) {
     let {
-        website: e
-    } = t, n = (0, a.A)(e.url), i = I()[e.category];
-    return null == i || null == n ? null : (0, r.jsx)(T, {
-        ...i,
+        website: t
+    } = e, n = (0, s.A)(t.url), l = u()[t.category];
+    return null == l || null == n ? null : (0, a.jsx)(x, {
+        ...l,
         onClick: () => window.open(n, "_blank", "noreferrer noopener")
     })
 }
 
-function T(t) {
+function x(e) {
     let {
-        ...e
-    } = t, {
+        ...t
+    } = e, {
         isTwoColumn: n
-    } = (0, s.c)();
-    return (0, r.jsx)("div", {
-        className: u.U,
-        children: (0, r.jsx)(l.Button, {
-            ...e,
+    } = (0, o.c)();
+    return (0, a.jsx)("div", {
+        className: d.U,
+        children: (0, a.jsx)(r.Button, {
+            ...t,
             variant: n ? "overlay-secondary" : "secondary",
             fullWidth: !0,
             role: "link"

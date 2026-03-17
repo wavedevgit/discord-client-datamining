@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(397927),
     o = n(415350),
     d = n(366468),
@@ -15,7 +15,7 @@ function u(e) {
     let {
         color: t,
         className: n,
-        variant: a,
+        variant: l,
         text: u,
         lineClamp: _
     } = e, m = (0, s.$Il)(), h = r.useMemo(() => null == u ? null : (0, o.A)(u, !0, {
@@ -24,12 +24,12 @@ function u(e) {
         initialHeaderLevel: m
     }), [u, _, m]);
     return (0, i.jsx)(s.Text, {
-        className: l()(n, c.PT, {
+        className: a()(n, c.PT, {
             [d.E]: null != _ && _ > 1,
             [d.D]: 1 === _
         }),
         color: t,
-        variant: a,
+        variant: l,
         lineClamp: _,
         children: h
     })

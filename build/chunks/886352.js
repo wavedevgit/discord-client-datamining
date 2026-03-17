@@ -5,18 +5,18 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    l = n(985018),
+    l = n.n(r),
+    a = n(985018),
     s = n(71414);
 let o = e => {
     let {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        className: a()(s.T, t),
+        className: l()(s.T, t),
         children: (0, i.jsx)("span", {
             className: s.Q,
-            children: l.intl.string(l.t["8IfYqa"])
+            children: a.intl.string(a.t["8IfYqa"])
         })
     })
 }

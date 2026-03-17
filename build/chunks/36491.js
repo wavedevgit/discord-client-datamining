@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(562465),
     r = n(73153),
-    a = n(198982),
-    l = n(652215);
+    l = n(198982),
+    a = n(652215);
 
 function s(e) {
     r.h.dispatch({
@@ -22,7 +22,7 @@ async function o(e) {
     });
     try {
         let t = (await i.Bo.get({
-            url: l.Rsh.MEDIA_POST_RESHARE_GET_PREVIEW(e),
+            url: a.Rsh.MEDIA_POST_RESHARE_GET_PREVIEW(e),
             rejectWithError: !0
         })).body;
         r.h.dispatch({
@@ -40,13 +40,13 @@ async function o(e) {
 async function d(e) {
     try {
         return (await i.Bo.post({
-            url: l.Rsh.UNFURL_EMBED_URLS,
+            url: a.Rsh.UNFURL_EMBED_URLS,
             body: {
                 urls: e
             },
             rejectWithError: !1
         })).body
     } catch (e) {
-        throw new a.LG(e)
+        throw new l.LG(e)
     }
 }

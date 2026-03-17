@@ -1,11 +1,11 @@
 /** chunk id: 480191 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => O
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(835245),
     o = n(417597),
     d = n(827734),
@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(967144),
     E = n(342296),
     I = n(253932),
-    b = n(696451),
-    T = n(287809),
+    T = n(696451),
+    b = n(287809),
     v = n(486020),
     S = n(449054),
     y = n(218394),
@@ -33,16 +33,16 @@ var i = n(627968),
     R = n(381941),
     P = n(985018),
     M = n(780247),
-    O = n(278664);
+    D = n(278664);
 
-function D(e) {
+function O(e) {
     let {
         embedUrl: t,
         message: n,
-        channel: a
-    } = e, D = r.useRef(null), w = r.useRef(null), k = (0, j.D)(t, n), {
+        channel: l
+    } = e, O = r.useRef(null), w = r.useRef(null), k = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, a, U, !0), B = I.kt.useSetting(), F = (0, y.j)(), [H, V] = r.useState(!1), [W, q] = r.useState(k?.coverImage == null), Y = (0, o.bG)([b.Ay, T.default], () => b.Ay.isMember(k?.guildId, T.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([b.Ay], () => k?.authorId != null ? b.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, l, U, !0), B = I.kt.useSetting(), F = (0, y.j)(), [H, V] = r.useState(!1), [W, q] = r.useState(k?.coverImage == null), Y = (0, o.bG)([T.Ay, b.default], () => T.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([T.Ay], () => k?.authorId != null ? T.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = r.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
         reducedMotion: $
     } = r.useContext(c.CZY), [ee, et] = r.useState(!1), en = r.useCallback(() => {
         V(!0)
@@ -51,20 +51,20 @@ function D(e) {
     }, [V]), er = r.useCallback(async () => {
         null != k && ((0, _.zV)(L.HAw.MEDIA_POST_PREVIEW_EMBED_CLICKED, {
             media_post_id: k.threadId,
-            channel_id: a.id,
+            channel_id: l.id,
             can_access: k.canAccess,
             is_member: Y
         }), k.canAccess ? (0, g.A)(L.BVt.CHANNEL(k.guildId, k.threadId, k.messageId)) : Y ? (0, g.A)(L.BVt.CHANNEL(k.guildId, k.parentChannelId)) : await S.Z2(k.guildId, {}, {
             channelId: k.parentChannelId
         }))
-    }, [k, a, Y]);
+    }, [k, l, Y]);
     if (null == k) return null;
-    let ea = (0, v.F_)({
+    let el = (0, v.F_)({
             avatarDecoration: Q,
             size: (0, h.Te)(c._3J.SIZE_40),
             canAnimate: ee
         }),
-        el = k.user?.getAvatarURL(k.guildId, 40, ee),
+        ea = k.user?.getAvatarURL(k.guildId, 40, ee),
         es = () => {
             $.enabled || et(e => !e)
         },
@@ -77,9 +77,9 @@ function D(e) {
             onMouseEnter: en,
             onMouseLeave: ei,
             children: [!W && (!0 === k.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
-                src: O,
+                src: D,
                 alt: P.intl.string(P.t.rIbh8H),
-                className: l()(M.xn, {
+                className: a()(M.xn, {
                     [M.p6]: k.shouldSpoiler
                 }),
                 onContextMenu: G,
@@ -89,7 +89,7 @@ function D(e) {
                 backgroundSrc: `${eo}?format=png`,
                 alt: P.intl.string(P.t.rIbh8H),
                 aspectRatio: 16 / 9,
-                className: l()(M.xn, {
+                className: a()(M.xn, {
                     [M.p6]: k.shouldSpoiler
                 }),
                 imageChildClassName: M.q_,
@@ -123,16 +123,16 @@ function D(e) {
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    className: l()(M.hF, M.Fq),
+                    className: a()(M.hF, M.Fq),
                     children: k.subtitle
                 })]
             }), (0, i.jsxs)("div", {
                 className: M._5,
-                children: [null != k.authorId && null != el && (0, i.jsx)(E.A, {
+                children: [null != k.authorId && null != ea && (0, i.jsx)(E.A, {
                     targetElementRef: w,
                     userId: k.authorId,
                     guildId: k.guildId,
-                    channelId: a.id,
+                    channelId: l.id,
                     messageId: n.id,
                     roleId: X,
                     avatarUrl: k.avatarUrl,
@@ -145,9 +145,9 @@ function D(e) {
                             ...e,
                             ref: w,
                             size: c._3J.SIZE_40,
-                            src: el,
+                            src: ea,
                             "aria-label": P.intl.string(P.t.KXz3XB),
-                            avatarDecoration: ea
+                            avatarDecoration: el
                         })
                     })
                 }), (0, i.jsxs)("div", {
@@ -179,17 +179,17 @@ function D(e) {
                                 colorStrings: Z,
                                 className: M.fh
                             }) : (0, i.jsx)(E.A, {
-                                targetElementRef: D,
+                                targetElementRef: O,
                                 userId: k.authorId,
                                 guildId: k.guildId,
-                                channelId: a.id,
+                                channelId: l.id,
                                 messageId: n.id,
                                 roleId: X,
                                 avatarUrl: k.avatarUrl,
                                 newAnalyticsLocations: [u.A.USERNAME],
                                 children: e => (0, i.jsx)(c.V30, {
                                     ...e,
-                                    ref: D,
+                                    ref: O,
                                     name: k.authorName,
                                     colorString: K,
                                     colorStrings: Z,

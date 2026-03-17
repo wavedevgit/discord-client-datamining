@@ -3,10 +3,10 @@ a.d(t, {
     RL: () => i,
     sH: () => l
 });
-var n = a(933681),
-    _ = a(945810),
+var _ = a(933681),
+    n = a(945810),
     r = a(654487);
-let o = (0, _.mj)({
+let o = (0, n.mj)({
     name: "2026-01-quest-bar-unfurl",
     kind: "user",
     defaultConfig: {
@@ -45,7 +45,7 @@ function l() {
                 case 1:
                     return 1e4;
                 default:
-                    (0, n.dr)(e)
+                    (0, _.dr)(e)
             }
         }(t)
     }

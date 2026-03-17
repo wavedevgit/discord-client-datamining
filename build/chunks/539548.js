@@ -1,93 +1,93 @@
 /** chunk id: 539548 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => v
 });
-var i = n(627968);
-n(64700);
-var s = n(311907),
-    r = n(397927),
-    l = n(517164),
-    a = n(290863),
-    o = n(461213),
-    d = n(975571),
-    c = n(622543),
-    u = n(146655),
-    m = n(489379),
-    A = n(900179),
-    x = n(837924),
-    _ = n(558628),
-    p = n(842241),
-    f = n(282797),
-    h = n(518477),
-    g = n(652215),
-    I = n(985018),
-    j = n(78702),
-    b = n(781425);
+var i = t(627968);
+t(64700);
+var s = t(311907),
+    l = t(397927),
+    a = t(517164),
+    r = t(290863),
+    o = t(461213),
+    d = t(975571),
+    c = t(622543),
+    u = t(146655),
+    m = t(489379),
+    A = t(900179),
+    x = t(837924),
+    p = t(558628),
+    _ = t(842241),
+    f = t(282797),
+    h = t(518477),
+    j = t(652215),
+    g = t(985018),
+    I = t(78702),
+    b = t(781425);
 
 function v(e) {
     let {
-        user: t,
-        currentUser: n,
+        user: n,
+        currentUser: t,
         guildId: v,
         onClose: N
     } = e, {
-        live: C,
-        recent: y,
+        live: y,
+        recent: C,
         stream: T
-    } = (0, u.A)(t.id), {
+    } = (0, u.A)(n.id), {
         voiceChannel: E,
         voiceActivity: L
     } = (0, m.A)({
-        userId: t.id,
+        userId: n.id,
         guildId: v
-    }), P = (0, s.bG)([l.A], () => l.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, R = (0, s.bG)([o.A, a.A], () => {
-        let e = O ? o.A.getStatus() : a.A.getStatus(t.id);
-        return e === r.clD.OFFLINE || e === r.clD.INVISIBLE
-    }), S = (0, s.bG)([c.A], () => c.A.getUserProfile(t.id)?.private === !0), M = C.length > 0 || null != T, G = !S && null == T && null == L && null != E, k = !R && (M || G), U = y.length > 0;
-    return k || U || !P ? (0, i.jsxs)(r.IpV, {
-        className: j.XG,
+    }), P = (0, s.bG)([a.A], () => a.A.isFetchingUserOutbox(n.id)), R = n.id === t.id, O = (0, s.bG)([o.A, r.A], () => {
+        let e = R ? o.A.getStatus() : r.A.getStatus(n.id);
+        return e === l.clD.OFFLINE || e === l.clD.INVISIBLE
+    }), S = (0, s.bG)([c.A], () => c.A.getUserProfile(n.id)?.private === !0), M = y.length > 0 || null != T, G = !S && null == T && null == L && null != E, k = !O && (M || G), U = C.length > 0;
+    return k || U || !P ? (0, i.jsxs)(l.IpV, {
+        className: I.XG,
         fade: !0,
         children: [k ? (0, i.jsx)(A.A, {
-            "aria-label": I.intl.string(I.t.J6STd9),
+            "aria-label": g.intl.string(g.t.J6STd9),
             children: (0, i.jsxs)("ul", {
-                className: j.Ci,
+                className: I.Ci,
                 children: [null != T && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(p.A, {
-                        user: t,
-                        currentUser: n,
+                    children: (0, i.jsx)(_.A, {
+                        user: n,
+                        currentUser: t,
                         stream: T,
                         onClose: N
                     })
-                }), C.map((e, s) => (0, i.jsx)("li", {
+                }), y.map((e, s) => (0, i.jsx)("li", {
                     children: (0, i.jsx)(x.A, {
-                        user: t,
-                        currentUser: n,
+                        user: n,
+                        currentUser: t,
                         activity: e,
                         onClose: N
                     })
                 }, `live-${s}`)), G && (0, i.jsx)("li", {
                     children: (0, i.jsx)(f.A, {
-                        user: t,
-                        currentUser: n,
+                        user: n,
+                        currentUser: t,
                         voiceChannel: E,
                         onClose: N
                     })
                 })]
             })
         }) : null, U ? (0, i.jsx)(A.A, {
-            heading: I.intl.string(I.t.M0zgnT),
-            introText: O ? I.intl.format(I.t["4bk9Ak"], {
-                learnMoreHook: (e, t) => (0, i.jsx)(r.MzZ, {
-                    href: d.A.getArticleURL(g.MVz.ACTIVITY_STATUS_SETTINGS),
+            heading: g.intl.string(g.t.M0zgnT),
+            introText: R ? g.intl.format(g.t["4bk9Ak"], {
+                learnMoreHook: (e, n) => (0, i.jsx)(l.MzZ, {
+                    href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
-                }, t)
+                }, n)
             }) : void 0,
             scrollTargetId: h.bk.RECENT_ACTIVITY,
             children: (0, i.jsx)("ul", {
-                className: j.Ci,
-                children: y.map(e => (0, i.jsx)("li", {
-                    children: (0, i.jsx)(_.A, {
-                        user: t,
+                className: I.Ci,
+                children: C.map(e => (0, i.jsx)("li", {
+                    children: (0, i.jsx)(p.A, {
+                        user: n,
                         entry: e,
                         onClose: N
                     })
@@ -96,6 +96,6 @@ function v(e) {
         }) : null]
     }) : (0, i.jsx)("div", {
         className: b.Ie,
-        children: (0, i.jsx)(r.y$y, {})
+        children: (0, i.jsx)(l.y$y, {})
     })
 }

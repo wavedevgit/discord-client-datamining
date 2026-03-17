@@ -1,6 +1,6 @@
 /** chunk id: 113763 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -8,19 +8,19 @@ var i = n(627968),
     s = n(688810),
     r = n(114212),
     o = n(183555),
-    c = n(913453),
-    d = n(229187),
+    d = n(913453),
+    c = n(229187),
     u = n(657331),
     m = n(503062),
     g = n(782505),
     x = n(515054),
-    f = n(828151);
+    p = n(828151);
 
-function p(e) {
+function f(e) {
     let {
         user: t,
         guildId: n,
-        channelId: p,
+        channelId: f,
         onClose: h
     } = e, {
         analyticsLocations: _
@@ -30,15 +30,15 @@ function p(e) {
     } = (0, o.NJ)(), {
         mutualFriends: j,
         mutualFriendsCount: v
-    } = (0, c.A)(t), E = (0, a.A)();
+    } = (0, d.A)(t), E = (0, a.A)();
     return l.useEffect(() => {
-        (0, d.A)(t.id, E)
+        (0, c.A)(t.id, E)
     }, [t.id, E]), (0, i.jsx)(x.K, {
-        className: f.XG,
+        className: p.XG,
         children: null == j ? Array.from({
             length: v ?? 10
         }).map((e, t) => (0, i.jsxs)("div", {
-            className: f.D$,
+            className: p.D$,
             children: [(0, i.jsx)(r.FQ, {
                 width: 40,
                 opacity: .08
@@ -56,7 +56,7 @@ function p(e) {
                 user: l,
                 status: a,
                 guildId: n,
-                channelId: p,
+                channelId: f,
                 onSelect: () => {
                     h?.(), I({
                         action: "PRESS_MUTUAL_FRIEND"

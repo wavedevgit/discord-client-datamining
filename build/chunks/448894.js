@@ -1,11 +1,11 @@
 /** chunk id: 448894 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => T
 });
 var i = n(627968),
     r = n(64700),
-    a = n(284009),
-    l = n.n(a),
+    l = n(284009),
+    a = n.n(l),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -23,16 +23,16 @@ var i = n(627968),
     E = n(985018),
     I = n(563111);
 
-function b(e) {
+function T(e) {
     let t, {
             invite: n,
-            currentUserId: a,
-            guild: b,
-            message: T,
+            currentUserId: l,
+            guild: T,
+            message: b,
             onTransitionToInviteChannel: v,
             onAcceptInstantInvite: S
         } = e,
-        y = b?.id,
+        y = T?.id,
         N = (0, o.bG)([p.A], () => p.A.getGuildId()),
         j = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getActiveStreamForUser(n.target_user.id, y) : null, [n, y]),
         L = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getStreamForUser(n.target_user.id, y) : null, [n, y]),
@@ -41,30 +41,30 @@ function b(e) {
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         P = null != n && n.target_type === C.yV.STREAM && null != n.target_user && null != j,
         M = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
-    l()(null != n, "Invite cannot be null");
+    a()(null != n, "Invite cannot be null");
     let {
-        target_type: O,
-        target_user: D
+        target_type: D,
+        target_user: O
     } = n;
-    l()(O === C.yV.STREAM && null != D, "invalid streaming invite");
-    let w = a === D.id,
+    a()(D === C.yV.STREAM && null != O, "invalid streaming invite");
+    let w = l === O.id,
         k = n.state === f.elq.ACCEPTING,
         U = r.useCallback(() => {
             let e = "noop";
             P ? (v(), e = "transition") : (S(), e = "accept"), (0, d.he)({
                 invite: n,
                 action: e,
-                inviter_id: T.author.id,
-                invite_message_id: T.id
+                inviter_id: b.author.id,
+                invite_message_id: b.id
             }, R)
-        }, [n, T, R, P, v, S]),
-        G = null != b;
-    if (null == b) {
+        }, [n, b, R, P, v, S]),
+        G = null != T;
+    if (null == T) {
         if (null == n.guild) return (0, i.jsx)(x.A, {});
-        b = (0, g.DY)(n.guild)
+        T = (0, g.DY)(n.guild)
     }
     let B = null != n.channel ? (0, m.OY)(n.channel) : null,
-        F = A.Ay.getName(D),
+        F = A.Ay.getName(O),
         H = P || !M && G,
         V = E.intl.string(E.t.I6JG46),
         W = "active";
@@ -73,10 +73,10 @@ function b(e) {
     }), V = E.intl.string(E.t.Wdi5E1)) : (W = "active", P && (V = E.intl.string(E.t.Q1W99y), W = "secondary"), t = w ? E.intl.string(E.t["4hyaHu"]) : E.intl.formatToPlainString(E.t.QmlLEq, {
         name: F
     }));
-    let q = N === b.id && null != B ? (0, i.jsx)(_.A.Channel, {
+    let q = N === T.id && null != B ? (0, i.jsx)(_.A.Channel, {
         channel: B
     }) : E.intl.formatToPlainString(E.t.u0vaDE, {
-        guildName: b.name
+        guildName: T.name
     });
     return (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
@@ -85,7 +85,7 @@ function b(e) {
             children: [(0, i.jsxs)("div", {
                 className: I.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
-                    guild: b,
+                    guild: T,
                     onClick: G && M ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,

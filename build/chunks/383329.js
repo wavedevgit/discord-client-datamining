@@ -8,10 +8,10 @@ var i = n(64700),
     s = n(311907),
     r = n(735321),
     o = n(760751),
-    c = n(282435);
+    d = n(282435);
 
-function d(e) {
-    return c.Bf.get(e) ?? 0
+function c(e) {
+    return d.Bf.get(e) ?? 0
 }
 
 function u() {
@@ -24,9 +24,9 @@ function u() {
             let {
                 value: t
             } = e;
-            return d(t)
+            return c(t)
         }).reverse().value(), [e]),
-        n = i.useCallback((e, t) => d(t.item.value) - d(e.item.value), []);
+        n = i.useCallback((e, t) => c(t.item.value) - c(e.item.value), []);
     return {
         options: t,
         matchSorterOptions: i.useMemo(() => ({

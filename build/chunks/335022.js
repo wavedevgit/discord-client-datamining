@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(924985),
     _ = n(945886),
     m = n(72314),
-    x = n(769765),
-    E = n(808728),
+    E = n(769765),
+    x = n(808728),
     y = n(458294),
     v = n(71393),
     S = n(576705),
@@ -32,11 +32,11 @@ var i = n(627968),
     b = n(855790),
     j = n(714977),
     D = n(439817),
-    R = n(652215),
-    L = n(349828),
+    L = n(652215),
+    R = n(349828),
     w = n(985018),
-    k = n(852388);
-class M extends s.PureComponent {
+    M = n(852388);
+class k extends s.PureComponent {
     static getDerivedStateFromProps(e) {
         let {
             guild: t
@@ -135,15 +135,15 @@ class M extends s.PureComponent {
             renderBanner: l,
             bannerVisible: a,
             communityInfoVisible: o
-        } = this.state, d = n?.id === L.Vc ? u.T : u.B;
+        } = this.state, d = n?.id === R.Vc ? u.T : u.B;
         return (0, i.jsxs)(D.A, {
             header: null != n ? (0, i.jsx)(h.Ay, {
                 guild: n,
                 controller: s,
                 renderBanner: l,
                 bannerVisible: a,
-                className: k.F,
-                headerClassName: k.D8,
+                className: M.F,
+                headerClassName: M.D8,
                 onMouseDown: e,
                 disableBannerAnimation: !1,
                 communityInfoVisible: o,
@@ -160,7 +160,7 @@ class M extends s.PureComponent {
                 })
             }) : null,
             children: [(0, i.jsx)("div", {
-                className: k.o5,
+                className: M.o5,
                 children: null != n ? (0, i.jsx)(d, {
                     ...t,
                     guild: n,
@@ -170,7 +170,7 @@ class M extends s.PureComponent {
                     withBannerPadding: !1
                 })
             }), null != n && (0, i.jsx)("section", {
-                className: k.C3,
+                className: M.C3,
                 "aria-label": w.intl.string(w.t.StREWK),
                 children: (0, i.jsx)(A.A, {
                     guildId: n.id
@@ -183,7 +183,7 @@ class M extends s.PureComponent {
 function P(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([E.Ay], () => E.Ay.getChannels(t)), l = (0, a.bG)([x.A], () => x.A.getCategories(t)), {
+    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([x.Ay], () => x.Ay.getChannels(t)), l = (0, a.bG)([E.A], () => E.A.getCategories(t)), {
         mutedChannels: r,
         collapseMuted: c
     } = (0, a.cf)([T.Ay], () => ({
@@ -196,8 +196,8 @@ function P(e) {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), L = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), k = (0, d.vj)(n?.id), P = n?.features.has(R.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), V = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
-    return (0, i.jsx)(M, {
+    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), R = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), M = (0, d.vj)(n?.id), P = n?.features.has(L.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    return (0, i.jsx)(k, {
         guildId: t,
         guild: n,
         channels: s,
@@ -208,14 +208,14 @@ function P(e) {
         selectedVoiceChannelId: b,
         voiceStates: u,
         rtcConnectedChannelId: G,
-        rtcDesyncedVoiceStatesCount: V,
+        rtcDesyncedVoiceStatesCount: U,
         collapsedChannels: h,
         collapseMuted: c,
-        guildReadStateSentinel: L,
+        guildReadStateSentinel: R,
         permissionVersion: j,
         categoryCollapseVersion: D,
         embeddedAppsByChannel: w,
-        activeEventsByChannel: k,
+        activeEventsByChannel: M,
         showNewUnreadsBar: P,
         optInEnabled: !1
     })

@@ -23,11 +23,11 @@ let g = e => {
         name: n
     } = t, g = (0, r.bG)([_.default], () => _.default.getNewestTokenForApplication(t.id)), A = t.getIconURL(40) ?? h, v = (0, c.A)({
         application: t
-    }), f = a.useRef(!1);
+    }), b = a.useRef(!1);
     a.useEffect(() => {
-        f.current || (d.A.fetch(), f.current = !0)
+        b.current || (d.A.fetch(), b.current = !0)
     }, []);
-    let b = null != g ? m.default.extractTimestamp(g.id) : void 0;
+    let f = null != g ? m.default.extractTimestamp(g.id) : void 0;
     return (0, l.jsxs)("div", {
         className: p.kL,
         children: [(0, l.jsx)(s.Heading, {
@@ -69,11 +69,11 @@ let g = e => {
                             color: "text-default",
                             variant: "text-md/normal",
                             children: t.bot?.tag
-                        }), null != b && (0, l.jsx)(s.Text, {
+                        }), null != f && (0, l.jsx)(s.Text, {
                             color: "text-default",
                             variant: "text-md/normal",
                             children: x.intl.formatToPlainString(x.t.C9rUO8, {
-                                authorizedAt: b
+                                authorizedAt: f
                             })
                         })]
                     })]

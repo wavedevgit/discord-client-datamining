@@ -1,5 +1,4 @@
 /** chunk id: 851822 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     nM: "row__8e830",
     fi: "column__8e830",

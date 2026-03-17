@@ -1,6 +1,4 @@
 /** chunk id: 251874 params = (module,exports,require) **/
-"use strict";
-
 function n(e) {
     return (n = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
         return typeof e

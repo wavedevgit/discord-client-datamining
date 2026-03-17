@@ -4,8 +4,8 @@ n.d(t, {
     g: () => u
 });
 var i, r = n(612200),
-    a = n(323073),
-    l = n(398884),
+    l = n(323073),
+    a = n(398884),
     s = n(772366),
     o = n(652215),
     d = n(204925),
@@ -17,7 +17,7 @@ function u(e) {
         isMember: n,
         analyticsLocations: i
     } = e;
-    return null != t && !n && (0, a.xq)() && (0, a.zS)(t) ? ((0, r.yO)(d.w_.NSFW_SERVER_INVITE_EMBED), "AGE_GATE_SHOWN") : (0, l.Sn)() ? ((0, s.A)({
+    return null != t && !n && (0, l.xq)() && (0, l.zS)(t) ? ((0, r.yO)(d.w_.NSFW_SERVER_INVITE_EMBED), "AGE_GATE_SHOWN") : (0, a.Sn)() ? ((0, s.A)({
         analyticsSource: {
             page: o.liQ.INVITE_EMBED
         },

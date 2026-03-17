@@ -3,21 +3,21 @@ n.d(t, {
     A: () => u
 });
 var s = n(311907),
-    r = n(73153);
+    i = n(73153);
 
-function i(e, t) {
+function l(e, t) {
     if (0 === e.length) throw Error("No user IDs provided");
     return [...e, ...t].join(",")
 }
-let l = {};
+let r = {};
 class o extends s.Ay.Store {
     getRecommendations(e, t) {
-        if (0 !== e.length && 0 !== t.length) return l[i(e, t)]
+        if (0 !== e.length && 0 !== t.length) return r[l(e, t)]
     }
 }
-let u = new o(r.h, {
+let u = new o(i.h, {
     LOGOUT: function() {
-        l = {}
+        r = {}
     },
     WISHLIST_RECOMMENDATIONS_FETCH_START: function(e) {
         let {
@@ -25,9 +25,9 @@ let u = new o(r.h, {
             applicationIds: n
         } = e;
         if (0 === t.length || 0 === n.length) return !1;
-        let s = i(t, n);
-        l = {
-            ...l,
+        let s = l(t, n);
+        r = {
+            ...r,
             [s]: {
                 state: "loading"
             }
@@ -40,10 +40,10 @@ let u = new o(r.h, {
             data: s
         } = e;
         if (0 === t.length || 0 === n.length) return !1;
-        let r = i(t, n);
-        l = {
-            ...l,
-            [r]: {
+        let i = l(t, n);
+        r = {
+            ...r,
+            [i]: {
                 state: "success",
                 data: s,
                 fetchedAt: Date.now()
@@ -56,10 +56,10 @@ let u = new o(r.h, {
             applicationIds: n
         } = e;
         if (0 === t.length || 0 === n.length) return !1;
-        let s = i(t, n);
-        if (l[s]?.state === "success") return !1;
-        l = {
-            ...l,
+        let s = l(t, n);
+        if (r[s]?.state === "success") return !1;
+        r = {
+            ...r,
             [s]: {
                 state: "error",
                 fetchedAt: Date.now()

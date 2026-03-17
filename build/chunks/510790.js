@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(735438),
-    l = n(110259),
+    l = n(735438),
+    a = n(110259),
     s = n(239947),
     o = n(934551),
     d = n(97808),
@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(153469),
     E = n(652215),
     I = n(520650),
-    b = n(985018),
-    T = n(294456);
+    T = n(985018),
+    b = n(294456);
 let v = e => e.map(e => `#${e}`),
     S = e => {
         let {
@@ -34,11 +34,11 @@ let v = e => e.map(e => `#${e}`),
             setAll: r
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
-            className: T.kL,
+            className: b.kL,
             children: [(0, i.jsx)(y, {
                 message: t
             }), (0, i.jsx)(c.$nd, {
-                text: b.intl.string(b.t.SKNnqq),
+                text: T.intl.string(T.t.SKNnqq),
                 fullWidth: !0,
                 variant: "primary",
                 onClick: () => {
@@ -61,9 +61,9 @@ let v = e => e.map(e => `#${e}`),
                 sharedClientTheme: g
             } = h,
             A = (0, p.Ay)(h),
-            x = r.useMemo(() => (0, a.once)(() => {
+            x = r.useMemo(() => (0, l.once)(() => {
                 (0, _.x)({
-                    type: l.ImpressionTypes.VIEW,
+                    type: a.ImpressionTypes.VIEW,
                     name: s.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
@@ -77,27 +77,27 @@ let v = e => e.map(e => `#${e}`),
             }),
             E = r.useMemo(() => void 0 === g ? "" : (0, C.V9)(v(g.colors), g.gradient_angle ?? 0), [g]);
         return void 0 === g ? null : (0, i.jsxs)("div", {
-            className: T.pS,
+            className: b.pS,
             ref: f,
             children: [(0, i.jsx)("div", {
-                className: T.sl,
+                className: b.sl,
                 style: {
                     background: `${E}`
                 }
             }), (0, i.jsxs)("div", {
-                className: T.Ix,
+                className: b.Ix,
                 children: [(0, i.jsxs)(u.Heading, {
                     variant: "heading-md/semibold",
-                    className: T.qP,
-                    children: [b.intl.string(I.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
+                    className: b.qP,
+                    children: [T.intl.string(I.default.KSBBpC), " ", (0, i.jsx)(o.NitroWheelIcon, {})]
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    className: T.Tb,
-                    children: (t = `${b.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(r.Fragment, {
+                    className: b.Tb,
+                    children: (t = `${T.intl.format(I.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(r.Fragment, {
                         children: [e, " "]
                     }, t) : (0, i.jsxs)("span", {
-                        className: T.H,
+                        className: b.H,
                         children: [(0, i.jsx)(d.eu, {
                             "aria-label": c,
                             src: n.getAvatarURL(null, 20),

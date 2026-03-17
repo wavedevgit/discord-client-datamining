@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(110259),
     o = n(311907),
     d = n(827734),
@@ -22,24 +22,24 @@ var i = n(627968),
     C = n(722888),
     E = n(43136),
     I = n(575926),
-    b = n(652215),
-    T = n(985018),
+    T = n(652215),
+    b = n(985018),
     v = n(266847);
 
 function S(e) {
     let {
         guildId: t
     } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
-        loading: a,
+        loading: l,
         subscriptionsSettings: S
     } = (0, C.G)(t), {
         listingsLoaded: y
     } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
     }), j = r.useCallback(async () => {
-        f.default.track(b.HAw.GUILD_SHOP_EMBED_CLICKED, {
+        f.default.track(T.HAw.GUILD_SHOP_EMBED_CLICKED, {
             ...(0, _.H$)(t)
-        }), await (0, g.A)(b.BVt.SERVER_SHOP(t))
+        }), await (0, g.A)(T.BVt.SERVER_SHOP(t))
     }, [t]);
     (0, m.A)({
         type: s.ImpressionTypes.VIEW,
@@ -48,8 +48,8 @@ function S(e) {
         disableTrack: null == n
     });
     let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
-    return a || !y ? (0, i.jsx)("div", {
-        className: l()(v.lm, v.dc),
+    return l || !y ? (0, i.jsx)("div", {
+        className: a()(v.lm, v.dc),
         children: (0, i.jsx)(u.y$y, {})
     }) : null == n || null == S ? null : (0, i.jsxs)("div", {
         className: v.lm,
@@ -67,14 +67,14 @@ function S(e) {
                 variant: "heading-sm/semibold",
                 color: "interactive-text-default",
                 className: v.Nl,
-                children: T.intl.string(T.t.al5EXL)
+                children: b.intl.string(b.t.al5EXL)
             })]
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsx)(u.Heading, {
             variant: "heading-md/semibold",
             color: "text-default",
-            children: T.intl.format(T.t.NZeik9, {
+            children: b.intl.format(b.t.NZeik9, {
                 guildName: n.name
             })
         }), (0, i.jsx)(u.hKd, {
@@ -98,7 +98,7 @@ function S(e) {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: T.intl.format(T.t.tKZNlb, {
+                        children: b.intl.format(b.t.tKZNlb, {
                             listingCount: N.length
                         })
                     })
@@ -106,7 +106,7 @@ function S(e) {
                     children: (0, i.jsx)(u.Text, {
                         variant: "text-sm/normal",
                         color: "text-muted",
-                        children: T.intl.format(T.t["kXr8+b"], {
+                        children: b.intl.format(b.t["kXr8+b"], {
                             createdYear: L.getFullYear()
                         })
                     })
@@ -116,7 +116,7 @@ function S(e) {
                 children: (0, i.jsx)(c.$nd, {
                     onClick: j,
                     icon: I.A,
-                    text: T.intl.string(T.t.jXx1CC)
+                    text: b.intl.string(b.t.jXx1CC)
                 })
             })]
         })]

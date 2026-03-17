@@ -1,12 +1,11 @@
 /** chunk id: 238184 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    A: () => s
+    A: () => o
 });
 var l = a(492462),
     r = a(873263),
     n = a(758836);
-let s = () => {
+let o = () => {
     let e = (0, r.zy)(),
         {
             tab: t

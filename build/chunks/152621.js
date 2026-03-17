@@ -12,14 +12,14 @@ function o(e, t) {
     let {
         data: n,
         isLoading: o
-    } = (0, s.k)(e), c = (0, i.bG)([l.A], () => l.A.getDetectableGame(e));
+    } = (0, s.k)(e), d = (0, i.bG)([l.A], () => l.A.getDetectableGame(e));
     return {
         coverImageUrl: null != e ? n?.supplementalData?.coverImageUrl ?? a.Ay.getGameAssetURL({
             id: e,
-            hash: c?.cover_image_hash,
+            hash: d?.cover_image_hash,
             keepAspectRatio: !0
         }) : void 0,
-        gameName: n?.supplementalData?.name ?? n?.name ?? c?.name ?? t ?? r.intl.string(r.t.GIWFlF),
+        gameName: n?.supplementalData?.name ?? n?.name ?? d?.name ?? t ?? r.intl.string(r.t.GIWFlF),
         isLoading: o
     }
 }

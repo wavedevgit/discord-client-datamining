@@ -1,5 +1,4 @@
 /** chunk id: 863876 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     AS: "item__87d05",
     Xt: "currentItem__87d05",

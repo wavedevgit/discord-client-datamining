@@ -1,5 +1,5 @@
 /** chunk id: 505779 params = (module,exports,require) **/
-n.d(e, {
-    V: () => i
+n.d(t, {
+    V: () => l
 });
-var r, i = ((r = {})[r.OFFICIAL = 1] = "OFFICIAL", r[r.WIKIA = 2] = "WIKIA", r[r.WIKIPEDIA = 3] = "WIKIPEDIA", r[r.FACEBOOK = 4] = "FACEBOOK", r[r.TWITTER = 5] = "TWITTER", r[r.TWITCH = 6] = "TWITCH", r[r.INSTAGRAM = 8] = "INSTAGRAM", r[r.YOUTUBE = 9] = "YOUTUBE", r[r.IPHONE = 10] = "IPHONE", r[r.IPAD = 11] = "IPAD", r[r.ANDROID = 12] = "ANDROID", r[r.STEAM = 13] = "STEAM", r[r.REDDIT = 14] = "REDDIT", r[r.ITCH = 15] = "ITCH", r[r.EPICGAMES = 16] = "EPICGAMES", r[r.GOG = 17] = "GOG", r[r.DISCORD = 18] = "DISCORD", r[r.BLUESKY = 19] = "BLUESKY", r[r.BATTLENET = 20] = "BATTLENET", r[r.RIOT = 21] = "RIOT", r[r.ROBLOX = 22] = "ROBLOX", r[r.MINECRAFT = 23] = "MINECRAFT", r)
+var a, l = ((a = {})[a.OFFICIAL = 1] = "OFFICIAL", a[a.WIKIA = 2] = "WIKIA", a[a.WIKIPEDIA = 3] = "WIKIPEDIA", a[a.FACEBOOK = 4] = "FACEBOOK", a[a.TWITTER = 5] = "TWITTER", a[a.TWITCH = 6] = "TWITCH", a[a.INSTAGRAM = 8] = "INSTAGRAM", a[a.YOUTUBE = 9] = "YOUTUBE", a[a.IPHONE = 10] = "IPHONE", a[a.IPAD = 11] = "IPAD", a[a.ANDROID = 12] = "ANDROID", a[a.STEAM = 13] = "STEAM", a[a.REDDIT = 14] = "REDDIT", a[a.ITCH = 15] = "ITCH", a[a.EPICGAMES = 16] = "EPICGAMES", a[a.GOG = 17] = "GOG", a[a.DISCORD = 18] = "DISCORD", a[a.BLUESKY = 19] = "BLUESKY", a[a.BATTLENET = 20] = "BATTLENET", a[a.RIOT = 21] = "RIOT", a[a.ROBLOX = 22] = "ROBLOX", a[a.MINECRAFT = 23] = "MINECRAFT", a)

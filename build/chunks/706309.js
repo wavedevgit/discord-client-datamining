@@ -1,16 +1,15 @@
 /** chunk id: 706309 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    s: () => u
+    s: () => x
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(18769),
-    s = a(653793),
-    i = a(673277),
-    o = a(118713);
-let d = () => (0, l.jsx)("div", {
+    o = a(653793),
+    s = a(673277),
+    d = a(118713);
+let i = () => (0, l.jsx)("div", {
         style: {
             display: "flex",
             justifyContent: "center",
@@ -31,7 +30,7 @@ let d = () => (0, l.jsx)("div", {
             height: 240
         }
     }),
-    u = {
+    x = {
         name: "Carousel",
         id: "carousel",
         component: e => (0, l.jsxs)(l.Fragment, {
@@ -44,8 +43,8 @@ let d = () => (0, l.jsx)("div", {
             }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "The carousel will pause slidding when the mouse hovers it, and resume on mouse leave."
-            }), (0, l.jsx)(i.A, {
-                children: (0, l.jsxs)(o.A, {
+            }), (0, l.jsx)(s.A, {
+                children: (0, l.jsxs)(d.A, {
                     ...e,
                     children: [(0, l.jsx)("div", {
                         style: {
@@ -79,11 +78,11 @@ let d = () => (0, l.jsx)("div", {
                         children: (0, l.jsx)(c, {})
                     })]
                 })
-            }), (0, l.jsxs)(i.A, {
+            }), (0, l.jsxs)(s.A, {
                 children: [(0, l.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "Here is an example of what a carousel inside of a card might look like for showing off different products"
-                }), (0, l.jsx)("br", {}), (0, l.jsx)(s.A, {
+                }), (0, l.jsx)("br", {}), (0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "white",
@@ -94,17 +93,17 @@ let d = () => (0, l.jsx)("div", {
                             display: "flex",
                             overflow: "hidden"
                         },
-                        children: (0, l.jsxs)(o.A, {
+                        children: (0, l.jsxs)(d.A, {
                             ...e,
-                            children: [(0, l.jsx)(d, {}), (0, l.jsx)(d, {}), (0, l.jsx)(d, {}), (0, l.jsx)(d, {}), (0, l.jsx)(d, {})]
+                            children: [(0, l.jsx)(i, {}), (0, l.jsx)(i, {}), (0, l.jsx)(i, {}), (0, l.jsx)(i, {}), (0, l.jsx)(i, {})]
                         })
                     })
                 })]
-            }), (0, l.jsxs)(i.A, {
+            }), (0, l.jsxs)(s.A, {
                 children: [(0, l.jsx)(r.Text, {
                     variant: "text-md/normal",
                     children: "And here is an example of a FeaturedBlock Carousel"
-                }), (0, l.jsx)("br", {}), (0, l.jsxs)(o.A, {
+                }), (0, l.jsx)("br", {}), (0, l.jsxs)(d.A, {
                     ...e,
                     children: [(0, l.jsx)(n.A, {
                         href: "",

@@ -1,7 +1,7 @@
 /** chunk id: 418829 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => y
+    A: () => p
 });
 var r = n(627968),
     i = n(64700),
@@ -21,8 +21,8 @@ function h(e) {
         partialRoot: t,
         target: n,
         defaultTarget: h,
-        onClose: y,
-        sidebarFooter: p,
+        onClose: p,
+        sidebarFooter: y,
         searchBar: _,
         onPanelChange: x,
         emptyState: b,
@@ -47,39 +47,39 @@ function h(e) {
             }
         })
     }, [C, w, x, A, N]);
-    let [I, T] = i.useState(!0);
+    let [T, I] = i.useState(!0);
     (0, a.Ay)(() => (m.A.navigate(k, {
         animatePanelScroll: !1,
         animateSidebarScroll: !1,
         showNavigationMobile: null == n
-    }), T(!1), () => {
+    }), I(!1), () => {
         m.A.reset(), f.A.reset(), d.A.resetState()
     }));
     let R = i.useMemo(() => ({
             visibleDirectory: N,
             accessibleDirectory: C
         }), [N, C]),
-        P = i.useMemo(() => () => w(y), [w, y]),
-        D = null != j ? N.get(j) : void 0;
+        D = i.useMemo(() => () => w(p), [w, p]),
+        M = null != j ? N.get(j) : void 0;
     return (0, r.jsx)(c.x.Provider, {
         value: R,
         children: (0, r.jsxs)("div", {
             className: g.k,
             children: [(0, r.jsx)(l.L, {
                 root: S,
-                onClose: P,
-                footer: p,
+                onClose: D,
+                footer: y,
                 emptyState: b,
                 searchBar: _
             }), (0, r.jsx)(s.A, {
-                onClose: P,
-                setting: I ? void 0 : D ?? E
+                onClose: D,
+                setting: T ? void 0 : M ?? E
             })]
         })
     })
 }
 
-function y(e) {
+function p(e) {
     return (0, r.jsx)(o.ms, {
         children: (0, r.jsx)(h, {
             ...e

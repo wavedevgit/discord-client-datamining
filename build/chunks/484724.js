@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(686956),
+    l = n(311907),
+    a = n(686956),
     s = n(688810),
     o = n(202384),
     d = n(51758),
@@ -25,13 +25,13 @@ function E(e) {
     let {
         code: t
     } = e, [n, E, I] = t.split("-"), {
-        analyticsLocations: b
+        analyticsLocations: T
     } = (0, s.Ay)(), {
-        guildScheduledEvent: T,
+        guildScheduledEvent: b,
         guild: v,
         channel: S,
         isMember: y
-    } = (0, a.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
+    } = (0, l.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
         let e = A.Ay.getGuildScheduledEvent(E) ?? void 0,
             t = h.A.getGuild(n),
             i = _.A.getChannel(e?.channel_id);
@@ -43,20 +43,20 @@ function E(e) {
         }
     }, [n, E]);
     return r.useEffect(() => {
-        T?.id == null && x.A.fetchGuildEvent(n, E), g.A.getGuildEventUserCounts(n, E, null != I ? [I] : []), g.A.getGuildEventsForCurrentUser(n)
-    }, [E, n, T?.id, I]), (0, i.jsx)(f.Ay, {
+        b?.id == null && x.A.fetchGuildEvent(n, E), g.A.getGuildEventUserCounts(n, E, null != I ? [I] : []), g.A.getGuildEventsForCurrentUser(n)
+    }, [E, n, b?.id, I]), (0, i.jsx)(f.Ay, {
         guild: v,
         channel: S,
-        guildScheduledEvent: T,
+        guildScheduledEvent: b,
         isMember: y,
         onAcceptInstantInvite: () => {
             if ((0, c.g)({
                     guild: v,
                     isMember: y,
-                    analyticsLocations: b
+                    analyticsLocations: T
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
-                l.A.joinGuild(n, {
+                a.A.joinGuild(n, {
                     source: C.Q4z.GUILD_EVENT_EMBED
                 }).catch(() => {})
             }

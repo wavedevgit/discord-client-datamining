@@ -5,8 +5,8 @@ n.d(e, {
     zJ: () => g
 });
 var r = n(989349),
-    a = n.n(r),
-    s = n(334465);
+    s = n.n(r),
+    a = n(334465);
 n(723702), n(371794);
 var i = n(652215),
     l = n(985018);
@@ -18,7 +18,7 @@ let u = {},
     });
 
 function d(t) {
-    let e = (0, s.B)(t, {
+    let e = (0, a.B)(t, {
         path: i.BVt.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug")
     });
     return null != e ? e.params.skuId : null
@@ -189,8 +189,8 @@ function g(t) {
     if (null != e) return e.format("MMMM DD");
     if (null == n) return null;
     for (let t = 0; t < _.length; t++) {
-        let [e, r] = _[t], s = a()(n, e, !0);
-        if (s.isValid()) return s.format(r)
+        let [e, r] = _[t], a = s()(n, e, !0);
+        if (a.isValid()) return a.format(r)
     }
     return n
 }

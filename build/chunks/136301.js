@@ -1,13 +1,12 @@
 /** chunk id: 136301 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    o: () => i
+    o: () => s
 });
 var l = a(627968),
     r = a(397927),
     n = a(673277),
-    s = a(634791);
-let i = {
+    o = a(634791);
+let s = {
     name: "The Any Block",
     id: "any",
     component: () => (0, l.jsxs)("div", {
@@ -18,7 +17,7 @@ let i = {
             variant: "text-md/semibold",
             children: "It's ONLY use is to be overriden by another block in `useComponentRegistry`"
         }), (0, l.jsx)(n.A, {
-            children: (0, l.jsx)(s.A, {})
+            children: (0, l.jsx)(o.A, {})
         })]
     }),
     controls: {}

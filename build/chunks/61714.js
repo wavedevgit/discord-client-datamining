@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(717558),
     _ = n(429913),
     m = n(47167),
-    x = n(235986),
-    E = n(15285),
+    E = n(235986),
+    x = n(15285),
     y = n(769015),
     v = n(652896),
     S = n(277680),
@@ -32,15 +32,15 @@ var i = n(627968),
     b = n(69407),
     j = n(520006),
     D = n(352018),
-    R = n(481947),
-    L = n(616356),
+    L = n(481947),
+    R = n(616356),
     w = n(734057),
-    k = n(760751),
-    M = n(430452),
+    M = n(760751),
+    k = n(430452),
     P = n(309010),
     G = n(485296),
-    V = n(157257),
-    U = n(607567),
+    U = n(157257),
+    V = n(607567),
     z = n(256415),
     H = n(996439),
     W = n(427262),
@@ -67,10 +67,10 @@ function q(e) {
         context: A,
         guildId: f,
         voiceState: _
-    } = e, m = (0, r.bG)([M.Ay], () => M.Ay.isLocalMute(l.id)), x = (0, r.bG)([L.A], () => L.A.getCurrentUserActiveStream()), E = (0, r.yK)([L.A], () => null != x ? L.A.getViewerIds(x) : []), y = (0, g.A)({
+    } = e, m = (0, r.bG)([k.Ay], () => k.Ay.isLocalMute(l.id)), E = (0, r.bG)([R.A], () => R.A.getCurrentUserActiveStream()), x = (0, r.yK)([R.A], () => null != E ? R.A.getViewerIds(E) : []), y = (0, g.A)({
         userId: l.id,
         context: A
-    }), v = (0, r.bG)([G.A], () => G.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([L.A], () => null != L.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != x && x.ownerId !== l.id && E.includes(l.id), [x, l.id, E]);
+    }), v = (0, r.bG)([G.A], () => G.A.isPrioritySpeaker(l.id, A)), S = (0, r.bG)([R.A], () => null != R.A.getStreamForUser(l.id, f)), C = s.useMemo(() => null != E && E.ownerId !== l.id && x.includes(l.id), [E, l.id, x]);
     if (c === Z.f5z.ONLY_WHILE_SPEAKING && n && !y) return null;
     let {
         mute: I,
@@ -79,7 +79,7 @@ function q(e) {
         deaf: O,
         selfDeaf: b
     } = _;
-    return (0, i.jsx)(R.Ay, {
+    return (0, i.jsx)(L.Ay, {
         guildId: f,
         onClick: n ? void 0 : e => h?.(e, l),
         onContextMenu: n ? void 0 : e => p?.(e, l),
@@ -206,7 +206,7 @@ class $ extends s.PureComponent {
                 [c.A.VOICE_WIDGET_TOP_MARGIN]: l,
                 [Q.mn]: l
             }),
-            children: (0, i.jsx)(R.Wr, {
+            children: (0, i.jsx)(L.Wr, {
                 className: Q.tA,
                 children: p
             })
@@ -294,9 +294,9 @@ class $ extends s.PureComponent {
                         game: l
                     }) : (0, i.jsx)(C.A, {
                         title: h
-                    }), (0, i.jsxs)(x.A, {
-                        direction: x.A.Direction.VERTICAL,
-                        justify: x.A.Justify.BETWEEN,
+                    }), (0, i.jsxs)(E.A, {
+                        direction: E.A.Direction.VERTICAL,
+                        justify: E.A.Justify.BETWEEN,
                         className: Q.gA,
                         children: [(0, i.jsx)(u.Text, {
                             className: Q.$A,
@@ -306,7 +306,7 @@ class $ extends s.PureComponent {
                             children: o?.name ?? p
                         })]
                     })]
-                }), (0, i.jsxs)(x.A, {
+                }), (0, i.jsxs)(E.A, {
                     grow: 0,
                     children: [(0, i.jsx)("div", {
                         className: Q.yf,
@@ -392,23 +392,23 @@ function ee(e) {
     let t = (0, r.bG)([P.A, w.A], () => w.A.getChannel(P.A.getVoiceChannelId())),
         n = (0, m.Ay)(t),
         s = function() {
-            let [e] = (0, r.bG)([U.Ay, O.A, P.A, w.A], () => {
+            let [e] = (0, r.bG)([V.Ay, O.A, P.A, w.A], () => {
                 let e = w.A.getChannel(P.A.getVoiceChannelId());
                 return null == e ? [
                     [], -1
-                ] : e.isGuildStageVoice() ? [O.A.getMutableParticipants(e.id, b.ip.SPEAKER), O.A.getParticipantsVersion(e.id)] : [U.Ay.getVoiceStatesForChannel(e), U.Ay.getVoiceStateVersion(e.getGuildId())]
+                ] : e.isGuildStageVoice() ? [O.A.getMutableParticipants(e.id, b.ip.SPEAKER), O.A.getParticipantsVersion(e.id)] : [V.Ay.getVoiceStatesForChannel(e), V.Ay.getVoiceStateVersion(e.getGuildId())]
             }, [], H.D);
             return e
         }(),
-        l = (0, r.bG)([L.A], () => L.A.getStreamerActiveStreamMetadata()),
-        a = (0, r.bG)([E.Ay, V.A, k.A], () => {
-            let e = (0, I.A)(E.Ay, V.A);
-            return null != e ? k.A.findGame(e)?.id : null
+        l = (0, r.bG)([R.A], () => R.A.getStreamerActiveStreamMetadata()),
+        a = (0, r.bG)([x.Ay, U.A, M.A], () => {
+            let e = (0, I.A)(x.Ay, U.A);
+            return null != e ? M.A.findGame(e)?.id : null
         }),
         o = (0, _.h)(a),
-        d = (0, r.cf)([E.Ay, V.A, L.A, z.default], () => {
-            let e = (0, I.A)(E.Ay, V.A),
-                t = L.A.getCurrentUserActiveStream();
+        d = (0, r.cf)([x.Ay, U.A, R.A, z.default], () => {
+            let e = (0, I.A)(x.Ay, U.A),
+                t = R.A.getCurrentUserActiveStream();
             return {
                 displayUserMode: z.default.getDisplayUserMode(),
                 displayNameMode: z.default.getDisplayNameMode(),

@@ -1,5 +1,4 @@
 /** chunk id: 345938 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     d: () => r
 });
@@ -12,7 +11,7 @@ let r = e => {
         guildId: r,
         source: i,
         analyticsLocations: o,
-        analyticsContext: c
+        analyticsContext: d
     } = e;
     (0, l.mMO)(async () => {
         let {
@@ -24,7 +23,7 @@ let r = e => {
             guildId: r,
             source: i,
             analyticsLocations: o,
-            analyticsContext: c
+            analyticsContext: d
         })
     }, {
         stackingBehavior: "stack",

@@ -1,5 +1,4 @@
 /** chunk id: 848752 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     Ay: () => h,
     Oj: () => m,
@@ -11,13 +10,13 @@ var a = n(627968),
     r = n.n(s),
     i = n(397927),
     o = n(532197),
-    c = n(331026);
-let d = {
-    CENTER: c.Hu,
-    LEFT: c.Vl
+    d = n(331026);
+let c = {
+    CENTER: d.Hu,
+    LEFT: d.Vl
 };
 class u extends l.PureComponent {
-    static Align = d;
+    static Align = c;
     static defaultProps = {
         scrollToPadding: {
             top: 0,
@@ -25,7 +24,7 @@ class u extends l.PureComponent {
             bottom: 0,
             right: 0
         },
-        align: d.CENTER
+        align: c.CENTER
     };
     _scrollerRef = null;
     _paginationItemRefs = [];
@@ -61,10 +60,10 @@ class u extends l.PureComponent {
             vertical: n,
             paginationContainerClass: s,
             align: o
-        } = this.props, d = n ? c.XA : c.BU;
+        } = this.props, c = n ? d.XA : d.BU;
         return (0, a.jsx)(i.GtU, {
             orientation: n ? "vertical" : "horizontal",
-            className: r()(d, s, o),
+            className: r()(c, s, o),
             ref: this.handleSetScrollerRef,
             children: t.map((t, n) => l.cloneElement(e(t, n), {
                 onClick: () => this.handlePageClick(n),
@@ -89,10 +88,10 @@ class _ extends l.PureComponent {
             className: e
         } = this.props;
         return (0, a.jsx)(i.DUT, {
-            className: r()(c.t1, e),
+            className: r()(d.t1, e),
             onClick: this.handlePrevClick,
             children: (0, a.jsx)(o.A, {
-                className: c.UE,
+                className: d.UE,
                 direction: o.A.Directions.LEFT
             })
         })
@@ -111,10 +110,10 @@ class m extends l.PureComponent {
             className: e
         } = this.props;
         return (0, a.jsx)(i.DUT, {
-            className: r()(c.XS, e),
+            className: r()(d.XS, e),
             onClick: this.handleNextClick,
             children: (0, a.jsx)(o.A, {
-                className: c.UE,
+                className: d.UE,
                 direction: o.A.Directions.RIGHT
             })
         })

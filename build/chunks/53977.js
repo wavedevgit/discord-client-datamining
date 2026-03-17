@@ -8,8 +8,8 @@ var i = n(627968),
     s = n(566605),
     r = n(379848),
     o = n(183555),
-    c = n(357541),
-    d = n(814221),
+    d = n(357541),
+    c = n(814221),
     u = n(266713),
     m = n(985018),
     g = n(798521);
@@ -19,12 +19,12 @@ function x() {
         trackUserProfileAction: e,
         trackUserProfileEditAction: t
     } = (0, o.NJ)(), x = l.useRef(!1), {
-        suggestions: f,
-        currentUser: p,
+        suggestions: p,
+        currentUser: f,
         isLoading: h
     } = (0, s.A)({
         location: "UserProfileModalV2ApplicationWidgetsEmptyState"
-    }), _ = f?.[0], A = l.useCallback(() => {
+    }), _ = p?.[0], A = l.useCallback(() => {
         t({
             action: "PRESS_ADD_WIDGET"
         }), (0, a.mMO)(async () => {
@@ -77,11 +77,11 @@ function x() {
                 align: "center",
                 children: [(0, i.jsx)(a.hKd, {
                     size: 32
-                }), I, (0, i.jsx)(c.A, {
-                    user: p,
+                }), I, (0, i.jsx)(d.A, {
+                    user: f,
                     application: _.application,
                     onDismiss: n
-                }), (0, i.jsx)(d.A, {})]
+                }), (0, i.jsx)(c.A, {})]
             }) : (0, i.jsxs)(a.BJc, {
                 gap: 32,
                 align: "center",

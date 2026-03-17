@@ -1,13 +1,12 @@
 /** chunk id: 300056 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    a: () => s
+    a: () => o
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(287944);
-let s = {
+let o = {
     name: "Tooltip",
     id: "cms-tooltip",
     component: e => (0, l.jsx)(n.A, {

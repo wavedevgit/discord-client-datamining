@@ -9,14 +9,14 @@ var l = n(503698),
     s = n(311907),
     r = n(990078),
     o = n(397927),
-    c = n(915089),
-    d = n(152621),
+    d = n(915089),
+    c = n(152621),
     u = n(61881),
     m = n(788593),
     g = n(507247),
     x = n(985018),
-    f = n(461349),
-    p = n(105778);
+    p = n(461349),
+    f = n(105778);
 
 function h(e) {
     let {
@@ -25,30 +25,30 @@ function h(e) {
         onClick: l
     } = e, {
         coverImageUrl: a,
-        gameName: c,
+        gameName: d,
         isLoading: g
-    } = (0, d.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
-        game: c
+    } = (0, c.A)(t), h = (0, s.bG)([u.A], () => u.A.suggestedFetchIsLoading), _ = x.intl.formatToPlainString(x.t["3mb1s5"], {
+        game: d
     });
     return g || h ? (0, i.jsx)("div", {
-        className: f.mD
+        className: p.mD
     }) : (0, i.jsx)(r.m, {
         text: _,
         ariaHidden: !0,
         children: (0, i.jsxs)(o.DUT, {
-            className: p.c9,
+            className: f.c9,
             onClick: l,
             "aria-label": _,
             children: [(0, i.jsx)(m.A, {
-                className: p.Iv,
+                className: f.Iv,
                 imageSrc: a,
-                gameName: c,
+                gameName: d,
                 applicationId: t,
                 userId: n,
                 disableInteraction: !0
             }), (0, i.jsx)(o.pa$, {
                 size: "md",
-                className: p.Xv,
+                className: f.Xv,
                 color: o.LU0.colors.WHITE
             })]
         })
@@ -62,14 +62,14 @@ function _(e) {
         onDismiss: l,
         onClick: s,
         className: r
-    } = e, d = (0, c.GV)();
+    } = e, c = (0, d.GV)();
     return (0, i.jsxs)("aside", {
-        className: a()(p.kL, r),
-        "aria-labelledby": d,
+        className: a()(f.kL, r),
+        "aria-labelledby": c,
         children: [(0, i.jsxs)("div", {
-            className: p.wx,
+            className: f.wx,
             children: [(0, i.jsx)(o.DUT, {
-                className: p.r,
+                className: f.r,
                 "aria-label": x.intl.string(x.t["pUR+3g"]),
                 onClick: l,
                 children: (0, i.jsx)(o.PGe, {
@@ -77,7 +77,7 @@ function _(e) {
                     color: "currentColor"
                 })
             }), (0, i.jsx)(o.Heading, {
-                id: d,
+                id: c,
                 variant: "text-xs/medium",
                 color: "text-subtle",
                 children: x.intl.string(x.t.zMUr6Z)

@@ -24,7 +24,7 @@ function g(e) {
         _ = (0, d.A)(e),
         {
             trackView: m,
-            trackClick: x
+            trackClick: E
         } = (0, h.Y)(A.KS.IncomingCall, {
             notif_type: A.KS.IncomingCall,
             notif_user_id: _,
@@ -48,7 +48,7 @@ function g(e) {
                 if (e.type !== p.rbe.GUILD_VOICE) return;
                 l.default.selectVoiceChannel(e.id)
             }
-            x("join"), s.A.track(p.HAw.VOICE_CHANNEL_SELECTED, {
+            E("join"), s.A.track(p.HAw.VOICE_CHANNEL_SELECTED, {
                 location: "Overlay Notificaiton",
                 guild_id: e.guild_id,
                 channel_id: e.id,
@@ -56,10 +56,10 @@ function g(e) {
             })
         },
         onCancelClick: () => {
-            i.A.stopRinging(e.id), x("decline")
+            i.A.stopRinging(e.id), E("decline")
         },
         onDismissClick: () => {
-            x("dismiss")
+            E("dismiss")
         }
     }
 }

@@ -8,14 +8,14 @@ var i = n(627968),
     s = n.n(a),
     r = n(777480),
     o = n(311907),
-    c = n(192308),
-    d = n(397927),
+    d = n(192308),
+    c = n(397927),
     u = n(793574),
     m = n(688810),
     g = n(979286),
     x = n(871123),
-    f = n(690946),
-    p = n(898616),
+    p = n(690946),
+    f = n(898616),
     h = n(44724),
     _ = n(808247),
     A = n(178213),
@@ -47,10 +47,10 @@ function D(e) {
         handleOpenCollectiblesShop: n,
         handleOpenGameShop: l,
         socialLayerStorefrontApplicationId: w.XR
-    }) : (0, i.jsx)(d.Button, {
+    }) : (0, i.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        icon: d.U1X,
+        icon: c.U1X,
         text: O.intl.string(O.t["i/yzHs"]),
         onClick: n
     })
@@ -72,10 +72,10 @@ function G(e) {
             handleOpenCollectiblesShop: l,
             handleOpenGameShop: a,
             socialLayerStorefrontApplicationId: r
-        }) : (0, i.jsx)(d.Button, {
+        }) : (0, i.jsx)(c.Button, {
             variant: "secondary",
             size: "sm",
-            icon: d.j96,
+            icon: c.j96,
             text: O.intl.string(O.t.SDUwM0),
             onClick: l
         }), (0, i.jsx)(k.A, {
@@ -99,27 +99,27 @@ function M(e) {
         className: P.y7,
         children: [(0, i.jsxs)("div", {
             className: P.q6,
-            children: [(0, i.jsx)(d.Heading, {
+            children: [(0, i.jsx)(c.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 children: O.intl.string(O.t.HGnLLT)
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-sm/normal",
                 color: "text-default",
                 children: O.intl.string(O.t["/X1ny6"])
             })]
-        }), (0, i.jsxs)(d.ButtonGroup, {
+        }), (0, i.jsxs)(c.ButtonGroup, {
             size: "sm",
-            children: [t && (0, i.jsx)(d.Button, {
+            children: [t && (0, i.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
-                icon: d.U1X,
+                icon: c.U1X,
                 text: O.intl.string(O.t.ZbS4QB),
                 onClick: a
-            }), l && (0, i.jsx)(d.Button, {
+            }), l && (0, i.jsx)(c.Button, {
                 variant: "primary",
                 size: "sm",
-                icon: d.U1X,
+                icon: c.U1X,
                 text: n === w.XR ? O.intl.string(O.t["kq/75v"]) : O.intl.string(O.t.apFNLU),
                 onMouseDown: r,
                 onClick: s
@@ -134,12 +134,12 @@ function U(e) {
         profileOwner: n,
         wishlist: a,
         socialLayerStorefrontApplicationId: s,
-        isEligibleForSocialLayerMarketingInWishlist: c,
+        isEligibleForSocialLayerMarketingInWishlist: d,
         handleOpenShop: u,
         handleOpenGameShop: m
     } = e, g = a.id, x = (0, o.bG)([E.A], () => E.A.getWishlistSettings(n.id, g)), {
-        trackUserProfileWishlistAction: f
-    } = (0, v.NJ)(), p = !1 === n.nsfwAllowed, [h, A] = l.useState(!0);
+        trackUserProfileWishlistAction: p
+    } = (0, v.NJ)(), f = !1 === n.nsfwAllowed, [h, A] = l.useState(!0);
     l.useEffect(() => {
         x?.visibility != null && A(x.visibility === r.a.PUBLIC)
     }, [x?.visibility]);
@@ -149,12 +149,12 @@ function U(e) {
                 action: n,
                 productLines: i
             } = e;
-            null != t && f({
+            null != t && p({
                 wishlistId: t,
                 action: n,
                 productLines: i
             })
-        }, [f]),
+        }, [p]),
         j = (0, b.A)({
             wishlistId: g,
             onAction: I,
@@ -163,31 +163,31 @@ function U(e) {
         T = l.useCallback(() => {
             if (null == g) return;
             let e = h ? r.a.PRIVATE : r.a.PUBLIC;
-            A(!h), _.A.updateWishlistVisibility(g, e), f({
+            A(!h), _.A.updateWishlistVisibility(g, e), p({
                 wishlistId: g,
                 action: h ? L.Mq.WISHLIST_TOGGLE_PRIVATE : L.Mq.WISHLIST_TOGGLE_PUBLIC,
                 productLines: a?.getProductLines()
             })
-        }, [g, h, f, a]);
+        }, [g, h, p, a]);
     return (0, i.jsxs)(i.Fragment, {
         children: [!h && (0, i.jsxs)("div", {
             className: P.Q9,
-            children: [(0, i.jsx)(d.G3N, {
+            children: [(0, i.jsx)(c.G3N, {
                 size: "custom",
                 width: 16,
                 height: 16
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 children: O.intl.string(O.t.RX7D9h)
             })]
-        }), h && p && (0, i.jsxs)("div", {
+        }), h && f && (0, i.jsxs)("div", {
             className: P.n3,
-            children: [(0, i.jsx)(d.mir, {
+            children: [(0, i.jsx)(c.mir, {
                 size: "custom",
                 width: 16,
                 height: 16
-            }), (0, i.jsx)(d.Text, {
+            }), (0, i.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
                 children: O.intl.string(O.t.d78ChW)
@@ -195,21 +195,21 @@ function U(e) {
         }), (0, i.jsxs)("div", {
             ref: j,
             className: P.U1,
-            children: [(0, i.jsx)(d.Text, {
+            children: [(0, i.jsx)(c.Text, {
                 variant: "text-xs/semibold",
                 color: "text-subtle",
                 children: O.intl.format(O.t.r6Y1Lg, {
                     count: a.items.length
                 })
             }), t ? (0, i.jsx)(G, {
-                isSocialLayerStorefrontEnabled: c,
+                isSocialLayerStorefrontEnabled: d,
                 isWishlistPublic: h,
                 handleOpenShop: u,
                 handleOpenGameShop: m,
                 handleToggleWishlistVisibility: T,
                 socialLayerStorefrontApplicationId: s
             }) : (0, i.jsx)(D, {
-                isSocialLayerStorefrontEnabled: c,
+                isSocialLayerStorefrontEnabled: d,
                 handleOpenShop: u,
                 handleOpenGameShop: m
             })]
@@ -232,7 +232,7 @@ function F(e) {
         wishlistId: E.A.getFirstWishlistId(t.id),
         currentUser: j.default.getCurrentUser()
     })), {
-        analyticsLocations: d
+        analyticsLocations: c
     } = (0, m.Ay)(), _ = r?.id === t.id, v = w.XR, {
         wishlist: b,
         wasFetched: R,
@@ -240,23 +240,23 @@ function F(e) {
     } = (0, I.fw)({
         wishlistId: a,
         userId: t.id
-    }), L = (0, p.A)({
+    }), L = (0, f.A)({
         wishlist: b,
         profileOwner: t,
         currentUser: r
-    }), O = (0, f.X)({
+    }), O = (0, p.X)({
         location: "user-profile-modal-v2-wishlist"
     }), D = (0, A.GG)("user-profile-modal-v2-wishlist"), G = _ && (O && L || D), F = l.useCallback(() => {
-        (0, c.closeAllModals)(), (0, g.Cz)({
-            analyticsLocations: d,
+        (0, d.closeAllModals)(), (0, g.Cz)({
+            analyticsLocations: c,
             analyticsSource: u.A.USER_PROFILE_WISHLIST
         })
-    }, [d]), W = l.useCallback(() => {
+    }, [c]), W = l.useCallback(() => {
         (0, h.X)({
             guildId: (0, x.zf)()
         })
     }, []), H = l.useCallback(() => {
-        (0, c.closeAllModals)(), (0, h.default)({
+        (0, d.closeAllModals)(), (0, h.default)({
             guildId: (0, x.zf)()
         })
     }, []);
@@ -295,7 +295,7 @@ function F(e) {
             user: t,
             wishlist: b,
             hasFetchedWishlist: R,
-            analyticsLocations: d,
+            analyticsLocations: c,
             className: B ? P._E : P.HZ
         })]
     })

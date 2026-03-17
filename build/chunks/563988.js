@@ -1,5 +1,4 @@
 /** chunk id: 563988 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     R: () => s
 });
@@ -14,8 +13,8 @@ function s(e) {
         applicationId: t,
         skuIds: n,
         guildId: s,
-        analyticsLocations: c,
-        onCardClick: o
+        analyticsLocations: o,
+        onCardClick: c
     } = e;
     return null == n || 0 === n.length ? null : (0, a.jsx)(l.A, {
         gap: "md",
@@ -27,9 +26,9 @@ function s(e) {
                 skuId: e,
                 variant: i.s.SMALL,
                 guildId: s,
-                analyticsLocations: c,
-                onClick: null != o ? t => {
-                    t.preventDefault(), o(e)
+                analyticsLocations: o,
+                onClick: null != c ? t => {
+                    t.preventDefault(), c(e)
                 } : void 0
             })
         }, `${e}-${n}`))

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(554146),
+    l = n(311907),
+    a = n(554146),
     s = n(342494),
     o = n(397927),
     d = n(735991),
@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(760751),
     E = n(320501),
     I = n(139675),
-    b = n(486020),
-    T = n(456060),
+    T = n(486020),
+    b = n(456060),
     v = n(659051),
     S = n(837197),
     y = n(359549),
@@ -35,8 +35,8 @@ var i = n(627968),
 
 function M(e) {
     var t, n;
-    let M, O, {
-            analyticsLocations: D,
+    let M, D, {
+            analyticsLocations: O,
             application: w,
             channel: k,
             currentUserId: U,
@@ -56,7 +56,7 @@ function M(e) {
                 bot: n
             } = t;
             return {
-                iconSrc: (e.activity?.icon_override != null ? (0, I.uD)(t.id, e.activity?.icon_override) : null) ?? b.Ay.getApplicationIconURL({
+                iconSrc: (e.activity?.icon_override != null ? (0, I.uD)(t.id, e.activity?.icon_override) : null) ?? T.Ay.getApplicationIconURL({
                     id: t.id,
                     icon: t.icon,
                     bot: n
@@ -72,13 +72,13 @@ function M(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = w.id, n = F.author.id, M = (0, f.d)(t), O = (0, a.bG)([m.A, C.A], () => {
+        } = (t = w.id, n = F.author.id, M = (0, f.d)(t), D = (0, l.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: O?.id ?? void 0,
+                applicationId: D?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
@@ -87,7 +87,7 @@ function M(e) {
         }),
         X = (0, y.A)({
             application: w,
-            analyticsLocations: D
+            analyticsLocations: O
         }),
         Z = r.useMemo(() => {
             if (null != X) return {
@@ -107,21 +107,21 @@ function M(e) {
             hasAlreadyLinked: ei,
             startAuthorization: er
         } = (0, _.RD)(w),
-        ea = (0, u.z)(er, ei),
-        el = !(0, v.A)(W, F, w.id),
-        es = (0, T.n$)(z, F.activity?.type, el),
+        el = (0, u.z)(er, ei),
+        ea = !(0, v.A)(W, F, w.id),
+        es = (0, b.n$)(z, F.activity?.type, ea),
         eo = r.useRef(null),
-        ed = (0, a.bG)([E.A], () => E.A.getMessages(k.id)),
+        ed = (0, l.bG)([E.A], () => E.A.getMessages(k.id)),
         ec = () => {
             let e = [];
-            return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
+            return (0, S.G)(F.id, ed) && en && !ei && et.enabled && e.push(a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL), (0, i.jsx)(g.Ay, {
                 contentTypes: e,
                 children: e => {
                     let {
                         visibleContent: t,
                         markAsDismissed: n
                     } = e;
-                    if (t === l.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(s.AM, {
+                    if (t === a.M.GAME_INVITE_ACCOUNT_LINK_UPSELL) return (0, i.jsx)(s.AM, {
                         graphic: {
                             type: "dynamic",
                             component: o.Z86.ACCOUNT_LINK_DISPLAY,
@@ -144,7 +144,7 @@ function M(e) {
                 }
             })
         };
-    return el ? (0, i.jsx)(j.A, {
+    return ea ? (0, i.jsx)(j.A, {
         message: F,
         application: w,
         applicationName: z,
@@ -159,9 +159,9 @@ function M(e) {
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        analyticsLocations: D,
+        analyticsLocations: O,
         showAuthButton: en && !ei && et.enabled,
-        startAuthorization: ea,
+        startAuthorization: el,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     }) : (0, i.jsx)(L.A, {
@@ -182,10 +182,10 @@ function M(e) {
         currentUserPresenceActivity: G,
         hideParty: B,
         partyStatusElement: V,
-        analyticsLocations: D,
+        analyticsLocations: O,
         showAuthButton: en && !ei && et.enabled,
         canPromptAuth: en && !ei,
-        startAuthorization: ea,
+        startAuthorization: el,
         accountLinkButtonRef: eo,
         renderAccountLinkUpsell: ec
     })

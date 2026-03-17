@@ -1,10 +1,9 @@
 /** chunk id: 294454 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     Be: () => o,
     aU: () => r,
     fO: () => i,
-    vK: () => c
+    vK: () => d
 });
 var a = n(627968);
 n(64700);
@@ -17,8 +16,8 @@ function i(e) {
         message: t,
         source: i,
         initialSelectedDestinations: o = [],
-        forwardOptions: c,
-        onRequestSent: d,
+        forwardOptions: d,
+        onRequestSent: c,
         customSendHandler: u
     } = e;
     (0, s.pp)(t.channel_id, t.id, i), (0, l.mMO)(async () => {
@@ -29,8 +28,8 @@ function i(e) {
             ...n,
             message: t,
             initialSelectedDestinations: o,
-            forwardOptions: c,
-            onRequestSent: d,
+            forwardOptions: d,
+            onRequestSent: c,
             customSendHandler: u,
             source: i
         })
@@ -43,7 +42,7 @@ function o() {
     (0, l.OoC)(r)
 }
 
-function c(e) {
+function d(e) {
     let {
         message: t,
         failedDestinations: s,

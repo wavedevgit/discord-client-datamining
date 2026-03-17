@@ -16,8 +16,8 @@ var r = n(627968),
     f = n(780964),
     g = n(162396),
     h = n(12901),
-    y = n(921854),
-    p = n(987281),
+    p = n(921854),
+    y = n(987281),
     _ = n(840065),
     x = n(985018),
     b = n(249316);
@@ -27,7 +27,7 @@ function v(e) {
         target: t,
         ...n
     } = e, a = m.A.useField("query"), x = i.useRef(null);
-    (0, p.V)();
+    (0, y.V)();
     let b = i.useCallback(() => {
             m.A.setState({
                 query: ""
@@ -40,7 +40,7 @@ function v(e) {
         };
         return o.default.addChangeListener(e), () => o.default.removeChangeListener(e)
     }, []), v) ? null : (0, r.jsx)(l.A, {
-        partialRoot: y.D,
+        partialRoot: p.D,
         searchBar: A,
         emptyState: j,
         sidebarFooter: g.A,

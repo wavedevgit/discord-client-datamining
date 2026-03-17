@@ -1,11 +1,11 @@
 /** chunk id: 795982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => O
+    A: () => D
 });
 var i = n(627968),
     r = n(64700),
-    a = n(158954),
-    l = n(311907),
+    l = n(158954),
+    a = n(311907),
     s = n(52133),
     o = n(827734),
     d = n(397927),
@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(71393),
     E = n(576705),
     I = n(994500),
-    b = n(287809),
-    T = n(862804),
+    T = n(287809),
+    b = n(862804),
     v = n(627950),
     S = n(387408),
     y = n(427209),
@@ -37,7 +37,7 @@ function L() {
             size: "xs",
             className: j.nr,
             color: o.A.colors.TEXT_MUTED
-        }), (0, i.jsx)(a.EYj, {
+        }), (0, i.jsx)(l.EYj, {
             className: j.TK,
             variant: "text-sm/semibold",
             color: "text-muted",
@@ -51,7 +51,7 @@ function R(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new T.j(t, n, c), [t, n, c]), m = (0, l.bG)([x.A, b.default, I.A, E.A, C.A, u.A], () => _.getForwardInfo(x.A, b.default, I.A, E.A, C.A, u.A).footerInfo, [_], s.A), h = (0, l.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
+    } = e, _ = r.useMemo(() => new b.j(t, n, c), [t, n, c]), m = (0, a.bG)([x.A, T.default, I.A, E.A, C.A, u.A], () => _.getForwardInfo(x.A, T.default, I.A, E.A, C.A, u.A).footerInfo, [_], s.A), h = (0, a.bG)([x.A], () => x.A.getChannel(t.messageReference?.channel_id)), p = r.useCallback(() => {
         (0, v.A)(t)
     }, [t]);
     return null == m ? null : (0, i.jsxs)(d.DUT, {
@@ -64,7 +64,7 @@ function R(e) {
             alt: ""
         }) : null, null == m.originIconUrl && h?.isThread() ? (0, i.jsx)(P, {
             channel: h
-        }) : null, (0, i.jsx)(a.EYj, {
+        }) : null, (0, i.jsx)(l.EYj, {
             className: j.PJ,
             variant: "text-sm/medium",
             color: "none",
@@ -81,8 +81,8 @@ function P(e) {
         channel: t
     } = e, n = (0, g.Vp)({
         location: "ForwardFooter"
-    }), a = r.useMemo(() => (0, c.gU)(t), [t]);
-    return n.enabled && null != a ? (0, i.jsx)(a, {
+    }), l = r.useMemo(() => (0, c.gU)(t), [t]);
+    return n.enabled && null != l ? (0, i.jsx)(l, {
         className: j.yl,
         size: "xs",
         color: "currentColor"
@@ -93,8 +93,8 @@ function M(e) {
     let {
         message: t,
         snapshot: n,
-        index: a
-    } = e, s = r.useMemo(() => (0, S.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, l.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
+        index: l
+    } = e, s = r.useMemo(() => (0, S.A)(t, n), [t, n]), o = A.hD.useSetting(), d = A.rs.useSetting(), c = (0, a.bG)([f.A], () => f.A.isDeveloper), u = (0, _.S)((s.editedTimestamp ?? s.timestamp).valueOf()), {
         content: g,
         hasSpoilerEmbeds: C,
         hasBailedAst: E
@@ -107,7 +107,7 @@ function M(e) {
         allowLinks: !0,
         allowDevLinks: c,
         previewLinkTarget: !0
-    }), I = (0, l.bG)([x.A], () => x.A.getChannel(t.channel_id)), b = A.hH.useSetting();
+    }), I = (0, a.bG)([x.A], () => x.A.getChannel(t.channel_id)), T = A.hH.useSetting();
     return null == I ? null : (0, i.jsxs)("div", {
         className: j.kL,
         children: [(0, i.jsx)("div", {
@@ -117,12 +117,12 @@ function M(e) {
             children: [(0, i.jsx)(L, {}), (0, i.jsx)(m.Ay, {
                 message: s,
                 content: g,
-                compact: b
+                compact: T
             }), (0, p.A)({
                 channelMessageProps: {
                     message: s,
                     channel: I,
-                    compact: b
+                    compact: T
                 },
                 hasSpoilerEmbeds: C,
                 hasBailedAst: E,
@@ -132,13 +132,13 @@ function M(e) {
             }), (0, i.jsx)(R, {
                 message: t,
                 snapshot: n,
-                index: a
+                index: l
             })]
         })]
-    }, a)
+    }, l)
 }
 
-function O(e) {
+function D(e) {
     let {
         message: t
     } = e;

@@ -19,8 +19,8 @@ var i = n(64700),
     g = n(309010),
     _ = n(967198),
     m = n(287809),
-    x = n(256415),
-    E = n(9302),
+    E = n(256415),
+    x = n(9302),
     y = n(652215);
 class v extends i.Component {
     componentDidUpdate(e) {
@@ -54,7 +54,7 @@ class v extends i.Component {
         return null
     }
 }
-let S = l.Ay.connectStores([_.A, g.A, A.A, m.default, x.default, h.Ay, f.A, p.Ay], () => {
+let S = l.Ay.connectStores([_.A, g.A, A.A, m.default, E.default, h.Ay, f.A, p.Ay], () => {
     let e = _.A.getGuildId(),
         t = g.A.getChannelId(e),
         n = A.A.getGuild(e),
@@ -70,7 +70,7 @@ let S = l.Ay.connectStores([_.A, g.A, A.A, m.default, x.default, h.Ay, f.A, p.Ay
     return {
         selectedGuild: e,
         selectedChannel: t,
-        locked: x.default.isLocked((0, E.getPID)()),
+        locked: E.default.isLocked((0, x.getPID)()),
         hasPreviewEnabled: n?.features.has(y.GuildFeatures.PREVIEW_ENABLED),
         isMemberPending: r,
         postableChannelCount: a

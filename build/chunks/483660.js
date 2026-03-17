@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(158954),
-    l = n(956793),
+    l = n(158954),
+    a = n(956793),
     s = n(265422),
     o = n(986268),
     d = n(529200),
@@ -29,7 +29,7 @@ function g(e) {
             link_channel_type: n.type,
             guild_id: A,
             channel_id: x
-        }), (0, s.i)(t.id, n.id), l.default.selectVoiceChannel(n.id)
+        }), (0, s.i)(t.id, n.id), a.default.selectVoiceChannel(n.id)
     }, [g, t, n, A, x]), C = (0, i.jsx)(d.A.Channel, {
         channel: n
     });
@@ -57,7 +57,7 @@ function g(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: p.UD,
-                children: (0, i.jsx)(a.$nd, {
+                children: (0, i.jsx)(l.$nd, {
                     fullWidth: !0,
                     onClick: f,
                     variant: "active",

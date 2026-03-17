@@ -21,15 +21,15 @@ var l = n(627968),
 let v = e => {
     let {
         message: t
-    } = e, n = (0, d.Ay)(t), v = (0, r.bG)([p.A], () => p.A.getChannel(t.channel_id)), f = a.useMemo(() => (0, s.A)(t), [t]), {
-        content: b
-    } = (0, m.A)(f, {
+    } = e, n = (0, d.Ay)(t), v = (0, r.bG)([p.A], () => p.A.getChannel(t.channel_id)), b = a.useMemo(() => (0, s.A)(t), [t]), {
+        content: f
+    } = (0, m.A)(b, {
         hideSimpleEmbedContent: !1
-    }), C = x.hH.useSetting(), j = a.useCallback(() => {
+    }), j = x.hH.useSetting(), T = a.useCallback(() => {
         let {
             leadingIcon: e,
             trailingIcon: n
-        } = (0, _.o)(t, b, !1, !1, "", {
+        } = (0, _.o)(t, f, !1, !1, "", {
             leadingIconClass: A.$r,
             trailingIconClass: A.$r,
             iconSize: h.eJ
@@ -38,11 +38,11 @@ let v = e => {
             className: A.hQ,
             children: [e, (0, l.jsx)(c.Ay, {
                 message: t,
-                content: b,
-                compact: C
+                content: f,
+                compact: j
             }), n]
         })
-    }, [t, b, C]);
+    }, [t, f, j]);
     return null == v ? null : (0, l.jsxs)("div", {
         className: A.kL,
         children: [(0, l.jsx)(i.Heading, {
@@ -52,7 +52,7 @@ let v = e => {
         }), (0, l.jsx)(i.HOs, {
             className: A.PI,
             children: (0, l.jsx)(o.A, {
-                childrenMessageContent: j(),
+                childrenMessageContent: T(),
                 childrenHeader: (0, l.jsx)(u.Ay, {
                     message: t,
                     channel: v,

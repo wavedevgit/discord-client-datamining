@@ -4,9 +4,9 @@ n.d(t, {
     u: () => C
 }), n(323874), n(14289), n(35956);
 var i, r = n(627968),
-    a = n(64700),
-    l = n(503698),
-    s = n.n(l),
+    l = n(64700),
+    a = n(503698),
+    s = n.n(a),
     o = n(299619),
     d = n(172218),
     c = n(158954),
@@ -44,11 +44,11 @@ function I(e) {
     let {
         title: n,
         header: i,
-        footer: l,
+        footer: a,
         info: C,
         staticBannerSrc: I,
-        videoBannerSrc: b,
-        bannerAspectRatio: T = 0,
+        videoBannerSrc: T,
+        bannerAspectRatio: b = 0,
         iconSrc: v,
         actions: S = [],
         primaryActionFirst: y = !1,
@@ -71,8 +71,8 @@ function I(e) {
     let {
         primaryColor: R,
         secondaryColor: P
-    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, O = (0, u.bG)([m.A], () => m.A.useReducedMotion), D = a.useRef(!1), w = (0, d.K)(e => {
-        !1 === D.current && e && (N?.onView?.(), (0, g.wV)({
+    } = (0, h.A)(v ?? I), M = `linear-gradient(45deg, ${R}, ${P})`, D = (0, u.bG)([m.A], () => m.A.useReducedMotion), O = l.useRef(!1), w = (0, d.K)(e => {
+        !1 === O.current && e && (N?.onView?.(), (0, g.wV)({
             appId: N.id,
             linkType: N.linkType,
             referrerId: N.referrerId,
@@ -80,11 +80,11 @@ function I(e) {
             guildId: N.guildId,
             channelId: N.channelId,
             messageId: N.messageId
-        }), D.current = !0)
-    }, void 0), k = null != I, U = null != b && !1 === O, G = k || U, B = 0 === T ? f.pv : f.$g, F = a.useRef(null), H = a.useCallback(() => {
+        }), O.current = !0)
+    }, void 0), k = null != I, U = null != T && !1 === D, G = k || U, B = 0 === b ? f.pv : f.$g, F = l.useRef(null), H = l.useCallback(() => {
         let e = F.current;
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-    }, []), V = a.useMemo(() => !!U && new URL(b).pathname.endsWith(".gif"), [U, b]), W = a.useMemo(() => {
+    }, []), V = l.useMemo(() => !!U && new URL(T).pathname.endsWith(".gif"), [U, T]), W = l.useMemo(() => {
         if (null != j) return e => {
             j(e), (0, g.gx)({
                 applicationId: N.id,
@@ -95,7 +95,7 @@ function I(e) {
                 isDeadEnd: N.isDeadEnd
             })
         }
-    }, [j, N]), q = a.useMemo(() => {
+    }, [j, N]), q = l.useMemo(() => {
         if (null != L) return e => {
             L(e), (0, g.gx)({
                 applicationId: N.id,
@@ -118,11 +118,11 @@ function I(e) {
             children: [U && (V ? (0, r.jsx)("div", {
                 className: f.O9,
                 style: {
-                    backgroundImage: `url(${b})`
+                    backgroundImage: `url(${T})`
                 }
             }) : (0, r.jsx)(o.A, {
                 ref: F,
-                src: b,
+                src: T,
                 mediaLayoutType: x.dG.MOSAIC,
                 loop: !0,
                 muted: !0,
@@ -174,8 +174,8 @@ function I(e) {
                         let {
                             label: n,
                             icon: i,
-                            onClick: a,
-                            disabled: l,
+                            onClick: l,
+                            disabled: a,
                             disabledReason: s,
                             submitting: o,
                             trackingArea: d,
@@ -188,13 +188,13 @@ function I(e) {
                             targetElementRef: h,
                             children: (0, r.jsx)(c.K0, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: l || null != s,
+                                disabled: a || null != s,
                                 loading: o,
                                 icon: i,
                                 "aria-label": n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    a(e), (0, g.gx)({
+                                    l(e), (0, g.gx)({
                                         applicationId: N.id,
                                         linkType: N.linkType,
                                         area: d,
@@ -208,13 +208,13 @@ function I(e) {
                             className: f.uc,
                             children: [(0, r.jsx)(c.$nd, {
                                 variant: p ? "overlay-primary" : "overlay-secondary",
-                                disabled: l || null != s,
+                                disabled: a || null != s,
                                 loading: o,
                                 icon: i,
                                 text: n,
                                 buttonRef: h,
                                 onClick: e => {
-                                    a(e), (0, g.gx)({
+                                    l(e), (0, g.gx)({
                                         applicationId: N.id,
                                         linkType: N.linkType,
                                         area: d,
@@ -233,7 +233,7 @@ function I(e) {
                         }, n)
                     })
                 })]
-            }), null != l && l]
+            }), null != a && a]
         })]
     })
 }

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(397927),
     o = n(442433),
     d = n(492749),
@@ -22,8 +22,8 @@ function g(e) {
         showEditProduct: t,
         showUnpublishProduct: n,
         showCopyLink: r,
-        showTestDownload: a,
-        showDeleteProduct: l,
+        showTestDownload: l,
+        showDeleteProduct: a,
         showReportProduct: o,
         onEditProduct: d,
         onUnpublishProduct: c,
@@ -61,7 +61,7 @@ function g(e) {
                         icon: s.qYV
                     },
                     action: _
-                }), a && (0, i.jsx)(s.Drp, {
+                }), l && (0, i.jsx)(s.Drp, {
                     id: "guild-product-test-download",
                     label: h.intl.string(h.t.aXoI6U),
                     icon: s.s3U,
@@ -76,7 +76,7 @@ function g(e) {
                     id: "guild-product-unpublish",
                     label: h.intl.string(h.t.QrkMlN),
                     action: c
-                }), l && (0, i.jsx)(s.Drp, {
+                }), a && (0, i.jsx)(s.Drp, {
                     id: "guild-product-delete",
                     label: h.intl.string(h.t.zWjqvB),
                     color: "danger",
@@ -98,8 +98,8 @@ function A(e) {
     let {
         product: t,
         guildId: n,
-        showEditProduct: a,
-        showUnpublishProduct: l,
+        showEditProduct: l,
+        showUnpublishProduct: a,
         showTestDownload: o,
         showCopyLink: d,
         showDeleteProduct: c,
@@ -125,8 +125,8 @@ function A(e) {
                 ...e,
                 guildId: n,
                 productId: t.id,
-                showEditProduct: a,
-                showUnpublishProduct: l,
+                showEditProduct: l,
+                showUnpublishProduct: a,
                 showCopyLink: d,
                 showTestDownload: o,
                 showReportProduct: u,
@@ -168,15 +168,15 @@ function x(e) {
         product: t,
         guildId: n,
         onEditProduct: r,
-        onUnpublishProduct: a,
+        onUnpublishProduct: l,
         onDeleteProduct: x,
         onCopyProductLink: f,
         onTestDownload: C,
         disabled: E = !1
-    } = e, I = (0, d.R)(t, 600), b = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, T = (0, u.z)(t);
+    } = e, I = (0, d.R)(t, 600), T = null !== t.price_tier ? (0, c.$g)(t.price_tier, m.Yr.USD) : void 0, b = (0, u.z)(t);
     return (0, i.jsxs)(s.sqX, {
         tag: "article",
-        className: l()(p.gc, p.Um, {
+        className: a()(p.gc, p.Um, {
             [p.r9]: E
         }),
         onClick: E ? void 0 : r,
@@ -193,7 +193,7 @@ function x(e) {
                 showDeleteProduct: !0,
                 showReportProduct: !1,
                 onEditProduct: r,
-                onUnpublishProduct: a,
+                onUnpublishProduct: l,
                 onDeleteProduct: x,
                 onCopyLink: f,
                 onTestDownload: C,
@@ -223,14 +223,14 @@ function x(e) {
                     children: [(0, i.jsx)(s.Text, {
                         variant: "text-md/normal",
                         color: "text-default",
-                        children: b
-                    }), null != T ? (0, i.jsxs)(i.Fragment, {
+                        children: T
+                    }), null != b ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("div", {
                             className: p.zk
                         }), (0, i.jsx)(s.Text, {
                             variant: "text-md/normal",
                             color: "text-default",
-                            children: T
+                            children: b
                         })]
                     }) : null]
                 }), (0, i.jsx)(s.hKd, {
@@ -246,7 +246,7 @@ function x(e) {
                 showDeleteProduct: !0,
                 showReportProduct: !1,
                 onEditProduct: r,
-                onUnpublishProduct: a,
+                onUnpublishProduct: l,
                 onDeleteProduct: x,
                 onCopyProductLink: f,
                 onTestDownload: C,

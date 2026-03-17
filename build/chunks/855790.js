@@ -71,7 +71,7 @@ class m extends s.PureComponent {
         })
     }
 }
-let x = e => {
+let E = e => {
         let {
             type: t = p,
             width: n,
@@ -97,7 +97,7 @@ let x = e => {
             })
         })
     },
-    E = e => {
+    x = e => {
         let {
             children: t,
             className: n,
@@ -113,13 +113,13 @@ let x = e => {
             })
         })
     };
-x.Background = e => {
+E.Background = e => {
     let {
         children: t,
         opacityOverride: n
     } = e;
     if (null == t) return null;
-    let l = [_, m, E];
+    let l = [_, m, x];
     return (0, i.jsx)(f.Consumer, {
         children: e => {
             let {
@@ -140,7 +140,7 @@ x.Background = e => {
             }
         }
     })
-}, x.Body = m, x.Content = E, x.Icon = e => {
+}, E.Body = m, E.Content = x, E.Icon = e => {
     let {
         ref: t,
         icon: n,
@@ -175,5 +175,5 @@ x.Background = e => {
             })
         })
     })
-}, x.Bar = _;
-let y = x
+}, E.Bar = _;
+let y = E

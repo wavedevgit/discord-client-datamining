@@ -1,16 +1,15 @@
 /** chunk id: 184247 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    x: () => d
+    x: () => i
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(458306),
-    s = a(261225),
-    i = a(673277),
-    o = a(427941);
-let d = {
+    o = a(261225),
+    s = a(673277),
+    d = a(427941);
+let i = {
     name: "BackgroundImage",
     id: "background-image",
     component: e => {
@@ -21,12 +20,12 @@ let d = {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
-            }), (0, l.jsx)(o.A, {
+            }), (0, l.jsx)(d.A, {
                 backgroundImage: {
                     src: t
                 },
-                children: (0, l.jsx)(i.A, {
-                    children: (0, l.jsx)(s.A, {
+                children: (0, l.jsx)(s.A, {
+                    children: (0, l.jsx)(o.A, {
                         columns: 2,
                         children: (0, l.jsxs)(n.Kp, {
                             direction: "vertical",

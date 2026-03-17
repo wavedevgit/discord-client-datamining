@@ -1,5 +1,4 @@
 /** chunk id: 921380 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     U5: "inviteInfo__29497",
     $f: "guildIcon__29497",

@@ -24,15 +24,15 @@ function _(e) {
         keybind: n
     } = e, l = s.useRef(null), h = (0, o.yK)([d.A], () => d.A.getNotifications()), _ = (0, o.bG)([c.default], () => c.default.getNotificationPositionMode());
     if ((0, o.bG)([p.A], () => p.A.isNotificationDisabled(A.KS.TextChat)) || _ === f.G6Q.DISABLED) return null;
-    let x = h.filter(e => !t || e.status !== f.yFH.TIMED_OUT),
-        E = (0, r.groupBy)(x, e => e.type);
+    let E = h.filter(e => !t || e.status !== f.yFH.TIMED_OUT),
+        x = (0, r.groupBy)(E, e => e.type);
     return (0, i.jsx)(u.A, {
         contentDomRef: l,
         observeInterval: 200,
         children: (0, i.jsx)("div", {
             ref: l,
             className: a()(g.container, g[_]),
-            children: Object.entries(E).map(e => {
+            children: Object.entries(x).map(e => {
                 let [s, l] = e;
                 return 0 === l.length ? null : (0, i.jsx)(m, {
                     locked: t,

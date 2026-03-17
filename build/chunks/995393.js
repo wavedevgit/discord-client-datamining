@@ -1,12 +1,11 @@
 /** chunk id: 995393 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     Jq: () => o,
-    Ng: () => c,
-    ST: () => d,
+    Ng: () => d,
+    ST: () => c,
     bB: () => i
 });
 var a, l, s, r, i = ((a = {}).CARD = "card", a.BUY_BUTTON = "buy_button", a.GIFT_BUTTON = "gift_button", a.WISHLIST_BUTTON = "wishlist_button", a.FORWARD_BUTTON = "forward_button", a.VIEW_DETAILS_BUTTON = "view_details_button", a),
     o = ((l = {}).BUY_BUTTON = "buy_button", l.GIFT_BUTTON = "gift_button", l.WISHLIST_BUTTON = "wishlist_button", l.COPY_LINK_BUTTON = "copy_link_button", l.VISIT_SHOP = "visit_shop", l.CAROUSEL_ITEM = "carousel_item", l.CAROUSEL_NEXT = "carousel_next", l.CAROUSEL_PREV = "carousel_prev", l.MUTE_BUTTON = "mute_button", l.FORWARD_BUTTON = "forward_button", l),
-    c = ((s = {}).COPY_LINK_BUTTON = "copy_link_button", s),
-    d = 21552 == n.j ? ((r = {}).LEARN_MORE = "learn_more", r) : null
+    d = ((s = {}).COPY_LINK_BUTTON = "copy_link_button", s),
+    c = 21552 == n.j ? ((r = {}).LEARN_MORE = "learn_more", r) : null

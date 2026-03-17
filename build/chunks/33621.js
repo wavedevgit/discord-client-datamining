@@ -1,10 +1,10 @@
 /** chunk id: 33621 params = (module,exports,require) **/
 n.d(t, {
-    t: () => a
+    t: () => l
 });
 var i = n(945810),
     r = n(79545);
-let a = (0, i.mj)({
+let l = (0, i.mj)({
     name: "2025-12-quest-cta-refactor-rollout",
     kind: "user",
     defaultConfig: {

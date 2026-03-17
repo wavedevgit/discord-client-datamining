@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(497766);
+    l = n(497766);
 n(311907), n(859703);
-var l = n(341915),
+var a = n(341915),
     s = n(890687),
     o = n(73473),
     d = n(288531),
@@ -29,8 +29,8 @@ function h(e) {
     } = (0, u.L)(), {
         expansionSpring: E,
         isAnimating: I,
-        isExpanded: b,
-        toggleExpanded: T
+        isExpanded: T,
+        toggleExpanded: b
     } = (0, u.s)({
         initiallyExpanded: h || (0, _.RA)({
             location: n,
@@ -41,11 +41,11 @@ function h(e) {
         questOrQuests: t,
         questContent: n,
         questContentPosition: p,
-        trackGuildAndChannelMetadata: n === l.uF.QUESTS_EMBED,
+        trackGuildAndChannelMetadata: n === a.uF.QUESTS_EMBED,
         sourceQuestContent: g,
-        children: e => (0, i.jsx)(a.animated.div, {
+        children: e => (0, i.jsx)(l.animated.div, {
             style: {
-                maxHeight: n === l.uF.QUESTS_EMBED ? void 0 : E.to({
+                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : E.to({
                     range: [0, 1],
                     output: [_.es, j]
                 })
@@ -67,9 +67,9 @@ function h(e) {
                     expansionSpring: E,
                     isInteracting: v,
                     isAnimating: I,
-                    isExpanded: b,
+                    isExpanded: T,
                     contentPosition: p,
-                    toggleExpanded: T,
+                    toggleExpanded: b,
                     sourceQuestContent: g
                 }), (0, i.jsx)(d.A, {
                     quest: t,
@@ -77,7 +77,7 @@ function h(e) {
                     location: n,
                     size: f,
                     isFocused: v,
-                    isExpanded: b,
+                    isExpanded: T,
                     isAnimating: I,
                     contentPosition: p,
                     sourceQuestContent: g

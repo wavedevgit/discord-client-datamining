@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(311907),
-    a = n(421380),
-    l = n(397927),
+    l = n(421380),
+    a = n(397927),
     s = n(775602),
     o = n(178540),
     d = n(341915),
@@ -24,7 +24,7 @@ function C(e) {
     let {
         quest: t,
         analyticsCtxQuestContent: n,
-        analyticsCtxSourceQuestContent: l,
+        analyticsCtxSourceQuestContent: a,
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: m
     } = e, h = (0, u.Ut)(), p = (0, r.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
@@ -41,16 +41,16 @@ function C(e) {
                 questContentCTA: _.Cy.DEFIBRILLATOR,
                 questContentPosition: d,
                 questContentRowIndex: m,
-                sourceQuestContent: l
+                sourceQuestContent: a
             })
         },
         afterRequest: e => {
             A.stopAnimation(), C(t.id, e)
         }
     });
-    return (0, i.jsx)(a.$n, {
+    return (0, i.jsx)(l.$n, {
         "data-migration-pending": !0,
-        color: a.XD.PRIMARY,
+        color: l.XD.PRIMARY,
         onClick: I,
         disabled: E,
         className: f.x,
@@ -66,20 +66,20 @@ function E(e) {
         quest: t,
         surface: n,
         analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: u
     } = e, p = (0, c.RR)({
         quest: t
-    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, b, T] = (0, c.Qo)(t, E);
-    return f || I === d.X0.DESKTOP ? (0, i.jsx)(l.Button, {
+    }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), E = (0, c.fc)(t), [I, T, b] = (0, c.Qo)(t, E);
+    return f || I === d.X0.DESKTOP ? (0, i.jsx)(a.Button, {
         variant: "secondary",
         size: u,
         disabled: !0,
         text: x.intl.string(x.t["9KoPyB"]),
         fullWidth: !0
-    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(l.Button, {
+    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(a.Button, {
         size: u,
         variant: "secondary",
         onClick: () => {
@@ -91,7 +91,7 @@ function E(e) {
                 position: s,
                 rowIndex: o,
                 impressionId: g,
-                sourceQuestContent: a
+                sourceQuestContent: l
             })
         },
         text: x.intl.string(x.t.Cfye4v),
@@ -99,7 +99,7 @@ function E(e) {
     }) : (0, i.jsx)(C, {
         quest: t,
         analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     })
@@ -109,7 +109,7 @@ let I = function(e) {
         quest: t,
         surface: n,
         analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: d
@@ -119,10 +119,10 @@ let I = function(e) {
         surface: n,
         size: d,
         analyticsCtxQuestContent: r,
-        analyticsCtxSourceQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
-    }) : (0, i.jsx)(l.Button, {
+    }) : (0, i.jsx)(a.Button, {
         size: d,
         variant: "secondary",
         disabled: !0,

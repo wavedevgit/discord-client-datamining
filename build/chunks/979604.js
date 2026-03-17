@@ -3,8 +3,8 @@ n.d(t, {
     A: () => R
 });
 var i, r = n(627968),
-    a = n(64700),
-    l = n(158954),
+    l = n(64700),
+    a = n(158954),
     s = n(311907),
     o = n(827734),
     d = n(990078),
@@ -21,8 +21,8 @@ var i, r = n(627968),
     C = n(674378),
     E = n(723702),
     I = n(541830),
-    b = n(715671),
-    T = n(598429),
+    T = n(715671),
+    b = n(598429),
     v = n(652215),
     S = n(985018),
     y = n(643966),
@@ -35,7 +35,7 @@ let j = Object.freeze({
     [v.Hf6.MOVE_UP]: "queued",
     [v.Hf6.RESUME]: "paused"
 });
-class L extends a.Component {
+class L extends l.Component {
     static defaultProps = {
         fullWidth: !1,
         size: "md",
@@ -91,13 +91,13 @@ class L extends a.Component {
             libraryApplication: e,
             source: t
         } = this.props;
-        b.installApplication(e.id, e.branchId, t)
+        T.installApplication(e.id, e.branchId, t)
     };
     handleUpdate = () => {
         let {
             libraryApplication: e
         } = this.props;
-        b.updateApplication(e.id, e.branchId)
+        T.updateApplication(e.id, e.branchId)
     };
     onClickHandlers = {
         add_to_library: this.handleAddToLibrary,
@@ -127,20 +127,20 @@ class L extends a.Component {
             fullWidth: t,
             size: n,
             playButtonVariant: i = "secondary",
-            disabledVariant: a,
-            onDropdownOpen: l,
+            disabledVariant: l,
+            onDropdownOpen: a,
             onDropdownClose: s,
             analyticsListSort: o,
             analyticsListIndex: d
         } = this.props;
-        return (0, r.jsx)(T.A, {
+        return (0, r.jsx)(b.A, {
             applicationId: e.id,
             libraryApplication: e,
             fullWidth: t,
             size: n,
             variant: i,
-            disabledVariant: a,
-            onDropdownOpen: l,
+            disabledVariant: l,
+            onDropdownOpen: a,
             onDropdownClose: s,
             analyticsListSort: o,
             analyticsListIndex: d
@@ -150,18 +150,18 @@ class L extends a.Component {
         let {
             fullWidth: n,
             size: i,
-            disabledVariant: a = "secondary",
+            disabledVariant: l = "secondary",
             tooltipPosition: s
         } = this.props, o = this.renderProgressBar();
         return (0, r.jsxs)("div", {
             className: null != o ? y.c : void 0,
             children: [(0, r.jsxs)("div", {
                 className: y.Yr,
-                children: [(0, r.jsx)(l.$nd, {
+                children: [(0, r.jsx)(a.$nd, {
                     text: this.getText(e),
                     fullWidth: n,
                     size: i,
-                    variant: a,
+                    variant: l,
                     disabled: !0
                 }), (0, r.jsx)(d.m, {
                     text: t,
@@ -194,16 +194,16 @@ class L extends a.Component {
         let {
             fullWidth: n,
             size: i,
-            actionButtonVariant: a = "primary",
+            actionButtonVariant: l = "primary",
             isCloudSyncing: s
         } = this.props, o = this.renderProgressBar();
         return (0, r.jsxs)("div", {
             className: null != o ? y.c : void 0,
-            children: [(0, r.jsx)(l.$nd, {
+            children: [(0, r.jsx)(a.$nd, {
                 text: this.getText(e),
                 fullWidth: n,
                 size: i,
-                variant: a,
+                variant: l,
                 loading: "uninstalling" === e || s,
                 onClick: e => this.handleClick(e, t)
             }), o]
@@ -233,13 +233,13 @@ class L extends a.Component {
 function R(e) {
     let {
         libraryApplication: t
-    } = e, n = (0, _.p)(), [i, a] = (0, s.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), l = (0, s.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, s.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
+    } = e, n = (0, _.p)(), [i, l] = (0, s.yK)([x.A, f.A], () => [(0, g.F)(t, x.A, f.A), x.A.getState(t.id, t.branchId)], [t]), a = (0, s.bG)([A.A], () => A.A.isSyncing(t.id, t.branchId), [t]), o = (0, s.bG)([p.A], () => p.A.hasNoBuild(t.id, t.branchId), [t]);
     return (0, r.jsx)(L, {
         ...e,
         analyticsContext: n,
         actionState: i,
-        dispatchState: a,
-        isCloudSyncing: l,
+        dispatchState: l,
+        isCloudSyncing: a,
         hasNoBuild: o
     })
 }

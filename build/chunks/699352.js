@@ -1,19 +1,19 @@
 /** chunk id: 699352 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l,
+    A: () => a,
     J: () => s
 });
 var i = n(627968);
 n(64700);
 var r = n(21878),
-    a = n(756369);
+    l = n(756369);
 
-function l(e) {
+function a(e) {
     let {
         channelMessageProps: {
             message: t,
             channel: n,
-            compact: l = !1
+            compact: a = !1
         },
         hasSpoilerEmbeds: s,
         hasBailedAst: o,
@@ -30,12 +30,12 @@ function l(e) {
     } = e;
     return u ? null : (0, i.jsx)(r.A, {
         message: t,
-        children: (0, i.jsx)(a.Ay, {
+        children: (0, i.jsx)(l.Ay, {
             className: x,
             isInteracting: c,
             message: t,
             channel: n,
-            compact: l,
+            compact: a,
             hasSpoilerEmbeds: s,
             hasBailedAst: o,
             isMessageSnapshot: _,
@@ -52,15 +52,15 @@ function l(e) {
 function s(e, t, n) {
     let {
         message: r,
-        channel: l,
+        channel: a,
         compact: s = !1,
         renderThreadAccessory: o,
         disableReactionCreates: d,
         disableReactionUpdates: c
     } = e;
-    return (0, i.jsx)(a.OC, {
+    return (0, i.jsx)(l.OC, {
         message: r,
-        channel: l,
+        channel: a,
         compact: s,
         hasSpoilerEmbeds: t,
         hasBailedAst: n,

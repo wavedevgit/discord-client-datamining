@@ -1,13 +1,12 @@
 /** chunk id: 950966 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    Z: () => i
+    Z: () => s
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(264302);
-let s = e => {
+let o = e => {
         let {
             color: t,
             children: a
@@ -25,7 +24,7 @@ let s = e => {
             })
         })
     },
-    i = {
+    s = {
         name: "Stack",
         id: "cms-stack",
         component: e => (0, l.jsxs)(l.Fragment, {
@@ -39,13 +38,13 @@ let s = e => {
                 },
                 children: (0, l.jsxs)(n.A, {
                     ...e,
-                    children: [(0, l.jsx)(s, {
+                    children: [(0, l.jsx)(o, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, l.jsx)(s, {
+                    }), (0, l.jsx)(o, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, l.jsx)(s, {
+                    }), (0, l.jsx)(o, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]
@@ -61,13 +60,13 @@ let s = e => {
                 children: (0, l.jsxs)(n.A, {
                     ...e,
                     direction: "horizontal",
-                    children: [(0, l.jsx)(s, {
+                    children: [(0, l.jsx)(o, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, l.jsx)(s, {
+                    }), (0, l.jsx)(o, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, l.jsx)(s, {
+                    }), (0, l.jsx)(o, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]
@@ -83,13 +82,13 @@ let s = e => {
                 children: (0, l.jsxs)(n.A, {
                     ...e,
                     direction: "vertical",
-                    children: [(0, l.jsx)(s, {
+                    children: [(0, l.jsx)(o, {
                         color: "#5865F2",
                         children: "Item 1"
-                    }), (0, l.jsx)(s, {
+                    }), (0, l.jsx)(o, {
                         color: "#57F287",
                         children: "Item 2"
-                    }), (0, l.jsx)(s, {
+                    }), (0, l.jsx)(o, {
                         color: "#FEE75C",
                         children: "Item 3"
                     })]

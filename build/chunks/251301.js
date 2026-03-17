@@ -1,12 +1,11 @@
 /** chunk id: 251301 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    j: () => s
+    j: () => o
 });
 var l = a(556810),
     r = a(204094),
     n = a(506273);
-let s = {
+let o = {
     title: "Sku",
     stories: [l.l, n.P, r.r]
 }

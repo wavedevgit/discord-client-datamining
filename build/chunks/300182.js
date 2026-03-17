@@ -4,21 +4,21 @@ n.d(e, {
 });
 var r = n(627968);
 n(64700);
-var a = n(990078),
-    s = n(397927),
+var s = n(990078),
+    a = n(397927),
     i = n(985018);
 let l = t => {
     let {
         onGift: e,
         tooltipDelay: n = 250
     } = t;
-    return (0, r.jsx)(a.m, {
+    return (0, r.jsx)(s.m, {
         text: i.intl.string(i.t["JCFN/y"]),
         delay: n,
-        children: (0, r.jsx)(s.K0, {
+        children: (0, r.jsx)(a.K0, {
             "aria-label": i.intl.string(i.t["JCFN/y"]),
             variant: "primary",
-            icon: s.okO,
+            icon: a.okO,
             size: "md",
             onClick: e
         })

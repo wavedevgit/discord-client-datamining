@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(397927),
-    a = n(985018),
-    l = n(414614);
+    l = n(985018),
+    a = n(414614);
 
 function s(e) {
     let {
@@ -25,14 +25,14 @@ function s(e) {
                 })
             })
         },
-        className: l.L,
+        className: a.L,
         children: [(0, i.jsx)(r.mir, {
             size: "xs",
             color: "currentColor"
         }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
-            className: l.m,
-            children: a.intl.string(a.t["2aXnfa"])
+            className: a.m,
+            children: l.intl.string(l.t["2aXnfa"])
         })]
     })
 }

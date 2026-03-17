@@ -3,8 +3,8 @@ n.d(e, {
     a: () => i
 });
 var r = n(64700),
-    a = n(954571),
-    s = n(652215);
+    s = n(954571),
+    a = n(652215);
 
 function i(t, e, n, i) {
     let l = r.useRef(null),
@@ -30,7 +30,7 @@ function i(t, e, n, i) {
                 positionInSection: _,
                 analyticsLocations: g
             } = c.current;
-            a.default.track(s.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
+            s.default.track(a.HAw.SLAYER_STOREFRONT_CARD_IMPRESSION, {
                 slayer_storefront_session_id: e,
                 sku_id: t,
                 guild_id: n,

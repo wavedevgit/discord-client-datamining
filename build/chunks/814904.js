@@ -1,13 +1,12 @@
 /** chunk id: 814904 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    D: () => i
+    D: () => s
 });
 var l = a(627968);
 a(64700);
 var r = a(720462),
     n = a(528226);
-let s = () => (0, l.jsx)("div", {
+let o = () => (0, l.jsx)("div", {
         style: {
             height: 250,
             width: 250,
@@ -15,7 +14,7 @@ let s = () => (0, l.jsx)("div", {
             borderRadius: 6
         }
     }),
-    i = {
+    s = {
         title: "Contained Hero",
         stories: [{
             name: "ContainedHero",
@@ -24,9 +23,9 @@ let s = () => (0, l.jsx)("div", {
                 let {
                     containerHeight: t,
                     showChildren: a,
-                    bannerSrc: i,
-                    logoSrc: o,
-                    href: d,
+                    bannerSrc: s,
+                    logoSrc: d,
+                    href: i,
                     backgroundColor: c
                 } = e;
                 return (0, l.jsx)("div", {
@@ -35,15 +34,15 @@ let s = () => (0, l.jsx)("div", {
                     },
                     children: (0, l.jsx)(n.A, {
                         bannerSrc: {
-                            src: i
+                            src: s
                         },
                         logoSrc: {
-                            src: o
+                            src: d
                         },
-                        href: d,
+                        href: i,
                         backgroundColor: c,
                         children: a ? (0, l.jsxs)(r.A, {
-                            children: [(0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {})]
+                            children: [(0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {}), (0, l.jsx)(o, {})]
                         }) : null
                     })
                 })

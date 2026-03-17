@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(734057),
     _ = n(71393),
     m = n(994500),
-    x = n(309010),
-    E = n(745891),
+    E = n(309010),
+    x = n(745891),
     y = n(855790),
     v = n(985018),
     S = n(803946);
@@ -120,7 +120,7 @@ class C extends s.Component {
         } = this.state;
         return f && !n ? (0, i.jsxs)(y.Ay.Bar, {
             className: S.dl,
-            children: [(0, i.jsx)(E.A, {}), (0, i.jsx)(h.A.Icon, {
+            children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(h.A.Icon, {
                 icon: o.PGe,
                 onClick: this.handleCloseOpacitySettings,
                 tooltip: v.intl.string(v.t.cpT0Cq)
@@ -156,8 +156,8 @@ function I(e) {
     let {
         channel: t,
         ...n
-    } = e, s = (0, r.bG)([x.A, g.A], () => {
-        let e = x.A.getVoiceChannelId();
+    } = e, s = (0, r.bG)([E.A, g.A], () => {
+        let e = E.A.getVoiceChannelId();
         return g.A.getChannel(e)
     }), l = (0, r.bG)([_.A], () => _.A.getGuild(t.guild_id)), a = (0, r.bG)([f.A], () => f.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
     return (0, i.jsx)(C, {

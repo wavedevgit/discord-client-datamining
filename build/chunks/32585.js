@@ -1,33 +1,32 @@
 /** chunk id: 32585 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = a(64700),
     r = a(311907),
     n = a(475743),
-    s = a(828596),
-    i = a(124338);
+    o = a(828596),
+    s = a(124338);
 
-function o(e) {
+function d(e) {
     let {
         collectionId: t,
         includeUnpublishedProducts: a = !1,
-        includeUnpublishedCollection: o = !1,
-        includePricing: d = !1,
+        includeUnpublishedCollection: d = !1,
+        includePricing: i = !1,
         ignoreCache: c = !1
-    } = e, [u, x, h] = (0, r.yK)([i.A], () => [i.A.getCollection(t), i.A.isFetching(t), i.A.getApiError(t)]), m = (0, n.A)(a), b = (0, n.A)(o), p = (0, n.A)(d), g = (0, n.A)(c), f = !!t && !x && h?.status !== 404 && h?.status !== 429, v = null == u || a !== m || o !== b || d !== p || c !== g;
+    } = e, [x, u, h] = (0, r.yK)([s.A], () => [s.A.getCollection(t), s.A.isFetching(t), s.A.getApiError(t)]), m = (0, n.A)(a), b = (0, n.A)(d), p = (0, n.A)(i), g = (0, n.A)(c), f = !!t && !u && h?.status !== 404 && h?.status !== 429, j = null == x || a !== m || d !== b || i !== p || c !== g;
     return (0, l.useEffect)(() => {
-        f && v && (0, s.vZ)({
+        f && j && (0, o.vZ)({
             collectionId: t,
             includeUnpublishedProducts: a,
-            includeUnpublishedCollection: o,
-            includePricing: d,
+            includeUnpublishedCollection: d,
+            includePricing: i,
             ignoreCache: c
         })
-    }, [f, v, t, a, o, d, c]), {
-        collection: u,
-        isFetching: x,
+    }, [f, j, t, a, d, i, c]), {
+        collection: x,
+        isFetching: u,
         apiError: h
     }
 }

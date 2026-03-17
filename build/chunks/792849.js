@@ -1,14 +1,13 @@
 /** chunk id: 792849 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    g: () => o
+    g: () => d
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(261225),
-    s = a(970488);
-let i = e => {
+    o = a(970488);
+let s = e => {
         let {
             color: t,
             children: a
@@ -28,15 +27,15 @@ let i = e => {
             children: a
         })
     },
-    o = {
+    d = {
         name: "Grid",
         id: "grid",
         component: e => {
             let {
                 columns: t,
                 perPage: a,
-                paginationPosition: o,
-                gridItemColumns: d,
+                paginationPosition: d,
+                gridItemColumns: i,
                 gridItemRows: c
             } = e;
             return (0, l.jsxs)(l.Fragment, {
@@ -53,62 +52,62 @@ let i = e => {
                     children: (0, l.jsxs)(n.A, {
                         perPage: a,
                         columns: t,
-                        paginationPosition: o,
-                        children: [(0, l.jsx)(i, {
+                        paginationPosition: d,
+                        children: [(0, l.jsx)(s, {
                             color: "red"
-                        }), (0, l.jsx)(s.A, {
-                            columns: d,
+                        }), (0, l.jsx)(o.A, {
+                            columns: i,
                             rows: c,
-                            children: (0, l.jsx)(i, {
+                            children: (0, l.jsx)(s, {
                                 color: "orange",
                                 children: (0, l.jsx)(r.Text, {
                                     variant: "text-lg/semibold",
                                     children: "GridItem"
                                 })
                             })
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "yellow"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "green"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "blue"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "violet"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "red"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "orange"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "yellow"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "green"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "blue"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "violet"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "red"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "orange"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "yellow"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "green"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "blue"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "violet"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "red"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "orange"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "yellow"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "green"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "blue"
-                        }), (0, l.jsx)(i, {
+                        }), (0, l.jsx)(s, {
                             color: "violet",
                             children: (0, l.jsx)(r.Text, {
                                 variant: "text-lg/semibold",

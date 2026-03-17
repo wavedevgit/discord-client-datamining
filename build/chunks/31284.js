@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(994314),
     _ = n(241847),
     m = n(178442),
-    x = n(71393),
-    E = n(430452),
+    E = n(71393),
+    x = n(430452),
     y = n(994500),
     v = n(287809),
     S = n(977997),
@@ -147,7 +147,7 @@ function D(e) {
         lobbyId: n,
         channel: s,
         ...l
-    } = e, a = (0, o.bG)([x.A], () => x.A.getGuild(s?.getGuildId())), r = (0, o.bG)([S.A], () => null != s && S.A.hasVideo(s.id)), [d, c] = (0, o.yK)([E.Ay], () => [E.Ay.isSelfMute(t) || E.Ay.isSelfMutedTemporarily(t), E.Ay.isSelfDeaf(t)]), [u, h, p] = (0, o.yK)([C.A], () => [C.A.getConnectionState(n), C.A.getLastPing(n), C.A.getQuality(n)]);
+    } = e, a = (0, o.bG)([E.A], () => E.A.getGuild(s?.getGuildId())), r = (0, o.bG)([S.A], () => null != s && S.A.hasVideo(s.id)), [d, c] = (0, o.yK)([x.Ay], () => [x.Ay.isSelfMute(t) || x.Ay.isSelfMutedTemporarily(t), x.Ay.isSelfDeaf(t)]), [u, h, p] = (0, o.yK)([C.A], () => [C.A.getConnectionState(n), C.A.getLastPing(n), C.A.getQuality(n)]);
     return (0, i.jsx)(j, {
         ...l,
         context: t,

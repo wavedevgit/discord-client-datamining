@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     r = n(64700),
-    a = n(503698),
-    l = n.n(a),
+    l = n(503698),
+    a = n.n(l),
     s = n(73939),
     o = n(397927),
     d = n(505527),
@@ -38,7 +38,7 @@ class x extends r.PureComponent {
             disableReactionCreates: t,
             disableReactionUpdates: n,
             isLurking: r,
-            isPendingMember: a,
+            isPendingMember: l,
             isForumToolbar: d,
             channel: A,
             className: x,
@@ -46,8 +46,8 @@ class x extends r.PureComponent {
             reactionClassName: C,
             useChatFontScaling: E,
             forceHideReactionCreates: I,
-            remainingReactions: b,
-            combinedReactions: T,
+            remainingReactions: T,
+            combinedReactions: b,
             visibleReactionsCount: v
         } = this.props, {
             disableTransitionAppear: S
@@ -56,7 +56,7 @@ class x extends r.PureComponent {
         let j = f || N;
         return (0, i.jsxs)(s.F, {
             component: "div",
-            className: l()(y.reactions, x),
+            className: a()(y.reactions, x),
             transitionAppear: !S,
             role: "group",
             transitionLeave: !1,
@@ -68,24 +68,24 @@ class x extends r.PureComponent {
                 isHovered: !1
             }),
             children: [(0, i.jsx)(_.A, {
-                reactions: T,
+                reactions: b,
                 message: e,
                 readOnly: n,
                 isLurking: r,
-                isPendingMember: a,
+                isPendingMember: l,
                 isForumToolbar: d,
                 useChatFontScaling: E,
                 className: C
-            }), b > 0 && (0, i.jsx)(o.DUT, {
+            }), T > 0 && (0, i.jsx)(o.DUT, {
                 onClick: t => {
                     t.stopPropagation(), (0, m.$l)(A, e)
                 },
-                className: l()(y.reaction, C, y.remainingReactions),
+                className: a()(y.reaction, C, y.remainingReactions),
                 "aria-label": h.intl.string(h.t.lfIHs4),
                 children: (0, i.jsxs)(o.Text, {
                     className: y.reactionInner,
                     variant: "text-sm/normal",
-                    children: ["+", b]
+                    children: ["+", T]
                 })
             }), !t && !I && (0, i.jsx)(c.t, {
                 tabIndex: j || this.state.isHovered ? 0 : -1,
@@ -93,7 +93,7 @@ class x extends r.PureComponent {
                 channel: A,
                 useChatFontScaling: E,
                 isHovered: this.state.isHovered,
-                className: l()({
+                className: a()({
                     [y.forceShow]: j
                 })
             })]
@@ -104,9 +104,9 @@ let f = e => {
     let {
         message: t,
         maxReactions: n,
-        hoistReaction: a
+        hoistReaction: l
     } = e, {
-        combinedReactions: l,
+        combinedReactions: a,
         remainingReactions: s,
         visibleReactionsCount: o
     } = r.useMemo(() => {
@@ -115,9 +115,9 @@ let f = e => {
                 if (null == t) return e;
                 let n = e.findIndex(e => A(e.emoji.id, t?.id) && A(e.emoji.name, t?.name));
                 return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-            })(t.reactions, a),
+            })(t.reactions, l),
             r = null != n && n < i.length ? i.slice(0, n) : i,
-            l = i.length - r.length,
+            a = i.length - r.length,
             s = i.length;
         return r.forEach(t => {
             t.burst_count > 0 && e.push({
@@ -130,13 +130,13 @@ let f = e => {
         }), {
             combinedReactions: e,
             visibleReactionsCount: s,
-            remainingReactions: l
+            remainingReactions: a
         }
-    }, [a, n, t.reactions]);
+    }, [l, n, t.reactions]);
     return (0, i.jsx)(x, {
         ...e,
         visibleReactionsCount: o,
-        combinedReactions: l,
+        combinedReactions: a,
         remainingReactions: s
     })
 }

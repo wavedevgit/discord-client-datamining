@@ -19,8 +19,8 @@ var i = n(627968),
     g = n(147192),
     _ = n(480870),
     m = n(264140),
-    x = n(387462),
-    E = n(667285),
+    E = n(387462),
+    x = n(667285),
     y = n(920437),
     v = n(355622),
     S = n(408018),
@@ -32,15 +32,15 @@ var i = n(627968),
     b = n(926262),
     j = n(371648),
     D = n(118517),
-    R = n(853145),
-    L = n(522556),
+    L = n(853145),
+    R = n(522556),
     w = n(734057),
-    k = n(31717),
-    M = n(517019),
+    M = n(31717),
+    k = n(517019),
     P = n(71393),
     G = n(320501),
-    V = n(309010),
-    U = n(967198),
+    U = n(309010),
+    V = n(967198),
     z = n(287809),
     H = n(532624),
     W = n(256415),
@@ -60,8 +60,8 @@ let en = Q.Li.TOP;
 class ei extends s.Component {
     textAreaRef = s.createRef();
     constructor(e) {
-        super(e), k.A.addChangeListener(this.draftDidChange);
-        const t = k.A.getDraft(e.channel.id, k.C.ChannelMessage);
+        super(e), M.A.addChangeListener(this.draftDidChange);
+        const t = M.A.getDraft(e.channel.id, M.C.ChannelMessage);
         this.state = {
             ...(0, S.ur)(t),
             focused: !1,
@@ -74,7 +74,7 @@ class ei extends s.Component {
         })
     }
     componentWillUnmount() {
-        k.A.removeChangeListener(this.draftDidChange), K._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
+        M.A.removeChangeListener(this.draftDidChange), K._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
     }
     draftDidChange = (() => {
         var e = this;
@@ -83,7 +83,7 @@ class ei extends s.Component {
                 {
                     textValue: n
                 } = e.state,
-                i = k.A.getDraft(t.channel.id, k.C.ChannelMessage);
+                i = M.A.getDraft(t.channel.id, M.C.ChannelMessage);
             n !== i && "" === i && e.setState((0, S.ur)(i))
         }
     })();
@@ -102,7 +102,7 @@ class ei extends s.Component {
                 id: i
             }
         } = this.props;
-        h.A.changeDraft(i, this.state.textValue, k.C.ChannelMessage), "" !== t ? f.A.startTyping(i) : f.A.stopTyping(i), this.setState({
+        h.A.changeDraft(i, this.state.textValue, M.C.ChannelMessage), "" !== t ? f.A.startTyping(i) : f.A.stopTyping(i), this.setState({
             textValue: t,
             richValue: n
         })
@@ -163,7 +163,7 @@ class ei extends s.Component {
     renderAttachButton = (e, t) => (0, i.jsx)(C.A, {
         className: t,
         channel: this.props.channel,
-        draftType: k.C.ChannelMessage,
+        draftType: M.C.ChannelMessage,
         editorTextContent: this.state.textValue,
         setValue: e => this.handleTextareaChange(null, e, (0, S.x7)(e)),
         canOnlyUseTextCommands: e
@@ -217,7 +217,7 @@ class ei extends s.Component {
                 focused: s
             })
         });
-        return e.isPrivate() ? (0, i.jsx)(E.A, {
+        return e.isPrivate() ? (0, i.jsx)(x.A, {
             channel: e,
             children: d
         }, e.id) : (0, i.jsx)(y.A, {
@@ -278,7 +278,7 @@ class es extends s.PureComponent {
         let f = o || h,
             _ = !l && null != t && t.isNSFW(),
             m = !f || d;
-        return e = _ && null != r ? (0, i.jsx)(L.A, {
+        return e = _ && null != r ? (0, i.jsx)(R.A, {
             guild: r,
             channelId: t.id
         }) : (0, i.jsx)(j.A, {
@@ -294,7 +294,7 @@ class es extends s.PureComponent {
                 disableAnimations: u && f && !d
             },
             children: (0, i.jsxs)(s.Fragment, {
-                children: [!o && !h && (0, i.jsx)(x.A, {
+                children: [!o && !h && (0, i.jsx)(E.A, {
                     channel: t,
                     guild: r
                 }), (0, i.jsx)(X.Ay.Background, {
@@ -447,15 +447,15 @@ function el(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([U.A], () => U.A.getGuildId()), l = (0, d.bG)([V.A], () => V.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([R.A], () => null != l ? R.A.getPendingReply(l) : void 0), x = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
-        placeholder: E
+    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), l = (0, d.bG)([U.A], () => U.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([k.A], () => null != s && k.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([L.A], () => null != l ? L.A.getPendingReply(l) : void 0), E = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
+        placeholder: x
     } = (0, _.A)({
         channel: a
     });
     return null != a && null != p && q.kvI.GUILD_THREADS_ONLY.has(a.type) ? (0, i.jsx)(m.A, {}) : (0, i.jsx)(es, {
         guild: p,
         channel: a,
-        user: x,
+        user: E,
         opacity: c,
         nsfwAgree: A,
         chatKeybind: o,
@@ -463,7 +463,7 @@ function el(e) {
         isPreviewingInGame: h,
         pendingReply: g,
         contained: t,
-        placeholder: E,
+        placeholder: x,
         widget: q.uss.TEXT,
         ...n
     })

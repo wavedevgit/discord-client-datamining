@@ -1,5 +1,4 @@
 /** chunk id: 976720 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 });
@@ -8,8 +7,8 @@ var a = n(627968),
     i = n(158954),
     r = n(44724),
     s = n(409626),
-    c = n(652215),
-    o = n(985018);
+    o = n(652215),
+    c = n(985018);
 
 function d(e) {
     let {
@@ -25,9 +24,9 @@ function d(e) {
             invite: t
         }), d(), n(s.Ws.GameShop))
     }, [d, t, n]);
-    return new Set(t?.guild?.features).has(c.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, a.jsx)(i.$nd, {
+    return new Set(t?.guild?.features).has(o.GuildFeatures.SOCIAL_LAYER_STOREFRONT) ? (0, a.jsx)(i.$nd, {
         variant: "primary",
-        text: o.intl.string(o.t.v8UpgE),
+        text: c.intl.string(c.t.v8UpgE),
         icon: i.U1X,
         onClick: m,
         onMouseDown: u,

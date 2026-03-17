@@ -1,6 +1,6 @@
 /** chunk id: 357541 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var i = n(627968),
     l = n(64700),
@@ -8,28 +8,28 @@ var i = n(627968),
     s = n(397927),
     r = n(183555),
     o = n(633075),
-    c = n(735321),
-    d = n(384377),
+    d = n(735321),
+    c = n(384377),
     u = n(605694),
     m = n(518477),
     g = n(49999),
     x = n(985018);
 
-function f(e) {
+function p(e) {
     let {
         user: t,
         application: n,
-        onDismiss: f
+        onDismiss: p
     } = e, {
-        trackUserProfileEditAction: p
+        trackUserProfileEditAction: f
     } = (0, r.NJ)(), h = l.useMemo(() => new o.R({
         applicationId: n.id
     }), [n.id]), _ = l.useCallback(() => {
-        null != h && ((0, c.Y5)(h), p({
+        null != h && ((0, d.Y5)(h), f({
             action: "WIDGET_ADDED",
             ...h.getProfileEditAnalyticsOptions()
-        }), (0, d.XA)(m.jM.WIDGET_ADDED))
-    }, [h, p]);
+        }), (0, c.XA)(m.jM.WIDGET_ADDED))
+    }, [h, f]);
     return (0, i.jsx)(u.A, {
         user: t,
         widget: h,
@@ -52,7 +52,7 @@ function f(e) {
                         icon: s.PGe,
                         "aria-label": x.intl.string(x.t.WAI6xu),
                         onClick: () => {
-                            f(g.i.USER_DISMISS)
+                            p(g.i.USER_DISMISS)
                         }
                     })
                 }), (0, i.jsx)(a.m, {
@@ -66,7 +66,7 @@ function f(e) {
                             applicationName: n.name
                         }),
                         onClick: () => {
-                            f(g.i.TAKE_ACTION), _()
+                            p(g.i.TAKE_ACTION), _()
                         }
                     })
                 })]

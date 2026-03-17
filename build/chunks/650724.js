@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(64700),
     r = n(417597),
-    a = n(717125),
-    l = n(376943),
+    l = n(717125),
+    a = n(376943),
     s = n(961350),
     o = n(734057),
     d = n(696451),
@@ -25,12 +25,12 @@ function x(e, t) {
             let e = s.default.getId();
             return d.Ay.isMember(x?.guildId, e)
         }, [x]),
-        C = (0, r.bG)([a.A], () => null != x && x?.channelId != null && a.A.isChannelGated(x.guildId, x.channelId), [x]),
+        C = (0, r.bG)([l.A], () => null != x && x?.channelId != null && l.A.isChannelGated(x.guildId, x.channelId), [x]),
         E = t.hasFlag(A.pr7.IS_CROSSPOST),
         {
             rawMediaPostEmbedData: I,
-            guild: b,
-            parentChannel: T,
+            guild: T,
+            parentChannel: b,
             user: v,
             selectedGuildId: S,
             canAccess: y
@@ -40,21 +40,21 @@ function x(e, t) {
                 n = o.A.getChannel(x?.channelId),
                 i = _.default.getUser(e?.author_id),
                 r = u.A.getGuildId(),
-                a = null != n && (0, l.nc)(n);
+                l = null != n && (0, a.nc)(n);
             return {
                 rawMediaPostEmbedData: e,
                 guild: t,
                 parentChannel: n,
                 user: i,
                 selectedGuildId: r,
-                canAccess: a
+                canAccess: l
             }
         }, [x]),
         N = i.useMemo(() => {
             let e = (0, g.tU)({
                 mediaPostEmbedData: I,
-                guild: b,
-                parentChannel: T,
+                guild: T,
+                parentChannel: b,
                 user: v,
                 selectedGuildId: S,
                 canAccess: y
@@ -63,7 +63,7 @@ function x(e, t) {
                 ...e,
                 user: v
             }
-        }, [I, b, T, v, S, y]);
+        }, [I, T, b, v, S, y]);
     return i.useEffect(() => {
         if (x?.threadId != null) {
             let e = p.A.getEmbedFetchState(x.threadId);

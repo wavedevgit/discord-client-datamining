@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(284009),
-    a = n.n(r),
-    l = n(283823),
+    l = n.n(r),
+    a = n(283823),
     s = n(455207),
     o = n(542287),
     d = n(589022),
@@ -21,7 +21,7 @@ function m(e, t) {
             {
                 guild_id: r
             } = t.messageReference;
-        if (null != r) return (0, i.jsx)(l.A, {
+        if (null != r) return (0, i.jsx)(a.A, {
             setPopoutRef: e.setPopoutRef,
             guildId: r,
             name: n
@@ -29,11 +29,11 @@ function m(e, t) {
     }
     if (null != t.interaction && "SENDING" === t.state) return (0, i.jsx)(i.Fragment, {});
     let n = null != t.webhookId ? t.author : u.default.getUser(t.author.id) ?? t.author;
-    a()(null != n, "renderUserGuildPopout: user should never be null");
+    l()(null != n, "renderUserGuildPopout: user should never be null");
     let r = u.default.getCurrentUser();
-    a()(null != r, "renderUserGuildPopout: currentUser should never be null");
+    l()(null != r, "renderUserGuildPopout: currentUser should never be null");
     let m = c.A.getChannel(t.channel_id);
-    return a()(null != m, "renderUserGuildPopout: channel should never be null"), (0, i.jsx)(d.A, {
+    return l()(null != m, "renderUserGuildPopout: channel should never be null"), (0, i.jsx)(d.A, {
         ...e,
         user: n,
         currentUser: r,

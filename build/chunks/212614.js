@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(732955),
-    a = n(79545),
-    l = n(561393),
+    l = n(79545),
+    a = n(561393),
     s = n(884392),
     o = n(985018);
 
@@ -55,7 +55,7 @@ let _ = function(e) {
         analyticsCtxQuestContentRowIndex: g,
         size: A = "md",
         variant: x = "primary"
-    } = e, f = (0, a.Pd)(t);
+    } = e, f = (0, l.Pd)(t);
     if (0 === Object.keys(t.config.taskConfigV2.tasks).length) return (0, i.jsx)(r.$nd, {
         variant: "primary",
         fullWidth: !0,
@@ -64,7 +64,7 @@ let _ = function(e) {
     });
     let C = Object.values(t.config.taskConfigV2.tasks)[0];
     switch (f) {
-        case a.UA.UNENROLLED:
+        case l.UA.UNENROLLED:
             return (0, i.jsx)(s.A, {
                 variant: x,
                 quest: t,
@@ -76,8 +76,8 @@ let _ = function(e) {
                 analyticsCtxQuestContentPosition: p,
                 analyticsCtxQuestContentRowIndex: g
             });
-        case a.UA.ENROLLED:
-            return (0, i.jsx)(l.A, {
+        case l.UA.ENROLLED:
+            return (0, i.jsx)(a.A, {
                 quest: t,
                 taskType: C.type,
                 size: A,
@@ -87,15 +87,15 @@ let _ = function(e) {
                 analyticsCtxQuestContentRowIndex: g,
                 surface: n
             });
-        case a.UA.INCOMPLETE:
+        case l.UA.INCOMPLETE:
             return (0, i.jsx)(d, {
                 taskType: C.type
             });
-        case a.UA.COMPLETED:
+        case l.UA.COMPLETED:
             return (0, i.jsx)(c, {
                 taskType: C.type
             });
-        case a.UA.CLAIMED:
+        case l.UA.CLAIMED:
             return (0, i.jsx)(u, {
                 taskType: C.type
             });

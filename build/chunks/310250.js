@@ -1,6 +1,6 @@
 /** chunk id: 310250 params = (module,exports,require) **/
 n.d(t, {
-    T: () => r
+    T: () => i
 });
 let s = (0, n(945810).mj)({
     name: "2026-01-wishlist-new-recommendations",
@@ -18,7 +18,7 @@ let s = (0, n(945810).mj)({
     }
 });
 
-function r(e) {
+function i(e) {
     return s.useConfig({
         location: e
     }).enabled

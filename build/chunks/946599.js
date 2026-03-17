@@ -1,6 +1,6 @@
 /** chunk id: 946599 params = (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var i = n(627968),
     l = n(64700),
@@ -9,34 +9,34 @@ var i = n(627968),
 n(926675);
 var r = n(990078),
     o = n(397927),
-    c = n(147925),
-    d = n(183555),
+    d = n(147925),
+    c = n(183555),
     u = n(735321),
     m = n(122338),
     g = n(394245),
     x = n(985018),
-    f = n(542467);
+    p = n(542467);
 
-function p(e) {
+function f(e) {
     let {
         tags: t,
         isCurrentUser: n,
         widgetType: a,
         applicationId: r,
         className: o,
-        disableInteraction: c = !1
-    } = e, p = t?.filter(e => null != (0, g.W3)(e)) ?? [], _ = p.length > 0, A = n && !c && (0, u.mS)(a) && p.length < 20, {
+        disableInteraction: d = !1
+    } = e, f = t?.filter(e => null != (0, g.W3)(e)) ?? [], _ = f.length > 0, A = n && !d && (0, u.mS)(a) && f.length < 20, {
         trackUserProfileAction: v
-    } = (0, d.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, p, E, S);
+    } = (0, c.NJ)(), E = (0, l.useRef)(new Map), T = (0, l.useRef)(null), b = (0, l.useRef)(null), [N, S] = (0, l.useState)(0), [y, C] = (0, l.useState)(!1), R = j(T, b, f, E, S);
     if ((0, l.useEffect)(() => (R(), window.addEventListener("resize", R), () => {
             window.removeEventListener("resize", R)
-        }), [R, p?.join("")]), !_ && !A) return null;
-    let k = y ? p : p.slice(0, p.length - N);
+        }), [R, f?.join("")]), !_ && !A) return null;
+    let k = y ? f : f.slice(0, f.length - N);
     return (0, i.jsxs)("div", {
-        className: s()(f.I4, o),
+        className: s()(p.I4, o),
         children: [_ && (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("ul", {
-                className: f.Tw,
+                className: p.Tw,
                 "aria-label": x.intl.string(x.t.EfjTi4),
                 children: k.map(e => (0, i.jsx)(h, {
                     tag: e,
@@ -46,7 +46,7 @@ function p(e) {
                     ref: t => {
                         null != t && E.current.set(e, t)
                     },
-                    disableInteraction: c
+                    disableInteraction: d
                 }, e))
             }), N > 0 && (0, i.jsx)(I, {
                 buttonRef: T,
@@ -62,7 +62,7 @@ function p(e) {
                         action: "COLLAPSE_GAME_TAGS"
                     })
                 },
-                disableInteraction: c
+                disableInteraction: d
             })]
         }), A && (0, i.jsx)(m.A, {
             tags: t,
@@ -79,18 +79,18 @@ let h = e => {
         applicationId: l,
         widgetType: a,
         disableInteraction: s,
-        ref: c
+        ref: d
     } = e, {
         trackUserProfileEditAction: m
-    } = (0, d.NJ)(), p = (0, g.W3)(t);
-    if (null == p) return null;
+    } = (0, c.NJ)(), f = (0, g.W3)(t);
+    if (null == f) return null;
     let {
         getText: h,
         icon: _
-    } = p;
+    } = f;
     return (0, i.jsxs)("li", {
-        className: f.Tc,
-        ref: c,
+        className: p.Tc,
+        ref: d,
         children: [(0, i.jsx)(_, {
             size: "xxs"
         }), (0, i.jsx)(o.Text, {
@@ -108,7 +108,7 @@ let h = e => {
                         gameId: l
                     })
                 },
-                className: f.DT,
+                className: p.DT,
                 "aria-label": x.intl.formatToPlainString(x.t.GCn1ne, {
                     tag: h()
                 }),
@@ -133,11 +133,11 @@ function _(e) {
 }
 
 function A() {
-    return (0, i.jsx)(c.A, {
-        direction: c.A.Directions.LEFT,
+    return (0, i.jsx)(d.A, {
+        direction: d.A.Directions.LEFT,
         width: 12,
         height: 12,
-        className: f.OW
+        className: p.OW
     })
 }
 
@@ -148,24 +148,24 @@ function I(e) {
         onExpandTags: l,
         onCollapseTags: a,
         disableInteraction: s,
-        buttonRef: c
-    } = e, d = t ? x.intl.string(x.t.z9VPrQ) : x.intl.string(x.t.mriLXL), u = t ? x.intl.string(x.t.z9VPrQ) : x.intl.formatToPlainString(x.t.F6iMs4, {
+        buttonRef: d
+    } = e, c = t ? x.intl.string(x.t.z9VPrQ) : x.intl.string(x.t.mriLXL), u = t ? x.intl.string(x.t.z9VPrQ) : x.intl.formatToPlainString(x.t.F6iMs4, {
         count: n
     });
     return s ? (0, i.jsx)("div", {
-        className: f.X1,
-        ref: c,
+        className: p.X1,
+        ref: d,
         children: (0, i.jsx)(_, {
             numberOfOverflowingTags: n
         })
     }) : (0, i.jsx)(r.m, {
-        text: d,
+        text: c,
         ariaHidden: t,
         children: (0, i.jsx)(o.DUT, {
-            innerRef: c,
+            innerRef: d,
             onClick: t ? a : l,
             "aria-label": u,
-            className: t ? f.cS : f.X1,
+            className: t ? p.cS : p.X1,
             children: t ? (0, i.jsx)(A, {}) : (0, i.jsx)(_, {
                 numberOfOverflowingTags: n
             })
@@ -178,20 +178,20 @@ let j = (e, t, n, i, a) => (0, l.useCallback)(() => {
         s = t.current?.getBoundingClientRect().width ?? 0,
         r = s > 0 ? 8 : 4,
         o = 0,
-        c = 0,
-        d = i.current;
+        d = 0,
+        c = i.current;
     for (let e = 0; e < n.length; e++) {
-        let t = d.get(n[e]);
+        let t = c.get(n[e]);
         if (null != t) {
-            if ((c += t.offsetWidth + 4) > 296) break;
+            if ((d += t.offsetWidth + 4) > 296) break;
             o++
         }
     }
-    c = 0;
+    d = 0;
     for (let e = o; e < n.length; e++) {
-        let t = d.get(n[e]);
+        let t = c.get(n[e]);
         if (null != t) {
-            if ((c += t.offsetWidth + 4) > 296 - l - s - r) break;
+            if ((d += t.offsetWidth + 4) > 296 - l - s - r) break;
             o++
         }
     }

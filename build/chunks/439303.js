@@ -4,26 +4,26 @@ n.d(e, {
     jM: () => u
 });
 var r = n(627968),
-    a = n(64700),
-    s = n(812729),
-    i = n.n(s);
-let l = a.createContext({});
+    s = n(64700),
+    a = n(812729),
+    i = n.n(a);
+let l = s.createContext({});
 
 function u() {
-    return a.useContext(l)
+    return s.useContext(l)
 }
 
 function c(t) {
     let {
         newValue: e,
         children: n
-    } = t, s = u(), c = a.useMemo(() => {
+    } = t, a = u(), c = s.useMemo(() => {
         let t = {
-            ...s,
+            ...a,
             ...e
         };
-        return i()(s, t) ? s ?? t : t
-    }, [s, e]);
+        return i()(a, t) ? a ?? t : t
+    }, [a, e]);
     return (0, r.jsx)(l.Provider, {
         value: c,
         children: n

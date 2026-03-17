@@ -1,5 +1,4 @@
 /** chunk id: 351886 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     Ky: "gameProfileMedia_a1cc72",
     DA: "gameProfileMediaSmall_a1cc72 gameProfileMedia_a1cc72",

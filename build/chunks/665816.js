@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(503698),
-    a = n.n(r),
-    l = n(835245),
+    l = n.n(r),
+    a = n(835245),
     s = n(397927),
     o = n(954571),
     d = n(18437),
@@ -34,7 +34,7 @@ function A(e) {
                     fromContent: n
                 }), o.default.track(m.HAw.QUEST_CONTENT_CLICKED, {
                     quest_id: t,
-                    click_id: (0, l.A)(),
+                    click_id: (0, a.A)(),
                     cta_name: c.Cy.VIEW_QUESTS,
                     is_targeted: !1,
                     ...(0, c.fF)(n)
@@ -50,7 +50,7 @@ function x(e) {
         questId: t,
         fallbackReason: n,
         bodyText: r,
-        questContent: l
+        questContent: a
     } = e, {
         containerRef: o,
         size: c
@@ -59,7 +59,7 @@ function x(e) {
         ref: e => {
             o.current = e
         },
-        className: a()(p.kL, {
+        className: l()(p.kL, {
             [p.U]: "lg" === c,
             [p.SP]: "lg" !== c
         }),
@@ -76,7 +76,7 @@ function x(e) {
                 children: r
             }), (0, i.jsx)(A, {
                 questId: t,
-                questContent: l,
+                questContent: a,
                 fullWidth: "lg" !== c
             })]
         }), (0, i.jsx)("div", {

@@ -1,5 +1,4 @@
 /** chunk id: 409861 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     uW: "section__3ae56",
     Gf: "sectionTitle__3ae56",

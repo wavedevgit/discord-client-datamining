@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(734057),
-    a = n(71393),
-    l = n(576705),
+    l = n(71393),
+    a = n(576705),
     s = n(483660),
     o = n(652215);
 
@@ -14,8 +14,8 @@ function d(e) {
     let {
         code: t,
         message: n
-    } = e, [d, c] = t.split("/"), u = r.A.getChannel(c), _ = a.A.getGuild(d);
-    return null != u && u.isGuildVocal() && null != _ && l.A.can(o.xBc.VIEW_CHANNEL, u) && l.A.can(o.xBc.CONNECT, u) ? (0, i.jsx)(s.A, {
+    } = e, [d, c] = t.split("/"), u = r.A.getChannel(c), _ = l.A.getGuild(d);
+    return null != u && u.isGuildVocal() && null != _ && a.A.can(o.xBc.VIEW_CHANNEL, u) && a.A.can(o.xBc.CONNECT, u) ? (0, i.jsx)(s.A, {
         guild: _,
         channel: u,
         message: n

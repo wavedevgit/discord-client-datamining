@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    a = n(397927),
-    l = n(529200),
+    l = n(397927),
+    a = n(529200),
     s = n(635491),
     o = n(122906),
     d = n(401755),
@@ -18,32 +18,32 @@ function m(e) {
     let {
         code: t
     } = e, m = (0, r.bG)([o.A], () => o.A.getGuildTemplate(t));
-    if (null == m || m.state === d.QB.RESOLVING) return (0, i.jsxs)(l.A, {
-        children: [(0, i.jsx)(l.A.Header, {
+    if (null == m || m.state === d.QB.RESOLVING) return (0, i.jsxs)(a.A, {
+        children: [(0, i.jsx)(a.A.Header, {
             text: c.intl.string(c.t.Xj87Yf)
-        }), (0, i.jsx)(l.A.Body, {
+        }), (0, i.jsx)(a.A.Body, {
             resolving: !0
         })]
     });
-    if (m.state === d.QB.EXPIRED) return (0, i.jsxs)(l.A, {
-        children: [(0, i.jsx)(l.A.Header, {
+    if (m.state === d.QB.EXPIRED) return (0, i.jsxs)(a.A, {
+        children: [(0, i.jsx)(a.A.Header, {
             text: c.intl.string(c.t.C7ZRNw)
-        }), (0, i.jsxs)(l.A.Body, {
-            children: [(0, i.jsx)(l.A.Icon, {
+        }), (0, i.jsxs)(a.A.Body, {
+            children: [(0, i.jsx)(a.A.Icon, {
                 expired: !0
-            }), (0, i.jsx)(l.A.Info, {
+            }), (0, i.jsx)(a.A.Info, {
                 expired: !0,
                 title: c.intl.string(c.t.A6MwXE)
             })]
         })]
     });
-    let h = __OVERLAY__ ? (0, i.jsx)(a.Button, {
+    let h = __OVERLAY__ ? (0, i.jsx)(l.Button, {
         disabled: !0,
         variant: "secondary",
         text: c.intl.string(c.t.W7NTWm)
-    }) : (0, i.jsx)(a.Button, {
+    }) : (0, i.jsx)(l.Button, {
         onClick: () => {
-            (0, a.mMO)(async () => {
+            (0, l.mMO)(async () => {
                 let {
                     default: e
                 } = await Promise.all([n.e("7726"), n.e("4042")]).then(n.bind(n, 72715));
@@ -57,15 +57,15 @@ function m(e) {
         variant: "active",
         text: c.intl.string(c.t["a3Gl+e"])
     });
-    return (0, i.jsxs)(l.A, {
-        children: [(0, i.jsx)(l.A.Header, {
+    return (0, i.jsxs)(a.A, {
+        children: [(0, i.jsx)(a.A.Header, {
             text: c.intl.string(c.t.kAvFkO)
-        }), (0, i.jsxs)(l.A.Body, {
+        }), (0, i.jsxs)(a.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: _.iH,
                 children: [(0, i.jsx)(s.A, {
                     className: u.K
-                }), (0, i.jsx)(l.A.Info, {
+                }), (0, i.jsx)(a.A.Info, {
                     title: m.name,
                     children: c.intl.format(c.t.cGXXHL, {
                         usageCount: String(m.usageCount ?? 0)

@@ -8,14 +8,14 @@ var i = n(627968),
     s = n(397927),
     r = n(442433),
     o = n(297413),
-    c = n(714114),
-    d = n(729551),
+    d = n(714114),
+    c = n(729551),
     u = n(178418),
     m = n(87664),
     g = n(290863),
     x = n(939496),
-    f = n(652215),
-    p = n(996988),
+    p = n(652215),
+    f = n(996988),
     h = n(794904);
 let _ = s._3J.SIZE_40,
     A = (0, s.FT9)(_);
@@ -38,12 +38,12 @@ function I(e) {
         isMobileOnline: g.A.isMobileOnline(t.id)
     })), C = (0, m.A)(t.id), {
         voiceChannel: R
-    } = (0, c.A)({
+    } = (0, d.A)({
         userId: t.id,
         guildId: j
     });
     return (0, i.jsxs)(s.DUT, {
-        focusProps: b === p.d.MODAL_V2 ? {
+        focusProps: b === f.d.MODAL_V2 ? {
             offset: {
                 top: 4,
                 right: 4,
@@ -71,7 +71,7 @@ function I(e) {
             src: t.getAvatarURL(j, A),
             "aria-label": t.username,
             size: _,
-            status: N ? f.clD.UNKNOWN : I,
+            status: N ? p.clD.UNKNOWN : I,
             statusBackdropColor: N ? void 0 : (0, s.C$5)(T),
             isMobile: y,
             className: h.my
@@ -81,7 +81,7 @@ function I(e) {
                 user: t,
                 className: h.Tc,
                 discriminatorClass: h.D2
-            }), (0, i.jsx)(d.A, {
+            }), (0, i.jsx)(c.A, {
                 user: t,
                 activities: S,
                 applicationStream: C,

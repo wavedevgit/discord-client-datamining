@@ -46,8 +46,8 @@ function v(e) {
         reportId: s,
         reportType: o,
         reportSubType: v
-    } = e, f = (0, r.bG)([_.A], () => _.A.getChannel(n)), b = (0, m.MR)(t, f?.type), C = (0, x.Mw)(o, v, s);
-    return 0 === b.length ? null : (0, l.jsxs)("div", {
+    } = e, b = (0, r.bG)([_.A], () => _.A.getChannel(n)), f = (0, m.MR)(t, b?.type), j = (0, x.Mw)(o, v, s);
+    return 0 === f.length ? null : (0, l.jsxs)("div", {
         className: g.kL,
         children: [(0, l.jsx)(i.Heading, {
             variant: "text-sm/semibold",
@@ -55,7 +55,7 @@ function v(e) {
             children: h.intl.string(h.t["1yxTIJ"])
         }), (0, l.jsx)("div", {
             className: g.uk,
-            children: b.map((e, n) => {
+            children: f.map((e, n) => {
                 let {
                     getTitle: a,
                     getDescription: r,
@@ -65,7 +65,7 @@ function v(e) {
                     title: a(),
                     description: r(),
                     onButtonClick: i,
-                    trackSettingsUpsellsAction: C(t[n])
+                    trackSettingsUpsellsAction: j(t[n])
                 }, n)
             })
         }), (0, l.jsx)(i.QWc, {

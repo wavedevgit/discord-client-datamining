@@ -1,45 +1,44 @@
 /** chunk id: 928039 params = (module,exports,require) **/
-"use strict";
-s.d(t, {
+a.d(t, {
     A: () => i
 });
-var a = s(64700),
-    r = s(884362),
-    n = s(311907),
-    l = s(775602);
+var s = a(64700),
+    l = a(884362),
+    n = a(311907),
+    r = a(775602);
 
-function i(e, t, s) {
-    let i = (0, n.bG)([l.A], () => l.A.keyboardModeEnabled),
-        u = a.useCallback(e => {
-            let s = document.querySelector(e),
-                a = t.current;
-            null != s && null != a && (s.focus(), a.scrollIntoViewNode({
-                node: s,
+function i(e, t, a) {
+    let i = (0, n.bG)([r.A], () => r.A.keyboardModeEnabled),
+        A = s.useCallback(e => {
+            let a = document.querySelector(e),
+                s = t.current;
+            null != a && null != s && (a.focus(), s.scrollIntoViewNode({
+                node: a,
                 padding: 80
             }))
         }, [t]),
-        c = a.useCallback(() => new Promise(e => {
-            let s = t.current;
-            if (null == s) return e();
-            s.scrollTo({
+        d = s.useCallback(() => new Promise(e => {
+            let a = t.current;
+            if (null == a) return e();
+            a.scrollTo({
                 to: 0,
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]),
-        d = a.useCallback(() => new Promise(e => {
-            let s = t.current;
-            if (null == s) return e();
-            s.scrollTo({
+        o = s.useCallback(() => new Promise(e => {
+            let a = t.current;
+            if (null == a) return e();
+            a.scrollTo({
                 to: Number.MAX_SAFE_INTEGER,
                 callback: () => requestAnimationFrame(() => e())
             })
         }), [t]);
-    return (0, r.Ay)({
+    return (0, l.Ay)({
         id: e,
         isEnabled: i,
-        setFocus: u,
-        scrollToStart: c,
-        scrollToEnd: d,
-        orientation: s?.orientation
+        setFocus: A,
+        scrollToStart: d,
+        scrollToEnd: o,
+        orientation: a?.orientation
     })
 }

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(158954),
-    l = n(311907),
+    l = n(158954),
+    a = n(311907),
     s = n(308528),
     o = n(846293),
     d = n(793574),
@@ -25,9 +25,9 @@ function C(e) {
         invite: t,
         message: n,
         getAcceptInviteContext: C
-    } = e, E = (0, l.bG)([m.default], () => m.default.getId()), I = t.inviter?.id === E, b = t.state === A.elq.ACCEPTING, {
-        analyticsLocations: T
-    } = (0, c.Ay)(d.A.INVITE_EMBED), v = (0, l.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), S = r.useCallback(() => {
+    } = e, E = (0, a.bG)([m.default], () => m.default.getId()), I = t.inviter?.id === E, T = t.state === A.elq.ACCEPTING, {
+        analyticsLocations: b
+    } = (0, c.Ay)(d.A.INVITE_EMBED), v = (0, a.bG)([p.A], () => null != t.inviter && p.A.isFriend(t.inviter?.id)), S = r.useCallback(() => {
         let e = "noop";
         null != t.inviter && null != h.A.getDMFromUserId(t.inviter.id) && (e = "transition", s.A.openPrivateChannel({
             recipientIds: [t.inviter.id]
@@ -36,20 +36,20 @@ function C(e) {
             action: e,
             inviter_id: n.author.id,
             invite_message_id: n.id
-        }, T)
-    }, [t, n, T]), y = r.useCallback(() => {
+        }, b)
+    }, [t, n, b]), y = r.useCallback(() => {
         (0, o.he)({
             invite: t,
             action: "accept",
             inviter_id: n.author.id,
             invite_message_id: n.id
-        }, T);
+        }, b);
         let e = C("Invite Button Embed");
         o.Ay.acceptInviteAndTransitionToInviteChannel({
             inviteKey: t.code,
             context: e
         })
-    }, [t, n, T, C]);
+    }, [t, n, b, C]);
     if (null == t.inviter) return null;
     let N = v ? S : y,
         j = x.intl.string(x.t.ib7Ng1),
@@ -72,10 +72,10 @@ function C(e) {
                     onClick: v ? N : void 0,
                     children: M
                 })]
-            }), (0, i.jsx)(a.$nd, {
+            }), (0, i.jsx)(l.$nd, {
                 onClick: N,
                 text: j,
-                loading: b,
+                loading: T,
                 disabled: I,
                 variant: L
             })]

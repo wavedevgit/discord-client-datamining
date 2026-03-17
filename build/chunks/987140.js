@@ -1,6 +1,6 @@
 /** chunk id: 987140 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => c
 });
 var i = n(627968),
     l = n(64700),
@@ -8,14 +8,14 @@ var i = n(627968),
     s = n(735321),
     r = n(958338),
     o = n(253798),
-    c = n(224360);
+    d = n(224360);
 
-function d(e) {
+function c(e) {
     let {
         widgetType: t,
         ...n
     } = e, {
-        games: d,
+        games: c,
         onAddGame: u
     } = (0, r.S)(t), {
         setExpanded: m
@@ -33,8 +33,8 @@ function d(e) {
             widgetEdited: t
         })
     }, [u, t, g, m]);
-    return (0, i.jsx)(c.A, {
-        games: d,
+    return (0, i.jsx)(d.A, {
+        games: c,
         onClick: x,
         ...n
     })

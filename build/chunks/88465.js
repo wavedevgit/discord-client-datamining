@@ -1,5 +1,4 @@
 /** chunk id: 88465 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     CR: "modalRoot__38ccf",
     jE: "modalContent__38ccf",

@@ -1,11 +1,11 @@
 /** chunk id: 321902 params = (module,exports,require) **/
 n.d(t, {
-    T: () => l
+    T: () => r
 });
 var s = n(64700),
-    r = n(652215),
-    i = n(188275);
+    i = n(652215),
+    l = n(188275);
 
-function l(e) {
-    return s.useMemo(() => e ? [r.FYj, i.XR] : [r.FYj], [e])
+function r(e) {
+    return s.useMemo(() => e ? [i.FYj, l.XR] : [i.FYj], [e])
 }

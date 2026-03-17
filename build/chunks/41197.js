@@ -1,6 +1,6 @@
 /** chunk id: 41197 params = (module,exports,require) **/
 n.d(t, {
-    X: () => m
+    X: () => g
 });
 var i = n(419954),
     s = n(780964),
@@ -11,9 +11,10 @@ var i = n(419954),
     d = n(100549),
     c = n(827315),
     u = n(898560),
-    _ = n(985018);
-let m = (0, i.zZ)(s.X.DISPLAY_MESSAGES_CATEGORY, {
-    useTitle: () => _.intl.string(_.t.OIgYlQ),
-    useSearchTerms: () => [_.intl.string(_.t["/VQax8"])],
-    buildLayout: () => [c.g, l.r, a.j, u.z, o.z, r.t, d.$]
+    _ = n(461616),
+    m = n(985018);
+let g = (0, i.zZ)(s.X.DISPLAY_MESSAGES_CATEGORY, {
+    useTitle: () => m.intl.string(m.t.OIgYlQ),
+    useSearchTerms: () => [m.intl.string(m.t["/VQax8"])],
+    buildLayout: () => [c.g, l.r, a.j, u.z, o.z, _.F, r.t, d.$]
 })

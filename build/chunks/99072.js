@@ -1,12 +1,12 @@
 /** chunk id: 99072 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => b
 });
 var i = n(627968);
 n(64700);
 var r = n(311907),
-    a = n(397927),
-    l = n(456060),
+    l = n(397927),
+    a = n(456060),
     s = n(793574),
     o = n(688810),
     d = n(572211),
@@ -23,12 +23,12 @@ var r = n(311907),
     C = n(820672),
     E = n(768349),
     I = n(426127),
-    b = n(985018);
+    T = n(985018);
 
-function T(e) {
+function b(e) {
     let {
         currentUserId: t,
-        message: T,
+        message: b,
         application: v,
         channel: S,
         analyticsLocations: y,
@@ -47,25 +47,25 @@ function T(e) {
         if (t === v.id) return !0;
         let n = p.A.getGameByApplication(v);
         return null != n && t === n.id
-    })), O = (0, r.bG)([h.A], () => h.A.getCurrentUserActiveStream()), D = (0, r.bG)([g.A], () => g.A.getChannelId()), w = f.default.extractTimestamp(T.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
-        children: (0, l.Wf)(T, S, t)
+    })), D = (0, r.bG)([h.A], () => h.A.getCurrentUserActiveStream()), O = (0, r.bG)([g.A], () => g.A.getChannelId()), w = f.default.extractTimestamp(b.id) + C.M < Date.now(), k = (0, i.jsx)(i.Fragment, {
+        children: (0, a.Wf)(b, S, t)
     }), {
         analyticsLocations: U
-    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = b.intl.string(I.default["5+172e"]), B = !1;
-    return w ? (G = b.intl.string(I.default.u4QmWl), B = !0) : null != O ? (G = b.intl.string(I.default.P0wwmM), B = !0) : D !== S.id ? (G = b.intl.string(I.default.qRXats), B = !0) : null == M && (G = b.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
-        header: b.intl.string(I.default.nAyuPp),
+    } = (0, o.Ay)(y, s.A.REQUEST_TO_STREAM_INVITE_EMBED), G = T.intl.string(I.default["5+172e"]), B = !1;
+    return w ? (G = T.intl.string(I.default.u4QmWl), B = !0) : null != D ? (G = T.intl.string(I.default.P0wwmM), B = !0) : O !== S.id ? (G = T.intl.string(I.default.qRXats), B = !0) : null == M && (G = T.intl.string(I.default["43zohO"]), B = !0), (0, i.jsx)(d.h, {
+        header: T.intl.string(I.default.nAyuPp),
         title: v.name,
         staticBannerSrc: j,
         videoBannerSrc: L,
         bannerAspectRatio: R,
         iconSrc: P ?? void 0,
         info: k,
-        actions: T.author.id === t ? [] : [{
+        actions: b.author.id === t ? [] : [{
             label: G,
             trackingArea: c.kY.STREAM,
             disabled: B,
             onClick: () => {
-                null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, a.mMO)(async () => {
+                null != M && ((0, x.isWindows)() ? (0, m.A)(M.pid) : (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await Promise.all([n.e("96811"), n.e("48697")]).then(n.bind(n, 648230));
@@ -81,7 +81,7 @@ function T(e) {
             linkType: E.J.REQUEST_TO_STREAM,
             guildId: S.guild_id,
             channelId: S.id,
-            messageId: T.id,
+            messageId: b.id,
             onView: N,
             isDeadEnd: w
         }

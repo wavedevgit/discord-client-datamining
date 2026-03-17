@@ -1,5 +1,4 @@
 /** chunk id: 799864 params = (module,exports,require) **/
-"use strict";
 e.exports = {
     D$: "similarGames_a02225",
     iu: "similarGameImageWrapper_a02225",

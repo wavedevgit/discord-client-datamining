@@ -1,7 +1,7 @@
 /** chunk id: 328913 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -27,7 +27,7 @@ function m(e) {
         onClose: t
     })
 }
-class x extends s.PureComponent {
+class E extends s.PureComponent {
     static defaultProps = {
         contained: !1
     };
@@ -64,6 +64,6 @@ class x extends s.PureComponent {
         })
     }
 }
-let E = r.Ay.connectStores([c.A], () => ({
+let x = r.Ay.connectStores([c.A], () => ({
     selectedGuildId: c.A.getGuildId()
-}))(x)
+}))(E)

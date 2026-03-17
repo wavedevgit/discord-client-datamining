@@ -1,12 +1,11 @@
 /** chunk id: 530912 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
     Jf: () => _,
     TA: () => u,
     VF: () => h,
-    hH: () => d,
+    hH: () => c,
     nL: () => m,
-    pp: () => c
+    pp: () => d
 });
 var a = n(64700),
     l = n(735438),
@@ -15,7 +14,7 @@ var a = n(64700),
     i = n(954571),
     o = n(652215);
 
-function c(e, t, n) {
+function d(e, t, n) {
     i.default.track(o.HAw.FORWARD_MESSAGE_STARTED, {
         channel_id: e,
         message_id: t,
@@ -23,7 +22,7 @@ function c(e, t, n) {
     })
 }
 
-function d(e) {
+function c(e) {
     let {
         channelId: t,
         messageId: n,
@@ -44,8 +43,8 @@ function u(e) {
         messageId: n,
         hasError: a,
         hasContextMessage: l,
-        numDestinations: c,
-        numDestinationChanges: d,
+        numDestinations: d,
+        numDestinationChanges: c,
         numQueryChanges: u,
         anyDestinationHasSlowmode: _,
         source: m
@@ -55,8 +54,8 @@ function u(e) {
             message_id: n,
             has_error: a,
             has_context_message: l,
-            num_destinations: c,
-            num_destination_changes: d,
+            num_destinations: d,
+            num_destination_changes: c,
             num_query_changes: u,
             any_destination_has_slowmode: _
         }), "message-shortcut" === m) {

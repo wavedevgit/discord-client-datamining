@@ -1,67 +1,67 @@
 /** chunk id: 743987 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+t.d(n, {
+    A: () => p
 });
-var i = n(627968);
-n(64700);
-var s = n(417597),
-    r = n(990078),
-    l = n(397927),
-    a = n(370480),
-    o = n(263063),
-    d = n(773669),
-    c = n(696451),
-    u = n(71393),
-    m = n(661191),
-    A = n(985018),
-    x = n(713531);
+var i = t(627968);
+t(64700);
+var s = t(417597),
+    l = t(990078),
+    a = t(397927),
+    r = t(370480),
+    o = t(263063),
+    d = t(773669),
+    c = t(696451),
+    u = t(71393),
+    m = t(661191),
+    A = t(985018),
+    x = t(713531);
 
-function _(e) {
+function p(e) {
     let {
-        userId: t,
-        guildId: n,
-        textClassName: _,
-        tooltipDelay: p
-    } = e, f = (0, s.bG)([d.default], () => d.default.locale), h = (0, s.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), g = (0, s.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), I = (0, a.An)(m.default.extractTimestamp(t), f), j = (0, a.An)(g?.joinedAt, f);
-    return null == h || null == g ? (0, i.jsx)(l.Text, {
+        userId: n,
+        guildId: t,
+        textClassName: p,
+        tooltipDelay: _
+    } = e, f = (0, s.bG)([d.default], () => d.default.locale), h = (0, s.bG)([u.A], () => null != t ? u.A.getGuild(t) : null), j = (0, s.bG)([c.Ay], () => null != t ? c.Ay.getMember(t, n) : null), g = (0, r.An)(m.default.extractTimestamp(n), f), I = (0, r.An)(j?.joinedAt, f);
+    return null == h || null == j ? (0, i.jsx)(a.Text, {
         variant: "text-sm/normal",
-        className: _,
-        children: I
+        className: p,
+        children: g
     }) : (0, i.jsxs)("div", {
         className: x.y9,
         children: [(0, i.jsxs)("div", {
             className: x.R1,
-            children: [(0, i.jsx)(r.m, {
+            children: [(0, i.jsx)(l.m, {
                 text: A.intl.string(A.t.uvGmCx),
-                delay: p,
-                children: (0, i.jsx)(l.pVd, {
+                delay: _,
+                children: (0, i.jsx)(a.pVd, {
                     size: "custom",
                     width: 28,
                     height: 28,
                     color: "currentColor",
                     className: x.Mg
                 })
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                className: _,
-                children: I
+                className: p,
+                children: g
             })]
         }), (0, i.jsx)("div", {
             className: x.yF
         }), (0, i.jsxs)("div", {
             className: x.R1,
-            children: [(0, i.jsx)(r.m, {
+            children: [(0, i.jsx)(l.m, {
                 text: h.name,
-                delay: p,
+                delay: _,
                 children: (0, i.jsx)(o.Ay, {
                     guild: h,
                     size: o.Ay.Sizes.SMOL,
                     className: x.$f
                 })
-            }), (0, i.jsx)(l.Text, {
+            }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
-                className: _,
-                children: j
+                className: p,
+                children: I
             })]
         })]
     })

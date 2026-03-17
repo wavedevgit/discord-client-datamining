@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(64700),
-    a = n(311907),
-    l = n(846293),
+    l = n(311907),
+    a = n(846293),
     s = n(820284),
     o = n(688810),
     d = n(107123),
@@ -22,8 +22,8 @@ var i = n(627968),
     C = n(58262),
     E = n(309818),
     I = n(112007),
-    b = n(877695),
-    T = n(242907),
+    T = n(877695),
+    b = n(242907),
     v = n(168428),
     S = n(448894),
     y = n(652215);
@@ -36,12 +36,12 @@ function N(e) {
     } = e, {
         invite: j,
         inviteError: L
-    } = (0, a.cf)([g.A], () => ({
+    } = (0, l.cf)([g.A], () => ({
         invite: g.A.getInvite(t),
         inviteError: g.A.getInviteError(t)
     }), [t]), R = null == j;
     r.useEffect(() => {
-        R && l.Ay.resolveInvite(t)
+        R && a.Ay.resolveInvite(t)
     }, [t, R]);
     let P = j ?? {
             state: y.elq.RESOLVING,
@@ -50,19 +50,19 @@ function N(e) {
         {
             analyticsLocations: M
         } = (0, o.Ay)(),
-        O = (0, a.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
-        D = (0, a.bG)([h.default], () => h.default.getId()),
-        w = (0, a.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
+        D = (0, l.bG)([p.A], () => j?.guild != null ? p.A.getGuild(j.guild.id) : null, [j]),
+        O = (0, l.bG)([h.default], () => h.default.getId()),
+        w = (0, l.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(P.guild_scheduled_event?.id), [P]),
         k = () => {
-            null != P.channel && l.Ay.transitionToInviteSync(P)
+            null != P.channel && a.Ay.transitionToInviteSync(P)
         },
         U = () => {
-            let e = null == O && j?.guild != null ? A.DY(j.guild) : O;
+            let e = null == D && j?.guild != null ? A.DY(j.guild) : D;
             (0, m.g)({
                 guild: e,
-                isMember: null != O,
+                isMember: null != D,
                 analyticsLocations: M
-            }) === m.W.PROCEED && l.Ay.acceptInviteAndTransitionToInviteChannel({
+            }) === m.W.PROCEED && a.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: t,
                 context: N("Invite Button Embed")
             })
@@ -70,8 +70,8 @@ function N(e) {
         G = (0, i.jsx)(I.A, {
             onTransitionToInviteChannel: k,
             onAcceptInstantInvite: U,
-            currentUserId: D,
-            guild: O,
+            currentUserId: O,
+            guild: D,
             invite: P,
             message: n
         });
@@ -81,7 +81,7 @@ function N(e) {
             break;
         case y.elq.EXPIRED:
         case y.elq.BANNED:
-            G = (0, i.jsx)(T.A, {
+            G = (0, i.jsx)(b.A, {
                 banned: P.state === y.elq.BANNED,
                 author: n.author,
                 channelId: n.channel_id
@@ -99,7 +99,7 @@ function N(e) {
                     G = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: k,
                         onAcceptInstantInvite: U,
-                        currentUserId: D,
+                        currentUserId: O,
                         invite: P,
                         message: n
                     });
@@ -116,9 +116,9 @@ function N(e) {
                         G = (0, i.jsx)(S.A, {
                             onTransitionToInviteChannel: k,
                             onAcceptInstantInvite: U,
-                            currentUserId: D,
+                            currentUserId: O,
                             message: n,
-                            guild: O,
+                            guild: D,
                             invite: P
                         });
                         break
@@ -128,7 +128,7 @@ function N(e) {
                             guildScheduledEvent: w,
                             guild: P.guild,
                             channel: P.channel,
-                            isMember: null != O,
+                            isMember: null != D,
                             onAcceptInstantInvite: U,
                             onTransitionToInviteChannel: k
                         });
@@ -141,10 +141,10 @@ function N(e) {
                             message: n
                         });
                         break
-                    }(0, d.v)(P) && (G = (0, i.jsx)(b.A, {
+                    }(0, d.v)(P) && (G = (0, i.jsx)(T.A, {
                         onTransitionToInviteChannel: k,
                         onAcceptInstantInvite: U,
-                        isMemberOfGuild: null != O,
+                        isMemberOfGuild: null != D,
                         invite: P,
                         message: n
                     }))

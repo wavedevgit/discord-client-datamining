@@ -9,8 +9,8 @@ var l = n(503698),
     s = n(990078),
     r = n(397927),
     o = n(183555),
-    c = n(735321),
-    d = n(985018),
+    d = n(735321),
+    c = n(985018),
     u = n(794118);
 
 function m(e) {
@@ -22,21 +22,21 @@ function m(e) {
         buttonRef: g,
         onRemove: x
     } = e, {
-        trackUserProfileEditAction: f
+        trackUserProfileEditAction: p
     } = (0, o.NJ)();
     return (0, i.jsx)(s.m, {
-        text: d.intl.string(d.t.HUvyDc),
+        text: c.intl.string(c.t.HUvyDc),
         ariaHidden: !0,
         children: (0, i.jsx)(r.DUT, {
             innerRef: g,
             onClick: () => {
-                (0, c.ef)(n, t.applicationId), r.ORC.announce(d.intl.string(d.t["08HmMj"])), f({
+                (0, d.ef)(n, t.applicationId), r.ORC.announce(c.intl.string(c.t["08HmMj"])), p({
                     action: "GAME_REMOVED",
                     gameId: t.applicationId,
                     widgetEdited: n
                 }), x?.()
             },
-            "aria-label": d.intl.string(d.t.HUvyDc),
+            "aria-label": c.intl.string(c.t.HUvyDc),
             className: a()(m, u.v),
             children: (0, i.jsx)(r.ucK, {
                 size: l,

@@ -19,8 +19,8 @@ var s = n(627968),
     g = n(442433),
     _ = n(684013),
     m = n(684136),
-    x = n(34968),
-    E = n(775121),
+    E = n(34968),
+    x = n(775121),
     y = n(836753),
     v = n(793574),
     S = n(688810),
@@ -33,15 +33,15 @@ var I = n(15285),
     b = n(265367),
     j = n(616356),
     D = n(734057),
-    R = n(71393),
-    L = n(555528),
+    L = n(71393),
+    R = n(555528),
     w = n(430452),
-    k = n(309010),
-    M = n(70142),
+    M = n(309010),
+    k = n(70142),
     P = n(157257),
     G = n(712687),
-    V = n(532624),
-    U = n(242286),
+    U = n(532624),
+    V = n(242286),
     z = n(899699),
     H = n(256415),
     W = n(531685),
@@ -136,7 +136,7 @@ class ep extends l.Component {
     constructor(e) {
         super(e);
         const t = e.locked && H.default.isPinned(el.uss.TEXT);
-        E.A.setLayout(t ? x.dY : x.CJ), t && E.A.enable()
+        x.A.setLayout(t ? E.dY : E.CJ), t && x.A.enable()
     }
     handleLock() {
         (0, f.ueM)() || G.A.isOpen() || _.A.setInputLocked(!0, (0, J.getPID)())
@@ -148,7 +148,7 @@ class ep extends l.Component {
         this.forceUpdate()
     }, 500);
     handleWindowResize = () => {
-        U.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
+        V.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     };
     componentDidMount() {
         _.A.startSession(), O.A.initialize(), y.A.initialize(), b.A.initialize()
@@ -169,8 +169,8 @@ class ep extends l.Component {
                         unlocked_duration: e
                     }), eo = null
                 }
-                E.A.disable(), this.activeKeyEventShapes = [], H.default.isPinned(el.uss.TEXT) && (E.A.setLayout(x.dY), E.A.enable())
-            } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ed, !1), null == eo && (eo = Date.now(), _.A.track(el.HAw.OVERLAY_UNLOCKED)), E.A.disable(), this.activeKeyEventShapes = [], E.A.setLayout(x.CJ), E.A.enable());
+                x.A.disable(), this.activeKeyEventShapes = [], H.default.isPinned(el.uss.TEXT) && (x.A.setLayout(E.dY), x.A.enable())
+            } else e.locked && !this.props.locked && (window.removeEventListener("contextmenu", ed, !1), null == eo && (eo = Date.now(), _.A.track(el.HAw.OVERLAY_UNLOCKED)), x.A.disable(), this.activeKeyEventShapes = [], x.A.setLayout(E.CJ), x.A.enable());
             e.keybindKeyCodes !== this.props.keybindKeyCodes && (this.lockEventShape = (0, Z.pi)(this.props.keybindKeyCodes))
         }
     }
@@ -188,7 +188,7 @@ class ep extends l.Component {
             voice_widget_connected: t,
             text_widget_connected: H.default.isPinned(el.uss.TEXT),
             overlay_render_method: X.Ue[X.Ue.Hook],
-            unpinned_widget_types: L.A.getAllUnpinnedPinnedWidgets(J.OVERLAY_LAYOUT_ID)
+            unpinned_widget_types: R.A.getAllUnpinnedPinnedWidgets(J.OVERLAY_LAYOUT_ID)
         });
         let c = l && !a && null != d,
             u = t && null != r && null != o,
@@ -215,7 +215,7 @@ class ep extends l.Component {
                 message: "set_perf_report_interval",
                 interval: 15 * K.A.Millis.MINUTE
             })), F.Ay.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-                H.default.getDisableExternalLinkAlert() || t === M.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
+                H.default.getDisableExternalLinkAlert() || t === k.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("30582").then(n.bind(n, 613429));
@@ -314,7 +314,7 @@ function eA() {
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),
         isPreviewingInGame: H.default.isPreviewingInGame()
-    })), r = (0, A.bG)([W.A], () => W.A.windowSize()), o = (0, A.bG)([V.Ay], () => V.Ay.getOverlayKeybind()), d = (0, A.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, A.bG)([D.A], () => D.A.getChannel(d)), u = (0, A.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, A.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, A.bG)([w.Ay], () => (0, N.A)(w.Ay)), f = (0, A.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
+    })), r = (0, A.bG)([W.A], () => W.A.windowSize()), o = (0, A.bG)([U.Ay], () => U.Ay.getOverlayKeybind()), d = (0, A.bG)([M.A], () => M.A.getVoiceChannelId()), c = (0, A.bG)([D.A], () => D.A.getChannel(d)), u = (0, A.bG)([L.A], () => null != c ? L.A.getGuild(c.guild_id) : null), h = (0, A.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, A.bG)([w.Ay], () => (0, N.A)(w.Ay)), f = (0, A.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
         analyticsLocations: g
     } = (0, S.Ay)(v.A.OVERLAY);
     return l.useEffect(() => {

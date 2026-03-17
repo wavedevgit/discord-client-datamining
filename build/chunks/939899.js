@@ -9,14 +9,14 @@ var i = n(627968),
     s = n.n(a),
     r = n(158954),
     o = n(311907),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(362490),
     m = n(429913),
     g = n(183555),
     x = n(622543),
-    f = n(985018),
-    p = n(413611);
+    p = n(985018),
+    f = n(413611);
 
 function h(e) {
     let {
@@ -24,39 +24,39 @@ function h(e) {
         size: n = "default"
     } = e, l = (0, o.bG)([x.A], () => x.A.getApplicationWidgetConfig(t));
     return (0, i.jsxs)("div", {
-        className: s()(p.kL, {
-            [p.PG]: "small" === n
+        className: s()(f.kL, {
+            [f.PG]: "small" === n
         }),
         children: [(0, i.jsxs)("div", {
-            className: p.Qs,
+            className: f.Qs,
             children: [(0, i.jsx)("div", {
-                className: p.wx
+                className: f.wx
             }), (0, i.jsx)("div", {
-                className: p.yF
+                className: f.yF
             }), (0, i.jsxs)("div", {
-                className: p.M1,
+                className: f.M1,
                 children: [(0, i.jsx)("div", {
-                    className: p.dJ
+                    className: f.dJ
                 }), (0, i.jsx)("div", {
-                    className: p.dJ
+                    className: f.dJ
                 }), (0, i.jsx)("div", {
-                    className: p.dJ
+                    className: f.dJ
                 }), (0, i.jsx)("div", {
-                    className: p.dJ
+                    className: f.dJ
                 }), (0, i.jsx)("div", {
-                    className: p.dJ
+                    className: f.dJ
                 }), (0, i.jsx)("div", {
-                    className: p.dJ
+                    className: f.dJ
                 })]
             })]
         }), (0, i.jsx)("div", {
-            className: p.ZS,
+            className: f.ZS,
             children: l?.miniPreviewImage != null ? (0, i.jsx)("img", {
                 src: l.miniPreviewImage,
                 alt: "",
-                className: p.oz
+                className: f.oz
             }) : (0, i.jsx)("div", {
-                className: p.FQ
+                className: f.FQ
             })
         })]
     })
@@ -75,7 +75,7 @@ function _(e) {
         fetched: _
     } = (0, u.RD)(s), {
         analyticsLocations: A
-    } = (0, d.Ay)(c.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
+    } = (0, c.Ay)(d.A.USER_PROFILE_APPLICATION_WIDGET), I = l.useCallback(() => {
         x && (a({
             action: "PRESS_APPLICATION_WIDGET_PLACEHOLDER_CONNECT",
             applicationId: t
@@ -84,18 +84,18 @@ function _(e) {
         }))
     }, [x, a, t, h, A]);
     return "default" !== n || null == s ? null : (0, i.jsxs)("div", {
-        className: p.qr,
+        className: f.qr,
         children: [(0, i.jsx)(r.A5T, {
             size: "xs"
         }), (0, i.jsx)(r.EYj, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            children: _ ? o ? f.intl.format(f.t.wiyuG9, {
+            children: _ ? o ? p.intl.format(p.t.wiyuG9, {
                 applicationName: s.name
-            }) : x ? f.intl.format(f.t.RNWFOQ, {
+            }) : x ? p.intl.format(p.t.RNWFOQ, {
                 onConnect: I
-            }) : f.intl.string(f.t["9TX4UT"]) : (0, i.jsx)("div", {
-                className: p.bg
+            }) : p.intl.string(p.t["9TX4UT"]) : (0, i.jsx)("div", {
+                className: f.bg
             })
         })]
     })

@@ -9,14 +9,14 @@ var l = n(311907),
     s = n(517164),
     r = n(114212),
     o = n(290863),
-    c = n(461213),
-    d = n(975571),
+    d = n(461213),
+    c = n(975571),
     u = n(146655),
     m = n(489379),
     g = n(837924),
     x = n(558628),
-    f = n(842241),
-    p = n(282797),
+    p = n(842241),
+    f = n(282797),
     h = n(782505),
     _ = n(83013),
     A = n(515054),
@@ -43,8 +43,8 @@ function T(e) {
     } = (0, m.A)({
         userId: t.id,
         guildId: b
-    }), w = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([c.A, o.A], () => {
-        let e = O ? c.A.getStatus() : o.A.getStatus(t.id);
+    }), w = (0, l.bG)([s.A], () => s.A.isFetchingUserOutbox(t.id)), O = t.id === n.id, P = (0, l.bG)([d.A, o.A], () => {
+        let e = O ? d.A.getStatus() : o.A.getStatus(t.id);
         return e === a.clD.OFFLINE || e === a.clD.INVISIBLE
     }), D = y.length > 0 || null != R, G = T?.private !== !0 && null == R && null == L && null != k, M = !P && (D || G), U = C.length > 0;
     return M || U || !w ? M || U || w ? (0, i.jsxs)(A.K, {
@@ -55,7 +55,7 @@ function T(e) {
             children: (0, i.jsxs)("ul", {
                 className: E.kR,
                 children: [null != R && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(f.A, {
+                    children: (0, i.jsx)(p.A, {
                         user: t,
                         currentUser: n,
                         stream: R,
@@ -69,7 +69,7 @@ function T(e) {
                         onClose: S
                     })
                 }, `live-${l}`)), G && (0, i.jsx)("li", {
-                    children: (0, i.jsx)(p.A, {
+                    children: (0, i.jsx)(f.A, {
                         user: t,
                         currentUser: n,
                         voiceChannel: k,
@@ -81,7 +81,7 @@ function T(e) {
             heading: v.intl.string(v.t.jzgEoL),
             introText: O ? v.intl.format(v.t["4bk9Ak"], {
                 learnMoreHook: (e, t) => (0, i.jsx)(a.MzZ, {
-                    href: d.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
+                    href: c.A.getArticleURL(j.MVz.ACTIVITY_STATUS_SETTINGS),
                     children: e
                 }, t)
             }) : void 0,

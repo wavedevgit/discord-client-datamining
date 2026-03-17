@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     r = n(412703),
-    a = n(311907),
-    l = n(397927),
+    l = n(311907),
+    a = n(397927),
     s = n(829219),
     o = n(859703),
     d = n(890687),
@@ -38,17 +38,17 @@ let g = function(e) {
         analyticsCtxSourceQuestContent: C,
         analyticsCtxQuestContentPosition: E,
         analyticsCtxQuestContentRowIndex: I
-    } = e, b = {
+    } = e, T = {
         questContent: f,
         questContentCTA: p(c),
         sourceQuestContent: C,
         questContentPosition: E,
         questContentRowIndex: I
-    }, T = n.id, {
+    }, b = n.id, {
         isEnrolling: v
-    } = (0, a.cf)([o.A], () => ({
-        isEnrolling: o.A.isEnrolling(T)
-    }), [T]), S = (0, _.Oz)(n), y = function(e, t) {
+    } = (0, l.cf)([o.A], () => ({
+        isEnrolling: o.A.isEnrolling(b)
+    }), [b]), S = (0, _.Oz)(n), y = function(e, t) {
         let {
             launchInGameActivity: n
         } = (0, d.zW)(t);
@@ -87,23 +87,23 @@ let g = function(e) {
         }
     }(c, n), j = (t = y ?? void 0, c === r.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
-            questContent: b.questContent,
-            questContentCTA: b.questContentCTA,
-            sourceQuestContent: b.sourceQuestContent,
+            questContent: T.questContent,
+            questContentCTA: T.questContentCTA,
+            sourceQuestContent: T.sourceQuestContent,
             sourceQuestContentCTA: p(c),
-            questContentPosition: b.questContentPosition,
-            questContentRowIndex: b.questContentRowIndex
+            questContentPosition: T.questContentPosition,
+            questContentRowIndex: T.questContentRowIndex
         })
     }: async () => {
         await (0, s.Oy)(n.id, {
-            questContent: b.questContent,
-            questContentCTA: b.questContentCTA,
-            sourceQuestContent: b.sourceQuestContent,
-            questContentPosition: b.questContentPosition,
-            questContentRowIndex: b.questContentRowIndex
+            questContent: T.questContent,
+            questContentCTA: T.questContentCTA,
+            sourceQuestContent: T.sourceQuestContent,
+            questContentPosition: T.questContentPosition,
+            questContentRowIndex: T.questContentRowIndex
         }), t?.()
     });
-    return (0, i.jsx)(l.Button, {
+    return (0, i.jsx)(a.Button, {
         size: g,
         loading: v,
         variant: A,

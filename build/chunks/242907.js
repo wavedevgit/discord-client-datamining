@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(158954),
-    a = n(311907),
-    l = n(414798),
+    l = n(311907),
+    a = n(414798),
     s = n(529200),
     o = n(406704),
     d = n(961350),
@@ -24,10 +24,10 @@ function A(e) {
             banned: f,
             channelId: C
         } = e,
-        E = (0, a.bG)([d.default], () => d.default.getId()),
+        E = (0, l.bG)([d.default], () => d.default.getId()),
         I = m.Ay.useName(x),
-        b = E === x.id,
-        T = (0, a.bG)([c.A, u.A], () => {
+        T = E === x.id,
+        b = (0, l.bG)([c.A, u.A], () => {
             let e = c.A.getChannel(C);
             if (null == e) return !1;
             if (e.isPrivate()) return !0;
@@ -38,7 +38,7 @@ function A(e) {
             }
             return u.A.can(h.xBc.SEND_MESSAGES, e)
         });
-    return b ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != I && T ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
+    return T ? (t = p.intl.string(p.t["F/OLvL"]), A = p.intl.string(p.t.C89OLE)) : (A = p.intl.string(p.t.YVub5y), f ? t = p.intl.string(p.t["57nBty"]) : null != I && b ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
         username: I
     }), n = (0, i.jsx)(r.$nd, {
         onClick: function() {
@@ -48,7 +48,7 @@ function A(e) {
             _._.dispatchToLastSubscribed(h.jej.INSERT_TEXT, {
                 plainText: t,
                 rawText: n
-            }), null != C && l.A.startTyping(C)
+            }), null != C && a.A.startTyping(C)
         },
         text: p.intl.string(p.t.P8tvKG)
     })) : t = p.intl.string(p.t["SMJr+a"])), (0, i.jsxs)(s.A, {

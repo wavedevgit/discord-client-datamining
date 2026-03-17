@@ -1,13 +1,12 @@
 /** chunk id: 86962 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
-    O: () => s
+    O: () => o
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(605248);
-let s = {
+let o = {
     name: "Text",
     id: "cms-text",
     component: e => (0, l.jsxs)(l.Fragment, {

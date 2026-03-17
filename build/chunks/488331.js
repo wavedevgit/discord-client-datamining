@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var r = n(793574),
-    a = n(688810),
-    l = n(735991),
+    l = n(688810),
+    a = n(735991),
     s = n(485724),
     o = n(429913),
     d = n(246097),
@@ -22,11 +22,11 @@ function _(e) {
         message: h
     } = e, {
         analyticsLocations: p
-    } = (0, a.Ay)(r.A.ACTIVITY_BOOKMARK), [g] = (0, o.A)([t]), A = null != g && (0, l.Ag)(g), {
+    } = (0, l.Ay)(r.A.ACTIVITY_BOOKMARK), [g] = (0, o.A)([t]), A = null != g && (0, a.Ag)(g), {
         data: x,
         error: f
     } = (0, d.K)(g?.id, m);
-    return null == g || !1 === A ? null : null != m && null == f && null != x ? (0, i.jsx)(a.f5, {
+    return null == g || !1 === A ? null : null != m && null == f && null != x ? (0, i.jsx)(l.f5, {
         value: p,
         children: (0, i.jsx)(c.W, {
             application: g,
@@ -35,7 +35,7 @@ function _(e) {
             referrerId: _,
             message: h
         })
-    }) : (0, i.jsx)(a.f5, {
+    }) : (0, i.jsx)(l.f5, {
         value: p,
         children: (0, i.jsx)(s.W, {
             app: g,

@@ -8,18 +8,18 @@ var i = n(627968),
     s = n.n(a),
     r = n(575593),
     o = n(397927),
-    c = n(793574),
-    d = n(688810),
+    d = n(793574),
+    c = n(688810),
     u = n(183555),
     m = n(808247),
     g = n(146423),
     x = n(460442),
-    f = n(699976),
-    p = n(652215),
+    p = n(699976),
+    f = n(652215),
     h = n(518477),
     _ = n(985018),
     A = n(614094);
-let I = f.Z.SIZE_90;
+let I = p.Z.SIZE_90;
 
 function j(e) {
     let {
@@ -28,19 +28,19 @@ function j(e) {
         style: a,
         skuPreviewStyle: r,
         setIsHoveringOrFocusing: o,
-        onClick: c,
-        wishlistId: d,
+        onClick: d,
+        wishlistId: c,
         children: m
     } = e, {
         trackUserProfileWishlistAction: x
-    } = (0, u.NJ)(), f = l.useCallback(() => {
+    } = (0, u.NJ)(), p = l.useCallback(() => {
         x({
-            wishlistId: d,
+            wishlistId: c,
             action: h.Mq.WISHLIST_ITEM_CLICKED,
             skuId: t.id,
             productLines: new Set([t.productLine])
-        }), c()
-    }, [c, t.id, t.productLine, x, d]);
+        }), d()
+    }, [d, t.id, t.productLine, x, c]);
     return (0, i.jsx)(g.A, {
         sku: t,
         user: n,
@@ -48,7 +48,7 @@ function j(e) {
         cardStyle: s()(A.Nr, a),
         skuPreviewStyle: s()(A.ev, r),
         onHoverOrFocusChange: o,
-        onClick: f,
+        onClick: p,
         children: m
     })
 }
@@ -59,12 +59,12 @@ function v(e) {
         analyticsLocations: n,
         isHoveringOrFocusing: a,
         handleOpenUserProfileModal: r,
-        skuPreviewStyle: c,
-        wishlistOwner: d,
+        skuPreviewStyle: d,
+        wishlistOwner: c,
         ...u
-    } = e, [g, f] = l.useState(!1), p = l.useCallback(async () => {
+    } = e, [g, p] = l.useState(!1), f = l.useCallback(async () => {
         if (!g) {
-            f(!0);
+            p(!0);
             try {
                 await m.A.addSkuToWishlist(t.id, n), r?.({
                     tabSection: h.RP.WISHLIST
@@ -72,20 +72,20 @@ function v(e) {
             } catch (e) {
                 (0, o.showToast)((0, o.createToast)(_.intl.string(_.t.F8FvUy), o.ToastType.FAILURE)), o.ORC.announce(_.intl.string(_.t.F8FvUy))
             } finally {
-                f(!1)
+                p(!1)
             }
         }
     }, [t, n, g, r]), I = l.useMemo(() => s()({
         [A.zW]: a || g
-    }, c), [a, g, c]);
+    }, d), [a, g, d]);
     return (0, i.jsx)(o.sqX, {
         "aria-label": t.name,
-        onClick: p,
+        onClick: f,
         children: (0, i.jsx)(j, {
             sku: t,
-            wishlistOwner: d,
+            wishlistOwner: c,
             skuPreviewStyle: I,
-            onClick: p,
+            onClick: f,
             isHoveringOrFocusing: a,
             ...u,
             children: (0, i.jsx)(x.oU, {
@@ -103,7 +103,7 @@ function E(e) {
         ...l
     } = e, {
         analyticsLocations: a
-    } = (0, d.Ay)(...n ?? [], c.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
+    } = (0, c.Ay)(...n ?? [], d.A.SLAYER_STOREFRONT_WISHLIST_ITEM_CARD);
     return (0, i.jsx)(v, {
         sku: t,
         analyticsLocations: a,
@@ -139,14 +139,14 @@ function b(e) {
         ...n
     } = e, [a, s] = l.useState(!1);
     switch (t.productLine) {
-        case p.EZt.SOCIAL_LAYER_GAME_ITEM:
+        case f.EZt.SOCIAL_LAYER_GAME_ITEM:
             return (0, i.jsx)(E, {
                 sku: t,
                 isHoveringOrFocusing: a,
                 setIsHoveringOrFocusing: s,
                 ...n
             });
-        case p.EZt.COLLECTIBLES:
+        case f.EZt.COLLECTIBLES:
             return (0, i.jsx)(T, {
                 sku: t,
                 isHoveringOrFocusing: a,

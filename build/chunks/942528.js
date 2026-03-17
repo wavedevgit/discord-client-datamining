@@ -1,35 +1,34 @@
 /** chunk id: 942528 params = (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => v
+    A: () => j
 });
 var a = n(627968),
     l = n(64700),
     i = n(503698),
     r = n.n(i),
     s = n(311907),
-    c = n(397927),
-    o = n(734057),
+    o = n(397927),
+    c = n(734057),
     d = n(309010),
     u = n(287809),
     m = n(562153),
     x = n(420706),
-    h = n(322789),
-    f = n(506326),
+    f = n(322789),
+    h = n(506326),
     g = n(985018),
     p = n(505502),
-    _ = n(851822);
-let v = e => {
+    v = n(851822);
+let j = e => {
     let {
         entry: t,
         onClose: n,
         onReaction: i,
-        onRequestOpen: v,
-        disableActivityProfileLinks: j,
+        onRequestOpen: j,
+        disableActivityProfileLinks: _,
         customCTA: A,
         popoutClassname: E,
         popoutPosition: I = "right"
-    } = e, b = l.useRef(null), N = (0, s.bG)([d.A, o.A], () => o.A.getChannel(d.A.getChannelId())), C = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
+    } = e, b = l.useRef(null), N = (0, s.bG)([d.A, c.A], () => c.A.getChannel(d.A.getChannelId())), C = (0, s.bG)([u.default], () => u.default.getUser(t.author_id)), {
         nick: T,
         avatar: S
     } = l.useMemo(() => {
@@ -39,7 +38,7 @@ let v = e => {
             avatar: e
         }
     }, [C, N]);
-    return null == C ? null : (0, a.jsx)(c.YNO, {
+    return null == C ? null : (0, a.jsx)(o.YNO, {
         targetElementRef: b,
         position: I,
         renderPopout: e => {
@@ -58,19 +57,19 @@ let v = e => {
                     },
                     onUserPopoutClosed: () => l(),
                     disableGameProfileLinks: !0,
-                    disableActivityProfileLinks: j
+                    disableActivityProfileLinks: _
                 })
             })
         },
         positionKey: `'content-entry-${t.id}`,
         onRequestOpen: () => {
-            v?.()
+            j?.()
         },
-        children: e => (0, a.jsx)(c.DUT, {
+        children: e => (0, a.jsx)(o.DUT, {
             innerRef: b,
             ...e,
             className: p.GA,
-            children: (0, a.jsx)(c.vN3, {
+            children: (0, a.jsx)(o.vN3, {
                 offset: {
                     top: 4,
                     bottom: 4,
@@ -87,22 +86,22 @@ let v = e => {
                     }), (0, a.jsx)("div", {
                         className: p.Su,
                         children: (0, a.jsxs)("div", {
-                            className: r()(_.fi, _.Kt),
-                            children: [(0, a.jsx)(c.Text, {
+                            className: r()(v.fi, v.Kt),
+                            children: [(0, a.jsx)(o.Text, {
                                 variant: "text-md/medium",
                                 color: "text-strong",
                                 lineClamp: 1,
                                 children: T
-                            }), (0, a.jsx)(f.mG, {
-                                location: f.N5.APP_LAUNCHER,
-                                children: h.n.map((e, n) => (0, a.jsx)(e, {
+                            }), (0, a.jsx)(h.mG, {
+                                location: h.N5.APP_LAUNCHER,
+                                children: f.n.map((e, n) => (0, a.jsx)(e, {
                                     entry: t
                                 }, n))
                             })]
                         })
                     }), null != A ? A : (0, a.jsx)("div", {
                         className: p.Br,
-                        children: (0, a.jsx)(c.W4J, {
+                        children: (0, a.jsx)(o.W4J, {
                             size: "sm"
                         })
                     })]
