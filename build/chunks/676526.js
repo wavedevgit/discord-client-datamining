@@ -12,8 +12,8 @@ var l = n(503698),
     d = n(735321),
     c = n(451395),
     u = n(823016),
-    m = n(788593),
-    g = n(858808),
+    g = n(788593),
+    m = n(858808),
     x = n(685049),
     p = n(617086),
     f = n(985018),
@@ -78,7 +78,7 @@ function I(e) {
     } = (0, s.V)(e => ({
         isDragging: e.isDragging()
     })), w = () => (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(m.A, {
+        children: [(0, i.jsx)(g.A, {
             imageSrc: T,
             gameName: b,
             applicationId: t.applicationId,
@@ -96,7 +96,7 @@ function I(e) {
             guildId: d,
             channelId: f,
             className: _.Ez
-        }), k && (0, i.jsx)(g.A, {
+        }), k && (0, i.jsx)(m.A, {
             game: t,
             widgetType: l,
             className: _.vS,

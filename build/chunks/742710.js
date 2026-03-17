@@ -12,8 +12,8 @@ var r = n(397927),
     d = n(152621),
     c = n(409626),
     u = n(692969),
-    m = n(287809),
-    g = n(562153),
+    g = n(287809),
+    m = n(562153),
     x = n(183555),
     p = n(735321),
     f = n(451395),
@@ -94,7 +94,7 @@ function y(e) {
     return (0, i.jsx)(r.AC4, {
         id: a,
         children: E.intl.format(E.t.TM0XDY, {
-            name: g.Ay.getName(n, l, t)
+            name: m.Ay.getName(n, l, t)
         })
     })
 }
@@ -145,7 +145,7 @@ function k(e) {
         channelId: d,
         widgetType: c,
         applicationId: u
-    } = e, m = (0, o.GV)(), g = (0, o.GV)(), {
+    } = e, g = (0, o.GV)(), m = (0, o.GV)(), {
         trackUserProfileEditAction: f
     } = (0, x.NJ)(), [h, _] = l.useState("idle"), [A, I] = l.useState(t ?? ""), j = l.useRef(null), v = l.useRef(null), T = E.intl.string(E.t.xKSfBT), N = null != t && "" !== t.trim(), S = l.useCallback(() => {
         f({
@@ -171,10 +171,10 @@ function k(e) {
         className: b.kS,
         children: [(0, i.jsx)(r.AC4, {
             tag: "label",
-            htmlFor: m,
+            htmlFor: g,
             children: E.intl.string(E.t.JxKXeT)
         }), (0, i.jsx)(r.fs1, {
-            id: m,
+            id: g,
             value: A,
             placeholder: T,
             onChange: k,
@@ -189,7 +189,7 @@ function k(e) {
     }) : (0, i.jsxs)("div", {
         ref: v,
         role: "group",
-        "aria-labelledby": g,
+        "aria-labelledby": m,
         onClick: S,
         className: b.Vg,
         children: [(0, i.jsx)(r.R2l, {
@@ -200,7 +200,7 @@ function k(e) {
             user: n,
             guildId: a,
             channelId: d,
-            id: g
+            id: m
         }), (0, i.jsx)(C, {
             text: t ?? T,
             className: s()(b.qC, !N && b.qf)
@@ -226,7 +226,7 @@ function L(e) {
         widgetType: o,
         disableInteraction: c = !1,
         index: u,
-        onRemoveGame: g,
+        onRemoveGame: m,
         coverRef: x,
         className: E
     } = e, {
@@ -240,7 +240,7 @@ function L(e) {
     } = (0, d.A)(y), D = {
         variant: "heading-sm/medium",
         color: "text-default"
-    }, G = m.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, p.cv)(o), F = !c && M, W = F && (0, p.y9)(o), H = F && !U, {
+    }, G = g.default.getCurrentUser(), M = G?.id === t.id, U = 1 === (0, p.cv)(o), F = !c && M, W = F && (0, p.y9)(o), H = F && !U, {
         registerDragHandleRef: B
     } = (0, h.r)();
     if (P) return (0, i.jsx)(A.E, {});
@@ -301,7 +301,7 @@ function L(e) {
                 game: a,
                 widgetType: o,
                 className: b.vS,
-                onRemove: () => g?.(a.applicationId)
+                onRemove: () => m?.(a.applicationId)
             })]
         });
     return H ? (0, i.jsx)(N, {

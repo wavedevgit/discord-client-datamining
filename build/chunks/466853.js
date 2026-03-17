@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(915089),
     c = n(961350),
     u = n(183555),
-    m = n(735321),
-    g = n(94343),
+    g = n(735321),
+    m = n(94343),
     x = n(789290),
     p = n(451395),
     f = n(716804),
@@ -30,7 +30,7 @@ function v(e) {
         children: r
     } = e, o = l.useRef(null), c = l.useRef(null), {
         registerManageWidgetButtonRef: u,
-        manageFocusOnReorder: g
+        manageFocusOnReorder: m
     } = (0, A.r)();
     l.useLayoutEffect(() => {
         let e = u(n.type);
@@ -50,8 +50,8 @@ function v(e) {
             itemPreviewProps: {
                 widget: n
             },
-            onReorder: m.R_,
-            onEnd: () => g(n.type)
+            onReorder: g.R_,
+            onEnd: () => m(n.type)
         }),
         v = null != _,
         E = v && t < _,
@@ -81,7 +81,7 @@ function E(e) {
         widget: n,
         children: l,
         disableInteraction: a,
-        className: m,
+        className: g,
         index: p,
         trailingContent: h,
         headerTitle: A,
@@ -95,10 +95,10 @@ function E(e) {
         widget: n,
         onAction: C
     }), k = y === n.type;
-    (0, g.A)(R, k);
+    (0, m.A)(R, k);
     let L = S && null != p && !a,
         w = () => (0, i.jsxs)("div", {
-            className: s()(j.kL, m),
+            className: s()(j.kL, g),
             children: [(0, i.jsx)(_.A, {
                 userId: t,
                 headingId: N,

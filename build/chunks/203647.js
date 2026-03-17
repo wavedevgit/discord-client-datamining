@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(808247),
     c = n(107563),
     u = n(840411),
-    m = n(178213),
-    g = n(594832),
+    g = n(178213),
+    m = n(594832),
     x = n(86638),
     p = n(46537),
     f = n(287809),
@@ -68,7 +68,7 @@ let T = l.memo(function(e) {
         onReorder: f
     } = e, {
         registerDragHandleRef: h
-    } = (0, A.r)(), j = (0, m.GG)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
+    } = (0, A.r)(), j = (0, g.GG)("user_profile_wishlist_grid"), T = l.useMemo(() => s ? (0, i.jsx)(_.jV, {
         buttonRef: h(String(t.skuId)),
         className: v.BU,
         onFocus: e => e.stopPropagation()
@@ -93,16 +93,16 @@ let T = l.memo(function(e) {
             text: c.title,
             position: "top",
             asContainer: !0,
-            delay: g.Zh,
+            delay: m.Zh,
             children: e
         }) : (0, i.jsx)(r.u, {
             title: c.title,
             body: c.body ?? "",
             asset: c.renderIcon?.(t),
-            assetSize: g.Q8,
+            assetSize: m.Q8,
             position: "top",
             asContainer: !0,
-            delay: g.Zh,
+            delay: m.Zh,
             children: e
         })), n
     }, [j, t, a, u, T, c, s, d]);
@@ -125,16 +125,16 @@ function b(e) {
         profileOwner: n,
         isOwner: r
     } = e, o = f.default.getCurrentUser(), {
-        defaultWishlistId: m
+        defaultWishlistId: g
     } = (0, s.cf)([h.A], () => ({
         defaultWishlistId: h.A.getFirstWishlistId(n.id)
-    })), g = (0, p.b7)(t, r), {
+    })), m = (0, p.b7)(t, r), {
         isDragging: x
     } = (0, a.V)(e => ({
         isDragging: e.isDragging()
     })), _ = l.useCallback((e, n) => {
-        if (e === n || null == m || 0 === t.length || e < 0 || e >= t.length || n < 0 || n >= t.length) return;
-        let i = c.A.getWishlist(m);
+        if (e === n || null == g || 0 === t.length || e < 0 || e >= t.length || n < 0 || n >= t.length) return;
+        let i = c.A.getWishlist(g);
         if (null == i) return;
         let l = t[e],
             {
@@ -142,13 +142,13 @@ function b(e) {
                 previousSkuId: s,
                 nextSkuId: r
             } = (0, u.A)(i, t, e, n);
-        d.A.reorderWishlistItem(m, l.skuId, {
+        d.A.reorderWishlistItem(g, l.skuId, {
             previousSkuId: s,
             nextSkuId: r,
             newWishlistData: a
         })
-    }, [m, t]);
-    if (null == o || null == m) return null;
+    }, [g, t]);
+    if (null == o || null == g) return null;
     let I = (0, i.jsx)("ul", {
         className: v.Vg,
         children: t.map((e, t) => (0, i.jsx)(T, {
@@ -156,8 +156,8 @@ function b(e) {
             index: t,
             profileOwner: n,
             isOwner: r,
-            wishlistId: m,
-            tooltipConfig: g[t],
+            wishlistId: g,
+            tooltipConfig: m[t],
             isDragging: x,
             onReorder: _
         }, e.skuId))

@@ -8,8 +8,8 @@ e.d(i, {
 var n = e(627968);
 e(64700);
 var a = e(503698),
-    s = e.n(a),
-    l = e(397927),
+    l = e.n(a),
+    s = e(397927),
     r = e(407775),
     o = e(788868),
     c = e(271057);
@@ -24,7 +24,7 @@ function u(t) {
         wumpusPosition: d,
         className: g
     } = t;
-    return (0, n.jsx)(l.DUT, {
+    return (0, n.jsx)(s.DUT, {
         onClick: i,
         style: {
             cursor: "pointer"
@@ -36,7 +36,7 @@ function u(t) {
             isGift: e,
             isModal: !0,
             priceOptions: a,
-            className: s()(g, {
+            className: l()(g, {
                 [c.gH]: u
             }),
             showWumpus: !u,
@@ -55,13 +55,13 @@ function d(t) {
         narrowLayout: u,
         className: d
     } = t;
-    return (0, n.jsx)(l.DUT, {
+    return (0, n.jsx)(s.DUT, {
         onClick: i,
         style: {
             cursor: "pointer"
         },
         children: (0, n.jsx)(r.AP, {
-            className: s()(d, {
+            className: l()(d, {
                 [c.ym]: !o,
                 [c.gH]: u
             }),
@@ -79,7 +79,7 @@ function g(t) {
         onSelectSku: i,
         onSelectPremiumGroup: e,
         priceOptions: a,
-        showPromotionalGiftBanner: s
+        showPromotionalGiftBanner: l
     } = t;
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(d, {
@@ -92,9 +92,9 @@ function g(t) {
             onClick: () => i(o.pe.TIER_2),
             isGift: !1,
             priceOptions: a,
-            showPromotionalGiftBanner: s,
+            showPromotionalGiftBanner: l,
             narrowLayout: !0
-        }), (0, n.jsx)(l.DUT, {
+        }), (0, n.jsx)(s.DUT, {
             onClick: e,
             style: {
                 cursor: "pointer"
@@ -111,14 +111,14 @@ let I = function(t) {
         onSelectSku: i,
         isGift: e,
         priceOptions: a,
-        showPromotionalGiftBanner: s
+        showPromotionalGiftBanner: l
     } = t;
     return (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(u, {
             onClick: () => i(o.pe.TIER_2),
             isGift: e,
             priceOptions: a,
-            showPromotionalGiftBanner: s
+            showPromotionalGiftBanner: l
         }), (0, n.jsx)(d, {
             onClick: () => i(o.pe.TIER_0),
             isGift: e,

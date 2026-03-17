@@ -1,6 +1,6 @@
 /** chunk id: 858808 params = (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 });
 var i = n(627968);
 n(64700);
@@ -13,13 +13,13 @@ var l = n(503698),
     c = n(985018),
     u = n(794118);
 
-function m(e) {
+function g(e) {
     let {
         game: t,
         widgetType: n,
         iconSize: l = "refresh_sm",
-        className: m,
-        buttonRef: g,
+        className: g,
+        buttonRef: m,
         onRemove: x
     } = e, {
         trackUserProfileEditAction: p
@@ -28,7 +28,7 @@ function m(e) {
         text: c.intl.string(c.t.HUvyDc),
         ariaHidden: !0,
         children: (0, i.jsx)(r.DUT, {
-            innerRef: g,
+            innerRef: m,
             onClick: () => {
                 (0, d.ef)(n, t.applicationId), r.ORC.announce(c.intl.string(c.t["08HmMj"])), p({
                     action: "GAME_REMOVED",
@@ -37,7 +37,7 @@ function m(e) {
                 }), x?.()
             },
             "aria-label": c.intl.string(c.t.HUvyDc),
-            className: a()(m, u.v),
+            className: a()(g, u.v),
             children: (0, i.jsx)(r.ucK, {
                 size: l,
                 className: u.K,

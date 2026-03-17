@@ -1,45 +1,41 @@
 /** chunk id: 232516 params = (module,exports,require) **/
-i.d(t, {
-    A: () => c
+t.d(i, {
+    A: () => d
 });
-var n = i(627968);
-i(64700);
-var r = i(937008),
-    s = i(310250),
-    a = i(672525),
-    l = i(802246),
-    o = i(788868),
-    d = i(751690);
-let c = function(e) {
+var n = t(627968);
+t(64700);
+var r = t(937008),
+    s = t(672525),
+    a = t(802246),
+    l = t(788868),
+    o = t(751690);
+let d = function(e) {
     let {
-        onSelectSku: t,
-        priceOptions: i,
-        giftRecipient: c,
-        onWishlistItemClick: u
+        onSelectSku: i,
+        priceOptions: t,
+        giftRecipient: d,
+        onWishlistItemClick: c
     } = e, {
         claimableRewards: _
-    } = (0, r.Pv)(), m = null != _ && _.length > 0, f = (0, s.T)("Select Gift Option");
+    } = (0, r.Pv)(), u = null != _ && _.length > 0;
     return (0, n.jsxs)("div", {
-        className: d.H,
+        className: o.H,
         children: [(0, n.jsxs)("div", {
-            className: d.u,
-            children: [(0, n.jsx)(a.D3, {
-                onClick: () => t(o.pe.TIER_2),
+            className: o.u,
+            children: [(0, n.jsx)(s.D3, {
+                onClick: () => i(l.pe.TIER_2),
                 isGift: !0,
-                priceOptions: i,
-                showPromotionalGiftBanner: m
-            }), (0, n.jsx)(a.Ls, {
-                onClick: () => t(o.pe.TIER_0),
+                priceOptions: t,
+                showPromotionalGiftBanner: u
+            }), (0, n.jsx)(s.Ls, {
+                onClick: () => i(l.pe.TIER_0),
                 isGift: !0,
-                priceOptions: i,
+                priceOptions: t,
                 removeTopMargin: !0
             })]
-        }), f ? (0, n.jsx)(l.s, {
-            giftRecipient: c,
-            onWishlistItemClick: u
-        }) : (0, n.jsx)(l.A, {
-            giftRecipient: c,
-            onWishlistItemClick: u
+        }), (0, n.jsx)(a.s, {
+            giftRecipient: d,
+            onWishlistItemClick: c
         })]
     })
 }

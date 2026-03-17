@@ -12,13 +12,13 @@ var i = n(627968),
     d = n(735321),
     c = n(958338),
     u = n(985018),
-    m = n(810824);
+    g = n(810824);
 
-function g(e) {
+function m(e) {
     let {
         widgetType: t,
         widget: n,
-        onAddGame: g,
+        onAddGame: m,
         children: x,
         ...p
     } = e, f = l.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
@@ -39,8 +39,8 @@ function g(e) {
             action: "GAME_ADDED",
             gameId: e,
             widgetEdited: t
-        }), E.includes(e) && T(e), g?.()
-    }, [t, h, g, E, T]), N = l.useMemo(() => {
+        }), E.includes(e) && T(e), m?.()
+    }, [t, h, m, E, T]), N = l.useMemo(() => {
         let e = new Map(j.map(e => [String(e.value), {
                 id: String(e.value),
                 value: String(e.value),
@@ -84,7 +84,7 @@ function g(e) {
                 closePopout: t
             } = e;
             return (0, i.jsx)(s.lGe, {
-                className: m.C,
+                className: g.C,
                 "aria-label": u.intl.string(u.t.uqw8wK),
                 children: (0, i.jsxs)(s.iS7, {
                     selectionMode: "single",
@@ -115,7 +115,7 @@ function x(e) {
         disabled: t,
         ...n
     } = e, a = l.useRef(null);
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(m, {
         targetElementRef: a,
         position: "bottom",
         align: "center",
@@ -134,14 +134,14 @@ function x(e) {
 
 function p(e) {
     let t = l.useRef(null);
-    return (0, i.jsx)(g, {
+    return (0, i.jsx)(m, {
         targetElementRef: t,
         position: "right",
         align: "top",
         ...e,
         children: e => (0, i.jsx)(s.DUT, {
             innerRef: t,
-            className: m.c,
+            className: g.c,
             "aria-label": u.intl.string(u.t.SgTOtX),
             ...e,
             children: (0, i.jsx)(s.pa$, {

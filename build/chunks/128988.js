@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(86638),
     c = n(287809),
     u = n(788593),
-    m = n(742710),
-    g = n(463259),
+    g = n(742710),
+    m = n(463259),
     x = n(18983),
     p = n(330966);
 
@@ -35,7 +35,7 @@ function f(e) {
         } = e;
         if ("WIDGET" === a && s?.widget != null) return (0, i.jsx)("div", {
             className: p.dt,
-            children: (0, i.jsx)(g.u, {
+            children: (0, i.jsx)(m.u, {
                 widget: s.widget,
                 user: t,
                 disableInteraction: !0
@@ -60,7 +60,7 @@ function f(e) {
                 game: e,
                 widgetType: n
             } = s;
-            return (0, i.jsx)(m.A, {
+            return (0, i.jsx)(g.A, {
                 className: p.xB,
                 user: t,
                 widgetType: n,

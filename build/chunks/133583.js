@@ -11,8 +11,8 @@ var i = n(627968),
     d = n(192308),
     c = n(397927),
     u = n(793574),
-    m = n(688810),
-    g = n(979286),
+    g = n(688810),
+    m = n(979286),
     x = n(871123),
     p = n(690946),
     f = n(898616),
@@ -136,8 +136,8 @@ function U(e) {
         socialLayerStorefrontApplicationId: s,
         isEligibleForSocialLayerMarketingInWishlist: d,
         handleOpenShop: u,
-        handleOpenGameShop: m
-    } = e, g = a.id, x = (0, o.bG)([E.A], () => E.A.getWishlistSettings(n.id, g)), {
+        handleOpenGameShop: g
+    } = e, m = a.id, x = (0, o.bG)([E.A], () => E.A.getWishlistSettings(n.id, m)), {
         trackUserProfileWishlistAction: p
     } = (0, v.NJ)(), f = !1 === n.nsfwAllowed, [h, A] = l.useState(!0);
     l.useEffect(() => {
@@ -156,19 +156,19 @@ function U(e) {
             })
         }, [p]),
         j = (0, b.A)({
-            wishlistId: g,
+            wishlistId: m,
             onAction: I,
             productLines: a?.getProductLines() ?? null
         }),
         T = l.useCallback(() => {
-            if (null == g) return;
+            if (null == m) return;
             let e = h ? r.a.PRIVATE : r.a.PUBLIC;
-            A(!h), _.A.updateWishlistVisibility(g, e), p({
-                wishlistId: g,
+            A(!h), _.A.updateWishlistVisibility(m, e), p({
+                wishlistId: m,
                 action: h ? L.Mq.WISHLIST_TOGGLE_PRIVATE : L.Mq.WISHLIST_TOGGLE_PUBLIC,
                 productLines: a?.getProductLines()
             })
-        }, [g, h, p, a]);
+        }, [m, h, p, a]);
     return (0, i.jsxs)(i.Fragment, {
         children: [!h && (0, i.jsxs)("div", {
             className: P.Q9,
@@ -205,13 +205,13 @@ function U(e) {
                 isSocialLayerStorefrontEnabled: d,
                 isWishlistPublic: h,
                 handleOpenShop: u,
-                handleOpenGameShop: m,
+                handleOpenGameShop: g,
                 handleToggleWishlistVisibility: T,
                 socialLayerStorefrontApplicationId: s
             }) : (0, i.jsx)(D, {
                 isSocialLayerStorefrontEnabled: d,
                 handleOpenShop: u,
-                handleOpenGameShop: m
+                handleOpenGameShop: g
             })]
         })]
     })
@@ -233,7 +233,7 @@ function F(e) {
         currentUser: j.default.getCurrentUser()
     })), {
         analyticsLocations: c
-    } = (0, m.Ay)(), _ = r?.id === t.id, v = w.XR, {
+    } = (0, g.Ay)(), _ = r?.id === t.id, v = w.XR, {
         wishlist: b,
         wasFetched: R,
         error: k
@@ -247,7 +247,7 @@ function F(e) {
     }), O = (0, p.X)({
         location: "user-profile-modal-v2-wishlist"
     }), D = (0, A.GG)("user-profile-modal-v2-wishlist"), G = _ && (O && L || D), F = l.useCallback(() => {
-        (0, d.closeAllModals)(), (0, g.Cz)({
+        (0, d.closeAllModals)(), (0, m.Cz)({
             analyticsLocations: c,
             analyticsSource: u.A.USER_PROFILE_WISHLIST
         })

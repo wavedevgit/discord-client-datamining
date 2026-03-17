@@ -168,7 +168,7 @@ function L() {
             categories: ["bestof", "upgrades"]
         }, {
             id: E.CUSTOM_APP_ICONS_CARD_ID,
-            title: b.intl.string(b.t.rkb1vA),
+            title: b.intl.string(b.t["GU+wqh"]),
             description: b.intl.string(b.t["1uPk1Z"]),
             ctaText: b.intl.string(b.t.jVcuVY),
             onCtaClick: G,
@@ -232,7 +232,7 @@ function L() {
         }, {
             id: E.BADGE_CARD_ID,
             title: b.intl.string(b.t.Bn3CtB),
-            description: b.intl.string(b.t.n26Vcu),
+            description: b.intl.string(b.t.LmENwu),
             subscriptionRequired: !0,
             primaryAsset: null != n ? (0, s.jsx)("img", {
                 src: n,

@@ -1,8 +1,8 @@
 /** chunk id: 46537 params = (module,exports,require) **/
 n.d(t, {
     Qc: () => h,
-    b7: () => I,
-    bc: () => m
+    b7: () => m,
+    bc: () => I
 });
 var s = n(64700),
     i = n(311907),
@@ -18,7 +18,7 @@ function h(e) {
     return null != e.title && null == e.body && null == e.renderIcon
 }
 
-function m(e, t) {
+function I(e, t) {
     return s.useMemo(() => {
         let n = e.map(e => {
                 let {
@@ -69,7 +69,7 @@ function m(e, t) {
     }, [e, t])
 }
 
-function I(e, t) {
+function m(e, t) {
     let n = (0, i.yK)([r.default], () => e.map(e => r.default.getUser(e.gifterUserId)).filter(o.Vq), [e]),
         a = s.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
     return s.useMemo(() => {

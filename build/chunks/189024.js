@@ -171,7 +171,7 @@ function k() {
                 onCtaClick: F
             }, {
                 id: b.CUSTOM_APP_ICONS_CARD_ID,
-                title: R.intl.string(R.t.rkb1vA),
+                title: R.intl.string(R.t["GU+wqh"]),
                 description: R.intl.string(R.t["1uPk1Z"]),
                 primaryAsset: G.A,
                 ctaText: R.intl.string(R.t.y9TxXV),

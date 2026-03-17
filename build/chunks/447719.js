@@ -1,12 +1,12 @@
 /** chunk id: 447719 params = (module,exports,require) **/
-i.d(t, {
+t.d(i, {
     l7: () => d
 });
-var n = i(64700),
-    r = i(178213),
-    s = i(594832),
-    a = i(721932),
-    l = i(985018);
+var n = t(64700),
+    r = t(178213),
+    s = t(594832),
+    a = t(721932),
+    l = t(985018);
 let o = {
     FULL_WISHLIST: {
         title: l.intl.string(l.t["7lZ31J"]),
@@ -40,30 +40,30 @@ let o = {
 
 function d(e) {
     let {
-        totalUnownedWishlistItemCount: t,
-        wishlistInDmLength: i,
+        totalUnownedWishlistItemCount: i,
+        wishlistInDmLength: t,
         displayItems: d,
         recipientName: c
-    } = e, u = (0, n.useMemo)(() => (function(e) {
+    } = e, _ = (0, n.useMemo)(() => (function(e) {
         let {
-            totalUnownedWishlistItemCount: t,
-            wishlistInDmLength: i,
+            totalUnownedWishlistItemCount: i,
+            wishlistInDmLength: t,
             displayItems: n
         } = e;
-        return t >= i ? "FULL_WISHLIST" : t > 0 ? "MIXED" : n.length > 0 && n.every(e => {
+        return i >= t ? "FULL_WISHLIST" : i > 0 ? "MIXED" : n.length > 0 && n.every(e => {
             let {
-                item: t,
-                source: i
+                item: i,
+                source: t
             } = e;
-            return i === s.uS.POPULAR && (0, a.$)(t)
+            return t === s.uS.POPULAR && (0, a.$)(i)
         }) ? "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_ONLY" : "SHOP_ONLY"
     })({
-        totalUnownedWishlistItemCount: t,
-        wishlistInDmLength: i,
+        totalUnownedWishlistItemCount: i,
+        wishlistInDmLength: t,
         displayItems: d
-    }), [t, i, d]), _ = (0, r.GG)("wishlist_banner_config");
+    }), [i, t, d]), u = (0, r.GG)("wishlist_banner_config");
     return (0, n.useMemo)(() => {
-        if (_) switch (u) {
+        if (u) switch (_) {
             case "FULL_WISHLIST":
                 return {
                     title: l.intl.formatToPlainString(l.t["YcL/Vr"], {
@@ -82,10 +82,10 @@ function d(e) {
                 }
         }
         return {
-            title: o[u].title,
-            subtitle: o[u].getSubtitle(c),
-            showIcons: o[u].showIcons
+            title: o[_].title,
+            subtitle: o[_].getSubtitle(c),
+            showIcons: o[_].showIcons
         }
-    }, [u, c, _])
+    }, [_, c, u])
 }
 l.intl.string(l.t["7lZ31J"]), l.intl.string(l.t.pWG4ze), l.intl.string(l.t.SK5rmi), l.intl.string(l.t.BCi1gT)

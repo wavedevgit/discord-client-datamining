@@ -1,27 +1,27 @@
 /** chunk id: 177569 params = (module,exports,require) **/
 i.d(t, {
-    A: () => l
+    A: () => o
 });
-var s = i(627968),
-    n = i(158954),
-    r = i(262427),
-    a = i(697359),
-    o = i(985018);
+var r = i(627968),
+    a = i(158954),
+    s = i(262427),
+    n = i(697359),
+    l = i(985018);
 
-function l(e) {
+function o(e) {
     let {
         location: t
     } = e, {
         shouldRender: i,
-        limitedOfferTimeLeft: l
-    } = (0, a.A)({
+        limitedOfferTimeLeft: o
+    } = (0, n.A)({
         location: t
     });
-    return i ? (0, s.jsx)(r.J, {
-        text: o.intl.format(o.t["/bHQ84"], {
-            numDays: Math.max(l, 1),
-            applicationName: o.intl.string(o.t.Uu8hke)
+    return i ? (0, r.jsx)(s.J, {
+        text: l.intl.format(l.t["/bHQ84"], {
+            numDays: Math.max(o, 1),
+            applicationName: l.intl.string(l.t.Uu8hke)
         }),
-        Icon: n.Cp8
+        Icon: a.Cp8
     }) : null
 }
