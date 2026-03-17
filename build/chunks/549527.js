@@ -32,24 +32,24 @@ var i = n(627968),
     L = n(71393),
     R = n(576705),
     P = n(994500),
-    D = n(309010),
-    M = n(287809),
+    M = n(309010),
+    D = n(287809),
     w = n(954571),
     O = n(709634),
     k = n(652215),
     U = n(381941),
-    G = n(618231);
+    B = n(618231);
 
-function B(e) {
+function G(e) {
     let {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, a.bG)([N.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = l.useCallback(() => {
+    } = e, _ = l.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, a.bG)([N.A, D.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, D.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = l.useCallback(() => {
         let e = N.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
-            l = D.A.getCurrentlySelectedChannelId(),
+            l = M.A.getCurrentlySelectedChannelId(),
             r = y.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
             a = l === i && r === e?.id;
         null == e || null == n || a || null == i || (T.A.openModReportAsSidebar({
@@ -63,15 +63,15 @@ function B(e) {
         }))
     }, [t]);
     return null == h ? null : (0, i.jsxs)(d.DUT, {
-        className: G.xQ,
+        className: B.xQ,
         onClick: p,
         "aria-label": h.accessibilityLabel,
         children: [null != h.originIconUrl ? (0, i.jsx)("img", {
-            className: G.yl,
+            className: B.yl,
             src: h.originIconUrl,
             alt: ""
         }) : null, (0, i.jsx)(r.EYj, {
-            className: G.PJ,
+            className: B.PJ,
             variant: "text-sm/medium",
             color: "none",
             children: `${h.originLabel}  •  ${h.timestampLabel}`
@@ -146,7 +146,7 @@ function F(e) {
         }),
         disableInteraction: !0,
         compact: !1,
-        className: G.iU,
+        className: B.iU,
         author: o
     })
 }
@@ -186,9 +186,9 @@ function H(e) {
         }),
         C = (0, a.bG)([N.A], () => N.A.getChannel(t.channel_id));
     return null == C ? null : (0, i.jsx)("div", {
-        className: G.kL,
+        className: B.kL,
         children: (0, i.jsxs)("div", {
-            className: G.Qs,
+            className: B.Qs,
             children: [(0, i.jsx)(F, {
                 mergedMessageRecord: d,
                 content: A,
@@ -206,8 +206,8 @@ function H(e) {
                 isInteracting: !1,
                 isMessageSnapshot: !0,
                 renderThreadAccessory: !1,
-                className: G.Mf
-            }), (0, i.jsx)(B, {
+                className: B.Mf
+            }), (0, i.jsx)(G, {
                 message: t,
                 snapshot: n,
                 index: r

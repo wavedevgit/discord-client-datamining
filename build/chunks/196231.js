@@ -27,20 +27,20 @@ let h = e => {
         {
             handleCardVisibilityChange: E
         } = (0, d.Z)(x, "home", "marketing featured block"),
-        C = (0, u.s4)(s, h),
-        b = r.useRef(null),
+        b = (0, u.s4)(s, h),
+        C = r.useRef(null),
         A = h?.bodyText,
         S = (0, o.uM)();
     return (0, n.jsx)(l.L, {
-        innerRef: b,
+        innerRef: C,
         onChange: E,
         threshold: 0,
         children: (0, n.jsxs)(a.DUT, {
             className: m.oT,
-            innerRef: b,
+            innerRef: C,
             style: {
-                ...null != C && {
-                    backgroundImage: `url(${C})`
+                ...null != b && {
+                    backgroundImage: `url(${b})`
                 }
             },
             onClick: () => {

@@ -34,14 +34,14 @@ var i = n(627968),
     L = n(795982),
     R = n(643612),
     P = n(613760),
-    D = n(229527),
-    M = n(870136),
+    M = n(229527),
+    D = n(870136),
     w = n(33525),
     O = n(484724),
     k = n(71755),
     U = n(178879),
-    G = n(118331),
-    B = n(520586),
+    B = n(118331),
+    G = n(520586),
     F = n(857071),
     H = n(384231),
     V = n(46054),
@@ -88,14 +88,14 @@ var i = n(627968),
     eL = n(439401),
     eR = n(466802),
     eP = n(990560),
-    eD = n(266620),
-    eM = n(860227),
+    eM = n(266620),
+    eD = n(860227),
     ew = n(564107),
     eO = n(763899),
     ek = n(652176),
     eU = n(382807),
-    eG = n(394839),
-    eB = n(96782),
+    eB = n(394839),
+    eG = n(96782),
     eF = n(573163),
     eH = n(861986),
     eV = n(937266),
@@ -361,7 +361,7 @@ class e$ extends l.Component {
             let s = (0, W.aG)(i),
                 o = {
                     message: e,
-                    item: (0, eB.rC)(i, r),
+                    item: (0, eG.rC)(i, r),
                     autoPlayGif: n,
                     canRemoveItem: l && (_.length > 1 || "" !== e.content),
                     onRemoveItem: this.handleRemoveAttachment,
@@ -369,12 +369,12 @@ class e$ extends l.Component {
                     onContextMenu: null != a ? e => {
                         e.stopPropagation(), e.preventDefault(), a(e, s)
                     } : void 0,
-                    renderAudioComponent: A ? eD.SX : eD.Nj,
-                    renderImageComponent: eD.Cr,
-                    renderVideoComponent: eD.I1,
-                    renderPlaintextFilePreview: eD.R6,
-                    renderGenericFileComponent: eD.UB,
-                    renderMosaicItemFooter: eD.YE,
+                    renderAudioComponent: A ? eM.SX : eM.Nj,
+                    renderImageComponent: eM.Cr,
+                    renderVideoComponent: eM.I1,
+                    renderPlaintextFilePreview: eM.R6,
+                    renderGenericFileComponent: eM.UB,
+                    renderMosaicItemFooter: eM.YE,
                     onPlay: (e, n, l) => {
                         ep.default.track(eY.HAw.MEDIA_ATTACHMENT_PLAYBACK_STARTED, {
                             guild_id: t.guild_id,
@@ -394,7 +394,7 @@ class e$ extends l.Component {
                 });
             return d in h && g && (o.onClick = h[d], o.handlePreloadImage = p[d]), o
         });
-        return (0, i.jsx)(eG.A, {
+        return (0, i.jsx)(eB.A, {
             items: f
         })
     }
@@ -460,7 +460,7 @@ class e$ extends l.Component {
             hasBailedAst: n
         } = this.props;
         return 0 === e.embeds.length || !t || n ? null : e.embeds.map((t, n) => {
-            if (eq.z.has(t.type) || (0, eA.p6)(t) || (0, U.f)(t) && !(0, G.d)(e) || (0, eA.V)(t) || (0, eA.G8)(t)) return null;
+            if (eq.z.has(t.type) || (0, eA.p6)(t) || (0, U.f)(t) && !(0, B.d)(e) || (0, eA.V)(t) || (0, eA.G8)(t)) return null;
             let l = {
                 renderImageComponent: ek.LL,
                 renderVideoComponent: ek.$o,
@@ -496,7 +496,7 @@ class e$ extends l.Component {
             },
             shouldHideMediaOptions: l,
             enabledContentHarmTypeFlags: n,
-            children: (0, i.jsx)(B.Ay, {
+            children: (0, i.jsx)(G.Ay, {
                 message: e,
                 shouldDisableInteractiveComponents: r
             })
@@ -695,7 +695,7 @@ class e$ extends l.Component {
             showRemoveAttachmentModal: s
         } = this.state, o = this.renderEditedTag(t, l), d = this.renderCodedLinks(t), c = this.renderGiftCodes(t), u = this.renderAttachments(t), _ = this.renderCtaButton(), m = this.renderEmbeds(t), h = this.renderActivityInvite(t), p = this.renderReactions(t), g = this.renderPublishBump(t), A = this.renderEphemeralAccessories(t), x = this.renderStickersAccessories(t), f = this.renderThreadAccessories(t), C = this.renderComponentAccessories(t), I = this.renderThreadRoleMentionWarning(t), E = this.renderEmbeddedApplicationInstanceEmbed(t), v = this.renderInteractionPremiumUpsell(t), b = this.renderMediaPostEmbeds(t), T = this.renderSafetyPolicyNotice(t), S = this.renderSafetySystemNotification(t), y = this.renderMediaObscureNotice(t), N = this.renderPoll(t, n), j = this.renderForwardedMessage(t), L = this.renderReportedMessage(t), R = this.renderShareClientTheme(t);
         return null == d && null == u && null == m && null == h && null == p && null == c && null == g && null == A && null == x && null == f && null == C && null == E && null == I && null == b && null == T && null != v && null == N && null == j && null == L && null == R ? null : (0, i.jsxs)("div", {
-            id: (0, eM.XL)(t),
+            id: (0, eD.XL)(t),
             className: a()(e, eQ.kL),
             children: [L, j, I, N, R, d, c, b, u, _, m, y, h, x, C, E, v, o, p, g, A, r && this.renderSuppressConfirmModal(), s && this.renderRemoveAttachmentConfirmModal(), f, T, S]
         })
@@ -717,7 +717,7 @@ function e0(e) {
     } = (0, d.cf)([e_.A], () => ({
         canAddNewReactions: h && e_.A.can(eY.xBc.ADD_REACTIONS, t),
         canManageMessages: e_.A.can(eY.xBc.MANAGE_MESSAGES, t)
-    }), [h, t]), f = (0, D.ix)(t.guild_id), [, C] = (0, M.c)(t.guild_id), I = (0, er.Id)(t), E = (a === n.author.id || x) && n.author.id !== eY.oIV && !1 !== l && !(0, o.Lt)(n.flags, eY.pr7.EPHEMERAL) && I && (0, eb.A)(n) >= 1, v = a === n.author.id && I && !r, b = n.author.id === a, S = n.isFirstMessageInForumPost(t), N = (0, eS.A)({
+    }), [h, t]), f = (0, M.ix)(t.guild_id), [, C] = (0, D.c)(t.guild_id), I = (0, er.Id)(t), E = (a === n.author.id || x) && n.author.id !== eY.oIV && !1 !== l && !(0, o.Lt)(n.flags, eY.pr7.EPHEMERAL) && I && (0, eb.A)(n) >= 1, v = a === n.author.id && I && !r, b = n.author.id === a, S = n.isFirstMessageInForumPost(t), N = (0, eS.A)({
         channel: t,
         canChat: h,
         renderReactions: _,

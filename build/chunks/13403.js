@@ -1,6 +1,6 @@
 /** chunk id: 13403 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => M
 }), n(321073);
 var i = n(627968),
     l = n(64700),
@@ -33,15 +33,15 @@ var i = n(627968),
     R = n(49999),
     P = n(985018);
 
-function D(e) {
+function M(e) {
     var t, n;
-    let D, M, {
+    let M, D, {
             analyticsLocations: w,
             application: O,
             channel: k,
             currentUserId: U,
-            currentUserPresenceActivity: G,
-            hideParty: B,
+            currentUserPresenceActivity: B,
+            hideParty: G,
             message: F,
             onView: H,
             partyStatusElement: V,
@@ -72,18 +72,18 @@ function D(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = O.id, n = F.author.id, D = (0, f.d)(t), M = (0, r.bG)([m.A, C.A], () => {
+        } = (t = O.id, n = F.author.id, M = (0, f.d)(t), D = (0, r.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: M?.id ?? void 0,
+                applicationId: D?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
             }),
-            launchableAppId: D
+            launchableAppId: M
         }),
         X = (0, y.A)({
             application: O,
@@ -179,8 +179,8 @@ function D(e) {
         iconSrc: Y,
         onView: H,
         presenceActivity: W,
-        currentUserPresenceActivity: G,
-        hideParty: B,
+        currentUserPresenceActivity: B,
+        hideParty: G,
         partyStatusElement: V,
         analyticsLocations: w,
         showAuthButton: en && !ei && et.enabled,

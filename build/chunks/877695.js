@@ -43,7 +43,7 @@ function T(e) {
         P = l.useCallback(() => {
             !T || h || g(!0)
         }, [h, T]),
-        D = l.useMemo(() => T && _.current?.clientHeight != null ? {
+        M = l.useMemo(() => T && _.current?.clientHeight != null ? {
             height: h ? 292 : _.current.clientHeight + 36 + 48,
             transition: j ? void 0 : "height 0.2s ease"
         } : {}, [h, T, j]);
@@ -52,7 +52,7 @@ function T(e) {
             [b.vk]: T && h
         }),
         onClick: R,
-        style: D,
+        style: M,
         "aria-label": v.intl.string(v.t.dcl9MQ),
         children: [(0, i.jsxs)("div", {
             className: b.uY,

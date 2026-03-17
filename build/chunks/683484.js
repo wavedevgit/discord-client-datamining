@@ -19,10 +19,10 @@ var i = n(627968),
     g = n(734057),
     _ = n(71393),
     m = n(994500),
-    E = n(309010),
-    x = n(745891),
-    y = n(855790),
-    v = n(985018),
+    x = n(309010),
+    E = n(745891),
+    v = n(855790),
+    y = n(985018),
     S = n(803946);
 class C extends s.Component {
     state = {
@@ -77,7 +77,7 @@ class C extends s.Component {
         if (!(0, A.Gw)(t.type)) return null;
         let a = o._jp,
             r = !1;
-        return n ? s ? (e = v.intl.string(v.t["4ry6yi"]), a = o.zWQ) : e = v.intl.string(v.t["0D/6Rz"]) : l ? (e = v.intl.string(v.t.PHzjvX), r = !0) : e = v.intl.string(v.t.focH1t), (0, i.jsx)(h.A.Icon, {
+        return n ? s ? (e = y.intl.string(y.t["4ry6yi"]), a = o.zWQ) : e = y.intl.string(y.t["0D/6Rz"]) : l ? (e = y.intl.string(y.t.PHzjvX), r = !0) : e = y.intl.string(y.t.focH1t), (0, i.jsx)(h.A.Icon, {
             icon: a,
             tooltip: e,
             onClick: this.handleClickCall,
@@ -89,11 +89,11 @@ class C extends s.Component {
             locked: e,
             handlePin: t,
             pinned: n
-        } = this.props, l = n ? v.intl.string(v.t.cSu80j) : v.intl.string(v.t.cM8Vnm);
+        } = this.props, l = n ? y.intl.string(y.t.cSu80j) : y.intl.string(y.t.cM8Vnm);
         return e ? null : (0, i.jsxs)(s.Fragment, {
             children: [this.renderCallButton(), n ? (0, i.jsx)(h.A.Icon, {
                 icon: o.OHS,
-                tooltip: v.intl.string(v.t.OVovCb),
+                tooltip: y.intl.string(y.t.OVovCb),
                 onClick: this.handleOpenOpacitySettings
             }) : null, (0, i.jsx)(h.A.Icon, {
                 icon: n ? o.hl9 : o.qgw,
@@ -118,14 +118,14 @@ class C extends s.Component {
         } = this.props, {
             showOpacitySlider: f
         } = this.state;
-        return f && !n ? (0, i.jsxs)(y.Ay.Bar, {
+        return f && !n ? (0, i.jsxs)(v.Ay.Bar, {
             className: S.dl,
-            children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(h.A.Icon, {
+            children: [(0, i.jsx)(E.A, {}), (0, i.jsx)(h.A.Icon, {
                 icon: o.PGe,
                 onClick: this.handleCloseOpacitySettings,
-                tooltip: v.intl.string(v.t.cpT0Cq)
+                tooltip: y.intl.string(y.t.cpT0Cq)
             })]
-        }) : (0, i.jsx)(y.Ay.Background, {
+        }) : (0, i.jsx)(v.Ay.Background, {
             opacityOverride: n || u ? null : 1,
             children: (0, i.jsx)("div", {
                 className: a()(e, t, S.N1),
@@ -156,8 +156,8 @@ function I(e) {
     let {
         channel: t,
         ...n
-    } = e, s = (0, r.bG)([E.A, g.A], () => {
-        let e = E.A.getVoiceChannelId();
+    } = e, s = (0, r.bG)([x.A, g.A], () => {
+        let e = x.A.getVoiceChannelId();
         return g.A.getChannel(e)
     }), l = (0, r.bG)([_.A], () => _.A.getGuild(t.guild_id)), a = (0, r.bG)([f.A], () => f.A.isCallActive(t.id)), o = (0, u.Ay)(t), d = (0, r.bG)([m.A], () => !!t.isDM() && null != t.getRecipientId() && m.A.isBlocked(t.getRecipientId()));
     return (0, i.jsx)(C, {

@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(231209),
     x = s(850735),
     E = s(781724),
-    C = s(758836);
-let b = [C.G2.HOME, C.G2.ORBS];
+    b = s(758836);
+let C = [b.G2.HOME, b.G2.ORBS];
 
 function A(e) {
     let {
@@ -36,7 +36,7 @@ function A(e) {
     let A = (0, a.bG)([i.A], () => i.A.useReducedMotion),
         [I, L] = r.useState(void 0),
         [j, k] = r.useState(!0),
-        T = r.useMemo(() => s.filter(e => !C.MS.some(t => {
+        T = r.useMemo(() => s.filter(e => !b.MS.some(t => {
             let {
                 categorySkuId: s
             } = t;
@@ -53,7 +53,7 @@ function A(e) {
             } = e;
             u(t, s);
             let a = n && !A,
-                i = l ? C.G2.ORBS : C.G2.CATALOG;
+                i = l ? b.G2.ORBS : b.G2.CATALOG;
             L(s), k(!r), c(i, a)
         }, [A, c, u]),
         {
@@ -63,15 +63,15 @@ function A(e) {
         onRetry: _,
         errorMessage: p,
         errorOrigin: h.A.SHOP_PAGE
-    }) : t === C.G2.HOME && O ? (0, n.jsx)(x.A, {
+    }) : t === b.G2.HOME && O ? (0, n.jsx)(x.A, {
         tab: l.g.HOME,
         transitionState: d,
         handleTransition: N
-    }) : t === C.G2.ORBS && O ? (0, n.jsx)(x.A, {
+    }) : t === b.G2.ORBS && O ? (0, n.jsx)(x.A, {
         tab: l.g.ORBS,
         transitionState: d,
         handleTransition: N
-    }) : b.includes(t) ? (0, n.jsx)(f.A, {
+    }) : C.includes(t) ? (0, n.jsx)(f.A, {
         handleTransition: N,
         tab: t,
         transitionState: d

@@ -1,9 +1,9 @@
 /** chunk id: 41770 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     C8: () => r,
     Ej: () => a,
-    Ot: () => o,
-    oP: () => i,
+    Ot: () => i,
+    oP: () => o,
     uG: () => n
 });
 let r = "dummy-tenant",
@@ -71,7 +71,7 @@ let r = "dummy-tenant",
             templateId: "dummy-popular-picks"
         }]
     },
-    o = {
+    i = {
         id: "dummy-popular-picks",
         children: [{
             block: "Section",
@@ -100,7 +100,7 @@ let r = "dummy-tenant",
             }]
         }]
     },
-    i = {
+    o = {
         id: "dummy-orb-shelf",
         children: [{
             block: "Section",

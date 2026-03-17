@@ -1,7 +1,7 @@
 /** chunk id: 855790 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => y,
+    Ay: () => v,
     q0: () => A
 });
 var i = n(627968),
@@ -71,7 +71,7 @@ class m extends s.PureComponent {
         })
     }
 }
-let E = e => {
+let x = e => {
         let {
             type: t = p,
             width: n,
@@ -97,7 +97,7 @@ let E = e => {
             })
         })
     },
-    x = e => {
+    E = e => {
         let {
             children: t,
             className: n,
@@ -113,13 +113,13 @@ let E = e => {
             })
         })
     };
-E.Background = e => {
+x.Background = e => {
     let {
         children: t,
         opacityOverride: n
     } = e;
     if (null == t) return null;
-    let l = [_, m, x];
+    let l = [_, m, E];
     return (0, i.jsx)(f.Consumer, {
         children: e => {
             let {
@@ -140,7 +140,7 @@ E.Background = e => {
             }
         }
     })
-}, E.Body = m, E.Content = x, E.Icon = e => {
+}, x.Body = m, x.Content = E, x.Icon = e => {
     let {
         ref: t,
         icon: n,
@@ -175,5 +175,5 @@ E.Background = e => {
             })
         })
     })
-}, E.Bar = _;
-let y = E
+}, x.Bar = _;
+let v = x

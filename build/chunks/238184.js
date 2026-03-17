@@ -1,11 +1,11 @@
 /** chunk id: 238184 params = (module,exports,require) **/
 a.d(t, {
-    A: () => o
+    A: () => s
 });
 var l = a(492462),
     r = a(873263),
     n = a(758836);
-let o = () => {
+let s = () => {
     let e = (0, r.zy)(),
         {
             tab: t

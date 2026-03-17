@@ -2,11 +2,11 @@
 n.d(t, {
     G$: () => A,
     _$: () => f,
-    hk: () => x,
+    hk: () => p,
     zs: () => m
 });
-var l = n(311907),
-    s = n(554146),
+var s = n(311907),
+    l = n(554146),
     a = n(594061),
     i = n(617617),
     r = n(954571),
@@ -21,25 +21,25 @@ function m(e, t) {
 }
 
 function A(e, t) {
-    return (0, l.bG)([i.A], () => m(e, t))
+    return (0, s.bG)([i.A], () => m(e, t))
 }
 
-function p(e, t, n, l, i) {
-    (0, a.TG)(n, l => {
-        let s = m(t, n);
-        if (e && s || !e && !s) return !1;
-        l.dismissedGuildContent = (e ? o.Vf : o.We)(l.dismissedGuildContent, t)
-    }, e ? d.Sb.INFREQUENT_USER_ACTION : d.Sb.FREQUENT_USER_ACTION), l && r.default.track(u.HAw.DISMISSIBLE_CONTENT_DISMISSED, {
-        type: s.V[t],
+function E(e, t, n, s, i) {
+    (0, a.TG)(n, s => {
+        let l = m(t, n);
+        if (e && l || !e && !l) return !1;
+        s.dismissedGuildContent = (e ? o.Vf : o.We)(s.dismissedGuildContent, t)
+    }, e ? d.Sb.INFREQUENT_USER_ACTION : d.Sb.FREQUENT_USER_ACTION), s && r.default.track(u.HAw.DISMISSIBLE_CONTENT_DISMISSED, {
+        type: l.V[t],
         guild_id: n,
         action: i ?? c.i.UNKNOWN
     })
 }
 
-function f(e, t, n, l) {
-    p(!0, e, t, n, l)
+function f(e, t, n, s) {
+    E(!0, e, t, n, s)
 }
 
-function x(e, t) {
-    p(!1, e, t)
+function p(e, t) {
+    E(!1, e, t)
 }

@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(652215),
     R = n(381941),
     P = n(985018),
-    D = n(780247),
-    M = n(278664);
+    M = n(780247),
+    D = n(278664);
 
 function w(e) {
     let {
@@ -42,7 +42,7 @@ function w(e) {
         channel: r
     } = e, w = l.useRef(null), O = l.useRef(null), k = (0, j.D)(t, n), {
         setPopout: U
-    } = (0, f.A)(n.id, R.Fd), G = (0, x.VL)(n, r, U, !0), B = E.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(k?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([v.Ay], () => k?.authorId != null ? v.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
+    } = (0, f.A)(n.id, R.Fd), B = (0, x.VL)(n, r, U, !0), G = E.kt.useSetting(), F = (0, y.j)(), [H, V] = l.useState(!1), [W, q] = l.useState(k?.coverImage == null), Y = (0, o.bG)([v.Ay, b.default], () => v.Ay.isMember(k?.guildId, b.default.getCurrentUser()?.id), [k]), z = (0, o.bG)([v.Ay], () => k?.authorId != null ? v.Ay.getMember(k.guildId, k.authorId) : null), Q = (0, m.A)(z?.avatarDecoration != null ? z?.avatarDecoration : k?.user?.avatarDecoration), [K, J, X] = l.useMemo(() => [z?.colorString ?? "inherit", z?.colorStrings ?? null, z?.colorRoleId], [z]), Z = (0, C.gn)(z?.guildId, k?.authorId ?? void 0, J), {
         reducedMotion: $
     } = l.useContext(c.CZY), [ee, et] = l.useState(!1), en = l.useCallback(() => {
         V(!0)
@@ -71,36 +71,36 @@ function w(e) {
         eo = k.coverImage,
         ed = null != eo && (0, A.ge)(eo);
     return (0, i.jsxs)("div", {
-        className: D.wb,
+        className: M.wb,
         children: [(0, i.jsxs)("div", {
-            className: D.iT,
+            className: M.iT,
             onMouseEnter: en,
             onMouseLeave: ei,
             children: [!W && (!0 === k.shouldShowBlurredThumbnailImage ? (0, i.jsx)("img", {
-                src: M,
+                src: D,
                 alt: P.intl.string(P.t.rIbh8H),
-                className: a()(D.xn, {
-                    [D.p6]: k.shouldSpoiler
+                className: a()(M.xn, {
+                    [M.p6]: k.shouldSpoiler
                 }),
-                onContextMenu: G,
+                onContextMenu: B,
                 onError: () => q(!0)
             }) : (0, i.jsx)(p.A, {
-                src: !(F && (B || H)) && ed ? `${eo}?format=png` : eo,
+                src: !(F && (G || H)) && ed ? `${eo}?format=png` : eo,
                 backgroundSrc: `${eo}?format=png`,
                 alt: P.intl.string(P.t.rIbh8H),
                 aspectRatio: 16 / 9,
-                className: a()(D.xn, {
-                    [D.p6]: k.shouldSpoiler
+                className: a()(M.xn, {
+                    [M.p6]: k.shouldSpoiler
                 }),
-                imageChildClassName: D.q_,
-                onContextMenu: G,
+                imageChildClassName: M.q_,
+                onContextMenu: B,
                 onError: () => q(!0)
             })), null != k.coverImageOverlayText && (0, i.jsx)(c.DUT, {
                 onClick: el,
                 children: (0, i.jsx)("div", {
-                    className: D.nx,
+                    className: M.nx,
                     children: (0, i.jsxs)("div", {
-                        className: D.BS,
+                        className: M.BS,
                         children: [(0, i.jsx)(N.A, {
                             color: d.A.colors.WHITE.css
                         }), (0, i.jsx)(c.Text, {
@@ -112,22 +112,22 @@ function w(e) {
                 })
             })]
         }), (0, i.jsxs)("div", {
-            className: D.iQ,
+            className: M.iQ,
             children: [(0, i.jsxs)("div", {
-                className: D.OA,
+                className: M.OA,
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-md/semibold",
                     color: "text-default",
-                    className: D.hF,
+                    className: M.hF,
                     children: k.title
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    className: a()(D.hF, D.Fq),
+                    className: a()(M.hF, M.Fq),
                     children: k.subtitle
                 })]
             }), (0, i.jsxs)("div", {
-                className: D._5,
+                className: M._5,
                 children: [null != k.authorId && null != ea && (0, i.jsx)(I.A, {
                     targetElementRef: O,
                     userId: k.authorId,
@@ -151,16 +151,16 @@ function w(e) {
                         })
                     })
                 }), (0, i.jsxs)("div", {
-                    className: D.Ny,
+                    className: M.Ny,
                     children: [(0, i.jsxs)("div", {
-                        className: D.O9,
+                        className: M.O9,
                         children: [null != k.channelName && (0, i.jsx)(c.d2$, {
                             size: "md",
                             color: "currentColor",
-                            className: D.Xg
+                            className: M.Xg
                         }), (0, i.jsx)(c.DUT, {
                             onClick: el,
-                            className: D.HA,
+                            className: M.HA,
                             children: (0, i.jsx)(c.Heading, {
                                 variant: "heading-md/semibold",
                                 color: "text-strong",
@@ -170,14 +170,14 @@ function w(e) {
                     }), null != k.authorName && (0, i.jsx)(c.Text, {
                         variant: "text-sm/medium",
                         color: "text-muted",
-                        className: D.wn,
+                        className: M.wn,
                         children: P.intl.format(P.t.voIDKa, {
                             authorName: k.authorName,
                             authorNameHook: () => null == k.authorId ? (0, i.jsx)(c.V30, {
                                 name: k.authorName,
                                 colorString: K,
                                 colorStrings: Z,
-                                className: D.fh
+                                className: M.fh
                             }) : (0, i.jsx)(I.A, {
                                 targetElementRef: w,
                                 userId: k.authorId,
@@ -193,7 +193,7 @@ function w(e) {
                                     name: k.authorName,
                                     colorString: K,
                                     colorStrings: Z,
-                                    className: D.fh
+                                    className: M.fh
                                 })
                             }, (0, s.A)())
                         })

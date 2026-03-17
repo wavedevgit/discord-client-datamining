@@ -39,7 +39,7 @@ function p(e) {
         notifType: null != e.news ? c.KS.NewsNudge : t.notifType
     } : t), {
         trackView: m,
-        trackClick: E
+        trackClick: x
     } = (0, d.Y)(_, {
         notif_type: _
     });
@@ -59,10 +59,10 @@ function p(e) {
             m()
         },
         onNotificationClick: (e, t) => {
-            E("unlock"), l === c.Jr.NEWS && s.A.updateNotificationStatus(t), a.default.isOverlayOOPEnabledForPid((0, o.getPID)()) ? s.A.setInputLocked(!1, (0, o.getPID)()) : r.default.isInstanceLocked() && s.A.setInstanceLocked(!1)
+            x("unlock"), l === c.Jr.NEWS && s.A.updateNotificationStatus(t), a.default.isOverlayOOPEnabledForPid((0, o.getPID)()) ? s.A.setInputLocked(!1, (0, o.getPID)()) : r.default.isInstanceLocked() && s.A.setInstanceLocked(!1)
         },
         onDismissClick: () => {
-            E("dismiss")
+            x("dismiss")
         }
     }
 }

@@ -1,14 +1,14 @@
 /** chunk id: 715185 params = (module,exports,require) **/
 a.d(t, {
     H: () => i,
-    M: () => d
+    M: () => o
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(41770),
-    o = a(785330);
-let s = {
+    s = a(785330);
+let d = {
         id: "dummy-show-of-skeletons",
         children: [{
             block: "ContainedHero",
@@ -78,7 +78,7 @@ let s = {
             }]
         }]
     },
-    d = {
+    o = {
         name: "SubLayout",
         id: "sub-layout-basic",
         component: () => (0, l.jsxs)("div", {
@@ -91,7 +91,7 @@ let s = {
             }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here, the \"popular picks\" are actually a sub layout with the id 'dummy-popular-picks'"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(o.Ay, {
+            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
                 layout: n.uG
             })]
         }),
@@ -107,8 +107,8 @@ let s = {
             }), (0, l.jsx)(r.Text, {
                 variant: "text-md/semibold",
                 children: "Here we use the `Skeleton` component to show the shop cards loading while the (dummy) Shop Cards SubLayout are resolving (it will never stop loading for demonstration purposes)"
-            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(o.Ay, {
-                layout: s
+            }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
+                layout: d
             })]
         }),
         controls: {}

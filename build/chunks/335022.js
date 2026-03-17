@@ -19,18 +19,18 @@ var i = n(627968),
     g = n(924985),
     _ = n(945886),
     m = n(72314),
-    E = n(769765),
-    x = n(808728),
-    y = n(458294),
-    v = n(71393),
+    x = n(769765),
+    E = n(808728),
+    v = n(458294),
+    y = n(71393),
     S = n(576705),
     C = n(584569),
     I = n(383501),
     N = n(309010),
     T = n(543465),
     O = n(607567),
-    b = n(855790),
-    j = n(714977),
+    j = n(855790),
+    b = n(714977),
     D = n(439817),
     L = n(652215),
     R = n(349828),
@@ -80,7 +80,7 @@ class k extends s.PureComponent {
         let {
             closePopout: t
         } = e;
-        return (0, i.jsx)(j.A, {
+        return (0, i.jsx)(b.A, {
             onClose: t
         })
     }
@@ -151,7 +151,7 @@ class k extends s.PureComponent {
                     targetElementRef: this.settingsIconRef,
                     position: "right",
                     renderPopout: this.renderSettings,
-                    children: e => (0, i.jsx)(b.Ay.Icon, {
+                    children: e => (0, i.jsx)(j.Ay.Icon, {
                         ref: this.settingsIconRef,
                         icon: r.Zes,
                         label: w.intl.string(w.t["3D5yo/"]),
@@ -183,7 +183,7 @@ class k extends s.PureComponent {
 function P(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([v.A], () => v.A.getGuild(t)), s = (0, a.bG)([x.Ay], () => x.Ay.getChannels(t)), l = (0, a.bG)([E.A], () => E.A.getCategories(t)), {
+    } = e, n = (0, a.bG)([y.A], () => y.A.getGuild(t)), s = (0, a.bG)([E.Ay], () => E.Ay.getChannels(t)), l = (0, a.bG)([x.A], () => x.A.getCategories(t)), {
         mutedChannels: r,
         collapseMuted: c
     } = (0, a.cf)([T.Ay], () => ({
@@ -196,7 +196,7 @@ function P(e) {
             channelId: t
         } = e;
         return t
-    }), b = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), j = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), R = (0, a.bG)([y.default], () => y.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), M = (0, d.vj)(n?.id), P = n?.features.has(L.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
+    }), j = (0, a.bG)([N.A], () => N.A.getVoiceChannelId()), b = (0, a.bG)([S.A], () => S.A.getGuildVersion(t)), D = (0, a.bG)([g.A], () => g.A.version), R = (0, a.bG)([v.default], () => v.default.getGuildChangeSentinel(t)), w = (0, o.a1)(n?.id), M = (0, d.vj)(n?.id), P = n?.features.has(L.GuildFeatures.COMMUNITY) ?? !1, G = (0, a.bG)([I.A], () => I.A.getChannelId()), U = (0, a.bG)([C.A], () => C.A.desyncedVoiceStatesCount);
     return (0, i.jsx)(k, {
         guildId: t,
         guild: n,
@@ -205,14 +205,14 @@ function P(e) {
         mutedChannels: r,
         scrollToChannel: p,
         selectedChannelId: A,
-        selectedVoiceChannelId: b,
+        selectedVoiceChannelId: j,
         voiceStates: u,
         rtcConnectedChannelId: G,
         rtcDesyncedVoiceStatesCount: U,
         collapsedChannels: h,
         collapseMuted: c,
         guildReadStateSentinel: R,
-        permissionVersion: j,
+        permissionVersion: b,
         categoryCollapseVersion: D,
         embeddedAppsByChannel: w,
         activeEventsByChannel: M,

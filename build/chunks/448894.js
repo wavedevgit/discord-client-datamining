@@ -40,13 +40,13 @@ function v(e) {
             analyticsLocations: R
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         P = null != n && n.target_type === C.yV.STREAM && null != n.target_user && null != j,
-        D = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
+        M = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
     a()(null != n, "Invite cannot be null");
     let {
-        target_type: M,
+        target_type: D,
         target_user: w
     } = n;
-    a()(M === C.yV.STREAM && null != w, "invalid streaming invite");
+    a()(D === C.yV.STREAM && null != w, "invalid streaming invite");
     let O = r === w.id,
         k = n.state === f.elq.ACCEPTING,
         U = l.useCallback(() => {
@@ -58,23 +58,23 @@ function v(e) {
                 invite_message_id: b.id
             }, R)
         }, [n, b, R, P, T, S]),
-        G = null != v;
+        B = null != v;
     if (null == v) {
         if (null == n.guild) return (0, i.jsx)(x.A, {});
         v = (0, g.DY)(n.guild)
     }
-    let B = null != n.channel ? (0, m.OY)(n.channel) : null,
+    let G = null != n.channel ? (0, m.OY)(n.channel) : null,
         F = A.Ay.getName(w),
-        H = P || !D && G,
+        H = P || !M && B,
         V = I.intl.string(I.t.I6JG46),
         W = "active";
-    G && !D ? (t = O ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
+    B && !M ? (t = O ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
         name: F
     }), V = I.intl.string(I.t.Wdi5E1)) : (W = "active", P && (V = I.intl.string(I.t.Q1W99y), W = "secondary"), t = O ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: F
     }));
-    let q = N === v.id && null != B ? (0, i.jsx)(_.A.Channel, {
-        channel: B
+    let q = N === v.id && null != G ? (0, i.jsx)(_.A.Channel, {
+        channel: G
     }) : I.intl.formatToPlainString(I.t.u0vaDE, {
         guildName: v.name
     });
@@ -86,10 +86,10 @@ function v(e) {
                 className: E.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: v,
-                    onClick: G && D ? U : void 0
+                    onClick: B && M ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,
-                    onClick: G && D ? U : void 0,
+                    onClick: B && M ? U : void 0,
                     children: q
                 })]
             }), (0, i.jsx)(s.$nd, {

@@ -4,23 +4,23 @@ t.d(n, {
 });
 var i = t(627968),
     s = t(311907),
-    l = t(397927),
-    a = t(793574),
-    r = t(688810),
+    r = t(397927),
+    l = t(793574),
+    a = t(688810),
     o = t(632738),
     d = t(994500),
     c = t(562153),
     u = t(183555),
-    m = t(672385),
-    x = t(950191),
-    A = t(249790),
-    p = t(946356),
-    _ = t(254828),
+    A = t(672385),
+    m = t(950191),
+    _ = t(249790),
+    x = t(946356),
+    p = t(254828),
     f = t(783123),
     h = t(652215),
     g = t(996988),
-    j = t(985018),
-    I = t(599929);
+    I = t(985018),
+    j = t(599929);
 
 function b(e) {
     let {
@@ -29,12 +29,12 @@ function b(e) {
         channelId: b,
         messageId: v,
         roleId: N,
-        transitionState: y,
-        onHide: C,
+        transitionState: C,
+        onHide: y,
         sourceAnalyticsLocations: T = []
     } = e, E = t === h.ME ? void 0 : t, L = (0, s.bG)([d.A], () => d.A.isBlocked(n.id)), {
         analyticsLocations: P
-    } = (0, r.Ay)([...T, L ? a.A.BLOCKED_PROFILE_MODAL : a.A.IGNORED_PROFILE_MODAL]), R = (0, u.pb)({
+    } = (0, a.Ay)([...T, L ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), R = (0, u.pb)({
         layout: "MODAL_V2",
         userId: n.id,
         guildId: E,
@@ -42,51 +42,51 @@ function b(e) {
         messageId: v,
         roleId: N
     }), O = [{
-        icon: l.yr3,
-        description: j.intl.string(j.t.kcuWva)
+        icon: r.yr3,
+        description: I.intl.string(I.t.kcuWva)
     }, {
-        icon: l.yr3,
-        description: j.intl.string(L ? j.t.QxrDY1 : j.t.W6fjkS)
-    }], S = (0, x.Ay)(n.id, E), M = c.Ay.getName(S?.guildId, b, n), G = j.intl.formatToPlainString(j.t.KRe1Fk, {
+        icon: r.yr3,
+        description: I.intl.string(L ? I.t.QxrDY1 : I.t.W6fjkS)
+    }], S = (0, m.Ay)(n.id, E), M = c.Ay.getName(S?.guildId, b, n), G = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: M
     });
-    return (0, i.jsx)(r.f5, {
+    return (0, i.jsx)(a.f5, {
         value: P,
         children: (0, i.jsx)(u.of, {
             value: R,
             isLoaded: S?.isLoaded,
-            children: (0, i.jsx)(l.EOs, {
+            children: (0, i.jsx)(r.EOs, {
                 "data-migration-pending": !0,
-                transitionState: y,
-                className: I.zr,
+                transitionState: C,
+                className: j.zr,
                 "aria-label": G,
                 parentComponent: "RestrictedUserProfileModalV2",
-                children: (0, i.jsxs)(p.A, {
+                children: (0, i.jsxs)(x.A, {
                     user: n,
                     displayProfile: S,
                     themeType: g.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
-                        className: I.Tp
+                        className: j.Tp
                     }), (0, i.jsxs)("div", {
-                        className: I.Qs,
-                        children: [(0, i.jsx)(A.A, {
+                        className: j.Qs,
+                        children: [(0, i.jsx)(_.A, {
                             user: n,
                             guildId: E
                         }), (0, i.jsxs)("div", {
-                            className: I.FS,
-                            children: [(0, i.jsx)(l.Heading, {
+                            className: j.FS,
+                            children: [(0, i.jsx)(r.Heading, {
                                 variant: "heading-xl/bold",
                                 color: "text-default",
-                                children: j.intl.string(j.t.b33pLD)
-                            }), (0, i.jsx)(l.Text, {
+                                children: I.intl.string(I.t.b33pLD)
+                            }), (0, i.jsx)(r.Text, {
                                 variant: "text-md/medium",
                                 color: "text-default",
-                                children: j.intl.format(L ? j.t.T7QiLn : j.t.MnEowy, {
+                                children: I.intl.format(L ? I.t.T7QiLn : I.t.MnEowy, {
                                     username: M
                                 })
                             })]
                         }), (0, i.jsx)("div", {
-                            className: I.vb,
+                            className: j.vb,
                             children: O.map((e, n) => {
                                 let {
                                     icon: t,
@@ -96,25 +96,25 @@ function b(e) {
                                     icon: t,
                                     title: s,
                                     titleVariant: "text-md/normal",
-                                    color: l.LU0.colors.TEXT_DEFAULT.css
+                                    color: r.LU0.colors.TEXT_DEFAULT.css
                                 }, n)
                             })
-                        }), (0, i.jsxs)(l.BJc, {
+                        }), (0, i.jsxs)(r.BJc, {
                             align: "center",
                             children: [(0, i.jsx)(f.A, {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {
-                                    C(), (0, m.Wn)({
+                                    y(), (0, A.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: P,
                                         ...R
                                     })
                                 }
-                            }), (0, i.jsx)(_.A, {
+                            }), (0, i.jsx)(p.A, {
                                 userId: n.id,
                                 onClick: () => {
-                                    C(), (0, m.Wn)({
+                                    y(), (0, A.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: P,
                                         ...R

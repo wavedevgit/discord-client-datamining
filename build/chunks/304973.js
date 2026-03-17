@@ -1,33 +1,35 @@
 /** chunk id: 304973 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => c
 });
-var r = t(627968),
-    n = t(397927),
-    o = t(976860),
-    i = t(53566),
-    a = t(506456),
-    s = t(653793),
-    d = t(494213);
+var r = l(627968),
+    n = l(397927),
+    i = l(976860),
+    o = l(53566),
+    a = l(427941),
+    s = l(653793),
+    d = l(494213);
 let c = e => {
     let {
-        backgroundImage: l,
-        href: t,
+        backgroundImage: t,
+        href: l,
         ctaText: c
-    } = e, u = (0, a.A)(l.src), h = (0, i.S)(c);
+    } = e, u = (0, o.S)(c);
     return (0, r.jsx)(s.A, {
         children: (0, r.jsx)(n.DUT, {
-            className: d.j,
-            style: {
-                backgroundImage: `url(${u})`
-            },
-            onClick: () => {
-                (0, o.pX)(t)
-            },
-            children: (0, r.jsx)(n.Text, {
-                variant: "text-lg/bold",
-                color: "always-white",
-                children: h
+            className: d.v,
+            onClick: () => (0, i.pX)(l),
+            children: (0, r.jsx)(a.A, {
+                backgroundImage: t,
+                backgroundPosition: "left",
+                children: (0, r.jsx)("div", {
+                    className: d.j,
+                    children: (0, r.jsx)(n.Text, {
+                        variant: "text-lg/bold",
+                        color: "always-white",
+                        children: u
+                    })
+                })
             })
         })
     })

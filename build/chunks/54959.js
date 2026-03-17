@@ -1,73 +1,73 @@
 /** chunk id: 54959 params = (module,exports,require) **/
 i.d(t, {
-    A: () => p
+    A: () => j
 });
 var l = i(627968),
     n = i(64700),
-    s = i(311907),
-    a = i(397927),
+    a = i(311907),
+    s = i(397927),
     r = i(966327),
     d = i(972387),
-    c = i(539895),
-    o = i(233761),
+    o = i(539895),
+    c = i(233761),
     u = i(960736),
     m = i(398884),
     x = i(287809),
-    _ = i(954571),
+    g = i(954571),
     h = i(162284),
-    g = i(652215),
-    A = i(985018),
-    E = i(492171);
+    _ = i(652215),
+    p = i(985018),
+    A = i(492171);
 
-function p(e) {
+function j(e) {
     let {
         invite: t,
         guild: i,
-        className: p
-    } = e, j = (0, s.bG)([x.default], () => x.default.getCurrentUser()), {
-        submitting: I,
-        error: v
-    } = (0, s.cf)([c.A], () => c.A.getProps()), f = n.useCallback(() => {
+        className: j
+    } = e, E = (0, a.bG)([x.default], () => x.default.getCurrentUser()), {
+        submitting: v,
+        error: I
+    } = (0, a.cf)([o.A], () => o.A.getProps()), f = n.useCallback(() => {
         d.A.acceptInvite(t)
-    }, [t]), T = (0, u.uE)(), N = "" !== T ? A.intl.format(A.t["9sWQNT"], {
+    }, [t]), T = (0, u.uE)(), C = "" !== T ? p.intl.format(p.t["9sWQNT"], {
         usernameHook: (e, t) => (0, l.jsx)("span", {
             children: T
         }, t)
-    }) : A.intl.string(A.t["e/6Ogt"]), C = n.useRef(null), [y, D] = n.useState(!1), S = n.useCallback(() => {
-        y || _.default.track(g.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+    }) : p.intl.string(p.t["e/6Ogt"]), N = n.useRef(null), [y, D] = n.useState(!1), S = n.useCallback(() => {
+        y || g.default.track(_.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
             guild_id: i.id,
             invite_code: t.code,
             location: "accept_invite_modal_redesign"
         }), D(!y)
-    }, [i.id, t.code, y]), L = (0, m.Sn)();
+    }, [i.id, t.code, y]), b = (0, m.Sn)();
     return (0, l.jsxs)("div", {
-        className: p,
-        children: [null != v ? (0, l.jsx)("div", {
-            className: E.Un,
-            children: (0, l.jsx)(a.wx6, {
+        className: j,
+        children: [null != I ? (0, l.jsx)("div", {
+            className: A.Un,
+            children: (0, l.jsx)(s.wx6, {
                 type: "critical",
-                children: v
+                children: I
             })
-        }) : null, L ? (0, l.jsx)(o.A, {
-            className: E.sX
-        }) : null, (0, l.jsxs)(a.ButtonGroup, {
+        }) : null, b ? (0, l.jsx)(c.A, {
+            className: A.sX
+        }) : null, (0, l.jsxs)(s.ButtonGroup, {
             fullWidthContainer: !0,
             fullWidth: !0,
             direction: "horizontal",
-            children: [(0, l.jsx)(a.Button, {
+            children: [(0, l.jsx)(s.Button, {
                 onClick: f,
-                loading: I,
+                loading: v,
                 variant: "primary",
-                disabled: L,
-                text: L ? A.intl.string(A.t.ZNCziL) : N,
-                icon: L || null == j ? void 0 : () => (0, l.jsx)(r.A, {
+                disabled: b,
+                text: b ? p.intl.string(p.t.ZNCziL) : C,
+                icon: b || null == E ? void 0 : () => (0, l.jsx)(r.A, {
                     "aria-hidden": !0,
-                    size: a._3J.SIZE_16,
-                    user: j
+                    size: s._3J.SIZE_16,
+                    user: E
                 })
-            }), L ? null : (0, l.jsx)(a.YNO, {
-                targetElementRef: C,
-                animation: a.YNO.Animation.NONE,
+            }), b ? null : (0, l.jsx)(s.YNO, {
+                targetElementRef: N,
+                animation: s.YNO.Animation.NONE,
                 position: "top",
                 align: "right",
                 shouldShow: y,
@@ -78,11 +78,11 @@ function p(e) {
                     ...e
                 }),
                 children: e => (0, l.jsx)("div", {
-                    ref: C,
-                    children: (0, l.jsx)(a.K0, {
+                    ref: N,
+                    children: (0, l.jsx)(s.K0, {
                         ...e,
-                        icon: a.Zes,
-                        "aria-label": A.intl.string(A.t["3D5yo/"]),
+                        icon: s.Zes,
+                        "aria-label": p.intl.string(p.t["3D5yo/"]),
                         variant: "secondary",
                         onClick: S
                     })

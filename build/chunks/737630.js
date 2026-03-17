@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(287809),
     x = s(440938),
     E = s(590180),
-    C = s(161918),
-    b = s(790297),
+    b = s(161918),
+    C = s(790297),
     A = s(338769),
     S = s(841702),
     v = s(621653),
@@ -91,7 +91,7 @@ let H = e => {
                 transitionState: J,
                 transitionToTab: Q
             } = (0, I.o)(G);
-        (0, b.uS)(s, X, Y, J, $), (0, b.N0)(X, l);
+        (0, C.uS)(s, X, Y, J, $), (0, C.N0)(X, l);
         let {
             dismissShopButtonDC: ee
         } = (0, y.A)();
@@ -107,7 +107,7 @@ let H = e => {
         }, []), (0, R.gB)();
         let {
             analyticsLocations: en
-        } = (0, b.lC)(X), er = (0, A.V)(X, "collectibles_shop");
+        } = (0, C.lC)(X), er = (0, A.V)(X, "collectibles_shop");
         return (0, n.jsx)(g.f5, {
             value: en,
             children: (0, n.jsx)(x.R9, {
@@ -116,7 +116,7 @@ let H = e => {
                     pageCategory: Y,
                     pageSize: B.l5
                 },
-                children: (0, n.jsx)(C.iM, {
+                children: (0, n.jsx)(b.iM, {
                     tab: X,
                     children: (0, n.jsx)(H, {
                         onClose: P,

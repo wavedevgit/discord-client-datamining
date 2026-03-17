@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(599062),
     x = s(159439),
     E = s(998694),
-    C = s(666413),
-    b = s(573455),
+    b = s(666413),
+    C = s(573455),
     A = s(565057),
     S = s(227205),
     v = s(457414),
@@ -86,7 +86,7 @@ let B = e => {
                 isLoading: M,
                 handleTransition: t,
                 tab: c
-            }), (0, n.jsx)(b.A, {
+            }), (0, n.jsx)(C.A, {
                 isLoading: M,
                 handleTransition: t,
                 categories: []
@@ -111,7 +111,7 @@ let B = e => {
                         }, d);
                         break;
                     case i.g.FEATURED:
-                        _ = (0, n.jsx)(b.A, {
+                        _ = (0, n.jsx)(C.A, {
                             isLoading: M,
                             handleTransition: t,
                             featuredBlockRecord: e
@@ -151,7 +151,7 @@ let B = e => {
                         }, d);
                         break;
                     case i.g.COUNTDOWN_TIMER:
-                        _ = (0, n.jsx)(C.S, {
+                        _ = (0, n.jsx)(b.S, {
                             countdownTimerBlock: e,
                             isVisible: x
                         }, d), g = !0;

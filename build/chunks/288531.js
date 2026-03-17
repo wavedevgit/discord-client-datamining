@@ -1,6 +1,6 @@
 /** chunk id: 288531 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => D
 });
 var i = n(627968);
 n(64700);
@@ -59,7 +59,7 @@ function P(e) {
     })
 }
 
-function D(e) {
+function M(e) {
     let {
         quest: t,
         progressState: n,
@@ -88,22 +88,22 @@ function D(e) {
         })
     }, m.tooltipText)
 }
-let M = e => {
+let D = e => {
     let {
         quest: t,
         location: n,
         size: l,
         isFocused: E,
-        isQuestExpired: M,
+        isQuestExpired: D,
         isExpanded: w,
         isAnimating: O,
         contentPosition: k,
         sourceQuestContent: U
-    } = e, G = (0, A.In)(t), B = (0, A.S5)(t.userStatus?.completedAt, {
+    } = e, B = (0, A.In)(t), G = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = G >= A.F3.ACCEPTED, H = G >= A.F3.COMPLETED, V = w || O, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), F = B >= A.F3.ACCEPTED, H = B >= A.F3.COMPLETED, V = w || O, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: N.rE.QUESTS_CARD,
@@ -112,7 +112,7 @@ let M = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = M && !H, $ = (0, I.vv)(t);
+    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
@@ -129,7 +129,7 @@ let M = e => {
                 shouldShow: Z,
                 children: (0, i.jsxs)("div", {
                     className: R.D9,
-                    children: [M && (0, i.jsx)("div", {
+                    children: [D && (0, i.jsx)("div", {
                         className: R.FL,
                         children: (0, i.jsx)(d.EpV, {
                             color: d.LU0.colors.WHITE
@@ -153,7 +153,7 @@ let M = e => {
                 children: [!$ && (0, i.jsx)(d.Text, {
                     variant: (0, y.a3)(n) && !F && "lg" === l ? "text-lg/medium" : "lg" === l ? "text-md/medium" : "sm" === l ? "text-sm/medium" : "text-xs/medium",
                     className: R.$p,
-                    children: M ? L.intl.formatToPlainString(L.t["ge+AJp"], {
+                    children: D ? L.intl.formatToPlainString(L.t["ge+AJp"], {
                         questName: t.config.messages.questName
                     }) : W
                 }), (0, i.jsx)(d.Text, {
@@ -203,9 +203,9 @@ let M = e => {
                     }({
                         quest: t,
                         locale: X,
-                        isQuestExpired: M,
+                        isQuestExpired: D,
                         collectibleQuestRewardDescription: z,
-                        formattedCompletionDate: B
+                        formattedCompletionDate: G
                     })
                 })]
             }), Q ? (0, i.jsxs)(d.ButtonGroup, {
@@ -247,9 +247,9 @@ let M = e => {
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: U,
                     analyticsCtxQuestContentPosition: k
-                }) : (0, i.jsx)(D, {
+                }) : (0, i.jsx)(M, {
                     quest: t,
-                    progressState: G,
+                    progressState: B,
                     questContent: n,
                     sourceQuestContent: U
                 }))]

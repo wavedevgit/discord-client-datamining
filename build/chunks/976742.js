@@ -20,15 +20,15 @@ var n = s(627968),
     f = s(561769),
     x = s(159439),
     E = s(998694),
-    C = s(758836),
-    b = s(157884);
+    b = s(758836),
+    C = s(157884);
 
 function A(e) {
     let {
         category: t
     } = e, s = (0, a.bG)([o.default], () => o.default.getCurrentUser()), r = (0, _.X)(t.products), l = (0, u.p)()(r), i = (0, d.W)("CollectiblesCatalogContent");
     return null == s || 0 === l.length ? null : (0, n.jsx)("div", {
-        className: b.vY,
+        className: C.vY,
         children: l.map((e, t) => (0, n.jsx)(c.R9, {
             newValue: {
                 tilePosition: t
@@ -49,7 +49,7 @@ function S(e) {
         a(e)
     }, .15);
     return (0, n.jsxs)("div", {
-        className: b.EF,
+        className: C.EF,
         ref: i,
         children: [(0, n.jsx)(m.A, {
             category: t
@@ -83,18 +83,18 @@ function v(e) {
         if (o === A.current) return;
         let e = f.findIndex(e => e.skuId === o);
         if (-1 === e) return;
-        let t = Math.floor(e / C.l5) + 1;
+        let t = Math.floor(e / b.l5) + 1;
         t !== l && a(t), A.current = o
     }, [o, f, a, l]);
     let v = r.useMemo(() => {
-        let e = (l - 1) * C.l5;
-        return f.slice(e, e + C.l5)
+        let e = (l - 1) * b.l5;
+        return f.slice(e, e + b.l5)
     }, [f, l]);
     return (r.useEffect(() => {
         (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_MOUNTED,
-            tab: C.G2.CATALOG,
+            tab: b.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
@@ -102,12 +102,12 @@ function v(e) {
         u || 0 === v.length || (0, g.z)({
             sessionId: _,
             checkpoint: g.t.SHOP_RENDERED,
-            tab: C.G2.CATALOG,
+            tab: b.G2.CATALOG,
             unpublishedCategoriesShown: p,
             cacheDisabled: m
         })
     }, [_, p, m, u, v.length]), u) ? (0, n.jsx)(h.A, {}) : (0, n.jsxs)("div", {
-        className: b.LZ,
+        className: C.LZ,
         children: [v.map((e, t) => (0, n.jsx)("div", {
             ref: t => s(e.skuId, t),
             children: (0, n.jsx)(c.R9, {
@@ -119,11 +119,11 @@ function v(e) {
                 })
             })
         }, e.skuId)), (0, n.jsx)("div", {
-            className: b.Ej,
+            className: C.Ej,
             children: (0, n.jsx)(i.mgR, {
                 currentPage: l,
                 totalCount: f.length,
-                pageSize: C.l5,
+                pageSize: b.l5,
                 onPageChange: a,
                 disablePaginationGap: !0
             })

@@ -1,19 +1,19 @@
 /** chunk id: 287944 params = (module,exports,require) **/
-t.d(l, {
-    A: () => i
+l.d(t, {
+    A: () => o
 });
-var r = t(627968);
-t(64700);
-var n = t(435371),
-    o = t(53566);
-let i = e => {
+var r = l(627968);
+l(64700);
+var n = l(435371),
+    i = l(53566);
+let o = e => {
     let {
-        text: l,
-        ...t
-    } = e, i = (0, o.S)(String(l));
+        text: t,
+        ...l
+    } = e, o = (0, i.S)(String(t));
     return (0, r.jsx)(n.m_, {
-        text: i,
-        ...t,
+        text: o,
+        ...l,
         asContainer: !0
     })
 }

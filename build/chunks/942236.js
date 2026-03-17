@@ -22,11 +22,11 @@ var s = n(684013),
 
 function m(e, t, n, m) {
     let {
-        icon: E,
-        title: x,
-        body: y
+        icon: x,
+        title: E,
+        body: v
     } = (0, l.TB)(e, t, n), {
-        trackView: v,
+        trackView: y,
         trackClick: S
     } = (0, A.Y)(g.KS.TextChat, {
         notif_type: g.KS.TextChat,
@@ -38,9 +38,9 @@ function m(e, t, n, m) {
         channel_type: e.type
     });
     return {
-        icon: E,
-        title: x,
-        body: y,
+        icon: x,
+        title: E,
+        body: v,
         renderFooter: e => e ? (0, i.jsx)("div", {
             style: {
                 textAlign: "center"
@@ -49,7 +49,7 @@ function m(e, t, n, m) {
         }) : null,
         maxBodyLines: 2,
         onNotificationShow: () => {
-            m && (0, o.Ak)(d.cH, d.pD), v()
+            m && (0, o.Ak)(d.cH, d.pD), y()
         },
         onNotificationClick: () => {
             if (a.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {

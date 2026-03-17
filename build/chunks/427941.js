@@ -1,20 +1,41 @@
 /** chunk id: 427941 params = (module,exports,require) **/
-t.d(l, {
-    A: () => i
+l.d(t, {
+    A: () => a
 });
-var r = t(627968),
-    n = t(506456),
-    o = t(401721);
-let i = e => {
+var r = l(627968);
+l(64700);
+var n = l(607470),
+    i = l(506456),
+    o = l(401721);
+let a = e => {
     let {
-        backgroundImage: l,
-        children: t
-    } = e, i = (0, n.A)(l.src);
-    return (0, r.jsx)("div", {
+        backgroundImage: t,
+        backgroundSize: l = "cover",
+        backgroundPosition: a = "center",
+        backgroundRepeat: s = "no-repeat",
+        backgroundColor: d,
+        padding: c = 16,
+        children: u
+    } = e, h = (0, i.A)(t), m = (0, i.c)(h?.mimeType);
+    return (0, r.jsxs)("div", {
         className: o.k,
         style: {
-            backgroundImage: `url(${i})`
+            ...!m && null != h ? {
+                backgroundImage: `url(${h.src})`
+            } : {},
+            backgroundSize: l,
+            backgroundPosition: a,
+            backgroundRepeat: s,
+            backgroundColor: d,
+            padding: c
         },
-        children: t
+        children: [m && null != h && (0, r.jsx)(n.A, {
+            className: o.O,
+            src: h.src,
+            autoPlay: !0,
+            loop: !0,
+            muted: !0,
+            playsInline: !0
+        }), u]
     })
 }

@@ -5,18 +5,18 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var s = t(311907),
-    l = t(397927),
-    a = t(734057),
-    r = t(309010),
+    r = t(397927),
+    l = t(734057),
+    a = t(309010),
     o = t(622543),
     d = t(987112),
     c = t(389996),
     u = t(743987),
-    m = t(900179),
-    x = t(280645),
-    A = t(928223),
-    p = t(518477),
-    _ = t(985018),
+    A = t(900179),
+    m = t(280645),
+    _ = t(928223),
+    x = t(518477),
+    p = t(985018),
     f = t(195723);
 
 function h(e) {
@@ -25,30 +25,30 @@ function h(e) {
         displayProfile: t,
         guildId: h,
         onClose: g
-    } = e, j = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), I = (0, s.bG)([a.A, r.A], () => a.A.getChannel(r.A.getChannelId()));
-    return (0, i.jsxs)(l.IpV, {
+    } = e, I = (0, s.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), j = (0, s.bG)([l.A, a.A], () => l.A.getChannel(a.A.getChannelId()));
+    return (0, i.jsxs)(r.IpV, {
         fade: !0,
         className: f.XG,
         children: [t?.bio != null && t?.bio !== "" && (0, i.jsx)(c.A, {
             userBio: t.bio,
             setLineClamp: !1
-        }), j?.popularApplicationCommandIds != null && null != I && (0, i.jsx)(d.A, {
-            applicationId: j.id,
-            commandIds: j.popularApplicationCommandIds,
-            channel: I,
+        }), I?.popularApplicationCommandIds != null && null != j && (0, i.jsx)(d.A, {
+            applicationId: I.id,
+            commandIds: I.popularApplicationCommandIds,
+            channel: j,
             guildId: h,
             onClick: g
-        }), t?.guildId != null && (0, i.jsx)(x.A, {
+        }), t?.guildId != null && (0, i.jsx)(m.A, {
             userId: n.id,
             guildId: t.guildId
-        }), (0, i.jsx)(m.A, {
-            heading: _.intl.string(_.t["A//N4k"]),
+        }), (0, i.jsx)(A.A, {
+            heading: p.intl.string(p.t["A//N4k"]),
             children: (0, i.jsx)(u.A, {
                 userId: n.id,
                 guildId: h,
-                tooltipDelay: p.In
+                tooltipDelay: x.In
             })
-        }), (0, i.jsx)(A.A, {
+        }), (0, i.jsx)(_.A, {
             userId: n.id
         })]
     })

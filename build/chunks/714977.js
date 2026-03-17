@@ -19,11 +19,11 @@ var i = n(627968),
     g = n(592598),
     _ = n(672396),
     m = n(652215),
-    E = n(985018),
-    x = n(300597),
-    y = n(473169);
+    x = n(985018),
+    E = n(300597),
+    v = n(473169);
 
-function v() {
+function y() {
     let e = h.default.getNotificationPositionMode(),
         t = e !== m.G6Q.DISABLED,
         n = u.Ay.getOverlayKeybind(),
@@ -55,14 +55,14 @@ class S extends s.PureComponent {
         })
     };
     handleToggleTextChatNotifications = () => {
-        r.A.setNotificationDisabledSetting(f.M.TEXT_CHAT, !this.props.textChatDisabled), v()
+        r.A.setNotificationDisabledSetting(f.M.TEXT_CHAT, !this.props.textChatDisabled), y()
     };
     handleToggleInviteNotification = () => {
         let e = this.props.shouldShowInviteNotification;
         r.A.setNotificationDisabledSetting(f.M.GAME_ACTIVITY, !e)
     };
     handleChangeNotificationPositionMode(e, t) {
-        r.A.setNotificationPositionMode(t), v()
+        r.A.setNotificationPositionMode(t), y()
     }
     handleChangeAvatarSizeMode(e) {
         let {
@@ -87,20 +87,20 @@ class S extends s.PureComponent {
             direction: o.A.Direction.VERTICAL,
             grow: 0,
             shrink: 0,
-            className: x.wx,
+            className: E.wx,
             children: [(0, i.jsxs)(o.A, {
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
-                    className: x.qd,
-                    children: E.intl.string(E.t["35G2Mq"])
+                    className: E.qd,
+                    children: x.intl.string(x.t["35G2Mq"])
                 }), (0, i.jsx)("div", {
-                    className: x.Q7,
+                    className: E.Q7,
                     children: (0, i.jsx)(a.K0, {
                         variant: "icon-only",
                         size: "md",
                         icon: a.PGe,
                         onClick: this.props.onClose,
-                        "aria-label": E.intl.string(E.t.cpT0Cq)
+                        "aria-label": x.intl.string(x.t.cpT0Cq)
                     })
                 })]
             }), this.renderTabBar()]
@@ -111,22 +111,22 @@ class S extends s.PureComponent {
             selectedSection: e
         } = this.state, t = c.A.isDeveloper ? (0, i.jsx)(a.VQ0.Item, {
             id: "DEVELOPER",
-            className: x.YU,
+            className: E.YU,
             children: "Developer"
         }) : null;
         return (0, i.jsxs)(a.VQ0, {
             selectedItem: e,
             type: "top",
-            className: x.__invalid_tabBar,
+            className: E.__invalid_tabBar,
             onItemSelect: this.handleSelectSection,
             children: [(0, i.jsx)(a.VQ0.Item, {
                 id: "GENERAL",
-                className: x.YU,
-                children: E.intl.string(E.t["0FYxxw"])
+                className: E.YU,
+                children: x.intl.string(x.t["0FYxxw"])
             }), (0, i.jsx)(a.VQ0.Item, {
                 id: "VOICE",
-                className: x.YU,
-                children: E.intl.string(E.t["3WeSiE"])
+                className: E.YU,
+                children: x.intl.string(x.t["3WeSiE"])
             }), t]
         })
     }
@@ -145,7 +145,7 @@ class S extends s.PureComponent {
                 e = this.renderGeneralSettings()
         }
         return (0, i.jsx)(a.ChK, {
-            className: x.Qs,
+            className: E.Qs,
             children: e
         }, t)
     }
@@ -156,19 +156,19 @@ class S extends s.PureComponent {
         } = this.props, n = !g.A.isNotificationDisabled(_.KS.TextChat), s = e !== m.G6Q.DISABLED;
         return (0, i.jsxs)(a.nVY, {
             children: [(0, i.jsx)(a.D0$, {
-                label: E.intl.string(E.t.IQv8Eo),
+                label: x.intl.string(x.t.IQv8Eo),
                 children: (0, i.jsx)(d.A, {
                     position: e,
                     onChange: this.handleChangeNotificationPositionMode
                 })
             }), (0, i.jsx)(a.dOG, {
-                label: E.intl.string(E.t.Fy5kPp),
+                label: x.intl.string(x.t.Fy5kPp),
                 checked: n && s,
                 onChange: this.handleToggleTextChatNotifications,
                 disabled: !s
             }), (0, i.jsx)(a.dOG, {
-                label: E.intl.string(E.t["f+c48/"]),
-                description: E.intl.string(E.t.W9DVVf),
+                label: x.intl.string(x.t["f+c48/"]),
+                description: x.intl.string(x.t.W9DVVf),
                 checked: t,
                 onChange: this.handleToggleInviteNotification
             })]
@@ -183,45 +183,45 @@ class S extends s.PureComponent {
         return (0, i.jsxs)(a.BJc, {
             gap: 20,
             children: [(0, i.jsx)(a.z6M, {
-                label: E.intl.string(E.t.dnvZSg),
+                label: x.intl.string(x.t.dnvZSg),
                 onChange: e => this.handleChangeAvatarSizeMode({
                     value: e
                 }),
                 options: [{
                     value: m.OSZ.LARGE,
-                    name: E.intl.string(E.t.YcOxtr)
+                    name: x.intl.string(x.t.YcOxtr)
                 }, {
                     value: m.OSZ.SMALL,
-                    name: E.intl.string(E.t.BKIKqx)
+                    name: x.intl.string(x.t.BKIKqx)
                 }],
                 value: e
             }), (0, i.jsx)(a.z6M, {
-                label: E.intl.string(E.t.J0dpcB),
+                label: x.intl.string(x.t.J0dpcB),
                 onChange: e => this.handleChangeDisplayNameMode({
                     value: e
                 }),
                 options: [{
                     value: m.pwA.ALWAYS,
-                    name: E.intl.string(E.t.nBmDrT)
+                    name: x.intl.string(x.t.nBmDrT)
                 }, {
                     value: m.pwA.ONLY_WHILE_SPEAKING,
-                    name: E.intl.string(E.t["2OvIZY"])
+                    name: x.intl.string(x.t["2OvIZY"])
                 }, {
                     value: m.pwA.NEVER,
-                    name: E.intl.string(E.t.ekjlPL)
+                    name: x.intl.string(x.t.ekjlPL)
                 }],
                 value: t
             }), (0, i.jsx)(a.z6M, {
-                label: E.intl.string(E.t.swsWWC),
+                label: x.intl.string(x.t.swsWWC),
                 onChange: e => this.handleChangeDisplayUserMode({
                     value: e
                 }),
                 options: [{
                     value: m.f5z.ALWAYS,
-                    name: E.intl.string(E.t.nBmDrT)
+                    name: x.intl.string(x.t.nBmDrT)
                 }, {
                     value: m.f5z.ONLY_WHILE_SPEAKING,
-                    name: E.intl.string(E.t["2OvIZY"])
+                    name: x.intl.string(x.t["2OvIZY"])
                 }],
                 value: n
             })]
@@ -229,7 +229,7 @@ class S extends s.PureComponent {
     }
     renderDeveloperSettings() {
         return (0, i.jsx)("div", {
-            className: y.SX,
+            className: v.SX,
             children: (0, i.jsx)(a.l6P, {
                 label: "Crashes",
                 value: void 0,
@@ -266,8 +266,8 @@ class S extends s.PureComponent {
     }
     render() {
         return (0, i.jsxs)(a.lGe, {
-            "aria-label": E.intl.string(E.t["35G2Mq"]),
-            className: x.kL,
+            "aria-label": x.intl.string(x.t["35G2Mq"]),
+            className: E.kL,
             children: [this.renderHeader(), this.renderBody()]
         })
     }

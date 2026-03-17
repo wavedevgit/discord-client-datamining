@@ -19,18 +19,18 @@ var i = n(284009),
     g = n(102037),
     _ = n(274372),
     m = n(747189),
-    E = n(742984),
-    x = n(833551),
-    y = n(592598),
-    v = n(253932),
+    x = n(742984),
+    E = n(833551),
+    v = n(592598),
+    y = n(253932),
     S = n(164891),
     C = n(961350),
     I = n(734057),
     N = n(803224),
     T = n(290863),
     O = n(309010),
-    b = n(461213),
-    j = n(351906),
+    j = n(461213),
+    b = n(351906),
     D = n(287809),
     L = n(845618),
     R = n(242286),
@@ -108,7 +108,7 @@ function q(e) {
     if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !S.A.getCurrentConfig({
             guildId: e.guildId,
             location: "OverlayStartRinging"
-        }).enabled || b.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
+        }).enabled || j.A.getStatus() === G.clD.DND || y.NO.getSetting()) return !1;
     let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
     null != l && Z(l.id), Q((0, p.A)(s), {
         priority: 1,
@@ -120,7 +120,7 @@ function q(e) {
 class $ extends a.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(C.default, I.A, _.A, N.A, R.default, x.default, P.A, y.A, w.default, T.A, O.A, b.A, j.A, D.default)
+        this.waitFor(C.default, I.A, _.A, N.A, R.default, E.default, P.A, v.A, w.default, T.A, O.A, j.A, b.A, D.default)
     }
     getNotifications() {
         return F
@@ -138,7 +138,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             nudges: t
         } = e;
-        if (x.default.hasChangedRenderMode(R.default.getFocusedPID() ?? (0, k.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
+        if (E.default.hasChangedRenderMode(R.default.getFocusedPID() ?? (0, k.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
             nudges: t
         });
         let n = t[0];
@@ -178,7 +178,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         } = e, i = I.A.getChannel(t), l = D.default.getUser(n.author?.id);
         if (null == i || null == l) return !1;
         if (n.activity?.type === G.xL.JOIN || n.activity?.type === G.xL.JOIN_REQUEST) {
-            if (!(0, E.lx)(n, t, !0, !0)) return !1;
+            if (!(0, x.lx)(n, t, !0, !0)) return !1;
             let e = function(e, t, n) {
                 let i, l;
                 if (s()(null != t.activity, "received null message activity"), n.id === C.default.getId()) return !1;
@@ -190,7 +190,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                         l = (0, c.A)(e, t, n, a, i);
                         break;
                     case G.xL.JOIN_REQUEST:
-                        if (null == (i = b.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+                        if (null == (i = j.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
                         l = (0, A.A)(e, n, a, i)
                 }
                 if (null == l) return !1;
@@ -203,7 +203,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }(i, n, l);
             if (!1 !== e) return e
         }
-        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(U.KS.TextChat) || j.A.disableNotifications || !(0, E.lx)(n, t)) return !1;
+        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || v.A.isNotificationDisabled(U.KS.TextChat) || b.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
         let a = !N.A.isSoundDisabled(L.cH);
         Q((0, f.A)(i, n, l, a), {
             type: 1,

@@ -39,12 +39,12 @@ function b(e) {
         botUserId: t?.bot?.id
     }), j = null != t && (0, o.Ag)(t), L = null != y && j && N, {
         analyticsLocations: R
-    } = (0, a.Ay)(r.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), D = (0, E.et)(P), M = (0, l.bG)([C.Ay], () => {
+    } = (0, a.Ay)(r.A.ACTIVITY_CUSTOM_LINK), P = (0, l.bG)([A.A], () => A.A.getChannelId()), M = (0, E.et)(P), D = (0, l.bG)([C.Ay], () => {
         if (null == P) return;
         let e = C.Ay.getEmbeddedActivitiesForChannel(P).filter(e => e.applicationId === t.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
-    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, I.A)(), k = D === E.xy.CAN_LAUNCH, U = null != M && w?.compositeInstanceId === M, G = null != n ? n : b.customId, B = (0, p.e)(t), F = [];
-    B ? F.push({
+    }), w = (0, l.bG)([C.Ay], () => C.Ay.getCurrentEmbeddedActivity()), O = (0, I.A)(), k = M === E.xy.CAN_LAUNCH, U = null != D && w?.compositeInstanceId === D, B = null != n ? n : b.customId, G = (0, p.e)(t), F = [];
+    G ? F.push({
         label: v.intl.string(v.t.RscU7I),
         trackingArea: _.kY.PLAY,
         onClick() {
@@ -53,15 +53,15 @@ function b(e) {
             })
         }
     }) : (k && F.push({
-        label: null == M ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
+        label: null == D ? v.intl.string(v.t.RscU7I) : U ? v.intl.string(v.t.DPfdsq) : v.intl.string(v.t.sqe0hj),
         trackingArea: _.kY.PLAY,
         onClick() {
             (0, f.su)({
                 channelId: P ?? void 0,
                 applicationId: t.id,
-                isStart: null == M,
+                isStart: null == D,
                 embeddedActivitiesManager: O,
-                customId: G,
+                customId: B,
                 referrerId: T,
                 analyticsLocations: R
             })
@@ -75,7 +75,7 @@ function b(e) {
                 appId: t.id,
                 botId: y,
                 analyticsLocations: R,
-                customId: G,
+                customId: B,
                 referrerId: T
             })
         }
@@ -99,7 +99,7 @@ function b(e) {
             id: t.id,
             linkType: c.J.CUSTOM_ACTIVITY_LINK,
             referrerId: T,
-            activityCustomId: G,
+            activityCustomId: B,
             guildId: g.A.getChannel(S.channel_id)?.guild_id,
             channelId: S.channel_id,
             messageId: S.id

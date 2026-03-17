@@ -39,8 +39,8 @@ let p = {
         }, .1, null != i), f = (0, o.bG)([d.default], () => d.default.getCurrentUser()), {
             bannerDisplayConfig: x,
             logoDisplayConfig: E,
-            heroLogo: C,
-            heroBannerStatic: b,
+            heroLogo: b,
+            heroBannerStatic: C,
             heroBannerAnimated: A
         } = (0, _.Kk)(s), S = x?.responsive ?? !1, v = x?.backgroundStyle;
         return null != f && (t || s !== p) ? (0, n.jsxs)("div", {
@@ -53,8 +53,8 @@ let p = {
                 style: null != v ? {
                     background: v
                 } : void 0,
-                children: null != b && (0, n.jsx)(g.A, {
-                    bannerStatic: b,
+                children: null != C && (0, n.jsx)(g.A, {
+                    bannerStatic: C,
                     bannerAnimated: A,
                     isResponsive: S
                 })
@@ -70,9 +70,9 @@ let p = {
                         className: h.Hw,
                         children: (0, n.jsxs)("div", {
                             className: h.Wq,
-                            children: [null != C && (0, n.jsx)("img", {
+                            children: [null != b && (0, n.jsx)("img", {
                                 className: h.rm,
-                                src: C,
+                                src: b,
                                 alt: s.name,
                                 style: E?.toDesktopStyles()
                             }), null != s.title && (0, n.jsx)(c.Heading, {

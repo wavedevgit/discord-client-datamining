@@ -3,8 +3,8 @@ i.d(t, {
     A: () => o
 });
 var r = i(627968),
-    a = i(158954),
-    s = i(262427),
+    s = i(158954),
+    a = i(262427),
     n = i(697359),
     l = i(985018);
 
@@ -17,11 +17,11 @@ function o(e) {
     } = (0, n.A)({
         location: t
     });
-    return i ? (0, r.jsx)(s.J, {
+    return i ? (0, r.jsx)(a.J, {
         text: l.intl.format(l.t["/bHQ84"], {
             numDays: Math.max(o, 1),
             applicationName: l.intl.string(l.t.Uu8hke)
         }),
-        Icon: a.Cp8
+        Icon: s.Cp8
     }) : null
 }

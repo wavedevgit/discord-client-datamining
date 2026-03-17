@@ -32,17 +32,17 @@ var i = n(627968),
     L = n(486020),
     R = n(927813),
     P = n(403362),
-    D = n(218394),
-    M = n(255345),
+    M = n(218394),
+    D = n(255345),
     w = n(652215),
     O = n(360469),
     k = n(768349),
     U = n(985018),
-    G = n(356053);
-let B = l.memo(e => {
+    B = n(356053);
+let G = l.memo(e => {
     let {
         start: t
-    } = e, [n, i] = l.useState(0), r = (0, D.j)(), a = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === r || a;
+    } = e, [n, i] = l.useState(0), r = (0, M.j)(), a = (0, s.bG)([u.A], () => u.A.useReducedMotion), d = !1 === r || a;
     return l.useEffect(() => {
         let e = new o.IX;
         return e.start(d ? 15 * R.A.Millis.SECOND : R.A.Millis.SECOND, () => {
@@ -50,7 +50,7 @@ let B = l.memo(e => {
         }), () => e.stop()
     }, [d, t]), (0, v.fU)(n)
 });
-B.displayName = "ActivityRuntimeCounter";
+G.displayName = "ActivityRuntimeCounter";
 let F = l.memo(function(e) {
     let t, {
             application: n,
@@ -62,8 +62,8 @@ let F = l.memo(function(e) {
             analyticsLocations: v
         } = (0, A.Ay)(g.A.ACTIVITY_INSTANCE_EMBED),
         R = (0, c.p)(),
-        D = (0, s.bG)([S.A], () => S.A.getChannel(r), [r]),
-        F = D?.isThread?.() ? D?.parent_id : r,
+        M = (0, s.bG)([S.A], () => S.A.getChannel(r), [r]),
+        F = M?.isThread?.() ? M?.parent_id : r,
         H = (0, s.bG)([T.default], () => T.default.getId()),
         {
             embeddedActivity: V,
@@ -95,11 +95,11 @@ let F = l.memo(function(e) {
             application: J
         }),
         Z = null == V,
-        $ = (0, M.I3)({
+        $ = (0, D.I3)({
             embeddedActivity: V,
             joinability: X,
             currentEmbeddedActivity: W,
-            channel: D
+            channel: M
         }),
         ee = l.useId(),
         et = null != q && q.isLaunching && q.componentId === ee,
@@ -107,7 +107,7 @@ let F = l.memo(function(e) {
             j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: r,
-                channel_type: D?.type,
+                channel_type: M?.type,
                 is_activity_start: Z,
                 cta: "Play"
             }), Z ? await (0, h.A)({
@@ -128,7 +128,7 @@ let F = l.memo(function(e) {
             j.default.track(w.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: r,
-                channel_type: D?.type,
+                channel_type: M?.type,
                 cta: "View"
             })
         }), er = L.Ay.getApplicationIconURL({
@@ -156,18 +156,18 @@ let F = l.memo(function(e) {
         title: n.name,
         iconSrc: er,
         info: (0, i.jsx)("div", {
-            className: G.QR,
+            className: B.QR,
             children: Z ? (0, i.jsx)(d.Text, {
                 variant: "text-xs/medium",
                 color: "none",
                 children: ei
             }) : (0, i.jsxs)(i.Fragment, {
                 children: [null != K && (0, i.jsxs)("div", {
-                    className: G.oL,
+                    className: B.oL,
                     children: [null != es && (0, i.jsxs)("div", {
-                        className: G.DT,
+                        className: B.DT,
                         children: [(0, i.jsx)("div", {
-                            className: G.y9,
+                            className: B.y9,
                             children: (0, i.jsx)(eo.Icon, {
                                 size: "xxs",
                                 color: "currentColor"
@@ -175,12 +175,12 @@ let F = l.memo(function(e) {
                         }), (0, i.jsx)(d.Text, {
                             variant: "text-xs/medium",
                             color: "none",
-                            children: (0, i.jsx)(B, {
+                            children: (0, i.jsx)(G, {
                                 start: es
                             })
                         })]
                     }), (0, i.jsxs)("div", {
-                        className: a()(G.DT, G.PK),
+                        className: a()(B.DT, B.PK),
                         children: [(0, i.jsx)("div", {
                             children: (0, i.jsx)(d.ueQ, {
                                 size: "xxs",

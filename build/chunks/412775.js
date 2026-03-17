@@ -5,23 +5,23 @@ t.d(n, {
 var i = t(627968);
 t(64700);
 var s = t(311907),
-    l = t(397927),
-    a = t(821269),
-    r = t(437774),
+    r = t(397927),
+    l = t(821269),
+    a = t(437774),
     o = t(773669),
     d = t(967198),
     c = t(351906),
     u = t(183555),
-    m = t(346713),
-    x = t(484509),
-    A = t(389996),
-    p = t(46937),
-    _ = t(361311),
+    A = t(346713),
+    m = t(484509),
+    _ = t(389996),
+    x = t(46937),
+    p = t(361311),
     f = t(743987),
     h = t(900179),
     g = t(280645),
-    j = t(928223),
-    I = t(518477),
+    I = t(928223),
+    j = t(518477),
     b = t(985018),
     v = t(195723);
 
@@ -31,14 +31,14 @@ function N(e) {
         displayProfile: t,
         onClose: N
     } = e, {
-        trackUserProfileAction: y
-    } = (0, u.NJ)(), C = (0, s.bG)([d.A], () => d.A.getGuildId()), T = (0, a.q)({
+        trackUserProfileAction: C
+    } = (0, u.NJ)(), y = (0, s.bG)([d.A], () => d.A.getGuildId()), T = (0, l.q)({
         userId: n.id
-    }), E = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, x.A)(n.id), R = (0, m.A)(n.id);
-    return (0, i.jsxs)(l.IpV, {
+    }), E = (0, s.bG)([c.A], () => c.A.hidePersonalInformation), L = (0, s.bG)([o.default], () => o.default.locale), P = (0, m.A)(n.id), R = (0, A.A)(n.id);
+    return (0, i.jsxs)(r.IpV, {
         fade: !0,
         className: v.XG,
-        children: [t?.bio != null && t?.bio !== "" && !E && (0, i.jsx)(A.A, {
+        children: [t?.bio != null && t?.bio !== "" && !E && (0, i.jsx)(_.A, {
             userBio: t.bio,
             setLineClamp: !1
         }), t?.guildId != null && (0, i.jsx)(g.A, {
@@ -46,17 +46,17 @@ function N(e) {
             guildId: t.guildId
         }), n.isProvisional && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t.Iyka0U),
-            headingIcon: (0, i.jsx)(l.EpV, {
+            headingIcon: (0, i.jsx)(r.EpV, {
                 size: "xxs",
-                color: l.LU0.colors.TEXT_STRONG
+                color: r.LU0.colors.TEXT_STRONG
             }),
             headingColor: "text-default",
-            children: (0, i.jsx)(r.T, {
+            children: (0, i.jsx)(a.T, {
                 userId: n.id
             })
         }), T.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t["Uv/eTx"]),
-            children: (0, i.jsx)(_.A, {
+            children: (0, i.jsx)(p.A, {
                 applicationIds: T
             })
         }), (0, i.jsx)(h.A, {
@@ -64,12 +64,12 @@ function N(e) {
             children: (0, i.jsx)(f.A, {
                 userId: n.id,
                 guildId: t?.guildId,
-                tooltipDelay: I.In
+                tooltipDelay: j.In
             })
         }), P.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t["3fe7U5"]),
-            scrollTargetId: I.bk.CONNECTIONS,
-            children: (0, i.jsx)(p.Ay, {
+            scrollTargetId: j.bk.CONNECTIONS,
+            children: (0, i.jsx)(x.Ay, {
                 connectedAccounts: P,
                 className: v.oQ,
                 userId: n.id,
@@ -77,18 +77,18 @@ function N(e) {
             })
         }), R.length > 0 && (0, i.jsx)(h.A, {
             heading: b.intl.string(b.t.PHjkRE),
-            children: R.map(e => (0, i.jsx)(p.Wc, {
+            children: R.map(e => (0, i.jsx)(x.Wc, {
                 className: v.MI,
                 applicationRoleConnection: e,
                 locale: L,
                 onApplicationClicked: () => {
-                    y({
+                    C({
                         action: "PRESS_APP_CONNECTION"
                     }), N()
                 },
-                selectedGuildId: C ?? void 0
+                selectedGuildId: y ?? void 0
             }, e.application.id))
-        }), (0, i.jsx)(j.A, {
+        }), (0, i.jsx)(I.A, {
             userId: n.id
         })]
     })

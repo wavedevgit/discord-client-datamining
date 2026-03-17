@@ -5,9 +5,9 @@ a.d(t, {
 var l = a(627968),
     r = a(64700),
     n = a(503698),
-    o = a.n(n),
-    s = a(752238),
-    d = a(781992);
+    s = a.n(n),
+    d = a(752238),
+    o = a(781992);
 
 function i(e) {
     let {
@@ -15,24 +15,24 @@ function i(e) {
         onChange: a
     } = e, n = "json", i = r.useRef(null), [c, x] = r.useState("");
     return r.useEffect(() => {
-        if (null != t && s.default.hasLanguage(n)) {
-            let e = s.default.highlight(n, t, !0);
+        if (null != t && d.default.hasLanguage(n)) {
+            let e = d.default.highlight(n, t, !0);
             null != e ? x(e.value + "\n") : x(t + "\n")
         } else x(t + "\n")
     }, [t, n]), (0, l.jsxs)("div", {
-        className: d.t,
+        className: o.t,
         children: [(0, l.jsx)("pre", {
-            className: d.c5,
+            className: o.c5,
             "aria-hidden": "true",
             children: (0, l.jsx)("code", {
-                className: o()("hljs", n),
+                className: s()("hljs", n),
                 dangerouslySetInnerHTML: {
                     __html: c ?? ""
                 }
             })
         }), (0, l.jsx)("textarea", {
             ref: i,
-            className: d.mW,
+            className: o.mW,
             value: t,
             onChange: e => {
                 a(e.target.value)
@@ -52,13 +52,13 @@ function i(e) {
                         let e = t.lastIndexOf("\n", r - 1) + 1,
                             l = t.indexOf("\n", r),
                             n = t.substring(e, -1 === l ? t.length : l),
-                            o = 0;
+                            s = 0;
                         for (let e = 0; e < Math.min(2, n.length); e++)
-                            if (" " === n[e]) o++;
+                            if (" " === n[e]) s++;
                             else break;
-                        o > 0 && (a(t.substring(0, e) + t.substring(e + o)), setTimeout(() => {
+                        s > 0 && (a(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
                             if (null != i.current) {
-                                let t = Math.max(e, r - o);
+                                let t = Math.max(e, r - s);
                                 i.current.selectionStart = i.current.selectionEnd = t
                             }
                         }, 0))

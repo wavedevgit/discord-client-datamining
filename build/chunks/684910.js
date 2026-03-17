@@ -1,26 +1,26 @@
 /** chunk id: 684910 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => s
 });
-var r = t(64700),
-    n = t(311907),
-    o = t(475743),
-    i = t(828596),
-    a = t(124338);
+var r = l(64700),
+    n = l(311907),
+    i = l(475743),
+    o = l(828596),
+    a = l(124338);
 
 function s(e) {
     let {
-        productId: l,
-        includePricing: t = !1,
+        productId: t,
+        includePricing: l = !1,
         ignoreCache: s = !1
-    } = e, [d, c, u] = (0, n.yK)([a.A], () => [a.A.getProduct(l), a.A.isFetching(l), a.A.getApiError(l)]), h = (0, o.A)(t), m = (0, o.A)(s), p = !!l && !c && u?.status !== 404 && u?.status !== 429, _ = null == d || t !== h || s !== m;
+    } = e, [d, c, u] = (0, n.yK)([a.A], () => [a.A.getProduct(t), a.A.isFetching(t), a.A.getApiError(t)]), h = (0, i.A)(l), m = (0, i.A)(s), p = !!t && !c && u?.status !== 404 && u?.status !== 429, _ = null == d || l !== h || s !== m;
     return (0, r.useEffect)(() => {
-        p && _ && (0, i.M0)({
-            productId: l,
-            includePricing: t,
+        p && _ && (0, o.M0)({
+            productId: t,
+            includePricing: l,
             ignoreCache: s
         })
-    }, [p, _, l, t, s]), {
+    }, [p, _, t, l, s]), {
         product: d,
         isFetching: c,
         apiError: u

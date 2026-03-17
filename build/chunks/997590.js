@@ -4,40 +4,40 @@ i.d(t, {
 }), i(321073), i(735438);
 var l = i(311907),
     n = i(73153),
-    s = i(403362),
-    a = i(324580),
+    a = i(403362),
+    s = i(324580),
     r = i(985018);
 let d = null,
-    c = [],
     o = [],
+    c = [],
     u = {};
 class m extends l.Ay.Store {
     static displayName = "GuildDiscoveryCategoryStore";
     getPrimaryCategories() {
-        return c
+        return o
     }
     getDiscoveryCategories() {
-        let e = a.FZ.map(e => o.find(t => t.categoryId === e)).filter(s.Vq);
+        let e = s.FZ.map(e => c.find(t => t.categoryId === e)).filter(a.Vq);
         return [{
-            categoryId: a.Iq,
+            categoryId: s.Iq,
             name: r.intl.string(r.t.Ym2Ri6)
         }, ...e]
     }
     getClanDiscoveryCategories() {
-        let e = a.FZ.map(e => o.find(t => t.categoryId === e)).filter(s.Vq);
+        let e = s.FZ.map(e => c.find(t => t.categoryId === e)).filter(a.Vq);
         return [{
-            categoryId: a.Iq,
+            categoryId: s.Iq,
             name: r.intl.string(r.t.QToH29)
         }, ...e]
     }
     getAllCategories() {
-        return o
+        return c
     }
     getFetchedLocale() {
         return d
     }
     getCategoryName(e) {
-        return e === a.Iq ? r.intl.string(r.t.Ym2Ri6) : u[e]
+        return e === s.Iq ? r.intl.string(r.t.Ym2Ri6) : u[e]
     }
 }
 let x = new m(n.h, {
@@ -47,15 +47,15 @@ let x = new m(n.h, {
                 locale: l
             } = e,
             n = [],
-            s = [];
+            a = [];
         if (i.sort((e, t) => e.name < t.name ? -1 : 1).forEach(e => {
                 let {
                     id: i,
                     name: l,
                     is_primary: r
                 } = e;
-                if (i !== a.ig) {
-                    if (i === a.v) {
+                if (i !== s.ig) {
+                    if (i === s.v) {
                         t = {
                             categoryId: i,
                             name: l
@@ -64,7 +64,7 @@ let x = new m(n.h, {
                     }!0 === r && n.push({
                         categoryId: i,
                         name: l
-                    }), s.push({
+                    }), a.push({
                         categoryId: i,
                         name: l
                     }), u[i] = l
@@ -79,6 +79,6 @@ let x = new m(n.h, {
                 name: i
             }), u[e] = i
         }
-        d = l, c = n, o = s
+        d = l, o = n, c = a
     }
 })

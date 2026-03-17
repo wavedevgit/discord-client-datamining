@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(100057),
     x = s(392183),
     E = s(751304),
-    C = s(561769),
-    b = s(998694),
+    b = s(561769),
+    C = s(998694),
     A = s(758836),
     S = s(652215),
     v = s(985018),
@@ -43,7 +43,7 @@ function B(e) {
     } = e, M = (0, _.uM)(), P = M?.sessionId ?? "", {
         noCache: D,
         includeUnpublished: H
-    } = (0, b.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), K = (0, c.DP)(), W = (0, i.qB)(K), [z, Y, $] = r.useMemo(() => {
+    } = (0, C.A)(), w = (0, m.W)("CollectiblesFilterableShop"), F = (0, a.bG)([d.default], () => d.default.getCurrentUser()), G = (0, a.bG)([g.A], () => g.A.productsWithVariantsAsGroup), [U, V] = r.useState(1), K = (0, c.DP)(), W = (0, i.qB)(K), [z, Y, $] = r.useMemo(() => {
         switch (B) {
             case A.G2.AVATAR_DECORATIONS:
                 return [v.intl.string(v.t.dRZYNE), W ? T.A : k.A, l.R.AVATAR_DECORATION];
@@ -94,7 +94,7 @@ function B(e) {
                 },
                 children: (0, n.jsx)(E.A, {
                     skuId: e.skuId,
-                    prioritizedCurrency: w ? C.Hi.FIAT : void 0
+                    prioritizedCurrency: w ? b.Hi.FIAT : void 0
                 }, e.skuId)
             }, e.skuId))
         }), X.length > 40 && (0, n.jsx)("div", {

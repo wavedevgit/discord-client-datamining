@@ -5,9 +5,9 @@ a.d(t, {
 var l = a(627968),
     r = a(575593),
     n = a(674658),
-    o = a(226540),
-    s = a(369496),
-    d = a(227),
+    s = a(226540),
+    d = a(369496),
+    o = a(227),
     i = a(486020);
 let c = e => {
     let {
@@ -37,10 +37,10 @@ let c = e => {
         })
     }
     if (u.type === r.R.NAMEPLATE) {
-        let e = (0, s.WK)(u);
-        return (0, l.jsx)(d.A, {
+        let e = (0, d.WK)(u);
+        return (0, l.jsx)(o.A, {
             nameplate: e,
-            placement: o.u.PREVIEW
+            placement: s.u.PREVIEW
         })
     }
     return null

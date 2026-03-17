@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(954571),
     x = s(440938),
     E = s(652215),
-    C = s(188275),
-    b = s(985018),
+    b = s(188275),
+    C = s(985018),
     A = s(27112);
 let S = {
         pageSection: "marvel-rivals-promotional-banner"
@@ -36,12 +36,12 @@ let S = {
             analyticsLocations: j
         } = (0, d.Ay)(), k = r.useRef(null), T = r.useRef(!1), O = r.useRef(null);
         r.useEffect(() => {
-            for (let e of s)(0, u.qf)(C.Kf, e)
+            for (let e of s)(0, u.qf)(b.Kf, e)
         }, [s]);
         let N = r.useMemo(() => {
                 let e = a()(),
                     t = Math.max(a()(l).diff(e, "days"), 1);
-                return b.intl.formatToPlainString(b.t.BXpdIg, {
+                return C.intl.formatToPlainString(C.t.BXpdIg, {
                     days: t
                 })
             }, [l]),
@@ -60,19 +60,19 @@ let S = {
             }, [L?.sessionId, L?.pageCategory, L?.pageSection, v]),
             R = r.useCallback(() => {
                 (0, g.X)({
-                    guildId: C.Kf
+                    guildId: b.Kf
                 })
             }, []),
             B = r.useCallback(() => {
                 y("go_to_game_shop"), (0, g.default)({
-                    guildId: C.Kf
+                    guildId: b.Kf
                 })
             }, [y]),
             M = r.useCallback(e => {
                 y("card_click", e), (0, m.R)({
                     skuId: e,
-                    applicationId: C.XR,
-                    guildId: C.Kf,
+                    applicationId: b.XR,
+                    guildId: b.Kf,
                     isStorefront: !1,
                     analyticsLocations: j
                 })
@@ -115,7 +115,7 @@ let S = {
                             className: A.qw,
                             children: (0, n.jsx)(i.Exy, {
                                 type: {
-                                    text: `${b.intl.string(b.t.yYEZGi)} (${N})`
+                                    text: `${C.intl.string(C.t.yYEZGi)} (${N})`
                                 },
                                 variant: "brand"
                             })
@@ -124,12 +124,12 @@ let S = {
                             children: [(0, n.jsx)(i.DZT, {
                                 variant: "heading-xl/semibold",
                                 color: "always-white",
-                                children: b.intl.string(b.t["z/QEIP"])
+                                children: C.intl.string(C.t["z/QEIP"])
                             }), (0, n.jsx)(i.$nd, {
                                 variant: "overlay-primary",
                                 icon: i.I9m,
                                 iconPosition: "end",
-                                text: b.intl.string(b.t["kq/75v"]),
+                                text: C.intl.string(C.t["kq/75v"]),
                                 onMouseDown: R,
                                 onClick: B
                             })]
@@ -140,8 +140,8 @@ let S = {
                             className: A.$2,
                             children: s.map((e, t) => (0, n.jsx)(h.A, {
                                 skuId: e,
-                                applicationId: C.XR,
-                                guildId: C.Kf,
+                                applicationId: b.XR,
+                                guildId: b.Kf,
                                 positionInSection: t,
                                 onClick: () => M(e)
                             }, e))

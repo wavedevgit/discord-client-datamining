@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(993408),
     x = s(212407),
     E = s(521e3),
-    C = s(938191),
-    b = s(815280),
+    b = s(938191),
+    C = s(815280),
     A = s(60140),
     S = s(758836),
     v = s(652215),
@@ -46,7 +46,7 @@ let j = {
             onVisibilityChange: O
         } = e, N = (0, i.K)(e => {
             O?.(e)
-        }, .1, null != O), y = r.useRef(null), R = (0, C.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
+        }, .1, null != O), y = r.useRef(null), R = (0, b.yB)("HeroBlock"), B = (0, d.bG)([m.default], () => m.default.getCurrentUser()), M = (0, p.uM)(), P = r.useMemo(() => null != k ? k : null == l ? j : {
             rankedSkuIds: l.heroRanking ?? [],
             name: l.name,
             unpublishedAt: l.unpublishedAt,
@@ -102,7 +102,7 @@ let j = {
                 style: null != K ? {
                     background: K
                 } : void 0,
-                children: null != F && (0, n.jsx)(b.A, {
+                children: null != F && (0, n.jsx)(C.A, {
                     bannerStatic: F,
                     bannerAnimated: G,
                     bannerRive: U,

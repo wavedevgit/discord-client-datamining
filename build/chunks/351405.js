@@ -71,17 +71,17 @@ function S(e) {
         }
     }, [g, a, N]), L = (0, r.bG)([_.A, h.A], () => _.A.getApplicationActivity(y.id) ?? h.A.getApplicationActivity(y.id, !0), [y.id]), R = (0, r.yK)([u.A], () => null == j || null == j.party ? [] : Array.from(u.A.getParty(j.party.id) ?? []), [j]), {
         partySize: P,
-        maxPartySize: D
-    } = (0, x._)(j), M = l.useMemo(() => R.map(e => {
+        maxPartySize: M
+    } = (0, x._)(j), D = l.useMemo(() => R.map(e => {
         let t = p.default.getUser(e);
         return null != t ? t : f.mt
     }), [R]), w = l.useMemo(() => (0, i.jsx)(T, {
-        partyMembers: M,
+        partyMembers: D,
         partySize: P,
-        maxPartySize: D,
+        maxPartySize: M,
         guildId: a.guild_id,
         activityActionType: g.activity?.type
-    }), [M, P, D, a.guild_id, g.activity?.type]);
+    }), [D, P, M, a.guild_id, g.activity?.type]);
     return (0, v.pH)(j?.party?.id) || y.id === d.HT.id ? (0, i.jsx)(I.A, {
         application: y,
         currentUserPresenceActivity: L,

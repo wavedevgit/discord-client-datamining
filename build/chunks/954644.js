@@ -1,19 +1,19 @@
 /** chunk id: 954644 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => s
 });
-var r = t(627968),
-    n = t(64700),
-    o = t(674658),
-    i = t(751304),
-    a = t(561769);
+var r = l(627968),
+    n = l(64700),
+    i = l(674658),
+    o = l(751304),
+    a = l(561769);
 let s = e => {
     let {
-        skuId: l,
-        aspectRatio: t
+        skuId: t,
+        aspectRatio: l
     } = e, {
         product: s
-    } = (0, o.q)(l, !0), d = n.useContext(a.v3);
+    } = (0, i.q)(t, !0), d = n.useContext(a.v3);
     if (null == s) return null;
     let {
         flattenProductVariants: c,
@@ -24,9 +24,9 @@ let s = e => {
             flattenProductVariants: c ?? !0,
             ...u
         },
-        children: (0, r.jsx)(i.A, {
-            skuId: l,
-            aspectRatio: t
+        children: (0, r.jsx)(o.A, {
+            skuId: t,
+            aspectRatio: l
         })
     })
 }

@@ -6,9 +6,9 @@ var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(261225),
-    o = a(673277),
-    s = a(458306),
-    d = a(753825);
+    s = a(673277),
+    d = a(458306),
+    o = a(753825);
 let i = {
     name: "FeaturedProduct",
     id: "featured-product",
@@ -26,43 +26,43 @@ let i = {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "PLACEHOLDER"
-            }), (0, l.jsx)(o.A, {
-                children: (0, l.jsx)(d.A, {
+            }), (0, l.jsx)(s.A, {
+                children: (0, l.jsx)(o.A, {
                     ...i
                 })
-            }), (0, l.jsxs)(o.A, {
+            }), (0, l.jsxs)(s.A, {
                 children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Grid (3):"
                 }), (0, l.jsxs)(n.A, {
                     columns: 3,
-                    children: [(0, l.jsx)(d.A, {
+                    children: [(0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
                     })]
                 })]
-            }), (0, l.jsxs)(o.A, {
+            }), (0, l.jsxs)(s.A, {
                 children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, l.jsxs)(s.Kp, {
+                }), (0, l.jsxs)(d.Kp, {
                     direction: "horizontal",
-                    children: [(0, l.jsx)(d.A, {
+                    children: [(0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         ...i
                     })]
                 })]

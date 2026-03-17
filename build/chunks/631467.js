@@ -1,11 +1,11 @@
 /** chunk id: 631467 params = (module,exports,require) **/
-t.d(l, {
-    A: () => i
+l.d(t, {
+    A: () => o
 });
-var r = t(749394),
-    n = t(719986),
-    o = t(507832);
-class i {
+var r = l(749394),
+    n = l(719986),
+    i = l(507832);
+class o {
     id;
     applicationId;
     name;
@@ -54,8 +54,8 @@ class i {
     static fromServer(e) {
         let {
             collection: {
-                application_id: l,
-                created_at: t,
+                application_id: t,
+                created_at: l,
                 updated_at: a,
                 unpublished_at: s,
                 unpublish_settings: d,
@@ -64,11 +64,11 @@ class i {
             },
             products: h
         } = e;
-        return new i({
+        return new o({
             ...u,
-            applicationId: l,
-            products: h.map(e => o.A.fromServer(e)),
-            createdAt: new Date(t),
+            applicationId: t,
+            products: h.map(e => i.A.fromServer(e)),
+            createdAt: new Date(l),
             updatedAt: new Date(a),
             unpublishedAt: null != s ? new Date(s) : void 0,
             willUnpublishAt: d?.will_unpublish_at != null ? new Date(d.will_unpublish_at) : void 0,

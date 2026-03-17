@@ -34,16 +34,16 @@ function T(e) {
             message: R,
             currentUserId: P
         } = e,
-        D = P === R.author.id,
+        M = P === R.author.id,
         {
-            channel: M,
+            channel: D,
             approximate_member_count: w,
             approximate_presence_count: O
         } = L,
         k = L.state === E.elq.ACCEPTING,
-        U = null != M ? (0, A.OY)(M) : null,
-        G = null != j,
-        B = null != U,
+        U = null != D ? (0, A.OY)(D) : null,
+        B = null != j,
+        G = null != U,
         F = null != U && U.isGuildStageVoice(),
         H = (0, a.Lt)(L.flags ?? 0, r.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
@@ -61,20 +61,20 @@ function T(e) {
         }, [q, Y]),
         $ = l.useCallback(() => {
             let e = "noop";
-            G ? (y(), e = "transition") : (N(), e = "accept"), (0, c.he)({
+            B ? (y(), e = "transition") : (N(), e = "accept"), (0, c.he)({
                 invite: L,
                 action: e,
                 inviter_id: R.author.id,
                 invite_message_id: R.id
             }, Y)
-        }, [L, R, Y, G, y, N]);
+        }, [L, R, Y, B, y, N]);
     if (null == j) {
         if (null == L.guild) return (0, i.jsx)(I.A, {});
         (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? E.TVA.NONE
     }
     let ee = (0, C.l)({
         isVoiceChannel: V,
-        isOwnInvite: D,
+        isOwnInvite: M,
         isGuest: H,
         isHubGuild: W,
         isStage: F,
@@ -124,7 +124,7 @@ function T(e) {
     })) : null != w && w >= 5 || null != O && O > 0 ? t = (0, i.jsx)(g.A.Data, {
         members: w,
         membersOnline: O
-    }) : B && (t = (0, i.jsx)(g.A.Channel, {
+    }) : G && (t = (0, i.jsx)(g.A.Channel, {
         channel: U,
         guild: j
     })), (0, i.jsxs)(g.A, {
@@ -151,7 +151,7 @@ function T(e) {
                     variant: "active",
                     fullWidth: V,
                     disabled: !X,
-                    text: V ? F ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : G ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
+                    text: V ? F ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : B ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
                 })
             })]
         }), j.features.has(E.GuildFeatures.HUB) && (0, i.jsxs)(i.Fragment, {

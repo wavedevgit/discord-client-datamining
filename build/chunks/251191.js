@@ -1,7 +1,7 @@
 /** chunk id: 251191 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => b
+    A: () => C
 });
 var n = s(627968),
     r = s(64700),
@@ -20,17 +20,17 @@ var n = s(627968),
     f = s(561769),
     x = s(758836),
     E = s(985018),
-    C = s(201073);
-let b = e => {
+    b = s(201073);
+let C = e => {
     let {
         shelf: t,
         handleTransition: s,
         tab: l
-    } = e, b = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, i.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, m.A)(), I = r.useMemo(() => v(t.rankedSkuIds), [t.rankedSkuIds, v]), L = (0, h.X)(I);
-    return null == b ? null : (0, n.jsxs)("div", {
-        className: a()(C.Vp, C.YB),
+    } = e, C = (0, i.bG)([d.default], () => d.default.getCurrentUser()), A = (0, g.W)("ShelfBlock"), S = (0, i.bG)([_.A], () => _.A.getCategory(t.categorySkuId)), v = (0, m.A)(), I = r.useMemo(() => v(t.rankedSkuIds), [t.rankedSkuIds, v]), L = (0, h.X)(I);
+    return null == C ? null : (0, n.jsxs)("div", {
+        className: a()(b.Vp, b.YB),
         children: [(0, n.jsxs)("div", {
-            className: C.$6,
+            className: b.$6,
             children: [(0, n.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 children: t.name

@@ -2,11 +2,11 @@
 n.d(t, {
     A: () => o
 });
-var l = n(311907),
-    s = n(73153),
+var s = n(311907),
+    l = n(73153),
     a = n(868068);
 let i = "None";
-class r extends l.Ay.Store {
+class r extends s.Ay.Store {
     static displayName = "ContentInventoryDevToolsStore";
     getFakeGameToShow() {
         return i
@@ -15,7 +15,7 @@ class r extends l.Ay.Store {
         return a.O[i]
     }
 }
-let o = new r(s.h, {
+let o = new r(l.h, {
     CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
         let {
             gameToShow: t

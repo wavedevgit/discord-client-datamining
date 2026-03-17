@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(212602),
     x = s(662166),
     E = s(919610),
-    C = s(685533),
-    b = s(773591),
+    b = s(685533),
+    C = s(773591),
     A = s(758836),
     S = s(652215),
     v = s(985018),
@@ -45,7 +45,7 @@ function L(e) {
             setCategoryRef: f,
             handleScrollToCategory: E
         } = (0, p.k0)(_.current),
-        [C, b] = r.useState(a),
+        [b, C] = r.useState(a),
         [A, v] = r.useState(!1);
     return r.useEffect(() => {
         null != l && E(l)
@@ -75,17 +75,17 @@ function L(e) {
                     })
                 }) : (0, n.jsx)(j, {
                     isSmallScreen: A,
-                    filterBarOpen: C,
-                    setFilterBarOpen: b,
+                    filterBarOpen: b,
+                    setFilterBarOpen: C,
                     tab: t,
                     scrollerRef: _,
                     categories: s,
                     setCategoryRef: f,
                     initialCategoryId: l
                 })
-            }), C && !A && (0, n.jsx)("div", {
+            }), b && !A && (0, n.jsx)("div", {
                 className: I.yF
-            }), C && !A && (0, n.jsx)(i.HOs, {
+            }), b && !A && (0, n.jsx)(i.HOs, {
                 className: I.kT,
                 children: (0, n.jsx)(x.A, {})
             })]
@@ -179,7 +179,7 @@ let j = e => {
                         children: (0, n.jsx)(x.A, {})
                     })
                 })]
-            }), k ? (0, A.dF)(o) ? (0, n.jsx)(b.A, {
+            }), k ? (0, A.dF)(o) ? (0, n.jsx)(C.A, {
                 scrollerRef: c,
                 tab: o
             }, o) : (0, n.jsx)(_.R9, {
@@ -193,7 +193,7 @@ let j = e => {
                     handlePageChange: y,
                     initialCategoryId: L
                 })
-            }) : (0, n.jsx)(C.A, {
+            }) : (0, n.jsx)(b.A, {
                 scrollerRef: c,
                 tab: o
             }, o)]

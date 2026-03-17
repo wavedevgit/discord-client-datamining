@@ -1,12 +1,12 @@
 /** chunk id: 580766 params = (module,exports,require) **/
 a.d(t, {
-    r: () => o
+    r: () => s
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(377890);
-let o = {
+let s = {
     name: "Heading",
     id: "cms-heading",
     component: e => (0, l.jsxs)(l.Fragment, {

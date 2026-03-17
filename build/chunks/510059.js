@@ -1,99 +1,99 @@
 /** chunk id: 510059 params = (module,exports,require) **/
-i.d(l, {
+t.d(l, {
     A: () => N
 });
-var n = i(627968);
-i(64700);
-var t = i(503698),
-    s = i.n(t),
-    a = i(311907),
-    r = i(990078),
-    o = i(397927),
-    d = i(573648),
-    c = i(58149),
-    u = i(681819),
-    A = i(370480),
-    m = i(169869),
-    p = i(532197),
-    g = i(773669),
-    x = i(307600),
-    h = i(652215),
-    f = i(783419),
-    I = i(985018),
-    j = i(882119);
+var i = t(627968);
+t(64700);
+var n = t(503698),
+    s = t.n(n),
+    a = t(311907),
+    r = t(990078),
+    o = t(397927),
+    d = t(573648),
+    c = t(58149),
+    u = t(681819),
+    m = t(370480),
+    A = t(169869),
+    p = t(532197),
+    x = t(773669),
+    g = t(307600),
+    h = t(652215),
+    f = t(783419),
+    j = t(985018),
+    I = t(882119);
 
 function v(e) {
     let l, {
-            account: i,
-            locale: t,
+            account: t,
+            locale: n,
             userId: s
         } = e,
-        a = i.metadata ?? {},
-        g = (0, A.An)(a[f.pK.CREATED_AT], t),
-        v = d.A.get((0, u.ML)(i.type));
-    return (0, n.jsxs)("li", {
-        className: j.FI,
-        children: [(0, n.jsx)(r.m, {
+        a = t.metadata ?? {},
+        x = (0, m.An)(a[f.pK.CREATED_AT], n),
+        v = d.A.get((0, u.ML)(t.type));
+    return (0, i.jsxs)("li", {
+        className: I.FI,
+        children: [(0, i.jsx)(r.m, {
             __unsupportedReactNodeAsText: v?.name,
-            children: (0, n.jsx)("div", {
-                className: j.k_,
-                children: (0, n.jsx)("img", {
-                    alt: I.intl.formatToPlainString(I.t.rtm15P, {
+            children: (0, i.jsx)("div", {
+                className: I.k_,
+                children: (0, i.jsx)("img", {
+                    alt: j.intl.formatToPlainString(j.t.rtm15P, {
                         name: v?.name
                     }),
-                    className: j.tV,
+                    className: I.tV,
                     src: v?.icon.lightPNG
                 })
             })
-        }), (0, n.jsxs)("div", {
-            className: j.Hd,
-            children: [(0, n.jsxs)("div", {
-                children: [null == (l = v?.getPlatformUserUrl?.(i)) ? (0, n.jsx)(r.m, {
+        }), (0, i.jsxs)("div", {
+            className: I.Hd,
+            children: [(0, i.jsxs)("div", {
+                children: [null == (l = v?.getPlatformUserUrl?.(t)) ? (0, i.jsx)(r.m, {
                     overflowOnly: !0,
-                    text: i.name,
-                    children: (0, n.jsx)(o.Text, {
+                    text: t.name,
+                    children: (0, i.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        className: j.GW,
-                        children: i.name
+                        className: I.GW,
+                        children: t.name
                     })
-                }) : (0, n.jsx)(o.MzZ, {
+                }) : (0, i.jsx)(o.MzZ, {
                     href: l,
-                    className: j.Y2,
+                    className: I.Y2,
                     useDefaultUnderlineStyles: !1,
-                    "aria-label": v?.name != null ? `${v.name}, ${i.name}, ${I.intl.string(I.t.q5jLJB)}` : `${i.name}, ${I.intl.string(I.t.q5jLJB)}`,
+                    "aria-label": v?.name != null ? `${v.name}, ${t.name}, ${j.intl.string(j.t.q5jLJB)}` : `${t.name}, ${j.intl.string(j.t.q5jLJB)}`,
                     onClick: e => {
                         (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
-                            platform_type: i.type,
+                            platform_type: t.type,
                             other_user_id: s
-                        }), (0, x.h)({
+                        }), (0, g.h)({
                             href: l,
                             trusted: v?.type !== h.fg2.DOMAIN
                         }, e)
                     },
-                    children: (0, n.jsxs)("div", {
-                        className: j.vi,
-                        children: [(0, n.jsx)(r.m, {
+                    children: (0, i.jsxs)("div", {
+                        className: I.vi,
+                        children: [(0, i.jsx)(r.m, {
                             overflowOnly: !0,
-                            text: i.name,
-                            children: (0, n.jsx)(o.Text, {
+                            text: t.name,
+                            children: (0, i.jsx)(o.Text, {
                                 variant: "text-sm/normal",
-                                className: j.GW,
-                                children: i.name
+                                className: I.GW,
+                                children: t.name
                             })
-                        }), (0, n.jsx)(p.A, {
-                            className: j.E4,
+                        }), (0, i.jsx)(p.A, {
+                            className: I.E4,
                             direction: p.A.Directions.RIGHT
                         })]
                     })
-                }), null != g && (0, n.jsx)(o.Text, {
+                }), null != x && (0, i.jsx)(o.Text, {
                     variant: "text-xs/normal",
-                    children: I.intl.format(I.t["9rfonh"], {
-                        date: g
+                    children: j.intl.format(j.t["9rfonh"], {
+                        date: x
                     })
                 })]
-            }), (0, n.jsx)("div", {
-                className: j.yu,
-                children: i.type === h.fg2.REDDIT ? (0, m.xE)(a) : i.type === h.fg2.STEAM ? (0, m.dy)(a) : i.type === h.fg2.BLUESKY || i.type === h.fg2.MASTODON || i.type === h.fg2.TWITTER ? (0, m.ED)(a) : i.type === h.fg2.PAYPAL ? (0, m.gZ)(a) : i.type === h.fg2.EBAY ? (0, m.ub)(a) : i.type === h.fg2.TIKTOK ? (0, m.HU)(a) : null
+            }), (0, i.jsx)("div", {
+                className: I.yu,
+                children: t.type === h.fg2.REDDIT ? (0, A.xE)(a) : t.type === h.fg2.STEAM ? (0, A.dy)(a) : t.type === h.fg2.BLUESKY || t.type === h.fg2.MASTODON || t.type === h.fg2.TWITTER ? (0, A.ED)(a) : t.type === h.fg2.PAYPAL ? (0, A.gZ)(a) : t.type === h.fg2.EBAY ? (0, A.ub)(a) : t.type === h.fg2.TIKTOK ? (0, A.HU)(a) : null
             })]
         })]
     })
@@ -102,14 +102,14 @@ function v(e) {
 function N(e) {
     let {
         connections: l,
-        userId: i,
-        className: t
-    } = e, r = (0, a.bG)([g.default], () => g.default.locale);
-    return 0 === l.length ? null : (0, n.jsx)("ul", {
-        className: s()(j.kL, t),
-        children: l.map(e => (0, n.jsx)(v, {
+        userId: t,
+        className: n
+    } = e, r = (0, a.bG)([x.default], () => x.default.locale);
+    return 0 === l.length ? null : (0, i.jsx)("ul", {
+        className: s()(I.kL, n),
+        children: l.map(e => (0, i.jsx)(v, {
             account: e,
-            userId: i,
+            userId: t,
             locale: r
         }, `${e.type}:${e.id}`))
     })

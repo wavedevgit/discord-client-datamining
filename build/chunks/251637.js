@@ -2,10 +2,10 @@
 n.d(t, {
     A: () => d
 }), n(134528), n(947204);
-var l = n(627968);
+var s = n(627968);
 n(64700);
-var s = n(503698),
-    a = n.n(s),
+var l = n(503698),
+    a = n.n(l),
     i = n(827734),
     r = n(397927),
     o = n(890687),
@@ -15,43 +15,43 @@ let d = function(e) {
     let {
         className: t,
         color: n = i.A.colors.WHITE,
-        quest: s,
+        quest: l,
         isInventory: d
     } = e, m = (0, o.aC)(e.quest), {
         percentComplete: A,
-        completedRatioDisplay: p
-    } = (0, o.O9)(s);
-    return !d && m.length > 0 ? (0, l.jsx)(u.A, {
+        completedRatioDisplay: E
+    } = (0, o.O9)(l);
+    return !d && m.length > 0 ? (0, s.jsx)(u.A, {
         children: m.at(0)
-    }) : (0, l.jsxs)("div", {
+    }) : (0, s.jsxs)("div", {
         className: a()(c.iE, t),
         style: {
             color: n.css
         },
-        children: [(0, l.jsxs)("div", {
+        children: [(0, s.jsxs)("div", {
             className: c.O,
-            children: [(0, l.jsx)(r.Text, {
+            children: [(0, s.jsx)(r.Text, {
                 variant: "text-xs/semibold",
                 className: c.Df,
                 color: "none",
-                children: p
-            }), (0, l.jsx)("div", {
+                children: E
+            }), (0, s.jsx)("div", {
                 className: c.Cj,
                 style: {
                     width: `${100-A}%`
                 }
             })]
-        }), (0, l.jsx)("div", {
+        }), (0, s.jsx)("div", {
             className: c.hr,
             role: "progressbar",
             "aria-valuenow": A,
-            children: (0, l.jsx)("div", {
+            children: (0, s.jsx)("div", {
                 className: c.SX,
                 style: {
                     width: `${A}%`
                 }
             })
-        }), m.length > 0 && (0, l.jsx)(u.A, {
+        }), m.length > 0 && (0, s.jsx)(u.A, {
             isInventory: d,
             children: m.at(0)
         })]

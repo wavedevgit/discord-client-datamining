@@ -5,9 +5,9 @@ a.d(t, {
 var l = a(627968),
     r = a(397927),
     n = a(18769),
-    o = a(954644),
-    s = a(261225),
-    d = a(673277),
+    s = a(954644),
+    d = a(261225),
+    o = a(673277),
     i = a(700263);
 let c = {
     name: "Skeleton",
@@ -22,7 +22,7 @@ let c = {
         }), (0, l.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Skeleton always puts a border radius on the shimmer. It might not match the child's radius."
-        }), (0, l.jsxs)(d.A, {
+        }), (0, l.jsxs)(o.A, {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 children: "Basic rectangular skeleton"
@@ -38,19 +38,19 @@ let c = {
         }), (0, l.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with three Skeleton children that are wrapping three ShopProductCard to simulate a shop loading state"
-        }), (0, l.jsx)(d.A, {
-            children: (0, l.jsxs)(s.A, {
+        }), (0, l.jsx)(o.A, {
+            children: (0, l.jsxs)(d.A, {
                 columns: 3,
                 children: [(0, l.jsx)(i.A, {
-                    children: (0, l.jsx)(o.A, {
+                    children: (0, l.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
                 }), (0, l.jsx)(i.A, {
-                    children: (0, l.jsx)(o.A, {
+                    children: (0, l.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
                 }), (0, l.jsx)(i.A, {
-                    children: (0, l.jsx)(o.A, {
+                    children: (0, l.jsx)(s.A, {
                         skuId: "1458472704192811088"
                     })
                 })]
@@ -58,8 +58,8 @@ let c = {
         }), (0, l.jsx)(r.Text, {
             variant: "text-lg/normal",
             children: "Here we have a Grid with two Skeleton children that are wrapping two FeaturedCollection to simulate a shop loading state"
-        }), (0, l.jsx)(d.A, {
-            children: (0, l.jsxs)(s.A, {
+        }), (0, l.jsx)(o.A, {
+            children: (0, l.jsxs)(d.A, {
                 columns: 2,
                 children: [(0, l.jsx)(i.A, {
                     children: (0, l.jsx)(n.A, {

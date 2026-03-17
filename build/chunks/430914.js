@@ -7,8 +7,8 @@ var i = n(311907),
     l = n(600975),
     a = n(428835),
     r = n(961350),
-    o = n(994500),
-    d = n(652215);
+    d = n(994500),
+    o = n(652215);
 let _ = (0, l.C)({
     kind: "user",
     id: "2025-11_invite_friend_members",
@@ -34,12 +34,12 @@ let _ = (0, l.C)({
     }]
 });
 
-function s(e) {
+function u(e) {
     if (null == e) return !1;
     let t = e.features;
-    return Array.isArray(t) ? !t.includes(d.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(d.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+    return Array.isArray(t) ? !t.includes(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) : !(t instanceof Set) || !t.has(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
 }
-let u = {
+let s = {
     showFriendsInServer: !1,
     showInviter: !1
 };
@@ -48,17 +48,17 @@ function c(e) {
     let {
         guild: t,
         ...n
-    } = e, l = (0, i.bG)([r.default], () => r.default.isAuthenticated()), d = (0, i.bG)([o.A], () => o.A.getFriendCount() > 0), c = s(t), f = l && d && c, g = (0, a.Dr)(_, {
+    } = e, l = (0, i.bG)([r.default], () => r.default.isAuthenticated()), o = (0, i.bG)([d.A], () => d.A.getFriendCount() > 0), c = u(t), f = l && o && c, g = (0, a.Dr)(_, {
         ...n,
         disable: !f
     });
-    return f ? g : u
+    return f ? g : s
 }
 
 function f(e) {
     let {
         guild: t,
         ...n
-    } = e, i = r.default.isAuthenticated(), l = o.A.getFriendCount() > 0;
-    return i && l && s(t) ? (0, a.Kd)(_, n) : u
+    } = e, i = r.default.isAuthenticated(), l = d.A.getFriendCount() > 0;
+    return i && l && u(t) ? (0, a.Kd)(_, n) : s
 }

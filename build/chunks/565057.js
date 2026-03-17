@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(440938),
     x = s(590180),
     E = s(940980),
-    C = s(751304),
-    b = s(561769),
+    b = s(751304),
+    C = s(561769),
     A = s(484469),
     S = s(917987),
     v = s(4196),
@@ -156,9 +156,9 @@ let O = e => {
                     },
                     children: (0, n.jsx)("div", {
                         className: s,
-                        children: (0, n.jsx)(C.A, {
+                        children: (0, n.jsx)(b.A, {
                             skuId: e.skuId,
-                            prioritizedCurrency: y === L.G2.ORBS ? b.Hi.ORBS : D ? b.Hi.FIAT : void 0
+                            prioritizedCurrency: y === L.G2.ORBS ? C.Hi.ORBS : D ? C.Hi.FIAT : void 0
                         })
                     })
                 }, e.skuId)

@@ -1,27 +1,27 @@
 /** chunk id: 460760 params = (module,exports,require) **/
 i.d(t, {
     GX: () => u,
-    MA: () => g,
+    MA: () => _,
     Mu: () => d,
-    Oh: () => E,
-    Ok: () => _,
-    Tz: () => j,
+    Oh: () => A,
+    Ok: () => g,
+    Tz: () => E,
     ZH: () => m,
-    ax: () => o,
-    mo: () => c,
-    nA: () => p,
+    ax: () => c,
+    mo: () => o,
+    nA: () => j,
     r8: () => x,
-    uh: () => A,
+    uh: () => p,
     xN: () => h
 });
 var l = i(562465),
     n = i(73153),
-    s = i(773669),
-    a = i(997590),
+    a = i(773669),
+    s = i(997590),
     r = i(652215);
 async function d() {
-    let e = s.default.locale;
-    if (e === a.A.getFetchedLocale()) return;
+    let e = a.default.locale;
+    if (e === s.A.getFetchedLocale()) return;
     let t = await l.Bo.get({
         url: r.Rsh.GUILD_DISCOVERY_CATEGORIES,
         query: {
@@ -37,16 +37,16 @@ async function d() {
         locale: e
     })
 }
-async function c(e) {
+async function o(e) {
     try {
         let {
             primary_category_id: t,
             category_ids: i,
-            keywords: s,
-            emoji_discoverability_enabled: a,
+            keywords: a,
+            emoji_discoverability_enabled: s,
             partner_actioned_timestamp: d,
-            partner_application_timestamp: c,
-            is_published: o,
+            partner_application_timestamp: o,
+            is_published: c,
             reasons_to_join: u,
             social_links: m,
             about: x
@@ -54,14 +54,14 @@ async function c(e) {
             url: r.Rsh.GUILD_DISCOVERY_METADATA(e),
             oldFormErrors: !0,
             rejectWithError: !0
-        })).body, _ = {
+        })).body, g = {
             primaryCategoryId: t,
             secondaryCategoryIds: i,
-            keywords: s,
-            emojiDiscoverabilityEnabled: a,
+            keywords: a,
+            emojiDiscoverabilityEnabled: s,
             partnerActionedTimestamp: d,
-            partnerApplicationTimestamp: c,
-            isPublished: o,
+            partnerApplicationTimestamp: o,
+            isPublished: c,
             reasonsToJoin: u,
             socialLinks: m,
             about: x
@@ -69,15 +69,15 @@ async function c(e) {
         return n.h.dispatch({
             type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER",
             guildId: e,
-            metadata: _
-        }), _
+            metadata: g
+        }), g
     } catch (e) {
         n.h.dispatch({
             type: "GUILD_DISCOVERY_METADATA_FETCH_FAIL"
         })
     }
 }
-async function o(e) {
+async function c(e) {
     try {
         let t = (await l.Bo.get({
             url: r.Rsh.GUILD_DISCOVERY_SLUG(e),
@@ -119,7 +119,7 @@ function x(e, t) {
     })
 }
 
-function _(e, t) {
+function g(e, t) {
     n.h.dispatch({
         type: "GUILD_UPDATE_DISCOVERY_METADATA",
         guildId: e,
@@ -135,7 +135,7 @@ function h(e, t) {
     })
 }
 
-function g(e, t) {
+function _(e, t) {
     n.h.dispatch({
         type: "GUILD_UPDATE_DISCOVERY_METADATA",
         guildId: e,
@@ -143,22 +143,22 @@ function g(e, t) {
     })
 }
 
-function A(e, t) {
+function p(e, t) {
     n.h.dispatch({
         type: "GUILD_UPDATE_DISCOVERY_METADATA",
         guildId: e,
         socialLinks: t
     })
 }
-async function E(e) {
+async function A(e) {
     let {
         guildId: t,
         primaryCategoryId: i,
-        keywords: s,
-        emojiDiscoverabilityEnabled: a,
+        keywords: a,
+        emojiDiscoverabilityEnabled: s,
         partnerActionedTimestamp: d,
-        partnerApplicationTimestamp: c,
-        isPublished: o,
+        partnerApplicationTimestamp: o,
+        isPublished: c,
         reasonsToJoin: u,
         socialLinks: m,
         about: x
@@ -166,24 +166,24 @@ async function E(e) {
     try {
         let {
             primary_category_id: e,
-            category_ids: _,
+            category_ids: g,
             keywords: h,
-            emoji_discoverability_enabled: g,
-            partner_actioned_timestamp: A,
-            partner_application_timestamp: E,
-            is_published: p,
-            reasons_to_join: j,
-            social_links: I,
-            about: v
+            emoji_discoverability_enabled: _,
+            partner_actioned_timestamp: p,
+            partner_application_timestamp: A,
+            is_published: j,
+            reasons_to_join: E,
+            social_links: v,
+            about: I
         } = (await l.Bo.patch({
             url: r.Rsh.GUILD_DISCOVERY_METADATA(t),
             body: {
                 primary_category_id: i,
-                emoji_discoverability_enabled: a,
+                emoji_discoverability_enabled: s,
                 partner_actioned_timestamp: d,
-                partner_application_timestamp: c,
-                keywords: s,
-                is_published: o,
+                partner_application_timestamp: o,
+                keywords: a,
+                is_published: c,
                 reasons_to_join: u,
                 social_links: m,
                 about: x
@@ -196,15 +196,15 @@ async function E(e) {
             guildId: t,
             metadata: {
                 primaryCategoryId: e,
-                secondaryCategoryIds: _,
+                secondaryCategoryIds: g,
                 keywords: h,
-                emojiDiscoverabilityEnabled: g,
-                partnerActionedTimestamp: A,
-                partnerApplicationTimestamp: E,
-                isPublished: p,
-                reasonsToJoin: j,
-                socialLinks: I,
-                about: v
+                emojiDiscoverabilityEnabled: _,
+                partnerActionedTimestamp: p,
+                partnerApplicationTimestamp: A,
+                isPublished: j,
+                reasonsToJoin: E,
+                socialLinks: v,
+                about: I
             }
         })
     } catch (e) {
@@ -216,7 +216,7 @@ async function E(e) {
     }
 }
 
-function p(e, t) {
+function j(e, t) {
     l.Bo.put({
         url: r.Rsh.GUILD_DISCOVERY_UPDATE_CATEGORY(e, t),
         oldFormErrors: !0,
@@ -236,7 +236,7 @@ function p(e, t) {
     })
 }
 
-function j(e, t) {
+function E(e, t) {
     l.Bo.del({
         url: r.Rsh.GUILD_DISCOVERY_UPDATE_CATEGORY(e, t),
         oldFormErrors: !0,

@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(168428),
     R = n(652215),
     P = n(768349),
-    D = n(172799),
-    M = n(985018),
+    M = n(172799),
+    D = n(985018),
     w = n(320160);
 
 function O(e) {
@@ -50,7 +50,7 @@ function O(e) {
             variant: "text-xs/normal",
             className: w.U9,
             color: l,
-            children: M.intl.format(M.t["LC+S+m"], {
+            children: D.intl.format(D.t["LC+S+m"], {
                 membersOnline: n
             })
         })]
@@ -62,7 +62,7 @@ function O(e) {
             variant: "text-xs/normal",
             className: w.U9,
             color: l,
-            children: M.intl.format(M.t.zRl6XR, {
+            children: D.intl.format(D.t.zRl6XR, {
                 count: t
             })
         })]
@@ -93,7 +93,7 @@ function k(e) {
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-xs/normal",
                     color: r,
-                    children: M.intl.format(M.t["dc+LW4"], {
+                    children: D.intl.format(D.t["dc+LW4"], {
                         channelName: t.name,
                         serverName: n.name
                     })
@@ -109,7 +109,7 @@ function k(e) {
             children: (0, i.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: r,
-                children: M.intl.format(M.t.u0vaDE, {
+                children: D.intl.format(D.t.u0vaDE, {
                     guildName: n.name
                 })
             })
@@ -129,7 +129,7 @@ function U(e) {
             target_type: g,
             target_application: A
         } = r;
-    o()(g === D.yV.EMBEDDED_APPLICATION && null != A, "invalid application invite");
+    o()(g === M.yV.EMBEDDED_APPLICATION && null != A, "invalid application invite");
     let x = l.useCallback(() => {
             y.default.track(R.HAw.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
                 application_id: A.id,
@@ -152,7 +152,7 @@ function U(e) {
         } = (0, p.Ay)(h.A.INVITE_EMBED),
         k = (0, d.yK)([m.Ay], () => null != P ? m.Ay.getEmbeddedActivitiesForChannel(P.id).filter(e => e.applicationId === A.id).flatMap(e => Array.from(e.userIds)) : [], [P, A.id]),
         U = (0, d.yK)([S.default], () => k.map(e => S.default.getUser(e)).filter(e => null != e), [k]),
-        B = l.useCallback(() => {
+        G = l.useCallback(() => {
             (0, _.he)({
                 invite: r,
                 action: "accept",
@@ -170,11 +170,11 @@ function U(e) {
         if (null == r.guild) return (0, i.jsx)(L.A, {});
         f = (0, j.DY)(r.guild)
     }
-    t = H ? E ? M.intl.string(M.t.DPfdsq) : N ? M.intl.string(M.t.sqe0hj) : M.intl.string(M.t.RscU7I) : M.intl.string(M.t["2BP08E"]);
+    t = H ? E ? D.intl.string(D.t.DPfdsq) : N ? D.intl.string(D.t.sqe0hj) : D.intl.string(D.t.RscU7I) : D.intl.string(D.t["2BP08E"]);
     let V = H && !w || H && E;
-    return (w || (n = M.intl.string(M.t.hHGrWz)), null == r.code || "" === r.code || null == C) ? null : (0, i.jsx)(p.f5, {
+    return (w || (n = D.intl.string(D.t.hHGrWz)), null == r.code || "" === r.code || null == C) ? null : (0, i.jsx)(p.f5, {
         value: O,
-        children: (0, i.jsx)(G, {
+        children: (0, i.jsx)(B, {
             app: C,
             activityUsers: U,
             isMember: H,
@@ -188,13 +188,13 @@ function U(e) {
             buttonLabel: t,
             disabled: V,
             disabledReason: n,
-            handleAcceptInvite: B,
+            handleAcceptInvite: G,
             onView: x
         })
     })
 }
 
-function G(e) {
+function B(e) {
     let {
         app: t,
         activityUsers: n,
@@ -228,7 +228,7 @@ function G(e) {
     }], [m, r, _, h, p, I]);
     return (0, i.jsx)(g.h, {
         header: t.name,
-        title: M.intl.string(M.t["7vb6nw"]),
+        title: D.intl.string(D.t["7vb6nw"]),
         iconSrc: T,
         ...y,
         onClickBanner: S,
@@ -242,7 +242,7 @@ function G(e) {
             }), r ? j > 0 && (0, i.jsx)(A.$, {
                 activityUsers: n,
                 guildId: s.id,
-                activityText: M.intl.formatToPlainString(M.t.yJj035, {
+                activityText: D.intl.formatToPlainString(D.t.yJj035, {
                     count: j
                 })
             }) : (0, i.jsx)(O, {

@@ -1,46 +1,51 @@
 /** chunk id: 18769 params = (module,exports,require) **/
-t.d(l, {
-    A: () => s
+l.d(t, {
+    A: () => d
 });
-var r = t(627968),
-    n = t(506456),
-    o = t(653793),
-    i = t(458306),
-    a = t(524025);
-let s = e => {
+var r = l(627968),
+    n = l(427941),
+    i = l(653793),
+    o = l(458306),
+    a = l(190503),
+    s = l(524025);
+let d = e => {
     let {
-        backgroundImage: l,
-        logoSrc: t,
-        supplementalImage: s,
-        href: d,
-        ctaText: c
-    } = e, u = (0, n.A)(l.src), h = (0, n.A)(t?.src), m = (0, n.A)(s?.src);
+        backgroundImage: t,
+        logoSrc: l,
+        supplementalImage: d,
+        href: c,
+        ctaText: u
+    } = e;
     return (0, r.jsxs)("div", {
-        className: a.rJ,
-        children: [(0, r.jsx)(o.A, {
+        className: s.rJ,
+        children: [(0, r.jsx)(i.A, {
             overflowable: !0,
-            children: (0, r.jsx)("div", {
-                className: a.rf,
-                style: {
-                    backgroundImage: `url(${u})`
-                },
-                children: (0, r.jsxs)("div", {
-                    className: a.kb,
-                    children: [(0, r.jsx)("div", {}), (0, r.jsx)("img", {
-                        className: a.wm,
-                        src: h,
-                        alt: t?.alt ?? ""
-                    }), null != c && (0, r.jsx)(i.ar, {
-                        ctaText: c,
-                        variant: "overlay-primary",
-                        href: d
-                    })]
+            children: (0, r.jsx)(n.A, {
+                backgroundImage: t,
+                backgroundPosition: "left",
+                padding: 24,
+                children: (0, r.jsx)("div", {
+                    className: s.rf,
+                    children: (0, r.jsxs)("div", {
+                        className: s.kb,
+                        children: [(0, r.jsx)("div", {}), null != l && (0, r.jsx)("div", {
+                            className: s.wm,
+                            children: (0, r.jsx)(a.A, {
+                                src: l
+                            })
+                        }), null != u && (0, r.jsx)(o.ar, {
+                            ctaText: u,
+                            variant: "overlay-primary",
+                            href: c
+                        })]
+                    })
                 })
             })
-        }), null != m && (0, r.jsx)("img", {
-            className: a.hP,
-            src: m,
-            alt: s?.alt ?? ""
+        }), null != d && (0, r.jsx)("div", {
+            className: s.hP,
+            children: (0, r.jsx)(a.A, {
+                src: d
+            })
         })]
     })
 }

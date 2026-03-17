@@ -1,8 +1,8 @@
 /** chunk id: 209581 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => s
 });
-let l = (0, n(945810).mj)({
+let s = (0, n(945810).mj)({
     kind: "user",
     name: "2026-02-channel-wave-button",
     defaultConfig: {

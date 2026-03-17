@@ -1,65 +1,65 @@
 /** chunk id: 722868 params = (module,exports,require) **/
-i.d(l, {
+t.d(l, {
     A: () => u
 });
-var n = i(627968),
-    t = i(397927),
-    s = i(688810),
-    a = i(562153),
-    r = i(183555),
-    o = i(657331),
-    d = i(950191),
-    c = i(985018);
+var i = t(627968),
+    n = t(397927),
+    s = t(688810),
+    a = t(562153),
+    r = t(183555),
+    o = t(657331),
+    d = t(950191),
+    c = t(985018);
 
 function u(e) {
     let {
         user: l,
-        guildId: i,
+        guildId: t,
         channelId: u,
-        displayProfile: A,
-        onClose: m,
+        displayProfile: m,
+        onClose: A,
         onChangeGuildId: p
     } = e, {
-        analyticsLocations: g,
-        sourceAnalyticsLocations: x
+        analyticsLocations: x,
+        sourceAnalyticsLocations: g
     } = (0, s.Ay)(), {
         context: h,
         trackUserProfileAction: f
-    } = (0, r.NJ)(), I = (0, d.Ay)(l.id, i);
-    return I?.guildId == null ? null : A?.guildId == null || A?.private ? A?.guildId != null ? null : (0, n.jsx)(t.Drp, {
+    } = (0, r.NJ)(), j = (0, d.Ay)(l.id, t);
+    return j?.guildId == null ? null : m?.guildId == null || m?.private ? m?.guildId != null ? null : (0, i.jsx)(n.Drp, {
         id: "view-server-profile",
         label: c.intl.string(c.t.DisZzB),
         subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
-            displayName: a.Ay.getName(i, u, l)
+            displayName: a.Ay.getName(t, u, l)
         }),
         action: () => {
-            null != p ? p(i ?? null) : (m?.(), (0, o.openUserProfileModal)({
+            null != p ? p(t ?? null) : (A?.(), (0, o.openUserProfileModal)({
                 userId: l.id,
                 ...h,
-                guildId: i,
-                sourceAnalyticsLocations: x
+                guildId: t,
+                sourceAnalyticsLocations: g
             })), f({
                 action: "PRESS_VIEW_SERVER_PROFILE",
-                analyticsLocations: g,
+                analyticsLocations: x,
                 ...h
             })
         }
-    }) : (0, n.jsx)(t.Drp, {
+    }) : (0, i.jsx)(n.Drp, {
         id: "view-main-profile",
         label: c.intl.string(c.t.GISTta),
         subtext: c.intl.formatToPlainString(c.t["mn/nW2"], {
             displayName: a.Ay.getName(void 0, void 0, l)
         }),
         action: () => {
-            null != p ? p(null) : (m?.(), (0, o.openUserProfileModal)({
+            null != p ? p(null) : (A?.(), (0, o.openUserProfileModal)({
                 userId: l.id,
                 ...h,
                 guildId: void 0,
-                originGuildId: i,
-                sourceAnalyticsLocations: x
+                originGuildId: t,
+                sourceAnalyticsLocations: g
             })), f({
                 action: "PRESS_VIEW_MAIN_PROFILE",
-                analyticsLocations: g,
+                analyticsLocations: x,
                 ...h
             })
         }

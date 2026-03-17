@@ -19,18 +19,18 @@ var i = n(627968),
     g = n(147192),
     _ = n(480870),
     m = n(264140),
-    E = n(387462),
-    x = n(667285),
-    y = n(920437),
-    v = n(355622),
+    x = n(387462),
+    E = n(667285),
+    v = n(920437),
+    y = n(355622),
     S = n(408018),
     C = n(20737),
     I = n(133343),
     N = n(692051),
     T = n(685603),
     O = n(451909),
-    b = n(926262),
-    j = n(371648),
+    j = n(926262),
+    b = n(371648),
     D = n(118517),
     L = n(853145),
     R = n(522556),
@@ -122,7 +122,7 @@ class ei extends s.Component {
             openWarningPopout: e => this.setState({
                 contentWarningProps: e
             }),
-            type: v.oU.OVERLAY,
+            type: y.oU.OVERLAY,
             content: t,
             channel: n
         }).then(e => {
@@ -191,7 +191,7 @@ class ei extends s.Component {
                 let {
                     closePopout: t
                 } = e;
-                return o()(null != a, "ConnectedChannelTextArea.render - renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(b.A, {
+                return o()(null != a, "ConnectedChannelTextArea.render - renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(j.A, {
                     onClose: t,
                     ...a
                 })
@@ -201,7 +201,7 @@ class ei extends s.Component {
                 ref: this.textAreaRef,
                 renderAttachButton: this.renderAttachButton,
                 channel: e,
-                type: v.oU.OVERLAY,
+                type: y.oU.OVERLAY,
                 onFocus: () => this.setState({
                     focused: !0
                 }),
@@ -217,10 +217,10 @@ class ei extends s.Component {
                 focused: s
             })
         });
-        return e.isPrivate() ? (0, i.jsx)(x.A, {
+        return e.isPrivate() ? (0, i.jsx)(E.A, {
             channel: e,
             children: d
-        }, e.id) : (0, i.jsx)(y.A, {
+        }, e.id) : (0, i.jsx)(v.A, {
             channel: e,
             children: d
         }, e.id)
@@ -281,7 +281,7 @@ class es extends s.PureComponent {
         return e = _ && null != r ? (0, i.jsx)(R.A, {
             guild: r,
             channelId: t.id
-        }) : (0, i.jsx)(j.A, {
+        }) : (0, i.jsx)(b.A, {
             channel: t,
             className: et.Wk,
             forceCompact: u,
@@ -294,7 +294,7 @@ class es extends s.PureComponent {
                 disableAnimations: u && f && !d
             },
             children: (0, i.jsxs)(s.Fragment, {
-                children: [!o && !h && (0, i.jsx)(E.A, {
+                children: [!o && !h && (0, i.jsx)(x.A, {
                     channel: t,
                     guild: r
                 }), (0, i.jsx)(X.Ay.Background, {
@@ -447,15 +447,15 @@ function el(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), l = (0, d.bG)([U.A], () => U.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([k.A], () => null != s && k.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([L.A], () => null != l ? L.A.getPendingReply(l) : void 0), E = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
-        placeholder: x
+    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), l = (0, d.bG)([U.A], () => U.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([k.A], () => null != s && k.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([L.A], () => null != l ? L.A.getPendingReply(l) : void 0), x = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
+        placeholder: E
     } = (0, _.A)({
         channel: a
     });
     return null != a && null != p && q.kvI.GUILD_THREADS_ONLY.has(a.type) ? (0, i.jsx)(m.A, {}) : (0, i.jsx)(es, {
         guild: p,
         channel: a,
-        user: E,
+        user: x,
         opacity: c,
         nsfwAgree: A,
         chatKeybind: o,
@@ -463,7 +463,7 @@ function el(e) {
         isPreviewingInGame: h,
         pendingReply: g,
         contained: t,
-        placeholder: x,
+        placeholder: E,
         widget: q.uss.TEXT,
         ...n
     })

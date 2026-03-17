@@ -1,7 +1,7 @@
 /** chunk id: 44120 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => E
+    A: () => x
 });
 var i = n(627968);
 n(64700);
@@ -21,13 +21,13 @@ var s = n(835245),
     _ = n(652215);
 let m = new Set([f.pn.REVIEW, f.pn.CONFIRM, f.pn.GIFT_CUSTOMIZATION]);
 
-function E(e) {
+function x(e) {
     let t, {
             skuId: u,
             analyticsLocations: f,
-            analyticsObject: E,
-            isGift: y = !1,
-            giftMessage: v,
+            analyticsObject: x,
+            isGift: v = !1,
+            giftMessage: y,
             giftingOrigin: S,
             giftRecipient: C,
             onClose: I,
@@ -35,22 +35,22 @@ function E(e) {
         } = e,
         T = !1,
         O = (0, s.A)(),
-        b = y ? "gift-payment-modal" : "payment-modal",
-        j = p.default.getCurrentUser();
-    j?.verified ? (a.h.wait(() => {
+        j = v ? "gift-payment-modal" : "payment-modal",
+        b = p.default.getCurrentUser();
+    b?.verified ? (a.h.wait(() => {
         a.h.dispatch({
             type: "PAYMENT_MODAL_OPEN"
         })
-    }), x({
+    }), E({
         loadId: O,
         skuId: u,
         analyticsLocations: f,
         onStepChange: e => {
             t = e
         },
-        modalKey: b,
-        isGift: y,
-        giftMessage: v,
+        modalKey: j,
+        isGift: v,
+        giftMessage: y,
         giftingOrigin: S,
         giftRecipient: C,
         onClose: I,
@@ -65,8 +65,8 @@ function E(e) {
                 A.default.track(_.HAw.PAYMENT_FLOW_CANCELED, {
                     load_id: O,
                     payment_type: _.frM[_.VVm.ONE_TIME],
-                    location: E,
-                    is_gift: y,
+                    location: x,
+                    is_gift: v,
                     sku_id: u,
                     location_stack: f,
                     checkout_design: e ? d.rS.UNIFIED : d.rS.LEGACY
@@ -74,7 +74,7 @@ function E(e) {
             }(0, r.ET)(), (0, o.z)(), I?.(T), T && (0, h.gB)()
         },
         onCloseRequest: () => {
-            null != t && m.has(t) && (0, l.OoC)(b)
+            null != t && m.has(t) && (0, l.OoC)(j)
         },
         onComplete: () => {
             T = !0, N?.()
@@ -97,7 +97,7 @@ function E(e) {
         }
     })
 }
-let x = e => {
+let E = e => {
     let {
         loadId: t,
         skuId: n,

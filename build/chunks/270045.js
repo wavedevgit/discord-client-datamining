@@ -37,22 +37,22 @@ function L(e) {
         L = (0, A.Ut)(),
         R = (0, f.go)(),
         P = (0, C.wr)(e.quest),
-        D = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
+        M = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
         {
-            handleComplete: M,
+            handleComplete: D,
             handleProgress: w,
             handleResetDismissibilityClick: O,
             handleResetStatusClick: k,
             handleOverrideDeliveryClick: U
         } = (0, g.j$)(e.quest.id),
-        G = (0, g.do)({
+        B = (0, g.do)({
             quest: e.quest,
             content: e.questContent,
             ctaContent: x.Cy.CONTEXT_MENU_OPEN_GAME_LINK,
             sourceQuestContent: e.sourceQuestContent
         }),
-        B = (0, b.Lk)({
-            isShareable: D,
+        G = (0, b.Lk)({
+            isShareable: M,
             questId: e.quest.id,
             trackingCtx: l.useMemo(() => ({
                 content: e.questContent,
@@ -88,16 +88,16 @@ function L(e) {
             children: [(0, i.jsx)(a.Drp, {
                 id: "play-game",
                 label: P,
-                action: G,
+                action: B,
                 icon: a.We5,
                 leadingAccessory: {
                     type: "icon",
                     icon: a.We5
                 }
-            }), D && (0, i.jsx)(a.Drp, {
+            }), M && (0, i.jsx)(a.Drp, {
                 id: "share-link",
                 label: j.intl.string(j.t.RDE0Sc),
-                action: B,
+                action: G,
                 icon: a.TdU,
                 leadingAccessory: {
                     type: "icon",
@@ -172,7 +172,7 @@ function L(e) {
             }), (0, i.jsx)(a.Drp, {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
-                action: M
+                action: D
             }), (0, E.g5)(e.quest) && (0, i.jsxs)(a.Drp, {
                 id: "console",
                 label: "Console Heartbeat",

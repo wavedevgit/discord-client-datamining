@@ -2,7 +2,7 @@
 n.d(t, {
     Am: () => k,
     Ck: () => F,
-    G8: () => B,
+    G8: () => G,
     Ge: () => P,
     H9: () => y,
     I: () => j,
@@ -10,12 +10,12 @@ n.d(t, {
     T0: () => N,
     UY: () => O,
     U_: () => H,
-    VL: () => M,
-    Yq: () => D,
+    VL: () => D,
+    Yq: () => M,
     m: () => S,
     r4: () => w,
     ri: () => U,
-    yp: () => G
+    yp: () => B
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -95,11 +95,11 @@ function P(e, t) {
     return L(b("referencedAvatarProfile", e, t))
 }
 
-function D(e, t) {
+function M(e, t) {
     return L(b("interactionAvatarProfile", e, t))
 }
 
-function M(e, t, r, o) {
+function D(e, t, r, o) {
     let {
         id: d
     } = t, {
@@ -182,7 +182,7 @@ function U(e, t) {
     }, [i, n])
 }
 
-function G(e) {
+function B(e) {
     let {
         groupId: t,
         message: n,
@@ -203,7 +203,7 @@ function G(e) {
     }
 }
 
-function B(e, t) {
+function G(e, t) {
     let [n, i] = l.useState(!1), [a, s] = l.useState(!1);
     return {
         handleFocus: l.useCallback(t => {

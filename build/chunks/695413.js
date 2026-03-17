@@ -1,7 +1,7 @@
 /** chunk id: 695413 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => C
+    A: () => b
 });
 var n = s(627968),
     r = s(64700),
@@ -20,9 +20,9 @@ var n = s(627968),
     f = s(661623),
     x = s(357704),
     E = s(758836);
-let C = e => {
-    let t, s, C, {
-            isBlockLoading: b = !1,
+let b = e => {
+    let t, s, b, {
+            isBlockLoading: C = !1,
             heroBlock: A,
             tab: S
         } = e,
@@ -31,11 +31,11 @@ let C = e => {
         L = (0, l.bG)([c.A], () => c.A.getPurchase(A.rewardSkuId)),
         {
             products: j
-        } = (t = (0, _.A)(), s = r.useMemo(() => b ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [b, t, A.rankedSkuIds, L, A.rewardSkuId]), C = (0, u.p)()(s), {
-            products: (0, g.X)(C)
+        } = (t = (0, _.A)(), s = r.useMemo(() => C ? [] : t(A.rankedSkuIds).filter(e => e.skuId !== A.rewardSkuId || null != L), [C, t, A.rankedSkuIds, L, A.rewardSkuId]), b = (0, u.p)()(s), {
+            products: (0, g.X)(b)
         }),
-        k = r.useMemo(() => !b && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [b, A.rankedSkuIds, j.length]),
-        T = b || k,
+        k = r.useMemo(() => !C && 0 !== A.rankedSkuIds.length && !(j.length > 0) && A.rankedSkuIds.every(e => o.A.getProduct(e)?.variantGroupStoreListingId != null), [C, A.rankedSkuIds, j.length]),
+        T = C || k,
         {
             readyToClaim: O
         } = (0, x.K)(I, A.rewardSkuId),

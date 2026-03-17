@@ -20,8 +20,8 @@ var n = s(627968),
     f = s(597783),
     x = s(212407),
     E = s(758836),
-    C = s(652215),
-    b = s(49999),
+    b = s(652215),
+    C = s(49999),
     A = s(818348),
     S = s(985018),
     v = s(201073);
@@ -56,12 +56,12 @@ let I = e => {
             if (O(!0), t.isDismissible) {
                 let e = t.dismissibleContentVersion ?? 0;
                 (0, d.$l)(i.M.COLLECTIBLES_SHOP_WIDE_BANNER, e, {
-                    dismissAction: b.i.USER_DISMISS
+                    dismissAction: C.i.USER_DISMISS
                 })
             }
         }, [t.isDismissible, t.dismissibleContentVersion]),
         F = r.useCallback(e => {
-            g.default.track(C.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            g.default.track(b.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                 collectibles_shop_session_id: R?.sessionId,
                 sku_id: N,
                 page_type: s,
@@ -142,7 +142,7 @@ let I = e => {
                         lineClamp: 2,
                         variant: M ? "text-md/medium" : "text-sm/medium",
                         children: M ? S.intl.format(S.t.SFFP7K, {
-                            helpdeskArticle: m.A.getArticleURL(C.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
+                            helpdeskArticle: m.A.getArticleURL(b.MVz.VIRTUAL_CURRENCY_LEARN_MORE)
                         }) : t.body
                     }), D && (0, n.jsxs)("div", {
                         className: v.nP,

@@ -19,7 +19,8 @@ class u extends i.Ay.Store {
         return o
     }
     getScheduledMaintenance() {
-        return null != c && c.id !== d ? c : null
+        let e = c?.scheduled_until ?? c?.scheduled_for;
+        return null != c && c.id !== d && (null == e || Date.now() < new Date(e).getTime()) ? c : null
     }
 }
 let _ = new u(a.h, {

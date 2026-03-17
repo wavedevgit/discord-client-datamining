@@ -57,7 +57,7 @@ function C(e) {
     T ? (j = x.intl.string(x.t.xhxnPn), L = "secondary") : E && (j = x.intl.string(x.t.ib7Ng1), L = "secondary");
     let R = E ? x.intl.string(x.t.eQyu1F) : x.intl.string(x.t.PYJHW6),
         P = null != t.inviter ? `${t.inviter.username}` : "",
-        D = null != t.inviter ? g.Ay.getUserTag(t.inviter) : "";
+        M = null != t.inviter ? g.Ay.getUserTag(t.inviter) : "";
     return (0, i.jsxs)(u.A, {
         children: [(0, i.jsx)(u.A.Header, {
             text: R
@@ -70,7 +70,7 @@ function C(e) {
                 }), (0, i.jsx)(u.A.Info, {
                     title: P,
                     onClick: T ? N : void 0,
-                    children: D
+                    children: M
                 })]
             }), (0, i.jsx)(r.$nd, {
                 onClick: N,

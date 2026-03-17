@@ -2,8 +2,8 @@
 n.d(t, {
     z: () => d
 });
-var l = n(311907),
-    s = n(554146),
+var s = n(311907),
+    l = n(554146),
     a = n(826673),
     i = n(932001),
     r = n(309010),
@@ -18,11 +18,11 @@ function d(e) {
         isTargetInViewport: u = !0,
         channelType: d,
         isPopoverAllowed: m = !0
-    } = e, A = (0, a.JZ)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
-        isExperimentEnabled: p
-    } = (0, o.TW)(t), f = (0, l.bG)([r.A], () => null != r.A.getVoiceChannelId()), x = p && u && n && c.has(d) && m && !f, [h, E] = (0, i.kn)(x && A ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
+    } = e, A = (0, a.JZ)(l.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
+        isExperimentEnabled: E
+    } = (0, o.TW)(t), f = (0, s.bG)([r.A], () => null != r.A.getVoiceChannelId()), p = E && u && n && c.has(d) && m && !f, [h, x] = (0, i.kn)(p && A ? [l.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
     return {
-        showMenuItemPopover: h === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
-        markMenuItemPopoverAsDismissed: E
+        showMenuItemPopover: h === l.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
+        markMenuItemPopoverAsDismissed: x
     }
 }

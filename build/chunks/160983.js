@@ -1,46 +1,46 @@
 /** chunk id: 160983 params = (module,exports,require) **/
-i.d(l, {
-    A: () => g
-}), i(321073);
-var n = i(777480),
-    t = i(107563),
-    s = i(994500),
-    a = i(622543),
-    r = i(570287),
-    o = i(646444),
-    d = i(913453),
-    c = i(667049),
-    u = i(837531),
-    A = i(186272),
-    m = i(518477),
-    p = i(985018);
+t.d(l, {
+    A: () => x
+}), t(321073);
+var i = t(777480),
+    n = t(107563),
+    s = t(994500),
+    a = t(622543),
+    r = t(570287),
+    o = t(646444),
+    d = t(913453),
+    c = t(667049),
+    u = t(837531),
+    m = t(186272),
+    A = t(518477),
+    p = t(985018);
 
-function g(e) {
+function x(e) {
     let {
         user: l,
-        currentUser: i
+        currentUser: t
     } = e, {
-        mutualFriendsCount: g,
-        mutualGuilds: x
-    } = (0, d.A)(l), h = x?.length, f = (0, o.A)(l), I = (0, c.A)(l.id), j = (0, r.A)(l.id), v = [], N = l.id === i?.id, y = a.A.getFirstWishlistId(l.id), E = null != y, C = E ? a.A.getWishlistSettings(l.id, y) : null, T = (E ? t.A.getWishlistItems(y) : []).length > 0, _ = I.length > 0;
+        mutualFriendsCount: x,
+        mutualGuilds: g
+    } = (0, d.A)(l), h = g?.length, f = (0, o.A)(l), j = (0, c.A)(l.id), I = (0, r.A)(l.id), v = [], N = l.id === t?.id, y = a.A.getFirstWishlistId(l.id), E = null != y, T = E ? a.A.getWishlistSettings(l.id, y) : null, C = (E ? n.A.getWishlistItems(y) : []).length > 0, _ = j.length > 0;
     (N || _) && v.push({
         text: p.intl.string(p.t.laViwx),
-        section: m.RP.WIDGETS
+        section: A.RP.WIDGETS
     }), v.push({
         text: p.intl.string(p.t.chq59f),
-        section: m.RP.ACTIVITY
+        section: A.RP.ACTIVITY
     });
     let b = !1 === l.nsfwAllowed,
-        P = s.A.isFriend(l.id),
-        O = C?.visibility === n.a.PUBLIC;
-    return (N || !N && T && O && j && (!b || b && P)) && v.push({
+        O = s.A.isFriend(l.id),
+        P = T?.visibility === i.a.PUBLIC;
+    return (N || !N && C && P && I && (!b || b && O)) && v.push({
         text: p.intl.string(p.t["7lZ31J"]),
-        section: m.RP.WISHLIST
-    }), l.id !== i?.id && f && (v.push({
-        text: (0, u.A)(g),
-        section: m.RP.MUTUAL_FRIENDS
+        section: A.RP.WISHLIST
+    }), l.id !== t?.id && f && (v.push({
+        text: (0, u.A)(x),
+        section: A.RP.MUTUAL_FRIENDS
     }), v.push({
-        text: (0, A.A)(h),
-        section: m.RP.MUTUAL_GUILDS
+        text: (0, m.A)(h),
+        section: A.RP.MUTUAL_GUILDS
     })), v
 }

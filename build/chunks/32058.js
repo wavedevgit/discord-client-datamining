@@ -6,9 +6,9 @@ var l = a(627968);
 a(64700);
 var r = a(503698),
     n = a.n(r),
-    o = a(397927),
-    s = a(985018),
-    d = a(825057),
+    s = a(397927),
+    d = a(985018),
+    o = a(825057),
     i = a(997168);
 let c = e => {
     let {
@@ -17,16 +17,16 @@ let c = e => {
         className: r
     } = e;
     return (0, l.jsx)("div", {
-        className: n()(i.zr, i.Gg, i.EX, i.vl, d.yl, r),
-        "aria-label": s.intl.string(s.t.eQ2bLp),
+        className: n()(i.zr, i.Gg, i.EX, i.vl, o.yl, r),
+        "aria-label": d.intl.string(d.t.eQ2bLp),
         children: (0, l.jsxs)("form", {
-            className: d.Zd,
+            className: o.Zd,
             onSubmit: e => {
                 e.preventDefault()
             },
-            children: [(0, l.jsx)(o.$mQ, {
+            children: [(0, l.jsx)(s.$mQ, {
                 "data-migration-pending": !0,
-                className: d.gT,
+                className: o.gT,
                 children: t
             }), a]
         })

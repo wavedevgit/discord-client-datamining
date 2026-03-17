@@ -1,8 +1,8 @@
 /** chunk id: 177366 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    XU: () => b,
-    Yr: () => C,
+    XU: () => C,
+    Yr: () => b,
     k0: () => A
 });
 var n = s(64700),
@@ -22,7 +22,7 @@ var n = s(64700),
 let f = "#itemSkuId=",
     x = RegExp(`^${f}(\\d+)$`),
     E = [p.BVt.COLLECTIBLES_SHOP],
-    C = e => {
+    b = e => {
         let t = (0, r.zy)();
         n.useEffect(() => {
             if (null != e && E.includes(t.pathname)) return () => {
@@ -30,7 +30,7 @@ let f = "#itemSkuId=",
             }
         }, [e, t.pathname])
     },
-    b = () => {
+    C = () => {
         let e = (0, m.U)(),
             t = n.useRef(null),
             s = (0, r.zy)(),
@@ -43,11 +43,11 @@ let f = "#itemSkuId=",
             let e = x.exec(s.hash);
             null != e ? t.current = e[1] : t.current = null
         }, [E, s.hash]);
-        let C = (0, l.bG)([d.A], () => d.A.initialProductSkuId);
+        let b = (0, l.bG)([d.A], () => d.A.initialProductSkuId);
         n.useEffect(() => {
             if (e) return;
             let s = null;
-            if (null != C ? s = C : null != t.current && (s = t.current), null != s) {
+            if (null != b ? s = b : null != t.current && (s = t.current), null != s) {
                 let e = setTimeout(() => {
                     (e => {
                         let {
@@ -87,7 +87,7 @@ let f = "#itemSkuId=",
                 }, 250);
                 return () => clearTimeout(e)
             }
-        }, [f, a, e, C, E])
+        }, [f, a, e, b, E])
     },
     A = e => {
         let t = n.useRef({}),

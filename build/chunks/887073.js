@@ -5,8 +5,8 @@ n.r(_), n.d(_, {
 var o = n(627968),
     r = n(64700),
     t = n(503698),
-    d = n.n(t),
-    a = n(397927),
+    a = n.n(t),
+    d = n(397927),
     i = n(785330),
     s = n(475073),
     l = n(611924),
@@ -36,7 +36,7 @@ let f = e => {
     return ((0, b.pE)(), r.useEffect(() => {
         null == _ && k()
     }, [_, k]), null == _) ? null : (0, o.jsxs)("div", {
-        className: d()(B.bx, {
+        className: a()(B.bx, {
             [h.jP]: t
         }),
         ref: n,
@@ -44,9 +44,9 @@ let f = e => {
         children: [(0, o.jsx)(g.G, {
             handleTransition: w,
             selectedTab: f
-        }), (0, o.jsx)(a.HOs, {
+        }), (0, o.jsx)(d.HOs, {
             children: (0, o.jsx)("div", {
-                className: d()(I.YB, I.GS),
+                className: a()(I.YB, I.GS),
                 children: (0, o.jsx)(i.Z_, {
                     tenantId: C.FYj,
                     templateId: "collection-index",

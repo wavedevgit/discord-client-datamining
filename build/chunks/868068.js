@@ -3,8 +3,8 @@ n.d(t, {
     K: () => r,
     O: () => i
 });
-var l = n(56562),
-    s = n(927813),
+var s = n(56562),
+    l = n(927813),
     a = n(652215);
 let i = {
         None: void 0,
@@ -23,9 +23,9 @@ let i = {
             pid: 1234,
             pidPath: [],
             windowHandle: "13229",
-            fullscreenType: l.aI.BORDERLESS_FULLSCREEN,
+            fullscreenType: s.aI.BORDERLESS_FULLSCREEN,
             isLauncher: !1,
-            start: Date.now() - s.A.Millis.HOUR,
+            start: Date.now() - l.A.Millis.HOUR,
             distributor: a.d3x.STEAM
         }
     },

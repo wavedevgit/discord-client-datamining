@@ -1,7 +1,7 @@
 /** chunk id: 180662 params = (module,exports,require) **/
 n.d(t, {
     A: () => F,
-    e: () => M
+    e: () => D
 });
 var i = n(284009),
     l = n.n(i),
@@ -48,7 +48,7 @@ function P(e, t) {
     }
 }
 
-function D(e) {
+function M(e) {
     let {
         guildId: t,
         title: n,
@@ -67,14 +67,14 @@ function D(e) {
     })
 }
 
-function M(e) {
+function D(e) {
     let {
         channelId: t,
         messageId: n,
         answerId: i
     } = e, l = I.A.getChannel(t);
     if (null == l) return;
-    if (g.A.isLurking(l.guild_id)) return void D({
+    if (g.A.isLurking(l.guild_id)) return void M({
         guildId: l.guild_id,
         title: R.intl.string(R.t["7LpysO"]),
         body: R.intl.string(R.t["5sHHoy"])
@@ -152,7 +152,7 @@ async function U(e) {
         messageId: n
     } = e, i = I.A.getChannel(t);
     if (null == i) return;
-    if (g.A.isLurking(i.guild_id)) return void D({
+    if (g.A.isLurking(i.guild_id)) return void M({
         guildId: i.guild_id,
         title: R.intl.string(R.t.Qic1FD),
         body: R.intl.string(R.t["5sHHoy"])
@@ -199,12 +199,12 @@ async function U(e) {
         })
     }
 }
-async function G(e) {
+async function B(e) {
     let {
         channelId: t,
         messageId: n
     } = e, i = I.A.getChannel(t);
-    if (null != i) return g.A.isLurking(i.guild_id) ? void D({
+    if (null != i) return g.A.isLurking(i.guild_id) ? void M({
         guildId: i.guild_id,
         title: R.intl.string(R.t.B9QnBp),
         body: R.intl.string(R.t.BVZCTn)
@@ -219,7 +219,7 @@ async function G(e) {
         messageId: n
     }))
 }
-async function B(e) {
+async function G(e) {
     let {
         channelId: t,
         messageId: n,
@@ -233,7 +233,7 @@ async function B(e) {
             });
             break;
         case "remove":
-            await G({
+            await B({
                 channelId: t,
                 messageId: n
             });
@@ -274,7 +274,7 @@ async function B(e) {
             });
             break;
         case "showVoterDetails":
-            M({
+            D({
                 channelId: t,
                 messageId: n
             });
@@ -312,7 +312,7 @@ let F = {
         }(n), {
             tapShouldOpenVotersModal: s
         } = (0, j.j8)(a) ?? {};
-        if (!0 === s) return void M({
+        if (!0 === s) return void D({
             channelId: i,
             messageId: r,
             answerId: t
@@ -366,7 +366,7 @@ let F = {
     },
     handlePollSubmitVote: U,
     handleUpdateVoteEditingState: w,
-    handlePollActionTapped: B,
+    handlePollActionTapped: G,
     createPoll: async function(e) {
         let {
             channel: t,

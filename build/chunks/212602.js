@@ -23,7 +23,7 @@ let x = () => {
         sort: e,
         onSetSort: t,
         hasRelevanceFilters: s
-    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), C = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), b = r.useCallback(e => {
+    } = (0, _.v)(), l = (0, u.uM)(), x = (0, g.yB)("CollectiblesSortSelect"), E = s(), b = r.useMemo(() => m.QB.filter(e => e.sortType !== o.$.RELEVANCE || E), [E]), C = r.useCallback(e => {
         let {
             sortType: t,
             sortDirection: s
@@ -71,7 +71,7 @@ let x = () => {
             sortDirection: i.A.DESC
         }
     })[e], []), S = r.useCallback(e => {
-        let s = b(A(e));
+        let s = C(A(e));
         d.default.track(h.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
             collectibles_shop_session_id: l?.sessionId,
             page_section: l?.pageSection,
@@ -81,7 +81,7 @@ let x = () => {
             cta_name: `sort by ${s.label.toLowerCase()}`,
             page_type: "catalog"
         }), t(A(e))
-    }, [l, b, A, t]), v = b(e);
+    }, [l, C, A, t]), v = C(e);
     return (0, n.jsx)("div", {
         className: a()(f.k, {
             [g.jP]: x
@@ -89,7 +89,7 @@ let x = () => {
         children: (0, n.jsx)(c.l6P, {
             label: p.intl.string(p.t.uaX705),
             hideLabel: !0,
-            options: C.map(b),
+            options: b.map(C),
             onSelectionChange: S,
             value: v.value,
             selectionMode: "single",

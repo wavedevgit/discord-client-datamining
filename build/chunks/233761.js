@@ -1,38 +1,38 @@
 /** chunk id: 233761 params = (module,exports,require) **/
 i.d(t, {
-    A: () => A
+    A: () => p
 });
 var l = i(627968),
     n = i(64700),
-    s = i(503698),
-    a = i.n(s),
+    a = i(503698),
+    s = i.n(a),
     r = i(397927),
     d = i(793574),
-    c = i(688810),
-    o = i(404374),
+    o = i(688810),
+    c = i(404374),
     u = i(772366),
     m = i(954571),
     x = i(652215),
-    _ = i(788868),
+    g = i(788868),
     h = i(985018),
-    g = i(929252);
+    _ = i(929252);
 
-function A(e) {
+function p(e) {
     let {
         className: t
     } = e, {
         analyticsLocations: i,
-        sourceAnalyticsLocations: s
-    } = (0, c.Ay)(d.A.PREMIUM_UPSELL_TOOLTIP);
+        sourceAnalyticsLocations: a
+    } = (0, o.Ay)(d.A.PREMIUM_UPSELL_TOOLTIP);
     return n.useEffect(() => {
         m.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: _.e.GUILD_CAP_INLINE_INVITE_MODAL,
+            type: g.e.GUILD_CAP_INLINE_INVITE_MODAL,
             location: {
                 page: x.liQ.NATIVE_INVITE_MODAL
             },
-            location_stack: s
+            location_stack: a
         })
-    }, [s]), (0, l.jsxs)(r.DUT, {
+    }, [a]), (0, l.jsxs)(r.DUT, {
         onClick: () => (0, u.A)({
             analyticsSource: {
                 page: x.ThZ.EXTERNAL_INVITE_LINK_MODAL
@@ -43,16 +43,16 @@ function A(e) {
             },
             analyticsLocations: i
         }),
-        className: a()(g.fA, t),
+        className: s()(_.fA, t),
         children: [(0, l.jsx)(r.tvc, {
             size: "md",
-            className: g.Y2,
-            color: o.k0.PREMIUM_TIER_2
+            className: _.Y2,
+            color: c.k0.PREMIUM_TIER_2
         }), (0, l.jsx)("span", {
-            className: g.Cq,
+            className: _.Cq,
             children: h.intl.string(h.t["4/W4Pz"])
         }), (0, l.jsx)("span", {
-            className: g.MY,
+            className: _.MY,
             children: h.intl.string(h.t.b6KOkI)
         })]
     })

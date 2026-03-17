@@ -33,8 +33,8 @@ var i = n(627968),
     L = n(178910),
     R = n(354287),
     P = n(138175),
-    D = n(112150),
-    M = n(574660),
+    M = n(112150),
+    D = n(574660),
     w = n(768349),
     O = n(985018),
     k = n(22658);
@@ -58,7 +58,7 @@ function U(e) {
         staticBannerSrc: y,
         videoBannerSrc: L,
         bannerAspectRatio: w
-    } = (0, D.f)(t), k = (0, s.bG)([I.default], () => a ?? I.default.getId(), [a]), {
+    } = (0, M.f)(t), k = (0, s.bG)([I.default], () => a ?? I.default.getId(), [a]), {
         analyticsLocations: U
     } = (0, _.Ay)(u.A.APP_MESSAGE_EMBED), {
         currentChannelId: F,
@@ -71,7 +71,7 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), z = null != v && b && Y, Q = W && b, K = (0, x.e)(t), J = (0, M.F)(t), X = (0, M.t)(t), Z = l.useMemo(() => {
+    }), z = null != v && b && Y, Q = W && b, K = (0, x.e)(t), J = (0, D.F)(t), X = (0, D.t)(t), Z = l.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
             label: O.intl.string(O.t.RscU7I),
@@ -109,9 +109,9 @@ function U(e) {
                 })
             }
         })) : null != X && e.push(X), e
-    }, [b, X, K, t.id, Q, z, H, V, F, q, r, k, U, v]), $ = b ? (0, i.jsx)(B, {
+    }, [b, X, K, t.id, Q, z, H, V, F, q, r, k, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
-    }) : (0, i.jsx)(G, {
+    }) : (0, i.jsx)(B, {
         app: t
     });
     return (0, i.jsx)(j.h, {
@@ -137,7 +137,7 @@ function U(e) {
     })
 }
 
-function G(e) {
+function B(e) {
     let {
         app: t
     } = e, n = (0, y.Ie)({
@@ -174,7 +174,7 @@ function G(e) {
     })
 }
 
-function B(e) {
+function G(e) {
     let {
         app: t
     } = e, {

@@ -34,15 +34,15 @@ function j(e) {
         guildId: t,
         skuId: n,
         channel: j
-    } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, D = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), M = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), w = (0, m.h)(P), {
+    } = e, L = (0, a.bG)([A.A], () => A.A.isFetchingForSKU(n)), R = (0, a.bG)([g.A], () => g.A.get(n)), P = R?.applicationId, M = (0, a.bG)([u.A], () => null != P && u.A.isFetchingApplication(P)), D = (0, a.bG)([u.A], () => null != P && u.A.didFetchingApplicationFail(P)), w = (0, m.h)(P), {
         analyticsLocations: O
     } = (0, c.Ay)(d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, h.pE)();
     let k = (0, a.bG)([p.default], () => j.isDM() && null != j.recipients && 0 !== j.recipients.length ? p.default.getUser(j.recipients[0]) : null),
         U = (0, a.bG)([I.A], () => null != n ? I.A.getNormalizedSKUEligibility(n) : void 0, [n]),
         {
-            primaryIconAsset: G,
-            primaryIconLabel: B
+            primaryIconAsset: B,
+            primaryIconLabel: G
         } = l.useMemo(() => (0, f.Cv)(R, P), [R, P]);
     l.useEffect(() => {
         null == t || null == n || A.A.isFetchingForSKU(n) || (0, C.qf)(t, n)
@@ -72,8 +72,8 @@ function j(e) {
                 analyticsLocations: [d.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED_GIFT_BUTTON]
             })
         }, [R, k]),
-        W = null != P && null == w && !M;
-    return (L || D || W) && (null == R || null == w) ? (0, i.jsx)("div", {
+        W = null != P && null == w && !D;
+    return (L || M || W) && (null == R || null == w) ? (0, i.jsx)("div", {
         className: N.kL,
         children: (0, i.jsx)(o.y$y, {
             className: N.u1
@@ -94,9 +94,9 @@ function j(e) {
                 className: N.lI,
                 children: [(0, i.jsxs)("div", {
                     className: N.PB,
-                    children: [null != G && (0, i.jsx)("img", {
-                        src: G.toString(),
-                        alt: B,
+                    children: [null != B && (0, i.jsx)("img", {
+                        src: B.toString(),
+                        alt: G,
                         className: N.ye
                     }), (0, i.jsx)(o.Text, {
                         variant: "text-md/medium",

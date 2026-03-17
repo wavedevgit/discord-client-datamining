@@ -35,7 +35,7 @@ function I(e) {
         thumbnailHeight: y,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), D = (0, g.z)(t), M = (0, _.BB)(L), {
+    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), D = (0, _.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: w
     } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
         guildId: n,
@@ -48,16 +48,16 @@ function I(e) {
             guildProductListingId: t.id,
             analyticsLocation: I
         }),
-        G = (0, i.jsx)(A.i, {
+        B = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: M,
+            showEditProduct: D,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: M ? () => {
+            onEditProduct: D ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
@@ -81,11 +81,11 @@ function I(e) {
         ctaComponent: (0, i.jsx)(r.$nd, {
             ...k
         }),
-        productType: D,
+        productType: M,
         shouldShowFullDescriptionButton: E,
         onShowFullDescription: U,
         onTapCard: U,
-        actionMenu: G,
+        actionMenu: B,
         showOpaqueBackground: j,
         hideRoleTag: v,
         lineClamp: b,

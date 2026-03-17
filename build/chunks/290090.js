@@ -1,36 +1,36 @@
 /** chunk id: 290090 params = (module,exports,require) **/
-i.d(l, {
-    A: () => A
+t.d(l, {
+    A: () => m
 });
-var n = i(627968);
-i(64700);
-var t = i(311907),
-    s = i(397927),
-    a = i(688810),
-    r = i(979286),
-    o = i(958805),
-    d = i(61881),
-    c = i(993401),
-    u = i(985018);
+var i = t(627968);
+t(64700);
+var n = t(311907),
+    s = t(397927),
+    a = t(688810),
+    r = t(979286),
+    o = t(958805),
+    d = t(61881),
+    c = t(993401),
+    u = t(985018);
 
-function A(e) {
+function m(e) {
     let {
         onClose: l,
-        ...i
+        ...t
     } = e, {
-        analyticsLocations: A,
-        newestAnalyticsLocation: m
-    } = (0, a.Ay)(), p = (0, t.bG)([d.A], () => d.A.hasUnsavedChanges());
-    return (0, n.jsx)(c.q3, {
+        analyticsLocations: m,
+        newestAnalyticsLocation: A
+    } = (0, a.Ay)(), p = (0, n.bG)([d.A], () => d.A.hasUnsavedChanges());
+    return (0, i.jsx)(c.q3, {
         action: "VISIT_SHOP",
         icon: s.U1X,
         tooltipText: u.intl.string(u.t.b2d0N0),
         onClick: () => {
             p ? o.A.notifyUnsavedWidgets() : ((0, r.Cz)({
-                analyticsLocations: A,
-                analyticsSource: m
+                analyticsLocations: m,
+                analyticsSource: A
             }), l?.())
         },
-        ...i
+        ...t
     })
 }

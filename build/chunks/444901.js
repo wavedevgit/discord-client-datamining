@@ -82,8 +82,8 @@ function T(e) {
         analyticsLocations: L,
         showAuthButton: R,
         startAuthorization: P,
-        accountLinkButtonRef: D,
-        renderAccountLinkUpsell: M
+        accountLinkButtonRef: M,
+        renderAccountLinkUpsell: D
     } = e, w = (0, s.bG)([g.A], () => g.A.getMessages(a.id)), {
         actions: O,
         hasAccountLinkButton: k
@@ -116,22 +116,22 @@ function T(e) {
                 },
                 icon: o.A5T,
                 iconButton: !0,
-                buttonRef: D
+                buttonRef: M
             }), l = !0);
         return {
             actions: e,
             hasAccountLinkButton: l
         }
-    }, [p, h, v, w, j, n.id, t.id, R, P, L, D]), U = O.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, v, w, j, n.id, t.id, R, P, L, M]), U = O.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
-    let G = O.length > 0,
-        B = l.useMemo(() => (0, i.jsx)(o.Text, {
+    let B = O.length > 0,
+        G = l.useMemo(() => (0, i.jsx)(o.Text, {
             variant: "text-xs/medium",
             className: E.h_,
             color: "none",
             lineClamp: 3,
-            children: (0, A.BE)(t, r, a, m, G)
-        }), [t, r, a, m, G]);
+            children: (0, A.BE)(t, r, a, m, B)
+        }), [t, r, a, m, B]);
     return 0 === O.length ? (0, i.jsx)(b, {
         message: t,
         applicationName: r,
@@ -147,7 +147,7 @@ function T(e) {
             onClickBanner: S,
             bannerAspectRatio: c.u.ACTIVITY,
             iconSrc: y ?? void 0,
-            info: B,
+            info: G,
             actions: O,
             primaryActionFirst: !0,
             onClickContent: S,
@@ -161,6 +161,6 @@ function T(e) {
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), k ? M() : null]
+        }), k ? D() : null]
     })
 }

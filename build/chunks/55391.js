@@ -1,23 +1,23 @@
 /** chunk id: 55391 params = (module,exports,require) **/
-t.d(l, {
+l.d(t, {
     A: () => s
 });
-var r = t(64700),
-    n = t(311907),
-    o = t(49463),
-    i = t(409013),
-    a = t(194822);
-let s = (e, l, t) => {
-    let s = (0, n.bG)([o.A], () => o.A.hasLoadedExperiments),
-        [d, c, u] = (0, n.yK)([a.A], () => [a.A.getTemplateLayout(e, l, t), a.A.isFetchingTemplate(e, l, t), a.A.getTemplateFetchError(e, l, t)]),
-        h = null == d && null != l && s && !c && null == u;
+var r = l(64700),
+    n = l(311907),
+    i = l(49463),
+    o = l(409013),
+    a = l(194822);
+let s = (e, t, l) => {
+    let s = (0, n.bG)([i.A], () => i.A.hasLoadedExperiments),
+        [d, c, u] = (0, n.yK)([a.A], () => [a.A.getTemplateLayout(e, t, l), a.A.isFetchingTemplate(e, t, l), a.A.getTemplateFetchError(e, t, l)]),
+        h = null == d && null != t && s && !c && null == u;
     return r.useEffect(() => {
-        h && (0, i.J)({
+        h && (0, o.J)({
             tenantId: e,
-            templateId: l,
-            requestParams: t
+            templateId: t,
+            requestParams: l
         }).catch(() => {})
-    }, [h, e, l, t]), {
+    }, [h, e, t, l]), {
         layout: d,
         loading: c,
         error: u

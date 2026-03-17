@@ -5,9 +5,9 @@ a.d(t, {
 var l = a(627968),
     r = a(64700),
     n = a(397927),
-    o = a(561769),
-    s = a(32585),
-    d = a(41770),
+    s = a(561769),
+    d = a(32585),
+    o = a(41770),
     i = a(53566),
     c = a(148702),
     x = a(785330),
@@ -20,7 +20,7 @@ let b = {
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = r.useState(JSON.stringify(d.uG, null, 2)), [a, n] = r.useState(e);
+            let [e, t] = r.useState(JSON.stringify(o.uG, null, 2)), [a, n] = r.useState(e);
             return r.useEffect(() => {
                 try {
                     (0, x.F2)(JSON.parse(e)) && n(e)
@@ -44,10 +44,10 @@ let b = {
             } = e, {
                 collection: a,
                 isFetching: n
-            } = (0, s.A)({
+            } = (0, d.A)({
                 collectionId: t,
                 includePricing: !0
-            }), o = r.useMemo(() => {
+            }), s = r.useMemo(() => {
                 let e = a?.styles?.backgroundColors?.[0];
                 return {
                     id: "shop-index-page",
@@ -76,7 +76,7 @@ let b = {
             return n ? (0, l.jsx)("div", {
                 children: "Loading..."
             }) : (0, l.jsx)(x.Ay, {
-                layout: o
+                layout: s
             })
         },
         controls: {
@@ -189,9 +189,9 @@ let b = {
                         backgroundSize: "contain",
                         backgroundRepeat: "no-repeat"
                     }
-                }), (0, l.jsx)(o.v3.Provider, {
+                }), (0, l.jsx)(s.v3.Provider, {
                     value: {
-                        prioritizedCurrency: o.Hi.ORBS
+                        prioritizedCurrency: s.Hi.ORBS
                     },
                     children: (0, l.jsx)("div", {
                         style: {

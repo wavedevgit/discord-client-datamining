@@ -1,7 +1,7 @@
 /** chunk id: 60140 params = (module,exports,require) **/
 "use strict";
 s.d(t, {
-    A: () => C
+    A: () => b
 });
 var n = s(627968),
     r = s(64700),
@@ -60,7 +60,7 @@ let f = e => (0, n.jsx)("div", {
             })
         })
     },
-    C = e => {
+    b = e => {
         let t, s, l, {
                 heroBlockRecord: a,
                 layout: o,

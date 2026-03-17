@@ -122,26 +122,26 @@ function j(e, t) {
         canTapAnswers: L,
         canRemoveVote: R,
         canShowVoteCounts: P,
-        canSubmitVote: D,
-        expirationLabel: M = b.intl.string(b.t["e+J3JZ"]),
+        canSubmitVote: M,
+        expirationLabel: D = b.intl.string(b.t["e+J3JZ"]),
         hasSelectedAnswer: w,
         hasVoted: O,
         isEditingVote: k,
         isExpired: U,
-        isInteractive: G,
-        reactions: B,
+        isInteractive: B,
+        reactions: G,
         selectedAnswerIds: F,
         submitting: H,
         tapShouldOpenVotersModal: V,
         showResults: W
-    } = j, q = (0, x.aw)(B), Y = b.intl.formatToPlainString(b.t.XRkuof, {
+    } = j, q = (0, x.aw)(G), Y = b.intl.formatToPlainString(b.t.XRkuof, {
         count: q
     }), z = Math.max(...T.map(e => {
-        let t = S(B, `${e.answer_id}`);
+        let t = S(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
         let t, r = `${e.answer_id}`,
-            o = S(B, r),
+            o = S(G, r),
             d = o?.count_details?.vote ?? 0,
             c = 0 === q ? 0 : d / q,
             u = F.has(r),
@@ -221,11 +221,11 @@ function j(e, t) {
         }
     }), K = (0, i.YW)({
         isExpired: U,
-        canSubmitVote: D,
+        canSubmitVote: M,
         hasVoted: O,
         isEditingVote: k,
         canRemoveVote: R,
-        isInteractive: G,
+        isInteractive: B,
         showResults: W
     }).with({
         isInteractive: !1
@@ -256,11 +256,11 @@ function j(e, t) {
     })).otherwise(() => ({
         label: b.intl.string(b.t.JwkNU4),
         presentation: "button",
-        enabled: D,
+        enabled: M,
         type: "submit"
     })), J = (0, g.isIOS)() ? b.intl.string(b.t["PVATM/"]) : b.intl.string(b.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
-        isInteractive: G,
+        isInteractive: B,
         isEditingVote: k
     }).with({
         isInteractive: !1,
@@ -278,18 +278,18 @@ function j(e, t) {
         type: "cancel"
     })).otherwise(() => ({
         label: Y,
-        secondaryLabel: M,
+        secondaryLabel: D,
         accessibilityHint: J,
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
-    })), Z = !G || U || O || W ? void 0 : {
+    })), Z = !B || U || O || W ? void 0 : {
         label: b.intl.string(b.t["/KHAUF"]),
         presentation: "textButton",
         enabled: !0,
         type: "showVotes"
     }, $ = u.allow_multiselect, ee = (0, i.YW)({
-        isInteractive: G,
+        isInteractive: B,
         isExpired: U,
         canSelectMultipleAnswers: $
     }).with({
@@ -324,7 +324,7 @@ function j(e, t) {
         }),
         containerStyle: "normal",
         primaryAction: K,
-        isInteractive: G,
+        isInteractive: B,
         canTapAnswers: L,
         canSelectMultipleAnswers: $,
         hasSelectedAnswer: w,

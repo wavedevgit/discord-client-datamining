@@ -1,32 +1,32 @@
 /** chunk id: 450382 params = (module,exports,require) **/
 i.d(t, {
-    A: () => E
+    A: () => A
 });
 var l = i(627968),
     n = i(64700),
-    s = i(991660),
-    a = i(311907),
+    a = i(991660),
+    s = i(311907),
     r = i(397927),
     d = i(565645),
-    c = i(59520),
-    o = i(997590),
+    o = i(59520),
+    c = i(997590),
     u = i(954571),
     m = i(475720),
     x = i(652215),
-    _ = i(985018),
+    g = i(985018),
     h = i(492171);
 
-function g(e) {
+function _(e) {
     let {
         categoryIds: t
-    } = e, i = (0, a.yK)([o.A], () => t.map(e => o.A.getCategoryName(e)));
+    } = e, i = (0, s.yK)([c.A], () => t.map(e => c.A.getCategoryName(e)));
     return (0, l.jsxs)("div", {
         className: h.Ff,
         children: [(0, l.jsx)(r.Heading, {
             className: h.Uo,
             variant: "heading-sm/medium",
             color: "text-default",
-            children: _.intl.string(_.t.ffgJrs)
+            children: g.intl.string(g.t.ffgJrs)
         }), (0, l.jsx)(r.Text, {
             className: h._O,
             variant: "text-sm/normal",
@@ -38,7 +38,7 @@ function g(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         discoveryGuild: t,
         invite: i
@@ -69,7 +69,7 @@ function A(e) {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-xs/medium",
                 color: "text-subtle",
-                children: _.intl.string(_.t.xcsPye)
+                children: g.intl.string(g.t.xcsPye)
             }), (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
@@ -84,7 +84,7 @@ function A(e) {
                         className: h.Uo,
                         variant: "heading-sm/medium",
                         color: "text-default",
-                        children: _.intl.string(_.t.jGVzY5)
+                        children: g.intl.string(g.t.jGVzY5)
                     }), (0, l.jsx)(r.Text, {
                         className: h.qv,
                         variant: "text-sm/normal",
@@ -96,7 +96,7 @@ function A(e) {
                     })]
                 })]
             }), null != t.category_ids && t.category_ids.length > 0 && (0, l.jsxs)(l.Fragment, {
-                children: [(0, l.jsx)(r.cGx, {}), (0, l.jsx)(g, {
+                children: [(0, l.jsx)(r.cGx, {}), (0, l.jsx)(_, {
                     categoryIds: t.category_ids
                 })]
             })]
@@ -104,43 +104,43 @@ function A(e) {
     })
 }
 
-function E(e) {
+function A(e) {
     let {
         invite: t,
         guild: i,
-        discoveryGuild: a,
+        discoveryGuild: s,
         scrollableSectionClassName: d,
-        expanded: o,
+        expanded: c,
         setExpanded: m
-    } = e, g = null != m, E = a?.about != null && "" !== a.about || a?.reasons_to_join != null && a.reasons_to_join.length > 0, p = n.useCallback((e, t) => {
+    } = e, _ = null != m, A = s?.about != null && "" !== s.about || s?.reasons_to_join != null && s.reasons_to_join.length > 0, j = n.useCallback((e, t) => {
         u.default.track(x.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
             guild_id: t,
             invite_code: e,
             action: "scrolled"
         })
-    }, []), j = (0, c.I)(p, 3e3, [t.code, i.id], {
+    }, []), E = (0, o.I)(j, 3e3, [t.code, i.id], {
         trailing: !1
-    }), I = n.useCallback(() => {
-        j(t.code, i.id)
-    }, [t.code, i.id, j]);
-    return E ? (0, l.jsx)(s.A, {
+    }), v = n.useCallback(() => {
+        E(t.code, i.id)
+    }, [t.code, i.id, E]);
+    return A ? (0, l.jsx)(a.A, {
         className: d,
         gradientClassName: h.wH,
-        onScroll: I,
+        onScroll: v,
         children: (0, l.jsxs)("div", {
             className: h.Bn,
             children: [null != i.description && "" !== i.description && (0, l.jsx)(r.Text, {
                 variant: "text-md/normal",
                 color: "text-default",
                 children: i.description
-            }), !o && g && (0, l.jsxs)(r.BJc, {
+            }), !c && _ && (0, l.jsxs)(r.BJc, {
                 direction: "horizontal",
                 gap: 4,
                 className: h.qh,
                 children: [(0, l.jsx)(r.QWc, {
-                    text: _.intl.string(_.t["k+2jmZ"]),
+                    text: g.intl.string(g.t["k+2jmZ"]),
                     onClick: () => m?.(!0),
-                    "aria-expanded": o,
+                    "aria-expanded": c,
                     "aria-controls": "invite-about-section",
                     size: "sm",
                     variant: "secondary",
@@ -151,21 +151,21 @@ function E(e) {
                 })]
             }), (0, l.jsx)("div", {
                 className: h.y,
-                "data-expanded": o || !g,
-                "aria-hidden": g && !o,
+                "data-expanded": c || !_,
+                "aria-hidden": _ && !c,
                 children: (0, l.jsxs)("div", {
                     className: h.Cz,
-                    children: [(0, l.jsx)(A, {
-                        discoveryGuild: a,
+                    children: [(0, l.jsx)(p, {
+                        discoveryGuild: s,
                         invite: t
-                    }), o && g && (0, l.jsxs)(r.BJc, {
+                    }), c && _ && (0, l.jsxs)(r.BJc, {
                         direction: "horizontal",
                         gap: 4,
                         className: h.qh,
                         children: [(0, l.jsx)(r.QWc, {
-                            text: _.intl.string(_.t["3G783D"]),
+                            text: g.intl.string(g.t["3G783D"]),
                             onClick: () => m?.(!1),
-                            "aria-expanded": o,
+                            "aria-expanded": c,
                             "aria-controls": "invite-about-section",
                             size: "sm",
                             variant: "secondary",

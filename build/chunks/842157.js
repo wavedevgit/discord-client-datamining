@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(755420),
     R = n(877044),
     P = n(878831),
-    D = n(652215),
-    M = n(768349),
+    M = n(652215),
+    D = n(768349),
     w = n(985018),
     O = n(609653);
 
@@ -44,7 +44,7 @@ function k(e) {
         isGameLaunchable: r
     } = e, o = (0, L.z4)({
         platforms: t?.supported_platforms,
-        currentPlatform: D.yTV.DESKTOP,
+        currentPlatform: M.yTV.DESKTOP,
         isGameLaunchable: r
     }), c = l.useMemo(() => o.map(e => {
         switch (e) {
@@ -118,8 +118,8 @@ function U(e) {
         launchableAppId: L,
         isEmbeddedApplication: R,
         tryWithGdnAction: U,
-        staticBannerSrc: G,
-        onClickContent: B,
+        staticBannerSrc: B,
+        onClickContent: G,
         iconSrc: F,
         onView: H,
         presenceActivity: V,
@@ -172,7 +172,7 @@ function U(e) {
         isEmbeddedApplication: R,
         isFrameApplication: es,
         isGameLaunchable: ea
-    }), ec = (0, E.M)(V, W, t, n), eu = (0, v.E)(V, t, n, S), e_ = (0, T.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, D.xL.JOIN) === D.eAD.LOADING), {
+    }), ec = (0, E.M)(V, W, t, n), eu = (0, v.E)(V, t, n, S), e_ = (0, T.w)(W, V), em = (0, y.L)(V), eh = (0, o.bG)([f.A], () => null != V && null != V.application_id && f.A.getState(V.application_id, M.xL.JOIN) === M.eAD.LOADING), {
         actions: ep,
         hasAccountLinkButton: eg
     } = l.useMemo(() => {
@@ -190,13 +190,13 @@ function U(e) {
                     applicationId: V.application_id,
                     channelId: s.id,
                     messageId: t.id,
-                    source: D.ThZ.MESSAGE_EMBED,
+                    source: M.ThZ.MESSAGE_EMBED,
                     analyticsLocations: z,
-                    embedded: (0, N.A)(V, D.jUm.EMBEDDED),
+                    embedded: (0, N.A)(V, M.jUm.EMBEDDED),
                     remotePartyId: null != ed ? V.party?.id : void 0
                 }), (0, j.A)({
-                    type: D.UqL.JOIN,
-                    source: D.ThZ.MESSAGE_EMBED,
+                    type: M.UqL.JOIN,
+                    source: M.ThZ.MESSAGE_EMBED,
                     userId: t.author.id,
                     guildId: s.guild_id,
                     channelId: s.id,
@@ -226,10 +226,10 @@ function U(e) {
             trackingArea: h.kY.INVITE,
             onClick: () => {
                 null != V && c.A.sendActivityInvite({
-                    type: D.xL.JOIN,
+                    type: M.xL.JOIN,
                     channelId: s.id,
                     activity: V,
-                    location: D.ThZ.MESSAGE_EMBED
+                    location: M.ThZ.MESSAGE_EMBED
                 })
             },
             disabled: t.author.id === S,
@@ -267,17 +267,17 @@ function U(e) {
         children: [(0, i.jsx)(m.h, {
             header: C,
             title: a,
-            staticBannerSrc: G,
-            onClickBanner: B,
+            staticBannerSrc: B,
+            onClickBanner: G,
             bannerAspectRatio: m.u.ACTIVITY,
             iconSrc: F ?? void 0,
             info: er,
             actions: ep,
             primaryActionFirst: !0,
-            onClickContent: B,
+            onClickContent: G,
             trackingConfig: {
                 id: n.id,
-                linkType: M.J.RICH_PRESENCE_INVITE,
+                linkType: D.J.RICH_PRESENCE_INVITE,
                 onView: H,
                 referrerId: t.author.id,
                 guildId: s.guild_id,
