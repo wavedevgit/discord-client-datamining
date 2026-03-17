@@ -1,11 +1,11 @@
 /** chunk id: 628979 params = (module,exports,require) **/
 s.d(t, {
-    A: () => A
+    A: () => h
 });
 var r = s(627968),
     l = s(64700),
-    n = s(503698),
-    a = s.n(n),
+    a = s(503698),
+    n = s.n(a),
     o = s(311907),
     i = s(397927),
     c = s(773669),
@@ -15,58 +15,58 @@ var r = s(627968),
     p = s(758836),
     S = s(652215),
     E = s(985018),
-    h = s(450331);
+    A = s(450331);
 
-function A(e) {
+function h(e) {
     let {
         handleTransition: t,
         selectedTab: s,
-        isNarrow: n,
-        hasText: A
+        isNarrow: a,
+        hasText: h
     } = e, {
         searchQuery: f,
         onSetSearchQuery: m
-    } = (0, b.v)(), [C, T] = l.useState(""), g = (0, d.uM)(), y = (0, o.bG)([c.default], () => c.default.locale), O = l.useRef(null), [L, x] = l.useState(!1);
+    } = (0, b.v)(), [C, g] = l.useState(""), T = (0, d.uM)(), y = (0, o.bG)([c.default], () => c.default.locale), O = l.useRef(null), [L, _] = l.useState(!1);
     l.useEffect(() => {
         let e = setTimeout(() => {
             m(C)
         }, 250);
         return () => clearTimeout(e)
     }, [C, m]), l.useEffect(() => {
-        T(f)
+        g(f)
     }, [f]), l.useEffect(() => {
-        x(n && A)
-    }, [n, A]);
-    let R = l.useCallback(e => {
+        _(a && h)
+    }, [a, h]);
+    let x = l.useCallback(e => {
             "Enter" === e.key && m(C)
         }, [C, m]),
-        I = l.useCallback(e => {
+        R = l.useCallback(e => {
             u.default.track(S.HAw.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-                collectibles_shop_session_id: g?.sessionId,
-                page_section: g?.pageSection,
-                page_category: g?.pageCategory,
-                page_index: g?.pageIndex,
-                page_size: g?.pageSize,
+                collectibles_shop_session_id: T?.sessionId,
+                page_section: T?.pageSection,
+                page_category: T?.pageCategory,
+                page_index: T?.pageIndex,
+                page_size: T?.pageSize,
                 cta_name: e,
                 page_type: s
             })
-        }, [s, g]),
+        }, [s, T]),
+        I = l.useCallback(() => {
+            s !== p.G2.CATALOG && t(p.G2.CATALOG), R(p.uY.SEARCH_ICON), _(!0), setTimeout(() => O.current?.focus())
+        }, [s, t, R]),
         N = l.useCallback(() => {
-            s !== p.G2.CATALOG && t(p.G2.CATALOG), I(p.uY.SEARCH_ICON), x(!0), setTimeout(() => O.current?.focus())
-        }, [s, t, I]),
+            s !== p.G2.CATALOG && t(p.G2.CATALOG), R(p.uY.SEARCH_BAR)
+        }, [s, t, R]),
         v = l.useCallback(() => {
-            s !== p.G2.CATALOG && t(p.G2.CATALOG), I(p.uY.SEARCH_BAR)
-        }, [s, t, I]),
+            g(""), m(""), R(p.uY.SEARCH_BAR_CLEAR), a && _(!1)
+        }, [m, R, a]),
         G = l.useCallback(() => {
-            T(""), m(""), I(p.uY.SEARCH_BAR_CLEAR), n && x(!1)
-        }, [m, I, n]),
-        _ = l.useCallback(() => {
-            n && "" === C && x(!1)
-        }, [n, C]),
-        j = n && !L,
+            a && "" === C && _(!1)
+        }, [a, C]),
+        j = a && !L,
         F = (0, r.jsx)(i.DUT, {
-            className: h.qc,
-            onClick: N,
+            className: A.qc,
+            onClick: I,
             children: (0, r.jsx)(i.$p$, {
                 size: "sm",
                 color: i.LU0.colors.INTERACTIVE_ICON_DEFAULT
@@ -75,11 +75,11 @@ function A(e) {
         P = (0, r.jsx)(i.IWV, {
             size: "sm",
             ref: O,
-            onKeyDown: R,
+            onKeyDown: x,
             query: C,
-            onChange: T,
-            onClear: G,
-            onBlur: _,
+            onChange: g,
+            onClear: v,
+            onBlur: G,
             placeholder: "en-US" === y ? E.intl.string(E.t.arz34K) : E.intl.string(E.t["hIt/Nm"])
         }),
         k = {
@@ -90,13 +90,13 @@ function A(e) {
         style: k,
         children: F
     }) : (0, r.jsx)("div", {
-        className: a()(h.ON, {
-            [h.Nz]: L
+        className: n()(A.ON, {
+            [A.Nz]: L
         }),
         style: k,
         children: (0, r.jsx)(i.DUT, {
             ignoreKeyPress: !0,
-            onClick: v,
+            onClick: N,
             children: P
         })
     })
