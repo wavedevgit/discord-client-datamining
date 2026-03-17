@@ -19,15 +19,15 @@ function E(e, n, t) {
     let E = a.A.getChannel(t),
         h = (0, i.bG)([d.A], () => d.A.getGuild(n), [n]),
         m = (0, i.bG)([c.Ay], () => c.Ay.getPermissionsForUser(e.id, t), [t, e.id]),
-        x = o.default.getCurrentUser()?.id === e.id,
-        C = (0, i.bG)([s.A], () => null != t && s.A.canWithPartialContext(A.xBc.MUTE_MEMBERS, {
+        C = o.default.getCurrentUser()?.id === e.id,
+        b = (0, i.bG)([s.A], () => null != t && s.A.canWithPartialContext(A.xBc.MUTE_MEMBERS, {
             channelId: t
         }), [t]);
-    return null != E && null != h && (C || x) && m.speaker ? (0, l.jsx)(r.Drp, {
+    return null != E && null != h && (b || C) && m.speaker ? (0, l.jsx)(r.Drp, {
         id: "audience",
-        label: x ? g.intl.string(g.t["6C6PJx"]) : g.intl.string(g.t.VK3vQy),
+        label: C ? g.intl.string(g.t["6C6PJx"]) : g.intl.string(g.t.VK3vQy),
         action: () => {
-            x ? (0, u.Tf)(E) : (0, u.gt)(e, E)
+            C ? (0, u.Tf)(E) : (0, u.gt)(e, E)
         }
     }) : null
 }

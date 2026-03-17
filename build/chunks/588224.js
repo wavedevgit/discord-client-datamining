@@ -118,7 +118,7 @@ let V = [],
         } = e, [N, T] = s.useState(null), [y, O] = s.useState(!1), L = s.useRef(null), M = (0, b.$n)(l.id, c ?? V), {
             shouldShow: D,
             dismiss: P
-        } = (0, C.Z)(l, {
+        } = (0, C.Z0)(l, {
             collapsed: d
         }), B = s.useRef(new o.J_(50, () => {
             T(L.current), L.current = null

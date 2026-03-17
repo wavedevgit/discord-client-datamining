@@ -3,8 +3,8 @@ n.d(t, {
     A: () => c
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    s = n(280513),
+    s = n(64700),
+    l = n(280513),
     r = n(397927),
     a = n(837011),
     o = n(90084),
@@ -21,8 +21,8 @@ function c(e) {
         guildProfile: g,
         fetchGuildProfile: p,
         fetchStatus: m
-    } = (0, o.u)(t), A = m !== a.X.FETCHED, C = null != g && s.i.VISIBLE.has(g.visibility);
-    l.useEffect(() => {
+    } = (0, o.u)(t), A = m !== a.X.FETCHED, C = null != g && l.i.VISIBLE.has(g.visibility);
+    s.useEffect(() => {
         p()
     }, [t, p]);
     let E = [];

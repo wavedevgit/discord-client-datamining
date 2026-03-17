@@ -32,7 +32,7 @@ function k(e) {
         transitionState: n,
         onSubmit: k,
         onClose: j
-    } = e, [S, y] = r.useState(C._Ee), [D, G] = r.useState(C.rbe.GUILD_TEXT), [L, N] = r.useState(""), [T, H] = r.useState(!1), R = (0, o.bG)([f.A], () => f.A.getGuild(t), [t]), U = (0, g.R)(t), B = (0, h.Vf)(R), O = r.useMemo(() => (function(e) {
+    } = e, [S, y] = r.useState(C._Ee), [D, G] = r.useState(C.rbe.GUILD_TEXT), [L, N] = r.useState(""), [T, H] = r.useState(!1), R = (0, o.bG)([f.A], () => f.A.getGuild(t), [t]), U = (0, g.R)(t), B = (0, h.V)(R), O = r.useMemo(() => (function(e) {
         let {
             canCreateStageChannel: t,
             canCreateMediaChannel: n

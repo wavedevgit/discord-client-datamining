@@ -73,9 +73,13 @@ function S() {
         }] : []), E(h.intl.formatToPlainString(h.t["4rDfgM"], {}))], [t]),
         o = (0, l.bG)([r.A], () => r.A.messageGroupSpacing);
     return (0, i.jsx)(a.M1G, {
-        children: (0, i.jsx)("section", {
-            "aria-label": h.intl.string(h.t.RC22qg),
-            children: (0, i.jsxs)(a.IpV, {
+        children: (0, i.jsxs)("section", {
+            children: [(0, i.jsx)(a.Heading, {
+                variant: "text-md/medium",
+                color: "text-muted",
+                className: x.Vf,
+                children: h.intl.string(h.t.RC22qg)
+            }), (0, i.jsxs)(a.IpV, {
                 className: x.VH,
                 children: [(0, i.jsx)("ol", {
                     className: x.DZ,
@@ -118,7 +122,7 @@ function S() {
                         variant: "primary"
                     })]
                 })]
-            })
+            })]
         })
     })
 }

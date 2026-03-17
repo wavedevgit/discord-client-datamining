@@ -6,15 +6,15 @@ var i = t(627968);
 t(64700);
 var r = t(311907),
     l = t(397927),
-    d = t(544231),
-    a = t(349435),
+    a = t(544231),
+    d = t(349435),
     s = t(178186),
     u = t(287809),
     c = t(985018);
 
 function o(n) {
     let e = (0, r.bG)([u.default], () => u.default.getCurrentUser()),
-        t = (0, r.bG)([a.Ay], () => a.Ay.getChannelSafetyWarnings(n.id));
+        t = (0, r.bG)([d.Ay], () => d.Ay.getChannelSafetyWarnings(n.id));
     return e?.isStaff() !== !0 || null == t || 0 === t.length ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Drp, {
             id: "delete-safety-warnings",
@@ -23,7 +23,7 @@ function o(n) {
         }), (0, i.jsx)(l.Drp, {
             id: "clear-safety-warnings",
             label: c.intl.string(c.t.VuSvGu),
-            action: () => (0, d.WJ)(n.id)
+            action: () => (0, a.WJ)(n.id)
         })]
     })
 }

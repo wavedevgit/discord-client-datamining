@@ -16,10 +16,10 @@ var i = n(397927),
     g = n(700210),
     b = n(803664),
     m = n(29293),
-    f = n(509302),
-    E = n(497600),
-    x = n(291247),
-    h = n(239211),
+    E = n(509302),
+    f = n(497600),
+    h = n(291247),
+    x = n(239211),
     C = n(707378),
     M = n(399476),
     p = n(889460),
@@ -27,13 +27,13 @@ var i = n(397927),
     v = n(301541),
     I = n(252726),
     S = n(460597),
-    D = n(198229),
-    y = n(243949),
-    O = n(180798),
-    T = n(972432),
+    y = n(198229),
+    D = n(243949),
+    T = n(180798),
+    O = n(972432),
     _ = n(77544),
-    N = n(652215),
-    L = n(985018);
+    L = n(652215),
+    N = n(985018);
 let U = (0, d.A)((0, r.A)(function(e) {
     let {
         user: t,
@@ -44,10 +44,10 @@ let U = (0, d.A)((0, r.A)(function(e) {
         context: U,
         onSelect: G
     } = e, R = {
-        page: N.liQ.GUILD_CHANNEL,
-        section: N.JJy.CHAT_USERNAME,
-        object: N.ZSU.CONTEXT_MENU_ITEM
-    }, B = (0, y.A)({
+        page: L.liQ.GUILD_CHANNEL,
+        section: L.JJy.CHAT_USERNAME,
+        object: L.ZSU.CONTEXT_MENU_ITEM
+    }, B = (0, D.A)({
         userId: t.id,
         guildId: n
     }), V = (0, j.A)(t, n, U), P = (0, v.A)(t.id, U), k = (0, _.A)(t.id), w = (0, C.A)({
@@ -55,13 +55,13 @@ let U = (0, d.A)((0, r.A)(function(e) {
         context: U
     }), F = (0, u.D)({
         userId: t.id
-    }), K = (0, E.A)({
+    }), K = (0, f.A)({
         user: t,
         guildId: n,
         context: U
     }), W = (0, m.A)({
         user: t
-    }), X = (0, T.A)(t.id), H = (0, D.A)(t.id), Y = (0, A.A)({
+    }), X = (0, O.A)(t.id), H = (0, y.A)(t.id), Y = (0, A.A)({
         guildId: n,
         userId: t.id,
         analyticsLocation: R,
@@ -74,11 +74,11 @@ let U = (0, d.A)((0, r.A)(function(e) {
         guildId: n
     }), z = (0, s.A)(null, t), Z = (0, b.A)({
         user: t
-    }), $ = (0, f.A)({
+    }), $ = (0, E.A)({
         user: t
     }), Q = (0, S.A)({
         user: t
-    }), ee = (0, h.A)({
+    }), ee = (0, x.A)({
         user: t,
         guildId: n,
         location: "GuildUserContextMenu"
@@ -86,15 +86,15 @@ let U = (0, d.A)((0, r.A)(function(e) {
         user: t,
         guildId: n,
         location: "GuildUserContextMenu"
-    }), en = (0, x.A)(t, n), el = (0, O.A)(t.id, n), ei = (0, I.A)(t, n), ea = (0, c.A)({
+    }), en = (0, h.A)(t, n), el = (0, T.A)(t.id, n), ei = (0, I.A)(t, n), ea = (0, c.A)({
         id: t.id,
-        label: L.intl.string(L.t["/AXYnE"])
+        label: N.intl.string(N.t["/AXYnE"])
     }), er = t.isNonUserBot();
     return (0, l.jsxs)(i.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
         onClose: a.Z_,
-        "aria-label": L.intl.string(L.t.liqwPJ),
+        "aria-label": N.intl.string(N.t.liqwPJ),
         onSelect: G,
         children: [!er && (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsxs)(i.rXV, {
@@ -115,5 +115,5 @@ let U = (0, d.A)((0, r.A)(function(e) {
         })]
     })
 }, {
-    object: N.ZSU.CONTEXT_MENU
+    object: L.ZSU.CONTEXT_MENU
 }), [o.A.CONTEXT_MENU, o.A.GUILD_USER_MENU])

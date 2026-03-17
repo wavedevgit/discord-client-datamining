@@ -18,27 +18,27 @@ var l = t(627968),
     f = t(985018);
 
 function b(e, n, b) {
-    let p = i.useMemo(() => ({
+    let h = i.useMemo(() => ({
         [n]: [e.id]
     }), [n, e.id]);
-    (0, d.Eq)(p, "useThreadAdminActionItems"), (0, r.bG)([m.A], () => m.A.getGuildVersion(n), [n]);
-    let h = (0, r.bG)([A.A], () => A.A.getChannel(b)),
+    (0, d.Eq)(h, "useThreadAdminActionItems"), (0, r.bG)([m.A], () => m.A.getGuildVersion(n), [n]);
+    let p = (0, r.bG)([A.A], () => A.A.getChannel(b)),
         E = (0, r.bG)([g.A], () => g.A.getGuild(n), [n]),
-        _ = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
-        C = (0, s.A)(h, "Context Menu"),
-        N = (0, c.qi)(h?.id);
-    return _?.id === e.id ? [C] : null == E || null == h || null == _ ? [] : [N ? (0, l.jsx)(a.Drp, {
+        C = (0, r.bG)([x.default], () => x.default.getCurrentUser()),
+        _ = (0, s.A)(p, "Context Menu"),
+        T = (0, c.qi)(p?.id);
+    return C?.id === e.id ? [_] : null == E || null == p || null == C ? [] : [T ? (0, l.jsx)(a.Drp, {
         id: "remove",
-        label: h.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
+        label: p.isForumPost() ? f.intl.formatToPlainString(f.t.v2KNNx, {
             user: e.username
         }) : f.intl.formatToPlainString(f.t["27xWaT"], {
             user: e.username
         }),
         color: "danger",
-        action: () => o.A.removeMember(h.id, e.id, "Context Menu")
+        action: () => o.A.removeMember(p.id, e.id, "Context Menu")
     }) : null, (0, u.L7)(e, E) ? (0, l.jsx)(a.Drp, {
         id: "kick",
-        label: N ? f.intl.formatToPlainString(f.t["1Ie87p"], {
+        label: T ? f.intl.formatToPlainString(f.t["1Ie87p"], {
             user: e.username
         }) : f.intl.formatToPlainString(f.t["9l/iTS"], {
             user: e.username
@@ -56,7 +56,7 @@ function b(e, n, b) {
         })
     }) : null, (0, u.EZ)(e, E) ? (0, l.jsx)(a.Drp, {
         id: "ban",
-        label: N ? f.intl.formatToPlainString(f.t.i62APf, {
+        label: T ? f.intl.formatToPlainString(f.t.i62APf, {
             user: e.username
         }) : f.intl.formatToPlainString(f.t.WnpUBi, {
             user: e.username

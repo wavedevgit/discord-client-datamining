@@ -1,37 +1,36 @@
 /** chunk id: 465424 params = (module,exports,require) **/
 n.d(t, {
-    D: () => p
+    D: () => M
 });
 var l = n(627968),
     i = n(64700),
     a = n(311907),
     r = n(397927),
-    d = n(956793),
-    s = n(714114),
-    o = n(323073),
-    u = n(47167),
-    c = n(378570),
-    A = n(323443),
-    g = n(332789),
-    b = n(10862),
-    m = n(70963),
-    f = n(961350),
+    d = n(714114),
+    s = n(323073),
+    o = n(47167),
+    u = n(262763),
+    c = n(323443),
+    A = n(332789),
+    g = n(10862),
+    b = n(70963),
+    m = n(961350),
     E = n(576705),
-    x = n(977997),
+    f = n(977997),
     h = n(652215),
-    C = n(212590);
+    x = n(212590);
 
-function M(e) {
+function C(e) {
     let {
         channel: t
-    } = e, n = (0, u.Ay)(t);
+    } = e, n = (0, o.Ay)(t);
     return (0, l.jsxs)("div", {
-        className: C.W,
-        children: [(0, l.jsx)(b.A, {
+        className: x.W,
+        children: [(0, l.jsx)(g.A, {
             channel: t,
             color: "currentColor",
             size: "xs",
-            className: C.p
+            className: x.p
         }), (0, l.jsx)(r.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
@@ -41,28 +40,34 @@ function M(e) {
     })
 }
 
-function p(e) {
+function M(e) {
     let {
         userId: t
     } = e, {
         voiceChannel: n
-    } = (0, s.A)({
+    } = (0, d.A)({
         userId: t
-    }), u = (0, a.bG)([E.A], () => {
+    }), o = (0, a.bG)([E.A], () => {
         if (null == n) return !1;
-        let e = (0, o.r9)() && (0, o.UK)(n.id);
+        let e = (0, s.r9)() && (0, s.UK)(n.id);
         return (n.isPrivate() || E.A.can(h.xBc.CONNECT, n)) && !e
-    }), b = (0, a.bG)([x.A], () => x.A.isInChannel(n?.id)), C = (0, a.bG)([f.default], () => f.default.getId() === t), p = i.useCallback(() => {
-        null != n && (n.isGuildStageVoice() ? (0, A.av)(n) : (d.default.selectVoiceChannel(n.id), (0, c.iN)(n.id)))
-    }, [n]), {
-        enabled: j
-    } = (0, g.j)("useJoinVoiceItem");
-    return j && u && !C && null != n ? (0, l.jsx)(r.Drp, {
+    }), g = (0, a.bG)([f.A], () => f.A.isInChannel(n?.id)), x = (0, a.bG)([m.default], () => m.default.getId() === t), M = i.useCallback(() => {
+        null != n && (n.isGuildStageVoice() ? (0, c.av)(n) : u.A.handleVoiceConnect({
+            channel: n,
+            connected: g,
+            needSubscriptionToAccess: !1,
+            routeDirectlyToChannel: !0,
+            bypassChangeModal: !0
+        }))
+    }, [n, g]), {
+        enabled: p
+    } = (0, A.j)("useJoinVoiceItem");
+    return p && o && !x && null != n ? (0, l.jsx)(r.Drp, {
         id: "join-voice",
-        label: b ? (0, m.om)(n) : (0, m.M)(n),
-        subtext: (0, l.jsx)(M, {
+        label: g ? (0, b.om)(n) : (0, b.M)(n),
+        subtext: (0, l.jsx)(C, {
             channel: n
         }),
-        action: p
+        action: M
     }) : null
 }

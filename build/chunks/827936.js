@@ -12,8 +12,8 @@ var r = i(158954),
     o = i(297413),
     c = i(966327),
     u = i(287809),
-    A = i(985018),
-    h = i(792595);
+    h = i(985018),
+    A = i(792595);
 
 function x(e) {
     let {
@@ -57,28 +57,28 @@ function m(e, n) {
     return null == i || n.ownerId !== i.id || e.id === i.id ? null : (0, t.jsx)(d.Drp, {
         id: "make-dm-owner",
         color: "danger",
-        label: A.intl.string(A.t["6t3CyN"]),
+        label: h.intl.string(h.t["6t3CyN"]),
         action: () => {
             (0, d.qfG)(l => (0, t.jsx)(r.ConfirmModal, {
-                title: A.intl.string(A.t.WZoUsm),
-                confirmText: A.intl.string(A.t["cY+Oob"]),
-                cancelText: A.intl.string(A.t["ETE/oC"]),
+                title: h.intl.string(h.t.WZoUsm),
+                confirmText: h.intl.string(h.t["cY+Oob"]),
+                cancelText: h.intl.string(h.t["ETE/oC"]),
                 onConfirm: () => a.A.setDMOwner(n.id, e.id),
                 ...l,
                 children: (0, t.jsxs)("div", {
-                    className: h.Uh,
+                    className: A.Uh,
                     children: [(0, t.jsx)(x, {
                         color: s.A.unsafe_rawColors.PRIMARY_300.css
                     }), (0, t.jsxs)("div", {
-                        className: h.nS,
+                        className: A.nS,
                         children: [(0, t.jsx)("div", {
-                            className: h.HT,
+                            className: A.HT,
                             children: (0, t.jsx)(c.A, {
                                 user: i,
                                 size: d._3J.SIZE_80
                             })
                         }), (0, t.jsx)("div", {
-                            className: h.to,
+                            className: A.to,
                             children: (0, t.jsx)(c.A, {
                                 user: e,
                                 size: d._3J.SIZE_80
@@ -86,17 +86,17 @@ function m(e, n) {
                         })]
                     }), (0, t.jsx)(d.Text, {
                         variant: "text-md/normal",
-                        children: A.intl.format(A.t.gsBb3F, {
+                        children: h.intl.format(h.t.gsBb3F, {
                             usernameHook: (n, i) => (0, t.jsx)(o.A, {
                                 usernameIcon: (0, t.jsx)(d.euF, {
-                                    className: h.jj,
+                                    className: A.jj,
                                     src: e.getAvatarURL(void 0, 16),
                                     size: d._3J.SIZE_16,
                                     "aria-hidden": !0
                                 }),
-                                className: h.xK,
-                                usernameClass: h.Xh,
-                                discriminatorClass: h.D2,
+                                className: A.xK,
+                                usernameClass: A.Xh,
+                                discriminatorClass: A.D2,
                                 user: e
                             }, i)
                         })

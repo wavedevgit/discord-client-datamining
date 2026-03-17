@@ -3,13 +3,13 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(311907),
+    s = n(64700),
+    l = n(311907),
     r = n(397927),
     a = n(830382),
     o = n(67480),
     d = n(985018);
-class h extends l.Component {
+class h extends s.Component {
     componentDidMount() {
         let {
             applicationId: e,
@@ -35,7 +35,7 @@ class h extends l.Component {
             skus: e,
             selectedSkuId: t,
             label: n
-        } = this.props, l = null != e && 0 === e.length;
+        } = this.props, s = null != e && 0 === e.length;
         return (0, i.jsx)(r.l6P, {
             selectionMode: "single",
             label: n,
@@ -44,14 +44,14 @@ class h extends l.Component {
                 label: e.name,
                 value: e.id
             })) : [],
-            placeholder: l ? d.intl.string(d.t.hKcgP5) : d.intl.string(d.t.QV60Uq),
+            placeholder: s ? d.intl.string(d.t.hKcgP5) : d.intl.string(d.t.QV60Uq),
             value: t,
             onSelectionChange: this.handleChange,
-            disabled: l
+            disabled: s
         })
     }
 }
-let u = s.Ay.connectStores([o.A], e => {
+let u = l.Ay.connectStores([o.A], e => {
     let {
         applicationId: t
     } = e;

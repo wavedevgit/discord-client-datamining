@@ -20,21 +20,21 @@ function m(e) {
     let {
         user: t,
         context: m,
-        joinCallVideo: f,
-        id: E,
-        onCall: x
-    } = e, h = (0, d.aL)(), C = (0, i.bG)([o.default], () => o.default.getId() === t.id), M = (0, i.bG)([c.A], () => c.A.isBlocked(t.id)), p = (0, i.bG)([A.A, u.A], () => A.A.getVoiceChannelId() === u.A.getDMFromUserId(t.id));
+        joinCallVideo: E,
+        id: f,
+        onCall: h
+    } = e, x = (0, d.aL)(), C = (0, i.bG)([o.default], () => o.default.getId() === t.id), M = (0, i.bG)([c.A], () => c.A.isBlocked(t.id)), p = (0, i.bG)([A.A, u.A], () => A.A.getVoiceChannelId() === u.A.getDMFromUserId(t.id));
     if (C || m === g.BRT.POPOUT || p || t.bot || t.isProvisional) return null;
     let j = () => {
-            x?.(), r.A.openPrivateChannel({
+            h?.(), r.A.openPrivateChannel({
                 recipientIds: t.id,
                 joinCall: !0,
-                joinCallVideo: f
-            }), h.dispatch(g.jej.POPOUT_CLOSE), (0, a.s7G)()
+                joinCallVideo: E
+            }), x.dispatch(g.jej.POPOUT_CLOSE), (0, a.s7G)()
         },
         v = !s.Ay.disableCallUserConfirmationPrompt;
     return (0, l.jsx)(a.Drp, {
-        id: E ?? "call",
+        id: f ?? "call",
         label: b.intl.string(b.t["ZeP+kK"]),
         action: v ? () => {
             (0, a.mMO)(async () => {

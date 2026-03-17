@@ -23,14 +23,14 @@ function g(e) {
     } = e, {
         id: m
     } = t, {
-        loading: f,
-        note: E
-    } = (0, r.A)(m), x = !f && null != E && E.length > 0, h = b === u.BRT.POPOUT || b === u.BRT.OVERLAY, {
+        loading: E,
+        note: f
+    } = (0, r.A)(m), h = !E && null != f && f.length > 0, x = b === u.BRT.POPOUT || b === u.BRT.OVERLAY, {
         analyticsLocations: C
     } = (0, a.Ay)();
-    return m === s.default.getId() || o.A.hidePersonalInformation || h ? null : (0, l.jsx)(i.Drp, {
+    return m === s.default.getId() || o.A.hidePersonalInformation || x ? null : (0, l.jsx)(i.Drp, {
         id: "note",
-        label: f ? A.intl.string(A.t["WLKx/9"]) : x ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
+        label: E ? A.intl.string(A.t["WLKx/9"]) : h ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
         subtext: A.intl.string(A.t.r1BOdd),
         action: () => {
             (0, d.openUserProfileModal)({

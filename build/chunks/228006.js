@@ -12,33 +12,33 @@ var r = i(311907),
     o = i(155718),
     c = i(468389),
     u = i(793574),
-    A = i(810845),
-    h = i(854182),
+    h = i(810845),
+    A = i(854182),
     x = i(734337),
     m = i(465424),
     j = i(855187),
     g = i(479335),
     v = i(50268),
     p = i(222311),
-    f = i(164891),
-    C = i(734057),
+    C = i(164891),
+    f = i(734057),
     I = i(309010),
     b = i(803664),
-    N = i(29293),
-    U = i(509302),
-    _ = i(497600),
-    E = i(773699),
-    G = i(239211),
-    M = i(707378),
-    T = i(827936),
+    U = i(29293),
+    N = i(509302),
+    T = i(497600),
+    _ = i(773699),
+    M = i(239211),
+    E = i(707378),
+    G = i(827936),
     w = i(984894),
     O = i(399476),
     k = i(889460),
     D = i(448290),
     V = i(301541),
     X = i(460597),
-    P = i(635443),
-    S = i(313998),
+    S = i(635443),
+    P = i(313998),
     R = i(198229),
     y = i(243949),
     z = i(972432),
@@ -60,38 +60,38 @@ let L = (0, a.A)((0, d.A)(function(e) {
     } = e, q = (0, y.A)({
         userId: n.id,
         guildId: null
-    }), H = (0, D.A)(n, null, d), K = (0, r.bG)([I.A, C.A], () => {
+    }), H = (0, D.A)(n, null, d), K = (0, r.bG)([I.A, f.A], () => {
         let e = I.A.getVoiceChannelId();
-        return C.A.getChannel(e)
+        return f.A.getChannel(e)
     }), {
         enabled: Q
-    } = f.A.useExperiment({
+    } = C.A.useExperiment({
         guildId: K?.guild_id,
         location: "GroupDMUserContextMenu"
-    }), $ = Q ? K?.id : i.id, ee = (0, S.A)(n, $), en = (0, V.A)(n.id, d), ei = (0, M.A)({
+    }), $ = Q ? K?.id : i.id, ee = (0, P.A)(n, $), en = (0, V.A)(n.id, d), ei = (0, E.A)({
         user: n,
         context: d
     }), et = (0, m.D)({
         userId: n.id
-    }), er = (0, _.A)({
+    }), er = (0, T.A)({
         user: n,
         channelId: i.id,
         context: d
-    }), el = (0, N.A)({
+    }), el = (0, U.A)({
         user: n
-    }), es = (0, z.A)(n.id), ed = (0, P.A)(n.id, i.id), ea = (0, R.A)(n.id), eo = (0, g.u)({
+    }), es = (0, z.A)(n.id), ed = (0, S.A)(n.id, i.id), ea = (0, R.A)(n.id), eo = (0, g.u)({
         userId: n.id,
         channelId: i.id,
         guildId: i.getGuildId()
     }), ec = (0, w.A)(n.id, i.id), eu = (0, k.A)({
         user: n
-    }), eA = (0, c.A)(null, n), eh = (0, b.A)({
+    }), eh = (0, c.A)(null, n), eA = (0, b.A)({
         user: n
-    }), ex = (0, U.A)({
+    }), ex = (0, N.A)({
         user: n
     }), em = (0, X.A)({
         user: n
-    }), ej = (0, G.A)({
+    }), ej = (0, M.A)({
         user: n,
         location: "GroupDMUserContextMenu"
     }), eg = (0, O.A)({
@@ -100,13 +100,13 @@ let L = (0, a.A)((0, d.A)(function(e) {
     }), ev = (0, v.A)({
         id: n.id,
         label: B.intl.string(B.t["/AXYnE"])
-    }), ep = (0, J.A)(n.id), ef = (0, x.A)(n.id), eC = (0, h.A)(i.id), eI = (0, p.A)(n), eb = (0, j.A)(n.id), eN = (0, A.A)(i.id, n.id), eU = (0, E.A)({
+    }), ep = (0, J.A)(n.id), eC = (0, x.A)(n.id), ef = (0, A.A)(i.id), eI = (0, p.A)(n), eb = (0, j.A)(n.id), eU = (0, h.A)(i.id, n.id), eN = (0, _.A)({
         commandType: o.kc.USER,
         commandTargetId: n.id,
         channel: i,
         guildId: void 0,
         onHeightUpdate: F
-    }), e_ = (0, T.A)(n, i), eE = n.isNonUserBot(), eG = i.isManaged(), eM = i.recipients?.includes(n.id);
+    }), eT = (0, G.A)(n, i), e_ = n.isNonUserBot(), eM = i.isManaged(), eE = i.recipients?.includes(n.id);
     return (0, t.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         navId: "user-context",
@@ -114,21 +114,21 @@ let L = (0, a.A)((0, d.A)(function(e) {
         "aria-label": B.intl.string(B.t.liqwPJ),
         onSelect: W,
         onInteraction: Y,
-        children: [!eE && (0, t.jsxs)(t.Fragment, {
+        children: [!e_ && (0, t.jsxs)(t.Fragment, {
             children: [(0, t.jsx)(l.rXV, {
                 children: eI
             }), (0, t.jsxs)(l.rXV, {
-                children: [L && q, a && H, en, et, ei, !eG && ee, L && er, L && el, ep]
+                children: [L && q, a && H, en, et, ei, !eM && ee, L && er, L && el, ep]
             }), u && (0, t.jsx)(l.rXV, {
                 children: es
-            }), eM && (0, t.jsxs)(l.rXV, {
-                children: [!eG && ed, e_]
+            }), eE && (0, t.jsxs)(l.rXV, {
+                children: [!eM && ed, eT]
             }), (0, t.jsx)(l.rXV, {
-                children: L && eA
+                children: L && eh
             }), Z && (0, t.jsxs)(l.rXV, {
-                children: [eN, eC, ef]
+                children: [eU, ef, eC]
             }), (0, t.jsxs)(l.rXV, {
-                children: [u && ea, u && eo, u && ec, u && eb, eU, L && eu, eh, ex, em, L && eg, L && ej]
+                children: [u && ea, u && eo, u && ec, u && eb, eN, L && eu, eA, ex, em, L && eg, L && ej]
             })]
         }), (0, t.jsx)(l.rXV, {
             children: ev

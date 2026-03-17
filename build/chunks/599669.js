@@ -16,8 +16,8 @@ var i = n(627968),
     m = n(953689),
     p = n(155718),
     y = n(793574),
-    v = n(688810),
-    I = n(608805),
+    I = n(688810),
+    v = n(608805),
     x = n(69882),
     S = n(596034),
     f = n(241989),
@@ -60,8 +60,8 @@ function K(e) {
         paymentSourceType: d,
         shouldUseUnifiedCheckoutUI: p,
         renewalPrice: y,
-        totalDue: v,
-        currency: I,
+        totalDue: I,
+        currency: v,
         startDate: x
     } = e, {
         immediateDelivery: f
@@ -70,9 +70,9 @@ function K(e) {
         variant: {
             type: S.I.Subscription,
             purchaseButtonText: Y.intl.string(Y.t.eUEeCt),
-            totalDue: v,
+            totalDue: I,
             renewalPrice: y,
-            currency: I,
+            currency: v,
             interval: l.interval,
             intervalCount: l.intervalCount,
             startDate: x
@@ -211,12 +211,14 @@ function Z(e) {
                 planName: (0, O.RH)(a[0].subscriptionPlanId)
             }),
             tooltip: Y.intl.string(Y.t.JmwQJM),
-            amount: l
+            amount: l,
+            lineItemType: "adjustment"
         }), 0 !== s && m.push({
             id: "guild-boosting-adjustment",
             label: Y.intl.string(Y.t["+as5ZZ"]),
             tooltip: Y.intl.string(Y.t.JmwQJM),
-            amount: s
+            amount: s,
+            lineItemType: "adjustment"
         }), c) {
         let {
             lineItems: e,
@@ -294,7 +296,7 @@ function X(e) {
         onPurchaseTermsChange: T,
         legalTermsNodeRef: N,
         hasLegalTermsFlash: U
-    } = e, _ = (0, I.D7)({
+    } = e, _ = (0, v.D7)({
         location: "GuildBoostingReview"
     }), L = function(e) {
         let t, {
@@ -310,7 +312,7 @@ function X(e) {
             m = s.intervalCount,
             p = (0, u.bG)([w.A], () => w.A.getForSkuAndInterval((0, O.mH)(B.pe.GUILD), d, m));
         a()(null != p, "Missing guildBoostingSubscriptionPlan");
-        let I = (0, O.J$)(i.paymentSourceId),
+        let v = (0, O.J$)(i.paymentSourceId),
             x = (0, u.bG)([M.A], () => M.A.inReverseTrial()),
             {
                 setInvoicePreview: S
@@ -319,7 +321,7 @@ function X(e) {
         t = null != l ? (0, O.Om)(l, c[0].quantity, c[0].planId) : c;
         let {
             analyticsLocations: g
-        } = (0, v.Ay)(), [h] = (0, j.Kq)({
+        } = (0, I.Ay)(), [h] = (0, j.Kq)({
             subscriptionId: l?.id,
             items: t,
             renewal: !1,
@@ -342,7 +344,7 @@ function X(e) {
         }, [S, h]), {
             guild: o,
             guildBoostingSubscriptionPlan: p,
-            isPrepaid: I,
+            isPrepaid: v,
             isReverseTrial: x,
             paymentSourceId: f,
             proratedInvoicePreview: h,
@@ -439,19 +441,19 @@ function X(e) {
                 guildBoostingSubscriptionPlan: u,
                 isPrepaid: c,
                 isReverseTrial: o
-            } = s, d = n.interval, m = n.intervalCount, y = e => (0, E.Z)(i.invoiceItems).find(t => B.pW.has(t.subscriptionPlanId) && e(t)), v = y(e => e.amount >= 0);
-            a()(null != v, "Missing guild boosting invoice item");
-            let I = y(e => e.amount < 0),
-                x = null != I ? v.quantity - I.quantity : v.quantity,
+            } = s, d = n.interval, m = n.intervalCount, y = e => (0, E.Z)(i.invoiceItems).find(t => B.pW.has(t.subscriptionPlanId) && e(t)), I = y(e => e.amount >= 0);
+            a()(null != I, "Missing guild boosting invoice item");
+            let v = y(e => e.amount < 0),
+                x = null != v ? I.quantity - v.quantity : I.quantity,
                 S = i.invoiceItems.filter(e => (0, O.xq)(e.subscriptionPlanId)),
                 f = S.reduce((e, t) => e + t.amount, 0),
-                A = (0, j.sL)(v) * x,
+                A = (0, j.sL)(I) * x,
                 g = (0, G.$g)(A, i.currency),
                 h = (0, G.CE)(g, d, m),
                 P = (0, G.$g)(i.total, i.currency) + (i.currency !== V.Yr.USD ? "*" : ""),
                 T = i.total - A - f,
-                b = v.discounts.map(e => {
-                    let t = e.amount / v.quantity;
+                b = I.discounts.map(e => {
+                    let t = e.amount / I.quantity;
                     return {
                         ...e,
                         amount: t * x
@@ -459,7 +461,7 @@ function X(e) {
                 }),
                 N = b.find(e => e.type === p.iS.SUBSCRIPTION_PLAN),
                 U = b.find(e => e.type === p.iS.ENTITLEMENT),
-                C = v.subscriptionPlanPrice * x;
+                C = I.subscriptionPlanPrice * x;
             return {
                 addedQuantity: x,
                 guildBoostingSubscriptionPlan: u,

@@ -3,13 +3,13 @@ n.d(t, {
     A: () => u
 });
 var i = n(627968),
-    l = n(64700),
-    s = n(311907),
+    s = n(64700),
+    l = n(311907),
     r = n(397927),
     a = n(781763),
     o = n(65204),
     d = n(985018);
-class h extends l.Component {
+class h extends s.Component {
     static defaultProps = {
         includeMaster: !1
     };
@@ -36,12 +36,12 @@ class h extends l.Component {
             branches: e,
             selectedBranchId: t,
             applicationId: n,
-            includeMaster: l,
-            hide: s,
+            includeMaster: s,
+            hide: l,
             label: a
         } = this.props;
-        if (0 === e.length || s) return null;
-        let o = l ? e : e.filter(e => e.id !== n);
+        if (0 === e.length || l) return null;
+        let o = s ? e : e.filter(e => e.id !== n);
         return (0, i.jsx)(r.l6P, {
             label: a,
             options: o.map(e => ({
@@ -57,7 +57,7 @@ class h extends l.Component {
         })
     }
 }
-let u = s.Ay.connectStores([o.A], e => {
+let u = l.Ay.connectStores([o.A], e => {
     let {
         applicationId: t
     } = e;

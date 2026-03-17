@@ -12,36 +12,36 @@ var l = n(665260),
     r = n(696451),
     a = n(71393),
     o = n(576705),
-    s = n(287809),
-    d = n(661191),
-    u = n(340837),
+    u = n(287809),
+    s = n(661191),
+    d = n(340837),
     c = n(652215);
 let A = (e, t) => {
     var n;
-    let o = (0, i.bG)([r.Ay], () => (0, l.Lt)(r.Ay.getMember(e, t)?.flags ?? 0, u.D.DID_REJOIN)),
+    let o = (0, i.bG)([r.Ay], () => (0, l.Lt)(r.Ay.getMember(e, t)?.flags ?? 0, d.D.DID_REJOIN)),
         c = (0, i.bG)([a.A], () => {
             let t = a.A.getGuild(e);
             return null != t && function(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 7,
-                    n = d.default.extractTimestamp(e.id);
+                    n = s.default.extractTimestamp(e.id);
                 return Date.now() - n < 864e5 * t
             }(t)
         }),
-        A = (0, i.bG)([s.default], () => s.default.getUser(t)?.bot);
+        A = (0, i.bG)([u.default], () => u.default.getUser(t)?.bot);
     return n = {
         maxDaysOld: 7
     }, (0, i.bG)([], () => (function(e, t, n) {
         let {
             maxDaysOld: l,
             minDaysOld: i = 0
-        } = t, o = a.A.getGuild(e), s = o?.joinedAt;
+        } = t, o = a.A.getGuild(e), u = o?.joinedAt;
         if (null != n) {
             let t = r.Ay.getMember(e, n);
-            s = t?.joinedAt == null ? null : new Date(t.joinedAt)
+            u = t?.joinedAt == null ? null : new Date(t.joinedAt)
         }
-        if (null == s) return !1;
-        let d = Date.now() - s.getTime();
-        return (null == l || d <= 864e5 * l) && d >= 864e5 * i
+        if (null == u) return !1;
+        let s = Date.now() - u.getTime();
+        return (null == l || s <= 864e5 * l) && s >= 864e5 * i
     })(e, n, t), [n, e, t]) && !c && !A && !o
 };
 

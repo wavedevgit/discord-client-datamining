@@ -9,9 +9,9 @@ var i = n(311907),
     r = n(397927),
     a = n(308368),
     o = n(627363),
-    s = n(616356),
-    d = n(961350),
-    u = n(159426),
+    u = n(616356),
+    s = n(961350),
+    d = n(159426),
     c = n(762370),
     A = n(25528),
     h = n(652215),
@@ -21,12 +21,12 @@ var i = n(311907),
 function E(e, t, n) {
     let {
         enableRequestToStream: l
-    } = u.m.useExperiment({
+    } = d.m.useExperiment({
         guildId: t.guild_id,
         location: n
     }, {
         autoTrackExposure: !1
-    }), r = (0, i.bG)([d.default], () => d.default.getId()), g = (0, A.Ay)(e, t.guild_id)[0], f = (0, i.bG)([s.A], () => null != s.A.getStreamForUser(e, t.getGuildId())), E = (0, o.YY)(g?.application_id).data, p = (0, c.A)(e, t.id);
+    }), r = (0, i.bG)([s.default], () => s.default.getId()), g = (0, A.Ay)(e, t.guild_id)[0], f = (0, i.bG)([u.A], () => null != u.A.getStreamForUser(e, t.getGuildId())), E = (0, o.YY)(g?.application_id).data, p = (0, c.A)(e, t.id);
     return r !== e && null != g && null != E && l && p && !f ? {
         playingApplication: E,
         handleRequestToStream: function(n) {
