@@ -1,6 +1,6 @@
 /** chunk id: 44536 params = (module,exports,require) **/
 t.d(n, {
-    default: () => O
+    default: () => R
 });
 var i = t(627968);
 t(64700);
@@ -15,45 +15,45 @@ var r = t(397927),
     f = t(307623),
     A = t(848977),
     h = t(660273),
-    v = t(40389),
-    b = t(707792),
-    p = t(41402),
-    _ = t(990028),
-    E = t(271456),
+    _ = t(40389),
+    v = t(707792),
+    E = t(41402),
+    p = t(990028),
+    b = t(271456),
     C = t(200273),
     m = t(565846),
-    g = t(57907),
-    T = t(375500),
-    y = t(707653),
-    R = t(985018);
-let O = (0, a.A)(function(e) {
+    O = t(57907),
+    g = t(375500),
+    T = t(707653),
+    I = t(985018);
+let R = (0, a.A)(function(e) {
     let {
         channel: n,
         onSelect: t
-    } = e, a = (0, c.A)(n), d = (0, A.A)(n), O = (0, g.A)(n), I = (0, s.A)(n), G = (0, b.A)(n), N = (0, f.A)(n), S = (0, o.A)({
+    } = e, a = (0, c.A)(n), d = (0, A.A)(n), R = (0, O.A)(n), y = (0, s.A)(n), G = (0, v.A)(n), S = (0, f.A)(n), N = (0, o.A)({
         id: n.id,
-        label: R.intl.string(R.t.DQ797g)
-    }), j = (0, h.A)(n, "Context Menu"), F = (0, p.A)(n), x = (0, E.A)(n), U = (0, T.A)(n), L = (0, C.A)(n), w = (0, m.A)(n.id), D = (0, v.A)(n), M = (0, y.A)(n), Y = (0, u.m)(n), J = (0, u.y)(n), P = (0, _.A)(n);
+        label: I.intl.string(I.t.DQ797g)
+    }), L = (0, h.A)(n, "Context Menu"), F = (0, E.A)(n), D = (0, b.A)(n), U = (0, g.A)(n), x = (0, C.A)(n), j = (0, m.A)(n.id), w = (0, _.A)(n), V = (0, T.A)(n), M = (0, u.m)(n), k = (0, u.y)(n), P = (0, p.A)(n);
     return (0, i.jsxs)(r.W1t, {
         "data-menu-migrated": !0,
         navId: "thread-context",
         onClose: l.Z_,
-        "aria-label": R.intl.string(R.t["1NBjqb"]),
+        "aria-label": I.intl.string(I.t["1NBjqb"]),
         onSelect: t,
         children: [(0, i.jsx)(r.rXV, {
             children: d
         }, "mark-as-read-or-favorite"), (0, i.jsx)(r.rXV, {
-            children: Y
+            children: M
         }), (0, i.jsxs)(r.rXV, {
-            children: [j, D, I, G, L, w, a]
+            children: [L, w, y, G, x, j, a]
         }, "thread-actions"), (0, i.jsxs)(r.rXV, {
-            children: [O, U]
+            children: [R, U]
         }, "notifications"), (0, i.jsxs)(r.rXV, {
-            children: [M, F, P, x, N]
+            children: [V, F, P, D, S]
         }, "admin-actions"), (0, i.jsx)(r.rXV, {
-            children: J
+            children: k
         }), (0, i.jsx)(r.rXV, {
-            children: S
+            children: N
         }, "developer-actions")]
     })
 }, [d.A.CONTEXT_MENU, d.A.CHANNEL_LIST_THREAD_MENU])

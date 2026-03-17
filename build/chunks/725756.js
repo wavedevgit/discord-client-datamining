@@ -14,8 +14,8 @@ var r = e(397927),
     A = e(795144),
     u = e(769591),
     g = e(134725),
-    h = e(23724),
-    _ = e(477190),
+    _ = e(23724),
+    h = e(477190),
     b = e(307623),
     p = e(317910),
     y = e(848977),
@@ -57,7 +57,7 @@ function G(n) {
         channel: t,
         guild: e,
         onSelect: a
-    } = n, d = (0, y.A)(t), c = (0, f.A)(t), o = (0, C.A)(t), v = (0, h.A)(t), O = (0, g.A)(t), G = (0, p.A)(t), N = (0, A.A)(t), T = (0, _.A)(t, e), m = (0, b.A)(t), M = (0, s.A)({
+    } = n, d = (0, y.A)(t), c = (0, f.A)(t), o = (0, C.A)(t), v = (0, _.A)(t), O = (0, g.A)(t), G = (0, p.A)(t), N = (0, A.A)(t), T = (0, h.A)(t, e), m = (0, b.A)(t), M = (0, s.A)({
         id: t.id,
         label: E.intl.string(E.t["2visC6"])
     }), I = (0, j.A)(t), U = (0, u.os)("ChannelCategoryNormalMenu"), D = (0, x.Ay)(t);

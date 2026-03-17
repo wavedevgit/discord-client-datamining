@@ -21,7 +21,8 @@ function A(n) {
                 } = await e.e("59839").then(e.bind(e, 889186));
                 return e => (0, i.jsx)(t, {
                     ...e,
-                    parentId: n.id
+                    parentId: n.id,
+                    source: "favorites_add_to_category"
                 })
             })
         }, [n.id]);

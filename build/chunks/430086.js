@@ -2,9 +2,9 @@
 n.d(t, {
     Fv: () => A,
     GY: () => E,
-    M$: () => g,
+    M$: () => I,
     Oc: () => u,
-    kF: () => _
+    kF: () => c
 });
 var i = n(949645),
     r = n(265422),
@@ -13,8 +13,8 @@ var i = n(949645),
     l = n(309010),
     o = n(967198),
     d = n(723702),
-    c = n(652215);
-let _ = {
+    _ = n(652215);
+let c = {
         binds: ["alt+down"],
         comboKeysBindGlobal: !0,
         action: () => ((0, i.A)(), !1)
@@ -29,7 +29,7 @@ let _ = {
         comboKeysBindGlobal: !0,
         action() {
             let e;
-            if (null != o.A.getGuildId()) e = c.ME;
+            if (null != o.A.getGuildId()) e = _.ME;
             else {
                 let t = o.A.getLastSelectedGuildId();
                 null != t && (e = t, (0, r.i)(t, l.A.getChannelId(t)))
@@ -42,7 +42,7 @@ let _ = {
         comboKeysBindGlobal: !0,
         action: () => ((0, a.OE)("keybind"), !1)
     },
-    g = {
+    I = {
         binds: (0, d.isMac)() || (0, d.isMacWeb)() ? ["mod+]"] : ["alt+right"],
         comboKeysBindGlobal: !0,
         action: () => ((0, a.Qb)("keybind"), !1)

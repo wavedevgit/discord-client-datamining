@@ -1,6 +1,6 @@
 /** chunk id: 406975 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => c,
+    Ay: () => _,
     O$: () => d,
     Ur: () => l,
     hU: () => o
@@ -27,7 +27,7 @@ let l = {
         comboKeysBindGlobal: !0,
         action: () => ((0, i.Qp)(a.hH7.ZOOM_DEFAULT), !1)
     },
-    c = 21552 == n.j ? {
+    _ = 21552 == n.j ? {
         ZOOM_IN: l,
         ZOOM_OUT: o,
         ZOOM_RESET: d

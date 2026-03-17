@@ -2,9 +2,9 @@
 n.d(t, {
     CN: () => E,
     Kk: () => A,
-    Lx: () => g,
-    Oj: () => I,
-    Tb: () => _,
+    Lx: () => I,
+    Oj: () => g,
+    Tb: () => c,
     fO: () => C,
     iY: () => h,
     xo: () => u
@@ -17,9 +17,9 @@ var i = n(58149),
     o = n(203982),
     d = n(652215);
 n(985018);
-let c = 864e5 * d.n83;
+let _ = 864e5 * d.n83;
 
-function _() {
+function c() {
     let e = a.$s.getSetting();
     return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != l.A.getGuild(e))), new Set(e)
 }
@@ -39,7 +39,7 @@ function E() {
     return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != l.A.getGuild(e))), new Set(e)
 }
 
-function g(e) {
+function I(e) {
     return (e & d.yKI) === d.yKI ? {
         all: !0,
         mutualFriends: !0,
@@ -51,8 +51,8 @@ function g(e) {
     }
 }
 
-function I(e, t) {
-    return !!(!t.verified || t.isStaff()) || null != e && c > Date.now() - new Date(e.created_at).getTime()
+function g(e, t) {
+    return !!(!t.verified || t.isStaff()) || null != e && _ > Date.now() - new Date(e.created_at).getTime()
 }
 
 function h(e) {

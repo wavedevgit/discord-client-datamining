@@ -1,6 +1,6 @@
 /** chunk id: 848977 params = (module,exports,require) **/
 t.d(n, {
-    A: () => v
+    A: () => _
 });
 var i = t(627968);
 t(64700);
@@ -16,8 +16,8 @@ var r = t(311907),
     A = t(652215),
     h = t(985018);
 
-function v(e) {
-    let n, t, v = (n = (0, d.ed)(e.guild_id, e.id), t = (0, r.bG)([f.Ay, c.A, o.A, u.A], () => {
+function _(e) {
+    let n, t, _ = (n = (0, d.ed)(e.guild_id, e.id), t = (0, r.bG)([f.Ay, c.A, o.A, u.A], () => {
         if (e.isForumPost()) return f.Ay.isForumPostUnread(e.id);
         if (e.type !== A.rbe.GUILD_CATEGORY) return f.Ay.hasUnreadOrMentions(e.id);
         {
@@ -57,6 +57,6 @@ function v(e) {
                 objectType: A.AnalyticsObjectTypes.ACK_MANUAL
             })
         },
-        disabled: !v
+        disabled: !_
     })
 }

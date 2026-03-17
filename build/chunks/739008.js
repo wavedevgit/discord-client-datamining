@@ -1,6 +1,6 @@
 /** chunk id: 739008 params = (module,exports,require) **/
 n.d(t, {
-    P: () => _
+    P: () => c
 });
 var i = n(843472),
     r = n(567035),
@@ -9,8 +9,8 @@ var i = n(843472),
     l = n(309010),
     o = n(967198),
     d = n(203982),
-    c = n(652215);
-let _ = {
+    _ = n(652215);
+let c = {
     binds: ["shift+esc"],
     comboKeysBindGlobal: !0,
     action() {
@@ -18,6 +18,6 @@ let _ = {
         if (null == e || !a.default.getGuildHasUnreadIgnoreMuted(e)) return;
         (0, r.A)([e]);
         let t = l.A.getChannelId(e);
-        null == t || (s.A.getMessages(t).hasMoreAfter ? i.A.jumpToPresent(t, c.EMb) : d._.dispatch(c.jej.SCROLLTO_PRESENT))
+        null == t || (s.A.getMessages(t).hasMoreAfter ? i.A.jumpToPresent(t, _.EMb) : d._.dispatch(_.jej.SCROLLTO_PRESENT))
     }
 }

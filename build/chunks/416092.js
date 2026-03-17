@@ -9,8 +9,8 @@ var i = n(478437),
     l = n(672385),
     o = n(950191),
     d = n(761640),
-    c = n(734057),
-    _ = n(309010),
+    _ = n(734057),
+    c = n(309010),
     u = n(967198),
     A = n(652215);
 let E = {
@@ -18,8 +18,8 @@ let E = {
     comboKeysBindGlobal: !0,
     action() {
         let e = u.A.getGuildId(),
-            t = _.A.getChannelId(e),
-            n = c.A.getChannel(t);
+            t = c.A.getChannelId(e),
+            n = _.A.getChannel(t);
         if (null != t && null != n && n.type === i.r.GUILD_VOICE) return r.A.updateChatOpen(t, !s.A.getChatOpen(t), "toggle users keybind"), !1;
         if (null != t && null != n && n.type === i.r.DM) {
             let e = d.Ay.getSection(t, n?.isDM()),

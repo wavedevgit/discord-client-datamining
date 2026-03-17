@@ -7,7 +7,7 @@ n.d(t, {
     c3: () => b,
     lg: () => O,
     nG: () => N,
-    vw: () => U
+    vw: () => G
 });
 var i = n(627968),
     r = n(64700),
@@ -16,13 +16,13 @@ var i = n(627968),
     l = n(571694),
     o = n(47167),
     d = n(713654),
-    c = n(523728),
-    _ = n(200470),
+    _ = n(523728),
+    c = n(200470),
     u = n(769015),
     A = n(263063),
     E = n(376943),
-    g = n(636585),
-    I = n(71393),
+    I = n(636585),
+    g = n(71393),
     h = n(994500),
     C = n(287809),
     p = n(427262),
@@ -178,7 +178,7 @@ class b extends r.Component {
             channel: e
         } = this.props, t = (0, d.gU)(e);
         if (null == t) return null;
-        let n = (0, c.A)(e) ?? "";
+        let n = (0, _.A)(e) ?? "";
         return (0, i.jsx)("div", {
             className: m.zc,
             role: "img",
@@ -197,7 +197,7 @@ class b extends r.Component {
             channel: a,
             isMentionLowImportance: s
         } = this.props;
-        return null != n && n > 0 && (e = (0, i.jsx)(_.A, {
+        return null != n && n > 0 && (e = (0, i.jsx)(c.A, {
             className: m.qS,
             value: n,
             lowImportance: s
@@ -217,7 +217,7 @@ class b extends r.Component {
             voiceStates: e,
             channel: t
         } = this.props;
-        return null == e ? null : (0, i.jsx)(g.A, {
+        return null == e ? null : (0, i.jsx)(I.A, {
             className: m.x7,
             guildId: t.guild_id,
             users: e.map(e => {
@@ -249,7 +249,7 @@ class b extends r.Component {
     getAccessibilityLabel() {
         let {
             channel: e
-        } = this.props, t = I.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, C.default, h.A), i = (0, c.A)(e);
+        } = this.props, t = g.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, C.default, h.A), i = (0, _.A)(e);
         return f.intl.formatToPlainString(f.t["Vw/da+"], {
             name: n,
             type: i,
@@ -300,7 +300,7 @@ class N extends r.Component {
             mentions: t,
             channel: n
         } = this.props;
-        return null != t && t > 0 && (e = (0, i.jsx)(_.A, {
+        return null != t && t > 0 && (e = (0, i.jsx)(c.A, {
             className: m.qS,
             value: t
         })), (0, i.jsxs)("div", {
@@ -391,7 +391,7 @@ class L extends r.Component {
                 mentions: n
             } = this.props,
             r = this.getDisplayNickname();
-        return null != n && n > 0 && (e = (0, i.jsx)(_.A, {
+        return null != n && n > 0 && (e = (0, i.jsx)(c.A, {
             className: m.qS,
             value: n
         })), (0, i.jsxs)("div", {
@@ -558,7 +558,7 @@ class y extends r.Component {
         })
     }
 }
-class U extends r.Component {
+class G extends r.Component {
     renderContent() {
         let e, t, {
             navigationRecord: n,

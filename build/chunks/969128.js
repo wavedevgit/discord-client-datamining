@@ -28,11 +28,11 @@ function A(n) {
         label: e ? o.intl.string(o.t["3zySTA"]) : o.intl.string(o.t["9mysCh"]),
         action: () => g()
     });
-    let h = u ? o.intl.string(o.t.M5PWSf) : o.intl.string(o.t.RMpwZu);
+    let _ = u ? o.intl.string(o.t.M5PWSf) : o.intl.string(o.t.RMpwZu);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(l.Drp, {
             id: "opt-in-favorite-channel",
-            label: h,
+            label: _,
             action: () => {
                 (0, a.jA)(n.guild_id, n.id, !u, {
                     section: c.JJy.CONTEXT_MENU

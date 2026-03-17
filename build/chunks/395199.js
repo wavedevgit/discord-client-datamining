@@ -1,44 +1,44 @@
 /** chunk id: 395199 params = (module,exports,require) **/
 e.d(n, {
-    default: () => f
+    default: () => s
 });
 var i = e(627968),
     a = e(64700),
-    o = e(158954),
-    l = e(397927),
+    l = e(158954),
+    o = e(397927),
     r = e(422258),
-    s = e(985018);
+    u = e(985018);
 
-function f(t) {
+function s(t) {
     let {
         onClose: n,
         transitionState: e
-    } = t, [f, u] = a.useState("");
+    } = t, [s, f] = a.useState("");
     return (0, i.jsx)("form", {
         onSubmit: function(t) {
-            t.preventDefault(), (0, r.od)(f), n()
+            t.preventDefault(), (0, r.od)(s, "modal"), n()
         },
-        children: (0, i.jsx)(o.Modal, {
-            title: s.intl.string(s.t["ISN+NM"]),
+        children: (0, i.jsx)(l.Modal, {
+            title: u.intl.string(u.t["ISN+NM"]),
             actions: [{
-                text: s.intl.string(s.t["ETE/oC"]),
+                text: u.intl.string(u.t["ETE/oC"]),
                 onClick: n,
                 variant: "secondary"
             }, {
-                text: s.intl.string(s.t["ISN+NM"]),
+                text: u.intl.string(u.t["ISN+NM"]),
                 variant: "primary",
                 type: "submit",
                 autoFocus: !1,
-                disabled: "" === f
+                disabled: "" === s
             }],
             transitionState: e,
             onClose: n,
-            children: (0, i.jsx)(l.ksK, {
-                label: s.intl.string(s.t.OCAkGP),
-                value: f,
-                onChange: u,
+            children: (0, i.jsx)(o.ksK, {
+                label: u.intl.string(u.t.OCAkGP),
+                value: s,
+                onChange: f,
                 maxLength: 100,
-                placeholder: s.intl.string(s.t.eTVbtx),
+                placeholder: u.intl.string(u.t.eTVbtx),
                 autoFocus: !0
             })
         })

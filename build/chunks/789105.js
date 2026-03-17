@@ -12,7 +12,9 @@ function l(e) {
             id: t
         }
     } = e;
-    (0, r.i_)(t)
+    (0, r.i_)(t, {
+        trackAnalytics: !1
+    })
 }
 class s extends a.A {
     _initialize() {

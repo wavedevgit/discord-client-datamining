@@ -1,54 +1,59 @@
 /** chunk id: 168088 params = (module,exports,require) **/
 i.d(e, {
-    default: () => h
+    default: () => _
 });
 var a = i(627968),
-    s = i(397927),
-    c = i(793574),
-    n = i(688810),
-    d = i(532794),
-    p = i(976860),
-    r = i(652215),
-    l = i(788868),
-    o = i(665606),
-    u = i(985018),
-    f = i(988572);
+    c = i(64700),
+    n = i(397927),
+    s = i(793574),
+    d = i(688810),
+    p = i(532794),
+    r = i(976860),
+    l = i(668267),
+    o = i(652215),
+    u = i(788868),
+    f = i(665606),
+    h = i(985018),
+    v = i(988572);
 
-function h(t) {
+function _(t) {
     let {
         onClose: e,
-        ...i
+        source: i = "channel_context_menu",
+        ..._
     } = t, {
-        analyticsLocations: h
-    } = (0, n.Ay)(c.A.FAVORITES_GUILD_UPSELL_MODAL);
-    return (0, a.jsx)(s.kpP, {
-        ...i,
+        analyticsLocations: b
+    } = (0, d.Ay)(s.A.FAVORITES_GUILD_UPSELL_MODAL);
+    return c.useEffect(() => {
+        (0, l.XC)(i)
+    }, [i]), (0, a.jsx)(n.kpP, {
+        ..._,
         onClose: e,
         badge: {
             type: "beta",
             variant: "expressive"
         },
-        title: u.intl.string(o.default.aA0vO8),
-        subtitle: u.intl.string(o.default["WaP/lz"]),
+        title: h.intl.string(f.default.aA0vO8),
+        subtitle: h.intl.string(f.default["WaP/lz"]),
         graphic: {
-            src: f.A,
+            src: v.A,
             type: "image",
             aspectRatio: "16/9"
         },
         actions: [{
-            text: u.intl.string(o.default["+dSwhE"]),
+            text: h.intl.string(f.default["+dSwhE"]),
             variant: "secondary",
             onClick: () => {
-                e(), (0, p.uh)(r.YYv)
+                e(), (0, l.mv)("upsell_modal"), (0, r.uh)(o.YYv)
             }
         }, {
-            text: u.intl.string(u.t.pj0XBN),
+            text: h.intl.string(h.t.pj0XBN),
             variant: "expressive",
-            icon: s.tvc,
+            icon: n.tvc,
             onClick: () => {
-                e(), (0, d.A)({
-                    subscriptionTier: l.pe.TIER_2,
-                    analyticsLocations: h
+                e(), (0, p.A)({
+                    subscriptionTier: u.pe.TIER_2,
+                    analyticsLocations: b
                 })
             }
         }]

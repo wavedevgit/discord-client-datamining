@@ -3,8 +3,8 @@ t.d(n, {
     Qo: () => f,
     V: () => A,
     W1: () => h,
-    ml: () => v,
-    vb: () => b
+    ml: () => _,
+    vb: () => v
 });
 var i = t(64700),
     r = t(311907),
@@ -32,7 +32,7 @@ function h(e) {
     return (0, u.xJ)(e)
 }
 
-function v(e) {
+function _(e) {
     let {
         messageReference: n
     } = e, t = (0, r.bG)([o.A], () => null != n ? o.A.getMessage(n.channel_id, n.message_id) : null);
@@ -47,7 +47,7 @@ function v(e) {
     }, [t, n])
 }
 
-function b(e) {
+function v(e) {
     let n = e?.messageSnapshots[0]?.moderatorReport?.reported_user_id;
     null != n && (0, a.wz)(n)
 }

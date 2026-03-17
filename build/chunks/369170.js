@@ -30,7 +30,8 @@ function g(e) {
                 default: e
             } = await n.e("59839").then(n.bind(n, 889186));
             return t => (0, i.jsx)(e, {
-                ...t
+                ...t,
+                source: "favorites_empty_state"
             })
         })
     }, []);

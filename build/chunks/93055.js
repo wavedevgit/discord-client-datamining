@@ -1,10 +1,10 @@
 /** chunk id: 93055 params = (module,exports,require) **/
 t.d(n, {
-    Af: () => b,
-    CJ: () => E,
-    DZ: () => _,
-    Rm: () => p,
-    TW: () => v
+    Af: () => v,
+    CJ: () => b,
+    DZ: () => p,
+    Rm: () => E,
+    TW: () => _
 }), t(321073);
 var i = t(478437),
     r = t(311907);
@@ -21,7 +21,7 @@ var u = t(181079),
     A = t(652215),
     h = t(788868);
 
-function v(e) {
+function _(e) {
     let {
         enabled: n,
         hasHigherPrivileges: t
@@ -35,23 +35,23 @@ function v(e) {
     }
 }
 
-function b(e) {
+function v(e) {
     return (0, r.bG)([u.A], () => u.A.getFavorite(e))
 }
 
-function p() {
+function E() {
     return (0, r.bG)([l.Ay], () => l.Ay.getChannels(A.YYv))[i.r.GUILD_CATEGORY].map(e => ({
         id: "null" === e.channel.id ? null : e.channel.id,
         name: e.channel.name
     }))
 }
 
-function _() {
+function p() {
     let e = (0, r.bG)([a.A], () => a.A.getGuildId());
     return (0, f.ai)(e)
 }
 
-function E() {
+function b() {
     let e = (0, c.J)(e => e.favoriteAdded);
     return {
         favoriteAdded: e,
