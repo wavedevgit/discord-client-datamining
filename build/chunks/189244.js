@@ -36,7 +36,7 @@ function f() {
         E = (0, i.bG)([o.A], () => o.A.getProduct(T?.skuId)),
         N = (0, i.bG)([r.A], () => r.A.fontSize),
         I = (0, i.bG)([r.A], () => r.A.messageGroupSpacing),
-        R = h.Xi.useSetting();
+        k = h.Xi.useSetting();
     return (0, x.DB)(), (0, a.jsxs)("div", {
         className: _.kL,
         children: [(0, a.jsxs)("div", {
@@ -86,7 +86,7 @@ function f() {
                 children: ["Message Spacing: ", I]
             }), (0, a.jsxs)(l.Text, {
                 variant: "text-md/normal",
-                children: ["UI Density: ", R, " (", function(e) {
+                children: ["UI Density: ", k, " (", function(e) {
                     switch (e) {
                         case s.NS.COMPACT:
                             return "Compact";
@@ -99,7 +99,7 @@ function f() {
                         default:
                             return "Unknown"
                     }
-                }(R), ")"]
+                }(k), ")"]
             })]
         })]
     })

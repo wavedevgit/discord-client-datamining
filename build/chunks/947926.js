@@ -30,8 +30,8 @@ var a = n(627968),
     E = n(568329),
     N = n(818276),
     I = n(742860),
-    R = n(783569),
-    k = n(963713),
+    k = n(783569),
+    R = n(963713),
     O = n(717695),
     w = n(899592),
     D = n(546350),
@@ -185,14 +185,14 @@ function V(e) {
                         [B.E$]: ea,
                         [B.KA]: Q
                     }),
-                    children: (0, a.jsx)(R.R, {
+                    children: (0, a.jsx)(k.R, {
                         springConfig: ec,
                         isExpanded: ea,
                         children: (0, a.jsx)(E.oK, {
                             expandedContentRef: ey,
                             collapsedContentRef: eT,
                             expansionSpring: eo,
-                            children: (0, a.jsxs)(k.C, {
+                            children: (0, a.jsxs)(R.C, {
                                 quest: t,
                                 taskDetails: eE,
                                 isExpanded: ea,

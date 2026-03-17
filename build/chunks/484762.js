@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(395011),
     N = n(127242),
     I = n(869014),
-    R = n(379078),
-    k = n(704554),
+    k = n(379078),
+    R = n(704554),
     O = n(528772),
     w = n(555528),
     D = n(157257),
@@ -898,7 +898,7 @@ let eb = ["__webpack_require__", "fn"],
         }
     }],
     eC = {
-        searchType: R.n.REGEX,
+        searchType: k.n.REGEX,
         searchStringGenerator: e => {
             let {
                 name: t,
@@ -928,14 +928,14 @@ function ey() {
             if (n(e)) return !0
         }
         return !1
-    }), [A, p, u, o, C]), [E, I] = i.useState(S), [R, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === R), [A, R]), D = i.useCallback(e => {
+    }), [A, p, u, o, C]), [E, I] = i.useState(S), [k, O] = i.useState(null), w = i.useMemo(() => A.find(e => e.key === k), [A, k]), D = i.useCallback(e => {
         I(e)
     }, []), {
         renderSelectedTab: M
     } = (0, z.Ay)({
         tabs: eA
     }, []);
-    (0, k.RT)(y, S, D, eC, [A]);
+    (0, R.RT)(y, S, D, eC, [A]);
     let P = i.useCallback(e => {
             r(e), g.A.setModuleLogging(e)
         }, []),
@@ -1041,7 +1041,7 @@ function ey() {
             children: (0, a.jsx)(K.A, {
                 columns: e_,
                 data: E,
-                selectedRowKey: R ?? void 0,
+                selectedRowKey: k ?? void 0,
                 onClickRow: e => O(e.key)
             })
         }), null != w && (0, a.jsx)(H.A, {
@@ -1118,7 +1118,7 @@ let eN = e => {
         }
     },
     eI = e => null == e ? "Disabled" : e ? "True" : "False",
-    eR = i.memo(function() {
+    ek = i.memo(function() {
         let e = (0, y.wW)(),
             t = (0, c.bG)([M.Ay], () => M.Ay.getOverlayKeybind());
         return (0, a.jsxs)("div", {
@@ -1200,11 +1200,11 @@ let eN = e => {
         })
     });
 
-function ek() {
+function eR() {
     return (0, a.jsx)(h.ArX, {
         children: (0, a.jsx)("div", {
             className: l()(J.nd, Y.rf),
-            children: (0, a.jsx)(eR, {})
+            children: (0, a.jsx)(ek, {})
         })
     })
 }
@@ -1248,6 +1248,6 @@ function eO() {
                     children: "Experiments"
                 })
             })]
-        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(ek, {})]
+        }), "state" === e && (0, a.jsx)(eE, {}), "logging" === e && (0, a.jsx)(ey, {}), "experiments" === e && (0, a.jsx)(eR, {})]
     })
 }

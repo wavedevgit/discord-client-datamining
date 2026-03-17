@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(31432),
     N = n(915614),
     I = n(223330),
-    R = n(559506),
-    k = n(646986),
+    k = n(559506),
+    R = n(646986),
     O = n(379654),
     w = n(946356),
     D = n(810396),
@@ -107,7 +107,7 @@ function ei(e) {
             eI(!1)
         }, 500)
     }, []);
-    let eR = e => {
+    let ek = e => {
             n?.(), (0, T.openUserProfileModal)({
                 customStatusPrompt: eE,
                 sourceAnalyticsLocations: eo,
@@ -115,8 +115,8 @@ function ei(e) {
                 ...e
             })
         },
-        ek = er?.widgets != null && er.widgets.length > 0,
-        eO = ek ? [] : [c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+        eR = er?.widgets != null && er.widgets.length > 0,
+        eO = eR ? [] : [c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
         [ew, eD] = (0, f.kn)(eO),
         eM = ew === c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
         eP = i.useCallback(() => {
@@ -143,7 +143,7 @@ function ei(e) {
                 "data-layer": "base",
                 children: [(0, a.jsx)(Q.A, {
                     displayProfile: er,
-                    handleOpenUserProfileModal: eR,
+                    handleOpenUserProfileModal: ek,
                     height: eu
                 }), (0, a.jsxs)(w.A, {
                     className: en.BK,
@@ -160,7 +160,7 @@ function ei(e) {
                             user: t,
                             displayProfile: er,
                             themeType: ee.d.POPOUT,
-                            onOpenProfile: el ? void 0 : eR
+                            onOpenProfile: el ? void 0 : ek
                         }), (0, a.jsx)(P.A, {
                             ref: ey,
                             user: t,
@@ -173,13 +173,13 @@ function ei(e) {
                         style: {
                             pointerEvents: eN ? "none" : void 0
                         },
-                        children: [(0, a.jsx)(R.A, {
+                        children: [(0, a.jsx)(k.A, {
                             userId: t.id
                         }), (0, a.jsx)(D.A, {
                             user: t,
                             className: en.Xh,
                             nickname: V.Ay.getName(void 0, null, t),
-                            onOpenProfile: el ? void 0 : eR,
+                            onOpenProfile: el ? void 0 : ek,
                             pronouns: er?.pronouns,
                             tags: (0, a.jsx)(E.A, {
                                 displayProfile: er,
@@ -197,17 +197,17 @@ function ei(e) {
                             bio: er?.bio,
                             hidePersonalInformation: e_,
                             onClose: n
-                        }), ek && (0, a.jsx)(O.A, {
+                        }), eR && (0, a.jsx)(O.A, {
                             user: t,
                             widgets: er?.widgets,
-                            onOpenUserProfileModal: eR
+                            onOpenUserProfileModal: ek
                         }), (0, a.jsx)(I.A, {
                             isPremiumUser: eC,
                             onInteraction: n
-                        }), (0, a.jsx)(k.A, {
+                        }), (0, a.jsx)(R.A, {
                             user: t,
                             currentUser: t,
-                            onOpenUserProfileModal: eR,
+                            onOpenUserProfileModal: ek,
                             onClose: n
                         }), (0, a.jsxs)("div", {
                             className: en.T_,
