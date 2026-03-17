@@ -1,6 +1,6 @@
 /** chunk id: 327866 params = (module,exports,require) **/
 n.d(t, {
-    A: () => T
+    A: () => C
 });
 var i = n(64700),
     a = n(311907),
@@ -16,10 +16,9 @@ var i = n(64700),
     _ = n(994500),
     m = n(485296),
     g = n(723702),
-    p = n(837921),
-    E = n(652215);
-let I = (0, g.isMac)() ? null : "DEFAULT";
-class f extends i.PureComponent {
+    p = n(837921);
+let E = (0, g.isMac)() ? null : "DEFAULT";
+class I extends i.PureComponent {
     getIcon = () => {
         let {
             deafened: e,
@@ -27,7 +26,7 @@ class f extends i.PureComponent {
             speaking: n,
             connected: i,
             unread: a
-        } = this.props, r = I;
+        } = this.props, r = E;
         return (0, g.isMac)() && !i ? r : (0, g.isLinux)() || !i ? (a && (r = "UNREAD"), r) : r = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
     };
     componentDidMount() {
@@ -37,20 +36,18 @@ class f extends i.PureComponent {
         p.Ay.setSystemTrayIcon(this.getIcon())
     }
     componentWillUnmount() {
-        p.Ay.setSystemTrayIcon(I)
+        p.Ay.setSystemTrayIcon(E)
     }
     render() {
         return null
     }
 }
-let C = () => null;
+let f = () => null;
 g.isPlatformEmbedded && (p.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", () => r.A.toggleSelfMute({
     location: "System Tray"
 })), p.Ay.on("SYSTEM_TRAY_TOGGLE_DEAFEN", () => r.A.toggleSelfDeaf()), p.Ay.on("SYSTEM_TRAY_OPEN_VOICE_SETTINGS", () => {
-    (0, d.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
-        section: E.nc_.VOICE
-    })
-}), C = a.Ay.connectStores([h.A, u.Ay, m.A, c.default, _.A, A.A, l.A], () => {
+    (0, d.openUserSettings)(o.X.VOICE_CATEGORY)
+}), f = a.Ay.connectStores([h.A, u.Ay, m.A, c.default, _.A, A.A, l.A], () => {
     let e = c.default.getTotalMentionCount(),
         t = c.default.hasAnyUnread(),
         n = (0, s.dH)([_.A, l.A]),
@@ -62,5 +59,5 @@ g.isPlatformEmbedded && (p.Ay.on("SYSTEM_TRAY_TOGGLE_MUTE", () => r.A.toggleSelf
         deafened: u.Ay.isSelfDeaf(),
         unread: i
     }
-})(f));
-let T = C
+})(I));
+let C = f

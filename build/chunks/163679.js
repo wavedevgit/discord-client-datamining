@@ -90,14 +90,14 @@ let C = function(e) {
     (0, l.Ay)(() => {
         N()
     });
-    let O = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
+    let R = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
     return (0, a.jsxs)("div", {
         className: b.Tp,
         children: [(0, a.jsx)("img", {
             className: b.xX,
             src: j,
             alt: ""
-        }), O ? (0, a.jsx)(o.default, {
+        }), R ? (0, a.jsx)(o.default, {
             transitionState: t ?? g.ip.ENTERED,
             entryPoint: r.q1.SAFETY_FLOWS,
             onClose: _.tE,

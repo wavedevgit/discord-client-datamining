@@ -39,9 +39,7 @@ function j() {
 }
 
 function y() {
-    (0, f.openUserSettings)(S.X.GIFT_PANEL, {
-        section: N.nc_.INVENTORY
-    })
+    (0, f.openUserSettings)(S.X.GIFT_PANEL)
 }
 
 function R(e) {

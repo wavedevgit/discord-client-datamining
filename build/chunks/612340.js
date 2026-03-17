@@ -14,9 +14,7 @@ class u extends a.PureComponent {
     render() {
         return (0, i.jsx)(s.A, {
             guild: this.props.guild,
-            onClick: () => (0, l.openUserSettings)(r.X.ACCOUNT_PANEL, {
-                section: o.nc_.ACCOUNT
-            }),
+            onClick: () => (0, l.openUserSettings)(r.X.ACCOUNT_PANEL),
             message: d.intl.format(d.t["oCd+at"], {}),
             cta: d.intl.string(d.t["8dCrV9"]),
             trackingSource: o.kZU.GUILD_MFA_WARNING,

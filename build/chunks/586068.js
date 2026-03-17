@@ -21,8 +21,8 @@ var i = n(627968),
     u = n(769015),
     A = n(263063),
     E = n(376943),
-    I = n(636585),
-    g = n(71393),
+    g = n(636585),
+    I = n(71393),
     h = n(994500),
     C = n(287809),
     p = n(427262),
@@ -217,7 +217,7 @@ class b extends r.Component {
             voiceStates: e,
             channel: t
         } = this.props;
-        return null == e ? null : (0, i.jsx)(I.A, {
+        return null == e ? null : (0, i.jsx)(g.A, {
             className: m.x7,
             guildId: t.guild_id,
             users: e.map(e => {
@@ -249,7 +249,7 @@ class b extends r.Component {
     getAccessibilityLabel() {
         let {
             channel: e
-        } = this.props, t = g.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, C.default, h.A), i = (0, _.A)(e);
+        } = this.props, t = I.A.getGuild(this.props.channel.guild_id)?.name, n = (0, o.m1)(e, C.default, h.A), i = (0, _.A)(e);
         return f.intl.formatToPlainString(f.t["Vw/da+"], {
             name: n,
             type: i,

@@ -13,48 +13,48 @@ var a = s(627968),
     u = s(840065),
     m = s(954571),
     x = s(427262),
-    _ = s(761546),
-    f = s(677185),
+    f = s(761546),
+    _ = s(677185),
     h = s(233317),
     p = s(783437),
     b = s(298492),
     g = s(88001),
     v = s(652215),
-    S = s(519412),
-    N = s(985018),
+    N = s(519412),
+    S = s(985018),
     j = s(300296),
-    C = s(788396);
-let I = e => {
+    k = s(788396);
+let C = e => {
         let {
             onInvite: t,
             onClose: s,
             subscriptionId: d,
             ...o
-        } = e, [u, f] = i.useState([]), [b, C] = i.useState(""), I = (0, c.A)(b, 400), k = (0, r.bG)([h.A], () => h.A.getNumAvailableInvites()), {
+        } = e, [u, _] = i.useState([]), [b, k] = i.useState(""), C = (0, c.A)(b, 400), I = (0, r.bG)([h.A], () => h.A.getNumAvailableInvites()), {
             eligibleUsers: A,
             getNextRows: E,
             hasError: y,
             isFetching: M
         } = (0, p.A)({
             subscriptionId: d,
-            searchQuery: I
+            searchQuery: C
         }), [R, T] = i.useState(!1), P = i.useCallback(e => {
-            f(t => t.filter(t => !e.has(t.id)))
-        }, [f]), U = i.useMemo(() => u.map(e => ({
+            _(t => t.filter(t => !e.has(t.id)))
+        }, [_]), U = i.useMemo(() => u.map(e => ({
             id: e.id,
             label: x.Ay.getName(e)
         })), [u]);
         return y ? (0, a.jsx)(l.Modal, {
             size: "sm",
-            title: N.intl.string(S.default["54lM5y"]),
-            subtitle: N.intl.string(S.default.zrtwpV),
+            title: S.intl.string(N.default["54lM5y"]),
+            subtitle: S.intl.string(N.default.zrtwpV),
             onClose: s,
             actions: [],
             ...o
-        }) : 0 !== A.length || M || 0 !== I.length ? (0, a.jsx)(l.Modal, {
+        }) : 0 !== A.length || M || 0 !== C.length ? (0, a.jsx)(l.Modal, {
             size: "md",
-            title: N.intl.string(S.default["Um/7BM"]),
-            subtitle: N.intl.format(S.default.qSWXaf, {
+            title: S.intl.string(N.default["Um/7BM"]),
+            subtitle: S.intl.format(N.default.qSWXaf, {
                 totalSeats: g.LM,
                 premiumGroupProductName: (0, g.DP)(),
                 helpCenterLink: g.TE
@@ -64,11 +64,11 @@ let I = e => {
                 className: j.c,
                 children: (0, a.jsx)(n.ksK, {
                     value: b,
-                    onChange: C,
-                    placeholder: 0 === u.length ? N.intl.string(S.default.wRS8vo) : "",
+                    onChange: k,
+                    placeholder: 0 === u.length ? S.intl.string(N.default.wRS8vo) : "",
                     leading: {
                         type: "tags",
-                        label: N.intl.string(S.default["Um/7BM"]),
+                        label: S.intl.string(N.default["Um/7BM"]),
                         items: U,
                         onRemove: P
                     }
@@ -78,7 +78,7 @@ let I = e => {
             actionBarInput: (0, a.jsx)(n.Button, {
                 variant: "primary",
                 disabled: 0 === u.length || R,
-                text: N.intl.string(S.default["5fZHp3"]),
+                text: S.intl.string(N.default["5fZHp3"]),
                 size: "md",
                 fullWidth: !0,
                 onClick: async () => {
@@ -88,23 +88,23 @@ let I = e => {
                 }
             }),
             ...o,
-            children: (0, a.jsx)(_.A, {
+            children: (0, a.jsx)(f.A, {
                 users: A,
                 isUserSelected: e => u.some(t => t.id === e.id),
                 onSelectionChange: (e, t) => {
-                    f(s => t ? [...s, e] : s.filter(t => t.id !== e.id)), t && C("")
+                    _(s => t ? [...s, e] : s.filter(t => t.id !== e.id)), t && k("")
                 },
-                isUserDisabled: e => u.length >= k && !u.some(t => t.id === e.id) || !e.eligible,
+                isUserDisabled: e => u.length >= I && !u.some(t => t.id === e.id) || !e.eligible,
                 isFetching: M,
                 onFetchMore: E,
-                searchQuery: I,
+                searchQuery: C,
                 emptySearchContent: {
-                    header: N.intl.string(S.default.gaamNe),
-                    body: N.intl.string(S.default.nQcM39)
+                    header: S.intl.string(N.default.gaamNe),
+                    body: S.intl.string(N.default.nQcM39)
                 },
                 className: j.p_,
                 tooltipConfig: {
-                    text: e => N.intl.formatToPlainString(S.default["5tzM9V"], {
+                    text: e => S.intl.formatToPlainString(N.default["5tzM9V"], {
                         disabledUserName: x.Ay.getName(e),
                         premiumGroupProductName: (0, g.DP)()
                     }),
@@ -113,8 +113,8 @@ let I = e => {
             })
         }) : (0, a.jsx)(l.Modal, {
             size: "sm",
-            title: N.intl.string(S.default.ONaJLH),
-            subtitle: N.intl.format(S.default["0LHbPc"], {
+            title: S.intl.string(N.default.ONaJLH),
+            subtitle: S.intl.format(N.default["0LHbPc"], {
                 helpCenterLink: g.TE
             }),
             onClose: s,
@@ -122,7 +122,7 @@ let I = e => {
             ...o
         })
     },
-    k = e => {
+    I = e => {
         let {
             onClose: t,
             inviteUsersResult: s,
@@ -131,18 +131,16 @@ let I = e => {
         return (0, a.jsx)(l.ExpressiveModal, {
             graphic: {
                 type: "image",
-                src: C.A
+                src: k.A
             },
             gradientColor: "nitro-pink",
-            title: N.intl.formatToPlainString(S.default.MIiPur, {
+            title: S.intl.formatToPlainString(N.default.MIiPur, {
                 premiumGroupProductName: (0, g.DP)(),
                 sentCount: s.filter(e => e.isSuccess).length
             }),
-            subtitle: N.intl.format(S.default.olkQkj, {
+            subtitle: S.intl.format(N.default.olkQkj, {
                 onClick: () => {
-                    t(), (0, u.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
-                        section: v.nc_.SUBSCRIPTIONS
-                    })
+                    t(), (0, u.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL)
                 }
             }),
             onClose: t,
@@ -172,7 +170,7 @@ let I = e => {
             let s = new Map,
                 a = [];
             for (let t of e) s.set(t.id, t), a.push(t.id);
-            let i = await (0, f.n2)(t.id, a);
+            let i = await (0, _.n2)(t.id, a);
             if (null == i) {
                 m.default.track(v.HAw.PREMIUM_GROUP_INVITE_FRIENDS_RESULT, {
                     successful_user_ids: [],
@@ -198,11 +196,11 @@ let I = e => {
                 isSuccess: !1
             }))]), o(2)
         };
-        return 1 === c ? (0, a.jsx)(I, {
+        return 1 === c ? (0, a.jsx)(C, {
             ...l,
             onInvite: u,
             subscriptionId: t.id
-        }) : 2 === c ? (0, a.jsx)(k, {
+        }) : 2 === c ? (0, a.jsx)(I, {
             ...l,
             inviteUsersResult: r
         }) : void 0

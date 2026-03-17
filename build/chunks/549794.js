@@ -106,9 +106,7 @@ let S = new Set([N.AM, N.eK]),
                     let {
                         openUserSettings: e
                     } = n(840065);
-                    e(h.X.CONNECTIONS_PANEL, {
-                        section: T.nc_.CONNECTIONS
-                    })
+                    e(h.X.CONNECTIONS_PANEL)
                 }
             }
         },

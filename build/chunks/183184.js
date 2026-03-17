@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(627968);
 n(64700);
 var a = n(397927),
-    i = n(827343),
-    l = n(579872),
+    l = n(827343),
+    i = n(579872),
     s = n(48686),
     u = n(985018);
 
@@ -18,13 +18,13 @@ function o(e, t, o) {
         return t => (0, r.jsx)(e, {
             ...t
         })
-    }) : t ? l.A.show({
+    }) : t ? i.A.show({
         title: u.intl.string(u.t.FJSZVM),
         body: u.intl.string(u.t.etJjgW)
-    }) : e ? l.A.show({
+    }) : e ? i.A.show({
         title: u.intl.string(u.t["+JQCa/"]),
         body: u.intl.string(u.t.hsNm7d)
-    }) : i.A.toggleSelfMute({
+    }) : l.A.toggleSelfMute({
         location: o
     })
 }

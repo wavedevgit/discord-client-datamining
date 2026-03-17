@@ -1,7 +1,7 @@
 /** chunk id: 635071 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D,
-    w: () => U
+    A: () => U,
+    w: () => D
 });
 var i, l = n(627968),
     r = n(64700),
@@ -29,16 +29,16 @@ var i, l = n(627968),
     x = n(560936),
     f = n(743981),
     P = n(679740),
-    U = ((i = {})[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES", i);
+    D = ((i = {})[i.SYSTEM_TAG = 0] = "SYSTEM_TAG", i[i.BADGES = 1] = "BADGES", i);
 
-function D(e) {
+function U(e) {
     let {
         author: t,
         message: n,
         channel: i,
         userOverride: s,
-        compact: U = !1,
-        withMentionPrefix: D = !1,
+        compact: D = !1,
+        withMentionPrefix: U = !1,
         showPopout: M = !1,
         hideGuildTag: L = !1,
         hideSystemTag: j = !1,
@@ -52,7 +52,7 @@ function D(e) {
         subscribeToGroupId: F
     } = e, V = r.useRef(null), $ = r.useContext(m.A), W = i?.guild_id ?? $, {
         analyticsLocations: q
-    } = (0, A.Ay)(T.A.USERNAME), X = D ? "@" : "", {
+    } = (0, A.Ay)(T.A.USERNAME), X = U ? "@" : "", {
         nick: K,
         colorString: z,
         colorStrings: J,
@@ -104,8 +104,8 @@ function D(e) {
         userId: n.author.id,
         contextGuildId: W,
         className: P.s4,
-        badgeSize: U ? f.Sl.SIZE_12 : void 0
-    }), [U, t.primaryGuild, W, n.author.id, L]), eA = s ?? n.author, eI = null != B && null != M ? (0, l.jsx)(g.A, {
+        badgeSize: D ? f.Sl.SIZE_12 : void 0
+    }), [D, t.primaryGuild, W, n.author.id, L]), eA = s ?? n.author, eI = null != B && null != M ? (0, l.jsx)(g.A, {
         targetElementRef: V,
         user: eA,
         renderPopout: B,
@@ -143,7 +143,7 @@ function D(e) {
     }), eN = null != w ? w[0] : null, ep = null != w ? w[1] : null;
     return (0, l.jsxs)(A.f5, {
         value: q,
-        children: [null != eN && !j && U ? (0, l.jsxs)(l.Fragment, {
+        children: [null != eN && !j && D ? (0, l.jsxs)(l.Fragment, {
             children: [" ", eN, " "]
         }) : null, "dot" === Z ? (0, l.jsx)(_.WYI, {
             color: z,
@@ -151,6 +151,6 @@ function D(e) {
             name: Y,
             className: P.m4,
             hoverOverride: es
-        }) : null, eI, null != ep ? ep : null, null == eN || j || U ? null : eN]
+        }) : null, eI, null != ep ? ep : null, null == eN || j || D ? null : eN]
     })
 }

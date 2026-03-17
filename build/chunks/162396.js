@@ -14,9 +14,9 @@ var r = n(627968),
     d = n(809465),
     m = n(652215),
     f = n(985018),
-    g = n(535790);
+    h = n(535790);
 
-function h(e) {
+function g(e) {
     let {
         onClose: t
     } = e;
@@ -50,7 +50,7 @@ function p() {
         children: [(0, r.jsx)(d.A, {
             compact: !0
         }), (0, r.jsxs)("div", {
-            className: g.yJ,
+            className: h.yJ,
             children: [(0, r.jsx)(l.MzZ, {
                 href: m.X7G.PRIVACY,
                 children: (0, r.jsx)(l.Text, {
@@ -60,7 +60,7 @@ function p() {
                     children: f.intl.string(f.t["Knf/f/"])
                 })
             }), (0, r.jsx)("span", {
-                className: g.xE,
+                className: h.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(l.MzZ, {
@@ -72,7 +72,7 @@ function p() {
                     children: f.intl.string(f.t.uFSTGq)
                 })
             }), (0, r.jsx)("span", {
-                className: g.xE,
+                className: h.xE,
                 "aria-hidden": "true",
                 children: "•"
             }), (0, r.jsx)(l.YNO, {
@@ -85,7 +85,7 @@ function p() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, r.jsx)(h, {
+                    return (0, r.jsx)(g, {
                         onClose: t
                     })
                 },
@@ -93,8 +93,8 @@ function p() {
                     ...t,
                     ref: e,
                     useDefaultUnderlineStyles: !1,
-                    className: s()(g.Mj, {
-                        [g.vu]: n.isShown
+                    className: s()(h.Mj, {
+                        [h.vu]: n.isShown
                     }),
                     children: (0, r.jsx)(l.Text, {
                         tag: "span",

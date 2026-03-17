@@ -32,7 +32,7 @@ var a = n(627968),
 function I(e) {
     return parseFloat(e.toFixed(3))
 }
-let O = [{
+let R = [{
     key: "store",
     cellClassName: E.lA,
     render(e) {
@@ -52,7 +52,7 @@ let O = [{
     }
 }];
 
-function R(e) {
+function k(e) {
     let {
         actionLog: t
     } = e, n = i.useMemo(() => t.traces.map(e => ({
@@ -61,12 +61,12 @@ function R(e) {
     })), [t]);
     return (0, a.jsx)(h.IpV, {
         children: (0, a.jsx)(y.A, {
-            columns: O,
+            columns: R,
             data: n
         })
     })
 }
-let k = [{
+let O = [{
     id: "action",
     name: "Action",
     group: T.fu.NONE,
@@ -104,7 +104,7 @@ let k = [{
         let {
             actionLog: t
         } = e;
-        return (0, a.jsx)(R, {
+        return (0, a.jsx)(k, {
             actionLog: t
         })
     }
@@ -114,7 +114,7 @@ function w(e) {
     let {
         actionLog: t,
         initialHeight: n
-    } = e, s = i.useMemo(() => t.error ? [...k, {
+    } = e, s = i.useMemo(() => t.error ? [...O, {
         id: "error",
         name: (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)(f.A, {
@@ -146,7 +146,7 @@ function w(e) {
                 })]
             })
         }
-    }] : k, [t]), {
+    }] : O, [t]), {
         TabBar: r,
         renderSelectedTab: o
     } = (0, T.Ay)({

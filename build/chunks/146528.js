@@ -259,10 +259,7 @@ let U = e => {
                         null != r && ((0, C.pX)(P.BVt.CHANNEL(r.id, D.VV.ROLE_SUBSCRIPTIONS)), (0, b.default)(), _.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
                             S.A.setState({
                                 subsection: L.nR
-                            }), (0, N.openUserSettings)(f.X.SUBSCRIPTIONS_PANEL, {
-                                section: P.nc_.SUBSCRIPTIONS,
-                                subsection: L.nR
-                            })
+                            }), (0, N.openUserSettings)(f.X.SUBSCRIPTIONS_PANEL)
                         }))
                     },
                     onResubscribeClick: Y

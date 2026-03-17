@@ -152,9 +152,7 @@ function R(e) {
                         text: I.intl.string(I.t["ETE/oC"])
                     })
                 }), (0, i.jsx)(f.A, {
-                    onClick: () => (0, p.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-                        section: b.nc_.GUILD_BOOSTING
-                    }),
+                    onClick: () => (0, p.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
                     text: I.intl.string(I.t["NQ5g/U"])
                 })]
             })]

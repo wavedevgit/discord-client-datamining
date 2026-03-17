@@ -26,10 +26,7 @@ function A(e) {
             onClick: () => {
                 r.A.setState({
                     subsection: c.nR
-                }), (0, s.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL, {
-                    section: d.nc_.SUBSCRIPTIONS,
-                    subsection: c.nR
-                })
+                }), (0, s.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL)
             }
         })]
     }) : null

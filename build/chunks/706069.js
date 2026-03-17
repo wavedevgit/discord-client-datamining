@@ -15,8 +15,8 @@ var n = i(627968),
     u = i(954571),
     p = i(67521),
     A = i(739010),
-    _ = i(207913),
-    x = i(393033),
+    x = i(207913),
+    _ = i(393033),
     g = i(335891),
     E = i(985481),
     f = i(259960),
@@ -24,9 +24,9 @@ var n = i(627968),
     v = i(246505),
     j = i(239093),
     y = i(652215),
-    C = i(985018),
+    L = i(985018),
     N = i(976213);
-let L = e => {
+let C = e => {
         let {
             classificationTypeText: t,
             guildMetadata: i
@@ -37,10 +37,10 @@ let L = e => {
                     children: e
                 }, t)
             };
-            return null == i ? C.intl.format(C.t.HpvELh, e) : i?.member_type === A.Z9.OWNER ? C.intl.format(C.t.X1ngSd, {
+            return null == i ? L.intl.format(L.t.HpvELh, e) : i?.member_type === A.Z9.OWNER ? L.intl.format(L.t.X1ngSd, {
                 ...e,
                 guildName: i?.name
-            }) : C.intl.format(C.t.rmpEPD, {
+            }) : L.intl.format(L.t.rmpEPD, {
                 ...e,
                 guildName: i?.name
             })
@@ -59,7 +59,7 @@ let L = e => {
             children: [(0, n.jsx)(d.Text, {
                 variant: "eyebrow",
                 color: "text-muted",
-                children: C.intl.string(C.t["O2nYk+"])
+                children: L.intl.string(L.t["O2nYk+"])
             }), (0, n.jsxs)("ul", {
                 className: N.nq,
                 children: [t.map(e => (0, n.jsx)(I, {
@@ -70,7 +70,7 @@ let L = e => {
                         tag: "span",
                         variant: "heading-md/normal",
                         color: "text-default",
-                        children: C.intl.format(C.t.TByIjT, {
+                        children: L.intl.format(L.t.TByIjT, {
                             expirationDate: i.toLocaleDateString(a, {
                                 dateStyle: "medium"
                             })
@@ -115,7 +115,7 @@ let L = e => {
                 className: N.wC,
                 children: (0, n.jsx)(d.Text, {
                     variant: "text-md/normal",
-                    children: C.intl.format(C.t.zxUdpj, {
+                    children: L.intl.format(L.t.zxUdpj, {
                         classificationDescription: t
                     })
                 })
@@ -131,12 +131,12 @@ let L = e => {
     w = () => (0, n.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: C.intl.string(C.t["I2H0/E"])
+        children: L.intl.string(L.t["I2H0/E"])
     }),
     O = e => (0, n.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: C.intl.format(C.t.IFxUaT, {
+        children: L.intl.format(L.t.IFxUaT, {
             letUsKnowHook: (t, i) => (0, n.jsx)(d.MzZ, {
                 href: e.isAppealEligible ? void 0 : e.appealLink,
                 onClick: e.letUsKnowClick,
@@ -164,11 +164,11 @@ let L = e => {
             children: [(0, n.jsx)(d.Text, {
                 variant: "eyebrow",
                 color: "text-muted",
-                children: C.intl.string(C.t["977iei"])
+                children: L.intl.string(L.t["977iei"])
             }), (0, n.jsx)(d.Text, {
                 className: N.t8,
                 variant: "text-sm/normal",
-                children: C.intl.format(C.t["1Z/+aA"], {
+                children: L.intl.format(L.t["1Z/+aA"], {
                     tosLink: t,
                     communityGuidelinesLink: i
                 })
@@ -187,10 +187,10 @@ let L = e => {
         } = e, {
             classification: d,
             classificationRequestState: h,
-            isAppealEligible: C,
+            isAppealEligible: L,
             isDsaEligible: I,
             violationType: S
-        } = (0, E.LJ)(t), w = (0, c.bG)([_.A], () => _.A.getAppealEligibility()), O = (0, g.K)(), P = null != d && null != d.flagged_content && d.flagged_content.length > 0, D = (0, f.v)(), b = !!d?.is_coppa && w.includes(A.RH.AGE_VERIFY_ELIGIBLE), G = !!d?.is_coppa && w.includes(A.RH.AGE_VERIFY_GLOBAL_ELIGIBLE), H = {
+        } = (0, E.LJ)(t), w = (0, c.bG)([x.A], () => x.A.getAppealEligibility()), O = (0, g.K)(), P = null != d && null != d.flagged_content && d.flagged_content.length > 0, D = (0, f.v)(), b = !!d?.is_coppa && w.includes(A.RH.AGE_VERIFY_ELIGIBLE), G = !!d?.is_coppa && w.includes(A.RH.AGE_VERIFY_GLOBAL_ELIGIBLE), H = {
             accountStanding: O,
             classificationId: t,
             hasFlaggedContent: P,
@@ -222,7 +222,7 @@ let L = e => {
             className: N.ch,
             children: [(0, n.jsx)("div", {
                 className: N.uW,
-                children: (0, n.jsx)(L, {
+                children: (0, n.jsx)(C, {
                     classificationTypeText: d.description,
                     guildMetadata: d?.guild_metadata
                 })
@@ -232,7 +232,7 @@ let L = e => {
                     flaggedContent: d.flagged_content ?? []
                 }), (0, n.jsx)(U, {
                     actions: d.actions,
-                    classificationExpiration: (0, x.UI)(d)
+                    classificationExpiration: (0, _.UI)(d)
                 }), (0, n.jsx)(M, {
                     classificationTypeText: d.description,
                     tosLink: j.d$.TOS_LINK,
@@ -249,11 +249,11 @@ let L = e => {
                                 is_violative_content_shown: P,
                                 is_dsa_eligible: I,
                                 violation_type: S
-                            }), G ? p.A.openV2(t, r) : b ? p.A.open(t, r) : C && (m.A.increment({
+                            }), G ? p.A.openV2(t, r) : b ? p.A.open(t, r) : L && (m.A.increment({
                                 name: o.K.APPEAL_INGESTION_VIEW
                             }), T.A.open(t))
                         },
-                        isAppealEligible: C || b
+                        isAppealEligible: L || b
                     })
                 })]
             })]

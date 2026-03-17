@@ -41,9 +41,7 @@ function y(e) {
         });
         return n || !a ? null : (0, i.jsx)(l.Drp, {
             id: "xbox-connect",
-            action: () => (0, g.openUserSettings)(m.X.CONNECTIONS_PANEL, {
-                section: S.nc_.CONNECTIONS
-            }),
+            action: () => (0, g.openUserSettings)(m.X.CONNECTIONS_PANEL),
             label: x.intl.formatToPlainString(x.t.XWSHTb, {
                 platform: v
             })

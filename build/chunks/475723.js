@@ -31,9 +31,9 @@ var i = n(627968),
 n(500208);
 var f = n(2242),
     P = n(985018),
-    U = n(840199);
+    D = n(840199);
 
-function D(e) {
+function U(e) {
     let {
         className: t,
         onClick: n,
@@ -42,8 +42,8 @@ function D(e) {
     } = e;
     return (0, i.jsx)(d.$n, {
         buttonRef: r,
-        className: s()(U.x6, t),
-        innerClassName: U.hZ,
+        className: s()(D.x6, t),
+        innerClassName: D.hZ,
         look: d.$n.Looks.OUTLINED,
         color: d.$n.Colors.WHITE,
         size: d.$n.Sizes.NONE,
@@ -56,7 +56,7 @@ function M(e) {
     let {
         onClick: t
     } = e;
-    return (0, i.jsx)(D, {
+    return (0, i.jsx)(U, {
         onClick: t,
         children: P.intl.string(P.t.R9GHya)
     })
@@ -100,28 +100,28 @@ function L() {
         };
     return (0, i.jsxs)(u.$Td, {
         color: u.Hv$.BRAND,
-        className: U.lm,
-        children: [(0, i.jsxs)(D, {
+        className: D.lm,
+        children: [(0, i.jsxs)(U, {
             onClick: () => v({
                 backToSettings: !0
             }),
-            className: U.Gv,
+            className: D.Gv,
             children: [(0, i.jsx)(R.A, {
                 width: 16,
                 height: 16,
                 direction: R.A.Directions.LEFT,
-                className: U.lJ
+                className: D.lJ
             }), L]
         }), b && d ? (0, i.jsx)("div", {
-            className: U.XI,
+            className: D.XI,
             children: (0, i.jsx)("div", {
-                className: U.ut,
+                className: D.ut,
                 children: P.intl.string(P.t.PxbiAf)
             })
         }) : (0, i.jsxs)("div", {
-            className: U.XI,
+            className: D.XI,
             children: [(0, i.jsx)("div", {
-                className: U.ut,
+                className: D.ut,
                 children: d ? P.intl.formatToPlainString(P.t["0PHahI"], {
                     numRoles: Object.keys(r).length
                 }) : P.intl.formatToPlainString(P.t.vMlK8t, {
@@ -137,14 +137,14 @@ function L() {
                     let {
                         onClick: n
                     } = t;
-                    return (0, i.jsxs)(D, {
+                    return (0, i.jsxs)(U, {
                         onClick: n,
                         buttonRef: e,
                         children: [j, (0, i.jsx)(h.A, {
                             width: 16,
                             height: 16,
                             direction: h.A.Directions.DOWN,
-                            className: U.k5
+                            className: D.k5
                         })]
                     })
                 }
@@ -179,9 +179,9 @@ function j(e) {
         guildId: t
     } = e;
     return (0, a.bG)([C.A], () => C.A.isViewingRoles(t)) ? (0, i.jsx)("div", {
-        className: s()(U.xd, {
-            [U.KF]: (0, S.isWindows)(),
-            [U.Xz]: (0, S.isMac)()
+        className: s()(D.xd, {
+            [D.KF]: (0, S.isWindows)(),
+            [D.Xz]: (0, S.isMac)()
         }),
         children: (0, i.jsx)(L, {})
     }) : null

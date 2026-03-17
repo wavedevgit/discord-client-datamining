@@ -14,8 +14,8 @@ var r = n(627968),
     d = n(894858),
     m = n(272053),
     f = n(189857),
-    g = n(674085),
-    h = n(215566),
+    h = n(674085),
+    g = n(215566),
     p = n(362205),
     y = n(71862);
 
@@ -49,9 +49,9 @@ function _(e) {
             case "destructive":
                 return o.LU0.colors.ICON_FEEDBACK_CRITICAL
         }
-    }(b), N = _?.(a), S = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(g.A, {
+    }(b), N = _?.(a), S = i.useMemo(() => null != c ? a ? null : (0, r.jsx)(h.A, {
         badge: c
-    }) : null != N ? (0, r.jsx)(h.A, {
+    }) : null != N ? (0, r.jsx)(g.A, {
         badge: N
     }) : void 0, [a, c, N]);
     return (0, r.jsxs)(t, {
@@ -86,18 +86,18 @@ function x(e) {
         visibleContent: n,
         dismissibleBadges: a,
         hoisted: s = !1
-    } = e, o = i.useMemo(() => t.layout[0], [t]), g = d.A.useField("currentPanelKey"), {
-        accessibleDirectory: h
+    } = e, o = i.useMemo(() => t.layout[0], [t]), h = d.A.useField("currentPanelKey"), {
+        accessibleDirectory: g
     } = (0, c._)(), y = i.useMemo(() => {
-        if (null == g) return !1;
-        let e = h.entry(g);
+        if (null == h) return !1;
+        let e = g.entry(h);
         return e?.parentSidebarItemKey === t.key
-    }, [g, t.key, h]), x = i.useMemo(() => {
+    }, [h, t.key, g]), x = i.useMemo(() => {
         if (null == o || !(0, u.Iu)(o.layout)) return null;
         let e = o.layout.filter(u.bJ);
         return e.length > 1 ? e : null
     }, [o]), b = null != o ? () => {
-        let e = g === o.key && null != x ? x[0].key : o.key;
+        let e = h === o.key && null != x ? x[0].key : o.key;
         m.A.navigate(e, {
             animateSidebarScroll: !0,
             showNavigationMobile: !1

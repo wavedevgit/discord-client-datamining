@@ -13,8 +13,8 @@ var a = s(284009),
     r = s.n(a),
     i = s(562465),
     n = s(73153),
-    c = s(427157),
-    l = s(825772),
+    l = s(427157),
+    c = s(825772),
     _ = s(652215);
 async function d() {
     n.h.dispatch({
@@ -46,7 +46,7 @@ async function u(e, t, s, a) {
     let {
         users: r,
         next_index: n,
-        ineligible_users: l
+        ineligible_users: c
     } = (await i.Bo.get({
         url: _.Rsh.BILLING_SUBSCRIPTION_ELIGIBLE_USERS(e),
         query: {
@@ -58,9 +58,9 @@ async function u(e, t, s, a) {
         rejectWithError: !0
     })).body;
     return {
-        users: [...r.map(e => Object.assign(new c.A(e), {
+        users: [...r.map(e => Object.assign(new l.A(e), {
             eligible: !0
-        })), ...(l ?? []).map(e => Object.assign(new c.A(e), {
+        })), ...(c ?? []).map(e => Object.assign(new l.A(e), {
             eligible: !1
         }))],
         nextIndex: n
@@ -118,7 +118,7 @@ async function o(e) {
         let t = (await i.Bo.get({
                 url: _.Rsh.BILLING_SUBSCRIPTION_MEMBERS(e),
                 rejectWithError: !0
-            })).body.map(l.A.createFromServer),
+            })).body.map(c.A.createFromServer),
             s = t.find(e => e.isPrimary());
         return r()(null != s, "Primary member not found in premium group"), n.h.dispatch({
             type: "PREMIUM_GROUP_MEMBERS_FETCH_SUCCESS",

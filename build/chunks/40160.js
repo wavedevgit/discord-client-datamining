@@ -39,9 +39,7 @@ function A(e) {
         }, 1e3);
     if (!f) return null;
     T || (t = N ? _.intl.format(_.t.nFwNyR, {
-        settingsHook: () => (0, d.openUserSettings)(o.X.ACCOUNT_PANEL, {
-            section: h.nc_.ACCOUNT
-        })
+        settingsHook: () => (0, d.openUserSettings)(o.X.ACCOUNT_PANEL)
     }) : _.intl.string(_.t["9Ghu40"]));
     let I = n.features.has(h.GuildFeatures.DISCOVERABLE);
     return (0, i.jsxs)("div", {

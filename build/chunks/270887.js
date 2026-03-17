@@ -14,8 +14,8 @@ var i = n(735438),
     u = n(309010),
     A = n(967198),
     E = n(711014),
-    I = n(287809),
-    g = n(619921),
+    g = n(287809),
+    I = n(619921),
     h = n(265422),
     C = n(652215);
 let p = r().throttle(function() {
@@ -35,11 +35,11 @@ let p = r().throttle(function() {
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (p += e) || (0, _.J)(o.A, I.default, A.A, {
+    if (-1 !== (p += e) || (0, _.J)(o.A, g.default, A.A, {
             favoritesGuildXPEnabled: n,
             isMenuItemDCSelected: i,
             isIntroDCDismissed: r
-        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, h.a)(g.A.getHomeLink());
+        }) || (p += e), -3 === p && (p = t.length - 1), p >= t.length || -2 === p) return void(0, h.a)(I.A.getHomeLink());
     let f = -1 === p ? C.YYv : t[p],
         m = u.A.getChannelId(f);
     (0, h.i)(f, m === f ? null : m, !1)

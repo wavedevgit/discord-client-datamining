@@ -36,8 +36,8 @@ function y(e) {
         children: t,
         initialTab: n,
         guildId: r
-    } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(r)), O = (0, a.bG)([E.A], () => E.A.isViewingServerShop(r)), y = (0, m.P)(s, "guild_shop_page"), x = (0, p.YZ)(r, "guild_shop_page"), f = s?.features.has(g.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) === !0, P = (0, _.Oh)(s?.id), U = (0, u.Tq)(r)?.server_shop_tab_order, D = [], M = R.B.GUILD_SHOP_FULL_PREVIEW;
-    O || f && P ? (D.push(U === h.HA.PRODUCTS_FIRST ? R.B.GUILD_PRODUCTS : R.B.GUILD_ROLE_SUBSCRIPTIONS), D.push(U === h.HA.PRODUCTS_FIRST ? R.B.GUILD_ROLE_SUBSCRIPTIONS : R.B.GUILD_PRODUCTS), M = D[0]) : f && !P ? (D.push(R.B.GUILD_PRODUCTS), M = R.B.GUILD_PRODUCTS) : !f && P && (D.push(R.B.GUILD_ROLE_SUBSCRIPTIONS), M = R.B.GUILD_ROLE_SUBSCRIPTIONS, y && D.push(R.B.GUILD_PRODUCTS_PREVIEW)), n = n ?? M;
+    } = e, s = (0, a.bG)([I.A], () => I.A.getGuild(r)), O = (0, a.bG)([E.A], () => E.A.isViewingServerShop(r)), y = (0, m.P)(s, "guild_shop_page"), x = (0, p.YZ)(r, "guild_shop_page"), f = s?.features.has(g.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE) === !0, P = (0, _.Oh)(s?.id), D = (0, u.Tq)(r)?.server_shop_tab_order, U = [], M = R.B.GUILD_SHOP_FULL_PREVIEW;
+    O || f && P ? (U.push(D === h.HA.PRODUCTS_FIRST ? R.B.GUILD_PRODUCTS : R.B.GUILD_ROLE_SUBSCRIPTIONS), U.push(D === h.HA.PRODUCTS_FIRST ? R.B.GUILD_ROLE_SUBSCRIPTIONS : R.B.GUILD_PRODUCTS), M = U[0]) : f && !P ? (U.push(R.B.GUILD_PRODUCTS), M = R.B.GUILD_PRODUCTS) : !f && P && (U.push(R.B.GUILD_ROLE_SUBSCRIPTIONS), M = R.B.GUILD_ROLE_SUBSCRIPTIONS, y && U.push(R.B.GUILD_PRODUCTS_PREVIEW)), n = n ?? M;
     let [L, j] = l.useState(n), b = y && !(P && x) || L === R.B.GUILD_PRODUCTS_PREVIEW;
     return l.useEffect(() => {
         j(n)
@@ -45,7 +45,7 @@ function y(e) {
         value: {
             selectedTab: L,
             setSelectedTab: j,
-            categoryTabs: D,
+            categoryTabs: U,
             isPhantomPreview: b,
             handlePreviewDismiss: e => {
                 (0, d.Dr)(o.M.SERVER_SHOP_PHANTOM_PREVIEW);

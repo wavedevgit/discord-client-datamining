@@ -13,11 +13,10 @@ n.d(t, {
         }), t;
         let a = l;
         t.type === i.Z6.SIDEBAR_ITEM && (a = {
-            ...l,
             sidebarItem: t.key,
             panel: t.layout[0]
         }), t.type === i.Z6.PANEL && (a = {
-            ...l,
+            sidebarItem: l.sidebarItem,
             panel: t
         }), t.type === i.Z6.NESTED_PANEL && (a = {
             ...l,

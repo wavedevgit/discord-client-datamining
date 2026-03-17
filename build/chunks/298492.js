@@ -1,6 +1,6 @@
 /** chunk id: 298492 params = (module,exports,require) **/
 s.d(t, {
-    q: () => _
+    q: () => f
 });
 var a = s(627968);
 s(64700);
@@ -14,14 +14,14 @@ var i = s(503698),
     u = s(519412),
     m = s(985018),
     x = s(712685);
-let _ = e => {
+let f = e => {
     let {
         recipient: t,
         isSuccess: s,
         onClose: i
     } = e, {
-        avatarSrc: _,
-        eventHandlers: f
+        avatarSrc: f,
+        eventHandlers: _
     } = (0, c.A)({
         userId: t?.id,
         size: r._3J.SIZE_56
@@ -31,10 +31,10 @@ let _ = e => {
             [x.z3]: p
         }),
         children: [(0, a.jsx)(r.euF, {
-            src: _,
+            src: f,
             "aria-label": h,
             size: r._3J.SIZE_32,
-            ...f
+            ..._
         }), (0, a.jsxs)("div", {
             className: x.Qs,
             children: [(0, a.jsx)(r.Heading, {

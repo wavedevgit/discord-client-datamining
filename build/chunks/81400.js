@@ -54,17 +54,19 @@ function m(e) {
     } = e, u = (0, l.bG)([c.A], () => c.A.getGuild(t), [t]), _ = (0, l.bG)([d.A], () => null != u && d.A.can(E.xBc.CHANGE_NICKNAME, u), [u]);
     return [i.useCallback(() => {
         if (null == u) return;
-        let e = E.nc_.PROFILE_CUSTOMIZATION,
-            t = A.Eq.GUILD;
-        _ ? (0, r.V2)(u.id) : t = A.Eq.USER_PROFILE;
+        E.nc_.PROFILE_CUSTOMIZATION;
+        let e = A.Eq.GUILD;
+        _ ? (0, r.V2)(u.id) : e = A.Eq.USER_PROFILE;
         {
             let {
-                openUserSettings: i
-            } = n(840065);
-            i(s.X.PROFILE_PANEL, {
-                section: e,
-                subsection: t,
-                scrollPosition: a,
+                openUserSettings: t
+            } = n(840065), {
+                default: i
+            } = n(955838);
+            i.setState({
+                subsection: e,
+                scrollPosition: a
+            }), t(s.X.PROFILE_PANEL, {
                 analyticsLocations: o
             })
         }

@@ -19,8 +19,8 @@ function c(e) {
         isUserDisabled: u,
         searchQuery: m = "",
         emptySearchContent: x,
-        className: _,
-        tooltipConfig: f
+        className: f,
+        tooltipConfig: _
     } = e, h = (0, i.K)(e => {
         e && !d && o?.()
     });
@@ -36,13 +36,13 @@ function c(e) {
             children: x.body
         })]
     }) : (0, a.jsxs)(l.d_W, {
-        className: _,
+        className: f,
         children: [t.map(e => (0, a.jsx)(r.A, {
             user: e,
             checked: s(e),
             disabled: !!u?.(e),
             onChange: c,
-            tooltipConfig: f
+            tooltipConfig: _
         }, e.id)), d && (0, a.jsx)(l.y$y, {}), (0, a.jsx)("div", {
             ref: h
         })]

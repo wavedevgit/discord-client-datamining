@@ -1,6 +1,6 @@
 /** chunk id: 244975 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D,
+    A: () => U,
     F: () => M
 });
 var i = n(627968),
@@ -30,16 +30,16 @@ var i = n(627968),
     x = n(652215),
     f = n(985018),
     P = n(953239),
-    U = n(669149);
+    D = n(669149);
 
-function D(e) {
+function U(e) {
     let {
         title: t,
         type: n,
         guildBoostProps: r,
         analyticsSource: a,
         analyticsLocation: S,
-        body: D,
+        body: U,
         context: M,
         glowUp: L,
         modalClassName: j,
@@ -142,7 +142,7 @@ function D(e) {
             children: [eS, K ? (0, i.jsx)("img", {
                 className: P.CI,
                 alt: "",
-                src: U
+                src: D
             }) : null]
         }), (0, i.jsx)(d.$mQ, {
             "data-migration-pending": !0,
@@ -175,7 +175,7 @@ function D(e) {
                     }) : void 0, er, (0, i.jsx)(d.Text, {
                         variant: eo ? "text-sm/normal" : "text-md/normal",
                         className: s()(B, P.uI),
-                        children: D
+                        children: U
                     })]
                 })]
             })

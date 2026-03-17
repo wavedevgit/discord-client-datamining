@@ -37,27 +37,27 @@ let C = (0, r.animated)(p.Ay),
             onCtxMenuSelect: E,
             isExpanded: N,
             isExpansionAnimationComplete: I,
-            quest: O
-        } = i.useContext(f.T), R = i.useCallback(() => {
-            (0, g.Zc)(O, {
+            quest: R
+        } = i.useContext(f.T), k = i.useCallback(() => {
+            (0, g.Zc)(R, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_DISCLOSURE,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [O]), k = i.useCallback(() => {
-            (0, m.pu)(O, {
+        }, [R]), O = i.useCallback(() => {
+            (0, m.pu)(R, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
                 impressionId: p,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [p, O]), w = N && I, D = (0, a.jsx)(o.DUT, {
-            onClick: k,
+        }, [p, R]), w = N && I, D = (0, a.jsx)(o.DUT, {
+            onClick: O,
             className: l()(A.vk, {
                 [A.wm]: w
             }),
             children: (0, a.jsx)(C, {
-                quest: O,
+                quest: R,
                 withGameTile: !1,
                 logotypeClassName: A.Iu,
                 logotypeStyle: {
@@ -101,7 +101,7 @@ let C = (0, r.animated)(p.Ay),
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: A.y8,
-                    onClick: R,
+                    onClick: k,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",
@@ -121,7 +121,7 @@ let C = (0, r.animated)(p.Ay),
                     onClose: S,
                     onSelect: E,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: O,
+                    quest: R,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,

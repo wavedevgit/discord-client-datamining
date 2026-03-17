@@ -71,9 +71,7 @@ function v(e) {
         }), (0, l.jsx)(i.QWc, {
             text: h.intl.string(h.t.olebGx),
             onClick: () => {
-                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
-                    section: p.nc_.CONTENT_AND_SOCIAL
-                }), a(), d.Ay.trackWithMetadata(p.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
+                (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL), a(), d.Ay.trackWithMetadata(p.HAw.IAR_SETTINGS_UPSELLS_ACTION, {
                     report_id: s,
                     report_type: o.name,
                     report_subtype: v,

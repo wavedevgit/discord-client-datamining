@@ -33,14 +33,14 @@ function A(e, t, n) {
         withCurrentVoiceChannel: s = !1
     } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, l = arguments.length > 4 ? arguments[4] : void 0, o = (0, r.bG)([_.default], () => _.default.getGuildChangeSentinel(e)), u = (0, r.bG)([d.A], () => d.A.version), {
         currentVoiceChannelId: A,
-        selectedChannelId: I
+        selectedChannelId: g
     } = (0, r.cf)([c.A], () => ({
         currentVoiceChannelId: c.A.getVoiceChannelId(),
         selectedChannelId: c.A.getChannelId()
     }));
     return (0, i.useMemo)(() => E(t, {
         currentVoiceChannelId: A,
-        selectedChannelId: I
+        selectedChannelId: g
     }, {
         withVoiceChannels: a,
         withCurrentVoiceChannel: s

@@ -14,11 +14,11 @@ var i = n(310953),
     u = n(645959),
     A = n(403362),
     E = n(265422),
-    I = n(652215),
-    g = n(746080);
+    g = n(652215),
+    I = n(746080);
 let h = () => {
     let e = s.A.getMessageRequestsCount() > 0 || l.A.getSpamChannelsCount() > 0;
-    return [I.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? I.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? I.BVt.APPLICATION_LIBRARY : null, e ? I.BVt.MESSAGE_REQUESTS : null, I.BVt.APPLICATION_STORE, I.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? I.BVt.FAMILY_CENTER : null, I.BVt.QUEST_HOME].filter(A.Vq)
+    return [g.BVt.FRIENDS, (0, a.HF)("navigateToChannel") ? g.BVt.ICYMI : null, _.A.hasLibraryApplication() && !d.l_.getSetting() ? g.BVt.APPLICATION_LIBRARY : null, e ? g.BVt.MESSAGE_REQUESTS : null, g.BVt.APPLICATION_STORE, g.BVt.COLLECTIBLES_SHOP, d.dm.getSetting() ? g.BVt.FAMILY_CENTER : null, g.BVt.QUEST_HOME].filter(A.Vq)
 };
 
 function C() {
@@ -35,14 +35,14 @@ function C() {
         let _ = l[d];
         if (h().includes(_)) {
             let e;
-            e = c.A.getCurrentRoute(), _ === I.BVt.APPLICATION_STORE && null != e ? (0, E.a)(e) : (0, E.a)(_)
-        } else n = I.ME, (0, E.i)(n, _)
+            e = c.A.getCurrentRoute(), _ === g.BVt.APPLICATION_STORE && null != e ? (0, E.a)(e) : (0, E.a)(_)
+        } else n = g.ME, (0, E.i)(n, _)
     }(e);
     else {
         var n, a, s;
         let l, d;
         l = o.A.getState().channelId, d = (0, i.A)(t, {
             withCurrentVoiceChannel: !0
-        }).map(e => e.id), (0, r.K)(t) && d.unshift(g.VV.GUILD_HOME), n = (null != l ? d.indexOf(l) : -1) + e, a = d.length, s = d[n < 0 ? a - 1 : n >= a ? 0 : n], (0, E.i)(t, s)
+        }).map(e => e.id), (0, r.K)(t) && d.unshift(I.VV.GUILD_HOME), n = (null != l ? d.indexOf(l) : -1) + e, a = d.length, s = d[n < 0 ? a - 1 : n >= a ? 0 : n], (0, E.i)(t, s)
     }
 }

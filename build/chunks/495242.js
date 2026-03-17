@@ -1,6 +1,6 @@
 /** chunk id: 495242 params = (module,exports,require) **/
 n.d(t, {
-    Z: () => x
+    Z: () => p
 });
 var a = n(627968);
 n(64700);
@@ -10,27 +10,24 @@ var i = n(397927),
     r = n(341915),
     o = n(18437),
     d = n(590202),
-    c = n(652215),
-    u = n(985018),
-    m = n(805180);
+    c = n(985018),
+    u = n(805180);
 
-function h(e) {
+function m(e) {
     let {
         text: t,
         quest: n,
-        sourceQuestContent: u
-    } = e, h = (0, o.Ut)();
+        sourceQuestContent: c
+    } = e, m = (0, o.Ut)();
     return (0, a.jsx)(i.DUT, {
-        className: m.Z0,
+        className: u.Z0,
         onClick: () => {
-            h({
+            m({
                 questId: n.id,
                 questContent: r.uF.QUEST_BAR_V2,
                 questContentCTA: d.Cy.VIEW_CONSOLE_CONNECTIONS_LINK,
-                sourceQuestContent: u
-            }), (0, l.openUserSettings)(s.X.CONNECTIONS_PANEL, {
-                section: c.nc_.CONNECTIONS
-            })
+                sourceQuestContent: c
+            }), (0, l.openUserSettings)(s.X.CONNECTIONS_PANEL)
         },
         children: (0, a.jsx)(i.Text, {
             "aria-label": t,
@@ -41,26 +38,26 @@ function h(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         xboxAndPlaystationAccounts: t,
         quest: n,
         sourceQuestContent: i
     } = e;
-    return t.length > 0 ? (0, a.jsx)(h, {
-        text: u.intl.string(u.t["qiS+xj"]),
+    return t.length > 0 ? (0, a.jsx)(m, {
+        text: c.intl.string(c.t["qiS+xj"]),
         quest: n,
         sourceQuestContent: i
     }) : null
 }
 
-function x(e) {
+function p(e) {
     return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)(i.Text, {
             color: "text-muted",
             variant: "text-xs/medium",
-            children: u.intl.string(u.t.EJFSvD)
-        }), (0, a.jsx)(p, {
+            children: c.intl.string(c.t.EJFSvD)
+        }), (0, a.jsx)(h, {
             ...e
         })]
     })

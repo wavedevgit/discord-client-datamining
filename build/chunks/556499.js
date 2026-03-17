@@ -170,8 +170,8 @@ function S(e) {
         [d, f] = i.useState(!1),
         [S, E] = i.useState(!1),
         [N, I] = i.useState(!1),
-        [O, R] = i.useState(!1),
-        [k, w] = i.useState(null),
+        [R, k] = i.useState(!1),
+        [O, w] = i.useState(null),
         D = e => {
             let t = new Date(e);
             return p.default.fromTimestamp(t.getTime())
@@ -281,7 +281,7 @@ function S(e) {
                 className: j.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        R(!O)
+                        k(!R)
                     },
                     className: j.Eh,
                     children: [(0, a.jsx)("div", {
@@ -290,9 +290,9 @@ function S(e) {
                             children: "Active Discount Info"
                         })
                     }), (0, a.jsx)(m.A, {
-                        direction: O ? m.A.Directions.UP : m.A.Directions.DOWN
+                        direction: R ? m.A.Directions.UP : m.A.Directions.DOWN
                     })]
-                }), O && (0, a.jsxs)("ul", {
+                }), R && (0, a.jsxs)("ul", {
                     className: j.j3,
                     children: [(0, a.jsxs)("li", {
                         children: [(0, a.jsx)(u.Text, {
@@ -390,11 +390,11 @@ function S(e) {
                                     })))
                                 }
                             })]
-                        }), null !== k && (0, a.jsx)("div", {
+                        }), null !== O && (0, a.jsx)("div", {
                             className: j.z3,
                             children: (0, a.jsx)(u.wx6, {
                                 type: "critical",
-                                children: k
+                                children: O
                             })
                         })]
                     }), (0, a.jsxs)(u.BJc, {

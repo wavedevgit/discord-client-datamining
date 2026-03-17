@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [O, R] = i.useState(8), [k, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [R, k] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -133,9 +133,9 @@ let A = {
             accessibilityLabel: C,
             reducedMotionSrc: "",
             thumbnailPreviewSrc: "",
-            effects: k,
+            effects: O,
             animationType: r.l.ANIMATION_TYPE_UNSPECIFIED
-        }), [k]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
+        }), [O]), F = T ? c.LU0.themes.DARKER : c.LU0.themes.LIGHT, V = e => {
             let t = e.currentTarget.files;
             return null == t ? null : t[0]
         }, W = (e, t) => {
@@ -185,11 +185,11 @@ let A = {
                 skuId: e.skuId,
                 name: U,
                 config: {
-                    effects: k,
+                    effects: O,
                     stillFrames: D
                 }
             })
-        }, [k, D, U]), i.useEffect(() => () => {
+        }, [O, D, U]), i.useEffect(() => () => {
             P.current.forEach(e => {
                 URL.revokeObjectURL(e)
             }), P.current = []
@@ -206,7 +206,7 @@ let A = {
                     onChange: e => {
                         let t = V(e);
                         null != t && (0, _.Mz)(t, async e => {
-                            let n = await (0, _.Ay)(e, t, k.length);
+                            let n = await (0, _.Ay)(e, t, O.length);
                             w(e => [...e, n])
                         })
                     },
@@ -278,16 +278,16 @@ let A = {
                         min: 4,
                         max: 24,
                         step: 2,
-                        value: O,
-                        onChange: e => R(+e.target.value)
+                        value: R,
+                        onChange: e => k(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
-                        children: [O, "px"]
+                        children: [R, "px"]
                     })]
                 }), (0, a.jsxs)("div", {
                     className: l()(v.nz, v.VH),
                     style: {
-                        borderRadius: O
+                        borderRadius: R
                     },
                     children: [N ? (0, a.jsx)("div", {
                         className: v.jq,
@@ -318,7 +318,7 @@ let A = {
                     children: N && (0, a.jsxs)("div", {
                         className: l()(v.f5, v.VH),
                         style: {
-                            borderRadius: O
+                            borderRadius: R
                         },
                         children: [(0, a.jsx)(h.A, {
                             user: s,
@@ -381,7 +381,7 @@ let A = {
                         }), (0, a.jsxs)("div", {
                             className: v.nM,
                             children: [(0, a.jsx)(u.A, {
-                                fileContents: () => (0, _.rs)(k),
+                                fileContents: () => (0, _.rs)(O),
                                 contentType: "text/plain",
                                 fileName: `${B}_timing_config.txt`,
                                 children: (0, a.jsx)(c.Button, {
@@ -396,7 +396,7 @@ let A = {
                                     readonly: !1,
                                     config: {
                                         ...t.config,
-                                        effects: k,
+                                        effects: O,
                                         stillFrames: D
                                     }
                                 }),
@@ -431,7 +431,7 @@ let A = {
                                 }, t)
                             })
                         })]
-                    }), k.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
+                    }), O.some(e => (e.randomizedSources ?? []).length > 0) && (0, a.jsxs)("div", {
                         className: l()(v.uW, v.l7),
                         children: [(0, a.jsx)(c.Text, {
                             variant: "text-md/bold",
@@ -459,7 +459,7 @@ let A = {
                                 w([]), M(A)
                             }
                         })
-                    }), k.map((e, t) => (0, a.jsxs)("div", {
+                    }), O.map((e, t) => (0, a.jsxs)("div", {
                         className: v.ec,
                         children: [(0, a.jsxs)("div", {
                             className: v.D1,

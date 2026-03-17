@@ -20,10 +20,10 @@ var i = n(627968),
     p = n(101058),
     T = n(207803),
     E = n(836602),
-    S = n(193658),
-    C = n(954571),
-    f = n(927578),
-    b = n(884546),
+    S = n(954571),
+    C = n(927578),
+    f = n(884546),
+    b = n(597551),
     N = n(230084),
     I = n(180020),
     v = n(212168),
@@ -41,7 +41,7 @@ function M(e) {
         user: t,
         isVisible: n,
         shouldShow: M
-    } = e, U = f.Ay.isPremium(t), k = f.Ay.canUseAnimatedAvatar(t), {
+    } = e, U = C.Ay.isPremium(t), k = C.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
         pendingThemeColors: w,
         tryItOutThemeColors: B,
@@ -60,18 +60,18 @@ function M(e) {
         preset: Y,
         onShuffle: z
     } = (0, _.A)(), X = s.useRef(null);
-    (0, S.A)(X, D._F.TRY_IT_OUT);
+    (0, b.A)(X, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         newestAnalyticsLocation: K,
         sourceAnalyticsLocations: Z
     } = (0, d.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), q = e => {
-        e && ((0, r.zq)(H), (0, T.Zz)(B), (0, T.Dv)(F), C.default.track(O.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, r.zq)(H), (0, T.Zz)(B), (0, T.Dv)(F), S.default.track(O.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: Y
         }))
     };
     s.useEffect(() => {
-        n && C.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
+        n && S.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
             type: P.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: O.liQ.USER_SETTINGS
@@ -90,7 +90,7 @@ function M(e) {
             type: v.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(b.A, {
+            children: [(0, i.jsx)(f.A, {
                 stickyPreview: !1,
                 layoutClassName: G.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {

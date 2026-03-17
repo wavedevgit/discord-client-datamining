@@ -1,6 +1,6 @@
 /** chunk id: 745109 params = (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => y
 });
 var i = n(627968),
     s = n(64700),
@@ -14,76 +14,82 @@ var i = n(627968),
     _ = n(836602),
     m = n(576622),
     g = n(740625),
-    A = n(955872),
-    h = n(71393),
-    x = n(967198),
-    p = n(711014),
-    T = n(287809),
-    E = n(203982),
-    S = n(115063),
-    C = n(894013),
-    f = n(652215),
-    b = n(355097),
-    N = n(985018),
-    I = n(298109);
+    A = n(841329),
+    h = n(955872),
+    x = n(71393),
+    p = n(967198),
+    T = n(711014),
+    E = n(287809),
+    S = n(203982),
+    C = n(115063),
+    f = n(955838),
+    b = n(652215),
+    N = n(355097),
+    I = n(985018),
+    v = n(298109);
+let j = {
+    [N.Eq.USER_PROFILE]: "main_profile_tab",
+    [N.Eq.GUILD]: "guild_profile_tab"
+};
 
-function v() {
-    let e = (0, r.bG)([x.A, p.Ay, _.A], () => {
-            let e = _.A.selectedGuildId ?? x.A.getGuildId();
-            return null == e || _._.has(e) ? p.Ay.getFlattenedGuildIds().find(e => !_._.has(e)) : e
+function y() {
+    let e = (0, r.bG)([p.A, T.Ay, _.A], () => {
+            let e = _.A.selectedGuildId ?? p.A.getGuildId();
+            return null == e || _._.has(e) ? T.Ay.getFlattenedGuildIds().find(e => !_._.has(e)) : e
         }),
-        t = (0, r.bG)([h.A], () => h.A.getGuild(e)),
+        t = (0, r.bG)([x.A], () => x.A.getGuild(e)),
         n = (0, r.bG)([_.A], () => _.A.showNotice()),
-        l = (0, r.bG)([T.default], () => T.default.getCurrentUser()),
-        {
-            subsection: v,
-            setSubsection: j
-        } = (0, C.A)();
+        l = (0, r.bG)([E.default], () => E.default.getCurrentUser()),
+        y = f.default.useField("subsection");
     return s.useEffect(() => {
+        (0, A._)(j[y])
+    }, [y]), s.useEffect(() => {
         null != l && t?.id != null && (0, m.A)(l.id, l.getAvatarURL(t?.id, 80), {
             guildId: t?.id
         })
     }, [t?.id, l]), (0, i.jsxs)(g.R, {
-        header: N.intl.string(N.t["vi7f+q"]),
+        header: I.intl.string(I.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
-            className: I.$H,
+            className: v.$H,
             type: "top",
             look: "brand",
-            selectedItem: v,
+            selectedItem: y,
             onItemSelect: function(e) {
-                if (v !== e) {
+                if (y !== e) {
                     if (n) {
-                        (0, S.fO)({
+                        (0, C.fO)({
                             duration: 300,
                             intensity: d.n3
-                        }), E._.dispatch(f.jej.EMPHASIZE_NOTICE);
+                        }), S._.dispatch(b.jej.EMPHASIZE_NOTICE);
                         return
                     }
-                    e === b.Eq.GUILD && null != t && (0, c.V2)(t.id), j(e)
+                    e === N.Eq.GUILD && null != t && (0, c.V2)(t.id), f.default.setState({
+                        subsection: e
+                    })
                 }
             },
             children: [(0, i.jsx)(o.VQ0.Item, {
-                className: I.YU,
-                id: b.Eq.USER_PROFILE,
-                children: N.intl.string(N.t["2p07FR"])
-            }, b.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
-                className: a()(I.YU, I.HY),
-                "aria-label": N.intl.string(N.t.kPHroX),
-                id: b.Eq.GUILD,
-                children: N.intl.string(N.t.kPHroX)
-            }, b.Eq.GUILD)]
-        }), v === b.Eq.GUILD ? (0, i.jsx)(u.A, {
+                className: v.YU,
+                id: N.Eq.USER_PROFILE,
+                children: I.intl.string(I.t["2p07FR"])
+            }, N.Eq.USER_PROFILE), (0, i.jsx)(o.VQ0.Item, {
+                className: a()(v.YU, v.HY),
+                "aria-label": I.intl.string(I.t.kPHroX),
+                id: N.Eq.GUILD,
+                children: I.intl.string(I.t.kPHroX)
+            }, N.Eq.GUILD)]
+        }), y === N.Eq.GUILD ? (0, i.jsx)(u.A, {
             selectedGuild: t,
             onGuildChange: function(e) {
                 if (n) {
-                    (0, S.fO)({
+                    (0, C.fO)({
                         duration: 300,
                         intensity: d.n3
-                    }), E._.dispatch(f.jej.EMPHASIZE_NOTICE);
+                    }), S._.dispatch(b.jej.EMPHASIZE_NOTICE);
                     return
                 }
                 null != e && (0, c.JJ)(e.id)
             }
-        }) : (0, i.jsx)(A.A, {})]
+        }) : (0, i.jsx)(h.A, {})]
     })
 }

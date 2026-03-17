@@ -32,9 +32,7 @@ let S = e => {
         autoTrackExposure: !1,
         disable: S
     }), C = l.useCallback(() => {
-        T.default.track(p.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, _.openUserSettings)(u.X.GIFT_PANEL, {
-            section: p.nc_.INVENTORY
-        }), d.Ay.dismissOutboundPromotionNotice()
+        T.default.track(p.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, _.openUserSettings)(u.X.GIFT_PANEL), d.Ay.dismissOutboundPromotionNotice()
     }, []);
     return null == n ? null : (0, i.jsx)(I.YS, {
         contentType: t,

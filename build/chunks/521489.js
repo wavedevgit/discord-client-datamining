@@ -1,7 +1,7 @@
 /** chunk id: 521489 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    N: () => g
+    N: () => h
 });
 var r = n(627968),
     i = n(64700),
@@ -15,21 +15,21 @@ var r = n(627968),
     m = n(538029),
     f = n(22789);
 
-function g(e) {
+function h(e) {
     let {
         transitionState: t,
         animationVariant: n = "default",
         returnRef: a,
-        "aria-label": g,
-        onClose: h,
+        "aria-label": h,
+        onClose: g,
         trackingProps: p,
         children: y
     } = e, _ = i.useId(), x = i.useMemo(() => ({
         id: _,
         headingId: `heading-${_}`,
-        onClose: h,
+        onClose: g,
         dismissable: !0
-    }), [_, h]), b = (0, d.NC)(), {
+    }), [_, g]), b = (0, d.NC)(), {
         theme: v
     } = (0, u.wRf)(), A = (0, c.kSI)(t, n);
     return (0, r.jsx)(c.Vs9.Provider, {
@@ -37,8 +37,8 @@ function g(e) {
         children: (0, r.jsx)(u.lGe, {
             id: _,
             role: "dialog",
-            "aria-label": g,
-            "aria-labelledby": null != g ? void 0 : x.headingId,
+            "aria-label": h,
+            "aria-labelledby": null != h ? void 0 : x.headingId,
             returnRef: a,
             ...p,
             impressionType: p?.impressionType ?? o.ImpressionTypes.MODAL,

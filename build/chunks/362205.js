@@ -14,8 +14,8 @@ var r = n(627968),
     d = n(837381),
     m = n(397927),
     f = n(775602),
-    g = n(253932),
-    h = n(894858),
+    h = n(253932),
+    g = n(894858),
     p = n(272053),
     y = n(189857),
     _ = n(674085),
@@ -32,8 +32,8 @@ function v(e) {
         useTitle: l,
         useSubnavLabel: c,
         key: u
-    } = t, f = l?.(), g = c?.() ?? f;
-    return o()(null != g, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
+    } = t, f = l?.(), h = c?.() ?? f;
+    return o()(null != h, "[SettingsSubnavigationCategory] Category must have a title"), (0, r.jsx)(d.tG, {
         id: u,
         children: e => (0, r.jsxs)(m.DUT, {
             onClick: n,
@@ -41,7 +41,7 @@ function v(e) {
                 [b.vu]: i
             }),
             ...e,
-            children: [g, null != a && !i && (0, r.jsx)(_.A, {
+            children: [h, null != a && !i && (0, r.jsx)(_.A, {
                 badge: a
             })]
         }, u)
@@ -54,11 +54,11 @@ function A(e) {
         visibleContent: n,
         dismissibleBadges: a
     } = e, [s, l] = i.useState(() => {
-        let e = h.A.getField("currentCategoryKey"),
+        let e = g.A.getField("currentCategoryKey"),
             n = t.find(t => t.key === e);
         return n?.key ?? t[0].key
     });
-    i.useEffect(() => h.A.subscribe(e => {
+    i.useEffect(() => g.A.subscribe(e => {
         let {
             currentCategoryKey: t
         } = e;
@@ -76,7 +76,7 @@ function A(e) {
             thumbAnchorRef: A,
             springs: j
         } = function(e) {
-            let t = g.Xi.useSetting(),
+            let t = h.Xi.useSetting(),
                 n = i.useRef(null),
                 r = i.useRef(null),
                 a = i.useRef(null),
@@ -95,10 +95,10 @@ function A(e) {
                 let e = l.current !== t,
                     i = () => {
                         if (null == n.current || null == r.current || null == a.current) return;
-                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, m = (u.y - i.y) / d, g = u.height / d;
-                        s.current || e || f.A.useReducedMotion ? (o.y.set(m), o.height.set(g)) : c({
+                        let [i, u] = [n.current.getBoundingClientRect(), a.current.getBoundingClientRect()], d = i.width / 2, m = (u.y - i.y) / d, h = u.height / d;
+                        s.current || e || f.A.useReducedMotion ? (o.y.set(m), o.height.set(h)) : c({
                             y: m,
-                            height: g
+                            height: h
                         }), s.current = !1, l.current = t
                     },
                     u = null;

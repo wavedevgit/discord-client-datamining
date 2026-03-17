@@ -54,7 +54,7 @@ function o(e) {
         }), g.current = !0, S({
             withDelay: !0
         })
-    }, [S, h, t.id]), O = a.useCallback(() => {
+    }, [S, h, t.id]), R = a.useCallback(() => {
         (0, s.av)({
             questId: t.id,
             event: r.HAw.QUEST_HOVER_OFF,
@@ -67,8 +67,8 @@ function o(e) {
         }), g.current = !1, N()
     }, [N, h, t.id]);
     return a.useEffect(() => {
-        v && O()
-    }, [v, O]), a.useLayoutEffect(() => {
+        v && R()
+    }, [v, R]), a.useLayoutEffect(() => {
         u && !m && g.current && d()
     }, [d, u, m]), a.useLayoutEffect(() => {
         c || !u || m || g.current || o(!1)
@@ -84,6 +84,6 @@ function o(e) {
         handleFocusWithoutDelay: E,
         handleBlur: N,
         handleMouseEnter: I,
-        handleMouseLeave: O
+        handleMouseLeave: R
     }
 }

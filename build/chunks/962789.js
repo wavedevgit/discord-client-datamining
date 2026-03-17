@@ -88,9 +88,7 @@ function C(e) {
                 children: l
             }), (0, i.jsxs)(r.DUT, {
                 onClick: () => {
-                    (0, g.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
-                        section: T.nc_.AUTHORIZED_APPS
-                    })
+                    (0, g.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL)
                 },
                 className: S.bJ,
                 children: [(0, i.jsx)(r.Text, {

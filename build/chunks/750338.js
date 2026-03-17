@@ -16,8 +16,8 @@ var n = a(627968),
     f = a(954571),
     b = a(676279),
     A = a(23003),
-    _ = a(652215),
-    h = a(693591),
+    h = a(652215),
+    _ = a(693591),
     g = a(150605);
 let R = e => {
     let {
@@ -28,8 +28,8 @@ let R = e => {
         previewImage: x,
         videoUrl: E,
         shouldLoadVideo: C,
-        index: N,
-        customVideoStyle: v,
+        index: v,
+        customVideoStyle: N,
         isReducedMotion: I,
         onClick: S,
         badgeText: T,
@@ -38,14 +38,14 @@ let R = e => {
         backgroundVideoUrl: D,
         previewImageStyle: O = A.Tb.CONTAINED,
         actions: j
-    } = e, U = (0, b.TM)(), M = r.useRef(null), L = r.useRef(0), w = r.useRef(null), B = r.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = O === A.Tb.OVERLAY && (y !== A.A0.LARGE || !k), V = y === A.A0.LARGE && k && O === A.Tb.OVERLAY, Y = null != D && k && y === A.A0.LARGE, W = r.useMemo(() => (0, i.debounce)(() => {
-        f.default.track(_.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
+    } = e, U = (0, b.TM)(), M = r.useRef(null), w = r.useRef(0), L = r.useRef(null), B = r.useRef(!1), k = (0, u.A)("(min-width: 1140px)"), G = O === A.Tb.OVERLAY && (y !== A.A0.LARGE || !k), V = y === A.A0.LARGE && k && O === A.Tb.OVERLAY, Y = null != D && k && y === A.A0.LARGE, W = r.useMemo(() => (0, i.debounce)(() => {
+        f.default.track(h.HAw.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
             box_type: (0, i.snakeCase)(t)
         })
     }, 800), [t]), H = () => {
-        null == M.current || I || (M.current.currentTime = L.current, M.current.play())
+        null == M.current || I || (M.current.currentTime = w.current, M.current.play())
     }, F = () => {
-        null == M.current || I || (L.current = M.current.currentTime, M.current.pause())
+        null == M.current || I || (w.current = M.current.currentTime, M.current.pause())
     }, K = y === A.A0.LARGE ? "heading-xxl/bold" : "heading-xl/bold", X = () => {
         let e = null != R && null != S,
             t = null != j && j.length > 0;
@@ -114,25 +114,25 @@ let R = e => {
             poster: x,
             loop: !0,
             className: l()(V ? g.overlayImage : g.boxVideo, {
-                [v]: null != v
+                [N]: null != N
             }),
             ref: M,
             children: (0, n.jsx)("source", {
                 src: E,
-                type: U ? h.a.MP4 : h.a.WEBM
+                type: U ? _.a.MP4 : _.a.WEBM
             })
         }, E)
-    }), J = N % 2 != 0;
+    }), J = v % 2 != 0;
     return (0, n.jsx)(d.L, {
-        innerRef: w,
+        innerRef: L,
         onChange: e => {
-            e && !B.current && (B.current = !0, f.default.track(_.HAw.PREMIUM_MARKETING_BENTO_BOX_IMPRESSION, {
+            e && !B.current && (B.current = !0, f.default.track(h.HAw.PREMIUM_MARKETING_BENTO_BOX_IMPRESSION, {
                 box_type: (0, i.snakeCase)(t)
             }))
         },
         threshold: .5,
         children: (0, n.jsxs)(c.hLv, {
-            ref: w,
+            ref: L,
             id: t,
             className: l()(g.backgroundColor, g.boxContainer, g[`${y}`], g.gradientBackground, G && g.overlayImageMode, V && g.overlayMode),
             onMouseEnter: H,

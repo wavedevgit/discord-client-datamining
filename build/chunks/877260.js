@@ -14,8 +14,8 @@ var r = n(627968),
     d = n(932001),
     m = n(97469),
     f = n(199966),
-    g = n(894858),
-    h = n(397274),
+    h = n(894858),
+    g = n(397274),
     p = n(189857),
     y = n(188180),
     _ = n(133457),
@@ -29,7 +29,7 @@ function v(e) {
         footer: a,
         emptyState: y,
         searchBar: v
-    } = e, j = g.A.useField("showNavigationMobile"), N = i.useRef(null), [S] = i.useState(t), {
+    } = e, j = h.A.useField("showNavigationMobile"), N = i.useRef(null), [S] = i.useState(t), {
         accessibleDirectory: C
     } = (0, f._)(), k = i.useMemo(() => (0, p.Z)(S, C), [S, C]), [E] = (0, d.kn)(k.allDismissibleContents);
     (0, _.B)({
@@ -37,15 +37,15 @@ function v(e) {
         dismissibleBadges: k,
         accessibleDirectory: C
     });
-    let [w, T] = i.useMemo(() => {
+    let [w, I] = i.useMemo(() => {
         let e = [],
             n = [];
         return t.layout.forEach(t => {
             t.hoisted ? e.push(t) : n.push(t)
         }), [e, n]
-    }, [t.layout]), I = (0, m.NC)(), R = (0, u.A)("settings-sidebar", N);
+    }, [t.layout]), T = (0, m.NC)(), R = (0, u.A)("settings-sidebar", N);
     return (0, r.jsx)(c.NPJ, {
-        theme: I,
+        theme: T,
         children: e => (0, r.jsxs)("div", {
             className: s()(b.pz, e, {
                 [b.Hw]: o.Fr,
@@ -69,7 +69,7 @@ function v(e) {
                         dismissibleBadges: k,
                         hoisted: !0
                     }, e.key))
-                }), null != v && (0, r.jsx)(v, {}), null != y && 0 === T.length && (0, r.jsx)(y, {})]
+                }), null != v && (0, r.jsx)(v, {}), null != y && 0 === I.length && (0, r.jsx)(y, {})]
             }), (0, r.jsx)(l.hD, {
                 navigator: R,
                 children: (0, r.jsx)(l.PR, {
@@ -80,14 +80,14 @@ function v(e) {
                         } = e;
                         return (0, r.jsxs)(c.ChK, {
                             ref: e => {
-                                N.current = e, h.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
+                                N.current = e, g.A.setSidebarScrollerRef(e), t.current = e?.getScrollerNode() ?? null
                             },
                             className: b.Mt,
                             fade: !0,
                             ...n,
                             children: [(0, r.jsx)("nav", {
                                 className: b.C$,
-                                children: T.map(e => (0, r.jsx)(A, {
+                                children: I.map(e => (0, r.jsx)(A, {
                                     section: e,
                                     visibleContent: E,
                                     dismissibleBadges: k

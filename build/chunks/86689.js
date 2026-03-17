@@ -11,12 +11,10 @@ function a(e) {
     let {
         children: t,
         description: n,
-        setting: a,
-        scrollPosition: r
+        setting: a
     } = e;
     return (0, i.jsxs)(l.h, {
         setting: a,
-        scrollPosition: r,
         children: [(0, i.jsx)(s.BJc, {
             gap: 0,
             children: t

@@ -62,7 +62,7 @@ function A(e) {
     l.useEffect(() => {
         0 === f.length && P()
     }, [f, P]);
-    let U = l.useMemo(() => {
+    let D = l.useMemo(() => {
         if (C) return !1;
         for (let e of f) {
             let t = n.Questions[e];
@@ -99,7 +99,7 @@ function A(e) {
             variant: "primary",
             text: E.intl.string(E.t.PDTjLN),
             onClick: P,
-            disabled: !U
+            disabled: !D
         }],
         children: (0, i.jsx)("div", {
             style: {

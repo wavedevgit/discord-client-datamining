@@ -2,8 +2,8 @@
 r.r(_), r.d(_, {
     default: () => C
 });
-var s = r(627968),
-    t = r(64700),
+var t = r(627968),
+    s = r(64700),
     o = r(503698),
     d = r.n(o),
     n = r(397927),
@@ -26,8 +26,8 @@ let C = e => {
         layoutId: _
     } = e;
     (0, c.P)(b.a), (0, g.g)(), (0, m.pE)();
-    let r = t.useRef(null);
-    t.useEffect(() => {
+    let r = s.useRef(null);
+    s.useEffect(() => {
         r.current?.focus()
     }, []);
     let o = (0, I.yB)("CollectiblesShopLayout");
@@ -40,19 +40,19 @@ let C = e => {
         loading: j,
         error: k
     } = (0, l.A)(w.FYj, _);
-    return (0, s.jsxs)("div", {
+    return (0, t.jsxs)("div", {
         className: d()(x.bx, {
             [I.jP]: o
         }),
         ref: r,
         tabIndex: -1,
-        children: [(0, s.jsx)(h.G, {
+        children: [(0, t.jsx)(h.G, {
             handleTransition: R,
             selectedTab: C
-        }), (0, s.jsx)(n.HOs, {
-            children: (0, s.jsx)("div", {
+        }), (0, t.jsx)(n.HOs, {
+            children: (0, t.jsx)("div", {
                 className: x.Qs,
-                children: j || null == _ ? (0, s.jsx)(n.y$y, {}) : null != k ? (0, s.jsx)(p.h, {
+                children: j || null == _ ? (0, t.jsx)(n.y$y, {}) : null != k ? (0, t.jsx)(p.h, {
                     errorMessage: k.message,
                     errorOrigin: p.A.SHOP_PAGE,
                     onRetry: () => {
@@ -61,7 +61,7 @@ let C = e => {
                             layoutId: _
                         })
                     }
-                }) : null != v ? (0, s.jsx)(a.Ay, {
+                }) : null != v ? (0, t.jsx)(a.Ay, {
                     layout: v
                 }) : null
             })

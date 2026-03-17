@@ -25,9 +25,7 @@ function A(e) {
         ...l
     } = e, A = m.intl.format(m.t["JmbS+T"], {
         onClick: () => {
-            (0, s.openUserSettings)(a.X.NITRO_PANEL, {
-                section: h.nc_.PREMIUM
-            }), t()
+            (0, s.openUserSettings)(a.X.NITRO_PANEL), t()
         }
     }), f = (0, u.V)(), T = (0, o.O)(), E = null != f || null != T;
     return (0, r.g1)({

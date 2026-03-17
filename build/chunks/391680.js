@@ -1,6 +1,6 @@
 /** chunk id: 391680 params = (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -12,22 +12,21 @@ var s = n(311907),
     d = n(111162),
     c = n(253932),
     u = n(780964),
-    _ = n(840065),
-    m = n(652215);
+    _ = n(840065);
 
-function g() {
+function m() {
     let {
         layoutDebuggingEnabled: e,
         isDeveloper: t,
         isLoggingGatewayEvents: n,
-        isLoggingOverlayEvents: g,
-        isLoggingAnalyticsEvents: A,
-        isTracingRequests: h,
-        isForcedCanary: x,
-        isAxeEnabled: p,
-        preventPopoutClose: T,
-        onlyShowPreviewAppCollections: E,
-        disableAppCollectionsCache: S
+        isLoggingOverlayEvents: m,
+        isLoggingAnalyticsEvents: g,
+        isTracingRequests: A,
+        isForcedCanary: h,
+        isAxeEnabled: x,
+        preventPopoutClose: p,
+        onlyShowPreviewAppCollections: T,
+        disableAppCollectionsCache: E
     } = (0, s.cf)([d.default, o.A], () => ({
         layoutDebuggingEnabled: d.default.layoutDebuggingEnabled,
         isDeveloper: o.A.isDeveloper,
@@ -42,52 +41,50 @@ function g() {
         onlyShowPreviewAppCollections: d.default.onlyShowPreviewAppCollections,
         disableAppCollectionsCache: d.default.disableAppCollectionsCache
     })), {
-        horizontalSpacing: C,
-        verticalSpacing: f
+        horizontalSpacing: S,
+        verticalSpacing: C
     } = (0, r.Or)(), {
-        setHorizontalSpacing: b,
-        setVerticalSpacing: N
-    } = r.Or.getState(), I = c.HZ.useSetting();
+        setHorizontalSpacing: f,
+        setVerticalSpacing: b
+    } = r.Or.getState(), N = c.HZ.useSetting();
     return t ? [(0, i.jsxs)(l.Drp, {
         id: "overrides",
         label: "Overrides",
         action: () => {
-            (0, _.openUserSettings)(u.X.DEV_OVERRIDES, {
-                section: m.nc_.DEVELOPER_OPTIONS
-            })
+            (0, _.openUserSettings)(u.X.DEV_OVERRIDES)
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "always-deliver",
             label: "Always Deliver Ads",
-            checked: I,
+            checked: N,
             action: () => {
-                c.HZ.updateSetting(!I)
+                c.HZ.updateSetting(!N)
             }
         }, "always-deliver"), (0, i.jsx)(l.sLh, {
             id: "forced-canary",
             label: "Forced Canary",
-            checked: x,
+            checked: h,
             action: () => {
                 (0, a.x)({
-                    canary: !x
+                    canary: !h
                 })
             }
         }, "forced-canary"), (0, i.jsx)(l.sLh, {
             id: "preview-collections",
             label: "Preview Unpublished Collections",
-            checked: E,
+            checked: T,
             action: () => {
                 (0, a.x)({
-                    onlyShowPreviewAppCollections: !E
+                    onlyShowPreviewAppCollections: !T
                 })
             }
         }, "preview-collections"), (0, i.jsx)(l.sLh, {
             id: "disable-collections-cache",
             label: "Disable Collections Cache",
-            checked: S,
+            checked: E,
             action: () => {
                 (0, a.x)({
-                    disableAppCollectionsCache: !S
+                    disableAppCollectionsCache: !E
                 })
             }
         }, "disable-collections-cache")]
@@ -95,9 +92,7 @@ function g() {
         id: "logging",
         label: "Logging",
         action: () => {
-            (0, _.openUserSettings)(u.X.LOGGING, {
-                section: m.nc_.DEVELOPER_OPTIONS
-            })
+            (0, _.openUserSettings)(u.X.LOGGING)
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "gateway-events",
@@ -111,37 +106,37 @@ function g() {
         }, "gateway-events"), (0, i.jsx)(l.sLh, {
             id: "overlay-events",
             label: "Overlay RPC Events",
-            checked: g,
+            checked: m,
             action: () => {
                 (0, a.x)({
-                    logOverlayEvents: !g
+                    logOverlayEvents: !m
                 })
             }
         }, "overlay-events"), (0, i.jsx)(l.sLh, {
             id: "analytics-events",
             label: "Analytics Events",
-            checked: A,
+            checked: g,
             action: () => {
                 (0, a.x)({
-                    logAnalyticsEvents: !A
+                    logAnalyticsEvents: !g
                 })
             }
         }, "analytics-events"), (0, i.jsx)(l.sLh, {
             id: "tracing-requests",
             label: "Tracing Requests",
-            checked: h,
+            checked: A,
             action: () => {
                 (0, a.x)({
-                    trace: !h
+                    trace: !A
                 })
             }
         }, "tracing-requests"), (0, i.jsx)(l.sLh, {
             id: "prevent-popout-close",
             label: "Prevent Popouts From Closing",
-            checked: T,
+            checked: p,
             action: () => {
                 (0, a.x)({
-                    preventPopoutClose: !T
+                    preventPopoutClose: !p
                 })
             }
         }, "prevent-popout-close")]
@@ -149,17 +144,15 @@ function g() {
         id: "design-tools",
         label: "Design/A11y Tools",
         action: () => {
-            (0, _.openUserSettings)(u.X.DESIGN_TOOLS, {
-                section: m.nc_.DEVELOPER_OPTIONS
-            })
+            (0, _.openUserSettings)(u.X.DESIGN_TOOLS)
         },
         children: [(0, i.jsx)(l.sLh, {
             id: "accessibility-auditing",
             label: "Accessibility Auditing",
-            checked: p,
+            checked: x,
             action: () => {
                 (0, a.x)({
-                    axeEnabled: !p
+                    axeEnabled: !x
                 })
             }
         }, "accessibility-auditing"), (0, i.jsx)(l.sLh, {
@@ -178,10 +171,10 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: C,
+                    value: S,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => b(e),
+                    onChange: e => f(e),
                     renderValue: e => `${Math.round(e)}px`,
                     "aria-label": "Horizontal Spacing"
                 })
@@ -191,10 +184,10 @@ function g() {
                 control: (e, t) => (0, i.jsx)(l.i42, {
                     ...e,
                     ref: t,
-                    value: f,
+                    value: C,
                     minValue: 0,
                     maxValue: r.YR,
-                    onChange: e => N(e),
+                    onChange: e => b(e),
                     "aria-label": "Vertical Spacing",
                     renderValue: e => `${Math.round(e)}px`
                 })

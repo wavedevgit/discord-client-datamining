@@ -68,9 +68,7 @@ class W extends l.PureComponent {
         return e >= _.Tm
     }
     handleViewInventory() {
-        (0, S.openUserSettings)(T.X.GIFT_PANEL, {
-            section: B.nc_.INVENTORY
-        })
+        (0, S.openUserSettings)(T.X.GIFT_PANEL)
     }
     renderTitle = () => this.props.isSelfGift ? F.intl.string(F.t.mT9B49) : F.intl.string(F.t.Vo5yHw);renderActions = () => this.props.isSelfGift ? (0, i.jsx)(u.Button, {
         variant: "primary",
@@ -113,9 +111,7 @@ class q extends l.Component {
             }
         })
     };handleVerificationClick = e => {
-        e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(T.X.ACCOUNT_PANEL, {
-            section: B.nc_.ACCOUNT
-        })
+        e.stopPropagation(), e.preventDefault(), (0, S.openUserSettings)(T.X.ACCOUNT_PANEL)
     };handleAccept = e => {
         let {
             channelId: t,
@@ -150,9 +146,7 @@ class q extends l.Component {
             guildId: i.guildId,
             isStorefront: !1,
             analyticsLocations: [p.A.GIFT_CODE_EMBED]
-        })) : null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(T.X.NITRO_PANEL, {
-            section: B.nc_.PREMIUM
-        }))
+        })) : null != t && t.isSubscription && (e.preventDefault(), (0, S.openUserSettings)(T.X.NITRO_PANEL))
     };handleClaimPromotion = e => {
         e.stopPropagation(), e.preventDefault();
         let t = this.props.giftCode?.code;

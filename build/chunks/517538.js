@@ -101,9 +101,9 @@ function j() {
         krispModels: E,
         krispModelOverride: N,
         inputMode: I,
-        echoCancellation: O,
-        autoThreshold: R,
-        vadUseKrisp: k,
+        echoCancellation: R,
+        autoThreshold: k,
+        vadUseKrisp: O,
         vadKrispActivationThreshold: w,
         noiseCancellation: D,
         noiseSuppression: M,
@@ -208,18 +208,18 @@ function j() {
             }), I === g.TB.VOICE_ACTIVITY && (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(d.dOG, {
                     label: "Auto Threshold",
-                    checked: R,
+                    checked: k,
                     onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                         autoThreshold: e
                     })
-                }), R && (0, a.jsxs)(a.Fragment, {
+                }), k && (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(d.dOG, {
                         label: "Use Krisp VAD",
-                        checked: k,
+                        checked: O,
                         onChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
                             vadUseKrisp: e
                         })
-                    }), k && (0, a.jsx)(d.Apm, {
+                    }), O && (0, a.jsx)(d.Apm, {
                         label: "Krisp VAD Activation Threshold",
                         initialValue: w,
                         onValueChange: e => c.A.setMode(g.TB.VOICE_ACTIVITY, {
@@ -237,7 +237,7 @@ function j() {
                 })]
             }), (0, a.jsx)(d.dOG, {
                 label: "Echo Cancellation",
-                checked: O,
+                checked: R,
                 onChange: e => c.A.setEchoCancellation(e)
             }), (0, a.jsxs)(d.BJc, {
                 gap: 4,
@@ -264,7 +264,7 @@ function j() {
                                 audioBuffer: s,
                                 createdAt: Date.now(),
                                 suppression: G,
-                                echoCancellation: O,
+                                echoCancellation: R,
                                 krispSuppressionLevel: v
                             }])
                         })

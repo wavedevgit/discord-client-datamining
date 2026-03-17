@@ -26,9 +26,7 @@ let h = e => {
     if (null == s) return null;
     let T = null != s ? c.Ay.getPremiumPlanItem(s) : null;
     if (c.Ay.isBoostOnlySubscription(s) ? t = g.intl.string(g.t.Uj0md3) : null != T && (t = c.Ay.getTierDisplayNameByPlanId(T.planId)), null == t) return null;
-    let E = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL, {
-            section: m.nc_.SUBSCRIPTIONS
-        }),
+    let E = () => (0, o.openUserSettings)(r.X.SUBSCRIPTIONS_PANEL),
         S = (null != T ? c.Ay.getSkuIdForPlan(T.planId) : null) === _.pe.TIER_1;
     return n = null != x ? x : p ? "always-white" : "text-default", (0, i.jsxs)(a.ZpM, {
         className: l()(A.kL, h, {

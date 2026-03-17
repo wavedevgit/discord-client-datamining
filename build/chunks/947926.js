@@ -30,9 +30,9 @@ var a = n(627968),
     E = n(568329),
     N = n(818276),
     I = n(742860),
-    O = n(783569),
-    R = n(963713),
-    k = n(717695),
+    R = n(783569),
+    k = n(963713),
+    O = n(717695),
     w = n(899592),
     D = n(546350),
     M = n(922532),
@@ -80,7 +80,7 @@ function V(e) {
     }), K = (0, d.bG)([p.A], () => p.A.hasLayers()), z = i.useRef(null), $ = i.useMemo(() => (0, j.vv)(t), [t]), q = t.id, Q = t.userStatus?.enrolledAt != null, Y = (0, c.A)(Q), J = t.userStatus?.completedAt != null, {
         hasError: X,
         isLoading: Z
-    } = (0, A.Gk)(), ee = i.useContext(k.Z) || _ && W && !Z && !V, {
+    } = (0, A.Gk)(), ee = i.useContext(O.Z) || _ && W && !Z && !V, {
         hasSeenUnfurl: et,
         handleUnfurlDismissed: en
     } = (0, U.a)(q), {
@@ -185,14 +185,14 @@ function V(e) {
                         [B.E$]: ea,
                         [B.KA]: Q
                     }),
-                    children: (0, a.jsx)(O.R, {
+                    children: (0, a.jsx)(R.R, {
                         springConfig: ec,
                         isExpanded: ea,
                         children: (0, a.jsx)(E.oK, {
                             expandedContentRef: ey,
                             collapsedContentRef: eT,
                             expansionSpring: eo,
-                            children: (0, a.jsxs)(R.C, {
+                            children: (0, a.jsxs)(k.C, {
                                 quest: t,
                                 taskDetails: eE,
                                 isExpanded: ea,

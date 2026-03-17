@@ -36,7 +36,9 @@ let g = e => {
                 case d.G2.CATALOG:
                 case d.G2.COLLECTION_INDEX:
                 case d.G2.LAYOUT:
-                    return l.A.COLLECTIBLES_SHOP
+                    return l.A.COLLECTIBLES_SHOP;
+                case d.G2.RIVALS:
+                    return l.A.SLAYER_STOREFRONT_SHOP_TAB
             }
         })(e), {
             analyticsLocations: i,

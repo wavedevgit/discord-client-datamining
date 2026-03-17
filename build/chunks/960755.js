@@ -14,8 +14,8 @@ var i = n(735438),
     u = n(152007),
     A = n(617617),
     E = n(961350),
-    I = n(924985),
-    g = n(734057),
+    g = n(924985),
+    I = n(734057),
     h = n(945886),
     C = n(760751),
     p = n(576705),
@@ -94,7 +94,7 @@ function V() {
 function w(e) {
     let {
         id: t
-    } = e, n = g.A.getChannel(t);
+    } = e, n = I.A.getChannel(t);
     return null == n ? y.clearGuildId(t) : y.clearGuildId(n.guild_id)
 }
 
@@ -118,7 +118,7 @@ function j(e) {
 class B extends a.Ay.Store {
     static displayName = "ChannelListStore";
     initialize() {
-        this.waitFor(c.A, E.default, I.A, g.A, h.A, l.Ay, C.A, d.A, _.Ay, u.A, p.A, f.Ay, m.A, S.Ay, A.A)
+        this.waitFor(c.A, E.default, g.A, I.A, h.A, l.Ay, C.A, d.A, _.Ay, u.A, p.A, f.Ay, m.A, S.Ay, A.A)
     }
     getGuild(e, t) {
         let n = y.getGuild(e, t?.guildActionRows ?? [], t?.channelNoticeRows ?? []);
@@ -152,7 +152,7 @@ let W = new B(s.h, {
         let {
             channels: t
         } = e, n = !1;
-        return r()(t).map(e => g.A.getChannel(e.channelId)?.guild_id).filter(T.Vq).uniq().forEach(e => {
+        return r()(t).map(e => I.A.getChannel(e.channelId)?.guild_id).filter(T.Vq).uniq().forEach(e => {
             y.clearGuildId(e) && (n = !0)
         }), n
     },
@@ -167,7 +167,7 @@ let W = new B(s.h, {
         let {
             channelId: t
         } = e;
-        return y.clearGuildId(g.A.getChannel(t)?.guild_id)
+        return y.clearGuildId(I.A.getChannel(t)?.guild_id)
     },
     CHANNEL_CREATE: v,
     CHANNEL_DELETE: v,

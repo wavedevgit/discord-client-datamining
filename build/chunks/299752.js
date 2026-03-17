@@ -26,9 +26,7 @@ let h = (0, o.E2)(c.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
                 return e
             }),
             t = g.intl.format(g.t.HVvn5T, {
-                onClick: () => (0, u.openUserSettings)(c.X.KEYBINDS_PANEL, {
-                    section: m.nc_.KEYBINDS
-                })
+                onClick: () => (0, u.openUserSettings)(c.X.KEYBINDS_PANEL)
             });
         return (0, i.jsx)(s.D0$, {
             label: g.intl.string(g.t["o+BJQR"]),

@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(405311),
     N = n(424994),
     I = n(750100),
-    O = n(661251);
-let R = [{
+    R = n(661251);
+let k = [{
     key: "type",
     cellClassName: l()(I.Hn, I.T$),
     render(e) {
@@ -63,13 +63,13 @@ let R = [{
         let {
             type: t
         } = e;
-        return (0, a.jsx)(k, {
+        return (0, a.jsx)(O, {
             type: t
         })
     }
 }];
 
-function k(e) {
+function O(e) {
     let {
         type: t
     } = e, n = (0, u.bG)([y.A], () => y.A.getFilters()), i = n?.types?.has(t) ?? !1;
@@ -103,8 +103,8 @@ function w() {
             }
         })),
         d = (0, u.bG)([y.A], () => y.A.getFeedState(N.X1.GLOBAL_FEED)?.loading === !0),
-        [k, w] = i.useState(""),
-        M = (0, u.bG)([b.A, x.A], () => parseInt(k) > 0 ? k : b.A.searchGamesByName(k)[0] ?? x.A.getApplicationByName(k)?.id, [k]),
+        [O, w] = i.useState(""),
+        M = (0, u.bG)([b.A, x.A], () => parseInt(O) > 0 ? O : b.A.searchGamesByName(O)[0] ?? x.A.getApplicationByName(O)?.id, [O]),
         P = (0, v.A)({
             applicationId: M,
             location: "DevToolsContentInventory",
@@ -120,7 +120,7 @@ function w() {
         L = (0, g.A)(U).filter(j.Vq),
         B = (0, u.bG)([A.A], () => A.A.getFakeGameToShow());
     return (0, a.jsx)("div", {
-        className: O.nd,
+        className: R.nd,
         children: (0, a.jsxs)(h.IpV, {
             className: I.Qs,
             children: [(0, a.jsxs)(h.BJc, {
@@ -129,7 +129,7 @@ function w() {
                     variant: "text-md/semibold",
                     children: "Inventory"
                 }), r.length > 0 && (0, a.jsx)(_.A, {
-                    columns: R,
+                    columns: k,
                     data: r
                 }), (0, a.jsx)(E.A, {}), (0, a.jsx)(h.Button, {
                     variant: "primary",
@@ -195,9 +195,9 @@ function w() {
                     placeholder: "App ID or full name",
                     onChange: e => (0 === e.length || e.length >= 18) && w(e),
                     onKeyDown: e => {
-                        "Enter" === e.key && (k === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
+                        "Enter" === e.key && (O === e.currentTarget.value ? P?.(e) : w(e.currentTarget.value))
                     },
-                    error: k.length > 0 && null == P ? `No game profile for ${M??k+" - try by id"}.` : void 0,
+                    error: O.length > 0 && null == P ? `No game profile for ${M??O+" - try by id"}.` : void 0,
                     helperText: null != P ? "Game profile found" : void 0
                 }), (0, a.jsx)("ul", {
                     children: L.map(e => (0, a.jsx)("li", {

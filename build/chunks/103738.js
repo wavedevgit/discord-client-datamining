@@ -1,15 +1,14 @@
 /** chunk id: 103738 params = (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => o
 });
 var i = n(627968);
 n(64700);
-var s = n(311907),
-    l = n(412820),
-    a = n(116041),
-    r = n(628965),
-    o = n(355097);
+var s = n(412820),
+    l = n(116041),
+    a = n(955838),
+    r = n(355097);
 
-function d() {
-    return (0, s.bG)([r.A], () => r.A.getSubsection()) === o.Eq.GUILD ? (0, i.jsx)(l.A, {}) : (0, i.jsx)(a.A, {})
+function o() {
+    return a.default.useField("subsection") === r.Eq.GUILD ? (0, i.jsx)(s.A, {}) : (0, i.jsx)(l.A, {})
 }

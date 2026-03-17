@@ -23,7 +23,7 @@ let p = e => {
         override: u,
         glowing: m = !0,
         labelledBy: p
-    } = e, f = null != u && "unset" === i, b = (0, o.Ay)(), A = u?.[b] ?? u?.default, _ = l.useMemo(() => (t - a) / (n - a) * 100, [t, a, n]), h = t === a, g = {
+    } = e, f = null != u && "unset" === i, b = (0, o.Ay)(), A = u?.[b] ?? u?.default, h = l.useMemo(() => (t - a) / (n - a) * 100, [t, a, n]), _ = t === a, g = {
         ...f ? {
             "--custom-background": A?.background,
             "--custom-gradient-start": A?.gradientStart,
@@ -39,10 +39,10 @@ let p = e => {
         style: g,
         children: (0, s.jsxs)("div", {
             className: d()(c.progress, {
-                [c.empty]: h
+                [c.empty]: _
             }),
             style: {
-                width: `${_}%`
+                width: `${h}%`
             },
             role: "meter",
             "aria-valuenow": t,
@@ -51,11 +51,11 @@ let p = e => {
             "aria-labelledby": p,
             children: [(0, s.jsx)("div", {
                 className: d()(c.glow, {
-                    [c.empty]: h
+                    [c.empty]: _
                 })
             }), (0, s.jsx)("div", {
                 className: d()(c.bar, c[i], {
-                    [c.empty]: h
+                    [c.empty]: _
                 })
             })]
         })

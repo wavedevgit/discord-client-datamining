@@ -40,7 +40,7 @@ function b(e) {
             },
             sourceQuestContent: j
         }), E && (0, h.l9)()
-    }, [N, t.id, s, E, j, r]), O = i.useCallback(() => {
+    }, [N, t.id, s, E, j, r]), R = i.useCallback(() => {
         C(!1), N({
             questId: t.id,
             event: f.HAw.QUEST_HOVER_OFF,
@@ -51,8 +51,8 @@ function b(e) {
             },
             sourceQuestContent: j
         })
-    }, [N, t.id, s, j, r]), R = i.useContext(x.X), {
-        visibilityElementRef: k,
+    }, [N, t.id, s, j, r]), k = i.useContext(x.X), {
+        visibilityElementRef: O,
         almostVisibleInViewport: w
     } = function(e) {
         let [t, n] = i.useState(!1), a = i.useCallback(e => {
@@ -66,17 +66,17 @@ function b(e) {
             }, !0),
             almostVisibleInViewport: t
         }
-    }(R?.current?.getScrollerNode() ?? null);
+    }(k?.current?.getScrollerNode() ?? null);
     return (0, a.jsxs)("div", {
         id: `quest-tile-${t.id}`,
         ref: e => {
-            b.current = e, k.current = e
+            b.current = e, O.current = e
         },
         className: l()(v.k, n),
         onMouseEnter: I,
-        onMouseLeave: O,
+        onMouseLeave: R,
         onFocus: I,
-        onBlur: O,
+        onBlur: R,
         children: [(0, a.jsx)(g.A, {
             quest: t,
             isHovering: A,

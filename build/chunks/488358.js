@@ -40,8 +40,8 @@ var a = n(627968),
     M = n(954571),
     H = n(619006),
     V = n(370480),
-    D = n(882997),
-    F = n(355971),
+    F = n(882997),
+    D = n(355971),
     $ = n(967740),
     B = n(293260),
     Y = n(783419),
@@ -166,7 +166,7 @@ function q(e) {
                 E = null == y || y.enabled,
                 S = A?.application,
                 I = S?.bot != null ? new O.A(S.bot) : null;
-            V.iC.includes(S?.id ?? "") ? t = (0, a.jsx)(F.A, {
+            V.iC.includes(S?.id ?? "") ? t = (0, a.jsx)(D.A, {
                 className: Q.AO,
                 color: T,
                 size: 16
@@ -197,7 +197,7 @@ function q(e) {
                 className: o()(Q.UY, C ? Q.o6 : null, E ? null : Q.pC),
                 onClick: !C && E ? () => {
                     var e;
-                    return e = y?.type ?? Y.zR, void((0, D.A)({
+                    return e = y?.type ?? Y.zR, void((0, F.A)({
                         platformType: e,
                         location: "Verified Roles Connect Accounts Modal",
                         overrideUrl: S?.role_connections_verification_url
@@ -310,7 +310,7 @@ function ee(e) {
         onClose: n,
         guildId: c,
         role: o
-    } = e, [i, r] = l.useState(0), [d, h] = l.useState(null), [m, p] = l.useState(!1), [C, b] = l.useState(!0), [A, g] = l.useState(!1), [T, O] = l.useState(!0), [U, V] = l.useState(!1), D = (0, u.bG)([w.A], () => w.A.getAccounts()), F = (0, u.bG)([G.default], () => G.default.getId()), [Y, W] = l.useState(null), [Z, ee] = l.useState(null), [et, en] = l.useState(null), ea = (0, N.Ay)(), el = (0, u.bG)([S.default], () => S.default.locale), ec = (0, u.bG)([P.Ay], () => P.Ay.getMember(c, F)), eo = Object.values((0, u.bG)([R.A], () => R.A.getMutableGuildChannelsForGuild(c))).filter(e => L.A.can(z.xBc.VIEW_CHANNEL, e) && L.A.can(z.xBc.SEND_MESSAGES, e) && (0, v.A)(e).includes(o));
+    } = e, [i, r] = l.useState(0), [d, h] = l.useState(null), [m, p] = l.useState(!1), [C, b] = l.useState(!0), [A, g] = l.useState(!1), [T, O] = l.useState(!0), [U, V] = l.useState(!1), F = (0, u.bG)([w.A], () => w.A.getAccounts()), D = (0, u.bG)([G.default], () => G.default.getId()), [Y, W] = l.useState(null), [Z, ee] = l.useState(null), [et, en] = l.useState(null), ea = (0, N.Ay)(), el = (0, u.bG)([S.default], () => S.default.locale), ec = (0, u.bG)([P.Ay], () => P.Ay.getMember(c, D)), eo = Object.values((0, u.bG)([R.A], () => R.A.getMutableGuildChannelsForGuild(c))).filter(e => L.A.can(z.xBc.VIEW_CHANNEL, e) && L.A.can(z.xBc.SEND_MESSAGES, e) && (0, v.A)(e).includes(o));
 
     function ei() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
@@ -318,15 +318,11 @@ function ee(e) {
     }
 
     function es() {
-        ei(!0), (0, k.openUserSettings)(I.X.AUTHORIZED_APPS_PANEL, {
-            section: z.nc_.AUTHORIZED_APPS
-        })
+        ei(!0), (0, k.openUserSettings)(I.X.AUTHORIZED_APPS_PANEL)
     }
 
     function er() {
-        ei(!0), (0, k.openUserSettings)(I.X.CONNECTIONS_PANEL, {
-            section: z.nc_.CONNECTIONS
-        })
+        ei(!0), (0, k.openUserSettings)(I.X.CONNECTIONS_PANEL)
     }
     async function ed() {
         g(!0), await f.A.assignGuildRoleConnection(c, o.id)
@@ -349,7 +345,7 @@ function ee(e) {
         f.A.fetchGuildRoleConnectionsEligibility(c, o.id).then(e => {
             h(e), p(e.some(e => e.every(e => e.result))), b(!1)
         })
-    }, [c, o.id, D]), l.useEffect(() => {
+    }, [c, o.id, F]), l.useEffect(() => {
         M.default.track(z.HAw.PASSPORT_CHALLENGE_VIEWED, {
             role_id: o.id,
             ...(0, y.H$)(c)
@@ -453,7 +449,7 @@ function ee(e) {
                     }
                     case 1: {
                         s()(null != Y, "lastPlatformConnected is null");
-                        let e = D.find(e => {
+                        let e = F.find(e => {
                                 let {
                                     type: t
                                 } = e;
@@ -488,7 +484,7 @@ function ee(e) {
                                                 children: K.intl.string(K.t.TOjkEg)
                                             }), (0, a.jsx)(E.wQ, {
                                                 connectedAccount: e,
-                                                userId: F,
+                                                userId: D,
                                                 theme: ea,
                                                 locale: el,
                                                 className: Q.eT,

@@ -2,8 +2,8 @@
 n.d(t, {
     CN: () => E,
     Kk: () => A,
-    Lx: () => I,
-    Oj: () => g,
+    Lx: () => g,
+    Oj: () => I,
     Tb: () => c,
     fO: () => C,
     iY: () => h,
@@ -39,7 +39,7 @@ function E() {
     return 0 === s.A.totalUnavailableGuilds && (e = e.filter(e => null != l.A.getGuild(e))), new Set(e)
 }
 
-function I(e) {
+function g(e) {
     return (e & d.yKI) === d.yKI ? {
         all: !0,
         mutualFriends: !0,
@@ -51,7 +51,7 @@ function I(e) {
     }
 }
 
-function g(e, t) {
+function I(e, t) {
     return !!(!t.verified || t.isStaff()) || null != e && _ > Date.now() - new Date(e.created_at).getTime()
 }
 

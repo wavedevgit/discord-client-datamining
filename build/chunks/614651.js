@@ -108,16 +108,12 @@ let H = {
     }),
     K = () => V.intl.format(V.t.Jae48E, {
         onClick: () => {
-            (0, G.openUserSettings)(O.X.SYNC_FORCED_COLORS, {
-                section: U.nc_.ACCESSIBILITY
-            })
+            (0, G.openUserSettings)(O.X.SYNC_FORCED_COLORS)
         }
     }),
     Z = () => V.intl.format(V.t["5LEQdc"], {
         onAccessibilityClick: () => {
-            (0, G.openUserSettings)(O.X.ACCESSIBILITY_PANEL, {
-                section: U.nc_.ACCESSIBILITY
-            })
+            (0, G.openUserSettings)(O.X.ACCESSIBILITY_PANEL)
         }
     }),
     q = () => {

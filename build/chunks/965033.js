@@ -200,9 +200,7 @@ function G(e) {
                 textVariant: "text-xs/normal",
                 children: I.intl.format(I.t.Xz1O0W, {
                     onClick: function() {
-                        (0, g.openUserSettings)(m.X.ACCOUNT_PANEL, {
-                            section: C.nc_.ACCOUNT
-                        })
+                        (0, g.openUserSettings)(m.X.ACCOUNT_PANEL)
                     }
                 })
             })]

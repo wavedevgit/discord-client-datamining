@@ -199,9 +199,7 @@ let ei = e => {
                     actions: [{
                         text: Z.intl.string(Z.t.JN6EOJ),
                         onClick: e => {
-                            e.stopPropagation(), (0, P.openUserSettings)(R.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
-                                section: Q.nc_.CONTENT_AND_SOCIAL
-                            }), r(X.i.TAKE_ACTION)
+                            e.stopPropagation(), (0, P.openUserSettings)(R.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING), r(X.i.TAKE_ACTION)
                         }
                     }, {
                         text: Z.intl.string(Z.t.LNoAQW),

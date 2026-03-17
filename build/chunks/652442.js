@@ -2,9 +2,9 @@
 n.r(e), n.d(e, {
     default: () => I
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(397927),
+var i = n(397927),
     l = n(135598),
     E = n(390248),
     s = n(279547),
@@ -18,29 +18,29 @@ function I(t) {
         messageId: n,
         mediaItemUrl: I,
         embedId: A,
-        transitionState: C,
-        onClose: d
-    } = t, c = (0, a.L)(e, n, I), u = (0, a.F)(e, n, A), {
-        reportFalsePositive: R,
+        transitionState: d,
+        onClose: C
+    } = t, u = (0, a.L)(e, n, I), R = (0, a.F)(e, n, A), {
+        reportFalsePositive: c,
         isReportFalsePositiveLoading: L
     } = (0, s.d)({
-        onSuccess: () => (0, o.o)(d),
+        onSuccess: () => (0, o.o)(C),
         onError: () => {
-            (0, r.showToast)((0, r.createToast)(_.intl.string(_.t.R0RpRX), r.ToastType.FAILURE))
+            (0, i.showToast)((0, i.createToast)(_.intl.string(_.t.R0RpRX), i.ToastType.FAILURE))
         },
         report: () => {
-            (0, l.XR)(e, n, c.map(t => t.id), u.map(t => t.id))
+            (0, l.XR)(e, n, u.map(t => t.id), R.map(t => t.id))
         }
     });
-    return c.length > 0 || u.length > 0 || d(), (0, i.jsx)(o.k, {
+    return u.length > 0 || R.length > 0 || C(), (0, r.jsx)(o.k, {
         messageId: n,
         channelId: e,
         isReportFalsePositiveLoading: L,
         analyticsContext: E.SW.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW,
-        onConfirmPress: R,
-        attachmentPreview: 1 === c.length && 0 === u.length ? c[0] : void 0,
-        embedPreview: 1 === u.length && 0 === c.length ? u[0] : void 0,
-        transitionState: C,
-        onClose: d
+        onConfirmPress: c,
+        attachmentPreview: 1 === u.length && 0 === R.length ? u[0] : void 0,
+        embedPreview: 1 === R.length && 0 === u.length ? R[0] : void 0,
+        transitionState: d,
+        onClose: C
     })
 }

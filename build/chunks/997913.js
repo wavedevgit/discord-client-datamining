@@ -1,39 +1,39 @@
 /** chunk id: 997913 params = (module,exports,require) **/
-_.d(e, {
-    O: () => n,
-    i: () => S
+E.d(t, {
+    O: () => S,
+    i: () => T
 });
-var E = _(627968),
-    A = _(397927),
-    I = _(985018);
+var e = E(627968),
+    A = E(397927),
+    I = E(985018);
 
-function n(t) {
+function S(_) {
     let {
-        body: e,
+        body: t,
         ...I
-    } = t;
+    } = _;
     (0, A.mMO)(async () => {
         let {
-            VoidConfirmModal: t
-        } = await Promise.resolve().then(_.bind(_, 397927));
-        return _ => (0, E.jsx)(t, {
-            ..._,
+            VoidConfirmModal: _
+        } = await Promise.resolve().then(E.bind(E, 397927));
+        return E => (0, e.jsx)(_, {
+            ...E,
             ...I,
-            children: (0, E.jsx)(A.Text, {
+            children: (0, e.jsx)(A.Text, {
                 variant: "text-md/normal",
-                children: e
+                children: t
             })
         })
     })
 }
 
-function S(t) {
+function T(_) {
     let {
-        message: e
-    } = t;
-    n({
+        message: t
+    } = _;
+    S({
         header: I.intl.string(I.t.OjbtDm),
         confirmText: I.intl.string(I.t.BddRzS),
-        body: e
+        body: t
     })
 }

@@ -48,9 +48,7 @@ function _(e) {
     let p = s.useMemo(() => g.isPausedOrPausePending && h === c.xc.NONE ? (0, i.jsx)(l.Drp, {
         id: "manage-subscription",
         label: u.intl.string(u.t.obRG6Y),
-        action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
-            section: d.nc_.SUBSCRIPTIONS
-        }),
+        action: () => (0, r.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL),
         iconLeft: l.xmO,
         leadingAccessory: {
             type: "icon",

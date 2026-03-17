@@ -1,6 +1,6 @@
 /** chunk id: 134991 params = (module,exports,require) **/
 n.d(t, {
-    V: () => h
+    V: () => m
 });
 var a = n(627968),
     i = n(64700),
@@ -8,20 +8,17 @@ var a = n(627968),
     l = n(780964),
     r = n(840065),
     o = n(88001),
-    d = n(652215),
-    c = n(519412),
-    u = n(985018),
-    m = n(438705);
-let h = e => {
+    d = n(519412),
+    c = n(985018),
+    u = n(438705);
+let m = e => {
     let {
         targetElementRef: t,
         shouldShow: n,
-        onDismiss: h
-    } = e, p = i.useCallback(() => {
-        h(), (0, r.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL, {
-            section: d.nc_.SUBSCRIPTIONS
-        })
-    }, [h]);
+        onDismiss: m
+    } = e, h = i.useCallback(() => {
+        m(), (0, r.openUserSettings)(l.X.SUBSCRIPTIONS_PANEL)
+    }, [m]);
     return (0, a.jsx)(s.AM, {
         targetElementRef: t,
         position: "top",
@@ -31,19 +28,19 @@ let h = e => {
         size: "md",
         graphic: {
             type: "image",
-            src: m
+            src: u
         },
         shouldShow: n,
-        title: u.intl.format(c.default.bx8sR9, {
+        title: c.intl.format(d.default.bx8sR9, {
             premiumGroupProductName: (0, o.DP)()
         }),
-        body: u.intl.format(c.default.Pw4OFZ, {
+        body: c.intl.format(d.default.Pw4OFZ, {
             premiumGroupProductName: (0, o.DP)()
         }),
-        onRequestClose: h,
+        onRequestClose: m,
         actions: [{
-            text: u.intl.string(c.default.DD26QR),
-            onClick: p
+            text: c.intl.string(d.default.DD26QR),
+            onClick: h
         }]
     })
 }

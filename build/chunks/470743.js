@@ -24,7 +24,6 @@ function h() {
         label: u.intl.string(u.t.dsXapM),
         action: () => {
             (0, r.A)(null, e === d.BRT.POPOUT), (0, c.openUserSettings)(o.X.VOICE_AND_VIDEO_PANEL, {
-                section: d.nc_.VOICE,
                 analyticsLocations: t
             })
         },

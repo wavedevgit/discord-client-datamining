@@ -32,9 +32,7 @@ let g = function(e) {
         } = e;
         if (s) return {
             flavor: _.intl.format(_.t.doslJu, {
-                onClick: () => (0, d.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
-                    section: c.nc_.SUBSCRIPTIONS
-                })
+                onClick: () => (0, d.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL)
             })
         };
         if (!i) return {

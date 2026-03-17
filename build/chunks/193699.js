@@ -31,9 +31,7 @@ function m(e) {
             variant: "text-sm/normal",
             children: h.intl.format(h.t.NkFrzN, {
                 onPrivacyClick: () => {
-                    (0, c.openUserSettings)(d.X.DATA_AND_PRIVACY_PANEL, {
-                        section: u.nc_.DATA_AND_PRIVACY
-                    })
+                    (0, c.openUserSettings)(d.X.DATA_AND_PRIVACY_PANEL)
                 }
             })
         }), (0, i.jsxs)("div", {

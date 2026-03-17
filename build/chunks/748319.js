@@ -30,9 +30,9 @@ var a = n(627968),
     E = n(521502),
     N = n(380610),
     I = n(313961),
-    O = n(18235),
-    R = n(183184),
-    k = n(384059),
+    R = n(18235),
+    k = n(183184),
+    O = n(384059),
     w = n(480890),
     D = n(302223),
     M = n(609425),
@@ -84,9 +84,9 @@ var a = n(627968),
     eE = n(652215),
     eN = n(654487),
     eI = n(731854),
-    eO = n(985018),
-    eR = n(146664);
-let ek = eb.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
+    eR = n(985018),
+    ek = n(146664);
+let eO = eb.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
     ew = 2.5 * eg.A.Millis.SECOND,
     eD = 2 * eg.A.Millis.MINUTE,
     eM = 2 * eg.A.Millis.MINUTE,
@@ -162,7 +162,7 @@ function eU(e) {
                         t?.()
                     },
                     setPopoutRef: n,
-                    className: eR.dI
+                    className: ek.dI
                 })
             },
             position: "top",
@@ -189,31 +189,31 @@ function eU(e) {
                     onClick: t => {
                         e.onClick?.(t), c?.(t)
                     },
-                    className: l()(eR.Q9, {
-                        [eR.ZQ]: null != p
+                    className: l()(ek.Q9, {
+                        [ek.ZQ]: null != p
                     }),
                     children: [(0, a.jsx)(h.DUT, {
                         ...u,
                         onClick: t => {
                             t.stopPropagation(), e.onClick?.(t), c?.(t)
                         },
-                        "aria-label": eO.intl.string(eO.t["5fWB8U"]),
+                        "aria-label": eR.intl.string(eR.t["5fWB8U"]),
                         focusProps: {
                             ringTarget: b
                         },
-                        className: eR.$n,
+                        className: ek.$n,
                         "data-jump-section": _
-                    }), (0, a.jsx)(ek, {
+                    }), (0, a.jsx)(eO, {
                         size: h._3J.SIZE_32,
                         src: o.getAvatarURL(void 0, 28, !1),
                         avatarDecoration: j,
                         status: r ? eE.clD.STREAMING : d,
                         isSpeaking: n,
                         voiceDb: s,
-                        className: eR.my,
+                        className: ek.my,
                         "aria-hidden": !0
                     }), (0, a.jsx)("div", {
-                        className: eR.oM,
+                        className: ek.oM,
                         children: m(A)
                     })]
                 })
@@ -257,19 +257,17 @@ class eL extends i.PureComponent {
             suppress: t,
             selfMute: n
         } = this.props;
-        (0, R.A)(e, t, eE.JJy.ACCOUNT_PANEL), (0, k.X)(C.A.ACCOUNT, k.O.MIC, n)
+        (0, k.A)(e, t, eE.JJy.ACCOUNT_PANEL), (0, O.X)(C.A.ACCOUNT, O.O.MIC, n)
     };
     handleToggleSelfDeaf = () => {
         let {
             serverDeaf: e,
             selfDeaf: t
         } = this.props;
-        (0, O.A)(e, eE.JJy.ACCOUNT_PANEL), (0, k.X)(C.A.ACCOUNT, k.O.DEAFEN, !t)
+        (0, R.A)(e, eE.JJy.ACCOUNT_PANEL), (0, O.X)(C.A.ACCOUNT, O.O.DEAFEN, !t)
     };
     handleOpenAccountSettings = () => {
-        this.dismissTooltips(), ed.A.isConnected() ? (0, X.openUserSettings)(Y.X.VOICE_AND_VIDEO_PANEL, {
-            section: eE.nc_.VOICE
-        }) : (0, X.openUserSettings)()
+        this.dismissTooltips(), ed.A.isConnected() ? (0, X.openUserSettings)(Y.X.VOICE_AND_VIDEO_PANEL) : (0, X.openUserSettings)()
     };
     handleOpenSettingsContextMenu = e => {
         let {
@@ -445,7 +443,7 @@ class eL extends i.PureComponent {
                 activities: t,
                 applicationStream: n,
                 voiceChannel: r,
-                textClassName: eR.XD,
+                textClassName: ek.XD,
                 hideTooltip: !0
             })]
         });
@@ -462,8 +460,8 @@ class eL extends i.PureComponent {
                 children: ev.Ay.humanizeStatus(s)
             }), (0, a.jsx)(D.A, {
                 activity: o,
-                emojiClassName: eR.Zg,
-                className: eR.WO
+                emojiClassName: ek.Zg,
+                className: ek.WO
             })]
         }) : null != s && s !== eE.clD.UNKNOWN && i.hasUniqueUsername() ? (0, a.jsx)(A.A, {
             hoverText: l,
@@ -480,10 +478,10 @@ class eL extends i.PureComponent {
         } = this.props;
         return null == t ? null : (0, a.jsxs)(a.Fragment, {
             children: [(0, a.jsx)("div", {
-                className: eR.eW,
+                className: ek.eW,
                 children: (0, a.jsx)(eA.A, {
                     className: l()({
-                        [eR.e8]: null != e
+                        [ek.e8]: null != e
                     }),
                     children: (0, a.jsx)(U.A, {
                         userName: n,
@@ -494,7 +492,7 @@ class eL extends i.PureComponent {
                     })
                 })
             }), (0, a.jsx)("div", {
-                className: eR.XP,
+                className: ek.XP,
                 children: (0, a.jsx)(ej.A, {
                     children: this.renderStatus()
                 })
@@ -532,10 +530,10 @@ class eL extends i.PureComponent {
             children: [(0, a.jsx)(h.skg, {
                 children: e => (0, a.jsxs)("div", {
                     ref: this.containerRef,
-                    className: l()(eR.kL, {
-                        [eR.UG]: null != n,
-                        [eR.bc]: !i,
-                        [eR.G5]: s
+                    className: l()(ek.kL, {
+                        [ek.UG]: null != n,
+                        [ek.bc]: !i,
+                        [ek.G5]: s
                     }),
                     onMouseEnter: this.handleMouseEnter,
                     onMouseLeave: this.handleMouseLeave,
@@ -591,7 +589,7 @@ function eB(e) {
         speaking: T
     } = e, S = (0, W.K)(b);
     return (0, a.jsxs)("div", {
-        className: eR.Uo,
+        className: ek.Uo,
         style: S,
         children: [(0, a.jsx)(eT.A, {
             accountContainerRef: j,
@@ -603,7 +601,7 @@ function eB(e) {
             onMouseLeave: m,
             onClick: p,
             onContextMenu: x,
-            iconForeground: null != b ? eR.t4 : void 0,
+            iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b,
             shouldShowSpeakingWhileMutedTooltip: o,
             shouldShowInputDeviceChangedTooltip: !o && "input" === A,
@@ -617,7 +615,7 @@ function eB(e) {
             onClick: h,
             onContextMenu: g,
             awaitingRemote: i,
-            iconForeground: null != b ? eR.t4 : void 0,
+            iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b,
             shouldShowOutputDeviceChangedTooltip: "output" === A,
             dismissTooltips: y
@@ -626,7 +624,7 @@ function eB(e) {
             onClick: _,
             onContextMenu: f,
             dismissibleContents: v.settings,
-            iconForeground: null != b ? eR.t4 : void 0,
+            iconForeground: null != b ? ek.t4 : void 0,
             nameplate: b
         })]
     })
@@ -696,9 +694,9 @@ function eF() {
         } = (0, Z.A)(x),
         A = (0, c.bG)([E.A], () => (0, N.kK)() ? E.A.getCurrentBuildOverride().overrides?.discord_web : null),
         S = (0, c.bG)([eo.Ay], () => eo.Ay.getSpeakingWhileMuted()),
-        O = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
-        R = (0, c.bG)([er.A], () => er.A.hasLayers()),
-        k = (0, h.red)(h.DXt) || R || ef.P.isDisallowPopupsSet() || O,
+        R = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
+        k = (0, c.bG)([er.A], () => er.A.hasLayers()),
+        O = (0, h.red)(h.DXt) || k || ef.P.isDisallowPopupsSet() || R,
         w = (0, c.bG)([L.default], () => null != L.default.getAwaitingRemoteSessionInfo()),
         D = (0, c.bG)([ec.A], () => ec.A.getGuildId()),
         M = e?.avatarDecoration,
@@ -726,7 +724,7 @@ function eF() {
             avatar: [],
             settings: []
         };
-    k || (H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK), H.avatar.push(u.M.WIDGETS_RTC_UPSELL_COACHMARK));
+    O || (H.avatar.push(u.M.DISPLAY_NAME_STYLES_COACHMARK), H.avatar.push(u.M.WIDGETS_RTC_UPSELL_COACHMARK));
     let {
         shouldShowTooltip: K,
         dismissTooltip: q
@@ -755,7 +753,7 @@ function eF() {
             voiceChannel: x,
             dismissibleContents: H,
             userTag: p,
-            occluded: k,
+            occluded: O,
             selfDeaf: b,
             selfMute: f,
             serverDeaf: j,

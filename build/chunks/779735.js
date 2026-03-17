@@ -30,7 +30,7 @@ let g = e => {
         root_node_id: C,
         success_node_id: N,
         fail_node_id: I
-    } = n, [S, y] = a.useState(C), [k, E] = a.useState(void 0), [w, M] = a.useState(void 0), [R, L] = a.useState([]), [O, G] = a.useState(void 0), [D, U] = a.useState(void 0), [B, P] = a.useState(void 0);
+    } = n, [y, S] = a.useState(C), [k, E] = a.useState(void 0), [w, M] = a.useState(void 0), [R, L] = a.useState([]), [G, O] = a.useState(void 0), [D, U] = a.useState(void 0), [B, P] = a.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
@@ -51,16 +51,16 @@ let g = e => {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: a.report_type,
-                    current_node: T[S].id,
+                    current_node: T[y].id,
                     next_node: a.id
                 })
             }
-            y(l)
+            S(l)
         },
         F = async e => {
             let l = f ? await (0, m.zC)(n, t, [...R, e]) : await (0, m.bo)(n, t, [...R, e], b),
                 a = l?.body?.report_id;
-            null != a && G(a), U(T[e.nodeRef].report_type), A?.(a)
+            null != a && O(a), U(T[e.nodeRef].report_type), A?.(a)
         }, V = () => {
             if (R.length < 1) return;
             let e = [...R],
@@ -72,11 +72,11 @@ let g = e => {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: T[l].report_type,
-                    current_node: T[S].id,
+                    current_node: T[y].id,
                     next_node: T[l].id
                 })
             }
-            E(n?.multiSelect?.state), M(n?.textInput), y(l), L(e), v?.("..")
+            E(n?.multiSelect?.state), M(n?.textInput), S(l), L(e), v?.("..")
         }, W = a.useCallback((e, t) => {
             let n;
             for (let t in T) {
@@ -93,7 +93,7 @@ let g = e => {
                     t = R[l];
                 M(t?.textInput), E(t?.multiSelect?.state), L(e)
             } else L([]), M(void 0), E(void 0);
-            P(t), y(n.id)
+            P(t), S(n.id)
         }, [T, R]);
     a.useEffect(() => {
         null != B && P(void 0)
@@ -123,7 +123,7 @@ let g = e => {
         parentComponent: "InAppReportModal",
         children: (0, l.jsx)(i.tN_, {
             width: 440,
-            activeSlide: S,
+            activeSlide: y,
             centered: !1,
             children: z.map(e => (0, l.jsx)(i.q7S, {
                 id: e.id,
@@ -143,9 +143,9 @@ let g = e => {
                         successNodeId: N,
                         failNodeId: I,
                         onSubmit: F,
-                        reportId: O,
+                        reportId: G,
                         nodeMap: T,
-                        initialErrorMessage: e.id === S ? B : void 0
+                        initialErrorMessage: e.id === y ? B : void 0
                     })
                 })
             }, e.id))

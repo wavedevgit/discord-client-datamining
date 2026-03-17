@@ -253,9 +253,7 @@ let M = function(e) {
                         className: L.WO,
                         children: D.intl.format(D.t.HezvJ8, {
                             onClick: function() {
-                                (0, R.openUserSettings)(v.X.NITRO_PANEL, {
-                                    section: O.nc_.PREMIUM
-                                })
+                                (0, R.openUserSettings)(v.X.NITRO_PANEL)
                             }
                         })
                     })]

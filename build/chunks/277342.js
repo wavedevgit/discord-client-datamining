@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(64700),
     a = n(523875),
-    i = n(270737),
-    l = n(397927),
+    l = n(270737),
+    i = n(397927),
     s = n(267102),
     u = n(494783),
     o = n(652215);
@@ -17,12 +17,12 @@ function c(e) {
         } = (0, u.f)(),
         c = null != n,
         d = e ? "unmute" : "mute",
-        m = (0, i.V)(d),
+        m = (0, l.V)(d),
         A = (0, a.L)(d),
-        _ = c ? m : A,
-        v = t === o.BRT.POPOUT ? c ? e ? l.Ts3 : l.A4$ : e ? l.z0P : l.cNw : _.Component;
+        v = c ? m : A,
+        _ = t === o.BRT.POPOUT ? c ? e ? i.Ts3 : i.A4$ : e ? i.z0P : i.cNw : v.Component;
     return r.useMemo(() => ({
-        ..._,
-        Component: v
-    }), [_, v])
+        ...v,
+        Component: _
+    }), [v, _])
 }

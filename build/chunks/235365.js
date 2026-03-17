@@ -1,7 +1,7 @@
 /** chunk id: 235365 params = (module,exports,require) **/
 a.d(t, {
     A: () => g,
-    L: () => h
+    L: () => _
 });
 var n = a(627968),
     r = a(64700),
@@ -17,8 +17,8 @@ var n = a(627968),
     f = a(652215),
     b = a(49370),
     A = a(985018),
-    _ = a(609195);
-let h = "orbs",
+    h = a(609195);
+let _ = "orbs",
     g = e => {
         let {
             className: t,
@@ -45,20 +45,20 @@ let h = "orbs",
                 threshold: .5,
                 children: (0, n.jsxs)("div", {
                     ref: R,
-                    id: h,
-                    className: l()(_.uW, _.Uv, _.qr, t, {
-                        [_.J4]: s
+                    id: _,
+                    className: l()(h.uW, h.Uv, h.qr, t, {
+                        [h.J4]: s
                     }),
                     children: [(0, n.jsx)(d.DZT, {
                         variant: s ? "display-sm" : "heading-xxl/extrabold",
-                        className: _.R_,
+                        className: h.R_,
                         style: {
                             textAlign: "start"
                         },
                         children: A.intl.string(b.default.EdGvBM)
                     }), (0, n.jsx)(d.EYj, {
                         variant: s ? "text-md/medium" : "text-lg/normal",
-                        className: l()(_.VA, _.dO),
+                        className: l()(h.VA, h.dO),
                         children: A.intl.string(b.default["2KoHRF"])
                     }), (0, n.jsx)(p.A, {})]
                 })

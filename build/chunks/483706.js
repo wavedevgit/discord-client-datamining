@@ -1,6 +1,6 @@
 /** chunk id: 483706 params = (module,exports,require) **/
 n.d(t, {
-    p: () => v
+    p: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -18,11 +18,10 @@ var i = n(627968),
     h = n(534654),
     x = n(834981),
     p = n(191627),
-    T = n(652215),
-    E = n(842130),
-    S = n(985018),
-    C = n(191248);
-let f = e => {
+    T = n(842130),
+    E = n(985018),
+    S = n(191248);
+let C = e => {
         let {
             title: t,
             buttonText: n,
@@ -48,12 +47,10 @@ let f = e => {
             })]
         })
     },
-    b = () => {
+    f = () => {
         let e = (0, x.vx)(),
             t = () => {
-                (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
-                    section: T.nc_.CONTENT_AND_SOCIAL
-                })
+                (0, u.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL)
             };
         return (0, i.jsxs)(l.BJc, {
             justify: "space-between",
@@ -65,11 +62,11 @@ let f = e => {
                 gap: 4,
                 children: [(0, i.jsx)(l.EYj, {
                     variant: "text-sm/semibold",
-                    children: S.intl.string(E.default.ahKIJO)
+                    children: E.intl.string(T.default.ahKIJO)
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: S.intl.format(E.default.X9rW0j, {
+                    children: E.intl.format(T.default.X9rW0j, {
                         openSettingsHook: (e, n) => (0, i.jsx)(a.MzZ, {
                             onClick: t,
                             children: e
@@ -77,7 +74,7 @@ let f = e => {
                     })
                 })]
             }), (0, i.jsx)(a.Button, {
-                text: S.intl.formatToPlainString(E.default.ggcjPR, {
+                text: E.intl.formatToPlainString(T.default.ggcjPR, {
                     count: e.length
                 }),
                 onClick: () => {
@@ -90,7 +87,7 @@ let f = e => {
             })]
         })
     },
-    N = e => {
+    b = e => {
         let {
             teenId: t
         } = e, s = (0, A.y3)(), r = s?.restrictedSchedule?.rules.length ?? 0;
@@ -108,16 +105,16 @@ let f = e => {
                 gap: 4,
                 children: [(0, i.jsx)(l.EYj, {
                     variant: "text-md/medium",
-                    children: S.intl.string(E.default["1Op+NP"])
+                    children: E.intl.string(T.default["1Op+NP"])
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: 0 === r ? S.intl.string(E.default.fOBIZH) : S.intl.formatToPlainString(E.default.XfwcpX, {
+                    children: 0 === r ? E.intl.string(T.default.fOBIZH) : E.intl.formatToPlainString(T.default.XfwcpX, {
                         count: r
                     })
                 })]
             }), (0, i.jsx)(a.Button, {
-                text: S.intl.string(E.default.OwFF4o),
+                text: E.intl.string(T.default.OwFF4o),
                 onClick: () => {
                     (0, a.mMO)(async () => {
                         let {
@@ -134,7 +131,7 @@ let f = e => {
             })]
         })
     },
-    I = () => {
+    N = () => {
         let e = (0, A.y3)(),
             t = (0, A.tl)(),
             {
@@ -155,35 +152,35 @@ let f = e => {
                 gap: 4,
                 children: [(0, i.jsx)(l.EYj, {
                     variant: "text-sm/semibold",
-                    children: S.intl.string(E.default.ahKIJO)
+                    children: E.intl.string(T.default.ahKIJO)
                 }), (0, i.jsx)(l.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: S.intl.string(E.default.Sv236e)
+                    children: E.intl.string(T.default.Sv236e)
                 })]
-            }), (0, i.jsx)(f, {
-                title: S.intl.string(S.t["+o1pDZ"]),
-                buttonText: S.intl.string(S.t.bt75uw),
+            }), (0, i.jsx)(C, {
+                title: E.intl.string(E.t["+o1pDZ"]),
+                buttonText: E.intl.string(E.t.bt75uw),
                 onButtonPress: () => r(p.u9.CONTENT_AND_SOCIAL)
             }), (0, i.jsx)(o.A, {
-                className: C.yF
-            }), (0, i.jsx)(f, {
-                title: S.intl.string(S.t.OAuOHD),
-                buttonText: S.intl.string(S.t.bt75uw),
+                className: S.yF
+            }), (0, i.jsx)(C, {
+                title: E.intl.string(E.t.OAuOHD),
+                buttonText: E.intl.string(E.t.bt75uw),
                 onButtonPress: () => r(p.u9.DATA_AND_PRIVACY)
             }), a && e?.id != null && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(o.A, {
-                    className: C.yF
-                }), (0, i.jsx)(N, {
+                    className: S.yF
+                }), (0, i.jsx)(b, {
                     teenId: e.id
                 })]
             })]
         })
     },
-    v = () => {
+    I = () => {
         let e = (0, h.A)();
         return 0 === (0, x.vx)().length ? null : (0, i.jsx)("div", {
-            className: C.kL,
-            children: e ? (0, i.jsx)(b, {}) : (0, i.jsx)(I, {})
+            className: S.kL,
+            children: e ? (0, i.jsx)(f, {}) : (0, i.jsx)(N, {})
         })
     }

@@ -81,20 +81,15 @@ let eh = () => {
         analyticsLocations: e
     }), eN = () => {
         (0, E.openUserSettings)(p.X.SOUNDBOARD_CATEGORY, {
-            section: G.nc_.VOICE,
-            subsection: U.MJ,
             analyticsLocations: e
         })
     }, eI = () => {
         (0, x.pX)(G.BVt.COLLECTIBLES_SHOP)
     }, ev = () => {
         let e = (0, T.Ci)("openCustomAppSettings") ? p.X.DISPLAY_IN_APP_ICON_CATEGORY : p.X.APPEARANCE_IN_APP_ICON;
-        (0, E.openUserSettings)(e, {
-            section: G.nc_.APPEARANCE
-        })
+        (0, E.openUserSettings)(e)
     }, ej = l.useCallback(() => {
         (0, E.openUserSettings)(p.X.PROFILE_PANEL, {
-            section: G.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
         }, () => (0, A.L)({
             analyticsLocations: e
@@ -109,7 +104,6 @@ let eh = () => {
             onCtaClick: () => {
                 let t = (0, T.Ci)("openClientThemes");
                 (0, E.openUserSettings)(t ? p.X.DISPLAY_THEME_CATEGORY : p.X.APPEARANCE_PANEL, {
-                    section: G.nc_.APPEARANCE,
                     analyticsLocations: e
                 })
             },
@@ -124,7 +118,6 @@ let eh = () => {
             pillText: k.intl.string(k.t.EYxi0o),
             onCtaClick: eE ? () => {
                 (0, E.openUserSettings)(p.X.CLIPS_PANEL, {
-                    section: G.nc_.CLIPS,
                     analyticsLocations: e
                 })
             } : () => {
@@ -214,7 +207,6 @@ let eh = () => {
             descriptionCta: k.intl.string(k.t.jVcuVY),
             onCtaClick: eS ? void 0 : () => {
                 (0, E.openUserSettings)(p.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
-                    section: G.nc_.GUILD_BOOSTING,
                     analyticsLocations: e
                 })
             },

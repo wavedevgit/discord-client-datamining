@@ -25,15 +25,15 @@ let f = e => e === u.pe.TIER_0 ? m.intl.string(m.t.rk4Uu8) : m.intl.string(m.t.V
             hideIcon: m,
             subscriptionTier: b,
             premiumModalAnalyticsLocation: A,
-            giftMessage: _,
-            onClick: h
+            giftMessage: h,
+            onClick: _
         } = e, g = (0, o.Ay)(), R = f(b);
         return (0, n.jsx)(c.A, {
             isGift: !0,
             subscriptionTier: b,
             premiumModalAnalyticsLocation: A,
-            giftMessage: _,
-            onClick: h,
+            giftMessage: h,
+            onClick: _,
             children: e => {
                 let {
                     onClick: o

@@ -344,9 +344,7 @@ function G(e) {
         b = a.useCallback(() => {
             (0, E.O9)({
                 settingsVisible: !0
-            }), (0, f.openUserSettings)(T.X.POGGERMODE_PANEL, {
-                section: h.nc_.POGGERMODE
-            }), O(!1)
+            }), (0, f.openUserSettings)(T.X.POGGERMODE_PANEL), O(!1)
         }, []),
         G = a.useCallback((e, t) => {
             t?.id.startsWith(U) && b()

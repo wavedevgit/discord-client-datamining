@@ -21,9 +21,7 @@ function C(t) {
     } = t;
 
     function C() {
-        n(), (0, c.openUserSettings)(r.X.ENABLE_LEGACY_CHAT_INPUT, {
-            section: p.nc_.ACCESSIBILITY
-        })
+        n(), (0, c.openUserSettings)(r.X.ENABLE_LEGACY_CHAT_INPUT)
     }
     return (0, i.jsx)(a.ExpressiveModal, {
         transitionState: e,

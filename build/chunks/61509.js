@@ -483,9 +483,7 @@ class eg extends s.PureComponent {
                 children: (0, i.jsx)(g.$nd, {
                     variant: "primary",
                     text: ei.intl.string(ei.t["jcSP+g"]),
-                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL, {
-                        section: ee.nc_.INVENTORY
-                    })
+                    onClick: () => (0, k.openUserSettings)(M.X.GIFT_PANEL)
                 })
             })]
         }) : o ? null : (0, i.jsxs)(s.Fragment, {

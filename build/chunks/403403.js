@@ -1,6 +1,6 @@
 /** chunk id: 403403 params = (module,exports,require) **/
 n.d(e, {
-    A: () => T
+    A: () => o
 });
 var s = n(627968);
 n(64700);
@@ -8,7 +8,7 @@ var i = n(503698),
     l = n.n(i),
     r = n(397927),
     a = n(964851);
-let T = function(t) {
+let o = function(t) {
     let {
         children: e,
         style: n

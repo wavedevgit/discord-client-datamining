@@ -204,9 +204,7 @@ function em() {
                         U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: "to_subscriptions_button",
                             target: "subscriptions settings"
-                        }), (0, P.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL, {
-                            section: ei.nc_.SUBSCRIPTIONS
-                        })
+                        }), (0, P.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
                     },
                     text: es.intl.string(es.t["9uDy6C"]),
                     fullWidth: !0,

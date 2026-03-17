@@ -66,10 +66,10 @@ function o(e) {
     a.useLayoutEffect(() => {
         o !== A.current && j(!1), A.current = o
     }, [o]);
-    let O = a.useCallback(() => {
+    let R = a.useCallback(() => {
             "unfurledWithTimeout" === h && (p("unfurledWithTimeoutCanceled"), u())
         }, [u, h]),
-        R = a.useCallback(() => {
+        k = a.useCallback(() => {
             C(!1), u()
         }, [C, u]);
     return {
@@ -82,8 +82,8 @@ function o(e) {
         expansionSpring: E,
         visibilitySpring: I,
         springConfig: S,
-        onQuestBarFocus: O,
-        onUnfurlTimeoutComplete: R,
+        onQuestBarFocus: R,
+        onUnfurlTimeoutComplete: k,
         isUnfurl: "none" !== h,
         isUnfurlTimeoutActive: "unfurledWithTimeout" === h
     }

@@ -169,9 +169,7 @@ let O = e => {
                                 p.default.track(h.HAw.PREMIUM_PROMOTION_OPENED, {
                                     location_section: h.JJy.NOTIFICATION_BAR,
                                     location_object: h.ZSU.BUTTON_CTA
-                                }), (0, I.openUserSettings)(A.X.NITRO_PANEL, {
-                                    section: h.nc_.PREMIUM
-                                })
+                                }), (0, I.openUserSettings)(A.X.NITRO_PANEL)
                             },
                             children: g.intl.string(g.t["8JC5e/"])
                         }), (0, i.jsx)(r.PMB, {
@@ -200,9 +198,7 @@ let O = e => {
                         }), g.intl.string(g.t["0KFB2B"]), (0, i.jsx)(r.Z_L, {
                             noticeType: O,
                             onClick: () => {
-                                m(R.i.UNKNOWN), (0, I.openUserSettings)(A.X.NITRO_PANEL, {
-                                    section: h.nc_.PREMIUM
-                                })
+                                m(R.i.UNKNOWN), (0, I.openUserSettings)(A.X.NITRO_PANEL)
                             },
                             children: g.intl.string(g.t.pyYSiO)
                         })]

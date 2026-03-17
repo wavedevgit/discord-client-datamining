@@ -19,8 +19,8 @@ function u(e) {
         disabled: u,
         tooltipConfig: m
     } = e, x = i.useRef(null), {
-        avatarSrc: _,
-        eventHandlers: f
+        avatarSrc: f,
+        eventHandlers: _
     } = (0, d.A)({
         userId: t?.id,
         size: c._3J.SIZE_32
@@ -43,10 +43,10 @@ function u(e) {
                     className: r()({
                         [o.SU]: u
                     }),
-                    src: _,
+                    src: f,
                     "aria-label": h,
                     size: c._3J.SIZE_32,
-                    ...f
+                    ..._
                 })
             }), (0, a.jsxs)("div", {
                 className: o.QV,

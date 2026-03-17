@@ -4,19 +4,19 @@ n.d(t, {
 });
 var r = n(311907),
     a = n(73153);
-let i = !1,
-    l = !1;
+let l = !1,
+    i = !1;
 class s extends r.Ay.Store {
     static displayName = "SoundboardOverlayStore";
     get keepOpen() {
-        return l
+        return i
     }
     get enabled() {
-        return i
+        return l
     }
 }
 let u = new s(a.h, {
     SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
-        i = e.enabled, e.enabled && (l = e.keepOpen ?? !1)
+        l = e.enabled, e.enabled && (i = e.keepOpen ?? !1)
     }
 })

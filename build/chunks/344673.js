@@ -144,19 +144,19 @@ function N() {
             type: "SET_TRACK_TRIGGERS",
             enabled: e
         })
-    }, []), O = N ? "Stop Tracking" : "Start Tracking";
+    }, []), R = N ? "Stop Tracking" : "Start Tracking";
     return (0, a.jsxs)("div", {
         ref: n,
         className: l()(T.nd, y.nd),
         children: [(0, a.jsxs)("div", {
             className: y.rh,
             children: [(0, a.jsx)(m.m_, {
-                text: O,
+                text: R,
                 children: (0, a.jsx)(h.K0, {
                     size: "sm",
                     variant: N ? "active" : "primary",
                     icon: N ? h.E$n : h.udU,
-                    "aria-label": O,
+                    "aria-label": R,
                     onClick: () => I(!N)
                 })
             }), (0, a.jsx)(h.IWV, {

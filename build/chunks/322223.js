@@ -30,7 +30,7 @@ function h(e) {
         isUnderLockdown: x
     } = (0, T.Li)(g), f = (0, o.fw)(C?.id ?? N.dJq), P = l.useCallback(() => null != C && (0, c.aZ)(C.id), [C]);
     if (null == C || null == y || !O) return null;
-    let U = e => {
+    let D = e => {
             e && f && S !== p.VV.MEMBER_SAFETY && P() ? E.default.track(N.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
                 notice_type: N.kqX.GUILD_RAID_NOTIFICATION,
                 guild_id: C.id
@@ -49,7 +49,7 @@ function h(e) {
                 })
             })
         },
-        D = (0, i.jsx)(a.Ay, {
+        U = (0, i.jsx)(a.Ay, {
             className: R.$f,
             guild: C,
             size: a.Ay.Sizes.MINI
@@ -61,9 +61,9 @@ function h(e) {
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
             noticeType: N.kqX.GUILD_RAID_NOTIFICATION
-        }), D, M, (0, i.jsx)(s.zr9, {
+        }), U, M, (0, i.jsx)(s.zr9, {
             className: R.hP,
-            onClick: () => U(!1),
+            onClick: () => D(!1),
             children: (0, i.jsxs)("div", {
                 className: R.rx,
                 children: [(0, i.jsx)(s.XAi, {
@@ -89,9 +89,9 @@ function h(e) {
         children: [(0, i.jsx)(s.PMB, {
             onClick: t,
             noticeType: N.kqX.GUILD_RAID_NOTIFICATION
-        }), D, L, !j && (0, i.jsx)(s.zr9, {
+        }), U, L, !j && (0, i.jsx)(s.zr9, {
             className: R.hP,
-            onClick: () => U(!0),
+            onClick: () => D(!0),
             children: (0, i.jsx)("div", {
                 className: R.rx,
                 children: (0, i.jsx)("span", {

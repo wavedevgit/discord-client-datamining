@@ -115,14 +115,9 @@ function N(e) {
     let {
         onClose: t
     } = e, n = l.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(c.X.CONNECTIONS_PANEL, {
-            section: x.nc_.CONNECTIONS
-        })
+        t?.(), (0, u.openUserSettings)(c.X.CONNECTIONS_PANEL)
     }, [t]), a = l.useCallback(() => {
-        t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_PANEL, {
-            section: x.nc_.CONTENT_AND_SOCIAL,
-            subsection: "CONNECTED_GAMES"
-        })
+        t?.(), (0, u.openUserSettings)(c.X.CONTENT_AND_SOCIAL_CONNECTED_GAMES_TAB)
     }, [t]);
     return (0, i.jsxs)(j, {
         heading: p.intl.string(p.t.VB6LWY),

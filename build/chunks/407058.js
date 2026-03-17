@@ -7,26 +7,26 @@ var s = n(627968),
     l = n(503698),
     r = n.n(l),
     a = n(311907),
-    T = n(827734),
-    o = n(397927),
+    o = n(827734),
+    T = n(397927),
     c = n(49229),
     d = n(975807),
     S = n(928658),
     u = n(426190),
     A = n(662502),
-    _ = n(994500),
-    x = n(192311),
+    x = n(994500),
+    _ = n(192311),
     E = n(278941),
     m = n(674272),
     g = n(665909),
     O = n(788099),
     h = n(403403),
     j = n(327337),
-    C = n(431804),
-    b = n(985018),
+    b = n(431804),
+    C = n(985018),
     L = n(691428);
 
-function N(t) {
+function R(t) {
     let {
         children: e
     } = t;
@@ -36,7 +36,7 @@ function N(t) {
     })
 }
 
-function R(t) {
+function p(t) {
     let {
         title: e,
         subTitle: n,
@@ -49,16 +49,16 @@ function R(t) {
         className: L.$l,
         children: [(0, s.jsxs)("div", {
             className: L.zk,
-            children: [(0, s.jsx)(o.Text, {
+            children: [(0, s.jsx)(T.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: e
-            }), (0, s.jsx)(o.Text, {
+            }), (0, s.jsx)(T.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: n
             })]
-        }), (0, s.jsx)(o.Button, {
+        }), (0, s.jsx)(T.Button, {
             size: "sm",
             variant: l,
             text: i,
@@ -68,29 +68,29 @@ function R(t) {
     })
 }
 
-function p(t) {
+function N(t) {
     let {
         title: e,
         subTitle: n,
         onPress: i
     } = t;
-    return (0, s.jsxs)(o.DUT, {
+    return (0, s.jsxs)(T.DUT, {
         className: r()(L.$l, L.lx),
         onClick: i,
         children: [(0, s.jsxs)("div", {
             className: L.zk,
-            children: [(0, s.jsx)(o.Text, {
+            children: [(0, s.jsx)(T.Text, {
                 variant: "text-md/semibold",
                 color: "text-strong",
                 children: e
-            }), null != n ? (0, s.jsx)(o.Text, {
+            }), null != n ? (0, s.jsx)(T.Text, {
                 variant: "text-xs/medium",
                 color: "text-default",
                 children: n
             }) : null]
-        }), (0, s.jsx)(o._BQ, {
+        }), (0, s.jsx)(T._BQ, {
             size: "md",
-            color: T.A.colors.INTERACTIVE_TEXT_DEFAULT
+            color: o.A.colors.INTERACTIVE_TEXT_DEFAULT
         })]
     })
 }
@@ -99,42 +99,42 @@ let I = function(t) {
         otherUserId: e,
         channelId: l,
         warningId: r,
-        warningType: T,
+        warningType: o,
         transitionToSlide: L
-    } = t, I = (0, u.N)(), U = (0, u.z)(), F = (0, x.W)(l), v = null != (0, E.e)(l), y = (0, a.bG)([_.A], () => _.A.isIgnored(e), [e]), Y = (0, a.bG)([_.A], () => _.A.isBlocked(e), [e]), k = i.useCallback(t => {
+    } = t, I = (0, u.N)(), U = (0, u.z)(), F = (0, _.W)(l), v = null != (0, E.e)(l), y = (0, a.bG)([x.A], () => x.A.isIgnored(e), [e]), Y = (0, a.bG)([x.A], () => x.A.isBlocked(e), [e]), k = i.useCallback(t => {
         (0, g._$)({
             channelId: l,
             warningId: r,
             senderId: e,
-            warningType: T,
+            warningType: o,
             cta: t,
             isNudgeWarning: v
         })
-    }, [l, r, e, T, v]), f = i.useCallback(() => {
-        (0, o.OoC)(j.V), k(g.Wm.USER_SAFETY_TOOLS_BLOCK_CONFIRM)
+    }, [l, r, e, o, v]), f = i.useCallback(() => {
+        (0, T.OoC)(j.V), k(g.Wm.USER_SAFETY_TOOLS_BLOCK_CONFIRM)
     }, [k]), W = i.useCallback(() => {
         c.A.unblockUser(e, {
             location: j.Ht
         }), k(g.Wm.USER_SAFETY_TOOLS_UNBLOCK)
     }, [e, k]), B = i.useCallback(() => {
-        (0, o.OoC)(j.V), k(g.Wm.USER_SAFETY_TOOLS_BLOCK_AND_REPORT_CONFIRM)
+        (0, T.OoC)(j.V), k(g.Wm.USER_SAFETY_TOOLS_BLOCK_AND_REPORT_CONFIRM)
     }, [k]), P = i.useMemo(() => [{
         type: 0,
-        title: b.intl.string(b.t.B7ZT06),
-        subTitle: b.intl.string(b.t.fCfp49),
-        buttonText: y ? b.intl.string(b.t["9e0wLn"]) : b.intl.string(b.t.B7ZT06),
+        title: C.intl.string(C.t.B7ZT06),
+        subTitle: C.intl.string(C.t.fCfp49),
+        buttonText: y ? C.intl.string(C.t["9e0wLn"]) : C.intl.string(C.t.B7ZT06),
         disabled: Y,
         onPress: () => {
             y ? (c.A.unignoreUser(e, j.cb, l), k(g.Wm.USER_SAFETY_TOOLS_UNIGNORE)) : (c.A.ignoreUser(e, j.cb, l), k(g.Wm.USER_SAFETY_TOOLS_IGNORE))
         }
     }, {
         type: 0,
-        title: b.intl.string(b.t.oDxaKy),
-        subTitle: b.intl.string(b.t.Lj37az),
-        buttonText: Y ? b.intl.string(b.t.Hro40y) : b.intl.string(b.t.oDxaKy),
+        title: C.intl.string(C.t.oDxaKy),
+        subTitle: C.intl.string(C.t.Lj37az),
+        buttonText: Y ? C.intl.string(C.t.Hro40y) : C.intl.string(C.t.oDxaKy),
         variant: "primary",
         onPress: () => {
-            Y ? (W(), A.A.showUnblockSuccessToast(e, l)) : (0, o.mMO)(async () => {
+            Y ? (W(), A.A.showUnblockSuccessToast(e, l)) : (0, T.mMO)(async () => {
                 let {
                     default: t
                 } = await n.e("62557").then(n.bind(n, 371185));
@@ -159,52 +159,52 @@ let I = function(t) {
         }
     }, {
         type: 0,
-        title: b.intl.string(b.t.X27yhD),
-        subTitle: b.intl.string(b.t["0tydOa"]),
-        buttonText: b.intl.string(b.t.X27yhD),
+        title: C.intl.string(C.t.X27yhD),
+        subTitle: C.intl.string(C.t["0tydOa"]),
+        buttonText: C.intl.string(C.t.X27yhD),
         onPress: () => {
-            (0, o.OoC)(j.V), (0, S.jJ)(F), k(g.Wm.USER_SAFETY_TOOLS_REPORT)
+            (0, T.OoC)(j.V), (0, S.jJ)(F), k(g.Wm.USER_SAFETY_TOOLS_REPORT)
         }
     }], [y, Y, k, W, f, B, e, l, F]), M = i.useMemo(() => {
         let t = {
-                title: b.intl.string(b.t.ZSbbMJ),
-                subTitle: b.intl.string(b.t.iNcsrW),
-                buttonText: b.intl.string(b.t.rK4Gqv),
+                title: C.intl.string(C.t.ZSbbMJ),
+                subTitle: C.intl.string(C.t.iNcsrW),
+                buttonText: C.intl.string(C.t.rK4Gqv),
                 onPress: () => {
                     (0, d.A)(j.x7), k(g.Wm.USER_SAFETY_TOOLS_CTL)
                 }
             },
             e = {
-                title: b.intl.string(b.t.ZSbbMJ),
-                subTitle: b.intl.string(b.t.g5uwC5),
-                buttonText: b.intl.string(b.t.rK4Gqv),
+                title: C.intl.string(C.t.ZSbbMJ),
+                subTitle: C.intl.string(C.t.g5uwC5),
+                buttonText: C.intl.string(C.t.rK4Gqv),
                 onPress: () => {
                     (0, d.A)(j.jR), k(g.Wm.USER_SAFETY_TOOLS_NO_FILTR)
                 }
             },
             n = {
-                title: b.intl.string(b.t.ZSbbMJ),
-                subTitle: b.intl.string(b.t.S9O1ZZ),
-                buttonText: b.intl.string(b.t.rK4Gqv),
+                title: C.intl.string(C.t.ZSbbMJ),
+                subTitle: C.intl.string(C.t.S9O1ZZ),
+                buttonText: C.intl.string(C.t.rK4Gqv),
                 onPress: () => {
                     (0, d.A)(j.CL), k(g.Wm.USER_SAFETY_TOOLS_THROUGHLINE)
                 }
             };
         return [{
             type: 0,
-            title: b.intl.string(b.t.syuaPI),
-            subTitle: b.intl.string(b.t.LLBnNk),
-            buttonText: b.intl.string(b.t.rzvzyZ),
+            title: C.intl.string(C.t.syuaPI),
+            subTitle: C.intl.string(C.t.LLBnNk),
+            buttonText: C.intl.string(C.t.rzvzyZ),
             onPress: () => {
                 (0, m.A)({
-                    source: C.y.KEYBIND,
-                    onClose: o.s7G
+                    source: b.y.KEYBIND,
+                    onClose: T.s7G
                 }), k(g.Wm.USER_SAFETY_TOOLS_VIBING_WUMPUS)
             }
         }, {
             type: 1,
-            title: b.intl.string(b.t["7LgVmt"]),
-            subTitle: b.intl.string(b.t.pwoRjc),
+            title: C.intl.string(C.t["7LgVmt"]),
+            subTitle: C.intl.string(C.t.pwoRjc),
             onPress: () => {
                 L(O.W.SAFETY_TIPS), k(g.Wm.USER_SAFETY_TOOLS_SAFETY_TIPS)
             }
@@ -214,7 +214,7 @@ let I = function(t) {
         }]
     }, [I, U, L, k]), D = i.useMemo(() => [{
         type: 1,
-        title: b.intl.string(b.t.otdt24),
+        title: C.intl.string(C.t.otdt24),
         onPress: () => {
             L(O.W.ABOUT_SAFETY_ALERTS), k(g.Wm.USER_SAFETY_TOOLS_ABOUT_SAFETY_ALERTS)
         }
@@ -227,14 +227,14 @@ let I = function(t) {
                 buttonText: l,
                 onPress: r,
                 disabled: a,
-                variant: T
+                variant: o
             } = t;
-            return (0, s.jsx)(R, {
+            return (0, s.jsx)(p, {
                 type: e,
                 title: n,
                 subTitle: i,
                 buttonText: l,
-                variant: T,
+                variant: o,
                 onPress: r,
                 disabled: a
             }, n)
@@ -246,7 +246,7 @@ let I = function(t) {
                 subTitle: i,
                 onPress: l
             } = t;
-            return (0, s.jsx)(p, {
+            return (0, s.jsx)(N, {
                 type: e,
                 title: n,
                 subTitle: i,
@@ -256,11 +256,11 @@ let I = function(t) {
         return null
     };
     return (0, s.jsxs)(h.A, {
-        children: [(0, s.jsx)(N, {
+        children: [(0, s.jsx)(R, {
             children: P.map(t => w(t))
-        }), (0, s.jsx)(N, {
+        }), (0, s.jsx)(R, {
             children: M.map(t => w(t))
-        }), (0, s.jsx)(N, {
+        }), (0, s.jsx)(R, {
             children: D.map(t => w(t))
         })]
     })

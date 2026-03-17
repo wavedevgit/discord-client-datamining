@@ -50,27 +50,27 @@ let g = e => {
         } = e, f = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: d.B
-        }), []), [j, T] = a.useState(""), [C, N] = a.useState(""), [I, S] = a.useState(null), [y, k] = a.useState(null), [E, w] = a.useState(!1);
+        }), []), [j, T] = a.useState(""), [C, N] = a.useState(""), [I, y] = a.useState(null), [S, k] = a.useState(null), [E, w] = a.useState(!1);
         a.useEffect(() => {
             T(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
         }, [A, v]);
         let M = a.useCallback(e => {
                 if (T(e), "" === e) {
-                    S(null), w(!1), N(""), k(null), g({
+                    y(null), w(!1), N(""), k(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), g({
+                    y(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = h(e);
-                w(t), S(null), t ? "" === C ? g({
+                w(t), y(null), t ? "" === C ? g({
                     value: e,
                     isValid: !1
                 }) : x.test(C) ? g({
@@ -144,7 +144,7 @@ let g = e => {
                     }), (0, l.jsx)(r.ksK, {
                         onChange: R,
                         value: C,
-                        error: y,
+                        error: S,
                         placeholder: m
                     })]
                 })]

@@ -406,9 +406,7 @@ let tu = [{
 }, {
     path: [e8.BVt.APPLICATION_LIBRARY_INVENTORY],
     render: function() {
-        return (0, X.B)(() => (0, eY.openUserSettings)(eB.X.GIFT_PANEL, {
-            section: e8.nc_.INVENTORY
-        })), (0, i.jsx)(l.rd, {
+        return (0, X.B)(() => (0, eY.openUserSettings)(eB.X.GIFT_PANEL)), (0, i.jsx)(l.rd, {
             to: eQ.A.defaultRoute
         })
     }
