@@ -20,7 +20,7 @@ var s = n(503698),
 function h(e) {
     let {
         compact: t = !1
-    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "512102", h = "db2d03d20594b6fb1c2e1f5da0a3e65a10508fe8".substring(0, 7), x = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "512115", h = "71c410246993ceb13f70651d4d638bbc5a0a0687".substring(0, 7), x = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
         let e = r()?.os?.toString();
         if (null == e || null == d.A) return null;
         let t = d.A.os.release,
