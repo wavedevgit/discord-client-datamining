@@ -1,6 +1,6 @@
 /** chunk id: 224515 params = (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -13,38 +13,43 @@ var i = n(627968),
     u = n(923408),
     _ = n(73825),
     m = n(160946),
-    g = n(859241),
-    A = n(295405),
-    h = n(166403),
-    x = n(653183),
-    p = n(652215),
-    T = n(417711);
+    g = n(178929),
+    A = n(859241),
+    h = n(295405),
+    x = n(166403),
+    p = n(653183),
+    T = n(843838),
+    E = n(652215),
+    S = n(417711);
 
-function E() {
+function C() {
+    let e = (0, g.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
-            c.hP(), c.$o(), (0, u.CD)(), (0, _.zS)(null, null, p.tF5.DISCOVERY), (0, u.tO)(!0)
+            c.hP(), c.$o(), (0, u.CD)(), (0, _.zS)(null, null, E.tF5.DISCOVERY), (0, u.tO)(!0)
         })
     }, []);
     let {
-        hasFetchedSubscriptions: e,
-        premiumSubscription: t
-    } = (0, r.cf)([h.A], () => ({
-        hasFetchedSubscriptions: h.A.hasFetchedSubscriptions(),
-        premiumSubscription: h.A.getPremiumTypeSubscription()
-    })), n = (0, m.Y)(), l = (0, r.bG)([A.A], () => A.A.hasFetchedPaymentSources), E = (0, r.bG)([g.A], () => g.A.isFetchingCurrentUserAppliedBoosts);
-    return e && n && l && !E ? (0, i.jsxs)("div", {
-        className: T.kL,
+        hasFetchedSubscriptions: t,
+        premiumSubscription: n
+    } = (0, r.cf)([x.A], () => ({
+        hasFetchedSubscriptions: x.A.hasFetchedSubscriptions(),
+        premiumSubscription: x.A.getPremiumTypeSubscription()
+    })), l = (0, m.Y)(), C = (0, r.bG)([h.A], () => h.A.hasFetchedPaymentSources), f = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
+    return t && l && C && !f ? (0, i.jsxs)("div", {
+        className: S.kL,
         children: [(0, i.jsx)("div", {
-            className: T.Tp
+            className: S.Tp
         }), (0, i.jsx)("div", {
-            className: T.Qs,
-            children: (0, i.jsx)(x.A, {
-                premiumSubscription: t
+            className: S.Qs,
+            children: e ? (0, i.jsx)(T.A, {
+                premiumSubscription: n
+            }) : (0, i.jsx)(p.A, {
+                premiumSubscription: n
             })
         })]
     }) : (0, i.jsx)("div", {
-        className: a()(T.kL, T.Lq),
+        className: a()(S.kL, S.Lq),
         children: (0, i.jsx)(o.y$y, {})
     })
 }
