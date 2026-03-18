@@ -19,13 +19,13 @@ let d = s.memo(function(e) {
         layout: u,
         useInlineNotice: _,
         useHeaderDecoration: m
-    } = t, g = n?.(), A = c?.(), h = _?.(), x = m?.(), p = null != n || null != d;
+    } = t, g = n?.(), A = c?.(), x = _?.(), h = m?.(), p = null != n || null != d;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != g && (0, i.jsx)(r._, {
             title: g,
             icon: s,
             subtitle: A,
-            decoration: x
+            decoration: h
         }), (0, i.jsx)("div", {
             "data-settings-category-key": p ? t.key : void 0,
             "aria-hidden": !0,
@@ -34,8 +34,8 @@ let d = s.memo(function(e) {
             }
         }), (0, i.jsxs)(l.BJc, {
             gap: "md",
-            children: [null != h && (0, i.jsx)(o.A, {
-                notice: h
+            children: [null != x && (0, i.jsx)(o.A, {
+                notice: x
             }), u.map(e => (0, i.jsx)(a.A, {
                 node: e
             }, e.key))]

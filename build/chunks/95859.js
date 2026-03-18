@@ -23,8 +23,8 @@ let g = () => {
         id: s,
         nameUnformatted: g,
         tenureReqNumMonths: A,
-        hasWideArt: h
-    } = e, x = _.intl.string(g), p = (0, o.T)(s, A), T = {
+        hasWideArt: x
+    } = e, h = _.intl.string(g), p = (0, o.T)(s, A), T = {
         "--custom-badge-glow-color": (0, r.KU)(e.glowColor, .5)
     };
     return (0, i.jsxs)("div", {
@@ -32,17 +32,17 @@ let g = () => {
         style: T,
         children: [(0, i.jsx)("div", {}), " ", (0, i.jsx)("img", {
             src: n.standard,
-            alt: x,
+            alt: h,
             className: l()(m.pq, {
                 [m.kQ]: e.status === d.Wo.UPCOMING,
-                [m.U]: h
+                [m.U]: x
             })
         }), (0, i.jsxs)("div", {
             className: m._u,
             children: [(0, i.jsx)(a.EYj, {
                 variant: "text-lg/semibold",
                 className: m.Vv,
-                children: x
+                children: h
             }), (0, i.jsx)(a.EYj, {
                 variant: "text-md/normal",
                 className: m.Vv,

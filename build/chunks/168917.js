@@ -20,8 +20,8 @@ function A(e) {
         errors: t,
         pendingNick: n,
         currentNick: A,
-        username: h,
-        user: x,
+        username: x,
+        user: h,
         guild: p
     } = e, T = n ?? A, E = (0, s.bG)([d.A], () => d.A.can(u.xBc.CHANGE_NICKNAME, p) || d.A.can(u.xBc.MANAGE_NICKNAMES, p)), S = (0, a.L)(_.PremiumTypes.TIER_2);
     return (0, i.jsxs)(r.A, {
@@ -29,7 +29,7 @@ function A(e) {
         errors: t,
         children: [(0, i.jsx)(l.ksK, {
             value: T ?? "",
-            placeholder: h,
+            placeholder: x,
             maxLength: u.d0r,
             onChange: function(e) {
                 (0, c.o_)(e, A)
@@ -37,7 +37,7 @@ function A(e) {
             disabled: !E,
             helperText: E ? void 0 : m.intl.string(m.t.gzjxQi)
         }), S && (0, i.jsx)(o.A, {
-            user: x,
+            user: h,
             guildId: p.id,
             className: g.F
         })]

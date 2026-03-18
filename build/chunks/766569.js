@@ -1,6 +1,6 @@
 /** chunk id: 766569 params = (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    A: () => P
 });
 var i = n(627968),
     s = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(550111),
     g = n(919395),
     A = n(884546),
-    h = n(287070),
-    x = n(101058),
+    x = n(287070),
+    h = n(101058),
     p = n(836602),
     T = n(622543),
     E = n(696451),
     S = n(351906),
-    C = n(287809),
-    f = n(975571),
+    f = n(287809),
+    C = n(975571),
     b = n(927578),
     N = n(159001),
     I = n(65767),
@@ -32,7 +32,7 @@ var i = n(627968),
     R = n(985018),
     O = n(764121);
 
-function P(e) {
+function D(e) {
     (0, o.mMO)(async () => {
         let {
             default: t
@@ -47,36 +47,36 @@ function P(e) {
     })
 }
 
-function D(e) {
+function P(e) {
     let {
         selectedGuild: t,
         onGuildChange: n
     } = e, {
         analyticsLocations: l
-    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), D = (0, r.bG)([C.default], () => {
-        let e = C.default.getCurrentUser();
+    } = (0, _.Ay)(u.A.USER_SETTINGS_GUILD_PROFILE), P = (0, r.bG)([f.default], () => {
+        let e = f.default.getCurrentUser();
         return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-    }), L = (0, r.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, D.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(D.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
+    }), L = (0, r.bG)([E.Ay], () => null != t ? E.Ay.getMember(t.id, P.id) : null), G = (0, r.bG)([T.A], () => !T.A.isFetchingProfile(P.id, t?.id)), M = (0, r.bG)([S.A], () => S.A.hidePersonalInformation), {
         pendingAvatar: U,
         pendingNameplate: k,
         ...V
-    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, x.V7)({
-        userId: D.id,
+    } = (0, r.cf)([p.A], () => p.A.getPendingChanges(t?.id)), w = (0, h.V7)({
+        userId: P.id,
         image: U
     }), B = (0, g.lw)({
         pendingValue: k,
-        userValue: D?.collectibles?.nameplate,
+        userValue: P?.collectibles?.nameplate,
         guildValue: L?.collectibles?.nameplate,
         guildId: t?.id
     }), {
         pendingDisplayNameStyles: H
-    } = (0, g.B0)(D, t?.id);
+    } = (0, g.B0)(P, t?.id);
     return (s.useEffect(() => () => d.h.wait(N.IM), []), M) ? (0, i.jsx)(c.A, {}) : G ? (0, i.jsxs)(_.f5, {
         value: l,
         children: [(0, i.jsx)(o.Text, {
             variant: "text-sm/normal",
             children: R.intl.format(R.t["/PTB2E"], {
-                helpCenterLink: f.A.getArticleURL(y.MVz.GUILD_PROFILES)
+                helpCenterLink: C.A.getArticleURL(y.MVz.GUILD_PROFILES)
             })
         }), null != t ? (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(j.A, {
@@ -90,19 +90,19 @@ function D(e) {
                         guildName: t?.name
                     })
                 }),
-                profilePreview: (0, i.jsx)(h.A, {
+                profilePreview: (0, i.jsx)(x.A, {
                     ...V,
                     pendingAvatar: w,
                     pendingDisplayNameStyles: H,
-                    user: D,
+                    user: P,
                     guild: t,
-                    canUsePremiumCustomization: b.Ay.canUsePremiumProfileCustomization(D),
-                    onUpsellClick: P
+                    canUsePremiumCustomization: b.Ay.canUsePremiumProfileCustomization(P),
+                    onUpsellClick: D
                 }),
                 nameplatePreview: (0, i.jsx)(m.A, {
                     ...V,
                     pendingDisplayNameStyles: H,
-                    user: D,
+                    user: P,
                     guildId: t?.id,
                     nameplate: B,
                     className: null == B ? O.t : void 0,

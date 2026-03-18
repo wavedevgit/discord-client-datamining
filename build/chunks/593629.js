@@ -18,12 +18,12 @@ function u(e) {
         savedUserColor: n,
         pendingColor: u,
         setPendingAccentColor: _
-    } = e, m = t.getAvatarURL(null, 80), g = (0, a.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), A = (0, r.rh)(m, g, !1), h = (0, s.LX)(A[0]);
+    } = e, m = t.getAvatarURL(null, 80), g = (0, a.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), A = (0, r.rh)(m, g, !1), x = (0, s.LX)(A[0]);
     return (0, i.jsx)(d.A, {
         title: c.intl.string(c.t["/X3fkf"]),
         children: (0, i.jsx)(o.A, {
             onChange: e => _(e),
-            color: u ?? n ?? h,
+            color: u ?? n ?? x,
             suggestedColors: A,
             showEyeDropper: !0
         })

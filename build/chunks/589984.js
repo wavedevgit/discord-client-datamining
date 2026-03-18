@@ -1,6 +1,6 @@
 /** chunk id: 589984 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,9 +15,9 @@ var i = n(627968),
     m = n(531525),
     g = n(652215),
     A = n(985018),
-    h = n(842130);
+    x = n(842130);
 
-function x() {
+function h() {
     let e = (0, r.uM)(),
         t = (0, l.bG)([o.A], () => o.A.hasConsented(g.YAq.USAGE_STATISTICS)),
         n = s.useCallback(e => {
@@ -39,7 +39,7 @@ function x() {
             value: t,
             onChange: n,
             disabled: e,
-            tooltipText: e ? A.intl.string(h.default["6Af/cw"]) : void 0
+            tooltipText: e ? A.intl.string(x.default["6Af/cw"]) : void 0
         })
     })
 }

@@ -1,6 +1,6 @@
 /** chunk id: 773140 params = (module,exports,require) **/
 n.d(t, {
-    q: () => x
+    q: () => h
 });
 var i = n(934551),
     s = n(419954),
@@ -15,14 +15,14 @@ var i = n(934551),
     m = n(315943),
     g = n(475061),
     A = n(985018);
-let h = (0, s.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
+let x = (0, s.t_)(a.X.VOICE_AND_VIDEO_PANEL, {
         useTitle: () => A.intl.string(A.t.B1fFpf),
         buildLayout: () => [g.p, c.Q, o.i, m.H, _.t, u.U, d.r]
     }),
-    x = (0, s.i4)(a.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
+    h = (0, s.i4)(a.X.VOICE_AND_VIDEO_SIDEBAR_ITEM, {
         useTitle: () => A.intl.string(A.t.B1fFpf),
         usePredicate: () => l.Ay.isSupported(),
         icon: i.MicrophoneIcon,
         useMenu: r.A,
-        buildLayout: () => [h]
+        buildLayout: () => [x]
     })

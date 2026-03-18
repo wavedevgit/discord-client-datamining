@@ -1,7 +1,7 @@
 /** chunk id: 604151 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => N,
-    LP: () => f,
+    LP: () => C,
     nK: () => b
 });
 var i = n(627968),
@@ -17,8 +17,8 @@ var i = n(627968),
     m = n(287809),
     g = n(975571),
     A = n(871930),
-    h = n(531525),
-    x = n(652215),
+    x = n(531525),
+    h = n(652215),
     p = n(985018),
     T = n(193291);
 
@@ -55,11 +55,11 @@ function S(e) {
     let {
         userId: t,
         last: n
-    } = e, l = (0, r.bG)([_.A], () => _.A.isBlocked(t)), g = (0, r.bG)([m.default], () => m.default.getUser(t)), [A, h] = s.useState(!1), x = s.useCallback(() => {
-        h(!0), l ? d.A.unblockUser(t).catch(() => {
-            h(!1)
+    } = e, l = (0, r.bG)([_.A], () => _.A.isBlocked(t)), g = (0, r.bG)([m.default], () => m.default.getUser(t)), [A, x] = s.useState(!1), h = s.useCallback(() => {
+        x(!0), l ? d.A.unblockUser(t).catch(() => {
+            x(!1)
         }) : d.A.unignoreUser(t, u.A.USER_SETTINGS).catch(() => {
-            h(!1)
+            x(!1)
         })
     }, [l, t]);
     return null == g ? null : (0, i.jsxs)("div", {
@@ -86,13 +86,13 @@ function S(e) {
         }), (0, i.jsx)(o.Button, {
             variant: "secondary",
             text: p.intl.string(l ? p.t.XyHpKH : p.t["8wXU9B"]),
-            onClick: x,
+            onClick: h,
             loading: A
         })]
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         setting: t,
         userIds: n,
@@ -131,10 +131,10 @@ function C(e) {
     })
 }
 
-function f() {
+function C() {
     let e = (0, r.yK)([_.A], () => _.A.getBlockedIDs());
-    return (0, i.jsx)(C, {
-        setting: h.H.BLOCKED_USERS,
+    return (0, i.jsx)(f, {
+        setting: x.H.BLOCKED_USERS,
         userIds: e,
         listType: "blocked"
     })
@@ -142,8 +142,8 @@ function f() {
 
 function b() {
     let e = (0, r.yK)([_.A], () => _.A.getIgnoredIDs());
-    return (0, i.jsx)(C, {
-        setting: h.H.IGNORED_USERS,
+    return (0, i.jsx)(f, {
+        setting: x.H.IGNORED_USERS,
         userIds: e,
         listType: "ignored"
     })
@@ -151,12 +151,12 @@ function b() {
 
 function N() {
     return (0, i.jsxs)(A.h, {
-        setting: h.H.RESTRICTED_USERS,
+        setting: x.H.RESTRICTED_USERS,
         children: [(0, i.jsx)(A._, {
             header: p.intl.string(p.t["3wRort"]),
             description: p.intl.format(p.t["0aNQo9"], {
-                helpArticle: g.A.getArticleURL(x.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
+                helpArticle: g.A.getArticleURL(h.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
             })
-        }), (0, i.jsx)(f, {}), (0, i.jsx)(b, {})]
+        }), (0, i.jsx)(C, {}), (0, i.jsx)(b, {})]
     })
 }

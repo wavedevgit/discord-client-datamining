@@ -1,6 +1,6 @@
 /** chunk id: 809465 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -17,19 +17,19 @@ var s = n(503698),
     g = n(985018),
     A = n(355893);
 
-function h(e) {
+function x(e) {
     let {
         compact: t = !1
-    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "512720", h = "2bd42d6ab392f769060030dc0903f27ad0bd35db".substring(0, 7), x = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "512725", x = "24ba96cbdc32314b07c273f7ec3843cd82a8d32a".substring(0, 7), h = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
         let e = r()?.os?.toString();
         if (null == e || null == d.A) return null;
         let t = d.A.os.release,
             [n, i, s] = m.Ay.parsedOSRelease;
         return e.includes("Windows 10") && void 0 !== s && s >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
-    }(), C = [s, a, `(${h})`];
-    return (null != x && (C.push(`Host ${x}`), null != T && C.push(T.toLowerCase()), null != p && C.push(`(${p})`)), C.push(`Build Override: ${null!=E?E.id:"N/A"}`), null != S && C.push(S), t) ? (0, i.jsxs)(i.Fragment, {
+    }(), f = [s, a, `(${x})`];
+    return (null != h && (f.push(`Host ${h}`), null != T && f.push(T.toLowerCase()), null != p && f.push(`(${p})`)), f.push(`Build Override: ${null!=E?E.id:"N/A"}`), null != S && f.push(S), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
-            copyValue: C.join(" "),
+            copyValue: f.join(" "),
             text: g.intl.string(g.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
@@ -46,13 +46,13 @@ function h(e) {
                         color: "text-muted",
                         children: [s, " ", a, " ", (0, i.jsxs)("span", {
                             className: A.Pc,
-                            children: ["(", h, ")"]
+                            children: ["(", x, ")"]
                         })]
-                    }), null != x && (0, i.jsxs)(o.Text, {
+                    }), null != h && (0, i.jsxs)(o.Text, {
                         tag: "span",
                         variant: "text-xxs/normal",
                         color: "text-muted",
-                        children: [x, null != T && (0, i.jsxs)("span", {
+                        children: [h, null != T && (0, i.jsxs)("span", {
                             className: A.GI,
                             children: [" ", T.toLowerCase()]
                         }), null != p && (0, i.jsxs)("span", {
@@ -75,7 +75,7 @@ function h(e) {
         })]
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
-            copyValue: C.join(" "),
+            copyValue: f.join(" "),
             text: g.intl.string(g.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
@@ -93,7 +93,7 @@ function h(e) {
                         color: "text-muted",
                         children: [s, " ", a, " ", (0, i.jsxs)("span", {
                             className: A.Pc,
-                            children: ["(", h, ")"]
+                            children: ["(", x, ")"]
                         })]
                     }), " ", null != E && (0, i.jsx)(o.Text, {
                         tag: "span",
@@ -104,13 +104,13 @@ function h(e) {
                             className: A.Pc,
                             children: ["Build Override: ", E.id]
                         })
-                    }), null != x ? (0, i.jsxs)(i.Fragment, {
+                    }), null != h ? (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsxs)(o.Text, {
                             tag: "span",
                             className: A.n8,
                             variant: "text-xs/normal",
                             color: "text-muted",
-                            children: ["Host ", x, " ", null != T ? (0, i.jsxs)("span", {
+                            children: ["Host ", h, " ", null != T ? (0, i.jsxs)("span", {
                                 className: A.GI,
                                 children: [T.toLowerCase(), " "]
                             }) : null, null != p ? (0, i.jsxs)("span", {

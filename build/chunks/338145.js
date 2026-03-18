@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(780964),
     g = n(652215),
     A = n(985018);
-let h = n(993830),
-    x = n(413142),
+let x = n(993830),
+    h = n(413142),
     p = {
         page: g.liQ.USER_SETTINGS,
         section: g.JJy.SETTINGS_VOICE_AND_VIDEO
@@ -25,7 +25,7 @@ let h = n(993830),
 function T() {
     let e = (0, a.bG)([_.A], () => (0, l.qB1)(_.A.theme));
     return (0, i.jsx)("img", {
-        src: e ? h : x,
+        src: e ? x : h,
         width: 48,
         height: 32,
         alt: ""
@@ -67,7 +67,7 @@ let E = (0, d.E2)(m.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                     value: "NONE"
                 }), e
             }, [_, d]),
-            h = _ ? A.intl.format(A.t["1q5aTp"], {
+            x = _ ? A.intl.format(A.t["1q5aTp"], {
                 helpArticle: u.A.getArticleURL(g.MVz.NOISE_SUPPRESSION)
             }) : A.intl.string(A.t.OWKjw5);
         return (0, i.jsxs)(l.BJc, {
@@ -75,7 +75,7 @@ let E = (0, d.E2)(m.X.VOICE_NOISE_SUPPRESSION_SETTING, {
             gap: 0,
             children: [(0, i.jsx)(r.l6P, {
                 label: A.intl.string(A.t.t8Qhib),
-                description: h,
+                description: x,
                 layout: "horizontal",
                 value: t ? "KRISP" : n ? "STANDARD" : "NONE",
                 onSelectionChange: e,

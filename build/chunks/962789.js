@@ -16,14 +16,14 @@ var i = n(627968),
     m = n(978304),
     g = n(840065),
     A = n(744479),
-    h = n(871930),
-    x = n(578746),
+    x = n(871930),
+    h = n(578746),
     p = n(531525),
     T = n(652215),
     E = n(985018),
     S = n(419205);
 
-function C(e) {
+function f(e) {
     let {
         applications: t
     } = e, n = s.useMemo(() => t.sort((e, t) => c.default.compare(t.id, e.id)), [t]), l = s.useMemo(() => {
@@ -110,11 +110,11 @@ function C(e) {
     })
 }
 
-function f() {
+function C() {
     let e = u.Zk.useSetting();
-    return (0, i.jsx)(h.h, {
+    return (0, i.jsx)(x.h, {
         setting: p.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-        children: (0, i.jsx)(x.Ay, {
+        children: (0, i.jsx)(h.Ay, {
             title: E.intl.string(E.t.XpBObB),
             note: E.intl.format(E.t.oZsHTD, {
                 helpdeskArticle: d.A.getArticleURL(T.MVz.SLAYER_GAME_FRIENDS)
@@ -138,9 +138,9 @@ function b() {
             name: E.intl.string(E.t.AolKwN),
             value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
         }];
-    return (0, i.jsxs)(h.h, {
+    return (0, i.jsxs)(x.h, {
         setting: p.H.PRIVACY_AND_SAFETY_IN_GAME_DMS,
-        children: [(0, i.jsx)(h._, {
+        children: [(0, i.jsx)(x._, {
             header: E.intl.string(E.t["ms+Tme"]),
             description: E.intl.string(E.t["4NN4+/"])
         }), (0, i.jsx)(r.z6M, {
@@ -173,7 +173,7 @@ function I(e) {
     let {
         applications: t
     } = e;
-    return t.length > 0 ? (0, i.jsx)(C, {
+    return t.length > 0 ? (0, i.jsx)(f, {
         applications: t
     }) : (0, i.jsx)(N, {})
 }
@@ -198,7 +198,7 @@ function j() {
             children: [(0, i.jsx)(I, {
                 applications: t
             }), t.length > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(f, {}), (0, i.jsx)("div", {
+                children: [(0, i.jsx)(C, {}), (0, i.jsx)("div", {
                     className: S.yF
                 }), (0, i.jsx)(b, {})]
             })]

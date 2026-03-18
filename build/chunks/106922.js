@@ -1,6 +1,6 @@
 /** chunk id: 106922 params = (module,exports,require) **/
 n.d(t, {
-    A: () => eh,
+    A: () => ex,
     c: () => eg
 });
 var i = n(627968),
@@ -16,14 +16,14 @@ var i = n(627968),
     m = n(732955),
     g = n(582754),
     A = n(421380),
-    h = n(397927),
-    x = n(73153),
+    x = n(397927),
+    h = n(73153),
     p = n(384904),
     T = n(73825),
     E = n(974544),
     S = n(736653),
-    C = n(793574),
-    f = n(688810),
+    f = n(793574),
+    C = n(688810),
     b = n(86379),
     N = n(531260),
     I = n(160946),
@@ -32,8 +32,8 @@ var i = n(627968),
     y = n(976860),
     R = n(780964),
     O = n(12901),
-    P = n(840065),
-    D = n(351906),
+    D = n(840065),
+    P = n(351906),
     L = n(287809),
     G = n(166403),
     M = n(224016),
@@ -81,7 +81,7 @@ function e_(e) {
             colorOptions: (0, g.Mw)(l) ? q.at.PREMIUM_TIER_2_WHITE_FILL : q.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
         }), (a || !r) && (0, i.jsx)("div", {
             className: el.on
-        }), (0, i.jsx)(h.Heading, {
+        }), (0, i.jsx)(x.Heading, {
             variant: "heading-md/normal",
             color: "always-white",
             className: el.KB,
@@ -123,7 +123,7 @@ function em() {
         }),
         children: [(0, i.jsxs)("div", {
             className: el.jp,
-            children: [r ? (0, i.jsx)(h.Heading, {
+            children: [r ? (0, i.jsx)(x.Heading, {
                 variant: "display-md",
                 color: "always-white",
                 className: el._K,
@@ -139,7 +139,7 @@ function em() {
                     text: es.intl.string(es.t.uXF4c4),
                     className: el.rd,
                     colorOptions: q.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
-                }), (0, i.jsx)(h.Heading, {
+                }), (0, i.jsx)(x.Heading, {
                     variant: "heading-md/normal",
                     color: "always-white",
                     className: el.sQ,
@@ -157,7 +157,7 @@ function em() {
                     text: es.intl.string(es.t.qYKftX),
                     className: el.uS,
                     colorOptions: (0, g.Mw)(n) ? q.at.PREMIUM_TIER_2_WHITE_FILL : q.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL
-                }), (0, i.jsx)(h.Heading, {
+                }), (0, i.jsx)(x.Heading, {
                     variant: "heading-md/normal",
                     color: "always-white",
                     className: el.KB,
@@ -204,7 +204,7 @@ function em() {
                         U.default.track(ei.HAw.PREMIUM_SETTINGS_INTERACTED, {
                             cta_type: "to_subscriptions_button",
                             target: "subscriptions settings"
-                        }), (0, P.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
+                        }), (0, D.openUserSettings)(R.X.SUBSCRIPTIONS_PANEL)
                     },
                     text: es.intl.string(es.t["9uDy6C"]),
                     fullWidth: !0,
@@ -247,17 +247,17 @@ function eg(e) {
             src: l
         }), (0, i.jsxs)("div", {
             className: el.QT,
-            children: [(0, i.jsx)(h.Heading, {
+            children: [(0, i.jsx)(x.Heading, {
                 className: el.u_,
                 style: u,
                 variant: "heading-lg/extrabold",
                 children: n.header
-            }), (0, i.jsx)(h.Text, {
+            }), (0, i.jsx)(x.Text, {
                 className: el.Oi,
                 style: u,
                 variant: "text-xs/medium",
                 children: n.body
-            }), null != n.additionalTerms && (0, i.jsx)(h.Text, {
+            }), null != n.additionalTerms && (0, i.jsx)(x.Text, {
                 className: el.KW,
                 style: u,
                 variant: "text-xxs/normal",
@@ -285,11 +285,11 @@ function eA() {
             src: er
         }), (0, i.jsxs)("div", {
             className: el.b4,
-            children: [(0, i.jsx)(h.Heading, {
+            children: [(0, i.jsx)(x.Heading, {
                 className: el.Vz,
                 variant: "heading-xl/extrabold",
                 children: es.intl.string(es.t["3KomGa"])
-            }), (0, i.jsx)(h.Text, {
+            }), (0, i.jsx)(x.Text, {
                 className: el.Oi,
                 variant: "text-sm/normal",
                 children: es.intl.string(es.t.yQ06u1)
@@ -310,11 +310,11 @@ function eA() {
         })]
     })
 }
-let eh = function() {
+let ex = function() {
     let e = (0, b.H)(),
         {
             analyticsLocations: t
-        } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
+        } = (0, C.Ay)(f.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([L.default], () => L.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
@@ -328,16 +328,16 @@ let eh = function() {
             return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
         }),
         S = !(d.Fr || d.v1) && null != A,
-        y = (0, u.bG)([D.A], () => D.A.enabled),
+        y = (0, u.bG)([P.A], () => P.A.enabled),
         R = s.useRef(null);
     (0, X.i)();
     let O = (0, z.m)();
     s.useEffect(() => {
-        x.h.wait(async () => {
+        h.h.wait(async () => {
             y || e || await Promise.all([p.hP(), p.$o(), (0, T.zS)(null, null, ei.tF5.DISCOVERY)]), m(!1)
         })
     }, [y, e]);
-    let [P, M] = s.useState(!1);
+    let [D, M] = s.useState(!1);
     if (y) return (0, i.jsx)(E.A, {});
     if (e) return (0, i.jsx)(v.uK, {});
     let k = a && null !== l && r,
@@ -347,9 +347,9 @@ let eh = function() {
         title: es.intl.string(es.t.dyq9TR),
         note: null
     });
-    if (!k && !V && !w || o) return (0, i.jsx)(h.y$y, {});
+    if (!k && !V && !w || o) return (0, i.jsx)(x.y$y, {});
     let B = !!l?.hasActiveTrial;
-    return (0, i.jsx)(f.f5, {
+    return (0, i.jsx)(C.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
@@ -367,7 +367,7 @@ let eh = function() {
             }), (0, i.jsx)(_.L, {
                 innerRef: R,
                 onChange: e => {
-                    e && !P && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !D && (U.default.track(ei.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: t
                     }), M(!0))
                 },

@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     A = n(178856),
-    h = n(915089),
-    x = n(465932),
+    x = n(915089),
+    h = n(465932),
     p = n(263063),
     T = n(543767),
     E = n(420139),
     S = n(790284),
-    C = n(976860),
-    f = n(780964),
+    f = n(976860),
+    C = n(780964),
     b = n(12901),
     N = n(840065),
     I = n(295405),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(815332),
     R = n(568286),
     O = n(638182),
-    P = n(652215),
-    D = n(746080),
+    D = n(652215),
+    P = n(746080),
     L = n(355097),
     G = n(985018),
     M = n(185814);
@@ -124,11 +124,11 @@ let U = e => {
             expanded: m,
             handleToggleExpanded: A,
             subscriptionInfo: T
-        } = (0, v.A)(t), [E, I] = s.useState(!1), w = (0, h.GV)(), {
+        } = (0, v.A)(t), [E, I] = s.useState(!1), w = (0, x.GV)(), {
             analyticsLocations: B
         } = (0, g.Ay)(), {
             shouldHideGuildPurchaseEntryPoints: H
-        } = (0, x.MH)(r?.id), F = t?.isPurchasedViaAppleGeneric;
+        } = (0, h.MH)(r?.id), F = t?.isPurchasedViaAppleGeneric;
         if (null == l || null == n || null == T) return null;
         let Y = async () => {
             try {
@@ -256,10 +256,10 @@ let U = e => {
                         })
                     },
                     onChangePlanClick: () => {
-                        null != r && ((0, C.pX)(P.BVt.CHANNEL(r.id, D.VV.ROLE_SUBSCRIPTIONS)), (0, b.default)(), _.A.show(P.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
+                        null != r && ((0, f.pX)(D.BVt.CHANNEL(r.id, P.VV.ROLE_SUBSCRIPTIONS)), (0, b.default)(), _.A.show(D.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
                             S.A.setState({
                                 subsection: L.nR
-                            }), (0, N.openUserSettings)(f.X.SUBSCRIPTIONS_PANEL)
+                            }), (0, N.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL)
                         }))
                     },
                     onResubscribeClick: Y

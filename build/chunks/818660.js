@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(512513),
     g = n(915967),
     A = n(775121),
-    h = n(734066),
-    x = n(880144),
+    x = n(734066),
+    h = n(880144),
     p = n(168943),
     T = n(680243),
     E = n(843401),
     S = n(430452),
-    C = n(532624),
-    f = n(975571),
+    f = n(532624),
+    C = n(975571),
     b = n(723702),
     N = n(350535),
     I = n(790174),
@@ -31,9 +31,9 @@ var i = n(627968),
     y = n(650583),
     R = n(985018),
     O = n(688414),
-    P = n(473169);
+    D = n(473169);
 
-function D(e) {
+function P(e) {
     let {
         children: t
     } = e;
@@ -74,7 +74,7 @@ class L extends s.PureComponent {
         }) : y.Yy.has(t) ? (0, i.jsx)(c.po8, {
             messageType: c.YCn.ERROR,
             children: R.intl.format(R.t.MOIaNd, {
-                keyboardNavArticle: f.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
+                keyboardNavArticle: C.A.getArticleURL(j.MVz.KEYBOARD_NAVIGATION)
             })
         }) : (0, i.jsx)(c.Text, {
             variant: "text-md/normal",
@@ -288,7 +288,7 @@ class G extends s.PureComponent {
         return (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)(I.A, {
                 title: R.intl.string(R.t.T9DA2K),
-                className: P.IE,
+                className: D.IE,
                 children: b.isPlatformEmbedded ? (0, i.jsxs)(i.Fragment, {
                     children: [(0, i.jsxs)("div", {
                         className: O.OQ,
@@ -334,7 +334,7 @@ class G extends s.PureComponent {
                             })]
                         })
                     })
-                }), (0, i.jsx)(D, {
+                }), (0, i.jsx)(P, {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
                             let n = (0, g.Gm)(e),
@@ -374,11 +374,11 @@ function M() {
     s.useEffect(() => (u.A.enableAll(!1), () => {
         u.A.enableAll(!0)
     }), []);
-    let e = (0, r.bG)([C.Ay], () => C.Ay.getState()),
-        t = (0, r.bG)([S.Ay], () => (0, x.A)(S.Ay)),
+    let e = (0, r.bG)([f.Ay], () => f.Ay.getState()),
+        t = (0, r.bG)([S.Ay], () => (0, h.A)(S.Ay)),
         n = (0, r.bG)([T.A], () => T.A.isSupported),
-        l = (0, h.sw)(),
-        a = (0, h.BW)();
+        l = (0, x.sw)(),
+        a = (0, x.BW)();
     return (0, i.jsx)(G, {
         keybinds: e,
         canGoLive: t,

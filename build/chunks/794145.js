@@ -15,8 +15,8 @@ var i = n(421380),
     m = n(445176),
     g = n(112469),
     A = n(997913),
-    h = n(542457),
-    x = n(355097),
+    x = n(542457),
+    h = n(355097),
     p = n(652215),
     T = n(985018);
 let E = (e, t) => {
@@ -63,8 +63,8 @@ let E = (e, t) => {
             } else {
                 let n = (0, o.Tb)();
                 e ? n.delete(t) : n.add(t), c.$s.updateSetting(Array.from(n)), r.default.track(p.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
-                    action: h.m.DIRECT_MESSAGES_TOGGLE,
-                    ingress: x.bf.USER_SETTINGS_PRIVACY_SAFETY,
+                    action: x.m.DIRECT_MESSAGES_TOGGLE,
+                    ingress: h.bf.USER_SETTINGS_PRIVACY_SAFETY,
                     guild_id: t
                 })
             }

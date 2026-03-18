@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     A = n(429619),
-    h = n(451909),
-    x = n(550111),
+    x = n(451909),
+    h = n(550111),
     p = n(202639),
     T = n(407217),
     E = n(919395),
     S = n(884546),
-    C = n(287070),
-    f = n(196291),
+    f = n(287070),
+    C = n(196291),
     b = n(101058),
     N = n(836602),
     I = n(814390),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(954571),
     R = n(927578),
     O = n(606532),
-    P = n(161290),
-    D = n(652215),
+    D = n(161290),
+    P = n(652215),
     L = n(985018),
     G = n(166378);
 
@@ -60,7 +60,7 @@ function M() {
             pendingValue: M,
             userValue: e?.collectibles?.nameplate
         }),
-        B = (0, I.A)() && null != n ? h.Ay.parse(void 0, n).content : n,
+        B = (0, I.A)() && null != n ? x.Ay.parse(void 0, n).content : n,
         H = R.Ay.canUsePremiumProfileCustomization(e),
         {
             analyticsLocations: F,
@@ -71,7 +71,7 @@ function M() {
     return t ? (0, i.jsx)(_.A, {}) : (0, i.jsxs)(g.f5, {
         value: F,
         children: [(0, i.jsx)(A.A, {}), (0, i.jsx)(S.A, {
-            profilePreview: (0, i.jsx)(C.A, {
+            profilePreview: (0, i.jsx)(f.A, {
                 user: e,
                 canUsePremiumCustomization: H,
                 onUpsellClick: O.A,
@@ -79,14 +79,14 @@ function M() {
                 ...k,
                 pendingAvatar: V
             }),
-            nameplatePreview: (0, i.jsx)(x.A, {
+            nameplatePreview: (0, i.jsx)(h.A, {
                 user: e,
                 nameplate: w,
                 ...k,
                 className: null == w ? G.tJ : void 0,
                 isHighlighted: !0
             }),
-            children: (0, i.jsx)(P.A, {})
+            children: (0, i.jsx)(D.A, {})
         }), (0, i.jsx)(o.L, {
             innerRef: K,
             onChange: e => X(e),
@@ -94,7 +94,7 @@ function M() {
             active: W,
             children: (0, i.jsx)("div", {
                 ref: K,
-                children: (0, i.jsx)(f.A, {
+                children: (0, i.jsx)(C.A, {
                     user: e,
                     shouldShow: W,
                     isVisible: z
@@ -115,7 +115,7 @@ function M() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        y.default.track(D.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        y.default.track(P.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"

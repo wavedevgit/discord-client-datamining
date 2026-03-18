@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(688810),
     g = n(726649),
     A = n(611924),
-    h = n(649032),
-    x = n(26508),
+    x = n(649032),
+    h = n(26508),
     p = n(166403),
     T = n(954571),
     E = n(927578),
     S = n(40185),
-    C = n(994763),
-    f = n(130946),
+    f = n(994763),
+    C = n(130946),
     b = n(407775),
     N = n(817267),
     I = n(736455),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(536195),
     R = n(577174),
     O = n(127493),
-    P = n(23003),
-    D = n(16019),
+    D = n(23003),
+    P = n(16019),
     L = n(768229),
     G = n(788868),
     M = n(652215),
@@ -62,9 +62,9 @@ let V = () => {
     s.useEffect(() => {
         Z(!0)
     }, []);
-    let en = (0, x.DK)(h.W.NITRO, "PremiumMarketingHome"),
+    let en = (0, h.DK)(x.W.NITRO, "PremiumMarketingHome"),
         ei = s.useMemo(() => !!en && "orbs" === new URLSearchParams(e.search).get("section"), [e.search, en]);
-    (0, C.z)(P.NI.ORB_REWARDS, ei);
+    (0, f.z)(D.NI.ORB_REWARDS, ei);
     let es = [I.k.HOME, I.k.WHATS_NEW, I.k.BEST_OF_NITRO, I.k.PLANS, I.k.COMPARE],
         {
             navBarSections: el,
@@ -97,7 +97,7 @@ let V = () => {
                         onChange: e => F(e),
                         threshold: 0,
                         active: !0,
-                        children: (0, i.jsx)(D.A, {
+                        children: (0, i.jsx)(P.A, {
                             ref: l,
                             subscriptionTier: $,
                             isEligibleForBogoPromotion: ee
@@ -105,8 +105,8 @@ let V = () => {
                     })
                 }), ee && (0, i.jsx)("div", {
                     className: k.Hz,
-                    children: (0, i.jsx)(f.A, {
-                        variant: f.c.APPLICATION_NITRO_HOME
+                    children: (0, i.jsx)(C.A, {
+                        variant: C.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, i.jsx)("div", {
                     className: k.So,

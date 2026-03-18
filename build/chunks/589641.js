@@ -1,7 +1,7 @@
 /** chunk id: 589641 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h,
-    I: () => x
+    A: () => x,
+    I: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -17,7 +17,7 @@ var i = n(627968),
     g = n(985018),
     A = n(842130);
 
-function h() {
+function x() {
     let e = (0, o.vx)();
     return (0, i.jsx)(c.e, {
         label: A.default.i284fU,
@@ -31,7 +31,7 @@ function h() {
     })
 }
 
-function x() {
+function h() {
     let e = (0, r.uM)(),
         t = (0, o.vx)(),
         n = s.useCallback(() => {

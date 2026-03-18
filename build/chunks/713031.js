@@ -1,6 +1,6 @@
 /** chunk id: 713031 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     m = n(531525),
     g = n(652215),
     A = n(985018),
-    h = n(842130);
+    x = n(842130);
 
-function x() {
+function h() {
     let e = (0, l.cf)([o.A], () => o.A.hasConsented(g.YAq.PERSONALIZATION)),
         [t, n] = s.useState(e),
-        x = (0, r.uM)();
+        h = (0, r.uM)();
     return (0, i.jsx)(c.h, {
         setting: m.H.PRIVACY_DATA_PERSONALIZE_V2,
         children: (0, i.jsx)(u.Ay, {
@@ -40,8 +40,8 @@ function x() {
                     body: A.intl.string(A.t.gJvDDh)
                 })
             },
-            disabled: x,
-            tooltipText: x ? A.intl.string(h.default["6Af/cw"]) : void 0
+            disabled: h,
+            tooltipText: h ? A.intl.string(x.default["6Af/cw"]) : void 0
         })
     })
 }

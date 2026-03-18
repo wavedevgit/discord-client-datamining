@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(560138),
     g = n(526292),
     A = n(236834),
-    h = n(549996),
-    x = n(371764),
+    x = n(549996),
+    h = n(371764),
     p = n(65470),
     T = n(792656),
     E = n(224850),
     S = n(552554),
-    C = n(797255),
-    f = n(288351),
+    f = n(797255),
+    C = n(288351),
     b = n(103733),
     N = n(326180),
     I = n(788868),
@@ -35,10 +35,10 @@ let y = s.memo(s.forwardRef((e, t) => {
         isEligibleForBogoPromotion: l
     } = e, {
         analyticsLocations: y
-    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), O = (0, A.A)(), P = null != O, D = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), R = (0, S.N)(), O = (0, A.A)(), D = null != O, P = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
         visibilityPercentageRef: L,
         visibilityPercentage: G
-    } = (0, b.U)(!D), M = (0, o.bG)([m.A], () => m.A.affinities), U = !P && M.length > 0, k = (0, h.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, g.ar)() && !V;
+    } = (0, b.U)(!P), M = (0, o.bG)([m.A], () => m.A.affinities), U = !D && M.length > 0, k = (0, x.c)(r.C.MARKETING_PAGE_BANNER), V = null != k && "marketingPageBanner" === k.properties.properties.oneofKind, w = (0, g.ar)() && !V;
     return (0, i.jsx)(_.f5, {
         value: y,
         children: (0, i.jsx)("div", {
@@ -53,7 +53,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                         containerVisibilityPercentage: G
                     }), w && (0, i.jsx)("div", {
                         className: j.XN,
-                        children: (0, i.jsx)(f.A, {
+                        children: (0, i.jsx)(C.A, {
                             enablePremiumBrandRefresh: !0
                         })
                     }), (0, i.jsx)("div", {
@@ -66,9 +66,9 @@ let y = s.memo(s.forwardRef((e, t) => {
                         })
                     }), (0, i.jsxs)("div", {
                         className: j.rf,
-                        children: [P && (0, i.jsx)("div", {
+                        children: [D && (0, i.jsx)("div", {
                             className: j.eZ,
-                            children: (0, i.jsx)(C.A, {
+                            children: (0, i.jsx)(f.A, {
                                 referrer: O,
                                 enablePremiumBrandRefresh: !0
                             })
@@ -101,7 +101,7 @@ let y = s.memo(s.forwardRef((e, t) => {
                                     cheapestMonthlyPrice: R
                                 })
                             })
-                        }), null != k && "marketingPageBanner" === k.properties.properties.oneofKind && (0, i.jsx)(x.x, {
+                        }), null != k && "marketingPageBanner" === k.properties.properties.oneofKind && (0, i.jsx)(h.x, {
                             componentId: k.id,
                             promotionBannerMarketingComponentFields: k.properties.properties.marketingPageBanner
                         })]

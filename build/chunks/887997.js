@@ -28,11 +28,11 @@ function m(e) {
     }) : null) : (t = u.intl.string(u.t["3G0CTC"]), n = m === d.xc.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIG, {
         resumeDate: o.toDate()
     }) : null);
-    let h = l()({
+    let x = l()({
             [_.Hs]: s,
             [_.mT]: !s
         }),
-        x = l()({
+        h = l()({
             [_.CQ]: s,
             [_.ZM]: !s
         }),
@@ -54,10 +54,10 @@ function m(e) {
         }), !A && (0, i.jsx)("div", {
             className: _.ZS,
             children: (0, i.jsx)("div", {
-                className: h,
+                className: x,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-sm/semibold",
-                    className: x,
+                    className: h,
                     children: r
                 })
             })
@@ -70,7 +70,7 @@ let g = function(e) {
         className: n,
         activationDate: s,
         hasPremiumGroup: d
-    } = e, c = (0, o.kX)(t), g = c.length > 0, A = (0, r.Ay)(t.endsAt, r.yE.SHORT_TIME), h = g ? c : A;
+    } = e, c = (0, o.kX)(t), g = c.length > 0, A = (0, r.Ay)(t.endsAt, r.yE.SHORT_TIME), x = g ? c : A;
     return (0, i.jsx)("div", {
         children: (0, i.jsxs)("div", {
             className: l()(n, _.f8),
@@ -99,7 +99,7 @@ let g = function(e) {
                 })
             }), (0, i.jsx)(m, {
                 showChargingUpState: g,
-                rowValueText: h,
+                rowValueText: x,
                 endsAt: t.endsAt,
                 fractionalState: t.fractionalState,
                 activationDate: s,

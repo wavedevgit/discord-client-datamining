@@ -38,7 +38,7 @@ function m(e) {
         } catch (e) {
             m(e.body?.message)
         }
-    }, A = null != t.paymentSource && t.status === d.__.COMPLETED, h = n?.invoiceLink, x = n?.refundInvoiceLinks;
+    }, A = null != t.paymentSource && t.status === d.__.COMPLETED, x = n?.invoiceLink, h = n?.refundInvoiceLinks;
     return t.hasInvoiceURL && null == n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
@@ -55,9 +55,9 @@ function m(e) {
     }) : t.hasInvoiceURL && null != n ? (0, i.jsxs)("div", {
         className: u.It,
         children: [(0, i.jsx)(a.MzZ, {
-            href: h,
+            href: x,
             children: c.intl.formatToPlainString(c.t.R0xzCN, {})
-        }), null != x ? x.map((e, t) => (0, i.jsx)(a.MzZ, {
+        }), null != h ? h.map((e, t) => (0, i.jsx)(a.MzZ, {
             className: u.oe,
             href: e,
             children: c.intl.formatToPlainString(c.t["3x6NGw"], {})

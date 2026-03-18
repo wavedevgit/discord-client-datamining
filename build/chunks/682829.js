@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(73825),
     g = n(974544),
     A = n(531260),
-    h = n(262077),
-    x = n(160946),
+    x = n(262077),
+    h = n(160946),
     p = n(235986),
     T = n(769015),
     E = n(723588),
     S = n(608699),
-    C = n(714308),
-    f = n(478407),
+    f = n(714308),
+    C = n(478407),
     b = n(780964),
     N = n(841329),
     I = n(351906),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(295405),
     R = n(166403),
     O = n(469778),
-    P = n(954571),
-    D = n(975571),
+    D = n(954571),
+    P = n(975571),
     L = n(927578),
     G = n(637073),
     M = n(887997),
@@ -90,7 +90,7 @@ function Z() {
 let q = function() {
     var e;
     let t = (0, r.bG)([R.A], () => R.A.getPremiumTypeSubscription()),
-        n = (0, h.A)({
+        n = (0, x.A)({
             subscriptionFilter: e => V.Hy.has(e.status)
         }),
         l = (0, r.bG)([v.default], () => v.default.getCurrentUser()),
@@ -98,7 +98,7 @@ let q = function() {
         p = (0, r.bG)([y.A], () => null != t && null != t.paymentSourceId ? y.A.getPaymentSource(t.paymentSourceId) : null, [t]),
         T = (0, r.bG)([R.A], () => R.A.hasFetchedSubscriptions()),
         O = (0, r.bG)([j.A], () => j.A.isBusy),
-        L = (0, x.Y)(),
+        L = (0, h.Y)(),
         U = w.A.useField("subsection");
     s.useEffect(() => {
         (0, N._)(null != U ? X[U] : b.X.SUBSCRIPTIONS_PANEL)
@@ -119,7 +119,7 @@ let q = function() {
         onGoBack: () => w.A.setState({
             subsection: null
         })
-    }) : U === F.PZ ? (0, i.jsx)(f.A, {
+    }) : U === F.PZ ? (0, i.jsx)(C.A, {
         onGoBack: () => w.A.setState({
             subsection: null
         })
@@ -141,7 +141,7 @@ let q = function() {
                     variant: "text-md/normal",
                     className: z.JU,
                     children: Y.intl.format(Y.t["7Zi06b"], {
-                        helpCenterLink: D.A.getArticleURL(H.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: P.A.getArticleURL(H.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(M.A, {
                     className: z.fX,
@@ -157,12 +157,12 @@ let q = function() {
                     })
                 })]
             }), W > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(C.A, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(f.A, {
                     count: W,
                     onClickManageSubscription: () => {
                         w.A.setState({
                             subsection: F.PZ
-                        }), P.default.track(H.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
+                        }), D.default.track(H.HAw.PREMIUM_APPLICATION_SUBSCRIPTION_MANAGE_CTA_CLICKED)
                     }
                 })]
             }), (0, i.jsx)(Z, {}), null != t ? (0, i.jsx)(k.A, {

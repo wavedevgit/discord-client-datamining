@@ -12,7 +12,7 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [h, x] = i.useState(!1), [p, T] = i.useState(!1), [E, S] = i.useState(!1), [C, f] = i.useState(!1), b = o || c || _ || g || p || C, N = i.useCallback(async e => {
+    } = e ?? {}, [o, d] = i.useState(!1), [c, u] = i.useState(!1), [_, m] = i.useState(!1), [g, A] = i.useState(!1), [x, h] = i.useState(!1), [p, T] = i.useState(!1), [E, S] = i.useState(!1), [f, C] = i.useState(!1), b = o || c || _ || g || p || f, N = i.useCallback(async e => {
         if (!b) {
             d(!0);
             try {
@@ -61,18 +61,18 @@ function o(e) {
             }
         }
     }, [b, t, n]), y = i.useCallback(async () => {
-        if (!h) {
-            x(!0);
+        if (!x) {
+            h(!0);
             try {
                 await (0, l.HB)(), n?.()
             } catch (n) {
                 let e = new s.LG(n);
                 t?.(e)
             } finally {
-                x(!1)
+                h(!1)
             }
         }
-    }, [h, t, n]), R = i.useCallback(async e => {
+    }, [x, t, n]), R = i.useCallback(async e => {
         if (!E) {
             S(!0);
             try {
@@ -110,25 +110,25 @@ function o(e) {
                 i = n[n.length - 1],
                 r = a.A.getStartId(),
                 o = a.A.getSelectedTeenId();
-            if (!C && null != r && null != o) {
-                f(!0);
+            if (!f && null != r && null != o) {
+                C(!0);
                 try {
                     await l.Ay.fetchMoreTeenActivity(o, e, r, i.event_id)
                 } catch (n) {
                     let e = new s.LG(n);
                     t?.(e)
                 } finally {
-                    f(!1)
+                    C(!1)
                 }
             }
-        }, [C, t]),
+        }, [f, t]),
         isAcceptLoading: o,
         isDeclineLoading: c,
         isDisconnectLoading: _,
         isCancelLoading: g,
-        isGetLinkCodeLoading: h,
+        isGetLinkCodeLoading: x,
         isSelectTeenUserLoading: E,
         isRequestingLink: p,
-        isMoreLoading: C
+        isMoreLoading: f
     }
 }

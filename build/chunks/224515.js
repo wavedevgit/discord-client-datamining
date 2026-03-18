@@ -1,6 +1,6 @@
 /** chunk id: 224515 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => f
 });
 var i = n(627968),
     s = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(160946),
     g = n(178929),
     A = n(859241),
-    h = n(295405),
-    x = n(166403),
+    x = n(295405),
+    h = n(166403),
     p = n(653183),
     T = n(843838),
     E = n(652215),
     S = n(417711);
 
-function C() {
+function f() {
     let e = (0, g.j)("UserSettingsPremiumGuildSubscriptions");
     s.useEffect(() => {
         d.h.wait(() => {
@@ -32,11 +32,11 @@ function C() {
     let {
         hasFetchedSubscriptions: t,
         premiumSubscription: n
-    } = (0, r.cf)([x.A], () => ({
-        hasFetchedSubscriptions: x.A.hasFetchedSubscriptions(),
-        premiumSubscription: x.A.getPremiumTypeSubscription()
-    })), l = (0, m.Y)(), C = (0, r.bG)([h.A], () => h.A.hasFetchedPaymentSources), f = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
-    return t && l && C && !f ? (0, i.jsxs)("div", {
+    } = (0, r.cf)([h.A], () => ({
+        hasFetchedSubscriptions: h.A.hasFetchedSubscriptions(),
+        premiumSubscription: h.A.getPremiumTypeSubscription()
+    })), l = (0, m.Y)(), f = (0, r.bG)([x.A], () => x.A.hasFetchedPaymentSources), C = (0, r.bG)([A.A], () => A.A.isFetchingCurrentUserAppliedBoosts);
+    return t && l && f && !C ? (0, i.jsxs)("div", {
         className: S.kL,
         children: [(0, i.jsx)("div", {
             className: S.Tp

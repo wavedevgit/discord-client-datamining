@@ -3,7 +3,7 @@ n.d(t, {
     Ay: () => L,
     HG: () => R,
     OH: () => O,
-    ac: () => P
+    ac: () => D
 });
 var i = n(627968),
     s = n(64700),
@@ -18,14 +18,14 @@ var i = n(627968),
     m = n(459793),
     g = n(195043),
     A = n(351906),
-    h = n(287809),
-    x = n(615405),
+    x = n(287809),
+    h = n(615405),
     p = n(295405),
     T = n(166403),
     E = n(773669),
     S = n(780964),
-    C = n(493068),
-    f = n(840065),
+    f = n(493068),
+    C = n(840065),
     b = n(531525),
     N = n(652215),
     I = n(985018),
@@ -39,13 +39,13 @@ function j() {
 }
 
 function y() {
-    (0, f.openUserSettings)(S.X.GIFT_PANEL)
+    (0, C.openUserSettings)(S.X.GIFT_PANEL)
 }
 
 function R(e) {
     let {
         showHeader: t = !1
-    } = e, n = (0, l.bG)([x.A], () => x.A.isSyncing), a = (0, l.bG)([p.A], () => p.A.paymentSources), o = (0, l.bG)([p.A], () => p.A.defaultPaymentSourceId), d = (0, l.bG)([E.default], () => E.default.locale), _ = (0, l.bG)([T.A], () => T.A.getPremiumTypeSubscription()), m = (0, l.bG)([x.A], () => x.A.isRemovingPaymentSource), g = (0, l.bG)([x.A], () => x.A.isUpdatingPaymentSource), {
+    } = e, n = (0, l.bG)([h.A], () => h.A.isSyncing), a = (0, l.bG)([p.A], () => p.A.paymentSources), o = (0, l.bG)([p.A], () => p.A.defaultPaymentSourceId), d = (0, l.bG)([E.default], () => E.default.locale), _ = (0, l.bG)([T.A], () => T.A.getPremiumTypeSubscription()), m = (0, l.bG)([h.A], () => h.A.isRemovingPaymentSource), g = (0, l.bG)([h.A], () => h.A.isUpdatingPaymentSource), {
         enabled: A
     } = (0, u.c)({
         location: "UserSettingsBilling"
@@ -77,7 +77,7 @@ function O(e) {
     })
 }
 
-function P() {
+function D() {
     let e = (0, l.bG)([E.default], () => E.default.locale);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(m.kb, {}), (0, i.jsx)(d.A, {
@@ -86,7 +86,7 @@ function P() {
     })
 }
 
-function D() {
+function P() {
     let e = (0, _.wI)("UserSettingsBilling");
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.x, {
@@ -101,7 +101,7 @@ function D() {
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-lg/semibold",
                     children: I.intl.string(I.t["3pIjBH"])
-                }), (0, i.jsx)(C.d, {})]
+                }), (0, i.jsx)(f.d, {})]
             })
         }), (0, i.jsx)(g.x, {
             setting: b.H.BILLING_TRANSACTION_HISTORY,
@@ -112,7 +112,7 @@ function D() {
                     children: [(0, i.jsx)(a.Heading, {
                         variant: "heading-lg/semibold",
                         children: I.intl.string(I.t.obLrcK)
-                    }), (0, i.jsx)(P, {})]
+                    }), (0, i.jsx)(D, {})]
                 })
             })
         }), (0, i.jsx)(O, {
@@ -122,7 +122,7 @@ function D() {
 }
 
 function L() {
-    let e = (0, l.bG)([h.default], () => null != h.default.getCurrentUser()),
+    let e = (0, l.bG)([x.default], () => null != x.default.getCurrentUser()),
         t = (0, l.bG)([A.A], () => A.A.enabled);
-    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(D, {}) : (0, i.jsx)(j, {})
+    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(P, {}) : (0, i.jsx)(j, {})
 }

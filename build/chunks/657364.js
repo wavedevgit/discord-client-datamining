@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(104954),
     g = n(975648),
     A = n(871930),
-    h = n(531525),
-    x = n(652215),
+    x = n(531525),
+    h = n(652215),
     p = n(985018),
     T = n(937474);
 
@@ -31,24 +31,24 @@ function E() {
         })),
         [E, S] = s.useState(!1);
     if (null == e) return null;
-    let C = (0, _.Oj)(t, e) || l,
-        f = null != t && a()().diff(a()(t.created_at), "days") < x.n83,
-        b = C && f,
+    let f = (0, _.Oj)(t, e) || l,
+        C = null != t && a()().diff(a()(t.created_at), "days") < h.n83,
+        b = f && C,
         N = e.isStaff(),
         I = !e.verified;
     return (0, i.jsxs)(A.h, {
-        setting: h.H.PRIVACY_DATA_REQUEST_V2,
+        setting: x.H.PRIVACY_DATA_REQUEST_V2,
         children: [(0, i.jsx)(A._, {
             header: p.intl.string(p.t.XAHCgJ),
             description: p.intl.format(p.t.P3kNfr, {
-                helpdeskArticle: u.A.getArticleURL(x.MVz.GDPR_REQUEST_DATA)
+                helpdeskArticle: u.A.getArticleURL(h.MVz.GDPR_REQUEST_DATA)
             })
         }), b ? (0, i.jsx)(o.ZpM, {
             className: T.N,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-md/normal",
                 children: p.intl.format(p.t.RNDlV9, {
-                    date: a()(t.created_at).add(x.n83, "days").format("MMMM Do YYYY")
+                    date: a()(t.created_at).add(h.n83, "days").format("MMMM Do YYYY")
                 })
             })
         }) : N ? (0, i.jsx)(o.ZpM, {
@@ -69,7 +69,7 @@ function E() {
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
                     text: p.intl.string(p.t.dmBSKo),
-                    disabled: C,
+                    disabled: f,
                     onClick: () => {
                         (e => {
                             let {

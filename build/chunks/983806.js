@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(343906),
     g = n(191627),
     A = n(842130),
-    h = n(985018),
-    x = n(377148);
+    x = n(985018),
+    h = n(377148);
 let p = () => {
         let e = (0, _.vx)(),
             t = (0, u.y3)(),
@@ -33,8 +33,8 @@ let p = () => {
                 hideUserTag: !0
             }), []);
         return 0 === e.length ? null : (0, i.jsx)("div", {
-            className: a()(x.Gq, {
-                [x.wS]: e.length > 1
+            className: a()(h.Gq, {
+                [h.wS]: e.length > 1
             }),
             children: e.length > 1 ? (0, i.jsx)(r.Pw, {
                 renderOptionLabel: c,
@@ -66,16 +66,16 @@ let p = () => {
         return (0, i.jsxs)(o.BJc, {
             gap: 32,
             children: [(0, i.jsxs)(o.DUT, {
-                className: x.Gv,
+                className: h.Gv,
                 onClick: n,
-                "aria-label": h.intl.string(h.t.ybUZql),
+                "aria-label": x.intl.string(x.t.ybUZql),
                 children: [(0, i.jsx)(o.Zge, {
                     size: "sm",
                     color: o.LU0.colors.INTERACTIVE_TEXT_DEFAULT
                 }), (0, i.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "text-default",
-                    children: h.intl.string(h.t["13/7kX"])
+                    children: x.intl.string(x.t["13/7kX"])
                 })]
             }), (0, i.jsxs)(o.BJc, {
                 direction: "horizontal",
@@ -83,15 +83,15 @@ let p = () => {
                 justify: "space-between",
                 children: [(0, i.jsxs)(o.BJc, {
                     gap: 4,
-                    className: x.gn,
+                    className: h.gn,
                     children: [(0, i.jsx)(o.Text, {
                         variant: "text-sm/medium",
                         color: "text-subtle",
-                        children: h.intl.string(A.default.RZqaJn)
+                        children: x.intl.string(A.default.RZqaJn)
                     }), (0, i.jsx)(o.Heading, {
                         variant: "heading-xl/semibold",
                         color: "text-strong",
-                        children: h.intl.string(e === g.u9.CONTENT_AND_SOCIAL ? h.t["+o1pDZ"] : h.t.OAuOHD)
+                        children: x.intl.string(e === g.u9.CONTENT_AND_SOCIAL ? x.t["+o1pDZ"] : x.t.OAuOHD)
                     })]
                 }), (0, i.jsx)(p, {})]
             })]

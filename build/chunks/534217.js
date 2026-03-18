@@ -16,8 +16,8 @@ var s = n(503698),
     m = n(851746),
     g = n(617461),
     A = n(664654),
-    h = n(303682),
-    x = n(652215),
+    x = n(303682),
+    h = n(652215),
     p = n(985018),
     T = n(146449),
     E = n(544879);
@@ -39,7 +39,7 @@ let S = e => {
             ...s
         }, t.id)
     },
-    C = e => {
+    f = e => {
         let {
             slotIndex: t
         } = e;
@@ -48,7 +48,7 @@ let S = e => {
             children: t
         })
     },
-    f = e => {
+    C = e => {
         let {
             referralSentUsers: t
         } = e;
@@ -63,7 +63,7 @@ let S = e => {
                         }, t[n].id);
                         e.push(s)
                     } else {
-                        let t = (0, i.jsx)(C, {
+                        let t = (0, i.jsx)(f, {
                             slotIndex: n + 1
                         }, n);
                         e.push(t)
@@ -105,7 +105,7 @@ let S = e => {
                 })
             }), (0, i.jsxs)("div", {
                 className: T.IH,
-                children: [(0, i.jsx)(f, {
+                children: [(0, i.jsx)(C, {
                     referralSentUsers: s
                 }), (0, i.jsxs)("div", {
                     className: T.n4,
@@ -117,13 +117,13 @@ let S = e => {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: !1 === u ? p.intl.format(p.t["zWhX/Q"], {
-                            helpdeskArticle: c.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         }) : s.length === A.Z ? !0 === E ? p.intl.format(p.t["1aEjsH"], {
-                            helpdeskArticle: c.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         }) : p.intl.format(p.t["+u3AOO"], {
-                            helpdeskArticle: c.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         }) : p.intl.format(p.t["omMr+V"], {
-                            helpdeskArticle: c.A.getArticleURL(x.MVz.REFERRAL_PROGRAM)
+                            helpdeskArticle: c.A.getArticleURL(h.MVz.REFERRAL_PROGRAM)
                         })
                     })]
                 }), (0, i.jsx)(r.Button, {
@@ -152,7 +152,7 @@ let S = e => {
                             startingScreen: t,
                             analyticsLocations: s
                         } = e;
-                        d.default.track(x.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                        d.default.track(h.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                             location_stack: s
                         }), (0, r.mMO)(async () => {
                             let {
@@ -164,7 +164,7 @@ let S = e => {
                             })
                         })
                     })({
-                        startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
+                        startingScreen: x.SelectFriendsModalScreens.SELECT_FRIENDS,
                         analyticsLocations: []
                     })
                 })]

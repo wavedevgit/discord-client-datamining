@@ -22,8 +22,8 @@ function A(e) {
         guild: n,
         className: s,
         sectionTitle: A,
-        forcedDivider: h = !1,
-        withTutorial: x = !1
+        forcedDivider: x = !1,
+        withTutorial: h = !1
     } = e, {
         analyticsLocations: p
     } = (0, o.Ay)(), T = (0, u.a4)({
@@ -32,16 +32,16 @@ function A(e) {
     }), {
         pendingAvatarDecoration: E,
         errors: S
-    } = (0, u.CP)(n?.id), C = x ? r.wLn : a.$n;
+    } = (0, u.CP)(n?.id), f = h ? r.wLn : a.$n;
     return (0, i.jsx)(_.A, {
         className: s,
-        forcedDivider: h,
+        forcedDivider: x,
         hasBackground: !0,
         title: A,
         errors: S,
         children: (0, i.jsxs)("div", {
             className: g.NC,
-            children: [(0, i.jsx)(C, {
+            children: [(0, i.jsx)(f, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, c.L)({
@@ -50,7 +50,7 @@ function A(e) {
                     })
                 },
                 className: l()({
-                    [g.yj]: x
+                    [g.yj]: h
                 }),
                 children: m.intl.string(m.t.BVcYCx)
             }), (void 0 === E ? null != T : null != E) && (0, i.jsx)("div", {

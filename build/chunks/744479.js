@@ -1,17 +1,17 @@
 /** chunk id: 744479 params = (module,exports,require) **/
-E.d(t, {
+e.d(_, {
     A: () => I
 });
-var e = E(627968);
-E(64700);
-var A = E(813651);
+var E = e(627968);
+e(64700);
+var A = e(813651);
 
-function I(_) {
+function I(t) {
     let {
-        children: t
-    } = _;
-    return (0, e.jsx)("div", {
+        children: _
+    } = t;
+    return (0, E.jsx)("div", {
         className: A.y,
-        children: t
+        children: _
     })
 }

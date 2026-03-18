@@ -20,13 +20,13 @@ let m = e => {
         carContainerClassName: m,
         hammerContainerClassName: g,
         keyContainerClassName: A,
-        starContainerClassName: h,
-        boltAssetClassName: x,
+        starContainerClassName: x,
+        boltAssetClassName: h,
         carAssetClassName: p,
         hammerAssetClassName: T,
         keyAssetClassName: E,
         starAssetClassName: S,
-        animationSpeedScale: C = 1
+        animationSpeedScale: f = 1
     } = e;
     return (0, i.jsxs)(i.Fragment, {
         children: [null != s && (0, i.jsx)("div", {
@@ -55,10 +55,10 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: f,
                 children: (0, i.jsx)("img", {
                     src: o.A,
-                    className: x,
+                    className: h,
                     alt: ""
                 })
             })
@@ -78,7 +78,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: f,
                 children: (0, i.jsx)("img", {
                     src: d.A,
                     className: p,
@@ -101,7 +101,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: f,
                 children: (0, i.jsx)("img", {
                     src: c.A,
                     className: T,
@@ -134,15 +134,15 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: f,
                 children: (0, i.jsx)("img", {
                     src: u.A,
                     className: E,
                     alt: ""
                 })
             })
-        }), null != h && (0, i.jsx)("div", {
-            className: l()(r.E1, h),
+        }), null != x && (0, i.jsx)("div", {
+            className: l()(r.E1, x),
             children: (0, i.jsx)(a.Ay, {
                 blurAnimationData: {
                     startBlurRadius: 0,
@@ -167,7 +167,7 @@ let m = e => {
                 } : void 0,
                 animateXAxisWiggle: !0,
                 isMotionReduced: t,
-                animationSpeedScale: C,
+                animationSpeedScale: f,
                 children: (0, i.jsx)("img", {
                     src: _.A,
                     className: S,

@@ -25,7 +25,7 @@ let A = e => {
             className: g._P
         })
     },
-    h = e => {
+    x = e => {
         let {
             displayName: t,
             nameplateData: n
@@ -38,7 +38,7 @@ let A = e => {
             className: g.M4
         })
     },
-    x = e => {
+    h = e => {
         let {
             displayName: t,
             product: n
@@ -88,12 +88,12 @@ let A = e => {
                 });
             case r.R.NAMEPLATE:
                 let s = (0, u.EQ)(n);
-                return null != s ? (0, i.jsx)(h, {
+                return null != s ? (0, i.jsx)(x, {
                     displayName: t,
                     nameplateData: s
                 }) : null;
             case r.R.PROFILE_EFFECT:
-                return (0, i.jsx)(x, {
+                return (0, i.jsx)(h, {
                     displayName: t,
                     product: n
                 });
@@ -116,13 +116,13 @@ let A = e => {
         } = (0, d.A)(t), {
             displayName: u,
             typeName: A,
-            isSubscription: h
+            isSubscription: x
         } = (0, m.GZ)(c ?? null, n);
-        if (null != t && !h && null == c || null == u) return null;
-        let x = (0, _.$g)(s, l);
+        if (null != t && !x && null == c || null == u) return null;
+        let h = (0, _.$g)(s, l);
         return (0, i.jsxs)("div", {
             className: a()(g.kL, r),
-            children: [h ? (0, i.jsx)(p, {
+            children: [x ? (0, i.jsx)(p, {
                 subscriptionPlanId: n
             }) : (0, i.jsx)(T, {
                 displayName: u,
@@ -134,7 +134,7 @@ let A = e => {
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: x
+                    children: h
                 })]
             })]
         })

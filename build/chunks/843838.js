@@ -15,21 +15,21 @@ var i = n(627968),
     m = n(197305),
     g = n(711014),
     A = n(287809),
-    h = n(178368),
-    x = n(927578),
+    x = n(178368),
+    h = n(927578),
     p = n(530240),
     T = n(564152),
     E = n(76740),
     S = n(21316),
-    C = n(237267),
-    f = n(240626),
+    f = n(237267),
+    C = n(240626),
     b = n(788868),
     N = n(637676);
 
 function I(e) {
     let {
         premiumSubscription: t
-    } = e, n = (0, l.bG)([h.A], () => h.A.boostSlots), I = s.useMemo(() => Object.values(n), [n]), v = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = x.Ay.isPremium(v, b.PremiumTypes.TIER_2), y = (0, l.bG)([m.A], () => m.A.affinities), R = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), O = y.length > 0 || R.length > 0, P = I.length > 0, D = s.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), L = D.length > 0, G = I.length > D.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
+    } = e, n = (0, l.bG)([x.A], () => x.A.boostSlots), I = s.useMemo(() => Object.values(n), [n]), v = (0, l.bG)([A.default], () => A.default.getCurrentUser()), j = h.Ay.isPremium(v, b.PremiumTypes.TIER_2), y = (0, l.bG)([m.A], () => m.A.affinities), R = (0, l.bG)([g.Ay], () => g.Ay.getFlattenedGuildIds()), O = y.length > 0 || R.length > 0, D = I.length > 0, P = s.useMemo(() => I.filter(e => null != e.premiumGuildSubscription), [I]), L = P.length > 0, G = I.length > P.length, M = (0, l.bG)([_.A], () => _.A.getCurrentUserAppliedBoosts()), {
         fractionalState: U
     } = (0, a.A)({
         forceFetch: !0
@@ -39,11 +39,11 @@ function I(e) {
         children: [(0, i.jsx)(r.kb, {
             className: N.ek
         }), (0, i.jsx)(T.A, {
-            hasGuildBoostSlots: P,
+            hasGuildBoostSlots: D,
             hasAppliedGuildBoosts: L,
             hasBoostPerk: B,
             canAddBoosts: w
-        }), H && (0, i.jsx)(C.A, {
+        }), H && (0, i.jsx)(f.A, {
             hasAppliedGuildBoosts: L,
             hasBoostPerk: B,
             hasGuildAffinitiesOrInGuild: O,
@@ -54,7 +54,7 @@ function I(e) {
         }) : (0, i.jsx)(p.A, {
             guildBoostSlots: n,
             premiumSubscription: t
-        }), (0, i.jsx)(f.A, {
+        }), (0, i.jsx)(C.A, {
             guildBoostSlots: I,
             fractionalPremiumState: U
         }), (0, i.jsx)(S.A, {

@@ -1,6 +1,6 @@
 /** chunk id: 640068 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => f
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(386976),
     g = n(257433),
     A = n(32523),
-    h = n(961350),
-    x = n(71393),
+    x = n(961350),
+    h = n(71393),
     p = n(957565),
     T = n(222735),
     E = n(688151),
     S = n(612422);
 
-function C() {
+function f() {
     let {
         experiments: e,
         overridesInfo: t
@@ -44,7 +44,7 @@ function C() {
             onChange: c,
             onClear: () => c("")
         }), u.length > 0 ? u.map(e => {
-            let t = "guild" === e.experiment.kind ? b : f;
+            let t = "guild" === e.experiment.kind ? b : C;
             return (0, i.jsx)(t, {
                 experiment: e.experiment,
                 experimentId: e.id,
@@ -61,15 +61,15 @@ function C() {
     })
 }
 
-function f(e) {
+function C(e) {
     let {
         experiment: t,
         experimentId: n,
         overrideInfo: l,
         defaultOpen: m
-    } = e, [A, x] = s.useState(m), [T, C] = s.useState(!1), f = s.useCallback(() => {
-        x(e => !e)
-    }, []), b = (0, r.bG)([h.default], () => h.default.getId()), N = (0, g.iN)(t, b), I = (0, g.Fm)(t, b), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.USER, n), e => {
+    } = e, [A, h] = s.useState(m), [T, f] = s.useState(!1), C = s.useCallback(() => {
+        h(e => !e)
+    }, []), b = (0, r.bG)([x.default], () => x.default.getId()), N = (0, g.iN)(t, b), I = (0, g.Fm)(t, b), v = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.USER, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
@@ -85,7 +85,7 @@ function f(e) {
         })
     }, [n]), y = (0, i.jsx)(o.sqX, {
         "aria-label": "Toggle visibility",
-        onClick: f,
+        onClick: C,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
             className: S.DD,
@@ -164,7 +164,7 @@ function f(e) {
             children: (0, i.jsx)(o.QWc, {
                 variant: "secondary",
                 text: "More Details \xbb",
-                onClick: () => C(!0)
+                onClick: () => f(!0)
             })
         }), (0, i.jsx)(o.cGx, {
             className: S.yF
@@ -179,14 +179,14 @@ function b(e) {
         overrideInfo: l
     } = e, [d, c] = s.useState(null != l), [m, g] = s.useState(!1), A = s.useCallback(() => {
         c(e => !e)
-    }, []), h = (0, r.bG)([_.A], () => _.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.GUILD, n), e => {
+    }, []), x = (0, r.bG)([_.A], () => _.A.getLoadedGuildExperiment(n)), p = (0, r.yK)([_.A], () => a().sortBy(_.A.getRecentExposures(E.Vh.GUILD, n), e => {
         let [t, n] = e;
         return -n
     }).map(e => {
         let [t, n] = e;
         return `${new Date(n).toLocaleString()} (${t})`
-    })), [T, C] = (0, r.yK)([x.A, _.A], () => {
-        let e = a().sortBy(x.A.getGuildsArray(), e => e.name.toLowerCase()),
+    })), [T, f] = (0, r.yK)([h.A, _.A], () => {
+        let e = a().sortBy(h.A.getGuildsArray(), e => e.name.toLowerCase()),
             t = {},
             i = [];
         for (let s of e) {
@@ -196,7 +196,7 @@ function b(e) {
         }
         let s = a()(t).keys().map(Number).sort().map(e => `${t[e]} guilds in bucket ${e}`).join(", ");
         return [i.join("\n"), s]
-    }), f = (0, i.jsx)(o.DUT, {
+    }), C = (0, i.jsx)(o.DUT, {
         onClick: A,
         children: (0, i.jsxs)(o.Text, {
             variant: "text-md/medium",
@@ -217,15 +217,15 @@ function b(e) {
     });
     return d ? (0, i.jsxs)("div", {
         className: S.Os,
-        children: [f, (0, i.jsx)(u.g, {
+        children: [C, (0, i.jsx)(u.g, {
             label: "Bucket Override",
-            description: `Current Assignments: ${C}`,
+            description: `Current Assignments: ${f}`,
             experiment: t,
             experimentId: n,
             overrideInfo: l
         }), (0, i.jsx)("div", {
             className: S.h_,
-            children: null == h ? (0, i.jsx)(o.Text, {
+            children: null == x ? (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
                 children: 'Warning: Server did not send any experiment config. You may need to check the "Send to Client" box in the admin UI.'
@@ -246,7 +246,7 @@ function b(e) {
             }), (0, i.jsx)(o.Text, {
                 variant: "code",
                 className: S.AS,
-                children: null == h ? "None" : JSON.stringify(h, void 0, 2)
+                children: null == x ? "None" : JSON.stringify(x, void 0, 2)
             }), (0, i.jsx)(o.Text, {
                 variant: "text-lg/medium",
                 className: S.id,
@@ -276,6 +276,6 @@ function b(e) {
         })]
     }) : (0, i.jsx)("div", {
         className: S.Os,
-        children: f
+        children: C
     })
 }

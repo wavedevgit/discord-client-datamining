@@ -15,7 +15,7 @@ let u = e => {
         cards: t,
         className: n,
         cardType: l
-    } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [_, m] = s.useState(0), [g, A] = s.useState(u()), h = t.length;
+    } = e, u = () => window.innerWidth < 910 ? 1 : window.innerWidth < 1400 ? 2 : 3, [_, m] = s.useState(0), [g, A] = s.useState(u()), x = t.length;
     s.useEffect(() => {
         let e = () => {
             A(u())
@@ -24,9 +24,9 @@ let u = e => {
             window.removeEventListener("resize", e)
         }
     }, []), s.useEffect(() => {
-        m(e => h > g && e > h - g ? h - g : h <= g ? 0 : e)
-    }, [h, g]);
-    let x = _ > 0,
+        m(e => x > g && e > x - g ? x - g : x <= g ? 0 : e)
+    }, [x, g]);
+    let h = _ > 0,
         p = s.useCallback(e => ({
             x: (e - _) * 100
         }), [_]),
@@ -37,13 +37,13 @@ let u = e => {
         className: n,
         children: (0, i.jsxs)("div", {
             className: c.Ui,
-            children: [h > g && (0, i.jsx)(o.DUT, {
-                onClick: x ? () => {
-                    m(e => 0 === e ? h - g : e - 1)
+            children: [x > g && (0, i.jsx)(o.DUT, {
+                onClick: h ? () => {
+                    m(e => 0 === e ? x - g : e - 1)
                 } : void 0,
                 className: a()({
-                    [c.v5]: x,
-                    [c.$T]: !x
+                    [c.v5]: h,
+                    [c.$T]: !h
                 }),
                 children: (0, i.jsx)(o.rJJ, {
                     className: c.D6,
@@ -66,19 +66,19 @@ let u = e => {
                         }, `${t[n].name}_${n}_perks_card`)
                     }, `${t[n].name}_${n}_animated_div`)
                 })
-            }), h > g && (0, i.jsx)(o.DUT, {
+            }), x > g && (0, i.jsx)(o.DUT, {
                 onClick: () => {
-                    m(e => e >= h - g ? 0 : e + 1)
+                    m(e => e >= x - g ? 0 : e + 1)
                 },
                 className: c.Ox,
                 children: (0, i.jsx)(o.EdP, {
                     className: c.D6,
                     colorClass: c.D6
                 })
-            }), h > g && (0, i.jsx)("div", {
+            }), x > g && (0, i.jsx)("div", {
                 className: c.$$,
                 children: t.map((e, t) => {
-                    if (!(t > h - g)) return (0, i.jsx)("div", {
+                    if (!(t > x - g)) return (0, i.jsx)("div", {
                         className: t === _ ? c.fc : c.Om
                     }, `progress_bar_dot_${t}`)
                 })

@@ -1,53 +1,53 @@
 /** chunk id: 61610 params = (module,exports,require) **/
-E.d(t, {
-    A: () => s
+e.d(_, {
+    A: () => O
 });
-var e = E(627968),
-    A = E(64700),
-    I = E(954571),
-    S = E(115063),
-    T = E(253932),
-    n = E(112469),
-    C = E(871930),
-    R = E(578746),
-    i = E(542457),
-    l = E(355097),
-    r = E(531525);
-E(820575);
-var N = E(652215),
-    u = E(985018),
-    d = E(536482);
+var E = e(627968),
+    A = e(64700),
+    I = e(954571),
+    S = e(115063),
+    T = e(253932),
+    n = e(112469),
+    C = e(871930),
+    R = e(578746),
+    i = e(542457),
+    l = e(355097),
+    r = e(531525);
+e(820575);
+var u = e(652215),
+    N = e(985018),
+    d = e(536482);
 
-function O(_) {
+function s(t) {
     let {
-        ingress: t,
-        guildId: E
-    } = _, n = T.JG.useSetting().includes(E), l = A.useCallback(_ => {
-        let e = (0, S.Kk)();
-        _ ? e.delete(E) : e.add(E), T.JG.updateSetting([...e]), I.default.track(N.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+        ingress: _,
+        guildId: e
+    } = t, n = T.JG.useSetting().includes(e), l = A.useCallback(t => {
+        let E = (0, S.Kk)();
+        t ? E.delete(e) : E.add(e), T.JG.updateSetting([...E]), I.default.track(u.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
             action: i.m.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
-            ingress: t,
-            guild_id: E
+            ingress: _,
+            guild_id: e
         })
-    }, [t, E]);
-    return "0" === E ? null : (0, e.jsx)(C.h, {
+    }, [_, e]);
+    return "0" === e ? null : (0, E.jsx)(C.h, {
         setting: r.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2,
-        children: (0, e.jsx)(R.Ay, {
-            title: u.intl.string(d.default.WhdCGP),
+        children: (0, E.jsx)(R.Ay, {
+            title: N.intl.string(d.default.WhdCGP),
             value: !n,
             onChange: l,
-            note: u.intl.string(d.default.UQ9RHJ)
+            note: N.intl.string(d.default.UQ9RHJ)
         })
     })
 }
 
-function s(_) {
+function O(t) {
     let {
-        ingress: t = l.bf.USER_SETTINGS_PRIVACY_SAFETY,
-        guildId: E
-    } = _, A = (0, n.Tx)();
-    return (0, e.jsx)(O, {
-        ingress: t,
-        guildId: E ?? A
+        ingress: _ = l.bf.USER_SETTINGS_PRIVACY_SAFETY,
+        guildId: e
+    } = t, A = (0, n.Tx)();
+    return (0, E.jsx)(s, {
+        ingress: _,
+        guildId: e ?? A
     })
 }

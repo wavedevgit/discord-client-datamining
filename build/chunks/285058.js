@@ -1,6 +1,6 @@
 /** chunk id: 285058 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -48,7 +48,7 @@ function A(e) {
         })]
     })
 }
-let h = function() {
+let x = function() {
     let {
         guilds: e,
         searchQuery: t,
@@ -56,8 +56,8 @@ let h = function() {
         sortOrder: l,
         setSortOrder: r,
         hasActivityRestrictedGuilds: d,
-        onToggleAllActivityRestrictedGuilds: h,
-        onToggleActivityRestrictedGuild: x,
+        onToggleAllActivityRestrictedGuilds: x,
+        onToggleActivityRestrictedGuild: h,
         isActivityRestricted: p,
         numActivityRestrictedGuilds: T,
         numTotalGuilds: E
@@ -129,7 +129,7 @@ let h = function() {
                     selectionMode: "single"
                 }), (0, i.jsx)(a.QWc, {
                     variant: "primary",
-                    onClick: h,
+                    onClick: x,
                     text: d ? m.intl.string(m.t["7lxcLO"]) : m.intl.string(m.t.zh6UEs)
                 })]
             })]
@@ -153,7 +153,7 @@ let h = function() {
             }), e.map(e => (0, i.jsx)(A, {
                 guild: e,
                 isActivityRestricted: p(e.id),
-                onToggleActivityRestrictedGuild: x
+                onToggleActivityRestrictedGuild: h
             }, e.id))]
         })]
     })

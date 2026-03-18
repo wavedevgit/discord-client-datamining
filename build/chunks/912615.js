@@ -1,6 +1,6 @@
 /** chunk id: 912615 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,21 +15,21 @@ var i = n(627968),
     m = n(985018),
     g = n(361151),
     A = n(473169);
-let h = /^\d+$|^$/;
+let x = /^\d+$|^$/;
 
-function x(e) {
+function h(e) {
     let {
         onClose: t,
         transitionState: n
     } = e, {
-        authorizedApplicationId: x,
+        authorizedApplicationId: h,
         authorizationError: p,
         authorizing: T
     } = (0, a.cf)([_.A], () => ({
         authorizedApplicationId: _.A.testModeApplicationId,
         authorizationError: _.A.error,
         authorizing: _.A.isFetchingAuthorization
-    })), [E, S] = s.useState(x ?? ""), [C, f] = s.useState("8080"), [b, N] = s.useState("localhost"), I = h.test(E);
+    })), [E, S] = s.useState(h ?? ""), [f, C] = s.useState("8080"), [b, N] = s.useState("localhost"), I = x.test(E);
     async function v() {
         d.SH();
         let e = function(e, t, n) {
@@ -40,21 +40,21 @@ function x(e) {
                 case "proxy":
                     return (0, c.Ay)(n)
             }
-        }(b, C, E);
+        }(b, f, E);
         null != await d.q1(E, e) && t()
     }
     s.useEffect(() => () => o.h.wait(() => d.SH()), []);
-    let j = null != x && x === E,
+    let j = null != h && h === E,
         y = j ? function() {
             d.cL(), S(""), N(null)
         } : v,
         R = s.useMemo(() => [{
             loading: T,
-            disabled: !I || 0 === E.length || "localhost" === b && 0 === C.length,
+            disabled: !I || 0 === E.length || "localhost" === b && 0 === f.length,
             variant: j ? "critical-primary" : "active",
             text: j ? m.intl.string(m.t.d6TR3I) : m.intl.string(m.t.qwuK5I),
             onClick: y
-        }], [E.length, T, j, I, C.length, y, b]);
+        }], [E.length, T, j, I, f.length, y, b]);
     return (0, i.jsxs)(l.Modal, {
         title: m.intl.string(m.t.f8fzky),
         subtitle: m.intl.string(m.t.a6Vill),
@@ -109,9 +109,9 @@ function x(e) {
                 children: (0, i.jsx)(r.ksK, {
                     required: !0,
                     label: m.intl.string(m.t.fF4zxq),
-                    value: C,
+                    value: f,
                     maxLength: 5,
-                    onChange: e => f(e),
+                    onChange: e => C(e),
                     disabled: T
                 })
             })]

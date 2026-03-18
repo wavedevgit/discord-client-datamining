@@ -18,11 +18,11 @@ function o(e) {
         useVariant: c,
         useDisabled: u,
         onClick: _
-    } = t, [m, g] = s.useState(!1), A = (0, a.q)(t), h = o(), x = d?.(), p = n(), T = c?.(), E = u?.();
+    } = t, [m, g] = s.useState(!1), A = (0, a.q)(t), x = o(), h = d?.(), p = n(), T = c?.(), E = u?.();
     return (0, i.jsx)(r.L, {
         children: (0, i.jsx)(l.D0$, {
-            label: h,
-            description: x,
+            label: x,
+            description: h,
             disabled: E,
             layout: "horizontal",
             children: (0, i.jsx)(l.Button, {

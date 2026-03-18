@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(688810),
     g = n(726649),
     A = n(611924),
-    h = n(961250),
-    x = n(320118),
+    x = n(961250),
+    h = n(320118),
     p = n(622543),
     T = n(576622),
     E = n(166403),
     S = n(954571),
-    C = n(131168),
-    f = n(482589),
+    f = n(131168),
+    C = n(482589),
     b = n(511484),
     N = n(322631),
     I = n(570627),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(965591),
     R = n(495022),
     O = n(157839),
-    P = n(382694),
-    D = n(60508),
+    D = n(382694),
+    P = n(60508),
     L = n(821158),
     G = n(235365),
     M = n(994763),
@@ -49,12 +49,12 @@ let H = e => {
     }).enabled, l = (0, r.zy)();
     s.useEffect(() => {
         u.h.wait(async () => {
-            let e = [(0, h.Ay)()];
+            let e = [(0, x.Ay)()];
             null != t && e.push((0, T.A)(t)), await Promise.all(e)
         })
     }, [t]), s.useEffect(() => {
         $(!0)
-    }, []), (0, f.j)(), (0, A.P)(g.b);
+    }, []), (0, C.j)(), (0, A.P)(g.b);
     let H = s.useRef(null),
         F = s.useRef(null),
         Y = (0, o.bG)([E.A], () => E.A.getPremiumTypeSubscription()),
@@ -62,7 +62,7 @@ let H = e => {
             isReady: z,
             programReward: X,
             isEligible: W
-        } = (0, x.F)({
+        } = (0, h.F)({
             location: "PremiumSubscriberHome"
         }),
         {
@@ -85,7 +85,7 @@ let H = e => {
             } : {}
         }, [l.search]);
     (0, M.z)(K ?? "", null != K, q, J);
-    let [Q, $] = s.useState(!1), ee = (0, C.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, b.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
+    let [Q, $] = s.useState(!1), ee = (0, f.p)(), et = s.useRef(null), [en, ei] = s.useState(!1), [es, el] = s.useState(!1), ea = null != ee && null != Y && Y.status === k.Dmq.CANCELED, er = (0, b.iU)(U.gD.PREMIUM_MONTH_TIER_2, ee, Y), eo = !es && ea, {
         analyticsLocations: ed
     } = (0, m.Ay)(_.A.PREMIUM_SUBSCRIBER_NITRO_HOME), [ec, eu] = s.useState(!1);
     return null != (0, o.bG)([p.A], () => null != t ? p.A.getUserProfile(t) : null) && (z || null != X) ? (0, i.jsxs)(i.Fragment, {
@@ -112,7 +112,7 @@ let H = e => {
                             userDiscountOffer: ee,
                             discountedPrice: er
                         })
-                    }), n && (0, i.jsx)(P.A, {
+                    }), n && (0, i.jsx)(D.A, {
                         glowingPerkId: Z
                     }), !n && (0, i.jsx)(O.A, {
                         variant: N.cJ.WHATS_NEW,
@@ -166,7 +166,7 @@ let H = e => {
                 churnDiscountOffer: ee,
                 discountedPrice: er
             })]
-        }), !n && (0, i.jsx)(D.A, {
+        }), !n && (0, i.jsx)(P.A, {
             isAllPerksVisible: en,
             setIsAllPerksVisible: ei,
             previousComponent: N.A2.HOME,

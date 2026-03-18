@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(259065),
     g = n(95035),
     A = n(532794),
-    h = n(780964),
-    x = n(358776),
+    x = n(780964),
+    h = n(358776),
     p = n(840065),
     T = n(166403),
     E = n(730784),
     S = n(398523),
-    C = n(612669),
-    f = n(161319),
+    f = n(612669),
+    C = n(161319),
     b = n(920050),
     N = n(9458),
     I = n(788868),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(985018),
     R = n(340091),
     O = n(998663),
-    P = n(817577),
-    D = n(419455),
+    D = n(817577),
+    P = n(419455),
     L = n(288604),
     G = n(893160),
     M = n(509442);
@@ -40,24 +40,24 @@ var i = n(627968),
 function U() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, C.O9)(), U = (0, E.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, f.O9)(), U = (0, E.R)({
         location: "PremiumWhatsNewSection"
     }), k = S.A.useExperiment({
         location: "PremiumWhatsNewSection"
     }).enabled, V = (0, a.bG)([T.A], () => T.A.getPremiumTypeSubscription()), w = V?.hasActiveTrial ?? !1, B = (0, s.useCallback)(() => {
-        (0, p.openUserSettings)(h.X.PROFILE_PANEL, {
+        (0, p.openUserSettings)(x.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, m.L)({
             analyticsLocations: e
         }))
     }, [e]), H = (0, s.useCallback)(() => {
-        (0, p.openUserSettings)(h.X.PROFILE_PANEL, {
+        (0, p.openUserSettings)(x.X.PROFILE_PANEL, {
             analyticsLocations: e
         }, () => (0, u.L)({
             analyticsLocations: e
         }))
     }, [e]), F = (0, s.useCallback)(() => {
-        let e = (0, x.Ci)("openCustomAppSettings") ? h.X.DISPLAY_IN_APP_ICON_CATEGORY : h.X.APPEARANCE_IN_APP_ICON;
+        let e = (0, h.Ci)("openCustomAppSettings") ? x.X.DISPLAY_IN_APP_ICON_CATEGORY : x.X.APPEARANCE_IN_APP_ICON;
         (0, p.openUserSettings)(e)
     }, []), Y = () => {
         (0, o.A)(v.TE)
@@ -111,7 +111,7 @@ function U() {
                     })]
                 }),
                 pillText: y.intl.string(y.t.oW0eUd),
-                primaryAsset: P,
+                primaryAsset: D,
                 ...U ? {
                     ctaIcon: r.tvc,
                     ctaIconPosition: "start"
@@ -131,7 +131,7 @@ function U() {
                 backgroundAssetUrl: G.A,
                 progress: W.getDate() / K,
                 ctaText: y.intl.string(y.t.w7s5Qr),
-                onCtaClick: () => (0, f.uE)({
+                onCtaClick: () => (0, C.uE)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"
@@ -140,7 +140,7 @@ function U() {
                 title: y.intl.string(y.t.OLtTrt),
                 description: y.intl.string(y.t["di/pXR"]),
                 onCtaClick: B,
-                primaryAsset: D.A,
+                primaryAsset: P.A,
                 ctaText: y.intl.string(y.t.jVcuVY),
                 pillText: y.intl.string(y.t.y2b7CA)
             }, {

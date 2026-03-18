@@ -17,8 +17,8 @@ var s = n(503698),
     m = n(12901),
     g = n(738419),
     A = n(520650),
-    h = n(985018),
-    x = n(996554),
+    x = n(985018),
+    h = n(996554),
     p = n(114149);
 
 function T(e) {
@@ -39,29 +39,29 @@ function T(e) {
         "en-GB": A.default["f/cLEi"]
     }, A.default.CARxAC);
     return (0, i.jsxs)("div", {
-        className: l()(x.kL, t),
+        className: l()(h.kL, t),
         children: [(0, i.jsx)("div", {
-            className: x.zc,
+            className: h.zc,
             children: (0, i.jsx)("img", {
                 src: p.A,
-                className: x._e,
+                className: h._e,
                 alt: ""
             })
         }), (0, i.jsxs)("div", {
-            className: x.P_,
+            className: h.P_,
             children: [(0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
                 children: s
             }), (0, i.jsx)(o.Text, {
                 variant: "text-sm/normal",
-                children: h.intl.string(A.default.nla4RG)
+                children: x.intl.string(A.default.nla4RG)
             })]
         }), (0, i.jsx)("div", {
-            className: x.UD,
+            className: h.UD,
             children: (0, i.jsx)(r.$nd, {
                 variant: "primary",
-                text: h.intl.string(h.t.uw9zI7),
+                text: x.intl.string(x.t.uw9zI7),
                 onClick: () => {
                     (0, g.b0)(g.G8.APPEARANCE_SETTINGS), (0, u.nf)(u.HP.CUSTOM_THEME, {
                         from: u.xv.SETTING
@@ -74,6 +74,6 @@ function T(e) {
 
 function E() {
     return (0, i.jsx)(T, {
-        className: x.YH
+        className: h.YH
     })
 }

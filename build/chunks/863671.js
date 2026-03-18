@@ -1,7 +1,7 @@
 /** chunk id: 863671 params = (module,exports,require) **/
 n.d(t, {
-    $: () => x,
-    C: () => h
+    $: () => h,
+    C: () => x
 });
 var i = n(64700),
     s = n(934551),
@@ -27,12 +27,12 @@ let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
             }), [])
         }
     }),
-    h = (0, r.t_)(d.X.SESSIONS_PANEL, {
+    x = (0, r.t_)(d.X.SESSIONS_PANEL, {
         useTitle: () => (0, c._A)("SessionsPanel") ? g.intl.string(g.t.mEndXM) : g.intl.string(g.t["+1h0k/"]),
         hideInStreamerMode: !0,
         buildLayout: () => [A]
     }),
-    x = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
+    h = (0, r.i4)(d.X.SESSIONS_SIDEBAR_ITEM, {
         useTitle: () => g.intl.string(g.t["+1h0k/"]),
         icon: s.LaptopPhoneIcon,
         getDismissibleBadges: function() {
@@ -42,5 +42,5 @@ let A = (0, r.zZ)(d.X.SESSIONS_CATEGORY, {
             }]
         },
         usePredicate: () => !(0, c._A)("SessionsPanel"),
-        buildLayout: () => [h]
+        buildLayout: () => [x]
     })

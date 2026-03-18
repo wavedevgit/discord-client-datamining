@@ -1,76 +1,76 @@
 /** chunk id: 871930 params = (module,exports,require) **/
-E.d(t, {
+e.d(_, {
     _: () => C,
     h: () => l
 });
-var e = E(627968);
-E(64700);
-var A = E(503698),
-    I = E.n(A),
-    S = E(397927),
-    T = E(195043),
-    n = E(606360);
+var E = e(627968);
+e(64700);
+var A = e(503698),
+    I = e.n(A),
+    S = e(397927),
+    T = e(195043),
+    n = e(606360);
 
-function C(_) {
+function C(t) {
     let {
-        header: t,
-        description: E,
+        header: _,
+        description: e,
         relatedId: A,
         disabled: T
-    } = _;
-    return (0, e.jsxs)("div", {
+    } = t;
+    return (0, E.jsxs)("div", {
         className: n.wx,
-        children: [(0, e.jsx)(S.Heading, {
+        children: [(0, E.jsx)(S.Heading, {
             variant: "text-md/medium",
             color: "text-strong",
-            children: (0, e.jsx)("label", {
+            children: (0, E.jsx)("label", {
                 htmlFor: A,
                 className: I()(n.DD, {
                     [n.r9]: T
                 }),
-                children: t
+                children: _
             })
-        }), (0, e.jsx)(S.Text, {
+        }), (0, E.jsx)(S.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             className: I()(n.h_, {
                 [n.r9]: T
             }),
-            children: E
+            children: e
         })]
     })
 }
 
-function R(_) {
+function R(t) {
     let {
-        className: t,
-        children: E
-    } = _;
-    return (0, e.jsx)("div", {
-        className: I()(n.kL, t),
-        children: E
+        className: _,
+        children: e
+    } = t;
+    return (0, E.jsx)("div", {
+        className: I()(n.kL, _),
+        children: e
     })
 }
 
-function i(_) {
+function i(t) {
     let {
-        setting: t,
-        className: E,
+        setting: _,
+        className: e,
         children: A
-    } = _;
-    return (0, e.jsx)(T.x, {
-        setting: t,
-        children: (0, e.jsx)("div", {
-            className: I()(n.kL, E),
+    } = t;
+    return (0, E.jsx)(T.x, {
+        setting: _,
+        children: (0, E.jsx)("div", {
+            className: I()(n.kL, e),
             children: A
         })
     })
 }
 
-function l(_) {
-    return null != _.setting ? (0, e.jsx)(i, {
-        ..._
-    }) : (0, e.jsx)(R, {
-        ..._
+function l(t) {
+    return null != t.setting ? (0, E.jsx)(i, {
+        ...t
+    }) : (0, E.jsx)(R, {
+        ...t
     })
 }

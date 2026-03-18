@@ -1,6 +1,6 @@
 /** chunk id: 897208 params = (module,exports,require) **/
 n.d(t, {
-    p: () => h
+    p: () => x
 });
 var i = n(311907),
     s = n(55619),
@@ -73,7 +73,7 @@ let u = (0, a.zD)(o.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
         }),
         usePredicate: () => l.A?.window?.supportsContentProtection?.() ?? !1
     }),
-    h = (0, a.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
+    x = (0, a.FW)(o.X.STREAMER_MODE_OPTIONS_LIST, {
         variant: "compact",
         useTitle: () => (0, d.bp)("StreamerModeOptions") ? c.intl.string(c.t.xYhOEh) : c.intl.string(c.t.UtW8R6),
         buildLayout: () => [u, _, m, g, A]

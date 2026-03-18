@@ -1,6 +1,6 @@
 /** chunk id: 429619 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -15,17 +15,17 @@ var i = n(627968),
     m = n(788868),
     g = n(985018),
     A = n(844551);
-let h = () => {
+let x = () => {
     let {
         analyticsLocations: e
     } = (0, r.Ay)(a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), t = s.useRef(null), {
         asset: n,
-        popoutAsset: h,
-        title: x,
+        popoutAsset: x,
+        title: h,
         body: p,
         version: T,
         revertTextColor: E
-    } = (0, u.M)(), S = s.useContext(o.gl), C = S?.navigateWithValidation ?? (e => e());
+    } = (0, u.M)(), S = s.useContext(o.gl), f = S?.navigateWithValidation ?? (e => e());
     return s.useEffect(() => {
         d.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
             type: m.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
@@ -43,7 +43,7 @@ let h = () => {
             "aria-hidden": !0,
             role: "presentation",
             children: (0, i.jsx)("img", {
-                src: h,
+                src: x,
                 className: A.Qw,
                 alt: ""
             })
@@ -53,7 +53,7 @@ let h = () => {
                 variant: "heading-lg/extrabold",
                 color: E ? "text-overlay-dark" : "currentColor",
                 className: A.DD,
-                children: x
+                children: h
             }), (0, i.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: E ? "text-overlay-dark" : "currentColor",
@@ -61,7 +61,7 @@ let h = () => {
             })]
         }), (0, i.jsx)(l.Button, {
             onClick: () => {
-                C(() => (0, c.Cz)({
+                f(() => (0, c.Cz)({
                     analyticsLocations: e,
                     analyticsSource: a.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))

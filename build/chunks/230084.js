@@ -1,6 +1,6 @@
 /** chunk id: 230084 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -19,22 +19,22 @@ let A = [{
     extensions: ["gif"]
 }];
 
-function h(e) {
+function x(e) {
     let {
         showRemoveAvatarButton: t,
         errors: n,
         onAvatarChange: l,
-        sectionTitle: h,
-        changeAvatarButtonText: x,
+        sectionTitle: x,
+        changeAvatarButtonText: h,
         guildId: p,
         className: T,
         disabled: E = !1,
         isTryItOut: S = !1,
-        forcedDivider: C,
-        withHighlight: f = !1
+        forcedDivider: f,
+        withHighlight: C = !1
     } = e, {
         newestAnalyticsLocation: b
-    } = (0, d.Ay)(), N = f ? o.wLn : r.$n, I = s.useCallback(() => {
+    } = (0, d.Ay)(), N = C ? o.wLn : r.$n, I = s.useCallback(() => {
         (0, c.XD)({
             uploadType: _.HL.AVATAR,
             analyticsSource: b,
@@ -45,19 +45,19 @@ function h(e) {
     }, [p, b, S]);
     return (0, i.jsx)(u.A, {
         className: T,
-        title: h,
+        title: x,
         errors: n,
         disabled: E,
-        forcedDivider: C,
+        forcedDivider: f,
         children: (0, i.jsxs)("div", {
             className: g.NC,
             children: [(0, i.jsx)(N, {
                 className: a()({
-                    [g.yj]: f
+                    [g.yj]: C
                 }),
                 size: r.$n.Sizes.SMALL,
                 onClick: I,
-                children: x ?? m.intl.string(m.t["4OynCD"])
+                children: h ?? m.intl.string(m.t["4OynCD"])
             }), t && (0, i.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: g.DT,

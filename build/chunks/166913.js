@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(793574),
     g = n(688810),
     A = n(726649),
-    h = n(611924),
-    x = n(166403),
+    x = n(611924),
+    h = n(166403),
     p = n(954571),
     T = n(927578),
     E = n(40185),
     S = n(526292),
-    C = n(234419),
-    f = n(690737),
+    f = n(234419),
+    C = n(690737),
     b = n(320908),
     N = n(412260),
     I = n(396375),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(901125),
     R = n(729230),
     O = n(227273),
-    P = n(244778),
-    D = n(788868),
+    D = n(244778),
+    P = n(788868),
     L = n(652215),
     G = n(985018),
     M = n(639179),
@@ -47,7 +47,7 @@ let V = e => {
         }) : null
     },
     w = () => {
-        (0, h.P)(A.b);
+        (0, x.P)(A.b);
         let e = s.useRef(null),
             t = s.useRef(null),
             n = s.useRef(null),
@@ -57,11 +57,11 @@ let V = e => {
             [H, F] = s.useState(!1),
             [Y, z] = s.useState(!1),
             [X, W] = s.useState(!1),
-            K = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+            K = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
             Z = null != K ? (0, T.EL)(K) : null,
             q = null != Z ? T.Ay.getSkuIdForPlan(Z.planId) : null,
-            J = null !== q && q !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
-            Q = (0, C.V)(),
+            J = null !== q && q !== P.pe.TIER_2 ? P.pe.TIER_2 : null,
+            Q = (0, f.V)(),
             $ = Q?.subscription_trial?.sku_id,
             ee = (0, S.ar)(),
             et = (0, E.cg)(),
@@ -87,15 +87,15 @@ let V = e => {
                     innerRef: e,
                     tier0CTAButton: (0, i.jsx)(I.A, {
                         showIcon: !1,
-                        subscriptionTier: D.pe.TIER_0,
+                        subscriptionTier: P.pe.TIER_0,
                         className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
                         buttonShineClassName: M.Qr
                     }),
-                    tier2CTAButton: $ === D.pe.TIER_0 ? (0, i.jsx)(I.A, {
+                    tier2CTAButton: $ === P.pe.TIER_0 ? (0, i.jsx)(I.A, {
                         showIcon: !1,
-                        subscriptionTier: D.pe.TIER_2,
+                        subscriptionTier: P.pe.TIER_2,
                         className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
@@ -103,7 +103,7 @@ let V = e => {
                     }) : (0, i.jsx)(I.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
-                        subscriptionTier: D.pe.TIER_2,
+                        subscriptionTier: P.pe.TIER_2,
                         className: M.Ph,
                         hasActivePromotion: en,
                         textOptions: {
@@ -152,13 +152,13 @@ let V = e => {
                 className: U.B_
             }), (0, i.jsx)("div", {
                 className: U.aC,
-                children: (0, i.jsx)(P.A, {
+                children: (0, i.jsx)(D.A, {
                     className: U.JQ,
                     hideCTAs: !0
                 })
             }), (0, i.jsx)("div", {
                 className: U.hz
-            }), (0, i.jsx)(f.A, {
+            }), (0, i.jsx)(C.A, {
                 isVisible: !w && !H && X,
                 subscriptionTier: J,
                 isApplicationHome: !1,

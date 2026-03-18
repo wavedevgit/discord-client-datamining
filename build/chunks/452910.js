@@ -1,6 +1,6 @@
 /** chunk id: 452910 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -16,19 +16,19 @@ var s = n(503698),
     m = n(76707),
     g = n(788868),
     A = n(985018),
-    h = n(296388);
-let x = e => {
+    x = n(296388);
+let h = e => {
     let {
         title: t,
         titleClassName: n,
         buttonClassName: s,
-        subtitle: x,
+        subtitle: h,
         description: p,
         descriptionCta: T,
         isPremiumGetCta: E,
         onCtaClick: S,
-        cardVariant: C
-    } = e, f = (0, c.V)(), b = f?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
+        cardVariant: f
+    } = e, C = (0, c.V)(), b = C?.subscription_trial, N = (0, d.O)(), I = (0, r.FY)({
         intervalType: b?.interval,
         intervalCount: b?.interval_count
     }), v = (0, o.G)({
@@ -39,14 +39,14 @@ let x = e => {
         onDiscountOffer: A.intl.formatToPlainString(A.t.bkQ4bH, {
             percent: N?.discount.amount
         })
-    }), j = (0, _.Q)(C);
+    }), j = (0, _.Q)(f);
     return (0, i.jsxs)("div", {
-        className: l()(h.L_, j?.overlayContainer?.className),
+        className: l()(x.L_, j?.overlayContainer?.className),
         children: [(0, i.jsx)(m.A, {
             title: t,
             cardVariantStyleInfo: j,
             titleClassName: n,
-            subtitle: x,
+            subtitle: h,
             description: p,
             isOverlay: !0
         }), E && (0, i.jsx)(u.A, {

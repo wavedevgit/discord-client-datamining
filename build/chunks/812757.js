@@ -1,6 +1,6 @@
 /** chunk id: 812757 params = (module,exports,require) **/
 n.d(t, {
-    t: () => x
+    t: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(780964),
     g = n(652215),
     A = n(985018),
-    h = n(280973);
-let x = (0, u.E2)(m.X.CLIPS_KEYBIND, {
+    x = n(280973);
+let h = (0, u.E2)(m.X.CLIPS_KEYBIND, {
     useSearchTerms: () => [A.intl.string(A.t.pf54EU), A.intl.string(A.t["QyB/jK"])],
     Component: () => {
         let e = (0, r.bG)([_.Ay], () => _.Ay.getKeybindForAction(g.hCu.SAVE_CLIP, !0));
@@ -32,7 +32,7 @@ let x = (0, u.E2)(m.X.CLIPS_KEYBIND, {
             description: A.intl.string(A.t["QyB/jK"]),
             layout: "horizontal",
             children: (0, i.jsx)("div", {
-                className: h.g,
+                className: x.g,
                 children: (0, i.jsx)(c.A, {
                     defaultValue: e.shortcut,
                     onChange: t

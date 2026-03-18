@@ -20,22 +20,22 @@ function u(e) {
             layout: m,
             collapseAfter: g,
             useCollapsibleTitle: A,
-            useCollapsedSubtitle: h
+            useCollapsedSubtitle: x
         } = n,
-        x = null != g ? m.slice(0, g) : m,
+        h = null != g ? m.slice(0, g) : m,
         p = null != g ? m.slice(g) : [],
         T = A?.(u, p.length) ?? (t = p.length, u ? d.intl.formatToPlainString(d.t["3SHL+d"], {
             count: t
         }) : d.intl.formatToPlainString(d.t["8JRFyZ"], {
             count: t
         })),
-        E = h?.();
+        E = x?.();
     return (0, i.jsxs)(l.BJc, {
         gap: 8,
-        children: [x.map((e, t) => (0, i.jsxs)(s.Fragment, {
+        children: [h.map((e, t) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(a.A, {
                 node: e
-            }), t !== x.length - 1 && (0, i.jsx)(r.A, {})]
+            }), t !== h.length - 1 && (0, i.jsx)(r.A, {})]
         }, e.key)), p.length > 0 && (0, i.jsxs)("div", {
             className: c.CT,
             children: [(0, i.jsx)(r.A, {

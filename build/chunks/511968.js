@@ -1,6 +1,6 @@
 /** chunk id: 511968 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,32 +15,32 @@ var i = n(627968),
     m = n(240248),
     g = n(237218),
     A = n(689296),
-    h = n(542858);
+    x = n(542858);
 
-function x(e) {
+function h(e) {
     let {
         cta: t,
         storeListing: n,
         className: l
     } = e, {
-        applicationId: x,
+        applicationId: h,
         benefits: p,
         description: T
-    } = n, E = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(x, n.thumbnail, 256), [x, n.thumbnail]), {
+    } = n, E = s.useMemo(() => null == n.thumbnail ? null : (0, g.t)(h, n.thumbnail, 256), [h, n.thumbnail]), {
         data: S
-    } = (0, c.j)(n.skuId), C = s.useMemo(() => {
+    } = (0, c.j)(n.skuId), f = s.useMemo(() => {
         if (null == S || 0 === S.length) return null;
         let e = S[0];
         return (0, _._J)(e)
     }, [S]);
-    return null == C ? null : (0, i.jsxs)(r.q, {
-        className: a()(h.iE, l),
+    return null == f ? null : (0, i.jsxs)(r.q, {
+        className: a()(x.iE, l),
         header: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
-                className: h.qd,
+                className: x.qd,
                 children: [null != E && (0, i.jsx)(d._V3, {
                     src: E.href,
-                    imageClassName: h.rW,
+                    imageClassName: x.rW,
                     width: 48,
                     height: 48
                 }), (0, i.jsxs)("div", {
@@ -49,19 +49,19 @@ function x(e) {
                         children: n.summary
                     }), (0, i.jsx)(d.Text, {
                         variant: "text-md/medium",
-                        children: C
+                        children: f
                     })]
                 })]
             }), t]
         }),
         children: [!(0, m.uJ)(T) && (0, i.jsx)("div", {
-            className: h.h_,
+            className: x.h_,
             children: (0, i.jsx)(A.A, {
                 variant: "text-sm/medium",
                 children: T
             })
         }), null != p && p.length > 0 && (0, i.jsx)("div", {
-            className: h.PX,
+            className: x.PX,
             children: p.map(e => {
                 let {
                     id: t,
@@ -71,7 +71,7 @@ function x(e) {
                 } = e;
                 return (0, i.jsx)(o.FY, {
                     header: n,
-                    icon: (0, u.N)(x, l),
+                    icon: (0, u.N)(h, l),
                     description: s
                 }, t)
             })

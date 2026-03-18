@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(384904),
     g = n(793574),
     A = n(688810),
-    h = n(701273),
-    x = n(780964),
+    x = n(701273),
+    h = n(780964),
     p = n(840065),
     T = n(287809),
     E = n(954571),
     S = n(927578),
-    C = n(866312),
-    f = n(327479),
+    f = n(866312),
+    C = n(327479),
     b = n(652215),
     N = n(601107),
     I = n(985018),
@@ -52,7 +52,7 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
             } catch (e) {
                 g(!0), d(!1)
             }
-        }, h = [{
+        }, x = [{
             text: I.intl.string(I.t.oEAioF),
             onClick: () => n(),
             variant: "secondary"
@@ -68,7 +68,7 @@ let j = [b.Dmq.PAST_DUE, b.Dmq.ACCOUNT_HOLD, b.Dmq.BILLING_RETRY],
             transitionState: t,
             title: I.intl.string(I.t.LZunzZ),
             subtitle: I.intl.string(I.t.FClXh9),
-            actions: h,
+            actions: x,
             onClose: async () => n(),
             children: u ? (0, i.jsx)(_.wx6, {
                 type: "critical",
@@ -92,15 +92,15 @@ function R(e) {
         {
             analyticsLocations: R
         } = (0, A.Ay)(g.A.GUILD_BOOSTING_SUBSCRIPTION_HEADER),
-        O = (0, C.A)({
+        O = (0, f.A)({
             location: "GuildBoostingHeader"
         });
     if (0 === (0, S.bx)(n.additionalPlans)) return null;
     let {
-        status: P
-    } = n, D = (0, S.$k)(n), L = O && !D && n.isBoostOnly && j.includes(n.status);
-    if (D) t = v.v2;
-    else switch (P) {
+        status: D
+    } = n, P = (0, S.$k)(n), L = O && !P && n.isBoostOnly && j.includes(n.status);
+    if (P) t = v.v2;
+    else switch (D) {
         case b.Dmq.PAST_DUE:
         case b.Dmq.ACCOUNT_HOLD:
         case b.Dmq.BILLING_RETRY:
@@ -124,7 +124,7 @@ function R(e) {
                 className: v.eC,
                 children: [(0, i.jsx)("div", {
                     className: a()(v.Ab, {
-                        [v.aD]: D
+                        [v.aD]: P
                     })
                 }), (0, i.jsx)("div", {
                     children: (0, S.Uf)({
@@ -151,8 +151,8 @@ function R(e) {
                         size: "sm",
                         text: I.intl.string(I.t["ETE/oC"])
                     })
-                }), (0, i.jsx)(f.A, {
-                    onClick: () => (0, p.openUserSettings)(x.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
+                }), (0, i.jsx)(C.A, {
+                    onClick: () => (0, p.openUserSettings)(h.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL),
                     text: I.intl.string(I.t["NQ5g/U"])
                 })]
             })]
@@ -160,7 +160,7 @@ function R(e) {
             className: v.yW,
             variant: "text-sm/normal",
             children: I.intl.format(d.Fr ? I.t.uxYBEa : I.t.k6haR9, {
-                openAppHook: () => (0, h.A)("app")
+                openAppHook: () => (0, x.A)("app")
             })
         })]
     })

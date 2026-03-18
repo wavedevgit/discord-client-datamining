@@ -1,6 +1,6 @@
 /** chunk id: 289498 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968);
 n(64700);
@@ -16,13 +16,13 @@ var s = n(503698),
     m = n(954571),
     g = n(652215),
     A = n(277816);
-let h = e => {
+let x = e => {
     let {
         disabled: t = !1,
         type: n,
         className: s,
-        innerClassName: h,
-        onConnect: x
+        innerClassName: x,
+        onConnect: h
     } = e, p = (0, d.Ay)(), T = c.A.get((0, u.ML)(n));
     return (0, i.jsx)(a.m, {
         text: T.name,
@@ -30,13 +30,13 @@ let h = e => {
             className: l()(A.iE, s),
             children: (0, i.jsx)(o.vN3, {
                 children: (0, i.jsx)("button", {
-                    className: l()(A.vW, h),
+                    className: l()(A.vW, x),
                     type: "button",
                     disabled: t,
                     style: {
                         backgroundImage: `url('${(0,r.Mw)(p)?T.icon.darkSVG:T.icon.lightSVG}')`
                     },
-                    onClick: null != x ? x : () => {
+                    onClick: null != h ? h : () => {
                         let e;
                         return e = c.A.get(n), void((0, _.A)({
                             platformType: e.type,

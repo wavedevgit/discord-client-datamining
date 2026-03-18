@@ -1,9 +1,9 @@
 /** chunk id: 586685 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => x,
+    Ay: () => h,
     SB: () => A,
     VD: () => g,
-    b0: () => h
+    b0: () => x
 });
 var i = n(627968);
 n(64700);
@@ -37,7 +37,7 @@ function A(e) {
     })
 }
 
-function h(e) {
+function x(e) {
     let {
         inOldSettings: t = !1
     } = e;
@@ -49,7 +49,7 @@ function h(e) {
     })
 }
 
-function x() {
+function h() {
     let {
         analyticsLocations: e
     } = (0, a.Ay)(l.A.USER_SETTINGS_GIFT_INVENTORY);
@@ -65,7 +65,7 @@ function x() {
             })
         }), (0, i.jsx)(d.x, {
             setting: _.H.GIFT_INVENTORY_LIST,
-            children: (0, i.jsx)(h, {
+            children: (0, i.jsx)(x, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(d.x, {

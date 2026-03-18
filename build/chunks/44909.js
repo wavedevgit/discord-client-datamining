@@ -19,7 +19,7 @@ function o(e) {
         useOptions: u,
         usePersistentBadge: _,
         getDismissibleBadges: m
-    } = t, g = d(), A = c?.(), h = n(), x = u(), p = _?.(), T = m?.(), E = (0, l.A)({
+    } = t, g = d(), A = c?.(), x = n(), h = u(), p = _?.(), T = m?.(), E = (0, l.A)({
         persistentBadge: p,
         dismissibleBadges: T
     }), S = (0, a.q)(t);
@@ -27,8 +27,8 @@ function o(e) {
         children: (0, i.jsx)(s.z6M, {
             label: g,
             description: A,
-            options: x,
-            value: h,
+            options: h,
+            value: x,
             badge: E,
             onChange: e => {
                 S(), o(e)

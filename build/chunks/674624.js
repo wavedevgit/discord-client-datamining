@@ -1,8 +1,8 @@
 /** chunk id: 674624 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => L,
-    jW: () => P,
-    w1: () => D
+    jW: () => D,
+    w1: () => P
 });
 var i, s = n(627968),
     l = n(64700),
@@ -16,14 +16,14 @@ var i, s = n(627968),
     m = n(206835),
     g = n(976860),
     A = n(780964),
-    h = n(358776),
-    x = n(840065),
+    x = n(358776),
+    h = n(840065),
     p = n(112848),
     T = n(149757),
     E = n(920050),
     S = n(189024),
-    C = n(652215),
-    f = n(355097),
+    f = n(652215),
+    C = n(355097),
     b = n(985018),
     N = n(64514),
     I = n(121818),
@@ -32,8 +32,8 @@ var i, s = n(627968),
     y = n(163635),
     R = n(345362),
     O = n(509442),
-    P = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
-let D = [{
+    D = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
+let P = [{
     id: "bestof",
     label: () => b.intl.string(b.t.q1u7nQ)
 }, {
@@ -54,37 +54,37 @@ function L() {
         {
             analyticsLocations: i
         } = (0, u.Ay)(c.A.PREMIUM_MARKETING_PERK_CARD),
-        P = (0, m.A)({
-            scrollPosition: f._F.TRY_IT_OUT,
+        D = (0, m.A)({
+            scrollPosition: C._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
-        D = (0, l.useCallback)(() => {
-            let e = (0, h.Ci)("openClientThemes");
-            (0, x.openUserSettings)(e ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
+        P = (0, l.useCallback)(() => {
+            let e = (0, x.Ci)("openClientThemes");
+            (0, h.openUserSettings)(e ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
                 analyticsLocations: i
             })
         }, [i]),
         L = (0, l.useCallback)(() => {
-            (0, x.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+            (0, h.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                 analyticsLocations: i
             })
         }, [i]),
         G = (0, l.useCallback)(() => {
-            let e = (0, h.Ci)("openCustomAppSettings") ? A.X.DISPLAY_IN_APP_ICON_CATEGORY : A.X.APPEARANCE_IN_APP_ICON;
-            (0, x.openUserSettings)(e, {
+            let e = (0, x.Ci)("openCustomAppSettings") ? A.X.DISPLAY_IN_APP_ICON_CATEGORY : A.X.APPEARANCE_IN_APP_ICON;
+            (0, h.openUserSettings)(e, {
                 analyticsLocations: i
             })
         }, [i]),
         M = (0, l.useCallback)(() => {
-            (0, g.pX)(C.BVt.COLLECTIBLES_SHOP)
+            (0, g.pX)(f.BVt.COLLECTIBLES_SHOP)
         }, []),
         U = (0, l.useCallback)(() => {
-            (0, x.openUserSettings)(A.X.SOUNDBOARD_CATEGORY, {
+            (0, h.openUserSettings)(A.X.SOUNDBOARD_CATEGORY, {
                 analyticsLocations: i
             })
         }, [i]),
         k = (0, l.useCallback)(() => {
-            (0, x.openUserSettings)(A.X.PROFILE_PANEL, {
+            (0, h.openUserSettings)(A.X.PROFILE_PANEL, {
                 analyticsLocations: i
             }, () => (0, _.L)({
                 analyticsLocations: i
@@ -115,7 +115,7 @@ function L() {
             title: b.intl.string(b.t.xDRab3),
             description: b.intl.string(b.t.yn6fWA),
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: P,
+            onCtaClick: D,
             primaryAsset: (0, s.jsx)(a.R$P, {
                 alt: "",
                 ariaHidden: !0
@@ -137,7 +137,7 @@ function L() {
                 themeCount: 20
             }),
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: D,
+            onCtaClick: P,
             primaryAsset: O.A,
             categories: ["bestof", "appearance"]
         }, {
@@ -258,6 +258,6 @@ function L() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, P, D, L, G, M, U, k]);
+        }], [e, n, D, P, L, G, M, U, k]);
     return (0, l.useMemo)(() => B.filter(e => null != e && !w.includes(e.id)), [B, w])
 }

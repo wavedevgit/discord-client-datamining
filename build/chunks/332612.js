@@ -17,15 +17,15 @@ var _ = n(657331),
     m = n(287809),
     g = n(427262),
     A = n(985018),
-    h = n(32086);
+    x = n(32086);
 
-function x(e) {
+function h(e) {
     let {
         userId: t,
         count: n
     } = e, {
         analyticsLocations: u
-    } = (0, d.Ay)(), x = (0, l.bG)([m.default], () => m.default.getUser(t)), p = g.Ay.getFormattedName(x), T = s.useCallback(() => {
+    } = (0, d.Ay)(), h = (0, l.bG)([m.default], () => m.default.getUser(t)), p = g.Ay.getFormattedName(h), T = s.useCallback(() => {
         (0, c.kj)(t)
     }, [t]), E = s.useCallback(() => (0, _.openUserProfileModal)({
         userId: t,
@@ -34,15 +34,15 @@ function x(e) {
     return s.useEffect(() => {
         (0, r.wz)(t)
     }, [t]), (0, i.jsxs)("div", {
-        className: h.uW,
-        children: [null != x && (0, i.jsx)(o.A, {
-            className: h.my,
-            user: x,
+        className: x.uW,
+        children: [null != h && (0, i.jsx)(o.A, {
+            className: x.my,
+            user: h,
             size: a._3J.SIZE_40
         }), (0, i.jsxs)("div", {
-            className: h.Qq,
+            className: x.Qq,
             children: [(0, i.jsx)(a.DUT, {
-                className: h.Xh,
+                className: x.Xh,
                 onClick: E,
                 children: (0, i.jsx)(a.Text, {
                     variant: "text-md/semibold",
@@ -58,7 +58,7 @@ function x(e) {
             })]
         }), (0, i.jsx)(a.DUT, {
             onClick: T,
-            className: h.Qz,
+            className: x.Qz,
             children: (0, i.jsx)(a.ucK, {
                 size: "xs"
             })
@@ -78,7 +78,7 @@ function p(e) {
     return (0, i.jsxs)("div", {
         className: t,
         children: [(0, i.jsxs)("div", {
-            className: h.Qq,
+            className: x.Qq,
             children: [(0, i.jsx)(a.Text, {
                 variant: "text-sm/semibold",
                 color: "interactive-text-active",
@@ -91,7 +91,7 @@ function p(e) {
                 children: o
             })]
         }), (0, i.jsx)(a.DUT, {
-            className: h.Kk,
+            className: x.Kk,
             onClick: d,
             children: (0, i.jsx)(a.PGe, {
                 size: "md",
@@ -106,17 +106,17 @@ function T(e) {
         userId: t
     } = e, n = (0, u.k)(t);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(x, {
+        children: [(0, i.jsx)(h, {
             userId: t,
             count: n.length
         }), n.map((e, l) => (0, i.jsxs)(s.Fragment, {
             children: [(0, i.jsx)(p, {
-                className: h.nM,
+                className: x.nM,
                 userId: t,
                 index: l,
                 verification: e
             }), l !== n.length - 1 && (0, i.jsx)("div", {
-                className: h.yF
+                className: x.yF
             })]
         }, `${l}-${e.timestamp}`))]
     })

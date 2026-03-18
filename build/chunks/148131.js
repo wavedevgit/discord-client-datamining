@@ -1,6 +1,6 @@
 /** chunk id: 148131 params = (module,exports,require) **/
 n.d(t, {
-    w: () => h
+    w: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -16,10 +16,10 @@ var i = n(627968),
     g = n(985018),
     A = n(487693);
 
-function h(e) {
+function x(e) {
     let {
         user: t
-    } = e, l = (0, r.bG)([d.default], () => d.default.getCurrentUser()), h = s.useCallback(() => {
+    } = e, l = (0, r.bG)([d.default], () => d.default.getCurrentUser()), x = s.useCallback(() => {
         a()(void 0 !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -44,7 +44,7 @@ function h(e) {
             children: (0, i.jsx)(c.A, {
                 icon: o.PGe,
                 tooltip: g.intl.string(m.default.l20ZZp),
-                onClick: h
+                onClick: x
             })
         })]
     })

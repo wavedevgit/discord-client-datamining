@@ -1,7 +1,7 @@
 /** chunk id: 451802 params = (module,exports,require) **/
 n.d(t, {
     A: () => E,
-    E: () => x
+    E: () => h
 });
 var i, s = n(627968),
     l = n(64700),
@@ -15,11 +15,11 @@ var i, s = n(627968),
     m = n(235986),
     g = n(350535),
     A = n(985018),
-    h = n(181204),
-    x = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
+    x = n(181204),
+    h = ((i = {}).DEFAULT = "DEFAULT", i.RECORDING = "RECORDING", i);
 let p = {
-    DEFAULT: h.__invalid_default,
-    RECORDING: h.oz
+    DEFAULT: x.__invalid_default,
+    RECORDING: x.oz
 };
 class T extends l.PureComponent {
     _inputId = u().uniqueId("key-recorder-");
@@ -83,13 +83,13 @@ class T extends l.PureComponent {
                 onClick: this.handleClick,
                 onMouseDown: this.handleMouseDown,
                 ref: this._containerRef,
-                className: r()(h.Qm, p[t], {
-                    [h.Qz]: i
+                className: r()(x.Qm, p[t], {
+                    [x.Qz]: i
                 }),
                 children: (0, s.jsxs)(m.A, {
-                    className: h.Pp,
+                    className: x.Pp,
                     children: [(0, s.jsx)(m.A.Child, {
-                        className: h.bZ,
+                        className: x.bZ,
                         children: (0, s.jsx)("input", {
                             id: this._inputId,
                             placeholder: A.intl.string(A.t.nWRdnl),
@@ -100,7 +100,7 @@ class T extends l.PureComponent {
                             disabled: "RECORDING" !== this.props.mode || i
                         })
                     }), (0, s.jsx)("div", {
-                        className: h.UD,
+                        className: x.UD,
                         children: (0, s.jsx)(_.Button, {
                             size: "sm",
                             variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",

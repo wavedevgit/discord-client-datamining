@@ -18,7 +18,7 @@ let d = "url(#gradient)",
             progressCircleStrokeSize: _ = 2,
             progressCircleVariation: m,
             progressCircleStroke: g
-        } = e, A = 43 + _ / 2, h = 2 * Math.PI * A, [x, p] = s.useState(u);
+        } = e, A = 43 + _ / 2, x = 2 * Math.PI * A, [h, p] = s.useState(u);
         s.useEffect(() => {
             let e = setTimeout(() => {
                 p(t)
@@ -38,7 +38,7 @@ let d = "url(#gradient)",
                         return
                 }
             })(m),
-            C = ((e, t) => {
+            f = ((e, t) => {
                 switch (e) {
                     case r.BN.NITRO_LOGO:
                         return t ? "0.3" : "0.2";
@@ -48,7 +48,7 @@ let d = "url(#gradient)",
                         return
                 }
             })(m, E),
-            f = g ?? ((e, t) => {
+            C = g ?? ((e, t) => {
                 switch (t) {
                     case r.BN.NITRO_GEM:
                     case r.BN.AVATAR_DECO:
@@ -72,15 +72,15 @@ let d = "url(#gradient)",
                     cx: "50%",
                     cy: "50%",
                     stroke: S,
-                    strokeOpacity: C
+                    strokeOpacity: f
                 }), (0, i.jsx)("circle", {
-                    stroke: f,
+                    stroke: C,
                     strokeWidth: _,
                     strokeLinecap: "round",
-                    strokeDasharray: `${h} ${h}`,
+                    strokeDasharray: `${x} ${x}`,
                     className: c,
                     style: {
-                        strokeDashoffset: (1 - x / 100) * h
+                        strokeDashoffset: (1 - h / 100) * x
                     },
                     r: `${A}`,
                     cx: "50%",

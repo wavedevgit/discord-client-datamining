@@ -15,20 +15,20 @@ var i = n(627968),
     m = n(250253),
     g = n(2242),
     A = n(985018),
-    h = n(289324);
-let x = e => {
+    x = n(289324);
+let h = e => {
         let {
             transitionState: t,
             groupListing: n,
             listing: l,
-            subscription: x,
+            subscription: h,
             onClose: p
         } = e, T = (0, _.GV)(), {
             analyticsLocations: E
         } = (0, u.Ay)(c.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
             cancelSubscription: S,
-            error: C,
-            submitting: f
+            error: f,
+            submitting: C
         } = (e => {
             let [t, n] = s.useState(!1), [i, l] = s.useState(null);
             return {
@@ -45,8 +45,8 @@ let x = e => {
                 submitting: t
             }
         })(E), b = async () => {
-            await S(x.id) && p()
-        }, N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), v = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
+            await S(h.id) && p()
+        }, N = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.CHANNEL), I = l.role_benefits.benefits.filter(e => e.ref_type === g.bN.INTANGIBLE), v = a()(h.currentPeriodEnd).format("MMMM Do, YYYY"), j = A.intl.formatToPlainString(A.t.KsMRP5, {
             numChannels: N.length,
             numAdditionalBenefits: I.length,
             subscriptionEndDate: v
@@ -62,26 +62,26 @@ let x = e => {
                 variant: "critical-primary",
                 text: A.intl.string(A.t.F6lUDF),
                 onClick: b,
-                loading: f
+                loading: C
             }],
             title: A.intl.string(A.t.O6l5tM),
             subtitle: j,
             onClose: p,
             children: (0, i.jsxs)(o.BJc, {
                 gap: 8,
-                children: [null != C ? (0, i.jsx)(o.wx6, {
+                children: [null != f ? (0, i.jsx)(o.wx6, {
                     type: "critical",
-                    children: C.message
+                    children: f.message
                 }) : null, (0, i.jsx)(m.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
-                    className: h.P
+                    className: x.P
                 })]
             })
         })
     },
     p = e => {
-        (0, o.qfG)(t => (0, i.jsx)(x, {
+        (0, o.qfG)(t => (0, i.jsx)(h, {
             ...t,
             ...e
         }))

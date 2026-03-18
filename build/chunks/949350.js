@@ -1,6 +1,6 @@
 /** chunk id: 949350 params = (module,exports,require) **/
 n.d(t, {
-    Q: () => h
+    Q: () => x
 });
 var i = n(64700),
     s = n(934551),
@@ -20,7 +20,7 @@ let g = (0, a.zZ)(o.X.GIFT_INVENTORY_CATEGORY, {
         useTitle: () => m.intl.string(m.t["jcSP+g"]),
         buildLayout: () => [g]
     }),
-    h = (0, a.i4)(o.X.GIFT_SIDEBAR_ITEM, {
+    x = (0, a.i4)(o.X.GIFT_SIDEBAR_ITEM, {
         useTitle: () => m.intl.string(m.t["jcSP+g"]),
         icon: s.GiftIcon,
         usePersistentBadge: function() {

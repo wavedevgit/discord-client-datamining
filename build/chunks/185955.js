@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(597551),
     g = n(287809),
     A = n(581781),
-    h = n(743981),
-    x = n(355097),
+    x = n(743981),
+    h = n(355097),
     p = n(985018),
     T = n(86267);
 let E = (0, o.Ld)(),
@@ -25,7 +25,7 @@ let E = (0, o.Ld)(),
             availablePrimaryGuilds: t,
             pendingPrimaryGuildId: n,
             onChange: o
-        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), C = (0, l.bG)([g.default], () => (0, c.Zo)(g.default.getCurrentUser()?.primaryGuild).guildId), f = void 0 !== n ? n : C, b = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
+        } = e, S = s.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), f = (0, l.bG)([g.default], () => (0, c.Zo)(g.default.getCurrentUser()?.primaryGuild).guildId), C = void 0 !== n ? n : f, b = s.useMemo(() => t.reduce((e, t) => (t.profile?.tag != null && e.push({
             label: t.name,
             value: t.id
         }), e), []), [t]), N = s.useCallback(e => {
@@ -60,7 +60,7 @@ let E = (0, o.Ld)(),
                 guildId: t.id,
                 guildTag: n,
                 guildBadge: t.profile?.badge ?? void 0,
-                badgeSize: h.Sl.SIZE_16,
+                badgeSize: x.Sl.SIZE_16,
                 textColor: "interactive-text-default",
                 textVariant: "text-sm/semibold"
             })
@@ -71,13 +71,13 @@ let E = (0, o.Ld)(),
             })
         }, [N]), y = s.useCallback(e => {
             o?.(e)
-        }, [o]), R = s.useCallback(e => e === f, [f]), O = s.useCallback(e => e, []), P = s.useCallback(() => {
+        }, [o]), R = s.useCallback(e => e === C, [C]), O = s.useCallback(e => e, []), D = s.useCallback(() => {
             o?.(null)
-        }, [o]), D = s.useRef(null);
-        return (0, m.A)(D, x._F.GUILD_TAG), (0, i.jsxs)(_.A, {
+        }, [o]), P = s.useRef(null);
+        return (0, m.A)(P, h._F.GUILD_TAG), (0, i.jsxs)(_.A, {
             title: p.intl.string(p.t.Pdd1nd),
             titleId: E,
-            ref: D,
+            ref: P,
             children: [(0, i.jsx)(r.Text, {
                 className: T.VA,
                 variant: "text-sm/normal",
@@ -92,8 +92,8 @@ let E = (0, o.Ld)(),
                 renderTrailing: v,
                 renderOptionValue: j,
                 serialize: O,
-                clear: P,
-                clearable: null != f,
+                clear: D,
+                clearable: null != C,
                 maxVisibleItems: 8,
                 "data-migration-pending": !0
             })]

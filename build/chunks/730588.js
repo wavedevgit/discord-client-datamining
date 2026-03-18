@@ -22,24 +22,24 @@ function g(e) {
         onBannerChange: s,
         guildId: g,
         className: A,
-        disabled: h = !1,
-        showPremiumIcon: x = !0,
+        disabled: x = !1,
+        showPremiumIcon: h = !0,
         isTryItOut: p = !1,
         forcedDivider: T,
         withHighlight: E = !1
     } = e, {
         newestAnalyticsLocation: S
-    } = (0, o.Ay)(), C = E ? r.wLn : a.$n;
+    } = (0, o.Ay)(), f = E ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
         className: A,
         title: _.intl.string(_.t.Vgdusv),
-        showPremiumIcon: x,
+        showPremiumIcon: h,
         errors: n,
-        disabled: h,
+        disabled: x,
         forcedDivider: T,
         children: (0, i.jsxs)("div", {
             className: m.NC,
-            children: [(0, i.jsx)(C, {
+            children: [(0, i.jsx)(f, {
                 className: l()({
                     [m.yj]: E
                 }),

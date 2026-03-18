@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(986666),
     g = n(713031),
     A = n(8271),
-    h = n(309272),
-    x = n(589984),
+    x = n(309272),
+    h = n(589984),
     p = n(549200),
     T = n(871930),
     E = n(320134),
     S = n(433809),
-    C = n(428854),
-    f = n(259274),
+    f = n(428854),
+    C = n(259274),
     b = n(531525),
     N = n(985018);
 
@@ -42,7 +42,7 @@ function v() {
             helpArticle: (0, o.aW)()
         }),
         webSetting: b.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(f.A, {})]
+        children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(C.A, {})]
     })
 }
 
@@ -58,7 +58,7 @@ function y() {
     return (0, i.jsxs)(E.A, {
         title: N.intl.string(N.t.SRZyHg),
         webSetting: b.H.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
-        children: [(0, i.jsx)(x.A, {}), (0, i.jsx)(h.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(T.h, {
+        children: [(0, i.jsx)(h.A, {}), (0, i.jsx)(x.A, {}), (0, i.jsx)(A.A, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(T.h, {
             setting: b.H.PRIVACY_DATA_CLIPS,
             children: (0, i.jsx)(r.A, {})
         }), (0, i.jsx)(m.z, {})]
@@ -70,8 +70,8 @@ function R() {
         (0, l.Q)(), (0, c.s)()
     }), (0, i.jsx)(u.R, {
         header: N.intl.string(N.t.OAuOHD),
-        notice: (0, i.jsx)(C.A, {
-            page: C.R.DATA_AND_PRIVACY
+        notice: (0, i.jsx)(f.A, {
+            page: f.R.DATA_AND_PRIVACY
         }),
         children: (0, i.jsxs)(s.lVW, {
             children: [(0, i.jsx)(y, {}), (0, i.jsx)(I, {}), (0, i.jsx)(j, {}), (0, i.jsx)(v, {})]

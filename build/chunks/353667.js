@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(963935),
     g = n(894858),
     A = n(272053),
-    h = n(397274),
-    x = n(641324),
+    x = n(397274),
+    h = n(641324),
     p = n(46373),
     T = n(872175);
 
@@ -69,7 +69,7 @@ function S(e) {
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         panelKey: t,
         notice: n,
@@ -80,7 +80,7 @@ function C(e) {
         children: (0, i.jsx)(d.GtU, {
             className: T.XG,
             ref: e => {
-                h.A.setPanelScrollerRef(e)
+                x.A.setPanelScrollerRef(e)
             },
             children: (0, i.jsx)("div", {
                 className: T.nd,
@@ -94,7 +94,7 @@ function C(e) {
     })
 }
 
-function f(e) {
+function C(e) {
     let {
         layout: t,
         decoration: n
@@ -104,7 +104,7 @@ function f(e) {
         children: [null != n && (0, i.jsx)(S, {
             decoration: n
         }), t.map((e, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(x.A, {
+            children: [(0, i.jsx)(h.A, {
                 node: e
             }), n !== t.length - 1 && (0, i.jsx)(p.A, {
                 className: T.yF
@@ -134,7 +134,7 @@ function b(e) {
         })
     }, [n, t]);
     let o = n.find(e => e.key === r) ?? n[0];
-    return (0, i.jsxs)(C, {
+    return (0, i.jsxs)(f, {
         panelKey: t,
         notice: l,
         children: [(0, i.jsx)(d.VQ0, {
@@ -163,7 +163,7 @@ function b(e) {
             })
         }), (0, i.jsx)(d.VQ0.Panel, {
             id: r,
-            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(f, {
+            children: null != o.StronglyDiscouragedCustomComponent ? (0, i.jsx)(o.StronglyDiscouragedCustomComponent, {}) : (0, i.jsx)(C, {
                 layout: o.layout,
                 decoration: a
             })
@@ -178,10 +178,10 @@ function N(e) {
         decoration: s,
         layout: l
     } = e;
-    return (0, i.jsx)(C, {
+    return (0, i.jsx)(f, {
         panelKey: t,
         notice: n,
-        children: (0, i.jsx)(f, {
+        children: (0, i.jsx)(C, {
             layout: l,
             decoration: s
         })

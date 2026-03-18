@@ -16,8 +16,8 @@ var i = n(934551),
     m = n(662802),
     g = n(988208),
     A = n(819070),
-    h = n(352694),
-    x = n(136451),
+    x = n(352694),
+    h = n(136451),
     p = n(985018);
 let T = [{
         badgeType: r.Xi.STRONGLY_DISCOURAGED_CUSTOM,
@@ -36,7 +36,7 @@ let T = [{
         initialize: () => {
             (0, l.v)()
         },
-        buildLayout: () => [h.S, m._, x.u, g.U, A.M, _.d]
+        buildLayout: () => [x.S, m._, h.u, g.U, A.M, _.d]
     }),
     S = (0, a.i4)(o.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => p.intl.string(p.t["iHH+ky"]),

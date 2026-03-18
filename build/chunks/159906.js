@@ -16,24 +16,24 @@ var s = n(284009),
     m = n(788868),
     g = n(652215),
     A = n(985018),
-    h = n(700896);
+    x = n(700896);
 
-function x(e) {
+function h(e) {
     let t, {
             subscription: n,
             withOverheadSeparator: s
         } = e,
         {
-            analyticsLocations: x
+            analyticsLocations: h
         } = (0, o.Ay)(),
         [p] = (0, _.Kq)({
             subscriptionId: n.id,
             renewal: !0,
-            analyticsLocations: x,
+            analyticsLocations: h,
             analyticsLocation: r.A.PREMIUM_SUBSCRIPTION_FINE_PRINT_CONTENT
         });
     if (null == p) return null;
-    let T = s ? h.r : h.a,
+    let T = s ? x.r : x.a,
         E = p.invoiceItems.find(e => {
             let {
                 subscriptionPlanId: t
@@ -42,25 +42,25 @@ function x(e) {
         });
     if (null == E) return null;
     let S = E.subscriptionPlanId,
-        C = d.A.get(S);
-    l()(null != C, "Missing plan");
-    let f = (0, u.$g)(p.total, p.currency);
-    return C.interval === m.WT.YEAR ? t = A.intl.format(A.t["jPz/39"], {
-        price: f,
+        f = d.A.get(S);
+    l()(null != f, "Missing plan");
+    let C = (0, u.$g)(p.total, p.currency);
+    return f.interval === m.WT.YEAR ? t = A.intl.format(A.t["jPz/39"], {
+        price: C,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY
-    }) : C.interval === m.WT.MONTH && (t = 1 === C.intervalCount ? A.intl.format(A.t.m27GpI, {
-        price: f,
+    }) : f.interval === m.WT.MONTH && (t = 1 === f.intervalCount ? A.intl.format(A.t.m27GpI, {
+        price: C,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY
     }) : A.intl.format(A.t["9xf5Vx"], {
-        price: f,
+        price: C,
         termsUrl: g.X7G.TERMS,
         paidURL: g.X7G.PAID_TERMS,
         privacyUrl: g.X7G.PRIVACY,
-        intervalCount: C.intervalCount
+        intervalCount: f.intervalCount
     })), (0, i.jsx)(a.Text, {
         color: "text-muted",
         className: T,
@@ -74,7 +74,7 @@ function p(e) {
         subscription: t,
         withOverheadSeparator: n
     } = e;
-    return t.status === g.Dmq.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(x, {
+    return t.status === g.Dmq.CANCELED || t.isPurchasedExternally ? null : (0, i.jsx)(h, {
         subscription: t,
         withOverheadSeparator: n
     })

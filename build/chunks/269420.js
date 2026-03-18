@@ -1,6 +1,6 @@
 /** chunk id: 269420 params = (module,exports,require) **/
 n.d(t, {
-    K: () => x
+    K: () => h
 });
 var i = n(419954),
     s = n(780964),
@@ -15,8 +15,8 @@ var i = n(419954),
     m = n(298648),
     g = n(782e3),
     A = n(509725),
-    h = n(985018);
-let x = (0, i.zZ)(s.X.CLIPS_RECORDING_CATEGORY, {
-    useTitle: () => h.intl.string(h.t.iIwmV5),
+    x = n(985018);
+let h = (0, i.zZ)(s.X.CLIPS_RECORDING_CATEGORY, {
+    useTitle: () => x.intl.string(x.t.iIwmV5),
     buildLayout: () => [d.e, a.X, m.T, g.B, A.Z, o.R, c.j, l.k, r.t, u.N, _.$]
 })

@@ -16,14 +16,14 @@ var u = n(355097),
     m = n(420643),
     g = n(755165),
     A = n(542838),
-    h = n(9523),
-    x = n(416999),
+    x = n(9523),
+    h = n(416999),
     p = n(338832),
     T = n(252373),
     E = n(522799),
     S = n(795710),
-    C = n(484813),
-    f = n(1748),
+    f = n(484813),
+    C = n(1748),
     b = n(772473),
     N = n(64514),
     I = n(121818),
@@ -32,8 +32,8 @@ var u = n(355097),
     y = n(629139),
     R = n(753563),
     O = n(584378),
-    P = n(747918),
-    D = n(330290),
+    D = n(747918),
+    P = n(330290),
     L = n(252261),
     G = n(106731);
 let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
@@ -101,7 +101,7 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
                         onTryItOutClick: t
                     })
                 },
-                imageSource: x,
+                imageSource: h,
                 imageClassName: t.perGuildProfilesImage
             },
             longerMessages: {
@@ -113,7 +113,7 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
             moreGuilds: {
                 title: _.intl.string(_.t.Bv8Pfk),
                 description: _.intl.string(_.t.JMfaTU),
-                imageSource: M(s, h, P),
+                imageSource: M(s, x, D),
                 imageClassName: t.moreGuildsImage
             },
             moreGuildsAlt: {
@@ -131,19 +131,19 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
             stickers: {
                 title: _.intl.string(_.t["1c+xwT"]),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, C, D),
+                imageSource: M(s, f, P),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, C, D),
+                imageSource: M(s, f, P),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, C, D),
+                imageSource: M(s, f, P),
                 imageClassName: t.stickersImage
             },
             streaming: {
@@ -155,7 +155,7 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
             superReactions: {
                 title: _.intl.string(_.t["uZt5q/"]),
                 description: _.intl.string(_.t.ZK3ZoX),
-                imageSource: M(s, f, b),
+                imageSource: M(s, C, b),
                 imageClassName: t.superReactionsImage
             },
             upload: {

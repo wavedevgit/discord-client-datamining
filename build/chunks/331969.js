@@ -1,6 +1,6 @@
 /** chunk id: 331969 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => C
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -15,12 +15,12 @@ var i = n(627968),
     m = n(808728),
     g = n(71393),
     A = n(967198),
-    h = n(926140),
-    x = n(985018),
+    x = n(926140),
+    h = n(985018),
     p = n(971953);
 
 function T() {}
-let E = [h.rD.VOICE_CHANNEL];
+let E = [x.rD.VOICE_CHANNEL];
 
 function S(e) {
     e.setOptions({
@@ -28,19 +28,19 @@ function S(e) {
     }), e.setLimit(1 / 0)
 }
 
-function C() {
+function f() {
     return (0, i.jsx)("div", {
         className: p.i1,
         children: (0, i.jsx)(r.Text, {
             variant: "text-md/medium",
             color: "text-muted",
             className: p.GN,
-            children: x.intl.string(x.t.zHjCd1)
+            children: h.intl.string(h.t.zHjCd1)
         })
     })
 }
 
-function f(e) {
+function C(e) {
     let {
         keybind: t
     } = e, n = s.useRef(t);
@@ -63,7 +63,7 @@ function f(e) {
     return (0, i.jsx)("div", {
         className: p.a8,
         children: (0, i.jsx)(r.D0$, {
-            label: x.intl.string(x.t.q4JpM8),
+            label: h.intl.string(h.t.q4JpM8),
             children: (0, i.jsxs)(c.A, {
                 align: c.A.Align.STRETCH,
                 children: [(0, i.jsx)("div", {
@@ -76,7 +76,7 @@ function f(e) {
                     shrink: 0,
                     children: (0, i.jsx)(r.Button, {
                         variant: "primary",
-                        text: x.intl.string(x.t.Dm8O4e),
+                        text: h.intl.string(h.t.Dm8O4e),
                         onClick: d
                     })
                 })]
@@ -91,7 +91,7 @@ function b(e) {
             onClose: c,
             onSelect: T
         } = e,
-        f = s.useId(),
+        C = s.useId(),
         b = s.useRef(null),
         {
             query: N,
@@ -134,15 +134,15 @@ function b(e) {
         })
     }, [y]);
     let O = null != j ? j.length : v.length,
-        P = (() => {
+        D = (() => {
             if (null != j) return j[y]?.id;
             let e = v[y];
-            if (e?.type === h.rD.VOICE_CHANNEL) return e.record.id
+            if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        D = O > 0 || "" === N ? {
-            innerId: f,
+        P = O > 0 || "" === N ? {
+            innerId: C,
             innerRole: "listbox",
-            innerAriaLabel: x.intl.string(x.t["+N3fW7"]),
+            innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
             ref: b,
             sections: [O],
             renderRow: function(e) {
@@ -151,7 +151,7 @@ function b(e) {
                 } = e, n = (() => {
                     if (null != j) return j[t];
                     let e = v[t];
-                    if (e?.type === h.rD.VOICE_CHANNEL) return e.record
+                    if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                 })();
                 if (null == n) return null;
                 let s = null != n.parent_id ? _.A.getChannel(n.parent_id) : void 0,
@@ -176,15 +176,15 @@ function b(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(C, {}),
+            renderRow: () => (0, i.jsx)(f, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
     return (0, i.jsx)(l.Modal, {
         transitionState: o,
         onClose: c,
-        title: x.intl.string(x.t.Dm8O4e),
-        subtitle: x.intl.string(x.t.q4JpM8),
+        title: h.intl.string(h.t.Dm8O4e),
+        subtitle: h.intl.string(h.t.q4JpM8),
         actions: void 0,
         input: (0, i.jsx)(r.ksK, {
             value: N,
@@ -199,7 +199,7 @@ function b(e) {
                         let e = (() => {
                             if (null != j) return j[y];
                             let e = v[y];
-                            if (e?.type === h.rD.VOICE_CHANNEL) return e.record
+                            if (e?.type === x.rD.VOICE_CHANNEL) return e.record
                         })();
                         null == e ? T(void 0) : T(e.id), c();
                         break
@@ -211,16 +211,16 @@ function b(e) {
                         y >= O - 1 ? R(0) : R(y + 1)
                 }
             },
-            placeholder: x.intl.string(x.t.tG0r7g),
+            placeholder: h.intl.string(h.t.tG0r7g),
             role: "combobox",
-            "aria-controls": f,
+            "aria-controls": C,
             "aria-expanded": O > 0,
-            "aria-activedescendant": O > 0 && null != P ? P : void 0,
+            "aria-activedescendant": O > 0 && null != D ? D : void 0,
             "aria-autocomplete": "list",
             spellCheck: !1,
             autoFocus: !0
         }),
-        listProps: D
+        listProps: P
     })
 }
 
@@ -247,7 +247,7 @@ function N(e) {
         variant: "text-md/medium",
         color: "text-muted",
         className: p.GN,
-        children: x.intl.string(x.t["/fYIK7"])
+        children: h.intl.string(h.t["/fYIK7"])
     }) : (0, i.jsx)(u.c3, {
         channel: n,
         id: n.id,

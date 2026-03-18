@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(919395),
     g = n(128450),
     A = n(212168),
-    h = n(652215),
-    x = n(788868),
+    x = n(652215),
+    h = n(788868),
     p = n(985018),
     T = n(97671);
 
@@ -27,8 +27,8 @@ function E(e) {
         initialSelectedEffect: l,
         className: E,
         sectionTitle: S,
-        forcedDivider: C = !1,
-        withTutorial: f = !1,
+        forcedDivider: f = !1,
+        withTutorial: C = !1,
         showBorder: b = !1
     } = e, {
         analyticsLocations: N
@@ -40,14 +40,14 @@ function E(e) {
         errors: y
     } = (0, m.nZ)(n?.id);
     s.useEffect(() => {
-        I && u.default.track(h.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: x.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+        I && u.default.track(x.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: h.e.PROFILE_EFFECTS_INLINE_SETTINGS,
             location_stack: N
         })
     }, [I, N]);
-    let R = f ? o.wLn : r.$n;
+    let R = C ? o.wLn : r.$n;
     return (0, i.jsx)(g.A, {
-        forcedDivider: C,
+        forcedDivider: f,
         borderType: A.i.PREMIUM,
         hasBackground: !0,
         title: S,
@@ -66,7 +66,7 @@ function E(e) {
                     })
                 },
                 className: a()({
-                    [T.yj]: f
+                    [T.yj]: C
                 }),
                 children: p.intl.string(p.t["/dRfCf"])
             }), (void 0 === j ? null != v : null != j) && (0, i.jsx)("div", {

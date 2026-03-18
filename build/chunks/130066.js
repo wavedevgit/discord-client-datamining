@@ -1,6 +1,6 @@
 /** chunk id: 130066 params = (module,exports,require) **/
 n.d(t, {
-    A: () => P
+    A: () => D
 });
 var i = n(627968),
     s = n(311907),
@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(831320),
     g = n(965563),
     A = n(320134),
-    h = n(604151),
-    x = n(638130),
+    x = n(604151),
+    h = n(638130),
     p = n(389242),
     T = n(772538),
     E = n(61610),
     S = n(751461),
-    C = n(638324),
-    f = n(428854),
+    f = n(638324),
+    C = n(428854),
     b = n(531525),
     N = n(190363),
     I = n(652215),
@@ -30,7 +30,7 @@ var i = n(627968),
 let j = () => (0, i.jsxs)(A.A, {
         title: v.intl.string(v.t.xVRG4P),
         webSetting: b.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        children: [(0, i.jsx)(x.f, {}), (0, i.jsx)(_.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(p.A, {})]
+        children: [(0, i.jsx)(h.f, {}), (0, i.jsx)(_.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(d.A, {}), (0, i.jsx)(p.A, {})]
     }),
     y = () => (0, i.jsxs)(A.A, {
         title: v.intl.string(v.t["y62Z/d"]),
@@ -38,18 +38,18 @@ let j = () => (0, i.jsxs)(A.A, {
         children: [(0, i.jsx)(l.x, {
             setting: b.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
             children: (0, i.jsx)(g.A, {})
-        }), (0, i.jsx)(S.A, {}), (0, i.jsx)(C.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(T.A, {})]
+        }), (0, i.jsx)(S.A, {}), (0, i.jsx)(f.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(T.A, {})]
     }),
     R = () => (0, i.jsxs)(A.A, {
         title: v.intl.string(v.t["1Qn8iV"]),
         webSetting: b.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-        children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(h.Ay, {})]
+        children: [(0, i.jsx)(m.A, {}), (0, i.jsx)(x.Ay, {})]
     }),
     O = () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(j, {}), (0, i.jsx)(y, {}), (0, i.jsx)(R, {})]
     });
 
-function P() {
+function D() {
     let e = (0, s.bG)([a.A], () => a.A.getSubsection()),
         t = [{
             title: v.intl.string(v.t["/7xJCF"]),
@@ -62,8 +62,8 @@ function P() {
         }];
     return (0, i.jsx)(r.R, {
         header: v.intl.string(v.t["+o1pDZ"]),
-        notice: (0, i.jsx)(f.A, {
-            page: f.R.CONTENT_AND_SOCIAL
+        notice: (0, i.jsx)(C.A, {
+            page: C.R.CONTENT_AND_SOCIAL
         }),
         children: (0, i.jsx)(o.A, {
             parentSetting: b.H.CONTENT_SOCIAL,

@@ -1,6 +1,6 @@
 /** chunk id: 982311 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -46,25 +46,25 @@ function A(e) {
         })
     })
 }
-let h = function(e) {
+let x = function(e) {
     let {
         onClose: t,
         onClaim: n,
-        code: h,
-        outboundPromotion: x,
+        code: x,
+        outboundPromotion: h,
         transitionState: p
     } = e, [T, E] = s.useState(null), S = (0, u.GV)(), {
-        analyticsLocations: C
+        analyticsLocations: f
     } = (0, c.Ay)(d.A.USER_SETTINGS_GIFT_INVENTORY);
     return (s.useEffect(() => {
-        null == h && (0, _.kd)({
-            promotionId: x.id,
-            analyticsLocations: C
+        null == x && (0, _.kd)({
+            promotionId: h.id,
+            analyticsLocations: f
         }).then(e => n(e)).catch(e => E(e?.body?.code))
-    }, [h, x.id, n, C]), null != T) ? (0, i.jsx)(A, {
+    }, [x, h.id, n, f]), null != T) ? (0, i.jsx)(A, {
         onClose: t,
         transitionState: p
-    }) : null == h ? (0, i.jsx)(r.y$y, {
+    }) : null == x ? (0, i.jsx)(r.y$y, {
         className: g.Lq
     }) : (0, i.jsx)(l.Modal, {
         title: "",
@@ -80,7 +80,7 @@ let h = function(e) {
             }), (0, i.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: g.G3,
-                children: x.outboundRedemptionModalBody
+                children: h.outboundRedemptionModalBody
             })]
         }),
         actions: [{
@@ -91,7 +91,7 @@ let h = function(e) {
             text: m.intl.string(m.t["+zx47d"]),
             variant: "primary",
             onClick: () => {
-                let e = (0, _.kc)(h, x);
+                let e = (0, _.kc)(x, h);
                 window.open(e, "_blank")
             }
         }],
@@ -104,7 +104,7 @@ let h = function(e) {
                 label: m.intl.string(m.t.s9LFQh),
                 helperText: m.intl.string(m.t["F+nFTZ"]),
                 children: (0, i.jsx)(o.A, {
-                    value: h,
+                    value: x,
                     buttonColor: a.$n.Colors.BRAND,
                     buttonLook: a.$n.Looks.FILLED,
                     delay: 1e3

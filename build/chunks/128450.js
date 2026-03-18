@@ -37,18 +37,18 @@ let m = s.forwardRef(function(e, t) {
         children: m,
         className: g,
         errors: A,
-        disabled: h = !1,
-        hideDivider: x = !1,
+        disabled: x = !1,
+        hideDivider: h = !1,
         showBorder: p = !1,
         borderType: T,
         hasBackground: E = !1,
         forcedDivider: S = !1,
-        showPremiumIcon: C = !1
+        showPremiumIcon: f = !1
     } = e;
     return (0, i.jsx)("div", {
         className: a()(u.fz, g, {
-            [u.r9]: h,
-            [u.Ai]: x,
+            [u.r9]: x,
+            [u.Ai]: h,
             [u.Ac]: p,
             [u.Cx]: S
         }),
@@ -63,7 +63,7 @@ let m = s.forwardRef(function(e, t) {
                 className: u.DD,
                 id: l,
                 "data-migration-pending": !0,
-                children: [n, C && (0, i.jsx)(d.A, {
+                children: [n, f && (0, i.jsx)(d.A, {
                     size: "xs"
                 }), s]
             }), null != o ? (0, i.jsx)(r.ayl, {

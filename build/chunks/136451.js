@@ -11,6 +11,7 @@ var i = n(873298),
 let o = (0, s.Qx)(a.X.APPEARANCE_UI_DENSITY, {
         useTitle: () => r.intl.string(r.t["C/5V0A"]),
         useSubtitle: () => r.intl.string(r.t.QLZhYk),
+        useSearchTerms: () => ["List Spacing"],
         useOptions: () => [{
             name: r.intl.string(r.t["7iegX4"]),
             value: i.NS.COMPACT

@@ -44,15 +44,15 @@ function g(e) {
         route: c.R.HOME
     }), {
         route: A
-    } = l, h = () => {
+    } = l, x = () => {
         g({
             route: c.R.HOME
         })
-    }, x = e => {
+    }, h = e => {
         g({
             route: c.R.SWITCH_APP_PLANS,
             ...e
-        }), n(_.intl.string(_.t.VFqtkP), h)
+        }), n(_.intl.string(_.t.VFqtkP), x)
     }, [p, T] = s.useState({});
     s.useEffect(() => {
         for (let e of t) {
@@ -83,18 +83,18 @@ function g(e) {
                     subscription: e,
                     children: (0, i.jsx)(d.A, {
                         subscription: e,
-                        navigateToSwitchPlan: x,
+                        navigateToSwitchPlan: h,
                         loadingState: S ? d.G.LOADING : p[e.id] ?? d.G.LOADING
                     })
                 }, e.id))
             });
         case c.R.SWITCH_APP_PLANS:
             let {
-                route: C, ...f
+                route: f, ...C
             } = l;
             return (0, i.jsx)(u.A, {
-                ...f,
-                navigateToHome: h
+                ...C,
+                navigateToHome: x
             });
         default:
             (0, a.xb)(A)

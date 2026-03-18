@@ -16,8 +16,8 @@ var s = n(110259),
     m = n(139286),
     g = n(975571),
     A = n(498470),
-    h = n(637706),
-    x = n(985018),
+    x = n(637706),
+    h = n(985018),
     p = n(122506);
 let T = e => {
     let {
@@ -39,7 +39,7 @@ let T = e => {
             analyticsLocations: T,
             analyticsLocation: E.location
         }),
-        C = (0, h.a)(n.body);
+        f = (0, x.a)(n.body);
     return (0, i.jsxs)("div", {
         className: p.kL,
         children: [(0, i.jsx)("div", {
@@ -59,11 +59,11 @@ let T = e => {
                 variant: "text-md/medium",
                 color: "text-subtle",
                 className: p.tb,
-                children: [C, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
+                children: [f, "" !== n.helpArticleId && (0, i.jsxs)(i.Fragment, {
                     children: ["\xa0", (0, i.jsx)(c.MzZ, {
                         className: p.$T,
                         href: g.A.getArticleURL(n.helpArticleId),
-                        children: x.intl.string(x.t["sBp+u0"])
+                        children: h.intl.string(h.t["sBp+u0"])
                     })]
                 })]
             })]

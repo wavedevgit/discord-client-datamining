@@ -21,12 +21,12 @@ let u = e => {
         onCtaClick: m,
         perkComponent: g,
         subtitle: A,
-        descriptionCta: h,
-        customContent: x,
+        descriptionCta: x,
+        customContent: h,
         cardVariant: p,
         subtitleClassName: T,
         imageOverlayText: E
-    } = e, S = (0, o.Q)(p), C = null != E;
+    } = e, S = (0, o.Q)(p), f = null != E;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: l()(c.Iv, c.Gz)
@@ -45,8 +45,8 @@ let u = e => {
             children: [(0, i.jsx)("img", {
                 src: u,
                 alt: "",
-                className: _ ? C ? c.ls : c.gu : ""
-            }), C ? (0, i.jsx)("div", {
+                className: _ ? f ? c.ls : c.gu : ""
+            }), f ? (0, i.jsx)("div", {
                 className: c.Yh,
                 children: (0, i.jsx)(r.Text, {
                     className: c.nj,
@@ -56,16 +56,16 @@ let u = e => {
             }) : null]
         }), null != g && (0, i.jsxs)("div", {
             className: c.wX,
-            children: [g, null != h && null != m && (0, i.jsx)(a.$n, {
+            children: [g, null != x && null != m && (0, i.jsx)(a.$n, {
                 "data-migration-pending": !0,
                 className: s,
                 fullWidth: !0,
                 onClick: m,
                 children: (0, i.jsx)("div", {
                     className: S?.descriptionCta?.className,
-                    children: h
+                    children: x
                 })
             })]
-        }), x]
+        }), h]
     })
 }

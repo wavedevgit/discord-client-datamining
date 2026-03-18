@@ -18,12 +18,12 @@ var i = n(627968),
 function A(e) {
     let t, n, {
             currentUser: A,
-            togglingSMS: h
+            togglingSMS: x
         } = e,
-        [x, p] = s.useState(!1),
+        [h, p] = s.useState(!1),
         T = s.useCallback(e => {
-            e.preventDefault(), p(!x)
-        }, [x]),
+            e.preventDefault(), p(!h)
+        }, [h]),
         E = s.useCallback(function() {
             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             (0, l.qfG)(t => (0, i.jsx)(d.default, {
@@ -37,12 +37,12 @@ function A(e) {
         S = s.useCallback(() => {
             E()
         }, [E]),
-        C = s.useCallback(() => {
+        f = s.useCallback(() => {
             null == A.phone ? E({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
         }, [A, E]),
-        f = s.useCallback(() => {
+        C = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
@@ -54,7 +54,7 @@ function A(e) {
         N = null != A.phone,
         I = A.hasFlag(u.nhx.MFA_SMS);
     if (N || I) {
-        let e = x ? A.phone : b(A.phone);
+        let e = h ? A.phone : b(A.phone);
         n = (0, i.jsxs)(l.Text, {
             variant: "text-sm/normal",
             children: [m.intl.format(m.t.PXVoEO, {
@@ -62,7 +62,7 @@ function A(e) {
             }), (0, i.jsx)(l.MzZ, {
                 onClick: T,
                 className: g.vN,
-                children: x ? m.intl.string(m.t.FfltIN) : m.intl.string(m.t.llArAg)
+                children: h ? m.intl.string(m.t.FfltIN) : m.intl.string(m.t.llArAg)
             })]
         })
     }
@@ -70,8 +70,8 @@ function A(e) {
         variant: "critical-secondary",
         size: "sm",
         text: m.intl.string(m.t.KLWnit),
-        loading: h,
-        onClick: f
+        loading: x,
+        onClick: C
     });
     else {
         let e = (0, c.B)(A);
@@ -81,8 +81,8 @@ function A(e) {
                 variant: "primary",
                 size: "sm",
                 text: e ?? m.intl.string(m.t.DZQe23),
-                onClick: C,
-                loading: h,
+                onClick: f,
+                loading: x,
                 disabled: null != e
             }), N ? (0, i.jsx)(l.Button, {
                 variant: "secondary",

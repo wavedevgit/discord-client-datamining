@@ -18,14 +18,14 @@ var i = n(627968),
     m = n(29160),
     g = n(15285),
     A = n(843402),
-    h = n(496885),
-    x = n(227309),
+    x = n(496885),
+    h = n(227309),
     p = n(847521),
     T = n(760751),
     E = n(189081),
     S = n(954571),
-    C = n(583613),
-    f = n(723702),
+    f = n(583613),
+    C = n(723702),
     b = n(544028),
     N = n(790174),
     I = n(652215),
@@ -34,11 +34,11 @@ var i = n(627968),
     y = n(900506),
     R = n(976092),
     O = n(20976),
-    P = n(473169);
-let D = r.Ay.connectStores([b.A], () => ({
+    D = n(473169);
+let P = r.Ay.connectStores([b.A], () => ({
         theme: b.A.theme
     }))(c.ppr),
-    L = (0, f.isWindows)();
+    L = (0, C.isWindows)();
 
 function G(e) {
     let {
@@ -60,7 +60,7 @@ function G(e) {
                 o(e)
             }
         }), (0, i.jsx)(c.cGx, {
-            className: a()(P.Ot, P.QB)
+            className: a()(D.Ot, D.QB)
         }), (0, i.jsxs)("div", {
             className: a()(y.o1, O.xM),
             children: [(0, i.jsx)(c.QWc, {
@@ -84,27 +84,27 @@ function M(e) {
         rawGame: t,
         nowPlaying: l = !1,
         isOverride: A,
-        subgames: x,
-        isSubgame: C = !1,
-        parentGame: f
+        subgames: h,
+        isSubgame: f = !1,
+        parentGame: C
     } = e, b = (0, r.cf)([g.Ay, T.A, E.A], () => (0, g.xU)(t, g.Ay, T.A, E.A)), {
         canToggleDetection: N,
         isCurrentGameDetectionEnabled: R
     } = (0, r.cf)([g.Ay], () => ({
-        canToggleDetection: null == f || g.Ay.isDetectionEnabled(f),
+        canToggleDetection: null == C || g.Ay.isDetectionEnabled(C),
         isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(b)
-    })), P = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [D, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(b) ? C ? b.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+    })), D = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [P, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(b) ? f ? b.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
         subgameName: b.gameName
-    }) : b.name, [b, C]), [k, V] = s.useState(U ?? "???"), w = a()(O.tR, {
+    }) : b.name, [b, f]), [k, V] = s.useState(U ?? "???"), w = a()(O.tR, {
         [y.LO]: !l,
         [y.Rw]: l,
         [y.FB]: null != b && l,
-        [y.xL]: C,
-        [y.fG]: null != x && x.length > 0
+        [y.xL]: f,
+        [y.fG]: null != h && h.length > 0
     });
 
     function B() {
-        null != x && x.length > 0 && R ? (0, c.mMO)(async () => {
+        null != h && h.length > 0 && R ? (0, c.mMO)(async () => {
             let {
                 Modal: e
             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -130,8 +130,8 @@ function M(e) {
             })
         }) : u.A.toggleDetection(b)
     }
-    let H = null != P && (0, g.Es)(b) === (0, g.Es)(P),
-        F = null != f && f.id === P?.id || H || null != x && x.some(e => e.id === P?.id);
+    let H = null != D && (0, g.Es)(b) === (0, g.Es)(D),
+        F = null != C && C.id === D?.id || H || null != h && h.some(e => e.id === D?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: w,
@@ -144,7 +144,7 @@ function M(e) {
                         children: U
                     }), (0, i.jsx)(d.m_, {
                         text: j.intl.string(j.t["4PJP5p"]),
-                        children: (0, i.jsx)(h.A, {
+                        children: (0, i.jsx)(x.A, {
                             className: y.qf,
                             size: 18,
                             color: o.A.unsafe_rawColors.BRAND_500.css,
@@ -183,7 +183,7 @@ function M(e) {
                         })
                     })
                 }()]
-            }), A || D ? null : (0, i.jsx)("div", {
+            }), A || P ? null : (0, i.jsx)("div", {
                 className: a()(O.tR, O.oA, O.LT, y.E3),
                 children: (0, i.jsx)(d.m_, {
                     text: j.intl.string(j.t["y0B+lo"]),
@@ -191,7 +191,7 @@ function M(e) {
                         "aria-label": j.intl.string(j.t["y0B+lo"]),
                         className: y.ym,
                         onClick: function() {
-                            if (D) return;
+                            if (P) return;
                             let e = null != b.id ? T.A.getDetectableGame(b.id) : null;
                             S.default.track(I.HAw.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
                                 application_id: e?.id,
@@ -246,7 +246,7 @@ function M(e) {
                     })
                 })
             }(), function() {
-                if (!L || null != f) return null;
+                if (!L || null != C) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
@@ -284,20 +284,20 @@ function M(e) {
             }(), l && !A || F ? null : (0, i.jsx)(_.A, {
                 className: y.LS,
                 onClick: function() {
-                    u.A.deleteEntry(b), x?.forEach(e => {
+                    u.A.deleteEntry(b), h?.forEach(e => {
                         u.A.deleteEntry(e)
                     })
                 }
             })]
-        }), null != x && x.length > 0 && !l && (0, i.jsx)("div", {
+        }), null != h && h.length > 0 && !l && (0, i.jsx)("div", {
             className: y.AQ,
-            children: x.map((e, t) => (0, i.jsxs)(s.Fragment, {
+            children: h.map((e, t) => (0, i.jsxs)(s.Fragment, {
                 children: [(0, i.jsx)(M, {
                     rawGame: e,
                     isOverride: !1,
                     isSubgame: !0,
                     parentGame: b
-                }), t !== x.length - 1 && (0, i.jsx)("div", {
+                }), t !== h.length - 1 && (0, i.jsx)("div", {
                     className: y.PQ
                 })]
             }, (0, g.Es)(e)))
@@ -325,8 +325,8 @@ function k(e) {
     let {
         children: t
     } = e;
-    return (0, i.jsxs)(D, {
-        className: P.eT,
+    return (0, i.jsxs)(P, {
+        className: D.eT,
         children: [(0, i.jsx)(c.G8R, {
             darkSrc: n(839628),
             lightSrc: n(446404),
@@ -335,7 +335,7 @@ function k(e) {
         }), t]
     })
 }
-let V = (0, C.L_)(function() {
+let V = (0, f.L_)(function() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         return new Set(t.map(e => e.exePath))
     }),
@@ -354,13 +354,13 @@ let V = (0, C.L_)(function() {
             rawGame: t,
             isOverride: n.has(t.exePath),
             nowPlaying: !0,
-            subgames: t.id === x.a7 ? l : void 0
+            subgames: t.id === h.a7 ? l : void 0
         }, (0, g.Es)(t)) : (0, i.jsx)(U, {})
     },
     B = () => {
         let e = s.useRef(null);
         return (0, i.jsxs)("div", {
-            className: a()(y.ax, P.Gf),
+            className: a()(y.ax, D.Gf),
             children: [(0, i.jsx)("span", {
                 children: j.intl.string(j.t.xwhoqM)
             }), (0, i.jsx)(c.YNO, {
@@ -410,7 +410,7 @@ let V = (0, C.L_)(function() {
                 children: a.map(e => (0, i.jsx)(M, {
                     rawGame: e,
                     isOverride: l.has(e.exePath),
-                    subgames: e.id === x.a7 ? o : void 0
+                    subgames: e.id === h.a7 ? o : void 0
                 }, (0, g.Es)(e)))
             })
         })

@@ -1,6 +1,6 @@
 /** chunk id: 911180 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -16,28 +16,28 @@ var i = n(627968),
     g = n(985018),
     A = n(567458);
 
-function h(e) {
+function x(e) {
     let {
         onChange: t,
         onClose: n,
         color: l,
-        suggestedColors: h,
-        disabled: x,
+        suggestedColors: x,
+        disabled: h,
         label: p,
         colorPickerMiddle: T,
         colorPickerFooter: E,
         showEyeDropper: S
-    } = e, C = s.useRef(null), f = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), I = (0, o.Hl)(l), v = I === f ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), R = (0, u.A)(E), [O, P] = s.useState((0, r.A)());
+    } = e, f = s.useRef(null), C = (0, c.rdh)(d.A.colors.BACKGROUND_BASE_LOW).hex(), b = d.A.colors.BACKGROUND_MOD_MUTED.css, N = (0, _.sN)(l), I = (0, o.Hl)(l), v = I === C ? b : I, j = N ? d.A.unsafe_rawColors.WHITE.css : d.A.unsafe_rawColors.PRIMARY_530.css, y = (0, u.A)(T), R = (0, u.A)(E), [O, D] = s.useState((0, r.A)());
     return s.useEffect(() => {
-        (y !== T || R !== E) && P((0, r.A)())
+        (y !== T || R !== E) && D((0, r.A)())
     }, [E, T, R, y]), (0, i.jsx)(c.YNO, {
-        targetElementRef: C,
+        targetElementRef: f,
         positionKey: O,
         renderPopout: e => (0, i.jsx)(c.VNw, {
             ...e,
             value: l,
             onChange: t,
-            suggestedColors: h,
+            suggestedColors: x,
             middle: T,
             footer: E,
             showEyeDropper: S
@@ -49,14 +49,14 @@ function h(e) {
                 ...n
             } = e;
             return (0, i.jsxs)("div", {
-                ref: C,
+                ref: f,
                 className: a()(A.oP, {
-                    [A.r9]: x
+                    [A.r9]: h
                 }),
                 children: [(0, i.jsx)(c.DUT, {
                     ...n,
-                    tabIndex: x ? -1 : 0,
-                    onClick: x ? m.tEg : t,
+                    tabIndex: h ? -1 : 0,
+                    onClick: h ? m.tEg : t,
                     style: {
                         backgroundColor: I,
                         borderColor: v
@@ -64,7 +64,7 @@ function h(e) {
                     className: A.nf,
                     "aria-label": g.intl.string(g.t.Qp04hK),
                     focusProps: {
-                        ringTarget: C
+                        ringTarget: f
                     },
                     children: (0, i.jsx)(c.R2l, {
                         size: "custom",

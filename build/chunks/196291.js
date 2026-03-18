@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(535646),
     g = n(511484),
     A = n(202639),
-    h = n(811611),
-    x = n(407217),
+    x = n(811611),
+    h = n(407217),
     p = n(101058),
     T = n(207803),
     E = n(836602),
     S = n(954571),
-    C = n(927578),
-    f = n(884546),
+    f = n(927578),
+    C = n(884546),
     b = n(597551),
     N = n(230084),
     I = n(180020),
@@ -31,8 +31,8 @@ var i = n(627968),
     y = n(63675),
     R = n(253604),
     O = n(652215),
-    P = n(788868),
-    D = n(355097),
+    D = n(788868),
+    P = n(355097),
     L = n(985018),
     G = n(567567);
 
@@ -41,7 +41,7 @@ function M(e) {
         user: t,
         isVisible: n,
         shouldShow: M
-    } = e, U = C.Ay.isPremium(t), k = C.Ay.canUseAnimatedAvatar(t), {
+    } = e, U = f.Ay.isPremium(t), k = f.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
         pendingThemeColors: w,
         tryItOutThemeColors: B,
@@ -60,7 +60,7 @@ function M(e) {
         preset: Y,
         onShuffle: z
     } = (0, _.A)(), X = s.useRef(null);
-    (0, b.A)(X, D._F.TRY_IT_OUT);
+    (0, b.A)(X, P._F.TRY_IT_OUT);
     let {
         analyticsLocations: W,
         newestAnalyticsLocation: K,
@@ -72,16 +72,16 @@ function M(e) {
     };
     s.useEffect(() => {
         n && S.default.track(O.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: P.e.PREMIUM_PROFILE_TRY_IT_OUT,
+            type: D.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: O.liQ.USER_SETTINGS
             },
             location_stack: Z
         })
     }, [Z, t, n]);
-    let J = (0, u.V)()?.subscription_trial?.sku_id === P.pe.TIER_2,
+    let J = (0, u.V)()?.subscription_trial?.sku_id === D.pe.TIER_2,
         Q = (0, c.O)(),
-        $ = (0, g.U9)(Q, P.pe.TIER_2);
+        $ = (0, g.U9)(Q, D.pe.TIER_2);
     return M ? (0, i.jsx)(d.f5, {
         value: W,
         children: (0, i.jsxs)(v.A, {
@@ -90,7 +90,7 @@ function M(e) {
             type: v.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(f.A, {
+            children: [(0, i.jsx)(C.A, {
                 stickyPreview: !1,
                 layoutClassName: G.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {
@@ -157,7 +157,7 @@ function M(e) {
                 showUpsell: !0,
                 text: L.intl.format(L.t.TmfgI2, {
                     onClick: () => {
-                        (0, x.K)({
+                        (0, h.K)({
                             analyticsSource: K,
                             onSubscribeFinish: q
                         })
@@ -170,9 +170,9 @@ function M(e) {
             }), J && (0, i.jsxs)("div", {
                 children: [(0, i.jsx)("div", {
                     className: G.BU
-                }), (0, i.jsx)(h.Ay, {
-                    type: P.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
-                    subscriptionTier: P.pe.TIER_2
+                }), (0, i.jsx)(x.Ay, {
+                    type: D.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
+                    subscriptionTier: D.pe.TIER_2
                 })]
             })]
         })

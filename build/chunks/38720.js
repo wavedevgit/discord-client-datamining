@@ -1,6 +1,6 @@
 /** chunk id: 38720 params = (module,exports,require) **/
 n.d(t, {
-    R: () => h
+    R: () => x
 });
 var i = n(627968);
 n(64700);
@@ -60,7 +60,7 @@ let m = e => {
             })]
         })
     },
-    h = (e, t, n, h, x) => {
+    x = (e, t, n, x, h) => {
         let p = {
                 0: {
                     label: (0, i.jsx)(m, {
@@ -70,7 +70,7 @@ let m = e => {
                         text: a.Ay.formatPriceString(e, o.WT.MONTH)
                     }),
                     column2: (0, i.jsx)(g, {
-                        text: n ? h : a.Ay.formatPriceString(t, o.WT.MONTH)
+                        text: n ? x : a.Ay.formatPriceString(t, o.WT.MONTH)
                     }),
                     withBottomBorder: !0
                 },
@@ -345,6 +345,6 @@ let m = e => {
                     withBottomBorder: !1
                 }
             },
-            T = x === o.xc.FP_ONLY;
+            T = h === o.xc.FP_ONLY;
         return [p[0], p[1], p[2], p[3], p[4], p[5], p[6], ...T ? [] : [p[7]], p[8], p[9], p[10], p[11], p[12], ...T ? [] : [p[13]], p[14], p[15], p[16], p[17], p[18], p[23], p[24]]
     }

@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(136857),
     g = n(793574),
     A = n(688810),
-    h = n(253390),
-    x = n(166403),
+    x = n(253390),
+    h = n(166403),
     p = n(927578),
     T = n(985018),
     E = n(359294);
@@ -30,7 +30,7 @@ async function S(e, t, n, i) {
     }, (0, p.UC)(s, e.currency, e.paymentSourceId), i)
 }
 
-function C(e) {
+function f(e) {
     let {
         errorMsg: t
     } = e;
@@ -48,7 +48,7 @@ function C(e) {
     })
 }
 
-function f() {
+function C() {
     return (0, i.jsxs)("div", {
         className: E.rf,
         children: [(0, i.jsx)("div", {
@@ -68,16 +68,16 @@ function b(e) {
         analyticsLocations: u
     } = (0, A.Ay)(g.A.GUILD_BOOST_UNCANCELLATION_MODAL);
     s.useEffect(() => {
-        x.A.hasFetchedSubscriptions() || (0, c.hP)()
+        h.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
-    let E = (0, o.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
+    let E = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
         [b, N] = s.useState(1),
         [I, v] = s.useState(!1),
         [j, y] = s.useState(null),
         R = s.useCallback(async () => {
             if (null != E) try {
                 v(!0), y(null);
-                let e = (0, h.v)(E, 1);
+                let e = (0, x.v)(E, 1);
                 a()((0, p.bx)(e) <= (0, p.bx)(E.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await S(E, e, t, u), N(2)
             } catch (t) {
                 let e = t instanceof _.Ey ? t : new _.Ey(t, t.code);
@@ -128,11 +128,11 @@ function b(e) {
                 if (null == E) return (0, i.jsx)(d.y$y, {});
                 switch (b) {
                     case 1:
-                        return (0, i.jsx)(C, {
+                        return (0, i.jsx)(f, {
                             errorMsg: j
                         });
                     case 2:
-                        return (0, i.jsx)(f, {});
+                        return (0, i.jsx)(C, {});
                     default:
                         throw Error(`Unexpected step: ${b}`)
                 }

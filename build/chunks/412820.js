@@ -23,7 +23,7 @@ function g() {
         selectedGuildId: d.A.selectedGuildId,
         canSubmit: d.A.canSubmit(),
         errors: d.A.getErrors(d.A.selectedGuildId)
-    })), [g, A] = s.useState(!1), h = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? m.intl.string(m.t.s35OuK) : null, [n]), x = s.useCallback(async () => {
+    })), [g, A] = s.useState(!1), x = s.useMemo(() => n?.guild_tag !== void 0 && n.guild_tag.length > 0 ? n.guild_tag[0] : Object.keys(n ?? {}).length > 0 ? m.intl.string(m.t.s35OuK) : null, [n]), h = s.useCallback(async () => {
         A(!0);
         let t = d.A.getPendingChanges(e),
             n = (0, r.C5)(t),
@@ -51,9 +51,9 @@ function g() {
     }, []);
     return (0, i.jsx)(a.A, {
         submitting: g,
-        onSave: x,
+        onSave: h,
         onReset: p,
         disabled: !t,
-        errorMessage: h ?? void 0
+        errorMessage: x ?? void 0
     })
 }

@@ -43,11 +43,11 @@ function A() {
                 color: "text-feedback-positive",
                 children: "x1.0"
             }) : e % 1 == 0 ? "" : void 0
-        }), (0, i.jsx)(h, {})]
+        }), (0, i.jsx)(x, {})]
     })
 }
 
-function h() {
+function x() {
     let [e, t] = s.useState(!1);
     return (0, r.l0)(() => (0, c.pr)()), (0, i.jsx)(d.Button, {
         text: m.intl.string(m.t.SKNnqq),

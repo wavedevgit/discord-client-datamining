@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(107834),
     g = n(793574),
     A = n(688810),
-    h = n(86379),
-    x = n(160946),
+    x = n(86379),
+    h = n(160946),
     p = n(459793),
     T = n(726649),
     E = n(611924),
     S = n(351906),
-    C = n(287809),
-    f = n(295405),
+    f = n(287809),
+    C = n(295405),
     b = n(166403),
     N = n(954571),
     I = n(474090),
@@ -31,30 +31,30 @@ var i = n(627968),
     y = n(553081),
     R = n(422936),
     O = n(234419),
-    P = n(558533),
-    D = n(788868),
+    D = n(558533),
+    P = n(788868),
     L = n(652215),
     G = n(615434);
 let M = function(e) {
     let {
-        entrypoint: t = D.Mf.UserSettings
+        entrypoint: t = P.Mf.UserSettings
     } = e;
     (0, E.P)(T.b);
-    let n = (0, h.H)(),
+    let n = (0, x.H)(),
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M
         } = (0, A.Ay)(g.A.PREMIUM_MARKETING),
         U = (0, r.bG)([b.A], () => b.A.hasFetchedSubscriptions()),
-        k = (0, r.bG)([f.A], () => f.A.hasFetchedPaymentSources),
-        V = (0, r.bG)([C.default], () => C.default.getCurrentUser()),
+        k = (0, r.bG)([C.A], () => C.A.hasFetchedPaymentSources),
+        V = (0, r.bG)([f.default], () => f.default.getCurrentUser()),
         w = V?.id,
         B = (0, O.V)(),
         H = (0, R.O)(),
-        F = (0, x.Y)(D.T7),
+        F = (0, h.Y)(P.T7),
         [Y, z] = s.useState(!0),
         X = s.useRef(0),
-        W = (0, I.YE)(V, D.PremiumTypes.TIER_2),
+        W = (0, I.YE)(V, P.PremiumTypes.TIER_2),
         K = (0, r.bG)([v.A], () => v.A.hasFetched);
     s.useEffect(() => {
         K || c.xG()
@@ -72,7 +72,7 @@ let M = function(e) {
         n && (null != B || null != H) && (0, j.u1)(B, H)
     }, [n, B, H]);
     let Z = (0, r.bG)([S.A], () => S.A.enabled),
-        q = t === D.Mf.ApplicationStoreHome,
+        q = t === P.Mf.ApplicationStoreHome,
         J = Z ? (0, i.jsx)(_.A, {}) : n ? (0, i.jsx)(p.uK, {}) : q && W ? (0, i.jsx)(A.f5, {
             value: M,
             children: (0, i.jsx)(y.A, {
@@ -86,7 +86,7 @@ let M = function(e) {
         children: [q && (0, i.jsx)(m.A, {}), J]
     }) : (0, i.jsx)(A.f5, {
         value: M,
-        children: (0, i.jsx)(P.A, {
+        children: (0, i.jsx)(D.A, {
             entrypoint: t
         })
     })

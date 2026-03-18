@@ -1,6 +1,6 @@
 /** chunk id: 965563 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 }), n(667532);
 var i = n(627968),
     s = n(64700),
@@ -19,19 +19,19 @@ let A = {
     value: u.YG
 };
 
-function h() {
+function x() {
     let {
         selectedGuildId: e,
         setSelectedGuildId: t
     } = (0, u.xk)(), n = (0, l.bG)([d.Ay], () => d.Ay.getFlattenedGuildIds()), m = (0, l.bG)([o.A], () => o.A.getGuilds()), {
-        hideGuildOptions: h,
-        hideGlobalOption: x
+        hideGuildOptions: x,
+        hideGlobalOption: h
     } = (0, _.Z)(), p = n[0];
     s.useEffect(() => {
-        x && h || (e === u.YG && e !== p && x && t(p), e !== u.YG && h && t(u.YG))
-    }, [e, t, x, h, p]);
+        h && x || (e === u.YG && e !== p && h && t(p), e !== u.YG && x && t(u.YG))
+    }, [e, t, h, x, p]);
     let T = s.useMemo(() => {
-        let e = h ? [] : n.map(e => {
+        let e = x ? [] : n.map(e => {
             let t = m[e];
             return null == t ? null : {
                 id: t.id,
@@ -45,7 +45,7 @@ function h() {
                 })
             }
         }).filter(c.Vq);
-        return x || e.unshift({
+        return h || e.unshift({
             ...A,
             id: A.value,
             label: A.label(),
@@ -59,7 +59,7 @@ function h() {
                 })
             })
         }), e
-    }, [h, n, x, m]);
+    }, [x, n, h, m]);
     return (0, i.jsx)(a.ZiE, {
         selectionMode: "single",
         onSelectionChange: e => {

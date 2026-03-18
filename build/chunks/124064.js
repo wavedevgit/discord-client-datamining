@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(652215),
     g = n(985018),
     A = n(973746);
-let h = (0, d.Ld)(),
-    x = (0, u.createChannelRecord)({
+let x = (0, d.Ld)(),
+    h = (0, u.createChannelRecord)({
         id: "1",
         type: m.rbe.DM
     }),
@@ -31,33 +31,33 @@ function T(e) {
         placeholder: T,
         currentBio: E,
         disabled: S = !1
-    } = e, [C, f] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(C)), I = s.useRef(E), v = s.useRef(!1);
+    } = e, [f, C] = s.useState(u ?? E), [b, N] = s.useState((0, r.x7)(f)), I = s.useRef(E), v = s.useRef(!1);
     return s.useEffect(() => {
         if (I.current !== E) {
             let e = (0, r.x7)(E);
-            f(E), N(e)
+            C(E), N(e)
         }
         I.current = E
     }, [E]), s.useEffect(() => {
-        void 0 !== u || C === E || v.current || (f(E), N((0, r.x7)(E)))
-    }, [u, E, C]), (0, i.jsxs)(_.A, {
+        void 0 !== u || f === E || v.current || (C(E), N((0, r.x7)(E)))
+    }, [u, E, f]), (0, i.jsxs)(_.A, {
         title: t,
-        titleId: h,
+        titleId: x,
         description: g.intl.string(g.t.Bbw6Ac),
         errors: n,
         disabled: S,
         children: [(0, i.jsx)(o.Ay, {
             "aria-describedby": p,
-            "aria-labelledby": h,
+            "aria-labelledby": x,
             className: A.i,
             innerClassName: A.Z,
             maxCharacterCount: m.NA2,
             onChange: function(e, t, n) {
-                t !== C && (f(t), N(n), d(t))
+                t !== f && (C(t), N(n), d(t))
             },
             placeholder: T,
-            channel: x,
-            textValue: C,
+            channel: h,
+            textValue: f,
             richValue: b,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: c.USER_SETTINGS_MODAL_KEY,

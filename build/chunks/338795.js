@@ -15,28 +15,28 @@ var i = n(934551),
     m = n(402089),
     g = n(281225),
     A = n(935185),
-    h = n(652215),
-    x = n(985018);
+    x = n(652215),
+    h = n(985018);
 let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
-        getTitle: () => x.intl.string(x.t["Vov/9o"]),
+        getTitle: () => h.intl.string(h.t["Vov/9o"]),
         onItemSelect: () => {
-            d.default.track(h.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: A.D.STANDING
             })
         },
         buildLayout: () => [g.Q]
     }),
     T = (0, a.dT)(c.X.ACCOUNT_SECURITY_TAB, {
-        getTitle: () => x.intl.string(x.t.Am9YHi),
+        getTitle: () => h.intl.string(h.t.Am9YHi),
         onItemSelect: () => {
-            d.default.track(h.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
+            d.default.track(x.HAw.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
                 target_tab_name: A.D.SECURITY
             })
         },
         buildLayout: () => [_.P, u.o, m.s]
     }),
     E = (0, a.t_)(c.X.ACCOUNT_PANEL, {
-        useTitle: () => x.intl.string(x.t["JAIM/m"]),
+        useTitle: () => h.intl.string(h.t["JAIM/m"]),
         initialize: function() {
             let e = o.default.getCurrentUser();
             return null != e && (0, r.A)(e.id, e.getAvatarURL(void 0, 80)), () => {
@@ -47,7 +47,7 @@ let p = (0, a.dT)(c.X.ACCOUNT_STANDING_TAB, {
         buildLayout: () => [T, p]
     }),
     S = (0, a.i4)(c.X.ACCOUNT_SIDEBAR_ITEM, {
-        useTitle: () => x.intl.string(x.t["JAIM/m"]),
+        useTitle: () => h.intl.string(h.t["JAIM/m"]),
         icon: i.UserIcon,
         buildLayout: () => [E]
     })

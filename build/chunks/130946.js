@@ -1,7 +1,7 @@
 /** chunk id: 130946 params = (module,exports,require) **/
 n.d(t, {
     A: () => b,
-    c: () => f
+    c: () => C
 });
 var i, s = n(627968);
 n(64700);
@@ -16,14 +16,14 @@ var l = n(503698),
     m = n(40185),
     g = n(396375),
     A = n(788868),
-    h = n(652215),
-    x = n(985018),
+    x = n(652215),
+    h = n(985018),
     p = n(816128),
     T = n(137815),
     E = n(967521),
     S = n(767032),
-    C = n(990521),
-    f = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
+    f = n(990521),
+    C = ((i = {}).SUBSCRIBER_HOME = "SUBSCRIBER_HOME", i.NITRO_SETTINGS = "SETTINGS", i.APPLICATION_NITRO_HOME = "APPLICATION_NITRO_HOME", i);
 let b = function(e) {
     let {
         variant: t
@@ -42,7 +42,7 @@ let b = function(e) {
                 children: (0, s.jsx)(o.Text, {
                     variant: "eyebrow",
                     color: "always-white",
-                    children: x.intl.string(x.t.OS9KPu)
+                    children: h.intl.string(h.t.OS9KPu)
                 })
             }), (0, s.jsxs)("div", {
                 className: p.IH,
@@ -50,17 +50,17 @@ let b = function(e) {
                     className: p.U_,
                     variant: "heading-xxl/extrabold",
                     color: "text-strong",
-                    children: x.intl.string(x.t["+5UxML"])
+                    children: h.intl.string(h.t["+5UxML"])
                 }), (0, s.jsx)(o.Text, {
                     className: p._M,
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: x.intl.format(x.t["lVOH/p"], {
-                        helpCenterLink: _.A.getArticleURL(h.MVz.SUMMER_BOGO_2025)
+                    children: h.intl.format(h.t["lVOH/p"], {
+                        helpCenterLink: _.A.getArticleURL(x.MVz.SUMMER_BOGO_2025)
                     })
                 }), (0, s.jsx)(g.A, {
                     textOptions: {
-                        textOverride: x.intl.string(x.t.J61px0),
+                        textOverride: h.intl.string(h.t.J61px0),
                         textClassName: p.cZ
                     },
                     subscriptionTier: A.pe.TIER_2,
@@ -94,17 +94,17 @@ let b = function(e) {
                     className: p.U_,
                     variant: "heading-lg/extrabold",
                     color: "text-strong",
-                    children: x.intl.string(x.t["+5UxML"])
+                    children: h.intl.string(h.t["+5UxML"])
                 }), (0, s.jsx)(o.Text, {
                     className: p._M,
                     variant: "text-sm/medium",
                     color: "text-subtle",
-                    children: x.intl.format(x.t["lVOH/p"], {
-                        helpCenterLink: _.A.getArticleURL(h.MVz.SUMMER_BOGO_2025)
+                    children: h.intl.format(h.t["lVOH/p"], {
+                        helpCenterLink: _.A.getArticleURL(x.MVz.SUMMER_BOGO_2025)
                     })
                 }), (0, s.jsx)(g.A, {
                     textOptions: {
-                        textOverride: x.intl.string(x.t.J61px0),
+                        textOverride: h.intl.string(h.t.J61px0),
                         textClassName: p.cZ
                     },
                     subscriptionTier: A.pe.TIER_2,
@@ -116,7 +116,7 @@ let b = function(e) {
                 className: p.m0,
                 children: (0, s.jsx)("img", {
                     alt: "",
-                    src: C.A,
+                    src: f.A,
                     className: p.$V
                 })
             })]
@@ -136,13 +136,13 @@ let b = function(e) {
                 className: p.U_,
                 variant: "heading-md/extrabold",
                 color: "text-strong",
-                children: x.intl.string(x.t["+5UxML"])
+                children: h.intl.string(h.t["+5UxML"])
             }), (0, s.jsx)(o.Text, {
                 className: p._M,
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: x.intl.format(x.t["lVOH/p"], {
-                    helpCenterLink: _.A.getArticleURL(h.MVz.SUMMER_BOGO_2025)
+                children: h.intl.format(h.t["lVOH/p"], {
+                    helpCenterLink: _.A.getArticleURL(x.MVz.SUMMER_BOGO_2025)
                 })
             })]
         }), (0, s.jsx)(g.A, {

@@ -15,27 +15,27 @@ var i = n(627968),
     m = n(975571),
     g = n(474090),
     A = n(181079),
-    h = n(422258),
-    x = n(668267),
+    x = n(422258),
+    h = n(668267),
     p = n(93055),
     T = n(652215),
     E = n(788868),
     S = n(665606),
-    C = n(985018);
-let f = m.A.getArticleURL(T.MVz.FAVORITES_GUILD);
+    f = n(985018);
+let C = m.A.getArticleURL(T.MVz.FAVORITES_GUILD);
 
 function b() {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(r.A.USER_SETTINGS_FAVORITES), t = s.useCallback(() => {
-        (0, x.mv)("settings_page"), (0, c.uh)(T.YYv), (0, u.default)()
+        (0, h.mv)("settings_page"), (0, c.uh)(T.YYv), (0, u.default)()
     }, []);
     return (0, i.jsx)(o.f5, {
         value: e,
         children: (0, i.jsx)(a.D0$, {
-            label: C.intl.string(S.default.OT1NK5),
-            description: C.intl.format(S.default.GR2KOG, {
-                helpCenterLink: f
+            label: f.intl.string(S.default.OT1NK5),
+            description: f.intl.format(S.default.GR2KOG, {
+                helpCenterLink: C
             }),
             layout: "horizontal-responsive",
             badge: "beta",
@@ -45,11 +45,11 @@ function b() {
                 fullWidth: !1,
                 children: [(0, i.jsx)(a.Button, {
                     variant: "secondary",
-                    text: C.intl.string(S.default["7WwLnr"]),
+                    text: f.intl.string(S.default["7WwLnr"]),
                     onClick: t
                 }), (0, i.jsx)(d.A, {
                     subscriptionTier: E.pe.TIER_2,
-                    defaultTextOverride: C.intl.string(S.default["20sYUU"])
+                    defaultTextOverride: f.intl.string(S.default["20sYUU"])
                 })]
             })
         })
@@ -64,15 +64,15 @@ function N() {
         }),
         n = (0, p.DZ)(),
         r = s.useCallback(e => {
-            (0, h.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
+            (0, x.tV)(e, "settings_page"), !e && n && (0, c.pX)(T.BVt.ME)
         }, [n]);
     return t ? (0, i.jsx)(a.dOG, {
         checked: e,
-        description: C.intl.format(S.default.GR2KOG, {
-            helpCenterLink: f
+        description: f.intl.format(S.default.GR2KOG, {
+            helpCenterLink: C
         }),
         onChange: r,
-        label: C.intl.string(S.default.OT1NK5),
+        label: f.intl.string(S.default.OT1NK5),
         badge: "beta"
     }) : (0, i.jsx)(b, {})
 }

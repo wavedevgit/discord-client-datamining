@@ -20,9 +20,9 @@ let A = function(e) {
         isVisible: t,
         premiumSubscription: s,
         churnDiscountOffer: A,
-        discountedPrice: h
+        discountedPrice: x
     } = e, {
-        analyticsLocations: x
+        analyticsLocations: h
     } = (0, d.Ay)(o.A.CHURN_DISCOUNT_PERSISTENT_CTA), p = (0, r.zhh)({
         transform: t ? "translateY(-100%)" : "translateY(0%)",
         opacity: +!!t,
@@ -55,7 +55,7 @@ let A = function(e) {
                     color: "text-default",
                     children: _.intl.format(_.t["3Q4wCy"], {
                         numMonths: A.discount.user_usage_limit,
-                        discountedPrice: h,
+                        discountedPrice: x,
                         billingPeriod: (0, c.Ke)(A.discount.user_usage_limit_interval)
                     })
                 })]
@@ -71,7 +71,7 @@ let A = function(e) {
                     return t => (0, i.jsx)(e, {
                         ...t,
                         premiumSubscription: s,
-                        analyticsLocations: x,
+                        analyticsLocations: h,
                         initialStep: u.g.CONFIRM_DISCOUNT
                     })
                 })

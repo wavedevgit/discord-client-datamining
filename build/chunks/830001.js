@@ -15,20 +15,20 @@ var i = n(627968),
     m = n(933297),
     g = n(836602),
     A = n(854627),
-    h = n(287809),
-    x = n(780964),
+    x = n(287809),
+    h = n(780964),
     p = n(633817),
     T = n(652215),
     E = n(985018),
     S = n(722125);
-let C = [{
+let f = [{
         badgeType: m.Xi.NEW,
         dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE
     }, {
         badgeType: m.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
-    f = (0, _.t_)(x.X.PROFILE_PANEL, {
+    C = (0, _.t_)(h.X.PROFILE_PANEL, {
         useTitle: () => E.intl.string(E.t["vi7f+q"]),
         notice: {
             stores: [g.A],
@@ -39,10 +39,10 @@ let C = [{
         }),
         buildLayout: () => [p.I]
     }),
-    b = (0, _.i4)(x.X.PROFILE_SIDEBAR_ITEM, {
+    b = (0, _.i4)(h.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => E.intl.string(E.t["vi7f+q"]),
         icon: function() {
-            let e = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
+            let e = (0, l.bG)([x.default], () => x.default.getCurrentUser()),
                 {
                     avatarSrc: t,
                     avatarDecorationSrc: n
@@ -58,7 +58,7 @@ let C = [{
             })
         },
         StronglyDiscouragedCustomComponent: () => {
-            let e = (0, l.bG)([h.default], () => h.default.getCurrentUser()),
+            let e = (0, l.bG)([x.default], () => x.default.getCurrentUser()),
                 {
                     avatarSrc: t,
                     avatarDecorationSrc: n
@@ -95,6 +95,6 @@ let C = [{
                 })]
             })
         },
-        getDismissibleBadges: () => C,
-        buildLayout: () => [f]
+        getDismissibleBadges: () => f,
+        buildLayout: () => [C]
     })

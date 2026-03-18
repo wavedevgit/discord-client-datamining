@@ -1,6 +1,6 @@
 /** chunk id: 687021 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 }), n(667532);
 var i = n(627968),
     s = n(64700),
@@ -15,9 +15,9 @@ var i = n(627968),
     m = n(711014),
     g = n(403362),
     A = n(985018),
-    h = n(306505);
+    x = n(306505);
 
-function x(e) {
+function h(e) {
     let {
         guildId: t,
         className: n,
@@ -27,7 +27,7 @@ function x(e) {
         renderOptionSuffix: o
     } = e;
     return (0, i.jsx)(c.A, {
-        className: a()(h.u, n),
+        className: a()(x.u, n),
         title: A.intl.string(A.t.ref7Ki),
         hideDivider: l,
         forcedDivider: !0,
@@ -46,8 +46,8 @@ function p(e) {
         globalOption: n,
         onChange: l,
         renderOptionSuffix: a
-    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), x = (0, r.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), p = (0, r.bG)([_.A], () => _.A.getGuilds()), T = s.useMemo(() => {
-        let e = x.map(e => {
+    } = e, c = (0, r.bG)([u.A], () => u.A.showNotice()), h = (0, r.bG)([m.Ay], () => m.Ay.getFlattenedGuildIds()), p = (0, r.bG)([_.A], () => _.A.getGuilds()), T = s.useMemo(() => {
+        let e = h.map(e => {
             let t = p[e];
             return null == t ? null : {
                 label: t.name,
@@ -55,10 +55,10 @@ function p(e) {
             }
         }).filter(g.Vq);
         return null != n && e.unshift(n), e
-    }, [x, p, n]), E = s.useCallback(e => {
+    }, [h, p, n]), E = s.useCallback(e => {
         let t = e?.label === n?.label && e?.value === n?.value;
         return null == e || "" === e.value || t ? null : (0, i.jsx)(d.Ay, {
-            className: h.c,
+            className: x.c,
             guild: p[e.value],
             size: d.Ay.Sizes.SMOL,
             active: !0

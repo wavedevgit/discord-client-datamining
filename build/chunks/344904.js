@@ -1,7 +1,7 @@
 /** chunk id: 344904 params = (module,exports,require) **/
 n.d(t, {
     Ay: () => p,
-    BN: () => h
+    BN: () => x
 });
 var i, s = n(627968),
     l = n(64700),
@@ -15,8 +15,8 @@ var i, s = n(627968),
     m = n(468052),
     g = n(769411),
     A = n(242142),
-    h = ((i = {})[i.NITRO_GEM = 0] = "NITRO_GEM", i[i.NITRO_LOGO = 1] = "NITRO_LOGO", i[i.AVATAR_DECO = 2] = "AVATAR_DECO", i);
-let x = e => {
+    x = ((i = {})[i.NITRO_GEM = 0] = "NITRO_GEM", i[i.NITRO_LOGO = 1] = "NITRO_LOGO", i[i.AVATAR_DECO = 2] = "AVATAR_DECO", i);
+let h = e => {
         let {
             avatarDecorationLegacyAssetId: t,
             avatarDecorationSkuId: n,
@@ -48,13 +48,13 @@ let x = e => {
             progressCircleStrokeSize: a,
             backgroundCircleSize: d,
             percentage: u,
-            initialPercentage: h,
+            initialPercentage: x,
             progressCircleVariation: p = 0,
             avatarDecorationLegacyAssetId: T,
             avatarDecorationSkuId: E,
             avatarDecoAssetDescription: S,
-            ellipseOpacity: C,
-            customAnimationClassName: f,
+            ellipseOpacity: f,
+            customAnimationClassName: C,
             circleColor: b,
             circleStroke: N
         } = e, I = (0, o.bG)([c.A], () => c.A.useReducedMotion), v = t && !I;
@@ -63,12 +63,12 @@ let x = e => {
             children: (0, s.jsx)(g.A, {
                 animationClassName: r()(A._0, {
                     [A.uJ]: v,
-                    [f ?? ""]: v
+                    [C ?? ""]: v
                 }),
                 progressCircleStroke: N,
                 progressCircleStrokeSize: a,
                 percentage: i ?? u,
-                initialPercentage: i ?? h,
+                initialPercentage: i ?? x,
                 progressCircleVariation: p,
                 children: (() => {
                     switch (p) {
@@ -81,10 +81,10 @@ let x = e => {
                         case 1:
                             return (0, s.jsx)(m.A, {
                                 circleColor: b,
-                                ellipseOpacity: C
+                                ellipseOpacity: f
                             });
                         case 2:
-                            if (null != E) return (0, s.jsx)(x, {
+                            if (null != E) return (0, s.jsx)(h, {
                                 avatarDecorationLegacyAssetId: T,
                                 avatarDecorationSkuId: E,
                                 avatarDecoAssetDescription: S

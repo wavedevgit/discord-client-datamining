@@ -1,6 +1,6 @@
 /** chunk id: 119762 params = (module,exports,require) **/
 n.d(t, {
-    Af: () => f,
+    Af: () => C,
     Ay: () => b,
     Ob: () => S,
     jH: () => E
@@ -18,8 +18,8 @@ var i = n(627968),
     m = n(791606),
     g = n(403362),
     A = n(780964),
-    h = n(740625),
-    x = n(840065),
+    x = n(740625),
+    h = n(840065),
     p = n(985018),
     T = n(928344);
 
@@ -47,7 +47,7 @@ function S() {
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         checked: t,
         otherSessions: n
@@ -72,7 +72,7 @@ function C(e) {
     })
 }
 
-function f() {
+function C() {
     let {
         currentSession: e,
         otherSessions: t
@@ -91,7 +91,7 @@ function f() {
             }, e.id_hash)), n?.mfaEnabled ? null : (0, i.jsx)(I, {})]
         }), t.length > 0 && (0, i.jsx)("div", {
             className: T.wq,
-            children: (0, i.jsx)(C, {
+            children: (0, i.jsx)(f, {
                 checked: l,
                 otherSessions: t
             })
@@ -102,12 +102,12 @@ function f() {
 function b() {
     return s.useEffect(() => ((0, c.GY)(), () => {
         (0, c.ZQ)()
-    }), []), (0, i.jsxs)(h.R, {
+    }), []), (0, i.jsxs)(x.R, {
         header: p.intl.string(p.t["+1h0k/"]),
         children: [(0, i.jsx)(E, {}), (0, i.jsxs)(o.BJc, {
             gap: 24,
             className: T.Mf,
-            children: [(0, i.jsx)(S, {}), (0, i.jsx)(f, {})]
+            children: [(0, i.jsx)(S, {}), (0, i.jsx)(C, {})]
         })]
     })
 }
@@ -144,7 +144,7 @@ function N(e) {
                     text: e, icon: o.kN9
                 }
         }
-    }(t.client_info?.os), h = n ? null : (0, u.Y)(t.approx_last_used_time), x = [m, _].filter(g.Vq), E = [d, h].filter(g.Vq);
+    }(t.client_info?.os), x = n ? null : (0, u.Y)(t.approx_last_used_time), h = [m, _].filter(g.Vq), E = [d, x].filter(g.Vq);
     return (0, i.jsxs)("div", {
         className: a()(T.dZ, {
             [T.gg]: n
@@ -163,12 +163,12 @@ function N(e) {
                     variant: "eyebrow",
                     className: T.nT,
                     children: [(0, i.jsx)("span", {
-                        children: x[0]
-                    }), x.length > 1 && (0, i.jsxs)(i.Fragment, {
+                        children: h[0]
+                    }), h.length > 1 && (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)("span", {
                             children: "\xb7"
                         }), (0, i.jsx)("span", {
-                            children: x[1]
+                            children: h[1]
                         })]
                     })]
                 }), (0, i.jsxs)(o.Text, {
@@ -235,7 +235,7 @@ function I() {
                     color: "text-muted",
                     children: (0, i.jsx)("span", {
                         children: p.intl.format(p.t["044+8i"], {
-                            onClick: () => (0, x.openUserSettings)(A.X.ACCOUNT_PANEL, {
+                            onClick: () => (0, h.openUserSettings)(A.X.ACCOUNT_PANEL, {
                                 analyticsLocations: [d.A.USER_SETTINGS_SESSIONS]
                             })
                         })

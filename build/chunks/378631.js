@@ -1,6 +1,6 @@
 /** chunk id: 378631 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968),
     s = n(64700),
@@ -16,12 +16,12 @@ var i = n(627968),
     g = n(531525),
     A = n(985018);
 
-function h() {
+function x() {
     let e = (0, d.hT)(),
         t = (0, u.A)() ?? !0,
         n = (0, o.sP)(),
-        h = (0, r.yM)(),
-        x = s.useMemo(() => (!n || !!h) && !t, [n, t, h]),
+        x = (0, r.yM)(),
+        h = s.useMemo(() => (!n || !!x) && !t, [n, t, x]),
         p = s.useCallback(e => {
             n && e ? l.A.showAgeVerificationGetStartedModal({
                 entryPoint: a.q1.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
@@ -34,7 +34,7 @@ function h() {
             onChange: p,
             title: A.intl.string(A.t.XahVjj),
             note: A.intl.string(A.t.R9fXyS),
-            disabled: x
+            disabled: h
         })
     })
 }

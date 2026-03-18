@@ -1,15 +1,15 @@
 /** chunk id: 112469 params = (module,exports,require) **/
-E.d(t, {
+e.d(_, {
     Tx: () => T,
     q9: () => n
 });
-var e = E(311907),
-    A = E(71393),
-    I = E(612025),
-    S = E(652215);
+var E = e(311907),
+    A = e(71393),
+    I = e(612025),
+    S = e(652215);
 let T = () => (0, I.xk)().selectedGuildId,
     n = () => {
-        let _ = T(),
-            t = (0, e.bG)([A.A], () => A.A.getGuild(_));
-        return t?.features.has(S.GuildFeatures.HUB) ?? !1
+        let t = T(),
+            _ = (0, E.bG)([A.A], () => A.A.getGuild(t));
+        return _?.features.has(S.GuildFeatures.HUB) ?? !1
     }

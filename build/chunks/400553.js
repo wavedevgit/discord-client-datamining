@@ -1,6 +1,6 @@
 /** chunk id: 400553 params = (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => x
 });
 var i = n(627968);
 n(64700);
@@ -16,7 +16,7 @@ var s = n(417597),
     m = n(842130),
     g = n(985018),
     A = n(721757);
-let h = () => {
+let x = () => {
     let e = (0, s.bG)([r.A], () => r.A.getTopUserActivities()),
         t = (0, s.bG)([r.A], () => r.A.getTopGuildActivities());
     return 0 === e.length && 0 === t.length ? null : (0, i.jsxs)("div", {

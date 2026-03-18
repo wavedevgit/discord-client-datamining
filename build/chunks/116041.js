@@ -1,6 +1,6 @@
 /** chunk id: 116041 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968),
     s = n(64700),
@@ -15,17 +15,17 @@ var i = n(627968),
     m = n(253932),
     g = n(127870),
     A = n(828578),
-    h = n(985018);
+    x = n(985018);
 
-function x() {
+function h() {
     let {
         canSubmit: e,
         errors: t
     } = (0, l.cf)([u.A], () => ({
         canSubmit: u.A.canSubmit(),
         errors: u.A.getErrors()
-    })), [n, x] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? h.intl.string(h.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
-        x(!0);
+    })), [n, h] = s.useState(!1), p = s.useMemo(() => Object.keys(t ?? {}).length > 0 ? x.intl.string(x.t["84MExs"]) : null, [t]), T = s.useCallback(async () => {
+        h(!0);
         let e = u.A.getPendingChanges(),
             t = (0, d.Sk)(e),
             n = (0, d.yX)(e),
@@ -60,7 +60,7 @@ function x() {
                 s = s && (t?.ok ?? !1), t?.ok ? (0, r.fw)() : (0, g.m)()
             }
         }
-        s && (0, r.x8)(), x(!1)
+        s && (0, r.x8)(), h(!1)
     }, []), E = s.useCallback(() => {
         (0, r.IM)()
     }, []);

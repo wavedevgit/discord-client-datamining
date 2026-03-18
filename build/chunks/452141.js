@@ -1,6 +1,6 @@
 /** chunk id: 452141 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => h
 });
 var i = n(627968);
 n(64700);
@@ -16,21 +16,21 @@ var s = n(417597),
     m = n(483706),
     g = n(842130),
     A = n(985018),
-    h = n(121277);
-let x = () => {
+    x = n(121277);
+let h = () => {
     let e = (0, o.vx)().length > 0,
         t = (0, s.bG)([a.default], () => a.default.getCurrentUser()),
         n = (0, r.y)(A.intl.string(g.default["5RZ8Tq"]), A.intl.string(g.default.bmhCnL)),
-        x = (0, r.y)(A.intl.string(g.default.XKnFFq), A.intl.string(g.default["68zfxD"])),
+        h = (0, r.y)(A.intl.string(g.default.XKnFFq), A.intl.string(g.default["68zfxD"])),
         p = (0, r.y)(A.intl.string(g.default["Rm/6a0"]), A.intl.string(g.default["1xPTwE"]));
     return void 0 === t ? null : (0, i.jsxs)("div", {
-        className: h.kL,
+        className: x.kL,
         children: [e ? null : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
-                className: h.vK,
+                className: x.vK,
                 children: (0, i.jsx)(d.A, {})
             }), (0, i.jsxs)("div", {
-                className: h.yk,
+                className: x.yk,
                 children: [(0, i.jsx)(_.A, {
                     icon: l.MBj,
                     header: A.intl.string(g.default["001l3m"]),
@@ -38,7 +38,7 @@ let x = () => {
                 }), (0, i.jsx)(_.A, {
                     icon: l.bMW,
                     header: A.intl.string(g.default.yipAeP),
-                    description: x
+                    description: h
                 }), (0, i.jsx)(_.A, {
                     icon: l.yVk,
                     header: A.intl.string(g.default.hhOuMe),

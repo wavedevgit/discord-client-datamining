@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(160761),
     g = n(954571),
     A = n(543233),
-    h = n(29570),
-    x = n(975662),
+    x = n(29570),
+    h = n(975662),
     p = n(322631),
     T = n(784356),
     E = n(452910),
     S = n(652215),
-    C = n(49999),
-    f = n(985018),
+    f = n(49999),
+    C = n(985018),
     b = n(296388);
 let N = s.memo(e => {
     let {
@@ -31,12 +31,12 @@ let N = s.memo(e => {
         dismissibleContentType: l,
         forceShadow: A,
         cardType: T
-    } = e, E = e?.onCtaClick, v = (0, d.bG)([u.A], () => u.A.useReducedMotion), [j, y] = s.useState(!1), [R, O] = s.useState(!1), P = T === p.cJ.CARD_CAROUSEL_FIRST_ROW || T === p.cJ.CARD_CAROUSEL_SECOND_ROW || T === p.cJ.CARD_CAROUSEL_THIRD_ROW, D = (0, x.A)(), [L, G] = (0, m.DP)(null != l && n ? [l] : []), {
+    } = e, E = e?.onCtaClick, v = (0, d.bG)([u.A], () => u.A.useReducedMotion), [j, y] = s.useState(!1), [R, O] = s.useState(!1), D = T === p.cJ.CARD_CAROUSEL_FIRST_ROW || T === p.cJ.CARD_CAROUSEL_SECOND_ROW || T === p.cJ.CARD_CAROUSEL_THIRD_ROW, P = (0, h.A)(), [L, G] = (0, m.DP)(null != l && n ? [l] : []), {
         easterEggLevel: M,
         isEasterEggTriggered: U,
         onHover: k,
         onUnhover: V
-    } = (0, h.A)(5), w = s.useMemo(() => (0, r.debounce)(() => {
+    } = (0, x.A)(5), w = s.useMemo(() => (0, r.debounce)(() => {
         g.default.track(S.HAw.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
             card_type: (0, r.snakeCase)(t)
         })
@@ -57,14 +57,14 @@ let N = s.memo(e => {
     return (s.useEffect(() => {
         v && j && (O(!0), g.default.track(S.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
-        }), null != l && G(C.i.TAKE_ACTION))
+        }), null != l && G(f.i.TAKE_ACTION))
     }, [v, j, l, t, G]), (0, _.A)({
         type: o.ImpressionTypes.VIEW,
         name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
         properties: {
             name: t
         }
-    }), n) ? t === x.U.UPCOMING_DROP_UNTIMED ? (0, i.jsx)("div", {
+    }), n) ? t === h.U.UPCOMING_DROP_UNTIMED ? (0, i.jsx)("div", {
         className: b.iQ,
         onMouseEnter: k,
         onFocus: k,
@@ -100,8 +100,8 @@ let N = s.memo(e => {
         className: b.iQ,
         children: (0, i.jsx)("div", {
             className: a()({
-                [b.u9]: !P,
-                [b.E$]: P,
+                [b.u9]: !D,
+                [b.E$]: D,
                 [b.sT]: A,
                 [b.VN]: v
             }),
@@ -125,7 +125,7 @@ let N = s.memo(e => {
                 onTransitionEnd: e => {
                     j && "transform" === e.propertyName && e.target.classList.contains(b.Ci) && (O(!0), g.default.track(S.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
                         card_type: t
-                    }), null != l && G(C.i.TAKE_ACTION))
+                    }), null != l && G(f.i.TAKE_ACTION))
                 },
                 children: [(0, i.jsx)("div", {
                     className: b.UF,
@@ -136,7 +136,7 @@ let N = s.memo(e => {
                 }), (0, i.jsx)("div", {
                     className: b.He,
                     children: (0, i.jsx)(I, {
-                        ...D.upcomingDropUntimed,
+                        ...P.upcomingDropUntimed,
                         pillText: ""
                     })
                 }), (0, i.jsx)("div", {
@@ -149,14 +149,14 @@ let N = s.memo(e => {
                     className: b.Z7,
                     children: (0, i.jsx)(c.Button, {
                         variant: "primary",
-                        text: f.intl.string(f.t.dcztdU),
+                        text: C.intl.string(C.t.dcztdU),
                         onClick: () => y(!0)
                     })
                 })]
             })
         })
     }) : (0, i.jsx)(N, {
-        ...D.upcomingDropUntimed,
+        ...P.upcomingDropUntimed,
         forceShadow: A
     })
 });
@@ -173,29 +173,29 @@ let I = s.forwardRef((e, t) => {
         onCtaClick: _,
         onMouseEnter: m,
         className: g,
-        perkComponent: h,
-        cardVariant: x,
+        perkComponent: x,
+        cardVariant: h,
         cardType: S,
-        onClick: C,
-        backgroundImage: f,
+        onClick: f,
+        backgroundImage: C,
         pillText: N,
         perkImage: I,
         imageOverlayText: v,
         hasNitroGradientBackground: j
-    } = e, y = S === p.cJ.CARD_CAROUSEL_FIRST_ROW || S === p.cJ.CARD_CAROUSEL_SECOND_ROW || S === p.cJ.CARD_CAROUSEL_THIRD_ROW, R = null != r || null != o, O = (0, A.Q)(x);
+    } = e, y = S === p.cJ.CARD_CAROUSEL_FIRST_ROW || S === p.cJ.CARD_CAROUSEL_SECOND_ROW || S === p.cJ.CARD_CAROUSEL_THIRD_ROW, R = null != r || null != o, O = (0, A.Q)(h);
     return (0, i.jsxs)(c.DUT, {
         className: a()(b.Nr, g, O.cardContainer?.className, {
-            [b.vk]: null != C,
+            [b.vk]: null != f,
             [b.JP]: y,
             [b.NT]: j
         }),
         onMouseEnter: m,
         style: {
-            backgroundImage: null != f ? `url(${f})` : void 0,
-            backgroundPosition: null != f ? "bottom right" : void 0,
-            backgroundRepeat: null != f ? "no-repeat" : void 0
+            backgroundImage: null != C ? `url(${C})` : void 0,
+            backgroundPosition: null != C ? "bottom right" : void 0,
+            backgroundRepeat: null != C ? "no-repeat" : void 0
         },
-        onClick: C,
+        onClick: f,
         children: [null != N && (0, i.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: b.Io,
@@ -211,9 +211,9 @@ let I = s.forwardRef((e, t) => {
             descriptionCta: o,
             customContent: d,
             onCtaClick: _,
-            perkComponent: h,
+            perkComponent: x,
             subtitleClassName: b.Dc,
-            cardVariant: x,
+            cardVariant: h,
             imageOverlayText: v
         }), R && (0, i.jsx)(E.A, {
             title: n,
@@ -223,8 +223,8 @@ let I = s.forwardRef((e, t) => {
             descriptionCta: o,
             isPremiumGetCta: u,
             onCtaClick: _,
-            cardVariant: x,
-            perkComponent: h
+            cardVariant: h,
+            perkComponent: x
         }), (0, i.jsx)("div", {
             className: a()(b.Iv, b.G1),
             ref: t

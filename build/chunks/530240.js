@@ -16,15 +16,15 @@ var i = n(627968),
     m = n(473145),
     g = n(927578),
     A = n(661191),
-    h = n(101135),
-    x = n(708030),
+    x = n(101135),
+    h = n(708030),
     p = n(358172),
     T = n(652215),
     E = n(788868),
     S = n(985018),
-    C = n(325234);
+    f = n(325234);
 
-function f(e) {
+function C(e) {
     let {
         guildTier: t,
         guildBoostSlot: n,
@@ -78,7 +78,7 @@ function f(e) {
         }
     }, "animate-always");
     return o || t === T.TVA.NONE ? (0, i.jsx)("div", {
-        className: C.xm,
+        className: f.xm,
         children: (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -86,7 +86,7 @@ function f(e) {
         })
     }) : m((e, t) => (0, i.jsx)(l.animated.div, {
         style: e,
-        className: C.xm,
+        className: f.xm,
         children: (0, i.jsx)(r.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -105,19 +105,19 @@ function b(e) {
         isLastGuildBoostSlot: g
     } = e, A = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = s.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), T = s.useMemo(() => null != p && p > new Date, [p]), E = (0, m.I5)(n), b = (0, d.A)(), N = s.useRef(null);
     return (0, i.jsxs)("div", {
-        className: C.PW,
+        className: f.PW,
         children: [(0, i.jsxs)("div", {
-            className: C.$U,
-            children: [(0, i.jsx)(x.A, {
+            className: f.$U,
+            children: [(0, i.jsx)(h.A, {
                 isCanceled: E,
                 hasCooldown: T,
                 useReducedMotion: A
             }), (0, i.jsx)("div", {
-                className: C.vh,
-                children: null != p && T && !E ? (0, i.jsx)(h.A, {
-                    className: C.xm,
+                className: f.vh,
+                children: null != p && T && !E ? (0, i.jsx)(x.A, {
+                    className: f.xm,
                     cooldown: p.getTime()
-                }) : (0, i.jsx)(f, {
+                }) : (0, i.jsx)(C, {
                     guildTier: t,
                     guildBoostSlot: n,
                     showAltText: _,
@@ -145,7 +145,7 @@ function b(e) {
                     ...e,
                     innerRef: N,
                     "aria-label": S.intl.string(S.t.PdRCRg),
-                    className: C.oU,
+                    className: f.oU,
                     children: (0, i.jsx)(r.FHP, {
                         size: "md",
                         color: "currentColor"
@@ -153,7 +153,7 @@ function b(e) {
                 })
             })]
         }), !g && (0, i.jsx)("div", {
-            className: C.eX
+            className: f.eX
         })]
     })
 }
@@ -167,7 +167,7 @@ function N(e) {
         showAltText: r
     } = e, o = (0, a.bG)([_.A], () => _.A.getGuild(t), [t]);
     return (0, i.jsxs)("div", {
-        className: C.ag,
+        className: f.ag,
         children: [(0, i.jsx)(p.A, {
             guildId: t,
             boostingVariant: !1
@@ -202,7 +202,7 @@ function I(e) {
         cooldown_ends_at: null
     }, s);
     return (0, i.jsxs)("div", {
-        className: C.ag,
+        className: f.ag,
         children: [(0, i.jsx)(p.A, {
             guildId: t,
             boostingVariant: !1
@@ -229,16 +229,16 @@ function v(e) {
         }), e
     }, [t]);
     return null == n || 0 === t.length ? null : (0, i.jsxs)("div", {
-        className: C.iE,
+        className: f.iE,
         children: [(0, i.jsx)("div", {
-            className: C.kL,
+            className: f.kL,
             children: A.default.keys(l).map(e => (0, i.jsx)(I, {
                 guildId: e,
                 premiumSubscription: n,
                 appliedGuildBoosts: l[e]
             }, e))
         }), (0, i.jsx)("div", {
-            className: C.vK
+            className: f.vK
         })]
     })
 }
@@ -276,9 +276,9 @@ function j(e) {
     if (null == n || 0 === Object.keys(r).length) return null;
     let d = o > g.Ay.getNumIncludedPremiumGuildSubscriptionSlots(n.planId);
     return (0, i.jsxs)("div", {
-        className: C.iE,
+        className: f.iE,
         children: [(0, i.jsx)("div", {
-            className: C.kL,
+            className: f.kL,
             children: A.default.keys(r).map(e => (0, i.jsx)(N, {
                 guildId: e,
                 guildBoostSlotRecords: r[e],
@@ -287,7 +287,7 @@ function j(e) {
                 showAltText: l
             }, e))
         }), (0, i.jsx)("div", {
-            className: C.vK
+            className: f.vK
         })]
     })
 }

@@ -15,14 +15,14 @@ var i = n(627968),
     m = n(682262),
     g = n(694202),
     A = n(50847),
-    h = n(606275),
-    x = n(879545),
+    x = n(606275),
+    h = n(879545),
     p = n(49999),
     T = n(985018),
     E = n(696952),
     S = n(130324),
-    C = n(966040);
-let f = (0, c.t_)(_.X.OVERLAY_PANEL, {
+    f = n(966040);
+let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         decoration: {
             type: u.t9.STRONGLY_DISCOURAGED_CUSTOM,
@@ -54,7 +54,7 @@ let f = (0, c.t_)(_.X.OVERLAY_PANEL, {
                             })
                         }), (0, i.jsx)("div", {
                             children: (0, i.jsx)("img", {
-                                src: C.A,
+                                src: f.A,
                                 alt: T.intl.string(T.t.mdXZh1),
                                 className: E.lh
                             })
@@ -73,11 +73,11 @@ let f = (0, c.t_)(_.X.OVERLAY_PANEL, {
                 })
             }
         },
-        buildLayout: () => [g.u, A.X, x.D, h.h]
+        buildLayout: () => [g.u, A.X, h.D, x.h]
     }),
     b = (0, c.i4)(_.X.OVERLAY_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
         usePredicate: m.b_,
-        buildLayout: () => [f]
+        buildLayout: () => [C]
     })

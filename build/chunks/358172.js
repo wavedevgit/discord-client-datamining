@@ -16,8 +16,8 @@ var s = n(503698),
     m = n(71393),
     g = n(473145),
     A = n(652215),
-    h = n(985018),
-    x = n(246930);
+    x = n(985018),
+    h = n(246930);
 let p = function(e) {
     let {
         className: t,
@@ -25,38 +25,38 @@ let p = function(e) {
         boostingVariant: s
     } = e, p = (0, a.bG)([m.A], () => m.A.getGuild(n), [n]), T = (0, _.A)(p?.id).total;
     return null == p ? (0, i.jsx)("div", {
-        className: l()(t, x.bo),
+        className: l()(t, h.bo),
         children: (0, i.jsx)("div", {
-            className: x.$g,
+            className: h.$g,
             children: (0, i.jsx)(o.Text, {
                 variant: "text-lg/bold",
-                children: h.intl.string(h.t["6Kwwuo"])
+                children: x.intl.string(x.t["6Kwwuo"])
             })
         })
     }) : (0, i.jsxs)("div", {
-        className: l()(t, x.bo),
+        className: l()(t, h.bo),
         children: [(0, i.jsx)(d.Ay, {
-            className: x.__invalid_guildIcon,
+            className: h.__invalid_guildIcon,
             guild: p,
             size: d.Ay.Sizes.LARGER
         }), (0, i.jsxs)("div", {
-            className: x.$g,
+            className: h.$g,
             children: [(0, i.jsx)(o.Text, {
                 variant: "text-lg/bold",
                 children: p.name
             }), (0, i.jsxs)("div", {
-                className: x.TZ,
+                className: h.TZ,
                 children: [(0, i.jsx)(o._Jp, {
                     color: o.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-                    className: x.Me
+                    className: h.Me
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
-                    children: h.intl.format(h.t["pob/cL"], {
+                    children: x.intl.format(x.t["pob/cL"], {
                         subscriptions: T
                     })
                 }), (0, i.jsx)("div", {
-                    className: x.me
+                    className: h.me
                 }), (0, i.jsx)(o.Text, {
                     variant: "text-sm/bold",
                     color: "text-muted",
@@ -76,10 +76,10 @@ let p = function(e) {
             pauseAnimation: !0,
             size: r.$n.Sizes.MEDIUM,
             color: r.$n.Colors.PRIMARY,
-            buttonText: h.intl.string(h.t.aBHecF)
+            buttonText: x.intl.string(x.t.aBHecF)
         }) : (0, i.jsx)(o.Button, {
             variant: "secondary",
-            text: h.intl.string(h.t.KLOhbO),
+            text: x.intl.string(x.t.KLOhbO),
             onClick: () => {
                 (0, c.K)({
                     guildId: p.id,
