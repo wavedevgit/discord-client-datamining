@@ -122,8 +122,8 @@ function j(e, t) {
         canTapAnswers: L,
         canRemoveVote: R,
         canShowVoteCounts: P,
-        canSubmitVote: w,
-        expirationLabel: M = b.intl.string(b.t["e+J3JZ"]),
+        canSubmitVote: M,
+        expirationLabel: w = b.intl.string(b.t["e+J3JZ"]),
         hasSelectedAnswer: D,
         hasVoted: k,
         isEditingVote: O,
@@ -134,9 +134,9 @@ function j(e, t) {
         submitting: H,
         tapShouldOpenVotersModal: V,
         showResults: q
-    } = j, W = (0, x.aw)(G), Y = b.intl.formatToPlainString(b.t.XRkuof, {
+    } = j, W = (0, x.aw)(G), z = b.intl.formatToPlainString(b.t.XRkuof, {
         count: W
-    }), z = Math.max(...T.map(e => {
+    }), Y = Math.max(...T.map(e => {
         let t = y(G, `${e.answer_id}`);
         return t?.count_details?.vote ?? 0
     })), Q = T.map(e => {
@@ -145,7 +145,7 @@ function j(e, t) {
             d = o?.count_details?.vote ?? 0,
             c = 0 === W ? 0 : d / W,
             u = F.has(a),
-            _ = d >= z && 0 !== d,
+            _ = d >= Y && 0 !== d,
             m = k && (o?.me_vote ?? !1),
             g = (t = {
                 didSelfVote: m,
@@ -221,7 +221,7 @@ function j(e, t) {
         }
     }), K = (0, i.YW)({
         isExpired: U,
-        canSubmitVote: w,
+        canSubmitVote: M,
         hasVoted: k,
         isEditingVote: O,
         canRemoveVote: R,
@@ -256,7 +256,7 @@ function j(e, t) {
     })).otherwise(() => ({
         label: b.intl.string(b.t.JwkNU4),
         presentation: "button",
-        enabled: w,
+        enabled: M,
         type: "submit"
     })), J = (0, g.isIOS)() ? b.intl.string(b.t["PVATM/"]) : b.intl.string(b.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
@@ -277,8 +277,8 @@ function j(e, t) {
         enabled: !0,
         type: "cancel"
     })).otherwise(() => ({
-        label: Y,
-        secondaryLabel: M,
+        label: z,
+        secondaryLabel: w,
         accessibilityHint: J,
         presentation: "text",
         enabled: !0,

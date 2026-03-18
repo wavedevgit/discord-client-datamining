@@ -1,6 +1,6 @@
 /** chunk id: 795982 params = (module,exports,require) **/
 n.d(t, {
-    A: () => M
+    A: () => w
 });
 var i = n(627968),
     r = n(64700),
@@ -89,7 +89,7 @@ function P(e) {
     }) : null
 }
 
-function w(e) {
+function M(e) {
     let {
         message: t,
         snapshot: n,
@@ -138,12 +138,12 @@ function w(e) {
     }, a)
 }
 
-function M(e) {
+function w(e) {
     let {
         message: t
     } = e;
     return (0, i.jsx)(i.Fragment, {
-        children: t.messageSnapshots.map((e, n) => (0, i.jsx)(w, {
+        children: t.messageSnapshots.map((e, n) => (0, i.jsx)(M, {
             message: t,
             snapshot: e,
             index: n

@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(654487),
     R = n(985018),
     P = n(421193),
-    w = n(196240);
-let M = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
+    M = n(196240);
+let w = async () => await n.e("40119").then(n.t.bind(n, 718698, 19));
 
 function D(e) {
     let {
@@ -54,7 +54,7 @@ function D(e) {
             friction: 20,
             clamp: !0
         }
-    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), J = (0, I._Z)(t.config), {
+    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), z = t.userStatus?.enrolledAt != null, Y = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), J = (0, I._Z)(t.config), {
         completedRatio: X,
         completedRatioDisplay: Z
     } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, D), ee = (0, y.Pd)(t), et = r.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
@@ -62,7 +62,7 @@ function D(e) {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
-                className: w.Kq,
+                className: M.Kq,
                 customSize: 14
             }), J]
         }, t.id)
@@ -74,7 +74,7 @@ function D(e) {
             questId: t.id,
             children: [(0, i.jsx)(m.A, {
                 shouldUseThemeColor: !0,
-                className: w.Kq,
+                className: M.Kq,
                 customSize: 14
             }), J]
         }, t.id)
@@ -87,7 +87,7 @@ function D(e) {
         if (null != $) return (0, i.jsx)(d.EYj, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: w.h_,
+            className: M.h_,
             children: $
         })
     }, [$]), ei = (0, c.bG)([u.A], () => u.A.useReducedMotion), er = r.useCallback(() => {
@@ -105,22 +105,22 @@ function D(e) {
         location: L.rE.EMBED_DESKTOP
     });
     return (0, i.jsxs)("div", {
-        className: w.kL,
+        className: M.kL,
         ref: D,
         children: [(0, i.jsxs)(s.animated.div, {
             style: {
                 maxHeight: F.to([0, 1], [104, (B ?? 0) + 12])
             },
-            className: w.z,
+            className: M.z,
             children: [(0, i.jsxs)("div", {
-                className: w.c6,
-                children: [!Q && z && (0, i.jsx)("div", {
-                    className: w.Nz
-                }), Y ? (0, i.jsxs)("div", {
-                    className: w.Tr,
-                    children: [z && (0, i.jsx)(d.akl, {
-                        importData: M,
-                        className: w.t_,
+                className: M.c6,
+                children: [!Q && Y && (0, i.jsx)("div", {
+                    className: M.Nz
+                }), z ? (0, i.jsxs)("div", {
+                    className: M.Tr,
+                    children: [Y && (0, i.jsx)(d.akl, {
+                        importData: w,
+                        className: M.t_,
                         loop: !1,
                         autoplay: !1,
                         shouldAnimate: !ei
@@ -141,33 +141,33 @@ function D(e) {
                     quest: t,
                     autoplay: a,
                     questContent: n,
-                    className: w.eB,
+                    className: M.eB,
                     lazyLoad: !0,
                     sourceQuestContent: b
                 })]
             }), (0, i.jsxs)("div", {
                 ref: U,
-                className: l()(w.FS, {
-                    [w.wq]: !G
+                className: l()(M.FS, {
+                    [M.wq]: !G
                 }),
                 children: [(0, i.jsx)(d.DZT, {
                     variant: "eyebrow",
                     color: "text-brand",
-                    className: w.G$,
+                    className: M.G$,
                     children: R.intl.format(R.t.EAYZAr, {
                         questName: t.config.messages.questName
                     })
                 }), (0, i.jsx)(d.EYj, {
                     variant: "text-md/semibold",
                     color: "text-strong",
-                    className: w.wx,
+                    className: M.wx,
                     children: et
                 }), en]
             }), G && (0, i.jsx)(s.animated.div, {
                 style: {
                     opacity: (0, N.a)(F.to([0, 1], [1, 0]))
                 },
-                className: w.hS
+                className: M.hS
             })]
         }), (0, i.jsx)("div", {
             className: P.kL,
@@ -219,7 +219,7 @@ let k = r.memo(function(e) {
         variant: "text-md/semibold",
         color: "text-strong",
         tag: "span",
-        className: w.wx,
+        className: M.wx,
         children: n
     }, `${t}_reward`)
 });

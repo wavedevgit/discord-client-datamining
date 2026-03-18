@@ -1,6 +1,6 @@
 /** chunk id: 509282 params = (module,exports,require) **/
 n.d(t, {
-    $: () => w,
+    $: () => M,
     G: () => P
 }), n(938796);
 var i = n(627968),
@@ -95,7 +95,7 @@ function P(e) {
             })
         })
     };
-    return (0, i.jsx)(M, {
+    return (0, i.jsx)(w, {
         appName: c.name,
         title: N.intl.formatToPlainString(N.t.XDRjs5, {
             appName: c.name
@@ -127,7 +127,7 @@ function P(e) {
     })
 }
 
-function w(e) {
+function M(e) {
     let {
         appId: t,
         skuId: a,
@@ -153,7 +153,7 @@ function w(e) {
         data: A
     } = (0, u.YY)(c?.applicationId), x = (0, s.bG)([p.A], () => p.A.getBasicChannel(l.channel_id)?.guild_id, [l]), f = r.useMemo(() => null != A ? (0, E.A)(A, 45) : void 0, [A]), I = (0, b.G)(A?.id ?? ""), {
         openModal: P,
-        subscriptionPurchaseButtonState: w
+        subscriptionPurchaseButtonState: M
     } = (0, h.A)({
         skuId: a,
         initialSubscribeForGuild: x
@@ -221,7 +221,7 @@ function w(e) {
             area: "purchase_button"
         })
     };
-    return (0, i.jsx)(M, {
+    return (0, i.jsx)(w, {
         appName: A.name,
         title: c.name,
         description: B,
@@ -257,7 +257,7 @@ function w(e) {
                 icon: o.U1X,
                 onHasClicked: G,
                 subscriptionPlan: _,
-                state: w
+                state: M
             }) : (0, i.jsx)(o.Button, {
                 variant: "primary",
                 text: N.intl.string(N.t.uuzaAK),
@@ -272,7 +272,7 @@ function w(e) {
     })
 }
 
-function M(e) {
+function w(e) {
     let {
         appName: t,
         title: n,

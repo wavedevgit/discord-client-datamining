@@ -40,13 +40,13 @@ function v(e) {
             analyticsLocations: R
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         P = null != n && n.target_type === C.yV.STREAM && null != n.target_user && null != j,
-        w = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
+        M = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
     l()(null != n, "Invite cannot be null");
     let {
-        target_type: M,
+        target_type: w,
         target_user: D
     } = n;
-    l()(M === C.yV.STREAM && null != D, "invalid streaming invite");
+    l()(w === C.yV.STREAM && null != D, "invalid streaming invite");
     let k = a === D.id,
         O = n.state === f.elq.ACCEPTING,
         U = r.useCallback(() => {
@@ -65,10 +65,10 @@ function v(e) {
     }
     let G = null != n.channel ? (0, m.OY)(n.channel) : null,
         F = A.Ay.getName(D),
-        H = P || !w && B,
+        H = P || !M && B,
         V = I.intl.string(I.t.I6JG46),
         q = "active";
-    B && !w ? (t = k ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
+    B && !M ? (t = k ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
         name: F
     }), V = I.intl.string(I.t.Wdi5E1)) : (q = "active", P && (V = I.intl.string(I.t.Q1W99y), q = "secondary"), t = k ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: F
@@ -86,10 +86,10 @@ function v(e) {
                 className: E.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: v,
-                    onClick: B && w ? U : void 0
+                    onClick: B && M ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,
-                    onClick: B && w ? U : void 0,
+                    onClick: B && M ? U : void 0,
                     children: W
                 })]
             }), (0, i.jsx)(s.$nd, {

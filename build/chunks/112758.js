@@ -10,8 +10,8 @@ n.d(t, {
     T0: () => N,
     UY: () => k,
     U_: () => H,
-    VL: () => M,
-    Yq: () => w,
+    VL: () => w,
+    Yq: () => M,
     m: () => y,
     r4: () => D,
     ri: () => U,
@@ -95,11 +95,11 @@ function P(e, t) {
     return L(b("referencedAvatarProfile", e, t))
 }
 
-function w(e, t) {
+function M(e, t) {
     return L(b("interactionAvatarProfile", e, t))
 }
 
-function M(e, t, a, o) {
+function w(e, t, a, o) {
     let {
         id: d
     } = t, {

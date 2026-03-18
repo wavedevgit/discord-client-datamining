@@ -1,7 +1,7 @@
 /** chunk id: 180662 params = (module,exports,require) **/
 n.d(t, {
     A: () => F,
-    e: () => M
+    e: () => w
 });
 var i = n(284009),
     r = n.n(i),
@@ -48,7 +48,7 @@ function P(e, t) {
     }
 }
 
-function w(e) {
+function M(e) {
     let {
         guildId: t,
         title: n,
@@ -67,14 +67,14 @@ function w(e) {
     })
 }
 
-function M(e) {
+function w(e) {
     let {
         channelId: t,
         messageId: n,
         answerId: i
     } = e, r = I.A.getChannel(t);
     if (null == r) return;
-    if (g.A.isLurking(r.guild_id)) return void w({
+    if (g.A.isLurking(r.guild_id)) return void M({
         guildId: r.guild_id,
         title: R.intl.string(R.t["7LpysO"]),
         body: R.intl.string(R.t["5sHHoy"])
@@ -152,7 +152,7 @@ async function U(e) {
         messageId: n
     } = e, i = I.A.getChannel(t);
     if (null == i) return;
-    if (g.A.isLurking(i.guild_id)) return void w({
+    if (g.A.isLurking(i.guild_id)) return void M({
         guildId: i.guild_id,
         title: R.intl.string(R.t.Qic1FD),
         body: R.intl.string(R.t["5sHHoy"])
@@ -204,7 +204,7 @@ async function B(e) {
         channelId: t,
         messageId: n
     } = e, i = I.A.getChannel(t);
-    if (null != i) return g.A.isLurking(i.guild_id) ? void w({
+    if (null != i) return g.A.isLurking(i.guild_id) ? void M({
         guildId: i.guild_id,
         title: R.intl.string(R.t.B9QnBp),
         body: R.intl.string(R.t.BVZCTn)
@@ -274,7 +274,7 @@ async function G(e) {
             });
             break;
         case "showVoterDetails":
-            M({
+            w({
                 channelId: t,
                 messageId: n
             });
@@ -312,7 +312,7 @@ let F = {
         }(n), {
             tapShouldOpenVotersModal: s
         } = (0, j.j8)(l) ?? {};
-        if (!0 === s) return void M({
+        if (!0 === s) return void w({
             channelId: i,
             messageId: a,
             answerId: t

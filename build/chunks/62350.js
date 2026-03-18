@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(168428),
     R = n(652215),
     P = n(768349),
-    w = n(172799),
-    M = n(985018),
+    M = n(172799),
+    w = n(985018),
     D = n(320160);
 
 function k(e) {
@@ -50,7 +50,7 @@ function k(e) {
             variant: "text-xs/normal",
             className: D.U9,
             color: r,
-            children: M.intl.format(M.t["LC+S+m"], {
+            children: w.intl.format(w.t["LC+S+m"], {
                 membersOnline: n
             })
         })]
@@ -62,7 +62,7 @@ function k(e) {
             variant: "text-xs/normal",
             className: D.U9,
             color: r,
-            children: M.intl.format(M.t.zRl6XR, {
+            children: w.intl.format(w.t.zRl6XR, {
                 count: t
             })
         })]
@@ -93,7 +93,7 @@ function O(e) {
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-xs/normal",
                     color: a,
-                    children: M.intl.format(M.t["dc+LW4"], {
+                    children: w.intl.format(w.t["dc+LW4"], {
                         channelName: t.name,
                         serverName: n.name
                     })
@@ -109,7 +109,7 @@ function O(e) {
             children: (0, i.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: a,
-                children: M.intl.format(M.t.u0vaDE, {
+                children: w.intl.format(w.t.u0vaDE, {
                     guildName: n.name
                 })
             })
@@ -129,7 +129,7 @@ function U(e) {
             target_type: g,
             target_application: A
         } = a;
-    o()(g === w.yV.EMBEDDED_APPLICATION && null != A, "invalid application invite");
+    o()(g === M.yV.EMBEDDED_APPLICATION && null != A, "invalid application invite");
     let x = r.useCallback(() => {
             S.default.track(R.HAw.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
                 application_id: A.id,
@@ -170,9 +170,9 @@ function U(e) {
         if (null == a.guild) return (0, i.jsx)(L.A, {});
         f = (0, j.DY)(a.guild)
     }
-    t = H ? E ? M.intl.string(M.t.DPfdsq) : N ? M.intl.string(M.t.sqe0hj) : M.intl.string(M.t.RscU7I) : M.intl.string(M.t["2BP08E"]);
+    t = H ? E ? w.intl.string(w.t.DPfdsq) : N ? w.intl.string(w.t.sqe0hj) : w.intl.string(w.t.RscU7I) : w.intl.string(w.t["2BP08E"]);
     let V = H && !D || H && E;
-    return (D || (n = M.intl.string(M.t.hHGrWz)), null == a.code || "" === a.code || null == C) ? null : (0, i.jsx)(p.f5, {
+    return (D || (n = w.intl.string(w.t.hHGrWz)), null == a.code || "" === a.code || null == C) ? null : (0, i.jsx)(p.f5, {
         value: k,
         children: (0, i.jsx)(B, {
             app: C,
@@ -228,7 +228,7 @@ function B(e) {
     }], [m, a, _, h, p, I]);
     return (0, i.jsx)(g.h, {
         header: t.name,
-        title: M.intl.string(M.t["7vb6nw"]),
+        title: w.intl.string(w.t["7vb6nw"]),
         iconSrc: T,
         ...S,
         onClickBanner: y,
@@ -242,7 +242,7 @@ function B(e) {
             }), a ? j > 0 && (0, i.jsx)(A.$, {
                 activityUsers: n,
                 guildId: s.id,
-                activityText: M.intl.formatToPlainString(M.t.yJj035, {
+                activityText: w.intl.formatToPlainString(w.t.yJj035, {
                     count: j
                 })
             }) : (0, i.jsx)(k, {

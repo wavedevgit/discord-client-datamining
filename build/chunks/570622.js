@@ -20,9 +20,9 @@ function d(e) {
         isPopoverAllowed: m = !0
     } = e, A = (0, i.JZ)(s.M.FAVORITES_SERVER_ONBOARDING_INTRO), {
         isExperimentEnabled: E
-    } = (0, u.TW)(t), p = (0, l.bG)([r.A], () => null != r.A.getVoiceChannelId()), f = E && o && n && c.has(d) && m && !p, [h, S] = (0, a.kn)(f && A ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
+    } = (0, u.TW)(t), p = (0, l.bG)([r.A], () => null != r.A.getVoiceChannelId()), f = E && o && n && c.has(d) && m && !p, [S, h] = (0, a.kn)(f && A ? [s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM] : []);
     return {
-        showMenuItemPopover: h === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
-        markMenuItemPopoverAsDismissed: S
+        showMenuItemPopover: S === s.M.FAVORITES_SERVER_ONBOARDING_MENU_ITEM,
+        markMenuItemPopoverAsDismissed: h
     }
 }

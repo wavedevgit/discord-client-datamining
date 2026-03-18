@@ -82,8 +82,8 @@ function T(e) {
         analyticsLocations: L,
         showAuthButton: R,
         startAuthorization: P,
-        accountLinkButtonRef: w,
-        renderAccountLinkUpsell: M
+        accountLinkButtonRef: M,
+        renderAccountLinkUpsell: w
     } = e, D = (0, s.bG)([g.A], () => g.A.getMessages(l.id)), {
         actions: k,
         hasAccountLinkButton: O
@@ -116,13 +116,13 @@ function T(e) {
                 },
                 icon: o.A5T,
                 iconButton: !0,
-                buttonRef: w
+                buttonRef: M
             }), r = !0);
         return {
             actions: e,
             hasAccountLinkButton: r
         }
-    }, [p, h, v, D, j, n.id, t.id, R, P, L, w]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
+    }, [p, h, v, D, j, n.id, t.id, R, P, L, M]), U = k.some(e => e.trackingArea === u.kY.CLOUD_PLAY);
     (0, f.A)(U, L);
     let B = k.length > 0,
         G = r.useMemo(() => (0, i.jsx)(o.Text, {
@@ -161,6 +161,6 @@ function T(e) {
                 messageId: t.id,
                 isDeadEnd: !0
             }
-        }), O ? M() : null]
+        }), O ? w() : null]
     })
 }

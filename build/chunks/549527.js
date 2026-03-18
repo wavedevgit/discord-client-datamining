@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(71393),
     R = n(576705),
     P = n(994500),
-    w = n(309010),
-    M = n(287809),
+    M = n(309010),
+    w = n(287809),
     D = n(954571),
     k = n(709634),
     O = n(652215),
@@ -45,11 +45,11 @@ function G(e) {
         message: t,
         snapshot: n,
         index: c
-    } = e, _ = r.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, l.bG)([N.A, M.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, M.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = r.useCallback(() => {
+    } = e, _ = r.useMemo(() => new u.j(t, n, c), [t, n, c]), h = (0, l.bG)([N.A, w.default, P.A, R.A, L.A, m.A], () => _.getForwardInfo(N.A, w.default, P.A, R.A, L.A, m.A).footerInfo, [_], s.A), p = r.useCallback(() => {
         let e = N.A.getChannel(t.channel_id),
             n = L.A.getGuild(e?.guild_id),
             i = t.messageReference?.channel_id,
-            r = w.A.getCurrentlySelectedChannelId(),
+            r = M.A.getCurrentlySelectedChannelId(),
             a = S.Ay.getCurrentSidebarChannelId(t.messageReference?.channel_id),
             l = r === i && a === e?.id;
         null == e || null == n || l || null == i || (T.A.openModReportAsSidebar({

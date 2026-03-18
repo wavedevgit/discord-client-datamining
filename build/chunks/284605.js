@@ -35,7 +35,7 @@ function I(e) {
         thumbnailHeight: S,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), M = (0, _.BB)(L), {
+    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), M = (0, g.z)(t), w = (0, _.BB)(L), {
         shouldHideGuildPurchaseEntryPoints: D
     } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
@@ -51,13 +51,13 @@ function I(e) {
         B = (0, i.jsx)(A.i, {
             product: t,
             guildId: n,
-            showEditProduct: M,
+            showEditProduct: w,
             showUnpublishProduct: !1,
             showCopyLink: !0,
             showTestDownload: !1,
             showDeleteProduct: !1,
             showReportProduct: !0,
-            onEditProduct: M ? () => {
+            onEditProduct: w ? () => {
                 h.q(L.id, t.id)
             } : () => {},
             onUnpublishProduct: () => {},
@@ -81,7 +81,7 @@ function I(e) {
         ctaComponent: (0, i.jsx)(a.$nd, {
             ...O
         }),
-        productType: w,
+        productType: M,
         shouldShowFullDescriptionButton: E,
         onShowFullDescription: U,
         onTapCard: U,

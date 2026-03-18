@@ -38,16 +38,16 @@ let g = r.memo(function(e) {
             L = r ? p : h,
             R = S ? C : A,
             P = (0, c.x)(R, m.$Z),
-            w = {};
+            M = {};
         if (S && null != j) {
             let {
                 accentColor: e,
                 backgroundColor: i,
                 opacity: r
             } = j, a = (0, o.xp)(i ?? "", r) ?? "";
-            N && (w.borderColor = i), w.background = a, t = e, n = e
+            N && (M.borderColor = i), M.background = a, t = e, n = e
         }
-        let M = {
+        let w = {
             minWidth: P,
             color: t,
             borderColor: n
@@ -57,7 +57,7 @@ let g = r.memo(function(e) {
                 [L.reactionMe]: N,
                 [L.reactionReadOnly]: E && !v && !b
             }),
-            style: w,
+            style: M,
             children: [(0, i.jsx)(d.A, {
                 className: l()({
                     [L.hideEmoji]: a
@@ -68,7 +68,7 @@ let g = r.memo(function(e) {
                 animated: S && s.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
-                style: M,
+                style: w,
                 children: R
             })]
         })

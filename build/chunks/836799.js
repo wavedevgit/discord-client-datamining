@@ -1,21 +1,20 @@
 /** chunk id: 836799 params = (module,exports,require) **/
 n.d(t, {
-    $: () => u
+    $: () => c
 });
 var i = n(934551),
     s = n(419954),
     l = n(723702),
     a = n(780964),
-    r = n(358776),
-    o = n(477908),
-    d = n(985018);
-let c = (0, s.t_)(a.X.WINDOWS_PANEL, {
-        useTitle: () => d.intl.string(d.t.ZkDZov),
-        buildLayout: () => [o.w]
+    r = n(477908),
+    o = n(985018);
+let d = (0, s.t_)(a.X.WINDOWS_PANEL, {
+        useTitle: () => o.intl.string(o.t.ZkDZov),
+        buildLayout: () => [r.w]
     }),
-    u = (0, s.i4)(a.X.WINDOWS_SIDEBAR_ITEM, {
-        useTitle: () => d.intl.string(d.t.ZkDZov),
+    c = (0, s.i4)(a.X.WINDOWS_SIDEBAR_ITEM, {
+        useTitle: () => o.intl.string(o.t.ZkDZov),
         icon: i.ScreenIcon,
-        usePredicate: () => !(0, r.bp)("WindowsSidebarItem") && l.isPlatformEmbedded && (0, l.isWindows)(),
-        buildLayout: () => [c]
+        usePredicate: () => l.isPlatformEmbedded && (0, l.isWindows)(),
+        buildLayout: () => [d]
     })

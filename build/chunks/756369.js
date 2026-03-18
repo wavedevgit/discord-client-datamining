@@ -34,8 +34,8 @@ var i = n(627968),
     L = n(795982),
     R = n(643612),
     P = n(613760),
-    w = n(229527),
-    M = n(870136),
+    M = n(229527),
+    w = n(870136),
     D = n(33525),
     k = n(484724),
     O = n(71755),
@@ -47,8 +47,8 @@ var i = n(627968),
     V = n(46054),
     q = n(731068),
     W = n(619517),
-    Y = n(207133),
-    z = n(480191),
+    z = n(207133),
+    Y = n(480191),
     Q = n(269849),
     K = n(704413),
     J = n(695206),
@@ -88,8 +88,8 @@ var i = n(627968),
     eL = n(341645),
     eR = n(986350),
     eP = n(439401),
-    ew = n(466802),
-    eM = n(990560),
+    eM = n(466802),
+    ew = n(990560),
     eD = n(266620),
     ek = n(860227),
     eO = n(564107),
@@ -101,8 +101,8 @@ var i = n(627968),
     eV = n(573163),
     eq = n(861986),
     eW = n(937266),
-    eY = n(343552),
-    ez = n(581619),
+    ez = n(343552),
+    eY = n(581619),
     eQ = n(652215),
     eK = n(985018),
     eJ = n(867525);
@@ -212,7 +212,7 @@ class e1 extends r.Component {
                 code: r,
                 url: a
             } = t;
-            if (n === v.I.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(eM.A, {
+            if (n === v.I.INVITE) return this.shouldRenderInvite(r) ? (0, i.jsx)(ew.A, {
                 code: r,
                 message: e,
                 getAcceptInviteContext: this.getAcceptInviteContext
@@ -293,7 +293,7 @@ class e1 extends r.Component {
         } = e, o = eh.default.getCurrentUser();
         return null != o && t.length > 0 ? t.map(e => (0, i.jsx)("div", {
             className: eJ.zv,
-            children: (0, i.jsx)(ew.A, {
+            children: (0, i.jsx)(eM.A, {
                 code: e,
                 author: n,
                 channelId: r,
@@ -412,7 +412,7 @@ class e1 extends r.Component {
         if (e.type === eQ.Auw.GIFT) return null;
         let _ = eX.includes(e.type) ? e.url : e.image?.url ?? e.video?.url;
         return (0, i.jsx)(R.G.Provider, {
-            value: (0, eY.b)(_, e.image, e.video, e.thumbnail, e.provider?.name),
+            value: (0, ez.b)(_, e.image, e.video, e.thumbnail, e.provider?.name),
             children: (0, i.jsx)(I.Ay, {
                 embed: e,
                 obscureReason: u ?? void 0,
@@ -462,7 +462,7 @@ class e1 extends r.Component {
             hasBailedAst: n
         } = this.props;
         return 0 === e.embeds.length || !t || n ? null : e.embeds.map((t, n) => {
-            if (ez.z.has(t.type) || (0, ex.p6)(t) || (0, U.f)(t) && !(0, B.d)(e) || (0, ex.V)(t) || (0, ex.G8)(t)) return null;
+            if (eY.z.has(t.type) || (0, ex.p6)(t) || (0, U.f)(t) && !(0, B.d)(e) || (0, ex.V)(t) || (0, ex.G8)(t)) return null;
             if (t.type === eQ.Auw.COMPONENTS && null != t.components && t.components.length > 0) {
                 var r = this;
                 let {
@@ -671,7 +671,7 @@ class e1 extends r.Component {
         })
     }
     renderMediaPostEmbeds(e) {
-        return e.embeds.flatMap(t => t.type !== eQ.Auw.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(z.A, {
+        return e.embeds.flatMap(t => t.type !== eQ.Auw.POST_PREVIEW || null == t.url ? [] : (0, i.jsx)(Y.A, {
             embedUrl: t.url,
             message: e,
             channel: this.props.channel
@@ -754,7 +754,7 @@ function e7(e) {
     } = (0, d.cf)([em.A], () => ({
         canAddNewReactions: h && em.A.can(eQ.xBc.ADD_REACTIONS, t),
         canManageMessages: em.A.can(eQ.xBc.MANAGE_MESSAGES, t)
-    }), [h, t]), f = (0, w.ix)(t.guild_id), [, C] = (0, M.c)(t.guild_id), I = (0, el.Id)(t), E = (l === n.author.id || x) && n.author.id !== eQ.oIV && !1 !== r && !(0, o.Lt)(n.flags, eQ.pr7.EPHEMERAL) && I && (0, eT.A)(n) >= 1, v = l === n.author.id && I && !a, b = n.author.id === l, y = n.isFirstMessageInForumPost(t), N = (0, eS.A)({
+    }), [h, t]), f = (0, M.ix)(t.guild_id), [, C] = (0, w.c)(t.guild_id), I = (0, el.Id)(t), E = (l === n.author.id || x) && n.author.id !== eQ.oIV && !1 !== r && !(0, o.Lt)(n.flags, eQ.pr7.EPHEMERAL) && I && (0, eT.A)(n) >= 1, v = l === n.author.id && I && !a, b = n.author.id === l, y = n.isFirstMessageInForumPost(t), N = (0, eS.A)({
         channel: t,
         canChat: h,
         renderReactions: _,
@@ -763,7 +763,7 @@ function e7(e) {
         communicationDisabled: C,
         isActiveChannelOrUnarchivableThread: I,
         isAutomodQuarantined: f
-    }), j = (0, H.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, Y.A)(t?.id), R = (0, K.A)(n), P = (0, S.P)(n), D = (0, eb.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
+    }), j = (0, H.S)((n.editedTimestamp ?? n.timestamp).valueOf()), L = (0, z.A)(t?.id), R = (0, K.A)(n), P = (0, S.P)(n), D = (0, eb.z)(t), k = (0, eI._f)(n.id, n.channel_id), O = (0, T._R)();
     return (0, i.jsx)(e1, {
         canSuppressEmbeds: E,
         canDeleteAttachments: v,
@@ -799,7 +799,7 @@ let e2 = e => {
         disableReactionUpdates: s = !0,
         disableComponentInteractivity: o = !0,
         ...d
-    } = e, c = eo.X6.useSetting(), u = eo.hD.useSetting(), _ = eo.rs.useSetting(), m = eo.kt.useSetting(), h = (0, H.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, Y.A)(n?.id), g = (0, S.P)(t), A = (0, eI._f)(t.id, t.channel_id), x = (0, K.A)(t);
+    } = e, c = eo.X6.useSetting(), u = eo.hD.useSetting(), _ = eo.rs.useSetting(), m = eo.kt.useSetting(), h = (0, H.S)((t.editedTimestamp ?? t.timestamp).valueOf()), p = (0, z.A)(n?.id), g = (0, S.P)(t), A = (0, eI._f)(t.id, t.channel_id), x = (0, K.A)(t);
     return (0, i.jsx)(e1, {
         ...d,
         message: t,

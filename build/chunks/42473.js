@@ -24,8 +24,8 @@ let A = s.forwardRef(function(e, t) {
             innerClassName: E,
             className: p,
             redGlow: f,
-            onMouseEnter: h,
-            onMouseLeave: S,
+            onMouseEnter: S,
+            onMouseLeave: h,
             "aria-label": T,
             "aria-checked": x,
             role: _,
@@ -57,8 +57,8 @@ let A = s.forwardRef(function(e, t) {
                 null != i && i(e)
             },
             onMouseDown: r,
-            onMouseEnter: h,
-            onMouseLeave: S,
+            onMouseEnter: S,
+            onMouseLeave: h,
             onContextMenu: s,
             role: _,
             "aria-checked": x,
@@ -113,7 +113,7 @@ let A = s.forwardRef(function(e, t) {
                 onFocus: E,
                 onBlur: p,
                 "aria-label": f,
-                ...h
+                ...S
             } = e;
             return (0, l.jsx)(c.STz, {
                 "data-migration-pending": !0,
@@ -155,7 +155,7 @@ let A = s.forwardRef(function(e, t) {
                             m?.(), p?.()
                         },
                         "aria-label": f,
-                        ...h,
+                        ...S,
                         ref: t
                     })
                 }

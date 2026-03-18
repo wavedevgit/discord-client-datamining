@@ -19,8 +19,8 @@ var l = n(627968),
     E = n(535185),
     p = n(148839),
     f = n(607399),
-    h = n(311907),
-    S = n(3026),
+    S = n(311907),
+    h = n(3026),
     T = n(435371),
     x = n(397927),
     _ = n(308528),
@@ -159,8 +159,8 @@ let ea = en.Ay.getEnableHardwareAcceleration() ? x.JsQ : x.euF,
             className: A,
             role: E,
             "aria-posinset": p,
-            "aria-setsize": h,
-            listItemRef: S,
+            "aria-setsize": S,
+            listItemRef: h,
             ...T
         } = e;
         return (0, l.jsx)(O.A, {
@@ -174,8 +174,8 @@ let ea = en.Ay.getEnableHardwareAcceleration() ? x.JsQ : x.euF,
                 ...er
             },
             "aria-posinset": p,
-            "aria-setsize": h,
-            ref: S,
+            "aria-setsize": S,
+            ref: h,
             children: (0, l.jsx)(x.HG8, {
                 as: "div",
                 selected: n,
@@ -220,7 +220,7 @@ function eA(e) {
         ref: ee,
         "aria-posinset": et,
         "aria-setsize": en
-    } = e, [em, eA] = s.useState(!1), [eE, ep] = s.useState(!1), [ef, eh] = s.useState(!1), eS = s.useRef(null), [eT, ex] = s.useState(!1), e_ = (0, m.K)(s.useCallback(e => {
+    } = e, [em, eA] = s.useState(!1), [eE, ep] = s.useState(!1), [ef, eS] = s.useState(!1), eh = s.useRef(null), [eT, ex] = s.useState(!1), e_ = (0, m.K)(s.useCallback(e => {
         ex(e)
     }, [])), eN = s.useRef(null), eg = ee ?? eN, eC = (0, A.A)(eg, e_), {
         showMenuItemPopover: ev,
@@ -240,13 +240,13 @@ function eA(e) {
         animateOnHover: !(i || em || eE || ef)
     }), [eR, ey] = s.useState({
         maskImage: "none"
-    }), eL = s.useRef(null), eU = t.isMultiUserDM(), eD = t.isSystemDM(), eO = !eU && !eD && t.type === el.rbe.DM, ew = eO && r?.primaryGuild != null, eG = (0, h.bG)([X.Ay], () => X.Ay.isChannelMuted(t.getGuildId(), t.id)), {
+    }), eL = s.useRef(null), eU = t.isMultiUserDM(), eD = t.isSystemDM(), eO = !eU && !eD && t.type === el.rbe.DM, ew = eO && r?.primaryGuild != null, eG = (0, S.bG)([X.Ay], () => X.Ay.isChannelMuted(t.getGuildId(), t.id)), {
         ignored: eQ,
         blocked: eP
-    } = (0, h.cf)([J.A], () => ({
+    } = (0, S.cf)([J.A], () => ({
         ignored: J.A.isIgnored(t.getRecipientId()),
         blocked: J.A.isBlocked(t.getRecipientId())
-    })), eF = eO && eQ, ek = eO && eP, eV = (eG || eF || ek) && !(i || em), eq = (0, h.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (i || em || ef), eW = () => {
+    })), eF = eO && eQ, ek = eO && eP, eV = (eG || eF || ek) && !(i || em), eq = (0, S.bG)([$.Ay], () => $.Ay.getMentionCount(t.id) > 0), eB = (0, U.Ay)(t), ez = s.useRef(null), eH = null != Z && (i || em || ef), eW = () => {
         eA(!0)
     }, eK = () => {
         eA(!1)
@@ -262,10 +262,10 @@ function eA(e) {
     }, eX = e => {
         e.stopPropagation()
     }, e0 = e => {
-        e.target === e.currentTarget && eS.current?.click()
+        e.target === e.currentTarget && eh.current?.click()
     }, e1 = e => {
         let s = "contextmenu" === e.type ? c.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : c.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
-        eh(!0), t.isMultiUserDM() ? (0, N.L3)(e, async () => {
+        eS(!0), t.isMultiUserDM() ? (0, N.L3)(e, async () => {
             let {
                 default: e
             } = await Promise.all([n.e("97262"), n.e("60200"), n.e("91763")]).then(n.bind(n, 4027));
@@ -277,7 +277,7 @@ function eA(e) {
         }, {
             impressionName: s,
             noBlurEvent: !0,
-            onClose: () => eh(!1)
+            onClose: () => eS(!1)
         }) : (0, N.L3)(e, async () => {
             let {
                 default: e
@@ -290,7 +290,7 @@ function eA(e) {
             })
         }, {
             impressionName: s,
-            onClose: () => eh(!1)
+            onClose: () => eS(!1)
         })
     }, e2 = e => {
         e.preventDefault(), e.stopPropagation();
@@ -340,7 +340,7 @@ function eA(e) {
         channel: t,
         muted: eG,
         userStatus: B
-    })].filter(Boolean).join(", "), e5 = (0, h.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
+    })].filter(Boolean).join(", "), e5 = (0, S.bG)([$.Ay], () => $.Ay.lastMessageId(t.id)), {
         waveShouldShow: e8,
         wavePressed: te
     } = (0, D.A)(t, e5), {
@@ -370,7 +370,7 @@ function eA(e) {
                 role: n,
                 focusProps: {
                     ...er,
-                    focusTarget: eS,
+                    focusTarget: eh,
                     ringTarget: eg
                 },
                 ref: eC,
@@ -406,7 +406,7 @@ function eA(e) {
                         children: e6
                     }), (0, l.jsx)(o.N_, {
                         style: eR,
-                        innerRef: eS,
+                        innerRef: eh,
                         to: el.BVt.CHANNEL(el.ME, t.id),
                         className: ei.nf,
                         "aria-label": e4,
@@ -470,7 +470,7 @@ function eA(e) {
                                 textClassName: ei.XD,
                                 iconClassName: eV ? ei.tG : void 0
                             }) : null,
-                            name: (0, l.jsx)(S.A, {
+                            name: (0, l.jsx)(h.A, {
                                 className: a()(ei.uN, {
                                     [ei.e8]: e3
                                 }),
@@ -514,7 +514,7 @@ let eE = 21552 == n.j ? e => {
         channel: t,
         selected: n,
         ...s
-    } = e, i = (0, h.bG)([ee.default], () => ee.default.getUser(t.getRecipientId())), a = i?.id, r = (0, h.cf)([Y.A, K.A], () => {
+    } = e, i = (0, S.bG)([ee.default], () => ee.default.getUser(t.getRecipientId())), a = i?.id, r = (0, S.cf)([Y.A, K.A], () => {
         let e;
         if (t.isMultiUserDM()) {
             let n = Y.A.getState().statuses;
@@ -533,7 +533,7 @@ let eE = 21552 == n.j ? e => {
         userId: a
     }), o = (0, q.r)({
         user: i
-    }), c = (0, h.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != i && Z.A.isTyping(t.id, t.getRecipientId()), [t, i]);
+    }), c = (0, S.bG)([ee.default, Z.A], () => t.isMultiUserDM() ? et.default.keys(Z.A.getTypingUsers(t.id)).some(e => e !== ee.default.getCurrentUser()?.id) : null != i && Z.A.isTyping(t.id, t.getRecipientId()), [t, i]);
     return t.isMultiUserDM() ? (0, l.jsx)(eA, {
         channel: t,
         selected: n,

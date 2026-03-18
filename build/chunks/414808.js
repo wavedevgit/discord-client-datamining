@@ -1,6 +1,6 @@
 /** chunk id: 414808 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => h
 });
 var l = n(627968),
     s = n(64700),
@@ -16,13 +16,13 @@ var l = n(627968),
     E = n(788868),
     p = n(665606),
     f = n(985018),
-    h = n(988572);
+    S = n(988572);
 
-function S(e) {
+function h(e) {
     let {
         targetElementRef: t,
         markMenuItemPopoverAsDismissed: n
-    } = e, [S, T] = s.useState("top"), x = s.useRef(null), _ = s.useRef(null), {
+    } = e, [h, T] = s.useState("top"), x = s.useRef(null), _ = s.useRef(null), {
         hasAccess: N
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
         analyticsLocations: g
@@ -55,9 +55,9 @@ function S(e) {
         gradientColor: "nitro-pink",
         position: "right",
         alignmentStrategy: "edge",
-        align: S,
+        align: h,
         caretConfig: {
-            align: "top" === S ? "start" : "end"
+            align: "top" === h ? "start" : "end"
         },
         popoverRef: x,
         badge: {
@@ -65,18 +65,18 @@ function S(e) {
             variant: "expressive"
         },
         graphic: {
-            src: h.A,
+            src: S.A,
             type: "image",
             aspectRatio: "16/9"
         },
         title: f.intl.string(N ? I : p.default.A3ZjbM),
         body: f.intl.string(N ? p.default.DFjrWw : p.default.qJUI2v),
         onRequestClose: () => n?.(A.i.USER_DISMISS),
-        actions: [{
-            icon: N ? void 0 : r.tvc,
-            text: N ? f.intl.string(p.default["+h9aza"]) : f.intl.string(p.default["avps/2"]),
+        actions: N ? void 0 : [{
+            icon: r.tvc,
+            text: f.intl.string(p.default["avps/2"]),
             onClick: () => v(),
-            variant: N ? "secondary" : "expressive"
+            variant: "expressive"
         }]
     })
 }

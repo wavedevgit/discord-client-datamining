@@ -38,14 +38,14 @@ function R(e) {
         getAcceptInviteContext: R
     } = e, {
         invite: P,
-        inviteError: w
+        inviteError: M
     } = (0, a.cf)([A.A], () => ({
         invite: A.A.getInvite(t),
         inviteError: A.A.getInviteError(t)
-    }), [t]), M = null == P;
+    }), [t]), w = null == P;
     r.useEffect(() => {
-        M && l.Ay.resolveInvite(t)
-    }, [t, M]);
+        w && l.Ay.resolveInvite(t)
+    }, [t, w]);
     let D = P ?? {
             state: L.elq.RESOLVING,
             code: ""
@@ -96,7 +96,7 @@ function R(e) {
         case L.elq.ERROR:
             H = (0, i.jsx)(C.A, {
                 author: n.author,
-                inviteError: w
+                inviteError: M
             });
             break;
         default:

@@ -1,6 +1,6 @@
 /** chunk id: 13403 params = (module,exports,require) **/
 n.d(t, {
-    A: () => w
+    A: () => M
 }), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -33,9 +33,9 @@ var i = n(627968),
     R = n(49999),
     P = n(985018);
 
-function w(e) {
+function M(e) {
     var t, n;
-    let w, M, {
+    let M, w, {
             analyticsLocations: D,
             application: k,
             channel: O,
@@ -49,8 +49,8 @@ function w(e) {
         } = e,
         W = (0, d.Ag)(k),
         {
-            iconSrc: Y,
-            name: z
+            iconSrc: z,
+            name: Y
         } = function(e, t) {
             let {
                 bot: n
@@ -72,18 +72,18 @@ function w(e) {
         {
             openGameProfileModal: K,
             launchableAppId: J
-        } = (t = k.id, n = F.author.id, w = (0, f.d)(t), M = (0, a.bG)([m.A, C.A], () => {
+        } = (t = k.id, n = F.author.id, M = (0, f.d)(t), w = (0, a.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
         }, [t]), {
             openGameProfileModal: (0, x.A)({
                 location: "Rich Presence Activity Invite Embed",
-                applicationId: M?.id ?? void 0,
+                applicationId: w?.id ?? void 0,
                 source: A.Ob.Embed,
                 trackEntryPointImpression: !0,
                 sourceUserId: n
             }),
-            launchableAppId: w
+            launchableAppId: M
         }),
         X = (0, S.A)({
             application: k,
@@ -109,7 +109,7 @@ function w(e) {
         } = (0, _.RD)(k),
         ea = (0, u.z)(er, ei),
         el = !(0, T.A)(q, F, k.id),
-        es = (0, b.n$)(z, F.activity?.type, el),
+        es = (0, b.n$)(Y, F.activity?.type, el),
         eo = r.useRef(null),
         ed = (0, a.bG)([I.A], () => I.A.getMessages(O.id)),
         ec = () => {
@@ -147,7 +147,7 @@ function w(e) {
     return el ? (0, i.jsx)(j.A, {
         message: F,
         application: k,
-        applicationName: z,
+        applicationName: Y,
         channel: O,
         header: es,
         currentUserId: U,
@@ -156,7 +156,7 @@ function w(e) {
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
         onClickContent: ee,
-        iconSrc: Y,
+        iconSrc: z,
         onView: H,
         presenceActivity: q,
         analyticsLocations: D,
@@ -167,7 +167,7 @@ function w(e) {
     }) : (0, i.jsx)(L.A, {
         message: F,
         application: k,
-        applicationName: z,
+        applicationName: Y,
         channel: O,
         header: es,
         currentUserId: U,
@@ -176,7 +176,7 @@ function w(e) {
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
         onClickContent: ee,
-        iconSrc: Y,
+        iconSrc: z,
         onView: H,
         presenceActivity: q,
         currentUserPresenceActivity: B,

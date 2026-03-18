@@ -1,6 +1,6 @@
 /** chunk id: 306417 params = (module,exports,require) **/
 n.d(t, {
-    Dt: () => M,
+    Dt: () => w,
     Fb: () => P,
     Fh: () => j,
     Vx: () => D,
@@ -242,14 +242,14 @@ function P(e) {
     })
 }
 
-function w(e, t) {
+function M(e, t) {
     return null != e ? (0, i.jsx)("div", {
         className: e,
         children: t
     }) : t
 }
 
-function M(e) {
+function w(e) {
     let {
         media: t,
         containerClassName: n,
@@ -261,12 +261,12 @@ function M(e) {
     } = (0, C.y0)();
     if (null != t.attachmentIds && t.attachmentIds.length > 0) {
         let e = s.attachments.find(e => e.id === t.attachmentIds?.[0]);
-        if (null != e) return w(n, (0, i.jsx)(R, {
+        if (null != e) return M(n, (0, i.jsx)(R, {
             className: r,
             attachment: e
         }))
     }
-    return null != t.emoji ? w(n, (0, i.jsx)(P, {
+    return null != t.emoji ? M(n, (0, i.jsx)(P, {
         className: a,
         emoji: t.emoji
     })) : void 0 !== l ? l : null

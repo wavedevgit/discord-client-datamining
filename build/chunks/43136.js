@@ -96,7 +96,7 @@ function N(e) {
     } = (0, C.e)(), f = (n?.description?.trim().length ?? 0) > 0, [N, j] = r.useState(1), L = (0, d.A)("(max-width: 1439px)"), {
         selectedTab: R,
         isPhantomPreview: P
-    } = (0, I.k)(), w = R === E.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), M = f ? (0, i.jsxs)(i.Fragment, {
+    } = (0, I.k)(), M = R === E.B.GUILD_PRODUCTS_PREVIEW ? b.intl.string(b.t["LvXy/H"]) : b.intl.string(b.t.XyqKh8), w = f ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(A, {
             lineClamp: L || 2 === N ? 2 : 3,
             children: (0, i.jsx)(o.Text, {
@@ -116,7 +116,7 @@ function N(e) {
     }) : (0, i.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "text-default",
-        children: P ? w : b.intl.string(b.t["NY/FIW"])
+        children: P ? M : b.intl.string(b.t["NY/FIW"])
     });
     return (0, i.jsxs)("div", {
         className: T.kL,
@@ -162,7 +162,7 @@ function N(e) {
                     })
                 }), (0, i.jsx)(o.hKd, {
                     size: 9
-                }), M]
+                }), w]
             })]
         }), (0, i.jsx)(S, {
             coverImageAsset: n?.cover_image_asset,

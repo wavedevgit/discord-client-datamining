@@ -37,9 +37,9 @@ function L(e) {
         L = (0, A.Ut)(),
         R = (0, f.go)(),
         P = (0, C.wr)(e.quest),
-        w = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
+        M = !0 === e.showShareLink && (0, v.E0)(e.quest.config),
         {
-            handleComplete: M,
+            handleComplete: w,
             handleProgress: D,
             handleResetDismissibilityClick: k,
             handleResetStatusClick: O,
@@ -52,7 +52,7 @@ function L(e) {
             sourceQuestContent: e.sourceQuestContent
         }),
         G = (0, b.Lk)({
-            isShareable: w,
+            isShareable: M,
             questId: e.quest.id,
             trackingCtx: r.useMemo(() => ({
                 content: e.questContent,
@@ -74,7 +74,7 @@ function L(e) {
         W = r.useCallback(() => {
             (0, d.pX)(S.BVt.QUEST_PREVIEW_TOOL_2(e.quest.id))
         }, [e.quest.id]),
-        Y = e.shouldShowDisclosure && e.quest.id !== y.Fw;
+        z = e.shouldShowDisclosure && e.quest.id !== y.Fw;
     return (0, i.jsxs)(l.W1t, {
         "data-menu-migrated": !0,
         variant: "fixed",
@@ -94,7 +94,7 @@ function L(e) {
                     type: "icon",
                     icon: l.We5
                 }
-            }), w && (0, i.jsx)(l.Drp, {
+            }), M && (0, i.jsx)(l.Drp, {
                 id: "share-link",
                 label: j.intl.string(j.t.RDE0Sc),
                 action: G,
@@ -125,7 +125,7 @@ function L(e) {
                     type: "icon",
                     icon: l.r2v
                 }
-            }), Y && (0, i.jsx)(l.Drp, {
+            }), z && (0, i.jsx)(l.Drp, {
                 id: "display-disclosure",
                 label: j.intl.string(j.t.GcsZKJ),
                 action: () => {
@@ -172,7 +172,7 @@ function L(e) {
             }), (0, i.jsx)(l.Drp, {
                 id: "complete",
                 label: j.intl.string(j.t.jQEfRT),
-                action: M
+                action: w
             }), (0, E.g5)(e.quest) && (0, i.jsxs)(l.Drp, {
                 id: "console",
                 label: "Console Heartbeat",

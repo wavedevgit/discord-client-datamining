@@ -23,7 +23,7 @@ function _(e) {
         guildId: a,
         ref: _,
         motion: m
-    } = e, h = n.length > 4, p = h ? n.slice(0, 3) : n, g = Math.max(0, n.length - 4 + 1), A = p.length + +(g > 0), x = (m?.percentX ?? 0) * 6, f = (m?.percentY ?? 0) * 6, C = 1 + (m?.proximity ?? 0) / 2 * .08, [I, E] = (0, o.zhh)(() => ({
+    } = e, h = n.length > 4, p = h ? n.slice(0, 3) : n, g = h ? n.length - 4 + 1 : 0, A = Math.min(h ? p.length + 1 : p.length, 4), x = (m?.percentX ?? 0) * 6, f = (m?.percentY ?? 0) * 6, C = 1 + (m?.proximity ?? 0) / 2 * .08, [I, E] = (0, o.zhh)(() => ({
         x: 0,
         y: 0,
         scale: 1,
@@ -48,13 +48,13 @@ function _(e) {
             return (0, i.jsx)("div", {
                 className: c.my,
                 children: (0, i.jsx)(o.euF, {
-                    src: (n = 0 === t ? 80 : 56, (null != e.member ? (0, d.xT)(e.member) : null) ?? e.user.getAvatarURL(a, n)),
+                    src: (n = 0 === t ? 80 : 60, (null != e.member ? (0, d.xT)(e.member) : null) ?? e.user.getAvatarURL(a, n)),
                     size: 1 === A ? o._3J.SIZE_80 : 2 === A && 0 === t ? o._3J.DEPRECATED_SIZE_60 : 2 === A && 1 === t ? o._3J.SIZE_40 : A > 2 && 0 === t ? o._3J.DEPRECATED_SIZE_60 : A > 2 && 1 === t ? o._3J.SIZE_48 : A > 2 ? o._3J.SIZE_40 : o._3J.SIZE_48,
                     "aria-hidden": !0
-                }, e.user.id)
+                })
             }, e.user.id)
         }), h && (0, i.jsx)("div", {
-            className: c.k2,
+            className: l()(c.my, c.k2),
             children: (0, i.jsx)(o.Text, {
                 variant: "text-sm/semibold",
                 color: "text-default",

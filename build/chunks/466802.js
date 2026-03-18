@@ -1,6 +1,6 @@
 /** chunk id: 466802 params = (module,exports,require) **/
 n.d(t, {
-    A: () => z
+    A: () => Y
 });
 var i = n(627968),
     r = n(64700),
@@ -32,8 +32,8 @@ var i = n(627968),
     L = n(287809),
     R = n(67480),
     P = n(56739),
-    w = n(954571),
-    M = n(45938),
+    M = n(954571),
+    w = n(45938),
     D = n(927578),
     k = n(615396),
     O = n(427262),
@@ -120,7 +120,7 @@ class W extends r.Component {
             type: r,
             giftInfo: a
         } = this.props;
-        e.preventDefault(), e.stopPropagation(), w.default.track(B.HAw.OPEN_MODAL, {
+        e.preventDefault(), e.stopPropagation(), M.default.track(B.HAw.OPEN_MODAL, {
             type: "gift_accept",
             location: {
                 ...this.analyticsLocation,
@@ -364,8 +364,8 @@ class W extends r.Component {
         }) : this.renderEmbed()
     }
 }
-let Y = (0, h.A)((0, m.A)(W)),
-    z = function(e) {
+let z = (0, h.A)((0, m.A)(W)),
+    Y = function(e) {
         let {
             code: t,
             author: n
@@ -375,8 +375,8 @@ let Y = (0, h.A)((0, m.A)(W)),
         } = (0, d.cf)([N.A], () => ({
             giftCode: N.A.get(t),
             resolved: N.A.getIsResolved(t)
-        })), l = (0, d.bG)([L.default], () => null != r && null != r.userId ? L.default.getUser(r.userId) : null), s = (0, d.bG)([R.A], () => null != r ? R.A.get(r.skuId) : null), o = (0, d.bG)([j.A], () => null != s && r?.entitlementBranches != null ? M.YI(r.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, k.zz)(r?.subscriptionPlanId), _ = (0, d.bG)([S.default], () => null != r ? S.default.getId() === r.userId : S.default.getId() === n.id);
-        return (0, i.jsx)(Y, {
+        })), l = (0, d.bG)([L.default], () => null != r && null != r.userId ? L.default.getUser(r.userId) : null), s = (0, d.bG)([R.A], () => null != r ? R.A.get(r.skuId) : null), o = (0, d.bG)([j.A], () => null != s && r?.entitlementBranches != null ? w.YI(r.entitlementBranches, s, j.A) : null), c = (0, g.h)(s?.applicationId), u = (0, k.zz)(r?.subscriptionPlanId), _ = (0, d.bG)([S.default], () => null != r ? S.default.getId() === r.userId : S.default.getId() === n.id);
+        return (0, i.jsx)(z, {
             ...e,
             skuApplication: c,
             giftCode: r,

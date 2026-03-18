@@ -60,10 +60,10 @@ function I(e) {
     let R = f.intl.string(f.t.XpeFYr),
         P = "active";
     N && (R = f.intl.string(f.t.cEnaWx), P = "secondary");
-    let w = f.intl.string(f.t["3p3/BK"]);
-    return b && (w = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
+    let M = f.intl.string(f.t["3p3/BK"]);
+    return b && (M = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
-            text: w
+            text: M
         }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: C.iH,
