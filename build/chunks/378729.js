@@ -1,25 +1,22 @@
 /** chunk id: 378729 params = (module,exports,require) **/
 n.d(t, {
-    e8: () => a
+    e: () => s
 });
-var i = n(600975),
-    s = n(428835);
-let l = (0, i.C)({
-        id: "2025-11_game_update_notification",
+let i = (0, n(945810).mj)({
+        name: "2026-03-game-update-notification",
         kind: "user",
-        label: "Game Update Notification",
         defaultConfig: {
             showToggle: !1
         },
-        treatments: [{
-            id: 1,
-            label: "User can receive game update notifications. Show settings toggle.",
-            config: {
+        variations: {
+            0: {
+                showToggle: !1
+            },
+            1: {
                 showToggle: !0
             }
-        }]
+        }
     }),
-    a = e => (0, s.u5)(l, {
-        ...e,
-        autoTrackExposure: !1
+    s = e => i.useConfig({
+        location: e
     })
