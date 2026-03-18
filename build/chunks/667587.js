@@ -17,13 +17,13 @@ var l = n(627968),
     m = n(713654),
     x = n(414618),
     A = n(526132),
-    p = n(97469),
-    f = n(406704),
+    f = n(97469),
+    p = n(406704),
     b = n(544028),
     C = n(95701),
     j = n(291731),
-    v = n(176360),
-    N = n(863036),
+    N = n(176360),
+    v = n(863036),
     _ = n(734057),
     y = n(576705),
     S = n(994500),
@@ -36,9 +36,9 @@ var l = n(627968),
     w = n(159495),
     O = n(652215),
     G = n(985018),
-    k = n(175107);
+    D = n(175107);
 
-function D(e) {
+function k(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
         n = arguments.length > 2 ? arguments[2] : void 0;
     h.Ay.trackWithMetadata(O.HAw.SETTINGS_PANE_VIEWED, {
@@ -50,7 +50,7 @@ function D(e) {
 }
 class B extends i.PureComponent {
     componentDidMount() {
-        D(this.props.section, null, this.props.analyticsLocation)
+        k(this.props.section, null, this.props.analyticsLocation)
     }
     componentWillUnmount() {
         r.h.wait(() => (0, o.VN)())
@@ -67,7 +67,7 @@ class B extends i.PureComponent {
             canManageWebhooks: r,
             canUnlinkChannel: o
         } = this.props;
-        (a || s || r || o) && (l !== O.XlH.CLOSED || l === t) && (s || i !== O.p_A.PERMISSIONS) && (r || o || i !== O.p_A.INTEGRATIONS) ? i !== n && D(i, n): (0, d.jH)()
+        (a || s || r || o) && (l !== O.XlH.CLOSED || l === t) && (s || i !== O.p_A.PERMISSIONS) && (r || o || i !== O.p_A.INTEGRATIONS) ? i !== n && k(i, n): (0, d.jH)()
     }
     render() {
         let {
@@ -79,8 +79,8 @@ class B extends i.PureComponent {
             canManageRoles: r,
             canManageChannels: h,
             canDeleteChannels: A,
-            canManageWebhooks: p,
-            canUnlinkChannel: f
+            canManageWebhooks: f,
+            canUnlinkChannel: p
         } = this.props;
         return null == i ? null : (0, l.jsx)(c.Ay, {
             theme: e,
@@ -98,21 +98,21 @@ class B extends i.PureComponent {
                     canManageWebhooks: c,
                     canUnlinkChannel: h
                 } = e, A = (0, m.gU)(t), {
-                    GUILD_CATEGORY: p
-                } = O.rbe, f = C.Le.has(t.type), b = t.type === p ? G.intl.string(G.t.ifbXnL) : f ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
+                    GUILD_CATEGORY: f
+                } = O.rbe, p = C.Le.has(t.type), b = t.type === f ? G.intl.string(G.t.ifbXnL) : p ? t.isForumPost() ? G.intl.string(G.t.nEOg1N) : G.intl.string(G.t.H7vTe2) : G.intl.string(G.t["8D8Rsb"]);
                 return [{
                     section: u.Fq.HEADER,
                     label: null != t ? (0, l.jsxs)(l.Fragment, {
                         children: [null != A ? (0, l.jsx)(A, {
                             size: "xxs",
                             color: "currentColor",
-                            className: k.p
+                            className: D.p
                         }) : null, (0, g.m1)(t, E.default, S.A), null != n ? (0, l.jsx)(a.Text, {
                             tag: "span",
                             variant: "text-xs/semibold",
                             color: "text-default",
                             lineClamp: 1,
-                            className: k.L,
+                            className: D.L,
                             children: (0, g.m1)(n, E.default, S.A)
                         }) : null]
                     }) : G.intl.string(G.t.XPDhcc)
@@ -123,7 +123,7 @@ class B extends i.PureComponent {
                     element: L.A,
                     notice: {
                         element: L.w,
-                        stores: [N.A]
+                        stores: [v.A]
                     },
                     predicate: () => !t.isModeratorReportChannel()
                 }, {
@@ -132,15 +132,15 @@ class B extends i.PureComponent {
                     element: x.A,
                     notice: {
                         element: w.$,
-                        stores: [v.A]
+                        stores: [N.A]
                     },
-                    predicate: () => i && !f
+                    predicate: () => i && !p
                 }, {
                     section: O.p_A.INSTANT_INVITES,
                     label: G.intl.string(G.t["9F90ic"]),
                     element: R.A,
                     type: u.Py.CUSTOM,
-                    predicate: () => t.type !== p && s && !f && !t.isModeratorReportChannel()
+                    predicate: () => t.type !== f && s && !p && !t.isModeratorReportChannel()
                 }, {
                     section: O.p_A.INTEGRATIONS,
                     label: G.intl.string(G.t.s69NLF),
@@ -177,8 +177,8 @@ class B extends i.PureComponent {
                 canManageRoles: r,
                 canManageChannels: h,
                 canDeleteChannels: A,
-                canManageWebhooks: p,
-                canUnlinkChannel: f
+                canManageWebhooks: f,
+                canUnlinkChannel: p
             })
         })
     }
@@ -188,7 +188,7 @@ function P() {
     let {
         channel: e,
         analyticsLocation: t
-    } = (0, s.cf)([N.A], () => N.A.getProps()), n = (0, s.bG)([N.A], () => N.A.getFormState()), i = (0, s.bG)([N.A], () => N.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, p.NC)(), o = (0, f.NI)(e), d = (0, f.H_)(e), {
+    } = (0, s.cf)([v.A], () => v.A.getProps()), n = (0, s.bG)([v.A], () => v.A.getFormState()), i = (0, s.bG)([v.A], () => v.A.getSection()), a = (0, s.bG)([b.A], () => b.A.theme), r = (0, f.NC)(), o = (0, p.NI)(e), d = (0, p.H_)(e), {
         canManageChannels: c,
         canManageRoles: u,
         canManageWebhooks: h,

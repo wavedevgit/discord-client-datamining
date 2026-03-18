@@ -12,8 +12,8 @@ var i = n(627968),
     d = n(997509),
     c = n(985018),
     u = n(600854),
-    m = n(864608),
-    g = n(515176);
+    m = n(515176),
+    g = n(2330);
 
 function x(e) {
     let {
@@ -45,7 +45,7 @@ function x(e) {
             className: u.fi,
             children: (0, i.jsx)("img", {
                 alt: c.intl.string(c.t.UOJp5a),
-                src: (0, l.qB)(h) ? g.A : m.A,
+                src: (0, l.qB)(h) ? m.A : g.A,
                 className: u.WI
             })
         })]

@@ -18,13 +18,13 @@ var l = n(627968),
     m = n(397927),
     x = n(157559),
     A = n(308528),
-    p = n(702805),
-    f = n(442433),
+    f = n(702805),
+    p = n(442433),
     b = n(508384),
     C = n(155718),
     j = n(736653),
-    v = n(775602),
-    N = n(861197),
+    N = n(775602),
+    v = n(861197),
     _ = n(942234),
     y = n(233993),
     S = n(260509),
@@ -37,8 +37,8 @@ var l = n(627968),
     w = n(576705),
     O = n(287809),
     G = n(403362),
-    k = n(695184),
-    D = n(975571),
+    D = n(695184),
+    k = n(975571),
     B = n(562153),
     P = n(558393),
     U = n(488926),
@@ -54,7 +54,7 @@ let J = u.Ay.connectStores([T.A, M.A], () => {
     return {
         submitting: T.A.formState === W.XlH.SUBMITTING,
         onReset() {
-            (0, p.Ts)()
+            (0, f.Ts)()
         },
         onSave() {
             if (null == e) return;
@@ -62,7 +62,7 @@ let J = u.Ay.connectStores([T.A, M.A], () => {
                 let n = T.A.getPermissionOverwrite(t);
                 return null != n && e.push(n), e
             }, []);
-            (0, p.R$)(e.id, t)
+            (0, f.R$)(e.id, t)
         }
     }
 })(h.A);
@@ -99,7 +99,7 @@ function Q(e) {
                     allow: i,
                     deny: s
                 }
-            }))(0, p.LA)(n, t.id, i, s);
+            }))(0, f.LA)(n, t.id, i, s);
         else {
             let e;
             if (t.type === C.r2.MEMBER) {
@@ -117,14 +117,14 @@ function Q(e) {
     }, h = e => {
         let t = w.A.can(W.xBc.ADMINISTRATOR, i) || w.A.can(W.xBc.MANAGE_ROLES, n, void 0, void 0, !0);
         return n.isGuildStageVoice() && y.Zq.has(e) ? Y.intl.string(Y.t.bTS5lf) : !((!d.aI(e, W.xBc.MANAGE_ROLES) || t) && (null == e || w.A.can(e, i) || t)) && Y.intl.string(Y.t.nOtPMM)
-    }, g = t.id === a, f = n.isForumLikeChannel() && d.zy(t.deny, W.xBc.SEND_MESSAGES), b = d.zy(t.deny, W.xBc.SEND_MESSAGES), j = d.zy(t.deny, W.xBc.READ_MESSAGE_HISTORY), v = P.A.generateChannelPermissionSpec(a, n, g, {
-        createPostsDisabled: f,
+    }, g = t.id === a, p = n.isForumLikeChannel() && d.zy(t.deny, W.xBc.SEND_MESSAGES), b = d.zy(t.deny, W.xBc.SEND_MESSAGES), j = d.zy(t.deny, W.xBc.READ_MESSAGE_HISTORY), N = P.A.generateChannelPermissionSpec(a, n, g, {
+        createPostsDisabled: p,
         sendMessagesDisabled: b,
         readMessageHistoryDisabled: j
     });
-    return (0, l.jsxs)(N.Ay.Content, {
+    return (0, l.jsxs)(v.Ay.Content, {
         className: Z.uA,
-        children: [v.map((e, n) => (0, l.jsx)(_.A, {
+        children: [N.map((e, n) => (0, l.jsx)(_.A, {
             spec: e,
             allow: t.allow,
             deny: t.deny,
@@ -221,7 +221,7 @@ function $(e) {
                     showChevronButton: !1,
                     onQueryChange: e => {
                         let n = e.target.value;
-                        k.A.requestMembers(t.id, n, 20)
+                        D.A.requestMembers(t.id, n, 20)
                     }
                 })
             }), (0, l.jsx)(m.X2W, {
@@ -281,10 +281,10 @@ function K() {
         }, [d]),
         _ = (0, F.A)(d, a),
         y = (0, j.Ay)(),
-        E = (0, u.bG)([v.A], () => v.A.roleStyle),
+        E = (0, u.bG)([N.A], () => N.A.roleStyle),
         M = i.useCallback((e, t) => {
             if (null == s) return null;
-            (0, f.L3)(e, async () => {
+            (0, p.L3)(e, async () => {
                 let {
                     id: e,
                     role: i,
@@ -316,7 +316,7 @@ function K() {
             type: t,
             allow: U.x3,
             deny: U.x3
-        }).then(() => (0, p.G9)(e))
+        }).then(() => (0, f.G9)(e))
     };
     null != a && null == a[c.id] && (a[c.id] = U.xT(c.id));
     let w = h.filter(e => a[e.id]?.type === C.r2.ROLE).map(e => (0, l.jsx)(b.A, {
@@ -362,11 +362,11 @@ function K() {
                 })
             }, `${r}-${e.id}`)
         }).value();
-    return (0, l.jsx)(N.Ay.Sidebar, {
+    return (0, l.jsx)(v.Ay.Sidebar, {
         className: Z.uA,
         scrollable: !0,
         children: (0, l.jsxs)(m.VQ0, {
-            onItemSelect: p.G9,
+            onItemSelect: f.G9,
             selectedItem: r,
             orientation: "vertical",
             children: [(e = (0, g.Mw)(y) ? n(546716) : n(233497), (0, l.jsx)(m.YNO, {
@@ -409,7 +409,7 @@ function K() {
                         marginBottom: 14
                     }
                 }), (0, l.jsx)(m.MzZ, {
-                    href: D.A.getArticleURL(W.MVz.PERMISSIONS_TUTORIAL),
+                    href: k.A.getArticleURL(W.MVz.PERMISSIONS_TUTORIAL),
                     target: "_blank",
                     children: (0, l.jsx)(m.Text, {
                         variant: "text-sm/normal",
@@ -430,7 +430,7 @@ function ee() {
     } = (0, u.cf)([T.A], () => T.A);
     if (null == (0, u.bG)([L.A], () => null != e ? L.A.getGuild(e.getGuildId()) : null) || null == e || null == t || null == n) return null;
     let i = t[n];
-    return (0, l.jsxs)(N.Ay, {
+    return (0, l.jsxs)(v.Ay, {
         className: Z.kL,
         children: [(0, l.jsx)(K, {}), (0, l.jsx)(Q, {
             overwrite: i
