@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(990078),
-    a = n(319060),
+    r = n(64700),
+    a = n(990078),
+    l = n(319060),
     s = n(397927),
     o = n(793574),
     d = n(58149),
@@ -19,15 +19,15 @@ var i = n(627968),
     A = n(652215),
     x = n(788868),
     f = n(444736);
-let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
+let C = (0, _.xI)(l.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
     I = e => {
         let {
             renderableSticker: t,
             channel: n,
-            isInteracting: a
-        } = e, _ = l.useRef(null), [I, E] = l.useState(!0), [v, b] = l.useState(String(Date.now())), [T] = (0, m.Zq)(t, a), {
-            analyticsLocations: S
-        } = (0, c.Ay)(o.A.STICKER_MESSAGE), y = (0, i.jsxs)("span", {
+            isInteracting: l
+        } = e, _ = r.useRef(null), [I, E] = r.useState(!0), [v, b] = r.useState(String(Date.now())), [T] = (0, m.Zq)(t, l), {
+            analyticsLocations: y
+        } = (0, c.Ay)(o.A.STICKER_MESSAGE), S = (0, i.jsxs)("span", {
             className: f.Zl,
             children: [(0, i.jsx)(s.s2T, {
                 size: "xs",
@@ -36,7 +36,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
             }), (T ?? t).name]
         });
         return (0, i.jsx)(c.f5, {
-            value: S,
+            value: y,
             children: (0, i.jsx)("div", {
                 className: f.be,
                 children: (0, i.jsx)(s.YNO, {
@@ -57,10 +57,10 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                         let {
                             onClick: n
                         } = e;
-                        return (0, i.jsx)(r.m, {
+                        return (0, i.jsx)(a.m, {
                             ...u.Uk,
                             shouldShow: I,
-                            __unsupportedReactNodeAsText: (0, u.yR)(y),
+                            __unsupportedReactNodeAsText: (0, u.yR)(S),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;
@@ -80,7 +80,7 @@ let C = (0, _.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                                 },
                                 tag: "span",
                                 children: (0, i.jsx)(p.A, {
-                                    isInteracting: a,
+                                    isInteracting: l,
                                     size: C,
                                     sticker: T ?? t
                                 })

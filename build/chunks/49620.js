@@ -4,12 +4,12 @@ n.d(t, {
 });
 var r = n(627968);
 n(64700);
-var a = n(503698),
-    i = n.n(a),
+var i = n(503698),
+    a = n.n(i),
     l = n(990078),
     s = n(397927),
-    o = n(985018),
-    c = n(988573);
+    c = n(985018),
+    o = n(988573);
 let d = e => {
     let {
         className: t,
@@ -18,24 +18,24 @@ let d = e => {
     return n ? (0, r.jsx)(l.m, {
         position: "top",
         align: "left",
-        text: o.intl.string(o.t.y1VWkZ),
+        text: c.intl.string(c.t.y1VWkZ),
         children: (0, r.jsxs)("div", {
-            className: i()(c.GX, t),
+            className: a()(o.GX, t),
             children: [(0, r.jsx)("span", {
-                className: c.P0,
+                className: o.P0,
                 children: (0, r.jsx)(s.mir, {
                     size: "md",
                     color: "currentColor",
-                    className: c.G
+                    className: o.G
                 })
             }), (0, r.jsx)(s.Text, {
                 variant: "text-md/semibold",
-                children: o.intl.string(o.t.BEjTij)
+                children: c.intl.string(c.t.BEjTij)
             })]
         })
     }) : (0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         className: t,
-        children: o.intl.string(o.t["6cfuDj"])
+        children: c.intl.string(c.t["6cfuDj"])
     })
 }

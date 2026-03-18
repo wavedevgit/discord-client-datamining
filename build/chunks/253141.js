@@ -2,26 +2,26 @@
 n.d(t, {
     EY: () => d,
     KW: () => c,
-    a: () => a,
+    a: () => l,
     ig: () => o,
     kt: () => s
 });
 var i = n(198982);
 n(576705);
-var l = n(652215),
-    r = n(985018);
-let a = "_role";
+var r = n(652215),
+    a = n(985018);
+let l = "_role";
 
 function s(e) {
     if (!(e >= 0)) switch (-e) {
-        case l.t02.ENTITY_TOO_LARGE:
-            return r.intl.string(r.t.YbdEFK);
-        case l.t02.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
-            return r.intl.string(r.t.ZaXBoD);
+        case r.t02.ENTITY_TOO_LARGE:
+            return a.intl.string(a.t.YbdEFK);
+        case r.t02.INVALID_SKU_ATTACHMENT_NO_ARCHIVES:
+            return a.intl.string(a.t.ZaXBoD);
         case 1:
-            return r.intl.string(r.t.R0RpRX);
+            return a.intl.string(a.t.R0RpRX);
         default:
-            return r.intl.formatToPlainString(r.t.cYwlp9, {
+            return a.intl.formatToPlainString(a.t.cYwlp9, {
                 code: -e
             })
     }
@@ -33,12 +33,12 @@ function o(e) {
     } = e;
     if (null != t && "" === t.name.trim()) {
         var n;
-        return n = r.intl.string(r.t["V0B/k6"]), new i.LG({
+        return n = a.intl.string(a.t["V0B/k6"]), new i.LG({
             status: 400,
             body: {
                 message: "Invalid form body",
                 errors: {
-                    [a]: {
+                    [l]: {
                         _errors: [{
                             code: "",
                             message: n
@@ -55,14 +55,14 @@ function d(e) {
         guildProductListing: t,
         name: n,
         priceTier: i,
-        description: l,
-        image: r,
-        imageName: a,
+        description: r,
+        image: a,
+        imageName: l,
         isImageChanged: s,
         newRoleParams: o,
         hasUnsavedAttachmentChanges: d
     } = e, c = {};
-    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== l && (c.description = l), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), r.startsWith("data:") && (s || null == t && (Object.keys(c).length > 0 || d)) && (c.image = r, c.imageName = a);
+    t?.name !== n && "" !== n.trim() && (c.name = n), (t?.description ?? "") !== r && (c.description = r), t?.price_tier !== i && null != i && (c.priceTier = i), null != o && "" !== o.name.trim() ? c.createNewRole = !0 : null === o && (c.unlinkRole = !0), a.startsWith("data:") && (s || null == t && (Object.keys(c).length > 0 || d)) && (c.image = a, c.imageName = l);
     let u = Object.keys(c).length > 0 || d;
     return {
         changes: c,
@@ -74,5 +74,5 @@ function d(e) {
 }
 
 function c(e, t) {
-    return `${location.protocol}//${location.host}${l.BVt.GUILD_PRODUCT(e,t)}`
+    return `${location.protocol}//${location.host}${r.BVt.GUILD_PRODUCT(e,t)}`
 }

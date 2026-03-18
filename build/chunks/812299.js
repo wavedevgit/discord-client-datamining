@@ -1,49 +1,49 @@
 /** chunk id: 812299 params = (module,exports,require) **/
-n.d(t, {
-    k: () => d,
+a.d(t, {
+    k: () => c,
     y: () => o
 });
-var l = n(627968);
-n(64700);
-var a = n(709066),
-    r = n(455207),
-    i = n(943667),
-    s = n(679740);
+var n = a(627968);
+a(64700);
+var l = a(709066),
+    r = a(455207),
+    i = a(943667),
+    s = a(679740);
 
-function d(e) {
+function c(e) {
     let t, {
-        message: n,
-        channel: l,
+        message: a,
+        channel: n,
         user: s,
-        isRepliedMessage: d
+        isRepliedMessage: c
     } = e;
-    return n?.isSystemDM() ? t = a.A.Types.SYSTEM_DM : null != n && (0, i.A)(n) ? t = (0, r.MZ)(n) ? a.A.Types.OFFICIAL : a.A.Types.SERVER : s?.bot ? t = a.A.Types.BOT : null != l && l.isForumPost() && l.ownerId === s?.id && !d && (t = a.A.Types.ORIGINAL_POSTER), t
+    return a?.isSystemDM() ? t = l.A.Types.SYSTEM_DM : null != a && (0, i.A)(a) ? t = (0, r.MZ)(a) ? l.A.Types.OFFICIAL : l.A.Types.SERVER : s?.bot ? t = l.A.Types.BOT : null != n && n.isForumPost() && n.ownerId === s?.id && !c && (t = l.A.Types.ORIGINAL_POSTER), t
 }
 
 function o(e) {
     let {
         message: t,
-        channel: n,
+        channel: a,
         user: r,
         compact: i,
         isRepliedMessage: o,
-        hideIcon: c = !1,
-        children: u
-    } = e, _ = d({
+        hideIcon: u = !1,
+        children: _
+    } = e, d = c({
         message: t,
-        channel: n,
+        channel: a,
         user: r,
         compact: i,
         isRepliedMessage: o,
-        hideIcon: c,
-        children: u
+        hideIcon: u,
+        children: _
     });
-    return null == _ ? null : (0, l.jsx)(a.A, {
+    return null == d ? null : (0, n.jsx)(l.A, {
         className: i ? s.jW : s.RQ,
-        type: _,
+        type: d,
         verified: r?.isVerifiedBot(),
-        hideIcon: c,
+        hideIcon: u,
         useRemSizes: !0,
-        children: u
+        children: _
     })
 }

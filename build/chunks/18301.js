@@ -1,21 +1,21 @@
 /** chunk id: 18301 params = (module,exports,require) **/
 n.d(t, {
-    A: () => r
+    A: () => a
 });
 var i = n(627968);
 n(64700);
-var l = n(953727);
+var r = n(953727);
 
-function r(e) {
+function a(e) {
     let {
         width: t = 24,
         height: n = 24,
-        color: r = "currentColor",
-        foreground: a,
+        color: a = "currentColor",
+        foreground: l,
         ...s
     } = e;
     return (0, i.jsx)("svg", {
-        ...(0, l.A)(s),
+        ...(0, r.A)(s),
         width: t,
         height: n,
         viewBox: "0 0 24 24",
@@ -23,8 +23,8 @@ function r(e) {
             fill: "none",
             fillRule: "evenodd",
             children: [(0, i.jsx)("path", {
-                className: a,
-                fill: r,
+                className: l,
+                fill: a,
                 d: "M4 11.526V6.553l5.684-1.25v6.138L4 11.526zM20.105 3v8.29l-9.473.142V5.094L20.105 3zM4 12.474l5.684.085v6.452L4 17.92v-5.447zm16.105.237V21l-9.473-1.81v-6.622l9.473.143z"
             }), (0, i.jsx)("rect", {
                 width: "24",

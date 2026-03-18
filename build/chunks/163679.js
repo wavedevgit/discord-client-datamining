@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(278466),
     m = n(805866),
     h = n(627575),
-    p = n(870341),
-    x = n(686267),
+    x = n(870341),
+    p = n(686267),
     g = n(231723),
     _ = n(818348),
     f = n(646284),
@@ -35,7 +35,7 @@ function A(e) {
         r(t)
     }, [t]), (0, a.jsxs)(u.h.Provider, {
         value: o,
-        children: [(0, a.jsx)(x.A, {}), (0, a.jsx)(p.A, {
+        children: [(0, a.jsx)(p.A, {}), (0, a.jsx)(x.A, {
             onSubmit: n,
             disabled: s
         })]
@@ -45,12 +45,12 @@ let C = function(e) {
     let {
         transitionState: t,
         onClose: n
-    } = e, [u, p] = i.useState(null), [x, C] = i.useState(!0), [y, T] = i.useState(null), [S, E] = i.useState(!1), N = i.useCallback(async () => {
+    } = e, [u, x] = i.useState(null), [p, C] = i.useState(!0), [y, T] = i.useState(null), [S, E] = i.useState(!1), N = i.useCallback(async () => {
         C(!0), T(null);
         try {
             let e = await (0, c.$R)();
             if (null == e) return void n();
-            !(0, d.uJ)(e.ui_component?.component.type) && m.Vn.has(e.ui_component.component.type) ? p(e) : p({
+            !(0, d.uJ)(e.ui_component?.component.type) && m.Vn.has(e.ui_component.component.type) ? x(e) : x({
                 task_id: e.task_id,
                 task_type: m.wP.REFRESH_APP,
                 assignment_id: e.assignment_id,
@@ -90,14 +90,14 @@ let C = function(e) {
     (0, l.Ay)(() => {
         N()
     });
-    let k = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
+    let R = i.useMemo(() => u?.task_type === m.wP.AGE_VERIFICATION, [u]);
     return (0, a.jsxs)("div", {
         className: b.Tp,
         children: [(0, a.jsx)("img", {
             className: b.xX,
             src: j,
             alt: ""
-        }), k ? (0, a.jsx)(o.default, {
+        }), R ? (0, a.jsx)(o.default, {
             transitionState: t ?? g.ip.ENTERED,
             entryPoint: r.q1.SAFETY_FLOWS,
             onClose: _.tE,
@@ -109,7 +109,7 @@ let C = function(e) {
             dismissable: !1
         }) : (0, a.jsx)("div", {
             className: b.nA,
-            children: x ? (0, a.jsx)(s.y$y, {
+            children: p ? (0, a.jsx)(s.y$y, {
                 type: s.y$y.Type.SPINNING_CIRCLE
             }) : (0, a.jsx)("div", {
                 className: b.kL,

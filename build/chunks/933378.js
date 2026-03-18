@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(962173),
     m = n(341915),
     h = n(890687),
-    p = n(18437),
-    x = n(590202),
+    x = n(18437),
+    p = n(590202),
     g = n(971649),
     _ = n(901406),
     f = n(792620),
@@ -40,7 +40,7 @@ function S(e) {
         useReducedMotion: n
     } = e, s = (0, b.H1)(t.id, m.uF.QUEST_BAR_V2, m.uF.QUEST_BAR_V2), o = (0, b.Xf)({
         useReducedMotion: n
-    }), c = (0, p.Ut)(), f = (0, g.go)(), {
+    }), c = (0, x.Ut)(), f = (0, g.go)(), {
         errorHints: j,
         startingConsoleQuest: A,
         startConsoleQuest: S
@@ -50,7 +50,7 @@ function S(e) {
             c({
                 questId: t.id,
                 questContent: m.uF.QUEST_BAR_V2,
-                questContentCTA: x.Cy.DEFIBRILLATOR,
+                questContentCTA: p.Cy.DEFIBRILLATOR,
                 sourceQuestContent: m.uF.QUEST_BAR_V2
             }), o.startAnimation()
         },
@@ -82,7 +82,7 @@ function S(e) {
                                         platformType: l
                                     }, {
                                         content: m.uF.QUEST_BAR,
-                                        ctaContent: x.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
+                                        ctaContent: p.Cy.DEFIBRILLATOR_RECONNECT_CONSOLE,
                                         impressionId: f,
                                         sourceQuestContent: m.uF.QUEST_BAR_V2
                                     })
@@ -141,8 +141,8 @@ let E = function(e) {
     } = e, s = (0, o.bG)([c.A], () => c.A.useReducedMotion), l = (0, h.Du)(), r = i.useMemo(() => (0, _.bg)(t).filter(e => l.xboxAndPlaystationAccounts.find(t => t.type === e)), [l.xboxAndPlaystationAccounts, t]), {
         steps: d,
         hasConnectedAccounts: u,
-        isProgressingQuestForLaunchedGame: p,
-        isQuestComplete: x
+        isProgressingQuestForLaunchedGame: x,
+        isQuestComplete: p
     } = i.useMemo(() => {
         let e = r.length > 0,
             i = e && (0, f.YL)(t),
@@ -179,7 +179,7 @@ let E = function(e) {
     return (0, a.jsx)(A.Ay, {
         heading: C.intl.string(C.t.UPWlJu),
         steps: d,
-        children: u && !p && !x && (0, a.jsx)(S, {
+        children: u && !x && !p && (0, a.jsx)(S, {
             useReducedMotion: s,
             quest: t
         })

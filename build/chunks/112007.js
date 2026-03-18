@@ -3,9 +3,9 @@ n.d(t, {
     A: () => T
 }), n(938796);
 var i = n(627968),
-    l = n(64700),
-    r = n(821418),
-    a = n(665260),
+    r = n(64700),
+    a = n(821418),
+    l = n(665260),
     s = n(311907),
     o = n(990078),
     d = n(397927),
@@ -26,57 +26,57 @@ var i = n(627968),
     b = n(563111);
 
 function T(e) {
-    let t, T, S, {
-            onTransitionToInviteChannel: y,
+    let t, T, y, {
+            onTransitionToInviteChannel: S,
             onAcceptInstantInvite: N,
             guild: j,
             invite: L,
             message: R,
             currentUserId: P
         } = e,
-        M = P === R.author.id,
+        w = P === R.author.id,
         {
             channel: D,
-            approximate_member_count: w,
-            approximate_presence_count: O
+            approximate_member_count: M,
+            approximate_presence_count: k
         } = L,
-        k = L.state === E.elq.ACCEPTING,
+        O = L.state === E.elq.ACCEPTING,
         U = null != D ? (0, A.OY)(D) : null,
         B = null != j,
         G = null != U,
         F = null != U && U.isGuildStageVoice(),
-        H = (0, a.Lt)(L.flags ?? 0, r.Q.IS_GUEST_INVITE),
+        H = (0, l.Lt)(L.flags ?? 0, a.Q.IS_GUEST_INVITE),
         V = U?.isGuildVoiceOrThread() ?? !1,
-        W = j?.features.has(E.GuildFeatures.HUB) ?? !1,
-        q = j?.id,
+        q = j?.features.has(E.GuildFeatures.HUB) ?? !1,
+        W = j?.id,
         {
             analyticsLocations: Y
         } = (0, _.Ay)(u.A.INVITE_EMBED),
-        [z, Q] = l.useState(!1),
-        K = l.useCallback(() => Q(!1), []),
-        J = l.useRef(null),
-        X = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
-        Z = l.useCallback(() => {
-            Q(!0), (0, c.Pq)(q, "show profile", Y)
-        }, [q, Y]),
-        $ = l.useCallback(() => {
+        [z, Q] = r.useState(!1),
+        K = r.useCallback(() => Q(!1), []),
+        X = r.useRef(null),
+        J = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
+        Z = r.useCallback(() => {
+            Q(!0), (0, c.Pq)(W, "show profile", Y)
+        }, [W, Y]),
+        $ = r.useCallback(() => {
             let e = "noop";
-            B ? (y(), e = "transition") : (N(), e = "accept"), (0, c.he)({
+            B ? (S(), e = "transition") : (N(), e = "accept"), (0, c.he)({
                 invite: L,
                 action: e,
                 inviter_id: R.author.id,
                 invite_message_id: R.id
             }, Y)
-        }, [L, R, Y, B, y, N]);
+        }, [L, R, Y, B, S, N]);
     if (null == j) {
         if (null == L.guild) return (0, i.jsx)(I.A, {});
         (j = f.DY(L.guild)).premiumTier = L.guild.premium_tier ?? E.TVA.NONE
     }
     let ee = (0, C.l)({
         isVoiceChannel: V,
-        isOwnInvite: M,
+        isOwnInvite: w,
         isGuest: H,
-        isHubGuild: W,
+        isHubGuild: q,
         isStage: F,
         isStream: !1
     });
@@ -87,10 +87,10 @@ function T(e) {
             name: j.name,
             shouldShow: z,
             onRequestClose: K,
-            targetElementRef: J,
+            targetElementRef: X,
             children: () => (0, i.jsx)(g.A.GuildName, {
                 guild: j,
-                ref: J
+                ref: X
             })
         }), (0, i.jsx)("span", {
             className: b.E3,
@@ -100,7 +100,7 @@ function T(e) {
                 disableBoostClick: !0
             })
         })]
-    }), H && (S = (0, i.jsx)(o.m, {
+    }), H && (y = (0, i.jsx)(o.m, {
         asContainer: !0,
         text: v.intl.string(v.t["/FeTK6"]),
         children: (0, i.jsx)(d.mir, {
@@ -121,9 +121,9 @@ function T(e) {
                 isBannerVisible: !1
             })
         })]
-    })) : null != w && w >= 5 || null != O && O > 0 ? t = (0, i.jsx)(g.A.Data, {
-        members: w,
-        membersOnline: O
+    })) : null != M && M >= 5 || null != k && k > 0 ? t = (0, i.jsx)(g.A.Data, {
+        members: M,
+        membersOnline: k
     }) : G && (t = (0, i.jsx)(g.A.Channel, {
         channel: U,
         guild: j
@@ -132,7 +132,7 @@ function T(e) {
             guild: j
         }), (0, i.jsx)(g.A.Header, {
             text: ee,
-            extra: S
+            extra: y
         }), (0, i.jsxs)(g.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: b.iH,
@@ -147,10 +147,10 @@ function T(e) {
                 className: b.UD,
                 children: (0, i.jsx)(d.Button, {
                     onClick: $,
-                    loading: k,
+                    loading: O,
                     variant: "active",
                     fullWidth: V,
-                    disabled: !X,
+                    disabled: !J,
                     text: V ? F ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : B ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
                 })
             })]

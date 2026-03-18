@@ -1,12 +1,12 @@
 /** chunk id: 136301 params = (module,exports,require) **/
 a.d(t, {
-    o: () => d
+    o: () => o
 });
 var l = a(627968),
     r = a(397927),
     n = a(673277),
     s = a(634791);
-let d = {
+let o = {
     name: "The Any Block",
     id: "any",
     component: () => (0, l.jsxs)("div", {

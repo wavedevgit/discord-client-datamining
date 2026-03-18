@@ -3,9 +3,9 @@ n.d(t, {
     A: () => c
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(172710),
-    a = n(456060),
+    r = n(64700),
+    a = n(172710),
+    l = n(456060),
     s = n(659051),
     o = n(798899),
     d = n(829963);
@@ -20,8 +20,8 @@ function c(e) {
         partyStatusElement: m,
         presenceActivity: h,
         guildId: p
-    } = e, g = !(0, s.A)(h, u, t.id), A = (0, a.n$)(t.name, u.activity?.type, g), x = l.useMemo(() => {
-        if (null != h) return () => (0, r.Mp)(h)
+    } = e, g = !(0, s.A)(h, u, t.id), A = (0, l.n$)(t.name, u.activity?.type, g), x = r.useMemo(() => {
+        if (null != h) return () => (0, a.Mp)(h)
     }, [h]);
     return g ? (0, i.jsx)(o.A, {
         application: t,

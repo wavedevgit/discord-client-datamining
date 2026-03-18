@@ -7,8 +7,8 @@ a(64700);
 var r = a(397927),
     n = a(261225),
     s = a(673277),
-    d = a(458306),
-    o = a(18769);
+    o = a(458306),
+    d = a(18769);
 let i = {
     name: "FeaturedCollection",
     id: "featured-collection",
@@ -18,8 +18,8 @@ let i = {
             backgroundImage: a,
             logoSrc: i,
             supplementalImage: c,
-            ctaText: x,
-            href: u
+            ctaText: u,
+            href: x
         } = e, h = {
             backgroundImage: {
                 src: a
@@ -30,15 +30,15 @@ let i = {
             supplementalImage: {
                 src: c
             },
-            ctaText: x,
-            href: u
+            ctaText: u,
+            href: x
         };
         return (0, l.jsxs)("div", {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Featured Collection will take up the full width of the parent, so it is best suited for CmsStack or Grid parents"
             }), (0, l.jsx)(s.A, {
-                children: (0, l.jsx)(o.A, {
+                children: (0, l.jsx)(d.A, {
                     ...h
                 })
             }), (0, l.jsxs)(s.A, {
@@ -47,9 +47,9 @@ let i = {
                     children: ["Grid (", t, "):"]
                 }), (0, l.jsxs)(n.A, {
                     columns: t,
-                    children: [(0, l.jsx)(o.A, {
+                    children: [(0, l.jsx)(d.A, {
                         ...h
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...h
                     })]
                 })]
@@ -57,15 +57,15 @@ let i = {
                 children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, l.jsxs)(d.Kp, {
+                }), (0, l.jsxs)(o.Kp, {
                     direction: "horizontal",
-                    children: [(0, l.jsx)(o.A, {
+                    children: [(0, l.jsx)(d.A, {
                         ...h
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...h
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...h
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...h
                     })]
                 })]

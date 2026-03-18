@@ -24,9 +24,9 @@ function m(e, t, n, m) {
     let {
         icon: x,
         title: E,
-        body: v
+        body: y
     } = (0, l.TB)(e, t, n), {
-        trackView: y,
+        trackView: v,
         trackClick: S
     } = (0, A.Y)(g.KS.TextChat, {
         notif_type: g.KS.TextChat,
@@ -40,7 +40,7 @@ function m(e, t, n, m) {
     return {
         icon: x,
         title: E,
-        body: v,
+        body: y,
         renderFooter: e => e ? (0, i.jsx)("div", {
             style: {
                 textAlign: "center"
@@ -49,7 +49,7 @@ function m(e, t, n, m) {
         }) : null,
         maxBodyLines: 2,
         onNotificationShow: () => {
-            m && (0, o.Ak)(d.cH, d.pD), y()
+            m && (0, o.Ak)(d.cH, d.pD), v()
         },
         onNotificationClick: () => {
             if (a.default.isOverlayOOPEnabledForPid((0, p.getPID)())) {

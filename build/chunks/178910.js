@@ -5,9 +5,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(104171),
-    a = n(652215),
+var r = n(397927),
+    a = n(104171),
+    l = n(652215),
     s = n(985018),
     o = n(958505);
 
@@ -15,19 +15,19 @@ function d(e) {
     let {
         activityUsers: t,
         guildId: n,
-        activityText: a
+        activityText: l
     } = e;
     return (0, i.jsxs)("div", {
         className: o.i,
-        children: [(0, i.jsx)(r.Ay, {
+        children: [(0, i.jsx)(a.Ay, {
             guildId: n,
             users: t,
             max: 6,
-            size: r.DN.SIZE_16
-        }), (0, i.jsx)(l.Text, {
+            size: a.DN.SIZE_16
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "none",
-            children: a
+            children: l
         })]
     })
 }
@@ -38,23 +38,23 @@ function c(e) {
         activityUsersCount: n
     } = e;
     switch (t?.type) {
-        case a.$pd.STREAMING:
+        case l.$pd.STREAMING:
             return {
                 text: s.intl.formatToPlainString(s.t.tyCw2q, {
                     count: n
-                }), Icon: l.ofK
+                }), Icon: r.ofK
             };
-        case a.$pd.LISTENING:
+        case l.$pd.LISTENING:
             return {
                 text: s.intl.formatToPlainString(s.t["2l8yka"], {
                     count: n
-                }), Icon: l.T7G
+                }), Icon: r.T7G
             };
         default:
             return {
                 text: s.intl.formatToPlainString(s.t.yJj035, {
                     count: n
-                }), Icon: l._xR
+                }), Icon: r._xR
             }
     }
 }

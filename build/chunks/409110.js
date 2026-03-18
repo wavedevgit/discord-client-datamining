@@ -21,7 +21,7 @@ var i = n(627968),
     m = n(407195),
     x = n(61714),
     E = n(652215);
-let v = {
+let y = {
     [E.uss.TEXT](e) {
         let {
             dragging: t,
@@ -83,7 +83,7 @@ let v = {
         })
     }
 };
-class y extends s.PureComponent {
+class v extends s.PureComponent {
     state = {
         lastLayoutUpdate: null,
         dragging: !1
@@ -157,7 +157,7 @@ class y extends s.PureComponent {
             state: {
                 dragging: l
             }
-        } = this, a = v[e.type];
+        } = this, a = y[e.type];
         return null == a ? null : r => a({
             id: e.id,
             locked: i,
@@ -190,11 +190,11 @@ class y extends s.PureComponent {
             resizeX: m,
             resizeY: x,
             dragAnywhere: E
-        } = t, v = (0, _.AE)({
+        } = t, y = (0, _.AE)({
             locked: s,
             isPreviewingInGame: l,
             pinned: o
-        }), y = {
+        }), v = {
             minX: 0,
             minY: 0,
             maxX: n.width,
@@ -204,9 +204,9 @@ class y extends s.PureComponent {
             id: r,
             size: f,
             anchor: g,
-            container: y,
+            container: v,
             minSize: A,
-            hidden: !v,
+            hidden: !y,
             resizeX: m,
             resizeY: x,
             style: {
@@ -233,7 +233,7 @@ let S = l.Ay.connectStores([c.A, u.default], e => {
         isPreviewingInGame: u.default.isPreviewingInGame(),
         isActiveRegion: null != n && n.type === E.uss.TEXT && i.has(E.ajI.TEXT_WIDGET)
     }
-})(y);
+})(v);
 
 function C(e, t) {
     return (0, i.jsx)(S, {

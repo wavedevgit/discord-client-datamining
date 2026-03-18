@@ -1,9 +1,9 @@
 /** chunk id: 943667 params = (module,exports,require) **/
-n.d(t, {
-    A: () => a
+a.d(t, {
+    A: () => l
 });
-var l = n(652215);
+var n = a(652215);
 
-function a(e) {
-    return e.type === l.lAJ.DEFAULT && null != e.messageReference && e.messageReference.type !== l.SH7.FORWARD
+function l(e) {
+    return e.type === n.lAJ.DEFAULT && null != e.messageReference && e.messageReference.type !== n.SH7.FORWARD
 }

@@ -1,6 +1,6 @@
 /** chunk id: 950966 params = (module,exports,require) **/
 a.d(t, {
-    Z: () => d
+    Z: () => o
 });
 var l = a(627968);
 a(64700);
@@ -24,7 +24,7 @@ let s = e => {
             })
         })
     },
-    d = {
+    o = {
         name: "Stack",
         id: "cms-stack",
         component: e => (0, l.jsxs)(l.Fragment, {

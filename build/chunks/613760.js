@@ -3,9 +3,9 @@ n.d(t, {
     A: () => x
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(172218),
-    a = n(607399),
+    r = n(64700),
+    a = n(172218),
+    l = n(607399),
     s = n(417597),
     o = n(485724),
     d = n(529200),
@@ -22,24 +22,24 @@ function x(e) {
     let {
         code: t,
         message: n
-    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, v] = l.useState(!1), b = l.useCallback(e => {
+    } = e, [x, f, C] = (0, s.yK)([h.A], () => [h.A.getApplication(t), h.A.isInvalidApplication(t), h.A.getApplicationFetchState(t)], [t]), I = (0, s.bG)([u.A], () => u.A.getGuildId() ?? void 0), [E, v] = r.useState(!1), b = r.useCallback(e => {
         e && v(!0)
-    }, []), T = (0, r.K)(b), S = l.useCallback(() => {
+    }, []), T = (0, a.K)(b), y = r.useCallback(() => {
         _.default.track(p.HAw.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
             application_id: t,
-            device_platform: a.Fr ? "mobile_web" : "desktop_web",
+            device_platform: l.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
             guild_id: I,
             channel_id: n.channel_id
         })
     }, [t, I, n.author.id, n.channel_id]);
-    return (l.useEffect(() => {
+    return (r.useEffect(() => {
         (0, m.eP)(t)
-    }, [t]), l.useEffect(() => {
-        E && C === h.e.FETCHED && S()
-    }, [E, C, S]), l.useEffect(() => {
+    }, [t]), r.useEffect(() => {
+        E && C === h.e.FETCHED && y()
+    }, [E, C, y]), r.useEffect(() => {
         E && f && _.default.track(p.HAw.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
-            device_platform: a.Fr ? "mobile_web" : "desktop_web",
+            device_platform: l.Fr ? "mobile_web" : "desktop_web",
             sender_user_id: n.author.id,
             guild_id: I,
             channel_id: n.channel_id
@@ -70,7 +70,7 @@ function x(e) {
     }) : (0, i.jsx)(o.W, {
         app: c.Ay.createFromServer(x),
         linkType: o.J.APP_DISCOVERY,
-        onView: S,
+        onView: y,
         message: n
     })
 }

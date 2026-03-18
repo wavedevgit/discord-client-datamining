@@ -1,8 +1,7 @@
 /** chunk id: 161918 params = (module,exports,require) **/
-"use strict";
 a.d(t, {
     Mk: () => s,
-    iM: () => i
+    iM: () => o
 });
 var l = a(627968),
     r = a(64700);
@@ -12,7 +11,7 @@ function s() {
     return r.useContext(n)
 }
 
-function i(e) {
+function o(e) {
     let {
         tab: t,
         children: a

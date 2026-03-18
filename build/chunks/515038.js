@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(775602),
     m = n(409626),
     h = n(106799),
-    p = n(714510),
-    x = n(890687),
+    x = n(714510),
+    p = n(890687),
     g = n(710969),
     _ = n(92246),
     f = n(453384),
@@ -34,8 +34,8 @@ function N(e) {
         questContent: n,
         isHovering: s,
         contentPosition: N,
-        rowIndex: k,
-        isVisibleInViewport: R,
+        rowIndex: R,
+        isVisibleInViewport: k,
         onReceiveErrorHints: O,
         sourceQuestContent: w
     } = e, D = i.useRef(null), M = (0, _.mq)(t.config), P = (0, _.mH)(t.config), U = t.userStatus?.enrolledAt != null, {
@@ -54,7 +54,7 @@ function N(e) {
     }), W = t.userStatus?.completedAt != null, H = t.userStatus?.claimedAt != null, K = (0, _.ks)(t.config), z = (0, _._Z)(t.config), {
         completedRatio: $,
         completedRatioDisplay: q
-    } = (0, x.O9)(t), Q = (0, p.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
+    } = (0, p.O9)(t), Q = (0, x.gj)(t, w, m.Ob.QuestHome, D), Y = i.useMemo(() => H && K ? T.intl.format(T.t["8Op4c4"], {
         balanceHook: () => (0, a.jsxs)(I, {
             questId: t.id,
             children: [(0, a.jsx)(h.A, {
@@ -97,7 +97,7 @@ function N(e) {
             },
             className: S.z,
             children: [(0, a.jsx)(A.A, {
-                showPlaceholder: !R,
+                showPlaceholder: !k,
                 width: 80,
                 height: 80,
                 children: (0, a.jsxs)("div", {
@@ -164,7 +164,7 @@ function N(e) {
             quest: t,
             questContent: n,
             contentPosition: N,
-            rowIndex: k,
+            rowIndex: R,
             onReceiveErrorHints: O,
             sourceQuestContent: w
         })]

@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(989349),
-    r = n.n(l),
-    a = n(827734),
+var r = n(989349),
+    a = n.n(r),
+    l = n(827734),
     s = n(397927),
     o = n(393033),
     d = n(239093),
@@ -51,7 +51,7 @@ function h(e) {
     let {
         ctaType: t,
         classificationId: n,
-        learnMoreLink: l
+        learnMoreLink: r
     } = e;
     switch (t) {
         case d.xw.POLICY_VIOLATION_DETAIL:
@@ -60,9 +60,9 @@ function h(e) {
                 classificationId: n
             });
         case d.xw.LEARN_MORE_LINK:
-            if (null == l) return null;
+            if (null == r) return null;
             return (0, i.jsx)(m, {
-                learnMoreLink: l
+                learnMoreLink: r
             });
         default:
             return null
@@ -75,10 +75,10 @@ function p(e) {
     } = e, n = {
         default: (0, i.jsx)(s.koX, {
             size: "xs",
-            color: a.A.colors.TEXT_LINK.css
+            color: l.A.colors.TEXT_LINK.css
         }),
         danger: (0, i.jsx)(s.id, {
-            color: a.A.colors.ICON_FEEDBACK_CRITICAL
+            color: l.A.colors.ICON_FEEDBACK_CRITICAL
         })
     };
     return null != t && t in n ? (0, i.jsx)("div", {
@@ -91,12 +91,12 @@ function g(e) {
     let {
         children: t,
         theme: n
-    } = e, l = {
+    } = e, r = {
         default: u._y,
         danger: u.yk
     };
     return (0, i.jsx)("div", {
-        className: l[n ?? "default"],
+        className: r[n ?? "default"],
         children: t
     })
 }
@@ -122,7 +122,7 @@ function A(e) {
                 children: (0, i.jsx)(s.Text, {
                     variant: "text-xs/medium",
                     children: c.intl.format(c.t.eevFb6, {
-                        daysAgo: (t = n.timestamp ?? 0, r()().diff(r().unix(t), "days"))
+                        daysAgo: (t = n.timestamp ?? 0, a()().diff(a().unix(t), "days"))
                     })
                 })
             }), (0, i.jsx)("div", {

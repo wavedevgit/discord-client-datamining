@@ -1,11 +1,11 @@
 /** chunk id: 175335 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => y
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(110259),
     o = n(311907),
     d = n(827734),
@@ -26,17 +26,17 @@ var i = n(627968),
     b = n(985018),
     T = n(266847);
 
-function S(e) {
+function y(e) {
     let {
         guildId: t
     } = e, n = (0, o.bG)([x.A], () => x.A.getGuild(t)), {
-        loading: r,
-        subscriptionsSettings: S
+        loading: a,
+        subscriptionsSettings: y
     } = (0, C.G)(t), {
-        listingsLoaded: y
+        listingsLoaded: S
     } = (0, p.bb)(t), N = (0, p.fZ)(t, {
         publishedOnly: !0
-    }), j = l.useCallback(async () => {
+    }), j = r.useCallback(async () => {
         f.default.track(v.HAw.GUILD_SHOP_EMBED_CLICKED, {
             ...(0, _.H$)(t)
         }), await (0, g.A)(v.BVt.SERVER_SHOP(t))
@@ -48,13 +48,13 @@ function S(e) {
         disableTrack: null == n
     });
     let L = N.length > 0 ? new Date(Math.min(...N.map(e => Date.parse(e.published_at)))) : void 0;
-    return r || !y ? (0, i.jsx)("div", {
-        className: a()(T.lm, T.dc),
+    return a || !S ? (0, i.jsx)("div", {
+        className: l()(T.lm, T.dc),
         children: (0, i.jsx)(u.y$y, {})
-    }) : null == n || null == S ? null : (0, i.jsxs)("div", {
+    }) : null == n || null == y ? null : (0, i.jsxs)("div", {
         className: T.lm,
         children: [(0, i.jsx)(I.C, {
-            coverImageAsset: S.cover_image_asset ?? null
+            coverImageAsset: y.cover_image_asset ?? null
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsxs)("div", {
@@ -83,7 +83,7 @@ function S(e) {
             variant: "text-sm/normal",
             color: "text-muted",
             lineClamp: 2,
-            children: S.description
+            children: y.description
         }), (0, i.jsx)(u.hKd, {
             size: 16
         }), (0, i.jsx)(A.A, {}), (0, i.jsx)(u.hKd, {

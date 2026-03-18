@@ -1,12 +1,12 @@
 /** chunk id: 937266 params = (module,exports,require) **/
 n.d(t, {
-    A: () => y,
+    A: () => S,
     k: () => N
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(936504),
-    a = n(311907),
+    r = n(64700),
+    a = n(936504),
+    l = n(311907),
     s = n(421380),
     o = n(800342),
     d = n(820284),
@@ -23,7 +23,7 @@ var i = n(627968),
     C = n(652215),
     I = n(985018),
     E = n(449880);
-class v extends l.Component {
+class v extends r.Component {
     static defaultProps = {
         renderFallback: C.tEg
     };
@@ -87,14 +87,14 @@ class v extends l.Component {
     renderApplicationTile = (e, t) => {
         let {
             inLibrary: n,
-            width: l,
-            renderCustomTitle: r,
-            renderCustomTagline: a,
+            width: r,
+            renderCustomTitle: a,
+            renderCustomTagline: l,
             renderCustomMedia: s
         } = this.props, {
             playing: o,
             muted: d
-        } = this.state, c = l > m.Tm;
+        } = this.state, c = r > m.Tm;
         return (0, i.jsx)(_.A, {
             sku: e,
             storeListing: t,
@@ -103,8 +103,8 @@ class v extends l.Component {
             inLibrary: n,
             onToggleMute: this.handleToggleMute,
             renderCustomActions: () => this.renderActions(e),
-            renderCustomTitle: r,
-            renderCustomTagline: a,
+            renderCustomTitle: a,
+            renderCustomTagline: l,
             renderCustomMedia: s,
             isHorizontal: c,
             isEmbed: !0
@@ -114,17 +114,17 @@ class v extends l.Component {
         let {
             inLibrary: t,
             application: n,
-            skuId: l,
-            libraryApplication: r,
-            renderCustomActions: a
+            skuId: r,
+            libraryApplication: a,
+            renderCustomActions: l
         } = this.props;
-        if (null != a) return (0, i.jsx)("div", {
+        if (null != l) return (0, i.jsx)("div", {
             className: E.i,
-            children: a()
+            children: l()
         });
         if (null == n) return null;
-        let s = null != n && n.primarySkuId === l,
-            o = null != r && r.hasFlag(C.hM6.HIDDEN);
+        let s = null != n && n.primarySkuId === r,
+            o = null != a && a.hasFlag(C.hM6.HIDDEN);
         return (0, i.jsxs)("div", {
             className: E.i,
             children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(c.A, {
@@ -146,17 +146,17 @@ class v extends l.Component {
             sku: e,
             storeListing: t,
             width: n,
-            fetchFailed: l,
-            renderFallback: a
+            fetchFailed: r,
+            renderFallback: l
         } = this.props, s = n > m.Tm;
-        return null == e || null == t ? l ? a() : (0, i.jsx)(m.Wb, {
+        return null == e || null == t ? r ? l() : (0, i.jsx)(m.Wb, {
             isHorizontal: s
         }) : e.productLine === C.EZt.COLLECTIBLES ? (0, i.jsx)(d.A, {
             section: C.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(d.A, {
             section: C.JJy.APPLICATION_EMBED,
-            children: (0, i.jsx)(r.N_, {
+            children: (0, i.jsx)(a.N_, {
                 onClick: this.handleLinkClick,
                 to: C.BVt.APPLICATION_STORE,
                 onMouseEnter: this.handleMouseEnter,
@@ -181,6 +181,6 @@ function T(e) {
         libraryApplication: null != n ? A.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let S = (0, p.A)((0, h.A)(v)),
-    y = a.Ay.connectStores(b, T)(S),
-    N = (0, h.A)(a.Ay.connectStores(b, T)(v))
+let y = (0, p.A)((0, h.A)(v)),
+    S = l.Ay.connectStores(b, T)(y),
+    N = (0, h.A)(l.Ay.connectStores(b, T)(v))

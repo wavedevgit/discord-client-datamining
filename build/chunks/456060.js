@@ -7,73 +7,73 @@ n.d(t, {
     n$: () => o
 });
 var i = n(287809),
-    l = n(562153),
-    r = n(652215),
-    a = n(985018),
+    r = n(562153),
+    a = n(652215),
+    l = n(985018),
     s = n(426127);
 
 function o(e, t, n) {
     switch (t) {
-        case r.xL.LISTEN:
-            return a.intl.formatToPlainString(a.t["/8czH4"], {
+        case a.xL.LISTEN:
+            return l.intl.formatToPlainString(l.t["/8czH4"], {
                 name: e
             });
-        case r.xL.WATCH:
-            return a.intl.formatToPlainString(a.t.BBJXVk, {
+        case a.xL.WATCH:
+            return l.intl.formatToPlainString(l.t.BBJXVk, {
                 name: e
             });
-        case r.xL.JOIN:
-            return n ? void 0 : a.intl.string(a.t.pkq6Vq);
-        case r.xL.STREAM_REQUEST:
-            return a.intl.string(s.default.DKHhec);
-        case r.xL.JOIN_REQUEST:
+        case a.xL.JOIN:
+            return n ? void 0 : l.intl.string(l.t.pkq6Vq);
+        case a.xL.STREAM_REQUEST:
+            return l.intl.string(s.default.DKHhec);
+        case a.xL.JOIN_REQUEST:
         default:
-            return a.intl.string(a.t.Ckxb6j)
+            return l.intl.string(l.t.Ckxb6j)
     }
 }
 
 function d(e, t, n) {
-    return e.author.id === n ? a.intl.string(s.default["8B3U5O"]) : a.intl.formatToPlainString(s.default["d/qbC0"], {
-        username: (0, l.mG)(t.guild_id, t.id, e.author)
+    return e.author.id === n ? l.intl.string(s.default["8B3U5O"]) : l.intl.formatToPlainString(s.default["d/qbC0"], {
+        username: (0, r.mG)(t.guild_id, t.id, e.author)
     })
 }
 
-function c(e, t, n, l, r) {
-    if (e.author.id === l) {
+function c(e, t, n, r, a) {
+    if (e.author.id === r) {
         if (n.isPrivate()) {
             let e = i.default.getUser(n.getRecipientId());
-            if (null != e) return r ? a.intl.formatToPlainString(a.t.JddpN2, {
+            if (null != e) return a ? l.intl.formatToPlainString(l.t.JddpN2, {
                 username: e.globalName,
                 appName: t
-            }) : a.intl.formatToPlainString(a.t.gYVkSW, {
+            }) : l.intl.formatToPlainString(l.t.gYVkSW, {
                 username: e.globalName,
                 appName: t
             })
         }
-        return r ? a.intl.formatToPlainString(a.t["2N1kNS"], {
+        return a ? l.intl.formatToPlainString(l.t["2N1kNS"], {
             appName: t
-        }) : a.intl.formatToPlainString(a.t.IA6uDV, {
+        }) : l.intl.formatToPlainString(l.t.IA6uDV, {
             appName: t
         })
     }
-    return r ? a.intl.formatToPlainString(a.t.XE8axA, {
+    return a ? l.intl.formatToPlainString(l.t.XE8axA, {
         username: e.author.globalName,
         appName: t
-    }) : a.intl.formatToPlainString(a.t.hgcjOn, {
+    }) : l.intl.formatToPlainString(l.t.hgcjOn, {
         username: e.author.globalName,
         appName: t
     })
 }
 
-function u(e, t, n, i, l) {
+function u(e, t, n, i, r) {
     switch (e.activity?.type) {
-        case r.xL.LISTEN:
-        case r.xL.WATCH:
-        case r.xL.JOIN:
-            return a.intl.string(l ? a.t.x1UXGR : a.t["Ek+51n"]);
-        case r.xL.STREAM_REQUEST:
+        case a.xL.LISTEN:
+        case a.xL.WATCH:
+        case a.xL.JOIN:
+            return l.intl.string(r ? l.t.x1UXGR : l.t["Ek+51n"]);
+        case a.xL.STREAM_REQUEST:
             return d(e, n, i);
-        case r.xL.JOIN_REQUEST:
+        case a.xL.JOIN_REQUEST:
         default:
             return c(e, t, n, i, !0)
     }
@@ -85,15 +85,15 @@ function _(e) {
         maxPartySize: n,
         partySize: i
     } = e;
-    return t === r.xL.STREAM_REQUEST ? "" : t === r.xL.LISTEN ? n > 0 ? a.intl.formatToPlainString(a.t.Zogoou, {
+    return t === a.xL.STREAM_REQUEST ? "" : t === a.xL.LISTEN ? n > 0 ? l.intl.formatToPlainString(l.t.Zogoou, {
         partySize: i,
         maxPartySize: n
-    }) : a.intl.formatToPlainString(a.t.UGei0j, {
+    }) : l.intl.formatToPlainString(l.t.UGei0j, {
         partySize: i
-    }) : n > 0 ? a.intl.formatToPlainString(a.t.gLu7NU, {
+    }) : n > 0 ? l.intl.formatToPlainString(l.t.gLu7NU, {
         partySize: i,
         maxPartySize: n
-    }) : a.intl.formatToPlainString(a.t["65JnWC"], {
+    }) : l.intl.formatToPlainString(l.t["65JnWC"], {
         partySize: i
     })
 }

@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(971649),
     m = n(901406),
     h = n(270045),
-    p = n(57718),
-    x = n(398025),
+    x = n(57718),
+    p = n(398025),
     g = n(545986),
     _ = n(568329),
     f = n(963713),
@@ -23,13 +23,13 @@ var a = n(627968),
 n(272111);
 var j = n(985018),
     A = n(116224);
-let C = (0, r.animated)(p.Ay),
+let C = (0, r.animated)(x.Ay),
     y = e => {
         let {
             withUnfurlTimeout: t,
             unfurlTimeoutDurationInMilliseconds: n,
             onUnfurlTimeoutComplete: s
-        } = e, p = (0, u.go)(), {
+        } = e, x = (0, u.go)(), {
             expansionSpring: y
         } = i.useContext(_.PW), {
             onCtxMenuOpen: T,
@@ -37,27 +37,27 @@ let C = (0, r.animated)(p.Ay),
             onCtxMenuSelect: E,
             isExpanded: N,
             isExpansionAnimationComplete: I,
-            quest: k
-        } = i.useContext(f.T), R = i.useCallback(() => {
-            (0, g.Zc)(k, {
+            quest: R
+        } = i.useContext(f.T), k = i.useCallback(() => {
+            (0, g.Zc)(R, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_DISCLOSURE,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [k]), O = i.useCallback(() => {
-            (0, m.pu)(k, {
+        }, [R]), O = i.useCallback(() => {
+            (0, m.pu)(R, {
                 content: d.uF.QUEST_BAR_V2,
                 ctaContent: c.Cy.OPEN_GAME_LINK,
-                impressionId: p,
+                impressionId: x,
                 sourceQuestContent: d.uF.QUEST_BAR_V2
             })
-        }, [p, k]), w = N && I, D = (0, a.jsx)(o.DUT, {
+        }, [x, R]), w = N && I, D = (0, a.jsx)(o.DUT, {
             onClick: O,
             className: l()(A.vk, {
                 [A.wm]: w
             }),
             children: (0, a.jsx)(C, {
-                quest: k,
+                quest: R,
                 withGameTile: !1,
                 logotypeClassName: A.Iu,
                 logotypeStyle: {
@@ -83,7 +83,7 @@ let C = (0, r.animated)(p.Ay),
             children: [(0, a.jsx)(r.animated.div, {
                 className: A.Tu,
                 style: {
-                    opacity: (0, x.a)(y.to({
+                    opacity: (0, p.a)(y.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
@@ -94,14 +94,14 @@ let C = (0, r.animated)(p.Ay),
             }), (0, a.jsxs)(r.animated.div, {
                 className: A.P0,
                 style: {
-                    opacity: (0, x.a)(y.to({
+                    opacity: (0, p.a)(y.to({
                         range: [0, 1],
                         output: [0, 1]
                     }))
                 },
                 children: [(0, a.jsxs)(o.DUT, {
                     className: A.y8,
-                    onClick: R,
+                    onClick: k,
                     children: [(0, a.jsx)(o.Text, {
                         color: "always-white",
                         variant: "text-xs/normal",
@@ -121,7 +121,7 @@ let C = (0, r.animated)(p.Ay),
                     onClose: S,
                     onSelect: E,
                     questContent: d.uF.QUEST_BAR_V2,
-                    quest: k,
+                    quest: R,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
                     sourceQuestContent: d.uF.QUEST_BAR_V2,

@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(900686),
     m = n(817363),
     h = n(287070),
-    p = n(239606),
-    x = n(287809),
+    x = n(239606),
+    p = n(287809),
     g = n(43708),
     _ = n(14752),
     f = n(930442),
@@ -125,7 +125,7 @@ let A = {
             effect: t
         } = e, {
             upsertConfig: n
-        } = (0, g.wu)(), s = (0, o.bG)([x.default], () => x.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [k, R] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
+        } = (0, g.wu)(), s = (0, o.bG)([p.default], () => p.default.getCurrentUser()), [d, j] = i.useState(!0), y = i.useRef({}), [T, E] = i.useState(!1), [N, I] = i.useState(!1), [R, k] = i.useState(8), [O, w] = i.useState([]), [D, M] = i.useState(A), P = i.useRef([]), [U, L] = i.useState(t.name), B = U.toLowerCase().replace(/\s+/g, "_"), G = i.useMemo(() => ({
             id: C,
             skuId: C,
             title: C,
@@ -278,20 +278,20 @@ let A = {
                         min: 4,
                         max: 24,
                         step: 2,
-                        value: k,
-                        onChange: e => R(+e.target.value)
+                        value: R,
+                        onChange: e => k(+e.target.value)
                     }), (0, a.jsxs)(c.Text, {
                         variant: "text-sm/normal",
-                        children: [k, "px"]
+                        children: [R, "px"]
                     })]
                 }), (0, a.jsxs)("div", {
                     className: l()(v.nz, v.VH),
                     style: {
-                        borderRadius: k
+                        borderRadius: R
                     },
                     children: [N ? (0, a.jsx)("div", {
                         className: v.jq,
-                        children: (0, a.jsx)(p.A, {
+                        children: (0, a.jsx)(x.A, {
                             user: s,
                             currentUser: s,
                             transitionState: c.ip4.ENTERED,
@@ -318,7 +318,7 @@ let A = {
                     children: N && (0, a.jsxs)("div", {
                         className: l()(v.f5, v.VH),
                         style: {
-                            borderRadius: k
+                            borderRadius: R
                         },
                         children: [(0, a.jsx)(h.A, {
                             user: s,

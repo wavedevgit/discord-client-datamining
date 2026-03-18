@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(582754),
     m = n(397927),
     h = n(736653),
-    p = n(775602),
-    x = n(607470),
+    x = n(775602),
+    p = n(607470),
     g = n(409626),
     _ = n(829219),
     f = n(859703),
@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(651892),
     N = n(901406),
     I = n(792620),
-    k = n(814793),
-    R = n(241124),
+    R = n(814793),
+    k = n(241124),
     O = n(212614),
     w = n(79545),
     D = n(646764),
@@ -60,10 +60,10 @@ let X = i.forwardRef(function(e, t) {
         autoPlay: o = !1
     } = e, {
         isExpanded: c
-    } = i.useContext(W.T), u = (0, d.bG)([p.A], () => p.A.useReducedMotion), m = i.useRef(null);
+    } = i.useContext(W.T), u = (0, d.bG)([x.A], () => x.A.useReducedMotion), m = i.useRef(null);
     return i.useEffect(() => {
         null != m.current && (c && (!u || n) ? (m.current.currentTime = 0, m.current.play()) : m.current.pause())
-    }, [m, c, n, u]), (0, U.A)(m, q.rE.QUESTS_BAR), (0, a.jsx)(x.A, {
+    }, [m, c, n, u]), (0, U.A)(m, q.rE.QUESTS_BAR), (0, a.jsx)(p.A, {
         ref: e => {
             m.current = e, null != t && ("function" == typeof t ? t(e) : t.current = e)
         },
@@ -86,7 +86,7 @@ function Z(e) {
         onClick: t
     } = e, {
         quest: n
-    } = i.useContext(W.T), s = (0, d.bG)([p.A], () => p.A.useReducedMotion), [r, o] = i.useState(!1), u = (0, T.tW)(n, T.fY.QUEST_BAR_HERO_VIDEO, void 0, !1), h = (0, T.tW)(n, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), x = (0, b.Kr)(e => e.getVideoProgressState)(n.id), g = n.userStatus?.completedAt != null && x === b.K2.COMPLETED, _ = !g && (!s || r);
+    } = i.useContext(W.T), s = (0, d.bG)([x.A], () => x.A.useReducedMotion), [r, o] = i.useState(!1), u = (0, T.tW)(n, T.fY.QUEST_BAR_HERO_VIDEO, void 0, !1), h = (0, T.tW)(n, T.fY.VIDEO_PLAYER_THUMBNAIL, void 0, !1), p = (0, b.Kr)(e => e.getVideoProgressState)(n.id), g = n.userStatus?.completedAt != null && p === b.K2.COMPLETED, _ = !g && (!s || r);
     return (0, a.jsxs)(m.DUT, {
         className: J.QO,
         onClick: t,
@@ -96,7 +96,7 @@ function Z(e) {
         onMouseLeave: () => {
             s && r && o(!1)
         },
-        children: [null != h && (0, a.jsx)(R.Sn, {
+        children: [null != h && (0, a.jsx)(k.Sn, {
             id: "QuestBarContentExpanded_videoThumbnail",
             children: e => (0, a.jsx)("img", {
                 ref: e,
@@ -104,7 +104,7 @@ function Z(e) {
                 src: h.url,
                 className: J.Ue
             })
-        }), null != u ? (0, a.jsx)(R.Sn, {
+        }), null != u ? (0, a.jsx)(k.Sn, {
             id: "QuestBarContentExpanded_video",
             children: e => (0, a.jsx)(X, {
                 ref: e,
@@ -150,12 +150,12 @@ function et(e) {
         onAcceptQuest: o
     } = e, {
         quest: c,
-        onGameSheetOpen: p,
-        onGameSheetClose: x,
+        onGameSheetOpen: x,
+        onGameSheetClose: p,
         taskDetails: _
     } = i.useContext(W.T), {
         expansionSpring: b
-    } = i.useContext(L.PW), N = i.useRef(null), I = (0, d.bG)([f.A], () => f.A.isEnrolling(c.id), [c]), k = i.useMemo(() => (0, T.tW)(c, t ? T.fY.QUEST_BAR_HERO_IMAGE : T.fY.QUEST_BAR_HERO), [c, t]), D = (0, C.NA)({
+    } = i.useContext(L.PW), N = i.useRef(null), I = (0, d.bG)([f.A], () => f.A.isEnrolling(c.id), [c]), R = i.useMemo(() => (0, T.tW)(c, t ? T.fY.QUEST_BAR_HERO_IMAGE : T.fY.QUEST_BAR_HERO), [c, t]), D = (0, C.NA)({
         quest: c
     }), U = i.useMemo(() => (0, T.tW)(c, T.fY.HERO_IMAGE), [c]), B = i.useMemo(() => null == U ? {} : {
         backgroundImage: `url(${U.url})`
@@ -168,8 +168,8 @@ function et(e) {
         taskDetails: _,
         sourceQuestContent: v.uF.QUEST_BAR_V2,
         popoutTargetElementRef: N,
-        onGameSheetOpened: p,
-        onGameSheetClosed: x,
+        onGameSheetOpened: x,
+        onGameSheetClosed: p,
         gameProfileSource: g.Ob.QuestBar
     }), K = (0, w.Pd)(c), {
         primaryCtaButtonVariant: z
@@ -248,21 +248,21 @@ function et(e) {
                 backdropFilter: (0, M.Q)(b.to([0, 1], [5, 0]).to(e => `blur(${e}px)`)),
                 filter: (0, M.Q)(b.to([0, 1], [.8, 1]).to(e => `brightness(${e})`))
             },
-            children: [k.isAnimated ? (0, a.jsx)(R.Sn, {
+            children: [R.isAnimated ? (0, a.jsx)(k.Sn, {
                 id: "QuestBarContentExpanded_heroAnimated",
                 children: e => (0, a.jsx)(X, {
                     ref: e,
                     autoPlay: !0,
-                    asset: k,
+                    asset: R,
                     className: J.LO
                 })
-            }) : (0, a.jsx)(R.Sn, {
+            }) : (0, a.jsx)(k.Sn, {
                 id: "QuestBarContentExpanded_heroStatic",
                 children: e => (0, a.jsx)("img", {
                     ref: e,
                     alt: "",
                     className: J.LO,
-                    src: k.url
+                    src: R.url
                 })
             }), (0, a.jsx)("div", {
                 className: l()(J.tV, {
@@ -282,7 +282,7 @@ function en(e) {
         taskDetails: d
     } = i.useContext(W.T), {
         expansionSpring: c
-    } = i.useContext(L.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(s), [p, x, g] = (0, y.Qo)(s, d), _ = i.useRef(null), f = i.useRef(null), b = (0, y.RR)({
+    } = i.useContext(L.PW), u = s.userStatus?.completedAt != null, m = d.percentComplete > 0, h = (0, y.Vn)(s), [x, p, g] = (0, y.Qo)(s, d), _ = i.useRef(null), f = i.useRef(null), b = (0, y.RR)({
         quest: s
     }), j = (0, I.vv)(s), A = (0, y.I3)(s), C = i.useCallback(() => {
         (0, P.d5)({
@@ -318,10 +318,10 @@ function en(e) {
                 progressBarRef: _,
                 isExpanded: !0,
                 percentComplete: T,
-                activeScreen: p,
+                activeScreen: x,
                 popoutTargetElementRef: f
             }), (0, a.jsx)(V.T, {
-                children: !u && !(0, N.W1)(s) && (0, o.YW)(p).with(v.X0.SELECT, () => (0, a.jsx)($.A, {
+                children: !u && !(0, N.W1)(s) && (0, o.YW)(x).with(v.X0.SELECT, () => (0, a.jsx)($.A, {
                     onConsole: () => g(q.fO.CONSOLE),
                     onDesktop: () => g(q.fO.DESKTOP)
                 })).with(v.X0.DESKTOP, () => (0, a.jsx)(H.A, {
@@ -337,8 +337,8 @@ function en(e) {
                     awaitingConsoleConnections: b,
                     hasMadeProgress: m,
                     isProgressing: h,
-                    activeScreen: p,
-                    showBackButton: p !== v.X0.SELECT && x.length > 1 && !m && !h,
+                    activeScreen: x,
+                    showBackButton: x !== v.X0.SELECT && p.length > 1 && !m && !h,
                     onBack: () => g(null),
                     sourceQuestContent: v.uF.QUEST_BAR_V2
                 })]
@@ -357,7 +357,7 @@ async function ea(e, t, n, a) {
         questContentCTA: n,
         sourceQuestContent: a,
         sourceQuestContentCTA: n
-    }) : (0, k.vA)(e) ? await (0, _.Oy)(e.id, {
+    }) : (0, R.vA)(e) ? await (0, _.Oy)(e.id, {
         questContent: t,
         questContentCTA: n,
         sourceQuestContent: a
@@ -379,13 +379,13 @@ let ei = i.forwardRef(function(e, t) {
         isExpansionAnimationComplete: m,
         quest: h
     } = i.useContext(W.T), {
-        expansionSpring: p
+        expansionSpring: x
     } = i.useContext(L.PW), {
-        launchInGameActivity: x
-    } = (0, y.zW)(h), g = (0, k.vA)(h), _ = i.useCallback(async () => {
+        launchInGameActivity: p
+    } = (0, y.zW)(h), g = (0, R.vA)(h), _ = i.useCallback(async () => {
         let e = g ? S.Cy.START_QUEST : S.Cy.ACCEPT_QUEST;
-        await ea(h, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
-    }, [h, x, g]), f = h.userStatus?.enrolledAt != null, b = u && m;
+        await ea(h, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && p()
+    }, [h, p, g]), f = h.userStatus?.enrolledAt != null, b = u && m;
     return (0, a.jsxs)(r.animated.div, {
         "aria-hidden": !b,
         className: l()(s, J.Rh, {
@@ -393,10 +393,10 @@ let ei = i.forwardRef(function(e, t) {
             [J.iH]: f
         }),
         style: {
-            transform: (0, r.to)([p.to({
+            transform: (0, r.to)([x.to({
                 range: [0, 1],
                 output: [0, -100]
-            }), p.to({
+            }), x.to({
                 range: [0, 1],
                 output: [0, c]
             })], (e, t) => `translateY(calc(${e}% + ${t}px))`)

@@ -1,6 +1,6 @@
 /** chunk id: 587084 params = (module,exports,require) **/
 n.d(t, {
-    L: () => p,
+    L: () => x,
     r: () => h
 });
 var a = n(311907),
@@ -32,7 +32,7 @@ function h(e) {
     return (0, s.ww)(h && n && !u ? [i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2] : [], e ?? m.eGj)
 }
 
-function p(e) {
+function x(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
             shouldShow: n = !0
@@ -43,8 +43,8 @@ function p(e) {
         c = (0, a.bG)([o.A], () => o.A.getGuild(r)?.profile?.tag),
         m = null != c && l?.identityGuildId === r && l?.tag === null,
         h = null != r && d?.tag === c,
-        p = null !== r && m && !h;
-    return (0, s.Wl)(p && n ? i.M.GUILD_TAG_UPDATED_COACHMARK : null, {
+        x = null !== r && m && !h;
+    return (0, s.Wl)(x && n ? i.M.GUILD_TAG_UPDATED_COACHMARK : null, {
         cooldownDurationMs: 864e5
     })
 }

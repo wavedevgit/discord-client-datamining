@@ -21,16 +21,16 @@ var i = n(627968),
     m = n(178442),
     x = n(71393),
     E = n(430452),
-    v = n(994500),
-    y = n(287809),
+    y = n(994500),
+    v = n(287809),
     S = n(977997),
     C = n(572487),
     I = n(855790),
     N = n(652215),
     T = n(985018),
     O = n(737398),
-    j = n(255259);
-class b extends s.PureComponent {
+    b = n(255259);
+class j extends s.PureComponent {
     rtcConnectionStatusRef = s.createRef();
     handleToggleSelfMute = () => {
         let {
@@ -66,14 +66,14 @@ class b extends s.PureComponent {
     renderChannelLink(e) {
         let {
             guild: t
-        } = this.props, n = (0, p.m1)(e, y.default, v.A), s = null != t ? `${n} / ${t.name}` : n, l = null != t ? t.id : N.ME;
+        } = this.props, n = (0, p.m1)(e, v.default, y.A), s = null != t ? `${n} / ${t.name}` : n, l = null != t ? t.id : N.ME;
         return (0, i.jsx)(r.N_, {
             to: N.BVt.CHANNEL(l),
             onClick: t => {
                 t.stopPropagation(), u.A.channelListScrollTo(l, e.id)
             },
             children: (0, i.jsx)(g.A, {
-                className: j.Ix,
+                className: b.Ix,
                 children: s
             })
         })
@@ -100,7 +100,7 @@ class b extends s.PureComponent {
                 className: a()(t, O.Qs),
                 dynamicSize: !0,
                 children: [(0, i.jsx)("div", {
-                    className: j.vW,
+                    className: b.vW,
                     children: (0, i.jsx)(d.YNO, {
                         targetElementRef: this.rtcConnectionStatusRef,
                         renderPopout: () => this.renderPopout(l.id),
@@ -148,7 +148,7 @@ function D(e) {
         channel: s,
         ...l
     } = e, a = (0, o.bG)([x.A], () => x.A.getGuild(s?.getGuildId())), r = (0, o.bG)([S.A], () => null != s && S.A.hasVideo(s.id)), [d, c] = (0, o.yK)([E.Ay], () => [E.Ay.isSelfMute(t) || E.Ay.isSelfMutedTemporarily(t), E.Ay.isSelfDeaf(t)]), [u, h, p] = (0, o.yK)([C.A], () => [C.A.getConnectionState(n), C.A.getLastPing(n), C.A.getQuality(n)]);
-    return (0, i.jsx)(b, {
+    return (0, i.jsx)(j, {
         ...l,
         context: t,
         lobbyId: n,

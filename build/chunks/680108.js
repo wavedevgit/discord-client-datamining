@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(817363),
     m = n(315949),
     h = n(559474),
-    p = n(259248),
-    x = n(43708),
+    x = n(259248),
+    p = n(43708),
     g = n(14752),
     _ = n(103748),
     f = n(553622);
@@ -25,7 +25,7 @@ let v = "Make sure you're only uploading text files!",
             onClick: n
         } = e, {
             deleteConfig: i
-        } = (0, x.wu)();
+        } = (0, p.wu)();
         return (0, a.jsxs)(d.DUT, {
             className: f.B0,
             onClick: () => {
@@ -57,7 +57,7 @@ function j() {
         profileEffects: e,
         upsertConfig: t,
         clearAll: n
-    } = (0, x.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([p.A], () => p.A.getAllProfileEffects());
+    } = (0, p.wu)(), [s, j] = i.useState(), A = i.useRef(null), C = (0, o.yK)([x.A], () => x.A.getAllProfileEffects());
     (0, m.A)();
     let [y, T] = i.useState(""), S = i.useMemo(() => "" === y ? C : C.filter(e => {
         let t = y.toLowerCase(),

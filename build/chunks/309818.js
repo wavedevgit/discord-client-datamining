@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(284009),
-    a = n.n(r),
+    r = n(64700),
+    a = n(284009),
+    l = n.n(a),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -24,51 +24,51 @@ var i = n(627968),
 function I(e) {
     let t, {
             invite: n,
-            message: r,
+            message: a,
             currentUserId: I,
             onTransitionToInviteChannel: E,
             onAcceptInstantInvite: v
         } = e,
-        b = I === r.author.id,
+        b = I === a.author.id,
         T = n.state === x.elq.ACCEPTING,
-        S = (0, o.bG)([h.A], () => null != n.channel ? h.A.getChannel(n.channel.id) : null, [n]);
-    a()(null == S || S.isPrivate(), "must be a private channel");
+        y = (0, o.bG)([h.A], () => null != n.channel ? h.A.getChannel(n.channel.id) : null, [n]);
+    l()(null == y || y.isPrivate(), "must be a private channel");
     let {
-        analyticsLocations: y
-    } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != S, j = l.useCallback(() => {
+        analyticsLocations: S
+    } = (0, u.Ay)(c.A.INVITE_EMBED), N = null != y, j = r.useCallback(() => {
         let e = "noop";
         N ? (E(), e = "transition") : (v(), e = "accept"), (0, d.he)({
             invite: n,
             action: e,
-            inviter_id: r.author.id,
-            invite_message_id: r.id
-        }, y)
-    }, [n, r, y, N, E, v]);
-    if (null == S) {
+            inviter_id: a.author.id,
+            invite_message_id: a.id
+        }, S)
+    }, [n, a, S, N, E, v]);
+    if (null == y) {
         if (null == n.channel) return (0, i.jsx)(A.A, {});
-        S = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
+        y = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
-        t = S.recipients.reduce((e, t) => {
+        t = y.recipients.reduce((e, t) => {
             let n = p.default.getUser(t);
             return null != n && e.push(n), e
         }, []);
         let e = p.default.getCurrentUser();
         N && null != e && t.push(e)
     }
-    let L = S.name;
+    let L = y.name;
     (null == L || "" === L) && (L = t.length > 0 ? t.filter(g.Vq).map(e => e.username).join(", ") : f.intl.string(f.t.LJpTRF));
     let R = f.intl.string(f.t.XpeFYr),
         P = "active";
     N && (R = f.intl.string(f.t.cEnaWx), P = "secondary");
-    let M = f.intl.string(f.t["3p3/BK"]);
-    return b && (M = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
+    let w = f.intl.string(f.t["3p3/BK"]);
+    return b && (w = f.intl.string(f.t.qmtuXE)), (0, i.jsxs)(_.A, {
         children: [(0, i.jsx)(_.A.Header, {
-            text: M
+            text: w
         }), (0, i.jsxs)(_.A.Body, {
             children: [(0, i.jsxs)("div", {
                 className: C.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
-                    channel: S,
+                    channel: y,
                     onClick: N ? j : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: L,

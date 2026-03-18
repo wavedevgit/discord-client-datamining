@@ -1,6 +1,6 @@
 /** chunk id: 809991 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968);
 n(64700);
@@ -14,22 +14,22 @@ var i = n(554146),
     u = n(201805),
     m = n(523620),
     h = n(49999),
-    p = n(654487);
+    x = n(654487);
 
-function x(e) {
+function p(e) {
     let {
         isQuestBarEmpty: t,
         hasLoadedQuestBar: n
     } = (0, u.c9)({
-        location: p.rE.CONFLICT_CHECKS
-    }), x = null != e.targetElementRef.current && t && n, [g, _] = (0, o.r)(e.guildId, {
-        shouldShow: x
+        location: x.rE.CONFLICT_CHECKS
+    }), p = null != e.targetElementRef.current && t && n, [g, _] = (0, o.r)(e.guildId, {
+        shouldShow: p
     }), [f, v] = (0, o.L)(e.currentUser, {
-        shouldShow: x
+        shouldShow: p
     }), [b, j] = (0, s.l)({
-        shouldShow: x
+        shouldShow: p
     });
-    return x ? g === i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2 ? (0, a.jsx)(d.w, {
+    return p ? g === i.M.GUILD_TAG_AVAILABLE_COACHMARK_V2 ? (0, a.jsx)(d.w, {
         guildId: e.guildId,
         onDismiss: _,
         targetElementRef: e.targetElementRef,
@@ -48,7 +48,7 @@ function x(e) {
             groupName: h.m.ACCOUNT_NAME_ZONE,
             targetElementRef: e.targetElementRef
         }), (0, a.jsx)(l.Ay, {
-            contentTypes: x ? e.additionalDCs ?? [] : [],
+            contentTypes: p ? e.additionalDCs ?? [] : [],
             groupName: h.m.ACCOUNT_NAME_ZONE,
             children: t => {
                 let {

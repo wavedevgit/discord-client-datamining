@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
-    a = n(835245),
+var r = n(503698),
+    a = n.n(r),
+    l = n(835245),
     s = n(397927),
     o = n(954571),
     d = n(18437),
@@ -22,19 +22,19 @@ function A(e) {
     let {
         questId: t,
         questContent: n,
-        fullWidth: l
+        fullWidth: r
     } = e;
     return (0, i.jsx)("div", {
         className: p.UD,
         children: (0, i.jsx)(s.Button, {
-            fullWidth: l,
+            fullWidth: r,
             variant: "primary",
             onClick: () => {
                 (0, u.navigateToQuestHome)({
                     fromContent: n
                 }), o.default.track(m.HAw.QUEST_CONTENT_CLICKED, {
                     quest_id: t,
-                    click_id: (0, a.A)(),
+                    click_id: (0, l.A)(),
                     cta_name: c.Cy.VIEW_QUESTS,
                     is_targeted: !1,
                     ...(0, c.fF)(n)
@@ -49,8 +49,8 @@ function x(e) {
     let {
         questId: t,
         fallbackReason: n,
-        bodyText: l,
-        questContent: a
+        bodyText: r,
+        questContent: l
     } = e, {
         containerRef: o,
         size: c
@@ -59,7 +59,7 @@ function x(e) {
         ref: e => {
             o.current = e
         },
-        className: r()(p.kL, {
+        className: a()(p.kL, {
             [p.U]: "lg" === c,
             [p.SP]: "lg" !== c
         }),
@@ -73,10 +73,10 @@ function x(e) {
                 variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
                 color: "text-default",
                 className: p.__invalid_mobileWebCopy,
-                children: l
+                children: r
             }), (0, i.jsx)(A, {
                 questId: t,
-                questContent: a,
+                questContent: l,
                 fullWidth: "lg" !== c
             })]
         }), (0, i.jsx)("div", {

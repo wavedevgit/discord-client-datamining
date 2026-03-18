@@ -1,18 +1,18 @@
 /** chunk id: 709772 params = (module,exports,require) **/
 a.d(t, {
-    a: () => d
+    a: () => o
 });
 var l = a(627968);
 a(64700);
 var r = a(342393),
     n = a(71532),
     s = a(714126);
-let d = e => {
+let o = e => {
     let {
         errorLabel: t,
         children: a,
-        elementOptions: d
-    } = e, o = Date.now();
+        elementOptions: o
+    } = e, d = Date.now();
     return (0, l.jsx)(s.W, {
         label: t,
         children: (0, l.jsx)(r.Elements, {
@@ -21,9 +21,9 @@ let d = e => {
                 mode: "setup",
                 currency: "usd",
                 setup_future_usage: "off_session",
-                ...d
+                ...o
             },
             children: a
         })
-    }, o)
+    }, d)
 }

@@ -1,25 +1,25 @@
 /** chunk id: 603047 params = (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => u
 });
-var s = n(311907),
-    l = n(73153),
-    a = n(868068);
-let i = "None";
-class r extends s.Ay.Store {
+var l = n(311907),
+    s = n(73153),
+    i = n(868068);
+let a = "None";
+class r extends l.Ay.Store {
     static displayName = "ContentInventoryDevToolsStore";
     getFakeGameToShow() {
-        return i
+        return a
     }
     getFakeGameData() {
-        return a.O[i]
+        return i.O[a]
     }
 }
-let o = new r(l.h, {
+let u = new r(s.h, {
     CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
         let {
             gameToShow: t
         } = e;
-        i = t
+        a = t
     }
 })

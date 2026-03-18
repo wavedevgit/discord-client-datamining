@@ -7,8 +7,8 @@ a(64700);
 var r = a(397927),
     n = a(458306),
     s = a(261225),
-    d = a(673277),
-    o = a(427941);
+    o = a(673277),
+    d = a(427941);
 let i = {
     name: "BackgroundImage",
     id: "background-image",
@@ -21,11 +21,11 @@ let i = {
             children: [(0, l.jsx)(r.Text, {
                 variant: "text-lg/semibold",
                 children: "Background Image just takes children and displays them in with a background image behind them, and some padding to add inset"
-            }), (0, l.jsx)(o.A, {
+            }), (0, l.jsx)(d.A, {
                 backgroundImage: {
                     src: t
                 },
-                children: (0, l.jsx)(d.A, {
+                children: (0, l.jsx)(o.A, {
                     children: (0, l.jsx)(s.A, {
                         columns: 2,
                         children: (0, l.jsxs)(n.Kp, {
@@ -40,16 +40,16 @@ let i = {
                         })
                     })
                 })
-            }), (0, l.jsx)(d.A, {
+            }), (0, l.jsx)(o.A, {
                 children: (0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "It also automatically handles animated asset urls"
                 })
-            }), (0, l.jsx)(o.A, {
+            }), (0, l.jsx)(d.A, {
                 backgroundImage: {
                     src: a
                 },
-                children: (0, l.jsx)(d.A, {
+                children: (0, l.jsx)(o.A, {
                     children: (0, l.jsx)(s.A, {
                         columns: 2,
                         children: (0, l.jsxs)(n.Kp, {

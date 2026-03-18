@@ -1,10 +1,10 @@
 /** chunk id: 729394 params = (module,exports,require) **/
 n.d(t, {
-    K: () => l
+    K: () => r
 });
 var i = n(73153);
 
-function l(e) {
+function r(e) {
     let {
         messageId: t,
         coverImageURL: n

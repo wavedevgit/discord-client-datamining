@@ -253,13 +253,13 @@ class x extends l.Component {
         let {
             width: f,
             height: g
-        } = _(n, this.size), x = t - p, E = e - h, v = (0, d.fh)((0, d.Ly)({
+        } = _(n, this.size), x = t - p, E = e - h, y = (0, d.fh)((0, d.Ly)({
             top: x,
             left: E,
             bottom: void 0,
             right: void 0
-        }, s, l, f, g)), y = u ? (0, d.h1)(v) : m("RESIZE_SOUTH_EAST", v);
-        this.setDOMPositions(y), A || (null != o && o(), this.setState({
+        }, s, l, f, g)), v = u ? (0, d.h1)(y) : m("RESIZE_SOUTH_EAST", y);
+        this.setDOMPositions(v), A || (null != o && o(), this.setState({
             operationStarted: !0
         })), null != c && c(i, "MOVE", this.anchor, this.size)
     }

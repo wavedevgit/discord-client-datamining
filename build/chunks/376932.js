@@ -57,7 +57,7 @@ function I(e) {
             }),
             analyticsLocations: m,
             numWishlistItemsToRecommend: 15,
-            maxWishlistItemsToShow: 8
+            maxWishlistItemsToShow: j ? 8 : 6
         })]
     }) : null
 }

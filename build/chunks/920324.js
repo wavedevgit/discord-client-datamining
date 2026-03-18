@@ -6,12 +6,12 @@ var l = a(627968),
     r = a(64700),
     n = a(397927),
     s = a(561769),
-    d = a(32585),
-    o = a(41770),
+    o = a(32585),
+    d = a(41770),
     i = a(53566),
     c = a(148702),
-    x = a(785330),
-    u = a(652215),
+    u = a(785330),
+    x = a(652215),
     h = a(985018),
     m = a(70603);
 let b = {
@@ -20,16 +20,16 @@ let b = {
         name: "Layout Builder",
         id: "layout-builder",
         component: () => {
-            let [e, t] = r.useState(JSON.stringify(o.uG, null, 2)), [a, n] = r.useState(e);
+            let [e, t] = r.useState(JSON.stringify(d.uG, null, 2)), [a, n] = r.useState(e);
             return r.useEffect(() => {
                 try {
-                    (0, x.F2)(JSON.parse(e)) && n(e)
+                    (0, u.F2)(JSON.parse(e)) && n(e)
                 } catch {}
             }, [e]), (0, l.jsxs)("div", {
                 children: [(0, l.jsx)(c.A, {
                     value: e,
                     onChange: e => t(e)
-                }), (0, l.jsx)("hr", {}), (0, l.jsx)(x.Ay, {
+                }), (0, l.jsx)("hr", {}), (0, l.jsx)(u.Ay, {
                     layout: JSON.parse(a)
                 })]
             })
@@ -44,7 +44,7 @@ let b = {
             } = e, {
                 collection: a,
                 isFetching: n
-            } = (0, d.A)({
+            } = (0, o.A)({
                 collectionId: t,
                 includePricing: !0
             }), s = r.useMemo(() => {
@@ -75,7 +75,7 @@ let b = {
             }, [a?.styles?.backgroundColors, a?.catalogBannerUrl, a?.products]);
             return n ? (0, l.jsx)("div", {
                 children: "Loading..."
-            }) : (0, l.jsx)(x.Ay, {
+            }) : (0, l.jsx)(u.Ay, {
                 layout: s
             })
         },
@@ -166,7 +166,7 @@ let b = {
                         block: "Section",
                         children: [{
                             block: "SubTemplate",
-                            tenantId: u.FYj,
+                            tenantId: x.FYj,
                             templateId: "popular-picks"
                         }]
                     }]
@@ -197,7 +197,7 @@ let b = {
                         style: {
                             position: "relative"
                         },
-                        children: (0, l.jsx)(x.Ay, {
+                        children: (0, l.jsx)(u.Ay, {
                             layout: e
                         })
                     })
@@ -213,7 +213,7 @@ let b = {
                 layoutId: t,
                 tenantId: a
             } = e;
-            return (0, l.jsx)(x.Qs, {
+            return (0, l.jsx)(u.Qs, {
                 layoutId: t,
                 tenantId: a
             })
@@ -227,7 +227,7 @@ let b = {
             tenantId: {
                 label: "Tenant Id",
                 type: "text",
-                defaultValue: u.FYj
+                defaultValue: x.FYj
             }
         }
     }, {
@@ -238,7 +238,7 @@ let b = {
                 templateId: t,
                 tenantId: a
             } = e;
-            return (0, l.jsx)(x.Z_, {
+            return (0, l.jsx)(u.Z_, {
                 templateId: t,
                 tenantId: a
             })
@@ -252,7 +252,7 @@ let b = {
             tenantId: {
                 label: "Tenant Id",
                 type: "text",
-                defaultValue: u.FYj
+                defaultValue: x.FYj
             }
         }
     }, {
@@ -291,7 +291,7 @@ let b = {
                     }]
                 }]
             };
-            return (0, l.jsx)(x.Ay, {
+            return (0, l.jsx)(u.Ay, {
                 layout: r
             })
         },

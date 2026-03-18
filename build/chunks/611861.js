@@ -1,7 +1,7 @@
 /** chunk id: 611861 params = (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    default: () => v
+    default: () => y
 });
 var i = n(627968),
     s = n(64700),
@@ -22,7 +22,7 @@ var i = n(627968),
     x = n(8088),
     E = n(652215);
 n(71071), n(939857), n(40876), n(851341), n(921955), a.Ay.initialize();
-let v = function() {
+let y = function() {
     return s.useEffect(() => (g.A.initialize(), c.A.initialize(), _.A.init(), () => {
         g.A.terminate(), c.A.terminate()
     }), []), (0, i.jsxs)(s.Fragment, {

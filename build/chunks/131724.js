@@ -4,9 +4,9 @@ n.d(t, {
     M: () => h
 });
 var i = n(723702),
-    l = n(850670),
-    r = n(206589),
-    a = n(125017),
+    r = n(850670),
+    a = n(206589),
+    l = n(125017),
     s = n(625248),
     o = n(833349),
     d = n(287613),
@@ -29,8 +29,8 @@ function m(e) {
         canJoin: !1,
         remoteJoinPlatform: null
     };
-    let x = (0, a._)(t);
-    if (!(0, d.A)(x) || (0, u.U)(x) || (0, r.w)(n, t) || (0, l.v)(m)) return {
+    let x = (0, l._)(t);
+    if (!(0, d.A)(x) || (0, u.U)(x) || (0, a.w)(n, t) || (0, r.v)(m)) return {
         canJoin: !1,
         remoteJoinPlatform: null
     };
@@ -54,6 +54,6 @@ function m(e) {
     }
 }
 
-function h(e, t, n, l) {
-    return !(null == e || !(0, c.A)(e, n, l.id) || !(0, o.A)(e, _.jUm.SYNC) || !i.isPlatformEmbedded || (0, r.w)(t, e))
+function h(e, t, n, r) {
+    return !(null == e || !(0, c.A)(e, n, r.id) || !(0, o.A)(e, _.jUm.SYNC) || !i.isPlatformEmbedded || (0, a.w)(t, e))
 }

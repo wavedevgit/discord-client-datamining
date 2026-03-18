@@ -14,8 +14,8 @@ var a, i = n(627968),
     u = n(61780),
     m = n(403362),
     h = n(867041),
-    p = n(786574),
-    x = n(661251),
+    x = n(786574),
+    p = n(661251),
     g = ((a = {}).NONE = "", a.DCF = "DCF", a.EXPERIMENTS = "Experiments", a.EVENTS = "Events", a.PREMIUM = "Premium", a.QUESTS = "Quests", a.BILLING = "Billing", a.SHOP = "Shop", a.USERS = "Users", a.GUILDS = "Guilds", a.UI = "UI", a.GAMES = "Games", a.AUDIO_VIDEO = "Audio / Video", a.DEVELOPMENT = "Development", a.BOOSTING = "Boosting", a);
 let _ = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Shop", "Users", "Guilds", "UI", "Games", "Boosting", "Audio / Video", "Development"],
     f = s.forwardRef(function(e, t) {
@@ -26,8 +26,8 @@ let _ = ["Experiments", "DCF", "Events", "Premium", "Quests", "Billing", "Shop",
             children: l
         } = e;
         return (0, i.jsx)(d.DUT, {
-            className: r()(x.V3, {
-                [x.wH]: a
+            className: r()(p.V3, {
+                [p.wH]: a
             }),
             "data-tab-id": n,
             innerRef: t,
@@ -44,7 +44,7 @@ function v(e) {
     } = e, l = s.useRef(new Map), [r, g] = s.useState(() => new Set), {
         ref: _,
         width: v
-    } = (0, c.Ay)(), b = s.useRef(null), j = (0, p.N)(t, a);
+    } = (0, c.Ay)(), b = s.useRef(null), j = (0, x.N)(t, a);
     s.useEffect(() => {
         if (null == v) return;
         let e = new Set,
@@ -67,9 +67,9 @@ function v(e) {
         })
     }, [j]);
     return (0, i.jsxs)("div", {
-        className: x.Mv,
+        className: p.Mv,
         children: [(0, i.jsxs)("div", {
-            className: x.$H,
+            className: p.$H,
             ref: _,
             children: [t.map(e => {
                 let {
@@ -83,7 +83,7 @@ function v(e) {
                     children: s
                 }, t)
             }).filter(m.Vq), (0, i.jsx)("div", {
-                className: x.g,
+                className: p.g,
                 children: t.map(e => {
                     let {
                         id: t,
@@ -101,7 +101,7 @@ function v(e) {
                 })
             })]
         }), (0, i.jsx)("div", {
-            className: x.MK,
+            className: p.MK,
             children: r.size > 0 && (0, i.jsx)(d.YNO, {
                 targetElementRef: b,
                 layerContext: h.He,
@@ -113,11 +113,11 @@ function v(e) {
                 children: e => (0, i.jsx)(o.$n, {
                     ...e,
                     buttonRef: b,
-                    className: x.Iq,
+                    className: p.Iq,
                     size: o.$n.Sizes.ICON,
                     look: o.$n.Looks.BLANK,
                     children: (0, i.jsx)(u.A, {
-                        className: x.__invalid_overflowIcon,
+                        className: p.__invalid_overflowIcon,
                         width: 16,
                         height: 16
                     })

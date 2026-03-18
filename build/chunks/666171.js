@@ -3,9 +3,9 @@ n.d(t, {
     A: () => d
 });
 var i = n(64700),
-    l = n(157559),
-    r = n(198982),
-    a = n(306522),
+    r = n(157559),
+    a = n(198982),
+    l = n(306522),
     s = n(922482),
     o = n(985018);
 
@@ -19,15 +19,15 @@ function d(e, t) {
                 try {
                     let {
                         url: i
-                    } = await a.P0({
+                    } = await l.P0({
                         guildId: e,
                         productId: t,
                         attachmentId: n
                     });
                     await s.R(i)
                 } catch (t) {
-                    let e = t instanceof r.LG ? t.getAnyErrorMessage() : void 0;
-                    l.A.show({
+                    let e = t instanceof a.LG ? t.getAnyErrorMessage() : void 0;
+                    r.A.show({
                         title: o.intl.string(o.t.R0RpRX),
                         body: e ?? o.intl.string(o.t.eAn6z2)
                     })

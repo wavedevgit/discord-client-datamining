@@ -1,25 +1,25 @@
 /** chunk id: 753825 params = (module,exports,require) **/
 a.d(t, {
-    A: () => o
+    A: () => d
 });
 var l = a(627968),
     r = a(397927),
     n = a(53566),
     s = a(427941),
-    d = a(709710);
-let o = e => {
+    o = a(709710);
+let d = e => {
     let {
         backgroundImage: t,
         href: a,
-        ctaText: o
-    } = e, i = (0, n.S)(o ?? "");
+        ctaText: d
+    } = e, i = (0, n.S)(d ?? "");
     return (0, l.jsx)("div", {
-        className: d.q,
+        className: o.q,
         children: (0, l.jsx)(s.A, {
             backgroundImage: t,
             backgroundPosition: "left",
             children: (0, l.jsx)("div", {
-                className: d.R,
+                className: o.R,
                 children: (0, l.jsx)(r.Text, {
                     variant: "text-lg/bold",
                     color: "always-white",

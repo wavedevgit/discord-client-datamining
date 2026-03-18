@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(417597),
-    r = n(732955),
-    a = n(492749),
+var r = n(417597),
+    a = n(732955),
+    l = n(492749),
     s = n(827186),
     o = n(465932),
     d = n(317525),
@@ -31,18 +31,18 @@ function I(e) {
         hideRoleTag: v = !1,
         lineClamp: b = 1,
         cardWidth: T,
-        cardHeight: S,
-        thumbnailHeight: y,
+        cardHeight: y,
+        thumbnailHeight: S,
         descriptionTextVariant: N = "text-sm/normal",
         showOpaqueBackground: j = !1
-    } = e, L = (0, l.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, l.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, a.R)(t, 600), M = (0, g.z)(t), D = (0, _.BB)(L), {
-        shouldHideGuildPurchaseEntryPoints: w
-    } = (0, o.MH)(n), O = (0, g.X)(t), k = (0, x.A)({
+    } = e, L = (0, r.bG)([c.A], () => c.A.getGuild(n), [n]), R = (0, r.bG)([d.A], () => d.A.getRole(n, t?.role_id ?? C.dJq)), P = (0, l.R)(t, 600), w = (0, g.z)(t), D = (0, _.BB)(L), {
+        shouldHideGuildPurchaseEntryPoints: M
+    } = (0, o.MH)(n), k = (0, g.X)(t), O = (0, x.A)({
         guildId: n,
         guildProductListingId: t.id,
         sourceAnalyticsLocations: I
     });
-    if (null == L || w) return null;
+    if (null == L || M) return null;
     let U = () => (0, f.M)({
             guildId: n,
             guildProductListingId: t.id,
@@ -76,12 +76,12 @@ function I(e) {
         imageUrl: P,
         name: t.name,
         description: t.description,
-        formattedPrice: O,
+        formattedPrice: k,
         role: R,
-        ctaComponent: (0, i.jsx)(r.$nd, {
-            ...k
+        ctaComponent: (0, i.jsx)(a.$nd, {
+            ...O
         }),
-        productType: M,
+        productType: w,
         shouldShowFullDescriptionButton: E,
         onShowFullDescription: U,
         onTapCard: U,
@@ -90,8 +90,8 @@ function I(e) {
         hideRoleTag: v,
         lineClamp: b,
         cardWidth: T,
-        cardHeight: S,
-        thumbnailHeight: y,
+        cardHeight: y,
+        thumbnailHeight: S,
         descriptionTextVariant: N,
         isDraft: !t.published
     }, t.id)

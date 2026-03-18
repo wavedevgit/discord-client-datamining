@@ -7,8 +7,8 @@ a(64700);
 var r = a(397927),
     n = a(261225),
     s = a(673277),
-    d = a(458306),
-    o = a(304973);
+    o = a(458306),
+    d = a(304973);
 let i = {
     name: "FeaturedChip",
     id: "featured-chip",
@@ -27,7 +27,7 @@ let i = {
                 variant: "text-lg/semibold",
                 children: "Featured Chip will take up the full width of the parent, so it is best suited for CmsStack or Grid parents"
             }), (0, l.jsx)(s.A, {
-                children: (0, l.jsx)(o.A, {
+                children: (0, l.jsx)(d.A, {
                     ...i
                 })
             }), (0, l.jsxs)(s.A, {
@@ -36,17 +36,17 @@ let i = {
                     children: "Grid (3):"
                 }), (0, l.jsxs)(n.A, {
                     columns: 3,
-                    children: [(0, l.jsx)(o.A, {
+                    children: [(0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
                     })]
                 })]
@@ -54,15 +54,15 @@ let i = {
                 children: [(0, l.jsx)(r.Text, {
                     variant: "text-lg/semibold",
                     children: "Stack:"
-                }), (0, l.jsxs)(d.Kp, {
+                }), (0, l.jsxs)(o.Kp, {
                     direction: "horizontal",
-                    children: [(0, l.jsx)(o.A, {
+                    children: [(0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
-                    }), (0, l.jsx)(o.A, {
+                    }), (0, l.jsx)(d.A, {
                         ...i
                     })]
                 })]

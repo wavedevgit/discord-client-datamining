@@ -3,33 +3,33 @@ n.d(t, {
     B: () => m
 });
 var r = n(627968),
-    a = n(397927),
-    i = n(501664),
+    i = n(397927),
+    a = n(501664),
     l = n(882342),
     s = n(219103),
-    o = n(818348),
-    c = n(985018),
+    c = n(818348),
+    o = n(985018),
     d = n(969061);
 
 function u(e) {
     let {
         orbPrice: t,
         isProductDisabled: n,
-        hasSufficientOrbs: i
-    } = e, l = n ? c.intl.string(c.t.wu4gyV) : c.intl.string(c.t.eFNRzU), o = n || !i;
+        hasSufficientOrbs: a
+    } = e, l = n ? o.intl.string(o.t.wu4gyV) : o.intl.string(o.t.eFNRzU), c = n || !a;
     return (0, r.jsxs)("div", {
         className: d.eg,
         children: [(0, r.jsx)("div", {
             className: d.zR,
-            children: (0, r.jsx)(a.Text, {
+            children: (0, r.jsx)(i.Text, {
                 variant: "text-xs/normal",
-                className: o ? d.r9 : void 0,
+                className: c ? d.r9 : void 0,
                 children: l
             })
         }), (0, r.jsx)(s.x, {
             priceAmount: t.amount,
             priceCurrency: t.currency,
-            className: o ? d.r9 : void 0
+            className: c ? d.r9 : void 0
         })]
     })
 }
@@ -38,13 +38,13 @@ function m(e) {
     let {
         prices: t,
         isPremiumUser: n,
-        discount: a,
-        product: c,
+        discount: i,
+        product: o,
         hasSufficientOrbs: m,
         isProductDisabled: h,
-        discountOfferAmount: p
-    } = e, f = null != p;
-    return 0 === t.length ? null : t[0].currency === o.Yr.DISCORD_ORB ? (0, r.jsx)(u, {
+        discountOfferAmount: x
+    } = e, p = null != x;
+    return 0 === t.length ? null : t[0].currency === c.Yr.DISCORD_ORB ? (0, r.jsx)(u, {
         orbPrice: t[0],
         isProductDisabled: h,
         hasSufficientOrbs: m
@@ -52,18 +52,18 @@ function m(e) {
         className: d.eg,
         children: [(0, r.jsxs)("div", {
             className: d.pw,
-            children: [(0, r.jsx)(i.A, {
-                product: c,
-                discount: a,
+            children: [(0, r.jsx)(a.A, {
+                product: o,
+                discount: i,
                 isPremiumUser: n,
-                hideStrikethroughPrice: !n || f,
+                hideStrikethroughPrice: !n || p,
                 nitroIconType: "tooltip",
                 nitroIconSize: "xs",
-                discountOfferAmount: p
-            }), n || f ? null : (0, r.jsx)(l.A, {
-                product: c
+                discountOfferAmount: x
+            }), n || p ? null : (0, r.jsx)(l.A, {
+                product: o
             })]
-        }), t.length > 1 && t[1].currency === o.Yr.DISCORD_ORB && (0, r.jsx)(s.x, {
+        }), t.length > 1 && t[1].currency === c.Yr.DISCORD_ORB && (0, r.jsx)(s.x, {
             priceAmount: t[1].amount,
             priceCurrency: t[1].currency,
             className: h || !m ? d.r9 : void 0

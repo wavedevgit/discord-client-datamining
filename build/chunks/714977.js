@@ -21,9 +21,9 @@ var i = n(627968),
     m = n(652215),
     x = n(985018),
     E = n(300597),
-    v = n(473169);
+    y = n(473169);
 
-function y() {
+function v() {
     let e = h.default.getNotificationPositionMode(),
         t = e !== m.G6Q.DISABLED,
         n = u.Ay.getOverlayKeybind(),
@@ -55,14 +55,14 @@ class S extends s.PureComponent {
         })
     };
     handleToggleTextChatNotifications = () => {
-        r.A.setNotificationDisabledSetting(f.M.TEXT_CHAT, !this.props.textChatDisabled), y()
+        r.A.setNotificationDisabledSetting(f.M.TEXT_CHAT, !this.props.textChatDisabled), v()
     };
     handleToggleInviteNotification = () => {
         let e = this.props.shouldShowInviteNotification;
         r.A.setNotificationDisabledSetting(f.M.GAME_ACTIVITY, !e)
     };
     handleChangeNotificationPositionMode(e, t) {
-        r.A.setNotificationPositionMode(t), y()
+        r.A.setNotificationPositionMode(t), v()
     }
     handleChangeAvatarSizeMode(e) {
         let {
@@ -229,7 +229,7 @@ class S extends s.PureComponent {
     }
     renderDeveloperSettings() {
         return (0, i.jsx)("div", {
-            className: v.SX,
+            className: y.SX,
             children: (0, i.jsx)(a.l6P, {
                 label: "Crashes",
                 value: void 0,

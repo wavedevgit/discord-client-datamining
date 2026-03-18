@@ -3,9 +3,9 @@ n.d(t, {
     A: () => E
 });
 var i = n(627968),
-    l = n(311907),
-    r = n(421380),
-    a = n(397927),
+    r = n(311907),
+    a = n(421380),
+    l = n(397927),
     s = n(775602),
     o = n(178540),
     d = n(341915),
@@ -24,10 +24,10 @@ function C(e) {
     let {
         quest: t,
         analyticsCtxQuestContent: n,
-        analyticsCtxSourceQuestContent: a,
+        analyticsCtxSourceQuestContent: l,
         analyticsCtxQuestContentPosition: d,
         analyticsCtxQuestContentRowIndex: m
-    } = e, h = (0, u.Ut)(), p = (0, l.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
+    } = e, h = (0, u.Ut)(), p = (0, r.bG)([s.A], () => s.A.useReducedMotion), A = (0, g.Xf)({
         useReducedMotion: p
     }), C = (0, o.O)(e => e.setErrorHints), {
         startingConsoleQuest: I,
@@ -41,16 +41,16 @@ function C(e) {
                 questContentCTA: _.Cy.DEFIBRILLATOR,
                 questContentPosition: d,
                 questContentRowIndex: m,
-                sourceQuestContent: a
+                sourceQuestContent: l
             })
         },
         afterRequest: e => {
             A.stopAnimation(), C(t.id, e)
         }
     });
-    return (0, i.jsx)(r.$n, {
+    return (0, i.jsx)(a.$n, {
         "data-migration-pending": !0,
-        color: r.XD.PRIMARY,
+        color: a.XD.PRIMARY,
         onClick: E,
         disabled: I,
         className: f.x,
@@ -65,41 +65,41 @@ function I(e) {
     let {
         quest: t,
         surface: n,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxQuestContent: r,
+        analyticsCtxSourceQuestContent: a,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: u
     } = e, p = (0, c.RR)({
         quest: t
     }), g = (0, m.vU)()?.getId(), f = (0, c.Vn)(t), I = (0, c.fc)(t), [E, v, b] = (0, c.Qo)(t, I);
-    return f || E === d.X0.DESKTOP ? (0, i.jsx)(a.Button, {
+    return f || E === d.X0.DESKTOP ? (0, i.jsx)(l.Button, {
         variant: "secondary",
         size: u,
         disabled: !0,
         text: x.intl.string(x.t["9KoPyB"]),
         fullWidth: !0
-    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(a.Button, {
+    }) : p && n === A.V3.QUEST_HOME_TILE_FOOTER ? (0, i.jsx)(l.Button, {
         size: u,
         variant: "secondary",
         onClick: () => {
             (0, h.se)({
                 quest: t
             }, {
-                content: l,
+                content: r,
                 ctaContent: _.Cy.CONNECT_CONSOLE,
                 position: s,
                 rowIndex: o,
                 impressionId: g,
-                sourceQuestContent: r
+                sourceQuestContent: a
             })
         },
         text: x.intl.string(x.t.Cfye4v),
         fullWidth: !0
     }) : (0, i.jsx)(C, {
         quest: t,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxQuestContent: r,
+        analyticsCtxSourceQuestContent: a,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
     })
@@ -108,8 +108,8 @@ let E = function(e) {
     let {
         quest: t,
         surface: n,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxQuestContent: r,
+        analyticsCtxSourceQuestContent: a,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o,
         size: d
@@ -118,11 +118,11 @@ let E = function(e) {
         quest: t,
         surface: n,
         size: d,
-        analyticsCtxQuestContent: l,
-        analyticsCtxSourceQuestContent: r,
+        analyticsCtxQuestContent: r,
+        analyticsCtxSourceQuestContent: a,
         analyticsCtxQuestContentPosition: s,
         analyticsCtxQuestContentRowIndex: o
-    }) : (0, i.jsx)(a.Button, {
+    }) : (0, i.jsx)(l.Button, {
         size: d,
         variant: "secondary",
         disabled: !0,

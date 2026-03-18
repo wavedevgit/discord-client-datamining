@@ -46,54 +46,54 @@ let g = e => {
             onChange: g,
             initialContentUrl: A,
             initialMessageUrl: v,
-            isRequired: b
-        } = e, f = a.useMemo(() => i.A.reactParserFor({
+            isRequired: f
+        } = e, b = a.useMemo(() => i.A.reactParserFor({
             ...i.A.defaultRules,
             link: d.B
-        }), []), [j, T] = a.useState(""), [C, N] = a.useState(""), [I, y] = a.useState(null), [S, k] = a.useState(null), [E, w] = a.useState(!1);
+        }), []), [C, j] = a.useState(""), [T, N] = a.useState(""), [I, S] = a.useState(null), [y, k] = a.useState(null), [E, w] = a.useState(!1);
         a.useEffect(() => {
-            T(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
+            j(A?.value ?? ""), N(v?.value ?? ""), A?.value != null && "" !== A.value && w(h(A.value))
         }, [A, v]);
-        let M = a.useCallback(e => {
-                if (T(e), "" === e) {
-                    y(null), w(!1), N(""), k(null), g({
+        let R = a.useCallback(e => {
+                if (j(e), "" === e) {
+                    S(null), w(!1), N(""), k(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 if (!p(e)) {
-                    y(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), g({
+                    S(o.intl.string(o.t["24xrGb"])), w(!1), N(""), k(null), g({
                         value: e,
                         isValid: !1
                     });
                     return
                 }
                 let t = h(e);
-                w(t), y(null), t ? "" === C ? g({
+                w(t), S(null), t ? "" === T ? g({
                     value: e,
                     isValid: !1
-                }) : x.test(C) ? g({
+                }) : x.test(T) ? g({
                     value: e,
                     isValid: !0
                 }, {
-                    value: C,
+                    value: T,
                     isValid: !0
                 }) : g({
                     value: e,
                     isValid: !1
                 }, {
-                    value: C,
+                    value: T,
                     isValid: !1
                 }) : (N(""), k(null), g({
                     value: e,
                     isValid: !0
                 }))
-            }, [g, C]),
-            R = a.useCallback(e => {
+            }, [g, T]),
+            M = a.useCallback(e => {
                 if (N(e), "" === e || !x.test(e)) {
                     k(o.intl.string(o.t["24xrGb"])), g({
-                        value: j,
+                        value: C,
                         isValid: !1
                     }, {
                         value: e,
@@ -102,13 +102,13 @@ let g = e => {
                     return
                 }
                 k(null), g({
-                    value: j,
+                    value: C,
                     isValid: !0
                 }, {
                     value: e,
                     isValid: !0
                 })
-            }, [g, j]);
+            }, [g, C]);
         return (0, l.jsxs)("div", {
             children: [(0, l.jsxs)(r.BJc, {
                 gap: 16,
@@ -118,14 +118,14 @@ let g = e => {
                         className: u.QB,
                         children: (0, l.jsxs)(r.Text, {
                             variant: "text-sm/bold",
-                            children: [t, b && (0, l.jsx)("span", {
+                            children: [t, f && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
                         })
                     }), (0, l.jsx)(r.ksK, {
-                        onChange: M,
-                        value: j,
+                        onChange: R,
+                        value: C,
                         error: I,
                         placeholder: s,
                         autoFocus: !0
@@ -136,21 +136,21 @@ let g = e => {
                         className: u.QB,
                         children: (0, l.jsxs)(r.Text, {
                             variant: "text-sm/bold",
-                            children: [_, b && (0, l.jsx)("span", {
+                            children: [_, f && (0, l.jsx)("span", {
                                 className: c.m,
                                 children: "*"
                             })]
                         })
                     }), (0, l.jsx)(r.ksK, {
-                        onChange: R,
-                        value: C,
-                        error: S,
+                        onChange: M,
+                        value: T,
+                        error: y,
                         placeholder: m
                     })]
                 })]
             }), null != n && (0, l.jsx)(r.Text, {
                 variant: "text-xs/normal",
-                children: f(n)
+                children: b(n)
             })]
         })
     },

@@ -14,8 +14,8 @@ var a = n(627968),
     u = n(676594),
     m = n(236698),
     h = n(253932),
-    p = n(186111),
-    x = n(859703),
+    x = n(186111),
+    p = n(859703),
     g = n(341915),
     _ = n(921517),
     f = n(677402),
@@ -30,8 +30,8 @@ var a = n(627968),
     E = n(568329),
     N = n(818276),
     I = n(742860),
-    k = n(783569),
-    R = n(963713),
+    R = n(783569),
+    k = n(963713),
     O = n(717695),
     w = n(899592),
     D = n(546350),
@@ -71,13 +71,13 @@ function V(e) {
         location: L.rE.QUESTS_BAR
     }), _ = (0, f.H)({
         location: L.rE.QUESTS_BAR
-    }), V = (0, d.bG)([x.A], () => null != x.A.questEnrollmentBlockedUntil), {
+    }), V = (0, d.bG)([p.A], () => null != p.A.questEnrollmentBlockedUntil), {
         isQuestBarVisible: W,
         reason: H
     } = (0, y.TQ)({
         quest: t,
         location: L.rE.QUESTS_BAR
-    }), K = (0, d.bG)([p.A], () => p.A.hasLayers()), z = i.useRef(null), $ = i.useMemo(() => (0, j.vv)(t), [t]), q = t.id, Q = t.userStatus?.enrolledAt != null, Y = (0, c.A)(Q), J = t.userStatus?.completedAt != null, {
+    }), K = (0, d.bG)([x.A], () => x.A.hasLayers()), z = i.useRef(null), $ = i.useMemo(() => (0, j.vv)(t), [t]), q = t.id, Q = t.userStatus?.enrolledAt != null, Y = (0, c.A)(Q), J = t.userStatus?.completedAt != null, {
         hasError: X,
         isLoading: Z
     } = (0, A.Gk)(), ee = i.useContext(O.Z) || _ && W && !Z && !V, {
@@ -95,7 +95,7 @@ function V(e) {
         onQuestBarFocus: eu,
         isUnfurl: em,
         isUnfurlTimeoutActive: eh,
-        onUnfurlTimeoutComplete: ep
+        onUnfurlTimeoutComplete: ex
     } = (0, D.w)({
         isQuestAccepted: Q,
         isQuestCompleted: J,
@@ -104,7 +104,7 @@ function V(e) {
         hasSeenUnfurl: et,
         onUnfurlDismissed: en
     }), {
-        handleCtxMenuOpened: ex,
+        handleCtxMenuOpened: ep,
         handleCtxMenuClosed: eg,
         handleCtxMenuSelection: e_,
         handleGameSheetOpened: ef,
@@ -185,20 +185,20 @@ function V(e) {
                         [B.E$]: ea,
                         [B.KA]: Q
                     }),
-                    children: (0, a.jsx)(k.R, {
+                    children: (0, a.jsx)(R.R, {
                         springConfig: ec,
                         isExpanded: ea,
                         children: (0, a.jsx)(E.oK, {
                             expandedContentRef: ey,
                             collapsedContentRef: eT,
                             expansionSpring: eo,
-                            children: (0, a.jsxs)(R.C, {
+                            children: (0, a.jsxs)(k.C, {
                                 quest: t,
                                 taskDetails: eE,
                                 isExpanded: ea,
                                 isExpansionAnimationComplete: el,
                                 onCtxMenuClose: eg,
-                                onCtxMenuOpen: ex,
+                                onCtxMenuOpen: ep,
                                 onCtxMenuSelect: e_,
                                 onGameSheetOpen: ef,
                                 onGameSheetClose: ev,
@@ -216,7 +216,7 @@ function V(e) {
                                         children: [(0, a.jsx)(w.A, {}), !Q && (0, a.jsx)(S.A, {
                                             unfurlTimeoutDurationInMilliseconds: s,
                                             withUnfurlTimeout: eh,
-                                            onUnfurlTimeoutComplete: ep
+                                            onUnfurlTimeoutComplete: ex
                                         })]
                                     })
                                 }), (0, a.jsx)("div", {

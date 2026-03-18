@@ -3,9 +3,9 @@ n.d(t, {
     A: () => I
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(311907),
-    a = n(686956),
+    r = n(64700),
+    a = n(311907),
+    l = n(686956),
     s = n(688810),
     o = n(202384),
     d = n(51758),
@@ -29,9 +29,9 @@ function I(e) {
     } = (0, s.Ay)(), {
         guildScheduledEvent: b,
         guild: T,
-        channel: S,
-        isMember: y
-    } = (0, r.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
+        channel: y,
+        isMember: S
+    } = (0, a.cf)([A.Ay, h.A, _.A, m.Ay, p.default], () => {
         let e = A.Ay.getGuildScheduledEvent(I) ?? void 0,
             t = h.A.getGuild(n),
             i = _.A.getChannel(e?.channel_id);
@@ -42,27 +42,27 @@ function I(e) {
             isMember: m.Ay.isMember(n, p.default.getCurrentUser()?.id)
         }
     }, [n, I]);
-    return l.useEffect(() => {
+    return r.useEffect(() => {
         b?.id == null && x.A.fetchGuildEvent(n, I), g.A.getGuildEventUserCounts(n, I, null != E ? [E] : []), g.A.getGuildEventsForCurrentUser(n)
     }, [I, n, b?.id, E]), (0, i.jsx)(f.Ay, {
         guild: T,
-        channel: S,
+        channel: y,
         guildScheduledEvent: b,
-        isMember: y,
+        isMember: S,
         onAcceptInstantInvite: () => {
             if ((0, c.g)({
                     guild: T,
-                    isMember: y,
+                    isMember: S,
                     analyticsLocations: v
                 }) === c.W.PROCEED) {
                 if ((0, d.V)(n)) return void(0, o.Ze)(n);
-                a.A.joinGuild(n, {
+                l.A.joinGuild(n, {
                     source: C.Q4z.GUILD_EVENT_EMBED
                 }).catch(() => {})
             }
         },
         onTransitionToInviteChannel: function() {
-            (0, d.V)(n) ? (0, o.Ze)(n) : S?.isGuildStageVoice() ? (0, u.av)(S) : S?.isGuildVoice() && x.A.joinVoiceEvent(S.guild_id, S.id)
+            (0, d.V)(n) ? (0, o.Ze)(n) : y?.isGuildStageVoice() ? (0, u.av)(y) : y?.isGuildVoice() && x.A.joinVoiceEvent(y.guild_id, y.id)
         },
         recurrenceId: E
     })

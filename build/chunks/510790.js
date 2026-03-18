@@ -1,11 +1,11 @@
 /** chunk id: 510790 params = (module,exports,require) **/
 n.d(t, {
-    f: () => S
+    f: () => y
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(735438),
-    a = n(110259),
+    r = n(64700),
+    a = n(735438),
+    l = n(110259),
     s = n(239947),
     o = n(934551),
     d = n(97808),
@@ -25,17 +25,17 @@ var i = n(627968),
     v = n(985018),
     b = n(294456);
 let T = e => e.map(e => `#${e}`),
-    S = e => {
+    y = e => {
         let {
             message: t
         } = e, {
             sharedClientTheme: n
         } = t, {
-            setAll: l
+            setAll: r
         } = (0, x.ko)();
         return void 0 === n ? null : (0, i.jsxs)("div", {
             className: b.kL,
-            children: [(0, i.jsx)(y, {
+            children: [(0, i.jsx)(S, {
                 message: t
             }), (0, i.jsx)(c.$nd, {
                 text: v.intl.string(v.t.SKNnqq),
@@ -44,7 +44,7 @@ let T = e => e.map(e => `#${e}`),
                 onClick: () => {
                     A.default.track(I.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, h.nf)(h.HP.CUSTOM_THEME, {
                         from: h.xv.SHARE_MESSAGE
-                    }), l({
+                    }), r({
                         colors: T(n.colors),
                         chassisMixAmount: n.base_mix,
                         gradientAngle: n.gradient_angle
@@ -53,7 +53,7 @@ let T = e => e.map(e => `#${e}`),
             })]
         })
     },
-    y = e => {
+    S = e => {
         let t, n, c, {
                 message: h
             } = e,
@@ -61,9 +61,9 @@ let T = e => e.map(e => `#${e}`),
                 sharedClientTheme: g
             } = h,
             A = (0, p.Ay)(h),
-            x = l.useMemo(() => (0, r.once)(() => {
+            x = r.useMemo(() => (0, a.once)(() => {
                 (0, _.x)({
-                    type: a.ImpressionTypes.VIEW,
+                    type: l.ImpressionTypes.VIEW,
                     name: s.I.CUSTOM_THEME_SHARE,
                     properties: {}
                 })
@@ -75,7 +75,7 @@ let T = e => e.map(e => `#${e}`),
                 threshold: 1,
                 minTimeVisibleMs: 200
             }),
-            I = l.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
+            I = r.useMemo(() => void 0 === g ? "" : (0, C.V9)(T(g.colors), g.gradient_angle ?? 0), [g]);
         return void 0 === g ? null : (0, i.jsxs)("div", {
             className: b.pS,
             ref: f,
@@ -94,7 +94,7 @@ let T = e => e.map(e => `#${e}`),
                     variant: "text-sm/medium",
                     color: "text-subtle",
                     className: b.Tb,
-                    children: (t = `${v.intl.format(E.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(l.Fragment, {
+                    children: (t = `${v.intl.format(E.default.fQPSEf,{username:"__USERNAME__"})}`, n = h.author, c = A.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, i.jsxs)(r.Fragment, {
                         children: [e, " "]
                     }, t) : (0, i.jsxs)("span", {
                         className: b.H,

@@ -1,6 +1,6 @@
 /** chunk id: 967954 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 }), n(321073);
 var a = n(835245),
     i = n(80703),
@@ -13,7 +13,7 @@ let d = 0,
     u = 0,
     m = [],
     h = !1;
-class p extends s.Ay.Store {
+class x extends s.Ay.Store {
     static displayName = "AnalyticsLogStore";
     initialize() {
         this.waitFor(r.default, o.A)
@@ -31,7 +31,7 @@ class p extends s.Ay.Store {
         return h
     }
 }
-let x = new p(l.h, {
+let p = new x(l.h, {
     TRACK: function(e) {
         let {
             event: t,

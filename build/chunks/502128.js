@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(320697),
     m = n(394953),
     h = n(187698),
-    p = n(661251);
-let x = [{
+    x = n(661251);
+let p = [{
         key: "channelName",
         cellClassName: s()(h.Hn, h.HA),
         render(e) {
@@ -104,7 +104,7 @@ function _() {
         return e[t] = n ?? null, e
     }, {})), C = (0, l.bG)([u.A], () => u.A.getInboxMessages()), y = (0, l.bG)([u.A], () => u.A.getDevOverrides().navOnClick);
     return (0, a.jsx)("div", {
-        className: p.nd,
+        className: x.nd,
         children: (0, a.jsxs)(r.IpV, {
             className: h.Qs,
             children: [(0, a.jsxs)("div", {
@@ -146,7 +146,7 @@ function _() {
                 }), (0, a.jsxs)("div", {
                     children: ["Unread Channel Count: ", t.length]
                 }), (0, a.jsx)(d.A, {
-                    columns: x,
+                    columns: p,
                     data: Object.entries(A).map(e => {
                         let [t, n] = e;
                         return {

@@ -2,14 +2,14 @@
 n.d(t, {
     A: () => _
 });
-var l = n(627968);
+var i = n(627968);
 n(64700);
-var a = n(317097),
+var s = n(317097),
     r = n(311907),
-    i = n(827734),
-    s = n(990078),
-    d = n(397927),
-    o = n(775602),
+    a = n(827734),
+    l = n(990078),
+    o = n(397927),
+    d = n(775602),
     c = n(496885),
     u = n(985018);
 
@@ -17,27 +17,27 @@ function _(e) {
     let t, {
             color: n,
             size: _,
-            forcedIconColor: m,
-            className: x,
-            iconClassName: p,
-            tooltipText: h
+            forcedIconColor: A,
+            className: m,
+            iconClassName: x,
+            tooltipText: p
         } = e,
-        [g, A] = (0, r.yK)([o.A], () => [o.A.desaturateUserColors, o.A.saturation]),
-        v = (0, d.rdh)(i.A.unsafe_rawColors.PRIMARY_300).hex(),
-        b = (0, a.LX)(n ?? v),
-        f = (0, a.$k)(b, !1, g ? A : null);
-    return t = null != m ? m : .3 > (0, a.OK)(b) ? i.A.unsafe_rawColors.PRIMARY_630.css : i.A.unsafe_rawColors.WHITE.css, (0, l.jsx)(s.m, {
-        text: null != h ? h : u.intl.string(u.t.T3PvV4),
-        children: (0, l.jsx)(c.A, {
-            className: x,
-            color: f,
+        [f, h] = (0, r.yK)([d.A], () => [d.A.desaturateUserColors, d.A.saturation]),
+        g = (0, o.rdh)(a.A.unsafe_rawColors.PRIMARY_300).hex(),
+        I = (0, s.LX)(n ?? g),
+        j = (0, s.$k)(I, !1, f ? h : null);
+    return t = null != A ? A : .3 > (0, s.OK)(I) ? a.A.unsafe_rawColors.PRIMARY_630.css : a.A.unsafe_rawColors.WHITE.css, (0, i.jsx)(l.m, {
+        text: null != p ? p : u.intl.string(u.t.T3PvV4),
+        children: (0, i.jsx)(c.A, {
+            className: m,
+            color: j,
             size: _,
-            children: (0, l.jsx)(d.Uzd, {
+            children: (0, i.jsx)(o.Uzd, {
                 size: "custom",
                 color: t,
                 height: _,
                 width: _,
-                className: p
+                className: x
             })
         })
     })

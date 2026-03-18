@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(311907),
-    r = n(189081),
-    a = n(67480),
+var r = n(311907),
+    a = n(189081),
+    l = n(67480),
     s = n(674378),
     o = n(598429),
     d = n(979604);
@@ -34,7 +34,7 @@ function c(e) {
         className: g,
         hover: x,
         innerClassName: f
-    }, I = (0, l.bG)([r.A], () => r.A.getActiveLibraryApplication(t.id)), E = null != I ? I.sku.id : null, v = null != E ? E : t.primarySkuId, b = (0, l.bG)([a.A], () => null != v && !a.A.didFetchingSkuFail(v));
+    }, I = (0, r.bG)([a.A], () => a.A.getActiveLibraryApplication(t.id)), E = null != I ? I.sku.id : null, v = null != E ? E : t.primarySkuId, b = (0, r.bG)([l.A], () => null != v && !l.A.didFetchingSkuFail(v));
     return null != I && (0, s.XZ)(I) ? (0, i.jsx)(d.A, {
         ...C,
         playButtonVariant: u,

@@ -3,24 +3,24 @@ n.d(t, {
     Z: () => d
 });
 var r = n(627968),
-    a = n(64700),
-    i = n(397927),
+    i = n(64700),
+    a = n(397927),
     l = n(688810),
     s = n(532794),
-    o = n(788868),
-    c = n(376435);
+    c = n(788868),
+    o = n(376435);
 let d = e => {
     let {
         text: t
     } = e, {
         analyticsLocations: n
-    } = (0, l.Ay)(), d = a.useRef(null);
-    return (0, r.jsx)(i.DUT, {
-        className: c.F,
+    } = (0, l.Ay)(), d = i.useRef(null);
+    return (0, r.jsx)(a.DUT, {
+        className: o.F,
         innerRef: d,
         onClick: () => {
             (0, s.A)({
-                subscriptionTier: o.pe.TIER_2,
+                subscriptionTier: c.pe.TIER_2,
                 analyticsLocations: n,
                 returnRef: d
             })

@@ -3,9 +3,9 @@ n.d(t, {
     A: () => p
 }), n(321073);
 var i = n(627968),
-    l = n(64700),
-    r = n(397927),
-    a = n(572211),
+    r = n(64700),
+    a = n(397927),
+    l = n(572211),
     s = n(354287),
     o = n(693879),
     d = n(353411),
@@ -27,7 +27,7 @@ function p(e) {
         onClickContent: C,
         onView: I,
         guildId: E
-    } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = l.useMemo(() => {
+    } = e, v = (0, u.w)(f, g), b = (0, d.Gq)(g, n.author, "Invite Embed"), T = r.useMemo(() => {
         let e = [];
         return v || e.push({
             label: b.label ?? m.intl.string(m.t.VJlc0S),
@@ -38,26 +38,26 @@ function p(e) {
             disabled: b.disabled,
             disabledReason: b.disabled ? b.tooltip : void 0
         }), e
-    }, [v, b]), S = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+    }, [v, b]), y = null != g && null != g.details && null != g.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: g.details,
         artist: g.state
-    }) : t.name, y = g?.timestamps?.start ?? g?.created_at, N = l.useMemo(() => null != y ? (0, i.jsxs)("div", {
+    }) : t.name, S = g?.timestamps?.start ?? g?.created_at, N = r.useMemo(() => null != S ? (0, i.jsxs)("div", {
         className: h.Ym,
-        children: [(0, i.jsx)(r.T7G, {
+        children: [(0, i.jsx)(a.T7G, {
             size: "xxs",
             color: "currentColor"
         }), (0, i.jsx)(o.z, {
             entry: {
-                start: y,
+                start: S,
                 end: g?.timestamps?.end
             },
             textColor: "currentColor",
             textTabularNumbers: !1,
             textFontCode: !1
         })]
-    }) : null, [y, g?.timestamps?.end]), j = l.useMemo(() => (0, i.jsxs)("div", {
+    }) : null, [S, g?.timestamps?.end]), j = r.useMemo(() => (0, i.jsxs)("div", {
         className: h.pq,
-        children: [(0, i.jsx)(r.Text, {
+        children: [(0, i.jsx)(a.Text, {
             variant: "text-xs/normal",
             className: h.dS,
             color: "none",
@@ -65,9 +65,9 @@ function p(e) {
             children: N
         }), A ? null : x]
     }), [N, A, x]);
-    return (0, i.jsx)(a.h, {
+    return (0, i.jsx)(l.h, {
         header: p,
-        title: S,
+        title: y,
         iconSrc: (0, c.A)(g, t.id) ?? void 0,
         info: j,
         actions: T,

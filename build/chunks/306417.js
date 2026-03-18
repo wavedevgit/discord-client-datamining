@@ -3,14 +3,14 @@ n.d(t, {
     Dt: () => D,
     Fb: () => P,
     Fh: () => j,
-    Vx: () => w,
-    e5: () => k,
-    k$: () => O
+    Vx: () => M,
+    e5: () => O,
+    k$: () => k
 }), n(801541);
 var i = n(627968),
-    l = n(64700),
-    r = n(503698),
-    a = n.n(r),
+    r = n(64700),
+    a = n(503698),
+    l = n.n(a),
     s = n(889137),
     o = n(827734),
     d = n(421380),
@@ -54,41 +54,41 @@ function T(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let {
         className: t,
         children: n
     } = e, {
-        ref: l,
-        ...r
+        ref: r,
+        ...a
     } = (0, d._u)({
         orientation: "vertical"
     });
     return (0, i.jsx)("div", {
         "aria-label": E.intl.string(E.t.sJpqBS),
-        ref: l,
-        ...r,
+        ref: r,
+        ...a,
         className: t,
         children: n
     })
 }
 
-function y(e) {
+function S(e) {
     let {
         className: t,
         onClick: n,
-        isSelected: l,
-        isFirstAnswer: r,
+        isSelected: r,
+        isFirstAnswer: a,
         children: s
     } = e, {
         pollAnswerRef: o
     } = (0, I.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "checkbox",
-        className: a()(t, v.Sn),
+        className: l()(t, v.Sn),
         onClick: n,
-        "aria-checked": l,
-        ref: r ? o : void 0,
+        "aria-checked": r,
+        ref: a ? o : void 0,
         children: s
     })
 }
@@ -97,8 +97,8 @@ function N(e) {
     let {
         className: t,
         children: n,
-        onClick: l,
-        isSelected: r,
+        onClick: r,
+        isSelected: a,
         hasSelectedAnyAnswer: s,
         isFirstAnswer: o
     } = e, {
@@ -106,10 +106,10 @@ function N(e) {
     } = (0, I.Mg)();
     return (0, i.jsx)(c.DUT, {
         role: "radio",
-        className: a()(t, v.Sn),
-        onClick: l,
-        "aria-checked": r,
-        tabIndex: s ? r ? 0 : -1 : o ? 0 : -1,
+        className: l()(t, v.Sn),
+        onClick: r,
+        "aria-checked": a,
+        tabIndex: s ? a ? 0 : -1 : o ? 0 : -1,
         ref: o ? d : void 0,
         children: n
     })
@@ -119,9 +119,9 @@ function j(e) {
     let {
         answers: t,
         answersInteraction: n,
-        answerTapAccessibilityLabel: l,
-        canTapAnswers: r,
-        hasSelectedAnyAnswer: a,
+        answerTapAccessibilityLabel: r,
+        canTapAnswers: a,
+        hasSelectedAnyAnswer: l,
         className: o,
         answerClassName: d,
         renderAnswerContent: c
@@ -129,12 +129,12 @@ function j(e) {
         ContainerComponent: u,
         answerElementType: _
     } = (0, s.YW)({
-        canTapAnswers: r,
+        canTapAnswers: a,
         answersInteraction: n
     }).with({
         answersInteraction: f.CQ.RADIO_BUTTONS
     }, () => ({
-        ContainerComponent: S,
+        ContainerComponent: y,
         answerElementType: 1
     })).with({
         answersInteraction: f.CQ.CHECKBOXES
@@ -158,8 +158,8 @@ function j(e) {
             answer: e,
             isFirstAnswer: 0 === t,
             elementType: _,
-            answerTapAccessibilityLabel: l,
-            hasSelectedAnyAnswer: a,
+            answerTapAccessibilityLabel: r,
+            hasSelectedAnyAnswer: l,
             children: c(e)
         }, e.answerId))
     })
@@ -169,14 +169,14 @@ function L(e) {
     let {
         className: t,
         answer: n,
-        children: r,
+        children: a,
         hasSelectedAnyAnswer: s,
         isFirstAnswer: o,
         elementType: d
     } = e, {
         channelId: c,
         messageId: u
-    } = (0, C.Tu)(), _ = (0, C.hd)(n.style), m = !0 === n.isSelected, h = l.useCallback(() => {
+    } = (0, C.Tu)(), _ = (0, C.hd)(n.style), m = !0 === n.isSelected, h = r.useCallback(() => {
         A.A.handlePollAnswerTapped({
             channelId: c,
             messageId: u,
@@ -187,25 +187,25 @@ function L(e) {
         case 0:
         case 3:
             return (0, i.jsx)("li", {
-                className: a()(t, _),
-                children: r
+                className: l()(t, _),
+                children: a
             });
         case 1:
             return (0, i.jsx)(N, {
-                className: a()(t, _),
+                className: l()(t, _),
                 onClick: h,
                 isSelected: m,
                 hasSelectedAnyAnswer: s,
                 isFirstAnswer: o,
-                children: r
+                children: a
             });
         case 2:
-            return (0, i.jsx)(y, {
-                className: a()(t, _),
+            return (0, i.jsx)(S, {
+                className: l()(t, _),
                 onClick: h,
                 isSelected: m,
                 isFirstAnswer: o,
-                children: r
+                children: a
             })
     }
 }
@@ -214,7 +214,7 @@ function R(e) {
     let {
         attachment: t,
         className: n
-    } = e, l = (0, g.j)(), r = m.kt.useSetting();
+    } = e, r = (0, g.j)(), a = m.kt.useSetting();
     return (0, i.jsx)(_.Ay, {
         className: n,
         imageClassName: v.Bw,
@@ -223,8 +223,8 @@ function R(e) {
         responsive: !0,
         width: 212,
         height: 212,
-        autoPlay: r,
-        shouldAnimate: l,
+        autoPlay: a,
+        shouldAnimate: r,
         shouldRenderAccessory: !1
     })
 }
@@ -242,7 +242,7 @@ function P(e) {
     })
 }
 
-function M(e, t) {
+function w(e, t) {
     return null != e ? (0, i.jsx)("div", {
         className: e,
         children: t
@@ -253,33 +253,33 @@ function D(e) {
     let {
         media: t,
         containerClassName: n,
-        attachmentClassName: l,
-        emojiClassName: r,
-        fallback: a
+        attachmentClassName: r,
+        emojiClassName: a,
+        fallback: l
     } = e, {
         message: s
     } = (0, C.y0)();
     if (null != t.attachmentIds && t.attachmentIds.length > 0) {
         let e = s.attachments.find(e => e.id === t.attachmentIds?.[0]);
-        if (null != e) return M(n, (0, i.jsx)(R, {
-            className: l,
+        if (null != e) return w(n, (0, i.jsx)(R, {
+            className: r,
             attachment: e
         }))
     }
-    return null != t.emoji ? M(n, (0, i.jsx)(P, {
-        className: r,
+    return null != t.emoji ? w(n, (0, i.jsx)(P, {
+        className: a,
         emoji: t.emoji
-    })) : void 0 !== a ? a : null
+    })) : void 0 !== l ? l : null
 }
 
-function w(e) {
+function M(e) {
     let {
         isVictor: t,
         isExpired: n,
-        size: l,
-        className: r
+        size: r,
+        className: a
     } = e, {
-        color: a,
+        color: l,
         backgroundColor: d
     } = (0, s.YW)({
         isVictor: t,
@@ -302,33 +302,12 @@ function w(e) {
     }));
     return (0, i.jsx)(c.yr3, {
         size: "custom",
-        width: l,
-        height: l,
-        className: r,
-        color: a,
+        width: r,
+        height: r,
+        className: a,
+        color: l,
         secondaryColor: d,
         "aria-hidden": !0
-    })
-}
-
-function O(e) {
-    let {
-        isSelected: t,
-        size: n,
-        className: l
-    } = e, r = {
-        width: n,
-        height: n,
-        background: v.So,
-        "aria-hidden": !0
-    };
-    return t ? (0, i.jsx)(p.A, {
-        ...r,
-        foreground: v.dY,
-        className: l
-    }) : (0, i.jsx)(h.A, {
-        ...r,
-        className: l
     })
 }
 
@@ -336,12 +315,33 @@ function k(e) {
     let {
         isSelected: t,
         size: n,
-        className: l
-    } = e, r = .85 * n;
+        className: r
+    } = e, a = {
+        width: n,
+        height: n,
+        background: v.So,
+        "aria-hidden": !0
+    };
+    return t ? (0, i.jsx)(p.A, {
+        ...a,
+        foreground: v.dY,
+        className: r
+    }) : (0, i.jsx)(h.A, {
+        ...a,
+        className: r
+    })
+}
+
+function O(e) {
+    let {
+        isSelected: t,
+        size: n,
+        className: r
+    } = e, a = .85 * n;
     return (0, i.jsx)("div", {
-        className: a()(v.kv, {
+        className: l()(v.kv, {
             [v.H7]: t
-        }, l),
+        }, r),
         style: {
             width: n,
             height: n
@@ -349,8 +349,8 @@ function k(e) {
         "aria-hidden": !0,
         children: t && (0, i.jsx)(c.A9s, {
             size: "custom",
-            width: r,
-            height: r,
+            width: a,
+            height: a,
             color: o.A.unsafe_rawColors.WHITE.css
         })
     })

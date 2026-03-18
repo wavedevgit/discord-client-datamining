@@ -5,13 +5,13 @@ n.d(t, {
     Nj: () => v,
     R6: () => T,
     SX: () => b,
-    UB: () => S,
-    YE: () => y
+    UB: () => y,
+    YE: () => S
 }), n(938796);
 var i = n(627968),
-    l = n(64700),
-    r = n(665260),
-    a = n(311907),
+    r = n(64700),
+    a = n(665260),
+    l = n(311907),
     s = n(571356),
     o = n(990078),
     d = n(397927),
@@ -41,7 +41,7 @@ function I(e) {
         placeholderVersion: t.placeholder_version,
         contentType: t.content_type,
         originalContentType: t.original_content_type,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, x.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, a.Lt)(t.flags ?? 0, x.sbO.IS_ANIMATED),
         sourceMetadata: {
             message: e.message,
             identifier: {
@@ -58,7 +58,7 @@ function I(e) {
 
 function E(e) {
     let t = e.item.originalItem,
-        n = l.useCallback(() => (0, r.Lt)(t.flags ?? 0, x.sbO.IS_CLIP) ? (0, i.jsx)(o.m, {
+        n = r.useCallback(() => (0, a.Lt)(t.flags ?? 0, x.sbO.IS_CLIP) ? (0, i.jsx)(o.m, {
             text: f.intl.string(f.t["/fgfWh"]),
             children: (0, i.jsxs)("div", {
                 className: C.M,
@@ -72,17 +72,17 @@ function E(e) {
                 })]
             })
         }) : null, [t]),
-        a = p.A.toURLSafe(t.proxy_url);
-    return null == a ? null : (a.searchParams.append("format", "webp"), (0, A.$o)({
+        l = p.A.toURLSafe(t.proxy_url);
+    return null == l ? null : (l.searchParams.append("format", "webp"), (0, A.$o)({
         ...e,
         alt: t.description,
-        poster: a.toString(),
+        poster: l.toString(),
         fileSize: t.size,
         fileName: (0, g.A)(t),
         src: t.url,
         placeholder: t.placeholder,
         placeholderVersion: t.placeholder_version,
-        srcIsAnimated: (0, r.Lt)(t.flags ?? 0, x.sbO.IS_ANIMATED),
+        srcIsAnimated: (0, a.Lt)(t.flags ?? 0, x.sbO.IS_ANIMATED),
         renderOverlayContent: n,
         sourceMetadata: {
             message: e.message,
@@ -110,11 +110,11 @@ function b(e) {
     let {
         message: t,
         item: n
-    } = e, i = n.originalItem, r = (0, u.dx)(u.k0.VOICE_MESSAGE, i.id), a = l.useCallback((e, n, l) => {
+    } = e, i = n.originalItem, a = (0, u.dx)(u.k0.VOICE_MESSAGE, i.id), l = r.useCallback((e, n, r) => {
         (0, _.wQ)(t.id, i.duration_secs ?? null, n, t.author.id)
-    }, [t, i.duration_secs]), s = l.useCallback((e, n) => {
+    }, [t, i.duration_secs]), s = r.useCallback((e, n) => {
         (0, _.dP)(t.id, i.duration_secs ?? null, e, t.author.id, n)
-    }, [t, i.duration_secs]), o = l.useCallback(e => {
+    }, [t, i.duration_secs]), o = r.useCallback(e => {
         (0, _._O)(t.id, e?.message ?? null)
     }, [t]);
     return (0, A.P$)({
@@ -124,10 +124,10 @@ function b(e) {
         src: i.url,
         durationSecs: i.duration_secs,
         waveform: i.waveform,
-        onPlay: a,
+        onPlay: l,
         onPause: s,
         onError: o,
-        playbackCacheKey: r
+        playbackCacheKey: a
     })
 }
 
@@ -142,7 +142,7 @@ function T(e) {
     })
 }
 
-function S(e) {
+function y(e) {
     let t = e.item.originalItem;
     return (0, A.Dk)({
         ...e,
@@ -152,7 +152,7 @@ function S(e) {
     })
 }
 
-function y(e) {
+function S(e) {
     return "CLIP" === e.item.type ? (0, i.jsx)(N, {
         attachment: e.item.originalItem,
         message: e.message
@@ -163,7 +163,7 @@ function N(e) {
     let {
         attachment: t,
         message: n
-    } = e, l = n.channel_id, r = (0, a.bG)([m.A], () => m.A.getBasicChannel(l)?.guild_id), {
+    } = e, r = n.channel_id, a = (0, l.bG)([m.A], () => m.A.getBasicChannel(r)?.guild_id), {
         clip_created_at: s,
         clip_participants: o,
         title: d,
@@ -179,6 +179,6 @@ function N(e) {
         }) ?? [],
         applicationId: u?.id,
         title: d,
-        guildId: r
+        guildId: a
     })
 }

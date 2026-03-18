@@ -4,58 +4,58 @@ n.d(t, {
 });
 var r = n(627968);
 n(64700);
-var a = n(503698),
-    i = n.n(a),
+var i = n(503698),
+    a = n.n(i),
     l = n(993408),
     s = n(506742),
-    o = n(219103),
-    c = n(258470);
+    c = n(219103),
+    o = n(258470);
 
 function d(e) {
     let {
         product: t,
         isPremiumUser: n,
-        discount: a,
+        discount: i,
         className: d,
         discountOfferAmount: u,
         hideStrikethroughPrice: m = !1,
         nitroIconType: h,
-        nitroIconSize: p = "md"
-    } = e, f = (0, l.WD)(t, {
+        nitroIconSize: x = "md"
+    } = e, p = (0, l.WD)(t, {
         isPremiumUser: n,
-        discount: a
+        discount: i
     });
-    if (null == f) return null;
+    if (null == p) return null;
     let {
-        defaultPrice: x,
-        showDefaultPriceOnly: _
-    } = f;
-    if (_) return (0, r.jsx)("div", {
-        className: i()(c.kG, d),
-        children: (0, r.jsx)(o.x, {
-            priceAmount: x.amount,
-            priceCurrency: x.currency
+        defaultPrice: f,
+        showDefaultPriceOnly: v
+    } = p;
+    if (v) return (0, r.jsx)("div", {
+        className: a()(o.kG, d),
+        children: (0, r.jsx)(c.x, {
+            priceAmount: f.amount,
+            priceCurrency: f.currency
         })
     });
     let {
-        showNitroPrice: v,
-        originalPrice: A,
-        finalPrice: g
-    } = f;
+        showNitroPrice: _,
+        originalPrice: g,
+        finalPrice: A
+    } = p;
     return (0, r.jsxs)("div", {
-        className: i()(c.kG, d),
+        className: a()(o.kG, d),
         children: [m ? null : (0, r.jsx)(s.a, {
-            price: A,
-            className: c.q9
-        }), (0, r.jsx)(o.x, {
-            priceAmount: g.amount,
-            priceCurrency: g.currency,
-            discount: a,
-            className: i()({
-                [c.q9]: null == u
+            price: g,
+            className: o.q9
+        }), (0, r.jsx)(c.x, {
+            priceAmount: A.amount,
+            priceCurrency: A.currency,
+            discount: i,
+            className: a()({
+                [o.q9]: null == u
             }),
-            nitroIconType: v ? h : void 0,
-            nitroIconSize: p,
+            nitroIconType: _ ? h : void 0,
+            nitroIconSize: x,
             discountOfferAmount: u
         })]
     })

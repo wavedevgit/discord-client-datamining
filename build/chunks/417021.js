@@ -1,77 +1,77 @@
 /** chunk id: 417021 params = (module,exports,require) **/
-t.d(n, {
+n.d(t, {
     A: () => b
 });
-var i = t(627968),
-    s = t(311907),
-    r = t(397927),
-    l = t(793574),
-    a = t(688810),
-    o = t(632738),
-    d = t(994500),
-    c = t(562153),
-    u = t(183555),
-    A = t(672385),
-    m = t(950191),
-    _ = t(249790),
-    x = t(946356),
-    p = t(254828),
-    f = t(783123),
-    h = t(652215),
-    g = t(996988),
-    I = t(985018),
-    j = t(599929);
+var i = n(627968),
+    s = n(311907),
+    r = n(397927),
+    a = n(793574),
+    l = n(688810),
+    o = n(632738),
+    d = n(994500),
+    c = n(562153),
+    u = n(183555),
+    _ = n(672385),
+    A = n(950191),
+    m = n(249790),
+    x = n(946356),
+    p = n(254828),
+    f = n(783123),
+    h = n(652215),
+    g = n(996988),
+    I = n(985018),
+    j = n(599929);
 
 function b(e) {
     let {
-        user: n,
-        guildId: t,
+        user: t,
+        guildId: n,
         channelId: b,
         messageId: v,
-        roleId: N,
-        transitionState: C,
+        roleId: C,
+        transitionState: N,
         onHide: y,
-        sourceAnalyticsLocations: T = []
-    } = e, E = t === h.ME ? void 0 : t, L = (0, s.bG)([d.A], () => d.A.isBlocked(n.id)), {
+        sourceAnalyticsLocations: E = []
+    } = e, T = n === h.ME ? void 0 : n, L = (0, s.bG)([d.A], () => d.A.isBlocked(t.id)), {
         analyticsLocations: P
-    } = (0, a.Ay)([...T, L ? l.A.BLOCKED_PROFILE_MODAL : l.A.IGNORED_PROFILE_MODAL]), R = (0, u.pb)({
+    } = (0, l.Ay)([...E, L ? a.A.BLOCKED_PROFILE_MODAL : a.A.IGNORED_PROFILE_MODAL]), O = (0, u.pb)({
         layout: "MODAL_V2",
-        userId: n.id,
-        guildId: E,
+        userId: t.id,
+        guildId: T,
         channelId: b,
         messageId: v,
-        roleId: N
-    }), O = [{
+        roleId: C
+    }), R = [{
         icon: r.yr3,
         description: I.intl.string(I.t.kcuWva)
     }, {
         icon: r.yr3,
         description: I.intl.string(L ? I.t.QxrDY1 : I.t.W6fjkS)
-    }], S = (0, m.Ay)(n.id, E), M = c.Ay.getName(S?.guildId, b, n), G = I.intl.formatToPlainString(I.t.KRe1Fk, {
+    }], S = (0, A.Ay)(t.id, T), M = c.Ay.getName(S?.guildId, b, t), G = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: M
     });
-    return (0, i.jsx)(a.f5, {
+    return (0, i.jsx)(l.f5, {
         value: P,
         children: (0, i.jsx)(u.of, {
-            value: R,
+            value: O,
             isLoaded: S?.isLoaded,
             children: (0, i.jsx)(r.EOs, {
                 "data-migration-pending": !0,
-                transitionState: C,
+                transitionState: N,
                 className: j.zr,
                 "aria-label": G,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(x.A, {
-                    user: n,
+                    user: t,
                     displayProfile: S,
                     themeType: g.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
                         className: j.Tp
                     }), (0, i.jsxs)("div", {
                         className: j.Qs,
-                        children: [(0, i.jsx)(_.A, {
-                            user: n,
-                            guildId: E
+                        children: [(0, i.jsx)(m.A, {
+                            user: t,
+                            guildId: T
                         }), (0, i.jsxs)("div", {
                             className: j.FS,
                             children: [(0, i.jsx)(r.Heading, {
@@ -87,17 +87,17 @@ function b(e) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: j.vb,
-                            children: O.map((e, n) => {
+                            children: R.map((e, t) => {
                                 let {
-                                    icon: t,
+                                    icon: n,
                                     description: s
                                 } = e;
                                 return (0, i.jsx)(o.PQ, {
-                                    icon: t,
+                                    icon: n,
                                     title: s,
                                     titleVariant: "text-md/normal",
                                     color: r.LU0.colors.TEXT_DEFAULT.css
-                                }, n)
+                                }, t)
                             })
                         }), (0, i.jsxs)(r.BJc, {
                             align: "center",
@@ -105,19 +105,19 @@ function b(e) {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {
-                                    y(), (0, A.Wn)({
+                                    y(), (0, _.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
                                         analyticsLocations: P,
-                                        ...R
+                                        ...O
                                     })
                                 }
                             }), (0, i.jsx)(p.A, {
-                                userId: n.id,
+                                userId: t.id,
                                 onClick: () => {
-                                    y(), (0, A.Wn)({
+                                    y(), (0, _.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                                         analyticsLocations: P,
-                                        ...R
+                                        ...O
                                     })
                                 }
                             })]

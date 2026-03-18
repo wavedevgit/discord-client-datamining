@@ -21,30 +21,30 @@ var i = n(284009),
     m = n(747189),
     x = n(742984),
     E = n(833551),
-    v = n(592598),
-    y = n(253932),
+    y = n(592598),
+    v = n(253932),
     S = n(164891),
     C = n(961350),
     I = n(734057),
     N = n(803224),
     T = n(290863),
     O = n(309010),
-    j = n(461213),
-    b = n(351906),
+    b = n(461213),
+    j = n(351906),
     D = n(287809),
-    L = n(845618),
-    R = n(242286),
-    w = n(256415),
-    M = n(927813),
-    k = n(9302),
+    R = n(845618),
+    w = n(242286),
+    L = n(256415),
+    k = n(927813),
+    M = n(9302),
     P = n(157257),
     G = n(652215),
-    U = n(672396),
-    V = n(985018);
+    V = n(672396),
+    U = n(985018);
 let z = new r.Vy("LegacyOverlayNotificationsStore"),
-    H = 5 * M.A.Millis.SECOND,
-    W = 8 * M.A.Millis.SECOND,
-    K = 30 * M.A.Millis.SECOND,
+    H = 5 * k.A.Millis.SECOND,
+    W = 8 * k.A.Millis.SECOND,
+    K = 30 * k.A.Millis.SECOND,
     B = Object.freeze({
         priority: 0,
         duration: H,
@@ -84,7 +84,7 @@ function Q(e, t) {
         ...B,
         ...t
     };
-    if (2 !== n.priority && !w.default.isInstanceFocused()) return null;
+    if (2 !== n.priority && !L.default.isInstanceFocused()) return null;
     let i = (0, l.A)(),
         s = {
             id: i,
@@ -108,7 +108,7 @@ function q(e) {
     if (null == s || !s.isRingable() || "GUILD_RING_START" === e.type && !S.A.getCurrentConfig({
             guildId: e.guildId,
             location: "OverlayStartRinging"
-        }).enabled || j.A.getStatus() === G.clD.DND || y.NO.getSetting()) return !1;
+        }).enabled || b.A.getStatus() === G.clD.DND || v.NO.getSetting()) return !1;
     let l = F.find(e => 1 === e.type && e.channelId === t && e.messageType === G.lAJ.CALL);
     null != l && Z(l.id), Q((0, p.A)(s), {
         priority: 1,
@@ -120,7 +120,7 @@ function q(e) {
 class $ extends a.Ay.Store {
     static displayName = "OverlayNotificationsStore";
     initialize() {
-        this.waitFor(C.default, I.A, _.A, N.A, R.default, E.default, P.A, v.A, w.default, T.A, O.A, j.A, b.A, D.default)
+        this.waitFor(C.default, I.A, _.A, N.A, w.default, E.default, P.A, y.A, L.default, T.A, O.A, b.A, j.A, D.default)
     }
     getNotifications() {
         return F
@@ -138,7 +138,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         let {
             nudges: t
         } = e;
-        if (E.default.hasChangedRenderMode(R.default.getFocusedPID() ?? (0, k.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
+        if (E.default.hasChangedRenderMode(w.default.getFocusedPID() ?? (0, M.getPID)())) return void z.info("Overlay mounted, but render modes have changed", {
             nudges: t
         });
         let n = t[0];
@@ -148,10 +148,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }), null == n) return;
         let i = function(e) {
             switch (e.type) {
-                case U.Jr.GO_LIVE_VOICE:
-                case U.Jr.GO_LIVE_NON_VOICE:
+                case V.Jr.GO_LIVE_VOICE:
+                case V.Jr.GO_LIVE_NON_VOICE:
                     return (0, h.A)(e);
-                case U.Jr.NEWS:
+                case V.Jr.NEWS:
                 default:
                     return (0, g.A)(e)
             }
@@ -190,7 +190,7 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
                         l = (0, c.A)(e, t, n, a, i);
                         break;
                     case G.xL.JOIN_REQUEST:
-                        if (null == (i = j.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
+                        if (null == (i = b.A.getApplicationActivity(a.id)) || null == i.party || i.party.id !== t.activity.party_id) return !1;
                         l = (0, A.A)(e, n, a, i)
                 }
                 if (null == l) return !1;
@@ -203,8 +203,8 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
             }(i, n, l);
             if (!1 !== e) return e
         }
-        if ((!w.default.isInstanceLocked() || w.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || v.A.isNotificationDisabled(U.KS.TextChat) || b.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
-        let a = !N.A.isSoundDisabled(L.cH);
+        if ((!L.default.isInstanceLocked() || L.default.isPinned(G.uss.TEXT)) && t === O.A.getChannelId() || y.A.isNotificationDisabled(V.KS.TextChat) || j.A.disableNotifications || !(0, x.lx)(n, t)) return !1;
+        let a = !N.A.isSoundDisabled(R.cH);
         Q((0, f.A)(i, n, l, a), {
             type: 1,
             channelId: i.id,
@@ -257,10 +257,10 @@ let ee = new $(o.h, !__OVERLAY__ ? {} : {
         }))
     },
     CLIPS_SAVE_CLIP_START: function(e) {
-        "manual" === e.clipMethod && Q((0, m.V)(V.intl.string(V.t.NBMK9m)))
+        "manual" === e.clipMethod && Q((0, m.V)(U.intl.string(U.t.NBMK9m)))
     },
     CLIPS_SAVE_CLIP_ERROR: function() {
-        Q((0, m.V)(V.intl.string(V.t["1ZbZuh"])))
+        Q((0, m.V)(U.intl.string(U.t["1ZbZuh"])))
     },
     STREAM_START: function(e) {
         let t = (0, m.t)();

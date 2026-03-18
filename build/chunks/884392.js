@@ -3,9 +3,9 @@ n.d(t, {
     A: () => g
 });
 var i = n(627968),
-    l = n(412703),
-    r = n(311907),
-    a = n(397927),
+    r = n(412703),
+    a = n(311907),
+    l = n(397927),
     s = n(829219),
     o = n(859703),
     d = n(890687),
@@ -17,10 +17,10 @@ var i = n(627968),
 
 function p(e) {
     switch (e) {
-        case l.n.ACHIEVEMENT_IN_GAME:
-        case l.n.ACHIEVEMENT_IN_ACTIVITY:
-        case l.n.PLAY_ACTIVITY:
-        case l.n.WATCH_VIDEO:
+        case r.n.ACHIEVEMENT_IN_GAME:
+        case r.n.ACHIEVEMENT_IN_ACTIVITY:
+        case r.n.PLAY_ACTIVITY:
+        case r.n.WATCH_VIDEO:
             return c.Cy.START_QUEST;
         default:
             return c.Cy.ACCEPT_QUEST
@@ -46,9 +46,9 @@ let g = function(e) {
         questContentRowIndex: E
     }, b = n.id, {
         isEnrolling: T
-    } = (0, r.cf)([o.A], () => ({
+    } = (0, a.cf)([o.A], () => ({
         isEnrolling: o.A.isEnrolling(b)
-    }), [b]), S = (0, _.Oz)(n), y = function(e, t) {
+    }), [b]), y = (0, _.Oz)(n), S = function(e, t) {
         let {
             launchInGameActivity: n
         } = (0, d.zW)(t);
@@ -56,9 +56,9 @@ let g = function(e) {
             (0, _.Fy)(t)
         };
         switch (e) {
-            case l.n.ACHIEVEMENT_IN_GAME:
-            case l.n.ACHIEVEMENT_IN_ACTIVITY:
-            case l.n.PLAY_ACTIVITY:
+            case r.n.ACHIEVEMENT_IN_GAME:
+            case r.n.ACHIEVEMENT_IN_ACTIVITY:
+            case r.n.PLAY_ACTIVITY:
                 if (t.config.features.includes(m.Li.START_QUEST_CTA)) return () => {
                     n()
                 };
@@ -71,21 +71,21 @@ let g = function(e) {
             features: n
         } = t.config;
         switch (e) {
-            case l.n.WATCH_VIDEO:
+            case r.n.WATCH_VIDEO:
                 return h.intl.formatToPlainString(h.t.GNsKiW, {
                     remainTime: (0, u.xm)((0, u.Yh)(t))
                 });
-            case l.n.ACHIEVEMENT_IN_GAME:
-            case l.n.ACHIEVEMENT_IN_ACTIVITY:
+            case r.n.ACHIEVEMENT_IN_GAME:
+            case r.n.ACHIEVEMENT_IN_ACTIVITY:
                 return n.includes(m.Li.START_QUEST_CTA) ? h.intl.string(h.t["hRIVy+"]) : h.intl.string(h.t.l7E81v);
-            case l.n.PLAY_ACTIVITY:
+            case r.n.PLAY_ACTIVITY:
                 if (n.includes(m.Li.CLOUD_GAMING_ACTIVITY)) return h.intl.string(h.t["+qoymD"]);
                 if (n.includes(m.Li.START_QUEST_CTA)) return h.intl.string(h.t["Ie9++s"]);
                 return h.intl.string(h.t.l7E81v);
             default:
                 return h.intl.string(h.t.kUQLMJ)
         }
-    }(c, n), j = (t = y ?? void 0, c === l.n.WATCH_VIDEO ? async () => {
+    }(c, n), j = (t = S ?? void 0, c === r.n.WATCH_VIDEO ? async () => {
         await (0, _.e0)(n, {
             questContent: v.questContent,
             questContentCTA: v.questContentCTA,
@@ -103,7 +103,7 @@ let g = function(e) {
             questContentRowIndex: v.questContentRowIndex
         }), t?.()
     });
-    return (0, i.jsx)(a.Button, {
+    return (0, i.jsx)(l.Button, {
         size: g,
         loading: T,
         variant: A,
@@ -111,7 +111,7 @@ let g = function(e) {
             x?.(), j()
         },
         text: N,
-        icon: S,
+        icon: y,
         fullWidth: !0
     })
 }

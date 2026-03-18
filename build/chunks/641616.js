@@ -14,8 +14,8 @@ var a = n(627968),
     m = n(540999),
     h = n(865116);
 n(283030);
-var p = n(173628),
-    x = n(378230),
+var x = n(173628),
+    p = n(378230),
     g = n(374058),
     _ = n(974857),
     f = n(358622),
@@ -30,8 +30,8 @@ var p = n(173628),
     E = n(821306),
     N = n(226936),
     I = n(27126),
-    k = n(498336),
-    R = n(615112),
+    R = n(498336),
+    k = n(615112),
     O = n(501379),
     w = n(517538),
     D = n(211162),
@@ -130,7 +130,7 @@ function ec() {
             id: "age_verification",
             name: "Age Verification",
             group: er.fu.DEVELOPMENT,
-            render: () => (0, a.jsx)(x.A, {})
+            render: () => (0, a.jsx)(p.A, {})
         }), e.push({
             id: "feedback",
             name: "Feedback",
@@ -249,7 +249,7 @@ function ec() {
             name: "Affinity",
             group: er.fu.USERS,
             tags: ["friends"],
-            render: () => (0, a.jsx)(p.A, {})
+            render: () => (0, a.jsx)(x.A, {})
         }), m.A.isDeveloper && (e.push({
             id: "content_inventory",
             name: "Content Inventory",
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",
@@ -329,7 +329,7 @@ function ec() {
             name: "Skill Trees",
             group: er.fu.BOOSTING,
             tags: ["boosting", "powerups", "server tag"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "game_server",
             name: "Game Server",

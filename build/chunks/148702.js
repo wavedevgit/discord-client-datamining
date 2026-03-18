@@ -6,23 +6,23 @@ var l = a(627968),
     r = a(64700),
     n = a(503698),
     s = a.n(n),
-    d = a(752238),
-    o = a(781992);
+    o = a(752238),
+    d = a(781992);
 
 function i(e) {
     let {
         value: t,
         onChange: a
-    } = e, n = "json", i = r.useRef(null), [c, x] = r.useState("");
+    } = e, n = "json", i = r.useRef(null), [c, u] = r.useState("");
     return r.useEffect(() => {
-        if (null != t && d.default.hasLanguage(n)) {
-            let e = d.default.highlight(n, t, !0);
-            null != e ? x(e.value + "\n") : x(t + "\n")
-        } else x(t + "\n")
+        if (null != t && o.default.hasLanguage(n)) {
+            let e = o.default.highlight(n, t, !0);
+            null != e ? u(e.value + "\n") : u(t + "\n")
+        } else u(t + "\n")
     }, [t, n]), (0, l.jsxs)("div", {
-        className: o.t,
+        className: d.t,
         children: [(0, l.jsx)("pre", {
-            className: o.c5,
+            className: d.c5,
             "aria-hidden": "true",
             children: (0, l.jsx)("code", {
                 className: s()("hljs", n),
@@ -32,7 +32,7 @@ function i(e) {
             })
         }), (0, l.jsx)("textarea", {
             ref: i,
-            className: o.mW,
+            className: d.mW,
             value: t,
             onChange: e => {
                 a(e.target.value)

@@ -21,26 +21,26 @@ var i = n(627968),
     m = n(264140),
     x = n(387462),
     E = n(667285),
-    v = n(920437),
-    y = n(355622),
+    y = n(920437),
+    v = n(355622),
     S = n(408018),
     C = n(20737),
     I = n(133343),
     N = n(692051),
     T = n(685603),
     O = n(451909),
-    j = n(926262),
-    b = n(371648),
+    b = n(926262),
+    j = n(371648),
     D = n(118517),
-    L = n(853145),
-    R = n(522556),
-    w = n(734057),
-    M = n(31717),
-    k = n(517019),
+    R = n(853145),
+    w = n(522556),
+    L = n(734057),
+    k = n(31717),
+    M = n(517019),
     P = n(71393),
     G = n(320501),
-    U = n(309010),
-    V = n(967198),
+    V = n(309010),
+    U = n(967198),
     z = n(287809),
     H = n(532624),
     W = n(256415),
@@ -60,8 +60,8 @@ let en = Q.Li.TOP;
 class ei extends s.Component {
     textAreaRef = s.createRef();
     constructor(e) {
-        super(e), M.A.addChangeListener(this.draftDidChange);
-        const t = M.A.getDraft(e.channel.id, M.C.ChannelMessage);
+        super(e), k.A.addChangeListener(this.draftDidChange);
+        const t = k.A.getDraft(e.channel.id, k.C.ChannelMessage);
         this.state = {
             ...(0, S.ur)(t),
             focused: !1,
@@ -74,7 +74,7 @@ class ei extends s.Component {
         })
     }
     componentWillUnmount() {
-        M.A.removeChangeListener(this.draftDidChange), K._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
+        k.A.removeChangeListener(this.draftDidChange), K._.unsubscribe(q.jej.TEXTAREA_FOCUS, this.focusInput), K._.unsubscribe(q.jej.TEXTAREA_BLUR, this.blurInput)
     }
     draftDidChange = (() => {
         var e = this;
@@ -83,7 +83,7 @@ class ei extends s.Component {
                 {
                     textValue: n
                 } = e.state,
-                i = M.A.getDraft(t.channel.id, M.C.ChannelMessage);
+                i = k.A.getDraft(t.channel.id, k.C.ChannelMessage);
             n !== i && "" === i && e.setState((0, S.ur)(i))
         }
     })();
@@ -102,7 +102,7 @@ class ei extends s.Component {
                 id: i
             }
         } = this.props;
-        h.A.changeDraft(i, this.state.textValue, M.C.ChannelMessage), "" !== t ? f.A.startTyping(i) : f.A.stopTyping(i), this.setState({
+        h.A.changeDraft(i, this.state.textValue, k.C.ChannelMessage), "" !== t ? f.A.startTyping(i) : f.A.stopTyping(i), this.setState({
             textValue: t,
             richValue: n
         })
@@ -122,7 +122,7 @@ class ei extends s.Component {
             openWarningPopout: e => this.setState({
                 contentWarningProps: e
             }),
-            type: y.oU.OVERLAY,
+            type: v.oU.OVERLAY,
             content: t,
             channel: n
         }).then(e => {
@@ -163,7 +163,7 @@ class ei extends s.Component {
     renderAttachButton = (e, t) => (0, i.jsx)(C.A, {
         className: t,
         channel: this.props.channel,
-        draftType: M.C.ChannelMessage,
+        draftType: k.C.ChannelMessage,
         editorTextContent: this.state.textValue,
         setValue: e => this.handleTextareaChange(null, e, (0, S.x7)(e)),
         canOnlyUseTextCommands: e
@@ -191,7 +191,7 @@ class ei extends s.Component {
                 let {
                     closePopout: t
                 } = e;
-                return o()(null != a, "ConnectedChannelTextArea.render - renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(j.A, {
+                return o()(null != a, "ConnectedChannelTextArea.render - renderPopout: contentWarningProps cannot be null"), (0, i.jsx)(b.A, {
                     onClose: t,
                     ...a
                 })
@@ -201,7 +201,7 @@ class ei extends s.Component {
                 ref: this.textAreaRef,
                 renderAttachButton: this.renderAttachButton,
                 channel: e,
-                type: y.oU.OVERLAY,
+                type: v.oU.OVERLAY,
                 onFocus: () => this.setState({
                     focused: !0
                 }),
@@ -220,7 +220,7 @@ class ei extends s.Component {
         return e.isPrivate() ? (0, i.jsx)(E.A, {
             channel: e,
             children: d
-        }, e.id) : (0, i.jsx)(v.A, {
+        }, e.id) : (0, i.jsx)(y.A, {
             channel: e,
             children: d
         }, e.id)
@@ -278,10 +278,10 @@ class es extends s.PureComponent {
         let f = o || h,
             _ = !l && null != t && t.isNSFW(),
             m = !f || d;
-        return e = _ && null != r ? (0, i.jsx)(R.A, {
+        return e = _ && null != r ? (0, i.jsx)(w.A, {
             guild: r,
             channelId: t.id
-        }) : (0, i.jsx)(b.A, {
+        }) : (0, i.jsx)(j.A, {
             channel: t,
             className: et.Wk,
             forceCompact: u,
@@ -447,7 +447,7 @@ function el(e) {
     let {
         contained: t = !1,
         ...n
-    } = e, s = (0, d.bG)([V.A], () => V.A.getGuildId()), l = (0, d.bG)([U.A], () => U.A.getChannelId(s)), a = (0, d.bG)([w.A], () => w.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([k.A], () => null != s && k.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([L.A], () => null != l ? L.A.getPendingReply(l) : void 0), x = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
+    } = e, s = (0, d.bG)([U.A], () => U.A.getGuildId()), l = (0, d.bG)([V.A], () => V.A.getChannelId(s)), a = (0, d.bG)([L.A], () => L.A.getChannel(l)), r = (0, d.bG)([H.Ay], () => H.Ay.getOverlayChatKeybind()), o = null != r ? (0, F.dI)(r.shortcut, !0) : "]", [c, u, h] = (0, d.yK)([W.default], () => [W.default.getTextWidgetOpacity(), W.default.getActiveRegions(), !t && W.default.isPreviewingInGame()]), p = (0, d.bG)([P.A], () => P.A.getGuild(s)), A = (0, d.bG)([M.A], () => null != s && M.A.didAgree(s)), f = null != a && a.isPrivate() ? a.getRecipientId() : null, g = (0, d.bG)([R.A], () => null != l ? R.A.getPendingReply(l) : void 0), x = (0, d.bG)([z.default], () => null != f ? z.default.getUser(f) : null), {
         placeholder: E
     } = (0, _.A)({
         channel: a

@@ -1,12 +1,12 @@
 /** chunk id: 750472 params = (module,exports,require) **/
 a.d(t, {
-    D: () => d
+    D: () => o
 });
 var l = a(627968),
     r = a(397927),
     n = a(673277),
     s = a(190503);
-let d = {
+let o = {
     name: "Image",
     id: "cms-image",
     component: e => {

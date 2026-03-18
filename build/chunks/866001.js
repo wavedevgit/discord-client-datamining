@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(990078),
     m = n(421380),
     h = n(397927),
-    p = n(73153),
-    x = n(58736),
+    x = n(73153),
+    p = n(58736),
     g = n(379078),
     _ = n(704554),
     f = n(603349),
@@ -32,7 +32,7 @@ var a = n(627968),
 function I(e) {
     return parseFloat(e.toFixed(3))
 }
-let k = [{
+let R = [{
     key: "store",
     cellClassName: E.lA,
     render(e) {
@@ -52,7 +52,7 @@ let k = [{
     }
 }];
 
-function R(e) {
+function k(e) {
     let {
         actionLog: t
     } = e, n = i.useMemo(() => t.traces.map(e => ({
@@ -61,7 +61,7 @@ function R(e) {
     })), [t]);
     return (0, a.jsx)(h.IpV, {
         children: (0, a.jsx)(y.A, {
-            columns: k,
+            columns: R,
             data: n
         })
     })
@@ -104,7 +104,7 @@ let O = [{
         let {
             actionLog: t
         } = e;
-        return (0, a.jsx)(R, {
+        return (0, a.jsx)(k, {
             actionLog: t
         })
     }
@@ -156,16 +156,16 @@ function w(e) {
         className: E.rf,
         minHeight: 100,
         initialHeight: n,
-        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(x.Ay, {
+        children: [(0, a.jsx)(r, {}), (0, a.jsxs)(p.Ay, {
             className: l()(N.jr, E.nZ),
-            children: [(0, a.jsx)(x.Ay.Icon, {
+            children: [(0, a.jsx)(p.Ay.Icon, {
                 icon: h.KBH,
                 tooltip: t.name
-            }), (0, a.jsx)(x.Ay.Title, {
+            }), (0, a.jsx)(p.Ay.Title, {
                 wrapperClassName: l()(N.qd, N.ZE),
                 className: N.Pz,
                 children: t.name
-            }), (0, a.jsx)(x.Ay.Icon, {
+            }), (0, a.jsx)(p.Ay.Icon, {
                 icon: h.TdU,
                 tooltip: "Copy event data",
                 onClick: () => {
@@ -242,17 +242,17 @@ function P() {
                     e.off("log", t)
                 }
             }, [e]), t
-        }(p.h.actionLogger),
+        }(x.h.actionLogger),
         r = i.useMemo(() => s.map(e => ({
             key: e.id.toString(),
             actionLog: e
         })).toReversed(), [s]),
         [d, c] = i.useState(r),
-        [m, x] = i.useState(r),
+        [m, p] = i.useState(r),
         [g, f] = i.useState(!1),
         [v, b] = i.useState(),
         j = i.useCallback(e => {
-            x(e)
+            p(e)
         }, []);
     (0, _.RT)(t, g ? d : r, j, M);
     let A = i.useCallback(e => {

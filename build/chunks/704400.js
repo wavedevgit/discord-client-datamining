@@ -4,17 +4,17 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(397927),
-    r = n(985018),
-    a = n(414614);
+var r = n(397927),
+    a = n(985018),
+    l = n(414614);
 
 function s(e) {
     let {
         message: t
     } = e;
-    return (0, i.jsxs)(l.DUT, {
+    return (0, i.jsxs)(r.DUT, {
         onClick: () => {
-            (0, l.mMO)(async () => {
+            (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("35270").then(n.bind(n, 743461));
@@ -25,14 +25,14 @@ function s(e) {
                 })
             })
         },
-        className: a.L,
-        children: [(0, i.jsx)(l.mir, {
+        className: l.L,
+        children: [(0, i.jsx)(r.mir, {
             size: "xs",
             color: "currentColor"
-        }), (0, i.jsx)(l.Text, {
+        }), (0, i.jsx)(r.Text, {
             variant: "text-xs/normal",
-            className: a.m,
-            children: r.intl.string(r.t["2aXnfa"])
+            className: l.m,
+            children: a.intl.string(a.t["2aXnfa"])
         })]
     })
 }

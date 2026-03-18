@@ -3,9 +3,9 @@ n.d(t, {
     A: () => v
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(284009),
-    a = n.n(r),
+    r = n(64700),
+    a = n(284009),
+    l = n.n(a),
     s = n(158954),
     o = n(311907),
     d = n(846293),
@@ -26,54 +26,54 @@ var i = n(627968),
 function v(e) {
     let t, {
             invite: n,
-            currentUserId: r,
+            currentUserId: a,
             guild: v,
             message: b,
             onTransitionToInviteChannel: T,
-            onAcceptInstantInvite: S
+            onAcceptInstantInvite: y
         } = e,
-        y = v?.id,
+        S = v?.id,
         N = (0, o.bG)([p.A], () => p.A.getGuildId()),
-        j = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getActiveStreamForUser(n.target_user.id, y) : null, [n, y]),
-        L = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getStreamForUser(n.target_user.id, y) : null, [n, y]),
+        j = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getActiveStreamForUser(n.target_user.id, S) : null, [n, S]),
+        L = (0, o.bG)([h.A], () => null != n && null != n.target_user ? h.A.getStreamForUser(n.target_user.id, S) : null, [n, S]),
         {
             analyticsLocations: R
         } = (0, u.Ay)(c.A.INVITE_EMBED),
         P = null != n && n.target_type === C.yV.STREAM && null != n.target_user && null != j,
-        M = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
-    a()(null != n, "Invite cannot be null");
+        w = null != n && null != L && null != n.channel && null != n.guild && L.channelId === n.channel.id && L.guildId === n.guild.id;
+    l()(null != n, "Invite cannot be null");
     let {
         target_type: D,
-        target_user: w
+        target_user: M
     } = n;
-    a()(D === C.yV.STREAM && null != w, "invalid streaming invite");
-    let O = r === w.id,
-        k = n.state === f.elq.ACCEPTING,
-        U = l.useCallback(() => {
+    l()(D === C.yV.STREAM && null != M, "invalid streaming invite");
+    let k = a === M.id,
+        O = n.state === f.elq.ACCEPTING,
+        U = r.useCallback(() => {
             let e = "noop";
-            P ? (T(), e = "transition") : (S(), e = "accept"), (0, d.he)({
+            P ? (T(), e = "transition") : (y(), e = "accept"), (0, d.he)({
                 invite: n,
                 action: e,
                 inviter_id: b.author.id,
                 invite_message_id: b.id
             }, R)
-        }, [n, b, R, P, T, S]),
+        }, [n, b, R, P, T, y]),
         B = null != v;
     if (null == v) {
         if (null == n.guild) return (0, i.jsx)(x.A, {});
         v = (0, g.DY)(n.guild)
     }
     let G = null != n.channel ? (0, m.OY)(n.channel) : null,
-        F = A.Ay.getName(w),
-        H = P || !M && B,
+        F = A.Ay.getName(M),
+        H = P || !w && B,
         V = I.intl.string(I.t.I6JG46),
-        W = "active";
-    B && !M ? (t = O ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
+        q = "active";
+    B && !w ? (t = k ? I.intl.string(I.t.oBLoZJ) : I.intl.formatToPlainString(I.t["0QJmA+"], {
         name: F
-    }), V = I.intl.string(I.t.Wdi5E1)) : (W = "active", P && (V = I.intl.string(I.t.Q1W99y), W = "secondary"), t = O ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
+    }), V = I.intl.string(I.t.Wdi5E1)) : (q = "active", P && (V = I.intl.string(I.t.Q1W99y), q = "secondary"), t = k ? I.intl.string(I.t["4hyaHu"]) : I.intl.formatToPlainString(I.t.QmlLEq, {
         name: F
     }));
-    let q = N === v.id && null != G ? (0, i.jsx)(_.A.Channel, {
+    let W = N === v.id && null != G ? (0, i.jsx)(_.A.Channel, {
         channel: G
     }) : I.intl.formatToPlainString(I.t.u0vaDE, {
         guildName: v.name
@@ -86,17 +86,17 @@ function v(e) {
                 className: E.iH,
                 children: [(0, i.jsx)(_.A.Icon, {
                     guild: v,
-                    onClick: B && M ? U : void 0
+                    onClick: B && w ? U : void 0
                 }), (0, i.jsx)(_.A.Info, {
                     title: t,
-                    onClick: B && M ? U : void 0,
-                    children: q
+                    onClick: B && w ? U : void 0,
+                    children: W
                 })]
             }), (0, i.jsx)(s.$nd, {
                 onClick: U,
-                loading: k,
+                loading: O,
                 disabled: H,
-                variant: W,
+                variant: q,
                 text: V
             })]
         })]

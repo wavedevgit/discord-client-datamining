@@ -1,13 +1,13 @@
 /** chunk id: 818352 params = (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var i = n(627968),
-    l = n(422844),
-    r = n(37205);
+    r = n(422844),
+    a = n(37205);
 
-function a(e) {
-    return (0, l.xR)("VoiceInvite").enabled ? (0, i.jsx)(r.A, {
+function l(e) {
+    return (0, r.xR)("VoiceInvite").enabled ? (0, i.jsx)(a.A, {
         ...e
     }) : null
 }

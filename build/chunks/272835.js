@@ -1,13 +1,13 @@
 /** chunk id: 272835 params = (module,exports,require) **/
 a.d(t, {
-    H: () => x
+    H: () => u
 });
 var l = a(627968),
     r = a(64700),
     n = a(735438),
     s = a(397927),
-    d = a(252561),
-    o = a(720462),
+    o = a(252561),
+    d = a(720462),
     i = a(309587);
 let c = [{
         id: "xxs",
@@ -78,11 +78,11 @@ let c = [{
         label: "40px",
         value: 40
     }],
-    x = {
+    u = {
         name: "Interactive H Scroll",
         id: "interactive-h-scroll",
         component: () => {
-            let [e, t] = r.useState(15), [a, x] = r.useState(8), [u, h] = r.useState("xl"), [m, b] = r.useState(!0), p = r.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
+            let [e, t] = r.useState(15), [a, u] = r.useState(8), [x, h] = r.useState("xl"), [m, b] = r.useState(!0), p = r.useMemo(() => [...Array(e)].map((e, t) => (0, l.jsx)(s.DUT, {
                 className: i.j,
                 onClick: () => console.log(t),
                 children: (0, l.jsxs)(s.BJc, {
@@ -98,12 +98,12 @@ let c = [{
                 })
             }, t)), [e]);
             return (0, l.jsxs)("div", {
-                children: [(0, l.jsx)(o.A, {
+                children: [(0, l.jsx)(d.A, {
                     gap: a,
-                    edgeFade: u,
+                    edgeFade: x,
                     hideActionsWhenDisabled: m,
                     children: p
-                }), (0, l.jsx)(d.nB, {}), (0, l.jsxs)(d.MG, {
+                }), (0, l.jsx)(o.nB, {}), (0, l.jsxs)(o.MG, {
                     children: [(0, l.jsx)(s.Checkbox, {
                         checked: m,
                         onChange: () => b(!m),
@@ -117,18 +117,18 @@ let c = [{
                         },
                         label: "Children Count"
                     })]
-                }), (0, l.jsx)(d.MG, {
+                }), (0, l.jsx)(o.MG, {
                     children: (0, l.jsx)(s.l6P, {
                         value: a,
                         options: c,
-                        onSelectionChange: x,
+                        onSelectionChange: u,
                         label: "Children Gap",
                         selectionMode: "single",
                         fullWidth: !0
                     })
-                }), (0, l.jsx)(d.MG, {
+                }), (0, l.jsx)(o.MG, {
                     children: (0, l.jsx)(s.l6P, {
-                        value: u,
+                        value: x,
                         options: c,
                         onSelectionChange: h,
                         label: "Edge Fade Space",

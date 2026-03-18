@@ -1,14 +1,14 @@
 /** chunk id: 715185 params = (module,exports,require) **/
 a.d(t, {
     H: () => i,
-    M: () => o
+    M: () => d
 });
 var l = a(627968);
 a(64700);
 var r = a(397927),
     n = a(41770),
     s = a(785330);
-let d = {
+let o = {
         id: "dummy-show-of-skeletons",
         children: [{
             block: "ContainedHero",
@@ -78,7 +78,7 @@ let d = {
             }]
         }]
     },
-    o = {
+    d = {
         name: "SubLayout",
         id: "sub-layout-basic",
         component: () => (0, l.jsxs)("div", {
@@ -108,7 +108,7 @@ let d = {
                 variant: "text-md/semibold",
                 children: "Here we use the `Skeleton` component to show the shop cards loading while the (dummy) Shop Cards SubLayout are resolving (it will never stop loading for demonstration purposes)"
             }), (0, l.jsx)("br", {}), (0, l.jsx)("hr", {}), (0, l.jsx)("br", {}), (0, l.jsx)(s.Ay, {
-                layout: d
+                layout: o
             })]
         }),
         controls: {}

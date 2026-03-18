@@ -7,8 +7,8 @@ a(64700);
 var r = a(397927),
     n = a(458306),
     s = a(673277),
-    d = a(653793);
-let o = () => (0, l.jsx)("div", {
+    o = a(653793);
+let d = () => (0, l.jsx)("div", {
         style: {
             background: "rgba(255, 255, 255, 0.6)",
             height: 120,
@@ -26,47 +26,47 @@ let o = () => (0, l.jsx)("div", {
                 variant: "text-lg/semibold",
                 children: "It will take up the full width of the parent, and the minimum height for its children"
             }), (0, l.jsxs)(s.A, {
-                children: [(0, l.jsx)(d.A, {
+                children: [(0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "red"
                         },
-                        children: (0, l.jsx)(o, {})
+                        children: (0, l.jsx)(d, {})
                     })
-                }), (0, l.jsx)(d.A, {
+                }), (0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "orange"
                         },
-                        children: (0, l.jsx)(o, {})
+                        children: (0, l.jsx)(d, {})
                     })
-                }), (0, l.jsx)(d.A, {
+                }), (0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "yellow"
                         },
-                        children: (0, l.jsx)(o, {})
+                        children: (0, l.jsx)(d, {})
                     })
-                }), (0, l.jsx)(d.A, {
+                }), (0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "green"
                         },
-                        children: (0, l.jsx)(o, {})
+                        children: (0, l.jsx)(d, {})
                     })
-                }), (0, l.jsx)(d.A, {
+                }), (0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "blue"
                         },
-                        children: (0, l.jsx)(o, {})
+                        children: (0, l.jsx)(d, {})
                     })
-                }), (0, l.jsx)(d.A, {
+                }), (0, l.jsx)(o.A, {
                     children: (0, l.jsx)("div", {
                         style: {
                             background: "violet"
                         },
-                        children: (0, l.jsx)(o, {})
+                        children: (0, l.jsx)(d, {})
                     })
                 })]
             }), (0, l.jsxs)(s.A, {
@@ -75,47 +75,47 @@ let o = () => (0, l.jsx)("div", {
                     children: "Cards inside of a horizontal stack with a min-width of 120px"
                 }), (0, l.jsxs)(n.Kp, {
                     direction: "horizontal",
-                    children: [(0, l.jsx)(d.A, {
+                    children: [(0, l.jsx)(o.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "red"
                             },
-                            children: (0, l.jsx)(o, {})
+                            children: (0, l.jsx)(d, {})
                         })
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "orange"
                             },
-                            children: (0, l.jsx)(o, {})
+                            children: (0, l.jsx)(d, {})
                         })
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "yellow"
                             },
-                            children: (0, l.jsx)(o, {})
+                            children: (0, l.jsx)(d, {})
                         })
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "green"
                             },
-                            children: (0, l.jsx)(o, {})
+                            children: (0, l.jsx)(d, {})
                         })
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "blue"
                             },
-                            children: (0, l.jsx)(o, {})
+                            children: (0, l.jsx)(d, {})
                         })
-                    }), (0, l.jsx)(d.A, {
+                    }), (0, l.jsx)(o.A, {
                         children: (0, l.jsx)("div", {
                             style: {
                                 background: "violet"
                             },
-                            children: (0, l.jsx)(o, {})
+                            children: (0, l.jsx)(d, {})
                         })
                     })]
                 })]

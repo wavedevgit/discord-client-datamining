@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(297413),
     h = n(58736),
-    p = n(379078),
-    x = n(704554),
+    x = n(379078),
+    p = n(704554),
     g = n(287809),
     _ = n(957565),
     f = n(405269),
@@ -59,7 +59,7 @@ function I(e) {
     })
 }
 
-function k(e) {
+function R(e) {
     let {
         name: t,
         children: n,
@@ -91,7 +91,7 @@ function k(e) {
         })]
     })
 }
-let R = new Set(["client_performance_cpu", "client_performance_memory"]),
+let k = new Set(["client_performance_cpu", "client_performance_memory"]),
     O = [{
         id: "details",
         name: "Details",
@@ -106,7 +106,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                 },
                 onClose: r,
                 filteredEvents: d
-            } = e, c = g.default.getUser(s), p = o()(i);
+            } = e, c = g.default.getUser(s), x = o()(i);
             return (0, a.jsxs)("div", {
                 "data-mtctest-ignore": "true",
                 children: [(0, a.jsxs)(h.Ay, {
@@ -149,8 +149,8 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                         copyValue: i.toISOString(),
                         children: (0, a.jsxs)("time", {
                             dateTime: i.toISOString(),
-                            title: (0, f.i$)(p, "LLLL"),
-                            children: ["(", o().locale(), ") ", (0, f.mk)(p)]
+                            title: (0, f.i$)(x, "LLLL"),
+                            children: ["(", o().locale(), ") ", (0, f.mk)(x)]
                         })
                     }), null != c && (0, a.jsx)(j.mA, {
                         name: "User",
@@ -167,7 +167,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = R.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = k.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -185,7 +185,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                             }
                         })(d, t, n) : null;
                         return (0, a.jsxs)("div", {
-                            children: [(0, a.jsx)(k, {
+                            children: [(0, a.jsx)(R, {
                                 name: `${n}:`,
                                 copyValue: {
                                     [n]: i || null
@@ -196,7 +196,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
                                     className: S.HO,
                                     children: "null"
                                 })
-                            }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
+                            }, n), null !== s && null !== s.average && (0, a.jsx)(R, {
                                 name: `${n}_avg:`,
                                 copyValue: {
                                     [n]: i || null
@@ -238,7 +238,7 @@ let R = new Set(["client_performance_cpu", "client_performance_memory"]),
         }
     },
     D = {
-        searchType: p.n.REGEX,
+        searchType: x.n.REGEX,
         searchStringGenerator: e => {
             let {
                 event: t,
@@ -255,10 +255,10 @@ function M() {
         s = (0, d.bG)([v.A], () => v.A.loggedEventsVersion),
         [r, o] = i.useState(() => Object.keys(w)),
         [m, h] = i.useState(v.A.loggedEvents),
-        p = i.useCallback(e => {
+        x = i.useCallback(e => {
             h(e)
         }, []);
-    (0, x.RT)(t, v.A.loggedEvents, p, D, [s]);
+    (0, p.RT)(t, v.A.loggedEvents, x, D, [s]);
     let g = m.filter(e => {
             for (let t of r)
                 if (w[t].filter(e)) return !0;
@@ -268,7 +268,7 @@ function M() {
         j = g.find(e => e.key === _),
         {
             TabBar: I,
-            renderSelectedTab: k
+            renderSelectedTab: R
         } = (0, y.Ay)({
             tabs: O
         }, []);
@@ -323,7 +323,7 @@ function M() {
             className: S.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-            children: [(0, a.jsx)(I, {}), k({
+            children: [(0, a.jsx)(I, {}), R({
                 loggedEvent: j,
                 onClose: () => f(void 0),
                 filteredEvents: g

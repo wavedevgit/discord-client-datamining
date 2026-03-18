@@ -1,6 +1,6 @@
 /** chunk id: 814904 params = (module,exports,require) **/
 a.d(t, {
-    D: () => d
+    D: () => o
 });
 var l = a(627968);
 a(64700);
@@ -14,7 +14,7 @@ let s = () => (0, l.jsx)("div", {
             borderRadius: 6
         }
     }),
-    d = {
+    o = {
         title: "Contained Hero",
         stories: [{
             name: "ContainedHero",
@@ -23,31 +23,16 @@ let s = () => (0, l.jsx)("div", {
                 let {
                     containerHeight: t,
                     showChildren: a,
-                    bannerSrc: d,
-                    animatedBannerSrc: o,
+                    bannerSrc: o,
+                    animatedBannerSrc: d,
                     logoSrc: i,
                     href: c,
-                    backgroundColor: x
-                } = e, u = () => a ? (0, l.jsxs)(r.A, {
+                    backgroundColor: u
+                } = e, x = () => a ? (0, l.jsxs)(r.A, {
                     children: [(0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {}), (0, l.jsx)(s, {})]
                 }) : null;
                 return (0, l.jsxs)(l.Fragment, {
                     children: [(0, l.jsx)("div", {
-                        style: {
-                            height: a ? void 0 : t
-                        },
-                        children: (0, l.jsx)(n.A, {
-                            bannerSrc: {
-                                src: d
-                            },
-                            logoSrc: {
-                                src: i
-                            },
-                            href: c,
-                            backgroundColor: x,
-                            children: u()
-                        })
-                    }), (0, l.jsx)("br", {}), (0, l.jsx)("div", {
                         style: {
                             height: a ? void 0 : t
                         },
@@ -59,8 +44,23 @@ let s = () => (0, l.jsx)("div", {
                                 src: i
                             },
                             href: c,
-                            backgroundColor: x,
-                            children: u()
+                            backgroundColor: u,
+                            children: x()
+                        })
+                    }), (0, l.jsx)("br", {}), (0, l.jsx)("div", {
+                        style: {
+                            height: a ? void 0 : t
+                        },
+                        children: (0, l.jsx)(n.A, {
+                            bannerSrc: {
+                                src: d
+                            },
+                            logoSrc: {
+                                src: i
+                            },
+                            href: c,
+                            backgroundColor: u,
+                            children: x()
                         })
                     })]
                 })

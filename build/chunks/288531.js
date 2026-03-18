@@ -4,9 +4,9 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(503698),
-    r = n.n(l),
-    a = n(696292),
+var r = n(503698),
+    a = n.n(r),
+    l = n(696292),
     s = n(311907),
     o = n(435371),
     d = n(397927),
@@ -26,8 +26,8 @@ var l = n(503698),
     v = n(212614),
     b = n(79545),
     T = n(646764),
-    S = n(545986),
-    y = n(433745),
+    y = n(545986),
+    S = n(433745),
     N = n(654487),
     j = n(652215),
     L = n(985018),
@@ -37,44 +37,44 @@ function P(e) {
     let {
         containerSize: t,
         onClick: n,
-        text: l,
-        tabIndex: r
+        text: r,
+        tabIndex: a
     } = e;
     return "xs" === t ? (0, i.jsx)(d.DUT, {
-        tabIndex: r,
+        tabIndex: a,
         className: R.CU,
         tag: "span",
         onClick: n,
         children: (0, i.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: "text-link",
-            children: l
+            children: r
         })
     }) : (0, i.jsx)(d.Button, {
         fullWidth: !0,
-        tabIndex: r,
+        tabIndex: a,
         variant: "secondary",
         onClick: n,
-        text: l
+        text: r
     })
 }
 
-function M(e) {
+function w(e) {
     let {
         quest: t,
         progressState: n,
-        questContent: l,
-        questContentPosition: r,
-        sourceQuestContent: a
+        questContent: r,
+        questContentPosition: a,
+        sourceQuestContent: l
     } = e, c = (0, s.bG)([h.A], () => h.A.isEnrolling(t.id)), u = (0, I.vv)(t), _ = (0, I.Cr)(t), m = (0, E._c)({
         progressState: n,
         quest: t,
-        questContent: l,
-        questContentPosition: r,
+        questContent: r,
+        questContentPosition: a,
         inGiftInventory: !1,
         isVideoQuest: u,
         inGameQuest: _,
-        sourceQuestContent: a
+        sourceQuestContent: l
     });
     return (0, i.jsx)(o.m_, {
         text: m.tooltipText,
@@ -92,33 +92,33 @@ let D = e => {
     let {
         quest: t,
         location: n,
-        size: l,
+        size: r,
         isFocused: E,
         isQuestExpired: D,
-        isExpanded: w,
-        isAnimating: O,
-        contentPosition: k,
+        isExpanded: M,
+        isAnimating: k,
+        contentPosition: O,
         sourceQuestContent: U
     } = e, B = (0, A.In)(t), G = (0, A.S5)(t.userStatus?.completedAt, {
         year: "numeric",
         month: "long",
         day: "numeric"
-    }), F = B >= A.F3.ACCEPTED, H = B >= A.F3.COMPLETED, V = w || O, W = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), q = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
+    }), F = B >= A.F3.ACCEPTED, H = B >= A.F3.COMPLETED, V = M || k, q = (0, g.wT)(t, N.rE.QUESTS_CARD, n, U), W = (0, x.Ut)(), Y = (0, A.fc)(t), z = (0, g.mU)({
         quest: t,
         taskDetails: Y,
         location: N.rE.QUESTS_CARD,
-        questContent: a.u.QUESTS_EMBED,
+        questContent: l.u.QUESTS_EMBED,
         sourceQuestContent: U,
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, I.vv)(t);
+    }), X = (0, b.Pd)(t), J = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
-            className: r()(R.nw, {
-                [R.dF]: "sm" === l,
-                [R.e5]: "xs" === l
+            className: a()(R.nw, {
+                [R.dF]: "sm" === r,
+                [R.e5]: "xs" === r
             }),
             style: {
                 visibility: V ? "inherit" : "hidden"
@@ -136,37 +136,37 @@ let D = e => {
                         })
                     }), (0, i.jsx)(T.A, {
                         autoplay: E,
-                        className: r()({
-                            [R.Lu]: "lg" === l,
-                            [R.je]: "sm" === l,
-                            [R.ks]: "xs" === l
+                        className: a()({
+                            [R.Lu]: "lg" === r,
+                            [R.je]: "sm" === r,
+                            [R.ks]: "xs" === r
                         }),
                         learnMoreStyle: "text",
                         quest: t,
                         questContent: n,
-                        questContentPosition: k,
+                        questContentPosition: O,
                         sourceQuestContent: U
                     })]
                 })
             }), (0, i.jsxs)("div", {
                 className: R.oW,
                 children: [!$ && (0, i.jsx)(d.Text, {
-                    variant: (0, y.a3)(n) && !F && "lg" === l ? "text-lg/medium" : "lg" === l ? "text-md/medium" : "sm" === l ? "text-sm/medium" : "text-xs/medium",
+                    variant: (0, S.a3)(n) && !F && "lg" === r ? "text-lg/medium" : "lg" === r ? "text-md/medium" : "sm" === r ? "text-sm/medium" : "text-xs/medium",
                     className: R.$p,
                     children: D ? L.intl.formatToPlainString(L.t["ge+AJp"], {
                         questName: t.config.messages.questName
-                    }) : W
+                    }) : q
                 }), (0, i.jsx)(d.Text, {
-                    variant: "lg" === l ? "text-sm/medium" : "text-xs/medium",
+                    variant: "lg" === r ? "text-sm/medium" : "text-xs/medium",
                     color: "text-muted",
                     children: function(e) {
                         let {
                             quest: t,
                             locale: n,
                             isQuestExpired: i,
-                            collectibleQuestRewardDescription: l,
-                            formattedCompletionDate: r
-                        } = e, a = t.userStatus?.completedAt != null, s = a && t.userStatus?.claimedAt != null, o = (0, C.kr)({
+                            collectibleQuestRewardDescription: r,
+                            formattedCompletionDate: a
+                        } = e, l = t.userStatus?.completedAt != null, s = l && t.userStatus?.claimedAt != null, o = (0, C.kr)({
                             quest: t
                         }), d = (0, C.mH)(t.config);
                         if (s) {
@@ -177,17 +177,17 @@ let D = e => {
                                 n = e?.messages.nameWithArticle ?? null;
                             return null != n ? L.intl.formatToPlainString(L.t.RrxtPU, {
                                 reward: n,
-                                date: r
+                                date: a
                             }) : L.intl.formatToPlainString(L.t.zNoqRe, {
                                 reward: d,
-                                date: r
+                                date: a
                             })
                         }
-                        if (a) return o ? L.intl.formatToPlainString(L.t["l1jCM/"], {
-                            date: r
+                        if (l) return o ? L.intl.formatToPlainString(L.t["l1jCM/"], {
+                            date: a
                         }) : L.intl.formatToPlainString(L.t.zNoqRe, {
                             reward: d,
-                            date: r
+                            date: a
                         });
                         let c = o ? (0, C.cg)({
                             quest: t,
@@ -199,10 +199,10 @@ let D = e => {
                             maxReward: c.messages.nameWithArticle,
                             maxRewardCount: (0, m.tg)(c.approximateCount, n),
                             helpCenterLink: _.A.getArticleURL(j.MVz.QUESTS_LEARN_MORE)
-                        }) : l
+                        }) : r
                     }({
                         quest: t,
-                        locale: X,
+                        locale: J,
                         isQuestExpired: D,
                         collectibleQuestRewardDescription: z,
                         formattedCompletionDate: G
@@ -211,43 +211,43 @@ let D = e => {
             }), Q ? (0, i.jsxs)(d.ButtonGroup, {
                 direction: "horizontal",
                 align: "center",
-                fullWidth: "lg" !== l,
+                fullWidth: "lg" !== r,
                 children: [(0, i.jsx)(d.Button, {
                     variant: "secondary",
                     disabled: !0,
                     text: L.intl.string(L.t.V293qn)
                 }), (0, i.jsx)(d.Button, {
                     variant: "primary",
-                    onClick: () => (0, S.m6)(t, n, U),
+                    onClick: () => (0, y.m6)(t, n, U),
                     text: L.intl.string(L.t.vY9GgG)
                 })]
             }) : (0, i.jsxs)(d.ButtonGroup, {
                 direction: "horizontal",
                 align: "center",
                 justify: "end",
-                fullWidth: "lg" !== l,
+                fullWidth: "lg" !== r,
                 children: [(0, i.jsx)(P, {
-                    containerSize: l,
+                    containerSize: r,
                     onClick: () => {
-                        (0, S.navigateToQuestHome)({
+                        (0, y.navigateToQuestHome)({
                             fromContent: n,
                             questId: t.id
-                        }), q({
+                        }), W({
                             questId: t.id,
                             questContent: n,
-                            questContentPosition: k,
+                            questContentPosition: O,
                             questContentCTA: f.Cy.LEARN_MORE,
                             sourceQuestContent: U
                         })
                     },
                     text: L.intl.string(L.t.LLLLPD)
-                }), !Z && (K.enabled && J === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(v.A, {
+                }), !Z && (K.enabled && X === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(v.A, {
                     quest: t,
                     surface: b.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,
                     analyticsCtxSourceQuestContent: U,
-                    analyticsCtxQuestContentPosition: k
-                }) : (0, i.jsx)(M, {
+                    analyticsCtxQuestContentPosition: O
+                }) : (0, i.jsx)(w, {
                     quest: t,
                     progressState: B,
                     questContent: n,

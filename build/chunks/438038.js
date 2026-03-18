@@ -3,10 +3,10 @@ n.d(t, {
     R: () => h
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(497766);
+    r = n(64700),
+    a = n(497766);
 n(311907), n(859703);
-var a = n(341915),
+var l = n(341915),
     s = n(890687),
     o = n(73473),
     d = n(288531),
@@ -36,24 +36,24 @@ function h(e) {
             location: n,
             quest: t
         })
-    }), [T, S] = l.useState(!1), y = () => S(!0), N = () => S(!1), j = C ?? _._B;
+    }), [T, y] = r.useState(!1), S = () => y(!0), N = () => y(!1), j = C ?? _._B;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: n,
         questContentPosition: p,
-        trackGuildAndChannelMetadata: n === a.uF.QUESTS_EMBED,
+        trackGuildAndChannelMetadata: n === l.uF.QUESTS_EMBED,
         sourceQuestContent: g,
-        children: e => (0, i.jsx)(r.animated.div, {
+        children: e => (0, i.jsx)(a.animated.div, {
             style: {
-                maxHeight: n === a.uF.QUESTS_EMBED ? void 0 : I.to({
+                maxHeight: n === l.uF.QUESTS_EMBED ? void 0 : I.to({
                     range: [0, 1],
                     output: [_.es, j]
                 })
             },
             className: m.i,
-            onMouseEnter: y,
+            onMouseEnter: S,
             onMouseLeave: N,
-            onFocus: y,
+            onFocus: S,
             onBlur: N,
             children: (0, i.jsxs)("div", {
                 ref: t => {

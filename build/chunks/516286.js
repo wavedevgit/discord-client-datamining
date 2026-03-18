@@ -1,6 +1,6 @@
 /** chunk id: 516286 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => p
 });
 var a = n(627968),
     i = n(64700),
@@ -17,7 +17,7 @@ function m(e) {
         setting: t,
         depth: n,
         highlightMode: s
-    } = e, l = i.useContext(p)?.get(t), r = null;
+    } = e, l = i.useContext(x)?.get(t), r = null;
     return null != l && l.length > 0 && (r = l.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
         setting: e,
         depth: n + 1,
@@ -59,9 +59,9 @@ function h(e) {
         children: o
     })
 }
-let p = i.createContext(null);
+let x = i.createContext(null);
 
-function x() {
+function p() {
     let [e, t] = i.useState(!1), {
         legacySettingDirectory: n
     } = (0, c.B)(), {
@@ -78,7 +78,7 @@ function x() {
             checked: e,
             onChange: e => t(e),
             label: "Show Legacy Settings Tree"
-        }), (0, a.jsx)(p.Provider, {
+        }), (0, a.jsx)(x.Provider, {
             value: n,
             children: (0, a.jsxs)("div", {
                 className: u.B2,

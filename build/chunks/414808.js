@@ -1,65 +1,65 @@
 /** chunk id: 414808 params = (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => S
 });
-var s = n(627968),
-    l = n(64700),
-    a = n(311907),
-    i = n(342494),
+var l = n(627968),
+    s = n(64700),
+    i = n(311907),
+    a = n(342494),
     r = n(397927),
-    o = n(793574),
-    u = n(688810),
+    u = n(793574),
+    o = n(688810),
     c = n(532794),
     d = n(181079),
     m = n(93055),
     A = n(49999),
     E = n(788868),
-    f = n(665606),
-    p = n(985018),
+    p = n(665606),
+    f = n(985018),
     h = n(988572);
 
-function x(e) {
+function S(e) {
     let {
         targetElementRef: t,
         markMenuItemPopoverAsDismissed: n
-    } = e, [x, N] = l.useState("top"), S = l.useRef(null), g = l.useRef(null), {
-        hasAccess: T
+    } = e, [S, T] = s.useState("top"), x = s.useRef(null), _ = s.useRef(null), {
+        hasAccess: N
     } = (0, m.TW)("FavoritesOnboardingMenuItemPopover"), {
-        analyticsLocations: _
-    } = (0, u.Ay)(o.A.FAVORITES_GUILD_MENU_ITEM), v = (0, a.bG)([d.A], () => d.A.hasStoredFavorites());
-    l.useLayoutEffect(() => {
+        analyticsLocations: g
+    } = (0, o.Ay)(u.A.FAVORITES_GUILD_MENU_ITEM), C = (0, i.bG)([d.A], () => d.A.hasStoredFavorites());
+    s.useLayoutEffect(() => {
         if (null == t.current) return;
         let e = () => {
-            null == g.current && (g.current = window.requestAnimationFrame(() => {
-                g.current = null, (() => {
+            null == _.current && (_.current = window.requestAnimationFrame(() => {
+                _.current = null, (() => {
                     let e = t.current?.getBoundingClientRect();
                     if (null == e) return;
-                    let n = S.current?.getBoundingClientRect().height ?? 0;
-                    N(window.innerHeight - e.top < n ? "bottom" : "top")
+                    let n = x.current?.getBoundingClientRect().height ?? 0;
+                    T(window.innerHeight - e.top < n ? "bottom" : "top")
                 })()
             }))
         };
         return e(), window.addEventListener("resize", e), window.addEventListener("scroll", e, !0), () => {
-            null != g.current && (window.cancelAnimationFrame(g.current), g.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
+            null != _.current && (window.cancelAnimationFrame(_.current), _.current = null), window.removeEventListener("resize", e), window.removeEventListener("scroll", e, !0)
         }
     }, [t]);
-    let C = l.useCallback(() => {
-            n?.(A.i.TAKE_ACTION), T || (0, c.A)({
+    let v = s.useCallback(() => {
+            n?.(A.i.TAKE_ACTION), N || (0, c.A)({
                 subscriptionTier: E.pe.TIER_2,
-                analyticsLocations: _
+                analyticsLocations: g
             })
-        }, [n, _, T]),
-        I = v ? f.default.TWuDTt : f.default["25YCHl"];
-    return (0, s.jsx)(i.AM, {
+        }, [n, g, N]),
+        I = C ? p.default.TWuDTt : p.default["25YCHl"];
+    return (0, l.jsx)(a.AM, {
         targetElementRef: t,
         gradientColor: "nitro-pink",
         position: "right",
         alignmentStrategy: "edge",
-        align: x,
+        align: S,
         caretConfig: {
-            align: "top" === x ? "start" : "end"
+            align: "top" === S ? "start" : "end"
         },
-        popoverRef: S,
+        popoverRef: x,
         badge: {
             type: "beta",
             variant: "expressive"
@@ -69,14 +69,14 @@ function x(e) {
             type: "image",
             aspectRatio: "16/9"
         },
-        title: p.intl.string(T ? I : f.default.A3ZjbM),
-        body: p.intl.string(T ? f.default.DFjrWw : f.default.qJUI2v),
+        title: f.intl.string(N ? I : p.default.A3ZjbM),
+        body: f.intl.string(N ? p.default.DFjrWw : p.default.qJUI2v),
         onRequestClose: () => n?.(A.i.USER_DISMISS),
         actions: [{
-            icon: T ? void 0 : r.tvc,
-            text: T ? p.intl.string(f.default["+h9aza"]) : p.intl.string(f.default["avps/2"]),
-            onClick: () => C(),
-            variant: T ? "secondary" : "expressive"
+            icon: N ? void 0 : r.tvc,
+            text: N ? f.intl.string(p.default["+h9aza"]) : f.intl.string(p.default["avps/2"]),
+            onClick: () => v(),
+            variant: N ? "secondary" : "expressive"
         }]
     })
 }

@@ -4,19 +4,19 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var l = n(341915),
-    r = n(665816),
-    a = n(654487),
+var r = n(341915),
+    a = n(665816),
+    l = n(654487),
     s = n(985018);
 
 function o(e) {
     let {
         questId: t
     } = e;
-    return (0, i.jsx)(r.i, {
+    return (0, i.jsx)(a.i, {
         questId: t,
-        fallbackReason: a.eA.EXCLUDED_QUEST,
+        fallbackReason: l.eA.EXCLUDED_QUEST,
         bodyText: s.intl.string(s.t.NIliWX),
-        questContent: l.uF.EXCLUDED_QUEST_EMBED
+        questContent: r.uF.EXCLUDED_QUEST_EMBED
     })
 }

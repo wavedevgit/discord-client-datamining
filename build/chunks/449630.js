@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(765671),
     h = n(793574),
-    p = n(688810),
-    x = n(395332),
+    x = n(688810),
+    p = n(395332),
     g = n(713517),
     _ = n(645507),
     f = n(932001),
@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(31432),
     N = n(915614),
     I = n(223330),
-    k = n(559506),
-    R = n(646986),
+    R = n(559506),
+    k = n(646986),
     O = n(379654),
     w = n(946356),
     D = n(810396),
@@ -67,7 +67,7 @@ function ei(e) {
         className: es
     } = e, el = __OVERLAY__, er = (0, y.Ay)(t.id, void 0), {
         analyticsLocations: eo
-    } = (0, p.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ed = (0, C.pb)({
+    } = (0, x.Ay)(h.A.USER_PROFILE_ACCOUNT_POPOUT), ed = (0, C.pb)({
         layout: "ACCOUNT_POPOUT",
         userId: t.id,
         guildId: void 0
@@ -85,13 +85,13 @@ function ei(e) {
     }), () => H.A.setState({
         isOpen: !1
     })), []);
-    let ep = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
-        ex = L.CY.useSetting(),
-        eg = (0, Y.Q)(ex),
+    let ex = (0, d.bG)([B.A], () => B.A.getStatus(t.id)),
+        ep = L.CY.useSetting(),
+        eg = (0, Y.Q)(ep),
         e_ = (0, d.bG)([G.A], () => G.A.hidePersonalInformation),
         ef = (0, v.kB)(),
         ev = L.Q_.useSetting(),
-        eb = (0, Y.T)(ep),
+        eb = (0, Y.T)(ex),
         ej = (0, K.j)(n),
         eA = (0, j.A)({
             analyticsLocations: eo
@@ -107,7 +107,7 @@ function ei(e) {
             eI(!1)
         }, 500)
     }, []);
-    let ek = e => {
+    let eR = e => {
             n?.(), (0, T.openUserProfileModal)({
                 customStatusPrompt: eE,
                 sourceAnalyticsLocations: eo,
@@ -115,8 +115,8 @@ function ei(e) {
                 ...e
             })
         },
-        eR = er?.widgets != null && er.widgets.length > 0,
-        eO = eR ? [] : [c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
+        ek = er?.widgets != null && er.widgets.length > 0,
+        eO = ek ? [] : [c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
         [ew, eD] = (0, f.kn)(eO),
         eM = ew === c.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
         eP = i.useCallback(() => {
@@ -125,13 +125,13 @@ function ei(e) {
         eU = i.useCallback(() => {
             eA(), eP()
         }, [eA, eP]),
-        eL = (0, x.JY)({
+        eL = (0, p.JY)({
             location: "UserProfileAccountPopout"
         }),
-        eB = (0, x.on)({
+        eB = (0, p.on)({
             location: "UserProfileAccountPopout"
         });
-    return (0, a.jsx)(p.f5, {
+    return (0, a.jsx)(x.f5, {
         value: eo,
         children: (0, a.jsx)(C.of, {
             value: ed,
@@ -143,7 +143,7 @@ function ei(e) {
                 "data-layer": "base",
                 children: [(0, a.jsx)(Q.A, {
                     displayProfile: er,
-                    handleOpenUserProfileModal: ek,
+                    handleOpenUserProfileModal: eR,
                     height: eu
                 }), (0, a.jsxs)(w.A, {
                     className: en.BK,
@@ -160,7 +160,7 @@ function ei(e) {
                             user: t,
                             displayProfile: er,
                             themeType: ee.d.POPOUT,
-                            onOpenProfile: el ? void 0 : ek
+                            onOpenProfile: el ? void 0 : eR
                         }), (0, a.jsx)(P.A, {
                             ref: ey,
                             user: t,
@@ -173,13 +173,13 @@ function ei(e) {
                         style: {
                             pointerEvents: eN ? "none" : void 0
                         },
-                        children: [(0, a.jsx)(k.A, {
+                        children: [(0, a.jsx)(R.A, {
                             userId: t.id
                         }), (0, a.jsx)(D.A, {
                             user: t,
                             className: en.Xh,
                             nickname: V.Ay.getName(void 0, null, t),
-                            onOpenProfile: el ? void 0 : ek,
+                            onOpenProfile: el ? void 0 : eR,
                             pronouns: er?.pronouns,
                             tags: (0, a.jsx)(E.A, {
                                 displayProfile: er,
@@ -197,17 +197,17 @@ function ei(e) {
                             bio: er?.bio,
                             hidePersonalInformation: e_,
                             onClose: n
-                        }), eR && (0, a.jsx)(O.A, {
+                        }), ek && (0, a.jsx)(O.A, {
                             user: t,
                             widgets: er?.widgets,
-                            onOpenUserProfileModal: ek
+                            onOpenUserProfileModal: eR
                         }), (0, a.jsx)(I.A, {
                             isPremiumUser: eC,
                             onInteraction: n
-                        }), (0, a.jsx)(R.A, {
+                        }), (0, a.jsx)(k.A, {
                             user: t,
                             currentUser: t,
-                            onOpenUserProfileModal: ek,
+                            onOpenUserProfileModal: eR,
                             onClose: n
                         }), (0, a.jsxs)("div", {
                             className: en.T_,
@@ -228,10 +228,10 @@ function ei(e) {
                                         label: (0, a.jsx)(q.A, {}),
                                         sublabel: null != eg && eg,
                                         icon: () => (0, a.jsx)(u.nW6, {
-                                            status: ep,
+                                            status: ex,
                                             size: 12
                                         }),
-                                        trailing: (ef || ep === X.clD.DND) && (0, a.jsx)(u.a_I, {
+                                        trailing: (ef || ex === X.clD.DND) && (0, a.jsx)(u.a_I, {
                                             size: "xxs"
                                         }),
                                         renderSubmenu: r.Fr ? void 0 : e => {

@@ -21,8 +21,8 @@ var s = n(627968),
     m = n(684136),
     x = n(34968),
     E = n(775121),
-    v = n(836753),
-    y = n(793574),
+    y = n(836753),
+    v = n(793574),
     S = n(688810),
     C = n(235986);
 n(607470);
@@ -30,18 +30,18 @@ var I = n(15285),
     N = n(880144),
     T = n(905552),
     O = n(768841),
-    j = n(265367),
-    b = n(616356),
+    b = n(265367),
+    j = n(616356),
     D = n(734057),
-    L = n(71393),
-    R = n(555528),
-    w = n(430452),
-    M = n(309010),
-    k = n(70142),
+    R = n(71393),
+    w = n(555528),
+    L = n(430452),
+    k = n(309010),
+    M = n(70142),
     P = n(157257),
     G = n(712687),
-    U = n(532624),
-    V = n(242286),
+    V = n(532624),
+    U = n(242286),
     z = n(899699),
     H = n(256415),
     W = n(531685),
@@ -148,10 +148,10 @@ class ep extends l.Component {
         this.forceUpdate()
     }, 500);
     handleWindowResize = () => {
-        V.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
+        U.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : this.debouncedForceUpdate()
     };
     componentDidMount() {
-        _.A.startSession(), O.A.initialize(), v.A.initialize(), j.A.initialize()
+        _.A.startSession(), O.A.initialize(), y.A.initialize(), b.A.initialize()
     }
     componentDidUpdate(e) {
         let {
@@ -188,7 +188,7 @@ class ep extends l.Component {
             voice_widget_connected: t,
             text_widget_connected: H.default.isPinned(el.uss.TEXT),
             overlay_render_method: X.Ue[X.Ue.Hook],
-            unpinned_widget_types: R.A.getAllUnpinnedPinnedWidgets(J.OVERLAY_LAYOUT_ID)
+            unpinned_widget_types: w.A.getAllUnpinnedPinnedWidgets(J.OVERLAY_LAYOUT_ID)
         });
         let c = l && !a && null != d,
             u = t && null != r && null != o,
@@ -215,7 +215,7 @@ class ep extends l.Component {
                 message: "set_perf_report_interval",
                 interval: 15 * K.A.Millis.MINUTE
             })), F.Ay.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-                H.default.getDisableExternalLinkAlert() || t === k.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
+                H.default.getDisableExternalLinkAlert() || t === M.A.getLastURL() ? F.Ay.send("OPEN_EXTERNAL_URL", t) : (0, f.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("30582").then(n.bind(n, 613429));
@@ -229,7 +229,7 @@ class ep extends l.Component {
         window.addEventListener("keydown", this.onKeyDownGlobal, !0), window.addEventListener("keyup", this.onKeyUpGlobal, !0)
     }
     componentWillUnmount() {
-        window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", ed, !1), O.A.terminate(), v.A.terminate(), j.A.terminate()
+        window.removeEventListener("resize", this.handleWindowResize), window.removeEventListener("keydown", this.onKeyDownGlobal, !0), window.removeEventListener("keyup", this.onKeyUpGlobal, !0), this.props.locked && window.removeEventListener("contextmenu", ed, !1), O.A.terminate(), y.A.terminate(), b.A.terminate()
     }
     activeKeyEventShapes = [];
     lockEventShape = (0, Z.pi)(this.props.keybindKeyCodes);
@@ -314,9 +314,9 @@ function eA() {
         incompatibleApp: H.default.incompatibleApp,
         activeRegions: H.default.getActiveRegions(),
         isPreviewingInGame: H.default.isPreviewingInGame()
-    })), r = (0, A.bG)([W.A], () => W.A.windowSize()), o = (0, A.bG)([U.Ay], () => U.Ay.getOverlayKeybind()), d = (0, A.bG)([M.A], () => M.A.getVoiceChannelId()), c = (0, A.bG)([D.A], () => D.A.getChannel(d)), u = (0, A.bG)([L.A], () => null != c ? L.A.getGuild(c.guild_id) : null), h = (0, A.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, A.bG)([w.Ay], () => (0, N.A)(w.Ay)), f = (0, A.bG)([b.A], () => null != b.A.getCurrentUserActiveStream()), {
+    })), r = (0, A.bG)([W.A], () => W.A.windowSize()), o = (0, A.bG)([V.Ay], () => V.Ay.getOverlayKeybind()), d = (0, A.bG)([k.A], () => k.A.getVoiceChannelId()), c = (0, A.bG)([D.A], () => D.A.getChannel(d)), u = (0, A.bG)([R.A], () => null != c ? R.A.getGuild(c.guild_id) : null), h = (0, A.bG)([I.Ay, P.A], () => (0, T.A)(I.Ay, P.A)), p = (0, A.bG)([L.Ay], () => (0, N.A)(L.Ay)), f = (0, A.bG)([j.A], () => null != j.A.getCurrentUserActiveStream()), {
         analyticsLocations: g
-    } = (0, S.Ay)(y.A.OVERLAY);
+    } = (0, S.Ay)(v.A.OVERLAY);
     return l.useEffect(() => {
         t && (0, Q.E)()
     }, [t]), (0, s.jsx)(S.f5, {

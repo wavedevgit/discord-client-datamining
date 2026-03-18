@@ -33,9 +33,9 @@ let h = [{
         duration: void 0,
         label: () => m.intl.string(m.t["46dqJY"])
     }],
-    p = "forever";
+    x = "forever";
 
-function x(e) {
+function p(e) {
     let {
         status: t,
         currentStatus: n,
@@ -55,7 +55,7 @@ function x(e) {
                     durationMillis: s
                 }),
                 dontCloseOnAction: !0
-            }, s ?? p)
+            }, s ?? x)
         })
     });
     return (0, a.jsx)(i.Drp, {
@@ -128,24 +128,24 @@ function _(e) {
                         (0, s.ES)(!0, n)
                     },
                     dontCloseOnAction: !0
-                }, n ?? p)
+                }, n ?? x)
             })
         }),
-        _ = x({
+        _ = p({
             status: u.clD.ONLINE,
             currentStatus: e
         }),
-        f = x({
+        f = p({
             status: u.clD.IDLE,
             currentStatus: e,
             description: d(u.clD.IDLE)
         }),
-        v = x({
+        v = p({
             status: u.clD.DND,
             currentStatus: e,
             description: d(u.clD.DND)
         }),
-        b = x({
+        b = p({
             status: u.clD.INVISIBLE,
             currentStatus: e,
             description: d(u.clD.INVISIBLE)

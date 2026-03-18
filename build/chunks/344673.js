@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(311907),
     m = n(435371),
     h = n(397927),
-    p = n(73153),
-    x = n(58736),
+    x = n(73153),
+    p = n(58736),
     g = n(405269),
     _ = n(967954),
     f = n(538064),
@@ -70,12 +70,12 @@ let S = [{
                 }
             } = e, u = c()(r);
             return (0, a.jsxs)(a.Fragment, {
-                children: [(0, a.jsxs)(x.Ay, {
+                children: [(0, a.jsxs)(p.Ay, {
                     className: l()(T.jr, y.nZ),
-                    children: [(0, a.jsx)(x.Ay.Icon, {
+                    children: [(0, a.jsx)(p.Ay.Icon, {
                         icon: h.Uy2,
                         tooltip: t
-                    }), (0, a.jsx)(x.Ay.Title, {
+                    }), (0, a.jsx)(p.Ay.Title, {
                         children: t
                     })]
                 }), (0, a.jsxs)(v.OA, {
@@ -134,29 +134,29 @@ let S = [{
     }];
 
 function N() {
-    let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([_.A], () => _.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), x = r.find(e => e.key === d), {
+    let [e, t] = i.useState(""), n = i.useRef(null), s = (0, u.yK)([_.A], () => _.A.loggedTriggers), r = i.useMemo(() => s.filter(t => 0 === e.length || o()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [s, e]), [d, c] = i.useState(void 0), p = r.find(e => e.key === d), {
         TabBar: g,
         renderSelectedTab: v
     } = (0, A.Ay)({
         tabs: E
     }, []), N = (0, u.bG)([_.A], () => _.A.trackTriggers), I = i.useCallback(e => {
-        p.h.dispatch({
+        x.h.dispatch({
             type: "SET_TRACK_TRIGGERS",
             enabled: e
         })
-    }, []), k = N ? "Stop Tracking" : "Start Tracking";
+    }, []), R = N ? "Stop Tracking" : "Start Tracking";
     return (0, a.jsxs)("div", {
         ref: n,
         className: l()(T.nd, y.nd),
         children: [(0, a.jsxs)("div", {
             className: y.rh,
             children: [(0, a.jsx)(m.m_, {
-                text: k,
+                text: R,
                 children: (0, a.jsx)(h.K0, {
                     size: "sm",
                     variant: N ? "active" : "primary",
                     icon: N ? h.E$n : h.udU,
-                    "aria-label": k,
+                    "aria-label": R,
                     onClick: () => I(!N)
                 })
             }), (0, a.jsx)(h.IWV, {
@@ -177,12 +177,12 @@ function N() {
             data: r,
             selectedRowKey: d,
             onClickRow: e => c(e.key)
-        }), null != x && (0, a.jsxs)(b.A, {
+        }), null != p && (0, a.jsxs)(b.A, {
             className: y.rf,
             minHeight: 100,
             initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
             children: [(0, a.jsx)(g, {}), v({
-                loggedTrigger: x
+                loggedTrigger: p
             })]
         })]
     })

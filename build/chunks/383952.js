@@ -13,8 +13,8 @@ var a = n(627968),
     u = n(397927),
     m = n(793574),
     h = n(688810),
-    p = n(993719),
-    x = n(14059),
+    x = n(993719),
+    p = n(14059),
     g = n(362823),
     _ = n(980923),
     f = n(206018),
@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(42473),
     N = n(731854),
     I = n(985018),
-    k = n(807880),
-    R = n(368149),
+    R = n(807880),
+    k = n(368149),
     O = n(709502),
     w = n(973324);
 
@@ -59,7 +59,7 @@ function D(e) {
         }),
         q = (0, o.bG)([y.Ay], () => y.Ay.getMode() === N.TB.PUSH_TO_TALK),
         Q = (0, o.bG)([y.Ay], () => y.Ay.getSettings().modeOptions.shortcut),
-        Y = (0, o.bG)([x.A], () => x.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
+        Y = (0, o.bG)([p.A], () => p.A.getIsTutorialActive(g.v.MUTE_TUTORIAL)),
         J = (0, o.bG)([T.A], () => null != T.A.getChannelId()),
         {
             name: X
@@ -99,7 +99,7 @@ function D(e) {
     let ed = $ && q && J,
         ec = et ? d.A.colors.ICON_VOICE_MUTED : "currentColor",
         eu = i.useCallback(() => {
-            B(), Y && p.N(g.v.MUTE_TUTORIAL)
+            B(), Y && x.N(g.v.MUTE_TUTORIAL)
         }, [B, Y]);
     return (0, a.jsxs)(h.f5, {
         value: ea,
@@ -135,14 +135,14 @@ function D(e) {
                 } = n, o = s ? r.tN5 : r.abt;
                 return (0, a.jsxs)("div", {
                     ref: ee,
-                    className: l()(R.Lh, {
-                        [R.v8]: et,
-                        [R.q6]: s
+                    className: l()(k.Lh, {
+                        [k.v8]: et,
+                        [k.q6]: s
                     }),
                     children: [(0, a.jsx)(E.A, {
                         "aria-checked": et,
                         "aria-label": I.intl.string(I.t.w4m945),
-                        className: R.eT,
+                        className: k.eT,
                         disabled: M,
                         icon: (0, a.jsx)(er, {
                             size: "custom",
@@ -172,12 +172,12 @@ function D(e) {
                         "aria-label": W ? I.intl.formatToPlainString(I.t["18wnuD"], {
                             inputDeviceName: X
                         }) : I.intl.string(I.t.fRzCbB),
-                        className: l()(R.UT, {
-                            [R.q6]: s
+                        className: l()(k.UT, {
+                            [k.q6]: s
                         }),
                         disabled: M,
                         icon: (0, a.jsx)(o, {
-                            className: R.$$,
+                            className: k.$$,
                             size: "custom",
                             width: 12,
                             height: 12,
@@ -209,11 +209,11 @@ function D(e) {
                 src: w.A
             },
             onRequestClose: () => {
-                p.N(g.v.MUTE_TUTORIAL)
+                x.N(g.v.MUTE_TUTORIAL)
             },
             position: "top",
-            title: I.intl.string(k.default.VG4zAf),
-            body: I.intl.string(k.default["8VIRzR"])
+            title: I.intl.string(R.default.VG4zAf),
+            body: I.intl.string(R.default["8VIRzR"])
         })]
     })
 }

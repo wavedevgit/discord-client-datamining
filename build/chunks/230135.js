@@ -1,12 +1,12 @@
 /** chunk id: 230135 params = (module,exports,require) **/
-i.d(t, {
-    O: () => n,
+n.d(t, {
+    O: () => i,
     u: () => s
 });
-var r = i(73153);
+var l = n(73153);
 let s = (e, t) => {
-    r.h.wait(() => {
-        r.h.dispatch({
+    l.h.wait(() => {
+        l.h.dispatch({
             type: "APPLIED_GUILD_BOOST_COUNT_UPDATE",
             guildId: e,
             premiumCount: t
@@ -14,8 +14,8 @@ let s = (e, t) => {
     })
 };
 
-function n() {
-    r.h.dispatch({
+function i() {
+    l.h.dispatch({
         type: "APPLIED_GUILD_BOOST_COUNT_RESET"
     })
 }

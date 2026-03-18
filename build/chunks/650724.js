@@ -3,9 +3,9 @@ n.d(t, {
     D: () => A
 });
 var i = n(64700),
-    l = n(417597),
-    r = n(717125),
-    a = n(376943),
+    r = n(417597),
+    a = n(717125),
+    l = n(376943),
     s = n(961350),
     o = n(734057),
     d = n(696451),
@@ -19,11 +19,11 @@ var i = n(64700),
 
 function A(e, t) {
     let n = (0, p.CI)(e),
-        A = (0, l.bG)([d.Ay, s.default], () => {
+        A = (0, r.bG)([d.Ay, s.default], () => {
             let e = s.default.getId();
             return d.Ay.isMember(n?.guildId, e)
         }, [n]),
-        x = (0, l.bG)([r.A], () => null != n && n?.channelId != null && r.A.isChannelGated(n.guildId, n.channelId), [n]),
+        x = (0, r.bG)([a.A], () => null != n && n?.channelId != null && a.A.isChannelGated(n.guildId, n.channelId), [n]),
         f = t.hasFlag(g.pr7.IS_CROSSPOST),
         {
             rawMediaPostEmbedData: C,
@@ -32,23 +32,23 @@ function A(e, t) {
             user: v,
             selectedGuildId: b,
             canAccess: T
-        } = (0, l.cf)([h.A, c.A, o.A, _.default, u.A], () => {
+        } = (0, r.cf)([h.A, c.A, o.A, _.default, u.A], () => {
             let e = h.A.getMediaPostEmbed(n?.threadId)?.media,
                 t = c.A.getGuild(n?.guildId),
                 i = o.A.getChannel(n?.channelId),
-                l = _.default.getUser(e?.author_id),
-                r = u.A.getGuildId(),
-                s = null != i && (0, a.nc)(i);
+                r = _.default.getUser(e?.author_id),
+                a = u.A.getGuildId(),
+                s = null != i && (0, l.nc)(i);
             return {
                 rawMediaPostEmbedData: e,
                 guild: t,
                 parentChannel: i,
-                user: l,
-                selectedGuildId: r,
+                user: r,
+                selectedGuildId: a,
                 canAccess: s
             }
         }, [n]),
-        S = i.useMemo(() => {
+        y = i.useMemo(() => {
             let e = (0, p.tU)({
                 mediaPostEmbedData: C,
                 guild: I,
@@ -64,5 +64,5 @@ function A(e, t) {
         }, [C, I, E, v, b, T]);
     return i.useEffect(() => {
         n?.threadId != null && (h.A.getEmbedFetchState(n.threadId) !== h.e.NOT_FETCHED || A && !1 === x || !A && f || (0, m.O0)(n?.threadId))
-    }, [n, A, x, f]), S
+    }, [n, A, x, f]), y
 }
