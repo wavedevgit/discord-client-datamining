@@ -16,14 +16,14 @@ var i, l = n(627968),
     E = n(928830),
     I = n(567771),
     T = n(780964),
-    f = n(840065),
-    C = n(473145),
-    N = n(763754),
+    N = n(840065),
+    f = n(473145),
+    C = n(763754),
     g = n(888675),
     h = n(652215),
     p = n(985018),
-    S = n(811336);
-let R = {
+    R = n(811336);
+let S = {
     enter: {
         BEG: 0,
         END: 22
@@ -112,8 +112,8 @@ let O = ["TOP_LEFT", "TOP_RIGHT"],
     U = "falling-leaf",
     v = ["#61D5B2"],
     L = n(80705),
-    y = n(232460),
-    j = [L, y];
+    j = n(232460),
+    y = [L, j];
 
 function k() {
     return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
@@ -144,7 +144,7 @@ function b(e) {
     }()), {
         createMultipleConfettiAt: I,
         confettiCanvas: T
-    } = a.useContext(m.x), [f, C] = a.useState(null), N = (0, o.f9)(T, f), g = function(e, t) {
+    } = a.useContext(m.x), [N, f] = a.useState(null), C = (0, o.f9)(T, N), g = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -200,7 +200,7 @@ function b(e) {
     }, [I, E, u, r]), a.useEffect(() => {
         if (h && "leaf_fall" === u) {
             let e = P[E].leafRotationDirection;
-            N.createConfetti({
+            C.createConfetti({
                 id: `${U}-${(0,c.A)()}`,
                 position: {
                     type: "static",
@@ -245,31 +245,31 @@ function b(e) {
                     }
                 }
             }, {
-                sprite: "TOP_LEFT" === E ? L : y
+                sprite: "TOP_LEFT" === E ? L : j
             })
         }
-    }, [h, N, E, u]), (0, l.jsxs)(l.Fragment, {
+    }, [h, C, E, u]), (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(o.K_, {
-            ref: C,
-            sprites: j,
+            ref: f,
+            sprites: y,
             colors: v,
             spriteWidth: 45,
             spriteHeight: 45
         }), (0, l.jsx)(_.DUT, {
             onClick: n,
-            className: s()(S.FT, {
-                [S.FZ]: "TOP_LEFT" === E,
-                [S.S]: "TOP_RIGHT" === E,
-                [S.Re]: "BOTTOM_LEFT" === E,
-                [S._t]: "BOTTOM_RIGHT" === E
+            className: s()(R.FT, {
+                [R.FZ]: "TOP_LEFT" === E,
+                [R.S]: "TOP_RIGHT" === E,
+                [R.Re]: "BOTTOM_LEFT" === E,
+                [R._t]: "BOTTOM_RIGHT" === E
             }),
             children: (0, l.jsx)(_.tvC, {
                 animationRef: G,
-                className: s()(S.oQ, {
-                    [S.EG]: p
+                className: s()(R.oQ, {
+                    [R.EG]: p
                 }),
                 nextScene: g,
-                sceneSegments: R,
+                sceneSegments: S,
                 onScenePlay: D,
                 onSceneComplete: b,
                 importData: k,
@@ -301,14 +301,14 @@ function G(e) {
         d = (0, I.A)(n),
         {
             createMultipleConfettiAt: u,
-            addClickListener: R
+            addClickListener: S
         } = a.useContext(m.x),
         [x, O] = a.useState(!1),
         M = a.useRef(null),
         {
             reducedMotion: D
         } = a.useContext(_.CZY),
-        P = (0, N.Ay)(n),
+        P = (0, C.Ay)(n),
         v = P.nick,
         L = s(P);
     t = null == c || null == r ? d > 1 ? p.intl.format(p.t.yfC9ds, {
@@ -323,14 +323,14 @@ function G(e) {
         usernameHook: L,
         numSubscriptions: d,
         guildName: r.name,
-        newTierName: (0, C.gb)(c)
+        newTierName: (0, f.gb)(c)
     }) : p.intl.format(p.t.cUfTTE, {
         username: v,
         usernameHook: L,
         guildName: r.name,
-        newTierName: (0, C.gb)(c)
+        newTierName: (0, f.gb)(c)
     });
-    let y = a.useCallback(() => {
+    let j = a.useCallback(() => {
             if (!D.enabled)
                 if (x || 0 !== Math.floor(50 * Math.random())) {
                     let e = M.current?.getBoundingClientRect();
@@ -338,29 +338,29 @@ function G(e) {
                     u(e.left + e.width / 2, e.top + e.height / 2)
                 } else O(!0)
         }, [u, D, x]),
-        j = a.useCallback(() => {
+        y = a.useCallback(() => {
             O(!1)
         }, []),
         k = a.useCallback(() => {
             (0, E.O9)({
                 settingsVisible: !0
-            }), (0, f.openUserSettings)(T.X.POGGERMODE_PANEL), O(!1)
+            }), (0, N.openUserSettings)(T.X.POGGERMODE_PANEL), O(!1)
         }, []),
         G = a.useCallback((e, t) => {
             t?.id.startsWith(U) && k()
         }, [k]);
-    a.useEffect(() => R(G));
+    a.useEffect(() => S(G));
     let F = a.useCallback(e => {
             e.target === e.currentTarget && o(e)
         }, [o]),
         B = (0, l.jsx)(_.DUT, {
-            className: S.P0,
+            className: R.P0,
             innerRef: M,
             onClick: o,
             children: (0, l.jsx)(_._Jp, {
                 color: _.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-                className: S.Kk,
-                onMouseEnter: y
+                className: R.Kk,
+                onMouseEnter: j
             })
         });
     return (0, l.jsxs)(g.A, {
@@ -369,13 +369,13 @@ function G(e) {
         compact: i,
         children: [(0, l.jsx)("div", {
             onClick: F,
-            className: S.iU,
+            className: R.iU,
             children: t
         }), x ? (0, l.jsx)(A.Ay, {
             children: (0, l.jsx)("div", {
-                className: S.LK,
+                className: R.LK,
                 children: (0, l.jsx)(b, {
-                    onAnimationComplete: j,
+                    onAnimationComplete: y,
                     onClick: k
                 })
             })

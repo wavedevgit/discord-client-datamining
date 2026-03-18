@@ -17,9 +17,9 @@ var i = n(627968),
     E = n(661191),
     I = n(460350),
     T = n(652215),
-    f = n(48447);
+    N = n(48447);
 
-function C(e) {
+function f(e) {
     let {
         assets: t,
         currentUser: n,
@@ -28,7 +28,7 @@ function C(e) {
     return t[l]
 }
 
-function N(e) {
+function C(e) {
     let {
         currentUser: t,
         channel: n,
@@ -37,15 +37,15 @@ function N(e) {
         stickers: u,
         event: _,
         eventProperties: m
-    } = e, E = l.useMemo(() => C({
+    } = e, E = l.useMemo(() => f({
         assets: u,
         currentUser: t,
         message: a
-    }), [u, t, a]), T = l.useMemo(() => C({
+    }), [u, t, a]), T = l.useMemo(() => f({
         assets: d,
         currentUser: t,
         message: a
-    }), [d, t, a]), f = l.useCallback(async () => {
+    }), [d, t, a]), N = l.useCallback(async () => {
         let {
             valid: e
         } = await (0, I.i)({
@@ -92,7 +92,7 @@ function N(e) {
             component: c.A
         },
         text: T,
-        onClick: f,
+        onClick: N,
         variant: "secondary"
     })
 }
@@ -126,8 +126,8 @@ function g(e) {
         currentUser: c
     });
     return null != c && A ? (0, i.jsx)("div", {
-        className: f.S,
-        children: (0, i.jsx)(N, {
+        className: N.S,
+        children: (0, i.jsx)(C, {
             currentUser: c,
             channel: t,
             message: n,

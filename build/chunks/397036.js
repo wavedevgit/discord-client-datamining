@@ -55,7 +55,6 @@ function _(e) {
             color: "text-default",
             children: x?.description
         }), (0, i.jsx)(h.A, {
-            guildId: t,
             children: _.filter(e => null != N[e.id]).map(e => (0, i.jsx)(A.A, {
                 guildId: t,
                 listingId: e.id,

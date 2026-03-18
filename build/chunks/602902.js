@@ -1,6 +1,6 @@
 /** chunk id: 602902 params = (module,exports,require) **/
 n.d(t, {
-    K: () => C
+    K: () => f
 }), n(321073);
 var i = n(627968);
 n(64700);
@@ -18,13 +18,13 @@ var l = n(192308),
     E = n(439818),
     I = n(399925),
     T = n(696016),
-    f = n(652215);
-async function C(e, t) {
+    N = n(652215);
+async function f(e, t) {
     let {
-        channelId: C,
-        analyticsLocations: N,
+        channelId: f,
+        analyticsLocations: C,
         messageReference: g
-    } = t, h = o.A.getChannel(C);
+    } = t, h = o.A.getChannel(f);
     if (null != h) {
         if (null != g) {
             let e = d.A.getMessage(g.channel_id, g.message_id);
@@ -55,8 +55,8 @@ async function C(e, t) {
                         type: "image/jpeg"
                     })), n.push({})
                 }
-                u.default.track(f.HAw.CLIP_SHARED, {
-                    location_stack: N,
+                u.default.track(N.HAw.CLIP_SHARED, {
+                    location_stack: C,
                     guild_id: h.guild_id,
                     channel_id: h.id,
                     channel_type: h.type,
@@ -77,7 +77,7 @@ async function C(e, t) {
         return n => (0, i.jsx)(t, {
             ...n,
             clips: e,
-            analyticsLocations: N
+            analyticsLocations: C
         })
     }, {
         stackingBehavior: "stack",

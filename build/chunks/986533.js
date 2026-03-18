@@ -23,10 +23,10 @@ function I(e) {
         compact: n,
         usernameHook: l
     } = e, I = (0, o.Ay)(t), T = l(I), {
-        avatarSrc: f,
+        avatarSrc: N,
         eventHandlers: {
-            onMouseEnter: C,
-            onMouseLeave: N
+            onMouseEnter: f,
+            onMouseLeave: C
         }
     } = (0, d.a)(!0), g = "" !== t.content ? new Date(t.content).toLocaleString(A.intl.currentLocale, {
         hour: "numeric",
@@ -36,14 +36,14 @@ function I(e) {
         year: "numeric"
     }) : "";
     return (0, i.jsx)("div", {
-        onMouseEnter: C,
-        onMouseLeave: N,
+        onMouseEnter: f,
+        onMouseLeave: C,
         children: (0, i.jsx)(u.A, {
             className: a()(E.rs, {
                 [E.oE]: n
             }),
             iconNode: n ? null : (0, i.jsx)(d.l, {
-                src: f
+                src: N
             }),
             iconContainerClassName: E.zc,
             compact: n,

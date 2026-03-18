@@ -42,11 +42,11 @@ function R(e) {
     } = (0, a.cf)([A.A], () => ({
         invite: A.A.getInvite(t),
         inviteError: A.A.getInviteError(t)
-    }), [t]), D = null == P;
+    }), [t]), M = null == P;
     r.useEffect(() => {
-        D && l.Ay.resolveInvite(t)
-    }, [t, D]);
-    let M = P ?? {
+        M && l.Ay.resolveInvite(t)
+    }, [t, M]);
+    let D = P ?? {
             state: L.elq.RESOLVING,
             code: ""
         },
@@ -55,9 +55,9 @@ function R(e) {
         } = (0, o.Ay)(),
         O = (0, a.bG)([g.A], () => P?.guild != null ? g.A.getGuild(P.guild.id) : null, [P]),
         U = (0, a.bG)([p.default], () => p.default.getId()),
-        B = (0, a.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(M.guild_scheduled_event?.id), [M]),
+        B = (0, a.bG)([c.Ay], () => c.Ay.getGuildScheduledEvent(D.guild_scheduled_event?.id), [D]),
         G = () => {
-            null != M.channel && l.Ay.transitionToInviteSync(M)
+            null != D.channel && l.Ay.transitionToInviteSync(D)
         },
         F = function() {
             let {
@@ -78,17 +78,17 @@ function R(e) {
             onAcceptInstantInvite: F,
             currentUserId: U,
             guild: O,
-            invite: M,
+            invite: D,
             message: n
         });
-    switch (M.state) {
+    switch (D.state) {
         case L.elq.RESOLVING:
             H = (0, i.jsx)(y.A, {});
             break;
         case L.elq.EXPIRED:
         case L.elq.BANNED:
             H = (0, i.jsx)(T.A, {
-                banned: M.state === L.elq.BANNED,
+                banned: D.state === L.elq.BANNED,
                 author: n.author,
                 channelId: n.channel_id
             });
@@ -100,32 +100,32 @@ function R(e) {
             });
             break;
         default:
-            switch ((0, _.On)(M)) {
+            switch ((0, _.On)(D)) {
                 case _.Xd.GROUP_DM:
                     H = (0, i.jsx)(E.A, {
                         onTransitionToInviteChannel: G,
                         onAcceptInstantInvite: F,
                         currentUserId: U,
-                        invite: M,
+                        invite: D,
                         message: n
                     });
                     break;
                 case _.Xd.FRIEND:
                     H = (0, i.jsx)(I.A, {
-                        invite: M,
+                        invite: D,
                         message: n,
                         getAcceptInviteContext: R
                     });
                     break;
                 default:
-                    if ((0, _.G4)(M)) {
-                        if (null != M.channel && (0, h.OY)(M.channel).isGuildVoice() && (0, j.MR)("InviteEmbed.isStreamInvite").enabled) {
+                    if ((0, _.G4)(D)) {
+                        if (null != D.channel && (0, h.OY)(D.channel).isGuildVoice() && (0, j.MR)("InviteEmbed.isStreamInvite").enabled) {
                             H = (0, i.jsx)(N.A, {
                                 onTransitionToInviteChannel: G,
                                 onAcceptInstantInvite: F,
                                 currentUserId: U,
                                 guild: O,
-                                invite: M,
+                                invite: D,
                                 message: n
                             });
                             break
@@ -136,44 +136,44 @@ function R(e) {
                             currentUserId: U,
                             message: n,
                             guild: O,
-                            invite: M
+                            invite: D
                         });
                         break
                     }
-                    if ((0, _.ly)(M)) {
+                    if ((0, _.ly)(D)) {
                         H = (0, i.jsx)(u.Ay, {
                             guildScheduledEvent: B,
-                            guild: M.guild,
-                            channel: M.channel,
+                            guild: D.guild,
+                            channel: D.channel,
                             isMember: null != O,
                             onAcceptInstantInvite: F,
                             onTransitionToInviteChannel: G
                         });
                         break
                     }
-                    if ((0, _.oK)(M)) {
+                    if ((0, _.oK)(D)) {
                         H = (0, i.jsx)(f.A, {
-                            invite: M,
+                            invite: D,
                             getAcceptInviteContext: R,
                             message: n
                         });
                         break
                     }
-                    if (null != M.channel && (0, h.OY)(M.channel).isGuildVoice() && (0, j.MR)("InviteEmbed.isGuildVoice").enabled) {
+                    if (null != D.channel && (0, h.OY)(D.channel).isGuildVoice() && (0, j.MR)("InviteEmbed.isGuildVoice").enabled) {
                         H = (0, i.jsx)(N.A, {
                             onTransitionToInviteChannel: G,
                             onAcceptInstantInvite: F,
                             currentUserId: U,
                             guild: O,
-                            invite: M,
+                            invite: D,
                             message: n
                         });
                         break
-                    }(0, d.v)(M) && (H = (0, i.jsx)(b.A, {
+                    }(0, d.v)(D) && (H = (0, i.jsx)(b.A, {
                         onTransitionToInviteChannel: G,
                         onAcceptInstantInvite: F,
                         isMemberOfGuild: null != O,
-                        invite: M,
+                        invite: D,
                         message: n
                     }))
             }

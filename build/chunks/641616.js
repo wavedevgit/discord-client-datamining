@@ -30,8 +30,8 @@ var x = n(173628),
     E = n(821306),
     N = n(226936),
     I = n(27126),
-    R = n(498336),
-    k = n(615112),
+    k = n(498336),
+    R = n(615112),
     O = n(501379),
     w = n(517538),
     D = n(211162),
@@ -275,7 +275,7 @@ function ec() {
             name: "Hotspots",
             group: er.fu.EXPERIMENTS,
             tags: ["coachmarks", "nux", "onboarding"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(R.A, {})
         }), e.push({
             id: "perks",
             name: "Perks",
@@ -329,7 +329,7 @@ function ec() {
             name: "Skill Trees",
             group: er.fu.BOOSTING,
             tags: ["boosting", "powerups", "server tag"],
-            render: () => (0, a.jsx)(R.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "game_server",
             name: "Game Server",

@@ -72,23 +72,23 @@ function y(e) {
     }, [g, l, N]), L = (0, a.bG)([_.A, h.A], () => _.A.getApplicationActivity(S.id) ?? h.A.getApplicationActivity(S.id, !0), [S.id]), R = (0, a.yK)([u.A], () => null == j || null == j.party ? [] : Array.from(u.A.getParty(j.party.id) ?? []), [j]), {
         partySize: P,
         maxPartySize: w
-    } = (0, x._)(j), D = r.useMemo(() => R.map(e => {
+    } = (0, x._)(j), M = r.useMemo(() => R.map(e => {
         let t = p.default.getUser(e);
         return null != t ? t : f.mt
-    }), [R]), M = r.useMemo(() => (0, i.jsx)(T, {
-        partyMembers: D,
+    }), [R]), D = r.useMemo(() => (0, i.jsx)(T, {
+        partyMembers: M,
         partySize: P,
         maxPartySize: w,
         guildId: l.guild_id,
         activityActionType: g.activity?.type
-    }), [D, P, w, l.guild_id, g.activity?.type]);
+    }), [M, P, w, l.guild_id, g.activity?.type]);
     return (0, v.pH)(j?.party?.id) || S.id === d.HT.id ? (0, i.jsx)(I.A, {
         application: S,
         currentUserPresenceActivity: L,
         hideParty: b,
         message: g,
         onView: y,
-        partyStatusElement: M,
+        partyStatusElement: D,
         presenceActivity: j,
         guildId: l.guild_id
     }) : g.activity?.type === E.xL.STREAM_REQUEST ? (0, i.jsx)(o.A, {
@@ -106,7 +106,7 @@ function y(e) {
         hideParty: b,
         message: g,
         onView: y,
-        partyStatusElement: M,
+        partyStatusElement: D,
         presenceActivity: j
     })
 }

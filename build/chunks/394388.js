@@ -17,15 +17,15 @@ var i = n(627968),
     E = n(828162),
     I = n(71393),
     T = n(888675),
-    f = n(652215),
-    C = n(49999),
-    N = n(985018),
+    N = n(652215),
+    f = n(49999),
+    C = n(985018),
     g = n(333354),
     h = n(468406),
     p = n(274993),
-    S = n(218924);
+    R = n(218924);
 
-function R(e) {
+function S(e) {
     let {
         title: t,
         body: n,
@@ -38,7 +38,7 @@ function R(e) {
             className: h.ZS,
             children: (0, i.jsx)("img", {
                 className: h.Sl,
-                src: o ? S.A : p.A,
+                src: o ? R.A : p.A,
                 alt: "Boost gem"
             })
         }), (0, i.jsxs)("div", {
@@ -61,8 +61,8 @@ function R(e) {
                 guild: l,
                 analyticsLocations: r,
                 analyticsLocation: {
-                    page: f.liQ.GUILD_CHANNEL,
-                    section: f.JJy.CHANNEL_TEXT_AREA
+                    page: N.liQ.GUILD_CHANNEL,
+                    section: N.JJy.CHANNEL_TEXT_AREA
                 }
             })
         })]
@@ -75,14 +75,14 @@ function x(e) {
     } = e;
     l.useEffect(() => {
         (0, u.uh)(r.M.FIRST_BOOSTER_UPSELL_OVERSEER, {
-            dismissAction: C.i.AUTO_DISMISS,
+            dismissAction: f.i.AUTO_DISMISS,
             guildId: t.id
         })
     }, [t.id]);
     let n = (0, A.A)(t.id);
-    return (0, i.jsx)(R, {
-        title: N.intl.string(g.default.qGDEON),
-        body: N.intl.format(g.default["s+HTdX"], {
+    return (0, i.jsx)(S, {
+        title: C.intl.string(g.default.qGDEON),
+        body: C.intl.format(g.default["s+HTdX"], {
             viewAllPerks: e => (0, i.jsx)(s.DUT, {
                 tag: "a",
                 role: "link",
@@ -90,8 +90,8 @@ function x(e) {
                     n ? (0, E.A)(t.id, d.A.GUILD_BOOSTING_FIRST_TIME_BOOSTER_UPSELL) : (0, _.K)({
                         guildId: t.id,
                         location: {
-                            section: f.JJy.CHANNEL_TEXT_AREA,
-                            object: f.ZSU.BOOST_ANNOUNCEMENT_UPSELL
+                            section: N.JJy.CHANNEL_TEXT_AREA,
+                            object: N.ZSU.BOOST_ANNOUNCEMENT_UPSELL
                         }
                     })
                 },

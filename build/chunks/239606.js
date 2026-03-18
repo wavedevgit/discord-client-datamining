@@ -65,7 +65,7 @@ var i = t(627968),
     ed = t(83013),
     ec = t(515054),
     eu = t(513265),
-    em = t(384377),
+    em = t(606758),
     eA = t(160983),
     ep = t(518477),
     ex = t(652215),
@@ -218,14 +218,14 @@ function eN(e) {
             size: 1024
         }),
         e8 = n.useMemo(() => eC ?? (0, g.A)(), [eC]),
-        e2 = (0, eA.A)({
+        e5 = (0, eA.A)({
             user: l,
             currentUser: t
         }),
-        e3 = (0, h.q)({
+        e2 = (0, h.q)({
             userId: l.id
         }),
-        e5 = (0, f.fi)(l.id),
+        e3 = (0, f.fi)(l.id),
         e4 = (0, G.A)(l.id),
         le = (0, L.A)(l.id),
         ll = (0, p.GV)(),
@@ -348,7 +348,7 @@ function eN(e) {
                                                         channelId: S,
                                                         className: eh.profileBanner
                                                     })
-                                                }), e5.map(e => {
+                                                }), e3.map(e => {
                                                     let {
                                                         applicationId: t
                                                     } = e;
@@ -404,10 +404,10 @@ function eN(e) {
                                                 }), eQ?.bio != null && eQ?.bio !== "" && !e7 && (0, i.jsx)(z.A, {
                                                     userBio: eQ.bio,
                                                     setLineClamp: !1
-                                                }), e3.length > 0 && (0, i.jsx)(ed.A, {
+                                                }), e2.length > 0 && (0, i.jsx)(ed.A, {
                                                     heading: ef.intl.string(ef.t["Uv/eTx"]),
                                                     children: (0, i.jsx)($.A, {
-                                                        applicationIds: e3
+                                                        applicationIds: e2
                                                     })
                                                 }), (0, i.jsx)(ed.A, {
                                                     heading: ef.intl.string(ef.t.a6XYD9),
@@ -451,7 +451,7 @@ function eN(e) {
                                             displayProfile: eQ,
                                             guildId: eU,
                                             channelId: S,
-                                            items: e2,
+                                            items: e5,
                                             initialSection: ey,
                                             onClose: e_
                                         })]

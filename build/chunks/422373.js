@@ -31,7 +31,6 @@ function h(e) {
         }) : null, (0, s.jsx)(o.A, {
             subscription: h
         }), (0, s.jsx)(c.A, {
-            guildId: t,
             children: r.map(e => (0, s.jsx)(C.A, {
                 guildId: t,
                 groupListingId: i?.id ?? "",

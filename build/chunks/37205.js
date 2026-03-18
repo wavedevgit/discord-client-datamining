@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(422844),
     P = n(72951),
     w = n(453178),
-    D = n(182912),
-    M = n(341678),
+    M = n(182912),
+    D = n(341678),
     k = n(652215),
     O = n(985018),
     U = n(519934);
@@ -106,7 +106,7 @@ function B(e) {
                 autoJoin: !1
             })
         }, [H.id, z, C]),
-        $ = (0, M.A)({
+        $ = (0, D.A)({
             invite: t,
             message: a,
             voiceStates: q,
@@ -218,7 +218,7 @@ function B(e) {
                 currentUserId: n,
                 onClick: et,
                 className: U.Rh
-            }) : (0, i.jsx)(D.A, {
+            }) : (0, i.jsx)(M.A, {
                 voiceStates: q,
                 guildId: F.id,
                 ref: er,

@@ -59,7 +59,7 @@ function I(e) {
     })
 }
 
-function R(e) {
+function k(e) {
     let {
         name: t,
         children: n,
@@ -91,7 +91,7 @@ function R(e) {
         })]
     })
 }
-let k = new Set(["client_performance_cpu", "client_performance_memory"]),
+let R = new Set(["client_performance_cpu", "client_performance_memory"]),
     O = [{
         id: "details",
         name: "Details",
@@ -167,7 +167,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                     })]
                 }), (0, a.jsx)(I, {
                     children: Object.entries(n).map(e => {
-                        let [n, i] = e, s = k.has(n) ? ((e, t, n) => {
+                        let [n, i] = e, s = R.has(n) ? ((e, t, n) => {
                             let a = e.filter(e => e.event === t);
                             if (0 === a.length) return {
                                 average: null,
@@ -185,7 +185,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                             }
                         })(d, t, n) : null;
                         return (0, a.jsxs)("div", {
-                            children: [(0, a.jsx)(R, {
+                            children: [(0, a.jsx)(k, {
                                 name: `${n}:`,
                                 copyValue: {
                                     [n]: i || null
@@ -196,7 +196,7 @@ let k = new Set(["client_performance_cpu", "client_performance_memory"]),
                                     className: S.HO,
                                     children: "null"
                                 })
-                            }, n), null !== s && null !== s.average && (0, a.jsx)(R, {
+                            }, n), null !== s && null !== s.average && (0, a.jsx)(k, {
                                 name: `${n}_avg:`,
                                 copyValue: {
                                     [n]: i || null
@@ -268,7 +268,7 @@ function M() {
         j = g.find(e => e.key === _),
         {
             TabBar: I,
-            renderSelectedTab: R
+            renderSelectedTab: k
         } = (0, y.Ay)({
             tabs: O
         }, []);
@@ -323,7 +323,7 @@ function M() {
             className: S.rf,
             minHeight: 100,
             initialHeight: null != e.current ? e.current.clientHeight / 2 : 300,
-            children: [(0, a.jsx)(I, {}), R({
+            children: [(0, a.jsx)(I, {}), k({
                 loggedEvent: j,
                 onClose: () => f(void 0),
                 filteredEvents: g

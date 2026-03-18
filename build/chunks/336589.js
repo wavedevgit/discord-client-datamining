@@ -1,6 +1,6 @@
 /** chunk id: 336589 params = (module,exports,require) **/
 n.d(t, {
-    I: () => N
+    I: () => C
 });
 var i = n(627968),
     l = n(64700),
@@ -17,8 +17,8 @@ var i = n(627968),
     E = n(167681),
     I = n(652215),
     T = n(985018),
-    f = n(182777);
-let C = e => {
+    N = n(182777);
+let f = e => {
         let {
             channel: t,
             message: n
@@ -35,7 +35,7 @@ let C = e => {
             })
         }, [t, n, a]);
         return (0, i.jsx)("div", {
-            className: f.T,
+            className: N.T,
             children: (0, i.jsx)(r.$nd, {
                 icon: {
                     type: "sticker",
@@ -48,7 +48,7 @@ let C = e => {
             })
         })
     },
-    N = e => {
+    C = e => {
         let {
             message: t,
             channel: n
@@ -62,7 +62,7 @@ let C = e => {
                 A = null != o && (o.systemChannelFlags & I.ogj.SUPPRESS_JOIN_NOTIFICATION_REPLIES) == 0;
             return a && !i && !r && !s && A
         });
-        return null != l && r ? (0, i.jsx)(C, {
+        return null != l && r ? (0, i.jsx)(f, {
             message: t,
             channel: n
         }) : null

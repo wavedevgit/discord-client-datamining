@@ -1,6 +1,6 @@
 /** chunk id: 808821 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => N
 }), n(938796);
 var i = n(627968),
     l = n(64700),
@@ -18,14 +18,14 @@ var i = n(627968),
     I = n(985018),
     T = n(633232);
 
-function f(e) {
+function N(e) {
     let {
         message: t,
         compact: n
-    } = e, f = t.channel_id, C = (0, r.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
-        clipId: N,
+    } = e, N = t.channel_id, f = (0, r.bG)([_.A], () => null != t.messageReference ? _.A.getMessage(t.messageReference.channel_id, t.messageReference.message_id) : null, [t.messageReference]), {
+        clipId: C,
         remoteTriggerClipId: g
-    } = l.useMemo(() => null != C ? function(e) {
+    } = l.useMemo(() => null != f ? function(e) {
         let t = "__CLIP_METADATA__",
             n = e.indexOf(t);
         if (-1 === n) return {};
@@ -40,19 +40,19 @@ function f(e) {
         } catch (e) {
             return {}
         }
-    }(C.content) : {}, [C]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(N, g)), p = (0, r.bG)([c.A], () => null != h && null != f && c.A.wasClipSharedInChannel(h.id, f)), {
-        onShareClick: S
-    } = (0, u.A)(f), R = l.useCallback(() => {
-        null != h && null != f && t.messageReference?.message_id != null && S({
+    }(f.content) : {}, [f]), h = (0, r.bG)([c.A], () => c.A.getMatchingGroupClip(C, g)), p = (0, r.bG)([c.A], () => null != h && null != N && c.A.wasClipSharedInChannel(h.id, N)), {
+        onShareClick: R
+    } = (0, u.A)(N), S = l.useCallback(() => {
+        null != h && null != N && t.messageReference?.message_id != null && R({
             clips: [h],
             messageReference: {
-                channel_id: f,
+                channel_id: N,
                 message_id: t.messageReference.message_id
             }
         })
-    }, [h, f, t.messageReference, S]);
-    if (null == C || null == N && null == g || null == h || p) return null;
-    let x = C.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
+    }, [h, N, t.messageReference, R]);
+    if (null == f || null == C && null == g || null == h || p) return null;
+    let x = f.attachments.find(e => (0, a.Lt)(e.flags ?? 0, E.sbO.IS_CLIP)),
         O = null;
     if (x?.proxy_url != null) {
         let e = m.A.toURLSafe(x.proxy_url);
@@ -73,7 +73,7 @@ function f(e) {
                 variant: "stacked"
             }), (0, i.jsx)(s.$nd, {
                 size: "sm",
-                onClick: R,
+                onClick: S,
                 text: I.intl.string(I.t["5qb8EX"]),
                 icon: o.W4J
             })]

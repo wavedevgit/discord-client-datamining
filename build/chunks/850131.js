@@ -1,6 +1,6 @@
 /** chunk id: 850131 params = (module,exports,require) **/
 n.d(t, {
-    A: () => S
+    A: () => R
 });
 var i = n(627968),
     l = n(64700),
@@ -17,10 +17,10 @@ var i = n(627968),
     E = n(533567),
     I = n(306417),
     T = n(412136),
-    f = n(985018),
-    C = n(782635);
+    N = n(985018),
+    f = n(782635);
 
-function N() {
+function C() {
     return (0, i.jsx)("svg", {
         width: "24",
         height: "24",
@@ -41,7 +41,7 @@ function g(e) {
         hasNoVotes: n,
         victorEmoji: l
     } = e;
-    if (n) t = (0, i.jsx)(N, {});
+    if (n) t = (0, i.jsx)(C, {});
     else if (null != l) {
         let e = "" !== l.name ? l.name : l.displayName;
         t = (0, i.jsx)(u.A, {
@@ -51,7 +51,7 @@ function g(e) {
         })
     }
     return null != t ? (0, i.jsx)("div", {
-        className: C.ZS,
+        className: f.ZS,
         children: t
     }) : null
 }
@@ -68,7 +68,7 @@ function h(e) {
                 variant: "text-sm/semibold",
                 color: "text-default",
                 scaleFontToUserSetting: !0,
-                children: f.intl.string(f.t["a+lSZ/"])
+                children: N.intl.string(N.t["a+lSZ/"])
             });
             break;
         case "VICTOR":
@@ -77,16 +77,16 @@ function h(e) {
             } = l;
             t = (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsxs)("div", {
-                    className: C.sj,
+                    className: f.sj,
                     children: [(0, i.jsx)(c.Text, {
                         variant: "text-sm/semibold",
                         color: "text-default",
-                        className: C.Dq,
+                        className: f.Dq,
                         scaleFontToUserSetting: !0,
                         children: r
                     }), (0, i.jsx)(I.Vx, {
                         size: 16,
-                        className: C.To,
+                        className: f.To,
                         isVictor: !0,
                         isExpired: !0
                     })]
@@ -94,7 +94,7 @@ function h(e) {
                     variant: "text-xs/medium",
                     color: a,
                     scaleFontToUserSetting: !0,
-                    children: [f.intl.string(f.t.ufIDIx), " • ", s, "%"]
+                    children: [N.intl.string(N.t.ufIDIx), " • ", s, "%"]
                 })]
             });
             break;
@@ -107,7 +107,7 @@ function h(e) {
                     variant: "text-sm/semibold",
                     color: "text-default",
                     scaleFontToUserSetting: !0,
-                    children: f.intl.string(f.t.kPN9si)
+                    children: N.intl.string(N.t.kPN9si)
                 }), (0, i.jsxs)(c.Text, {
                     variant: "text-xs/medium",
                     color: a,
@@ -117,7 +117,7 @@ function h(e) {
             })
     }
     return (0, i.jsx)("div", {
-        className: C.h_,
+        className: f.h_,
         children: t
     })
 }
@@ -143,8 +143,8 @@ function p(e) {
         }
     })(n), [n]), o = null != n.victorEmoji || "NO_VOTES" === s.type;
     return (0, i.jsxs)("div", {
-        className: r()(C.kL, {
-            [C.FS]: o
+        className: r()(f.kL, {
+            [f.FS]: o
         }, t),
         children: [(0, i.jsx)(g, {
             hasNoVotes: "NO_VOTES" === s.type,
@@ -155,23 +155,23 @@ function p(e) {
             size: "sm",
             onClick: a,
             variant: "secondary",
-            text: f.intl.string(f.t.Jw7Vbf)
+            text: N.intl.string(N.t.Jw7Vbf)
         })]
     })
 }
 
-function S(e) {
+function R(e) {
     let {
         message: t,
         channel: n,
         compact: a,
         disableInteraction: r = !1
-    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), I = (0, s.EJ)(u?.questionText ?? "", T.TU), N = (0, _.Ay)(t), g = (0, m.P)({
+    } = e, o = t.embeds[0], u = l.useMemo(() => (0, E.A)(o), [o]), I = (0, s.EJ)(u?.questionText ?? "", T.TU), C = (0, _.Ay)(t), g = (0, m.P)({
         user: t.author,
         channelId: n.id,
         guildId: n.guild_id,
         messageId: t.id
-    }), h = t.messageReference, S = l.useCallback(() => {
+    }), h = t.messageReference, R = l.useCallback(() => {
         null != h && d.A.jumpToMessage({
             channelId: h.channel_id,
             messageId: h.message_id,
@@ -186,16 +186,16 @@ function S(e) {
             }),
             timestamp: t.timestamp,
             compact: a,
-            children: f.intl.format(f.t.VJcK41, {
-                username: N.nick,
-                usernameHook: g(N),
+            children: N.intl.format(N.t.VJcK41, {
+                username: C.nick,
+                usernameHook: g(C),
                 title: I,
-                titleOnClick: S
+                titleOnClick: R
             })
         }), (0, i.jsx)(p, {
-            className: C.E6,
+            className: f.E6,
             data: u,
-            onClickPollLink: r ? void 0 : S
+            onClickPollLink: r ? void 0 : R
         })]
     })
 }

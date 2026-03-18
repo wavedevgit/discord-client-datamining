@@ -1,6 +1,6 @@
 /** chunk id: 672834 params = (module,exports,require) **/
 n.d(t, {
-    A: () => ey
+    A: () => ej
 });
 var i = n(627968),
     l = n(64700),
@@ -17,14 +17,14 @@ var i = n(627968),
     E = n(509536),
     I = n(615179),
     T = n(120120),
-    f = n(379114),
-    C = n(698441),
-    N = n(484724),
+    N = n(379114),
+    f = n(698441),
+    C = n(484724),
     g = n(997509),
     h = n(850131),
     p = n(31051),
-    S = n(659203),
-    R = n(446028),
+    R = n(659203),
+    S = n(446028),
     x = n(302291),
     O = n(282224),
     M = n(976860),
@@ -33,8 +33,8 @@ var i = n(627968),
     U = n(105530),
     v = n(353202),
     L = n(747926),
-    y = n(336589),
-    j = n(961350),
+    j = n(336589),
+    y = n(961350),
     k = n(470710),
     b = n(734057),
     G = n(71393),
@@ -48,8 +48,8 @@ var i = n(627968),
     K = n(728458),
     Y = n(661191),
     z = n(465364),
-    W = n(877923),
-    J = n(291812),
+    J = n(877923),
+    W = n(291812),
     Q = n(898401),
     Z = n(447215),
     $ = n(97896),
@@ -71,14 +71,14 @@ var i = n(627968),
     eE = n(753073),
     eI = n(640289),
     eT = n(293657),
-    ef = n(269802),
-    eC = n(576471),
-    eN = n(808821),
+    eN = n(269802),
+    ef = n(576471),
+    eC = n(808821),
     eg = n(933762),
     eh = n(840233),
     ep = n(536030),
-    eS = n(912746),
-    eR = n(817253),
+    eR = n(912746),
+    eS = n(817253),
     ex = n(911726),
     eO = n(904854),
     eM = n(652215),
@@ -219,7 +219,7 @@ let eL = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = j.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
+            } = t, d = y.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -314,11 +314,11 @@ let eL = Object.freeze({
                 messageId: t.id
             });
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(eR.A, {
+                children: [(0, i.jsx)(eS.A, {
                     message: t,
                     compact: n,
                     usernameHook: s
-                }), (0, i.jsx)(y.I, {
+                }), (0, i.jsx)(j.I, {
                     channel: l,
                     message: t
                 })]
@@ -444,7 +444,7 @@ let eL = Object.freeze({
                 onContextMenuThread: _
             })
         },
-        [eM.lAJ.THREAD_STARTER_MESSAGE]: eS.A,
+        [eM.lAJ.THREAD_STARTER_MESSAGE]: eR.A,
         [eM.lAJ.GUILD_INVITE_REMINDER]: void 0,
         [eM.lAJ.AUTO_MODERATION_ACTION]: function(e) {
             let {
@@ -496,7 +496,7 @@ let eL = Object.freeze({
                 usernameHook: a
             })
         },
-        [eM.lAJ.ROLE_SUBSCRIPTION_PURCHASE]: f.A,
+        [eM.lAJ.ROLE_SUBSCRIPTION_PURCHASE]: N.A,
         [eM.lAJ.PURCHASE_NOTIFICATION]: function(e) {
             let {
                 message: t,
@@ -520,13 +520,13 @@ let eL = Object.freeze({
                 channelId: n.id,
                 guildId: n.guild_id,
                 messageId: t.id
-            }), s = (0, a.bG)([C.Ay], () => C.Ay.getActiveEventByChannel(n.id), [n.id]);
+            }), s = (0, a.bG)([f.Ay], () => f.Ay.getActiveEventByChannel(n.id), [n.id]);
             return (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(ef.A, {
+                children: [(0, i.jsx)(eN.A, {
                     message: t,
                     compact: l,
                     usernameHook: r
-                }), null != s && s.name === t.content ? (0, i.jsx)(N.A, {
+                }), null != s && s.name === t.content ? (0, i.jsx)(C.A, {
                     code: `${n.guild_id}-${s.id}`
                 }) : null]
             })
@@ -602,13 +602,13 @@ let eL = Object.freeze({
                 guildId: n.guild_id,
                 messageId: t.id
             });
-            return (0, i.jsx)(eC.A, {
+            return (0, i.jsx)(ef.A, {
                 message: t,
                 compact: l,
                 usernameHook: a
             })
         },
-        [eM.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: R.A,
+        [eM.lAJ.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION]: S.A,
         [eM.lAJ.PRIVATE_CHANNEL_INTEGRATION_ADDED]: x.R,
         [eM.lAJ.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: x.d,
         [eM.lAJ.PREMIUM_REFERRAL]: function(e) {
@@ -616,7 +616,7 @@ let eL = Object.freeze({
                 message: t,
                 compact: n
             } = e;
-            return (0, i.jsx)(S.A, {
+            return (0, i.jsx)(R.A, {
                 userTrialOfferId: t.referralTrialOfferId,
                 canRenderReferralEmbed: !0,
                 compact: n
@@ -655,7 +655,7 @@ let eL = Object.freeze({
                 message: t,
                 channel: n
             } = e, l = t.giftingPrompt, r = (0, a.bG)([w.default], () => w.default.getUser(l?.recipientUserId));
-            return null == l || null == r ? null : (0, i.jsx)(W.A, {
+            return null == l || null == r ? null : (0, i.jsx)(J.A, {
                 giftIntentType: l.giftIntentType,
                 recipientUser: r,
                 channel: n
@@ -742,13 +742,13 @@ let eL = Object.freeze({
                 message: t,
                 compact: n
             } = e;
-            return (0, i.jsx)(eN.A, {
+            return (0, i.jsx)(eC.A, {
                 message: t,
                 compact: n
             })
         }
     }),
-    ey = l.memo(function(e) {
+    ej = l.memo(function(e) {
         let {
             message: t,
             channel: n,
@@ -761,7 +761,7 @@ let eL = Object.freeze({
             var o;
             return o = Error(`unknown message type ${t.type}`), K.A.captureException(o), new _.A("SystemMessage").error("", o), null
         }
-        return (0, i.jsx)(J.Ay, {
+        return (0, i.jsx)(W.Ay, {
             message: t,
             content: (0, z.Ay)(t).content,
             compact: l ?? !1,

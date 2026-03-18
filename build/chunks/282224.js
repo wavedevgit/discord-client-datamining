@@ -1,6 +1,6 @@
 /** chunk id: 282224 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => N
 });
 var i = n(627968);
 n(64700);
@@ -58,21 +58,21 @@ function I(e) {
         author: r,
         mentions: u,
         type: A
-    } = t, I = (0, s.Ay)(t), T = t.getChannelId(), f = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), C = (0, s.m2)(r, n), N = (0, o.P)({
+    } = t, I = (0, s.Ay)(t), T = t.getChannelId(), N = (0, a.bG)([d.default], () => d.default.getUser(u[0]), [u]), f = (0, s.m2)(r, n), C = (0, o.P)({
         user: r,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
-    })(C), g = (0, s.d8)(f, n), h = (0, o.P)({
-        user: f,
+    })(f), g = (0, s.d8)(N, n), h = (0, o.P)({
+        user: N,
         channelId: T,
         guildId: n.guild_id,
         messageId: t.id
     })(g), p = m[A] ?? null;
     if (null == p) return null;
-    let S = _.intl.format(p(), {
+    let R = _.intl.format(p(), {
         actorName: I.nick,
-        actorHook: N,
+        actorHook: C,
         targetName: g?.nick,
         targetHook: h
     });
@@ -82,7 +82,7 @@ function I(e) {
         }),
         timestamp: t.timestamp,
         compact: l,
-        children: S
+        children: R
     })
 }
 
@@ -101,7 +101,7 @@ function T(e) {
         messageId: t.id
     })(m), T = A[r] ?? null;
     if (null == T) return null;
-    let f = _.intl.format(T(), {
+    let N = _.intl.format(T(), {
         actorName: d.nick,
         actorHook: I
     });
@@ -111,11 +111,11 @@ function T(e) {
         }),
         timestamp: t.timestamp,
         compact: l,
-        children: f
+        children: N
     })
 }
 
-function f(e) {
+function N(e) {
     let {
         message: t,
         channel: n,

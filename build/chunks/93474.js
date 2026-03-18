@@ -20,7 +20,7 @@ let m = {},
         null != m[e] && delete m[e], A++
     };
 
-function f(e) {
+function N(e) {
     let t, n, {
         messageData: i,
         errorResponseBody: l
@@ -33,7 +33,7 @@ function f(e) {
     }, m[t] = n, A++, !0
 }
 
-function C(e) {
+function f(e) {
     let {
         channelId: t,
         messages: n
@@ -48,7 +48,7 @@ function C(e) {
         }) ? null == e || -1 === c.default.compare(e, t.id) ? t.id : void 0 : e, l);
     return null != a && I[i] !== a && (I[i] = a, !0)
 }
-class N extends i.Ay.PersistedStore {
+class C extends i.Ay.PersistedStore {
     static displayName = "GuildAutomodMessageStore";
     static persistKey = "GuildAutomodMessages";
     initialize(e) {
@@ -74,12 +74,12 @@ class N extends i.Ay.PersistedStore {
         return I[e] ?? null
     }
 }
-let g = new N(l.h, {
+let g = new C(l.h, {
     CONNECTION_OPEN: function(e) {
         return 0 !== Object.keys(m).length && (m = {}, A++, !0)
     },
-    LOAD_MESSAGES_SUCCESS: C,
-    LOCAL_MESSAGES_LOADED: C,
+    LOAD_MESSAGES_SUCCESS: f,
+    LOCAL_MESSAGES_LOADED: f,
     MESSAGE_CREATE: function(e) {
         let {
             guildId: t,
@@ -89,8 +89,8 @@ let g = new N(l.h, {
         let i = (0, r.rh)(n);
         return !!(0, u.ER)(i) && !!(0, u.de)(i) && (I[t] = i.id, !0)
     },
-    MESSAGE_SEND_FAILED_AUTOMOD: f,
-    MESSAGE_EDIT_FAILED_AUTOMOD: f,
+    MESSAGE_SEND_FAILED_AUTOMOD: N,
+    MESSAGE_EDIT_FAILED_AUTOMOD: N,
     REMOVE_AUTOMOD_MESSAGE_NOTICE: function(e) {
         let {
             messageId: t

@@ -19,12 +19,12 @@ var i = n(627968),
 
 function T(e) {
     var t;
-    let n, T, f, C, N, g, {
+    let n, T, N, f, C, g, {
             message: h,
             channel: p,
-            compact: S
+            compact: R
         } = e,
-        R = (0, A.K)(h),
+        S = (0, A.K)(h),
         x = (0, r.yK)([d.default], () => h.call?.participants != null ? h.call.participants.map(e => d.default.getUser(e)).filter(e => null != e).filter(e => e.id !== h.author.id) : [], [h.author.id, h.call]),
         O = (0, r.bG)([o.A], () => o.A.getUserAffinitiesMap(), []),
         M = l.useMemo(() => (0, c.L)(x, O, "VoiceSession - participants"), [x, O]),
@@ -38,24 +38,24 @@ function T(e) {
             channelId: p.id,
             guildId: p.guild_id,
             messageId: h.id
-        }), f = (0, _.P)({
+        }), N = (0, _.P)({
             user: M[1],
             channelId: p.id,
             guildId: p.guild_id,
             messageId: h.id
-        }), C = (0, u.Ay)(h), N = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == R ? E.intl.format(E.t["eX6e/3"], {
-            username: C.nick,
-            usernameHook: n(C)
+        }), f = (0, u.Ay)(h), C = (0, u.d8)(M[0], p), g = (0, u.d8)(M[1], p), null == S ? E.intl.format(E.t["eX6e/3"], {
+            username: f.nick,
+            usernameHook: n(f)
         }) : E.intl.format(E.t.YUbgR8, {
             userCount: M.length + 1,
-            username: C.nick,
-            usernameHook: n(C),
-            username2: N.nick,
-            username2Hook: T(N),
+            username: f.nick,
+            usernameHook: n(f),
+            username2: C.nick,
+            username2Hook: T(C),
             username3: g.nick,
-            username3Hook: f(g),
+            username3Hook: N(g),
             otherCount: M.length - 1,
-            duration: R
+            duration: S
         }));
     return (0, i.jsx)(m.A, {
         iconNode: (0, i.jsx)(a.HKD, {
@@ -64,7 +64,7 @@ function T(e) {
         }),
         iconContainerClassName: I.z,
         timestamp: h.timestamp,
-        compact: S,
+        compact: R,
         children: D
     })
 }

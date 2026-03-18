@@ -17,14 +17,14 @@ var i = n(627968),
     E = n(728458),
     I = n(427262),
     T = n(573359),
-    f = n(59784),
-    C = n(612669),
-    N = n(88001),
+    N = n(59784),
+    f = n(612669),
+    C = n(88001),
     g = n(652215),
     h = n(519412),
     p = n(985018),
-    S = n(260171),
-    R = n(421438);
+    R = n(260171),
+    S = n(421438);
 let x = e => {
         let {
             disabled: t,
@@ -128,7 +128,7 @@ let x = e => {
             actionButton: o
         } = e;
         return (0, i.jsxs)(c.A, {
-            className: S.og,
+            className: R.og,
             compact: r,
             iconNode: (0, i.jsx)(a.tvc, {
                 size: "md",
@@ -140,25 +140,25 @@ let x = e => {
                 children: t
             }), (0, i.jsxs)(s.BJc, {
                 direction: "horizontal",
-                className: S.x,
+                className: R.x,
                 children: [(0, i.jsx)("img", {
-                    src: R,
+                    src: S,
                     alt: "",
-                    className: S.Sl
+                    className: R.Sl
                 }), (0, i.jsxs)("div", {
-                    className: S.Qs,
+                    className: R.Qs,
                     children: [(0, i.jsx)(s.Exy, {
                         type: "beta",
                         variant: "expressive"
                     }), (0, i.jsx)("h2", {
-                        className: S.DD,
+                        className: R.DD,
                         children: n
                     }), (0, i.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "text-subtle",
                         children: l
                     }), null != o && (0, i.jsx)("div", {
-                        className: S.UD,
+                        className: R.UD,
                         children: o
                     })]
                 })]
@@ -176,33 +176,33 @@ let x = e => {
             invite: d,
             currentUser: m,
             premiumSubscription: A
-        } = (0, r.cf)([f.A, u.default, _.A], () => ({
-            inviteState: null != a ? f.A.getInviteState(a) : N.xI.NOT_FOUND,
-            isFetching: null != a && f.A.isFetching(a),
-            invite: null != a ? f.A.getInvite(a)?.invite : null,
+        } = (0, r.cf)([N.A, u.default, _.A], () => ({
+            inviteState: null != a ? N.A.getInviteState(a) : C.xI.NOT_FOUND,
+            isFetching: null != a && N.A.isFetching(a),
+            invite: null != a ? N.A.getInvite(a)?.invite : null,
             currentUser: u.default.getCurrentUser(),
             premiumSubscription: _.A.getPremiumSubscription()
         }), [a]);
         if (null == m) return null;
         let E = t.author,
             I = m.id === E.id;
-        if (c || s === N.xI.FETCHING || s === N.xI.UNKNOWN) return (0, i.jsx)(o.Wb, {
+        if (c || s === C.xI.FETCHING || s === C.xI.UNKNOWN) return (0, i.jsx)(o.Wb, {
             isHorizontal: !0
         });
-        let T = (0, C.o1)({
+        let T = (0, f.o1)({
             sender: E,
             channel: n,
             isSender: I,
             inviteState: s
         });
         if (null == T) return null;
-        let g = s === N.xI.PENDING,
+        let g = s === C.xI.PENDING,
             h = null;
         return h = I ? g ? (0, i.jsx)(O, {
             disabled: !1,
             invite: d,
             channel: n
-        }) : s === N.xI.REMOVED ? (0, i.jsx)(O, {
+        }) : s === C.xI.REMOVED ? (0, i.jsx)(O, {
             disabled: !0,
             invite: d,
             channel: n

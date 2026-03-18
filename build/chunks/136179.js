@@ -14,32 +14,31 @@ var s = n(503698),
 
 function d(e) {
     let {
-        guildId: t,
-        children: n,
-        className: s
+        children: t,
+        className: n
     } = e, {
-        horizontalScrollNotice: d,
-        handleScroll: u,
-        handleSetScrollerRef: h,
-        handleSetContainerRef: A
-    } = (0, o.A)(t), m = (0, i.jsx)("div", {
+        horizontalScrollNotice: s,
+        handleScroll: d,
+        handleSetScrollerRef: u,
+        handleSetContainerRef: h
+    } = (0, o.A)(), A = (0, i.jsx)("div", {
         className: c.vi,
         children: (0, i.jsx)("div", {
-            className: l()(c._s, s),
-            children: n
+            className: l()(c._s, n),
+            children: t
         })
     });
-    return r.Fr || (m = (0, i.jsxs)(i.Fragment, {
-        children: [d, (0, i.jsx)(a.T7Y, {
+    return r.Fr || (A = (0, i.jsxs)(i.Fragment, {
+        children: [s, (0, i.jsx)(a.T7Y, {
             className: c.XG,
             orientation: "horizontal",
-            ref: h,
-            onScroll: u,
-            children: m
+            ref: u,
+            onScroll: d,
+            children: A
         })]
     })), (0, i.jsx)("div", {
         className: c.Rc,
-        ref: A,
-        children: m
+        ref: h,
+        children: A
     })
 }

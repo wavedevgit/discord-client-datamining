@@ -49,7 +49,6 @@ let p = e => {
             })]
         }), (0, i.jsx)(a.Fmo, {
             children: (0, i.jsx)(u.A, {
-                guildId: t.id,
                 children: f.map(e => (0, i.jsx)(A.A, {
                     guildId: t.id,
                     groupListingId: n?.id ?? "",

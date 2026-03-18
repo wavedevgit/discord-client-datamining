@@ -17,17 +17,17 @@ var i = n(627968),
     E = n(652215),
     I = n(746080),
     T = n(985018),
-    f = n(424288);
+    N = n(424288);
 
-function C(e) {
+function f(e) {
     let {
         username: t
     } = e;
     return (0, i.jsx)("div", {
-        className: f._X,
+        className: N._X,
         children: (0, i.jsx)(a.Text, {
             tag: "p",
-            className: f._X,
+            className: N._X,
             color: "status-positive-text",
             variant: "heading-xl/medium",
             children: T.intl.format(T.t.MLKSln, {
@@ -44,14 +44,14 @@ function C(e) {
     })
 }
 
-function N(e) {
+function C(e) {
     let {
         guildId: t,
         user: n,
         username: l
     } = e;
     return (0, i.jsxs)("div", {
-        className: f.pG,
+        className: N.pG,
         role: "img",
         "aria-label": T.intl.formatToPlainString(T.t["utf8+W"], {
             username: l
@@ -59,8 +59,8 @@ function N(e) {
         children: [(0, i.jsx)(A.A, {
             guildId: t,
             user: n,
-            className: f.sz
-        }), (0, i.jsx)(C, {
+            className: N.sz
+        }), (0, i.jsx)(f, {
             username: l
         })]
     })
@@ -71,7 +71,7 @@ function g(e) {
         channel: t,
         message: a,
         compact: A
-    } = e, T = (0, o.Ay)(a), f = function(e) {
+    } = e, T = (0, o.Ay)(a), N = function(e) {
         let {
             author: t,
             channel: n,
@@ -99,14 +99,14 @@ function g(e) {
         channel: t,
         message: a,
         author: T
-    }), C = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
-    return null == f ? null : (0, i.jsxs)(i.Fragment, {
+    }), f = a.roleSubscriptionData?.total_months_subscribed != null && a.roleSubscriptionData?.total_months_subscribed <= 1;
+    return null == N ? null : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(d.A, {
             icon: n(394803),
             timestamp: a.timestamp,
             compact: A,
-            children: f
-        }), C && (0, i.jsx)(N, {
+            children: N
+        }), f && (0, i.jsx)(C, {
             guildId: t.guild_id,
             user: a.author,
             username: T.nick

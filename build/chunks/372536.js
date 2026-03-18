@@ -53,7 +53,7 @@ let d = e => {
             onClick: d
         }) : null, (0, i.jsx)(r.E, {
             className: c.c5,
-            iconUrl: n(576877),
+            iconUrl: n(799258),
             header: o.intl.string(o.t.L4bwJ9),
             completed: !1,
             onClick: u

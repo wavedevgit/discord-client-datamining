@@ -1,6 +1,6 @@
 /** chunk id: 368631 params = (module,exports,require) **/
 n.d(t, {
-    zj: () => et
+    zj: () => ee
 }), n(321073);
 var i = n(627968),
     s = n(110259),
@@ -49,36 +49,35 @@ var i = n(627968),
     W = n(604151),
     K = n(531525),
     Z = n(652215),
-    q = n(985018),
-    J = n(945213);
-let Q = () => {
+    q = n(985018);
+let J = () => {
         let e = [];
         return e.push(l.M.WIDGETS_USER_SETTINGS_NEW_BADGE), e.push(l.M.DISPLAY_NAME_STYLES_NEW_BADGE), e
     },
-    $ = () => {
-        let e = Q(),
+    Q = () => {
+        let e = J(),
             [t] = (0, A.kn)(e);
         return t === l.M.DISPLAY_NAME_STYLES_NEW_BADGE || t === l.M.WIDGETS_USER_SETTINGS_NEW_BADGE ? (0, i.jsx)(r.LpS, {
             text: q.intl.string(q.t.y2b7CA)
         }) : null
     },
-    ee = Y.A,
-    et = e => {
+    $ = Y.A,
+    ee = e => {
         let {
             unseenGiftCount: t,
-            searchParams: A,
-            isOverlaySupported: et,
-            isInappropriateConversationWarningEnabled: en,
-            isInapproprateConversationsDefaultOn: ei,
-            paymentsBlocked: es,
-            isEligibleForQuests: el,
-            isStricterMessageRequestsEnabled: ea,
-            hasLibraryApplication: er,
-            developerMode: eo,
-            isAdultUser: ed,
-            hasSecureFramesVerifiedUserIds: ec,
-            hasIgnoredUsers: eu,
-            hasBlockedUsers: e_
+            searchParams: n,
+            isOverlaySupported: A,
+            isInappropriateConversationWarningEnabled: ee,
+            isInapproprateConversationsDefaultOn: et,
+            paymentsBlocked: en,
+            isEligibleForQuests: ei,
+            isStricterMessageRequestsEnabled: es,
+            hasLibraryApplication: el,
+            developerMode: ea,
+            isAdultUser: er,
+            hasSecureFramesVerifiedUserIds: eo,
+            hasIgnoredUsers: ed,
+            hasBlockedUsers: ec
         } = e;
         return Object.freeze({
             [K.H.SEARCH_NO_RESULTS]: {
@@ -92,8 +91,8 @@ let Q = () => {
                 label: q.intl.string(q.t["vi7f+q"]),
                 ariaLabel: q.intl.string(q.t["vi7f+q"]),
                 element: S.A,
-                newIndicator: (0, i.jsx)($, {}),
-                newIndicatorDismissibleContentTypes: [...Q()],
+                newIndicator: (0, i.jsx)(Q, {}),
+                newIndicatorDismissibleContentTypes: [...J()],
                 notice: {
                     stores: [C.A],
                     element: E.A
@@ -247,7 +246,7 @@ let Q = () => {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
                 searchableTitles: [q.intl.string(q.t["3o2ojh"])],
                 parent: K.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-                predicate: () => !ea
+                predicate: () => !es
             },
             [K.H.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_STATUS_V2]: {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
@@ -298,13 +297,13 @@ let Q = () => {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
                 searchableTitles: [q.intl.string(q.t.qFsx5q)],
                 parent: K.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-                predicate: () => en && !ed && !ei
+                predicate: () => ee && !er && !et
             },
             [K.H.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2]: {
                 section: Z.nc_.DATA_AND_PRIVACY,
                 searchableTitles: [q.intl.string(q.t["5b3FNI"])],
                 parent: K.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-                predicate: () => ec
+                predicate: () => eo
             },
             [K.H.PRIVACY_PROFILE_VISIBILITY]: {
                 section: Z.nc_.DATA_AND_PRIVACY,
@@ -326,7 +325,7 @@ let Q = () => {
                 newIndicatorDismissibleContentTypes: [l.M.AUTH_SESSIONS_NEW],
                 impressionName: s.ImpressionNames.USER_SETTINGS_SESSIONS,
                 impressionProperties: {
-                    source: A?.source
+                    source: n?.source
                 }
             },
             [K.H.RESTRICTED_USERS]: {
@@ -334,7 +333,7 @@ let Q = () => {
                 parent: K.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
                 label: q.intl.string(q.t["3wRort"]),
                 element: W.Ay,
-                predicate: () => eu || e_
+                predicate: () => ed || ec
             },
             [K.H.BLOCKED_USERS]: {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
@@ -342,7 +341,7 @@ let Q = () => {
                 label: q.intl.string(q.t.PFOUKW),
                 searchableTitles: [q.intl.string(q.t.PFOUKW)],
                 element: W.LP,
-                predicate: () => e_
+                predicate: () => ec
             },
             [K.H.IGNORED_USERS]: {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
@@ -350,15 +349,14 @@ let Q = () => {
                 searchableTitles: [q.intl.string(q.t["93ZDWE"])],
                 label: q.intl.string(q.t["93ZDWE"]),
                 element: W.nK,
-                predicate: () => eu
+                predicate: () => ed
             },
             [K.H.PREMIUM]: {
                 section: Z.nc_.PREMIUM,
                 ariaLabel: q.intl.string(q.t.Ipxkog),
                 searchableTitles: [q.intl.string(q.t.Ipxkog)],
                 label: q.intl.string(q.t.Ipxkog),
-                element: R.A,
-                className: J.D
+                element: R.A
             },
             [K.H.GUILD_BOOSTING]: {
                 section: Z.nc_.GUILD_BOOSTING,
@@ -378,25 +376,25 @@ let Q = () => {
                 section: Z.nc_.INVENTORY,
                 searchableTitles: [q.intl.string(q.t["il+VCo"])],
                 parent: K.H.GIFT_INVENTORY,
-                predicate: () => !es
+                predicate: () => !en
             },
             [K.H.GIFT_INVENTORY_QUESTS]: {
                 section: Z.nc_.INVENTORY,
                 searchableTitles: [q.intl.string(q.t.JALI2K)],
                 parent: K.H.GIFT_INVENTORY,
-                predicate: () => el
+                predicate: () => ei
             },
             [K.H.GIFT_INVENTORY_LIST]: {
                 section: Z.nc_.INVENTORY,
                 searchableTitles: [q.intl.string(q.t["9KeUbY"])],
                 parent: K.H.GIFT_INVENTORY,
-                predicate: () => !es
+                predicate: () => !en
             },
             [K.H.GIFT_BLOCKED_PAYMENTS]: {
                 section: Z.nc_.INVENTORY,
                 searchableTitles: [q.intl.string(q.t.vwMEHS)],
                 parent: K.H.GIFT_INVENTORY,
-                predicate: () => es
+                predicate: () => en
             },
             [K.H.BILLING]: {
                 section: Z.nc_.BILLING,
@@ -427,12 +425,7 @@ let Q = () => {
                 label: q.intl.string(q.t.AtCukI),
                 ariaLabel: q.intl.string(q.t.AtCukI),
                 element: p.A,
-                predicate: () => h.A.settingsVisible,
-                icon: (0, i.jsx)("img", {
-                    alt: "",
-                    src: n(724405),
-                    className: J.$
-                })
+                predicate: () => h.A.settingsVisible
             },
             [K.H.CHAT]: {
                 section: Z.nc_.TEXT,
@@ -584,7 +577,7 @@ let Q = () => {
                 section: Z.nc_.LINUX,
                 searchableTitles: [q.intl.string(q.t["7pPjTW"])],
                 label: q.intl.string(q.t["7pPjTW"]),
-                element: ee,
+                element: $,
                 predicate: () => j.isPlatformEmbedded && (0, j.isLinux)()
             },
             [K.H.SETTINGS_ADVANCED]: {
@@ -609,13 +602,13 @@ let Q = () => {
                 section: Z.nc_.ADVANCED,
                 searchableTitles: [q.intl.string(q.t.fi3UQN)],
                 parent: K.H.SETTINGS_ADVANCED,
-                predicate: () => er
+                predicate: () => el
             },
             [K.H.SETTINGS_ADVANCED_APPLICATION_TEST_MODE]: {
                 section: Z.nc_.ADVANCED,
                 searchableTitles: [q.intl.string(q.t.erOqlh)],
                 parent: K.H.SETTINGS_ADVANCED,
-                predicate: () => eo
+                predicate: () => ea
             },
             [K.H.ACTIVITY_PRIVACY]: {
                 section: Z.nc_.ACTIVITY_PRIVACY,
@@ -651,7 +644,7 @@ let Q = () => {
                 searchableTitles: [q.intl.string(q.t["9cb1Uz"]), q.intl.string(q.t.HcoRu0)],
                 label: q.intl.string(q.t["9cb1Uz"]),
                 element: V.Ay,
-                predicate: () => et
+                predicate: () => A
             },
             [K.H.CHANGELOG]: {
                 section: "changelog",

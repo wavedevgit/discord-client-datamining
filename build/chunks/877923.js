@@ -21,8 +21,8 @@ function E(e) {
         recipientUser: n,
         channel: E
     } = e, I = (0, a.bG)([o.A], () => o.A.useReducedMotion), T = l.useRef(null), {
-        createMultipleConfettiAt: f
-    } = l.useContext(c.x), C = l.useCallback(e => ({
+        createMultipleConfettiAt: N
+    } = l.useContext(c.x), f = l.useCallback(e => ({
         size: {
             type: "static-random",
             minValue: e.confettiSize - 6,
@@ -49,10 +49,10 @@ function E(e) {
                 let [l] = i;
                 l.intersectionRatio < .5 || (n.disconnect(), (t = new r.J_(1e3, () => {
                     let t = e.getBoundingClientRect(),
-                        n = C({
+                        n = f({
                             confettiSize: 8
                         });
-                    f(t.left + t.width / 2, t.top + t.height / 2, n, 60)
+                    N(t.left + t.width / 2, t.top + t.height / 2, n, 60)
                 })).delay())
             }, {
                 threshold: .5
@@ -60,7 +60,7 @@ function E(e) {
         return n.observe(e), () => {
             n.disconnect(), t?.cancel()
         }
-    }, [f, T, I, C]), (0, i.jsx)(_.A, {
+    }, [N, T, I, f]), (0, i.jsx)(_.A, {
         contentClassName: A.o9,
         iconContainerClassName: A.zc,
         iconNode: (0, i.jsx)(s.XFE, {

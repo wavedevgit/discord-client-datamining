@@ -3,9 +3,9 @@ n.d(t, {
     GQ: () => A,
     NF: () => T,
     QG: () => I,
-    Tp: () => C,
+    Tp: () => f,
     ZR: () => E,
-    ne: () => f
+    ne: () => N
 });
 var i = n(311907),
     l = n(554146),
@@ -44,12 +44,12 @@ let E = () => (0, a.k8)(l.M.REFERRAL_PROGRAM_NITRO_TAB_BADGE),
             a = new Date;
         return n && i && a >= l
     },
-    f = e => {
+    N = e => {
         null != e ? (0, r.qr)(l.M.REFERRAL_PROGRAM_POPOVER_V2, e, {
             dismissAction: _.i.INDIRECT_ACTION
         }) : (0, a.Dr)(l.M.REFERRAL_PROGRAM_POPOVER)
     },
-    C = () => {
+    f = () => {
         let e, t = (0, u.m)(!1),
             n = (0, i.bG)([c.A], () => c.A.getReferralsRemaining()),
             r = (0, i.bG)([c.A], () => c.A.getReminderStateId());

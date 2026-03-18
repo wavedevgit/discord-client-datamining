@@ -29,8 +29,8 @@ var a = n(627968),
     E = n(71393),
     N = n(166403),
     I = n(652215),
-    R = n(788868),
-    k = n(734399);
+    k = n(788868),
+    R = n(734399);
 
 function O(e) {
     let {
@@ -45,12 +45,12 @@ function O(e) {
     }) : null
 }
 let w = function() {
-    let [e, t] = i.useState(R.pe.TIER_2), [n, f] = i.useState(null), v = (0, r.yK)([E.A], () => E.A.getGuildsArray()), [w] = (0, r.yK)([N.A], () => [N.A.getPremiumSubscription()]), D = v.map(e => ({
+    let [e, t] = i.useState(k.pe.TIER_2), [n, f] = i.useState(null), v = (0, r.yK)([E.A], () => E.A.getGuildsArray()), [w] = (0, r.yK)([N.A], () => [N.A.getPremiumSubscription()]), D = v.map(e => ({
         id: e.id,
         value: e,
         label: e.name
     })), [M, P] = i.useState(D.length > 0 ? D[0].value : null), [U, L] = i.useState(""), [B, G] = i.useState({
-        plan_id: R.gD.PREMIUM_MONTH_TIER_2,
+        plan_id: k.gD.PREMIUM_MONTH_TIER_2,
         gift: "true"
     }), F = "true" !== B.gift && null != w, [V, W] = i.useState(D.length > 0 ? D[0].value : null), {
         analyticsLocations: H
@@ -66,7 +66,7 @@ let w = function() {
     return (0, a.jsx)(x.f5, {
         value: H,
         children: (0, a.jsx)(c.IpV, {
-            className: k.XG,
+            className: R.XG,
             children: (0, a.jsxs)(c.BJc, {
                 direction: "vertical",
                 gap: 24,
@@ -79,15 +79,15 @@ let w = function() {
                         value: e,
                         options: [{
                             id: "tier_2",
-                            value: R.pe.TIER_2,
+                            value: k.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: R.pe.TIER_1,
+                            value: k.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: R.pe.TIER_0,
+                            value: k.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -112,15 +112,15 @@ let w = function() {
                         value: n,
                         options: [{
                             id: "tier_2",
-                            value: R.pe.TIER_2,
+                            value: k.pe.TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: R.pe.TIER_1,
+                            value: k.pe.TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: R.pe.TIER_0,
+                            value: k.pe.TIER_0,
                             label: "Nitro Basic"
                         }, {
                             id: "none",
@@ -189,15 +189,15 @@ let w = function() {
                         value: B.plan_id,
                         options: [{
                             id: "tier_2",
-                            value: R.gD.PREMIUM_MONTH_TIER_2,
+                            value: k.gD.PREMIUM_MONTH_TIER_2,
                             label: "Nitro"
                         }, {
                             id: "tier_1",
-                            value: R.gD.PREMIUM_MONTH_TIER_1,
+                            value: k.gD.PREMIUM_MONTH_TIER_1,
                             label: "Nitro Classic"
                         }, {
                             id: "tier_0",
-                            value: R.gD.PREMIUM_MONTH_TIER_0,
+                            value: k.gD.PREMIUM_MONTH_TIER_0,
                             label: "Nitro Basic"
                         }],
                         onSelectionChange: e => {
@@ -252,12 +252,12 @@ let w = function() {
                             variant: "text-sm/normal",
                             children: "Virtual Currency Balance:"
                         }), Y ? (0, a.jsx)("div", {
-                            className: k.wG,
+                            className: R.wG,
                             children: (0, a.jsx)(c.y$y, {
                                 type: c.tVU.SPINNING_CIRCLE
                             })
                         }) : (0, a.jsxs)("div", {
-                            className: k.dB,
+                            className: R.dB,
                             children: [null !== J && (0, a.jsxs)(c.Text, {
                                 variant: "text-sm/normal",
                                 children: ["Error fetching Virtual Currency Balance: ", J.message]

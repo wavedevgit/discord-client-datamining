@@ -17,14 +17,14 @@ var i = n(627968),
     E = n(763754),
     I = n(491182),
     T = n(860227),
-    f = n(538355),
-    C = n(522871),
-    N = n(699352),
+    N = n(538355),
+    f = n(522871),
+    C = n(699352),
     g = n(715628),
     h = n(752636),
     p = n(675722),
-    S = n(268719),
-    R = n(234957),
+    R = n(268719),
+    S = n(234957),
     x = n(652215),
     O = n(119907);
 let M = l.memo(function(e) {
@@ -39,14 +39,14 @@ let M = l.memo(function(e) {
         isGroupStart: U,
         animateAvatar: v,
         subscribeToComponentDispatch: L,
-        renderThreadAccessory: y,
-        trackAnnouncementViews: j = !1,
+        renderThreadAccessory: j,
+        trackAnnouncementViews: y = !1,
         ...k
     } = e, b = t.type === x.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: B,
         hasSpoilerEmbeds: H,
         hasBailedAst: w
-    } = (0, f.A)(t, {
+    } = (0, N.A)(t, {
         hideSimpleEmbedContent: D,
         allowList: G || F,
         allowHeading: G || F,
@@ -55,11 +55,11 @@ let M = l.memo(function(e) {
     }), V = t.type === x.lAJ.REPLY ? t.messageReference : void 0, q = (0, o.bG)([u.A], () => u.A.getMessageByReference(V)), X = (0, s.rm)(t.id), K = (0, E.Ay)(t), Y = (0, o.bG)([_.A], () => t.hasFlag(x.pr7.HAS_THREAD) && _.A.getChannel(m.default.castMessageIdAsChannelId(t.id))), z = (0, c.$7)({
         guildId: P.guild_id,
         roleId: K.iconRoleId
-    }), W = (0, C.A)({
+    }), J = (0, f.A)({
         message: t,
         channel: P,
-        enabled: j
-    }), J = (0, T.fF)(t), Q = (0, T.ZD)(t);
+        enabled: y
+    }), W = (0, T.fF)(t), Q = (0, T.ZD)(t);
     return (0, i.jsx)(I.A, {
         compact: n,
         className: r()(l, {
@@ -67,15 +67,15 @@ let M = l.memo(function(e) {
             [O.XN]: b
         }),
         disableInteraction: b,
-        childrenRepliedMessage: (0, R.A)(t, P, V, q, n),
-        childrenExecutedCommand: (0, S.A)(t, P, n),
+        childrenRepliedMessage: (0, S.A)(t, P, V, q, n),
+        childrenExecutedCommand: (0, R.A)(t, P, n),
         childrenHeader: (0, h.A)({
             ...e,
             guildId: P.guild_id,
             author: K,
             roleIcon: z
         }),
-        childrenAccessories: e.hideAccessories ? void 0 : (0, N.J)(e, H, w),
+        childrenAccessories: e.hideAccessories ? void 0 : (0, C.J)(e, H, w),
         childrenMessageContent: (0, g.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,
@@ -83,11 +83,11 @@ let M = l.memo(function(e) {
         }),
         onContextMenu: a,
         onClick: M,
-        hasThread: y && null != Y && t.hasFlag(x.pr7.HAS_THREAD),
+        hasThread: j && null != Y && t.hasFlag(x.pr7.HAS_THREAD),
         hasReply: t.type === x.lAJ.REPLY,
-        "aria-labelledby": J,
+        "aria-labelledby": W,
         "aria-describedby": Q,
-        messageRef: W,
+        messageRef: J,
         author: K,
         ...X,
         ...k

@@ -38,8 +38,8 @@ let L = (0, s.animated)(c.abt),
             size: R,
             expansionSpring: P,
             isAnimating: w,
-            isExpanded: D,
-            isInteracting: M,
+            isExpanded: M,
+            isInteracting: D,
             contentPosition: k,
             toggleExpanded: O,
             sourceQuestContent: U
@@ -53,7 +53,7 @@ let L = (0, s.animated)(c.abt),
             e.stopPropagation(), e.currentTarget.blur(), O(), X({
                 questId: n.id,
                 questContent: a,
-                questContentCTA: D ? x.Cy.COLLAPSE : x.Cy.EXPAND,
+                questContentCTA: M ? x.Cy.COLLAPSE : x.Cy.EXPAND,
                 questContentPosition: k,
                 sourceQuestContent: U
             })
@@ -78,7 +78,7 @@ let L = (0, s.animated)(c.abt),
             },
             children: [(0, i.jsx)(f.A, {
                 quest: n,
-                isInteracting: M,
+                isInteracting: D,
                 containerClassName: j.v7,
                 imageSize: {
                     width: 660,
@@ -87,7 +87,7 @@ let L = (0, s.animated)(c.abt),
                 imageClassName: j.Z5
             }), (0, i.jsxs)("div", {
                 className: j.wx,
-                "aria-expanded": D,
+                "aria-expanded": M,
                 children: [(0, i.jsxs)(s.animated.div, {
                     className: l()(j.VW, {
                         [j.eX]: Q
@@ -105,9 +105,9 @@ let L = (0, s.animated)(c.abt),
                                 range: [0, 1],
                                 output: [1, 0]
                             })),
-                            visibility: w || !D ? "inherit" : "hidden"
+                            visibility: w || !M ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !w && D,
+                        "aria-hidden": !w && M,
                         children: (0, i.jsxs)(c.sqX, {
                             "aria-label": N.intl.string(N.t.dcl9MQ),
                             onClick: et,
@@ -146,9 +146,9 @@ let L = (0, s.animated)(c.abt),
                                 range: [0, 1],
                                 output: [0, 1]
                             })),
-                            visibility: w || D ? "inherit" : "hidden"
+                            visibility: w || M ? "inherit" : "hidden"
                         },
-                        "aria-hidden": !w && !D,
+                        "aria-hidden": !w && !M,
                         children: (0, i.jsxs)("div", {
                             className: j.uA,
                             children: [(0, i.jsxs)("div", {
@@ -203,9 +203,9 @@ let L = (0, s.animated)(c.abt),
                         children: e => (0, i.jsx)(s.animated.div, {
                             style: {
                                 opacity: (0, b.a)(P),
-                                visibility: w || D ? "inherit" : "hidden"
+                                visibility: w || M ? "inherit" : "hidden"
                             },
-                            "aria-hidden": !w && !D,
+                            "aria-hidden": !w && !M,
                             children: (0, i.jsx)(c.DUT, {
                                 ...e,
                                 className: j.P0,
@@ -219,7 +219,7 @@ let L = (0, s.animated)(c.abt),
                     }), !(0, T.rW)(a) && (0, i.jsx)(c.DUT, {
                         onClick: et,
                         className: j.P0,
-                        "aria-label": D ? N.intl.string(N.t.iTcuma) : N.intl.string(N.t.dcl9MQ),
+                        "aria-label": M ? N.intl.string(N.t.iTcuma) : N.intl.string(N.t.dcl9MQ),
                         children: (0, i.jsx)(L, {
                             style: {
                                 rotate: P.to({

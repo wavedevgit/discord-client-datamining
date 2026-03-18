@@ -28,16 +28,16 @@ function A(e) {
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), f = (0, a.h)(t.applicationId);
-    if (null == f) return null;
-    let C = _.intl.format(_.t.m7Lwas, {
+    })(), N = (0, a.h)(t.applicationId);
+    if (null == N) return null;
+    let f = _.intl.format(_.t.m7Lwas, {
         username: I,
         usernameHook: T,
-        gameName: f.name,
+        gameName: N.name,
         gameIconHook: e => (0, i.jsxs)("span", {
             className: m.Y_,
             children: [(0, i.jsx)(r.A, {
-                game: f,
+                game: N,
                 size: r.M.XXSMALL,
                 className: m.p4
             }), " ", e]
@@ -51,7 +51,7 @@ function A(e) {
         compact: E,
         contentClassName: m.Qs,
         children: (0, i.jsx)("div", {
-            children: C
+            children: f
         })
     })
 }

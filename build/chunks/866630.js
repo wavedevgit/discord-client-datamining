@@ -47,7 +47,7 @@ let g = r.memo(function(e) {
             } = j, a = (0, o.xp)(i ?? "", r) ?? "";
             N && (w.borderColor = i), w.background = a, t = e, n = e
         }
-        let D = {
+        let M = {
             minWidth: P,
             color: t,
             borderColor: n
@@ -68,7 +68,7 @@ let g = r.memo(function(e) {
                 animated: S && s.animated
             }), (0, i.jsx)("div", {
                 className: L.reactionCount,
-                style: D,
+                style: M,
                 children: R
             })]
         })

@@ -20,8 +20,8 @@ function _(e) {
         closeLayer: m
     } = e, [A, E] = l.useState(!1), {
         analyticsLocations: I
-    } = (0, s.Ay)(_ ?? []), T = (0, a.bG)([o.default], () => o.default.getCurrentUser()), f = T?.isPremiumGroupMember();
-    async function C() {
+    } = (0, s.Ay)(_ ?? []), T = (0, a.bG)([o.default], () => o.default.getCurrentUser()), N = T?.isPremiumGroupMember();
+    async function f() {
         E(!0), await (0, c.g)({
             analyticsLocations: I,
             analyticsLocation: {
@@ -41,8 +41,8 @@ function _(e) {
         size: "md",
         icon: r._Jp,
         text: u.intl.string(u.t.gKmQ1G),
-        onClick: C,
+        onClick: f,
         loading: A,
-        disabled: f
+        disabled: N
     })
 }

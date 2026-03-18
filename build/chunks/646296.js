@@ -1,7 +1,7 @@
 /** chunk id: 646296 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => I
 });
 var i = n(627968),
     s = n(64700),
@@ -20,17 +20,18 @@ var i = n(627968),
     p = n(11351),
     A = n(922975),
     f = n(822525),
-    j = n(652215),
-    N = n(985018),
-    E = n(862238);
-let b = "guild-role-subscription-tier-template-selector";
+    j = n(2242),
+    N = n(652215),
+    E = n(985018),
+    b = n(862238);
+let T = "guild-role-subscription-tier-template-selector";
 
-function T(e) {
+function C(e) {
     let {
         guildId: t,
         priceTiers: l,
         groupListingId: _
-    } = e, T = (0, h.cY)(_), {
+    } = e, j = (0, h.cY)(_), {
         editStateIds: C,
         addNewEditStateId: I,
         addNewEditStateFromTemplate: v,
@@ -56,18 +57,18 @@ function T(e) {
                 priceTiers: l
             })
         }, {
-            modalKey: b
+            modalKey: T
         }) : I()
     }, [t, v, I, l, L, G]), M = A.Zw(O), k = s.useCallback(() => O.forEach(A.Ts), [O]), U = (0, p.gN)(), P = (0, o.bG)([m.A], () => m.A.getProps().subsection);
-    return s.useEffect(() => (P === j.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && D(), () => {
-        (0, u.OoC)(b)
+    return s.useEffect(() => (P === N.nd0.ROLE_SUBSCRIPTION_TIER_TEMPLATE && D(), () => {
+        (0, u.OoC)(T)
     }), [P, D]), (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
-            className: E.B2,
+            className: b.B2,
             children: [O.map(e => (0, i.jsx)(f.A, {
                 guildId: t,
                 initialEditStateId: e,
-                allSubscriptionListings: T,
+                allSubscriptionListings: j,
                 priceTiers: l,
                 groupListingId: _,
                 onDeleteEditState: () => S(e),
@@ -81,23 +82,23 @@ function T(e) {
                 onAfterDispatchNewListing: () => S(e)
             }, e)), (0, i.jsxs)(u.DUT, {
                 onClick: U ? void 0 : D,
-                className: r()(E.l2, {
-                    [E.r9]: U
+                className: r()(b.l2, {
+                    [b.r9]: U
                 }),
                 "aria-disabled": U,
                 children: [(0, i.jsx)(u.U1e, {
                     size: "xs",
                     color: "currentColor",
-                    className: E.qE
+                    className: b.qE
                 }), (0, i.jsx)(u.Text, {
                     variant: "text-md/normal",
                     color: "interactive-text-active",
-                    children: N.intl.string(N.t.PiFnny)
+                    children: E.intl.string(E.t.PiFnny)
                 })]
             })]
         }), (0, i.jsx)(d.F, {
             component: "div",
-            className: E.se,
+            className: b.se,
             children: M && (0, i.jsx)(u.FQk, {
                 children: (0, i.jsx)(c.A, {
                     onReset: k
@@ -107,7 +108,7 @@ function T(e) {
     })
 }
 
-function C(e) {
+function I(e) {
     let {
         guildId: t
     } = e, {
@@ -122,15 +123,13 @@ function C(e) {
             loading: t,
             priceTiers: i
         }
-    })(t), l = (0, h.uk)(t), {
-        maxTiers: r
-    } = (0, x.DN)(t), a = l.map(e => e.id);
+    })(t), l = (0, h.uk)(t), r = j.f7, a = l.map(e => e.id);
     return (0, i.jsx)(u.D0$, {
-        label: N.intl.string(N.t["72+Sos"]),
-        description: N.intl.format(N.t.nHRSvM, {
+        label: E.intl.string(E.t["72+Sos"]),
+        description: E.intl.format(E.t.nHRSvM, {
             maxTiers: r
         }),
-        children: (0, i.jsx)(T, {
+        children: (0, i.jsx)(C, {
             priceTiers: n,
             guildId: t,
             groupListingId: a[0]

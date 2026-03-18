@@ -10,10 +10,10 @@ n.d(t, {
     T0: () => N,
     UY: () => k,
     U_: () => H,
-    VL: () => D,
+    VL: () => M,
     Yq: () => w,
     m: () => y,
-    r4: () => M,
+    r4: () => D,
     ri: () => U,
     yp: () => B
 }), n(938796);
@@ -99,7 +99,7 @@ function w(e, t) {
     return L(b("interactionAvatarProfile", e, t))
 }
 
-function D(e, t, a, o) {
+function M(e, t, a, o) {
     let {
         id: d
     } = t, {
@@ -126,7 +126,7 @@ function D(e, t, a, o) {
         }), (0, s.L3)(e, async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("3795"), n.e("3183"), n.e("63238"), n.e("24202"), n.e("7562"), n.e("5873"), n.e("1636"), n.e("24172")]).then(n.bind(n, 547983));
+            } = await Promise.all([n.e("3795"), n.e("91139"), n.e("3183"), n.e("22"), n.e("24202"), n.e("7562"), n.e("5873"), n.e("1636"), n.e("24172")]).then(n.bind(n, 547983));
             return n => (0, i.jsx)(e, {
                 ...n,
                 message: l,
@@ -143,7 +143,7 @@ function D(e, t, a, o) {
     }, [A, d, u, a, f, o])
 }
 
-function M(e, t) {
+function D(e, t) {
     return r.useCallback(n => {
         let i = p.default.getUser(e),
             r = _.A.getChannel(t);

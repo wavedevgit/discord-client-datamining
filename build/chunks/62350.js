@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(652215),
     P = n(768349),
     w = n(172799),
-    D = n(985018),
-    M = n(320160);
+    M = n(985018),
+    D = n(320160);
 
 function k(e) {
     let {
@@ -43,31 +43,31 @@ function k(e) {
         textColor: r
     } = e, a = [];
     return null != n && n > 0 && a.push((0, i.jsxs)("div", {
-        className: M.MY,
+        className: D.MY,
         children: [(0, i.jsx)("i", {
-            className: M.QD
+            className: D.QD
         }), (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
-            className: M.U9,
+            className: D.U9,
             color: r,
-            children: D.intl.format(D.t["LC+S+m"], {
+            children: M.intl.format(M.t["LC+S+m"], {
                 membersOnline: n
             })
         })]
     }, "onlineCount")), null != t && a.push((0, i.jsxs)("div", {
-        className: M.MY,
+        className: D.MY,
         children: [(0, i.jsx)("i", {
-            className: M.o6
+            className: D.o6
         }), (0, i.jsx)(u.Text, {
             variant: "text-xs/normal",
-            className: M.U9,
+            className: D.U9,
             color: r,
-            children: D.intl.format(D.t.zRl6XR, {
+            children: M.intl.format(M.t.zRl6XR, {
                 count: t
             })
         })]
     }, "memberCount")), (0, i.jsx)("div", {
-        className: M.rc,
+        className: D.rc,
         children: a
     })
 }
@@ -82,18 +82,18 @@ function O(e) {
     if (null != t && null != n) {
         let e = (0, E.gU)(t, n);
         return (0, i.jsxs)("div", {
-            className: l()(M.Ix, {
-                [M.v6]: r
+            className: l()(D.Ix, {
+                [D.v6]: r
             }),
             children: [null != e ? (0, i.jsx)(e, {
-                className: M.p,
+                className: D.p,
                 size: "xs",
                 color: "currentColor"
             }) : null, (0, i.jsx)(c.A, {
                 children: (0, i.jsx)(u.Text, {
                     variant: "text-xs/normal",
                     color: a,
-                    children: D.intl.format(D.t["dc+LW4"], {
+                    children: M.intl.format(M.t["dc+LW4"], {
                         channelName: t.name,
                         serverName: n.name
                     })
@@ -102,14 +102,14 @@ function O(e) {
         })
     }
     return null != n ? (0, i.jsx)("div", {
-        className: l()(M.Ix, {
-            [M.v6]: r
+        className: l()(D.Ix, {
+            [D.v6]: r
         }),
         children: (0, i.jsx)(c.A, {
             children: (0, i.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: a,
-                children: D.intl.format(D.t.u0vaDE, {
+                children: M.intl.format(M.t.u0vaDE, {
                     guildName: n.name
                 })
             })
@@ -146,7 +146,7 @@ function U(e) {
             return A.id === t
         })),
         P = v.A.getChannel(a.channel?.id),
-        M = (0, d.bG)([T.A], () => null != P && T.A.can(R.xBc.USE_EMBEDDED_ACTIVITIES, P), [P]),
+        D = (0, d.bG)([T.A], () => null != P && T.A.can(R.xBc.USE_EMBEDDED_ACTIVITIES, P), [P]),
         {
             analyticsLocations: k
         } = (0, p.Ay)(h.A.INVITE_EMBED),
@@ -170,9 +170,9 @@ function U(e) {
         if (null == a.guild) return (0, i.jsx)(L.A, {});
         f = (0, j.DY)(a.guild)
     }
-    t = H ? E ? D.intl.string(D.t.DPfdsq) : N ? D.intl.string(D.t.sqe0hj) : D.intl.string(D.t.RscU7I) : D.intl.string(D.t["2BP08E"]);
-    let V = H && !M || H && E;
-    return (M || (n = D.intl.string(D.t.hHGrWz)), null == a.code || "" === a.code || null == C) ? null : (0, i.jsx)(p.f5, {
+    t = H ? E ? M.intl.string(M.t.DPfdsq) : N ? M.intl.string(M.t.sqe0hj) : M.intl.string(M.t.RscU7I) : M.intl.string(M.t["2BP08E"]);
+    let V = H && !D || H && E;
+    return (D || (n = M.intl.string(M.t.hHGrWz)), null == a.code || "" === a.code || null == C) ? null : (0, i.jsx)(p.f5, {
         value: k,
         children: (0, i.jsx)(B, {
             app: C,
@@ -228,12 +228,12 @@ function B(e) {
     }], [m, a, _, h, p, I]);
     return (0, i.jsx)(g.h, {
         header: t.name,
-        title: D.intl.string(D.t["7vb6nw"]),
+        title: M.intl.string(M.t["7vb6nw"]),
         iconSrc: T,
         ...S,
         onClickBanner: y,
         info: (0, i.jsxs)("div", {
-            className: M.QR,
+            className: D.QR,
             children: [(0, i.jsx)(O, {
                 channel: l,
                 guild: s,
@@ -242,7 +242,7 @@ function B(e) {
             }), a ? j > 0 && (0, i.jsx)(A.$, {
                 activityUsers: n,
                 guildId: s.id,
-                activityText: D.intl.formatToPlainString(D.t.yJj035, {
+                activityText: M.intl.formatToPlainString(M.t.yJj035, {
                     count: j
                 })
             }) : (0, i.jsx)(k, {

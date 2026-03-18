@@ -1,6 +1,6 @@
 /** chunk id: 902592 params = (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => R,
+    default: () => k,
     openDevToolsPopout: () => S
 });
 var a = n(627968),
@@ -49,7 +49,7 @@ function S() {
         windowKey: j.MLl.DEVTOOLS_POPOUT,
         title: "DevTools",
         withTitleBar: !0,
-        children: (0, a.jsx)(R, {
+        children: (0, a.jsx)(k, {
             mobile: !1,
             isPopout: !0
         })
@@ -162,7 +162,7 @@ function I() {
     })
 }
 
-function R(e) {
+function k(e) {
     let {
         mobile: t,
         isPopout: n = !1
