@@ -47,8 +47,8 @@ var a = n(627968),
     B = n(814698),
     K = n(431040),
     z = n(976720),
-    X = n(313843),
-    J = n(286737),
+    J = n(313843),
+    X = n(286737),
     $ = n(839671),
     Z = n(94836),
     Q = n(392332),
@@ -228,7 +228,7 @@ function ef(e) {
             trackAction: n
         }), (0, a.jsxs)("div", {
             className: ec.gr,
-            children: [(0, a.jsx)(X.Q, {
+            children: [(0, a.jsx)(J.Q, {
                 game: t,
                 application: r,
                 isTwoColumn: !1
@@ -241,7 +241,7 @@ function ef(e) {
                     trackAction: n
                 })]
             })]
-        }), (0, a.jsx)(J.A, {
+        }), (0, a.jsx)(X.A, {
             trackAction: n
         }), (0, a.jsx)(q.o, {
             trackClick: n,
@@ -392,7 +392,7 @@ function ev(e) {
             className: eo.V0,
             children: [(0, a.jsx)(el.A, {
                 detectedGame: t.supplementalData
-            }), (0, a.jsx)(J.A, {
+            }), (0, a.jsx)(X.A, {
                 trackAction: n
             }), (0, a.jsx)(q.o, {
                 trackClick: n,
@@ -583,10 +583,10 @@ function e_(e) {
             officialGuildId: p?.guild?.id
         })
     });
-    let J = l.useCallback(e => {
+    let X = l.useCallback(e => {
             f(e.contentRect.width >= 800)
         }, []),
-        $ = (0, d.w)(J, [], {
+        $ = (0, d.w)(X, [], {
             fireOnMount: !0
         }),
         Z = l.useMemo(() => ({
@@ -612,7 +612,7 @@ function e_(e) {
                 ref: $,
                 children: (0, a.jsxs)(h.HOs, {
                     orientation: "auto",
-                    children: [(0, a.jsx)(X.A, {
+                    children: [(0, a.jsx)(J.A, {
                         game: y,
                         application: S,
                         entries: k,

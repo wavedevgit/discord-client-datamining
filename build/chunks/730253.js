@@ -51,7 +51,7 @@ let H = {
 };
 
 function F(e) {
-    let t, F, K, W, Y, z, q, X, Q, J, $, Z, {
+    let t, F, K, W, Y, z, q, X, J, Q, $, Z, {
             shouldShowIntroPopover: ee,
             markIntroPopoverAsDismissed: et
         } = e,
@@ -92,9 +92,9 @@ function F(e) {
                 location: t
             } = e, n = (0, u.H)(t);
             return null != n && null != eh[n]
-        })), X = z.length > 0, Q = !1, J = !1, $ = !1, Z = !1, F ? (Q = !Y, J = Y, $ = K, Z = q) : ($ = W, Z = X), (0, g.oi)({
-            audio: Q,
-            video: J,
+        })), X = z.length > 0, J = !1, Q = !1, $ = !1, Z = !1, F ? (J = !Y, Q = Y, $ = K, Z = q) : ($ = W, Z = X), (0, g.oi)({
+            audio: J,
+            video: Q,
             screenshare: $,
             liveStage: !1,
             isCurrentUserConnected: F,

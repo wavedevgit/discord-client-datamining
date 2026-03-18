@@ -1,13 +1,13 @@
 /** chunk id: 997913 params = (module,exports,require) **/
 e.d(_, {
-    O: () => S,
-    i: () => T
+    O: () => T,
+    i: () => S
 });
 var E = e(627968),
     A = e(397927),
     I = e(985018);
 
-function S(t) {
+function T(t) {
     let {
         body: _,
         ...I
@@ -27,11 +27,11 @@ function S(t) {
     })
 }
 
-function T(t) {
+function S(t) {
     let {
         message: _
     } = t;
-    S({
+    T({
         header: I.intl.string(I.t.OjbtDm),
         confirmText: I.intl.string(I.t.BddRzS),
         body: _

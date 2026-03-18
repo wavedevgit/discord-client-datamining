@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(661191),
     E = n(533808),
     S = n(219887),
-    f = n(652215),
-    C = n(985018),
+    C = n(652215),
+    f = n(985018),
     b = n(228851);
 class N extends s.PureComponent {
     static defaultProps = {
@@ -74,7 +74,7 @@ class N extends s.PureComponent {
                     variant: "secondary",
                     onClick: this.handleEditClick,
                     size: "sm",
-                    text: C.intl.string(C.t.bt75uw)
+                    text: f.intl.string(f.t.bt75uw)
                 })]
             })]
         })
@@ -110,7 +110,7 @@ let I = s.memo(function(e) {
                 showPaymentSourceIcon: !0
             }) : (0, i.jsx)(c.Text, {
                 variant: "text-sm/medium",
-                children: C.intl.string(C.t["6EEgNt"])
+                children: f.intl.string(f.t["6EEgNt"])
             }), (0, i.jsxs)("div", {
                 className: b.zy,
                 children: [(0, i.jsx)("div", {
@@ -131,7 +131,7 @@ let I = s.memo(function(e) {
                     variant: "secondary",
                     onClick: _,
                     size: "sm",
-                    text: C.intl.string(C.t.H2hHyf)
+                    text: f.intl.string(f.t.H2hHyf)
                 })]
             })]
         })]
@@ -183,7 +183,7 @@ class v extends s.PureComponent {
             onCloseCallback: () => {
                 (0, _.ET)()
             },
-            onCloseRequest: f.tEg
+            onCloseRequest: C.tEg
         })
     };
     renderFooter() {
@@ -196,14 +196,14 @@ class v extends s.PureComponent {
                 className: b.z8,
                 children: [(0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
-                    children: C.intl.string(C.t.aRHpAB)
+                    children: f.intl.string(f.t.aRHpAB)
                 }), (0, i.jsx)("div", {
                     className: b.Sv,
-                    children: C.intl.string(C.t.o9bOIl)
+                    children: f.intl.string(f.t.o9bOIl)
                 })]
             }) : null, (0, i.jsx)(d.$nd, {
                 onClick: this.handleAddPaymentMethod,
-                text: C.intl.string(C.t.CpOiEO)
+                text: f.intl.string(f.t.CpOiEO)
             })]
         })
     }
@@ -261,11 +261,11 @@ class v extends s.PureComponent {
                     children: [(0, i.jsx)(c.XAi, {
                         size: "sm",
                         className: b.hz
-                    }), " ", C.intl.string(C.t.W26xGQ)]
+                    }), " ", f.intl.string(f.t.W26xGQ)]
                 }), (0, i.jsx)(c.Text, {
                     variant: "text-sm/normal",
                     color: "text-subtle",
-                    children: C.intl.string(C.t.h6V3uK)
+                    children: f.intl.string(f.t.h6V3uK)
                 })]
             }) : null, E, u && e, p !== A.length - 1 || u && x.length > 0 ? (0, i.jsx)(c.cGx, {}) : null, this.renderFooter()]
         })

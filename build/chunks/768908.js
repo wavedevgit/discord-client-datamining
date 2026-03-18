@@ -24,8 +24,8 @@ var i = n(627968),
     T = n(760751),
     E = n(189081),
     S = n(954571),
-    f = n(583613),
-    C = n(723702),
+    C = n(583613),
+    f = n(723702),
     b = n(544028),
     N = n(790174),
     I = n(652215),
@@ -38,7 +38,7 @@ var i = n(627968),
 let L = r.Ay.connectStores([b.A], () => ({
         theme: b.A.theme
     }))(c.ppr),
-    P = (0, C.isWindows)();
+    P = (0, f.isWindows)();
 
 function G(e) {
     let {
@@ -85,21 +85,21 @@ function M(e) {
         nowPlaying: l = !1,
         isOverride: A,
         subgames: h,
-        isSubgame: f = !1,
-        parentGame: C
+        isSubgame: C = !1,
+        parentGame: f
     } = e, b = (0, r.cf)([g.Ay, T.A, E.A], () => (0, g.xU)(t, g.Ay, T.A, E.A)), {
         canToggleDetection: N,
         isCurrentGameDetectionEnabled: R
     } = (0, r.cf)([g.Ay], () => ({
-        canToggleDetection: null == C || g.Ay.isDetectionEnabled(C),
+        canToggleDetection: null == f || g.Ay.isDetectionEnabled(f),
         isCurrentGameDetectionEnabled: g.Ay.isDetectionEnabled(b)
-    })), D = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(b) ? f ? b.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
+    })), D = (0, r.bG)([g.Ay], () => g.Ay.getVisibleGame()), [L, G] = s.useState(!1), U = s.useMemo(() => (0, p.n1)(b) ? C ? b.gameName : j.intl.formatToPlainString(j.t.G6BGdx, {
         subgameName: b.gameName
-    }) : b.name, [b, f]), [k, V] = s.useState(U ?? "???"), w = a()(O.tR, {
+    }) : b.name, [b, C]), [k, V] = s.useState(U ?? "???"), w = a()(O.tR, {
         [y.LO]: !l,
         [y.Rw]: l,
         [y.FB]: null != b && l,
-        [y.xL]: f,
+        [y.xL]: C,
         [y.fG]: null != h && h.length > 0
     });
 
@@ -131,7 +131,7 @@ function M(e) {
         }) : u.A.toggleDetection(b)
     }
     let H = null != D && (0, g.Es)(b) === (0, g.Es)(D),
-        F = null != C && C.id === D?.id || H || null != h && h.some(e => e.id === D?.id);
+        F = null != f && f.id === D?.id || H || null != h && h.some(e => e.id === D?.id);
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsxs)("div", {
             className: w,
@@ -246,7 +246,7 @@ function M(e) {
                     })
                 })
             }(), function() {
-                if (!P || null != C) return null;
+                if (!P || null != f) return null;
                 let {
                     overlay: e,
                     overlayWarn: t
@@ -335,7 +335,7 @@ function k(e) {
         }), t]
     })
 }
-let V = (0, f.L_)(function() {
+let V = (0, C.L_)(function() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
         return new Set(t.map(e => e.exePath))
     }),

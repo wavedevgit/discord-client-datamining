@@ -24,8 +24,8 @@ var i = n(627968),
     T = n(166403),
     E = n(773669),
     S = n(780964),
-    f = n(493068),
-    C = n(840065),
+    C = n(493068),
+    f = n(840065),
     b = n(531525),
     N = n(652215),
     I = n(985018),
@@ -39,7 +39,7 @@ function j() {
 }
 
 function y() {
-    (0, C.openUserSettings)(S.X.GIFT_PANEL)
+    (0, f.openUserSettings)(S.X.GIFT_PANEL)
 }
 
 function R(e) {
@@ -101,7 +101,7 @@ function L() {
                 children: [(0, i.jsx)(a.Heading, {
                     variant: "heading-lg/semibold",
                     children: I.intl.string(I.t["3pIjBH"])
-                }), (0, i.jsx)(f.d, {})]
+                }), (0, i.jsx)(C.d, {})]
             })
         }), (0, i.jsx)(g.x, {
             setting: b.H.BILLING_TRANSACTION_HISTORY,

@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(683433),
     E = n(692440),
     S = n(178368),
-    f = n(97352),
-    C = n(166403),
+    C = n(97352),
+    f = n(166403),
     b = n(473145),
     N = n(927578),
     I = n(580630),
@@ -97,7 +97,7 @@ function P(e) {
         onBack: a,
         onNext: r,
         onClose: c
-    } = e, [u, g] = s.useState(!1), [S, C] = s.useState(null), [b, y] = s.useMemo(() => {
+    } = e, [u, g] = s.useState(!1), [S, f] = s.useState(null), [b, y] = s.useMemo(() => {
         try {
             return [(0, h.v)(t, -1), !1]
         } catch {
@@ -114,11 +114,11 @@ function P(e) {
     let {
         premiumSubscriptionPlan: P,
         premiumGuildPlan: G
-    } = (0, o.cf)([f.A], () => {
-        let e = f.A.get(t.planId);
+    } = (0, o.cf)([C.A], () => {
+        let e = C.A.get(t.planId);
         return {
             premiumSubscriptionPlan: e,
-            premiumGuildPlan: null != e ? f.A.getForSkuAndInterval((0, N.mH)(j.pe.GUILD), e.interval, e.intervalCount) : null
+            premiumGuildPlan: null != e ? C.A.getForSkuAndInterval((0, N.mH)(j.pe.GUILD), e.interval, e.intervalCount) : null
         }
     }), {
         analyticsLocations: M
@@ -207,9 +207,9 @@ function P(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        g(!0), C(null), await L(t, b, M, n), r()
+                        g(!0), f(null), await L(t, b, M, n), r()
                     } catch (e) {
-                        C(R.intl.string(R.t["5mlOCW"])), g(!1)
+                        f(R.intl.string(R.t["5mlOCW"])), g(!1)
                     }
                 }
             }), (0, i.jsx)(T.A, {
@@ -258,9 +258,9 @@ function M(e) {
         onClose: a
     } = e;
     s.useEffect(() => {
-        C.A.hasFetchedSubscriptions() || (0, c.hP)()
+        f.A.hasFetchedSubscriptions() || (0, c.hP)()
     }, []);
-    let r = (0, o.bG)([C.A], () => C.A.getPremiumTypeSubscription()),
+    let r = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
         u = (0, g.A)(),
         [A, x] = s.useState(1),
         {

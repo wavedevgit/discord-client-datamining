@@ -50,8 +50,8 @@ var i = n(627968),
     z = n(246884),
     q = n(497140),
     X = n(34247),
-    Q = n(850729),
-    J = n(521872),
+    J = n(850729),
+    Q = n(521872),
     $ = n(827975),
     Z = n(369915),
     ee = n(232879),
@@ -191,7 +191,7 @@ function ec(e) {
             location: "GuildsBar"
         });
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(Q.C, {}), E === O.RK.SERVER_RAIL_TOP && (0, i.jsx)(L.A, {}), r ? (0, i.jsx)(y.A, {
+        children: [(0, i.jsx)(J.C, {}), E === O.RK.SERVER_RAIL_TOP && (0, i.jsx)(L.A, {}), r ? (0, i.jsx)(y.A, {
             shouldShowIntroPopover: g,
             markIntroPopoverAsDismissed: u
         }) : null, !t && (0, i.jsx)(W.A, {}), C.map(e => (0, i.jsx)(en.A, {
@@ -247,7 +247,7 @@ function eu(e) {
         ref: G,
         ...U
     } = (0, d.$y)(), P = (0, _.R7z)(), [w, W] = s.useState(!1), Y = (0, _.rdh)(g.A.modules.guildbar.AVATAR_SIZE), z = (0, _.rdh)(g.A.space.SPACE_XS), q = (0, v.A)("GuildsBar"), {
-        pathname: Q
+        pathname: J
     } = (0, c.zy)(), {
         entrypoint: $
     } = (0, O.X8)({
@@ -270,7 +270,7 @@ function eu(e) {
     }), [en]);
     let {
         analyticsLocations: eu
-    } = (0, I.Ay)(E.A.GUILDS_LIST), eh = ea(Q);
+    } = (0, I.Ay)(E.A.GUILDS_LIST), eh = ea(J);
     (0, x.u5)(() => {
         if (!S.current && 0 !== o.size) {
             if (!eh) {
@@ -372,7 +372,7 @@ function eu(e) {
                             children: [(0, i.jsx)(ec, {
                                 scrollToTop: eA,
                                 lurkingGuildIds: A
-                            }), (0, i.jsx)(J.A, {}), (0, i.jsx)(ed, {
+                            }), (0, i.jsx)(Q.A, {}), (0, i.jsx)(ed, {
                                 guildDiscoveryButton: ep,
                                 disableAppDownload: t,
                                 isOverlay: n,
@@ -380,7 +380,7 @@ function eu(e) {
                                 lurkingGuildIds: A
                             })]
                         }), eg && (0, i.jsxs)("div", {
-                            children: [(0, i.jsx)(J.A, {
+                            children: [(0, i.jsx)(Q.A, {
                                 fullWidth: !0
                             }), (0, i.jsx)("div", {
                                 className: el.JU,

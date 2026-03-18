@@ -73,16 +73,16 @@ let P = s.memo(function(e) {
         draggable: z = !1,
         sorting: q = !1,
         preloadOnClick: X = !0,
-        guildJoinRequestStatus: Q,
-        height: J,
+        guildJoinRequestStatus: J,
+        height: Q,
         "aria-setsize": $,
         "aria-posinset": Z
     } = e, {
         id: ee,
         parentId: et
     } = t, en = e.upperBadge ?? (F ? (0, O.em)() : null != H ? (0, O.oi)(H) : void 0), ei = e.lowerBadge ?? void 0;
-    null == ei && K > 0 ? ei = (0, O.wN)(K, W ? A.LU0.colors.BACKGROUND_MOD_STRONG.css : A.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) ?? void 0 : null == ei && null != Q && (ei = (0, O.eW)({
-        guildJoinRequestStatus: Q
+    null == ei && K > 0 ? ei = (0, O.wN)(K, W ? A.LU0.colors.BACKGROUND_MOD_STRONG.css : A.LU0.colors.BACKGROUND_FEEDBACK_NOTIFICATION.css) ?? void 0 : null == ei && null != J && (ei = (0, O.eW)({
+        guildJoinRequestStatus: J
     }) ?? void 0);
     let es = e.lowerBadgeSize ?? {
             width: (0, A.o6S)(K)
@@ -215,7 +215,7 @@ let P = s.memo(function(e) {
             } : void 0,
             "data-dnd-name": w.name,
             style: {
-                scale: null == J ? 1 : J
+                scale: null == Q ? 1 : Q
             },
             "data-drop-hovering": eA,
             className: r()(D.rN, {
@@ -232,7 +232,7 @@ let P = s.memo(function(e) {
             })
         }) : (0, i.jsx)(o.animated.div, {
             style: {
-                scale: null == J ? 1 : J
+                scale: null == Q ? 1 : Q
             },
             className: r()(D.rN, {
                 [D.p9]: q,

@@ -57,8 +57,8 @@ let k = s.memo(function e(t) {
         z = m.X6.useSetting(),
         q = m.hD.useSetting(),
         X = m.rs.useSetting(),
-        Q = m.kt.useSetting(),
-        J = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
+        J = m.kt.useSetting(),
+        Q = (0, d.S)((l.editedTimestamp ?? l.timestamp).valueOf()),
         $ = (0, u.A)(s?.id),
         {
             disableReactionCreates: Z
@@ -69,8 +69,8 @@ let k = s.memo(function e(t) {
             hasBailedAst: en
         } = (0, v.A)(l, {
             hideSimpleEmbedContent: q && X,
-            allowList: J,
-            allowHeading: J,
+            allowList: Q,
+            allowHeading: Q,
             allowLinks: !0,
             previewLinkTarget: !0
         }),
@@ -126,10 +126,10 @@ let k = s.memo(function e(t) {
             inlineAttachmentMedia: z,
             inlineEmbedMedia: q,
             renderEmbeds: X,
-            gifAutoPlay: Q,
+            gifAutoPlay: J,
             poll: ed,
-            showListsAndHeaders: J,
-            showMaskedLinks: J,
+            showListsAndHeaders: Q,
+            showMaskedLinks: Q,
             shouldHideMediaOptions: $,
             enabledContentHarmTypeFlags: eo,
             ctaButtonType: ec

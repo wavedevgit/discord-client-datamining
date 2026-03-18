@@ -1,6 +1,6 @@
 /** chunk id: 331969 params = (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => f
 }), n(321073);
 var i = n(627968),
     s = n(64700),
@@ -28,7 +28,7 @@ function S(e) {
     }), e.setLimit(1 / 0)
 }
 
-function f() {
+function C() {
     return (0, i.jsx)("div", {
         className: p.i1,
         children: (0, i.jsx)(r.Text, {
@@ -40,7 +40,7 @@ function f() {
     })
 }
 
-function C(e) {
+function f(e) {
     let {
         keybind: t
     } = e, n = s.useRef(t);
@@ -91,7 +91,7 @@ function b(e) {
             onClose: c,
             onSelect: T
         } = e,
-        C = s.useId(),
+        f = s.useId(),
         b = s.useRef(null),
         {
             query: N,
@@ -140,7 +140,7 @@ function b(e) {
             if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
         L = O > 0 || "" === N ? {
-            innerId: C,
+            innerId: f,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
             ref: b,
@@ -176,7 +176,7 @@ function b(e) {
             rowHeight: 34
         } : {
             sections: [1],
-            renderRow: () => (0, i.jsx)(f, {}),
+            renderRow: () => (0, i.jsx)(C, {}),
             sectionHeight: 0,
             rowHeight: 52
         };
@@ -213,7 +213,7 @@ function b(e) {
             },
             placeholder: h.intl.string(h.t.tG0r7g),
             role: "combobox",
-            "aria-controls": C,
+            "aria-controls": f,
             "aria-expanded": O > 0,
             "aria-activedescendant": O > 0 && null != D ? D : void 0,
             "aria-autocomplete": "list",

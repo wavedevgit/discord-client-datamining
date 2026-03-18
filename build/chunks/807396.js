@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(370480),
     E = n(882997),
     S = n(373498),
-    f = n(169869),
-    C = n(263063),
+    C = n(169869),
+    f = n(263063),
     b = n(496885),
     N = n(962173),
     I = n(71393),
@@ -63,8 +63,8 @@ let k = e => {
         className: U.iA,
         children: [(0, i.jsxs)("div", {
             className: U.XX,
-            children: [(0, i.jsx)(C.Ay, {
-                size: C.Ay.Sizes.SMALL,
+            children: [(0, i.jsx)(f.Ay, {
+                size: f.Ay.Sizes.SMALL,
                 guild: n.guild,
                 className: U.$f
             }), (0, i.jsxs)("div", {
@@ -94,23 +94,23 @@ let k = e => {
 function V(e) {
     let t, n, l, a, o, m, A, {
             onDisconnect: x,
-            account: C,
+            account: f,
             theme: N,
             locale: I
         } = e,
-        [v, j] = s.useState(C.friendSync),
-        [R, V] = s.useState(C.visibility),
-        [w, B] = s.useState(C.metadataVisibility),
-        [H, F] = s.useState(C.showActivity),
+        [v, j] = s.useState(f.friendSync),
+        [R, V] = s.useState(f.visibility),
+        [w, B] = s.useState(f.metadataVisibility),
+        [H, F] = s.useState(f.showActivity),
         [Y, z] = s.useState(null),
         [X, W] = s.useState(null),
         [K, Z] = s.useState(!1),
         [q, J] = s.useState([]),
-        Q = (0, p.ML)(C.type),
+        Q = (0, p.ML)(f.type),
         $ = h.A.get(Q);
     s.useEffect(() => {
-        j(C.friendSync), V(C.visibility), B(C.metadataVisibility), F(C.showActivity)
-    }, [C]);
+        j(f.friendSync), V(f.visibility), B(f.metadataVisibility), F(f.showActivity)
+    }, [f]);
     let ee = {
             inProgressVisibility: Y,
             inProgressMetadataVisibility: X
@@ -119,15 +119,15 @@ function V(e) {
     return s.useEffect(() => {
         et.current = ee
     }), s.useEffect(() => {
-        if (!1 === C.verified) return;
+        if (!1 === f.verified) return;
         let {
             inProgressVisibility: e,
             inProgressMetadataVisibility: t
         } = et.current;
-        null != e && (V(e), g.A.setVisibility(C.type, C.id, e), z(null)), null != t && (B(t), g.A.setMetadataVisibility(C.type, C.id, t), W(null))
-    }, [C]), (0, i.jsxs)("div", {
+        null != e && (V(e), g.A.setVisibility(f.type, f.id, e), z(null)), null != t && (B(t), g.A.setMetadataVisibility(f.type, f.id, t), W(null))
+    }, [f]), (0, i.jsxs)("div", {
         className: U.FI,
-        children: [(t = h.A.get(C.type), n = h.A.get(Q), l = "1" === (C.metadata ?? {})[G.pK.TWITTER_VERIFIED], a = null, t.type === P.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
+        children: [(t = h.A.get(f.type), n = h.A.get(Q), l = "1" === (f.metadata ?? {})[G.pK.TWITTER_VERIFIED], a = null, t.type === P.fg2.TWITTER && l && (a = (0, i.jsx)(c.m, {
             text: M.intl.string(M.t.Jebrww),
             children: (0, i.jsx)(b.A, {
                 color: d.A.unsafe_rawColors.TWITTER.css,
@@ -149,7 +149,7 @@ function V(e) {
                         color: "text-strong",
                         variant: "text-md/semibold",
                         className: U.RW,
-                        children: C.name
+                        children: f.name
                     }), null != a && (0, i.jsx)("div", {
                         className: U.cG,
                         children: a
@@ -163,7 +163,7 @@ function V(e) {
             }), (0, i.jsx)(_.DUT, {
                 className: U.uH,
                 onClick: function() {
-                    let e = h.A.get(C.type);
+                    let e = h.A.get(f.type);
                     (0, _.qfG)(t => (0, i.jsx)(r.Modal, {
                         title: M.intl.formatToPlainString(M.t.U5x12f, {
                             name: e.name
@@ -183,7 +183,7 @@ function V(e) {
                             variant: "primary"
                         }],
                         ...t,
-                        children: (0, S.A)(C) && (0, i.jsx)(O.A, {
+                        children: (0, S.A)(f) && (0, i.jsx)(O.A, {
                             children: M.intl.format(M.t.COW3Xn, {
                                 platformName: e.name
                             })
@@ -203,30 +203,30 @@ function V(e) {
                     color: "currentColor"
                 })
             })]
-        })), C.twoWayLink ? null : C.type === P.fg2.XBOX ? (0, i.jsx)(L._, {}) : C.type === P.fg2.PLAYSTATION ? (0, i.jsx)(D.j, {}) : null, function(e) {
+        })), f.twoWayLink ? null : f.type === P.fg2.XBOX ? (0, i.jsx)(L._, {}) : f.type === P.fg2.PLAYSTATION ? (0, i.jsx)(D.j, {}) : null, function(e) {
             let t = e.metadata ?? {},
                 n = null,
                 s = (0, T.An)(t[G.pK.CREATED_AT], I);
             switch (e.type) {
                 case P.fg2.REDDIT:
-                    n = (0, f.xE)(t, U.Nz);
+                    n = (0, C.xE)(t, U.Nz);
                     break;
                 case P.fg2.STEAM:
-                    n = (0, f.dy)(t, U.Nz);
+                    n = (0, C.dy)(t, U.Nz);
                     break;
                 case P.fg2.BLUESKY:
                 case P.fg2.TWITTER:
                 case P.fg2.MASTODON:
-                    n = (0, f.ED)(t, U.Nz);
+                    n = (0, C.ED)(t, U.Nz);
                     break;
                 case P.fg2.EBAY:
-                    n = (0, f.ub)(t, U.Nz);
+                    n = (0, C.ub)(t, U.Nz);
                     break;
                 case P.fg2.PAYPAL:
-                    n = (0, f.gZ)(t, U.Nz);
+                    n = (0, C.gZ)(t, U.Nz);
                     break;
                 case P.fg2.TIKTOK:
-                    n = (0, f.HU)(t, U.Nz)
+                    n = (0, C.HU)(t, U.Nz)
             }
             null !== s && (null == n && (n = []), n?.push((0, i.jsx)(_.Text, {
                 variant: "text-xs/normal",
@@ -271,37 +271,37 @@ function V(e) {
                 className: U.tJ,
                 children: n
             })
-        }(C), (P.txh.has(C.type) && (o = (0, i.jsx)(_.dOG, {
+        }(f), (P.txh.has(f.type) && (o = (0, i.jsx)(_.dOG, {
             label: M.intl.string(M.t["+KCMSi"]),
             checked: v,
             onChange: function(e) {
-                j(e), g.A.setFriendSync(C.type, C.id, e)
+                j(e), g.A.setFriendSync(f.type, f.id, e)
             }
-        })), P.ewM.has(C.type) && (m = (0, i.jsx)(_.dOG, {
+        })), P.ewM.has(f.type) && (m = (0, i.jsx)(_.dOG, {
             label: M.intl.format(M.t["6u6J0q"], {
                 platform: $.name
             }),
             checked: H,
             onChange: function(e) {
-                F(e), g.A.setShowActivity(C.type, C.id, e)
+                F(e), g.A.setShowActivity(f.type, f.id, e)
             }
-        })), h.A.get(C.type)?.hasMetadata === !0 && (A = (0, i.jsx)(_.dOG, {
+        })), h.A.get(f.type)?.hasMetadata === !0 && (A = (0, i.jsx)(_.dOG, {
             label: M.intl.string(M.t.FYKGsL),
             checked: 1 === w,
             onChange: function(e) {
                 let {
                     verified: t
-                } = C, n = +!!e;
+                } = f, n = +!!e;
                 if (e && !t) {
                     W(n), (0, E.A)({
-                        platformType: C.type,
+                        platformType: f.type,
                         location: "User Settings"
                     });
                     return
                 }
-                B(n), g.A.setMetadataVisibility(C.type, C.id, n)
+                B(n), g.A.setMetadataVisibility(f.type, f.id, n)
             },
-            disabled: 1 !== R || null == C.metadata
+            disabled: 1 !== R || null == f.metadata
         })), (0, i.jsxs)("div", {
             className: U.HZ,
             children: [(0, i.jsx)(_.dOG, {
@@ -310,32 +310,32 @@ function V(e) {
                 onChange: function(e) {
                     let {
                         verified: t
-                    } = C, n = +!!e;
+                    } = f, n = +!!e;
                     if (e && !t) {
                         z(n), (0, E.A)({
-                            platformType: C.type,
+                            platformType: f.type,
                             location: "User Settings"
                         });
                         return
                     }
-                    V(n), g.A.setVisibility(C.type, C.id, n)
+                    V(n), g.A.setVisibility(f.type, f.id, n)
                 }
             }), A, m, o]
         })), function() {
-            if (C.revoked || C.integrations.length > 0) return (0, i.jsx)(_.cGx, {})
-        }(), C.revoked ? (0, i.jsx)(r.po8, {
+            if (f.revoked || f.integrations.length > 0) return (0, i.jsx)(_.cGx, {})
+        }(), f.revoked ? (0, i.jsx)(r.po8, {
             messageType: r.YCn.INFO,
             children: M.intl.format(M.t["6C4lgA"], {
                 onReconnect: function() {
                     (0, E.A)({
-                        platformType: C.type,
+                        platformType: f.type,
                         location: "User Settings"
                     })
                 }
             })
-        }) : C.integrations.length > 0 ? (0, i.jsx)(_.D0$, {
+        }) : f.integrations.length > 0 ? (0, i.jsx)(_.D0$, {
             label: M.intl.string(M.t.fOe3fZ),
-            children: C.integrations.map(e => (0, i.jsx)(k, {
+            children: f.integrations.map(e => (0, i.jsx)(k, {
                 integration: e
             }, e.id))
         }) : void 0]

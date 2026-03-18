@@ -172,10 +172,10 @@ function F(e) {
             activityStatusIcon: null == e ? void 0 : (0, f.f)(e)
         }
     }, [K, z]), {
-        voiceChannel: Q
+        voiceChannel: J
     } = (0, g.A)({
         userId: n.id
-    }), J = (0, I.Ay)(Q), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === C || "sending" === C, ee = s.useCallback(e => {
+    }), Q = (0, I.Ay)(J), $ = (0, h.S31)(h.clD.ONLINE), Z = "success" === C || "sending" === C, ee = s.useCallback(e => {
         e.stopPropagation(), k || F()
     }, [F, k]), et = s.useCallback(async () => {
         if (Z) return;
@@ -220,7 +220,7 @@ function F(e) {
         er = P.intl.string(P.t.jYnGPG),
         ea = W !== h.clD.OFFLINE ? W : void 0,
         eo = K && null != q.text,
-        ec = K && null != Q && null != J;
+        ec = K && null != J && null != Q;
     return (0, i.jsxs)(h.DUT, {
         innerRef: o,
         tag: "li",
@@ -251,7 +251,7 @@ function F(e) {
                 children: [ec ? (0, i.jsx)(S.A, {
                     size: "custom",
                     color: $,
-                    channel: Q,
+                    channel: J,
                     className: w.RI
                 }) : null != X ? (0, i.jsx)(_.A, {
                     icon: X,
@@ -260,7 +260,7 @@ function F(e) {
                     variant: "text-xs/medium",
                     color: "text-status-online",
                     lineClamp: 1,
-                    children: ec ? J : q.text
+                    children: ec ? Q : q.text
                 })]
             })]
         }), "sending" === C && (0, i.jsx)("div", {

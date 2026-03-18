@@ -29,7 +29,7 @@ function g(e) {
         withHighlight: E = !1
     } = e, {
         newestAnalyticsLocation: S
-    } = (0, o.Ay)(), f = E ? r.wLn : a.$n;
+    } = (0, o.Ay)(), C = E ? r.wLn : a.$n;
     return (0, i.jsx)(c.A, {
         className: A,
         title: _.intl.string(_.t.Vgdusv),
@@ -39,7 +39,7 @@ function g(e) {
         forcedDivider: T,
         children: (0, i.jsxs)("div", {
             className: m.NC,
-            children: [(0, i.jsx)(f, {
+            children: [(0, i.jsx)(C, {
                 className: l()({
                     [m.yj]: E
                 }),

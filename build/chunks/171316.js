@@ -1,17 +1,17 @@
 /** chunk id: 171316 params = (module,exports,require) **/
 e.d(_, {
-    KK: () => O,
-    NZ: () => V,
+    KK: () => V,
+    NZ: () => O,
     gr: () => s,
     lH: () => D,
     uM: () => a,
-    xs: () => d
+    xs: () => N
 });
 var E = e(64700),
     A = e(311907),
     I = e(873298),
-    S = e(444802),
-    T = e(662502),
+    T = e(444802),
+    S = e(662502),
     n = e(93857),
     C = e(115063),
     R = e(899847),
@@ -19,8 +19,8 @@ var E = e(64700),
     l = e(704724),
     r = e(500470),
     u = e(834981),
-    N = e(835002);
-let d = () => {
+    d = e(835002);
+let N = () => {
         let t = (0, r.x)(),
             _ = n.p7.useControlledSetting(t?.id);
         return null == t ? null : {
@@ -45,24 +45,24 @@ let d = () => {
             goreContentFriendDm: E
         } = _ ?? {};
         return {
-            goreContentNonFriendDm: (0, l.ky)(e) ? e : (0, S.jj)({
+            goreContentNonFriendDm: (0, l.ky)(e) ? e : (0, T.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, l.ky)(E) ? E : (0, S.jj)({
+            goreContentFriendDm: (0, l.ky)(E) ? E : (0, T.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
             goreContentGuilds: I.TO.BLUR
         }
     },
-    O = () => {
+    V = () => {
         let t = (0, r.x)(),
             _ = n.qz.useControlledSetting(t?.id),
             e = n.yr.useControlledSetting(t?.id);
         return null != e ? e : !!_ || _
     };
 
-function V() {
+function O() {
     let t = (0, r.x)(),
         _ = n.up.useControlledSetting(t?.id),
         e = E.useMemo(() => (0, C.Lx)(_), [_]);
@@ -81,7 +81,7 @@ function D(t) {
             if (null != e) try {
                 await R.Ay.updateTeenConsents(e, _ ? [t] : [], _ ? [] : [t])
             } catch (t) {
-                T.A.showFailedToast(N.OB.GENERIC_ERROR)
+                S.A.showFailedToast(d.OB.GENERIC_ERROR)
             }
         }, [e, t]))
     }

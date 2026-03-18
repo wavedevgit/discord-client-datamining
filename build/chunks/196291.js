@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(207803),
     E = n(836602),
     S = n(954571),
-    f = n(927578),
-    C = n(884546),
+    C = n(927578),
+    f = n(884546),
     b = n(597551),
     N = n(230084),
     I = n(180020),
@@ -41,7 +41,7 @@ function M(e) {
         user: t,
         isVisible: n,
         shouldShow: M
-    } = e, U = f.Ay.isPremium(t), k = f.Ay.canUseAnimatedAvatar(t), {
+    } = e, U = C.Ay.isPremium(t), k = C.Ay.canUseAnimatedAvatar(t), {
         pendingAvatar: V,
         pendingThemeColors: w,
         tryItOutThemeColors: B,
@@ -90,7 +90,7 @@ function M(e) {
             type: v.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, i.jsx)(C.A, {
+            children: [(0, i.jsx)(f.A, {
                 stickyPreview: !1,
                 layoutClassName: G.th,
                 profilePreviewTitle: (0, i.jsxs)(i.Fragment, {

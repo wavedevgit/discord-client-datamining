@@ -1,7 +1,7 @@
 /** chunk id: 724591 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => M
+    A: () => L
 });
 var i = n(627968),
     s = n(64700),
@@ -16,60 +16,59 @@ var i = n(627968),
     A = n(932001),
     m = n(361158),
     p = n(976860),
-    g = n(871123),
-    _ = n(733391),
-    f = n(832163),
-    x = n(133015),
-    C = n(44724),
-    E = n(94484),
-    I = n(849134),
-    N = n(203548),
-    b = n(186111),
-    S = n(371794),
-    T = n(998218),
-    v = n(652793),
-    y = n(652215),
-    j = n(49999),
-    R = n(985018),
-    O = n(811094),
-    L = n(439706);
-let M = s.memo(function(e) {
+    g = n(733391),
+    _ = n(832163),
+    f = n(133015),
+    x = n(44724),
+    C = n(94484),
+    E = n(849134),
+    I = n(203548),
+    N = n(186111),
+    b = n(371794),
+    S = n(998218),
+    T = n(652793),
+    v = n(652215),
+    y = n(49999),
+    j = n(985018),
+    R = n(811094),
+    O = n(439706);
+let L = s.memo(function(e) {
     let {
         guild: t,
         selected: l
-    } = e, M = s.useRef(null), D = s.useRef(null), G = (0, d.useHasAnyModalOpen)(), U = (0, a.bG)([b.A], () => b.A.hasLayers()), P = (0, m.xr)(e => e.fullScreenLayers.length > 0), w = (0, x.n)({
+    } = e, L = s.useRef(null), M = s.useRef(null), D = (0, d.useHasAnyModalOpen)(), G = (0, a.bG)([N.A], () => N.A.hasLayers()), U = (0, m.xr)(e => e.fullScreenLayers.length > 0), P = (0, f.n)({
         location: "GameShopChannelRow"
     });
     s.useEffect(() => {
-        (0, _.Kh)(t.id)
+        (0, g.Kh)(t.id)
     }, [t.id]);
-    let k = (0, a.bG)([f.A], () => f.A.getAnnouncement(t.id)),
-        V = k?.state === "success" ? k.announcement : void 0,
-        [B, H] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, V?.id ?? ""),
-        F = B === o.M.GAME_SHOP_NEW_BADGE && null != V,
-        K = null == k || "loading" === k.state || F || t.id !== (0, g.zf)() || !w,
-        [W, Y] = (0, A.RF)(K ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
-        z = W === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
-        q = F || z,
-        X = s.useMemo(() => F ? H : Y, [F, H, Y]);
+    let w = (0, a.bG)([_.A], () => _.A.getAnnouncement(t.id)),
+        k = w?.state === "success" ? w.announcement : void 0,
+        [V, B] = (0, A.x_)(o.M.GAME_SHOP_NEW_BADGE, t.id, k?.id ?? ""),
+        H = V === o.M.GAME_SHOP_NEW_BADGE && null != k,
+        F = null == w || "loading" === w.state || H || !t.features.has(v.GuildFeatures.SOCIAL_LAYER_STOREFRONT) || !P,
+        [K, W] = (0, A.RF)(F ? null : o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT, 1),
+        Y = K === o.M.SLAYER_STOREFRONT_ORBS_REWARDS_ANNOUNCEMENT,
+        z = H || Y,
+        q = s.useMemo(() => H ? B : W, [H, B, W]);
     s.useEffect(() => {
-        l && q && X(j.i.INDIRECT_ACTION)
-    }, [X, l, q]);
-    let Q = s.useCallback(() => {
-            X(j.i.TAKE_ACTION);
-            let e = f.A.getStorefrontState(t.id)?.activePage ?? 0;
-            (0, p.pX)(y.BVt.CHANNELS_GAME_SHOP(t.id, e))
-        }, [t.id, X]),
+        l && z && q(y.i.INDIRECT_ACTION)
+    }, [q, l, z]);
+    let X = s.useCallback(() => {
+            q(y.i.TAKE_ACTION);
+            let e = _.A.getStorefrontState(t.id)?.activePage ?? 0;
+            (0, p.pX)(v.BVt.CHANNELS_GAME_SHOP(t.id, e))
+        }, [t.id, q]),
         J = s.useCallback(() => {
-            (0, C.X)({
+            (0, x.X)({
                 guildId: t.id,
-                forceFetch: F
+                forceFetch: H
             })
-        }, [t.id, F]),
-        $ = s.useCallback(() => {
-            X(j.i.USER_DISMISS)
-        }, [X]),
-        Z = s.useCallback(e => {
+        }, [t.id, H]),
+        Q = s.useCallback(() => {
+            q(y.i.USER_DISMISS)
+        }, [q]),
+        $ = s.useCallback(e => {
             null != t && (0, h.L3)(e, async () => {
                 let {
                     default: e
@@ -80,12 +79,12 @@ let M = s.memo(function(e) {
                 })
             })
         }, [t]),
-        ee = s.useCallback(() => {
-            M.current?.onMouseEnter(null, 500)
-        }, [M]),
-        et = s.useCallback((e, n, s, a) => (0, i.jsx)(v.G, {
+        Z = s.useCallback(() => {
+            L.current?.onMouseEnter(null, 500)
+        }, [L]),
+        ee = s.useCallback((e, n, s, a) => (0, i.jsx)(T.G, {
             innerClassName: e,
-            ref: D,
+            ref: M,
             id: `game-shop-${t.id}`,
             renderIcon: e => (0, i.jsx)(u.U1X, {
                 size: "custom",
@@ -96,59 +95,59 @@ let M = s.memo(function(e) {
             }),
             text: (0, i.jsx)(u.Text, {
                 variant: "text-md/medium",
-                className: r()(O.UU, n),
-                children: t?.id === (0, g.zf)() ? R.intl.string(R.t.xFQAPs) : R.intl.string(R.t.vyaWs7)
+                className: r()(R.UU, n),
+                children: j.intl.string(j.t.vyaWs7)
             }),
             selected: l,
             onMouseDown: J,
-            onClick: Q,
-            onContextMenu: Z,
+            onClick: X,
+            onContextMenu: $,
             trailing: (0, i.jsxs)(i.Fragment, {
-                children: [F && (0, i.jsx)(u.LpS, {
-                    text: R.intl.string(R.t.y2b7CA),
+                children: [H && (0, i.jsx)(u.LpS, {
+                    text: j.intl.string(j.t.y2b7CA),
                     color: c.A.colors.BACKGROUND_BRAND.css
                 }), a]
             })
-        }), [t.id, l, J, Q, Z, F]),
-        en = s.useMemo(() => {
-            if (null == V) return;
-            let e = null != V.assetId ? T.A.toURLSafe((0, S.YE)(V.applicationId, V.assetId, 128, "webp")) : void 0,
-                t = null != V.backgroundImageAssetId ? T.A.toURLSafe((0, S.YE)(V.applicationId, V.backgroundImageAssetId, 128, "webp")) : void 0;
+        }), [t.id, l, J, X, $, H]),
+        et = s.useMemo(() => {
+            if (null == k) return;
+            let e = null != k.assetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.assetId, 128, "webp")) : void 0,
+                t = null != k.backgroundImageAssetId ? S.A.toURLSafe((0, b.YE)(k.applicationId, k.backgroundImageAssetId, 128, "webp")) : void 0;
             if (null != e) return {
                 imageUrl: e,
                 backgroundImageUrl: t
             }
-        }, [V]),
-        ei = s.useCallback(() => {
-            if (F) {
-                let e = w ? R.intl.string(R.t["z/QEIP"]) : R.intl.formatToPlainString(R.t["9J4h1a"], {
-                    applicationName: V.applicationName
+        }, [k]),
+        en = s.useCallback(() => {
+            if (H) {
+                let e = P ? j.intl.string(j.t["z/QEIP"]) : j.intl.formatToPlainString(j.t["9J4h1a"], {
+                    applicationName: k.applicationName
                 });
-                return (0, i.jsx)(I.A, {
-                    onActionClick: Q,
+                return (0, i.jsx)(E.A, {
+                    onActionClick: X,
                     onActionMouseDown: J,
-                    onRender: ee,
-                    onRequestClose: $,
-                    targetElementRef: D,
-                    skuImageDetails: en,
-                    title: R.intl.string(R.t["7PvvS9"]),
+                    onRender: Z,
+                    onRequestClose: Q,
+                    targetElementRef: M,
+                    skuImageDetails: et,
+                    title: j.intl.string(j.t["7PvvS9"]),
                     body: e,
-                    overlayImageUrl: w ? L.A : void 0
+                    overlayImageUrl: P ? O.A : void 0
                 })
             }
-            return z ? (0, i.jsx)(E.A, {
-                onActionClick: Q,
+            return Y ? (0, i.jsx)(C.A, {
+                onActionClick: X,
                 onActionMouseDown: J,
-                onRender: ee,
-                onRequestClose: $,
-                targetElementRef: D,
-                applicationName: R.intl.string(R.t.Uu8hke)
+                onRender: Z,
+                onRequestClose: Q,
+                targetElementRef: M,
+                applicationName: j.intl.string(j.t.Uu8hke)
             }) : null
-        }, [F, w, V, Q, J, ee, $, en, z]);
+        }, [H, P, k, X, J, Z, Q, et, Y]);
     return (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(N.A, {
-            ref: M,
-            children: et
-        }), !G && !U && !P && ei()]
+        children: [(0, i.jsx)(I.A, {
+            ref: L,
+            children: ee
+        }), !D && !G && !U && en()]
     })
 })

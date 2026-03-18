@@ -51,8 +51,8 @@ var i = n(627968),
     z = n(724591),
     q = n(573956),
     X = n(141515),
-    Q = n(463938),
-    J = n(779881),
+    J = n(463938),
+    Q = n(779881),
     $ = n(998986),
     Z = n(732077),
     ee = n(689025),
@@ -428,7 +428,7 @@ class em extends s.PureComponent {
                         selected: a === ea.n.GUILD_SCHEDULED_EVENTS
                     }, ea.n.GUILD_SCHEDULED_EVENTS);
                 case ea.n.GUILD_ROLE_SUBSCRIPTIONS:
-                    return (0, i.jsx)(J.A, {
+                    return (0, i.jsx)(Q.A, {
                         guild: l,
                         selected: a === ec.VV.ROLE_SUBSCRIPTIONS
                     }, ea.n.GUILD_ROLE_SUBSCRIPTIONS);
@@ -443,7 +443,7 @@ class em extends s.PureComponent {
                         selected: a === ec.VV.GAME_SHOP
                     }, ea.n.GUILD_GAME_SHOP);
                 case ea.n.GUILD_NEW_MEMBER_ACTIONS_PROGRESS_BAR:
-                    return (0, i.jsx)(Q.j, {
+                    return (0, i.jsx)(J.j, {
                         guild: l
                     });
                 case ea.n.CHANNELS_AND_ROLES:

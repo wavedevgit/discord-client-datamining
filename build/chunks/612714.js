@@ -37,12 +37,12 @@ function A(e) {
         S = s.useCallback(() => {
             E()
         }, [E]),
-        f = s.useCallback(() => {
+        C = s.useCallback(() => {
             null == A.phone ? E({
                 onAddedPhone: a.A.enableSMS
             }) : a.A.enableSMS()
         }, [A, E]),
-        C = s.useCallback(() => {
+        f = s.useCallback(() => {
             (0, l.qfG)(e => (0, i.jsx)(o.default, {
                 ...e,
                 handleSubmit: a.A.disableSMS,
@@ -71,7 +71,7 @@ function A(e) {
         size: "sm",
         text: m.intl.string(m.t.KLWnit),
         loading: x,
-        onClick: C
+        onClick: f
     });
     else {
         let e = (0, c.B)(A);
@@ -81,7 +81,7 @@ function A(e) {
                 variant: "primary",
                 size: "sm",
                 text: e ?? m.intl.string(m.t.DZQe23),
-                onClick: f,
+                onClick: C,
                 loading: x,
                 disabled: null != e
             }), N ? (0, i.jsx)(l.Button, {

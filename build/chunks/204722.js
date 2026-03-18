@@ -66,7 +66,7 @@ let z = s.memo(function(e) {
             application: D,
             analyticsContext: H,
             inviteButtonRef: z,
-            accountLinkButtonRef: J,
+            accountLinkButtonRef: Q,
             startAuthorization: $,
             canStartAuthorization: Z,
             hasAlreadyLinked: ee,
@@ -143,7 +143,7 @@ let z = s.memo(function(e) {
         }, []), s.useEffect(() => {
             ee && (eb(!1), null != eI.current && (clearTimeout(eI.current), eI.current = null))
         }, [ee]);
-        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(Q, {
+        let eS = es?.guildId == null || null == D ? null : (0, i.jsx)(J, {
                 guildId: es.guildId,
                 applicationId: es.id
             }),
@@ -245,12 +245,12 @@ let z = s.memo(function(e) {
                     }, 9e4))
                 },
                 connectionApp: et,
-                ref: J
+                ref: Q
             }),
             eM = !Z || ee ? null : (0, i.jsx)(d.AM, {
                 title: F.intl.string(F.t.ULvRFd),
                 body: F.intl.string(F.t["HJJDr+"]),
-                targetElementRef: J,
+                targetElementRef: Q,
                 position: "top",
                 align: "center",
                 caretConfig: {
@@ -334,7 +334,7 @@ function X(e) {
     })
 }
 
-function Q(e) {
+function J(e) {
     let {
         applicationId: t,
         guildId: n

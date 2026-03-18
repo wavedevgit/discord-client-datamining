@@ -50,8 +50,8 @@ var i = n(627968),
     z = n(776781),
     q = n(233993),
     X = n(312006),
-    Q = n(446600),
-    J = n(96566),
+    J = n(446600),
+    Q = n(96566),
     $ = n(302884),
     Z = n(30108),
     ee = n(39938),
@@ -158,7 +158,7 @@ function em(e) {
         onSelect: n
     } = e, r = (0, S.Us)(), {
         canManageGuildEvent: c
-    } = (0, T.nr)(t), d = (0, l.bG)([Q.A], () => Q.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
+    } = (0, T.nr)(t), d = (0, l.bG)([J.A], () => J.A.getStageInstanceByChannel(t.id), [t.id]), u = (0, l.bG)([I.Ay], () => I.Ay.getGuildScheduledEvent(d?.guild_scheduled_event_id)), {
         suppress: m
     } = (0, R.A)(t), p = V.default.getId(), [g] = (0, er.A)(t), _ = X.Ay.isModerator(p, t.id), C = (0, z.Ni)(t.id), E = c(u), {
         parentAnalyticsLocation: N
@@ -286,7 +286,7 @@ let e_ = s.memo(function(e) {
     } = (0, v.A)(), I = (0, j.A)(t), {
         limit: N,
         reachedLimit: b
-    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, J.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
+    } = (0, y.A)(t), S = (0, l.bG)([K.default], () => K.default.getCurrentUser()), T = (0, l.bG)([B.Ay], () => (0, E.A)(B.Ay)), D = (0, l.bG)([F.A], () => F.A.getVoiceChannelId() === t.id, [t.id]), U = (0, l.bG)([m.A], () => m.A.getStreamParticipants(t.id)[0], [t.id]), P = (0, Q.qT)(t.id), V = N > 0, H = b && !P || null != U && U.user.id !== S?.id, W = (0, x.s)("AudioDeviceMenu", n, {
         entrypoint: ea.GK.CARET
     }), Y = s.useRef(null), q = s.useRef(null);
     if (null == S) return null;

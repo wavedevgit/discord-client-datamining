@@ -26,7 +26,7 @@ let u = e => {
         cardVariant: p,
         subtitleClassName: T,
         imageOverlayText: E
-    } = e, S = (0, o.Q)(p), f = null != E;
+    } = e, S = (0, o.Q)(p), C = null != E;
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)("div", {
             className: l()(c.Iv, c.Gz)
@@ -45,8 +45,8 @@ let u = e => {
             children: [(0, i.jsx)("img", {
                 src: u,
                 alt: "",
-                className: _ ? f ? c.ls : c.gu : ""
-            }), f ? (0, i.jsx)("div", {
+                className: _ ? C ? c.ls : c.gu : ""
+            }), C ? (0, i.jsx)("div", {
                 className: c.Yh,
                 children: (0, i.jsx)(r.Text, {
                     className: c.nj,

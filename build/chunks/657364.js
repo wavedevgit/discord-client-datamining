@@ -31,9 +31,9 @@ function E() {
         })),
         [E, S] = s.useState(!1);
     if (null == e) return null;
-    let f = (0, _.Oj)(t, e) || l,
-        C = null != t && a()().diff(a()(t.created_at), "days") < h.n83,
-        b = f && C,
+    let C = (0, _.Oj)(t, e) || l,
+        f = null != t && a()().diff(a()(t.created_at), "days") < h.n83,
+        b = C && f,
         N = e.isStaff(),
         I = !e.verified;
     return (0, i.jsxs)(A.h, {
@@ -69,7 +69,7 @@ function E() {
                 children: (0, i.jsx)(o.Button, {
                     variant: "primary",
                     text: p.intl.string(p.t.dmBSKo),
-                    disabled: f,
+                    disabled: C,
                     onClick: () => {
                         (e => {
                             let {

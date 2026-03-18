@@ -86,7 +86,7 @@ let T = e => {
             styles: p
         }), m = (0, r.bG)([d.A], () => d.A.useReducedMotion), {
             analyticsLocations: S
-        } = (0, u.Ay)(), f = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
+        } = (0, u.Ay)(), C = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
         return (0, i.jsxs)("div", {
             className: a()(p.perksContainer, t, {
                 [p.partiallyHidden]: n && !l,
@@ -101,7 +101,7 @@ let T = e => {
                 className: a()(p.perkCardContainer, {
                     [p.perkCardContainerExpanded]: l
                 }),
-                children: f.map(e => null != e && (0, i.jsx)(E, {
+                children: C.map(e => null != e && (0, i.jsx)(E, {
                     ...e
                 }, e.title))
             }), n && (0, i.jsxs)(i.Fragment, {

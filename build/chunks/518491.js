@@ -22,8 +22,8 @@ var s = n(503698),
     T = n(927578),
     E = n(40185),
     S = n(89366),
-    f = n(637073),
-    C = n(422936),
+    C = n(637073),
+    f = n(422936),
     b = n(234419),
     N = n(549996),
     I = n(371764),
@@ -77,7 +77,7 @@ let q = (e, t, s) => {
             discountedPrice: E,
             buttonVisibilityRef: S
         } = en(), {
-            analyticsLocations: f
+            analyticsLocations: C
         } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), j = (0, N.c)(a.C.MARKETING_PAGE_BANNER), R = null;
         null != j && "marketingPageBanner" === j.properties.properties.oneofKind ? R = (0, i.jsx)(I.x, {
             componentId: j.id,
@@ -88,7 +88,7 @@ let q = (e, t, s) => {
         let O = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()),
             M = null != O && O.status === Y.Dmq.CANCELED && null != p,
             k = (0, b.V)(),
-            K = (0, C.O)(),
+            K = (0, f.O)(),
             Z = (0, P.U9)(K, F.pe.TIER_2) ? F.pe.TIER_2 : void 0,
             J = null != O && O.status !== Y.Dmq.ACCOUNT_HOLD && O.hasAnyPremiumNitro,
             Q = (0, A.A)().isFractionalPremiumActive && !J && null == R && !M,
@@ -136,7 +136,7 @@ let q = (e, t, s) => {
                         icon: c.tvc,
                         size: "md",
                         text: z.intl.string(z.t.zrCzVB),
-                        onClick: () => q(f, O, U.g.CONFIRM_DISCOUNT)
+                        onClick: () => q(C, O, U.g.CONFIRM_DISCOUNT)
                     }), (0, i.jsx)(D.A, {
                         variant: Q || M ? "secondary" : "expressive",
                         size: "md",
@@ -157,7 +157,7 @@ let q = (e, t, s) => {
             buttonVisibilityRef: u
         } = en(), {
             analyticsLocations: g
-        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), h = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()), p = null != h && h.status === Y.Dmq.CANCELED && null != a, E = (0, b.V)(), S = (0, C.O)(), f = (0, P.U9)(S, F.pe.TIER_2) ? F.pe.TIER_2 : void 0, N = null != h && h.status !== Y.Dmq.ACCOUNT_HOLD && h.hasAnyPremiumNitro, I = (0, A.A)().isFractionalPremiumActive && !N && !p;
+        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), h = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()), p = null != h && h.status === Y.Dmq.CANCELED && null != a, E = (0, b.V)(), S = (0, f.O)(), C = (0, P.U9)(S, F.pe.TIER_2) ? F.pe.TIER_2 : void 0, N = null != h && h.status !== Y.Dmq.ACCOUNT_HOLD && h.hasAnyPremiumNitro, I = (0, A.A)().isFractionalPremiumActive && !N && !p;
         return (0, i.jsxs)("div", {
             className: l()(X.kL, t),
             "data-testid": "subscriber-nitro-home-hero-header",
@@ -192,7 +192,7 @@ let q = (e, t, s) => {
                     children: [I && (0, i.jsx)(O.A, {
                         color: d.XD.BRAND,
                         className: l()(X.x6, X.xF),
-                        subscriptionTier: E?.subscription_trial?.sku_id ?? f
+                        subscriptionTier: E?.subscription_trial?.sku_id ?? C
                     }), p && (0, i.jsxs)("div", {
                         className: X.Cg,
                         children: [(0, i.jsx)(c.Button, {
@@ -309,7 +309,7 @@ let q = (e, t, s) => {
             discountedPrice: r
         } = e, {
             analyticsLocations: d
-        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), u = (0, f.d)(), x = (0, E.cg)(), h = (0, S.QQ)(), T = z.intl.string(z.t.qYKftX), C = (0, j.m)(), b = (0, i.jsx)(Q, {
+        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), u = (0, C.d)(), x = (0, E.cg)(), h = (0, S.QQ)(), T = z.intl.string(z.t.qYKftX), f = (0, j.m)(), b = (0, i.jsx)(Q, {
             className: t
         }), N = z.intl.string(z.t.ifwQZb), {
             fractionalState: I,
@@ -317,7 +317,7 @@ let q = (e, t, s) => {
         } = (0, A.A)(), y = (0, g.Ay)(v, g.yE.CREDITS_ENDS_IN);
         u || x ? b = (0, i.jsx)(ee, {
             isEligibleForBogoPromotion: x
-        }) : C && (T = z.intl.string(z.t.qYKftX), b = (0, i.jsx)($, {}));
+        }) : f && (T = z.intl.string(z.t.qYKftX), b = (0, i.jsx)($, {}));
         let R = null;
         if (I === F.xc.NONE || u) R = n ? (0, i.jsx)(k.A, {
             enablePremiumBrandRefresh: !0,
@@ -382,7 +382,7 @@ let q = (e, t, s) => {
                     className: t,
                     isEligibleForBogoPromotion: x,
                     isInReverseTrial: u,
-                    shouldShowReferralProgressBar: C
+                    shouldShowReferralProgressBar: f
                 }) : b
             })
         })

@@ -52,9 +52,9 @@ function E(e) {
         title: x.intl.string(x.t.Cq98yL),
         children: [(0, i.jsx)(b, {}), (0, i.jsx)(a.cGx, {
             gap: 32
-        }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
-            gap: 32
         }), (0, i.jsx)(C, {}), (0, i.jsx)(a.cGx, {
+            gap: 32
+        }), (0, i.jsx)(f, {}), (0, i.jsx)(a.cGx, {
             gap: 32
         }), (0, i.jsx)(N, {})]
     })
@@ -79,7 +79,7 @@ function S(e) {
     })
 }
 
-function f() {
+function C() {
     let e = _._Z.useSetting(),
         t = (0, r.i)("UserSettingsActivityPrivacy"),
         n = s.useMemo(() => t ? [{
@@ -116,7 +116,7 @@ function f() {
     })
 }
 
-function C() {
+function f() {
     let e = _.e.useSetting(),
         t = _.UM.useSetting();
     return (0, i.jsx)(c.x, {

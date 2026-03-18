@@ -4,7 +4,7 @@ n.d(t, {
     D1: () => g,
     E2: () => I,
     FW: () => h,
-    Hn: () => C,
+    Hn: () => f,
     Hr: () => a,
     Qx: () => b,
     Tf: () => E,
@@ -15,7 +15,7 @@ n.d(t, {
     gN: () => x,
     hl: () => s,
     i4: () => o,
-    sN: () => f,
+    sN: () => C,
     t_: () => d,
     v_: () => T,
     zC: () => u,
@@ -118,11 +118,11 @@ function S(e, t) {
     return p(e, i.Z6.TOGGLE, t)
 }
 
-function f(e, t) {
+function C(e, t) {
     return p(e, i.Z6.SLIDER, t)
 }
 
-function C(e, t) {
+function f(e, t) {
     return p(e, i.Z6.SELECT, t)
 }
 

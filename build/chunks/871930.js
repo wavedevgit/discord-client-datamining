@@ -7,8 +7,8 @@ var E = e(627968);
 e(64700);
 var A = e(503698),
     I = e.n(A),
-    S = e(397927),
-    T = e(195043),
+    T = e(397927),
+    S = e(195043),
     n = e(606360);
 
 function C(t) {
@@ -16,25 +16,25 @@ function C(t) {
         header: _,
         description: e,
         relatedId: A,
-        disabled: T
+        disabled: S
     } = t;
     return (0, E.jsxs)("div", {
         className: n.wx,
-        children: [(0, E.jsx)(S.Heading, {
+        children: [(0, E.jsx)(T.Heading, {
             variant: "text-md/medium",
             color: "text-strong",
             children: (0, E.jsx)("label", {
                 htmlFor: A,
                 className: I()(n.DD, {
-                    [n.r9]: T
+                    [n.r9]: S
                 }),
                 children: _
             })
-        }), (0, E.jsx)(S.Text, {
+        }), (0, E.jsx)(T.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             className: I()(n.h_, {
-                [n.r9]: T
+                [n.r9]: S
             }),
             children: e
         })]
@@ -58,7 +58,7 @@ function i(t) {
         className: e,
         children: A
     } = t;
-    return (0, E.jsx)(T.x, {
+    return (0, E.jsx)(S.x, {
         setting: _,
         children: (0, E.jsx)("div", {
             className: I()(n.kL, e),

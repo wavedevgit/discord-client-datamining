@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(166403),
     E = n(730784),
     S = n(398523),
-    f = n(612669),
-    C = n(161319),
+    C = n(612669),
+    f = n(161319),
     b = n(920050),
     N = n(9458),
     I = n(788868),
@@ -40,7 +40,7 @@ var i = n(627968),
 function U() {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, f.O9)(), U = (0, E.R)({
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, C.O9)(), U = (0, E.R)({
         location: "PremiumWhatsNewSection"
     }), k = S.A.useExperiment({
         location: "PremiumWhatsNewSection"
@@ -131,7 +131,7 @@ function U() {
                 backgroundAssetUrl: G.A,
                 progress: W.getDate() / K,
                 ctaText: y.intl.string(y.t.w7s5Qr),
-                onCtaClick: () => (0, C.uE)({
+                onCtaClick: () => (0, f.uE)({
                     analyticsLocations: e
                 }),
                 blurTint: "#2E213D"

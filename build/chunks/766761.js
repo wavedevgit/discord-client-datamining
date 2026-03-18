@@ -7,10 +7,10 @@ var i = n(311907),
     l = n(419954),
     a = n(287809),
     r = n(780964),
-    o = n(119762),
+    o = n(102255),
     d = n(985018);
 let c = (0, l.E2)(r.X.SESSIONS_OTHER_SESSIONS_SETTING, {
-    Component: o.Af,
+    Component: o.AF,
     useSearchTerms: () => [d.intl.string(d.t["+1h0k/"])],
     usePredicate: () => {
         let {

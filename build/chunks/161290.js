@@ -22,8 +22,8 @@ var s = n(284009),
     T = n(593629),
     E = n(164599),
     S = n(63675),
-    f = n(617514),
-    C = n(546849),
+    C = n(617514),
+    f = n(546849),
     b = n(101058),
     N = n(207803),
     I = n(836602),
@@ -81,13 +81,13 @@ function L() {
             pendingGlobalName: s,
             onGlobalNameChange: r.U6,
             user: e
-        }), (0, i.jsx)(C.A, {
+        }), (0, i.jsx)(f.A, {
             sectionTitle: O.intl.string(O.t["+T3RI/"]),
             errors: w.pronouns,
             onPronounsChange: N.Oz,
             pendingPronouns: G,
             currentPronouns: t?.pronouns ?? ""
-        }, "pronouns"), (0, i.jsx)(f.A, {}), (0, i.jsx)(g.A, {
+        }, "pronouns"), (0, i.jsx)(C.A, {}), (0, i.jsx)(g.A, {
             onAvatarChange: r.zq,
             showRemoveAvatarButton: Y,
             errors: w.avatar,

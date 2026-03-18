@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(985018),
     E = n(696952),
     S = n(130324),
-    f = n(966040);
-let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
+    C = n(966040);
+let f = (0, c.t_)(_.X.OVERLAY_PANEL, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         decoration: {
             type: u.t9.STRONGLY_DISCOURAGED_CUSTOM,
@@ -54,7 +54,7 @@ let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
                             })
                         }), (0, i.jsx)("div", {
                             children: (0, i.jsx)("img", {
-                                src: f.A,
+                                src: C.A,
                                 alt: T.intl.string(T.t.mdXZh1),
                                 className: E.lh
                             })
@@ -79,5 +79,5 @@ let C = (0, c.t_)(_.X.OVERLAY_PANEL, {
         useTitle: () => T.intl.string(T.t["9cb1Uz"]),
         icon: l.WindowTopOutlineIcon,
         usePredicate: m.b_,
-        buildLayout: () => [C]
+        buildLayout: () => [f]
     })

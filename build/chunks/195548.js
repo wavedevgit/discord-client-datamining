@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(871930),
     E = n(320134),
     S = n(433809),
-    f = n(428854),
-    C = n(259274),
+    C = n(428854),
+    f = n(259274),
     b = n(531525),
     N = n(985018);
 
@@ -42,7 +42,7 @@ function v() {
             helpArticle: (0, o.aW)()
         }),
         webSetting: b.H.PRIVACY_AND_SAFETY_VOICE_SECURITY,
-        children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(C.A, {})]
+        children: [(0, i.jsx)(p.A, {}), (0, i.jsx)(f.A, {})]
     })
 }
 
@@ -70,8 +70,8 @@ function R() {
         (0, l.Q)(), (0, c.s)()
     }), (0, i.jsx)(u.R, {
         header: N.intl.string(N.t.OAuOHD),
-        notice: (0, i.jsx)(f.A, {
-            page: f.R.DATA_AND_PRIVACY
+        notice: (0, i.jsx)(C.A, {
+            page: C.R.DATA_AND_PRIVACY
         }),
         children: (0, i.jsxs)(s.lVW, {
             children: [(0, i.jsx)(y, {}), (0, i.jsx)(I, {}), (0, i.jsx)(j, {}), (0, i.jsx)(v, {})]

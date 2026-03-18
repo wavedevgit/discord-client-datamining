@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(769015),
     E = n(723588),
     S = n(608699),
-    f = n(714308),
-    C = n(478407),
+    C = n(714308),
+    f = n(478407),
     b = n(780964),
     N = n(841329),
     I = n(351906),
@@ -119,7 +119,7 @@ let q = function() {
         onGoBack: () => w.A.setState({
             subsection: null
         })
-    }) : U === F.PZ ? (0, i.jsx)(C.A, {
+    }) : U === F.PZ ? (0, i.jsx)(f.A, {
         onGoBack: () => w.A.setState({
             subsection: null
         })
@@ -157,7 +157,7 @@ let q = function() {
                     })
                 })]
             }), W > 0 && (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(f.A, {
+                children: [(0, i.jsx)(Z, {}), (0, i.jsx)(C.A, {
                     count: W,
                     onClickManageSubscription: () => {
                         w.A.setState({

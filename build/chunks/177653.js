@@ -1,6 +1,6 @@
 /** chunk id: 177653 params = (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => C
 });
 var i = n(627968);
 n(64700);
@@ -34,10 +34,10 @@ function S(e) {
         [m, A] = (0, o.yK)([u.A], () => [u.A.get(s), null != r ? u.A.get(r.planId) : null]);
     if (null == m || g.Ay.getInterval(s).intervalType !== x.WT.MONTH) return null;
     let S = null != A ? A.skuId : null,
-        f = m.skuId === S,
-        C = g.Ay.getDisplayName(s);
+        C = m.skuId === S,
+        f = g.Ay.getDisplayName(s);
     if (_) t = T.intl.string(p.default["5asczk"]);
-    else if (f && null != r) {
+    else if (C && null != r) {
         let e;
         e = new Date(r.status === h.Dmq.PAUSED && null != r.pauseEndsAt ? r.pauseEndsAt : r.currentPeriodEnd);
         let n = (0, g._e)(e, c);
@@ -45,7 +45,7 @@ function S(e) {
             date: n ?? 0
         })
     } else t = T.intl.formatToPlainString(T.t.eNXZ5O, {
-        planName: C
+        planName: f
     });
     let b = n.hasFreePremium() || null != r && r.isPurchasedExternally;
     return (0, i.jsxs)("div", {
@@ -66,7 +66,7 @@ function S(e) {
             children: [(0, i.jsx)(d.Heading, {
                 variant: "heading-md/semibold",
                 children: T.intl.format(T.t.LzobT9, {
-                    planName: C
+                    planName: f
                 })
             }), !b && (0, i.jsx)(d.Heading, {
                 className: E.gj,
@@ -83,7 +83,7 @@ function S(e) {
         })]
     })
 }
-let f = function(e) {
+let C = function(e) {
     let {
         className: t,
         entitlements: n
@@ -96,7 +96,7 @@ let f = function(e) {
         return null != t && null != n && !i
     }).groupBy(e => e.subscriptionPlanId).value(), a = (0, o.yK)([m.A], () => m.A.getUnactivatedFractionalPremiumUnits()), u = (0, o.bG)([_.A], () => _.A.getPremiumSubscription()), g = (0, o.bG)([_.A], () => null == _.A.getPremiumTypeSubscription()), h = Object.keys(s).some(e => e === x.gD.PREMIUM_MONTH_TIER_1), p = (0, o.bG)([c.default], () => c.default.getCurrentUser());
     if (null == p) return null;
-    let f = p.isPremiumWithPremiumGroup();
+    let C = p.isPremiumWithPremiumGroup();
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)("div", {
             className: l()(t, E.xF, E.J_),
@@ -106,7 +106,7 @@ let f = function(e) {
                 userPremiumSubscription: u,
                 user: p,
                 unconsumedFractionalPremiumUnits: a,
-                hasPremiumGroup: f
+                hasPremiumGroup: C
             }, e))
         }), h && g && (0, i.jsxs)("div", {
             children: [(0, i.jsx)(d.Text, {

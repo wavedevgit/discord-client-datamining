@@ -22,8 +22,8 @@ var i = n(627968),
     T = n(73825),
     E = n(974544),
     S = n(736653),
-    f = n(793574),
-    C = n(688810),
+    C = n(793574),
+    f = n(688810),
     b = n(86379),
     N = n(531260),
     I = n(160946),
@@ -314,7 +314,7 @@ let ex = function() {
     let e = (0, b.H)(),
         {
             analyticsLocations: t
-        } = (0, C.Ay)(f.A.PREMIUM_SETTINGS),
+        } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),
         n = (0, u.bG)([P.default], () => P.default.getCurrentUser()),
         l = (0, u.bG)([G.A], () => G.A.getPremiumTypeSubscription()),
         a = (0, u.bG)([G.A], () => G.A.hasFetchedSubscriptions()),
@@ -349,7 +349,7 @@ let ex = function() {
     });
     if (!k && !V && !w || o) return (0, i.jsx)(x.y$y, {});
     let B = !!l?.hasActiveTrial;
-    return (0, i.jsx)(C.f5, {
+    return (0, i.jsx)(f.f5, {
         value: t,
         children: (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {

@@ -164,7 +164,7 @@ function R(e) {
                     }(e, R, j, O);
                     if (null != s) return s
                 }, [e, t, T, G, z, k, F, j, R, O]),
-                [X, Q] = (0, E.ru)(null != q);
+                [X, J] = (0, E.ru)(null != q);
             return i.useMemo(() => {
                 if (null != t) {
                     if (T) return {
@@ -202,11 +202,11 @@ function R(e) {
                     if (X === r.M.GUILD_POWERUP_NOTIFICATION && null != q) return {
                         ...q,
                         markAsDismissed: e => {
-                            Q(e), q.markAsDismissed(e)
+                            J(e), q.markAsDismissed(e)
                         }
                     }
                 }
-            }, [t, T, C, q, X, Q, G, D, L, k, U, w, F, V, H, z, Y])
+            }, [t, T, C, q, X, J, G, D, L, k, U, w, F, V, H, z, Y])
         }(e, n ?? void 0);
     if (null !== n && (null != m || j || null != R)) return {
         indicator: m,

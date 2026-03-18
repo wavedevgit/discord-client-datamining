@@ -55,8 +55,8 @@ let k = s.memo(e => {
             userIds: t
         } = e;
         return t.has(x)
-    }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, a.yK)([T.A], () => [T.A.getStreamForUser(x, l.getGuildId()), T.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, a.bG)([O.A], () => O.A.getSessionById(r)), X = D.Ay.useName(s), Q = (0, a.bG)([M.A], () => M.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
-        enableHangStatus: J
+    }), [x, l.id]), F = (0, h.A)(null != H ? [H.applicationId] : []), K = (0, N.Ay)(x, l.guild_id)[0], W = (0, u.YY)(K?.application_id).data ?? void 0, [Y, z] = (0, a.yK)([T.A], () => [T.A.getStreamForUser(x, l.getGuildId()), T.A.getActiveStreamForUser(x, l.getGuildId())], [l, x]), q = (0, a.bG)([O.A], () => O.A.getSessionById(r)), X = D.Ay.useName(s), J = (0, a.bG)([M.A], () => M.A.getVoicePlatformForChannel(l.id, x), [l.id, x]), {
+        enableHangStatus: Q
     } = (0, g.$j)({
         guildId: l.guild_id,
         location: "VoiceUsers"
@@ -68,7 +68,7 @@ let k = s.memo(e => {
         location: "VoiceUsers"
     }, {
         autoTrackExposure: K?.session_id != null
-    }), es = en || J;
+    }), es = en || Q;
     return (0, i.jsx)(E.A, {
         shakeLocation: P.uD.VOICE_USER,
         isShaking: k,
@@ -78,7 +78,7 @@ let k = s.memo(e => {
             canDrag: e.canDrag && !V,
             disconnected: et,
             otherClientSessionType: q?.clientInfo?.os,
-            voicePlatform: Q,
+            voicePlatform: J,
             localMute: S && !C,
             localVideoDisabled: R,
             mute: t || S,
@@ -93,7 +93,7 @@ let k = s.memo(e => {
             isSelf: C,
             requestToStreamActivity: ei ? K : void 0,
             application: es && K?.session_id != null ? W : void 0,
-            showHangStatus: $ && J && (C || null != ee),
+            showHangStatus: $ && Q && (C || null != ee),
             hangStatusActivity: C ? Z : ee
         })
     })

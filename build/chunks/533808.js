@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(849918),
     E = n(219887),
     S = n(985018),
-    f = n(670566);
-let C = "isDefault";
+    C = n(670566);
+let f = "isDefault";
 class b extends s.PureComponent {
     static defaultProps = {
         onDelete: () => {},
@@ -120,13 +120,13 @@ class b extends s.PureComponent {
             removeError: t
         } = this.props;
         return null == e || e.hasCardError() || e.hasAddressError() ? null != t ? (0, i.jsx)("div", {
-            className: f.zc,
+            className: C.zc,
             children: (0, i.jsx)(u.wx6, {
                 type: "critical",
                 children: t.message
             })
         }) : null : (0, i.jsx)("div", {
-            className: f.zc,
+            className: C.zc,
             children: (0, i.jsx)(u.wx6, {
                 type: "critical",
                 children: e.message
@@ -141,9 +141,9 @@ class b extends s.PureComponent {
             paymentSource: n
         } = this.props, s = (0, g.g)(n);
         return (0, i.jsxs)("div", {
-            className: f.yV,
+            className: C.yV,
             children: [(0, i.jsx)(u.Text, {
-                className: f.bV,
+                className: C.bV,
                 variant: "text-sm/normal",
                 children: S.intl.string(S.t["50Auo2"])
             }), (0, i.jsx)(p.Ay, {
@@ -163,9 +163,9 @@ class b extends s.PureComponent {
         if (null == e || null == t) return null;
         let n = `${e.toString().padStart(2,"0")}/${t.toString().padStart(2,"0").slice(-2)}`;
         return (0, i.jsxs)("div", {
-            className: f.yV,
+            className: C.yV,
             children: [(0, i.jsx)(u.Text, {
-                className: f.bV,
+                className: C.bV,
                 variant: "text-sm/normal",
                 children: S.intl.string(S.t.Fo2YP7)
             }), (0, i.jsx)(T.A, {
@@ -185,18 +185,18 @@ class b extends s.PureComponent {
             expirationValid: l
         } = this.state;
         return (0, i.jsx)("div", {
-            className: f.AU,
+            className: C.AU,
             children: (0, i.jsxs)(u.BJc, {
                 direction: "horizontal",
                 justify: "space-between",
                 children: [(0, i.jsx)(c.e2v, {
                     children: (0, i.jsxs)("div", {
-                        className: f.lH,
+                        className: C.lH,
                         children: [n ? (0, i.jsx)(d.m_, {
                             text: S.intl.string(S.t["v6/z28"]),
                             children: (0, i.jsx)("div", {
                                 "aria-hidden": !0,
-                                className: f.dm
+                                className: C.dm
                             })
                         }) : null, (0, i.jsx)(c.$nd, {
                             type: "button",
@@ -240,12 +240,12 @@ class b extends s.PureComponent {
         } = this.state, o = e instanceof A.SJ;
         return (0, i.jsx)(u.ZpM, {
             editable: !0,
-            className: a()(f.Nr, s),
+            className: a()(C.Nr, s),
             children: (0, i.jsxs)("form", {
                 onSubmit: this.handleSubmit,
                 noValidate: !0,
                 children: [this.renderError(), (0, i.jsxs)("div", {
-                    className: f.__invalid_paymentSection,
+                    className: C.__invalid_paymentSection,
                     children: [(0, i.jsx)(E.A, {
                         paymentSource: e,
                         isDefault: t,
@@ -254,20 +254,20 @@ class b extends s.PureComponent {
                         showLabels: !0,
                         showPaymentSourceIcon: !0
                     }), e.invalid ? (0, i.jsx)("div", {
-                        className: f.Um,
+                        className: C.Um,
                         children: S.intl.string(S.t["3R0U0b"])
                     }) : null, (0, i.jsx)("div", {
-                        className: f.Sv,
+                        className: C.Sv,
                         children: o ? S.intl.format(S.t.w9WkBl, {
                             paypalURL: "https://www.paypal.com"
                         }) : S.intl.string(S.t.VXndyr)
                     })]
                 }), this.renderCardExpirationSection(), this.renderBillingAddressSection(), (0, i.jsx)("div", {
-                    className: f.D5,
+                    className: C.D5,
                     children: (0, i.jsx)(u.Checkbox, {
-                        value: C,
+                        value: f,
                         checked: r,
-                        onChange: e => this.handleFieldChange(e, C),
+                        onChange: e => this.handleFieldChange(e, f),
                         label: S.intl.string(S.t.nag9Og),
                         labelType: "secondary"
                     })

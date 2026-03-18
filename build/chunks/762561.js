@@ -55,12 +55,12 @@ function V(e) {
     }), Y = s.useRef(null), {
         isHoveringOrFocusing: z,
         isHovering: q
-    } = (0, h.A)(Y), X = (0, x.fC)(), Q = (0, o.zhh)({
+    } = (0, h.A)(Y), X = (0, x.fC)(), J = (0, o.zhh)({
         opacity: +(null != X.interactionType),
         config: {
             duration: 150
         }
-    }), J = e => {
+    }), Q = e => {
         (0, C.openUserProfileModal)({
             sourceAnalyticsLocations: K,
             hideRestrictedProfile: !0,
@@ -92,7 +92,7 @@ function V(e) {
                     themeOverride: F,
                     privateBanner: H?.private === !0 ? (0, i.jsx)(b.A, {}) : void 0,
                     children: [null != X.interactionType && (0, i.jsx)(l.animated.div, {
-                        style: Q,
+                        style: J,
                         className: k.tB
                     }), (0, i.jsxs)(r.d_W, {
                         children: [(0, i.jsxs)(y.A, {
@@ -122,7 +122,7 @@ function V(e) {
                                 displayProfile: H,
                                 channelId: g.id,
                                 themeType: P.d.SIDEBAR,
-                                onOpenProfile: V ? void 0 : J
+                                onOpenProfile: V ? void 0 : Q
                             }), (0, i.jsx)(L.A, {
                                 user: t,
                                 channelId: g.id,
@@ -135,13 +135,13 @@ function V(e) {
                             displayProfile: H,
                             channel: g,
                             isHoveringOrFocusing: null == X.interactionType && z,
-                            onOpenProfile: V ? void 0 : J
+                            onOpenProfile: V ? void 0 : Q
                         }), $ && (0, i.jsx)("div", {
                             className: k.sJ,
                             children: (0, i.jsx)(S.A, {
                                 user: t,
                                 widgets: H.widgets,
-                                onOpenUserProfileModal: J
+                                onOpenUserProfileModal: Q
                             })
                         }), null != et && et.length > 0 && (0, i.jsx)("div", {
                             className: k.vS,
@@ -151,7 +151,7 @@ function V(e) {
                                 wishlistId: Z,
                                 title: w.intl.string(w.t["7lZ31J"]),
                                 onClick: () => {
-                                    J?.({
+                                    Q?.({
                                         tabSection: U.RP.WISHLIST
                                     })
                                 }
@@ -161,7 +161,7 @@ function V(e) {
                             channelId: g.id
                         })]
                     }), !V && (0, i.jsx)(B, {
-                        handleOpenProfile: J,
+                        handleOpenProfile: Q,
                         analyticsLocations: K,
                         context: W
                     }), H?.profileEffect != null && (0, i.jsx)(A.A, {

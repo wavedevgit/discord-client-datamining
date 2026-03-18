@@ -51,8 +51,8 @@ var i = n(627968),
     z = n(717965),
     q = n(696842),
     X = n(895903),
-    Q = n(542372),
-    J = n(533233),
+    J = n(542372),
+    Q = n(533233),
     $ = n(652215),
     Z = n(806931),
     ee = n(985018),
@@ -72,7 +72,7 @@ function es(e) {
         selectedParticipant: c
     } = e, {
         parentAnalyticsLocation: d
-    } = (0, p.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => r?.window ?? window, [r]), N = (0, Q.A)({
+    } = (0, p.Ay)(), h = t.getGuildId(), A = (0, o.bG)([G.A], () => G.A.getMostRecentSelectedTextChannelId(h), [h]), m = O.default.getId(), f = !(0, o.bG)([g.A], () => g.A.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || P.Ay.supportsFeature($.BYE.POPOUT_WINDOWS)), x = null != c && c.type !== Z.lp.ACTIVITY && c.user.id !== m, E = s.useMemo(() => r?.window ?? window, [r]), N = (0, J.A)({
         channel: t,
         appContext: n,
         popoutOpen: l,
@@ -151,7 +151,7 @@ function er(e) {
         } = (0, H.Ay)();
     (0, H.vI)(n);
     let P = (0, o.bG)([L.A], () => L.A.getToastsEnabled(n.id)),
-        B = (0, J.A)(n) ? null != y ? "84px" : "124px" : null != y ? "0px" : "48px";
+        B = (0, Q.A)(n) ? null != y ? "84px" : "124px" : null != y ? "0px" : "48px";
     return U && (B = "0px"), t = U ? (0, i.jsx)(X.A, {
         channel: n,
         onContinueClick: () => {

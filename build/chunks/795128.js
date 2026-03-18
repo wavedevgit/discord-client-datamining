@@ -18,9 +18,9 @@ function m(e) {
         currentUser: t,
         userTeamsLoading: n,
         userTeams: m
-    } = e, [g, A] = s.useState(!1), [x, h] = s.useState(!1), [p, T] = s.useState(!1), [E, S] = s.useState(!1), [f, C] = s.useState(null), b = s.useCallback(e => {
+    } = e, [g, A] = s.useState(!1), [x, h] = s.useState(!1), [p, T] = s.useState(!1), [E, S] = s.useState(!1), [C, f] = s.useState(null), b = s.useCallback(e => {
         if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
-        S(!0), C(e.body.message)
+        S(!0), f(e.body.message)
     }, []), N = s.useCallback((e, t) => (0, a.U_)(e, t).then(u.tEg, b), [b]), I = s.useCallback(function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
             n = o.A.getGuildsArray().filter(e => e.ownerId === t.id);
@@ -43,12 +43,12 @@ function m(e) {
             shouldRenderOwnedGuildsModal: x,
             shouldRenderDeleteAccountConfirmModal: p,
             shouldRenderDisableAccountErrorModal: E,
-            disableAccountErrorMessage: f,
+            disableAccountErrorMessage: C,
             onOwnedTeamsWarningModalClose: () => A(!1),
             onOwnedGuildsWarningModalClose: () => h(!1),
             onDeleteAccountConfirmModalClose: () => T(!1),
             onDisableAccountErrorModalClose: () => {
-                S(!1), C(null)
+                S(!1), f(null)
             }
         })]
     })

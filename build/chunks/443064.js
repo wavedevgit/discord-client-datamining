@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(557722),
     E = n(207560),
     S = n(790114),
-    f = n(836602),
-    C = n(262),
+    C = n(836602),
+    f = n(262),
     b = n(950191),
     N = n(854627),
     I = n(542535),
@@ -452,7 +452,7 @@ function q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, C.A)(n), l = L.jP.useSetting(), a = (0, r.bG)([f.A], () => f.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, b.Ay)(t.id), s = (0, f.A)(n), l = L.jP.useSetting(), a = (0, r.bG)([C.A], () => C.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: _
     } = (0, N.A)({

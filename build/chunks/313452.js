@@ -194,11 +194,11 @@ function D(e) {
                 })
             })), e
         }, [n, l]),
-        Q = 0 === n.length && 0 === l.length && H,
-        J = 0 === n.length && 0 === l.length && !F && B,
+        J = 0 === n.length && 0 === l.length && H,
+        Q = 0 === n.length && 0 === l.length && !F && B,
         $ = s.useMemo(() => {
             let e = [];
-            return J ? e.push(A()) : Q ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => m([e], !0))), e.push(...n.map(e => m([e], !1)))) : o().each(L, t => {
+            return Q ? e.push(A()) : J ? e.push((0, i.jsx)(M, {}, "empty-state")) : G ? (e.push(...l.map(e => m([e], !0))), e.push(...n.map(e => m([e], !1)))) : o().each(L, t => {
                 0 !== X[t].length && (e.push((0, i.jsx)(O, {
                     group: t,
                     isOpen: W[t],
@@ -212,13 +212,13 @@ function D(e) {
                     }
                 }, t)), W[t] && e.push(...X[t].map(e => m(e, t === S.Ur.UNREAD))))
             }), e
-        }, [n, l, A, W, Y, X, G, m, Q, J, U]),
+        }, [n, l, A, W, Y, X, G, m, J, Q, U]),
         Z = $[$.length - 1],
         ee = s.isValidElement(Z) && Z.type === O,
         et = (0, N.S)(e => e.setInboxReadState);
     s.useEffect(() => {
-        J || et(0 === X.UNREAD.length)
-    }, [X, J, et]);
+        Q || et(0 === X.UNREAD.length)
+    }, [X, Q, et]);
     let en = (n.length > 0 || l.length > 0) && null != a && B;
     ! function(e) {
         let {
@@ -240,8 +240,8 @@ function D(e) {
         return null == t ? 0 : Math.max(0, Math.ceil(t.offsetHeight / 64) - e)
     }, [W, X]);
     s.useEffect(() => {
-        J || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
-    }, [ei, a, J, B, ee, z]);
+        Q || B || 0 >= ei() || (!ee || z) && a?.(S.VA.FILL_SCROLLER)
+    }, [ei, a, Q, B, ee, z]);
     let es = s.useMemo(() => {
         let e = Math.min(Math.max(2, ei()), 20);
         return (0, i.jsx)(b.A, {

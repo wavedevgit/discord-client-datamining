@@ -43,7 +43,7 @@ let m = s.forwardRef(function(e, t) {
         borderType: T,
         hasBackground: E = !1,
         forcedDivider: S = !1,
-        showPremiumIcon: f = !1
+        showPremiumIcon: C = !1
     } = e;
     return (0, i.jsx)("div", {
         className: a()(u.fz, g, {
@@ -63,7 +63,7 @@ let m = s.forwardRef(function(e, t) {
                 className: u.DD,
                 id: l,
                 "data-migration-pending": !0,
-                children: [n, f && (0, i.jsx)(d.A, {
+                children: [n, C && (0, i.jsx)(d.A, {
                     size: "xs"
                 }), s]
             }), null != o ? (0, i.jsx)(r.ayl, {

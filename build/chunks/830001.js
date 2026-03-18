@@ -21,14 +21,14 @@ var i = n(627968),
     T = n(652215),
     E = n(985018),
     S = n(722125);
-let f = [{
+let C = [{
         badgeType: m.Xi.NEW,
         dismissibleContent: a.M.WIDGETS_USER_SETTINGS_NEW_BADGE
     }, {
         badgeType: m.Xi.NEW,
         dismissibleContent: a.M.DISPLAY_NAME_STYLES_NEW_BADGE
     }],
-    C = (0, _.t_)(h.X.PROFILE_PANEL, {
+    f = (0, _.t_)(h.X.PROFILE_PANEL, {
         useTitle: () => E.intl.string(E.t["vi7f+q"]),
         notice: {
             stores: [g.A],
@@ -95,6 +95,6 @@ let f = [{
                 })]
             })
         },
-        getDismissibleBadges: () => f,
-        buildLayout: () => [C]
+        getDismissibleBadges: () => C,
+        buildLayout: () => [f]
     })

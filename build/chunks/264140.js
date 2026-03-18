@@ -51,8 +51,8 @@ var f = n(483270),
     z = n(547015),
     q = n(561446),
     X = n(300233),
-    Q = n(721592),
-    J = n(403363),
+    J = n(721592),
+    Q = n(403363),
     $ = n(397036),
     Z = n(732044),
     ee = n(733441),
@@ -105,8 +105,8 @@ var f = n(483270),
     ez = n(287809),
     eq = n(977997),
     eX = n(47167),
-    eQ = n(698718),
-    eJ = n(812771),
+    eJ = n(698718),
+    eQ = n(812771),
     e$ = n(991275),
     eZ = n(59e3),
     e0 = n(377045),
@@ -537,7 +537,7 @@ class ti extends s.PureComponent {
             channelIsContentGated: s,
             inCall: l
         } = this.props;
-        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(J.A, {
+        if (o()(null != e, "Missing channel in Channel.renderChat"), n) return (o()(null != t, "premium channels must exist within a guild"), e?.isRoleSubscriptionTemplatePreviewChannel()) ? (0, i.jsx)(Q.A, {
             guildId: t.id
         }) : (0, i.jsx)(X.H, {
             guildId: t.id,
@@ -567,7 +567,7 @@ class ti extends s.PureComponent {
                 sidebarState: n
             }, e.id)
         }
-        return (0, i.jsx)(eQ.A, {
+        return (0, i.jsx)(eJ.A, {
             channel: e,
             guild: t,
             chatInputType: M.oU.NORMAL
@@ -721,8 +721,8 @@ class ti extends s.PureComponent {
             } if (null == e) return null;
         let o = t?.type != null && e7.kvI.GUILD_THREADS_ONLY.has(t.type) ? 528 : 450,
             c = r - e7.MdR - o;
-        return c += 375, (0, i.jsx)(eJ.A, {
-            sidebarType: t?.type != null && e7.kvI.GUILD_THREADS_ONLY.has(t.type) ? eJ.X.PostSidebar : eJ.X.ThreadSidebar,
+        return c += 375, (0, i.jsx)(eQ.A, {
+            sidebarType: t?.type != null && e7.kvI.GUILD_THREADS_ONLY.has(t.type) ? eQ.X.PostSidebar : eQ.X.ThreadSidebar,
             maxWidth: c,
             onWidthChange: this.handleThreadSidebarResize,
             children: e
@@ -786,7 +786,7 @@ let ts = (0, C.A)(ti),
             hasAccess: p
         } = (0, B.TW)("ConnectedChannel"), _ = c && !p ? null : o, f = (0, h.bG)([eV.A], () => eV.A.getChannel(a), [a]), x = _?.parent_id, C = (0, h.bG)([eV.A], () => eV.A.getChannel(x), [x]), b = (0, h.bG)([eF.A], () => eF.A.getGuild(_?.guild_id), [_]), {
             needSubscriptionToAccess: y
-        } = (0, Q.A)(_?.id ?? void 0), O = (0, h.bG)([R.A], () => {
+        } = (0, J.A)(_?.id ?? void 0), O = (0, h.bG)([R.A], () => {
             let e = null != r ? R.A.getParticipants(r) : [],
                 t = null != r ? R.A.getActivityParticipants(r) : [];
             return e.length - t.length > 0
@@ -807,8 +807,8 @@ let ts = (0, C.A)(ti),
             {
                 welcomeModalChannelId: X
             } = (0, u.zy)(),
-            J = (0, h.bG)([em.A], () => null != _ && em.A.isLurking(_.guild_id), [_]),
-            $ = (0, h.bG)([eP.A], () => eP.A.hasSeen(_?.guild_id, J), [_, J]),
+            Q = (0, h.bG)([em.A], () => null != _ && em.A.isLurking(_.guild_id), [_]),
+            $ = (0, h.bG)([eP.A], () => eP.A.hasSeen(_?.guild_id, Q), [_, Q]),
             Z = (0, h.bG)([R.A, N.Ay], () => null != N.Ay.getConnectedActivityLocation() && N.Ay.getActivityPanelMode() === e6.Gd.PANEL ? N.Ay.getFocusedLayout() === e6.E8.NO_CHAT ? e7.DUB.NO_CHAT : e7.DUB.NORMAL : null != r ? R.A.getLayout(r) : e7.DUB.NORMAL, [r]),
             ee = (0, eh.A)(b?.id),
             et = (0, ew.A)(X, b?.id),
@@ -875,7 +875,7 @@ let ts = (0, C.A)(ti),
             voiceChannel: f,
             layout: Z,
             needSubscriptionToAccess: y,
-            isLurking: J,
+            isLurking: Q,
             hasModalOpen: eS,
             section: en,
             channelSidebarState: ei,

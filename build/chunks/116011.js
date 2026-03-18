@@ -1,7 +1,7 @@
 /** chunk id: 116011 params = (module,exports,require) **/
 n.d(t, {
     o: () => E,
-    w: () => f
+    w: () => C
 });
 var i = n(627968),
     s = n(64700),
@@ -83,19 +83,19 @@ let E = {
             })
         })
     },
-    f = e => {
+    C = e => {
         var t;
         let n, d, {
                 recurrence: m,
                 titleClassName: g,
                 showPartnerLogo: p = !1,
                 showPartnerImage: T = !1,
-                countdownBar: f
+                countdownBar: C
             } = e,
-            [C, b] = s.useState(m.code),
+            [f, b] = s.useState(m.code),
             [N, I] = s.useState(!1),
             v = (t = m.partnerId, n = (0, a.bG)([o.A], () => (0, l.Mwr)(o.A.theme)), null == (d = E[t]) ? null : n ? d.logos.dark : d.logos.light),
-            j = null == C;
+            j = null == f;
         return (0, i.jsxs)("div", {
             className: h.lA,
             children: [(0, i.jsxs)("div", {
@@ -149,10 +149,10 @@ let E = {
                         zoomable: !1
                     })
                 })]
-            }), f, null != C && (0, i.jsx)(S, {
+            }), C, null != f && (0, i.jsx)(S, {
                 recurrence: {
                     ...m,
-                    code: C
+                    code: f
                 }
             })]
         })

@@ -287,8 +287,8 @@ let V = [],
                     newPageIndex: e
                 }), N(e)
             }, [N, t, r]),
-            Q = Math.floor(n.offset / L.T_y),
-            J = W && Q >= K,
+            J = Math.floor(n.offset / L.T_y),
+            Q = W && J >= K,
             $ = K + 1,
             Z = (0, a.yK)([T.A], () => {
                 if (0 !== n.offset) return V;
@@ -324,7 +324,7 @@ let V = [],
             }), (0, i.jsxs)(d.T7Y, {
                 ref: U,
                 className: G.XG,
-                children: [J && !n.isSearching && (0, i.jsx)(d.po8, {
+                children: [Q && !n.isSearching && (0, i.jsx)(d.po8, {
                     className: G.VC,
                     messageType: d.YCn.WARNING,
                     children: D.intl.formatToPlainString(D.t["E+2azY"], {

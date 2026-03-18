@@ -20,16 +20,16 @@ var s = n(503698),
 function x(e) {
     let {
         compact: t = !1
-    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "513026", x = "3b882b361fe575fa13cf01bdf2da382dc6dccb63".substring(0, 7), h = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
+    } = e, n = (0, u.GV)(), s = window.GLOBAL_ENV.RELEASE_CHANNEL, a = "513085", x = "24c02b4d58d511118285b270e059f4eb3f05106e".substring(0, 7), h = d.A?.app.getVersion(), p = d.A?.app.getBuildNumber(), T = d.A?.app.getAppArch(), E = c.A.getCurrentBuildOverride().overrides?.discord_web, S = function() {
         let e = r()?.os?.toString();
         if (null == e || null == d.A) return null;
         let t = d.A.os.release,
             [n, i, s] = m.Ay.parsedOSRelease;
         return e.includes("Windows 10") && void 0 !== s && s >= 22e3 && (e = e.replace("Windows 10", "Windows 11")), e.includes("OS X 10.15.7") && void 0 !== n && n >= 20 && (e = `macOS ${n>=25?n+1:n-9}`), `${e} (${t})`
-    }(), f = [s, a, `(${x})`];
-    return (null != h && (f.push(`Host ${h}`), null != T && f.push(T.toLowerCase()), null != p && f.push(`(${p})`)), f.push(`Build Override: ${null!=E?E.id:"N/A"}`), null != S && f.push(S), t) ? (0, i.jsxs)(i.Fragment, {
+    }(), C = [s, a, `(${x})`];
+    return (null != h && (C.push(`Host ${h}`), null != T && C.push(T.toLowerCase()), null != p && C.push(`(${p})`)), C.push(`Build Override: ${null!=E?E.id:"N/A"}`), null != S && C.push(S), t) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
-            copyValue: f.join(" "),
+            copyValue: C.join(" "),
             text: g.intl.string(g.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",
@@ -75,7 +75,7 @@ function x(e) {
         })]
     }) : (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(_.A, {
-            copyValue: f.join(" "),
+            copyValue: C.join(" "),
             text: g.intl.string(g.t["9Al4Qd"]),
             "aria-label": !1,
             dataMeticulousIgnore: "true",

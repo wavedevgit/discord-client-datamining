@@ -27,8 +27,8 @@ function d(e) {
         asValueChanges: T,
         markers: E,
         onMarkerRender: S,
-        stickToMarkers: f,
-        fieldLayout: C,
+        stickToMarkers: C,
+        fieldLayout: f,
         usePersistentBadge: b,
         getDismissibleBadges: N
     } = t, [I] = s.useState(() => d()), v = h?.(), j = m(), y = g?.(), R = A?.(), O = x?.(), D = _?.(), L = b?.(), P = N?.(), G = (0, a.A)({
@@ -53,8 +53,8 @@ function d(e) {
             orientation: "horizontal",
             markers: E,
             onMarkerRender: S,
-            stickToMarkers: f,
-            layout: C,
+            stickToMarkers: C,
+            layout: f,
             badge: G
         }), null != R && (0, i.jsx)(l.Text, {
             variant: "text-xs/normal",

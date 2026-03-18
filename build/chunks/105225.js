@@ -52,8 +52,8 @@ var i = n(627968),
     z = n(496841),
     q = n(383831),
     X = n(905216),
-    Q = n(577062),
-    J = n(533978),
+    J = n(577062),
+    Q = n(533978),
     $ = n(958449),
     Z = n(970636),
     ee = n(996744),
@@ -469,7 +469,7 @@ let ej = function(e) {
                             } = e, {
                                 isShown: s
                             } = t;
-                            return (0, i.jsx)(Q.A, {
+                            return (0, i.jsx)(J.A, {
                                 ref: eu,
                                 centerButton: !0,
                                 onPopoutClick: V ? null : n,
@@ -535,7 +535,7 @@ let ej = function(e) {
                         idle: c?.idle ?? !0,
                         whichPopoutIsOpen: p,
                         setWhichPopoutIsOpen: g
-                    }), ei && (0, i.jsx)(J.A, {
+                    }), ei && (0, i.jsx)(Q.A, {
                         channel: t,
                         themeable: !0,
                         whichPopoutIsOpen: p,

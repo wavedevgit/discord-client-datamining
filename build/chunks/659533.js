@@ -21,8 +21,8 @@ var i = n(627968),
     T = n(664654),
     E = n(344904),
     S = n(221688),
-    f = n(652215),
-    C = n(985018),
+    C = n(652215),
+    f = n(985018),
     b = n(509117),
     N = n(6336);
 let I = e => {
@@ -47,7 +47,7 @@ let I = e => {
             children: n
         });
         return (0, i.jsx)(o.m_, {
-            text: C.intl.string(C.t.UnKHdo),
+            text: f.intl.string(f.t.UnKHdo),
             shouldShow: !a,
             children: (0, i.jsx)("div", {
                 className: b.Lg,
@@ -110,7 +110,7 @@ let I = e => {
             e === h.aK.REDEEMED && I.redeemed++, e === h.aK.CONVERTED && (I.redeemed++, I.converted++)
         });
         let v = I.sent === T.Z,
-            y = x.A.getArticleURL(f.MVz.REFERRAL_PROGRAM),
+            y = x.A.getArticleURL(C.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: R
             } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
@@ -153,7 +153,7 @@ let I = e => {
                                 let {
                                     analyticsLocations: t
                                 } = e;
-                                A.default.track(f.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
+                                A.default.track(C.HAw.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                                     location_stack: t
                                 }), (0, c.mMO)(async () => {
                                     let {
@@ -174,7 +174,7 @@ let I = e => {
                                     src: N,
                                     alt: "",
                                     className: b.QH
-                                }), v ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
+                                }), v ? f.intl.string(f.t.SY9tyI) : f.intl.string(f.t.Lm2nFc)]
                             })
                         })
                     })]
