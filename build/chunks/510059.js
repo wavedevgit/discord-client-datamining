@@ -17,8 +17,8 @@ var n = t(503698),
     p = t(532197),
     x = t(773669),
     g = t(307600),
-    h = t(652215),
-    f = t(783419),
+    f = t(652215),
+    h = t(783419),
     j = t(985018),
     I = t(882119);
 
@@ -29,7 +29,7 @@ function v(e) {
             userId: s
         } = e,
         a = t.metadata ?? {},
-        x = (0, m.An)(a[f.pK.CREATED_AT], n),
+        x = (0, m.An)(a[h.pK.CREATED_AT], n),
         v = d.A.get((0, u.ML)(t.type));
     return (0, i.jsxs)("li", {
         className: I.FI,
@@ -62,12 +62,12 @@ function v(e) {
                     useDefaultUnderlineStyles: !1,
                     "aria-label": v?.name != null ? `${v.name}, ${t.name}, ${j.intl.string(j.t.q5jLJB)}` : `${t.name}, ${j.intl.string(j.t.q5jLJB)}`,
                     onClick: e => {
-                        (0, c.zV)(h.HAw.CONNECTED_ACCOUNT_VIEWED, {
+                        (0, c.zV)(f.HAw.CONNECTED_ACCOUNT_VIEWED, {
                             platform_type: t.type,
                             other_user_id: s
                         }), (0, g.h)({
                             href: l,
-                            trusted: v?.type !== h.fg2.DOMAIN
+                            trusted: v?.type !== f.fg2.DOMAIN
                         }, e)
                     },
                     children: (0, i.jsxs)("div", {
@@ -93,7 +93,7 @@ function v(e) {
                 })]
             }), (0, i.jsx)("div", {
                 className: I.yu,
-                children: t.type === h.fg2.REDDIT ? (0, A.xE)(a) : t.type === h.fg2.STEAM ? (0, A.dy)(a) : t.type === h.fg2.BLUESKY || t.type === h.fg2.MASTODON || t.type === h.fg2.TWITTER ? (0, A.ED)(a) : t.type === h.fg2.PAYPAL ? (0, A.gZ)(a) : t.type === h.fg2.EBAY ? (0, A.ub)(a) : t.type === h.fg2.TIKTOK ? (0, A.HU)(a) : null
+                children: t.type === f.fg2.REDDIT ? (0, A.xE)(a) : t.type === f.fg2.STEAM ? (0, A.dy)(a) : t.type === f.fg2.BLUESKY || t.type === f.fg2.MASTODON || t.type === f.fg2.TWITTER ? (0, A.ED)(a) : t.type === f.fg2.PAYPAL ? (0, A.gZ)(a) : t.type === f.fg2.EBAY ? (0, A.ub)(a) : t.type === f.fg2.TIKTOK ? (0, A.HU)(a) : null
             })]
         })]
     })

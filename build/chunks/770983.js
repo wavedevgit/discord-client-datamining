@@ -123,7 +123,7 @@ function C(e) {
     } = e, {
         recommendations: a,
         status: s
-    } = (0, j.U)({
+    } = (0, j.Ul)({
         userId: t,
         numItems: n,
         source: I.B5.USER_PROFILE

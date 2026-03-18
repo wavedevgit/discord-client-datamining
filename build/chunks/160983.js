@@ -22,7 +22,7 @@ function x(e) {
     } = e, {
         mutualFriendsCount: x,
         mutualGuilds: g
-    } = (0, d.A)(l), h = g?.length, f = (0, o.A)(l), j = (0, c.A)(l.id), I = (0, r.A)(l.id), v = [], N = l.id === t?.id, y = a.A.getFirstWishlistId(l.id), E = null != y, T = E ? a.A.getWishlistSettings(l.id, y) : null, C = (E ? n.A.getWishlistItems(y) : []).length > 0, _ = j.length > 0;
+    } = (0, d.A)(l), f = g?.length, h = (0, o.A)(l), j = (0, c.A)(l.id), I = (0, r.A)(l.id), v = [], N = l.id === t?.id, y = a.A.getFirstWishlistId(l.id), E = null != y, T = E ? a.A.getWishlistSettings(l.id, y) : null, C = (E ? n.A.getWishlistItems(y) : []).length > 0, _ = j.length > 0;
     (N || _) && v.push({
         text: p.intl.string(p.t.laViwx),
         section: A.RP.WIDGETS
@@ -36,11 +36,11 @@ function x(e) {
     return (N || !N && C && P && I && (!b || b && O)) && v.push({
         text: p.intl.string(p.t["7lZ31J"]),
         section: A.RP.WISHLIST
-    }), l.id !== t?.id && f && (v.push({
+    }), l.id !== t?.id && h && (v.push({
         text: (0, u.A)(x),
         section: A.RP.MUTUAL_FRIENDS
     }), v.push({
-        text: (0, m.A)(h),
+        text: (0, m.A)(f),
         section: A.RP.MUTUAL_GUILDS
     })), v
 }

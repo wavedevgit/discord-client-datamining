@@ -1,53 +1,52 @@
 /** chunk id: 576030 params = (module,exports,require) **/
-"use strict";
-n.d(t, {
+i.d(t, {
     GM: () => h,
-    mW: () => p,
-    uq: () => u
+    mW: () => I,
+    uq: () => c
 });
-var i = n(627968);
-n(64700);
-var s = n(158954),
-    l = n(311907),
-    a = n(397927),
-    r = n(587895),
-    o = n(721932),
-    d = n(287809),
-    c = n(360469);
+var r = i(627968);
+i(64700);
+var l = i(158954),
+    n = i(311907),
+    s = i(397927),
+    u = i(587895),
+    a = i(721932),
+    o = i(287809),
+    d = i(360469);
 
-function u(e) {
-    let t = null != e.gifterUserId ? d.default.getUser(e.gifterUserId) : null;
-    return null == t ? null : (0, i.jsx)(a.euF, {
+function c(e) {
+    let t = null != e.gifterUserId ? o.default.getUser(e.gifterUserId) : null;
+    return null == t ? null : (0, r.jsx)(s.euF, {
         src: t.getAvatarURL(void 0, 48),
-        size: a._3J.SIZE_48,
+        size: s._3J.SIZE_48,
         "aria-label": t.username
     })
 }
 
 function h(e) {
-    return (0, i.jsx)(A, {
+    return (0, r.jsx)(S, {
         wishlistItem: e
     })
 }
 
-function p(e) {
+function I(e) {
     let {
         application: t
-    } = e, n = null != t ? t.getIconURL(c.iu.SMALL) : void 0;
-    return null != n ? (0, i.jsx)("img", {
-        src: n,
+    } = e, i = null != t ? t.getIconURL(d.iu.SMALL) : void 0;
+    return null != i ? (0, r.jsx)("img", {
+        src: i,
         alt: t?.name
-    }) : (0, i.jsx)(s.U1X, {
+    }) : (0, r.jsx)(l.U1X, {
         color: "currentColor",
         size: "xs"
     })
 }
 
-function A(e) {
+function S(e) {
     let {
         wishlistItem: t
-    } = e, n = (0, l.bG)([r.A], () => (0, o.$)(t) ? r.A.getApplication(t.sku.applicationId) : void 0);
-    return (0, i.jsx)(p, {
-        application: n
+    } = e, i = (0, n.bG)([u.A], () => (0, a.$)(t) ? u.A.getApplication(t.sku.applicationId) : void 0);
+    return (0, r.jsx)(I, {
+        application: i
     })
 }
