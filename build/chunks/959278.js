@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(492462),
     o = n(873263),
     d = n(110259),
@@ -58,8 +58,8 @@ var i = n(627968),
     en = n(916768),
     ei = n(851109),
     ea = n(667429),
-    er = n(480680),
-    el = n(767060),
+    el = n(480680),
+    er = n(767060),
     es = n(18635),
     eo = n(488803),
     ed = n(969117),
@@ -159,20 +159,20 @@ let eU = (0, c.Fe)({
             let e = ex.A.getChannelId();
             return eC.A.getChannel(e)
         }), {
-            guildId: r,
-            channelId: l,
+            guildId: l,
+            channelId: r,
             messageId: s,
             threadId: d
-        } = t.params, c = l ?? void 0;
+        } = t.params, c = r ?? void 0;
         null == c && null != t.params.gameShopPageIndex && (c = eP.VV.GAME_SHOP);
-        let u = (0, A.bG)([eS.A], () => eS.A.getGuild(r)),
-            h = (0, A.bG)([eN.Ay], () => null == r ? null : eN.Ay.getSelfMember(r)),
-            _ = (0, eo.C$)(r, "ChannelRenderer"),
+        let u = (0, A.bG)([eS.A], () => eS.A.getGuild(l)),
+            h = (0, A.bG)([eN.Ay], () => null == l ? null : eN.Ay.getSelfMember(l)),
+            _ = (0, eo.C$)(l, "ChannelRenderer"),
             m = (0, ed.N)("ChannelRenderer"),
             p = u?.features.has(eR.GuildFeatures.GAME_SERVERS) ?? !1,
             E = (0, A.bG)([Q.A], () => {
-                if (null == r) return;
-                let e = Q.A.getData(r);
+                if (null == l) return;
+                let e = Q.A.getData(l);
                 if (e?.type === X._.SERVER_SHOP) switch (e.initialTab) {
                     case "role_subscriptions":
                         return M.B.GUILD_ROLE_SUBSCRIPTIONS;
@@ -183,18 +183,18 @@ let eU = (0, c.Fe)({
                 }
             });
         (0, eh.C$)(c) && (0, eh.C$)(d) || (null != u && (0, eI.pX)(eR.BVt.CHANNEL(u.id, (0, e_.A)(u))), (0, Z.E)());
-        let I = (0, D.p9)(r, "channel_renderer");
-        if (null != r && null != c && (0, eP.jq)(c)) switch (c) {
+        let I = (0, D.p9)(l, "channel_renderer");
+        if (null != l && null != c && (0, eP.jq)(c)) switch (c) {
             case eP.VV.ROLE_SUBSCRIPTIONS:
                 return I ? (0, i.jsx)(ek, {
-                    guildId: r,
+                    guildId: l,
                     initialTab: M.B.GUILD_ROLE_SUBSCRIPTIONS
                 }) : (0, i.jsx)(W.A, {
-                    guildId: r
+                    guildId: l
                 });
             case eP.VV.SERVER_MONETIZATION_ONBOARDING:
                 return (0, i.jsx)(eB, {
-                    guildId: r
+                    guildId: l
                 });
             case eP.VV.GAME_SHOP:
                 return (0, i.jsx)(eV, {
@@ -202,47 +202,47 @@ let eU = (0, c.Fe)({
                 });
             case eP.VV.GUILD_SHOP:
                 return (0, i.jsx)(ek, {
-                    guildId: r,
+                    guildId: l,
                     productId: s,
                     initialTab: E
                 });
             case eP.VV.MEMBER_APPLICATIONS:
                 return (0, i.jsx)(o.rd, {
-                    to: eR.BVt.CHANNEL(r, eP.VV.MEMBER_SAFETY)
+                    to: eR.BVt.CHANNEL(l, eP.VV.MEMBER_SAFETY)
                 });
             case eP.VV.GUILD_HOME:
                 return (0, i.jsx)(eH, {
-                    guildId: r
+                    guildId: l
                 });
             case eP.VV.CHANNEL_BROWSER:
                 return (0, i.jsx)(eY, {
-                    guildId: r,
+                    guildId: l,
                     selectedSection: eM.qC.BROWSE
                 });
             case eP.VV.GUILD_ONBOARDING:
                 return (0, i.jsx)(eW, {
-                    guildId: r
+                    guildId: l
                 });
             case eP.VV.CUSTOMIZE_COMMUNITY:
                 return (0, i.jsx)(eY, {
-                    guildId: r,
+                    guildId: l,
                     selectedSection: eM.qC.CUSTOMIZE
                 });
             case eP.VV.MEMBER_SAFETY:
                 return (0, i.jsx)(eF, {
-                    guildId: r
+                    guildId: l
                 });
             case eP.VV.GUILD_BOOSTS:
                 return (0, i.jsx)(eK, {
-                    guildId: r,
+                    guildId: l,
                     powerupListingId: n.get("powerupId") ?? n.get("powerupSkuId")
                 });
             case eP.VV.GAME_SERVERS:
                 if (!_ || !p && !m) return (0, i.jsx)(o.rd, {
-                    to: eR.BVt.CHANNEL(r)
+                    to: eR.BVt.CHANNEL(l)
                 });
                 return (0, i.jsx)(eq, {
-                    guildId: r
+                    guildId: l
                 });
             case eP.VV.REPORT_TO_MOD:
                 return (0, i.jsx)(y.A, {});
@@ -250,7 +250,7 @@ let eU = (0, c.Fe)({
                 (0, eb.xb)(c)
         }
         if ((0, F.$Y)(u, h)) return (0, i.jsx)(Y.A, {
-            guildId: r,
+            guildId: l,
             channelId: c
         });
         if (a?.type === eR.rbe.GUILD_STORE) {
@@ -271,7 +271,7 @@ let eU = (0, c.Fe)({
         } = (0, ei.X8)({
             location: "Sidebar"
         }), a = (0, A.bG)([ex.A], () => t ?? ex.A.getChannelId(e));
-        return window.location.pathname.startsWith(eR.BVt.CHANNEL(eR.gNP)) ? ("sidebar" !== n && (0, eI.bG)(eT.A.defaultRoute), (0, i.jsx)(er.A, {
+        return window.location.pathname.startsWith(eR.BVt.CHANNEL(eR.gNP)) ? ("sidebar" !== n && (0, eI.bG)(eT.A.defaultRoute), (0, i.jsx)(el.A, {
             includePanelSpacing: !0
         })) : window.location.pathname.startsWith(eR.BVt.GLOBAL_DISCOVERY) || window.location.pathname.startsWith(eR.BVt.GUILD_DISCOVERY) || (0, eu.r$)() ? (0, i.jsx)(V.A, {}) : null != e ? (0, i.jsx)(K.A, {
             selectedChannelId: a,
@@ -338,7 +338,7 @@ let e2 = e => (0, i.jsx)(S.A, {
     e3 = () => (0, i.jsx)(es.A, {}),
     e4 = () => (0, i.jsx)($.A, {}),
     e8 = () => (0, i.jsx)(J.A, {}),
-    te = () => (0, i.jsx)(el.A, {}),
+    te = () => (0, i.jsx)(er.A, {}),
     tt = e => {
         let t = e.location.pathname;
         return (0, i.jsx)(f.A, {
@@ -437,7 +437,7 @@ function ti(e) {
     let {
         hasNotice: t,
         sidebarTheme: n,
-        hideSidebar: r,
+        hideSidebar: l,
         hideChannelList: s,
         isSidebarOpen: o
     } = e, d = (0, A.bG)([v.A], () => v.A.isFullscreenInContext()), c = (0, j.D)("ChannelSidebar"), m = (0, P.useAppSidebarState)(e => !e.isOpen) && c;
@@ -496,9 +496,9 @@ function ti(e) {
         }, []);
     if (a.useLayoutEffect(() => {
             m && tn(76)
-        }, [m]), r) return null;
+        }, [m]), l) return null;
     let S = {
-        className: l()(ew.th, {
+        className: r()(ew.th, {
             [ew.Qd]: !t
         })
     };
@@ -507,7 +507,7 @@ function ti(e) {
         children: e => (0, i.jsxs)("div", {
             ref: g,
             "data-collapsed": m,
-            className: l()(ew.pz, e, {
+            className: r()(ew.pz, e, {
                 [ew.Ij]: u.Fr,
                 [ew.R]: d,
                 [ew.WG]: s
@@ -533,13 +533,13 @@ function ti(e) {
 function ta() {
     let e, t = (0, A.bG)([ev.Ay], () => ev.Ay.hasNotice()),
         n = (0, ef.NC)(),
-        r = function() {
+        l = function() {
             let [e, t] = a.useState(() => window.location.pathname.startsWith(eR.BVt.GUILD_MEMBER_VERIFICATION("")));
             return a.useEffect(() => eg.A.addRouteChangeListener(e => {
                 t(e.pathname.startsWith(eR.BVt.GUILD_MEMBER_VERIFICATION("")))
             }), []), e
         }(),
-        l = (e = (0, o.zy)(), (0, eE.B)(e.pathname, eR.BVt.GUILD_BOOSTING_MARKETING(ep.pv.guildId()))?.isExact === !0),
+        r = (e = (0, o.zy)(), (0, eE.B)(e.pathname, eR.BVt.GUILD_BOOSTING_MARKETING(ep.pv.guildId()))?.isExact === !0),
         s = (0, A.bG)([et.A], () => et.A.getIsOpen()),
         {
             notificationCenterVariant: c
@@ -569,7 +569,7 @@ function ta() {
                         isSidebarOpen: s,
                         hasNotice: t,
                         sidebarTheme: n,
-                        hideChannelList: r || l || m,
+                        hideChannelList: l || r || m,
                         hideSidebar: !s
                     }), (0, i.jsx)("div", {
                         className: ew.MY,

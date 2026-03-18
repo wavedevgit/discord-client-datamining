@@ -1,61 +1,61 @@
 /** chunk id: 93055 params = (module,exports,require) **/
-t.d(n, {
+n.d(e, {
     Af: () => v,
-    CJ: () => b,
+    CJ: () => E,
     DZ: () => p,
-    Rm: () => E,
-    TW: () => _
-}), t(321073);
-var i = t(478437),
-    r = t(311907);
-t(734057);
-var l = t(808728),
-    a = t(967198),
-    d = t(287809),
-    o = t(474090);
-t(661191);
-var u = t(181079),
-    s = t(379587),
-    c = t(11531),
-    f = t(5180),
-    A = t(652215),
-    h = t(788868);
+    Rm: () => b,
+    TW: () => A
+}), n(321073);
+var i = n(478437),
+    a = n(311907);
+n(734057);
+var l = n(808728),
+    r = n(967198),
+    d = n(287809),
+    o = n(474090);
+n(661191);
+var u = n(181079),
+    s = n(379587),
+    c = n(11531),
+    f = n(5180),
+    h = n(652215),
+    _ = n(788868);
 
-function _(e) {
+function A(t) {
     let {
-        enabled: n,
-        hasHigherPrivileges: t
+        enabled: e,
+        hasHigherPrivileges: n
     } = (0, s.m)({
-        location: e
-    }), i = (0, r.bG)([d.default], () => d.default.getCurrentUser()), l = o.Ay.isPremiumExactly(i, h.PremiumTypes.TIER_2);
+        location: t
+    }), i = (0, a.bG)([d.default], () => d.default.getCurrentUser()), l = o.Ay.isPremiumExactly(i, _.PremiumTypes.TIER_2);
     return {
-        hasAccess: n && l,
-        isExperimentEnabled: n,
-        hasHigherPrivileges: t
+        hasAccess: e && l,
+        isExperimentEnabled: e,
+        hasHigherPrivileges: n
     }
 }
 
-function v(e) {
-    return (0, r.bG)([u.A], () => u.A.getFavorite(e))
+function v(t) {
+    return (0, a.bG)([u.A], () => u.A.getFavorite(t))
 }
 
-function E() {
-    return (0, r.bG)([l.Ay], () => l.Ay.getChannels(A.YYv))[i.r.GUILD_CATEGORY].map(e => ({
-        id: "null" === e.channel.id ? null : e.channel.id,
-        name: e.channel.name
+function b() {
+    return (0, a.bG)([l.Ay], () => l.Ay.getChannels(h.YYv))[i.r.GUILD_CATEGORY].map(t => ({
+        id: "null" === t.channel.id ? null : t.channel.id,
+        name: t.channel.name
     }))
 }
 
 function p() {
-    let e = (0, r.bG)([a.A], () => a.A.getGuildId());
-    return (0, f.ai)(e)
+    let t = (0, a.bG)([r.A], () => r.A.getGuildId());
+    return (0, f.ai)(t)
 }
 
-function b() {
-    let e = (0, c.J)(e => e.favoriteAdded);
+function E() {
+    let t = (0, c.J)(t => t.favoriteAdded);
     return {
-        favoriteAdded: e,
-        notifyFavoriteAdded: (0, c.J)(e => e.notifyFavoriteAdded),
-        clearFavoriteAdded: (0, c.J)(e => e.clearFavoriteAdded)
+        favoriteAdded: t,
+        notifyFavoriteAdded: (0, c.J)(t => t.notifyFavoriteAdded),
+        clearFavoriteAdded: (0, c.J)(t => t.clearFavoriteAdded)
     }
 }

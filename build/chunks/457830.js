@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968);
 n(64700);
-var r = n(110259),
-    l = n(397927),
+var l = n(110259),
+    r = n(397927),
     s = n(139286),
     o = n(985018),
     d = n(9476),
@@ -17,8 +17,8 @@ let A = e => {
         errorType: t
     } = e;
     return (0, s.A)({
-        type: r.ImpressionTypes.PAGE,
-        name: r.ImpressionNames.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE,
+        type: l.ImpressionTypes.PAGE,
+        name: l.ImpressionNames.ROLE_SUBSCRIPTION_LISTING_UPSELL_ERROR_PAGE,
         properties: {
             error_page_type: t
         }
@@ -30,11 +30,11 @@ let A = e => {
                 src: c,
                 alt: "",
                 className: d.W9
-            }), (0, a.jsx)(l.Heading, {
+            }), (0, a.jsx)(r.Heading, {
                 variant: "heading-xl/extrabold",
                 className: d.mW,
                 children: "guild_not_eligible" === t ? o.intl.string(o.t.atZQVZ) : o.intl.string(o.t.gAdWBl)
-            }), (0, a.jsx)(l.Text, {
+            }), (0, a.jsx)(r.Text, {
                 variant: "text-md/normal",
                 className: d.LS,
                 children: "guild_not_eligible" === t ? o.intl.string(o.t.teWe5G) : o.intl.string(o.t["X/yMrK"])

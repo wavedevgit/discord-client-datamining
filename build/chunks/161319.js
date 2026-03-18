@@ -123,7 +123,7 @@ let b = () => Object.entries(T.o).map(e => {
             O = y?.isFractionalPremiumWithNoStandardSub(),
             D = null == y || R || O;
         if (!1 === h) return (0, i.jsx)(l.y$y, {});
-        let P = (e => {
+        let L = (e => {
             let {
                 promotions: t,
                 codesByPromotion: n
@@ -197,7 +197,7 @@ let b = () => Object.entries(T.o).map(e => {
                     })
                 }), (0, i.jsx)("div", {
                     className: C.kR,
-                    children: Object.entries(P).sort((e, t) => {
+                    children: Object.entries(L).sort((e, t) => {
                         let [n] = e, [i] = t;
                         return i.localeCompare(n)
                     }).map(e => {

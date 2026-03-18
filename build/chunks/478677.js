@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(311907),
     o = n(397927),
     d = n(87664),
@@ -19,14 +19,14 @@ var i = n(627968),
 let p = function(e) {
     let {
         quest: t
-    } = e, [n, r] = a.useState(!1), p = a.useRef(null), E = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = u.Ay.useName(E), f = (0, d.A)(E?.id), C = a.useCallback(e => (0, i.jsx)(A.A, {
+    } = e, [n, l] = a.useState(!1), p = a.useRef(null), E = (0, s.bG)([c.default], () => c.default.getCurrentUser()), I = u.Ay.useName(E), f = (0, d.A)(E?.id), C = a.useCallback(e => (0, i.jsx)(A.A, {
         name: I,
         quest: t,
         memberListItemRef: p,
         applicationStream: f,
         ...e,
         closePopout: () => {
-            r(!1)
+            l(!1)
         }
     }), [t, f, I]);
     return (0, i.jsx)("div", {
@@ -47,7 +47,7 @@ let p = function(e) {
                     renderPopout: C,
                     position: "bottom",
                     shouldShow: n,
-                    onRequestClose: () => r(!1),
+                    onRequestClose: () => l(!1),
                     nudgeAlignIntoViewport: !1,
                     useRawTargetDimensions: !0,
                     animation: o.YNO.Animation.NONE,
@@ -56,11 +56,11 @@ let p = function(e) {
                     scrollBehavior: "close",
                     children: () => (0, i.jsx)("div", {
                         ref: p,
-                        className: l()(g.Tn, {
+                        className: r()(g.Tn, {
                             [g.wH]: n
                         }),
                         children: (0, i.jsx)(o.DUT, {
-                            onClick: () => r(!n),
+                            onClick: () => l(!n),
                             tabIndex: 0,
                             children: (0, i.jsxs)("div", {
                                 className: g.lm,

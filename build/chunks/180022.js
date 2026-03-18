@@ -31,7 +31,7 @@ let N = s.memo(e => {
         dismissibleContentType: l,
         forceShadow: A,
         cardType: T
-    } = e, E = e?.onCtaClick, v = (0, d.bG)([u.A], () => u.A.useReducedMotion), [j, y] = s.useState(!1), [R, O] = s.useState(!1), D = T === p.cJ.CARD_CAROUSEL_FIRST_ROW || T === p.cJ.CARD_CAROUSEL_SECOND_ROW || T === p.cJ.CARD_CAROUSEL_THIRD_ROW, P = (0, h.A)(), [L, G] = (0, m.DP)(null != l && n ? [l] : []), {
+    } = e, E = e?.onCtaClick, v = (0, d.bG)([u.A], () => u.A.useReducedMotion), [j, y] = s.useState(!1), [R, O] = s.useState(!1), D = T === p.cJ.CARD_CAROUSEL_FIRST_ROW || T === p.cJ.CARD_CAROUSEL_SECOND_ROW || T === p.cJ.CARD_CAROUSEL_THIRD_ROW, L = (0, h.A)(), [P, G] = (0, m.DP)(null != l && n ? [l] : []), {
         easterEggLevel: M,
         isEasterEggTriggered: U,
         onHover: k,
@@ -53,7 +53,7 @@ let N = s.memo(e => {
             E?.(), B()
         } : void 0
     };
-    let H = L !== l || null == l || R;
+    let H = P !== l || null == l || R;
     return (s.useEffect(() => {
         v && j && (O(!0), g.default.track(S.HAw.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
             card_type: t
@@ -136,7 +136,7 @@ let N = s.memo(e => {
                 }), (0, i.jsx)("div", {
                     className: b.He,
                     children: (0, i.jsx)(I, {
-                        ...P.upcomingDropUntimed,
+                        ...L.upcomingDropUntimed,
                         pillText: ""
                     })
                 }), (0, i.jsx)("div", {
@@ -156,7 +156,7 @@ let N = s.memo(e => {
             })
         })
     }) : (0, i.jsx)(N, {
-        ...P.upcomingDropUntimed,
+        ...L.upcomingDropUntimed,
         forceShadow: A
     })
 });

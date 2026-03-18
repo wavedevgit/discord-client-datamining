@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(873263),
-    l = n(397927),
+    l = n(873263),
+    r = n(397927),
     s = n(403362),
     o = n(240248),
     d = n(890687),
@@ -50,7 +50,7 @@ let p = [],
             filters: T
         }), [C, T])), O = a.useCallback(() => {
             S(p)
-        }, [S]), L = a.useRef(null), R = a.useRef(null), P = (0, r.zy)(), D = (0, r.W6)();
+        }, [S]), L = a.useRef(null), R = a.useRef(null), P = (0, l.zy)(), D = (0, l.W6)();
         return a.useEffect(() => {
             "" !== P.hash && null != L.current && null != R.current && (C !== L.current || T !== R.current) && D.replace({
                 ...P,
@@ -71,7 +71,7 @@ let p = [],
         }), [O, N]), (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsxs)("div", {
                 className: g.Mj,
-                children: [(0, i.jsx)(l.Heading, {
+                children: [(0, i.jsx)(r.Heading, {
                     variant: "heading-lg/medium",
                     children: m.intl.string(m.t.giYD00)
                 }), (0, i.jsxs)("div", {

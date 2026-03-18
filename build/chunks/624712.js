@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(562465),
-    r = n(451988),
-    l = n(397927),
+    l = n(451988),
+    r = n(397927),
     s = n(339048),
     o = n(10716),
     d = n(587895),
@@ -44,13 +44,13 @@ let E = 10 * h.A.Millis.SECOND,
                         if (!e) throw new m.A({
                             errorCode: p.Lw6.INVALID_ENTITLEMENT
                         }, "User does not have entitlement.")
-                    }), (0, r.BK)(E).then(() => {
+                    }), (0, l.BK)(E).then(() => {
                         throw new m.A({
                             errorCode: p.Lw6.INVALID_ENTITLEMENT
                         }, "Timed out fetching entitlement.")
                     })])
                 } catch (e) {
-                    throw e.code === p.Lw6.INVALID_ENTITLEMENT && (_.Ay.focus(null, !0), (0, l.mMO)(async () => {
+                    throw e.code === p.Lw6.INVALID_ENTITLEMENT && (_.Ay.focus(null, !0), (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
@@ -67,14 +67,14 @@ let E = 10 * h.A.Millis.SECOND,
             handler(e) {
                 let {
                     socket: t
-                } = e, r = t.application.id;
-                if (null == r) throw new m.A({
+                } = e, l = t.application.id;
+                if (null == l) throw new m.A({
                     errorCode: p.Lw6.INVALID_COMMAND
                 }, "No application.");
                 return a.Bo.post({
-                    url: p.Rsh.ENTITLEMENT_TICKET(r),
+                    url: p.Rsh.ENTITLEMENT_TICKET(l),
                     body: {
-                        test_mode: A.A.inTestModeForApplication(r) || o.A.inDevModeForApplication(r)
+                        test_mode: A.A.inTestModeForApplication(l) || o.A.inDevModeForApplication(l)
                     },
                     retries: 3,
                     oldFormErrors: !0,
@@ -85,13 +85,13 @@ let E = 10 * h.A.Millis.SECOND,
                     } = e;
                     return t
                 }).catch(e => {
-                    throw _.Ay.focus(null, !0), (0, l.mMO)(async () => {
+                    throw _.Ay.focus(null, !0), (0, r.mMO)(async () => {
                         let {
                             default: e
                         } = await n.e("26766").then(n.bind(n, 448701));
                         return t => (0, i.jsx)(e, {
                             ...t,
-                            applicationId: r
+                            applicationId: l
                         })
                     }), e
                 })

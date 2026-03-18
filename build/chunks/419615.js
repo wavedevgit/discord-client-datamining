@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(119966),
     a = n(478437),
-    r = n(344351),
-    l = n(179771),
+    l = n(344351),
+    r = n(179771),
     s = n(420970),
     o = n(795816),
     d = n(933958),
@@ -17,13 +17,13 @@ var i = n(119966),
 let m = {
     [_.e$.INVITE_USER_EMBEDDED]: (0, s.T)(_.e$.INVITE_USER_EMBEDDED, {
         scope: {
-            [A.sm.ANY]: [l.F.RELATIONSHIPS_READ]
+            [A.sm.ANY]: [r.F.RELATIONSHIPS_READ]
         },
         async handler(e) {
             let t, {
                     socket: n,
                     args: {
-                        user_id: l,
+                        user_id: r,
                         content: s
                     }
                 } = e,
@@ -36,12 +36,12 @@ let m = {
                 errorCode: _.Lw.NO_ELIGIBLE_ACTIVITY
             }, "No eligible activity for application. Ensure an activity was set using setActivity.");
             switch (m.kind) {
-                case r.T.GUILD_CHANNEL:
-                case r.T.GUILD_CHANNEL_MESSAGE:
+                case l.T.GUILD_CHANNEL:
+                case l.T.GUILD_CHANNEL_MESSAGE:
                     t = (0, u.W)().channel;
                     break;
-                case r.T.PRIVATE_CHANNEL:
-                case r.T.PRIVATE_CHANNEL_MESSAGE:
+                case l.T.PRIVATE_CHANNEL:
+                case l.T.PRIVATE_CHANNEL_MESSAGE:
                     let g = c.A.getChannel(m.channel_id);
                     if (null == g) throw new i.G({
                         errorCode: _.Lw.INVALID_CHANNEL
@@ -60,7 +60,7 @@ let m = {
                 await (0, o.Ue)({
                     channelId: t.id,
                     applicationId: A,
-                    userId: l,
+                    userId: r,
                     prefixedContent: s,
                     location: "RPC_ACTIVITY_INVITE_USER",
                     inviteAnalyticsMetadata: {

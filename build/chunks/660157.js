@@ -4,13 +4,13 @@ n.d(t, {
 });
 var i = n(420970),
     a = n(287809),
-    r = n(639621),
-    l = n(613057),
+    l = n(639621),
+    r = n(613057),
     s = n(652215);
 let o = {
     [s.e$_.GET_USER]: (0, i.T)(s.e$_.GET_USER, {
         scope: {
-            [l.sm.ANY]: [l.W_, l.hj]
+            [r.sm.ANY]: [r.W_, r.hj]
         },
         handler(e) {
             let {
@@ -18,7 +18,7 @@ let o = {
                     id: t
                 }
             } = e, n = a.default.getUser(t);
-            return null == n ? null : (0, r.A)(n)
+            return null == n ? null : (0, l.A)(n)
         }
     })
 }

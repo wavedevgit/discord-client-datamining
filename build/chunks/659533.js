@@ -116,7 +116,7 @@ let I = e => {
             } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             O = s.useRef(null),
             D = I.sent / T.Z * 100,
-            P = (0, i.jsxs)("div", {
+            L = (0, i.jsxs)("div", {
                 className: b.hE,
                 children: [(0, i.jsx)(E.Ay, {
                     percentage: D,
@@ -180,24 +180,24 @@ let I = e => {
                     })]
                 })]
             }),
-            L = I.redeemed === T.Z;
+            P = I.redeemed === T.Z;
         return (0, i.jsx)(_.f5, {
             value: R,
             children: (0, i.jsx)("div", {
                 className: a()({
-                    [b.f5]: L,
-                    [b.JY]: !L,
+                    [b.f5]: P,
+                    [b.JY]: !P,
                     [b.VX]: !t,
-                    [b.m$]: L && t
+                    [b.m$]: P && t
                 }),
                 children: (0, i.jsx)("div", {
                     ref: O,
                     className: a()({
                         [b.dn]: !t,
                         [b.d_]: t,
-                        [b.kS]: L
+                        [b.kS]: P
                     }),
-                    children: P
+                    children: L
                 })
             })
         })

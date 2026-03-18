@@ -4,8 +4,8 @@ n.d(t, {
 }), n(393431), n(532706), n(42231), n(232424), n(949626), n(767709), n(65162);
 var i = n(311907),
     a = n(554146),
-    r = n(873298),
-    l = n(406935),
+    l = n(873298),
+    r = n(406935),
     s = n(506774),
     o = n(168186),
     d = n(450510),
@@ -32,10 +32,10 @@ let p = [{
     run(e) {
         if (null != e.inbox) return !1;
         let t = !1,
-            n = r.Q0.create();
+            n = l.Q0.create();
         e.inbox = n, s.w.get("seenInboxTutorial", !1) && (n.viewedTutorial = !0, t = !0);
         let i = s.w.get("recentsButtonTab2");
-        null != i && (n.currentTab = "Recent Mentions" === i ? r.Y2.MENTIONS : r.Y2.UNREADS, t = !0);
+        null != i && (n.currentTab = "Recent Mentions" === i ? l.Y2.MENTIONS : l.Y2.UNREADS, t = !0);
         let a = s.w.get("unread-messages-collapsed-channels") ?? {};
         for (let n in a) {
             if (!a[n]) continue;
@@ -59,7 +59,7 @@ let p = [{
         })]);
         if (null == t) return !1;
         let n = !1;
-        return null != t.diversitySurrogate && "" !== t.diversitySurrogate && (null == e.textAndImages && (e.textAndImages = r.oJ.create()), null == e.textAndImages.diversitySurrogate && (e.textAndImages.diversitySurrogate = l.hU.create()), e.textAndImages.diversitySurrogate.value = t.diversitySurrogate, n = !0), n
+        return null != t.diversitySurrogate && "" !== t.diversitySurrogate && (null == e.textAndImages && (e.textAndImages = l.oJ.create()), null == e.textAndImages.diversitySurrogate && (e.textAndImages.diversitySurrogate = r.hU.create()), e.textAndImages.diversitySurrogate.value = t.diversitySurrogate, n = !0), n
     },
     cleanup() {}
 }, {
@@ -75,33 +75,33 @@ let p = [{
     version: 5,
     run(e) {
         let t = !1;
-        e.textAndImages = e.textAndImages ?? r.oJ.create(), e.notifications = e.notifications ?? r.TY.create(), e.privacy = e.privacy ?? r.E.create(), e.voiceAndVideo = e.voiceAndVideo ?? r.GY.create(), e.gameLibrary = e.gameLibrary ?? r.F1.create(), e.debug = e.debug ?? r.X9.create();
+        e.textAndImages = e.textAndImages ?? l.oJ.create(), e.notifications = e.notifications ?? l.TY.create(), e.privacy = e.privacy ?? l.E.create(), e.voiceAndVideo = e.voiceAndVideo ?? l.GY.create(), e.gameLibrary = e.gameLibrary ?? l.F1.create(), e.debug = e.debug ?? l.X9.create();
         let n = s.w.get("UserSettingsStore") ?? {};
-        return "boolean" == typeof n.useRichChatTextBox && (e.textAndImages.useRichChatInput = l._t.create({
+        return "boolean" == typeof n.useRichChatTextBox && (e.textAndImages.useRichChatInput = r._t.create({
             value: n.useRichChatTextBox
-        }), t = !0), "string" == typeof n.renderSpoilers && (e.textAndImages.renderSpoilers = l.hU.create({
+        }), t = !0), "string" == typeof n.renderSpoilers && (e.textAndImages.renderSpoilers = r.hU.create({
             value: n.renderSpoilers
-        }), t = !0), "boolean" == typeof n.useThreadSidebar && (e.textAndImages.useThreadSidebar = l._t.create({
+        }), t = !0), "boolean" == typeof n.useThreadSidebar && (e.textAndImages.useThreadSidebar = r._t.create({
             value: n.useThreadSidebar
-        }), t = !0), "boolean" == typeof n.showInAppNotifications && (e.notifications.showInAppNotifications = l._t.create({
+        }), t = !0), "boolean" == typeof n.showInAppNotifications && (e.notifications.showInAppNotifications = r._t.create({
             value: n.showInAppNotifications
-        }), t = !0), n.emojiPickerCollapsedSections instanceof Array && (e.textAndImages.emojiPickerCollapsedSections = n.emojiPickerCollapsedSections, t = !0), n.stickerPickerCollapsedSections instanceof Array && (e.textAndImages.stickerPickerCollapsedSections = n.stickerPickerCollapsedSections, t = !0), "boolean" == typeof n.viewImageDescriptions && (e.textAndImages.viewImageDescriptions = l._t.create({
+        }), t = !0), n.emojiPickerCollapsedSections instanceof Array && (e.textAndImages.emojiPickerCollapsedSections = n.emojiPickerCollapsedSections, t = !0), n.stickerPickerCollapsedSections instanceof Array && (e.textAndImages.stickerPickerCollapsedSections = n.stickerPickerCollapsedSections, t = !0), "boolean" == typeof n.viewImageDescriptions && (e.textAndImages.viewImageDescriptions = r._t.create({
             value: n.viewImageDescriptions
-        }), t = !0), "boolean" == typeof n.showCommandSuggestions && (e.textAndImages.showCommandSuggestions = l._t.create({
+        }), t = !0), "boolean" == typeof n.showCommandSuggestions && (e.textAndImages.showCommandSuggestions = r._t.create({
             value: n.showCommandSuggestions
-        }), t = !0), "boolean" == typeof n.alwaysPreviewVideo && (e.voiceAndVideo.alwaysPreviewVideo = l._t.create({
+        }), t = !0), "boolean" == typeof n.alwaysPreviewVideo && (e.voiceAndVideo.alwaysPreviewVideo = r._t.create({
             value: n.alwaysPreviewVideo
-        }), t = !0), "boolean" == typeof n.notifyFriendsOnGoLive && (e.notifications.notifyFriendsOnGoLive = l._t.create({
+        }), t = !0), "boolean" == typeof n.notifyFriendsOnGoLive && (e.notifications.notifyFriendsOnGoLive = r._t.create({
             value: n.notifyFriendsOnGoLive
-        }), t = !0), "boolean" == typeof n.installShortcutDesktop && (e.gameLibrary.installShortcutDesktop = l._t.create({
+        }), t = !0), "boolean" == typeof n.installShortcutDesktop && (e.gameLibrary.installShortcutDesktop = r._t.create({
             value: n.installShortcutDesktop
-        }), t = !0), "boolean" == typeof n.installShortcutStartMenu && (e.gameLibrary.installShortcutStartMenu = l._t.create({
+        }), t = !0), "boolean" == typeof n.installShortcutStartMenu && (e.gameLibrary.installShortcutStartMenu = r._t.create({
             value: n.installShortcutStartMenu
-        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyFriends && (e.privacy.allowActivityPartyPrivacyFriends = l._t.create({
+        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyFriends && (e.privacy.allowActivityPartyPrivacyFriends = r._t.create({
             value: n.allowActivityPartyPrivacyFriends
-        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyVoiceChannel && (e.privacy.allowActivityPartyPrivacyVoiceChannel = l._t.create({
+        }), t = !0), "boolean" == typeof n.allowActivityPartyPrivacyVoiceChannel && (e.privacy.allowActivityPartyPrivacyVoiceChannel = r._t.create({
             value: n.allowActivityPartyPrivacyVoiceChannel
-        }), t = !0), "boolean" == typeof n.rtcPanelShowVoiceStates && (e.debug.rtcPanelShowVoiceStates = l._t.create({
+        }), t = !0), "boolean" == typeof n.rtcPanelShowVoiceStates && (e.debug.rtcPanelShowVoiceStates = r._t.create({
             value: n.rtcPanelShowVoiceStates
         }), t = !0), t
     },
@@ -167,7 +167,7 @@ let p = [{
         let t = s.w.get("PromotionsPersistedStore");
         if (null == t) return !1;
         let n = t._state.lastDismissedOutboundPromotionStartDate;
-        return null != n && (null == e.userContent && (e.userContent = r.YW.create()), null == e.userContent.lastDismissedOutboundPromotionStartDate) && (e.userContent.lastDismissedOutboundPromotionStartDate = l.hU.create({
+        return null != n && (null == e.userContent && (e.userContent = l.YW.create()), null == e.userContent.lastDismissedOutboundPromotionStartDate) && (e.userContent.lastDismissedOutboundPromotionStartDate = r.hU.create({
             value: n
         }), !0)
     },
@@ -180,7 +180,7 @@ let p = [{
         } = i.Ay.PersistedStore.migrateAndReadStoreState("ExpressionSuggestionsPersistedStore", null);
         if (null == t) return !1;
         let n = t.expressionSuggestionsEnabled;
-        return null != n && (null == e.textAndImages && (e.textAndImages = r.oJ.create()), null == e.textAndImages.expressionSuggestionsEnabled) && (e.textAndImages.expressionSuggestionsEnabled = l._t.create({
+        return null != n && (null == e.textAndImages && (e.textAndImages = l.oJ.create()), null == e.textAndImages.expressionSuggestionsEnabled) && (e.textAndImages.expressionSuggestionsEnabled = r._t.create({
             value: n
         }), !0)
     },
@@ -209,7 +209,7 @@ let p = [{
         let t = s.w.get("lastChangeLogId");
         if (null == t) return !1;
         if (!(0, o.hT)(t)) return s.w.remove("lastChangeLogId"), !1;
-        if (null == e.userContent) e.userContent = r.YW.create();
+        if (null == e.userContent) e.userContent = l.YW.create();
         else if (null != e.userContent && null != e.userContent.lastReceivedChangelogId && "0" !== e.userContent.lastReceivedChangelogId) return s.w.remove("lastChangeLogId"), !1;
         return e.userContent.lastReceivedChangelogId = t, !0
     },
@@ -218,6 +218,6 @@ let p = [{
     }
 }, {
     version: 21,
-    run: e => e.appearance?.uiDensity === r.NS.COMPACT && (e.appearance.uiDensity = r.NS.DEFAULT, !0),
+    run: e => e.appearance?.uiDensity === l.NS.COMPACT && (e.appearance.uiDensity = l.NS.DEFAULT, !0),
     cleanup() {}
 }]

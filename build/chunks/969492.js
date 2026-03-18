@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, a = n(627968);
 n(64700);
-var r = n(768569),
-    l = n(164554),
+var l = n(768569),
+    r = n(164554),
     s = n(305498),
     o = n(909255),
     d = n(374079),
@@ -38,7 +38,7 @@ function h(e) {
             });
             break;
         case "premium_group":
-            return (0, a.jsx)(r.p, {
+            return (0, a.jsx)(l.p, {
                 targetElementRef: i,
                 dismissPopover: p,
                 children: t
@@ -56,7 +56,7 @@ function h(e) {
                 children: t
             });
         case "orbs_intro":
-            return (0, a.jsx)(l.A, {
+            return (0, a.jsx)(r.A, {
                 targetElementRef: i,
                 dismissPopover: p,
                 children: t

@@ -1,32 +1,33 @@
 /** chunk id: 601730 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+"use strict";
+n.d(e, {
+    A: () => E
 });
 var i = n(627968),
-    l = n(554146),
-    r = n(397927),
-    s = n(932001),
+    r = n(554146),
+    s = n(397927),
+    l = n(932001),
     a = n(722255),
     o = n(14594),
     c = n(652215),
-    d = n(49999),
-    u = n(985018);
+    u = n(49999),
+    d = n(985018);
 
-function _() {
-    let [e, t] = (0, s.Wl)(l.M.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
+function E() {
+    let [t, e] = (0, l.Wl)(r.M.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK, {
         cooldownDurationMs: o.aH
     });
-    return e !== l.M.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, i.jsxs)(r.$Td, {
-        color: r.Hv$.BRAND,
-        children: [(0, i.jsx)(r.PMB, {
-            onClick: () => t(d.i.DISMISS),
+    return t !== r.M.NAGBAR_NOTICE_IGNORE_USER_FEEDBACK ? null : (0, i.jsxs)(s.$Td, {
+        color: s.Hv$.BRAND,
+        children: [(0, i.jsx)(s.PMB, {
+            onClick: () => e(u.i.DISMISS),
             noticeType: c.kqX.IGNORE_USER_FEEDBACK_NAGBAR
-        }), u.intl.string(u.t.XkeW9N), (0, i.jsx)(r.Z_L, {
+        }), d.intl.string(d.t.XkeW9N), (0, i.jsx)(s.Z_L, {
             onClick: () => {
-                (0, a.u)(), t(d.i.TAKE_ACTION)
+                (0, a.u)(), e(u.i.TAKE_ACTION)
             },
             noticeType: c.kqX.IGNORE_USER_FEEDBACK_NAGBAR,
-            children: u.intl.string(u.t.vcdNKv)
+            children: d.intl.string(d.t.vcdNKv)
         })]
     })
 }

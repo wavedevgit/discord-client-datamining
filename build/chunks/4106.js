@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(562465),
     a = n(73153),
-    r = n(253932),
-    l = n(728458),
+    l = n(253932),
+    r = n(728458),
     s = n(335934),
     o = n(859524),
     d = n(652215);
@@ -29,7 +29,7 @@ let c = {
                 offset: t
             }), !0
         } catch (e) {
-            l.A.captureException(e)
+            r.A.captureException(e)
         }
         return !1
     },
@@ -45,8 +45,8 @@ let c = {
                 refreshing: !0
             });
             try {
-                let r = Date.now(),
-                    l = await i.Bo.get({
+                let l = Date.now(),
+                    r = await i.Bo.get({
                         url: d.Rsh.GRAVITY_ITEMS_DEHYDRATED,
                         query: {
                             refresh: n
@@ -55,14 +55,14 @@ let c = {
                     });
                 await a.h.dispatch({
                     type: "LOAD_ICYMI_DEHYDRATED",
-                    items: l.body.items,
-                    loadId: l.body.load_id,
-                    startTime: r,
+                    items: r.body.items,
+                    loadId: r.body.load_id,
+                    startTime: l,
                     isReloading: t,
                     isInitialLoad: e
                 })
             } catch (e) {
-                l.A.captureException(e)
+                r.A.captureException(e)
             }
         }
     },
@@ -77,7 +77,7 @@ let c = {
                 rejectWithError: !1
             }), !0
         } catch (e) {
-            return l.A.captureException(e), !1
+            return r.A.captureException(e), !1
         }
     },
     async fetchForNotification(e, t) {
@@ -100,7 +100,7 @@ let c = {
                 messageItem: n.body.message_items[0]
             })
         } catch (e) {
-            l.A.captureException(e)
+            r.A.captureException(e)
         }
     },
     fetchForStatusNotification(e) {
@@ -112,7 +112,7 @@ let c = {
     async fetchHydrated(e, t, n) {
         if (!(0, o.Lg)("fetchHydrated")) return;
         let {
-            contentGenerationEnabled: r
+            contentGenerationEnabled: l
         } = (0, s.o$)("fetchHydrated", !1), {
             messageItems: c,
             activityItems: u,
@@ -146,12 +146,12 @@ let c = {
                 requestGeneratedCandidateItems: A,
                 messageItems: n.body.message_items,
                 activityItems: n.body.activity_items,
-                generatedCandidateItems: r ? n.body.generated_candidate_items : [],
+                generatedCandidateItems: l ? n.body.generated_candidate_items : [],
                 startingIndex: e,
                 endingIndex: t
             })
         } catch (i) {
-            l.A.captureException(i);
+            r.A.captureException(i);
             let n = (0, o.Vq)(e, t);
             a.h.dispatch({
                 type: "LOAD_ICYMI_HYDRATED_FAILED",
@@ -170,7 +170,7 @@ let c = {
                 scores: e.body
             })
         } catch (e) {
-            l.A.captureException(e)
+            r.A.captureException(e)
         }
     },
     async getRecommendedGuilds() {
@@ -184,12 +184,12 @@ let c = {
                 guilds: e.body.guilds
             })
         } catch (e) {
-            l.A.captureException(e)
+            r.A.captureException(e)
         }
     },
     async getMediaForCurrentStatus() {
         if (!(0, o.Lg)("mediaForCurrentStatus")) return;
-        let e = r.G2.getSetting();
+        let e = l.G2.getSetting();
         if (null != e && null != e.createdAtMs) try {
             let t = await i.Bo.get({
                 url: d.Rsh.GRAVITY_ATTACHMENTS,
@@ -201,7 +201,7 @@ let c = {
                 createdAtMs: Number(e.createdAtMs)
             })
         } catch (e) {
-            l.A.captureException(e)
+            r.A.captureException(e)
         }
     },
     reloadICYMITab() {

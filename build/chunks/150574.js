@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(575593),
     o = n(440703),
     d = n(311907),
@@ -30,7 +30,7 @@ var i = n(627968),
 let b = (0, a.memo)(function(e) {
     let {
         quest: t
-    } = e, [n, r] = (0, a.useState)(!1), [b, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
+    } = e, [n, l] = (0, a.useState)(!1), [b, O] = (0, a.useState)(24), [L, R] = (0, a.useState)(!1), P = (0, a.useRef)(null), D = (0, a.useRef)(null), M = (0, a.useRef)(null), j = (0, d.bG)([g.default], () => g.default.getCurrentUser()), {
         ref: w,
         height: U = 0
     } = (0, A.Ay)(), G = (0, h.Ay)(), k = (0, I.S5)(t.userStatus?.claimedAt, {
@@ -57,13 +57,13 @@ let b = (0, a.memo)(function(e) {
             ...J
         } = (0, C.fF)(E.uF.TROPHY_CASE_CARD),
         ee = () => {
-            r(!0), p.default.track(x.HAw.QUEST_HOVER, {
+            l(!0), p.default.track(x.HAw.QUEST_HOVER, {
                 quest_id: t.id,
                 ...J
             })
         },
         et = () => {
-            r(!1)
+            l(!1)
         },
         en = e => {
             R(!0), p.default.track(x.HAw.QUEST_ASSET_LOADING_FAILURE, {
@@ -80,7 +80,7 @@ let b = (0, a.memo)(function(e) {
             onBlur: et,
             onMouseEnter: ee,
             onMouseLeave: et,
-            className: l()(y.kL, {
+            className: r()(y.kL, {
                 [y.yo]: n
             }),
             children: [null != j && F && null != K && (0, i.jsx)("div", {
@@ -115,7 +115,7 @@ let b = (0, a.memo)(function(e) {
                 alt: t.config.messages.questName,
                 onError: () => en($.url)
             }), (0, i.jsx)("div", {
-                className: l()(y.Lw, {
+                className: r()(y.Lw, {
                     [y.en]: q,
                     [y.So]: !q
                 })
@@ -126,7 +126,7 @@ let b = (0, a.memo)(function(e) {
                     transform: `translateY(-${Q}px)`
                 },
                 children: (0, i.jsx)(S.Ay, {
-                    logotypeClassName: l()(y.wm, {
+                    logotypeClassName: r()(y.wm, {
                         [y.A0]: z
                     }),
                     quest: t,

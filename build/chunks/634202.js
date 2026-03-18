@@ -4,9 +4,9 @@ n.d(t, {
     A: () => $
 });
 var l = n(627968),
-    i = n(64700),
-    s = n(284009),
-    a = n.n(s),
+    s = n(64700),
+    i = n(284009),
+    a = n.n(i),
     r = n(735438),
     o = n.n(r),
     u = n(311907),
@@ -41,12 +41,12 @@ var l = n(627968),
 function P(e) {
     let t, {
         connectionType: n,
-        connectionMetadataField: i,
-        operator: s,
+        connectionMetadataField: s,
+        operator: i,
         value: a,
         description: r
     } = e;
-    if (null != r) switch (s) {
+    if (null != r) switch (i) {
         case k.so.LESS_THAN:
             t = G.intl.format(G.t["2p7dA3"], {
                 description: r,
@@ -63,8 +63,8 @@ function P(e) {
             t = r
     } else t = (0, y.RP)({
         connectionType: n,
-        connectionMetadataField: i,
-        operator: s,
+        connectionMetadataField: s,
+        operator: i,
         value: a
     });
     return null == t ? null : (0, l.jsxs)("div", {
@@ -84,10 +84,10 @@ function P(e) {
 function L(e) {
     let {
         eligibilityStates: t
-    } = e, n = (0, x.Ay)(), i = (0, g.rdh)(c.A.unsafe_rawColors.GREEN_330).hex(), s = o().groupBy(t, e => `${e.connection_type}${null!=e.application_id?`:${e.application_id}`:""}`);
+    } = e, n = (0, x.Ay)(), s = (0, g.rdh)(c.A.unsafe_rawColors.GREEN_330).hex(), i = o().groupBy(t, e => `${e.connection_type}${null!=e.application_id?`:${e.application_id}`:""}`);
     return (0, l.jsx)(l.Fragment, {
-        children: Object.keys(s).map(e => {
-            let t, r = s[e],
+        children: Object.keys(i).map(e => {
+            let t, r = i[e],
                 o = r.filter(e => null != e.operator),
                 u = r.find(e => null != e.application),
                 c = f.A.get(e),
@@ -95,7 +95,7 @@ function L(e) {
                 h = d?.bot != null ? new b.A(d.bot) : null;
             return y.iC.includes(d?.id ?? "") ? t = (0, l.jsx)(S.A, {
                 className: D.AO,
-                color: i,
+                color: s,
                 size: 16
             }) : null != h && (t = (0, l.jsx)(N.A, {
                 className: D.AO,
@@ -121,17 +121,17 @@ function L(e) {
                     let {
                         connection_type: t,
                         connection_metadata_field: n,
-                        operator: i,
-                        value: s,
+                        operator: s,
+                        value: i,
                         description: r
                     } = e;
-                    return a()(null != n, "connectionMetadataField is null"), a()(null != i, "operator is null"), a()(null != s, "value is null"), (0, l.jsx)(P, {
+                    return a()(null != n, "connectionMetadataField is null"), a()(null != s, "operator is null"), a()(null != i, "value is null"), (0, l.jsx)(P, {
                         connectionType: t,
                         connectionMetadataField: n,
-                        operator: i,
-                        value: s,
+                        operator: s,
+                        value: i,
                         description: r
-                    }, `${t}:${n}:${i}:${s}`)
+                    }, `${t}:${n}:${s}:${i}`)
                 })]
             }, e)
         })
@@ -141,14 +141,14 @@ function L(e) {
 function U(e) {
     let t, {
         onGetRolesClicked: n,
-        onOpenProfile: s,
+        onOpenProfile: i,
         eligibilityStates: a,
         userId: r,
         roleId: o,
         channelId: c,
         guildId: d
     } = e;
-    i.useEffect(() => {
+    s.useEffect(() => {
         I.default.track(O.HAw.PASSPORT_ROLE_POPOUT_VIEWED, {
             other_user_id: r,
             role_id: o,
@@ -181,7 +181,7 @@ function U(e) {
             }), (0, l.jsx)(h.$n, {
                 className: D.lQ,
                 color: h.$n.Colors.PRIMARY,
-                onClick: s,
+                onClick: i,
                 children: G.intl.string(G.t.hgKDnG)
             })]
         })]
@@ -192,14 +192,14 @@ function $(e) {
     let {
         userId: t,
         messageId: n,
-        guild: s,
+        guild: i,
         channel: r
     } = e, {
         analyticsLocations: o
-    } = (0, j.Ay)(), c = (0, R.A)(s, t, r.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [h, A] = i.useState(null == m), x = i.useRef(null);
+    } = (0, j.Ay)(), c = (0, R.A)(i, t, r.id, !0), m = (0, u.bG)([T.A], () => T.A.getGuildRoleConnectionEligibility(c?.id)), [h, A] = s.useState(null == m), x = s.useRef(null);
     if (null == c) return null;
     async function f() {
-        a()(null != c, "visibleConnectionsRole is null"), h && null == m && (await p.A.fetchGuildRoleConnectionsEligibility(s.id, c.id), A(!1))
+        a()(null != c, "visibleConnectionsRole is null"), h && null == m && (await p.A.fetchGuildRoleConnectionsEligibility(i.id, c.id), A(!1))
     }
     return (0, l.jsx)(g.QCx, {
         targetElementRef: x,
@@ -207,27 +207,27 @@ function $(e) {
         renderPopout: function() {
             return Promise.resolve(e => {
                 let {
-                    closePopout: i
+                    closePopout: s
                 } = e;
                 return null == m ? (0, l.jsx)(l.Fragment, {}) : (a()(null != c, "visibleConnectionsRole is null"), (0, l.jsx)(U, {
                     eligibilityStates: m,
                     userId: t,
                     roleId: c.id,
                     channelId: r.id,
-                    guildId: s.id,
+                    guildId: i.id,
                     onGetRolesClicked: () => {
-                        (0, M.c0)(s.id)
+                        (0, M.c0)(i.id)
                     },
                     onOpenProfile: () => {
                         (0, C.openUserProfileModal)({
                             userId: t,
                             messageId: n,
-                            guildId: s.id,
+                            guildId: i.id,
                             channelId: r.id,
                             roleId: c.id,
                             scrollTarget: w.bk.CONNECTIONS,
                             sourceAnalyticsLocations: o
-                        }), i()
+                        }), s()
                     }
                 }))
             })

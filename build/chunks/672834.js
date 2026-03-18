@@ -428,7 +428,7 @@ let eL = Object.freeze({
                 null != l && (0, s.L3)(e, async () => {
                     let {
                         default: e
-                    } = await Promise.all([n.e("94989"), n.e("87048")]).then(n.bind(n, 44536));
+                    } = await Promise.all([n.e("94989"), n.e("64667")]).then(n.bind(n, 44536));
                     return t => (0, i.jsx)(e, {
                         ...t,
                         channel: l

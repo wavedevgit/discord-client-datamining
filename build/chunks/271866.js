@@ -1,40 +1,41 @@
 /** chunk id: 271866 params = (module,exports,require) **/
-n.d(t, {
+"use strict";
+n.d(e, {
     SH: () => A,
     cL: () => T,
-    q1: () => E
+    q1: () => _
 });
 var i = n(73153),
-    l = n(795816),
-    r = n(627363),
-    s = n(587895),
+    r = n(795816),
+    s = n(627363),
+    l = n(587895),
     a = n(20015),
     o = n(793943),
     c = n(611010),
-    d = n(998218),
-    u = n(110782),
-    _ = n(652215);
-async function E(e, t) {
+    u = n(998218),
+    d = n(110782),
+    E = n(652215);
+async function _(t, e) {
     i.h.dispatch({
-        applicationId: e,
+        applicationId: t,
         type: "DEVELOPER_TEST_MODE_AUTHORIZATION_START"
     });
     try {
-        if (!await (0, l.Ir)(e)) throw Error("Do not have access!");
-        let n = s.A.getApplication(e);
-        null == n && (n = c.Ay.createFromServer(await r.Ay.fetchApplication(e)));
-        let o = (0, a.n)(n, _.gfo.EMBEDDED);
-        if (o && (null == t || !d.A.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
-        return o || u.Cd(n), i.h.dispatch({
+        if (!await (0, r.Ir)(t)) throw Error("Do not have access!");
+        let n = l.A.getApplication(t);
+        null == n && (n = c.Ay.createFromServer(await s.Ay.fetchApplication(t)));
+        let o = (0, a.n)(n, E.gfo.EMBEDDED);
+        if (o && (null == e || !u.A.URL_REGEX.test(e))) throw Error("Invalid Origin URL for embedded application");
+        return o || d.Cd(n), i.h.dispatch({
             type: "DEVELOPER_TEST_MODE_AUTHORIZATION_SUCCESS",
-            applicationId: e,
-            originURL: o ? t : null
+            applicationId: t,
+            originURL: o ? e : null
         }), n
-    } catch (t) {
+    } catch (e) {
         return i.h.dispatch({
             type: "DEVELOPER_TEST_MODE_AUTHORIZATION_FAIL",
-            applicationId: e,
-            error: t.message
+            applicationId: t,
+            error: e.message
         }), null
     }
 }

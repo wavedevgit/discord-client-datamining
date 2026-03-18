@@ -41,7 +41,7 @@ let I = e => {
         {
             analyticsLocations: D
         } = (0, _.Ay)(u.A.PREMIUM_SUBSCRIBER_NITRO_HOME),
-        [P, L] = s.useState(!1),
+        [L, P] = s.useState(!1),
         G = (0, r.bG)([c.A], () => c.A.useReducedMotion),
         M = (0, p.LQ)(),
         {
@@ -133,9 +133,9 @@ let I = e => {
                 }), (0, i.jsx)(o.L, {
                     innerRef: R,
                     onChange: e => {
-                        e && !P && (g.default.track(f.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        e && !L && (g.default.track(f.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                             location_stack: D
-                        }), L(!0))
+                        }), P(!0))
                     },
                     children: (0, i.jsx)("div", {
                         ref: R,

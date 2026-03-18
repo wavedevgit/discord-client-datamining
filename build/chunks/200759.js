@@ -4,8 +4,8 @@ n.d(t, {
     A: () => d
 });
 var l = n(627968),
-    i = n(64700),
-    s = n(990078),
+    s = n(64700),
+    i = n(990078),
     a = n(397927),
     r = n(351001),
     o = n(226884),
@@ -16,7 +16,7 @@ function d(e) {
     let {
         guild: t,
         message: n
-    } = e, d = i.useRef(null);
+    } = e, d = s.useRef(null);
     return (0, r.HU)(t.id, n.author.id) ? (0, l.jsx)(a.YNO, {
         targetElementRef: d,
         animation: a.YNO.Animation.TRANSLATE,
@@ -26,12 +26,12 @@ function d(e) {
         position: "right",
         renderPopout: e => {
             let {
-                closePopout: i
+                closePopout: s
             } = e;
             return (0, l.jsx)(o.A, {
                 guild: t,
                 message: n,
-                onClose: i
+                onClose: s
             })
         },
         children: e => {
@@ -42,7 +42,7 @@ function d(e) {
                 onClick: t,
                 tag: "span",
                 innerRef: d,
-                children: (0, l.jsx)(s.m, {
+                children: (0, l.jsx)(i.m, {
                     text: u.intl.string(u.t["v/OYd2"]),
                     children: (0, l.jsx)("div", {
                         className: c.C,

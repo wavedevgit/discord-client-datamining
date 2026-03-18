@@ -1,8 +1,8 @@
 /** chunk id: 674624 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => L,
+    Ay: () => P,
     jW: () => D,
-    w1: () => P
+    w1: () => L
 });
 var i, s = n(627968),
     l = n(64700),
@@ -33,7 +33,7 @@ var i, s = n(627968),
     R = n(345362),
     O = n(509442),
     D = ((i = {}).BEST_OF_NITRO = "bestof", i.APPEARANCE_STYLE = "appearance", i.UPGRADES = "upgrades", i.VIP_EXTRAS = "vip", i);
-let P = [{
+let L = [{
     id: "bestof",
     label: () => b.intl.string(b.t.q1u7nQ)
 }, {
@@ -47,7 +47,7 @@ let P = [{
     label: () => b.intl.string(b.t.DjEAcv)
 }];
 
-function L() {
+function P() {
     let e = (0, d.DP)(),
         t = (0, p.Lh)(),
         n = (0, T.N)(t)?.standard ?? null,
@@ -58,13 +58,13 @@ function L() {
             scrollPosition: C._F.TRY_IT_OUT,
             analyticsLocations: i
         }),
-        P = (0, l.useCallback)(() => {
+        L = (0, l.useCallback)(() => {
             let e = (0, x.Ci)("openClientThemes");
             (0, h.openUserSettings)(e ? A.X.DISPLAY_THEME_CATEGORY : A.X.APPEARANCE_PANEL, {
                 analyticsLocations: i
             })
         }, [i]),
-        L = (0, l.useCallback)(() => {
+        P = (0, l.useCallback)(() => {
             (0, h.openUserSettings)(A.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
                 analyticsLocations: i
             })
@@ -104,7 +104,7 @@ function L() {
             }),
             subscriptionRequired: !0,
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: L,
+            onCtaClick: P,
             primaryAsset: (0, s.jsx)(a.CIt, {
                 alt: "",
                 ariaHidden: !0
@@ -137,7 +137,7 @@ function L() {
                 themeCount: 20
             }),
             ctaText: b.intl.string(b.t.jVcuVY),
-            onCtaClick: P,
+            onCtaClick: L,
             primaryAsset: O.A,
             categories: ["bestof", "appearance"]
         }, {
@@ -258,6 +258,6 @@ function L() {
                 ariaHidden: !0
             }),
             categories: ["vip"]
-        }], [e, n, D, P, L, G, M, U, k]);
+        }], [e, n, D, L, P, G, M, U, k]);
     return (0, l.useMemo)(() => B.filter(e => null != e && !w.includes(e.id)), [B, w])
 }

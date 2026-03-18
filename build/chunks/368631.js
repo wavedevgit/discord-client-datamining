@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(517235),
     O = n(81107),
     D = n(513664),
-    P = n(115980),
-    L = n(130066),
+    L = n(115980),
+    P = n(130066),
     G = n(195548),
     M = n(768908),
     U = n(586685),
@@ -122,7 +122,7 @@ let Q = () => {
                 label: q.intl.string(q.t["+o1pDZ"]),
                 searchableTitles: [q.intl.string(q.t["+o1pDZ"])],
                 ariaLabel: q.intl.string(q.t["+o1pDZ"]),
-                element: L.A
+                element: P.A
             },
             [K.H.CONTENT_SOCIAL_DISCORD_TAB]: {
                 section: Z.nc_.CONTENT_AND_SOCIAL,
@@ -403,7 +403,7 @@ let Q = () => {
                 searchableTitles: [q.intl.string(q.t.oeUm2s)],
                 label: q.intl.string(q.t.oeUm2s),
                 ariaLabel: q.intl.string(q.t.oeUm2s),
-                element: P.Ay
+                element: L.Ay
             },
             [K.H.BILLING_PAYMENT_METHODS]: {
                 section: Z.nc_.BILLING,

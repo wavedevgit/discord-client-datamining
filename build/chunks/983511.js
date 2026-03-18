@@ -77,7 +77,7 @@ function D(e) {
         })
     })
 }
-async function P(e, t, n, i) {
+async function L(e, t, n, i) {
     let s, l, r = null != i ? i : (s = Object.values(S.A.boostSlots), null != (l = a().sortBy(s.filter(e => !(0, b.I5)(e)), e => [null != e.premiumGuildSubscription, null != e.cooldownEndsAt ? new Date(e.cooldownEndsAt) : null])[0]) ? l.id : null);
     if (null == r) throw Error("No slot to cancel");
     let o = (0, N.aE)(e, t);
@@ -89,7 +89,7 @@ async function P(e, t, n, i) {
     }, (0, N.UC)(o, e.currency, e.paymentSourceId), n)
 }
 
-function L(e) {
+function P(e) {
     let {
         premiumSubscription: t,
         guildBoostSlotId: n,
@@ -112,7 +112,7 @@ function L(e) {
         y && D.current()
     }, [y]);
     let {
-        premiumSubscriptionPlan: L,
+        premiumSubscriptionPlan: P,
         premiumGuildPlan: G
     } = (0, o.cf)([f.A], () => {
         let e = f.A.get(t.planId);
@@ -136,7 +136,7 @@ function L(e) {
         analyticsLocations: M,
         analyticsLocation: _.A.GUILD_BOOST_SLOT_CANCELLATION_MODAL_RENEWAL_INVOICE_PREVIEW
     });
-    if (null == V || null == L || null == G || null == U) return (0, i.jsx)(d.y$y, {});
+    if (null == V || null == P || null == G || null == U) return (0, i.jsx)(d.y$y, {});
     let w = t.items.some(e => {
             let {
                 planId: t
@@ -158,7 +158,7 @@ function L(e) {
         {
             interval: F,
             intervalCount: Y
-        } = L,
+        } = P,
         z = R.intl.format(R.t["0W23cu"], {
             endDate: V.subscriptionPeriodStart
         });
@@ -207,7 +207,7 @@ function L(e) {
                 disabled: u,
                 onClick: async () => {
                     try {
-                        g(!0), C(null), await P(t, b, M, n), r()
+                        g(!0), C(null), await L(t, b, M, n), r()
                     } catch (e) {
                         C(R.intl.string(R.t["5mlOCW"])), g(!1)
                     }
@@ -286,7 +286,7 @@ function M(e) {
                 "data-migration-pending": !0,
                 transitionState: l,
                 parentComponent: "GuildBoostSlotCancellationModal",
-                children: (0, i.jsx)(L, {
+                children: (0, i.jsx)(P, {
                     premiumSubscription: r,
                     guildBoostSlotId: n.id,
                     fractionalPremiumInfo: u,

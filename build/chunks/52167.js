@@ -33,8 +33,8 @@ var u = n(355097),
     R = n(753563),
     O = n(584378),
     D = n(747918),
-    P = n(330290),
-    L = n(252261),
+    L = n(330290),
+    P = n(252261),
     G = n(106731);
 let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
     U = e => {
@@ -131,25 +131,25 @@ let M = (e, t, n) => (0, s.Mw)(e) ? t : n,
             stickers: {
                 title: _.intl.string(_.t["1c+xwT"]),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, f, P),
+                imageSource: M(s, f, L),
                 imageClassName: t.stickersImage
             },
             stickersBurst: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, f, P),
+                imageSource: M(s, f, L),
                 imageClassName: t.stickersImage
             },
             stickersPremiumPerk: {
                 title: _.intl.string(_.t.tzdIwI),
                 description: _.intl.string(_.t.hJG8ZN),
-                imageSource: M(s, f, P),
+                imageSource: M(s, f, L),
                 imageClassName: t.stickersImage
             },
             streaming: {
                 title: _.intl.string(_.t.RSXQYO),
                 description: _.intl.string(_.t.ymCPxp),
-                imageSource: L,
+                imageSource: P,
                 imageClassName: t.streamingImage
             },
             superReactions: {

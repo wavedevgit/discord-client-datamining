@@ -4,10 +4,10 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(73153),
-    r = n(927813),
-    l = n(596720),
+    l = n(927813),
+    r = n(596720),
     s = n(859524);
-let o = 7 * r.A.Millis.DAY,
+let o = 7 * l.A.Millis.DAY,
     d = {
         readIdToTimestampMap: {}
     };
@@ -47,7 +47,7 @@ let u = new c(a.h, {
         let {
             items: t
         } = e;
-        for (let e of t) e.type !== l.Mm.MESSAGE || null != d.readIdToTimestampMap[e.id] || e.data.message_context?.external_content_application_id != null || (0, s.$r)(e.data.channel_id, e.data.message_id) || (d.readIdToTimestampMap[e.id] = 0)
+        for (let e of t) e.type !== r.Mm.MESSAGE || null != d.readIdToTimestampMap[e.id] || e.data.message_context?.external_content_application_id != null || (0, s.$r)(e.data.channel_id, e.data.message_id) || (d.readIdToTimestampMap[e.id] = 0)
     },
     CLEAR_ICYMI_READ_STATES: function() {
         d.readIdToTimestampMap = {}

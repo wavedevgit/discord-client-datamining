@@ -5,8 +5,8 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var i = n(503698),
-    s = n.n(i),
+var s = n(503698),
+    i = n.n(s),
     a = n(311907),
     r = n(342952),
     o = n(397927),
@@ -27,7 +27,7 @@ var i = n(503698),
 let b = function(e) {
     let {
         channel: t
-    } = e, n = (0, a.bG)([p.A], () => p.A.isInChannel(t.id)), i = (0, m.A)(t), b = (0, f.Ay)(t), E = i.map(e => x.Ay.getName(t.guild_id, t.id, e)), I = i.length <= 5, y = (0, a.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(t.id)[0]);
+    } = e, n = (0, a.bG)([p.A], () => p.A.isInChannel(t.id)), s = (0, m.A)(t), b = (0, f.Ay)(t), E = s.map(e => x.Ay.getName(t.guild_id, t.id, e)), I = s.length <= 5, y = (0, a.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(t.id)[0]);
     return (0, l.jsxs)(c.Uq, {
         className: C.jC,
         children: [null != y && (0, l.jsxs)("div", {
@@ -56,7 +56,7 @@ let b = function(e) {
                 children: b
             })]
         }), (0, l.jsxs)("div", {
-            className: s()(C.fM, {
+            className: i()(C.fM, {
                 [C.Tj]: I
             }),
             children: [I ? (0, l.jsx)(o.Heading, {
@@ -64,7 +64,7 @@ let b = function(e) {
                 variant: "heading-md/semibold",
                 children: (0, A.X)(E)
             }) : null, (0, l.jsx)(r.A, {
-                users: i,
+                users: s,
                 guildId: t.guild_id,
                 channelId: t.id,
                 size: o._3J.SIZE_24,

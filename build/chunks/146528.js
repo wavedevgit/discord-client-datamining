@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(568286),
     O = n(638182),
     D = n(652215),
-    P = n(746080),
-    L = n(355097),
+    L = n(746080),
+    P = n(355097),
     G = n(985018),
     M = n(185814);
 let U = e => {
@@ -256,9 +256,9 @@ let U = e => {
                         })
                     },
                     onChangePlanClick: () => {
-                        null != r && ((0, f.pX)(D.BVt.CHANNEL(r.id, P.VV.ROLE_SUBSCRIPTIONS)), (0, b.default)(), _.A.show(D.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
+                        null != r && ((0, f.pX)(D.BVt.CHANNEL(r.id, L.VV.ROLE_SUBSCRIPTIONS)), (0, b.default)(), _.A.show(D.kqX.BACK_TO_PREVIOUS_SCREEN, void 0, G.intl.string(G.t.DvbaM4), () => {
                             S.A.setState({
-                                subsection: L.nR
+                                subsection: P.nR
                             }), (0, N.openUserSettings)(C.X.SUBSCRIPTIONS_PANEL)
                         }))
                     },

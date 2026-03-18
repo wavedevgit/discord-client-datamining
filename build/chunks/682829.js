@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(166403),
     O = n(469778),
     D = n(954571),
-    P = n(975571),
-    L = n(927578),
+    L = n(975571),
+    P = n(927578),
     G = n(637073),
     M = n(887997),
     U = n(177653),
@@ -75,7 +75,7 @@ function K() {
     }, []), (0, i.jsx)(o.nVY, {
         label: Y.intl.string(Y.t["2GKrvn"]),
         description: Y.intl.string(Y.t.kNEjGm),
-        children: null != e && L.Ay.hasAccountCredit(e) ? (0, i.jsx)(U.A, {
+        children: null != e && P.Ay.hasAccountCredit(e) ? (0, i.jsx)(U.A, {
             className: z.fX,
             entitlements: e
         }) : (0, i.jsx)(W, {})
@@ -98,7 +98,7 @@ let q = function() {
         p = (0, r.bG)([y.A], () => null != t && null != t.paymentSourceId ? y.A.getPaymentSource(t.paymentSourceId) : null, [t]),
         T = (0, r.bG)([R.A], () => R.A.hasFetchedSubscriptions()),
         O = (0, r.bG)([j.A], () => j.A.isBusy),
-        L = (0, h.Y)(),
+        P = (0, h.Y)(),
         U = w.A.useField("subsection");
     s.useEffect(() => {
         (0, N._)(null != U ? X[U] : b.X.SUBSCRIPTIONS_PANEL)
@@ -115,7 +115,7 @@ let q = function() {
         (0, m.zS)(), c.hP(), (0, u.CD)(), c.$o()
     }), function() {
         w.A.resetState()
-    }), []), I.A.enabled) ? (0, i.jsx)(g.A, {}) : T && L ? U === F.nR ? (0, i.jsx)(S.A, {
+    }), []), I.A.enabled) ? (0, i.jsx)(g.A, {}) : T && P ? U === F.nR ? (0, i.jsx)(S.A, {
         onGoBack: () => w.A.setState({
             subsection: null
         })
@@ -141,7 +141,7 @@ let q = function() {
                     variant: "text-md/normal",
                     className: z.JU,
                     children: Y.intl.format(Y.t["7Zi06b"], {
-                        helpCenterLink: P.A.getArticleURL(H.MVz.FRACTIONAL_PREMIUM_ABOUT)
+                        helpCenterLink: L.A.getArticleURL(H.MVz.FRACTIONAL_PREMIUM_ABOUT)
                     })
                 }), (0, i.jsx)(M.A, {
                     className: z.fX,

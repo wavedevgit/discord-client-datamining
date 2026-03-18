@@ -1,119 +1,119 @@
 /** chunk id: 133238 params = (module,exports,require) **/
-t.d(n, {
-    m: () => b,
-    y: () => C
+t.d(e, {
+    m: () => x,
+    y: () => j
 });
 var i = t(627968);
 t(64700);
 var r = t(735438),
     l = t.n(r),
     a = t(311907),
-    d = t(397927),
-    o = t(260509),
-    u = t(808728),
+    c = t(397927),
+    d = t(260509),
+    o = t(808728),
     s = t(71393),
-    c = t(181079),
-    f = t(422258),
-    A = t(93055),
-    h = t(5180),
-    _ = t(652215),
-    v = t(665606),
-    E = t(985018);
+    u = t(181079),
+    A = t(422258),
+    h = t(93055),
+    _ = t(5180),
+    f = t(652215),
+    b = t(665606),
+    g = t(985018);
 
-function p(e) {
-    return e ? E.intl.string(v.default.TN4nAX) : E.intl.string(v.default.G9fGlP)
+function E(n) {
+    return n ? g.intl.string(b.default.TN4nAX) : g.intl.string(b.default.G9fGlP)
 }
 
-function b(e) {
-    let n = (0, a.bG)([u.Ay], () => u.Ay.getChannels(_.YYv))[_.rbe.GUILD_CATEGORY],
+function x(n) {
+    let e = (0, a.bG)([o.Ay], () => o.Ay.getChannels(f.YYv))[f.rbe.GUILD_CATEGORY],
         {
             notifyFavoriteAdded: r
-        } = (0, A.CJ)(),
+        } = (0, h.CJ)(),
         {
-            hasAccess: b,
-            isExperimentEnabled: C,
-            hasHigherPrivileges: m
-        } = (0, A.TW)("useAddToFavoritesItem"),
-        O = (0, h.IF)(e, m),
-        g = (0, a.bG)([s.A], () => {
-            if (null == e.guild_id) return !0;
-            let n = s.A.getGuild(e.guild_id);
-            return null != n && !(0, o.DG)(n)
+            hasAccess: x,
+            isExperimentEnabled: j,
+            hasHigherPrivileges: p
+        } = (0, h.TW)("useAddToFavoritesItem"),
+        v = (0, _.IF)(n, p),
+        C = (0, a.bG)([s.A], () => {
+            if (null == n.guild_id) return !0;
+            let e = s.A.getGuild(n.guild_id);
+            return null != e && !(0, d.DG)(e)
         }),
-        T = !__OVERLAY__ && O && g,
-        I = (0, a.bG)([c.A], () => c.A.isFavorite(e.id)),
-        R = p(!1);
+        N = !__OVERLAY__ && v && C,
+        y = (0, a.bG)([u.A], () => u.A.isFavorite(n.id)),
+        G = E(!1);
 
-    function y(e, n, t) {
-        return (0, i.jsx)(d.Drp, {
+    function m(n, e, t) {
+        return (0, i.jsx)(c.Drp, {
             id: "favorite-channel",
-            label: R,
+            label: G,
             leadingAccessory: {
                 type: "icon",
-                icon: e
+                icon: n
             },
-            iconLeft: e,
-            action: n,
+            iconLeft: n,
+            action: e,
             children: t
         })
     }
-    if (!C || !T) return null;
-    if (!b) return y(d.tvc, () => (0, d.mMO)(async () => {
+    if (!j || !N) return null;
+    if (!x) return m(c.tvc, () => (0, c.mMO)(async () => {
         let {
-            default: e
+            default: n
         } = await t.e("48609").then(t.bind(t, 168088));
-        return n => (0, i.jsx)(e, {
-            ...n,
+        return e => (0, i.jsx)(n, {
+            ...e,
             source: "channel_context_menu"
         })
     }));
-    if (I) return null;
+    if (y) return null;
     let [
-        [G], S
-    ] = l().partition(n, e => "null" === e.channel.id);
+        [T], O
+    ] = l().partition(e, n => "null" === n.channel.id);
 
-    function N(n) {
-        r(), c.A.favoriteGuildEnabled || (0, f.tV)(!0, "channel_context_menu"), (0, f.Jz)(e.id, n, "channel_context_menu")
+    function M(e) {
+        r(), u.A.favoriteGuildEnabled || (0, A.tV)(!0, "channel_context_menu"), (0, A.Jz)(n.id, e, "channel_context_menu")
     }
-    if (0 === S.length) return y(d.Gg5, () => N(null));
-    let L = E.intl.string(v.default.CgmkFJ);
-    return y(d.Gg5, () => N(null), (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(d.rXV, {
-            children: (0, i.jsx)(d.Drp, {
-                id: `favorite-${G.channel.id}`,
+    if (0 === O.length) return m(c.Gg5, () => M(null));
+    let L = g.intl.string(b.default.CgmkFJ);
+    return m(c.Gg5, () => M(null), (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(c.rXV, {
+            children: (0, i.jsx)(c.Drp, {
+                id: `favorite-${T.channel.id}`,
                 label: L,
-                action: () => N("null" === G.channel.id ? null : G.channel.id)
-            }, G.channel.id)
-        }), (0, i.jsx)(d.rXV, {
-            children: S.map(e => (0, i.jsx)(d.Drp, {
-                id: `favorite-${e.channel.id}`,
-                label: e.channel.name,
-                action: () => N(e.channel.id)
-            }, e.channel.id))
+                action: () => M("null" === T.channel.id ? null : T.channel.id)
+            }, T.channel.id)
+        }), (0, i.jsx)(c.rXV, {
+            children: O.map(n => (0, i.jsx)(c.Drp, {
+                id: `favorite-${n.channel.id}`,
+                label: n.channel.name,
+                action: () => M(n.channel.id)
+            }, n.channel.id))
         })]
     }))
 }
 
-function C(e) {
-    let n = (0, a.bG)([c.A], () => c.A.isFavorite(e.id)),
+function j(n) {
+    let e = (0, a.bG)([u.A], () => u.A.isFavorite(n.id)),
         {
             hasAccess: r
-        } = (0, A.TW)("useRemoveFromFavoritesItem");
-    return !__OVERLAY__ && r && n ? (0, i.jsx)(d.Drp, {
+        } = (0, h.TW)("useRemoveFromFavoritesItem");
+    return !__OVERLAY__ && r && e ? (0, i.jsx)(c.Drp, {
         id: "favorite-channel",
-        label: p(!0),
+        label: E(!0),
         color: "danger",
-        action: () => e.type === _.rbe.GUILD_CATEGORY ? (0, d.mMO)(async () => {
+        action: () => n.type === f.rbe.GUILD_CATEGORY ? (0, c.mMO)(async () => {
             let {
-                default: n
+                default: e
             } = await t.e("52210").then(t.bind(t, 862377));
-            return t => (0, i.jsx)(n, {
+            return t => (0, i.jsx)(e, {
                 ...t,
                 onConfirm: () => {
-                    t.onClose(), (0, f.i_)(e.id)
+                    t.onClose(), (0, A.i_)(n.id)
                 },
-                channel: e
+                channel: n
             })
-        }) : (0, f.i_)(e.id)
+        }) : (0, A.i_)(n.id)
     }) : null
 }

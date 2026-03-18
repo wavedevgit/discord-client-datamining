@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(110259),
-    r = n(417597),
-    l = n(342494),
+    l = n(417597),
+    r = n(342494),
     s = n(139286),
     o = n(997509),
     d = n(260509),
@@ -22,7 +22,7 @@ function g(e) {
         guildId: t,
         markAsDismissed: n,
         targetElementRef: g
-    } = e, p = (0, r.bG)([c.A, u.default], () => {
+    } = e, p = (0, l.bG)([c.A, u.default], () => {
         let e = u.default.getCurrentUser(),
             n = c.A.getGuild(t);
         return null != n && (0, d.bM)(n, e)
@@ -34,7 +34,7 @@ function g(e) {
             guild_id: t,
             is_owner: p
         }
-    }), (0, i.jsx)(l.AM, {
+    }), (0, i.jsx)(r.AM, {
         targetElementRef: g,
         title: _.intl.string(_.t.C0m4rQ),
         body: _.intl.string(_.t.zOHfEX),

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(138298),
-    r = n(761640),
-    l = n(954571),
+    l = n(761640),
+    r = n(954571),
     s = n(203982),
     o = n(957283),
     d = n(822082),
@@ -32,9 +32,9 @@ function A(e) {
         onClick: e => {
             e.stopPropagation(), a.A.openPrivateChannelAsSidebar({
                 channelId: A.id,
-                baseChannelId: r.fe,
+                baseChannelId: l.fe,
                 hasSingleMessageRequest: _
-            }), l.default.track(u.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
+            }), r.default.track(u.HAw.MESSAGE_REQUEST_PREVIEW_VIEWED, {
                 is_spam: !1,
                 channel_id: A.id,
                 other_user_id: h.id

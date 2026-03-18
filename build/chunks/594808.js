@@ -6,9 +6,9 @@ n.d(t, {
     S0: () => f
 });
 var l = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    s = n(64700),
+    i = n(503698),
+    a = n.n(i),
     r = n(27867),
     o = n(311907),
     u = n(397927),
@@ -46,26 +46,26 @@ function f(e) {
     let {
         className: t,
         icon: n,
-        text: i,
-        color: s
+        text: s,
+        color: i
     } = e;
     return (0, l.jsxs)("div", {
         className: a()(p.iE, t),
         children: [n, (0, l.jsx)(u.Text, {
             variant: "text-md/normal",
-            color: s,
+            color: i,
             scaleFontToUserSetting: !0,
-            children: i
+            children: s
         })]
     })
 }
-let v = i.memo(function(e) {
+let v = s.memo(function(e) {
     let {
         message: t,
         className: n,
-        component: s
+        component: i
     } = e, a = (0, r.A)(), u = (0, o.bG)([d.Ay], () => d.Ay.getInteraction(t), [t]);
-    i.useEffect(() => {
+    s.useEffect(() => {
         let e = null;
         if (t.hasFlag(h.pr7.LOADING) && null != u) {
             let n = (0, m.I5)(t.id) - Date.now();
@@ -76,7 +76,7 @@ let v = i.memo(function(e) {
         }
     }, [a, u, t]);
     let p = null;
-    if (null == s) p = function(e, t) {
+    if (null == i) p = function(e, t) {
         switch ((0, m.fK)(t, e)) {
             case m.h0.SENDING:
                 return A(g.intl.string(g.t.RiLfBY));
@@ -91,7 +91,7 @@ let v = i.memo(function(e) {
         }
     }(u, t);
     else {
-        let e = (0, c.zv)(u, t, s);
+        let e = (0, c.zv)(u, t, i);
         null != e && (p = x(e))
     }
     if (null == p) return null;

@@ -1,6 +1,6 @@
 /** chunk id: 971105 params = (module,exports,require) **/
 n.d(t, {
-    A: () => P
+    A: () => L
 });
 var i = n(627968),
     s = n(64700),
@@ -153,7 +153,7 @@ function D(e) {
     return !(null == t || null == n || Object.values(N.pe).includes(t) || (0, f.ys)(n))
 }
 
-function P(e) {
+function L(e) {
     let t = (0, c.bG)([T.A], () => T.A.getPayments()),
         n = (0, c.bG)([S.A], () => S.A.getPremiumTypeSubscription()),
         l = s.useMemo(() => new Set(t.filter(D).map(e => {

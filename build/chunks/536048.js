@@ -1,7 +1,7 @@
 /** chunk id: 536048 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    I: () => i
+    I: () => s
 });
 let l = (0, n(600975).C)({
     id: "2025-04_native_markdown",
@@ -25,7 +25,7 @@ let l = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
+function s(e) {
     let {
         location: t
     } = e;

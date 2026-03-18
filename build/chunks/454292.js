@@ -73,7 +73,7 @@ function D(e) {
     })
 }
 
-function P(e) {
+function L(e) {
     let {
         settings: {
             enabled: t,
@@ -101,7 +101,7 @@ function P(e) {
     })
 }
 
-function L(e) {
+function P(e) {
     let {
         settings: {
             enabled: t,
@@ -406,7 +406,7 @@ function w(e) {
     };
     return s.useEffect(() => (window.addEventListener("mousemove", m), () => window.removeEventListener("mousemove", m)), []), (0, i.jsxs)(d.BJc, {
         gap: 24,
-        children: [(0, i.jsx)(P, {
+        children: [(0, i.jsx)(L, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(k, {
@@ -417,7 +417,7 @@ function w(e) {
         }), (0, i.jsx)(M, {
             settings: l,
             updateSettings: u
-        }), (0, i.jsx)(L, {
+        }), (0, i.jsx)(P, {
             settings: l,
             updateSettings: u
         }), (0, i.jsx)(U, {

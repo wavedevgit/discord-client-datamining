@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(340091),
     O = n(998663),
     D = n(817577),
-    P = n(419455),
-    L = n(288604),
+    L = n(419455),
+    P = n(288604),
     G = n(893160),
     M = n(509442);
 
@@ -140,7 +140,7 @@ function U() {
                 title: y.intl.string(y.t.OLtTrt),
                 description: y.intl.string(y.t["di/pXR"]),
                 onCtaClick: B,
-                primaryAsset: P.A,
+                primaryAsset: L.A,
                 ctaText: y.intl.string(y.t.jVcuVY),
                 pillText: y.intl.string(y.t.y2b7CA)
             }, {
@@ -168,7 +168,7 @@ function U() {
                 id: b.CUSTOM_APP_ICONS_CARD_ID,
                 title: y.intl.string(y.t["GU+wqh"]),
                 description: y.intl.string(y.t["1uPk1Z"]),
-                primaryAsset: L.A,
+                primaryAsset: P.A,
                 ctaText: y.intl.string(y.t.y9TxXV),
                 onCtaClick: F
             }],

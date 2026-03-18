@@ -139,7 +139,7 @@ function b(e) {
             let e = v[y];
             if (e?.type === x.rD.VOICE_CHANNEL) return e.record.id
         })(),
-        P = O > 0 || "" === N ? {
+        L = O > 0 || "" === N ? {
             innerId: C,
             innerRole: "listbox",
             innerAriaLabel: h.intl.string(h.t["+N3fW7"]),
@@ -220,7 +220,7 @@ function b(e) {
             spellCheck: !1,
             autoFocus: !0
         }),
-        listProps: P
+        listProps: L
     })
 }
 

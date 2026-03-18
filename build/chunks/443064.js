@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(975571),
     O = n(427262),
     D = n(837921),
-    P = n(253932),
-    L = n(780964),
+    L = n(253932),
+    P = n(780964),
     G = n(192501),
     M = n(840065),
     U = n(652215),
@@ -44,7 +44,7 @@ var i = n(627968),
 let H = D.Ay.getEnableHardwareAcceleration() ? c.JsQ : c.euF;
 
 function F() {
-    (0, M.openUserSettings)(L.X.PROFILE_PANEL)
+    (0, M.openUserSettings)(P.X.PROFILE_PANEL)
 }
 
 function Y(e) {
@@ -358,7 +358,7 @@ function Z(e) {
     } = e, n = (0, x.A)({
         id: t.id,
         label: V.intl.string(V.t["/AXYnE"])
-    }), l = P.Q_.useSetting(), a = s.useRef(null);
+    }), l = L.Q_.useSetting(), a = s.useRef(null);
     return l && y.p5 ? (0, i.jsx)(c.YNO, {
         targetElementRef: a,
         renderPopout: e => {
@@ -452,7 +452,7 @@ function q(e) {
 function J(e) {
     let {
         currentUser: t
-    } = e, n = (0, b.Ay)(t.id), s = (0, C.A)(n), l = P.jP.useSetting(), a = (0, r.bG)([f.A], () => f.A.getErrors()), o = a?.avatar?.[0], {
+    } = e, n = (0, b.Ay)(t.id), s = (0, C.A)(n), l = L.jP.useSetting(), a = (0, r.bG)([f.A], () => f.A.getErrors()), o = a?.avatar?.[0], {
         avatarSrc: d,
         avatarDecorationSrc: _
     } = (0, N.A)({

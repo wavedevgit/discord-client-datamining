@@ -4,9 +4,9 @@ n.d(t, {
     A: () => p
 });
 var l = n(627968),
-    i = n(64700),
-    s = n(503698),
-    a = n.n(s),
+    s = n(64700),
+    i = n(503698),
+    a = n.n(i),
     r = n(311907),
     o = n(473193),
     u = n(397927),
@@ -19,7 +19,7 @@ let p = function(e) {
     let {
         className: t,
         compact: n = !1,
-        contentOnly: s = !1,
+        contentOnly: i = !1,
         zalgo: p = !0,
         preview: A = !1,
         disableInteraction: x = !1,
@@ -44,9 +44,9 @@ let p = function(e) {
         onMouseEnter: M,
         onMouseLeave: k,
         ...O
-    } = e, w = (0, r.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), G = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [D, P] = i.useState(!1), L = i.useCallback(e => {
+    } = e, w = (0, r.bG)([h.A], () => S?.guildId == null || S?.colorRoleId == null ? null : h.A.getRole(S.guildId, S.colorRoleId)), G = (0, m.jV)(S?.guildId, w) && (0, d.kz)(S), [D, P] = s.useState(!1), L = s.useCallback(e => {
         P(!0), M?.(e)
-    }, [M]), U = i.useCallback(e => {
+    }, [M]), U = s.useCallback(e => {
         P(!1), k?.(e)
     }, [k]), $ = (0, c.W)({
         location: "BaseMessage"
@@ -62,7 +62,7 @@ let p = function(e) {
                     [g.D7]: G,
                     [g.e8]: $ && S?.displayNameStyles != null && S?.guildId == null,
                     [g.iE]: !0,
-                    [g.kl]: s,
+                    [g.kl]: i,
                     [g.oE]: n,
                     [g.VH]: A,
                     [g.E]: !n,

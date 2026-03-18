@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(873263),
     o = n(323889),
     d = n(311907),
@@ -33,8 +33,8 @@ function b(e) {
     let {
         assetImage: t,
         assetVideo: n
-    } = e, r = a.useRef(null);
-    (0, T.A)(r, S.rE.QUEST_HOME_DESKTOP);
+    } = e, l = a.useRef(null);
+    (0, T.A)(l, S.rE.QUEST_HOME_DESKTOP);
     let s = a.useMemo(() => (null != n ? (0, g.WV)(n.url) : null) ?? t.url, [n, t]);
     return null == n ? (0, i.jsxs)("div", {
         className: y.Tv,
@@ -48,14 +48,14 @@ function b(e) {
                 alt: t.altText
             })
         }), (0, i.jsx)("div", {
-            className: l()(y.LO, y.jx, y.hw),
+            className: r()(y.LO, y.jx, y.hw),
             children: (0, i.jsx)("img", {
                 className: y.LY,
                 src: t.url,
                 alt: ""
             })
         }), (0, i.jsx)("div", {
-            className: l()(y.LO, y.jx, y.Co),
+            className: r()(y.LO, y.jx, y.Co),
             children: (0, i.jsx)("img", {
                 className: y.LY,
                 src: t.url,
@@ -71,7 +71,7 @@ function b(e) {
             children: (0, i.jsx)(I.N, {
                 showImage: !1,
                 showVideo: !0,
-                assetRef: r,
+                assetRef: l,
                 imageAsset: {
                     alt: n.altText,
                     className: y.LY,
@@ -101,7 +101,7 @@ function O(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, r = (0, s.zy)(), g = (0, s.W6)(), {
+    } = e, l = (0, s.zy)(), g = (0, s.W6)(), {
         enabled: I
     } = (0, h.Z)({
         location: S.rE.QUEST_HOME_DESKTOP
@@ -120,7 +120,7 @@ function O(e) {
         questContent: m.uF.QUEST_HOME_HERO,
         sourceQuestContent: m.uF.QUEST_HOME_HERO,
         children: e => (0, i.jsx)("div", {
-            className: l()(y.iE, "theme-midnight", {
+            className: r()(y.iE, "theme-midnight", {
                 [y.Qx]: !I
             }),
             ref: t => {
@@ -179,7 +179,7 @@ function O(e) {
                             }), t.ctaQuests.map((e, a) => P.has(e.questId) ? (0, i.jsx)(c.Button, {
                                 onClick: () => {
                                     g.replace({
-                                        ...r,
+                                        ...l,
                                         hash: void 0
                                     }), n?.(), window.requestIdleCallback(() => {
                                         (0, C.navigateToQuestHome)({
@@ -210,7 +210,7 @@ function O(e) {
 
 function L() {
     return (0, i.jsx)("div", {
-        className: l()(y.iE, y.FG, y.B3),
+        className: r()(y.iE, y.FG, y.B3),
         children: (0, i.jsx)(c.y$y, {})
     })
 }

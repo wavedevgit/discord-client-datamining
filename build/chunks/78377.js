@@ -1,12 +1,12 @@
 /** chunk id: 78377 params = (module,exports,require) **/
 "use strict";
 n.d(t, {
-    O: () => i,
-    p: () => s
+    O: () => s,
+    p: () => i
 });
 var l = n(64700);
-let i = l.createContext(null);
+let s = l.createContext(null);
 
-function s() {
-    return l.useContext(i)
+function i() {
+    return l.useContext(s)
 }

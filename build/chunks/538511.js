@@ -34,8 +34,8 @@ var s = n(503698),
     R = n(110919),
     O = n(422936),
     D = n(795269),
-    P = n(327479),
-    L = n(473702),
+    L = n(327479),
+    P = n(473702),
     G = n(788868),
     M = n(652215),
     U = n(601107),
@@ -150,7 +150,7 @@ function X() {
             className: V.MS,
             children: k.intl.string(k.t.R0GJL2)
         }),
-        buttons: (0, i.jsx)(P.A, {
+        buttons: (0, i.jsx)(L.A, {
             className: V.au,
             onClick: () => (0, h.A)({
                 subscriptionTier: G.pe.TIER_1,
@@ -190,13 +190,13 @@ let W = function(e) {
         et = (0, v.nf)(),
         en = (0, j.d)(),
         ei = () => {
-            (t.status === M.Dmq.ACTIVE || t.status === M.Dmq.PAST_DUE || t.status === M.Dmq.PAUSED) && ea(L.g.PAUSE_SELECT)
+            (t.status === M.Dmq.ACTIVE || t.status === M.Dmq.PAST_DUE || t.status === M.Dmq.PAUSED) && ea(P.g.PAUSE_SELECT)
         },
         es = () => {
             (t.status === M.Dmq.ACTIVE || t.status === M.Dmq.PAST_DUE || t.status === M.Dmq.PAUSE_PENDING || q) && ea()
         },
         el = () => {
-            t.status === M.Dmq.BILLING_RETRY && ea(L.g.CONFIRM)
+            t.status === M.Dmq.BILLING_RETRY && ea(P.g.CONFIRM)
         },
         ea = e => {
             (0, c.mMO)(async () => {
@@ -273,10 +273,10 @@ let W = function(e) {
             })
         },
         ed = () => {
-            t.status === M.Dmq.PAUSED && ea(L.g.PAUSE_SELECT)
+            t.status === M.Dmq.PAUSED && ea(P.g.PAUSE_SELECT)
         },
         ec = () => {
-            ea(L.g.WHAT_YOU_LOSE)
+            ea(P.g.WHAT_YOU_LOSE)
         },
         eu = b.Ay.getPlanIdFromInvoice(t, s);
     if ((0, p.m1)(eu)) return null;
@@ -373,7 +373,7 @@ let W = function(e) {
                     }), (0, i.jsx)(d.m_, {
                         text: n,
                         asContainer: !0,
-                        children: (0, i.jsx)(P.A, {
+                        children: (0, i.jsx)(L.A, {
                             className: l()(V.au, V.lB),
                             disabled: e,
                             onClick: () => {

@@ -33,8 +33,8 @@ var s = n(503698),
     R = n(194509),
     O = n(396375),
     D = n(65470),
-    P = n(792656),
-    L = n(511484),
+    L = n(792656),
+    P = n(511484),
     G = n(939724),
     M = n(795269),
     U = n(473702),
@@ -89,7 +89,7 @@ let q = (e, t, s) => {
             M = null != O && O.status === Y.Dmq.CANCELED && null != p,
             k = (0, b.V)(),
             K = (0, C.O)(),
-            Z = (0, L.U9)(K, F.pe.TIER_2) ? F.pe.TIER_2 : void 0,
+            Z = (0, P.U9)(K, F.pe.TIER_2) ? F.pe.TIER_2 : void 0,
             J = null != O && O.status !== Y.Dmq.ACCOUNT_HOLD && O.hasAnyPremiumNitro,
             Q = (0, A.A)().isFractionalPremiumActive && !J && null == R && !M,
             $ = (0, r.bG)([u.A], () => u.A.useReducedMotion),
@@ -127,7 +127,7 @@ let q = (e, t, s) => {
                     })]
                 }), (0, i.jsxs)("div", {
                     className: Q || M ? W.UJ : void 0,
-                    children: [Q && (0, i.jsx)(P.A, {
+                    children: [Q && (0, i.jsx)(L.A, {
                         size: "md",
                         hasActivePromotion: !!n,
                         subscriptionTier: k?.subscription_trial?.sku_id ?? Z
@@ -157,7 +157,7 @@ let q = (e, t, s) => {
             buttonVisibilityRef: u
         } = en(), {
             analyticsLocations: g
-        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), h = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()), p = null != h && h.status === Y.Dmq.CANCELED && null != a, E = (0, b.V)(), S = (0, C.O)(), f = (0, L.U9)(S, F.pe.TIER_2) ? F.pe.TIER_2 : void 0, N = null != h && h.status !== Y.Dmq.ACCOUNT_HOLD && h.hasAnyPremiumNitro, I = (0, A.A)().isFractionalPremiumActive && !N && !p;
+        } = (0, m.Ay)(_.A.PREMIUM_MARKETING_HERO_CTA), h = (0, r.bG)([x.A], () => x.A.getPremiumTypeSubscription()), p = null != h && h.status === Y.Dmq.CANCELED && null != a, E = (0, b.V)(), S = (0, C.O)(), f = (0, P.U9)(S, F.pe.TIER_2) ? F.pe.TIER_2 : void 0, N = null != h && h.status !== Y.Dmq.ACCOUNT_HOLD && h.hasAnyPremiumNitro, I = (0, A.A)().isFractionalPremiumActive && !N && !p;
         return (0, i.jsxs)("div", {
             className: l()(X.kL, t),
             "data-testid": "subscriber-nitro-home-hero-header",

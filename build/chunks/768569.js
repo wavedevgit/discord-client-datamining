@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(627968);
 n(64700);
 var a = n(342494),
-    r = n(397927),
-    l = n(88001),
+    l = n(397927),
+    r = n(88001),
     s = n(49999),
     o = n(519412),
     d = n(985018),
@@ -19,11 +19,11 @@ let u = e => {
     } = e, h = (0, i.jsx)(a.AM, {
         targetElementRef: t,
         title: d.intl.format(o.default["c+NBSl"], {
-            premiumGroupProductName: (0, l.DP)()
+            premiumGroupProductName: (0, r.DP)()
         }),
         body: d.intl.format(o.default.MuUV5u, {
-            premiumGroupProductName: (0, l.DP)(),
-            totalSeats: l.aw
+            premiumGroupProductName: (0, r.DP)(),
+            totalSeats: r.aw
         }),
         graphic: {
             type: "image",
@@ -42,7 +42,7 @@ let u = e => {
         actions: [{
             text: d.intl.string(o.default["IO+nlU"]),
             onClick: () => {
-                u(s.i.TAKE_ACTION), (0, r.mMO)(async () => {
+                u(s.i.TAKE_ACTION), (0, l.mMO)(async () => {
                     let {
                         default: e
                     } = await n.e("91976").then(n.bind(n, 526710));

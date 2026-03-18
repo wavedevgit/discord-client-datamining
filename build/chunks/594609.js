@@ -1,39 +1,40 @@
 /** chunk id: 594609 params = (module,exports,require) **/
-n.d(t, {
-    h: () => d
+"use strict";
+n.d(e, {
+    h: () => u
 });
 var i = n(627968),
-    l = n(64700),
-    r = n(158954),
-    s = n(397927),
+    r = n(64700),
+    s = n(158954),
+    l = n(397927),
     a = n(827343),
     o = n(985018);
 
-function c(e) {
-    let [t, n] = l.useState(!1);
-    return (0, i.jsx)(r.Modal, {
+function c(t) {
+    let [e, n] = r.useState(!1);
+    return (0, i.jsx)(s.Modal, {
         size: "md",
         title: o.intl.string(o.t["zQ1+Jw"]),
         subtitle: o.intl.string(o.t.K1gWXn),
         actions: [{
             text: o.intl.string(o.t.BddRzS),
             onClick: () => {
-                t && a.A.setSilenceWarning(!1), e.onClose()
+                e && a.A.setSilenceWarning(!1), t.onClose()
             },
             variant: "primary"
         }],
-        actionBarInput: (0, i.jsx)(r.Sc0, {
-            checked: t,
-            onChange: e => n(e),
+        actionBarInput: (0, i.jsx)(s.Sc0, {
+            checked: e,
+            onChange: t => n(t),
             label: o.intl.string(o.t.XAiAgD),
             labelType: "secondary"
         }),
-        ...e
+        ...t
     })
 }
 
-function d() {
-    (0, s.qfG)(e => (0, i.jsx)(c, {
-        ...e
+function u() {
+    (0, l.qfG)(t => (0, i.jsx)(c, {
+        ...t
     }))
 }

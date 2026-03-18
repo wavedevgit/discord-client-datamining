@@ -32,8 +32,8 @@ var i, s = n(627968),
     R = n(95859),
     O = n(30084),
     D = n(322631),
-    P = n(17307),
-    L = n(788868),
+    L = n(17307),
+    P = n(788868),
     G = n(652215),
     M = n(49999),
     U = n(355097),
@@ -72,11 +72,11 @@ var i, s = n(627968),
 let ex = () => {
     let {
         analyticsLocations: e
-    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, o.Ay)(), n = (0, b.Xq)(L.f3 / 1024, {
+    } = (0, c.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD), t = (0, o.Ay)(), n = (0, b.Xq)(P.f3 / 1024, {
         useKibibytes: !0
-    }), i = (0, a.bG)([C.A], () => C.A.getPremiumTypeSubscription()), eA = null != i ? I.Ay.getPremiumPlanItem(i) : null, ex = (null != eA ? I.Ay.getSkuIdForPlan(eA.planId) : null) === L.pe.TIER_2, eh = f.default.getCurrentUser(), ep = (0, I.TW)(eh, L.PremiumTypes.TIER_2), eT = (0, I.TW)(eh, L.PremiumTypes.TIER_0), eE = (0, _.A)(S.Ay), {
+    }), i = (0, a.bG)([C.A], () => C.A.getPremiumTypeSubscription()), eA = null != i ? I.Ay.getPremiumPlanItem(i) : null, ex = (null != eA ? I.Ay.getSkuIdForPlan(eA.planId) : null) === P.pe.TIER_2, eh = f.default.getCurrentUser(), ep = (0, I.TW)(eh, P.PremiumTypes.TIER_2), eT = (0, I.TW)(eh, P.PremiumTypes.TIER_0), eE = (0, _.A)(S.Ay), {
         isFractionalPremiumActive: eS
-    } = (0, u.A)(), ef = null != i && i.hasPremiumAtLeast(L.PremiumTypes.TIER_2), eC = (0, g.JZ)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eb = (0, x.A)({
+    } = (0, u.A)(), ef = null != i && i.hasPremiumAtLeast(P.PremiumTypes.TIER_2), eC = (0, g.JZ)(r.M.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), eb = (0, x.A)({
         scrollPosition: U._F.TRY_IT_OUT,
         analyticsLocations: e
     }), eN = () => {
@@ -297,14 +297,14 @@ let ex = () => {
             name: "customSoundsEverywhere",
             title: k.intl.string(k.t.LWsArT),
             subtitle: k.intl.string(k.t.bTzbVk),
-            perkImage: (0, P.t4)(t, H, F),
+            perkImage: (0, L.t4)(t, H, F),
             description: k.intl.string(k.t.JLnOM2)
         },
         specialStickerAccess: {
             name: "specialStickerAccess",
             title: k.intl.string(k.t.tzdIwI),
             subtitle: k.intl.string(k.t.hJG8ZN),
-            perkImage: (0, P.t4)(t, Y, ea),
+            perkImage: (0, L.t4)(t, Y, ea),
             description: k.intl.string(k.t.e7FKCi)
         },
         largeUploads: {

@@ -4,8 +4,8 @@ n.d(t, {
     A: () => A
 });
 var l = n(627968),
-    i = n(64700),
-    s = n(311907),
+    s = n(64700),
+    i = n(311907),
     a = n(451988),
     r = n(397927),
     o = n(714114),
@@ -21,31 +21,31 @@ function A(e) {
     let {
         guild: t,
         message: n
-    } = e, A = i.useRef(null), {
+    } = e, A = s.useRef(null), {
         voiceState: x,
         voiceChannel: f
     } = (0, o.A)({
         userId: n.author.id,
         guildId: t.id
-    }), [v, j] = i.useState(!1), N = (0, s.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), C = i.useRef(new a.J_(50, () => {
+    }), [v, j] = s.useState(!1), N = (0, i.bG)([d.A], () => d.A.getChannel(n.channel_id)?.isVocal()), C = s.useRef(new a.J_(50, () => {
         j(!0)
-    })), b = i.useRef(new a.J_(175, () => {
+    })), b = s.useRef(new a.J_(175, () => {
         j(!1)
     }));
-    i.useEffect(() => {
+    s.useEffect(() => {
         let e = C.current,
             t = b.current;
         return () => {
             e.cancel(), t.cancel()
         }
     }, []);
-    let E = i.useCallback(() => {
+    let E = s.useCallback(() => {
             b.current.cancel(), C.current.delay()
         }, []),
-        I = i.useCallback(() => {
+        I = s.useCallback(() => {
             C.current.cancel(), b.current.delay()
         }, []),
-        y = (0, s.bG)([m.A], () => {
+        y = (0, i.bG)([m.A], () => {
             if (null == f) return !1;
             let e = (0, u.r9)() && (0, u.UK)(f.id);
             return (f.isPrivate() || m.A.can(g.xBc.CONNECT, f)) && !e

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(397927),
-    l = n(646881),
+    l = n(397927),
+    r = n(646881),
     s = n(92534),
     o = n(760799);
 
@@ -28,14 +28,14 @@ function d(e) {
         })
     }, [n, t]), I = a.useCallback(() => (0, i.jsx)("div", {
         className: o.k,
-        children: (0, i.jsx)(l.$, {
+        children: (0, i.jsx)(r.$, {
             onPrimaryAction: g,
             onContextMenu: p
         })
     }), [p, g]);
-    return (0, i.jsx)(r.YNO, {
+    return (0, i.jsx)(l.YNO, {
         targetElementRef: _,
-        animation: r.YNO.Animation.NONE,
+        animation: l.YNO.Animation.NONE,
         position: c,
         align: u,
         autoInvert: !1,

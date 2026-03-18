@@ -4,20 +4,20 @@ n.d(t, {
     A: () => r
 });
 var l = n(311907),
-    i = n(73153);
-let s = new Map;
+    s = n(73153);
+let i = new Map;
 class a extends l.Ay.Store {
     static displayName = "GuildRoleConnectionEligibilityStore";
     getGuildRoleConnectionEligibility(e) {
-        return null != e ? s.get(e) : void 0
+        return null != e ? i.get(e) : void 0
     }
 }
-let r = new a(i.h, {
+let r = new a(s.h, {
     GUILD_ROLE_CONNECTION_ELIGIBILITY_FETCH_SUCCESS: e => {
         let {
             roleId: t,
             roleConnectionEligibility: n
         } = e;
-        s.set(t, n)
+        i.set(t, n)
     }
 })

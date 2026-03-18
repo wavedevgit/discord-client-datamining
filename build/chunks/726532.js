@@ -272,8 +272,8 @@ let S = () => (0, i.jsxs)(a.BJc, {
                     subscription: t
                 })
             })
-        }, P = s.useMemo(() => !x.BE.includes(t.status) && C > 0, [t.status, C]), {
-            title: L,
+        }, L = s.useMemo(() => !x.BE.includes(t.status) && C > 0, [t.status, C]), {
+            title: P,
             description: G
         } = (() => {
             switch (y) {
@@ -317,7 +317,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
             children: [(0, i.jsx)(S, {}), (0, i.jsxs)("div", {
                 className: E.wS,
                 children: [(0, i.jsx)(f, {
-                    title: L,
+                    title: P,
                     description: G,
                     button: d.ki(t) ? (0, i.jsx)(a.Button, {
                         variant: "expressive",
@@ -334,7 +334,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                             fullWidth: !0,
                             text: T.intl.string(p.default.Tcmclj),
                             onClick: D,
-                            disabled: !P
+                            disabled: !L
                         }), (0, i.jsx)(a.Button, {
                             variant: "secondary",
                             size: "md",
@@ -346,7 +346,7 @@ let S = () => (0, i.jsxs)(a.BJc, {
                 }), (0, i.jsx)(b, {
                     premiumGroupMembers: g,
                     isLoadingPremiumGroupMembers: A,
-                    canInvite: P,
+                    canInvite: L,
                     onInvite: D,
                     onRemoveMember: e => {
                         o.default.track(h.HAw.PREMIUM_GROUP_SUBSCRIPTION_CARD_REMOVE_MEMBER_CLICKED, {

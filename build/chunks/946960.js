@@ -6,8 +6,8 @@ n.d(t, {
 });
 var i = n(554146),
     a = n(174768),
-    r = n(692125),
-    l = n(701626),
+    l = n(692125),
+    r = n(701626),
     s = n(731667),
     o = n(255161),
     d = n(403362),
@@ -18,11 +18,11 @@ let u = "lastHiddenChannelNotice",
         dismissibleContentType: i.M.CHANNEL_LIST_CLAN_ADMIN_UPSELL
     }, {
         type: c.n5X.GUILD_BOOSTING,
-        store: l.A,
+        store: r.A,
         dismissibleContentType: i.M.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION
     }, {
         type: c.n5X.GUILD_BANNER,
-        store: r.A,
+        store: l.A,
         dismissibleContentType: i.M.CHANNEL_NOTICE_GUILD_BANNER
     }, {
         type: c.n5X.INVITE,

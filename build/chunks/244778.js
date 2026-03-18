@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(788868),
     O = n(985018),
     D = n(562628),
-    P = n(196093),
-    L = n(979653),
+    L = n(196093),
+    P = n(979653),
     G = n(255631),
     M = n(193023);
 let U = () => {
@@ -69,7 +69,7 @@ let U = () => {
                 className: D.dW,
                 children: O.intl.string(O.t.Ipxkog)
             });
-        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? P : L : (0, o.Mw)(l) ? G : M;
+        t = n === R.PremiumTypes.TIER_0 ? (0, o.Mw)(l) ? L : P : (0, o.Mw)(l) ? G : M;
         let a = (0, p.Dd)(n);
         return (0, i.jsx)("img", {
             src: t,
@@ -143,8 +143,8 @@ let U = () => {
                 className: n,
                 hideCTAs: l = !1,
                 headingOverride: v,
-                hidePill: P = !1,
-                selectedPlanColumnClassName: L,
+                hidePill: L = !1,
+                selectedPlanColumnClassName: P,
                 selectedPlanTier: G = R.PremiumTypes.TIER_2
             } = e,
             {
@@ -231,7 +231,7 @@ let U = () => {
             withBottomBorder: !1,
             withBottomBorderRadius: !0,
             buttonsRow: null == q
-        }), t = P ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
+        }), t = L ? null : null != q || null != J ? (0, i.jsx)(j.ir, {
             text: null != q ? O.intl.string(O.t.IBYG5U) : O.intl.string(O.t.ce1v3V),
             className: D.ls,
             colorOptions: q === R.pe.TIER_0 ? z ? j.at.PREMIUM_TIER_0_GRADIENT_FILL : j.at.PREMIUM_TIER_0_WHITE_FILL : z ? K ? j.at.PREMIUM_TIER_2_OLD_GRADIENT_FILL : j.at.PREMIUM_TIER_2_NEW_GRADIENT_FILL : j.at.PREMIUM_TIER_2_WHITE_FILL
@@ -252,7 +252,7 @@ let U = () => {
                 }), (0, i.jsxs)("div", {
                     className: D.wY,
                     children: [(0, i.jsx)("div", {
-                        className: a()(L, {
+                        className: a()(P, {
                             [D.A9]: eo,
                             [D.ce]: !eo && !W
                         }),

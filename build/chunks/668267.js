@@ -1,73 +1,73 @@
 /** chunk id: 668267 params = (module,exports,require) **/
-t.d(n, {
-    Kg: () => u,
+e.d(n, {
+    Kg: () => d,
     LO: () => s,
     P: () => f,
     TX: () => c,
-    U5: () => v,
-    XC: () => h,
-    mv: () => o,
+    U5: () => b,
+    XC: () => A,
+    mv: () => u,
     tC: () => _,
-    uS: () => A
+    uS: () => h
 });
-var i = t(967198),
-    r = t(954571),
-    l = t(5180),
-    a = t(652215);
-let d = "manual_browsing";
+var i = e(967198),
+    l = e(954571),
+    a = e(5180),
+    r = e(652215);
+let o = "manual_browsing";
 
-function o(e) {
-    (0, l.ai)(i.A.getGuildId()) || (d = e)
+function u(t) {
+    (0, a.ai)(i.A.getGuildId()) || (o = t)
 }
 
-function u() {
-    let e = d;
-    return d = "manual_browsing", e
+function d() {
+    let t = o;
+    return o = "manual_browsing", t
 }
 
-function s(e, n, t) {
-    r.default.track(a.HAw.FAVORITES_GUILD_ADD_TO_FAVORITES, {
-        source: e,
+function s(t, n, e) {
+    l.default.track(r.HAw.FAVORITES_GUILD_ADD_TO_FAVORITES, {
+        source: t,
         channel_type: n,
-        total_favorites: t
+        total_favorites: e
     })
 }
 
-function c(e, n) {
-    r.default.track(a.HAw.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, {
-        channel_type: e,
+function c(t, n) {
+    l.default.track(r.HAw.FAVORITES_GUILD_REMOVE_FROM_FAVORITES, {
+        channel_type: t,
         total_favorites: n
     })
 }
 
 function f() {
-    r.default.track(a.HAw.FAVORITES_GUILD_ORDER_UPDATED)
+    l.default.track(r.HAw.FAVORITES_GUILD_ORDER_UPDATED)
 }
 
-function A(e, n) {
-    r.default.track(a.HAw.FAVORITES_GUILD_SETTING_TOGGLED, {
-        source: e,
+function h(t, n) {
+    l.default.track(r.HAw.FAVORITES_GUILD_SETTING_TOGGLED, {
+        source: t,
         is_visible: n
     })
 }
 
-function h(e) {
-    r.default.track(a.HAw.FAVORITES_GUILD_UPSELL_MODAL_OPENED, {
-        source: e
+function A(t) {
+    l.default.track(r.HAw.FAVORITES_GUILD_UPSELL_MODAL_OPENED, {
+        source: t
     })
 }
 
-function _(e) {
-    r.default.track(a.HAw.FAVORITES_GUILD_ADD_MODAL_OPENED, {
-        source: e
+function _(t) {
+    l.default.track(r.HAw.FAVORITES_GUILD_ADD_MODAL_OPENED, {
+        source: t
     })
 }
 
-function v(e, n, t, i) {
-    r.default.track(a.HAw.FAVORITES_GUILD_VIEWED, {
-        source: e,
+function b(t, n, e, i) {
+    l.default.track(r.HAw.FAVORITES_GUILD_VIEWED, {
+        source: t,
         total_favorites: n,
-        is_xp_enabled: t,
+        is_xp_enabled: e,
         is_premium_tier_2: i
     })
 }

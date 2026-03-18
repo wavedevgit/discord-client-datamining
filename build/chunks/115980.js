@@ -1,6 +1,6 @@
 /** chunk id: 115980 params = (module,exports,require) **/
 n.d(t, {
-    Ay: () => L,
+    Ay: () => P,
     HG: () => R,
     OH: () => O,
     ac: () => D
@@ -86,7 +86,7 @@ function D() {
     })
 }
 
-function P() {
+function L() {
     let e = (0, _.wI)("UserSettingsBilling");
     return (0, i.jsxs)("div", {
         children: [(0, i.jsx)(g.x, {
@@ -121,8 +121,8 @@ function P() {
     })
 }
 
-function L() {
+function P() {
     let e = (0, l.bG)([x.default], () => null != x.default.getCurrentUser()),
         t = (0, l.bG)([A.A], () => A.A.enabled);
-    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(P, {}) : (0, i.jsx)(j, {})
+    return e ? t ? (0, i.jsx)(o.A, {}) : (0, i.jsx)(L, {}) : (0, i.jsx)(j, {})
 }

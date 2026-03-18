@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(73153),
     a = n(272355),
-    r = n(627363),
-    l = n(800828),
+    l = n(627363),
+    r = n(800828),
     s = n(652215);
 class o extends a.A {
     _initialize() {
@@ -15,11 +15,11 @@ class o extends a.A {
         i.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)
     }
     handlePostConnectionOpen = () => {
-        let e = l.A.getGameRelationships(),
+        let e = r.A.getGameRelationships(),
             t = new Set;
         e.values().forEach(e => {
             e.type === s.eA$.PENDING_INCOMING && t.add(e.applicationId)
-        }), r.Ay.fetchApplications(Array.from(t))
+        }), l.Ay.fetchApplications(Array.from(t))
     };
     destroy() {
         i.h.unsubscribe("POST_CONNECTION_OPEN", this.handlePostConnectionOpen)

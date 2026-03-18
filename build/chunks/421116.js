@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(577174),
     O = n(127493),
     D = n(23003),
-    P = n(16019),
-    L = n(768229),
+    L = n(16019),
+    P = n(768229),
     G = n(788868),
     M = n(652215),
     U = n(818348),
@@ -69,7 +69,7 @@ let V = () => {
         {
             navBarSections: el,
             activeSectionId: ea
-        } = (0, L.o)(es),
+        } = (0, P.o)(es),
         {
             home: er,
             whatsNew: eo,
@@ -97,7 +97,7 @@ let V = () => {
                         onChange: e => F(e),
                         threshold: 0,
                         active: !0,
-                        children: (0, i.jsx)(P.A, {
+                        children: (0, i.jsx)(L.A, {
                             ref: l,
                             subscriptionTier: $,
                             isEligibleForBogoPromotion: ee

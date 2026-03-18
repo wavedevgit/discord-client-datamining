@@ -5,8 +5,8 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var i = n(311907),
-    s = n(3026),
+var s = n(311907),
+    i = n(3026),
     a = n(397927),
     r = n(964486),
     o = n(58149),
@@ -38,7 +38,7 @@ let b = e => {
             ...(0, o.dI)(g.A.getChannel(A.A.getChannelId(n.id)))
         })
     });
-    let E = (0, i.bG)([p.A], () => null != t.roleId ? p.A.getRole(n.id, t.roleId) : void 0),
+    let E = (0, s.bG)([p.A], () => null != t.roleId ? p.A.getRole(n.id, t.roleId) : void 0),
         I = (0, d.U)(E),
         y = I ? N.intl.formatToPlainString(N.t.t0928V, {
             name: b
@@ -79,7 +79,7 @@ let b = e => {
                         children: [(0, l.jsx)(a.Heading, {
                             variant: "heading-md/semibold",
                             className: C.S3,
-                            children: (0, l.jsx)(s.A, {
+                            children: (0, l.jsx)(i.A, {
                                 children: b
                             })
                         }), (0, l.jsx)(a.Text, {

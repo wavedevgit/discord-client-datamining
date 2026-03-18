@@ -4,8 +4,8 @@ n.d(t, {
     A: () => p
 });
 var l = n(627968),
-    i = n(64700),
-    s = n(954571),
+    s = n(64700),
+    i = n(954571),
     a = n(903369),
     r = n(465364),
     o = n(380512),
@@ -14,7 +14,7 @@ var l = n(627968),
     d = n(652215),
     m = n(985018),
     h = n(903957);
-let g = i.lazy(() => Promise.all([n.e("369"), n.e("72756")]).then(n.bind(n, 532255)));
+let g = s.lazy(() => Promise.all([n.e("369"), n.e("72756")]).then(n.bind(n, 532255)));
 
 function p(e, t) {
     let {
@@ -30,12 +30,12 @@ function p(e, t) {
         viewingChannelId: E
     } = t, I = (0, c.I)({
         location: "useMessageRenderedContent"
-    }), [y, T] = i.useState(!1), R = i.useCallback(e => {
+    }), [y, T] = s.useState(!1), R = s.useCallback(e => {
         e && T(!0)
     }, []);
-    return i.useEffect(() => {
+    return s.useEffect(() => {
         T(!1)
-    }, [e.content]), i.useMemo(() => {
+    }, [e.content]), s.useMemo(() => {
         if (null != e.customRenderedContent) return e.customRenderedContent;
         if (e.isUnsupported) return {
             content: m.intl.string(m.t.sWi5EU),
@@ -49,12 +49,12 @@ function p(e, t) {
             } = n(550997);
             return t(e, h, {
                 track: (e, t) => {
-                    s.default.track(e, t)
+                    i.default.track(e, t)
                 }
             })
         }
         return I.enabled ? {
-            content: (0, l.jsx)(i.Suspense, {
+            content: (0, l.jsx)(s.Suspense, {
                 children: (0, l.jsx)(u.O.Provider, {
                     value: {
                         messageId: e.id,

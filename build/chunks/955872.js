@@ -32,8 +32,8 @@ var i = n(627968),
     R = n(927578),
     O = n(606532),
     D = n(161290),
-    P = n(652215),
-    L = n(985018),
+    L = n(652215),
+    P = n(985018),
     G = n(166378);
 
 function M() {
@@ -103,7 +103,7 @@ function M() {
         }), W && !U && (0, i.jsx)(p.d, {
             className: G.EL,
             showUpsell: !z,
-            text: L.intl.format(L.t.TmfgI2, {
+            text: P.intl.format(P.t.TmfgI2, {
                 onClick: () => (0, T.K)({
                     analyticsSource: Y
                 })
@@ -115,13 +115,13 @@ function M() {
                 children: (0, i.jsx)(d.Button, {
                     variant: "overlay-primary",
                     onClick: () => {
-                        y.default.track(P.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                        y.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                             cta_variant: "floating_action_button"
                         }), K?.current?.scrollIntoView({
                             behavior: "smooth"
                         })
                     },
-                    text: L.intl.string(L.t.uw9zI7),
+                    text: P.intl.string(P.t.uw9zI7),
                     icon: d.tvc
                 })
             })

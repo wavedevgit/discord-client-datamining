@@ -33,13 +33,13 @@ var i = n(627968),
     O = n(688414),
     D = n(473169);
 
-function P(e) {
+function L(e) {
     let {
         children: t
     } = e;
     return t([g.Q_.MESSAGE, g.Q_.NAVIGATION, g.Q_.DND, g.Q_.CHAT, g.Q_.VOICE_AND_VIDEO, g.Q_.MISCELLANEOUS])
 }
-class L extends s.PureComponent {
+class P extends s.PureComponent {
     handleActionChanged = e => {
         u.A.setKeybind({
             ...this.props.keybind,
@@ -260,7 +260,7 @@ class G extends s.PureComponent {
         u.A.addKeybind()
     };renderKeybinds(e) {
         return e.map((t, n) => (0, i.jsxs)(s.Fragment, {
-            children: [(0, i.jsx)(L, {
+            children: [(0, i.jsx)(P, {
                 keybind: t,
                 keybindDescriptions: this.keybindDescriptions,
                 keybindActionTypes: this.keybindActionTypes
@@ -334,7 +334,7 @@ class G extends s.PureComponent {
                             })]
                         })
                     })
-                }), (0, i.jsx)(P, {
+                }), (0, i.jsx)(L, {
                     children: e => (0, i.jsx)(i.Fragment, {
                         children: e.map((e, t) => {
                             let n = (0, g.Gm)(e),

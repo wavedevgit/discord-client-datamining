@@ -4,8 +4,8 @@ n.d(t, {
 }), n(321073);
 var i = n(627968),
     a = n(64700),
-    r = n(311907),
-    l = n(397927),
+    l = n(311907),
+    r = n(397927),
     s = n(308368),
     o = n(956793),
     d = n(573648),
@@ -33,13 +33,13 @@ function y(e) {
     } = e, n = t.length > 1, y = function(e) {
         let {
             currentActivities: t
-        } = e, n = (0, r.bG)([p.A], () => p.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), a = t.some(e => {
+        } = e, n = (0, l.bG)([p.A], () => p.A.getAccounts().some(e => e.type === d.A.get(S.fg2.XBOX).type)), a = t.some(e => {
             let {
                 activity: t
             } = e;
             return (0, A.A)(t)
         });
-        return n || !a ? null : (0, i.jsx)(l.Drp, {
+        return n || !a ? null : (0, i.jsx)(r.Drp, {
             id: "xbox-connect",
             action: () => (0, g.openUserSettings)(m.X.CONNECTIONS_PANEL),
             label: x.intl.formatToPlainString(x.t.XWSHTb, {
@@ -50,7 +50,7 @@ function y(e) {
         let {
             currentActivities: t
         } = e, n = a.useContext(C.AnalyticsContext);
-        return (0, r.yK)([h.Ay, I.A, _.A, f.A, E.A], () => t.filter(e => !(0, u.A)(e.activity)).map(e => {
+        return (0, l.yK)([h.Ay, I.A, _.A, f.A, E.A], () => t.filter(e => !(0, u.A)(e.activity)).map(e => {
             let {
                 activity: t,
                 game: i
@@ -81,23 +81,23 @@ function y(e) {
             let {
                 canJoin: n,
                 activity: a,
-                activityUser: r
+                activityUser: l
             } = e;
             if (!n || null == a) return null;
             async function d() {
                 if (null == a) return;
                 let e = await s.A.sendActivityInviteUser({
                     type: S.xL.JOIN_REQUEST,
-                    userId: r.id,
+                    userId: l.id,
                     activity: a,
                     location: S.ThZ.USER_ACTIVITY_ACTIONS
                 });
                 null != e && o.default.selectPrivateChannel(e.id)
             }
-            return (0, i.jsx)(l.Drp, {
+            return (0, i.jsx)(r.Drp, {
                 id: `join-${a.session_id}`,
                 label: t ? x.intl.formatToPlainString(x.t.wFAvxM, {
-                    name: r.toString()
+                    name: l.toString()
                 }) : x.intl.string(x.t.OKsSCR),
                 action: d
             })
@@ -105,7 +105,7 @@ function y(e) {
             let {
                 activity: n,
                 game: a,
-                libraryApplication: r,
+                libraryApplication: l,
                 location: s,
                 canPlay: o,
                 isRunning: d,
@@ -117,10 +117,10 @@ function y(e) {
             }) : c ? x.intl.formatToPlainString(x.t.WtSQwG, {
                 name: a.name
             }) : void 0;
-            return (0, i.jsx)(l.Drp, {
+            return (0, i.jsx)(r.Drp, {
                 id: `play-${n.session_id}`,
                 action: function() {
-                    (0, N.playApplication)(a.id, r, {
+                    (0, N.playApplication)(a.id, l, {
                         analyticsParams: {
                             location: {
                                 ...s,

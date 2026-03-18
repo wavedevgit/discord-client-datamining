@@ -33,8 +33,8 @@ var i = n(627968),
     R = n(400553),
     O = n(191627),
     D = n(652215),
-    P = n(842130),
-    L = n(985018),
+    L = n(842130),
+    P = n(985018),
     G = n(976744),
     M = n(896498);
 
@@ -66,7 +66,7 @@ function k(e) {
     let {
         displayType: t
     } = e, n = s.useCallback(() => {
-        (0, u.showToast)((0, u.createToast)(L.intl.string(P.default.Wu8BK2), u.ToastType.FAILURE))
+        (0, u.showToast)((0, u.createToast)(P.intl.string(L.default.Wu8BK2), u.ToastType.FAILURE))
     }, []), l = (0, T.A)(), r = (0, p._w)(t), d = (0, p.Gn)(t), c = (0, p.Ju)(t), {
         loadMore: _,
         isMoreLoading: x
@@ -140,7 +140,7 @@ function k(e) {
             }) : (0, i.jsx)(u.Text, {
                 className: G.UX,
                 variant: "text-sm/bold",
-                children: L.intl.format(P.default["7dMmJY"], {
+                children: P.intl.format(L.default["7dMmJY"], {
                     pageSize: Math.max(1, Math.min(d - R.length, O.PH))
                 })
             })
@@ -150,9 +150,9 @@ function k(e) {
 let V = () => {
         let e = (0, T.A)(),
             t = (0, f.vx)(),
-            n = (0, x.y)(L.intl.formatToPlainString(P.default["7hqFl9"], {
+            n = (0, x.y)(P.intl.formatToPlainString(L.default["7hqFl9"], {
                 activeLinks: t.length
-            }), L.intl.string(P.default["Q/D/0Q"])),
+            }), P.intl.string(L.default["Q/D/0Q"])),
             s = (0, A.cV)(!!e),
             l = (0, f.v4)(s);
         return e && t.length > 1 ? (0, i.jsx)(u.Text, {

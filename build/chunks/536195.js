@@ -172,7 +172,7 @@ let C = e => {
             R = `${y}/${(0,u.FJ)(p.WT.MONTH)}`,
             O = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_0),
             D = (0, u.JM)(p.gD.PREMIUM_MONTH_TIER_2),
-            P = (0, h.g)();
+            L = (0, h.g)();
         if (l) t = null;
         else {
             let e = null != C ? T.intl.string(T.t.IBYG5U) : T.intl.string(T.t.TR2B4T);
@@ -181,7 +181,7 @@ let C = e => {
                 text: e
             })
         }
-        let L = b === p.pe.TIER_0 || r === p.PremiumTypes.TIER_0;
+        let P = b === p.pe.TIER_0 || r === p.PremiumTypes.TIER_0;
         return (0, i.jsx)(c.f5, {
             value: _,
             children: (0, i.jsxs)("div", {
@@ -195,10 +195,10 @@ let C = e => {
                     className: E.wY,
                     children: [(0, i.jsxs)("div", {
                         className: a()(E.fO, {
-                            [E.Vd]: L,
-                            [E.hA]: !L
+                            [E.Vd]: P,
+                            [E.hA]: !P
                         }),
-                        children: [!L && t, (0, i.jsx)("div", {
+                        children: [!P && t, (0, i.jsx)("div", {
                             className: E.xQ
                         }), (0, i.jsxs)("div", {
                             className: E.wN,
@@ -219,7 +219,7 @@ let C = e => {
                             tier2Price: D,
                             shouldUseDiscountPrice: j,
                             tier2DiscountedPriceString: R
-                        }), P.map(e => (0, s.createElement)(N, {
+                        }), L.map(e => (0, s.createElement)(N, {
                             ...e,
                             key: e.id
                         }))]

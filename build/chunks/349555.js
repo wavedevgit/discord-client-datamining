@@ -4,8 +4,8 @@ n.d(t, {
 });
 var i = n(627968),
     a = n(64700),
-    r = n(503698),
-    l = n.n(r),
+    l = n(503698),
+    r = n.n(l),
     s = n(735438),
     o = n(873263),
     d = n(397927),
@@ -19,7 +19,7 @@ function m(e) {
     let {
         quests: t,
         excludedQuests: n,
-        isFetching: r,
+        isFetching: l,
         hasFetched: m,
         hasFiltersApplied: g = !1,
         onClearFilters: p
@@ -34,13 +34,13 @@ function m(e) {
     a.useEffect(() => {
         E.current = !1
     }, [I.hash]), a.useEffect(() => {
-        if (null == f || E.current || r || !m) return;
+        if (null == f || E.current || l || !m) return;
         let e = document.getElementById(`quest-tile-${f}`);
         e?.scrollIntoView({
             behavior: "smooth",
             block: "center"
         }), E.current = !0
-    }, [t, f, I, r, m]);
+    }, [t, f, I, l, m]);
     let C = null != f,
         [T, N] = a.useState(window.innerWidth);
     a.useEffect(() => {
@@ -52,7 +52,7 @@ function m(e) {
         }
     }, []);
     let S = T >= 1610 ? 3 : T >= 1340 ? 2 : 1;
-    return r && 0 === t.length ? (0, i.jsx)(d.y$y, {
+    return l && 0 === t.length ? (0, i.jsx)(d.y$y, {
         className: _.u1
     }) : 0 === t.length ? (0, i.jsxs)("div", {
         className: _.y7,
@@ -75,7 +75,7 @@ function m(e) {
                 questContent: c.uF.QUEST_HOME_DESKTOP,
                 contentPosition: t,
                 rowIndex: n,
-                className: l()(_.d, {
+                className: r()(_.d, {
                     [_.wH]: C && e.id === f,
                     [_.tP]: C && e.id !== f
                 }),

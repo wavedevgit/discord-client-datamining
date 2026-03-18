@@ -4,8 +4,8 @@ n.d(t, {
 }), n(323874), n(14289), n(35956);
 var i = n(64700),
     a = n(311907),
-    r = n(157559),
-    l = n(308528),
+    l = n(157559),
+    r = n(308528),
     s = n(793574),
     o = n(688810),
     d = n(429913),
@@ -27,7 +27,7 @@ function m(e) {
         null != E && null != I && (async () => {
             try {
                 let e = new URL(location.href),
-                    t = await l.A.openPrivateChannel({
+                    t = await r.A.openPrivateChannel({
                         recipientIds: E
                     }),
                     n = e.searchParams.get("referrer_id") ?? void 0,
@@ -45,7 +45,7 @@ function m(e) {
         })()
     }, [m, g, E, I]), i.useEffect(() => {
         let e = setTimeout(() => {
-            null == E && r.A.show({
+            null == E && l.A.show({
                 title: _.intl.string(_.t.PtobXW),
                 body: _.intl.string(_.t["IOy+I5"])
             })

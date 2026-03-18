@@ -4,12 +4,12 @@ n.d(t, {
 });
 var i = n(311907),
     a = n(961350),
-    r = n(309010),
-    l = n(312006);
+    l = n(309010),
+    r = n(312006);
 
 function s(e) {
-    return (0, i.bG)([a.default, r.A, l.Ay], () => {
+    return (0, i.bG)([a.default, l.A, r.Ay], () => {
         let t = a.default.getId();
-        return r.A.getVoiceChannelId() === e ? l.Ay.getPermissionsForUser(t, e) : null
+        return l.A.getVoiceChannelId() === e ? r.Ay.getPermissionsForUser(t, e) : null
     }, [e])
 }
