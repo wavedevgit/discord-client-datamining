@@ -1,6 +1,6 @@
 /** chunk id: 546136 params = (module,exports,require) **/
 t.d(l, {
-    A: () => c
+    A: () => A
 });
 var i = t(627968);
 t(64700);
@@ -8,16 +8,21 @@ var n = t(503698),
     s = t.n(n),
     a = t(397927),
     r = t(642737),
-    o = t(891726);
+    o = t(985018),
+    d = t(891726);
+let c = "profile-modal-editing-panel",
+    u = "profile-modal-editing-panel-heading";
 
-function d(e) {
+function m(e) {
     let {
         onClick: l
     } = e;
     return (0, i.jsxs)(a.DUT, {
-        className: o.cS,
-        "aria-label": "Close editing panel",
+        className: d.cS,
+        "aria-label": o.intl.string(o.t.X6NklS),
         onClick: l,
+        "aria-controls": c,
+        "aria-expanded": !0,
         children: [(0, i.jsx)(a._BQ, {
             size: "md",
             color: "currentColor"
@@ -28,25 +33,32 @@ function d(e) {
     })
 }
 
-function c(e) {
+function A(e) {
     let {
         guildId: l,
         onChangeGuildId: t,
         onClose: n,
-        className: c
+        className: A
     } = e;
     return (0, i.jsxs)("aside", {
-        className: s()(o.nd, c),
-        children: [(0, i.jsxs)("div", {
-            className: o.wx,
+        id: c,
+        "aria-labelledby": u,
+        className: s()(d.nd, A),
+        children: [(0, i.jsx)(a.AC4, {
+            children: (0, i.jsx)(a.H, {
+                id: u,
+                children: o.intl.string(o.t["L+ch00"])
+            })
+        }), (0, i.jsxs)("div", {
+            className: d.wx,
             children: [(0, i.jsx)(r.A, {
                 selectedGuildId: l ?? null,
                 onChange: t
-            }), (0, i.jsx)(d, {
+            }), (0, i.jsx)(m, {
                 onClick: n
             })]
         }), (0, i.jsx)(a.HOs, {
-            className: o.XG,
+            className: d.XG,
             fade: !0,
             children: (0, i.jsx)("div", {})
         })]

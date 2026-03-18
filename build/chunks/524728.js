@@ -47,7 +47,7 @@ function p(e) {
         rewardContentHasError: v,
         location: _
     } = e, x = l.uF.REWARD_MODAL, [h, C] = a.useState(!0), A = a.useCallback(async () => {
-        await (0, d.f7)(t.config.ctaConfig.link) && u()
+        await (0, d.f7)(t.config.ctaConfig.link) && (u(), (0, r.s7G)())
     }, [t.config.ctaConfig.link, u]);
     if (v) return (0, i.jsx)(g, {
         onClose: u,
