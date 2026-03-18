@@ -50,9 +50,9 @@ function p(e) {
         }
     }, [v, O, R]);
     let j = null != p && null != n && null != P ? x.find(e => P.roles.includes(e.id)) : void 0,
-        b = l.useMemo(() => null != p && null != n ? x.filter(e => !(0, d.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => j?.id === e.id || E.wO(p, n.id, j, e)) : [], [p, n, D, j, x]),
-        k = l.useMemo(() => {
-            let e = Array.from(b).map(e => ({
+        k = l.useMemo(() => null != p && null != n ? x.filter(e => !(0, d.Oy)(e)).filter(e => !D || e.tags?.subscription_listing_id != null).filter(e => j?.id === e.id || E.wO(p, n.id, j, e)) : [], [p, n, D, j, x]),
+        b = l.useMemo(() => {
+            let e = Array.from(k).map(e => ({
                 leading: S(e),
                 value: e.id,
                 label: e.name,
@@ -66,7 +66,7 @@ function p(e) {
                 id: U.id.toString(),
                 disabled: !0
             }), e
-        }, [b, p, U]);
+        }, [k, p, U]);
     if (null == n || null == p || null == P) return null;
     let G = {};
     return (P.roles.forEach(e => {
@@ -79,7 +79,7 @@ function p(e) {
         className: h.kL,
         children: (0, i.jsxs)(o.iS7, {
             selectionMode: "multiple",
-            options: k,
+            options: b,
             value: v,
             onSelectionChange: e => {
                 L(e)

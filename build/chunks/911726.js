@@ -115,7 +115,7 @@ let O = ["TOP_LEFT", "TOP_RIGHT"],
     y = n(232460),
     j = [L, y];
 
-function b() {
+function k() {
     return n.e("98150").then(n.t.bind(n, 633343, 19)).then(e => {
         let {
             default: t
@@ -124,7 +124,7 @@ function b() {
     })
 }
 
-function k(e) {
+function b(e) {
     let {
         onAnimationComplete: t,
         onClick: n,
@@ -161,7 +161,7 @@ function k(e) {
         }
     }(u, E), h = O.includes(E), p = h && "exit" === u, D = a.useCallback(e => {
         A(e)
-    }, []), k = a.useCallback(() => {
+    }, []), b = a.useCallback(() => {
         "exit" === u && t?.()
     }, [t, u]), G = a.useCallback(e => {
         d.current = e
@@ -271,8 +271,8 @@ function k(e) {
                 nextScene: g,
                 sceneSegments: R,
                 onScenePlay: D,
-                onSceneComplete: k,
-                importData: b,
+                onSceneComplete: b,
+                importData: k,
                 pauseWhileUnfocused: !1
             })
         })]
@@ -341,14 +341,14 @@ function G(e) {
         j = a.useCallback(() => {
             O(!1)
         }, []),
-        b = a.useCallback(() => {
+        k = a.useCallback(() => {
             (0, E.O9)({
                 settingsVisible: !0
             }), (0, f.openUserSettings)(T.X.POGGERMODE_PANEL), O(!1)
         }, []),
         G = a.useCallback((e, t) => {
-            t?.id.startsWith(U) && b()
-        }, [b]);
+            t?.id.startsWith(U) && k()
+        }, [k]);
     a.useEffect(() => R(G));
     let F = a.useCallback(e => {
             e.target === e.currentTarget && o(e)
@@ -374,9 +374,9 @@ function G(e) {
         }), x ? (0, l.jsx)(A.Ay, {
             children: (0, l.jsx)("div", {
                 className: S.LK,
-                children: (0, l.jsx)(k, {
+                children: (0, l.jsx)(b, {
                     onAnimationComplete: j,
-                    onClick: b
+                    onClick: k
                 })
             })
         }) : null]

@@ -41,8 +41,8 @@ let M = l.memo(function(e) {
         subscribeToComponentDispatch: L,
         renderThreadAccessory: y,
         trackAnnouncementViews: j = !1,
-        ...b
-    } = e, k = t.type === x.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
+        ...k
+    } = e, b = t.type === x.lAJ.POLL_RESULT || (e.disableInteraction ?? !1), G = t.isFirstMessageInForumPost(P), F = (0, d.S)((t.editedTimestamp ?? t.timestamp).valueOf()), {
         content: B,
         hasSpoilerEmbeds: H,
         hasBailedAst: w
@@ -64,9 +64,9 @@ let M = l.memo(function(e) {
         compact: n,
         className: r()(l, {
             [O.M1]: (0, A.ec)(t),
-            [O.XN]: k
+            [O.XN]: b
         }),
-        disableInteraction: k,
+        disableInteraction: b,
         childrenRepliedMessage: (0, R.A)(t, P, V, q, n),
         childrenExecutedCommand: (0, S.A)(t, P, n),
         childrenHeader: (0, h.A)({
@@ -79,7 +79,7 @@ let M = l.memo(function(e) {
         childrenMessageContent: (0, g.A)(e, B),
         childrenSystemMessage: (0, p.A)({
             ...e,
-            disableInteraction: k
+            disableInteraction: b
         }),
         onContextMenu: a,
         onClick: M,
@@ -90,6 +90,6 @@ let M = l.memo(function(e) {
         messageRef: W,
         author: K,
         ...X,
-        ...b
+        ...k
     })
 })

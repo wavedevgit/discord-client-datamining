@@ -109,7 +109,7 @@ let K = e => {
             eO = en?.trial_id === H.Dw,
             eL = [],
             eR = [];
-        (0, _.Tc)() && (eA && eL.push(o.M.RECURRING_3P_PROMOTION_POPOVER), er && eL.push(o.M.BOGO_2025_NITRO_TAB_BADGE), el && eL.push(o.M.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2));
+        (0, _.Tc)() && (eA && eL.push(o.M.RECURRING_3P_PROMOTION_POPOVER), er && eL.push(o.M.BOGO_2025_NITRO_TAB_BADGE));
         let [eP, eD] = (0, m.kn)(eL, void 0, !0);
         eN && eR.push(o.M.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK), eo && eR.push(o.M.PREMIUM_GROUP_POPOVER), ep && eR.push(o.M.PREMIUM_ORBS_UPSELL_POPOVER), eT && eR.push(o.M.PREMIUM_ORBS_REWARDS_INTRO_POPOVER);
         let [eM, ej] = (0, m.kn)(eR, void 0, !0), ew = (0, O.c)(r.C.PREMIUM_TAB), eU = (0, O.c)(r.C.PREMIUM_TAB_TOOLTIP), [eG, ek] = (0, m.Cc)(null != ew && "premiumTab" === ew.properties.properties.oneofKind ? o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE : null, ew?.promotionId ?? "", void 0, !0), [eV, eB] = (0, m.Cc)(eC ? o.M.PREMIUM_ORBS_REWARDS_DROP_POPOVER : null, eE ?? "", void 0, !0), eH = null != eU && "premiumTabTooltip" === eU.properties.properties.oneofKind && eG === o.M.PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;

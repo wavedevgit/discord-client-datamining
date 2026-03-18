@@ -35,8 +35,8 @@ var i = n(627968),
     L = n(747926),
     y = n(336589),
     j = n(961350),
-    b = n(470710),
-    k = n(734057),
+    k = n(470710),
+    b = n(734057),
     G = n(71393),
     F = n(576705),
     B = n(290863),
@@ -219,7 +219,7 @@ let eL = Object.freeze({
             } = e, {
                 id: s,
                 author: o
-            } = t, d = j.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([b.A], () => b.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
+            } = t, d = j.default.getId(), u = t.getChannelId(), _ = (0, a.bG)([k.A], () => k.A.isCallActive(u, s), [u, s]), m = (0, a.bG)([V.A], () => V.A.getVoiceState(eM.ME, d)), A = !_ && null != t.call && !t.call.participants.includes(d), E = _ && (null == m || m.channelId !== u), I = l.useCallback(() => c.default.selectVoiceChannel(u), [u]), T = (0, Z.P)({
                 user: o,
                 channelId: u,
                 guildId: r.guild_id,
@@ -283,7 +283,7 @@ let eL = Object.freeze({
                 author: r
             } = t, s = t.getChannelId(), o = l.useCallback(() => {
                 if (H.A.getChannelId() !== s) {
-                    let e = k.A.getChannel(s);
+                    let e = b.A.getChannel(s);
                     null != e && (0, M.uh)(e.guild_id, e.id)
                 }
                 setTimeout(() => q._.dispatch(eM.jej.TOGGLE_CHANNEL_PINS), 0)
@@ -358,7 +358,7 @@ let eL = Object.freeze({
                     id: o
                 },
                 messageReference: c
-            } = t, u = t.getChannelId(), _ = (0, a.bG)([B.A], () => B.A.findActivity(o, e => e.type === eM.$pd.PLAYING), [o]), m = (0, a.bG)([k.A], () => null != c ? k.A.getChannel(c.channel_id) : null, [c]), A = c?.guild_id, E = (0, Z.P)({
+            } = t, u = t.getChannelId(), _ = (0, a.bG)([B.A], () => B.A.findActivity(o, e => e.type === eM.$pd.PLAYING), [o]), m = (0, a.bG)([b.A], () => null != c ? b.A.getChannel(c.channel_id) : null, [c]), A = c?.guild_id, E = (0, Z.P)({
                 user: s,
                 channelId: u,
                 guildId: r.guild_id,
@@ -384,7 +384,7 @@ let eL = Object.freeze({
             let {
                 message: t,
                 compact: n
-            } = e, l = t.getChannelId(), r = (0, a.bG)([k.A], () => k.A.getChannel(l), [l]), s = null != r ? r.getGuildId() : null;
+            } = e, l = t.getChannelId(), r = (0, a.bG)([b.A], () => b.A.getChannel(l), [l]), s = null != r ? r.getGuildId() : null;
             return (0, i.jsx)(eo.Rk, {
                 message: t,
                 compact: n,
@@ -410,7 +410,7 @@ let eL = Object.freeze({
                 let n = t.messageReference?.channel_id;
                 if (null != n) {
                     await v.A.loadThread(n);
-                    let t = k.A.getChannel(n);
+                    let t = b.A.getChannel(n);
                     null != t && (0, L.JA)(t, e.shiftKey)
                 }
             }, [t]), u = l.useCallback(() => {
@@ -424,7 +424,7 @@ let eL = Object.freeze({
                     })
                 })
             }, [a]), _ = l.useCallback(e => {
-                let l = k.A.getChannel(t.messageReference?.channel_id);
+                let l = b.A.getChannel(t.messageReference?.channel_id);
                 null != l && (0, s.L3)(e, async () => {
                     let {
                         default: e

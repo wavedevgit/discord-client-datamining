@@ -41,7 +41,7 @@ function j() {
     })
 }
 
-function b(e) {
+function k(e) {
     let {
         message: t,
         compact: n
@@ -70,13 +70,13 @@ function b(e) {
                 compact: n
             });
         default:
-            return (0, i.jsx)(k, {
+            return (0, i.jsx)(b, {
                 compact: n
             })
     }
 }
 
-function k(e) {
+function b(e) {
     let {
         compact: t
     } = e;
@@ -446,7 +446,7 @@ function V(e) {
                     showTimestamp: !0
                 }), (0, i.jsx)("div", {
                     className: y.BZ
-                }), (0, i.jsx)(b, {
+                }), (0, i.jsx)(k, {
                     message: l,
                     compact: n
                 })]

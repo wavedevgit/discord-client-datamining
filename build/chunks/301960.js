@@ -58,7 +58,7 @@ function j(e) {
     })
 }
 
-function b(e, t, n, l, a, s) {
+function k(e, t, n, l, a, s) {
     let {
         message: o,
         compact: c,
@@ -126,7 +126,7 @@ function b(e, t, n, l, a, s) {
     }) : h()
 }
 
-function k(e, t, n, l, a) {
+function b(e, t, n, l, a) {
     let {
         message: r,
         channel: s,
@@ -195,8 +195,8 @@ function F(e) {
         z = n.interaction;
     if (null == z || null == q) return null;
     let W = () => {
-        let t = b(e, z.user, 0, q, e => F(e, z.user, [I.A.AVATAR]), D),
-            n = k(e, z.user, 0, q, e => F(e, z.user));
+        let t = k(e, z.user, 0, q, e => F(e, z.user, [I.A.AVATAR]), D),
+            n = b(e, z.user, 0, q, e => F(e, z.user));
         return (0, i.jsxs)(l.Fragment, {
             children: [t, n]
         }, "user")
@@ -281,8 +281,8 @@ function F(e) {
     }) : null != w && (t = (0, i.jsxs)(i.Fragment, {
         children: [t, (0, i.jsx)(G, {}), (0, i.jsx)(() => {
             if (null == w) return null;
-            let t = b(e, w, 1, X, e => F(e, w, [I.A.AVATAR]), D),
-                n = k(e, w, 1, X, e => F(e, w));
+            let t = k(e, w, 1, X, e => F(e, w, [I.A.AVATAR]), D),
+                n = b(e, w, 1, X, e => F(e, w));
             return (0, i.jsxs)(l.Fragment, {
                 children: [t, n]
             }, "target")

@@ -1,6 +1,6 @@
 /** chunk id: 659203 params = (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => k
 });
 var i = n(627968),
     l = n(64700),
@@ -270,7 +270,7 @@ class j extends l.Component {
     }
 }
 
-function b(e) {
+function k(e) {
     let {
         userTrialOfferId: t,
         canRenderReferralEmbed: n,
