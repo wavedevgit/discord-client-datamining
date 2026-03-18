@@ -112,7 +112,7 @@ let D = e => {
         gameProfileSource: c.Ob.QuestEmbed
     }), Q = (0, s.bG)([h.A], () => null != h.A.questEnrollmentBlockedUntil, []), K = p.t.useConfig({
         location: N.rE.QUEST_HOME_DESKTOP
-    }), X = (0, b.Pd)(t), J = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, I.vv)(t);
+    }), J = (0, b.Pd)(t), X = (0, s.bG)([u.default], () => u.default.locale), Z = D && !H, $ = (0, I.vv)(t);
     return (0, i.jsx)("div", {
         className: R.zr,
         children: (0, i.jsxs)("div", {
@@ -202,7 +202,7 @@ let D = e => {
                         }) : r
                     }({
                         quest: t,
-                        locale: J,
+                        locale: X,
                         isQuestExpired: D,
                         collectibleQuestRewardDescription: z,
                         formattedCompletionDate: G
@@ -241,7 +241,7 @@ let D = e => {
                         })
                     },
                     text: L.intl.string(L.t.LLLLPD)
-                }), !Z && (K.enabled && X === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(v.A, {
+                }), !Z && (K.enabled && J === b.UA.UNENROLLED && K.enabledQuestStates.has(b.UA.UNENROLLED) ? (0, i.jsx)(v.A, {
                     quest: t,
                     surface: b.V3.QUEST_EMBED,
                     analyticsCtxQuestContent: n,

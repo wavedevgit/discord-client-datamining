@@ -85,19 +85,19 @@ let F = r.memo(function(e) {
             return null
         }, [n.id, Y]),
         K = Q?.details,
-        X = r.useMemo(() => {
+        J = r.useMemo(() => {
             let e = new b.Ay(n);
             return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = k.Gl), e
         }, [n]),
-        J = (0, p.vG)({
+        X = (0, p.vG)({
             userId: H,
             channelId: a,
-            application: X
+            application: J
         }),
         Z = null == V,
         $ = (0, D.I3)({
             embeddedActivity: V,
-            joinability: J,
+            joinability: X,
             currentEmbeddedActivity: q,
             channel: w
         }),
@@ -124,7 +124,7 @@ let F = r.memo(function(e) {
                 analyticsLocations: v,
                 componentId: ee
             })
-        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, E.F)(X, () => {
+        }, ei = $.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), er = (0, E.F)(J, () => {
             j.default.track(M.HAw.ACTIVITY_INSTANCE_EMBED_CLICKED, {
                 application_id: n.id,
                 channel_id: a,

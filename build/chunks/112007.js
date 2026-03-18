@@ -54,8 +54,8 @@ function T(e) {
         } = (0, _.Ay)(u.A.INVITE_EMBED),
         [z, Q] = r.useState(!1),
         K = r.useCallback(() => Q(!1), []),
-        X = r.useRef(null),
-        J = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
+        J = r.useRef(null),
+        X = (0, s.bG)([x.Ay], () => m.A.canAcceptInvite([x.Ay], L)),
         Z = r.useCallback(() => {
             Q(!0), (0, c.Pq)(W, "show profile", Y)
         }, [W, Y]),
@@ -87,10 +87,10 @@ function T(e) {
             name: j.name,
             shouldShow: z,
             onRequestClose: K,
-            targetElementRef: X,
+            targetElementRef: J,
             children: () => (0, i.jsx)(g.A.GuildName, {
                 guild: j,
-                ref: X
+                ref: J
             })
         }), (0, i.jsx)("span", {
             className: b.E3,
@@ -150,7 +150,7 @@ function T(e) {
                     loading: O,
                     variant: "active",
                     fullWidth: V,
-                    disabled: !J,
+                    disabled: !X,
                     text: V ? F ? v.intl.string(v.t["7vb2cc"]) : v.intl.string(v.t.gpqgah) : B ? v.intl.string(v.t.cEnaWx) : v.intl.string(v.t.XpeFYr)
                 })
             })]

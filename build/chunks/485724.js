@@ -71,7 +71,7 @@ function U(e) {
         },
         applicationId: t.id,
         botUserId: C?.id
-    }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), X = (0, D.F)(t), J = (0, D.t)(t), Z = r.useMemo(() => {
+    }), z = null != v && b && Y, Q = q && b, K = (0, x.e)(t), J = (0, D.F)(t), X = (0, D.t)(t), Z = r.useMemo(() => {
         let e = [];
         return b ? K ? e.push({
             label: k.intl.string(k.t.RscU7I),
@@ -108,8 +108,8 @@ function U(e) {
                     referrerId: O
                 })
             }
-        })) : null != J && e.push(J), e
-    }, [b, J, K, t.id, Q, z, H, V, F, W, a, O, U, v]), $ = b ? (0, i.jsx)(G, {
+        })) : null != X && e.push(X), e
+    }, [b, X, K, t.id, Q, z, H, V, F, W, a, O, U, v]), $ = b ? (0, i.jsx)(G, {
         app: t
     }) : (0, i.jsx)(B, {
         app: t
@@ -118,12 +118,12 @@ function U(e) {
         title: f,
         staticBannerSrc: S,
         videoBannerSrc: L,
-        onClickBanner: X,
+        onClickBanner: J,
         bannerAspectRatio: M,
         iconSrc: T,
         info: $,
         actions: Z,
-        onClickContent: X,
+        onClickContent: J,
         trackingConfig: {
             id: t.id,
             linkType: n,

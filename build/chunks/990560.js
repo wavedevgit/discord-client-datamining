@@ -59,15 +59,18 @@ function R(e) {
         G = () => {
             null != M.channel && l.Ay.transitionToInviteSync(M)
         },
-        F = () => {
-            let e = null == O && P?.guild != null ? x.DY(P.guild) : O;
+        F = function() {
+            let {
+                autoJoin: e
+            } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = null == O && P?.guild != null ? x.DY(P.guild) : O;
             (0, m.g)({
-                guild: e,
+                guild: n,
                 isMember: null != O,
                 analyticsLocations: k
             }) === m.W.PROCEED && l.Ay.acceptInviteAndTransitionToInviteChannel({
                 inviteKey: t,
-                context: R("Invite Button Embed")
+                context: R("Invite Button Embed"),
+                autoJoin: e
             })
         },
         H = (0, i.jsx)(v.A, {

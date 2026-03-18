@@ -51,8 +51,8 @@ var i = n(627968),
     z = n(480191),
     Q = n(269849),
     K = n(704413),
-    X = n(695206),
-    J = n(892742),
+    J = n(695206),
+    X = n(892742),
     Z = n(376708),
     $ = n(549527),
     ee = n(899894),
@@ -105,8 +105,8 @@ var i = n(627968),
     ez = n(985018),
     eQ = n(867525);
 let eK = [eY.Auw.GIFV],
-    eX = 15 * eg.A.Millis.MINUTE,
-    eJ = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
+    eJ = 15 * eg.A.Millis.MINUTE,
+    eX = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
     eZ = e => () => {
         let {
             url: t,
@@ -151,7 +151,7 @@ class e$ extends r.Component {
         let {
             channel: t
         } = this.props;
-        return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && eJ.has(e))
+        return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && eX.has(e))
     }
     shouldComponentUpdate(e, t) {
         var n, i;
@@ -257,7 +257,7 @@ class e$ extends r.Component {
                     skuId: e,
                     channel: n
                 }, r)
-            } else if (n === v.I.QUESTS_EMBED) return (0, i.jsx)(J.A, {
+            } else if (n === v.I.QUESTS_EMBED) return (0, i.jsx)(X.A, {
                 questId: r
             }, r);
             else if (n === v.I.APP_DIRECTORY_STOREFRONT) return (0, i.jsx)(A.G, {
@@ -546,7 +546,7 @@ class e$ extends r.Component {
         })
     }
     renderThreadRoleMentionWarning(e) {
-        if (e.hasFlag(eY.pr7.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - ex.default.extractTimestamp(e.id) >= eX)) return (0, i.jsx)("div", {
+        if (e.hasFlag(eY.pr7.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - ex.default.extractTimestamp(e.id) >= eJ)) return (0, i.jsx)("div", {
             className: eQ.xM,
             children: ez.intl.string(ez.t.ma8Rs0)
         })
@@ -656,7 +656,7 @@ class e$ extends r.Component {
         }) : null
     }
     renderPoll(e, t) {
-        if (null != t) return (0, i.jsx)(X.A, {
+        if (null != t) return (0, i.jsx)(J.A, {
             message: e,
             poll: t,
             className: eQ.PM

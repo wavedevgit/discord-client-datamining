@@ -49,8 +49,8 @@ let L = (0, s.animated)(c.abt),
         } = (0, u.Ay)(), [F, H] = r.useState(null), [V, q] = r.useState(null), W = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), q(t.scrollWidth)
-        }), Y = (0, _.w)(W), z = (0, T.a3)(a), Q = a === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, y.rE.QUESTS_CARD, a, U), X = n.userStatus?.completedAt != null, J = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
-            e.stopPropagation(), e.currentTarget.blur(), O(), J({
+        }), Y = (0, _.w)(W), z = (0, T.a3)(a), Q = a === h.uF.QUESTS_EMBED, K = (0, p.wT)(n, y.rE.QUESTS_CARD, a, U), J = n.userStatus?.completedAt != null, X = (0, A.Ut)(), Z = (0, g.S5)(n.config.expiresAt), $ = (0, g.S5)(n.config.rewardsConfig.rewardsExpireAt), ee = r.useMemo(() => null != n.config.cosponsorMetadata, [n]), et = e => {
+            e.stopPropagation(), e.currentTarget.blur(), O(), X({
                 questId: n.id,
                 questContent: a,
                 questContentCTA: D ? x.Cy.COLLAPSE : x.Cy.EXPAND,
@@ -173,7 +173,7 @@ let L = (0, s.animated)(c.abt),
                                 }), (0, i.jsx)(c.Text, {
                                     variant: "text-xs/normal",
                                     color: "always-white",
-                                    children: X ? N.intl.formatToPlainString(N.t.APddvF, {
+                                    children: J ? N.intl.formatToPlainString(N.t.APddvF, {
                                         expirationDate: $
                                     }) : t ? N.intl.formatToPlainString(N.t.v7xMw7, {
                                         expirationDate: Z

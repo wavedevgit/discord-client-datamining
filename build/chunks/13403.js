@@ -71,7 +71,7 @@ function w(e) {
         }) ?? void 0,
         {
             openGameProfileModal: K,
-            launchableAppId: X
+            launchableAppId: J
         } = (t = k.id, n = F.author.id, w = (0, f.d)(t), D = (0, a.bG)([m.A, C.A], () => {
             let e = m.A.getApplication(t);
             return null != e ? C.A.getGameByApplication(e) : null
@@ -85,18 +85,18 @@ function w(e) {
             }),
             launchableAppId: w
         }),
-        J = (0, S.A)({
+        X = (0, S.A)({
             application: k,
             analyticsLocations: M
         }),
         Z = r.useMemo(() => {
-            if (null != J) return {
+            if (null != X) return {
                 label: P.intl.string(P.t["jaYS/h"]),
                 icon: o.hpF,
                 trackingArea: h.kY.CLOUD_PLAY,
-                onClick: J
+                onClick: X
             }
-        }, [J]),
+        }, [X]),
         $ = (0, p.F)(k),
         ee = r.useMemo(() => null != K ? K : null != $ && W ? $ : void 0, [W, K, $]),
         et = c.A.useConfig({
@@ -151,7 +151,7 @@ function w(e) {
         channel: O,
         header: es,
         currentUserId: U,
-        launchableAppId: X,
+        launchableAppId: J,
         isEmbeddedApplication: W,
         tryWithGdnAction: Z,
         staticBannerSrc: Q,
@@ -171,7 +171,7 @@ function w(e) {
         channel: O,
         header: es,
         currentUserId: U,
-        launchableAppId: X,
+        launchableAppId: J,
         isEmbeddedApplication: W,
         tryWithGdnAction: Z,
         staticBannerSrc: Q,

@@ -258,7 +258,7 @@ function j(e, t) {
         presentation: "button",
         enabled: w,
         type: "submit"
-    })), X = (0, g.isIOS)() ? b.intl.string(b.t["PVATM/"]) : b.intl.string(b.t.cHfFql), J = (0, i.YW)({
+    })), J = (0, g.isIOS)() ? b.intl.string(b.t["PVATM/"]) : b.intl.string(b.t.cHfFql), X = (0, i.YW)({
         isExpired: U,
         isInteractive: B,
         isEditingVote: O
@@ -279,7 +279,7 @@ function j(e, t) {
     })).otherwise(() => ({
         label: Y,
         secondaryLabel: D,
-        accessibilityHint: X,
+        accessibilityHint: J,
         presentation: "text",
         enabled: !0,
         type: "showVoterDetails"
@@ -316,7 +316,7 @@ function j(e, t) {
         }, () => f.CQ.RADIO_BUTTONS).with({
             canSelectMultipleAnswers: !0
         }, () => f.CQ.CHECKBOXES).exhaustive(),
-        answerTapAccessibilityLabel: V ? X : void 0,
+        answerTapAccessibilityLabel: V ? J : void 0,
         layoutType: S,
         resources: (0, I.A)({
             theme: o,
@@ -332,7 +332,7 @@ function j(e, t) {
         hasVoted: k,
         isExpired: U,
         myAvatarUrl: v,
-        secondaryAction: J,
+        secondaryAction: X,
         tertiaryAction: Z
     }
 }

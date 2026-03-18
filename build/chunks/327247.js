@@ -54,8 +54,8 @@ function M(e) {
             friction: 20,
             clamp: !0
         }
-    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), X = (0, I._Z)(t.config), {
-        completedRatio: J,
+    }), H = (0, C.Ic)(t), V = (0, A.In)(t), q = (0, I.mq)(t.config), W = (0, I.mH)(t.config), Y = t.userStatus?.enrolledAt != null, z = t.userStatus?.completedAt != null, Q = t.userStatus?.claimedAt != null, K = (0, I.ks)(t.config), J = (0, I._Z)(t.config), {
+        completedRatio: X,
         completedRatioDisplay: Z
     } = (0, A.O9)(t), $ = (0, g.gj)(t, b, _.Ob.QuestEmbed, M), ee = (0, y.Pd)(t), et = r.useMemo(() => Q && K ? R.intl.format(R.t["8Op4c4"], {
         balanceHook: () => (0, i.jsxs)(k, {
@@ -64,7 +64,7 @@ function M(e) {
                 shouldUseThemeColor: !0,
                 className: w.Kq,
                 customSize: 14
-            }), X]
+            }), J]
         }, t.id)
     }) : Q ? (0, i.jsx)(k, {
         questId: t.id,
@@ -76,14 +76,14 @@ function M(e) {
                 shouldUseThemeColor: !0,
                 className: w.Kq,
                 customSize: 14
-            }), X]
+            }), J]
         }, t.id)
     }) : R.intl.format(R.t["0IUT4Y"], {
         rewardWithArticleHook: () => (0, i.jsx)(k, {
             questId: t.id,
             children: W
         }, t.id)
-    }), [q, Q, W, t.id, X, K]), en = r.useMemo(() => {
+    }), [q, Q, W, t.id, J, K]), en = r.useMemo(() => {
         if (null != $) return (0, i.jsx)(d.EYj, {
             variant: "text-sm/medium",
             color: "text-muted",
@@ -126,7 +126,7 @@ function M(e) {
                         shouldAnimate: !ei
                     }), (0, i.jsx)(v.A, {
                         size: 76,
-                        percentComplete: J,
+                        percentComplete: X,
                         percentCompleteText: a && !H ? Z : void 0,
                         children: (0, i.jsx)(S.A, {
                             quest: t,

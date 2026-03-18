@@ -129,8 +129,8 @@ function U(e) {
         analyticsLocations: z,
         showAuthButton: Q,
         canPromptAuth: K,
-        startAuthorization: X,
-        accountLinkButtonRef: J,
+        startAuthorization: J,
+        accountLinkButtonRef: X,
         renderAccountLinkUpsell: Z
     } = e, $ = V?.timestamps?.start ?? V?.created_at, ee = r.useMemo(() => null != $ ? (0, i.jsxs)("div", {
         className: k.Ym,
@@ -211,7 +211,7 @@ function U(e) {
             label: M.intl.string(M.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
-                X({
+                J({
                     analyticsLocations: z
                 })
             }
@@ -245,18 +245,18 @@ function U(e) {
             label: M.intl.string(M.t.lw71Nf),
             trackingArea: h.kY.CONNECT_ACCOUNT,
             onClick: () => {
-                X({
+                J({
                     analyticsLocations: z
                 })
             },
             icon: d.A5T,
             iconButton: !0,
-            buttonRef: J
+            buttonRef: X
         }), i = !0)), {
             actions: r,
             hasAccountLinkButton: i
         }
-    }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, z, ed, y, eh, Q, X, J, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
+    }, [eo, ec, eu, e_, U, t.author.id, t.id, V, s.id, s.guild_id, z, ed, y, eh, Q, J, X, K, em]), eA = ep.some(e => e.trackingArea === h.kY.CLOUD_PLAY);
     (0, P.A)(eA, z);
     let ex = r.useMemo(() => e_ ? null : (0, i.jsx)(O, {
         presenceActivity: V,

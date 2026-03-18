@@ -30,19 +30,19 @@ var i = t(627968),
     b = t(622543),
     O = t(591179),
     P = t(950191),
-    R = t(101928),
-    S = t(837529),
-    G = t(346713),
-    L = t(484509),
+    S = t(101928),
+    R = t(837529),
+    L = t(346713),
+    G = t(484509),
     U = t(195898),
-    D = t(576622),
-    M = t(716804),
+    M = t(576622),
+    D = t(716804),
     F = t(679492),
     k = t(718019),
     w = t(31432),
     V = t(915614),
-    B = t(389996),
-    z = t(223330),
+    z = t(389996),
+    B = t(223330),
     W = t(559506),
     $ = t(361311),
     K = t(886891),
@@ -95,7 +95,7 @@ function ev(e) {
         theme: x,
         primaryColor: g,
         secondaryColor: f
-    } = (0, R.A)({
+    } = (0, S.A)({
         user: l,
         displayProfile: r
     }), {
@@ -135,7 +135,7 @@ function eN(e) {
         currentUser: t,
         guildId: s,
         originGuildId: O,
-        channelId: R,
+        channelId: S,
         messageId: U,
         roleId: ea,
         sessionId: eN,
@@ -146,25 +146,25 @@ function eN(e) {
         onClose: e_,
         sourceAnalyticsLocations: eb = [],
         themeContainerClassName: eO
-    } = e, eP = l.id === t.id, eR = l.getAvatarURL(void 0, ej), eS = l.bot, [eG, eL] = n.useState(s), [eU, eD] = n.useState(s), eM = n.useRef(eU), eF = n.useCallback(e => {
-        eL(e ?? void 0)
+    } = e, eP = l.id === t.id, eS = l.getAvatarURL(void 0, ej), eR = l.bot, [eL, eG] = n.useState(s), [eU, eM] = n.useState(s), eD = n.useRef(eU), eF = n.useCallback(e => {
+        eG(e ?? void 0)
     }, []);
     n.useEffect(() => {
         let e = !1;
-        return (0, D.A)(l.id, eR, {
+        return (0, M.A)(l.id, eS, {
             type: "modal",
-            guildId: eG,
-            withMutualFriendsCount: !eS,
+            guildId: eL,
+            withMutualFriendsCount: !eR,
             withMutualFriends: !1,
             withMutualGuilds: !0
         }).then(() => {
-            e || (eD(eG), eM.current = eG)
+            e || (eM(eL), eD.current = eL)
         }, () => {
-            e || eL(eM.current)
+            e || eG(eD.current)
         }), () => {
             e = !0
         }
-    }, [eG, l.id, eR, eS]);
+    }, [eL, l.id, eS, eR]);
     let {
         analyticsLocations: ek
     } = (0, A.Ay)([...eb, m.A.USER_PROFILE_MODAL_V2]), ew = (0, _.pb)({
@@ -172,10 +172,10 @@ function eN(e) {
         userId: l.id,
         sourceSessionId: eN,
         guildId: eU,
-        channelId: R,
+        channelId: S,
         messageId: U,
         roleId: ea
-    }), eV = n.useRef(null), eB = (0, x.M)(eV), [ez, eW] = n.useState(!1), [e$, eK] = n.useState(), eH = n.useCallback(e => {
+    }), eV = n.useRef(null), ez = (0, x.M)(eV), [eB, eW] = n.useState(!1), [e$, eK] = n.useState(), eH = n.useCallback(e => {
         let l = e.contentRect.width;
         l <= 350 ? eK("compact-xs") : l <= 380 ? eK("compact-sm") : eK(void 0)
     }, []);
@@ -204,7 +204,7 @@ function eN(e) {
         } : {}, [eU, l.id]);
     (0, u.Eq)(eX, "UserProfileModalV2");
     let eQ = (0, P.Ay)(l.id, eU),
-        e0 = T.Ay.useName(eQ?.guildId, R, l),
+        e0 = T.Ay.useName(eQ?.guildId, S, l),
         {
             relationshipType: e9,
             originApplicationId: e1
@@ -213,7 +213,7 @@ function eN(e) {
             originApplicationId: N.A.getOriginApplicationId(l.id)
         })),
         e7 = (0, o.bG)([y.A], () => y.A.hidePersonalInformation),
-        e6 = (0, S.Nx)() ? null : eQ?.getBannerURL({
+        e6 = (0, R.Nx)() ? null : eQ?.getBannerURL({
             canAnimate: !1,
             size: 1024
         }),
@@ -226,8 +226,8 @@ function eN(e) {
             userId: l.id
         }),
         e5 = (0, f.fi)(l.id),
-        e4 = (0, L.A)(l.id),
-        le = (0, G.A)(l.id),
+        e4 = (0, G.A)(l.id),
+        le = (0, L.A)(l.id),
         ll = (0, p.GV)(),
         lt = ef.intl.format(ef.t.KRe1Fk, {
             name: e0
@@ -248,7 +248,7 @@ function eN(e) {
             isLoaded: eQ?.isLoaded,
             children: (0, i.jsx)(F.Hl, {
                 value: eY,
-                children: (0, i.jsx)(M.N, {
+                children: (0, i.jsx)(D.N, {
                     value: eE,
                     children: (0, i.jsxs)(d.EOs, {
                         "data-migration-pending": !0,
@@ -258,7 +258,7 @@ function eN(e) {
                         "aria-labelledby": ll,
                         parentComponent: "UserProfileModalV2",
                         children: [(0, i.jsxs)(d.bfh, {
-                            isShaking: ez,
+                            isShaking: eB,
                             intensity: 1.4,
                             children: [(0, i.jsx)(d.AC4, {
                                 children: (0, i.jsx)(d.H, {
@@ -269,7 +269,7 @@ function eN(e) {
                                 children: (0, i.jsx)(ev, {
                                     user: l,
                                     isCurrentUser: eP,
-                                    guildId: eG,
+                                    guildId: eL,
                                     displayProfile: eQ,
                                     onChangeGuildId: eF,
                                     children: (0, i.jsxs)(X.A, {
@@ -311,13 +311,13 @@ function eN(e) {
                                                     user: l,
                                                     displayProfile: eQ,
                                                     guildId: eU,
-                                                    channelId: R,
+                                                    channelId: S,
                                                     themeType: eg.d.MODAL_V2,
                                                     specOverrides: eZ
                                                 }), (0, i.jsx)(ee.A, {
                                                     user: l,
                                                     guildId: eU,
-                                                    channelId: R,
+                                                    channelId: S,
                                                     themeType: eg.d.MODAL_V2,
                                                     hasEntered: eT === d.ip4.ENTERED,
                                                     prompt: eP ? e8 : null
@@ -331,7 +331,7 @@ function eN(e) {
                                                     user: l,
                                                     guildId: eQ?.guildId ?? void 0,
                                                     onClose: e_,
-                                                    nickname: T.Ay.useName(eQ?.guildId, R, l),
+                                                    nickname: T.Ay.useName(eQ?.guildId, S, l),
                                                     nicknameVariant: "heading-xl/semibold",
                                                     pronouns: eQ?.pronouns,
                                                     tags: (0, i.jsx)(w.A, {
@@ -345,7 +345,7 @@ function eN(e) {
                                                         user: l,
                                                         applicationId: e1,
                                                         guildId: eQ?.guildId ?? void 0,
-                                                        channelId: R,
+                                                        channelId: S,
                                                         className: eh.profileBanner
                                                     })
                                                 }), e5.map(e => {
@@ -357,7 +357,7 @@ function eN(e) {
                                                         children: (0, i.jsx)(K.A, {
                                                             user: l,
                                                             guildId: eQ?.guildId ?? void 0,
-                                                            channelId: R,
+                                                            channelId: S,
                                                             isGameRelationship: !0,
                                                             applicationId: t,
                                                             className: eh.profileBanner
@@ -378,7 +378,7 @@ function eN(e) {
                                                             variant: "text-sm/normal"
                                                         })
                                                     })
-                                                }), eP && (0, i.jsx)(z.A, {
+                                                }), eP && (0, i.jsx)(B.A, {
                                                     isPremiumUser: (0, C.ki)(t),
                                                     onInteraction: e_
                                                 }), (0, i.jsx)(q.A, {
@@ -396,12 +396,12 @@ function eN(e) {
                                                         currentUser: t,
                                                         guildId: eU,
                                                         originGuildId: O,
-                                                        channelId: R,
+                                                        channelId: S,
                                                         displayProfile: eQ,
                                                         relationshipType: e9,
                                                         onClose: e_
                                                     })
-                                                }), eQ?.bio != null && eQ?.bio !== "" && !e7 && (0, i.jsx)(B.A, {
+                                                }), eQ?.bio != null && eQ?.bio !== "" && !e7 && (0, i.jsx)(z.A, {
                                                     userBio: eQ.bio,
                                                     setLineClamp: !1
                                                 }), e3.length > 0 && (0, i.jsx)(ed.A, {
@@ -443,14 +443,14 @@ function eN(e) {
                                                 })]
                                             }), eQ?.profileEffect != null && (0, i.jsx)(j.A, {
                                                 skuId: eQ?.profileEffect.skuId,
-                                                isHovering: eB
+                                                isHovering: ez
                                             })]
                                         }), (0, i.jsx)(ec.A, {
                                             user: l,
                                             currentUser: t,
                                             displayProfile: eQ,
                                             guildId: eU,
-                                            channelId: R,
+                                            channelId: S,
                                             items: e2,
                                             initialSection: ey,
                                             onClose: e_

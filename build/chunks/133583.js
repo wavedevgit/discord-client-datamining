@@ -171,7 +171,7 @@ function U(e) {
         }, [m, h, p, a]);
     return (0, i.jsxs)(i.Fragment, {
         children: [!h && (0, i.jsxs)("div", {
-            className: P.Q9,
+            className: P.lm,
             children: [(0, i.jsx)(c.G3N, {
                 size: "custom",
                 width: 16,
@@ -182,7 +182,7 @@ function U(e) {
                 children: O.intl.string(O.t.RX7D9h)
             })]
         }), h && f && (0, i.jsxs)("div", {
-            className: P.n3,
+            className: P.lm,
             children: [(0, i.jsx)(c.mir, {
                 size: "custom",
                 width: 16,

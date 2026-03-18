@@ -2,22 +2,22 @@
 n.d(t, {
     A: () => o
 });
-var i = n(627968);
+var l = n(627968);
 n(64700);
 var s = n(503698),
-    r = n.n(s),
-    a = n(155718),
-    l = n(907093);
+    a = n.n(s),
+    r = n(155718),
+    i = n(907093);
 
 function o(e) {
     let {
         divider: t,
         spacing: n
     } = e;
-    return (0, i.jsx)("div", {
-        className: r()({
-            [l.f]: n === a.C8.LARGE,
-            [l.y]: t
+    return (0, l.jsx)("div", {
+        className: a()({
+            [i.f]: n === r.C8.LARGE,
+            [i.y]: t
         })
     })
 }

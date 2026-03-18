@@ -413,7 +413,7 @@ function X(e) {
                 totalDue: a.total,
                 renewalPrice: l.subtotal,
                 currency: a.currency,
-                startDate: l.subscriptionPeriodEnd
+                startDate: a.subscriptionPeriodEnd
             }
         }({
             hasLegalTermsFlash: U,

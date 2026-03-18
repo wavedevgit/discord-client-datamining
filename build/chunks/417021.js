@@ -1,42 +1,42 @@
 /** chunk id: 417021 params = (module,exports,require) **/
-n.d(t, {
+t.d(n, {
     A: () => b
 });
-var i = n(627968),
-    s = n(311907),
-    r = n(397927),
-    a = n(793574),
-    l = n(688810),
-    o = n(632738),
-    d = n(994500),
-    c = n(562153),
-    u = n(183555),
-    _ = n(672385),
-    A = n(950191),
-    m = n(249790),
-    x = n(946356),
-    p = n(254828),
-    f = n(783123),
-    h = n(652215),
-    g = n(996988),
-    I = n(985018),
-    j = n(599929);
+var i = t(627968),
+    s = t(311907),
+    r = t(397927),
+    a = t(793574),
+    l = t(688810),
+    o = t(632738),
+    d = t(994500),
+    c = t(562153),
+    u = t(183555),
+    A = t(672385),
+    _ = t(950191),
+    m = t(249790),
+    x = t(946356),
+    p = t(254828),
+    f = t(783123),
+    h = t(652215),
+    g = t(996988),
+    I = t(985018),
+    j = t(599929);
 
 function b(e) {
     let {
-        user: t,
-        guildId: n,
+        user: n,
+        guildId: t,
         channelId: b,
         messageId: v,
         roleId: C,
         transitionState: N,
         onHide: y,
         sourceAnalyticsLocations: E = []
-    } = e, T = n === h.ME ? void 0 : n, L = (0, s.bG)([d.A], () => d.A.isBlocked(t.id)), {
-        analyticsLocations: P
-    } = (0, l.Ay)([...E, L ? a.A.BLOCKED_PROFILE_MODAL : a.A.IGNORED_PROFILE_MODAL]), O = (0, u.pb)({
+    } = e, T = t === h.ME ? void 0 : t, L = (0, s.bG)([d.A], () => d.A.isBlocked(n.id)), {
+        analyticsLocations: O
+    } = (0, l.Ay)([...E, L ? a.A.BLOCKED_PROFILE_MODAL : a.A.IGNORED_PROFILE_MODAL]), P = (0, u.pb)({
         layout: "MODAL_V2",
-        userId: t.id,
+        userId: n.id,
         guildId: T,
         channelId: b,
         messageId: v,
@@ -47,22 +47,22 @@ function b(e) {
     }, {
         icon: r.yr3,
         description: I.intl.string(L ? I.t.QxrDY1 : I.t.W6fjkS)
-    }], S = (0, A.Ay)(t.id, T), M = c.Ay.getName(S?.guildId, b, t), G = I.intl.formatToPlainString(I.t.KRe1Fk, {
+    }], S = (0, _.Ay)(n.id, T), M = c.Ay.getName(S?.guildId, b, n), k = I.intl.formatToPlainString(I.t.KRe1Fk, {
         name: M
     });
     return (0, i.jsx)(l.f5, {
-        value: P,
+        value: O,
         children: (0, i.jsx)(u.of, {
-            value: O,
+            value: P,
             isLoaded: S?.isLoaded,
             children: (0, i.jsx)(r.EOs, {
                 "data-migration-pending": !0,
                 transitionState: N,
                 className: j.zr,
-                "aria-label": G,
+                "aria-label": k,
                 parentComponent: "RestrictedUserProfileModalV2",
                 children: (0, i.jsxs)(x.A, {
-                    user: t,
+                    user: n,
                     displayProfile: S,
                     themeType: g.d.MODAL_V2,
                     children: [(0, i.jsx)("div", {
@@ -70,7 +70,7 @@ function b(e) {
                     }), (0, i.jsxs)("div", {
                         className: j.Qs,
                         children: [(0, i.jsx)(m.A, {
-                            user: t,
+                            user: n,
                             guildId: T
                         }), (0, i.jsxs)("div", {
                             className: j.FS,
@@ -87,17 +87,17 @@ function b(e) {
                             })]
                         }), (0, i.jsx)("div", {
                             className: j.vb,
-                            children: R.map((e, t) => {
+                            children: R.map((e, n) => {
                                 let {
-                                    icon: n,
+                                    icon: t,
                                     description: s
                                 } = e;
                                 return (0, i.jsx)(o.PQ, {
-                                    icon: n,
+                                    icon: t,
                                     title: s,
                                     titleVariant: "text-md/normal",
                                     color: r.LU0.colors.TEXT_DEFAULT.css
-                                }, t)
+                                }, n)
                             })
                         }), (0, i.jsxs)(r.BJc, {
                             align: "center",
@@ -105,19 +105,19 @@ function b(e) {
                                 size: "md",
                                 isBlocked: L,
                                 onClick: () => {
-                                    y(), (0, _.Wn)({
+                                    y(), (0, A.Wn)({
                                         action: L ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                                        analyticsLocations: P,
-                                        ...O
+                                        analyticsLocations: O,
+                                        ...P
                                     })
                                 }
                             }), (0, i.jsx)(p.A, {
-                                userId: t.id,
+                                userId: n.id,
                                 onClick: () => {
-                                    y(), (0, _.Wn)({
+                                    y(), (0, A.Wn)({
                                         action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                                        analyticsLocations: P,
-                                        ...O
+                                        analyticsLocations: O,
+                                        ...P
                                     })
                                 }
                             })]

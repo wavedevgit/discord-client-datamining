@@ -1,28 +1,28 @@
 /** chunk id: 382120 params = (module,exports,require) **/
-n.d(t, {
-    A: () => _
+t.d(n, {
+    A: () => A
 });
-var i = n(627968);
-n(64700);
-var s = n(158954),
-    r = n(311907),
-    a = n(397927),
-    l = n(973925),
-    o = n(622543),
-    d = n(985018),
-    c = n(437102);
+var i = t(627968);
+t(64700);
+var s = t(158954),
+    r = t(311907),
+    a = t(397927),
+    l = t(973925),
+    o = t(622543),
+    d = t(985018),
+    c = t(437102);
 
 function u(e) {
     let {
-        icon: t,
-        title: n,
+        icon: n,
+        title: t,
         description: s
     } = e;
     return (0, i.jsxs)("div", {
         className: c.nM,
         children: [(0, i.jsx)("div", {
             className: c.aL,
-            children: (0, i.jsx)(t, {
+            children: (0, i.jsx)(n, {
                 size: "custom",
                 width: 20,
                 height: 20,
@@ -32,7 +32,7 @@ function u(e) {
             className: c.qg,
             children: [(0, i.jsx)(a.Heading, {
                 variant: "text-xs/semibold",
-                children: n
+                children: t
             }), (0, i.jsx)(a.Text, {
                 variant: "text-sm/normal",
                 children: s
@@ -41,22 +41,22 @@ function u(e) {
     })
 }
 
-function _(e) {
+function A(e) {
     let {
-        user: t
-    } = e, n = (0, r.bG)([o.A], () => o.A.getUserProfile(t.id)?.application), {
-        hasMessageContent: _,
-        hasGuildPresences: A,
+        user: n
+    } = e, t = (0, r.bG)([o.A], () => o.A.getUserProfile(n.id)?.application), {
+        hasMessageContent: A,
+        hasGuildPresences: _,
         hasGuildMembers: m
-    } = (0, l.Z)(n);
+    } = (0, l.Z)(t);
     return (0, i.jsxs)(s.IpV, {
         fade: !0,
         className: c.XG,
-        children: [_ && (0, i.jsx)(u, {
+        children: [A && (0, i.jsx)(u, {
             icon: a.oyn,
             title: d.intl.string(d.t["7Tmhfu"]),
             description: d.intl.string(d.t.eu5x7z)
-        }), A && (0, i.jsx)(u, {
+        }), _ && (0, i.jsx)(u, {
             icon: a._xR,
             title: d.intl.string(d.t.awYSsM),
             description: d.intl.string(d.t.TpsXoC)

@@ -186,16 +186,16 @@ let U = e => {
                 (null == e || e.features.has(R.GuildFeatures.DISCOVERABLE)) && S(await (0, A.A)(n.id)), L(!0)
             })()
         }, [n.id, F]);
-        let X = n.guild_id === a.getGuildId(),
-            J = null != y,
+        let J = n.guild_id === a.getGuildId(),
+            X = null != y,
             Z = !1,
             $ = "Custom Sticker Popout";
-        B ? t = F ? X ? w.intl.string(w.t.fZ0DiG) : w.intl.string(w.t["1f6D9m"]) : J ? w.intl.string(w.t.yHmoR9) : w.intl.string(w.t.vZaScH) : F ? (t = X ? w.intl.string(w.t.jNphpt) : w.intl.string(w.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : J ? (t = w.intl.string(w.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = w.intl.format(w.t.hGWuxU, {
+        B ? t = F ? J ? w.intl.string(w.t.fZ0DiG) : w.intl.string(w.t["1f6D9m"]) : X ? w.intl.string(w.t.yHmoR9) : w.intl.string(w.t.vZaScH) : F ? (t = J ? w.intl.string(w.t.jNphpt) : w.intl.string(w.t.lyD5ZW), Z = !0, $ = "Custom Sticker Popout (Upsell)") : X ? (t = w.intl.string(w.t.IuXYch), Z = !0, $ = "Custom Sticker Popout (Upsell)") : (t = w.intl.format(w.t.hGWuxU, {
             openPremiumSettings: () => {
                 k(a), o()
             }
         }), $ = "Custom Sticker Popout (Soft Upsell)");
-        let ee = !Z && !F && J && B;
+        let ee = !Z && !F && X && B;
         if (r.useEffect(() => {
                 let {
                     refreshPositionKey: e
@@ -248,7 +248,7 @@ let U = e => {
                         })
                     })]
                 })), (null != G || null != y) && (() => {
-                    if (!J && !F) return;
+                    if (!X && !F) return;
                     let e = (y?.stickers ?? []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
                         t = null != y ? g.GO.createFromDiscoverableGuild(y) : g.GO.createFromGuildRecord(G);
                     return (0, i.jsxs)("div", {
