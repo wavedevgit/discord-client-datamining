@@ -487,7 +487,7 @@ function eu(e) {
         }
         let I = null != eB && null == (0, L.ou)(eB) ? eB : eF;
         n = e4 === L.pn.ADD_PAYMENT_STEPS ? ng : (0, l.jsx)(O.A, {
-            shouldUseManaModal: nd,
+            shouldUseManaModal: !0,
             hideBreadcrumbs: nd && e4 === L.pn.REVIEW || e4 === L.pn.CONFIRM,
             steps: nn,
             currentStep: e4,
