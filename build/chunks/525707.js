@@ -9,6 +9,6 @@ var i = n(86379),
     r = n(985018);
 let o = (0, s.E2)(l.X.GIFT_CODE_REDEMPTION_SETTING, {
     Component: a.VD,
-    usePredicate: () => !(0, i.H)(),
+    usePredicate: () => !(0, i.Hp)(),
     useSearchTerms: () => [r.intl.string(r.t["jcSP+g"]), r.intl.string(r.t["il+VCo"])]
 })

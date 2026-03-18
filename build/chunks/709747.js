@@ -9,6 +9,6 @@ var i = n(86379),
     r = n(985018);
 let o = (0, l.E2)(a.X.GIFT_BLOCKED_PAYMENTS_SETTING, {
     Component: s.uK,
-    usePredicate: () => (0, i.H)(),
+    usePredicate: () => (0, i.Hp)(),
     useSearchTerms: () => [r.intl.string(r.t.vwMEHS)]
 })

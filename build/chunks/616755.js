@@ -217,8 +217,8 @@ function b(e) {
     }), b = null != s && s.length > 0, {
         gamesToDisplay: L,
         lastGameToDisplay: R,
-        remainingGames: U
-    } = (0, g.A)(c), O = n.useMemo(() => c.traits.map((e, t) => ({
+        remainingGames: O
+    } = (0, g.A)(c), U = n.useMemo(() => c.traits.map((e, t) => ({
         key: `trait-${t}`,
         ...e
     })).filter(e => e.label.length > 0), [c]), G = (0, A.b2)(), k = (0, A.aG)({
@@ -276,7 +276,7 @@ function b(e) {
                     }), 0 === L.length ? null : "v1" === S ? (0, l.jsx)(_.A, {
                         gamesToDisplay: L,
                         lastGameToDisplay: R,
-                        remainingGames: U,
+                        remainingGames: O,
                         activity: c.gameActivity
                     }) : "v2" === S ? (0, l.jsx)(o.BJc, {
                         direction: "vertical",
@@ -284,7 +284,7 @@ function b(e) {
                         children: (0, l.jsx)(h.A, {
                             gamesToDisplay: L,
                             lastGameToDisplay: R,
-                            remainingGames: U,
+                            remainingGames: O,
                             activity: c.gameActivity,
                             onExpandClick: () => {
                                 j.default.track(T.HAw.INVITE_ACCEPT_DETAILS_VIEWED, {
@@ -295,7 +295,7 @@ function b(e) {
                             }
                         })
                     }) : null, (0, l.jsx)(p.w, {
-                        items: O,
+                        items: U,
                         traitColor: "text-subtle"
                     })]
                 })]

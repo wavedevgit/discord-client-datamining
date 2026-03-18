@@ -2,13 +2,13 @@
 n.d(t, {
     A: () => x
 });
-var a = n(627968),
-    l = n(64700),
+var l = n(627968),
+    a = n(64700),
     i = n(793574),
     r = n(688810),
     s = n(317560),
-    o = n(563988),
-    c = n(305080),
+    c = n(563988),
+    o = n(305080),
     d = n(954506),
     u = n(818348),
     m = n(985018);
@@ -16,9 +16,9 @@ var a = n(627968),
 function x() {
     let {
         socialLayerStorefrontRecommendationsData: e
-    } = (0, c.c)(), {
+    } = (0, o.c)(), {
         analyticsLocations: t
-    } = (0, r.Ay)([i.A.GAME_PROFILE]), n = l.useCallback(n => {
+    } = (0, r.Ay)([i.A.GAME_PROFILE]), n = a.useCallback(n => {
         e?.guildId != null && (0, s.R)({
             skuId: n,
             applicationId: e.application.id,
@@ -30,16 +30,16 @@ function x() {
     if (null == e) return null;
     let {
         application: x,
-        skuIds: f,
-        guildId: h
+        skuIds: h,
+        guildId: f
     } = e;
-    return (0, a.jsx)(d.A, {
+    return (0, l.jsx)(d.A, {
         title: m.intl.string(m.t.WDdlUb),
         onClickViewAll: u.tE,
-        children: (0, a.jsx)(o.R, {
+        children: (0, l.jsx)(c.R, {
             applicationId: x.id,
-            skuIds: f,
-            guildId: h,
+            skuIds: h,
+            guildId: f,
             analyticsLocations: t,
             onCardClick: n
         })

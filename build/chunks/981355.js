@@ -1,18 +1,18 @@
 /** chunk id: 981355 params = (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => a
 });
-var a = n(64700);
+var l = n(64700);
 
-function l() {
+function a() {
     arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    let [e, t] = a.useState(function() {
+    let [e, t] = l.useState(function() {
         return arguments.length > 0 && void 0 !== arguments[0] && arguments[0], {
             width: window.innerWidth ?? 1080,
             height: window.innerHeight ?? 1080
         }
     }());
-    return a.useLayoutEffect(() => {
+    return l.useLayoutEffect(() => {
         function e() {
             t({
                 width: window.innerWidth,

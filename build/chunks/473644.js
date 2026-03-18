@@ -31,7 +31,7 @@ function v(e) {
         if ("en-US" === b) return j.intl.string(j.t.LQLMGP);
         let e = (0, j.getAvailableLocales)().find(e => e.value === b);
         return null != e ? j.intl.string(e.localizedName) : b
-    }, [b]), R = null != b && "" !== b, U = null != y, O = R || U || S, G = U || S, {
+    }, [b]), R = null != b && "" !== b, O = null != y, U = R || O || S, G = O || S, {
         enabled: k
     } = r.SH.useConfig({
         location: "AcceptInviteModalGuildDetailsHeader"
@@ -74,7 +74,7 @@ function v(e) {
                     children: j.intl.format(j.t.zb2Q56, {
                         createdAtDate: N
                     })
-                }), O && (0, l.jsx)("span", {
+                }), U && (0, l.jsx)("span", {
                     className: E.LO,
                     "aria-hidden": !0
                 })]
@@ -88,7 +88,7 @@ function v(e) {
                     className: E.LO,
                     "aria-hidden": !0
                 })]
-            }), U && (0, l.jsxs)(l.Fragment, {
+            }), O && (0, l.jsxs)(l.Fragment, {
                 children: [(0, l.jsx)(s.Text, {
                     tag: "span",
                     variant: "text-sm/normal",

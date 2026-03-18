@@ -1,20 +1,20 @@
 /** chunk id: 880405 params = (module,exports,require) **/
 n.d(t, {
-    L$: () => o,
+    L$: () => c,
     NP: () => s,
     Qq: () => d
 }), n(323874), n(14289), n(35956);
-var a = n(562465),
-    l = n(73153),
+var l = n(562465),
+    a = n(73153),
     i = n(198982),
     r = n(652215);
 let s = async e => {
     try {
-        let t = ((await a.Bo.get({
+        let t = ((await l.Bo.get({
             url: r.Rsh.SIMILAR_GAMES(e),
             rejectWithError: !1
         })).body.similar_games ?? []).filter(t => t !== e);
-        l.h.dispatch({
+        a.h.dispatch({
             type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",
             applicationId: e,
             games: t
@@ -22,38 +22,38 @@ let s = async e => {
     } catch (e) {
         throw new i.LG(e)
     }
-}, o = e => c(e, {
+}, c = e => o(e, {
     utm_source: "discord"
-}), c = (e, t) => {
+}), o = (e, t) => {
     try {
         let n = new URL(e, window.location.origin);
         return Object.entries(t).forEach(e => {
-            let [t, a] = e;
-            n.searchParams.set(t, a)
+            let [t, l] = e;
+            n.searchParams.set(t, l)
         }), n.toString()
     } catch {
-        let [n, a] = e.split("#");
+        let [n, l] = e.split("#");
         try {
             let e = new URL(n, window.location.origin);
             return Object.entries(t).forEach(t => {
-                let [n, a] = t;
-                e.searchParams.set(n, a)
-            }), null != a ? `${e.toString()}#${a}` : e.toString()
+                let [n, l] = t;
+                e.searchParams.set(n, l)
+            }), null != l ? `${e.toString()}#${l}` : e.toString()
         } catch {
             let n = e.includes("?"),
-                a = Object.entries(t).map(e => {
+                l = Object.entries(t).map(e => {
                     let [t, n] = e;
                     return `${encodeURIComponent(t)}=${encodeURIComponent(n)}`
                 }).join("&");
-            return `${e}${n?"&":"?"}${a}`
+            return `${e}${n?"&":"?"}${l}`
         }
     }
 };
 
 function d(e, t) {
     if (null == e) return null;
-    let n = o(e),
-        a = function(e) {
+    let n = c(e),
+        l = function(e) {
             try {
                 let t = new URL(e);
                 if ("store.steampowered.com" !== t.hostname) return null;
@@ -62,5 +62,5 @@ function d(e, t) {
             } catch {}
             return null
         }(e);
-    return t ? a ?? n : n
+    return t ? l ?? n : n
 }

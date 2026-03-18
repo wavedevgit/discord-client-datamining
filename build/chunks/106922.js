@@ -311,7 +311,7 @@ function eA() {
     })
 }
 let ex = function() {
-    let e = (0, b.H)(),
+    let e = (0, b.Hp)(),
         {
             analyticsLocations: t
         } = (0, f.Ay)(C.A.PREMIUM_SETTINGS),

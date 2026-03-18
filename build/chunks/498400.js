@@ -40,7 +40,7 @@ let M = function(e) {
         entrypoint: t = L.Mf.UserSettings
     } = e;
     (0, E.P)(T.b);
-    let n = (0, x.H)(),
+    let n = (0, x.Hp)(),
         {
             sourceAnalyticsLocations: l,
             analyticsLocations: M

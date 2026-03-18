@@ -2,9 +2,9 @@
 n.d(t, {
     R: () => s
 });
-var a = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(720462),
+var a = n(720462),
     i = n(183802),
     r = n(695314);
 
@@ -13,22 +13,22 @@ function s(e) {
         applicationId: t,
         skuIds: n,
         guildId: s,
-        analyticsLocations: o,
-        onCardClick: c
+        analyticsLocations: c,
+        onCardClick: o
     } = e;
-    return null == n || 0 === n.length ? null : (0, a.jsx)(l.A, {
+    return null == n || 0 === n.length ? null : (0, l.jsx)(a.A, {
         gap: "md",
-        children: n.map((e, n) => (0, a.jsx)("div", {
+        children: n.map((e, n) => (0, l.jsx)("div", {
             className: r.B,
-            children: (0, a.jsx)(i.A, {
+            children: (0, l.jsx)(i.A, {
                 positionInSection: n,
                 applicationId: t,
                 skuId: e,
                 variant: i.s.SMALL,
                 guildId: s,
-                analyticsLocations: o,
-                onClick: null != c ? t => {
-                    t.preventDefault(), c(e)
+                analyticsLocations: c,
+                onClick: null != o ? t => {
+                    t.preventDefault(), o(e)
                 } : void 0
             })
         }, `${e}-${n}`))

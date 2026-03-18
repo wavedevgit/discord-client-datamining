@@ -31,7 +31,7 @@ function E() {
         p = (0, u.Rv)({
             location: "settings"
         }),
-        E = (0, l.H)(),
+        E = (0, l.Hp)(),
         S = (0, d.H)({
             location: T.rE.USER_SETTINGS_SEARCH_GIFT_INVENTORY
         }),

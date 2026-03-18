@@ -1,16 +1,16 @@
 /** chunk id: 59544 params = (module,exports,require) **/
 n.d(t, {
     A: () => s,
-    Q: () => o
+    Q: () => c
 });
-var a = n(64700),
-    l = n(25171),
+var l = n(64700),
+    a = n(25171),
     i = n(880405);
 
 function r() {
-    let [e, t] = a.useState(!1);
-    return a.useEffect(() => {
-        l.A.isProtocolRegistered("steam").then(t)
+    let [e, t] = l.useState(!1);
+    return l.useEffect(() => {
+        a.A.isProtocolRegistered("steam").then(t)
     }, []), e
 }
 
@@ -19,7 +19,7 @@ function s(e) {
     return (0, i.Qq)(e, t)
 }
 
-function o(e) {
+function c(e) {
     let t = r();
-    return a.useMemo(() => e.map(e => (0, i.Qq)(e, t)), [e, t])
+    return l.useMemo(() => e.map(e => (0, i.Qq)(e, t)), [e, t])
 }
